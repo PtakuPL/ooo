@@ -2,9 +2,9 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 6000, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 2000, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 500, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja:** 2025-12-21 09:56:02 UTC  
+> **Aktualizacja:** 2025-12-21 09:58:03 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 54 | **Klucze EN:** 36454  
-> **LIVE:** Cykl #224 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: pending_skip | Kategoria: pending_skip | Plik: - | ETA: 0 | Heartbeat: 2025-12-21T08:55:40Z
+> **LIVE:** Cykl #228 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: pending_skip | Kategoria: pending_skip | Plik: - | ETA: 0 | Heartbeat: 2025-12-21T08:57:45Z
 
 ---
 
@@ -76,7 +76,7 @@
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#224** | od uruchomienia |
+| 🔄 Cykl aktualny | **#228** | od uruchomienia |
 | 🔑 Kluczy wyekstrahowanych | **6,242** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
@@ -177,7 +177,7 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #   224 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #   228 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      🔧 MIGRATION (pending_skip)               │
@@ -188,7 +188,7 @@
 │ Postęp: 0/0 files                                             │
 │ Info: all categories skipped                                  │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2025-12-21T08:55:40Z           │
+│ ❤️ Heartbeat: 2025-12-21T08:57:45Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -205,12 +205,13 @@
 
 ## 🔁 W tym cyklu
 
-- 🌍 TRANSLATION_SYNC: SYNC_FILE_DONE [sk] → ok (keys+66, files+1) — lang=sk file=npc.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [de] → ok (files+1, translated+0, skipped+2) — lang=de file=creaturescripts.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [no] → ok (files+1, translated+0, skipped+21) — lang=no file=actions.json
+- 🌍 TRANSLATION_SYNC: SYNC_FILE_DONE [sv] → ok (keys+66, files+1) — lang=sv file=npc.json
+- 🌍 TRANSLATION_SYNC: SYNC_FILE_DONE [pl] → ok (keys+4252, files+1) — lang=pl file=npc.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [de] → ok (files+1, translated+0, skipped+21) — lang=de file=libs.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [no] → ok (files+1, translated+0, skipped+5) — lang=no file=events.json
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [de] → ok (files+1, translated+0, skipped+21) — lang=de file=actions.json
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [de] → ok (files+1, translated+0, skipped+21) — lang=de file=actions.json
-- 🌍 TRANSLATION_SYNC: SYNC_FILE_DONE [bs] → ok (keys+239, files+1) — lang=bs file=spells.json
+- 🌍 TRANSLATION_SYNC: SYNC_FILE_DONE [sr] → ok (keys+5, files+1) — lang=sr file=npc.json
 
 
 
@@ -234,7 +235,7 @@
 | ⬜ Plików bez kluczy | **349** | czyste (brak hardcoded) |
 | 🔑 Kluczy wyciągniętych | **6242** | przez workera w tej sesji |
 | 🌍 Języków | **54** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#224** | continuous mode |
+| 🔄 Cykli wykonanych | **#228** | continuous mode |
 
 ---
 
@@ -441,7 +442,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #224 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #228 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -484,7 +485,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-21 09:56:02  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-21 09:58:03  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

@@ -2,9 +2,9 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 6000, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 2000, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 500, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja:** 2025-12-21 09:27:03 UTC  
+> **Aktualizacja:** 2025-12-21 09:29:02 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 54 | **Klucze EN:** 36454  
-> **LIVE:** Cykl #159 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: pending_skip | Kategoria: pending_skip | Plik: - | ETA: 0 | Heartbeat: 2025-12-21T08:26:56Z
+> **LIVE:** Cykl #163 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: pending_skip | Kategoria: pending_skip | Plik: - | ETA: 0 | Heartbeat: 2025-12-21T08:29:01Z
 
 ---
 
@@ -76,7 +76,7 @@
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#159** | od uruchomienia |
+| 🔄 Cykl aktualny | **#163** | od uruchomienia |
 | 🔑 Kluczy wyekstrahowanych | **6,242** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
@@ -177,7 +177,7 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #   159 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #   163 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      🔧 MIGRATION (pending_skip)               │
@@ -188,7 +188,7 @@
 │ Postęp: 0/0 files                                             │
 │ Info: all categories skipped                                  │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2025-12-21T08:26:56Z           │
+│ ❤️ Heartbeat: 2025-12-21T08:29:01Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -205,16 +205,16 @@
 
 ## 🔁 W tym cyklu
 
-- 🔧 MIGRATION: zakończono kategorię [libs] → ok (keys+0, files+0) — migration finished
-- 🔧 MIGRATION: mini-batch stop [libs] → ok (keys+0) — no new data
-- 🔧 MIGRATION: mini-batch [libs] → ok (keys+0) — mini_batch=1 processed=10/50
-- 🔧 MIGRATION: zakończono kategorię [scripts] → ok (keys+0, files+0) — migration finished
-- 🔧 MIGRATION: zakończono kategorię [globalevents] → ok (keys+0, files+0) — migration finished
-- 🔧 MIGRATION: mini-batch stop [globalevents] → ok (keys+0) — no new data
-- 🔧 MIGRATION: mini-batch [globalevents] → ok (keys+0) — mini_batch=1 processed=10/20
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pt] → ok (files+1, translated+0, skipped+3238) — lang=pt file=npc.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [sk] → ok (files+1, translated+0, skipped+16) — lang=sk file=modules.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [de] → ok (files+1, translated+0, skipped+21) — lang=de file=actions.json
+- 🔧 MIGRATION: zakończono kategorię [modules] → ok (keys+0, files+0) — migration finished
+- 🔧 MIGRATION: mini-batch stop [modules] → ok (keys+0) — no new data
+- 🔧 MIGRATION: mini-batch [modules] → ok (keys+0) — mini_batch=1 processed=10/50
+- 🔧 MIGRATION: zakończono kategorię [talkactions] → ok (keys+0, files+0) — migration finished
+- 🔧 MIGRATION: mini-batch stop [talkactions] → ok (keys+0) — no new data
+- 🔧 MIGRATION: mini-batch [talkactions] → ok (keys+0) — mini_batch=1 processed=10/20
+- 🔧 MIGRATION: zakończono kategorię [startup] → ok (keys+0, files+0) — migration finished
+- 🔧 MIGRATION: mini-batch stop [startup] → ok (keys+0) — no new data
+- 🔧 MIGRATION: mini-batch [startup] → ok (keys+0) — mini_batch=1 processed=10/20
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pt] → ok (files+1, translated+0, skipped+145) — lang=pt file=raids.json
 
 
 
@@ -238,7 +238,7 @@
 | ⬜ Plików bez kluczy | **349** | czyste (brak hardcoded) |
 | 🔑 Kluczy wyciągniętych | **6242** | przez workera w tej sesji |
 | 🌍 Języków | **54** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#159** | continuous mode |
+| 🔄 Cykli wykonanych | **#163** | continuous mode |
 
 ---
 
@@ -445,7 +445,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #159 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #163 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -488,7 +488,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-21 09:27:03  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-21 09:29:02  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

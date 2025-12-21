@@ -2,9 +2,9 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 6000, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 2000, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 500, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja:** 2025-12-21 13:47:03 UTC  
+> **Aktualizacja:** 2025-12-21 13:49:03 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 54 | **Klucze EN:** 36454  
-> **LIVE:** Cykl #677 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: pending_skip | Kategoria: pending_skip | Plik: - | ETA: 0 | Heartbeat: 2025-12-21T12:47:00Z
+> **LIVE:** Cykl #684 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: migration_start | Kategoria: dataroot | Plik: - | ETA: 0 | Heartbeat: 2025-12-21T12:49:02Z
 
 ---
 
@@ -76,7 +76,7 @@
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#677** | od uruchomienia |
+| 🔄 Cykl aktualny | **#684** | od uruchomienia |
 | 🔑 Kluczy wyekstrahowanych | **6,243** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
@@ -177,18 +177,18 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #   677 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #   684 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
-│ Tryb:      🔧 MIGRATION (pending_skip)               │
-│ Kategoria: 📁 PENDING_SKIP                           │
+│ Tryb:      🔧 MIGRATION (migration_start)            │
+│ Kategoria: 📁 DATAROOT                               │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status: running                                               │
 │ Plik: -                                                       │
-│ Postęp: 0/0 files                                             │
-│ Info: all categories skipped                                  │
+│ Postęp: 0/415 files                                           │
+│ Info: migration                                               │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2025-12-21T12:47:00Z           │
+│ ❤️ Heartbeat: 2025-12-21T12:49:02Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -205,7 +205,7 @@
 
 ## 🔁 W tym cyklu
 
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [lv] → ok (files+1, translated+0, skipped+6880) — lang=lv file=npc.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [lv] → ok (files+1, translated+0, skipped+304) — lang=lv file=spells.json
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [de] → ok (files+1, translated+0, skipped+21) — lang=de file=actions.json
 
 
@@ -213,7 +213,7 @@
 
 ## 📅 Dziś (UTC)
 
-- Cykle: **218**
+- Cykle: **223**
 - MIGRATION: **+17946** kluczy, **943** plików `.lua`
 - Kategorie dotknięte: actions, chatchannels, cpp, creaturescripts, dataroot, errors, events, globalevents, items, libs...
 - Błędy: **0**
@@ -230,7 +230,7 @@
 | ⬜ Plików bez kluczy | **387** | czyste (brak hardcoded) |
 | 🔑 Kluczy wyciągniętych | **6243** | przez workera w tej sesji |
 | 🌍 Języków | **54** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#677** | continuous mode |
+| 🔄 Cykli wykonanych | **#684** | continuous mode |
 
 ---
 
@@ -437,7 +437,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #677 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #684 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -480,23 +480,23 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-21 13:47:03  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-21 13:49:03  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
 
 ## Ostatnio zmigrowane NPC
 
-- ✅ `gnomish_operative_gt-m-01` - ukończono 2025-12-21 13:13
-- ✅ `gnomish_operative_cathing` - ukończono 2025-12-21 13:13
-- ✅ `gnominus` - ukończono 2025-12-21 13:13
-- ✅ `gnominer` - ukończono 2025-12-21 13:13
-- ✅ `gnomincia` - ukończono 2025-12-21 13:13
-- ✅ `gnomillion` - ukończono 2025-12-21 13:13
-- ✅ `gnomfurry` - ukończono 2025-12-21 13:13
-- ✅ `gnomewart` - ukończono 2025-12-21 13:13
-- ✅ `gnomette` - ukończono 2025-12-21 13:13
-- ✅ `gnomespector` - ukończono 2025-12-21 13:13
+- ✅ `load` - ukończono 2025-12-21 13:48
+- ✅ `npc` - ukończono 2025-12-21 13:48
+- ✅ `npc_handler` - ukończono 2025-12-21 13:48
+- ✅ `modules` - ukończono 2025-12-21 13:48
+- ✅ `bank_system` - ukończono 2025-12-21 13:48
+- ✅ `keyword_handler` - ukończono 2025-12-21 13:48
+- ✅ `custom_modules` - ukończono 2025-12-21 13:48
+- ✅ `daily_reward` - ukończono 2025-12-21 13:48
+- ✅ `questtrack` - ukończono 2025-12-21 13:48
+- ✅ `gamestore` - ukończono 2025-12-21 13:48
 
 ---
 

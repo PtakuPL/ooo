@@ -2,9 +2,9 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 6000, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 2000, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 500, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja:** 2025-12-21 09:43:03 UTC  
+> **Aktualizacja:** 2025-12-21 09:45:03 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 54 | **Klucze EN:** 36454  
-> **LIVE:** Cykl #189 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: pending_skip | Kategoria: pending_skip | Plik: - | ETA: 0 | Heartbeat: 2025-12-21T08:42:33Z
+> **LIVE:** Cykl #193 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: pending_skip | Kategoria: pending_skip | Plik: - | ETA: 0 | Heartbeat: 2025-12-21T08:44:37Z
 
 ---
 
@@ -76,7 +76,7 @@
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#189** | od uruchomienia |
+| 🔄 Cykl aktualny | **#193** | od uruchomienia |
 | 🔑 Kluczy wyekstrahowanych | **6,242** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
@@ -177,7 +177,7 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #   189 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #   193 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      🔧 MIGRATION (pending_skip)               │
@@ -188,7 +188,7 @@
 │ Postęp: 0/0 files                                             │
 │ Info: all categories skipped                                  │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2025-12-21T08:42:33Z           │
+│ ❤️ Heartbeat: 2025-12-21T08:44:37Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -205,13 +205,14 @@
 
 ## 🔁 W tym cyklu
 
-- 🔧 MIGRATION: zakończono kategorię [raids] → ok (keys+0, files+0) — migration finished
-- 🔧 MIGRATION: mini-batch stop [raids] → ok (keys+0) — no new data
-- 🔧 MIGRATION: mini-batch [raids] → ok (keys+0) — mini_batch=1 processed=10/20
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [sv] → ok (files+1, translated+0, skipped+8) — lang=sv file=chatchannels.json
+- 🔧 MIGRATION: zakończono kategorię [chatchannels] → ok (keys+0, files+0) — migration finished
+- 🔧 MIGRATION: mini-batch stop [chatchannels] → ok (keys+0) — no new data
+- 🔧 MIGRATION: mini-batch [chatchannels] → ok (keys+0) — mini_batch=1 processed=10/20
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [de] → ok (files+1, translated+0, skipped+7) — lang=de file=chatchannels.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [sv] → ok (files+1, translated+0, skipped+13749) — lang=sv file=items.json
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [de] → ok (files+1, translated+0, skipped+21) — lang=de file=actions.json
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [de] → ok (files+1, translated+0, skipped+21) — lang=de file=actions.json
-- 🌍 TRANSLATION_SYNC: SYNC_FILE_DONE [el] → ok (keys+72, files+1) — lang=el file=otclient_data.json
+- 🌍 TRANSLATION_SYNC: SYNC_FILE_DONE [el] → ok (keys+66, files+1) — lang=el file=server.json
 
 
 
@@ -235,7 +236,7 @@
 | ⬜ Plików bez kluczy | **349** | czyste (brak hardcoded) |
 | 🔑 Kluczy wyciągniętych | **6242** | przez workera w tej sesji |
 | 🌍 Języków | **54** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#189** | continuous mode |
+| 🔄 Cykli wykonanych | **#193** | continuous mode |
 
 ---
 
@@ -442,7 +443,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #189 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #193 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -485,7 +486,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-21 09:43:03  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-21 09:45:03  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

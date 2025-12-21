@@ -2,9 +2,9 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 6000, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 2000, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 500, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja:** 2025-12-21 09:11:02 UTC  
+> **Aktualizacja:** 2025-12-21 09:13:02 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 54 | **Klucze EN:** 36454  
-> **LIVE:** Cykl #130 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: pending_skip | Kategoria: pending_skip | Plik: - | ETA: 0 | Heartbeat: 2025-12-21T08:10:52Z
+> **LIVE:** Cykl #133 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: pending_skip | Kategoria: pending_skip | Plik: - | ETA: 0 | Heartbeat: 2025-12-21T08:12:40Z
 
 ---
 
@@ -31,10 +31,10 @@
 ### 📁 Pliki Projektu (pełny skan)
 | Metryka | Wartość | Procent | Info |
 |---------|---------|---------|------|
-| 📂 **Wszystkie pliki** | **18,903** | 100% | cały projekt |
+| 📂 **Wszystkie pliki** | **18,913** | 100% | cały projekt |
 | 📜 Do skanowania (kod) | **8,156** | 43.1% | pliki z kodem/tekstami |
-| 🔍 **Przeskanowane** | **6,412** | **78.6%** | historia workera |
-| ⏳ Nie przeskanowane | **1,744** | 21.4% | czekają na skan |
+| 🔍 **Przeskanowane** | **6,418** | **78.7%** | historia workera |
+| ⏳ Nie przeskanowane | **1,738** | 21.3% | czekają na skan |
 
 ### 📊 Podział plików do skanowania
 | Typ | Ilość | Info |
@@ -50,10 +50,10 @@
 ### ✅ Status Migracji
 | Status | Ilość | Procent | Opis |
 |--------|-------|---------|------|
-| ✅ Zmigrowane | **1890** | 29.5% | mają klucze i18n |
+| ✅ Zmigrowane | **1891** | 29.5% | mają klucze i18n |
 | 🔄 Wymaga migracji | **0** | - | trzeba dodać i18n |
-| ⚪ Czyste | **327** | - | bez tekstów |
-| 🔧 W trakcie | **4** | - | obecnie przetwarzane |
+| ⚪ Czyste | **346** | - | bez tekstów |
+| 🔧 W trakcie | **3** | - | obecnie przetwarzane |
 
 ### 🔑 Klucze i18n
 | Metryka | Wartość | Info |
@@ -76,8 +76,8 @@
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#130** | od uruchomienia |
-| 🔑 Kluczy wyekstrahowanych | **6,241** | w tej sesji |
+| 🔄 Cykl aktualny | **#133** | od uruchomienia |
+| 🔑 Kluczy wyekstrahowanych | **6,242** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
 ---
@@ -177,7 +177,7 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #   130 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #   133 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      🔧 MIGRATION (pending_skip)               │
@@ -188,33 +188,33 @@
 │ Postęp: 0/0 files                                             │
 │ Info: all categories skipped                                  │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2025-12-21T08:10:52Z           │
+│ ❤️ Heartbeat: 2025-12-21T08:12:40Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 🧾 Ostatnie akcje (dla czytelności)
 
-- 2025-12-21 06:10:52 | MIGRATION:file | npc | ok | data-otservbr-global/npc/faloriel.lua
-- 2025-12-21 06:10:50 | MIGRATION:file | npc | ok | data-otservbr-global/npc/falonzo.lua
-- 2025-12-21 06:10:49 | MIGRATION:file | npc | ok | data-otservbr-global/npc/falk.lua
-- 2025-12-21 06:10:48 | MIGRATION:file | npc | ok | data-otservbr-global/npc/fa_hradin.lua
-- 2025-12-21 06:10:47 | MIGRATION:file | npc | ok | data-otservbr-global/npc/fadil.lua
-- 2025-12-21 06:10:45 | MIGRATION:file | npc | ok | data-otservbr-global/npc/ezebeth.lua
+- 2025-12-21 08:12:08 | MIGRATION:file | npc | ok | data-otservbr-global/npc/frodo.lua
+- 2025-12-21 08:12:06 | MIGRATION:file | npc | ok | data-otservbr-global/npc/freezhild.lua
+- 2025-12-21 08:12:04 | MIGRATION:file | npc | ok | data-otservbr-global/npc/frank_the_plank.lua
+- 2025-12-21 08:12:01 | MIGRATION:file | npc | ok | data-otservbr-global/npc/frafnar.lua
+- 2025-12-21 08:12:00 | MIGRATION:file | npc | ok | data-otservbr-global/npc/florentine.lua
+- 2025-12-21 08:11:57 | MIGRATION:file | npc | ok | data-otservbr-global/npc/flora.lua
 
 ---
 
 ## 🔁 W tym cyklu
 
-- 🔧 MIGRATION: zakończono kategorię [items] → ok (keys+50, files+0) — migration finished
-- 🔧 MIGRATION: mini-batch [items] → ok (keys+10) — mini_batch=5 processed=50/50
-- 🔧 MIGRATION: mini-batch [items] → ok (keys+10) — mini_batch=4 processed=40/50
-- 🔧 MIGRATION: mini-batch [items] → ok (keys+10) — mini_batch=3 processed=30/50
-- 🔧 MIGRATION: mini-batch [items] → ok (keys+10) — mini_batch=2 processed=20/50
-- 🔧 MIGRATION: mini-batch [items] → ok (keys+10) — mini_batch=1 processed=10/50
-- 🔧 MIGRATION: zakończono kategorię [items] → ok (keys+0, files+0) — migration finished
+- 🔧 MIGRATION: zakończono kategorię [items] → ok (keys+12, files+0) — migration finished
 - 🔧 MIGRATION: mini-batch stop [items] → ok (keys+0) — no new data
-- 🔧 MIGRATION: mini-batch [items] → ok (keys+0) — mini_batch=1 processed=10/20
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → ok (files+1, translated+0, skipped+295) — lang=pl file=spells.json
+- 🔧 MIGRATION: mini-batch [items] → ok (keys+0) — mini_batch=3 processed=30/50
+- 🔧 MIGRATION: mini-batch [items] → ok (keys+2) — mini_batch=2 processed=20/50
+- 🔧 MIGRATION: mini-batch [items] → ok (keys+10) — mini_batch=1 processed=10/50
+- 🔧 MIGRATION: zakończono kategorię [otclient_modules] → ok (keys+0, files+0) — migration finished
+- 🔧 MIGRATION: mini-batch stop [otclient_modules] → ok (keys+0) — no new data
+- 🔧 MIGRATION: mini-batch [otclient_modules] → ok (keys+0) — mini_batch=1 processed=10/20
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [es] → ok (files+1, translated+0, skipped+7) — lang=es file=chatchannels.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [nl] → ok (files+1, translated+0, skipped+23) — lang=nl file=startup.json
 
 
 
@@ -233,12 +233,12 @@
 
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
-| 📁 Plików przeskanowanych | **2221** | w tej sesji |
-| ✅ Plików z kluczami | **1890** | zawierały hardcoded strings |
-| ⬜ Plików bez kluczy | **331** | czyste (brak hardcoded) |
-| 🔑 Kluczy wyciągniętych | **6241** | przez workera w tej sesji |
+| 📁 Plików przeskanowanych | **2240** | w tej sesji |
+| ✅ Plików z kluczami | **1891** | zawierały hardcoded strings |
+| ⬜ Plików bez kluczy | **349** | czyste (brak hardcoded) |
+| 🔑 Kluczy wyciągniętych | **6242** | przez workera w tej sesji |
 | 🌍 Języków | **54** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#130** | continuous mode |
+| 🔄 Cykli wykonanych | **#133** | continuous mode |
 
 ---
 
@@ -445,7 +445,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #130 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #133 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -488,23 +488,23 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-21 09:11:02  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-21 09:13:02  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
 
 ## Ostatnio zmigrowane NPC
 
-- ✅ `items_classification.hpp` - ukończono 2025-12-21 08:48
-- ✅ `pch.hpp` - ukończono 2025-12-21 08:48
-- ✅ `canary_server.cpp` - ukończono 2025-12-21 08:48
-- ✅ `account.cpp` - ukończono 2025-12-21 08:48
-- ✅ `account_info.hpp` - ukończono 2025-12-21 08:47
-- ✅ `account_repository_db.hpp` - ukończono 2025-12-21 08:47
-- ✅ `account.hpp` - ukończono 2025-12-21 08:47
-- ✅ `pch.cpp` - ukończono 2025-12-21 08:47
-- ✅ `game_definitions.hpp` - ukończono 2025-12-21 08:47
-- ✅ `zone.hpp` - ukończono 2025-12-21 08:47
+- ✅ `frodo` - ukończono 2025-12-21 09:12
+- ✅ `freezhild` - ukończono 2025-12-21 09:12
+- ✅ `frank_the_plank` - ukończono 2025-12-21 09:12
+- ✅ `frafnar` - ukończono 2025-12-21 09:12
+- ✅ `florentine` - ukończono 2025-12-21 09:12
+- ✅ `flora` - ukończono 2025-12-21 09:11
+- ✅ `flint` - ukończono 2025-12-21 09:11
+- ✅ `fiona` - ukończono 2025-12-21 09:11
+- ✅ `finarfin` - ukończono 2025-12-21 09:11
+- ✅ `fillias` - ukończono 2025-12-21 09:11
 
 ---
 

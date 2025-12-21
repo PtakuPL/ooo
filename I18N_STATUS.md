@@ -2,9 +2,9 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 6000, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 2000, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 500, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja:** 2025-12-21 11:48:02 UTC  
+> **Aktualizacja:** 2025-12-21 11:50:03 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 54 | **Klucze EN:** 36454  
-> **LIVE:** Cykl #440 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: cycle_end | Kategoria: events | Plik: - | ETA: 0 | Heartbeat: 2025-12-21T10:48:01Z
+> **LIVE:** Cykl #451 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: cycle_end | Kategoria: server | Plik: - | ETA: 0 | Heartbeat: 2025-12-21T10:50:01Z
 
 ---
 
@@ -76,7 +76,7 @@
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#440** | od uruchomienia |
+| 🔄 Cykl aktualny | **#451** | od uruchomienia |
 | 🔑 Kluczy wyekstrahowanych | **6,243** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
@@ -177,18 +177,18 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #   440 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #   451 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      🔧 MIGRATION (cycle_end)                  │
-│ Kategoria: 📁 EVENTS                                 │
+│ Kategoria: 📁 SERVER                                 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status: running                                               │
 │ Plik: -                                                       │
 │ Postęp: 0/0 units                                             │
 │ Info: cycle end                                               │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2025-12-21T10:48:01Z           │
+│ ❤️ Heartbeat: 2025-12-21T10:50:01Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -205,12 +205,12 @@
 
 ## 🔁 W tym cyklu
 
-- 🔧 MIGRATION: zakończono kategorię [events] → ok (keys+0, files+0) — migration finished
-- 🔧 MIGRATION: mini-batch stop [events] → ok (keys+0) — no new data
-- 🔧 MIGRATION: mini-batch [events] → ok (keys+0) — mini_batch=1 processed=10/20
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [cs] → ok (files+1, translated+0, skipped+3) — lang=cs file=dataroot.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [es] → ok (files+1, translated+0, skipped+14) — lang=es file=libs.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [hu] → ok (files+1, translated+0, skipped+66) — lang=hu file=server.json
+- 🔧 MIGRATION: zakończono kategorię [server] → ok (keys+0, files+0) — migration finished
+- 🔧 MIGRATION: mini-batch stop [server] → ok (keys+0) — no new data
+- 🔧 MIGRATION: mini-batch [server] → ok (keys+0) — mini_batch=1 processed=10/20
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [cs] → ok (files+1, translated+0, skipped+634) — lang=cs file=scripts.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [es] → ok (files+1, translated+0, skipped+22) — lang=es file=startup.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [sv] → ok (files+1, translated+0, skipped+132) — lang=sv file=monsters.json
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [de] → ok (files+1, translated+0, skipped+21) — lang=de file=actions.json
 
 
@@ -218,7 +218,7 @@
 
 ## 📅 Dziś (UTC)
 
-- Cykle: **197**
+- Cykle: **207**
 - MIGRATION: **+17946** kluczy, **943** plików `.lua`
 - Kategorie dotknięte: actions, chatchannels, cpp, creaturescripts, dataroot, errors, events, globalevents, items, libs...
 - Błędy: **0**
@@ -235,7 +235,7 @@
 | ⬜ Plików bez kluczy | **367** | czyste (brak hardcoded) |
 | 🔑 Kluczy wyciągniętych | **6243** | przez workera w tej sesji |
 | 🌍 Języków | **54** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#440** | continuous mode |
+| 🔄 Cykli wykonanych | **#451** | continuous mode |
 
 ---
 
@@ -442,7 +442,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #440 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #451 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -485,23 +485,23 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-21 11:48:02  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-21 11:50:03  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
 
 ## Ostatnio zmigrowane NPC
 
-- ✅ `creature` - ukończono 2025-12-21 11:47
-- ✅ `player` - ukończono 2025-12-21 11:47
-- ✅ `monster` - ukończono 2025-12-21 11:47
-- ✅ `party` - ukończono 2025-12-21 11:47
-- ✅ `lib` - ukończono 2025-12-21 11:47
-- ✅ `load` - ukończono 2025-12-21 11:47
-- ✅ `storages` - ukończono 2025-12-21 11:47
-- ✅ `quests` - ukończono 2025-12-21 11:47
-- ✅ `the_queen_of_the_banshees` - ukończono 2025-12-21 11:47
-- ✅ `svargrond_arena` - ukończono 2025-12-21 11:47
+- ✅ `items_classification.hpp` - ukończono 2025-12-21 11:48
+- ✅ `pch.hpp` - ukończono 2025-12-21 11:48
+- ✅ `canary_server.cpp` - ukończono 2025-12-21 11:48
+- ✅ `account.cpp` - ukończono 2025-12-21 11:48
+- ✅ `account_info.hpp` - ukończono 2025-12-21 11:48
+- ✅ `account_repository_db.hpp` - ukończono 2025-12-21 11:48
+- ✅ `account.hpp` - ukończono 2025-12-21 11:48
+- ✅ `pch.cpp` - ukończono 2025-12-21 11:48
+- ✅ `game_definitions.hpp` - ukończono 2025-12-21 11:48
+- ✅ `zone.hpp` - ukończono 2025-12-21 11:48
 
 ---
 

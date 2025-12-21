@@ -2,9 +2,9 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 6000, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 2000, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 500, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja:** 2025-12-21 15:48:02 UTC  
+> **Aktualizacja:** 2025-12-21 15:50:03 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 54 | **Klucze EN:** 36454  
-> **LIVE:** Cykl #917 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: pending_skip | Kategoria: pending_skip | Plik: - | ETA: 0 | Heartbeat: 2025-12-21T14:47:33Z
+> **LIVE:** Cykl #927 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: pending_skip | Kategoria: pending_skip | Plik: - | ETA: 0 | Heartbeat: 2025-12-21T14:50:03Z
 
 ---
 
@@ -76,7 +76,7 @@
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#917** | od uruchomienia |
+| 🔄 Cykl aktualny | **#927** | od uruchomienia |
 | 🔑 Kluczy wyekstrahowanych | **6,243** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
@@ -177,7 +177,7 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #   917 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #   927 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      🔧 MIGRATION (pending_skip)               │
@@ -188,7 +188,7 @@
 │ Postęp: 0/0 files                                             │
 │ Info: all categories skipped                                  │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2025-12-21T14:47:33Z           │
+│ ❤️ Heartbeat: 2025-12-21T14:50:03Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -212,7 +212,7 @@
 
 ## 📅 Dziś (UTC)
 
-- Cykle: **241**
+- Cykle: **249**
 - MIGRATION: **+17946** kluczy, **943** plików `.lua`
 - Kategorie dotknięte: actions, chatchannels, cpp, creaturescripts, dataroot, errors, events, globalevents, items, libs...
 - Błędy: **0**
@@ -229,7 +229,7 @@
 | ⬜ Plików bez kluczy | **407** | czyste (brak hardcoded) |
 | 🔑 Kluczy wyciągniętych | **6243** | przez workera w tej sesji |
 | 🌍 Języków | **54** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#917** | continuous mode |
+| 🔄 Cykli wykonanych | **#927** | continuous mode |
 
 ---
 
@@ -436,7 +436,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #917 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #927 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -479,23 +479,23 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-21 15:48:02  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-21 15:50:03  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
 
 ## Ostatnio zmigrowane NPC
 
-- ✅ `guard_inurta` - ukończono 2025-12-21 15:14
-- ✅ `guardian_of_the_deep_seas` - ukończono 2025-12-21 15:14
-- ✅ `guard_bazaya` - ukończono 2025-12-21 15:14
-- ✅ `grumpy_stone` - ukończono 2025-12-21 15:14
-- ✅ `grubokk` - ukończono 2025-12-21 15:14
-- ✅ `grombur` - ukończono 2025-12-21 15:14
-- ✅ `grof_the_guard` - ukończono 2025-12-21 15:14
-- ✅ `grodrik` - ukończono 2025-12-21 15:14
-- ✅ `gregor` - ukończono 2025-12-21 15:14
-- ✅ `gree_dee` - ukończono 2025-12-21 15:14
+- ✅ `items_classification.hpp` - ukończono 2025-12-21 15:49
+- ✅ `pch.hpp` - ukończono 2025-12-21 15:49
+- ✅ `canary_server.cpp` - ukończono 2025-12-21 15:49
+- ✅ `account.cpp` - ukończono 2025-12-21 15:49
+- ✅ `account_info.hpp` - ukończono 2025-12-21 15:49
+- ✅ `account_repository_db.hpp` - ukończono 2025-12-21 15:49
+- ✅ `account.hpp` - ukończono 2025-12-21 15:49
+- ✅ `pch.cpp` - ukończono 2025-12-21 15:49
+- ✅ `game_definitions.hpp` - ukończono 2025-12-21 15:49
+- ✅ `zone.hpp` - ukończono 2025-12-21 15:49
 
 ---
 

@@ -2,9 +2,9 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 6000, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 2000, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 500, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja:** 2025-12-21 09:45:03 UTC  
+> **Aktualizacja:** 2025-12-21 09:48:02 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 54 | **Klucze EN:** 36454  
-> **LIVE:** Cykl #193 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: pending_skip | Kategoria: pending_skip | Plik: - | ETA: 0 | Heartbeat: 2025-12-21T08:44:37Z
+> **LIVE:** Cykl #202 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: cycle_end | Kategoria: modules | Plik: - | ETA: 0 | Heartbeat: 2025-12-21T08:47:59Z
 
 ---
 
@@ -76,7 +76,7 @@
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#193** | od uruchomienia |
+| 🔄 Cykl aktualny | **#202** | od uruchomienia |
 | 🔑 Kluczy wyekstrahowanych | **6,242** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
@@ -177,18 +177,18 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #   193 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #   202 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
-│ Tryb:      🔧 MIGRATION (pending_skip)               │
-│ Kategoria: 📁 PENDING_SKIP                           │
+│ Tryb:      🔧 MIGRATION (cycle_end)                  │
+│ Kategoria: 📁 MODULES                                │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status: running                                               │
 │ Plik: -                                                       │
-│ Postęp: 0/0 files                                             │
-│ Info: all categories skipped                                  │
+│ Postęp: 0/0 units                                             │
+│ Info: cycle end                                               │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2025-12-21T08:44:37Z           │
+│ ❤️ Heartbeat: 2025-12-21T08:47:59Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -205,21 +205,23 @@
 
 ## 🔁 W tym cyklu
 
-- 🔧 MIGRATION: zakończono kategorię [chatchannels] → ok (keys+0, files+0) — migration finished
-- 🔧 MIGRATION: mini-batch stop [chatchannels] → ok (keys+0) — no new data
-- 🔧 MIGRATION: mini-batch [chatchannels] → ok (keys+0) — mini_batch=1 processed=10/20
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [de] → ok (files+1, translated+0, skipped+7) — lang=de file=chatchannels.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [sv] → ok (files+1, translated+0, skipped+13749) — lang=sv file=items.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [de] → ok (files+1, translated+0, skipped+21) — lang=de file=actions.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [de] → ok (files+1, translated+0, skipped+21) — lang=de file=actions.json
-- 🌍 TRANSLATION_SYNC: SYNC_FILE_DONE [el] → ok (keys+66, files+1) — lang=el file=server.json
+- 🔧 MIGRATION: zakończono kategorię [modules] → ok (keys+0, files+0) — migration finished
+- 🔧 MIGRATION: mini-batch stop [modules] → ok (keys+0) — no new data
+- 🔧 MIGRATION: mini-batch [modules] → ok (keys+0) — mini_batch=1 processed=10/20
+- 🔧 MIGRATION: zakończono kategorię [actions] → ok (keys+0, files+0) — migration finished
+- 🔧 MIGRATION: mini-batch stop [actions] → ok (keys+0) — no new data
+- 🔧 MIGRATION: mini-batch [actions] → ok (keys+0) — mini_batch=1 processed=10/20
+- 🔧 MIGRATION: zakończono kategorię [items] → ok (keys+0, files+0) — migration finished
+- 🔧 MIGRATION: mini-batch stop [items] → ok (keys+0) — no new data
+- 🔧 MIGRATION: mini-batch [items] → ok (keys+0) — mini_batch=1 processed=10/20
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [sv] → ok (files+1, translated+0, skipped+634) — lang=sv file=scripts.json
 
 
 
 
 ## 📅 Dziś (UTC)
 
-- Cykle: **171**
+- Cykle: **176**
 - MIGRATION: **+17946** kluczy, **943** plików `.lua`
 - Kategorie dotknięte: actions, chatchannels, cpp, creaturescripts, dataroot, errors, events, globalevents, items, libs...
 - Błędy: **0**
@@ -236,7 +238,7 @@
 | ⬜ Plików bez kluczy | **349** | czyste (brak hardcoded) |
 | 🔑 Kluczy wyciągniętych | **6242** | przez workera w tej sesji |
 | 🌍 Języków | **54** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#193** | continuous mode |
+| 🔄 Cykli wykonanych | **#202** | continuous mode |
 
 ---
 
@@ -443,7 +445,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #193 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #202 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -486,23 +488,23 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-21 09:45:03  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-21 09:48:02  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
 
 ## Ostatnio zmigrowane NPC
 
-- ✅ `frodo` - ukończono 2025-12-21 09:12
-- ✅ `freezhild` - ukończono 2025-12-21 09:12
-- ✅ `frank_the_plank` - ukończono 2025-12-21 09:12
-- ✅ `frafnar` - ukończono 2025-12-21 09:12
-- ✅ `florentine` - ukończono 2025-12-21 09:12
-- ✅ `flora` - ukończono 2025-12-21 09:11
-- ✅ `flint` - ukończono 2025-12-21 09:11
-- ✅ `fiona` - ukończono 2025-12-21 09:11
-- ✅ `finarfin` - ukończono 2025-12-21 09:11
-- ✅ `fillias` - ukończono 2025-12-21 09:11
+- ✅ `daily_reward` - ukończono 2025-12-21 09:47
+- ✅ `questtrack` - ukończono 2025-12-21 09:47
+- ✅ `gamestore` - ukończono 2025-12-21 09:47
+- ✅ `init` - ukończono 2025-12-21 09:47
+- ✅ `hireling_module` - ukończono 2025-12-21 09:47
+- ✅ `death` - ukończono 2025-12-21 09:47
+- ✅ `modules` - ukończono 2025-12-21 09:47
+- ✅ `creature` - ukończono 2025-12-21 09:47
+- ✅ `player` - ukończono 2025-12-21 09:47
+- ✅ `monster` - ukończono 2025-12-21 09:47
 
 ---
 

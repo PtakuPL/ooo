@@ -2,9 +2,9 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 6000, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 2000, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 500, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja:** 2025-12-21 08:45:03 UTC  
+> **Aktualizacja:** 2025-12-21 08:47:02 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 54 | **Klucze EN:** 36454  
-> **LIVE:** Cykl #69 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: pending_skip | Kategoria: pending_skip | Plik: - | ETA: 0 | Heartbeat: 2025-12-21T07:44:40Z
+> **LIVE:** Cykl #74 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: mini_batch_end | Kategoria: libs | Plik: - | ETA: 0 | Heartbeat: 2025-12-21T07:47:01Z
 
 ---
 
@@ -76,7 +76,7 @@
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#69** | od uruchomienia |
+| 🔄 Cykl aktualny | **#74** | od uruchomienia |
 | 🔑 Kluczy wyekstrahowanych | **6,241** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
@@ -177,18 +177,18 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #    69 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #    74 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
-│ Tryb:      🔧 MIGRATION (pending_skip)               │
-│ Kategoria: 📁 PENDING_SKIP                           │
+│ Tryb:      🔧 MIGRATION (mini_batch_end)             │
+│ Kategoria: 📁 LIBS                                   │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status: running                                               │
 │ Plik: -                                                       │
-│ Postęp: 0/0 files                                             │
-│ Info: all categories skipped                                  │
+│ Postęp: 10/20 items                                           │
+│ Info: done                                                    │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2025-12-21T07:44:40Z           │
+│ ❤️ Heartbeat: 2025-12-21T07:47:01Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -205,16 +205,16 @@
 
 ## 🔁 W tym cyklu
 
-- 🔧 MIGRATION: zakończono kategorię [items] → ok (keys+50, files+0) — migration finished
-- 🔧 MIGRATION: mini-batch [items] → ok (keys+10) — mini_batch=5 processed=50/50
-- 🔧 MIGRATION: mini-batch [items] → ok (keys+10) — mini_batch=4 processed=40/50
-- 🔧 MIGRATION: mini-batch [items] → ok (keys+10) — mini_batch=3 processed=30/50
-- 🔧 MIGRATION: mini-batch [items] → ok (keys+10) — mini_batch=2 processed=20/50
-- 🔧 MIGRATION: mini-batch [items] → ok (keys+10) — mini_batch=1 processed=10/50
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [it] → ok (files+1, translated+0, skipped+21) — lang=it file=libs.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [de] → ok (files+1, translated+0, skipped+1933) — lang=de file=otclient_modules.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pt] → ok (files+1, translated+0, skipped+15) — lang=pt file=modules.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [fr] → ok (files+1, translated+0, skipped+3) — lang=fr file=dataroot.json
+- 🔧 MIGRATION: zakończono kategorię [libs] → ok (keys+0, files+0) — migration finished
+- 🔧 MIGRATION: mini-batch stop [libs] → ok (keys+0) — no new data
+- 🔧 MIGRATION: mini-batch [libs] → ok (keys+0) — mini_batch=1 processed=10/20
+- 🔧 MIGRATION: zakończono kategorię [spells] → ok (keys+0, files+0) — migration finished
+- 🔧 MIGRATION: mini-batch stop [spells] → ok (keys+0) — no new data
+- 🔧 MIGRATION: mini-batch [spells] → ok (keys+0) — mini_batch=1 processed=10/50
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [it] → ok (files+1, translated+0, skipped+1987) — lang=it file=otclient_modules.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [de] → ok (files+1, translated+0, skipped+304) — lang=de file=spells.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pt] → ok (files+1, translated+0, skipped+117) — lang=pt file=quests.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [de] → ok (files+1, translated+0, skipped+3) — lang=de file=dataroot.json
 
 
 
@@ -238,7 +238,7 @@
 | ⬜ Plików bez kluczy | **331** | czyste (brak hardcoded) |
 | 🔑 Kluczy wyciągniętych | **6241** | przez workera w tej sesji |
 | 🌍 Języków | **54** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#69** | continuous mode |
+| 🔄 Cykli wykonanych | **#74** | continuous mode |
 
 ---
 
@@ -445,7 +445,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #69 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #74 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -488,23 +488,23 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-21 08:45:03  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-21 08:47:02  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
 
 ## Ostatnio zmigrowane NPC
 
-- ✅ `items_classification.hpp` - ukończono 2025-12-21 08:17
-- ✅ `pch.hpp` - ukończono 2025-12-21 08:17
-- ✅ `canary_server.cpp` - ukończono 2025-12-21 08:17
-- ✅ `account.cpp` - ukończono 2025-12-21 08:17
-- ✅ `account_info.hpp` - ukończono 2025-12-21 08:17
-- ✅ `account_repository_db.hpp` - ukończono 2025-12-21 08:17
-- ✅ `account.hpp` - ukończono 2025-12-21 08:17
-- ✅ `pch.cpp` - ukończono 2025-12-21 08:17
-- ✅ `game_definitions.hpp` - ukończono 2025-12-21 08:17
-- ✅ `zone.hpp` - ukończono 2025-12-21 08:17
+- ✅ `lib` - ukończono 2025-12-21 08:47
+- ✅ `load` - ukończono 2025-12-21 08:47
+- ✅ `storages` - ukończono 2025-12-21 08:47
+- ✅ `quests` - ukończono 2025-12-21 08:47
+- ✅ `the_queen_of_the_banshees` - ukończono 2025-12-21 08:46
+- ✅ `svargrond_arena` - ukończono 2025-12-21 08:46
+- ✅ `bigfoot_burden` - ukończono 2025-12-21 08:46
+- ✅ `quest` - ukończono 2025-12-21 08:46
+- ✅ `their_masters_voice` - ukończono 2025-12-21 08:46
+- ✅ `lib` - ukończono 2025-12-21 08:46
 
 ---
 

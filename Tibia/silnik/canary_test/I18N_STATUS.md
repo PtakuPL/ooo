@@ -2,9 +2,9 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 6000, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 2000, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 500, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja:** 2025-12-21 11:11:02 UTC  
+> **Aktualizacja:** 2025-12-21 11:13:03 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 54 | **Klucze EN:** 36454  
-> **LIVE:** Cykl #369 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: pending_skip | Kategoria: pending_skip | Plik: - | ETA: 0 | Heartbeat: 2025-12-21T10:10:38Z
+> **LIVE:** Cykl #373 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: migration_start | Kategoria: scripts | Plik: - | ETA: 0 | Heartbeat: 2025-12-21T10:12:52Z
 
 ---
 
@@ -31,10 +31,10 @@
 ### 📁 Pliki Projektu (pełny skan)
 | Metryka | Wartość | Procent | Info |
 |---------|---------|---------|------|
-| 📂 **Wszystkie pliki** | **18,913** | 100% | cały projekt |
+| 📂 **Wszystkie pliki** | **18,927** | 100% | cały projekt |
 | 📜 Do skanowania (kod) | **8,156** | 43.1% | pliki z kodem/tekstami |
-| 🔍 **Przeskanowane** | **6,418** | **78.7%** | historia workera |
-| ⏳ Nie przeskanowane | **1,738** | 21.3% | czekają na skan |
+| 🔍 **Przeskanowane** | **6,425** | **78.8%** | historia workera |
+| ⏳ Nie przeskanowane | **1,731** | 21.2% | czekają na skan |
 
 ### 📊 Podział plików do skanowania
 | Typ | Ilość | Info |
@@ -50,10 +50,10 @@
 ### ✅ Status Migracji
 | Status | Ilość | Procent | Opis |
 |--------|-------|---------|------|
-| ✅ Zmigrowane | **1891** | 29.5% | mają klucze i18n |
+| ✅ Zmigrowane | **1892** | 29.4% | mają klucze i18n |
 | 🔄 Wymaga migracji | **0** | - | trzeba dodać i18n |
-| ⚪ Czyste | **346** | - | bez tekstów |
-| 🔧 W trakcie | **3** | - | obecnie przetwarzane |
+| ⚪ Czyste | **365** | - | bez tekstów |
+| 🔧 W trakcie | **2** | - | obecnie przetwarzane |
 
 ### 🔑 Klucze i18n
 | Metryka | Wartość | Info |
@@ -76,8 +76,8 @@
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#369** | od uruchomienia |
-| 🔑 Kluczy wyekstrahowanych | **6,242** | w tej sesji |
+| 🔄 Cykl aktualny | **#373** | od uruchomienia |
+| 🔑 Kluczy wyekstrahowanych | **6,243** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
 ---
@@ -177,49 +177,47 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #   369 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #   373 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
-│ Tryb:      🔧 MIGRATION (pending_skip)               │
-│ Kategoria: 📁 PENDING_SKIP                           │
+│ Tryb:      🔧 MIGRATION (migration_start)            │
+│ Kategoria: 📁 SCRIPTS                                │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status: running                                               │
 │ Plik: -                                                       │
-│ Postęp: 0/0 files                                             │
-│ Info: all categories skipped                                  │
+│ Postęp: 0/165 files                                           │
+│ Info: migration                                               │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2025-12-21T10:10:38Z           │
+│ ❤️ Heartbeat: 2025-12-21T10:12:52Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 🧾 Ostatnie akcje (dla czytelności)
 
-- 2025-12-21 08:12:08 | MIGRATION:file | npc | ok | data-otservbr-global/npc/frodo.lua
-- 2025-12-21 08:12:06 | MIGRATION:file | npc | ok | data-otservbr-global/npc/freezhild.lua
-- 2025-12-21 08:12:04 | MIGRATION:file | npc | ok | data-otservbr-global/npc/frank_the_plank.lua
-- 2025-12-21 08:12:01 | MIGRATION:file | npc | ok | data-otservbr-global/npc/frafnar.lua
-- 2025-12-21 08:12:00 | MIGRATION:file | npc | ok | data-otservbr-global/npc/florentine.lua
-- 2025-12-21 08:11:57 | MIGRATION:file | npc | ok | data-otservbr-global/npc/flora.lua
+- 2025-12-21 10:12:45 | MIGRATION:file | npc | ok | data-otservbr-global/npc/gladys.lua
+- 2025-12-21 10:12:44 | MIGRATION:file | npc | ok | data-otservbr-global/npc/giri.lua
+- 2025-12-21 10:12:40 | MIGRATION:file | npc | ok | data-otservbr-global/npc/ghost_of_a_priest.lua
+- 2025-12-21 10:12:38 | MIGRATION:file | npc | ok | data-otservbr-global/npc/ghostly_wolf.lua
+- 2025-12-21 10:12:36 | MIGRATION:file | npc | ok | data-otservbr-global/npc/gewen.lua
+- 2025-12-21 10:12:32 | MIGRATION:file | npc | ok | data-otservbr-global/npc/george_the_boyscout.lua
 
 ---
 
 ## 🔁 W tym cyklu
 
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pt] → ok (files+1, translated+0, skipped+5) — lang=pt file=events.json
-- 🔧 MIGRATION: zakończono kategorię [libs] → ok (keys+0, files+0) — migration finished
-- 🔧 MIGRATION: mini-batch stop [libs] → ok (keys+0) — no new data
-- 🔧 MIGRATION: mini-batch [libs] → ok (keys+0) — mini_batch=1 processed=10/20
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [it] → ok (files+1, translated+0, skipped+304) — lang=it file=spells.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pt] → ok (files+1, translated+0, skipped+132) — lang=pt file=monsters.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [de] → ok (files+1, translated+0, skipped+21) — lang=de file=actions.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [nl] → ok (files+1, translated+0, skipped+2) — lang=nl file=creaturescripts.json
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [de] → ok (files+1, translated+0, skipped+21) — lang=de file=actions.json
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [de] → ok (files+1, translated+0, skipped+21) — lang=de file=actions.json
-- 🌍 TRANSLATION_SYNC: SYNC_FILE_DONE [he] → ok (keys+21, files+1) — lang=he file=actions.json
+- 🌍 TRANSLATION_SYNC: SYNC_FILE_DONE [he] → ok (keys+5, files+1) — lang=he file=events.json
 
 
 
 
 ## 📅 Dziś (UTC)
 
-- Cykle: **187**
+- Cykle: **188**
 - MIGRATION: **+17946** kluczy, **943** plików `.lua`
 - Kategorie dotknięte: actions, chatchannels, cpp, creaturescripts, dataroot, errors, events, globalevents, items, libs...
 - Błędy: **0**
@@ -231,12 +229,12 @@
 
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
-| 📁 Plików przeskanowanych | **2240** | w tej sesji |
-| ✅ Plików z kluczami | **1891** | zawierały hardcoded strings |
-| ⬜ Plików bez kluczy | **349** | czyste (brak hardcoded) |
-| 🔑 Kluczy wyciągniętych | **6242** | przez workera w tej sesji |
+| 📁 Plików przeskanowanych | **2259** | w tej sesji |
+| ✅ Plików z kluczami | **1892** | zawierały hardcoded strings |
+| ⬜ Plików bez kluczy | **367** | czyste (brak hardcoded) |
+| 🔑 Kluczy wyciągniętych | **6243** | przez workera w tej sesji |
 | 🌍 Języków | **54** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#369** | continuous mode |
+| 🔄 Cykli wykonanych | **#373** | continuous mode |
 
 ---
 
@@ -443,7 +441,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #369 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #373 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -486,23 +484,23 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-21 11:11:02  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-21 11:13:03  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
 
 ## Ostatnio zmigrowane NPC
 
-- ✅ `items_classification.hpp` - ukończono 2025-12-21 09:48
-- ✅ `pch.hpp` - ukończono 2025-12-21 09:48
-- ✅ `canary_server.cpp` - ukończono 2025-12-21 09:48
-- ✅ `account.cpp` - ukończono 2025-12-21 09:48
-- ✅ `account_info.hpp` - ukończono 2025-12-21 09:48
-- ✅ `account_repository_db.hpp` - ukończono 2025-12-21 09:48
-- ✅ `account.hpp` - ukończono 2025-12-21 09:48
-- ✅ `pch.cpp` - ukończono 2025-12-21 09:48
-- ✅ `game_definitions.hpp` - ukończono 2025-12-21 09:48
-- ✅ `zone.hpp` - ukończono 2025-12-21 09:48
+- ✅ `gladys` - ukończono 2025-12-21 11:12
+- ✅ `giri` - ukończono 2025-12-21 11:12
+- ✅ `ghost_of_a_priest` - ukończono 2025-12-21 11:12
+- ✅ `ghostly_wolf` - ukończono 2025-12-21 11:12
+- ✅ `gewen` - ukończono 2025-12-21 11:12
+- ✅ `george_the_boyscout` - ukończono 2025-12-21 11:12
+- ✅ `gelidrazahs_thirst` - ukończono 2025-12-21 11:12
+- ✅ `gelagos` - ukończono 2025-12-21 11:12
+- ✅ `gederas` - ukończono 2025-12-21 11:12
+- ✅ `gate_guardian` - ukończono 2025-12-21 11:12
 
 ---
 

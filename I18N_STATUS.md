@@ -2,9 +2,9 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 6000, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 2000, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 500, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja:** 2025-12-21 15:14:03 UTC  
+> **Aktualizacja:** 2025-12-21 15:16:03 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 54 | **Klucze EN:** 36454  
-> **LIVE:** Cykl #854 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: migration_start | Kategoria: npc | Plik: - | ETA: 0 | Heartbeat: 2025-12-21T14:14:03Z
+> **LIVE:** Cykl #857 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: pending_skip | Kategoria: pending_skip | Plik: - | ETA: 0 | Heartbeat: 2025-12-21T14:15:43Z
 
 ---
 
@@ -31,10 +31,10 @@
 ### 📁 Pliki Projektu (pełny skan)
 | Metryka | Wartość | Procent | Info |
 |---------|---------|---------|------|
-| 📂 **Wszystkie pliki** | **18,943** | 100% | cały projekt |
-| 📜 Do skanowania (kod) | **8,156** | 43.1% | pliki z kodem/tekstami |
-| 🔍 **Przeskanowane** | **6,432** | **78.9%** | historia workera |
-| ⏳ Nie przeskanowane | **1,724** | 21.1% | czekają na skan |
+| 📂 **Wszystkie pliki** | **18,965** | 100% | cały projekt |
+| 📜 Do skanowania (kod) | **8,156** | 43.0% | pliki z kodem/tekstami |
+| 🔍 **Przeskanowane** | **6,442** | **79.0%** | historia workera |
+| ⏳ Nie przeskanowane | **1,714** | 21.0% | czekają na skan |
 
 ### 📊 Podział plików do skanowania
 | Typ | Ilość | Info |
@@ -52,7 +52,7 @@
 |--------|-------|---------|------|
 | ✅ Zmigrowane | **1892** | 29.4% | mają klucze i18n |
 | 🔄 Wymaga migracji | **0** | - | trzeba dodać i18n |
-| ⚪ Czyste | **385** | - | bez tekstów |
+| ⚪ Czyste | **405** | - | bez tekstów |
 | 🔧 W trakcie | **2** | - | obecnie przetwarzane |
 
 ### 🔑 Klucze i18n
@@ -76,7 +76,7 @@
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#854** | od uruchomienia |
+| 🔄 Cykl aktualny | **#857** | od uruchomienia |
 | 🔑 Kluczy wyekstrahowanych | **6,243** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
@@ -177,35 +177,35 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #   854 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #   857 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
-│ Tryb:      🔧 MIGRATION (migration_start)            │
-│ Kategoria: 📁 NPC                                    │
+│ Tryb:      🔧 MIGRATION (pending_skip)               │
+│ Kategoria: 📁 PENDING_SKIP                           │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status: running                                               │
 │ Plik: -                                                       │
-│ Postęp: 0/3 files                                             │
-│ Info: migration                                               │
+│ Postęp: 0/0 files                                             │
+│ Info: all categories skipped                                  │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2025-12-21T14:14:03Z           │
+│ ❤️ Heartbeat: 2025-12-21T14:15:43Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 🧾 Ostatnie akcje (dla czytelności)
 
-- 2025-12-21 12:13:41 | MIGRATION:file | npc | ok | data-otservbr-global/npc/gnomish_operative_gt-m-01.lua
-- 2025-12-21 12:13:40 | MIGRATION:file | npc | ok | data-otservbr-global/npc/gnomish_operative_cathing.lua
-- 2025-12-21 12:13:38 | MIGRATION:file | npc | ok | data-otservbr-global/npc/gnominus.lua
-- 2025-12-21 12:13:36 | MIGRATION:file | npc | ok | data-otservbr-global/npc/gnominer.lua
-- 2025-12-21 12:13:34 | MIGRATION:file | npc | ok | data-otservbr-global/npc/gnomincia.lua
-- 2025-12-21 12:13:32 | MIGRATION:file | npc | ok | data-otservbr-global/npc/gnomillion.lua
+- 2025-12-21 14:14:35 | MIGRATION:file | npc | ok | data-otservbr-global/npc/guard_inurta.lua
+- 2025-12-21 14:14:30 | MIGRATION:file | npc | ok | data-otservbr-global/npc/guardian_of_the_deep_seas.lua
+- 2025-12-21 14:14:29 | MIGRATION:file | npc | ok | data-otservbr-global/npc/guard_bazaya.lua
+- 2025-12-21 14:14:27 | MIGRATION:file | npc | ok | data-otservbr-global/npc/grumpy_stone.lua
+- 2025-12-21 14:14:25 | MIGRATION:file | npc | ok | data-otservbr-global/npc/grubokk.lua
+- 2025-12-21 14:14:24 | MIGRATION:file | npc | ok | data-otservbr-global/npc/grombur.lua
 
 ---
 
 ## 🔁 W tym cyklu
 
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [es] → ok (files+1, translated+0, skipped+6880) — lang=es file=npc.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [es] → ok (files+1, translated+0, skipped+117) — lang=es file=quests.json
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [de] → ok (files+1, translated+0, skipped+21) — lang=de file=actions.json
 
 
@@ -213,7 +213,7 @@
 
 ## 📅 Dziś (UTC)
 
-- Cykle: **233**
+- Cykle: **235**
 - MIGRATION: **+17946** kluczy, **943** plików `.lua`
 - Kategorie dotknięte: actions, chatchannels, cpp, creaturescripts, dataroot, errors, events, globalevents, items, libs...
 - Błędy: **0**
@@ -225,12 +225,12 @@
 
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
-| 📁 Plików przeskanowanych | **2279** | w tej sesji |
+| 📁 Plików przeskanowanych | **2299** | w tej sesji |
 | ✅ Plików z kluczami | **1892** | zawierały hardcoded strings |
-| ⬜ Plików bez kluczy | **387** | czyste (brak hardcoded) |
+| ⬜ Plików bez kluczy | **407** | czyste (brak hardcoded) |
 | 🔑 Kluczy wyciągniętych | **6243** | przez workera w tej sesji |
 | 🌍 Języków | **54** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#854** | continuous mode |
+| 🔄 Cykli wykonanych | **#857** | continuous mode |
 
 ---
 
@@ -437,7 +437,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #854 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #857 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -480,23 +480,23 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-21 15:14:03  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-21 15:16:03  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
 
 ## Ostatnio zmigrowane NPC
 
-- ✅ `items_classification.hpp` - ukończono 2025-12-21 13:49
-- ✅ `pch.hpp` - ukończono 2025-12-21 13:49
-- ✅ `canary_server.cpp` - ukończono 2025-12-21 13:49
-- ✅ `account.cpp` - ukończono 2025-12-21 13:49
-- ✅ `account_info.hpp` - ukończono 2025-12-21 13:49
-- ✅ `account_repository_db.hpp` - ukończono 2025-12-21 13:49
-- ✅ `account.hpp` - ukończono 2025-12-21 13:49
-- ✅ `pch.cpp` - ukończono 2025-12-21 13:49
-- ✅ `game_definitions.hpp` - ukończono 2025-12-21 13:49
-- ✅ `zone.hpp` - ukończono 2025-12-21 13:49
+- ✅ `guard_inurta` - ukończono 2025-12-21 15:14
+- ✅ `guardian_of_the_deep_seas` - ukończono 2025-12-21 15:14
+- ✅ `guard_bazaya` - ukończono 2025-12-21 15:14
+- ✅ `grumpy_stone` - ukończono 2025-12-21 15:14
+- ✅ `grubokk` - ukończono 2025-12-21 15:14
+- ✅ `grombur` - ukończono 2025-12-21 15:14
+- ✅ `grof_the_guard` - ukończono 2025-12-21 15:14
+- ✅ `grodrik` - ukończono 2025-12-21 15:14
+- ✅ `gregor` - ukończono 2025-12-21 15:14
+- ✅ `gree_dee` - ukończono 2025-12-21 15:14
 
 ---
 

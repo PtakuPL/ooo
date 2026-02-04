@@ -16,8 +16,8 @@ This document tracks i18n migration progress made during GitHub Copilot sessions
 |--------|-------|
 | 📁 Files Migrated | 2 |
 | 🔑 New Keys Added (EN) | 10 |
-| 🌐 Translations Added (PL) | 70+ |
-| ⏱️ Session Duration | ~45 min |
+| 🌐 Translations Added (PL) | 180+ |
+| ⏱️ Session Duration | ~60 min |
 
 ---
 
@@ -171,17 +171,21 @@ NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "key", { player:getN
 
 ## 🌐 OTClient UI Translations Added (PL)
 
-### Basic UI Elements (60 translations):
+### Basic UI Elements (180+ translations):
 
 | Category | Examples |
 |----------|----------|
-| **Buttons** | Anuluj, Ok, Zastosuj, Dodaj |
+| **Buttons** | Anuluj, Ok, Zastosuj, Dodaj, Zamknij, Wyślij |
 | **VIP System** | Dodaj do listy VIP, Wprowadź nazwę postaci |
 | **Objects** | Użyj, Załóż/Zdejmij, Użyj na celu, Przypisz Przedmiot |
 | **Spells** | Przypisz Zaklęcie, Parametr, Filtr |
 | **Audio** | Włącz muzykę, Głośność muzyki |
 | **Battle** | Bitwa, Ukryj potwory, Ukryj graczy, Ukryj NPC |
 | **Bestiary** | Rzadki, Pospolity, Niepospolity, Dodaj do listy łupów |
+| **Blessings** | Błogosławieństwa, Historia, Rejestr Błogosławieństw |
+| **Boss System** | Punkty Bossów, Mistrzostwo, Ekspertyza, Biegłość |
+| **Calendar** | Poniedziałek-Niedziela, Harmonogram Wydarzeń |
+| **Character Stats** | Obrażenia, Obrona, Kradzież Życia, Trafienie Krytyczne |
 
 ---
 

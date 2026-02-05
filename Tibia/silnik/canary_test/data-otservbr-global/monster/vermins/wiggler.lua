@@ -75,8 +75,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Zzzrp", yell = false },
-	{ text = "Crick! Crick!", yell = false },
+	{ text = "Zzzrp", yell = false , i18nKey = "monster.wiggler.voice_1"},
+	{ text = "Crick! Crick!", yell = false , i18nKey = "monster.wiggler.voice_2"},
 }
 
 monster.loot = {

@@ -60,11 +60,11 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Let's kill 'em", yell = false },
-	{ text = "Arrrgh!", yell = false },
-	{ text = "You'll never take me alive!", yell = false },
-	{ text = "§%§&§! #*$§$!!", yell = false },
-	{ text = "You won't get me alive!", yell = false },
+	{ text = "Let's kill 'em", yell = false , i18nKey = "monster.deadeye_devious.voice_1"},
+	{ text = "Arrrgh!", yell = false , i18nKey = "monster.deadeye_devious.voice_2"},
+	{ text = "You'll never take me alive!", yell = false , i18nKey = "monster.deadeye_devious.voice_3"},
+	{ text = "§%§&§! #*$§$!!", yell = false , i18nKey = "monster.deadeye_devious.voice_4"},
+	{ text = "You won't get me alive!", yell = false , i18nKey = "monster.deadeye_devious.voice_5"},
 }
 
 monster.loot = {

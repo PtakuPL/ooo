@@ -1,7 +1,7 @@
 # NPC: fa_hradin
 
-**Plik:** `data-otservbr-global/npc/fa_hradin.lua`
-**Data migracji:** 2025-12-17 00:57
+**Plik:** 
+**Data migracji:** 2025-12-21 07:10
 **Liczba tekstów:** 0
 
 ## Klucze i18n

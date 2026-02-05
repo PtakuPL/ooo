@@ -65,16 +65,16 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I had the Halloween Hare for breakfast!", yell = false },
-	{ text = "Your soul will be mine...wait, wrong line", yell = false },
-	{ text = "Trick or treat? I saw death!", yell = false },
-	{ text = "No wait! Don't kill me! It's me, your friend!", yell = false },
-	{ text = "Bunnies, bah! I'm the real thing!", yell = false },
-	{ text = "Muahahahaha!", yell = false },
-	{ text = "I've come to avenge all those mutilated pumpkins!", yell = false },
-	{ text = "Wait until I get you!", yell = false },
-	{ text = "Fear the spirit of Halloween!", yell = false },
-	{ text = "You, my little mouse, are doomed.", yell = false },
+	{ text = "I had the Halloween Hare for breakfast!", yell = false , i18nKey = "monster.the_mutated_pumpkin.voice_1"},
+	{ text = "Your soul will be mine...wait, wrong line", yell = false , i18nKey = "monster.the_mutated_pumpkin.voice_2"},
+	{ text = "Trick or treat? I saw death!", yell = false , i18nKey = "monster.the_mutated_pumpkin.voice_3"},
+	{ text = "No wait! Don't kill me! It's me, your friend!", yell = false , i18nKey = "monster.the_mutated_pumpkin.voice_4"},
+	{ text = "Bunnies, bah! I'm the real thing!", yell = false , i18nKey = "monster.the_mutated_pumpkin.voice_5"},
+	{ text = "Muahahahaha!", yell = false , i18nKey = "monster.the_mutated_pumpkin.voice_6"},
+	{ text = "I've come to avenge all those mutilated pumpkins!", yell = false , i18nKey = "monster.the_mutated_pumpkin.voice_7"},
+	{ text = "Wait until I get you!", yell = false , i18nKey = "monster.the_mutated_pumpkin.voice_8"},
+	{ text = "Fear the spirit of Halloween!", yell = false , i18nKey = "monster.the_mutated_pumpkin.voice_9"},
+	{ text = "You, my little mouse, are doomed.", yell = false , i18nKey = "monster.the_mutated_pumpkin.voice_10"},
 }
 
 monster.loot = {

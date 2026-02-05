@@ -60,10 +60,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Terofar cast a greater death curse on you!", yell = false },
-	{ text = "IT TOOK AN ARMY OF YOUR KIND TO DEFEAT THE WARDEN. NOW YOU ARE ALONE!", yell = true },
-	{ text = "THE WARDS ARE FAILING! MY ESCAPE IS ONLY A MATTER OF TIME!!", yell = true },
-	{ text = "FEELS GOOD TO BE BACK IN ACTION!", yell = true },
+	{ text = "Terofar cast a greater death curse on you!", yell = false , i18nKey = "monster.terofar.voice_1"},
+	{ text = "IT TOOK AN ARMY OF YOUR KIND TO DEFEAT THE WARDEN. NOW YOU ARE ALONE!", yell = true , i18nKey = "monster.terofar.voice_2"},
+	{ text = "THE WARDS ARE FAILING! MY ESCAPE IS ONLY A MATTER OF TIME!!", yell = true , i18nKey = "monster.terofar.voice_3"},
+	{ text = "FEELS GOOD TO BE BACK IN ACTION!", yell = true , i18nKey = "monster.terofar.voice_4"},
 }
 
 monster.loot = {

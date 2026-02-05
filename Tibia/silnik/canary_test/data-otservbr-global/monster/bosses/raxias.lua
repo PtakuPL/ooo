@@ -62,9 +62,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "This is a nightmare and you won't wake up!", yell = false },
-	{ text = "This was your last chance!", yell = false },
-	{ text = "Blood, fight and rage!", yell = false },
+	{ text = "This is a nightmare and you won't wake up!", yell = false , i18nKey = "monster.raxias.voice_1"},
+	{ text = "This was your last chance!", yell = false , i18nKey = "monster.raxias.voice_2"},
+	{ text = "Blood, fight and rage!", yell = false , i18nKey = "monster.raxias.voice_3"},
 }
 
 monster.loot = {

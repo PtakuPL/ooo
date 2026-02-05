@@ -60,13 +60,13 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Booze! More booze!", yell = false },
-	{ text = "Harrr! Harrr!", yell = false },
-	{ text = "<Burp>", yell = false },
-	{ text = "<Fart>", yell = false },
-	{ text = "Nothing better than plundering and getting plastered!", yell = false },
-	{ text = "Yarrr!", yell = false },
-	{ text = "A pirate's unlife for me!", yell = false },
+	{ text = "Booze! More booze!", yell = false , i18nKey = "monster.spectral_scum.voice_1"},
+	{ text = "Harrr! Harrr!", yell = false , i18nKey = "monster.spectral_scum.voice_2"},
+	{ text = "<Burp>", yell = false , i18nKey = "monster.spectral_scum.voice_3"},
+	{ text = "<Fart>", yell = false , i18nKey = "monster.spectral_scum.voice_4"},
+	{ text = "Nothing better than plundering and getting plastered!", yell = false , i18nKey = "monster.spectral_scum.voice_5"},
+	{ text = "Yarrr!", yell = false , i18nKey = "monster.spectral_scum.voice_6"},
+	{ text = "A pirate's unlife for me!", yell = false , i18nKey = "monster.spectral_scum.voice_7"},
 }
 
 monster.loot = {}

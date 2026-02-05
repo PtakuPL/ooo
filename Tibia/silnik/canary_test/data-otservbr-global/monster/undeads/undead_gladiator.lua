@@ -70,11 +70,11 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Let's battle it out in a duel!", yell = false },
-	{ text = "Bring it!", yell = false },
-	{ text = "I'll fight here in eternity and beyond.", yell = false },
-	{ text = "I will not give up!", yell = false },
-	{ text = "Another foolish adventurer who tries to beat me.", yell = false },
+	{ text = "Let's battle it out in a duel!", yell = false , i18nKey = "monster.undead_gladiator.voice_1"},
+	{ text = "Bring it!", yell = false , i18nKey = "monster.undead_gladiator.voice_2"},
+	{ text = "I'll fight here in eternity and beyond.", yell = false , i18nKey = "monster.undead_gladiator.voice_3"},
+	{ text = "I will not give up!", yell = false , i18nKey = "monster.undead_gladiator.voice_4"},
+	{ text = "Another foolish adventurer who tries to beat me.", yell = false , i18nKey = "monster.undead_gladiator.voice_5"},
 }
 
 monster.loot = {

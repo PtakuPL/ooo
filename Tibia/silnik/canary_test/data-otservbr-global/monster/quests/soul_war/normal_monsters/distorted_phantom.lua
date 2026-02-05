@@ -77,9 +77,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I'm not here. I am there.", yell = false },
-	{ text = "The night is coming for you.", yell = false },
-	{ text = "Too late... No turning back now.", yell = false },
+	{ text = "I'm not here. I am there.", yell = false , i18nKey = "monster.distorted_phantom.voice_1"},
+	{ text = "The night is coming for you.", yell = false , i18nKey = "monster.distorted_phantom.voice_2"},
+	{ text = "Too late... No turning back now.", yell = false , i18nKey = "monster.distorted_phantom.voice_3"},
 }
 
 monster.loot = {

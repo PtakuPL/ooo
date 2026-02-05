@@ -73,7 +73,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Arr far zwar!", yell = false },
+	{ text = "Arr far zwar!", yell = false , i18nKey = "monster.lost_husher.voice_1"},
 }
 
 monster.loot = {

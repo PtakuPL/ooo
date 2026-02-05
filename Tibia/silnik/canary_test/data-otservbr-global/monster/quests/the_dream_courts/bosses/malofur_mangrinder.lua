@@ -69,10 +69,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "RAAAARGH! I'M MASHING YE TO DUST BOOM!", yell = true },
-	{ text = "BOOOM!", yell = true },
-	{ text = "BOOOOM!!!", yell = true },
-	{ text = "BOOOOOM!!!", yell = true },
+	{ text = "RAAAARGH! I'M MASHING YE TO DUST BOOM!", yell = true , i18nKey = "monster.malofur_mangrinder.voice_1"},
+	{ text = "BOOOM!", yell = true , i18nKey = "monster.malofur_mangrinder.voice_2"},
+	{ text = "BOOOOM!!!", yell = true , i18nKey = "monster.malofur_mangrinder.voice_3"},
+	{ text = "BOOOOOM!!!", yell = true , i18nKey = "monster.malofur_mangrinder.voice_4"},
 }
 
 monster.loot = {

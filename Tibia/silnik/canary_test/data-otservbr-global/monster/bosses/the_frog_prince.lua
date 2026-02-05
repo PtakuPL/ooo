@@ -65,9 +65,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Don't Kill me!!!", yell = false },
-	{ text = "Have mercy!", yell = false },
-	{ text = "Perhaps a kiss might release me!", yell = false },
+	{ text = "Don't Kill me!!!", yell = false , i18nKey = "monster.the_frog_prince.voice_1"},
+	{ text = "Have mercy!", yell = false , i18nKey = "monster.the_frog_prince.voice_2"},
+	{ text = "Perhaps a kiss might release me!", yell = false , i18nKey = "monster.the_frog_prince.voice_3"},
 }
 
 monster.loot = {}

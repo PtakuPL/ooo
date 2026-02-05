@@ -72,7 +72,7 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Never underestimate a badger!", yell = false },
+	{ text = "Never underestimate a badger!", yell = false , i18nKey = "monster.sharpclaw.voice_1"},
 }
 
 monster.loot = {

@@ -73,10 +73,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Let's have a fight!", yell = false },
-	{ text = "I will sing a tune at your grave.", yell = false },
-	{ text = "Have you seen princess Lumelia?", yell = false },
-	{ text = "Welcome to my battleground!", yell = false },
+	{ text = "Let's have a fight!", yell = false , i18nKey = "monster.hero.voice_1"},
+	{ text = "I will sing a tune at your grave.", yell = false , i18nKey = "monster.hero.voice_2"},
+	{ text = "Have you seen princess Lumelia?", yell = false , i18nKey = "monster.hero.voice_3"},
+	{ text = "Welcome to my battleground!", yell = false , i18nKey = "monster.hero.voice_4"},
 }
 
 monster.loot = {

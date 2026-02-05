@@ -64,8 +64,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I teach you that even heroes can die!", yell = false },
-	{ text = "You will die begging like the others did!", yell = false },
+	{ text = "I teach you that even heroes can die!", yell = false , i18nKey = "monster.ungreez.voice_1"},
+	{ text = "You will die begging like the others did!", yell = false , i18nKey = "monster.ungreez.voice_2"},
 }
 
 monster.loot = {

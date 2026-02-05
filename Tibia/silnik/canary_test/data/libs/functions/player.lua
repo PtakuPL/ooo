@@ -414,7 +414,7 @@ end
 function Player:addItemStoreInbox(itemId, amount, movable, setOwner)
 	if not amount then
 		logger.error("[Player:addItemStoreInbox] item '{}' amount is nil.", itemId)
-		self:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Item amount is wrong, please contact an administrator.")
+		self:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "lib.player.msg_3")
 		return nil
 	end
 
@@ -797,13 +797,13 @@ end
 
 function Player:canGetReward(rewardId, questName)
 	if self:questKV(questName):get("completed") then
-		self:sendTextMessage(MESSAGE_EVENT_ADVANCE, "It is empty.")
+		self:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "lib.player.msg_2")
 		return false
 	end
 
 	local rewardItem = ItemType(rewardId)
 	if not rewardItem then
-		self:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Reward item is wrong, please contact an administrator.")
+		self:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "lib.player.msg_1")
 		return false
 	end
 

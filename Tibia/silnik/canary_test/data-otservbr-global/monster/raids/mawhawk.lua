@@ -65,8 +65,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Better flee now!", yell = false },
-	{ text = "Watch my maws!", yell = false },
+	{ text = "Better flee now!", yell = false , i18nKey = "monster.mawhawk.voice_1"},
+	{ text = "Watch my maws!", yell = false , i18nKey = "monster.mawhawk.voice_2"},
 }
 
 monster.loot = {

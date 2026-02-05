@@ -60,10 +60,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Another little gladiator!", yell = false },
-	{ text = "Come into my embrace.", yell = false },
-	{ text = "You are too soft for a fight.", yell = false },
-	{ text = "You'll be history soon enough.", yell = false },
+	{ text = "Another little gladiator!", yell = false , i18nKey = "monster.rocky.voice_1"},
+	{ text = "Come into my embrace.", yell = false , i18nKey = "monster.rocky.voice_2"},
+	{ text = "You are too soft for a fight.", yell = false , i18nKey = "monster.rocky.voice_3"},
+	{ text = "You'll be history soon enough.", yell = false , i18nKey = "monster.rocky.voice_4"},
 }
 
 monster.loot = {}

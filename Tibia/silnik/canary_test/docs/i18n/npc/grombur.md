@@ -1,7 +1,7 @@
 # NPC: grombur
 
-**Plik:** `data-otservbr-global/npc/grombur.lua`
-**Data migracji:** 2025-12-17 01:35
+**Plik:** 
+**Data migracji:** 2025-12-21 15:14
 **Liczba tekstów:** 0
 
 ## Klucze i18n

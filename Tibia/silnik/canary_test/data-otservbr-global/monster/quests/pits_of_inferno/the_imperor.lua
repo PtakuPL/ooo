@@ -65,9 +65,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Poke! Poke! <chuckle>", yell = false },
-	{ text = "Let me tickle you with my trident!", yell = false },
-	{ text = "I am so bad today", yell = false },
+	{ text = "Poke! Poke! <chuckle>", yell = false , i18nKey = "monster.the_imperor.voice_1"},
+	{ text = "Let me tickle you with my trident!", yell = false , i18nKey = "monster.the_imperor.voice_2"},
+	{ text = "I am so bad today", yell = false , i18nKey = "monster.the_imperor.voice_3"},
 }
 
 monster.loot = {

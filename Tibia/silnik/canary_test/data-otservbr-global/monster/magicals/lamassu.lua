@@ -73,9 +73,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Be gone, mortal! This is not your place!", yell = false },
-	{ text = "I won't tolerate any sacrilege!", yell = false },
-	{ text = "I guard this site in Suon's name!", yell = false },
+	{ text = "Be gone, mortal! This is not your place!", yell = false , i18nKey = "monster.lamassu.voice_1"},
+	{ text = "I won't tolerate any sacrilege!", yell = false , i18nKey = "monster.lamassu.voice_2"},
+	{ text = "I guard this site in Suon's name!", yell = false , i18nKey = "monster.lamassu.voice_3"},
 }
 
 monster.loot = {

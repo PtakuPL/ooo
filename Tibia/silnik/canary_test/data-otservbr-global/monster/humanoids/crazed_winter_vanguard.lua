@@ -73,9 +73,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Nobody will ever escape from this place, muwahaha!!!", yell = false },
-	{ text = "These voices… they never stop!", yell = false },
-	{ text = " I am getting crazy here...Wa wa wahhh!!!", yell = false },
+	{ text = "Nobody will ever escape from this place, muwahaha!!!", yell = false , i18nKey = "monster.crazed_winter_vanguard.voice_1"},
+	{ text = "These voices… they never stop!", yell = false , i18nKey = "monster.crazed_winter_vanguard.voice_2"},
+	{ text = " I am getting crazy here...Wa wa wahhh!!!", yell = false , i18nKey = "monster.crazed_winter_vanguard.voice_3"},
 }
 
 monster.loot = {

@@ -1,7 +1,7 @@
 # NPC: a_restless_soul
 
-**Plik:** `data-otservbr-global/npc/a_restless_soul.lua`
-**Data migracji:** 2025-12-17 01:34
+**Plik:** 
+**Data migracji:** 2025-12-21 03:04
 **Liczba tekstów:** 0
 
 ## Klucze i18n

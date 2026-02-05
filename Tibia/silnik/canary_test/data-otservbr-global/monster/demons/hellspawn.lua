@@ -73,11 +73,11 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Your fragile bones are like toothpicks to me.", yell = false },
-	{ text = "You little weasel will not live to see another day.", yell = false },
-	{ text = "I'm just a messenger of what's yet to come.", yell = false },
-	{ text = "HRAAAAAAAAAAAAAAAARRRR!", yell = true },
-	{ text = "I'm taking you down with me!", yell = false },
+	{ text = "Your fragile bones are like toothpicks to me.", yell = false , i18nKey = "monster.hellspawn.voice_1"},
+	{ text = "You little weasel will not live to see another day.", yell = false , i18nKey = "monster.hellspawn.voice_2"},
+	{ text = "I'm just a messenger of what's yet to come.", yell = false , i18nKey = "monster.hellspawn.voice_3"},
+	{ text = "HRAAAAAAAAAAAAAAAARRRR!", yell = true , i18nKey = "monster.hellspawn.voice_4"},
+	{ text = "I'm taking you down with me!", yell = false , i18nKey = "monster.hellspawn.voice_5"},
 }
 
 monster.loot = {

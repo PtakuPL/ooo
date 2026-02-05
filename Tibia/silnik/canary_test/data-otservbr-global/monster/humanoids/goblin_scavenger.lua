@@ -70,11 +70,11 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Shiny, shiny!", yell = false },
-	{ text = "You mean!", yell = false },
-	{ text = "All mine!", yell = false },
-	{ text = "Uhh!", yell = false },
-	{ text = "Gimme gimme!", yell = false },
+	{ text = "Shiny, shiny!", yell = false , i18nKey = "monster.goblin_scavenger.voice_1"},
+	{ text = "You mean!", yell = false , i18nKey = "monster.goblin_scavenger.voice_2"},
+	{ text = "All mine!", yell = false , i18nKey = "monster.goblin_scavenger.voice_3"},
+	{ text = "Uhh!", yell = false , i18nKey = "monster.goblin_scavenger.voice_4"},
+	{ text = "Gimme gimme!", yell = false , i18nKey = "monster.goblin_scavenger.voice_5"},
 }
 
 monster.loot = {

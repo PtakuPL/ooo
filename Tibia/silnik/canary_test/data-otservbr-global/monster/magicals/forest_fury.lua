@@ -73,9 +73,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "To arms, sisters!", yell = false },
-	{ text = "Feel the wrath of mother forest!", yell = false },
-	{ text = "By the power of Greenskull!", yell = false },
+	{ text = "To arms, sisters!", yell = false , i18nKey = "monster.forest_fury.voice_1"},
+	{ text = "Feel the wrath of mother forest!", yell = false , i18nKey = "monster.forest_fury.voice_2"},
+	{ text = "By the power of Greenskull!", yell = false , i18nKey = "monster.forest_fury.voice_3"},
 }
 
 monster.loot = {

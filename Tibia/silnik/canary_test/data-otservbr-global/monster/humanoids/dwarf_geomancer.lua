@@ -71,9 +71,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Hail Durin!", yell = false },
-	{ text = "Earth is the strongest element.", yell = false },
-	{ text = "Dust to dust.", yell = false },
+	{ text = "Hail Durin!", yell = false , i18nKey = "monster.dwarf_geomancer.voice_1"},
+	{ text = "Earth is the strongest element.", yell = false , i18nKey = "monster.dwarf_geomancer.voice_2"},
+	{ text = "Dust to dust.", yell = false , i18nKey = "monster.dwarf_geomancer.voice_3"},
 }
 
 monster.loot = {

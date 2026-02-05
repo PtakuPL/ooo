@@ -72,7 +72,7 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I might be dead but I'm not gone!", yell = false },
+	{ text = "I might be dead but I'm not gone!", yell = false , i18nKey = "monster.horestis.voice_1"},
 }
 
 monster.loot = {

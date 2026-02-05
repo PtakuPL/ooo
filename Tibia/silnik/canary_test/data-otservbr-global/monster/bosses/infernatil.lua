@@ -67,12 +67,12 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Worship Zathroth pathetic mortal!", yell = false },
-	{ text = "Your soul will be mine!", yell = false },
-	{ text = "ASHES TO ASHES!", yell = true },
-	{ text = "YOU WILL ALL BURN!", yell = true },
-	{ text = "THE DAY OF RECKONING IS AT HAND!", yell = true },
-	{ text = "BOW TO THE POWER OF THE RUTHLESS SEVEN!", yell = true },
+	{ text = "Worship Zathroth pathetic mortal!", yell = false , i18nKey = "monster.infernatil.voice_1"},
+	{ text = "Your soul will be mine!", yell = false , i18nKey = "monster.infernatil.voice_2"},
+	{ text = "ASHES TO ASHES!", yell = true , i18nKey = "monster.infernatil.voice_3"},
+	{ text = "YOU WILL ALL BURN!", yell = true , i18nKey = "monster.infernatil.voice_4"},
+	{ text = "THE DAY OF RECKONING IS AT HAND!", yell = true , i18nKey = "monster.infernatil.voice_5"},
+	{ text = "BOW TO THE POWER OF THE RUTHLESS SEVEN!", yell = true , i18nKey = "monster.infernatil.voice_6"},
 }
 
 monster.loot = {

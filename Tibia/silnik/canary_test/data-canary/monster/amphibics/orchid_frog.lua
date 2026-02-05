@@ -70,8 +70,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Ribbit!", yell = false },
-	{ text = "Ribbit! Ribbit!", yell = false },
+	{ text = "Ribbit!", yell = false , i18nKey = "monster.orchid_frog.voice_3"},
+	{ text = "Ribbit! Ribbit!", yell = false , i18nKey = "monster.orchid_frog.voice_4"},
 }
 
 monster.loot = {

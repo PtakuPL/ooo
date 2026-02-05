@@ -73,9 +73,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Prepare yourself!", yell = false },
-	{ text = "You are not loved by this world!", yell = false },
-	{ text = "Pain and suffering!", yell = false },
+	{ text = "Prepare yourself!", yell = false , i18nKey = "monster.barkless_devotee.voice_1"},
+	{ text = "You are not loved by this world!", yell = false , i18nKey = "monster.barkless_devotee.voice_2"},
+	{ text = "Pain and suffering!", yell = false , i18nKey = "monster.barkless_devotee.voice_3"},
 }
 
 monster.loot = {

@@ -70,8 +70,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Attack aggrezzively! Dezztroy zze intruderzz!", yell = false },
-	{ text = "Hizzzzzz!", yell = false },
+	{ text = "Attack aggrezzively! Dezztroy zze intruderzz!", yell = false , i18nKey = "monster.draken_warmaster.voice_1"},
+	{ text = "Hizzzzzz!", yell = false , i18nKey = "monster.draken_warmaster.voice_2"},
 }
 
 monster.loot = {

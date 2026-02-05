@@ -73,10 +73,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Simsalabim", yell = false },
-	{ text = "Wishes can come true.", yell = false },
-	{ text = "Feel the power of my magic, tiny mortal!", yell = false },
-	{ text = "Be careful what you wish for.", yell = false },
+	{ text = "Simsalabim", yell = false , i18nKey = "monster.blue_djinn.voice_1"},
+	{ text = "Wishes can come true.", yell = false , i18nKey = "monster.blue_djinn.voice_2"},
+	{ text = "Feel the power of my magic, tiny mortal!", yell = false , i18nKey = "monster.blue_djinn.voice_3"},
+	{ text = "Be careful what you wish for.", yell = false , i18nKey = "monster.blue_djinn.voice_4"},
 }
 
 monster.loot = {

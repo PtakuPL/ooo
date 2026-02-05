@@ -69,8 +69,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "DIE!! KENH!!", yell = true },
-	{ text = "QJELL AFAR GOU JEY!!", yell = true },
+	{ text = "DIE!! KENH!!", yell = true , i18nKey = "monster.jaul.voice_1"},
+	{ text = "QJELL AFAR GOU JEY!!", yell = true , i18nKey = "monster.jaul.voice_2"},
 }
 
 monster.loot = {

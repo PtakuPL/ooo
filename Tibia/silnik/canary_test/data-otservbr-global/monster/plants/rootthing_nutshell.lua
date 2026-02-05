@@ -73,9 +73,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "<CREEAK>", yell = true },
-	{ text = "<KNARRR>", yell = true },
-	{ text = "<KNOORRR>", yell = true },
+	{ text = "<CREEAK>", yell = true , i18nKey = "monster.rootthing_nutshell.voice_1"},
+	{ text = "<KNARRR>", yell = true , i18nKey = "monster.rootthing_nutshell.voice_2"},
+	{ text = "<KNOORRR>", yell = true , i18nKey = "monster.rootthing_nutshell.voice_3"},
 }
 
 monster.loot = {

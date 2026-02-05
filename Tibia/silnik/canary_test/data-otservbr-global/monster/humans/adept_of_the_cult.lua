@@ -80,9 +80,9 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Feel the power of the cult!", yell = false },
-	{ text = "Praise the voodoo!", yell = false },
-	{ text = "Power to the cult!", yell = false },
+	{ text = "Feel the power of the cult!", yell = false , i18nKey = "monster.adept_of_the_cult.voice_1"},
+	{ text = "Praise the voodoo!", yell = false , i18nKey = "monster.adept_of_the_cult.voice_2"},
+	{ text = "Power to the cult!", yell = false , i18nKey = "monster.adept_of_the_cult.voice_3"},
 }
 
 monster.loot = {

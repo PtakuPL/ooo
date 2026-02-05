@@ -73,9 +73,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "In vino veritas! Hahaha!", yell = false },
-	{ text = "Wine, women and song!", yell = false },
-	{ text = "Are you posing a threat to this realm? I suppose so.", yell = false },
+	{ text = "In vino veritas! Hahaha!", yell = false , i18nKey = "monster.faun.voice_1"},
+	{ text = "Wine, women and song!", yell = false , i18nKey = "monster.faun.voice_2"},
+	{ text = "Are you posing a threat to this realm? I suppose so.", yell = false , i18nKey = "monster.faun.voice_3"},
 }
 
 monster.loot = {

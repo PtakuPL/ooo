@@ -60,11 +60,11 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I'll extinguish you warmbloods.", yell = false },
-	{ text = "REVENGE!", yell = true },
-	{ text = "Far too hot.", yell = false },
-	{ text = "DISGUSTING WARMBLOODS!", yell = true },
-	{ text = "Revenge is sweetest when served cold.", yell = false },
+	{ text = "I'll extinguish you warmbloods.", yell = false , i18nKey = "monster.norgle_glacierbeard.voice_1"},
+	{ text = "REVENGE!", yell = true , i18nKey = "monster.norgle_glacierbeard.voice_2"},
+	{ text = "Far too hot.", yell = false , i18nKey = "monster.norgle_glacierbeard.voice_3"},
+	{ text = "DISGUSTING WARMBLOODS!", yell = true , i18nKey = "monster.norgle_glacierbeard.voice_4"},
+	{ text = "Revenge is sweetest when served cold.", yell = false , i18nKey = "monster.norgle_glacierbeard.voice_5"},
 }
 
 monster.loot = {}

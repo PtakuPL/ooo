@@ -73,10 +73,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "This will be your last dance!", yell = false },
-	{ text = "This is a nightmare and you won't wake up!", yell = false },
-	{ text = "Blood, fight and rage!", yell = false },
-	{ text = "You're a threat to this realm! You have to die!", yell = false },
+	{ text = "This will be your last dance!", yell = false , i18nKey = "monster.dark_faun.voice_1"},
+	{ text = "This is a nightmare and you won't wake up!", yell = false , i18nKey = "monster.dark_faun.voice_2"},
+	{ text = "Blood, fight and rage!", yell = false , i18nKey = "monster.dark_faun.voice_3"},
+	{ text = "You're a threat to this realm! You have to die!", yell = false , i18nKey = "monster.dark_faun.voice_4"},
 }
 
 monster.loot = {

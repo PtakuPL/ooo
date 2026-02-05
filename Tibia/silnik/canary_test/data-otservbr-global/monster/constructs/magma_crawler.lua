@@ -71,7 +71,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Crrroak!", yell = false },
+	{ text = "Crrroak!", yell = false , i18nKey = "monster.magma_crawler.voice_1"},
 }
 
 monster.loot = {

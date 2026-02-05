@@ -72,9 +72,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "You are no match to us!", yell = false },
-	{ text = "Your end has come!", yell = false },
-	{ text = "This is where your path will end!", yell = false },
+	{ text = "You are no match to us!", yell = false , i18nKey = "monster.dark_monk.voice_1"},
+	{ text = "Your end has come!", yell = false , i18nKey = "monster.dark_monk.voice_2"},
+	{ text = "This is where your path will end!", yell = false , i18nKey = "monster.dark_monk.voice_3"},
 }
 
 monster.loot = {

@@ -73,8 +73,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Is this real life?", yell = false },
-	{ text = "Weeeuuu weeeuuu!!!", yell = false },
+	{ text = "Is this real life?", yell = false , i18nKey = "monster.crazed_summer_rearguard.voice_1"},
+	{ text = "Weeeuuu weeeuuu!!!", yell = false , i18nKey = "monster.crazed_summer_rearguard.voice_2"},
 }
 
 monster.loot = {

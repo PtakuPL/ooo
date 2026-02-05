@@ -70,9 +70,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Grzzzzzzz!", yell = false },
-	{ text = "Kzzzzzzz!", yell = false },
-	{ text = "Garrrblarrrrzzzz!", yell = false },
+	{ text = "Grzzzzzzz!", yell = false , i18nKey = "monster.lizard_chosen.voice_1"},
+	{ text = "Kzzzzzzz!", yell = false , i18nKey = "monster.lizard_chosen.voice_2"},
+	{ text = "Garrrblarrrrzzzz!", yell = false , i18nKey = "monster.lizard_chosen.voice_3"},
 }
 
 monster.loot = {

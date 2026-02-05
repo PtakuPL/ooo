@@ -73,10 +73,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Your stuff will be mine soon!", yell = false },
-	{ text = "I'll cut you a bloody grin!", yell = false },
-	{ text = "For hurting me, my sire will kill you!", yell = false },
-	{ text = "You shouldn't have come here!", yell = false },
+	{ text = "Your stuff will be mine soon!", yell = false , i18nKey = "monster.vicious_squire.voice_1"},
+	{ text = "I'll cut you a bloody grin!", yell = false , i18nKey = "monster.vicious_squire.voice_2"},
+	{ text = "For hurting me, my sire will kill you!", yell = false , i18nKey = "monster.vicious_squire.voice_3"},
+	{ text = "You shouldn't have come here!", yell = false , i18nKey = "monster.vicious_squire.voice_4"},
 }
 
 monster.loot = {

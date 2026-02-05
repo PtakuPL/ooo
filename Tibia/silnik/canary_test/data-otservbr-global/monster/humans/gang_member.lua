@@ -70,11 +70,11 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "This is our territory!", yell = false },
-	{ text = "Help me guys!", yell = false },
-	{ text = "I don't like the way you look!", yell = false },
-	{ text = "You're wearing the wrong colours!", yell = false },
-	{ text = "Don't mess with us!", yell = false },
+	{ text = "This is our territory!", yell = false , i18nKey = "monster.gang_member.voice_1"},
+	{ text = "Help me guys!", yell = false , i18nKey = "monster.gang_member.voice_2"},
+	{ text = "I don't like the way you look!", yell = false , i18nKey = "monster.gang_member.voice_3"},
+	{ text = "You're wearing the wrong colours!", yell = false , i18nKey = "monster.gang_member.voice_4"},
+	{ text = "Don't mess with us!", yell = false , i18nKey = "monster.gang_member.voice_5"},
 }
 
 monster.loot = {

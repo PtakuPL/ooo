@@ -58,7 +58,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "The Moon Goddess is ashamed of you!", yell = false },
+	{ text = "The Moon Goddess is ashamed of you!", yell = false , i18nKey = "monster.beast_hulking_prehemoth.voice_1"},
 }
 
 monster.attacks = {

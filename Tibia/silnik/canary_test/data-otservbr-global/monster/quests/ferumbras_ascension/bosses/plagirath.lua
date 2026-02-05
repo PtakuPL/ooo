@@ -69,10 +69,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I CAN SENSE YOUR BODY ROTTING!", yell = true },
-	{ text = "WITHER AND DIE!", yell = true },
-	{ text = "COME AND RECEIVE MY GIFTS!!", yell = true },
-	{ text = "DEATH AND DECAY!", yell = true },
+	{ text = "I CAN SENSE YOUR BODY ROTTING!", yell = true , i18nKey = "monster.plagirath.voice_1"},
+	{ text = "WITHER AND DIE!", yell = true , i18nKey = "monster.plagirath.voice_2"},
+	{ text = "COME AND RECEIVE MY GIFTS!!", yell = true , i18nKey = "monster.plagirath.voice_3"},
+	{ text = "DEATH AND DECAY!", yell = true , i18nKey = "monster.plagirath.voice_4"},
 }
 
 monster.loot = {

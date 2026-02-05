@@ -60,8 +60,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I SENSE LIFE", yell = true },
-	{ text = "FEEEED MY ETERNAL HUNGER!", yell = true },
+	{ text = "I SENSE LIFE", yell = true , i18nKey = "monster.zanakeph.voice_1"},
+	{ text = "FEEEED MY ETERNAL HUNGER!", yell = true , i18nKey = "monster.zanakeph.voice_2"},
 }
 
 monster.loot = {

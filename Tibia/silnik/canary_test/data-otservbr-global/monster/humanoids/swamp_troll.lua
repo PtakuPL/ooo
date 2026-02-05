@@ -71,9 +71,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Me strong! Me ate spinach!", yell = false },
-	{ text = "Groar!", yell = false },
-	{ text = "Grrrr", yell = false },
+	{ text = "Me strong! Me ate spinach!", yell = false , i18nKey = "monster.swamp_troll.voice_1"},
+	{ text = "Groar!", yell = false , i18nKey = "monster.swamp_troll.voice_2"},
+	{ text = "Grrrr", yell = false , i18nKey = "monster.swamp_troll.voice_3"},
 }
 
 monster.loot = {

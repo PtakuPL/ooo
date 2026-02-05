@@ -71,9 +71,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Hizzzzzzz!", yell = false },
-	{ text = "To armzzzz!", yell = false },
-	{ text = "Engage zze aggrezzor!", yell = false },
+	{ text = "Hizzzzzzz!", yell = false , i18nKey = "monster.lizard_high_guard.voice_1"},
+	{ text = "To armzzzz!", yell = false , i18nKey = "monster.lizard_high_guard.voice_2"},
+	{ text = "Engage zze aggrezzor!", yell = false , i18nKey = "monster.lizard_high_guard.voice_3"},
 }
 
 monster.loot = {

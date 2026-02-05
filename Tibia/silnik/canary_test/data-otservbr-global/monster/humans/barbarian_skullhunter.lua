@@ -73,9 +73,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "You will become my trophy.", yell = false },
-	{ text = "Fight harder, coward.", yell = false },
-	{ text = "Show that you are a worthy opponent.", yell = false },
+	{ text = "You will become my trophy.", yell = false , i18nKey = "monster.barbarian_skullhunter.voice_1"},
+	{ text = "Fight harder, coward.", yell = false , i18nKey = "monster.barbarian_skullhunter.voice_2"},
+	{ text = "Show that you are a worthy opponent.", yell = false , i18nKey = "monster.barbarian_skullhunter.voice_3"},
 }
 
 monster.loot = {

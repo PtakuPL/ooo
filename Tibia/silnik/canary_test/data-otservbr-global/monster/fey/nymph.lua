@@ -73,10 +73,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Looking at a nymph can blind you. Be careful, mortal being!", yell = false },
-	{ text = "Are you one of those evil nightmare creatures? Leave this realm alone!", yell = false },
-	{ text = "Come here, sweetheart! I won't hurt you! *giggle*", yell = false },
-	{ text = "I'm just protecting nature's beauty!", yell = false },
+	{ text = "Looking at a nymph can blind you. Be careful, mortal being!", yell = false , i18nKey = "monster.nymph.voice_1"},
+	{ text = "Are you one of those evil nightmare creatures? Leave this realm alone!", yell = false , i18nKey = "monster.nymph.voice_2"},
+	{ text = "Come here, sweetheart! I won't hurt you! *giggle*", yell = false , i18nKey = "monster.nymph.voice_3"},
+	{ text = "I'm just protecting nature's beauty!", yell = false , i18nKey = "monster.nymph.voice_4"},
 }
 
 monster.loot = {

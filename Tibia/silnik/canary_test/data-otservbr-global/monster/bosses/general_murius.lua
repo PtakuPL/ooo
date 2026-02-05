@@ -72,10 +72,10 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "You will get what you deserve!", yell = false },
-	{ text = "Feel the power of the Mooh'Tah!", yell = false },
-	{ text = "For the king!", yell = false },
-	{ text = "Guards!", yell = false },
+	{ text = "You will get what you deserve!", yell = false , i18nKey = "monster.general_murius.voice_1"},
+	{ text = "Feel the power of the Mooh'Tah!", yell = false , i18nKey = "monster.general_murius.voice_2"},
+	{ text = "For the king!", yell = false , i18nKey = "monster.general_murius.voice_3"},
+	{ text = "Guards!", yell = false , i18nKey = "monster.general_murius.voice_4"},
 }
 
 monster.loot = {

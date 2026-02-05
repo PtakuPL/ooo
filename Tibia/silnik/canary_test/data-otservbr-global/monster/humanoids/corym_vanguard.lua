@@ -74,7 +74,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Gimme! Gimme!", yell = false },
+	{ text = "Gimme! Gimme!", yell = false , i18nKey = "monster.corym_vanguard.voice_1"},
 }
 
 monster.loot = {

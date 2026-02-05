@@ -64,7 +64,7 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Your death will be slow and painful.", yell = false },
+	{ text = "Your death will be slow and painful.", yell = false , i18nKey = "monster.merikh_the_slaughterer.voice_1"},
 }
 
 monster.loot = {

@@ -70,9 +70,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Give up!", yell = false },
-	{ text = "Hiyaa", yell = false },
-	{ text = "Plundeeeeer!", yell = false },
+	{ text = "Give up!", yell = false , i18nKey = "monster.pirate_buccaneer.voice_1"},
+	{ text = "Hiyaa", yell = false , i18nKey = "monster.pirate_buccaneer.voice_2"},
+	{ text = "Plundeeeeer!", yell = false , i18nKey = "monster.pirate_buccaneer.voice_3"},
 }
 
 monster.loot = {

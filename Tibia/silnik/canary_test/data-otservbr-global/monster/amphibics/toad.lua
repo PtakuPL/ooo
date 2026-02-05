@@ -70,8 +70,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Ribbit! Ribbit!", yell = false },
-	{ text = "Ribbit!", yell = false },
+	{ text = "Ribbit! Ribbit!", yell = false , i18nKey = "monster.toad.voice_1"},
+	{ text = "Ribbit!", yell = false , i18nKey = "monster.toad.voice_2"},
 }
 
 monster.loot = {

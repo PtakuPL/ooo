@@ -60,9 +60,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Power up!", yell = false },
-	{ text = "Shocked to meet you.", yell = false },
-	{ text = "You should be more positive!", yell = false },
+	{ text = "Power up!", yell = false , i18nKey = "monster.spiteful_spitter.voice_1"},
+	{ text = "Shocked to meet you.", yell = false , i18nKey = "monster.spiteful_spitter.voice_2"},
+	{ text = "You should be more positive!", yell = false , i18nKey = "monster.spiteful_spitter.voice_3"},
 }
 
 monster.attacks = {

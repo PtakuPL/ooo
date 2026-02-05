@@ -74,10 +74,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I will leave your remains to the vultures!", yell = false },
-	{ text = "We are the true sons of the desert!", yell = false },
-	{ text = "We are swift as the wind of the desert!", yell = false },
-	{ text = "Your riches will be mine!", yell = false },
+	{ text = "I will leave your remains to the vultures!", yell = false , i18nKey = "monster.nomad_blue.voice_1"},
+	{ text = "We are the true sons of the desert!", yell = false , i18nKey = "monster.nomad_blue.voice_2"},
+	{ text = "We are swift as the wind of the desert!", yell = false , i18nKey = "monster.nomad_blue.voice_3"},
+	{ text = "Your riches will be mine!", yell = false , i18nKey = "monster.nomad_blue.voice_4"},
 }
 
 monster.loot = {

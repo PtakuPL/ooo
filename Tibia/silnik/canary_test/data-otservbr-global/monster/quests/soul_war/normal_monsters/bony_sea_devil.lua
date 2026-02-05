@@ -77,8 +77,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Bling.", yell = false },
-	{ text = "Clank.", yell = false },
+	{ text = "Bling.", yell = false , i18nKey = "monster.bony_sea_devil.voice_1"},
+	{ text = "Clank.", yell = false , i18nKey = "monster.bony_sea_devil.voice_2"},
 }
 
 monster.loot = {

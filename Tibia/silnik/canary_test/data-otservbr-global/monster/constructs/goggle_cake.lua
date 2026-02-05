@@ -73,9 +73,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Give me your sweets! They are mine to devour!", yell = false },
-	{ text = "Hm? Where ... where are you now?", yell = false },
-	{ text = "Hunger!", yell = false },
+	{ text = "Give me your sweets! They are mine to devour!", yell = false , i18nKey = "monster.goggle_cake.voice_1"},
+	{ text = "Hm? Where ... where are you now?", yell = false , i18nKey = "monster.goggle_cake.voice_2"},
+	{ text = "Hunger!", yell = false , i18nKey = "monster.goggle_cake.voice_3"},
 }
 
 monster.loot = {

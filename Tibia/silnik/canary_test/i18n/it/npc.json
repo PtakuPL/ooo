@@ -7187,5 +7187,16 @@
   "npc.xodet.say_3": "[IT] Of course, just browse through my wares. You can also look at {}.",
   "npc.zebron.say_1": "[IT] Ok, here we go ... {}! You have lost. Bad luck. One more game?",
   "npc.zebron.say_2": "[IT] Ok, here we go ... {}! You have lost. Bad luck. One more game?",
-  "npc.zebron.say_3": "[IT] Ok, here we go ... 6! You have won {}, congratulations. One more game?"
+  "npc.zebron.say_3": "[IT] Ok, here we go ... 6! You have won {}, congratulations. One more game?",
+  "npc.alia.keyword_1": "[IT] So receive the protection of the twist of fate, pilgrim.",
+  "npc.amanda.keyword_1": "[IT] So receive the protection of the twist of fate, pilgrim.",
+  "npc.azalea.keyword_1": "[IT] So receive the protection of the twist of fate, pilgrim.",
+  "npc.brewster.keyword_1": "[IT] So receive the protection of the twist of fate, pilgrim.",
+  "npc.buddel.keyword_1": "[IT] Get out o' here!*HICKS*",
+  "npc.buddel_okolnir.keyword_1": "[IT] Get out o' here!*HICKS*",
+  "npc.buddel_raider_camp.keyword_1": "[IT] Get out o' here!*HICKS*",
+  "npc.buddel_tyrsung.keyword_1": "[IT] Get out o' here!*HICKS*",
+  "npc.cedrik.keyword_1": "[IT] So receive the protection of the twist of fate, pilgrim.",
+  "npc.elane.keyword_1": "[IT] Yes?",
+  "npc.ferus.keyword_1": "[IT] So receive the protection of the twist of fate, pilgrim."
 }

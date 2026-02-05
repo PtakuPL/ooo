@@ -1,7 +1,7 @@
 # NPC: ghostly_wolf
 
-**Plik:** `data-otservbr-global/npc/ghostly_wolf.lua`
-**Data migracji:** 2025-12-17 00:58
+**Plik:** 
+**Data migracji:** 2025-12-21 11:12
 **Liczba tekstów:** 0
 
 ## Klucze i18n

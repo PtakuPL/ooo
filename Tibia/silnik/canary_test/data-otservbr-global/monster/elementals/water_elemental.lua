@@ -75,7 +75,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Splish splash", yell = false },
+	{ text = "Splish splash", yell = false , i18nKey = "monster.water_elemental.voice_1"},
 }
 
 monster.loot = {

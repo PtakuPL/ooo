@@ -1,7 +1,7 @@
 # NPC: a_beautiful_girl
 
-**Plik:** `data-otservbr-global/npc/a_beautiful_girl.lua`
-**Data migracji:** 2025-12-17 01:34
+**Plik:** 
+**Data migracji:** 2025-12-21 02:57
 **Liczba tekstów:** 0
 
 ## Klucze i18n

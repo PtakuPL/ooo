@@ -67,8 +67,8 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I WILL SET THE WORLD ON FIRE!", yell = true },
-	{ text = "I WILL PROTECT MY BROOD!", yell = true },
+	{ text = "I WILL SET THE WORLD ON FIRE!", yell = true , i18nKey = "monster.demodras.voice_1"},
+	{ text = "I WILL PROTECT MY BROOD!", yell = true , i18nKey = "monster.demodras.voice_2"},
 }
 
 monster.loot = {

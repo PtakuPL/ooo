@@ -60,8 +60,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Feel the heat.", yell = false },
-	{ text = "I will turn you into ashes.", yell = false },
+	{ text = "Feel the heat.", yell = false , i18nKey = "monster.spirit_of_fire.voice_1"},
+	{ text = "I will turn you into ashes.", yell = false , i18nKey = "monster.spirit_of_fire.voice_2"},
 }
 
 monster.loot = {}

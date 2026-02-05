@@ -70,8 +70,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "tzzzz tzzzzz tzzzzz", yell = false },
-	{ text = "tzuuuumme tzuuummmmee", yell = false },
+	{ text = "tzzzz tzzzzz tzzzzz", yell = false , i18nKey = "monster.brain_squid.voice_1"},
+	{ text = "tzuuuumme tzuuummmmee", yell = false , i18nKey = "monster.brain_squid.voice_2"},
 }
 
 monster.loot = {

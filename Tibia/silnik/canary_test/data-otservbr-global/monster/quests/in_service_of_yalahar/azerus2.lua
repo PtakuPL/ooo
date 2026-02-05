@@ -75,16 +75,16 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "The ultimate will finally consume this unworthy existence!", yell = false },
-	{ text = "My masters and I will tear down barriers and join the ultimate in its realm!", yell = false },
-	{ text = "The power of the Yalahari will all be mine!", yell = false },
-	{ text = "He who has returned from beyond has taught me secrets you can't even grasp!", yell = false },
-	{ text = "You can't hope to penetrate my shields!", yell = false },
-	{ text = "Do you really think you could beat me?", yell = false },
-	{ text = "We will open the rift for a new time to come!", yell = false },
-	{ text = "The end of times has come!", yell = false },
-	{ text = "The great machinator will make his entrance soon!", yell = false },
-	{ text = "You might scratch my shields but they will never break!", yell = false },
+	{ text = "The ultimate will finally consume this unworthy existence!", yell = false , i18nKey = "monster.azerus2.voice_1"},
+	{ text = "My masters and I will tear down barriers and join the ultimate in its realm!", yell = false , i18nKey = "monster.azerus2.voice_2"},
+	{ text = "The power of the Yalahari will all be mine!", yell = false , i18nKey = "monster.azerus2.voice_3"},
+	{ text = "He who has returned from beyond has taught me secrets you can't even grasp!", yell = false , i18nKey = "monster.azerus2.voice_4"},
+	{ text = "You can't hope to penetrate my shields!", yell = false , i18nKey = "monster.azerus2.voice_5"},
+	{ text = "Do you really think you could beat me?", yell = false , i18nKey = "monster.azerus2.voice_6"},
+	{ text = "We will open the rift for a new time to come!", yell = false , i18nKey = "monster.azerus2.voice_7"},
+	{ text = "The end of times has come!", yell = false , i18nKey = "monster.azerus2.voice_8"},
+	{ text = "The great machinator will make his entrance soon!", yell = false , i18nKey = "monster.azerus2.voice_9"},
+	{ text = "You might scratch my shields but they will never break!", yell = false , i18nKey = "monster.azerus2.voice_10"},
 }
 
 monster.loot = {}

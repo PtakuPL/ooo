@@ -71,7 +71,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "KRAK ORRRRRRK!", yell = true },
+	{ text = "KRAK ORRRRRRK!", yell = true , i18nKey = "monster.orc_berserker.voice_1"},
 }
 
 monster.loot = {

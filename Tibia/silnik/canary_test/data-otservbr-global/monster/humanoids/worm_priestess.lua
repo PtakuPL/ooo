@@ -71,9 +71,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "An enemy of the worm shall become his food!", yell = false },
-	{ text = "The great worm will swallow you!", yell = false },
-	{ text = "From the earthy depths he comes and brings freedom!", yell = false },
+	{ text = "An enemy of the worm shall become his food!", yell = false , i18nKey = "monster.worm_priestess.voice_1"},
+	{ text = "The great worm will swallow you!", yell = false , i18nKey = "monster.worm_priestess.voice_2"},
+	{ text = "From the earthy depths he comes and brings freedom!", yell = false , i18nKey = "monster.worm_priestess.voice_3"},
 }
 
 monster.loot = {

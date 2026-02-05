@@ -71,10 +71,10 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Behold the all permeating powers I draw from this gate!!", yell = false },
-	{ text = "ENERGY!!", yell = true },
-	{ text = "I FEEL, I FEEEEEL... OMNIPOTENCE!!", yell = true },
-	{ text = "MWAAAHAHAAA!! NO ONE!! NO ONE CAN DEFEAT MEEE!!!", yell = true },
+	{ text = "Behold the all permeating powers I draw from this gate!!", yell = false , i18nKey = "monster.energized_raging_mage.voice_1"},
+	{ text = "ENERGY!!", yell = true , i18nKey = "monster.energized_raging_mage.voice_2"},
+	{ text = "I FEEL, I FEEEEEL... OMNIPOTENCE!!", yell = true , i18nKey = "monster.energized_raging_mage.voice_3"},
+	{ text = "MWAAAHAHAAA!! NO ONE!! NO ONE CAN DEFEAT MEEE!!!", yell = true , i18nKey = "monster.energized_raging_mage.voice_4"},
 }
 
 monster.loot = {}

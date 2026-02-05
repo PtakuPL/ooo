@@ -71,9 +71,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "No I don't work in the mines right now. That's my day off.", yell = false },
-	{ text = "Catch me if you can!", yell = false },
-	{ text = "No touching please.", yell = false },
+	{ text = "No I don't work in the mines right now. That's my day off.", yell = false , i18nKey = "monster.sugar_cube.voice_1"},
+	{ text = "Catch me if you can!", yell = false , i18nKey = "monster.sugar_cube.voice_2"},
+	{ text = "No touching please.", yell = false , i18nKey = "monster.sugar_cube.voice_3"},
 }
 monster.loot = {}
 

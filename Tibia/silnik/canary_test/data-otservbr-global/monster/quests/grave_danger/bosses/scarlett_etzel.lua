@@ -71,10 +71,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Galthen... is that you? ", yell = false },
-	{ text = " Where... have you been all that time? ", yell = false },
-	{ text = " What...? How dare you? Give me that back! ", yell = false },
-	{ text = " Aaaaaaah!!!", yell = false },
+	{ text = "Galthen... is that you? ", yell = false , i18nKey = "monster.scarlett_etzel.voice_1"},
+	{ text = " Where... have you been all that time? ", yell = false , i18nKey = "monster.scarlett_etzel.voice_2"},
+	{ text = " What...? How dare you? Give me that back! ", yell = false , i18nKey = "monster.scarlett_etzel.voice_3"},
+	{ text = " Aaaaaaah!!!", yell = false , i18nKey = "monster.scarlett_etzel.voice_4"},
 }
 
 monster.loot = {

@@ -73,7 +73,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Ugaar!", yell = false },
+	{ text = "Ugaar!", yell = false , i18nKey = "monster.orc_spearman.voice_1"},
 }
 
 monster.loot = {

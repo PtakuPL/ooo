@@ -70,9 +70,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Zzzzzooom!", yell = false },
-	{ text = "Fissziss!", yell = false },
-	{ text = "Kazzzzzzuuum!", yell = false },
+	{ text = "Zzzzzooom!", yell = false , i18nKey = "monster.draken_spellweaver.voice_1"},
+	{ text = "Fissziss!", yell = false , i18nKey = "monster.draken_spellweaver.voice_2"},
+	{ text = "Kazzzzzzuuum!", yell = false , i18nKey = "monster.draken_spellweaver.voice_3"},
 }
 
 monster.loot = {

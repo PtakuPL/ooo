@@ -73,8 +73,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "*splib*", yell = false },
-	{ text = "*glibb*", yell = false },
+	{ text = "*splib*", yell = false , i18nKey = "monster.rot_elemental.voice_1"},
+	{ text = "*glibb*", yell = false , i18nKey = "monster.rot_elemental.voice_2"},
 }
 
 monster.loot = {

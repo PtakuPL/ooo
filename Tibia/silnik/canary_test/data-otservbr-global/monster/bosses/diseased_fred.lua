@@ -69,10 +69,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "You will suffer the same fate as I do!", yell = false },
-	{ text = "The pain! The pain!", yell = false },
-	{ text = "Stay away! I am contagious!", yell = false },
-	{ text = "The plague will get you!", yell = false },
+	{ text = "You will suffer the same fate as I do!", yell = false , i18nKey = "monster.diseased_fred.voice_1"},
+	{ text = "The pain! The pain!", yell = false , i18nKey = "monster.diseased_fred.voice_2"},
+	{ text = "Stay away! I am contagious!", yell = false , i18nKey = "monster.diseased_fred.voice_3"},
+	{ text = "The plague will get you!", yell = false , i18nKey = "monster.diseased_fred.voice_4"},
 }
 
 monster.loot = {

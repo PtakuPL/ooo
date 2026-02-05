@@ -71,11 +71,11 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Come my maidens, we have visitors!", yell = false },
-	{ text = "Are you enjoying my music?", yell = false },
-	{ text = "If music is the food of death, drop dead.", yell = false },
-	{ text = "Chakka Chakka!", yell = false },
-	{ text = "Heheheheee!", yell = false },
+	{ text = "Come my maidens, we have visitors!", yell = false , i18nKey = "monster.vashresamun.voice_1"},
+	{ text = "Are you enjoying my music?", yell = false , i18nKey = "monster.vashresamun.voice_2"},
+	{ text = "If music is the food of death, drop dead.", yell = false , i18nKey = "monster.vashresamun.voice_3"},
+	{ text = "Chakka Chakka!", yell = false , i18nKey = "monster.vashresamun.voice_4"},
+	{ text = "Heheheheee!", yell = false , i18nKey = "monster.vashresamun.voice_5"},
 }
 
 monster.loot = {

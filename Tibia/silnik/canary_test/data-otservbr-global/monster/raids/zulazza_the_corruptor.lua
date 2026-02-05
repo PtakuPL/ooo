@@ -65,10 +65,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I'm Zulazza, and you won't forget me that fazzt.", yell = false },
-	{ text = "Oh, HE will take revenge on zzizz azzault when you zztep in front of HIZZ fazze!", yell = false },
-	{ text = "Zzaion is our last zztand! I will not leave wizzout a fight!", yell = false },
-	{ text = "Behind zze Great Gate liezz your doom!", yell = false },
+	{ text = "I'm Zulazza, and you won't forget me that fazzt.", yell = false , i18nKey = "monster.zulazza_the_corruptor.voice_1"},
+	{ text = "Oh, HE will take revenge on zzizz azzault when you zztep in front of HIZZ fazze!", yell = false , i18nKey = "monster.zulazza_the_corruptor.voice_2"},
+	{ text = "Zzaion is our last zztand! I will not leave wizzout a fight!", yell = false , i18nKey = "monster.zulazza_the_corruptor.voice_3"},
+	{ text = "Behind zze Great Gate liezz your doom!", yell = false , i18nKey = "monster.zulazza_the_corruptor.voice_4"},
 }
 
 monster.loot = {

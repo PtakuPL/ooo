@@ -76,11 +76,11 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "INSECTS!", yell = true },
-	{ text = "If you strike me down, I shall become more powerful than you could possibly imagine!", yell = false },
-	{ text = "I' STILL POWERFUL ENOUGH TO CRUSH YOU!", yell = true },
-	{ text = "I WILL MAKE ALL OF YOU SUFFER!", yell = true },
-	{ text = "THE POWER WAS MINE!", yell = true },
+	{ text = "INSECTS!", yell = true , i18nKey = "monster.ferumbras_mortal_shell.voice_1"},
+	{ text = "If you strike me down, I shall become more powerful than you could possibly imagine!", yell = false , i18nKey = "monster.ferumbras_mortal_shell.voice_2"},
+	{ text = "I' STILL POWERFUL ENOUGH TO CRUSH YOU!", yell = true , i18nKey = "monster.ferumbras_mortal_shell.voice_3"},
+	{ text = "I WILL MAKE ALL OF YOU SUFFER!", yell = true , i18nKey = "monster.ferumbras_mortal_shell.voice_4"},
+	{ text = "THE POWER WAS MINE!", yell = true , i18nKey = "monster.ferumbras_mortal_shell.voice_5"},
 }
 
 monster.loot = {

@@ -61,7 +61,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "CREEEAK!", yell = false },
+	{ text = "CREEEAK!", yell = false , i18nKey = "monster.the_sandking_fake.voice_1"},
 }
 
 monster.loot = {}

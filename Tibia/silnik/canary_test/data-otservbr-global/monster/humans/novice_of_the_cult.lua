@@ -81,9 +81,9 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Fear us!", yell = false },
-	{ text = "You will not tell anyone what you have seen!", yell = false },
-	{ text = "Your curiosity will be punished!", yell = false },
+	{ text = "Fear us!", yell = false , i18nKey = "monster.novice_of_the_cult.voice_1"},
+	{ text = "You will not tell anyone what you have seen!", yell = false , i18nKey = "monster.novice_of_the_cult.voice_2"},
+	{ text = "Your curiosity will be punished!", yell = false , i18nKey = "monster.novice_of_the_cult.voice_3"},
 }
 
 monster.loot = {

@@ -70,7 +70,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Shriiiiek! Shriiiiek!", yell = false },
+	{ text = "Shriiiiek! Shriiiiek!", yell = false , i18nKey = "monster.nighthunter.voice_1"},
 }
 
 monster.loot = {

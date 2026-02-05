@@ -65,14 +65,14 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "FIRST I'LL OBLITERATE YOU THEN I BURN THIS PRISON DOWN!!", yell = true },
-	{ text = "I'M TOO HOT FOR YOU TO HANDLE!", yell = true },
-	{ text = "FREEDOM FOR THE PRINCES!", yell = true },
-	{ text = "OMRAFIR INHALES DEEPLY!", yell = true },
-	{ text = "OMRAFIR BREATHES INFERNAL FIRE", yell = true },
-	{ text = "THE POWER OF HIS INTERNAL FIRE RENEWS OMRAFIR!", yell = true },
-	{ text = "I WILL RULE WHEN THE NEW ORDER IS ESTABLISHED!", yell = true },
-	{ text = "INFERNATIL! COME HERE AND FIGHT ME YOU COWARD!", yell = true },
+	{ text = "FIRST I'LL OBLITERATE YOU THEN I BURN THIS PRISON DOWN!!", yell = true , i18nKey = "monster.omrafir.voice_1"},
+	{ text = "I'M TOO HOT FOR YOU TO HANDLE!", yell = true , i18nKey = "monster.omrafir.voice_2"},
+	{ text = "FREEDOM FOR THE PRINCES!", yell = true , i18nKey = "monster.omrafir.voice_3"},
+	{ text = "OMRAFIR INHALES DEEPLY!", yell = true , i18nKey = "monster.omrafir.voice_4"},
+	{ text = "OMRAFIR BREATHES INFERNAL FIRE", yell = true , i18nKey = "monster.omrafir.voice_5"},
+	{ text = "THE POWER OF HIS INTERNAL FIRE RENEWS OMRAFIR!", yell = true , i18nKey = "monster.omrafir.voice_6"},
+	{ text = "I WILL RULE WHEN THE NEW ORDER IS ESTABLISHED!", yell = true , i18nKey = "monster.omrafir.voice_7"},
+	{ text = "INFERNATIL! COME HERE AND FIGHT ME YOU COWARD!", yell = true , i18nKey = "monster.omrafir.voice_8"},
 }
 
 monster.loot = {

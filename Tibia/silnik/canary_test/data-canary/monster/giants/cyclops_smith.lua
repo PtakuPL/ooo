@@ -72,9 +72,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Outis emoi g' onoma.", yell = false },
-	{ text = "Whack da humy!", yell = false },
-	{ text = "Ai humy phary ty kaynon", yell = false },
+	{ text = "Outis emoi g' onoma.", yell = false , i18nKey = "monster.cyclops_smith.voice_4"},
+	{ text = "Whack da humy!", yell = false , i18nKey = "monster.cyclops_smith.voice_5"},
+	{ text = "Ai humy phary ty kaynon", yell = false , i18nKey = "monster.cyclops_smith.voice_6"},
 }
 
 monster.loot = {

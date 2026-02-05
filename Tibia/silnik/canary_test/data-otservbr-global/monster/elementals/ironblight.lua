@@ -73,8 +73,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Yowl!", yell = false },
-	{ text = "Clonk!", yell = false },
+	{ text = "Yowl!", yell = false , i18nKey = "monster.ironblight.voice_1"},
+	{ text = "Clonk!", yell = false , i18nKey = "monster.ironblight.voice_2"},
 }
 
 monster.loot = {

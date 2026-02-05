@@ -73,7 +73,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "*shglib*", yell = false },
+	{ text = "*shglib*", yell = false , i18nKey = "monster.glooth_anemone.voice_1"},
 }
 
 monster.loot = {

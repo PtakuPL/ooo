@@ -81,7 +81,7 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Shlorz", yell = false },
+	{ text = "Shlorz", yell = false , i18nKey = "monster.death_blob.voice_1"},
 }
 
 monster.loot = {

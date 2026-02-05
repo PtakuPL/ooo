@@ -77,7 +77,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Death to the unbelievers!", yell = false },
+	{ text = "Death to the unbelievers!", yell = false , i18nKey = "monster.cult_believer.voice_1"},
 }
 
 monster.loot = {

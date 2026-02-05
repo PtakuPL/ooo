@@ -73,8 +73,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Kill! Kiill! Kill!", yell = false },
-	{ text = "Death! Death! Death!", yell = false },
+	{ text = "Kill! Kiill! Kill!", yell = false , i18nKey = "monster.lost_berserker.voice_1"},
+	{ text = "Death! Death! Death!", yell = false , i18nKey = "monster.lost_berserker.voice_2"},
 }
 
 monster.loot = {

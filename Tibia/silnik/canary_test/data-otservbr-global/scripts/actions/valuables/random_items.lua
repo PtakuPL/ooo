@@ -211,7 +211,7 @@ function randomItems.onUse(player, item, fromPosition, target, toPosition, isHot
 					player:say("You found " .. (count > 1 and count or (itemType:getArticle() ~= "" and itemType:getArticle() or "")) .. " " .. (count > 1 and itemType:getPluralName() or itemType:getName()) .. " in the bag.", TALKTYPE_MONSTER_SAY)
 				end
 			else
-				player:say("You found nothing useful.", TALKTYPE_MONSTER_SAY)
+				player:sayLocalized("actions.random_items.say_3", TALKTYPE_MONSTER_SAY)
 			end
 
 			item:getPosition():sendMagicEffect(useId.effect)

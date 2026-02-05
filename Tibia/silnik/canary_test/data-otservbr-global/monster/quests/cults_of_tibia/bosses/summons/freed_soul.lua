@@ -60,10 +60,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Free at last! Free to take revenge on our captor! ", yell = false },
-	{ text = " We will make the despoiler of souls suffer!", yell = false },
-	{ text = "We will have our revenge on the despoiler!", yell = false },
-	{ text = "Now the despoiler will pay!", yell = false },
+	{ text = "Free at last! Free to take revenge on our captor! ", yell = false , i18nKey = "monster.freed_soul.voice_1"},
+	{ text = " We will make the despoiler of souls suffer!", yell = false , i18nKey = "monster.freed_soul.voice_2"},
+	{ text = "We will have our revenge on the despoiler!", yell = false , i18nKey = "monster.freed_soul.voice_3"},
+	{ text = "Now the despoiler will pay!", yell = false , i18nKey = "monster.freed_soul.voice_4"},
 }
 
 monster.loot = {}

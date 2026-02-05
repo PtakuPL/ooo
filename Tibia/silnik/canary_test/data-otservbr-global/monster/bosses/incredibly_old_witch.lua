@@ -57,11 +57,11 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Stupid people!", yell = false },
-	{ text = "Everyone is so stupid!", yell = false },
-	{ text = "Feel the wrath of the witch!", yell = false },
-	{ text = "Oh how you will regret to have disturbed me!", yell = false },
-	{ text = "I will teach them all to leave me alone!", yell = false },
+	{ text = "Stupid people!", yell = false , i18nKey = "monster.incredibly_old_witch.voice_1"},
+	{ text = "Everyone is so stupid!", yell = false , i18nKey = "monster.incredibly_old_witch.voice_2"},
+	{ text = "Feel the wrath of the witch!", yell = false , i18nKey = "monster.incredibly_old_witch.voice_3"},
+	{ text = "Oh how you will regret to have disturbed me!", yell = false , i18nKey = "monster.incredibly_old_witch.voice_4"},
+	{ text = "I will teach them all to leave me alone!", yell = false , i18nKey = "monster.incredibly_old_witch.voice_5"},
 }
 
 monster.loot = {}

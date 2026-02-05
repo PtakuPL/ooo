@@ -65,8 +65,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Together we are unstoppable!", yell = false },
-	{ text = "You will fall before our might!", yell = false },
+	{ text = "Together we are unstoppable!", yell = false , i18nKey = "monster.the_shielded_thorn_knight.voice_1"},
+	{ text = "You will fall before our might!", yell = false , i18nKey = "monster.the_shielded_thorn_knight.voice_2"},
 }
 
 monster.loot = {}

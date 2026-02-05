@@ -74,11 +74,11 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "INTRUDER ALARM!", yell = true },
-	{ text = "klonk klonk klonk", yell = false },
-	{ text = "Rrrtttarrrttarrrtta", yell = false },
-	{ text = "Awaiting orders.", yell = false },
-	{ text = "Secret objective complete.", yell = false },
+	{ text = "INTRUDER ALARM!", yell = true , i18nKey = "monster.worker_golem.voice_1"},
+	{ text = "klonk klonk klonk", yell = false , i18nKey = "monster.worker_golem.voice_2"},
+	{ text = "Rrrtttarrrttarrrtta", yell = false , i18nKey = "monster.worker_golem.voice_3"},
+	{ text = "Awaiting orders.", yell = false , i18nKey = "monster.worker_golem.voice_4"},
+	{ text = "Secret objective complete.", yell = false , i18nKey = "monster.worker_golem.voice_5"},
 }
 
 monster.loot = {

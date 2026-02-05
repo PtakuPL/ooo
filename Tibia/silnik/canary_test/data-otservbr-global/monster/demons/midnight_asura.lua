@@ -73,9 +73,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Death and Darkness!", yell = false },
-	{ text = "Embrace the night!", yell = false },
-	{ text = "May night fall upon you!", yell = false },
+	{ text = "Death and Darkness!", yell = false , i18nKey = "monster.midnight_asura.voice_1"},
+	{ text = "Embrace the night!", yell = false , i18nKey = "monster.midnight_asura.voice_2"},
+	{ text = "May night fall upon you!", yell = false , i18nKey = "monster.midnight_asura.voice_3"},
 }
 
 monster.loot = {

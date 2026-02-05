@@ -72,12 +72,12 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Kneel before your Mistress!", yell = false },
-	{ text = "Dead is the new alive.", yell = false },
-	{ text = "Come, let me kiss you, darling. Oh wait, I meant kill.", yell = false },
-	{ text = "Enjoy the pain - I know you love it.", yell = false },
-	{ text = "Are you suffering nicely enough?", yell = false },
-	{ text = "You won't regret you came to me, sweetheart.", yell = false },
+	{ text = "Kneel before your Mistress!", yell = false , i18nKey = "monster.vampire_bride.voice_1"},
+	{ text = "Dead is the new alive.", yell = false , i18nKey = "monster.vampire_bride.voice_2"},
+	{ text = "Come, let me kiss you, darling. Oh wait, I meant kill.", yell = false , i18nKey = "monster.vampire_bride.voice_3"},
+	{ text = "Enjoy the pain - I know you love it.", yell = false , i18nKey = "monster.vampire_bride.voice_4"},
+	{ text = "Are you suffering nicely enough?", yell = false , i18nKey = "monster.vampire_bride.voice_5"},
+	{ text = "You won't regret you came to me, sweetheart.", yell = false , i18nKey = "monster.vampire_bride.voice_6"},
 }
 
 monster.loot = {

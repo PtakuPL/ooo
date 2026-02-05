@@ -71,12 +71,12 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I will ssswallow your sssoul!", yell = false },
-	{ text = "Mort ulhegh dakh visss.", yell = false },
-	{ text = "Flesssh to dussst!", yell = false },
-	{ text = "I will tassste life again!", yell = false },
-	{ text = "Ahkahra exura belil mort!", yell = false },
-	{ text = "Yohag Sssetham!", yell = false },
+	{ text = "I will ssswallow your sssoul!", yell = false , i18nKey = "monster.mummy.voice_1"},
+	{ text = "Mort ulhegh dakh visss.", yell = false , i18nKey = "monster.mummy.voice_2"},
+	{ text = "Flesssh to dussst!", yell = false , i18nKey = "monster.mummy.voice_3"},
+	{ text = "I will tassste life again!", yell = false , i18nKey = "monster.mummy.voice_4"},
+	{ text = "Ahkahra exura belil mort!", yell = false , i18nKey = "monster.mummy.voice_5"},
+	{ text = "Yohag Sssetham!", yell = false , i18nKey = "monster.mummy.voice_6"},
 }
 
 monster.loot = {

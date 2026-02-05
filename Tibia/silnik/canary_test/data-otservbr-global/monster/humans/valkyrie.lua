@@ -71,11 +71,11 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Another head for me!", yell = false },
-	{ text = "Head off!", yell = false },
-	{ text = "Your head will be mine!", yell = false },
-	{ text = "Stand still!", yell = false },
-	{ text = "One more head for me!", yell = false },
+	{ text = "Another head for me!", yell = false , i18nKey = "monster.valkyrie.voice_1"},
+	{ text = "Head off!", yell = false , i18nKey = "monster.valkyrie.voice_2"},
+	{ text = "Your head will be mine!", yell = false , i18nKey = "monster.valkyrie.voice_3"},
+	{ text = "Stand still!", yell = false , i18nKey = "monster.valkyrie.voice_4"},
+	{ text = "One more head for me!", yell = false , i18nKey = "monster.valkyrie.voice_5"},
 }
 
 monster.loot = {

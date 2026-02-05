@@ -83,10 +83,10 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Inferior creatures, bow before my power!", yell = false },
-	{ text = "Let me take a look at you!", yell = false },
-	{ text = "659978 54764!", yell = false },
-	{ text = "653768764!", yell = false },
+	{ text = "Inferior creatures, bow before my power!", yell = false , i18nKey = "monster.elder_bonelord.voice_1"},
+	{ text = "Let me take a look at you!", yell = false , i18nKey = "monster.elder_bonelord.voice_2"},
+	{ text = "659978 54764!", yell = false , i18nKey = "monster.elder_bonelord.voice_3"},
+	{ text = "653768764!", yell = false , i18nKey = "monster.elder_bonelord.voice_4"},
 }
 
 monster.loot = {

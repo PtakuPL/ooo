@@ -77,10 +77,10 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Uhhhg!", yell = false },
-	{ text = "Gll", yell = false },
-	{ text = "Hmmnn!", yell = false },
-	{ text = "Aaag!", yell = false },
+	{ text = "Uhhhg!", yell = false , i18nKey = "monster.draken_abomination.voice_1"},
+	{ text = "Gll", yell = false , i18nKey = "monster.draken_abomination.voice_2"},
+	{ text = "Hmmnn!", yell = false , i18nKey = "monster.draken_abomination.voice_3"},
+	{ text = "Aaag!", yell = false , i18nKey = "monster.draken_abomination.voice_4"},
 }
 
 monster.loot = {

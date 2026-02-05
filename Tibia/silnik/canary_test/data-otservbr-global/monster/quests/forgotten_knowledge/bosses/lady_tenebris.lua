@@ -70,9 +70,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "May the embrace of darkness kill you!", yell = false },
-	{ text = "I'm the one and only mistress of shadows!", yell = false },
-	{ text = "Blackout!", yell = false },
+	{ text = "May the embrace of darkness kill you!", yell = false , i18nKey = "monster.lady_tenebris.voice_1"},
+	{ text = "I'm the one and only mistress of shadows!", yell = false , i18nKey = "monster.lady_tenebris.voice_2"},
+	{ text = "Blackout!", yell = false , i18nKey = "monster.lady_tenebris.voice_3"},
 }
 
 monster.loot = {

@@ -70,8 +70,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Die, enervating mortal!", yell = false },
-	{ text = "Let the energy flow!", yell = false },
+	{ text = "Die, enervating mortal!", yell = false , i18nKey = "monster.energuardian_of_tales.voice_1"},
+	{ text = "Let the energy flow!", yell = false , i18nKey = "monster.energuardian_of_tales.voice_2"},
 }
 
 monster.loot = {

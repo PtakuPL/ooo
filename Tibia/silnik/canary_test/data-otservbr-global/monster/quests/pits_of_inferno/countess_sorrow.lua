@@ -73,11 +73,11 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I'm so sorry ... for youuu!", yell = false },
-	{ text = "You won't rest in peace! Never ever!", yell = false },
-	{ text = "Sleep ... for eternity!", yell = false },
-	{ text = "Dreams can come true. As my dream of killing you.", yell = false },
-	{ text = "You are lost pathetic mortal.", yell = false },
+	{ text = "I'm so sorry ... for youuu!", yell = false , i18nKey = "monster.countess_sorrow.voice_1"},
+	{ text = "You won't rest in peace! Never ever!", yell = false , i18nKey = "monster.countess_sorrow.voice_2"},
+	{ text = "Sleep ... for eternity!", yell = false , i18nKey = "monster.countess_sorrow.voice_3"},
+	{ text = "Dreams can come true. As my dream of killing you.", yell = false , i18nKey = "monster.countess_sorrow.voice_4"},
+	{ text = "You are lost pathetic mortal.", yell = false , i18nKey = "monster.countess_sorrow.voice_5"},
 }
 
 monster.loot = {

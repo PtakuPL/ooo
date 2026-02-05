@@ -60,9 +60,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Forgive Meeeee!", yell = false },
-	{ text = "Mouuuurn meeee!", yell = false },
-	{ text = "Help meee!", yell = false },
+	{ text = "Forgive Meeeee!", yell = false , i18nKey = "monster.damned_soul.voice_1"},
+	{ text = "Mouuuurn meeee!", yell = false , i18nKey = "monster.damned_soul.voice_2"},
+	{ text = "Help meee!", yell = false , i18nKey = "monster.damned_soul.voice_3"},
 }
 
 monster.attacks = {}

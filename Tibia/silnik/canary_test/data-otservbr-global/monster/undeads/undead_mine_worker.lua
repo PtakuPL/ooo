@@ -71,9 +71,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Ahrrr... uhmmm... hmm...", yell = false },
-	{ text = "Grrr...", yell = false },
-	{ text = "Urrrgh... gnarrr...", yell = false },
+	{ text = "Ahrrr... uhmmm... hmm...", yell = false , i18nKey = "monster.undead_mine_worker.voice_1"},
+	{ text = "Grrr...", yell = false , i18nKey = "monster.undead_mine_worker.voice_2"},
+	{ text = "Urrrgh... gnarrr...", yell = false , i18nKey = "monster.undead_mine_worker.voice_3"},
 }
 
 monster.loot = {

@@ -71,11 +71,11 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I'll bring balance upon you!", yell = false },
-	{ text = "Vihil Ealuel!", yell = false },
-	{ text = "For the Daughter of the Stars!", yell = false },
-	{ text = "Tha'shi Cenath!", yell = false },
-	{ text = "Feel my wrath!", yell = false },
+	{ text = "I'll bring balance upon you!", yell = false , i18nKey = "monster.elf_overseer.voice_1"},
+	{ text = "Vihil Ealuel!", yell = false , i18nKey = "monster.elf_overseer.voice_2"},
+	{ text = "For the Daughter of the Stars!", yell = false , i18nKey = "monster.elf_overseer.voice_3"},
+	{ text = "Tha'shi Cenath!", yell = false , i18nKey = "monster.elf_overseer.voice_4"},
+	{ text = "Feel my wrath!", yell = false , i18nKey = "monster.elf_overseer.voice_5"},
 }
 
 monster.loot = {

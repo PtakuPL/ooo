@@ -60,8 +60,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Are we there yet?", yell = false },
-	{ text = "Think I saw a nice gem back there, I need to...", yell = false },
+	{ text = "Are we there yet?", yell = false , i18nKey = "monster.lost_gnome.voice_1"},
+	{ text = "Think I saw a nice gem back there, I need to...", yell = false , i18nKey = "monster.lost_gnome.voice_2"},
 }
 
 monster.loot = {

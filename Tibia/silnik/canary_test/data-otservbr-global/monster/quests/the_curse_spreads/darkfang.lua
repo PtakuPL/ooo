@@ -72,7 +72,7 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "You are my next meal! Grrr!", yell = false },
+	{ text = "You are my next meal! Grrr!", yell = false , i18nKey = "monster.darkfang.voice_1"},
 }
 
 monster.loot = {

@@ -73,7 +73,7 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "FORMATION!", yell = true },
+	{ text = "FORMATION!", yell = true , i18nKey = "monster.usurper_commander.voice_1"},
 }
 
 monster.loot = {}

@@ -70,10 +70,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Chikuva!", yell = false },
-	{ text = "Jinuma jamjam!", yell = false },
-	{ text = "Suvituka siq chuqua!", yell = false },
-	{ text = "Kiyosa sipaju!", yell = false },
+	{ text = "Chikuva!", yell = false , i18nKey = "monster.chakoya_toolshaper.voice_1"},
+	{ text = "Jinuma jamjam!", yell = false , i18nKey = "monster.chakoya_toolshaper.voice_2"},
+	{ text = "Suvituka siq chuqua!", yell = false , i18nKey = "monster.chakoya_toolshaper.voice_3"},
+	{ text = "Kiyosa sipaju!", yell = false , i18nKey = "monster.chakoya_toolshaper.voice_4"},
 }
 
 monster.loot = {

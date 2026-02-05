@@ -72,9 +72,9 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "NO ARMY ME STOPPING! GRARR!", yell = true },
-	{ text = "ME DESTROY CITY! GROAR!", yell = true },
-	{ text = "WHARR! MUST ... KIDNAP WOMEN!", yell = true },
+	{ text = "NO ARMY ME STOPPING! GRARR!", yell = true , i18nKey = "monster.monstor.voice_1"},
+	{ text = "ME DESTROY CITY! GROAR!", yell = true , i18nKey = "monster.monstor.voice_2"},
+	{ text = "WHARR! MUST ... KIDNAP WOMEN!", yell = true , i18nKey = "monster.monstor.voice_3"},
 }
 
 monster.loot = {

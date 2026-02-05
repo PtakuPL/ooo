@@ -1,7 +1,7 @@
 # NPC: a_swan
 
-**Plik:** `data-otservbr-global/npc/a_swan.lua`
-**Data migracji:** 2025-12-17 00:52
+**Plik:** 
+**Data migracji:** 2025-12-21 03:05
 **Liczba tekstów:** 0
 
 ## Klucze i18n

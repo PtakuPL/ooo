@@ -75,7 +75,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Where are zhe guardz when you need zhem!", yell = false },
+	{ text = "Where are zhe guardz when you need zhem!", yell = false , i18nKey = "monster.lizard_noble.voice_1"},
 }
 
 monster.loot = {

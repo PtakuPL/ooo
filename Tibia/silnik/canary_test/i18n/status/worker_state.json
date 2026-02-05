@@ -2,229 +2,229 @@
   "categories": {
     "actions": {
       "backoff": {
-        "consecutive_zeros": 5,
-        "skip_until_utc": "2025-12-17T10:10:30Z"
+        "consecutive_zeros": 8,
+        "skip_until_utc": "2025-12-21T16:01:02Z"
       },
       "last": {
         "delta": {
           "files_migrated": 0
         },
-        "updated_at_utc": "2025-12-17T08:10:30Z"
+        "updated_at_utc": "2025-12-21T14:01:02Z"
       },
       "status": "backoff"
     },
     "chatchannels": {
       "backoff": {
-        "consecutive_zeros": 5,
-        "skip_until_utc": "2025-12-17T10:37:00Z"
+        "consecutive_zeros": 8,
+        "skip_until_utc": "2025-12-21T16:49:06Z"
       },
       "last": {
         "delta": {
           "files_migrated": 0
         },
-        "updated_at_utc": "2025-12-17T08:37:00Z"
+        "updated_at_utc": "2025-12-21T14:49:06Z"
       },
       "status": "backoff"
     },
     "cpp": {
       "backoff": {
-        "consecutive_zeros": 2,
-        "skip_until_utc": "2025-12-17T07:06:46Z"
+        "consecutive_zeros": 8,
+        "skip_until_utc": "2025-12-21T16:49:47Z"
       },
       "last": {
         "delta": {
           "files_migrated": 0
         },
-        "updated_at_utc": "2025-12-17T06:56:46Z"
+        "updated_at_utc": "2025-12-21T14:49:47Z"
       },
       "status": "backoff"
     },
     "creaturescripts": {
       "backoff": {
-        "consecutive_zeros": 5,
-        "skip_until_utc": "2025-12-17T10:31:49Z"
+        "consecutive_zeros": 8,
+        "skip_until_utc": "2025-12-21T16:36:13Z"
       },
       "last": {
         "delta": {
           "files_migrated": 0
         },
-        "updated_at_utc": "2025-12-17T08:31:49Z"
+        "updated_at_utc": "2025-12-21T14:36:13Z"
       },
       "status": "backoff"
     },
     "dataroot": {
       "backoff": {
-        "consecutive_zeros": 1,
-        "skip_until_utc": "2025-12-17T07:01:33Z"
+        "consecutive_zeros": 8,
+        "skip_until_utc": "2025-12-21T16:49:35Z"
       },
       "last": {
         "delta": {
           "files_migrated": 0
         },
-        "updated_at_utc": "2025-12-17T06:56:33Z"
+        "updated_at_utc": "2025-12-21T14:49:35Z"
       },
       "status": "backoff"
     },
     "errors": {
       "backoff": {
-        "consecutive_zeros": 1,
-        "skip_until_utc": "2025-12-17T07:02:27Z"
+        "consecutive_zeros": 8,
+        "skip_until_utc": "2025-12-21T16:51:09Z"
       },
       "last": {
         "delta": {
           "files_migrated": 0
         },
-        "updated_at_utc": "2025-12-17T06:57:27Z"
+        "updated_at_utc": "2025-12-21T14:51:09Z"
       },
       "status": "backoff"
     },
     "events": {
       "backoff": {
-        "consecutive_zeros": 5,
-        "skip_until_utc": "2025-12-17T10:36:51Z"
+        "consecutive_zeros": 8,
+        "skip_until_utc": "2025-12-21T16:48:57Z"
       },
       "last": {
         "delta": {
           "files_migrated": 0
         },
-        "updated_at_utc": "2025-12-17T08:36:51Z"
+        "updated_at_utc": "2025-12-21T14:48:57Z"
       },
       "status": "backoff"
     },
     "globalevents": {
       "backoff": {
-        "consecutive_zeros": 5,
-        "skip_until_utc": "2025-12-17T10:31:59Z"
+        "consecutive_zeros": 8,
+        "skip_until_utc": "2025-12-21T16:36:22Z"
       },
       "last": {
         "delta": {
           "files_migrated": 0
         },
-        "updated_at_utc": "2025-12-17T08:31:59Z"
+        "updated_at_utc": "2025-12-21T14:36:22Z"
       },
       "status": "backoff"
     },
     "items": {
       "backoff": {
-        "consecutive_zeros": 5,
-        "skip_until_utc": "2025-12-17T10:53:17Z"
+        "consecutive_zeros": 0,
+        "skip_until_utc": null
       },
       "last": {
         "delta": {
-          "files_migrated": 0
+          "files_migrated": 12
         },
-        "updated_at_utc": "2025-12-17T08:53:17Z"
+        "updated_at_utc": "2025-12-21T06:59:20Z"
       },
-      "status": "backoff"
+      "status": "idle"
     },
     "libs": {
       "backoff": {
-        "consecutive_zeros": 5,
-        "skip_until_utc": "2025-12-17T10:32:40Z"
+        "consecutive_zeros": 8,
+        "skip_until_utc": "2025-12-21T16:48:48Z"
       },
       "last": {
         "delta": {
           "files_migrated": 0
         },
-        "updated_at_utc": "2025-12-17T08:32:40Z"
+        "updated_at_utc": "2025-12-21T14:48:48Z"
       },
       "status": "backoff"
     },
     "modules": {
       "backoff": {
-        "consecutive_zeros": 1,
-        "skip_until_utc": "2025-12-17T07:01:21Z"
+        "consecutive_zeros": 8,
+        "skip_until_utc": "2025-12-21T16:49:16Z"
       },
       "last": {
         "delta": {
           "files_migrated": 0
         },
-        "updated_at_utc": "2025-12-17T06:56:21Z"
+        "updated_at_utc": "2025-12-21T14:49:16Z"
       },
       "status": "backoff"
     },
     "monsters": {
       "backoff": {
-        "consecutive_zeros": 5,
-        "skip_until_utc": "2025-12-17T10:40:51Z"
+        "consecutive_zeros": 0,
+        "skip_until_utc": null
       },
       "last": {
         "delta": {
-          "files_migrated": 0
+          "files_migrated": 87
         },
-        "updated_at_utc": "2025-12-17T08:40:51Z"
+        "updated_at_utc": "2025-12-21T06:09:23Z"
       },
-      "status": "backoff"
+      "status": "idle"
     },
     "mounts": {
       "backoff": {
-        "consecutive_zeros": 5,
-        "skip_until_utc": "2025-12-17T10:43:06Z"
+        "consecutive_zeros": 8,
+        "skip_until_utc": "2025-12-21T16:46:23Z"
       },
       "last": {
         "delta": {
           "files_migrated": 0
         },
-        "updated_at_utc": "2025-12-17T08:43:06Z"
+        "updated_at_utc": "2025-12-21T14:46:23Z"
       },
       "status": "backoff"
     },
     "movements": {
       "backoff": {
-        "consecutive_zeros": 5,
-        "skip_until_utc": "2025-12-17T10:31:40Z"
+        "consecutive_zeros": 8,
+        "skip_until_utc": "2025-12-21T16:36:05Z"
       },
       "last": {
         "delta": {
           "files_migrated": 0
         },
-        "updated_at_utc": "2025-12-17T08:31:40Z"
+        "updated_at_utc": "2025-12-21T14:36:05Z"
       },
       "status": "backoff"
     },
     "npc": {
       "backoff": {
-        "consecutive_zeros": 5,
-        "skip_until_utc": "2025-12-17T10:06:39Z"
+        "consecutive_zeros": 10,
+        "skip_until_utc": "2025-12-21T16:14:41Z"
       },
       "last": {
         "delta": {
           "files_migrated": 0
         },
-        "updated_at_utc": "2025-12-17T08:06:39Z"
+        "updated_at_utc": "2025-12-21T14:14:41Z"
       },
       "status": "backoff"
     },
     "npclib": {
       "backoff": {
-        "consecutive_zeros": 1,
-        "skip_until_utc": "2025-12-17T07:01:31Z"
+        "consecutive_zeros": 8,
+        "skip_until_utc": "2025-12-21T16:49:27Z"
       },
       "last": {
         "delta": {
           "files_migrated": 0
         },
-        "updated_at_utc": "2025-12-17T06:56:31Z"
+        "updated_at_utc": "2025-12-21T14:49:27Z"
       },
       "status": "backoff"
     },
     "otclient_data": {
       "backoff": {
-        "consecutive_zeros": 5,
-        "skip_until_utc": "2025-12-17T10:33:32Z"
+        "consecutive_zeros": 8,
+        "skip_until_utc": "2025-12-21T16:50:35Z"
       },
       "last": {
         "delta": {
           "files_migrated": 0
         },
-        "updated_at_utc": "2025-12-17T08:33:32Z"
+        "updated_at_utc": "2025-12-21T14:50:35Z"
       },
       "status": "backoff"
     },
     "otclient_mods": {
       "backoff": {
-        "consecutive_zeros": 1,
-        "skip_until_utc": "2025-12-17T07:01:58Z"
+        "consecutive_zeros": 0,
+        "skip_until_utc": null
       },
       "last": {
         "delta": {
@@ -232,64 +232,64 @@
         },
         "updated_at_utc": "2025-12-17T06:56:58Z"
       },
-      "status": "backoff"
+      "status": "idle"
     },
     "otclient_modules": {
       "backoff": {
-        "consecutive_zeros": 5,
-        "skip_until_utc": "2025-12-17T10:33:21Z"
+        "consecutive_zeros": 8,
+        "skip_until_utc": "2025-12-21T16:49:55Z"
       },
       "last": {
         "delta": {
           "files_migrated": 0
         },
-        "updated_at_utc": "2025-12-17T08:33:21Z"
+        "updated_at_utc": "2025-12-21T14:49:55Z"
       },
       "status": "backoff"
     },
     "otclient_src": {
       "backoff": {
-        "consecutive_zeros": 1,
-        "skip_until_utc": "2025-12-17T07:02:10Z"
+        "consecutive_zeros": 8,
+        "skip_until_utc": "2025-12-21T16:50:43Z"
       },
       "last": {
         "delta": {
           "files_migrated": 0
         },
-        "updated_at_utc": "2025-12-17T06:57:10Z"
+        "updated_at_utc": "2025-12-21T14:50:43Z"
       },
       "status": "backoff"
     },
     "otclient_tools": {
       "backoff": {
-        "consecutive_zeros": 1,
-        "skip_until_utc": "2025-12-17T07:02:17Z"
+        "consecutive_zeros": 8,
+        "skip_until_utc": "2025-12-21T16:50:52Z"
       },
       "last": {
         "delta": {
           "files_migrated": 0
         },
-        "updated_at_utc": "2025-12-17T06:57:17Z"
+        "updated_at_utc": "2025-12-21T14:50:52Z"
       },
       "status": "backoff"
     },
     "quests": {
       "backoff": {
-        "consecutive_zeros": 5,
-        "skip_until_utc": "2025-12-17T10:10:39Z"
+        "consecutive_zeros": 8,
+        "skip_until_utc": "2025-12-21T16:10:17Z"
       },
       "last": {
         "delta": {
           "files_migrated": 0
         },
-        "updated_at_utc": "2025-12-17T08:10:39Z"
+        "updated_at_utc": "2025-12-21T14:10:17Z"
       },
       "status": "backoff"
     },
     "raids": {
       "backoff": {
-        "consecutive_zeros": 5,
-        "skip_until_utc": "2025-12-17T10:10:47Z"
+        "consecutive_zeros": 0,
+        "skip_until_utc": null
       },
       "last": {
         "delta": {
@@ -297,51 +297,51 @@
         },
         "updated_at_utc": "2025-12-17T08:10:47Z"
       },
-      "status": "backoff"
+      "status": "idle"
     },
     "scripts": {
       "backoff": {
-        "consecutive_zeros": 5,
-        "skip_until_utc": "2025-12-17T10:30:33Z"
+        "consecutive_zeros": 10,
+        "skip_until_utc": "2025-12-21T16:15:05Z"
       },
       "last": {
         "delta": {
           "files_migrated": 0
         },
-        "updated_at_utc": "2025-12-17T08:30:33Z"
+        "updated_at_utc": "2025-12-21T14:15:05Z"
       },
       "status": "backoff"
     },
     "server": {
       "backoff": {
-        "consecutive_zeros": 1,
-        "skip_until_utc": "2025-12-17T07:02:21Z"
+        "consecutive_zeros": 8,
+        "skip_until_utc": "2025-12-21T16:51:01Z"
       },
       "last": {
         "delta": {
           "files_migrated": 0
         },
-        "updated_at_utc": "2025-12-17T06:57:21Z"
+        "updated_at_utc": "2025-12-21T14:51:01Z"
       },
       "status": "backoff"
     },
     "spells": {
       "backoff": {
-        "consecutive_zeros": 5,
-        "skip_until_utc": "2025-12-17T10:31:23Z"
+        "consecutive_zeros": 8,
+        "skip_until_utc": "2025-12-21T16:35:48Z"
       },
       "last": {
         "delta": {
           "files_migrated": 0
         },
-        "updated_at_utc": "2025-12-17T08:31:23Z"
+        "updated_at_utc": "2025-12-21T14:35:48Z"
       },
       "status": "backoff"
     },
     "startup": {
       "backoff": {
-        "consecutive_zeros": 1,
-        "skip_until_utc": "2025-12-17T07:01:23Z"
+        "consecutive_zeros": 0,
+        "skip_until_utc": null
       },
       "last": {
         "delta": {
@@ -349,25 +349,25 @@
         },
         "updated_at_utc": "2025-12-17T06:56:23Z"
       },
-      "status": "backoff"
+      "status": "idle"
     },
     "talkactions": {
       "backoff": {
-        "consecutive_zeros": 5,
-        "skip_until_utc": "2025-12-17T10:31:32Z"
+        "consecutive_zeros": 8,
+        "skip_until_utc": "2025-12-21T16:35:56Z"
       },
       "last": {
         "delta": {
           "files_migrated": 0
         },
-        "updated_at_utc": "2025-12-17T08:31:32Z"
+        "updated_at_utc": "2025-12-21T14:35:56Z"
       },
       "status": "backoff"
     },
     "world": {
       "backoff": {
-        "consecutive_zeros": 5,
-        "skip_until_utc": "2025-12-17T10:31:14Z"
+        "consecutive_zeros": 0,
+        "skip_until_utc": null
       },
       "last": {
         "delta": {
@@ -375,14 +375,14 @@
         },
         "updated_at_utc": "2025-12-17T08:31:14Z"
       },
-      "status": "backoff"
+      "status": "idle"
     }
   },
-  "generated_at_utc": "2025-12-20T19:26:25Z",
+  "generated_at_utc": "2025-12-21T14:58:04Z",
   "global": {
-    "en_keys_total": 27500,
+    "en_keys_total": 36473,
     "errors_total": 0,
-    "files_processed_total": 6293,
+    "files_processed_total": 6442,
     "languages_total": 53
   },
   "legacy": {
@@ -392,23 +392,23 @@
         "keys_to_translate": 1426,
         "language": "lt"
       },
-      "category": "lt",
+      "category": "errors",
       "idle": {
         "last_scan": "2025-12-16T05:59:39.875505",
         "new_files_detected": 152,
         "quality_issues": 2875
       },
-      "last_update": "2025-12-17T11:03:04.152072",
+      "last_update": "2025-12-21T15:51:09.186375",
       "migration": {
-        "batch_size": 10,
-        "current_category": "items",
-        "files_scanned": 3,
-        "files_with_keys": 3,
-        "files_without_keys": 0,
-        "keys_extracted": 3
+        "batch_size": 126,
+        "current_category": "errors",
+        "files_scanned": 2297,
+        "files_with_keys": 1892,
+        "files_without_keys": 405,
+        "keys_extracted": 6243
       },
-      "mode": "AUTO_TRANSLATE",
-      "total_cycles": 615,
+      "mode": "MIGRATION",
+      "total_cycles": 932,
       "translation_sync": {
         "json_file": "spells.json",
         "keys_to_sync": 1122,
@@ -426,24 +426,24 @@
   "schema_version": "3.0",
   "worker": {
     "current": {
-      "category": "lt",
-      "detail": "cycle end",
+      "category": "pending_skip",
+      "detail": "all categories skipped",
       "eta_seconds": 0,
       "file": "-",
-      "phase": "AUTO_TRANSLATE",
+      "phase": "MIGRATION",
       "progress": {
         "done": 0,
         "total": 0,
-        "unit": "units"
+        "unit": "files"
       },
-      "stage": "cycle_end"
+      "stage": "pending_skip"
     },
-    "cycle": 615,
-    "heartbeat_at_utc": "2025-12-17T10:03:04Z",
+    "cycle": 1,
+    "heartbeat_at_utc": "2025-12-21T14:58:04Z",
     "host": "DESKTOP-338A5OQ",
     "mode": "continuous",
     "name": "i18n_worker_simple.sh",
-    "pid": 2630016,
+    "pid": 3057193,
     "status": "running",
     "version": "unknown"
   }

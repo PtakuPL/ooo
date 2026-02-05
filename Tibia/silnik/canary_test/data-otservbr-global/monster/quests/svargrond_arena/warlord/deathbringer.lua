@@ -60,10 +60,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "YOU FOOLS WILL PAY!", yell = true },
-	{ text = "YOU ALL WILL DIE!", yell = true },
-	{ text = "DEATH, DESTRUCTION!", yell = true },
-	{ text = "I will eat your soul!", yell = false },
+	{ text = "YOU FOOLS WILL PAY!", yell = true , i18nKey = "monster.deathbringer.voice_1"},
+	{ text = "YOU ALL WILL DIE!", yell = true , i18nKey = "monster.deathbringer.voice_2"},
+	{ text = "DEATH, DESTRUCTION!", yell = true , i18nKey = "monster.deathbringer.voice_3"},
+	{ text = "I will eat your soul!", yell = false , i18nKey = "monster.deathbringer.voice_4"},
 }
 
 monster.loot = {}

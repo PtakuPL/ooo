@@ -72,10 +72,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Aaaaahhhh!", yell = false },
-	{ text = "Hoooohhh!", yell = false },
-	{ text = "Uhhhhhhh!", yell = false },
-	{ text = "Chhhhhhh!", yell = false },
+	{ text = "Aaaaahhhh!", yell = false , i18nKey = "monster.crypt_shambler.voice_1"},
+	{ text = "Hoooohhh!", yell = false , i18nKey = "monster.crypt_shambler.voice_2"},
+	{ text = "Uhhhhhhh!", yell = false , i18nKey = "monster.crypt_shambler.voice_3"},
+	{ text = "Chhhhhhh!", yell = false , i18nKey = "monster.crypt_shambler.voice_4"},
 }
 
 monster.loot = {

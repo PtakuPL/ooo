@@ -73,9 +73,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "KNARR!", yell = false },
-	{ text = "RATTLE!", yell = false },
-	{ text = "CROAK!", yell = false },
+	{ text = "KNARR!", yell = false , i18nKey = "monster.rootthing_amber_shaper.voice_1"},
+	{ text = "RATTLE!", yell = false , i18nKey = "monster.rootthing_amber_shaper.voice_2"},
+	{ text = "CROAK!", yell = false , i18nKey = "monster.rootthing_amber_shaper.voice_3"},
 }
 
 monster.loot = {

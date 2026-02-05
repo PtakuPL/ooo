@@ -60,7 +60,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Witness my rise to godhood you fools!", yell = false },
+	{ text = "Witness my rise to godhood you fools!", yell = false , i18nKey = "monster.ascending_ferumbras.voice_1"},
 }
 
 monster.loot = {}

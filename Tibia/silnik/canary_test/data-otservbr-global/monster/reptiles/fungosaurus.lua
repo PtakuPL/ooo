@@ -57,8 +57,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Rraaaaa!", yell = false },
-	{ text = "CHEHEHE!!!", yell = true },
+	{ text = "Rraaaaa!", yell = false , i18nKey = "monster.fungosaurus.voice_1"},
+	{ text = "CHEHEHE!!!", yell = true , i18nKey = "monster.fungosaurus.voice_2"},
 }
 
 monster.attacks = {

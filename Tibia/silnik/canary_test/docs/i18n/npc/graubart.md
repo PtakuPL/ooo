@@ -1,7 +1,7 @@
 # NPC: graubart
 
-**Plik:** `data-otservbr-global/npc/graubart.lua`
-**Data migracji:** 2025-12-17 00:59
+**Plik:** 
+**Data migracji:** 2025-12-21 15:14
 **Liczba tekstów:** 0
 
 ## Klucze i18n

@@ -71,9 +71,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Death!", yell = false },
-	{ text = "Come a little closer!", yell = false },
-	{ text = "The end is near!", yell = false },
+	{ text = "Death!", yell = false , i18nKey = "monster.duskbringer.voice_1"},
+	{ text = "Come a little closer!", yell = false , i18nKey = "monster.duskbringer.voice_2"},
+	{ text = "The end is near!", yell = false , i18nKey = "monster.duskbringer.voice_3"},
 }
 
 monster.loot = {

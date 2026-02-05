@@ -72,9 +72,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I can see you decaying!", yell = false },
-	{ text = "Let me taste your mortality!", yell = false },
-	{ text = "Your lifeforce is waning!", yell = false },
+	{ text = "I can see you decaying!", yell = false , i18nKey = "monster.blightwalker.voice_1"},
+	{ text = "Let me taste your mortality!", yell = false , i18nKey = "monster.blightwalker.voice_2"},
+	{ text = "Your lifeforce is waning!", yell = false , i18nKey = "monster.blightwalker.voice_3"},
 }
 
 monster.loot = {

@@ -81,13 +81,13 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Doomed be the living!", yell = false },
-	{ text = "Death awaits all!", yell = false },
-	{ text = "Thy living flesh offends me!", yell = false },
-	{ text = "Death and Decay!", yell = false },
-	{ text = "You will endure agony beyond thy death!", yell = false },
-	{ text = "Pain sweet pain!", yell = false },
-	{ text = "Come to me my children!", yell = false },
+	{ text = "Doomed be the living!", yell = false , i18nKey = "monster.lich.voice_1"},
+	{ text = "Death awaits all!", yell = false , i18nKey = "monster.lich.voice_2"},
+	{ text = "Thy living flesh offends me!", yell = false , i18nKey = "monster.lich.voice_3"},
+	{ text = "Death and Decay!", yell = false , i18nKey = "monster.lich.voice_4"},
+	{ text = "You will endure agony beyond thy death!", yell = false , i18nKey = "monster.lich.voice_5"},
+	{ text = "Pain sweet pain!", yell = false , i18nKey = "monster.lich.voice_6"},
+	{ text = "Come to me my children!", yell = false , i18nKey = "monster.lich.voice_7"},
 }
 
 monster.loot = {

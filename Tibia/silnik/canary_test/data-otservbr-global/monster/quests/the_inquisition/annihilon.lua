@@ -69,9 +69,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Flee as long as you can!", yell = false },
-	{ text = "Annihilon's might will crush you all!", yell = false },
-	{ text = "I am coming for you!", yell = false },
+	{ text = "Flee as long as you can!", yell = false , i18nKey = "monster.annihilon.voice_1"},
+	{ text = "Annihilon's might will crush you all!", yell = false , i18nKey = "monster.annihilon.voice_2"},
+	{ text = "I am coming for you!", yell = false , i18nKey = "monster.annihilon.voice_3"},
 }
 
 monster.loot = {

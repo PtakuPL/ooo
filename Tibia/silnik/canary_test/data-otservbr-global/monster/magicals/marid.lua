@@ -80,10 +80,10 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Wishes can come true.", yell = false },
-	{ text = "Feel the power of my magic, tiny mortal!", yell = false },
-	{ text = "Simsalabim", yell = false },
-	{ text = "Be careful what you wish for.", yell = false },
+	{ text = "Wishes can come true.", yell = false , i18nKey = "monster.marid.voice_1"},
+	{ text = "Feel the power of my magic, tiny mortal!", yell = false , i18nKey = "monster.marid.voice_2"},
+	{ text = "Simsalabim", yell = false , i18nKey = "monster.marid.voice_3"},
+	{ text = "Be careful what you wish for.", yell = false , i18nKey = "monster.marid.voice_4"},
 }
 
 monster.loot = {

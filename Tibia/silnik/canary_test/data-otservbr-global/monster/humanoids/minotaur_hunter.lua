@@ -71,11 +71,11 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "You are marked for death!", yell = false },
-	{ text = "This time the prey is you!", yell = false },
-	{ text = "You are hunted!", yell = false },
-	{ text = "You'll make a fine trophy!", yell = false },
-	{ text = "Bullseye!", yell = false },
+	{ text = "You are marked for death!", yell = false , i18nKey = "monster.minotaur_hunter.voice_1"},
+	{ text = "This time the prey is you!", yell = false , i18nKey = "monster.minotaur_hunter.voice_2"},
+	{ text = "You are hunted!", yell = false , i18nKey = "monster.minotaur_hunter.voice_3"},
+	{ text = "You'll make a fine trophy!", yell = false , i18nKey = "monster.minotaur_hunter.voice_4"},
+	{ text = "Bullseye!", yell = false , i18nKey = "monster.minotaur_hunter.voice_5"},
 }
 
 monster.loot = {

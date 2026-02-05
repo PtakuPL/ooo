@@ -69,11 +69,11 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Deeestructiooon!", yell = false },
-	{ text = "Maaahhhrrr!", yell = false },
-	{ text = "I am carnage incarnate!", yell = false },
-	{ text = "I've seen the light! And it was all engulfing fire!", yell = false },
-	{ text = "Taaake... this!", yell = false },
+	{ text = "Deeestructiooon!", yell = false , i18nKey = "monster.deathstrike.voice_1"},
+	{ text = "Maaahhhrrr!", yell = false , i18nKey = "monster.deathstrike.voice_2"},
+	{ text = "I am carnage incarnate!", yell = false , i18nKey = "monster.deathstrike.voice_3"},
+	{ text = "I've seen the light! And it was all engulfing fire!", yell = false , i18nKey = "monster.deathstrike.voice_4"},
+	{ text = "Taaake... this!", yell = false , i18nKey = "monster.deathstrike.voice_5"},
 }
 
 monster.loot = {

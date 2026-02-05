@@ -77,8 +77,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Ashes to ashes.", yell = false },
-	{ text = "Burn, baby! Burn!", yell = false },
+	{ text = "Ashes to ashes.", yell = false , i18nKey = "monster.infernal_phantom.voice_1"},
+	{ text = "Burn, baby! Burn!", yell = false , i18nKey = "monster.infernal_phantom.voice_2"},
 }
 
 monster.loot = {

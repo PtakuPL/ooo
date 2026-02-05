@@ -74,10 +74,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "YOU WILL FREEZE!", yell = true },
-	{ text = "ZCHHHHH!", yell = true },
-	{ text = "I am so cool.", yell = false },
-	{ text = "Chill out!", yell = false },
+	{ text = "YOU WILL FREEZE!", yell = true , i18nKey = "monster.frost_dragon.voice_1"},
+	{ text = "ZCHHHHH!", yell = true , i18nKey = "monster.frost_dragon.voice_2"},
+	{ text = "I am so cool.", yell = false , i18nKey = "monster.frost_dragon.voice_3"},
+	{ text = "Chill out!", yell = false , i18nKey = "monster.frost_dragon.voice_4"},
 }
 
 monster.loot = {

@@ -70,9 +70,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Think I can't see you? Think again...", yell = false },
-	{ text = "You don't stand a chance!", yell = false },
-	{ text = "What are you looking for?", yell = false },
+	{ text = "Think I can't see you? Think again...", yell = false , i18nKey = "monster.cobra_scout.voice_1"},
+	{ text = "You don't stand a chance!", yell = false , i18nKey = "monster.cobra_scout.voice_2"},
+	{ text = "What are you looking for?", yell = false , i18nKey = "monster.cobra_scout.voice_3"},
 }
 
 monster.loot = {

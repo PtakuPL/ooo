@@ -70,7 +70,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Kreeee. Kreeeee.", yell = false },
+	{ text = "Kreeee. Kreeeee.", yell = false , i18nKey = "monster.jungle_moa.voice_1"},
 }
 
 monster.loot = {

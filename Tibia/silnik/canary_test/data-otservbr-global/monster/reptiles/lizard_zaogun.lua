@@ -70,10 +70,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Hissss!", yell = false },
-	{ text = "Cowardzz!", yell = false },
-	{ text = "Softzzkinzz from zze zzouzz!", yell = false },
-	{ text = "Zztand and fight!", yell = false },
+	{ text = "Hissss!", yell = false , i18nKey = "monster.lizard_zaogun.voice_1"},
+	{ text = "Cowardzz!", yell = false , i18nKey = "monster.lizard_zaogun.voice_2"},
+	{ text = "Softzzkinzz from zze zzouzz!", yell = false , i18nKey = "monster.lizard_zaogun.voice_3"},
+	{ text = "Zztand and fight!", yell = false , i18nKey = "monster.lizard_zaogun.voice_4"},
 }
 
 monster.loot = {

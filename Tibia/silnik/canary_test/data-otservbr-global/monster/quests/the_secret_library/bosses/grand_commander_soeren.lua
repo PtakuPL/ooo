@@ -66,8 +66,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Flinch even once, and I will crush every fiber within you!", yell = false },
-	{ text = "The Falcon reigns supreme!", yell = false },
+	{ text = "Flinch even once, and I will crush every fiber within you!", yell = false , i18nKey = "monster.grand_commander_soeren.voice_1"},
+	{ text = "The Falcon reigns supreme!", yell = false , i18nKey = "monster.grand_commander_soeren.voice_2"},
 }
 
 monster.loot = {

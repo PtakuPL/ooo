@@ -73,7 +73,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "We will crush all oposition!", yell = false },
+	{ text = "We will crush all oposition!", yell = false , i18nKey = "monster.orc_cult_priest.voice_1"},
 }
 
 monster.loot = {

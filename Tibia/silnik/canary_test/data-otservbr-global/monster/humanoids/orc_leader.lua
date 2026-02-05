@@ -72,7 +72,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Ulderek futgyr human!", yell = false },
+	{ text = "Ulderek futgyr human!", yell = false , i18nKey = "monster.orc_leader.voice_1"},
 }
 
 monster.loot = {

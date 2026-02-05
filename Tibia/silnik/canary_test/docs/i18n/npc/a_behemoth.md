@@ -1,7 +1,7 @@
 # NPC: a_behemoth
 
-**Plik:** `data-otservbr-global/npc/a_behemoth.lua`
-**Data migracji:** 2025-12-17 00:50
+**Plik:** 
+**Data migracji:** 2025-12-21 02:58
 **Liczba tekstów:** 0
 
 ## Klucze i18n

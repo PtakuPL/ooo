@@ -71,9 +71,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Mine is the power of the night!", yell = false },
-	{ text = "You can not hope to stop us all!", yell = false },
-	{ text = "The power of darkness is with me!", yell = false },
+	{ text = "Mine is the power of the night!", yell = false , i18nKey = "monster.acolyte_of_darkness.voice_1"},
+	{ text = "You can not hope to stop us all!", yell = false , i18nKey = "monster.acolyte_of_darkness.voice_2"},
+	{ text = "The power of darkness is with me!", yell = false , i18nKey = "monster.acolyte_of_darkness.voice_3"},
 }
 
 monster.loot = {

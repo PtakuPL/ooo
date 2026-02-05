@@ -69,7 +69,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "STOMP! SHAKE! SHATTERER!!", yell = false },
+	{ text = "STOMP! SHAKE! SHATTERER!!", yell = false , i18nKey = "monster.the_shatterer.voice_1"},
 }
 
 monster.loot = {

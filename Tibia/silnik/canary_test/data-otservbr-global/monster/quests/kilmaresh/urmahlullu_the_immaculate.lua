@@ -69,8 +69,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Leave this place ridiculous adventurer!", yell = false },
-	{ text = "I am the beast with two faces!", yell = false },
+	{ text = "Leave this place ridiculous adventurer!", yell = false , i18nKey = "monster.urmahlullu_the_immaculate.voice_1"},
+	{ text = "I am the beast with two faces!", yell = false , i18nKey = "monster.urmahlullu_the_immaculate.voice_2"},
 }
 
 monster.loot = {}

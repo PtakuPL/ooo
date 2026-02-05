@@ -78,7 +78,7 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I ssssmell warm blood!", yell = false },
+	{ text = "I ssssmell warm blood!", yell = false , i18nKey = "monster.lizard_dragon_priest.voice_1"},
 }
 
 monster.loot = {

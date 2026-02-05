@@ -72,12 +72,12 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "MUHAHA!", yell = false },
-	{ text = "Back in black!", yell = false },
-	{ text = "Die!", yell = false },
-	{ text = "Dieeee!", yell = false },
-	{ text = "Caaarnaaage!", yell = false },
-	{ text = "Ahhhhrrrr!", yell = false },
+	{ text = "MUHAHA!", yell = false , i18nKey = "monster.furyosa.voice_1"},
+	{ text = "Back in black!", yell = false , i18nKey = "monster.furyosa.voice_2"},
+	{ text = "Die!", yell = false , i18nKey = "monster.furyosa.voice_3"},
+	{ text = "Dieeee!", yell = false , i18nKey = "monster.furyosa.voice_4"},
+	{ text = "Caaarnaaage!", yell = false , i18nKey = "monster.furyosa.voice_5"},
+	{ text = "Ahhhhrrrr!", yell = false , i18nKey = "monster.furyosa.voice_6"},
 }
 
 monster.loot = {

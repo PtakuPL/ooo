@@ -76,8 +76,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Jey Obu giotja!!", yell = false },
-	{ text = "Mmmmmoooaaaaaahaaa!!", yell = false },
+	{ text = "Jey Obu giotja!!", yell = false , i18nKey = "monster.deepling_spellsinger.voice_1"},
+	{ text = "Mmmmmoooaaaaaahaaa!!", yell = false , i18nKey = "monster.deepling_spellsinger.voice_2"},
 }
 
 monster.loot = {

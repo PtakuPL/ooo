@@ -72,10 +72,10 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I was the shadow that haunted the cradle of humanity!", yell = false },
-	{ text = "Your worthles existence will nourish something greater!", yell = false },
-	{ text = "I exist since eons and you want to defy me?", yell = false },
-	{ text = "Can you feel the passage of time, mortal?", yell = false },
+	{ text = "I was the shadow that haunted the cradle of humanity!", yell = false , i18nKey = "monster.arachir_the_ancient_one.voice_1"},
+	{ text = "Your worthles existence will nourish something greater!", yell = false , i18nKey = "monster.arachir_the_ancient_one.voice_2"},
+	{ text = "I exist since eons and you want to defy me?", yell = false , i18nKey = "monster.arachir_the_ancient_one.voice_3"},
+	{ text = "Can you feel the passage of time, mortal?", yell = false , i18nKey = "monster.arachir_the_ancient_one.voice_4"},
 }
 
 monster.loot = {

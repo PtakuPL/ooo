@@ -72,10 +72,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Ikem rambo zambo!", yell = false },
-	{ text = "Orc buta bana!", yell = false },
-	{ text = "Ranat Ulderek!", yell = false },
-	{ text = "Futchi maruk buta!", yell = false },
+	{ text = "Ikem rambo zambo!", yell = false , i18nKey = "monster.orc_warlord.voice_1"},
+	{ text = "Orc buta bana!", yell = false , i18nKey = "monster.orc_warlord.voice_2"},
+	{ text = "Ranat Ulderek!", yell = false , i18nKey = "monster.orc_warlord.voice_3"},
+	{ text = "Futchi maruk buta!", yell = false , i18nKey = "monster.orc_warlord.voice_4"},
 }
 
 monster.loot = {

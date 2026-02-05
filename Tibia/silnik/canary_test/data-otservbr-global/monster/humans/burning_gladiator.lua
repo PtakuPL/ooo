@@ -77,9 +77,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Burn, infidel!", yell = false },
-	{ text = "Only the Wild Sun shall shine down on this world!", yell = false },
-	{ text = "Praised be Fafnar, the Smiter!", yell = false },
+	{ text = "Burn, infidel!", yell = false , i18nKey = "monster.burning_gladiator.voice_1"},
+	{ text = "Only the Wild Sun shall shine down on this world!", yell = false , i18nKey = "monster.burning_gladiator.voice_2"},
+	{ text = "Praised be Fafnar, the Smiter!", yell = false , i18nKey = "monster.burning_gladiator.voice_3"},
 }
 
 monster.loot = {

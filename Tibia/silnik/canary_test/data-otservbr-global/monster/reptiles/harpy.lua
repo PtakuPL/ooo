@@ -70,9 +70,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Blood will flow!", yell = false },
-	{ text = "Shriek!", yell = false },
-	{ text = "Screech!", yell = false },
+	{ text = "Blood will flow!", yell = false , i18nKey = "monster.harpy.voice_1"},
+	{ text = "Shriek!", yell = false , i18nKey = "monster.harpy.voice_2"},
+	{ text = "Screech!", yell = false , i18nKey = "monster.harpy.voice_3"},
 }
 
 monster.loot = {

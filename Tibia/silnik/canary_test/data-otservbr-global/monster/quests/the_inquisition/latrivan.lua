@@ -69,10 +69,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I might reward you for killing my brother ~ with a swift death!", yell = true },
-	{ text = "Colateral damage is so fun!", yell = false },
-	{ text = "Golgordan you fool!", yell = false },
-	{ text = "We are the brothers of fear!", yell = false },
+	{ text = "I might reward you for killing my brother ~ with a swift death!", yell = true , i18nKey = "monster.latrivan.voice_1"},
+	{ text = "Colateral damage is so fun!", yell = false , i18nKey = "monster.latrivan.voice_2"},
+	{ text = "Golgordan you fool!", yell = false , i18nKey = "monster.latrivan.voice_3"},
+	{ text = "We are the brothers of fear!", yell = false , i18nKey = "monster.latrivan.voice_4"},
 }
 
 monster.loot = {

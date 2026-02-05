@@ -94,11 +94,11 @@ monster.sounds = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Your soul will be mine!", yell = false },
-	{ text = "MUHAHAHAHA!", yell = false },
-	{ text = "CHAMEK ATH UTHUL ARAK!", yell = false },
-	{ text = "I SMELL FEEEEAAAAAR!", yell = false },
-	{ text = "Your resistance is futile!", yell = false },
+	{ text = "Your soul will be mine!", yell = false , i18nKey = "monster.demon.voice_6"},
+	{ text = "MUHAHAHAHA!", yell = false , i18nKey = "monster.demon.voice_7"},
+	{ text = "CHAMEK ATH UTHUL ARAK!", yell = false , i18nKey = "monster.demon.voice_8"},
+	{ text = "I SMELL FEEEEAAAAAR!", yell = false , i18nKey = "monster.demon.voice_9"},
+	{ text = "Your resistance is futile!", yell = false , i18nKey = "monster.demon.voice_10"},
 }
 
 monster.loot = {

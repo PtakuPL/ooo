@@ -69,10 +69,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "You can't run or hide forever!", yell = false },
-	{ text = "I'm the executioner of the Seven!", yell = false },
-	{ text = "The final punishment awaits you!", yell = false },
-	{ text = "The judgement is guilty! The sentence is death!", yell = false },
+	{ text = "You can't run or hide forever!", yell = false , i18nKey = "monster.ushuriel.voice_1"},
+	{ text = "I'm the executioner of the Seven!", yell = false , i18nKey = "monster.ushuriel.voice_2"},
+	{ text = "The final punishment awaits you!", yell = false , i18nKey = "monster.ushuriel.voice_3"},
+	{ text = "The judgement is guilty! The sentence is death!", yell = false , i18nKey = "monster.ushuriel.voice_4"},
 }
 
 monster.loot = {

@@ -60,7 +60,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "EMBRACE MY GIFTS!", yell = true },
+	{ text = "EMBRACE MY GIFTS!", yell = true , i18nKey = "monster.ethershreck.voice_1"},
 }
 
 monster.loot = {

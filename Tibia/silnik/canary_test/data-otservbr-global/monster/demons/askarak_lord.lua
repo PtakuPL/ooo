@@ -74,11 +74,11 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "DEATH TO THE SHABURAK!", yell = true },
-	{ text = "GREEN WILL RULE!", yell = true },
-	{ text = "ONLY WE ARE TRUE DEMONS!", yell = true },
-	{ text = "RED IS MAD!", yell = true },
-	{ text = "WE RULE!", yell = true },
+	{ text = "DEATH TO THE SHABURAK!", yell = true , i18nKey = "monster.askarak_lord.voice_1"},
+	{ text = "GREEN WILL RULE!", yell = true , i18nKey = "monster.askarak_lord.voice_2"},
+	{ text = "ONLY WE ARE TRUE DEMONS!", yell = true , i18nKey = "monster.askarak_lord.voice_3"},
+	{ text = "RED IS MAD!", yell = true , i18nKey = "monster.askarak_lord.voice_4"},
+	{ text = "WE RULE!", yell = true , i18nKey = "monster.askarak_lord.voice_5"},
 }
 
 monster.loot = {

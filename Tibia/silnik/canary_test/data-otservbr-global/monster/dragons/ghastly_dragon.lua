@@ -73,8 +73,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "EMBRACE MY GIFTS!", yell = true },
-	{ text = "I WILL FEAST ON YOUR SOUL!", yell = true },
+	{ text = "EMBRACE MY GIFTS!", yell = true , i18nKey = "monster.ghastly_dragon.voice_1"},
+	{ text = "I WILL FEAST ON YOUR SOUL!", yell = true , i18nKey = "monster.ghastly_dragon.voice_2"},
 }
 
 monster.loot = {

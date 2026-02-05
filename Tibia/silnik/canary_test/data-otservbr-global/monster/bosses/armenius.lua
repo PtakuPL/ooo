@@ -60,7 +60,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "You know what, I changed my mind. BRING IT!", yell = false },
+	{ text = "You know what, I changed my mind. BRING IT!", yell = false , i18nKey = "monster.armenius.voice_1"},
 }
 
 monster.loot = {

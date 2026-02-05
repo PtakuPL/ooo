@@ -75,13 +75,13 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Dance for me your dance of death!", yell = false },
-	{ text = "Let the music play!", yell = false },
-	{ text = "I will mourn your death!", yell = false },
-	{ text = "Are you ready to rock?", yell = false },
-	{ text = "Feel my gentle kiss of death.", yell = false },
-	{ text = "That's what I call easy listening!", yell = false },
-	{ text = "IIIIEEEeeeeeehhhHHHH!", yell = false },
+	{ text = "Dance for me your dance of death!", yell = false , i18nKey = "monster.banshee.voice_1"},
+	{ text = "Let the music play!", yell = false , i18nKey = "monster.banshee.voice_2"},
+	{ text = "I will mourn your death!", yell = false , i18nKey = "monster.banshee.voice_3"},
+	{ text = "Are you ready to rock?", yell = false , i18nKey = "monster.banshee.voice_4"},
+	{ text = "Feel my gentle kiss of death.", yell = false , i18nKey = "monster.banshee.voice_5"},
+	{ text = "That's what I call easy listening!", yell = false , i18nKey = "monster.banshee.voice_6"},
+	{ text = "IIIIEEEeeeeeehhhHHHH!", yell = false , i18nKey = "monster.banshee.voice_7"},
 }
 
 monster.loot = {

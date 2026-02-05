@@ -72,11 +72,11 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Feel my wrath!", yell = false },
-	{ text = "No one will stop my ascension!", yell = false },
-	{ text = "You desecrated this temple!", yell = false },
-	{ text = "Muahahaha!", yell = false },
-	{ text = "My powers are divine!", yell = false },
+	{ text = "Feel my wrath!", yell = false , i18nKey = "monster.dharalion.voice_6"},
+	{ text = "No one will stop my ascension!", yell = false , i18nKey = "monster.dharalion.voice_7"},
+	{ text = "You desecrated this temple!", yell = false , i18nKey = "monster.dharalion.voice_8"},
+	{ text = "Muahahaha!", yell = false , i18nKey = "monster.dharalion.voice_9"},
+	{ text = "My powers are divine!", yell = false , i18nKey = "monster.dharalion.voice_10"},
 }
 
 monster.loot = {

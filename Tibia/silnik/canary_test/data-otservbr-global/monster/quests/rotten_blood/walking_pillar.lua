@@ -73,7 +73,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "TREEMBLE", yell = false },
+	{ text = "TREEMBLE", yell = false , i18nKey = "monster.walking_pillar.voice_1"},
 }
 
 monster.loot = {

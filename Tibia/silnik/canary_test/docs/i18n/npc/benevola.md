@@ -1,13 +1,10 @@
 # NPC: benevola
 
-**Plik:** `data-otservbr-global/npc/benevola.lua`
-**Data migracji:** 2025-12-11 16:25
-**Liczba tekstów:** 3
+**Plik:** 
+**Data migracji:** 2025-12-21 03:16
+**Liczba tekstów:** 0
 
 ## Klucze i18n
 
 | Klucz | Tekst EN |
 |-------|----------|
-| `npc.benevola.stdmod_1` | Nature is in pain. |
-| `npc.benevola.stdmod_2` | The weather is fine today. |
-| `npc.benevola.stdmod_3` | I can hear the call of the forest. |

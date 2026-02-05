@@ -71,10 +71,10 @@ monster.summon = {}
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "The light... that... drains!", yell = false },
-	{ text = "RAAAR!", yell = false },
-	{ text = "WILL ... PUNISH ... YOU!", yell = false },
-	{ text = "Darkness ... devours!", yell = false },
+	{ text = "The light... that... drains!", yell = false , i18nKey = "monster.vemiath.voice_1"},
+	{ text = "RAAAR!", yell = false , i18nKey = "monster.vemiath.voice_2"},
+	{ text = "WILL ... PUNISH ... YOU!", yell = false , i18nKey = "monster.vemiath.voice_3"},
+	{ text = "Darkness ... devours!", yell = false , i18nKey = "monster.vemiath.voice_4"},
 }
 
 monster.loot = {

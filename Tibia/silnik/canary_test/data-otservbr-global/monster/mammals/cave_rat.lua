@@ -72,8 +72,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Meep!", yell = false },
-	{ text = "Meeeeep!", yell = false },
+	{ text = "Meep!", yell = false , i18nKey = "monster.cave_rat.voice_1"},
+	{ text = "Meeeeep!", yell = false , i18nKey = "monster.cave_rat.voice_2"},
 }
 
 monster.loot = {

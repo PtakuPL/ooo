@@ -70,10 +70,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Outch!", yell = false },
-	{ text = "I must dispose of my masters enemies!", yell = false },
-	{ text = "Oops, I did it again.", yell = false },
-	{ text = "From the spirits that I called Sir, deliver me!", yell = false },
+	{ text = "Outch!", yell = false , i18nKey = "monster.dark_apprentice.voice_1"},
+	{ text = "I must dispose of my masters enemies!", yell = false , i18nKey = "monster.dark_apprentice.voice_2"},
+	{ text = "Oops, I did it again.", yell = false , i18nKey = "monster.dark_apprentice.voice_3"},
+	{ text = "From the spirits that I called Sir, deliver me!", yell = false , i18nKey = "monster.dark_apprentice.voice_4"},
 }
 
 monster.loot = {

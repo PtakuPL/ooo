@@ -60,9 +60,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Flee, coward!", yell = false },
-	{ text = "You will lose!", yell = false },
-	{ text = "Yeehaawh", yell = false },
+	{ text = "Flee, coward!", yell = false , i18nKey = "monster.colerian_the_barbarian.voice_1"},
+	{ text = "You will lose!", yell = false , i18nKey = "monster.colerian_the_barbarian.voice_2"},
+	{ text = "Yeehaawh", yell = false , i18nKey = "monster.colerian_the_barbarian.voice_3"},
 }
 
 monster.loot = {}

@@ -68,10 +68,10 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "You will never get me!", yell = false },
-	{ text = "I'll be back!", yell = false },
-	{ text = "Catch me, if you can!", yell = false },
-	{ text = "Help me, Gang!", yell = false },
+	{ text = "You will never get me!", yell = false , i18nKey = "monster.the_horned_fox.voice_1"},
+	{ text = "I'll be back!", yell = false , i18nKey = "monster.the_horned_fox.voice_2"},
+	{ text = "Catch me, if you can!", yell = false , i18nKey = "monster.the_horned_fox.voice_3"},
+	{ text = "Help me, Gang!", yell = false , i18nKey = "monster.the_horned_fox.voice_4"},
 }
 
 monster.loot = {

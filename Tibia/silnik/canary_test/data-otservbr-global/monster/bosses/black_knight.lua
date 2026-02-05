@@ -68,11 +68,11 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "NO PRISONERS!", yell = true },
-	{ text = "By Bolg's blood!", yell = false },
-	{ text = "You're no match for me!", yell = false },
-	{ text = "NO MERCY!", yell = true },
-	{ text = "MINE!", yell = true },
+	{ text = "NO PRISONERS!", yell = true , i18nKey = "monster.black_knight.voice_1"},
+	{ text = "By Bolg's blood!", yell = false , i18nKey = "monster.black_knight.voice_2"},
+	{ text = "You're no match for me!", yell = false , i18nKey = "monster.black_knight.voice_3"},
+	{ text = "NO MERCY!", yell = true , i18nKey = "monster.black_knight.voice_4"},
+	{ text = "MINE!", yell = true , i18nKey = "monster.black_knight.voice_5"},
 }
 
 monster.loot = {

@@ -73,8 +73,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Zzing!", yell = false },
-	{ text = "Frizzle!", yell = false },
+	{ text = "Zzing!", yell = false , i18nKey = "monster.instable_sparkion.voice_1"},
+	{ text = "Frizzle!", yell = false , i18nKey = "monster.instable_sparkion.voice_2"},
 }
 
 monster.loot = {

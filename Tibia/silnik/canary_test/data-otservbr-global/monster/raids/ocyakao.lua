@@ -62,12 +62,12 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Chikuva!", yell = false },
-	{ text = "Jinuma jamjam!", yell = false },
-	{ text = "Grrrr! Kisavuta!", yell = false },
-	{ text = "Suvituka siq chuqua!", yell = false },
-	{ text = "Kiyosa sipaju!", yell = false },
-	{ text = "Aiiee!", yell = false },
+	{ text = "Chikuva!", yell = false , i18nKey = "monster.ocyakao.voice_1"},
+	{ text = "Jinuma jamjam!", yell = false , i18nKey = "monster.ocyakao.voice_2"},
+	{ text = "Grrrr! Kisavuta!", yell = false , i18nKey = "monster.ocyakao.voice_3"},
+	{ text = "Suvituka siq chuqua!", yell = false , i18nKey = "monster.ocyakao.voice_4"},
+	{ text = "Kiyosa sipaju!", yell = false , i18nKey = "monster.ocyakao.voice_5"},
+	{ text = "Aiiee!", yell = false , i18nKey = "monster.ocyakao.voice_6"},
 }
 
 monster.loot = {

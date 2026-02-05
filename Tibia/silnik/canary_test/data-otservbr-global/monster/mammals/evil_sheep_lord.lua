@@ -78,9 +78,9 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "You can COUNT on us!", yell = false },
-	{ text = "Maeh!", yell = false },
-	{ text = "I feel you're getting sleepy! Maeh!", yell = false },
+	{ text = "You can COUNT on us!", yell = false , i18nKey = "monster.evil_sheep_lord.voice_1"},
+	{ text = "Maeh!", yell = false , i18nKey = "monster.evil_sheep_lord.voice_2"},
+	{ text = "I feel you're getting sleepy! Maeh!", yell = false , i18nKey = "monster.evil_sheep_lord.voice_3"},
 }
 
 monster.loot = {

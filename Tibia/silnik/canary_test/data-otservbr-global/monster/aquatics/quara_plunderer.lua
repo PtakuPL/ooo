@@ -70,9 +70,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Tssssh!!!", yell = false },
-	{ text = "BLUP! BLUP!", yell = false },
-	{ text = "Burp!", yell = false },
+	{ text = "Tssssh!!!", yell = false , i18nKey = "monster.quara_plunderer.voice_1"},
+	{ text = "BLUP! BLUP!", yell = false , i18nKey = "monster.quara_plunderer.voice_2"},
+	{ text = "Burp!", yell = false , i18nKey = "monster.quara_plunderer.voice_3"},
 }
 
 monster.loot = {

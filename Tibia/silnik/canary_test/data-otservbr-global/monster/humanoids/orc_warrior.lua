@@ -72,9 +72,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Alk!", yell = false },
-	{ text = "Trak grrrr brik.", yell = false },
-	{ text = "Grow truk grrrr.", yell = false },
+	{ text = "Alk!", yell = false , i18nKey = "monster.orc_warrior.voice_1"},
+	{ text = "Trak grrrr brik.", yell = false , i18nKey = "monster.orc_warrior.voice_2"},
+	{ text = "Grow truk grrrr.", yell = false , i18nKey = "monster.orc_warrior.voice_3"},
 }
 
 monster.loot = {

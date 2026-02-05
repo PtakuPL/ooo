@@ -70,7 +70,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Chrrrrrk! Chrrrk!", yell = false },
+	{ text = "Chrrrrrk! Chrrrk!", yell = false , i18nKey = "monster.melting_frozen_horror.voice_1"},
 }
 
 monster.loot = {

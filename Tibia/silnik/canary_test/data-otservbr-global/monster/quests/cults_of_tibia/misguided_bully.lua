@@ -77,9 +77,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Found one!", yell = false },
-	{ text = "You shall be guided.", yell = false },
-	{ text = "Fortune brought you here, now let us lead you.", yell = false },
+	{ text = "Found one!", yell = false , i18nKey = "monster.misguided_bully.voice_1"},
+	{ text = "You shall be guided.", yell = false , i18nKey = "monster.misguided_bully.voice_2"},
+	{ text = "Fortune brought you here, now let us lead you.", yell = false , i18nKey = "monster.misguided_bully.voice_3"},
 }
 
 monster.loot = {

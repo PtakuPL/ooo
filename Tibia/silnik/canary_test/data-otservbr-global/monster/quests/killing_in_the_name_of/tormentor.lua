@@ -60,10 +60,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Take a ride with me.", yell = false },
-	{ text = "Pffffrrrrrrrrrrrr.", yell = false },
-	{ text = "Close your eyes... I have something for you.", yell = false },
-	{ text = "I will make you scream.", yell = false },
+	{ text = "Take a ride with me.", yell = false , i18nKey = "monster.tormentor.voice_1"},
+	{ text = "Pffffrrrrrrrrrrrr.", yell = false , i18nKey = "monster.tormentor.voice_2"},
+	{ text = "Close your eyes... I have something for you.", yell = false , i18nKey = "monster.tormentor.voice_3"},
+	{ text = "I will make you scream.", yell = false , i18nKey = "monster.tormentor.voice_4"},
 }
 
 monster.loot = {

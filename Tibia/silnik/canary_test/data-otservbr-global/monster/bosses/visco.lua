@@ -60,8 +60,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I'm Zulazza, and you won't forget me that fazzt.", yell = false },
-	{ text = "Oh, HE will take revenge on zzizz azzault when you zztep in front of HIZZ fazze!", yell = false },
+	{ text = "I'm Zulazza, and you won't forget me that fazzt.", yell = false , i18nKey = "monster.visco.voice_1"},
+	{ text = "Oh, HE will take revenge on zzizz azzault when you zztep in front of HIZZ fazze!", yell = false , i18nKey = "monster.visco.voice_2"},
 }
 
 monster.loot = {

@@ -70,10 +70,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "You are no match for me!", yell = false },
-	{ text = "Feel my prowess.", yell = false },
-	{ text = "Fight!", yell = false },
-	{ text = "Take this!", yell = false },
+	{ text = "You are no match for me!", yell = false , i18nKey = "monster.gladiator.voice_1"},
+	{ text = "Feel my prowess.", yell = false , i18nKey = "monster.gladiator.voice_2"},
+	{ text = "Fight!", yell = false , i18nKey = "monster.gladiator.voice_3"},
+	{ text = "Take this!", yell = false , i18nKey = "monster.gladiator.voice_4"},
 }
 
 monster.loot = {

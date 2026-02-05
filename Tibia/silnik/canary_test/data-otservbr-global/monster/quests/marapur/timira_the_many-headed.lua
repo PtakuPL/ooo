@@ -54,9 +54,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Harmony is just a vain illusion! ", yell = false },
-	{ text = " I'm ashamed of my former self! ", yell = false },
-	{ text = " You won't lead me astray!", yell = false },
+	{ text = "Harmony is just a vain illusion! ", yell = false , i18nKey = "monster.timira_the_many_headed.voice_1"},
+	{ text = " I'm ashamed of my former self! ", yell = false , i18nKey = "monster.timira_the_many_headed.voice_2"},
+	{ text = " You won't lead me astray!", yell = false , i18nKey = "monster.timira_the_many_headed.voice_3"},
 }
 
 monster.loot = {

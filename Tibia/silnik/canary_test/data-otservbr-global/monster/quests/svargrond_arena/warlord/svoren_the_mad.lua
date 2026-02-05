@@ -60,12 +60,12 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "No mommy NO, Leave me alone!", yell = false },
-	{ text = "Not that tower again!", yell = false },
-	{ text = "The cat has grown some horns!", yell = false },
-	{ text = "What was I doing here again?", yell = false },
-	{ text = "Are we there soon mommy?", yell = false },
-	{ text = "Ah madness I embrace you!", yell = false },
+	{ text = "No mommy NO, Leave me alone!", yell = false , i18nKey = "monster.svoren_the_mad.voice_1"},
+	{ text = "Not that tower again!", yell = false , i18nKey = "monster.svoren_the_mad.voice_2"},
+	{ text = "The cat has grown some horns!", yell = false , i18nKey = "monster.svoren_the_mad.voice_3"},
+	{ text = "What was I doing here again?", yell = false , i18nKey = "monster.svoren_the_mad.voice_4"},
+	{ text = "Are we there soon mommy?", yell = false , i18nKey = "monster.svoren_the_mad.voice_5"},
+	{ text = "Ah madness I embrace you!", yell = false , i18nKey = "monster.svoren_the_mad.voice_6"},
 }
 
 monster.loot = {}

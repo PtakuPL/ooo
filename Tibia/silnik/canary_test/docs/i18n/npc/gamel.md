@@ -1,7 +1,7 @@
 # NPC: gamel
 
-**Plik:** `data-otservbr-global/npc/gamel.lua`
-**Data migracji:** 2025-12-17 01:35
+**Plik:** 
+**Data migracji:** 2025-12-21 11:12
 **Liczba tekstów:** 0
 
 ## Klucze i18n

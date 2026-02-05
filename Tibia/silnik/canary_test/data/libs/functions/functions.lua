@@ -272,7 +272,7 @@ function clearForgotten(fromPosition, toPosition, exitPosition, storage)
 						if creature:isPlayer() then
 							creature:teleportTo(exitPosition)
 							exitPosition:sendMagicEffect(CONST_ME_TELEPORT)
-							creature:say("Time out! You were teleported out by strange forces.", TALKTYPE_MONSTER_SAY)
+							creature:sayLocalized("lib.functions.say_1", TALKTYPE_MONSTER_SAY)
 						elseif creature:isMonster() then
 							creature:remove()
 						end
@@ -313,7 +313,7 @@ function resetFerumbrasAscendantHabitats()
 		if spec:isPlayer() then
 			spec:teleportTo(Position(33630, 32648, 12))
 			spec:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-			spec:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You were teleported because the habitats are returning to their original form.")
+			spec:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "lib.functions.msg_1")
 		elseif spec:isMonster() then
 			spec:remove()
 		end

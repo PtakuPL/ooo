@@ -72,12 +72,12 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "YOU BETTER DIE TO MY MINIONS BECAUSE YOU'LL WISH YOU DID IF I COME FOR YOU!", yell = true },
-	{ text = "DESTROY THE INFIDELS", yell = true },
-	{ text = "You are mine!", yell = false },
-	{ text = "I will make you all pay!", yell = false },
-	{ text = "No one will stop my plans!", yell = false },
-	{ text = "You are responsible for this!", yell = false },
+	{ text = "YOU BETTER DIE TO MY MINIONS BECAUSE YOU'LL WISH YOU DID IF I COME FOR YOU!", yell = true , i18nKey = "monster.yakchal.voice_1"},
+	{ text = "DESTROY THE INFIDELS", yell = true , i18nKey = "monster.yakchal.voice_2"},
+	{ text = "You are mine!", yell = false , i18nKey = "monster.yakchal.voice_3"},
+	{ text = "I will make you all pay!", yell = false , i18nKey = "monster.yakchal.voice_4"},
+	{ text = "No one will stop my plans!", yell = false , i18nKey = "monster.yakchal.voice_5"},
+	{ text = "You are responsible for this!", yell = false , i18nKey = "monster.yakchal.voice_6"},
 }
 
 monster.loot = {

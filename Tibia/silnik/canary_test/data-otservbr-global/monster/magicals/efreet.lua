@@ -80,11 +80,11 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I grant you a deathwish!", yell = false },
-	{ text = "I wish you a merry trip to hell!", yell = false },
-	{ text = "Good wishes are for fairytales", yell = false },
-	{ text = "Muhahahaha!", yell = false },
-	{ text = "Tell me your last wish!", yell = false },
+	{ text = "I grant you a deathwish!", yell = false , i18nKey = "monster.efreet.voice_1"},
+	{ text = "I wish you a merry trip to hell!", yell = false , i18nKey = "monster.efreet.voice_2"},
+	{ text = "Good wishes are for fairytales", yell = false , i18nKey = "monster.efreet.voice_3"},
+	{ text = "Muhahahaha!", yell = false , i18nKey = "monster.efreet.voice_4"},
+	{ text = "Tell me your last wish!", yell = false , i18nKey = "monster.efreet.voice_5"},
 }
 
 monster.loot = {

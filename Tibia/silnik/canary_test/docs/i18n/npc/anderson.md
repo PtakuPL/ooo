@@ -1,12 +1,11 @@
 # NPC: anderson
 
-**Plik:** `data-otservbr-global/npc/anderson.lua`
-**Data migracji:** 2025-12-17 00:52
-**Liczba tekstów:** 2
+**Plik:** 
+**Data migracji:** 2025-12-21 03:04
+**Liczba tekstów:** 1
 
 ## Klucze i18n
 
 | Klucz | Tekst EN |
 |-------|----------|
-| `npc.anderson.stdmod_1` | Passages to Tibia, Folda and Vega. |
-| `npc.anderson.stdmod_2` | Have a nice trip! |
+|  | Have a nice trip! |

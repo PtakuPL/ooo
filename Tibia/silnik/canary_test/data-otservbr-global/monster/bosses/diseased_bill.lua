@@ -69,10 +69,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "People like you are the plague and I'll be the cure!", yell = false },
-	{ text = "You all will pay for not helping me!", yell = false },
-	{ text = "Cough! Cough!", yell = false },
-	{ text = "Desolate! Everything is so desolate!", yell = false },
+	{ text = "People like you are the plague and I'll be the cure!", yell = false , i18nKey = "monster.diseased_bill.voice_1"},
+	{ text = "You all will pay for not helping me!", yell = false , i18nKey = "monster.diseased_bill.voice_2"},
+	{ text = "Cough! Cough!", yell = false , i18nKey = "monster.diseased_bill.voice_3"},
+	{ text = "Desolate! Everything is so desolate!", yell = false , i18nKey = "monster.diseased_bill.voice_4"},
 }
 
 monster.loot = {

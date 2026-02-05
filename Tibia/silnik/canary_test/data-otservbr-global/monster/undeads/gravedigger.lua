@@ -74,9 +74,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "High Five!", yell = false },
-	{ text = "scrabble", yell = false },
-	{ text = "Put it there!", yell = false },
+	{ text = "High Five!", yell = false , i18nKey = "monster.gravedigger.voice_1"},
+	{ text = "scrabble", yell = false , i18nKey = "monster.gravedigger.voice_2"},
+	{ text = "Put it there!", yell = false , i18nKey = "monster.gravedigger.voice_3"},
 }
 
 monster.loot = {

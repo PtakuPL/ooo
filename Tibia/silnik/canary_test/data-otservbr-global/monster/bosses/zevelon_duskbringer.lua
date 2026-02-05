@@ -72,13 +72,13 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I want Your Blood", yell = false },
-	{ text = "Come Here!", yell = false },
-	{ text = "I will be still around when my 'noble' race is gone.", yell = false },
-	{ text = "Human blood is not suitable for drinking!", yell = false },
-	{ text = "Human blood is a hardly suitable drink.", yell = false },
-	{ text = "Your short live is coming to an end.", yell = false },
-	{ text = "Ashari Mortals. Come and stay forever!", yell = false },
+	{ text = "I want Your Blood", yell = false , i18nKey = "monster.zevelon_duskbringer.voice_1"},
+	{ text = "Come Here!", yell = false , i18nKey = "monster.zevelon_duskbringer.voice_2"},
+	{ text = "I will be still around when my 'noble' race is gone.", yell = false , i18nKey = "monster.zevelon_duskbringer.voice_3"},
+	{ text = "Human blood is not suitable for drinking!", yell = false , i18nKey = "monster.zevelon_duskbringer.voice_4"},
+	{ text = "Human blood is a hardly suitable drink.", yell = false , i18nKey = "monster.zevelon_duskbringer.voice_5"},
+	{ text = "Your short live is coming to an end.", yell = false , i18nKey = "monster.zevelon_duskbringer.voice_6"},
+	{ text = "Ashari Mortals. Come and stay forever!", yell = false , i18nKey = "monster.zevelon_duskbringer.voice_7"},
 }
 
 monster.loot = {

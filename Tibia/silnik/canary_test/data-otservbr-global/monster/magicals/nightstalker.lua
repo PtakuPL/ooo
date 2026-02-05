@@ -73,12 +73,12 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "The sunlight is so depressing.", yell = false },
-	{ text = "Come with me, my child.", yell = false },
-	{ text = "I've been in the shadow under your bed last night.", yell = false },
-	{ text = "You never know what hides in the night.", yell = false },
-	{ text = "I remember your face - and I know where you sleep.", yell = false },
-	{ text = "Only the sweetest and cruelest dreams for you, my love.", yell = false },
+	{ text = "The sunlight is so depressing.", yell = false , i18nKey = "monster.nightstalker.voice_1"},
+	{ text = "Come with me, my child.", yell = false , i18nKey = "monster.nightstalker.voice_2"},
+	{ text = "I've been in the shadow under your bed last night.", yell = false , i18nKey = "monster.nightstalker.voice_3"},
+	{ text = "You never know what hides in the night.", yell = false , i18nKey = "monster.nightstalker.voice_4"},
+	{ text = "I remember your face - and I know where you sleep.", yell = false , i18nKey = "monster.nightstalker.voice_5"},
+	{ text = "Only the sweetest and cruelest dreams for you, my love.", yell = false , i18nKey = "monster.nightstalker.voice_6"},
 }
 
 monster.loot = {

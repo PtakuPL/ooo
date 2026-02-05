@@ -77,10 +77,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Mwaaahgod! Overmwaaaaah! *gurgle*", yell = false },
-	{ text = "Mwaaaahnducate youuuuuu *gurgle*, mwaaah!", yell = false },
-	{ text = "MMMWAHMWAHMWAHMWAAAAH!", yell = true },
-	{ text = "Mmmwhamwhamwhah, mwaaah!", yell = false },
+	{ text = "Mwaaahgod! Overmwaaaaah! *gurgle*", yell = false , i18nKey = "monster.weakened_frazzlemaw.voice_1"},
+	{ text = "Mwaaaahnducate youuuuuu *gurgle*, mwaaah!", yell = false , i18nKey = "monster.weakened_frazzlemaw.voice_2"},
+	{ text = "MMMWAHMWAHMWAHMWAAAAH!", yell = true , i18nKey = "monster.weakened_frazzlemaw.voice_3"},
+	{ text = "Mmmwhamwhamwhah, mwaaah!", yell = false , i18nKey = "monster.weakened_frazzlemaw.voice_4"},
 }
 
 monster.loot = {

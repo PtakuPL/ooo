@@ -77,7 +77,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Bow to the power of the iron bull!", yell = false },
+	{ text = "Bow to the power of the iron bull!", yell = false , i18nKey = "monster.minotaur_cult_prophet.voice_1"},
 }
 
 monster.loot = {

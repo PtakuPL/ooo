@@ -72,9 +72,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "You are on my deathlist!", yell = false },
-	{ text = "Die!", yell = false },
-	{ text = "Feel the hand of death!", yell = false },
+	{ text = "You are on my deathlist!", yell = false , i18nKey = "monster.assassin.voice_1"},
+	{ text = "Die!", yell = false , i18nKey = "monster.assassin.voice_2"},
+	{ text = "Feel the hand of death!", yell = false , i18nKey = "monster.assassin.voice_3"},
 }
 
 monster.loot = {

@@ -69,7 +69,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "How can you be that dumb?", yell = false },
+	{ text = "How can you be that dumb?", yell = false , i18nKey = "monster.wisdom_of_urmahlullu.voice_1"},
 }
 
 monster.loot = {}

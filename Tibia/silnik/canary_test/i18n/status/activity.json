@@ -1,118 +1,118 @@
 {
-  "category": "lt",
-  "cycle": 615,
+  "category": "pending_skip",
+  "cycle": 2,
   "eta_seconds": 0,
   "file": "-",
-  "generated_at_utc": "2025-12-17T10:03:04Z",
-  "message": "cycle end",
-  "phase": "AUTO_TRANSLATE",
+  "generated_at_utc": "2025-12-21T14:58:35Z",
+  "message": "all categories skipped",
+  "phase": "MIGRATION",
   "progress": {
     "done": 0,
     "total": 0,
-    "unit": "units"
+    "unit": "files"
   },
   "recent": [
     {
       "action": "update",
-      "category": "lt",
-      "cycle": 615,
-      "file": "spells.json",
-      "phase": "AUTO_TRANSLATE",
+      "category": "npc",
+      "cycle": 854,
+      "file": "data-otservbr-global/npc/guard_inurta.lua",
+      "phase": "MIGRATION",
       "result": "ok",
-      "stage": "auto_done",
-      "t": "2025-12-17T10:03:04Z"
+      "stage": "file",
+      "t": "2025-12-21T14:14:35Z"
     },
     {
       "action": "update",
-      "category": "lt",
-      "cycle": 615,
-      "file": "spells.json",
-      "phase": "AUTO_TRANSLATE",
+      "category": "npc",
+      "cycle": 854,
+      "file": "data-otservbr-global/npc/guardian_of_the_deep_seas.lua",
+      "phase": "MIGRATION",
       "result": "ok",
-      "stage": "auto_start",
-      "t": "2025-12-17T10:03:03Z"
+      "stage": "file",
+      "t": "2025-12-21T14:14:30Z"
     },
     {
       "action": "update",
-      "category": "lt",
-      "cycle": 614,
-      "file": "server.json",
-      "phase": "AUTO_TRANSLATE",
+      "category": "npc",
+      "cycle": 854,
+      "file": "data-otservbr-global/npc/guard_bazaya.lua",
+      "phase": "MIGRATION",
       "result": "ok",
-      "stage": "auto_done",
-      "t": "2025-12-17T10:02:53Z"
+      "stage": "file",
+      "t": "2025-12-21T14:14:29Z"
     },
     {
       "action": "update",
-      "category": "lt",
-      "cycle": 614,
-      "file": "server.json",
-      "phase": "AUTO_TRANSLATE",
+      "category": "npc",
+      "cycle": 854,
+      "file": "data-otservbr-global/npc/grumpy_stone.lua",
+      "phase": "MIGRATION",
       "result": "ok",
-      "stage": "auto_start",
-      "t": "2025-12-17T10:02:53Z"
+      "stage": "file",
+      "t": "2025-12-21T14:14:27Z"
     },
     {
       "action": "update",
-      "category": "lt",
-      "cycle": 613,
-      "file": "scripts.json",
-      "phase": "AUTO_TRANSLATE",
+      "category": "npc",
+      "cycle": 854,
+      "file": "data-otservbr-global/npc/grubokk.lua",
+      "phase": "MIGRATION",
       "result": "ok",
-      "stage": "auto_done",
-      "t": "2025-12-17T10:02:42Z"
+      "stage": "file",
+      "t": "2025-12-21T14:14:25Z"
     },
     {
       "action": "update",
-      "category": "lt",
-      "cycle": 613,
-      "file": "scripts.json",
-      "phase": "AUTO_TRANSLATE",
+      "category": "npc",
+      "cycle": 854,
+      "file": "data-otservbr-global/npc/grombur.lua",
+      "phase": "MIGRATION",
       "result": "ok",
-      "stage": "auto_start",
-      "t": "2025-12-17T10:02:42Z"
+      "stage": "file",
+      "t": "2025-12-21T14:14:24Z"
     },
     {
       "action": "update",
-      "category": "lt",
-      "cycle": 612,
-      "file": "raids.json",
-      "phase": "AUTO_TRANSLATE",
+      "category": "npc",
+      "cycle": 854,
+      "file": "data-otservbr-global/npc/grof_the_guard.lua",
+      "phase": "MIGRATION",
       "result": "ok",
-      "stage": "auto_done",
-      "t": "2025-12-17T10:02:32Z"
+      "stage": "file",
+      "t": "2025-12-21T14:14:23Z"
     },
     {
       "action": "update",
-      "category": "lt",
-      "cycle": 612,
-      "file": "raids.json",
-      "phase": "AUTO_TRANSLATE",
+      "category": "npc",
+      "cycle": 854,
+      "file": "data-otservbr-global/npc/grodrik.lua",
+      "phase": "MIGRATION",
       "result": "ok",
-      "stage": "auto_start",
-      "t": "2025-12-17T10:02:31Z"
+      "stage": "file",
+      "t": "2025-12-21T14:14:21Z"
     },
     {
       "action": "update",
-      "category": "lt",
-      "cycle": 611,
-      "file": "quests.json",
-      "phase": "AUTO_TRANSLATE",
+      "category": "npc",
+      "cycle": 854,
+      "file": "data-otservbr-global/npc/gregor.lua",
+      "phase": "MIGRATION",
       "result": "ok",
-      "stage": "auto_done",
-      "t": "2025-12-17T10:02:21Z"
+      "stage": "file",
+      "t": "2025-12-21T14:14:19Z"
     },
     {
       "action": "update",
-      "category": "lt",
-      "cycle": 611,
-      "file": "quests.json",
-      "phase": "AUTO_TRANSLATE",
+      "category": "npc",
+      "cycle": 854,
+      "file": "data-otservbr-global/npc/gree_dee.lua",
+      "phase": "MIGRATION",
       "result": "ok",
-      "stage": "auto_start",
-      "t": "2025-12-17T10:02:21Z"
+      "stage": "file",
+      "t": "2025-12-21T14:14:18Z"
     }
   ],
-  "stage": "cycle_end",
+  "stage": "pending_skip",
   "status": "running"
 }

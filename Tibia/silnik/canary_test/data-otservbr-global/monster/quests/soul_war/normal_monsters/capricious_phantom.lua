@@ -77,10 +77,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I hope you can't swim.", yell = false },
-	{ text = "Troubled Water. Troubled you!", yell = false },
-	{ text = "You should shiver!", yell = false },
-	{ text = "You will leak blood.", yell = false },
+	{ text = "I hope you can't swim.", yell = false , i18nKey = "monster.capricious_phantom.voice_1"},
+	{ text = "Troubled Water. Troubled you!", yell = false , i18nKey = "monster.capricious_phantom.voice_2"},
+	{ text = "You should shiver!", yell = false , i18nKey = "monster.capricious_phantom.voice_3"},
+	{ text = "You will leak blood.", yell = false , i18nKey = "monster.capricious_phantom.voice_4"},
 }
 
 monster.loot = {

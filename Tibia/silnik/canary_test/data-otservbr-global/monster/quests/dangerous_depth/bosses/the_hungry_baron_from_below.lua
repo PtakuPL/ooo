@@ -60,7 +60,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Krrrk!", yell = false },
+	{ text = "Krrrk!", yell = false , i18nKey = "monster.the_hungry_baron_from_below.voice_1"},
 }
 
 monster.loot = {}

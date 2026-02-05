@@ -64,7 +64,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Yooooouuuuu...", yell = false },
+	{ text = "Yooooouuuuu...", yell = false , i18nKey = "monster.misguided_shadow.voice_1"},
 }
 
 monster.loot = {

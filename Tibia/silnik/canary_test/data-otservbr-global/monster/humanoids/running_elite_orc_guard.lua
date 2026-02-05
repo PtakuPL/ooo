@@ -57,7 +57,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "UAAAAH FETCHI!", yell = false },
+	{ text = "UAAAAH FETCHI!", yell = false , i18nKey = "monster.running_elite_orc_guard.voice_1"},
 }
 
 monster.loot = {}

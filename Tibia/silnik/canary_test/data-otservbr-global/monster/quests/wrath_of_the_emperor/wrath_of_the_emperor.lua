@@ -71,10 +71,10 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "YOU DON'T EVEN UNDERSTAND WHOM YOU ARE SERVING!", yell = true },
-	{ text = "FLEE AND NEVER RETURN!", yell = true },
-	{ text = "YOU HAVE BEEN USED AND FOOLED!", yell = true },
-	{ text = "I WILL STOP YOU ONCE AND FOR ALL!", yell = true },
+	{ text = "YOU DON'T EVEN UNDERSTAND WHOM YOU ARE SERVING!", yell = true , i18nKey = "monster.wrath_of_the_emperor.voice_1"},
+	{ text = "FLEE AND NEVER RETURN!", yell = true , i18nKey = "monster.wrath_of_the_emperor.voice_2"},
+	{ text = "YOU HAVE BEEN USED AND FOOLED!", yell = true , i18nKey = "monster.wrath_of_the_emperor.voice_3"},
+	{ text = "I WILL STOP YOU ONCE AND FOR ALL!", yell = true , i18nKey = "monster.wrath_of_the_emperor.voice_4"},
 }
 
 monster.loot = {}

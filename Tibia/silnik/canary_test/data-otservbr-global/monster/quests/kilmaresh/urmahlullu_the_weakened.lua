@@ -65,8 +65,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "You will regret this!", yell = false },
-	{ text = "Now you have to die!", yell = false },
+	{ text = "You will regret this!", yell = false , i18nKey = "monster.urmahlullu_the_weakened.voice_1"},
+	{ text = "Now you have to die!", yell = false , i18nKey = "monster.urmahlullu_the_weakened.voice_2"},
 }
 
 monster.loot = {

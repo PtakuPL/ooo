@@ -70,10 +70,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Quisavu tukavi!", yell = false },
-	{ text = "Si siyoqua jamjam!", yell = false },
-	{ text = "Achuq! jinuma!", yell = false },
-	{ text = "Si ji jusipa!", yell = false },
+	{ text = "Quisavu tukavi!", yell = false , i18nKey = "monster.chakoya_tribewarden.voice_1"},
+	{ text = "Si siyoqua jamjam!", yell = false , i18nKey = "monster.chakoya_tribewarden.voice_2"},
+	{ text = "Achuq! jinuma!", yell = false , i18nKey = "monster.chakoya_tribewarden.voice_3"},
+	{ text = "Si ji jusipa!", yell = false , i18nKey = "monster.chakoya_tribewarden.voice_4"},
 }
 
 monster.loot = {

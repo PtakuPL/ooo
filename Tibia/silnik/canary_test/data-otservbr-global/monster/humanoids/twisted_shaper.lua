@@ -73,7 +73,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Ti Jezz Kur Tar!", yell = false },
+	{ text = "Ti Jezz Kur Tar!", yell = false , i18nKey = "monster.twisted_shaper.voice_1"},
 }
 
 monster.loot = {

@@ -60,9 +60,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Puny warmblood.", yell = false },
-	{ text = "You will pay for imprisoning me here.", yell = false },
-	{ text = "You're not cool.", yell = false },
+	{ text = "Puny warmblood.", yell = false , i18nKey = "monster.avalanche.voice_1"},
+	{ text = "You will pay for imprisoning me here.", yell = false , i18nKey = "monster.avalanche.voice_2"},
+	{ text = "You're not cool.", yell = false , i18nKey = "monster.avalanche.voice_3"},
 }
 
 monster.loot = {}

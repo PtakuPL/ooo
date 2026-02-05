@@ -62,10 +62,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Come on, you don't really need this. Just let me go.", yell = false },
-	{ text = "Let us leave safely and maybe we'll give you a few coins.", yell = false },
-	{ text = "That cowardish dwarven bank keeper ran when he saw the three of us.", yell = false },
-	{ text = "You humans have enough to spare. We live in poverty.", yell = false },
+	{ text = "Come on, you don't really need this. Just let me go.", yell = false , i18nKey = "monster.mornenion.voice_1"},
+	{ text = "Let us leave safely and maybe we'll give you a few coins.", yell = false , i18nKey = "monster.mornenion.voice_2"},
+	{ text = "That cowardish dwarven bank keeper ran when he saw the three of us.", yell = false , i18nKey = "monster.mornenion.voice_3"},
+	{ text = "You humans have enough to spare. We live in poverty.", yell = false , i18nKey = "monster.mornenion.voice_4"},
 }
 
 monster.loot = {

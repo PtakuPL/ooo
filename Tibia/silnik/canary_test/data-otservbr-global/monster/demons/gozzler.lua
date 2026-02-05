@@ -73,11 +73,11 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Huhuhuhuuu!", yell = false },
-	{ text = "Let the fun begin!", yell = false },
-	{ text = "Yihahaha!", yell = false },
-	{ text = "I'll bite you! Nyehehehe!", yell = false },
-	{ text = "Nyarnyarnyarnyar.", yell = false },
+	{ text = "Huhuhuhuuu!", yell = false , i18nKey = "monster.gozzler.voice_1"},
+	{ text = "Let the fun begin!", yell = false , i18nKey = "monster.gozzler.voice_2"},
+	{ text = "Yihahaha!", yell = false , i18nKey = "monster.gozzler.voice_3"},
+	{ text = "I'll bite you! Nyehehehe!", yell = false , i18nKey = "monster.gozzler.voice_4"},
+	{ text = "Nyarnyarnyarnyar.", yell = false , i18nKey = "monster.gozzler.voice_5"},
 }
 
 monster.loot = {

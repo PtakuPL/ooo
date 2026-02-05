@@ -71,11 +71,11 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Hmmm, turtles", yell = false },
-	{ text = "Hmmm, dogs", yell = false },
-	{ text = "Hmmm, worms", yell = false },
-	{ text = "Groar", yell = false },
-	{ text = "Gruntz!", yell = false },
+	{ text = "Hmmm, turtles", yell = false , i18nKey = "monster.island_troll.voice_1"},
+	{ text = "Hmmm, dogs", yell = false , i18nKey = "monster.island_troll.voice_2"},
+	{ text = "Hmmm, worms", yell = false , i18nKey = "monster.island_troll.voice_3"},
+	{ text = "Groar", yell = false , i18nKey = "monster.island_troll.voice_4"},
+	{ text = "Gruntz!", yell = false , i18nKey = "monster.island_troll.voice_5"},
 }
 
 monster.loot = {

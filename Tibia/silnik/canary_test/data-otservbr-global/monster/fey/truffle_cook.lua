@@ -71,9 +71,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "You have to taste my latest creation!", yell = false },
-	{ text = "Please stand still and try my newest creation.", yell = false },
-	{ text = "Delicious!", yell = false },
+	{ text = "You have to taste my latest creation!", yell = false , i18nKey = "monster.truffle_cook.voice_1"},
+	{ text = "Please stand still and try my newest creation.", yell = false , i18nKey = "monster.truffle_cook.voice_2"},
+	{ text = "Delicious!", yell = false , i18nKey = "monster.truffle_cook.voice_3"},
 }
 
 monster.loot = {}

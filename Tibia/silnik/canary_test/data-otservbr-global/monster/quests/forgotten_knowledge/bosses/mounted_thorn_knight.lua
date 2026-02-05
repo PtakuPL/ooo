@@ -65,7 +65,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I'm the hunter and you are my prey!", yell = false },
+	{ text = "I'm the hunter and you are my prey!", yell = false , i18nKey = "monster.mounted_thorn_knight.voice_1"},
 }
 
 monster.loot = {}

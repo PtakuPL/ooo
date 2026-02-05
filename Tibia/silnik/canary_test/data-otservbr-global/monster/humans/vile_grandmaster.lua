@@ -73,11 +73,11 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Is that the best, you can throw at me?", yell = false },
-	{ text = "I've seen orcs tougher than you!", yell = false },
-	{ text = "I will end this now!", yell = false },
-	{ text = "Your gods won't help you!", yell = false },
-	{ text = "You'll make a fine trophy!", yell = false },
+	{ text = "Is that the best, you can throw at me?", yell = false , i18nKey = "monster.vile_grandmaster.voice_1"},
+	{ text = "I've seen orcs tougher than you!", yell = false , i18nKey = "monster.vile_grandmaster.voice_2"},
+	{ text = "I will end this now!", yell = false , i18nKey = "monster.vile_grandmaster.voice_3"},
+	{ text = "Your gods won't help you!", yell = false , i18nKey = "monster.vile_grandmaster.voice_4"},
+	{ text = "You'll make a fine trophy!", yell = false , i18nKey = "monster.vile_grandmaster.voice_5"},
 }
 
 monster.loot = {

@@ -71,16 +71,16 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Arrrgh!", yell = false },
-	{ text = "I am the king of the world!", yell = false },
-	{ text = "Die Ferumbras!", yell = false },
-	{ text = "Tigerblood is running through my veins!", yell = false },
-	{ text = "You! It's you again!", yell = false },
-	{ text = "Stand still you tasty morsel!", yell = false },
-	{ text = "<giggle>", yell = false },
-	{ text = "Burn heretic! Burn!", yell = false },
-	{ text = "Harrr!", yell = false },
-	{ text = "This is Venore!", yell = false },
+	{ text = "Arrrgh!", yell = false , i18nKey = "monster.feverish_citizen.voice_1"},
+	{ text = "I am the king of the world!", yell = false , i18nKey = "monster.feverish_citizen.voice_2"},
+	{ text = "Die Ferumbras!", yell = false , i18nKey = "monster.feverish_citizen.voice_3"},
+	{ text = "Tigerblood is running through my veins!", yell = false , i18nKey = "monster.feverish_citizen.voice_4"},
+	{ text = "You! It's you again!", yell = false , i18nKey = "monster.feverish_citizen.voice_5"},
+	{ text = "Stand still you tasty morsel!", yell = false , i18nKey = "monster.feverish_citizen.voice_6"},
+	{ text = "<giggle>", yell = false , i18nKey = "monster.feverish_citizen.voice_7"},
+	{ text = "Burn heretic! Burn!", yell = false , i18nKey = "monster.feverish_citizen.voice_8"},
+	{ text = "Harrr!", yell = false , i18nKey = "monster.feverish_citizen.voice_9"},
+	{ text = "This is Venore!", yell = false , i18nKey = "monster.feverish_citizen.voice_10"},
 }
 
 monster.loot = {

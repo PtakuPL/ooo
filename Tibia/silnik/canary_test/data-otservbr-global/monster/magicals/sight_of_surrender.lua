@@ -75,10 +75,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "BOW LOW!", yell = true },
-	{ text = "FEEL THE TRUE MEANING OF VANQUISH!", yell = true },
-	{ text = "HAHAHAHA DO YOU WANT TO AMUSE YOUR MASTER?", yell = true },
-	{ text = "NOW YOU WILL SURRENDER!", yell = true },
+	{ text = "BOW LOW!", yell = true , i18nKey = "monster.sight_of_surrender.voice_1"},
+	{ text = "FEEL THE TRUE MEANING OF VANQUISH!", yell = true , i18nKey = "monster.sight_of_surrender.voice_2"},
+	{ text = "HAHAHAHA DO YOU WANT TO AMUSE YOUR MASTER?", yell = true , i18nKey = "monster.sight_of_surrender.voice_3"},
+	{ text = "NOW YOU WILL SURRENDER!", yell = true , i18nKey = "monster.sight_of_surrender.voice_4"},
 }
 
 monster.loot = {

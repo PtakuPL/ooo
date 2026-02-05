@@ -73,9 +73,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "COME HERE AND DIE!", yell = false },
-	{ text = "Destructiooooon!", yell = false },
-	{ text = "It's a good day to destroy!", yell = false },
+	{ text = "COME HERE AND DIE!", yell = false , i18nKey = "monster.destroyer.voice_4"},
+	{ text = "Destructiooooon!", yell = false , i18nKey = "monster.destroyer.voice_5"},
+	{ text = "It's a good day to destroy!", yell = false , i18nKey = "monster.destroyer.voice_6"},
 }
 
 monster.loot = {

@@ -60,9 +60,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "STEP A BIT CLOSER, RIGHT THERE, HAHAHA!", yell = true },
-	{ text = "COME AND DIE!", yell = true },
-	{ text = "ROOKIE FOR BREAKFAST", yell = true },
+	{ text = "STEP A BIT CLOSER, RIGHT THERE, HAHAHA!", yell = true , i18nKey = "monster.kraknaknork's_demon.voice_1"},
+	{ text = "COME AND DIE!", yell = true , i18nKey = "monster.kraknaknork's_demon.voice_2"},
+	{ text = "ROOKIE FOR BREAKFAST", yell = true , i18nKey = "monster.kraknaknork's_demon.voice_3"},
 }
 
 monster.loot = {}

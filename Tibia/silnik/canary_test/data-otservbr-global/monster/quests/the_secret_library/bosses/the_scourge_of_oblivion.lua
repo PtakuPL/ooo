@@ -74,8 +74,8 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "The Scourge Of Oblivion prepares a devestating attack!", yell = false },
-	{ text = "The Scourge Of Oblivion activates its reflective shields!", yell = false },
+	{ text = "The Scourge Of Oblivion prepares a devestating attack!", yell = false , i18nKey = "monster.the_scourge_of_oblivion.voice_1"},
+	{ text = "The Scourge Of Oblivion activates its reflective shields!", yell = false , i18nKey = "monster.the_scourge_of_oblivion.voice_2"},
 }
 
 monster.loot = {

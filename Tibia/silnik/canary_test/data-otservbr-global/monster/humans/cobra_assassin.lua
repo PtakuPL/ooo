@@ -70,9 +70,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Hey, maybe you want to strike a deal... no?", yell = false },
-	{ text = "Stand and deliver! Your money... AND your life actually!", yell = false },
-	{ text = "You will not leave this place breathing!", yell = false },
+	{ text = "Hey, maybe you want to strike a deal... no?", yell = false , i18nKey = "monster.cobra_assassin.voice_1"},
+	{ text = "Stand and deliver! Your money... AND your life actually!", yell = false , i18nKey = "monster.cobra_assassin.voice_2"},
+	{ text = "You will not leave this place breathing!", yell = false , i18nKey = "monster.cobra_assassin.voice_3"},
 }
 
 monster.loot = {

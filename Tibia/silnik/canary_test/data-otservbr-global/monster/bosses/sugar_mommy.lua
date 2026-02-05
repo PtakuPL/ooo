@@ -65,7 +65,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "SUGAR!!!", yell = false },
+	{ text = "SUGAR!!!", yell = false , i18nKey = "monster.sugar_mommy.voice_1"},
 }
 
 monster.loot = {

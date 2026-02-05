@@ -72,11 +72,11 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I will make your death look like an accident!", yell = false },
-	{ text = "You should not have interferred with my business!", yell = false },
-	{ text = "Bribes are expensive, murder ist cheap!", yell = false },
-	{ text = "I see some profit in your death!", yell = false },
-	{ text = "I expect you to die!", yell = false },
+	{ text = "I will make your death look like an accident!", yell = false , i18nKey = "monster.smuggler_baron_silvertoe.voice_1"},
+	{ text = "You should not have interferred with my business!", yell = false , i18nKey = "monster.smuggler_baron_silvertoe.voice_2"},
+	{ text = "Bribes are expensive, murder ist cheap!", yell = false , i18nKey = "monster.smuggler_baron_silvertoe.voice_3"},
+	{ text = "I see some profit in your death!", yell = false , i18nKey = "monster.smuggler_baron_silvertoe.voice_4"},
+	{ text = "I expect you to die!", yell = false , i18nKey = "monster.smuggler_baron_silvertoe.voice_5"},
 }
 
 monster.loot = {

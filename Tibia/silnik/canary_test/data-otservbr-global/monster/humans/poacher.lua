@@ -71,9 +71,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "You will not live to tell anyone!", yell = false },
-	{ text = "You are my game today!", yell = false },
-	{ text = "Look what has stepped into my trap!", yell = false },
+	{ text = "You will not live to tell anyone!", yell = false , i18nKey = "monster.poacher.voice_1"},
+	{ text = "You are my game today!", yell = false , i18nKey = "monster.poacher.voice_2"},
+	{ text = "Look what has stepped into my trap!", yell = false , i18nKey = "monster.poacher.voice_3"},
 }
 
 monster.loot = {

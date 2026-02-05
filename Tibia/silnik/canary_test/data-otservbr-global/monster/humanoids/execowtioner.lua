@@ -71,12 +71,12 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I'm the one who puts the cute into execute!", yell = false },
-	{ text = "I'm here to punish!", yell = false },
-	{ text = "Justice is swift and unavoidable!", yell = false },
-	{ text = "I'll bring justice!", yell = false },
-	{ text = "There is excellence in execution!", yell = false },
-	{ text = "Your sentence is death!", yell = false },
+	{ text = "I'm the one who puts the cute into execute!", yell = false , i18nKey = "monster.execowtioner.voice_1"},
+	{ text = "I'm here to punish!", yell = false , i18nKey = "monster.execowtioner.voice_2"},
+	{ text = "Justice is swift and unavoidable!", yell = false , i18nKey = "monster.execowtioner.voice_3"},
+	{ text = "I'll bring justice!", yell = false , i18nKey = "monster.execowtioner.voice_4"},
+	{ text = "There is excellence in execution!", yell = false , i18nKey = "monster.execowtioner.voice_5"},
+	{ text = "Your sentence is death!", yell = false , i18nKey = "monster.execowtioner.voice_6"},
 }
 
 monster.loot = {

@@ -1,7 +1,7 @@
 # NPC: freezhild
 
-**Plik:** `data-otservbr-global/npc/freezhild.lua`
-**Data migracji:** 2025-12-17 00:57
+**Plik:** 
+**Data migracji:** 2025-12-21 09:12
 **Liczba tekstów:** 0
 
 ## Klucze i18n

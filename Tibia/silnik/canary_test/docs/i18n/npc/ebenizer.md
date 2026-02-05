@@ -1,7 +1,7 @@
 # NPC: ebenizer
 
-**Plik:** `data-otservbr-global/npc/ebenizer.lua`
-**Data migracji:** 2025-12-17 00:56
+**Plik:** 
+**Data migracji:** 2025-12-21 07:09
 **Liczba tekstów:** 0
 
 ## Klucze i18n

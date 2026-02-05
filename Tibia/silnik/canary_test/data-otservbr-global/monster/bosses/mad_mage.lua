@@ -72,9 +72,9 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Did it not come to your mind that I placed them here for a reason?", yell = false },
-	{ text = "Now I have to create new servants! Do you want to spread this pest beyond these safe walls?", yell = false },
-	{ text = "What have you done!", yell = false },
+	{ text = "Did it not come to your mind that I placed them here for a reason?", yell = false , i18nKey = "monster.mad_mage.voice_1"},
+	{ text = "Now I have to create new servants! Do you want to spread this pest beyond these safe walls?", yell = false , i18nKey = "monster.mad_mage.voice_2"},
+	{ text = "What have you done!", yell = false , i18nKey = "monster.mad_mage.voice_3"},
 }
 
 monster.loot = {

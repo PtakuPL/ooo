@@ -71,10 +71,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Horestis curse upon you!", yell = false },
-	{ text = "Vengeance!", yell = false },
-	{ text = "Thy punishment is at hand!", yell = false },
-	{ text = "For the pharao!", yell = false },
+	{ text = "Horestis curse upon you!", yell = false , i18nKey = "monster.honour_guard.voice_1"},
+	{ text = "Vengeance!", yell = false , i18nKey = "monster.honour_guard.voice_2"},
+	{ text = "Thy punishment is at hand!", yell = false , i18nKey = "monster.honour_guard.voice_3"},
+	{ text = "For the pharao!", yell = false , i18nKey = "monster.honour_guard.voice_4"},
 }
 
 monster.loot = {

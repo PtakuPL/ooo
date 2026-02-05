@@ -72,10 +72,10 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I might use some parts of you in my next creation!", yell = false },
-	{ text = "You're only a testsubject to me!", yell = false },
-	{ text = "My creations will kill you!", yell = false },
-	{ text = "You can't beat what you can't comprehend!", yell = false },
+	{ text = "I might use some parts of you in my next creation!", yell = false , i18nKey = "monster.doctor_perhaps.voice_1"},
+	{ text = "You're only a testsubject to me!", yell = false , i18nKey = "monster.doctor_perhaps.voice_2"},
+	{ text = "My creations will kill you!", yell = false , i18nKey = "monster.doctor_perhaps.voice_3"},
+	{ text = "You can't beat what you can't comprehend!", yell = false , i18nKey = "monster.doctor_perhaps.voice_4"},
 }
 
 monster.loot = {

@@ -1,7 +1,7 @@
 # NPC: gnomewart
 
-**Plik:** `data-otservbr-global/npc/gnomewart.lua`
-**Data migracji:** 2025-12-17 00:58
+**Plik:** 
+**Data migracji:** 2025-12-21 13:13
 **Liczba tekstów:** 0
 
 ## Klucze i18n

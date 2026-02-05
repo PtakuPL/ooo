@@ -60,9 +60,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Death where are you?", yell = false },
-	{ text = "Slay me, end my curse.", yell = false },
-	{ text = "Freee meeee!", yell = false },
+	{ text = "Death where are you?", yell = false , i18nKey = "monster.cursed_gladiator.voice_1"},
+	{ text = "Slay me, end my curse.", yell = false , i18nKey = "monster.cursed_gladiator.voice_2"},
+	{ text = "Freee meeee!", yell = false , i18nKey = "monster.cursed_gladiator.voice_3"},
 }
 
 monster.loot = {}

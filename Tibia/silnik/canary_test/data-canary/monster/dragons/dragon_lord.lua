@@ -79,8 +79,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "ZCHHHHHHH", yell = true },
-	{ text = "YOU WILL BURN!", yell = true },
+	{ text = "ZCHHHHHHH", yell = true , i18nKey = "monster.dragon_lord.voice_3"},
+	{ text = "YOU WILL BURN!", yell = true , i18nKey = "monster.dragon_lord.voice_4"},
 }
 
 monster.loot = {

@@ -72,7 +72,7 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "GROOAAARRR!", yell = true },
+	{ text = "GROOAAARRR!", yell = true , i18nKey = "monster.grand_mother_foulscale.voice_1"},
 }
 
 monster.loot = {

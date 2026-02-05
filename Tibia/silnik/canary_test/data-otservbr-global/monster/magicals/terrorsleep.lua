@@ -73,9 +73,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Aktat Roshok! Marruk!", yell = false },
-	{ text = "I will eat you in your sleep.", yell = false },
-	{ text = "I am the darkness around you...", yell = false },
+	{ text = "Aktat Roshok! Marruk!", yell = false , i18nKey = "monster.terrorsleep.voice_1"},
+	{ text = "I will eat you in your sleep.", yell = false , i18nKey = "monster.terrorsleep.voice_2"},
+	{ text = "I am the darkness around you...", yell = false , i18nKey = "monster.terrorsleep.voice_3"},
 }
 
 monster.loot = {

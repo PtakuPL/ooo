@@ -73,8 +73,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "What, are you afraid? So you should be!", yell = false },
-	{ text = "Die in the flames of true righteousness!", yell = false },
+	{ text = "What, are you afraid? So you should be!", yell = false , i18nKey = "monster.usurper_warlock.voice_1"},
+	{ text = "Die in the flames of true righteousness!", yell = false , i18nKey = "monster.usurper_warlock.voice_2"},
 }
 
 monster.loot = {

@@ -76,9 +76,9 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Behold the all permeating powers I draw from this gate!!", yell = false },
-	{ text = "ENERGY!!", yell = false },
-	{ text = "I WILL RETURN!! My death will just be a door to await my homecoming, my physical hull will be... my... argh...", yell = false },
+	{ text = "Behold the all permeating powers I draw from this gate!!", yell = false , i18nKey = "monster.raging_mage.voice_1"},
+	{ text = "ENERGY!!", yell = false , i18nKey = "monster.raging_mage.voice_2"},
+	{ text = "I WILL RETURN!! My death will just be a door to await my homecoming, my physical hull will be... my... argh...", yell = false , i18nKey = "monster.raging_mage.voice_3"},
 }
 
 monster.loot = {

@@ -77,9 +77,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Bones are just sticks. They break easily.", yell = false },
-	{ text = "Decay!", yell = false },
-	{ text = "I'll make you crawl, too!", yell = false },
+	{ text = "Bones are just sticks. They break easily.", yell = false , i18nKey = "monster.branchy_crawler.voice_1"},
+	{ text = "Decay!", yell = false , i18nKey = "monster.branchy_crawler.voice_2"},
+	{ text = "I'll make you crawl, too!", yell = false , i18nKey = "monster.branchy_crawler.voice_3"},
 }
 
 monster.loot = {

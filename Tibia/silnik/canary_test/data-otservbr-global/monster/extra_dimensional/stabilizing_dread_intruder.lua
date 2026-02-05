@@ -73,7 +73,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Whirr!", yell = false },
+	{ text = "Whirr!", yell = false , i18nKey = "monster.stabilizing_dread_intruder.voice_1"},
 }
 
 monster.loot = {

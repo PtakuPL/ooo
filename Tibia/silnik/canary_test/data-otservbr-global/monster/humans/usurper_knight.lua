@@ -73,9 +73,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "This town is ours now!", yell = false },
-	{ text = "Do you really think you can stand?", yell = false },
-	{ text = "You don't deserve Bounac!", yell = false },
+	{ text = "This town is ours now!", yell = false , i18nKey = "monster.usurper_knight.voice_1"},
+	{ text = "Do you really think you can stand?", yell = false , i18nKey = "monster.usurper_knight.voice_2"},
+	{ text = "You don't deserve Bounac!", yell = false , i18nKey = "monster.usurper_knight.voice_3"},
 }
 
 monster.loot = {

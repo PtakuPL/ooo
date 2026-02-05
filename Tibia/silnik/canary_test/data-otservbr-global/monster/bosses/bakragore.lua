@@ -76,11 +76,11 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Light ... darkens!", yell = false },
-	{ text = "Light .. the ... darkness!", yell = false },
-	{ text = "Darkness ... is ... light!", yell = false },
-	{ text = "WILL ... PUNISH ... YOU!", yell = false },
-	{ text = "RAAAR!", yell = false },
+	{ text = "Light ... darkens!", yell = false , i18nKey = "monster.bakragore.voice_1"},
+	{ text = "Light .. the ... darkness!", yell = false , i18nKey = "monster.bakragore.voice_2"},
+	{ text = "Darkness ... is ... light!", yell = false , i18nKey = "monster.bakragore.voice_3"},
+	{ text = "WILL ... PUNISH ... YOU!", yell = false , i18nKey = "monster.bakragore.voice_4"},
+	{ text = "RAAAR!", yell = false , i18nKey = "monster.bakragore.voice_5"},
 }
 
 monster.loot = {

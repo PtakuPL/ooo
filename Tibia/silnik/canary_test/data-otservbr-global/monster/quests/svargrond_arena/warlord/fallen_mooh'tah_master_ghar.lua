@@ -60,9 +60,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I will finish you!", yell = false },
-	{ text = "You are no match for a master of the Mooh'Tha!", yell = false },
-	{ text = "I might be fallen but you will fall before me!", yell = false },
+	{ text = "I will finish you!", yell = false , i18nKey = "monster.fallen_mooh'tah_master_ghar.voice_1"},
+	{ text = "You are no match for a master of the Mooh'Tha!", yell = false , i18nKey = "monster.fallen_mooh'tah_master_ghar.voice_2"},
+	{ text = "I might be fallen but you will fall before me!", yell = false , i18nKey = "monster.fallen_mooh'tah_master_ghar.voice_3"},
 }
 
 monster.loot = {}

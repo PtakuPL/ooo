@@ -76,9 +76,9 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Stop freeing the souls! They are mine alone!", yell = false },
-	{ text = "The souls shall not escape me! ", yell = false },
-	{ text = " You will be mine!", yell = false },
+	{ text = "Stop freeing the souls! They are mine alone!", yell = false , i18nKey = "monster.the_souldespoiler.voice_1"},
+	{ text = "The souls shall not escape me! ", yell = false , i18nKey = "monster.the_souldespoiler.voice_2"},
+	{ text = " You will be mine!", yell = false , i18nKey = "monster.the_souldespoiler.voice_3"},
 }
 
 monster.loot = {

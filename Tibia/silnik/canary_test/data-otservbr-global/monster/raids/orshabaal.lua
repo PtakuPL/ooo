@@ -72,11 +72,11 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "PRAISED BE MY MASTERS, THE RUTHLESS SEVEN!", yell = true },
-	{ text = "YOU ARE DOOMED!", yell = true },
-	{ text = "ORSHABAAL IS BACK!", yell = true },
-	{ text = "Be prepared for the day my masters will come for you!", yell = false },
-	{ text = "SOULS FOR ORSHABAAL!", yell = true },
+	{ text = "PRAISED BE MY MASTERS, THE RUTHLESS SEVEN!", yell = true , i18nKey = "monster.orshabaal.voice_1"},
+	{ text = "YOU ARE DOOMED!", yell = true , i18nKey = "monster.orshabaal.voice_2"},
+	{ text = "ORSHABAAL IS BACK!", yell = true , i18nKey = "monster.orshabaal.voice_3"},
+	{ text = "Be prepared for the day my masters will come for you!", yell = false , i18nKey = "monster.orshabaal.voice_4"},
+	{ text = "SOULS FOR ORSHABAAL!", yell = true , i18nKey = "monster.orshabaal.voice_5"},
 }
 
 monster.loot = {

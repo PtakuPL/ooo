@@ -72,7 +72,7 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "FCHHHHH", yell = true },
+	{ text = "FCHHHHH", yell = true , i18nKey = "monster.the_welter.voice_1"},
 }
 
 monster.loot = {

@@ -80,8 +80,8 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Yelp!", yell = false },
-	{ text = "Grrrrrr", yell = false },
+	{ text = "Yelp!", yell = false , i18nKey = "monster.werefox.voice_1"},
+	{ text = "Grrrrrr", yell = false , i18nKey = "monster.werefox.voice_2"},
 }
 
 monster.loot = {

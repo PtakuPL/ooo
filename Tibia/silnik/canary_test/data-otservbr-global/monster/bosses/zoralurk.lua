@@ -67,8 +67,8 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I AM ZORALURK, THE DEMON WITH A THOUSAND FACES", yell = true },
-	{ text = "BRING IT, COCKROACHES!", yell = true },
+	{ text = "I AM ZORALURK, THE DEMON WITH A THOUSAND FACES", yell = true , i18nKey = "monster.zoralurk.voice_1"},
+	{ text = "BRING IT, COCKROACHES!", yell = true , i18nKey = "monster.zoralurk.voice_2"},
 }
 
 monster.loot = {

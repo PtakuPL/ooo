@@ -71,9 +71,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "So you think you are cool?", yell = false },
-	{ text = "I hope it is not too cold for you! HeHeHe.", yell = false },
-	{ text = "Freeze!", yell = false },
+	{ text = "So you think you are cool?", yell = false , i18nKey = "monster.ice_witch.voice_1"},
+	{ text = "I hope it is not too cold for you! HeHeHe.", yell = false , i18nKey = "monster.ice_witch.voice_2"},
+	{ text = "Freeze!", yell = false , i18nKey = "monster.ice_witch.voice_3"},
 }
 
 monster.loot = {

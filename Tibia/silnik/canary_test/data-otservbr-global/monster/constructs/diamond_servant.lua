@@ -74,8 +74,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Error. LOAD 'PROGRAM',8,1", yell = false },
-	{ text = "Remain. Obedient.", yell = false },
+	{ text = "Error. LOAD 'PROGRAM',8,1", yell = false , i18nKey = "monster.diamond_servant.voice_1"},
+	{ text = "Remain. Obedient.", yell = false , i18nKey = "monster.diamond_servant.voice_2"},
 }
 
 monster.loot = {

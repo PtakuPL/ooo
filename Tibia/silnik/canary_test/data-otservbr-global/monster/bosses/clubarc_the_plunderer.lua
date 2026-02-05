@@ -60,7 +60,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Orc arga Huummmak!", yell = false },
+	{ text = "Orc arga Huummmak!", yell = false , i18nKey = "monster.clubarc_the_plunderer.voice_1"},
 }
 
 monster.loot = {

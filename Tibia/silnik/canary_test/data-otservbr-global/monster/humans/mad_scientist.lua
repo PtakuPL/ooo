@@ -70,10 +70,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Die in the name of Science!", yell = false },
-	{ text = "You will regret interrupting my studies!", yell = false },
-	{ text = "Let me test this!", yell = false },
-	{ text = "I will study your corpse!", yell = false },
+	{ text = "Die in the name of Science!", yell = false , i18nKey = "monster.mad_scientist.voice_1"},
+	{ text = "You will regret interrupting my studies!", yell = false , i18nKey = "monster.mad_scientist.voice_2"},
+	{ text = "Let me test this!", yell = false , i18nKey = "monster.mad_scientist.voice_3"},
+	{ text = "I will study your corpse!", yell = false , i18nKey = "monster.mad_scientist.voice_4"},
 }
 
 monster.loot = {

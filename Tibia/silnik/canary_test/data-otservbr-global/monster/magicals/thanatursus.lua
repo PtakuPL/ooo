@@ -73,8 +73,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Uuuuuuuuuaaaaaarg!!!", yell = false },
-	{ text = "Nobody will ever escape from this place, muwahaha!!!", yell = false },
+	{ text = "Uuuuuuuuuaaaaaarg!!!", yell = false , i18nKey = "monster.thanatursus.voice_1"},
+	{ text = "Nobody will ever escape from this place, muwahaha!!!", yell = false , i18nKey = "monster.thanatursus.voice_2"},
 }
 
 monster.loot = {

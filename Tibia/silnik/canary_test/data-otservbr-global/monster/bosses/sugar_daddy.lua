@@ -65,12 +65,12 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "SUGAR!!!", yell = false },
-	{ text = "Sweet vengeance!", yell = false },
-	{ text = "Let me have a bite!", yell = false },
-	{ text = "YOU HAVE BAD BREATH, TAKE A MINT!!!", yell = false },
-	{ text = "I LOOOOOOVE CHOCOLATE TRUFFLES!!!", yell = false },
-	{ text = "Yummy!", yell = false },
+	{ text = "SUGAR!!!", yell = false , i18nKey = "monster.sugar_daddy.voice_1"},
+	{ text = "Sweet vengeance!", yell = false , i18nKey = "monster.sugar_daddy.voice_2"},
+	{ text = "Let me have a bite!", yell = false , i18nKey = "monster.sugar_daddy.voice_3"},
+	{ text = "YOU HAVE BAD BREATH, TAKE A MINT!!!", yell = false , i18nKey = "monster.sugar_daddy.voice_4"},
+	{ text = "I LOOOOOOVE CHOCOLATE TRUFFLES!!!", yell = false , i18nKey = "monster.sugar_daddy.voice_5"},
+	{ text = "Yummy!", yell = false , i18nKey = "monster.sugar_daddy.voice_6"},
 }
 
 monster.loot = {

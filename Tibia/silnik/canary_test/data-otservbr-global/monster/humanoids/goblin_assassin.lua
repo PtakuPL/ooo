@@ -70,11 +70,11 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Goblin Powahhh!", yell = false },
-	{ text = "Me kill you!", yell = false },
-	{ text = "Me green menace!", yell = false },
-	{ text = "Gobabunga!", yell = false },
-	{ text = "Gooobliiiins!", yell = false },
+	{ text = "Goblin Powahhh!", yell = false , i18nKey = "monster.goblin_assassin.voice_1"},
+	{ text = "Me kill you!", yell = false , i18nKey = "monster.goblin_assassin.voice_2"},
+	{ text = "Me green menace!", yell = false , i18nKey = "monster.goblin_assassin.voice_3"},
+	{ text = "Gobabunga!", yell = false , i18nKey = "monster.goblin_assassin.voice_4"},
+	{ text = "Gooobliiiins!", yell = false , i18nKey = "monster.goblin_assassin.voice_5"},
 }
 
 monster.loot = {

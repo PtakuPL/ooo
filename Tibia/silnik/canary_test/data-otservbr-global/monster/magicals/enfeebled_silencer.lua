@@ -77,10 +77,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Prrrroooaaaah!!! PRROAAAH!!", yell = false },
-	{ text = "PRRRROOOOOAAAAAHHHH!!!", yell = true },
-	{ text = "HUUUSSSSSSSSH!!", yell = true },
-	{ text = "Hussssssh!!", yell = false },
+	{ text = "Prrrroooaaaah!!! PRROAAAH!!", yell = false , i18nKey = "monster.enfeebled_silencer.voice_1"},
+	{ text = "PRRRROOOOOAAAAAHHHH!!!", yell = true , i18nKey = "monster.enfeebled_silencer.voice_2"},
+	{ text = "HUUUSSSSSSSSH!!", yell = true , i18nKey = "monster.enfeebled_silencer.voice_3"},
+	{ text = "Hussssssh!!", yell = false , i18nKey = "monster.enfeebled_silencer.voice_4"},
 }
 
 monster.loot = {

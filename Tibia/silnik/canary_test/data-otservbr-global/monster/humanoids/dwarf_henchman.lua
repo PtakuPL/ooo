@@ -71,10 +71,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "This place is for our eyes only!", yell = false },
-	{ text = "We will live and let you die!", yell = false },
-	{ text = "I will die another day!", yell = false },
-	{ text = "We have license to kill!", yell = false },
+	{ text = "This place is for our eyes only!", yell = false , i18nKey = "monster.dwarf_henchman.voice_1"},
+	{ text = "We will live and let you die!", yell = false , i18nKey = "monster.dwarf_henchman.voice_2"},
+	{ text = "I will die another day!", yell = false , i18nKey = "monster.dwarf_henchman.voice_3"},
+	{ text = "We have license to kill!", yell = false , i18nKey = "monster.dwarf_henchman.voice_4"},
 }
 
 monster.loot = {}

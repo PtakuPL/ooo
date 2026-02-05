@@ -118,7 +118,7 @@ if Modules == nil then
 			if not promotion or hasPromotion then
 				npcHandler:sayLocalized("misc.modules.say_1", npc, player)
 			elseif player:getLevel() < parameters.level then
-				npcHandler:say(string.format("I am sorry, but I can only promote you once you have reached level %d.", parameters.level), npc, player)
+				npcHandler:sayLocalized("npclib.modules.say_6", npc, player, {parameters.level})
 			elseif not player:removeMoneyBank(parameters.cost) then
 				npcHandler:sayLocalized("misc.modules.say_2", npc, player)
 			else
@@ -150,13 +150,13 @@ if Modules == nil then
 			elseif not player:canLearnSpell(parameters.spellName) then
 				npcHandler:sayLocalized("misc.modules.say_5", npc, player)
 			elseif not player:removeMoneyBank(parameters.price) then
-				npcHandler:say(string.format("You do not have enough money, this spell costs %s gold.", parameters.price), npc, player)
+				npcHandler:sayLocalized("npclib.modules.say_5", npc, player, {parameters.price})
 			else
-				npcHandler:say(string.format("You have learned '%s'.", parameters.spellName), npc, player)
+				npcHandler:sayLocalized("npclib.modules.say_4", npc, player, {parameters.spellName})
 				player:learnSpell(parameters.spellName)
 			end
 		else
-			npcHandler:say(string.format("You need a premium account in order to buy '%s'.", parameters.spellName), npc, player)
+			npcHandler:sayLocalized("npclib.modules.say_3", npc, player, {parameters.spellName})
 		end
 
 		npcHandler:resetNpc(player)
@@ -182,13 +182,7 @@ if Modules == nil then
 		elseif parameters.bless == 3 and player:getStorageValue(Storage.KawillBlessing) ~= 1 then
 			npcHandler:sayLocalized("misc.modules.say_7", npc, player)
 		elseif parameters.bless == 1 and #player:getBlessings() == 0 and not player:getItemById(3057, true) then
-			npcHandler:say(
-				"You don't have any of the other blessings nor an amulet of loss, \z
-                           so it wouldn't make sense to bestow this protection on you now. \z
-                           Remember that it can only protect you from the loss of those!",
-				npc,
-				player
-			)
+			npcHandler:sayLocalized("npclib.modules.say_2", npc, player)
 		elseif not player:removeMoneyBank(type(parameters.cost) == "string" and tonumber(npcHandler:parseMessage(parameters.cost, parseInfo)) or parameters.cost) then
 			npcHandler:sayLocalized("misc.modules.say_8", npc, player)
 		else
@@ -534,7 +528,7 @@ if Modules == nil then
 
 		local cost = (IsTravelFree() and 0) or parameters.cost
 
-		module.npcHandler:say(string.format("Do you want to travel to '%s' for '%d' gold coins?", keywords[1], cost), npc, player)
+		module.npcHandler:sayLocalized("npclib.modules.say_1", npc, player, {keywords[1], cost})
 		return true
 	end
 

@@ -73,10 +73,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "YAAAHEEE!", yell = true },
-	{ text = "SLAUGHTER!", yell = true },
-	{ text = "CARNAGE!", yell = true },
-	{ text = "You can run but you can't hide", yell = false },
+	{ text = "YAAAHEEE!", yell = true , i18nKey = "monster.barbarian_bloodwalker.voice_1"},
+	{ text = "SLAUGHTER!", yell = true , i18nKey = "monster.barbarian_bloodwalker.voice_2"},
+	{ text = "CARNAGE!", yell = true , i18nKey = "monster.barbarian_bloodwalker.voice_3"},
+	{ text = "You can run but you can't hide", yell = false , i18nKey = "monster.barbarian_bloodwalker.voice_4"},
 }
 
 monster.loot = {

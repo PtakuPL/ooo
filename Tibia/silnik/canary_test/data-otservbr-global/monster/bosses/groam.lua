@@ -65,9 +65,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I sjaw the eyes of the djeep!", yell = false },
-	{ text = "I mjake sjure yjou wjill njot sjufer the sjame fjate Ij djid!", yell = false },
-	{ text = "Yjou, intrjuder!!", yell = false },
+	{ text = "I sjaw the eyes of the djeep!", yell = false , i18nKey = "monster.groam.voice_1"},
+	{ text = "I mjake sjure yjou wjill njot sjufer the sjame fjate Ij djid!", yell = false , i18nKey = "monster.groam.voice_2"},
+	{ text = "Yjou, intrjuder!!", yell = false , i18nKey = "monster.groam.voice_3"},
 }
 
 monster.loot = {

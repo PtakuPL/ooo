@@ -71,11 +71,11 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Me have him!", yell = false },
-	{ text = "Zig Zag! Gobo attack!", yell = false },
-	{ text = "Help! Goblinkiller!", yell = false },
-	{ text = "Bugga! Bugga!", yell = false },
-	{ text = "Me green, me mean!", yell = false },
+	{ text = "Me have him!", yell = false , i18nKey = "monster.goblin.voice_6"},
+	{ text = "Zig Zag! Gobo attack!", yell = false , i18nKey = "monster.goblin.voice_7"},
+	{ text = "Help! Goblinkiller!", yell = false , i18nKey = "monster.goblin.voice_8"},
+	{ text = "Bugga! Bugga!", yell = false , i18nKey = "monster.goblin.voice_9"},
+	{ text = "Me green, me mean!", yell = false , i18nKey = "monster.goblin.voice_10"},
 }
 
 monster.loot = {

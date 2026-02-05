@@ -60,10 +60,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "BOW TO THE POWER OF THE RUTHLESS SEVEN!", yell = true },
-	{ text = "DESTRUCTION!", yell = true },
-	{ text = "CHAOS!", yell = true },
-	{ text = "DEATH TO ALL!", yell = true },
+	{ text = "BOW TO THE POWER OF THE RUTHLESS SEVEN!", yell = true , i18nKey = "monster.apocalypse.voice_5"},
+	{ text = "DESTRUCTION!", yell = true , i18nKey = "monster.apocalypse.voice_6"},
+	{ text = "CHAOS!", yell = true , i18nKey = "monster.apocalypse.voice_7"},
+	{ text = "DEATH TO ALL!", yell = true , i18nKey = "monster.apocalypse.voice_8"},
 }
 
 monster.loot = {

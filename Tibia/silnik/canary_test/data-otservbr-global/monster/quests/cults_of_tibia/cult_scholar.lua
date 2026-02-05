@@ -77,7 +77,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "The Secrets are ours alone!", yell = false },
+	{ text = "The Secrets are ours alone!", yell = false , i18nKey = "monster.cult_scholar.voice_1"},
 }
 
 monster.loot = {

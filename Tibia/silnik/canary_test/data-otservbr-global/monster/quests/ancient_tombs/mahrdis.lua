@@ -71,12 +71,12 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Ashes to ashes!", yell = false },
-	{ text = "Fire, Fire!", yell = false },
-	{ text = "The eternal flame demands its due!", yell = false },
-	{ text = "This is why I'm hot.", yell = false },
-	{ text = "May my flames engulf you!", yell = false },
-	{ text = "Burnnnnnnnnn!", yell = false },
+	{ text = "Ashes to ashes!", yell = false , i18nKey = "monster.mahrdis.voice_1"},
+	{ text = "Fire, Fire!", yell = false , i18nKey = "monster.mahrdis.voice_2"},
+	{ text = "The eternal flame demands its due!", yell = false , i18nKey = "monster.mahrdis.voice_3"},
+	{ text = "This is why I'm hot.", yell = false , i18nKey = "monster.mahrdis.voice_4"},
+	{ text = "May my flames engulf you!", yell = false , i18nKey = "monster.mahrdis.voice_5"},
+	{ text = "Burnnnnnnnnn!", yell = false , i18nKey = "monster.mahrdis.voice_6"},
 }
 
 monster.loot = {

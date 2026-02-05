@@ -74,9 +74,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Die for us!", yell = false },
-	{ text = "Humans ought to be extinct!", yell = false },
-	{ text = "This belongs to us now!", yell = false },
+	{ text = "Die for us!", yell = false , i18nKey = "monster.mitmah_scout.voice_1"},
+	{ text = "Humans ought to be extinct!", yell = false , i18nKey = "monster.mitmah_scout.voice_2"},
+	{ text = "This belongs to us now!", yell = false , i18nKey = "monster.mitmah_scout.voice_3"},
 }
 
 monster.loot = {

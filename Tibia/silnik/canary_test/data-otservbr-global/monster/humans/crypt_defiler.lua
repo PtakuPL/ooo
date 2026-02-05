@@ -71,10 +71,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I smell gold!", yell = false },
-	{ text = "You'll make a fine fake-mummy to be sold!", yell = false },
-	{ text = "Untold riches are awaiting me!", yell = false },
-	{ text = "I don't like competition!", yell = false },
+	{ text = "I smell gold!", yell = false , i18nKey = "monster.crypt_defiler.voice_1"},
+	{ text = "You'll make a fine fake-mummy to be sold!", yell = false , i18nKey = "monster.crypt_defiler.voice_2"},
+	{ text = "Untold riches are awaiting me!", yell = false , i18nKey = "monster.crypt_defiler.voice_3"},
+	{ text = "I don't like competition!", yell = false , i18nKey = "monster.crypt_defiler.voice_4"},
 }
 
 monster.loot = {

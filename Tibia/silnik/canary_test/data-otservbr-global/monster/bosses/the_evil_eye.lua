@@ -70,8 +70,8 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Inferior creatures, bow before my power!", yell = false },
-	{ text = "653768764!", yell = false },
+	{ text = "Inferior creatures, bow before my power!", yell = false , i18nKey = "monster.the_evil_eye.voice_1"},
+	{ text = "653768764!", yell = false , i18nKey = "monster.the_evil_eye.voice_2"},
 }
 
 monster.loot = {

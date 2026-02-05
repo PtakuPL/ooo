@@ -65,7 +65,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Shriiiek", yell = false },
+	{ text = "Shriiiek", yell = false , i18nKey = "monster.heoni.voice_1"},
 }
 
 monster.loot = {}

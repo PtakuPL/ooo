@@ -74,10 +74,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I grant you a deathwish!", yell = false },
-	{ text = "Muahahahahaha", yell = false },
-	{ text = "I wish you a merry trip to hell!", yell = false },
-	{ text = "Good wishes are for fairytales", yell = false },
+	{ text = "I grant you a deathwish!", yell = false , i18nKey = "monster.green_djinn.voice_1"},
+	{ text = "Muahahahahaha", yell = false , i18nKey = "monster.green_djinn.voice_2"},
+	{ text = "I wish you a merry trip to hell!", yell = false , i18nKey = "monster.green_djinn.voice_3"},
+	{ text = "Good wishes are for fairytales", yell = false , i18nKey = "monster.green_djinn.voice_4"},
 }
 
 monster.loot = {

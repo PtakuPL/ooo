@@ -70,11 +70,11 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Life is such a fickle thing!", yell = false },
-	{ text = "I will devour your soul.", yell = false },
-	{ text = "Souuuls!", yell = false },
-	{ text = "I will feed on you.", yell = false },
-	{ text = "Aaaahh", yell = false },
+	{ text = "Life is such a fickle thing!", yell = false , i18nKey = "monster.souleater.voice_1"},
+	{ text = "I will devour your soul.", yell = false , i18nKey = "monster.souleater.voice_2"},
+	{ text = "Souuuls!", yell = false , i18nKey = "monster.souleater.voice_3"},
+	{ text = "I will feed on you.", yell = false , i18nKey = "monster.souleater.voice_4"},
+	{ text = "Aaaahh", yell = false , i18nKey = "monster.souleater.voice_5"},
 }
 
 monster.loot = {

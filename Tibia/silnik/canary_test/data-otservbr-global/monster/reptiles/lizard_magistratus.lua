@@ -75,8 +75,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Shhhhhhhh.", yell = false },
-	{ text = "I can't work wizh zuch dizturbancez!", yell = false },
+	{ text = "Shhhhhhhh.", yell = false , i18nKey = "monster.lizard_magistratus.voice_1"},
+	{ text = "I can't work wizh zuch dizturbancez!", yell = false , i18nKey = "monster.lizard_magistratus.voice_2"},
 }
 
 monster.loot = {

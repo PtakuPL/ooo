@@ -73,9 +73,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "This was the initial trick, but the second follows quick!", yell = false },
-	{ text = "Hoppel-di-hopp!", yell = false },
-	{ text = "Jinx!", yell = false },
+	{ text = "This was the initial trick, but the second follows quick!", yell = false , i18nKey = "monster.pooka.voice_1"},
+	{ text = "Hoppel-di-hopp!", yell = false , i18nKey = "monster.pooka.voice_2"},
+	{ text = "Jinx!", yell = false , i18nKey = "monster.pooka.voice_3"},
 }
 
 monster.loot = {

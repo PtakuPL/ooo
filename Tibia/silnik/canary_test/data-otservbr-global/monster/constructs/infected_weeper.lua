@@ -79,7 +79,7 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Moooaaan", yell = false },
+	{ text = "Moooaaan", yell = false , i18nKey = "monster.infected_weeper.voice_1"},
 }
 
 monster.loot = {

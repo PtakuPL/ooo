@@ -1,6 +1,6 @@
 local config = {
-	[26663] = { storage = Storage.Quest.U11_02.ForgottenKnowledge.MechanismDiamond, counter = Storage.Quest.U11_02.ForgottenKnowledge.DiamondServant, msg = "5 diamond entities are consuming too much raw energy for the cosmic chamber to awaken, it will be put to rest again in 10 minutes." },
-	[26664] = { storage = Storage.Quest.U11_02.ForgottenKnowledge.MechanismGolden, counter = Storage.Quest.U11_02.ForgottenKnowledge.GoldenServant, msg = "5 golden entities are consuming too much raw energy for the cosmic chamber to awaken, it will be put to rest again in 10 minutes." },
+	[26663] = { storage = Storage.Quest.U11_02.ForgottenKnowledge.MechanismDiamond, counter = Storage.Quest.U11_02.ForgottenKnowledge.DiamondServant, msgKey = "scripts.servants_mechanism.diamond_msg" },
+	[26664] = { storage = Storage.Quest.U11_02.ForgottenKnowledge.MechanismGolden, counter = Storage.Quest.U11_02.ForgottenKnowledge.GoldenServant, msgKey = "scripts.servants_mechanism.golden_msg" },
 }
 
 local function clearGolems()
@@ -53,7 +53,7 @@ function forgottenKnowledgeMechanism.onUse(player, item, fromPosition, target, t
 		addEvent(turnOff, 10 * 60 * 1000, lever.storage, lever.counter)
 		item:transform(9126)
 		player:sayLocalized("quests.actions_servants_mechanism.say_1", TALKTYPE_MONSTER_SAY, false, nil, toPosition)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, lever.msg)
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, lever.msgKey)
 	elseif item.itemid == 9126 then
 		item:transform(9125)
 	end

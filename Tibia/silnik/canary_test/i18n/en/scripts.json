@@ -788,5 +788,19 @@
   "scripts.lions_rock_signs.scorpion_1": "With the aid of the old scroll you translate the inscriptions on the golden altar: And the mighty lion defeated the treacherous scorpion.",
   "scripts.lions_rock_signs.scorpion_2": "As a sign of victory he tooks its poison, violet as deceit and betrayal, and created a precious treasure.",
   "scripts.lions_rock_signs.hyena_1": "With the aid of the old scroll you translate the inscriptions on the golden statue: And the mighty lion defeated the greedy hyaena.",
-  "scripts.lions_rock_signs.hyena_2": "As a sign of victory he tooks its blood, red as voracity and lust, and created a precious treasure."
+  "scripts.lions_rock_signs.hyena_2": "As a sign of victory he tooks its blood, red as voracity and lust, and created a precious treasure.",
+
+  "scripts.lantern.glowing": "As you start polishing the lantern it begins to glow in an otherworldly light.",
+  "scripts.lantern.invisible_door_no_key": "In the light of the ghostsilver lantern you discover an otherwise invisible door. But you lack the key to open it.",
+  "scripts.lantern.invisible_door_have_key": "In the light of the ghostsilver lantern you discover an otherwise invisible door. As you have the fitting key you can pass.",
+
+  "scripts.gravedigger_blood.ruby_red": "The blood in the vial is of a deep, ruby red.",
+  "scripts.gravedigger_blood.tainted": "The blood in the vial is of a strange colour, as if tainted.",
+
+  "scripts.gravedigger_monks.statue_1": "Shadows rise and engulf the candle. The statue flickers in an unearthly light.",
+  "scripts.gravedigger_monks.statue_2": "The shadows of the statue swallow the candle hungrily.",
+  "scripts.gravedigger_monks.statue_3": "A shade emerges and snatches the candle from your hands.",
+
+  "scripts.servants_mechanism.diamond_msg": "5 diamond entities are consuming too much raw energy for the cosmic chamber to awaken, it will be put to rest again in 10 minutes.",
+  "scripts.servants_mechanism.golden_msg": "5 golden entities are consuming too much raw energy for the cosmic chamber to awaken, it will be put to rest again in 10 minutes."
 }

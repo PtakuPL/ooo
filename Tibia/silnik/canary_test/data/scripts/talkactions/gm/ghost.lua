@@ -9,10 +9,10 @@ function ghost.onSay(player, words, param)
 
 	player:setGhostMode(isGhost)
 	if isGhost then
-		player:sendLocalizedMessage(MESSAGE_HOTKEY_PRESSED, "scripts.ghost.msg_1")
+		player:sendLocalizedTextMessage(MESSAGE_HOTKEY_PRESSED, "scripts.ghost.msg_1")
 		position:sendMagicEffect(CONST_ME_YALAHARIGHOST)
 	else
-		player:sendLocalizedMessage(MESSAGE_HOTKEY_PRESSED, "scripts.ghost.msg_2")
+		player:sendLocalizedTextMessage(MESSAGE_HOTKEY_PRESSED, "scripts.ghost.msg_2")
 		position.x = position.x + 1
 		position:sendMagicEffect(CONST_ME_SMOKE)
 	end

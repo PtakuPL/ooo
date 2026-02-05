@@ -315,7 +315,7 @@ DailyReward.init = function(playerId)
 				player:setStreakLevel(0)
 				if player:getLastLoginSaved() > 0 then -- message wont appear at first character login
 					player:setJokerTokens(-(player:getJokerTokens()))
-					player:sendLocalizedMessage(MESSAGE_LOGIN, "scripts.daily_reward.msg_1")
+					player:sendLocalizedTextMessage(MESSAGE_LOGIN, "scripts.daily_reward.msg_1")
 				end
 			end
 		end

@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Gather around me, young knights! I'm going to teach you some spells!" },
+	{ i18nKey = "npc.gregor.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -338,9 +338,9 @@ keywordHandler:addKeyword({ "outfit" }, StdModule.say, {
 	i18nKey = "npc.gregor.stdmod_25",
 })
 
-npcHandler:setMessage(MESSAGE_GREET, "Greetings, |PLAYERNAME|. What do you want?")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Be careful on your journeys.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Be careful on your journeys.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.gregor.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.gregor.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.gregor.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 

@@ -34,7 +34,7 @@ function usablePhantasmalJadeItems.onUse(player, item, fromPosition, target, toP
 	player:addMount(config.mountId)
 	player:addAchievement("Natural Born Cowboy")
 	player:addAchievement("You got Horse Power")
-	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.usable_phantasmal_jade_items.msg_1")
+	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.usable_phantasmal_jade_items.msg_1")
 	return true
 end
 

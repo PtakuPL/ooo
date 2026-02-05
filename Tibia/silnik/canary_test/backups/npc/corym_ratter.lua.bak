@@ -60,7 +60,7 @@ local function greetCallback(npc, creature, message)
 			"We dig up all what mother earth delivers to us, valuable natural resources. But the yield is getting worse and here I need your {help}.",
 		})
 	else
-		npcHandler:setMessage(MESSAGE_GREET, "We dig up all what mother earth delivers to us, valuable natural resources.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.corym_ratter.greet_msg_1")
 	end
 	return true
 end
@@ -89,7 +89,7 @@ local function creatureSayCallback(npc, creature, type, message)
 end
 
 -- Greeting message
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye, |PLAYERNAME|.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.corym_ratter.farewell_msg_1")
 
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)

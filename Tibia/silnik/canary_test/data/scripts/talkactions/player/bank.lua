@@ -10,7 +10,7 @@ end
 local balance = TalkAction("!balance")
 
 function balance.onSay(player, words, param)
-	player:sendLocalizedMessage(config.messageStyle, "scripts.bank.msg_1" .. FormatNumber(Bank.balance(player)) .. ".")
+	player:sendLocalizedTextMessage(config.messageStyle, "scripts.bank.msg_1" .. FormatNumber(Bank.balance(player)) .. ".")
 	return true
 end
 
@@ -27,17 +27,17 @@ function deposit.onSay(player, words, param)
 	else
 		amount = tonumber(param)
 		if not amount or amount <= 0 and isValidMoney(amount) then
-			player:sendLocalizedMessage(config.messageStyle, "scripts.bank.msg_2")
+			player:sendLocalizedTextMessage(config.messageStyle, "scripts.bank.msg_2")
 			return true
 		end
 	end
 
 	if not Bank.deposit(player, amount) then
-		player:sendLocalizedMessage(config.messageStyle, "scripts.bank.msg_3")
+		player:sendLocalizedTextMessage(config.messageStyle, "scripts.bank.msg_3")
 		return true
 	end
 
-	player:sendLocalizedMessage(config.messageStyle, "scripts.bank.msg_4" .. FormatNumber(amount) .. " gold coins.")
+	player:sendLocalizedTextMessage(config.messageStyle, "scripts.bank.msg_4" .. FormatNumber(amount) .. " gold coins.")
 	return true
 end
 
@@ -50,16 +50,16 @@ local withdraw = TalkAction("!withdraw")
 function withdraw.onSay(player, words, param)
 	local amount = tonumber(param)
 	if not amount or amount <= 0 and isValidMoney(amount) then
-		player:sendLocalizedMessage(config.messageStyle, "scripts.bank.msg_5")
+		player:sendLocalizedTextMessage(config.messageStyle, "scripts.bank.msg_5")
 		return true
 	end
 
 	if not Bank.withdraw(player, amount) then
-		player:sendLocalizedMessage(config.messageStyle, "scripts.bank.msg_6")
+		player:sendLocalizedTextMessage(config.messageStyle, "scripts.bank.msg_6")
 		return true
 	end
 
-	player:sendLocalizedMessage(config.messageStyle, "scripts.bank.msg_7" .. FormatNumber(amount) .. " gold coins.")
+	player:sendLocalizedTextMessage(config.messageStyle, "scripts.bank.msg_7" .. FormatNumber(amount) .. " gold coins.")
 	return true
 end
 
@@ -73,29 +73,29 @@ function transfer.onSay(player, words, param)
 	local split = param:split(",")
 	local amount = tonumber(split[2])
 	if not amount or amount <= 0 and isValidMoney(amount) then
-		player:sendLocalizedMessage(config.messageStyle, "scripts.bank.msg_8")
+		player:sendLocalizedTextMessage(config.messageStyle, "scripts.bank.msg_8")
 		return true
 	end
 
 	local name = split[1]
 	if not name then
-		player:sendLocalizedMessage(config.messageStyle, "scripts.bank.msg_9")
+		player:sendLocalizedTextMessage(config.messageStyle, "scripts.bank.msg_9")
 		return true
 	end
 	name = name:trim()
 	local normalizedName = Game.getNormalizedPlayerName(name)
 	if not normalizedName then
-		player:sendLocalizedMessage(config.messageStyle, "scripts.bank.msg_10" .. name .. " does not exist.")
+		player:sendLocalizedTextMessage(config.messageStyle, "scripts.bank.msg_10" .. name .. " does not exist.")
 		return true
 	end
 	name = normalizedName
 
 	if not player:transferMoneyTo(name, amount) then
-		player:sendLocalizedMessage(config.messageStyle, "scripts.bank.msg_11")
+		player:sendLocalizedTextMessage(config.messageStyle, "scripts.bank.msg_11")
 		return true
 	end
 
-	player:sendLocalizedMessage(config.messageStyle, "scripts.bank.msg_12" .. FormatNumber(amount) .. " gold coins to " .. name .. ".")
+	player:sendLocalizedTextMessage(config.messageStyle, "scripts.bank.msg_12" .. FormatNumber(amount) .. " gold coins to " .. name .. ".")
 	return true
 end
 

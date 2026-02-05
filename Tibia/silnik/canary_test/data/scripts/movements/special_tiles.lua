@@ -44,7 +44,7 @@ function tile.onStepIn(creature, item, position, fromPosition)
 		if player:getLevel() < item.actionid - 1000 then
 			player:teleportTo(fromPosition, false)
 			position:sendMagicEffect(CONST_ME_MAGIC_BLUE)
-			player:sendLocalizedMessage(MESSAGE_LOOK, "scripts.special_tiles.msg_1")
+			player:sendLocalizedTextMessage(MESSAGE_LOOK, "scripts.special_tiles.msg_1")
 		end
 		return true
 	end
@@ -56,7 +56,7 @@ function tile.onStepIn(creature, item, position, fromPosition)
 	if item.actionid ~= 0 and player:getStorageValue(item.actionid) <= 0 then
 		player:teleportTo(fromPosition, false)
 		position:sendMagicEffect(CONST_ME_MAGIC_BLUE)
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.special_tiles.msg_2")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.special_tiles.msg_2")
 		return true
 	end
 	return true

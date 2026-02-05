@@ -427,7 +427,7 @@ function parseBuyStoreOffer(playerId, msg)
 	local waittime = purchaseCooldown - currentTime
 	if waittime > 0 then
 		queueSendStoreAlertToUser("You are making many purchases simultaneously in a few moments.", 250, playerId)
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.init.msg_1")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.init.msg_1")
 		return false
 	end
 	playerKV:set(GameStore.Kv.purchaseCooldown, os.time() + 5)
@@ -1829,7 +1829,7 @@ function GameStore.processTempleTeleportPurchase(player)
 
 	player:teleportTo(player:getTown():getTemplePosition())
 	player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.init.msg_2")
+	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.init.msg_2")
 end
 
 function GameStore.processHirelingPurchase(player, offer, productType, hirelingName, chosenSex)
@@ -2002,7 +2002,7 @@ function GameStore.processHirelingSkillPurchase(player, offer)
 
 	player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
 	player:enableHirelingSkill(GetHirelingSkillNameById(offer.id))
-	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.init.msg_3")
+	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.init.msg_3")
 end
 
 function GameStore.processHirelingOutfitPurchase(player, offer)
@@ -2017,7 +2017,7 @@ function GameStore.processHirelingOutfitPurchase(player, offer)
 	logger.debug("Processing hireling outfit purchase name {}", outfitName)
 	player:getPosition():sendMagicEffect(CONST_ME_MAGIC_GREEN)
 	player:enableHirelingOutfit(outfitName)
-	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.init.msg_4")
+	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.init.msg_4")
 end
 
 --==Player==--

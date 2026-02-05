@@ -42,7 +42,7 @@ function addMoney.onSay(player, words, param)
 		return true
 	end
 
-	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.add_money.msg_1" .. amount .. " gold coins to " .. name .. ".")
+	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.add_money.msg_1" .. amount .. " gold coins to " .. name .. ".")
 	local targetPlayer = Player(name)
 	if targetPlayer then
 		targetPlayer:sendTextMessage(MESSAGE_EVENT_ADVANCE, "" .. player:getName() .. " added " .. amount .. " gold coins to your character.")

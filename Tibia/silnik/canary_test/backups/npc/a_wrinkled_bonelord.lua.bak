@@ -21,8 +21,8 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "485611800364197." },
-	{ text = "78572611857643646724." },
+	{ i18nKey = "npc.a_wrinkled_bonelord.voice_1" },
+	{ i18nKey = "npc.a_wrinkled_bonelord.voice_2" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -74,12 +74,12 @@ keywordHandler:addKeyword({ "bonelord" }, StdModule.say, { npcHandler = npcHandl
 keywordHandler:addKeyword(
 	{ "language" },
 	StdModule.say,
-	{ npcHandler = npcHandler, text = "Our language is beyond comprehension by your lesser beings. It heavily relies on mathemagic. Your brain is not suited for the mathemagical processing necessary to understand our language.To decipher even our most basic texts, it would need a genius that can calculate numbers within seconds in his brain. " }
+	{ npcHandler = npcHandler, i18nKey = "npc.a_wrinkled_bonelord.stdmod_1" }
 )
 
-npcHandler:setMessage(MESSAGE_GREET, "What is this? An optically challenged entity called |PLAYERNAME|. How fascinating!")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Wait right there. I will eat you after writing down what I found out.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Wait right there. I will eat you after writing down what I found out.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.a_wrinkled_bonelord.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.a_wrinkled_bonelord.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.a_wrinkled_bonelord.farewell_msg_1")
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 
 -- npcType registering the npcConfig table

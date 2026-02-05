@@ -19,20 +19,20 @@ local sweetMangonaiseElixir = Action()
 
 function sweetMangonaiseElixir.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if player:hasExhaustion("special-foods-cooldown") then
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.sweet_mangonaise_elixir.msg_1")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.sweet_mangonaise_elixir.msg_1")
 		return true
 	end
 
 	local playerRing = player:getSlotItem(CONST_SLOT_RING)
 	if not playerRing or not table.contains(ringMultiplicationTable, playerRing:getId()) then
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.sweet_mangonaise_elixir.msg_2")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.sweet_mangonaise_elixir.msg_2")
 		player:getPosition():sendMagicEffect(CONST_ME_POFF)
 		return true
 	end
 
 	local ringId = ringMultiplicationTable[playerRing:getId()]
 	if not ringId then
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.sweet_mangonaise_elixir.msg_3")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.sweet_mangonaise_elixir.msg_3")
 		player:getPosition():sendMagicEffect(CONST_ME_POFF)
 		return false
 	end
@@ -41,7 +41,7 @@ function sweetMangonaiseElixir.onUse(player, item, fromPosition, target, toPosit
 		player:addItem(ringId)
 	end
 
-	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.sweet_mangonaise_elixir.msg_4")
+	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.sweet_mangonaise_elixir.msg_4")
 	player:sayLocalized("scripts.sweet_mangonaise_elixir.say_1", TALKTYPE_MONSTER_SAY)
 	player:getPosition():sendMagicEffect(CONST_ME_MAGIC_RED)
 	player:setExhaustion("special-foods-cooldown", 10 * 60)

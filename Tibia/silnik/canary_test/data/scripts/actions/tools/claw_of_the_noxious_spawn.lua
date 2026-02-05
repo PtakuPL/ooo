@@ -12,7 +12,7 @@ function clawOfTheNoxiousSpawn.onUse(player, item, fromPosition, target, toPosit
 	if item == player:getSlotItem(CONST_SLOT_RING) then
 		if math.random(100) <= 5 then
 			player:addCondition(cursed)
-			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.claw_of_the_noxious_spawn.msg_1")
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.claw_of_the_noxious_spawn.msg_1")
 			item:transform(9395)
 			item:decay()
 			player:getPosition():sendMagicEffect(CONST_ME_MAGIC_RED)

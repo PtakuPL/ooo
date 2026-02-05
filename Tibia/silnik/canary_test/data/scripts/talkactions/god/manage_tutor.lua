@@ -31,7 +31,7 @@ function addTutor.onSay(player, words, param)
 
 	targetPlayer:setAccountType(ACCOUNT_TYPE_TUTOR)
 	targetPlayer:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have been promoted to a tutor by " .. player:getName() .. ".")
-	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.manage_tutor.msg_1" .. targetPlayer:getName() .. " to a tutor.")
+	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.manage_tutor.msg_1" .. targetPlayer:getName() .. " to a tutor.")
 	return true
 end
 
@@ -73,7 +73,7 @@ function removeTutor.onSay(player, words, param)
 
 	targetPlayer:setAccountType(ACCOUNT_TYPE_NORMAL)
 	--targetPlayer:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have been demoted to a normal player by " .. player:getName() .. ".")
-	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.manage_tutor.msg_2" .. targetPlayer:getName() .. " to a normal player.")
+	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.manage_tutor.msg_2" .. targetPlayer:getName() .. " to a normal player.")
 	return true
 end
 

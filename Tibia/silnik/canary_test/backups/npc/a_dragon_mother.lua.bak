@@ -55,14 +55,14 @@ local function greetCallback(npc, creature)
 	local playerId = player:getId()
 
 	if player:getStorageValue(Storage.Quest.U11_02.ForgottenKnowledge.BabyDragon) < 1 then
-		npcHandler:setMessage(MESSAGE_GREET, "Greetings humans! Consider yourselfs lucky, I'm in need of {help}.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.a_dragon_mother.greet_msg_1")
 		npcHandler:setTopic(playerId, 1)
 		return true
 	elseif player:getStorageValue(Storage.Quest.U11_02.ForgottenKnowledge.AccessMachine) == 1 then
-		npcHandler:setMessage(MESSAGE_GREET, "Grrr.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.a_dragon_mother.greet_msg_2")
 		return true
 	elseif player:getStorageValue(Storage.Quest.U11_02.ForgottenKnowledge.HorrorKilled) >= 1 then
-		npcHandler:setMessage(MESSAGE_GREET, "You have done me a favour and the knowledge you are seeking shall be yours. I melted the ice for you, you can pass now.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.a_dragon_mother.greet_msg_3")
 		player:setStorageValue(Storage.Quest.U11_02.ForgottenKnowledge.AccessMachine, 1)
 	end
 	return true

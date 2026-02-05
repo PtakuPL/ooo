@@ -91,7 +91,7 @@ function playerLoginGlobal.onLogin(player)
 			if vipBonusExp > 0 and player:isVip() then
 				vipBonusExp = (vipBonusExp > 100 and 100) or vipBonusExp
 				baseRate = baseRate * (1 + (vipBonusExp / 100))
-				player:sendLocalizedMessage(MESSAGE_BOOSTED_CREATURE, "scripts.login.msg_1" .. baseRate .. "%, because you are VIP, bonus of " .. vipBonusExp .. "%")
+				player:sendLocalizedTextMessage(MESSAGE_BOOSTED_CREATURE, "scripts.login.msg_1" .. baseRate .. "%, because you are VIP, bonus of " .. vipBonusExp .. "%")
 			end
 		end
 

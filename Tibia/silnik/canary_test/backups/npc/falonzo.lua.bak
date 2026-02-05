@@ -122,9 +122,9 @@ keywordHandler:addKeyword({ "attention" }, StdModule.say, {
 	i18nKey = "npc.falonzo.stdmod_6",
 })
 
-npcHandler:setMessage(MESSAGE_GREET, "Greetings, adventurer!")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye!")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Well, bye then.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.falonzo.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.falonzo.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.falonzo.walkaway_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

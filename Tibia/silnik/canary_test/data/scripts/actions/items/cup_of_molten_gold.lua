@@ -14,7 +14,7 @@ function cupOfMoltenGold.onUse(player, item, fromPosition, target, toPosition, i
 			player:addItem(transformedItemId, 1)
 		end
 	else
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.cup_of_molten_gold.msg_1")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.cup_of_molten_gold.msg_1")
 
 		if targetId == 19111 then
 			target:remove(1)

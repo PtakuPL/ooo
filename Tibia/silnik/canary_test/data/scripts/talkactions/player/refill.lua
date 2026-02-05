@@ -31,10 +31,10 @@ function refill.onSay(player, words, param)
 		end
 	end
 	if #refilledItems == 0 then
-		player:sendLocalizedMessage(MESSAGE_LOOK, "scripts.refill.msg_1")
+		player:sendLocalizedTextMessage(MESSAGE_LOOK, "scripts.refill.msg_1")
 	else
 		local itemList = table.concat(refilledItems, ", ")
-		player:sendTextMessage(MESSAGE_LOOK, "Refilled " .. itemList .. " for a total of " .. totalCost .. " silver tokens.")
+		player:sendLocalizedTextMessage(MESSAGE_LOOK, "talkaction.refill.msg_refilled", {itemList, tostring(totalCost)})
 	end
 	return true
 end

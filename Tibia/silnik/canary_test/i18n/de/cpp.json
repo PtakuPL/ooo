@@ -1,1 +1,18 @@
-{}
+{
+  "cpp.cancel.group_name_exists": "A group with this name already exists. Please choose another name.",
+  "cpp.cancel.player_not_exist": "A player with this name does not exist.",
+  "cpp.cancel.not_possible": "Sorry, not possible.",
+  "cpp.cancel.no_stowable_items": "There are no stowable items in this container.",
+  "cpp.cancel.cannot_stow_here": "This item cannot be stowed here.",
+  "cpp.cancel.not_allowed_construct": "You are not allowed to construct this here.",
+  "cpp.cancel.wrap_on_floor": "You can only wrap/unwrap on the floor.",
+  "cpp.cancel.cannot_move_house": "You cannot move this item out of this house.",
+  "cpp.cancel.no_pm_self": "You cannot set up a private message channel with yourself.",
+  "cpp.cancel.cannot_stow_containers": "You cannot stow containers.",
+  "cpp.cancel.stash_wait": "You can't use stash right now.",
+  "cpp.cancel.construct_inside_house": "You may construct this only inside a house.",
+  "cpp.cancel.hold_container_loot": "You must be holding the container to set it as a loot container.",
+  "cpp.cancel.must_be_premium": "You must be premium.",
+  "cpp.cancel.wait_again": "You need to wait to do this again.",
+  "cpp.cancel.max_beds": "You reached the maximum beds in this house"
+}

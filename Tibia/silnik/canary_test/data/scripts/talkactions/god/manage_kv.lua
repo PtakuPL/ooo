@@ -40,14 +40,14 @@ function getAllKV.onSay(player, words, param)
 
 	local kv = targetPlayer:kv()
 	if not kv then
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.manage_kv.msg_1")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.manage_kv.msg_1")
 		return
 	end
 
 	local found = false
 	local keys = kv:keys()
 	if not keys then
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.manage_kv.msg_2")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.manage_kv.msg_2")
 		return
 	end
 
@@ -60,7 +60,7 @@ function getAllKV.onSay(player, words, param)
 	end
 
 	if not found then
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.manage_kv.msg_3" .. playerName .. ".")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.manage_kv.msg_3" .. playerName .. ".")
 	end
 end
 
@@ -73,7 +73,7 @@ local set = TalkAction("/setkv")
 function set.onSay(player, words, param)
 	local key, rest = string.splitFirst(param, ",")
 	if not key or not rest then
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.manage_kv.msg_4")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.manage_kv.msg_4")
 		return false
 	end
 
@@ -90,12 +90,12 @@ function set.onSay(player, words, param)
 	end
 	local success, parsedValue = pcall(load("return " .. value))
 	if not success then
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.manage_kv.msg_5")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.manage_kv.msg_5")
 		return false
 	end
 	local kv = targetPlayer:kv()
 	if not kv then
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.manage_kv.msg_6")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.manage_kv.msg_6")
 		return false
 	end
 	kv:set(key, parsedValue)
@@ -120,7 +120,7 @@ function bossCooldown.onSay(player, words, param)
 		return
 	end
 	targetPlayer:setBossCooldown(boss, 0)
-	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.manage_kv.msg_7" .. playerName .. " cleared.")
+	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.manage_kv.msg_7" .. playerName .. " cleared.")
 	targetPlayer:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Boss cooldown for " .. boss .. " cleared.")
 end
 

@@ -35,7 +35,7 @@ function bedModificationKits.onUse(player, item, fromPosition, target, toPositio
 
 	local targetItemId = target:getId()
 	if targetItemId == newBed[1][1] or targetItemId == newBed[2][1] then
-		player:sendLocalizedMessage(MESSAGE_FAILURE, "scripts.bed_modification_kits.msg_1")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "scripts.bed_modification_kits.msg_1")
 		return true
 	end
 

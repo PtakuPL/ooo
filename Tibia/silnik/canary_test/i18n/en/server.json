@@ -64,5 +64,10 @@
   "server.player_vip.msg_2": "This player is already in your list.",
   "server.player_wheel.msg_1": "Something went wrong, try relogging and try again or contact and adminstrator",
   "server.player_wheel.msg_2": "Something went wrong, try relogging and try again",
-  "server.player_wheel.msg_3": "That was close! Fortunately, your were saved by the Gift of Life."
+  "server.player_wheel.msg_3": "That was close! Fortunately, your were saved by the Gift of Life.",
+  "server.game.msg_31": "Not enough space in your inbox.",
+  "server.game.msg_32": "Not enough space in your inbox to all items, processed only {count} items.",
+  "server.player.msg_11": "You have reached the maximum stow limit of {count} items. Try to stow again.",
+  "server.spells.msg_3": "You cannot cast spells while you have {count} character(s) outside of a protection zone.",
+  "server.player.msg_12": " was not justified."
 }

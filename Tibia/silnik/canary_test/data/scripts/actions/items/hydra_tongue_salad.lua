@@ -15,7 +15,7 @@ local hydraTongueSalad = Action()
 
 function hydraTongueSalad.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if player:hasExhaustion("special-foods-cooldown") then
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.hydra_tongue_salad.msg_1")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.hydra_tongue_salad.msg_1")
 		return true
 	end
 
@@ -23,7 +23,7 @@ function hydraTongueSalad.onUse(player, item, fromPosition, target, toPosition, 
 		player:removeCondition(conditionType)
 	end
 
-	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.hydra_tongue_salad.msg_2")
+	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.hydra_tongue_salad.msg_2")
 	player:sayLocalized("scripts.hydra_tongue_salad.say_1", TALKTYPE_MONSTER_SAY)
 	player:getPosition():sendMagicEffect(CONST_ME_MAGIC_RED)
 	player:setExhaustion("special-foods-cooldown", 10 * 60)

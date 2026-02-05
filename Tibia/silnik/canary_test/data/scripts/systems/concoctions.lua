@@ -8,13 +8,13 @@ local configs = {
 		amount = 60, -- minutes
 		callback = function(player, config)
 			player:setStamina(player:getStamina() + config.amount)
-			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.concoctions.msg_1" .. config.amount .. " minutes of stamina.")
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.concoctions.msg_1" .. config.amount .. " minutes of stamina.")
 		end,
 	},
 	[Concoction.Ids.KooldownAid] = {
 		callback = function(player)
 			player:clearSpellCooldowns()
-			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.concoctions.msg_2")
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.concoctions.msg_2")
 		end,
 	},
 	[Concoction.Ids.StrikeEnhancement] = { condition = { CONDITION_PARAM_SKILL_CRITICAL_HIT_CHANCE, 500 } },

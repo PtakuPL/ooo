@@ -79,9 +79,9 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-npcHandler:setMessage(MESSAGE_GREET, "LONG LIVE THE QUEEN!")
-npcHandler:setMessage(MESSAGE_FAREWELL, "LONG LIVE THE QUEEN!")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "LONG LIVE THE QUEEN!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.busty_bonecrusher.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.busty_bonecrusher.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.busty_bonecrusher.walkaway_msg_1")
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

@@ -1,1 +1,5 @@
-{}
+{
+  "talkaction.online.msg_summary": "{count} players online | Training: {training} | Idle: {idle} | Active: {active}",
+  "talkaction.position.msg_position": "Your current position is: {x}, {y}, {z}.",
+  "talkaction.refill.msg_refilled": "Refilled {items} for a total of {cost} silver tokens."
+}

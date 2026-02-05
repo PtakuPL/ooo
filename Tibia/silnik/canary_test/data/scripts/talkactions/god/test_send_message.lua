@@ -5,7 +5,7 @@ function sendMessage.onSay(player, words, param)
 	logCommand(player, words, param)
 
 	if param == "" or param == nil then
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.test_send_message.msg_1")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.test_send_message.msg_1")
 		return
 	end
 
@@ -16,7 +16,7 @@ function sendMessage.onSay(player, words, param)
 		textCollor = tonumber(split[2])
 	end
 
-	player:sendLocalizedMessage(messageType, "scripts.test_send_message.msg_2", player:getPosition(), 500, textCollor)
+	player:sendLocalizedTextMessage(messageType, "scripts.test_send_message.msg_2", player:getPosition(), 500, textCollor)
 	return true
 end
 

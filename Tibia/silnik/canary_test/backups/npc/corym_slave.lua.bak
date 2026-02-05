@@ -59,7 +59,7 @@ local function greetCallback(npc, creature, message)
 			"Every man is the architect of his own fortune. There will be the day of {pay back}.",
 		})
 	else
-		npcHandler:setMessage(MESSAGE_GREET, "The repression has taken too long. With our new weapons the respective people will get their just punishment.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.corym_slave.greet_msg_1")
 	end
 	return true
 end
@@ -82,7 +82,7 @@ local function creatureSayCallback(npc, creature, type, message)
 end
 
 -- Greeting message
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye, |PLAYERNAME|.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.corym_slave.farewell_msg_1")
 
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)

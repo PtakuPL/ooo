@@ -25,11 +25,11 @@ function testLog.onSay(player, words, param)
 	elseif logLevel == "debug" then
 		logger.debug("[testLog] - {}", message)
 	else
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.test.msg_1")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.test.msg_1")
 		return false
 	end
 
-	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.test.msg_2" .. message .. "] at '" .. logLevel .. "' level.")
+	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.test.msg_2" .. message .. "] at '" .. logLevel .. "' level.")
 	return true
 end
 

@@ -1,15 +1,15 @@
 {
-  "total_cycles": 615,
-  "mode": "AUTO_TRANSLATE",
-  "category": "lt",
-  "last_update": "2025-12-17T11:03:04.152072",
+  "total_cycles": 932,
+  "mode": "MIGRATION",
+  "category": "errors",
+  "last_update": "2025-12-21T15:51:09.186375",
   "migration": {
-    "files_scanned": 3,
-    "files_with_keys": 3,
-    "files_without_keys": 0,
-    "keys_extracted": 3,
-    "current_category": "items",
-    "batch_size": 10
+    "files_scanned": 2297,
+    "files_with_keys": 1892,
+    "files_without_keys": 405,
+    "keys_extracted": 6243,
+    "current_category": "errors",
+    "batch_size": 126
   },
   "translation_sync": {
     "language": "sw",

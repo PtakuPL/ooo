@@ -9,12 +9,12 @@ local northernFishburger = Action()
 
 function northernFishburger.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if player:hasExhaustion("special-foods-cooldown") then
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.northern_fishburger.msg_1")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.northern_fishburger.msg_1")
 		return true
 	end
 
 	player:addCondition(fishingCondition)
-	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.northern_fishburger.msg_2")
+	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.northern_fishburger.msg_2")
 	player:sayLocalized("scripts.northern_fishburger.say_1", TALKTYPE_MONSTER_SAY)
 	player:getPosition():sendMagicEffect(CONST_ME_MAGIC_RED)
 	player:setExhaustion("special-foods-cooldown", 10 * 60)

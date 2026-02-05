@@ -2,8 +2,7 @@ local tutorPosition = TalkAction("!position")
 
 function tutorPosition.onSay(player, words, param)
 	local position = player:getPosition()
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Your current position is: \z
-		" .. position.x .. ", " .. position.y .. ", " .. position.z .. ".")
+	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "talkaction.position.msg_position", {tostring(position.x), tostring(position.y), tostring(position.z)})
 	return true
 end
 

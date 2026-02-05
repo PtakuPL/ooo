@@ -3,7 +3,7 @@ local emoteSpell = TalkAction("!emote")
 
 function emoteSpell.onSay(player, words, param)
 	if configManager.getBoolean(configKeys.EMOTE_SPELLS) == false then
-		player:sendLocalizedMessage(MESSAGE_LOOK, "scripts.emote_spell.msg_1")
+		player:sendLocalizedTextMessage(MESSAGE_LOOK, "scripts.emote_spell.msg_1")
 		return true
 	end
 
@@ -14,10 +14,10 @@ function emoteSpell.onSay(player, words, param)
 
 	if param == "on" then
 		player:setStorageValue(STORAGEVALUE_EMOTE, 1)
-		player:sendLocalizedMessage(MESSAGE_LOOK, "scripts.emote_spell.msg_2")
+		player:sendLocalizedTextMessage(MESSAGE_LOOK, "scripts.emote_spell.msg_2")
 	elseif param == "off" then
 		player:setStorageValue(STORAGEVALUE_EMOTE, 0)
-		player:sendLocalizedMessage(MESSAGE_LOOK, "scripts.emote_spell.msg_3")
+		player:sendLocalizedTextMessage(MESSAGE_LOOK, "scripts.emote_spell.msg_3")
 	end
 	return true
 end

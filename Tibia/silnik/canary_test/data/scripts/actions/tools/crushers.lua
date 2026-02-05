@@ -20,13 +20,13 @@ local amberCrusher = Action()
 
 function amberCrusher.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if not target or not target:isItem() or target:getId() == item:getId() or player:getItemCount(target:getId()) <= 0 then
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.crushers.msg_1")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.crushers.msg_1")
 		return true
 	end
 
 	local fragmentType, fragmentRange = getGemData(target:getId())
 	if not fragmentType then
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.crushers.msg_2")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.crushers.msg_2")
 		return true
 	end
 
@@ -37,7 +37,7 @@ function amberCrusher.onUse(player, item, fromPosition, target, toPosition, isHo
 		player:addItem(fragmentType, math.random(fragmentRange[1], fragmentRange[2]))
 	end
 
-	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.crushers.msg_3")
+	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.crushers.msg_3")
 	return true
 end
 
@@ -48,25 +48,25 @@ local crusher = Action()
 
 function crusher.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if not target or not target:isItem() or target:getId() == item:getId() or player:getItemCount(target:getId()) <= 0 then
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.crushers.msg_4")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.crushers.msg_4")
 		return true
 	end
 
 	local fragmentType, fragmentRange = getGemData(target:getId())
 	if not fragmentType then
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.crushers.msg_5")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.crushers.msg_5")
 		return true
 	end
 
 	local crusherCharges = item:getAttribute(ITEM_ATTRIBUTE_CHARGES)
 	if not crusherCharges or crusherCharges <= 0 then
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.crushers.msg_6")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.crushers.msg_6")
 		return true
 	end
 
 	target:remove(1)
 	player:addItem(fragmentType, math.random(fragmentRange[1], fragmentRange[2]))
-	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.crushers.msg_7")
+	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.crushers.msg_7")
 
 	crusherCharges = crusherCharges - 1
 	if crusherCharges > 0 then
@@ -77,7 +77,7 @@ function crusher.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 		end
 	else
 		item:remove()
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.crushers.msg_8")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.crushers.msg_8")
 	end
 	return true
 end

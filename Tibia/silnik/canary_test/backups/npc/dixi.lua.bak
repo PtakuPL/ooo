@@ -144,7 +144,7 @@ keywordHandler:addKeyword({ "dallheim" }, StdModule.say, { npcHandler = npcHandl
 keywordHandler:addAliasKeyword({ "zerbrus" })
 
 NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.dixi.walkaway_msg_1")
-npcHandler:setMessage(MESSAGE_SENDTRADE, "Here, take a look and choose something nice for you!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_SENDTRADE, "npc.dixi.sendtrade_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

@@ -144,7 +144,7 @@ function food.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 
 	local condition = player:getCondition(CONDITION_REGENERATION, CONDITIONID_DEFAULT)
 	if condition and math.floor(condition:getTicks() / 1000 + (itemFood[1] * 12)) >= 1200 then
-		player:sendLocalizedMessage(MESSAGE_FAILURE, "scripts.foods.msg_1")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "scripts.foods.msg_1")
 		return true
 	end
 

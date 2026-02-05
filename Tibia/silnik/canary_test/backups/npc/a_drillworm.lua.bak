@@ -53,7 +53,7 @@ local function greetCallback(npc, creature)
 	local SPIKE_STORAGE = player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Lower_Undercover_Main)
 
 	if table.contains({ -1, 3 }, SPIKE_STORAGE) then
-		npcHandler:setMessage(MESSAGE_GREET, "Pssst! Keep it down! <gives you an elaborate report on monster activity>")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.a_drillworm.greet_msg_1")
 		return true
 	end
 
@@ -62,14 +62,14 @@ local function greetCallback(npc, creature)
 	end
 
 	if table.contains(UNDERCOVER_CONTACTED[player:getGuid()], npc:getId()) then
-		npcHandler:setMessage(MESSAGE_GREET, "Pssst! Keep it down! <gives you an elaborate report on monster activity>")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.a_drillworm.greet_msg_2")
 		return true
 	end
 
 	player:setStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Lower_Undercover_Main, SPIKE_STORAGE + 1)
 	table.insert(UNDERCOVER_CONTACTED[player:getGuid()], npc:getId())
 	npcHandler:removeInteraction(npc, creature)
-	npcHandler:setMessage(MESSAGE_GREET, "Pssst! Keep it down! <gives you an elaborate report on monster activity>")
+	NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.a_drillworm.greet_msg_3")
 	return true
 end
 

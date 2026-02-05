@@ -13,7 +13,7 @@ function startRaid.onSay(player, words, param)
 	if returnValue ~= RETURNVALUE_NOERROR then
 		player:sendTextMessage(MESSAGE_ADMINISTRATOR, Game.getReturnMessage(returnValue))
 	else
-		player:sendLocalizedMessage(MESSAGE_ADMINISTRATOR, "scripts.start_raid.msg_1")
+		player:sendLocalizedTextMessage(MESSAGE_ADMINISTRATOR, "scripts.start_raid.msg_1")
 	end
 	return true
 end

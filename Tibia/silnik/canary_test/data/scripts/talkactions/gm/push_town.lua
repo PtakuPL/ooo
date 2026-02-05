@@ -12,7 +12,7 @@ function pushTown.onSay(player, words, param)
 			player:sendCancelMessage("A player with that name is not online.")
 			return true
 		end
-		player:sendLocalizedMessage(MESSAGE_STATUS, "scripts.push_town.msg_1" .. targetPlayer:getName() .. " to temple.")
+		player:sendLocalizedTextMessage(MESSAGE_STATUS, "scripts.push_town.msg_1" .. targetPlayer:getName() .. " to temple.")
 		targetPlayer:teleportTo(targetPlayer:getTown():getTemplePosition())
 		targetPlayer:sendLocalizedTextMessage(MESSAGE_STATUS, "scripts.talkactions.gm.push_town_1")
 		targetPlayer:getPosition():sendMagicEffect(CONST_ME_HOLYAREA)

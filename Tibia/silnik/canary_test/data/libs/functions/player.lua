@@ -104,7 +104,7 @@ function Player.transferMoneyTo(self, target, amount)
 
 	local targetPlayer = Player(target)
 	if targetPlayer then
-		targetPlayer:sendTextMessage(MESSAGE_LOOK, self:getName() .. " has transferred " .. FormatNumber(amount) .. " gold coins to you.")
+		targetPlayer:sendLocalizedTextMessage(MESSAGE_LOOK, "lib.player.msg_transfer", {self:getName(), FormatNumber(amount)})
 	end
 	return true
 end
@@ -120,7 +120,7 @@ function Player.removeMoneyBank(self, amount)
 	if amount <= inventoryMoney then
 		self:removeMoney(amount)
 		if amount > 0 then
-			self:sendTextMessage(MESSAGE_TRADE, ("Paid %d gold from inventory."):format(amount))
+			self:sendLocalizedTextMessage(MESSAGE_TRADE, "lib.player.msg_paid_inventory", {tostring(amount)})
 		end
 		return true
 	end
@@ -136,7 +136,7 @@ function Player.removeMoneyBank(self, amount)
 		Bank.debit(self, remainingAmount)
 
 		self:setBankBalance(bankBalance - remainingAmount)
-		self:sendTextMessage(MESSAGE_TRADE, ("Paid %s from inventory and %s gold from bank account. Your account balance is now %s gold."):format(FormatNumber(amount - remainingAmount), FormatNumber(remainingAmount), FormatNumber(self:getBankBalance())))
+		self:sendLocalizedTextMessage(MESSAGE_TRADE, "lib.player.msg_paid_mixed", {FormatNumber(amount - remainingAmount), FormatNumber(remainingAmount), FormatNumber(self:getBankBalance())})
 		return true
 	end
 	return false
@@ -231,12 +231,12 @@ function Player:CreateFamiliarSpell(spellId)
 	local playerPosition = self:getPosition()
 	if not self:isPremium() then
 		playerPosition:sendMagicEffect(CONST_ME_POFF)
-		self:sendCancelMessage("You need a premium account.")
+		self:sendLocalizedTextMessage(MESSAGE_FAILURE, "lib.player.msg_need_premium")
 		return false
 	end
 
 	if #self:getSummons() >= 1 and self:getAccountType() < ACCOUNT_TYPE_GOD then
-		self:sendCancelMessage("You can't have other summons.")
+		self:sendLocalizedTextMessage(MESSAGE_FAILURE, "lib.player.msg_no_other_summons")
 		playerPosition:sendMagicEffect(CONST_ME_POFF)
 		return false
 	end
@@ -811,14 +811,12 @@ function Player:canGetReward(rewardId, questName)
 	local baseMessage = "You have found a " .. rewardItem:getName()
 	local backpack = self:getSlotItem(CONST_SLOT_BACKPACK)
 	if not backpack or backpack:getEmptySlots(true) < 1 then
-		baseMessage = baseMessage .. ", but you have no room to take it."
-		self:sendTextMessage(MESSAGE_EVENT_ADVANCE, baseMessage)
+		self:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "lib.player.msg_found_no_room", {rewardItem:getName()})
 		return false
 	end
 
 	if (self:getFreeCapacity() / 100) < itemWeight then
-		baseMessage = baseMessage .. ". Weighing " .. itemWeight .. " oz, it is too heavy for you to carry."
-		self:sendTextMessage(MESSAGE_EVENT_ADVANCE, baseMessage)
+		self:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "lib.player.msg_found_too_heavy", {rewardItem:getName(), tostring(itemWeight)})
 		return false
 	end
 

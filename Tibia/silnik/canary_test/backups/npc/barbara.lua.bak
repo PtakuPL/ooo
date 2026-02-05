@@ -81,8 +81,8 @@ end
 keywordHandler:addGreetKeyword({ "hail queen" }, { npcHandler = npcHandler, text = "HAIL TO THE QUEEN!", i18nKey = "npc.barbara.greet_1" })
 keywordHandler:addGreetKeyword({ "salutations queen" }, { npcHandler = npcHandler, text = "HAIL TO THE QUEEN!", i18nKey = "npc.barbara.greet_2" })
 
-npcHandler:setMessage(MESSAGE_WALKAWAY, "LONG LIVE THE QUEEN!")
-npcHandler:setMessage(MESSAGE_FAREWELL, "LONG LIVE THE QUEEN! You may leave now!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.barbara.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.barbara.farewell_msg_1")
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)

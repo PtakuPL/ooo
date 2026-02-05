@@ -54,7 +54,7 @@ keywordHandler:addGreetKeyword({ "hi" }, { npcHandler = npcHandler, text = "Hell
 
 keywordHandler:addAliasKeyword({ "hello" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Hello and welcome in the Gnomprona Gardens")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.gnominer.greet_msg_1")
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

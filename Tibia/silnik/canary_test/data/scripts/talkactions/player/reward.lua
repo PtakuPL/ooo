@@ -33,13 +33,13 @@ local function sendExerciseRewardModal(player)
 						item:setAttribute(ITEM_ATTRIBUTE_STORE, systemTime())
 						item:setAttribute(ITEM_ATTRIBUTE_DESCRIPTION, string.format("You won this exercise weapon as a reward to be a %s player. Use it in a dummy!\nHave a nice game..", configManager.getString(configKeys.SERVER_NAME)))
 					else
-						player:sendLocalizedMessage(MESSAGE_LOOK, "scripts.reward.msg_1")
+						player:sendLocalizedTextMessage(MESSAGE_LOOK, "scripts.reward.msg_1")
 						return
 					end
 					player:sendLocalizedTextMessage(MESSAGE_LOOK, "scripts.reward.msg_1", {iType:getName(), it.charges})
 					player:setStorageValue(config.storage, 1)
 				else
-					player:sendLocalizedMessage(MESSAGE_LOOK, "scripts.reward.msg_2")
+					player:sendLocalizedTextMessage(MESSAGE_LOOK, "scripts.reward.msg_2")
 				end
 			end)
 		end
@@ -57,7 +57,7 @@ function exerciseRewardModal.onSay(player, words, param)
 		return true
 	end
 	if player:getStorageValue(config.storage) > 0 then
-		player:sendLocalizedMessage(MESSAGE_LOOK, "scripts.reward.msg_3")
+		player:sendLocalizedTextMessage(MESSAGE_LOOK, "scripts.reward.msg_3")
 		return true
 	end
 	sendExerciseRewardModal(player)

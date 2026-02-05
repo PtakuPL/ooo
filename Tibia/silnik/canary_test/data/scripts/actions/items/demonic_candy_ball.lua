@@ -39,7 +39,7 @@ local demonicCandyBall = Action()
 
 function demonicCandyBall.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if player:hasExhaustion("special-foods-cooldown") then
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.demonic_candy_ball.msg_1")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.demonic_candy_ball.msg_1")
 		return true
 	end
 
@@ -48,17 +48,17 @@ function demonicCandyBall.onUse(player, item, fromPosition, target, toPosition, 
 
 	if randomConditionIndex == 1 then
 		player:addCondition(availableConditions[math.random(1, #availableConditions)])
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.demonic_candy_ball.msg_2")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.demonic_candy_ball.msg_2")
 	elseif randomConditionIndex == 2 then
 		player:addCondition(lightCondition)
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.demonic_candy_ball.msg_3")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.demonic_candy_ball.msg_3")
 	elseif randomConditionIndex == 3 then
 		player:addCondition(condition_i)
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.demonic_candy_ball.msg_4")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.demonic_candy_ball.msg_4")
 	elseif randomConditionIndex == 4 then
 		player:addHealth(player:getMaxHealth())
 		player:addMana(player:getMaxMana())
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.demonic_candy_ball.msg_5")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.demonic_candy_ball.msg_5")
 	end
 
 	player:sayLocalized("scripts.demonic_candy_ball.say_1", TALKTYPE_MONSTER_SAY)

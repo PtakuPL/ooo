@@ -69,14 +69,14 @@ local function greetCallback(npc, creature)
 		end
 		npcHandler:setMessage(MESSAGE_GREET, greetMessage)
 	else
-		npcHandler:setMessage(MESSAGE_GREET, "Ashari, |PLAYERNAME|.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.edala.greet_msg_1")
 	end
 	return true
 end
 
 -- Fire of the Suns
 local blessKeyword = keywordHandler:addKeyword({ "suns" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.edala.stdmod_1" })
-blessKeyword:addChildKeyword({ "yes" }, StdModule.bless, { npcHandler = npcHandler, text = "So receive the fire of the suns, pilgrim.", cost = "|BLESSCOST|", bless = 4 })
+blessKeyword:addChildKeyword({ "yes" }, StdModule.bless, { npcHandler = npcHandler, i18nKey = "npc.edala.keyword_1", cost = "|BLESSCOST|", bless = 4 })
 blessKeyword:addChildKeyword({ "" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.edala.stdmod_2", reset = true })
 keywordHandler:addAliasKeyword({ "fire" })
 
@@ -138,8 +138,8 @@ keywordHandler:addFarewellKeyword({ "asgha thrazi" }, { npcHandler = npcHandler,
 
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)
 
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Asha Thrazi, |PLAYERNAME|!")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Asha Thrazi, |PLAYERNAME|!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.edala.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.edala.farewell_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

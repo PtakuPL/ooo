@@ -27,7 +27,7 @@ function playersOnline.onSay(player, words, param)
 	end
 
 	local onlineCount = #onlineList.Training + #onlineList.Idle + #onlineList.Active
-	player:sendTextMessage(MESSAGE_ATTENTION, ("%d players online | Training: %d | Idle: %d | Active: %s"):format(onlineCount, #onlineList.Training, #onlineList.Idle, #onlineList.Active))
+	player:sendLocalizedTextMessage(MESSAGE_ATTENTION, "talkaction.online.msg_summary", {tostring(onlineCount), tostring(#onlineList.Training), tostring(#onlineList.Idle), tostring(#onlineList.Active)})
 
 	for category, list in pairs(onlineList) do
 		if #list > 0 then

@@ -26,26 +26,26 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Orshabaal was out of his maze to make us suffer for many days. In Calmera, a knight with blue beard from his hideout appeared. He fought bravely supported by mages, the demon ran and is gone for ages." },
-	{ text = "A knight from Guardia needed Chayenne's key. His friend dropped the item on the floor, hoping no one would see. But, at the same moment, a man crossed their way and all the knight's dreams faded away." },
-	{ text = "A knight from Candia was dining at Frodo's hut, devouring plates full of meat and whatnot. Suddenly, he was called to fight. He wanted to put his armor on but it was too tight." },
-	{ text = "The druid entered a Premian pyramid intent on the kill, 'Oh, that djinn will die, it will!' Down and up the stairs she hopped like a cat... When, Oops! She moved the wrong way, and died a drunk rat." },
-	{ text = "Hoping to find a strange orc in his spawn, a Zaneran knight logged on before dawn. A sudden heart attack left him surprised as Sam's old backpack he had recognised." },
-	{ text = "The world I shall save', an Olympian knight proclaimed! But from a visit to the bar he could not abstain! He woke up in pain, it all was in vain. From Venorian beer he will forever refrain." },
-	{ text = "During the dark and scary night, when others sleep he goes to fight, banishing demons, that feels right, purging the evil on the sight, fearlessly waiting for daylight, Zeluna's bravest elite knight." },
-	{ text = "A druid from Celesta once talked with a girl, he even bought her a necklace with a huge white pearl. Every time he went home, without money and fame, I guess this girl is cursed, Aruda is the name." },
-	{ text = "A story of a knight untold, on Rowana the dice she rolled. She lured players from afar. Who could resist a shining star? She promised gold and many items, then stole their heart with cunning kindness." },
-	{ text = "Do you think it's just a game? Don't you fear the dragon's flame? If you are as brave as bright, if you do not stray from fight, you may want to hear tonight, the tale of Guardia's lonely knight." },
-	{ text = "For a knight from Yanara 10,000 gold were a lot. So he ventured with a team into the desert to win that pot. He solved all the riddles, strongly willed. But on his journey home he sadly was killed." },
-	{ text = "A great mage from Celesta went dungeon down deep, he was very brave but his wand was cheap. Among white skeletons one of them was red. Last what he saw were the words: 'You are dead!'" },
-	{ text = "A young sorcerer born and raised on Astera when dragons were scary, it was that kind of era. Walking all the way to the city of Venore, he stole from the dwarven bridge nothing less than an iron ore." },
-	{ text = "A druid from Eternia just bought his first boots of haste, to finally have his leather boots replaced. Catching a backpack of fish was now his dream, but he ended up swinging his new boots upstream." },
-	{ text = "A sorcerer from Efidia took his horse and got it saddled, and set out for battle. His horse lost control and threw him into a hole. Now his team lost all hope, because he forgot to bring a rope." },
-	{ text = "A knight in Guardia was feeling bored. He wanted to show a dragon lord the taste of his new carlin sword. To its lair then he did go. But before he saw his foe, he met his end by a one hit K.O." },
-	{ text = "On Secura a confident knight levelled to main, 840 rats he had slain. 'I am going to kill dragons,' he said while pounding his breastplate. The next thing he saw was: 'You have met a sad fate.'" },
-	{ text = "One morning frosty fresh and nice, a knight was fishing on the ice. Catching some pikes for soup, but a dire penguin ate his loot. His angry wife said in the house: Now whole Beneva will laugh at us!" },
-	{ text = "A paladin slaying dragons on Antica's soil, when a lord charges on to make the adventurer's blood boil. It puts up a strong fight, but to no avail. It gets slain and drops a dragon scale mail!" },
-	{ text = "Through Rookgaard's sewer there swarmed no fewer than a hundred screeching rats. Wading through mud, and covered in blood, two young men fought back-to-back. To Trimera's end; a knight, and a friend." },
+	{ i18nKey = "npc.edgar_ellen.voice_1" },
+	{ i18nKey = "npc.edgar_ellen.voice_2" },
+	{ i18nKey = "npc.edgar_ellen.voice_3" },
+	{ i18nKey = "npc.edgar_ellen.voice_4" },
+	{ i18nKey = "npc.edgar_ellen.voice_5" },
+	{ i18nKey = "npc.edgar_ellen.voice_6" },
+	{ i18nKey = "npc.edgar_ellen.voice_7" },
+	{ i18nKey = "npc.edgar_ellen.voice_8" },
+	{ i18nKey = "npc.edgar_ellen.voice_9" },
+	{ i18nKey = "npc.edgar_ellen.voice_10" },
+	{ i18nKey = "npc.edgar_ellen.voice_11" },
+	{ i18nKey = "npc.edgar_ellen.voice_12" },
+	{ i18nKey = "npc.edgar_ellen.voice_13" },
+	{ i18nKey = "npc.edgar_ellen.voice_14" },
+	{ i18nKey = "npc.edgar_ellen.voice_15" },
+	{ i18nKey = "npc.edgar_ellen.voice_16" },
+	{ i18nKey = "npc.edgar_ellen.voice_17" },
+	{ i18nKey = "npc.edgar_ellen.voice_18" },
+	{ i18nKey = "npc.edgar_ellen.voice_19" },
+	{ i18nKey = "npc.edgar_ellen.voice_20" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -81,8 +81,8 @@ keywordHandler:addKeyword({ "mission" }, StdModule.say, { npcHandler = npcHandle
 keywordHandler:addKeyword({ "quest" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.edgar_ellen.stdmod_4" })
 keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.edgar_ellen.stdmod_5" }) -- Need to add the rest in a second delayed message --It is my duty to see to it that the words of mighty poets all over Tibia are spread and carried with the heart and prowess they deserve.
 
-npcHandler:setMessage(MESSAGE_GREET, "This world is nothing without poetry, don't you think? It gives us hope, it envokes love. It's inciting and invigorating all the same.")
-npcHandler:setMessage(MESSAGE_FAREWELL, " Goodbye and farewell, my friend.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.edgar_ellen.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.edgar_ellen.farewell_msg_1")
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 
 -- npcType registering the npcConfig table

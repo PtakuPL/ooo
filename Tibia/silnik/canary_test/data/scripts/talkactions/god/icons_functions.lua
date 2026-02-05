@@ -79,14 +79,14 @@ function bakragoreIcon.onSay(player, words, param)
 
 	if param == "remove" then
 		player:removeIconBakragore()
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.icons_functions.msg_1")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.icons_functions.msg_1")
 		return true
 	end
 
 	local numParam = tonumber(param)
 	if numParam then
 		if player:hasCondition(CONDITION_BAKRAGORE, numParam) then
-			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.icons_functions.msg_2")
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.icons_functions.msg_2")
 			return true
 		end
 
@@ -94,7 +94,7 @@ function bakragoreIcon.onSay(player, words, param)
 		condition:setParameter(CONDITION_PARAM_TICKS, -1)
 		player:addCondition(condition)
 
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.icons_functions.msg_3" .. numParam)
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.icons_functions.msg_3" .. numParam)
 	end
 
 	return true
@@ -154,7 +154,7 @@ function creatureIconAction.onSay(player, words, param)
 
 	if not iconId or not creatureIconQuests[iconId] then
 		iconId = maxIconId
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.icons_functions.msg_4" .. iconId .. " (" .. creatureIconQuests[iconId] .. ")")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.icons_functions.msg_4" .. iconId .. " (" .. creatureIconQuests[iconId] .. ")")
 	end
 
 	if count <= 0 then
@@ -185,11 +185,11 @@ function creatureIconAction.onSay(player, words, param)
 				updateIcon(current + step, target, step)
 			end, 1000)
 		else
-			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.icons_functions.msg_5")
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.icons_functions.msg_5")
 			addEvent(function()
 				if player and player:isPlayer() then
 					player:setIcon(key, category, 0, 0)
-					player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.icons_functions.msg_6")
+					player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.icons_functions.msg_6")
 				end
 			end, 10000)
 		end

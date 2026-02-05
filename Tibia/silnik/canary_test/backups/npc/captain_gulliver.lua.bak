@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Passages to Thais and Krailos! Visit the strange lands!" },
+	{ i18nKey = "npc.captain_gulliver.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -89,8 +89,8 @@ keywordHandler:addKeyword({ "go" }, StdModule.say, { npcHandler = npcHandler, i1
 
 keywordHandler:addKeyword({ "oramond" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.captain_gulliver.stdmod_17" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Welcome on board, Sir |PLAYERNAME|. Where can I {sail} you today?")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye. Recommend us if you were satisfied with our service.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.captain_gulliver.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.captain_gulliver.farewell_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

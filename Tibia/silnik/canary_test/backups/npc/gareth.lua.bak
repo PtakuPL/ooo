@@ -56,13 +56,13 @@ local function greetCallback(npc, creature)
 	local player = Player(creature)
 
 	if player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.Mission) < 1 or player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.Mission) > 14 then
-		npcHandler:setMessage(MESSAGE_GREET, "Welcome to the wonderful and only recently opened Museum of Tibian Arts! Free entrance for everybody, but patrons of the arts are wanted and favoured.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.gareth.greet_msg_1")
 	elseif player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.Mission) == 1 then
-		npcHandler:setMessage(MESSAGE_GREET, "The Druid of Crunor has sent you? He seems to know that this new museum shines like a diamond. Enjoy your stay! If you like to {support} this place, talk to me.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.gareth.greet_msg_2")
 	elseif player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.Mission) > 1 and player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.Mission) < 14 then
-		npcHandler:setMessage(MESSAGE_GREET, "How is your {mission} going?")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.gareth.greet_msg_3")
 	elseif player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.Mission) == 14 then
-		npcHandler:setMessage(MESSAGE_GREET, "You again? How could you flee from the last floor. The cultists should have 'dealt' with you! That beats me. You have to leave this place right now. There's nothing more to say.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.gareth.greet_msg_4")
 	end
 
 	return true
@@ -155,7 +155,7 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	return true
 end
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Well, bye then.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.gareth.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_SET_INTERACTION, onAddFocus)
 npcHandler:setCallback(CALLBACK_REMOVE_INTERACTION, onReleaseFocus)

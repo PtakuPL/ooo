@@ -8,12 +8,12 @@ local lemonCupcake = Action()
 
 function lemonCupcake.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if player:hasExhaustion("lemon-cupcake-cooldown") then
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.lemon_cupcake.msg_1")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.lemon_cupcake.msg_1")
 		return true
 	end
 
 	player:addCondition(distanceCondition)
-	player:sendLocalizedMessage(MESSAGE_FAILURE, "scripts.lemon_cupcake.msg_2")
+	player:sendLocalizedTextMessage(MESSAGE_FAILURE, "scripts.lemon_cupcake.msg_2")
 	player:sayLocalized("scripts.lemon_cupcake.say_1", TALKTYPE_MONSTER_SAY)
 	player:setExhaustion("lemon-cupcake-cooldown", 10 * 60)
 	item:remove(1)

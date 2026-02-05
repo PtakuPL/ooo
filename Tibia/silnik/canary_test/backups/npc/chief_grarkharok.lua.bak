@@ -21,9 +21,9 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Grarkharok's bestest troll tribe! Yeee, good name!" },
-	{ text = "Grarkharok make new tribe here! Me Chief now!" },
-	{ text = "Me like to throw rocks, me also like frogs! Yumyum!" },
+	{ i18nKey = "npc.chief_grarkharok.voice_1" },
+	{ i18nKey = "npc.chief_grarkharok.voice_2" },
+	{ i18nKey = "npc.chief_grarkharok.voice_3" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -155,9 +155,9 @@ keywordHandler:addAliasKeyword({ "nothing" })
 keywordHandler:addKeyword({ "tibia" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.chief_grarkharok.stdmod_14" })
 keywordHandler:addKeyword({ "mission" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.chief_grarkharok.stdmod_15" })
 keywordHandler:addAliasKeyword({ "quest" })
-npcHandler:setMessage(MESSAGE_GREET, "Me Chief Grarkharok! No do {nothing}!")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Grarkharok be {chief}!")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Grarkharok be {chief}!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.chief_grarkharok.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.chief_grarkharok.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.chief_grarkharok.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

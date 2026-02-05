@@ -5,13 +5,13 @@ function addmount.onSay(player, words, param)
 	logCommand(player, words, param)
 
 	if param == "" then
-		player:sendCancelMessage("Command param required.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "talkactions.gm.common.param_required")
 		return true
 	end
 
 	local split = param:split(",")
 	if #split < 2 then
-		player:sendCancelMessage("Usage: /addmount <playername>, <mount id or 'all'>")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "talkactions.god.add_mount.usage")
 		return true
 	end
 
@@ -19,7 +19,7 @@ function addmount.onSay(player, words, param)
 	local target = Player(playerName)
 
 	if not target then
-		player:sendCancelMessage("Player not found.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "talkactions.gm.common.player_not_found")
 		return true
 	end
 
@@ -34,7 +34,7 @@ function addmount.onSay(player, words, param)
 	else
 		local mountId = tonumber(mountParam)
 		if not mountId then
-			player:sendCancelMessage("Invalid mount ID.")
+			player:sendLocalizedMessage(MESSAGE_FAILURE, "talkactions.god.add_mount.invalid_id")
 			return true
 		end
 

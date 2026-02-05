@@ -266,7 +266,7 @@ function attributes.onSay(player, words, param)
 	logCommand(player, words, param)
 
 	if param == "" then
-		player:sendCancelMessage("Command param required.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "gm.common.param_required")
 		return true
 	end
 
@@ -278,38 +278,38 @@ function attributes.onSay(player, words, param)
 	if itemFunction and itemFunction.isActive then
 		local item = Tile(position):getTopVisibleThing(player)
 		if not item or not item:isItem() then
-			player:sendCancelMessage("Item not found.")
+			player:sendLocalizedMessage(MESSAGE_FAILURE, "god.attributes.item_not_found")
 			return true
 		end
 		if itemFunction.targetFunction(item, split[2]) then
 			position:sendMagicEffect(CONST_ME_MAGIC_GREEN)
 		else
-			player:sendCancelMessage("You cannot add that attribute to this item.")
+			player:sendLocalizedMessage(MESSAGE_FAILURE, "god.attributes.cannot_add_to_item")
 		end
 	elseif creatureFunction and creatureFunction.isActive then
 		local creature = Tile(position):getTopCreature()
 		if not creature or not creature:isCreature() then
-			player:sendCancelMessage("Creature not found.")
+			player:sendLocalizedMessage(MESSAGE_FAILURE, "god.attributes.creature_not_found")
 			return true
 		end
 		if creatureFunction.targetFunction(creature, split[2]) then
 			position:sendMagicEffect(CONST_ME_MAGIC_GREEN)
 		else
-			player:sendCancelMessage("You cannot add that attribute to this creature.")
+			player:sendLocalizedMessage(MESSAGE_FAILURE, "god.attributes.cannot_add_to_creature")
 		end
 	elseif playerFunction and playerFunction.isActive then
 		local targetPlayer = Tile(position):getTopCreature()
 		if not targetPlayer or not targetPlayer:getPlayer() then
-			player:sendCancelMessage("Player not found.")
+			player:sendLocalizedMessage(MESSAGE_FAILURE, "gm.common.player_not_found")
 			return true
 		end
 		if playerFunction.targetFunction(targetPlayer, split[2]) then
 			position:sendMagicEffect(CONST_ME_MAGIC_GREEN)
 		else
-			player:sendCancelMessage("You cannot add that attribute to this player.")
+			player:sendLocalizedMessage(MESSAGE_FAILURE, "god.attributes.cannot_add_to_player")
 		end
 	else
-		player:sendCancelMessage("Unknown attribute.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "god.attributes.unknown_attribute")
 	end
 	return true
 end

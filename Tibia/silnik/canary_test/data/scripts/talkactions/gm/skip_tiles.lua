@@ -2,7 +2,7 @@ local skipTiles = TalkAction("/a")
 
 function skipTiles.onSay(player, words, param)
 	if param == "" then
-		player:sendCancelMessage("Command param required.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "talkactions.gm.common.param_required")
 		return true
 	end
 
@@ -16,7 +16,7 @@ function skipTiles.onSay(player, words, param)
 
 	position = player:getClosestFreePosition(position, false)
 	if position.x == 0 then
-		player:sendCancelMessage("You cannot teleport there.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "talkactions.gm.common.cannot_teleport")
 		return true
 	end
 

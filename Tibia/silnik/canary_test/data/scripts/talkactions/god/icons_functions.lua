@@ -42,7 +42,7 @@ local testIcons = TalkAction("/testicon")
 
 function testIcons.onSay(player, words, param)
 	if param == "" then
-		player:sendCancelMessage("Icon required.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "god.icons_functions.icon_required")
 		logger.error("[testIcons.onSay] - Icon number's required")
 		return true
 	end
@@ -72,7 +72,7 @@ local bakragoreIcon = TalkAction("/bakragoreicon")
 
 function bakragoreIcon.onSay(player, words, param)
 	if param == "" then
-		player:sendCancelMessage("Icon number required.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "god.icons_functions.icon_number_required")
 		logger.error("[addBakragoreIcon.onSay] - Icon number's required")
 		return true
 	end
@@ -136,7 +136,7 @@ local creatureIconAction = TalkAction("/playericon")
 
 function creatureIconAction.onSay(player, words, param)
 	if param == "" then
-		player:sendCancelMessage("Usage: /playericon {icon_id}, {quantity}, {direction (optional: up/down)}")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "god.icons_functions.usage")
 		return true
 	end
 
@@ -158,12 +158,12 @@ function creatureIconAction.onSay(player, words, param)
 	end
 
 	if count <= 0 then
-		player:sendCancelMessage("Invalid quantity. It must be greater than 0.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "god.icons_functions.invalid_quantity")
 		return true
 	end
 
 	if direction ~= "up" and direction ~= "down" then
-		player:sendCancelMessage("Invalid direction. Use 'up' or 'down'.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "god.icons_functions.invalid_direction")
 		return true
 	end
 

@@ -95,7 +95,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:addBlessing(v.id, 1)
 		end
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.testserver_assistant.say_4")
-		player:sendTextMessage(MESSAGE_STATUS, "You received the remaining " .. missingBlessAmt .. " blesses.")
+		player:sendLocalizedMessage(MESSAGE_STATUS, "npc.testserver_assistant.blesses_received", {missingBlessAmt})
 		player:getPosition():sendMagicEffect(CONST_ME_HOLYAREA)
 	end
 

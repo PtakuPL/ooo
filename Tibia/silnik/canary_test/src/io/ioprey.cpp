@@ -266,24 +266,24 @@ void IOPrey::checkPlayerPreys(const std::shared_ptr<Player> &player, uint8_t amo
 						slot->reloadBonusType();
 						slot->reloadBonusValue();
 						slot->bonusTimeLeft = static_cast<uint16_t>(g_configManager().getNumber(PREY_BONUS_TIME));
-						player->sendTextMessage(MESSAGE_STATUS, "Your prey bonus type and time has been succesfully reseted.");
+						player->sendLocalizedTextMessage(MESSAGE_STATUS, "cpp.prey.bonus_reset");
 						player->reloadPreySlot(static_cast<PreySlot_t>(slotId));
 						continue;
 					}
 
-					player->sendTextMessage(MESSAGE_STATUS, "You don't have enought prey cards to enable automatic reroll when your slot expire.");
+					player->sendLocalizedTextMessage(MESSAGE_STATUS, "cpp.prey.not_enough_cards_reroll");
 				} else if (slot->option == PreyOption_Locked) {
 					if (player->usePreyCards(static_cast<uint16_t>(g_configManager().getNumber(PREY_SELECTION_LIST_PRICE)))) {
 						slot->bonusTimeLeft = static_cast<uint16_t>(g_configManager().getNumber(PREY_BONUS_TIME));
-						player->sendTextMessage(MESSAGE_STATUS, "Your prey bonus time has been succesfully reseted.");
+						player->sendLocalizedTextMessage(MESSAGE_STATUS, "cpp.prey.time_reset");
 						player->reloadPreySlot(static_cast<PreySlot_t>(slotId));
 						continue;
 					}
 
-					player->sendTextMessage(MESSAGE_STATUS, "You don't have enought prey cards to lock monster and bonus when the slot expire.");
+					player->sendLocalizedTextMessage(MESSAGE_STATUS, "cpp.prey.not_enough_cards_lock");
 				} else {
 					slot->reloadMonsterGrid(player->getPreyBlackList(), player->getLevel());
-					player->sendTextMessage(MESSAGE_STATUS, "Your prey bonus has expired.");
+					player->sendLocalizedTextMessage(MESSAGE_STATUS, "cpp.prey.bonus_expired");
 				}
 
 				slot->eraseBonus();

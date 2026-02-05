@@ -366,7 +366,7 @@ function Player.updateStorage(self, key, value, oldValue, currentFrameTime)
 	if LastQuestlogUpdate[playerId] ~= currentFrameTime and Game.isQuestStorage(key, value, oldValue) then
 		LastQuestlogUpdate[playerId] = currentFrameTime
 		if value ~= oldValue then
-			self:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Your questlog has been updated.")
+			self:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "libs.quests.questlog_updated")
 		end
 	end
 	local missions = self:getMissionsData(key)

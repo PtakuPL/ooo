@@ -7,7 +7,7 @@ function teleportSetDestination.onSay(player, words, param)
 	logCommand(player, words, param)
 
 	if param == "" then
-		player:sendCancelMessage("Command param required.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "talkactions.gm.common.param_required")
 		return true
 	end
 
@@ -23,10 +23,10 @@ function teleportSetDestination.onSay(player, words, param)
 				player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.teleport_set_destination.msg_1", {param})
 			end
 		else
-			player:sendCancelMessage("Destination position is not valid.")
+			player:sendLocalizedMessage(MESSAGE_FAILURE, "talkactions.gm.teleport.destination_invalid")
 		end
 	else
-		player:sendCancelMessage('You need to declare the X, Y of Z of destination. Please use "/teleport X, Y, Z".')
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "talkactions.gm.teleport.specify_xyz")
 	end
 	return true
 end

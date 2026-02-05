@@ -40,7 +40,7 @@ function movements_falcon_bossEntrance.onStepIn(creature, item, position, fromPo
 					creature:teleportTo(Position(33363, 31341, 9), true)
 				else
 					creature:teleportTo(fromPosition, true)
-					creature:sendCancelMessage("You are still exhausted from your last battle.")
+					creature:sendLocalizedCancelMessage("quests.common.boss_exhausted")
 				end
 			end
 		end

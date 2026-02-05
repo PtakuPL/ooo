@@ -61,7 +61,7 @@ function Player.addFamePoint(self)
 	local points = self:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Constants.Spike_Fame_Points)
 	local current = math.max(0, points)
 	self:setStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Constants.Spike_Fame_Points, current + 1)
-	self:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have received a fame point.")
+	self:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.common.fame_point")
 end
 
 function Player.getFamePoints(self)

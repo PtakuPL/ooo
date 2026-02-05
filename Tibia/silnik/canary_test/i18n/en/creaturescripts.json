@@ -1,4 +1,6 @@
 {
   "creaturescripts.free_quest.msg_1": "Player FreeQuest in progress..",
-  "creaturescripts.free_quest.msg_2": "Player FreeQuest is complete."
+  "creaturescripts.free_quest.msg_2": "Player FreeQuest is complete.",
+  "creaturescripts.boss_lever.defeated": "The {} has been defeated. You have {} seconds to leave the room.",
+  "creaturescripts.remove_parcel.empty_removed": "{} empty parcels were removed from your store inbox!"
 }

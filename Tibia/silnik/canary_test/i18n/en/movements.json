@@ -1,1 +1,7 @@
-{}
+{
+	"movements.oramond.premium_required": "You need a premium account to access this area.",
+	"movements.dawnport.first_time_vocation": "As this is your first time as a {}, you received a few extra items. {}",
+	"movements.dawnport.received_weapons": "You have received the weapons of a {}. {}",
+	"movements.claw_noxious_spawn.tighten": "It tightens around your wrist as you take it on.",
+	"movements.claw_noxious_spawn.stabbed": "Ouch! The serpent claw stabbed you."
+}

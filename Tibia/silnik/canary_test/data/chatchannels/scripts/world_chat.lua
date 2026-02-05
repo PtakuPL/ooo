@@ -1,7 +1,7 @@
 function onSpeak(player, type, message)
 	local playerGroupType = player:getGroup():getId()
 	if player:getLevel() == 1 and playerGroupType < GROUP_TYPE_GAMEMASTER then
-		player:sendCancelMessage("You may not speak into channels as long as you are on level 1.")
+		player:sendLocalizedMessage("channels.world_chat.level_1_restriction")
 		return false
 	end
 

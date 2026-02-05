@@ -40,7 +40,7 @@ function dreamerDocuments.onUse(player, item, fromPosition, target, toPosition, 
 					return false
 				end
 			else
-				player:sendCancelMessage("You have already obtained this addon!")
+				player:sendLocalizedCancelMessage("quests.common.already_obtained", "addon")
 			end
 		else
 			return false
@@ -57,7 +57,7 @@ function dreamerDocuments.onUse(player, item, fromPosition, target, toPosition, 
 				return false
 			end
 		else
-			player:sendCancelMessage("You have already obtained this outfit!")
+			player:sendLocalizedCancelMessage("quests.common.already_obtained", "outfit")
 		end
 	end
 	return true

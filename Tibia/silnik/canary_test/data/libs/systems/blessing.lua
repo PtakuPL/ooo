@@ -199,7 +199,7 @@ Blessings.useCharm = function(player, item)
 			end
 
 			player:addBlessing(value.id, 1)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, value.name .. " protects you.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "lib.blessing.msg3", {value.name})
 			player:getPosition():sendMagicEffect(CONST_ME_LOSEENERGY)
 			item:remove(1)
 			return true
@@ -213,7 +213,7 @@ Blessings.checkBless = function(player)
 		result = player:hasBlessing(k) and result .. "\n" .. v.name or result
 	end
 
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, 20 > result:len() and "No blessings received." or result)
+	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, 20 > result:len() and "lib.blessing.msg2" or result)
 	return true
 end
 
@@ -246,7 +246,7 @@ end
 
 Blessings.BuyAllBlesses = function(player)
 	if not Tile(player:getPosition()):hasFlag(TILESTATE_PROTECTIONZONE) and (player:isPzLocked() or player:getCondition(CONDITION_INFIGHT, CONDITIONID_DEFAULT)) then
-		player:sendCancelMessage("You can't buy bless while in battle.")
+		player:sendLocalizedCancelMessage("libs.blessing.cant_buy_in_battle")
 		player:getPosition():sendMagicEffect(CONST_ME_POFF)
 		return true
 	end
@@ -265,7 +265,7 @@ Blessings.BuyAllBlesses = function(player)
 	end
 
 	if missingBlessAmt == 0 then
-		player:sendCancelMessage("You are already blessed.")
+		player:sendLocalizedCancelMessage("libs.blessing.already_blessed")
 		player:getPosition():sendMagicEffect(CONST_ME_POFF)
 		return true
 	end
@@ -284,10 +284,10 @@ Blessings.BuyAllBlesses = function(player)
 			player:addBlessing(bless.id, 1)
 		end
 
-		player:sendCancelMessage(string.format("You received the remaining %d blesses for a total of %d gold.", missingBlessAmt, totalCost))
+		player:sendLocalizedCancelMessage("libs.blessing.received_blesses", {missingBlessAmt, totalCost})
 		player:getPosition():sendMagicEffect(CONST_ME_HOLYAREA)
 	else
-		player:sendCancelMessage(string.format("You don't have enough money. You need %d to buy all blesses.", totalCost))
+		player:sendLocalizedCancelMessage("libs.blessing.not_enough_money", {totalCost})
 		player:getPosition():sendMagicEffect(CONST_ME_POFF)
 	end
 

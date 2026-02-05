@@ -171,7 +171,7 @@ int HouseFunctions::luaHouseSetNewOwnerGuid(lua_State* L) {
 		if (isTransferOnRestart && house->hasNewOwnership()) {
 			const auto &player = g_game().getPlayerByGUID(house->getOwner());
 			if (player) {
-				player->sendTextMessage(MESSAGE_EVENT_ADVANCE, "You cannot leave this house. Ownership is already scheduled to be transferred upon the next server restart.");
+				player->sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "cpp.house.cannot_leave_transfer_scheduled");
 			}
 			lua_pushnil(L);
 			return 1;
@@ -252,8 +252,8 @@ int HouseFunctions::luaHouseStartTrade(lua_State* L) {
 
 	auto isTransferOnRestart = g_configManager().getBoolean(TOGGLE_HOUSE_TRANSFER_ON_SERVER_RESTART);
 	if (isTransferOnRestart && house->hasNewOwnership()) {
-		tradePartner->sendTextMessage(MESSAGE_EVENT_ADVANCE, "You cannot buy this house. Ownership is already scheduled to be transferred upon the next server restart.");
-		player->sendTextMessage(MESSAGE_EVENT_ADVANCE, "You cannot sell this house. Ownership is already scheduled to be transferred upon the next server restart.");
+		tradePartner->sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "cpp.house.cannot_buy_transfer_scheduled");
+		player->sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "cpp.house.cannot_sell_transfer_scheduled");
 		lua_pushnumber(L, RETURNVALUE_YOUCANNOTTRADETHISHOUSE);
 		return 1;
 	}

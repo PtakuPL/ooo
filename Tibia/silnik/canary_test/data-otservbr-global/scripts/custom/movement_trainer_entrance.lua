@@ -56,7 +56,7 @@ local function calculatingRoom(uid, position, column, line)
 			calculatingRoom(uid, position, column + 1, line)
 		end
 	else
-		player:sendCancelMessage("Couldn't find any position for you right now.")
+		player:sendLocalizedCancelMessage("scripts.trainer.no_position")
 	end
 end
 

@@ -43,21 +43,21 @@ function othersDesert.onUse(player, item, fromPosition, target, toPosition, isHo
 	for i = 1, #config do
 		local creature = Tile(config[i].fromPosition):getTopCreature()
 		if not creature or not creature:isPlayer() then
-			player:sendCancelMessage("You need one player of each vocation for this quest.")
+			player:sendLocalizedCancelMessage("quests.desert_dungeon.need_all_vocations")
 			position:sendMagicEffect(CONST_ME_POFF)
 			return true
 		end
 
 		local vocationId = creature:getVocation():getBaseId()
 		if vocationId ~= config[i].vocationId then
-			player:sendCancelMessage("You need one player of each vocation for this quest.")
+			player:sendLocalizedCancelMessage("quests.desert_dungeon.need_all_vocations")
 			position:sendMagicEffect(CONST_ME_POFF)
 			return true
 		end
 
 		local sacrificeItem = Tile(config[i].sacrificePosition):getItemById(config[i].sacrificeId)
 		if not sacrificeItem then
-			player:sendCancelMessage(creature:getName() .. " is missing " .. creature:getPossessivePronoun() .. " sacrifice on the altar.")
+			player:sendLocalizedCancelMessage("quests.desert_dungeon.missing_sacrifice", creature:getName(), creature:getPossessivePronoun())
 			position:sendMagicEffect(CONST_ME_POFF)
 			return true
 		end

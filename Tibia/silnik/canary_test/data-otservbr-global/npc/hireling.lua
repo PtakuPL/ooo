@@ -650,7 +650,7 @@ function createHirelingType(HirelingName)
 					npcHandler:say(GREETINGS.STASH, npc, creature)
 					player:setSpecialContainersAvailable(true)
 					player:openStash(true)
-					player:sendTextMessage(MESSAGE_FAILURE, "Your supply stash contains " .. player:getStashCount() .. " item" .. (player:getStashCount() > 1 and "s." or "."))
+					player:sendLocalizedMessage(MESSAGE_FAILURE, "npc.hireling.stash_count", { player:getStashCount(), player:getStashCount() > 1 and "s" or "" })
 				end,
 			},
 			["goods"] = {
@@ -732,7 +732,7 @@ function createHirelingType(HirelingName)
 					npcHandler:say(GREETINGS.STASH, npc, creature)
 					player:setSpecialContainersAvailable(true)
 					player:openStash(true)
-					player:sendTextMessage(MESSAGE_FAILURE, "Your stash contains " .. player:getStashCount() .. " item" .. (player:getStashCount() > 1 and "s." or "."))
+					player:sendLocalizedMessage(MESSAGE_FAILURE, "npc.hireling.stash_items", { player:getStashCount(), player:getStashCount() > 1 and "s" or "" })
 				else
 					sendSkillNotLearned(npc, creature, bankerSkillName)
 				end

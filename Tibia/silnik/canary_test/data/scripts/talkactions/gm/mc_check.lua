@@ -29,7 +29,7 @@ function mcCheck.onSay(player, words, param)
 				tmpPlayer = list[i]
 				message = ("%s, %s [%d]"):format(message, tmpPlayer:getName(), tmpPlayer:getLevel())
 			end
-			player:sendTextMessage(MESSAGE_ADMINISTRATOR, message .. ".")
+			player:sendLocalizedTextMessage(MESSAGE_ADMINISTRATOR, "talkactions.gm.mc_check.result", {message})
 		end
 	end
 	return true

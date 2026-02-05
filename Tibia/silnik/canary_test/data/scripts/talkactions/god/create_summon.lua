@@ -5,14 +5,14 @@ function createSummon.onSay(player, words, param)
 	logCommand(player, words, param)
 
 	if param == "" then
-		player:sendCancelMessage("Command param required.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "talkactions.gm.common.param_required")
 		return true
 	end
 
 	local position = player:getPosition()
 	local summon = Game.createMonster(param, position, true, false, player)
 	if not summon then
-		player:sendCancelMessage(RETURNVALUE_NOTENOUGHROOM)
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "talkactions.god.create_summon.not_enough_room")
 		position:sendMagicEffect(CONST_ME_POFF)
 		return true
 	end

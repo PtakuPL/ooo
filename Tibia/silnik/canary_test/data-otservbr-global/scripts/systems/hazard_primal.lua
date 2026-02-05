@@ -38,7 +38,7 @@ function primalPod.onStepIn(creature, item, position, fromPosition)
 		local timeMs = os.time() * 1000
 		timer = timeMs - timer
 		if timer >= configManager.getNumber(configKeys.HAZARD_PODS_TIME_TO_DAMAGE) and timer < configManager.getNumber(configKeys.HAZARD_PODS_TIME_TO_SPAWN) then
-			player:sendCancelMessage("You stepped too late on the primal pod and it explodes.")
+			player:sendLocalizedCancelMessage("scripts.hazard.primal_pod_explodes")
 			player:getPosition():sendMagicEffect(CONST_ME_ENERGYHIT)
 			local damage = math.ceil((player:getMaxHealth() * configManager.getNumber(configKeys.HAZARD_PODS_DAMAGE)) / 100)
 			local points = player:getHazardSystemPoints()

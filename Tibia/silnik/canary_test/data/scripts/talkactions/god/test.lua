@@ -2,7 +2,7 @@ local testLog = TalkAction("/testlog")
 
 function testLog.onSay(player, words, param)
 	if param == "" then
-		player:sendCancelMessage("Log level and message required.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "god.test.log_level_required")
 		logger.error("[testLog.onSay] - Log level and message not found")
 		return true
 	end
@@ -12,7 +12,7 @@ function testLog.onSay(player, words, param)
 	local message = string.trimSpace(split[2])
 
 	if message == "" then
-		player:sendCancelMessage("Log message required.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "god.test.log_message_required")
 		return false
 	end
 
@@ -49,7 +49,7 @@ local containerTalkAction = TalkAction("!testcontainer")
 function containerTalkAction.onSay(player, words, param)
 	local container = player:getSlotItem(CONST_SLOT_BACKPACK)
 	if not container then
-		player:sendCancelMessage("Your backpack does not contain a valid container.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "god.test.backpack_no_container")
 		logger.error("[!container] - Player: {} has a backpack without a valid container.", player:getName())
 		return true
 	end
@@ -71,11 +71,10 @@ function containerTalkAction.onSay(player, words, param)
 	end
 
 	local actionMessage = shouldRemove and "removed " or "have "
-	local playerMessage = actionMessage .. totalItems .. " items and " .. totalSubContainers .. " subcontainers from your backpack."
 	local finalMessage = string.format("[!testcontainer] - Player: %s, %s items from backpack: %d, subcontainers count: %d", player:getName(), actionMessage, totalItems, totalSubContainers)
 
 	logger.info(finalMessage)
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You " .. playerMessage)
+	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "god.test.backpack_items", {actionMessage, tostring(totalItems), tostring(totalSubContainers)})
 	return true
 end
 

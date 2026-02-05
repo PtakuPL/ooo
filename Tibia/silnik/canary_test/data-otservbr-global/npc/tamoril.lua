@@ -58,7 +58,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	local playerId = player:getId()
 
 	if not isDateWithinEvent() then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You can only discuss the First Dragon between January 14 and February 12.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "npc.tamoril.first_dragon_period")
 		return true
 	end
 

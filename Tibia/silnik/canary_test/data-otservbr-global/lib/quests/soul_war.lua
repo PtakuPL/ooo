@@ -1177,7 +1177,7 @@ function Player:addNextTaint()
 	for _, taintName in ipairs(soulWarTaints) do
 		if not soulWarQuest:get(taintName) then
 			soulWarQuest:set(taintName, true)
-			self:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have gained the " .. taintName .. ".")
+			self:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.soul_war.taint_gained", taintName)
 			self:setTaintIcon()
 			break
 		end

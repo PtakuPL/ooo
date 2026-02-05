@@ -85,7 +85,7 @@ local function antiPush(player, item, count, fromPosition, toPosition, fromCylin
 	end
 
 	if pushDelay[playerId].time > currentTime then
-		player:sendCancelMessage("You can't move that item so fast.")
+		player:sendLocalizedCancelMessage("events.player.item_move_cooldown")
 		return false
 	end
 
@@ -451,13 +451,13 @@ end
 function Player:onReportRuleViolation(targetName, reportType, reportReason, comment, translation)
 	local name = self:getName()
 	if hasPendingReport(self:getGuid(), targetName, reportType) then
-		self:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Your report is being processed.")
+		self:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "events.player.report_processing")
 		return
 	end
 
 	local file = io.open(string.format("%s/reports/players/%s-%s-%d.txt", CORE_DIRECTORY, name, targetName, reportType), "a")
 	if not file then
-		self:sendTextMessage(MESSAGE_EVENT_ADVANCE, "There was an error when processing your report, please contact a gamemaster.")
+		self:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "events.player.report_error")
 		return
 	end
 
@@ -491,7 +491,7 @@ function Player:onReportBug(message, position, category)
 	local file = io.open(string.format("%s/reports/bugs/%s/report.txt", CORE_DIRECTORY, name), "a")
 
 	if not file then
-		self:sendTextMessage(MESSAGE_EVENT_ADVANCE, "There was an error when processing your report, please contact a gamemaster.")
+		self:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "events.player.report_error")
 		return true
 	end
 
@@ -506,7 +506,7 @@ function Player:onReportBug(message, position, category)
 	io.write("Comment: " .. message .. "\n")
 	io.close(file)
 
-	self:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Your report has been sent to " .. configManager.getString(configKeys.SERVER_NAME) .. ".")
+	self:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "events.player.report_sent", {configManager.getString(configKeys.SERVER_NAME)})
 	return true
 end
 
@@ -678,7 +678,7 @@ function Player:onChangeZone(zone)
 				end
 			else
 				if event then
-					self:sendTextMessage(MESSAGE_FAILURE, "You are no longer refilling stamina, since you left a regeneration zone.")
+					self:sendLocalizedTextMessage(MESSAGE_FAILURE, "events.player.left_regen_zone")
 					stopEvent(event)
 					staminaBonus.eventsPz[self:getId()] = nil
 				end

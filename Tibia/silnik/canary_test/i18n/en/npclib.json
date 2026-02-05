@@ -1,1 +1,19 @@
-{}
+{
+	"npc.hireling.stash_count": "Your supply stash contains {} item{}.",
+	"npc.hireling.stash_items": "Your stash contains {} item{}.",
+	"npc.walter_jaeger.store_inbox_slots": "Please make sure you have free slots in your store inbox.",
+	"npc.testserver_assistant.blesses_received": "You received the remaining {} blesses.",
+	"npc.klom_stonecutter.gnomes_points": "You earned {} point{} on the gnomes mission.",
+	"npc.klom_stonecutter.dwarves_points": "You earned {} point{} on the dwarves mission.",
+	"npc.klom_stonecutter.scouts_points": "You earned {} point{} on the scouts mission.",
+	"npc.tamoril.first_dragon_period": "You can only discuss the First Dragon between January 14 and February 12.",
+	"npc.lardoc_bashsmite.gnomes_points": "You earned {} point{} on the gnomes mission.",
+	"npc.lardoc_bashsmite.dwarves_points": "You earned {} point{} on the dwarves mission.",
+	"npc.lardoc_bashsmite.scouts_points": "You earned {} point{} on the scouts mission.",
+	"npc.gerimor.experience_gained": "You gained {} experience points.",
+	"npc.gerimor.item_gained": "You gained a {}.",
+	"npc.gnomus.gnomes_points": "You earned {} point{} on the gnomes mission.",
+	"npc.gnomus.dwarves_points": "You earned {} point{} on the dwarves mission.",
+	"npc.gnomus.scouts_points": "You earned {} point{} on the scouts mission.",
+	"npc.canary.sold_items": "Sold {}x {} for {} gold."
+}

@@ -1557,7 +1557,7 @@ std::pair<uint64_t, uint64_t> Player::getForgeSliversAndCores() const {
 
 void Player::onReceiveMail() {
 	if (isNearDepotBox()) {
-		sendTextMessage(MESSAGE_EVENT_ADVANCE, "New mail has arrived.");
+		sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "cpp.player.mail_arrived");
 	}
 }
 
@@ -2726,13 +2726,13 @@ void Player::openImbuementWindow(const std::shared_ptr<Item> &item) {
 	}
 
 	if (item->getImbuementSlot() <= 0) {
-		this->sendTextMessage(MESSAGE_EVENT_ADVANCE, "This item is not imbuable.");
+		this->sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "cpp.player.item_not_imbuable");
 		return;
 	}
 
 	const auto &itemParent = item->getTopParent();
 	if (itemParent && itemParent != getPlayer()) {
-		this->sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have to pick up the item to imbue it.");
+		this->sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "cpp.player.item_pickup_to_imbue");
 		return;
 	}
 
@@ -3929,7 +3929,7 @@ void Player::death(const std::shared_ptr<Creature> &lastHitCreature) {
 		g_events().eventPlayerOnLoseExperience(static_self_cast<Player>(), expLoss);
 		g_callbacks().executeCallback(EventCallback_t::playerOnLoseExperience, &EventCallback::playerOnLoseExperience, getPlayer(), expLoss);
 
-		sendTextMessage(MESSAGE_EVENT_ADVANCE, "You are dead.");
+		sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "cpp.player.you_are_dead");
 		std::ostringstream lostExp;
 		lostExp << "You lost " << expLoss << " experience.";
 
@@ -6744,7 +6744,7 @@ void Player::addUnjustifiedDead(const std::shared_ptr<Player> &attacked) {
 		return;
 	}
 
-	sendTextMessage(MESSAGE_EVENT_ADVANCE, "Warning! The murder of " + attacked->getName() + " was not justified.");
+	sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "cpp.player.unjustified_kill", std::vector<std::string>{attacked->getName()});
 
 	unjustifiedKills.emplace_back(attacked->getGUID(), time(nullptr), true);
 
@@ -9056,7 +9056,7 @@ void Player::stowItem(const std::shared_ptr<Item> &item, uint32_t count, bool al
 	}
 
 	if (totalItemsToStow >= maxItemsToStow) {
-		sendTextMessage(MESSAGE_EVENT_ADVANCE, fmt::format("You have reached the maximum stow limit of {} items. Try to stow again.", maxItemsToStow));
+		sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "cpp.player.stow_limit_reached", std::vector<std::string>{std::to_string(maxItemsToStow)});
 	}
 
 	stashContainer(itemDict);
@@ -9760,7 +9760,7 @@ void Player::triggerMomentum() {
 		}
 		if (triggered) {
 			g_game().addMagicEffect(getPosition(), CONST_ME_HOURGLASS);
-			sendTextMessage(MESSAGE_ATTENTION, "Momentum was triggered.");
+			sendLocalizedTextMessage(MESSAGE_ATTENTION, "cpp.player.momentum_triggered");
 		}
 	}
 }
@@ -9822,7 +9822,7 @@ void Player::triggerTranscendence() {
 		sendStats();
 		sendBasicData();
 
-		sendTextMessage(MESSAGE_ATTENTION, "Transcendence was triggered.");
+		sendLocalizedTextMessage(MESSAGE_ATTENTION, "cpp.player.transcendence_triggered");
 
 		// Send player data after transcendence timer expire
 		const auto &task = createPlayerTask(
@@ -10860,7 +10860,7 @@ void Player::onCreatureMove(const std::shared_ptr<Creature> &creature, const std
 		// TODO: This shouldn't be hardcoded
 		for (const uint32_t modalWindowId : modalWindows) {
 			if (modalWindowId == std::numeric_limits<uint32_t>::max()) {
-				sendTextMessage(MESSAGE_EVENT_ADVANCE, "Offline training aborted.");
+				sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "cpp.player.offline_training_aborted");
 				break;
 			}
 		}
@@ -10910,7 +10910,7 @@ void Player::onAttackedCreatureDisappear(bool isLogout) {
 	sendCancelTarget();
 
 	if (!isLogout) {
-		sendTextMessage(MESSAGE_FAILURE, "Target lost.");
+		sendLocalizedTextMessage(MESSAGE_FAILURE, "cpp.player.target_lost");
 	}
 }
 
@@ -10918,7 +10918,7 @@ void Player::onFollowCreatureDisappear(bool isLogout) {
 	sendCancelTarget();
 
 	if (!isLogout) {
-		sendTextMessage(MESSAGE_FAILURE, "Target lost.");
+		sendLocalizedTextMessage(MESSAGE_FAILURE, "cpp.player.target_lost");
 	}
 }
 

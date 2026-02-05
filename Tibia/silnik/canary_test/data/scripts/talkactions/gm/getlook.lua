@@ -5,18 +5,18 @@ function getlook.onSay(player, words, param)
 	logCommand(player, words, param)
 
 	if param == "" then
-		player:sendCancelMessage("Command param required.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "talkactions.gm.common.param_required")
 		return true
 	end
 
 	local creature = Creature(param)
 	if not creature then
-		player:sendCancelMessage("A creature with that name could not be found.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "talkactions.gm.creature.not_found")
 		return true
 	end
 
 	local lookt = creature:getOutfit()
-	player:sendTextMessage(MESSAGE_HOTKEY_PRESSED, '<look type="' .. lookt.lookType .. '" head="' .. lookt.lookHead .. '" body="' .. lookt.lookBody .. '" legs="' .. lookt.lookLegs .. '" feet="' .. lookt.lookFeet .. '" addons="' .. lookt.lookAddons .. '" mount="' .. lookt.lookMount .. '" />')
+	player:sendLocalizedTextMessage(MESSAGE_HOTKEY_PRESSED, "talkactions.gm.getlook.xml", {lookt.lookType, lookt.lookHead, lookt.lookBody, lookt.lookLegs, lookt.lookFeet, lookt.lookAddons, lookt.lookMount})
 	return true
 end
 

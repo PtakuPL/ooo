@@ -516,7 +516,7 @@ void Npc::onPlayerSellItem(const std::shared_ptr<Player> &player, uint16_t itemI
 
 		if (const auto &container = item->getContainer()) {
 			if (container->size() > 0) {
-				player->sendTextMessage(MESSAGE_EVENT_ADVANCE, "You must empty the container before selling it.");
+				player->sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "cpp.npc.empty_container_to_sell");
 				continue;
 			}
 		}

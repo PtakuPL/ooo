@@ -12,22 +12,21 @@ function talkaction.onSay(player, words, param)
 	local targetName = string.capitalize(string.trimSpace(tostring(split[3])))
 
 	if not kills or kills < 1 then
-		player:sendCancelMessage("Invalid kill count.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "god.add_bosstiary_kills.invalid_kill_count")
 		return true
 	end
 
 	local target = targetName ~= "" and Player(targetName) or player
 	if not target then
-		player:sendCancelMessage("Target player not found.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "god.add_bosstiary_kills.target_not_found")
 		return true
 	end
 
-	local message = "Added received kills: " .. kills .. ", for boss: " .. monsterName
 	if target == player then
-		player:sendTextMessage(MESSAGE_ADMINISTRATOR, message .. " to yourself.")
+		player:sendLocalizedTextMessage(MESSAGE_ADMINISTRATOR, "god.add_bosstiary_kills.added_to_self", {tostring(kills), monsterName})
 	else
-		player:sendTextMessage(MESSAGE_ADMINISTRATOR, message .. " to player: " .. targetName)
-		target:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You received kills: " .. kills .. ", to boss: " .. monsterName)
+		player:sendLocalizedTextMessage(MESSAGE_ADMINISTRATOR, "god.add_bosstiary_kills.added_to_player", {tostring(kills), monsterName, targetName})
+		target:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "god.add_bosstiary_kills.received_kills", {tostring(kills), monsterName})
 	end
 	target:addBosstiaryKill(monsterName, kills)
 	return true

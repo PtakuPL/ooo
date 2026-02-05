@@ -5,7 +5,7 @@ function namelock.onSay(player, words, param)
 	logCommand(player, words, param)
 
 	if param == "" then
-		player:sendCancelMessage("Command param required.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "talkactions.gm.common.param_required")
 		return true
 	end
 
@@ -19,7 +19,7 @@ function namelock.onSay(player, words, param)
 	end
 
 	if reason == "" then
-		player:sendCancelMessage("You must specify a reason.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "talkactions.gm.ban.must_specify_reason")
 		return true
 	end
 
@@ -39,7 +39,7 @@ function namelock.onSay(player, words, param)
 			CheckNamelock(target)
 		end
 	else
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, name .. " was not found.")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "talkactions.gm.common.player_not_found")
 	end
 end
 

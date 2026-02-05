@@ -55,7 +55,7 @@ function keys.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	end
 
 	if roomIsOccupied(tmpConfig.centerPosition, false, tmpConfig.rangeX, tmpConfig.rangeY) then
-		player:sendCancelMessage("There is someone in the room.")
+		player:sendLocalizedCancelMessage("scripts.common.someone_in_room")
 		return true
 	end
 

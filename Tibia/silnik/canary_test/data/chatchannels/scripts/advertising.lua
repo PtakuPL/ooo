@@ -17,12 +17,12 @@ function onSpeak(player, type, message)
 	end
 
 	if player:getLevel() < 20 and not player:isPremium() then
-		player:sendCancelMessage("You may not speak in this channel unless you have reached level 20 or your account has premium status.")
+		player:sendLocalizedMessage("channels.advertising.level_premium_required")
 		return false
 	end
 
 	if player:getCondition(CONDITION_CHANNELMUTEDTICKS, CONDITIONID_DEFAULT, CHANNEL_ADVERTISING) then
-		player:sendCancelMessage("You may only place one offer in two minutes.")
+		player:sendLocalizedMessage("channels.advertising.offer_cooldown")
 		return false
 	end
 	player:addCondition(muted)

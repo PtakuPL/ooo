@@ -104,7 +104,7 @@ function Player.transferMoneyTo(self, target, amount)
 
 	local targetPlayer = Player(target)
 	if targetPlayer then
-		targetPlayer:sendTextMessage(MESSAGE_LOOK, self:getName() .. " has transferred " .. FormatNumber(amount) .. " gold coins to you.")
+		targetPlayer:sendLocalizedTextMessage(MESSAGE_LOOK, "libs.player.gold_transferred", {self:getName(), FormatNumber(amount)})
 	end
 	return true
 end
@@ -120,7 +120,7 @@ function Player.removeMoneyBank(self, amount)
 	if amount <= inventoryMoney then
 		self:removeMoney(amount)
 		if amount > 0 then
-			self:sendTextMessage(MESSAGE_TRADE, ("Paid %d gold from inventory."):format(amount))
+			self:sendLocalizedTextMessage(MESSAGE_TRADE, "libs.player.paid_inventory", {amount})
 		end
 		return true
 	end
@@ -136,7 +136,7 @@ function Player.removeMoneyBank(self, amount)
 		Bank.debit(self, remainingAmount)
 
 		self:setBankBalance(bankBalance - remainingAmount)
-		self:sendTextMessage(MESSAGE_TRADE, ("Paid %s from inventory and %s gold from bank account. Your account balance is now %s gold."):format(FormatNumber(amount - remainingAmount), FormatNumber(remainingAmount), FormatNumber(self:getBankBalance())))
+		self:sendLocalizedTextMessage(MESSAGE_TRADE, "libs.player.paid_mixed", {FormatNumber(amount - remainingAmount), FormatNumber(remainingAmount), FormatNumber(self:getBankBalance())})
 		return true
 	end
 	return false
@@ -231,12 +231,12 @@ function Player:CreateFamiliarSpell(spellId)
 	local playerPosition = self:getPosition()
 	if not self:isPremium() then
 		playerPosition:sendMagicEffect(CONST_ME_POFF)
-		self:sendCancelMessage("You need a premium account.")
+		self:sendLocalizedCancelMessage("libs.player.need_premium")
 		return false
 	end
 
 	if #self:getSummons() >= 1 and self:getAccountType() < ACCOUNT_TYPE_GOD then
-		self:sendCancelMessage("You can't have other summons.")
+		self:sendLocalizedCancelMessage("libs.player.cant_have_summons")
 		playerPosition:sendMagicEffect(CONST_ME_POFF)
 		return false
 	end
@@ -414,7 +414,7 @@ end
 function Player:addItemStoreInbox(itemId, amount, movable, setOwner)
 	if not amount then
 		logger.error("[Player:addItemStoreInbox] item '{}' amount is nil.", itemId)
-		self:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Item amount is wrong, please contact an administrator.")
+		self:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "libs.player.item_amount_wrong")
 		return nil
 	end
 
@@ -514,7 +514,7 @@ function Player:setFiendish()
 	local tile = Tile(position)
 	local thing = tile:getTopVisibleThing(self)
 	if not tile or thing and not thing:isMonster() then
-		self:sendCancelMessage("Monster not found.")
+		self:sendLocalizedCancelMessage("libs.player.monster_not_found")
 		return false
 	end
 
@@ -797,13 +797,13 @@ end
 
 function Player:canGetReward(rewardId, questName)
 	if self:questKV(questName):get("completed") then
-		self:sendTextMessage(MESSAGE_EVENT_ADVANCE, "It is empty.")
+		self:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "libs.player.empty")
 		return false
 	end
 
 	local rewardItem = ItemType(rewardId)
 	if not rewardItem then
-		self:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Reward item is wrong, please contact an administrator.")
+		self:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "libs.player.reward_wrong")
 		return false
 	end
 

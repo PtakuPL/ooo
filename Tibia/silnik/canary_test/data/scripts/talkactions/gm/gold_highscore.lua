@@ -6,7 +6,7 @@ function goldRank.onSay(player, words, param)
 
 	local highscoreQuery = db.storeQuery("SELECT `balance`, `name` FROM `players` WHERE group_id < 3 ORDER BY balance DESC LIMIT 10")
 	if not highscoreQuery then
-		player:sendCancelMessage("No highscore to show.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "talkactions.gm.highscore.no_data")
 		return true
 	end
 

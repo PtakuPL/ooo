@@ -10,7 +10,7 @@ function createItem.onSay(player, words, param)
 	if itemType:getId() == 0 then
 		itemType = ItemType(tonumber(split[1]))
 		if not tonumber(split[1]) or itemType:getId() == 0 then
-			player:sendCancelMessage("There is no item with that id or name.")
+			player:sendLocalizedMessage(MESSAGE_FAILURE, "talkactions.god.create_item.no_item")
 			return true
 		end
 	end
@@ -78,7 +78,7 @@ function createItem.onSay(player, words, param)
 		result = player:addItem(itemType:getId(), count)
 	else
 		if tier <= 0 or tier > 10 then
-			player:sendCancelMessage("Invalid tier count.")
+			player:sendLocalizedMessage(MESSAGE_FAILURE, "talkactions.god.create_item.invalid_tier")
 			return true
 		else
 			result = player:addItem(itemType:getId(), count, true, 0, CONST_SLOT_WHEREEVER, tier)

@@ -17,7 +17,7 @@ function set_light.onSay(player, words, param)
 
 	local color = split[1]
 	if color == nil then
-		player:sendCancelMessage("You need to specify the light color.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "talkactions.gm.light.color_required")
 		return true
 	end
 	local intensity = tonumber(split[2]) or 4 --32
@@ -26,7 +26,7 @@ function set_light.onSay(player, words, param)
 		--player:setLight(tonumber(color) >= 0 and luz[tonumber(color)] or 0, intensity)
 		player:setLight(tonumber(color) >= 0 and tonumber(color) or 0, intensity)
 	else
-		player:sendCancelMessage("Use like this: /setlight color (0-" .. 1500 .. "), (1-32). The first param is color and the second is intensity.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkactions.gm.light.usage", {"1500"})
 	end
 
 	return true

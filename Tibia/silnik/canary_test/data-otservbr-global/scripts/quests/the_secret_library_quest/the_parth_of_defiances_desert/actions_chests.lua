@@ -17,7 +17,7 @@ function actions_desert_chests.onUse(player, item, fromPosition, target, toPosit
 				end
 				player:addItem(k.reward, 1)
 				player:setStorageValue(k.storage, 1)
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have found a " .. ItemType(k.reward):getName():lower() .. ".")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.common.found_item_a", ItemType(k.reward):getName():lower())
 			else
 				player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.actions_chests.msg_1")
 			end

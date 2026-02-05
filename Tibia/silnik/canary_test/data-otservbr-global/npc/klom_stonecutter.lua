@@ -174,7 +174,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			if count[playerId] > 1 then
 				plural = plural .. "s"
 			end
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You earned " .. count[playerId] .. " point" .. plural .. " on the gnomes mission.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "npc.klom_stonecutter.gnomes_points", { count[playerId], plural })
 			player:removeItem(27653, count[playerId])
 			player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Points, player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Points) + count[playerId])
 		else
@@ -187,7 +187,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			if count[playerId] > 1 then
 				plural = plural .. "s"
 			end
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You earned " .. count[playerId] .. " point" .. plural .. " on the dwarves mission.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "npc.klom_stonecutter.dwarves_points", { count[playerId], plural })
 			player:removeItem(27653, count[playerId])
 			player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.Points, player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.Points) + count[playerId])
 		else
@@ -200,7 +200,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			if count[playerId] > 1 then
 				plural = plural .. "s"
 			end
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You earned " .. count[playerId] .. " point" .. plural .. " on the scouts mission.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "npc.klom_stonecutter.scouts_points", { count[playerId], plural })
 			player:removeItem(27653, count[playerId])
 			player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Scouts.Points, player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Scouts.Points) + count[playerId])
 		else

@@ -662,5 +662,5 @@
   "scripts.common.found_item_a": "You have found a {}.",
   "scripts.common.time_to_defeat": "You have {} minutes to defeat {}.",
   "scripts.common.boss_challenging": "You must wait. Someone is challenging {} now.",
-  "scripts.common.min_players_required": "You need atleast {} players inside the quest room."
+  "scripts.common.min_players_required": "You need at least {} players inside the quest room."
 }

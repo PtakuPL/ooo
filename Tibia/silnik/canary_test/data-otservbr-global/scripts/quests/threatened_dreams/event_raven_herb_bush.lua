@@ -31,16 +31,18 @@ createRavenHerb:register()
 local ravenHerb = Action()
 
 function ravenHerb.onUse(player, item, fromPosition, target, toPosition, isHotkey)
-	local message = "You have found a " .. getItemName(config.herbId) .. "."
+	local herbName = getItemName(config.herbId)
 	local backpack = player:getSlotItem(CONST_SLOT_BACKPACK)
 
 	if not backpack or backpack:getEmptySlots(true) < 1 then
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.quest_reward_common.no_room", message)
+		local foundMessage = "You have found a " .. herbName .. "."
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.quest_reward_common.no_room", foundMessage)
 		return true
 	end
 
 	if (player:getFreeCapacity() / 100) < config.herbWeight then
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.quest_reward_common.too_heavy", message, config.herbWeight)
+		local foundMessage = "You have found a " .. herbName .. "."
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.quest_reward_common.too_heavy", foundMessage, config.herbWeight)
 		return true
 	end
 
@@ -49,7 +51,7 @@ function ravenHerb.onUse(player, item, fromPosition, target, toPosition, isHotke
 		return true
 	end
 
-	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.common.found_item_a", getItemName(config.herbId))
+	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.common.found_item_a", herbName)
 	player:setStorageValue(config.storage, os.time() + 60 * 30 * 1000)
 	player:addItem(config.herbId, 1)
 	return true

@@ -168,6 +168,17 @@
       "only_allowed_monsters": "Only allowed monsters can be fiendish or influenced.",
       "monster_name_required": "Monster name param required.",
       "not_enough_room": "There is not enough room."
+    },
+    "manage_title": {
+      "insufficient_params_add": "Insufficient parameters. Usage: /addtitle playerName, badgeID",
+      "insufficient_params_set": "Insufficient parameters. Usage: /settitle playerName, badgeID"
+    },
+    "manage_tutor": {
+      "player_name_required": "Player name param required",
+      "player_not_online": "Player {} is not online.",
+      "only_promote_normal": "You can only promote a normal player to a tutor.",
+      "promoted_to_tutor": "You have been promoted to a tutor by {}.",
+      "only_demote_tutor": "You can only demote a tutor to a normal player"
     }
   }
 }

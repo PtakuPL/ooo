@@ -5,19 +5,19 @@ function addTitle.onSay(player, words, param)
 	logCommand(player, words, param)
 
 	if param == "" then
-		player:sendCancelMessage("Command param required.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "gm.common.param_required")
 		return true
 	end
 
 	local split = param:split(",")
 	if not split[2] then
-		player:sendCancelMessage("Insufficient parameters. Usage: /addtitle playerName, badgeID")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "god.manage_title.insufficient_params_add")
 		return true
 	end
 
 	local target = Player(split[1])
 	if not target then
-		player:sendCancelMessage("A player with that name is not online.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "gm.common.player_not_found")
 		return true
 	end
 
@@ -43,19 +43,19 @@ function setTitle.onSay(player, words, param)
 	logCommand(player, words, param)
 
 	if param == "" then
-		player:sendCancelMessage("Command param required.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "gm.common.param_required")
 		return true
 	end
 
 	local split = param:split(",")
 	if not split[2] then
-		player:sendCancelMessage("Insufficient parameters. Usage: /settitle playerName, badgeID")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "god.manage_title.insufficient_params_set")
 		return true
 	end
 
 	local target = Player(split[1])
 	if not target then
-		player:sendCancelMessage("A player with that name is not online.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "gm.common.player_not_found")
 		return true
 	end
 

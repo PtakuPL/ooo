@@ -41,7 +41,7 @@ local chains = {
 local ferumbrasAscendantTheShattererLevers = Action()
 function ferumbrasAscendantTheShattererLevers.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if player:getStorageValue(Storage.Quest.U10_90.FerumbrasAscension.TheShatterer) >= 1 then
-		player:sendCancelMessage("You cannot use this lever again.")
+		player:sendLocalizedCancelMessage("quests.common.already_used", "used", "lever")
 		return true
 	end
 	if item.itemid == 8911 then
@@ -119,7 +119,7 @@ function ferumbrasAscendantTheShattererLevers.onUse(player, item, fromPosition, 
 		end
 		player:sayLocalized("scripts.actions_the_shatterer_levers.say_1", TALKTYPE_MONSTER_SAY, false, nil, toPosition)
 	elseif item.itemid == 8912 then
-		player:sendCancelMessage("Sorry, not possible.")
+		player:sendLocalizedCancelMessage("gm.common.not_possible")
 		return true
 	end
 	return true

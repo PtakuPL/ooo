@@ -21,5 +21,8 @@
   "cults": {
     "boss_cooldown_20h": "You need to wait for 20 hours to face this boss again.",
     "boss_cooldown_10h": "You need to wait for 10 hours to face this boss again."
+  },
+  "ferumbras": {
+    "found_no_room": "You have found a bag, but you have no room to take it."
   }
 }

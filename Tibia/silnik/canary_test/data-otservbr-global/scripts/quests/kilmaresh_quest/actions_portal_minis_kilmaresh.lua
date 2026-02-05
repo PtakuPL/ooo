@@ -81,13 +81,13 @@ function teleportBoss.onStepIn(creature, item, position, fromPosition)
 			if creature:getLevel() < value.requiredLevel then
 				creature:teleportTo(fromPosition, true)
 				creature:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-				creature:sendTextMessage(MESSAGE_EVENT_ADVANCE, "All the players need to be level " .. value.requiredLevel .. " or higher.")
+				creature:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.boss_portal.level_required", value.requiredLevel)
 				return true
 			end
 			if not creature:canFightBoss(value.bossName) then
 				creature:teleportTo(fromPosition, true)
 				creature:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-				creature:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have to wait " .. value.timeToFightAgain .. " hours to face " .. value.bossName .. " again!")
+				creature:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.boss_portal.wait_cooldown", value.timeToFightAgain, value.bossName)
 				return true
 			end
 			spec:removeMonsters()

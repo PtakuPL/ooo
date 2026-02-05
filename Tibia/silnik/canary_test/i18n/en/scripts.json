@@ -680,5 +680,7 @@
   "scripts.quest_common.found_too_heavy": "You have found {}. Weighing {} oz, it is too heavy.",
   "scripts.quest_common.found_no_room": "You have found {}, but you have no room to take it.",
   "scripts.quest_common.found_no_capacity": "You have found {} weighing {} oz. You have no capacity.",
-  "scripts.quest_common.found_count_item": "You found {} {}."
+  "scripts.quest_common.found_count_item": "You found {} {}.",
+  "scripts.boss_portal.level_required": "All the players need to be level {} or higher.",
+  "scripts.boss_portal.wait_cooldown": "You have to wait {} hours to face {} again!"
 }

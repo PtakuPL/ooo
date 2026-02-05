@@ -112,7 +112,7 @@ function teleportBoss.onStepIn(creature, item, position, fromPosition)
 			if not creature:canFightBoss(value.bossName) then
 				creature:teleportTo(fromPosition, true)
 				creature:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-				creature:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have to wait " .. value.timeToFightAgain .. " hours to face " .. value.bossName .. " again!")
+				creature:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.boss_portal.wait_cooldown", value.timeToFightAgain, value.bossName)
 				return true
 			end
 			spec:removeMonsters()

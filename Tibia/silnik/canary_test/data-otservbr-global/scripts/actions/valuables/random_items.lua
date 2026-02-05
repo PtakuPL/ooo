@@ -208,10 +208,12 @@ function randomItems.onUse(player, item, fromPosition, target, toPosition, isHot
 				player:addItem(itemId, count)
 				if item.itemid == 12413 then
 					local itemType = ItemType(itemId)
-					player:say("You found " .. (count > 1 and count or (itemType:getArticle() ~= "" and itemType:getArticle() or "")) .. " " .. (count > 1 and itemType:getPluralName() or itemType:getName()) .. " in the bag.", TALKTYPE_MONSTER_SAY)
+					local itemName = count > 1 and itemType:getPluralName() or itemType:getName()
+					local article = count > 1 and count or (itemType:getArticle() ~= "" and itemType:getArticle() or "")
+					player:sayLocalized("scripts.random_items.found_in_bag", TALKTYPE_MONSTER_SAY, { article = article, item = itemName })
 				end
 			else
-				player:say("You found nothing useful.", TALKTYPE_MONSTER_SAY)
+				player:sayLocalized("scripts.random_items.found_nothing", TALKTYPE_MONSTER_SAY)
 			end
 
 			item:getPosition():sendMagicEffect(useId.effect)

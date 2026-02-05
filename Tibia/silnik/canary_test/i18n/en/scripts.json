@@ -760,5 +760,12 @@
   "scripts.event_raven_herb_bush.msg_1": "You already took a raven herb from this bush recently. You should wait some time.",
   "scripts.event_raven_herb_bush.msg_2": "You have found a {item}.",
   "scripts.event_raven_herb_bush.msg_3": "You have found a {item}. But you have no room to take it.",
-  "scripts.event_raven_herb_bush.msg_4": "You have found a {item}. Weighing {weight} oz, it is too heavy for you to carry."
+  "scripts.event_raven_herb_bush.msg_4": "You have found a {item}. Weighing {weight} oz, it is too heavy for you to carry.",
+
+  "scripts.common.slayed_creature": "You slayed {creature}.",
+  "scripts.arena_pvp.wait_fighters": "Please wait for the fighters come out of the arena.",
+  "scripts.arena_pvp.need_2_players": "You need 2 players for enter in the arena.",
+  "scripts.arena_pvp.need_10_players": "You need 10 players for enter in the arena.",
+  "scripts.random_items.found_in_bag": "You found {article} {item} in the bag.",
+  "scripts.random_items.found_nothing": "You found nothing useful."
 }

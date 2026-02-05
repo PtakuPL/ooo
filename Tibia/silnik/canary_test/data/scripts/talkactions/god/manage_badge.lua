@@ -5,19 +5,19 @@ function addBadge.onSay(player, words, param)
 	logCommand(player, words, param)
 
 	if param == "" then
-		player:sendCancelMessage("Command param required.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "gm.common.param_required")
 		return true
 	end
 
 	local split = param:split(",")
 	if not split[2] then
-		player:sendCancelMessage("Insufficient parameters. Usage: /addbadge playerName, badgeID")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "god.manage_badge.insufficient_params")
 		return true
 	end
 
 	local target = Player(split[1])
 	if not target then
-		player:sendCancelMessage("A player with that name is not online.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "gm.common.player_not_found")
 		return true
 	end
 

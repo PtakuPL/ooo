@@ -142,6 +142,20 @@
       "list_players": "Zone {} players: {}.",
       "count_players": "Zone {} players: {}.",
       "zone_size": "Zone {} size: {}."
+    },
+    "add_bosstiary_kills": {
+      "invalid_kill_count": "Invalid kill count.",
+      "target_not_found": "Target player not found.",
+      "added_to_self": "Added received kills: {}, for boss: {} to yourself.",
+      "added_to_player": "Added received kills: {}, for boss: {} to player: {}",
+      "received_kills": "You received kills: {}, to boss: {}"
+    },
+    "manage_badge": {
+      "insufficient_params": "Insufficient parameters. Usage: /addbadge playerName, badgeID"
+    },
+    "manage_vip": {
+      "system_disabled": "Vip System are not enabled!",
+      "value_must_be_numeric": "<value> has to be a numeric value."
     }
   }
 }

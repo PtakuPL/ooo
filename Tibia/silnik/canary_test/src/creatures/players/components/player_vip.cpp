@@ -51,9 +51,9 @@ void PlayerVIP::notifyStatusChange(const std::shared_ptr<Player> &loginPlayer, V
 
 	if (message) {
 		if (vipStatus == VipStatus_t::Online) {
-			m_player.sendTextMessage(TextMessage(MESSAGE_FAILURE, fmt::format("{} has logged in.", loginPlayer->getName())));
+			m_player.sendLocalizedTextMessage(TextMessage(MESSAGE_FAILURE, "cpp.vip.player_logged_in", std::vector<std::string>{loginPlayer->getName()}));
 		} else if (vipStatus == VipStatus_t::Offline) {
-			m_player.sendTextMessage(TextMessage(MESSAGE_FAILURE, fmt::format("{} has logged out.", loginPlayer->getName())));
+			m_player.sendLocalizedTextMessage(TextMessage(MESSAGE_FAILURE, "cpp.vip.player_logged_out", std::vector<std::string>{loginPlayer->getName()}));
 		}
 	}
 }
@@ -73,12 +73,12 @@ bool PlayerVIP::remove(uint32_t vipGuid) {
 
 bool PlayerVIP::add(uint32_t vipGuid, const std::string &vipName, VipStatus_t vipStatus) {
 	if (vipGuids.size() >= getMaxEntries() || vipGuids.size() == 200) { // max number of buddies is 200 in 9.53
-		m_player.sendTextMessage(MESSAGE_FAILURE, "You cannot add more buddies.");
+		m_player.sendLocalizedTextMessage(MESSAGE_FAILURE, "cpp.vip.cannot_add_more");
 		return false;
 	}
 
 	if (!vipGuids.insert(vipGuid).second) {
-		m_player.sendTextMessage(MESSAGE_FAILURE, "This player is already in your list.");
+		m_player.sendLocalizedTextMessage(MESSAGE_FAILURE, "cpp.vip.already_in_list");
 		return false;
 	}
 

@@ -2869,15 +2869,15 @@ void ProtocolGame::parseLeaderFinderWindow(NetworkMessage &msg) {
 
 			switch (memberStatus) {
 				case 2: {
-					member->sendTextMessage(MESSAGE_STATUS, "You are invited to a new team.");
+					member->sendLocalizedTextMessage(MESSAGE_STATUS, "cpp.teamfinder.invited_to_team");
 					break;
 				}
 				case 3: {
-					member->sendTextMessage(MESSAGE_STATUS, "Your team finder request was accepted.");
+				member->sendLocalizedTextMessage(MESSAGE_STATUS, "cpp.teamfinder.request_accepted");
 					break;
 				}
 				case 4: {
-					member->sendTextMessage(MESSAGE_STATUS, "Your team finder request was denied.");
+					member->sendLocalizedTextMessage(MESSAGE_STATUS, "cpp.teamfinder.request_denied");
 					break;
 				}
 
@@ -2919,7 +2919,7 @@ void ProtocolGame::parseMemberFinderWindow(NetworkMessage &msg) {
 		}
 
 		if (action == 1) {
-			leader->sendTextMessage(MESSAGE_STATUS, "There is a new request to join your team.");
+			leader->sendLocalizedTextMessage(MESSAGE_STATUS, "cpp.teamfinder.new_request");
 			teamAssemble->membersMap.insert({ player->getGUID(), 1 });
 		} else {
 			for (auto itt = teamAssemble->membersMap.begin(), end = teamAssemble->membersMap.end(); itt != end; ++itt) {
@@ -4705,7 +4705,7 @@ void ProtocolGame::sendPremiumTrigger() {
 void ProtocolGame::sendTextMessage(const TextMessage &message) {
 	if (message.type == MESSAGE_NONE) {
 		g_logger().error("[ProtocolGame::sendTextMessage] - Message type is wrong, missing or invalid for player with name {}, on position {}", player->getName(), player->getPosition().toString());
-		player->sendTextMessage(MESSAGE_ADMINISTRATOR, "There was a problem requesting your message, please contact the administrator");
+		player->sendLocalizedTextMessage(MESSAGE_ADMINISTRATOR, "cpp.protocol.message_error");
 		return;
 	}
 

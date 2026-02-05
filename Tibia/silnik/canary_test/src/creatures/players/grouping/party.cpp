@@ -101,7 +101,7 @@ void Party::disband() {
 	g_game().updatePlayerShield(currentLeader);
 	g_game().updatePlayerHelpers(currentLeader);
 	currentLeader->sendCreatureSkull(currentLeader);
-	currentLeader->sendTextMessage(MESSAGE_PARTY_MANAGEMENT, "Your party has been disbanded.");
+	currentLeader->sendLocalizedTextMessage(MESSAGE_PARTY_MANAGEMENT, "cpp.party.disbanded");
 
 	for (const auto &invitee : getInvitees()) {
 		invitee->removePartyInvitation(getParty());
@@ -113,7 +113,7 @@ void Party::disband() {
 	for (const auto &member : members) {
 		member->setParty(nullptr);
 		member->sendClosePrivate(CHANNEL_PARTY);
-		member->sendTextMessage(MESSAGE_PARTY_MANAGEMENT, "Your party has been disbanded.");
+		member->sendLocalizedTextMessage(MESSAGE_PARTY_MANAGEMENT, "cpp.party.disbanded");
 	}
 
 	for (const auto &member : members) {
@@ -196,7 +196,7 @@ bool Party::leaveParty(const std::shared_ptr<Player> &player, bool forceRemove /
 		g_game().updatePlayerHelpers(member);
 	}
 
-	player->sendTextMessage(MESSAGE_PARTY_MANAGEMENT, "You have left the party.");
+	player->sendLocalizedTextMessage(MESSAGE_PARTY_MANAGEMENT, "cpp.party.left");
 
 	updateSharedExperience();
 
@@ -255,7 +255,7 @@ bool Party::passPartyLeadership(const std::shared_ptr<Player> &player) {
 	player->sendPartyCreatureShield(oldLeader);
 	player->sendPartyCreatureShield(player);
 
-	player->sendTextMessage(MESSAGE_PARTY_MANAGEMENT, "You are now the leader of the party.");
+	player->sendLocalizedTextMessage(MESSAGE_PARTY_MANAGEMENT, "cpp.party.new_leader");
 	return true;
 }
 
@@ -497,7 +497,7 @@ bool Party::setSharedExperience(const std::shared_ptr<Player> &player, bool newS
 		}
 	} else {
 		if (!silent) {
-			leader->sendTextMessage(MESSAGE_PARTY_MANAGEMENT, "Shared Experience has been deactivated.");
+			leader->sendLocalizedTextMessage(MESSAGE_PARTY_MANAGEMENT, "cpp.party.shared_exp_deactivated");
 		}
 	}
 

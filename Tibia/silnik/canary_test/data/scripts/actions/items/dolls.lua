@@ -1,105 +1,117 @@
 local dollsTable = {
-	[5080] = { "Hug me!" },
+	[5080] = { "scripts.dolls.5080_1" },
 	[5668] = {
-		"It's not winning that matters, but winning in style.",
-		"Today's your lucky day. Probably.",
-		"Do not meddle in the affairs of dragons, for you are crunchy and taste good with ketchup.",
-		"That is one stupid question.",
-		"You'll need more rum for that.",
-		"Do or do not. There is no try.",
-		"You should do something you always wanted to.",
-		"If you walk under a ladder and it falls down on you it probably means bad luck.",
-		"Never say 'oops'. Always say 'Ah, interesting!'",
-		"Five steps east, fourteen steps south, two steps north and seventeen steps west!",
+		"scripts.dolls.5668_1",
+		"scripts.dolls.5668_2",
+		"scripts.dolls.5668_3",
+		"scripts.dolls.5668_4",
+		"scripts.dolls.5668_5",
+		"scripts.dolls.5668_6",
+		"scripts.dolls.5668_7",
+		"scripts.dolls.5668_8",
+		"scripts.dolls.5668_9",
+		"scripts.dolls.5668_10",
 	},
 	[6566] = {
-		"Fchhhhhh!",
-		"Zchhhhhh!",
-		"Grooaaaaar*cough*",
-		"Aaa... CHOO!",
-		"You... will.... burn!!",
+		"scripts.dolls.6566_1",
+		"scripts.dolls.6566_2",
+		"scripts.dolls.6566_3",
+		"scripts.dolls.6566_4",
+		"scripts.dolls.6566_5",
 	},
-	[6387] = { "Merry Christmas |PLAYERNAME|." },
+	[6387] = { "scripts.dolls.6387_1" },
 	[6511] = {
-		"Ho ho ho",
-		"Jingle bells, jingle bells...",
-		"Have you been naughty?",
-		"Have you been nice?",
-		"Merry Christmas!",
-		"Can you stop squeezing me now... I'm starting to feel a little sick.",
+		"scripts.dolls.6511_1",
+		"scripts.dolls.6511_2",
+		"scripts.dolls.6511_3",
+		"scripts.dolls.6511_4",
+		"scripts.dolls.6511_5",
+		"scripts.dolls.6511_6",
 	},
-	[8146] = { "ARE YOU PREPARED TO FACE YOUR DESTINY?" },
+	[8146] = { "scripts.dolls.8146_1" },
 	[8149] = {
-		"Weirdo, you're a weirdo! Actually all of you are!",
-		"Pie for breakfast, pie for lunch and pie for dinner!",
-		"All hail the control panel!",
-		"I own, god owns, perfect match!",
-		"Hug me! Feed me! Hail me!",
+		"scripts.dolls.8149_1",
+		"scripts.dolls.8149_2",
+		"scripts.dolls.8149_3",
+		"scripts.dolls.8149_4",
+		"scripts.dolls.8149_5",
 	},
 	[8153] = {
-		"It's news to me.",
-		"News, updated as infrequently as possible!",
-		"Extra! Extra! Read all about it!",
-		"Fresh off the press!",
+		"scripts.dolls.8153_1",
+		"scripts.dolls.8153_2",
+		"scripts.dolls.8153_3",
+		"scripts.dolls.8153_4",
 	},
 	[8154] = {
-		"Hail!",
-		"So cold.",
-		"Run, mammoth!",
+		"scripts.dolls.8154_1",
+		"scripts.dolls.8154_2",
+		"scripts.dolls.8154_3",
 	},
 	[9144] = {
-		"Hail |PLAYERNAME|! Hail!",
-		"Hauopa!",
-		"WHERE IS MY HYDROMEL?!",
-		"Yala Boom",
+		"scripts.dolls.9144_1",
+		"scripts.dolls.9144_2",
+		"scripts.dolls.9144_3",
+		"scripts.dolls.9144_4",
 	},
 	[12043] = {
-		"For zze emperor!",
-		"Hail!",
-		"Hail |PLAYERNAME|!",
+		"scripts.dolls.12043_1",
+		"scripts.dolls.12043_2",
+		"scripts.dolls.12043_3",
 	},
 	[12904] = {
-		"Mhausheausheu! What a FAIL! Mwahaha!",
-		"Hail |PLAYERNAME|! You are wearing old socks!",
-		"You are so unpopular even your own shadow refuses to follow you.",
-		"Have fun!",
+		"scripts.dolls.12904_1",
+		"scripts.dolls.12904_2",
+		"scripts.dolls.12904_3",
+		"scripts.dolls.12904_4",
 	},
 	[14764] = {
-		"My powers are limitless!",
-		"Hail!",
+		"scripts.dolls.14764_1",
+		"scripts.dolls.14764_2",
 	},
 	[18343] = {
-		"Hail!",
-		"Shhhhhh, please be quiet!",
-		"Books are great!! Aren't they?",
+		"scripts.dolls.18343_1",
+		"scripts.dolls.18343_2",
+		"scripts.dolls.18343_3",
 	},
 	[21435] = {
-		"I can hear their whisperings... Revenge!",
-		"You shall feel pain and terror, |PLAYERNAME|",
-		"I do not need a sword to slaughter you",
-		"My sword is broken, but my spirit is not dead",
-		"I can say 469 and more...",
-		"My dark magic lies on the world",
+		"scripts.dolls.21435_1",
+		"scripts.dolls.21435_2",
+		"scripts.dolls.21435_3",
+		"scripts.dolls.21435_4",
+		"scripts.dolls.21435_5",
+		"scripts.dolls.21435_6",
 	},
 	[21947] = {
-		"Hail!",
-		"Don't be afraid of the darkness!",
-		"Feel lucky, |PLAYERNAME|!",
-		"Purrrrrrr!",
+		"scripts.dolls.21947_1",
+		"scripts.dolls.21947_2",
+		"scripts.dolls.21947_3",
+		"scripts.dolls.21947_4",
 	},
 	[21962] = {
-		"Hail! (União&Força)",
-		"Hail |PLAYERNAME|! (União&Força)",
-		"Only the real killers can touch me!",
-		"The path of assassin is found in death, DIE!",
-		"<FART...> Ahhh... silent and deadly...",
+		"scripts.dolls.21962_1",
+		"scripts.dolls.21962_2",
+		"scripts.dolls.21962_3",
+		"scripts.dolls.21962_4",
+		"scripts.dolls.21962_5",
 	},
 	[22120] = {
-		"Silence! I smell something!",
-		"Let me guide you, |PLAYERNAME|!",
-		"I have a bad feeling about this.",
-		"Watch your steps - we found the pit latrine.",
+		"scripts.dolls.22120_1",
+		"scripts.dolls.22120_2",
+		"scripts.dolls.22120_3",
+		"scripts.dolls.22120_4",
 	},
+}
+
+-- Keys that use %s for player name substitution
+local dollsWithPlayerName = {
+	["scripts.dolls.6387_1"] = true,
+	["scripts.dolls.9144_1"] = true,
+	["scripts.dolls.12043_3"] = true,
+	["scripts.dolls.12904_2"] = true,
+	["scripts.dolls.21435_2"] = true,
+	["scripts.dolls.21947_3"] = true,
+	["scripts.dolls.21962_2"] = true,
+	["scripts.dolls.22120_2"] = true,
 }
 
 local dolls = Action()
@@ -115,7 +127,7 @@ function dolls.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	end
 
 	local chance = math.random(#sounds)
-	local sound = sounds[chance]
+	local soundKey = sounds[chance]
 	if item.itemid == 5668 then
 		fromPosition:sendMagicEffect(CONST_ME_MAGIC_RED)
 		item:transform(item.itemid + 1)
@@ -148,8 +160,13 @@ function dolls.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 		item:decay()
 	end
 
-	sound = sound:gsub("|PLAYERNAME|", player:getName())
-	player:say(sound, TALKTYPE_MONSTER_SAY, false, 0, fromPosition)
+	-- Resolve the localized text, substituting player name if needed
+	local args = {}
+	if dollsWithPlayerName[soundKey] then
+		args = { player:getName() }
+	end
+	-- sayLocalized(key, type, ghost, target, position, args)
+	player:sayLocalized(soundKey, TALKTYPE_MONSTER_SAY, false, nil, fromPosition, args)
 	return true
 end
 

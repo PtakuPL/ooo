@@ -1,7 +1,10 @@
 local onlineRecord = GlobalEvent("OnlineRecord")
 
 function onlineRecord.onRecord(current, old)
-	addEvent(Game.broadcastMessage, 150, "New record: " .. current .. " players are logged in.", MESSAGE_LOGIN)
+	-- broadcastLocalizedMessage via addEvent requires a wrapper
+	addEvent(function()
+		Game.broadcastLocalizedMessageLua("globalevents.online_record", MESSAGE_LOGIN, { tostring(current) })
+	end, 150)
 	return true
 end
 

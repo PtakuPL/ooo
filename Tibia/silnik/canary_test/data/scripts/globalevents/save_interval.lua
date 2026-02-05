@@ -4,10 +4,11 @@ local function serverSave(interval)
 	end
 
 	saveServer()
-	local message = string.format(SAVE_INTERVAL_CONFIG_TIME > 1 and "Server save complete. Next save in %d %ss!" or "Server save complete. Next save in %d %s!", SAVE_INTERVAL_CONFIG_TIME, SAVE_INTERVAL_TYPE)
-	Game.broadcastMessage(message, MESSAGE_GAME_HIGHLIGHT)
-	logger.info(message)
-	Webhook.sendMessage("Server save", message, WEBHOOK_COLOR_WARNING)
+	local key = SAVE_INTERVAL_CONFIG_TIME > 1 and "globalevents.save_interval.complete_plural" or "globalevents.save_interval.complete_singular"
+	Game.broadcastLocalizedMessageLua(key, MESSAGE_GAME_HIGHLIGHT, { tostring(SAVE_INTERVAL_CONFIG_TIME), SAVE_INTERVAL_TYPE })
+	local logMessage = string.format("Server save complete. Next save in %d %s%s!", SAVE_INTERVAL_CONFIG_TIME, SAVE_INTERVAL_TYPE, SAVE_INTERVAL_CONFIG_TIME > 1 and "s" or "")
+	logger.info(logMessage)
+	Webhook.sendMessage("Server save", logMessage, WEBHOOK_COLOR_WARNING)
 end
 
 local save = GlobalEvent("save")
@@ -15,10 +16,8 @@ local save = GlobalEvent("save")
 function save.onTime(interval)
 	local remainingTime = 60 * 1000
 	if configManager.getBoolean(configKeys.TOGGLE_SAVE_INTERVAL) then
-		local message = "The server will save all accounts within " .. (remainingTime / 1000) .. " seconds. \z
-		You might lag or freeze for 5 seconds, please find a safe place."
-		Game.broadcastMessage(message, MESSAGE_GAME_HIGHLIGHT)
-		logger.info(string.format(message, SAVE_INTERVAL_CONFIG_TIME, SAVE_INTERVAL_TYPE))
+		Game.broadcastLocalizedMessageLua("globalevents.save_interval.warning", MESSAGE_GAME_HIGHLIGHT, { tostring(remainingTime / 1000) })
+		logger.info(string.format("The server will save all accounts within %d seconds.", remainingTime / 1000))
 		addEvent(serverSave, remainingTime, interval)
 		return true
 	end

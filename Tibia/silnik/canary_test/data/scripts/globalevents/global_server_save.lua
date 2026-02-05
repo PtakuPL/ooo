@@ -18,9 +18,11 @@ local function ServerSaveWarning(time)
 	-- Calculate remaining time, minus one minute
 	local remainingTime = tonumber(time) - 60000
 	if configManager.getBoolean(configKeys.GLOBAL_SERVER_SAVE_NOTIFY_MESSAGE) then
-		local message = "Server is saving the game in " .. (remainingTime / 60000) .. " minute(s). Please logout."
-		Webhook.sendMessage("Server save", message, WEBHOOK_COLOR_WARNING)
-		Game.broadcastMessage(message, MESSAGE_GAME_HIGHLIGHT)
+		local minutesLeft = tostring(remainingTime / 60000)
+		-- Webhook still uses English
+		local webhookMsg = "Server is saving the game in " .. minutesLeft .. " minute(s). Please logout."
+		Webhook.sendMessage("Server save", webhookMsg, WEBHOOK_COLOR_WARNING)
+		Game.broadcastLocalizedMessageLua("globalevents.server_save.warning", MESSAGE_GAME_HIGHLIGHT, { minutesLeft })
 	end
 
 	if remainingTime > 60000 then
@@ -37,9 +39,10 @@ local globalServerSave = GlobalEvent("GlobalServerSave")
 function globalServerSave.onTime(interval)
 	local remainingTime = configManager.getNumber(configKeys.GLOBAL_SERVER_SAVE_NOTIFY_DURATION) * 60000
 	if configManager.getBoolean(configKeys.GLOBAL_SERVER_SAVE_NOTIFY_MESSAGE) then
-		local message = "Server is saving the game in " .. (remainingTime / 60000) .. " minute(s). Please logout."
-		Webhook.sendMessage("Server save", message, WEBHOOK_COLOR_WARNING)
-		Game.broadcastMessage(message, MESSAGE_GAME_HIGHLIGHT)
+		local minutesLeft = tostring(remainingTime / 60000)
+		local webhookMsg = "Server is saving the game in " .. minutesLeft .. " minute(s). Please logout."
+		Webhook.sendMessage("Server save", webhookMsg, WEBHOOK_COLOR_WARNING)
+		Game.broadcastLocalizedMessageLua("globalevents.server_save.warning", MESSAGE_GAME_HIGHLIGHT, { minutesLeft })
 	end
 
 	-- Schedule the next warning event in 1 minute (60000 milliseconds)

@@ -156,6 +156,18 @@
     "manage_vip": {
       "system_disabled": "Vip System are not enabled!",
       "value_must_be_numeric": "<value> has to be a numeric value."
+    },
+    "icons_functions": {
+      "icon_required": "Icon required.",
+      "icon_number_required": "Icon number required.",
+      "usage": "Usage: /playericon {icon_id}, {quantity}, {direction (optional: up/down)}",
+      "invalid_quantity": "Invalid quantity. It must be greater than 0.",
+      "invalid_direction": "Invalid direction. Use 'up' or 'down'."
+    },
+    "manage_monster": {
+      "only_allowed_monsters": "Only allowed monsters can be fiendish or influenced.",
+      "monster_name_required": "Monster name param required.",
+      "not_enough_room": "There is not enough room."
     }
   }
 }

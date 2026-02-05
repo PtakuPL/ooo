@@ -43,7 +43,7 @@ local function createCreaturesAround(player, maxRadius, creatureName, creatureCo
 	end
 
 	if sendMessage then
-		player:sendCancelMessage("Only allowed monsters can be fiendish or influenced.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "god.manage_monster.only_allowed_monsters")
 	end
 end
 
@@ -54,7 +54,7 @@ function createMonster.onSay(player, words, param)
 	logCommand(player, words, param)
 
 	if param == "" then
-		player:sendCancelMessage("Monster name param required.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "god.manage_monster.monster_name_required")
 		return true
 	end
 
@@ -78,7 +78,7 @@ function createMonster.onSay(player, words, param)
 		playerPosition:sendMagicEffect(CONST_ME_MAGIC_RED)
 
 		if monsterForge and not monster:isForgeable() then
-			player:sendCancelMessage("Only allowed monsters can be fiendish or influenced.")
+			player:sendLocalizedMessage(MESSAGE_FAILURE, "god.manage_monster.only_allowed_monsters")
 			return true
 		end
 
@@ -91,7 +91,7 @@ function createMonster.onSay(player, words, param)
 			SetInfluenced(monsterType, monster, player, influencedLevel)
 		end
 	else
-		player:sendCancelMessage("There is not enough room.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "god.manage_monster.not_enough_room")
 		playerPosition:sendMagicEffect(CONST_ME_POFF)
 	end
 	return true
@@ -108,7 +108,7 @@ function setMonsterName.onSay(player, words, param)
 	logCommand(player, words, param)
 
 	if param == "" then
-		player:sendCancelMessage("Command param required.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "gm.common.param_required")
 		return true
 	end
 

@@ -1,6 +1,6 @@
 local config = {
-	[11589] = { itemId = 11550, storage = Storage.Quest.U8_6.AFathersBurden.Corpse.Scale, text = "Glitterscale's scale." },
-	[11590] = { itemId = 11548, storage = Storage.Quest.U8_6.AFathersBurden.Corpse.Sinew, text = "Heoni's sinew" },
+	[11589] = { itemId = 11550, storage = Storage.Quest.U8_6.AFathersBurden.Corpse.Scale, messageKey = "scripts.actions_corpse.say_scale" },
+	[11590] = { itemId = 11548, storage = Storage.Quest.U8_6.AFathersBurden.Corpse.Sinew, messageKey = "scripts.actions_corpse.say_sinew" },
 }
 
 local fatherCorpse = Action()
@@ -16,7 +16,7 @@ function fatherCorpse.onUse(player, item, fromPosition, target, toPosition, isHo
 
 	player:addItem(corpse.itemId, 1)
 	player:setStorageValue(corpse.storage, 1)
-	player:say("You acquired " .. corpse.text, TALKTYPE_MONSTER_SAY)
+	player:sayLocalized(corpse.messageKey, TALKTYPE_MONSTER_SAY)
 	return true
 end
 

@@ -2,7 +2,7 @@
 
 > **Session Date:** 2025-02-05  
 > **Operator:** GitHub Copilot Agent  
-> **Status:** 🔄 Session 3 In Progress - Adding i18n keys to scripts
+> **Status:** 🔄 Session 3 Continued - Adding i18n keys to quest scripts
 
 ---
 
@@ -14,11 +14,61 @@ This document tracks i18n migration progress made during GitHub Copilot sessions
 
 | Metric | Value |
 |--------|-------|
-| 📁 Files Migrated | 45+ |
-| 🔑 New Keys Added (EN) | 150+ |
+| 📁 Files Migrated | 65+ |
+| 🔑 New Keys Added (EN) | 180+ |
 | 🌐 **Translations Added (PL)** | **1,988+** |
-| ⏱️ Session Duration | ~400 min |
+| ⏱️ Session Duration | ~450 min |
 | ✅ OTClient PL Completion | **100%** |
+
+---
+
+## 🆕 Session 3 (Continued): Quest CreatureScripts & Movement Migration
+
+### New Files Migrated This Update
+
+| File | Keys Added | Changes |
+|------|------------|---------|
+| `quests/kilmaresh_quest/creaturescripts_fafnar.lua` | 2 | Migrated kill counter messages |
+| `quests/fathers_burden/actions_corpse.lua` | 2 | Migrated item acquisition messages |
+| `quests/elemental_spheres/creaturescripts_overlord_kill.lua` | 1 | Migrated boss slayed message |
+| `quests/forgotten_knowledge/creaturescripts_possessed_tree.lua` | 1 | Migrated monster spawn message |
+| `quests/the_pits_of_inferno_quest/actions_levers.lua` | 15 | Migrated all lever flip messages |
+| `quests/grave_danger_quest/movements_enter_tps.lua` | 1 | Migrated boss cooldown message |
+| `quests/threatened_dreams/event_raven_herb_bush.lua` | 4 | Migrated raven herb messages |
+
+### New Keys Added (This Update)
+
+```json
+"scripts.creaturescripts_fafnar.say_1": "You slayed {creature}.",
+"scripts.creaturescripts_fafnar.say_2": "You have slayed {creature} {kills} times!",
+"scripts.actions_corpse.say_scale": "You acquired Glitterscale's scale.",
+"scripts.actions_corpse.say_sinew": "You acquired Heoni's sinew.",
+"scripts.creaturescripts_overlord_kill.say_1": "You slayed {boss}.",
+"scripts.creaturescripts_possessed_tree.say_1": "The destruction of the tree unleashes the {monster}!",
+"scripts.actions_levers.say_1": "You flipped the first lever. Hurry up and find the next one!",
+"scripts.actions_levers.say_2": "You flipped the second lever. Hurry up and find the next one!",
+"scripts.actions_levers.say_3": "You flipped the third lever. Hurry up and find the next one!",
+"scripts.actions_levers.say_4": "You flipped the fourth lever. Hurry up and find the next one!",
+"scripts.actions_levers.say_5": "You haven't flipped all the levers yet!",
+"scripts.actions_levers.say_6": "You flipped the sixth lever. Hurry up and find the next one!",
+"scripts.actions_levers.say_7": "You flipped the seventh lever. Hurry up and find the next one!",
+"scripts.actions_levers.say_8": "You flipped the eighth lever. Hurry up and find the next one!",
+"scripts.actions_levers.say_9": "You flipped the ninth lever. Hurry up and find the next one!",
+"scripts.actions_levers.say_10": "You flipped the tenth lever. Hurry up and find the next one!",
+"scripts.actions_levers.say_11": "You flipped the eleventh lever. Hurry up and find the next one!",
+"scripts.actions_levers.say_12": "You flipped the twelfth lever. Hurry up and find the next one!",
+"scripts.actions_levers.say_13": "You flipped the thirteenth lever. Hurry up and find the next one!",
+"scripts.actions_levers.say_14": "You flipped the fourteenth lever. Hurry up and find the next one!",
+"scripts.actions_levers.say_15": "You flipped the fifteenth lever. Hurry up and find the next one!",
+"scripts.movements_enter_tps.say_1": "You need to wait {time} before trying to challenge {boss} again!",
+"scripts.event_raven_herb_bush.msg_1": "You already took a raven herb from this bush recently. You should wait some time.",
+"scripts.event_raven_herb_bush.msg_2": "You have found a {item}.",
+"scripts.event_raven_herb_bush.msg_3": "You have found a {item}. But you have no room to take it.",
+"scripts.event_raven_herb_bush.msg_4": "You have found a {item}. Weighing {weight} oz, it is too heavy for you to carry."
+```
+
+**Total new keys this update: 26**
+**Total keys in scripts.json: 752**
 
 ---
 

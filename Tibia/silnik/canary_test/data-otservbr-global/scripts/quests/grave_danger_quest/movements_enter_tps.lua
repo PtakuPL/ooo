@@ -53,7 +53,7 @@ function grave_enter.onStepIn(creature, item, position, fromPosition)
 
 	if creature:getStorageValue(thing.stor) > os.time() then
 		local eq = creature:getStorageValue(thing.stor) - os.time()
-		creature:say("You need to wait " .. secondsToClock(eq) .. " before trying to challenge " .. thing.boss .. " again!", TALKTYPE_MONSTER_SAY, false, creature)
+		creature:sayLocalized("scripts.movements_enter_tps.say_1", TALKTYPE_MONSTER_SAY, { time = secondsToClock(eq), boss = thing.boss })
 		creature:teleportTo(fromPosition)
 		return true
 	end

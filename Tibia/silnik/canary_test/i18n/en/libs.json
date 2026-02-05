@@ -47,5 +47,9 @@
   "libs.monster.only_allowed_fiendish": "Only allowed monsters can be fiendish.",
   "libs.monster.already_fiendish": "This monster is already fiendish.",
   "libs.monster.not_forgeable": "This monster is not forgeable, fiendish not added.",
-  "libs.quests.questlog_updated": "Your questlog has been updated."
+  "libs.quests.questlog_updated": "Your questlog has been updated.",
+  "libs.blessing.cant_buy_in_battle": "You can't buy bless while in battle.",
+  "libs.blessing.already_blessed": "You are already blessed.",
+  "libs.blessing.received_blesses": "You received the remaining {} blesses for a total of {} gold.",
+  "libs.blessing.not_enough_money": "You don't have enough money. You need {} to buy all blesses."
 }

@@ -1,5 +1,9 @@
 {
   "player": {
-    "item_move_cooldown": "You can't move that item so fast."
+    "item_move_cooldown": "You can't move that item so fast.",
+    "report_processing": "Your report is being processed.",
+    "report_error": "There was an error when processing your report, please contact a gamemaster.",
+    "report_sent": "Your report has been sent to {}.",
+    "left_regen_zone": "You are no longer refilling stamina, since you left a regeneration zone."
   }
 }

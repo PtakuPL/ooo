@@ -246,7 +246,7 @@ end
 
 Blessings.BuyAllBlesses = function(player)
 	if not Tile(player:getPosition()):hasFlag(TILESTATE_PROTECTIONZONE) and (player:isPzLocked() or player:getCondition(CONDITION_INFIGHT, CONDITIONID_DEFAULT)) then
-		player:sendCancelMessage("You can't buy bless while in battle.")
+		player:sendLocalizedCancelMessage("libs.blessing.cant_buy_in_battle")
 		player:getPosition():sendMagicEffect(CONST_ME_POFF)
 		return true
 	end
@@ -265,7 +265,7 @@ Blessings.BuyAllBlesses = function(player)
 	end
 
 	if missingBlessAmt == 0 then
-		player:sendCancelMessage("You are already blessed.")
+		player:sendLocalizedCancelMessage("libs.blessing.already_blessed")
 		player:getPosition():sendMagicEffect(CONST_ME_POFF)
 		return true
 	end
@@ -284,10 +284,10 @@ Blessings.BuyAllBlesses = function(player)
 			player:addBlessing(bless.id, 1)
 		end
 
-		player:sendCancelMessage(string.format("You received the remaining %d blesses for a total of %d gold.", missingBlessAmt, totalCost))
+		player:sendLocalizedCancelMessage("libs.blessing.received_blesses", {missingBlessAmt, totalCost})
 		player:getPosition():sendMagicEffect(CONST_ME_HOLYAREA)
 	else
-		player:sendCancelMessage(string.format("You don't have enough money. You need %d to buy all blesses.", totalCost))
+		player:sendLocalizedCancelMessage("libs.blessing.not_enough_money", {totalCost})
 		player:getPosition():sendMagicEffect(CONST_ME_POFF)
 	end
 

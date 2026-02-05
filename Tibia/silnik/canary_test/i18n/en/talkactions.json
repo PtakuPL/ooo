@@ -1,303 +1,312 @@
 {
-    "player": {
-        "online": {
-            "count": "Currently {} of {} players are online."
-        },
-        "refill": {
-            "potion_filled": "Your {} has been filled.",
-            "arrows_filled": "Your quiver has been filled."
-        },
-        "tutor_position": {
-            "enabled": "Tutor position enabled.",
-            "disabled": "Tutor position disabled."
-        },
-        "report": {
-            "cooldown": "You can only open one report at a time.",
-            "message_too_short": "Report message must have more than 3 characters!",
-            "submitted": "Your report has been sent to {} and a notification has been sent."
-        },
-        "auto_loot": {
-            "vip_required": "You need to be VIP to use this command!"
-        },
-        "aol": {
-            "insufficient_money": "You do not have enough money. You need {} gold to buy aol!"
-        },
-        "leave_house": {
-            "not_inside_house": "You are not inside a house.",
-            "not_owner": "You are not the owner of this house."
-        },
-        "buy_house": {
-            "premium_required": "You need a premium account.",
-            "level_required": "You need to be level {} to buy a house.",
-            "must_look_at_door": "You have to be looking at the door of the house you would like to buy.",
-            "already_has_owner": "This house already has an owner.",
-            "already_own_house": "You are already the owner of a house.",
-            "insufficient_money": "You do not have enough money."
-        },
-        "emote_spell": {
-            "specify_parameter": "Please specify the parameter: 'on' to activate or 'off' to deactivate."
-        },
-        "hidden_shop": {
-            "specify_parameter": "You need to specify on/off param."
-        },
-        "sell_house": {
-            "player_not_found": "Trade player not found.",
-            "must_stand_in_house": "You must stand in your house to initiate the trade."
-        },
-        "flask": {
-            "specify_parameter": "You need to specify on/off param."
-        }
+  "player": {
+    "online": {
+      "stats": "{} players online | Training: {} | Idle: {} | Active: {}",
+      "list": "{}{}"
     },
-    "gm": {
-        "common": {
-            "player_not_found": "Player not found.",
-            "creature_not_found": "Creature not found.",
-            "town_not_found": "Town not found.",
-            "param_required": "Command param required.",
-            "invalid_format": "Invalid command format.",
-            "cannot_teleport": "You cannot teleport there."
-        },
-        "ban": {
-            "usage": "Command param required. Use: /ban playername, days [, reason].",
-            "invalid_format": "Invalid command format. Use: /ban playername, days [, reason].",
-            "invalid_days": "Invalid number of days.",
-            "duration_too_long": "Ban duration cannot exceed 350000 days.",
-            "already_banned_longer": "Player is already banned for longer or equal duration.",
-            "extended": "{}'s ban has been extended to {} days.",
-            "banned_for_days": "{} has been banned for {} days.",
-            "must_specify_reason": "You must specify a reason."
-        },
-        "kick": {
-            "cannot_kick": "You cannot kick this player."
-        },
-        "teleport": {
-            "no_active_players": "There are no active players.",
-            "destination_invalid": "Destination position is not valid.",
-            "specify_xyz": "You need to declare the X, Y of Z of destination."
-        },
-        "look": {
-            "param_required": "Write the name of the character to be spyed.",
-            "looktype_invalid": "A look type with that id does not exist.",
-            "player_offline": "This player is offline or doesn't exist.",
-            "looktype_numeric": "Looktype must be a numerical value."
-        },
-        "light": {
-            "usage": "Use like this: /setlight color (0-{}), (1-32). The first param is color and the second is intensity.",
-            "color_required": "You need to specify the light color."
-        },
-        "clean": {
-            "cleaned_items": "Cleaned {} item{}."
-        },
-        "ghost": {
-            "need_on_off": "You need to specify on/off param."
-        },
-        "afk": {
-            "already_afk": "You are already AFK!"
-        },
-        "highscore": {
-            "no_data": "No highscore to show."
-        },
-        "count": {
-            "monsters_count": "There are {} monsters in the game."
-        },
-        "creature": {
-            "not_found": "A creature with that name could not be found."
-        }
+    "refill": {
+      "result": "Refilled {} for a total of {} silver tokens."
     },
-    "god": {
-        "add_skill": {
-            "usage": "Usage: /addskill <playername>, <skill or 'level'/'magic'>, [amount]"
-        },
-        "create_item": {
-            "no_item": "There is no item with that id or name.",
-            "invalid_tier": "Invalid tier count."
-        },
-        "add_addon": {
-            "usage": "Usage: /addaddon <player name>, <looktype or 'all'>, <value>",
-            "invalid_value": "Invalid addon value. It should be between 0 and 3.",
-            "invalid_looktype": "Invalid looktype."
-        },
-        "add_money": {
-            "param_required": "Player name param required",
-            "player_not_exist": "A player with name {} does not exist.",
-            "invalid_amount": "Invalid amount.",
-            "failed": "Failed to add money to {}.",
-            "added_to_character": "{} added {} gold coins to your character."
-        },
-        "add_mount": {
-            "usage": "Usage: /addmount <playername>, <mount id or 'all'>",
-            "invalid_id": "Invalid mount ID."
-        },
-        "create_npc": {
-            "not_enough_room": "There is not enough room."
-        },
-        "create_summon": {
-            "not_enough_room": "Not enough room."
-        },
-        "goto_house": {
-            "player_no_house": "The player {} not have house.",
-            "no_house_usage": "You not have house. For goto house of one player use the player name param, usage: /gotohouse playername"
-        },
-        "house_owner": {
-            "not_inside_house": "You are not inside a house."
-        },
-        "inbox_command": {
-            "item_removed": "{} removed",
-            "item_added": "{} added"
-        },
-        "ip_ban": {
-            "already_banned": "{}  is already IP banned.",
-            "banned": "{}  has been IP banned."
-        },
-        "raids": {
-            "started": "Raid {} started.",
-            "failed": "Raid {} could not be started.",
-            "list_message": "Registered raids: {}",
-            "param_required": "Command param required."
-        },
-        "remove_thing": {
-            "object_not_found": "Object not found.",
-            "thing_not_found": "Thing not found.",
-            "cannot_remove_ground": "You may not remove a ground tile."
-        },
-        "test": {
-            "backpack_no_container": "Your backpack does not contain a valid container.",
-            "backpack_items": "You {} {} items and {} subcontainers from your backpack.",
-            "log_level_required": "Log level and message required.",
-            "log_message_required": "Log message required."
-        },
-        "zones": {
-            "list": "Zones:\n{}",
-            "count_monsters": "Zone {} monsters: {}.",
-            "count_npcs": "Zone {} NPCs: {}.",
-            "list_players": "Zone {} players: {}.",
-            "count_players": "Zone {} players: {}.",
-            "zone_size": "Zone {} size: {}."
-        },
-        "add_bosstiary_kills": {
-            "invalid_kill_count": "Invalid kill count.",
-            "target_not_found": "Target player not found.",
-            "added_to_self": "Added received kills: {}, for boss: {} to yourself.",
-            "added_to_player": "Added received kills: {}, for boss: {} to player: {}",
-            "received_kills": "You received kills: {}, to boss: {}"
-        },
-        "manage_badge": {
-            "insufficient_params": "Insufficient parameters. Usage: /addbadge playerName, badgeID"
-        },
-        "manage_vip": {
-            "system_disabled": "Vip System are not enabled!",
-            "value_must_be_numeric": "<value> has to be a numeric value."
-        },
-        "icons_functions": {
-            "icon_required": "Icon required.",
-            "icon_number_required": "Icon number required.",
-            "usage": "Usage: /playericon {icon_id}, {quantity}, {direction (optional: up/down)}",
-            "invalid_quantity": "Invalid quantity. It must be greater than 0.",
-            "invalid_direction": "Invalid direction. Use 'up' or 'down'."
-        },
-        "manage_monster": {
-            "only_allowed_monsters": "Only allowed monsters can be fiendish or influenced.",
-            "monster_name_required": "Monster name param required.",
-            "not_enough_room": "There is not enough room."
-        },
-        "manage_title": {
-            "insufficient_params_add": "Insufficient parameters. Usage: /addtitle playerName, badgeID",
-            "insufficient_params_set": "Insufficient parameters. Usage: /settitle playerName, badgeID"
-        },
-        "manage_tutor": {
-            "player_name_required": "Player name param required",
-            "player_not_online": "Player {} is not online.",
-            "only_promote_normal": "You can only promote a normal player to a tutor.",
-            "promoted_to_tutor": "You have been promoted to a tutor by {}.",
-            "only_demote_tutor": "You can only demote a tutor to a normal player"
-        },
-        "attributes": {
-            "item_not_found": "Item not found.",
-            "cannot_add_to_item": "You cannot add that attribute to this item.",
-            "creature_not_found": "Creature not found.",
-            "cannot_add_to_creature": "You cannot add that attribute to this creature.",
-            "cannot_add_to_player": "You cannot add that attribute to this player.",
-            "unknown_attribute": "Unknown attribute."
-        },
-        "achievement_functions": {
-            "usage_add": "Usage: /addachievement playerName, achievementId|Name",
-            "usage_remove": "Usage: /removeachievement playerName, achievementId",
-            "usage_check": "Usage: /checkachievements playerName",
-            "player_not_online": "Player {} is not online.",
-            "invalid_achievement": "Invalid achievement. Use valid ID or name.",
-            "invalid_identifier": "Invalid achievement identifier. Use either ID or name.",
-            "achievements_list": "Achievements: {}"
-        },
-        "flags": {
-            "player_not_found": "Player {} not found.",
-            "player_not_have_flag": "Player {} not have flag type: {}.",
-            "player_have_flag": "Player {} have flag type: {}.",
-            "player_already_has_flag": "Player {} already has flag {}.",
-            "flag_set": "Flag {} set for player {}.",
-            "flag_removed": "Flag {} removed from player {}."
-        },
-        "manage_kv": {
-            "player_not_found": "Player {} not found.",
-            "kv_value": "kv[{}] for {}: {}",
-            "key_not_found": "Key {} not found for {}.",
-            "kv_global_value": "kv[{}] = {}",
-            "player_not_valid": "Player '{}' not found or is not a valid player.",
-            "kv_set": "KV: [{}] = {} set for {}",
-            "boss_cooldown_cleared": "Boss cooldown for {} cleared."
-        },
-        "manage_storage": {
-            "insufficient_params": "Insufficient parameters.",
-            "invalid_storage_key": "Invalid storage key or name.",
-            "storage_not_exist": "The storage with id: {} does not exist or is not set for player {}.",
-            "storage_value": "The storage with id: {} from player {} is: {}.",
-            "set_storage": "Set storage: {} to player {}, newValue: {}."
-        },
-        "sound": {
-            "invalid_param": "Invalid command param.",
-            "invalid_params": "Invalid command params.",
-            "playing_area_single": "Playing sound number {} on the area.",
-            "playing_area_dual": "Playing sound number {} and {} on the area.",
-            "playing_internal_single": "Playing sound number {} internally.",
-            "playing_internal_dual": "Playing sound number {} and {} internally.",
-            "playing_global_single": "Playing sound number {} globally.",
-            "playing_global_dual": "Playing sound number {} and {} globally."
-        },
-        "forge_functions": {
-            "player_name_required": "Player name param required.",
-            "player_not_online": "Player {} is not online.",
-            "invalid_dust_count": "Invalid dust count.",
-            "invalid_dust_level": "Invalid dust level.",
-            "added_dusts_admin": "Successful added {} dusts for the {} player.",
-            "added_dusts_player": "{} added {} dusts to your character.",
-            "removed_dusts_admin": "Successful removed {} dusts for the {} player.",
-            "removed_dusts_player": "{} removed {} dusts to your character.",
-            "player_has_dusts": "{} has {} dusts.",
-            "set_dusts_admin": "Successful set {} dusts for the {} player.",
-            "set_dusts_player": "{} set {} dusts to your character.",
-            "no_fiendish_monsters": "There are not fiendish monsters right now.",
-            "no_influenced_monsters": "There are not influenced monsters right now.",
-            "added_dust_level_admin": "Successful added {} dust level for the {} player.",
-            "added_dust_level_player": "{} adds {} dust level to your character."
-        },
-        "charms": {
-            "usage_required": "Command param required. Usage: {}",
-            "insufficient_params": "Insufficient parameters. Usage: {}",
-            "added_charm_points_admin": "Added {} charm points to character '{}'.",
-            "added_charm_points_player": "Received {} charm points!",
-            "added_minor_points_admin": "Added {} minor charm points to character '{}'.",
-            "added_minor_points_player": "Received {} minor charm points!",
-            "reseted_admin": "Reseted charm points from character '{}'.",
-            "reseted_player": "Reseted your charm points!",
-            "added_expansion_admin": "Added charm expansion for player '{}'.",
-            "added_expansion_player": "Received charm expansion!",
-            "added_all_runes_admin": "Added all charm runes to '{}'.",
-            "added_all_runes_player": "Received all charm runes!",
-            "wrong_kill_amount": "Wrong kill amount.",
-            "set_all_bestiary_admin": "Set bestiary kill count to '{}' for all monsters for player '{}'.",
-            "set_all_bestiary_player": "Updated kills for all monsters in the bestiary!",
-            "no_bestiary": "This monster has no bestiary. Type the name exactly as in the game.",
-            "set_bestiary_monster_admin": "Set bestiary kill of monster '{}' for player '{}' to '{}'.",
-            "set_bestiary_monster_player": "Updated kills of monster '{}'!"
-        }
+    "tutor_position": {
+      "enabled": "Tutor position enabled.",
+      "disabled": "Tutor position disabled."
+    },
+    "report": {
+      "cooldown": "You can only open one report at a time.",
+      "message_too_short": "Report message must have more than 3 characters!",
+      "submitted": "Your report has been sent to {} and a notification has been sent."
+    },
+    "auto_loot": {
+      "vip_required": "You need to be VIP to use this command!"
+    },
+    "aol": {
+      "insufficient_money": "You do not have enough money. You need {} gold to buy aol!"
+    },
+    "leave_house": {
+      "not_inside_house": "You are not inside a house.",
+      "not_owner": "You are not the owner of this house."
+    },
+    "buy_house": {
+      "premium_required": "You need a premium account.",
+      "level_required": "You need to be level {} to buy a house.",
+      "must_look_at_door": "You have to be looking at the door of the house you would like to buy.",
+      "already_has_owner": "This house already has an owner.",
+      "already_own_house": "You are already the owner of a house.",
+      "insufficient_money": "You do not have enough money."
+    },
+    "emote_spell": {
+      "specify_parameter": "Please specify the parameter: 'on' to activate or 'off' to deactivate."
+    },
+    "hidden_shop": {
+      "specify_parameter": "You need to specify on/off param."
+    },
+    "sell_house": {
+      "player_not_found": "Trade player not found.",
+      "must_stand_in_house": "You must stand in your house to initiate the trade."
+    },
+    "flask": {
+      "specify_parameter": "You need to specify on/off param."
+    },
+    "tutor": {
+      "position": "Your current position is: {}, {}, {}."
     }
+  },
+  "gm": {
+    "common": {
+      "player_not_found": "Player not found.",
+      "creature_not_found": "Creature not found.",
+      "town_not_found": "Town not found.",
+      "param_required": "Command param required.",
+      "invalid_format": "Invalid command format.",
+      "cannot_teleport": "You cannot teleport there."
+    },
+    "ban": {
+      "usage": "Command param required. Use: /ban playername, days [, reason].",
+      "invalid_format": "Invalid command format. Use: /ban playername, days [, reason].",
+      "invalid_days": "Invalid number of days.",
+      "duration_too_long": "Ban duration cannot exceed 350000 days.",
+      "already_banned_longer": "Player is already banned for longer or equal duration.",
+      "extended": "{}'s ban has been extended to {} days.",
+      "banned_for_days": "{} has been banned for {} days.",
+      "must_specify_reason": "You must specify a reason."
+    },
+    "kick": {
+      "cannot_kick": "You cannot kick this player."
+    },
+    "teleport": {
+      "no_active_players": "There are no active players.",
+      "destination_invalid": "Destination position is not valid.",
+      "specify_xyz": "You need to declare the X, Y of Z of destination."
+    },
+    "look": {
+      "param_required": "Write the name of the character to be spyed.",
+      "looktype_invalid": "A look type with that id does not exist.",
+      "player_offline": "This player is offline or doesn't exist.",
+      "looktype_numeric": "Looktype must be a numerical value."
+    },
+    "light": {
+      "usage": "Use like this: /setlight color (0-{}), (1-32). The first param is color and the second is intensity.",
+      "color_required": "You need to specify the light color."
+    },
+    "clean": {
+      "cleaned_items": "Cleaned {} item{}."
+    },
+    "ghost": {
+      "need_on_off": "You need to specify on/off param."
+    },
+    "afk": {
+      "already_afk": "You are already AFK!"
+    },
+    "highscore": {
+      "no_data": "No highscore to show."
+    },
+    "count": {
+      "monsters_count": "There are {} monsters in the game."
+    },
+    "creature": {
+      "not_found": "A creature with that name could not be found."
+    },
+    "mc_check": {
+      "result": "{}."
+    },
+    "getlook": {
+      "xml": "<look type=\"{}\" head=\"{}\" body=\"{}\" legs=\"{}\" feet=\"{}\" addons=\"{}\" mount=\"{}\" />"
+    }
+  },
+  "god": {
+    "add_skill": {
+      "usage": "Usage: /addskill <playername>, <skill or 'level'/'magic'>, [amount]"
+    },
+    "create_item": {
+      "no_item": "There is no item with that id or name.",
+      "invalid_tier": "Invalid tier count."
+    },
+    "add_addon": {
+      "usage": "Usage: /addaddon <player name>, <looktype or 'all'>, <value>",
+      "invalid_value": "Invalid addon value. It should be between 0 and 3.",
+      "invalid_looktype": "Invalid looktype."
+    },
+    "add_money": {
+      "param_required": "Player name param required",
+      "player_not_exist": "A player with name {} does not exist.",
+      "invalid_amount": "Invalid amount.",
+      "failed": "Failed to add money to {}.",
+      "added_to_character": "{} added {} gold coins to your character."
+    },
+    "add_mount": {
+      "usage": "Usage: /addmount <playername>, <mount id or 'all'>",
+      "invalid_id": "Invalid mount ID."
+    },
+    "create_npc": {
+      "not_enough_room": "There is not enough room."
+    },
+    "create_summon": {
+      "not_enough_room": "Not enough room."
+    },
+    "goto_house": {
+      "player_no_house": "The player {} not have house.",
+      "no_house_usage": "You not have house. For goto house of one player use the player name param, usage: /gotohouse playername"
+    },
+    "house_owner": {
+      "not_inside_house": "You are not inside a house."
+    },
+    "inbox_command": {
+      "item_removed": "{} removed",
+      "item_added": "{} added"
+    },
+    "ip_ban": {
+      "already_banned": "{}  is already IP banned.",
+      "banned": "{}  has been IP banned."
+    },
+    "raids": {
+      "started": "Raid {} started.",
+      "failed": "Raid {} could not be started.",
+      "list_message": "Registered raids: {}",
+      "param_required": "Command param required."
+    },
+    "remove_thing": {
+      "object_not_found": "Object not found.",
+      "thing_not_found": "Thing not found.",
+      "cannot_remove_ground": "You may not remove a ground tile."
+    },
+    "test": {
+      "backpack_no_container": "Your backpack does not contain a valid container.",
+      "backpack_items": "You {} {} items and {} subcontainers from your backpack.",
+      "log_level_required": "Log level and message required.",
+      "log_message_required": "Log message required."
+    },
+    "zones": {
+      "list": "Zones:\n{}",
+      "count_monsters": "Zone {} monsters: {}.",
+      "count_npcs": "Zone {} NPCs: {}.",
+      "list_players": "Zone {} players: {}.",
+      "count_players": "Zone {} players: {}.",
+      "zone_size": "Zone {} size: {}."
+    },
+    "add_bosstiary_kills": {
+      "invalid_kill_count": "Invalid kill count.",
+      "target_not_found": "Target player not found.",
+      "added_to_self": "Added received kills: {}, for boss: {} to yourself.",
+      "added_to_player": "Added received kills: {}, for boss: {} to player: {}",
+      "received_kills": "You received kills: {}, to boss: {}"
+    },
+    "manage_badge": {
+      "insufficient_params": "Insufficient parameters. Usage: /addbadge playerName, badgeID"
+    },
+    "manage_vip": {
+      "system_disabled": "Vip System are not enabled!",
+      "value_must_be_numeric": "<value> has to be a numeric value."
+    },
+    "icons_functions": {
+      "icon_required": "Icon required.",
+      "icon_number_required": "Icon number required.",
+      "usage": "Usage: /playericon {icon_id}, {quantity}, {direction (optional: up/down)}",
+      "invalid_quantity": "Invalid quantity. It must be greater than 0.",
+      "invalid_direction": "Invalid direction. Use 'up' or 'down'."
+    },
+    "manage_monster": {
+      "only_allowed_monsters": "Only allowed monsters can be fiendish or influenced.",
+      "monster_name_required": "Monster name param required.",
+      "not_enough_room": "There is not enough room."
+    },
+    "manage_title": {
+      "insufficient_params_add": "Insufficient parameters. Usage: /addtitle playerName, badgeID",
+      "insufficient_params_set": "Insufficient parameters. Usage: /settitle playerName, badgeID"
+    },
+    "manage_tutor": {
+      "player_name_required": "Player name param required",
+      "player_not_online": "Player {} is not online.",
+      "only_promote_normal": "You can only promote a normal player to a tutor.",
+      "promoted_to_tutor": "You have been promoted to a tutor by {}.",
+      "only_demote_tutor": "You can only demote a tutor to a normal player"
+    },
+    "attributes": {
+      "item_not_found": "Item not found.",
+      "cannot_add_to_item": "You cannot add that attribute to this item.",
+      "creature_not_found": "Creature not found.",
+      "cannot_add_to_creature": "You cannot add that attribute to this creature.",
+      "cannot_add_to_player": "You cannot add that attribute to this player.",
+      "unknown_attribute": "Unknown attribute."
+    },
+    "achievement_functions": {
+      "usage_add": "Usage: /addachievement playerName, achievementId|Name",
+      "usage_remove": "Usage: /removeachievement playerName, achievementId",
+      "usage_check": "Usage: /checkachievements playerName",
+      "player_not_online": "Player {} is not online.",
+      "invalid_achievement": "Invalid achievement. Use valid ID or name.",
+      "invalid_identifier": "Invalid achievement identifier. Use either ID or name.",
+      "achievements_list": "Achievements: {}"
+    },
+    "flags": {
+      "player_not_found": "Player {} not found.",
+      "player_not_have_flag": "Player {} not have flag type: {}.",
+      "player_have_flag": "Player {} have flag type: {}.",
+      "player_already_has_flag": "Player {} already has flag {}.",
+      "flag_set": "Flag {} set for player {}.",
+      "flag_removed": "Flag {} removed from player {}."
+    },
+    "manage_kv": {
+      "player_not_found": "Player {} not found.",
+      "kv_value": "kv[{}] for {}: {}",
+      "key_not_found": "Key {} not found for {}.",
+      "kv_global_value": "kv[{}] = {}",
+      "player_not_valid": "Player '{}' not found or is not a valid player.",
+      "kv_set": "KV: [{}] = {} set for {}",
+      "boss_cooldown_cleared": "Boss cooldown for {} cleared."
+    },
+    "manage_storage": {
+      "insufficient_params": "Insufficient parameters.",
+      "invalid_storage_key": "Invalid storage key or name.",
+      "storage_not_exist": "The storage with id: {} does not exist or is not set for player {}.",
+      "storage_value": "The storage with id: {} from player {} is: {}.",
+      "set_storage": "Set storage: {} to player {}, newValue: {}."
+    },
+    "sound": {
+      "invalid_param": "Invalid command param.",
+      "invalid_params": "Invalid command params.",
+      "playing_area_single": "Playing sound number {} on the area.",
+      "playing_area_dual": "Playing sound number {} and {} on the area.",
+      "playing_internal_single": "Playing sound number {} internally.",
+      "playing_internal_dual": "Playing sound number {} and {} internally.",
+      "playing_global_single": "Playing sound number {} globally.",
+      "playing_global_dual": "Playing sound number {} and {} globally."
+    },
+    "forge_functions": {
+      "player_name_required": "Player name param required.",
+      "player_not_online": "Player {} is not online.",
+      "invalid_dust_count": "Invalid dust count.",
+      "invalid_dust_level": "Invalid dust level.",
+      "added_dusts_admin": "Successful added {} dusts for the {} player.",
+      "added_dusts_player": "{} added {} dusts to your character.",
+      "removed_dusts_admin": "Successful removed {} dusts for the {} player.",
+      "removed_dusts_player": "{} removed {} dusts to your character.",
+      "player_has_dusts": "{} has {} dusts.",
+      "set_dusts_admin": "Successful set {} dusts for the {} player.",
+      "set_dusts_player": "{} set {} dusts to your character.",
+      "no_fiendish_monsters": "There are not fiendish monsters right now.",
+      "no_influenced_monsters": "There are not influenced monsters right now.",
+      "added_dust_level_admin": "Successful added {} dust level for the {} player.",
+      "added_dust_level_player": "{} adds {} dust level to your character."
+    },
+    "charms": {
+      "usage_required": "Command param required. Usage: {}",
+      "insufficient_params": "Insufficient parameters. Usage: {}",
+      "added_charm_points_admin": "Added {} charm points to character '{}'.",
+      "added_charm_points_player": "Received {} charm points!",
+      "added_minor_points_admin": "Added {} minor charm points to character '{}'.",
+      "added_minor_points_player": "Received {} minor charm points!",
+      "reseted_admin": "Reseted charm points from character '{}'.",
+      "reseted_player": "Reseted your charm points!",
+      "added_expansion_admin": "Added charm expansion for player '{}'.",
+      "added_expansion_player": "Received charm expansion!",
+      "added_all_runes_admin": "Added all charm runes to '{}'.",
+      "added_all_runes_player": "Received all charm runes!",
+      "wrong_kill_amount": "Wrong kill amount.",
+      "set_all_bestiary_admin": "Set bestiary kill count to '{}' for all monsters for player '{}'.",
+      "set_all_bestiary_player": "Updated kills for all monsters in the bestiary!",
+      "no_bestiary": "This monster has no bestiary. Type the name exactly as in the game.",
+      "set_bestiary_monster_admin": "Set bestiary kill of monster '{}' for player '{}' to '{}'.",
+      "set_bestiary_monster_player": "Updated kills of monster '{}'!"
+    }
+  }
 }

@@ -16,7 +16,7 @@ function getlook.onSay(player, words, param)
 	end
 
 	local lookt = creature:getOutfit()
-	player:sendTextMessage(MESSAGE_HOTKEY_PRESSED, '<look type="' .. lookt.lookType .. '" head="' .. lookt.lookHead .. '" body="' .. lookt.lookBody .. '" legs="' .. lookt.lookLegs .. '" feet="' .. lookt.lookFeet .. '" addons="' .. lookt.lookAddons .. '" mount="' .. lookt.lookMount .. '" />')
+	player:sendLocalizedTextMessage(MESSAGE_HOTKEY_PRESSED, "talkactions.gm.getlook.xml", {lookt.lookType, lookt.lookHead, lookt.lookBody, lookt.lookLegs, lookt.lookFeet, lookt.lookAddons, lookt.lookMount})
 	return true
 end
 

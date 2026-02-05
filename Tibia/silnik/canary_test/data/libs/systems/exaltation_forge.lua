@@ -90,9 +90,9 @@ function ForgeMonster:onDeath(creature, corpse, killer, mostDamageKiller, unjust
 						end
 
 						local actualTotalDusts = playerKiller:getForgeDusts()
-						playerKiller:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You received " .. amount .. " dust" .. " for the Exaltation Forge. You now have " .. actualTotalDusts .. " out of a maximum of " .. limitDusts .. " dusts.")
+						playerKiller:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "lib.exaltation_forge.msg1", {amount, actualTotalDusts, limitDusts})
 					else
-						playerKiller:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You did not receive " .. amount .. " dust" .. " for the Exaltation Forge because you have already reached the maximum of " .. limitDusts .. " dust.")
+						playerKiller:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "lib.exaltation_forge.msg2", {amount, limitDusts})
 					end
 				end
 			end
@@ -124,9 +124,9 @@ function ForgeMonster:onDeath(creature, corpse, killer, mostDamageKiller, unjust
 					end
 
 					local actualTotalDusts = playerKiller:getForgeDusts()
-					playerKiller:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You received " .. amount .. " dust" .. " for the Exaltation Forge. You now have " .. actualTotalDusts .. " out of a maximum of " .. limitDusts .. " dusts.")
+					playerKiller:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "lib.exaltation_forge.msg1", {amount, actualTotalDusts, limitDusts})
 				else
-					playerKiller:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You did not receive " .. amount .. " dust" .. " for the Exaltation Forge because you have already reached the maximum of " .. limitDusts .. " dust.")
+					playerKiller:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "lib.exaltation_forge.msg2", {amount, limitDusts})
 				end
 			end
 		end

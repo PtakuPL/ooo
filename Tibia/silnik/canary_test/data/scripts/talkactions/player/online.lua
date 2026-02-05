@@ -27,7 +27,7 @@ function playersOnline.onSay(player, words, param)
 	end
 
 	local onlineCount = #onlineList.Training + #onlineList.Idle + #onlineList.Active
-	player:sendTextMessage(MESSAGE_ATTENTION, ("%d players online | Training: %d | Idle: %d | Active: %s"):format(onlineCount, #onlineList.Training, #onlineList.Idle, #onlineList.Active))
+	player:sendLocalizedTextMessage(MESSAGE_ATTENTION, "talkactions.player.online.stats", {onlineCount, #onlineList.Training, #onlineList.Idle, #onlineList.Active})
 
 	for category, list in pairs(onlineList) do
 		if #list > 0 then
@@ -41,7 +41,7 @@ function playersOnline.onSay(player, words, param)
 						table.remove(list, 1)
 					end
 				end
-				player:sendTextMessage(MESSAGE_ATTENTION, prefix .. table.concat(msg, ", "))
+				player:sendLocalizedTextMessage(MESSAGE_ATTENTION, "talkactions.player.online.list", {prefix, table.concat(msg, ", ")})
 				prefix = ""
 			end
 		end

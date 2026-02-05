@@ -6,6 +6,13 @@
     "need_learn_first": "You need to learn this spell first"
   },
   "support": {
-    "cannot_cast": "You cannot cast this spell"
+    "cannot_cast": "You cannot cast this spell",
+    "no_spell_with_boss": "You can't use this spell if there's a boss.",
+    "no_ranged_monsters": "There are no ranged monsters.",
+    "no_creatures_around": "No creatures around",
+    "too_many_summons": "You cannot summon more creatures."
+  },
+  "healing": {
+    "cant_cast_on_self": "You can't cast this spell to yourself."
   }
 }

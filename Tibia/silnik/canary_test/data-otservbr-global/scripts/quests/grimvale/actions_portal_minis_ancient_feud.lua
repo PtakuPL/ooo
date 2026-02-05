@@ -93,7 +93,7 @@ function teleportBoss.onStepIn(creature, item, position, fromPosition)
 			if spec:getPlayers() > 0 then
 				creature:teleportTo(fromPosition, true)
 				creature:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-				creature:say("There's someone fighting with " .. value.bossName .. ".", TALKTYPE_MONSTER_SAY)
+				creature:sayLocalized("scripts.boss_portal.someone_fighting", TALKTYPE_MONSTER_SAY, { boss = value.bossName })
 				return true
 			end
 			if creature:getLevel() < value.requiredLevel then

@@ -767,5 +767,6 @@
   "scripts.arena_pvp.need_2_players": "You need 2 players for enter in the arena.",
   "scripts.arena_pvp.need_10_players": "You need 10 players for enter in the arena.",
   "scripts.random_items.found_in_bag": "You found {article} {item} in the bag.",
-  "scripts.random_items.found_nothing": "You found nothing useful."
+  "scripts.random_items.found_nothing": "You found nothing useful.",
+  "scripts.boss_portal.someone_fighting": "There's someone fighting with {boss}."
 }

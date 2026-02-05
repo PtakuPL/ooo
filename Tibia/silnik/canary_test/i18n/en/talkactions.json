@@ -1,1 +1,75 @@
-{}
+{
+  "player": {
+    "online": {
+      "count": "Currently {} of {} players are online."
+    },
+    "refill": {
+      "potion_filled": "Your {} has been filled.",
+      "arrows_filled": "Your quiver has been filled."
+    },
+    "tutor_position": {
+      "enabled": "Tutor position enabled.",
+      "disabled": "Tutor position disabled."
+    },
+    "report": {
+      "cooldown": "You can only open one report at a time.",
+      "message_too_short": "Report message must have more than 3 characters!",
+      "submitted": "Your report has been sent to {} and a notification has been sent."
+    }
+  },
+  "gm": {
+    "common": {
+      "player_not_found": "Player not found.",
+      "creature_not_found": "Creature not found.",
+      "town_not_found": "Town not found.",
+      "param_required": "Command param required.",
+      "invalid_format": "Invalid command format.",
+      "cannot_teleport": "You cannot teleport there."
+    },
+    "ban": {
+      "usage": "Command param required. Use: /ban playername, days [, reason].",
+      "invalid_format": "Invalid command format. Use: /ban playername, days [, reason].",
+      "invalid_days": "Invalid number of days.",
+      "duration_too_long": "Ban duration cannot exceed 350000 days.",
+      "already_banned_longer": "Player is already banned for longer or equal duration.",
+      "extended": "{}'s ban has been extended to {} days.",
+      "banned_for_days": "{} has been banned for {} days."
+    },
+    "kick": {
+      "cannot_kick": "You cannot kick this player."
+    },
+    "teleport": {
+      "no_active_players": "There are no active players.",
+      "destination_invalid": "Destination position is not valid.",
+      "specify_xyz": "You need to declare the X, Y of Z of destination."
+    },
+    "look": {
+      "param_required": "Write the name of the character to be spyed.",
+      "looktype_invalid": "A look type with that id does not exist.",
+      "player_offline": "This player is offline or doesn't exist.",
+      "looktype_numeric": "Looktype must be a numerical value."
+    },
+    "light": {
+      "usage": "Use like this: /setlight color (0-{}), (1-32). The first param is color and the second is intensity.",
+      "color_required": "You need to specify the light color."
+    },
+    "clean": {
+      "cleaned_items": "Cleaned {} item{}."
+    },
+    "ghost": {
+      "need_on_off": "You need to specify on/off param."
+    },
+    "afk": {
+      "already_afk": "You are already AFK!"
+    },
+    "highscore": {
+      "no_data": "No highscore to show."
+    },
+    "count": {
+      "monsters_count": "There are {} monsters in the game."
+    },
+    "creature": {
+      "not_found": "A creature with that name could not be found."
+    }
+  }
+}

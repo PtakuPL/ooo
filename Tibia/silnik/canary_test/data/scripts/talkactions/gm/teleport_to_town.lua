@@ -5,7 +5,7 @@ function teleportToTown.onSay(player, words, param)
 	logCommand(player, words, param)
 
 	if param == "" then
-		player:sendCancelMessage("Command param required.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "talkactions.gm.common.param_required")
 		return true
 	end
 
@@ -13,7 +13,7 @@ function teleportToTown.onSay(player, words, param)
 	if town then
 		player:teleportTo(town:getTemplePosition())
 	else
-		player:sendCancelMessage("Town not found.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "talkactions.gm.common.town_not_found")
 	end
 	return true
 end

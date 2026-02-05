@@ -658,5 +658,9 @@
   "scripts.common.fame_point": "You have received a fame point.",
   "scripts.common.level_required": "All the players need to be level {} or higher.",
   "scripts.common.boss_cooldown": "You have to wait {} hours to face {} again!",
-  "scripts.common.found_count_items": "You found {} {}."
+  "scripts.common.found_count_items": "You found {} {}.",
+  "scripts.common.found_item_a": "You have found a {}.",
+  "scripts.common.time_to_defeat": "You have {} minutes to defeat {}.",
+  "scripts.common.boss_challenging": "You must wait. Someone is challenging {} now.",
+  "scripts.common.min_players_required": "You need atleast {} players inside the quest room."
 }

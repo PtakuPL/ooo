@@ -60,7 +60,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "1... 2... 2... Uh, can't concentrate.", yell = false },
+	{ text = "1... 2... 2... Uh, can't concentrate.", yell = false , i18nKey = "monster.the_weakened_count.voice_1"},
 }
 
 monster.loot = {

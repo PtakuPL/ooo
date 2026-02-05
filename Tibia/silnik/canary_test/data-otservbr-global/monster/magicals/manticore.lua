@@ -70,7 +70,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I'm spotting my next meal", yell = false },
+	{ text = "I'm spotting my next meal", yell = false , i18nKey = "monster.manticore.voice_1"},
 }
 
 monster.loot = {

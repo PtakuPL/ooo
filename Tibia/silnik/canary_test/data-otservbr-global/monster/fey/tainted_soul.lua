@@ -71,8 +71,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "*Crinkle*", yell = false },
-	{ text = "*Sizzle*", yell = false },
+	{ text = "*Crinkle*", yell = false , i18nKey = "monster.tainted_soul.voice_1"},
+	{ text = "*Sizzle*", yell = false , i18nKey = "monster.tainted_soul.voice_2"},
 }
 
 monster.loot = {

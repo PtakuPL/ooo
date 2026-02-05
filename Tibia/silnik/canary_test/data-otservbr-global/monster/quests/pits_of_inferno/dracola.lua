@@ -65,10 +65,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "DEATH CAN'T STOP MY HUNGER!", yell = true },
-	{ text = "YOU ARE ALL DOOMED!", yell = true },
-	{ text = "Your new name is breakfast.", yell = false },
-	{ text = "I'm bad to the bone.", yell = false },
+	{ text = "DEATH CAN'T STOP MY HUNGER!", yell = true , i18nKey = "monster.dracola.voice_1"},
+	{ text = "YOU ARE ALL DOOMED!", yell = true , i18nKey = "monster.dracola.voice_2"},
+	{ text = "Your new name is breakfast.", yell = false , i18nKey = "monster.dracola.voice_3"},
+	{ text = "I'm bad to the bone.", yell = false , i18nKey = "monster.dracola.voice_4"},
 }
 
 monster.loot = {

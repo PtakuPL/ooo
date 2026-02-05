@@ -81,7 +81,7 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Kzzchhhh", yell = false },
+	{ text = "Kzzchhhh", yell = false , i18nKey = "monster.acid_blob.voice_1"},
 }
 
 monster.loot = {

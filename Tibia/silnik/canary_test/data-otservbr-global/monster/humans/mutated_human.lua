@@ -70,12 +70,12 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Take that creature off my back!! I can feel it!", yell = false },
-	{ text = "You will regret interrupting my studies!", yell = false },
-	{ text = "You will be the next infected one... CRAAAHHH!", yell = false },
-	{ text = "Science... is a curse.", yell = false },
-	{ text = "Run as fast as you can.", yell = false },
-	{ text = "Oh by the gods! What is this... aaaaaargh!", yell = false },
+	{ text = "Take that creature off my back!! I can feel it!", yell = false , i18nKey = "monster.mutated_human.voice_1"},
+	{ text = "You will regret interrupting my studies!", yell = false , i18nKey = "monster.mutated_human.voice_2"},
+	{ text = "You will be the next infected one... CRAAAHHH!", yell = false , i18nKey = "monster.mutated_human.voice_3"},
+	{ text = "Science... is a curse.", yell = false , i18nKey = "monster.mutated_human.voice_4"},
+	{ text = "Run as fast as you can.", yell = false , i18nKey = "monster.mutated_human.voice_5"},
+	{ text = "Oh by the gods! What is this... aaaaaargh!", yell = false , i18nKey = "monster.mutated_human.voice_6"},
 }
 
 monster.loot = {

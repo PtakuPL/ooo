@@ -60,10 +60,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "FCHHHHHHHH", yell = true },
-	{ text = "GROOOOAAAAAAAAR", yell = true },
-	{ text = "DIRTY LITTLE HUMANS", yell = true },
-	{ text = "YOU CAN'T KEEP ME HERE FOREVER", yell = true },
+	{ text = "FCHHHHHHHH", yell = true , i18nKey = "monster.drasilla.voice_1"},
+	{ text = "GROOOOAAAAAAAAR", yell = true , i18nKey = "monster.drasilla.voice_2"},
+	{ text = "DIRTY LITTLE HUMANS", yell = true , i18nKey = "monster.drasilla.voice_3"},
+	{ text = "YOU CAN'T KEEP ME HERE FOREVER", yell = true , i18nKey = "monster.drasilla.voice_4"},
 }
 
 monster.loot = {}

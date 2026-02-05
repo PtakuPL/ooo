@@ -66,10 +66,10 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "You desecrated this place!", yell = false },
-	{ text = "Yoooohuuuu!", yell = false },
-	{ text = "I will cleanse this isle!", yell = false },
-	{ text = "Grrrrrrr", yell = false },
+	{ text = "You desecrated this place!", yell = false , i18nKey = "monster.fernfang.voice_1"},
+	{ text = "Yoooohuuuu!", yell = false , i18nKey = "monster.fernfang.voice_2"},
+	{ text = "I will cleanse this isle!", yell = false , i18nKey = "monster.fernfang.voice_3"},
+	{ text = "Grrrrrrr", yell = false , i18nKey = "monster.fernfang.voice_4"},
 }
 
 monster.loot = {

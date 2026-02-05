@@ -71,9 +71,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Wuff Wuff", yell = false },
-	{ text = "Grrr Wuff", yell = false },
-	{ text = "Show me how good you are without some rolled newspaper!", yell = false },
+	{ text = "Wuff Wuff", yell = false , i18nKey = "monster.hot_dog.voice_1"},
+	{ text = "Grrr Wuff", yell = false , i18nKey = "monster.hot_dog.voice_2"},
+	{ text = "Show me how good you are without some rolled newspaper!", yell = false , i18nKey = "monster.hot_dog.voice_3"},
 }
 
 monster.loot = {

@@ -74,9 +74,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Weeeheeheee!", yell = false },
-	{ text = "Pffffrrrrrrrrrrrr.", yell = false },
-	{ text = "Peak a boo, I killed you!", yell = false },
+	{ text = "Weeeheeheee!", yell = false , i18nKey = "monster.nightmare_scion.voice_1"},
+	{ text = "Pffffrrrrrrrrrrrr.", yell = false , i18nKey = "monster.nightmare_scion.voice_2"},
+	{ text = "Peak a boo, I killed you!", yell = false , i18nKey = "monster.nightmare_scion.voice_3"},
 }
 
 monster.loot = {

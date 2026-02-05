@@ -71,9 +71,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "You're very sweet!", yell = false },
-	{ text = "Have you ever seen the Big Ice Cream Machine?", yell = false },
-	{ text = "Hello, sweetie!", yell = false },
+	{ text = "You're very sweet!", yell = false , i18nKey = "monster.fruit_drop.voice_1"},
+	{ text = "Have you ever seen the Big Ice Cream Machine?", yell = false , i18nKey = "monster.fruit_drop.voice_2"},
+	{ text = "Hello, sweetie!", yell = false , i18nKey = "monster.fruit_drop.voice_3"},
 }
 monster.loot = {}
 

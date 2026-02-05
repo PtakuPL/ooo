@@ -60,7 +60,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "More blood! More!", yell = false },
+	{ text = "More blood! More!", yell = false , i18nKey = "monster.dreadwing.voice_1"},
 }
 
 monster.loot = {}

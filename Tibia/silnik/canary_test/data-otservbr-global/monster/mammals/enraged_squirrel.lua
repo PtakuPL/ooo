@@ -57,7 +57,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Chchch", yell = false },
+	{ text = "Chchch", yell = false , i18nKey = "monster.enraged_squirrel.voice_1"},
 }
 
 monster.loot = {

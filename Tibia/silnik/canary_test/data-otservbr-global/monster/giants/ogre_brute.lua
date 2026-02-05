@@ -73,9 +73,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "You so juicy!", yell = false },
-	{ text = "Smash you face in!!!", yell = false },
-	{ text = "You stop! You lunch!", yell = false },
+	{ text = "You so juicy!", yell = false , i18nKey = "monster.ogre_brute.voice_1"},
+	{ text = "Smash you face in!!!", yell = false , i18nKey = "monster.ogre_brute.voice_2"},
+	{ text = "You stop! You lunch!", yell = false , i18nKey = "monster.ogre_brute.voice_3"},
 }
 
 monster.loot = {

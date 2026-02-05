@@ -70,9 +70,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Blood for the dark god!", yell = false },
-	{ text = "Die, filth!", yell = false },
-	{ text = "For the Blood God!", yell = false },
+	{ text = "Blood for the dark god!", yell = false , i18nKey = "monster.blood_hand.voice_1"},
+	{ text = "Die, filth!", yell = false , i18nKey = "monster.blood_hand.voice_2"},
+	{ text = "For the Blood God!", yell = false , i18nKey = "monster.blood_hand.voice_3"},
 }
 
 monster.loot = {

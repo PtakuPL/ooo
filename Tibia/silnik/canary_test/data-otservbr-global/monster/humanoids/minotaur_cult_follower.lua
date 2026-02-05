@@ -77,7 +77,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "We will rule!", yell = false },
+	{ text = "We will rule!", yell = false , i18nKey = "monster.minotaur_cult_follower.voice_1"},
 }
 
 monster.loot = {

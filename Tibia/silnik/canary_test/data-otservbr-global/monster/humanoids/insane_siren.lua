@@ -73,7 +73,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Dream or nightmare?", yell = false },
+	{ text = "Dream or nightmare?", yell = false , i18nKey = "monster.insane_siren.voice_1"},
 }
 
 monster.loot = {

@@ -79,7 +79,7 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "SU-*burp* SUFFEEER!", yell = false },
+	{ text = "SU-*burp* SUFFEEER!", yell = false , i18nKey = "monster.ravenous_hunger.voice_1"},
 }
 
 monster.loot = {

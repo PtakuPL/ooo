@@ -76,9 +76,9 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "YOUR FUTILE ATTACKS ONLY FEED MY RAGE!", yell = false },
-	{ text = "YOU-ARE-WEAK!!", yell = false },
-	{ text = "DEEESTRUCTIOOON!!", yell = false },
+	{ text = "YOUR FUTILE ATTACKS ONLY FEED MY RAGE!", yell = false , i18nKey = "monster.razzagorn.voice_1"},
+	{ text = "YOU-ARE-WEAK!!", yell = false , i18nKey = "monster.razzagorn.voice_2"},
+	{ text = "DEEESTRUCTIOOON!!", yell = false , i18nKey = "monster.razzagorn.voice_3"},
 }
 
 monster.loot = {

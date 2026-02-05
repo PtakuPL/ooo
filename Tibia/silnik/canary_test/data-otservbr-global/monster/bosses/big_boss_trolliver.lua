@@ -72,8 +72,8 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Me big nauti! Hehehe!", yell = false },
-	{ text = "Frind or day?!", yell = false },
+	{ text = "Me big nauti! Hehehe!", yell = false , i18nKey = "monster.big_boss_trolliver.voice_1"},
+	{ text = "Frind or day?!", yell = false , i18nKey = "monster.big_boss_trolliver.voice_2"},
 }
 
 monster.loot = {

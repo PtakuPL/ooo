@@ -73,9 +73,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Fuchah!", yell = false },
-	{ text = "Fuchah! Fuchah!", yell = false },
-	{ text = "Yag! Yag! Yag!", yell = false },
+	{ text = "Fuchah!", yell = false , i18nKey = "monster.vulcongra.voice_1"},
+	{ text = "Fuchah! Fuchah!", yell = false , i18nKey = "monster.vulcongra.voice_2"},
+	{ text = "Yag! Yag! Yag!", yell = false , i18nKey = "monster.vulcongra.voice_3"},
 }
 
 monster.loot = {

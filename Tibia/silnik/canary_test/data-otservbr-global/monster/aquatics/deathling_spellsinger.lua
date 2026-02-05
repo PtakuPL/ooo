@@ -73,8 +73,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = 'BOQOL"°', yell = false },
-	{ text = 'QOL" VBOXCL°', yell = false },
+	{ text = 'BOQOL"°', yell = false , i18nKey = "monster.deathling_spellsinger.voice_1"},
+	{ text = 'QOL" VBOXCL°', yell = false , i18nKey = "monster.deathling_spellsinger.voice_2"},
 }
 
 monster.loot = {

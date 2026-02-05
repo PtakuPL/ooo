@@ -72,10 +72,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Mst.... klll....", yell = false },
-	{ text = "Whrrrr... ssss.... mmm.... grrrrl", yell = false },
-	{ text = "Dnnnt... cmmm... clsrrr....", yell = false },
-	{ text = "Httt.... hmnnsss...", yell = false },
+	{ text = "Mst.... klll....", yell = false , i18nKey = "monster.zombie.voice_1"},
+	{ text = "Whrrrr... ssss.... mmm.... grrrrl", yell = false , i18nKey = "monster.zombie.voice_2"},
+	{ text = "Dnnnt... cmmm... clsrrr....", yell = false , i18nKey = "monster.zombie.voice_3"},
+	{ text = "Httt.... hmnnsss...", yell = false , i18nKey = "monster.zombie.voice_4"},
 }
 
 monster.loot = {

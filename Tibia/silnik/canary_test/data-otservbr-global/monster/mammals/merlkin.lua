@@ -70,9 +70,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Ugh! Ugh! Ugh!", yell = false },
-	{ text = "Holy banana!", yell = false },
-	{ text = "Chakka! Chakka!", yell = false },
+	{ text = "Ugh! Ugh! Ugh!", yell = false , i18nKey = "monster.merlkin.voice_1"},
+	{ text = "Holy banana!", yell = false , i18nKey = "monster.merlkin.voice_2"},
+	{ text = "Chakka! Chakka!", yell = false , i18nKey = "monster.merlkin.voice_3"},
 }
 
 monster.loot = {

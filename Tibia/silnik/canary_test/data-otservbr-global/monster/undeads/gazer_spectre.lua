@@ -73,8 +73,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Deathhh... is... a.... doooor!!", yell = false },
-	{ text = "Tiiimeee... is... a... windowww!", yell = false },
+	{ text = "Deathhh... is... a.... doooor!!", yell = false , i18nKey = "monster.gazer_spectre.voice_1"},
+	{ text = "Tiiimeee... is... a... windowww!", yell = false , i18nKey = "monster.gazer_spectre.voice_2"},
 }
 
 monster.loot = {

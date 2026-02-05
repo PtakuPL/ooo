@@ -65,10 +65,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Banks are meant to be robbed. It's my job!", yell = false },
-	{ text = "That bank chick was trembling in fear. I love it!", yell = false },
-	{ text = "You won't get this gold!", yell = false },
-	{ text = "This is MY gold now!", yell = false },
+	{ text = "Banks are meant to be robbed. It's my job!", yell = false , i18nKey = "monster.robby_the_reckless.voice_1"},
+	{ text = "That bank chick was trembling in fear. I love it!", yell = false , i18nKey = "monster.robby_the_reckless.voice_2"},
+	{ text = "You won't get this gold!", yell = false , i18nKey = "monster.robby_the_reckless.voice_3"},
+	{ text = "This is MY gold now!", yell = false , i18nKey = "monster.robby_the_reckless.voice_4"},
 }
 
 monster.loot = {

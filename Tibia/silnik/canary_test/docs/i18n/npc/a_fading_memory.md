@@ -1,7 +1,7 @@
 # NPC: a_fading_memory
 
-**Plik:** `data-otservbr-global/npc/a_fading_memory.lua`
-**Data migracji:** 2025-12-17 01:34
+**Plik:** 
+**Data migracji:** 2025-12-21 02:58
 **Liczba tekstów:** 0
 
 ## Klucze i18n

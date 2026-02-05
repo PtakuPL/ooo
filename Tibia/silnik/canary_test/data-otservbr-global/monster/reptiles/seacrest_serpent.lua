@@ -73,8 +73,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "LEAVE THESE GROUNDS...", yell = true },
-	{ text = "THE DARK TIDE WILL SWALLOW YOU...", yell = true },
+	{ text = "LEAVE THESE GROUNDS...", yell = true , i18nKey = "monster.seacrest_serpent.voice_1"},
+	{ text = "THE DARK TIDE WILL SWALLOW YOU...", yell = true , i18nKey = "monster.seacrest_serpent.voice_2"},
 }
 
 monster.loot = {

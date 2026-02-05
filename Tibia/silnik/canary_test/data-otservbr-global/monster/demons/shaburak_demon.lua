@@ -74,10 +74,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "GREEN IS MEAN!", yell = true },
-	{ text = "WE RULE!", yell = true },
-	{ text = "POWER TO THE SHABURAK!", yell = true },
-	{ text = "DEATH TO THE ASKARAK!", yell = true },
+	{ text = "GREEN IS MEAN!", yell = true , i18nKey = "monster.shaburak_demon.voice_1"},
+	{ text = "WE RULE!", yell = true , i18nKey = "monster.shaburak_demon.voice_2"},
+	{ text = "POWER TO THE SHABURAK!", yell = true , i18nKey = "monster.shaburak_demon.voice_3"},
+	{ text = "DEATH TO THE ASKARAK!", yell = true , i18nKey = "monster.shaburak_demon.voice_4"},
 }
 
 monster.loot = {

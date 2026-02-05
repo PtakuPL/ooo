@@ -60,9 +60,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Show your strength ... or perish.", yell = false },
-	{ text = "You're so soft and vulnerable.", yell = false },
-	{ text = "When the dust settles there will only be one.", yell = false },
+	{ text = "Show your strength ... or perish.", yell = false , i18nKey = "monster.spirit_of_earth.voice_1"},
+	{ text = "You're so soft and vulnerable.", yell = false , i18nKey = "monster.spirit_of_earth.voice_2"},
+	{ text = "When the dust settles there will only be one.", yell = false , i18nKey = "monster.spirit_of_earth.voice_3"},
 }
 
 monster.loot = {}

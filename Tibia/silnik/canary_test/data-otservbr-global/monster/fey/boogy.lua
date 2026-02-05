@@ -73,7 +73,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Go to sleep!", yell = false },
+	{ text = "Go to sleep!", yell = false , i18nKey = "monster.boogy.voice_1"},
 }
 
 monster.loot = {

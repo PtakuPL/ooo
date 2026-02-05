@@ -74,10 +74,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "BLOOD!", yell = true },
-	{ text = "Let me kiss your neck", yell = false },
-	{ text = "I smell warm blood!", yell = false },
-	{ text = "I call you, my bats! Come!", yell = false },
+	{ text = "BLOOD!", yell = true , i18nKey = "monster.vampire.voice_1"},
+	{ text = "Let me kiss your neck", yell = false , i18nKey = "monster.vampire.voice_2"},
+	{ text = "I smell warm blood!", yell = false , i18nKey = "monster.vampire.voice_3"},
+	{ text = "I call you, my bats! Come!", yell = false , i18nKey = "monster.vampire.voice_4"},
 }
 
 monster.loot = {

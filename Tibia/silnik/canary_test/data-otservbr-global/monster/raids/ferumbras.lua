@@ -72,11 +72,11 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "NO ONE WILL STOP ME THIS TIME!", yell = true },
-	{ text = "THE POWER IS MINE!", yell = true },
-	{ text = "I returned from death and you dream about defeating me?", yell = false },
-	{ text = "Witness the first seconds of my eternal world domination!", yell = false },
-	{ text = "Even in my weakened state I will crush you all!", yell = false },
+	{ text = "NO ONE WILL STOP ME THIS TIME!", yell = true , i18nKey = "monster.ferumbras.voice_1"},
+	{ text = "THE POWER IS MINE!", yell = true , i18nKey = "monster.ferumbras.voice_2"},
+	{ text = "I returned from death and you dream about defeating me?", yell = false , i18nKey = "monster.ferumbras.voice_3"},
+	{ text = "Witness the first seconds of my eternal world domination!", yell = false , i18nKey = "monster.ferumbras.voice_4"},
+	{ text = "Even in my weakened state I will crush you all!", yell = false , i18nKey = "monster.ferumbras.voice_5"},
 }
 
 monster.loot = {

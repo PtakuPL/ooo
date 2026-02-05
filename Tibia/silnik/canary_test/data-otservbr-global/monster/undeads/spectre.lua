@@ -71,10 +71,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Revenge ... is so ... sweet.", yell = false },
-	{ text = "Life...force! Feed me your... lifeforce", yell = false },
-	{ text = "Mor... tals!", yell = false },
-	{ text = "Buuuuuh", yell = false },
+	{ text = "Revenge ... is so ... sweet.", yell = false , i18nKey = "monster.spectre.voice_1"},
+	{ text = "Life...force! Feed me your... lifeforce", yell = false , i18nKey = "monster.spectre.voice_2"},
+	{ text = "Mor... tals!", yell = false , i18nKey = "monster.spectre.voice_3"},
+	{ text = "Buuuuuh", yell = false , i18nKey = "monster.spectre.voice_4"},
 }
 
 monster.loot = {

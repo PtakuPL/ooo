@@ -65,9 +65,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "HATE! HATE! KILL! KILL!", yell = true },
-	{ text = "GRRAAARRRHH!", yell = true },
-	{ text = "GRRRR!", yell = true },
+	{ text = "HATE! HATE! KILL! KILL!", yell = true , i18nKey = "monster.massacre.voice_1"},
+	{ text = "GRRAAARRRHH!", yell = true , i18nKey = "monster.massacre.voice_2"},
+	{ text = "GRRRR!", yell = true , i18nKey = "monster.massacre.voice_3"},
 }
 
 monster.loot = {

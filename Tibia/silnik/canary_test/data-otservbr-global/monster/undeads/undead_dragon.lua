@@ -75,8 +75,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "FEEEED MY ETERNAL HUNGER!", yell = true },
-	{ text = "I SENSE LIFE", yell = true },
+	{ text = "FEEEED MY ETERNAL HUNGER!", yell = true , i18nKey = "monster.undead_dragon.voice_1"},
+	{ text = "I SENSE LIFE", yell = true , i18nKey = "monster.undead_dragon.voice_2"},
 }
 
 monster.loot = {

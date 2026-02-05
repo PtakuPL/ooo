@@ -72,11 +72,11 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "THE MONKS ARE MINE!", yell = true },
-	{ text = "I will rope you up! All of you!", yell = false },
-	{ text = "Have you seen my old pal Frack?", yell = false },
-	{ text = "A MIC to rule them all!", yell = false },
-	{ text = "Let me put my rope around your neck!", yell = false },
+	{ text = "THE MONKS ARE MINE!", yell = true , i18nKey = "monster.man_in_the_cave.voice_1"},
+	{ text = "I will rope you up! All of you!", yell = false , i18nKey = "monster.man_in_the_cave.voice_2"},
+	{ text = "Have you seen my old pal Frack?", yell = false , i18nKey = "monster.man_in_the_cave.voice_3"},
+	{ text = "A MIC to rule them all!", yell = false , i18nKey = "monster.man_in_the_cave.voice_4"},
+	{ text = "Let me put my rope around your neck!", yell = false , i18nKey = "monster.man_in_the_cave.voice_5"},
 }
 
 monster.loot = {

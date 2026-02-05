@@ -66,8 +66,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "There is nothing here for you and you will die alone.", yell = false },
-	{ text = "You will obey and you will kneel and you will BOW TO US.", yell = false },
+	{ text = "There is nothing here for you and you will die alone.", yell = false , i18nKey = "monster.preceptor_lazare.voice_1"},
+	{ text = "You will obey and you will kneel and you will BOW TO US.", yell = false , i18nKey = "monster.preceptor_lazare.voice_2"},
 }
 
 monster.loot = {

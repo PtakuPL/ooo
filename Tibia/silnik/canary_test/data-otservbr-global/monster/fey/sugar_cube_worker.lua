@@ -71,9 +71,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Please do not obstruct our work.", yell = false },
-	{ text = "So much work in the Chocolate Mines!", yell = false },
-	{ text = "Petulant sugar balls ...", yell = false },
+	{ text = "Please do not obstruct our work.", yell = false , i18nKey = "monster.sugar_cube_worker.voice_1"},
+	{ text = "So much work in the Chocolate Mines!", yell = false , i18nKey = "monster.sugar_cube_worker.voice_2"},
+	{ text = "Petulant sugar balls ...", yell = false , i18nKey = "monster.sugar_cube_worker.voice_3"},
 }
 monster.loot = {}
 

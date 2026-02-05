@@ -81,8 +81,8 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Zopp!", yell = false },
-	{ text = "Kropp!", yell = false },
+	{ text = "Zopp!", yell = false , i18nKey = "monster.hive_overseer.voice_1"},
+	{ text = "Kropp!", yell = false , i18nKey = "monster.hive_overseer.voice_2"},
 }
 
 monster.loot = {

@@ -60,16 +60,16 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Feel the wrath of me dos attack!", yell = false },
-	{ text = "You're next!", yell = false },
-	{ text = "Gimme free gold!", yell = false },
-	{ text = "Me sooo smart!", yell = false },
-	{ text = "Me have a cheating link for you!", yell = false },
-	{ text = "Me is GM!", yell = false },
-	{ text = "Gimme your password!", yell = false },
-	{ text = "Me just need the code!", yell = false },
-	{ text = "Me not stink!", yell = false },
-	{ text = "Me other char is highlevel!", yell = false },
+	{ text = "Feel the wrath of me dos attack!", yell = false , i18nKey = "monster.hacker.voice_1"},
+	{ text = "You're next!", yell = false , i18nKey = "monster.hacker.voice_2"},
+	{ text = "Gimme free gold!", yell = false , i18nKey = "monster.hacker.voice_3"},
+	{ text = "Me sooo smart!", yell = false , i18nKey = "monster.hacker.voice_4"},
+	{ text = "Me have a cheating link for you!", yell = false , i18nKey = "monster.hacker.voice_5"},
+	{ text = "Me is GM!", yell = false , i18nKey = "monster.hacker.voice_6"},
+	{ text = "Gimme your password!", yell = false , i18nKey = "monster.hacker.voice_7"},
+	{ text = "Me just need the code!", yell = false , i18nKey = "monster.hacker.voice_8"},
+	{ text = "Me not stink!", yell = false , i18nKey = "monster.hacker.voice_9"},
+	{ text = "Me other char is highlevel!", yell = false , i18nKey = "monster.hacker.voice_10"},
 }
 
 monster.loot = {

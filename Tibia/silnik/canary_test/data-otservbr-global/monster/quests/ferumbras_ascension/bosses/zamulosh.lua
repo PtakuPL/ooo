@@ -76,7 +76,7 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I AM ZAMULOSH!", yell = true },
+	{ text = "I AM ZAMULOSH!", yell = true , i18nKey = "monster.zamulosh.voice_1"},
 }
 
 monster.loot = {

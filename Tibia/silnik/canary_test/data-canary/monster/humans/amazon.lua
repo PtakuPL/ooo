@@ -71,9 +71,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Yeeee ha!", yell = false },
-	{ text = "Your head shall be mine!", yell = false },
-	{ text = "Your head will be mine!", yell = false },
+	{ text = "Yeeee ha!", yell = false , i18nKey = "monster.amazon.voice_4"},
+	{ text = "Your head shall be mine!", yell = false , i18nKey = "monster.amazon.voice_5"},
+	{ text = "Your head will be mine!", yell = false , i18nKey = "monster.amazon.voice_6"},
 }
 
 monster.loot = {

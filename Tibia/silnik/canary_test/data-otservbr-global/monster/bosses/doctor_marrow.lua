@@ -60,7 +60,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "You can't stop the future!", yell = false },
+	{ text = "You can't stop the future!", yell = false , i18nKey = "monster.doctor_marrow.voice_1"},
 }
 
 monster.attacks = {

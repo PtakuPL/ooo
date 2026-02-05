@@ -78,8 +78,8 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Slice! Slice!", yell = false },
-	{ text = "DIE!!!", yell = true },
+	{ text = "Slice! Slice!", yell = false , i18nKey = "monster.furious_troll.voice_1"},
+	{ text = "DIE!!!", yell = true , i18nKey = "monster.furious_troll.voice_2"},
 }
 
 monster.loot = {

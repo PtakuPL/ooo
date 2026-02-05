@@ -67,7 +67,7 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I bet you wish you weren't here.", yell = false },
+	{ text = "I bet you wish you weren't here.", yell = false , i18nKey = "monster.kreebosh_the_exile.voice_1"},
 }
 
 monster.loot = {}

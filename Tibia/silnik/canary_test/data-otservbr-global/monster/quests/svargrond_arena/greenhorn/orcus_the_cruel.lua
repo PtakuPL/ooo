@@ -60,8 +60,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Ocrus will rule!", yell = false },
-	{ text = "I'll kill you slow and painful.", yell = false },
+	{ text = "Ocrus will rule!", yell = false , i18nKey = "monster.orcus_the_cruel.voice_1"},
+	{ text = "I'll kill you slow and painful.", yell = false , i18nKey = "monster.orcus_the_cruel.voice_2"},
 }
 
 monster.loot = {}

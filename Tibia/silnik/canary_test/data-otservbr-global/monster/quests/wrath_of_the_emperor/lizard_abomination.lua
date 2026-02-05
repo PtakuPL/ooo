@@ -64,9 +64,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "NOOOO! NOW YOU HERETICS WILL FACE MY GODLY WRATH!", yell = true },
-	{ text = "RAAARRRR! I WILL DEVOL YOU!", yell = true },
-	{ text = "I WILL MAKE YOU ZHEE!", yell = true },
+	{ text = "NOOOO! NOW YOU HERETICS WILL FACE MY GODLY WRATH!", yell = true , i18nKey = "monster.lizard_abomination.voice_1"},
+	{ text = "RAAARRRR! I WILL DEVOL YOU!", yell = true , i18nKey = "monster.lizard_abomination.voice_2"},
+	{ text = "I WILL MAKE YOU ZHEE!", yell = true , i18nKey = "monster.lizard_abomination.voice_3"},
 }
 
 monster.loot = {}

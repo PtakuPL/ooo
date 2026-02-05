@@ -72,7 +72,7 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Your mortality is disgusting!", yell = false },
+	{ text = "Your mortality is disgusting!", yell = false , i18nKey = "monster.gravelord_oshuran.voice_1"},
 }
 
 monster.loot = {

@@ -73,10 +73,10 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I will bring peace to your misguided soul!", yell = false },
-	{ text = "Your intrusion can't be tolerated!", yell = false },
-	{ text = "You should have joined us when there was time!", yell = false },
-	{ text = "Rejoice! You will die in the name of the triangle!", yell = false },
+	{ text = "I will bring peace to your misguided soul!", yell = false , i18nKey = "monster.grandfather_tridian.voice_1"},
+	{ text = "Your intrusion can't be tolerated!", yell = false , i18nKey = "monster.grandfather_tridian.voice_2"},
+	{ text = "You should have joined us when there was time!", yell = false , i18nKey = "monster.grandfather_tridian.voice_3"},
+	{ text = "Rejoice! You will die in the name of the triangle!", yell = false , i18nKey = "monster.grandfather_tridian.voice_4"},
 }
 
 monster.loot = {

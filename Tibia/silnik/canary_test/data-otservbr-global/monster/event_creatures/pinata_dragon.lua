@@ -61,12 +61,12 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "You can't have my treasures!", yell = false },
-	{ text = "Hit me one more time!", yell = false },
-	{ text = "Na Nana Naaa Naaa!", yell = false },
-	{ text = "You'll never get my stuff!", yell = false },
-	{ text = "Do you really want to hurt me?", yell = false },
-	{ text = "Bring it on!", yell = false },
+	{ text = "You can't have my treasures!", yell = false , i18nKey = "monster.pinata_dragon.voice_1"},
+	{ text = "Hit me one more time!", yell = false , i18nKey = "monster.pinata_dragon.voice_2"},
+	{ text = "Na Nana Naaa Naaa!", yell = false , i18nKey = "monster.pinata_dragon.voice_3"},
+	{ text = "You'll never get my stuff!", yell = false , i18nKey = "monster.pinata_dragon.voice_4"},
+	{ text = "Do you really want to hurt me?", yell = false , i18nKey = "monster.pinata_dragon.voice_5"},
+	{ text = "Bring it on!", yell = false , i18nKey = "monster.pinata_dragon.voice_6"},
 }
 
 monster.loot = {}

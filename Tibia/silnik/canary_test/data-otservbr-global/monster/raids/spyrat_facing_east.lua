@@ -55,9 +55,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Catch me if you can!!", yell = false },
-	{ text = "Never cross the rat line!", yell = false },
-	{ text = "Smoke on the water!", yell = false },
+	{ text = "Catch me if you can!!", yell = false , i18nKey = "monster.spyrat_facing_east.voice_1"},
+	{ text = "Never cross the rat line!", yell = false , i18nKey = "monster.spyrat_facing_east.voice_2"},
+	{ text = "Smoke on the water!", yell = false , i18nKey = "monster.spyrat_facing_east.voice_3"},
 }
 
 monster.loot = {}

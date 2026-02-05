@@ -73,9 +73,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "You set foot on forbidden ground? Outrageous!", yell = false },
-	{ text = "Let the deceased rest in peace!", yell = false },
-	{ text = "Sacrilege!", yell = false },
+	{ text = "You set foot on forbidden ground? Outrageous!", yell = false , i18nKey = "monster.crypt_warden.voice_1"},
+	{ text = "Let the deceased rest in peace!", yell = false , i18nKey = "monster.crypt_warden.voice_2"},
+	{ text = "Sacrilege!", yell = false , i18nKey = "monster.crypt_warden.voice_3"},
 }
 
 monster.loot = {

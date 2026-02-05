@@ -70,9 +70,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Kroaaah!!", yell = false },
-	{ text = "Butak <crooooarck> bana zamar!", yell = false },
-	{ text = "Krrrooow truaaak kiiiii!", yell = false },
+	{ text = "Kroaaah!!", yell = false , i18nKey = "monster.rorc.voice_1"},
+	{ text = "Butak <crooooarck> bana zamar!", yell = false , i18nKey = "monster.rorc.voice_2"},
+	{ text = "Krrrooow truaaak kiiiii!", yell = false , i18nKey = "monster.rorc.voice_3"},
 }
 
 monster.loot = {

@@ -75,8 +75,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Feel the wrath of mother Tibia!", yell = false },
-	{ text = "Defiler of nature!", yell = false },
+	{ text = "Feel the wrath of mother Tibia!", yell = false , i18nKey = "monster.dryad.voice_1"},
+	{ text = "Defiler of nature!", yell = false , i18nKey = "monster.dryad.voice_2"},
 }
 
 monster.loot = {

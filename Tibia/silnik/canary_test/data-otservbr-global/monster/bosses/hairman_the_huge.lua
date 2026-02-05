@@ -65,9 +65,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Hugah!", yell = false },
-	{ text = "Huaauaauaauaa!", yell = false },
-	{ text = "Ungh! Ungh!", yell = false },
+	{ text = "Hugah!", yell = false , i18nKey = "monster.hairman_the_huge.voice_1"},
+	{ text = "Huaauaauaauaa!", yell = false , i18nKey = "monster.hairman_the_huge.voice_2"},
+	{ text = "Ungh! Ungh!", yell = false , i18nKey = "monster.hairman_the_huge.voice_3"},
 }
 
 monster.loot = {

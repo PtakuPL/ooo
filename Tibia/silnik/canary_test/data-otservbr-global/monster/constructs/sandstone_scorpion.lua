@@ -72,9 +72,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "*rattle*", yell = false },
-	{ text = "*tak tak*", yell = false },
-	{ text = "*tak tak tak*", yell = false },
+	{ text = "*rattle*", yell = false , i18nKey = "monster.sandstone_scorpion.voice_1"},
+	{ text = "*tak tak*", yell = false , i18nKey = "monster.sandstone_scorpion.voice_2"},
+	{ text = "*tak tak tak*", yell = false , i18nKey = "monster.sandstone_scorpion.voice_3"},
 }
 
 monster.loot = {

@@ -57,8 +57,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Yes, flee from me!", yell = false },
-	{ text = "You can run but you can not hide!", yell = false },
+	{ text = "Yes, flee from me!", yell = false , i18nKey = "monster.eclipse_knight.voice_1"},
+	{ text = "You can run but you can not hide!", yell = false , i18nKey = "monster.eclipse_knight.voice_2"},
 }
 
 monster.loot = {

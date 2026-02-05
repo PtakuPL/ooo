@@ -1,7 +1,7 @@
 # NPC: gelidrazahs_thirst
 
-**Plik:** `data-otservbr-global/npc/gelidrazahs_thirst.lua`
-**Data migracji:** 2025-12-17 00:58
+**Plik:** 
+**Data migracji:** 2025-12-21 11:12
 **Liczba tekstów:** 0
 
 ## Klucze i18n

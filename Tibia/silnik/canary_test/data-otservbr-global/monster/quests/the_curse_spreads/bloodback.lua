@@ -72,7 +72,7 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "You will DIE!", yell = false },
+	{ text = "You will DIE!", yell = false , i18nKey = "monster.bloodback.voice_1"},
 }
 
 monster.loot = {

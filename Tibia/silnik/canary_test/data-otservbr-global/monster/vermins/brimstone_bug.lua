@@ -70,7 +70,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Chrrr!", yell = false },
+	{ text = "Chrrr!", yell = false , i18nKey = "monster.brimstone_bug.voice_1"},
 }
 
 monster.loot = {

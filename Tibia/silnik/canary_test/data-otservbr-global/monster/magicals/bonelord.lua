@@ -85,11 +85,11 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "You've got the look!", yell = false },
-	{ text = "Let me take a look at you.", yell = false },
-	{ text = "Eye for eye!", yell = false },
-	{ text = "I've got to look!", yell = false },
-	{ text = "Here's looking at you!", yell = false },
+	{ text = "You've got the look!", yell = false , i18nKey = "monster.bonelord.voice_1"},
+	{ text = "Let me take a look at you.", yell = false , i18nKey = "monster.bonelord.voice_2"},
+	{ text = "Eye for eye!", yell = false , i18nKey = "monster.bonelord.voice_3"},
+	{ text = "I've got to look!", yell = false , i18nKey = "monster.bonelord.voice_4"},
+	{ text = "Here's looking at you!", yell = false , i18nKey = "monster.bonelord.voice_5"},
 }
 
 monster.loot = {

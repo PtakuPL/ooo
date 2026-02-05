@@ -60,8 +60,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "DEESTRUCTIOON!", yell = true },
-	{ text = "Blood! Carnage! Muhahaha!", yell = true },
+	{ text = "DEESTRUCTIOON!", yell = true , i18nKey = "monster.the_axeorcist.voice_1"},
+	{ text = "Blood! Carnage! Muhahaha!", yell = true , i18nKey = "monster.the_axeorcist.voice_2"},
 }
 
 monster.loot = {}

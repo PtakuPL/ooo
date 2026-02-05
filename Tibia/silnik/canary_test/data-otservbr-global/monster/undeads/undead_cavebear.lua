@@ -71,8 +71,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Grrrrrrrrrrrr", yell = false },
-	{ text = "Groooowl", yell = false },
+	{ text = "Grrrrrrrrrrrr", yell = false , i18nKey = "monster.undead_cavebear.voice_1"},
+	{ text = "Groooowl", yell = false , i18nKey = "monster.undead_cavebear.voice_2"},
 }
 
 monster.loot = {

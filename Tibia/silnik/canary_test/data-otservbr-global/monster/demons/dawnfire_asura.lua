@@ -73,9 +73,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "May the flames consume you!", yell = false },
-	{ text = "Encounter the flames of destiny!", yell = false },
-	{ text = "Fire and destruction!", yell = false },
+	{ text = "May the flames consume you!", yell = false , i18nKey = "monster.dawnfire_asura.voice_1"},
+	{ text = "Encounter the flames of destiny!", yell = false , i18nKey = "monster.dawnfire_asura.voice_2"},
+	{ text = "Fire and destruction!", yell = false , i18nKey = "monster.dawnfire_asura.voice_3"},
 }
 
 monster.loot = {

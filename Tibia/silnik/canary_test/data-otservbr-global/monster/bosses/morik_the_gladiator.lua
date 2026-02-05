@@ -67,10 +67,10 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "To be the one you'll have to beat the one!", yell = false },
-	{ text = "Where did I put my ultimate health potion again?", yell = false },
-	{ text = "I am the best!", yell = false },
-	{ text = "I'll take your ears as a trophy!", yell = false },
+	{ text = "To be the one you'll have to beat the one!", yell = false , i18nKey = "monster.morik_the_gladiator.voice_1"},
+	{ text = "Where did I put my ultimate health potion again?", yell = false , i18nKey = "monster.morik_the_gladiator.voice_2"},
+	{ text = "I am the best!", yell = false , i18nKey = "monster.morik_the_gladiator.voice_3"},
+	{ text = "I'll take your ears as a trophy!", yell = false , i18nKey = "monster.morik_the_gladiator.voice_4"},
 }
 
 monster.loot = {

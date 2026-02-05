@@ -60,8 +60,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Who Disturbs my slumber?", yell = false },
-	{ text = "Mourn the dead, do not hunt them!", yell = false },
+	{ text = "Who Disturbs my slumber?", yell = false , i18nKey = "monster.teleskor.voice_1"},
+	{ text = "Mourn the dead, do not hunt them!", yell = false , i18nKey = "monster.teleskor.voice_2"},
 }
 
 monster.loot = {

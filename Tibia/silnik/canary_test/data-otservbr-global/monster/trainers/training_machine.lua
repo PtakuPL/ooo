@@ -35,15 +35,15 @@ monster.summons = {}
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I hope you are enjoying your sparring Sir or Ma'am!", yell = false },
-	{ text = "Threat level rising!", yell = false },
-	{ text = "Engaging in hostile interaction!", yell = false },
-	{ text = "Rrrtttarrrttarrrtta", yell = false },
-	{ text = "Please feel free to hit me Sir or Ma'am!", yell = false },
-	{ text = "klonk klonk klonk", yell = false },
-	{ text = "Self-diagnosis running.", yell = false },
-	{ text = "Battle simulation proceeding.", yell = false },
-	{ text = "Repairs initiated!", yell = false },
+	{ text = "I hope you are enjoying your sparring Sir or Ma'am!", yell = false , i18nKey = "monster.training_machine.voice_1"},
+	{ text = "Threat level rising!", yell = false , i18nKey = "monster.training_machine.voice_2"},
+	{ text = "Engaging in hostile interaction!", yell = false , i18nKey = "monster.training_machine.voice_3"},
+	{ text = "Rrrtttarrrttarrrtta", yell = false , i18nKey = "monster.training_machine.voice_4"},
+	{ text = "Please feel free to hit me Sir or Ma'am!", yell = false , i18nKey = "monster.training_machine.voice_5"},
+	{ text = "klonk klonk klonk", yell = false , i18nKey = "monster.training_machine.voice_6"},
+	{ text = "Self-diagnosis running.", yell = false , i18nKey = "monster.training_machine.voice_7"},
+	{ text = "Battle simulation proceeding.", yell = false , i18nKey = "monster.training_machine.voice_8"},
+	{ text = "Repairs initiated!", yell = false , i18nKey = "monster.training_machine.voice_9"},
 }
 
 monster.loot = {}

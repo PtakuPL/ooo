@@ -74,8 +74,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Mehehe!", yell = false },
-	{ text = "Beware! Me hexing you!", yell = false },
+	{ text = "Mehehe!", yell = false , i18nKey = "monster.corym_charlatan.voice_1"},
+	{ text = "Beware! Me hexing you!", yell = false , i18nKey = "monster.corym_charlatan.voice_2"},
 }
 
 monster.loot = {

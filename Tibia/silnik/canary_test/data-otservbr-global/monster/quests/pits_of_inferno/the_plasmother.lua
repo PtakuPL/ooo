@@ -72,9 +72,9 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Blubb", yell = false },
-	{ text = "Blubb Blubb", yell = false },
-	{ text = "Blubberdiblubb", yell = false },
+	{ text = "Blubb", yell = false , i18nKey = "monster.the_plasmother.voice_1"},
+	{ text = "Blubb Blubb", yell = false , i18nKey = "monster.the_plasmother.voice_2"},
+	{ text = "Blubberdiblubb", yell = false , i18nKey = "monster.the_plasmother.voice_3"},
 }
 
 monster.loot = {

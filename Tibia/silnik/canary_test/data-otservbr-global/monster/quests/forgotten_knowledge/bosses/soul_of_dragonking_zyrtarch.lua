@@ -69,7 +69,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "What have you done!?", yell = false },
+	{ text = "What have you done!?", yell = false , i18nKey = "monster.soul_of_dragonking_zyrtarch.voice_1"},
 }
 
 monster.loot = {

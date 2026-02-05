@@ -77,8 +77,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "All this beautiful lightning.", yell = false },
-	{ text = "Feel the vibration!", yell = false },
+	{ text = "All this beautiful lightning.", yell = false , i18nKey = "monster.vibrant_phantom.voice_1"},
+	{ text = "Feel the vibration!", yell = false , i18nKey = "monster.vibrant_phantom.voice_2"},
 }
 
 monster.loot = {

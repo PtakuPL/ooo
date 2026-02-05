@@ -67,14 +67,14 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Your pain will be beyond imagination!", yell = false },
-	{ text = "You can't defeat me! I will resurrect and take your soul!", yell = false },
-	{ text = "Death is my ally!", yell = false },
-	{ text = "Welcome to my domain visitor!", yell = false },
-	{ text = "You will be my toy on the other side!", yell = false },
-	{ text = "What a disgusting smell of life!", yell = false },
-	{ text = "You will endure agony beyond thy death!", yell = false },
-	{ text = "Ahhh, your life energy tastes so delicious!", yell = false },
+	{ text = "Your pain will be beyond imagination!", yell = false , i18nKey = "monster.koshei_the_deathless.voice_1"},
+	{ text = "You can't defeat me! I will resurrect and take your soul!", yell = false , i18nKey = "monster.koshei_the_deathless.voice_2"},
+	{ text = "Death is my ally!", yell = false , i18nKey = "monster.koshei_the_deathless.voice_3"},
+	{ text = "Welcome to my domain visitor!", yell = false , i18nKey = "monster.koshei_the_deathless.voice_4"},
+	{ text = "You will be my toy on the other side!", yell = false , i18nKey = "monster.koshei_the_deathless.voice_5"},
+	{ text = "What a disgusting smell of life!", yell = false , i18nKey = "monster.koshei_the_deathless.voice_6"},
+	{ text = "You will endure agony beyond thy death!", yell = false , i18nKey = "monster.koshei_the_deathless.voice_7"},
+	{ text = "Ahhh, your life energy tastes so delicious!", yell = false , i18nKey = "monster.koshei_the_deathless.voice_8"},
 }
 
 monster.loot = {}

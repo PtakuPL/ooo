@@ -72,12 +72,12 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Feel the hungry kiss of death!", yell = false },
-	{ text = "The monsters in the mirror will come eat your dreams.", yell = false },
-	{ text = "Your pitiful life has come to an end!", yell = false },
-	{ text = "I will squish you like a maggot and suck you dry!", yell = false },
-	{ text = "Yield to the inevitable!", yell = false },
-	{ text = "Some day I shall see my beautiful face in a mirror again.", yell = false },
+	{ text = "Feel the hungry kiss of death!", yell = false , i18nKey = "monster.the_pale_count.voice_1"},
+	{ text = "The monsters in the mirror will come eat your dreams.", yell = false , i18nKey = "monster.the_pale_count.voice_2"},
+	{ text = "Your pitiful life has come to an end!", yell = false , i18nKey = "monster.the_pale_count.voice_3"},
+	{ text = "I will squish you like a maggot and suck you dry!", yell = false , i18nKey = "monster.the_pale_count.voice_4"},
+	{ text = "Yield to the inevitable!", yell = false , i18nKey = "monster.the_pale_count.voice_5"},
+	{ text = "Some day I shall see my beautiful face in a mirror again.", yell = false , i18nKey = "monster.the_pale_count.voice_6"},
 }
 
 monster.loot = {

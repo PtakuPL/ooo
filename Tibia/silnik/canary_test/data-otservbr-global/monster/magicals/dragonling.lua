@@ -75,10 +75,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "FI?", yell = true },
-	{ text = "FCHHHHH", yell = true },
-	{ text = "SQUAWK!", yell = true },
-	{ text = "FIYAH", yell = true },
+	{ text = "FI?", yell = true , i18nKey = "monster.dragonling.voice_1"},
+	{ text = "FCHHHHH", yell = true , i18nKey = "monster.dragonling.voice_2"},
+	{ text = "SQUAWK!", yell = true , i18nKey = "monster.dragonling.voice_3"},
+	{ text = "FIYAH", yell = true , i18nKey = "monster.dragonling.voice_4"},
 }
 
 monster.loot = {

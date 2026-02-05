@@ -57,10 +57,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "The Moon Goddess has forsaken us!", yell = false },
-	{ text = "You underestimated us!", yell = false },
-	{ text = "Death is too good for them.", yell = false },
-	{ text = "Die, you fools!", yell = false },
+	{ text = "The Moon Goddess has forsaken us!", yell = false , i18nKey = "monster.rogue_naga.voice_1"},
+	{ text = "You underestimated us!", yell = false , i18nKey = "monster.rogue_naga.voice_2"},
+	{ text = "Death is too good for them.", yell = false , i18nKey = "monster.rogue_naga.voice_3"},
+	{ text = "Die, you fools!", yell = false , i18nKey = "monster.rogue_naga.voice_4"},
 }
 
 monster.loot = {

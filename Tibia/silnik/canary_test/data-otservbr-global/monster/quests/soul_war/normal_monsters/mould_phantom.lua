@@ -77,9 +77,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Everything decomposes.", yell = false },
-	{ text = "I love the smell of rotten flesh.", yell = false },
-	{ text = "The earth will take you back.", yell = false },
+	{ text = "Everything decomposes.", yell = false , i18nKey = "monster.mould_phantom.voice_1"},
+	{ text = "I love the smell of rotten flesh.", yell = false , i18nKey = "monster.mould_phantom.voice_2"},
+	{ text = "The earth will take you back.", yell = false , i18nKey = "monster.mould_phantom.voice_3"},
 }
 
 monster.loot = {

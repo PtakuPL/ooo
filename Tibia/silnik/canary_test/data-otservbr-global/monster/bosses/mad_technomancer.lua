@@ -60,10 +60,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I'm going to make them an offer they can't refuse.", yell = false },
-	{ text = "My masterplan cannot fail!", yell = false },
-	{ text = "Gentlemen, you can't fight here! This is the War Room!", yell = false },
-	{ text = "I love the smell of firebombs in the morning.", yell = false },
+	{ text = "I'm going to make them an offer they can't refuse.", yell = false , i18nKey = "monster.mad_technomancer.voice_1"},
+	{ text = "My masterplan cannot fail!", yell = false , i18nKey = "monster.mad_technomancer.voice_2"},
+	{ text = "Gentlemen, you can't fight here! This is the War Room!", yell = false , i18nKey = "monster.mad_technomancer.voice_3"},
+	{ text = "I love the smell of firebombs in the morning.", yell = false , i18nKey = "monster.mad_technomancer.voice_4"},
 }
 
 monster.loot = {

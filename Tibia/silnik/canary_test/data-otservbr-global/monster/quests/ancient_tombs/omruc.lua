@@ -71,11 +71,11 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Now chhhou shhhee me ... Now chhhou don't.", yell = false },
-	{ text = "Chhhhou are marked ashhh my prey.", yell = false },
-	{ text = "Catchhhh me if chhhou can.", yell = false },
-	{ text = "Die!", yell = false },
-	{ text = "Psssst, I am over chhhere.", yell = false },
+	{ text = "Now chhhou shhhee me ... Now chhhou don't.", yell = false , i18nKey = "monster.omruc.voice_1"},
+	{ text = "Chhhhou are marked ashhh my prey.", yell = false , i18nKey = "monster.omruc.voice_2"},
+	{ text = "Catchhhh me if chhhou can.", yell = false , i18nKey = "monster.omruc.voice_3"},
+	{ text = "Die!", yell = false , i18nKey = "monster.omruc.voice_4"},
+	{ text = "Psssst, I am over chhhere.", yell = false , i18nKey = "monster.omruc.voice_5"},
 }
 
 monster.loot = {

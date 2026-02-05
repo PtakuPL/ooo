@@ -74,8 +74,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "SNUFFLE", yell = true },
-	{ text = "Sniff Sniff", yell = false },
+	{ text = "SNUFFLE", yell = true , i18nKey = "monster.werebadger.voice_1"},
+	{ text = "Sniff Sniff", yell = false , i18nKey = "monster.werebadger.voice_2"},
 }
 
 monster.loot = {

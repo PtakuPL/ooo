@@ -60,7 +60,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Surrender and I'll end it quick.", yell = false },
+	{ text = "Surrender and I'll end it quick.", yell = false , i18nKey = "monster.haunter.voice_1"},
 }
 
 monster.loot = {}

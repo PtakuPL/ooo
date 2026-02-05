@@ -57,13 +57,13 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Welcome to Yalahar, outsider.", yell = false },
-	{ text = "Hail Yalahar.", yell = false },
-	{ text = "You can learn a lot from us.", yell = false },
-	{ text = "Our wisdom and knowledge are unequalled in this world.", yell = false },
-	{ text = "That knowledge would overburden your fragile mind.", yell = false },
-	{ text = "I wouldn't expect you to understand.", yell = false },
-	{ text = "One day Yalahar will return to its former glory.", yell = false },
+	{ text = "Welcome to Yalahar, outsider.", yell = false , i18nKey = "monster.yalahari.voice_1"},
+	{ text = "Hail Yalahar.", yell = false , i18nKey = "monster.yalahari.voice_2"},
+	{ text = "You can learn a lot from us.", yell = false , i18nKey = "monster.yalahari.voice_3"},
+	{ text = "Our wisdom and knowledge are unequalled in this world.", yell = false , i18nKey = "monster.yalahari.voice_4"},
+	{ text = "That knowledge would overburden your fragile mind.", yell = false , i18nKey = "monster.yalahari.voice_5"},
+	{ text = "I wouldn't expect you to understand.", yell = false , i18nKey = "monster.yalahari.voice_6"},
+	{ text = "One day Yalahar will return to its former glory.", yell = false , i18nKey = "monster.yalahari.voice_7"},
 }
 
 monster.loot = {}

@@ -72,10 +72,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Guess who we're hunting, hahaha!", yell = false },
-	{ text = "Guess who we are hunting!", yell = false },
-	{ text = "Bullseye!", yell = false },
-	{ text = "You'll make a nice trophy!", yell = false },
+	{ text = "Guess who we're hunting, hahaha!", yell = false , i18nKey = "monster.hunter.voice_5"},
+	{ text = "Guess who we are hunting!", yell = false , i18nKey = "monster.hunter.voice_6"},
+	{ text = "Bullseye!", yell = false , i18nKey = "monster.hunter.voice_7"},
+	{ text = "You'll make a nice trophy!", yell = false , i18nKey = "monster.hunter.voice_8"},
 }
 
 monster.loot = {

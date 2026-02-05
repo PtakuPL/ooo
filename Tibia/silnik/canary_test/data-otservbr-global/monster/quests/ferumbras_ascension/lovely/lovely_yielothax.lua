@@ -60,9 +60,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "IIEEH!! Iiih iih ih iiih!!!", yell = true },
-	{ text = "Iiiieeeh iiiieh iiieeh!", yell = true },
-	{ text = "Bsssmm bssmm bsssmmm", yell = true },
+	{ text = "IIEEH!! Iiih iih ih iiih!!!", yell = true , i18nKey = "monster.lovely_yielothax.voice_1"},
+	{ text = "Iiiieeeh iiiieh iiieeh!", yell = true , i18nKey = "monster.lovely_yielothax.voice_2"},
+	{ text = "Bsssmm bssmm bsssmmm", yell = true , i18nKey = "monster.lovely_yielothax.voice_3"},
 }
 
 monster.loot = {

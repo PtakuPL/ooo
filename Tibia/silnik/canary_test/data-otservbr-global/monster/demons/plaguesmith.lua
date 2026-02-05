@@ -74,10 +74,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "You are looking a bit feverish!", yell = false },
-	{ text = "You don't look that good!", yell = false },
-	{ text = "Hachoo!", yell = false },
-	{ text = "Cough Cough", yell = false },
+	{ text = "You are looking a bit feverish!", yell = false , i18nKey = "monster.plaguesmith.voice_1"},
+	{ text = "You don't look that good!", yell = false , i18nKey = "monster.plaguesmith.voice_2"},
+	{ text = "Hachoo!", yell = false , i18nKey = "monster.plaguesmith.voice_3"},
+	{ text = "Cough Cough", yell = false , i18nKey = "monster.plaguesmith.voice_4"},
 }
 
 monster.loot = {

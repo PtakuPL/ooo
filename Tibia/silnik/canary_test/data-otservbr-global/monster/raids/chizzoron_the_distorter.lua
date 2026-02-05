@@ -72,9 +72,9 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Humanzzz! Leave Zzaion at onzzzze!", yell = false },
-	{ text = "I pray to my mazzterzz, the mighty dragonzzz!", yell = false },
-	{ text = "You are not worzzy to touch zzizz zzacred ground!", yell = false },
+	{ text = "Humanzzz! Leave Zzaion at onzzzze!", yell = false , i18nKey = "monster.chizzoron_the_distorter.voice_1"},
+	{ text = "I pray to my mazzterzz, the mighty dragonzzz!", yell = false , i18nKey = "monster.chizzoron_the_distorter.voice_2"},
+	{ text = "You are not worzzy to touch zzizz zzacred ground!", yell = false , i18nKey = "monster.chizzoron_the_distorter.voice_3"},
 }
 
 monster.loot = {

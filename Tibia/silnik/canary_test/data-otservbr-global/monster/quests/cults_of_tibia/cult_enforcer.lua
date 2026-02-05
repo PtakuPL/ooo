@@ -77,7 +77,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "No one will stop us!", yell = false },
+	{ text = "No one will stop us!", yell = false , i18nKey = "monster.cult_enforcer.voice_1"},
 }
 
 monster.loot = {

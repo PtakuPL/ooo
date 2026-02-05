@@ -72,10 +72,10 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I AM MORGAROTH, LORD OF THE TRIANGLE... AND YOU ARE LOST!", yell = true },
-	{ text = "MY SEED IS FEAR AND MY HARVEST ARE YOUR SOULS!", yell = true },
-	{ text = "ZATHROTH! LOOK AT THE DESTRUCTION I AM CAUSING IN YOUR NAME!", yell = true },
-	{ text = "THE TRIANGLE OF TERROR WILL RISE!", yell = true },
+	{ text = "I AM MORGAROTH, LORD OF THE TRIANGLE... AND YOU ARE LOST!", yell = true , i18nKey = "monster.morgaroth.voice_1"},
+	{ text = "MY SEED IS FEAR AND MY HARVEST ARE YOUR SOULS!", yell = true , i18nKey = "monster.morgaroth.voice_2"},
+	{ text = "ZATHROTH! LOOK AT THE DESTRUCTION I AM CAUSING IN YOUR NAME!", yell = true , i18nKey = "monster.morgaroth.voice_3"},
+	{ text = "THE TRIANGLE OF TERROR WILL RISE!", yell = true , i18nKey = "monster.morgaroth.voice_4"},
 }
 
 monster.loot = {

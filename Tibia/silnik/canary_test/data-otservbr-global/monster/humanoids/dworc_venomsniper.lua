@@ -70,9 +70,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Grow truk grrrrr.", yell = false },
-	{ text = "Brak brrretz!", yell = false },
-	{ text = "Prek tars, dekklep zurk.", yell = false },
+	{ text = "Grow truk grrrrr.", yell = false , i18nKey = "monster.dworc_venomsniper.voice_1"},
+	{ text = "Brak brrretz!", yell = false , i18nKey = "monster.dworc_venomsniper.voice_2"},
+	{ text = "Prek tars, dekklep zurk.", yell = false , i18nKey = "monster.dworc_venomsniper.voice_3"},
 }
 
 monster.loot = {

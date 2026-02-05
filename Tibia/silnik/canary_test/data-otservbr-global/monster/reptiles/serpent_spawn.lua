@@ -72,10 +72,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "HISSSS", yell = true },
-	{ text = "I bring you deathhhh, mortalssss", yell = false },
-	{ text = "Sssssouls for the one", yell = false },
-	{ text = "Tsssse one will risssse again", yell = false },
+	{ text = "HISSSS", yell = true , i18nKey = "monster.serpent_spawn.voice_1"},
+	{ text = "I bring you deathhhh, mortalssss", yell = false , i18nKey = "monster.serpent_spawn.voice_2"},
+	{ text = "Sssssouls for the one", yell = false , i18nKey = "monster.serpent_spawn.voice_3"},
+	{ text = "Tsssse one will risssse again", yell = false , i18nKey = "monster.serpent_spawn.voice_4"},
 }
 
 monster.loot = {

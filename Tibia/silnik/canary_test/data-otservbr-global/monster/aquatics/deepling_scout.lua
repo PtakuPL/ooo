@@ -76,10 +76,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Njaaarh!!", yell = false },
-	{ text = "Begjone, intrjuder!!", yell = false },
-	{ text = "Djon't djare stjare injo the eyes of the djeep!", yell = false },
-	{ text = "Ljeave this sjacred pljace while you cjan", yell = false },
+	{ text = "Njaaarh!!", yell = false , i18nKey = "monster.deepling_scout.voice_1"},
+	{ text = "Begjone, intrjuder!!", yell = false , i18nKey = "monster.deepling_scout.voice_2"},
+	{ text = "Djon't djare stjare injo the eyes of the djeep!", yell = false , i18nKey = "monster.deepling_scout.voice_3"},
+	{ text = "Ljeave this sjacred pljace while you cjan", yell = false , i18nKey = "monster.deepling_scout.voice_4"},
 }
 
 monster.loot = {

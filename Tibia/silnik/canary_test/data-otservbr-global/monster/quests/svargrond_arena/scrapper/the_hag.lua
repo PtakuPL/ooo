@@ -68,10 +68,10 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "If you think I am too old to fight then you're wrong.", yell = false },
-	{ text = "I've forgotten more things than you have ever learned!", yell = false },
-	{ text = "Let me teach you a few things youngster!", yell = false },
-	{ text = "I'll teach you respect for the old!", yell = false },
+	{ text = "If you think I am too old to fight then you're wrong.", yell = false , i18nKey = "monster.the_hag.voice_1"},
+	{ text = "I've forgotten more things than you have ever learned!", yell = false , i18nKey = "monster.the_hag.voice_2"},
+	{ text = "Let me teach you a few things youngster!", yell = false , i18nKey = "monster.the_hag.voice_3"},
+	{ text = "I'll teach you respect for the old!", yell = false , i18nKey = "monster.the_hag.voice_4"},
 }
 
 monster.loot = {}

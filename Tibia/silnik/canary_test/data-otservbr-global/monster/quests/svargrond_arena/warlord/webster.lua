@@ -60,10 +60,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "You are lost.", yell = false },
-	{ text = "Come my little morsel.", yell = false },
-	{ text = "So tasty!", yell = false },
-	{ text = "I'll get you!", yell = false },
+	{ text = "You are lost.", yell = false , i18nKey = "monster.webster.voice_1"},
+	{ text = "Come my little morsel.", yell = false , i18nKey = "monster.webster.voice_2"},
+	{ text = "So tasty!", yell = false , i18nKey = "monster.webster.voice_3"},
+	{ text = "I'll get you!", yell = false , i18nKey = "monster.webster.voice_4"},
 }
 
 monster.loot = {}

@@ -60,9 +60,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Work, work!", yell = false },
-	{ text = "Intruders in the mines!", yell = false },
-	{ text = "Mine, all mine!", yell = false },
+	{ text = "Work, work!", yell = false , i18nKey = "monster.dwarf_miner.voice_1"},
+	{ text = "Intruders in the mines!", yell = false , i18nKey = "monster.dwarf_miner.voice_2"},
+	{ text = "Mine, all mine!", yell = false , i18nKey = "monster.dwarf_miner.voice_3"},
 }
 
 monster.loot = {

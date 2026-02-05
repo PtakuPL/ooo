@@ -77,8 +77,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I am you. Just better!", yell = false },
-	{ text = "I'll take your place when you are gone.", yell = false },
+	{ text = "I am you. Just better!", yell = false , i18nKey = "monster.knight's_apparition.voice_1"},
+	{ text = "I'll take your place when you are gone.", yell = false , i18nKey = "monster.knight's_apparition.voice_2"},
 }
 
 monster.loot = {

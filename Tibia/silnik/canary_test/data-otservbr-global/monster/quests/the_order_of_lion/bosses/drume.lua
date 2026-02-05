@@ -77,9 +77,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I've studied the Cobras - I wield the secrets of the snake!", yell = false },
-	{ text = "I am a true knight of the lion, you will never defeat the true order!", yell = false },
-	{ text = "The Falcons will come to my aid in need!", yell = false },
+	{ text = "I've studied the Cobras - I wield the secrets of the snake!", yell = false , i18nKey = "monster.drume.voice_1"},
+	{ text = "I am a true knight of the lion, you will never defeat the true order!", yell = false , i18nKey = "monster.drume.voice_2"},
+	{ text = "The Falcons will come to my aid in need!", yell = false , i18nKey = "monster.drume.voice_3"},
 }
 
 monster.loot = {

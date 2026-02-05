@@ -73,9 +73,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "POWERRR!!", yell = false },
-	{ text = "DARKNESS. DEATH. ENERGIES.", yell = false },
-	{ text = "TREMMMBLE!", yell = false },
+	{ text = "POWERRR!!", yell = false , i18nKey = "monster.wandering_pillar.voice_1"},
+	{ text = "DARKNESS. DEATH. ENERGIES.", yell = false , i18nKey = "monster.wandering_pillar.voice_2"},
+	{ text = "TREMMMBLE!", yell = false , i18nKey = "monster.wandering_pillar.voice_3"},
 }
 
 monster.loot = {

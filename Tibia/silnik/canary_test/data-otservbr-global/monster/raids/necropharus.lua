@@ -66,8 +66,8 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "You will rise as my servant!", yell = false },
-	{ text = "Praise to my master Urgith!", yell = false },
+	{ text = "You will rise as my servant!", yell = false , i18nKey = "monster.necropharus.voice_1"},
+	{ text = "Praise to my master Urgith!", yell = false , i18nKey = "monster.necropharus.voice_2"},
 }
 
 monster.loot = {

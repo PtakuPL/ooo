@@ -73,8 +73,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "<grunt>", yell = false },
-	{ text = "Raar!!", yell = false },
+	{ text = "<grunt>", yell = false , i18nKey = "monster.broken_shaper.voice_1"},
+	{ text = "Raar!!", yell = false , i18nKey = "monster.broken_shaper.voice_2"},
 }
 
 monster.loot = {

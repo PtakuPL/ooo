@@ -80,7 +80,7 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Crackle", yell = false },
+	{ text = "Crackle", yell = false , i18nKey = "monster.mercury_blob.voice_1"},
 }
 
 monster.loot = {

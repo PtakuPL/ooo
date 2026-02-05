@@ -78,9 +78,9 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Even a rat is a better mage than you!", yell = false },
-	{ text = "Learn the secret of our magic! YOUR death!", yell = false },
-	{ text = "We don't like intruders!", yell = false },
+	{ text = "Even a rat is a better mage than you!", yell = false , i18nKey = "monster.warlock.voice_1"},
+	{ text = "Learn the secret of our magic! YOUR death!", yell = false , i18nKey = "monster.warlock.voice_2"},
+	{ text = "We don't like intruders!", yell = false , i18nKey = "monster.warlock.voice_3"},
 }
 
 monster.loot = {

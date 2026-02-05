@@ -71,11 +71,11 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Death to the Defilers!", yell = false },
-	{ text = "You are not welcome here.", yell = false },
-	{ text = "Flee as long as you can.", yell = false },
-	{ text = "Bahaha aka!", yell = false },
-	{ text = "Ulathil beia Thratha!", yell = false },
+	{ text = "Death to the Defilers!", yell = false , i18nKey = "monster.elf.voice_1"},
+	{ text = "You are not welcome here.", yell = false , i18nKey = "monster.elf.voice_2"},
+	{ text = "Flee as long as you can.", yell = false , i18nKey = "monster.elf.voice_3"},
+	{ text = "Bahaha aka!", yell = false , i18nKey = "monster.elf.voice_4"},
+	{ text = "Ulathil beia Thratha!", yell = false , i18nKey = "monster.elf.voice_5"},
 }
 
 monster.loot = {

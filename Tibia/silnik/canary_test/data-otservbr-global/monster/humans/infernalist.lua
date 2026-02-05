@@ -77,10 +77,10 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Nothing will remain but your scorched bones!", yell = false },
-	{ text = "Some like it hot!", yell = false },
-	{ text = "It's cooking time!", yell = false },
-	{ text = "Feel the heat of battle!", yell = false },
+	{ text = "Nothing will remain but your scorched bones!", yell = false , i18nKey = "monster.infernalist.voice_1"},
+	{ text = "Some like it hot!", yell = false , i18nKey = "monster.infernalist.voice_2"},
+	{ text = "It's cooking time!", yell = false , i18nKey = "monster.infernalist.voice_3"},
+	{ text = "Feel the heat of battle!", yell = false , i18nKey = "monster.infernalist.voice_4"},
 }
 
 monster.loot = {

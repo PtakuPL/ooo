@@ -72,10 +72,10 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Gadarat Ulderek!", yell = false },
-	{ text = "Ruzad buta bana!", yell = false },
-	{ text = "Rahi Gosh!", yell = false },
-	{ text = "Ikem rambo zambo!", yell = false },
+	{ text = "Gadarat Ulderek!", yell = false , i18nKey = "monster.warlord_ruzad.voice_1"},
+	{ text = "Ruzad buta bana!", yell = false , i18nKey = "monster.warlord_ruzad.voice_2"},
+	{ text = "Rahi Gosh!", yell = false , i18nKey = "monster.warlord_ruzad.voice_3"},
+	{ text = "Ikem rambo zambo!", yell = false , i18nKey = "monster.warlord_ruzad.voice_4"},
 }
 
 monster.loot = {

@@ -72,10 +72,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Prepare to BLEED!", yell = false },
-	{ text = "Don't struggle. We don't want to waste a drop of blood now, do we?", yell = false },
-	{ text = "Ah, refreshments have arrived!", yell = false },
-	{ text = "Bloody good thing you came!", yell = false },
+	{ text = "Prepare to BLEED!", yell = false , i18nKey = "monster.vampire_viscount.voice_1"},
+	{ text = "Don't struggle. We don't want to waste a drop of blood now, do we?", yell = false , i18nKey = "monster.vampire_viscount.voice_2"},
+	{ text = "Ah, refreshments have arrived!", yell = false , i18nKey = "monster.vampire_viscount.voice_3"},
+	{ text = "Bloody good thing you came!", yell = false , i18nKey = "monster.vampire_viscount.voice_4"},
 }
 
 monster.loot = {

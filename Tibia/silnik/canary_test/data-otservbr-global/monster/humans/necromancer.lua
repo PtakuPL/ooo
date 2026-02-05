@@ -80,8 +80,8 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Taste the sweetness of death!", yell = false },
-	{ text = "Your corpse will be mine.", yell = false },
+	{ text = "Taste the sweetness of death!", yell = false , i18nKey = "monster.necromancer.voice_1"},
+	{ text = "Your corpse will be mine.", yell = false , i18nKey = "monster.necromancer.voice_2"},
 }
 
 monster.loot = {

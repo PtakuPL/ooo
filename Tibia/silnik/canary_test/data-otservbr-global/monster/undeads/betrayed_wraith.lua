@@ -70,9 +70,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Rrrah!", yell = false },
-	{ text = "Gnarr!", yell = false },
-	{ text = "Tcharrr!", yell = false },
+	{ text = "Rrrah!", yell = false , i18nKey = "monster.betrayed_wraith.voice_1"},
+	{ text = "Gnarr!", yell = false , i18nKey = "monster.betrayed_wraith.voice_2"},
+	{ text = "Tcharrr!", yell = false , i18nKey = "monster.betrayed_wraith.voice_3"},
 }
 
 monster.loot = {

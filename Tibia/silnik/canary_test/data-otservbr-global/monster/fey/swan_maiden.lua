@@ -73,10 +73,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Nightmarish monster! This dream is not meant for you!", yell = false },
-	{ text = "You won't steal my robe! Back off!", yell = false },
-	{ text = "You are not allowed to lay eyes on me in this shape!", yell = false },
-	{ text = "Are you stalking me? You will bitterly regret this!", yell = false },
+	{ text = "Nightmarish monster! This dream is not meant for you!", yell = false , i18nKey = "monster.swan_maiden.voice_1"},
+	{ text = "You won't steal my robe! Back off!", yell = false , i18nKey = "monster.swan_maiden.voice_2"},
+	{ text = "You are not allowed to lay eyes on me in this shape!", yell = false , i18nKey = "monster.swan_maiden.voice_3"},
+	{ text = "Are you stalking me? You will bitterly regret this!", yell = false , i18nKey = "monster.swan_maiden.voice_4"},
 }
 
 monster.loot = {

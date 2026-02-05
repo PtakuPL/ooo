@@ -72,7 +72,7 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Bring me the pain! Make me suffer!", yell = false },
+	{ text = "Bring me the pain! Make me suffer!", yell = false , i18nKey = "monster.leiden.voice_1"},
 }
 
 monster.loot = {}

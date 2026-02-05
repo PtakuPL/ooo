@@ -77,9 +77,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Feel the heat!", yell = false },
-	{ text = "Hand over your life.", yell = false },
-	{ text = "I can give you a hand... or two.", yell = false },
+	{ text = "Feel the heat!", yell = false , i18nKey = "monster.brachiodemon.voice_1"},
+	{ text = "Hand over your life.", yell = false , i18nKey = "monster.brachiodemon.voice_2"},
+	{ text = "I can give you a hand... or two.", yell = false , i18nKey = "monster.brachiodemon.voice_3"},
 }
 
 monster.loot = {

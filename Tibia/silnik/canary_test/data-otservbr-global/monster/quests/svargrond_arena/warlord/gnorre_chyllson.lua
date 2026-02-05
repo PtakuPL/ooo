@@ -60,9 +60,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I am like the merciless northwind.", yell = false },
-	{ text = "Snow will be your death shroud.", yell = false },
-	{ text = "Feel the wrath of father chyll!", yell = false },
+	{ text = "I am like the merciless northwind.", yell = false , i18nKey = "monster.gnorre_chyllson.voice_1"},
+	{ text = "Snow will be your death shroud.", yell = false , i18nKey = "monster.gnorre_chyllson.voice_2"},
+	{ text = "Feel the wrath of father chyll!", yell = false , i18nKey = "monster.gnorre_chyllson.voice_3"},
 }
 
 monster.loot = {}

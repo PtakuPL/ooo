@@ -73,8 +73,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "We will make you one of us!", yell = false },
-	{ text = "Come to mummy!", yell = false },
+	{ text = "We will make you one of us!", yell = false , i18nKey = "monster.putrid_mummy.voice_1"},
+	{ text = "Come to mummy!", yell = false , i18nKey = "monster.putrid_mummy.voice_2"},
 }
 
 monster.loot = {

@@ -71,7 +71,7 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "You will become a feast for my maggots!", yell = false },
+	{ text = "You will become a feast for my maggots!", yell = false , i18nKey = "monster.thalas.voice_1"},
 }
 
 monster.loot = {

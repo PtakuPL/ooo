@@ -70,7 +70,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "SMAASH!", yell = true },
+	{ text = "SMAASH!", yell = true , i18nKey = "monster.hulking_prehemoth.voice_1"},
 }
 
 monster.loot = {

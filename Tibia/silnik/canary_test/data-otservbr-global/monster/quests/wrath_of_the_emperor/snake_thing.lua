@@ -64,7 +64,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "POWER! I SEED MORE POWER!", yell = true },
+	{ text = "POWER! I SEED MORE POWER!", yell = true , i18nKey = "monster.snake_thing.voice_1"},
 }
 
 monster.loot = {}

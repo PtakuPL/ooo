@@ -70,12 +70,12 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Qua hah tsh!", yell = false },
-	{ text = "Teech tsha tshul!", yell = false },
-	{ text = "Quara tsha Fach!", yell = false },
-	{ text = "Tssssha Quara!", yell = false },
-	{ text = "Blubber.", yell = false },
-	{ text = "Blup.", yell = false },
+	{ text = "Qua hah tsh!", yell = false , i18nKey = "monster.quara_hydromancer_scout.voice_1"},
+	{ text = "Teech tsha tshul!", yell = false , i18nKey = "monster.quara_hydromancer_scout.voice_2"},
+	{ text = "Quara tsha Fach!", yell = false , i18nKey = "monster.quara_hydromancer_scout.voice_3"},
+	{ text = "Tssssha Quara!", yell = false , i18nKey = "monster.quara_hydromancer_scout.voice_4"},
+	{ text = "Blubber.", yell = false , i18nKey = "monster.quara_hydromancer_scout.voice_5"},
+	{ text = "Blup.", yell = false , i18nKey = "monster.quara_hydromancer_scout.voice_6"},
 }
 
 monster.loot = {

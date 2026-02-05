@@ -71,10 +71,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Fee! Fie! Foe! Fum!", yell = false },
-	{ text = "Luttl pest!", yell = false },
-	{ text = "Me makking you pulp!", yell = false },
-	{ text = "Humy tasy! Hum hum!", yell = false },
+	{ text = "Fee! Fie! Foe! Fum!", yell = false , i18nKey = "monster.cyclops_drone.voice_5"},
+	{ text = "Luttl pest!", yell = false , i18nKey = "monster.cyclops_drone.voice_6"},
+	{ text = "Me makking you pulp!", yell = false , i18nKey = "monster.cyclops_drone.voice_7"},
+	{ text = "Humy tasy! Hum hum!", yell = false , i18nKey = "monster.cyclops_drone.voice_8"},
 }
 
 monster.loot = {

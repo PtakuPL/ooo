@@ -72,9 +72,9 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "You are no match for the scourge of the seas!", yell = false },
-	{ text = "You move like a seasick whale!", yell = false },
-	{ text = "Yarr, death to all landlubbers!", yell = false },
+	{ text = "You are no match for the scourge of the seas!", yell = false , i18nKey = "monster.dirtbeard.voice_1"},
+	{ text = "You move like a seasick whale!", yell = false , i18nKey = "monster.dirtbeard.voice_2"},
+	{ text = "Yarr, death to all landlubbers!", yell = false , i18nKey = "monster.dirtbeard.voice_3"},
 }
 
 monster.loot = {

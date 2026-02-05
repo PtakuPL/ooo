@@ -72,10 +72,10 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Not in my face you barbarian!", yell = false },
-	{ text = "I envy you to be slain by someone as beautiful as me.", yell = false },
-	{ text = "I will drain your ugly corpses of the last drop of blood.", yell = false },
-	{ text = "My brides will feast on your souls!", yell = false },
+	{ text = "Not in my face you barbarian!", yell = false , i18nKey = "monster.diblis_the_fair.voice_1"},
+	{ text = "I envy you to be slain by someone as beautiful as me.", yell = false , i18nKey = "monster.diblis_the_fair.voice_2"},
+	{ text = "I will drain your ugly corpses of the last drop of blood.", yell = false , i18nKey = "monster.diblis_the_fair.voice_3"},
+	{ text = "My brides will feast on your souls!", yell = false , i18nKey = "monster.diblis_the_fair.voice_4"},
 }
 
 monster.loot = {

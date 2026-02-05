@@ -67,8 +67,8 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I hope you like my voice!", yell = false },
-	{ text = "Let us dance the dance of death.", yell = false },
+	{ text = "I hope you like my voice!", yell = false , i18nKey = "monster.the_dark_dancer.voice_1"},
+	{ text = "Let us dance the dance of death.", yell = false , i18nKey = "monster.the_dark_dancer.voice_2"},
 }
 
 monster.loot = {}

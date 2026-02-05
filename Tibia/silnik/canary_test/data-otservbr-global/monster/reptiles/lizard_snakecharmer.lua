@@ -77,8 +77,8 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I smeeeel warm blood!", yell = false },
-	{ text = "Shhhhhhh", yell = false },
+	{ text = "I smeeeel warm blood!", yell = false , i18nKey = "monster.lizard_snakecharmer.voice_1"},
+	{ text = "Shhhhhhh", yell = false , i18nKey = "monster.lizard_snakecharmer.voice_2"},
 }
 
 monster.loot = {

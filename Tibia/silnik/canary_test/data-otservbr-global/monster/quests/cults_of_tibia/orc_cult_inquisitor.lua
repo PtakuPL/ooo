@@ -73,7 +73,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "You unorcish scum will die!", yell = false },
+	{ text = "You unorcish scum will die!", yell = false , i18nKey = "monster.orc_cult_inquisitor.voice_1"},
 }
 
 monster.loot = {

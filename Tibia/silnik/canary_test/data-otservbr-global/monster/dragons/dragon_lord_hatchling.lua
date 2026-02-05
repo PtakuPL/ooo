@@ -74,8 +74,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Fchu?", yell = false },
-	{ text = "Rooawwrr", yell = false },
+	{ text = "Fchu?", yell = false , i18nKey = "monster.dragon_lord_hatchling.voice_1"},
+	{ text = "Rooawwrr", yell = false , i18nKey = "monster.dragon_lord_hatchling.voice_2"},
 }
 
 monster.loot = {

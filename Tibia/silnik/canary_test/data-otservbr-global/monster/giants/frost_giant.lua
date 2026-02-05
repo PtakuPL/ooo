@@ -72,12 +72,12 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Hmm Humansoup!", yell = false },
-	{ text = "Stand still ya tasy snack!", yell = false },
-	{ text = "Joh Thun!", yell = false },
-	{ text = "Hörre Sjan Flan!", yell = false },
-	{ text = "Bröre Smöde!", yell = false },
-	{ text = "Forle Bramma", yell = false },
+	{ text = "Hmm Humansoup!", yell = false , i18nKey = "monster.frost_giant.voice_1"},
+	{ text = "Stand still ya tasy snack!", yell = false , i18nKey = "monster.frost_giant.voice_2"},
+	{ text = "Joh Thun!", yell = false , i18nKey = "monster.frost_giant.voice_3"},
+	{ text = "Hörre Sjan Flan!", yell = false , i18nKey = "monster.frost_giant.voice_4"},
+	{ text = "Bröre Smöde!", yell = false , i18nKey = "monster.frost_giant.voice_5"},
+	{ text = "Forle Bramma", yell = false , i18nKey = "monster.frost_giant.voice_6"},
 }
 
 monster.loot = {

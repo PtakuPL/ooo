@@ -71,9 +71,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Leave this place... save yourself...", yell = false },
-	{ text = "The dark ones.. must be stopped... unholy, twisted, EVIL!", yell = false },
-	{ text = "No... don't go further stranger... danger lies in every step...", yell = false },
+	{ text = "Leave this place... save yourself...", yell = false , i18nKey = "monster.white_shade.voice_1"},
+	{ text = "The dark ones.. must be stopped... unholy, twisted, EVIL!", yell = false , i18nKey = "monster.white_shade.voice_2"},
+	{ text = "No... don't go further stranger... danger lies in every step...", yell = false , i18nKey = "monster.white_shade.voice_3"},
 }
 
 monster.loot = {

@@ -73,10 +73,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Chrchrchr", yell = false },
-	{ text = "Klonklonk", yell = false },
-	{ text = "Chrrrrr", yell = false },
-	{ text = "Crunch crunch", yell = false },
+	{ text = "Chrchrchr", yell = false , i18nKey = "monster.crustacea_gigantica.voice_1"},
+	{ text = "Klonklonk", yell = false , i18nKey = "monster.crustacea_gigantica.voice_2"},
+	{ text = "Chrrrrr", yell = false , i18nKey = "monster.crustacea_gigantica.voice_3"},
+	{ text = "Crunch crunch", yell = false , i18nKey = "monster.crustacea_gigantica.voice_4"},
 }
 
 monster.loot = {

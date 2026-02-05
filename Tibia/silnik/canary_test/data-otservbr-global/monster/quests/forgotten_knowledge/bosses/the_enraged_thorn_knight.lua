@@ -70,9 +70,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "You've killed my only friend!", yell = false },
-	{ text = "You will pay for this!", yell = false },
-	{ text = "NOOOOO!", yell = true },
+	{ text = "You've killed my only friend!", yell = false , i18nKey = "monster.the_enraged_thorn_knight.voice_1"},
+	{ text = "You will pay for this!", yell = false , i18nKey = "monster.the_enraged_thorn_knight.voice_2"},
+	{ text = "NOOOOO!", yell = true , i18nKey = "monster.the_enraged_thorn_knight.voice_3"},
 }
 
 monster.loot = {

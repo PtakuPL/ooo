@@ -74,9 +74,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "*clatter*", yell = false },
-	{ text = "*krrk*", yell = false },
-	{ text = "*frzzp*", yell = false },
+	{ text = "*clatter*", yell = false , i18nKey = "monster.rustheap_golem.voice_1"},
+	{ text = "*krrk*", yell = false , i18nKey = "monster.rustheap_golem.voice_2"},
+	{ text = "*frzzp*", yell = false , i18nKey = "monster.rustheap_golem.voice_3"},
 }
 
 monster.loot = {

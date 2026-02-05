@@ -73,8 +73,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Your tainted soul belongs to us anyway!", yell = false },
-	{ text = "You should consider bargaining for your life!", yell = false },
+	{ text = "Your tainted soul belongs to us anyway!", yell = false , i18nKey = "monster.hellflayer.voice_1"},
+	{ text = "You should consider bargaining for your life!", yell = false , i18nKey = "monster.hellflayer.voice_2"},
 }
 
 monster.loot = {

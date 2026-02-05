@@ -69,13 +69,13 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "*** STEALTH ***", yell = true },
-	{ text = "*** TIME ***", yell = true },
-	{ text = "*** IMPORTANT ***", yell = true },
-	{ text = "*** BRAINS *** SMALL ***", yell = true },
-	{ text = "*** DEATH ***", yell = true },
-	{ text = "*** FIRE *** HOME *** VICTORY ***", yell = true },
-	{ text = "*** EXISTENCE *** FUTILE ***", yell = true },
+	{ text = "*** STEALTH ***", yell = true , i18nKey = "monster.abyssador.voice_1"},
+	{ text = "*** TIME ***", yell = true , i18nKey = "monster.abyssador.voice_2"},
+	{ text = "*** IMPORTANT ***", yell = true , i18nKey = "monster.abyssador.voice_3"},
+	{ text = "*** BRAINS *** SMALL ***", yell = true , i18nKey = "monster.abyssador.voice_4"},
+	{ text = "*** DEATH ***", yell = true , i18nKey = "monster.abyssador.voice_5"},
+	{ text = "*** FIRE *** HOME *** VICTORY ***", yell = true , i18nKey = "monster.abyssador.voice_6"},
+	{ text = "*** EXISTENCE *** FUTILE ***", yell = true , i18nKey = "monster.abyssador.voice_7"},
 }
 
 monster.loot = {

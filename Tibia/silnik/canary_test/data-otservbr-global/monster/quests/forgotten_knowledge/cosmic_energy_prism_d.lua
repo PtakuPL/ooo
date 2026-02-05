@@ -56,7 +56,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "*Zap!*", yell = false },
+	{ text = "*Zap!*", yell = false , i18nKey = "monster.cosmic_energy_prism_d.voice_1"},
 }
 
 monster.loot = {}

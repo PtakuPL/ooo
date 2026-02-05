@@ -70,8 +70,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Flood the room with curious energy!", yell = false },
-	{ text = "zup zup zup zuuuuup!", yell = false },
+	{ text = "Flood the room with curious energy!", yell = false , i18nKey = "monster.energetic_book.voice_1"},
+	{ text = "zup zup zup zuuuuup!", yell = false , i18nKey = "monster.energetic_book.voice_2"},
 }
 
 monster.loot = {

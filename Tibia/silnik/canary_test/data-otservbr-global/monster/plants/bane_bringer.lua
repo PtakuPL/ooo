@@ -74,8 +74,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "You shall not succeed!", yell = false },
-	{ text = "This time we will prevail!", yell = false },
+	{ text = "You shall not succeed!", yell = false , i18nKey = "monster.bane_bringer.voice_1"},
+	{ text = "This time we will prevail!", yell = false , i18nKey = "monster.bane_bringer.voice_2"},
 }
 
 monster.loot = {

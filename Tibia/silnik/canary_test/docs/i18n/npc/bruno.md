@@ -1,7 +1,7 @@
 # NPC: bruno
 
-**Plik:** `data-otservbr-global/npc/bruno.lua`
-**Data migracji:** 2025-12-17 05:28
+**Plik:** 
+**Data migracji:** 2025-12-21 03:17
 **Liczba tekstów:** 0
 
 ## Klucze i18n

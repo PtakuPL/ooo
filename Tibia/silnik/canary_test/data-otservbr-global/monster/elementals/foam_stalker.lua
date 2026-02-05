@@ -60,9 +60,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "splash", yell = false },
-	{ text = "gurgle", yell = false },
-	{ text = "dribble", yell = false },
+	{ text = "splash", yell = false , i18nKey = "monster.foam_stalker.voice_1"},
+	{ text = "gurgle", yell = false , i18nKey = "monster.foam_stalker.voice_2"},
+	{ text = "dribble", yell = false , i18nKey = "monster.foam_stalker.voice_3"},
 }
 
 monster.loot = {

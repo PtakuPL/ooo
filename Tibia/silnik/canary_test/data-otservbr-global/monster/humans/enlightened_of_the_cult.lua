@@ -81,10 +81,10 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Praise to my master Urgith!", yell = false },
-	{ text = "You will rise as my servant!", yell = false },
-	{ text = "Praise to my masters! Long live the triangle!", yell = false },
-	{ text = "You will die in the name of the triangle!", yell = false },
+	{ text = "Praise to my master Urgith!", yell = false , i18nKey = "monster.enlightened_of_the_cult.voice_1"},
+	{ text = "You will rise as my servant!", yell = false , i18nKey = "monster.enlightened_of_the_cult.voice_2"},
+	{ text = "Praise to my masters! Long live the triangle!", yell = false , i18nKey = "monster.enlightened_of_the_cult.voice_3"},
+	{ text = "You will die in the name of the triangle!", yell = false , i18nKey = "monster.enlightened_of_the_cult.voice_4"},
 }
 
 monster.loot = {

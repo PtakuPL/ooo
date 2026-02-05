@@ -77,9 +77,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I spotted you!", yell = false },
-	{ text = "Let me show you your destiny!", yell = false },
-	{ text = "There is no escape now, friend.", yell = false },
+	{ text = "I spotted you!", yell = false , i18nKey = "monster.misguided_thief.voice_1"},
+	{ text = "Let me show you your destiny!", yell = false , i18nKey = "monster.misguided_thief.voice_2"},
+	{ text = "There is no escape now, friend.", yell = false , i18nKey = "monster.misguided_thief.voice_3"},
 }
 
 monster.loot = {

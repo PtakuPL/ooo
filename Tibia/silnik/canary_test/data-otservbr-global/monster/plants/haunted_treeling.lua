@@ -74,9 +74,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Knarrrz", yell = false },
-	{ text = "Huuhuuhuuuhuuaarrr", yell = false },
-	{ text = "Knorrrrrr", yell = false },
+	{ text = "Knarrrz", yell = false , i18nKey = "monster.haunted_treeling.voice_1"},
+	{ text = "Huuhuuhuuuhuuaarrr", yell = false , i18nKey = "monster.haunted_treeling.voice_2"},
+	{ text = "Knorrrrrr", yell = false , i18nKey = "monster.haunted_treeling.voice_3"},
 }
 
 monster.loot = {

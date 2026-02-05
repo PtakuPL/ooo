@@ -70,9 +70,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "COMBINE FORCES MY BRETHEN!", yell = true },
-	{ text = "Feel the cobras wrath!", yell = false },
-	{ text = "OH NO, YOU WON'T!", yell = true },
+	{ text = "COMBINE FORCES MY BRETHEN!", yell = true , i18nKey = "monster.cobra_vizier.voice_1"},
+	{ text = "Feel the cobras wrath!", yell = false , i18nKey = "monster.cobra_vizier.voice_2"},
+	{ text = "OH NO, YOU WON'T!", yell = true , i18nKey = "monster.cobra_vizier.voice_3"},
 }
 
 monster.loot = {

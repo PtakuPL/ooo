@@ -73,7 +73,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Yhouuuu!", yell = false },
+	{ text = "Yhouuuu!", yell = false , i18nKey = "monster.lost_basher.voice_1"},
 }
 
 monster.loot = {

@@ -73,9 +73,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Come into my fluffy embrace!", yell = false },
-	{ text = "Want fairy floss? I will feed you up.", yell = false },
-	{ text = "Did you have to come here, little one? I just wanted to lay around and take it easy.", yell = false },
+	{ text = "Come into my fluffy embrace!", yell = false , i18nKey = "monster.candy_floss_elemental.voice_1"},
+	{ text = "Want fairy floss? I will feed you up.", yell = false , i18nKey = "monster.candy_floss_elemental.voice_2"},
+	{ text = "Did you have to come here, little one? I just wanted to lay around and take it easy.", yell = false , i18nKey = "monster.candy_floss_elemental.voice_3"},
 }
 
 monster.loot = {

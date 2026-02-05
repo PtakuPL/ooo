@@ -73,16 +73,16 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Azerus barada nikto!", yell = false },
-	{ text = "Klonk klonk klonk", yell = false },
-	{ text = "Engaging Enemy!", yell = false },
-	{ text = "Threat level processed.", yell = false },
-	{ text = "Charging weapon systems!", yell = false },
-	{ text = "Auto repair in progress.", yell = false },
-	{ text = "The battle is joined!", yell = false },
-	{ text = "Termination initialized!", yell = false },
-	{ text = "Rrrtttarrrttarrrtta", yell = false },
-	{ text = "Eliminated", yell = false },
+	{ text = "Azerus barada nikto!", yell = false , i18nKey = "monster.war_golem.voice_1"},
+	{ text = "Klonk klonk klonk", yell = false , i18nKey = "monster.war_golem.voice_2"},
+	{ text = "Engaging Enemy!", yell = false , i18nKey = "monster.war_golem.voice_3"},
+	{ text = "Threat level processed.", yell = false , i18nKey = "monster.war_golem.voice_4"},
+	{ text = "Charging weapon systems!", yell = false , i18nKey = "monster.war_golem.voice_5"},
+	{ text = "Auto repair in progress.", yell = false , i18nKey = "monster.war_golem.voice_6"},
+	{ text = "The battle is joined!", yell = false , i18nKey = "monster.war_golem.voice_7"},
+	{ text = "Termination initialized!", yell = false , i18nKey = "monster.war_golem.voice_8"},
+	{ text = "Rrrtttarrrttarrrtta", yell = false , i18nKey = "monster.war_golem.voice_9"},
+	{ text = "Eliminated", yell = false , i18nKey = "monster.war_golem.voice_10"},
 }
 
 monster.loot = {

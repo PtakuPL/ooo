@@ -69,7 +69,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "JAU QJELL, JAKHN JEH KENH!!", yell = true },
+	{ text = "JAU QJELL, JAKHN JEH KENH!!", yell = true , i18nKey = "monster.tanjis.voice_1"},
 }
 
 monster.loot = {

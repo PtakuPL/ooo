@@ -78,10 +78,10 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "When I'm finished with you, you'll be a shadow of your former self.", yell = false },
-	{ text = "Come forth from the shadows, my minions...", yell = false },
-	{ text = "The shadows follow your every step...", yell = false },
-	{ text = "The shadows will swallow you...", yell = false },
+	{ text = "When I'm finished with you, you'll be a shadow of your former self.", yell = false , i18nKey = "monster.shadow_pupil.voice_1"},
+	{ text = "Come forth from the shadows, my minions...", yell = false , i18nKey = "monster.shadow_pupil.voice_2"},
+	{ text = "The shadows follow your every step...", yell = false , i18nKey = "monster.shadow_pupil.voice_3"},
+	{ text = "The shadows will swallow you...", yell = false , i18nKey = "monster.shadow_pupil.voice_4"},
 }
 
 monster.loot = {

@@ -75,9 +75,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "We will devour you ...", yell = false },
-	{ text = "Wait for us, little treat ...", yell = false },
-	{ text = "*Horrraa!", yell = false },
+	{ text = "We will devour you ...", yell = false , i18nKey = "monster.candy_horror.voice_1"},
+	{ text = "Wait for us, little treat ...", yell = false , i18nKey = "monster.candy_horror.voice_2"},
+	{ text = "*Horrraa!", yell = false , i18nKey = "monster.candy_horror.voice_3"},
 }
 
 monster.loot = {

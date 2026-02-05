@@ -69,8 +69,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Your demised will please me!", yell = false },
-	{ text = "You will suffer!", yell = false },
+	{ text = "Your demised will please me!", yell = false , i18nKey = "monster.essence_of_malice.voice_1"},
+	{ text = "You will suffer!", yell = false , i18nKey = "monster.essence_of_malice.voice_2"},
 }
 
 monster.loot = {

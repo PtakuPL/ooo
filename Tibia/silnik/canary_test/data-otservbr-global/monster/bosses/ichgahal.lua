@@ -76,9 +76,9 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Rott!!", yell = false },
-	{ text = "Putrefy!", yell = false },
-	{ text = "Decay!", yell = false },
+	{ text = "Rott!!", yell = false , i18nKey = "monster.ichgahal.voice_1"},
+	{ text = "Putrefy!", yell = false , i18nKey = "monster.ichgahal.voice_2"},
+	{ text = "Decay!", yell = false , i18nKey = "monster.ichgahal.voice_3"},
 }
 
 monster.loot = {

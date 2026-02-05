@@ -74,8 +74,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Squeak! Squeak!", yell = false },
-	{ text = "<sniff> <sniff> <sniff>", yell = false },
+	{ text = "Squeak! Squeak!", yell = false , i18nKey = "monster.corym_skirmisher.voice_1"},
+	{ text = "<sniff> <sniff> <sniff>", yell = false , i18nKey = "monster.corym_skirmisher.voice_2"},
 }
 
 monster.loot = {

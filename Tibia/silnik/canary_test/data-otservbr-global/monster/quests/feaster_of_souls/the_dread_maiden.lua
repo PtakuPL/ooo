@@ -69,7 +69,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "You will be mine for eternity!", yell = false },
+	{ text = "You will be mine for eternity!", yell = false , i18nKey = "monster.the_dread_maiden.voice_1"},
 }
 
 monster.loot = {

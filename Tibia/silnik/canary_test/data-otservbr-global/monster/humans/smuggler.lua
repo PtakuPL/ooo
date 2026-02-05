@@ -70,8 +70,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "You saw something you shouldn't!", yell = false },
-	{ text = "I will silence you forever!", yell = false },
+	{ text = "You saw something you shouldn't!", yell = false , i18nKey = "monster.smuggler.voice_1"},
+	{ text = "I will silence you forever!", yell = false , i18nKey = "monster.smuggler.voice_2"},
 }
 
 monster.loot = {

@@ -72,10 +72,10 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "You won't stop my masterplan to flood the world market with fake Bonelord language dictionaries!", yell = false },
-	{ text = "My calculations tell me you'll die!", yell = false },
-	{ text = "You can't stop me!", yell = false },
-	{ text = "Beware! My evil monolog is coming!", yell = false },
+	{ text = "You won't stop my masterplan to flood the world market with fake Bonelord language dictionaries!", yell = false , i18nKey = "monster.evil_mastermind.voice_1"},
+	{ text = "My calculations tell me you'll die!", yell = false , i18nKey = "monster.evil_mastermind.voice_2"},
+	{ text = "You can't stop me!", yell = false , i18nKey = "monster.evil_mastermind.voice_3"},
+	{ text = "Beware! My evil monolog is coming!", yell = false , i18nKey = "monster.evil_mastermind.voice_4"},
 }
 
 monster.loot = {

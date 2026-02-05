@@ -70,7 +70,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Intruder! Don't violate this sanctuary!", yell = false },
+	{ text = "Intruder! Don't violate this sanctuary!", yell = false , i18nKey = "monster.naga_archer.voice_1"},
 }
 
 monster.loot = {

@@ -74,9 +74,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "DO NOT LEAVE THIS WORLD AS A WIMP!", yell = false },
-	{ text = "PAIN PURIFIES! PAIN PURIFIES!", yell = false },
-	{ text = "PROVE YOUR WORTH, BLEED!", yell = false },
+	{ text = "DO NOT LEAVE THIS WORLD AS A WIMP!", yell = false , i18nKey = "monster.barkless_fanatic.voice_1"},
+	{ text = "PAIN PURIFIES! PAIN PURIFIES!", yell = false , i18nKey = "monster.barkless_fanatic.voice_2"},
+	{ text = "PROVE YOUR WORTH, BLEED!", yell = false , i18nKey = "monster.barkless_fanatic.voice_3"},
 }
 
 monster.loot = {

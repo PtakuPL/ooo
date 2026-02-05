@@ -73,9 +73,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Herba budinia ex!", yell = false },
-	{ text = "Horax Pokti!", yell = false },
-	{ text = "Hihihihi!", yell = false },
+	{ text = "Herba budinia ex!", yell = false , i18nKey = "monster.witch.voice_1"},
+	{ text = "Horax Pokti!", yell = false , i18nKey = "monster.witch.voice_2"},
+	{ text = "Hihihihi!", yell = false , i18nKey = "monster.witch.voice_3"},
 }
 
 monster.loot = {

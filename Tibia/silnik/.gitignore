@@ -1,0 +1,71 @@
+# Local ignore rules for this subtree (Tibia/silnik)
+
+# Ignore the whole Firma_budowlana project folder (as requested)
+Firma_budowlana/
+
+# Also ignore common secret/service-account JSON patterns just in case
+*.json
+*.json.*
+# But allow i18n translation files
+!canary_test/i18n/**/*.json
+!canary_test/i18n/*.json
+
+# Ignore Django media and local env files inside this subtree
+**/media/
+**/.env
+**/.env.*
+
+# OS/tooling noise
+**/*.Zone.Identifier
+
+# ===== I18N Worker temporary files =====
+# Backup files
+canary_test/backups/
+**/*.bak
+**/*.bak.*
+
+# Worker state/PID files
+canary_test/.worker_simple.pid
+canary_test/.guardian_last_push_ts
+canary_test/.worker_script_mtime
+canary_test/.i18n_category_state.json
+canary_test/i18n_worker_state.json
+canary_test/i18n_worker_continuous.pid
+canary_test/i18n_file_status.json
+canary_test/i18n_file_status.json.bak
+canary_test/i18n_global_stats.json
+canary_test/i18n_global_stats.json.bak
+canary_test/i18n_processed_files.txt
+canary_test/i18n_processed_files.txt.bak
+canary_test/i18n_progress_baseline.json
+
+# Worker scripts (not needed in repo)
+canary_test/i18n_autonomous_worker*.sh*
+canary_test/i18n_worker_*.sh
+canary_test/i18n_guardian.sh
+canary_test/i18n_status_pusher.sh
+canary_test/i18n_process_say_arrays.*
+canary_test/i18n_npc_detector.py
+canary_test/test_i18n_cycle.sh
+
+# Worker logs and temp files
+canary_test/i18n_excluded_files.txt*
+canary_test/i18n_excluded_npcs.txt
+canary_test/i18n_manual_review.txt
+canary_test/agent_chat.txt
+canary_test/new_ignored_files.txt
+canary_test/ignored_files.txt
+canary_test/missing_de.csv
+
+# Analysis/conversation docs (local only)
+canary_test/rozmowa_nad_workerem*.md*
+canary_test/ANALIZA_*.md
+canary_test/DOKLADNE_*.md
+canary_test/SUMMARY_*.md
+canary_test/i18n_changes_documentation.md
+canary_test/i18n_full_documentation.md
+
+# Build artifacts
+budowa_silnik/
+iwyu/
+include-what-you-use/

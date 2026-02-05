@@ -72,11 +72,11 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Feel my claws, softskin.", yell = false },
-	{ text = "There is a stone in your shoe!", yell = false },
-	{ text = "Stone sweet stone.", yell = false },
-	{ text = "Harrrr harrrr!", yell = false },
-	{ text = "Chhhhhrrrrk!", yell = false },
+	{ text = "Feel my claws, softskin.", yell = false , i18nKey = "monster.gargoyle.voice_1"},
+	{ text = "There is a stone in your shoe!", yell = false , i18nKey = "monster.gargoyle.voice_2"},
+	{ text = "Stone sweet stone.", yell = false , i18nKey = "monster.gargoyle.voice_3"},
+	{ text = "Harrrr harrrr!", yell = false , i18nKey = "monster.gargoyle.voice_4"},
+	{ text = "Chhhhhrrrrk!", yell = false , i18nKey = "monster.gargoyle.voice_5"},
 }
 
 monster.loot = {

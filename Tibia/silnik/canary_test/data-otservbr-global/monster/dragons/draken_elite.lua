@@ -70,8 +70,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "For ze emperor!", yell = false },
-	{ text = "You will die zhouzandz deazhz!", yell = false },
+	{ text = "For ze emperor!", yell = false , i18nKey = "monster.draken_elite.voice_1"},
+	{ text = "You will die zhouzandz deazhz!", yell = false , i18nKey = "monster.draken_elite.voice_2"},
 }
 
 monster.loot = {

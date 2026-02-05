@@ -72,11 +72,11 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Tha'shi Ab'Dendriel!", yell = false },
-	{ text = "Evicor guide my arrow!", yell = false },
-	{ text = "Your existence will end here!", yell = false },
-	{ text = "Feel the sting of my arrows!", yell = false },
-	{ text = "Thy blood will quench the soil's thirst!", yell = false },
+	{ text = "Tha'shi Ab'Dendriel!", yell = false , i18nKey = "monster.elf_scout.voice_1"},
+	{ text = "Evicor guide my arrow!", yell = false , i18nKey = "monster.elf_scout.voice_2"},
+	{ text = "Your existence will end here!", yell = false , i18nKey = "monster.elf_scout.voice_3"},
+	{ text = "Feel the sting of my arrows!", yell = false , i18nKey = "monster.elf_scout.voice_4"},
+	{ text = "Thy blood will quench the soil's thirst!", yell = false , i18nKey = "monster.elf_scout.voice_5"},
 }
 
 monster.loot = {

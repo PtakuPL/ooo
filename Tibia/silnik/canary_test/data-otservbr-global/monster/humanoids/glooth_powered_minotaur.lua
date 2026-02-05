@@ -57,7 +57,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "POOOWEEER!", yell = true },
+	{ text = "POOOWEEER!", yell = true , i18nKey = "monster.glooth_powered_minotaur.voice_1"},
 }
 
 monster.loot = {}

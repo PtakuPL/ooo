@@ -59,8 +59,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "SHWAARR!", yell = false },
-	{ text = "SHWAARP!", yell = false },
+	{ text = "SHWAARR!", yell = false , i18nKey = "monster.elder_bloodjaw.voice_1"},
+	{ text = "SHWAARP!", yell = false , i18nKey = "monster.elder_bloodjaw.voice_2"},
 }
 
 monster.loot = {}

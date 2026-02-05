@@ -73,9 +73,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "You're so little!", yell = false },
-	{ text = "Human flesh -  delicious!", yell = false },
-	{ text = "Crush the intruders!", yell = false },
+	{ text = "You're so little!", yell = false , i18nKey = "monster.behemoth.voice_4"},
+	{ text = "Human flesh -  delicious!", yell = false , i18nKey = "monster.behemoth.voice_5"},
+	{ text = "Crush the intruders!", yell = false , i18nKey = "monster.behemoth.voice_6"},
 }
 
 monster.loot = {

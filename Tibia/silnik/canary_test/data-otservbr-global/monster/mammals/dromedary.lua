@@ -71,8 +71,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Snort", yell = false },
-	{ text = "Grunt!", yell = false },
+	{ text = "Snort", yell = false , i18nKey = "monster.dromedary.voice_1"},
+	{ text = "Grunt!", yell = false , i18nKey = "monster.dromedary.voice_2"},
 }
 
 monster.loot = {

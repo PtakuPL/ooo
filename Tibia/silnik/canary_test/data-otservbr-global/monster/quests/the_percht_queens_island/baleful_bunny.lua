@@ -71,7 +71,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Borborygmus... borborygmus...", yell = false },
+	{ text = "Borborygmus... borborygmus...", yell = false , i18nKey = "monster.baleful_bunny.voice_1"},
 }
 
 monster.loot = {

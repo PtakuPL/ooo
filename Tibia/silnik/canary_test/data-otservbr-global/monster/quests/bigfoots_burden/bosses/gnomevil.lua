@@ -69,10 +69,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I'm feeling grrrreat!", yell = false },
-	{ text = "I've seen the light! And it was all engulfing fire!", yell = false },
-	{ text = "No more Mr. Nicegnome!", yell = false },
-	{ text = "Taste the power of the dark side!", yell = false },
+	{ text = "I'm feeling grrrreat!", yell = false , i18nKey = "monster.gnomevil.voice_1"},
+	{ text = "I've seen the light! And it was all engulfing fire!", yell = false , i18nKey = "monster.gnomevil.voice_2"},
+	{ text = "No more Mr. Nicegnome!", yell = false , i18nKey = "monster.gnomevil.voice_3"},
+	{ text = "Taste the power of the dark side!", yell = false , i18nKey = "monster.gnomevil.voice_4"},
 }
 
 monster.loot = {

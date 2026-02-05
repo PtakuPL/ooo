@@ -72,8 +72,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Ruan Wihmpy!", yell = false },
-	{ text = "Kaplar!", yell = false },
+	{ text = "Ruan Wihmpy!", yell = false , i18nKey = "monster.minotaur_archer.voice_1"},
+	{ text = "Kaplar!", yell = false , i18nKey = "monster.minotaur_archer.voice_2"},
 }
 
 monster.loot = {

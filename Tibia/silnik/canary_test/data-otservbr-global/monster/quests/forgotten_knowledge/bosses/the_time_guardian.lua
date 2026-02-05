@@ -69,7 +69,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "This place is sacred!", yell = false },
+	{ text = "This place is sacred!", yell = false , i18nKey = "monster.the_time_guardian.voice_1"},
 }
 
 monster.loot = {

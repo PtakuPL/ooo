@@ -71,10 +71,10 @@ monster.summon = {}
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "NO ONE WILL ESCAPE ME!", yell = true },
-	{ text = "I'LL KEEP THE ORDER UP!", yell = true },
-	{ text = "I've beaten tougher demons then you even know!", yell = true },
-	{ text = "You puny humans will be my snacks!", yell = true },
+	{ text = "NO ONE WILL ESCAPE ME!", yell = true , i18nKey = "monster.gaz'haragoth.voice_1"},
+	{ text = "I'LL KEEP THE ORDER UP!", yell = true , i18nKey = "monster.gaz'haragoth.voice_2"},
+	{ text = "I've beaten tougher demons then you even know!", yell = true , i18nKey = "monster.gaz'haragoth.voice_3"},
+	{ text = "You puny humans will be my snacks!", yell = true , i18nKey = "monster.gaz'haragoth.voice_4"},
 }
 
 monster.loot = {

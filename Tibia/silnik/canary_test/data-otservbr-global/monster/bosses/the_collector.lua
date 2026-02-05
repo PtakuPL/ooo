@@ -60,7 +60,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Leave as long as you can.", yell = false },
+	{ text = "Leave as long as you can.", yell = false , i18nKey = "monster.the_collector.voice_1"},
 }
 
 monster.loot = {}

@@ -1,10 +1,6 @@
 local ragingMage2 = CreatureEvent("RagingMage2")
 function ragingMage2.onDeath(creature, corpse, killer, mostDamageKiller, unjustified, mostDamageUnjustified)
-	broadcastMessage(
-		"The remains of the Raging Mage are scattered on the floor of his Tower. \z
-	The dimensional portal quakes.",
-		MESSAGE_EVENT_ADVANCE
-	)
+	Game.broadcastLocalizedMessage("quests.creaturescripts_raging_mage_2.broadcast_2", MESSAGE_EVENT_ADVANCE)
 	creature:sayLocalized("scripts.creaturescripts_raging_mage_2.say_1", TALKTYPE_MONSTER_SAY, 0, 0, Position(33142, 31529, 2))
 	addEvent(function()
 		local tilePos = Tile(Position(33143, 31527, 2)):getItemById(10840)
@@ -12,11 +8,7 @@ function ragingMage2.onDeath(creature, corpse, killer, mostDamageKiller, unjusti
 			return true
 		end
 		tilePos:remove()
-		broadcastMessage(
-			"With a great bang the dimensional portal in Zao collapsed and \z
-		with it the connection to the other dimension shattered.",
-			MESSAGE_EVENT_ADVANCE
-		)
+		Game.broadcastLocalizedMessage("quests.creaturescripts_raging_mage_2.broadcast_1", MESSAGE_EVENT_ADVANCE)
 	end, 5 * 60 * 1000)
 	mostDamageKiller:setStorageValue(673004, 0)
 	Game.setStorageValue(775559, 0)

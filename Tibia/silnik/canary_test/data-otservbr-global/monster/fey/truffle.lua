@@ -71,9 +71,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "What a beautiful day in Candia.", yell = false },
-	{ text = "Time for a bath in the Hot Milk Springs, I guess.", yell = false },
-	{ text = "What should I bake next?", yell = false },
+	{ text = "What a beautiful day in Candia.", yell = false , i18nKey = "monster.truffle.voice_1"},
+	{ text = "Time for a bath in the Hot Milk Springs, I guess.", yell = false , i18nKey = "monster.truffle.voice_2"},
+	{ text = "What should I bake next?", yell = false , i18nKey = "monster.truffle.voice_3"},
 }
 
 monster.loot = {}

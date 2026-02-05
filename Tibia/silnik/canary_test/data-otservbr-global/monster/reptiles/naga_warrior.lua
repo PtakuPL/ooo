@@ -70,7 +70,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Fear the wrath of the wronged!", yell = false },
+	{ text = "Fear the wrath of the wronged!", yell = false , i18nKey = "monster.naga_warrior.voice_1"},
 }
 
 monster.loot = {

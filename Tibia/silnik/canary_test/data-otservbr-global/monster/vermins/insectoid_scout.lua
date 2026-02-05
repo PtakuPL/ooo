@@ -71,8 +71,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Klk! Klk!", yell = false },
-	{ text = "Chrrr! Chrr!", yell = false },
+	{ text = "Klk! Klk!", yell = false , i18nKey = "monster.insectoid_scout.voice_1"},
+	{ text = "Chrrr! Chrr!", yell = false , i18nKey = "monster.insectoid_scout.voice_2"},
 }
 
 monster.loot = {

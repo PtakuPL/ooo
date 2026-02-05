@@ -74,8 +74,8 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I ... will ... get ... you ... all!", yell = false },
-	{ text = "I ... will ... rise ... again!", yell = false },
+	{ text = "I ... will ... get ... you ... all!", yell = false , i18nKey = "monster.earl_osam.voice_1"},
+	{ text = "I ... will ... rise ... again!", yell = false , i18nKey = "monster.earl_osam.voice_2"},
 }
 
 monster.loot = {

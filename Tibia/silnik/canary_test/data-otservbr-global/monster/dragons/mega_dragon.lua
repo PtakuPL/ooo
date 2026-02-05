@@ -70,9 +70,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Just Look at me!", yell = false },
-	{ text = "I'll stare you down", yell = false },
-	{ text = "Let me have a look", yell = false },
+	{ text = "Just Look at me!", yell = false , i18nKey = "monster.mega_dragon.voice_1"},
+	{ text = "I'll stare you down", yell = false , i18nKey = "monster.mega_dragon.voice_2"},
+	{ text = "Let me have a look", yell = false , i18nKey = "monster.mega_dragon.voice_3"},
 }
 
 monster.loot = {

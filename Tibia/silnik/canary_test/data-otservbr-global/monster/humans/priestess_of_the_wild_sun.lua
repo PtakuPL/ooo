@@ -77,9 +77,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Fafnar will burn you!", yell = false },
-	{ text = "Fear the Wild Sun!", yell = false },
-	{ text = "There is only one true sun!", yell = false },
+	{ text = "Fafnar will burn you!", yell = false , i18nKey = "monster.priestess_of_the_wild_sun.voice_1"},
+	{ text = "Fear the Wild Sun!", yell = false , i18nKey = "monster.priestess_of_the_wild_sun.voice_2"},
+	{ text = "There is only one true sun!", yell = false , i18nKey = "monster.priestess_of_the_wild_sun.voice_3"},
 }
 
 monster.loot = {

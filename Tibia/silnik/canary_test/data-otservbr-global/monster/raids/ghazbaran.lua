@@ -72,10 +72,10 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "COME AND GIVE ME SOME AMUSEMENT", yell = true },
-	{ text = "IS THAT THE BEST YOU HAVE TO OFFER, TIBIANS?", yell = true },
-	{ text = "I AM GHAZBARAN OF THE TRIANGLE... AND I AM HERE TO CHALLENGE YOU ALL.", yell = true },
-	{ text = "FLAWLESS VICTORY!", yell = true },
+	{ text = "COME AND GIVE ME SOME AMUSEMENT", yell = true , i18nKey = "monster.ghazbaran.voice_1"},
+	{ text = "IS THAT THE BEST YOU HAVE TO OFFER, TIBIANS?", yell = true , i18nKey = "monster.ghazbaran.voice_2"},
+	{ text = "I AM GHAZBARAN OF THE TRIANGLE... AND I AM HERE TO CHALLENGE YOU ALL.", yell = true , i18nKey = "monster.ghazbaran.voice_3"},
+	{ text = "FLAWLESS VICTORY!", yell = true , i18nKey = "monster.ghazbaran.voice_4"},
 }
 
 monster.loot = {

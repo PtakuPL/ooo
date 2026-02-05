@@ -65,12 +65,12 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Cool down, will you?", yell = false },
-	{ text = "And stay cool.", yell = false },
-	{ text = "Your cold dead body will be a marvelous ice statue.", yell = false },
-	{ text = "Pay for your ignorance!", yell = false },
-	{ text = "Is this all you've got?", yell = false },
-	{ text = "Freeze!", yell = false },
+	{ text = "Cool down, will you?", yell = false , i18nKey = "monster.zushuka.voice_1"},
+	{ text = "And stay cool.", yell = false , i18nKey = "monster.zushuka.voice_2"},
+	{ text = "Your cold dead body will be a marvelous ice statue.", yell = false , i18nKey = "monster.zushuka.voice_3"},
+	{ text = "Pay for your ignorance!", yell = false , i18nKey = "monster.zushuka.voice_4"},
+	{ text = "Is this all you've got?", yell = false , i18nKey = "monster.zushuka.voice_5"},
+	{ text = "Freeze!", yell = false , i18nKey = "monster.zushuka.voice_6"},
 }
 
 monster.loot = {

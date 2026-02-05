@@ -63,7 +63,7 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "What are you... doing!", yell = false },
+	{ text = "What are you... doing!", yell = false , i18nKey = "monster.megasylvan_yselda.voice_1"},
 }
 
 monster.loot = {

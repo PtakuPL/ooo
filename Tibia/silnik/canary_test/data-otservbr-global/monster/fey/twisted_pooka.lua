@@ -73,9 +73,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "*sniff sniff* Mhmmm ... mortal flesh.", yell = false },
-	{ text = "Hoppel-di-hopp!", yell = false },
-	{ text = "I'll gnaw away your toes!", yell = false },
+	{ text = "*sniff sniff* Mhmmm ... mortal flesh.", yell = false , i18nKey = "monster.twisted_pooka.voice_1"},
+	{ text = "Hoppel-di-hopp!", yell = false , i18nKey = "monster.twisted_pooka.voice_2"},
+	{ text = "I'll gnaw away your toes!", yell = false , i18nKey = "monster.twisted_pooka.voice_3"},
 }
 
 monster.loot = {

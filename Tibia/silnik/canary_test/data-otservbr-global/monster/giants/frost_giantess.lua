@@ -72,11 +72,11 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Ymirs Mjalle!", yell = false },
-	{ text = "No run so much, must stay fat!", yell = false },
-	{ text = "Hï¿½rre Sjan Flan!", yell = false },
-	{ text = "Damned fast food.", yell = false },
-	{ text = "Come kiss the cook!", yell = false },
+	{ text = "Ymirs Mjalle!", yell = false , i18nKey = "monster.frost_giantess.voice_1"},
+	{ text = "No run so much, must stay fat!", yell = false , i18nKey = "monster.frost_giantess.voice_2"},
+	{ text = "Hï¿½rre Sjan Flan!", yell = false , i18nKey = "monster.frost_giantess.voice_3"},
+	{ text = "Damned fast food.", yell = false , i18nKey = "monster.frost_giantess.voice_4"},
+	{ text = "Come kiss the cook!", yell = false , i18nKey = "monster.frost_giantess.voice_5"},
 }
 
 monster.loot = {

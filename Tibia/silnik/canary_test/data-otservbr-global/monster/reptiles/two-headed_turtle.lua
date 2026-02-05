@@ -60,8 +60,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Krk! Krk!", yell = false },
-	{ text = "BONK!", yell = true },
+	{ text = "Krk! Krk!", yell = false , i18nKey = "monster.two_headed_turtle.voice_1"},
+	{ text = "BONK!", yell = true , i18nKey = "monster.two_headed_turtle.voice_2"},
 }
 
 monster.loot = {

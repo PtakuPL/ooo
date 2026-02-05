@@ -67,9 +67,9 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "KRAK ORC DEMON", yell = false },
-	{ text = "???!!!", yell = false },
-	{ text = "Grak brrretz gulu.", yell = false },
+	{ text = "KRAK ORC DEMON", yell = false , i18nKey = "monster.kraknaknork.voice_1"},
+	{ text = "???!!!", yell = false , i18nKey = "monster.kraknaknork.voice_2"},
+	{ text = "Grak brrretz gulu.", yell = false , i18nKey = "monster.kraknaknork.voice_3"},
 }
 
 monster.loot = {

@@ -73,8 +73,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Weakness must be culled!", yell = false },
-	{ text = "Power is miiiiine!", yell = false },
+	{ text = "Weakness must be culled!", yell = false , i18nKey = "monster.vexclaw.voice_1"},
+	{ text = "Power is miiiiine!", yell = false , i18nKey = "monster.vexclaw.voice_2"},
 }
 
 monster.loot = {

@@ -70,8 +70,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Shrrrr", yell = false },
-	{ text = "Zuerk Pachak!", yell = false },
+	{ text = "Shrrrr", yell = false , i18nKey = "monster.quara_mantassin.voice_1"},
+	{ text = "Zuerk Pachak!", yell = false , i18nKey = "monster.quara_mantassin.voice_2"},
 }
 
 monster.loot = {

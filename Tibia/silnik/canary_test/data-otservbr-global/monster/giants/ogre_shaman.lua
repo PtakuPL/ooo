@@ -81,10 +81,10 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Stay here, soul food!", yell = false },
-	{ text = "You more delicate than clomp!", yell = false },
-	{ text = "The spirits hunger!", yell = false },
-	{ text = "A sacrifice for Great Hunger!", yell = false },
+	{ text = "Stay here, soul food!", yell = false , i18nKey = "monster.ogre_shaman.voice_1"},
+	{ text = "You more delicate than clomp!", yell = false , i18nKey = "monster.ogre_shaman.voice_2"},
+	{ text = "The spirits hunger!", yell = false , i18nKey = "monster.ogre_shaman.voice_3"},
+	{ text = "A sacrifice for Great Hunger!", yell = false , i18nKey = "monster.ogre_shaman.voice_4"},
 }
 
 monster.loot = {

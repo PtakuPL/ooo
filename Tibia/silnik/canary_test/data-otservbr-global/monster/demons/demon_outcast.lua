@@ -80,10 +80,10 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Back in the evil business!", yell = false },
-	{ text = "This prison break will have casualties!", yell = false },
-	{ text = "At last someone to hurt", yell = false },
-	{ text = "No one will imprison me again!", yell = false },
+	{ text = "Back in the evil business!", yell = false , i18nKey = "monster.demon_outcast.voice_1"},
+	{ text = "This prison break will have casualties!", yell = false , i18nKey = "monster.demon_outcast.voice_2"},
+	{ text = "At last someone to hurt", yell = false , i18nKey = "monster.demon_outcast.voice_3"},
+	{ text = "No one will imprison me again!", yell = false , i18nKey = "monster.demon_outcast.voice_4"},
 }
 
 monster.loot = {

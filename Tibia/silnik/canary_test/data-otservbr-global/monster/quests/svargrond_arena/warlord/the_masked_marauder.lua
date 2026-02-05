@@ -60,10 +60,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Didn't you leave your house door open?", yell = false },
-	{ text = "Oops, your shoelaces are open!", yell = false },
-	{ text = "Look! It's Ferumbras behind you!", yell = false },
-	{ text = "Stop! I give up!", yell = false },
+	{ text = "Didn't you leave your house door open?", yell = false , i18nKey = "monster.the_masked_marauder.voice_1"},
+	{ text = "Oops, your shoelaces are open!", yell = false , i18nKey = "monster.the_masked_marauder.voice_2"},
+	{ text = "Look! It's Ferumbras behind you!", yell = false , i18nKey = "monster.the_masked_marauder.voice_3"},
+	{ text = "Stop! I give up!", yell = false , i18nKey = "monster.the_masked_marauder.voice_4"},
 }
 
 monster.loot = {}

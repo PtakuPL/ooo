@@ -71,8 +71,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Feel the power of the Mooh'Tah!", yell = false },
-	{ text = "Ommm!", yell = false },
+	{ text = "Feel the power of the Mooh'Tah!", yell = false , i18nKey = "monster.mooh'tah_warrior.voice_1"},
+	{ text = "Ommm!", yell = false , i18nKey = "monster.mooh'tah_warrior.voice_2"},
 }
 
 monster.loot = {

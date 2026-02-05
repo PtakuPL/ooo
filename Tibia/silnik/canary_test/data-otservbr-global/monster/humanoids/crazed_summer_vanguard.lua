@@ -73,8 +73,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I see colours, all colours! Or are these just illusions?", yell = false },
-	{ text = "La di da di doo!!", yell = false },
+	{ text = "I see colours, all colours! Or are these just illusions?", yell = false , i18nKey = "monster.crazed_summer_vanguard.voice_1"},
+	{ text = "La di da di doo!!", yell = false , i18nKey = "monster.crazed_summer_vanguard.voice_2"},
 }
 
 monster.loot = {

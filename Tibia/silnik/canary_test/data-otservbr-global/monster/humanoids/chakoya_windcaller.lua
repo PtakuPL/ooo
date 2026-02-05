@@ -70,10 +70,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Siqsiq ji jusipa!", yell = false },
-	{ text = "Jagura taluka taqua!", yell = false },
-	{ text = "Mupi! Si siyoqua jinuma!", yell = false },
-	{ text = "Quatu nguraka!", yell = false },
+	{ text = "Siqsiq ji jusipa!", yell = false , i18nKey = "monster.chakoya_windcaller.voice_1"},
+	{ text = "Jagura taluka taqua!", yell = false , i18nKey = "monster.chakoya_windcaller.voice_2"},
+	{ text = "Mupi! Si siyoqua jinuma!", yell = false , i18nKey = "monster.chakoya_windcaller.voice_3"},
+	{ text = "Quatu nguraka!", yell = false , i18nKey = "monster.chakoya_windcaller.voice_4"},
 }
 
 monster.loot = {

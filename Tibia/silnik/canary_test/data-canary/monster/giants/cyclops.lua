@@ -73,11 +73,11 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Il lorstok human!", yell = false },
-	{ text = "Toks utat.", yell = false },
-	{ text = "Human, uh whil dyh!", yell = false },
-	{ text = "Youh ah trak!", yell = false },
-	{ text = "Let da mashing begin!", yell = false },
+	{ text = "Il lorstok human!", yell = false , i18nKey = "monster.cyclops.voice_6"},
+	{ text = "Toks utat.", yell = false , i18nKey = "monster.cyclops.voice_7"},
+	{ text = "Human, uh whil dyh!", yell = false , i18nKey = "monster.cyclops.voice_8"},
+	{ text = "Youh ah trak!", yell = false , i18nKey = "monster.cyclops.voice_9"},
+	{ text = "Let da mashing begin!", yell = false , i18nKey = "monster.cyclops.voice_10"},
 }
 
 monster.loot = {

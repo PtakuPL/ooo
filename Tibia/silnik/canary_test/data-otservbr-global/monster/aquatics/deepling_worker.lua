@@ -76,7 +76,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Qjell afar gou jey!", yell = false },
+	{ text = "Qjell afar gou jey!", yell = false , i18nKey = "monster.deepling_worker.voice_1"},
 }
 
 monster.loot = {

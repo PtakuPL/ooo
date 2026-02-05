@@ -71,9 +71,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Hfffff!", yell = false },
-	{ text = "Rrrrrr!", yell = false },
-	{ text = "Graaawwwr!", yell = false },
+	{ text = "Hfffff!", yell = false , i18nKey = "monster.thornfire_wolf.voice_1"},
+	{ text = "Rrrrrr!", yell = false , i18nKey = "monster.thornfire_wolf.voice_2"},
+	{ text = "Graaawwwr!", yell = false , i18nKey = "monster.thornfire_wolf.voice_3"},
 }
 
 monster.loot = {

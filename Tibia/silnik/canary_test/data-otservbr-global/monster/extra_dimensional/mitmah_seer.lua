@@ -74,9 +74,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "This dimension reeks!!", yell = false },
-	{ text = "Pamphlets at the exit only! Only one per person!", yell = false },
-	{ text = "This is the end of you!", yell = false },
+	{ text = "This dimension reeks!!", yell = false , i18nKey = "monster.mitmah_seer.voice_1"},
+	{ text = "Pamphlets at the exit only! Only one per person!", yell = false , i18nKey = "monster.mitmah_seer.voice_2"},
+	{ text = "This is the end of you!", yell = false , i18nKey = "monster.mitmah_seer.voice_3"},
 }
 
 monster.loot = {

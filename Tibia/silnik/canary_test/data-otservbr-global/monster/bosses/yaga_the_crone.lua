@@ -65,9 +65,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Where did I park my hut?", yell = false },
-	{ text = "You will taste so sweet!", yell = false },
-	{ text = "Hexipooh, bewitched are you!", yell = false },
+	{ text = "Where did I park my hut?", yell = false , i18nKey = "monster.yaga_the_crone.voice_1"},
+	{ text = "You will taste so sweet!", yell = false , i18nKey = "monster.yaga_the_crone.voice_2"},
+	{ text = "Hexipooh, bewitched are you!", yell = false , i18nKey = "monster.yaga_the_crone.voice_3"},
 }
 
 monster.loot = {

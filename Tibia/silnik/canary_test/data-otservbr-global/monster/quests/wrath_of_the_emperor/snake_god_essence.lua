@@ -64,8 +64,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "AHHH ZHE POWER...", yell = true },
-	{ text = "ZHE TIME OF ZHE SNAKE HAZ COME!", yell = true },
+	{ text = "AHHH ZHE POWER...", yell = true , i18nKey = "monster.snake_god_essence.voice_1"},
+	{ text = "ZHE TIME OF ZHE SNAKE HAZ COME!", yell = true , i18nKey = "monster.snake_god_essence.voice_2"},
 }
 
 monster.loot = {}

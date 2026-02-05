@@ -65,8 +65,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Join my crew ... forever.", yell = false },
-	{ text = "You are lost!", yell = false },
+	{ text = "Join my crew ... forever.", yell = false , i18nKey = "monster.captain_jones.voice_1"},
+	{ text = "You are lost!", yell = false , i18nKey = "monster.captain_jones.voice_2"},
 }
 
 monster.loot = {

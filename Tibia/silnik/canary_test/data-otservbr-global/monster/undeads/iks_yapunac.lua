@@ -70,9 +70,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "MIT-MAH!", yell = false },
-	{ text = "Grrrmh...", yell = false },
-	{ text = "CHAHAAAR!!!", yell = false },
+	{ text = "MIT-MAH!", yell = false , i18nKey = "monster.iks_yapunac.voice_1"},
+	{ text = "Grrrmh...", yell = false , i18nKey = "monster.iks_yapunac.voice_2"},
+	{ text = "CHAHAAAR!!!", yell = false , i18nKey = "monster.iks_yapunac.voice_3"},
 }
 
 monster.loot = {

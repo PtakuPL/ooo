@@ -60,15 +60,15 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "DIE!", yell = true },
-	{ text = "All VOCATIONS must DIE!", yell = false },
-	{ text = "GET OVER HERE!", yell = true },
-	{ text = "CRUSH THEM ALL!", yell = true },
-	{ text = "VARIPHOR WILL RULE!", yell = true },
-	{ text = "They used you fools to escape and they left ME behind!!??", yell = false },
-	{ text = "NOT EVEN AEONS OF IMPRISONMENT WILL STOP ME!", yell = true },
-	{ text = "EVEN WITH ALL THAT TIME IN THE PRISON THAT WEAKENED ME, YOU ARE NO MATCH TO ME!", yell = true },
-	{ text = "THEY WILL ALL PAY!", yell = true },
+	{ text = "DIE!", yell = true , i18nKey = "monster.prince_drazzak.voice_1"},
+	{ text = "All VOCATIONS must DIE!", yell = false , i18nKey = "monster.prince_drazzak.voice_2"},
+	{ text = "GET OVER HERE!", yell = true , i18nKey = "monster.prince_drazzak.voice_3"},
+	{ text = "CRUSH THEM ALL!", yell = true , i18nKey = "monster.prince_drazzak.voice_4"},
+	{ text = "VARIPHOR WILL RULE!", yell = true , i18nKey = "monster.prince_drazzak.voice_5"},
+	{ text = "They used you fools to escape and they left ME behind!!??", yell = false , i18nKey = "monster.prince_drazzak.voice_6"},
+	{ text = "NOT EVEN AEONS OF IMPRISONMENT WILL STOP ME!", yell = true , i18nKey = "monster.prince_drazzak.voice_7"},
+	{ text = "EVEN WITH ALL THAT TIME IN THE PRISON THAT WEAKENED ME, YOU ARE NO MATCH TO ME!", yell = true , i18nKey = "monster.prince_drazzak.voice_8"},
+	{ text = "THEY WILL ALL PAY!", yell = true , i18nKey = "monster.prince_drazzak.voice_9"},
 }
 
 monster.loot = {

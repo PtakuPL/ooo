@@ -70,13 +70,13 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Hehehe!", yell = false },
-	{ text = "Raahhh!", yell = false },
-	{ text = "You are one of THEM! Die!", yell = false },
-	{ text = "Wanna buy roses??", yell = false },
-	{ text = "Make it stop!", yell = false },
-	{ text = "They're coming! They're coming!", yell = false },
-	{ text = "Gimme money!", yell = false },
+	{ text = "Hehehe!", yell = false , i18nKey = "monster.crazed_beggar.voice_1"},
+	{ text = "Raahhh!", yell = false , i18nKey = "monster.crazed_beggar.voice_2"},
+	{ text = "You are one of THEM! Die!", yell = false , i18nKey = "monster.crazed_beggar.voice_3"},
+	{ text = "Wanna buy roses??", yell = false , i18nKey = "monster.crazed_beggar.voice_4"},
+	{ text = "Make it stop!", yell = false , i18nKey = "monster.crazed_beggar.voice_5"},
+	{ text = "They're coming! They're coming!", yell = false , i18nKey = "monster.crazed_beggar.voice_6"},
+	{ text = "Gimme money!", yell = false , i18nKey = "monster.crazed_beggar.voice_7"},
 }
 
 monster.loot = {

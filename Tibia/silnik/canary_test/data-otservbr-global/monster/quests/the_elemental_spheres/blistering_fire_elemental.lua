@@ -58,7 +58,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "FCHHHRRR", yell = true },
+	{ text = "FCHHHRRR", yell = true , i18nKey = "monster.blistering_fire_elemental.voice_1"},
 }
 
 monster.loot = {

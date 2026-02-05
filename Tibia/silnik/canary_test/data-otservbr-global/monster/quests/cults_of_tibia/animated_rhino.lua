@@ -60,8 +60,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Snarl!", yell = false },
-	{ text = "SNIFF!", yell = false },
+	{ text = "Snarl!", yell = false , i18nKey = "monster.animated_rhino.voice_1"},
+	{ text = "SNIFF!", yell = false , i18nKey = "monster.animated_rhino.voice_2"},
 }
 
 monster.loot = {

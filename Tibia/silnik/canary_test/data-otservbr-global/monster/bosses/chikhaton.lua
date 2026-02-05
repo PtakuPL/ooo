@@ -65,7 +65,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Vae Victis.", yell = false },
+	{ text = "Vae Victis.", yell = false , i18nKey = "monster.chikhaton.voice_1"},
 }
 
 monster.loot = {}

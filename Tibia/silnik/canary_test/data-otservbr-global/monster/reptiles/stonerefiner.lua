@@ -74,8 +74,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "knak knak knak", yell = false },
-	{ text = "nomnomnom", yell = false },
+	{ text = "knak knak knak", yell = false , i18nKey = "monster.stonerefiner.voice_1"},
+	{ text = "nomnomnom", yell = false , i18nKey = "monster.stonerefiner.voice_2"},
 }
 
 monster.loot = {

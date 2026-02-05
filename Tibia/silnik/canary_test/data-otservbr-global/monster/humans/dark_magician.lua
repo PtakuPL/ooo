@@ -71,10 +71,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Feel the power of my runes!", yell = false },
-	{ text = "Killing you gets expensive.", yell = false },
-	{ text = "My secrets are mine alone!", yell = false },
-	{ text = "Stand still!", yell = false },
+	{ text = "Feel the power of my runes!", yell = false , i18nKey = "monster.dark_magician.voice_1"},
+	{ text = "Killing you gets expensive.", yell = false , i18nKey = "monster.dark_magician.voice_2"},
+	{ text = "My secrets are mine alone!", yell = false , i18nKey = "monster.dark_magician.voice_3"},
+	{ text = "Stand still!", yell = false , i18nKey = "monster.dark_magician.voice_4"},
 }
 
 monster.loot = {

@@ -73,10 +73,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "You will make sssuch a fine ssstatue!", yell = false },
-	{ text = "There isss no chhhanccce of essscape", yell = false },
-	{ text = "Are you tired or why are you moving thhat ssslow <chuckle>", yell = false },
-	{ text = "Jussst look at me!", yell = false },
+	{ text = "You will make sssuch a fine ssstatue!", yell = false , i18nKey = "monster.medusa.voice_1"},
+	{ text = "There isss no chhhanccce of essscape", yell = false , i18nKey = "monster.medusa.voice_2"},
+	{ text = "Are you tired or why are you moving thhat ssslow <chuckle>", yell = false , i18nKey = "monster.medusa.voice_3"},
+	{ text = "Jussst look at me!", yell = false , i18nKey = "monster.medusa.voice_4"},
 }
 
 monster.loot = {

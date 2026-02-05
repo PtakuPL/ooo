@@ -71,12 +71,12 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Vengeance!", yell = false },
-	{ text = "You will make a fine trophy.", yell = false },
-	{ text = "Come and fight me, cowards!", yell = false },
-	{ text = "I am the supreme warrior!", yell = false },
-	{ text = "Let me hear the music of battle.", yell = false },
-	{ text = "Another one to bite the dust!", yell = false },
+	{ text = "Vengeance!", yell = false , i18nKey = "monster.morguthis.voice_1"},
+	{ text = "You will make a fine trophy.", yell = false , i18nKey = "monster.morguthis.voice_2"},
+	{ text = "Come and fight me, cowards!", yell = false , i18nKey = "monster.morguthis.voice_3"},
+	{ text = "I am the supreme warrior!", yell = false , i18nKey = "monster.morguthis.voice_4"},
+	{ text = "Let me hear the music of battle.", yell = false , i18nKey = "monster.morguthis.voice_5"},
+	{ text = "Another one to bite the dust!", yell = false , i18nKey = "monster.morguthis.voice_6"},
 }
 
 monster.loot = {

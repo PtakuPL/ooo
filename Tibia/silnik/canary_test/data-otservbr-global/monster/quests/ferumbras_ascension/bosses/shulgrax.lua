@@ -69,9 +69,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "DAMMMMNNNNAAATIONN!", yell = false },
-	{ text = "I WILL FEAST ON YOUR SOUL!", yell = true },
-	{ text = "YOU ARE ALL DAMNED!", yell = true },
+	{ text = "DAMMMMNNNNAAATIONN!", yell = false , i18nKey = "monster.shulgrax.voice_1"},
+	{ text = "I WILL FEAST ON YOUR SOUL!", yell = true , i18nKey = "monster.shulgrax.voice_2"},
+	{ text = "YOU ARE ALL DAMNED!", yell = true , i18nKey = "monster.shulgrax.voice_3"},
 }
 
 monster.loot = {

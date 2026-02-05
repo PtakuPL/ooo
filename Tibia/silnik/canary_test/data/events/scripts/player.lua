@@ -382,7 +382,7 @@ function Player:onItemMoved(item, count, fromPosition, toPosition, fromCylinder,
 		-- The Secret Library Quest
 		if toPosition == Position(32460, 32928, 7) and item.itemid == 3578 then
 			toPosition:sendMagicEffect(CONST_ME_HEARTS)
-			self:say("You feed the turtle, now you may pass.", TALKTYPE_MONSTER_SAY)
+			self:sayLocalized("event.player.say_1", TALKTYPE_MONSTER_SAY)
 			Game.setStorageValue(Storage.Quest.U11_80.TheSecretLibrary.SmallIslands.Turtle, os.time() + 10 * 60)
 			item:remove(1)
 		end
@@ -451,13 +451,13 @@ end
 function Player:onReportRuleViolation(targetName, reportType, reportReason, comment, translation)
 	local name = self:getName()
 	if hasPendingReport(self:getGuid(), targetName, reportType) then
-		self:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Your report is being processed.")
+		self:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "event.player.msg_5")
 		return
 	end
 
 	local file = io.open(string.format("%s/reports/players/%s-%s-%d.txt", CORE_DIRECTORY, name, targetName, reportType), "a")
 	if not file then
-		self:sendTextMessage(MESSAGE_EVENT_ADVANCE, "There was an error when processing your report, please contact a gamemaster.")
+		self:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "event.player.msg_4")
 		return
 	end
 
@@ -473,15 +473,7 @@ function Player:onReportRuleViolation(targetName, reportType, reportReason, comm
 	end
 	io.write("------------------------------\n")
 	io.close(file)
-	self:sendTextMessage(
-		MESSAGE_EVENT_ADVANCE,
-		string.format(
-			"Thank you for reporting %s. Your report \z
-	will be processed by %s team as soon as possible.",
-			targetName,
-			configManager.getString(configKeys.SERVER_NAME)
-		)
-	)
+	self:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "event.player.msg_3", {targetName, configManager.getString(configKeys.SERVER_NAME)})
 	return
 end
 
@@ -491,7 +483,7 @@ function Player:onReportBug(message, position, category)
 	local file = io.open(string.format("%s/reports/bugs/%s/report.txt", CORE_DIRECTORY, name), "a")
 
 	if not file then
-		self:sendTextMessage(MESSAGE_EVENT_ADVANCE, "There was an error when processing your report, please contact a gamemaster.")
+		self:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "event.player.msg_2")
 		return true
 	end
 
@@ -678,7 +670,7 @@ function Player:onChangeZone(zone)
 				end
 			else
 				if event then
-					self:sendTextMessage(MESSAGE_FAILURE, "You are no longer refilling stamina, since you left a regeneration zone.")
+					self:sendLocalizedTextMessage(MESSAGE_FAILURE, "event.player.msg_1")
 					stopEvent(event)
 					staminaBonus.eventsPz[self:getId()] = nil
 				end

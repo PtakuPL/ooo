@@ -73,9 +73,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Repent Heretic!", yell = false },
-	{ text = "A prayer to the almighty one!", yell = false },
-	{ text = "I will punish the sinners!", yell = false },
+	{ text = "Repent Heretic!", yell = false , i18nKey = "monster.monk.voice_4"},
+	{ text = "A prayer to the almighty one!", yell = false , i18nKey = "monster.monk.voice_5"},
+	{ text = "I will punish the sinners!", yell = false , i18nKey = "monster.monk.voice_6"},
 }
 
 monster.loot = {

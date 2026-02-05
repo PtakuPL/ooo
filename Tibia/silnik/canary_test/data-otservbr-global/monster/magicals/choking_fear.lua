@@ -73,10 +73,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Ah, sweet air... don't you miss it?", yell = false },
-	{ text = "Murr tat muuza!", yell = false },
-	{ text = "kchh", yell = false },
-	{ text = "hsssss", yell = false },
+	{ text = "Ah, sweet air... don't you miss it?", yell = false , i18nKey = "monster.choking_fear.voice_1"},
+	{ text = "Murr tat muuza!", yell = false , i18nKey = "monster.choking_fear.voice_2"},
+	{ text = "kchh", yell = false , i18nKey = "monster.choking_fear.voice_3"},
+	{ text = "hsssss", yell = false , i18nKey = "monster.choking_fear.voice_4"},
 }
 
 monster.loot = {

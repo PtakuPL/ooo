@@ -71,9 +71,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I was baked just a few days ago. So much to discover here!", yell = false },
-	{ text = "Have you seen my truffle baker?", yell = false },
-	{ text = "I should visit the Candy Carnival.", yell = false },
+	{ text = "I was baked just a few days ago. So much to discover here!", yell = false , i18nKey = "monster.gingerbread_men.voice_1"},
+	{ text = "Have you seen my truffle baker?", yell = false , i18nKey = "monster.gingerbread_men.voice_2"},
+	{ text = "I should visit the Candy Carnival.", yell = false , i18nKey = "monster.gingerbread_men.voice_3"},
 }
 monster.loot = {}
 

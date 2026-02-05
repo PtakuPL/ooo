@@ -73,9 +73,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Our mine... leave us alone.", yell = false },
-	{ text = "Turn back...", yell = false },
-	{ text = "These mine is ours... you shall not pass.", yell = false },
+	{ text = "Our mine... leave us alone.", yell = false , i18nKey = "monster.undead_prospector.voice_1"},
+	{ text = "Turn back...", yell = false , i18nKey = "monster.undead_prospector.voice_2"},
+	{ text = "These mine is ours... you shall not pass.", yell = false , i18nKey = "monster.undead_prospector.voice_3"},
 }
 
 monster.loot = {

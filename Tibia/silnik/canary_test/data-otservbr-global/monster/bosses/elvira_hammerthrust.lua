@@ -64,11 +64,11 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Didn't think a dwarf girl could be so pretty and strong at the same time, did you?", yell = false },
-	{ text = "Hail no one except for me!", yell = false },
-	{ text = "You won't get this bag, I worked hard for this!", yell = false },
-	{ text = "Keep your hands off!", yell = false },
-	{ text = "How did you find us?!", yell = false },
+	{ text = "Didn't think a dwarf girl could be so pretty and strong at the same time, did you?", yell = false , i18nKey = "monster.elvira_hammerthrust.voice_1"},
+	{ text = "Hail no one except for me!", yell = false , i18nKey = "monster.elvira_hammerthrust.voice_2"},
+	{ text = "You won't get this bag, I worked hard for this!", yell = false , i18nKey = "monster.elvira_hammerthrust.voice_3"},
+	{ text = "Keep your hands off!", yell = false , i18nKey = "monster.elvira_hammerthrust.voice_4"},
+	{ text = "How did you find us?!", yell = false , i18nKey = "monster.elvira_hammerthrust.voice_5"},
 }
 
 monster.loot = {

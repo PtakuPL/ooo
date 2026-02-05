@@ -70,10 +70,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Did you know... there are over 200 bones in your body to break?", yell = false },
-	{ text = "Did you know... a lot of so-called trivia facts aren't even remotely true?", yell = false },
-	{ text = "Did you know... fear can be smelled?", yell = false },
-	{ text = "Did you know... you could die in 1.299.223 ways within the next ten seconds?", yell = false },
+	{ text = "Did you know... there are over 200 bones in your body to break?", yell = false , i18nKey = "monster.knowledge_elemental.voice_1"},
+	{ text = "Did you know... a lot of so-called trivia facts aren't even remotely true?", yell = false , i18nKey = "monster.knowledge_elemental.voice_2"},
+	{ text = "Did you know... fear can be smelled?", yell = false , i18nKey = "monster.knowledge_elemental.voice_3"},
+	{ text = "Did you know... you could die in 1.299.223 ways within the next ten seconds?", yell = false , i18nKey = "monster.knowledge_elemental.voice_4"},
 }
 
 monster.loot = {

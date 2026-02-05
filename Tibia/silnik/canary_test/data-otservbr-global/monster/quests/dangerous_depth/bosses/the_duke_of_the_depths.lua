@@ -69,8 +69,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "SzzzSzzz!", yell = false },
-	{ text = "Chhhhhh!", yell = false },
+	{ text = "SzzzSzzz!", yell = false , i18nKey = "monster.the_duke_of_the_depths.voice_1"},
+	{ text = "Chhhhhh!", yell = false , i18nKey = "monster.the_duke_of_the_depths.voice_2"},
 }
 
 monster.loot = {

@@ -71,12 +71,12 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "It's a kind of magic.", yell = false },
-	{ text = "Abrah Kadabrah!", yell = false },
-	{ text = "Nothing hidden in my wrappings.", yell = false },
-	{ text = "It's not a trick, it's Rahemos.", yell = false },
-	{ text = "Meet my friend from hell!", yell = false },
-	{ text = "I will make you believe in magic.", yell = false },
+	{ text = "It's a kind of magic.", yell = false , i18nKey = "monster.rahemos.voice_1"},
+	{ text = "Abrah Kadabrah!", yell = false , i18nKey = "monster.rahemos.voice_2"},
+	{ text = "Nothing hidden in my wrappings.", yell = false , i18nKey = "monster.rahemos.voice_3"},
+	{ text = "It's not a trick, it's Rahemos.", yell = false , i18nKey = "monster.rahemos.voice_4"},
+	{ text = "Meet my friend from hell!", yell = false , i18nKey = "monster.rahemos.voice_5"},
+	{ text = "I will make you believe in magic.", yell = false , i18nKey = "monster.rahemos.voice_6"},
 }
 
 monster.loot = {

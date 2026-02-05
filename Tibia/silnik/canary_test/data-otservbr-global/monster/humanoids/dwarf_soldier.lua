@@ -71,7 +71,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Hail Durin!", yell = false },
+	{ text = "Hail Durin!", yell = false , i18nKey = "monster.dwarf_soldier.voice_1"},
 }
 
 monster.loot = {

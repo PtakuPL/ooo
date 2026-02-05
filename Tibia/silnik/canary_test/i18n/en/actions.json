@@ -2,9 +2,15 @@
   "actions.arena_10x10.say_1": "Please wait for the fighters come out of the arena.",
   "actions.arena_10x10.say_2": "You need 10 players for enter in the arena.",
   "actions.arena_10x10.say_3": "You need 10 players for enter in the arena.",
+  "actions.arena_10x10.say_4": "You need 10 players for enter in the arena.",
+  "actions.arena_10x10.say_5": "You need 10 players for enter in the arena.",
+  "actions.arena_10x10.say_6": "Please wait for the fighters come out of the arena.",
   "actions.arena_2x2.say_1": "Please wait for the fighters come out of the arena.",
   "actions.arena_2x2.say_2": "You need 2 players for enter in the arena.",
   "actions.arena_2x2.say_3": "You need 2 players for enter in the arena.",
+  "actions.arena_2x2.say_4": "You need 2 players for enter in the arena.",
+  "actions.arena_2x2.say_5": "You need 2 players for enter in the arena.",
+  "actions.arena_2x2.say_6": "Please wait for the fighters come out of the arena.",
   "actions.construction_kits.msg_1": "You may construct this only inside a house.",
   "actions.construction_kits.msg_2": "Put the construction kit on the floor first.",
   "actions.fishing.msg_1": "You are not the owner.",
@@ -19,5 +25,6 @@
   "actions.quests.msg_1": "It is empty.",
   "actions.quests.msg_2": "It is empty.",
   "actions.random_items.say_1": "You found ",
-  "actions.random_items.say_2": "You found nothing useful."
+  "actions.random_items.say_2": "You found nothing useful.",
+  "actions.random_items.say_3": "You found nothing useful."
 }

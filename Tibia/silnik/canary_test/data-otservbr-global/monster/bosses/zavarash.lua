@@ -67,7 +67,7 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Harrr, Harrr!", yell = false },
+	{ text = "Harrr, Harrr!", yell = false , i18nKey = "monster.zavarash.voice_1"},
 }
 
 monster.loot = {

@@ -65,11 +65,11 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "That banker never saw it coming!", yell = false },
-	{ text = "You will not take this gold from me!", yell = false },
-	{ text = "KEEP YOUR HANDS OFF THAT BAG!", yell = true },
-	{ text = "Kill him, men!", yell = false },
-	{ text = "Take from the rich, keep it for yourself. That's my motto.", yell = false },
+	{ text = "That banker never saw it coming!", yell = false , i18nKey = "monster.jesse_the_wicked.voice_1"},
+	{ text = "You will not take this gold from me!", yell = false , i18nKey = "monster.jesse_the_wicked.voice_2"},
+	{ text = "KEEP YOUR HANDS OFF THAT BAG!", yell = true , i18nKey = "monster.jesse_the_wicked.voice_3"},
+	{ text = "Kill him, men!", yell = false , i18nKey = "monster.jesse_the_wicked.voice_4"},
+	{ text = "Take from the rich, keep it for yourself. That's my motto.", yell = false , i18nKey = "monster.jesse_the_wicked.voice_5"},
 }
 
 monster.loot = {

@@ -73,8 +73,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Crushing! Smashing! Ripping! Yeah!!", yell = false },
-	{ text = "It's clobberin time!", yell = false },
+	{ text = "Crushing! Smashing! Ripping! Yeah!!", yell = false , i18nKey = "monster.orclops_ravager.voice_1"},
+	{ text = "It's clobberin time!", yell = false , i18nKey = "monster.orclops_ravager.voice_2"},
 }
 
 monster.loot = {

@@ -69,10 +69,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I am going to play with yourself!", yell = false },
-	{ text = "Feel my wrath!", yell = false },
-	{ text = "No one matches my battle prowess!", yell = false },
-	{ text = "You will all die!", yell = false },
+	{ text = "I am going to play with yourself!", yell = false , i18nKey = "monster.madareth.voice_1"},
+	{ text = "Feel my wrath!", yell = false , i18nKey = "monster.madareth.voice_2"},
+	{ text = "No one matches my battle prowess!", yell = false , i18nKey = "monster.madareth.voice_3"},
+	{ text = "You will all die!", yell = false , i18nKey = "monster.madareth.voice_4"},
 }
 
 monster.loot = {

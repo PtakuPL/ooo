@@ -71,11 +71,11 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "ISHH THAT THE BESHHT YOU HAVE TO OFFERRR, TIBIANSHH?", yell = true },
-	{ text = "YOU ARRRRRE DOOMED!", yell = true },
-	{ text = "I SHHMELL FEEAARRR!", yell = true },
-	{ text = "MY SHHEED IS FEARRR AND MY HARRRVEST ISHH YOURRR SHHOUL!", yell = true },
-	{ text = "Your shhoooul will be mineee!", yell = false },
+	{ text = "ISHH THAT THE BESHHT YOU HAVE TO OFFERRR, TIBIANSHH?", yell = true , i18nKey = "monster.demon_parrot.voice_1"},
+	{ text = "YOU ARRRRRE DOOMED!", yell = true , i18nKey = "monster.demon_parrot.voice_2"},
+	{ text = "I SHHMELL FEEAARRR!", yell = true , i18nKey = "monster.demon_parrot.voice_3"},
+	{ text = "MY SHHEED IS FEARRR AND MY HARRRVEST ISHH YOURRR SHHOUL!", yell = true , i18nKey = "monster.demon_parrot.voice_4"},
+	{ text = "Your shhoooul will be mineee!", yell = false , i18nKey = "monster.demon_parrot.voice_5"},
 }
 
 monster.loot = {

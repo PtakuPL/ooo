@@ -1,7 +1,7 @@
 # NPC: doubleday
 
-**Plik:** `data-otservbr-global/npc/doubleday.lua`
-**Data migracji:** 2025-12-17 01:34
+**Plik:** 
+**Data migracji:** 2025-12-21 04:59
 **Liczba tekstów:** 0
 
 ## Klucze i18n

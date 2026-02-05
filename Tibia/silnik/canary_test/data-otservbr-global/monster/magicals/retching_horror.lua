@@ -73,9 +73,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Wait for us, little maggot...", yell = false },
-	{ text = "We will devour you...", yell = false },
-	{ text = "My little beetles, go forth, eat, feast!", yell = false },
+	{ text = "Wait for us, little maggot...", yell = false , i18nKey = "monster.retching_horror.voice_1"},
+	{ text = "We will devour you...", yell = false , i18nKey = "monster.retching_horror.voice_2"},
+	{ text = "My little beetles, go forth, eat, feast!", yell = false , i18nKey = "monster.retching_horror.voice_3"},
 }
 
 monster.loot = {

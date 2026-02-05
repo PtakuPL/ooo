@@ -73,9 +73,9 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Killing is such a splendid diversion from my studies.", yell = false },
-	{ text = "Time to test my newest spells!", yell = false },
-	{ text = "Ah, practice time once again!", yell = false },
+	{ text = "Killing is such a splendid diversion from my studies.", yell = false , i18nKey = "monster.zarabustor.voice_1"},
+	{ text = "Time to test my newest spells!", yell = false , i18nKey = "monster.zarabustor.voice_2"},
+	{ text = "Ah, practice time once again!", yell = false , i18nKey = "monster.zarabustor.voice_3"},
 }
 
 monster.loot = {

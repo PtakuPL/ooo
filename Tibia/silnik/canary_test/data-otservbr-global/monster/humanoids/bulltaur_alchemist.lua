@@ -72,9 +72,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Your misfortune is setteled!", yell = false },
-	{ text = "Soon I will harvest you for ingredients!", yell = false },
-	{ text = "I have just the solution for this problem!", yell = false },
+	{ text = "Your misfortune is setteled!", yell = false , i18nKey = "monster.bulltaur_alchemist.voice_1"},
+	{ text = "Soon I will harvest you for ingredients!", yell = false , i18nKey = "monster.bulltaur_alchemist.voice_2"},
+	{ text = "I have just the solution for this problem!", yell = false , i18nKey = "monster.bulltaur_alchemist.voice_3"},
 }
 
 monster.loot = {

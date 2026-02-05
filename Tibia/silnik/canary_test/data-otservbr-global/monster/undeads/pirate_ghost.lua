@@ -71,11 +71,11 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Yooh Ho Hooh Ho!", yell = false },
-	{ text = "Hell is waiting for You!", yell = false },
-	{ text = "It's alive!", yell = false },
-	{ text = "The curse! Aww the curse!", yell = false },
-	{ text = "You will not get my treasure.", yell = false },
+	{ text = "Yooh Ho Hooh Ho!", yell = false , i18nKey = "monster.pirate_ghost.voice_1"},
+	{ text = "Hell is waiting for You!", yell = false , i18nKey = "monster.pirate_ghost.voice_2"},
+	{ text = "It's alive!", yell = false , i18nKey = "monster.pirate_ghost.voice_3"},
+	{ text = "The curse! Aww the curse!", yell = false , i18nKey = "monster.pirate_ghost.voice_4"},
+	{ text = "You will not get my treasure.", yell = false , i18nKey = "monster.pirate_ghost.voice_5"},
 }
 
 monster.loot = {

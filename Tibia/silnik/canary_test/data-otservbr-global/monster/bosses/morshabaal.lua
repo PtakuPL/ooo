@@ -65,9 +65,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Revenge for my little brother!", yell = false },
-	{ text = "You are starting to annoy me!", yell = false },
-	{ text = "I will restore our family honor!", yell = false },
+	{ text = "Revenge for my little brother!", yell = false , i18nKey = "monster.morshabaal.voice_1"},
+	{ text = "You are starting to annoy me!", yell = false , i18nKey = "monster.morshabaal.voice_2"},
+	{ text = "I will restore our family honor!", yell = false , i18nKey = "monster.morshabaal.voice_3"},
 }
 
 monster.summons = {}

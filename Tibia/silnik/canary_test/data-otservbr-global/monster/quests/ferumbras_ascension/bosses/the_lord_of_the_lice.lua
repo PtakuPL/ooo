@@ -69,11 +69,11 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Feel the fever!", yell = false },
-	{ text = "Feeling queasy? Heeheehee!", yell = false },
-	{ text = "Swarm forth, minions!", yell = false },
-	{ text = "Pox upon you!", yell = false },
-	{ text = "Take your breath away!", yell = false },
+	{ text = "Feel the fever!", yell = false , i18nKey = "monster.the_lord_of_the_lice.voice_1"},
+	{ text = "Feeling queasy? Heeheehee!", yell = false , i18nKey = "monster.the_lord_of_the_lice.voice_2"},
+	{ text = "Swarm forth, minions!", yell = false , i18nKey = "monster.the_lord_of_the_lice.voice_3"},
+	{ text = "Pox upon you!", yell = false , i18nKey = "monster.the_lord_of_the_lice.voice_4"},
+	{ text = "Take your breath away!", yell = false , i18nKey = "monster.the_lord_of_the_lice.voice_5"},
 }
 
 monster.loot = {

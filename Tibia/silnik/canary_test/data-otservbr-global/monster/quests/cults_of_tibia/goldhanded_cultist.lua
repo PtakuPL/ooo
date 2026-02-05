@@ -74,8 +74,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Money, money, money!", yell = false },
-	{ text = "You can't ever be rich enough!", yell = false },
+	{ text = "Money, money, money!", yell = false , i18nKey = "monster.goldhanded_cultist.voice_1"},
+	{ text = "You can't ever be rich enough!", yell = false , i18nKey = "monster.goldhanded_cultist.voice_2"},
 }
 
 monster.loot = {

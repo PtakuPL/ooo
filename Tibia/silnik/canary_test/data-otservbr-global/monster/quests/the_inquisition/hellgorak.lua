@@ -69,12 +69,12 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I'll sacrifice yours souls to seven!", yell = false },
-	{ text = "I'm bad news for you mortals!", yell = false },
-	{ text = "No man can defeat me!", yell = false },
-	{ text = "Your puny skills are no match for me.", yell = false },
-	{ text = "I smell your fear.", yell = false },
-	{ text = "Delicious!", yell = false },
+	{ text = "I'll sacrifice yours souls to seven!", yell = false , i18nKey = "monster.hellgorak.voice_1"},
+	{ text = "I'm bad news for you mortals!", yell = false , i18nKey = "monster.hellgorak.voice_2"},
+	{ text = "No man can defeat me!", yell = false , i18nKey = "monster.hellgorak.voice_3"},
+	{ text = "Your puny skills are no match for me.", yell = false , i18nKey = "monster.hellgorak.voice_4"},
+	{ text = "I smell your fear.", yell = false , i18nKey = "monster.hellgorak.voice_5"},
+	{ text = "Delicious!", yell = false , i18nKey = "monster.hellgorak.voice_6"},
 }
 
 monster.loot = {

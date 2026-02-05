@@ -71,7 +71,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Flap flap flap!", yell = false },
+	{ text = "Flap flap flap!", yell = false , i18nKey = "monster.manta_ray.voice_1"},
 }
 
 monster.loot = {

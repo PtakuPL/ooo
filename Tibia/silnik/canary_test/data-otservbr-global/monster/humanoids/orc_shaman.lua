@@ -78,8 +78,8 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Huumans stinkk!", yell = false },
-	{ text = "Grak brrretz gulu.", yell = false },
+	{ text = "Huumans stinkk!", yell = false , i18nKey = "monster.orc_shaman.voice_1"},
+	{ text = "Grak brrretz gulu.", yell = false , i18nKey = "monster.orc_shaman.voice_2"},
 }
 
 monster.loot = {

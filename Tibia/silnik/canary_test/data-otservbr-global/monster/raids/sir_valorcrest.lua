@@ -72,8 +72,8 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I challenge you!", yell = false },
-	{ text = "A battle makes the blood so hot and sweet.", yell = false },
+	{ text = "I challenge you!", yell = false , i18nKey = "monster.sir_valorcrest.voice_1"},
+	{ text = "A battle makes the blood so hot and sweet.", yell = false , i18nKey = "monster.sir_valorcrest.voice_2"},
 }
 
 monster.loot = {

@@ -73,8 +73,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "VBOX°O", yell = false },
-	{ text = 'O(J-"LJ-T =|-°', yell = false },
+	{ text = "VBOX°O", yell = false , i18nKey = "monster.deathling_scout.voice_1"},
+	{ text = 'O(J-"LJ-T =|-°', yell = false , i18nKey = "monster.deathling_scout.voice_2"},
 }
 
 monster.loot = {

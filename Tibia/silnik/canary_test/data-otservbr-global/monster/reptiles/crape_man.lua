@@ -70,9 +70,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Ungh! Ungh!", yell = false },
-	{ text = "Klack klack!", yell = false },
-	{ text = "Hugah!", yell = false },
+	{ text = "Ungh! Ungh!", yell = false , i18nKey = "monster.crape_man.voice_1"},
+	{ text = "Klack klack!", yell = false , i18nKey = "monster.crape_man.voice_2"},
+	{ text = "Hugah!", yell = false , i18nKey = "monster.crape_man.voice_3"},
 }
 
 monster.loot = {

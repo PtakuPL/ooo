@@ -80,9 +80,9 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "To me, creatures of the wild!", yell = false },
-	{ text = "My instincts tell me about your cowardice.", yell = false },
-	{ text = "Feel the power of the beast!", yell = false },
+	{ text = "To me, creatures of the wild!", yell = false , i18nKey = "monster.barbarian_brutetamer.voice_1"},
+	{ text = "My instincts tell me about your cowardice.", yell = false , i18nKey = "monster.barbarian_brutetamer.voice_2"},
+	{ text = "Feel the power of the beast!", yell = false , i18nKey = "monster.barbarian_brutetamer.voice_3"},
 }
 
 monster.loot = {

@@ -69,11 +69,11 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "You will run out of resources soon enough!", yell = false },
-	{ text = "One little mistake and you're all are mine!", yell = false },
-	{ text = "I sense your strength fading!", yell = false },
-	{ text = "I know you will show a weakness!", yell = false },
-	{ text = "Your fear will make you prone to mistakes!", yell = false },
+	{ text = "You will run out of resources soon enough!", yell = false , i18nKey = "monster.zugurosh.voice_1"},
+	{ text = "One little mistake and you're all are mine!", yell = false , i18nKey = "monster.zugurosh.voice_2"},
+	{ text = "I sense your strength fading!", yell = false , i18nKey = "monster.zugurosh.voice_3"},
+	{ text = "I know you will show a weakness!", yell = false , i18nKey = "monster.zugurosh.voice_4"},
+	{ text = "Your fear will make you prone to mistakes!", yell = false , i18nKey = "monster.zugurosh.voice_5"},
 }
 
 monster.loot = {

@@ -66,8 +66,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Witness the might of The Order of the Falcon!", yell = false },
-	{ text = "Suffer, for you are disobedient!", yell = false },
+	{ text = "Witness the might of The Order of the Falcon!", yell = false , i18nKey = "monster.grand_chaplain_gaunder.voice_1"},
+	{ text = "Suffer, for you are disobedient!", yell = false , i18nKey = "monster.grand_chaplain_gaunder.voice_2"},
 }
 
 monster.loot = {

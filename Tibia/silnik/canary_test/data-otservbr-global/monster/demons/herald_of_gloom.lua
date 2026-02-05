@@ -74,9 +74,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "The powers of light are waning.", yell = false },
-	{ text = "You will join us in eternal night!", yell = false },
-	{ text = "The shadows will engulf the world.", yell = false },
+	{ text = "The powers of light are waning.", yell = false , i18nKey = "monster.herald_of_gloom.voice_1"},
+	{ text = "You will join us in eternal night!", yell = false , i18nKey = "monster.herald_of_gloom.voice_2"},
+	{ text = "The shadows will engulf the world.", yell = false , i18nKey = "monster.herald_of_gloom.voice_3"},
 }
 
 monster.loot = {

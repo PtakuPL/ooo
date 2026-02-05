@@ -77,8 +77,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "The smell of fear follows you.", yell = false },
-	{ text = "Your soul will burn.", yell = false },
+	{ text = "The smell of fear follows you.", yell = false , i18nKey = "monster.infernal_demon.voice_1"},
+	{ text = "Your soul will burn.", yell = false , i18nKey = "monster.infernal_demon.voice_2"},
 }
 
 monster.loot = {

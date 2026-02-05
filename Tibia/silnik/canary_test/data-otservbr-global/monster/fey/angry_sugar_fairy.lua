@@ -73,9 +73,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Don't trample the beautiful sprinkles! That makes me angry!", yell = false },
-	{ text = "No sweet sugar jewellery for you, intruder!", yell = false },
-	{ text = "This is not the Candy Carnival! You should leave!", yell = false },
+	{ text = "Don't trample the beautiful sprinkles! That makes me angry!", yell = false , i18nKey = "monster.angry_sugar_fairy.voice_1"},
+	{ text = "No sweet sugar jewellery for you, intruder!", yell = false , i18nKey = "monster.angry_sugar_fairy.voice_2"},
+	{ text = "This is not the Candy Carnival! You should leave!", yell = false , i18nKey = "monster.angry_sugar_fairy.voice_3"},
 }
 
 monster.loot = {

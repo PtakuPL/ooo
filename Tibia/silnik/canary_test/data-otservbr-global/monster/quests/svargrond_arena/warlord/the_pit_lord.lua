@@ -60,9 +60,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I won't let you escape!", yell = false },
-	{ text = "I'LL GET YOU ALL!", yell = true },
-	{ text = "I'll crush you beneath my feet!", yell = false },
+	{ text = "I won't let you escape!", yell = false , i18nKey = "monster.the_pit_lord.voice_1"},
+	{ text = "I'LL GET YOU ALL!", yell = true , i18nKey = "monster.the_pit_lord.voice_2"},
+	{ text = "I'll crush you beneath my feet!", yell = false , i18nKey = "monster.the_pit_lord.voice_3"},
 }
 
 monster.loot = {}

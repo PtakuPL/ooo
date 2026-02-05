@@ -61,8 +61,8 @@ monster.light = {
 monster.voices = {
 	interval = 2000,
 	chance = 7,
-	{ text = "I will end your torment. Do not run, little mortal.", yell = true },
-	{ text = "*SNIFF* *SNIFF* BLOOD! I CAN SMELL YOU, MORTAL!!", yell = true },
+	{ text = "I will end your torment. Do not run, little mortal.", yell = true , i18nKey = "monster.the_flaming_orchid.voice_1"},
+	{ text = "*SNIFF* *SNIFF* BLOOD! I CAN SMELL YOU, MORTAL!!", yell = true , i18nKey = "monster.the_flaming_orchid.voice_2"},
 }
 
 monster.loot = {

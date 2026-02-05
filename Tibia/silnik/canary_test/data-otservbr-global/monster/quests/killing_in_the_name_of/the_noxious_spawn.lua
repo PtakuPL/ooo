@@ -60,7 +60,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I bring you deathhhh, mortalssss", yell = false },
+	{ text = "I bring you deathhhh, mortalssss", yell = false , i18nKey = "monster.the_noxious_spawn.voice_1"},
 }
 
 monster.loot = {

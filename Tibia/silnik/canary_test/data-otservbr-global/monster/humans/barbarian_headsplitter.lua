@@ -73,10 +73,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I will regain my honor with your blood!", yell = false },
-	{ text = "Surrender is not option!", yell = false },
-	{ text = "Its you or me!", yell = false },
-	{ text = "Die! Die! Die!", yell = false },
+	{ text = "I will regain my honor with your blood!", yell = false , i18nKey = "monster.barbarian_headsplitter.voice_1"},
+	{ text = "Surrender is not option!", yell = false , i18nKey = "monster.barbarian_headsplitter.voice_2"},
+	{ text = "Its you or me!", yell = false , i18nKey = "monster.barbarian_headsplitter.voice_3"},
+	{ text = "Die! Die! Die!", yell = false , i18nKey = "monster.barbarian_headsplitter.voice_4"},
 }
 
 monster.loot = {

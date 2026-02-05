@@ -54,8 +54,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Seeet the eeegg on fiiireee!", yell = false },
-	{ text = "Slooow the Hooorrorrrr!", yell = false },
+	{ text = "Seeet the eeegg on fiiireee!", yell = false , i18nKey = "monster.frozen_man.voice_1"},
+	{ text = "Slooow the Hooorrorrrr!", yell = false , i18nKey = "monster.frozen_man.voice_2"},
 }
 
 monster.loot = {}

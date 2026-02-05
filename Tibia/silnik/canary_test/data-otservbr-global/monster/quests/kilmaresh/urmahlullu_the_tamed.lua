@@ -69,7 +69,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Not worth to be here!", yell = false },
+	{ text = "Not worth to be here!", yell = false , i18nKey = "monster.urmahlullu_the_tamed.voice_1"},
 }
 
 monster.loot = {}

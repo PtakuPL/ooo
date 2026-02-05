@@ -59,9 +59,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Fear for your soul!", yell = false },
-	{ text = "I will harvest your soul!", yell = false },
-	{ text = "You have been chosen for a harvest!", yell = false },
+	{ text = "Fear for your soul!", yell = false , i18nKey = "monster.dreadful_harvester.voice_1"},
+	{ text = "I will harvest your soul!", yell = false , i18nKey = "monster.dreadful_harvester.voice_2"},
+	{ text = "You have been chosen for a harvest!", yell = false , i18nKey = "monster.dreadful_harvester.voice_3"},
 }
 
 monster.attacks = {

@@ -79,8 +79,8 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "WHO DARES CALLING ME?", yell = true },
-	{ text = "I'LL FREEZE YOU THEN I CRUSH YOU!", yell = true },
+	{ text = "WHO DARES CALLING ME?", yell = true , i18nKey = "monster.lord_of_the_elements.voice_1"},
+	{ text = "I'LL FREEZE YOU THEN I CRUSH YOU!", yell = true , i18nKey = "monster.lord_of_the_elements.voice_2"},
 }
 
 monster.loot = {

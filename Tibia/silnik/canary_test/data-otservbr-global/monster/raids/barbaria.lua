@@ -72,10 +72,10 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "To me, creatures of the wild!", yell = false },
-	{ text = "My instincts tell me about your cowardice.", yell = false },
-	{ text = "Mine is the power of rage!", yell = false },
-	{ text = "I'll be triumphant!", yell = false },
+	{ text = "To me, creatures of the wild!", yell = false , i18nKey = "monster.barbaria.voice_1"},
+	{ text = "My instincts tell me about your cowardice.", yell = false , i18nKey = "monster.barbaria.voice_2"},
+	{ text = "Mine is the power of rage!", yell = false , i18nKey = "monster.barbaria.voice_3"},
+	{ text = "I'll be triumphant!", yell = false , i18nKey = "monster.barbaria.voice_4"},
 }
 
 monster.loot = {

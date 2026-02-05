@@ -65,11 +65,11 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I can kill a man in a thousand ways. And that`s only with a spoon!", yell = false },
-	{ text = "You shouldn`t have come here!", yell = false },
-	{ text = "Haiiii!", yell = false },
-	{ text = "You are no match for a master assassin!", yell = false },
-	{ text = "I'll teach you the art of death!", yell = false },
+	{ text = "I can kill a man in a thousand ways. And that`s only with a spoon!", yell = false , i18nKey = "monster.rukor_zad.voice_1"},
+	{ text = "You shouldn`t have come here!", yell = false , i18nKey = "monster.rukor_zad.voice_2"},
+	{ text = "Haiiii!", yell = false , i18nKey = "monster.rukor_zad.voice_3"},
+	{ text = "You are no match for a master assassin!", yell = false , i18nKey = "monster.rukor_zad.voice_4"},
+	{ text = "I'll teach you the art of death!", yell = false , i18nKey = "monster.rukor_zad.voice_5"},
 }
 
 monster.loot = {

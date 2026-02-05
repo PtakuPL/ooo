@@ -78,7 +78,7 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Who is lunch NOW?", yell = false },
+	{ text = "Who is lunch NOW?", yell = false , i18nKey = "monster.killer_rabbit.voice_1"},
 }
 
 monster.loot = {

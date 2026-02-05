@@ -73,9 +73,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "What a chance to try out my latest work!", yell = false },
-	{ text = "May the forge be with me!", yell = false },
-	{ text = "The forge-fire will cleanse you!", yell = false },
+	{ text = "What a chance to try out my latest work!", yell = false , i18nKey = "monster.bulltaur_forgepriest.voice_1"},
+	{ text = "May the forge be with me!", yell = false , i18nKey = "monster.bulltaur_forgepriest.voice_2"},
+	{ text = "The forge-fire will cleanse you!", yell = false , i18nKey = "monster.bulltaur_forgepriest.voice_3"},
 }
 
 monster.loot = {

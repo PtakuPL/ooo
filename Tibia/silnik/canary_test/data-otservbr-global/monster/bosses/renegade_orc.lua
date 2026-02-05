@@ -64,7 +64,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Harga puchak muhmak!", yell = false },
+	{ text = "Harga puchak muhmak!", yell = false , i18nKey = "monster.renegade_orc.voice_1"},
 }
 
 monster.loot = {

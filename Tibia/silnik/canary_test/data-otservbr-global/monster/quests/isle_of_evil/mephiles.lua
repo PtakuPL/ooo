@@ -65,11 +65,11 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I have a contract here which you should sign!", yell = false },
-	{ text = "I sence so much potential in you. It's almost a shame I have to kill you.", yell = false },
-	{ text = "Yes, slay me for the loot I might have. Give in to your greed.", yell = false },
-	{ text = "Wealth, Power, it is all at your fingertips. All you have to do is a bit blackmailing and bullying.", yell = false },
-	{ text = "Come on. being a bit evil won't hurt you.", yell = false },
+	{ text = "I have a contract here which you should sign!", yell = false , i18nKey = "monster.mephiles.voice_1"},
+	{ text = "I sence so much potential in you. It's almost a shame I have to kill you.", yell = false , i18nKey = "monster.mephiles.voice_2"},
+	{ text = "Yes, slay me for the loot I might have. Give in to your greed.", yell = false , i18nKey = "monster.mephiles.voice_3"},
+	{ text = "Wealth, Power, it is all at your fingertips. All you have to do is a bit blackmailing and bullying.", yell = false , i18nKey = "monster.mephiles.voice_4"},
+	{ text = "Come on. being a bit evil won't hurt you.", yell = false , i18nKey = "monster.mephiles.voice_5"},
 }
 
 monster.loot = {

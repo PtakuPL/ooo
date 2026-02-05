@@ -67,10 +67,10 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I will protect the secrets of my master!", yell = false },
-	{ text = "Kaplar!", yell = false },
-	{ text = "This isle will become ours alone", yell = false },
-	{ text = "You already know too much.", yell = false },
+	{ text = "I will protect the secrets of my master!", yell = false , i18nKey = "monster.apprentice_sheng.voice_1"},
+	{ text = "Kaplar!", yell = false , i18nKey = "monster.apprentice_sheng.voice_2"},
+	{ text = "This isle will become ours alone", yell = false , i18nKey = "monster.apprentice_sheng.voice_3"},
+	{ text = "You already know too much.", yell = false , i18nKey = "monster.apprentice_sheng.voice_4"},
 }
 
 monster.loot = {

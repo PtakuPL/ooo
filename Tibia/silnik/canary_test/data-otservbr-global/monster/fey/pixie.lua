@@ -73,10 +73,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Glamour, glitter, glistering things! Do you have any of those?", yell = false },
-	{ text = "Sweet dreams!", yell = false },
-	{ text = "You might be a threat! I'm sorry but I can't allow you to linger here.", yell = false },
-	{ text = "Let's try a step or two!", yell = false },
+	{ text = "Glamour, glitter, glistering things! Do you have any of those?", yell = false , i18nKey = "monster.pixie.voice_1"},
+	{ text = "Sweet dreams!", yell = false , i18nKey = "monster.pixie.voice_2"},
+	{ text = "You might be a threat! I'm sorry but I can't allow you to linger here.", yell = false , i18nKey = "monster.pixie.voice_3"},
+	{ text = "Let's try a step or two!", yell = false , i18nKey = "monster.pixie.voice_4"},
 }
 
 monster.loot = {

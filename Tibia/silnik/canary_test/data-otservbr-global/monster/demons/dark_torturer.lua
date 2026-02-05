@@ -74,11 +74,11 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "You like it, don't you?", yell = false },
-	{ text = "IahaEhheAie!", yell = false },
-	{ text = "It's party time!", yell = false },
-	{ text = "Harrr, Harrr!", yell = false },
-	{ text = "The torturer is in!", yell = false },
+	{ text = "You like it, don't you?", yell = false , i18nKey = "monster.dark_torturer.voice_1"},
+	{ text = "IahaEhheAie!", yell = false , i18nKey = "monster.dark_torturer.voice_2"},
+	{ text = "It's party time!", yell = false , i18nKey = "monster.dark_torturer.voice_3"},
+	{ text = "Harrr, Harrr!", yell = false , i18nKey = "monster.dark_torturer.voice_4"},
+	{ text = "The torturer is in!", yell = false , i18nKey = "monster.dark_torturer.voice_5"},
 }
 
 monster.loot = {

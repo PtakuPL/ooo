@@ -65,9 +65,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Yeeyeeyeee!", yell = false },
-	{ text = "Fight me if you dare!", yell = false },
-	{ text = "I challenge you!", yell = false },
+	{ text = "Yeeyeeyeee!", yell = false , i18nKey = "monster.xenia.voice_1"},
+	{ text = "Fight me if you dare!", yell = false , i18nKey = "monster.xenia.voice_2"},
+	{ text = "I challenge you!", yell = false , i18nKey = "monster.xenia.voice_3"},
 }
 
 monster.loot = {

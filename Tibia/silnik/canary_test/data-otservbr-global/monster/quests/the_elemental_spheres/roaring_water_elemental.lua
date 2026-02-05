@@ -60,8 +60,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "BLUB BLUB", yell = true },
-	{ text = "SWASHHH", yell = true },
+	{ text = "BLUB BLUB", yell = true , i18nKey = "monster.roaring_water_elemental.voice_1"},
+	{ text = "SWASHHH", yell = true , i18nKey = "monster.roaring_water_elemental.voice_2"},
 }
 
 monster.loot = {

@@ -71,10 +71,10 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "YOU'LL NEVER GET MY TREASURE!", yell = true },
-	{ text = "MINIONS, MEET YOUR NEW BROTHER!", yell = true },
-	{ text = "YOU WILL REGRET THAT YOU ARE BORN!", yell = true },
-	{ text = "YOU MADE A HUGE WASTE!", yell = true },
+	{ text = "YOU'LL NEVER GET MY TREASURE!", yell = true , i18nKey = "monster.pythius_the_rotten.voice_1"},
+	{ text = "MINIONS, MEET YOUR NEW BROTHER!", yell = true , i18nKey = "monster.pythius_the_rotten.voice_2"},
+	{ text = "YOU WILL REGRET THAT YOU ARE BORN!", yell = true , i18nKey = "monster.pythius_the_rotten.voice_3"},
+	{ text = "YOU MADE A HUGE WASTE!", yell = true , i18nKey = "monster.pythius_the_rotten.voice_4"},
 }
 
 monster.loot = {}

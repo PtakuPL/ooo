@@ -71,9 +71,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Gokgoooook", yell = false },
-	{ text = "Cluck Cluck", yell = false },
-	{ text = "I will fill MY cushion with YOUR hair! CLUCK!", yell = false },
+	{ text = "Gokgoooook", yell = false , i18nKey = "monster.berserker_chicken.voice_1"},
+	{ text = "Cluck Cluck", yell = false , i18nKey = "monster.berserker_chicken.voice_2"},
+	{ text = "I will fill MY cushion with YOUR hair! CLUCK!", yell = false , i18nKey = "monster.berserker_chicken.voice_3"},
 }
 
 monster.loot = {

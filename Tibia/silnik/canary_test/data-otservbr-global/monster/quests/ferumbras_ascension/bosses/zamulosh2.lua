@@ -61,7 +61,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I AM ZAMULOSH!", yell = false },
+	{ text = "I AM ZAMULOSH!", yell = false , i18nKey = "monster.zamulosh2.voice_1"},
 }
 
 monster.attacks = {

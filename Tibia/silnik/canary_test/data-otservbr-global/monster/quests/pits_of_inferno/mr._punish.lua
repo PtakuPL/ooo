@@ -65,9 +65,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I kept my axe sharp, especially for you!", yell = false },
-	{ text = "Time for a little torturing practice!", yell = false },
-	{ text = "Scream for me!", yell = false },
+	{ text = "I kept my axe sharp, especially for you!", yell = false , i18nKey = "monster.mr._punish.voice_1"},
+	{ text = "Time for a little torturing practice!", yell = false , i18nKey = "monster.mr._punish.voice_2"},
+	{ text = "Scream for me!", yell = false , i18nKey = "monster.mr._punish.voice_3"},
 }
 
 monster.loot = {

@@ -64,10 +64,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Delusional!", yell = false },
-	{ text = "I'll be your worst nightmare", yell = false },
-	{ text = "The mirrors can't contain the night.", yell = false },
-	{ text = "What a lovely reflection.", yell = false },
+	{ text = "Delusional!", yell = false , i18nKey = "monster.mirror_image.voice_1"},
+	{ text = "I'll be your worst nightmare", yell = false , i18nKey = "monster.mirror_image.voice_2"},
+	{ text = "The mirrors can't contain the night.", yell = false , i18nKey = "monster.mirror_image.voice_3"},
+	{ text = "What a lovely reflection.", yell = false , i18nKey = "monster.mirror_image.voice_4"},
 }
 
 monster.loot = {}

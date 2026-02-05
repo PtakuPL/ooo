@@ -77,8 +77,8 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "tssooosh tsoooosh tssoooosh!", yell = false },
-	{ text = "We didn't stop the fire!", yell = false },
+	{ text = "tssooosh tsoooosh tssoooosh!", yell = false , i18nKey = "monster.floating_savant.voice_1"},
+	{ text = "We didn't stop the fire!", yell = false , i18nKey = "monster.floating_savant.voice_2"},
 }
 
 monster.loot = {

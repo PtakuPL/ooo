@@ -71,9 +71,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Carrah! Carrah!", yell = false },
-	{ text = "Gruuuh Gruuuh.", yell = false },
-	{ text = "CRAAAHHH!", yell = true },
+	{ text = "Carrah! Carrah!", yell = false , i18nKey = "monster.terror_bird.voice_1"},
+	{ text = "Gruuuh Gruuuh.", yell = false , i18nKey = "monster.terror_bird.voice_2"},
+	{ text = "CRAAAHHH!", yell = true , i18nKey = "monster.terror_bird.voice_3"},
 }
 
 monster.loot = {

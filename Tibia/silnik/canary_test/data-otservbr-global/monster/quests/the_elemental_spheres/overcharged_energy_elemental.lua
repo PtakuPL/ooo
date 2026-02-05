@@ -60,7 +60,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "BZZZZZZZZZZ", yell = false },
+	{ text = "BZZZZZZZZZZ", yell = false , i18nKey = "monster.overcharged_energy_elemental.voice_1"},
 }
 
 monster.loot = {

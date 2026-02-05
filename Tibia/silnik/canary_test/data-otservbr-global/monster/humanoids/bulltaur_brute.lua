@@ -72,9 +72,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "It's hammer time!", yell = false },
-	{ text = "I'll do some downsizing!", yell = false },
-	{ text = "This will be a smash hit!!", yell = false },
+	{ text = "It's hammer time!", yell = false , i18nKey = "monster.bulltaur_brute.voice_1"},
+	{ text = "I'll do some downsizing!", yell = false , i18nKey = "monster.bulltaur_brute.voice_2"},
+	{ text = "This will be a smash hit!!", yell = false , i18nKey = "monster.bulltaur_brute.voice_3"},
 }
 
 monster.loot = {

@@ -80,9 +80,9 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Darkness is the mother of all knowledge!", yell = false },
-	{ text = "Get thee gone, unworthy!", yell = false },
-	{ text = "The Black Sphinx will prevail!", yell = false },
+	{ text = "Darkness is the mother of all knowledge!", yell = false , i18nKey = "monster.black_sphinx_acolyte.voice_1"},
+	{ text = "Get thee gone, unworthy!", yell = false , i18nKey = "monster.black_sphinx_acolyte.voice_2"},
+	{ text = "The Black Sphinx will prevail!", yell = false , i18nKey = "monster.black_sphinx_acolyte.voice_3"},
 }
 
 monster.loot = {

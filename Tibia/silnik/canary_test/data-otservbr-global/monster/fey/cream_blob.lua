@@ -71,9 +71,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Just taking a walk, friend.", yell = false },
-	{ text = "Work in the Chocolate Mines? No, no, leave it to the sugar cubes.", yell = false },
-	{ text = "Nothing better than to lie on the vanilla sugar beach on a sunny day.", yell = false },
+	{ text = "Just taking a walk, friend.", yell = false , i18nKey = "monster.cream_blob.voice_1"},
+	{ text = "Work in the Chocolate Mines? No, no, leave it to the sugar cubes.", yell = false , i18nKey = "monster.cream_blob.voice_2"},
+	{ text = "Nothing better than to lie on the vanilla sugar beach on a sunny day.", yell = false , i18nKey = "monster.cream_blob.voice_3"},
 }
 monster.loot = {}
 

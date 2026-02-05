@@ -71,13 +71,13 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "No mortal or undead will steal my secrets!", yell = false },
-	{ text = "Ahhhh all those long years.", yell = false },
-	{ text = "My traitorous son has thee.", yell = false },
-	{ text = "Come to me, my allys and underlings.", yell = false },
-	{ text = "I might be trapped but not without power", yell = false },
-	{ text = "Ages come, ages go. Ashmunrah remains.", yell = false },
-	{ text = "You will be history soon.", yell = false },
+	{ text = "No mortal or undead will steal my secrets!", yell = false , i18nKey = "monster.ashmunrah.voice_1"},
+	{ text = "Ahhhh all those long years.", yell = false , i18nKey = "monster.ashmunrah.voice_2"},
+	{ text = "My traitorous son has thee.", yell = false , i18nKey = "monster.ashmunrah.voice_3"},
+	{ text = "Come to me, my allys and underlings.", yell = false , i18nKey = "monster.ashmunrah.voice_4"},
+	{ text = "I might be trapped but not without power", yell = false , i18nKey = "monster.ashmunrah.voice_5"},
+	{ text = "Ages come, ages go. Ashmunrah remains.", yell = false , i18nKey = "monster.ashmunrah.voice_6"},
+	{ text = "You will be history soon.", yell = false , i18nKey = "monster.ashmunrah.voice_7"},
 }
 
 monster.loot = {

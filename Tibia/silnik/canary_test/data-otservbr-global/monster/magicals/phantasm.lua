@@ -77,11 +77,11 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Oh my, you forgot to put your pants on!", yell = false },
-	{ text = "Weeheeheeheehee!", yell = false },
-	{ text = "Its nothing but a dream.", yell = false },
-	{ text = "Dream a little dream with me!", yell = false },
-	{ text = "Give in.", yell = false },
+	{ text = "Oh my, you forgot to put your pants on!", yell = false , i18nKey = "monster.phantasm.voice_1"},
+	{ text = "Weeheeheeheehee!", yell = false , i18nKey = "monster.phantasm.voice_2"},
+	{ text = "Its nothing but a dream.", yell = false , i18nKey = "monster.phantasm.voice_3"},
+	{ text = "Dream a little dream with me!", yell = false , i18nKey = "monster.phantasm.voice_4"},
+	{ text = "Give in.", yell = false , i18nKey = "monster.phantasm.voice_5"},
 }
 
 monster.loot = {

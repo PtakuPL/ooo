@@ -1,7 +1,7 @@
 # NPC: a_frog
 
-**Plik:** `data-otservbr-global/npc/a_frog.lua`
-**Data migracji:** 2025-12-17 00:51
+**Plik:** 
+**Data migracji:** 2025-12-21 02:58
 **Liczba tekstów:** 0
 
 ## Klucze i18n

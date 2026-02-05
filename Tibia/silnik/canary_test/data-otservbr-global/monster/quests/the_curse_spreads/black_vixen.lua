@@ -72,8 +72,8 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "You are not clever enough to defeat me!", yell = false },
-	{ text = "The slyness of foxes will deceive the unwary!", yell = false },
+	{ text = "You are not clever enough to defeat me!", yell = false , i18nKey = "monster.black_vixen.voice_1"},
+	{ text = "The slyness of foxes will deceive the unwary!", yell = false , i18nKey = "monster.black_vixen.voice_2"},
 }
 
 monster.loot = {

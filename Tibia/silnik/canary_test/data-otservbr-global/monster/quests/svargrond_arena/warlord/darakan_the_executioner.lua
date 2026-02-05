@@ -60,10 +60,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "FIGHT LIKE A BARBARIAN!", yell = true },
-	{ text = "VICTORY IS MINE!", yell = true },
-	{ text = "I AM your father!", yell = false },
-	{ text = "To be the man you have to beat the man!", yell = false },
+	{ text = "FIGHT LIKE A BARBARIAN!", yell = true , i18nKey = "monster.darakan_the_executioner.voice_1"},
+	{ text = "VICTORY IS MINE!", yell = true , i18nKey = "monster.darakan_the_executioner.voice_2"},
+	{ text = "I AM your father!", yell = false , i18nKey = "monster.darakan_the_executioner.voice_3"},
+	{ text = "To be the man you have to beat the man!", yell = false , i18nKey = "monster.darakan_the_executioner.voice_4"},
 }
 
 monster.loot = {}

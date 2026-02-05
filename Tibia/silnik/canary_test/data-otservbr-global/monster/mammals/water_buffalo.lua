@@ -72,10 +72,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Gnarrr!", yell = false },
-	{ text = "Gnoorr!", yell = false },
-	{ text = "Mrrr!", yell = false },
-	{ text = "<snort>", yell = false },
+	{ text = "Gnarrr!", yell = false , i18nKey = "monster.water_buffalo.voice_1"},
+	{ text = "Gnoorr!", yell = false , i18nKey = "monster.water_buffalo.voice_2"},
+	{ text = "Mrrr!", yell = false , i18nKey = "monster.water_buffalo.voice_3"},
+	{ text = "<snort>", yell = false , i18nKey = "monster.water_buffalo.voice_4"},
 }
 
 monster.loot = {

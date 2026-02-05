@@ -60,7 +60,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Don't run, You're burning off precious fat.", yell = false },
+	{ text = "Don't run, You're burning off precious fat.", yell = false , i18nKey = "monster.grimgor_guteater.voice_1"},
 }
 
 monster.loot = {}

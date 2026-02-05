@@ -67,9 +67,9 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Even I fear the wrath of the princes. And the cold touch of those whom they serve! You are not prepared!", yell = false },
-	{ text = "You foolish mortals with you medding you brought the end upon your world!", yell = false },
-	{ text = "After all those aeons I smell freedom at last!", yell = false },
+	{ text = "Even I fear the wrath of the princes. And the cold touch of those whom they serve! You are not prepared!", yell = false , i18nKey = "monster.horadron.voice_1"},
+	{ text = "You foolish mortals with you medding you brought the end upon your world!", yell = false , i18nKey = "monster.horadron.voice_2"},
+	{ text = "After all those aeons I smell freedom at last!", yell = false , i18nKey = "monster.horadron.voice_3"},
 }
 
 monster.loot = {

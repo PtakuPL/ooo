@@ -67,10 +67,10 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "COME HERE! FREE ITEMS FOR EVERYONE!", yell = true },
-	{ text = "BOW TO THE POWER OF THE RUTHLESS SEVEN!", yell = true },
-	{ text = "Slay your friends and I will spare you!", yell = false },
-	{ text = "DON'T BE AFRAID!  I AM COMING IN PEACE!", yell = true },
+	{ text = "COME HERE! FREE ITEMS FOR EVERYONE!", yell = true , i18nKey = "monster.bazir.voice_1"},
+	{ text = "BOW TO THE POWER OF THE RUTHLESS SEVEN!", yell = true , i18nKey = "monster.bazir.voice_2"},
+	{ text = "Slay your friends and I will spare you!", yell = false , i18nKey = "monster.bazir.voice_3"},
+	{ text = "DON'T BE AFRAID!  I AM COMING IN PEACE!", yell = true , i18nKey = "monster.bazir.voice_4"},
 }
 
 monster.loot = {

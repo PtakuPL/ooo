@@ -65,11 +65,11 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Die, human. Now!", yell = true },
-	{ text = "FEAR THE CURSE!", yell = true },
-	{ text = "You're the intruder.", yell = true },
-	{ text = "The Iks have always been ours.", yell = true },
-	{ text = "NOW TREMBLE!", "GOT YOU NOW!", yell = true },
+	{ text = "Die, human. Now!", yell = true , i18nKey = "monster.mitmah_vanguard.voice_1"},
+	{ text = "FEAR THE CURSE!", yell = true , i18nKey = "monster.mitmah_vanguard.voice_2"},
+	{ text = "You're the intruder.", yell = true , i18nKey = "monster.mitmah_vanguard.voice_3"},
+	{ text = "The Iks have always been ours.", yell = true , i18nKey = "monster.mitmah_vanguard.voice_4"},
+	{ text = "NOW TREMBLE!", "GOT YOU NOW!", yell = true , i18nKey = "monster.mitmah_vanguard.voice_5"},
 }
 
 monster.loot = {

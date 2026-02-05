@@ -77,9 +77,9 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Your energy is mine.", yell = false },
-	{ text = "Now your life is come to the end, hahahaha!", yell = false },
-	{ text = "Throw the soul on the altar!", yell = false },
+	{ text = "Your energy is mine.", yell = false , i18nKey = "monster.priestess.voice_1"},
+	{ text = "Now your life is come to the end, hahahaha!", yell = false , i18nKey = "monster.priestess.voice_2"},
+	{ text = "Throw the soul on the altar!", yell = false , i18nKey = "monster.priestess.voice_3"},
 }
 
 monster.loot = {

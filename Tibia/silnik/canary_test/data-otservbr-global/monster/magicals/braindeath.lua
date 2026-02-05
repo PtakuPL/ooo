@@ -81,10 +81,10 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "You have disturbed my thoughts!", yell = false },
-	{ text = "I will turn you into something more useful!", yell = false },
-	{ text = "Let me taste your brain!", yell = false },
-	{ text = "You will be punished!", yell = false },
+	{ text = "You have disturbed my thoughts!", yell = false , i18nKey = "monster.braindeath.voice_1"},
+	{ text = "I will turn you into something more useful!", yell = false , i18nKey = "monster.braindeath.voice_2"},
+	{ text = "Let me taste your brain!", yell = false , i18nKey = "monster.braindeath.voice_3"},
+	{ text = "You will be punished!", yell = false , i18nKey = "monster.braindeath.voice_4"},
 }
 
 monster.loot = {

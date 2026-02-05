@@ -73,11 +73,11 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I'll teach you a lesson!", yell = false },
-	{ text = "Feel my steel!", yell = false },
-	{ text = "Take this!", yell = false },
-	{ text = "Let's see how good you are!", yell = false },
-	{ text = "A challenge at last!", yell = false },
+	{ text = "I'll teach you a lesson!", yell = false , i18nKey = "monster.renegade_knight.voice_1"},
+	{ text = "Feel my steel!", yell = false , i18nKey = "monster.renegade_knight.voice_2"},
+	{ text = "Take this!", yell = false , i18nKey = "monster.renegade_knight.voice_3"},
+	{ text = "Let's see how good you are!", yell = false , i18nKey = "monster.renegade_knight.voice_4"},
+	{ text = "A challenge at last!", yell = false , i18nKey = "monster.renegade_knight.voice_5"},
 }
 
 monster.loot = {

@@ -65,8 +65,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Don't run, you'll just lose precious fat.", yell = false },
-	{ text = "Hex hex!", yell = false },
+	{ text = "Don't run, you'll just lose precious fat.", yell = false , i18nKey = "monster.bibby_bloodbath.voice_1"},
+	{ text = "Hex hex!", yell = false , i18nKey = "monster.bibby_bloodbath.voice_2"},
 }
 
 monster.loot = {

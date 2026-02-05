@@ -69,8 +69,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Latrivan, you fool!", yell = false },
-	{ text = "We are the right hand and the left hand of the seven!", yell = false },
+	{ text = "Latrivan, you fool!", yell = false , i18nKey = "monster.golgordan.voice_1"},
+	{ text = "We are the right hand and the left hand of the seven!", yell = false , i18nKey = "monster.golgordan.voice_2"},
 }
 
 monster.loot = {

@@ -77,8 +77,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Hiss.", yell = false },
-	{ text = "Zap! Zap!", yell = false },
+	{ text = "Hiss.", yell = false , i18nKey = "monster.courage_leech.voice_1"},
+	{ text = "Zap! Zap!", yell = false , i18nKey = "monster.courage_leech.voice_2"},
 }
 
 monster.loot = {

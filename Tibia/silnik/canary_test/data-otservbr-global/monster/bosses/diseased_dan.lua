@@ -69,10 +69,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Can't think ... must kill!", yell = false },
-	{ text = "Where ... where am I?", yell = false },
-	{ text = "Is that you, Tom?", yell = false },
-	{ text = "Phew, what an awful smell ... oh, that's me.", yell = false },
+	{ text = "Can't think ... must kill!", yell = false , i18nKey = "monster.diseased_dan.voice_1"},
+	{ text = "Where ... where am I?", yell = false , i18nKey = "monster.diseased_dan.voice_2"},
+	{ text = "Is that you, Tom?", yell = false , i18nKey = "monster.diseased_dan.voice_3"},
+	{ text = "Phew, what an awful smell ... oh, that's me.", yell = false , i18nKey = "monster.diseased_dan.voice_4"},
 }
 
 monster.loot = {

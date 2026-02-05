@@ -65,7 +65,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "By Durin's beard!", yell = true },
+	{ text = "By Durin's beard!", yell = true , i18nKey = "monster.foreman_kneebiter.voice_1"},
 }
 
 monster.loot = {

@@ -73,9 +73,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "You tasty!", yell = false },
-	{ text = "Must! Chop! Food! Raahh!", yell = false },
-	{ text = "UGGA UGGA!!", yell = true },
+	{ text = "You tasty!", yell = false , i18nKey = "monster.ogre_savage.voice_1"},
+	{ text = "Must! Chop! Food! Raahh!", yell = false , i18nKey = "monster.ogre_savage.voice_2"},
+	{ text = "UGGA UGGA!!", yell = true , i18nKey = "monster.ogre_savage.voice_3"},
 }
 
 monster.loot = {

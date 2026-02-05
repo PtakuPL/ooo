@@ -73,10 +73,10 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Me mash!", yell = false },
-	{ text = "GRRRRR!", yell = true },
-	{ text = "Muhahaha!", yell = false },
-	{ text = "Me strong, you weak!", yell = false },
+	{ text = "Me mash!", yell = false , i18nKey = "monster.orclops_doomhauler.voice_1"},
+	{ text = "GRRRRR!", yell = true , i18nKey = "monster.orclops_doomhauler.voice_2"},
+	{ text = "Muhahaha!", yell = false , i18nKey = "monster.orclops_doomhauler.voice_3"},
+	{ text = "Me strong, you weak!", yell = false , i18nKey = "monster.orclops_doomhauler.voice_4"},
 }
 
 monster.loot = {

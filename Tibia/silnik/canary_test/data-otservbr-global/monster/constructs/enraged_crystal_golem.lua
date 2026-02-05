@@ -74,7 +74,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Crrrrk! Chhhhr!", yell = false },
+	{ text = "Crrrrk! Chhhhr!", yell = false , i18nKey = "monster.enraged_crystal_golem.voice_1"},
 }
 
 monster.loot = {

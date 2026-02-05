@@ -71,8 +71,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "For the victory!", yell = false },
-	{ text = "We will crush the enemy!", yell = false },
+	{ text = "For the victory!", yell = false , i18nKey = "monster.minotaur_invader.voice_1"},
+	{ text = "We will crush the enemy!", yell = false , i18nKey = "monster.minotaur_invader.voice_2"},
 }
 
 monster.loot = {

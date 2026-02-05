@@ -73,8 +73,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Chaarr!!", yell = false },
-	{ text = "Ngl..Nglll...Gll", yell = false },
+	{ text = "Chaarr!!", yell = false , i18nKey = "monster.tomb_servant.voice_1"},
+	{ text = "Ngl..Nglll...Gll", yell = false , i18nKey = "monster.tomb_servant.voice_2"},
 }
 
 monster.loot = {

@@ -67,8 +67,8 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "NO ONE WILL BEAT ME", yell = true },
-	{ text = "I am the test that you won't pass!", yell = false },
+	{ text = "NO ONE WILL BEAT ME", yell = true , i18nKey = "monster.the_obliverator.voice_1"},
+	{ text = "I am the test that you won't pass!", yell = false , i18nKey = "monster.the_obliverator.voice_2"},
 }
 
 monster.loot = {}

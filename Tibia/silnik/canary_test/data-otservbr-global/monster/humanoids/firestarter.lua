@@ -71,13 +71,13 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "FIRE!", yell = true },
-	{ text = "BURN!", yell = true },
-	{ text = "DEATH to the FALSE GOD!!", yell = false },
-	{ text = "You shall burn in the thornfires!!", yell = false },
-	{ text = "DOWN with the followers of the bog!!", yell = false },
-	{ text = "Hey, what's that burnt stench... isn't that... YOU?", yell = false },
-	{ text = "Set everything on fire!!", yell = false },
+	{ text = "FIRE!", yell = true , i18nKey = "monster.firestarter.voice_1"},
+	{ text = "BURN!", yell = true , i18nKey = "monster.firestarter.voice_2"},
+	{ text = "DEATH to the FALSE GOD!!", yell = false , i18nKey = "monster.firestarter.voice_3"},
+	{ text = "You shall burn in the thornfires!!", yell = false , i18nKey = "monster.firestarter.voice_4"},
+	{ text = "DOWN with the followers of the bog!!", yell = false , i18nKey = "monster.firestarter.voice_5"},
+	{ text = "Hey, what's that burnt stench... isn't that... YOU?", yell = false , i18nKey = "monster.firestarter.voice_6"},
+	{ text = "Set everything on fire!!", yell = false , i18nKey = "monster.firestarter.voice_7"},
 }
 
 monster.loot = {

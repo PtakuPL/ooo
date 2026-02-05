@@ -70,10 +70,10 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "You can't escape death forever", yell = false },
-	{ text = "Come closer to learn the final lesson", yell = false },
-	{ text = "Undeath will shatter my shackles.", yell = false },
-	{ text = "You don't need this magic anymore.", yell = false },
+	{ text = "You can't escape death forever", yell = false , i18nKey = "monster.dipthrah.voice_1"},
+	{ text = "Come closer to learn the final lesson", yell = false , i18nKey = "monster.dipthrah.voice_2"},
+	{ text = "Undeath will shatter my shackles.", yell = false , i18nKey = "monster.dipthrah.voice_3"},
+	{ text = "You don't need this magic anymore.", yell = false , i18nKey = "monster.dipthrah.voice_4"},
 }
 
 monster.loot = {

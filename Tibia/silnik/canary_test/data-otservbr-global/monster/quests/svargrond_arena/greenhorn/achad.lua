@@ -60,8 +60,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "You won't pass me.", yell = false },
-	{ text = "I have travelled far to fight here.", yell = false },
+	{ text = "You won't pass me.", yell = false , i18nKey = "monster.achad.voice_1"},
+	{ text = "I have travelled far to fight here.", yell = false , i18nKey = "monster.achad.voice_2"},
 }
 
 monster.loot = {}

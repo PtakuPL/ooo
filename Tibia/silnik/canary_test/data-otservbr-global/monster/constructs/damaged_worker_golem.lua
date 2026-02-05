@@ -71,14 +71,14 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Klonk klonk klonk", yell = false },
-	{ text = "Failure! Failure!", yell = false },
-	{ text = "Good morning citizen. How may I serve you?", yell = false },
-	{ text = "Target identified: Rat! Termination initiated!", yell = false },
-	{ text = "Rrrtttarrrttarrrtta", yell = false },
-	{ text = "Danger will...chrrr! Danger!", yell = false },
-	{ text = "Self-diagnosis failed.", yell = false },
-	{ text = "Aw... chhhrrr orders.", yell = false },
+	{ text = "Klonk klonk klonk", yell = false , i18nKey = "monster.damaged_worker_golem.voice_1"},
+	{ text = "Failure! Failure!", yell = false , i18nKey = "monster.damaged_worker_golem.voice_2"},
+	{ text = "Good morning citizen. How may I serve you?", yell = false , i18nKey = "monster.damaged_worker_golem.voice_3"},
+	{ text = "Target identified: Rat! Termination initiated!", yell = false , i18nKey = "monster.damaged_worker_golem.voice_4"},
+	{ text = "Rrrtttarrrttarrrtta", yell = false , i18nKey = "monster.damaged_worker_golem.voice_5"},
+	{ text = "Danger will...chrrr! Danger!", yell = false , i18nKey = "monster.damaged_worker_golem.voice_6"},
+	{ text = "Self-diagnosis failed.", yell = false , i18nKey = "monster.damaged_worker_golem.voice_7"},
+	{ text = "Aw... chhhrrr orders.", yell = false , i18nKey = "monster.damaged_worker_golem.voice_8"},
 }
 
 monster.loot = {

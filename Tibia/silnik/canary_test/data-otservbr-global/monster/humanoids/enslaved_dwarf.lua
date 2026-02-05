@@ -74,8 +74,8 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Bark!", yell = false },
-	{ text = "Blood!", yell = false },
+	{ text = "Bark!", yell = false , i18nKey = "monster.enslaved_dwarf.voice_1"},
+	{ text = "Blood!", yell = false , i18nKey = "monster.enslaved_dwarf.voice_2"},
 }
 
 monster.loot = {

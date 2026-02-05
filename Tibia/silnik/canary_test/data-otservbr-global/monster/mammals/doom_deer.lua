@@ -71,7 +71,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I bet it was you who killed my mom!", yell = false },
+	{ text = "I bet it was you who killed my mom!", yell = false , i18nKey = "monster.doom_deer.voice_1"},
 }
 
 monster.loot = {

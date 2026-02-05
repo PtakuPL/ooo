@@ -121,7 +121,7 @@ function Gobbler_onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	end
 
 	slime_exhaust[player.uid] = time + config.slime_exhaust
-	player:say("The slime gobbler gobbles large chunks of the slime fungus with great satisfaction.", TALKTYPE_MONSTER_SAY)
+	player:sayLocalized("lib.their_masters_voice.say_3", TALKTYPE_MONSTER_SAY)
 	player:addExperience(20, true, true)
 	slimes_removed[#slimes_removed + 1] = { cid = player.uid, id = target.itemid, pos = toPosition }
 	target:transform(12065)
@@ -132,7 +132,7 @@ function Gobbler_onUse(player, item, fromPosition, target, toPosition, isHotkey)
 			if slimes_removed[i].cid == player.uid then
 				slime_count = slime_count + 1
 				if slime_count >= config.slimes_needed then
-					player:say("You gobbled enough slime to get a good grip on this dungeon's slippery floor.", TALKTYPE_MONSTER_SAY)
+					player:sayLocalized("lib.their_masters_voice.say_2", TALKTYPE_MONSTER_SAY)
 					valid_participants[#valid_participants + 1] = player.uid
 					break
 				end
@@ -143,7 +143,7 @@ function Gobbler_onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if #slimes_removed == 1 then
 		addEvent(revertQuest, config.quest_duration * 60 * 1000)
 	elseif #slimes_removed >= config.max_slimes and current_wave == 0 then
-		player:say("COME! My servants! RISE!", TALKTYPE_MONSTER_SAY)
+		player:sayLocalized("lib.their_masters_voice.say_1", TALKTYPE_MONSTER_SAY)
 		startServantWave()
 	end
 	return true

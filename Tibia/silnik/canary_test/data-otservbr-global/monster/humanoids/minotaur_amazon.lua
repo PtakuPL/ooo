@@ -70,9 +70,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I'll protect the herd!", yell = false },
-	{ text = "Never surrender!", yell = false },
-	{ text = "You won't hurt us!", yell = false },
+	{ text = "I'll protect the herd!", yell = false , i18nKey = "monster.minotaur_amazon.voice_1"},
+	{ text = "Never surrender!", yell = false , i18nKey = "monster.minotaur_amazon.voice_2"},
+	{ text = "You won't hurt us!", yell = false , i18nKey = "monster.minotaur_amazon.voice_3"},
 }
 
 monster.loot = {

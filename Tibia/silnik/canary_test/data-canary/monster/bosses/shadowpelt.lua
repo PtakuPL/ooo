@@ -72,8 +72,8 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "The strength of bears will subdue the weak!", yell = false },
-	{ text = "It was a mistake to enter my cave!", yell = false },
+	{ text = "The strength of bears will subdue the weak!", yell = false , i18nKey = "monster.shadowpelt.voice_1"},
+	{ text = "It was a mistake to enter my cave!", yell = false , i18nKey = "monster.shadowpelt.voice_2"},
 }
 
 monster.loot = {

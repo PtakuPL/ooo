@@ -73,7 +73,7 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Tar Marra Zik Tazz!", yell = false },
+	{ text = "Tar Marra Zik Tazz!", yell = false , i18nKey = "monster.shaper_matriarch.voice_1"},
 }
 
 monster.loot = {

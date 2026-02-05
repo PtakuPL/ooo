@@ -74,12 +74,12 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Close your eyes... I want to show you something.", yell = false },
-	{ text = "I will haunt you forever!", yell = false },
-	{ text = "Pffffrrrrrrrrrrrr.", yell = false },
-	{ text = "I will make you scream.", yell = false },
-	{ text = "Take a ride with me.", yell = false },
-	{ text = "Weeeheeheeeheee!", yell = false },
+	{ text = "Close your eyes... I want to show you something.", yell = false , i18nKey = "monster.nightmare.voice_1"},
+	{ text = "I will haunt you forever!", yell = false , i18nKey = "monster.nightmare.voice_2"},
+	{ text = "Pffffrrrrrrrrrrrr.", yell = false , i18nKey = "monster.nightmare.voice_3"},
+	{ text = "I will make you scream.", yell = false , i18nKey = "monster.nightmare.voice_4"},
+	{ text = "Take a ride with me.", yell = false , i18nKey = "monster.nightmare.voice_5"},
+	{ text = "Weeeheeheeeheee!", yell = false , i18nKey = "monster.nightmare.voice_6"},
 }
 
 monster.loot = {

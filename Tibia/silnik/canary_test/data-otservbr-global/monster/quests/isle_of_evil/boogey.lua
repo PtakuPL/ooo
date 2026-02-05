@@ -72,11 +72,11 @@ monster.summon = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "Since you didn't eat your spinach Bogey comes to get you!", yell = false },
-	{ text = "Too bad you did not eat your lunch, now I have to punish you!", yell = false },
-	{ text = "Even if you beat me, I'll hide in your closet until you one day drop your guard!", yell = false },
-	{ text = "You better had believe in me!", yell = false },
-	{ text = "I'll take you into the darkness ... forever!", yell = false },
+	{ text = "Since you didn't eat your spinach Bogey comes to get you!", yell = false , i18nKey = "monster.boogey.voice_1"},
+	{ text = "Too bad you did not eat your lunch, now I have to punish you!", yell = false , i18nKey = "monster.boogey.voice_2"},
+	{ text = "Even if you beat me, I'll hide in your closet until you one day drop your guard!", yell = false , i18nKey = "monster.boogey.voice_3"},
+	{ text = "You better had believe in me!", yell = false , i18nKey = "monster.boogey.voice_4"},
+	{ text = "I'll take you into the darkness ... forever!", yell = false , i18nKey = "monster.boogey.voice_5"},
 }
 
 monster.loot = {

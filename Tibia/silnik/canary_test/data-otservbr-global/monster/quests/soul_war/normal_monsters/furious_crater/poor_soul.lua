@@ -61,9 +61,9 @@ monster.light = {
 monster.voices = {
 	interval = 5000,
 	chance = 10,
-	{ text = "I have a head start.", yell = false },
-	{ text = "Look into my eyes! No, the other ones!", yell = false },
-	{ text = "The mirrors can't contain the night!", yell = false },
+	{ text = "I have a head start.", yell = false , i18nKey = "monster.poor_soul.voice_1"},
+	{ text = "Look into my eyes! No, the other ones!", yell = false , i18nKey = "monster.poor_soul.voice_2"},
+	{ text = "The mirrors can't contain the night!", yell = false , i18nKey = "monster.poor_soul.voice_3"},
 }
 
 monster.loot = {

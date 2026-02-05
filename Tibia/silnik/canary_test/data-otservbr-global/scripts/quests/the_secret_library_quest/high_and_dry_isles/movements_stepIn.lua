@@ -88,7 +88,7 @@ function movements_isle_stepIn.onStepIn(creature, item, position, fromPosition)
 				player:teleportTo(fromPosition, true)
 			end
 		else
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You must wait. Someone is challenging " .. raxias.bossName .. " now.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.boss_portal.someone_challenging", raxias.bossName)
 			player:teleportTo(fromPosition, true)
 		end
 	end

@@ -684,5 +684,7 @@
   "scripts.boss_portal.level_required": "All the players need to be level {} or higher.",
   "scripts.boss_portal.wait_cooldown": "You have to wait {} hours to face {} again!",
   "scripts.boss_portal.time_to_defeat": "You have {} minutes to defeat Drume.",
-  "scripts.quest_common.found_article_item": "You have found a {}."
+  "scripts.boss_portal.someone_challenging": "You must wait. Someone is challenging {} now.",
+  "scripts.quest_common.found_article_item": "You have found a {}.",
+  "scripts.quest_common.need_players": "You need atleast {} players inside the quest room."
 }

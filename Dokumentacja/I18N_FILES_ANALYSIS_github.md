@@ -14,10 +14,10 @@ This document tracks i18n migration progress made during GitHub Copilot sessions
 
 | Metric | Value |
 |--------|-------|
-| 📁 Files Migrated | 8 |
-| 🔑 New Keys Added (EN) | 50+ |
+| 📁 Files Migrated | 12 |
+| 🔑 New Keys Added (EN) | 55+ |
 | 🌐 **Translations Added (PL)** | **1,988+** |
-| ⏱️ Session Duration | ~240 min |
+| ⏱️ Session Duration | ~300 min |
 | ✅ OTClient PL Completion | **100%** |
 
 ---
@@ -33,6 +33,22 @@ This document tracks i18n migration progress made during GitHub Copilot sessions
 | `mission09_rock_troll.lua` | 4 tile keys | ✅ |
 | `mission10_tomb_raiding.lua` | 5 tile keys | ✅ |
 | `mission12_into_fortress.lua` | 12 tile keys + 2 barrier/lever keys | ✅ |
+| `quest_system1.lua` | 4 common keys | ✅ |
+| `quest_system2.lua` | 4 common keys | ✅ |
+| `actions_vocation_reward.lua` | 1 common key | ✅ |
+| `actions_findings.lua` | 1 common key | ✅ |
+| `actions_treasure_chest.lua` | 2 common keys | ✅ |
+
+### Common Keys (Reusable)
+
+```json
+"scripts.quest_common.chest_empty": "The {} is empty.",
+"scripts.quest_common.found_item": "You have found {}.",
+"scripts.quest_common.found_too_heavy": "You have found {}. Weighing {} oz, it is too heavy.",
+"scripts.quest_common.found_no_room": "You have found {}, but you have no room to take it.",
+"scripts.quest_common.found_no_capacity": "You have found {} weighing {} oz. You have no capacity.",
+"scripts.quest_common.found_count_item": "You found {} {}."
+```
 
 ### New Keys Added to `i18n/en/scripts.json`
 

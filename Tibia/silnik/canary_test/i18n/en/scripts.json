@@ -675,5 +675,10 @@
   "scripts.mission12_into_fortress.tile_11": "Got your tarantula trap ready? You might need to use it soon...",
   "scripts.mission12_into_fortress.tile_12": "Beware... you're approaching Kraknaknork's room. Once you enter, you have only 5 minutes to kill him before he throws you out.",
   "scripts.mission12_into_fortress.barrier_1": "Kraknaknork maintains strong energy barriers. There is only one way to disable them.",
-  "scripts.mission12_into_fortress.lever_1": "The energy barrier to the south temporarily disappeared."
+  "scripts.mission12_into_fortress.lever_1": "The energy barrier to the south temporarily disappeared.",
+  "scripts.quest_common.found_item": "You have found {}.",
+  "scripts.quest_common.found_too_heavy": "You have found {}. Weighing {} oz, it is too heavy.",
+  "scripts.quest_common.found_no_room": "You have found {}, but you have no room to take it.",
+  "scripts.quest_common.found_no_capacity": "You have found {} weighing {} oz. You have no capacity.",
+  "scripts.quest_common.found_count_item": "You found {} {}."
 }

@@ -93,7 +93,7 @@ function treasureChest.onUse(player, item, fromPosition, target, toPosition, isH
 
 	local storageValue = player:getStorageValue(item.uid)
 	if storageValue > 0 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The " .. item:getName() .. " is empty.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.quest_common.chest_empty", item:getName())
 		return true
 	end
 
@@ -109,11 +109,11 @@ function treasureChest.onUse(player, item, fromPosition, target, toPosition, isH
 	player:setStorageValue(Storage.Quest.U11_02.TheFirstDragon.ChestCounter, player:getStorageValue(Storage.Quest.U11_02.TheFirstDragon.ChestCounter) + 1)
 
 	if setting.name then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You found " .. setting.count .. " " .. setting.name .. ".")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.quest_common.found_count_item", setting.count, setting.name)
 		player:addItem(setting.name, setting.count, true)
 	elseif setting.itemId then
 		player:addItem(setting.itemId, setting.count, true)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You found " .. setting.count .. " " .. getItemName(setting.itemId) .. ".")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.quest_common.found_count_item", setting.count, getItemName(setting.itemId))
 	end
 	return true
 end

@@ -14,5 +14,8 @@
     "not_on_mission": "You are not on that mission.",
     "complete_first": "You need to complete {} first.",
     "required_item": "You need {} to proceed."
+  },
+  "roshamuul": {
+    "use_on_plateau": "Use on Silencer Plateau is located in the south-eastern part of Roshamuul"
   }
 }

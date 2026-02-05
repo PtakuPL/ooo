@@ -664,5 +664,6 @@
   "scripts.common.boss_challenging": "You must wait. Someone is challenging {} now.",
   "scripts.common.min_players_required": "You need at least {} players inside the quest room.",
   "scripts.canary_quests.found_item": "You have found a {}.",
-  "scripts.canary_quests.found_item_too_heavy": "You have found a {} weighing {} oz it's too heavy."
+  "scripts.canary_quests.found_item_too_heavy": "You have found a {} weighing {} oz it's too heavy.",
+  "scripts.common.empty": "It is empty."
 }

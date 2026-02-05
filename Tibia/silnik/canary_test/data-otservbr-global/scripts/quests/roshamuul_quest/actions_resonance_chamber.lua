@@ -64,11 +64,11 @@ function lowerRoshamuulChamber.onUse(cid, item, fromPosition, itemEx, toPosition
 		end
 	end
 	if not hasPlayer then
-		player:sendCancelMessage("Use on Silencer Plateau is located in the south-eastern part of Roshamuul")
+		player:sendLocalizedCancelMessage("quests.roshamuul.use_on_plateau")
 		return true
 	end
 	if hasMonsters then
-		player:sendCancelMessage("You need kill all monsters")
+		player:sendLocalizedCancelMessage("quests.common.kill_monsters_first")
 		return true
 	end
 
@@ -100,7 +100,7 @@ function lowerRoshamuulChamber.onUse(cid, item, fromPosition, itemEx, toPosition
 		end
 		item:remove(1)
 	else
-		player:sendCancelMessage("You need to wait")
+		player:sendLocalizedCancelMessage("quests.common.need_wait")
 	end
 end
 

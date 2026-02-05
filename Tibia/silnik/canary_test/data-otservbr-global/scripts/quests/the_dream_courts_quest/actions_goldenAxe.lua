@@ -44,7 +44,7 @@ local function tryCrystal(player, itemid, position, actionid, message, rewardid)
 					crystal:getPosition():sendMagicEffect(CONST_ME_POFF)
 				end
 			else
-				player:sendCancelMessage("You must wait a while to use this item again.")
+				player:sendLocalizedCancelMessage("quests.common.need_wait")
 			end
 		end
 	end

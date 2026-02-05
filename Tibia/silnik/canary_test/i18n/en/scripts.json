@@ -639,5 +639,15 @@
   "scripts.voting_oramond.say_1": "Slrrp!",
   "scripts.wall_mirror.say_1": "Don't be so vain about your appearance.",
   "scripts.white_deer_scouts.say_1": "The elves came too late to save the deer, however they might avenge it.",
-  "scripts.yellow_pillow.say_1": "Faaart!"
+  "scripts.yellow_pillow.say_1": "Faaart!",
+  "scripts.quest_system1.chest_empty": "The {} is empty.",
+  "scripts.quest_system1.found_item": "You have found {}.",
+  "scripts.quest_system2.chest_empty": "The {} is empty.",
+  "scripts.quest_system2.found_item": "You have found {}.",
+  "scripts.quest_reward_common.reward_message": "{}.",
+  "scripts.quest_reward_common.no_room": "{} But you have no room to take it.",
+  "scripts.quest_reward_common.too_heavy": "{}. Weighing {} oz, it is too heavy for you to carry.",
+  "scripts.quest_reward_common.chest_empty": "The {} is empty.",
+  "scripts.bosses_reward.boss_defends": "{} defends his belongings and will not let you open his chest.",
+  "scripts.golden.boss_timeout": "You have faced this boss in the last {} hours."
 }

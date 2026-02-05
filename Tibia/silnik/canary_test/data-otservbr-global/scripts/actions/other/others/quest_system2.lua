@@ -365,7 +365,7 @@ function questSystem2.onUse(player, item, fromPosition, target, toPosition, isHo
 	end
 
 	if (useItem.time and player:getStorageValue(useItem.storage) > os.time()) or player:getStorageValue(useItem.storage) ~= (useItem.formerValue or -1) then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The " .. ItemType(item.itemid):getName() .. " is empty.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.quest_system2.chest_empty", ItemType(item.itemid):getName())
 		return true
 	end
 
@@ -468,7 +468,7 @@ function questSystem2.onUse(player, item, fromPosition, target, toPosition, isHo
 		player:setStorageValue(useItem.missionStorage.key, useItem.missionStorage.value)
 	end
 
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have found " .. result .. ".")
+	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.quest_system2.found_item", result)
 	if useItem.time then
 		player:setStorageValue(useItem.storage, os.time() + 86400)
 	else

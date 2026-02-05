@@ -655,5 +655,7 @@
   "scripts.soul_war.taint_removed": "Removed taint level: {}, name: {} from player: {}",
   "scripts.soul_war.taint_gained": "You have gained the {}.",
   "scripts.soulpit.soul_core_received": "You have received a {} soul core.",
-  "scripts.common.fame_point": "You have received a fame point."
+  "scripts.common.fame_point": "You have received a fame point.",
+  "scripts.common.level_required": "All the players need to be level {} or higher.",
+  "scripts.common.boss_cooldown": "You have to wait {} hours to face {} again!"
 }

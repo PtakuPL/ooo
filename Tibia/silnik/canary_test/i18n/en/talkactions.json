@@ -212,6 +212,13 @@
       "player_not_valid": "Player '{}' not found or is not a valid player.",
       "kv_set": "KV: [{}] = {} set for {}",
       "boss_cooldown_cleared": "Boss cooldown for {} cleared."
+    },
+    "manage_storage": {
+      "insufficient_params": "Insufficient parameters.",
+      "invalid_storage_key": "Invalid storage key or name.",
+      "storage_not_exist": "The storage with id: {} does not exist or is not set for player {}.",
+      "storage_value": "The storage with id: {} from player {} is: {}.",
+      "set_storage": "Set storage: {} to player {}, newValue: {}."
     }
   }
 }

@@ -219,6 +219,16 @@
       "storage_not_exist": "The storage with id: {} does not exist or is not set for player {}.",
       "storage_value": "The storage with id: {} from player {} is: {}.",
       "set_storage": "Set storage: {} to player {}, newValue: {}."
+    },
+    "sound": {
+      "invalid_param": "Invalid command param.",
+      "invalid_params": "Invalid command params.",
+      "playing_area_single": "Playing sound number {} on the area.",
+      "playing_area_dual": "Playing sound number {} and {} on the area.",
+      "playing_internal_single": "Playing sound number {} internally.",
+      "playing_internal_dual": "Playing sound number {} and {} internally.",
+      "playing_global_single": "Playing sound number {} globally.",
+      "playing_global_dual": "Playing sound number {} and {} globally."
     }
   }
 }

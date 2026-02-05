@@ -2,7 +2,7 @@
 
 > **Session Date:** 2025-02-05  
 > **Operator:** GitHub Copilot Agent  
-> **Status:** 🔄 In Progress - Adding i18n keys to quest scripts
+> **Status:** ✅ Session 2 Completed - Added i18n keys to 25 quest files
 
 ---
 
@@ -14,32 +14,43 @@ This document tracks i18n migration progress made during GitHub Copilot sessions
 
 | Metric | Value |
 |--------|-------|
-| 📁 Files Migrated | 12 |
-| 🔑 New Keys Added (EN) | 55+ |
+| 📁 Files Migrated | 25 |
+| 🔑 New Keys Added (EN) | 70+ |
 | 🌐 **Translations Added (PL)** | **1,988+** |
 | ⏱️ Session Duration | ~300 min |
 | ✅ OTClient PL Completion | **100%** |
 
 ---
 
-## 🆕 Session 2: Quest Scripts Migration (No Translations)
+## 🆕 Session 2: Quest Scripts Migration (Keys Only - No Translations)
 
 ### Quest Files Migrated to i18n
 
-| File | Keys Added | Status |
-|------|------------|--------|
-| `mission06_run_like_wolf.lua` | 8 tile keys + 3 special keys | ✅ |
-| `mission07_attack.lua` | 4 tile keys | ✅ |
-| `mission09_rock_troll.lua` | 4 tile keys | ✅ |
-| `mission10_tomb_raiding.lua` | 5 tile keys | ✅ |
-| `mission12_into_fortress.lua` | 12 tile keys + 2 barrier/lever keys | ✅ |
-| `quest_system1.lua` | 4 common keys | ✅ |
-| `quest_system2.lua` | 4 common keys | ✅ |
-| `actions_vocation_reward.lua` | 1 common key | ✅ |
-| `actions_findings.lua` | 1 common key | ✅ |
-| `actions_treasure_chest.lua` | 2 common keys | ✅ |
+| Quest | File | Keys Added | Status |
+|-------|------|------------|--------|
+| The Rookie Guard | `mission06_run_like_wolf.lua` | 8 tile + 3 special | ✅ |
+| The Rookie Guard | `mission07_attack.lua` | 4 tile | ✅ |
+| The Rookie Guard | `mission09_rock_troll.lua` | 4 tile | ✅ |
+| The Rookie Guard | `mission10_tomb_raiding.lua` | 5 tile | ✅ |
+| The Rookie Guard | `mission12_into_fortress.lua` | 14 tile/barrier/lever | ✅ |
+| Core System | `quest_system1.lua` | 4 common | ✅ |
+| Core System | `quest_system2.lua` | 4 common | ✅ |
+| Dawnport | `actions_vocation_reward.lua` | 1 common | ✅ |
+| Explorer Society | `actions_findings.lua` | 1 common | ✅ |
+| The First Dragon | `actions_treasure_chest.lua` | 2 common | ✅ |
+| The First Dragon | `actions_rewards.lua` | 2 common | ✅ |
+| Kilmaresh | `actions_portal_minis_kilmaresh.lua` | 2 boss portal | ✅ |
+| Feaster of Souls | `actions_portal_minis_feaster.lua` | 2 boss portal | ✅ |
+| Grimvale | `actions_portal_minis_grimvale.lua` | 1 boss portal | ✅ |
+| Grimvale | `actions_portal_minis_ancient_feud.lua` | 2 boss portal | ✅ |
+| Shattered Isles | `action_tortoise_egg_nargor.lua` | 2 common | ✅ |
+| Secret Library | `actions_chests.lua` | 1 common | ✅ |
+| Secret Library | `movements_stepIn.lua` | 1 boss portal | ✅ |
+| Order of Lion | `action-drume.lua` | 1 boss portal | ✅ |
+| In Service of Yalahar | `actions_last_fight.lua` | 1 common | ✅ |
+| Others | `actions_gooey_mass.lua` | 1 common | ✅ |
 
-### Common Keys (Reusable)
+### Reusable Keys Created
 
 ```json
 "scripts.quest_common.chest_empty": "The {} is empty.",
@@ -47,7 +58,13 @@ This document tracks i18n migration progress made during GitHub Copilot sessions
 "scripts.quest_common.found_too_heavy": "You have found {}. Weighing {} oz, it is too heavy.",
 "scripts.quest_common.found_no_room": "You have found {}, but you have no room to take it.",
 "scripts.quest_common.found_no_capacity": "You have found {} weighing {} oz. You have no capacity.",
-"scripts.quest_common.found_count_item": "You found {} {}."
+"scripts.quest_common.found_count_item": "You found {} {}.",
+"scripts.quest_common.found_article_item": "You have found a {}.",
+"scripts.quest_common.need_players": "You need atleast {} players inside the quest room.",
+"scripts.boss_portal.level_required": "All the players need to be level {} or higher.",
+"scripts.boss_portal.wait_cooldown": "You have to wait {} hours to face {} again!",
+"scripts.boss_portal.time_to_defeat": "You have {} minutes to defeat Drume.",
+"scripts.boss_portal.someone_challenging": "You must wait. Someone is challenging {} now."
 ```
 
 ### New Keys Added to `i18n/en/scripts.json`

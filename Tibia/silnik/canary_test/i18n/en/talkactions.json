@@ -80,6 +80,24 @@
     "create_item": {
       "no_item": "There is no item with that id or name.",
       "invalid_tier": "Invalid tier count."
+    },
+    "add_addon": {
+      "usage": "Usage: /addaddon <player name>, <looktype or 'all'>, <value>",
+      "invalid_value": "Invalid addon value. It should be between 0 and 3.",
+      "invalid_looktype": "Invalid looktype."
+    },
+    "add_money": {
+      "param_required": "Player name param required",
+      "player_not_exist": "A player with name {} does not exist.",
+      "invalid_amount": "Invalid amount.",
+      "failed": "Failed to add money to {}."
+    },
+    "add_mount": {
+      "usage": "Usage: /addmount <playername>, <mount id or 'all'>",
+      "invalid_id": "Invalid mount ID."
+    },
+    "create_npc": {
+      "not_enough_room": "There is not enough room."
     }
   }
 }

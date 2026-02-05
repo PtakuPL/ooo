@@ -2,7 +2,7 @@
 
 > **Session Date:** 2025-02-04  
 > **Operator:** GitHub Copilot Agent  
-> **Status:** 🔄 In Progress
+> **Status:** ✅ Completed
 
 ---
 
@@ -16,8 +16,8 @@ This document tracks i18n migration progress made during GitHub Copilot sessions
 |--------|-------|
 | 📁 Files Migrated | 2 |
 | 🔑 New Keys Added (EN) | 10 |
-| 🌐 Translations Added (PL) | 180+ |
-| ⏱️ Session Duration | ~60 min |
+| 🌐 Translations Added (PL) | **700+** |
+| ⏱️ Session Duration | ~90 min |
 
 ---
 
@@ -171,7 +171,38 @@ NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "key", { player:getN
 
 ## 🌐 OTClient UI Translations Added (PL)
 
-### Basic UI Elements (180+ translations):
+### Full Translations List (700+ strings):
+
+| Category | Count | Status |
+|----------|-------|--------|
+| **Basic UI Elements** | ~60 | ✅ |
+| **Character Stats** | ~95 | ✅ |
+| **Character UI** | ~97 | ✅ |
+| **Character List / Login** | ~28 | ✅ |
+| **Charms System** | ~80 | ✅ |
+| **Console / Chat** | ~40 | ✅ |
+| **Communication Settings** | ~16 | ✅ |
+| **Create Account** | ~40 | ✅ |
+| **Cyclopedia Widgets** | ~40 | ✅ |
+| **Effects / Visual** | ~10 | ✅ |
+| **Enter Game / Login** | ~35 | ✅ |
+| **Action Bar** | ~7 | ✅ |
+| **Cyclopedia / Bestiary** | ~15 | ✅ |
+| **Health Circle** | ~18 | ✅ |
+| **Highscores** | ~25 | ✅ |
+| **Quest Log / Tracker** | ~10 | ✅ |
+| **Screenshots** | ~10 | ✅ |
+| **Shop / Store** | ~35 | ✅ |
+| **Stash** | ~6 | ✅ |
+| **Game Interface (menus)** | ~55 | ✅ |
+| **General Options** | ~18 | ✅ |
+| **Gift / Coins** | ~12 | ✅ |
+| **Graphics Options** | ~16 | ✅ |
+| **Help** | ~5 | ✅ |
+| **Hotkeys Manager** | ~30 | ✅ |
+| **House System** | ~100 | ✅ |
+
+### Examples by Category
 
 | Category | Examples |
 |----------|----------|
@@ -186,6 +217,10 @@ NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "key", { player:getN
 | **Boss System** | Punkty Bossów, Mistrzostwo, Ekspertyza, Biegłość |
 | **Calendar** | Poniedziałek-Niedziela, Harmonogram Wydarzeń |
 | **Character Stats** | Obrażenia, Obrona, Kradzież Życia, Trafienie Krytyczne |
+| **Charms** | Klątwa, Trucizna, Podpalenie, Zamrożenie, Porażenie |
+| **Login** | Zaloguj, Hasło, Token, Błąd Logowania |
+| **Shop** | Kup, Saldo, Tibia Coins, Potwierdzenie Zakupu |
+| **House** | Licytuj, Transfer, Wyprowadź się, Czynsz, Aukcja |
 
 ---
 

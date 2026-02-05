@@ -4,14 +4,14 @@ function addAchievement.onSay(player, words, param)
 	logCommand(player, words, param)
 	local params = param:split(",")
 	if #params < 2 then
-		player:sendCancelMessage("Usage: /addachievement playerName, achievementId|Name")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "god.achievement_functions.usage_add")
 		return true
 	end
 
 	local targetPlayerName, achievementIdentifier = params[1], params[2]
 	local targetPlayer = Player(targetPlayerName)
 	if not targetPlayer then
-		player:sendCancelMessage("Player " .. targetPlayerName .. " is not online.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "god.achievement_functions.player_not_online", {targetPlayerName})
 		return true
 	end
 
@@ -19,7 +19,7 @@ function addAchievement.onSay(player, words, param)
 	local achievementName = tostring(achievementIdentifier):lower():trimSpace():titleCase()
 	local achievementInfo = achievementId and Game.getAchievementInfoById(achievementId) or Game.getAchievementInfoByName(achievementName)
 	if achievementInfo.id == 0 or achievementInfo.name == nil then
-		player:sendCancelMessage("Invalid achievement. Use valid ID or name.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "god.achievement_functions.invalid_achievement")
 		return true
 	end
 
@@ -38,14 +38,14 @@ function removeAchievement.onSay(player, words, param)
 	logCommand(player, words, param)
 	local params = param:split(",")
 	if #params < 2 then
-		player:sendCancelMessage("Usage: /removeachievement playerName, achievementId")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "god.achievement_functions.usage_remove")
 		return true
 	end
 
 	local targetPlayerName, achievementIdentifier = params[1], params[2]
 	local targetPlayer = Player(targetPlayerName)
 	if not targetPlayer then
-		player:sendCancelMessage("Player " .. targetPlayerName .. " is not online.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "god.achievement_functions.player_not_online", {targetPlayerName})
 		return true
 	end
 
@@ -53,7 +53,7 @@ function removeAchievement.onSay(player, words, param)
 	local achievementName = tostring(achievementIdentifier):lower():trimSpace():titleCase()
 	local achievementInfo = achievementId and Game.getAchievementInfoById(achievementId) or Game.getAchievementInfoByName(achievementName)
 	if not achievementInfo then
-		player:sendCancelMessage("Invalid achievement identifier. Use either ID or name.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "god.achievement_functions.invalid_identifier")
 		return true
 	end
 
@@ -71,13 +71,13 @@ local checkAchievements = TalkAction("/checkachievements")
 function checkAchievements.onSay(player, words, param)
 	logCommand(player, words, param)
 	if param == "" then
-		player:sendCancelMessage("Usage: /checkachievements playerName")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "god.achievement_functions.usage_check")
 		return true
 	end
 
 	local targetPlayer = Player(param)
 	if not targetPlayer then
-		player:sendCancelMessage("Player " .. param .. " is not online.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "god.achievement_functions.player_not_online", {param})
 		return true
 	end
 

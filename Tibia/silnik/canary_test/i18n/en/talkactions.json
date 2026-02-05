@@ -179,6 +179,39 @@
       "only_promote_normal": "You can only promote a normal player to a tutor.",
       "promoted_to_tutor": "You have been promoted to a tutor by {}.",
       "only_demote_tutor": "You can only demote a tutor to a normal player"
+    },
+    "attributes": {
+      "item_not_found": "Item not found.",
+      "cannot_add_to_item": "You cannot add that attribute to this item.",
+      "creature_not_found": "Creature not found.",
+      "cannot_add_to_creature": "You cannot add that attribute to this creature.",
+      "cannot_add_to_player": "You cannot add that attribute to this player.",
+      "unknown_attribute": "Unknown attribute."
+    },
+    "achievement_functions": {
+      "usage_add": "Usage: /addachievement playerName, achievementId|Name",
+      "usage_remove": "Usage: /removeachievement playerName, achievementId",
+      "usage_check": "Usage: /checkachievements playerName",
+      "player_not_online": "Player {} is not online.",
+      "invalid_achievement": "Invalid achievement. Use valid ID or name.",
+      "invalid_identifier": "Invalid achievement identifier. Use either ID or name."
+    },
+    "flags": {
+      "player_not_found": "Player {} not found.",
+      "player_not_have_flag": "Player {} not have flag type: {}.",
+      "player_have_flag": "Player {} have flag type: {}.",
+      "player_already_has_flag": "Player {} already has flag {}.",
+      "flag_set": "Flag {} set for player {}.",
+      "flag_removed": "Flag {} removed from player {}."
+    },
+    "manage_kv": {
+      "player_not_found": "Player {} not found.",
+      "kv_value": "kv[{}] for {}: {}",
+      "key_not_found": "Key {} not found for {}.",
+      "kv_global_value": "kv[{}] = {}",
+      "player_not_valid": "Player '{}' not found or is not a valid player.",
+      "kv_set": "KV: [{}] = {} set for {}",
+      "boss_cooldown_cleared": "Boss cooldown for {} cleared."
     }
   }
 }

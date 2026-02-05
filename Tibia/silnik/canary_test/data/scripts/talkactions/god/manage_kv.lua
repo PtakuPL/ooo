@@ -8,15 +8,15 @@ function get.onSay(player, words, param)
 
 	local targetPlayer = Player(playerName)
 	if not targetPlayer then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Player " .. playerName .. " not found.")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "god.manage_kv.player_not_found", {playerName})
 		return
 	end
 
 	local value = targetPlayer:kv():get(key)
 	if value then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "kv[" .. key .. "] for " .. playerName .. ": " .. PrettyString(value))
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "god.manage_kv.kv_value", {key, playerName, PrettyString(value)})
 	else
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Key " .. key .. " not found for " .. playerName .. ".")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "god.manage_kv.key_not_found", {key, playerName})
 	end
 end
 
@@ -34,7 +34,7 @@ function getAllKV.onSay(player, words, param)
 
 	local targetPlayer = Player(playerName)
 	if not targetPlayer then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Player " .. playerName .. " not found.")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "god.manage_kv.player_not_found", {playerName})
 		return
 	end
 
@@ -54,7 +54,7 @@ function getAllKV.onSay(player, words, param)
 	for _, key in ipairs(keys) do
 		local value = kv:get(key)
 		if type(value) == "number" and value >= 0 then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "kv[" .. key .. "] = " .. PrettyString(value))
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "god.manage_kv.kv_global_value", {key, PrettyString(value)})
 			found = true
 		end
 	end
@@ -84,7 +84,7 @@ function set.onSay(player, words, param)
 		if creature and creature:isPlayer() then
 			targetPlayer = creature:getPlayer()
 		else
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Player '" .. playerName .. "' not found or is not a valid player.")
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "god.manage_kv.player_not_valid", {playerName})
 			return false
 		end
 	end
@@ -99,7 +99,7 @@ function set.onSay(player, words, param)
 		return false
 	end
 	kv:set(key, parsedValue)
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "KV: [" .. key .. "] = " .. PrettyString(parsedValue) .. " set for " .. targetPlayer:getName())
+	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "god.manage_kv.kv_set", {key, PrettyString(parsedValue), targetPlayer:getName()})
 	return true
 end
 
@@ -116,12 +116,12 @@ function bossCooldown.onSay(player, words, param)
 	end
 	local targetPlayer = Player(playerName)
 	if not targetPlayer then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Player " .. playerName .. " not found.")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "god.manage_kv.player_not_found", {playerName})
 		return
 	end
 	targetPlayer:setBossCooldown(boss, 0)
 	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.manage_kv.msg_7" .. playerName .. " cleared.")
-	targetPlayer:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Boss cooldown for " .. boss .. " cleared.")
+	targetPlayer:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "god.manage_kv.boss_cooldown_cleared", {boss})
 end
 
 bossCooldown:separator(" ")

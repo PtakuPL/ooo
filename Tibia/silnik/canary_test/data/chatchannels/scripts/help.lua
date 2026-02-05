@@ -7,13 +7,13 @@ muted:setParameter(CONDITION_PARAM_TICKS, 3600000)
 function onSpeak(player, type, message)
 	local playerGroupType = player:getGroup():getId()
 	if player:getLevel() == 1 and playerGroupType == GROUP_TYPE_NORMAL then
-		player:sendCancelMessage("You may not speak into channels as long as you are on level 1.")
+		player:sendLocalizedMessage("channels.help.level_1_restriction")
 		return false
 	end
 
 	local hasExhaustion = player:kv():get("channel-help-exhaustion") or 0
 	if hasExhaustion > os.time() then
-		player:sendCancelMessage("You are muted from the Help channel for using it inappropriately.")
+		player:sendLocalizedMessage("channels.help.muted_inappropriate")
 		return false
 	end
 
@@ -28,10 +28,10 @@ function onSpeak(player, type, message)
 						target:kv():set("channel-help-exhaustion", os.time() + 180) -- 3 minutes
 						sendChannelMessage(CHANNEL_HELP, TALKTYPE_CHANNEL_R1, target:getName() .. " has been muted by " .. player:getName() .. " for using Help Channel inappropriately.")
 					else
-						player:sendCancelMessage("That player is already muted.")
+						player:sendLocalizedMessage("channels.help.player_already_muted")
 					end
 				else
-					player:sendCancelMessage("You are not authorized to mute that player.")
+					player:sendLocalizedMessage("channels.help.not_authorized_mute")
 				end
 			else
 				player:sendCancelMessage(RETURNVALUE_PLAYERWITHTHISNAMEISNOTONLINE)
@@ -48,10 +48,10 @@ function onSpeak(player, type, message)
 						sendChannelMessage(CHANNEL_HELP, TALKTYPE_CHANNEL_R1, target:getName() .. " has been unmuted.")
 						target:kv():remove("channel-help-exhaustion")
 					else
-						player:sendCancelMessage("That player is not muted.")
+						player:sendLocalizedMessage("channels.help.player_not_muted")
 					end
 				else
-					player:sendCancelMessage("You are not authorized to unmute that player.")
+					player:sendLocalizedMessage("channels.help.not_authorized_unmute")
 				end
 			else
 				player:sendCancelMessage(RETURNVALUE_PLAYERWITHTHISNAMEISNOTONLINE)

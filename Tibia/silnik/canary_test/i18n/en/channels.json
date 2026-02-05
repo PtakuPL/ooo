@@ -1,0 +1,26 @@
+{
+	"channels": {
+		"help": {
+			"level_1_restriction": "You may not speak into channels as long as you are on level 1.",
+			"muted_inappropriate": "You are muted from the Help channel for using it inappropriately.",
+			"player_already_muted": "That player is already muted.",
+			"not_authorized_mute": "You are not authorized to mute that player.",
+			"player_not_muted": "That player is not muted.",
+			"not_authorized_unmute": "You are not authorized to unmute that player."
+		},
+		"advertising": {
+			"level_premium_required": "You may not speak in this channel unless you have reached level 20 or your account has premium status.",
+			"offer_cooldown": "You may only place one offer in two minutes."
+		},
+		"advertising_rook": {
+			"level_1_restriction": "You may not speak into channels as long as you are on level 1.",
+			"offer_cooldown": "You may only place one offer in two minutes."
+		},
+		"english_chat": {
+			"level_premium_required": "You may not speak in this channel unless you have reached level 20 or your account has premium status."
+		},
+		"world_chat": {
+			"level_1_restriction": "You may not speak into channels as long as you are on level 1."
+		}
+	}
+}

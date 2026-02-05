@@ -148,9 +148,9 @@ function questSystem1.onUse(player, item, fromPosition, target, toPosition, isHo
 	if player:addItemEx(reward) ~= RETURNVALUE_NOERROR then
 		local weight = reward:getWeight()
 		if player:getFreeCapacity() < weight then
-			player:sendCancelMessage(string.format("You have found %s weighing %.2f oz. You have no capacity.", result, (weight / 100)))
+			player:sendLocalizedCancelMessage("quests.common.found_no_capacity", result, string.format("%.2f", (weight / 100)))
 		else
-			player:sendCancelMessage("You have found " .. result .. ", but you have no room to take it.")
+			player:sendLocalizedCancelMessage("quests.common.found_no_room", result)
 		end
 		return true
 	end

@@ -10,7 +10,7 @@ function spell.onCastSpell(creature, variant)
 
 	local grade = creature:revelationStageWOD("Avatar of Nature")
 	if grade == 0 then
-		creature:sendCancelMessage("You cannot cast this spell")
+		creature:sendLocalizedCancelMessage("spells.support.cannot_cast")
 		creature:getPosition():sendMagicEffect(CONST_ME_POFF)
 		return false
 	end

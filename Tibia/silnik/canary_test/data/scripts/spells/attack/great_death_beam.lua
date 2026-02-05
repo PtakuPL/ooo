@@ -29,7 +29,7 @@ function spell.onCastSpell(creature, var)
 
 	local grade = creature:upgradeSpellsWOD("Great Death Beam")
 	if grade == WHEEL_GRADE_NONE then
-		creature:sendCancelMessage("You need to learn this spell first")
+		creature:sendLocalizedCancelMessage("spells.attack.need_learn_first")
 		creature:getPosition():sendMagicEffect(CONST_ME_POFF)
 		return false
 	end

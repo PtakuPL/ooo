@@ -1,0 +1,11 @@
+{
+  "party": {
+    "no_members_in_range": "No party members in range."
+  },
+  "attack": {
+    "need_learn_first": "You need to learn this spell first"
+  },
+  "support": {
+    "cannot_cast": "You cannot cast this spell"
+  }
+}

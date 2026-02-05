@@ -16,7 +16,10 @@
     "required_item": "You need {} to proceed.",
     "boss_exhausted": "You are still exhausted from your last battle.",
     "level_required": "You need at least level {}.",
-    "contact_admin": "There was an error, contact an admin."
+    "contact_admin": "There was an error, contact an admin.",
+    "found_no_capacity": "You have found {} weighing {} oz. You have no capacity.",
+    "found_no_room": "You have found {}, but you have no room to take it.",
+    "found_too_heavy": "You have found {}. Weighing {} oz, it is too heavy."
   },
   "roshamuul": {
     "use_on_plateau": "Use on Silencer Plateau is located in the south-eastern part of Roshamuul"

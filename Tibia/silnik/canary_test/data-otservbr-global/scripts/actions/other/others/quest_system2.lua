@@ -468,7 +468,7 @@ function questSystem2.onUse(player, item, fromPosition, target, toPosition, isHo
 		player:setStorageValue(useItem.missionStorage.key, useItem.missionStorage.value)
 	end
 
-	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.quest_system2.found_item", result)
+	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.common.found_item", result)
 	if useItem.time then
 		player:setStorageValue(useItem.storage, os.time() + 86400)
 	else

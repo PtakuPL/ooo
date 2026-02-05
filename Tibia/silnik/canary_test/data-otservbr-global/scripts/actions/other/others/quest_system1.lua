@@ -176,7 +176,7 @@ function questSystem1.onUse(player, item, fromPosition, target, toPosition, isHo
 		end
 	end
 
-	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.quest_system1.found_item", result)
+	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.common.found_item", result)
 	player:setStorageValue(storage, 1)
 	return true
 end

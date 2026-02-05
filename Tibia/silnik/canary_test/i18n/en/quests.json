@@ -13,7 +13,10 @@
     "kill_monsters_first": "You need to kill all monsters first.",
     "not_on_mission": "You are not on that mission.",
     "complete_first": "You need to complete {} first.",
-    "required_item": "You need {} to proceed."
+    "required_item": "You need {} to proceed.",
+    "boss_exhausted": "You are still exhausted from your last battle.",
+    "level_required": "You need at least level {}.",
+    "contact_admin": "There was an error, contact an admin."
   },
   "roshamuul": {
     "use_on_plateau": "Use on Silencer Plateau is located in the south-eastern part of Roshamuul"
@@ -24,5 +27,19 @@
   },
   "ferumbras": {
     "found_no_room": "You have found a bag, but you have no room to take it."
+  },
+  "dark_trails": {
+    "death_priest_players": "You need exactly {} players to fight with {}."
+  },
+  "desert_dungeon": {
+    "need_all_vocations": "You need one player of each vocation for this quest.",
+    "missing_sacrifice": "{} is missing {} sacrifice on the altar."
+  },
+  "order_of_lion": {
+    "team_cooldown": "Someone of your team has already fought in the skirmish in the last {}h."
+  },
+  "tinder_box": {
+    "date_restriction": "This can only be used between 1st of April and 1st of May.",
+    "empty_pile": "The pile of bones is empty."
   }
 }

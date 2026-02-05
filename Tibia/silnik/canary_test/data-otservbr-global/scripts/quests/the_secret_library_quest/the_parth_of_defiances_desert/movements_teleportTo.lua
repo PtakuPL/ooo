@@ -120,7 +120,7 @@ function movements_desert_teleportTo.onStepIn(creature, item, position, fromPosi
 							end
 						end, 1000, player:getId())
 					else
-						player:sendCancelMessage("You are still exhausted from your last battle.")
+						player:sendLocalizedCancelMessage("quests.common.boss_exhausted")
 						player:teleportTo(fromPosition, true)
 					end
 				else

@@ -126,7 +126,7 @@ function movements_asura_elemental_portals.onStepIn(creature, item, position, fr
 						addEvent(expelPlayerFromRoom, 6000000, player:getId(), k.fromPos, k.toPos, k.exit)
 						player:setStorageValue(k.storage, os.time() + (20 * 3600))
 					else
-						player:sendCancelMessage("You are still exhausted from your last battle.")
+						player:sendLocalizedCancelMessage("quests.common.boss_exhausted")
 						player:teleportTo(fromPosition, true)
 					end
 				else

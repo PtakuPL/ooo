@@ -24,7 +24,7 @@ function ursagrodon.onUse(player, item, fromPosition, target, toPosition, isHotk
 	local currentDate = os.date("*t")
 
 	if currentDate.month < 4 or currentDate.month > 5 or (currentDate.month == 5 and currentDate.day > 1) then
-		return player:sendCancelMessage("This can only be used between 1st of April and 1st of May.")
+		return player:sendLocalizedCancelMessage("quests.tinder_box.date_restriction")
 	end
 
 	if target.itemid == config.item1 or target.itemid == config.item2 or target.itemid == config.item3 then

@@ -46,7 +46,7 @@ function drumeAction.onUse(player, item, fromPosition, target, toPosition, isHot
 
 	local spectators = Game.getSpectators(config.centerPosition, false, true, config.rangeX, config.rangeX, config.rangeY, config.rangeY)
 	if #spectators ~= 0 then
-		player:sendCancelMessage("There's someone already in the skirmish.")
+		player:sendLocalizedCancelMessage("quests.common.room_occupied")
 		player:getPosition():sendMagicEffect(CONST_ME_POFF)
 		return true
 	end
@@ -68,7 +68,7 @@ function drumeAction.onUse(player, item, fromPosition, target, toPosition, isHot
 	end
 	for _, pi in pairs(players) do
 		if not pi:canFightBoss("Drume") then
-			player:sendCancelMessage("Someone of your team has already fought in the skirmish in the last 10h.")
+			player:sendLocalizedCancelMessage("quests.order_of_lion.team_cooldown", "10")
 			player:getPosition():sendMagicEffect(CONST_ME_POFF)
 			return true
 		end
@@ -85,7 +85,7 @@ function drumeAction.onUse(player, item, fromPosition, target, toPosition, isHot
 	for _, pos in pairs(config.lionPosition) do
 		tempMonster = Game.createMonster("Lion Commander", pos)
 		if not tempMonster then
-			player:sendCancelMessage("There was an error, contact an admin.")
+			player:sendLocalizedCancelMessage("quests.common.contact_admin")
 			player:getPosition():sendMagicEffect(CONST_ME_POFF)
 			return true
 		end
@@ -94,7 +94,7 @@ function drumeAction.onUse(player, item, fromPosition, target, toPosition, isHot
 	for _, pos in pairs(config.usurperPosition) do
 		tempMonster = Game.createMonster("Usurper Commander", pos)
 		if not tempMonster then
-			player:sendCancelMessage("There was an error, contact an admin.")
+			player:sendLocalizedCancelMessage("quests.common.contact_admin")
 			player:getPosition():sendMagicEffect(CONST_ME_POFF)
 			return true
 		end

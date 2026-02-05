@@ -24,7 +24,7 @@ function movements_library_timers.onStepIn(creature, item, position, fromPositio
 				player:teleportTo(k.toPosition)
 			else
 				player:teleportTo(fromPosition, true)
-				player:sendCancelMessage("You are still exhausted from your last battle.")
+				player:sendLocalizedCancelMessage("quests.common.boss_exhausted")
 			end
 			player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 		end

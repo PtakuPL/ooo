@@ -50,7 +50,7 @@ function leverDeathPriestShargon.onUse(player, item, fromPosition, target, toPos
 		end
 
 		if #storePlayers < 5 then
-			player:sendCancelMessage("You need exactly 5 players to fight with Death Priest Shargon.")
+			player:sendLocalizedCancelMessage("quests.dark_trails.death_priest_players", "5", "Death Priest Shargon")
 			return true
 		end
 

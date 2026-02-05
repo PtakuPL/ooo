@@ -84,7 +84,7 @@ function movements_isle_stepIn.onStepIn(creature, item, position, fromPosition)
 					end
 				end, 10 * 1000 * 60, player:getId())
 			else
-				player:sendCancelMessage("You are still exhausted from your last battle.")
+				player:sendLocalizedCancelMessage("quests.common.boss_exhausted")
 				player:teleportTo(fromPosition, true)
 			end
 		else

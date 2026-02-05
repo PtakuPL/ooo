@@ -5,11 +5,11 @@ function tinderReward.onUse(player, item, fromPosition, target, toPosition, isHo
 	local currentTime = os.time()
 
 	if currentDate.month < 4 or currentDate.month > 5 or (currentDate.month == 5 and currentDate.day > 1) then
-		return player:sendCancelMessage("This can only be used between 1st of April and 1st of May.")
+		return player:sendLocalizedCancelMessage("quests.tinder_box.date_restriction")
 	end
 
 	if player:getStorageValue(Storage.Quest.U10_37.TinderBoxQuestChyllfroest.Reward) >= currentTime then
-		return player:sendCancelMessage("The pile of bones is empty.")
+		return player:sendLocalizedCancelMessage("quests.tinder_box.empty_pile")
 	end
 
 	player:addItem(20357, 1)

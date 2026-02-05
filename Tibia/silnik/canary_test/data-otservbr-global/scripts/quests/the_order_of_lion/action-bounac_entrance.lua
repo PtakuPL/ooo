@@ -2,7 +2,7 @@ local bounacEntrance = Action()
 function bounacEntrance.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if item:getActionId() == 59602 then
 		if player:getLevel() < 250 then
-			player:sendCancelMessage("You need at least level 250.")
+			player:sendLocalizedCancelMessage("quests.common.level_required", "250")
 			toPosition:sendMagicEffect(CONST_ME_POFF)
 		else
 			player:teleportTo({ x = 32423, y = 32448, z = 7 })

@@ -12,7 +12,7 @@ function removeEmptyParcelsEvent.onLogin(player)
 		for _, parcel in pairs(emptyParcelsToRemove) do
 			parcel:remove()
 		end
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, #emptyParcelsToRemove .. " empty parcels were removed from your store inbox!")
+		player:sendLocalizedMessage("creaturescripts.remove_parcel.empty_removed", MESSAGE_EVENT_ADVANCE, {tostring(#emptyParcelsToRemove)})
 	end
 	return true
 end

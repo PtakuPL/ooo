@@ -7,13 +7,13 @@ function buyHouse.onSay(player, words, param)
 	end
 
 	if not player:isPremium() then
-		player:sendCancelMessage("You need a premium account.")
+		player:sendLocalizedMessage("talkactions.player.buy_house.premium_required")
 		return true
 	end
 
 	local houseBuyLevel = configManager.getNumber(configKeys.HOUSE_BUY_LEVEL)
 	if player:getLevel() < houseBuyLevel then
-		player:sendCancelMessage("You need to be level " .. houseBuyLevel .. " to buy a house.")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "talkactions.player.buy_house.level_required", {houseBuyLevel})
 		return true
 	end
 
@@ -26,17 +26,17 @@ function buyHouse.onSay(player, words, param)
 	local houseEntry = house and house:getExitPosition()
 
 	if not house or playerPos ~= houseEntry then
-		player:sendCancelMessage("You have to be looking at the door of the house you would like to buy.")
+		player:sendLocalizedMessage("talkactions.player.buy_house.must_look_at_door")
 		return true
 	end
 
 	if house:getOwnerGuid() > 0 then
-		player:sendCancelMessage("This house already has an owner.")
+		player:sendLocalizedMessage("talkactions.player.buy_house.already_has_owner")
 		return true
 	end
 
 	if player:getHouse() then
-		player:sendCancelMessage("You are already the owner of a house.")
+		player:sendLocalizedMessage("talkactions.player.buy_house.already_own_house")
 		return true
 	end
 
@@ -47,7 +47,7 @@ function buyHouse.onSay(player, words, param)
 
 	local price = house:getPrice()
 	if not player:removeMoneyBank(price) then
-		player:sendCancelMessage("You do not have enough money.")
+		player:sendLocalizedMessage("talkactions.player.buy_house.insufficient_money")
 		return true
 	end
 	metrics.addCounter("balance_decrease", remainsPrice, {

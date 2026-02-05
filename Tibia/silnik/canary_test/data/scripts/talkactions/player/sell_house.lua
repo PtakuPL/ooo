@@ -3,13 +3,13 @@ local sellHouse = TalkAction("!sellhouse")
 function sellHouse.onSay(player, words, param)
 	local tradePartner = Player(param)
 	if not tradePartner or tradePartner == player then
-		player:sendCancelMessage("Trade player not found.")
+		player:sendLocalizedMessage("talkactions.player.sell_house.player_not_found")
 		return true
 	end
 
 	local house = player:getTile():getHouse()
 	if not house then
-		player:sendCancelMessage("You must stand in your house to initiate the trade.")
+		player:sendLocalizedMessage("talkactions.player.sell_house.must_stand_in_house")
 		return true
 	end
 

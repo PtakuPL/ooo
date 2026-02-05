@@ -647,5 +647,13 @@
   "scripts.golden.boss_timeout": "You have faced this boss in the last {} hours.",
   "scripts.common.chest_empty": "The {} is empty.",
   "scripts.common.found_item": "You have found {}.",
-  "scripts.arena.pit_occupied": "{} is currently in the next arena pit. Please wait until {}he is done fighting."
+  "scripts.arena.pit_occupied": "{} is currently in the next arena pit. Please wait until {}he is done fighting.",
+  "scripts.soul_war.taint_current": "Your current taint level is: {} name: {}",
+  "scripts.soul_war.taint_new": "Your new taint level is: {}, name: {}",
+  "scripts.soul_war.taint_added": "Added taint level: {}, name: {} to player: {}",
+  "scripts.soul_war.taint_lost": "You lose taint level: {}, name: {}",
+  "scripts.soul_war.taint_removed": "Removed taint level: {}, name: {} from player: {}",
+  "scripts.soul_war.taint_gained": "You have gained the {}.",
+  "scripts.soulpit.soul_core_received": "You have received a {} soul core.",
+  "scripts.common.fame_point": "You have received a fame point."
 }

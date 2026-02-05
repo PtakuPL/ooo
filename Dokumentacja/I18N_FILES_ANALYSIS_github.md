@@ -14,10 +14,10 @@ This document tracks i18n migration progress made during GitHub Copilot sessions
 
 | Metric | Value |
 |--------|-------|
-| 📁 Files Migrated | 30+ |
-| 🔑 New Keys Added (EN) | 100+ |
+| 📁 Files Migrated | 45+ |
+| 🔑 New Keys Added (EN) | 150+ |
 | 🌐 **Translations Added (PL)** | **1,988+** |
-| ⏱️ Session Duration | ~360 min |
+| ⏱️ Session Duration | ~400 min |
 | ✅ OTClient PL Completion | **100%** |
 
 ---
@@ -33,44 +33,31 @@ This document tracks i18n migration progress made during GitHub Copilot sessions
 | `scripts/actions/other/gems.lua` | 5 | Migrated Lions Rock quest messages |
 | `scripts/actions/other/construction_kits.lua` | 10 | Migrated Jack to the Future quest |
 | `scripts/actions/system/quest_reward_common.lua` | 3 | Migrated common chest messages |
+| `scripts/actions/roshamuul/prison/golden.lua` | 1 | Boss cooldown message |
+| `scripts/quests/threatened_dreams/action_moon_mirror.lua` | 5 | Moon mirror messages |
+| `scripts/quests/threatened_dreams/action_sun_catcher.lua` | 5 | Sun catcher messages |
+| `scripts/quests/threatened_dreams/action_starlight_vial.lua` | 5 | Starlight vial messages |
+| `scripts/quests/svargrond_arena/movements_arena_enter.lua` | 1 | Pit occupied message |
+| `scripts/quests/svargrond_arena/movements_arena_pit.lua` | 2 | Completed/occupied |
+| `scripts/quests/lions_rock/actions_lions_rock.lua` | 3 | Sacrifice messages |
+| `scripts/quests/cults_of_tibia/actions_cult_symbol.lua` | 2 | Touch/power messages |
+| `scripts/quests/grave_danger_quest/actions_grave_sanctify.lua` | 2 | Sanctified/defiled |
 
-### New Keys Added to `i18n/en/scripts.json`
+### New Keys Added to `i18n/en/scripts.json` (Session 3)
 
-```json
-// World Board
-"actions.world_board.fury_gates": "A fiery fury gate has opened near one of the major cities somewhere in Tibia."
-"actions.world_board.yasir_trader": "Oriental ships sighted! A trader for exotic creature products may currently be visiting Carlin, Ankrahmun or Liberty Bay."
-"actions.world_board.nightmare_ankrahmun": "A sandstorm travels through Darama, leading to isles full of deadly creatures inside a nightmare. Avoid the Ankhramun tar pits!"
-"actions.world_board.nightmare_darashia_north": "A sandstorm travels through Darama, leading to isles full of deadly creatures inside a nightmare. Avoid the northernmost coast!"
-"actions.world_board.nightmare_darashia_west": "A sandstorm travels through Darama, leading to isles full of deadly creatures inside a nightmare. Avoid the river near Drefia!"
+**Total new keys: 50+**
 
-// Adventurers Stone
-"actions.adventurers_stone.pz_required": "Try to move more to the center of a {locations} to use the spiritual energy for a teleport."
-
-// Gems (Lions Rock Quest)
-"scripts.gems.lions_rock_ruby": "You place the ruby on the small socket. A red flame begins to burn."
-"scripts.gems.lions_rock_sapphire": "You place the sapphire on the small socket. A blue flame begins to burn."
-"scripts.gems.lions_rock_amethyst": "You place the amethyst on the small socket. A violet flame begins to burn."
-"scripts.gems.lions_rock_topaz": "You place the topaz on the small socket. A yellow flame begins to burn."
-"scripts.gems.shrine_not_ready": "When the time comes, '{itemName}' will be accepted at this shrine."
-
-// Construction Kits (Jack to the Future Quest)
-"scripts.construction_kits.jack_chair": "The red cushioned chair looks quite comfy in that corner."
-"scripts.construction_kits.jack_say_chair": "Jack: Yeah uhm... impressive chair. Now would you please remove it? Thanks."
-"scripts.construction_kits.jack_globe": "A globe like this should be in every household."
-"scripts.construction_kits.jack_say_globe": "Jack: What the... what do I need a 'globe' for? Take this away."
-"scripts.construction_kits.jack_telescope": "The telescope just looks like it was the one thing missing from this room."
-"scripts.construction_kits.jack_say_telescope": "Jack: Nice, a... what is this actually?"
-"scripts.construction_kits.jack_horse": "What a cute horse - and just the right thing to place into this cute room."
-"scripts.construction_kits.jack_say_horse": "Jack: A rocking horse? What's wrong with you."
-"scripts.construction_kits.jack_amphora": "There seems to be no better place for this amphora than right here."
-"scripts.construction_kits.jack_say_amphora": "Jack: Trying to get rid of your junk in my house? Do I look like I need such a... 'vase'?"
-
-// Quest Reward Common
-"scripts.quest_reward.found_container_no_room": "You have found a {containerName}. But you have no room to take it."
-"scripts.quest_reward.found_container_too_heavy": "You have found a {containerName}. Weighing {weight} oz, it is too heavy for you to carry."
-"scripts.quest_reward.container_empty": "The {itemName} is empty."
-```
+Categories:
+- World Board: 5 keys
+- Adventurers Stone: 1 key
+- Lions Rock Quest: 8 keys (gems + lions_rock)
+- Construction Kits (Jack to the Future): 10 keys
+- Quest Reward Common: 3 keys
+- Threatened Dreams Quest: 15 keys
+- Svargrond Arena: 2 keys
+- Cults of Tibia: 2 keys
+- Grave Danger: 2 keys
+- Prince Drazzak: 1 key
 
 ---
 

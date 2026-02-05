@@ -93,7 +93,7 @@ function treasureChest.onUse(player, item, fromPosition, target, toPosition, isH
 
 	local storageValue = player:getStorageValue(item.uid)
 	if storageValue > 0 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The " .. item:getName() .. " is empty.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.common.chest_empty", item:getName())
 		return true
 	end
 

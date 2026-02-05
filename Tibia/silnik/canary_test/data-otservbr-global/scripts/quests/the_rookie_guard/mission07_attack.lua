@@ -149,7 +149,7 @@ function treasureChest.onUse(player, item, frompos, item2, topos)
 			player:setStorageValue(Storage.Quest.U9_1.TheRookieGuard.LibraryChest, 1)
 			player:addItemEx(reward, true, CONST_SLOT_WHEREEVER)
 		else
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The " .. item:getName() .. " is empty.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.common.chest_empty", item:getName())
 		end
 	end
 	return true

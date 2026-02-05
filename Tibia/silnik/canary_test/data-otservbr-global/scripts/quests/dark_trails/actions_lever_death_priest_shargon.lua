@@ -43,7 +43,7 @@ function leverDeathPriestShargon.onUse(player, item, fromPosition, target, toPos
 			local tile = Tile(setting.playerPositions[i])
 			local creature = tile and tile:getTopCreature()
 			if not creature or not creature:isPlayer() then
-				player:sendCancelMessage("You need 5 players to fight with Death Priest Shargon.")
+				player:sendLocalizedCancelMessage("quests.common.players_exact", "5")
 				return true
 			end
 			storePlayers[#storePlayers + 1] = creature

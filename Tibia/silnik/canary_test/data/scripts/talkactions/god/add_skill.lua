@@ -18,13 +18,13 @@ function addSkill.onSay(player, words, param)
 	logCommand(player, words, param)
 
 	if param == "" then
-		player:sendCancelMessage("Command param required.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "talkactions.gm.common.param_required")
 		return true
 	end
 
 	local split = param:split(",")
 	if #split < 2 then
-		player:sendCancelMessage("Usage: /addskill <playername>, <skill or 'level'/'magic'>, [amount]")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "talkactions.god.add_skill.usage")
 		return true
 	end
 
@@ -32,7 +32,7 @@ function addSkill.onSay(player, words, param)
 	local targetPlayer = Player(targetPlayerName)
 
 	if not targetPlayer then
-		player:sendCancelMessage("Player not found.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "talkactions.gm.common.player_not_found")
 		return true
 	end
 

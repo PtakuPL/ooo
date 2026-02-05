@@ -72,5 +72,14 @@
     "creature": {
       "not_found": "A creature with that name could not be found."
     }
+  },
+  "god": {
+    "add_skill": {
+      "usage": "Usage: /addskill <playername>, <skill or 'level'/'magic'>, [amount]"
+    },
+    "create_item": {
+      "no_item": "There is no item with that id or name.",
+      "invalid_tier": "Invalid tier count."
+    }
   }
 }

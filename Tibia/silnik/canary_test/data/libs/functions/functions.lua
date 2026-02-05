@@ -128,7 +128,7 @@ function getBankMoney(cid, amount)
 	local player = Player(cid)
 	if player:getBankBalance() >= amount then
 		player:setBankBalance(player:getBankBalance() - amount)
-		player:sendTextMessage(MESSAGE_TRADE, "Paid " .. FormatNumber(amount) .. " gold from bank account. Your account balance is now " .. FormatNumber(player:getBankBalance()) .. " gold.")
+		player:sendLocalizedTextMessage(MESSAGE_TRADE, "libs.functions.paid_from_bank", {FormatNumber(amount), FormatNumber(player:getBankBalance())})
 		return true
 	end
 	return false
@@ -313,7 +313,7 @@ function resetFerumbrasAscendantHabitats()
 		if spec:isPlayer() then
 			spec:teleportTo(Position(33630, 32648, 12))
 			spec:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-			spec:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You were teleported because the habitats are returning to their original form.")
+			spec:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "libs.functions.habitat_teleport")
 		elseif spec:isMonster() then
 			spec:remove()
 		end
@@ -637,11 +637,11 @@ end
 function checkWeightAndBackpackRoom(player, itemWeight, message)
 	local backpack = player:getSlotItem(CONST_SLOT_BACKPACK)
 	if not backpack or backpack:getEmptySlots(true) < 1 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, message .. ", but you have no room to take it.")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "libs.functions.no_room", {message})
 		return false
 	end
 	if (player:getFreeCapacity() / 100) < itemWeight then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, message .. ". Weighing " .. itemWeight .. " oz, it is too heavy for you to carry.")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "libs.functions.too_heavy", {message, itemWeight})
 		return false
 	end
 	return true
@@ -833,7 +833,7 @@ function Player:doCheckBossRoom(bossName, fromPos, toPos)
 					local sqm = Tile(Position(x, y, z))
 					if sqm then
 						if sqm:getTopCreature() and sqm:getTopCreature():isPlayer() then
-							self:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You must wait. Someone is challenging " .. bossName .. " now.")
+							self:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "libs.functions.boss_being_challenged", {bossName})
 							return false
 						end
 					end
@@ -870,7 +870,7 @@ function CheckDustLevel(monsterForge, player)
 	end
 	if influencedLevel and influencedLevel > 0 then
 		if influencedLevel > 5 then
-			player:sendCancelMessage("Invalid influenced level.")
+			player:sendLocalizedCancelMessage("libs.functions.invalid_influenced_level")
 			return false
 		end
 		canSetInfluenced = true
@@ -880,7 +880,7 @@ end
 
 function SetFiendish(monsterType, position, player, monster)
 	if monsterType and not monsterType:isForgeCreature() then
-		player:sendCancelMessage("Only allowed monsters can be fiendish.")
+		player:sendLocalizedCancelMessage("libs.functions.only_allowed_fiendish")
 		return false
 	end
 	monster:setFiendish(position, player)
@@ -888,7 +888,7 @@ end
 
 function SetInfluenced(monsterType, monster, player, influencedLevel)
 	if monsterType and not monsterType:isForgeCreature() then
-		player:sendCancelMessage("Only allowed monsters can be influenced.")
+		player:sendLocalizedCancelMessage("libs.functions.only_allowed_influenced")
 		return false
 	end
 	local influencedMonster = Monster(ForgeMonster:pickInfluenced())
@@ -913,13 +913,13 @@ end
 
 function HasValidTalkActionParams(player, param, usage)
 	if not param or param == "" then
-		player:sendCancelMessage("Command param required. Usage: " .. usage)
+		player:sendLocalizedCancelMessage("libs.functions.param_required", {usage})
 		return false
 	end
 
 	local split = param:split(",")
 	if not split[2] then
-		player:sendCancelMessage("Insufficient parameters. Usage: " .. usage)
+		player:sendLocalizedCancelMessage("libs.functions.insufficient_params", {usage})
 		return false
 	end
 

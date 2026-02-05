@@ -365,7 +365,7 @@ function questSystem2.onUse(player, item, fromPosition, target, toPosition, isHo
 	end
 
 	if (useItem.time and player:getStorageValue(useItem.storage) > os.time()) or player:getStorageValue(useItem.storage) ~= (useItem.formerValue or -1) then
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.quest_system2.chest_empty", ItemType(item.itemid):getName())
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.common.chest_empty", ItemType(item.itemid):getName())
 		return true
 	end
 

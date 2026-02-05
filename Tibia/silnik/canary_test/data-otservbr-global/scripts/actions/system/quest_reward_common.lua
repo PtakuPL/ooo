@@ -172,20 +172,20 @@ function questReward.onUse(player, item, fromPosition, itemEx, toPosition)
 
 	if setting.useKV then
 		if player:questKV(setting.questName):get("completed") then
-			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.quest_reward_common.chest_empty", getItemName(setting.itemId))
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.common.chest_empty", getItemName(setting.itemId))
 			return true
 		end
 		if setting.timerStorage and player:questKV(setting.questName):get("timer") and player:questKV(setting.questName):get("timer") > os.time() then
-			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.quest_reward_common.chest_empty", getItemName(setting.itemId))
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.common.chest_empty", getItemName(setting.itemId))
 			return true
 		end
 	else
 		if player:getStorageValue(setting.storage) >= 1 then
-			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.quest_reward_common.chest_empty", getItemName(setting.itemId))
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.common.chest_empty", getItemName(setting.itemId))
 			return true
 		end
 		if setting.timerStorage and player:getStorageValue(setting.timerStorage) > os.time() then
-			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.quest_reward_common.chest_empty", getItemName(setting.itemId))
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.common.chest_empty", getItemName(setting.itemId))
 			return true
 		end
 	end

@@ -60,7 +60,7 @@ function questSystem1.onUse(player, item, fromPosition, target, toPosition, isHo
 	end
 
 	if player:getStorageValue(storage) > 0 and player:getGroup():getId() < GROUP_TYPE_GAMEMASTER then
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.quest_system1.chest_empty", ItemType(item.itemid):getName())
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.common.chest_empty", ItemType(item.itemid):getName())
 		return true
 	end
 

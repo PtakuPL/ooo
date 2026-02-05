@@ -33,7 +33,8 @@
       "duration_too_long": "Ban duration cannot exceed 350000 days.",
       "already_banned_longer": "Player is already banned for longer or equal duration.",
       "extended": "{}'s ban has been extended to {} days.",
-      "banned_for_days": "{} has been banned for {} days."
+      "banned_for_days": "{} has been banned for {} days.",
+      "must_specify_reason": "You must specify a reason."
     },
     "kick": {
       "cannot_kick": "You cannot kick this player."

@@ -34,7 +34,7 @@ function spy.onSay(player, words, param)
 	logCommand(player, words, param)
 
 	if param == "" then
-		player:sendCancelMessage("Write the name of the character to be spyed.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "talkactions.gm.look.param_required")
 		return true
 	end
 
@@ -64,7 +64,7 @@ function spy.onSay(player, words, param)
 		end
 		player:showTextDialog(6528, text)
 	else
-		player:sendCancelMessage("This player is offline or doesn't exist.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "talkactions.gm.look.player_offline")
 	end
 	return true
 end

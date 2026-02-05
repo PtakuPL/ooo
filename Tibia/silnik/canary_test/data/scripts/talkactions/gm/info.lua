@@ -3,7 +3,7 @@ local info = TalkAction("/info")
 function info.onSay(player, words, param)
 	local target = Player(param)
 	if not target then
-		player:sendCancelMessage("Player not found.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "talkactions.gm.common.player_not_found")
 		return true
 	end
 
@@ -11,7 +11,7 @@ function info.onSay(player, words, param)
 	logCommand(player, words, param)
 
 	if param == "" then
-		player:sendCancelMessage("Command param required.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "talkactions.gm.common.param_required")
 		return true
 	end
 

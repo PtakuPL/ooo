@@ -5,7 +5,7 @@ function teleportToCreature.onSay(player, words, param)
 	logCommand(player, words, param)
 
 	if param == "" then
-		player:sendCancelMessage("Command param required.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "talkactions.gm.common.param_required")
 		return true
 	end
 
@@ -13,7 +13,7 @@ function teleportToCreature.onSay(player, words, param)
 	if target then
 		player:teleportTo(target:getPosition())
 	else
-		player:sendCancelMessage("Creature not found.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "talkactions.gm.common.creature_not_found")
 	end
 	return true
 end

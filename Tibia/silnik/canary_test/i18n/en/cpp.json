@@ -1,1 +1,13 @@
-{}
+{
+  "cpp.player.mail_arrived": "New mail has arrived.",
+  "cpp.player.item_not_imbuable": "This item is not imbuable.",
+  "cpp.player.item_pickup_to_imbue": "You have to pick up the item to imbue it.",
+  "cpp.player.you_are_dead": "You are dead.",
+  "cpp.player.unjustified_kill": "Warning! The murder of {} was not justified.",
+  "cpp.player.stow_limit_reached": "You have reached the maximum stow limit of {} items. Try to stow again.",
+  "cpp.player.momentum_triggered": "Momentum was triggered.",
+  "cpp.player.transcendence_triggered": "Transcendence was triggered.",
+  "cpp.player.offline_training_aborted": "Offline training aborted.",
+  "cpp.player.target_lost": "Target lost."
+}
+

@@ -20,7 +20,7 @@ function StepInCursedCrystal.onStepIn(creature, item, position, fromPosition)
 			player:teleportTo(Position(31961, 32938, 10))
 			player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 		else
-			player:sendCancelMessage("You are not in the correct area.")
+			player:sendLocalizedCancelMessage("quests.common.not_in_area")
 		end
 	elseif item.actionid == 25018 then
 		-- (O código para o actionid 25018 permanece o mesmo)

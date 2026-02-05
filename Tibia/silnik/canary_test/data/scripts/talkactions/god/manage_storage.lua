@@ -72,15 +72,13 @@ function Player.setStorageValueTalkaction(self, param)
 				self:sendLocalizedMessage(MESSAGE_FAILURE, "gm.common.player_not_found")
 				return true
 			else
-				local message = "Set storage: " .. storageKey .. " to player " .. split[3] .. " newValue: " .. value .. "."
-				self:sendTextMessage(MESSAGE_EVENT_ADVANCE, message)
+				self:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "god.manage_storage.set_storage", {tostring(storageKey), split[3], tostring(value)})
 				targetPlayer:setStorageValueByName(storageKey, value)
 				targetPlayer:save()
 				return true
 			end
 		else
-			local message = "Set storage: " .. storageKey .. " to player " .. self:getName() .. ", newValue: " .. value .. "."
-			self:sendTextMessage(MESSAGE_EVENT_ADVANCE, message)
+			self:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "god.manage_storage.set_storage", {tostring(storageKey), self:getName(), tostring(value)})
 			self:setStorageValueByName(split[1], value)
 			self:save()
 		end
@@ -92,15 +90,13 @@ function Player.setStorageValueTalkaction(self, param)
 				self:sendLocalizedMessage(MESSAGE_FAILURE, "gm.common.player_not_found")
 				return true
 			else
-				local message = "Set storage: " .. storageKey .. " to player " .. split[3] .. " newValue: " .. value .. "."
-				self:sendTextMessage(MESSAGE_EVENT_ADVANCE, message)
+				self:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "god.manage_storage.set_storage", {tostring(storageKey), split[3], tostring(value)})
 				targetPlayer:setStorageValue(storageKey, value)
 				targetPlayer:save()
 				return true
 			end
 		else
-			local message = "Set storage: " .. storageKey .. " to player " .. self:getName() .. ", newValue: " .. value .. "."
-			self:sendTextMessage(MESSAGE_EVENT_ADVANCE, message)
+			self:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "god.manage_storage.set_storage", {tostring(storageKey), self:getName(), tostring(value)})
 			self:setStorageValue(storageKey, value)
 			self:save()
 		end

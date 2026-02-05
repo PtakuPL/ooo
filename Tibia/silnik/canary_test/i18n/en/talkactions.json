@@ -194,7 +194,8 @@
       "usage_check": "Usage: /checkachievements playerName",
       "player_not_online": "Player {} is not online.",
       "invalid_achievement": "Invalid achievement. Use valid ID or name.",
-      "invalid_identifier": "Invalid achievement identifier. Use either ID or name."
+      "invalid_identifier": "Invalid achievement identifier. Use either ID or name.",
+      "achievements_list": "Achievements: {}"
     },
     "flags": {
       "player_not_found": "Player {} not found.",
@@ -246,6 +247,26 @@
       "no_influenced_monsters": "There are not influenced monsters right now.",
       "added_dust_level_admin": "Successful added {} dust level for the {} player.",
       "added_dust_level_player": "{} adds {} dust level to your character."
+    },
+    "charms": {
+      "usage_required": "Command param required. Usage: {}",
+      "insufficient_params": "Insufficient parameters. Usage: {}",
+      "added_charm_points_admin": "Added {} charm points to character '{}'.",
+      "added_charm_points_player": "Received {} charm points!",
+      "added_minor_points_admin": "Added {} minor charm points to character '{}'.",
+      "added_minor_points_player": "Received {} minor charm points!",
+      "reseted_admin": "Reseted charm points from character '{}'.",
+      "reseted_player": "Reseted your charm points!",
+      "added_expansion_admin": "Added charm expansion for player '{}'.",
+      "added_expansion_player": "Received charm expansion!",
+      "added_all_runes_admin": "Added all charm runes to '{}'.",
+      "added_all_runes_player": "Received all charm runes!",
+      "wrong_kill_amount": "Wrong kill amount.",
+      "set_all_bestiary_admin": "Set bestiary kill count to '{}' for all monsters for player '{}'.",
+      "set_all_bestiary_player": "Updated kills for all monsters in the bestiary!",
+      "no_bestiary": "This monster has no bestiary. Type the name exactly as in the game.",
+      "set_bestiary_monster_admin": "Set bestiary kill of monster '{}' for player '{}' to '{}'.",
+      "set_bestiary_monster_player": "Updated kills of monster '{}'!"
     }
   }
 }

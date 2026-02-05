@@ -82,12 +82,12 @@ function checkAchievements.onSay(player, words, param)
 	end
 
 	local ACHIEVEMENTS = targetPlayer:getAchievements()
-	local message = "Achievements: "
+	local achievements = {}
 	for _, achievementId in pairs(ACHIEVEMENTS) do
 		local achievementInfo = Game.getAchievementInfoById(achievementId)
-		message = message .. achievementInfo.name .. ", "
+		table.insert(achievements, achievementInfo.name)
 	end
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, message)
+	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "god.achievement_functions.achievements_list", {table.concat(achievements, ", ")})
 	return true
 end
 

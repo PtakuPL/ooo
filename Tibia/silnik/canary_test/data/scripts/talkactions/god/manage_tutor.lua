@@ -72,7 +72,6 @@ function removeTutor.onSay(player, words, param)
 	end
 
 	targetPlayer:setAccountType(ACCOUNT_TYPE_NORMAL)
-	--targetPlayer:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have been demoted to a normal player by " .. player:getName() .. ".")
 	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.manage_tutor.msg_2" .. targetPlayer:getName() .. " to a normal player.")
 	return true
 end

@@ -5,16 +5,16 @@ function startRaid.onSay(player, words, param)
 	logCommand(player, words, param)
 
 	if param == "" then
-		player:sendCancelMessage("Command param required.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "god.raids.param_required")
 		return true
 	end
 
 	if Raid.registry[param] then
 		local raid = Raid.registry[param]
 		if raid:tryStart(true) then
-			player:sendTextMessage(MESSAGE_ADMINISTRATOR, "Raid " .. param .. " started.")
+			player:sendLocalizedTextMessage(MESSAGE_ADMINISTRATOR, "god.raids.started", {param})
 		else
-			player:sendTextMessage(MESSAGE_ADMINISTRATOR, "Raid " .. param .. " could not be started.")
+			player:sendLocalizedTextMessage(MESSAGE_ADMINISTRATOR, "god.raids.failed", {param})
 		end
 		return true
 	end
@@ -90,12 +90,8 @@ function listRaid.onSay(player, words, param)
 	end
 	table.sort(raids)
 
-	local message = "Registered raids: "
-	for _, name in ipairs(raids) do
-		message = message .. name .. ", "
-	end
-	message = message:sub(1, -3)
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, message)
+	local message = table.concat(raids, ", ")
+	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "god.raids.list_message", {message})
 	return true
 end
 

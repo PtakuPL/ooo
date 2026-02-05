@@ -90,7 +90,8 @@
       "param_required": "Player name param required",
       "player_not_exist": "A player with name {} does not exist.",
       "invalid_amount": "Invalid amount.",
-      "failed": "Failed to add money to {}."
+      "failed": "Failed to add money to {}.",
+      "added_to_character": "{} added {} gold coins to your character."
     },
     "add_mount": {
       "usage": "Usage: /addmount <playername>, <mount id or 'all'>",
@@ -106,12 +107,41 @@
       "player_no_house": "The player {} not have house.",
       "no_house_usage": "You not have house. For goto house of one player use the player name param, usage: /gotohouse playername"
     },
-    "add_money": {
-      "param_required": "Player name param required",
-      "player_not_exist": "A player with name {} does not exist.",
-      "invalid_amount": "Invalid amount.",
-      "failed": "Failed to add money to {}.",
-      "added_to_character": "{} added {} gold coins to your character."
+    "house_owner": {
+      "not_inside_house": "You are not inside a house."
+    },
+    "inbox_command": {
+      "item_removed": "{} removed",
+      "item_added": "{} added"
+    },
+    "ip_ban": {
+      "already_banned": "{}  is already IP banned.",
+      "banned": "{}  has been IP banned."
+    },
+    "raids": {
+      "started": "Raid {} started.",
+      "failed": "Raid {} could not be started.",
+      "list_message": "Registered raids: {}",
+      "param_required": "Command param required."
+    },
+    "remove_thing": {
+      "object_not_found": "Object not found.",
+      "thing_not_found": "Thing not found.",
+      "cannot_remove_ground": "You may not remove a ground tile."
+    },
+    "test": {
+      "backpack_no_container": "Your backpack does not contain a valid container.",
+      "backpack_items": "You {} {} items and {} subcontainers from your backpack.",
+      "log_level_required": "Log level and message required.",
+      "log_message_required": "Log message required."
+    },
+    "zones": {
+      "list": "Zones:\n{}",
+      "count_monsters": "Zone {} monsters: {}.",
+      "count_npcs": "Zone {} NPCs: {}.",
+      "list_players": "Zone {} players: {}.",
+      "count_players": "Zone {} players: {}.",
+      "zone_size": "Zone {} size: {}."
     }
   }
 }

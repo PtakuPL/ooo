@@ -7,7 +7,7 @@ function houseOwner.onSay(player, words, param)
 	local tile = Tile(player:getPosition())
 	local house = tile and tile:getHouse()
 	if not house then
-		player:sendCancelMessage("You are not inside a house.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "god.house_owner.not_inside_house")
 		return true
 	end
 
@@ -18,7 +18,7 @@ function houseOwner.onSay(player, words, param)
 
 	local targetPlayer = Player(param)
 	if not targetPlayer then
-		player:sendCancelMessage("Player not found.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "gm.common.player_not_found")
 		return true
 	end
 

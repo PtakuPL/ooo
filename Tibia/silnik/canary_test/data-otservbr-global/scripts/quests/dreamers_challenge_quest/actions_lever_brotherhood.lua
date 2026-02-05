@@ -27,12 +27,12 @@ function dreamerBrotherhoodLever.onUse(player, item, fromPosition, target, toPos
 				item:transform(2773)
 				addEvent(revertLever, 4 * 1000, toPosition)
 			elseif not diamondItem and player:getStorageValue(Storage.Quest.U7_9.DreamersChallenge.LeverBrotherhood1) < 1 then
-				player:sendCancelMessage("You need to offer a small diamond.")
+				player:sendLocalizedCancelMessage("quests.common.offer_required", "a small diamond")
 			else
-				player:sendCancelMessage("You have already used this lever!")
+				player:sendLocalizedCancelMessage("quests.common.already_used", "used", "lever")
 			end
 		else
-			player:sendCancelMessage("You still don't have permission.")
+			player:sendLocalizedCancelMessage("quests.common.no_permission")
 		end
 	elseif item.uid == config[2].uid then
 		if player:getStorageValue(Storage.Quest.U7_9.BrotherhoodOutfits.Outfits) >= config[2].storageOutfit then
@@ -45,12 +45,12 @@ function dreamerBrotherhoodLever.onUse(player, item, fromPosition, target, toPos
 				item:transform(2773)
 				addEvent(revertLever, 4 * 1000, toPosition)
 			elseif not diamondItem and player:getStorageValue(Storage.Quest.U7_9.DreamersChallenge.LeverBrotherhood2) < 1 then
-				player:sendCancelMessage("You need to offer a small diamond.")
+				player:sendLocalizedCancelMessage("quests.common.offer_required", "a small diamond")
 			else
-				player:sendCancelMessage("You have already used this lever!")
+				player:sendLocalizedCancelMessage("quests.common.already_used", "used", "lever")
 			end
 		else
-			player:sendCancelMessage("You still don't have permission.")
+			player:sendLocalizedCancelMessage("quests.common.no_permission")
 		end
 	elseif item.uid == config[3].uid then
 		if player:getStorageValue(Storage.Quest.U7_9.BrotherhoodOutfits.Outfits) >= config[3].storageOutfit then
@@ -63,12 +63,12 @@ function dreamerBrotherhoodLever.onUse(player, item, fromPosition, target, toPos
 				item:transform(2773)
 				addEvent(revertLever, 4 * 1000, toPosition)
 			elseif not diamondItem and player:getStorageValue(Storage.Quest.U7_9.DreamersChallenge.LeverBrotherhood3) < 1 then
-				player:sendCancelMessage("You need to offer a small diamond.")
+				player:sendLocalizedCancelMessage("quests.common.offer_required", "a small diamond")
 			else
-				player:sendCancelMessage("You have already used this lever!")
+				player:sendLocalizedCancelMessage("quests.common.already_used", "used", "lever")
 			end
 		else
-			player:sendCancelMessage("You still don't have permission.")
+			player:sendLocalizedCancelMessage("quests.common.no_permission")
 		end
 	end
 end

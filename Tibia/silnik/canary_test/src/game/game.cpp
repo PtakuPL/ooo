@@ -3440,7 +3440,7 @@ void Game::playerEquipItem(uint32_t playerId, uint16_t itemId, bool hasTier /* =
 		/*
 		 *	When player is feared the player can´t equip any items.
 		 */
-		player->sendTextMessage(MESSAGE_FAILURE, "You are feared.");
+		player->sendLocalizedTextMessage(MESSAGE_FAILURE, "cpp.game.combat.feared");
 		return;
 	}
 
@@ -4936,7 +4936,7 @@ void Game::playerRequestTrade(uint32_t playerId, const Position &pos, uint8_t st
 
 	std::shared_ptr<Player> tradePartner = getPlayerByID(tradePlayerId);
 	if (!tradePartner || tradePartner == player) {
-		player->sendTextMessage(MESSAGE_FAILURE, "Sorry, not possible.");
+		player->sendLocalizedTextMessage(MESSAGE_FAILURE, "cpp.game.general.not_possible");
 		return;
 	}
 
@@ -5008,18 +5008,18 @@ void Game::playerRequestTrade(uint32_t playerId, const Position &pos, uint8_t st
 		for (const auto &it : tradeItems) {
 			const auto &item = it.first;
 			if (tradeItem == item) {
-				player->sendTextMessage(MESSAGE_TRADE, "This item is already being traded.");
+				player->sendLocalizedTextMessage(MESSAGE_TRADE, "cpp.game.trade.item_being_traded");
 				return;
 			}
 
 			if (tradeItemContainer->isHoldingItem(item)) {
-				player->sendTextMessage(MESSAGE_TRADE, "This item is already being traded.");
+				player->sendLocalizedTextMessage(MESSAGE_TRADE, "cpp.game.trade.item_being_traded");
 				return;
 			}
 
 			const std::shared_ptr<Container> &container = item->getContainer();
 			if (container && container->isHoldingItem(tradeItem)) {
-				player->sendTextMessage(MESSAGE_TRADE, "This item is already being traded.");
+				player->sendLocalizedTextMessage(MESSAGE_TRADE, "cpp.game.trade.item_being_traded");
 				return;
 			}
 		}
@@ -5027,32 +5027,32 @@ void Game::playerRequestTrade(uint32_t playerId, const Position &pos, uint8_t st
 		for (const auto &it : tradeItems) {
 			const auto &item = it.first;
 			if (tradeItem == item) {
-				player->sendTextMessage(MESSAGE_TRADE, "This item is already being traded.");
+				player->sendLocalizedTextMessage(MESSAGE_TRADE, "cpp.game.trade.item_being_traded");
 				return;
 			}
 
 			const std::shared_ptr<Container> &container = item->getContainer();
 			if (container && container->isHoldingItem(tradeItem)) {
-				player->sendTextMessage(MESSAGE_TRADE, "This item is already being traded.");
+				player->sendLocalizedTextMessage(MESSAGE_TRADE, "cpp.game.trade.item_being_traded");
 				return;
 			}
 		}
 	}
 
 	if (tradeItemContainer && tradeItemContainer->getItemHoldingCount() + 1 > 100) {
-		player->sendTextMessage(MESSAGE_TRADE, "You can not trade more than 100 items.");
+		player->sendLocalizedTextMessage(MESSAGE_TRADE, "cpp.game.trade.max_items_exceeded");
 		return;
 	}
 
 	if (tradeItem->isStoreItem()) {
-		player->sendTextMessage(MESSAGE_TRADE, "This item cannot be trade.");
+		player->sendLocalizedTextMessage(MESSAGE_TRADE, "cpp.game.trade.cannot_trade");
 		return;
 	}
 
 	if (tradeItemContainer) {
 		for (const std::shared_ptr<Item> &containerItem : tradeItemContainer->getItems(true)) {
 			if (containerItem->isStoreItem()) {
-				player->sendTextMessage(MESSAGE_TRADE, "This item cannot be trade.");
+				player->sendLocalizedTextMessage(MESSAGE_TRADE, "cpp.game.trade.cannot_trade");
 				return;
 			}
 		}
@@ -5324,7 +5324,7 @@ void Game::internalCloseTrade(const std::shared_ptr<Player> &player) {
 	player->setTradeState(TRADE_NONE);
 	player->tradePartner = nullptr;
 
-	player->sendTextMessage(MESSAGE_FAILURE, "Trade cancelled.");
+	player->sendLocalizedTextMessage(MESSAGE_FAILURE, "cpp.game.trade.cancelled");
 	player->sendTradeClose();
 
 	if (tradePartner) {
@@ -5341,7 +5341,7 @@ void Game::internalCloseTrade(const std::shared_ptr<Player> &player) {
 		tradePartner->setTradeState(TRADE_NONE);
 		tradePartner->tradePartner = nullptr;
 
-		tradePartner->sendTextMessage(MESSAGE_FAILURE, "Trade cancelled.");
+		tradePartner->sendLocalizedTextMessage(MESSAGE_FAILURE, "cpp.game.trade.cancelled");
 		tradePartner->sendTradeClose();
 	}
 }
@@ -5758,7 +5758,7 @@ void Game::playerSetManagedContainer(uint32_t playerId, ObjectCategory_t categor
 	}
 
 	if (container->getID() == ITEM_GOLD_POUCH && !isLootContainer) {
-		player->sendTextMessage(MESSAGE_FAILURE, "You can only set the gold pouch as a loot container.");
+		player->sendLocalizedTextMessage(MESSAGE_FAILURE, "cpp.game.loot.gold_pouch_only");
 		return;
 	}
 
@@ -5987,19 +5987,19 @@ void Game::playerRequestAddVip(uint32_t playerId, const std::string &name) {
 		bool specialVip;
 		std::string formattedName = name;
 		if (!IOLoginData::getGuidByNameEx(guid, specialVip, formattedName)) {
-			player->sendTextMessage(MESSAGE_FAILURE, "A player with this name does not exist.");
+			player->sendLocalizedTextMessage(MESSAGE_FAILURE, "cpp.game.player.not_exist");
 			return;
 		}
 
 		if (specialVip && !player->hasFlag(PlayerFlags_t::SpecialVIP)) {
-			player->sendTextMessage(MESSAGE_FAILURE, "You can not add this player");
+			player->sendLocalizedTextMessage(MESSAGE_FAILURE, "cpp.game.player.cannot_add");
 			return;
 		}
 
 		player->vip().add(guid, formattedName, VipStatus_t::Offline);
 	} else {
 		if (vipPlayer->hasFlag(PlayerFlags_t::SpecialVIP) && !player->hasFlag(PlayerFlags_t::SpecialVIP)) {
-			player->sendTextMessage(MESSAGE_FAILURE, "You can not add this player");
+			player->sendLocalizedTextMessage(MESSAGE_FAILURE, "cpp.game.player.cannot_add");
 			return;
 		}
 
@@ -6419,7 +6419,7 @@ void Game::playerWhisper(const std::shared_ptr<Player> &player, const std::strin
 
 bool Game::playerYell(const std::shared_ptr<Player> &player, const std::string &text) {
 	if (player->getLevel() == 1) {
-		player->sendTextMessage(MESSAGE_FAILURE, "You may not yell as long as you are on level 1.");
+		player->sendLocalizedTextMessage(MESSAGE_FAILURE, "cpp.game.player.yell_level_1");
 		return false;
 	}
 
@@ -6440,7 +6440,7 @@ bool Game::playerYell(const std::shared_ptr<Player> &player, const std::string &
 bool Game::playerSpeakTo(const std::shared_ptr<Player> &player, SpeakClasses type, const std::string &receiver, const std::string &text) {
 	std::shared_ptr<Player> toPlayer = getPlayerByName(receiver);
 	if (!toPlayer) {
-		player->sendTextMessage(MESSAGE_FAILURE, "A player with this name is not online.");
+		player->sendLocalizedTextMessage(MESSAGE_FAILURE, "cpp.game.player.not_online");
 		return false;
 	}
 
@@ -6454,7 +6454,7 @@ bool Game::playerSpeakTo(const std::shared_ptr<Player> &player, SpeakClasses typ
 	toPlayer->onCreatureSay(player, type, text);
 
 	if (toPlayer->isInGhostMode() && !player->isAccessPlayer()) {
-		player->sendTextMessage(MESSAGE_FAILURE, "A player with this name is not online.");
+		player->sendLocalizedTextMessage(MESSAGE_FAILURE, "cpp.game.player.not_online");
 	} else {
 		std::ostringstream ss;
 		ss << "Message sent to " << toPlayer->getName() << '.';
@@ -6800,7 +6800,7 @@ bool Game::combatBlockHit(CombatDamage &damage, const std::shared_ptr<Creature> 
 		auto chance = targetPlayer->getDodgeChance();
 		if ((chance > 0 && uniform_random(0, 10000) < chance) || damage.hazardDodge) {
 			InternalGame::sendBlockEffect(BLOCK_DODGE, damage.primary.type, target->getPosition(), attacker);
-			targetPlayer->sendTextMessage(MESSAGE_ATTENTION, "You dodged an attack.");
+			targetPlayer->sendLocalizedTextMessage(MESSAGE_ATTENTION, "cpp.game.combat.dodged");
 			return true;
 		}
 	}
@@ -8603,7 +8603,7 @@ void Game::playerJoinParty(uint32_t playerId, uint32_t leaderId) {
 	}
 
 	if (player->getParty()) {
-		player->sendTextMessage(MESSAGE_PARTY_MANAGEMENT, "You are already in a party.");
+		player->sendLocalizedTextMessage(MESSAGE_PARTY_MANAGEMENT, "cpp.game.party.already_in_party");
 		return;
 	}
 
@@ -8656,7 +8656,7 @@ void Game::playerLeaveParty(uint32_t playerId) {
 
 	std::shared_ptr<Party> party = player->getParty();
 	if (!party || (player->hasCondition(CONDITION_INFIGHT) && !player->getZoneType() == ZONE_PROTECTION)) {
-		player->sendTextMessage(TextMessage(MESSAGE_FAILURE, "You cannot leave party, contact the administrator."));
+		player->sendLocalizedTextMessage(TextMessage(MESSAGE_FAILURE, "cpp.game.party.cannot_leave"));
 		return;
 	}
 
@@ -9221,9 +9221,9 @@ namespace {
 		);
 		if (returnValue != RETURNVALUE_NOERROR) {
 			if (actuallyAdded == 0) {
-				recipient->sendTextMessage(MESSAGE_MARKET, fmt::format("Not enough space in your inbox."));
+				recipient->sendLocalizedTextMessage(MESSAGE_MARKET, "cpp.game.market.inbox_full");
 			} else {
-				recipient->sendTextMessage(MESSAGE_MARKET, fmt::format("Not enough space in your inbox to all items, processed only {} items.", actuallyAdded));
+				recipient->sendLocalizedTextMessage(MESSAGE_MARKET, "cpp.game.market.inbox_partial", std::vector<std::string>{std::to_string(actuallyAdded)});
 				g_logger().warn("{} - Failed to add item {} total amount {}, currently added: {} to inbox for player {}, error code: {}", __FUNCTION__, itemId, amount, actuallyAdded, recipient->getName(), getReturnMessage(returnValue));
 			}
 		}
@@ -9284,7 +9284,7 @@ bool checkCanInitCreateMarketOffer(const std::shared_ptr<Player> &player, uint8_
 	g_logger().debug("{} - Offer amount: {}", __FUNCTION__, amount);
 
 	if (g_configManager().getBoolean(MARKET_PREMIUM) && !player->isPremium()) {
-		player->sendTextMessage(MESSAGE_MARKET, "Only premium accounts may create offers for that object.");
+		player->sendLocalizedTextMessage(MESSAGE_MARKET, "cpp.game.market.premium_only");
 		return false;
 	}
 
@@ -9373,7 +9373,7 @@ void Game::playerCreateMarketOffer(uint32_t playerId, uint8_t type, uint16_t ite
 		if (offerStatus.str() == "The item you tried to market is not correct. Check the item again.") {
 			player->sendTextMessage(MESSAGE_MARKET, offerStatus.str());
 		} else {
-			player->sendTextMessage(MESSAGE_MARKET, "There was an error processing your offer, please contact the administrator.");
+			player->sendLocalizedTextMessage(MESSAGE_MARKET, "cpp.game.market.processing_error");
 		}
 		g_logger().error("{} - Player {} had an error creating an offer on the market, error code: {}", __FUNCTION__, player->getName(), offerStatus.str());
 		return;
@@ -9530,13 +9530,13 @@ void Game::playerAcceptMarketOffer(uint32_t playerId, uint32_t timestamp, uint16
 
 		const auto &buyerPlayerAccount = buyerPlayer->getAccount();
 		if (!buyerPlayerAccount) {
-			player->sendTextMessage(MESSAGE_MARKET, "Cannot accept offer.");
+			player->sendLocalizedTextMessage(MESSAGE_MARKET, "cpp.game.market.cannot_accept");
 			return;
 		}
 
 		const auto &playerAccount = player->getAccount();
 		if (player == buyerPlayer || playerAccount == buyerPlayerAccount) {
-			player->sendTextMessage(MESSAGE_MARKET, "You cannot accept your own offer.");
+			player->sendLocalizedTextMessage(MESSAGE_MARKET, "cpp.game.market.own_offer");
 			return;
 		}
 
@@ -9573,7 +9573,7 @@ void Game::playerAcceptMarketOffer(uint32_t playerId, uint32_t timestamp, uint16
 			if (offerStatus.str() == "The item you tried to market is not correct. Check the item again.") {
 				player->sendTextMessage(MESSAGE_MARKET, offerStatus.str());
 			} else {
-				player->sendTextMessage(MESSAGE_MARKET, "There was an error processing your offer, please contact the administrator.");
+				player->sendLocalizedTextMessage(MESSAGE_MARKET, "cpp.game.market.processing_error");
 			}
 			g_logger().error("{} - Player {} had an error creating an offer on the market, error code: {}", __FUNCTION__, player->getName(), offerStatus.str());
 			player->sendMarketEnter(player->getLastDepotId());
@@ -9604,7 +9604,7 @@ void Game::playerAcceptMarketOffer(uint32_t playerId, uint32_t timestamp, uint16
 		}
 
 		if (player == sellerPlayer || player->getAccount() == sellerPlayer->getAccount()) {
-			player->sendTextMessage(MESSAGE_MARKET, "You cannot accept your own offer.");
+			player->sendLocalizedTextMessage(MESSAGE_MARKET, "cpp.game.market.own_offer");
 			return;
 		}
 
@@ -9652,7 +9652,7 @@ void Game::playerAcceptMarketOffer(uint32_t playerId, uint32_t timestamp, uint16
 	player->sendMarketEnter(player->getLastDepotId());
 
 	if (!offerStatus.str().empty()) {
-		player->sendTextMessage(MESSAGE_MARKET, "There was an error processing your offer, please contact the administrator.");
+		player->sendLocalizedTextMessage(MESSAGE_MARKET, "cpp.game.market.processing_error");
 		g_logger().error("{} - Player {} had an error accepting an offer on the market, error code: {}", __FUNCTION__, player->getName(), offerStatus.str());
 		return;
 	}
@@ -9731,7 +9731,7 @@ void Game::playerAnswerModalWindow(uint32_t playerId, uint32_t modalWindowId, ui
 				}
 			}
 		} else {
-			player->sendTextMessage(MESSAGE_EVENT_ADVANCE, "Offline training aborted.");
+			player->sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "cpp.player.offline_training_aborted");
 		}
 
 		player->setBedItem(nullptr);

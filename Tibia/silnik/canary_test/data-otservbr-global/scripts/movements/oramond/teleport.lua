@@ -24,7 +24,7 @@ function oramondTeleports.onStepIn(creature, item, position, fromPosition)
 	if teleport then
 		if not player:isPremium() and teleport.premium then
 			player:teleportTo(fromPosition)
-			player:sendCancelMessage("You need a premium account to access this area.")
+			player:sendLocalizedCancelMessage("movements.oramond.premium_required")
 			fromPosition:sendMagicEffect(CONST_ME_POFF)
 			return true
 		end

@@ -1,1 +1,5 @@
-{}
+{
+	"movements.oramond.premium_required": "You need a premium account to access this area.",
+	"movements.dawnport.first_time_vocation": "As this is your first time as a {}, you received a few extra items. {}",
+	"movements.dawnport.received_weapons": "You have received the weapons of a {}. {}"
+}

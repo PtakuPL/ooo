@@ -156,19 +156,19 @@ local function tileStep(player, trial)
 		addFirstItems(player)
 		-- Second step
 	elseif player:getStorageValue(trial.storage) == -1 and vocationId ~= VOCATION.ID.NONE then
-		player:sendTextMessage(
+		player:sendLocalizedMessage(
 			MESSAGE_EVENT_ADVANCE,
-			string.format("As this is your first time as a \z
-		" .. trial.vocation.name .. ", you received a few extra items. " .. trial.message)
+			"movements.dawnport.first_time_vocation",
+			{ trial.vocation.name, trial.message }
 		)
 		player:setStorageValue(trial.storage, 1)
 		player:sendTutorial(trial.tutorialId)
 		-- Other steps
 	elseif player:getStorageValue(trial.storage) == 1 then
-		player:sendTextMessage(
+		player:sendLocalizedMessage(
 			MESSAGE_EVENT_ADVANCE,
-			string.format("You have received the weapons of a \z
-		" .. trial.vocation.name .. ". " .. trial.message)
+			"movements.dawnport.received_weapons",
+			{ trial.vocation.name, trial.message }
 		)
 	end
 	return true

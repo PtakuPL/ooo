@@ -229,6 +229,23 @@
       "playing_internal_dual": "Playing sound number {} and {} internally.",
       "playing_global_single": "Playing sound number {} globally.",
       "playing_global_dual": "Playing sound number {} and {} globally."
+    },
+    "forge_functions": {
+      "player_name_required": "Player name param required.",
+      "player_not_online": "Player {} is not online.",
+      "invalid_dust_count": "Invalid dust count.",
+      "invalid_dust_level": "Invalid dust level.",
+      "added_dusts_admin": "Successful added {} dusts for the {} player.",
+      "added_dusts_player": "{} added {} dusts to your character.",
+      "removed_dusts_admin": "Successful removed {} dusts for the {} player.",
+      "removed_dusts_player": "{} removed {} dusts to your character.",
+      "player_has_dusts": "{} has {} dusts.",
+      "set_dusts_admin": "Successful set {} dusts for the {} player.",
+      "set_dusts_player": "{} set {} dusts to your character.",
+      "no_fiendish_monsters": "There are not fiendish monsters right now.",
+      "no_influenced_monsters": "There are not influenced monsters right now.",
+      "added_dust_level_admin": "Successful added {} dust level for the {} player.",
+      "added_dust_level_player": "{} adds {} dust level to your character."
     }
   }
 }

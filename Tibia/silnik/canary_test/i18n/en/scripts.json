@@ -802,5 +802,22 @@
   "scripts.gravedigger_monks.statue_3": "A shade emerges and snatches the candle from your hands.",
 
   "scripts.servants_mechanism.diamond_msg": "5 diamond entities are consuming too much raw energy for the cosmic chamber to awaken, it will be put to rest again in 10 minutes.",
-  "scripts.servants_mechanism.golden_msg": "5 golden entities are consuming too much raw energy for the cosmic chamber to awaken, it will be put to rest again in 10 minutes."
+  "scripts.servants_mechanism.golden_msg": "5 golden entities are consuming too much raw energy for the cosmic chamber to awaken, it will be put to rest again in 10 minutes.",
+
+  "scripts.dream_courts.barrel_word": "The inside of this barrel's lid has a word written onto it: 'O'kteth'.",
+  "scripts.dream_courts.statue_word": "This statue has a word written on her hand: 'N'ogalu'.",
+  "scripts.dream_courts.bed_word": "This end of the bed has a stack of notes hidden under it. There is only one word on all of them: 'T'sough'.",
+
+  "scripts.cults_tar.fire_enter": "As you enter the tar pits, you feel the heat around you rising dramatically. Survive the heat long enough to prove worthy.",
+  "scripts.cults_tar.fire_heating": "Your body is heating up, the air around you is flickering.",
+  "scripts.cults_tar.fire_unbearable": "The heat is now unbearable, the blood in your body feels like lava. There's almost no strength left in you - act quickly!",
+  "scripts.cults_tar.fire_pass": "Embrace the stigma of bad fortune. The tar does not feel so hot anymore. You passed the tar trial.",
+  "scripts.cults_tar.fire_second": "Your body reacts to this strange green substance as you reach out to touch it. You feel an urge for more of this energy.",
+  "scripts.cults_tar.fire_cooled": "The tar covering you has cooled down and fell off for the most part. Your body is not heated up anymore.",
+  "scripts.cults_tar.acid_enter": "As you enter the sulphur pits, you feel the dry, burning vapours of the sulphur all around you. Prove worthy, survive the acid.",
+  "scripts.cults_tar.acid_burning": "The sulphur is burning your skin. You almost feel your body melting away in acid.",
+  "scripts.cults_tar.acid_unbearable": "The acid burning is now unbearable, your skin feels like a sieve. There's almost no strength left in you - act quickly!",
+  "scripts.cults_tar.acid_pass": "Embrace the stigma of vanity. The sulphur does not burn your skin anymore. You passed the trial.",
+  "scripts.cults_tar.acid_second": "You are now ready to prove your worth. Take heart and cross the threshold of sulphur.",
+  "scripts.cults_tar.acid_cooled": "The acid covering you has cooled down and fell off for the most part. Your body is not heated up anymore."
 }

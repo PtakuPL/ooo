@@ -165,12 +165,12 @@ function cultsOfTibiaLevers.onUse(player, item, fromPosition, itemEx, toPosition
 			end
 
 			if teleport ~= 5 then
-				player:sendCancelMessage("You need exactly 5 players to start this challenge.")
+				player:sendLocalizedCancelMessage("quests.common.players_exact", "5")
 				return true
 			end
 
 			if isPlayerInArea(frompos, topos) then
-				player:sendCancelMessage("The room is full.")
+				player:sendLocalizedCancelMessage("quests.common.room_occupied")
 				return true
 			end
 
@@ -217,12 +217,12 @@ function cultsOfTibiaLevers.onUse(player, item, fromPosition, itemEx, toPosition
 			end
 
 			if teleport ~= 5 then
-				player:sendCancelMessage("You need exactly 5 players to start this challenge.")
+				player:sendLocalizedCancelMessage("quests.common.players_exact", "5")
 				return true
 			end
 
 			if isPlayerInArea(frompos, topos) then
-				player:sendCancelMessage("The room is full.")
+				player:sendLocalizedCancelMessage("quests.common.room_occupied")
 				return true
 			end
 
@@ -269,12 +269,12 @@ function cultsOfTibiaLevers.onUse(player, item, fromPosition, itemEx, toPosition
 			end
 
 			if teleport ~= 5 then
-				player:sendCancelMessage("You need exactly 5 players to start this challenge.")
+				player:sendLocalizedCancelMessage("quests.common.players_exact", "5")
 				return true
 			end
 
 			if isPlayerInArea(frompos, topos) then
-				player:sendCancelMessage("It looks like there is someone inside.")
+				player:sendLocalizedCancelMessage("quests.common.someone_inside")
 				return true
 			end
 
@@ -327,12 +327,12 @@ function cultsOfTibiaLevers.onUse(player, item, fromPosition, itemEx, toPosition
 			end
 
 			if teleport ~= 5 then
-				player:sendCancelMessage("You need exactly 5 players to start this challenge.")
+				player:sendLocalizedCancelMessage("quests.common.players_exact", "5")
 				return true
 			end
 
 			if isPlayerInArea(frompos, topos) then
-				player:sendCancelMessage("It looks like there is someone inside.")
+				player:sendLocalizedCancelMessage("quests.common.someone_inside")
 				return true
 			end
 
@@ -377,12 +377,12 @@ function cultsOfTibiaLevers.onUse(player, item, fromPosition, itemEx, toPosition
 			end
 
 			if teleport ~= 5 then
-				player:sendCancelMessage("You need exactly 5 players to start this challenge.")
+				player:sendLocalizedCancelMessage("quests.common.players_exact", "5")
 				return true
 			end
 
 			if isPlayerInArea(frompos, topos) then
-				player:sendCancelMessage("It looks like there is someone inside.")
+				player:sendLocalizedCancelMessage("quests.common.someone_inside")
 				return true
 			end
 
@@ -470,12 +470,12 @@ function cultsOfTibiaLevers.onUse(player, item, fromPosition, itemEx, toPosition
 			end
 
 			if teleport ~= 5 then
-				player:sendCancelMessage("You need exactly 5 players to start this challenge.")
+				player:sendLocalizedCancelMessage("quests.common.players_exact", "5")
 				return true
 			end
 
 			if isPlayerInArea(frompos, topos) then
-				player:sendCancelMessage("It looks like there is someone inside.")
+				player:sendLocalizedCancelMessage("quests.common.someone_inside")
 				return true
 			end
 
@@ -540,12 +540,12 @@ function cultsOfTibiaLevers.onUse(player, item, fromPosition, itemEx, toPosition
 			end
 
 			if teleport ~= 10 then
-				player:sendCancelMessage("You need exactly 10 players to start this challenge.")
+				player:sendLocalizedCancelMessage("quests.common.players_exact", "10")
 				return true
 			end
 
 			if isPlayerInArea(frompos, topos) then
-				player:sendCancelMessage("It looks like there is someone inside.")
+				player:sendLocalizedCancelMessage("quests.common.someone_inside")
 				return true
 			end
 

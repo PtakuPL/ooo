@@ -98,6 +98,13 @@
     },
     "create_npc": {
       "not_enough_room": "There is not enough room."
+    },
+    "create_summon": {
+      "not_enough_room": "Not enough room."
+    },
+    "goto_house": {
+      "player_no_house": "The player {} not have house.",
+      "no_house_usage": "You not have house. For goto house of one player use the player name param, usage: /gotohouse playername"
     }
   }
 }

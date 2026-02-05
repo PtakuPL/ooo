@@ -85,7 +85,7 @@ local function antiPush(player, item, count, fromPosition, toPosition, fromCylin
 	end
 
 	if pushDelay[playerId].time > currentTime then
-		player:sendCancelMessage("You can't move that item so fast.")
+		player:sendLocalizedCancelMessage("events.player.item_move_cooldown")
 		return false
 	end
 

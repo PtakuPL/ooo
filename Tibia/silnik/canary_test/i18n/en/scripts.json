@@ -665,5 +665,20 @@
   "scripts.common.min_players_required": "You need at least {} players inside the quest room.",
   "scripts.canary_quests.found_item": "You have found a {}.",
   "scripts.canary_quests.found_item_too_heavy": "You have found a {} weighing {} oz it's too heavy.",
-  "scripts.common.empty": "It is empty."
+  "scripts.common.empty": "It is empty.",
+  "trainer": {
+    "no_position": "Couldn't find any position for you right now."
+  },
+  "skinning": {
+    "already_used": "You already used your knife on the corpse."
+  },
+  "temple_scroll": {
+    "cannot_use_in_fight": "You can't use this when you're in a fight."
+  },
+  "hazard": {
+    "primal_pod_explodes": "You stepped too late on the primal pod and it explodes."
+  },
+  "common": {
+    "someone_in_room": "There is someone in the room."
+  }
 }

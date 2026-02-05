@@ -12,6 +12,7 @@
   "lib.hireling.msg3": "You do not have enough capacity.",
   "lib.hireling.msg4": "You don't have enough room in your inbox.",
   "lib.concoctions.msg1": "Your concoction ",
+  "lib.concoctions.msg5": "Your concoction {} is still active for another {}.",
   "lib.exaltation_forge.msg1": "You received ",
   "lib.exaltation_forge.msg2": "You did not receive ",
   "lib.exaltation_forge.msg3": "You received ",
@@ -19,5 +20,9 @@
   "lib.familiar.msg1": "Your summon will disappear in less than ",
   "lib.vip.msg1": "Your VIP status has expired. All VIP benefits have been removed.",
   "lib.vip.msg2": "You have unlimited VIP status.",
-  "lib.vip.msg3": "Your VIP status is currently inactive."
+  "lib.vip.msg3": "Your VIP status is currently inactive.",
+  "lib.vip.msg4": "You have been granted {} days of VIP status.",
+  "lib.vip.msg5": "You have {} of VIP time remaining.",
+  "lib.blessing.msg2": "No blessings received.",
+  "lib.blessing.msg3": "{} protects you."
 }

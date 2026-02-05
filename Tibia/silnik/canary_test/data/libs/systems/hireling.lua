@@ -356,14 +356,14 @@ function Hireling:returnToLamp(player_id)
 		local lampType = ItemType(HIRELING_LAMP)
 		if owner:getFreeCapacity() < lampType:getWeight(1) then
 			owner:getPosition():sendMagicEffect(CONST_ME_POFF)
-			return owner:sendTextMessage(MESSAGE_FAILURE, "You do not have enough capacity.")
+			return owner:sendLocalizedMessage(MESSAGE_FAILURE, "lib.hireling.msg1")
 		end
 
 		local inbox = owner:getStoreInbox()
 		local inboxItems = inbox:getItems()
 		if not inbox or #inboxItems >= inbox:getMaxCapacity() then
 			owner:getPosition():sendMagicEffect(CONST_ME_POFF)
-			return owner:sendTextMessage(MESSAGE_FAILURE, "You don't have enough room in your inbox.")
+			return owner:sendLocalizedMessage(MESSAGE_FAILURE, "lib.hireling.msg2")
 		end
 
 		local hireling = getHirelingById(hirelingId)
@@ -550,7 +550,7 @@ function Player:addNewHireling(name, sex)
 	local lampType = ItemType(HIRELING_LAMP)
 	if not lampType or self:getFreeCapacity() < lampType:getWeight(1) then
 		self:getPosition():sendMagicEffect(CONST_ME_POFF)
-		self:sendTextMessage(MESSAGE_FAILURE, "You do not have enough capacity.")
+		self:sendLocalizedMessage(MESSAGE_FAILURE, "lib.hireling.msg3")
 		return false
 	end
 
@@ -558,7 +558,7 @@ function Player:addNewHireling(name, sex)
 	local inboxItems = inbox:getItems()
 	if not inbox or #inboxItems >= inbox:getMaxCapacity() then
 		self:getPosition():sendMagicEffect(CONST_ME_POFF)
-		self:sendTextMessage(MESSAGE_FAILURE, "You don't have enough room in your inbox.")
+		self:sendLocalizedMessage(MESSAGE_FAILURE, "lib.hireling.msg4")
 		return false
 	end
 

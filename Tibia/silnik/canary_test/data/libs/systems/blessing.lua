@@ -199,7 +199,7 @@ Blessings.useCharm = function(player, item)
 			end
 
 			player:addBlessing(value.id, 1)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, value.name .. " protects you.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "lib.blessing.msg3", {value.name})
 			player:getPosition():sendMagicEffect(CONST_ME_LOSEENERGY)
 			item:remove(1)
 			return true
@@ -213,7 +213,7 @@ Blessings.checkBless = function(player)
 		result = player:hasBlessing(k) and result .. "\n" .. v.name or result
 	end
 
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, 20 > result:len() and "No blessings received." or result)
+	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, 20 > result:len() and "lib.blessing.msg2" or result)
 	return true
 end
 

@@ -4,7 +4,7 @@ local config = {
 }
 
 function Player.onRemoveVip(self)
-	self:sendTextMessage(MESSAGE_ADMINISTRATOR, "Your VIP status has expired. All VIP benefits have been removed.")
+	self:sendLocalizedMessage(MESSAGE_ADMINISTRATOR, "lib.vip.msg1")
 
 	for _, outfit in ipairs(config.outfits) do
 		self:removeOutfit(outfit)
@@ -31,7 +31,7 @@ end
 
 function Player.onAddVip(self, days, silent)
 	if not silent then
-		self:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format("You have been granted %s days of VIP status.", days))
+		self:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "lib.vip.msg4", {days})
 	end
 
 	for _, outfit in ipairs(config.outfits) do
@@ -47,15 +47,15 @@ end
 
 function Player.sendVipStatus(self)
 	if self:getVipDays() == 0xFFFF then
-		self:sendTextMessage(MESSAGE_LOGIN, "You have unlimited VIP status.")
+		self:sendLocalizedMessage(MESSAGE_LOGIN, "lib.vip.msg2")
 		return true
 	end
 
 	local playerVipTime = self:getVipTime()
 	if playerVipTime < os.time() then
-		self:sendTextMessage(MESSAGE_STATUS, "Your VIP status is currently inactive.")
+		self:sendLocalizedMessage(MESSAGE_STATUS, "lib.vip.msg3")
 		return true
 	end
 
-	self:sendTextMessage(MESSAGE_LOGIN, string.format("You have %s of VIP time remaining.", getFormattedTimeRemaining(playerVipTime)))
+	self:sendLocalizedMessage(MESSAGE_LOGIN, "lib.vip.msg5", {getFormattedTimeRemaining(playerVipTime)})
 end

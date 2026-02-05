@@ -157,7 +157,7 @@ function Concoction:init(player, sendMessage)
 			if not eventPlayer then
 				return
 			end
-			eventPlayer:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Your concoction " .. name .. " is still active for another " .. duration .. ".")
+			eventPlayer:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "lib.concoctions.msg5", {name, duration})
 		end, 500, player:getId(), self.name, Game.getTimeInWords(self:timeLeft(player)))
 	end
 end

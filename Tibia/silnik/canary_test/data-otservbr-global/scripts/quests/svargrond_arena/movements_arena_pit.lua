@@ -42,7 +42,7 @@ function arenaPit.onStepIn(creature, item, position, fromPosition)
 		end
 
 		player:setStorageValue(Storage.Quest.U8_0.BarbarianArena.Arena, player:getStorageValue(Storage.Quest.U8_0.BarbarianArena.Arena) + 1)
-		player:say("Congratulations! You completed " .. ARENA[arenaId].name .. " arena, you should take your reward now.")
+		player:sayLocalized("scripts.svargrond_arena.completed", {arenaName = ARENA[arenaId].name}, TALKTYPE_MONSTER_SAY)
 		player:setStorageValue(ARENA[arenaId].questLog, 2)
 		player:addAchievement(ARENA[arenaId].achievement)
 		SvargrondArena.cancelEvents(playerId)
@@ -51,7 +51,8 @@ function arenaPit.onStepIn(creature, item, position, fromPosition)
 
 	local occupant = SvargrondArena.getPitOccupant(pitId, player)
 	if occupant then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, occupant:getName() .. " is currently in the next arena pit. Please wait until " .. (occupant:getSex() == PLAYERSEX_FEMALE and "s" or "") .. "he is done fighting.")
+		local pronoun = occupant:getSex() == PLAYERSEX_FEMALE and "she" or "he"
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.svargrond_arena.pit_occupied", {playerName = occupant:getName(), pronoun = pronoun})
 		player:teleportTo(fromPosition, true)
 		return true
 	end

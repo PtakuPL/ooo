@@ -21,7 +21,8 @@ function arenaEnter.onStepIn(creature, item, position, fromPosition)
 
 	local occupant = SvargrondArena.getPitOccupant(pitId, player)
 	if occupant then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, occupant:getName() .. " is currently in the next arena pit. Please wait until " .. (occupant:getSex() == PLAYERSEX_FEMALE and "s" or "") .. "he is done fighting.")
+		local pronoun = occupant:getSex() == PLAYERSEX_FEMALE and "she" or "he"
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.svargrond_arena.pit_occupied", {playerName = occupant:getName(), pronoun = pronoun})
 		player:teleportTo(fromPosition, true)
 		return true
 	end

@@ -16,7 +16,7 @@ local tests = {
 		itemPosition = { x = 33137, y = 32291, z = 8 },
 		pagodaPosition = { x = 33134, y = 32289, z = 8 },
 		item = 9634,
-		message = "You have sacrificed a cobra tongue at an ancient statue. The light in the small pyramid nearby begins to shine.",
+		messageKey = "scripts.lions_rock.cobra_tongue_sacrifice",
 		effect = CONST_ME_BLOCKHIT,
 	},
 	{
@@ -24,7 +24,7 @@ local tests = {
 		itemPosition = { x = 33138, y = 32369, z = 8 },
 		pagodaPosition = { x = 33136, y = 32369, z = 8 },
 		item = 21389,
-		message = "You burnt a lion's mane flower. The light in the small pyramid nearby begins to shine.",
+		messageKey = "scripts.lions_rock.lions_mane_burnt",
 		effect = CONST_ME_REDSMOKE,
 	},
 	{
@@ -32,8 +32,7 @@ local tests = {
 		itemPosition = { x = 33154, y = 32279, z = 8 },
 		pagodaPosition = { x = 33156, y = 32279, z = 8 },
 		item = 21466,
-		message = "You have purified a sacret pedestal with holy water. You have now passed the last test\z
-		to enter thge inner sanctum.",
+		messageKey = "scripts.lions_rock.holy_water_purified",
 		effect = CONST_ME_LOSEENERGY,
 	},
 }
@@ -56,7 +55,7 @@ function lionsRockSacrificesTest.onUse(player, item, fromPosition, target, toPos
 				local pagoda = Tile(setting.pagodaPosition):getItemById(2074)
 				if pagoda then
 					pagoda:transform(2075)
-					player:sendTextMessage(MESSAGE_EVENT_ADVANCE, setting.message)
+					player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, setting.messageKey)
 					player:setStorageValue(setting.storage, 1)
 					if player:getStorageValue(Storage.Quest.U10_70.LionsRock.Questline) < 1 then
 						player:setStorageValue(Storage.Quest.U10_70.LionsRock.Questline, math.max(player:getStorageValue(Storage.Quest.U10_70.LionsRock.Questline), 1))

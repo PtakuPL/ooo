@@ -649,5 +649,7 @@
   "scripts.quest_reward_common.too_heavy": "{}. Weighing {} oz, it is too heavy for you to carry.",
   "scripts.quest_reward_common.chest_empty": "The {} is empty.",
   "scripts.bosses_reward.boss_defends": "{} defends his belongings and will not let you open his chest.",
-  "scripts.golden.boss_timeout": "You have faced this boss in the last {} hours."
+  "scripts.golden.boss_timeout": "You have faced this boss in the last {} hours.",
+  "scripts.common.chest_empty": "The {} is empty.",
+  "scripts.arena.pit_occupied": "{} is currently in the next arena pit. Please wait until {}he is done fighting."
 }

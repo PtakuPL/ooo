@@ -8,7 +8,7 @@ local missionTiles = {
 				storage = Storage.Quest.U9_1.TheRookieGuard.AcademyChest,
 				state = -1,
 			},
-			message = "This chest should contain everything you need to infiltrate the fortress.",
+			messageKey = "scripts.mission12_into_fortress.tile_1",
 			arrowPosition = { x = 32109, y = 32187, z = 8 },
 		},
 		{
@@ -17,14 +17,14 @@ local missionTiles = {
 				storage = Storage.Quest.U9_1.TheRookieGuard.AcademyChest,
 				state = 1,
 			},
-			message = "Those items should be what you need to infiltrate the fortress. Go back near the wasps' nest and walk south from there.",
+			messageKey = "scripts.mission12_into_fortress.tile_2",
 			newState = 2,
 		},
 	},
 	[50355] = {
 		{
 			states = { 2 },
-			message = "This orc has turned his back to you and is obviously taking a break. Use the rolling pin on him to knock him out!",
+			messageKey = "scripts.mission12_into_fortress.tile_3",
 		},
 	},
 	[50356] = {
@@ -33,7 +33,7 @@ local missionTiles = {
 			condition = function(player)
 				return player:getOutfit().lookType ~= 5
 			end,
-			message = "This guard will definitely not let you pass. Sneak around the fortress to find a way to disguise yourself.",
+			messageKey = "scripts.mission12_into_fortress.tile_4",
 			walkTo = { x = 1, y = 0, z = 0 },
 		},
 		{
@@ -41,7 +41,7 @@ local missionTiles = {
 			condition = function(player)
 				return player:getOutfit().lookType == 5
 			end,
-			message = "You sneaked into the orc fortress. Careful now, don't go outside again.",
+			messageKey = "scripts.mission12_into_fortress.tile_5",
 			newState = 5,
 			walkTo = { x = -1, y = 0, z = 0 },
 		},
@@ -49,7 +49,7 @@ local missionTiles = {
 	[50357] = {
 		{
 			states = { 5 },
-			message = "You cannot hope to sneak past this guard. Maybe some distraction would help? You could try using the fleshy bone on him...",
+			messageKey = "scripts.mission12_into_fortress.tile_6",
 		},
 	},
 	[50358] = {
@@ -58,7 +58,7 @@ local missionTiles = {
 			condition = function(player)
 				return Tile(Position(31977, 32150, 7)):getItemById(12792) ~= nil
 			end,
-			message = "You cannot hope to sneak past this guard. Maybe some distraction would help? You could try using the fleshy bone on him...",
+			messageKey = "scripts.mission12_into_fortress.tile_7",
 			teleportTo = { x = 31977, y = 32155, z = 7 },
 		},
 	},
@@ -66,32 +66,32 @@ local missionTiles = {
 		{
 			states = { 6 },
 			newState = 7,
-			message = "You've managed to reach the interior of the orc fortress. Be prepared for a fight - and look for the soup cauldron.",
+			messageKey = "scripts.mission12_into_fortress.tile_8",
 		},
 	},
 	[50360] = {
 		{
 			states = { 7 },
-			message = "You're apperently in the kitchen. If you find a big cauldron, use the flask of wasp poison on it.",
+			messageKey = "scripts.mission12_into_fortress.tile_9",
 		},
 	},
 	[50361] = {
 		{
 			states = { 7 },
-			message = "You haven't used the poison on Kraknaknork's soup yet. Don't try to fight him before that - or he will definitely kill you.",
+			messageKey = "scripts.mission12_into_fortress.tile_10",
 			walkTo = { x = 0, y = -1, z = 0 },
 		},
 	},
 	[50362] = {
 		{
 			states = { 8 },
-			message = "Got your tarantula trap ready? You might need to use it soon...",
+			messageKey = "scripts.mission12_into_fortress.tile_11",
 		},
 	},
 	[50363] = {
 		{
 			states = { 11 },
-			message = "Beware... you're approaching Kraknaknork's room. Once you enter, you have only 5 minutes to kill him before he throws you out.",
+			messageKey = "scripts.mission12_into_fortress.tile_12",
 		},
 	},
 }
@@ -118,7 +118,7 @@ function missionGuide.onStepIn(creature, item, position, fromPosition)
 		if table.find(tile[i].states, missionState) and extraState and condition then
 			-- Check delayed notifications (message/arrow)
 			if not isTutorialNotificationDelayed(player) then
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, tile[i].message)
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, tile[i].messageKey)
 				if tile[i].arrowPosition then
 					Position(tile[i].arrowPosition):sendMagicEffect(CONST_ME_TUTORIALARROW)
 				end
@@ -180,7 +180,7 @@ function treasureChest.onUse(player, item, frompos, itemEx, topos)
 			player:setStorageValue(Storage.Quest.U9_1.TheRookieGuard.AcademyChestTimer, os.time() + 24 * 60 * 60)
 			player:addItemEx(container, true, CONST_SLOT_WHEREEVER)
 		else
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The " .. item:getName() .. " is empty.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.quest_common.chest_empty", item:getName())
 		end
 	end
 	return true
@@ -387,7 +387,7 @@ local energyBarriers = {
 	[40058] = {
 		position = { x = 31974, y = 32174, z = 10 },
 		teleportTo = { x = 31977, y = 32174, z = 10 },
-		message = "Kraknaknork maintains strong energy barriers. There is only one way to disable them.",
+		messageKey = "scripts.mission12_into_fortress.barrier_1",
 	},
 	[40059] = {
 		position = { x = 31962, y = 32174, z = 10 },
@@ -423,8 +423,8 @@ function missionEnergyBarriers.onStepIn(creature, item, position, fromPosition)
 	player:teleportTo(teleportPosition, false)
 	position:sendMagicEffect(CONST_ME_PURPLEENERGY)
 	teleportPosition:sendMagicEffect(CONST_ME_PURPLEENERGY)
-	if energyBarrier.message then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, energyBarrier.message)
+	if energyBarrier.messageKey then
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, energyBarrier.messageKey)
 	end
 	return true
 end
@@ -439,7 +439,7 @@ missionEnergyBarriers:register()
 local levers = {
 	[40064] = {
 		barrier = 40058,
-		message = "The energy barrier to the south temporarily disappeared.",
+		messageKey = "scripts.mission12_into_fortress.lever_1",
 	},
 	[40065] = {
 		barrier = 40059,
@@ -477,8 +477,8 @@ function missionLevers.onUse(player, item, position, itemEx, toPosition)
 		if energyBarrier then
 			energyBarrier:getPosition():sendMagicEffect(CONST_ME_PURPLEENERGY)
 			energyBarrier:remove()
-			if lever.message then
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, lever.message)
+			if lever.messageKey then
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, lever.messageKey)
 			else
 				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission12_into_fortress.msg_10")
 			end
@@ -688,7 +688,7 @@ function bossChests.onUse(player, item, frompos, itemEx, topos)
 			player:setStorageValue(Storage.Quest.U9_1.TheRookieGuard.KraknaknorkChests, chestsState + chest.id)
 			player:addItemEx(reward, true, CONST_SLOT_WHEREEVER)
 		else
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The " .. item:getName() .. " is empty.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.quest_common.chest_empty", item:getName())
 		end
 	end
 	return true
@@ -780,7 +780,7 @@ function orcFortressChests.onUse(player, item, frompos, itemEx, topos)
 		player:setStorageValue(Storage.Quest.U9_1.TheRookieGuard.OrcFortressChests, chestsState + chest.id)
 		player:addItemEx(reward, true, CONST_SLOT_WHEREEVER)
 	else
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The " .. item:getName() .. " is empty.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.quest_common.chest_empty", item:getName())
 	end
 	return true
 end

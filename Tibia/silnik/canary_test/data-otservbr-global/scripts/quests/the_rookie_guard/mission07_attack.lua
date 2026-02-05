@@ -2,18 +2,18 @@
 
 local missionTiles = {
 	[50337] = {
-		message = "Go down the stairs to reach the vault. It smells like fire down there. Make sure you are healthy!",
+		messageKey = "scripts.mission07_attack.tile_1",
 		arrowPosition = { x = 32089, y = 32154, z = 9 },
 	},
 	[50338] = {
-		message = "The vault is on fire! There is almost no air in here. You don't have much time to find the book. Hurry!",
+		messageKey = "scripts.mission07_attack.tile_2",
 	},
 	[50340] = {
-		message = "This must be the chest with the book - but it's covered in flames!",
+		messageKey = "scripts.mission07_attack.tile_3",
 		arrowPosition = { x = 32083, y = 32141, z = 10 },
 	},
 	[50341] = {
-		message = "Right-click on the grey rune on the table and then left-click on the fire! You can't take the rune, but it works.",
+		messageKey = "scripts.mission07_attack.tile_4",
 		arrowPosition = { x = 32082, y = 32143, z = 10 },
 	},
 }
@@ -38,7 +38,7 @@ function missionGuide.onStepIn(creature, item, position, fromPosition)
 	if missionState == 1 and libraryChestState == -1 then
 		-- Check delayed notifications (message/arrow)
 		if not isTutorialNotificationDelayed(player) then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, missionTile.message)
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, missionTile.messageKey)
 			if missionTile.arrowPosition then
 				Position(missionTile.arrowPosition):sendMagicEffect(CONST_ME_TUTORIALARROW)
 			end
@@ -149,7 +149,7 @@ function treasureChest.onUse(player, item, frompos, item2, topos)
 			player:setStorageValue(Storage.Quest.U9_1.TheRookieGuard.LibraryChest, 1)
 			player:addItemEx(reward, true, CONST_SLOT_WHEREEVER)
 		else
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The " .. item:getName() .. " is empty.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.quest_common.chest_empty", item:getName())
 		end
 	end
 	return true

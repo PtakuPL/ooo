@@ -14,5 +14,6 @@
 	"npc.gerimor.item_gained": "You gained a {}.",
 	"npc.gnomus.gnomes_points": "You earned {} point{} on the gnomes mission.",
 	"npc.gnomus.dwarves_points": "You earned {} point{} on the dwarves mission.",
-	"npc.gnomus.scouts_points": "You earned {} point{} on the scouts mission."
+	"npc.gnomus.scouts_points": "You earned {} point{} on the scouts mission.",
+	"npc.canary.sold_items": "Sold {}x {} for {} gold."
 }

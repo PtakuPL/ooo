@@ -662,5 +662,7 @@
   "scripts.common.found_item_a": "You have found a {}.",
   "scripts.common.time_to_defeat": "You have {} minutes to defeat {}.",
   "scripts.common.boss_challenging": "You must wait. Someone is challenging {} now.",
-  "scripts.common.min_players_required": "You need at least {} players inside the quest room."
+  "scripts.common.min_players_required": "You need at least {} players inside the quest room.",
+  "scripts.canary_quests.found_item": "You have found a {}.",
+  "scripts.canary_quests.found_item_too_heavy": "You have found a {} weighing {} oz it's too heavy."
 }

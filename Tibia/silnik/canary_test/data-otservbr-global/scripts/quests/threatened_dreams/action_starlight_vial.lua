@@ -4,8 +4,8 @@ local config = {
 		fromPos = Position(33526, 32298, 4),
 		toPos = Position(33532, 32303, 4),
 		usablePeriod = "night",
-		failMessage = "You are rubbing the opaque glass of the vial but nothing happens.",
-		successMessage = "The vial is glittering with starlight now.",
+		failMessageKey = "scripts.threatened_dreams.starlight_vial_fail",
+		successMessageKey = "scripts.threatened_dreams.starlight_vial_charged",
 	},
 	[25732] = {
 		targetPos = {
@@ -16,10 +16,10 @@ local config = {
 			Position(33529, 32187, 7),
 		},
 		usablePeriod = "night",
-		failMessage = "The stars has to be glittering in order to strengthen the barrier. Wait for the night. ",
-		successMessage = {
-			"As soon as you're pouring out the vial over the dreambird tree the plant is infused with starlight. The barrier strengthens.",
-			"As soon as you're pouring out the vial over the dreambird tree the plant is infused with starlight. This was the last tree.",
+		failMessageKey = "scripts.threatened_dreams.starlight_vial_wait_night",
+		successMessageKey = {
+			"scripts.threatened_dreams.starlight_vial_barrier_strengthens",
+			"scripts.threatened_dreams.starlight_vial_last_tree",
 		},
 		storageCounter = ThreatenedDreams.Mission02.ChargedStarlightVial,
 		storagePos = {
@@ -39,17 +39,17 @@ function starlightVial.onUse(player, item, fromPosition, target, toPosition, isH
 
 	if item.itemid == 25731 then
 		if tool.usablePeriod ~= currentPeriod then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, tool.failMessage)
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, tool.failMessageKey)
 			return true
 		end
 
 		if not player:getPosition():isInRange(tool.fromPos, tool.toPos) then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, tool.failMessage)
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, tool.failMessageKey)
 			return true
 		end
 
 		if player:getStorageValue(ThreatenedDreams.Mission02[1]) ~= 6 and player:getStorageValue(ThreatenedDreams.Mission02[1]) ~= 8 then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, tool.failMessage)
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, tool.failMessageKey)
 			return true
 		end
 
@@ -59,7 +59,7 @@ function starlightVial.onUse(player, item, fromPosition, target, toPosition, isH
 		elseif player:getStorageValue(ThreatenedDreams.Mission02[1]) == 8 then
 			item:transform(25976)
 		end
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, tool.successMessage)
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, tool.successMessageKey)
 		iterateArea(function(position)
 			local tile = Tile(position)
 			if tile then
@@ -69,7 +69,7 @@ function starlightVial.onUse(player, item, fromPosition, target, toPosition, isH
 		return true
 	elseif item.itemid == 25732 then
 		if tool.usablePeriod ~= currentPeriod then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, tool.failMessage)
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, tool.failMessageKey)
 			return true
 		end
 
@@ -81,9 +81,9 @@ function starlightVial.onUse(player, item, fromPosition, target, toPosition, isH
 					player:setStorageValue(tool.storageCounter, counter - 1)
 					player:getPosition():sendMagicEffect(CONST_ME_HITAREA)
 					if player:getStorageValue(tool.storageCounter) ~= 0 then
-						player:sendTextMessage(MESSAGE_EVENT_ADVANCE, tool.successMessage[1])
+						player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, tool.successMessageKey[1])
 					else
-						player:sendTextMessage(MESSAGE_EVENT_ADVANCE, tool.successMessage[2])
+						player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, tool.successMessageKey[2])
 						item:transform(25731)
 					end
 				end

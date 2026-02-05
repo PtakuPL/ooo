@@ -71,7 +71,7 @@ function vocationReward.onUse(player, item, fromPosition, itemEx, toPosition)
 	end
 	-- Check quest storage
 	if player:getStorageValue(Storage.Quest.U10_55.Dawnport.VocationReward) == 1 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The " .. item:getName() .. " is empty.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.quest_common.chest_empty", item:getName())
 		return true
 	end
 	-- Calculate reward weight

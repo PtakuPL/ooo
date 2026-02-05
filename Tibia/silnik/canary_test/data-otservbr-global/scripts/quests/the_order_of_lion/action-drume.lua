@@ -103,7 +103,7 @@ function drumeAction.onUse(player, item, fromPosition, target, toPosition, isHot
 	for _, pi in pairs(players) do
 		pi:setBossCooldown("Drume", os.time() + (configManager.getNumber(configKeys.BOSS_DEFAULT_TIME_TO_FIGHT_AGAIN)))
 		pi:teleportTo(config.newPosition)
-		pi:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have " .. config.timeToKill .. " minutes to defeat Drume.")
+		pi:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.boss_portal.time_to_defeat", config.timeToKill)
 	end
 	if currentEvent then
 		stopEvent(currentEvent)

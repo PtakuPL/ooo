@@ -32,16 +32,16 @@ npcConfig.voices = {
 }
 
 local worldChanges = {
-	{ text = "In Ankrahmun's desert, a storm has revealed the entry to a nightmare that can't be sealed. Horrible creatures there spell instant death to all young adventurers who dare take a breath!", storage = GlobalStorage.WorldBoard.NightmareIsle.AnkrahmunNorth },
-	{ text = "Near Darashia's coast, a storm has revealed the entry to a nightmare that can't be sealed. Horrible creatures there spell instant death to all young adventurers who dare take a breath!", storage = GlobalStorage.WorldBoard.NightmareIsle.DarashiaNorth },
-	{ text = "Near Drefia's mountains, a storm has revealed the entry to a nightmare that can't be sealed. Horrible creatures there spell instant death to all young adventurers who dare take a breath!", storage = GlobalStorage.WorldBoard.NightmareIsle.DarashiaWest },
-	{ text = "Hear ye! Hear ye! What a lucky and beautiful day! Visit Carlin, Ankrahmun, or Liberty Bay. Yasir, the oriental trader might be there. Gather your creature products, for this chance is rare.", storage = GlobalStorage.Yasir },
-	{ text = "Hear ye! Hear ye! A fiery gate has opened, threatening a city! Guard the people frightened, their death would be a pity!", storage = GlobalStorage.FuryGates },
+	{ i18nKey = "npc.towncryer.voice_4", storage = GlobalStorage.WorldBoard.NightmareIsle.AnkrahmunNorth },
+	{ i18nKey = "npc.towncryer.voice_5", storage = GlobalStorage.WorldBoard.NightmareIsle.DarashiaNorth },
+	{ i18nKey = "npc.towncryer.voice_6", storage = GlobalStorage.WorldBoard.NightmareIsle.DarashiaWest },
+	{ i18nKey = "npc.towncryer.voice_7", storage = GlobalStorage.Yasir },
+	{ i18nKey = "npc.towncryer.voice_8", storage = GlobalStorage.FuryGates },
 }
 
 for i = 1, #worldChanges do
 	if Game.getStorageValue(worldChanges[i].storage) > 0 then
-		table.insert(npcConfig.voices, { text = worldChanges[i].text })
+		table.insert(npcConfig.voices, { i18nKey = worldChanges[i].i18nKey })
 	end
 end
 

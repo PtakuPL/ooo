@@ -53,7 +53,7 @@ function pitsOfInfernoLevers.onUse(player, item, fromPosition, target, toPositio
 		end
 
 		Game.setStorageValue(GlobalStorage.PitsOfInfernoLevers, number)
-		player:say("You flipped the " .. text[number] .. " lever. Hurry up and find the next one!", TALKTYPE_MONSTER_SAY, false, player, toPosition)
+		player:sayLocalized("scripts.actions_levers.say_" .. number, TALKTYPE_MONSTER_SAY)
 	elseif item.uid == 2065 then
 		if leverCount ~= 15 then
 			player:sayLocalized("scripts.actions_levers.say_5", TALKTYPE_MONSTER_SAY)

@@ -14,10 +14,10 @@ function fafnar.onDeath(creature, _corpse, _lastHitKiller, mostDamageKiller)
 	onDeathForParty(creature, mostDamageKiller, function(creature, player)
 		local kills = player:getStorageValue(storage)
 		if kills == 300 and player:getStorageValue(storage) == 1 then
-			player:say("You slayed " .. creature:getName() .. ".", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("scripts.creaturescripts_fafnar.say_1", TALKTYPE_MONSTER_SAY, { creature = creature:getName() })
 		else
 			kills = kills + 1
-			player:say("You have slayed " .. creature:getName() .. " " .. kills .. " times!", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("scripts.creaturescripts_fafnar.say_2", TALKTYPE_MONSTER_SAY, { creature = creature:getName(), kills = kills })
 			player:setStorageValue(storage, kills)
 		end
 	end)

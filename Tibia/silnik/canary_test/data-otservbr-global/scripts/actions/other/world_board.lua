@@ -3,34 +3,34 @@ local worldBoard = Action()
 local communicates = {
 	[1] = {
 		storageValue = GlobalStorage.FuryGates,
-		communicate = "A fiery fury gate has opened near one of the major cities somewhere in Tibia.",
+		communicateKey = "actions.world_board.fury_gates",
 	},
 
 	[2] = {
 		storageValue = GlobalStorage.Yasir,
-		communicate = "Oriental ships sighted! A trader for exotic creature products may currently be visiting Carlin, Ankrahmun or Liberty Bay.",
+		communicateKey = "actions.world_board.yasir_trader",
 	},
 
 	[3] = {
 		storageValue = GlobalStorage.WorldBoard.NightmareIsle.AnkrahmunNorth,
-		communicate = "A sandstorm travels through Darama, leading to isles full of deadly creatures inside a nightmare. Avoid the Ankhramun tar pits!.",
+		communicateKey = "actions.world_board.nightmare_ankrahmun",
 	},
 
 	[4] = {
 		storageValue = GlobalStorage.WorldBoard.NightmareIsle.DarashiaNorth,
-		communicate = "A sandstorm travels through Darama, leading to isles full of deadly creatures inside a nightmare. Avoid the northernmost coast!",
+		communicateKey = "actions.world_board.nightmare_darashia_north",
 	},
 
 	[5] = {
 		storageValue = GlobalStorage.WorldBoard.NightmareIsle.DarashiaWest,
-		communicate = "A sandstorm travels through Darama, leading to isles full of deadly creatures inside a nightmare. Avoid the river near Drefia!",
+		communicateKey = "actions.world_board.nightmare_darashia_west",
 	},
 }
 
 function worldBoard.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	for index, value in pairs(communicates) do
 		if Game.getStorageValue(value.storageValue) > 0 then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, value.communicate)
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, value.communicateKey)
 		end
 	end
 	return true

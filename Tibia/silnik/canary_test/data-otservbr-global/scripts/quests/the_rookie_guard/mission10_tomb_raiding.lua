@@ -4,33 +4,33 @@ local missionTiles = {
 	[50346] = {
 		{
 			sarcophagus = -1,
-			message = "This is not the way to the crypt. Go south-west to reach the graveyard.",
+			messageKey = "scripts.mission10_tomb_raiding.tile_1",
 			arrowPosition = { x = 32124, y = 32177, z = 7 },
 		},
 	},
 	[50347] = {
 		{
 			sarcophagus = -1,
-			message = "This is the crypt Vascalir was talking about. Explore it and search the coffins - one of them must hold a nice fleshy bone.",
+			messageKey = "scripts.mission10_tomb_raiding.tile_2",
 			arrowPosition = { x = 32131, y = 32201, z = 7 },
 		},
 	},
 	[50348] = {
 		{
 			sarcophagus = -1,
-			message = "This door seems to lead deeper into the crypt. Go downstairs and look for a special coffin. Beware of the walking dead!",
+			messageKey = "scripts.mission10_tomb_raiding.tile_3",
 			arrowPosition = { x = 32147, y = 32185, z = 9 },
 		},
 	},
 	[50349] = {
 		{
 			sarcophagus = -1,
-			message = "This sarcophagus seems special. Sarcophagi are said to conserve meat longer than normal coffins - maybe you get lucky.",
+			messageKey = "scripts.mission10_tomb_raiding.tile_4",
 			arrowPosition = { x = 32145, y = 32204, z = 10 },
 		},
 		{
 			sarcophagus = 1,
-			message = "Now that you have a fleshy bone, it's time to find out what Vascalir wanted with it.",
+			messageKey = "scripts.mission10_tomb_raiding.tile_5",
 			arrowPosition = { x = 32136, y = 32202, z = 10 },
 		},
 	},
@@ -58,7 +58,7 @@ function missionGuide.onStepIn(creature, item, position, fromPosition)
 		if missionState == 1 and sarcophagusState == missionTile[i].sarcophagus then
 			-- Check delayed notifications (message/arrow)
 			if not isTutorialNotificationDelayed(player) then
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, missionTile[i].message)
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, missionTile[i].messageKey)
 				if missionTile[i].arrowPosition then
 					Position(missionTile[i].arrowPosition):sendMagicEffect(CONST_ME_TUTORIALARROW)
 				end
@@ -92,7 +92,7 @@ function sarcophagus.onUse(player, item, frompos, item2, topos)
 			player:setStorageValue(Storage.Quest.U9_1.TheRookieGuard.Sarcophagus, 1)
 			player:addItemEx(reward, true, CONST_SLOT_WHEREEVER)
 		else
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The " .. item:getName() .. " is empty.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.quest_common.chest_empty", item:getName())
 		end
 	end
 	return true
@@ -146,7 +146,7 @@ function unholyCryptChests.onUse(player, item, frompos, item2, topos)
 		player:setStorageValue(Storage.Quest.U9_1.TheRookieGuard.UnholyCryptChests, chestsState + chest.id)
 		player:addItemEx(reward, true, CONST_SLOT_WHEREEVER)
 	else
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The " .. item:getName() .. " is empty.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.quest_common.chest_empty", item:getName())
 	end
 	return true
 end

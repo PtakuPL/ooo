@@ -65,7 +65,7 @@ function inServiceYalaharLastFight.onUse(player, item, fromPosition, target, toP
 	local spectators = Game.getSpectators(Position(32783, 31166, 10), false, true, 10, 10, 10, 10)
 	if #spectators < amountOfPlayers then
 		for i = 1, #spectators do
-			spectators[i]:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You need atleast " .. amountOfPlayers .. " players inside the quest room.")
+			spectators[i]:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.quest_common.need_players", amountOfPlayers)
 		end
 		return true
 	end

@@ -14,7 +14,7 @@ function diseasedTrioKill.onDeath(creature)
 	onDeathForDamagingPlayers(creature, function(creature, player)
 		if player:getStorageValue(bossStorage) < 1 then
 			player:setStorageValue(bossStorage, 1)
-			player:say("You slayed " .. creature:getName() .. ".", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("scripts.common.slayed_creature", TALKTYPE_MONSTER_SAY, { creature = creature:getName() })
 		end
 
 		if player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.DiseasedDan) == 1 and player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.DiseasedBill) == 1 and player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.DiseasedFred) == 1 and player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.AlchemistFormula) ~= 1 then

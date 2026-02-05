@@ -48,7 +48,7 @@ function finalReward.onUse(player, item, fromPosition, target, toPosition, isHot
 	if item.uid == 14021 and player:getStorageValue(Storage.Quest.U11_02.TheFirstDragon.RewardMask) < os.time() then
 		player:addItem(setting.name, setting.count, true)
 		player:setStorageValue(Storage.Quest.U11_02.TheFirstDragon.RewardMask, os.time() + 60 * 60 * 24 * 5)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You found " .. setting.count .. " " .. setting.name .. ".")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.quest_common.found_count_item", setting.count, setting.name)
 	elseif item.uid == 14022 and player:getStorageValue(Storage.Quest.U11_02.TheFirstDragon.RewardBackpack) < os.time() then
 		local bp = Game.createItem("Backpack", 1)
 		if bp then
@@ -66,7 +66,7 @@ function finalReward.onUse(player, item, fromPosition, target, toPosition, isHot
 	elseif item.uid == 14023 and player:getStorageValue(Storage.Quest.U11_02.TheFirstDragon.RewardFeather) < os.time() then
 		player:addItem(setting.name, setting.count, true)
 		player:setStorageValue(Storage.Quest.U11_02.TheFirstDragon.RewardFeather, os.time() + 24 * 3600)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You found " .. setting.count .. " " .. setting.name .. ".")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.quest_common.found_count_item", setting.count, setting.name)
 	else
 		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_rewards.msg_3")
 	end

@@ -3,24 +3,24 @@
 local missionTiles = {
 	[50342] = {
 		state = 1,
-		message = "This is not the way to the troll caves. Go back down the stairs and walk north to find them.",
+		messageKey = "scripts.mission09_rock_troll.tile_1",
 		arrowPosition = { x = 32089, y = 32147, z = 6 },
 	},
 	[50343] = {
 		state = 1,
-		message = "This is not the way to the troll caves. Go back down the stairs and walk north to find them.",
+		messageKey = "scripts.mission09_rock_troll.tile_2",
 		arrowPosition = { x = 32094, y = 32137, z = 7 },
 	},
 	[50344] = {
 		state = 1,
 		newState = 2,
-		message = "You've reached the newly dug troll tunnel. Take what you find in this chest and use it to bring down all support beams!",
+		messageKey = "scripts.mission09_rock_troll.tile_3",
 		arrowPosition = { x = 32059, y = 32132, z = 10 },
 	},
 	[50345] = {
 		state = 7,
 		newState = 8,
-		message = "You hear a crumbling below you. The tunnel collapsed. Vascalir will be pleased to hear about that.",
+		messageKey = "scripts.mission09_rock_troll.tile_4",
 	},
 }
 
@@ -43,7 +43,7 @@ function missionGuide.onStepIn(creature, item, position, fromPosition)
 	if missionState == missionTile.state then
 		-- Check delayed notifications (message/arrow)
 		if not isTutorialNotificationDelayed(player) then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, missionTile.message)
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, missionTile.messageKey)
 			if missionTile.arrowPosition then
 				Position(missionTile.arrowPosition):sendMagicEffect(CONST_ME_TUTORIALARROW)
 			end
@@ -119,7 +119,7 @@ function trunkChest.onUse(player, item, frompos, itemEx, topos)
 			player:setStorageValue(Storage.Quest.U9_1.TheRookieGuard.TrollChests, chestsState + chest.id)
 			player:addItemEx(reward, true, CONST_SLOT_WHEREEVER)
 		else
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The " .. item:getName() .. " is empty.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.quest_common.chest_empty", item:getName())
 		end
 	end
 	return true

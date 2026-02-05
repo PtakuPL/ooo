@@ -14,7 +14,7 @@ function quaraLeadersKill.onDeath(creature)
 	onDeathForDamagingPlayers(creature, function(creature, player)
 		if player:getStorageValue(bossStorage) < 1 then
 			player:setStorageValue(bossStorage, 1)
-			player:say("You slayed " .. creature:getName() .. ".", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("scripts.common.slayed_creature", TALKTYPE_MONSTER_SAY, { creature = creature:getName() })
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.QuaraState, 2)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline, 41)
 			-- StorageValue for Questlog 'Mission 07: A Fishy Mission'

@@ -157,35 +157,36 @@ function questReward.onUse(player, item, fromPosition, itemEx, toPosition)
 	end
 
 	if setting.weight then
-		local message = "You have found a " .. getItemName(setting.container) .. "."
+		local containerName = getItemName(setting.container)
 
 		local backpack = player:getSlotItem(CONST_SLOT_BACKPACK)
 		if not backpack or backpack:getEmptySlots(true) < 1 then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, message .. " But you have no room to take it.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.quest_reward.found_container_no_room", {containerName = containerName})
 			return true
 		end
 		if (player:getFreeCapacity() / 100) < setting.weight then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, message .. ". Weighing " .. setting.weight .. " oz, it is too heavy for you to carry.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.quest_reward.found_container_too_heavy", {containerName = containerName, weight = setting.weight})
 			return true
 		end
 	end
 
+	local itemName = getItemName(setting.itemId)
 	if setting.useKV then
 		if player:questKV(setting.questName):get("completed") then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The " .. getItemName(setting.itemId) .. " is empty.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.quest_reward.container_empty", {itemName = itemName})
 			return true
 		end
 		if setting.timerStorage and player:questKV(setting.questName):get("timer") and player:questKV(setting.questName):get("timer") > os.time() then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The " .. getItemName(setting.itemId) .. " is empty.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.quest_reward.container_empty", {itemName = itemName})
 			return true
 		end
 	else
 		if player:getStorageValue(setting.storage) >= 1 then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The " .. getItemName(setting.itemId) .. " is empty.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.quest_reward.container_empty", {itemName = itemName})
 			return true
 		end
 		if setting.timerStorage and player:getStorageValue(setting.timerStorage) > os.time() then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The " .. getItemName(setting.itemId) .. " is empty.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.quest_reward.container_empty", {itemName = itemName})
 			return true
 		end
 	end

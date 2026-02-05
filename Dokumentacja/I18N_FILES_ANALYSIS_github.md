@@ -2,7 +2,7 @@
 
 > **Session Date:** 2025-02-05  
 > **Operator:** GitHub Copilot Agent  
-> **Status:** ✅ Session 2 Completed - Added i18n keys to 25 quest files
+> **Status:** 🔄 Session 3 In Progress - Adding i18n keys to scripts
 
 ---
 
@@ -14,11 +14,63 @@ This document tracks i18n migration progress made during GitHub Copilot sessions
 
 | Metric | Value |
 |--------|-------|
-| 📁 Files Migrated | 25 |
-| 🔑 New Keys Added (EN) | 70+ |
+| 📁 Files Migrated | 30+ |
+| 🔑 New Keys Added (EN) | 100+ |
 | 🌐 **Translations Added (PL)** | **1,988+** |
-| ⏱️ Session Duration | ~300 min |
+| ⏱️ Session Duration | ~360 min |
 | ✅ OTClient PL Completion | **100%** |
+
+---
+
+## 🆕 Session 3: Script Actions Migration (2025-02-05)
+
+### Files Migrated This Session
+
+| File | Keys Added | Changes |
+|------|------------|---------|
+| `scripts/actions/other/world_board.lua` | 5 | Migrated worldChanges announcements |
+| `scripts/actions/adventurers_guild/adventurers_stone.lua` | 1 | Migrated teleport error message |
+| `scripts/actions/other/gems.lua` | 5 | Migrated Lions Rock quest messages |
+| `scripts/actions/other/construction_kits.lua` | 10 | Migrated Jack to the Future quest |
+| `scripts/actions/system/quest_reward_common.lua` | 3 | Migrated common chest messages |
+
+### New Keys Added to `i18n/en/scripts.json`
+
+```json
+// World Board
+"actions.world_board.fury_gates": "A fiery fury gate has opened near one of the major cities somewhere in Tibia."
+"actions.world_board.yasir_trader": "Oriental ships sighted! A trader for exotic creature products may currently be visiting Carlin, Ankrahmun or Liberty Bay."
+"actions.world_board.nightmare_ankrahmun": "A sandstorm travels through Darama, leading to isles full of deadly creatures inside a nightmare. Avoid the Ankhramun tar pits!"
+"actions.world_board.nightmare_darashia_north": "A sandstorm travels through Darama, leading to isles full of deadly creatures inside a nightmare. Avoid the northernmost coast!"
+"actions.world_board.nightmare_darashia_west": "A sandstorm travels through Darama, leading to isles full of deadly creatures inside a nightmare. Avoid the river near Drefia!"
+
+// Adventurers Stone
+"actions.adventurers_stone.pz_required": "Try to move more to the center of a {locations} to use the spiritual energy for a teleport."
+
+// Gems (Lions Rock Quest)
+"scripts.gems.lions_rock_ruby": "You place the ruby on the small socket. A red flame begins to burn."
+"scripts.gems.lions_rock_sapphire": "You place the sapphire on the small socket. A blue flame begins to burn."
+"scripts.gems.lions_rock_amethyst": "You place the amethyst on the small socket. A violet flame begins to burn."
+"scripts.gems.lions_rock_topaz": "You place the topaz on the small socket. A yellow flame begins to burn."
+"scripts.gems.shrine_not_ready": "When the time comes, '{itemName}' will be accepted at this shrine."
+
+// Construction Kits (Jack to the Future Quest)
+"scripts.construction_kits.jack_chair": "The red cushioned chair looks quite comfy in that corner."
+"scripts.construction_kits.jack_say_chair": "Jack: Yeah uhm... impressive chair. Now would you please remove it? Thanks."
+"scripts.construction_kits.jack_globe": "A globe like this should be in every household."
+"scripts.construction_kits.jack_say_globe": "Jack: What the... what do I need a 'globe' for? Take this away."
+"scripts.construction_kits.jack_telescope": "The telescope just looks like it was the one thing missing from this room."
+"scripts.construction_kits.jack_say_telescope": "Jack: Nice, a... what is this actually?"
+"scripts.construction_kits.jack_horse": "What a cute horse - and just the right thing to place into this cute room."
+"scripts.construction_kits.jack_say_horse": "Jack: A rocking horse? What's wrong with you."
+"scripts.construction_kits.jack_amphora": "There seems to be no better place for this amphora than right here."
+"scripts.construction_kits.jack_say_amphora": "Jack: Trying to get rid of your junk in my house? Do I look like I need such a... 'vase'?"
+
+// Quest Reward Common
+"scripts.quest_reward.found_container_no_room": "You have found a {containerName}. But you have no room to take it."
+"scripts.quest_reward.found_container_too_heavy": "You have found a {containerName}. Weighing {weight} oz, it is too heavy for you to carry."
+"scripts.quest_reward.container_empty": "The {itemName} is empty."
+```
 
 ---
 

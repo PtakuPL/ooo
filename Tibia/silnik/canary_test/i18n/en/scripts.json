@@ -687,4 +687,25 @@
   "scripts.boss_portal.someone_challenging": "You must wait. Someone is challenging {} now.",
   "scripts.quest_common.found_article_item": "You have found a {}.",
   "scripts.quest_common.need_players": "You need atleast {} players inside the quest room."
+,
+  "scripts.quest_reward.found_container_no_room": "You have found a {containerName}. But you have no room to take it.",
+  "scripts.quest_reward.found_container_too_heavy": "You have found a {containerName}. Weighing {weight} oz, it is too heavy for you to carry.",
+  "scripts.quest_reward.container_empty": "The {itemName} is empty."
+,
+  "scripts.gems.lions_rock_ruby": "You place the ruby on the small socket. A red flame begins to burn.",
+  "scripts.gems.lions_rock_sapphire": "You place the sapphire on the small socket. A blue flame begins to burn.",
+  "scripts.gems.lions_rock_amethyst": "You place the amethyst on the small socket. A violet flame begins to burn.",
+  "scripts.gems.lions_rock_topaz": "You place the topaz on the small socket. A yellow flame begins to burn.",
+  "scripts.gems.shrine_not_ready": "When the time comes, "{itemName}" will be accepted at this shrine."
+,
+  "scripts.construction_kits.jack_chair": "The red cushioned chair looks quite comfy in that corner.",
+  "scripts.construction_kits.jack_say_chair": "Jack: Yeah uhm... impressive chair. Now would you please remove it? Thanks.",
+  "scripts.construction_kits.jack_globe": "A globe like this should be in every household.",
+  "scripts.construction_kits.jack_say_globe": "Jack: What the... what do I need a "globe" for? Take this away.",
+  "scripts.construction_kits.jack_telescope": "The telescope just looks like it was the one thing missing from this room.",
+  "scripts.construction_kits.jack_say_telescope": "Jack: Nice, a... what is this actually?",
+  "scripts.construction_kits.jack_horse": "What a cute horse - and just the right thing to place into this cute room.",
+  "scripts.construction_kits.jack_say_horse": "Jack: A rocking horse? What"s wrong with you.",
+  "scripts.construction_kits.jack_amphora": "There seems to be no better place for this amphora than right here.",
+  "scripts.construction_kits.jack_say_amphora": "Jack: Trying to get rid of your junk in my house? Do I look like I need such a... "vase"?"
 }

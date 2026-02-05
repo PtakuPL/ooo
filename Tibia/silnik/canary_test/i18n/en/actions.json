@@ -19,5 +19,11 @@
   "actions.quests.msg_1": "It is empty.",
   "actions.quests.msg_2": "It is empty.",
   "actions.random_items.say_1": "You found ",
-  "actions.random_items.say_2": "You found nothing useful."
+  "actions.random_items.say_2": "You found nothing useful.",
+  "actions.world_board.fury_gates": "A fiery fury gate has opened near one of the major cities somewhere in Tibia.",
+  "actions.world_board.yasir_trader": "Oriental ships sighted! A trader for exotic creature products may currently be visiting Carlin, Ankrahmun or Liberty Bay.",
+  "actions.world_board.nightmare_ankrahmun": "A sandstorm travels through Darama, leading to isles full of deadly creatures inside a nightmare. Avoid the Ankhramun tar pits!",
+  "actions.world_board.nightmare_darashia_north": "A sandstorm travels through Darama, leading to isles full of deadly creatures inside a nightmare. Avoid the northernmost coast!",
+  "actions.world_board.nightmare_darashia_west": "A sandstorm travels through Darama, leading to isles full of deadly creatures inside a nightmare. Avoid the river near Drefia!",
+  "actions.adventurers_stone.pz_required": "Try to move more to the center of a {locations} to use the spiritual energy for a teleport."
 }

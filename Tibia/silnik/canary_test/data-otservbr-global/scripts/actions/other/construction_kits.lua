@@ -60,32 +60,32 @@ local constructionKits = {
 local jackToTheFuture_Kits = {
 	[2775] = {
 		itemId = 2374,
-		kitMessage = "The red cushioned chair looks quite comfy in that corner.",
-		jackSay = "Jack: Yeah uhm... impressive chair. Now would you please remove it? Thanks.",
+		kitMessageKey = "scripts.construction_kits.jack_chair",
+		jackSayKey = "scripts.construction_kits.jack_say_chair",
 		storage = Storage.Quest.U8_7.JackFutureQuest.Furniture01,
 	},
 	[2797] = {
 		itemId = 2979,
-		kitMessage = "A globe like this should be in every household.",
-		jackSay = "Jack: What the... what do I need a 'globe' for? Take this away.",
+		kitMessageKey = "scripts.construction_kits.jack_globe",
+		jackSayKey = "scripts.construction_kits.jack_say_globe",
 		storage = Storage.Quest.U8_7.JackFutureQuest.Furniture02,
 	},
 	[2799] = {
 		itemId = 3485,
-		kitMessage = "The telescope just looks like it was the one thing missing from this room.",
-		jackSay = "Jack: Nice, a... what is this actually?",
+		kitMessageKey = "scripts.construction_kits.jack_telescope",
+		jackSayKey = "scripts.construction_kits.jack_say_telescope",
 		storage = Storage.Quest.U8_7.JackFutureQuest.Furniture03,
 	},
 	[2800] = {
 		itemId = 2998,
-		kitMessage = "What a cute horse - and just the right thing to place into this cute room.",
-		jackSay = "Jack: A rocking horse? What's wrong with you.",
+		kitMessageKey = "scripts.construction_kits.jack_horse",
+		jackSayKey = "scripts.construction_kits.jack_say_horse",
 		storage = Storage.Quest.U8_7.JackFutureQuest.Furniture04,
 	},
 	[2805] = {
 		itemId = 2904,
-		kitMessage = "There seems to be no better place for this amphora than right here.",
-		jackSay = "Jack: Trying to get rid of your junk in my house? Do I look like I need such a... 'vase'?",
+		kitMessageKey = "scripts.construction_kits.jack_amphora",
+		jackSayKey = "scripts.construction_kits.jack_say_amphora",
 		storage = Storage.Quest.U8_7.JackFutureQuest.Furniture05,
 	},
 }
@@ -105,8 +105,8 @@ function constructionKit.onUse(player, item, fromPosition, target, toPosition, i
 				if player:getStorageValue(setting.storage) < 1 then
 					item:remove()
 					Game.createItem(setting.itemId, 1, player:getPosition())
-					player:say(setting.jackSay, TALKTYPE_MONSTER_SAY)
-					player:sendTextMessage(MESSAGE_EVENT_ADVANCE, setting.kitMessage)
+					player:sayLocalized(setting.jackSayKey, nil, TALKTYPE_MONSTER_SAY)
+					player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, setting.kitMessageKey)
 					player:setStorageValue(setting.storage, 1)
 					return true
 				end

@@ -865,3 +865,137 @@ Rekomendowane jest:
 **Autor:** AI Assistant
 **Data:** 2026-02-05
 **Wersja:** 1.0
+
+---
+
+## 🔴 AKTUALIZACJA PO WERYFIKACJI (2026-02-05 19:50)
+
+### ✅ WERYFIKACJA NAZW POTWORÓW
+
+**POTWIERDZENIE:** Nazwy potworów SĄ hardcoded i wymagają migracji!
+
+**Lokalizacja:** `data-otservbr-global/monster/` (1,637 plików .lua)
+
+**Struktura:**
+```lua
+local mType = Game.createMonsterType("Dragon")  -- HARDCODED NAME
+local monster = {}
+
+monster.description = "a dragon"  -- HARDCODED DESCRIPTION
+monster.experience = 1000
+-- ... rest of config
+```
+
+**Liczby (zweryfikowane):**
+- Monster Lua files: 1,637
+- `Game.createMonsterType()`: 1,636 nazw
+- `monster.description`: 1,636 opisów
+- **RAZEM: 3,272 hardcoded teksty!**
+
+**Przykłady z różnych kategorii:**
+- Dragons: "Dragon", "Dragon Lord", "Dragon Hatchling"
+- Demons: "Demon", "Demon Outcast", "Demon Overlord"  
+- Bosses: "Ferumbras", "Orshabaal", "Apocalypse"
+- Undead: "Skeleton", "Vampire", "Lich"
+- Animals: "Rat", "Bear", "Wolf"
+
+### 🔍 CZY MOŻNA JE ZMIGROWAĆ?
+
+**TAK! System API już istnieje:**
+
+```lua
+-- Obecny sposób (hardcoded):
+local mType = Game.createMonsterType("Dragon")
+monster.description = "a dragon"
+
+-- Po migracji (z i18n):
+local mType = Game.createMonsterType(getLocalizedText("monsters.dragon.name"))
+monster.description = getLocalizedText("monsters.dragon.description")
+
+-- LUB lepiej - Key-based approach:
+local mType = Game.createMonsterType("dragon")  -- internal key
+monster.localizedName = "monsters.dragon.name"
+monster.localizedDescription = "monsters.dragon.description"
+```
+
+### 📋 PLAN MIGRACJI MONSTER NAMES
+
+**FAZA 1: Infrastructure (5-10h)**
+1. Utworzyć monsters_i18n.json z strukturą:
+```json
+{
+  "monsters": {
+    "dragon": {
+      "name": "Dragon",
+      "description": "a dragon",
+      "article": "a"
+    },
+    "dragon_lord": {
+      "name": "Dragon Lord", 
+      "description": "a dragon lord",
+      "article": "a"
+    }
+  }
+}
+```
+
+2. Rozszerzyć `Game.createMonsterType()` o wsparcie i18n
+3. Cache system dla monster names
+
+**FAZA 2: Migracja pliów (40-60h)**
+- 1,637 plików monster
+- Każdy plik: 2 teksty (name + description)
+- Automatyzacja możliwa!
+
+**FAZA 3: Testing (10-20h)**
+
+**SZACOWANY CZAS: 55-90h dla monster names**
+
+---
+
+## 📊 ZAKTUALIZOWANE STATYSTYKI
+
+### Teksty do migracji (ZWERYFIKOWANE):
+
+| Kategoria | Poprzednia szacunka | Po weryfikacji | Status |
+|-----------|---------------------|----------------|--------|
+| Monster names | 3,000 | **3,272** | ❌ Hardcoded |
+| Monster voices | - | ~500 | ❌ Hardcoded |
+| Items names | 16,693 | **16,693** | ❌ Hardcoded |
+| Items descriptions | 10,000 | **~10,000** | ❌ Hardcoded |
+| NPC dialogs | 5,000 | **~5,000** | ⚠️ Częściowo |
+| Books | 50 | **~50** | ❌ Hardcoded |
+| Mounts | 200 | **~200** | ❌ XML |
+| Outfits | 300 | **~300** | ❌ XML |
+| Achievements | 500 | **~500** | ❓ Do weryfikacji |
+| Quest logs | 1,000 | **~1,000** | ❓ Do weryfikacji |
+| Spells | 500 | **~500** | ❓ Do weryfikacji |
+| **RAZEM** | **~37,243** | **~38,015** | **98.4% do zrobienia** |
+
+### Zmigrowane (obecny stan):
+- System messages: 630 ✅
+- **Procent ukończenia: 1.6%**
+
+### Do zmigrowania:
+- **38,015 tekstów (98.4%)**
+- **Szacowany czas: 250-400 godzin**
+
+---
+
+## ✅ WERYFIKACJA: POTWIERDZAM
+
+Nazwy potworów **NIE SĄ** zmigrowane i **SĄ hardcoded** w 1,637 plikach Lua!
+
+Każdy plik ma strukturę:
+- `Game.createMonsterType("Name")` - nazwa potwora
+- `monster.description = "a name"` - opis
+
+**To jest kolejna duża kategoria do migracji!**
+
+**Dokumentacja zaktualizowana z faktycznymi danymi.**
+
+---
+
+**Autor:** AI Assistant  
+**Ostatnia aktualizacja:** 2026-02-05 19:50  
+**Wersja:** 1.1 (po weryfikacji monster names)

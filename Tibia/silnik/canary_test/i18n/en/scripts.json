@@ -708,4 +708,22 @@
   "scripts.construction_kits.jack_say_horse": "Jack: A rocking horse? What"s wrong with you.",
   "scripts.construction_kits.jack_amphora": "There seems to be no better place for this amphora than right here.",
   "scripts.construction_kits.jack_say_amphora": "Jack: Trying to get rid of your junk in my house? Do I look like I need such a... "vase"?"
+,
+  "scripts.golden.cooldown": "You have faced this boss in the last {hours} hours."
+,
+  "scripts.threatened_dreams.moon_mirror_wait_night": "The moon is not shining. Wait for the night.",
+  "scripts.threatened_dreams.moon_mirror_wait_night_2": "The moon has to be shining. Wait for the night.",
+  "scripts.threatened_dreams.moon_mirror_charged": "The mirror is shining with the moonlight now.",
+  "scripts.threatened_dreams.moon_mirror_barrier_strengthens": "As soon as you are touching the moon sculpture with the mirror the sculpture is infused with moonlight. The barrier strengthens.",
+  "scripts.threatened_dreams.moon_mirror_last_sculpture": "As soon as you are touching the moon sculpture with the mirror the sculpture is infused with moonlight. This was the last sculpture.",
+  "scripts.threatened_dreams.sun_catcher_fail": "You are rubbing the gem in the sun catchers centre but nothing happens.",
+  "scripts.threatened_dreams.sun_catcher_charged": "The sun catcher is shining with sunlight now.",
+  "scripts.threatened_dreams.sun_catcher_wait_day": "The sun has to be shining in order to strengthen the barrier. Wait for the day.",
+  "scripts.threatened_dreams.sun_catcher_barrier_strengthens": "As soon as you are placing the sun catcher on the stone the pattern the mosaic is infused with sunlight. The barrier strengthens.",
+  "scripts.threatened_dreams.sun_catcher_last_mosaic": "As soon as you are placing the sun catcher on the stone the pattern the mosaic is infused with sunlight. This was the last mosaic.",
+  "scripts.threatened_dreams.starlight_vial_fail": "You are rubbing the opaque glass of the vial but nothing happens.",
+  "scripts.threatened_dreams.starlight_vial_charged": "The vial is glittering with starlight now.",
+  "scripts.threatened_dreams.starlight_vial_wait_night": "The stars has to be glittering in order to strengthen the barrier. Wait for the night.",
+  "scripts.threatened_dreams.starlight_vial_barrier_strengthens": "As soon as you are pouring out the vial over the dreambird tree the plant is infused with starlight. The barrier strengthens.",
+  "scripts.threatened_dreams.starlight_vial_last_tree": "As soon as you are pouring out the vial over the dreambird tree the plant is infused with starlight. This was the last tree."
 }

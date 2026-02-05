@@ -35,14 +35,12 @@ function ravenHerb.onUse(player, item, fromPosition, target, toPosition, isHotke
 	local backpack = player:getSlotItem(CONST_SLOT_BACKPACK)
 
 	if not backpack or backpack:getEmptySlots(true) < 1 then
-		local foundMessage = "You have found a " .. herbName .. "."
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.quest_reward_common.no_room", foundMessage)
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.quest_reward_common.no_room", "You have found a " .. herbName .. ".")
 		return true
 	end
 
 	if (player:getFreeCapacity() / 100) < config.herbWeight then
-		local foundMessage = "You have found a " .. herbName .. "."
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.quest_reward_common.too_heavy", foundMessage, config.herbWeight)
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.quest_reward_common.too_heavy", "You have found a " .. herbName .. ".", config.herbWeight)
 		return true
 	end
 

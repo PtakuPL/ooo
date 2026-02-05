@@ -1,10 +1,19 @@
 {
-  "channel.advertising.name": "[RU] Advertising",
-  "channel.advertising_rook.name": "[RU] Advertising-Rook",
-  "channel.english_chat.name": "[RU] English Chat",
-  "channel.gamemaster.name": "[RU] Gamemaster",
-  "channel.guild_leaders.name": "[RU] Guild Leaders",
-  "channel.help.name": "Помощь",
-  "channel.tutor.name": "[RU] Tutor",
-  "channel.world_chat.name": "[RU] World Chat"
+  "channel.english_chat.name": "English Chat",
+  "channel.tutor.name": "Tutor",
+  "channel.guild_leaders.name": "Guild Leaders",
+  "channel.help.name": "Help",
+  "channel.advertising_rook.name": "Advertising-Rook",
+  "channel.gamemaster.name": "Gamemaster",
+  "channel.advertising.name": "Advertising",
+  "channel.world_chat.name": "World Chat",
+  "channel.msg_level1_mute": "You may not speak into channels as long as you are on level 1.",
+  "channel.msg_level20_premium": "You may not speak in this channel unless you have reached level 20 or your account has premium status.",
+  "channel.msg_offer_cooldown": "You may only place one offer in two minutes.",
+  "channel.help.msg_muted": "You are muted from the Help channel for using it inappropriately.",
+  "channel.help.msg_already_muted": "That player is already muted.",
+  "channel.help.msg_not_authorized_mute": "You are not authorized to mute that player.",
+  "channel.help.msg_not_muted": "That player is not muted.",
+  "channel.help.msg_not_authorized_unmute": "You are not authorized to unmute that player."
+}
 }

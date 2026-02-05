@@ -5,7 +5,7 @@ function createMonster.onSay(player, words, param)
 	logCommand(player, words, param)
 
 	if param == "" then
-		player:sendCancelMessage("Command param required.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_command_param_required")
 		return true
 	end
 

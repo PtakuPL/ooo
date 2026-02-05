@@ -47,7 +47,7 @@ function usableOutfitItems.onUse(player, item, fromPosition, target, toPosition,
 	local looktype = player:getSex() == PLAYERSEX_FEMALE and outfitInfo.female or outfitInfo.male
 	if not player:hasOutfit(looktype) then
 		if outfitInfo.addon then
-			player:sendCancelMessage("You need the outfit for this part.")
+			player:sendLocalizedTextMessage(MESSAGE_FAILURE, "actions.outfit_items.msg_need_outfit")
 			return true
 		end
 
@@ -64,7 +64,7 @@ function usableOutfitItems.onUse(player, item, fromPosition, target, toPosition,
 	end
 
 	if player:hasOutfit(looktype, outfitInfo.addon) then
-		player:sendCancelMessage("You already own this outfit part.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "actions.outfit_items.msg_already_own")
 		return true
 	end
 

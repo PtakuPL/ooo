@@ -833,7 +833,7 @@ function Player:doCheckBossRoom(bossName, fromPos, toPos)
 					local sqm = Tile(Position(x, y, z))
 					if sqm then
 						if sqm:getTopCreature() and sqm:getTopCreature():isPlayer() then
-							self:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You must wait. Someone is challenging " .. bossName .. " now.")
+							self:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "lib.functions.msg_boss_wait", {bossName})
 							return false
 						end
 					end

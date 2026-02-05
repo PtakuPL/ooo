@@ -5,7 +5,7 @@ function sellHouse.onSay(player, words, param)
 	if targetPlayer then
 		local targetHouse = targetPlayer:getHouse()
 		if not targetHouse then
-			targetPlayer:sendCancelMessage(string.format("The player %s not have house.", player:getName()))
+			targetPlayer:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.god.goto_house.msg_target_no_house", {player:getName()})
 			return
 		end
 
@@ -13,7 +13,7 @@ function sellHouse.onSay(player, words, param)
 	else
 		local house = player:getHouse()
 		if not house then
-			player:sendCancelMessage("You not have house. For goto house of one player use the player name param, usage: /gotohouse playername")
+			player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.god.goto_house.msg_self_no_house")
 			return
 		end
 

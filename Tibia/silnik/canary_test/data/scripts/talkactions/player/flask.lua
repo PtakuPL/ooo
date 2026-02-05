@@ -2,7 +2,7 @@ local flask = TalkAction("!flask")
 
 function flask.onSay(player, words, param)
 	if param == "" then
-		player:sendCancelMessage("You need to specify on/off param.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_on_off_required")
 		return true
 	end
 	if param == "on" then

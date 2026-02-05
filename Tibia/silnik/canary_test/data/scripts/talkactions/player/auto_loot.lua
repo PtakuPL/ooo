@@ -11,7 +11,7 @@ function feature.onSay(player, words, param)
 		return true
 	end
 	if configManager.getBoolean(configKeys.VIP_SYSTEM_ENABLED) and configManager.getBoolean(configKeys.VIP_AUTOLOOT_VIP_ONLY) and not player:isVip() then
-		player:sendCancelMessage("You need to be VIP to use this command!")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.player.auto_loot.msg_vip_required")
 		return true
 	end
 	if not table.contains(validValues, param) then

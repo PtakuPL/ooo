@@ -43,7 +43,7 @@ function hirelingFoods.onUse(player, item, fromPosition, target, toPosition, isH
 	end
 
 	if player:hasExhaustion("special-foods-cooldown") then
-		player:sendCancelMessage("You're still too full to eat any gourmet dishes for a while.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "actions.hireling_foods.msg_too_full")
 		return true
 	end
 

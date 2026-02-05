@@ -5,13 +5,13 @@ function leaveHouse.onSay(player, words, param)
 	local playerTile = Tile(playerPosition)
 	local house = playerTile and playerTile:getHouse()
 	if not house then
-		player:sendCancelMessage("You are not inside a house.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_not_inside_house")
 		playerPosition:sendMagicEffect(CONST_ME_POFF)
 		return true
 	end
 
 	if house:getOwnerGuid() ~= player:getGuid() then
-		player:sendCancelMessage("You are not the owner of this house.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.player.leave_house.msg_not_owner")
 		playerPosition:sendMagicEffect(CONST_ME_POFF)
 		return true
 	end

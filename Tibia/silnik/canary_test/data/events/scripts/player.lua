@@ -85,7 +85,7 @@ local function antiPush(player, item, count, fromPosition, toPosition, fromCylin
 	end
 
 	if pushDelay[playerId].time > currentTime then
-		player:sendCancelMessage("You can't move that item so fast.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "event.player.msg_move_fast")
 		return false
 	end
 
@@ -498,7 +498,7 @@ function Player:onReportBug(message, position, category)
 	io.write("Comment: " .. message .. "\n")
 	io.close(file)
 
-	self:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Your report has been sent to " .. configManager.getString(configKeys.SERVER_NAME) .. ".")
+	self:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "event.player.msg_report_sent", {configManager.getString(configKeys.SERVER_NAME)})
 	return true
 end
 

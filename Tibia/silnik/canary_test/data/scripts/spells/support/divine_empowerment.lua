@@ -21,7 +21,7 @@ function spell.onCastSpell(creature, var)
 
 	local grade = creature:revelationStageWOD("Divine Empowerment")
 	if grade == 0 then
-		creature:sendCancelMessage("You cannot cast this spell")
+		creature:sendLocalizedTextMessage(MESSAGE_FAILURE, "spell.msg_cannot_cast")
 		creature:getPosition():sendMagicEffect(CONST_ME_POFF)
 		return false
 	end

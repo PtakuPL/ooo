@@ -56,7 +56,7 @@ function keyDoor.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if target.actionid > 0 then
 		for index, value in ipairs(KeyDoorTable) do
 			if item.actionid ~= target.actionid and value.lockedDoor == target.itemid then
-				player:sendCancelMessage("The key does not match.")
+				player:sendLocalizedTextMessage(MESSAGE_FAILURE, "actions.key_door.msg_wrong_key")
 				return true
 			end
 			if item.actionid == target.actionid then

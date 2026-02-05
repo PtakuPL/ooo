@@ -24,7 +24,9 @@ function onBossDeath.onDeath(creature)
 	end
 
 	if bossLever.timeAfterKill > 0 then
-		zone:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The " .. name .. " has been defeated. You have " .. bossLever.timeAfterKill .. " seconds to leave the room.")
+		for _, zonePlayer in ipairs(zone:getPlayers()) do
+			zonePlayer:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "creaturescripts.boss_defeated", {name, bossLever.timeAfterKill})
+		end
 		bossLever.timeoutEvent = addEvent(function(zn)
 			zn:refresh()
 			zn:removePlayers()

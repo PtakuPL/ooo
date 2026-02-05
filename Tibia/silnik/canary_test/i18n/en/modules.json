@@ -16,5 +16,6 @@
   "module.daily_reward.text4": "No bonus for first day",
   "module.daily_reward.text5": "\tToDo = ",
   "module.hireling_module.text2": "\tVersion = ",
-  "module.hireling_module.text4": "\tDate ="
+  "module.hireling_module.text4": "\tDate =",
+  "module.daily_reward.msg_lost_tokens": "You lost {count} joker tokens to prevent loosing your streak."
 }

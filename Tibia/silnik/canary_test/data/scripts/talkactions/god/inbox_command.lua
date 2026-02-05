@@ -25,7 +25,7 @@ function inboxCommand.onSay(player, words, param)
 			end
 		end
 	else
-		player:sendCancelMessage("Creature not found.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_creature_not_found")
 	end
 
 	return true

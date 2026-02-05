@@ -8,7 +8,7 @@ function addMoney.onSay(player, words, param)
 
 	-- Check the first param (player name) exists
 	if param == "" then
-		player:sendCancelMessage("Player name param required")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_player_name_param_required_dot")
 		-- Distro log
 		logger.error("[addMoney.onSay] - Player name param not found")
 		return true
@@ -19,7 +19,7 @@ function addMoney.onSay(player, words, param)
 
 	local normalizedName = Game.getNormalizedPlayerName(name)
 	if not normalizedName then
-		player:sendCancelMessage("A player with name " .. name .. " does not exist.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.god.money.msg_not_exists", {name})
 		return true
 	end
 	name = normalizedName
@@ -31,12 +31,12 @@ function addMoney.onSay(player, words, param)
 
 	-- Check if the coins is valid
 	if amount <= 0 or amount == nil then
-		player:sendCancelMessage("Invalid amount.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.god.money.msg_invalid_amount")
 		return true
 	end
 
 	if not Bank.credit(name, amount) then
-		player:sendCancelMessage("Failed to add money to " .. name .. ".")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.god.money.msg_failed", {name})
 		-- Distro log
 		logger.error("[addMoney.onSay] - Failed to add money to player")
 		return true
@@ -45,7 +45,7 @@ function addMoney.onSay(player, words, param)
 	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.add_money.msg_1" .. amount .. " gold coins to " .. name .. ".")
 	local targetPlayer = Player(name)
 	if targetPlayer then
-		targetPlayer:sendTextMessage(MESSAGE_EVENT_ADVANCE, "" .. player:getName() .. " added " .. amount .. " gold coins to your character.")
+		targetPlayer:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "talkaction.god.money.msg_target", {player:getName(), amount})
 	end
 	-- Distro log
 	logger.info("{} added {} gold coins to {} player", player:getName(), amount, name)

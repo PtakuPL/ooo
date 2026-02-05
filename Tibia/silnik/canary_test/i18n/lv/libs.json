@@ -60,5 +60,13 @@
   "lib.blessing.msg_battle": "You can't buy bless while in battle.",
   "lib.blessing.msg_already": "You are already blessed.",
   "lib.blessing.msg_received": "You received the remaining {count} blesses for a total of {cost} gold.",
-  "lib.blessing.msg_not_enough": "You don't have enough money. You need {cost} to buy all blesses."
+  "lib.blessing.msg_not_enough": "You don't have enough money. You need {cost} to buy all blesses.",
+
+  "lib.monster.msg_only_fiendish": "Only allowed monsters can be fiendish.",
+  "lib.monster.msg_already_fiendish": "This monster is already fiendish.",
+  "lib.monster.msg_not_forgeable": "This monster is not forgeable, fiendish not added.",
+  "lib.player.msg_monster_not_found": "Monster not found.",
+
+  "rune.msg_sorry_not_possible": "Sorry, not possible.",
+  "rune.msg_cannot_control_more": "You cannot control more creatures."
 }

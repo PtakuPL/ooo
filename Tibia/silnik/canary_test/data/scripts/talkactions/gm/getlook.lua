@@ -5,13 +5,13 @@ function getlook.onSay(player, words, param)
 	logCommand(player, words, param)
 
 	if param == "" then
-		player:sendCancelMessage("Command param required.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_command_param_required")
 		return true
 	end
 
 	local creature = Creature(param)
 	if not creature then
-		player:sendCancelMessage("A creature with that name could not be found.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_creature_not_found_verbose")
 		return true
 	end
 

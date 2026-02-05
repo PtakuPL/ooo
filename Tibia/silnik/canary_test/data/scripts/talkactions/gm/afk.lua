@@ -22,7 +22,7 @@ end
 
 function afk.onSay(player, words, param)
 	if param == "" then
-		player:sendCancelMessage("You need to specify on/off param.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_on_off_required")
 		return true
 	end
 
@@ -30,7 +30,7 @@ function afk.onSay(player, words, param)
 	local isAfk = checkIsAFK(id)
 	if param == "on" then
 		if isAfk.afk then
-			player:sendCancelMessage("You are already AFK!")
+			player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.gm.afk.msg_already_afk")
 			return true
 		end
 

@@ -19,7 +19,7 @@ function spell.onCastSpell(player, variant)
 		end
 
 		if #player:getSummons() >= 2 then
-			player:sendCancelMessage("You cannot summon more creatures.")
+			player:sendLocalizedTextMessage(MESSAGE_FAILURE, "spell.msg_cannot_summon_more")
 			position:sendMagicEffect(CONST_ME_POFF)
 			return false
 		end

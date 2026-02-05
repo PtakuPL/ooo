@@ -1524,5 +1524,14 @@
   "spell.find_person.name": "Find Person",
   "spell.find_person.words": "exiva",
   "spell.find_fiend.name": "Find Fiend",
-  "spell.find_fiend.words": "exiva moe res"
+  "spell.find_fiend.words": "exiva moe res",
+  "spell.msg_cannot_cast": "You cannot cast this spell",
+  "spell.msg_need_learn": "You need to learn this spell first",
+  "spell.msg_no_party_in_range": "No party members in range.",
+  "spell.msg_no_creatures_around": "No creatures around",
+  "spell.msg_cannot_summon_more": "You cannot summon more creatures.",
+  "spell.msg_boss_present": "You can't use this spell if there's a boss.",
+  "spell.msg_no_ranged_monsters": "There are no ranged monsters.",
+  "spell.msg_no_self_cast": "You can't cast this spell to yourself."
+}
 }

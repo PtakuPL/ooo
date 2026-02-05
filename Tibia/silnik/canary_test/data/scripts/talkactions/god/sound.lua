@@ -5,7 +5,7 @@ function areasound.onSay(player, words, param)
 	logCommand(player, words, param)
 
 	if param == "" then
-		player:sendCancelMessage("Command param required.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_command_param_required")
 		return true
 	end
 
@@ -13,11 +13,11 @@ function areasound.onSay(player, words, param)
 	if not split[2] then
 		local primaryEffect = tonumber(param)
 		if primaryEffect == nil or primaryEffect == 0 then
-			player:sendCancelMessage("Invalid command param.")
+			player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_invalid_command_param")
 			return true
 		end
 
-		player:sendCancelMessage("Playing sound number " .. primaryEffect .. " on the area.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.god.sound.msg_area_single", {primaryEffect})
 		player:getPosition():sendSingleSoundEffect(primaryEffect, player:isInGhostMode() and nil or player)
 		return true
 	end
@@ -25,11 +25,11 @@ function areasound.onSay(player, words, param)
 	local primaryEffect = tonumber(split[1])
 	local secondaryEffect = tonumber(split[2])
 	if primaryEffect == nil or secondaryEffect == nil then
-		player:sendCancelMessage("Invalid command params.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_invalid_command_params")
 		return true
 	end
 
-	player:sendCancelMessage("Playing sound number " .. primaryEffect .. " and " .. secondaryEffect .. " on the area.")
+	player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.god.sound.msg_area_dual", {primaryEffect, secondaryEffect})
 	player:getPosition():sendDoubleSoundEffect(primaryEffect, secondaryEffect, player:isInGhostMode() and nil or player)
 	return true
 end
@@ -46,7 +46,7 @@ function internalsound.onSay(player, words, param)
 	logCommand(player, words, param)
 
 	if param == "" then
-		player:sendCancelMessage("Command param required.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_command_param_required")
 		return true
 	end
 
@@ -54,11 +54,11 @@ function internalsound.onSay(player, words, param)
 	if not split[2] then
 		local primaryEffect = tonumber(param)
 		if primaryEffect == nil or primaryEffect == 0 then
-			player:sendCancelMessage("Invalid command param.")
+			player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_invalid_command_param")
 			return true
 		end
 
-		player:sendCancelMessage("Playing sound number " .. primaryEffect .. " internally.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.god.sound.msg_internal_single", {primaryEffect})
 		player:sendSingleSoundEffect(primaryEffect)
 		return true
 	end
@@ -66,11 +66,11 @@ function internalsound.onSay(player, words, param)
 	local primaryEffect = tonumber(split[1])
 	local secondaryEffect = tonumber(split[2])
 	if primaryEffect == nil or secondaryEffect == nil then
-		player:sendCancelMessage("Invalid command params.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_invalid_command_params")
 		return true
 	end
 
-	player:sendCancelMessage("Playing sound number " .. primaryEffect .. " and " .. secondaryEffect .. " internally.")
+	player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.god.sound.msg_internal_dual", {primaryEffect, secondaryEffect})
 	player:sendDoubleSoundEffect(primaryEffect, secondaryEffect)
 	return true
 end
@@ -87,7 +87,7 @@ function globalsound.onSay(player, words, param)
 	logCommand(player, words, param)
 
 	if param == "" then
-		player:sendCancelMessage("Command param required.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_command_param_required")
 		return true
 	end
 
@@ -95,11 +95,11 @@ function globalsound.onSay(player, words, param)
 	if not split[2] then
 		local primaryEffect = tonumber(param)
 		if primaryEffect == nil or primaryEffect == 0 then
-			player:sendCancelMessage("Invalid command param.")
+			player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_invalid_command_param")
 			return true
 		end
 
-		player:sendCancelMessage("Playing sound number " .. primaryEffect .. " globally.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.god.sound.msg_global_single", {primaryEffect})
 		for _, pid in ipairs(Game.getPlayers()) do
 			pid:sendSingleSoundEffect(primaryEffect, false)
 		end
@@ -109,11 +109,11 @@ function globalsound.onSay(player, words, param)
 	local primaryEffect = tonumber(split[1])
 	local secondaryEffect = tonumber(split[2])
 	if primaryEffect == nil or secondaryEffect == nil then
-		player:sendCancelMessage("Invalid command params.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_invalid_command_params")
 		return true
 	end
 
-	player:sendCancelMessage("Playing sound number " .. primaryEffect .. " and " .. secondaryEffect .. " globally.")
+	player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.god.sound.msg_global_dual", {primaryEffect, secondaryEffect})
 	for _, pid in ipairs(Game.getPlayers()) do
 		pid:sendDoubleSoundEffect(primaryEffect, secondaryEffect)
 	end

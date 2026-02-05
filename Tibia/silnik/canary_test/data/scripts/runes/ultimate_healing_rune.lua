@@ -17,7 +17,7 @@ local rune = Spell("rune")
 
 function rune.onCastSpell(creature, var, isHotkey)
 	if Monster(var:getNumber(1073762188)) then
-		creature:sendCancelMessage("Sorry, not possible.")
+		creature:sendLocalizedTextMessage(MESSAGE_FAILURE, "rune.msg_sorry_not_possible")
 		creature:getPosition():sendMagicEffect(CONST_ME_POFF)
 		return false
 	else

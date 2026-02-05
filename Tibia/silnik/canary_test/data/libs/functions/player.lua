@@ -514,7 +514,7 @@ function Player:setFiendish()
 	local tile = Tile(position)
 	local thing = tile:getTopVisibleThing(self)
 	if not tile or thing and not thing:isMonster() then
-		self:sendCancelMessage("Monster not found.")
+		self:sendLocalizedTextMessage(MESSAGE_FAILURE, "lib.player.msg_monster_not_found")
 		return false
 	end
 

@@ -40,7 +40,7 @@ function spell.onCastSpell(creature, var)
 
 	local grade = creature:revelationStageWOD("Executioner's Throw")
 	if grade == 0 then
-		creature:sendCancelMessage("You need to learn this spell first")
+		creature:sendLocalizedTextMessage(MESSAGE_FAILURE, "spell.msg_need_learn")
 		creature:getPosition():sendMagicEffect(CONST_ME_POFF)
 		return false
 	end

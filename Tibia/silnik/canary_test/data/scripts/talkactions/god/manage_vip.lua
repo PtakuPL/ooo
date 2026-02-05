@@ -7,7 +7,7 @@ local config = {
 
 function vipGod.onSay(player, words, param)
 	if not configManager.getBoolean(configKeys.VIP_SYSTEM_ENABLED) then
-		player:sendCancelMessage("Vip System are not enabled!")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.god.manage_vip.msg_not_enabled")
 		return true
 	end
 
@@ -37,7 +37,7 @@ function vipGod.onSay(player, words, param)
 	elseif action == "adddays" then
 		local amount = tonumber(params[3])
 		if not amount or amount <= 0 then
-			player:sendCancelMessage("<value> has to be a numeric value.")
+			player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.god.manage_vip.msg_numeric_required")
 			return true
 		end
 

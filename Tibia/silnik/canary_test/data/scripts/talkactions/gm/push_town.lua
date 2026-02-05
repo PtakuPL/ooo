@@ -9,7 +9,7 @@ function pushTown.onSay(player, words, param)
 	else
 		local targetPlayer = Player(param)
 		if not targetPlayer then
-			player:sendCancelMessage("A player with that name is not online.")
+			player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_player_name_not_online")
 			return true
 		end
 		player:sendLocalizedTextMessage(MESSAGE_STATUS, "scripts.push_town.msg_1" .. targetPlayer:getName() .. " to temple.")

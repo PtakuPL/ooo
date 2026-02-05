@@ -8,7 +8,7 @@ function emoteSpell.onSay(player, words, param)
 	end
 
 	if param == "" then
-		player:sendCancelMessage("Please specify the parameter: 'on' to activate or 'off' to deactivate.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.player.emote_spell.msg_specify_param")
 		return true
 	end
 

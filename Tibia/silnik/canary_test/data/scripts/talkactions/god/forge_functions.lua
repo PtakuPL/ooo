@@ -5,7 +5,7 @@ function addDusts.onSay(player, words, param)
 
 	-- Check the first param (player name) exists
 	if param == "" then
-		player:sendCancelMessage("Player name param required.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_player_name_param_required")
 		-- Distro log
 		logger.error("[addDusts.onSay] - Player name param not found.")
 		return true
@@ -17,7 +17,7 @@ function addDusts.onSay(player, words, param)
 	-- Check if player is online
 	local targetPlayer = Player(name)
 	if not targetPlayer then
-		player:sendCancelMessage("Player " .. string.titleCase(name) .. " is not online.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_player_is_not_online", {string.titleCase(name)})
 		-- Distro log
 		logger.error("[addDusts.onSay] - Player {} is not online.", string.titleCase(name))
 		return true
@@ -30,7 +30,7 @@ function addDusts.onSay(player, words, param)
 
 	-- Check if the dustAmount is valid
 	if dustAmount <= 0 or dustAmount == nil then
-		player:sendCancelMessage("Invalid dust count.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.god.forge.msg_invalid_dust_count")
 		return true
 	end
 
@@ -41,8 +41,8 @@ function addDusts.onSay(player, words, param)
 	end
 
 	targetPlayer:addForgeDusts(dustAmount)
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format("Successful added %d dusts for the %s player.", dustAmount, targetPlayer:getName()))
-	targetPlayer:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format("%s added %d dusts to your character.", player:getName(), dustAmount))
+	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "talkaction.god.forge.msg_add_success", {dustAmount, targetPlayer:getName()})
+	targetPlayer:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "talkaction.god.forge.msg_add_target", {player:getName(), dustAmount})
 	-- Distro log
 	logger.info("{} added {} dusts to {} player.", player:getName(), dustAmount, targetPlayer:getName())
 	return true
@@ -61,7 +61,7 @@ function removeDusts.onSay(player, words, param)
 
 	-- Check the first param (player name) exists
 	if param == "" then
-		player:sendCancelMessage("Player name param required.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_player_name_param_required")
 		-- Distro log
 		logger.error("[removeDusts.onSay] - Player name param not found.")
 		return true
@@ -73,7 +73,7 @@ function removeDusts.onSay(player, words, param)
 	-- Check if player is online
 	local targetPlayer = Player(name)
 	if not targetPlayer then
-		player:sendCancelMessage("Player " .. string.titleCase(name) .. " is not online.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_player_is_not_online", {string.titleCase(name)})
 		-- Distro log
 		logger.error("[removeDusts.onSay] - Player {} is not online.", string.titleCase(name))
 		return true
@@ -86,7 +86,7 @@ function removeDusts.onSay(player, words, param)
 
 	-- Check if the dustAmount is valid
 	if dustAmount <= 0 or dustAmount == nil then
-		player:sendCancelMessage("Invalid dust count.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.god.forge.msg_invalid_dust_count")
 		return true
 	end
 
@@ -97,8 +97,8 @@ function removeDusts.onSay(player, words, param)
 	end
 
 	targetPlayer:removeForgeDusts(dustAmount)
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format("Successful removed %d dusts for the %s player.", dustAmount, targetPlayer:getName()))
-	targetPlayer:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format("%s removed %d dusts to your character.", player:getName(), dustAmount))
+	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "talkaction.god.forge.msg_remove_success", {dustAmount, targetPlayer:getName()})
+	targetPlayer:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "talkaction.god.forge.msg_remove_target", {player:getName(), dustAmount})
 	-- Distro log
 	logger.info("{} removed {} dusts to {} player.", player:getName(), dustAmount, targetPlayer:getName())
 	return true
@@ -117,7 +117,7 @@ function getDusts.onSay(player, words, param)
 
 	-- Check the first param (player name) exists
 	if param == "" then
-		player:sendCancelMessage("Player name param required.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_player_name_param_required")
 		-- Distro log
 		logger.error("[getDusts.onSay] - Player name param not found.")
 		return true
@@ -128,14 +128,14 @@ function getDusts.onSay(player, words, param)
 	local name = split[1]
 	local targetPlayer = Player(name)
 	if not targetPlayer then
-		player:sendCancelMessage("Player " .. string.titleCase(name) .. " is not online.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_player_is_not_online", {string.titleCase(name)})
 		-- Distro log
 		logger.error("[getDusts.onSay] - Player {} is not online.", string.titleCase(name))
 		return true
 	end
 
 	local dustAmount = targetPlayer:getForgeDusts()
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "" .. targetPlayer:getName() .. " has " .. dustAmount .. " dusts.")
+	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "talkaction.god.forge.msg_get_result", {targetPlayer:getName(), dustAmount})
 	-- Distro log
 	logger.info("{} has {} dusts.", targetPlayer:getName(), dustAmount)
 	return true
@@ -154,7 +154,7 @@ function setDusts.onSay(player, words, param)
 
 	-- Check the first param (player name) exists
 	if param == "" then
-		player:sendCancelMessage("Player name param required.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_player_name_param_required")
 		-- Distro log
 		logger.error("[setDusts.onSay] - Player name param not found.")
 		return true
@@ -166,7 +166,7 @@ function setDusts.onSay(player, words, param)
 	-- Check if player is online
 	local targetPlayer = Player(name)
 	if not targetPlayer then
-		player:sendCancelMessage("Player " .. string.titleCase(name) .. " is not online.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_player_is_not_online", {string.titleCase(name)})
 		-- Distro log
 		logger.error("[setDusts.onSay] - Player {} is not online.", string.titleCase(name))
 		return true
@@ -179,7 +179,7 @@ function setDusts.onSay(player, words, param)
 
 	-- Check if the dustAmount is valid
 	if dustAmount <= 0 or dustAmount == nil then
-		player:sendCancelMessage("Invalid dust count.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.god.forge.msg_invalid_dust_count")
 		return true
 	end
 
@@ -189,8 +189,8 @@ function setDusts.onSay(player, words, param)
 	end
 
 	targetPlayer:setForgeDusts(dustAmount)
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format("Successful set %d dusts for the %s player.", dustAmount, targetPlayer:getName()))
-	targetPlayer:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format("%s set %d dusts to your character.", player:getName(), dustAmount))
+	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "talkaction.god.forge.msg_set_success", {dustAmount, targetPlayer:getName()})
+	targetPlayer:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "talkaction.god.forge.msg_set_target", {player:getName(), dustAmount})
 	-- Distro log
 	logger.info("{} set {} dusts to {} player.", player:getName(), dustAmount, targetPlayer:getName())
 	return true
@@ -212,7 +212,7 @@ function gotoFiendish.onSay(player, words, param)
 	if monster then
 		player:teleportTo(monster:getPosition())
 	else
-		player:sendCancelMessage("There are not fiendish monsters right now.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.god.forge.msg_fiendish_none")
 	end
 	return true
 end
@@ -232,7 +232,7 @@ function gotoInfluenced.onSay(player, words, param)
 	if monster then
 		player:teleportTo(monster:getPosition())
 	else
-		player:sendCancelMessage("There are not influenced monsters right now.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.god.forge.msg_influenced_none")
 	end
 	return true
 end
@@ -278,7 +278,7 @@ function addDustLevel.onSay(player, words, param)
 
 	-- Check the first param (player name) exists
 	if param == "" then
-		player:sendCancelMessage("Player name param required.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_player_name_param_required")
 		-- Distro log
 		logger.error("[addDustLevel.onSay] - Player name param not found.")
 		return true
@@ -290,7 +290,7 @@ function addDustLevel.onSay(player, words, param)
 	-- Check if player is online
 	local targetPlayer = Player(name)
 	if not targetPlayer then
-		player:sendCancelMessage("Player " .. string.titleCase(name) .. " is not online.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_player_is_not_online", {string.titleCase(name)})
 		-- Distro log
 		logger.error("[addDustLevel.onSay] - Player {} is not online.", string.titleCase(name))
 		return true
@@ -303,13 +303,13 @@ function addDustLevel.onSay(player, words, param)
 
 	-- Check if the dustAmount is valid
 	if dustLevel <= 0 or dustLevel == nil then
-		player:sendCancelMessage("Invalid dust level.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.god.forge.msg_invalid_dust_level")
 		return true
 	end
 
 	targetPlayer:addForgeDustLevel(dustLevel)
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format("Successful added %d dust level for the %s player.", dustLevel, targetPlayer:getName()))
-	targetPlayer:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format("%s adds %d dust level to your character.", player:getName(), dustLevel))
+	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "talkaction.god.forge.msg_addlevel_success", {dustLevel, targetPlayer:getName()})
+	targetPlayer:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "talkaction.god.forge.msg_addlevel_target", {player:getName(), dustLevel})
 	-- Distro log
 	logger.info("{} added {} dust level to {} player.", player:getName(), dustLevel, targetPlayer:getName())
 	return true

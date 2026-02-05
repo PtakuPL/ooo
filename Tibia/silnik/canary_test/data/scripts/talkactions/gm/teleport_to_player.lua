@@ -30,7 +30,7 @@ function teleportToCreature.onSay(player, words, param)
 	end
 
 	if #playerList == 0 then
-		player:sendCancelMessage("There are no active players.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_no_active_players")
 		return true
 	end
 

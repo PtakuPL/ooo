@@ -6,12 +6,12 @@ function kick.onSay(player, words, param)
 
 	local target = Player(param)
 	if not target then
-		player:sendCancelMessage("Player not found.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_player_not_found")
 		return true
 	end
 
 	if target:getGroup():getAccess() then
-		player:sendCancelMessage("You cannot kick this player.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.gm.kick.msg_cannot_kick")
 		return true
 	end
 

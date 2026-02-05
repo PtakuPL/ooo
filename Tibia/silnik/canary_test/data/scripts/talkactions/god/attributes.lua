@@ -266,7 +266,7 @@ function attributes.onSay(player, words, param)
 	logCommand(player, words, param)
 
 	if param == "" then
-		player:sendCancelMessage("Command param required.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_command_param_required")
 		return true
 	end
 
@@ -278,38 +278,38 @@ function attributes.onSay(player, words, param)
 	if itemFunction and itemFunction.isActive then
 		local item = Tile(position):getTopVisibleThing(player)
 		if not item or not item:isItem() then
-			player:sendCancelMessage("Item not found.")
+			player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.god.attributes.msg_item_not_found")
 			return true
 		end
 		if itemFunction.targetFunction(item, split[2]) then
 			position:sendMagicEffect(CONST_ME_MAGIC_GREEN)
 		else
-			player:sendCancelMessage("You cannot add that attribute to this item.")
+			player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.god.attributes.msg_cannot_add_item")
 		end
 	elseif creatureFunction and creatureFunction.isActive then
 		local creature = Tile(position):getTopCreature()
 		if not creature or not creature:isCreature() then
-			player:sendCancelMessage("Creature not found.")
+			player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_creature_not_found")
 			return true
 		end
 		if creatureFunction.targetFunction(creature, split[2]) then
 			position:sendMagicEffect(CONST_ME_MAGIC_GREEN)
 		else
-			player:sendCancelMessage("You cannot add that attribute to this creature.")
+			player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.god.attributes.msg_cannot_add_creature")
 		end
 	elseif playerFunction and playerFunction.isActive then
 		local targetPlayer = Tile(position):getTopCreature()
 		if not targetPlayer or not targetPlayer:getPlayer() then
-			player:sendCancelMessage("Player not found.")
+			player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_player_not_found")
 			return true
 		end
 		if playerFunction.targetFunction(targetPlayer, split[2]) then
 			position:sendMagicEffect(CONST_ME_MAGIC_GREEN)
 		else
-			player:sendCancelMessage("You cannot add that attribute to this player.")
+			player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.god.attributes.msg_cannot_add_player")
 		end
 	else
-		player:sendCancelMessage("Unknown attribute.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.god.attributes.msg_unknown")
 	end
 	return true
 end

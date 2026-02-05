@@ -369,7 +369,7 @@ function looktype.onSay(player, words, param)
 	logCommand(player, words, param)
 
 	if param == "" then
-		player:sendCancelMessage("Command param required.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_command_param_required")
 		return true
 	end
 
@@ -381,12 +381,12 @@ function looktype.onSay(player, words, param)
 			playerOutfit.lookType = lookType
 			player:setOutfit(playerOutfit)
 		else
-			player:sendCancelMessage("A look type with that id does not exist.")
+			player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.gm.looktype.msg_not_exist")
 		end
 		return true
 	else
 		-- return message if supplied param is not numerical.
-		player:sendCancelMessage("Looktype must be a numerical value.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.gm.looktype.msg_must_be_number")
 		return true
 	end
 end

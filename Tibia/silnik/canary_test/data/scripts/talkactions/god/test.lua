@@ -2,7 +2,7 @@ local testLog = TalkAction("/testlog")
 
 function testLog.onSay(player, words, param)
 	if param == "" then
-		player:sendCancelMessage("Log level and message required.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.god.test.msg_level_required")
 		logger.error("[testLog.onSay] - Log level and message not found")
 		return true
 	end
@@ -12,7 +12,7 @@ function testLog.onSay(player, words, param)
 	local message = string.trimSpace(split[2])
 
 	if message == "" then
-		player:sendCancelMessage("Log message required.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.god.test.msg_message_required")
 		return false
 	end
 
@@ -49,7 +49,7 @@ local containerTalkAction = TalkAction("!testcontainer")
 function containerTalkAction.onSay(player, words, param)
 	local container = player:getSlotItem(CONST_SLOT_BACKPACK)
 	if not container then
-		player:sendCancelMessage("Your backpack does not contain a valid container.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.god.test.msg_no_container")
 		logger.error("[!container] - Player: {} has a backpack without a valid container.", player:getName())
 		return true
 	end

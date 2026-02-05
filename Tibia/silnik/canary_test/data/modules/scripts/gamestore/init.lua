@@ -245,11 +245,11 @@ end
 
 function onRecvbyte(player, msg, byte)
 	if player:getVocation():getId() == 0 and not GameStore.haveCategoryRook() then
-		return player:sendCancelMessage("Store don't have offers for rookgaard citizen.")
+		return player:sendLocalizedTextMessage(MESSAGE_FAILURE, "actions.gamestore.msg_no_rookgaard")
 	end
 
 	if player:isUIExhausted(250) then
-		player:sendCancelMessage("You are exhausted.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "actions.gamestore.msg_exhausted")
 		return
 	end
 

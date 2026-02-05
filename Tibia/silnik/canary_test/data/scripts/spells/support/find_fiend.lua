@@ -38,13 +38,13 @@ local spell = Spell("instant")
 function spell.onCastSpell(creature, variant)
 	local targetId = ForgeMonster:pickClosestFiendish(creature)
 	if not targetId then
-		creature:sendCancelMessage("No creatures around")
+		creature:sendLocalizedTextMessage(MESSAGE_FAILURE, "spell.msg_no_creatures_around")
 		creature:getPosition():sendMagicEffect(CONST_ME_POFF)
 		return false
 	end
 	local target = Creature(targetId)
 	if not target then
-		creature:sendCancelMessage("No creatures around")
+		creature:sendLocalizedTextMessage(MESSAGE_FAILURE, "spell.msg_no_creatures_around")
 		creature:getPosition():sendMagicEffect(CONST_ME_POFF)
 		return false
 	end

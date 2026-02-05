@@ -20,7 +20,7 @@ function zones.onSay(player, words, param)
 			table.insert(list, zone:getName())
 			::continue::
 		end
-		player:sendTextMessage(MESSAGE_HEALED, "Zones:\n" .. table.concat(list, "\n "))
+		player:sendLocalizedTextMessage(MESSAGE_HEALED, "talkaction.god.zones.msg_list", {table.concat(list, "\n ")})
 		return true
 	end
 
@@ -54,7 +54,7 @@ function zones.onSay(player, words, param)
 		end,
 		countMonsters = function(zone)
 			local monsters = zone:getMonsters()
-			player:sendTextMessage(MESSAGE_HEALED, "Zone " .. zone:getName() .. " monsters: " .. #monsters .. ".")
+			player:sendLocalizedTextMessage(MESSAGE_HEALED, "talkaction.god.zones.msg_monsters", {zone:getName(), #monsters})
 		end,
 		removeNpcs = function(zone)
 			zone:removeNpcs()
@@ -62,7 +62,7 @@ function zones.onSay(player, words, param)
 		end,
 		countNpcs = function(zone)
 			local npcs = zone:getNpcs()
-			player:sendTextMessage(MESSAGE_HEALED, "Zone " .. zone:getName() .. " NPCs: " .. #npcs .. ".")
+			player:sendLocalizedTextMessage(MESSAGE_HEALED, "talkaction.god.zones.msg_npcs", {zone:getName(), #npcs})
 		end,
 		kickPlayers = function(zone)
 			zone:removePlayers()
@@ -74,15 +74,15 @@ function zones.onSay(player, words, param)
 			for _, player in ipairs(players) do
 				table.insert(list, player:getName())
 			end
-			player:sendTextMessage(MESSAGE_HEALED, "Zone " .. zone:getName() .. " players: " .. table.concat(list, ", ") .. ".")
+			player:sendLocalizedTextMessage(MESSAGE_HEALED, "talkaction.god.zones.msg_players_list", {zone:getName(), table.concat(list, ", ")})
 		end,
 		countPlayers = function(zone)
 			local players = zone:getPlayers()
-			player:sendTextMessage(MESSAGE_HEALED, "Zone " .. zone:getName() .. " players: " .. #players .. ".")
+			player:sendLocalizedTextMessage(MESSAGE_HEALED, "talkaction.god.zones.msg_players_count", {zone:getName(), #players})
 		end,
 		size = function(zone)
 			local positions = zone:getPositions()
-			player:sendTextMessage(MESSAGE_HEALED, "Zone " .. zone:getName() .. " size: " .. #positions .. ".")
+			player:sendLocalizedTextMessage(MESSAGE_HEALED, "talkaction.god.zones.msg_size", {zone:getName(), #positions})
 		end,
 	}
 

@@ -47,7 +47,7 @@ function spell.onCastSpell(creature, variant)
 	for _, spectator in pairs(spectators) do
 		if spectator:isMonster() then
 			if spectator:getType():isRewardBoss() then
-				creature:sendCancelMessage("You can't use this spell if there's a boss.")
+				creature:sendLocalizedTextMessage(MESSAGE_FAILURE, "spell.msg_boss_present")
 				creature:getPosition():sendMagicEffect(CONST_ME_POFF)
 				return false
 			end
@@ -55,7 +55,7 @@ function spell.onCastSpell(creature, variant)
 	end
 
 	if not combat:execute(creature, variant) then
-		creature:sendCancelMessage("There are no ranged monsters.")
+		creature:sendLocalizedTextMessage(MESSAGE_FAILURE, "spell.msg_no_ranged_monsters")
 		creature:getPosition():sendMagicEffect(CONST_ME_POFF)
 		return false
 	end

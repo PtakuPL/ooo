@@ -16,7 +16,7 @@ local spell = Spell("instant")
 
 function spell.onCastSpell(creature, var)
 	if creature:isPlayer() and var:getNumber() == creature:getId() then
-		creature:sendCancelMessage("You can't cast this spell to yourself.")
+		creature:sendLocalizedTextMessage(MESSAGE_FAILURE, "spell.msg_no_self_cast")
 		creature:getPosition():sendMagicEffect(CONST_ME_POFF)
 		return false
 	else

@@ -118,7 +118,7 @@ end
 
 function Monster.setFiendish(self, position, player)
 	if not self or not self:isForgeable() then
-		player:sendCancelMessage("Only allowed monsters can be fiendish.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "lib.monster.msg_only_fiendish")
 		return false
 	end
 
@@ -126,12 +126,12 @@ function Monster.setFiendish(self, position, player)
 	local fiendishMonster = Monster(ForgeMonster:pickFiendish())
 	if monsterType then
 		if not monsterType:isForgeCreature() then
-			player:sendCancelMessage("Only allowed monsters can be fiendish.")
+			player:sendLocalizedTextMessage(MESSAGE_FAILURE, "lib.monster.msg_only_fiendish")
 			return false
 		end
 	end
 	if fiendishMonster and fiendishMonster:getId() == self:getId() then
-		player:sendCancelMessage("This monster is already fiendish.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "lib.monster.msg_already_fiendish")
 		return false
 	end
 	position:sendMagicEffect(CONST_ME_MAGIC_RED)
@@ -144,7 +144,7 @@ function Monster.setFiendish(self, position, player)
 		success = "set sucessfully a new fiendish monster"
 	else
 		success = "have error to set fiendish monster"
-		player:sendCancelMessage("This monster is not forgeable, fiendish not added.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "lib.monster.msg_not_forgeable")
 	end
 
 	logger.info("Player {} {} with name {} and id {} on position {}", player:getName(), success, self:getName(), self:getId(), self:getPosition():toString())

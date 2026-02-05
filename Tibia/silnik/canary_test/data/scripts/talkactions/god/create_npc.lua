@@ -8,7 +8,7 @@ function createNpc.onSay(player, words, param)
 	logCommand(player, words, param)
 
 	if param == "" then
-		player:sendCancelMessage("Command param required.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_command_param_required")
 		return true
 	end
 
@@ -51,7 +51,7 @@ function createNpc.onSay(player, words, param)
 			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.create_npc.msg_4")
 		end
 	else
-		player:sendCancelMessage("There is not enough room.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_not_enough_room")
 		position:sendMagicEffect(CONST_ME_POFF)
 	end
 	return true

@@ -768,5 +768,25 @@
   "scripts.arena_pvp.need_10_players": "You need 10 players for enter in the arena.",
   "scripts.random_items.found_in_bag": "You found {article} {item} in the bag.",
   "scripts.random_items.found_nothing": "You found nothing useful.",
-  "scripts.boss_portal.someone_fighting": "There's someone fighting with {boss}."
+  "scripts.boss_portal.someone_fighting": "There's someone fighting with {boss}.",
+
+  "scripts.galthens_tree.empty": "Empty.",
+  "scripts.galthens_tree.found_satchel": "You have found a galthens satchel.",
+
+  "scripts.spirit_shovel.enraged_spirit": "You unearthed a spirit's anger!!!",
+  "scripts.spirit_shovel.ancient_ghost": "Your crude digging has angered some ancient ghost.",
+  "scripts.spirit_shovel.demon_skeleton": "You unearthed some not-so-death creature.",
+  "scripts.spirit_shovel.zombie": "You unearthed some not-so-death creature.",
+  "scripts.spirit_shovel.nothing_special": "You've found nothing special.",
+
+  "scripts.fairies_release.free_message": "My tainted siblings locked me up in the dark far too long. Now I'm finally free! Thank you, mortal being!",
+
+  "scripts.lions_rock_signs.snake_1": "With the aid of the old scroll you translate the inscriptions on the floor: And the mighty lion defeated the jealous snake.",
+  "scripts.lions_rock_signs.snake_2": "As a sign of victory he tooks its eye, yellow as envy and malevolence, and out of a foul creature created a precious treasure.",
+  "scripts.lions_rock_signs.lizard_1": "With the aid of the old scroll you translate the inscriptions on the floor: And the mighty lion defeated the lazy lizard.",
+  "scripts.lions_rock_signs.lizard_2": "As a sign of victory he tooks its egg, blue as sloth and conceit, and out of a foul creature created a precious treasure.",
+  "scripts.lions_rock_signs.scorpion_1": "With the aid of the old scroll you translate the inscriptions on the golden altar: And the mighty lion defeated the treacherous scorpion.",
+  "scripts.lions_rock_signs.scorpion_2": "As a sign of victory he tooks its poison, violet as deceit and betrayal, and created a precious treasure.",
+  "scripts.lions_rock_signs.hyena_1": "With the aid of the old scroll you translate the inscriptions on the golden statue: And the mighty lion defeated the greedy hyaena.",
+  "scripts.lions_rock_signs.hyena_2": "As a sign of victory he tooks its blood, red as voracity and lust, and created a precious treasure."
 }

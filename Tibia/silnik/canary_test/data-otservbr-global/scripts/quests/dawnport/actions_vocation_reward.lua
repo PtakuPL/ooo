@@ -1,14 +1,4 @@
-local adventurersGuildText = [[
-Brave adventurer,
-
-the Adventurers' Guild bids you welcome as a new hero of the land.
-
-Take this adventurer's stone and use it in any city temple to instantly travel to our guild hall. If you should ever lose your adventurer's stone, you can replace it by talking to a priest in the temple.
-I hope you will be visiting us soon.
-
-Kind regards,
-Rotem, Head of the Adventurers' Guild
-]]
+local adventurersGuildText = "#i18n:book.dawnport.adventurers_guild_letter"
 
 local reward = {
 	container = 2854,

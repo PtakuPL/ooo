@@ -493,6 +493,15 @@ private:
 	void AddPlayerStats(NetworkMessage &msg);
 	void AddOutfit(NetworkMessage &msg, const Outfit_t &outfit, bool addMount = true);
 	void AddPlayerSkills(NetworkMessage &msg);
+
+	// I18N: Translate creature/item names server-side based on player locale
+	[[nodiscard]] std::string translateCreatureName(const std::shared_ptr<Creature> &creature) const;
+	[[nodiscard]] std::string translateCreatureDescription(const std::shared_ptr<Creature> &creature) const;
+	[[nodiscard]] std::string translateItemName(uint16_t itemId, const std::string &fallbackName) const;
+	[[nodiscard]] std::string translateItemDescription(uint16_t itemId, const std::string &fallbackDesc) const;
+	[[nodiscard]] std::string translateSpellName(const std::string &spellName) const;
+	[[nodiscard]] std::string translateBookText(const std::string &text) const;
+
 	// Blessing
 	void sendBlessingWindow();
 	void sendBlessStatus();

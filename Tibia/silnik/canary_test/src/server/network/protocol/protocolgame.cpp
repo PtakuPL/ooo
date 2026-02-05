@@ -45,6 +45,7 @@
 #include "server/network/message/outputmessage.hpp"
 #include "utils/tools.hpp"
 #include "utils/i18n/keymap.hpp"
+#include "utils/i18n/translator.hpp"
 #include "creatures/players/vocations/vocation.hpp"
 
 #include "enums/account_coins.hpp"
@@ -2197,10 +2198,10 @@ void ProtocolGame::sendItemInspection(uint16_t itemId, uint8_t itemCount, const 
 	const ItemType &it = Item::items[itemId];
 
 	if (item) {
-		msg.addString(item->getName());
+		msg.addString(translateItemName(itemId, item->getName())); // I18N
 		AddItem(msg, item);
 	} else {
-		msg.addString(it.name);
+		msg.addString(translateItemName(itemId, it.name)); // I18N
 		AddItem(msg, it.id, itemCount, 0);
 	}
 	msg.addByte(0);
@@ -2516,7 +2517,7 @@ void ProtocolGame::parseBestiarysendMonsterData(NetworkMessage &msg) {
 		newmsg.addByte(difficult);
 		newmsg.addByte(0); // 1 if special event - 0 if regular loot (?)
 		if (g_configManager().getBoolean(SHOW_LOOTS_IN_BESTIARY) || shouldAddItem == true) {
-			newmsg.addString(loot.name);
+			newmsg.addString(translateItemName(loot.id, loot.name)); // I18N
 			newmsg.addByte(loot.countmax > 0 ? 0x1 : 0x0);
 		}
 	}
@@ -4023,7 +4024,7 @@ void ProtocolGame::sendCyclopediaCharacterStoreSummary() {
 	for (const auto &hItem_it : houseItems) {
 		const ItemType &it = Item::items[hItem_it.first];
 		msg.add<uint16_t>(it.id); // Item ID
-		msg.addString(it.name);
+		msg.addString(translateItemName(it.id, it.name)); // I18N
 		msg.addByte(hItem_it.second);
 	}
 
@@ -4048,7 +4049,7 @@ void ProtocolGame::sendCyclopediaCharacterInspection() {
 			++inventoryItems;
 
 			msg.addByte(slot);
-			msg.addString(inventoryItem->getName());
+			msg.addString(translateItemName(inventoryItem->getID(), inventoryItem->getName())); // I18N
 			AddItem(msg, inventoryItem);
 
 			uint8_t itemImbuements = 0;
@@ -5010,7 +5011,7 @@ void ProtocolGame::sendContainer(uint8_t cid, const std::shared_ptr<Container> &
 		msg.addString("Browse Field");
 	} else {
 		AddItem(msg, container);
-		msg.addString(container->getName());
+		msg.addString(translateItemName(container->getID(), container->getName())); // I18N
 	}
 
 	const auto itemsStoreInboxToSend = container->getStoreInboxFilteredItems();
@@ -5166,7 +5167,7 @@ void ProtocolGame::sendLootStats(const std::shared_ptr<Item> &item, uint8_t coun
 	NetworkMessage msg;
 	msg.addByte(0xCF);
 	AddItem(msg, lootedItem);
-	msg.addString(lootedItem->getName());
+	msg.addString(translateItemName(lootedItem->getID(), lootedItem->getName())); // I18N
 	item->setIsLootTrackeable(false);
 	writeToOutputBuffer(msg);
 
@@ -6590,7 +6591,7 @@ void ProtocolGame::sendCreatureSay(const std::shared_ptr<Creature> &creature, Sp
 	static uint32_t statementId = 0;
 	msg.add<uint32_t>(++statementId);
 
-	msg.addString(creature->getName());
+	msg.addString(translateCreatureName(creature)); // I18N
 
 	if (!oldProtocol) {
 		msg.addByte(0x00); // Show (Traded)
@@ -6639,7 +6640,7 @@ void ProtocolGame::sendCreatureLocalizedSay(const std::shared_ptr<Creature> &cre
 	static uint32_t statementId = 0;
 	msg.add<uint32_t>(++statementId);
 
-	msg.addString(creature->getName());
+	msg.addString(translateCreatureName(creature)); // I18N
 
 	if (!oldProtocol) {
 		msg.addByte(0x00); // Show (Traded)
@@ -6695,7 +6696,7 @@ void ProtocolGame::sendToChannel(const std::shared_ptr<Creature> &creature, Spea
 		}
 		type = TALKTYPE_CHANNEL_R1;
 	} else {
-		msg.addString(creature->getName());
+		msg.addString(translateCreatureName(creature)); // I18N
 		if (!oldProtocol && statementId != 0) {
 			msg.addByte(0x00); // Show (Traded)
 		}
@@ -7475,7 +7476,8 @@ void ProtocolGame::sendTextWindow(uint32_t windowTextId, const std::shared_ptr<I
 		msg.add<uint16_t>(maxlen);
 		msg.addString(item->getAttribute<std::string>(ItemAttribute_t::TEXT));
 	} else {
-		const std::string &text = item->getAttribute<std::string>(ItemAttribute_t::TEXT);
+		const std::string &originalText = item->getAttribute<std::string>(ItemAttribute_t::TEXT);
+		const std::string text = translateBookText(originalText); // I18N: translate book/letter/scroll text
 		msg.add<uint16_t>(text.size());
 		msg.addString(text);
 	}
@@ -7506,8 +7508,9 @@ void ProtocolGame::sendTextWindow(uint32_t windowTextId, uint32_t itemId, const 
 	msg.addByte(0x96);
 	msg.add<uint32_t>(windowTextId);
 	AddItem(msg, itemId, 1, 0);
-	msg.add<uint16_t>(text.size());
-	msg.addString(text);
+	const std::string translatedText = translateBookText(text); // I18N: translate book/letter/scroll text
+	msg.add<uint16_t>(translatedText.size());
+	msg.addString(translatedText);
 	msg.add<uint16_t>(0x00);
 
 	if (!oldProtocol) {
@@ -8168,7 +8171,7 @@ void ProtocolGame::AddCreature(NetworkMessage &msg, const std::shared_ptr<Creatu
 		if (!oldProtocol && creature->isHealthHidden()) {
 			msg.addString(std::string());
 		} else {
-			msg.addString(creature->getName());
+			msg.addString(translateCreatureName(creature)); // I18N
 		}
 	}
 
@@ -8511,7 +8514,7 @@ void ProtocolGame::addImbuementInfo(NetworkMessage &msg, uint16_t imbuementId) c
 	for (const auto &itm : items) {
 		const ItemType &it = Item::items[itm.first];
 		msg.add<uint16_t>(itm.first);
-		msg.addString(it.name);
+		msg.addString(translateItemName(it.id, it.name)); // I18N
 		msg.add<uint16_t>(itm.second);
 	}
 
@@ -8973,9 +8976,9 @@ void ProtocolGame::AddShopItem(NetworkMessage &msg, const ShopBlock &shopBlock) 
 
 	// If not send "itemName" variable from the npc shop, will registered the name that is in items.xml
 	if (shopBlock.itemName.empty()) {
-		msg.addString(it.name);
+		msg.addString(translateItemName(shopBlock.itemId, it.name)); // I18N
 	} else {
-		msg.addString(shopBlock.itemName);
+		msg.addString(translateItemName(shopBlock.itemId, shopBlock.itemName)); // I18N
 	}
 	msg.add<uint32_t>(it.weight);
 	msg.add<uint32_t>(shopBlock.itemBuyPrice == 4294967295 ? 0 : shopBlock.itemBuyPrice);
@@ -8988,6 +8991,197 @@ void ProtocolGame::parseExtendedOpcode(NetworkMessage &msg) {
 
 	// process additional opcodes via lua script event
 	g_game().parsePlayerExtendedOpcode(player->getID(), opcode, buffer);
+}
+
+// ──────────────────────────────────────────────────────────────
+// I18N: Server-side translation helpers
+// ──────────────────────────────────────────────────────────────
+
+namespace {
+	// Convert a display name to i18n slug: "Frost Troll" → "frost_troll"
+	std::string nameToSlug(const std::string &name) {
+		std::string slug;
+		slug.reserve(name.size());
+		for (char ch : name) {
+			if (ch == ' ' || ch == '\t') {
+				slug += '_';
+			} else if (ch == '\'' || ch == '`') {
+				// skip apostrophes: "Goshnar's" → "goshnars"
+				continue;
+			} else {
+				slug += static_cast<char>(std::tolower(static_cast<unsigned char>(ch)));
+			}
+		}
+		return slug;
+	}
+} // namespace
+
+std::string ProtocolGame::translateCreatureName(const std::shared_ptr<Creature> &creature) const {
+	if (!creature) {
+		return {};
+	}
+
+	const std::string &originalName = creature->getName();
+
+	if (!player) {
+		return originalName;
+	}
+
+	const std::string &locale = player->getLocale();
+	if (locale.empty() || locale == "en") {
+		return originalName;
+	}
+
+	// Determine translation key prefix based on creature type
+	std::string key;
+	if (creature->getMonster()) {
+		key = "monster." + nameToSlug(originalName) + ".name";
+	} else if (creature->getNpc()) {
+		// NPC names are proper names – keep untranslated (no npc.X.name keys exist)
+		return originalName;
+	} else {
+		// Player names are never translated
+		return originalName;
+	}
+
+	const std::string &translated = i18n::g_translator().get(key, locale);
+	// g_translator().get() returns the key itself when translation is missing
+	if (translated.empty() || translated == key) {
+		return originalName;
+	}
+	return translated;
+}
+
+std::string ProtocolGame::translateCreatureDescription(const std::shared_ptr<Creature> &creature) const {
+	if (!creature) {
+		return {};
+	}
+
+	std::string originalDesc;
+	if (const auto &monster = creature->getMonster()) {
+		originalDesc = monster->getNameDescription();
+	} else {
+		return creature->getDescription(0);
+	}
+
+	if (!player) {
+		return originalDesc;
+	}
+
+	const std::string &locale = player->getLocale();
+	if (locale.empty() || locale == "en") {
+		return originalDesc;
+	}
+
+	const std::string slug = nameToSlug(creature->getName());
+	const std::string key = "monster." + slug + ".desc";
+
+	const std::string &translated = i18n::g_translator().get(key, locale);
+	if (translated.empty() || translated == key) {
+		return originalDesc;
+	}
+	return translated;
+}
+
+std::string ProtocolGame::translateItemName(uint16_t itemId, const std::string &fallbackName) const {
+	if (!player) {
+		return fallbackName;
+	}
+
+	const std::string &locale = player->getLocale();
+	if (locale.empty() || locale == "en") {
+		return fallbackName;
+	}
+
+	const std::string key = "item." + std::to_string(itemId) + ".name";
+	const std::string &translated = i18n::g_translator().get(key, locale);
+	if (translated.empty() || translated == key) {
+		return fallbackName;
+	}
+	return translated;
+}
+
+std::string ProtocolGame::translateItemDescription(uint16_t itemId, const std::string &fallbackDesc) const {
+	if (!player) {
+		return fallbackDesc;
+	}
+
+	const std::string &locale = player->getLocale();
+	if (locale.empty() || locale == "en") {
+		return fallbackDesc;
+	}
+
+	const std::string key = "item." + std::to_string(itemId) + ".desc";
+	const std::string &translated = i18n::g_translator().get(key, locale);
+	if (translated.empty() || translated == key) {
+		return fallbackDesc;
+	}
+	return translated;
+}
+
+std::string ProtocolGame::translateSpellName(const std::string &spellName) const {
+	if (!player || spellName.empty()) {
+		return spellName;
+	}
+
+	const std::string &locale = player->getLocale();
+	if (locale.empty() || locale == "en") {
+		return spellName;
+	}
+
+	const std::string key = "spell." + nameToSlug(spellName) + ".name";
+	const std::string &translated = i18n::g_translator().get(key, locale);
+	if (translated.empty() || translated == key) {
+		return spellName;
+	}
+	return translated;
+}
+
+std::string ProtocolGame::translateBookText(const std::string &text) const {
+	if (!player || text.empty()) {
+		return text;
+	}
+
+	const std::string &locale = player->getLocale();
+	if (locale.empty() || locale == "en") {
+		// For English locale, still need to resolve #i18n: markers to actual text
+		if (text.starts_with("#i18n:")) {
+			const std::string key = text.substr(6);
+			const std::string &resolved = i18n::g_translator().get(key, "en");
+			if (!resolved.empty() && resolved != key) {
+				return resolved;
+			}
+		}
+		return text;
+	}
+
+	// Check for #i18n: marker (Lua-set book texts with explicit key)
+	if (text.starts_with("#i18n:")) {
+		const std::string key = text.substr(6);
+		const std::string &translated = i18n::g_translator().get(key, locale);
+		if (!translated.empty() && translated != key) {
+			return translated;
+		}
+		// Fallback to English text
+		const std::string &enText = i18n::g_translator().get(key, "en");
+		if (!enText.empty() && enText != key) {
+			return enText;
+		}
+		return text;
+	}
+
+	// Reverse lookup for .otbm texts (books/letters/scrolls embedded in map)
+	// Build reverse map lazily on first call
+	i18n::g_translator().buildReverseTextMap("book.otbm.");
+	const std::string &key = i18n::g_translator().getKeyForText(text);
+	if (!key.empty()) {
+		const std::string &translated = i18n::g_translator().get(key, locale);
+		if (!translated.empty() && translated != key) {
+			return translated;
+		}
+	}
+
+	return text;
 }
 
 // OTCv8

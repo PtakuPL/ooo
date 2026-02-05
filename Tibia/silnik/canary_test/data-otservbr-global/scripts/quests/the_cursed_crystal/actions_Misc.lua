@@ -83,7 +83,7 @@ function theCursedMiscAction.onUse(player, item, fromPosition, target, toPositio
 			local paperCursedCrystal = player:addItem(2820, 1)
 			paperCursedCrystal:setAttribute(
 				ITEM_ATTRIBUTE_TEXT,
-				"I did it! I reached the crystal gardens! What beauty and splendor I have seen down there. Even more: I discovered a small subterranean lake - but Harry was there before me. And he did something strange: He ringed a small, transparent looking bell and immediately a big whirl appeared in the water. I suppose this is the mysterious way deeper into the caves we sought after for so long. But Harry, the coward, didn't dare to dive into the water. Instead he left the caverns and headed back to the surface. I must have this bell!"
+				"#i18n:book.cursed_crystal.crystal_gardens_diary"
 			)
 			player:setStorageValue(Storage.Quest.U10_70.TheCursedCrystal.SheetOfPaper, 1)
 		else

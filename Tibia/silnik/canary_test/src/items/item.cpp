@@ -27,6 +27,7 @@
 #include "items/trashholder.hpp"
 #include "lua/creature/actions.hpp"
 #include "map/house/house.hpp"
+#include "utils/i18n/translator.hpp"
 
 #define ITEM_IMBUEMENT_SLOT 500
 
@@ -3137,6 +3138,13 @@ std::string Item::getDescription(const ItemType &it, int32_t lookDistance, const
 					if (item) {
 						text = item->getAttribute<std::string>(ItemAttribute_t::TEXT);
 						if (!text.empty()) {
+							// i18n: resolve #i18n: marker to English text for description preview
+							if (text.starts_with("#i18n:")) {
+								auto resolved = i18n::g_translator().get(text.substr(6), "en");
+								if (!resolved.empty()) {
+									text = resolved;
+								}
+							}
 							const std::string &writer = item->getAttribute<std::string>(ItemAttribute_t::WRITER);
 							if (!writer.empty()) {
 								s << writer << " wrote";

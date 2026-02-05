@@ -12,7 +12,7 @@ local function recreateParchment(position)
 	else
 		local parchment = Game.createItem(2819, 1, position)
 		if parchment then
-			parchment:setText("Buried forever that he never shall return. Don't remove this seal or bad things may happen.")
+		parchment:setText("#i18n:book.parchment_room.demon_seal")
 			parchment:setActionId(104)
 		end
 	end

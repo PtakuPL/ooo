@@ -274,4 +274,41 @@ void Translator::flattenJson(const nlohmann::json &node, const std::string &pref
 	}
 }
 
+void Translator::buildReverseTextMap(const std::string &keyPrefix) const {
+	ensureLocaleLoaded(fallbackLocale);
+
+	std::scoped_lock lock(mutex);
+	if (reverseMapBuilt_) {
+		return;
+	}
+
+	const auto it = locales.find(fallbackLocale);
+	if (it == locales.end()) {
+		reverseMapBuilt_ = true;
+		return;
+	}
+
+	for (const auto &[key, value] : it->second.entries) {
+		if (key.starts_with(keyPrefix) && value.size() >= 20) {
+			reverseTextMap_[value] = key;
+		}
+	}
+
+	reverseMapBuilt_ = true;
+	g_logger().info("Built reverse text map with {} entries for prefix '{}'.", reverseTextMap_.size(), keyPrefix);
+}
+
+std::string Translator::getKeyForText(const std::string &text) const {
+	std::scoped_lock lock(mutex);
+	if (!reverseMapBuilt_) {
+		return {};
+	}
+
+	const auto it = reverseTextMap_.find(text);
+	if (it != reverseTextMap_.end()) {
+		return it->second;
+	}
+	return {};
+}
+
 } // namespace i18n

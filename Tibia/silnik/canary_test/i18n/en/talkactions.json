@@ -105,6 +105,13 @@
     "goto_house": {
       "player_no_house": "The player {} not have house.",
       "no_house_usage": "You not have house. For goto house of one player use the player name param, usage: /gotohouse playername"
+    },
+    "add_money": {
+      "param_required": "Player name param required",
+      "player_not_exist": "A player with name {} does not exist.",
+      "invalid_amount": "Invalid amount.",
+      "failed": "Failed to add money to {}.",
+      "added_to_character": "{} added {} gold coins to your character."
     }
   }
 }

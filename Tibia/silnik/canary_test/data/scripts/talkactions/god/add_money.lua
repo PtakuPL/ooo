@@ -45,7 +45,7 @@ function addMoney.onSay(player, words, param)
 	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.add_money.msg_1")
 	local targetPlayer = Player(name)
 	if targetPlayer then
-		targetPlayer:sendTextMessage(MESSAGE_EVENT_ADVANCE, "" .. player:getName() .. " added " .. amount .. " gold coins to your character.")
+		targetPlayer:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "talkactions.god.add_money.added_to_character", {player:getName(), tostring(amount)})
 	end
 	-- Distro log
 	logger.info("{} added {} gold coins to {} player", player:getName(), amount, name)

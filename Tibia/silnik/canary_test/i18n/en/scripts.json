@@ -657,5 +657,6 @@
   "scripts.soulpit.soul_core_received": "You have received a {} soul core.",
   "scripts.common.fame_point": "You have received a fame point.",
   "scripts.common.level_required": "All the players need to be level {} or higher.",
-  "scripts.common.boss_cooldown": "You have to wait {} hours to face {} again!"
+  "scripts.common.boss_cooldown": "You have to wait {} hours to face {} again!",
+  "scripts.common.found_count_items": "You found {} {}."
 }

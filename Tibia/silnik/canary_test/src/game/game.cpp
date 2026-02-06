@@ -2999,66 +2999,68 @@ void Game::playerQuickLootCorpse(const std::shared_ptr<Player> &player, const st
 	if (totalLootedGold != 0 || missedAnyGold || totalLootedItems != 0 || missedAnyItem) {
 		bool lootedAllGold = totalLootedGold != 0 && !missedAnyGold;
 		bool lootedAllItems = totalLootedItems != 0 && !missedAnyItem;
+		const std::string loc(player->getLocale().empty() ? "en" : std::string(player->getLocale()));
+		auto &tr = i18n::g_translator();
 		if (lootedAllGold) {
 			if (totalLootedItems != 0 || missedAnyItem) {
-				ss << "You looted the complete " << totalLootedGold << " gold";
+				ss << tr.format("cpp.game.looted_complete_gold", loc, {std::to_string(totalLootedGold)});
 
 				if (lootedAllItems) {
-					ss << " and all dropped items";
+					ss << tr.get("cpp.game.and_all_dropped_items", loc);
 				} else if (totalLootedItems != 0) {
-					ss << ", but you only looted some of the items";
+					ss << tr.get("cpp.game.but_only_some_items", loc);
 				} else if (missedAnyItem) {
-					ss << " but none of the dropped items";
+					ss << tr.get("cpp.game.but_no_items", loc);
 				}
 			} else {
-				ss << "You looted " << totalLootedGold << " gold";
+				ss << tr.format("cpp.game.looted_gold", loc, {std::to_string(totalLootedGold)});
 			}
 		} else if (lootedAllItems) {
 			if (totalLootedItems == 1) {
-				ss << "You looted 1 item";
+				ss << tr.get("cpp.game.looted_one_item", loc);
 			} else if (totalLootedGold != 0 || missedAnyGold) {
-				ss << "You looted all of the dropped items";
+				ss << tr.get("cpp.game.looted_all_dropped_items", loc);
 			} else {
-				ss << "You looted all items";
+				ss << tr.get("cpp.game.looted_all_items", loc);
 			}
 
 			if (totalLootedGold != 0) {
-				ss << ", but you only looted " << totalLootedGold << " of the dropped gold";
+				ss << tr.format("cpp.game.but_only_some_gold", loc, {std::to_string(totalLootedGold)});
 			} else if (missedAnyGold) {
-				ss << " but none of the dropped gold";
+				ss << tr.get("cpp.game.but_no_gold", loc);
 			}
 		} else if (totalLootedGold != 0) {
-			ss << "You only looted " << totalLootedGold << " of the dropped gold";
+			ss << tr.format("cpp.game.only_looted_some_gold", loc, {std::to_string(totalLootedGold)});
 			if (totalLootedItems != 0) {
-				ss << " and some of the dropped items";
+				ss << tr.get("cpp.game.and_some_items", loc);
 			} else if (missedAnyItem) {
-				ss << " but none of the dropped items";
+				ss << tr.get("cpp.game.but_no_items", loc);
 			}
 		} else if (totalLootedItems != 0) {
-			ss << "You looted some of the dropped items";
+			ss << tr.get("cpp.game.looted_some_items", loc);
 			if (missedAnyGold) {
-				ss << " but none of the dropped gold";
+				ss << tr.get("cpp.game.but_no_gold", loc);
 			}
 		} else if (missedAnyGold) {
-			ss << "You looted none of the dropped gold";
+			ss << tr.get("cpp.game.looted_no_gold", loc);
 			if (missedAnyItem) {
-				ss << " and none of the items";
+				ss << tr.get("cpp.game.and_no_items", loc);
 			}
 		} else if (missedAnyItem) {
-			ss << "You looted none of the dropped items";
+			ss << tr.get("cpp.game.looted_no_items", loc);
 		}
 	} else {
-		ss << "No loot";
+		ss << tr.get("cpp.game.no_loot", loc);
 	}
 	ss << ".";
 	player->sendTextMessage(MESSAGE_STATUS, ss.str());
 
 	if (shouldNotifyCapacity) {
 		ss.str(std::string());
-		ss << "Attention! The loot you are trying to pick up is too heavy for you to carry.";
+		ss << tr.get("cpp.game.loot_too_heavy", loc);
 	} else if (shouldNotifyNotEnoughRoom != OBJECTCATEGORY_NONE) {
 		ss.str(std::string());
-		ss << "Attention! The container assigned to category " << getObjectCategoryName(shouldNotifyNotEnoughRoom) << " is full.";
+		ss << tr.format("cpp.game.loot_container_full", loc, {getObjectCategoryName(shouldNotifyNotEnoughRoom)});
 	} else {
 		return;
 	}
@@ -3240,7 +3242,7 @@ ReturnValue Game::collectRewardChestItems(const std::shared_ptr<Player> &player,
 		// Limit the collect count if the "maxMoveItems" is not "0"
 		auto limitMove = maxMoveItems != 0 && movedRewardItems == maxMoveItems;
 		if (limitMove) {
-			lootedItemsMessage = fmt::format("You can only collect {} items at a time. {} of {} objects were picked up.", maxMoveItems, movedRewardItems, rewardCount);
+			{ const std::string loc(player->getLocale().empty() ? "en" : std::string(player->getLocale())); auto &tr = i18n::g_translator(); lootedItemsMessage = tr.format("cpp.game.collect_limit_reached", loc, {std::to_string(maxMoveItems), std::to_string(movedRewardItems), std::to_string(rewardCount)}); }
 			player->sendTextMessage(MESSAGE_EVENT_ADVANCE, lootedItemsMessage);
 			return RETURNVALUE_NOERROR;
 		}
@@ -3251,7 +3253,7 @@ ReturnValue Game::collectRewardChestItems(const std::shared_ptr<Player> &player,
 		}
 	}
 
-	lootedItemsMessage = fmt::format("{} of {} objects were picked up.", movedRewardItems, rewardCount);
+	{ const std::string loc(player->getLocale().empty() ? "en" : std::string(player->getLocale())); auto &tr = i18n::g_translator(); lootedItemsMessage = tr.format("cpp.game.objects_picked_up", loc, {std::to_string(movedRewardItems), std::to_string(rewardCount)}); }
 	player->sendTextMessage(MESSAGE_EVENT_ADVANCE, lootedItemsMessage);
 
 	if (movedRewardItems == 0) {
@@ -4868,7 +4870,7 @@ void Game::playerStashWithdraw(uint32_t playerId, uint16_t itemId, uint32_t coun
 	auto maxWithdrawLimit = static_cast<uint32_t>(g_configManager().getNumber(STASH_MANAGE_AMOUNT));
 	if (count > maxWithdrawLimit) {
 		std::stringstream limitMessage;
-		limitMessage << "You can only withdraw up to " << maxWithdrawLimit << " items at a time from the stash.";
+		{ const std::string loc(player->getLocale().empty() ? "en" : std::string(player->getLocale())); auto &tr = i18n::g_translator(); limitMessage << tr.format("cpp.game.stash_withdraw_limit", loc, {std::to_string(maxWithdrawLimit)}); }
 		player->sendTextMessage(MESSAGE_EVENT_ADVANCE, limitMessage.str());
 		count = maxWithdrawLimit;
 	}
@@ -5649,15 +5651,17 @@ void Game::playerQuickLoot(uint32_t playerId, const Position &pos, uint16_t item
 
 		std::stringstream ss;
 		if (ret == RETURNVALUE_NOTENOUGHCAPACITY) {
-			ss << "Attention! The loot you are trying to pick up is too heavy for you to carry.";
+			{ const std::string loc(player->getLocale().empty() ? "en" : std::string(player->getLocale())); auto &tr = i18n::g_translator(); ss << tr.get("cpp.game.loot_too_heavy", loc); }
 		} else if (ret == RETURNVALUE_CONTAINERNOTENOUGHROOM) {
-			ss << "Attention! The container for " << getObjectCategoryName(category) << " is full.";
+			{ const std::string loc(player->getLocale().empty() ? "en" : std::string(player->getLocale())); auto &tr = i18n::g_translator(); ss << tr.format("cpp.game.loot_container_for_full", loc, {getObjectCategoryName(category)}); }
 		} else {
+			const std::string loc(player->getLocale().empty() ? "en" : std::string(player->getLocale()));
+			auto &tr = i18n::g_translator();
 			if (ret == RETURNVALUE_NOERROR) {
 				player->sendLootStats(item, item->getItemCount());
-				ss << "You looted ";
+				ss << tr.get("cpp.game.you_looted", loc);
 			} else {
-				ss << "You could not loot ";
+				ss << tr.get("cpp.game.could_not_loot", loc);
 			}
 
 			if (worth != 0) {
@@ -5732,7 +5736,7 @@ void Game::playerLootAllCorpses(const std::shared_ptr<Player> &player, const Pos
 		if (corpses > 0) {
 			if (corpses > 1) {
 				std::stringstream string;
-				string << "You looted " << corpses << " corpses.";
+				{ const std::string loc(player->getLocale().empty() ? "en" : std::string(player->getLocale())); auto &tr = i18n::g_translator(); string << tr.format("cpp.game.looted_corpses", loc, {std::to_string(corpses)}); }
 				player->sendTextMessage(MESSAGE_LOOT, string.str());
 			}
 
@@ -6063,7 +6067,7 @@ void Game::playerApplyImbuement(uint32_t playerId, uint16_t imbuementid, uint8_t
 
 	if (item->getTopParent() != player) {
 		g_logger().error("[Game::playerApplyImbuement] - An error occurred while player with name {} try to apply imbuement", player->getName());
-		player->sendImbuementResult("An error has occurred, reopen the imbuement window. If the problem persists, contact your administrator.");
+		{ const std::string loc(player->getLocale().empty() ? "en" : std::string(player->getLocale())); player->sendImbuementResult(i18n::g_translator().get("cpp.game.imbuement_error_reopen", loc)); }
 		return;
 	}
 
@@ -6328,7 +6332,7 @@ void Game::playerSay(uint32_t playerId, uint16_t channelId, SpeakClasses type, c
 	uint32_t muteTime = player->isMuted();
 	if (muteTime > 0) {
 		std::ostringstream ss;
-		ss << "You are still muted for " << muteTime << " seconds.";
+		{ const std::string loc(player->getLocale().empty() ? "en" : std::string(player->getLocale())); auto &tr = i18n::g_translator(); ss << tr.format("cpp.game.still_muted", loc, {std::to_string(muteTime)}); }
 		player->sendTextMessage(MESSAGE_FAILURE, ss.str());
 		return;
 	}
@@ -6462,7 +6466,7 @@ bool Game::playerSpeakTo(const std::shared_ptr<Player> &player, SpeakClasses typ
 		player->sendLocalizedTextMessage(MESSAGE_FAILURE, "server.game.msg_19");
 	} else {
 		std::ostringstream ss;
-		ss << "Message sent to " << toPlayer->getName() << '.';
+		{ const std::string loc(player->getLocale().empty() ? "en" : std::string(player->getLocale())); auto &tr = i18n::g_translator(); ss << tr.format("cpp.game.message_sent_to", loc, {toPlayer->getName()}); }
 		player->sendTextMessage(MESSAGE_FAILURE, ss.str());
 	}
 	return true;
@@ -7117,16 +7121,16 @@ void Game::notifySpectators(const CreatureVector &spectators, const Position &ta
 				continue;
 			}
 
-			std::stringstream ss;
-			ss << ucfirst(targetMonster->getNameDescription()) << " has dodged";
+			const std::string loc(tmpPlayer->getLocale().empty() ? "en" : std::string(tmpPlayer->getLocale()));
+			auto &tr = i18n::g_translator();
+			std::string monsterName = ucfirst(targetMonster->getNameDescription());
 			if (tmpPlayer == attackerPlayer) {
-				ss << " your attack.";
-				attackerPlayer->sendCancelMessage(ss.str());
-				ss << " (Hazard)";
-				attackerPlayer->sendTextMessage(MESSAGE_DAMAGE_OTHERS, ss.str());
+				std::string cancelMsg = tr.format("cpp.game.hazard_dodged_your", loc, {monsterName});
+				attackerPlayer->sendCancelMessage(cancelMsg);
+				attackerPlayer->sendTextMessage(MESSAGE_DAMAGE_OTHERS, cancelMsg + " (Hazard)");
 			} else {
-				ss << " an attack by " << attackerPlayer->getName() << ". (Hazard)";
-				tmpPlayer->sendTextMessage(MESSAGE_DAMAGE_OTHERS, ss.str());
+				std::string msg = tr.format("cpp.game.hazard_dodged_by", loc, {monsterName, attackerPlayer->getName()});
+				tmpPlayer->sendTextMessage(MESSAGE_DAMAGE_OTHERS, msg + " (Hazard)");
 			}
 		}
 		addMagicEffect(targetPos, CONST_ME_DODGE);
@@ -8565,7 +8569,7 @@ void Game::playerInviteToParty(uint32_t playerId, uint32_t invitedId) {
 
 	if (invitedPlayer->getParty()) {
 		std::ostringstream ss;
-		ss << invitedPlayer->getName() << " is already in a party.";
+		{ const std::string loc(player->getLocale().empty() ? "en" : std::string(player->getLocale())); auto &tr = i18n::g_translator(); ss << tr.format("cpp.game.already_in_party", loc, {invitedPlayer->getName()}); }
 		player->sendTextMessage(MESSAGE_PARTY_MANAGEMENT, ss.str());
 		return;
 	}
@@ -8691,7 +8695,7 @@ void Game::sendGuildMotd(uint32_t playerId) {
 
 	const auto guild = player->getGuild();
 	if (guild) {
-		player->sendChannelMessage("Message of the Day", guild->getMotd(), TALKTYPE_CHANNEL_R1, CHANNEL_GUILD);
+		{ const std::string loc(player->getLocale().empty() ? "en" : std::string(player->getLocale())); player->sendChannelMessage(i18n::g_translator().get("cpp.game.guild_motd_title", loc), guild->getMotd(), TALKTYPE_CHANNEL_R1, CHANNEL_GUILD); }
 	}
 }
 

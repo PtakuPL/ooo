@@ -559,17 +559,17 @@ void ProtocolGame::login(const std::string &name, uint32_t accountId, OperatingS
 		player->setID();
 
 		if (!IOLoginDataLoad::preLoadPlayer(player, name)) {
-			disconnectClient("Your character could not be loaded.");
+			disconnectClient(i18n::g_translator().get("cpp.protocol.char_could_not_be_loaded", (player && !player->getLocale().empty()) ? std::string(player->getLocale()) : "en"));
 			return;
 		}
 
 		if (IOBan::isPlayerNamelocked(player->getGUID())) {
-			disconnectClient("Your character has been namelocked.");
+			disconnectClient(i18n::g_translator().get("cpp.protocol.char_namelocked", (player && !player->getLocale().empty()) ? std::string(player->getLocale()) : "en"));
 			return;
 		}
 
 		if (g_game().getGameState() == GAME_STATE_CLOSING && !player->hasFlag(PlayerFlags_t::CanAlwaysLogin)) {
-			disconnectClient("The game is just going down.\nPlease try again later.");
+			disconnectClient(i18n::g_translator().get("cpp.protocol.game_going_down", (player && !player->getLocale().empty()) ? std::string(player->getLocale()) : "en"));
 			return;
 		}
 
@@ -578,20 +578,20 @@ void ProtocolGame::login(const std::string &name, uint32_t accountId, OperatingS
 			if (!maintainMessage.empty()) {
 				disconnectClient(maintainMessage);
 			} else {
-				disconnectClient("Server is currently closed.\nPlease try again later.");
+				disconnectClient(i18n::g_translator().get("cpp.protocol.server_closed", (player && !player->getLocale().empty()) ? std::string(player->getLocale()) : "en"));
 			}
 			return;
 		}
 
 		if (g_configManager().getBoolean(ONLY_PREMIUM_ACCOUNT) && !player->isPremium() && (player->getGroup()->id < GROUP_TYPE_GAMEMASTER || player->getAccountType() < ACCOUNT_TYPE_GAMEMASTER)) {
-			disconnectClient("Your premium time for this account is out.\n\nTo play please buy additional premium time from our website");
+			disconnectClient(i18n::g_translator().get("cpp.protocol.premium_expired", (player && !player->getLocale().empty()) ? std::string(player->getLocale()) : "en"));
 			return;
 		}
 
 		auto onlineCount = g_game().getPlayersByAccount(player->getAccount()).size();
 		auto maxOnline = g_configManager().getNumber(MAX_PLAYERS_PER_ACCOUNT);
 		if (player->getAccountType() < ACCOUNT_TYPE_GAMEMASTER && onlineCount >= maxOnline) {
-			disconnectClient(fmt::format("You may only login with {} character{}\nof your account at the same time.", maxOnline, maxOnline > 1 ? "s" : ""));
+			disconnectClient(i18n::g_translator().format("cpp.protocol.max_chars_online", (player && !player->getLocale().empty()) ? std::string(player->getLocale()) : "en", {std::to_string(maxOnline)}));
 			return;
 		}
 
@@ -603,12 +603,11 @@ void ProtocolGame::login(const std::string &name, uint32_t accountId, OperatingS
 				}
 
 				std::ostringstream ss;
+				const std::string loc((player && !player->getLocale().empty()) ? std::string(player->getLocale()) : "en");
 				if (banInfo.expiresAt > 0) {
-					ss << "Your account has been banned until " << formatDateShort(banInfo.expiresAt) << " by " << banInfo.bannedBy << ".\n\nReason specified:\n"
-					   << banInfo.reason;
+					ss << i18n::g_translator().format("cpp.protocol.account_banned_until", loc, {formatDateShort(banInfo.expiresAt), banInfo.bannedBy, banInfo.reason});
 				} else {
-					ss << "Your account has been permanently banned by " << banInfo.bannedBy << ".\n\nReason specified:\n"
-					   << banInfo.reason;
+					ss << i18n::g_translator().format("cpp.protocol.account_banned_permanent", loc, {banInfo.bannedBy, banInfo.reason});
 				}
 				disconnectClient(ss.str());
 				return;
@@ -621,8 +620,7 @@ void ProtocolGame::login(const std::string &name, uint32_t accountId, OperatingS
 			auto retryTime = static_cast<uint32_t>(WaitingList::getTime(currentSlot));
 			std::ostringstream ss;
 
-			ss << "Too many players online.\nYou are at place "
-			   << currentSlot << " on the waiting list.";
+			ss << i18n::g_translator().format("cpp.protocol.waiting_list", (player && !player->getLocale().empty()) ? std::string(player->getLocale()) : "en", {std::to_string(currentSlot)});
 
 			auto output = OutputMessagePool::getOutputMessage();
 			output->addByte(0x16);
@@ -634,7 +632,7 @@ void ProtocolGame::login(const std::string &name, uint32_t accountId, OperatingS
 		}
 
 		if (!IOLoginData::loadPlayerById(player, player->getGUID(), false)) {
-			disconnectClient("Your character could not be loaded, please contact an adminstrator.");
+			disconnectClient(i18n::g_translator().get("cpp.protocol.char_load_failed_contact_admin", (player && !player->getLocale().empty()) ? std::string(player->getLocale()) : "en"));
 			return;
 		}
 
@@ -652,13 +650,13 @@ void ProtocolGame::login(const std::string &name, uint32_t accountId, OperatingS
 				}
 			}
 			if (countOutsizePZ >= maxOutsizePZ) {
-				disconnectClient(fmt::format("You can only have {} character{} from your account outside of a protection zone.", maxOutsizePZ == 1 ? "one" : std::to_string(maxOutsizePZ), maxOutsizePZ > 1 ? "s" : ""));
+				disconnectClient(i18n::g_translator().format("cpp.protocol.max_chars_outside_pz", (player && !player->getLocale().empty()) ? std::string(player->getLocale()) : "en", {std::to_string(maxOutsizePZ)}));
 				return;
 			}
 		}
 
 		if (!g_game().placeCreature(player, player->getLoginPosition()) && !g_game().placeCreature(player, player->getTemplePosition(), false, true)) {
-			disconnectClient("Temple position is wrong. Please, contact the administrator.");
+			disconnectClient(i18n::g_translator().get("cpp.protocol.temple_position_wrong", (player && !player->getLocale().empty()) ? std::string(player->getLocale()) : "en"));
 			g_logger().warn("Player {} temple position is wrong", player->getName());
 			return;
 		}
@@ -670,7 +668,7 @@ void ProtocolGame::login(const std::string &name, uint32_t accountId, OperatingS
 	} else {
 		if (eventConnect != 0 || !g_configManager().getBoolean(REPLACE_KICK_ON_LOGIN)) {
 			// Already trying to connect
-			disconnectClient("You are already logged in.");
+			disconnectClient(i18n::g_translator().get("cpp.protocol.already_logged_in", (player && !player->getLocale().empty()) ? std::string(player->getLocale()) : "en"));
 			return;
 		}
 
@@ -695,7 +693,7 @@ void ProtocolGame::connect(const std::string &playerName, OperatingSystem_t oper
 
 	std::shared_ptr<Player> foundPlayer = g_game().getPlayerByName(playerName);
 	if (!foundPlayer) {
-		disconnectClient("You are already logged in.");
+		disconnectClient(i18n::g_translator().get("cpp.protocol.already_logged_in", (player && !player->getLocale().empty()) ? std::string(player->getLocale()) : "en"));
 		return;
 	}
 
@@ -826,14 +824,14 @@ void ProtocolGame::onRecvFirstMessage(NetworkMessage &msg) {
 	if (authType != "session") {
 		size_t pos = sessionKey.find('\n');
 		if (pos == std::string::npos) {
-			ss << "You must enter your " << (oldProtocol ? "username" : "email") << ".";
+			ss << i18n::g_translator().get(oldProtocol ? "cpp.protocol.enter_username" : "cpp.protocol.enter_email", "en");
 			disconnectClient(ss.str());
 			return;
 		}
 		accountDescriptor = sessionKey.substr(0, pos);
 		if (accountDescriptor.empty()) {
 			ss.str(std::string());
-			ss << "You must enter your " << (oldProtocol ? "username" : "email") << ".";
+			ss << i18n::g_translator().get(oldProtocol ? "cpp.protocol.enter_username" : "cpp.protocol.enter_email", "en");
 			disconnectClient(ss.str());
 			return;
 		}
@@ -852,13 +850,13 @@ void ProtocolGame::onRecvFirstMessage(NetworkMessage &msg) {
 	const auto &foundPlayer = !onlinePlayer ? g_game().getDeadPlayer(characterName) : onlinePlayer;
 	if (foundPlayer && foundPlayer->client) {
 		if (foundPlayer->isDead()) {
-			disconnectClient("You are already logged in.");
+			disconnectClient(i18n::g_translator().get("cpp.protocol.already_logged_in", "en"));
 			return;
 		}
 
-		auto message = fmt::format("You are already connected through another client. Please use only one client at a time!");
+		auto message = i18n::g_translator().get("cpp.protocol.already_connected_other_client", "en");
 		if (foundPlayer->getProtocolVersion() != getVersion() && foundPlayer->isOldProtocol() != oldProtocol) {
-			message = fmt::format("You are already logged in using protocol '{}'. Please log out from the other session to connect here.", foundPlayer->getProtocolVersion());
+			message = i18n::g_translator().format("cpp.protocol.already_logged_protocol", "en", {std::to_string(foundPlayer->getProtocolVersion())});
 		}
 
 		foundPlayer->client->disconnectClient(message);
@@ -879,22 +877,23 @@ void ProtocolGame::onRecvFirstMessage(NetworkMessage &msg) {
 
 	if (!oldProtocol && clientVersion != CLIENT_VERSION) {
 		ss.str(std::string());
-		ss << "Only clients with protocol " << CLIENT_VERSION_UPPER << "." << CLIENT_VERSION_LOWER;
+		{ std::string ver = std::to_string(CLIENT_VERSION_UPPER) + "." + std::to_string(CLIENT_VERSION_LOWER);
 		if (g_configManager().getBoolean(OLD_PROTOCOL)) {
-			ss << " or 11.00";
-		}
-		ss << " allowed!";
+			ss << i18n::g_translator().format("cpp.protocol.only_clients_or_old", "en", {ver});
+		} else {
+			ss << i18n::g_translator().format("cpp.protocol.only_clients", "en", {ver});
+		} }
 		disconnectClient(ss.str());
 		return;
 	}
 
 	if (g_game().getGameState() == GAME_STATE_STARTUP) {
-		disconnectClient("Gameworld is starting up. Please wait.");
+		disconnectClient(i18n::g_translator().get("cpp.protocol.gameworld_starting", "en"));
 		return;
 	}
 
 	if (g_game().getGameState() == GAME_STATE_MAINTAIN) {
-		disconnectClient("Gameworld is under maintenance. Please re-connect in a while.");
+		disconnectClient(i18n::g_translator().get("cpp.protocol.gameworld_maintenance", "en"));
 		return;
 	}
 
@@ -905,8 +904,7 @@ void ProtocolGame::onRecvFirstMessage(NetworkMessage &msg) {
 		}
 
 		ss.str(std::string());
-		ss << "Your IP has been banned until " << formatDateShort(banInfo.expiresAt) << " by " << banInfo.bannedBy << ".\n\nReason specified:\n"
-		   << banInfo.reason;
+		ss << i18n::g_translator().format("cpp.protocol.ip_banned_until", "en", {formatDateShort(banInfo.expiresAt), banInfo.bannedBy, banInfo.reason});
 		disconnectClient(ss.str());
 		return;
 	}
@@ -915,9 +913,9 @@ void ProtocolGame::onRecvFirstMessage(NetworkMessage &msg) {
 	if (!IOLoginData::gameWorldAuthentication(accountDescriptor, password, characterName, accountId, oldProtocol, getIP())) {
 		ss.str(std::string());
 		if (authType == "session") {
-			ss << "Your session has expired. Please log in again.";
+			ss << i18n::g_translator().get("cpp.protocol.session_expired", "en");
 		} else { // authType == "password"
-			ss << "Your " << (oldProtocol ? "username" : "email") << " or password is not correct.";
+			ss << i18n::g_translator().get(oldProtocol ? "cpp.protocol.wrong_username_password" : "cpp.protocol.wrong_email_password", "en");
 		}
 
 		auto output = OutputMessagePool::getOutputMessage();

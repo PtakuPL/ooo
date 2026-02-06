@@ -1133,7 +1133,7 @@ void Player::addSkillAdvance(skills_t skill, uint64_t count) {
 		skills[skill].percent = 0;
 
 		std::ostringstream ss;
-		ss << "You advanced to " << getSkillName(skill) << " level " << skills[skill].level << '.';
+		{ const std::string loc(getLocale().empty() ? "en" : std::string(getLocale())); auto &tr = i18n::g_translator(); ss << tr.format("cpp.player.skill_advance", loc, {getSkillName(skill, loc), std::to_string(skills[skill].level)}); }
 		sendTextMessage(MESSAGE_EVENT_ADVANCE, ss.str());
 		if (skill == SKILL_LEVEL) {
 			sendTakeScreenshot(SCREENSHOT_TYPE_LEVELUP);
@@ -2589,7 +2589,7 @@ void Player::onApplyImbuement(const Imbuement* imbuement, const std::shared_ptr<
 	ImbuementInfo imbuementInfo;
 	if (item->getImbuementInfo(slot, &imbuementInfo)) {
 		g_logger().error("[Player::onApplyImbuement] - An error occurred while player with name {} try to apply imbuement, item already contains imbuement", this->getName());
-		this->sendImbuementResult("An error ocurred, please reopen imbuement window.");
+		{ const std::string loc(getLocale().empty() ? "en" : std::string(getLocale())); this->sendImbuementResult(i18n::g_translator().get("cpp.player.imbuement_error", loc)); }
 		return;
 	}
 
@@ -2602,14 +2602,14 @@ void Player::onApplyImbuement(const Imbuement* imbuement, const std::shared_ptr<
 		if (item->getImbuementInfo(i, &existingImbuement) && existingImbuement.imbuement) {
 			if (existingImbuement.imbuement->getName() == imbuement->getName()) {
 				g_logger().error("[Player::onApplyImbuement] - Player {} attempted to apply the same imbuement in multiple slots", this->getName());
-				this->sendImbuementResult("You cannot apply the same imbuement in multiple slots.");
+				{ const std::string loc(getLocale().empty() ? "en" : std::string(getLocale())); this->sendImbuementResult(i18n::g_translator().get("cpp.player.imbuement_duplicate_slot", loc)); }
 				return;
 			}
 		}
 
 		if (imbuementInfo.imbuement == imbuement) {
 			g_logger().error("[Player::onApplyImbuement] - Duplicate imbuement application detected for '{}'", imbuement->getName());
-			sendImbuementResult("This imbuement is already applied to this item.");
+			{ const std::string loc(getLocale().empty() ? "en" : std::string(getLocale())); sendImbuementResult(i18n::g_translator().get("cpp.player.imbuement_already_applied", loc)); }
 			return;
 		}
 	}
@@ -2618,7 +2618,7 @@ void Player::onApplyImbuement(const Imbuement* imbuement, const std::shared_ptr<
 	for (auto &[key, value] : items) {
 		const ItemType &itemType = Item::items[key];
 		if (getItemTypeCount(key) + this->getStashItemCount(itemType.id) < value) {
-			this->sendImbuementResult("You don't have all necessary items.");
+			{ const std::string loc(getLocale().empty() ? "en" : std::string(getLocale())); this->sendImbuementResult(i18n::g_translator().get("cpp.player.imbuement_missing_items", loc)); }
 			return;
 		}
 	}
@@ -2632,7 +2632,8 @@ void Player::onApplyImbuement(const Imbuement* imbuement, const std::shared_ptr<
 	price += protectionCharm ? baseImbuement->protectionPrice : 0;
 
 	if (!g_game().removeMoney(thisPlayer, price, 0, true)) {
-		const std::string message = fmt::format("You don't have {} gold coins.", price);
+		const std::string loc(getLocale().empty() ? "en" : std::string(getLocale()));
+		const std::string message = i18n::g_translator().format("cpp.player.not_enough_gold", loc, {std::to_string(price)});
 
 		g_logger().error("[Player::onApplyImbuement] - An error occurred while player with name {} try to apply imbuement, player do not have money", this->getName());
 		sendImbuementResult(message);
@@ -2657,14 +2658,14 @@ void Player::onApplyImbuement(const Imbuement* imbuement, const std::shared_ptr<
 
 		const ItemType &itemType = Item::items[key];
 
-		withdrawItemMessage << "Using " << mathItemCount << "x " << itemType.name << " from your stash. ";
+		{ const std::string loc(getLocale().empty() ? "en" : std::string(getLocale())); withdrawItemMessage << i18n::g_translator().format("cpp.player.using_from_stash", loc, {std::to_string(mathItemCount), itemType.name}); }
 		withdrawItem(itemType.id, mathItemCount);
 		sendTextMessage(MESSAGE_STATUS, withdrawItemMessage.str());
 	}
 
 	if (!protectionCharm && uniform_random(1, 100) > baseImbuement->percent) {
 		openImbuementWindow(item);
-		sendImbuementResult("Oh no!\n\nThe imbuement has failed. You have lost the astral sources and gold you needed for the imbuement.\n\nNext time use a protection charm to better your chances.");
+		{ const std::string loc(getLocale().empty() ? "en" : std::string(getLocale())); sendImbuementResult(i18n::g_translator().get("cpp.player.imbuement_failed", loc)); }
 		openImbuementWindow(item);
 		return;
 	}
@@ -2693,7 +2694,7 @@ void Player::onClearImbuement(const std::shared_ptr<Item> &item, uint8_t slot) {
 	ImbuementInfo imbuementInfo;
 	if (!item->getImbuementInfo(slot, &imbuementInfo)) {
 		g_logger().error("[Player::onClearImbuement] - An error occurred while player with name {} try to apply imbuement, item not contains imbuement", this->getName());
-		this->sendImbuementResult("An error ocurred, please reopen imbuement window.");
+		{ const std::string loc(getLocale().empty() ? "en" : std::string(getLocale())); this->sendImbuementResult(i18n::g_translator().get("cpp.player.imbuement_error", loc)); }
 		return;
 	}
 
@@ -2703,7 +2704,8 @@ void Player::onClearImbuement(const std::shared_ptr<Item> &item, uint8_t slot) {
 	}
 
 	if (!g_game().removeMoney(static_self_cast<Player>(), baseImbuement->removeCost, 0, true)) {
-		const std::string message = fmt::format("You don't have {} gold coins.", baseImbuement->removeCost);
+		const std::string loc(getLocale().empty() ? "en" : std::string(getLocale()));
+		const std::string message = i18n::g_translator().format("cpp.player.not_enough_gold", loc, {std::to_string(baseImbuement->removeCost)});
 
 		g_logger().error("[Player::onClearImbuement] - An error occurred while player with name {} try to apply imbuement, player do not have money", this->getName());
 		this->sendImbuementResult(message);
@@ -3342,7 +3344,7 @@ void Player::removeMessageBuffer() {
 			addCondition(condition);
 
 			std::ostringstream ss;
-			ss << "You are muted for " << muteTime << " seconds.";
+			{ const std::string loc(getLocale().empty() ? "en" : std::string(getLocale())); auto &tr = i18n::g_translator(); ss << tr.format("cpp.player.muted_for", loc, {std::to_string(muteTime)}); }
 			sendTextMessage(MESSAGE_FAILURE, ss.str());
 		}
 	}
@@ -3388,7 +3390,7 @@ void Player::addManaSpent(uint64_t amount) {
 		manaSpent = 0;
 
 		std::ostringstream ss;
-		ss << "You advanced to magic level " << magLevel << '.';
+		{ const std::string loc(getLocale().empty() ? "en" : std::string(getLocale())); auto &tr = i18n::g_translator(); ss << tr.format("cpp.player.magic_level_advance", loc, {std::to_string(magLevel)}); }
 		sendTextMessage(MESSAGE_EVENT_ADVANCE, ss.str());
 		sendTakeScreenshot(SCREENSHOT_TYPE_SKILLUP);
 
@@ -3468,6 +3470,8 @@ void Player::addExperience(const std::shared_ptr<Creature> &target, uint64_t exp
 	experience += exp;
 
 	if (sendText) {
+		const std::string loc(getLocale().empty() ? "en" : std::string(getLocale()));
+		auto &tr = i18n::g_translator();
 		std::string expString = fmt::format("{} experience point{}.", exp, (exp != 1 ? "s" : ""));
 		if (isVip()) {
 			uint8_t expPercent = g_configManager().getNumber(VIP_BONUS_EXP);
@@ -3480,7 +3484,7 @@ void Player::addExperience(const std::shared_ptr<Creature> &target, uint64_t exp
 			expString = fmt::format("{} (animus mastery bonus {:.1f}%)", expString, (animusMasteryMultiplier - 1) * 100);
 		}
 
-		TextMessage message(MESSAGE_EXPERIENCE, "You gained " + expString + (handleHazardExperience ? " (Hazard)" : ""));
+		TextMessage message(MESSAGE_EXPERIENCE, tr.format("cpp.player.exp_gained", loc, {expString}) + (handleHazardExperience ? " (Hazard)" : ""));
 		message.position = position;
 		message.primary.value = exp;
 		message.primary.color = TEXTCOLOR_WHITE_EXP;
@@ -3490,7 +3494,7 @@ void Player::addExperience(const std::shared_ptr<Creature> &target, uint64_t exp
 		spectators.erase(static_self_cast<Player>());
 		if (!spectators.empty()) {
 			message.type = MESSAGE_EXPERIENCE_OTHERS;
-			message.text = getName() + " gained " + expString;
+			message.text = tr.format("cpp.player.exp_gained_other", loc, {getName(), expString});
 			for (const auto &spectator : spectators) {
 				spectator->getPlayer()->sendTextMessage(message);
 			}
@@ -3541,7 +3545,7 @@ void Player::addExperience(const std::shared_ptr<Creature> &target, uint64_t exp
 		g_creatureEvents().playerAdvance(static_self_cast<Player>(), SKILL_LEVEL, prevLevel, level);
 
 		std::ostringstream ss;
-		ss << "You advanced from Level " << prevLevel << " to Level " << level << '.';
+		{ const std::string loc2(getLocale().empty() ? "en" : std::string(getLocale())); auto &tr2 = i18n::g_translator(); ss << tr2.format("cpp.player.level_advance", loc2, {std::to_string(prevLevel), std::to_string(level)}); }
 		sendTextMessage(MESSAGE_EVENT_ADVANCE, ss.str());
 		sendTakeScreenshot(SCREENSHOT_TYPE_LEVELUP);
 	}
@@ -3572,7 +3576,9 @@ void Player::removeExperience(uint64_t exp, bool sendText /* = false*/) {
 	if (sendText) {
 		lostExp -= experience;
 
-		const std::string expString = fmt::format("You lost {} experience point{}.", lostExp, (lostExp != 1 ? "s" : ""));
+		const std::string loc(getLocale().empty() ? "en" : std::string(getLocale()));
+		auto &tr = i18n::g_translator();
+		const std::string expString = tr.format("cpp.player.exp_lost", loc, {std::to_string(lostExp), (lostExp != 1 ? "s" : "")});
 
 		TextMessage message(MESSAGE_EXPERIENCE, expString);
 		message.position = position;
@@ -3584,7 +3590,7 @@ void Player::removeExperience(uint64_t exp, bool sendText /* = false*/) {
 		spectators.erase(static_self_cast<Player>());
 		if (!spectators.empty()) {
 			message.type = MESSAGE_EXPERIENCE_OTHERS;
-			message.text = getName() + " lost " + expString;
+			message.text = tr.format("cpp.player.exp_lost_other", loc, {getName(), expString});
 			for (const auto &spectator : spectators) {
 				spectator->getPlayer()->sendTextMessage(message);
 			}
@@ -3626,7 +3632,7 @@ void Player::removeExperience(uint64_t exp, bool sendText /* = false*/) {
 		}
 
 		std::ostringstream ss;
-		ss << "You were downgraded from Level " << oldLevel << " to Level " << level << '.';
+		{ const std::string loc3(getLocale().empty() ? "en" : std::string(getLocale())); auto &tr3 = i18n::g_translator(); ss << tr3.format("cpp.player.level_downgrade", loc3, {std::to_string(oldLevel), std::to_string(level)}); }
 		sendTextMessage(MESSAGE_EVENT_ADVANCE, ss.str());
 	}
 
@@ -3930,8 +3936,10 @@ void Player::death(const std::shared_ptr<Creature> &lastHitCreature) {
 		g_callbacks().executeCallback(EventCallback_t::playerOnLoseExperience, &EventCallback::playerOnLoseExperience, getPlayer(), expLoss);
 
 		sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "server.player.msg_4");
+		const std::string loc(getLocale().empty() ? "en" : std::string(getLocale()));
+		auto &tr = i18n::g_translator();
 		std::ostringstream lostExp;
-		lostExp << "You lost " << expLoss << " experience.";
+		lostExp << tr.format("cpp.player.death_exp_lost", loc, {std::to_string(expLoss)});
 
 		// Skill loss
 		for (uint8_t i = SKILL_FIRST; i <= SKILL_LAST; ++i) { // For each skill
@@ -3979,7 +3987,7 @@ void Player::death(const std::shared_ptr<Creature> &lastHitCreature) {
 
 			if (oldLevel != level) {
 				std::ostringstream ss;
-				ss << "You were downgraded from Level " << oldLevel << " to Level " << level << '.';
+				ss << tr.format("cpp.player.level_downgrade", loc, {std::to_string(oldLevel), std::to_string(level)});
 				sendTextMessage(MESSAGE_EVENT_ADVANCE, ss.str());
 			}
 
@@ -3992,14 +4000,11 @@ void Player::death(const std::shared_ptr<Creature> &lastHitCreature) {
 			}
 		}
 
-		std::ostringstream deathType;
-		deathType << "You died during ";
 		if (pvpDeath) {
-			deathType << "PvP.";
+			sendTextMessage(MESSAGE_EVENT_ADVANCE, tr.get("cpp.player.death_pvp", loc));
 		} else {
-			deathType << "PvE.";
+			sendTextMessage(MESSAGE_EVENT_ADVANCE, tr.get("cpp.player.death_pve", loc));
 		}
-		sendTextMessage(MESSAGE_EVENT_ADVANCE, deathType.str());
 
 		auto adventurerBlessingLevel = g_configManager().getNumber(ADVENTURERSBLESSING_LEVEL);
 		auto willNotLoseBless = getLevel() < adventurerBlessingLevel && getVocationId() > VOCATION_NONE;
@@ -4007,10 +4012,10 @@ void Player::death(const std::shared_ptr<Creature> &lastHitCreature) {
 		std::string bless = getBlessingsName();
 		std::ostringstream blessOutput;
 		if (willNotLoseBless) {
-			blessOutput << fmt::format("You still have adventurer's blessings for being level lower than {}!", adventurerBlessingLevel);
+			blessOutput << tr.format("cpp.player.adventurer_blessings_kept", loc, {std::to_string(adventurerBlessingLevel)});
 		} else {
-			bless.empty() ? blessOutput << "You weren't protected with any blessings."
-						  : blessOutput << "You were blessed with " << bless;
+			bless.empty() ? blessOutput << tr.get("cpp.player.no_blessings", loc)
+						  : blessOutput << tr.format("cpp.player.blessed_with", loc, {bless});
 
 			const auto playerSkull = getSkull();
 			bool hasSkull = (playerSkull == Skulls_t::SKULL_RED || playerSkull == Skulls_t::SKULL_BLACK);
@@ -4176,7 +4181,9 @@ std::shared_ptr<Item> Player::getCorpse(const std::shared_ptr<Creature> &lastHit
 	if (corpse && corpse->getContainer()) {
 		std::ostringstream ss;
 
-		ss << "You recognize " << getNameDescription() << ". ";
+		const std::string loc(getLocale().empty() ? "en" : std::string(getLocale()));
+		auto &tr = i18n::g_translator();
+		ss << tr.format("cpp.player.corpse_recognize", loc, {getNameDescription()});
 
 		std::string responsibleName;
 		std::string secondaryResponsibleName;
@@ -4217,22 +4224,22 @@ std::shared_ptr<Item> Player::getCorpse(const std::shared_ptr<Creature> &lastHit
 		}
 
 		if (!responsibleName.empty()) {
-			ss << getSubjectPronoun() << " " << getSubjectVerb(true) << " killed by " << responsibleName;
+			ss << tr.format("cpp.player.corpse_killed_by", loc, {getSubjectPronoun(), getSubjectVerb(true), responsibleName});
 
 			if (!secondaryResponsibleName.empty()) {
-				ss << " and " << secondaryResponsibleName;
+				ss << tr.format("cpp.player.corpse_and", loc, {secondaryResponsibleName});
 			} else if (hasOthers) {
-				ss << " and others";
+				ss << tr.get("cpp.player.corpse_and_others", loc);
 			}
 			ss << '.';
 		} else if (lastHitCreature) {
-			ss << getSubjectPronoun() << " " << getSubjectVerb(true) << " killed by " << lastHitCreature->getNameDescription();
+			ss << tr.format("cpp.player.corpse_killed_by", loc, {getSubjectPronoun(), getSubjectVerb(true), lastHitCreature->getNameDescription()});
 			if (hasOthers) {
-				ss << " and others";
+				ss << tr.get("cpp.player.corpse_and_others", loc);
 			}
 			ss << '.';
 		} else {
-			ss << "No attackers were identified.";
+			ss << tr.get("cpp.player.corpse_no_attackers", loc);
 		}
 
 		corpse->setAttribute(ItemAttribute_t::DESCRIPTION, ss.str());
@@ -5013,9 +5020,10 @@ void Player::stashContainer(const StashContainerList &itemDict) {
 	sendInventoryIds();
 
 	std::ostringstream retString;
-	retString << "Stowed " << totalStowed << " object" << (totalStowed > 1 ? "s." : ".");
+	{ const std::string loc(getLocale().empty() ? "en" : std::string(getLocale())); auto &tr = i18n::g_translator();
+	retString << tr.format("cpp.player.stowed_objects", loc, {std::to_string(totalStowed), (totalStowed > 1 ? "s" : "")});
 	if (moved) {
-		retString << " Moved " << movedItems << " object" << (movedItems > 1 ? "s." : ".");
+		retString << tr.format("cpp.player.moved_objects", loc, {std::to_string(movedItems), (movedItems > 1 ? "s" : "")});
 		movedItems = 0;
 	}
 	sendTextMessage(MESSAGE_STATUS, retString.str());
@@ -6245,7 +6253,8 @@ void Player::addHuntingTaskKill(const std::shared_ptr<MonsterType> &mType) {
 		taskSlot->currentKills += 1;
 		if ((taskSlot->upgrade && taskSlot->currentKills >= option->secondKills) || (!taskSlot->upgrade && taskSlot->currentKills >= option->firstKills)) {
 			taskSlot->state = PreyTaskDataState_Completed;
-			const std::string message = "You succesfully finished your hunting task. Your reward is ready to be claimed!";
+			const std::string loc(getLocale().empty() ? "en" : std::string(getLocale()));
+			const std::string message = i18n::g_translator().get("cpp.player.hunting_task_complete", loc);
 			sendTextMessage(MESSAGE_STATUS, message);
 		}
 		reloadTaskSlot(taskSlot->id);
@@ -7632,7 +7641,7 @@ bool Player::addOfflineTrainingTries(skills_t skill, uint64_t tries) {
 
 		if (magLevel != currMagLevel) {
 			std::ostringstream ss;
-			ss << "You advanced to magic level " << magLevel << '.';
+			{ const std::string loc(getLocale().empty() ? "en" : std::string(getLocale())); auto &tr = i18n::g_translator(); ss << tr.format("cpp.player.magic_level_advance", loc, {std::to_string(magLevel)}); }
 			sendTextMessage(MESSAGE_EVENT_ADVANCE, ss.str());
 			sendTakeScreenshot(SCREENSHOT_TYPE_SKILLUP);
 		}
@@ -7689,7 +7698,7 @@ bool Player::addOfflineTrainingTries(skills_t skill, uint64_t tries) {
 
 		if (currSkillLevel != skills[skill].level) {
 			std::ostringstream ss;
-			ss << "You advanced to " << getSkillName(skill) << " level " << skills[skill].level << '.';
+			{ const std::string loc(getLocale().empty() ? "en" : std::string(getLocale())); auto &tr = i18n::g_translator(); ss << tr.format("cpp.player.skill_advance", loc, {getSkillName(skill, loc), std::to_string(skills[skill].level)}); }
 			sendTextMessage(MESSAGE_EVENT_ADVANCE, ss.str());
 			if (skill == SKILL_LEVEL) {
 				sendTakeScreenshot(SCREENSHOT_TYPE_LEVELUP);
@@ -7720,16 +7729,17 @@ bool Player::addOfflineTrainingTries(skills_t skill, uint64_t tries) {
 		sendStats();
 	}
 
-	std::string message = fmt::format(
-		"Your {} skill changed from level {} (with {:.2f}% progress towards level {}) to level {} (with {:.2f}% progress towards level {})",
-		ucwords(getSkillName(skill)),
-		oldSkillValue,
-		oldPercentToNextLevel,
-		oldSkillValue + 1,
-		newSkillValue,
-		newPercentToNextLevel,
-		newSkillValue + 1
-	);
+	const std::string loc4(getLocale().empty() ? "en" : std::string(getLocale()));
+	auto &tr4 = i18n::g_translator();
+	std::string message = tr4.format("cpp.player.skill_changed_offline", loc4, {
+		ucwords(getSkillName(skill, loc4)),
+		std::to_string(oldSkillValue),
+		fmt::format("{:.2f}", oldPercentToNextLevel),
+		std::to_string(oldSkillValue + 1),
+		std::to_string(newSkillValue),
+		fmt::format("{:.2f}", newPercentToNextLevel),
+		std::to_string(newSkillValue + 1)
+	});
 
 	sendTextMessage(MESSAGE_EVENT_ADVANCE, message);
 	return sendUpdate;
@@ -8036,7 +8046,7 @@ void Player::onThink(uint32_t interval) {
 			removePlayer(true);
 		} else if (client && idleTime == 60000 * kickAfterMinutes) {
 			std::ostringstream ss;
-			ss << "There was no variation in your behaviour for " << kickAfterMinutes << " minutes. You will be disconnected in one minute if there is no change in your actions until then.";
+			{ const std::string loc(getLocale().empty() ? "en" : std::string(getLocale())); auto &tr = i18n::g_translator(); ss << tr.format("cpp.player.idle_kick_warning", loc, {std::to_string(kickAfterMinutes)}); }
 			client->sendTextMessage(TextMessage(MESSAGE_ADMINISTRATOR, ss.str()));
 		}
 	}
@@ -10387,8 +10397,10 @@ void Player::setForgeHistory(const ForgeHistory &history) {
 }
 
 void Player::registerForgeHistoryDescription(ForgeHistory history) {
-	std::string successfulString = history.success ? "Successful" : "Unsuccessful";
-	std::string historyTierString = history.tier > 0 ? "tier - 1" : "consumed";
+	const std::string loc(getLocale().empty() ? "en" : std::string(getLocale()));
+	auto &tr = i18n::g_translator();
+	std::string successfulString = history.success ? tr.get("cpp.forge.successful", loc) : tr.get("cpp.forge.unsuccessful", loc);
+	std::string historyTierString = history.tier > 0 ? tr.get("cpp.forge.tier_minus_one", loc) : tr.get("cpp.forge.consumed", loc);
 	std::string price = history.bonus != 3 ? formatPrice(std::to_string(history.cost), true) : "0";
 	std::stringstream detailsResponse;
 	auto itemId = Item::items.getItemIdByName(history.firstItemName);
@@ -10523,13 +10535,13 @@ void Player::registerForgeHistoryDescription(ForgeHistory history) {
 			price
 		);
 	} else if (history.actionType == ForgeAction_t::DUSTTOSLIVERS) {
-		detailsResponse << fmt::format("Converted {:d} dust to {:d} slivers.", history.cost, history.gained);
+		detailsResponse << tr.format("cpp.forge.dust_to_slivers", loc, {std::to_string(history.cost), std::to_string(history.gained)});
 	} else if (history.actionType == ForgeAction_t::SLIVERSTOCORES) {
 		history.actionType = ForgeAction_t::DUSTTOSLIVERS;
-		detailsResponse << fmt::format("Converted {:d} slivers to {:d} exalted core.", history.cost, history.gained);
+		detailsResponse << tr.format("cpp.forge.slivers_to_cores", loc, {std::to_string(history.cost), std::to_string(history.gained)});
 	} else if (history.actionType == ForgeAction_t::INCREASELIMIT) {
 		history.actionType = ForgeAction_t::DUSTTOSLIVERS;
-		detailsResponse << fmt::format("Spent {:d} dust to increase the dust limit to {:d}.", history.cost, history.gained + 1);
+		detailsResponse << tr.format("cpp.forge.increase_dust_limit", loc, {std::to_string(history.cost), std::to_string(history.gained + 1)});
 	} else {
 		detailsResponse << "(unknown)";
 	}
@@ -11443,10 +11455,10 @@ void Player::checkAndShowBlessingMessage() {
 		}
 		sendBlessStatus();
 		if (addedBless) {
-			blessOutput << fmt::format("You have received adventurer's blessings for being level lower than {}!\nYou are still blessed with {}", adventurerBlessingLevel, bless);
+			{ const std::string loc(getLocale().empty() ? "en" : std::string(getLocale())); auto &tr = i18n::g_translator(); blessOutput << tr.format("cpp.player.adventurer_blessings_received", loc, {std::to_string(adventurerBlessingLevel), bless}); }
 		}
 	} else {
-		bless.empty() ? blessOutput << "You lost all your blessings." : blessOutput << "You are still blessed with " << bless;
+		{ const std::string loc(getLocale().empty() ? "en" : std::string(getLocale())); auto &tr = i18n::g_translator(); bless.empty() ? blessOutput << tr.get("cpp.player.lost_all_blessings", loc) : blessOutput << tr.format("cpp.player.still_blessed_with", loc, {bless}); }
 	}
 
 	if (!blessOutput.str().empty()) {

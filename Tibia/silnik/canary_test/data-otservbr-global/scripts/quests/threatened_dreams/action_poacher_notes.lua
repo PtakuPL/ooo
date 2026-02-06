@@ -7,7 +7,7 @@ function poacherNotes.onUse(player, item, fromPosition, target, toPosition, isHo
 		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.action_poacher_notes.msg_1")
 		player:setStorageValue(ThreatenedDreams.Mission01.PoacherNotes, 1)
 	else
-		player:sendCancelMessage("It is empty.")
+		player:sendLocalizedCancelMessage("quests.threatened_dreams.it_is_empty")
 	end
 
 	return true

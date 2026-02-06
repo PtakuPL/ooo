@@ -18,7 +18,7 @@ function spikeTasksFertilizer.onUse(player, item, fromPosition, target, toPositi
 
 	local mushPos = Position(toPosition.x, toPosition.y, toPosition.z)
 	if table.contains(FERTILIZED_MUSHROOMS[player:getGuid()], mushPos) then
-		return player:sendCancelMessage("You have already fertilised this mushroom.")
+		return player:sendLocalizedCancelMessage("quests.spike_tasks.you_have_already_fertilised_this_mushroom")
 	end
 
 	table.insert(FERTILIZED_MUSHROOMS[player:getGuid()], mushPos)

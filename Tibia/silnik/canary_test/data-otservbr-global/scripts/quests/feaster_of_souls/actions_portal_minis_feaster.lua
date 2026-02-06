@@ -75,19 +75,19 @@ function teleportBoss.onStepIn(creature, item, position, fromPosition)
 			if spec:getPlayers() > 0 then
 				creature:teleportTo(fromPosition, true)
 				creature:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-				creature:say("There's someone fighting with " .. value.bossName .. ".", TALKTYPE_MONSTER_SAY)
+				creature:sayLocalized("quests.common.someone_fighting", TALKTYPE_MONSTER_SAY, false, nil, nil, {value.bossName})
 				return true
 			end
 			if creature:getLevel() < value.requiredLevel then
 				creature:teleportTo(fromPosition, true)
 				creature:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-				creature:sendTextMessage(MESSAGE_EVENT_ADVANCE, "All the players need to be level " .. value.requiredLevel .. " or higher.")
+				creature:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.common.all_players_level", {tostring(value.requiredLevel)})
 				return true
 			end
 			if not creature:canFightBoss(value.bossName) then
 				creature:teleportTo(fromPosition, true)
 				creature:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-				creature:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have to wait " .. value.timeToFightAgain .. " hours to face " .. value.bossName .. " again!")
+				creature:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.common.wait_to_fight", {tostring(value.timeToFightAgain), value.bossName})
 				return true
 			end
 			spec:removeMonsters()

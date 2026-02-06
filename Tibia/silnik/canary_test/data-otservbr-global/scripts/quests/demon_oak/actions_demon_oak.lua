@@ -119,7 +119,7 @@ function demonOak.onUse(player, item, fromPosition, target, toPosition, isHotkey
 		end
 	end
 
-	player:say(isLastCut and "HOW IS THAT POSSIBLE?!? MY MASTER WILL CRUSH YOU!! AHRRGGG!" or config.sounds[math.random(#config.sounds)], TALKTYPE_MONSTER_YELL, false, player, DEMON_OAK_POSITION)
+	player:say(isLastCut and Translator.getTranslation(player, "quests.demon_oak.master_crush") or config.sounds[math.random(#config.sounds)], TALKTYPE_MONSTER_YELL, false, player, DEMON_OAK_POSITION)
 	toPosition:sendMagicEffect(CONST_ME_DRAWBLOOD)
 	player:setStorageValue(cStorage, progress + 1)
 	player:sayLocalized("scripts.actions_demon_oak.say_1", TALKTYPE_MONSTER_YELL, false, player, toPosition)

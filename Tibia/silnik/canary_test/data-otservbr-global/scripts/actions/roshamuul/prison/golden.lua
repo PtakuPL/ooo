@@ -46,7 +46,7 @@ function golden.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 			local creature = Tile(playerPositions[i].fromPos):getTopCreature()
 			if creature and creature:isPlayer() then
 				if creature:getStorageValue(setting.storage) >= os.time() then
-					creature:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have faced this boss in the last " .. setting.timeToFightAgain .. " hours.")
+					creature:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.roshamuul.faced_boss_hours", {tostring(setting.timeToFightAgain)})
 					return true
 				end
 				if creature:getStorageValue(setting.storage) < os.time() then

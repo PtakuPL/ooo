@@ -178,7 +178,7 @@ function skinning.onUse(player, item, fromPosition, target, toPosition, isHotkey
 
 	if target:getId() == 12816 then
 		if player:getStorageValue(Storage.Quest.U8_2.TheMutatedPumpkin.Skinned) > os.time() then
-			player:sendCancelMessage("You already used your knife on the corpse.")
+			player:sendLocalizedCancelMessage("quests.actions.you_already_used_your_knife_on")
 			return true
 		end
 

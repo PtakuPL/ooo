@@ -41,7 +41,7 @@ function bossTimer.onStepIn(creature, item, position, fromPosition)
 	for b = 1, #setting do
 		if player:getPosition() == Position(setting[b].tpPos) then
 			if not player:canFightBoss(setting[b].boss) then
-				player:sendCancelMessage("You need to wait for 20 hours to face this boss again.")
+				player:sendLocalizedCancelMessage("quests.cults_of_tibia.you_need_to_wait_for_20")
 				player:teleportTo(fromPosition)
 				return false
 			end

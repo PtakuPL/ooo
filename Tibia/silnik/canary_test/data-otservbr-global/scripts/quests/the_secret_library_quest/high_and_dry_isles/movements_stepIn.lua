@@ -84,11 +84,11 @@ function movements_isle_stepIn.onStepIn(creature, item, position, fromPosition)
 					end
 				end, 10 * 1000 * 60, player:getId())
 			else
-				player:sendCancelMessage("You are still exhausted from your last battle.")
+				player:sendLocalizedCancelMessage("quests.the_secret_library_quest.you_are_still_exhausted_from_your")
 				player:teleportTo(fromPosition, true)
 			end
 		else
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You must wait. Someone is challenging " .. raxias.bossName .. " now.")
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.the_secret_library_quest.must_wait_boss", {raxias.bossName})
 			player:teleportTo(fromPosition, true)
 		end
 	end

@@ -9,7 +9,7 @@ function templeScroll.onUse(player, item, fromPosition, target, toPosition, isHo
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 		item:remove()
 	else
-		player:sendCancelMessage("You can't use this when you're in a fight.")
+		player:sendLocalizedCancelMessage("quests.actions.you_cant_use_this_when_youre")
 		fromPosition:sendMagicEffect(CONST_ME_POFF)
 	end
 	return true

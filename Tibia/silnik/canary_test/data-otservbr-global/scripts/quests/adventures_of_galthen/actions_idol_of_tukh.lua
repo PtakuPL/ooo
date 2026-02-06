@@ -20,7 +20,7 @@ function idol.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 		player:getPosition():sendMagicEffect(CONST_ME_MAGIC_GREEN)
 		item:remove(1)
 	else
-		player:sendCancelMessage("You have already obtained this outfit!")
+		player:sendLocalizedCancelMessage("quests.adventures_of_galthen.you_have_already_obtained_this_outfit")
 	end
 	return true
 end

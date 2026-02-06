@@ -8,7 +8,7 @@ function sandEntrance.onStepIn(creature, item, position, fromPosition)
 
 	if player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.Life.Mission) < 1 and player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.Mission) < 1 then
 		player:teleportTo(fromPosition, true)
-		player:sendCancelMessage("You can't go there yet.")
+		player:sendLocalizedCancelMessage("quests.cults_of_tibia.you_cant_go_there_yet")
 	end
 	return true
 end

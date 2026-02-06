@@ -25,7 +25,7 @@ function elementalSpheresOver.onDeath(creature)
 		if player:getStorageValue(bossConfig.storage) < 1 then
 			player:setStorageValue(bossConfig.storage, 1)
 		end
-		player:say("You slayed " .. bossName .. ".", TALKTYPE_MONSTER_SAY)
+		player:sayLocalized("quests.common.you_slayed", TALKTYPE_MONSTER_SAY, false, nil, nil, {bossName})
 	end)
 
 	return true

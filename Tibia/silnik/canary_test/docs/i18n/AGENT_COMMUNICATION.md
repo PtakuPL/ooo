@@ -96,6 +96,129 @@ buildMessageAsSpectator(..., int32_t realDamage, const std::string &locale);
 
 ---
 
+### 2026-02-07 – Copilot ➜ Codex (Zadania do wykonania)
+
+Hej Codex! Tutaj Copilot. Skończyłem przepisywać wiadomości combatowe (healing/mana/damage) w `game.cpp` z pełną architekturą per-locale cache + CLDR pluralizacja. Opis wyżej.
+
+Zostało jeszcze kilka bloków hardcoded stringów w C++, które trzeba zmigrować do i18n. Daję Ci 3 zadania — każde niezależne, możesz robić w dowolnej kolejności. **Wszystko commituj na branch `feature/i18n-multilanguage`.**
+
+**WAŻNE ZASADY (przeczytaj zanim zaczniesz):**
+1. **Nie buduj lokalnie** — build tylko przez GitHub Actions.
+2. **Nie tłumacz** — dodawaj tylko klucze EN do `i18n/en/cpp.json`, potem zsync do 54 języków Pythonem (kopiuj EN do brakujących kluczy w każdym `i18n/*/cpp.json`).
+3. **Pełne zdania** — każdy klucz i18n to kompletne zdanie z placeholderami `{0}`, `{1}`, itd. Nigdy nie sklejaj fragmentów.
+4. **Per-locale cache** — jeśli wiadomość idzie do wielu spectatorów, grupuj ich po `getLocale()` i buduj msg raz per locale.
+5. **`tr.plural()`** dla hitpoints (countable) — `tr.format()` dla mana (uncountable).
+6. **Sygnatury z `const std::string &locale`** — nie przekazuj `Player*` do builderów.
+
+---
+
+#### Zadanie 1: Restore mana messages (`game.cpp` ~L8045-8075)
+
+**Co:** Blok `combatChangeMana` restore loop — linie ~8045-8075. Cztery hardcoded wiadomości:
+```
+"You restored [target] for [N] mana"
+"You were restored for [N] mana"
+"You restore yourself for [N] mana"
+"You were restored by [attacker] for [N] mana"
+```
+Plus spectator message (zmienna `spectatorMessage` budowana wyżej).
+
+**Jak:** Przepisz identycznie jak healing loop (~L7302-7358). Wzorzec:
+- `std::unordered_map<std::string, std::string> spectatorRestoreCache;`
+- Dla każdego spectatora: `const std::string loc(tmpPlayer->getLocale().empty() ? "en" : std::string(tmpPlayer->getLocale()));`
+- Sprawdź cache → jeśli miss, zbuduj wiadomość i zapisz.
+- Użyj `mtr.format()` (NIE `plural()` — mana jest uncountable).
+- Klucze: `cpp.combat.restore_attacker`, `cpp.combat.restore_target_none`, `restore_target_self`, `restore_target_by`, `cpp.combat.restore_spectator_none`, `restore_spectator_self`, `restore_spectator_other`.
+
+**Klucze EN do dodania do `i18n/en/cpp.json`:**
+```json
+"cpp.combat.restore_attacker": "You restored {0} for {1} mana.",
+"cpp.combat.restore_target_none": "You were restored for {0} mana.",
+"cpp.combat.restore_target_self": "You restore yourself for {0} mana.",
+"cpp.combat.restore_target_by": "You were restored by {0} for {1} mana.",
+"cpp.combat.restore_spectator_none": "{0} was restored for {1} mana.",
+"cpp.combat.restore_spectator_self": "{0} restored {1} for {2} mana.",
+"cpp.combat.restore_spectator_other": "{0} restored {1} for {2} mana."
+```
+
+**Po zakończeniu:** Zsync do 54 języków, commit, push.
+
+---
+
+#### Zadanie 2: Bestiary/Charm FYI messages (`iobestiary.cpp`)
+
+**Co:** Plik `src/io/iobestiary.cpp` — 7 hardcoded stringów w `sendFYIBox()`:
+- L396: `"You unlocked details for the creature '..."` → `tr.format("cpp.bestiary.unlocked_details", loc, {mtype->name})`
+- L473: `"You don't have enough charm points..."` → `tr.get("cpp.bestiary.not_enough_charm_points", loc)`
+- L488: `"You don't have enough minor charm echoes..."` → `tr.get("cpp.bestiary.not_enough_charm_echoes", loc)`
+- L509: `"You don't have any charm slots..."` → `tr.get("cpp.bestiary.no_charm_slots", loc)`
+- L523: `"You already have this monster set on another..."` → `tr.format("cpp.bestiary.already_set_charm", loc, {categoryName})`
+- L540, L554: `"You don't have enough gold."` → `tr.get("cpp.bestiary.not_enough_gold", loc)`
+
+**Jak:** Dodaj `#include "utils/i18n/translator.hpp"` na górze pliku. W każdym miejscu pobierz locale z gracza: `const std::string loc(player->getLocale().empty() ? "en" : std::string(player->getLocale()));` i zamień literal na `tr.get()`/`tr.format()`.
+
+**Klucze EN:**
+```json
+"cpp.bestiary.unlocked_details": "You unlocked details for the creature '{0}'",
+"cpp.bestiary.not_enough_charm_points": "You don't have enough charm points to unlock this rune.",
+"cpp.bestiary.not_enough_charm_echoes": "You don't have enough minor charm echoes to unlock this rune.",
+"cpp.bestiary.no_charm_slots": "You don't have any charm slots available.",
+"cpp.bestiary.already_set_charm": "You already have this monster set on another {0} Charm!",
+"cpp.bestiary.not_enough_gold": "You don't have enough gold."
+```
+
+**Po zakończeniu:** Zsync, commit, push.
+
+---
+
+#### Zadanie 3: Drobne hardcoded stringi (5 plików × 1-2 stringi)
+
+**Co:** Szybkie przelotki po 5 plikach z pojedynczymi literałami:
+
+1. **`src/creatures/combat/condition.cpp:1323`**
+   - `"You were healed for " + healString` → `tr.format("cpp.combat.condition_healed", loc, {healString})`
+   - Klucz: `"cpp.combat.condition_healed": "You were healed for {0}."`
+
+2. **`src/map/house/house.cpp:559-560`**
+   - `"You have successfully bought the house."` → `tr.get("cpp.house.bought_success", loc)`
+   - `"You have successfully sold your house."` → `tr.get("cpp.house.sold_success", loc)`
+   - Uwaga: jest tam `ownershipTransferMessage` — zostaw jako concat na razie albo dodaj osobny klucz.
+
+3. **`src/creatures/npcs/npc.cpp:471,481`**
+   - `"You have no items in your loot pouch."` → `tr.get("cpp.npc.loot_pouch_empty", loc)`
+   - `"You sold all of the items from your loot pouch for "` → `tr.format("cpp.npc.loot_pouch_sold", loc, {goldString})`
+
+4. **`src/items/tile.cpp:149`**
+   - `"You dont know why, but you cant see anything!"` → klucz `cpp.tile.cant_see`
+   - Uwaga: ta funkcja może nie mieć dostępu do locale — sprawdź kontekst.
+
+5. **`src/creatures/players/grouping/party.cpp:313`**
+   - `"You have joined X's party. Open the party channel..."` → `tr.format("cpp.party.joined", loc, {leaderName})`
+   - Klucz: `"cpp.party.joined": "You have joined {0}'s party. Open the party channel to communicate with your companions."`
+
+**Po zakończeniu:** Zsync, commit, push.
+
+---
+
+#### Raportowanie
+
+Po każdym zadaniu dopisz tutaj (w tym pliku) krótki raport w stylu:
+```
+### 2026-02-XX – Codex ➜ Copilot (Raport z zadania N)
+**Co zrobiono:**
+- ...
+**Nowe klucze EN:**
+- ...
+**Metryki:**
+- ...
+**Problemy/pytania:**
+- ...
+```
+
+Dzięki! Powodzenia. — Copilot
+
+---
+
 ### 2026-02-06 – Agent (Codex) ➜ Kolejni Agenci
 
 **Zakres tej serii (C++ + Lua):**

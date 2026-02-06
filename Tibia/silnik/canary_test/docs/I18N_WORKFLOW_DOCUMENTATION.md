@@ -247,7 +247,7 @@ i18n/
 
 **WAŻNE:** `i18n/en/` jest źródłem prawdy. Każdy nowy klucz MUSI być najpierw dodany do EN, potem zsynchronizowany do pozostałych języków.
 
-### Łączna liczba kluczy: ~39,449 EN
+### Łączna liczba kluczy: ~39,591 EN
 
 ---
 
@@ -747,7 +747,7 @@ print(f'Total keys synced: {total_added}')
 | Metryka | Wartość |
 |---------|---------|
 | Pliki JSON EN | **36** plików |
-| Łączne klucze EN | **39,449** |
+| Łączne klucze EN | **39,591** |
 | Katalogi językowe | **55** |
 | Największe pliki | items.json (16,894), npc.json (7,257), monsters.json (5,915) |
 
@@ -831,14 +831,16 @@ print(f'Total keys synced: {total_added}')
 - `i18n/en/otclient_src.json` (0 kluczy)
 - `i18n/en/otclient_tools.json` (0 kluczy)
 
-### 11.5 C++ RETURNVALUE messages
+### 11.5 C++ RETURNVALUE messages — ✅ ZROBIONE (2026-02-06)
 
-~160 `sendCancelMessage(RETURNVALUE_*)` w `game.cpp` — te komunikaty są mapowane przez `Game::getReturnMessage()` w C++ do stałych angielskich tekstów. Aby je przetłumaczyć:
+**88 kluczy** `cpp.returnvalue.*` dodanych do `i18n/en/cpp.json` i zsynchronizowanych do 55 języków.
 
-1. Zmienić `Game::getReturnMessage()` aby zwracał klucz i18n
-2. Lub zmienić `Player::sendCancelMessage()` aby tłumaczyło przed wysłaniem
-
-To jest **duża zmiana C++** — nie jest jeszcze zrobiona.
+Implementacja:
+- `getReturnMessageI18nKey(ReturnValue)` w `tools.cpp` — mapuje enum → klucz i18n
+- `Player::sendCancelMessage(ReturnValue)` zmieniony na `sendLocalizedTextMessage(MESSAGE_FAILURE, key)`
+- Wszystkie `sendCancelMessage(getReturnMessage(returnValue))` w player.cpp zamienione na `sendCancelMessage(returnValue)`
+- Nowy Lua binding: `Game.getReturnMessageKey(value)` — zwraca klucz i18n zamiast angielskiego tekstu
+- `Player.sendCancelMessage()` w Lua (player.lua) teraz używa `sendLocalizedTextMessage` z kluczem i18n
 
 ---
 
@@ -853,7 +855,7 @@ To jest **duża zmiana C++** — nie jest jeszcze zrobiona.
 - [x] Migracja ~1,407 Lua sendLocalizedTextMessage
 - [x] Migracja ~8,638 NPC_LIB.i18n
 - [x] Migracja C++ game.cpp, player.cpp, etc.
-- [x] 39,449 kluczy EN, 55 języków zsynchronizowanych
+- [x] 39,591 kluczy EN, 55 języków zsynchronizowanych
 - [x] Książki/scrolle (1,403 klucze)
 - [x] Raidy XML (273 klucze)
 - [x] Gamestore (91 kluczy)
@@ -861,13 +863,17 @@ To jest **duża zmiana C++** — nie jest jeszcze zrobiona.
 - [x] Monsters (5,915 kluczy)
 - [x] NPC handler domyślne wiadomości (15 kluczy auto)
 - [x] Modules.lua bugfix (17 broken keys)
+- [x] C++ RETURNVALUE → i18n (88 kluczy `cpp.returnvalue.*`)
+- [x] `getReturnMessageI18nKey()` + `Game.getReturnMessageKey()` Lua binding
+- [x] Codex agent: C++ spells, npc, vip, party, wheel, house, achievement
+- [x] Codex agent: 36 NPC dynamic greet messages (setLocalizedMessage)
 
 ### Faza 2: DO ZROBIENIA — Serwer
 
 | Zadanie | Priorytet | Szacowany nakład |
 |---------|-----------|-----------------|
-| **C++ RETURNVALUE messages** (~160 w game.cpp) | WYSOKI | Zmiana `Game::getReturnMessage()` lub `sendCancelMessage()` |
-| **C++ ReturnValue enum → klucze i18n** | WYSOKI | ~160 słownik enum→klucz |
+| **C++ RETURNVALUE messages** (~88 w game.cpp) | ✅ ZROBIONE | `getReturnMessageI18nKey()` + `Game.getReturnMessageKey()` Lua |
+| **C++ ReturnValue enum → klucze i18n** | ✅ ZROBIONE | 88 kluczy `cpp.returnvalue.*` |
 | **Item getDescription()** — C++ look system | WYSOKI | Duża zmiana — opisy itemów generowane dynamicznie |
 | **Blessing nazwy** (Wisdom of Solitude, etc.) | ŚREDNI | Dane gry, nie teksty |
 | **Spell nazwy/opisy** | ŚREDNI | spells.json ma 1,534 klucze, ale nazwy zaklęć z C++ |
@@ -1045,7 +1051,11 @@ Główne commity (bez auto-sync/guardian):
 | `5b62971e8` | Dawnport vocation trials, data-canary |
 | `9b014f5dc` | NPC cranky_lizard_crone + bertram |
 | `e25b8be85` | Fix corrupted JSON + documentation |
-| `bdad8af98` | **CURRENT** — Complete Lua migration + NPC handler defaults + modules fix |
+| `bdad8af98` | Complete Lua migration + NPC handler defaults + modules fix |
+| `b8592fa14` | Codex agent: C++ (spells, npc, vip, party, wheel, house, achievement) + 36 NPC greet |
+| `fc692c77b` | Sync 1508 new keys to 55 languages |
+| `9539afd3a` | **RETURNVALUE migration** — 88 cancel messages i18n + cleanup + 5564 keys synced |
+| `bffaa7b1c` | **CURRENT** — Game.getReturnMessageKey() Lua binding + Lua RETURNVALUE migration |
 
 ---
 
@@ -1058,5 +1068,6 @@ Główne commity (bez auto-sync/guardian):
 5. **Codex agent:** Pracuje równolegle na osobnych branchach — jeszcze nie zmergowane
 6. **Główne API:** `player:sendLocalizedTextMessage(MSG, key, {args})`
 7. **NPC API:** `NPC_LIB.i18n.npcSay(handler, npc, creature, key, args)`
-8. **JSON sync:** Po każdej edycji EN — uruchom skrypt sync do 55 języków
-9. **Weryfikacja:** Zawsze `grep -v Localized` po zmianach, sprawdź JSON klucze
+8. **RETURNVALUE API:** `Game.getReturnMessageKey(RETURNVALUE_*)` — zwraca klucz i18n
+9. **JSON sync:** Po każdej edycji EN — uruchom skrypt sync do 55 języków
+10. **Weryfikacja:** Zawsze `grep -v Localized` po zmianach, sprawdź JSON klucze

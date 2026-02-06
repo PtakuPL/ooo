@@ -144,6 +144,39 @@
    - `flora.lua`
    - `a_starving_dog.lua`
 
+### 2026-02-06 – Agent (Codex) ➜ Kolejni Agenci (Batch 4)
+
+**Zakres tej iteracji:**
+- Dalsza redukcja `setMessage(...)` o kolejne przypadki single-message i dynamiczne greetingi:
+  - `edala.lua` (mapa greetów przeniesiona na klucze)
+  - `arkulius.lua` (random greet przeniesiony na klucze)
+  - plus wcześniejsza partia z Batch 3 domknięta walidacją.
+
+**Nowe klucze EN dodane (`i18n/en/npc.json`):**
+- `npc.arkulius.greet_msg_1`
+- `npc.arkulius.greet_msg_2`
+- `npc.arkulius.greet_msg_3`
+- `npc.edala.greet_msg_2`
+- `npc.edala.greet_msg_3`
+- `npc.edala.greet_msg_4`
+- `npc.edala.greet_msg_5`
+- `npc.edala.greet_msg_6`
+- `npc.edala.greet_msg_7`
+- `npc.edala.greet_msg_8`
+
+**Stan po batchu 4:**
+- `npcHandler:setMessage(...)` (data + data-otservbr-global): **19**
+- `npcHandler:setMessage(...)` tylko NPC global: **16** (było **18**)
+- literalne `setMessage(MESSAGE_..., "..."|{...})` w NPC global: **16**
+- bloki NPC `text = {...}` / `text = "..."`: **364** (bez zmian)
+
+**Pozostałe przypadki `setMessage` (16 linii):**
+- Głównie wielolinijkowe sekwencje greet:
+  - `al_dee.lua`, `quandons_ghost.lua`, `corym_servant.lua`, `jack.lua`, `vascalir.lua`, `emael.lua`, `jamesfrancis.lua`, `klom_stonecutter.lua`, `zlak.lua`, `mr._west.lua`, `corym_ratter.lua`, `the_empress.lua`
+- Celowe puste walkaway:
+  - `flora.lua`
+  - `a_starving_dog.lua`
+
 ### Agent 2 -> Agent 1 (NPC Migration N-Z)
 
 **Status Report:**

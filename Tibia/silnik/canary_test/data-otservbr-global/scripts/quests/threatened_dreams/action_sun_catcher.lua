@@ -4,8 +4,8 @@ local config = {
 		fromPos = Position(33508, 32163, 7),
 		toPos = Position(33522, 32173, 7),
 		usablePeriod = "day",
-		failMessage = "You are rubbing the gem in the sun catcher's centre but nothing happens.",
-		successMessage = "The sun catcher is shining with sunlight now.",
+		failMessage = "quests.threatened_dreams.sun_catcher.fail_1",
+		successMessage = "quests.threatened_dreams.sun_catcher.success_1",
 	},
 	[25734] = {
 		targetPos = {
@@ -16,10 +16,10 @@ local config = {
 			Position(33568, 32243, 7),
 		},
 		usablePeriod = "day",
-		failMessage = "The sun has to be shining in order to strengthen the barrier. Wait for the day.",
+		failMessage = "quests.threatened_dreams.sun_catcher.fail_2",
 		successMessage = {
-			"As soon as you're placing the sun catcher on the stone the pattern the mosaic is infused with sunlight. The barrier strengthens.",
-			"As soon as you're placing the sun catcher on the stone the pattern the mosaic is infused with sunlight. This was the last mosaic.",
+			"quests.threatened_dreams.sun_catcher.success_2a",
+			"quests.threatened_dreams.sun_catcher.success_2b",
 		},
 		storageCounter = ThreatenedDreams.Mission02.ChargedSunCatcher,
 		storagePos = {
@@ -39,17 +39,17 @@ function sunCatcher.onUse(player, item, fromPosition, target, toPosition, isHotk
 
 	if item.itemid == 25733 then
 		if tool.usablePeriod ~= currentPeriod then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, tool.failMessage)
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, tool.failMessage)
 			return true
 		end
 
 		if not player:getPosition():isInRange(tool.fromPos, tool.toPos) then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, tool.failMessage)
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, tool.failMessage)
 			return true
 		end
 
 		if player:getStorageValue(ThreatenedDreams.Mission02[1]) ~= 6 and player:getStorageValue(ThreatenedDreams.Mission02[1]) ~= 8 then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, tool.failMessage)
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, tool.failMessage)
 			return true
 		end
 
@@ -59,7 +59,7 @@ function sunCatcher.onUse(player, item, fromPosition, target, toPosition, isHotk
 		elseif player:getStorageValue(ThreatenedDreams.Mission02[1]) == 8 then
 			item:transform(25977)
 		end
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, tool.successMessage)
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, tool.successMessage)
 		iterateArea(function(position)
 			local tile = Tile(position)
 			if tile then
@@ -69,7 +69,7 @@ function sunCatcher.onUse(player, item, fromPosition, target, toPosition, isHotk
 		return true
 	elseif item.itemid == 25734 then
 		if tool.usablePeriod ~= currentPeriod then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, tool.failMessage)
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, tool.failMessage)
 			return true
 		end
 
@@ -81,9 +81,9 @@ function sunCatcher.onUse(player, item, fromPosition, target, toPosition, isHotk
 					player:setStorageValue(tool.storageCounter, counter - 1)
 					player:getPosition():sendMagicEffect(CONST_ME_MAGIC_POWDER)
 					if player:getStorageValue(tool.storageCounter) ~= 0 then
-						player:sendTextMessage(MESSAGE_EVENT_ADVANCE, tool.successMessage[1])
+						player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, tool.successMessage[1])
 					else
-						player:sendTextMessage(MESSAGE_EVENT_ADVANCE, tool.successMessage[2])
+						player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, tool.successMessage[2])
 						item:transform(25733)
 					end
 				end

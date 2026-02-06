@@ -15,11 +15,11 @@ local config = {
 		position = Position(32881, 32435, 8),
 		storage = Storage.Quest.U11_80.TheSecretLibrary.LiquidDeath.Questline,
 		value = 2,
-		message = "The descriptions in this book look like plans detailing the launch of a large-scale assault.",
+		message = "quests.secret_library.book_plans",
 	},
 	statueEffect = CONST_ME_THUNDER,
-	statueMessage = "The Njey will appreciate your help.",
-	statueMessage_ = "You recently fixed that idol.",
+	statueMessage = "quests.secret_library.njey_appreciate",
+	statueMessage_ = "quests.secret_library.recently_fixed",
 	statueId = { 15895, 15896 },
 	fixedId = { 15894, 15897 },
 	countStatues = Storage.Quest.U11_80.TheSecretLibrary.LiquidDeath.StatueCount,
@@ -59,7 +59,7 @@ function actions_liquid_usableItens.onUse(player, item, position, fromPosition, 
 	if item:getId() == b.id and item:getPosition() == b.position then
 		if player:getStorageValue(b.storage) == b.value then
 			player:setStorageValue(b.storage, player:getStorageValue(b.storage) + 1)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, b.message)
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, b.message)
 		end
 	else
 		local statueId = config.statueId
@@ -72,10 +72,10 @@ function actions_liquid_usableItens.onUse(player, item, position, fromPosition, 
 						if player:getStorageValue(config.countStatues) == config.maxValue then
 							player:setStorageValue(Storage.Quest.U11_80.TheSecretLibrary.LiquidDeath.Questline, player:getStorageValue(Storage.Quest.U11_80.TheSecretLibrary.LiquidDeath.Questline) + 1)
 						end
-						player:sendTextMessage(MESSAGE_EVENT_ADVANCE, config.statueMessage)
+						player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, config.statueMessage)
 						fixStatue(position, item.itemid)
 					else
-						player:sendTextMessage(MESSAGE_EVENT_ADVANCE, config.statueMessage_)
+						player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, config.statueMessage_)
 					end
 				end
 			end

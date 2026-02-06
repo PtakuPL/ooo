@@ -2,23 +2,23 @@ local ThreatenedDreams = Storage.Quest.U11_40.ThreatenedDreams
 
 local config = {
 	[25024] = {
-		message = "You found some more feathers on the grass near the wheat. Now you should have enough for an entire cloak.", -- Edron
+		message = "quests.threatened_dreams.feathers_1", -- Edron
 		storage = ThreatenedDreams.Mission01.Feathers1,
 	},
 	[25025] = {
-		message = "You found some beautiful swan feathers in the dustbin.", -- Darasha in City
+		message = "quests.threatened_dreams.feathers_2", -- Darasha in City
 		storage = ThreatenedDreams.Mission01.Feathers2,
 	},
 	[25026] = {
-		message = "You found some beautiful swan feathers entangled in the cactus stings.", -- Darashia Nort of City
+		message = "quests.threatened_dreams.feathers_3", -- Darashia Nort of City
 		storage = ThreatenedDreams.Mission01.Feathers3,
 	},
 	[25027] = {
-		message = "You found some beautiful swan feathers beneath the dragon skull.", -- Darashia Nort + Far of City
+		message = "quests.threatened_dreams.feathers_4", -- Darashia Nort + Far of City
 		storage = ThreatenedDreams.Mission01.Feathers4,
 	},
 	[25028] = {
-		message = "You found some more feaathers under the dead tree. Now you should have enough for an entire cloak.", -- Darashia Nort + Far of City
+		message = "quests.threatened_dreams.feathers_5", -- Darashia Nort + Far of City
 		storage = ThreatenedDreams.Mission01.Feathers5,
 	},
 }
@@ -41,7 +41,7 @@ function swanFeathers.onStepIn(creature, item, position, fromPosition)
 		player:setStorageValue(ThreatenedDreams.Mission01.FeathersCount, player:getStorageValue(ThreatenedDreams.Mission01.FeathersCount) + 1)
 		player:addItem(25244, 1)
 		player:getPosition():sendMagicEffect(CONST_ME_POFF)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, feathersFound.message)
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, feathersFound.message)
 		player:setStorageValue(feathersFound.storage, 1)
 		if player:getStorageValue(ThreatenedDreams.Mission01.FeathersCount) == 5 then
 			player:setStorageValue(ThreatenedDreams.Mission01[1], 14) -- Finish the mission

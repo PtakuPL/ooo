@@ -15,15 +15,15 @@ function forgottenKnowledgeLantern.onUse(player, item, fromPosition, target, toP
 	end
 	if item:getId() == 23734 then
 		player:getPosition():sendMagicEffect(CONST_ME_ENERGYAREA)
-		local msg = "As you start polishing the lantern it begins to glow in an otherworldly light."
+		local msg = "quests.forgotten_knowledge.lantern_glow"
 		if player:getPosition():getDistance(Position(32891, 31619, 10)) < 2 then
 			if not player:getItemById(23733, true) then
-				msg = "In the light of the ghostsilver lantern you discover an otherwise invisible door. But you lack the key to open it."
+				msg = "quests.forgotten_knowledge.lantern_no_key"
 			else
-				msg = "In the light of the ghostsilver lantern you discover an otherwise invisible door. As you have the fitting key you can pass."
+				msg = "quests.forgotten_knowledge.lantern_has_key"
 			end
 		end
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, msg)
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, msg)
 	end
 	item:transform(lantern.transformId)
 	return true

@@ -5,22 +5,22 @@ local sequence = {
 	[1] = {
 		number = 0,
 		position = Position(33613, 32515, 15),
-		msg = "The chants in this book often contain the word 'K'muuh'.",
+		msg = "quests.dream_courts.book_kmuuh",
 	},
 	[2] = {
 		number = 1,
 		position = Position(33621, 32520, 15),
-		msg = "The chants in this book often contain the word 'N'ogalu'.",
+		msg = "quests.dream_courts.book_nogalu",
 	},
 	[3] = {
 		number = 2,
 		position = Position(33616, 32520, 15),
-		msg = "The chants in this book often contain the word 'O'kteth.'.",
+		msg = "quests.dream_courts.book_okteth",
 	},
 	[4] = {
 		number = 3,
 		position = Position(33624, 32515, 15),
-		msg = "All chants have been sung in the right order, you are deemed worthy. You are transported away...",
+		msg = "quests.dream_courts.book_worthy",
 	},
 }
 
@@ -42,7 +42,7 @@ function actions_sequenceBooks.onUse(player, item, fromPosition, target, toPosit
 			if tPos == book.position then
 				if player:getStorageValue(sequenceBooks) == book.number then
 					player:setStorageValue(sequenceBooks, player:getStorageValue(sequenceBooks) + 1)
-					player:sendTextMessage(MESSAGE_EVENT_ADVANCE, book.msg)
+					player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, book.msg)
 					tPos:sendMagicEffect(CONST_ME_SOUND_WHITE)
 				else
 					player:setStorageValue(sequenceBooks, 0)

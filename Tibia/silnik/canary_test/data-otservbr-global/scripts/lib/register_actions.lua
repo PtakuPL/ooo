@@ -553,10 +553,10 @@ function onUsePick(player, item, fromPosition, target, toPosition, isHotkey)
 				local r = math.random(1, 3)
 				local item_id = secret_library.items[r]
 				player:addItem(item_id, 1)
-				player:say("You have found a " .. ItemType(item_id):getName() .. ".", TALKTYPE_MONSTER_SAY)
+				player:sayLocalized("scripts.register_actions.found_item", TALKTYPE_MONSTER_SAY, false, nil, nil, { ItemType(item_id):getName() })
 				player:setStorageValue(j.storage, os.time() + 2 * 60)
 			else
-				player:say(secret_library.exhaustMessage, TALKTYPE_MONSTER_SAY)
+				player:sayLocalized(secret_library.exhaustMessage, TALKTYPE_MONSTER_SAY)
 			end
 			return true
 		end
@@ -1056,10 +1056,10 @@ function onUseKitchenKnife(player, item, fromPosition, target, toPosition, isHot
 				local r = math.random(1, 3)
 				local item_id = secret_library.items[r]
 				player:addItem(item_id, 1)
-				player:say("You have found a " .. ItemType(item_id):getName() .. ".", TALKTYPE_MONSTER_SAY)
+				player:sayLocalized("scripts.register_actions.found_item", TALKTYPE_MONSTER_SAY, false, nil, nil, { ItemType(item_id):getName() })
 				player:setStorageValue(j.storage, os.time() + 2 * 60)
 			else
-				player:say(secret_library.exhaustMessage, TALKTYPE_MONSTER_SAY)
+				player:sayLocalized(secret_library.exhaustMessage, TALKTYPE_MONSTER_SAY)
 			end
 			return true
 		end

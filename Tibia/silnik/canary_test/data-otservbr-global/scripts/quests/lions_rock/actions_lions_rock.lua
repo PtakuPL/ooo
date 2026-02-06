@@ -56,7 +56,7 @@ function lionsRockSacrificesTest.onUse(player, item, fromPosition, target, toPos
 				local pagoda = Tile(setting.pagodaPosition):getItemById(2074)
 				if pagoda then
 					pagoda:transform(2075)
-					player:sendTextMessage(MESSAGE_EVENT_ADVANCE, setting.message)
+					player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, setting.message)
 					player:setStorageValue(setting.storage, 1)
 					if player:getStorageValue(Storage.Quest.U10_70.LionsRock.Questline) < 1 then
 						player:setStorageValue(Storage.Quest.U10_70.LionsRock.Questline, math.max(player:getStorageValue(Storage.Quest.U10_70.LionsRock.Questline), 1))

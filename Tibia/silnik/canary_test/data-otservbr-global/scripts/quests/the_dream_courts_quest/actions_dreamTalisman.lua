@@ -4,49 +4,49 @@ local config = {
 		off = 29336,
 		hisPosition = Position(32251, 31386, 5),
 		hisStorage = Storage.Quest.U12_00.TheDreamCourts.WardStones.OkolnirStone,
-		hisMessage = "You charge the winter ward stone and the engraved ice crystal glows in a blue light.",
+		hisMessage = "quests.dream_courts.winter_ward",
 	},
 	[2] = {
 		on = 29337,
 		off = 29336,
 		hisPosition = Position(31939, 31653, 10),
 		hisStorage = Storage.Quest.U12_00.TheDreamCourts.WardStones.FoldaStone,
-		hisMessage = "You charge the winter ward stone and the engraved ice crystal glows in a blue light.",
+		hisMessage = "quests.dream_courts.winter_ward",
 	},
 	[3] = {
 		on = 29337,
 		off = 29336,
 		hisPosition = Position(32058, 32792, 13),
 		hisStorage = Storage.Quest.U12_00.TheDreamCourts.WardStones.CalassaStone,
-		hisMessage = "You charge the winter ward stone and the engraved ice crystal glows in a blue light.",
+		hisMessage = "quests.dream_courts.winter_ward",
 	},
 	[4] = {
 		on = 29335,
 		off = 29334,
 		hisPosition = Position(33555, 32220, 7),
 		hisStorage = Storage.Quest.U12_00.TheDreamCourts.WardStones.FeyristStone,
-		hisMessage = "You charge the summer ward stone and the engraved sun crystal glows in a golden light.",
+		hisMessage = "quests.dream_courts.summer_ward",
 	},
 	[5] = {
 		on = 29335,
 		off = 29334,
 		hisPosition = Position(32383, 32610, 7),
 		hisStorage = Storage.Quest.U12_00.TheDreamCourts.WardStones.MerianaStone,
-		hisMessage = "You charge the summer ward stone and the engraved sun crystal glows in a golden light.",
+		hisMessage = "quests.dream_courts.summer_ward",
 	},
 	[6] = {
 		on = 29335,
 		off = 29334,
 		hisPosition = Position(33273, 31997, 7),
 		hisStorage = Storage.Quest.U12_00.TheDreamCourts.WardStones.CormayaStone,
-		hisMessage = "You charge the summer ward stone and the engraved sun crystal glows in a golden light.",
+		hisMessage = "quests.dream_courts.summer_ward",
 	},
 	[7] = {
 		on = 29335,
 		off = 29334,
 		hisPosition = Position(33576, 32537, 15),
 		hisStorage = Storage.Quest.U12_00.TheDreamCourts.WardStones.CatedralStone,
-		hisMessage = "You charge the summer ward stone and the engraved sun crystal glows in a golden light.",
+		hisMessage = "quests.dream_courts.summer_ward",
 		lastStone = true,
 	},
 }
@@ -82,7 +82,7 @@ function actions_dreamTalisman.onUse(player, item, fromPosition, target, toPosit
 				player:setStorageValue(k.hisStorage, 1)
 				player:setStorageValue(Storage.Quest.U12_00.TheDreamCourts.WardStones.Count, player:getStorageValue(Storage.Quest.U12_00.TheDreamCourts.WardStones.Count) + 1)
 				target:getPosition():sendMagicEffect(CONST_ME_THUNDER)
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, k.hisMessage)
+				player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, k.hisMessage)
 				target:transform(k.on)
 				addEvent(revertStone, 1000 * 30, target:getPosition(), k.on, k.off)
 			end

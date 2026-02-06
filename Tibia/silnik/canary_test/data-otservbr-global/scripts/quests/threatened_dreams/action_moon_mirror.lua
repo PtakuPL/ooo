@@ -4,8 +4,8 @@ local config = {
 		fromPos = Position(33518, 32209, 7),
 		toPos = Position(33527, 32215, 7),
 		usablePeriod = "night",
-		failMessage = "The moon is not shining. Wait for the night.",
-		successMessage = "The mirror is shining with the moonlight now.",
+		failMessage = "quests.threatened_dreams.moon_mirror.fail_1",
+		successMessage = "quests.threatened_dreams.moon_mirror.success_1",
 	},
 	[25730] = {
 		targetPos = {
@@ -16,10 +16,10 @@ local config = {
 			Position(33597, 32182, 7),
 		},
 		usablePeriod = "night",
-		failMessage = "The moon has to be shining. Wait for the night. Wait for the night.",
+		failMessage = "quests.threatened_dreams.moon_mirror.fail_2",
 		successMessage = {
-			"As soon as you're touching the moon sculpture with the mirror the sculpture is infused with moonlight. The barrier strengthens.",
-			"As soon as you're touching the moon sculpture with the mirror the sculpture is infused with moonlight. This was the last sculpture.",
+			"quests.threatened_dreams.moon_mirror.success_2a",
+			"quests.threatened_dreams.moon_mirror.success_2b",
 		},
 		storageCounter = ThreatenedDreams.Mission02.ChargedMoonMirror,
 		storagePos = {
@@ -39,17 +39,17 @@ function moonMirror.onUse(player, item, fromPosition, target, toPosition, isHotk
 
 	if item.itemid == 25729 then
 		if tool.usablePeriod ~= currentPeriod then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, tool.failMessage)
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, tool.failMessage)
 			return true
 		end
 
 		if not player:getPosition():isInRange(tool.fromPos, tool.toPos) then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, tool.failMessage)
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, tool.failMessage)
 			return true
 		end
 
 		if player:getStorageValue(ThreatenedDreams.Mission02[1]) ~= 6 and player:getStorageValue(ThreatenedDreams.Mission02[1]) ~= 8 then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, tool.failMessage)
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, tool.failMessage)
 			return true
 		end
 
@@ -59,7 +59,7 @@ function moonMirror.onUse(player, item, fromPosition, target, toPosition, isHotk
 		elseif player:getStorageValue(ThreatenedDreams.Mission02[1]) == 8 then
 			item:transform(25975)
 		end
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, tool.successMessage)
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, tool.successMessage)
 		iterateArea(function(position)
 			local tile = Tile(position)
 			if tile then
@@ -69,7 +69,7 @@ function moonMirror.onUse(player, item, fromPosition, target, toPosition, isHotk
 		return true
 	elseif item.itemid == 25730 then
 		if tool.usablePeriod ~= currentPeriod then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, tool.failMessage)
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, tool.failMessage)
 			return true
 		end
 
@@ -81,9 +81,9 @@ function moonMirror.onUse(player, item, fromPosition, target, toPosition, isHotk
 					player:setStorageValue(tool.storageCounter, counter - 1)
 					player:getPosition():sendMagicEffect(CONST_ME_THUNDER)
 					if player:getStorageValue(tool.storageCounter) ~= 0 then
-						player:sendTextMessage(MESSAGE_EVENT_ADVANCE, tool.successMessage[1])
+						player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, tool.successMessage[1])
 					else
-						player:sendTextMessage(MESSAGE_EVENT_ADVANCE, tool.successMessage[2])
+						player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, tool.successMessage[2])
 						item:transform(25729)
 					end
 				end

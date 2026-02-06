@@ -3,25 +3,25 @@
 local missionTiles = {
 	[50329] = {
 		state = 2,
-		message = "Follow the north-eastern path into the forest. Beware of wolves!",
+		message = "quests.rookie_guard.m06.follow_ne",
 		arrowPosition = { x = 32109, y = 32166, z = 7 },
 	},
 	[50330] = {
 		state = 2,
-		message = "This is not the way into the wolf forest. Stay on the southern path leading to the north-east!",
+		message = "quests.rookie_guard.m06.not_wolf_stay",
 	},
 	[50331] = {
 		state = 2,
-		message = "This is not the way into the wolf forest. Stay on the southern path leading to the north-east!",
+		message = "quests.rookie_guard.m06.not_wolf_stay",
 	},
 	[50332] = {
 		state = 2,
-		message = "This hole leads into the wolves' den. Only enter if you have full health and food - this might be dangerous.",
+		message = "quests.rookie_guard.m06.wolf_den_hole",
 		arrowPosition = { x = 32138, y = 32132, z = 7 },
 	},
 	[50333] = {
 		state = 3,
-		message = "It seems plans changed. It's up to you now to find a dead war wolf and use the skinning knife on it to get some leather.",
+		message = "quests.rookie_guard.m06.plans_changed",
 	},
 }
 
@@ -44,7 +44,7 @@ function missionGuide.onStepIn(creature, item, position, fromPosition)
 	if missionState == tile.state then
 		-- Check delayed notifications (message/arrow)
 		if not isTutorialNotificationDelayed(player) then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, tile.message)
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, tile.message)
 			if tile.arrowPosition then
 				Position(tile.arrowPosition):sendMagicEffect(CONST_ME_TUTORIALARROW)
 			end
@@ -81,18 +81,18 @@ warWolfDenHole:register()
 local specialMissionTiles = {
 	[25025] = {
 		state = 2,
-		message = "Well.. that seems to be the poacher. Dead. Check his body - maybe he still has something that you can use.",
+		message = "quests.rookie_guard.m06.poacher_dead",
 		arrowPosition = { x = 32135, y = 32133, z = 8 },
 		newState = 3,
 	},
 	[25026] = {
 		state = 3,
-		message = "There is a dead war wolf! Use the knife, and then use it on its body to get some leather - but quickly!",
+		message = "quests.rookie_guard.m06.dead_wolf",
 		arrowPosition = { x = 32108, y = 32132, z = 11 },
 	},
 	[25027] = {
 		state = 5,
-		message = "You reached the exit in time! Phew.. back to Tom.",
+		message = "quests.rookie_guard.m06.exit_time",
 		newState = 6,
 	},
 }
@@ -115,7 +115,7 @@ function warWolfDenTiles.onStepIn(creature, item, position, fromPosition)
 	if missionState == missionTile.state then
 		-- Check delayed notifications (message/arrow)
 		if not isTutorialNotificationDelayed(player) then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, missionTile.message)
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, missionTile.message)
 			if missionTile.arrowPosition then
 				Position(missionTile.arrowPosition):sendMagicEffect(CONST_ME_TUTORIALARROW)
 			end
@@ -186,7 +186,7 @@ function poacherCorpse.onUse(player, item, frompos, itemEx, topos)
 			player:setStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission06, 3)
 			player:addItemEx(reward, true, CONST_SLOT_WHEREEVER)
 		else
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The " .. item:getName() .. " is empty.")
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.common.item_is_empty", { item:getName() })
 		end
 	end
 	return true
@@ -231,7 +231,7 @@ function warWolfDenChest.onUse(player, item, frompos, itemEx, topos)
 		player:setStorageValue(Storage.Quest.U9_1.TheRookieGuard.WarWolfDenChest, 1)
 		player:addItemEx(reward, true, CONST_SLOT_WHEREEVER)
 	else
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The " .. item:getName() .. " is empty.")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.common.item_is_empty", { item:getName() })
 	end
 	return true
 end

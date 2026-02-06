@@ -2,37 +2,37 @@ local config = {
 	[1] = {
 		pos = Position(32644, 32394, 8),
 		stor = Storage.Quest.U12_20.GraveDanger.Graves.DarkCathedral,
-		msg = "This grave now been sanctified and is safe!",
+		msg = "quests.grave_danger.sanctified",
 	},
 	[2] = {
 		pos = Position(32542, 31846, 6),
 		stor = Storage.Quest.U12_20.GraveDanger.Graves.FemorHills,
-		msg = "This grave is already defiled and the lich knight has left! There is nothing you can do here.",
+		msg = "quests.grave_danger.defiled",
 	},
 	[3] = {
 		pos = Position(33376, 32806, 8),
 		stor = Storage.Quest.U12_20.GraveDanger.Graves.Ankrahmun,
-		msg = "This grave now been sanctified and is safe!",
+		msg = "quests.grave_danger.sanctified",
 	},
 	[4] = {
 		pos = Position(32959, 31534, 7),
 		stor = Storage.Quest.U12_20.GraveDanger.Graves.Vengoth,
-		msg = "This grave is already defiled and the lich knight has left! There is nothing you can do here.",
+		msg = "quests.grave_danger.defiled",
 	},
 	[5] = {
 		pos = Position(32776, 31817, 8),
 		stor = Storage.Quest.U12_20.GraveDanger.Graves.Orclands,
-		msg = "This grave is already defiled and the lich knight has left! There is nothing you can do here.",
+		msg = "quests.grave_danger.defiled",
 	},
 	[6] = {
 		pos = Position(32012, 31558, 7),
 		stor = Storage.Quest.U12_20.GraveDanger.Graves.IceIslands,
-		msg = "This grave is already defiled and the lich knight has left! There is nothing you can do here.",
+		msg = "quests.grave_danger.defiled",
 	},
 	[7] = {
 		pos = Position(33813, 31624, 9),
 		stor = Storage.Quest.U12_20.GraveDanger.Graves.Kilmaresh,
-		msg = "This grave now been sanctified and is safe!",
+		msg = "quests.grave_danger.sanctified",
 	},
 }
 
@@ -58,10 +58,10 @@ function grave_sanctify.onUse(player, item, fromPosition, itemEx, toPosition)
 	if player:getStorageValue(thing.stor) < 1 then
 		player:setStorageValue(thing.stor, 1)
 		itemEx:getPosition():sendMagicEffect(CONST_ME_HOLYAREA)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, thing.msg)
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, thing.msg)
 		player:setStorageValue(Storage.Quest.U12_20.GraveDanger.Graves.Progress, player:getStorageValue(Storage.Quest.U12_20.GraveDanger.Graves.Progress) + 1)
 	else
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, thing.msg)
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, thing.msg)
 	end
 
 	return true

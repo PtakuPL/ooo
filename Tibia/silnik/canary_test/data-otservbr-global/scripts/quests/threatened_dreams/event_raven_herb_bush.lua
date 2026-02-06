@@ -31,16 +31,17 @@ createRavenHerb:register()
 local ravenHerb = Action()
 
 function ravenHerb.onUse(player, item, fromPosition, target, toPosition, isHotkey)
-	local message = "You have found a " .. getItemName(config.herbId) .. "."
+	local messageKey = "quests.threatened_dreams.found_herb"
+	local messageArgs = { getItemName(config.herbId) }
 	local backpack = player:getSlotItem(CONST_SLOT_BACKPACK)
 
 	if not backpack or backpack:getEmptySlots(true) < 1 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, message .. " But you have no room to take it.")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.threatened_dreams.herb_no_room", { getItemName(config.herbId) })
 		return true
 	end
 
 	if (player:getFreeCapacity() / 100) < config.herbWeight then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, message .. ". Weighing " .. config.herbWeight .. " oz, it is too heavy for you to carry.")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.threatened_dreams.herb_too_heavy", { getItemName(config.herbId), config.herbWeight })
 		return true
 	end
 
@@ -49,7 +50,7 @@ function ravenHerb.onUse(player, item, fromPosition, target, toPosition, isHotke
 		return true
 	end
 
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, message)
+	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, messageKey, messageArgs)
 	player:setStorageValue(config.storage, os.time() + 60 * 30 * 1000)
 	player:addItem(config.herbId, 1)
 	return true

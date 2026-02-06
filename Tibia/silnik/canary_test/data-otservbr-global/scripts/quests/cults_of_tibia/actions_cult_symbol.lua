@@ -43,8 +43,8 @@ function cultsOfTibiaCult.onUse(player, item, fromPosition, target, toPosition, 
 	if player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.Barkless.Objects) >= 10 then
 		player:setStorageValue(Storage.Quest.U11_40.CultsOfTibia.Barkless.Mission, 4)
 	end
-	local msg = (player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.Barkless.Objects) < 10 and "Your body reacts to this strange green substance as you reach out to touch it. You feel an urge for more of this energy." or "You gathered an impressive amount of power from simply touching the strange green symbols of the Barkless. But how...?")
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, msg)
+	local msg = (player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.Barkless.Objects) < 10 and "quests.cults_of_tibia.cult_energy_1" or "quests.cults_of_tibia.cult_energy_2")
+	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, msg)
 	return true
 end
 

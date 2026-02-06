@@ -270,7 +270,7 @@ function questSystem2.onUse(player, item, fromPosition, target, toPosition, isHo
 	end
 
 	if (useItem.time and player:getStorageValue(useItem.storage) > os.time()) or player:getStorageValue(useItem.storage) ~= (useItem.formerValue or -1) then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The " .. ItemType(item.itemid):getName() .. " is empty.")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.common.item_is_empty", { ItemType(item.itemid):getName() })
 		return true
 	end
 
@@ -350,9 +350,9 @@ function questSystem2.onUse(player, item, fromPosition, target, toPosition, isHo
 	if player:addItemEx(reward) ~= RETURNVALUE_NOERROR then
 		local weight = reward:getWeight()
 		if player:getFreeCapacity() < weight then
-			player:sendCancelMessage("You have found " .. result .. ". Weighing " .. string.format("%.2f", (weight / 100)) .. " oz, it is too heavy.")
+			player:sendLocalizedCancelMessage("quests.common.found_item_too_heavy_v2", { result, string.format("%.2f", weight / 100) })
 		else
-			player:sendCancelMessage("You have found " .. result .. ", but you have no room to take it.")
+			player:sendLocalizedCancelMessage("quests.common.found_item_no_room", { result })
 		end
 		return true
 	end
@@ -373,7 +373,7 @@ function questSystem2.onUse(player, item, fromPosition, target, toPosition, isHo
 		player:setStorageValue(useItem.missionStorage.key, useItem.missionStorage.value)
 	end
 
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have found " .. result .. ".")
+	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.common.found_item", { result })
 	if useItem.time then
 		player:setStorageValue(useItem.storage, os.time() + 86400)
 	else

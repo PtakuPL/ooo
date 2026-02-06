@@ -371,11 +371,12 @@ function Hireling:returnToLamp(player_id)
 			return logger.error("[Hireling:returnToLamp] - Hireling not found or is nil for hireling name for player {}.", owner:getName())
 		end
 
-		npc:say("As you wish!", TALKTYPE_PRIVATE_NP, false, owner, npc:getPosition())
+		npc:sayLocalized("lib.hireling.as_you_wish", TALKTYPE_PRIVATE_NP, false, owner, npc:getPosition())
 		local lamp = inbox:addItem(HIRELING_LAMP, 1, INDEX_WHEREEVER, FLAG_NOLIMIT)
 		npc:getPosition():sendMagicEffect(CONST_ME_PURPLESMOKE)
 		npc:remove() --remove hireling
-		lamp:setAttribute(ITEM_ATTRIBUTE_DESCRIPTION, "This mysterious lamp summons your very own personal hireling.\nThis item cannot be traded.\nThis magic lamp is the home of " .. self:getName() .. ".")
+		local desc = string.format(i18nTranslate("lib.hireling.lamp_description", "en"), self:getName())
+		lamp:setAttribute(ITEM_ATTRIBUTE_DESCRIPTION, desc)
 		lamp:setCustomAttribute("Hireling", hirelingId) --save hirelingId on item
 		hireling:setPosition({ x = 0, y = 0, z = 0 })
 	end, 1000, self.cid, player:getGuid(), self.id)

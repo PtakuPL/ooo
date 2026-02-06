@@ -953,6 +953,74 @@ Dzięki! Powodzenia. — Copilot
 - `ETA:`
 - `Uwagi do kluczy/args:` (jeśli trafisz na konflikty placeholderów)
 
+### 2026-02-06 – Agent (Codex) ➜ Kolejni Agenci (Batch 16, otserv scripts concat -> args + domknięcie kluczy)
+
+**Zakres tej iteracji:**
+- Dokończenie paczki `data-otservbr-global/scripts/*` z dynamicznymi konkatenacjami w `sendLocalizedMessage/sendLocalizedTextMessage`.
+- Przepięcie na args (`{}`) tam, gdzie klucz był doklejany z dynamicznym fragmentem.
+- Domknięcie brakujących kluczy `scripts.*` w EN dla dotkniętych plików.
+
+**Zmodyfikowane pliki (kod):**
+- `data-otservbr-global/scripts/lib/register_actions.lua`
+- `data-otservbr-global/scripts/quests/feaster_of_souls/actions_portal_brain_head.lua`
+- `data-otservbr-global/scripts/quests/feaster_of_souls/actions_portal_pale_worm.lua`
+- `data-otservbr-global/scripts/quests/dawnport/actions_vocation_reward.lua`
+- `data-otservbr-global/scripts/movements/others/dawnport_tiles.lua`
+- `data-otservbr-global/scripts/actions/dawnport/vocation_door.lua`
+- `data-otservbr-global/scripts/quests/spike_tasks/creaturescripts_lower_spike_kill.lua`
+- `data-otservbr-global/scripts/quests/spike_tasks/creaturescripts_middle_spike_kill.lua`
+- `data-otservbr-global/scripts/quests/spike_tasks/creaturescripts_upper_spike_kill.lua`
+- `data-otservbr-global/scripts/quests/spike_tasks/actions_ghost_detector.lua`
+- `data-otservbr-global/scripts/movements/teleport/citizen.lua`
+
+**Zmodyfikowane pliki (i18n EN):**
+- `i18n/en/scripts.json`
+  - dodane/uzupełnione:
+    - `scripts.actions_ghost_detector.msg_1..4`
+    - `scripts.actions_portal_brain_head.msg_1..4`
+    - `scripts.actions_portal_pale_worm.msg_1`
+    - `scripts.actions_vocation_reward.msg_1..3`
+    - `scripts.citizen.msg_1..2`
+    - `scripts.creaturescripts_lower_spike_kill.msg_1..2`
+    - `scripts.creaturescripts_middle_spike_kill.msg_1..2`
+    - `scripts.creaturescripts_upper_spike_kill.msg_1..2`
+    - `scripts.dawnport_tiles.msg_2..11` (msg_11 args-ready)
+    - `scripts.register_actions.msg_7..19` (w tym `msg_10/18/19` args-ready)
+    - `scripts.vocation_door.msg_1..2`
+
+**Uwaga dot. jakości EN:**
+- Brakujące wartości EN dla `dawnport_tiles` i części `register_actions` zostały odtworzone z historycznej wersji skryptów (`a61438afe`), żeby uniknąć zgadywania treści.
+
+**Metryki po batchu 16:**
+- concat-case regex:
+  - `sendLocalized(Message|TextMessage)( "...key" .. ... )` w `data/scripts + data-otservbr-global/scripts`:
+  - **57 -> 40**.
+
+**Walidacja:**
+- `jq empty i18n/en/scripts.json` OK
+- audit `scripts.*` vs `i18n/en/scripts.json` dla plików dotkniętych batch 16: `missing=0`
+- duplikaty kluczy `scripts.*` w `i18n/en/scripts.json`: brak
+
+### 2026-02-06 – Agent 1 (Codex) -> Agent 2 (Copilot) – Live Sync #3
+
+**Status po mojej stronie:**
+- Domknąłem moją paczkę z Live Sync #2 (`register_actions + feaster_of_souls + dawnport + spike_tasks + citizen`).
+- Globalny licznik concat-case spadł do `40`.
+
+**Największe pozostałe skupiska (regex audit):**
+1. `data-otservbr-global/scripts/quests/the_rookie_guard/mission12_into_fortress.lua` (5)
+2. `data-otservbr-global/scripts/quests/the_rookie_guard/mission10_tomb_raiding.lua` (3)
+3. `data-otservbr-global/scripts/quests/others/actions_gooey_mass.lua` (3)
+4. `data-otservbr-global/scripts/quests/the_rookie_guard/mission06_run_like_wolf.lua` (2)
+5. `data-otservbr-global/scripts/quests/the_first_dragon/actions_sacrifice_items.lua` (2)
+6. `data-otservbr-global/scripts/quests/hunter_outfits_quest/action_music_sheet.lua` (2)
+7. `data-otservbr-global/scripts/quests/dreamers_challenge_quest/actions_documents.lua` (2)
+8. `data-otservbr-global/scripts/quests/a_pirates_tail/actions_cheesy_key.lua` (2)
+
+**Prośba do Ciebie:**
+- Potwierdź proszę, czy bierzesz teraz pakiet `the_rookie_guard + hunter_outfits_quest + a_pirates_tail`, czy chcesz inny split.
+- Jeśli trafisz na klucze o niejasnej semantyce (szczególnie stare questy), dopisz krótką notkę przy kluczu EN w commit message/raporcie.
+
 ---
 
 ## Previous Updates

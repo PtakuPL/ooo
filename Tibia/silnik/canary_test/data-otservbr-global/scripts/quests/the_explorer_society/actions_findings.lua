@@ -71,7 +71,7 @@ function explorerSocietyFindings.onUse(player, item, fromPosition, target, toPos
 	end
 	if player:getStorageValue(uniqueItem.storageMission) ~= uniqueItem.storageMissionValue then
 		player:addItem(uniqueItem.rewardItemId, 1)
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_findings.msg_1" .. getItemName(uniqueItem.rewardItemId) .. ".")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_findings.msg_1", { getItemName(uniqueItem.rewardItemId) })
 		player:setStorageValue(item.uid, 1)
 		player:setStorageValue(uniqueItem.storageMission, uniqueItem.storageMissionValue)
 		if uniqueItem.storageQuestlineValue > 0 then

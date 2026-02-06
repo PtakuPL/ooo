@@ -115,7 +115,7 @@ function trunkChest.onUse(player, item, frompos, itemEx, topos)
 		local hasOpenedChest = testFlag(chestsState, chest.id)
 		if not hasOpenedChest then
 			local reward = Game.createItem(chest.itemId, 1)
-			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission09_rock_troll.msg_3" .. reward:getArticle() .. " " .. reward:getName() .. ".")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission09_rock_troll.msg_3", { reward:getArticle(), reward:getName() })
 			player:setStorageValue(Storage.Quest.U9_1.TheRookieGuard.TrollChests, chestsState + chest.id)
 			player:addItemEx(reward, true, CONST_SLOT_WHEREEVER)
 		else

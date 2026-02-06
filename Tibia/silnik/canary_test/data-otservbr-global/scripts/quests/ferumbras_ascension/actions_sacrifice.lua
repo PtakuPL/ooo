@@ -51,7 +51,7 @@ function ferumbrasAscendantSacrifice.onUse(player, item, fromPosition, target, t
 		player:setStorageValue(Storage.Quest.U10_90.FerumbrasAscension.Fount, 0)
 	end
 	player:setStorageValue(Storage.Quest.U10_90.FerumbrasAscension.Fount, player:getStorageValue(Storage.Quest.U10_90.FerumbrasAscension.Fount) + 1)
-	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_sacrifice.msg_1" .. item:getName() .. " into the dried well.")
+	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_sacrifice.msg_1", { item:getName() })
 	toPosition:sendMagicEffect(CONST_ME_DRAWBLOOD)
 	item:remove(1)
 	return true

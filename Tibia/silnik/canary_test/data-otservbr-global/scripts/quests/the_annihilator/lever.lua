@@ -33,7 +33,7 @@ function lever.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 				return true
 			end
 			if creature and creature:getLevel() < setting.requiredLevel then
-				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.lever.msg_2" .. setting.requiredLevel .. " or higher.")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.lever.msg_2", { setting.requiredLevel })
 				return true
 			end
 		end

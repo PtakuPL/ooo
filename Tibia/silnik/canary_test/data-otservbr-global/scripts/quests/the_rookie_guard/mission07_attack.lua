@@ -145,7 +145,7 @@ function treasureChest.onUse(player, item, frompos, item2, topos)
 		local libraryChestState = player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.LibraryChest)
 		if libraryChestState == -1 then
 			local reward = Game.createItem(12675, 1)
-			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission07_attack.msg_4" .. reward:getArticle() .. " " .. reward:getName() .. ".")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission07_attack.msg_4", { reward:getArticle(), reward:getName() })
 			player:setStorageValue(Storage.Quest.U9_1.TheRookieGuard.LibraryChest, 1)
 			player:addItemEx(reward, true, CONST_SLOT_WHEREEVER)
 		else

@@ -19,7 +19,7 @@ local adventurersTreasure = Action()
 function adventurersTreasure.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if player:getStorageValue(Storage.Quest.U10_80.TheGreatDragonHunt.DragonCounter) >= 50 then
 		local treasure = items[math.random(#items)]
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_treasure.msg_1" .. treasure.description)
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_treasure.msg_1", { treasure.description })
 		for _, item in ipairs(treasure.items) do
 			player:addItem(item.id, item.count)
 		end

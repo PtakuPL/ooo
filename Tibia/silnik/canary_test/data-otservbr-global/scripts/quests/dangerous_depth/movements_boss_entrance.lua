@@ -37,7 +37,7 @@ function bossEntrance.onStepIn(creature, item, position, fromPosition, toPositio
 	if timeLeft > 0 then
 		player:teleportTo(fromPosition, true)
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_boss_entrance.msg_1" .. Game.getTimeInWords(timeLeft) .. " to face " .. bossName .. " again!")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_boss_entrance.msg_1", { Game.getTimeInWords(timeLeft), bossName })
 		player:getPosition():sendMagicEffect(CONST_ME_POFF)
 		return true
 	end

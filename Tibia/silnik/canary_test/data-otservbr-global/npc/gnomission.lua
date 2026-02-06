@@ -76,7 +76,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "snippet") then
 		if npcHandler:getTopic(playerId) == 3 then
 			if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Rank) < 1440 then
-				npcHandler:say("It seems you did not even set one big foot into the warzone, I am sorry.")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomission.say_12")
 			else
 				if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Warzone1Access) < 1 then
 					if player:removeItem(16136, 1) then
@@ -94,7 +94,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "lash") then
 		if npcHandler:getTopic(playerId) == 3 then
 			if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Rank) < 1440 then
-				npcHandler:say("It seems you did not even set one big foot into the warzone, I am sorry.")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomission.say_12")
 			else
 				if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Warzone3Access) < 1 then
 					if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.WarzoneStatus) >= 3 then
@@ -116,7 +116,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "hat") then
 		if npcHandler:getTopic(playerId) == 3 then
 			if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Rank) < 1440 then
-				npcHandler:say("It seems you did not even set one big foot into the warzone, I am sorry.")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomission.say_12")
 			else
 				if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Warzone2Access) < 1 then
 					if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.WarzoneStatus) >= 2 then

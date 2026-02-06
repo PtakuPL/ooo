@@ -88,7 +88,7 @@ function sarcophagus.onUse(player, item, frompos, item2, topos)
 		local sarcophagusState = player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Sarcophagus)
 		if sarcophagusState == -1 then
 			local reward = Game.createItem(12674, 1)
-			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission10_tomb_raiding.msg_1" .. reward:getArticle() .. " " .. reward:getName() .. ".")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission10_tomb_raiding.msg_1", { reward:getArticle(), reward:getName() })
 			player:setStorageValue(Storage.Quest.U9_1.TheRookieGuard.Sarcophagus, 1)
 			player:addItemEx(reward, true, CONST_SLOT_WHEREEVER)
 		else
@@ -139,9 +139,9 @@ function unholyCryptChests.onUse(player, item, frompos, item2, topos)
 	if not hasOpenedChest then
 		local reward = Game.createItem(chest.item.id, chest.item.amount)
 		if reward:getCount() == 1 then
-			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission10_tomb_raiding.msg_2" .. reward:getArticle() .. " " .. reward:getName() .. ".")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission10_tomb_raiding.msg_2", { reward:getArticle(), reward:getName() })
 		elseif reward:getCount() > 1 then
-			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission10_tomb_raiding.msg_3" .. reward:getCount() .. " " .. reward:getPluralName() .. ".")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission10_tomb_raiding.msg_3", { reward:getCount(), reward:getPluralName() })
 		end
 		player:setStorageValue(Storage.Quest.U9_1.TheRookieGuard.UnholyCryptChests, chestsState + chest.id)
 		player:addItemEx(reward, true, CONST_SLOT_WHEREEVER)

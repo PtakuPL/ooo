@@ -63,28 +63,28 @@ end
 
 local quiz1 = {
 	[1] = {
-		p = "The sum of the first and second digit?",
+		pKey = "npc.denominator.quiz1_q1",
 		r = function(player)
 			player:setStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.Answer, player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.Stone1) + player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.Stone2))
 			return player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.Answer)
 		end,
 	},
 	[2] = {
-		p = "The sum of the second and third digit?",
+		pKey = "npc.denominator.quiz1_q2",
 		r = function(player)
 			player:setStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.Answer, player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.Stone2) + player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.Stone3))
 			return player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.Answer)
 		end,
 	},
 	[3] = {
-		p = "The sum of the first and third digit?",
+		pKey = "npc.denominator.quiz1_q3",
 		r = function(player)
 			player:setStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.Answer, player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.Stone1) + player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.Stone3))
 			return player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.Answer)
 		end,
 	},
 	[4] = {
-		p = "The total digit sum?",
+		pKey = "npc.denominator.quiz1_q4",
 		r = function(player)
 			player:setStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.Answer, player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.Stone1) + player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.Stone2) + player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.Stone3))
 			return player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.Answer)
@@ -94,7 +94,7 @@ local quiz1 = {
 
 local quiz2 = {
 	[1] = {
-		p = "Is the number prime?",
+		pKey = "npc.denominator.quiz2_q1",
 		r = function(player)
 			local stg = player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.Answer)
 			if stg < 1 then
@@ -113,7 +113,7 @@ local quiz2 = {
 		end,
 	},
 	[2] = {
-		p = "Does the number belong to a twin prime?",
+		pKey = "npc.denominator.quiz2_q2",
 		r = function(player)
 			local stg = player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.Answer)
 			if stg < 2 then
@@ -135,13 +135,13 @@ local quiz2 = {
 
 local quiz3 = {
 	[1] = {
-		p = "Is the number divisible by 3?",
+		pKey = "npc.denominator.quiz3_q1",
 		r = function(player)
 			return (player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.Answer) % 3 == 0 and 1 or 0)
 		end,
 	},
 	[2] = {
-		p = "Is the number divisible by 2?",
+		pKey = "npc.denominator.quiz3_q2",
 		r = function(player)
 			return (player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.Answer) % 2 == 0 and 1 or 0)
 		end,
@@ -163,7 +163,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "start") and npcHandler:getTopic(playerId) == 2 then
 		local questionId = math.random(#quiz1)
 		player:setStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.QuestionId, questionId)
-		npcHandler:say(quiz1[questionId].p, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, quiz1[questionId].pKey)
 		npcHandler:setTopic(playerId, 3)
 	elseif npcHandler:getTopic(playerId) == 3 then
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.denominator.say_1", { message })
@@ -190,7 +190,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "next") and npcHandler:getTopic(playerId) == 5 then
 		local questionId = math.random(#quiz2)
 		player:setStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.QuestionId, questionId)
-		npcHandler:say(quiz2[questionId].p, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, quiz2[questionId].pKey)
 		npcHandler:setTopic(playerId, 6)
 	elseif npcHandler:getTopic(playerId) == 6 then
 		local response = 0
@@ -212,7 +212,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif npcHandler:getTopic(playerId) == 7 and MsgContains(message, "next") then
 		local questionId = math.random(#quiz3)
 		player:setStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.QuestionId, questionId)
-		npcHandler:say(quiz3[questionId].p, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, quiz3[questionId].pKey)
 		npcHandler:setTopic(playerId, 8)
 	elseif npcHandler:getTopic(playerId) == 8 then
 		local response = 0

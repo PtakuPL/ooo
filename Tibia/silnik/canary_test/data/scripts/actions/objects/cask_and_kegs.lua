@@ -61,7 +61,7 @@ local function processTransformation(player, item, charges, transformation)
 			item:remove(1)
 		end
 
-		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.cask_and_kegs.msg_2" .. newCharges)
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.cask_and_kegs.msg_2", { newCharges })
 	else
 		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.cask_and_kegs.msg_3")
 	end

@@ -17,7 +17,7 @@ function inquisitionRewards.onUse(player, item, fromPosition, target, toPosition
 		player:setStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline, 25)
 		player:setStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Mission07, 5) -- The Inquisition Questlog- "Mission 7: The Shadow Nexus"
 		player:addItem(rewards[item.uid], 1)
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_rewards.msg_1" .. ItemType(rewards[item.uid]):getName() .. ".")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_rewards.msg_1", { ItemType(rewards[item.uid]):getName() })
 		player:addAchievement("Master of the Nexus")
 		player:addOutfitAddon(288, 2)
 		player:addOutfitAddon(288, 1)

@@ -25,13 +25,13 @@ function action.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 		return true
 	end
 	if player:hasFamiliar(vocation.id) then
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_cheesy_key.msg_1" .. vocation.name .. " familiar.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_cheesy_key.msg_1", { vocation.name })
 		return false
 	end
 
 	player:addFamiliar(vocation.id)
 	item:remove()
-	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_cheesy_key.msg_2" .. vocation.name .. " familiar.")
+	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_cheesy_key.msg_2", { vocation.name })
 	return true
 end
 

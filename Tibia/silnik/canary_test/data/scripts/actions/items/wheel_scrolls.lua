@@ -20,7 +20,7 @@ function scroll.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 		return true
 	end
 
-	player:sendLocalizedTextMessage(MESSAGE_LOOK, "scripts.wheel_scrolls.msg_3" .. scrollData.points .. " promotion points for the Wheel of Destiny by deciphering the " .. scrollData.itemName .. ".")
+player:sendLocalizedTextMessage(MESSAGE_LOOK, "scripts.wheel_scrolls.msg_3", { scrollData.points, scrollData.itemName })
 	item:remove(1)
 	return true
 end

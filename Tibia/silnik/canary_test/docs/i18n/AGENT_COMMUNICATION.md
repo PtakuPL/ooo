@@ -1,6 +1,100 @@
 # Agent Communication Log - i18n NPC Migration
 
-## Latest Update: 2026-02-06
+## Latest Update: 2026-02-07
+
+### 2026-02-07 – Agent (Copilot/Claude) ➜ Kolejni Agenci (Combat Messages + Pluralization)
+
+**Zakres tej sesji:**
+Pełna migracja wiadomości combatowych w `game.cpp` z architekturą:
+- **Per-locale caching** spectator messages (zamiast per-spectator rebuild)
+- **CLDR plural rules** (one/few/many/other — nie tylko singular/plural)
+- **Full-sentence templates** (bez fragment composition)
+- **Locale przekazywane do builderów** (zamiast Player*)
+
+#### 1. Translator — wsparcie pluralizacji
+
+**Nowe w `src/utils/i18n/translator.hpp`:**
+- `enum class PluralCategory { One, Few, Many, Other }` w namespace `i18n`
+- `plural(key, locale, count, args...)` — wybiera `key_one`/`key_few`/`key_many`/`key_other` wg CLDR
+- `static getPluralCategory(locale, n)` — zwraca kategorię CLDR dla danego locale i liczby
+
+**Nowe w `src/utils/i18n/translator.cpp` (~150 linii):**
+- `getPluralCategory()` z regułami CLDR dla 15+ grup językowych:
+  - `pl`: 1→one, 2-4 (nie 12-14)→few, reszta→many
+  - `ru/uk`: East Slavic rules (1→one, 2-4 not 12-14→few, rest→many)
+  - `cs/sk`: Czech/Slovak (1→one, 2-4→few, rest→other)
+  - `hr/sr/bs`: South Slavic (mod 10/100 rules)
+  - `sl`: Slovenian (mod 100: 1→one, 2→two, 3-4→few, rest→other)
+  - `ro`: Romanian (0 + mod 100 1-19→few, rest→other)
+  - `lt`: Lithuanian (mod 10 / mod 100 rules)
+  - `lv`: Latvian (0→zero, mod 10=1 not 11→one, rest→other)
+  - `ar`: Arabic (0→zero, 1→one, 2→two, mod 100 3-10→few, 11-99→many, rest→other)
+  - default (en, de, es, fr, it, pt...): 1→one, rest→other
+- `plural()` — fallback chain 6-krokowy:
+  1. `key_<category>` w locale
+  2. `key_other` w locale
+  3. bare `key` w locale
+  4-6. to samo w fallback locale
+
+#### 2. game.hpp — zmienione sygnatury builderów
+
+Stare:
+```cpp
+buildMessageAsAttacker(..., std::stringstream &ss, const std::string &damageString, bool amplified = false, ...);
+buildMessageAsTarget(..., std::stringstream &ss, const std::string &damageString);
+buildMessageAsSpectator(..., std::stringstream &ss, const std::string &damageString, std::string &spectatorMessage);
+```
+
+Nowe:
+```cpp
+buildMessageAsAttacker(..., int32_t realDamage, bool amplified, Player* attackerPlayer, const std::string &locale);
+buildMessageAsTarget(..., int32_t realDamage, const std::string &locale);
+buildMessageAsSpectator(..., int32_t realDamage, const std::string &locale);
+```
+
+#### 3. game.cpp — 4 duże bloki przepisane
+
+**Healing loop** (~L7302-7358):
+- Per-locale cache: `std::unordered_map<std::string, std::string> spectatorHealCache`
+- 7 wariantów z `tr.plural()`: `heal_attacker`, `heal_target_none/self/by`, `heal_spectator_none/self/other`
+- Każdy spectator → `getLocale()` → cache hit lub build + cache
+
+**Mana drain loop** (~L7538-7591):
+- Per-locale cache: `spectatorManaCache`
+- 11 wariantów z `mtr.format()` (mana jest uncountable — bez pluralizacji):
+  `mana_attacker/attacker_crit`, `mana_target_none/self/self_crit/by/by_crit`, `mana_spectator_none/self/by/by_crit`
+
+**sendMessages()** (~L7740-7764):
+- Usunięta konstrukcja `damageString` (pre-built English "hitpoint(s)")
+- Dodany `spectatorDmgCache` per-locale
+- Do builderów przekazywane `realDamage` + `loc` zamiast `ss` + `damageString`
+
+**buildMessageAsSpectator/Target/Attacker** (~L7766-7870):
+- Pełne przepisanie z `tr.plural()` i full-sentence templates
+- Damage: 12 wariantów `dmg_spectator/target/attacker` × `none/self/by` × `crit/normal` × `_one/_other`
+- Tagi (dopisywane po głównym zdaniu): `charm_low_blow`, `charm_savage_blow`, `soulpit_crit`, `onslaught`, `amplified_onslaught`
+
+#### 4. cpp.json — nowe klucze combatowe
+
+**+54 kluczy** (460 total), zsync do 55 języków. Podział:
+- Healing (14): `cpp.combat.heal_{attacker,target_none,target_self,target_by,spectator_none,spectator_self,spectator_other}_{one,other}`
+- Mana (11): `cpp.combat.mana_{attacker,attacker_crit,target_none,target_self,target_self_crit,target_by,target_by_crit,spectator_none,spectator_self,spectator_by,spectator_by_crit}`
+- Damage (22): `cpp.combat.dmg_{attacker,attacker_crit,target_none,target_self,target_self_crit,target_by,target_by_crit,spectator_none,spectator_self,spectator_self_crit,spectator_by,spectator_by_crit}_{one,other}`
+- Tags (5): `charm_low_blow`, `charm_savage_blow`, `soulpit_crit`, `onslaught`, `amplified_onslaught`
+- (Starsze klucze: 15 × combat type names `cpp.combat.fire/ice/earth/...`)
+
+#### Metryki po tej sesji (2026-02-07):
+- `i18n/en/cpp.json`: **460** kluczy
+- Hardcoded `sendTextMessage("..."` w `src/`: **0**
+- `sendCancelMessage(RETURNVALUE_*)` w `src/`: **204** (strategia silnikowa — do rozważenia)
+- NPC `text = "..."` literalne: **0**
+- Język zsync: **55** (en + 54)
+
+#### Git:
+- Commit: `d497bfe44` → `feature/i18n-multilanguage`
+- Pliki: 59 (4 C++ + 55 JSON)
+
+---
 
 ### 2026-02-06 – Agent (Codex) ➜ Kolejni Agenci
 
@@ -280,6 +374,326 @@
   - komunikaty literalne (nie-key): **0**
 - `i18n/en/raids.json`:
   - brak brakujących kluczy względem XML: **0**
+
+### 2026-02-06 – Agent (Codex) ➜ Kolejni Agenci (Batch 8, NPC durable text)
+
+**Zakres tej iteracji:**
+- Dalsza migracja trwałych tekstów NPC (bez tłumaczeń docelowych, tylko pełne kluczowanie EN).
+- Domknięcie `oressa.lua` (Dawnport Oracle) + 6 trainerów zaklęć z powtarzalnym `text = {...}`.
+
+**Zmodyfikowane pliki NPC:**
+- `data-otservbr-global/npc/oressa.lua`
+- `data-otservbr-global/npc/ormuhn.lua`
+- `data-otservbr-global/npc/puffels.lua`
+- `data-otservbr-global/npc/thorwulf.lua`
+- `data-otservbr-global/npc/tristan.lua`
+- `data-otservbr-global/npc/uso.lua`
+- `data-otservbr-global/npc/zarak.lua`
+
+**Zmiany funkcjonalne (oressa):**
+- Usunięto ostatnie literalne dialogi i przeniesiono je na klucze i18n:
+  - `vocationDefaultMessages` (5 wiadomości)
+  - prompty wyboru (`choose`/`magic`)
+  - pełne opisy vocation (`sorcerer`/`druid`/`paladin`/`knight`) wraz z confirm line.
+- Uporządkowano błędne mapowanie `stdmod_*` do keywordów (wcześniej przesunięte o kilka pozycji, przez co NPC odpowiadał nie tym tekstem co trzeba).
+- Usunięto osierocone literalne stringi z definicji keywordu `doors`.
+
+**Zmiany funkcjonalne (trainerzy):**
+- `attack spells` w 6 plikach trainerów:
+  - `text = {...}` → `i18nKey = "npc.<name>.stdmod_4"`
+
+**Nowe klucze EN (`i18n/en/npc.json`):**
+- Oressa:
+  - `npc.oressa.stdmod_18`
+  - `npc.oressa.vocation_default_1..5`
+  - `npc.oressa.choose_prompt_1`
+  - `npc.oressa.magic_prompt_1`
+  - `npc.oressa.sorcerer_info_1..3`, `npc.oressa.sorcerer_confirm_1`
+  - `npc.oressa.druid_info_1..3`, `npc.oressa.druid_confirm_1`
+  - `npc.oressa.paladin_info_1..4`, `npc.oressa.paladin_confirm_1`
+  - `npc.oressa.knight_info_1..3`, `npc.oressa.knight_confirm_1`
+- Trainerzy:
+  - `npc.ormuhn.stdmod_4`
+  - `npc.puffels.stdmod_4`
+  - `npc.thorwulf.stdmod_4`
+  - `npc.tristan.stdmod_4`
+  - `npc.uso.stdmod_4`
+  - `npc.zarak.stdmod_4`
+
+**Stan po batchu 8:**
+- `oressa.lua` literalne dialogi (`text={...}` / `npcHandler:say("...")`): **0**
+- 6 trainerów (`ormuhn/puffels/thorwulf/tristan/uso/zarak`) `text={...}`: **0**
+- Globalne bloki NPC `text = {...}` / `text = "..."`: **357** (wcześniej **364**)
+
+**Walidacja:**
+- `jq empty i18n/en/npc.json` OK
+- Audyt kluczy dla 7 zmienionych plików NPC: `missing_keys=0`
+- `luac` niedostępny w środowisku lokalnym (brak parser-check Lua na poziomie CLI)
+
+### 2026-02-06 – Agent (Codex) ➜ Kolejni Agenci (Batch 9, Quick wins)
+
+**Zakres tej iteracji:**
+- Dodatkowe szybkie domknięcie 2 statycznych bloków `text={...}` bez dodawania nowych kluczy (użyte istniejące `kw_*`).
+
+**Zmodyfikowane pliki NPC:**
+- `data-otservbr-global/npc/lily.lua`
+  - keyword `premium`: `StdModule.say + text={...}` → callback z `NPC_LIB.i18n.npcSayMultiple(...)` i kluczami:
+    - `npc.lily.kw_premium_1`
+    - `npc.lily.kw_premium_2`
+- `data-otservbr-global/npc/cipfried.lua`
+  - keyword `ship`: `StdModule.say + text={...}` → callback z `NPC_LIB.i18n.npcSayMultiple(...)` i kluczami:
+    - `npc.cipfried.kw_ship_1`
+    - `npc.cipfried.kw_ship_2`
+
+**Stan po batchu 9:**
+- Globalne bloki NPC `text = {...}` / `text = "..."`: **355** (po batchu 8 było **357**)
+
+**Walidacja:**
+- `jq empty i18n/en/npc.json` OK
+- Audyt kluczy dla batchu 8+9 (`oressa/6 trainerów/lily/cipfried`): `missing_keys=0`
+
+### 2026-02-06 – Agent (Codex) ➜ Kolejni Agenci (Batch 10, Erayo + Vescu)
+
+**Zakres tej iteracji:**
+- Migracja kolejnych trwałych bloków `text={...}` w questowych NPC:
+  - `erayo.lua`
+  - `vescu.lua`
+- Domknięcie historycznych braków kluczy (`say_*`, `multi_*`) dla tych dwóch NPC.
+- Drobna poprawka logiczna w `vescu.lua` (callback greet).
+
+**Zmodyfikowane pliki NPC:**
+- `data-otservbr-global/npc/erayo.lua`
+  - `config[*].text` → `config[*].i18nKeys` (etapy cloth/yarn questa)
+  - wysyłka etapów przez `NPC_LIB.i18n.npcSay(...)`
+  - intro sekwencji przez `NPC_LIB.i18n.npcSayMultiple(...)`
+  - finalny etap (nagroda) z argumentem imienia gracza `{0}`.
+- `data-otservbr-global/npc/vescu.lua`
+  - `config[*].text` → `config[*].i18nKeys` (wszystkie etapy potion questa)
+  - etapowe odpowiedzi przez `NPC_LIB.i18n.npcSay(...)`
+  - intro sekwencji przez `NPC_LIB.i18n.npcSayMultiple(...)`
+  - **bugfix:** w `greetCallback` użycie lokalnego `player = Player(creature)` zamiast niezdefiniowanego `player`.
+
+**Nowe/uzupełnione klucze EN (`i18n/en/npc.json`):**
+- `npc.erayo.*`
+  - `say_1..4`
+  - `multi_1..4`
+  - `stage_1_request/progress` … `stage_7_request/progress`
+- `npc.vescu.*`
+  - `say_1..8`
+  - `multi_1..5`
+  - `stage_1_request/progress/next` … `stage_7_request/progress/next`
+
+**Stan po batchu 10:**
+- `erayo.lua` literalne dialogi (`text={...}` / `npcHandler:say("...")`): **0**
+- `vescu.lua` literalne dialogi (`text={...}` / `npcHandler:say("...")`): **0**
+- Globalne bloki NPC `text = {...}` / `text = "..."`: **330** (po batchu 9 było **355**)
+
+**Walidacja:**
+- `jq empty i18n/en/npc.json` OK
+- Audyt kluczy dla batchu 8-10 (11 zmienionych NPC): `missing_keys=0`
+
+### 2026-02-06 – Agent (Codex) ➜ Kolejni Agenci (Batch 11, Yana + Oracle + Towncryer)
+
+**Zakres tej iteracji:**
+- Domknięcie kolejnego pakietu trwałych tekstów i niedokończonych migracji:
+  - `towncryer.lua` (dynamiczne world event voices)
+  - `the_oracle.lua` (flow wyboru miasta/vocation + brakujące klucze)
+  - `yana.lua` (naprawa błędnie zmapowanych `say_*` + pełna migracja bundle promptów)
+
+**Zmodyfikowane pliki NPC:**
+- `data-otservbr-global/npc/towncryer.lua`
+  - `worldChanges[*].text` -> `worldChanges[*].i18nKey`
+  - dynamiczne `table.insert(..., { text = ... })` -> `{ i18nKey = ... }`
+  - wykorzystane istniejące klucze `npc.towncryer.voice_4..8`
+- `data-otservbr-global/npc/the_oracle.lua`
+  - `config.vocations[*].text` -> `config.vocations[*].i18nKey`
+  - `npcHandler:say(vocationTable.text, ...)` -> `NPC_LIB.i18n.npcSay(..., vocationTable.i18nKey)`
+  - poprawiona logika greet:
+    - level `<8` -> `npc.the_oracle.say_8`
+    - level `>10` -> `npc.the_oracle.say_1` z imieniem
+    - gracz z vocation -> `npc.the_oracle.say_9`
+  - fallback miasta używa `npc.the_oracle.say_3` (bez brakującego `say_4`)
+- `data-otservbr-global/npc/yana.lua`
+  - `products[*][*].text` -> `products[*][*].i18nKey` (mapowanie na `npc.yana.voice_2..10`)
+  - przebudowany flow dialogów na klucze `npc.yana.say_1..11`
+  - info (`information`) wysyłane jako sekwencja 2 kluczy przez `npcSayMultiple`
+  - prompt pakietu + prompt capacity/tokens oparty o placeholdery `{}`
+  - dodane guardy na brak `answerType/answerLevel` przed odczytem tabel
+  - capacity w komunikatach formatowane do oz (`neededCap / 100`) zamiast surowej wartości
+
+**Nowe/uzupełnione klucze EN (`i18n/en/npc.json`):**
+- `npc.the_oracle.say_3`
+- `npc.the_oracle.say_5`
+- `npc.the_oracle.say_6`
+- `npc.the_oracle.say_7`
+- `npc.the_oracle.say_8`
+- `npc.the_oracle.say_9`
+- `npc.the_oracle.vocation_sorcerer`
+- `npc.the_oracle.vocation_druid`
+- `npc.the_oracle.vocation_paladin`
+- `npc.the_oracle.vocation_knight`
+- `npc.yana.say_1..11` (zastąpienie wcześniejszych placeholderów `...`, `%.2f` i fragmentów)
+
+**Metryki po batchu 11 (lokalny audit regex dla NPC text-literal):**
+- `text = {...}` / `text = "..."` w `data-otservbr-global/npc`: **119** (przed batch: **137**)
+
+**Walidacja:**
+- `jq empty i18n/en/npc.json` OK
+- Audyt brakujących kluczy dla plików:
+  - `data-otservbr-global/npc/yana.lua` -> `missing=0`
+  - `data-otservbr-global/npc/the_oracle.lua` -> `missing=0`
+  - `data-otservbr-global/npc/towncryer.lua` -> `missing=0`
+- `lua/luajit/luac` parser-check niedostępny lokalnie (brak binarek w środowisku)
+
+### 2026-02-06 – Agent (Codex) ➜ Kolejni Agenci (Batch 12, Imbuement Assistant)
+
+**Zakres tej iteracji:**
+- Redukcja największego lokalnego hotspotu `text = "..."` w jednym pliku:
+  - `data-otservbr-global/npc/imbuement_assistant.lua`
+
+**Zmiany w `imbuement_assistant.lua`:**
+- Usunięto wszystkie statyczne pola `text = "..."` z `imbuementPackagesData` (nieużywane po migracji).
+- Poprawiono prompt zakupu pakietu:
+  - `purchaseItems(...)` używa teraz `npc.imbuement_assistant.say_3` (z ceną pakietu) zamiast niepasującego `say_1`.
+- Długa lista pakietów (`imbuement packages`) przeniesiona do klucza i18n:
+  - usunięty lokalny literal `local imbuementPackages = "..."`
+  - wszystkie odpowiedzi listujące pakiety idą przez `NPC_LIB.i18n.npcSay(..., "npc.imbuement_assistant.packages_list")`
+- Bugfix:
+  - w `addItemsToShoppingBag(...)` poprawiono niezdefiniowane `creature` -> `player` w branchu braku środków.
+
+**Nowe klucze EN (`i18n/en/npc.json`):**
+- `npc.imbuement_assistant.packages_list`
+- `npc.imbuement_assistant.say_3`
+
+**Metryki po batchu 12 (lokalny audit regex dla NPC text-literal):**
+- `text = {...}` / `text = "..."` w `data-otservbr-global/npc`: **96** (po batchu 11 było **119**)
+
+**Walidacja:**
+- `jq empty i18n/en/npc.json` OK
+- Audyt kluczy dla `data-otservbr-global/npc/imbuement_assistant.lua`: `missing=0`
+- `data-otservbr-global/npc/imbuement_assistant.lua` literal `text = ...`: `0`
+
+### 2026-02-06 – Agent (Codex) ➜ Kolejni Agenci (Batch 13, Fallback Cleanup + StdModule i18n)
+
+**Zakres tej iteracji:**
+- Hurtowe usunięcie fallbacków `text = "...", i18nKey = "..."` w NPC (tam gdzie klucze i18n były kompletne).
+- Rozszerzenie `StdModule` o natywną obsługę `i18nKey` dla sukcesów:
+  - `StdModule.promotePlayer`
+  - `StdModule.bless`
+  - `StdModule.travel`
+- Domknięcie ostatnich przypadków z `text = ...` w kilku plikach (travel/promotion/keyword lore).
+
+**Zmiany systemowe (`data/npclib/npc_system/modules.lua`):**
+- `StdModule.promotePlayer`: success branch obsługuje teraz:
+  1) `parameters.i18nKey`
+  2) fallback `parameters.text`
+  3) fallback globalny `npclib.modules.promote_success`
+- `StdModule.bless`: success branch obsługuje `parameters.i18nKey` (przed `parameters.text`).
+- `StdModule.travel`: success branch obsługuje `parameters.i18nKey` (przed `parameters.text`).
+
+**Zmiany EN keys:**
+- `i18n/en/npclib.json`:
+  - `npclib.modules.promote_success`
+- `i18n/en/npc.json`:
+  - `npc.budrik.time_now`
+  - aktualizacja `npc.captain_dreadnought.stdmod_17` z `|TOWNS|` -> `{}` (args-based formatting)
+
+**Najważniejsze zmiany NPC (punktowe):**
+- Travel child keywords bez literalnych `text`:
+  - `anderson.lua`, `nielson.lua`, `dalbrect.lua`, `eremo.lua` (użycie i18nKey w `StdModule.travel`)
+- Bless/promotion bez literalnych `text`:
+  - `eremo.lua` (`StdModule.bless` z i18nKey)
+  - `king_tibianus.lua` (`StdModule.promotePlayer` z i18nKey)
+- `rafzan.lua`: dwa keyword lore texty przepięte na istniejące klucze `npc.rafzan.stdmod_13/14`.
+- `captain_dreadnought.lua`:
+  - `aboutSailNode` używa `i18nKey = npc.captain_dreadnought.stdmod_17`
+  - `townTravelHandler` obsługuje `parameters.i18nKey` dla `sailableTowns`.
+- `elathriel.lua`: usunięty zbędny duplikat keyworda `carlin` z pustym `text = ""`.
+- `budrik.lua`: `time` oraz `shearton softbeard` przepięte na callbacki i18n (`npcSay` / `npcSayMultiple`).
+
+**Hurtowe czyszczenie fallbacków `text + i18nKey`:**
+- Wykonane skryptowo w 43 plikach NPC (`text = "...", i18nKey = "..."` -> `i18nKey = "..."`), po uprzedniej weryfikacji kompletności kluczy i18n dla tych plików.
+
+**Metryki po batchu 13:**
+- `text = {...}` / `text = "..."` (dotychczasowy audit regex używany w projekcie):
+  - **0** (było **96** po Batch 12)
+
+**Walidacja:**
+- `jq empty` OK:
+  - `i18n/en/npc.json`
+  - `i18n/en/npclib.json`
+- `modules.lua` -> audit `npclib.*` refs vs `i18n/en/npclib.json`: `missing=0`
+- Audit kluczy dla plików dotkniętych punktowo w batchu 13 (nowe i18nKey): brak nowych braków.
+
+### 2026-02-06 – Agent (Codex) ➜ Kolejni Agenci (Batch 14, Scripts Durable Text Cleanup)
+
+**Zakres tej iteracji:**
+- Domknięcie trwałych literałów poza NPC (`data/scripts` + `data-otservbr-global/scripts`) i przepięcie ich na klucze i18n EN.
+- Priorytet: teksty player-facing (quest/monster/talkactions), potem techniczne GM/GOD/world-change.
+
+**Zmodyfikowane skrypty (player-facing):**
+- `data-otservbr-global/scripts/actions/other/thais_exhibition.lua`
+  - ostatni literal (`Say "Rat CHeese!"`) -> `scripts.thais_exhibition.say_86`.
+- `data/scripts/creaturescripts/monster/white_deer_death.lua`
+  - `message` -> `i18nKey` + `sayLocalized(...)`.
+- `data-otservbr-global/scripts/quests/wrath_of_the_emperor/creaturescripts_zalamon_kill.lua`
+  - `text` -> `i18nKey` + `sayLocalized(...)`.
+- `data-otservbr-global/scripts/quests/lions_rock/actions_lions_rock.lua`
+  - test messages -> klucze `scripts.actions_lions_rock.msg_5..7`.
+  - dynamiczny reward message przepięty na args: `sendLocalizedTextMessage(..., "scripts.actions_lions_rock.msg_3", {...})`.
+- `data/scripts/talkactions/player/server_info.lua`
+  - pełne etykiety dialogu -> `i18nTranslate(...)` (`scripts.server_info.*`).
+- `data/scripts/talkactions/player/commands.lua`
+  - header dialogu -> `scripts.commands.available_header`.
+- `data/scripts/talkactions/player/reward.lua`
+  - modal title/message -> i18n (`scripts.reward.modal_*`).
+  - opis itemu reward -> template i18n (`scripts.reward.item_description`, `%s`).
+  - błąd delivery rozdzielony na `scripts.reward.msg_4`.
+
+**Zmodyfikowane skrypty (GM/GOD/ops):**
+- `data/scripts/talkactions/gm/spy.lua`
+  - nagłówek i `Empty` -> `scripts.spy.*`.
+- `data/scripts/talkactions/gm/info.lua`
+  - pełne etykiety popup -> `scripts.info.*`, lista „same IP” jako args key.
+- `data/scripts/talkactions/gm/push_town.lua`
+  - status dla GM -> `scripts.push_town.msg_2` (args).
+  - log/webhook tekst -> template i18n `scripts.push_town.log_teleported`.
+- `data/scripts/talkactions/gm/teleport_to_player.lua`
+  - modal title/message -> `scripts.teleport_to_player.*`.
+- `data/scripts/talkactions/god/flags.lua`
+  - walidacyjny header listy flag -> `scripts.flags.invalid_flag_valid`.
+- `data/scripts/talkactions/god/add_bosstiary_kills.lua`
+  - usunięty zbędny, niemigrowany literal (nieużywana zmienna).
+- `data/scripts/talkactions/god/raids.lua`
+  - prefix listy raidów -> `scripts.raids.registered_prefix`.
+  - komunikaty simulatora (`msg_2`, `msg_3`) przerobione z konkatenacji na args.
+- `data-otservbr-global/scripts/world_changes/oriental_trader.lua`
+  - startup/log/webhook messages -> i18n EN (`scripts.oriental_trader.*`).
+
+**Nowe/uzupełnione klucze EN (`i18n/en/scripts.json`):**
+- `scripts.actions_lions_rock.msg_1..7`
+- `scripts.commands.available_header`
+- `scripts.reward.modal_title`, `scripts.reward.modal_message`, `scripts.reward.item_description`, `scripts.reward.msg_2..4`
+- `scripts.server_info.*` (pełny zestaw etykiet dialogu)
+- `scripts.thais_exhibition.say_86`
+- `scripts.white_deer_death.say_1..2`
+- `scripts.zalamon_kill.say_1..3`
+- `scripts.flags.invalid_flag_valid`
+- `scripts.info.*`
+- `scripts.spy.equipments_of`, `scripts.spy.empty`
+- `scripts.push_town.msg_2`, `scripts.push_town.log_teleported`
+- `scripts.teleport_to_player.modal_title`, `scripts.teleport_to_player.modal_message`
+- `scripts.oriental_trader.not_spawned_today`, `scripts.oriental_trader.arrived_today`, `scripts.oriental_trader.not_this_time`
+- `scripts.raids.msg_1..3`, `scripts.raids.registered_prefix`
+
+**Metryki po batchu 14 (lokalny audit regex dla scripts):**
+- `text/message = "..."` (niepuste, nie-klucze) w `data/scripts` + `data-otservbr-global/scripts`:
+  - **0** (przed batch: **8**)
+
+**Walidacja:**
+- `jq empty i18n/en/scripts.json` OK
+- audit used keys (`scripts.*`) vs `i18n/en/scripts.json` dla plików dotkniętych w batchu: `missing=0`
+- parser-check Lua (`luac`/`lua`) niedostępny w środowisku (brak binarek)
 
 ### Agent 2 -> Agent 1 (NPC Migration N-Z)
 

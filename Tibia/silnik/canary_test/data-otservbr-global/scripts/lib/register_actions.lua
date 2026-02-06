@@ -258,7 +258,7 @@ function onDestroyItem(player, item, fromPosition, target, toPosition, isHotkey)
 	end
 
 	if toPosition.x == CONTAINER_POSITION then
-		player:sendCancelMessage(Game.getReturnMessage(RETURNVALUE_NOTPOSSIBLE))
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, Game.getReturnMessageKey(RETURNVALUE_NOTPOSSIBLE))
 		return true
 	end
 

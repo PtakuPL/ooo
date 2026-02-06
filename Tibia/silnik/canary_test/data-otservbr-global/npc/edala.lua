@@ -46,13 +46,13 @@ npcType.onCloseChannel = function(npc, creature)
 end
 
 local config = {
-	[1] = "Ashari, |PLAYERNAME|. How... nice to see a human taking interest in a beautiful art such as music.",
-	[2] = "Ashari, |PLAYERNAME|... that sound was.. interesting.",
-	[3] = "Ashari, |PLAYERNAME|. You've made some... progress playing the lyre, haven't you..? I want to believe you have.",
-	[4] = "|PLAYERNAME|. My regular visitor. I certainly... appreciate your efforts to entertain me, but let me assure you, I'm quite comfortable up here by myself. Alone. In silence.",
-	[5] = "Ashari, |PLAYERNAME|. I'm starting to feel a little sorry... for your lyre. Being forced to produce such noise must be a tragic fate.",
-	[6] = "|PLAYERNAME|! You're driving me insane! I beg you, take your lyre away from this sacred and peaceful place.",
-	[7] = "|PLAYERNAME|! My ears! I'd prefer listening to drunken dwarves rambling all day to the sound of your lyre! Please, at least get it tuned. Here, you can have this elvish diapason.",
+	[1] = "npc.edala.greet_msg_2",
+	[2] = "npc.edala.greet_msg_3",
+	[3] = "npc.edala.greet_msg_4",
+	[4] = "npc.edala.greet_msg_5",
+	[5] = "npc.edala.greet_msg_6",
+	[6] = "npc.edala.greet_msg_7",
+	[7] = "npc.edala.greet_msg_8",
 }
 
 local function greetCallback(npc, creature)
@@ -67,7 +67,7 @@ local function greetCallback(npc, creature)
 			player:setStorageValue(Storage.Diapason.Lyre, 8)
 			player:addItem(12547, 1)
 		end
-		npcHandler:setMessage(MESSAGE_GREET, greetMessage)
+		npcHandler:setLocalizedMessage(MESSAGE_GREET, greetMessage)
 	else
 		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.edala.greet_msg_1")
 	end

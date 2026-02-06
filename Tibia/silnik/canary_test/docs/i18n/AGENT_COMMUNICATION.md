@@ -87,6 +87,63 @@
   - `i18n/en/scripts.json`
   - `i18n/en/talkactions.json`
 
+### 2026-02-06 – Agent (Codex) ➜ Kolejni Agenci (Batch 3)
+
+**Zakres tej iteracji:**
+- Kolejna redukcja `npcHandler:setMessage(...)` przez migrację przypadków single-message do `setLocalizedMessage(...)`.
+- Zmienione NPC:
+  - `corym_worker_01.lua`
+  - `corym_worker_02.lua`
+  - `corym_worker_03.lua`
+  - `corym_worker_04.lua`
+  - `corym_worker_05.lua`
+  - `corym_slave.lua`
+  - `corym_butler.lua`
+  - `corym_footman.lua`
+  - `corym_servant.lua` (częściowo: 3 jedno-liniowe greety; 1 blok multi-message zostawiony)
+  - `eustacio.lua`
+  - `charos.lua`
+  - `testserver_assistant.lua`
+  - `garamond.lua`
+  - `plunderpurse.lua`
+  - `ser_tybald.lua`
+  - `flora.lua`
+
+**Nowe/uzupełnione klucze EN (`i18n/en/npc.json`):**
+- `npc.corym_worker_01.greet_msg_2`
+- `npc.corym_worker_02.greet_msg_2`
+- `npc.corym_worker_03.greet_msg_2`
+- `npc.corym_worker_04.farewell_msg_1`
+- `npc.corym_worker_04.greet_msg_1`
+- `npc.corym_worker_04.greet_msg_2`
+- `npc.corym_worker_05.greet_msg_2`
+- `npc.corym_slave.greet_msg_2`
+- `npc.corym_butler.greet_msg_2`
+- `npc.corym_footman.greet_msg_2`
+- `npc.corym_servant.greet_msg_2`
+- `npc.corym_servant.greet_msg_3`
+- `npc.corym_servant.greet_msg_4`
+- `npc.eustacio.greet_msg_2`
+- `npc.charos.greet_msg_1`
+- `npc.testserver_assistant.greet_msg_1`
+- `npc.garamond.greet_msg_1`
+- `npc.ser_tybald.greet_msg_1`
+- `npc.flora.greet_msg_1`
+
+**Stan po batchu 3:**
+- `npcHandler:setMessage(...)` (data + data-otservbr-global): **19** (było **37**)
+- `npcHandler:setMessage(...)` tylko NPC global: **18** (było **36**)
+- literalne `setMessage(MESSAGE_..., "..."|{...})` w NPC global: **16** (było **29**)
+- bloki NPC `text = {...}` / `text = "..."`: **364** (bez zmian)
+- `sendCancelMessage(RETURNVALUE_*)`: **283**
+
+**Co zostało (priorytet):**
+1. Pozostałe `setMessage` w NPC to głównie multi-message i/lub dynamiczne warianty:
+   - `corym_servant`, `corym_ratter`, `quandons_ghost`, `jack`, `zlak`, `mr._west`, `klom_stonecutter`, `vascalir`, `the_empress`, `jamesfrancis`, `al_dee`, `edala`, `emael`, `arkulius`
+2. Dwa celowe przypadki `setMessage(..., "")`:
+   - `flora.lua`
+   - `a_starving_dog.lua`
+
 ### Agent 2 -> Agent 1 (NPC Migration N-Z)
 
 **Status Report:**

@@ -61,6 +61,7 @@ void GameFunctions::init(lua_State* L) {
 	Lua::registerMethod(L, "Game", "setWorldType", GameFunctions::luaGameSetWorldType);
 
 	Lua::registerMethod(L, "Game", "getReturnMessage", GameFunctions::luaGameGetReturnMessage);
+	Lua::registerMethod(L, "Game", "getReturnMessageKey", GameFunctions::luaGameGetReturnMessageKey);
 
 	Lua::registerMethod(L, "Game", "createItem", GameFunctions::luaGameCreateItem);
 	Lua::registerMethod(L, "Game", "createContainer", GameFunctions::luaGameCreateContainer);
@@ -378,6 +379,13 @@ int GameFunctions::luaGameGetReturnMessage(lua_State* L) {
 	// Game.getReturnMessage(value)
 	const ReturnValue value = Lua::getNumber<ReturnValue>(L, 1);
 	Lua::pushString(L, getReturnMessage(value));
+	return 1;
+}
+
+int GameFunctions::luaGameGetReturnMessageKey(lua_State* L) {
+	// Game.getReturnMessageKey(value)
+	const ReturnValue value = Lua::getNumber<ReturnValue>(L, 1);
+	Lua::pushString(L, getReturnMessageI18nKey(value));
 	return 1;
 }
 

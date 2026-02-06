@@ -42,6 +42,7 @@ private:
 	static int luaGameSetWorldType(lua_State* L);
 
 	static int luaGameGetReturnMessage(lua_State* L);
+	static int luaGameGetReturnMessageKey(lua_State* L);
 
 	static int luaGameCreateItem(lua_State* L);
 	static int luaGameCreateContainer(lua_State* L);

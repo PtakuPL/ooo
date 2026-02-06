@@ -192,7 +192,7 @@ function carpets.onUse(player, item, fp, target, toPosition, isHotkey)
 
 		for k, v in pairs(carpetItems) do
 			if k ~= item.itemid and tile:getItemCountById(k) > 0 then
-				player:sendCancelMessage(Game.getReturnMessage(RETURNVALUE_NOTPOSSIBLE))
+				player:sendLocalizedTextMessage(MESSAGE_FAILURE, Game.getReturnMessageKey(RETURNVALUE_NOTPOSSIBLE))
 				return true
 			end
 		end

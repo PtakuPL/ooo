@@ -43,7 +43,9 @@ end
 
 function Player.sendCancelMessage(self, message)
 	if type(message) == "number" then
-		message = Game.getReturnMessage(message)
+		-- ReturnValue enum → i18n key → localized message
+		local key = Game.getReturnMessageKey(message)
+		return self:sendLocalizedTextMessage(MESSAGE_FAILURE, key)
 	end
 	return self:sendTextMessage(MESSAGE_FAILURE, message)
 end

@@ -62,14 +62,14 @@ npcType.onCloseChannel = function(npc, creature)
 end
 
 local greetMsg = {
-	"...if the expected constant is higher than... Hmmm, who are you?? What do you want?",
-	"...then I could transform a spell to bend... How can anyone expect me to work under these conditions?? What do you want?",
-	"...if my calculations are correct, I will be able to revive... Arrgghh!! What do you want?",
+	"npc.arkulius.greet_msg_1",
+	"npc.arkulius.greet_msg_2",
+	"npc.arkulius.greet_msg_3",
 }
 
 local function greetCallback(npc, creature)
 	local playerId = creature:getId()
-	npcHandler:setMessage(MESSAGE_GREET, greetMsg[math.random(#greetMsg)])
+	npcHandler:setLocalizedMessage(MESSAGE_GREET, greetMsg[math.random(#greetMsg)])
 	npcHandler:setTopic(playerId, 0)
 	return true
 end

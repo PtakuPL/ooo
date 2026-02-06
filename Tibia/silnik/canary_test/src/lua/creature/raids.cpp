@@ -326,7 +326,12 @@ bool AnnounceEvent::configureRaidEvent(const pugi::xml_node &eventNode) {
 }
 
 bool AnnounceEvent::executeEvent() {
-	g_game().broadcastMessage(message, messageType);
+	// i18n: send localized message to each player individually
+	for (const auto &[id, player] : g_game().getPlayers()) {
+		if (player) {
+			player->sendLocalizedTextMessage(messageType, message);
+		}
+	}
 	g_webhook().sendMessage(fmt::format(":space_invader: {}", message));
 	return true;
 }

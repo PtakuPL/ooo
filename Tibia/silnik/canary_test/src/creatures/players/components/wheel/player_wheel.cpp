@@ -1170,7 +1170,7 @@ void PlayerWheel::destroyGem(uint16_t index) {
 		auto returnValue = g_game().internalPlayerAddItem(m_player.getPlayer(), fragmentsItem, false, CONST_SLOT_WHEREEVER);
 		if (returnValue != RETURNVALUE_NOERROR) {
 			g_logger().error("Failed to add {} lesser fragments to player with name {}", lesserFragments, m_player.getName());
-			m_player.sendCancelMessage(getReturnMessage(RETURNVALUE_CONTACTADMINISTRATOR));
+			m_player.sendCancelMessage(RETURNVALUE_CONTACTADMINISTRATOR);
 			return;
 		}
 		g_logger().debug("[{}] Player {} destroyed a gem and received {} lesser fragments", std::source_location::current().function_name(), m_player.getName(), lesserFragments);
@@ -1181,7 +1181,7 @@ void PlayerWheel::destroyGem(uint16_t index) {
 		auto returnValue = g_game().internalPlayerAddItem(m_player.getPlayer(), fragmentsItem, false, CONST_SLOT_WHEREEVER);
 		if (returnValue != RETURNVALUE_NOERROR) {
 			g_logger().error("Failed to add {} greater fragments to player with name {}", greaterFragments, m_player.getName());
-			m_player.sendCancelMessage(getReturnMessage(RETURNVALUE_CONTACTADMINISTRATOR));
+			m_player.sendCancelMessage(RETURNVALUE_CONTACTADMINISTRATOR);
 			return;
 		}
 		g_logger().debug("[{}] Player {} destroyed a gem and received {} greater fragments", std::source_location::current().function_name(), m_player.getName(), greaterFragments);

@@ -1564,6 +1564,276 @@ const char* getReturnMessage(ReturnValue value) {
 	}
 }
 
+const char* getReturnMessageI18nKey(ReturnValue value) {
+	switch (value) {
+		case RETURNVALUE_NOERROR:
+			return "cpp.returnvalue.no_error";
+
+		case RETURNVALUE_NOTBOUGHTINSTORE:
+			return "cpp.returnvalue.not_bought_in_store";
+
+		case RETURNVALUE_ITEMCANNOTBEMOVEDPOUCH:
+			return "cpp.returnvalue.item_cannot_be_moved_pouch";
+
+		case RETURNVALUE_ITEMCANNOTBEMOVEDTHERE:
+			return "cpp.returnvalue.item_cannot_be_moved_there";
+
+		case RETURNVALUE_REWARDCHESTISEMPTY:
+			return "cpp.returnvalue.reward_chest_is_empty";
+
+		case RETURNVALUE_DESTINATIONOUTOFREACH:
+			return "cpp.returnvalue.destination_out_of_reach";
+
+		case RETURNVALUE_NOTMOVABLE:
+			return "cpp.returnvalue.not_movable";
+
+		case RETURNVALUE_DROPTWOHANDEDITEM:
+			return "cpp.returnvalue.drop_two_handed_item";
+
+		case RETURNVALUE_BOTHHANDSNEEDTOBEFREE:
+			return "cpp.returnvalue.both_hands_need_to_be_free";
+
+		case RETURNVALUE_CANNOTBEDRESSED:
+			return "cpp.returnvalue.cannot_be_dressed";
+
+		case RETURNVALUE_PUTTHISOBJECTINYOURHAND:
+			return "cpp.returnvalue.put_this_object_in_your_hand";
+
+		case RETURNVALUE_PUTTHISOBJECTINBOTHHANDS:
+			return "cpp.returnvalue.put_this_object_in_both_hands";
+
+		case RETURNVALUE_CANONLYUSEONEWEAPON:
+			return "cpp.returnvalue.can_only_use_one_weapon";
+
+		case RETURNVALUE_TOOFARAWAY:
+			return "cpp.returnvalue.too_far_away";
+
+		case RETURNVALUE_FIRSTGODOWNSTAIRS:
+			return "cpp.returnvalue.first_go_downstairs";
+
+		case RETURNVALUE_FIRSTGOUPSTAIRS:
+			return "cpp.returnvalue.first_go_upstairs";
+
+		case RETURNVALUE_NOTENOUGHCAPACITY:
+			return "cpp.returnvalue.not_enough_capacity";
+
+		case RETURNVALUE_CONTAINERNOTENOUGHROOM:
+			return "cpp.returnvalue.container_not_enough_room";
+
+		case RETURNVALUE_ONLYAMMOINQUIVER:
+			return "cpp.returnvalue.only_ammo_in_quiver";
+
+		case RETURNVALUE_CREATUREBLOCK:
+		case RETURNVALUE_NEEDEXCHANGE:
+		case RETURNVALUE_NOTENOUGHROOM:
+			return "cpp.returnvalue.not_enough_room";
+
+		case RETURNVALUE_CANNOTPICKUP:
+			return "cpp.returnvalue.cannot_pickup";
+
+		case RETURNVALUE_CANNOTTHROW:
+			return "cpp.returnvalue.cannot_throw";
+
+		case RETURNVALUE_THEREISNOWAY:
+			return "cpp.returnvalue.there_is_no_way";
+
+		case RETURNVALUE_THISISIMPOSSIBLE:
+			return "cpp.returnvalue.this_is_impossible";
+
+		case RETURNVALUE_PLAYERISPZLOCKED:
+			return "cpp.returnvalue.player_is_pz_locked";
+
+		case RETURNVALUE_PLAYERISNOTINVITED:
+			return "cpp.returnvalue.player_is_not_invited";
+
+		case RETURNVALUE_CREATUREDOESNOTEXIST:
+			return "cpp.returnvalue.creature_does_not_exist";
+
+		case RETURNVALUE_DEPOTISFULL:
+			return "cpp.returnvalue.depot_is_full";
+
+		case RETURNVALUE_CONTAINERISFULL:
+			return "cpp.returnvalue.container_is_full";
+
+		case RETURNVALUE_CANNOTUSETHISOBJECT:
+			return "cpp.returnvalue.cannot_use_this_object";
+
+		case RETURNVALUE_PLAYERWITHTHISNAMEISNOTONLINE:
+			return "cpp.returnvalue.player_with_this_name_is_not_online";
+
+		case RETURNVALUE_NOTREQUIREDLEVELTOUSERUNE:
+			return "cpp.returnvalue.not_required_level_to_use_rune";
+
+		case RETURNVALUE_YOUAREALREADYTRADING:
+			return "cpp.returnvalue.you_are_already_trading";
+
+		case RETURNVALUE_THISPLAYERISALREADYTRADING:
+			return "cpp.returnvalue.this_player_is_already_trading";
+
+		case RETURNVALUE_YOUMAYNOTLOGOUTDURINGAFIGHT:
+			return "cpp.returnvalue.you_may_not_logout_during_a_fight";
+
+		case RETURNVALUE_DIRECTPLAYERSHOOT:
+			return "cpp.returnvalue.direct_player_shoot";
+
+		case RETURNVALUE_NOTENOUGHLEVEL:
+			return "cpp.returnvalue.not_enough_level";
+
+		case RETURNVALUE_NOTENOUGHMAGICLEVEL:
+			return "cpp.returnvalue.not_enough_magic_level";
+
+		case RETURNVALUE_NOTENOUGHMANA:
+			return "cpp.returnvalue.not_enough_mana";
+
+		case RETURNVALUE_NOTENOUGHSOUL:
+			return "cpp.returnvalue.not_enough_soul";
+
+		case RETURNVALUE_YOUAREEXHAUSTED:
+			return "cpp.returnvalue.you_are_exhausted";
+
+		case RETURNVALUE_CANONLYUSETHISRUNEONCREATURES:
+			return "cpp.returnvalue.can_only_use_this_rune_on_creatures";
+
+		case RETURNVALUE_PLAYERISNOTREACHABLE:
+			return "cpp.returnvalue.player_is_not_reachable";
+
+		case RETURNVALUE_CREATUREISNOTREACHABLE:
+			return "cpp.returnvalue.creature_is_not_reachable";
+
+		case RETURNVALUE_ACTIONNOTPERMITTEDINPROTECTIONZONE:
+			return "cpp.returnvalue.action_not_permitted_in_protection_zone";
+
+		case RETURNVALUE_YOUMAYNOTATTACKTHISPLAYER:
+			return "cpp.returnvalue.you_may_not_attack_this_player";
+
+		case RETURNVALUE_YOUMAYNOTATTACKTHISCREATURE:
+			return "cpp.returnvalue.you_may_not_attack_this_creature";
+
+		case RETURNVALUE_YOUMAYNOTATTACKAPERSONINPROTECTIONZONE:
+			return "cpp.returnvalue.you_may_not_attack_a_person_in_protection_zone";
+
+		case RETURNVALUE_YOUMAYNOTATTACKAPERSONWHILEINPROTECTIONZONE:
+			return "cpp.returnvalue.you_may_not_attack_a_person_while_in_protection_zone";
+
+		case RETURNVALUE_YOUCANONLYUSEITONCREATURES:
+			return "cpp.returnvalue.you_can_only_use_it_on_creatures";
+
+		case RETURNVALUE_TURNSECUREMODETOATTACKUNMARKEDPLAYERS:
+			return "cpp.returnvalue.turn_secure_mode_to_attack_unmarked_players";
+
+		case RETURNVALUE_YOUNEEDPREMIUMACCOUNT:
+			return "cpp.returnvalue.you_need_premium_account";
+
+		case RETURNVALUE_YOUNEEDTOLEARNTHISSPELL:
+			return "cpp.returnvalue.you_need_to_learn_this_spell";
+
+		case RETURNVALUE_YOURVOCATIONCANNOTUSETHISSPELL:
+			return "cpp.returnvalue.your_vocation_cannot_use_this_spell";
+
+		case RETURNVALUE_YOUNEEDAWEAPONTOUSETHISSPELL:
+			return "cpp.returnvalue.you_need_a_weapon_to_use_this_spell";
+
+		case RETURNVALUE_PLAYERISPZLOCKEDLEAVEPVPZONE:
+			return "cpp.returnvalue.player_is_pz_locked_leave_pvp_zone";
+
+		case RETURNVALUE_PLAYERISPZLOCKEDENTERPVPZONE:
+			return "cpp.returnvalue.player_is_pz_locked_enter_pvp_zone";
+
+		case RETURNVALUE_ACTIONNOTPERMITTEDINANOPVPZONE:
+			return "cpp.returnvalue.action_not_permitted_in_a_no_pvp_zone";
+
+		case RETURNVALUE_YOUCANNOTLOGOUTHERE:
+			return "cpp.returnvalue.you_cannot_logout_here";
+
+		case RETURNVALUE_YOUNEEDAMAGICITEMTOCASTSPELL:
+			return "cpp.returnvalue.you_need_a_magic_item_to_cast_spell";
+
+		case RETURNVALUE_CANNOTCONJUREITEMHERE:
+			return "cpp.returnvalue.cannot_conjure_item_here";
+
+		case RETURNVALUE_YOUNEEDTOSPLITYOURSPEARS:
+			return "cpp.returnvalue.you_need_to_split_your_spears";
+
+		case RETURNVALUE_NAMEISTOOAMBIGUOUS:
+			return "cpp.returnvalue.name_is_too_ambiguous";
+
+		case RETURNVALUE_CANONLYUSEONESHIELD:
+			return "cpp.returnvalue.can_only_use_one_shield";
+
+		case RETURNVALUE_NOPARTYMEMBERSINRANGE:
+			return "cpp.returnvalue.no_party_members_in_range";
+
+		case RETURNVALUE_YOUARENOTTHEOWNER:
+			return "cpp.returnvalue.you_are_not_the_owner";
+
+		case RETURNVALUE_YOUCANTOPENCORPSEADM:
+			return "cpp.returnvalue.you_cant_open_corpse_admin";
+
+		case RETURNVALUE_NOSUCHRAIDEXISTS:
+			return "cpp.returnvalue.no_such_raid_exists";
+
+		case RETURNVALUE_ANOTHERRAIDISALREADYEXECUTING:
+			return "cpp.returnvalue.another_raid_is_already_executing";
+
+		case RETURNVALUE_TRADEPLAYERFARAWAY:
+			return "cpp.returnvalue.trade_player_far_away";
+
+		case RETURNVALUE_YOUDONTOWNTHISHOUSE:
+			return "cpp.returnvalue.you_dont_own_this_house";
+
+		case RETURNVALUE_TRADEPLAYERALREADYOWNSAHOUSE:
+			return "cpp.returnvalue.trade_player_already_owns_a_house";
+
+		case RETURNVALUE_TRADEPLAYERHIGHESTBIDDER:
+			return "cpp.returnvalue.trade_player_highest_bidder";
+
+		case RETURNVALUE_YOUCANNOTTRADETHISHOUSE:
+			return "cpp.returnvalue.you_cannot_trade_this_house";
+
+		case RETURNVALUE_YOUDONTHAVEREQUIREDPROFESSION:
+			return "cpp.returnvalue.you_dont_have_required_profession";
+
+		case RETURNVALUE_NOTENOUGHFISTLEVEL:
+			return "cpp.returnvalue.not_enough_fist_level";
+
+		case RETURNVALUE_NOTENOUGHCLUBLEVEL:
+			return "cpp.returnvalue.not_enough_club_level";
+
+		case RETURNVALUE_NOTENOUGHSWORDLEVEL:
+			return "cpp.returnvalue.not_enough_sword_level";
+
+		case RETURNVALUE_NOTENOUGHAXELEVEL:
+			return "cpp.returnvalue.not_enough_axe_level";
+
+		case RETURNVALUE_NOTENOUGHDISTANCELEVEL:
+			return "cpp.returnvalue.not_enough_distance_level";
+
+		case RETURNVALUE_NOTENOUGHSHIELDLEVEL:
+			return "cpp.returnvalue.not_enough_shield_level";
+
+		case RETURNVALUE_NOTENOUGHFISHLEVEL:
+			return "cpp.returnvalue.not_enough_fish_level";
+
+		case RETURNVALUE_NOTPOSSIBLE:
+			return "cpp.returnvalue.not_possible";
+
+		case RETURNVALUE_REWARDCONTAINERISEMPTY:
+			return "cpp.returnvalue.reward_container_is_empty";
+
+		case RETURNVALUE_CONTACTADMINISTRATOR:
+			return "cpp.returnvalue.contact_administrator";
+
+		case RETURNVALUE_ITEMISNOTYOURS:
+			return "cpp.returnvalue.item_is_not_yours";
+
+		case RETURNVALUE_ITEMUNTRADEABLE:
+			return "cpp.returnvalue.item_untradeable";
+
+		default:
+			return "cpp.returnvalue.unknown_error";
+	}
+}
+
 int64_t OTSYSTIME = 0;
 void UPDATE_OTSYS_TIME() {
 	OTSYSTIME = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();

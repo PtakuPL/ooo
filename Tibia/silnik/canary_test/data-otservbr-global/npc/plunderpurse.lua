@@ -406,11 +406,7 @@ keywordHandler:addKeyword({ "wentworth" }, StdModule.say, {
 	i18nKey = "npc.plunderpurse.stdmod_21",
 })
 
-npcHandler:setMessage(
-	MESSAGE_GREET,
-	"Welcome, young adventurer! Harr! {Deposit} your gold or {withdraw} \z
-	your money from your bank account. I can also explain the functions of your {bank} account to ya."
-)
+npcHandler:setLocalizedMessage(MESSAGE_GREET, "npc.plunderpurse.greet_msg_1")
 NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.plunderpurse.farewell_msg_1")
 NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.plunderpurse.walkaway_msg_1")
 

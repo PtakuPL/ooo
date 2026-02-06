@@ -152,6 +152,7 @@ CombatType_t indexToCombatType(size_t v);
 ItemAttribute_t stringToItemAttribute(const std::string &str);
 
 const char* getReturnMessage(ReturnValue value);
+const char* getReturnMessageI18nKey(ReturnValue value);
 
 void sleep_for(uint64_t ms);
 void capitalizeWords(std::string &source);

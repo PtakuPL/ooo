@@ -74,12 +74,7 @@ local function greetCallback(npc, creature)
 		npcHandler:resetNpc(creature)
 		return false
 	else
-		npcHandler:setMessage(
-			MESSAGE_GREET,
-			"Hello young friend! I can attune you to a city of your choice. \z
-		If you step to the teleporter here you will not appear in the city you came from as usual, \z
-		but the city of your choice. Is it what you wish?"
-		)
+		npcHandler:setLocalizedMessage(MESSAGE_GREET, "npc.charos.greet_msg_1")
 	end
 	return true
 end

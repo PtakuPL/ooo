@@ -113,7 +113,11 @@ local function creatureSayCallback(npc, creature, type, message)
 end
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
-npcHandler:setMessage(MESSAGE_GREET, "Hey |PLAYERNAME|. I'm Testserver Assistant and I can give {money}, {experience} and {blessing} which will be useful for testing on " .. configManager.getString(configKeys.SERVER_NAME) .. " server." .. " You can too to back to level 8 with {reset}.")
+npcHandler:setLocalizedMessage(MESSAGE_GREET, "npc.testserver_assistant.greet_msg_1", {
+	args = function(player)
+		return { player:getName(), configManager.getString(configKeys.SERVER_NAME) }
+	end,
+})
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 
 -- npcType registering the npcConfig table

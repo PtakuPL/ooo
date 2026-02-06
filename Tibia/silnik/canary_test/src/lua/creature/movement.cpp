@@ -740,7 +740,7 @@ bool MoveEvent::executeStep(const std::shared_ptr<Creature> &creature, const std
 			g_logger().warn("[{}] cannot teleport player: {}, to the same position: {} of fromPosition: {}", __FUNCTION__, player->getName(), pos.toString(), fromPosition.toString());
 			g_game().internalTeleport(player, player->getTemplePosition());
 			player->sendMagicEffect(player->getTemplePosition(), CONST_ME_TELEPORT);
-			player->sendCancelMessage(getReturnMessage(RETURNVALUE_CONTACTADMINISTRATOR));
+			player->sendCancelMessage(RETURNVALUE_CONTACTADMINISTRATOR);
 			return false;
 		}
 	}

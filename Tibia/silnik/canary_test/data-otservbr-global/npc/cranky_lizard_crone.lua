@@ -42,9 +42,9 @@ npcType.onThink = function(npc, interval)
 end
 
 -- Messages
-local newaddon = "Here you are, enjoy your brand new addon!"
-local noItems = "You do not have all the required items."
-local already = "It seems you already have this addon, don't you try to mock me son!"
+local newaddon = "npc.cranky_lizard_crone.newaddon"
+local noItems = "npc.cranky_lizard_crone.no_items"
+local already = "npc.cranky_lizard_crone.already"
 
 --WAYFARER START --
 function WayfarerFirst(npc, creature, message, keywords, parameters, node)

@@ -304,7 +304,7 @@ public:
 	static std::string getWeightDescription(const ItemType &it, uint32_t weight, uint32_t count = 1);
 
 	std::string getDescription(int32_t lookDistance) final;
-	std::string getDescriptionLocalized(int32_t lookDistance, std::string_view locale) const;
+	std::string getDescriptionLocalized(int32_t lookDistance, std::string_view locale);
 	std::string getNameDescription();
 	std::string getWeightDescription() const;
 

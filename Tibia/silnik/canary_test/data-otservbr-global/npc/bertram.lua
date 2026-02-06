@@ -65,9 +65,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:addItem(7934, 1)
 				player:setStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Mission06, 2)
 				npcHandler:say(
-					"Oh my! You look so great in your uniform! \z
-				You archpostwomen are not only daring but also beautiful. \z
-				Here take it, that's the key you wanted. Just promise to visit me now and then!",
+					"npc.bertram.key_response",
 					npc,
 					creature
 				)

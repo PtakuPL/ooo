@@ -7241,5 +7241,9 @@
   "npc.xodet.say_3": "Of course, just browse through my wares. You can also look at {}.",
   "npc.zebron.say_1": "Ok, here we go ... {}! You have lost. Bad luck. One more game?",
   "npc.zebron.say_2": "Ok, here we go ... {}! You have lost. Bad luck. One more game?",
-  "npc.zebron.say_3": "Ok, here we go ... 6! You have won {}, congratulations. One more game?"
+  "npc.zebron.say_3": "Ok, here we go ... 6! You have won {}, congratulations. One more game?",
+  "npc.cranky_lizard_crone.newaddon": "Here you are, enjoy your brand new addon!",
+  "npc.cranky_lizard_crone.no_items": "You do not have all the required items.",
+  "npc.cranky_lizard_crone.already": "It seems you already have this addon, don't you try to mock me son!",
+  "npc.bertram.key_response": "Oh my! You look so great in your uniform! You archpostwomen are not only daring but also beautiful. Here take it, that's the key you wanted. Just promise to visit me now and then!"
 }

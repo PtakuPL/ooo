@@ -3297,7 +3297,7 @@ std::string Item::getDescription(const ItemType &it, int32_t lookDistance, const
 			}
 		} else if (it.weight != 0 && it.pickupable) {
 			s << std::endl
-		  << getWeightDescription(it, it.weight);
+			  << getWeightDescription(it, it.weight);
 		}
 	}
 
@@ -3335,7 +3335,7 @@ std::string Item::getDescription(int32_t lookDistance) {
 	return getDescriptionLocalized(lookDistance, {});
 }
 
-std::string Item::getDescriptionLocalized(int32_t lookDistance, std::string_view locale) const {
+std::string Item::getDescriptionLocalized(int32_t lookDistance, std::string_view locale) {
 	const ItemType &it = items[id];
 	return getDescription(it, lookDistance, getItem(), -1, true, locale);
 }

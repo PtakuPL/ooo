@@ -12,6 +12,8 @@
 
 namespace i18n {
 
+enum class PluralCategory { One, Few, Many, Other };
+
 class Translator {
 public:
 	static Translator &getInstance();
@@ -25,6 +27,11 @@ public:
 
 	[[nodiscard]] std::string get(const std::string &key, const std::string &locale = "en") const;
 	[[nodiscard]] std::string format(const std::string &key, const std::string &locale, const std::vector<std::string> &args) const;
+
+	/// Plural-aware translation: selects key_one / key_few / key_many / key_other based on CLDR rules for @p locale.
+	/// Falls back: key+suffix → key_other → bare key.
+	[[nodiscard]] std::string plural(const std::string &key, const std::string &locale, int64_t count, const std::vector<std::string> &args = {}) const;
+	[[nodiscard]] static PluralCategory getPluralCategory(const std::string &locale, int64_t n);
 
 	// I18N: Reverse lookup — find i18n key for a known English text (books/letters/scrolls from .otbm)
 	void buildReverseTextMap(const std::string &keyPrefix = "book.otbm.") const;

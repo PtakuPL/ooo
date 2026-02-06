@@ -159,6 +159,188 @@ const std::vector<std::string> &Translator::supportedLocales() {
 	return supportedLocaleList();
 }
 
+// ---- CLDR-based plural rules ------------------------------------------------
+
+PluralCategory Translator::getPluralCategory(const std::string &locale, int64_t n) {
+	const auto absN = std::abs(n);
+	const auto mod10 = absN % 10;
+	const auto mod100 = absN % 100;
+
+	// Extract 2-letter base language from locale (e.g. "pt_BR" → "pt")
+	const std::string lang = locale.substr(0, 2);
+
+	// East Slavic: ru, uk, be — one / few / many
+	if (lang == "ru" || lang == "uk") {
+		if (mod10 == 1 && mod100 != 11) {
+			return PluralCategory::One;
+		}
+		if (mod10 >= 2 && mod10 <= 4 && (mod100 < 12 || mod100 > 14)) {
+			return PluralCategory::Few;
+		}
+		return PluralCategory::Many;
+	}
+
+	// Polish: one (n=1), few (n%10 in 2-4 && n%100 not in 12-14), many (rest)
+	if (lang == "pl") {
+		if (absN == 1) {
+			return PluralCategory::One;
+		}
+		if (mod10 >= 2 && mod10 <= 4 && (mod100 < 12 || mod100 > 14)) {
+			return PluralCategory::Few;
+		}
+		return PluralCategory::Many;
+	}
+
+	// Czech, Slovak: one (n=1), few (n in 2-4), other
+	if (lang == "cs" || lang == "sk") {
+		if (absN == 1) {
+			return PluralCategory::One;
+		}
+		if (absN >= 2 && absN <= 4) {
+			return PluralCategory::Few;
+		}
+		return PluralCategory::Other;
+	}
+
+	// Croatian, Serbian, Bosnian: same pattern as East Slavic
+	if (lang == "hr" || lang == "sr" || lang == "bs") {
+		if (mod10 == 1 && mod100 != 11) {
+			return PluralCategory::One;
+		}
+		if (mod10 >= 2 && mod10 <= 4 && (mod100 < 12 || mod100 > 14)) {
+			return PluralCategory::Few;
+		}
+		return PluralCategory::Many;
+	}
+
+	// Slovenian: one (n%100=1), few (n%100 in 2-4), other
+	if (lang == "sl") {
+		if (mod100 == 1) {
+			return PluralCategory::One;
+		}
+		if (mod100 >= 2 && mod100 <= 4) {
+			return PluralCategory::Few;
+		}
+		return PluralCategory::Other;
+	}
+
+	// Romanian: one (n=1), few (n=0 || n%100 in 2-19), other
+	if (lang == "ro") {
+		if (absN == 1) {
+			return PluralCategory::One;
+		}
+		if (absN == 0 || (mod100 >= 2 && mod100 <= 19)) {
+			return PluralCategory::Few;
+		}
+		return PluralCategory::Other;
+	}
+
+	// Lithuanian: one (n%10=1 && n%100 not in 11-19), few (n%10 in 2-9 && n%100 not in 11-19), many
+	if (lang == "lt") {
+		if (mod10 == 1 && (mod100 < 11 || mod100 > 19)) {
+			return PluralCategory::One;
+		}
+		if (mod10 >= 2 && mod10 <= 9 && (mod100 < 11 || mod100 > 19)) {
+			return PluralCategory::Few;
+		}
+		return PluralCategory::Many;
+	}
+
+	// Latvian: one (n%10=1 && n%100≠11, or n=0 in CLDR), other
+	if (lang == "lv") {
+		if (mod10 == 1 && mod100 != 11) {
+			return PluralCategory::One;
+		}
+		return PluralCategory::Other;
+	}
+
+	// Arabic: one (n=1), few (n%100 in 3-10), many (n%100 in 11-99), other
+	if (lang == "ar") {
+		if (absN == 1) {
+			return PluralCategory::One;
+		}
+		if (mod100 >= 3 && mod100 <= 10) {
+			return PluralCategory::Few;
+		}
+		if (mod100 >= 11 && mod100 <= 99) {
+			return PluralCategory::Many;
+		}
+		return PluralCategory::Other;
+	}
+
+	// Default: one / other  (en, de, es, fr, it, pt, nl, sv, da, no, fi, etc.)
+	if (absN == 1) {
+		return PluralCategory::One;
+	}
+	return PluralCategory::Other;
+}
+
+std::string Translator::plural(const std::string &key, const std::string &locale, int64_t count, const std::vector<std::string> &args) const {
+	if (key.empty()) {
+		return {};
+	}
+
+	const auto resolvedLocale = locale.empty() ? fallbackLocale : locale;
+	ensureLocaleLoaded(resolvedLocale);
+	if (resolvedLocale != fallbackLocale) {
+		ensureLocaleLoaded(fallbackLocale);
+	}
+
+	const auto cat = getPluralCategory(resolvedLocale, count);
+	static const std::string suffixes[] = { "_one", "_few", "_many", "_other" };
+	const auto &suffix = suffixes[static_cast<int>(cat)];
+
+	std::string translation;
+	{
+		std::scoped_lock lock(mutex);
+
+		// 1. Try key + category suffix in requested locale
+		translation = lookupUnlocked(resolvedLocale, key + suffix);
+
+		// 2. Fallback to key_other in requested locale
+		if (translation.empty() && suffix != "_other") {
+			translation = lookupUnlocked(resolvedLocale, key + "_other");
+		}
+
+		// 3. Fallback to bare key in requested locale
+		if (translation.empty()) {
+			translation = lookupUnlocked(resolvedLocale, key);
+		}
+
+		// 4. Same chain in fallback locale
+		if (translation.empty() && resolvedLocale != fallbackLocale) {
+			translation = lookupUnlocked(fallbackLocale, key + suffix);
+			if (translation.empty() && suffix != "_other") {
+				translation = lookupUnlocked(fallbackLocale, key + "_other");
+			}
+			if (translation.empty()) {
+				translation = lookupUnlocked(fallbackLocale, key);
+			}
+		}
+	}
+
+	if (translation.empty()) {
+		g_logger().warn("Missing plural translation for key '{}' (locale '{}', count {})", key, resolvedLocale, count);
+		return key;
+	}
+
+	if (args.empty()) {
+		return translation;
+	}
+
+	fmt::dynamic_format_arg_store<fmt::format_context> store;
+	for (const auto &arg : args) {
+		store.push_back(arg);
+	}
+
+	try {
+		return fmt::vformat(translation, store);
+	} catch (const fmt::format_error &err) {
+		g_logger().warn("Failed to format plural translation '{}' (locale '{}'): {}", key, resolvedLocale, err.what());
+		return translation;
+	}
+}
+
 void Translator::ensureLocaleLoaded(const std::string &locale) const {
 	if (locale.empty()) {
 		return;

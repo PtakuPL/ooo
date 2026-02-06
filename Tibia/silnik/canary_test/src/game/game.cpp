@@ -7298,17 +7298,13 @@ bool Game::combatChangeHealth(const std::shared_ptr<Creature> &attacker, const s
 				party->addPlayerHealing(attackerPlayer, realHealthChange);
 			}
 
-			std::stringstream ss;
-
-			ss << realHealthChange << (realHealthChange != 1 ? " hitpoints." : " hitpoint.");
-			std::string damageString = ss.str();
-
-			std::string spectatorMessage;
-
 			TextMessage message;
 			message.position = targetPos;
 			message.primary.value = realHealthChange;
 			message.primary.color = TEXTCOLOR_PASTELRED;
+
+			std::unordered_map<std::string, std::string> spectatorHealCache;
+			auto &tr = i18n::g_translator();
 
 			for (const auto &spectator : Spectators().find<Player>(targetPos)) {
 				const auto &tmpPlayer = spectator->getPlayer();
@@ -7316,41 +7312,37 @@ bool Game::combatChangeHealth(const std::shared_ptr<Creature> &attacker, const s
 					continue;
 				}
 
+				const std::string loc(tmpPlayer->getLocale().empty() ? "en" : std::string(tmpPlayer->getLocale()));
+				const std::string hpAmount = std::to_string(realHealthChange);
+
 				if (tmpPlayer == attackerPlayer && attackerPlayer != targetPlayer) {
-					ss.str({});
-					ss << "You heal " << target->getNameDescription() << " for " << damageString;
 					message.type = MESSAGE_HEALED;
-					message.text = ss.str();
+					message.text = tr.plural("cpp.combat.heal_attacker", loc, realHealthChange, {target->getNameDescription(), hpAmount});
 				} else if (tmpPlayer == targetPlayer) {
-					ss.str({});
-					if (!attacker) {
-						ss << "You were healed";
-					} else if (targetPlayer == attackerPlayer) {
-						ss << "You heal yourself";
-					} else {
-						ss << "You were healed by " << attacker->getNameDescription();
-					}
-					ss << " for " << damageString;
 					message.type = MESSAGE_HEALED;
-					message.text = ss.str();
+					if (!attacker) {
+						message.text = tr.plural("cpp.combat.heal_target_none", loc, realHealthChange, {hpAmount});
+					} else if (targetPlayer == attackerPlayer) {
+						message.text = tr.plural("cpp.combat.heal_target_self", loc, realHealthChange, {hpAmount});
+					} else {
+						message.text = tr.plural("cpp.combat.heal_target_by", loc, realHealthChange, {attacker->getNameDescription(), hpAmount});
+					}
 				} else {
-					if (spectatorMessage.empty()) {
-						ss.str({});
+					auto it = spectatorHealCache.find(loc);
+					if (it != spectatorHealCache.end()) {
+						message.text = it->second;
+					} else {
 						if (!attacker && target) {
-							ss << ucfirst(target->getNameDescription()) << " was healed";
-						} else {
-							ss << ucfirst(attacker->getNameDescription()) << " healed ";
-							if (attacker == target) {
-								ss << (targetPlayer ? targetPlayer->getReflexivePronoun() : "itself");
-							} else if (target) {
-								ss << target->getNameDescription();
-							}
+							message.text = tr.plural("cpp.combat.heal_spectator_none", loc, realHealthChange, {ucfirst(target->getNameDescription()), hpAmount});
+						} else if (attacker == target) {
+							std::string reflexive = targetPlayer ? targetPlayer->getReflexivePronoun() : "itself";
+							message.text = tr.plural("cpp.combat.heal_spectator_self", loc, realHealthChange, {ucfirst(attacker->getNameDescription()), reflexive, hpAmount});
+						} else if (target) {
+							message.text = tr.plural("cpp.combat.heal_spectator_other", loc, realHealthChange, {ucfirst(attacker->getNameDescription()), target->getNameDescription(), hpAmount});
 						}
-						ss << " for " << damageString;
-						spectatorMessage = ss.str();
+						spectatorHealCache[loc] = message.text;
 					}
 					message.type = MESSAGE_HEALED_OTHERS;
-					message.text = spectatorMessage;
 				}
 				tmpPlayer->sendTextMessage(message);
 			}
@@ -7534,12 +7526,13 @@ bool Game::combatChangeHealth(const std::shared_ptr<Creature> &attacker, const s
 
 				addMagicEffect(spectators.data(), targetPos, CONST_ME_LOSEENERGY);
 
-				std::string damageString = std::to_string(manaDamage);
-
-				std::string spectatorMessage;
-
 				message.primary.value = manaDamage;
 				message.primary.color = TEXTCOLOR_BLUE;
+
+				std::unordered_map<std::string, std::string> spectatorManaCache;
+				auto &mtr = i18n::g_translator();
+				const bool manaCrit = damage.critical;
+				const std::string manaAmount = std::to_string(manaDamage);
 
 				for (const auto &spectator : spectators) {
 					const auto &tmpPlayer = spectator->getPlayer();
@@ -7547,44 +7540,44 @@ bool Game::combatChangeHealth(const std::shared_ptr<Creature> &attacker, const s
 						continue;
 					}
 
-					if (tmpPlayer == attackerPlayer && attackerPlayer != targetPlayer) {
-						ss.str({});
-						ss << ucfirst(target->getNameDescription()) << " loses " << damageString + " mana due to your " << attackMsg << ".";
+					const std::string loc(tmpPlayer->getLocale().empty() ? "en" : std::string(tmpPlayer->getLocale()));
 
+					if (tmpPlayer == attackerPlayer && attackerPlayer != targetPlayer) {
+						std::string key = manaCrit ? "cpp.combat.mana_attacker_crit" : "cpp.combat.mana_attacker";
+						std::string text = mtr.format(key, loc, {ucfirst(target->getNameDescription()), manaAmount});
 						if (!damage.exString.empty()) {
-							ss << " (" << damage.exString << ")";
+							text += " (" + damage.exString + ")";
 						}
 						message.type = MESSAGE_DAMAGE_DEALT;
-						message.text = ss.str();
+						message.text = std::move(text);
 					} else if (tmpPlayer == targetPlayer) {
-						ss.str({});
-						ss << "You lose " << damageString << " mana";
 						if (!attacker) {
-							ss << '.';
+							message.text = mtr.format("cpp.combat.mana_target_none", loc, {manaAmount});
 						} else if (targetPlayer == attackerPlayer) {
-							ss << " due to your own " << attackMsg << ".";
+							std::string key = manaCrit ? "cpp.combat.mana_target_self_crit" : "cpp.combat.mana_target_self";
+							message.text = mtr.format(key, loc, {manaAmount});
 						} else {
-							ss << " due to an " << attackMsg << " by " << attacker->getNameDescription() << '.';
+							std::string key = manaCrit ? "cpp.combat.mana_target_by_crit" : "cpp.combat.mana_target_by";
+							message.text = mtr.format(key, loc, {manaAmount, attacker->getNameDescription()});
 						}
 						message.type = MESSAGE_DAMAGE_RECEIVED;
-						message.text = ss.str();
 					} else {
-						if (spectatorMessage.empty()) {
-							ss.str({});
-							ss << ucfirst(target->getNameDescription()) << " loses " << damageString + " mana";
-							if (attacker) {
-								ss << " due to ";
-								if (attacker == target) {
-									ss << (targetPlayer ? targetPlayer->getPossessivePronoun() : "its") << " own attack";
-								} else {
-									ss << "an " << attackMsg << " by " << attacker->getNameDescription();
-								}
+						auto it = spectatorManaCache.find(loc);
+						if (it != spectatorManaCache.end()) {
+							message.text = it->second;
+						} else {
+							if (!attacker) {
+								message.text = mtr.format("cpp.combat.mana_spectator_none", loc, {ucfirst(target->getNameDescription()), manaAmount});
+							} else if (attacker == target) {
+								std::string poss = targetPlayer ? targetPlayer->getPossessivePronoun() : "its";
+								message.text = mtr.format("cpp.combat.mana_spectator_self", loc, {ucfirst(target->getNameDescription()), manaAmount, poss});
+							} else {
+								std::string key = manaCrit ? "cpp.combat.mana_spectator_by_crit" : "cpp.combat.mana_spectator_by";
+								message.text = mtr.format(key, loc, {ucfirst(target->getNameDescription()), manaAmount, attacker->getNameDescription()});
 							}
-							ss << '.';
-							spectatorMessage = ss.str();
+							spectatorManaCache[loc] = message.text;
 						}
 						message.type = MESSAGE_DAMAGE_OTHERS;
-						message.text = spectatorMessage;
 					}
 					tmpPlayer->sendTextMessage(message);
 				}
@@ -7737,12 +7730,7 @@ void Game::sendMessages(
 			}
 		}
 	}
-	std::stringstream ss;
-
-	ss << realDamage << (realDamage != 1 ? " hitpoints" : " hitpoint");
-	std::string damageString = ss.str();
-
-	std::string spectatorMessage;
+	std::unordered_map<std::string, std::string> spectatorDmgCache;
 
 	for (const std::shared_ptr<Creature> &spectator : spectators) {
 		std::shared_ptr<Player> tmpPlayer = spectator->getPlayer();
@@ -7750,14 +7738,23 @@ void Game::sendMessages(
 			continue;
 		}
 
+		const std::string loc(tmpPlayer->getLocale().empty() ? "en" : std::string(tmpPlayer->getLocale()));
+
 		if (tmpPlayer == attackerPlayer && attackerPlayer != targetPlayer) {
 			const auto &boots = tmpPlayer->getInventoryItem(CONST_SLOT_FEET);
 			bool amplifiedFatal = boots ? boots->getTier() > 0 : false;
-			buildMessageAsAttacker(target, damage, message, ss, damageString, amplifiedFatal, attackerPlayer);
+			buildMessageAsAttacker(target, damage, message, realDamage, amplifiedFatal, attackerPlayer, loc);
 		} else if (tmpPlayer == targetPlayer) {
-			buildMessageAsTarget(attacker, damage, attackerPlayer, targetPlayer, message, ss, damageString);
+			buildMessageAsTarget(attacker, damage, attackerPlayer, targetPlayer, message, realDamage, loc);
 		} else {
-			buildMessageAsSpectator(attacker, target, damage, targetPlayer, message, ss, damageString, spectatorMessage);
+			auto it = spectatorDmgCache.find(loc);
+			if (it != spectatorDmgCache.end()) {
+				message.type = MESSAGE_DAMAGE_OTHERS;
+				message.text = it->second;
+			} else {
+				buildMessageAsSpectator(attacker, target, damage, targetPlayer, message, realDamage, loc);
+				spectatorDmgCache[loc] = message.text;
+			}
 		}
 		tmpPlayer->sendTextMessage(message);
 	}
@@ -7765,98 +7762,104 @@ void Game::sendMessages(
 
 void Game::buildMessageAsSpectator(
 	const std::shared_ptr<Creature> &attacker, const std::shared_ptr<Creature> &target, const CombatDamage &damage,
-	const std::shared_ptr<Player> &targetPlayer, TextMessage &message, std::stringstream &ss,
-	const std::string &damageString, std::string &spectatorMessage
+	const std::shared_ptr<Player> &targetPlayer, TextMessage &message,
+	int32_t realDamage, const std::string &locale
 ) const {
-	if (spectatorMessage.empty()) {
-		ss.str({});
-		auto attackMsg = damage.critical ? "critical " : "";
-		auto article = damage.critical ? "a" : "an";
-		ss << ucfirst(target->getNameDescription()) << " loses " << damageString;
-		if (attacker) {
-			ss << " due to ";
-			if (attacker == target) {
-				if (targetPlayer) {
-					ss << targetPlayer->getPossessivePronoun() << " own " << attackMsg << "attack";
-				} else {
-					ss << "its own " << attackMsg << "attack";
-				}
-			} else {
-				ss << article << " " << attackMsg << "attack by " << attacker->getNameDescription();
-			}
-		}
-		ss << '.';
-		if (damage.extension) {
-			ss << " " << damage.exString;
-		}
-		spectatorMessage = ss.str();
+	auto &tr = i18n::g_translator();
+	const std::string targetName = ucfirst(target->getNameDescription());
+	const std::string amount = std::to_string(realDamage);
+
+	std::string text;
+	if (!attacker) {
+		text = tr.plural("cpp.combat.dmg_spectator_none", locale, realDamage, {targetName, amount});
+	} else if (attacker == target) {
+		std::string poss = targetPlayer ? targetPlayer->getPossessivePronoun() : "its";
+		std::string key = damage.critical ? "cpp.combat.dmg_spectator_self_crit" : "cpp.combat.dmg_spectator_self";
+		text = tr.plural(key, locale, realDamage, {targetName, amount, poss});
+	} else {
+		std::string key = damage.critical ? "cpp.combat.dmg_spectator_by_crit" : "cpp.combat.dmg_spectator_by";
+		text = tr.plural(key, locale, realDamage, {targetName, amount, attacker->getNameDescription()});
+	}
+
+	if (damage.extension) {
+		text += " " + damage.exString;
 	}
 
 	message.type = MESSAGE_DAMAGE_OTHERS;
-	message.text = spectatorMessage;
+	message.text = std::move(text);
 }
 
 void Game::buildMessageAsTarget(
 	const std::shared_ptr<Creature> &attacker, const CombatDamage &damage, const std::shared_ptr<Player> &attackerPlayer,
-	const std::shared_ptr<Player> &targetPlayer, TextMessage &message, std::stringstream &ss,
-	const std::string &damageString
+	const std::shared_ptr<Player> &targetPlayer, TextMessage &message,
+	int32_t realDamage, const std::string &locale
 ) const {
-	ss.str({});
+	auto &tr = i18n::g_translator();
+	const std::string amount = std::to_string(realDamage);
+
 	const auto &monster = attacker ? attacker->getMonster() : nullptr;
 	bool handleSoulPit = monster ? monster->getSoulPit() && monster->getForgeStack() == 40 : false;
+	bool showCrit = damage.critical && !handleSoulPit;
 
-	std::string attackMsg = damage.critical && !handleSoulPit ? "critical " : "";
-	std::string article = damage.critical && !handleSoulPit ? "a" : "an";
-
-	ss << "You lose " << damageString;
+	std::string text;
 	if (!attacker) {
-		ss << '.';
+		text = tr.plural("cpp.combat.dmg_target_none", locale, realDamage, {amount});
 	} else if (targetPlayer == attackerPlayer) {
-		ss << " due to your own " << attackMsg << "attack.";
+		std::string key = showCrit ? "cpp.combat.dmg_target_self_crit" : "cpp.combat.dmg_target_self";
+		text = tr.plural(key, locale, realDamage, {amount});
 	} else {
-		ss << " due to " << article << " " << attackMsg << "attack by " << attacker->getNameDescription() << '.';
+		std::string key = showCrit ? "cpp.combat.dmg_target_by_crit" : "cpp.combat.dmg_target_by";
+		text = tr.plural(key, locale, realDamage, {amount, attacker->getNameDescription()});
 	}
+
 	if (damage.extension) {
-		ss << " " << damage.exString;
+		text += " " + damage.exString;
 	}
 	if (handleSoulPit && damage.critical) {
-		ss << " (Soulpit Crit)";
+		text += tr.get("cpp.combat.soulpit_crit", locale);
 	}
+
 	message.type = MESSAGE_DAMAGE_RECEIVED;
-	message.text = ss.str();
+	message.text = std::move(text);
 }
 
 void Game::buildMessageAsAttacker(
 	const std::shared_ptr<Creature> &target, const CombatDamage &damage, TextMessage &message,
-	std::stringstream &ss, const std::string &damageString, bool amplified, const std::shared_ptr<Player> &attackerPlayer
+	int32_t realDamage, bool amplified, const std::shared_ptr<Player> &attackerPlayer,
+	const std::string &locale
 ) const {
-	ss.str({});
-	ss << ucfirst(target->getNameDescription()) << " loses " << damageString << " due to your " << (damage.critical ? "critical " : " ") << "attack.";
+	auto &tr = i18n::g_translator();
+	const std::string targetName = ucfirst(target->getNameDescription());
+	const std::string amount = std::to_string(realDamage);
+
+	std::string key = damage.critical ? "cpp.combat.dmg_attacker_crit" : "cpp.combat.dmg_attacker";
+	std::string text = tr.plural(key, locale, realDamage, {targetName, amount});
 
 	if (damage.critical && target->getMonster() && attackerPlayer) {
 		const auto &targetMonster = target->getMonster();
-		static const std::pair<charmRune_t, std::string_view> charms[] = {
-			{ CHARM_LOW, " (low blow charm)" },
-			{ CHARM_SAVAGE, " (savage blow charm)" }
+		static const std::pair<charmRune_t, std::string_view> charmKeys[] = {
+			{ CHARM_LOW, "cpp.combat.charm_low_blow" },
+			{ CHARM_SAVAGE, "cpp.combat.charm_savage_blow" }
 		};
 
-		for (const auto &[charmType, charmText] : charms) {
+		for (const auto &[charmType, charmKey] : charmKeys) {
 			if (targetMonster->checkCanApplyCharm(attackerPlayer, charmType)) {
-				ss << charmText;
+				text += tr.get(std::string(charmKey), locale);
 				break;
 			}
 		}
 	}
 
 	if (damage.extension) {
-		ss << " " << damage.exString;
+		text += " " + damage.exString;
 	}
 
 	if (damage.fatal) {
-		ss << (amplified ? " (Amplified Onslaught)" : " (Onslaught)");
+		text += tr.get(amplified ? "cpp.combat.amplified_onslaught" : "cpp.combat.onslaught", locale);
 	}
+
 	message.type = MESSAGE_DAMAGE_DEALT;
-	message.text = ss.str();
+	message.text = std::move(text);
 }
 
 void Game::sendEffects(

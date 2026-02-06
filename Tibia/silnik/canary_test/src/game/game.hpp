@@ -908,19 +908,20 @@ private:
 
 	void buildMessageAsAttacker(
 		const std::shared_ptr<Creature> &target, const CombatDamage &damage, TextMessage &message,
-		std::stringstream &ss, const std::string &damageString, bool amplified = false, const std::shared_ptr<Player> &attackerPlayer = nullptr
+		int32_t realDamage, bool amplified, const std::shared_ptr<Player> &attackerPlayer,
+		const std::string &locale
 	) const;
 
 	void buildMessageAsTarget(
 		const std::shared_ptr<Creature> &attacker, const CombatDamage &damage, const std::shared_ptr<Player> &attackerPlayer,
-		const std::shared_ptr<Player> &targetPlayer, TextMessage &message, std::stringstream &ss,
-		const std::string &damageString
+		const std::shared_ptr<Player> &targetPlayer, TextMessage &message,
+		int32_t realDamage, const std::string &locale
 	) const;
 
 	void buildMessageAsSpectator(
 		const std::shared_ptr<Creature> &attacker, const std::shared_ptr<Creature> &target, const CombatDamage &damage,
-		const std::shared_ptr<Player> &targetPlayer, TextMessage &message, std::stringstream &ss,
-		const std::string &damageString, std::string &spectatorMessage
+		const std::shared_ptr<Player> &targetPlayer, TextMessage &message,
+		int32_t realDamage, const std::string &locale
 	) const;
 
 	void unwrapItem(const std::shared_ptr<Item> &item, uint16_t unWrapId, const std::shared_ptr<House> &house, const std::shared_ptr<Player> &player);

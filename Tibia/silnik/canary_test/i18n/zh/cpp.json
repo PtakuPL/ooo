@@ -458,5 +458,7 @@
   "cpp.combat.charm_savage_blow": " (savage blow charm)",
   "cpp.combat.soulpit_crit": " (Soulpit Crit)",
   "cpp.combat.onslaught": " (Onslaught)",
-  "cpp.combat.amplified_onslaught": " (Amplified Onslaught)"
+  "cpp.combat.amplified_onslaught": " (Amplified Onslaught)",
+  "cpp.game.hazard_tag": " (Hazard)",
+  "cpp.game.store_item_description": "You bought this item in the Store.\nUnwrap it in your own house to create a <{0}>."
 }

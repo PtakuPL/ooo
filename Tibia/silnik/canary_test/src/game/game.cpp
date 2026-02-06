@@ -4633,7 +4633,8 @@ std::shared_ptr<Item> Game::wrapItem(const std::shared_ptr<Item> &item, const st
 		newItem->setAttribute(ItemAttribute_t::STORE, attributeStore);
 	}
 	newItem->setCustomAttribute("unWrapId", static_cast<int64_t>(oldItemID));
-	newItem->setAttribute(ItemAttribute_t::DESCRIPTION, "You bought this item in the Store.\nUnwrap it in your own house to create a <" + itemName + ">.");
+	auto &storetr = i18n::g_translator();
+	newItem->setAttribute(ItemAttribute_t::DESCRIPTION, storetr.format("cpp.game.store_item_description", "en", {itemName}));
 	if (hiddenCharges > 0) {
 		newItem->setAttribute(ItemAttribute_t::DATE, hiddenCharges);
 	}
@@ -7124,13 +7125,14 @@ void Game::notifySpectators(const CreatureVector &spectators, const Position &ta
 			const std::string loc(tmpPlayer->getLocale().empty() ? "en" : std::string(tmpPlayer->getLocale()));
 			auto &tr = i18n::g_translator();
 			std::string monsterName = ucfirst(targetMonster->getNameDescription());
+			const std::string hazardTag = tr.get("cpp.game.hazard_tag", loc);
 			if (tmpPlayer == attackerPlayer) {
 				std::string cancelMsg = tr.format("cpp.game.hazard_dodged_your", loc, {monsterName});
 				attackerPlayer->sendCancelMessage(cancelMsg);
-				attackerPlayer->sendTextMessage(MESSAGE_DAMAGE_OTHERS, cancelMsg + " (Hazard)");
+				attackerPlayer->sendTextMessage(MESSAGE_DAMAGE_OTHERS, cancelMsg + hazardTag);
 			} else {
 				std::string msg = tr.format("cpp.game.hazard_dodged_by", loc, {monsterName, attackerPlayer->getName()});
-				tmpPlayer->sendTextMessage(MESSAGE_DAMAGE_OTHERS, msg + " (Hazard)");
+				tmpPlayer->sendTextMessage(MESSAGE_DAMAGE_OTHERS, msg + hazardTag);
 			}
 		}
 		addMagicEffect(targetPos, CONST_ME_DODGE);

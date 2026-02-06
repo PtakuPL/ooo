@@ -45,6 +45,14 @@ npcType.onCloseChannel = function(npc, creature)
 	npcHandler:onCloseChannel(npc, creature)
 end
 
+local function greetCallback(npc, creature)
+	NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {
+		"npc.zlak.greet_msg_1",
+		"npc.zlak.greet_msg_2",
+	}, 1000)
+	return false
+end
+
 local function creatureSayCallback(npc, creature, type, message)
 	local player = Player(creature)
 	local playerId = player:getId()
@@ -88,10 +96,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 	return true
 end
-npcHandler:setMessage(MESSAGE_GREET, {
-	"Ah, ze human everyone iz talking about. Your victory over ze champion waz quite imprezzive. ...",
-	"Alzough, for many ziz only provez what a huge zreat you blank-zkinz ztill poze. What do you {want}?",
-})
+npcHandler:setCallback(CALLBACK_GREET, greetCallback)
 NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.zlak.farewell_msg_1")
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

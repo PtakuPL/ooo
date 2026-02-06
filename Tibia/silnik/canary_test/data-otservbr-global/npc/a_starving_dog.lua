@@ -66,7 +66,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-npcHandler:setMessage(MESSAGE_WALKAWAY, "")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.a_starving_dog.walkaway_msg_1")
 keywordHandler:addGreetKeyword({ "sniffler" }, { npcHandler = npcHandler, text = "<sniff>", i18nKey = "npc.a_starving_dog.greet_1" })
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

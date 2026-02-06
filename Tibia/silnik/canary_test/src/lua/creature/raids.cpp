@@ -14,6 +14,7 @@
 #include "game/game.hpp"
 #include "game/scheduling/dispatcher.hpp"
 #include "server/network/webhook/webhook.hpp"
+#include "utils/i18n/translator.hpp"
 #include "utils/pugicast.hpp"
 
 Raids::Raids() {
@@ -332,7 +333,10 @@ bool AnnounceEvent::executeEvent() {
 			player->sendLocalizedTextMessage(messageType, message);
 		}
 	}
-	g_webhook().sendMessage(fmt::format(":space_invader: {}", message));
+
+	// Keep webhook messages human-readable even when raid XML stores i18n keys.
+	const std::string webhookMessage = i18n::g_translator().get(message, "en");
+	g_webhook().sendMessage(fmt::format(":space_invader: {}", webhookMessage.empty() ? message : webhookMessage));
 	return true;
 }
 

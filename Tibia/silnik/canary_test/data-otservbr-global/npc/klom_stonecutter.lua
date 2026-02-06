@@ -61,6 +61,14 @@ end
 
 local count = {}
 
+local function greetCallback(npc, creature)
+	NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {
+		"npc.klom_stonecutter.greet_msg_1",
+		"npc.klom_stonecutter.greet_msg_2",
+	}, 1000)
+	return false
+end
+
 local function creatureSayCallback(npc, creature, type, message)
 	local player = Player(creature)
 	local playerId = player:getId()
@@ -249,10 +257,6 @@ keywordHandler:addKeyword({ "enemy" }, StdModule.say, {
 })
 keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.klom_stonecutter.stdmod_3" })
 
-npcHandler:setMessage(MESSAGE_GREET, {
-	"Greetings. A warning straight ahead: I don't like loiterin'. If you're not here to {help} us, you're here to waste my time. Which I consider loiterin'. Now, try and prove your {worth} to our alliance. ... ",
-	"I have sealed some of the areas far too dangerous for anyone to enter. If you can prove you're capable, you'll get an opportunity to help destroy the weird machines, pumping lava into the caves leading to the most dangerous enemies.",
-})
 NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.klom_stonecutter.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_SET_INTERACTION, onAddFocus)

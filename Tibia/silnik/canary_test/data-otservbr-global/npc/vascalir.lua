@@ -66,12 +66,13 @@ local function greetCallback(npc, creature)
 		return false
 		-- Warn if started missions and reached level 8
 	elseif player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Questline) == 1 and player:getLevel() == 8 and player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Level8Warning) == -1 then
-		npcHandler:setMessage(MESSAGE_GREET, {
-			"|PLAYERNAME| - a small word of advice before we continue this mission. You are level 8 now, while it is possible to reach higher levels while still on Rookgaard, you should consider leaving Rookgaard at about level 9. ...",
-			"You can still go on with this mission, but you won't be able to finish the quest once you've reached level 9. So only kill the monsters you absolutely have to kill - if you want to finish this quest! ...",
-			"If you don't care about that, you can also simply leave Rookgaard now and learn a vocation by talking to the oracle above the academy. It's up to you. Or - I could simply clean up your questlog, if you prefer. ...",
-			"What would you like to do? {Continue} the mission or {delete} the unfinished questline from your questlog?",
-		})
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {
+			"npc.vascalir.greet_msg_27",
+			"npc.vascalir.greet_msg_28",
+			"npc.vascalir.greet_msg_29",
+			"npc.vascalir.greet_msg_30",
+		}, 1000)
+		return false
 		-- Completed all missions
 	elseif player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Questline) == 2 then
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.vascalir.say_2")

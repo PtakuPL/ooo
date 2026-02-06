@@ -177,6 +177,110 @@
   - `flora.lua`
   - `a_starving_dog.lua`
 
+### 2026-02-06 – Agent (Codex) ➜ Kolejni Agenci (Batch 5)
+
+**Zakres tej iteracji:**
+- Domknięcie migracji `npcHandler:setMessage(...)` w `data-otservbr-global/npc` (zostało zredukowane do zera).
+- Przeniesienie ostatnich greetingów tabelarycznych do `NPC_LIB.i18n.npcSayMultiple(...)` + `return false` w callbackach.
+- Ujednolicenie pustych walkaway (`""`) do kluczy i18n.
+- Uzupełnienie brakujących kluczy EN dla dotkniętych plików (nie tylko nowe greety, ale też wcześniejsze brakujące `say_*`).
+
+**Zmodyfikowane pliki NPC:**
+- `data-otservbr-global/npc/al_dee.lua`
+- `data-otservbr-global/npc/quandons_ghost.lua`
+- `data-otservbr-global/npc/emael.lua`
+- `data-otservbr-global/npc/klom_stonecutter.lua`
+- `data-otservbr-global/npc/mr._west.lua`
+- `data-otservbr-global/npc/zlak.lua`
+- `data-otservbr-global/npc/vascalir.lua`
+- `data-otservbr-global/npc/the_empress.lua`
+- `data-otservbr-global/npc/flora.lua`
+- `data-otservbr-global/npc/a_starving_dog.lua`
+
+**Nowe/uzupełnione klucze EN (`i18n/en/npc.json`):**
+- Greet/walkaway:
+  - `npc.al_dee.greet_msg_1..2`
+  - `npc.quandons_ghost.greet_msg_2..4`
+  - `npc.emael.greet_msg_1..2`, `npc.emael.farewell_msg_1`, `npc.emael.walkaway_msg_1`
+  - `npc.klom_stonecutter.greet_msg_1..2`
+  - `npc.mr._west.greet_msg_1..4`
+  - `npc.the_empress.greet_msg_2..8`
+  - `npc.vascalir.greet_msg_27..30`
+  - `npc.zlak.greet_msg_1..2`
+  - `npc.flora.walkaway_msg_1`
+  - `npc.a_starving_dog.walkaway_msg_1`
+- Braki historyczne uzupełnione dla tych samych NPC:
+  - `npc.a_starving_dog.say_1`
+  - `npc.flora.say_1..3`
+  - `npc.emael.say_1..6`
+  - `npc.mr._west.say_1..2`
+  - `npc.vascalir.say_1..8`
+  - `npc.zlak.multi_1..12`
+  - `npc.klom_stonecutter.stdmod_1`, `npc.klom_stonecutter.multi_1..10`, `npc.klom_stonecutter.say_5..18`
+
+**Stan po batchu 5:**
+- `npcHandler:setMessage(...)` (data + data-otservbr-global): **1** (pozostał tylko helper fallback w `lib/npc/i18n.lua`)
+- `npcHandler:setMessage(...)` tylko NPC global: **0**
+- literalne `setMessage(MESSAGE_..., "..."|{...})` w NPC global: **0**
+- bloki NPC `text = {...}` / `text = "..."`: **364** (bez zmian)
+- `sendCancelMessage(RETURNVALUE_*)`: **283** (bez zmian)
+
+**Walidacja:**
+- `jq empty i18n/en/npc.json` OK
+- Brak brakujących kluczy `npc.*` dla wszystkich plików dotkniętych w Batch 5
+
+### 2026-02-06 – Agent (Codex) ➜ Kolejni Agenci (Batch 6, C++)
+
+**Zakres tej iteracji:**
+- Integracja równoległych zmian C++ wykonanych przez innych agentów (Copilot/Claude) w warstwie i18n look-description.
+- Domknięcie mapowania kluczy `cpp.look.*` wymaganych przez `item.cpp`/`game.cpp`.
+
+**Pliki C++ objęte integracją:**
+- `src/items/item.cpp`
+  - i18n dla fragmentów opisu przedmiotów (`imbuements`, `classification_tier`, duration/attributes/weight i inne `cpp.look.*`).
+  - Lokalizacja przekazywana jako `std::string_view`, a do `translator.get/format` normalizowana do `std::string` (`locStr`), aby nie łapać konwersji niejawnych.
+- `src/items/item.hpp`
+  - sygnatury helperów opisu rozszerzone o `std::string_view locale`.
+- `src/game/game.cpp`
+  - `playerLookInShop` używa `cpp.look.you_see` + `Item::getDescription(..., locale)`.
+  - locale dla `translator.get` podane jako `std::string` (`playerLocale`).
+
+**Pliki i18n:**
+- `i18n/en/cpp.json`
+  - zawiera klucze używane przez nową ścieżkę C++ (w tym `cpp.look.classification_tier`).
+
+**Walidacja:**
+- `jq empty i18n/en/cpp.json` OK
+- brak brakujących kluczy `cpp.*` używanych bezpośrednio przez:
+  - `src/items/item.cpp`
+  - `src/game/game.cpp`
+  - wynik: `missing_cpp_keys=0`
+
+**Znane ograniczenie środowiska (lokalny build):**
+- pełna kompilacja lokalnie zablokowana przez brak toolchain/deps:
+  - brak `/home/ptaku/vcpkg/scripts/buildsystems/vcpkg.cmake`
+  - brak `CURLConfig.cmake`/`curl-config.cmake`
+- To jest blokada środowiskowa, nie logiczna regresja kodu i18n.
+
+### 2026-02-06 – Agent (Codex) ➜ Kolejni Agenci (Batch 7, Raids integration)
+
+**Zakres tej iteracji:**
+- Integracja i18n raid announce z webhookiem, aby webhook nie dostawał surowych kluczy `raids.*`.
+
+**Zmiany:**
+- `src/lua/creature/raids.cpp`
+  - `AnnounceEvent::executeEvent()`:
+    - do graczy nadal idzie `sendLocalizedTextMessage(messageType, message)` (per-locale),
+    - do webhooka idzie tekst EN przez `i18n::g_translator().get(message, "en")`.
+  - dodany include: `utils/i18n/translator.hpp`.
+
+**Stan raidów (po audycie):**
+- `data-otservbr-global/raids/**/*.xml`:
+  - `message="raids.*"`: **126/126**
+  - komunikaty literalne (nie-key): **0**
+- `i18n/en/raids.json`:
+  - brak brakujących kluczy względem XML: **0**
+
 ### Agent 2 -> Agent 1 (NPC Migration N-Z)
 
 **Status Report:**

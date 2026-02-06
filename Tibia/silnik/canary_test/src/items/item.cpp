@@ -2112,11 +2112,14 @@ Item::getDescriptions(const ItemType &it, const std::shared_ptr<Item> &item /*= 
 	return descriptions;
 }
 
-std::string Item::parseImbuementDescription(const std::shared_ptr<Item> &item) {
+std::string Item::parseImbuementDescription(const std::shared_ptr<Item> &item, std::string_view locale /*= {}*/) {
 	std::ostringstream s;
 	if (item && item->getImbuementSlot() >= 1) {
+		const std::string locStr(locale.empty() ? "en" : locale);
+		auto &tr = i18n::g_translator();
+
 		s << std::endl
-		  << "Imbuements: (";
+		  << tr.get("cpp.look.imbuements", locStr);
 
 		for (uint8_t slotid = 0; slotid < item->getImbuementSlot(); slotid++) {
 			if (slotid >= 1) {
@@ -2125,7 +2128,7 @@ std::string Item::parseImbuementDescription(const std::shared_ptr<Item> &item) {
 
 			ImbuementInfo imbuementInfo;
 			if (!item->getImbuementInfo(slotid, &imbuementInfo)) {
-				s << "Empty Slot";
+				s << tr.get("cpp.look.empty_slot", locStr);
 				continue;
 			}
 
@@ -2211,14 +2214,15 @@ SoundEffect_t Item::getMovementSound(const std::shared_ptr<Cylinder> &toCylinder
 	return SoundEffect_t::ITEM_MOVE_DEFAULT;
 }
 
-std::string Item::parseClassificationDescription(const std::shared_ptr<Item> &item) {
+std::string Item::parseClassificationDescription(const std::shared_ptr<Item> &item, std::string_view locale /*= {}*/) {
 	if (item && item->getClassification() >= 1) {
-		return fmt::format("\nClassification: {} Tier: {}", item->getClassification(), getTierEffectDescription(item));
+		const std::string locStr(locale.empty() ? "en" : locale);
+		return "\n" + i18n::g_translator().format("cpp.look.classification_tier", locStr, {std::to_string(item->getClassification()), getTierEffectDescription(item, locale)});
 	}
 	return "";
 }
 
-std::string Item::getTierEffectDescription(const std::shared_ptr<Item> &item) {
+std::string Item::getTierEffectDescription(const std::shared_ptr<Item> &item, std::string_view locale /*= {}*/) {
 	if (!item) {
 		return "";
 	}
@@ -2228,22 +2232,25 @@ std::string Item::getTierEffectDescription(const std::shared_ptr<Item> &item) {
 		return "0";
 	}
 
+	const std::string locStr(locale.empty() ? "en" : locale);
+	auto &tr = i18n::g_translator();
+
 	std::string effectDescription;
 	if (Item::items[item->getID()].weaponType != WEAPON_NONE) {
-		effectDescription = fmt::format(" ({:.2f}% Onslaught)", item->getFatalChance());
+		effectDescription = fmt::format(" ({})", tr.format("cpp.look.tier_onslaught", locStr, {fmt::format("{:.2f}", item->getFatalChance())}));
 	} else {
 		switch (g_game().getObjectCategory(item)) {
 			case OBJECTCATEGORY_HELMETS:
-				effectDescription = fmt::format(" ({:.2f}% Momentum)", item->getMomentumChance());
+				effectDescription = fmt::format(" ({})", tr.format("cpp.look.tier_momentum", locStr, {fmt::format("{:.2f}", item->getMomentumChance())}));
 				break;
 			case OBJECTCATEGORY_ARMORS:
-				effectDescription = fmt::format(" ({:.2f}% Ruse)", item->getDodgeChance());
+				effectDescription = fmt::format(" ({})", tr.format("cpp.look.tier_ruse", locStr, {fmt::format("{:.2f}", item->getDodgeChance())}));
 				break;
 			case OBJECTCATEGORY_LEGS:
-				effectDescription = fmt::format(" ({:.2f}% Transcendence)", item->getTranscendenceChance());
+				effectDescription = fmt::format(" ({})", tr.format("cpp.look.tier_transcendence", locStr, {fmt::format("{:.2f}", item->getTranscendenceChance())}));
 				break;
 			case OBJECTCATEGORY_BOOTS:
-				effectDescription = fmt::format(" ({:.2f}% Amplification)", item->getAmplificationChance());
+				effectDescription = fmt::format(" ({})", tr.format("cpp.look.tier_amplification", locStr, {fmt::format("{:.2f}", item->getAmplificationChance())}));
 				break;
 			default:
 				break;
@@ -2253,7 +2260,7 @@ std::string Item::getTierEffectDescription(const std::shared_ptr<Item> &item) {
 	return fmt::format("{}{}", itemTier, effectDescription);
 }
 
-std::string Item::parseShowDurationSpeed(int32_t speed, bool &begin) {
+std::string Item::parseShowDurationSpeed(int32_t speed, bool &begin, std::string_view locale /*= {}*/) {
 	std::ostringstream description;
 	if (begin) {
 		begin = false;
@@ -2262,56 +2269,62 @@ std::string Item::parseShowDurationSpeed(int32_t speed, bool &begin) {
 		description << ", ";
 	}
 
-	description << fmt::format("speed {:+}", speed);
+	const std::string locStr(locale.empty() ? "en" : locale);
+	description << fmt::format("{} {:+}", i18n::g_translator().get("cpp.look.speed_label", locStr), speed);
 	return description.str();
 }
 
-std::string Item::parseShowDuration(const std::shared_ptr<Item> &item) {
+std::string Item::parseShowDuration(const std::shared_ptr<Item> &item, std::string_view locale /*= {}*/) {
 	if (!item) {
 		return {};
 	}
 
+	const std::string locStr(locale.empty() ? "en" : locale);
+	auto &tr = i18n::g_translator();
+
 	std::ostringstream description;
 	const uint32_t duration = item->getDuration() / 1000;
 	if (item && item->hasAttribute(ItemAttribute_t::DURATION) && duration > 0) {
-		description << " that will expire in ";
+		description << tr.get("cpp.look.expire_in", locStr);
 		if (duration >= 86400) {
 			const uint16_t days = duration / 86400;
 			const uint16_t hours = (duration % 86400) / 3600;
-			description << days << " day" << (days != 1 ? "s" : "");
+			description << tr.format(days != 1 ? "cpp.look.day_many" : "cpp.look.day_one", locStr, {std::to_string(days)});
 
 			if (hours > 0) {
-				description << " and " << hours << " hour" << (hours != 1 ? "s" : "");
+				description << tr.get("cpp.look.and_connector", locStr) << tr.format(hours != 1 ? "cpp.look.hour_many" : "cpp.look.hour_one", locStr, {std::to_string(hours)});
 			}
 		} else if (duration >= 3600) {
 			const uint16_t hours = duration / 3600;
 			const uint16_t minutes = (duration % 3600) / 60;
-			description << hours << " hour" << (hours != 1 ? "s" : "");
+			description << tr.format(hours != 1 ? "cpp.look.hour_many" : "cpp.look.hour_one", locStr, {std::to_string(hours)});
 
 			if (minutes > 0) {
-				description << " and " << minutes << " minute" << (minutes != 1 ? "s" : "");
+				description << tr.get("cpp.look.and_connector", locStr) << tr.format(minutes != 1 ? "cpp.look.minute_many" : "cpp.look.minute_one", locStr, {std::to_string(minutes)});
 			}
 		} else if (duration >= 60) {
 			const uint16_t minutes = duration / 60;
-			description << minutes << " minute" << (minutes != 1 ? "s" : "");
+			description << tr.format(minutes != 1 ? "cpp.look.minute_many" : "cpp.look.minute_one", locStr, {std::to_string(minutes)});
 			const uint16_t seconds = duration % 60;
 
 			if (seconds > 0) {
-				description << " and " << seconds << " second" << (seconds != 1 ? "s" : "");
+				description << tr.get("cpp.look.and_connector", locStr) << tr.format(seconds != 1 ? "cpp.look.second_many" : "cpp.look.second_one", locStr, {std::to_string(seconds)});
 			}
 		} else {
-			description << duration << " second" << (duration != 1 ? "s" : "");
+			description << tr.format(duration != 1 ? "cpp.look.second_many" : "cpp.look.second_one", locStr, {std::to_string(duration)});
 		}
 	} else {
-		description << " that is brand-new";
+		description << tr.get("cpp.look.brand_new", locStr);
 	}
 
 	return description.str();
 }
 
-std::string Item::parseShowAttributesDescription(const std::shared_ptr<Item> &item, const uint16_t itemId) {
+std::string Item::parseShowAttributesDescription(const std::shared_ptr<Item> &item, const uint16_t itemId, std::string_view locale /*= {}*/) {
 	std::ostringstream itemDescription;
 	const ItemType &itemType = Item::items[itemId];
+	const std::string locStr(locale.empty() ? "en" : locale);
+	auto &tr = i18n::g_translator();
 
 	if (itemType.armor != 0 || (item && item->getArmor() != 0) || itemType.showAttributes) {
 		bool begin = itemType.isQuiver() ? false : true;
@@ -2319,10 +2332,10 @@ std::string Item::parseShowAttributesDescription(const std::shared_ptr<Item> &it
 		const int32_t armor = (item ? item->getArmor() : itemType.armor);
 		if (armor != 0) {
 			if (begin) {
-				itemDescription << " (Arm:" << armor;
+				itemDescription << " (" << tr.get("cpp.look.arm", locStr) << armor;
 				begin = false;
 			} else {
-				itemDescription << ", Arm:" << armor;
+				itemDescription << ", " << tr.get("cpp.look.arm", locStr) << armor;
 			}
 		}
 
@@ -2350,7 +2363,7 @@ std::string Item::parseShowAttributesDescription(const std::shared_ptr<Item> &it
 					itemDescription << ", ";
 				}
 
-				itemDescription << "magic level " << std::showpos << itemType.abilities->stats[STAT_MAGICPOINTS] << std::noshowpos;
+				itemDescription << tr.get("cpp.look.magic_level_label", locStr) << " " << std::showpos << itemType.abilities->stats[STAT_MAGICPOINTS] << std::noshowpos;
 			}
 
 			for (uint8_t i = 1; i <= 11; i++) {
@@ -2362,7 +2375,7 @@ std::string Item::parseShowAttributesDescription(const std::shared_ptr<Item> &it
 						itemDescription << ", ";
 					}
 
-					itemDescription << getCombatName(indexToCombatType(i)) << " magic level " << std::showpos << itemType.abilities->specializedMagicLevel[i] << std::noshowpos;
+					itemDescription << getCombatName(indexToCombatType(i)) << " " << tr.get("cpp.look.magic_level_label", locStr) << " " << std::showpos << itemType.abilities->specializedMagicLevel[i] << std::noshowpos;
 				}
 			}
 
@@ -2402,7 +2415,7 @@ std::string Item::parseShowAttributesDescription(const std::shared_ptr<Item> &it
 					itemDescription << ", ";
 				}
 
-				itemDescription << "Magic Shield Capacity " << std::showpos << itemType.abilities->magicShieldCapacityFlat << std::noshowpos << " and " << itemType.abilities->magicShieldCapacityPercent << "%";
+				itemDescription << tr.get("cpp.look.magic_shield_capacity", locStr) << " " << std::showpos << itemType.abilities->magicShieldCapacityFlat << std::noshowpos << tr.get("cpp.look.and_connector", locStr) << itemType.abilities->magicShieldCapacityPercent << "%";
 			}
 
 			if (itemType.abilities->perfectShotRange) {
@@ -2413,7 +2426,7 @@ std::string Item::parseShowAttributesDescription(const std::shared_ptr<Item> &it
 					itemDescription << ", ";
 				}
 
-				itemDescription << "perfect shot " << std::showpos << itemType.abilities->perfectShotDamage << std::noshowpos << " at range " << unsigned(itemType.abilities->perfectShotRange);
+				itemDescription << tr.get("cpp.look.perfect_shot", locStr) << " " << std::showpos << itemType.abilities->perfectShotDamage << std::noshowpos << " " << tr.get("cpp.look.at_range", locStr) << " " << unsigned(itemType.abilities->perfectShotRange);
 			}
 
 			if (itemType.abilities->reflectFlat[0] != 0) {
@@ -2424,7 +2437,7 @@ std::string Item::parseShowAttributesDescription(const std::shared_ptr<Item> &it
 					itemDescription << ", ";
 				}
 
-				itemDescription << "damage reflection " << std::showpos << itemType.abilities->reflectFlat[0] << std::noshowpos;
+				itemDescription << tr.get("cpp.look.damage_reflection", locStr) << " " << std::showpos << itemType.abilities->reflectFlat[0] << std::noshowpos;
 			}
 
 			int16_t show = itemType.abilities->absorbPercent[0];
@@ -2454,7 +2467,7 @@ std::string Item::parseShowAttributesDescription(const std::shared_ptr<Item> &it
 							itemDescription << ", ";
 						}
 
-						itemDescription << "protection ";
+						itemDescription << tr.get("cpp.look.protection", locStr);
 					} else {
 						itemDescription << ", ";
 					}
@@ -2468,7 +2481,7 @@ std::string Item::parseShowAttributesDescription(const std::shared_ptr<Item> &it
 					itemDescription << ", ";
 				}
 
-				itemDescription << fmt::format("protection all {:+}%", show);
+				itemDescription << tr.format("cpp.look.protection_all_fmt", locStr, {fmt::format("{:+}", show)});
 			}
 
 			show = itemType.abilities->fieldAbsorbPercent[0];
@@ -2499,12 +2512,12 @@ std::string Item::parseShowAttributesDescription(const std::shared_ptr<Item> &it
 							itemDescription << ", ";
 						}
 
-						itemDescription << "protection ";
+						itemDescription << tr.get("cpp.look.protection", locStr);
 					} else {
 						itemDescription << ", ";
 					}
 
-					itemDescription << fmt::format("{} field {:+}%", getCombatName(indexToCombatType(i)), itemType.abilities->fieldAbsorbPercent[i]);
+					itemDescription << fmt::format("{}{} {:+}%", getCombatName(indexToCombatType(i)), tr.get("cpp.look.field", locStr), itemType.abilities->fieldAbsorbPercent[i]);
 				}
 			} else {
 				if (begin) {
@@ -2514,11 +2527,11 @@ std::string Item::parseShowAttributesDescription(const std::shared_ptr<Item> &it
 					itemDescription << ", ";
 				}
 
-				itemDescription << fmt::format("protection all fields {:+}%", show);
+				itemDescription << tr.format("cpp.look.protection_all_fields_fmt", locStr, {fmt::format("{:+}", show)});
 			}
 
 			if (itemType.abilities->speed) {
-				itemDescription << parseShowDurationSpeed(itemType.abilities->speed, begin);
+				itemDescription << parseShowDurationSpeed(itemType.abilities->speed, begin, locale);
 			}
 
 			if (itemType.abilities->cleavePercent) {
@@ -2529,7 +2542,7 @@ std::string Item::parseShowAttributesDescription(const std::shared_ptr<Item> &it
 					itemDescription << ", ";
 				}
 
-				itemDescription << "Cleave " << std::showpos << (itemType.abilities->cleavePercent) << std::noshowpos << "%";
+				itemDescription << tr.get("cpp.look.cleave_upper", locStr) << " " << std::showpos << (itemType.abilities->cleavePercent) << std::noshowpos << "%";
 			}
 		}
 
@@ -2543,6 +2556,8 @@ std::string Item::parseShowAttributesDescription(const std::shared_ptr<Item> &it
 
 std::string Item::getDescription(const ItemType &it, int32_t lookDistance, const std::shared_ptr<Item> &item /*= nullptr*/, int32_t subType /*= -1*/, bool addArticle /*= true*/, std::string_view locale /*= {}*/) {
 	std::string text;
+	const std::string locStr(locale.empty() ? "en" : locale);
+	auto &tr = i18n::g_translator();
 
 	std::ostringstream s;
 	s << getNameDescription(it, item, subType, addArticle);
@@ -2558,7 +2573,7 @@ std::string Item::getDescription(const ItemType &it, int32_t lookDistance, const
 				if (item) {
 					tmpSubType = item->getSubType();
 				}
-				s << " (\"" << it.runeSpellName << "\"). " << (it.stackable && tmpSubType > 1 ? "They" : "It") << " can only be used by ";
+				s << " (\"" << it.runeSpellName << "\"). " << tr.get(it.stackable && tmpSubType > 1 ? "cpp.look.they_can_only_be_used_by" : "cpp.look.it_can_only_be_used_by", locStr);
 
 				const VocSpellMap &vocMap = rune->getVocMap();
 				std::vector<std::shared_ptr<Vocation>> showVocMap;
@@ -2577,38 +2592,38 @@ std::string Item::getDescription(const ItemType &it, int32_t lookDistance, const
 					while (vocIt != vocLast) {
 						s << asLowerCaseString((*vocIt)->getVocName()) << "s";
 						if (++vocIt == vocLast) {
-							s << " and ";
+							s << tr.get("cpp.look.and_connector", locStr);
 						} else {
 							s << ", ";
 						}
 					}
 					s << asLowerCaseString((*vocLast)->getVocName()) << "s";
 				} else {
-					s << "players";
+					s << tr.get("cpp.look.players", locStr);
 				}
 
-				s << " with";
+				s << tr.get("cpp.look.with", locStr);
 
 				if (it.runeLevel > 0) {
-					s << " level " << it.runeLevel;
+					s << tr.format("cpp.look.level_n", locStr, {std::to_string(it.runeLevel)});
 				}
 
 				if (it.runeMagLevel > 0) {
 					if (it.runeLevel > 0) {
-						s << " and";
+						s << tr.get("cpp.look.and_short", locStr);
 					}
 
-					s << " magic level " << it.runeMagLevel;
+					s << tr.format("cpp.look.magic_level_n", locStr, {std::to_string(it.runeMagLevel)});
 				}
 
-				s << " or higher";
+				s << tr.get("cpp.look.or_higher", locStr);
 			}
 		}
 	} else if (it.weaponType != WEAPON_NONE) {
 		if (it.weaponType == WEAPON_DISTANCE && it.ammoType != AMMO_NONE) {
 			bool begin = true;
 			begin = false;
-			s << " (Range: " << static_cast<uint16_t>(item ? item->getShootRange() : it.shootRange);
+			s << " (" << tr.get("cpp.look.range", locStr) << " " << static_cast<uint16_t>(item ? item->getShootRange() : it.shootRange);
 
 			int32_t attack;
 			int8_t hitChance;
@@ -2621,11 +2636,11 @@ std::string Item::getDescription(const ItemType &it, int32_t lookDistance, const
 			}
 
 			if (attack != 0) {
-				s << ", Atk " << std::showpos << attack << std::noshowpos;
+				s << ", " << tr.get("cpp.look.atk_ranged", locStr) << " " << std::showpos << attack << std::noshowpos;
 			}
 
 			if (hitChance != 0) {
-				s << ", Hit% " << std::showpos << static_cast<int16_t>(hitChance) << std::noshowpos;
+				s << ", " << tr.get("cpp.look.hit_pct", locStr) << " " << std::showpos << static_cast<int16_t>(hitChance) << std::noshowpos;
 			}
 
 			if (it.abilities) {
@@ -2652,7 +2667,7 @@ std::string Item::getDescription(const ItemType &it, int32_t lookDistance, const
 						s << ", ";
 					}
 
-					s << "magic level " << std::showpos << it.abilities->stats[STAT_MAGICPOINTS] << std::noshowpos;
+					s << tr.get("cpp.look.magic_level_label", locStr) << " " << std::showpos << it.abilities->stats[STAT_MAGICPOINTS] << std::noshowpos;
 				}
 
 				for (uint8_t i = 1; i <= 11; i++) {
@@ -2664,7 +2679,7 @@ std::string Item::getDescription(const ItemType &it, int32_t lookDistance, const
 							s << ", ";
 						}
 
-						s << getCombatName(indexToCombatType(i)) << " magic level " << std::showpos << it.abilities->specializedMagicLevel[i] << std::noshowpos;
+						s << getCombatName(indexToCombatType(i)) << " " << tr.get("cpp.look.magic_level_label", locStr) << " " << std::showpos << it.abilities->specializedMagicLevel[i] << std::noshowpos;
 					}
 				}
 
@@ -2704,7 +2719,7 @@ std::string Item::getDescription(const ItemType &it, int32_t lookDistance, const
 						s << ", ";
 					}
 
-					s << "magic shield capacity " << std::showpos << it.abilities->magicShieldCapacityFlat << std::noshowpos << " and " << it.abilities->magicShieldCapacityPercent << "%";
+					s << tr.get("cpp.look.magic_shield_capacity", locStr) << " " << std::showpos << it.abilities->magicShieldCapacityFlat << std::noshowpos << tr.get("cpp.look.and_connector", locStr) << it.abilities->magicShieldCapacityPercent << "%";
 				}
 
 				if (it.abilities->perfectShotRange) {
@@ -2715,7 +2730,7 @@ std::string Item::getDescription(const ItemType &it, int32_t lookDistance, const
 						s << ", ";
 					}
 
-					s << "perfect shot " << std::showpos << it.abilities->perfectShotDamage << std::noshowpos << " at range " << unsigned(it.abilities->perfectShotRange);
+					s << tr.get("cpp.look.perfect_shot", locStr) << " " << std::showpos << it.abilities->perfectShotDamage << std::noshowpos << " " << tr.get("cpp.look.at_range", locStr) << " " << unsigned(it.abilities->perfectShotRange);
 				}
 
 				if (it.abilities->reflectFlat[combatTypeToIndex(COMBAT_PHYSICALDAMAGE)]) {
@@ -2726,7 +2741,7 @@ std::string Item::getDescription(const ItemType &it, int32_t lookDistance, const
 						s << ", ";
 					}
 
-					s << "damage reflection " << std::showpos << it.abilities->reflectFlat[combatTypeToIndex(COMBAT_PHYSICALDAMAGE)] << std::noshowpos;
+					s << tr.get("cpp.look.damage_reflection", locStr) << " " << std::showpos << it.abilities->reflectFlat[combatTypeToIndex(COMBAT_PHYSICALDAMAGE)] << std::noshowpos;
 				}
 
 				int16_t show = it.abilities->absorbPercent[0];
@@ -2757,7 +2772,7 @@ std::string Item::getDescription(const ItemType &it, int32_t lookDistance, const
 								s << ", ";
 							}
 
-							s << "protection ";
+							s << tr.get("cpp.look.protection", locStr);
 						} else {
 							s << ", ";
 						}
@@ -2772,7 +2787,7 @@ std::string Item::getDescription(const ItemType &it, int32_t lookDistance, const
 						s << ", ";
 					}
 
-					s << fmt::format("protection all {:+}%", show);
+					s << tr.format("cpp.look.protection_all_fmt", locStr, {fmt::format("{:+}", show)});
 				}
 
 				show = it.abilities->fieldAbsorbPercent[0];
@@ -2803,12 +2818,12 @@ std::string Item::getDescription(const ItemType &it, int32_t lookDistance, const
 								s << ", ";
 							}
 
-							s << "protection ";
+							s << tr.get("cpp.look.protection", locStr);
 						} else {
 							s << ", ";
 						}
 
-						s << fmt::format("{} field {:+}%", getCombatName(indexToCombatType(i)), it.abilities->fieldAbsorbPercent[i]);
+						s << fmt::format("{}{} {:+}%", getCombatName(indexToCombatType(i)), tr.get("cpp.look.field", locStr), it.abilities->fieldAbsorbPercent[i]);
 					}
 				} else {
 					if (begin) {
@@ -2818,11 +2833,11 @@ std::string Item::getDescription(const ItemType &it, int32_t lookDistance, const
 						s << ", ";
 					}
 
-					s << fmt::format("protection all fields {:+}%", show);
+					s << tr.format("cpp.look.protection_all_fields_fmt", locStr, {fmt::format("{:+}", show)});
 				}
 
 				if (it.abilities->speed) {
-					s << parseShowDurationSpeed(it.abilities->speed, begin);
+					s << parseShowDurationSpeed(it.abilities->speed, begin, locale);
 				}
 
 				if (it.abilities->cleavePercent) {
@@ -2833,7 +2848,7 @@ std::string Item::getDescription(const ItemType &it, int32_t lookDistance, const
 						s << ", ";
 					}
 
-					s << "cleave " << std::showpos << (it.abilities->cleavePercent) << std::noshowpos << "%";
+					s << tr.get("cpp.look.cleave_lower", locStr) << " " << std::showpos << (it.abilities->cleavePercent) << std::noshowpos << "%";
 				}
 			}
 
@@ -2874,17 +2889,17 @@ std::string Item::getDescription(const ItemType &it, int32_t lookDistance, const
 						s << ", ";
 					}
 
-					s << "Vol:" << volume;
+					s << tr.get("cpp.look.vol", locStr) << volume;
 				}
 			}
 
 			if (attack != 0) {
 				begin = false;
-				s << " (Atk:" << attack;
+				s << " (" << tr.get("cpp.look.atk", locStr) << attack;
 			}
 
 			if (it.abilities && it.abilities->elementType != COMBAT_NONE && it.abilities->elementDamage != 0 && !begin) {
-				s << " physical + " << it.abilities->elementDamage << ' ' << getCombatName(it.abilities->elementType);
+				s << tr.get("cpp.look.physical_plus", locStr) << it.abilities->elementDamage << ' ' << getCombatName(it.abilities->elementType);
 			} else if (it.abilities && it.abilities->elementType != COMBAT_NONE && it.abilities->elementDamage != 0 && begin) {
 				begin = false;
 				s << " (" << it.abilities->elementDamage << ' ' << getCombatName(it.abilities->elementType);
@@ -2898,7 +2913,7 @@ std::string Item::getDescription(const ItemType &it, int32_t lookDistance, const
 					s << ", ";
 				}
 
-				s << "Def:" << defense;
+				s << tr.get("cpp.look.def", locStr) << defense;
 				if (extraDefense != 0) {
 					s << ' ' << std::showpos << extraDefense << std::noshowpos;
 				}
@@ -2928,7 +2943,7 @@ std::string Item::getDescription(const ItemType &it, int32_t lookDistance, const
 						s << ", ";
 					}
 
-					s << "magic level " << std::showpos << it.abilities->stats[STAT_MAGICPOINTS] << std::noshowpos;
+					s << tr.get("cpp.look.magic_level_label", locStr) << " " << std::showpos << it.abilities->stats[STAT_MAGICPOINTS] << std::noshowpos;
 				}
 
 				for (uint8_t i = 1; i <= 11; i++) {
@@ -2940,7 +2955,7 @@ std::string Item::getDescription(const ItemType &it, int32_t lookDistance, const
 							s << ", ";
 						}
 
-						s << getCombatName(indexToCombatType(i)) << " magic level " << std::showpos << it.abilities->specializedMagicLevel[i] << std::noshowpos;
+						s << getCombatName(indexToCombatType(i)) << " " << tr.get("cpp.look.magic_level_label", locStr) << " " << std::showpos << it.abilities->specializedMagicLevel[i] << std::noshowpos;
 					}
 				}
 
@@ -2980,7 +2995,7 @@ std::string Item::getDescription(const ItemType &it, int32_t lookDistance, const
 						s << ", ";
 					}
 
-					s << "faster regeneration";
+					s << tr.get("cpp.look.faster_regeneration", locStr);
 				}
 
 				if (it.abilities->magicShieldCapacityFlat || it.abilities->magicShieldCapacityPercent) {
@@ -2991,7 +3006,7 @@ std::string Item::getDescription(const ItemType &it, int32_t lookDistance, const
 						s << ", ";
 					}
 
-					s << "magic shield capacity " << std::showpos << it.abilities->magicShieldCapacityFlat << std::noshowpos << " and " << it.abilities->magicShieldCapacityPercent << "%";
+					s << tr.get("cpp.look.magic_shield_capacity", locStr) << " " << std::showpos << it.abilities->magicShieldCapacityFlat << std::noshowpos << tr.get("cpp.look.and_connector", locStr) << it.abilities->magicShieldCapacityPercent << "%";
 				}
 
 				if (it.abilities->perfectShotRange) {
@@ -3002,7 +3017,7 @@ std::string Item::getDescription(const ItemType &it, int32_t lookDistance, const
 						s << ", ";
 					}
 
-					s << "perfect shot " << std::showpos << it.abilities->perfectShotDamage << std::noshowpos << " at range " << unsigned(it.abilities->perfectShotRange);
+					s << tr.get("cpp.look.perfect_shot", locStr) << " " << std::showpos << it.abilities->perfectShotDamage << std::noshowpos << " " << tr.get("cpp.look.at_range", locStr) << " " << unsigned(it.abilities->perfectShotRange);
 				}
 
 				if (it.abilities->reflectFlat[combatTypeToIndex(COMBAT_PHYSICALDAMAGE)]) {
@@ -3013,7 +3028,7 @@ std::string Item::getDescription(const ItemType &it, int32_t lookDistance, const
 						s << ", ";
 					}
 
-					s << "damage reflection " << std::showpos << it.abilities->reflectFlat[combatTypeToIndex(COMBAT_PHYSICALDAMAGE)] << std::noshowpos;
+					s << tr.get("cpp.look.damage_reflection", locStr) << " " << std::showpos << it.abilities->reflectFlat[combatTypeToIndex(COMBAT_PHYSICALDAMAGE)] << std::noshowpos;
 				}
 
 				int16_t show = it.abilities->absorbPercent[0];
@@ -3044,7 +3059,7 @@ std::string Item::getDescription(const ItemType &it, int32_t lookDistance, const
 								s << ", ";
 							}
 
-							s << "protection ";
+							s << tr.get("cpp.look.protection", locStr);
 						} else {
 							s << ", ";
 						}
@@ -3059,7 +3074,7 @@ std::string Item::getDescription(const ItemType &it, int32_t lookDistance, const
 						s << ", ";
 					}
 
-					s << fmt::format("protection all {:+}%", show);
+					s << tr.format("cpp.look.protection_all_fmt", locStr, {fmt::format("{:+}", show)});
 				}
 
 				show = it.abilities->fieldAbsorbPercent[0];
@@ -3090,12 +3105,12 @@ std::string Item::getDescription(const ItemType &it, int32_t lookDistance, const
 								s << ", ";
 							}
 
-							s << "protection ";
+							s << tr.get("cpp.look.protection", locStr);
 						} else {
 							s << ", ";
 						}
 
-						s << fmt::format("{} field {:+}%", getCombatName(indexToCombatType(i)), it.abilities->fieldAbsorbPercent[i]);
+						s << fmt::format("{}{} {:+}%", getCombatName(indexToCombatType(i)), tr.get("cpp.look.field", locStr), it.abilities->fieldAbsorbPercent[i]);
 					}
 				} else {
 					if (begin) {
@@ -3105,11 +3120,11 @@ std::string Item::getDescription(const ItemType &it, int32_t lookDistance, const
 						s << ", ";
 					}
 
-					s << fmt::format("protection all fields {:+}%", show);
+					s << tr.format("cpp.look.protection_all_fields_fmt", locStr, {fmt::format("{:+}", show)});
 				}
 
 				if (it.abilities->speed) {
-					s << parseShowDurationSpeed(it.abilities->speed, begin);
+					s << parseShowDurationSpeed(it.abilities->speed, begin, locale);
 				}
 
 				if (it.abilities->cleavePercent) {
@@ -3120,7 +3135,7 @@ std::string Item::getDescription(const ItemType &it, int32_t lookDistance, const
 						s << ", ";
 					}
 
-					s << "Cleave " << std::showpos << (it.abilities->cleavePercent) << std::noshowpos << "%";
+					s << tr.get("cpp.look.cleave_upper", locStr) << " " << std::showpos << (it.abilities->cleavePercent) << std::noshowpos << "%";
 				}
 			}
 
@@ -3139,9 +3154,9 @@ std::string Item::getDescription(const ItemType &it, int32_t lookDistance, const
 		}
 
 		if (volume != 0 && !it.isQuiver()) {
-			s << " (Vol:" << volume << ')';
+			s << " (" << tr.get("cpp.look.vol", locStr) << volume << ')';
 		} else if (volume != 0 && it.isQuiver()) {
-			s << " (Vol:" << volume;
+			s << " (" << tr.get("cpp.look.vol", locStr) << volume;
 		}
 	} else {
 		bool found = true;
@@ -3149,15 +3164,15 @@ std::string Item::getDescription(const ItemType &it, int32_t lookDistance, const
 		if (it.abilities && it.slotPosition & SLOTP_RING) {
 			if (it.abilities->speed > 0) {
 				bool begin = true;
-				s << parseShowDurationSpeed(it.abilities->speed, begin) << ")" << parseShowDuration(item);
+				s << parseShowDurationSpeed(it.abilities->speed, begin, locale) << ")" << parseShowDuration(item, locale);
 			} else if (it.abilities->conditionSuppressions[CONDITION_DRUNK] != 0) {
-				s << " (hard drinking)";
+				s << " (" << tr.get("cpp.look.hard_drinking", locStr) << ")";
 			} else if (it.abilities->invisible) {
-				s << " (invisibility)";
+				s << " (" << tr.get("cpp.look.invisibility", locStr) << ")";
 			} else if (it.abilities->regeneration) {
-				s << " (faster regeneration)";
+				s << " (" << tr.get("cpp.look.faster_regeneration", locStr) << ")";
 			} else if (it.abilities->manaShield) {
-				s << " (mana shield)";
+				s << " (" << tr.get("cpp.look.mana_shield", locStr) << ")";
 			} else {
 				found = false;
 			}
@@ -3167,21 +3182,21 @@ std::string Item::getDescription(const ItemType &it, int32_t lookDistance, const
 
 		if (!found) {
 			if (it.isKey()) {
-				s << fmt::format(" (Key:{:04})", item ? item->getAttribute<uint16_t>(ItemAttribute_t::ACTIONID) : 0);
+				s << fmt::format(" ({})", tr.format("cpp.look.key_fmt", locStr, {fmt::format("{:04}", item ? item->getAttribute<uint16_t>(ItemAttribute_t::ACTIONID) : 0)}));
 			} else if (it.isFluidContainer()) {
 				if (subType > 0) {
 					const std::string &itemName = items[subType].name;
-					s << " of " << (!itemName.empty() ? itemName : "unknown");
+					s << tr.get("cpp.look.of", locStr) << (!itemName.empty() ? itemName : tr.get("cpp.look.unknown", locStr));
 				} else {
-					s << ". It is empty";
+					s << tr.get("cpp.look.it_is_empty", locStr);
 				}
 			} else if (it.isSplash()) {
-				s << " of ";
+				s << tr.get("cpp.look.of", locStr);
 
 				if (subType > 0 && !items[subType].name.empty()) {
 					s << items[subType].name;
 				} else {
-					s << "unknown";
+					s << tr.get("cpp.look.unknown", locStr);
 				}
 			} else if (it.allowDistRead && (it.id < 7369 || it.id > 7371)) {
 				s << '.' << std::endl;
@@ -3193,50 +3208,50 @@ std::string Item::getDescription(const ItemType &it, int32_t lookDistance, const
 							text = resolveI18nMarker(text, locale);
 							const std::string &writer = item->getAttribute<std::string>(ItemAttribute_t::WRITER);
 							if (!writer.empty()) {
-								s << writer << " wrote";
+								s << writer << tr.get("cpp.look.wrote", locStr);
 								auto date = item->getAttribute<time_t>(ItemAttribute_t::DATE);
 								if (date != 0) {
-									s << " on " << formatDateShort(date);
+									s << tr.get("cpp.look.on_date", locStr) << formatDateShort(date);
 								}
 								s << ": ";
 							} else {
-								s << "You read: ";
+								s << tr.get("cpp.look.you_read", locStr);
 							}
 							s << text;
 						} else {
-							s << "Nothing is written on it";
+							s << tr.get("cpp.look.nothing_written", locStr);
 						}
 					} else {
-						s << "Nothing is written on it";
+						s << tr.get("cpp.look.nothing_written", locStr);
 					}
 				} else {
-					s << "You are too far away to read it";
+					s << tr.get("cpp.look.too_far_to_read", locStr);
 				}
 			} else if (it.levelDoor != 0 && item) {
 				auto actionId = item->getAttribute<uint16_t>(ItemAttribute_t::ACTIONID);
 				if (actionId >= it.levelDoor) {
-					s << " for level " << (actionId - it.levelDoor);
+					s << tr.format("cpp.look.for_level", locStr, {std::to_string(actionId - it.levelDoor)});
 				}
 			}
 		}
 	}
 
 	if (it.transformEquipTo != 0) {
-		s << parseShowAttributesDescription(item, it.transformEquipTo);
+		s << parseShowAttributesDescription(item, it.transformEquipTo, locale);
 	} else {
-		s << parseShowAttributesDescription(item, it.id);
+		s << parseShowAttributesDescription(item, it.id, locale);
 	}
 
 	if (it.showCharges) {
 		if (subType == 0) {
-			s << " that has " << it.charges << " charge" << (subType != 1 ? "s" : "") << " left";
+			s << tr.format(subType != 1 ? "cpp.look.charges_many" : "cpp.look.charges_one", locStr, {std::to_string(it.charges)});
 		} else {
-			s << " that has " << subType << " charge" << (subType != 1 ? "s" : "") << " left";
+			s << tr.format(subType != 1 ? "cpp.look.charges_many" : "cpp.look.charges_one", locStr, {std::to_string(subType)});
 		}
 	}
 
 	if (it.showDuration) {
-		s << parseShowDuration(item);
+		s << parseShowDuration(item, locale);
 	}
 
 	if (!it.allowDistRead || (it.id >= 7369 && it.id <= 7371)) {
@@ -3253,30 +3268,30 @@ std::string Item::getDescription(const ItemType &it, int32_t lookDistance, const
 
 	if (it.wieldInfo != 0) {
 		s << std::endl
-		  << "It can only be wielded properly by ";
+		  << tr.get("cpp.look.wield_by", locStr);
 
 		if (it.wieldInfo & WIELDINFO_PREMIUM) {
-			s << "premium ";
+			s << tr.get("cpp.look.premium", locStr);
 		}
 
 		if (!it.vocationString.empty()) {
 			s << it.vocationString;
 		} else {
-			s << "players";
+			s << tr.get("cpp.look.players", locStr);
 		}
 
 		if (it.wieldInfo & WIELDINFO_LEVEL) {
-			s << " of level " << it.minReqLevel << " or higher";
+			s << tr.format("cpp.look.of_level_or_higher", locStr, {std::to_string(it.minReqLevel)});
 		}
 
 		if (it.wieldInfo & WIELDINFO_MAGLV) {
 			if (it.wieldInfo & WIELDINFO_LEVEL) {
-				s << " and";
+				s << tr.get("cpp.look.and_short", locStr);
 			} else {
-				s << " of";
+				s << tr.get("cpp.look.of_connector", locStr);
 			}
 
-			s << " magic level " << it.minReqMagicLevel << " or higher";
+			s << tr.format("cpp.look.magic_level_or_higher", locStr, {std::to_string(it.minReqMagicLevel)});
 		}
 
 		s << '.';
@@ -3284,20 +3299,20 @@ std::string Item::getDescription(const ItemType &it, int32_t lookDistance, const
 
 	s << parseAugmentDescription(item);
 
-	s << parseImbuementDescription(item);
+	s << parseImbuementDescription(item, locale);
 
-	s << parseClassificationDescription(item);
+	s << parseClassificationDescription(item, locale);
 
 	if (lookDistance <= 1) {
 		if (item) {
 			const uint32_t weight = item->getWeight();
 			if (weight != 0 && it.pickupable) {
 				s << std::endl
-				  << getWeightDescription(it, weight, item->getItemCount());
+				  << getWeightDescription(it, weight, item->getItemCount(), locale);
 			}
 		} else if (it.weight != 0 && it.pickupable) {
 			s << std::endl
-			  << getWeightDescription(it, it.weight);
+			  << getWeightDescription(it, it.weight, 1, locale);
 		}
 	}
 
@@ -3376,26 +3391,24 @@ std::string Item::getNameDescription() {
 	return getNameDescription(it, getItem());
 }
 
-std::string Item::getWeightDescription(const ItemType &it, uint32_t weight, uint32_t count /*= 1*/) {
-	std::ostringstream ss;
-	if (it.stackable && count > 1 && it.showCount != 0) {
-		ss << "They weigh ";
-	} else {
-		ss << "It weighs ";
-	}
+std::string Item::getWeightDescription(const ItemType &it, uint32_t weight, uint32_t count /*= 1*/, std::string_view locale /*= {}*/) {
+	const std::string locStr(locale.empty() ? "en" : locale);
+	auto &tr = i18n::g_translator();
 
+	std::string weightStr;
 	if (weight < 10) {
-		ss << "0.0" << weight;
+		weightStr = fmt::format("0.0{}", weight);
 	} else if (weight < 100) {
-		ss << "0." << weight;
+		weightStr = fmt::format("0.{}", weight);
 	} else {
-		std::string weightString = std::to_string(weight);
-		weightString.insert(weightString.end() - 2, '.');
-		ss << weightString;
+		weightStr = std::to_string(weight);
+		weightStr.insert(weightStr.end() - 2, '.');
 	}
 
-	ss << " oz.";
-	return ss.str();
+	if (it.stackable && count > 1 && it.showCount != 0) {
+		return tr.format("cpp.look.they_weigh", locStr, {weightStr});
+	}
+	return tr.format("cpp.look.it_weighs", locStr, {weightStr});
 }
 
 std::string Item::getWeightDescription(uint32_t weight) const {

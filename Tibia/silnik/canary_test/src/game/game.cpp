@@ -58,6 +58,7 @@
 #include "server/server.hpp"
 #include "utils/tools.hpp"
 #include "utils/wildcardtree.hpp"
+#include "utils/i18n/translator.hpp"
 #include "creatures/players/vocations/vocation.hpp"
 #include "creatures/players/components/wheel/wheel_definitions.hpp"
 
@@ -5471,7 +5472,8 @@ void Game::playerLookInShop(uint32_t playerId, uint16_t itemId, uint8_t count) {
 	}
 
 	std::ostringstream ss;
-	ss << "You see " << Item::getDescription(it, 1, nullptr, count);
+	const std::string playerLocale(player->getLocale().empty() ? "en" : player->getLocale());
+	ss << i18n::g_translator().get("cpp.look.you_see", playerLocale) << Item::getDescription(it, 1, nullptr, count, true, player->getLocale());
 	player->sendTextMessage(MESSAGE_LOOK, ss.str());
 	merchant->onPlayerCheckItem(player, it.id, count);
 }

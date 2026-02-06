@@ -84,13 +84,16 @@
   "server.party.msg_5": "Shared Experience has been deactivated.",
   "server.player_vip.msg_1": "You cannot add more buddies.",
   "server.player_vip.msg_2": "This player is already in your list.",
+  "server.player_vip.msg_3": "{} has logged in.",
+  "server.player_vip.msg_4": "{} has logged out.",
   "server.player_wheel.msg_1": "Something went wrong, try relogging and try again or contact and adminstrator",
   "server.player_wheel.msg_2": "Something went wrong, try relogging and try again",
   "server.player_wheel.msg_3": "That was close! Fortunately, your were saved by the Gift of Life.",
   "server.game.msg_31": "Not enough space in your inbox.",
   "server.game.msg_32": "Not enough space in your inbox to all items, processed only {} items.",
   "server.player.msg_11": "You have reached the maximum stow limit of {} items. Try to stow again.",
-  "server.spells.msg_3": "You cannot cast spells while you have {count} character(s) outside of a protection zone.",
+  "server.spells.msg_3": "You cannot cast spells while you have {} character(s) outside of a protection zone.",
   "server.player.msg_12": " was not justified.",
-  "server.player.msg_13": "Warning! The murder of {} was not justified."
+  "server.player.msg_13": "Warning! The murder of {} was not justified.",
+  "server.player_achievement.msg_1": "Congratulations! You earned the achievement {}."
 }

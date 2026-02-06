@@ -25,11 +25,14 @@ function testLog.onSay(player, words, param)
 	elseif logLevel == "debug" then
 		logger.debug("[testLog] - {}", message)
 	else
-		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.test.msg_1")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.test.msg_invalid_log_level")
 		return false
 	end
 
-	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.test.msg_2" .. message .. "] at '" .. logLevel .. "' level.")
+	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.test.msg_logged", {
+		message,
+		logLevel,
+	})
 	return true
 end
 
@@ -70,12 +73,26 @@ function containerTalkAction.onSay(player, words, param)
 		end
 	end
 
-	local actionMessage = shouldRemove and "removed " or "have "
-	local playerMessage = actionMessage .. totalItems .. " items and " .. totalSubContainers .. " subcontainers from your backpack."
-	local finalMessage = string.format("[!testcontainer] - Player: %s, %s items from backpack: %d, subcontainers count: %d", player:getName(), actionMessage, totalItems, totalSubContainers)
+	local finalMessage = string.format(
+		"[!testcontainer] - Player: %s, %s items from backpack: %d, subcontainers count: %d",
+		player:getName(),
+		shouldRemove and "removed" or "listed",
+		totalItems,
+		totalSubContainers
+	)
 
 	logger.info(finalMessage)
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You " .. playerMessage)
+	if shouldRemove then
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "talkaction.god.test.msg_container_removed", {
+			tostring(totalItems),
+			tostring(totalSubContainers),
+		})
+	else
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "talkaction.god.test.msg_container_have", {
+			tostring(totalItems),
+			tostring(totalSubContainers),
+		})
+	end
 	return true
 end
 

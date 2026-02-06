@@ -141,7 +141,11 @@ local function greetCallback(npc, creature)
 		or player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.PawAndFurRank) == 4 and player:getStorageValue(POINTSSTORAGE) >= 70 and player:getLevel() >= 80 -- to Trophy Hunter Rank
 		or player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.PawAndFurRank) == 6 and player:getStorageValue(POINTSSTORAGE) >= 100 and player:getLevel() >= 130
 	then -- to Elite Hunter Rank
-		npcHandler:setMessage(MESSAGE_GREET, "Good to see you again |PLAYERNAME|. You gained " .. player:getStorageValue(POINTSSTORAGE) .. " points for our society. Ask me for {promotion} to advance your rank!")
+		npcHandler:setLocalizedMessage(MESSAGE_GREET, "npc.grizzly_adams.greet_msg_3", {
+			args = function(targetPlayer)
+				return { targetPlayer:getName(), targetPlayer:getStorageValue(POINTSSTORAGE) }
+			end,
+		})
 	else
 		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.grizzly_adams.greet_msg_2")
 	end

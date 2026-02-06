@@ -60,8 +60,7 @@ local config = {
 }
 
 local function greetCallback(npc, creature)
-	local playerId = creature:getId()
-	npcHandler:setMessage(MESSAGE_GREET, "Hello " .. (Player(creature):getSex() == PLAYERSEX_FEMALE and "beautiful lady" or "handsome gentleman") .. ", welcome to the atrium of Pumin's Domain. We require some information from you before we can let you pass. Where do you want to go?")
+	npcHandler:setLocalizedMessage(MESSAGE_GREET, "npc.a_dead_bureaucrat.greet_msg_1", { args = function(player) return { player:getSex() == PLAYERSEX_FEMALE and "beautiful lady" or "handsome gentleman" } end })
 	return true
 end
 

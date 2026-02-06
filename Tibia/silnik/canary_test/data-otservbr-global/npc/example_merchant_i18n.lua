@@ -103,9 +103,11 @@ local function greetCallback(npc, creature)
 	end
 	
 	-- Normal greeting - set dynamic greeting with player name
-	-- I18N: The client will translate "npc.example_merchant.greeting" 
-	-- and substitute %s with player name
-	npcHandler:setMessage(MESSAGE_GREET, "Hello " .. player:getName() .. "! Welcome to my shop. Say {trade} to see my offers.")
+	npcHandler:setLocalizedMessage(MESSAGE_GREET, "npc.example_merchant_i18n.greet_msg_1", {
+		args = function(targetPlayer)
+			return { targetPlayer:getName() }
+		end,
+	})
 	return true
 end
 

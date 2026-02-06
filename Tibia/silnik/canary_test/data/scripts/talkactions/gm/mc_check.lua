@@ -24,12 +24,15 @@ function mcCheck.onSay(player, words, param)
 		local listLength = #list
 		if listLength > 1 then
 			local tmpPlayer = list[1]
-			local message = ("%s: %s [%d]"):format(Game.convertIpToString(ip), tmpPlayer:getName(), tmpPlayer:getLevel())
+			local playersMessage = ("%s [%d]"):format(tmpPlayer:getName(), tmpPlayer:getLevel())
 			for i = 2, listLength do
 				tmpPlayer = list[i]
-				message = ("%s, %s [%d]"):format(message, tmpPlayer:getName(), tmpPlayer:getLevel())
+				playersMessage = ("%s, %s [%d]"):format(playersMessage, tmpPlayer:getName(), tmpPlayer:getLevel())
 			end
-			player:sendTextMessage(MESSAGE_ADMINISTRATOR, message .. ".")
+			player:sendLocalizedTextMessage(MESSAGE_ADMINISTRATOR, "talkaction.gm.mc_check.msg_line", {
+				Game.convertIpToString(ip),
+				playersMessage,
+			})
 		end
 	end
 	return true

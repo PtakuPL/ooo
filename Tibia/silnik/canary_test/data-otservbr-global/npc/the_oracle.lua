@@ -90,7 +90,11 @@ local function greetCallback(npc, creature)
 		npcHandler:resetNpc(creature)
 		return false
 	else
-		npcHandler:setMessage(MESSAGE_GREET, player:getName() .. ", ARE YOU PREPARED TO FACE YOUR DESTINY?")
+		npcHandler:setLocalizedMessage(MESSAGE_GREET, "npc.the_oracle.greet_msg_1", {
+			args = function(targetPlayer)
+				return { targetPlayer:getName() }
+			end,
+		})
 	end
 	return true
 end

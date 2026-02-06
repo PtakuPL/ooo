@@ -73,7 +73,10 @@ function spell.onCastSpell(creature, variant)
 		msgText = msgText .. " " .. dirText
 	end
 
-	creature:sendTextMessage(MESSAGE_LOOK, target:getName() .. " " .. msgText .. ".")
+	creature:sendLocalizedTextMessage(MESSAGE_LOOK, "scripts.find_person.result", {
+		target:getName(),
+		msgText,
+	})
 	creaturePosition:sendMagicEffect(CONST_ME_MAGIC_BLUE)
 	return true
 end

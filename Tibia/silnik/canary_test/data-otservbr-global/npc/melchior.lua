@@ -51,8 +51,20 @@ npcType.onCloseChannel = function(npc, creature)
 end
 
 local function greetCallback(npc, creature)
-	local playerId = creature:getId()
-	npcHandler:setMessage(MESSAGE_GREET, Player(creature):getSex() == PLAYERSEX_FEMALE and "Welcome, |PLAYERNAME|! The lovely sound of your voice shines like a beam of light through my solitary darkness!" or "Greetings, |PLAYERNAME|. I do not see your face, but I can read a thousand things in your voice!")
+	local player = Player(creature)
+	if player:getSex() == PLAYERSEX_FEMALE then
+		npcHandler:setLocalizedMessage(MESSAGE_GREET, "npc.melchior.greet_msg_1", {
+			args = function(targetPlayer)
+				return { targetPlayer:getName() }
+			end,
+		})
+	else
+		npcHandler:setLocalizedMessage(MESSAGE_GREET, "npc.melchior.greet_msg_2", {
+			args = function(targetPlayer)
+				return { targetPlayer:getName() }
+			end,
+		})
+	end
 	return true
 end
 

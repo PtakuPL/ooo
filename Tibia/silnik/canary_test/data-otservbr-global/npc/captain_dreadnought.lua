@@ -405,10 +405,11 @@ donateNode:addChildKeywordNode(KeywordNode:new({ "yes" }, donationHandler, { con
 donateNode:addChildKeywordNode(KeywordNode:new({ "no" }, donationHandler, { decline = true }))
 
 local function greetCallback(npc, creature)
-	local playerId = creature:getId()
-	local player = Player(creature)
-	npcHandler:setMessage(MESSAGE_GREET, "Well, well, a new " .. player:getVocation():getName():lower() .. "! Want me to bring you somewhere nice? \z
-		Just say {yes}.")
+	npcHandler:setLocalizedMessage(MESSAGE_GREET, "npc.captain_dreadnought.greet_msg_1", {
+		args = function(targetPlayer)
+			return { targetPlayer:getVocation():getName():lower() }
+		end,
+	})
 	return true
 end
 

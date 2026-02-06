@@ -27,7 +27,7 @@ bool PlayerAchievement::add(uint16_t id, bool message /* = true*/, uint32_t time
 	}
 
 	if (message) {
-		m_player.sendTextMessage(MESSAGE_EVENT_ADVANCE, fmt::format("Congratulations! You earned the achievement {}.", achievement.name));
+		m_player.sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "server.player_achievement.msg_1", { achievement.name });
 	}
 
 	addPoints(achievement.points);

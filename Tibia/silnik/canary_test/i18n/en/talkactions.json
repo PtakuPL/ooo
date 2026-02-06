@@ -1,5 +1,9 @@
 {
-  "talkaction.online.msg_summary": "{count} players online | Training: {training} | Idle: {idle} | Active: {active}",
+  "talkaction.online.msg_summary": "{} players online | Training: {} | Idle: {} | Active: {}",
+  "talkaction.online.msg_category_training": "Training: {}",
+  "talkaction.online.msg_category_idle": "Idle: {}",
+  "talkaction.online.msg_category_active": "Active: {}",
+  "talkaction.online.msg_players_only": "{}",
   "talkaction.position.msg_position": "Your current position is: {x}, {y}, {z}.",
   "talkaction.refill.msg_refilled": "Refilled {items} for a total of {cost} silver tokens.",
 
@@ -155,6 +159,8 @@
   "talkaction.god.test.msg_level_required": "Log level and message required.",
   "talkaction.god.test.msg_message_required": "Log message required.",
   "talkaction.god.test.msg_no_container": "Your backpack does not contain a valid container.",
+  "talkaction.god.test.msg_container_have": "You have {} items and {} subcontainers in your backpack.",
+  "talkaction.god.test.msg_container_removed": "You removed {} items and {} subcontainers from your backpack.",
 
   "talkaction.god.raids.msg_started": "Raid {name} started.",
   "talkaction.god.raids.msg_could_not_start": "Raid {name} could not be started.",
@@ -185,6 +191,8 @@
 
   "talkaction.gm.looktype.msg_not_exist": "A look type with that id does not exist.",
   "talkaction.gm.looktype.msg_must_be_number": "Looktype must be a numerical value.",
+  "talkaction.gm.mc_check.msg_line": "{}: {}.",
+  "talkaction.gm.getlook.msg_result": "<look type=\"{}\" head=\"{}\" body=\"{}\" legs=\"{}\" feet=\"{}\" addons=\"{}\" mount=\"{}\" />",
 
   "talkaction.gm.push_creature.msg_cannot_teleport": "You can not teleport {name}.",
   "talkaction.gm.set_light.msg_specify_color": "You need to specify the light color.",

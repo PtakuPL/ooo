@@ -22,10 +22,10 @@ function itemTransformation.onUse(player, item, fromPosition, target, toPosition
 		player:addItem(transformation.rewardItemId, 1)
 
 		local messages = {
-			"Achoo! You spill the pollen into your bag.",
-			"You collected the smelly pollen into a bag.",
+			"quests.oramond.blue_pollen_say_1",
+			"quests.oramond.blue_pollen_say_2",
 		}
-		player:say(messages[math.random(#messages)], TALKTYPE_MONSTER_SAY, false, player, toPosition)
+		player:sayLocalized(messages[math.random(#messages)], TALKTYPE_MONSTER_SAY, false, player, toPosition)
 
 		addEvent(revertItem, transformation.revertTime, toPosition, transformation.transformedItemId, item.itemid)
 

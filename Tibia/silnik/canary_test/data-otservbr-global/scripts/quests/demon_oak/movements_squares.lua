@@ -1,11 +1,11 @@
 local voices = {
-	"Release me and you will be rewarded greatefully!",
-	"What is this? Demon Legs lying here? Someone might have lost them!",
-	"I'm trapped, come here and free me fast!!",
-	"I can bring your beloved back from the dead, just release me!",
-	"What a nice shiny golden armor. Come to me and you can have it!",
-	"Find a way in here and release me! Pleeeease hurry!",
-	"You can have my demon set, if you help me get out of here!",
+	"quests.demon_oak.voice_1",
+	"quests.demon_oak.voice_2",
+	"quests.demon_oak.voice_3",
+	"quests.demon_oak.voice_4",
+	"quests.demon_oak.voice_5",
+	"quests.demon_oak.voice_6",
+	"quests.demon_oak.voice_7",
 }
 
 local squares = MoveEvent()
@@ -20,7 +20,7 @@ function squares.onStepIn(creature, item, position, fromPosition)
 	local startUid = 9000
 	if item.uid - startUid == status + 1 then
 		player:setStorageValue(Storage.Quest.U8_2.TheDemonOak.Squares, status + 1)
-		player:say(voices[math.random(#voices)], TALKTYPE_MONSTER_YELL, false, player, DEMON_OAK_POSITION)
+		player:sayLocalized(voices[math.random(#voices)], TALKTYPE_MONSTER_YELL, false, player, DEMON_OAK_POSITION)
 	end
 	return true
 end

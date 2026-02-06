@@ -71,7 +71,7 @@ function rottinWoodtrap.onUse(cid, item, fromPosition, itemEx, toPosition, isHot
 		if itemEx.itemid == 10480 then
 			-- Check the player's storage values to determine if the trap can be placed
 			if (getPlayerStorageValue(cid, Storage.Quest.U8_7.RottinWoodAndTheMarriedMen.Mission03) == 5) and getPlayerStorageValue(cid, Storage.Quest.U8_7.RottinWoodAndTheMarriedMen.Trap) < 3 then
-				doCreatureSay(cid, "You place the trap carefully on the ground. Between twigs and leaves it is almost invisible.", TALKTYPE_MONSTER_SAY)
+				Creature(cid):sayLocalized("scripts.rottin_wood.trap_placed", TALKTYPE_MONSTER_SAY)
 
 				-- Remove the trap item from the player's inventory and place it on the ground
 				doRemoveItem(item.uid, 1)
@@ -81,7 +81,7 @@ function rottinWoodtrap.onUse(cid, item, fromPosition, itemEx, toPosition, isHot
 				setPlayerStorageValue(cid, Storage.Quest.U8_7.RottinWoodAndTheMarriedMen.Trap, getPlayerStorageValue(cid, Storage.Quest.U8_7.RottinWoodAndTheMarriedMen.Trap) + 1)
 			else
 				if getPlayerStorageValue(cid, Storage.Quest.U8_7.RottinWoodAndTheMarriedMen.Trap) == 3 then
-					doCreatureSay(cid, "It looks like the merchants are about to arrive, better hide somewhere where you can see what's going on in the area.", TALKTYPE_MONSTER_SAY)
+					Creature(cid):sayLocalized("scripts.rottin_wood.merchants_arriving", TALKTYPE_MONSTER_SAY)
 
 					-- Remove the trap item and place it on the ground
 					doRemoveItem(item.uid, 1)

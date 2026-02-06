@@ -79,7 +79,7 @@ local config = {
 		storage = Storage.Quest.U8_54.ChildrenOfTheRevolution.Questline,
 		formerValue = 1,
 		newValue = 2,
-		say = "A batch of documents has been stashed in the shelf. These might be of interest to Zalamon.",
+		say = "quests.quest_system2.say_1",
 		effect = CONST_ME_POFF,
 	},
 	[4010] = {
@@ -123,7 +123,7 @@ local config = {
 		storage = Storage.Quest.U8_54.UnnaturalSelection.Mission01,
 		formerValue = 1,
 		newValue = 2,
-		say = "You dig out a skull from the pile of bones. That must be the skull Lazaran talked about.",
+		say = "quests.quest_system2.say_2",
 	},
 	[9266] = {
 		items = {
@@ -132,7 +132,7 @@ local config = {
 		storage = Storage.Quest.U8_2.TheThievesGuildQuest.Mission06,
 		formerValue = 2,
 		newValue = 3,
-		say = "To buy some time you replace the fish with a piece of carrot.",
+		say = "quests.quest_system2.say_3",
 	},
 	[9277] = {
 		items = {
@@ -358,7 +358,7 @@ function questSystem2.onUse(player, item, fromPosition, target, toPosition, isHo
 	end
 
 	if useItem.say then
-		player:say(useItem.say, TALKTYPE_MONSTER_SAY)
+		player:sayLocalized(useItem.say, TALKTYPE_MONSTER_SAY)
 	end
 
 	if useItem.needItem then

@@ -75,9 +75,9 @@ rightMirror:register()
 
 -- Memories
 local memoriesWords = {
-	"The Ambassador tells another dignitary: Rathleton must never be surpassed! I will procure that the Empire falters!",
-	"Through a dimensional gate you can see the Ambassador of Rathleton wearing a cloak with a black sphinx on it.",
-	"Through a dimensional gate you can see how the Ambassador of Rathleton is talking to Fafnar cultists in a quite familiar way. The proof is absolutely substantive. The Ambassador is a betrayer!",
+	"quests.kilmaresh.memory_word_1",
+	"quests.kilmaresh.memory_word_2",
+	"quests.kilmaresh.memory_word_3",
 }
 
 local memoryShardsItemIdsBitmasks = {
@@ -98,7 +98,7 @@ function memoryShards.onUse(player, item, fromPosition, target, toPosition, isHo
 		and not hasUsedShard -- making sure we don't use the same shard twice
 		and target.uid == 57507 -- is it the shrine?
 	then
-		player:say(memoriesWords[memoryStorage], TALKTYPE_MONSTER_SAY, false, player, toPosition)
+		player:sayLocalized(memoriesWords[memoryStorage], TALKTYPE_MONSTER_SAY, false, player, toPosition)
 		player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Fifth.Memories, memoryStorage + 1)
 		player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Fifth.MemoriesShards, setFlag(memoriesShardsStorage, memoryShardsItemIdsBitmasks[item:getId()]))
 		toPosition:sendMagicEffect(CONST_ME_ENERGYAREA)

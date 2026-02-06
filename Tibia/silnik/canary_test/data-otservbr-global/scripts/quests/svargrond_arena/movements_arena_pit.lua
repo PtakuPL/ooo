@@ -42,7 +42,7 @@ function arenaPit.onStepIn(creature, item, position, fromPosition)
 		end
 
 		player:setStorageValue(Storage.Quest.U8_0.BarbarianArena.Arena, player:getStorageValue(Storage.Quest.U8_0.BarbarianArena.Arena) + 1)
-		player:say("Congratulations! You completed " .. ARENA[arenaId].name .. " arena, you should take your reward now.")
+		player:sayLocalized("quests.svargrond_arena.congratulations", TALKTYPE_MONSTER_SAY, false, nil, nil, { ARENA[arenaId].name })
 		player:setStorageValue(ARENA[arenaId].questLog, 2)
 		player:addAchievement(ARENA[arenaId].achievement)
 		SvargrondArena.cancelEvents(playerId)

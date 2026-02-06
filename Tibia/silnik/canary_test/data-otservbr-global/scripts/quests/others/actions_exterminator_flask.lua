@@ -1,7 +1,7 @@
 local config = {
-	[2127] = { text = "This mission stinks ... and now you do as well!", condition = true, transformId = 107 },
-	[6065] = { text = "You carefully gather the quara ink", transformId = 9149 },
-	[18230] = { text = "You carefully gather the stalker blood.", transformId = 125 },
+	[2127] = { text = "quests.others.exterminator_say_1", condition = true, transformId = 107 },
+	[6065] = { text = "quests.others.exterminator_say_2", transformId = 9149 },
+	[18230] = { text = "quests.others.exterminator_say_3", transformId = 125 },
 }
 
 local poisonField = Condition(CONDITION_OUTFIT)
@@ -30,7 +30,7 @@ function exterminatorFlask.onUse(player, item, fromPosition, target, toPosition,
 		player:addCondition(poisonField)
 	end
 
-	player:say(targetItem.text, TALKTYPE_MONSTER_SAY)
+	player:sayLocalized(targetItem.text, TALKTYPE_MONSTER_SAY)
 	player:getPosition():sendMagicEffect(CONST_ME_HITBYPOISON)
 	item:transform(targetItem.transformId)
 	return true

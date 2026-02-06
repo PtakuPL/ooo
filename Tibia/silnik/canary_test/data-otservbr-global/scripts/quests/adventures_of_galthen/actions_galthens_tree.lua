@@ -1,6 +1,6 @@
 local galthensTree = Action()
 function galthensTree.onUse(player, item, fromPosition, target, toPosition, isHotkey)
-	local hasExhaustion, message = player:kv():get("galthens-satchel") or 0, "Empty."
+	local hasExhaustion, message = player:kv():get("galthens-satchel") or 0, "quests.adventures_of_galthen.empty"
 	if hasExhaustion < os.time() then
 		local container = player:addItem(36813)
 		container:addItem(36810, 1)
@@ -10,7 +10,7 @@ function galthensTree.onUse(player, item, fromPosition, target, toPosition, isHo
 
 	player:teleportTo(Position(32396, 32520, 7))
 	player:getPosition():sendMagicEffect(CONST_ME_WATERSPLASH)
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, message)
+	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, message)
 
 	return true
 end

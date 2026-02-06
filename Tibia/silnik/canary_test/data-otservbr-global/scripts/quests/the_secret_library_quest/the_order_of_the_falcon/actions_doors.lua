@@ -12,13 +12,13 @@ local boats = {
 		boatPosition = Position(33373, 31309, 7),
 		value = 3,
 		toPosition = Position(33382, 31292, 7),
-		message = "A small island emerges out of the mist as you row towards a tiny light inside a dark, forehoding chapel.",
+		message = "quests.secret_library.falcon_boat_1",
 	},
 	[2] = {
 		boatPosition = Position(33382, 31294, 7),
 		value = 3,
 		toPosition = Position(33374, 31310, 7),
-		message = "Your heart lightens as you return from the gloomy isle.",
+		message = "quests.secret_library.falcon_boat_2",
 	},
 	[3] = {
 		boatPosition = Position(33344, 31348, 7),
@@ -59,7 +59,7 @@ function actions_falcon_doors.onUse(player, item, fromPosition, target, toPositi
 					player:teleportTo(toPos, true)
 					player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 					if message then
-						player:sendTextMessage(MESSAGE_EVENT_ADVANCE, message)
+						player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, message)
 					end
 				else
 					player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.actions_doors.msg_2")

@@ -2,7 +2,7 @@ local deathEvent = CreatureEvent("RagingMageDeath")
 
 function deathEvent.onDeath(creature)
 	Game.broadcastLocalizedMessage("quests.creaturescripts_raging_mage_kill.broadcast_2", MESSAGE_EVENT_ADVANCE)
-	doCreatureSay(creature, "I WILL RETURN!! My death will just be a door to await my homecoming, my physical hull will be... my... argh...", TALKTYPE_MONSTER_SAY)
+	creature:sayLocalized("scripts.raging_mage.death_say", TALKTYPE_MONSTER_SAY)
 
 	addEvent(function()
 		Game.broadcastLocalizedMessage("quests.creaturescripts_raging_mage_kill.broadcast_1", MESSAGE_EVENT_ADVANCE)

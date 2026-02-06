@@ -118,7 +118,7 @@ function gems.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 					return true
 				end
 			else
-				player:say("When the time comes, '" .. item:getName() .. "' will be accepted at this shrine.")
+				player:sayLocalized("scripts.gems.shrine_time", TALKTYPE_MONSTER_SAY, false, nil, nil, { item:getName() })
 				return true
 			end
 		end

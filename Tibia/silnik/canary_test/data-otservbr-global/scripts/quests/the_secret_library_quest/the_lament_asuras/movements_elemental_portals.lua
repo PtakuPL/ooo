@@ -38,7 +38,7 @@ local exits = {
 	[4] = { position = Position(32886, 32772, 9), toPosition = Position(32860, 32799, 11) },
 	[5] = { position = Position(32881, 32829, 11), toPosition = Position(32809, 32765, 10) },
 }
-local defaultMessage = "You have ten minutes to kill and loot this monster, else you will lose that chance and will be kicked out."
+local defaultMessage = "quests.secret_library.elemental_portals_default"
 local purplePosition = Position(32808, 32765, 10)
 local quest = Storage.Quest.U11_80.TheSecretLibrary.Asuras.Questline
 local toPosition_l = Position(32881, 32828, 11)
@@ -78,7 +78,7 @@ local function startBattle(pid, position, b_name, middle)
 	if player then
 		player:teleportTo(position, true)
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-		player:say(defaultMessage, TALKTYPE_MONSTER_SAY)
+		player:sayLocalized(defaultMessage, TALKTYPE_MONSTER_SAY)
 		local monster = Game.createMonster(b_name, middle)
 	end
 end
@@ -126,7 +126,7 @@ function movements_asura_elemental_portals.onStepIn(creature, item, position, fr
 						addEvent(expelPlayerFromRoom, 6000000, player:getId(), k.fromPos, k.toPos, k.exit)
 						player:setStorageValue(k.storage, os.time() + (20 * 3600))
 					else
-						player:sendCancelMessage("You are still exhausted from your last battle.")
+						player:sendLocalizedCancelMessage("quests.secret_library.exhausted_battle")
 						player:teleportTo(fromPosition, true)
 					end
 				else

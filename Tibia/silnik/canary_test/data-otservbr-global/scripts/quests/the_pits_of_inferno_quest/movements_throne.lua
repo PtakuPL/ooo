@@ -1,43 +1,43 @@
 local setting = {
 	[2080] = {
 		storage = Storage.Quest.U7_9.ThePitsOfInferno.ThroneInfernatil,
-		text = "You have touched Infernatil's throne and absorbed some of his spirit.",
+		text = "quests.pits_of_inferno.throne_say_1",
 		effect = CONST_ME_FIREAREA,
 		toPosition = Position(32909, 32211, 15),
 	},
 	[2081] = {
 		storage = Storage.Quest.U7_9.ThePitsOfInferno.ThroneTafariel,
-		text = "You have touched Tafariel's throne and absorbed some of his spirit.",
+		text = "quests.pits_of_inferno.throne_say_2",
 		effect = CONST_ME_MORTAREA,
 		toPosition = Position(32761, 32243, 15),
 	},
 	[2082] = {
 		storage = Storage.Quest.U7_9.ThePitsOfInferno.ThroneVerminor,
-		text = "You have touched Verminor's throne and absorbed some of his spirit.",
+		text = "quests.pits_of_inferno.throne_say_3",
 		effect = CONST_ME_POISONAREA,
 		toPosition = Position(32840, 32327, 15),
 	},
 	[2083] = {
 		storage = Storage.Quest.U7_9.ThePitsOfInferno.ThroneApocalypse,
-		text = "You have touched Apocalypse's throne and absorbed some of his spirit.",
+		text = "quests.pits_of_inferno.throne_say_4",
 		effect = CONST_ME_EXPLOSIONAREA,
 		toPosition = Position(32875, 32267, 15),
 	},
 	[2084] = {
 		storage = Storage.Quest.U7_9.ThePitsOfInferno.ThroneBazir,
-		text = "You have touched Bazir's throne and absorbed some of his spirit.",
+		text = "quests.pits_of_inferno.throne_say_5",
 		effect = CONST_ME_MAGIC_GREEN,
 		toPosition = Position(32745, 32385, 15),
 	},
 	[2085] = {
 		storage = Storage.Quest.U7_9.ThePitsOfInferno.ThroneAshfalor,
-		text = "You have touched Ashfalor's throne and absorbed some of his spirit.",
+		text = "quests.pits_of_inferno.throne_say_6",
 		effect = CONST_ME_FIREAREA,
 		toPosition = Position(32839, 32310, 15),
 	},
 	[2086] = {
 		storage = Storage.Quest.U7_9.ThePitsOfInferno.ThronePumin,
-		text = "You have touched Pumin's throne and absorbed some of his spirit.",
+		text = "quests.pits_of_inferno.throne_say_7",
 		effect = CONST_ME_MORTAREA,
 		toPosition = Position(32785, 32279, 15),
 	},
@@ -62,7 +62,7 @@ function throne.onStepIn(creature, item, position, fromPosition)
 			player:setStorageValue(throne.storage, 10)
 			player:setStorageValue(Storage.Quest.U7_9.ThePitsOfInferno.ShortcutHubDoor, 1)
 			player:getPosition():sendMagicEffect(throne.effect)
-			player:say(throne.text, TALKTYPE_MONSTER_SAY)
+			player:sayLocalized(throne.text, TALKTYPE_MONSTER_SAY)
 		else
 			player:teleportTo(throne.toPosition)
 			player:getPosition():sendMagicEffect(CONST_ME_MORTAREA)
@@ -74,7 +74,7 @@ function throne.onStepIn(creature, item, position, fromPosition)
 			player:setStorageValue(throne.storage, 1)
 			player:setStorageValue(Storage.Quest.U7_9.ThePitsOfInferno.ShortcutHubDoor, 1)
 			player:getPosition():sendMagicEffect(throne.effect)
-			player:say(throne.text, TALKTYPE_MONSTER_SAY)
+			player:sayLocalized(throne.text, TALKTYPE_MONSTER_SAY)
 		else
 			player:teleportTo(throne.toPosition)
 			player:getPosition():sendMagicEffect(CONST_ME_MORTAREA)

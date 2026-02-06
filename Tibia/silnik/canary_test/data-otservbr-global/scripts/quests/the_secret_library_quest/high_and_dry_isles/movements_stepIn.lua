@@ -20,7 +20,7 @@ local svargrond = {
 	toPosition = Position(32127, 31665, 7),
 }
 
-local defaultMessage = "You have ten minutes to kill and loot this monster, else you will lose that chance and will be kicked out."
+local defaultMessage = "quests.secret_library.high_and_dry_default"
 
 local function resetRoom(position)
 	local spec = Game.getSpectators(position, false, false, 5, 5, 5, 5)
@@ -45,7 +45,7 @@ local function startBattle(pid, position, b_name, middle)
 	if player then
 		player:teleportTo(position)
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-		player:say(defaultMessage, TALKTYPE_MONSTER_SAY)
+		player:sayLocalized(defaultMessage, TALKTYPE_MONSTER_SAY)
 		local monster = Game.createMonster(b_name, middle)
 	end
 end

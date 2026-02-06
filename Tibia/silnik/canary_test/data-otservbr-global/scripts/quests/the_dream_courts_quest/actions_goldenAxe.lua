@@ -36,7 +36,7 @@ local function tryCrystal(player, itemid, position, actionid, message, rewardid)
 		if crystal then
 			if crystal:getActionId() == actionid then
 				if r == 1 then
-					player:say(message, TALKTYPE_MONSTER_SAY)
+					player:sayLocalized(message, TALKTYPE_MONSTER_SAY)
 					player:addItem(rewardid, 1)
 					crystal:setActionId(0)
 					addEvent(setActionId, 1000 * 30, itemid, position, actionid)
@@ -66,19 +66,19 @@ function actions_goldenAxe.onUse(player, item, fromPosition, target, toPosition,
 		if target.itemid == 8865 then
 			for _, k in pairs(firstFloor) do
 				if tPos == k.hisPosition then
-					tryCrystal(player:getId(), tId, tPos, 23121, "You got a blue crystal!", 29287)
+					tryCrystal(player:getId(), tId, tPos, 23121, "quests.dream_courts.got_blue_crystal", 29287)
 				end
 			end
 		elseif target.itemid == 14940 then
 			for _, k in pairs(secondFloor) do
 				if tPos == k.hisPosition then
-					tryCrystal(player:getId(), tId, tPos, 23122, "You got a green crystal!", 29288)
+					tryCrystal(player:getId(), tId, tPos, 23122, "quests.dream_courts.got_green_crystal", 29288)
 				end
 			end
 		elseif target.itemid == 14974 then
 			for _, k in pairs(thirdFloor) do
 				if tPos == k.hisPosition then
-					tryCrystal(player:getId(), tId, tPos, 23123, "You got a purple crystal!", 29289)
+					tryCrystal(player:getId(), tId, tPos, 23123, "quests.dream_courts.got_purple_crystal", 29289)
 				end
 			end
 		end

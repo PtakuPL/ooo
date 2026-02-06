@@ -13,7 +13,7 @@ local config = {
 			itemId = { 17939, 17939 },
 			transformId = { 17942, 17943 },
 		},
-		sound = "Srrrt!",
+		sound = "scripts.rafzane_elevator.sound_1",
 		soundPosition = Position(33052, 32099, 6),
 		relocatePosition = Position(33051, 32098, 6),
 	},
@@ -26,7 +26,7 @@ local config = {
 			itemId = { 17942, 17943 },
 			transformId = { 17939, 17939 },
 		},
-		sound = "Zrrrt!",
+		sound = "scripts.rafzane_elevator.sound_2",
 		soundPosition = Position(33052, 32099, 7),
 		relocatePosition = Position(33051, 32100, 7),
 	},
@@ -55,7 +55,7 @@ local function moveElevator(config, player)
 	end
 
 	if player then
-		player:say(config.sound, TALKTYPE_MONSTER_YELL, false, player, config.soundPosition)
+		player:sayLocalized(config.sound, TALKTYPE_MONSTER_YELL, false, player, config.soundPosition)
 	end
 end
 

@@ -291,7 +291,7 @@ local function processItemInboxPurchase(player, name, id)
 			return true
 		end
 	else
-		player:sendTextMessage(MESSAGE_LOOK, "Please make sure you have free slots in your store inbox.")
+		player:sendLocalizedTextMessage(MESSAGE_LOOK, "npc.walter_jaeger.store_inbox_full")
 	end
 
 	return false

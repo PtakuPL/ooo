@@ -2870,15 +2870,15 @@ void ProtocolGame::parseLeaderFinderWindow(NetworkMessage &msg) {
 
 			switch (memberStatus) {
 				case 2: {
-					member->sendTextMessage(MESSAGE_STATUS, "You are invited to a new team.");
+					member->sendLocalizedTextMessage(MESSAGE_STATUS, "server.protocolgame.msg_1");
 					break;
 				}
 				case 3: {
-					member->sendTextMessage(MESSAGE_STATUS, "Your team finder request was accepted.");
+					member->sendLocalizedTextMessage(MESSAGE_STATUS, "server.protocolgame.msg_2");
 					break;
 				}
 				case 4: {
-					member->sendTextMessage(MESSAGE_STATUS, "Your team finder request was denied.");
+					member->sendLocalizedTextMessage(MESSAGE_STATUS, "server.protocolgame.msg_3");
 					break;
 				}
 
@@ -2920,7 +2920,7 @@ void ProtocolGame::parseMemberFinderWindow(NetworkMessage &msg) {
 		}
 
 		if (action == 1) {
-			leader->sendTextMessage(MESSAGE_STATUS, "There is a new request to join your team.");
+			leader->sendLocalizedTextMessage(MESSAGE_STATUS, "server.protocolgame.msg_4");
 			teamAssemble->membersMap.insert({ player->getGUID(), 1 });
 		} else {
 			for (auto itt = teamAssemble->membersMap.begin(), end = teamAssemble->membersMap.end(); itt != end; ++itt) {
@@ -4706,7 +4706,7 @@ void ProtocolGame::sendPremiumTrigger() {
 void ProtocolGame::sendTextMessage(const TextMessage &message) {
 	if (message.type == MESSAGE_NONE) {
 		g_logger().error("[ProtocolGame::sendTextMessage] - Message type is wrong, missing or invalid for player with name {}, on position {}", player->getName(), player->getPosition().toString());
-		player->sendTextMessage(MESSAGE_ADMINISTRATOR, "There was a problem requesting your message, please contact the administrator");
+		player->sendLocalizedTextMessage(MESSAGE_ADMINISTRATOR, "server.protocolgame.msg_5");
 		return;
 	}
 
@@ -9404,12 +9404,12 @@ void ProtocolGame::parseStashWithdraw(NetworkMessage &msg) {
 	}
 
 	if (!player->isAccessPlayer() && !player->isStashMenuAvailable()) {
-		player->sendCancelMessage("You can't use stash right now.");
+		player->sendLocalizedTextMessage(MESSAGE_FAILURE, "cpp.cancel.stash_wait");
 		return;
 	}
 
 	if (player->isUIExhausted(500)) {
-		player->sendCancelMessage("You need to wait to do this again.");
+		player->sendLocalizedTextMessage(MESSAGE_FAILURE, "cpp.cancel.wait_again");
 		return;
 	}
 

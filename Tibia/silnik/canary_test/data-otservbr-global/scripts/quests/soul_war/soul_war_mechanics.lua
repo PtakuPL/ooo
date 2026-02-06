@@ -167,15 +167,18 @@ function goshnarGreedEntrance.onStepIn(creature, item, position, fromPosition)
 
 	local soulWarQuest = player:soulWarQuestKV()
 	local hasAccess = true
-	local message = "Progress towards Mirrored Nightmare boss access:\n"
+	local headerTpl = Translator.getTranslation(player, "quest.soul_war.boss_progress_header")
+	local killsTpl = Translator.getTranslation(player, "quest.soul_war.boss_progress_kills")
+	local accessTpl = Translator.getTranslation(player, "quest.soul_war.boss_progress_access")
+	local message = headerTpl .. "\n"
 
 	for _, apparitionName in pairs(SoulWarQuest.apparitionNames) do
 		local count = soulWarQuest:get(apparitionName) or 0
 		if count < SoulWarQuest.requiredCountPerApparition then
 			hasAccess = false
-			message = message .. apparitionName .. ": " .. count .. "/" .. SoulWarQuest.requiredCountPerApparition .. " kills\n"
+			message = message .. string.format(killsTpl, apparitionName, count, SoulWarQuest.requiredCountPerApparition) .. "\n"
 		else
-			message = message .. apparitionName .. ": Access achieved!\n"
+			message = message .. string.format(accessTpl, apparitionName) .. "\n"
 		end
 	end
 

@@ -750,7 +750,7 @@ do
 			{ minPoints = 3240, percentage = 45 },
 			{ minPoints = 3600, percentage = 50 },
 		},
-		messageTemplate = "Due to your long-term loyalty to " .. SERVER_NAME .. " you currently benefit from a ${bonusPercentage}% bonus on all of your skills. (You have ${loyaltyPoints} loyalty points)",
+		messageTemplate = "lib.player.loyalty_bonus",
 	}
 
 	function Player.initializeLoyaltySystem(self)
@@ -784,7 +784,7 @@ do
 		self:setLoyaltyBonus(playerBonusPercentage)
 
 		if self:getLoyaltyBonus() ~= 0 then
-			self:sendTextMessage(MESSAGE_STATUS, string.formatNamed(loyaltySystem.messageTemplate, { bonusPercentage = playerBonusPercentage, loyaltyPoints = playerLoyaltyPoints }))
+			self:sendLocalizedTextMessage(MESSAGE_STATUS, loyaltySystem.messageTemplate, {playerBonusPercentage, playerLoyaltyPoints, SERVER_NAME})
 		end
 
 		return true

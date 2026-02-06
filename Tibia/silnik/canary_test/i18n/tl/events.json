@@ -11,5 +11,6 @@
   "event.player.msg_5": "Your report is being processed.",
   "event.player.say_1": "You feed the turtle, now you may pass.",
   "event.player.msg_move_fast": "You can't move that item so fast.",
-  "event.player.msg_report_sent": "Your report has been sent to {server}."
+  "event.player.msg_report_sent": "Your report has been sent to {server}.",
+  "event.player.stamina_pz_recharge": "In protection zone. Recharging {0} stamina every {1} minutes."
 }

@@ -120,6 +120,26 @@ NpcHandler = {
 		obj.messages = {}
 		obj.localizedMessages = {}
 
+		-- Default i18n keys for all NPC message types.
+		-- These provide automatic per-player locale translation for NPCs
+		-- that don't override messages. Individual NPCs can still call
+		-- setLocalizedMessage() or setMessage() to override.
+		obj.localizedMessages[MESSAGE_GREET] = { key = "npclib.handler.greet" }
+		obj.localizedMessages[MESSAGE_FAREWELL] = { key = "npclib.handler.farewell" }
+		obj.localizedMessages[MESSAGE_BUY] = { key = "npclib.handler.buy" }
+		obj.localizedMessages[MESSAGE_MISSINGMONEY] = { key = "npclib.handler.missing_money" }
+		obj.localizedMessages[MESSAGE_NEEDMONEY] = { key = "npclib.handler.need_money" }
+		obj.localizedMessages[MESSAGE_MISSINGITEM] = { key = "npclib.handler.missing_item" }
+		obj.localizedMessages[MESSAGE_NEEDITEM] = { key = "npclib.handler.need_item" }
+		obj.localizedMessages[MESSAGE_NEEDSPACE] = { key = "npclib.handler.need_space" }
+		obj.localizedMessages[MESSAGE_NEEDMORESPACE] = { key = "npclib.handler.need_more_space" }
+		obj.localizedMessages[MESSAGE_WALKAWAY] = { key = "npclib.handler.walkaway" }
+		obj.localizedMessages[MESSAGE_DECLINE] = { key = "npclib.handler.decline" }
+		obj.localizedMessages[MESSAGE_SENDTRADE] = { key = "npclib.handler.sendtrade" }
+		obj.localizedMessages[MESSAGE_NOSHOP] = { key = "npclib.handler.noshop" }
+		obj.localizedMessages[MESSAGE_ONCLOSESHOP] = { key = "npclib.handler.oncloseshop" }
+		obj.localizedMessages[MESSAGE_ALREADYFOCUSED] = { key = "npclib.handler.already_focused" }
+
 		setmetatable(obj.messages, self.messages)
 		self.messages.__index = self.messages
 

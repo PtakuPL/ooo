@@ -70,7 +70,7 @@ function addItemsToShoppingBag(npc, player)
 		if player:getMoney() + player:getBankBalance() < moneyRequired then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.imbuement_assistant.say_1")
 			npcHandler:setTopic(player:getId(), 0)
-			return false, "You don't have enough money."
+			return false, "npc.imbuement_assistant.not_enough_money"
 		end
 
 		local totalWeight = 0
@@ -80,11 +80,11 @@ function addItemsToShoppingBag(npc, player)
 		end
 
 		if player:getFreeCapacity() < totalWeight then
-			return false, "You don't have enough weight."
+			return false, "npc.imbuement_assistant.not_enough_cap"
 		end
 
 		if player:getFreeBackpackSlots() == 0 then
-			return false, "You don't have enough room."
+			return false, "npc.imbuement_assistant.not_enough_room"
 		end
 
 		local shoppingBag = player:addItem(2856, 1) -- present box
@@ -343,7 +343,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 2 then
 		local success, message = addItemsToShoppingBag(npc, player)
 		if not success then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, message)
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, message)
 			npcHandler:setTopic(playerId, 1)
 			npcHandler:say(imbuementPackages, npc, player)
 			return

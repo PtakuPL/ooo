@@ -7245,5 +7245,15 @@
   "npc.cranky_lizard_crone.newaddon": "Here you are, enjoy your brand new addon!",
   "npc.cranky_lizard_crone.no_items": "You do not have all the required items.",
   "npc.cranky_lizard_crone.already": "It seems you already have this addon, don't you try to mock me son!",
-  "npc.bertram.key_response": "Oh my! You look so great in your uniform! You archpostwomen are not only daring but also beautiful. Here take it, that's the key you wanted. Just promise to visit me now and then!"
+  "npc.bertram.key_response": "Oh my! You look so great in your uniform! You archpostwomen are not only daring but also beautiful. Here take it, that's the key you wanted. Just promise to visit me now and then!",
+  "npc.hireling.supply_stash_count": "Your supply stash contains {0} item(s).",
+  "npc.hireling.stash_count": "Your stash contains {0} item(s).",
+  "npc.tamoril.date_restriction": "You can only discuss the First Dragon between January 14 and February 12.",
+  "npc.walter_jaeger.store_inbox_full": "Please make sure you have free slots in your store inbox.",
+  "npc.gerimor.gained_experience": "You gained {0} experience points.",
+  "npc.gerimor.gained_item": "You gained a {0}.",
+  "npc.testserver_assistant.blesses_received": "You received the remaining {0} blesses.",
+  "npc.imbuement_assistant.not_enough_money": "You don't have enough money.",
+  "npc.imbuement_assistant.not_enough_cap": "You don't have enough weight.",
+  "npc.imbuement_assistant.not_enough_room": "You don't have enough room."
 }

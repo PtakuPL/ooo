@@ -663,8 +663,7 @@ function Player:onChangeZone(zone)
 							delay = configManager.getNumber(configKeys.STAMINA_GREEN_DELAY)
 						end
 
-						local message = string.format("In protection zone. Recharging %i stamina every %i minutes.", configManager.getNumber(configKeys.STAMINA_PZ_GAIN), delay)
-						self:sendTextMessage(MESSAGE_FAILURE, message)
+						self:sendLocalizedTextMessage(MESSAGE_FAILURE, "event.player.stamina_pz_recharge", {configManager.getNumber(configKeys.STAMINA_PZ_GAIN), delay})
 						staminaBonus.eventsPz[self:getId()] = addEvent(addStamina, delay * 60 * 1000, nil, self:getId(), delay * 60 * 1000)
 					end
 				end

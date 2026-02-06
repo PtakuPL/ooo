@@ -208,12 +208,13 @@ Blessings.useCharm = function(player, item)
 end
 
 Blessings.checkBless = function(player)
-	local result = "Received blessings:"
+	local header = Translator.getTranslation(player, "lib.blessing.received_header")
+	local result = header
 	for k, v in pairs(Blessings.All) do
 		result = player:hasBlessing(k) and result .. "\n" .. v.name or result
 	end
 
-	if 20 > result:len() then
+	if result:len() <= header:len() then
 		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "lib.blessing.msg_none")
 	else
 		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, result)

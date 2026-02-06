@@ -69,7 +69,7 @@ if not warzoneConfig then
 		for i = 1, #spectators do
 			if spectators[i]:isPlayer() then
 				spectators[i]:teleportTo(roomwarzone.exit)
-				spectators[i]:sendTextMessage(MESSAGE_EVENT_ADVANCE, msg)
+				spectators[i]:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, msg)
 			else
 				spectators[i]:remove()
 			end

@@ -266,24 +266,24 @@ void IOPrey::checkPlayerPreys(const std::shared_ptr<Player> &player, uint8_t amo
 						slot->reloadBonusType();
 						slot->reloadBonusValue();
 						slot->bonusTimeLeft = static_cast<uint16_t>(g_configManager().getNumber(PREY_BONUS_TIME));
-						player->sendTextMessage(MESSAGE_STATUS, "Your prey bonus type and time has been succesfully reseted.");
+						player->sendLocalizedTextMessage(MESSAGE_STATUS, "server.ioprey.msg_1");
 						player->reloadPreySlot(static_cast<PreySlot_t>(slotId));
 						continue;
 					}
 
-					player->sendTextMessage(MESSAGE_STATUS, "You don't have enought prey cards to enable automatic reroll when your slot expire.");
+					player->sendLocalizedTextMessage(MESSAGE_STATUS, "server.ioprey.msg_2");
 				} else if (slot->option == PreyOption_Locked) {
 					if (player->usePreyCards(static_cast<uint16_t>(g_configManager().getNumber(PREY_SELECTION_LIST_PRICE)))) {
 						slot->bonusTimeLeft = static_cast<uint16_t>(g_configManager().getNumber(PREY_BONUS_TIME));
-						player->sendTextMessage(MESSAGE_STATUS, "Your prey bonus time has been succesfully reseted.");
+						player->sendLocalizedTextMessage(MESSAGE_STATUS, "server.ioprey.msg_3");
 						player->reloadPreySlot(static_cast<PreySlot_t>(slotId));
 						continue;
 					}
 
-					player->sendTextMessage(MESSAGE_STATUS, "You don't have enought prey cards to lock monster and bonus when the slot expire.");
+					player->sendLocalizedTextMessage(MESSAGE_STATUS, "server.ioprey.msg_4");
 				} else {
 					slot->reloadMonsterGrid(player->getPreyBlackList(), player->getLevel());
-					player->sendTextMessage(MESSAGE_STATUS, "Your prey bonus has expired.");
+					player->sendLocalizedTextMessage(MESSAGE_STATUS, "server.ioprey.msg_5");
 				}
 
 				slot->eraseBonus();
@@ -299,13 +299,13 @@ void IOPrey::checkPlayerPreys(const std::shared_ptr<Player> &player, uint8_t amo
 void IOPrey::parsePreyAction(const std::shared_ptr<Player> &player, PreySlot_t slotId, PreyAction_t action, PreyOption_t option, int8_t index, uint16_t raceId) const {
 	const auto &slot = player->getPreySlotById(slotId);
 	if (!slot || slot->state == PreyDataState_Locked) {
-		player->sendMessageDialog("To unlock this prey slot first you must buy it on store.");
+		player->sendLocalizedMessageDialog("server.ioprey.msg_6");
 		return;
 	}
 
 	if (action == PreyAction_ListReroll) {
 		if (slot->freeRerollTimeStamp > OTSYS_TIME() && !g_game().removeMoney(player, player->getPreyRerollPrice(), 0, true)) {
-			player->sendMessageDialog("You don't have enought money to reroll the prey slot.");
+			player->sendLocalizedMessageDialog("server.ioprey.msg_7");
 			return;
 		} else if (slot->freeRerollTimeStamp <= OTSYS_TIME()) {
 			slot->freeRerollTimeStamp = OTSYS_TIME() + g_configManager().getNumber(PREY_FREE_REROLL_TIME) * 1000;
@@ -320,7 +320,7 @@ void IOPrey::parsePreyAction(const std::shared_ptr<Player> &player, PreySlot_t s
 		slot->reloadMonsterGrid(player->getPreyBlackList(), player->getLevel());
 	} else if (action == PreyAction_ListAll_Cards) {
 		if (!player->usePreyCards(static_cast<uint16_t>(g_configManager().getNumber(PREY_SELECTION_LIST_PRICE)))) {
-			player->sendMessageDialog("You don't have enought prey cards to choose a monsters on the list.");
+			player->sendLocalizedMessageDialog("server.ioprey.msg_8");
 			return;
 		}
 
@@ -330,16 +330,16 @@ void IOPrey::parsePreyAction(const std::shared_ptr<Player> &player, PreySlot_t s
 	} else if (action == PreyAction_ListAll_Selection) {
 		const auto mtype = g_monsters().getMonsterTypeByRaceId(raceId);
 		if (slot->isOccupied()) {
-			player->sendMessageDialog("You already have an active monster on this prey slot.");
+			player->sendLocalizedMessageDialog("server.ioprey.msg_9");
 			return;
 		} else if (!slot->canSelect() || slot->state != PreyDataState_ListSelection) {
-			player->sendMessageDialog("There was an error while processing your action. Please try reopening the prey window.");
+			player->sendLocalizedMessageDialog("server.ioprey.msg_10");
 			return;
 		} else if (player->getPreyWithMonster(raceId)) {
-			player->sendMessageDialog("This creature is already selected on another slot.");
+			player->sendLocalizedMessageDialog("server.ioprey.msg_11");
 			return;
 		} else if (mtype && !mtype->info.isPreyable) {
-			player->sendMessageDialog("This creature can't be select on prey. Please choose another one.");
+			player->sendLocalizedMessageDialog("server.ioprey.msg_12");
 			return;
 		}
 
@@ -354,10 +354,10 @@ void IOPrey::parsePreyAction(const std::shared_ptr<Player> &player, PreySlot_t s
 		slot->bonusTimeLeft = static_cast<uint16_t>(g_configManager().getNumber(PREY_BONUS_TIME));
 	} else if (action == PreyAction_BonusReroll) {
 		if (!slot->isOccupied()) {
-			player->sendMessageDialog("You don't have any active monster on this prey slot.");
+			player->sendLocalizedMessageDialog("server.ioprey.msg_13");
 			return;
 		} else if (!player->usePreyCards(static_cast<uint16_t>(g_configManager().getNumber(PREY_BONUS_REROLL_PRICE)))) {
-			player->sendMessageDialog("You don't have enought prey cards to reroll this prey slot bonus type.");
+			player->sendLocalizedMessageDialog("server.ioprey.msg_14");
 			return;
 		}
 
@@ -366,13 +366,13 @@ void IOPrey::parsePreyAction(const std::shared_ptr<Player> &player, PreySlot_t s
 		slot->bonusTimeLeft = static_cast<uint16_t>(g_configManager().getNumber(PREY_BONUS_TIME));
 	} else if (action == PreyAction_MonsterSelection) {
 		if (slot->isOccupied()) {
-			player->sendMessageDialog("You already have an active monster on this prey slot.");
+			player->sendLocalizedMessageDialog("server.ioprey.msg_9");
 			return;
 		} else if (!slot->canSelect() || index == -1 || (index + 1) > slot->raceIdList.size()) {
-			player->sendMessageDialog("There was an error while processing your action. Please try reopening the prey window.");
+			player->sendLocalizedMessageDialog("server.ioprey.msg_10");
 			return;
 		} else if (player->getPreyWithMonster(slot->raceIdList[index])) {
-			player->sendMessageDialog("This creature is already selected on another slot.");
+			player->sendLocalizedMessageDialog("server.ioprey.msg_11");
 			return;
 		}
 
@@ -386,10 +386,10 @@ void IOPrey::parsePreyAction(const std::shared_ptr<Player> &player, PreySlot_t s
 		slot->bonusTimeLeft = static_cast<uint16_t>(g_configManager().getNumber(PREY_BONUS_TIME));
 	} else if (action == PreyAction_Option) {
 		if (option == PreyOption_AutomaticReroll && player->getPreyCards() < static_cast<uint64_t>(g_configManager().getNumber(PREY_BONUS_REROLL_PRICE))) {
-			player->sendMessageDialog("You don't have enought prey cards to enable automatic reroll when your slot expire.");
+			player->sendLocalizedMessageDialog("server.ioprey.msg_2");
 			return;
 		} else if (option == PreyOption_Locked && player->getPreyCards() < static_cast<uint64_t>(g_configManager().getNumber(PREY_SELECTION_LIST_PRICE))) {
-			player->sendMessageDialog("You don't have enought prey cards to lock monster and bonus when the slot expire.");
+			player->sendLocalizedMessageDialog("server.ioprey.msg_4");
 			return;
 		}
 
@@ -405,18 +405,17 @@ void IOPrey::parsePreyAction(const std::shared_ptr<Player> &player, PreySlot_t s
 void IOPrey::parseTaskHuntingAction(const std::shared_ptr<Player> &player, PreySlot_t slotId, PreyTaskAction_t action, bool upgrade, uint16_t raceId) const {
 	const auto &slot = player->getTaskHuntingSlotById(slotId);
 	if (!slot || slot->state == PreyTaskDataState_Locked) {
-		player->sendMessageDialog("To unlock this task hunting slot first you must buy it on store.");
+		player->sendLocalizedMessageDialog("server.ioprey.msg_15");
 		return;
 	}
 
 	if (action == PreyTaskAction_ListReroll) {
 		if (slot->disabledUntilTimeStamp >= OTSYS_TIME()) {
-			std::ostringstream ss;
-			ss << "You need to wait " << ((slot->disabledUntilTimeStamp - OTSYS_TIME()) / 60000) << " minutes to select a new creature on task.";
-			player->sendMessageDialog(ss.str());
+			const auto waitMinutes = std::to_string((slot->disabledUntilTimeStamp - OTSYS_TIME()) / 60000);
+			player->sendLocalizedMessageDialog("server.ioprey.msg_16", { waitMinutes });
 			return;
 		} else if (slot->freeRerollTimeStamp > OTSYS_TIME() && !g_game().removeMoney(player, player->getTaskHuntingRerollPrice(), 0, true)) {
-			player->sendMessageDialog("You don't have enought money to reroll the task hunting slot.");
+			player->sendLocalizedMessageDialog("server.ioprey.msg_17");
 			return;
 		} else if (slot->freeRerollTimeStamp <= OTSYS_TIME()) {
 			slot->freeRerollTimeStamp = OTSYS_TIME() + g_configManager().getNumber(TASK_HUNTING_FREE_REROLL_TIME) * 1000;
@@ -430,19 +429,18 @@ void IOPrey::parseTaskHuntingAction(const std::shared_ptr<Player> &player, PreyS
 		slot->reloadMonsterGrid(player->getTaskHuntingBlackList(), player->getLevel());
 	} else if (action == PreyTaskAction_RewardsReroll) {
 		if (!player->usePreyCards(static_cast<uint16_t>(g_configManager().getNumber(TASK_HUNTING_BONUS_REROLL_PRICE)))) {
-			player->sendMessageDialog("You don't have enought prey cards to reroll you task reward rarity.");
+			player->sendLocalizedMessageDialog("server.ioprey.msg_18");
 			return;
 		}
 
 		slot->reloadReward();
 	} else if (action == PreyTaskAction_ListAll_Cards) {
 		if (slot->disabledUntilTimeStamp >= OTSYS_TIME()) {
-			std::ostringstream ss;
-			ss << "You need to wait " << ((slot->disabledUntilTimeStamp - OTSYS_TIME()) / 60000) << " minutes to select a new creature on task.";
-			player->sendMessageDialog(ss.str());
+			const auto waitMinutes = std::to_string((slot->disabledUntilTimeStamp - OTSYS_TIME()) / 60000);
+			player->sendLocalizedMessageDialog("server.ioprey.msg_16", { waitMinutes });
 			return;
 		} else if (!player->usePreyCards(static_cast<uint16_t>(g_configManager().getNumber(TASK_HUNTING_SELECTION_LIST_PRICE)))) {
-			player->sendMessageDialog("You don't have enought prey cards to choose a creature on list for you task hunting slot.");
+			player->sendLocalizedMessageDialog("server.ioprey.msg_19");
 			return;
 		}
 
@@ -450,21 +448,20 @@ void IOPrey::parseTaskHuntingAction(const std::shared_ptr<Player> &player, PreyS
 		slot->state = PreyTaskDataState_ListSelection;
 	} else if (action == PreyTaskAction_MonsterSelection) {
 		if (slot->disabledUntilTimeStamp >= OTSYS_TIME()) {
-			std::ostringstream ss;
-			ss << "You need to wait " << ((slot->disabledUntilTimeStamp - OTSYS_TIME()) / 60000) << " minutes to select a new creature on task.";
-			player->sendMessageDialog(ss.str());
+			const auto waitMinutes = std::to_string((slot->disabledUntilTimeStamp - OTSYS_TIME()) / 60000);
+			player->sendLocalizedMessageDialog("server.ioprey.msg_16", { waitMinutes });
 			return;
 		} else if (!slot->canSelect()) {
-			player->sendMessageDialog("There was an error while processing your action. Please try reopening the task window.");
+			player->sendLocalizedMessageDialog("server.ioprey.msg_20");
 			return;
 		} else if (slot->isOccupied()) {
-			player->sendMessageDialog("You already have an active monster on this task hunting slot.");
+			player->sendLocalizedMessageDialog("server.ioprey.msg_21");
 			return;
 		} else if (slot->state == PreyTaskDataState_Selection && !slot->isCreatureOnList(raceId)) {
-			player->sendMessageDialog("There was an error while processing your action. Please try reopening the task window.");
+			player->sendLocalizedMessageDialog("server.ioprey.msg_20");
 			return;
 		} else if (player->getTaskHuntingWithCreature(raceId)) {
-			player->sendMessageDialog("This creature is already selected on another slot.");
+			player->sendLocalizedMessageDialog("server.ioprey.msg_11");
 			return;
 		}
 
@@ -477,7 +474,7 @@ void IOPrey::parseTaskHuntingAction(const std::shared_ptr<Player> &player, PreyS
 		}
 	} else if (action == PreyTaskAction_Cancel) {
 		if (!g_game().removeMoney(player, player->getTaskHuntingRerollPrice(), 0, true)) {
-			player->sendMessageDialog("You don't have enought money to cancel your current task hunting.");
+			player->sendLocalizedMessageDialog("server.ioprey.msg_22");
 			return;
 		}
 
@@ -488,7 +485,7 @@ void IOPrey::parseTaskHuntingAction(const std::shared_ptr<Player> &player, PreyS
 		slot->reloadMonsterGrid(player->getTaskHuntingBlackList(), player->getLevel());
 	} else if (action == PreyTaskAction_Claim) {
 		if (!slot->isOccupied()) {
-			player->sendMessageDialog("You cannot claim your task reward with an empty task hunting slot.");
+			player->sendLocalizedMessageDialog("server.ioprey.msg_23");
 			return;
 		}
 
@@ -508,26 +505,23 @@ void IOPrey::parseTaskHuntingAction(const std::shared_ptr<Player> &player, PreyS
 			} else if (!slot->upgrade && slot->currentKills >= option->firstKills) {
 				reward = option->firstReward;
 			} else {
-				player->sendMessageDialog("There was an error while processing you task hunting reward. Please try reopening the window.");
+				player->sendLocalizedMessageDialog("server.ioprey.msg_24");
 				return;
 			}
 
-			std::ostringstream ss;
 			reward = static_cast<uint64_t>(std::ceil((reward * boostChange) / 10));
-			ss << "Congratulations! You have earned " << reward;
+			std::string rewardMessageKey = "server.ioprey.msg_27";
 			if (boostChange == 20) {
-				ss << " Hunting Task points including a 100% bonus.";
+				rewardMessageKey = "server.ioprey.msg_25";
 			} else if (boostChange == 15) {
-				ss << " Hunting Task points including a 50% bonus.";
-			} else {
-				ss << " Hunting Task points.";
+				rewardMessageKey = "server.ioprey.msg_26";
 			}
 
 			slot->eraseTask();
 			slot->reloadReward();
 			slot->state = PreyTaskDataState_Inactive;
 			player->addTaskHuntingPoints(reward);
-			player->sendMessageDialog(ss.str());
+			player->sendLocalizedMessageDialog(rewardMessageKey, { std::to_string(reward) });
 			slot->reloadMonsterGrid(player->getTaskHuntingBlackList(), player->getLevel());
 			slot->disabledUntilTimeStamp = OTSYS_TIME() + g_configManager().getNumber(TASK_HUNTING_LIMIT_EXHAUST) * 1000;
 		}

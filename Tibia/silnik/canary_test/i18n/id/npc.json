@@ -7255,5 +7255,14 @@
   "npc.testserver_assistant.blesses_received": "You received the remaining {0} blesses.",
   "npc.imbuement_assistant.not_enough_money": "You don't have enough money.",
   "npc.imbuement_assistant.not_enough_cap": "You don't have enough weight.",
-  "npc.imbuement_assistant.not_enough_room": "You don't have enough room."
+  "npc.imbuement_assistant.not_enough_room": "You don't have enough room.",
+  "npc.a_dead_bureaucrat.greet_msg_1": "Hello {}, welcome to the atrium of Pumin's Domain. We require some information from you before we can let you pass. Where do you want to go?",
+  "npc.captain_dreadnought.greet_msg_1": "Well, well, a new {}! Want me to bring you somewhere nice? Just say {yes}.",
+  "npc.example_merchant_i18n.greet_msg_1": "Hello {}! Welcome to my shop. Say {trade} to see my offers.",
+  "npc.grizzly_adams.greet_msg_3": "Good to see you again {}. You gained {} points for our society. Ask me for {promotion} to advance your rank!",
+  "npc.melchior.greet_msg_1": "Welcome, {}! The lovely sound of your voice shines like a beam of light through my solitary darkness!",
+  "npc.melchior.greet_msg_2": "Greetings, {}. I do not see your face, but I can read a thousand things in your voice!",
+  "npc.penny.greet_msg_1": "Welcome home, {} {}.",
+  "npc.sven.greet_msg_2": "Iskan told me that you killed huskies here in Svargrond. I will be lenient towards you and won't ban you from Svargrond. But you have to pay me a compensation of 1500 gold for each husky you have killed. Are you willing to pay {}?",
+  "npc.the_oracle.greet_msg_1": "{}, ARE YOU PREPARED TO FACE YOUR DESTINY?"
 }

@@ -2,7 +2,6 @@
   "talkaction.online.msg_summary": "{count} players online | Training: {training} | Idle: {idle} | Active: {active}",
   "talkaction.position.msg_position": "Your current position is: {x}, {y}, {z}.",
   "talkaction.refill.msg_refilled": "Refilled {items} for a total of {cost} silver tokens.",
-
   "talkaction.common.msg_command_param_required": "Command param required.",
   "talkaction.common.msg_player_not_found": "Player not found.",
   "talkaction.common.msg_player_name_not_online": "A player with that name is not online.",
@@ -21,7 +20,6 @@
   "talkaction.common.msg_invalid_command_params": "Invalid command params.",
   "talkaction.common.msg_command_param_usage": "Command param required. Usage: {usage}",
   "talkaction.common.msg_insufficient_usage": "Insufficient parameters. Usage: {usage}",
-
   "talkaction.god.charms.msg_added_points": "Added {amount} charm points to character '{name}'.",
   "talkaction.god.charms.msg_received_points": "Received {amount} charm points!",
   "talkaction.god.charms.msg_added_minor": "Added {amount} minor charm points to character '{name}'.",
@@ -38,7 +36,6 @@
   "talkaction.god.charms.msg_no_bestiary": "This monster has no bestiary. Type the name exactly as in the game.",
   "talkaction.god.charms.msg_set_single_other": "Set bestiary kill of monster '{monster}' for player '{name}' to '{amount}'.",
   "talkaction.god.charms.msg_set_single_self": "Updated kills of monster '{monster}'!",
-
   "talkaction.god.forge.msg_invalid_dust_count": "Invalid dust count.",
   "talkaction.god.forge.msg_invalid_dust_level": "Invalid dust level.",
   "talkaction.god.forge.msg_add_success": "Successful added {amount} dusts for the {name} player.",
@@ -52,20 +49,17 @@
   "talkaction.god.forge.msg_addlevel_target": "{admin} adds {amount} dust level to your character.",
   "talkaction.god.forge.msg_fiendish_none": "There are not fiendish monsters right now.",
   "talkaction.god.forge.msg_influenced_none": "There are not influenced monsters right now.",
-
   "talkaction.god.sound.msg_area_single": "Playing sound number {effect} on the area.",
   "talkaction.god.sound.msg_area_dual": "Playing sound number {effect1} and {effect2} on the area.",
   "talkaction.god.sound.msg_internal_single": "Playing sound number {effect} internally.",
   "talkaction.god.sound.msg_internal_dual": "Playing sound number {effect1} and {effect2} internally.",
   "talkaction.god.sound.msg_global_single": "Playing sound number {effect} globally.",
   "talkaction.god.sound.msg_global_dual": "Playing sound number {effect1} and {effect2} globally.",
-
   "talkaction.god.storage.msg_invalid_key": "Invalid storage key or name.",
   "talkaction.god.storage.msg_not_set": "The storage with id: {key} does not exist or is not set for player {name}.",
   "talkaction.god.storage.msg_value": "The storage with id: {key} from player {name} is: {value}.",
   "talkaction.god.storage.msg_set": "Set storage: {key} to player {name} newValue: {value}.",
   "talkaction.god.storage.msg_set_self": "Set storage: {key} to player {name}, newValue: {value}.",
-
   "talkaction.god.kv.msg_player_not_found": "Player {name} not found.",
   "talkaction.god.kv.msg_value": "kv[{key}] for {name}: {value}",
   "talkaction.god.kv.msg_key_not_found": "Key {key} not found for {name}.",
@@ -73,7 +67,6 @@
   "talkaction.god.kv.msg_set": "KV: [{key}] = {value} set for {name}",
   "talkaction.god.kv.msg_allkv_value": "kv[{key}] = {value}",
   "talkaction.god.kv.msg_cooldown_cleared": "Boss cooldown for {boss} cleared.",
-
   "talkaction.god.flags.msg_player_not_found": "Player {name} not found.",
   "talkaction.god.flags.msg_invalid_flag": "Invalid flag. Valid flags are: {list}",
   "talkaction.god.flags.msg_not_have": "Player {name} not have flag type: {flag}.",
@@ -82,14 +75,12 @@
   "talkaction.god.flags.msg_set": "Flag {flag} set for player {name}.",
   "talkaction.god.flags.msg_no_flag": "Player {name} not have flag {flag}.",
   "talkaction.god.flags.msg_removed": "Flag {flag} removed from player {name}.",
-
   "talkaction.god.achievement.msg_add_usage": "Usage: /addachievement playerName, achievementId|Name",
   "talkaction.god.achievement.msg_add_invalid": "Invalid achievement. Use valid ID or name.",
   "talkaction.god.achievement.msg_remove_usage": "Usage: /removeachievement playerName, achievementId",
   "talkaction.god.achievement.msg_remove_invalid": "Invalid achievement identifier. Use either ID or name.",
   "talkaction.god.achievement.msg_check_usage": "Usage: /checkachievements playerName",
   "talkaction.god.achievement.msg_check_list": "Achievements: {list}",
-
   "talkaction.gm.ban.msg_usage": "Command param required. Use: /ban playername, days [, reason].",
   "talkaction.gm.ban.msg_invalid_format": "Invalid command format. Use: /ban playername, days [, reason].",
   "talkaction.gm.ban.msg_invalid_days": "Invalid number of days.",
@@ -97,123 +88,100 @@
   "talkaction.gm.ban.msg_already_banned": "Player is already banned for longer or equal duration.",
   "talkaction.gm.ban.msg_extended": "{name}'s ban has been extended to {days} days.",
   "talkaction.gm.ban.msg_banned": "{name} has been banned for {days} days.",
-
   "talkaction.god.tutor.msg_only_promote_normal": "You can only promote a normal player to a tutor.",
   "talkaction.god.tutor.msg_only_demote_tutor": "You can only demote a tutor to a normal player",
   "talkaction.god.tutor.msg_promoted": "You have been promoted to a tutor by {name}.",
   "talkaction.god.tutor.msg_demoted": "You have been demoted to a normal player by {name}.",
-
   "talkaction.god.attributes.msg_item_not_found": "Item not found.",
   "talkaction.god.attributes.msg_cannot_add_item": "You cannot add that attribute to this item.",
   "talkaction.god.attributes.msg_cannot_add_creature": "You cannot add that attribute to this creature.",
   "talkaction.god.attributes.msg_cannot_add_player": "You cannot add that attribute to this player.",
   "talkaction.god.attributes.msg_unknown": "Unknown attribute.",
-
   "talkaction.player.buy_house.msg_need_premium": "You need a premium account.",
   "talkaction.player.buy_house.msg_need_level": "You need to be level {level} to buy a house.",
   "talkaction.player.buy_house.msg_look_at_door": "You have to be looking at the door of the house you would like to buy.",
   "talkaction.player.buy_house.msg_has_owner": "This house already has an owner.",
   "talkaction.player.buy_house.msg_already_owner": "You are already the owner of a house.",
   "talkaction.player.buy_house.msg_not_enough_money": "You do not have enough money.",
-
   "talkaction.god.zones.msg_list": "Zones:\n{list}",
   "talkaction.god.zones.msg_monsters": "Zone {name} monsters: {count}.",
   "talkaction.god.zones.msg_npcs": "Zone {name} NPCs: {count}.",
   "talkaction.god.zones.msg_players_list": "Zone {name} players: {list}.",
   "talkaction.god.zones.msg_players_count": "Zone {name} players: {count}.",
   "talkaction.god.zones.msg_size": "Zone {name} size: {count}.",
-
   "talkaction.god.title.msg_addtitle_usage": "Insufficient parameters. Usage: /addtitle playerName, badgeID",
   "talkaction.god.title.msg_settitle_usage": "Insufficient parameters. Usage: /settitle playerName, badgeID",
-
   "talkaction.god.monster.msg_name_required": "Monster name param required.",
-
   "talkaction.god.icons.msg_icon_required": "Icon required.",
   "talkaction.god.icons.msg_number_required": "Icon number required.",
   "talkaction.god.icons.msg_playericon_usage": "Usage: /playericon {icon_id}, {quantity}, {direction (optional: up/down)}",
   "talkaction.god.icons.msg_invalid_quantity": "Invalid quantity. It must be greater than 0.",
   "talkaction.god.icons.msg_invalid_direction": "Invalid direction. Use 'up' or 'down'.",
-
   "talkaction.god.money.msg_not_exists": "A player with name {name} does not exist.",
   "talkaction.god.money.msg_invalid_amount": "Invalid amount.",
   "talkaction.god.money.msg_failed": "Failed to add money to {name}.",
   "talkaction.god.money.msg_target": "{admin} added {amount} gold coins to your character.",
-
   "talkaction.god.manage_vip.msg_not_enabled": "Vip System are not enabled!",
   "talkaction.god.manage_vip.msg_numeric_required": "<value> has to be a numeric value.",
-
   "talkaction.god.bosstiary.msg_invalid_kills": "Invalid kill count.",
   "talkaction.god.bosstiary.msg_target_not_found": "Target player not found.",
   "talkaction.god.bosstiary.msg_target_received": "You received kills: {kills}, to boss: {monster}",
   "talkaction.god.bosstiary.msg_to_self": "Added received kills: {kills}, for boss: {monster} to yourself.",
   "talkaction.god.bosstiary.msg_to_player": "Added received kills: {kills}, for boss: {monster} to player: {name}",
-
   "talkaction.god.addon.msg_usage": "Usage: /addaddon <player name>, <looktype or 'all'>, <value>",
   "talkaction.god.addon.msg_invalid_value": "Invalid addon value. It should be between 0 and 3.",
   "talkaction.god.addon.msg_invalid_looktype": "Invalid looktype.",
-
   "talkaction.god.test.msg_level_required": "Log level and message required.",
   "talkaction.god.test.msg_message_required": "Log message required.",
   "talkaction.god.test.msg_no_container": "Your backpack does not contain a valid container.",
-
   "talkaction.god.raids.msg_started": "Raid {name} started.",
   "talkaction.god.raids.msg_could_not_start": "Raid {name} could not be started.",
   "talkaction.god.raids.msg_list": "Registered raids: {list}",
-
   "talkaction.god.mount.msg_usage": "Usage: /addmount <playername>, <mount id or 'all'>",
   "talkaction.god.mount.msg_invalid_id": "Invalid mount ID.",
-
   "talkaction.gm.namelock.msg_reason_required": "You must specify a reason.",
   "talkaction.gm.namelock.msg_namelocked": "{name} has been namelocked",
   "talkaction.gm.namelock.msg_not_found": "{name} was not found.",
-
   "talkaction.player.sell_house.msg_trade_not_found": "Trade player not found.",
   "talkaction.player.sell_house.msg_must_stand": "You must stand in your house to initiate the trade.",
-
   "talkaction.player.leave_house.msg_not_owner": "You are not the owner of this house.",
-
   "talkaction.player.aol.msg_not_enough_money": "You do not have enough money. You need {cost} gold to buy aol!",
-
   "talkaction.player.auto_loot.msg_vip_required": "You need to be VIP to use this command!",
-
   "talkaction.player.emote_spell.msg_specify_param": "Please specify the parameter: 'on' to activate or 'off' to deactivate.",
-
   "talkaction.gm.afk.msg_already_afk": "You are already AFK!",
   "talkaction.gm.clean.msg_cleaned": "Cleaned {count} item(s) from the map.",
   "talkaction.gm.gold_highscore.msg_no_highscore": "No highscore to show.",
   "talkaction.gm.kick.msg_cannot_kick": "You cannot kick this player.",
-
   "talkaction.gm.looktype.msg_not_exist": "A look type with that id does not exist.",
   "talkaction.gm.looktype.msg_must_be_number": "Looktype must be a numerical value.",
-
   "talkaction.gm.push_creature.msg_cannot_teleport": "You can not teleport {name}.",
   "talkaction.gm.set_light.msg_specify_color": "You need to specify the light color.",
   "talkaction.gm.set_light.msg_usage": "Use like this: /setlight color (0-{max}), (1-32). The first param is color and the second is intensity.",
   "talkaction.gm.skip_tiles.msg_cannot_teleport": "You cannot teleport there.",
-
   "talkaction.gm.spy.msg_specify_name": "Write the name of the character to be spyed.",
   "talkaction.gm.spy.msg_offline": "This player is offline or doesn't exist.",
-
   "talkaction.gm.teleport.msg_invalid_destination": "Destination position is not valid.",
   "talkaction.gm.teleport.msg_declare_xyz": "You need to declare the X, Y of Z of destination. Please use \"/teleport X, Y, Z\".",
   "talkaction.gm.teleport.msg_town_not_found": "Town not found.",
   "talkaction.gm.unban.msg_unbanned": "{name} has been unbanned.",
-
   "talkaction.god.ip_ban.msg_already_banned": "{name} is already IP banned.",
   "talkaction.god.ip_ban.msg_banned": "{name} has been IP banned.",
-
   "talkaction.god.create_item.msg_no_item": "There is no item with that id or name.",
   "talkaction.god.create_item.msg_invalid_tier": "Invalid tier count.",
-
   "talkaction.god.remove_thing.msg_object_not_found": "Object not found.",
   "talkaction.god.remove_thing.msg_thing_not_found": "Thing not found.",
   "talkaction.god.remove_thing.msg_no_ground": "You may not remove a ground tile.",
-
   "talkaction.god.goto_house.msg_target_no_house": "The player {name} not have house.",
   "talkaction.god.goto_house.msg_self_no_house": "You not have house. For goto house of one player use the player name param, usage: /gotohouse playername",
-
   "talkaction.god.manage_badge.msg_insufficient": "Insufficient parameters. Usage: /addbadge playerName, badgeID",
   "talkaction.god.skill.msg_usage": "Usage: /addskill <playername>, <skill or 'level'/'magic'>, [amount]",
-
-  "talkaction.player.hidden_shop.msg_item_not_found": "There is no item with that id or name."
+  "talkaction.player.hidden_shop.msg_item_not_found": "There is no item with that id or name.",
+  "talkaction.online.msg_category_training": "Training: {}",
+  "talkaction.online.msg_category_idle": "Idle: {}",
+  "talkaction.online.msg_category_active": "Active: {}",
+  "talkaction.online.msg_players_only": "{}",
+  "talkaction.god.test.msg_container_have": "You have {} items and {} subcontainers in your backpack.",
+  "talkaction.god.test.msg_container_removed": "You removed {} items and {} subcontainers from your backpack.",
+  "talkaction.gm.mc_check.msg_line": "{}: {}.",
+  "talkaction.gm.getlook.msg_result": "<look type=\"{}\" head=\"{}\" body=\"{}\" legs=\"{}\" feet=\"{}\" addons=\"{}\" mount=\"{}\" />"
 }

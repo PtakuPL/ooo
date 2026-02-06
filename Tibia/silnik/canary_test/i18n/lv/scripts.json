@@ -1230,5 +1230,9 @@
   "quest.soul_war.boss_progress_kills": "%s: %d/%d kills",
   "quest.soul_war.boss_progress_access": "%s: Access achieved!",
   "system.reward_chest.loot_available": "The following items dropped by {0} are available in your reward chest: {1}",
-  "system.reward_chest.loot_boss_bonus": "The following items dropped by {0} are available in your reward chest: {1} (boss bonus)"
+  "system.reward_chest.loot_boss_bonus": "The following items dropped by {0} are available in your reward chest: {1} (boss bonus)",
+  "scripts.find_person.result": "{} {}.",
+  "scripts.mc_check.msg_1": "Players with the same IP:",
+  "scripts.test.msg_invalid_log_level": "Invalid log level. Use: info, warn, error or debug.",
+  "scripts.test.msg_logged": "Log sent: [{}] at '{}' level."
 }

@@ -91,5 +91,9 @@
   "server.ioprey.msg_24": "There was an error while processing you task hunting reward. Please try reopening the window.",
   "server.ioprey.msg_25": "Congratulations! You have earned {} Hunting Task points including a 100% bonus.",
   "server.ioprey.msg_26": "Congratulations! You have earned {} Hunting Task points including a 50% bonus.",
-  "server.ioprey.msg_27": "Congratulations! You have earned {} Hunting Task points."
+  "server.ioprey.msg_27": "Congratulations! You have earned {} Hunting Task points.",
+  "server.player_vip.msg_3": "{} has logged in.",
+  "server.player_vip.msg_4": "{} has logged out.",
+  "server.player.msg_13": "Warning! The murder of {} was not justified.",
+  "server.player_achievement.msg_1": "Congratulations! You earned the achievement {}."
 }

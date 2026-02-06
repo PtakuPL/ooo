@@ -47,7 +47,7 @@ local function sendValidKeys(player)
 		table.insert(flagsList, flagName)
 	end
 
-	local text = "Invalid flag. Valid flags are: " .. table.concat(flagsList, "\n")
+	local text = i18nTranslate("scripts.flags.invalid_flag_valid", player:getLocale()) .. table.concat(flagsList, "\n")
 	player:showTextDialog(2019, text)
 end
 

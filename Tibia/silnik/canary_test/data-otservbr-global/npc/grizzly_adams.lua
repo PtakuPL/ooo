@@ -706,21 +706,21 @@ local function creatureSayCallback(npc, creature, type, message)
 		npcHandler:say(messageYes[chance], npc, creature)
 		choose[playerId] = nil
 		npcHandler:setTopic(playerId, 0)
-	elseif MsgContains("status", message) then
-		local started = player:getStartedTasks()
-		if started and #started > 0 then
-			local text = ""
-			table.sort(started, function(a, b)
-				return (a < b)
-			end)
-			local t = 0
-			local id
-			for i = 1, #started do
-				id = started[i]
-				t = t + 1
-				text = text .. "Task name: " .. tasks.GrizzlyAdams[id].raceName .. ". " .. "Current kills: " .. player:getStorageValue(KillCounter + id) .. ".\n"
-			end
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.grizzly_adams.say_11")
+		elseif MsgContains("status", message) then
+			local started = player:getStartedTasks()
+			if started and #started > 0 then
+				local statusText = ""
+				table.sort(started, function(a, b)
+					return (a < b)
+				end)
+				local t = 0
+				local id
+				for i = 1, #started do
+					id = started[i]
+					t = t + 1
+					statusText = statusText .. "Task name: " .. tasks.GrizzlyAdams[id].raceName .. ". " .. "Current kills: " .. player:getStorageValue(KillCounter + id) .. ".\n"
+				end
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.grizzly_adams.say_11")
 		else
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.grizzly_adams.say_12")
 		end
@@ -797,11 +797,11 @@ local function creatureSayCallback(npc, creature, type, message)
 				end
 			end
 		end
-	elseif message:lower() == "started" then
-		local started = player:getStartedTasks()
-		if started and #started > 0 then
-			local text = ""
-			local sep = ", "
+		elseif message:lower() == "started" then
+			local started = player:getStartedTasks()
+			if started and #started > 0 then
+				local startedText = ""
+				local sep = ", "
 			table.sort(started, function(a, b)
 				return (a < b)
 			end)
@@ -815,17 +815,17 @@ local function creatureSayCallback(npc, creature, type, message)
 				elseif t == #started then
 					sep = "."
 				end
-				text = text .. "{" .. (tasks.GrizzlyAdams[id].name or tasks.GrizzlyAdams[id].raceName) .. "}" .. sep
-			end
+					startedText = startedText .. "{" .. (tasks.GrizzlyAdams[id].name or tasks.GrizzlyAdams[id].raceName) .. "}" .. sep
+				end
 
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.grizzly_adams.say_8", { (#started > 1 and "s" or ""), (#started > 1 and "are" or "is"), text })
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.grizzly_adams.say_8", { (#started > 1 and "s" or ""), (#started > 1 and "are" or "is"), startedText })
 		else
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.grizzly_adams.say_17")
 		end
-	elseif message:lower() == "cancel" or message:lower() == "yes" and npcHandler:getTopic(playerId) == 10 then
-		local started = player:getStartedTasks()
-		local text = ""
-		local sep = ", "
+		elseif message:lower() == "cancel" or message:lower() == "yes" and npcHandler:getTopic(playerId) == 10 then
+			local started = player:getStartedTasks()
+			local cancelText = ""
+			local sep = ", "
 		table.sort(started, function(a, b)
 			return (a < b)
 		end)
@@ -839,10 +839,10 @@ local function creatureSayCallback(npc, creature, type, message)
 			elseif t == #started then
 				sep = "?"
 			end
-			text = text .. "{" .. (tasks.GrizzlyAdams[id].name or tasks.GrizzlyAdams[id].raceName) .. "}" .. sep
-		end
-		if started and #started > 0 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.grizzly_adams.say_9", { (#started > 1 and "" or ""), text })
+				cancelText = cancelText .. "{" .. (tasks.GrizzlyAdams[id].name or tasks.GrizzlyAdams[id].raceName) .. "}" .. sep
+			end
+			if started and #started > 0 then
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.grizzly_adams.say_9", { (#started > 1 and "" or ""), cancelText })
 			npcHandler:setTopic(playerId, 2)
 		else
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.grizzly_adams.say_18")

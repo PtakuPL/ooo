@@ -61,13 +61,13 @@ npcType.onMove = function(npc, creature, fromPosition, toPosition)
 end
 
 -- Greeting and Farewell
-local hiKeyword = keywordHandler:addGreetKeyword({ "hi" }, { npcHandler = npcHandler, text = "Hello, |PLAYERNAME|. Welcome to the Academy of Rookgaard. May I sign you up as a {student}?", i18nKey = "npc.seymour.greet_1" })
+local hiKeyword = keywordHandler:addGreetKeyword({ "hi" }, { npcHandler = npcHandler, i18nKey = "npc.seymour.greet_1" })
 hiKeyword:addChildKeyword({ "student" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.seymour.stdmod_1", reset = true })
 hiKeyword:addChildKeyword({ "yes" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.seymour.stdmod_2", reset = true })
 hiKeyword:addChildKeyword({ "" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.seymour.stdmod_3", reset = true })
 keywordHandler:addAliasKeyword({ "hello" })
 
-keywordHandler:addFarewellKeyword({ "bye" }, { npcHandler = npcHandler, text = "Good bye, |PLAYERNAME|! And remember: No running up and down in the academy!", i18nKey = "npc.seymour.farewell_1" })
+keywordHandler:addFarewellKeyword({ "bye" }, { npcHandler = npcHandler, i18nKey = "npc.seymour.farewell_1" })
 keywordHandler:addAliasKeyword({ "farewell" })
 
 -- Rats

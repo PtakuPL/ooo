@@ -90,9 +90,9 @@ keywordHandler:addKeyword({ "magic" }, StdModule.say, { npcHandler = npcHandler,
 keywordHandler:addKeyword({ "spell" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.eroth.stdmod_7" })
 
 -- Greeting message
-keywordHandler:addGreetKeyword({ "ashari" }, { npcHandler = npcHandler, text = "I greet thee, outsider.", i18nKey = "npc.eroth.greet_1" })
+keywordHandler:addGreetKeyword({ "ashari" }, { npcHandler = npcHandler, i18nKey = "npc.eroth.greet_1" })
 --Farewell message
-keywordHandler:addFarewellKeyword({ "asgha thrazi" }, { npcHandler = npcHandler, text = "Asha Thrazi. Go, where you have to go.", i18nKey = "npc.eroth.farewell_1" })
+keywordHandler:addFarewellKeyword({ "asgha thrazi" }, { npcHandler = npcHandler, i18nKey = "npc.eroth.farewell_1" })
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 

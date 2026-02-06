@@ -52,41 +52,49 @@ end
 
 local topic = {}
 
+local stage1Keys = { "npc.vescu.stage_1_request", "npc.vescu.stage_1_progress", "npc.vescu.stage_1_next" }
+local stage2Keys = { "npc.vescu.stage_2_request", "npc.vescu.stage_2_progress", "npc.vescu.stage_2_next" }
+local stage3Keys = { "npc.vescu.stage_3_request", "npc.vescu.stage_3_progress", "npc.vescu.stage_3_next" }
+local stage4Keys = { "npc.vescu.stage_4_request", "npc.vescu.stage_4_progress", "npc.vescu.stage_4_next" }
+local stage5Keys = { "npc.vescu.stage_5_request", "npc.vescu.stage_5_progress", "npc.vescu.stage_5_next" }
+local stage6Keys = { "npc.vescu.stage_6_request", "npc.vescu.stage_6_progress", "npc.vescu.stage_6_next" }
+local stage7Keys = { "npc.vescu.stage_7_request", "npc.vescu.stage_7_progress", "npc.vescu.stage_7_next" }
+
 local config = {
-	["30 bonelord eyes"] = { storageValue = 1, text = { "Have you really managed to bring me 30 bonelord eyes? <hicks>", "Do bonelord eyes continue blinking when they are seperated from the bonelord? That is a scary thought.", "Aw-awsome! <hicks> Squishy! Now, please bring me 10 {red dragon scales}." }, itemId = 5898, count = 30 },
-	["bonelord eyes"] = { storageValue = 1, text = { "Have you really managed to bring me 30 bonelord eyes? <hicks>", "Do bonelord eyes continue blinking when they are seperated from the bonelord? That is a scary thought.", "Aw-awsome! <hicks> Squishy! Now, please bring me 10 {red dragon scales}." }, itemId = 5898, count = 30 },
-	["bonelord eye"] = { storageValue = 1, text = { "Have you really managed to bring me 30 bonelord eyes? <hicks>", "Do bonelord eyes continue blinking when they are seperated from the bonelord? That is a scary thought.", "Aw-awsome! <hicks> Squishy! Now, please bring me 10 {red dragon scales}." }, itemId = 5898, count = 30 },
-	["10 red dragon scales"] = { storageValue = 2, text = { "D-did you get all of the 10 red dragon scales? <hicks>", "Have you ever wondered if a red dragon means 'stop' whereas a green dragon means 'go'?", "G-good work, ... wha-what's your name again? <hicks> Anyway... come back with 30 {lizard scales}." }, itemId = 5882, count = 10 },
-	["red dragon scales"] = { storageValue = 2, text = { "D-did you get all of the 10 red dragon scales? <hicks>", "Have you ever wondered if a red dragon means 'stop' whereas a green dragon means 'go'?", "G-good work, ... wha-what's your name again? <hicks> Anyway... come back with 30 {lizard scales}." }, itemId = 5882, count = 10 },
-	["red dragon scale"] = { storageValue = 2, text = { "D-did you get all of the 10 red dragon scales? <hicks>", "Have you ever wondered if a red dragon means 'stop' whereas a green dragon means 'go'?", "G-good work, ... wha-what's your name again? <hicks> Anyway... come back with 30 {lizard scales}." }, itemId = 5882, count = 10 },
-	["30 lizard scales"] = { storageValue = 3, text = { "Ah, are those - <hicks> - the 30 lizard scales?", "I once had a girlfriend c-called L-lizzie. She had s-scales too.", "This potion will become p-pretty scaly. I'm not sure yet if I want to d-drink that. I think the 20 {fish fins} which come next won't really improve it. <hicks>" }, itemId = 5881, count = 30 },
-	["lizard scales"] = { storageValue = 3, text = { "Ah, are those - <hicks> - the 30 lizard scales?", "I once had a girlfriend c-called L-lizzie. She had s-scales too.", "This potion will become p-pretty scaly. I'm not sure yet if I want to d-drink that. I think the 20 {fish fins} which come next won't really improve it. <hicks>" }, itemId = 5881, count = 30 },
-	["lizard scale"] = { storageValue = 3, text = { "Ah, are those - <hicks> - the 30 lizard scales?", "I once had a girlfriend c-called L-lizzie. She had s-scales too.", "This potion will become p-pretty scaly. I'm not sure yet if I want to d-drink that. I think the 20 {fish fins} which come next won't really improve it. <hicks>" }, itemId = 5881, count = 30 },
+	["30 bonelord eyes"] = { storageValue = 1, i18nKeys = stage1Keys, itemId = 5898, count = 30 },
+	["bonelord eyes"] = { storageValue = 1, i18nKeys = stage1Keys, itemId = 5898, count = 30 },
+	["bonelord eye"] = { storageValue = 1, i18nKeys = stage1Keys, itemId = 5898, count = 30 },
+	["10 red dragon scales"] = { storageValue = 2, i18nKeys = stage2Keys, itemId = 5882, count = 10 },
+	["red dragon scales"] = { storageValue = 2, i18nKeys = stage2Keys, itemId = 5882, count = 10 },
+	["red dragon scale"] = { storageValue = 2, i18nKeys = stage2Keys, itemId = 5882, count = 10 },
+	["30 lizard scales"] = { storageValue = 3, i18nKeys = stage3Keys, itemId = 5881, count = 30 },
+	["lizard scales"] = { storageValue = 3, i18nKeys = stage3Keys, itemId = 5881, count = 30 },
+	["lizard scale"] = { storageValue = 3, i18nKeys = stage3Keys, itemId = 5881, count = 30 },
 	["20 fish fins"] = {
 		storageValue = 4,
-		text = { "Eww, is that disgusting smell coming from the 20 fish fins? <burps>", "Not normal fish fins of course. We need <hicks> Quara fish fins. If you haven't h-heard about them, ask the - <hicks> - plorer society.", "Alrrrrrrright! Thanks for the f-fish. Get me the 20 ounces of {vampire dust} now. I'll have another b-beer." },
+		i18nKeys = stage4Keys,
 		itemId = 5895,
 		count = 20,
 	},
-	["fish fins"] = { storageValue = 4, text = { "Eww, is that disgusting smell coming from the 20 fish fins? <burps>", "Not normal fish fins of course. We need <hicks> Quara fish fins. If you haven't h-heard about them, ask the - <hicks> - plorer society.", "Alrrrrrrright! Thanks for the f-fish. Get me the 20 ounces of {vampire dust} now. I'll have another b-beer." }, itemId = 5895, count = 20 },
-	["fish fin"] = { storageValue = 4, text = { "Eww, is that disgusting smell coming from the 20 fish fins? <burps>", "Not normal fish fins of course. We need <hicks> Quara fish fins. If you haven't h-heard about them, ask the - <hicks> - plorer society.", "Alrrrrrrright! Thanks for the f-fish. Get me the 20 ounces of {vampire dust} now. I'll have another b-beer." }, itemId = 5895, count = 20 },
-	["20 vampire dust"] = { storageValue = 5, text = { "Have you collected 20 ounces of vampire d-dust? <hicks>", "Don't you think vampires have something - <hicks> - romantic about them? I think you need a b-blessed steak though to turn them into d-dust.", "Tha-thank you. Trolls are good for something a-after all. Bring me the 10 ounces of {demon dust} now. <hicks>" }, itemId = 5905, count = 20 },
-	["vampire dust"] = { storageValue = 5, text = { "Have you collected 20 ounces of vampire d-dust? <hicks>", "Don't you think vampires have something - <hicks> - romantic about them? I think you need a b-blessed steak though to turn them into d-dust.", "Tha-thank you. Trolls are good for something a-after all. Bring me the 10 ounces of {demon dust} now. <hicks>" }, itemId = 5905, count = 20 },
+	["fish fins"] = { storageValue = 4, i18nKeys = stage4Keys, itemId = 5895, count = 20 },
+	["fish fin"] = { storageValue = 4, i18nKeys = stage4Keys, itemId = 5895, count = 20 },
+	["20 vampire dust"] = { storageValue = 5, i18nKeys = stage5Keys, itemId = 5905, count = 20 },
+	["vampire dust"] = { storageValue = 5, i18nKeys = stage5Keys, itemId = 5905, count = 20 },
 	["10 demon dust"] = {
 		storageValue = 6,
-		text = { "Have you slain enough d-demons to gather 10 ounces of demon dust? <hicks>", "I like d-demons. They are just as pretty as flamingos. But you need a blessed stake or something to get demon dust. <hicks>", "G-great. You're a reeeal k-killer like me, eh? I think I'll g-give you something fun when the potion is complete. But first, b-bring me {warrior's sweat}." },
+		i18nKeys = stage6Keys,
 		itemId = 5906,
 		count = 10,
 	},
 	["demon dust"] = {
 		storageValue = 6,
-		text = { "Have you slain enough d-demons to gather 10 ounces of demon dust? <hicks>", "I like d-demons. They are just as pretty as flamingos. But you need a blessed stake or something to get demon dust. <hicks>", "G-great. You're a reeeal k-killer like me, eh? I think I'll g-give you something fun when the potion is complete. But first, b-bring me {warrior's sweat}." },
+		i18nKeys = stage6Keys,
 		itemId = 5906,
 		count = 10,
 	},
 	["warrior's sweat"] = {
 		storageValue = 7,
-		text = { "This s-smells even worse than the fish fins. Is that warrior's sweat?", "If you can't sweat enough yourself, go ask a Djinn. They do - <hicks> magical <hicks> - tractions. Err, extractions.", "Yahaha! Here we g-go. I'll just take a small sip - <gulp>. Okay, this is disgusting, but it seems to work. I'll teach you something fun, remind me to tell you a {secret} sometime." },
+		i18nKeys = stage7Keys,
 		itemId = 5885,
 	},
 }
@@ -98,8 +106,8 @@ local function endConversationWithDelay(npcHandler, npc, creature)
 end
 
 local function greetCallback(npc, creature)
-	local playerId = creature:getId()
-	if Player(creature):getCondition(CONDITION_DRUNK) and player:getStorageValue(Storage.Quest.U7_8.AssassinOutfits.AssassinBaseOutfit) < 1 then
+	local player = Player(creature)
+	if player and player:getCondition(CONDITION_DRUNK) and player:getStorageValue(Storage.Quest.U7_8.AssassinOutfits.AssassinBaseOutfit) < 1 then
 		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.vescu.greet_msg_1")
 		npcHandler:setInteraction(npc, creature)
 	else
@@ -133,11 +141,11 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif config[message] and npcHandler:getTopic(playerId) == 0 then
 		if player:getStorageValue(Storage.Quest.U7_8.AssassinOutfits.AssassinBaseOutfit) == config[message].storageValue then
-			npcHandler:say(config[message].text[1], npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, config[message].i18nKeys[1])
 			npcHandler:setTopic(playerId, 4)
 			topic[playerId] = message
 		else
-			npcHandler:say(config[message].text[2], npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, config[message].i18nKeys[2])
 		end
 	elseif MsgContains(message, "secret") then
 		if player:getStorageValue(Storage.Quest.U7_8.AssassinOutfits.AssassinBaseOutfit) == 8 then
@@ -149,11 +157,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 2 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.vescu.multi_1")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.vescu.multi_2")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.vescu.multi_3")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.vescu.multi_4")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.vescu.multi_5")
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.vescu.multi_1", "npc.vescu.multi_2", "npc.vescu.multi_3", "npc.vescu.multi_4", "npc.vescu.multi_5" }, 10)
 			npcHandler:setTopic(playerId, 3)
 		elseif npcHandler:getTopic(playerId) == 3 then
 			if player:getStorageValue(Storage.OutfitQuest.DefaultStart) ~= 1 then
@@ -172,7 +176,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			end
 
 			player:setStorageValue(Storage.Quest.U7_8.AssassinOutfits.AssassinBaseOutfit, player:getStorageValue(Storage.Quest.U7_8.AssassinOutfits.AssassinBaseOutfit) + 1)
-			npcHandler:say(targetMessage.text[3], npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, targetMessage.i18nKeys[3])
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "no") then

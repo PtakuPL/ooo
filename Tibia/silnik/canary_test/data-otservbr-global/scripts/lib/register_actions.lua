@@ -481,7 +481,7 @@ function onUseShovel(player, item, fromPosition, target, toPosition, isHotkey)
 			local randItem = config[i]
 			if chance >= randItem.from and chance <= randItem.to then
 				player:addItem(randItem.itemId, 1)
-				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.register_actions.msg_10" .. ItemType(randItem.itemId):getName() .. ".")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.register_actions.msg_10", { ItemType(randItem.itemId):getName() })
 				player:setStorageValue(Storage.SwampDiggingTimeout, os.time() + 604800)
 				toPosition:sendMagicEffect(CONST_ME_GREEN_RINGS)
 				break
@@ -1150,7 +1150,7 @@ function onGrindItem(player, item, fromPosition, target, toPosition)
 				local parent = item:getParent()
 				if not parent:isTile() and (parent:addItem(value.item_id, 1) or topParent:addItem(value.item_id, 1)) then
 					item:remove(1)
-					player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.register_actions.msg_18" .. ItemType(index):getName() .. " into fine, " .. ItemType(value.item_id):getName() .. ".")
+					player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.register_actions.msg_18", { ItemType(index):getName(), ItemType(value.item_id):getName() })
 					doSendMagicEffect(target:getPosition(), value.effect)
 					return true
 				else
@@ -1159,7 +1159,7 @@ function onGrindItem(player, item, fromPosition, target, toPosition)
 			else
 				Game.createItem(value.item_id, 1, item:getPosition())
 			end
-			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.register_actions.msg_19" .. ItemType(index):getName() .. " into fine, " .. ItemType(value.item_id):getName() .. ".")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.register_actions.msg_19", { ItemType(index):getName(), ItemType(value.item_id):getName() })
 			item:remove(1)
 			doSendMagicEffect(target:getPosition(), value.effect)
 			return

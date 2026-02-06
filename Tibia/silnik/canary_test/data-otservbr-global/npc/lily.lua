@@ -206,7 +206,12 @@ keywordHandler:addKeyword({ "temple" }, StdModule.say, { npcHandler = npcHandler
 keywordHandler:addKeyword({ "tibia" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.lily.stdmod_16" })
 keywordHandler:addKeyword({ "crunor" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.lily.stdmod_17" })
 keywordHandler:addKeyword({ "food" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.lily.stdmod_18" })
-keywordHandler:addKeyword({ "premium" }, StdModule.say, { npcHandler = npcHandler, text = { "If you purchase premium time for your account, this opens up a lot of possibilities. ...", "For example, you will be able to travel off the mainland, ride a mount and benefit from offline training as well as having more outfits and magic spells to choose from." } })
+keywordHandler:addKeyword({ "premium" }, function(npc, player)
+	if not npcHandler:checkInteraction(npc, player) then
+		return false
+	end
+	return NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, player, { "npc.lily.kw_premium_1", "npc.lily.kw_premium_2" }, 10)
+end, {})
 keywordHandler:addKeyword({ "potion" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.lily.stdmod_19" })
 keywordHandler:addKeyword({ "health" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.lily.stdmod_20" })
 keywordHandler:addKeyword({ "king" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.lily.stdmod_21" })

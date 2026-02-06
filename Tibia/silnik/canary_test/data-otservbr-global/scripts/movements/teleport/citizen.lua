@@ -46,7 +46,7 @@ function citizen.onStepIn(creature, item, position, fromPosition)
 	player:setTown(town)
 	player:teleportTo(town:getTemplePosition())
 	player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.citizen.msg_2" .. town:getName() .. ".")
+	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.citizen.msg_2", { town:getName() })
 	return true
 end
 

@@ -163,9 +163,9 @@ keywordHandler:addKeyword({ "solitude" }, StdModule.say, { npcHandler = npcHandl
 keywordHandler:addAliasKeyword({ "wisdom" })
 
 -- Greeting message
-keywordHandler:addGreetKeyword({ "ashari" }, { npcHandler = npcHandler, text = "Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal} you for free.", i18nKey = "npc.maealil.greet_1" })
+keywordHandler:addGreetKeyword({ "ashari" }, { npcHandler = npcHandler, i18nKey = "npc.maealil.greet_1" })
 --Farewell message
-keywordHandler:addFarewellKeyword({ "asgha thrazi" }, { npcHandler = npcHandler, text = "May the gods bless you, |PLAYERNAME|!", i18nKey = "npc.maealil.farewell_1" })
+keywordHandler:addFarewellKeyword({ "asgha thrazi" }, { npcHandler = npcHandler, i18nKey = "npc.maealil.farewell_1" })
 
 NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.maealil.greet_msg_1")
 NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.maealil.walkaway_msg_1")

@@ -22,7 +22,6 @@ function talkaction.onSay(player, words, param)
 		return true
 	end
 
-	local message = "Added received kills: " .. kills .. ", for boss: " .. monsterName
 	if target == player then
 		player:sendLocalizedTextMessage(MESSAGE_ADMINISTRATOR, "talkaction.god.bosstiary.msg_to_self", {kills, monsterName})
 	else

@@ -73,5 +73,10 @@
   "npclib.modules.confirm_no_money": "You do not have enough money!",
   "npclib.modules.confirm_pz_locked": "Get out of there with this blood.",
   "npclib.modules.confirm_success": "It was a pleasure doing business with you.",
-  "npclib.modules.confirm_need_premium": "I can only allow premium players to travel there."
+  "npclib.modules.confirm_need_premium": "I can only allow premium players to travel there.",
+  "npclib.handler.sendtrade_with_categories": "Of course, just browse through my wares. Or do you want to look only at {0}.",
+  "npclib.handler.sendtrade_have_a_look_with_categories": "Have a look. But perhaps you just want to see my {0}.",
+  "npclib.handler.sendtrade_choose_wisely_with_categories": "Choose wisely! Or maybe you want to look only at {0}.",
+  "npclib.handler.sendtrade_lootmonger_with_categories": "Ah, a customer! Be greeted, {0}! I buy all kinds of loot, would you look at {1}.",
+  "npclib.modules.promote_success": "Congratulations! You are now promoted."
 }

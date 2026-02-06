@@ -8,7 +8,7 @@ local configs = {
 		amount = 60, -- minutes
 		callback = function(player, config)
 			player:setStamina(player:getStamina() + config.amount)
-			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.concoctions.msg_1" .. config.amount .. " minutes of stamina.")
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.concoctions.msg_1", { config.amount })
 		end,
 	},
 	[Concoction.Ids.KooldownAid] = {

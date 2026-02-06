@@ -42,7 +42,7 @@ function addMoney.onSay(player, words, param)
 		return true
 	end
 
-	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.add_money.msg_1" .. amount .. " gold coins to " .. name .. ".")
+	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.add_money.msg_1", { amount, name })
 	local targetPlayer = Player(name)
 	if targetPlayer then
 		targetPlayer:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "talkaction.god.money.msg_target", {player:getName(), amount})

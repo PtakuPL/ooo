@@ -24,7 +24,7 @@ function addAchievement.onSay(player, words, param)
 	end
 
 	targetPlayer:addAchievement(achievementInfo.id, true)
-	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.achievement_functions.msg_1" .. achievementInfo.name .. " added successfully to " .. targetPlayerName .. ".")
+	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.achievement_functions.msg_1", { achievementInfo.name, targetPlayerName })
 	return true
 end
 
@@ -58,7 +58,7 @@ function removeAchievement.onSay(player, words, param)
 	end
 
 	targetPlayer:removeAchievement(achievementInfo.id)
-	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.achievement_functions.msg_2" .. achievementInfo.name .. " removed successfully.")
+	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.achievement_functions.msg_2", { achievementInfo.name })
 	return true
 end
 

@@ -42,7 +42,7 @@ function spy.onSay(player, words, param)
 
 	if target and target:isPlayer() then
 		local slotName = { "Helmet", "Amulet", "Backpack", "Armor", "Right Hand", "Left Hand", "Legs", "Boots", "Ring", "Arrow" }
-		local text = "Equipments of " .. target:getName()
+		local text = i18nTranslate("scripts.spy.equipments_of", player:getLocale()) .. target:getName()
 		for i = 1, 10 do
 			text = text .. "\n\n"
 			local item = target:getSlotItem(i)
@@ -59,7 +59,7 @@ function spy.onSay(player, words, param)
 					text = text .. slotName[i] .. ": " .. ItemType(item.itemid):getName() .. " " .. count
 				end
 			else
-				text = text .. slotName[i] .. ": Empty"
+				text = text .. slotName[i] .. ": " .. i18nTranslate("scripts.spy.empty", player:getLocale())
 			end
 		end
 		player:showTextDialog(6528, text)

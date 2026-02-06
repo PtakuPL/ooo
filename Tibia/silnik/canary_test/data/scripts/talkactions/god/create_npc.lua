@@ -35,7 +35,7 @@ function createNpc.onSay(player, words, param)
 			npcsFile:close()
 			local endTag = "</npcs>"
 			if not fileContent:find(endTag, 1, true) then
-				player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.create_npc.msg_2" .. endTag .. ".")
+				player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.create_npc.msg_2", { endTag })
 				return true
 			end
 			local textToAdd = string.format('\t<npc centerx="%i" centery="%i" centerz="%i" radius="1">\n\t\t<npc name="%s" x="0" y="0" z="%i" spawntime="60" />\n\t</npc>', position.x, position.y, position.z, name, position.z)

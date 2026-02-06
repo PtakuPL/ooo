@@ -6,7 +6,7 @@ function position.onSay(player, words, param)
 
 	if param == "" then
 		local pos = player:getPosition()
-		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.position.msg_1" .. pos.x .. ", " .. pos.y .. ", " .. pos.z .. ".")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.position.msg_1", { pos.x, pos.y, pos.z })
 		return
 	end
 

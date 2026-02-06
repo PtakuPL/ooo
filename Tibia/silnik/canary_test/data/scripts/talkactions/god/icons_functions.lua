@@ -79,7 +79,7 @@ function bakragoreIcon.onSay(player, words, param)
 
 	if param == "remove" then
 		player:removeIconBakragore()
-		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.icons_functions.msg_1")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.icons_functions.msg_removed")
 		return true
 	end
 
@@ -94,7 +94,7 @@ function bakragoreIcon.onSay(player, words, param)
 		condition:setParameter(CONDITION_PARAM_TICKS, -1)
 		player:addCondition(condition)
 
-		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.icons_functions.msg_3" .. numParam)
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.icons_functions.msg_3", { numParam })
 	end
 
 	return true
@@ -154,7 +154,7 @@ function creatureIconAction.onSay(player, words, param)
 
 	if not iconId or not creatureIconQuests[iconId] then
 		iconId = maxIconId
-		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.icons_functions.msg_4" .. iconId .. " (" .. creatureIconQuests[iconId] .. ")")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.icons_functions.msg_4", { iconId, creatureIconQuests[iconId] })
 	end
 
 	if count <= 0 then

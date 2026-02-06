@@ -50,7 +50,7 @@ npcType.onCloseChannel = function(npc, creature)
 	npcHandler:onCloseChannel(npc, creature)
 end
 
-keywordHandler:addGreetKeyword({ "hi" }, { npcHandler = npcHandler, text = "Hello and welcome in the Gnomprona Gardens", i18nKey = "npc.gnominer.greet_1" })
+keywordHandler:addGreetKeyword({ "hi" }, { npcHandler = npcHandler, i18nKey = "npc.gnominer.greet_1" })
 
 keywordHandler:addAliasKeyword({ "hello" })
 

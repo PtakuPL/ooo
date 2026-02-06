@@ -50,7 +50,7 @@ npcType.onCloseChannel = function(npc, creature)
 	npcHandler:onCloseChannel(npc, creature)
 end
 
-keywordHandler:addGreetKeyword({ "hi" }, { npcHandler = npcHandler, text = "Hello and welcome in the gnomish {recruitment} office.", i18nKey = "npc.gnomerik.greet_1" }, function(player)
+keywordHandler:addGreetKeyword({ "hi" }, { npcHandler = npcHandler, i18nKey = "npc.gnomerik.greet_1" }, function(player)
 	if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLine) == 1 then
 		player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLine, 3)
 	end

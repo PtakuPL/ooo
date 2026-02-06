@@ -105,13 +105,13 @@ function teleportBoss.onStepIn(creature, item, position, fromPosition)
 	if player:getLevel() < config.requiredLevel then
 		player:teleportTo(config.exitPosition, true)
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_portal_brain_head.msg_1" .. config.requiredLevel .. " or higher.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_portal_brain_head.msg_1", { config.requiredLevel })
 		return true
 	end
 	if locked then
 		player:teleportTo(config.exitPosition, true)
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_portal_brain_head.msg_2" .. config.bossName .. ".")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_portal_brain_head.msg_2", { config.bossName })
 		return false
 	end
 	if zone:countPlayers(IgnoredByMonsters) >= 5 then
@@ -124,7 +124,7 @@ function teleportBoss.onStepIn(creature, item, position, fromPosition)
 	if timeLeft > 0 then
 		player:teleportTo(config.exitPosition, true)
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_portal_brain_head.msg_4" .. Game.getTimeInWords(timeLeft) .. " to face " .. config.bossName .. " again!")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_portal_brain_head.msg_4", { Game.getTimeInWords(timeLeft), config.bossName })
 		player:getPosition():sendMagicEffect(CONST_ME_POFF)
 		return false
 	end

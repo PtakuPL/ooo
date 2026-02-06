@@ -61,19 +61,19 @@ npcType.onCloseChannel = function(npc, creature)
 end
 
 -- Greeting and Farewell
-keywordHandler:addGreetKeyword({ "hi" }, { npcHandler = npcHandler, text = "Good day, Ma'am. How may I help you, |PLAYERNAME|? If you like to see my offers, simply ask me for a trade!", i18nKey = "npc.dixi.greet_1" }, function(player)
+keywordHandler:addGreetKeyword({ "hi" }, { npcHandler = npcHandler, i18nKey = "npc.dixi.greet_1" }, function(player)
 	return player:getSex() == PLAYERSEX_FEMALE
 end)
 keywordHandler:addAliasKeyword({ "hello" })
-keywordHandler:addGreetKeyword({ "hi" }, { npcHandler = npcHandler, text = "Good day, Sir. How may I help you, |PLAYERNAME|? If you like to see my offers, simply ask me for a trade!", i18nKey = "npc.dixi.greet_2" }, function(player)
+keywordHandler:addGreetKeyword({ "hi" }, { npcHandler = npcHandler, i18nKey = "npc.dixi.greet_2" }, function(player)
 	return player:getSex() == PLAYERSEX_FEMALE
 end)
 keywordHandler:addAliasKeyword({ "hello" })
-keywordHandler:addFarewellKeyword({ "bye" }, { npcHandler = npcHandler, text = "Good bye, Ma'am.", i18nKey = "npc.dixi.farewell_1" }, function(player)
+keywordHandler:addFarewellKeyword({ "bye" }, { npcHandler = npcHandler, i18nKey = "npc.dixi.farewell_1" }, function(player)
 	return player:getSex() == PLAYERSEX_FEMALE
 end)
 keywordHandler:addAliasKeyword({ "farewell" })
-keywordHandler:addFarewellKeyword({ "bye" }, { npcHandler = npcHandler, text = "Good bye, Sir.", i18nKey = "npc.dixi.farewell_2" })
+keywordHandler:addFarewellKeyword({ "bye" }, { npcHandler = npcHandler, i18nKey = "npc.dixi.farewell_2" })
 keywordHandler:addAliasKeyword({ "farewell" })
 
 -- Basic keywords

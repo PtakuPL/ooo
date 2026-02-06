@@ -64,12 +64,12 @@ local function addTravelKeyword(keyword, cost, destination)
 		cost = cost,
 		discount = "postman",
 	})
-	travelKeyword:addChildKeyword({ "yes" }, StdModule.travel, {
-		npcHandler = npcHandler,
-		text = "Have a nice trip!",
-		premium = false,
-		cost = cost,
-		discount = "postman",
+		travelKeyword:addChildKeyword({ "yes" }, StdModule.travel, {
+			npcHandler = npcHandler,
+			i18nKey = "npc.nielson.stdmod_3",
+			premium = false,
+			cost = cost,
+			discount = "postman",
 		destination = destination,
 	})
 	travelKeyword:addChildKeyword({ "no" }, StdModule.say, {

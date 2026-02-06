@@ -122,7 +122,7 @@ local travelNode = keywordHandler:addKeyword({ "passage" }, StdModule.say, {
 travelNode:addChildKeyword({ "yes" }, StdModule.travel, {
 	npcHandler = npcHandler,
 	premium = false,
-	text = "Have a nice trip!",
+	i18nKey = "npc.dalbrect.stdmod_3",
 	cost = 10,
 	destination = Position(32190, 31957, 6),
 })

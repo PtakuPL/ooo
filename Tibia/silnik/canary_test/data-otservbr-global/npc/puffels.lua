@@ -199,8 +199,7 @@ keywordHandler:addKeyword({ "healing", "spells" }, StdModule.say, {
 })
 keywordHandler:addKeyword({ "attack", "spells" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = { "In this category I have '{Whirlwind Throw}', '{Groundshaker}', '{Berserk}' and \z
-		'{Fierce Berserk}' as well as ...', ''{Brutal Strike}', '{Front Sweep}', '{Inflict Wound}' and '{Annihilation}'" },
+	i18nKey = "npc.puffels.stdmod_4",
 })
 keywordHandler:addKeyword({ "support", "spells" }, StdModule.say, {
 	npcHandler = npcHandler,

@@ -71,15 +71,15 @@ local function creatureSayCallback(npc, creature, type, message)
 					end
 				end
 			end
-			local text = ""
-			if sleightInfo[message].cost > 0 then
-				text = sleightInfo[message].cost .. " gp"
-			elseif table.maxn(sleightInfo[message].items) then
-				text = items_list
-			elseif (sleightInfo[message].cost > 0) and table.maxn(sleightInfo[message].items) then
-				text = items_list .. " and " .. sleightInfo[message].cost .. " gp"
-			end
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.frosty.say_1", { message, text })
+				local offerText = ""
+				if sleightInfo[message].cost > 0 then
+					offerText = sleightInfo[message].cost .. " gp"
+				elseif table.maxn(sleightInfo[message].items) then
+					offerText = items_list
+				elseif (sleightInfo[message].cost > 0) and table.maxn(sleightInfo[message].items) then
+					offerText = items_list .. " and " .. sleightInfo[message].cost .. " gp"
+				end
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.frosty.say_1", { message, offerText })
 			rtnt[playerId] = message
 			talkState[playerId] = sleightInfo[message].storageID
 			return true

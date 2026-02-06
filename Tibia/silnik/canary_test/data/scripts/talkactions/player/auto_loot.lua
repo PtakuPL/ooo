@@ -16,7 +16,7 @@ function feature.onSay(player, words, param)
 	end
 	if not table.contains(validValues, param) then
 		local validValuesStr = table.concat(validValues, "/")
-		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.auto_loot.msg_1" .. validValuesStr .. "]")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.auto_loot.msg_1", { validValuesStr })
 		return true
 	end
 

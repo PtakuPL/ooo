@@ -10,7 +10,7 @@ end
 local balance = TalkAction("!balance")
 
 function balance.onSay(player, words, param)
-	player:sendLocalizedTextMessage(config.messageStyle, "scripts.bank.msg_1" .. FormatNumber(Bank.balance(player)) .. ".")
+	player:sendLocalizedTextMessage(config.messageStyle, "scripts.bank.balance", { FormatNumber(Bank.balance(player)) })
 	return true
 end
 
@@ -37,7 +37,7 @@ function deposit.onSay(player, words, param)
 		return true
 	end
 
-	player:sendLocalizedTextMessage(config.messageStyle, "scripts.bank.msg_4" .. FormatNumber(amount) .. " gold coins.")
+	player:sendLocalizedTextMessage(config.messageStyle, "scripts.bank.deposit_success", { FormatNumber(amount) })
 	return true
 end
 
@@ -59,7 +59,7 @@ function withdraw.onSay(player, words, param)
 		return true
 	end
 
-	player:sendLocalizedTextMessage(config.messageStyle, "scripts.bank.msg_7" .. FormatNumber(amount) .. " gold coins.")
+	player:sendLocalizedTextMessage(config.messageStyle, "scripts.bank.withdraw_success", { FormatNumber(amount) })
 	return true
 end
 
@@ -85,7 +85,7 @@ function transfer.onSay(player, words, param)
 	name = name:trim()
 	local normalizedName = Game.getNormalizedPlayerName(name)
 	if not normalizedName then
-		player:sendLocalizedTextMessage(config.messageStyle, "scripts.bank.msg_10" .. name .. " does not exist.")
+		player:sendLocalizedTextMessage(config.messageStyle, "scripts.bank.player_not_exists", { name })
 		return true
 	end
 	name = normalizedName
@@ -95,7 +95,7 @@ function transfer.onSay(player, words, param)
 		return true
 	end
 
-	player:sendLocalizedTextMessage(config.messageStyle, "scripts.bank.msg_12" .. FormatNumber(amount) .. " gold coins to " .. name .. ".")
+	player:sendLocalizedTextMessage(config.messageStyle, "scripts.bank.transfer_success", { FormatNumber(amount), name })
 	return true
 end
 

@@ -19,7 +19,7 @@ function portalPaleWorm.onStepIn(creature, item, position, fromPosition)
 	if text == "" then
 		return true
 	else
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_portal_pale_worm.msg_1" .. text)
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_portal_pale_worm.msg_1", { text })
 		player:teleportTo(fromPosition, true)
 		return false
 	end

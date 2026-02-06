@@ -286,6 +286,9 @@ local function townTravelHandler(npc, creature, message, keywords, parameters, n
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.captain_dreadnought.say_8", { townNames.free })
 		end
 		npcHandler.keywordHandler:moveUp(creature, 1)
+	elseif (parameters.sailableTowns == true) and parameters.i18nKey then
+		local sailableTownNames = player:isPremium() and townNames.premium or townNames.free
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, parameters.i18nKey, { sailableTownNames })
 	elseif (parameters.sailableTowns == true) and parameters.text then
 		if player:isPremium() then
 			npcHandler:say(string.gsub(parameters.text, "|TOWNS|", townNames.premium), npc, creature)
@@ -364,7 +367,7 @@ local aboutTownsNode = notReadyNode:addChildKeyword({ "yes" }, StdModule.say, {
 })
 local aboutSailNode = notReadyNode:addChildKeyword({ "no" }, townTravelHandler, {
 	sailableTowns = true,
-	text = "So you know it all, huh? Where do you want me to bring you to, kid? |TOWNS|?",
+	i18nKey = "npc.captain_dreadnought.stdmod_17",
 })
 -- hi, yes, yes, ...
 defaultTownNode:addChildKeyword({ "yes" }, townTravelHandler, { confirm = true, townId = defaultTown })

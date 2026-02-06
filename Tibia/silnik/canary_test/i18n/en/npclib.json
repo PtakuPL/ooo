@@ -59,6 +59,7 @@
   "npclib.handler.oncloseshop": "Thank you, come back whenever you're in need of something else.",
   "npclib.handler.already_focused": "{0}, I am already talking to you.",
   "npclib.modules.already_promoted": "You are already promoted!",
+  "npclib.modules.promote_success": "Congratulations! You are now promoted.",
   "npclib.modules.promote_no_money": "You do not have enough money!",
   "npclib.modules.promote_need_premium": "You need a premium account in order to get promoted.",
   "npclib.modules.spell_already_known": "You already know this spell.",

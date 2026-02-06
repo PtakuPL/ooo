@@ -46,11 +46,11 @@ function zones.onSay(player, words, param)
 				return true
 			end
 			player:teleportTo(pos)
-			player:sendLocalizedTextMessage(MESSAGE_HEALED, "scripts.zones.msg_5" .. zone:getName() .. ".")
+			player:sendLocalizedTextMessage(MESSAGE_HEALED, "scripts.zones.goto_success", { zone:getName() })
 		end,
 		removeMonsters = function(zone)
 			zone:removeMonsters()
-			player:sendLocalizedTextMessage(MESSAGE_HEALED, "scripts.zones.msg_6" .. zone:getName() .. ".")
+			player:sendLocalizedTextMessage(MESSAGE_HEALED, "scripts.zones.remove_monsters_success", { zone:getName() })
 		end,
 		countMonsters = function(zone)
 			local monsters = zone:getMonsters()
@@ -58,7 +58,7 @@ function zones.onSay(player, words, param)
 		end,
 		removeNpcs = function(zone)
 			zone:removeNpcs()
-			player:sendLocalizedTextMessage(MESSAGE_HEALED, "scripts.zones.msg_7" .. zone:getName() .. ".")
+			player:sendLocalizedTextMessage(MESSAGE_HEALED, "scripts.zones.remove_npcs_success", { zone:getName() })
 		end,
 		countNpcs = function(zone)
 			local npcs = zone:getNpcs()
@@ -66,7 +66,7 @@ function zones.onSay(player, words, param)
 		end,
 		kickPlayers = function(zone)
 			zone:removePlayers()
-			player:sendLocalizedTextMessage(MESSAGE_HEALED, "scripts.zones.msg_8" .. zone:getName() .. ".")
+			player:sendLocalizedTextMessage(MESSAGE_HEALED, "scripts.zones.kick_players_success", { zone:getName() })
 		end,
 		listPlayers = function(zone)
 			local players = zone:getPlayers()

@@ -4,14 +4,14 @@ function commands.onSay(player, words, param)
 	local allTalkActions = Game.getTalkActions()
 	local playerGroupId = player:getGroup():getId()
 
-	local text = "Available commands:\n\n"
+	local text = i18nTranslate("scripts.commands.available_header", player:getLocale()) .. "\n\n"
 
 	for _, talkaction in pairs(allTalkActions) do
 		if talkaction:getGroupType() ~= 0 then
 			if talkaction:getGroupType() <= playerGroupId then
 				text = text .. talkaction:getName()
 
-				description = talkaction:getDescription()
+				local description = talkaction:getDescription()
 
 				if description ~= "" then
 					text = text .. " " .. talkaction:getDescription()

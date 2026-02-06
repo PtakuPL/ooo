@@ -122,7 +122,13 @@ if Modules == nil then
 			elseif not player:removeMoneyBank(parameters.cost) then
 				npcHandler:sayLocalized("npclib.modules.promote_no_money", npc, player)
 			else
-				npcHandler:say(parameters.text, npc, player)
+				if parameters.i18nKey then
+					npcHandler:sayLocalized(parameters.i18nKey, npc, player)
+				elseif parameters.text then
+					npcHandler:say(parameters.text, npc, player)
+				else
+					npcHandler:sayLocalized("npclib.modules.promote_success", npc, player)
+				end
 				player:setVocation(promotion)
 				player:addMinorCharmEchoes(100)
 				player:kv():set("promoted", true)
@@ -186,7 +192,9 @@ if Modules == nil then
 		elseif not player:removeMoneyBank(type(parameters.cost) == "string" and tonumber(npcHandler:parseMessage(parameters.cost, parseInfo)) or parameters.cost) then
 			npcHandler:sayLocalized("npclib.modules.bless_no_money", npc, player)
 		else
-			if parameters.text then
+			if parameters.i18nKey then
+				npcHandler:sayLocalized(parameters.i18nKey, npc, player)
+			elseif parameters.text then
 				npcHandler:say(parameters.text, npc, player)
 			else
 				npcHandler:sayLocalized("npclib.modules.bless_success", npc, player)
@@ -242,7 +250,9 @@ if Modules == nil then
 				playerPosition:sendMagicEffect(CONST_ME_POFF)
 			else
 				npcHandler:removeInteraction(npc, player)
-				if parameters.text then
+				if parameters.i18nKey then
+					npcHandler:sayLocalized(parameters.i18nKey, npc, player)
+				elseif parameters.text then
 					npcHandler:say(parameters.text, npc, player)
 				else
 					npcHandler:sayLocalized("npclib.modules.travel_depart", npc, player)

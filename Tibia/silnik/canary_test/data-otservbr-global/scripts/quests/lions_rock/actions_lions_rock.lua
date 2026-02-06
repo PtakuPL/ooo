@@ -16,7 +16,7 @@ local tests = {
 		itemPosition = { x = 33137, y = 32291, z = 8 },
 		pagodaPosition = { x = 33134, y = 32289, z = 8 },
 		item = 9634,
-		message = "You have sacrificed a cobra tongue at an ancient statue. The light in the small pyramid nearby begins to shine.",
+		message = "scripts.actions_lions_rock.msg_5",
 		effect = CONST_ME_BLOCKHIT,
 	},
 	{
@@ -24,7 +24,7 @@ local tests = {
 		itemPosition = { x = 33138, y = 32369, z = 8 },
 		pagodaPosition = { x = 33136, y = 32369, z = 8 },
 		item = 21389,
-		message = "You burnt a lion's mane flower. The light in the small pyramid nearby begins to shine.",
+		message = "scripts.actions_lions_rock.msg_6",
 		effect = CONST_ME_REDSMOKE,
 	},
 	{
@@ -32,8 +32,7 @@ local tests = {
 		itemPosition = { x = 33154, y = 32279, z = 8 },
 		pagodaPosition = { x = 33156, y = 32279, z = 8 },
 		item = 21466,
-		message = "You have purified a sacret pedestal with holy water. You have now passed the last test\z
-		to enter thge inner sanctum.",
+		message = "scripts.actions_lions_rock.msg_7",
 		effect = CONST_ME_LOSEENERGY,
 	},
 }
@@ -126,7 +125,7 @@ function lionsRockFountain.onUse(player, item, fromPosition, target, toPosition,
 			reward = math.random(1, #rewards)
 		end
 		local iType = ItemType(rewards[reward])
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_lions_rock.msg_3" .. iType:getArticle() .. " " .. iType:getName() .. ".")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_lions_rock.msg_3", { iType:getArticle(), iType:getName() })
 		player:getPosition():sendMagicEffect(CONST_ME_HOLYAREA)
 		player:addAchievement("Lion's Den Explorer")
 		item:transform(lionsRockSanctuaryRockId)

@@ -1,6 +1,6 @@
 local config = {
-	{ chance = 30, monster = "Enraged White Deer", message = "The white deer summons all his strength and turns to fight!" },
-	{ chance = 100, monster = "Desperate White Deer", message = "The white deer desperately tries to escape!" },
+	{ chance = 30, monster = "Enraged White Deer", i18nKey = "scripts.white_deer_death.say_1" },
+	{ chance = 100, monster = "Desperate White Deer", i18nKey = "scripts.white_deer_death.say_2" },
 }
 
 local whiteDeerDeath = CreatureEvent("WhiteDeerDeath")
@@ -17,7 +17,7 @@ function whiteDeerDeath.onDeath(creature, corpse, killer, mostDamageKiller, last
 			local spawnMonster = Game.createMonster(config[i].monster, targetMonster:getPosition(), true, true)
 			if spawnMonster then
 				spawnMonster:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-				targetMonster:say(config[i].message, TALKTYPE_MONSTER_SAY)
+				targetMonster:sayLocalized(config[i].i18nKey, TALKTYPE_MONSTER_SAY)
 			end
 			break
 		end

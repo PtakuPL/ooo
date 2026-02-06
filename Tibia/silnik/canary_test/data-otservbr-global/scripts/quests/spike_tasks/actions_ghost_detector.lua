@@ -98,7 +98,7 @@ function spikeTasksGhost.onUse(player, item, fromPosition, target, toPosition, i
 		end
 		player:setStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Upper_Track_Main, stat + 1)
 	else
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_ghost_detector.msg_4" .. getSearchString(player:getPosition(), current) .. ".")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_ghost_detector.msg_4", { getSearchString(player:getPosition(), current) })
 	end
 	return true
 end

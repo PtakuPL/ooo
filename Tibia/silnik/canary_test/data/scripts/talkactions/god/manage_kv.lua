@@ -60,7 +60,7 @@ function getAllKV.onSay(player, words, param)
 	end
 
 	if not found then
-		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.manage_kv.msg_3" .. playerName .. ".")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.manage_kv.msg_3", { playerName })
 	end
 end
 
@@ -120,7 +120,7 @@ function bossCooldown.onSay(player, words, param)
 		return
 	end
 	targetPlayer:setBossCooldown(boss, 0)
-	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.manage_kv.msg_7" .. playerName .. " cleared.")
+	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.manage_kv.msg_7", { playerName })
 	targetPlayer:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "talkaction.god.kv.msg_cooldown_cleared", {boss})
 end
 

@@ -59,7 +59,11 @@ function simulator.onSay(player, words, param)
 	local triggerCount = 0
 	local rolls = 0
 
-	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.raids.msg_2" .. initialChance .. ", targetChancePerDay=" .. targetChancePerDay .. ", maxChancePerCheck=" .. maxChancePerCheck .. "...")
+	player:sendLocalizedTextMessage(
+		MESSAGE_EVENT_ADVANCE,
+		"scripts.raids.msg_2",
+		{ tostring(initialChance), tostring(targetChancePerDay), tostring(maxChancePerCheck) }
+	)
 
 	local checksPerDay = ParseDuration("23h") / ParseDuration(Raid.checkInterval)
 	while triggerCount < 10 do
@@ -70,7 +74,11 @@ function simulator.onSay(player, words, param)
 		end
 	end
 
-	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.raids.msg_3" .. triggerCount .. " times in " .. rolls .. " rolls (" .. rolls / checksPerDay .. " days or once every " .. (rolls / checksPerDay) / triggerCount .. " days)")
+	player:sendLocalizedTextMessage(
+		MESSAGE_EVENT_ADVANCE,
+		"scripts.raids.msg_3",
+		{ tostring(triggerCount), tostring(rolls), tostring(rolls / checksPerDay), tostring((rolls / checksPerDay) / triggerCount) }
+	)
 	return true
 end
 
@@ -90,7 +98,7 @@ function listRaid.onSay(player, words, param)
 	end
 	table.sort(raids)
 
-	local message = "Registered raids: "
+	local message = i18nTranslate("scripts.raids.registered_prefix", player:getLocale())
 	for _, name in ipairs(raids) do
 		message = message .. name .. ", "
 	end

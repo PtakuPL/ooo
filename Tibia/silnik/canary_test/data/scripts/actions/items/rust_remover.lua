@@ -87,18 +87,18 @@ function rustRemover.onUse(player, item, fromPosition, target, toPosition, isHot
 	end
 
 	if not index then
-		local msg = nil
+		local msgKey = nil
 		if table.contains({ 8894, 8895, 8896 }, target.itemid) then
-			msg = "The armor was already damaged so badly that it broke when you tried to clean it."
+			msgKey = "scripts.rust_remover.broke_armor"
 		elseif table.contains({ 8897, 8898, 8899 }, target.itemid) then
-			msg = "The legs were already damaged so badly that they broke when you tried to clean them."
+			msgKey = "scripts.rust_remover.broke_legs"
 		elseif table.contains({ 8902 }, target.itemid) then
-			msg = "The shield was already damaged so badly that it broke when you tried to clean it."
+			msgKey = "scripts.rust_remover.broke_shield"
 		elseif table.contains({ 8907, 8908 }, target.itemid) then
-			msg = "The helmet was already damaged so badly that it broke when you tried to clean it."
+			msgKey = "scripts.rust_remover.broke_helmet"
 		end
 
-		player:say(msg, TALKTYPE_MONSTER_SAY)
+		player:sayLocalized(msgKey, TALKTYPE_MONSTER_SAY)
 		target:getPosition():sendMagicEffect(CONST_ME_BLOCKHIT)
 		target:remove()
 	else

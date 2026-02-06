@@ -1,8 +1,8 @@
 local config = {
-	[23538] = { name = "vortexion", mountId = 94, tameMessage = "You receive the permission to ride a sparkion." },
-	[23684] = { name = "neon sparkid", mountId = 98, tameMessage = "You receive the permission to ride a neon sparkid." },
-	[23685] = { name = "vortexion", mountId = 99, tameMessage = "You receive the permission to ride a vortexion." },
-	[32629] = { name = "haze", mountId = 162, achievement = "Nothing but Hot Air", tameMessage = "You are now versed to ride the haze!" },
+	[23538] = { name = "vortexion", mountId = 94, tameMessage = "scripts.usable_mount_items.tame_sparkion" },
+	[23684] = { name = "neon sparkid", mountId = 98, tameMessage = "scripts.usable_mount_items.tame_neon_sparkid" },
+	[23685] = { name = "vortexion", mountId = 99, tameMessage = "scripts.usable_mount_items.tame_vortexion" },
+	[32629] = { name = "haze", mountId = 162, achievement = "Nothing but Hot Air", tameMessage = "scripts.usable_mount_items.tame_haze" },
 }
 
 local usableItemMounts = Action()
@@ -28,7 +28,7 @@ function usableItemMounts.onUse(player, item, fromPosition, target, toPosition, 
 
 	player:addMount(useItem.mountId)
 	player:addAchievement("Natural Born Cowboy")
-	player:say(useItem.tameMessage, TALKTYPE_MONSTER_SAY)
+	player:sayLocalized(useItem.tameMessage, TALKTYPE_MONSTER_SAY)
 	item:remove(1)
 	return true
 end

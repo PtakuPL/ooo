@@ -23,15 +23,15 @@ distanceCondition:setParameter(CONDITION_PARAM_TICKS, 60 * 60 * 1000)
 distanceCondition:setParameter(CONDITION_PARAM_SKILL_DISTANCE, 7)
 
 local gourmetDishes = {
-	[29408] = { condition = shieldCondition, message = "Chomp." },
-	[29409] = { condition = distanceCondition, message = "Yummm." },
-	[29410] = { condition = magicPointsCondition, message = "Munch." },
-	[29411] = { condition = meleeCondition, message = "Munch." },
-	[29412] = { condition = hasteCondition, message = "Yummm." },
-	[29413] = { condition = fishingCondition, message = "Mmmmm." },
-	[29414] = { healing = true, message = "Munch." },
-	[29415] = { manaRestore = true, message = "Chomp." },
-	[29416] = { message = "Blurg." },
+	[29408] = { condition = shieldCondition, message = "scripts.hireling_foods.sound_chomp" },
+	[29409] = { condition = distanceCondition, message = "scripts.hireling_foods.sound_yummm" },
+	[29410] = { condition = magicPointsCondition, message = "scripts.hireling_foods.sound_munch" },
+	[29411] = { condition = meleeCondition, message = "scripts.hireling_foods.sound_munch" },
+	[29412] = { condition = hasteCondition, message = "scripts.hireling_foods.sound_yummm" },
+	[29413] = { condition = fishingCondition, message = "scripts.hireling_foods.sound_mmmmm" },
+	[29414] = { healing = true, message = "scripts.hireling_foods.sound_munch" },
+	[29415] = { manaRestore = true, message = "scripts.hireling_foods.sound_chomp" },
+	[29416] = { message = "scripts.hireling_foods.sound_blurg" },
 }
 
 local hirelingFoods = Action()
@@ -55,7 +55,7 @@ function hirelingFoods.onUse(player, item, fromPosition, target, toPosition, isH
 		player:addMana(player:getMaxMana() * 0.3)
 	end
 
-	player:say(dish.message, TALKTYPE_MONSTER_SAY)
+	player:sayLocalized(dish.message, TALKTYPE_MONSTER_SAY)
 	player:setExhaustion("special-foods-cooldown", 10 * 60)
 
 	item:remove(1)

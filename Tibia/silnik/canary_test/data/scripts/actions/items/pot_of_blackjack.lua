@@ -12,14 +12,14 @@ function potOfBlackjack.onUse(player, item, fromPosition, target, toPosition, is
 		remainingGulps = remainingGulps - 1
 		player:kv():set("pot-of-blackjack", remainingGulps)
 
-		local message
+		local messageKey
 		if remainingGulps > 0 then
-			message = "You take a gulp from the large bowl, but there's still some blackjack in it."
+			messageKey = "scripts.pot_of_blackjack.gulp_more"
 		else
-			message = "You take the last gulp from the large bowl. No leftovers!"
+			messageKey = "scripts.pot_of_blackjack.gulp_last"
 		end
 
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, message)
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, messageKey)
 	end
 
 	player:addHealth(5000)

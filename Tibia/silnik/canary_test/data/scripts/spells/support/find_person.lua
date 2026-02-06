@@ -8,29 +8,29 @@ local DISTANCE_FAR = 3
 local DISTANCE_VERYFAR = 4
 
 local directions = {
-	[DIRECTION_NORTH] = "north",
-	[DIRECTION_SOUTH] = "south",
-	[DIRECTION_EAST] = "east",
-	[DIRECTION_WEST] = "west",
-	[DIRECTION_NORTHEAST] = "north-east",
-	[DIRECTION_NORTHWEST] = "north-west",
-	[DIRECTION_SOUTHEAST] = "south-east",
-	[DIRECTION_SOUTHWEST] = "south-west",
+	[DIRECTION_NORTH] = "scripts.find_person.dir_north",
+	[DIRECTION_SOUTH] = "scripts.find_person.dir_south",
+	[DIRECTION_EAST] = "scripts.find_person.dir_east",
+	[DIRECTION_WEST] = "scripts.find_person.dir_west",
+	[DIRECTION_NORTHEAST] = "scripts.find_person.dir_northeast",
+	[DIRECTION_NORTHWEST] = "scripts.find_person.dir_northwest",
+	[DIRECTION_SOUTHEAST] = "scripts.find_person.dir_southeast",
+	[DIRECTION_SOUTHWEST] = "scripts.find_person.dir_southwest",
 }
 
 local messages = {
 	[DISTANCE_BESIDE] = {
-		[LEVEL_LOWER] = "is below you",
-		[LEVEL_SAME] = "is standing next to you",
-		[LEVEL_HIGHER] = "is above you",
+		[LEVEL_LOWER] = "scripts.find_person.beside_lower",
+		[LEVEL_SAME] = "scripts.find_person.beside_same",
+		[LEVEL_HIGHER] = "scripts.find_person.beside_higher",
 	},
 	[DISTANCE_CLOSE] = {
-		[LEVEL_LOWER] = "is on a lower level to the",
-		[LEVEL_SAME] = "is to the",
-		[LEVEL_HIGHER] = "is on a higher level to the",
+		[LEVEL_LOWER] = "scripts.find_person.close_lower",
+		[LEVEL_SAME] = "scripts.find_person.close_same",
+		[LEVEL_HIGHER] = "scripts.find_person.close_higher",
 	},
-	[DISTANCE_FAR] = "is far to the",
-	[DISTANCE_VERYFAR] = "is very far to the",
+	[DISTANCE_FAR] = "scripts.find_person.far",
+	[DISTANCE_VERYFAR] = "scripts.find_person.veryfar",
 }
 
 local spell = Spell("instant")
@@ -65,12 +65,15 @@ function spell.onCastSpell(creature, variant)
 
 	local level = positionDifference.z > 0 and LEVEL_HIGHER or positionDifference.z < 0 and LEVEL_LOWER or LEVEL_SAME
 	local distance = maxPositionDifference < 5 and DISTANCE_BESIDE or maxPositionDifference < 101 and DISTANCE_CLOSE or maxPositionDifference < 275 and DISTANCE_FAR or DISTANCE_VERYFAR
-	local message = messages[distance][level] or messages[distance]
+	local messageKey = messages[distance][level] or messages[distance]
+	local player = creature:getPlayer()
+	local msgText = Translator.getTranslation(player, messageKey)
 	if distance ~= DISTANCE_BESIDE then
-		message = message .. " " .. directions[direction]
+		local dirText = Translator.getTranslation(player, directions[direction])
+		msgText = msgText .. " " .. dirText
 	end
 
-	creature:sendTextMessage(MESSAGE_LOOK, target:getName() .. " " .. message .. ".")
+	creature:sendTextMessage(MESSAGE_LOOK, target:getName() .. " " .. msgText .. ".")
 	creaturePosition:sendMagicEffect(CONST_ME_MAGIC_BLUE)
 	return true
 end

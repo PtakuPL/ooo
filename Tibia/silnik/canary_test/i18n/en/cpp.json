@@ -460,5 +460,6 @@
   "cpp.combat.onslaught": " (Onslaught)",
   "cpp.combat.amplified_onslaught": " (Amplified Onslaught)",
   "cpp.game.hazard_tag": " (Hazard)",
-  "cpp.game.store_item_description": "You bought this item in the Store.\nUnwrap it in your own house to create a <{0}>."
+  "cpp.game.store_item_description": "You bought this item in the Store.\nUnwrap it in your own house to create a <{0}>.",
+  "cpp.bosstiary.podium_reward": "Congratulations! You have reached the Expertise level for your first boss. As a reward, a free Podium of Vigour has been sent to your Store inbox. You can place this podium in any house you own with this character. Use it to display bosses for which you have reached at least the Expertise level."
 }

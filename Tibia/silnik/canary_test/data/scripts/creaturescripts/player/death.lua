@@ -172,7 +172,7 @@ end
 local function endGuildWarIfLimitReached(guild1Kills, guild2Kills, fragsLimit, warId, killerGuild, targetGuild)
 	if guild1Kills >= fragsLimit or guild2Kills >= fragsLimit then
 		db.query(string.format("UPDATE `guild_wars` SET `status` = 4, `ended` = %d WHERE `status` = 1 AND `id` = %d", os.time(), warId))
-		Game.broadcastMessage(string.format("%s has just won the war against %s.", killerGuild:getName(), targetGuild:getName()))
+		Game.broadcastLocalizedMessageLua("scripts.guild_war.won", MESSAGE_STATUS_WARNING, {killerGuild:getName(), targetGuild:getName()})
 	end
 end
 

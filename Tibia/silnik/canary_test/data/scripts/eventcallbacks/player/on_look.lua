@@ -23,7 +23,7 @@ local function getPositionDescription(position, player)
 end
 
 local function handleItemDescription(inspectedThing, lookDistance, player)
-	local descriptionText = inspectedThing:getDescription(lookDistance)
+	local descriptionText = inspectedThing:getDescription(lookDistance, player)
 
 	if not player:getGroup():getAccess() then
 		if inspectedThing:getId() == ITEM_MAGICWALL or inspectedThing:getId() == ITEM_MAGICWALL_SAFE then

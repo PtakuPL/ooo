@@ -838,11 +838,16 @@ int ItemFunctions::luaItemMoveToSlot(lua_State* L) {
 }
 
 int ItemFunctions::luaItemGetDescription(lua_State* L) {
-	// item:getDescription(distance)
+	// item:getDescription(distance[, player])
 	const auto &item = Lua::getUserdataShared<Item>(L, 1, "Item");
 	if (item) {
 		const int32_t distance = Lua::getNumber<int32_t>(L, 2);
-		Lua::pushString(L, item->getDescription(distance));
+		const auto &viewer = Lua::getUserdataShared<Player>(L, 3, "Player");
+		if (viewer) {
+			Lua::pushString(L, item->getDescriptionLocalized(distance, viewer->getLocale()));
+		} else {
+			Lua::pushString(L, item->getDescription(distance));
+		}
 	} else {
 		lua_pushnil(L);
 	}

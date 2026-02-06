@@ -15,6 +15,8 @@
 #include "items/items.hpp"
 #include "items/thing.hpp"
 
+#include <string_view>
+
 class Creature;
 class Player;
 class Container;
@@ -297,11 +299,12 @@ public:
 	static std::string getTierEffectDescription(const std::shared_ptr<Item> &item);
 
 	static std::vector<std::pair<std::string, std::string>> getDescriptions(const ItemType &it, const std::shared_ptr<Item> &item = nullptr);
-	static std::string getDescription(const ItemType &it, int32_t lookDistance, const std::shared_ptr<Item> &item = nullptr, int32_t subType = -1, bool addArticle = true);
+	static std::string getDescription(const ItemType &it, int32_t lookDistance, const std::shared_ptr<Item> &item = nullptr, int32_t subType = -1, bool addArticle = true, std::string_view locale = {});
 	static std::string getNameDescription(const ItemType &it, const std::shared_ptr<Item> &item = nullptr, int32_t subType = -1, bool addArticle = true);
 	static std::string getWeightDescription(const ItemType &it, uint32_t weight, uint32_t count = 1);
 
 	std::string getDescription(int32_t lookDistance) final;
+	std::string getDescriptionLocalized(int32_t lookDistance, std::string_view locale) const;
 	std::string getNameDescription();
 	std::string getWeightDescription() const;
 

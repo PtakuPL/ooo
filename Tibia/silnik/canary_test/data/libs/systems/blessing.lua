@@ -194,7 +194,7 @@ Blessings.useCharm = function(player, item)
 			end
 
 			if player:hasBlessing(value.id) then
-				player:say("You already possess this blessing.", TALKTYPE_MONSTER_SAY)
+				player:sayLocalized("scripts.blessing.already_possess", TALKTYPE_MONSTER_SAY)
 				return true
 			end
 

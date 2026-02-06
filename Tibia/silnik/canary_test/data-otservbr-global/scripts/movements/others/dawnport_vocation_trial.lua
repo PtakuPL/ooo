@@ -9,7 +9,9 @@ local vocationTrials = {
 		tutorialId = 5,
 		effectPosition = { x = 32064, y = 31905, z = 5 },
 		storage = Storage.Dawnport.Sorcerer,
-		message = "As a sorcerer, you can use the following spells: Magic Patch, Buzz, Scorch.",
+		firstStepKey = "scripts.dawnport.first_step.sorcerer",
+		secondStepKey = "scripts.dawnport.second_step.sorcerer",
+		thirdStepKey = "scripts.dawnport.third_step.sorcerer",
 		vocation = {
 			id = VOCATION.ID.SORCERER,
 			name = "sorcerer",
@@ -39,7 +41,9 @@ local vocationTrials = {
 		tutorialId = 6,
 		effectPosition = { x = 32064, y = 31876, z = 5 },
 		storage = Storage.Dawnport.Druid,
-		message = "As a druid, you can use these spells: Mud Attack, Chill Out, Magic Patch.",
+		firstStepKey = "scripts.dawnport.first_step.druid",
+		secondStepKey = "scripts.dawnport.second_step.druid",
+		thirdStepKey = "scripts.dawnport.third_step.druid",
 		vocation = {
 			id = VOCATION.ID.DRUID,
 			name = "druid",
@@ -69,7 +73,9 @@ local vocationTrials = {
 		tutorialId = 4,
 		effectPosition = { x = 32050, y = 31891, z = 5 },
 		storage = Storage.Dawnport.Paladin,
-		message = "As a paladin, you can use the following spells: Magic Patch, Arrow Call.",
+		firstStepKey = "scripts.dawnport.first_step.paladin",
+		secondStepKey = "scripts.dawnport.second_step.paladin",
+		thirdStepKey = "scripts.dawnport.third_step.paladin",
 		vocation = {
 			id = VOCATION.ID.PALADIN,
 			name = "paladin",
@@ -100,7 +106,9 @@ local vocationTrials = {
 		tutorialId = 3,
 		effectPosition = { x = 32078, y = 31891, z = 5 },
 		storage = Storage.Dawnport.Knight,
-		message = "As a knight, you can use the following spells: Bruise Bane.",
+		firstStepKey = "scripts.dawnport.first_step.knight",
+		secondStepKey = "scripts.dawnport.second_step.knight",
+		thirdStepKey = "scripts.dawnport.third_step.knight",
 		vocation = {
 			id = VOCATION.ID.KNIGHT,
 			name = "knight",
@@ -152,24 +160,16 @@ local function tileStep(player, trial)
 			Position(trial.effectPosition):sendMagicEffect(tutorialEffects[i])
 		end
 		player:sendTutorial(trial.tutorialId)
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.dawnport_vocation_trial.msg_1" .. trial.message)
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, trial.firstStepKey)
 		addFirstItems(player)
 		-- Second step
 	elseif player:getStorageValue(trial.storage) == -1 and vocationId ~= VOCATION.ID.NONE then
-		player:sendTextMessage(
-			MESSAGE_EVENT_ADVANCE,
-			string.format("As this is your first time as a \z
-		" .. trial.vocation.name .. ", you received a few extra items. " .. trial.message)
-		)
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, trial.secondStepKey)
 		player:setStorageValue(trial.storage, 1)
 		player:sendTutorial(trial.tutorialId)
 		-- Other steps
 	elseif player:getStorageValue(trial.storage) == 1 then
-		player:sendTextMessage(
-			MESSAGE_EVENT_ADVANCE,
-			string.format("You have received the weapons of a \z
-		" .. trial.vocation.name .. ". " .. trial.message)
-		)
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, trial.thirdStepKey)
 	end
 	return true
 end

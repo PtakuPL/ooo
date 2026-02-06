@@ -6205,11 +6205,14 @@ void ProtocolGame::sendMarketDetail(uint16_t itemId, uint8_t tier) {
 	}
 
 	if (!it.description.empty()) {
-		const std::string &descr = it.description;
+		std::string descr = translateItemDescription(it.id, it.description);
 		if (descr.back() == '.') {
-			msg.addString(std::string(descr, 0, descr.length() - 1));
-		} else {
+			descr.pop_back();
+		}
+		if (!descr.empty()) {
 			msg.addString(descr);
+		} else {
+			msg.add<uint16_t>(0x00);
 		}
 	} else {
 		msg.add<uint16_t>(0x00);
@@ -9102,12 +9105,32 @@ std::string ProtocolGame::translateItemName(uint16_t itemId, const std::string &
 }
 
 std::string ProtocolGame::translateItemDescription(uint16_t itemId, const std::string &fallbackDesc) const {
-	if (!player) {
+	if (fallbackDesc.empty()) {
 		return fallbackDesc;
 	}
 
-	const std::string &locale = player->getLocale();
-	if (locale.empty() || locale == "en") {
+	std::string locale = "en";
+	if (player) {
+		locale = player->getLocale();
+	}
+	if (locale.empty()) {
+		locale = "en";
+	}
+
+	if (fallbackDesc.starts_with("#i18n:")) {
+		const std::string key = fallbackDesc.substr(6);
+		const std::string &translated = i18n::g_translator().get(key, locale);
+		if (!translated.empty() && translated != key) {
+			return translated;
+		}
+		const std::string &fallbackTranslated = i18n::g_translator().get(key, "en");
+		if (!fallbackTranslated.empty() && fallbackTranslated != key) {
+			return fallbackTranslated;
+		}
+		return fallbackDesc;
+	}
+
+	if (locale == "en") {
 		return fallbackDesc;
 	}
 

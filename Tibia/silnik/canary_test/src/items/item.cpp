@@ -33,6 +33,58 @@
 
 Items Item::items;
 
+namespace {
+std::string resolveI18nMarker(const std::string &text, std::string_view locale) {
+	if (!text.starts_with("#i18n:")) {
+		return text;
+	}
+
+	const std::string key = text.substr(6);
+	if (key.empty()) {
+		return text;
+	}
+
+	if (!locale.empty()) {
+		const std::string requestedLocale(locale);
+		const std::string &translated = i18n::g_translator().get(key, requestedLocale);
+		if (!translated.empty() && translated != key) {
+			return translated;
+		}
+	}
+
+	const std::string &fallback = i18n::g_translator().get(key, "en");
+	if (!fallback.empty() && fallback != key) {
+		return fallback;
+	}
+
+	return text;
+}
+
+std::string resolveItemTypeDescription(const ItemType &it, std::string_view locale) {
+	if (it.description.empty()) {
+		return {};
+	}
+
+	const std::string markerResolved = resolveI18nMarker(it.description, locale);
+	if (it.description.starts_with("#i18n:")) {
+		return markerResolved;
+	}
+
+	if (locale.empty() || locale == "en") {
+		return markerResolved;
+	}
+
+	const std::string key = "item." + std::to_string(it.id) + ".desc";
+	const std::string requestedLocale(locale);
+	const std::string &translated = i18n::g_translator().get(key, requestedLocale);
+	if (!translated.empty() && translated != key) {
+		return translated;
+	}
+
+	return markerResolved;
+}
+} // namespace
+
 std::shared_ptr<Item> Item::createItemBatch(uint16_t itemId, uint32_t count, bool wrappable /* = false*/) {
 	const auto &item = Item::CreateItem(itemId, count, nullptr, wrappable, true);
 	return item;
@@ -2489,7 +2541,7 @@ std::string Item::parseShowAttributesDescription(const std::shared_ptr<Item> &it
 	return itemDescription.str();
 }
 
-std::string Item::getDescription(const ItemType &it, int32_t lookDistance, const std::shared_ptr<Item> &item /*= nullptr*/, int32_t subType /*= -1*/, bool addArticle /*= true*/) {
+std::string Item::getDescription(const ItemType &it, int32_t lookDistance, const std::shared_ptr<Item> &item /*= nullptr*/, int32_t subType /*= -1*/, bool addArticle /*= true*/, std::string_view locale /*= {}*/) {
 	std::string text;
 
 	std::ostringstream s;
@@ -3138,13 +3190,7 @@ std::string Item::getDescription(const ItemType &it, int32_t lookDistance, const
 					if (item) {
 						text = item->getAttribute<std::string>(ItemAttribute_t::TEXT);
 						if (!text.empty()) {
-							// i18n: resolve #i18n: marker to English text for description preview
-							if (text.starts_with("#i18n:")) {
-								auto resolved = i18n::g_translator().get(text.substr(6), "en");
-								if (!resolved.empty()) {
-									text = resolved;
-								}
-							}
+							text = resolveI18nMarker(text, locale);
 							const std::string &writer = item->getAttribute<std::string>(ItemAttribute_t::WRITER);
 							if (!writer.empty()) {
 								s << writer << " wrote";
@@ -3251,22 +3297,25 @@ std::string Item::getDescription(const ItemType &it, int32_t lookDistance, const
 			}
 		} else if (it.weight != 0 && it.pickupable) {
 			s << std::endl
-			  << getWeightDescription(it, it.weight);
+		  << getWeightDescription(it, it.weight);
 		}
 	}
 
+	const std::string localizedItemDescription = resolveItemTypeDescription(it, locale);
+
 	if (item) {
-		const std::string &specialDescription = item->getAttribute<std::string>(ItemAttribute_t::DESCRIPTION);
+		std::string specialDescription = item->getAttribute<std::string>(ItemAttribute_t::DESCRIPTION);
 		if (!specialDescription.empty()) {
+			specialDescription = resolveI18nMarker(specialDescription, locale);
 			s << std::endl
 			  << specialDescription;
-		} else if (lookDistance <= 1 && !it.description.empty()) {
+		} else if (lookDistance <= 1 && !localizedItemDescription.empty()) {
 			s << std::endl
-			  << it.description;
+			  << localizedItemDescription;
 		}
-	} else if (lookDistance <= 1 && !it.description.empty()) {
+	} else if (lookDistance <= 1 && !localizedItemDescription.empty()) {
 		s << std::endl
-		  << it.description;
+		  << localizedItemDescription;
 	}
 
 	if (it.allowDistRead && it.id >= 7369 && it.id <= 7371) {
@@ -3283,8 +3332,12 @@ std::string Item::getDescription(const ItemType &it, int32_t lookDistance, const
 }
 
 std::string Item::getDescription(int32_t lookDistance) {
+	return getDescriptionLocalized(lookDistance, {});
+}
+
+std::string Item::getDescriptionLocalized(int32_t lookDistance, std::string_view locale) const {
 	const ItemType &it = items[id];
-	return getDescription(it, lookDistance, getItem());
+	return getDescription(it, lookDistance, getItem(), -1, true, locale);
 }
 
 std::string Item::getNameDescription(const ItemType &it, const std::shared_ptr<Item> &item /*= nullptr*/, int32_t subType /*= -1*/, bool addArticle /*= true*/) {

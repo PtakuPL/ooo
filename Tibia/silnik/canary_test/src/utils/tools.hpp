@@ -116,7 +116,7 @@ ImbuementTypes_t getImbuementType(const std::string &strValue);
  */
 SpawnType_t getSpawnType(const std::string &strValue);
 
-std::string getSkillName(uint8_t skillid);
+std::string getSkillName(uint8_t skillid, std::string_view locale = {});
 
 uint32_t adlerChecksum(const uint8_t* data, size_t len);
 
@@ -124,11 +124,11 @@ std::string ucfirst(std::string str);
 std::string ucwords(std::string str);
 bool booleanString(const std::string &str);
 
-std::string getWeaponName(WeaponType_t weaponType);
+std::string getWeaponName(WeaponType_t weaponType, std::string_view locale = {});
 WeaponType_t getWeaponType(const std::string &name);
 MoveEvent_t getMoveEventType(const std::string &name);
 
-std::string getCombatName(CombatType_t combatType);
+std::string getCombatName(CombatType_t combatType, std::string_view locale = {});
 CombatType_t getCombatTypeByName(const std::string &combatname);
 
 /**

@@ -10,6 +10,7 @@
 #include "utils/tools.hpp"
 
 #include "core.hpp"
+#include "utils/i18n/translator.hpp"
 #include "enums/object_category.hpp"
 #include "items/item.hpp"
 #include "lua/lua_definitions.hpp"
@@ -971,55 +972,58 @@ SpawnType_t getSpawnType(const std::string &strValue) {
 	return RESPAWN_IN_ALL;
 }
 
-std::string getSkillName(uint8_t skillid) {
+std::string getSkillName(uint8_t skillid, std::string_view locale /*= {}*/) {
+	const std::string locStr(locale.empty() ? "en" : locale);
+	auto &tr = i18n::g_translator();
+
 	switch (skillid) {
 		case SKILL_FIST:
-			return "fist fighting";
+			return tr.get("cpp.skill.fist_fighting", locStr);
 
 		case SKILL_CLUB:
-			return "club fighting";
+			return tr.get("cpp.skill.club_fighting", locStr);
 
 		case SKILL_SWORD:
-			return "sword fighting";
+			return tr.get("cpp.skill.sword_fighting", locStr);
 
 		case SKILL_AXE:
-			return "axe fighting";
+			return tr.get("cpp.skill.axe_fighting", locStr);
 
 		case SKILL_DISTANCE:
-			return "distance fighting";
+			return tr.get("cpp.skill.distance_fighting", locStr);
 
 		case SKILL_SHIELD:
-			return "shielding";
+			return tr.get("cpp.skill.shielding", locStr);
 
 		case SKILL_FISHING:
-			return "fishing";
+			return tr.get("cpp.skill.fishing", locStr);
 
 		case SKILL_CRITICAL_HIT_CHANCE:
-			return "critical hit chance";
+			return tr.get("cpp.skill.critical_hit_chance", locStr);
 
 		case SKILL_CRITICAL_HIT_DAMAGE:
-			return "critical extra damage";
+			return tr.get("cpp.skill.critical_extra_damage", locStr);
 
 		case SKILL_LIFE_LEECH_CHANCE:
-			return "life leech chance";
+			return tr.get("cpp.skill.life_leech_chance", locStr);
 
 		case SKILL_LIFE_LEECH_AMOUNT:
-			return "life leech";
+			return tr.get("cpp.skill.life_leech", locStr);
 
 		case SKILL_MANA_LEECH_CHANCE:
-			return "mana leech chance";
+			return tr.get("cpp.skill.mana_leech_chance", locStr);
 
 		case SKILL_MANA_LEECH_AMOUNT:
-			return "mana leech";
+			return tr.get("cpp.skill.mana_leech", locStr);
 
 		case SKILL_MAGLEVEL:
-			return "magic level";
+			return tr.get("cpp.skill.magic_level", locStr);
 
 		case SKILL_LEVEL:
-			return "level";
+			return tr.get("cpp.skill.level", locStr);
 
 		default:
-			return "unknown";
+			return tr.get("cpp.skill.unknown", locStr);
 	}
 }
 
@@ -1083,22 +1087,25 @@ bool booleanString(const std::string &str) {
 	return ch != 'f' && ch != 'n' && ch != '0';
 }
 
-std::string getWeaponName(WeaponType_t weaponType) {
+std::string getWeaponName(WeaponType_t weaponType, std::string_view locale /*= {}*/) {
+	const std::string locStr(locale.empty() ? "en" : locale);
+	auto &tr = i18n::g_translator();
+
 	switch (weaponType) {
 		case WEAPON_SWORD:
-			return "sword";
+			return tr.get("cpp.weapon.sword", locStr);
 		case WEAPON_CLUB:
-			return "club";
+			return tr.get("cpp.weapon.club", locStr);
 		case WEAPON_AXE:
-			return "axe";
+			return tr.get("cpp.weapon.axe", locStr);
 		case WEAPON_DISTANCE:
-			return "distance";
+			return tr.get("cpp.weapon.distance", locStr);
 		case WEAPON_WAND:
-			return "wand";
+			return tr.get("cpp.weapon.wand", locStr);
 		case WEAPON_AMMO:
-			return "ammunition";
+			return tr.get("cpp.weapon.ammunition", locStr);
 		case WEAPON_MISSILE:
-			return "missile";
+			return tr.get("cpp.weapon.missile", locStr);
 		default:
 			return {};
 	}
@@ -1145,12 +1152,32 @@ MoveEvent_t getMoveEventType(const std::string &name) {
 	return MOVE_EVENT_NONE;
 }
 
-std::string getCombatName(CombatType_t combatType) {
-	const auto combatName = combatTypeNames.find(combatType);
-	if (combatName != combatTypeNames.end()) {
-		return combatName->second;
+std::string getCombatName(CombatType_t combatType, std::string_view locale /*= {}*/) {
+	const std::string locStr(locale.empty() ? "en" : locale);
+	auto &tr = i18n::g_translator();
+
+	static const std::unordered_map<CombatType_t, std::string> combatKeyMap = {
+		{ COMBAT_DROWNDAMAGE, "cpp.combat.drown" },
+		{ COMBAT_DEATHDAMAGE, "cpp.combat.death" },
+		{ COMBAT_ENERGYDAMAGE, "cpp.combat.energy" },
+		{ COMBAT_EARTHDAMAGE, "cpp.combat.earth" },
+		{ COMBAT_FIREDAMAGE, "cpp.combat.fire" },
+		{ COMBAT_HEALING, "cpp.combat.healing" },
+		{ COMBAT_HOLYDAMAGE, "cpp.combat.holy" },
+		{ COMBAT_ICEDAMAGE, "cpp.combat.ice" },
+		{ COMBAT_UNDEFINEDDAMAGE, "cpp.combat.undefined" },
+		{ COMBAT_LIFEDRAIN, "cpp.combat.lifedrain" },
+		{ COMBAT_MANADRAIN, "cpp.combat.manadrain" },
+		{ COMBAT_PHYSICALDAMAGE, "cpp.combat.physical" },
+		{ COMBAT_AGONYDAMAGE, "cpp.combat.agony" },
+		{ COMBAT_NEUTRALDAMAGE, "cpp.combat.neutral" },
+	};
+
+	const auto it = combatKeyMap.find(combatType);
+	if (it != combatKeyMap.end()) {
+		return tr.get(it->second, locStr);
 	}
-	return "unknown";
+	return tr.get("cpp.combat.unknown", locStr);
 }
 
 CombatType_t getCombatTypeByName(const std::string &combatname) {

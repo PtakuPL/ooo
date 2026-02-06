@@ -17,6 +17,7 @@
 #include "utils/pugicast.hpp"
 #include "creatures/combat/spells.hpp"
 #include "utils/tools.hpp"
+#include "utils/i18n/translator.hpp"
 
 #include <appearances.pb.h>
 
@@ -78,20 +79,24 @@ std::string Items::getAugmentNameByType(Augment_t augmentType) {
 	return augmentTypeName;
 }
 
-std::string ItemType::parseAugmentDescription(bool inspect /*= false*/) const {
+std::string ItemType::parseAugmentDescription(bool inspect /*= false*/, std::string_view locale /*= {}*/) const {
 	if (augments.empty()) {
 		return "";
 	}
+
+	const std::string locStr(locale.empty() ? "en" : locale);
+	auto &tr = i18n::g_translator();
 
 	std::vector<std::string> descriptions;
 	for (const auto &augment : augments) {
 		descriptions.push_back(getFormattedAugmentDescription(augment));
 	}
 
+	auto joined = fmt::format("{}", fmt::join(descriptions.begin(), descriptions.end(), ", "));
 	if (inspect) {
-		return fmt::format("{}.", fmt::join(descriptions.begin(), descriptions.end(), ", "));
+		return tr.format("cpp.augment.augments_inspect", locStr, {joined});
 	} else {
-		return fmt::format("\nAugments: ({}).", fmt::join(descriptions.begin(), descriptions.end(), ", "));
+		return tr.format("cpp.augment.augments_label", locStr, {joined});
 	}
 }
 

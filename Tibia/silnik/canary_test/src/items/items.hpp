@@ -248,7 +248,7 @@ public:
 		return str;
 	}
 
-	std::string parseAugmentDescription(bool inspect = false) const;
+	std::string parseAugmentDescription(bool inspect = false, std::string_view locale = {}) const;
 	std::string getFormattedAugmentDescription(const std::shared_ptr<AugmentInfo> &augmentInfo) const;
 
 	void addAugment(std::string spellName, Augment_t augmentType, int32_t value);

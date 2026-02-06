@@ -285,11 +285,11 @@ public:
 		return isStoreItem() || hasOwner();
 	}
 
-	static std::string parseAugmentDescription(const std::shared_ptr<Item> &item, bool inspect = false) {
+	static std::string parseAugmentDescription(const std::shared_ptr<Item> &item, bool inspect = false, std::string_view locale = {}) {
 		if (!item) {
 			return "";
 		}
-		return items[item->getID()].parseAugmentDescription(inspect);
+		return items[item->getID()].parseAugmentDescription(inspect, locale);
 	}
 	static std::string parseImbuementDescription(const std::shared_ptr<Item> &item, std::string_view locale = {});
 	static std::string parseShowDurationSpeed(int32_t speed, bool &begin, std::string_view locale = {});
@@ -298,7 +298,7 @@ public:
 	static std::string parseClassificationDescription(const std::shared_ptr<Item> &item, std::string_view locale = {});
 	static std::string getTierEffectDescription(const std::shared_ptr<Item> &item, std::string_view locale = {});
 
-	static std::vector<std::pair<std::string, std::string>> getDescriptions(const ItemType &it, const std::shared_ptr<Item> &item = nullptr);
+	static std::vector<std::pair<std::string, std::string>> getDescriptions(const ItemType &it, const std::shared_ptr<Item> &item = nullptr, std::string_view locale = {});
 	static std::string getDescription(const ItemType &it, int32_t lookDistance, const std::shared_ptr<Item> &item = nullptr, int32_t subType = -1, bool addArticle = true, std::string_view locale = {});
 	static std::string getNameDescription(const ItemType &it, const std::shared_ptr<Item> &item = nullptr, int32_t subType = -1, bool addArticle = true);
 	static std::string getWeightDescription(const ItemType &it, uint32_t weight, uint32_t count = 1, std::string_view locale = {});
@@ -306,6 +306,7 @@ public:
 	std::string getDescription(int32_t lookDistance) final;
 	std::string getDescriptionLocalized(int32_t lookDistance, std::string_view locale);
 	std::string getNameDescription();
+	std::string getWeightDescription(std::string_view locale) const;
 	std::string getWeightDescription() const;
 
 	// serialization
@@ -745,7 +746,7 @@ protected:
 
 private:
 	// Don't add variables here, use the ItemAttribute class.
-	std::string getWeightDescription(uint32_t weight) const;
+	std::string getWeightDescription(uint32_t weight, std::string_view locale = {}) const;
 
 	friend class Decay;
 	friend class MapCache;

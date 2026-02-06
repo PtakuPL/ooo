@@ -2206,7 +2206,7 @@ void ProtocolGame::sendItemInspection(uint16_t itemId, uint8_t itemCount, const 
 	}
 	msg.addByte(0);
 
-	auto descriptions = Item::getDescriptions(it, item);
+	auto descriptions = Item::getDescriptions(it, item, player->getLocale());
 	msg.addByte(descriptions.size());
 	for (const auto &description : descriptions) {
 		msg.addString(description.first);
@@ -4070,7 +4070,7 @@ void ProtocolGame::sendCyclopediaCharacterInspection() {
 			msg.addByte(itemImbuements);
 			msg.setBufferPosition(endImbuements);
 
-			auto descriptions = Item::getDescriptions(Item::items[inventoryItem->getID()], inventoryItem);
+			auto descriptions = Item::getDescriptions(Item::items[inventoryItem->getID()], inventoryItem, player->getLocale());
 			msg.addByte(descriptions.size());
 			for (const auto &description : descriptions) {
 				msg.addString(description.first);
@@ -6137,6 +6137,9 @@ void ProtocolGame::sendMarketDetail(uint16_t itemId, uint8_t tier) {
 	msg.add<uint16_t>(itemId);
 	const ItemType &it = Item::items[itemId];
 
+	const std::string locStr(player->getLocale().empty() ? "en" : std::string(player->getLocale()));
+	auto &tr = i18n::g_translator();
+
 	if (!oldProtocol && it.upgradeClassification > 0) {
 		msg.addByte(tier);
 	}
@@ -6152,7 +6155,7 @@ void ProtocolGame::sendMarketDetail(uint16_t itemId, uint8_t tier) {
 		bool separator = false;
 
 		if (it.attack != 0) {
-			ss << "attack +" << it.attack;
+			ss << tr.format("cpp.inspect.attack_plus", locStr, {std::to_string(it.attack)});
 			separator = true;
 		}
 
@@ -6160,7 +6163,7 @@ void ProtocolGame::sendMarketDetail(uint16_t itemId, uint8_t tier) {
 			if (separator) {
 				ss << ", ";
 			}
-			ss << "chance to hit +" << static_cast<int16_t>(it.hitChance) << "%";
+			ss << tr.format("cpp.inspect.chance_to_hit", locStr, {std::to_string(static_cast<int16_t>(it.hitChance))});
 			separator = true;
 		}
 
@@ -6168,17 +6171,17 @@ void ProtocolGame::sendMarketDetail(uint16_t itemId, uint8_t tier) {
 			if (separator) {
 				ss << ", ";
 			}
-			ss << static_cast<uint16_t>(it.shootRange) << " fields";
+			ss << tr.format("cpp.inspect.n_fields", locStr, {std::to_string(static_cast<uint16_t>(it.shootRange))});
 		}
 		msg.addString(ss.str());
 	} else {
 		std::string attackDescription;
 		if (it.abilities && it.abilities->elementType != COMBAT_NONE && it.abilities->elementDamage != 0) {
-			attackDescription = fmt::format("{} {}", it.abilities->elementDamage, getCombatName(it.abilities->elementType));
+			attackDescription = fmt::format("{} {}", it.abilities->elementDamage, getCombatName(it.abilities->elementType, locStr));
 		}
 
 		if (it.attack != 0 && !attackDescription.empty()) {
-			attackDescription = fmt::format("{} physical + {}", it.attack, attackDescription);
+			attackDescription = tr.format("cpp.inspect.physical_plus", locStr, {std::to_string(it.attack), attackDescription});
 		} else if (it.attack != 0 && attackDescription.empty()) {
 			attackDescription = std::to_string(it.attack);
 		}
@@ -6220,7 +6223,7 @@ void ProtocolGame::sendMarketDetail(uint16_t itemId, uint8_t tier) {
 
 	if (it.decayTime != 0) {
 		std::ostringstream ss;
-		ss << it.decayTime << " seconds";
+		ss << tr.format("cpp.inspect.n_seconds", locStr, {std::to_string(it.decayTime)});
 		msg.addString(ss.str());
 	} else {
 		msg.add<uint16_t>(0x00);
@@ -6241,7 +6244,7 @@ void ProtocolGame::sendMarketDetail(uint16_t itemId, uint8_t tier) {
 				separator = true;
 			}
 
-			ss << fmt::format("{} {:+}%", getCombatName(indexToCombatType(i)), it.abilities->absorbPercent[i]);
+			ss << fmt::format("{} {:+}%", getCombatName(indexToCombatType(i), locStr), it.abilities->absorbPercent[i]);
 		}
 
 		msg.addString(ss.str());
@@ -6279,7 +6282,7 @@ void ProtocolGame::sendMarketDetail(uint16_t itemId, uint8_t tier) {
 				separator = true;
 			}
 
-			ss << fmt::format("{} {:+}", getSkillName(i), it.abilities->skills[i]);
+			ss << fmt::format("{} {:+}", getSkillName(i, locStr), it.abilities->skills[i]);
 		}
 
 		for (uint8_t i = SKILL_CRITICAL_HIT_CHANCE; i <= SKILL_LAST; i++) {
@@ -6298,7 +6301,7 @@ void ProtocolGame::sendMarketDetail(uint16_t itemId, uint8_t tier) {
 				separator = true;
 			}
 
-			ss << fmt::format("{} {:+}%", getSkillName(i), skills / 100.0);
+			ss << fmt::format("{} {:+}%", getSkillName(i, locStr), skills / 100.0);
 		}
 
 		if (it.abilities->stats[STAT_MAGICPOINTS] != 0) {
@@ -6308,7 +6311,7 @@ void ProtocolGame::sendMarketDetail(uint16_t itemId, uint8_t tier) {
 				separator = true;
 			}
 
-			ss << fmt::format(" magic level {:+}", it.abilities->stats[STAT_MAGICPOINTS]);
+			ss << fmt::format(" {} {:+}", tr.get("cpp.skill.magic_level", locStr), it.abilities->stats[STAT_MAGICPOINTS]);
 		}
 
 		// Version 12.72 (Specialized magic level modifier)
@@ -6319,8 +6322,8 @@ void ProtocolGame::sendMarketDetail(uint16_t itemId, uint8_t tier) {
 				} else {
 					separator = true;
 				}
-				std::string combatName = getCombatName(indexToCombatType(i));
-				ss << std::showpos << combatName << std::noshowpos << "magic level +" << it.abilities->specializedMagicLevel[i];
+				std::string combatName = getCombatName(indexToCombatType(i), locStr);
+				ss << std::showpos << combatName << std::noshowpos << tr.get("cpp.skill.magic_level", locStr) << " +" << it.abilities->specializedMagicLevel[i];
 			}
 		}
 
@@ -6329,7 +6332,7 @@ void ProtocolGame::sendMarketDetail(uint16_t itemId, uint8_t tier) {
 				ss << ", ";
 			}
 
-			ss << fmt::format("speed {:+}", (it.abilities->speed >> 1));
+			ss << tr.format("cpp.inspect.speed_value", locStr, {fmt::format("{:+}", (it.abilities->speed >> 1))});
 		}
 
 		msg.addString(ss.str());
@@ -6343,13 +6346,13 @@ void ProtocolGame::sendMarketDetail(uint16_t itemId, uint8_t tier) {
 		msg.add<uint16_t>(0x00);
 	}
 
-	std::string weaponName = getWeaponName(it.weaponType);
+	std::string weaponName = getWeaponName(it.weaponType, locStr);
 
 	if (it.slotPosition & SLOTP_TWO_HAND) {
 		if (!weaponName.empty()) {
-			weaponName += ", two-handed";
+			weaponName += ", " + tr.get("cpp.inspect.two_handed", locStr);
 		} else {
-			weaponName = "two-handed";
+			weaponName = tr.get("cpp.inspect.two_handed", locStr);
 		}
 	}
 
@@ -6366,14 +6369,14 @@ void ProtocolGame::sendMarketDetail(uint16_t itemId, uint8_t tier) {
 			weightString.insert(weightString.end() - 2, '.');
 			ss << weightString;
 		}
-		ss << " oz";
+		ss << tr.get("cpp.inspect.oz", locStr);
 		msg.addString(ss.str());
 	} else {
 		msg.add<uint16_t>(0x00);
 	}
 
 	if (!oldProtocol) {
-		std::string augmentsDescription = it.parseAugmentDescription(true);
+		std::string augmentsDescription = it.parseAugmentDescription(true, player->getLocale());
 		if (!augmentsDescription.empty()) {
 			msg.addString(augmentsDescription);
 		} else {
@@ -6393,7 +6396,7 @@ void ProtocolGame::sendMarketDetail(uint16_t itemId, uint8_t tier) {
 			std::ostringstream string;
 			if (it.abilities->magicShieldCapacityFlat > 0) {
 				string.clear();
-				string << std::showpos << it.abilities->magicShieldCapacityFlat << std::noshowpos << " and " << it.abilities->magicShieldCapacityPercent << "%";
+				string << std::showpos << it.abilities->magicShieldCapacityFlat << std::noshowpos << tr.get("cpp.inspect.and_connector", locStr) << it.abilities->magicShieldCapacityPercent << "%";
 				msg.addString(string.str());
 			} else {
 				msg.add<uint16_t>(0x00);
@@ -6417,7 +6420,7 @@ void ProtocolGame::sendMarketDetail(uint16_t itemId, uint8_t tier) {
 
 			if (it.abilities->perfectShotDamage > 0) {
 				string.clear();
-				string << std::showpos << it.abilities->perfectShotDamage << std::noshowpos << " at range " << unsigned(it.abilities->perfectShotRange);
+				string << std::showpos << it.abilities->perfectShotDamage << std::noshowpos << tr.get("cpp.inspect.at_range", locStr) << unsigned(it.abilities->perfectShotRange);
 				msg.addString(string.str());
 			} else {
 				msg.add<uint16_t>(0x00);
@@ -6442,19 +6445,19 @@ void ProtocolGame::sendMarketDetail(uint16_t itemId, uint8_t tier) {
 			double chance;
 			if (it.isWeapon()) {
 				chance = (0.05 * tier * tier) + (0.4 * tier) + 0.05;
-				ss << fmt::format("{} ({:.2f}% Onslaught)", static_cast<uint16_t>(tier), chance);
+				ss << fmt::format("{} ({})", static_cast<uint16_t>(tier), tr.format("cpp.look.tier_onslaught", locStr, {fmt::format("{:.2f}", chance)}));
 			} else if (it.isHelmet()) {
 				chance = (0.05 * tier * tier) + (1.9 * tier) + 0.05;
-				ss << fmt::format("{} ({:.2f}% Momentum)", static_cast<uint16_t>(tier), chance);
+				ss << fmt::format("{} ({})", static_cast<uint16_t>(tier), tr.format("cpp.look.tier_momentum", locStr, {fmt::format("{:.2f}", chance)}));
 			} else if (it.isArmor()) {
 				chance = (0.0307576 * tier * tier) + (0.440697 * tier) + 0.026;
-				ss << fmt::format("{} ({:.2f}% Ruse)", static_cast<uint16_t>(tier), chance);
+				ss << fmt::format("{} ({})", static_cast<uint16_t>(tier), tr.format("cpp.look.tier_ruse", locStr, {fmt::format("{:.2f}", chance)}));
 			} else if (it.isLegs()) {
 				chance = (0.0127 * tier * tier) + (0.1070 * tier) + 0.0073;
-				ss << fmt::format("{} ({:.2f}% Transcendence)", static_cast<uint16_t>(tier), chance);
+				ss << fmt::format("{} ({})", static_cast<uint16_t>(tier), tr.format("cpp.look.tier_transcendence", locStr, {fmt::format("{:.2f}", chance)}));
 			} else if (it.isBoots()) {
 				chance = (0.4 * tier * tier) + (1.7 * tier) + 0.4;
-				ss << fmt::format("{} ({:.2f}% Amplification)", static_cast<uint16_t>(tier), chance);
+				ss << fmt::format("{} ({})", static_cast<uint16_t>(tier), tr.format("cpp.look.tier_amplification", locStr, {fmt::format("{:.2f}", chance)}));
 			}
 			msg.addString(ss.str());
 		} else if (it.upgradeClassification > 0 && tier == 0) {

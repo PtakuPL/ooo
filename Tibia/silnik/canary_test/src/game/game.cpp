@@ -5183,13 +5183,13 @@ void Game::playerAcceptTrade(uint32_t playerId) {
 			std::string errorDescription;
 
 			if (tradePartner->tradeItem) {
-				errorDescription = getTradeErrorDescription(ret1, tradeItem1);
+				errorDescription = getTradeErrorDescription(ret1, tradeItem1, tradePartner->getLocale());
 				tradePartner->sendTextMessage(MESSAGE_TRANSACTION, errorDescription);
 				tradePartner->tradeItem->onTradeEvent(ON_TRADE_CANCEL, tradePartner);
 			}
 
 			if (player->tradeItem) {
-				errorDescription = getTradeErrorDescription(ret2, tradeItem2);
+				errorDescription = getTradeErrorDescription(ret2, tradeItem2, player->getLocale());
 				player->sendTextMessage(MESSAGE_TRANSACTION, errorDescription);
 				player->tradeItem->onTradeEvent(ON_TRADE_CANCEL, player);
 			}
@@ -5207,35 +5207,38 @@ void Game::playerAcceptTrade(uint32_t playerId) {
 	}
 }
 
-std::string Game::getTradeErrorDescription(ReturnValue ret, const std::shared_ptr<Item> &item) {
+std::string Game::getTradeErrorDescription(ReturnValue ret, const std::shared_ptr<Item> &item, std::string_view locale /*= {}*/) {
+	const std::string locStr(locale.empty() ? "en" : locale);
+	auto &tr = i18n::g_translator();
+
 	if (item) {
 		if (ret == RETURNVALUE_NOTENOUGHCAPACITY) {
 			std::ostringstream ss;
-			ss << "You do not have enough capacity to carry";
+			ss << tr.get("cpp.trade.not_enough_capacity", locStr);
 
 			if (item->isStackable() && item->getItemCount() > 1) {
-				ss << " these objects.";
+				ss << tr.get("cpp.trade.these_objects", locStr);
 			} else {
-				ss << " this object.";
+				ss << tr.get("cpp.trade.this_object", locStr);
 			}
 
 			ss << std::endl
-			   << ' ' << item->getWeightDescription();
+			   << ' ' << item->getWeightDescription(locale);
 			return ss.str();
 		} else if (ret == RETURNVALUE_NOTENOUGHROOM || ret == RETURNVALUE_CONTAINERNOTENOUGHROOM) {
 			std::ostringstream ss;
-			ss << "You do not have enough room to carry";
+			ss << tr.get("cpp.trade.not_enough_room", locStr);
 
 			if (item->isStackable() && item->getItemCount() > 1) {
-				ss << " these objects.";
+				ss << tr.get("cpp.trade.these_objects", locStr);
 			} else {
-				ss << " this object.";
+				ss << tr.get("cpp.trade.this_object", locStr);
 			}
 
 			return ss.str();
 		}
 	}
-	return "Trade could not be completed.";
+	return tr.get("cpp.trade.could_not_complete", locStr);
 }
 
 void Game::playerLookInTrade(uint32_t playerId, bool lookAtCounterOffer, uint8_t index) {

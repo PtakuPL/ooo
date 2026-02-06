@@ -145,7 +145,7 @@ public:
 	std::shared_ptr<Thing> internalGetThing(const std::shared_ptr<Player> &player, const Position &pos, int32_t index, uint32_t itemId, StackPosType_t type);
 	static void internalGetPosition(const std::shared_ptr<Item> &item, Position &pos, uint8_t &stackpos);
 
-	static std::string getTradeErrorDescription(ReturnValue ret, const std::shared_ptr<Item> &item);
+	static std::string getTradeErrorDescription(ReturnValue ret, const std::shared_ptr<Item> &item, std::string_view locale = {});
 
 	std::shared_ptr<Creature> getCreatureByID(uint32_t id);
 

@@ -74,12 +74,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				return true
 			end
 
-			npcHandler:say(
-				"Can it be? I recognise my family's arms! You have found a treasure indeed! \z
-					I am poor and all I can offer you is my friendship, but ... please ... give that brooch to me?",
-				npc,
-				creature
-			)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.dalbrect.say_7")
 			npcHandler:setTopic(playerId, 2)
 		elseif npcHandler:getTopic(playerId) == 2 then
 			npcHandler:setTopic(playerId, 0)
@@ -88,12 +83,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				return true
 			end
 
-			npcHandler:say(
-				"Thank you! I shall consider you my friend from now on! \z
-					Just let me know if you {need} something!",
-				npc,
-				creature
-			)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.dalbrect.say_8")
 			player:setStorageValue(Storage.Quest.U7_24.TheWhiteRavenMonastery.QuestLog, 1) -- Quest log
 			player:setStorageValue(Storage.Quest.U7_24.TheWhiteRavenMonastery.Passage, 1)
 		end

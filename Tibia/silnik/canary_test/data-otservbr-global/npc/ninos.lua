@@ -74,7 +74,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U7_24.ThePostmanMissions.MeasurementsBenjamin, 1)
 			npcHandler:setTopic(playerId, 0)
 		else
-			npcHandler:say("...", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ninos.say_2")
 			npcHandler:setTopic(playerId, 0)
 		end
 	end

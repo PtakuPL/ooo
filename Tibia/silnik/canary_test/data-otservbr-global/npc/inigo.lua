@@ -23,73 +23,42 @@ npcConfig.flags = {
 	floorchange = false,
 }
 
-local hints = {
-	[1] = "If you don't know the meaning of an icon on the minimap, move the mouse cursor on it and wait a moment.",
-	[2] = "If you seek more information, look at or click on objects near you, like wall signs, \z
-		blackboards or books in book cases - many of them have useful information on {Tibia} or maybe \z
-		even a quest you are doing. By the way, to receive more of my hints, just say {hints} again.",
-	[3] = "If you want to attack a monster, simply click on it in your battle list. \z
-		A red frame around a monster shows you are attacking it.",
-	[4] = "If you already know where you want to go, click on the automap and your character \z
-		will walk there automatically if the location is reachable and not too far away.",
-	[5] = "Always have a {rope} with you! If you fall into a hole and are surrounded by {monsters}, \z
-		quickly use the rope with the ropespot to get back up and out.",
-	[6] = "'Capacity' restricts the amount of things you can carry with you. It raises with each level.",
-	[7] = "Always have a look on your health bar. \z
-		If you see that you do not regenerate health points anymore, eat something. ",
-	[8] = "Always eat as much {food} as possible. \z
-		This way, you'll regenerate health points for a longer period of time.",
-	[9] = "After you have killed a monster, you have 10 seconds in which the corpse \z
-		is not movable and no one else but you can loot it.",
-	[10] = "Be careful when you approach three or more {monsters} because you only can block the attacks of two! \z
-		In such a situation, even a few salamanders can do severe damage or even kill you.",
-	[11] = "There are many ways to gather {food}. Many creatures drop food but you can also pick blueberries or \z
-		bake your own bread. If you have a {fishing rod} and worms in your inventory, you can also try to catch a fish.",
-	[12] = "Baking bread is rather complex. First of all you need a scythe to harvest wheat. \z
-		Then you use the wheat with a millstone to get flour. This can be be used on water to get dough, \z
-		which can be used on an oven to bake bread. Use milk instead of water to get cake dough.",
-	[13] = "{Dying} hurts! Better run away than risk your life. \z
-		You are going to lose experience and skill points when you die. \z
-		And anyone can loot your corpse if you are not blessed.",
-	[14] = "When you switch to '{Offensive} {Fighting}', you deal out more damage but you also get hurt more easily.",
-	[15] = "When you are on low health and need to run away from a monster, \z
-		switch to '{Defensive} {Fighting}' and the monster will hit you less severely.",
-	[16] = "Many creatures try to run away from you. Select 'Chase Opponent' to follow them.",
-	[17] = "The deeper you enter a dungeon, the more dangerous it will be. \z
-		Approach every dungeon with utmost care or an unexpected creature might kill you. \z
-		This will result in losing experience and skill points.",
-	[18] = "Due to the perspective, some objects in {Tibia} are not located at the spot they seem to appear \z
-		(ladders, windows, lamps). Try clicking on the floor tile the object would lie on.",
-	[19] = "Almost as important as a {rope} is a {shovel}. Many things can be dug out of the sand, and a pile \z
-		of loose stones might hide a secret entrance. But if you go down an unknown hole, make sure you have a \z
-		rope with you to get you out quickly if necessary!",
-	[20] = "Stairs, ladders and dungeon entrances are marked as yellow dots on the automap.",
-	[21] = "You can get {food} by killing animals or {monsters}. You can also pick blueberries or bake your own bread. \z
-		If you are too lazy or own too much money, you can also buy food.",
-	[22] = "Quest containers can be recognised easily. They don't open up regularly but display a message \z
-		'You have found ....'. They can only be opened once.",
-	[23] = "Better run away than risk to die. You'll lose experience and skill points each time you die.",
-	[24] = "You can form a party by right-clicking on a player and selecting 'Invite to Party'. \z
-		The party leader can also enable 'Shared Experience' by right-clicking on him- or herself.",
-	[25] = "You can assign {spells}, the use of items, or random text to 'hotkeys'. You find them under 'Options'.",
-	[26] = "You can also follow other {players}. Just right-click on the player and select 'Follow'.",
-	[27] = "You can found a party with your friends by right-clicking on a player and selecting 'Invite to Party'. \z
-		If you are invited to a party, right-click on yourself and select 'Join Party'.",
-	[28] = "Only found parties with people you trust! You can attack people in your party without getting a {skull}. \z
-		This is helpful for training your {skills}, \z
-		but can be abused to kill people without having to fear negative consequences.",
-	[29] = "The leader of a party has the option to distribute gathered experience among all {players} in the party. \z
-		If you are the leader, right-click on yourself and select 'Enable Shared Experience'.",
-	[30] = "If you see someone with a {skull} symbol next to their name, it means he or she has attacked \z
-		or even killed another player. Be careful around such people, as their next target might be you.",
-	[31] = "A brown frame around a player means he or she is in a {PvP} situation.",
-	[32] = "To open or close {skills}, battle or VIP list, click on the corresponding button. \z
-		The buttons are displayed to the left or right of your game window.",
-	[33] = "If you want to trade an item with another player, right-click on the item and select \z
-		'Trade with ...', then click on the player with whom you want to trade.",
-	[34] = "Send private messages to other {players} by right-clicking on the player or the player's name and select \z
-		'Message to ....'. You can also open a 'private message channel' and type in the name of the player.",
-	[35] = "There is nothing more I can tell you. If you are still in need of some {hints}, I can repeat them for you.",
+local hintKeys = {
+	[1] = "npc.inigo.hint_1",
+	[2] = "npc.inigo.hint_2",
+	[3] = "npc.inigo.hint_3",
+	[4] = "npc.inigo.hint_4",
+	[5] = "npc.inigo.hint_5",
+	[6] = "npc.inigo.hint_6",
+	[7] = "npc.inigo.hint_7",
+	[8] = "npc.inigo.hint_8",
+	[9] = "npc.inigo.hint_9",
+	[10] = "npc.inigo.hint_10",
+	[11] = "npc.inigo.hint_11",
+	[12] = "npc.inigo.hint_12",
+	[13] = "npc.inigo.hint_13",
+	[14] = "npc.inigo.hint_14",
+	[15] = "npc.inigo.hint_15",
+	[16] = "npc.inigo.hint_16",
+	[17] = "npc.inigo.hint_17",
+	[18] = "npc.inigo.hint_18",
+	[19] = "npc.inigo.hint_19",
+	[20] = "npc.inigo.hint_20",
+	[21] = "npc.inigo.hint_21",
+	[22] = "npc.inigo.hint_22",
+	[23] = "npc.inigo.hint_23",
+	[24] = "npc.inigo.hint_24",
+	[25] = "npc.inigo.hint_25",
+	[26] = "npc.inigo.hint_26",
+	[27] = "npc.inigo.hint_27",
+	[28] = "npc.inigo.hint_28",
+	[29] = "npc.inigo.hint_29",
+	[30] = "npc.inigo.hint_30",
+	[31] = "npc.inigo.hint_31",
+	[32] = "npc.inigo.hint_32",
+	[33] = "npc.inigo.hint_33",
+	[34] = "npc.inigo.hint_34",
+	[35] = "npc.inigo.hint_35",
 }
 npcConfig.voices = {
 	interval = 15000,
@@ -264,21 +233,12 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "bless") then
 		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_89", "npc.inigo.say_90", "npc.inigo.say_91", "npc.inigo.say_92"}, 10)
 	elseif MsgContains(message, "hints") then
-		for i = 0, 35, 1 do
-			if i <= 35 then
-				npcHandler:say({ hints[i] })
-			elseif i == 35 then
-				i = 0
-			end
+		for i = 1, #hintKeys do
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, hintKeys[i])
 		end
 	elseif MsgContains(message, "rookgaard") and player:getLevel() <= 9 then
 		if Player.getAccountStorage(player, Storage.Dawnport.Mainland, true) == 1 then
-			npcHandler:say(
-				"Hmmm. Long time I visited that isle. Not very exciting place. \z
-			Why do you ask? Do you wish to go there?",
-				npc,
-				creature
-			)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.inigo.say_95")
 			npcHandler:setTopic(playerId, 1)
 		else
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.inigo.say_1")
@@ -350,12 +310,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		player:addItem(2920, 1)
 		player:addItem(3585, 1)
 		player:addItem(3561, 1)
-		npcHandler:say(
-			"Then so be it. I'm sorry to see you go, but if this is what you want, step this way... right. \z
-		Now, cover your eyes... GO!",
-			npc,
-			creature
-		)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.inigo.say_96")
 		npcHandler:setTopic(playerId, 0)
 	end
 	return true

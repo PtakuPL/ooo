@@ -57,9 +57,9 @@ local weapon = {}
 local weapon_sub = {}
 
 -- Messages
-local newAddon = "Here you are, enjoy your brand new addon!"
-local noItems = "You do not have all the required items."
-local alreadyHaveAddon = "It seems you already have this addon, don't you try to mock me son!"
+local newAddon = "npc.eruaran.new_addon"
+local noItems = "npc.eruaran.no_items"
+local alreadyHaveAddon = "npc.eruaran.already_have_addon"
 
 local Config = {
 	Create = {
@@ -159,17 +159,17 @@ local function dreamFirst(npc, creature, message, keywords, parameters, node)
 		if player:getStorageValue(storage + 1) < 1 then
 			if player:getItemCount(20276) > 0 then
 				if player:removeItem(20276, 1) then
-					npcHandler:say(newAddon, npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, newAddon)
 					player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
 					player:addOutfitAddon(577, 1)
 					player:addOutfitAddon(577, 1)
 					player:setStorageValue(storage + 1, 1)
 				end
 			else
-				npcHandler:say(noItems, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, noItems)
 			end
 		else
-			npcHandler:say(alreadyHaveAddon, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, alreadyHaveAddon)
 		end
 	end
 end
@@ -184,17 +184,17 @@ local function dreamSecond(npc, creature, message, keywords, parameters, node)
 		if player:getStorageValue(storage) < 1 then
 			if player:getItemCount(20275) > 0 then
 				if player:removeItem(20275, 1) then
-					npcHandler:say(newAddon, npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, newAddon)
 					player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
 					player:addOutfitAddon(577, 2)
 					player:addOutfitAddon(577, 2)
 					player:setStorageValue(storage, 1)
 				end
 			else
-				npcHandler:say(noItems, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, noItems)
 			end
 		else
-			npcHandler:say(alreadyHaveAddon, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, alreadyHaveAddon)
 		end
 	end
 end

@@ -57,17 +57,17 @@ function WayfarerFirst(npc, creature, message, keywords, parameters, node)
 		if player:getStorageValue(Storage.WayfarerOutfit) < 1 then
 			if player:getItemCount(11701) > 0 then
 				if player:removeItem(11701, 1) then
-					npcHandler:say(newaddon, npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, newaddon)
 					player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
 					player:addOutfitAddon(366, 1)
 					player:addOutfitAddon(367, 1)
 					player:setStorageValue(Storage.WayfarerOutfit, 1)
 				end
 			else
-				npcHandler:say(noItems, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, noItems)
 			end
 		else
-			npcHandler:say(already, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, already)
 		end
 	end
 end
@@ -82,17 +82,17 @@ function WayfarerSecond(npc, creature, message, keywords, parameters, node)
 		if player:getStorageValue(Storage.WayfarerOutfit + 1) < 1 then
 			if player:getItemCount(11700) > 0 then
 				if player:removeItem(11700, 1) then
-					npcHandler:say(newaddon, npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, newaddon)
 					player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
 					player:addOutfitAddon(366, 2)
 					player:addOutfitAddon(367, 2)
 					player:setStorageValue(Storage.WayfarerOutfit + 1, 1)
 				end
 			else
-				npcHandler:say(noItems, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, noItems)
 			end
 		else
-			npcHandler:say(already, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, already)
 		end
 	end
 end

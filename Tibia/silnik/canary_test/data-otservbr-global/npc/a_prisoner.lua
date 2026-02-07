@@ -61,12 +61,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	-- Mad mage room quest
 	if MsgContains(message, "riddle") then
 		if player:getStorageValue(Storage.Quest.U7_24.MadMageRoom.APrisoner) ~= 1 then
-			npcHandler:say(
-				"Great riddle, isn't it? If you can tell me the correct answer, \z
-				I will give you something. Hehehe!",
-				npc,
-				creature
-			)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_prisoner.say_10")
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "PD-D-KS-P-PD") then
@@ -104,12 +99,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	-- The paradox tower quest
 	if MsgContains(message, "math") then
 		if player:getStorageValue(Storage.Quest.U7_24.TheParadoxTower.Mathemagics) < 1 then
-			npcHandler:say(
-				"My surreal numbers are based on astonishing facts. \z
-				Are you interested in learning the secret of mathemagics?",
-				npc,
-				creature
-			)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_prisoner.say_11")
 			npcHandler:setTopic(playerId, 6)
 		else
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_prisoner.say_8")

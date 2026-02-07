@@ -70,7 +70,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U7_24.ThePostmanMissions.Mission07, player:getStorageValue(Storage.Quest.U7_24.ThePostmanMissions.Mission07) + 1)
 			player:setStorageValue(Storage.Quest.U7_24.ThePostmanMissions.MeasurementsKroox, 1)
 		else
-			npcHandler:say("...", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.common.ellipsis")
 			npcHandler:setTopic(playerId, 0)
 		end
 	end

@@ -50,11 +50,11 @@ if not DELIVERED_PARCELS then
 	DELIVERED_PARCELS = {}
 end
 
-local response = {
-	[0] = "It's a pipe! What can be more relaxing for a gnome than to smoke his pipe after a day of duty at the front. At least it's a chance to do something really dangerous after all!",
-	[1] = "Ah, a letter from home! Oh - I had no idea she felt that way! This is most interesting!",
-	[2] = "It's a model of the gnomebase Alpha! For self-assembly! With toothpicks...! Yeeaah...! I guess.",
-	[3] = "A medal of honour! At last they saw my true worth!",
+local responseKeys = {
+	[0] = "npc.gnome_trooper.response_1",
+	[1] = "npc.gnome_trooper.response_2",
+	[2] = "npc.gnome_trooper.response_3",
+	[3] = "npc.gnome_trooper.response_4",
 }
 
 local function initializeParcelDelivery(player)
@@ -96,7 +96,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			return npcHandler:removeInteraction(npc, creature)
 		end
 
-		npcHandler:say(response[parcelStatus], npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, responseKeys[parcelStatus])
 		player:setStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Lower_Parcel_Main, parcelStatus + 1)
 		table.insert(deliveredParcels, npc:getId())
 		npcHandler:removeInteraction(npc, creature)

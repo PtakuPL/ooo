@@ -18,6 +18,7 @@
 #include "lua/callbacks/event_callback.hpp"
 #include "lua/callbacks/events_callbacks.hpp"
 #include "lua/creature/events.hpp"
+#include "utils/i18n/translator.hpp"
 
 std::shared_ptr<Party> Party::create(const std::shared_ptr<Player> &leader) {
 	auto party = std::make_shared<Party>();
@@ -308,10 +309,11 @@ bool Party::joinParty(const std::shared_ptr<Player> &player) {
 	player->removePartyInvitation(getParty());
 	updateSharedExperience();
 
+	auto &tr = i18n::g_translator();
+	const std::string loc(player->getLocale().empty() ? "en" : std::string(player->getLocale()));
 	const std::string &leaderName = leader->getName();
-	ss.str(std::string());
-	ss << "You have joined " << leaderName << "'" << (leaderName.back() == 's' ? "" : "s") << " party. Open the party channel to communicate with your companions.";
-	player->sendTextMessage(MESSAGE_PARTY_MANAGEMENT, ss.str());
+	const std::string leaderPossessive = leaderName + "'" + (leaderName.back() == 's' ? "" : "s");
+	player->sendTextMessage(MESSAGE_PARTY_MANAGEMENT, tr.format("cpp.party.joined", loc, {leaderPossessive}));
 	updateTrackerAnalyzer();
 	return true;
 }

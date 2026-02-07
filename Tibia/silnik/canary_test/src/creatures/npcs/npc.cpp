@@ -19,6 +19,7 @@
 #include "lua/callbacks/creaturecallback.hpp"
 #include "lua/global/shared_object.hpp"
 #include "map/spectators.hpp"
+#include "utils/i18n/translator.hpp"
 
 int32_t Npc::despawnRange;
 int32_t Npc::despawnRadius;
@@ -466,10 +467,10 @@ void Npc::onPlayerSellAllLoot(uint32_t playerId, uint16_t itemId, bool ignore, u
 		for (const auto &[m_itemId, amount] : toSell) {
 			onPlayerSellItem(player, m_itemId, 0, amount, ignore, totalPrice, container);
 		}
-		auto ss = std::stringstream();
+		auto &tr = i18n::g_translator();
+		const std::string loc(player->getLocale().empty() ? "en" : std::string(player->getLocale()));
 		if (totalPrice == 0) {
-			ss << "You have no items in your loot pouch.";
-			player->sendTextMessage(MESSAGE_TRANSACTION, ss.str());
+			player->sendTextMessage(MESSAGE_TRANSACTION, tr.get("cpp.npc.loot_pouch_empty", loc));
 			return;
 		}
 		if (hasMore) {
@@ -478,9 +479,7 @@ void Npc::onPlayerSellAllLoot(uint32_t playerId, uint16_t itemId, bool ignore, u
 			);
 			return;
 		}
-		ss << "You sold all of the items from your loot pouch for ";
-		ss << totalPrice << " gold.";
-		player->sendTextMessage(MESSAGE_TRANSACTION, ss.str());
+		player->sendTextMessage(MESSAGE_TRANSACTION, tr.format("cpp.npc.loot_pouch_sold", loc, {std::to_string(totalPrice)}));
 		player->openPlayerContainers();
 	}
 }

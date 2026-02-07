@@ -254,85 +254,85 @@ keywordHandler:addKeyword({ "ties" }, StdModule.say, {
 local config = {
 	missions = {
 		["minotaurs"] = {
-			text = {
-				"This is an animal-like cult. Only minotaurs can be found there, but no idea what there are expecting and what they are worshipping. ...",
-				"Maybe they are a bit different to the creatures you already know. Would you like to dinf out more for me?",
+			textKey = {
+				"npc.gerimor.minotaurs_text_1",
+				"npc.gerimor.minotaurs_text_2",
 			},
-			completeText = {
-				"You have found the source of power which strengthened the minotaurs. Thanks a lot! Here your reward.",
+			completeTextKey = {
+				"npc.gerimor.minotaurs_complete_1",
 			},
 			storage = Storage.Quest.U11_40.CultsOfTibia.Minotaurs.Mission,
 			value = 5,
 			rewardExp = 25000,
 		},
 		["prosperity"] = {
-			text = {
-				"The alleged incentive to follow this cult is infinite prosperity. Therefore most of the worshippers are already very rich citizens of Tibia. ...",
-				"This cult is abandoned in the recently opened new museum in Thais. This can be entered in the Thais exhibition. Would you like to have a look at this cult?",
+			textKey = {
+				"npc.gerimor.prosperity_text_1",
+				"npc.gerimor.prosperity_text_2",
 			},
-			completeText = {
-				"Thanks a lot. As I already supposed the museum is just a disguise. ...",
-				'You found out the true meaning. As you have described their cult object the AM on the floor might stand for "Aurea Manus". Here is your reward for your effort.',
+			completeTextKey = {
+				"npc.gerimor.prosperity_complete_1",
+				"npc.gerimor.prosperity_complete_2",
 			},
 			storage = Storage.Quest.U11_40.CultsOfTibia.MotA.Mission,
 			value = 14,
 			rewardExp = 50000,
 		},
 		["barkless"] = {
-			text = {
-				"However, recently they became more prominent as their leader seems to hava taken a turn for the worse. Rumors of violent acts and disappearing people are linked to this cult. ...",
-				"Someone... Should look into that, don't you think?",
+			textKey = {
+				"npc.gerimor.barkless_text_1",
+				"npc.gerimor.barkless_text_2",
 			},
-			completeText = {
-				"The Penitent, thats what they called him? If their spiritual leader and creator of this following changed so radically...",
-				"Something far more dangerous must have stood behind this.",
+			completeTextKey = {
+				"npc.gerimor.barkless_complete_1",
+				"npc.gerimor.barkless_complete_2",
 			},
 			storage = Storage.Quest.U11_40.CultsOfTibia.Barkless.Mission,
 			value = 6,
 			rewardExp = 50000,
 		},
 		["orcs"] = {
-			text = {
-				"Several Edron orcs have taken to a dangerous idol it seems. It may not be too late to stop them if you act quickly. A powerful cult of orcs with a broad following could prove unsurmountable in the end. ...",
+			textKey = {
+				"npc.gerimor.orcs_text_1",
 			},
-			completeText = {
-				"That was no god - yet you rid the world of a being which, without the help of one, would not even have been here in the first place. Nicely done.",
+			completeTextKey = {
+				"npc.gerimor.orcs_complete_1",
 			},
 			storage = Storage.Quest.U11_40.CultsOfTibia.Orcs.Mission,
 			value = 2,
 			rewardExp = 25000,
 		},
 		["life"] = {
-			text = {
-				"Its worshippers wish for eternal, life free of pain and sorrow. The entrance to this cult can be found in the dark pyramid. Would you life to investigate it for me?",
+			textKey = {
+				"npc.gerimor.life_text_1",
 			},
-			completeText = {
-				"Thanks a lot. You have revealed the mystery of this cult and killed the sandking. ...",
-				"The signature AM you have seen, could stand for 'Aeterna Exsistentia' regarding the eternal life. As a reward I give this to you.",
+			completeTextKey = {
+				"npc.gerimor.life_complete_1",
+				"npc.gerimor.life_complete_2",
 			},
 			storage = Storage.Quest.U11_40.CultsOfTibia.Life.Mission,
 			value = 9,
 			rewardExp = 50000,
 		},
 		["misguided"] = {
-			text = {
-				"There's a camp of outlaws to the east of Thais. Rumour has it that people are going missing but it's not linked to the bandits. ...",
-				"Lights have been seen at night in the abandoned ruin in the vicinity of the camp, somewhere to the south-west. Brave enough to check it out?",
+			textKey = {
+				"npc.gerimor.misguided_text_1",
+				"npc.gerimor.misguided_text_2",
 			},
-			completeText = {
-				"So the leader of these... Misguided was actually controlled and not the other way round? Whatever is behind all this, that's some first-rate irony right there.",
+			completeTextKey = {
+				"npc.gerimor.misguided_complete_1",
 			},
 			storage = Storage.Quest.U11_40.CultsOfTibia.Misguided.Mission,
 			value = 4,
 			rewardExp = 50000,
 		},
 		["humans"] = {
-			text = {
-				"It's a forbidden and abandoned place but... There is an ancient temple of Zathroth beneath Carlin. Some say it's not that abandoned anymore. ...",
-				"Voices, flickering lights in the dead of night, and even a strange gate like sphere wich leads to who knows where. I can't really request this from you but... Someone should take a look, or not?",
+			textKey = {
+				"npc.gerimor.humans_text_1",
+				"npc.gerimor.humans_text_2",
 			},
-			completeText = {
-				"Zathroth wasn't behind this after all. That's good... what's not good is that we have to deal with an unknown power now, let's hope for the best.",
+			completeTextKey = {
+				"npc.gerimor.humans_complete_1",
 			},
 			storage = Storage.Quest.U11_40.CultsOfTibia.Humans.Mission,
 			value = 2,
@@ -388,7 +388,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			value[playerId] = missionsTable.value
 			rewardExperience[playerId] = missionsTable.rewardExp
 			if player:getStorageValue(storage[playerId]) > 0 and player:getStorageValue(storage[playerId]) == value[playerId] then
-				npcHandler:say(missionsTable.completeText, npc, creature)
+				NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, missionsTable.completeTextKey, 4000)
 				player:setStorageValue(storage[playerId], player:getStorageValue(storage[playerId]) + 1)
 				player:addExperience(rewardExperience[playerId])
 				player:sendLocalizedTextMessage(MESSAGE_EXPERIENCE, "npc.gerimor.gained_experience", {rewardExperience[playerId]})
@@ -397,7 +397,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gerimor.say_2")
 				npcHandler:setTopic(playerId, 2)
 			else
-				npcHandler:say(missionsTable.text, npc, creature)
+				NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, missionsTable.textKey, 4000)
 				npcHandler:setTopic(playerId, 3)
 			end
 		end

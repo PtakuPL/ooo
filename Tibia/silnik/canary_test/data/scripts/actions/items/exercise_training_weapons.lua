@@ -186,7 +186,7 @@ function exerciseTraining.onUse(player, item, fromPosition, target, toPosition, 
 		end
 
 		if player:hasExhaustion("training-exhaustion") then
-			player:sendLocalizedTextMessage(MESSAGE_FAILURE, "scripts.exercise_training_weapons.msg_13" .. exhaustionTime .. " seconds cooldown.")
+			player:sendLocalizedTextMessage(MESSAGE_FAILURE, "scripts.exercise_training_weapons.msg_13", { exhaustionTime })
 			return true
 		end
 

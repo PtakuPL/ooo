@@ -21,7 +21,10 @@
 #include "creatures/creature.hpp"
 #include "creatures/players/player.hpp"
 #include "server/network/protocol/protocolgame.hpp"
+#include "utils/i18n/translator.hpp"
 #include "utils/object_pool.hpp"
+
+#include <unordered_map>
 
 /**
  *  Condition
@@ -1318,9 +1321,11 @@ bool ConditionRegeneration::executeCondition(const std::shared_ptr<Creature> &cr
 
 			if (isBuff && realHealthGain > 0) {
 				if (player) {
-					std::string healString = fmt::format("{} hitpoint{}.", realHealthGain, (realHealthGain != 1 ? "s" : ""));
+					auto &tr = i18n::g_translator();
+					const std::string playerLoc(player->getLocale().empty() ? "en" : std::string(player->getLocale()));
+					const std::string hpAmount = std::to_string(realHealthGain);
 
-					TextMessage message(MESSAGE_HEALED, "You were healed for " + healString);
+					TextMessage message(MESSAGE_HEALED, tr.plural("cpp.combat.condition_healed", playerLoc, realHealthGain, {hpAmount}));
 					message.position = player->getPosition();
 					message.primary.value = realHealthGain;
 					message.primary.color = TEXTCOLOR_PASTELRED;
@@ -1330,9 +1335,22 @@ bool ConditionRegeneration::executeCondition(const std::shared_ptr<Creature> &cr
 					spectators.erase(player);
 					if (!spectators.empty()) {
 						message.type = MESSAGE_HEALED_OTHERS;
-						message.text = player->getName() + " was healed for " + healString;
+						std::unordered_map<std::string, std::string> spectatorHealCache;
 						for (const auto &spectator : spectators) {
-							spectator->getPlayer()->sendTextMessage(message);
+							const auto &spectatorPlayer = spectator->getPlayer();
+							if (!spectatorPlayer) {
+								continue;
+							}
+
+							const std::string spectatorLoc(spectatorPlayer->getLocale().empty() ? "en" : std::string(spectatorPlayer->getLocale()));
+							auto it = spectatorHealCache.find(spectatorLoc);
+							if (it != spectatorHealCache.end()) {
+								message.text = it->second;
+							} else {
+								message.text = tr.plural("cpp.combat.condition_healed_spectator", spectatorLoc, realHealthGain, {player->getName(), hpAmount});
+								spectatorHealCache[spectatorLoc] = message.text;
+							}
+							spectatorPlayer->sendTextMessage(message);
 						}
 					}
 				}

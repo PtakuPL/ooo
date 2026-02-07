@@ -194,7 +194,7 @@ local function creatureSayCallback(npc, creature, type, message)
 						NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomerik.say_20")
 						npcHandler:setTopic(playerId, npcHandler:getTopic(playerId) + 1)
 						if npcHandler:getTopic(playerId) >= 33 then
-							npcHandler:say("Stop it! The test is over, you can ask me for your {results}.")
+							NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomerik.say_stop")
 						end
 					end
 				end

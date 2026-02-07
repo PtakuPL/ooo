@@ -28,13 +28,13 @@ local npcHandler = NpcHandler:new(keywordHandler)
 
 local talkState = {}
 local speech = {
-	"I'm the operating commander of the Spike, the latest great accomplishment of the gnomish race.",
-	"The Spike is a crystal structure, created by our greatest crystal experts. It has grown from a crystal the size of my fist to the structure you see here and now.",
-	"Of course this did not happen from one day to the other. It's the fruit of the work of several gnomish generations. Its purpose has changed in the course of time.",
-	"At first it was conceived as a fast growing resource node. Then it was planned to become the prototype of a new type of high security base.",
-	"Now it has become a military base and a weapon. With our foes occupied elsewhere, we can prepare our strike into the depths of the earth.",
-	"This crystal can withstand extreme pressure and temperature, and it's growing deeper and deeper even as we speak.",
-	"The times of the fastest growth have come to an end, however, and we have to slow down in order not to risk the structural integrity of the Spike. But we are on our way and have to do everything possible to defend the Spike.",
+	"npc.gnommander.speech_1",
+	"npc.gnommander.speech_2",
+	"npc.gnommander.speech_3",
+	"npc.gnommander.speech_4",
+	"npc.gnommander.speech_5",
+	"npc.gnommander.speech_6",
+	"npc.gnommander.speech_7",
 }
 npcType.onAppear = function(npc, creature)
 	npcHandler:onAppear(npc, creature)
@@ -69,7 +69,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "spike") then
-		return npcHandler:say(speech, npc, creature)
+		return NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, speech, 4000)
 	end
 
 	if MsgContains(message, "worthy") then

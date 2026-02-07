@@ -16,6 +16,7 @@
 #include "creatures/players/player.hpp"
 #include "game/game.hpp"
 #include "lib/metrics/metrics.hpp"
+#include "utils/i18n/translator.hpp"
 
 SoftSingleton IOBestiary::instanceTracker("IOBestiary");
 
@@ -385,7 +386,6 @@ void IOBestiary::addBestiaryKill(const std::shared_ptr<Player> &player, const st
 		return;
 	}
 	uint32_t curCount = player->getBestiaryKillCount(raceid);
-	std::ostringstream ss;
 
 	player->addBestiaryKillCount(raceid, amount);
 
@@ -393,8 +393,9 @@ void IOBestiary::addBestiaryKill(const std::shared_ptr<Player> &player, const st
 	    (curCount < mtype->info.bestiaryFirstUnlock && (curCount + amount) >= mtype->info.bestiaryFirstUnlock) || // First kill stage reached
 	    (curCount < mtype->info.bestiarySecondUnlock && (curCount + amount) >= mtype->info.bestiarySecondUnlock) || // Second kill stage reached
 	    (curCount < mtype->info.bestiaryToUnlock && (curCount + amount) >= mtype->info.bestiaryToUnlock)) { // Final kill stage reached
-		ss << "You unlocked details for the creature '" << mtype->name << "'";
-		player->sendTextMessage(MESSAGE_STATUS, ss.str());
+		auto &tr = i18n::g_translator();
+		const std::string loc(player->getLocale().empty() ? "en" : std::string(player->getLocale()));
+		player->sendTextMessage(MESSAGE_STATUS, tr.format("cpp.bestiary.unlocked_details", loc, {mtype->name}));
 		player->sendBestiaryEntryChanged(raceid);
 
 		if ((curCount + amount) >= mtype->info.bestiaryToUnlock) {
@@ -460,17 +461,19 @@ void IOBestiary::sendBuyCharmRune(const std::shared_ptr<Player> &player, uint8_t
 	if (!player || (action != 3 && !charm)) {
 		return;
 	}
+	auto &tr = i18n::g_translator();
+	const std::string loc(player->getLocale().empty() ? "en" : std::string(player->getLocale()));
 
 	if (action == 0) {
 		if (charm->category == CHARM_MAJOR) {
 			auto charmTier = player->getCharmTier(charm->id);
 			if (charmTier > 2) {
-				player->sendFYIBox("Charm at max level.");
+				player->sendFYIBox(tr.get("cpp.bestiary.charm_max_level", loc));
 				return;
 			}
 
 			if (player->getCharmPoints() < charm->points[charmTier]) {
-				player->sendFYIBox("You don't have enough charm points to unlock this rune.");
+				player->sendFYIBox(tr.get("cpp.bestiary.not_enough_charm_points", loc));
 				return;
 			}
 
@@ -480,12 +483,12 @@ void IOBestiary::sendBuyCharmRune(const std::shared_ptr<Player> &player, uint8_t
 		} else if (charm->category == CHARM_MINOR) {
 			auto charmTier = player->getCharmTier(charm->id);
 			if (charmTier > 2) {
-				player->sendFYIBox("Charm at max level.");
+				player->sendFYIBox(tr.get("cpp.bestiary.charm_max_level", loc));
 				return;
 			}
 
 			if (player->getMinorCharmEchoes() < charm->points[charmTier]) {
-				player->sendFYIBox("You don't have enough minor charm echoes to unlock this rune.");
+				player->sendFYIBox(tr.get("cpp.bestiary.not_enough_charm_echoes", loc));
 				return;
 			}
 
@@ -506,7 +509,7 @@ void IOBestiary::sendBuyCharmRune(const std::shared_ptr<Player> &player, uint8_t
 		}
 
 		if (limitRunes <= usedRunes.size()) {
-			player->sendFYIBox("You don't have any charm slots available.");
+			player->sendFYIBox(tr.get("cpp.bestiary.no_charm_slots", loc));
 			return;
 		}
 
@@ -520,15 +523,16 @@ void IOBestiary::sendBuyCharmRune(const std::shared_ptr<Player> &player, uint8_t
 
 		auto [major, minor] = getCharmFromTarget(player, mType);
 		if ((charm->category == CHARM_MAJOR && major != CHARM_NONE) || (charm->category == CHARM_MINOR && minor != CHARM_NONE)) {
-			player->sendFYIBox(fmt::format("You already have this monster set on another {} Charm!", charm->category == CHARM_MAJOR ? "Major" : "Minor"));
+			const std::string categoryName = charm->category == CHARM_MAJOR ? tr.get("cpp.bestiary.charm_category_major", loc) : tr.get("cpp.bestiary.charm_category_minor", loc);
+			player->sendFYIBox(tr.format("cpp.bestiary.already_set_charm", loc, {categoryName}));
 			return;
 		}
 
 		setCharmRuneCreature(player, charm, raceId);
 		if (!player->isPremium()) {
-			player->sendFYIBox("Creature has been set! You are a Free player, so you benefit from up to 2 runes! Premium players benefit from 6 and Charm Expansion allow you to set creatures to all runes at once!.");
+			player->sendFYIBox(tr.get("cpp.bestiary.creature_set_free", loc));
 		} else if (!player->hasCharmExpansion()) {
-			player->sendFYIBox("Creature has been set! You are a Premium player, so you benefit from up to 6 runes! Charm Expansion allow you to set creatures to all runes at once!");
+			player->sendFYIBox(tr.get("cpp.bestiary.creature_set_premium", loc));
 		}
 	} else if (action == 2) {
 		int32_t fee = player->getLevel() * 100;
@@ -537,7 +541,7 @@ void IOBestiary::sendBuyCharmRune(const std::shared_ptr<Player> &player, uint8_t
 		}
 
 		if (!g_game().removeMoney(player, fee, 0, true)) {
-			player->sendFYIBox("You don't have enough gold.");
+			player->sendFYIBox(tr.get("cpp.bestiary.not_enough_gold", loc));
 			return;
 		}
 
@@ -551,7 +555,7 @@ void IOBestiary::sendBuyCharmRune(const std::shared_ptr<Player> &player, uint8_t
 		}
 
 		if (!g_game().removeMoney(player, resetAllCharmsCost, 0, true)) {
-			player->sendFYIBox("You don't have enough gold.");
+			player->sendFYIBox(tr.get("cpp.bestiary.not_enough_gold", loc));
 			return;
 		}
 

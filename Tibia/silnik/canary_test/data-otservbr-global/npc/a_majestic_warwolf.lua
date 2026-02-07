@@ -72,7 +72,11 @@ local function creatureSayCallback(npc, creature, type, message)
 		player:addOutfitAddon(148, 2)
 		player:addOutfitAddon(144, 2)
 		player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
-		npcHandler:say(player:getSex() == PLAYERSEX_FEMALE and "From now on, you shall be known as |PLAYERNAME|, the wolf girl. You shall be fast and smart as Morgrar, the great white wolf. He shall guide your path." or "From now on, you shall be known as |PLAYERNAME|, the bear warrior. You shall be strong and proud as Angros, the great dark bear. He shall guide your path.", npc, creature)
+		if player:getSex() == PLAYERSEX_FEMALE then
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_majestic_warwolf.say_female")
+		else
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_majestic_warwolf.say_male")
+		end
 		npcHandler:setTopic(playerId, 0)
 	end
 	return true

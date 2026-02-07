@@ -133,11 +133,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "join") then
 		if player:getStorageValue(Storage.Quest.U8_1.SecretService.Quest) < 1 then
 			if player:getSex() == PLAYERSEX_FEMALE then
-				npcHandler:say(
-					"The girls brigade is the foremost front on which we fight the numerous enemies of our city ... It's a constant race to stay ahead of our enemies. Absolute loyalty and the willingness to put ones life at stake are attributes that are vital for this brigade ... If you join, you dedicate your service to Carlin alone! Do you truly think that you are girl enough to join the brigade?",
-					npc,
-					creature
-				)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.emma.say_join_female")
 			else
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.emma.say_15")
 			end

@@ -64,11 +64,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			if headItem and headItem.itemid == 3576 and player:getStorageValue(Storage.Quest.U7_24.ThePostmanMissions.Rank) == 5 then
 				player:addItem(7934, 1)
 				player:setStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Mission06, 2)
-				npcHandler:say(
-					"npc.bertram.key_response",
-					npc,
-					creature
-				)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bertram.key_response")
 			end
 		end
 	end

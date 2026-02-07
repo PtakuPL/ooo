@@ -8025,27 +8025,14 @@ bool Game::combatChangeMana(const std::shared_ptr<Creature> &attacker, const std
 		realManaChange = target->getMana() - realManaChange;
 
 		if (realManaChange > 0 && !target->isInGhostMode()) {
-			std::string damageString = fmt::format("{} mana", realManaChange);
-
-			std::string spectatorMessage;
-			if (!attacker) {
-				spectatorMessage += ucfirst(target->getNameDescription());
-				spectatorMessage += " was restored for " + damageString;
-			} else {
-				spectatorMessage += ucfirst(attacker->getNameDescription());
-				spectatorMessage += " restored ";
-				if (attacker == target) {
-					spectatorMessage += (targetPlayer ? targetPlayer->getReflexivePronoun() : "itself");
-				} else {
-					spectatorMessage += target->getNameDescription();
-				}
-				spectatorMessage += " for " + damageString;
-			}
-
 			TextMessage message;
 			message.position = targetPos;
 			message.primary.value = realManaChange;
 			message.primary.color = TEXTCOLOR_MAYABLUE;
+
+			std::unordered_map<std::string, std::string> spectatorRestoreCache;
+			auto &mtr = i18n::g_translator();
+			const std::string manaAmount = std::to_string(realManaChange);
 
 			for (const auto &spectator : spectators) {
 				const auto &tmpPlayer = spectator->getPlayer();
@@ -8053,21 +8040,36 @@ bool Game::combatChangeMana(const std::shared_ptr<Creature> &attacker, const std
 					continue;
 				}
 
+				const std::string loc(tmpPlayer->getLocale().empty() ? "en" : std::string(tmpPlayer->getLocale()));
+
 				if (tmpPlayer == attackerPlayer && attackerPlayer != targetPlayer) {
 					message.type = MESSAGE_HEALED;
-					message.text = "You restored " + target->getNameDescription() + " for " + damageString;
+					message.text = mtr.format("cpp.combat.restore_attacker", loc, {target->getNameDescription(), manaAmount});
 				} else if (tmpPlayer == targetPlayer) {
 					message.type = MESSAGE_HEALED;
 					if (!attacker) {
-						message.text = "You were restored for " + damageString;
+						message.text = mtr.format("cpp.combat.restore_target_none", loc, {manaAmount});
 					} else if (targetPlayer == attackerPlayer) {
-						message.text = "You restore yourself for " + damageString;
+						message.text = mtr.format("cpp.combat.restore_target_self", loc, {manaAmount});
 					} else {
-						message.text = "You were restored by " + attacker->getNameDescription() + " for " + damageString;
+						message.text = mtr.format("cpp.combat.restore_target_by", loc, {attacker->getNameDescription(), manaAmount});
 					}
 				} else {
 					message.type = MESSAGE_HEALED_OTHERS;
-					message.text = spectatorMessage;
+					auto it = spectatorRestoreCache.find(loc);
+					if (it != spectatorRestoreCache.end()) {
+						message.text = it->second;
+					} else {
+						if (!attacker && target) {
+							message.text = mtr.format("cpp.combat.restore_spectator_none", loc, {ucfirst(target->getNameDescription()), manaAmount});
+						} else if (attacker == target) {
+							std::string reflexive = targetPlayer ? targetPlayer->getReflexivePronoun() : "itself";
+							message.text = mtr.format("cpp.combat.restore_spectator_self", loc, {ucfirst(attacker->getNameDescription()), reflexive, manaAmount});
+						} else if (target) {
+							message.text = mtr.format("cpp.combat.restore_spectator_other", loc, {ucfirst(attacker->getNameDescription()), target->getNameDescription(), manaAmount});
+						}
+						spectatorRestoreCache[loc] = message.text;
+					}
 				}
 				tmpPlayer->sendTextMessage(message);
 			}

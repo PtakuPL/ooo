@@ -145,7 +145,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:removeInteraction(npc, creature)
 		end
 	elseif MsgContains(message, "no") and npcHandler:getTopic(playerId) == 8 then
-		npcHandler:say("ok.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.albinius.say_ok")
 		npcHandler:removeInteraction(npc, creature)
 	end
 

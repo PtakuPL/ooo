@@ -529,7 +529,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			-- Spectral Dress
 			-- Spectral Stone
 		elseif npcHandler:getTopic(playerId) == 32 then
-			npcHandler:say("Good, just take this spectral essence and use it on the strange carving in this building as well as on the corresponding tile in our base at Northport ...", "As soon as you have charged the portal tiles that way, report about the spectral portals.", npc, creature)
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {\"npc.angus.say_spectral_1\", \"npc.angus.say_spectral_2\"}, 4000)
 			npcHandler:setTopic(playerId, 0)
 			player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheSpectralStone, 53)
 			player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.SpectralStoneDoor, 1)

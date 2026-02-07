@@ -175,7 +175,7 @@ function treasureChest.onUse(player, item, frompos, itemEx, topos)
 			for i = #reward.itemIds, 1, -1 do
 				container:addItem(reward.itemIds[i], 1)
 			end
-			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission12_into_fortress.msg_1" .. container:getArticle() .. " " .. container:getName() .. ".")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission12_into_fortress.msg_1", { container:getArticle(), container:getName() })
 			player:setStorageValue(Storage.Quest.U9_1.TheRookieGuard.AcademyChest, 1)
 			player:setStorageValue(Storage.Quest.U9_1.TheRookieGuard.AcademyChestTimer, os.time() + 24 * 60 * 60)
 			player:addItemEx(container, true, CONST_SLOT_WHEREEVER)
@@ -681,9 +681,9 @@ function bossChests.onUse(player, item, frompos, itemEx, topos)
 		if not hasUsedChest then
 			local reward = Game.createItem(chest.item.id, chest.item.amount)
 			if reward:getCount() == 1 then
-				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission12_into_fortress.msg_16" .. reward:getArticle() .. " " .. reward:getName() .. ".")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission12_into_fortress.msg_16", { reward:getArticle(), reward:getName() })
 			elseif reward:getCount() > 1 then
-				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission12_into_fortress.msg_17" .. reward:getCount() .. " " .. reward:getPluralName() .. ".")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission12_into_fortress.msg_17", { reward:getCount(), reward:getPluralName() })
 			end
 			player:setStorageValue(Storage.Quest.U9_1.TheRookieGuard.KraknaknorkChests, chestsState + chest.id)
 			player:addItemEx(reward, true, CONST_SLOT_WHEREEVER)
@@ -773,9 +773,9 @@ function orcFortressChests.onUse(player, item, frompos, itemEx, topos)
 	if not hasOpenedChest then
 		local reward = Game.createItem(chest.item.id, chest.item.amount)
 		if reward:getCount() == 1 then
-			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission12_into_fortress.msg_19" .. reward:getArticle() .. " " .. reward:getName() .. ".")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission12_into_fortress.msg_19", { reward:getArticle(), reward:getName() })
 		elseif reward:getCount() > 1 then
-			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission12_into_fortress.msg_20" .. reward:getCount() .. " " .. reward:getPluralName() .. ".")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission12_into_fortress.msg_20", { reward:getCount(), reward:getPluralName() })
 		end
 		player:setStorageValue(Storage.Quest.U9_1.TheRookieGuard.OrcFortressChests, chestsState + chest.id)
 		player:addItemEx(reward, true, CONST_SLOT_WHEREEVER)

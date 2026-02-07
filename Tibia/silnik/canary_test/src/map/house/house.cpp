@@ -19,6 +19,7 @@
 #include "lib/metrics/metrics.hpp"
 #include "utils/pugicast.hpp"
 #include "creatures/players/player.hpp"
+#include "utils/i18n/translator.hpp"
 
 House::House(uint32_t houseId) :
 	id(houseId) { }
@@ -555,15 +556,17 @@ void HouseTransferItem::onTradeEvent(TradeEvents_t event, const std::shared_ptr<
 	if (event == ON_TRADE_TRANSFER) {
 		if (house) {
 			auto isTransferOnRestart = g_configManager().getBoolean(TOGGLE_HOUSE_TRANSFER_ON_SERVER_RESTART);
-			auto ownershipTransferMessage = " The ownership will be transferred upon server restart.";
-			const auto boughtMessage = fmt::format("You have successfully bought the house.{}", isTransferOnRestart ? ownershipTransferMessage : "");
-			const auto soldMessage = fmt::format("You have successfully sold your house.{}", isTransferOnRestart ? ownershipTransferMessage : "");
-
-			owner->sendTextMessage(MESSAGE_EVENT_ADVANCE, boughtMessage);
+			auto &tr = i18n::g_translator();
+			auto makeTransferMessage = [&](const std::shared_ptr<Player> &targetPlayer, const std::string &messageKey) {
+				const std::string loc(targetPlayer->getLocale().empty() ? "en" : std::string(targetPlayer->getLocale()));
+				const std::string transferSuffix = isTransferOnRestart ? tr.get("cpp.house.ownership_transfer_on_restart", loc) : "";
+				return tr.format(messageKey, loc, {transferSuffix});
+			};
+			owner->sendTextMessage(MESSAGE_EVENT_ADVANCE, makeTransferMessage(owner, "cpp.house.bought_success"));
 
 			const auto oldOwner = g_game().getPlayerByGUID(house->getOwner());
 			if (oldOwner) {
-				oldOwner->sendTextMessage(MESSAGE_EVENT_ADVANCE, soldMessage);
+				oldOwner->sendTextMessage(MESSAGE_EVENT_ADVANCE, makeTransferMessage(oldOwner, "cpp.house.sold_success"));
 			}
 			house->executeTransfer(static_self_cast<HouseTransferItem>(), owner);
 		}

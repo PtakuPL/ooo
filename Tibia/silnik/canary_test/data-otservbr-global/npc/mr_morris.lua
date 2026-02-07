@@ -86,21 +86,10 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "log book") then
 		if player:getStorageValue(Storage.Quest.U10_55.Dawnport.TornLogBook) < 1 then
-			npcHandler:say(
-				"The first log book from the first foray group has been stolen by trolls. \z
-				One wonders what for, as they can hardly read! Anyway, we need it back. \z
-				Would you go looking for it?",
-				npc,
-				creature
-			)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mr_morris.say_11")
 			npcHandler:setTopic(playerId, 2)
 		elseif player:getStorageValue(Storage.Quest.U10_55.Dawnport.TornLogBook) == 1 and player:getStorageValue(Storage.Quest.U10_55.Dawnport.TheStolenLogBook) == 1 and player:getItemCount(21378) == 1 then
-			npcHandler:say(
-				"Ah, yes, that's it! Torn and gnawed, but, ah well, the information is still retrievable. \z
-				Thank you. Here's your reward.",
-				npc,
-				creature
-			)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mr_morris.say_12")
 			player:removeItem(21378, 1)
 			player:addItem(3031, 50)
 			player:setStorageValue(Storage.Quest.U10_55.Dawnport.TheStolenLogBook, 2)
@@ -108,33 +97,17 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "herbs") then
 		if player:getStorageValue(Storage.Quest.U10_55.Dawnport.TheRareHerb) < 1 then
-			npcHandler:say(
-				"Some of those salamanders have crawled into Oressa's herb garden and munched all her Dawnfire herbs. \z
-				Would you get some fresh herbs?",
-				npc,
-				creature
-			)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mr_morris.say_13")
 			npcHandler:setTopic(playerId, 3)
 		elseif player:getStorageValue(Storage.Quest.U10_55.Dawnport.TheRareHerb) == 2 then
-			npcHandler:say(
-				"Ah, wonderful. Freshly cut and full of potent... whatever it is it does. \z
-				Thanks. Here's your reward.",
-				npc,
-				creature
-			)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mr_morris.say_14")
 			player:addItem(3031, 50)
 			player:setStorageValue(Storage.Quest.U10_55.Dawnport.TheRareHerb, 3)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "key") then
 		if player:getStorageValue(Storage.Quest.U10_55.Dawnport.TheDormKey) < 1 then
-			npcHandler:say(
-				"This is an undercover thing - the key to the dormitory has disappeared. \z
-				No one wants to own up who has lost it, at least not to me. Maybe they'll talk to you. \z
-				I'll reward you if you find it. You in?",
-				npc,
-				creature
-			)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mr_morris.say_15")
 			npcHandler:setTopic(playerId, 4)
 		elseif player:getStorageValue(Storage.Quest.U10_55.Dawnport.TheDormKey) == 4 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mr_morris.say_1")
@@ -142,22 +115,11 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say(
-				"Wonderful. I don't believe you will find Dormovo alive, though. \z
-				He would not have stayed abroad that long without refilling his inkpot for his research notes. \z
-				But at least the amulet should be retrieved.",
-				npc,
-				creature
-			)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mr_morris.say_16")
 			player:setStorageValue(Storage.Quest.U10_55.Dawnport.TheLostAmulet, 1)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say(
-				"Good. The logbook or whatever is left of it is very valuable to my research. \z
-				If you return its contents to me, I will reward you accordingly.",
-				npc,
-				creature
-			)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mr_morris.say_17")
 			player:setStorageValue(Storage.Quest.U10_55.Dawnport.TheStolenLogBook, 1)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 3 then
@@ -176,32 +138,17 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U10_55.Dawnport.TheDormKey, 5)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 6 then
-			npcHandler:say(
-				"Good. Killing 20 will teach them a lesson, without provoking desperate retaliation. \z
-				Still, take care!",
-				npc,
-				creature
-			)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mr_morris.say_18")
 			player:setStorageValue(Storage.Quest.U10_55.Dawnport.MorriskTroll, 1)
 			player:setStorageValue(Storage.Quest.U10_55.Dawnport.MorrisTrollCount, 0)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 7 then
-			npcHandler:say(
-				"Good. Killing 20 will teach them a lesson, without provoking desperate retaliation. \z
-				Still, take care!",
-				npc,
-				creature
-			)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mr_morris.say_18")
 			player:setStorageValue(Storage.Quest.U10_55.Dawnport.MorrisGoblin, 1)
 			player:setStorageValue(Storage.Quest.U10_55.Dawnport.MorrisGoblinCount, 0)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 8 then
-			npcHandler:say(
-				"Good. Killing 20 will teach them a lesson, without provoking desperate retaliation. \z
-				Still, take care!",
-				npc,
-				creature
-			)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mr_morris.say_18")
 			player:setStorageValue(Storage.Quest.U10_55.Dawnport.MorrisMinos, 1)
 			player:setStorageValue(Storage.Quest.U10_55.Dawnport.MorrisMinosCount, 0)
 			npcHandler:setTopic(playerId, 0)

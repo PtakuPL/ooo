@@ -154,94 +154,93 @@ end
 local choose = {}
 local cancel = {}
 local KillCounter = Storage.Quest.U8_5.KillingInTheNameOf.MonsterKillCount.KillCount
+
+-- Helper: say an i18n message that can be a single key (string) or multi-part (table of keys)
+local function sayI18nMsg(npcH, npc, creature, msg)
+	if type(msg) == "table" then
+		NPC_LIB.i18n.npcSayMultiple(npcH, npc, creature, msg)
+	else
+		NPC_LIB.i18n.npcSay(npcH, npc, creature, msg)
+	end
+end
+
 local messageYes = {
-	[1] = "Happy hunting, friend! When you have finished hunting, return here.",
-	[2] = "Happy hunting, friend! Come back to me when you are done hunting.",
-	[3] = "Happy hunting, old chap! Come back to me when you are through with your task.",
-	[4] = "Happy hunting, old chap! Come back to me when you are done hunting.",
-	[5] = "Happy hunting, old chap! Speak to me again when you are done hunting.",
-	[6] = "Happy hunting, pal! Speak to me again when you are done hunting.",
-	[7] = "Good show, old chap! Speak to me again when you are done hunting.",
-	[8] = "Good choice! Speak to me again when you are done hunting.",
-	[9] = "Good choice, pal! Speak to me again when you are done hunting.",
-	[10] = "Good choice, old chap! Speak to me again when you are done hunting.",
+	[1] = "npc.grizzly_adams.yes_1",
+	[2] = "npc.grizzly_adams.yes_2",
+	[3] = "npc.grizzly_adams.yes_3",
+	[4] = "npc.grizzly_adams.yes_4",
+	[5] = "npc.grizzly_adams.yes_5",
+	[6] = "npc.grizzly_adams.yes_6",
+	[7] = "npc.grizzly_adams.yes_7",
+	[8] = "npc.grizzly_adams.yes_8",
+	[9] = "npc.grizzly_adams.yes_9",
+	[10] = "npc.grizzly_adams.yes_10",
 }
 local messageTask = {
-	[1] = "Nice work, old chap. If you're up for another hunting mission, just ask me for a {task}.",
-	[2] = "Jolly good job you did there, old chap. If you're up for another hunting mission, just ask me for a {task}.",
-	[3] = "Well done! If you're up for another hunting mission, just ask me for a {task}.",
-	[4] = "That took some time, huh? Good hunting though. If you're up for another hunting mission, just ask me for a {task}.",
+	[1] = "npc.grizzly_adams.task_complete_1",
+	[2] = "npc.grizzly_adams.task_complete_2",
+	[3] = "npc.grizzly_adams.task_complete_3",
+	[4] = "npc.grizzly_adams.task_complete_4",
 }
 local messageBoss = {
-	{
-		"Spiffing work, old chap. Now I have a special task for you. Recently several citizens of Port Hope vanished. It is rumoured that they were killed by a crocodile. The people call it 'Snapper'. Hunt down and kill that evil man-eating beast. ...",
-		"Ask me about new {tasks} if you're up for a further hunting mission. Be aware that you can only have one 'Snapper' task active at the same time!",
-	},
-	"Nicely done! Now I shall assign you a special task. Rumour has it that there is an ancient and evil tarantula who preys on humans. She is called 'Hide'. Track her down and kill her! Good luck, old chap.",
-	{ "Well done, old chap. Now i shall assign you a special task. Rumour has it that there is an old carniphila somewhere in the jungle. Find Deathbine's hideout and kill it! Good luck, old chap ...", "Ask me about new {tasks} if you're up for further hunting mission. Be aware that you can only have one 'Deathbine' task active at the same time!" },
-	"Jolly good job you did there, but now I have a special task for you. The citizens of Svargrond live in fear because of a frightfully bad-tempered mammoth they call 'Blood Tusk'. Go there and put an end to him. Happy hunting!",
-	{ "As I see it, you need more of a challenge! I have heard that there is an ice golem the hunters in Svargrond call 'Shardhead'. It is an extremely dangerous example of its kind! ...", "I believe you are equal to the task, |PLAYERNAME|! If you're up for another hunting mission, just ask me for a {task}. Be aware that you can only have one 'Shardhead' task active at the same time!" },
-	{ "Very good work, old chap. Lucky you are here - I have just been told of a task which is perfect for you. ...", "The Yalaharians are having a spot of bother with a huge mutated rat. They call it 'Esmeralda' and you should find her somewhere in the sewers. Good hunting!" },
-	{
-		"Very good work, old chap. Lucky you are here - I have just been told of a task which is perfect for you. ...",
-		"The people of Ankrahmun are having a spot of bother with a huge ancient scarab. They call it 'Fleshcrawler' and you should find and kill it. Good hunting! ...",
-		"If you're up for another hunting mission, just ask me for a {task}. Be aware that you can only have one 'Fleshcrawler' task active at the same time!",
-	},
-	{ "Very good work, old chap. Have you heard about 'Ribstride'? It must have a hideout. Try to find it and slay the beast. ...", "If you're up for another hunting mission, just ask me for a {task}. Be aware that you can only have one 'Ribstride' task active at the same time!" },
-	{ "Very good work, old chap. Have you heard about 'Bloodweb'? It must have a hideout. Try to find it and slay the beast. ...", "If you're up for another hunting mission, just ask me for a {task}. Be aware that you can only have one 'Bloodweb' task active at the same time!" },
-	{ "Superb work. However, there is something else I want you to do. It is said that there is a quara general named 'Thul' who is responsible for the attacks on Liberty Bay. Find and kill the general and bring peace back to Liberty Bay! ...", "If you're up for another hunting mission, just ask me for a {task}. Be aware that you can only have one 'Thul' task active at the same time!" },
-	"Well THAT was a hunt. Good job. Have you heard about the 'Old Widow'? It must have a hideout. Try to find it and slay the beast. You can ask about new {tasks} by the way. Be aware that you can only have one 'Old Widow' task active at the same time!",
-	{ "What an impressive hunt. Nicely done. By the way there is still something I want you to do for me. 'Hemming' a furious werewolf is up to mischief. Find its hideout and bring it down! ...", "If you're up for another hunting mission, just ask me for a {task}. Be aware that you can only have one 'Hemming' task active at the same time!" },
-	{ "Thumbs up, nice performance. Have you heard about 'Tormentor'? Find it and slay the beast. ...", "If you're up for another hunting mission, just ask me for a {task}. Be aware that you can only have one 'Tormentor' task active at the same time!" },
-	"Well THAT was a hunt. Good job. Have you heard about 'Flameborn'? It must have a hideout. Try to find it and slay the beast. You can ask about new {tasks} by the way. Be aware that you can only have one 'Flameborn' task active at the same time!",
-	{ "What an impressive hunt. Nicely done. Have you heard about 'Fazzrah'? Try to find it and slay the beast. ...", "You can ask about new {tasks} by the way. Be aware that you can only have one 'Fazzrah' task active at the same time!" },
-	{
-		"Nicely done. However, there is something else I want you to do. I have heard that there is a stampor the hunters in the Muggy Plains call 'Tromphonyte'. It is an extremely dangerous example of its kind! ...",
-		"I believe you are equal to the task, |PLAYERNAME|! Find and kill it and bring peace back! ...",
-		"If you're up for another hunting mission, just ask me for a {task}. Be aware that you can only have one 'Tromphonyte' task active at the same time!",
-	},
-	"If you're up for another hunting mission, just ask me for a {task}. Be aware that you can only have one 'Sulphur Scuttler' task active at the same time!",
-	"If you're up for another hunting mission, just ask me for a {task}. Be aware that you can only have one 'Bruise Payne' task active at the same time!",
-	"If you're up for another hunting mission, just ask me for a {task}. Be aware that you can only have one 'Many' task active at the same time!",
-	{ "My - you can be proud of yourself! However, you're not finished yet. There are rumours about a being called 'The Noxious Spawn' which was seen deep down in the ruins of Banuta. Try to find its hideout. ...", "You can ask about new {tasks} bye the way. Be aware that you can only have one 'Noxious Spawn' task active at the same time!" },
-	"If you're up for another hunting mission, just ask me for a {task}. Be aware that you can only have one 'Gorgo' task active at the same time!",
-	{ "Such marvellous hunting skills! Perhaps you can help me with this one. Have you heard about 'Stonecracker'? ...", "It's the oldest and most dangerous of all behemoths and was last seen under the Cyclopolis in Edron. What do you think? Are you hunter enough? I think you are!" },
-	{ "Good job, old chap! Are you up for a challenge? Have you heard of the legendary sea serpent called the 'Leviathan'? It must be somewhere near the spot you found. ...", "This is a true test of your hunting skills - find it and kill it. Good hunting! ...", "You can ask about new {tasks} by the way. Be aware that you can only have one 'Leviathan' task active at the same time!" },
-	{ "Outstanding! You do have impressive hunting skills. Have you already heard about Kerberos the oldest and most dangerous of all hellhounds? He must have a hideout somewhere. Try to find him and slay the beast. ...", "You can ask about new tasks by the way. Be aware that you can only have one Kerberos task active at the same time!" },
-	"If you're up for another hunting mission, just ask me for a {task}. Be aware that you can only have one 'Ethershreck' task active at the same time!",
-	"If you're up for another hunting mission, just ask me for a {task}. Be aware that you can only have one 'Paiz the Pauperizer' task active at the same time!",
-	"If you're up for another hunting mission, just ask me for a {task}. Be aware that you can only have one 'Bretzecutioner' task active at the same time!",
-	"If you're up for another hunting mission, just ask me for a {task}. Be aware that you can only have one 'Zanakeph' task active at the same time!",
+	{ "npc.grizzly_adams.boss_intro_1a", "npc.grizzly_adams.boss_intro_1b" }, -- Snapper
+	"npc.grizzly_adams.boss_intro_2", -- Hide
+	{ "npc.grizzly_adams.boss_intro_3a", "npc.grizzly_adams.boss_intro_3b" }, -- Deathbine
+	"npc.grizzly_adams.boss_intro_4", -- Blood Tusk
+	{ "npc.grizzly_adams.boss_intro_5a", "npc.grizzly_adams.boss_intro_5b" }, -- Shardhead
+	{ "npc.grizzly_adams.boss_intro_6a", "npc.grizzly_adams.boss_intro_6b" }, -- Esmeralda
+	{ "npc.grizzly_adams.boss_intro_7a", "npc.grizzly_adams.boss_intro_7b", "npc.grizzly_adams.boss_intro_7c" }, -- Fleshcrawler
+	{ "npc.grizzly_adams.boss_intro_8a", "npc.grizzly_adams.boss_intro_8b" }, -- Ribstride
+	{ "npc.grizzly_adams.boss_intro_9a", "npc.grizzly_adams.boss_intro_9b" }, -- Bloodweb
+	{ "npc.grizzly_adams.boss_intro_10a", "npc.grizzly_adams.boss_intro_10b" }, -- Thul
+	"npc.grizzly_adams.boss_intro_11", -- Old Widow
+	{ "npc.grizzly_adams.boss_intro_12a", "npc.grizzly_adams.boss_intro_12b" }, -- Hemming
+	{ "npc.grizzly_adams.boss_intro_13a", "npc.grizzly_adams.boss_intro_13b" }, -- Tormentor
+	"npc.grizzly_adams.boss_intro_14", -- Flameborn
+	{ "npc.grizzly_adams.boss_intro_15a", "npc.grizzly_adams.boss_intro_15b" }, -- Fazzrah
+	{ "npc.grizzly_adams.boss_intro_16a", "npc.grizzly_adams.boss_intro_16b", "npc.grizzly_adams.boss_intro_16c" }, -- Tromphonyte
+	"npc.grizzly_adams.boss_intro_17", -- Sulphur Scuttler
+	"npc.grizzly_adams.boss_intro_18", -- Bruise Payne
+	"npc.grizzly_adams.boss_intro_19", -- Many
+	{ "npc.grizzly_adams.boss_intro_20a", "npc.grizzly_adams.boss_intro_20b" }, -- Noxious Spawn
+	"npc.grizzly_adams.boss_intro_21", -- Gorgo
+	{ "npc.grizzly_adams.boss_intro_22a", "npc.grizzly_adams.boss_intro_22b" }, -- Stonecracker
+	{ "npc.grizzly_adams.boss_intro_23a", "npc.grizzly_adams.boss_intro_23b", "npc.grizzly_adams.boss_intro_23c" }, -- Leviathan
+	{ "npc.grizzly_adams.boss_intro_24a", "npc.grizzly_adams.boss_intro_24b" }, -- Kerberos
+	"npc.grizzly_adams.boss_intro_25", -- Ethershreck
+	"npc.grizzly_adams.boss_intro_26", -- Paiz
+	"npc.grizzly_adams.boss_intro_27", -- Bretzecutioner
+	"npc.grizzly_adams.boss_intro_28", -- Zanakeph
 }
 local messageBossStart = {
-	"Okay. Go forth and kill him.", -- Snapper
-	"Okay. Go forth and kill him.", -- Hide
-	"Find Deathbine, the old carniphila, somewhere in the jungle. Find its hideout and kill it!",
-	"Okay. Go forth and kill him.", -- Bloodtusk
-	"Okay. Go forth and kill him.", -- Shardhead
-	"Okay. Go forth and kill him.", -- Esmeralda
-	"Okay. Go forth and kill him.", -- Fleshcrawler
-	"Okay. Go forth and kill him.", -- Ribstride
-	"Okay. Go forth and kill him.", -- Bloodweb
-	"Okay. Go forth and kill him.", -- Thul
-	"Okay. Go forth and kill him.", -- Old Widow
-	"Okay. Go forth and kill him.", -- Hemming
-	"Okay. Go forth and kill him.", -- Tormentor
-	"Okay. Go forth and kill him.", -- Flameborn
-	"Okay. Go forth and kill him.", -- Fazzrah
-	"Okay. Go forth and kill him.", -- Tromphonyte
-	"Okay. Go forth and kill him.", -- Sulphur Scuttler
-	"Okay. Go forth and kill him.", -- Bruise Payne
-	"Keep your head and focus when you confront her!",
-	"Okay. Go forth and kill him.", -- Noxious Spawn
-	"Okay. Happy hunting!",
-	"Smash it to smithereens!",
-	"Okay. Go forth and kill him.", -- Leviathan
-	"Okay. Go forth and kill him.",
-	"Okay. Go forth and kill him.",
-	"Okay. Go forth and kill him.",
-	"Okay. Go forth and kill him.",
-	"Okay. Go forth and kill him.",
+	"npc.grizzly_adams.boss_start_default", -- Snapper
+	"npc.grizzly_adams.boss_start_default", -- Hide
+	"npc.grizzly_adams.boss_start_deathbine", -- Deathbine
+	"npc.grizzly_adams.boss_start_default", -- Blood Tusk
+	"npc.grizzly_adams.boss_start_default", -- Shardhead
+	"npc.grizzly_adams.boss_start_default", -- Esmeralda
+	"npc.grizzly_adams.boss_start_default", -- Fleshcrawler
+	"npc.grizzly_adams.boss_start_default", -- Ribstride
+	"npc.grizzly_adams.boss_start_default", -- Bloodweb
+	"npc.grizzly_adams.boss_start_default", -- Thul
+	"npc.grizzly_adams.boss_start_default", -- Old Widow
+	"npc.grizzly_adams.boss_start_default", -- Hemming
+	"npc.grizzly_adams.boss_start_default", -- Tormentor
+	"npc.grizzly_adams.boss_start_default", -- Flameborn
+	"npc.grizzly_adams.boss_start_default", -- Fazzrah
+	"npc.grizzly_adams.boss_start_default", -- Tromphonyte
+	"npc.grizzly_adams.boss_start_default", -- Sulphur Scuttler
+	"npc.grizzly_adams.boss_start_default", -- Bruise Payne
+	"npc.grizzly_adams.boss_start_many", -- Many
+	"npc.grizzly_adams.boss_start_default", -- Noxious Spawn
+	"npc.grizzly_adams.boss_start_gorgo", -- Gorgo
+	"npc.grizzly_adams.boss_start_stonecracker", -- Stonecracker
+	"npc.grizzly_adams.boss_start_default", -- Leviathan
+	"npc.grizzly_adams.boss_start_default", -- Kerberos
+	"npc.grizzly_adams.boss_start_default", -- Ethershreck
+	"npc.grizzly_adams.boss_start_default", -- Paiz
+	"npc.grizzly_adams.boss_start_default", -- Bretzecutioner
+	"npc.grizzly_adams.boss_start_default", -- Zanakeph
 }
 local tier = {
 	{
@@ -262,49 +261,46 @@ local tier = {
 	},
 }
 local messageStartTask = {
-	["crocodiles"] = "They are a nuisance! You'll find them here in the jungle near the river. Hunt 300 crocodiles and you'll get a nice reward. Interested?",
-	["badgers"] = "You'll find them in the surrounding of Svargrond. Hunt 300 badgers and you'll get a reward. Interested?",
-	["tarantulas"] = "There is a veritable plague of tarantulas living in the caves north of the river to the east. Can you squish 300 tarantulas for the Hunting Elite. What do you say?",
-	["stone golems"] = "They can be found all over Tibia. You'll find them in mountain caves or rocky dungeons. Hunt 200 stone golems of them and come back to me. Understood?",
-	["mammoths"] = "This particular species is found in Svargrond. Impressive beasts, but you wouldn't want one in your backyard. Hunt 300 mammoths of them. Alright?",
-	["gnarlhounds"] = "This particular species is found in Zao Steppe. Hunt 300 gnarlhounds of them. Understood?",
-	["terramites"] = "This particular species can be found beneath Zao Steppe. Hunt 300 terramites of them. Understood?",
-	["apes"] = "You'll find the apes deeper in the jungle. Hunt 300 merlkins, kongras or sibangs to complete this task. Alright?",
-	["thornback tortoises"] = "You'll find them on the Laguna Islands. Hunt 300 thornback tortoises of them. Interested?",
-	["gargoyles"] = "They can be found all over Tibia. Hunt 300 gargoyles of them. Interested?",
-	["ice golems"] = "The ice golems on the glacier of Hrodmir are becoming a threat to the civilians in Svargrond. Travel to the Ice Islands and hunt 300 ice golems. Do you accept this task?",
-	["quara scouts"] = "The {scouts} can be found on Malada, one of the Shattered Isles. Your task is to kill 400 quara scouts. I accept quara constrictor scouts, quara hydromancer scouts, quara mantassin scouts, quara pincher scouts and quara predator scouts, are you in?",
-	["mutated rats"] = "Recently, I heard of a disturbing development in Yalahar - a plague of monstrous Mutated rats! If they were to spread to the rest of Tibia.. <shudders> My task for you is to contain their numbers in Yalahar. Hunt 400 mutated rats of them. What do you say?",
-	["ancient scarabs"] = "They can be found in tombs beneath the desert around Ankrahmun. Hunt 250 ancient scarabs of them. Interested?",
-	["wyverns"] = "They can be found all over Tibia. Hunt 300 wyverns. Interested?",
-	["lancer beetles"] = "Lancer beetle populations can be found on the landmass of Zao. Hunt down 300 of this crawlers for this task. Alright?",
-	["wailing widows"] = "Wailing widow populations can be found on the landmass of Zao. Hunt down 400 of them. Alright?",
-	["killer caimans"] = "Killer caiman populations can be found on the landmass of Zao. Hunt down 250 of them for this task. Interested?",
-	["bonebeasts"] = "In this task you must defeat 300 bonebeasts. Are you sure that you want to start this task?",
-	["crystal spiders"] = "In this task you must defeat 300 crystal spiders. Are you sure that you want to start this task?",
-	["mutated tigers"] = "In this task you must defeat 300 mutated tigers. Are you sure that you want to start this task?",
-	["underwater quara"] = "As you wish. Seek out a quara settlement and hunt 600 underwater quara, it doesn't matter which type you hunt. Alright?",
-	["giant spiders"] = "Never liked spiders. Simply too many legs. And I always find them in my bath! Those nasty creepy-crawlies are a threat to the hygiene of every living being in Tibia. Hunt 500 of them. Okay?",
-	["werewolves"] = "Those nasty creatures can be found on the island of Vengoth. Hunt 300 of them. Are you in?",
-	["nightmares"] = "Nightmares and nightmare scions can be found all over Tibia. For this task kill 400 of them. Interested?",
-	["hellspawns"] = "Recently, I heard of a disturbing development - hellspawns. If they spread to the rest of Tibia... <shudders> My task for you is to contain their numbers. Hunt 600 of them. What do you say?",
-	["high class lizards"] = "I want you to decrease the number of high class lizards on the Zaoan landmass. Hunt 800 of them. I accept lizard chosens, lizard dragon priests, lizard high guards, lizard legionnaires and lizard zaoguns. Are you interested?",
-	["stampors"] = "Stampors can be found in a dungeon on the Zaoan landmass. Hunt 600 of them. Are you interested?",
-	["brimstone bugs"] = "You can find them on the Zaoan landmass. Kill 500 brimstone bugs to complete this task. Are you in?",
-	["mutated bats"] = "Recently, I heard of a disturbing development in Yalahar - a plague of monstrous mutated bats! If they were to spread to the rest of Tibia... <shudders> My task for you is to contain their numbers in Yalahar. Hunt 400 of them. What do you say?",
-	["hydras"] = "The hydras are located in the eastern jungle of Tiquanda and there are several mountain caves that are inhabited by them. Your task is to hunt a mere 650 hydras. Are you willing to do that?",
-	["serpent spawns"] = "Very dangerous, nasty and slimy creatures. They live deep in the old ruins of Banuta. I think a mere 800 serpent spawns should do the trick. What do you say?",
-	["medusae"] = "They live deep in the old ruins of Banuta and they are nasty! I think a mere 500 medusae should do the trick. What do you say?",
-	["behemoths"] = "Behemoths must be kept away from the settlements at all costs. You'll find them east of here in the taboo-area or under Cyclopolis in Edron. Go there and hunt a few of them - shall we say... 700? Are you up for that?",
-	["sea serpents"] = {
-		"The sea serpent threat increases! Captain Haba knows where to find them. ...",
-		"Go to Svargrond and talk to him. 900 sea serpents, including the young ones, should be enough to reduce the threat. Got it?",
-	},
-	["hellhounds"] = "These harbingers of darkness can be found in many deep dungeons all over Tibia. Kill 250 of them. Are you in?",
-	["ghastly dragons"] = "Ghastly dragons are devastating creatures which can be found in many dangerous places all over Tibia. Kill 500 of them. Are you in?",
-	["undead dragons"] = "You are a thrill seeker? Undead dragons belong to one of the most powerful races that can be found in Tibia. Kill 400 of them. Are you in?",
-	["drakens"] = "Go to the Zaoan landmass and reduce their number! Kill 900 drakens, I'll accept: draken abomination, draken elite, draken spellweaver and draken warmaster. Are you in?",
-	["destroyers"] = "You can find those dark creatures on several places all over Tibia. For this task I want you to kill 650 destroyers. Are you in?",
+	["crocodiles"] = "npc.grizzly_adams.start_task_crocodiles",
+	["badgers"] = "npc.grizzly_adams.start_task_badgers",
+	["tarantulas"] = "npc.grizzly_adams.start_task_tarantulas",
+	["stone golems"] = "npc.grizzly_adams.start_task_stone_golems",
+	["mammoths"] = "npc.grizzly_adams.start_task_mammoths",
+	["gnarlhounds"] = "npc.grizzly_adams.start_task_gnarlhounds",
+	["terramites"] = "npc.grizzly_adams.start_task_terramites",
+	["apes"] = "npc.grizzly_adams.start_task_apes",
+	["thornback tortoises"] = "npc.grizzly_adams.start_task_thornback_tortoises",
+	["gargoyles"] = "npc.grizzly_adams.start_task_gargoyles",
+	["ice golems"] = "npc.grizzly_adams.start_task_ice_golems",
+	["quara scouts"] = "npc.grizzly_adams.start_task_quara_scouts",
+	["mutated rats"] = "npc.grizzly_adams.start_task_mutated_rats",
+	["ancient scarabs"] = "npc.grizzly_adams.start_task_ancient_scarabs",
+	["wyverns"] = "npc.grizzly_adams.start_task_wyverns",
+	["lancer beetles"] = "npc.grizzly_adams.start_task_lancer_beetles",
+	["wailing widows"] = "npc.grizzly_adams.start_task_wailing_widows",
+	["killer caimans"] = "npc.grizzly_adams.start_task_killer_caimans",
+	["bonebeasts"] = "npc.grizzly_adams.start_task_bonebeasts",
+	["crystal spiders"] = "npc.grizzly_adams.start_task_crystal_spiders",
+	["mutated tigers"] = "npc.grizzly_adams.start_task_mutated_tigers",
+	["underwater quara"] = "npc.grizzly_adams.start_task_underwater_quara",
+	["giant spiders"] = "npc.grizzly_adams.start_task_giant_spiders",
+	["werewolves"] = "npc.grizzly_adams.start_task_werewolves",
+	["nightmares"] = "npc.grizzly_adams.start_task_nightmares",
+	["hellspawns"] = "npc.grizzly_adams.start_task_hellspawns",
+	["high class lizards"] = "npc.grizzly_adams.start_task_high_class_lizards",
+	["stampors"] = "npc.grizzly_adams.start_task_stampors",
+	["brimstone bugs"] = "npc.grizzly_adams.start_task_brimstone_bugs",
+	["mutated bats"] = "npc.grizzly_adams.start_task_mutated_bats",
+	["hydras"] = "npc.grizzly_adams.start_task_hydras",
+	["serpent spawns"] = "npc.grizzly_adams.start_task_serpent_spawns",
+	["medusae"] = "npc.grizzly_adams.start_task_medusae",
+	["behemoths"] = "npc.grizzly_adams.start_task_behemoths",
+	["sea serpents"] = { "npc.grizzly_adams.start_task_sea_serpents_1", "npc.grizzly_adams.start_task_sea_serpents_2" },
+	["hellhounds"] = "npc.grizzly_adams.start_task_hellhounds",
+	["ghastly dragons"] = "npc.grizzly_adams.start_task_ghastly_dragons",
+	["undead dragons"] = "npc.grizzly_adams.start_task_undead_dragons",
+	["drakens"] = "npc.grizzly_adams.start_task_drakens",
+	["destroyers"] = "npc.grizzly_adams.start_task_destroyers",
 }
 local messageStartTaskAlt = {
 	["crocodile"] = messageStartTask["crocodiles"],
@@ -358,7 +354,7 @@ local function checkX(npc, player, d, message)
 							player:setStorageValue(tasks.GrizzlyAdams[m].rewards[n].value[1], 1)
 							player:setStorageValue(tasks.GrizzlyAdams[m].rewards[n].value[2], 0)
 						elseif player:getStorageValue(tasks.GrizzlyAdams[m].rewards[n].value[1]) == 3 or player:getStorageValue(tasks.GrizzlyAdams[m].rewards[n].value[1]) < 0 then
-							npcHandler:say(messageBossStart[tasks.GrizzlyAdams[m].bossId], npc, player)
+							NPC_LIB.i18n.npcSay(npcHandler, npc, player, messageBossStart[tasks.GrizzlyAdams[m].bossId])
 							player:setStorageValue(tasks.GrizzlyAdams[m].rewards[n].value[1], 1)
 							player:setStorageValue(tasks.GrizzlyAdams[m].rewards[n].value[2], 0)
 							player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.BossPoints, player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.BossPoints) - 1)
@@ -547,13 +543,13 @@ local function creatureSayCallback(npc, creature, type, message)
 					elseif messageAltExtraPoints == true then
 						NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.grizzly_adams.say_4", { extraValue })
 					else
-						npcHandler:say(messageTask[chanceY], npc, creature)
+						NPC_LIB.i18n.npcSay(npcHandler, npc, creature, messageTask[chanceY])
 					end
 				else
-					npcHandler:say(messageBoss[messageAltId], npc, creature)
+					sayI18nMsg(npcHandler, npc, creature, messageBoss[messageAltId])
 				end
 			else
-				npcHandler:say(messageTask[chanceY], npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, messageTask[chanceY])
 			end
 			return true
 		end
@@ -607,43 +603,43 @@ local function creatureSayCallback(npc, creature, type, message)
 		if task and player:getStorageValue(QUESTSTORAGE_BASE + task) > 0 then
 			return false
 		end
-		local messageElse = "You already achieved the maximum rank for your level range. If you accept this task, you won't gain points for our society. Hunt " .. tasks.GrizzlyAdams[task].killsRequired .. " " .. tasks.GrizzlyAdams[task].raceName .. " and you'll be rewarded with experience and the possibility to choose a {boss}. Are you in, old chap?"
+		local messageElseKey = "npc.grizzly_adams.else_max_rank"
 		if table.contains(tier[1].allName, message:lower()) then
 			if player:getStorageValue(POINTSSTORAGE) >= 40 and player:getLevel() < 50 then
-				npcHandler:say(messageElse, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, messageElseKey, { tasks.GrizzlyAdams[task].killsRequired, tasks.GrizzlyAdams[task].raceName })
 			elseif table.contains({ "carniphilas", "carniphila" }, message:lower()) then
 				local chanceX = math.random(2)
 				local messageCarniphilas = {
-					[1] = "Interesting kind and not so easy to find. The fun begins when you want to hunt {Tiquanda's Revenge}. It's strong and smart like no other carniphila.",
-					[2] = "Damn walking weed-thingies! You'll find them deeper in the jungle. Weed out 150 carniphilas for our society. Alright?",
+					[1] = "npc.grizzly_adams.carniphilas_1",
+					[2] = "npc.grizzly_adams.carniphilas_2",
 				}
-				npcHandler:say(messageCarniphilas[chanceX], npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, messageCarniphilas[chanceX])
 			elseif table.contains(tier[1].withsName, message:lower()) then
-				npcHandler:say(messageStartTask[message:lower()], npc, creature)
+				sayI18nMsg(npcHandler, npc, creature, messageStartTask[message:lower()])
 			else
-				npcHandler:say(messageStartTaskAlt[message:lower()], npc, creature)
+				sayI18nMsg(npcHandler, npc, creature, messageStartTaskAlt[message:lower()])
 			end
 		elseif table.contains(tier[2].allName, message:lower()) then
 			if player:getStorageValue(POINTSSTORAGE) >= 70 and player:getLevel() < 80 then
-				npcHandler:say(messageElse, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, messageElseKey, { tasks.GrizzlyAdams[task].killsRequired, tasks.GrizzlyAdams[task].raceName })
 			elseif table.contains(tier[2].withsName, message:lower()) then
-				npcHandler:say(messageStartTask[message:lower()], npc, creature)
+				sayI18nMsg(npcHandler, npc, creature, messageStartTask[message:lower()])
 			else
-				npcHandler:say(messageStartTaskAlt[message:lower()], npc, creature)
+				sayI18nMsg(npcHandler, npc, creature, messageStartTaskAlt[message:lower()])
 			end
 		elseif table.contains(tier[3].allName, message:lower()) then
 			if player:getStorageValue(POINTSSTORAGE) >= 100 and player:getLevel() < 130 then
-				npcHandler:say(messageElse, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, messageElseKey, { tasks.GrizzlyAdams[task].killsRequired, tasks.GrizzlyAdams[task].raceName })
 			elseif table.contains(tier[3].withsName, message:lower()) then
-				npcHandler:say(messageStartTask[message:lower()], npc, creature)
+				sayI18nMsg(npcHandler, npc, creature, messageStartTask[message:lower()])
 			else
-				npcHandler:say(messageStartTaskAlt[message:lower()], npc, creature)
+				sayI18nMsg(npcHandler, npc, creature, messageStartTaskAlt[message:lower()])
 			end
 		elseif table.contains(tier[4].allName, message:lower()) then
 			if table.contains(tier[4].withsName, message:lower()) then
-				npcHandler:say(messageStartTask[message:lower()], npc, creature)
+				sayI18nMsg(npcHandler, npc, creature, messageStartTask[message:lower()])
 			else
-				npcHandler:say(messageStartTaskAlt[message:lower()], npc, creature)
+				sayI18nMsg(npcHandler, npc, creature, messageStartTaskAlt[message:lower()])
 			end
 		elseif table.contains({ "demons", "demon" }, message:lower()) and player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.PawAndFurRank) == 7 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.grizzly_adams.say_9")
@@ -703,7 +699,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(KILLSSTORAGE_BASE + choose[playerId], player:getStorageValue(KILLSSTORAGE_BASE + choose[playerId]) + 1)
 		end
 		local chance = math.random(10)
-		npcHandler:say(messageYes[chance], npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, messageYes[chance])
 		choose[playerId] = nil
 		npcHandler:setTopic(playerId, 0)
 		elseif MsgContains("status", message) then
@@ -784,7 +780,7 @@ local function creatureSayCallback(npc, creature, type, message)
 					for y = 1, #tasks.GrizzlyAdams[w].rewards do
 						if table.contains({ REWARD_STORAGE, "storage", "stor" }, tasks.GrizzlyAdams[w].rewards[y].type:lower()) then
 							if player:getStorageValue(tasks.GrizzlyAdams[w].rewards[y].value[1]) == 3 or player:getStorageValue(tasks.GrizzlyAdams[w].rewards[y].value[1]) < 0 then
-								npcHandler:say(messageBossStart[tasks.GrizzlyAdams[w].bossId], npc, creature)
+								NPC_LIB.i18n.npcSay(npcHandler, npc, creature, messageBossStart[tasks.GrizzlyAdams[w].bossId])
 								player:setStorageValue(tasks.GrizzlyAdams[w].rewards[y].value[1], 1)
 								player:setStorageValue(tasks.GrizzlyAdams[w].rewards[y].value[2], 0)
 								player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.BossPoints, player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.BossPoints) - 1)

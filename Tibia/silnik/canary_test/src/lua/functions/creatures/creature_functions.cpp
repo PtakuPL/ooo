@@ -1049,11 +1049,20 @@ int CreatureFunctions::luaCreatureHasBeenSummoned(lua_State* L) {
 }
 
 int CreatureFunctions::luaCreatureGetDescription(lua_State* L) {
-	// creature:getDescription(distance)
+	// creature:getDescription(distance[, viewerPlayer])
 	const int32_t distance = Lua::getNumber<int32_t>(L, 2);
 	const auto &creature = Lua::getUserdataShared<Creature>(L, 1, "Creature");
 	if (creature) {
-		Lua::pushString(L, creature->getDescription(distance));
+		const auto &viewer = Lua::getUserdataShared<Player>(L, 3, "Player");
+		if (viewer) {
+			if (const auto &inspectedPlayer = creature->getPlayer()) {
+				Lua::pushString(L, inspectedPlayer->getDescriptionLocalized(distance, viewer->getLocale()));
+			} else {
+				Lua::pushString(L, creature->getDescription(distance));
+			}
+		} else {
+			Lua::pushString(L, creature->getDescription(distance));
+		}
 	} else {
 		lua_pushnil(L);
 	}

@@ -22,6 +22,7 @@
 #include "map/spectators.hpp"
 #include "creatures/players/player.hpp"
 #include "server/network/protocol/protocolgame.hpp"
+#include "utils/i18n/translator.hpp"
 
 Creature::Creature() {
 	Creature::onIdleStatus();
@@ -708,7 +709,9 @@ bool Creature::dropCorpse(const std::shared_ptr<Creature> &lastHitCreature, cons
 				if (monster && !monster->isRewardBoss()) {
 					auto collorMessage = player->getProtocolVersion() > 1200;
 					auto suffix = corpseContainer->getAttribute<std::string>(ItemAttribute_t::LOOTMESSAGE_SUFFIX);
-					std::string lootMessage = fmt::format("Loot of {}: {}", getNameDescription(), corpseContainer->getContentDescription(collorMessage));
+					const std::string loc(player->getLocale().empty() ? "en" : std::string(player->getLocale()));
+					auto &tr = i18n::g_translator();
+					std::string lootMessage = tr.format("cpp.creature.loot_of", loc, {std::string(getNameDescription()), corpseContainer->getContentDescription(collorMessage)});
 					if (!suffix.empty()) {
 						lootMessage = fmt::format("{} ({})", lootMessage, suffix);
 					}

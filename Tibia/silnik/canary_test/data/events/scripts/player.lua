@@ -209,30 +209,43 @@ function Player:onLookInBattleList(creature, distance)
 		return false
 	end
 
-	local description = "You see " .. creature:getDescription(distance)
+	local description = string.format(Translator.getTranslation(self, "scripts.on_look.see_prefix"), creature:getDescription(distance, self))
 	if creature:isMonster() then
 		local master = creature:getMaster()
 		local summons = { "sorcerer familiar", "knight familiar", "druid familiar", "paladin familiar" }
 		if master and table.contains(summons, creature:getName():lower()) then
 			local familiarSummonTime = master:kv():get("familiar-summon-time") or 0
-			description = description .. " (Master: " .. master:getName() .. "). \z
-				It will disappear in " .. Game.getTimeInWords(familiarSummonTime - os.time())
+			description = string.format(
+				Translator.getTranslation(self, "scripts.on_look.familiar_master"),
+				description,
+				master:getName(),
+				Game.getTimeInWords(familiarSummonTime - os.time())
+			)
 		end
 	end
+
 	if self:getGroup():getAccess() then
-		local str = "%s\nHealth: %d / %d"
+		local healthDescription, creatureId = Translator.getTranslation(self, "scripts.on_look.admin_player_health")
 		if creature:isPlayer() and creature:getMaxMana() > 0 then
-			str = string.format("%s, Mana: %d / %d", str, creature:getMana(), creature:getMaxMana())
+			creatureId = string.format(Translator.getTranslation(self, "scripts.on_look.admin_player_id"), creature:getGuid())
+			healthDescription = string.format(Translator.getTranslation(self, "scripts.on_look.admin_player_health_mana"), healthDescription, creature:getMana(), creature:getMaxMana())
+		elseif creature:isMonster() then
+			creatureId = string.format(Translator.getTranslation(self, "scripts.on_look.admin_monster_id"), creature:getId())
+		elseif creature:isNpc() then
+			creatureId = string.format(Translator.getTranslation(self, "scripts.on_look.admin_npc_id"), creature:getId())
 		end
-		description = string.format(str, description, creature:getHealth(), creature:getMaxHealth()) .. "."
+
+		description = string.format(healthDescription, description, creatureId, creature:getHealth(), creature:getMaxHealth())
 
 		local position = creature:getPosition()
-		description = string.format("%s\nPosition: %d, %d, %d", description, position.x, position.y, position.z)
+		description = string.format("%s\n%s", description, string.format(Translator.getTranslation(self, "scripts.on_look.position_coords"), position.x, position.y, position.z))
+		description = string.format(Translator.getTranslation(self, "scripts.on_look.admin_speed"), description, creature:getBaseSpeed(), creature:getSpeed())
 
 		if creature:isPlayer() then
-			description = string.format("%s\nIP: %s", description, Game.convertIpToString(creature:getIp()))
+			description = string.format(Translator.getTranslation(self, "scripts.on_look.admin_ip"), description, Game.convertIpToString(creature:getIp()))
 		end
 	end
+
 	self:sendTextMessage(MESSAGE_LOOK, description)
 end
 

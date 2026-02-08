@@ -190,7 +190,7 @@ bool Item::canAddImbuement(uint8_t slot, const std::shared_ptr<Player> &player, 
 	auto itemSlots = getImbuementSlot();
 	if (itemSlots == 0 || slot >= itemSlots) {
 		g_logger().error("[Player::onApplyImbuement] - Player {} attempted to apply imbuement in an invalid slot ({})", player->getName(), slot);
-		player->sendImbuementResult("Invalid slot selection.");
+		{ const std::string loc(player->getLocale().empty() ? "en" : std::string(player->getLocale())); player->sendImbuementResult(i18n::g_translator().get("cpp.item.invalid_slot", loc)); }
 		return false;
 	}
 
@@ -203,7 +203,7 @@ bool Item::canAddImbuement(uint8_t slot, const std::shared_ptr<Player> &player, 
 	// Checks if the item already has the imbuement category id
 	if (hasImbuementCategoryId(categoryImbuement->id)) {
 		g_logger().error("[Item::setImbuement] - An error occurred while player with name {} try to apply imbuement, item already contains imbuement of the same type: {}", player->getName(), imbuement->getName());
-		player->sendImbuementResult("An error ocurred, please reopen imbuement window.");
+		{ const std::string loc(player->getLocale().empty() ? "en" : std::string(player->getLocale())); player->sendImbuementResult(i18n::g_translator().get("cpp.item.imbuement_error_reopen", loc)); }
 		return false;
 	}
 

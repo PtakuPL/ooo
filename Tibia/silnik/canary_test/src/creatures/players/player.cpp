@@ -11,6 +11,7 @@
 
 #include <algorithm>
 #include <cctype>
+#include <string_view>
 #include <fmt/format.h>
 
 #include "account/account.hpp"
@@ -141,6 +142,45 @@ uint32_t Player::getLastID() {
 	return playerLastID;
 }
 
+namespace {
+	constexpr uint8_t kLastLocalizedTitleId = 93;
+	constexpr std::string_view kLoyaltyTitleKeyPrefix = "lib.player.loyalty_title_";
+
+	bool hasFemaleTitleVariant(uint8_t titleId) {
+		switch (titleId) {
+			case 32:
+			case 35:
+			case 43:
+			case 44:
+			case 45:
+			case 47:
+			case 48:
+			case 70:
+			case 90:
+				return true;
+			default:
+				return false;
+		}
+	}
+
+	std::string getTranslationOrFallback(const std::string &key, const std::string &locale, const std::string &fallback) {
+		const std::string translated = i18n::g_translator().get(key, locale);
+		if (translated.empty() || translated == key) {
+			return fallback;
+		}
+		return translated;
+	}
+
+	bool startsWithVowelLetter(const std::string &text) {
+		if (text.empty()) {
+			return false;
+		}
+
+		const char first = static_cast<char>(std::tolower(static_cast<unsigned char>(text.front())));
+		return first == 'a' || first == 'e' || first == 'i' || first == 'o' || first == 'u';
+	}
+} // namespace
+
 void Player::setID() {
 	// guid = player id from database
 	if (id == 0 && guid != 0) {
@@ -152,77 +192,104 @@ void Player::setID() {
 }
 
 std::string Player::getDescription(int32_t lookDistance) {
+	return getDescriptionLocalized(lookDistance, "en");
+}
+
+std::string Player::getDescriptionLocalized(int32_t lookDistance, const std::string &viewerLocale) {
+	const std::string localeToUse = viewerLocale.empty() ? "en" : viewerLocale;
+	auto &tr = i18n::g_translator();
+
 	std::ostringstream s;
 	std::string subjectPronoun = getSubjectPronoun();
 	capitalizeWords(subjectPronoun);
-	const auto playerTitle = title().getCurrentTitle() == 0 ? "" : (", " + title().getCurrentTitleName());
+	const std::string subjectVerb = getSubjectVerb();
+
+	std::string playerTitle;
+	if (const auto currentTitle = title().getCurrentTitle(); currentTitle != 0) {
+		const auto titleData = g_game().getTitleById(currentTitle);
+		std::string fallbackTitle = title().getNameBySex(getSex(), titleData.m_maleName, titleData.m_femaleName);
+		if (titleData.m_id >= 1 && titleData.m_id <= kLastLocalizedTitleId) {
+			const std::string key = (getSex() == PLAYERSEX_FEMALE && hasFemaleTitleVariant(titleData.m_id))
+			                            ? fmt::format("cpp.title.name_{}_female", titleData.m_id)
+			                            : fmt::format("cpp.title.name_{}", titleData.m_id);
+			fallbackTitle = getTranslationOrFallback(key, localeToUse, fallbackTitle);
+		}
+		if (!fallbackTitle.empty()) {
+			playerTitle = ", " + fallbackTitle;
+		}
+	}
+
+	std::string vocationDescription;
+	if (vocation && vocation->getId() != VOCATION_NONE) {
+		const std::string key = fmt::format("cpp.vocation.desc_id_{}", vocation->getId());
+		vocationDescription = getTranslationOrFallback(key, localeToUse, vocation->getVocDescription());
+	}
+	const std::string localizedLoyaltyTitle = getLoyaltyTitleLocalized(localeToUse);
 
 	if (lookDistance == -1) {
-		s << "yourself" << playerTitle << ".";
+		s << tr.get("cpp.player.look.self", localeToUse) << playerTitle << ".";
 
 		if (group->access) {
-			s << " You are " << group->name << '.';
-		} else if (vocation->getId() != VOCATION_NONE) {
-			s << " You are " << vocation->getVocDescription() << '.';
+			s << " " << tr.format("cpp.player.look.you_are", localeToUse, {group->name});
+		} else if (!vocationDescription.empty()) {
+			s << " " << tr.format("cpp.player.look.you_are", localeToUse, {vocationDescription});
 		} else {
-			s << " You have no vocation.";
+			s << " " << tr.get("cpp.player.look.you_have_no_vocation", localeToUse);
 		}
 
-		if (!loyaltyTitle.empty()) {
-			s << " You are a " << loyaltyTitle << ".";
+		if (!localizedLoyaltyTitle.empty()) {
+			const std::string article = startsWithVowelLetter(localizedLoyaltyTitle) ? tr.get("cpp.player.look.article_an", localeToUse) : tr.get("cpp.player.look.article_a", localeToUse);
+			s << " " << tr.format("cpp.player.look.you_are_loyalty", localeToUse, {article, localizedLoyaltyTitle});
 		}
 
 		if (isVip()) {
-			s << " You are VIP.";
+			s << " " << tr.get("cpp.player.look.you_are_vip", localeToUse);
 		}
 	} else {
 		s << name;
 		if (!group->access) {
-			s << " (Level " << level << ')';
+			s << " (" << tr.format("cpp.player.look.level_fmt", localeToUse, {std::to_string(level)}) << ')';
 		}
 
 		s << playerTitle << ". " << subjectPronoun;
 
 		if (group->access) {
-			s << " " << getSubjectVerb() << " " << group->name << '.';
-		} else if (vocation->getId() != VOCATION_NONE) {
-			s << " " << getSubjectVerb() << " " << vocation->getVocDescription() << '.';
+			s << " " << tr.format("cpp.player.look.verb_role", localeToUse, {subjectVerb, group->name});
+		} else if (!vocationDescription.empty()) {
+			s << " " << tr.format("cpp.player.look.verb_role", localeToUse, {subjectVerb, vocationDescription});
 		} else {
-			s << " has no vocation.";
+			s << " " << tr.get("cpp.player.look.has_no_vocation", localeToUse);
 		}
 
-		if (!loyaltyTitle.empty()) {
-			std::string article = "a";
-			if (loyaltyTitle[0] == 'A' || loyaltyTitle[0] == 'E' || loyaltyTitle[0] == 'I' || loyaltyTitle[0] == 'O' || loyaltyTitle[0] == 'U') {
-				article = "an";
-			}
-			s << " " << subjectPronoun << " " << getSubjectVerb() << " " << article << " " << loyaltyTitle << ".";
+		if (!localizedLoyaltyTitle.empty()) {
+			const std::string article = startsWithVowelLetter(localizedLoyaltyTitle) ? tr.get("cpp.player.look.article_an", localeToUse) : tr.get("cpp.player.look.article_a", localeToUse);
+			s << " " << subjectPronoun << " " << tr.format("cpp.player.look.verb_loyalty", localeToUse, {subjectVerb, article, localizedLoyaltyTitle});
 		}
 
 		if (isVip()) {
-			s << " " << subjectPronoun << " " << getSubjectVerb() << " VIP.";
+			s << " " << subjectPronoun << " " << tr.format("cpp.player.look.verb_vip", localeToUse, {subjectVerb});
 		}
 	}
 
 	if (m_party) {
 		if (lookDistance == -1) {
-			s << " Your party has ";
+			s << " " << tr.get("cpp.player.look.party_prefix_self", localeToUse) << " ";
 		} else {
-			s << " " << subjectPronoun << " " << getSubjectVerb() << " in a party with ";
+			s << " " << subjectPronoun << " " << tr.format("cpp.player.look.party_prefix_other", localeToUse, {subjectVerb}) << " ";
 		}
 
 		const size_t memberCount = m_party->getMemberCount() + 1;
 		if (memberCount == 1) {
-			s << "1 member and ";
+			s << tr.get("cpp.player.look.party_member_one", localeToUse) << " ";
 		} else {
-			s << memberCount << " members and ";
+			s << tr.format("cpp.player.look.party_member_many", localeToUse, {std::to_string(memberCount)}) << " ";
 		}
 
 		const size_t invitationCount = m_party->getInvitationCount();
 		if (invitationCount == 1) {
-			s << "1 pending invitation.";
+			s << tr.get("cpp.player.look.party_invite_one", localeToUse);
 		} else {
-			s << invitationCount << " pending invitations.";
+			s << tr.format("cpp.player.look.party_invite_many", localeToUse, {std::to_string(invitationCount)});
 		}
 	}
 
@@ -234,20 +301,20 @@ std::string Player::getDescription(int32_t lookDistance) {
 		}
 
 		if (lookDistance == -1) {
-			s << " You are ";
+			s << " " << tr.get("cpp.player.look.guild_prefix_self", localeToUse) << " ";
 		} else {
-			s << " " << subjectPronoun << " " << getSubjectVerb() << " ";
+			s << " " << subjectPronoun << " " << tr.format("cpp.player.look.guild_prefix_other", localeToUse, {subjectVerb}) << " ";
 		}
 
-		s << guildRank->name << " of the " << guild->getName();
+		s << tr.format("cpp.player.look.guild_rank_of", localeToUse, {guildRank->name, guild->getName()});
 		if (!guildNick.empty()) {
-			s << " (" << guildNick << ')';
+			s << " " << tr.format("cpp.player.look.guild_nick", localeToUse, {guildNick});
 		}
 
 		if (memberCount == 1) {
-			s << ", which has 1 member, " << guild->getMembersOnline().size() << " of them online.";
+			s << tr.format("cpp.player.look.guild_members_one", localeToUse, {std::to_string(guild->getMembersOnline().size())});
 		} else {
-			s << ", which has " << memberCount << " members, " << guild->getMembersOnline().size() << " of them online.";
+			s << tr.format("cpp.player.look.guild_members_many", localeToUse, {std::to_string(memberCount), std::to_string(guild->getMembersOnline().size())});
 		}
 	}
 	return s.str();
@@ -9220,24 +9287,30 @@ uint8_t Player::getBlessingCount(uint8_t index, bool storeCount) const {
 }
 
 std::string Player::getBlessingsName() const {
+	const std::string loc(getLocale().empty() ? "en" : std::string(getLocale()));
 	std::vector<std::string> blessingNames;
 	for (const auto &bless : magic_enum::enum_values<Blessings>()) {
 		if (hasBlessing(enumToValue(bless))) {
-			std::string name = toStartCaseWithSpace(magic_enum::enum_name(bless).data());
-			blessingNames.emplace_back(name);
+			const uint8_t blessId = enumToValue(bless);
+			const std::string fallbackName = toStartCaseWithSpace(magic_enum::enum_name(bless).data());
+			const std::string blessKey = fmt::format("cpp.player.blessing_name_{}", blessId);
+			blessingNames.emplace_back(getTranslationOrFallback(blessKey, loc, fallbackName));
 		}
 	}
 
 	std::ostringstream os;
 	if (!blessingNames.empty()) {
-		// Join all elements but the last with ", " and add the last one with " and "
+		const std::string delimiter = getTranslationOrFallback("cpp.player.list_delimiter", loc, ", ");
+		const std::string conjunction = getTranslationOrFallback("cpp.player.list_and", loc, "and ");
+		const std::string terminator = getTranslationOrFallback("cpp.player.list_end", loc, ".");
+
 		for (size_t i = 0; i < blessingNames.size() - 1; ++i) {
-			os << blessingNames[i] << ", ";
+			os << blessingNames[i] << delimiter;
 		}
 		if (blessingNames.size() > 1) {
-			os << "and ";
+			os << conjunction;
 		}
-		os << blessingNames.back() << ".";
+		os << blessingNames.back() << terminator;
 	}
 
 	return os.str();
@@ -9355,6 +9428,23 @@ void Player::setLoyaltyTitle(std::string title) {
 
 std::string Player::getLoyaltyTitle() const {
 	return loyaltyTitle;
+}
+
+std::string Player::getLoyaltyTitleLocalized(std::string_view locale) const {
+	if (loyaltyTitle.empty()) {
+		return {};
+	}
+
+	if (loyaltyTitle.rfind(kLoyaltyTitleKeyPrefix.data(), 0) != 0) {
+		return loyaltyTitle;
+	}
+
+	const std::string localeToUse = locale.empty() ? "en" : std::string(locale);
+	const std::string translated = i18n::g_translator().get(loyaltyTitle, localeToUse);
+	if (translated.empty() || translated == loyaltyTitle) {
+		return loyaltyTitle;
+	}
+	return translated;
 }
 
 uint16_t Player::getLoyaltyBonus() const {

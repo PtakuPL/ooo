@@ -68,5 +68,16 @@
   "rune.msg_sorry_not_possible": "Sorry, not possible.",
   "rune.msg_cannot_control_more": "You cannot control more creatures.",
   "lib.player.loyalty_bonus": "Due to your long-term loyalty to {2} you currently benefit from a {0}% bonus on all of your skills. (You have {1} loyalty points)",
+  "lib.player.loyalty_title_1": "Scout of Tibia",
+  "lib.player.loyalty_title_2": "Sentinel of Tibia",
+  "lib.player.loyalty_title_3": "Steward of Tibia",
+  "lib.player.loyalty_title_4": "Warden of Tibia",
+  "lib.player.loyalty_title_5": "Squire of Tibia",
+  "lib.player.loyalty_title_6": "Warrior of Tibia",
+  "lib.player.loyalty_title_7": "Keeper of Tibia",
+  "lib.player.loyalty_title_8": "Guardian of Tibia",
+  "lib.player.loyalty_title_9": "Sage of Tibia",
+  "lib.player.loyalty_title_10": "Savant of Tibia",
+  "lib.player.loyalty_title_11": "Enlightened of Tibia",
   "lib.blessing.received_header": "Received blessings:"
 }

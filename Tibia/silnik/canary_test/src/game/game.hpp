@@ -849,7 +849,7 @@ private:
 
 	std::unordered_set<std::shared_ptr<Tile>> tilesToClean;
 
-	ModalWindow offlineTrainingWindow { std::numeric_limits<uint32_t>::max(), "Choose a Skill", "Please choose a skill:" };
+		ModalWindow offlineTrainingWindow { std::numeric_limits<uint32_t>::max(), "cpp.game.offline_training_title", "cpp.game.offline_training_message" };
 
 	static constexpr int32_t DAY_LENGTH_SECONDS = 3600;
 	static constexpr int32_t LIGHT_DAY_LENGTH = 1440;

@@ -18,6 +18,7 @@
 #include "game/game.hpp"
 #include "core.hpp"
 #include "enums/account_errors.hpp"
+#include "utils/i18n/translator.hpp"
 
 void ProtocolLogin::disconnectClient(const std::string &message) const {
 	const auto output = OutputMessagePool::getOutputMessage();
@@ -32,19 +33,19 @@ void ProtocolLogin::disconnectClient(const std::string &message) const {
 void ProtocolLogin::getCharacterList(const std::string &accountDescriptor, const std::string &password) const {
 	Account account(accountDescriptor);
 	account.setProtocolCompat(oldProtocol);
+	auto &tr = i18n::g_translator();
+	const std::string ver = fmt::format("{}.{}", CLIENT_VERSION_UPPER, CLIENT_VERSION_LOWER);
 
 	if (oldProtocol && !g_configManager().getBoolean(OLD_PROTOCOL)) {
-		disconnectClient(fmt::format("Only protocol version {}.{} is allowed.", CLIENT_VERSION_UPPER, CLIENT_VERSION_LOWER));
+		disconnectClient(tr.format("cpp.protocol.only_clients", "en", {ver}));
 		return;
 	} else if (!oldProtocol) {
-		disconnectClient(fmt::format("Only protocol version {}.{} or outdated 11.00 is allowed.", CLIENT_VERSION_UPPER, CLIENT_VERSION_LOWER));
+		disconnectClient(tr.format("cpp.protocol.only_clients_or_old", "en", {ver}));
 		return;
 	}
 
 	if (account.load() != AccountErrors_t::Ok || !account.authenticate(password)) {
-		std::ostringstream ss;
-		ss << (oldProtocol ? "Username" : "Email") << " or password is not correct.";
-		disconnectClient(ss.str());
+		disconnectClient(tr.get(oldProtocol ? "cpp.protocol.wrong_username_password" : "cpp.protocol.wrong_email_password", "en"));
 		return;
 	}
 
@@ -133,12 +134,12 @@ void ProtocolLogin::onRecvFirstMessage(NetworkMessage &msg) {
 	setChecksumMethod(CHECKSUM_METHOD_ADLER32);
 
 	if (g_game().getGameState() == GAME_STATE_STARTUP) {
-		disconnectClient("Gameworld is starting up. Please wait.");
+		disconnectClient(i18n::g_translator().get("cpp.protocol.gameworld_starting", "en"));
 		return;
 	}
 
 	if (g_game().getGameState() == GAME_STATE_MAINTAIN) {
-		disconnectClient("Gameworld is under maintenance.\nPlease re-connect in a while.");
+		disconnectClient(i18n::g_translator().get("cpp.protocol.gameworld_maintenance", "en"));
 		return;
 	}
 
@@ -153,24 +154,19 @@ void ProtocolLogin::onRecvFirstMessage(NetworkMessage &msg) {
 			banInfo.reason = "(none)";
 		}
 
-		std::ostringstream ss;
-		ss << "Your IP has been banned until " << formatDateShort(banInfo.expiresAt) << " by " << banInfo.bannedBy << ".\n\nReason specified:\n"
-		   << banInfo.reason;
-		disconnectClient(ss.str());
+		disconnectClient(i18n::g_translator().format("cpp.protocol.ip_banned_until", "en", {formatDateShort(banInfo.expiresAt), banInfo.bannedBy, banInfo.reason}));
 		return;
 	}
 
 	std::string accountDescriptor = msg.getString();
 	if (accountDescriptor.empty()) {
-		std::ostringstream ss;
-		ss << "Invalid " << (oldProtocol ? "username" : "email") << ".";
-		disconnectClient(ss.str());
+		disconnectClient(i18n::g_translator().get(oldProtocol ? "cpp.protocol.enter_username" : "cpp.protocol.enter_email", "en"));
 		return;
 	}
 
 	std::string password = msg.getString();
 	if (password.empty()) {
-		disconnectClient("Invalid password.");
+		disconnectClient(i18n::g_translator().get("cpp.protocol.invalid_password", "en"));
 		return;
 	}
 

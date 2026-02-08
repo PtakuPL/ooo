@@ -73,6 +73,85 @@ namespace {
 		return totalIterationCount;
 	}
 
+	constexpr uint8_t kLastLocalizedTitleId = 93;
+
+	bool hasFemaleTitleVariant(uint8_t titleId) {
+		switch (titleId) {
+			case 32:
+			case 35:
+			case 43:
+			case 44:
+			case 45:
+			case 47:
+			case 48:
+			case 70:
+			case 90:
+				return true;
+			default:
+				return false;
+		}
+	}
+
+	std::string getLocalizedTitleName(const Title &title, PlayerSex_t sex, const std::string &locale) {
+		if (title.m_id == 0) {
+			return {};
+		}
+
+		if (title.m_id >= 1 && title.m_id <= kLastLocalizedTitleId) {
+			auto &tr = i18n::g_translator();
+			if (sex == PLAYERSEX_FEMALE && hasFemaleTitleVariant(title.m_id)) {
+				return tr.get(fmt::format("cpp.title.name_{}_female", title.m_id), locale);
+			}
+			return tr.get(fmt::format("cpp.title.name_{}", title.m_id), locale);
+		}
+
+		if (sex == PLAYERSEX_FEMALE && !title.m_femaleName.empty()) {
+			return title.m_femaleName;
+		}
+		return title.m_maleName;
+	}
+
+	std::string getLocalizedTitleDescription(const Title &title, const std::string &locale) {
+		if (title.m_id >= 1 && title.m_id <= kLastLocalizedTitleId) {
+			return i18n::g_translator().get(fmt::format("cpp.title.desc_{}", title.m_id), locale);
+		}
+
+		return title.m_description;
+	}
+
+	std::string getLocalizedCurrentTitleName(const std::shared_ptr<Player> &player, const std::string &locale) {
+		if (!player) {
+			return {};
+		}
+
+		const auto currentTitle = player->title().getCurrentTitle();
+		if (currentTitle == 0) {
+			return {};
+		}
+
+		const auto &title = g_game().getTitleById(currentTitle);
+		return getLocalizedTitleName(title, player->getSex(), locale);
+	}
+
+	std::string getLocalizedVocationName(uint16_t vocationId, const std::string &fallbackName, const std::string &locale) {
+		const std::string key = fmt::format("cpp.vocation.id_{}", vocationId);
+		const std::string translated = i18n::g_translator().get(key, locale);
+		if (translated.empty() || translated == key) {
+			return fallbackName;
+		}
+		return translated;
+	}
+
+	std::string getLocalizedBlessingName(Blessings blessing, const std::string &locale) {
+		const std::string fallbackName = toStartCaseWithSpace(magic_enum::enum_name(blessing).data());
+		const std::string key = fmt::format("cpp.player.blessing_name_{}", enumToValue(blessing));
+		const std::string translated = i18n::g_translator().get(key, locale);
+		if (translated.empty() || translated == key) {
+			return fallbackName;
+		}
+		return translated;
+	}
+
 	void addOutfitAndMountBytes(NetworkMessage &msg, const std::shared_ptr<Item> &item, const CustomAttribute* attribute, const std::string &head, const std::string &body, const std::string &legs, const std::string &feet, bool addAddon = false, bool addByte = false) {
 		auto look = attribute->getAttribute<uint16_t>();
 		msg.add<uint16_t>(look);
@@ -2296,6 +2375,8 @@ void ProtocolGame::sendHighscores(const std::vector<HighscoreCharacter> &charact
 	NetworkMessage msg;
 	msg.addByte(0xB1);
 	msg.addByte(0x00); // All data available
+	const std::string locale((player && !player->getLocale().empty()) ? std::string(player->getLocale()) : "en");
+	auto &tr = i18n::g_translator();
 
 	msg.addByte(1); // Worlds
 	auto serverName = g_configManager().getString(SERVER_NAME);
@@ -2310,7 +2391,7 @@ void ProtocolGame::sendHighscores(const std::vector<HighscoreCharacter> &charact
 
 	msg.skipBytes(1); // Vocation Count
 	msg.add<uint32_t>(0xFFFFFFFF); // All Vocations - hardcoded
-	msg.addString("(all)"); // All Vocations - hardcoded
+	msg.addString(tr.get("cpp.protocol.vocation_all", locale));
 
 	uint32_t selectedVocation = 0xFFFFFFFF;
 	const auto vocationsMap = g_vocations().getVocations();
@@ -2318,7 +2399,7 @@ void ProtocolGame::sendHighscores(const std::vector<HighscoreCharacter> &charact
 		const auto &vocation = it.second;
 		if (vocation->getFromVocation() == static_cast<uint32_t>(vocation->getId())) {
 			msg.add<uint32_t>(vocation->getFromVocation()); // Vocation Id
-			msg.addString(vocation->getVocName()); // Vocation Name
+			msg.addString(getLocalizedVocationName(vocation->getId(), vocation->getVocName(), locale)); // Vocation Name
 			++vocations;
 			if (vocation->getFromVocation() == vocationId) {
 				selectedVocation = vocationId;
@@ -2334,7 +2415,7 @@ void ProtocolGame::sendHighscores(const std::vector<HighscoreCharacter> &charact
 	for (const HighscoreCategory &category : highscoreCategories) {
 		g_logger().debug("[ProtocolGame::sendHighscores] - Category: {} - Name: {}", category.m_id, category.m_name);
 		msg.addByte(category.m_id); // Category Id
-		msg.addString(category.m_name); // Category Name
+		msg.addString(tr.get(category.m_name, locale)); // Category Name
 		if (category.m_id == categoryId) {
 			selectedCategory = categoryId;
 		}
@@ -3575,17 +3656,19 @@ void ProtocolGame::sendCyclopediaCharacterBaseInformation() {
 		return;
 	}
 
+	const std::string locale(player->getLocale().empty() ? "en" : std::string(player->getLocale()));
+
 	NetworkMessage msg;
 	msg.addByte(0xDA);
 	msg.addByte(CYCLOPEDIA_CHARACTERINFO_BASEINFORMATION);
 	msg.addByte(0x00);
 	msg.addString(player->getName());
-	msg.addString(player->getVocation()->getVocName());
+	msg.addString(getLocalizedVocationName(player->getVocation()->getId(), player->getVocation()->getVocName(), locale));
 	msg.add<uint16_t>(player->getLevel());
 	AddOutfit(msg, player->getDefaultOutfit(), false);
 
 	msg.addByte(0x01); // Store summary & Character titles
-	msg.addString(player->title().getCurrentTitleName()); // character title
+	msg.addString(getLocalizedCurrentTitleName(player, locale)); // character title
 	writeToOutputBuffer(msg);
 }
 
@@ -3951,6 +4034,7 @@ void ProtocolGame::sendCyclopediaCharacterStoreSummary() {
 	if (!player || oldProtocol) {
 		return;
 	}
+	const std::string locale((player && !player->getLocale().empty()) ? std::string(player->getLocale()) : "en");
 
 	NetworkMessage msg;
 	msg.addByte(0xDA);
@@ -3964,8 +4048,7 @@ void ProtocolGame::sendCyclopediaCharacterStoreSummary() {
 
 	msg.addByte(static_cast<uint8_t>(magic_enum::enum_count<Blessings>()));
 	for (auto bless : magic_enum::enum_values<Blessings>()) {
-		std::string name = toStartCaseWithSpace(magic_enum::enum_name(bless).data());
-		msg.addString(name);
+		msg.addString(getLocalizedBlessingName(bless, locale));
 		auto blessValue = enumToValue(bless);
 		if (player->hasBlessing(blessValue)) {
 			msg.addByte(static_cast<uint16_t>(player->blessings[blessValue - 1]));
@@ -4041,6 +4124,8 @@ void ProtocolGame::sendCyclopediaCharacterInspection() {
 	uint8_t inventoryItems = 0;
 	auto startInventory = msg.getBufferPosition();
 	msg.skipBytes(1);
+	const std::string locale(player->getLocale().empty() ? "en" : std::string(player->getLocale()));
+	auto &tr = i18n::g_translator();
 	for (std::underlying_type<Slots_t>::type slot = CONST_SLOT_FIRST; slot <= CONST_SLOT_LAST; slot++) {
 		std::shared_ptr<Item> inventoryItem = player->getInventoryItem(static_cast<Slots_t>(slot));
 		if (inventoryItem) {
@@ -4087,32 +4172,33 @@ void ProtocolGame::sendCyclopediaCharacterInspection() {
 	// Player title
 	if (player->title().getCurrentTitle() != 0) {
 		playerDescriptionSize++;
-		msg.addString("Character Title");
-		msg.addString(player->title().getCurrentTitleName());
+		msg.addString(tr.get("cpp.protocol.character_title_label", locale));
+		msg.addString(getLocalizedCurrentTitleName(player, locale));
 	}
 
 	// Level description
 	playerDescriptionSize++;
-	msg.addString("Level");
+	msg.addString(tr.get("cpp.protocol.level_label", locale));
 	msg.addString(std::to_string(player->getLevel()));
 
 	// Vocation description
 	playerDescriptionSize++;
-	msg.addString("Vocation");
-	msg.addString(player->getVocation()->getVocName());
+	msg.addString(tr.get("cpp.protocol.vocation_label", locale));
+	msg.addString(getLocalizedVocationName(player->getVocation()->getId(), player->getVocation()->getVocName(), locale));
 
 	// Loyalty title
-	if (!player->getLoyaltyTitle().empty()) {
+	const std::string loyaltyTitle = player->getLoyaltyTitleLocalized(locale);
+	if (!loyaltyTitle.empty()) {
 		playerDescriptionSize++;
-		msg.addString("Loyalty Title");
-		msg.addString(player->getLoyaltyTitle());
+		msg.addString(tr.get("cpp.protocol.loyalty_title_label", locale));
+		msg.addString(loyaltyTitle);
 	}
 
 	// Marriage description
 	if (const auto spouseId = player->getMarriageSpouse(); spouseId > 0) {
 		if (const auto &spouse = g_game().getPlayerByID(spouseId, true); spouse) {
 			playerDescriptionSize++;
-			msg.addString("Married to");
+			msg.addString(tr.get("cpp.protocol.married_to_label", locale));
 			msg.addString(spouse->getName());
 		}
 	}
@@ -4122,40 +4208,42 @@ void ProtocolGame::sendCyclopediaCharacterInspection() {
 		if (const auto &slot = player->getPreySlotById(static_cast<PreySlot_t>(slotId));
 		    slot && slot->isOccupied()) {
 			playerDescriptionSize++;
-			std::string activePrey = fmt::format("Active Prey {}", slotId + 1);
-			msg.addString(activePrey);
+			msg.addString(tr.format("cpp.protocol.active_prey_label", locale, {std::to_string(slotId + 1)}));
 
-			std::string desc;
+			std::string creatureName;
 			if (auto mtype = g_monsters().getMonsterTypeByRaceId(slot->selectedRaceId)) {
-				desc.append(mtype->name);
+				creatureName = mtype->name;
 			} else {
-				desc.append("Unknown creature");
+				creatureName = tr.get("cpp.protocol.unknown_creature", locale);
 			}
 
+			std::string bonusName;
 			if (slot->bonus == PreyBonus_Damage) {
-				desc.append(" (Improved Damage +");
+				bonusName = tr.get("cpp.protocol.prey_bonus_improved_damage", locale);
 			} else if (slot->bonus == PreyBonus_Defense) {
-				desc.append(" (Improved Defense +");
+				bonusName = tr.get("cpp.protocol.prey_bonus_improved_defense", locale);
 			} else if (slot->bonus == PreyBonus_Experience) {
-				desc.append(" (Improved Experience +");
+				bonusName = tr.get("cpp.protocol.prey_bonus_improved_experience", locale);
 			} else if (slot->bonus == PreyBonus_Loot) {
-				desc.append(" (Improved Loot +");
+				bonusName = tr.get("cpp.protocol.prey_bonus_improved_loot", locale);
+			} else {
+				bonusName = tr.get("cpp.protocol.prey_bonus_unknown", locale);
 			}
-			desc.append(fmt::format("{}%, remaining", slot->bonusPercentage));
+
 			uint8_t hours = slot->bonusTimeLeft / 3600;
 			uint8_t minutes = (slot->bonusTimeLeft - (hours * 3600)) / 60;
-			desc.append(fmt::format("{}:{}{}h", hours, (minutes < 10 ? "0" : ""), minutes));
-			msg.addString(desc);
+			const std::string timeLeft = fmt::format("{}:{:02}h", hours, minutes);
+			msg.addString(tr.format("cpp.protocol.active_prey_desc", locale, {creatureName, bonusName, std::to_string(slot->bonusPercentage), timeLeft}));
 		}
 	}
 
 	// Outfit description
 	playerDescriptionSize++;
-	msg.addString("Outfit");
+	msg.addString(tr.get("cpp.protocol.outfit_label", locale));
 	if (const auto outfit = Outfits::getInstance().getOutfitByLookType(player, player->getDefaultOutfit().lookType)) {
 		msg.addString(outfit->name);
 	} else {
-		msg.addString("unknown");
+		msg.addString(tr.get("cpp.protocol.unknown_label", locale));
 	}
 
 	msg.setBufferPosition(startInventory);
@@ -4172,6 +4260,35 @@ void ProtocolGame::sendCyclopediaCharacterBadges() {
 		return;
 	}
 
+	const std::string locale(player->getLocale().empty() ? "en" : std::string(player->getLocale()));
+	auto &tr = i18n::g_translator();
+	auto badgeKeyById = [](uint32_t badgeId) -> const char* {
+		switch (badgeId) {
+			case 1: return "cpp.badge.name_1";
+			case 2: return "cpp.badge.name_2";
+			case 3: return "cpp.badge.name_3";
+			case 4: return "cpp.badge.name_4";
+			case 5: return "cpp.badge.name_5";
+			case 6: return "cpp.badge.name_6";
+			case 7: return "cpp.badge.name_7";
+			case 8: return "cpp.badge.name_8";
+			case 9: return "cpp.badge.name_9";
+			case 10: return "cpp.badge.name_10";
+			case 11: return "cpp.badge.name_11";
+			case 12: return "cpp.badge.name_12";
+			case 13: return "cpp.badge.name_13";
+			case 14: return "cpp.badge.name_14";
+			case 15: return "cpp.badge.name_15";
+			case 16: return "cpp.badge.name_16";
+			case 17: return "cpp.badge.name_17";
+			case 18: return "cpp.badge.name_18";
+			case 19: return "cpp.badge.name_19";
+			case 20: return "cpp.badge.name_20";
+			case 21: return "cpp.badge.name_21";
+			default: return nullptr;
+		}
+	};
+
 	NetworkMessage msg;
 	msg.addByte(0xDA);
 	msg.addByte(CYCLOPEDIA_CHARACTERINFO_BADGES);
@@ -4182,7 +4299,7 @@ void ProtocolGame::sendCyclopediaCharacterBadges() {
 	msg.addByte(loggedPlayer ? 0x01 : 0x00); // IsOnline
 	msg.addByte(player->isPremium() ? 0x01 : 0x00); // IsPremium (GOD has always 'Premium')
 	// Character loyalty title
-	msg.addString(player->getLoyaltyTitle());
+	msg.addString(player->getLoyaltyTitleLocalized(locale));
 
 	uint8_t badgesSize = 0;
 	auto badgesSizePosition = msg.getBufferPosition();
@@ -4190,7 +4307,11 @@ void ProtocolGame::sendCyclopediaCharacterBadges() {
 	for (const auto &badge : g_game().getBadges()) {
 		if (player->badge().hasBadge(badge.m_id)) {
 			msg.add<uint32_t>(badge.m_id);
-			msg.addString(badge.m_name);
+			if (const char* badgeKey = badgeKeyById(badge.m_id); badgeKey != nullptr) {
+				msg.addString(tr.get(badgeKey, locale));
+			} else {
+				msg.addString(badge.m_name);
+			}
 			badgesSize++;
 		}
 	}
@@ -4206,6 +4327,7 @@ void ProtocolGame::sendCyclopediaCharacterTitles() {
 		return;
 	}
 
+	const std::string locale(player->getLocale().empty() ? "en" : std::string(player->getLocale()));
 	auto titles = g_game().getTitles();
 
 	NetworkMessage msg;
@@ -4216,9 +4338,11 @@ void ProtocolGame::sendCyclopediaCharacterTitles() {
 	msg.addByte(static_cast<uint8_t>(titles.size()));
 	for (const auto &title : titles) {
 		msg.addByte(title.m_id);
-		auto titleName = player->title().getNameBySex(player->getSex(), title.m_maleName, title.m_femaleName);
+		const auto titleName = getLocalizedTitleName(title, player->getSex(), locale);
+		const auto titleDescription = getLocalizedTitleDescription(title, locale);
+
 		msg.addString(titleName);
-		msg.addString(title.m_description);
+		msg.addString(titleDescription);
 		msg.addByte(title.m_permanent ? 0x01 : 0x00);
 		auto isUnlocked = player->title().isTitleUnlocked(title.m_id);
 		msg.addByte(isUnlocked ? 0x01 : 0x00);
@@ -5003,10 +5127,12 @@ void ProtocolGame::sendContainer(uint8_t cid, const std::shared_ptr<Container> &
 	msg.addByte(0x6E);
 
 	msg.addByte(cid);
+	const std::string locale(player->getLocale().empty() ? "en" : std::string(player->getLocale()));
+	auto &tr = i18n::g_translator();
 
 	if (container->getID() == ITEM_BROWSEFIELD) {
 		AddItem(msg, ITEM_BAG, 1, container->getTier());
-		msg.addString("Browse Field");
+		msg.addString(tr.get("cpp.protocol.browse_field", locale));
 	} else {
 		AddItem(msg, container);
 		msg.addString(translateItemName(container->getID(), container->getName())); // I18N
@@ -6824,6 +6950,9 @@ void ProtocolGame::sendRestingStatus(uint8_t protection) {
 		return;
 	}
 
+	const std::string locale(player->getLocale().empty() ? "en" : std::string(player->getLocale()));
+	auto &tr = i18n::g_translator();
+
 	NetworkMessage msg;
 	msg.addByte(0xA9);
 	msg.addByte(protection); // 1 / 0
@@ -6836,30 +6965,37 @@ void ProtocolGame::sendRestingStatus(uint8_t protection) {
 
 	msg.addByte(dailyStreak < 2 ? 0 : 1);
 	if (dailyStreak < 2) {
-		msg.addString("Resting Area (no active bonus)");
+		msg.addString(tr.get("cpp.protocol.resting_no_bonus", locale));
 	} else {
-		std::ostringstream ss;
-		ss << "Active Resting Area Bonuses: ";
+		std::vector<std::string> activeBonuses;
 		if (dailyStreak < DAILY_REWARD_DOUBLE_HP_REGENERATION) {
-			ss << "\nHit Points Regeneration";
+			activeBonuses.emplace_back(tr.get("cpp.protocol.resting_hp_regen", locale));
 		} else {
-			ss << "\nDouble Hit Points Regeneration";
+			activeBonuses.emplace_back(tr.get("cpp.protocol.resting_hp_regen_double", locale));
 		}
 		if (dailyStreak >= DAILY_REWARD_MP_REGENERATION) {
 			if (dailyStreak < DAILY_REWARD_DOUBLE_MP_REGENERATION) {
-				ss << ",\nMana Points Regeneration";
+				activeBonuses.emplace_back(tr.get("cpp.protocol.resting_mana_regen", locale));
 			} else {
-				ss << ",\nDouble Mana Points Regeneration";
+				activeBonuses.emplace_back(tr.get("cpp.protocol.resting_mana_regen_double", locale));
 			}
 		}
 		if (dailyStreak >= DAILY_REWARD_STAMINA_REGENERATION) {
-			ss << ",\nStamina Points Regeneration";
+			activeBonuses.emplace_back(tr.get("cpp.protocol.resting_stamina_regen", locale));
 		}
 		if (dailyStreak >= DAILY_REWARD_SOUL_REGENERATION) {
-			ss << ",\nSoul Points Regeneration";
+			activeBonuses.emplace_back(tr.get("cpp.protocol.resting_soul_regen", locale));
 		}
-		ss << ".";
-		msg.addString(ss.str());
+
+		std::ostringstream bonusList;
+		for (size_t i = 0; i < activeBonuses.size(); ++i) {
+			if (i > 0) {
+				bonusList << ",\n";
+			}
+			bonusList << activeBonuses[i];
+		}
+
+		msg.addString(tr.format("cpp.protocol.resting_active_bonuses", locale, {bonusList.str()}));
 	}
 	writeToOutputBuffer(msg);
 }
@@ -7541,6 +7677,8 @@ void ProtocolGame::sendOutfitWindow() {
 	Outfit_t currentOutfit = player->getDefaultOutfit();
 	auto isSupportOutfit = player->isWearingSupportOutfit();
 	bool mounted = false;
+	const std::string locale(player->getLocale().empty() ? "en" : std::string(player->getLocale()));
+	auto &tr = i18n::g_translator();
 
 	if (!isSupportOutfit) {
 		const auto currentMount = g_game().mounts->getMountByID(player->getLastMount());
@@ -7635,19 +7773,19 @@ void ProtocolGame::sendOutfitWindow() {
 
 	if (player->isAccessPlayer() && g_configManager().getBoolean(ENABLE_SUPPORT_OUTFIT)) {
 		msg.add<uint16_t>(75);
-		msg.addString("Gamemaster");
+		msg.addString(tr.get("cpp.protocol.support_outfit_gamemaster", locale));
 		msg.addByte(0);
 		msg.addByte(0x00);
 		++outfitSize;
 
 		msg.add<uint16_t>(266);
-		msg.addString("Customer Support");
+		msg.addString(tr.get("cpp.protocol.support_outfit_customer_support", locale));
 		msg.addByte(0);
 		msg.addByte(0x00);
 		++outfitSize;
 
 		msg.add<uint16_t>(302);
-		msg.addString("Community Manager");
+		msg.addString(tr.get("cpp.protocol.support_outfit_community_manager", locale));
 		msg.addByte(0);
 		msg.addByte(0x00);
 		++outfitSize;
@@ -9923,6 +10061,8 @@ void ProtocolGame::parseBosstiarySlot(NetworkMessage &msg) {
 }
 
 void ProtocolGame::sendPodiumDetails(NetworkMessage &msg, const std::vector<uint16_t> &toSendMonsters, bool isBoss) const {
+	const std::string locale((player && !player->getLocale().empty()) ? std::string(player->getLocale()) : "en");
+	auto &tr = i18n::g_translator();
 	auto toSendMonstersSize = static_cast<uint16_t>(toSendMonsters.size());
 	msg.add<uint16_t>(toSendMonstersSize);
 	for (const auto &raceId : toSendMonsters) {
@@ -9940,13 +10080,13 @@ void ProtocolGame::sendPodiumDetails(NetworkMessage &msg, const std::vector<uint
 		auto monsterOutfit = mType->info.outfit;
 		msg.add<uint16_t>(raceId);
 		auto isLookType = monsterOutfit.lookType != 0;
-		// "Tantugly's Head" boss have to send other looktype to the podium
-		if (monsterOutfit.lookTypeEx == 35105) {
-			monsterOutfit.lookTypeEx = 39003;
-			msg.addString("Tentugly");
-		} else {
-			msg.addString(mType->name);
-		}
+			// "Tantugly's Head" boss have to send other looktype to the podium
+			if (monsterOutfit.lookTypeEx == 35105) {
+				monsterOutfit.lookTypeEx = 39003;
+				msg.addString(tr.get("cpp.protocol.tentugly_name", locale));
+			} else {
+				msg.addString(mType->name);
+			}
 		msg.add<uint16_t>(monsterOutfit.lookType);
 		if (isLookType) {
 			msg.addByte(monsterOutfit.lookHead);

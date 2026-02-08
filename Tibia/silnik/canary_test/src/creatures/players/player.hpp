@@ -9,6 +9,8 @@
 
 #pragma once
 
+#include <string_view>
+
 #include "creatures/creature.hpp"
 #include "enums/forge_conversion.hpp"
 #include "game/bank/bank.hpp"
@@ -194,6 +196,7 @@ public:
 		return name;
 	}
 	std::string getDescription(int32_t lookDistance) override;
+	std::string getDescriptionLocalized(int32_t lookDistance, const std::string &viewerLocale);
 	void setLocale(const std::string &value);
 	[[nodiscard]] const std::string &getLocale() const;
 
@@ -1181,6 +1184,7 @@ public:
 	void setLoyaltyBonus(uint16_t bonus);
 	void setLoyaltyTitle(std::string title);
 	std::string getLoyaltyTitle() const;
+	std::string getLoyaltyTitleLocalized(std::string_view locale) const;
 	uint16_t getLoyaltyBonus() const;
 
 	/*******************************************************************************

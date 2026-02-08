@@ -728,17 +728,17 @@ do
 	local loyaltySystem = {
 		enable = configManager.getBoolean(configKeys.LOYALTY_ENABLED),
 		titles = {
-			[1] = { name = "Scout of Tibia", points = 50 },
-			[2] = { name = "Sentinel of Tibia", points = 100 },
-			[3] = { name = "Steward of Tibia", points = 200 },
-			[4] = { name = "Warden of Tibia", points = 400 },
-			[5] = { name = "Squire of Tibia", points = 1000 },
-			[6] = { name = "Warrior of Tibia", points = 2000 },
-			[7] = { name = "Keeper of Tibia", points = 3000 },
-			[8] = { name = "Guardian of Tibia", points = 4000 },
-			[9] = { name = "Sage of Tibia", points = 5000 },
-			[10] = { name = "Savant of Tibia", points = 6000 },
-			[11] = { name = "Enlightened of Tibia", points = 7000 },
+			[1] = { key = "lib.player.loyalty_title_1", points = 50 },
+			[2] = { key = "lib.player.loyalty_title_2", points = 100 },
+			[3] = { key = "lib.player.loyalty_title_3", points = 200 },
+			[4] = { key = "lib.player.loyalty_title_4", points = 400 },
+			[5] = { key = "lib.player.loyalty_title_5", points = 1000 },
+			[6] = { key = "lib.player.loyalty_title_6", points = 2000 },
+			[7] = { key = "lib.player.loyalty_title_7", points = 3000 },
+			[8] = { key = "lib.player.loyalty_title_8", points = 4000 },
+			[9] = { key = "lib.player.loyalty_title_9", points = 5000 },
+			[10] = { key = "lib.player.loyalty_title_10", points = 6000 },
+			[11] = { key = "lib.player.loyalty_title_11", points = 7000 },
 		},
 		bonus = {
 			{ minPoints = 360, percentage = 5 },
@@ -763,15 +763,15 @@ do
 		local playerLoyaltyPoints = self:getLoyaltyPoints()
 
 		-- Title
-		local title = ""
+		local loyaltyTitleKey = ""
 		for _, titleTable in ipairs(loyaltySystem.titles) do
 			if playerLoyaltyPoints >= titleTable.points then
-				title = titleTable.name
+				loyaltyTitleKey = titleTable.key
 			end
 		end
 
-		if title ~= "" then
-			self:setLoyaltyTitle(title)
+		if loyaltyTitleKey ~= "" then
+			self:setLoyaltyTitle(loyaltyTitleKey)
 		end
 
 		-- Bonus

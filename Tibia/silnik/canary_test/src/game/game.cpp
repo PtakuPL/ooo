@@ -206,13 +206,13 @@ namespace InternalGame {
 } // Namespace InternalGame
 
 Game::Game() {
-	offlineTrainingWindow.choices.emplace_back("Sword Fighting and Shielding", SKILL_SWORD);
-	offlineTrainingWindow.choices.emplace_back("Axe Fighting and Shielding", SKILL_AXE);
-	offlineTrainingWindow.choices.emplace_back("Club Fighting and Shielding", SKILL_CLUB);
-	offlineTrainingWindow.choices.emplace_back("Distance Fighting and Shielding", SKILL_DISTANCE);
-	offlineTrainingWindow.choices.emplace_back("Magic Level and Shielding", SKILL_MAGLEVEL);
-	offlineTrainingWindow.buttons.emplace_back("Okay", 1);
-	offlineTrainingWindow.buttons.emplace_back("Cancel", 0);
+	offlineTrainingWindow.choices.emplace_back("cpp.game.offline_training_choice_sword", SKILL_SWORD);
+	offlineTrainingWindow.choices.emplace_back("cpp.game.offline_training_choice_axe", SKILL_AXE);
+	offlineTrainingWindow.choices.emplace_back("cpp.game.offline_training_choice_club", SKILL_CLUB);
+	offlineTrainingWindow.choices.emplace_back("cpp.game.offline_training_choice_distance", SKILL_DISTANCE);
+	offlineTrainingWindow.choices.emplace_back("cpp.game.offline_training_choice_magic", SKILL_MAGLEVEL);
+	offlineTrainingWindow.buttons.emplace_back("cpp.game.offline_training_button_ok", 1);
+	offlineTrainingWindow.buttons.emplace_back("cpp.game.offline_training_button_cancel", 0);
 	offlineTrainingWindow.defaultEscapeButton = 1;
 	offlineTrainingWindow.defaultEnterButton = 0;
 	offlineTrainingWindow.priority = true;
@@ -383,15 +383,15 @@ Game::Game() {
 	};
 
 	m_highscoreCategories = {
-		HighscoreCategory("Experience Points", static_cast<uint8_t>(HighscoreCategories_t::EXPERIENCE)),
-		HighscoreCategory("Fist Fighting", static_cast<uint8_t>(HighscoreCategories_t::FIST_FIGHTING)),
-		HighscoreCategory("Club Fighting", static_cast<uint8_t>(HighscoreCategories_t::CLUB_FIGHTING)),
-		HighscoreCategory("Sword Fighting", static_cast<uint8_t>(HighscoreCategories_t::SWORD_FIGHTING)),
-		HighscoreCategory("Axe Fighting", static_cast<uint8_t>(HighscoreCategories_t::AXE_FIGHTING)),
-		HighscoreCategory("Distance Fighting", static_cast<uint8_t>(HighscoreCategories_t::DISTANCE_FIGHTING)),
-		HighscoreCategory("Shielding", static_cast<uint8_t>(HighscoreCategories_t::SHIELDING)),
-		HighscoreCategory("Fishing", static_cast<uint8_t>(HighscoreCategories_t::FISHING)),
-		HighscoreCategory("Magic Level", static_cast<uint8_t>(HighscoreCategories_t::MAGIC_LEVEL))
+		HighscoreCategory("cpp.game.highscore_category_experience", static_cast<uint8_t>(HighscoreCategories_t::EXPERIENCE)),
+		HighscoreCategory("cpp.game.highscore_category_fist", static_cast<uint8_t>(HighscoreCategories_t::FIST_FIGHTING)),
+		HighscoreCategory("cpp.game.highscore_category_club", static_cast<uint8_t>(HighscoreCategories_t::CLUB_FIGHTING)),
+		HighscoreCategory("cpp.game.highscore_category_sword", static_cast<uint8_t>(HighscoreCategories_t::SWORD_FIGHTING)),
+		HighscoreCategory("cpp.game.highscore_category_axe", static_cast<uint8_t>(HighscoreCategories_t::AXE_FIGHTING)),
+		HighscoreCategory("cpp.game.highscore_category_distance", static_cast<uint8_t>(HighscoreCategories_t::DISTANCE_FIGHTING)),
+		HighscoreCategory("cpp.game.highscore_category_shielding", static_cast<uint8_t>(HighscoreCategories_t::SHIELDING)),
+		HighscoreCategory("cpp.game.highscore_category_fishing", static_cast<uint8_t>(HighscoreCategories_t::FISHING)),
+		HighscoreCategory("cpp.game.highscore_category_magic_level", static_cast<uint8_t>(HighscoreCategories_t::MAGIC_LEVEL))
 	};
 
 	m_summaryCategories = {
@@ -5661,15 +5661,17 @@ void Game::playerQuickLoot(uint32_t playerId, const Position &pos, uint16_t item
 			auto &tr = i18n::g_translator();
 			if (ret == RETURNVALUE_NOERROR) {
 				player->sendLootStats(item, item->getItemCount());
-				ss << tr.get("cpp.game.you_looted", loc);
+				if (worth != 0) {
+					ss << tr.format("cpp.game.quick_loot_success_gold", loc, { std::to_string(worth) });
+				} else {
+					ss << tr.get("cpp.game.quick_loot_success_one_item", loc);
+				}
 			} else {
-				ss << tr.get("cpp.game.could_not_loot", loc);
-			}
-
-			if (worth != 0) {
-				ss << worth << " gold.";
-			} else {
-				ss << "1 item.";
+				if (worth != 0) {
+					ss << tr.format("cpp.game.quick_loot_fail_gold", loc, { std::to_string(worth) });
+				} else {
+					ss << tr.get("cpp.game.quick_loot_fail_one_item", loc);
+				}
 			}
 
 			player->sendTextMessage(MESSAGE_LOOT, ss.str());
@@ -8140,57 +8142,54 @@ bool Game::combatChangeMana(const std::shared_ptr<Creature> &attacker, const std
 
 		target->drainMana(attacker, manaLoss);
 
-		std::stringstream ss;
-
-		std::string damageString = std::to_string(manaLoss);
-
-		std::string spectatorMessage;
-
 		TextMessage message;
 		message.position = targetPos;
 		message.primary.value = manaLoss;
 		message.primary.color = TEXTCOLOR_BLUE;
+		auto &mtr = i18n::g_translator();
+		const std::string manaAmount = std::to_string(manaLoss);
+		const std::string targetName = ucfirst(target->getNameDescription());
+		std::unordered_map<std::string, std::string> spectatorManaCache;
 
 		for (const auto &spectator : spectators) {
 			const auto &tmpPlayer = spectator->getPlayer();
 			if (!tmpPlayer) {
 				continue;
 			}
+			const std::string loc(tmpPlayer->getLocale().empty() ? "en" : std::string(tmpPlayer->getLocale()));
 
 			if (tmpPlayer == attackerPlayer && attackerPlayer != targetPlayer) {
-				ss.str({});
-				ss << ucfirst(target->getNameDescription()) << " loses " << damageString << " mana due to your attack.";
 				message.type = MESSAGE_DAMAGE_DEALT;
-				message.text = ss.str();
+				const std::string key = damage.critical ? "cpp.combat.mana_attacker_crit" : "cpp.combat.mana_attacker";
+				message.text = mtr.format(key, loc, {targetName, manaAmount});
 			} else if (tmpPlayer == targetPlayer) {
-				ss.str({});
-				ss << "You lose " << damageString << "";
-				if (!attacker) {
-					ss << '.';
-				} else if (targetPlayer == attackerPlayer) {
-					ss << " due to your own attack.";
-				} else {
-					ss << " mana due to an attack by " << attacker->getNameDescription() << '.';
-				}
 				message.type = MESSAGE_DAMAGE_RECEIVED;
-				message.text = ss.str();
-			} else {
-				if (spectatorMessage.empty()) {
-					ss.str({});
-					ss << ucfirst(target->getNameDescription()) << " loses " << damageString << " mana";
-					if (attacker) {
-						ss << " due to ";
-						if (attacker == target) {
-							ss << (targetPlayer ? targetPlayer->getPossessivePronoun() : "its") << " own attack";
-						} else {
-							ss << "an attack by " << attacker->getNameDescription();
-						}
-					}
-					ss << '.';
-					spectatorMessage = ss.str();
+				if (!attacker) {
+					message.text = mtr.format("cpp.combat.mana_target_none", loc, {manaAmount});
+				} else if (targetPlayer == attackerPlayer) {
+					const std::string key = damage.critical ? "cpp.combat.mana_target_self_crit" : "cpp.combat.mana_target_self";
+					message.text = mtr.format(key, loc, {manaAmount});
+				} else {
+					const std::string key = damage.critical ? "cpp.combat.mana_target_by_crit" : "cpp.combat.mana_target_by";
+					message.text = mtr.format(key, loc, {manaAmount, attacker->getNameDescription()});
 				}
+			} else {
 				message.type = MESSAGE_DAMAGE_OTHERS;
-				message.text = spectatorMessage;
+				auto it = spectatorManaCache.find(loc);
+				if (it != spectatorManaCache.end()) {
+					message.text = it->second;
+				} else {
+					if (!attacker) {
+						message.text = mtr.format("cpp.combat.mana_spectator_none", loc, {targetName, manaAmount});
+					} else if (attacker == target) {
+						std::string possessive = targetPlayer ? targetPlayer->getPossessivePronoun() : "its";
+						message.text = mtr.format("cpp.combat.mana_spectator_self", loc, {targetName, manaAmount, possessive});
+					} else {
+						const std::string key = damage.critical ? "cpp.combat.mana_spectator_by_crit" : "cpp.combat.mana_spectator_by";
+						message.text = mtr.format(key, loc, {targetName, manaAmount, attacker->getNameDescription()});
+					}
+					spectatorManaCache[loc] = message.text;
+				}
 			}
 			tmpPlayer->sendTextMessage(message);
 		}
@@ -9734,7 +9733,20 @@ void Game::sendOfflineTrainingDialog(const std::shared_ptr<Player> &player) {
 	}
 
 	if (!player->hasModalWindowOpen(offlineTrainingWindow.id)) {
-		player->sendModalWindow(offlineTrainingWindow);
+		ModalWindow localizedWindow = offlineTrainingWindow;
+		const std::string loc(player->getLocale().empty() ? "en" : std::string(player->getLocale()));
+		auto &tr = i18n::g_translator();
+		localizedWindow.title = tr.get(localizedWindow.title, loc);
+		localizedWindow.message = tr.get(localizedWindow.message, loc);
+
+		for (auto &button : localizedWindow.buttons) {
+			button.first = tr.get(button.first, loc);
+		}
+		for (auto &choice : localizedWindow.choices) {
+			choice.first = tr.get(choice.first, loc);
+		}
+
+		player->sendModalWindow(localizedWindow);
 	}
 }
 
@@ -9962,14 +9974,14 @@ void Game::playerSetMonsterPodium(uint32_t playerId, uint32_t monsterRaceId, con
 
 	// Change Podium name
 	if (monsterVisible) {
-		std::ostringstream name;
-		item->removeAttribute(ItemAttribute_t::NAME);
-		name << item->getName() << " displaying ";
-		if (changeTentuglyName) {
-			name << "Tentugly";
-		} else {
-			name << mType->name;
-		}
+			std::ostringstream name;
+			item->removeAttribute(ItemAttribute_t::NAME);
+			name << item->getName() << " displaying ";
+			if (changeTentuglyName) {
+				name << i18n::g_translator().get("cpp.game.tentugly_name", "en");
+			} else {
+				name << mType->name;
+			}
 		item->setAttribute(ItemAttribute_t::NAME, name.str());
 	} else {
 		item->removeAttribute(ItemAttribute_t::NAME);

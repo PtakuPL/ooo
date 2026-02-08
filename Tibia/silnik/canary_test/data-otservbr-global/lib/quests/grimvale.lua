@@ -41,7 +41,7 @@ local function final()
 		teleport:setActionId(12450)
 	end
 	if spec then
-		spec:say("You are the contenders. This is your only chance to break the Curse of The Full Moon. Make it count!", TALKTYPE_MONSTER_SAY, false, nil, Position(33419, 31539, 10))
+		spec:sayLocalized("scripts.grimvale.contenders_speech", TALKTYPE_MONSTER_SAY, false, nil, Position(33419, 31539, 10))
 	end
 	local feroxa = Game.createMonster("Feroxa", Position(33380, 31537, 11), true, true)
 	addEvent(removeFeroxa, 5 * 60 * 1000, feroxa:getId())
@@ -82,12 +82,12 @@ function grimvaleSpectators()
 	if Game.getStorageValue(GlobalStorage.Feroxa.Active) == 2 then
 		addEvent(removeItems, 15 * 60 * 1000)
 		addEvent(loadMap, 15 * 60 * 1000)
-		addEvent(Game.broadcastMessage, 15 * 60 * 1000, "The full moon is completely exposed: Feroxa awaits!", MESSAGE_EVENT_ADVANCE)
+		addEvent(Game.broadcastLocalizedMessage, 15 * 60 * 1000, "scripts.grimvale.feroxa_awaits", MESSAGE_EVENT_ADVANCE)
 		addEvent(final, 30 * 60 * 1000)
 		Game.setStorageValue(GlobalStorage.Feroxa.Active, 3)
 		return true
 	end
 	Game.setStorageValue(GlobalStorage.Feroxa.Active, 2)
 	addEvent(grimvaleSpectators, 15 * 60 * 1000)
-	addEvent(Game.broadcastMessage, 15 * 60 * 1000, "Half of the current full moon is visible now, there are still a lot of clouds in front of it.", MESSAGE_EVENT_ADVANCE)
+	addEvent(Game.broadcastLocalizedMessage, 15 * 60 * 1000, "scripts.grimvale.full_moon_partial", MESSAGE_EVENT_ADVANCE)
 end

@@ -45,7 +45,7 @@ local function handleItemDescription(inspectedThing, lookDistance, player)
 end
 
 local function handleCreatureDescription(inspectedThing, lookDistance, player)
-	local descriptionText = inspectedThing:getDescription(lookDistance)
+	local descriptionText = inspectedThing:getDescription(lookDistance, player)
 
 	if inspectedThing:isMonster() then
 		local monsterMaster = inspectedThing:getMaster()

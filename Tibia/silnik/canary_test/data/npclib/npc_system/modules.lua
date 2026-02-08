@@ -74,10 +74,13 @@ if Modules == nil then
 		if parameters.i18nKey then
 			-- Używamy sendLocalizedTextMessage z kluczem i18n
 			local args = {}
-			-- Zbieramy argumenty z parseInfo dla placeholderów {0}, {1}, etc.
-			if parseInfo[TAG_PLAYERNAME] then
-				table.insert(args, parseInfo[TAG_PLAYERNAME])
+			-- Custom i18nArgs first (become {0}, {1}, ...)
+			if parameters.i18nArgs then
+				for _, v in ipairs(parameters.i18nArgs) do
+					table.insert(args, tostring(v))
+				end
 			end
+			-- Then append standard TAG args after custom args
 			if parseInfo[TAG_TRAVELCOST] then
 				table.insert(args, parseInfo[TAG_TRAVELCOST])
 			end

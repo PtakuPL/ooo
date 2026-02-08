@@ -79,7 +79,7 @@ end
 
 -- Travel
 local function addTravelKeyword(keyword, text, cost, destination)
-	local travelKeyword = keywordHandler:addKeyword({ keyword }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.svenson.stdmod_1" .. text, cost = cost })
+	local travelKeyword = keywordHandler:addKeyword({ keyword }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.svenson.stdmod_1", i18nArgs = { text }, cost = cost })
 	travelKeyword:addChildKeyword({ "yes" }, StdModule.travel, { npcHandler = npcHandler, premium = false, cost = cost, destination = destination })
 	travelKeyword:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.svenson.stdmod_2", reset = true })
 end

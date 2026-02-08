@@ -74,7 +74,7 @@ end
 
 -- Travel
 local function addTravelKeyword(keyword, destination)
-	local travelKeyword = keywordHandler:addKeyword({ keyword }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.scrutinon.stdmod_1" .. keyword:titleCase() .. "?" })
+	local travelKeyword = keywordHandler:addKeyword({ keyword }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.scrutinon.stdmod_1", i18nArgs = { keyword:titleCase() }})
 	travelKeyword:addChildKeyword({ "yes" }, StdModule.travel, { npcHandler = npcHandler, premium = false, destination = destination })
 	travelKeyword:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.scrutinon.stdmod_2", reset = true })
 end

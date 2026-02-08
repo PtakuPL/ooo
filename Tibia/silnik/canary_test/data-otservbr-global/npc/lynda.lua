@@ -240,10 +240,10 @@ local function confirmRemoveEngage(npc, creature, message, keywords, parameters,
 			doPlayerAddItem(creature, 9586, 1)
 			setPlayerMarriageStatus(player:getGuid(), 0)
 			setPlayerSpouse(player:getGuid(), -1)
-			npcHandler:say(parameters.text, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_remove_engage", { getPlayerNameById(playerSpouse) })
 			keywordHandler:moveUp(player, parameters.moveup)
 		end
-		node:addChildKeyword({ "yes" }, removeEngage, { moveup = 3, i18nKey = "npc.lynda.keyword_1" .. getPlayerNameById(playerSpouse) .. "} has been removed. Take your wedding ring back." })
+		node:addChildKeyword({ "yes" }, removeEngage, { moveup = 3 })
 	else
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_18")
 		keywordHandler:moveUp(player, 2)
@@ -266,10 +266,10 @@ local function confirmDivorce(npc, creature, message, keywords, parameters, node
 			setPlayerSpouse(player:getGuid(), -1)
 			setPlayerMarriageStatus(spouse, 0)
 			setPlayerSpouse(spouse, -1)
-			npcHandler:say(parameters.text, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_divorce", { getPlayerNameById(playerSpouse) })
 			keywordHandler:moveUp(player, parameters.moveup)
 		end
-		node:addChildKeyword({ "yes" }, divorce, { moveup = 3, i18nKey = "npc.lynda.keyword_2" .. getPlayerNameById(playerSpouse) .. "}. Think better next time after marrying someone." })
+		node:addChildKeyword({ "yes" }, divorce, { moveup = 3 })
 	else
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_20")
 		keywordHandler:moveUp(player, 2)

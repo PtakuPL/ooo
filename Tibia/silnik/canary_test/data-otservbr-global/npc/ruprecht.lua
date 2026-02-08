@@ -85,11 +85,11 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "offers") then
-		local offersText = "I have these offers: "
+		local offersList = ""
 		for i, v in pairs(itemsTable) do
-			offersText = offersText .. "{" .. i .. "}, "
+			offersList = offersList .. "{" .. i .. "}, "
 		end
-		npcHandler:say(offersText, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ruprecht.say_offers", { offersList })
 	end
 
 	if npcHandler:getTopic(playerId) == 0 then

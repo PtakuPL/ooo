@@ -289,12 +289,6 @@ local function townTravelHandler(npc, creature, message, keywords, parameters, n
 	elseif (parameters.sailableTowns == true) and parameters.i18nKey then
 		local sailableTownNames = player:isPremium() and townNames.premium or townNames.free
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, parameters.i18nKey, { sailableTownNames })
-	elseif (parameters.sailableTowns == true) and parameters.text then
-		if player:isPremium() then
-			npcHandler:say(string.gsub(parameters.text, "|TOWNS|", townNames.premium), npc, creature)
-		else
-			npcHandler:say(string.gsub(parameters.text, "|TOWNS|", townNames.free), npc, creature)
-		end
 	end
 	return true
 end
@@ -363,7 +357,8 @@ readyNode:addChildKeyword({ "no" }, StdModule.say, {
 -- hi, no, ...
 local aboutTownsNode = notReadyNode:addChildKeyword({ "yes" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.captain_dreadnought.stdmod_11" .. townNames.all .. ".",
+	i18nKey = "npc.captain_dreadnought.stdmod_16",
+	i18nArgs = { townNames.all },
 })
 local aboutSailNode = notReadyNode:addChildKeyword({ "no" }, townTravelHandler, {
 	sailableTowns = true,
@@ -376,7 +371,8 @@ defaultTownNode:addChildKeyword({ "no" }, townTravelHandler, { decline = true })
 -- Towns topic nodes
 local townsNode = keywordHandler:addKeyword({ "cities" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.captain_dreadnought.stdmod_12" .. townNames.all .. "?",
+	i18nKey = "npc.captain_dreadnought.stdmod_18",
+	i18nArgs = { townNames.all },
 })
 for id, town in pairs(towns) do
 	local townNode = KeywordNode:new({ town.name:lower() }, StdModule.say, { npcHandler = npcHandler, text = town.about })

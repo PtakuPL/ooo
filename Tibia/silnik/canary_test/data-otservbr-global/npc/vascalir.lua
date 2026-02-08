@@ -336,7 +336,7 @@ keywordHandler:addKeyword({ "yes" }, nil, {}, function(player)
 	return player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission03) == 1 and player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.RatKills) < 5
 end, function(player)
 	local ratKills = player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.RatKills)
-	npcHandler:say("You still need to kill " .. (5 - ratKills) .. " more rats. Come back once you've killed enough for some experience and equipment!", player.uid)
+	player:sendLocalizedTextMessage(MESSAGE_NPC_FROM, "npc.vascalir.say_rats_remaining", { tostring(5 - ratKills) })
 end)
 keywordHandler:addAliasKeyword({ "no" })
 

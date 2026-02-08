@@ -695,7 +695,7 @@ function createHirelingType(HirelingName)
 		elseif MsgContains(message, "service") then
 			npcHandler:setTopic(playerId, TOPIC.SERVICES)
 			local servicesMsg = getHirelingServiceString(creature)
-			npcHandler:say(servicesMsg, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hireling.say_services", { servicesMsg })
 		elseif npcHandler:getTopic(playerId) == TOPIC.SERVICES then
 			if MsgContains(message, "bank") then
 				local bankerSkillName = HIRELING_SKILLS.BANKER[2]

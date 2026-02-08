@@ -27,6 +27,9 @@ QUEST_ENTRY_RE = re.compile(r"^\s*\[(\d+)\]\s*=\s*\{\s*$")
 MISSION_ENTRY_RE = QUEST_ENTRY_RE
 STRING_FIELD_RE = re.compile(r"^\s*(name|description)\s*=\s*([\"'])")
 STATE_RE = re.compile(r"^\s*\[(\d+)\]\s*=\s*([\"'])")
+DYNAMIC_DESCRIPTION_RE = re.compile(r"^\s*description\s*=\s*function\s*\(")
+DYNAMIC_FORMAT_CALL_RE = re.compile(r"string\.format\s*\(\s*([\"'])(?P<txt>(?:\\.|(?!\1).)*?)\1", re.DOTALL)
+DYNAMIC_COLON_FORMAT_RE = re.compile(r"\(\s*([\"'])(?P<txt>(?:\\.|(?!\1).)*?)\1\s*\)\s*:format\s*\(", re.DOTALL)
 
 
 @dataclass
@@ -34,11 +37,12 @@ class ExtractStats:
 	quests: int = 0
 	mission_names: int = 0
 	descriptions: int = 0
+	dynamic_descriptions: int = 0
 	states: int = 0
 
 	@property
 	def total(self) -> int:
-		return self.quests + self.mission_names + self.descriptions + self.states
+		return self.quests + self.mission_names + self.descriptions + self.dynamic_descriptions + self.states
 
 
 def count_leading_tabs(line: str) -> int:
@@ -160,6 +164,27 @@ def decode_lua_string(raw: str) -> str:
 	return "".join(out)
 
 
+def extract_dynamic_template(lines: list[str], start_idx: int) -> tuple[str | None, int]:
+	"""
+	Extract first string.format template from a dynamic mission description function.
+	Returns (template_or_none, end_line_idx_of_function).
+	"""
+	idx = start_idx + 1
+	while idx < len(lines):
+		stripped = lines[idx].strip()
+		tabs = count_leading_tabs(lines[idx])
+		if tabs == 5 and stripped == "end,":
+			block = "\n".join(lines[start_idx : idx + 1])
+			match = DYNAMIC_FORMAT_CALL_RE.search(block) or DYNAMIC_COLON_FORMAT_RE.search(block)
+			if not match:
+				return None, idx
+			return decode_lua_string(match.group("txt")), idx
+
+		idx += 1
+
+	return None, len(lines) - 1
+
+
 def extract_questlog_strings(quests_file: Path) -> tuple[dict[str, str], ExtractStats]:
 	lines = quests_file.read_text(encoding="utf-8").splitlines()
 	result: dict[str, str] = {}
@@ -221,6 +246,15 @@ def extract_questlog_strings(quests_file: Path) -> tuple[dict[str, str], Extract
 					stats.descriptions += 1
 				result[key] = decoded
 				idx += 1
+				continue
+
+			if DYNAMIC_DESCRIPTION_RE.match(line) and quest_id is not None:
+				template, function_end_idx = extract_dynamic_template(lines, idx)
+				if template:
+					key = f"questlog.quest_{quest_id}.mission_{mission_id}.description_dynamic"
+					result[key] = template
+					stats.dynamic_descriptions += 1
+				idx = function_end_idx + 1
 				continue
 
 		if in_missions and mission_id is None:
@@ -326,7 +360,7 @@ def main(argv: list[str]) -> int:
 	print(
 		"[i18n] Parsed "
 		f"{stats.total:,} questlog keys "
-		f"(quests: {stats.quests}, mission names: {stats.mission_names}, descriptions: {stats.descriptions}, states: {stats.states})"
+		f"(quests: {stats.quests}, mission names: {stats.mission_names}, descriptions: {stats.descriptions}, dynamic: {stats.dynamic_descriptions}, states: {stats.states})"
 	)
 
 	# argparse append + default duplicates "en" when passed explicitly; de-duplicate preserving order

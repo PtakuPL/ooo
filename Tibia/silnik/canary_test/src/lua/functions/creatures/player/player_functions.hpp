@@ -42,6 +42,7 @@ class PlayerFunctions {
 	static int luaPlayerSetAccountType(lua_State* L);
 	static int luaPlayerGetLocale(lua_State* L);
 	static int luaPlayerSetLocale(lua_State* L);
+	static int luaPlayerGetTranslation(lua_State* L);
 
 	static int luaPlayerAddBestiaryKill(lua_State* L);
 	static int luaPlayerIsMonsterBestiaryUnlocked(lua_State* L);

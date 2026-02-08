@@ -1490,3 +1490,91 @@ Kolejny moduł C++ ma komplet EN jako źródło do tłumaczeń na wszystkie jęz
   - `Item::getNameDescription(..., locale)`
   - `itemType:getName([player|string locale])`
 - Testów nie uruchamiano (zgodnie z ustaleniem projektowym).
+
+---
+
+## 72) Kontynuacja prac (Questlog: dynamiczne opisy misji przez i18n key + fallback) - 2026-02-08
+
+### Pliki
+- `data/libs/functions/quests.lua`
+
+### Co zmieniono
+- Rozszerzono runtime questloga o obsługę dynamicznych opisów misji (`description = function(player) ...`) przez klucz:
+  - `questlog.quest_<questId>.mission_<missionId>.description_dynamic`
+- Dodano helpery:
+  - `getQuestlogMissionDynamicDescription(...)`
+  - `evaluateDynamicDescription(...)`
+- `evaluateDynamicDescription(...)`:
+  - tymczasowo przechwytuje `string.format(...)` podczas wykonania funkcji opisu,
+  - zbiera template i argumenty,
+  - po tłumaczeniu template formatuje wynik już w locale gracza,
+  - przy problemie (brak klucza / błąd formatowania) zachowuje fallback do dotychczasowego tekstu.
+- Dodano bezpieczny fallback unpack:
+  - `UNPACK_ARGS = table.unpack or unpack`
+- Drobna stabilizacja:
+  - `resolveQuestlogMarker(...)` zwraca pusty string dla `nil` (zamiast potencjalnego `"nil"`).
+
+### Po co
+- Domknięcie luki po statycznych stringach questloga: opisy dynamiczne (z licznikami `%d/%s`) też przechodzą przez i18n.
+- Zachowanie kompatybilności i bezpiecznego fallbacku bez zmiany logiki questów.
+
+---
+
+## 73) Kontynuacja prac (Eksporter questloga: pełny zakres + dynamic templates) - 2026-02-08
+
+### Pliki
+- `tools/export_questlog_translations.py`
+- `i18n/en/questlog.json`
+
+### Co zmieniono
+- Rozszerzono ekstraktor questloga o wykrywanie i eksport dynamicznych templatek z funkcji opisów:
+  - `string.format("...", ...)`
+  - `( "..." ):format(...)`
+- Dodano metrykę `dynamic_descriptions` w statystykach eksportu.
+- Przegenerowano EN pack questloga:
+  - łącznie `1,918` kluczy,
+  - w tym `21` kluczy `description_dynamic`.
+
+### Wynik eksportu
+- `quests`: 50
+- `mission names`: 452
+- `descriptions` (statyczne): 31
+- `descriptions` (dynamic templates): 21
+- `states`: 1363
+
+### Po co
+- Questlog EN staje się kompletnym źródłem tłumaczeń dla nazw, stanów i opisów (w tym dynamicznych).
+- Ułatwia osobny projekt tłumaczeń 54 locale z fallbackiem EN.
+
+---
+
+## 74) Kontynuacja prac (Pipeline: etap questlog w standardowym przebiegu) - 2026-02-08
+
+### Pliki
+- `tools/i18n_pipeline.py`
+
+### Co zmieniono
+- Rozszerzono pipeline o etap eksportu questloga:
+  - `tools/export_questlog_translations.py --locale en ...`
+- Dodano flagę:
+  - `--skip-questlog`
+- Zaktualizowano opis pipeline (`extract -> sync -> items -> questlog -> client-export -> report`).
+
+### Po co
+- Automatyczna synchronizacja `questlog.json` przy standardowym runie pipeline.
+- Eliminacja ryzyka, że nowe/zmienione wpisy w `lib/core/quests.lua` nie trafią do i18n EN.
+
+---
+
+## 75) Walidacja po tym etapie
+- `python3 -m py_compile tools/export_questlog_translations.py tools/i18n_pipeline.py`
+- `python3 -m json.tool i18n/en/questlog.json`
+- `git diff --check`
+- Kontrola liczników w `i18n/en/questlog.json`:
+  - `keys: 1918`
+  - `quests: 50`
+  - `mission_names: 452`
+  - `description: 31`
+  - `description_dynamic: 21`
+  - `states: 1363`
+- Testów runtime/CI nie uruchamiano (zgodnie z ustaleniem: testy dopiero na GitHub Actions po pełnym domknięciu i18n).

@@ -4,7 +4,8 @@ local function sortSpellsByLevel(spellList, levelKey)
 	end)
 end
 
-local function appendSpellsInfo(spellList, header, levelKey, manaKey)
+local function appendSpellsInfo(spellList, headerKey, levelKey, manaKey, player)
+	local header = Translator.getTranslation(player, headerKey)
 	local text = ""
 	local prevLevel = -1
 
@@ -43,9 +44,9 @@ function spellbook.onUse(player, item, fromPosition, target, toPosition, isHotke
 	sortSpellsByLevel(spellsForLevel, "level")
 	sortSpellsByLevel(spellsForMagicLevel, "mlevel")
 
-	local spellsText = appendSpellsInfo(spellsForLevel, "Spells for Level ", "level", "mana")
+	local spellsText = appendSpellsInfo(spellsForLevel, "scripts.spellbook.header_level", "level", "mana", player)
 	spellsText = spellsText .. "\n"
-	spellsText = spellsText .. appendSpellsInfo(spellsForMagicLevel, "Spells for Magic Level ", "mlevel", "mana")
+	spellsText = spellsText .. appendSpellsInfo(spellsForMagicLevel, "scripts.spellbook.header_mlevel", "mlevel", "mana", player)
 
 	player:showTextDialog(item:getId(), spellsText)
 	return true

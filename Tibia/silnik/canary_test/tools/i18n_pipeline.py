@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 """
-Run the full i18n tooling pipeline (extract ➜ sync ➜ items ➜ client-export ➜ report)
+Run the full i18n tooling pipeline (extract ➜ sync ➜ items ➜ questlog ➜ client-export ➜ report)
 with a single command so both agents can refresh server and client artifacts in one step.
 
 Example:
@@ -21,6 +21,7 @@ BUILD_I18N_DIR = PROJECT_ROOT / "build" / "i18n"
 DEFAULT_MESSAGES = BUILD_I18N_DIR / "messages.json"
 DEFAULT_REPORTS_DIR = PROJECT_ROOT / "i18n" / "reports"
 DEFAULT_CLIENT_LOCALES_DIR = PROJECT_ROOT / "testyy" / "data" / "locales"
+DEFAULT_QUESTS_FILE = PROJECT_ROOT / "data-otservbr-global" / "lib" / "core" / "quests.lua"
 
 
 def run_step(cmd: Sequence[str], *, cwd: Path = PROJECT_ROOT) -> None:
@@ -60,6 +61,11 @@ def parse_args(argv: Sequence[str]) -> argparse.Namespace:
 		"--skip-items",
 		action="store_true",
 		help="Skip export_items_translations.py (useful for quick sync/report).",
+	)
+	parser.add_argument(
+		"--skip-questlog",
+		action="store_true",
+		help="Skip export_questlog_translations.py (quest log names/missions/states).",
 	)
 	parser.add_argument(
 		"--client-locales-dir",
@@ -116,6 +122,19 @@ def main(argv: Sequence[str]) -> int:
 			cmd.extend(["--locale", locale])
 		cmd.extend(["--i18n-root", str(i18n_root)])
 		run_step(cmd)
+
+	if not args.skip_questlog:
+		questlog_cmd = [
+			"python3",
+			"tools/export_questlog_translations.py",
+			"--locale",
+			"en",
+			"--quests-file",
+			str(DEFAULT_QUESTS_FILE),
+			"--i18n-root",
+			str(i18n_root),
+		]
+		run_step(questlog_cmd)
 
 	if not args.skip_client_export:
 		client_cmd = [

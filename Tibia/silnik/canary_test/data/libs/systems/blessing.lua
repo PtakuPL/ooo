@@ -229,7 +229,7 @@ Blessings.doAdventurerBlessing = function(player)
 
 	player:addMissingBless(true, true)
 
-	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "misc.blessing.msg_1" .. Blessings.Config.AdventurerBlessingLevel .. "!")
+	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "misc.blessing.msg_1", {tostring(Blessings.Config.AdventurerBlessingLevel)})
 	player:getPosition():sendMagicEffect(CONST_ME_HOLYDAMAGE)
 	return true
 end

@@ -172,62 +172,62 @@ local function creatureSayCallback(npc, creature, type, message)
 		else
 			Game.createItem((5791 + number), 1, config.diePos)
 		end
-		npc:say(npc:getName() .. " rolled a " .. number .. ".", TALKTYPE_MONSTER_SAY, false, true, config.diePos)
+		npc:sayLocalized("npc.cassino.rolled", TALKTYPE_MONSTER_SAY, false, nil, config.diePos, {npc:getName(), tostring(number)})
 		config.diePos:sendMagicEffect(CONST_ME_CRAPS)
 		if table.contains({ "low", "l" }, message) then
 			if table.contains({ 1, 2, 3 }, number) then
 				local wonMoney = math.ceil(bet * (config.bet.win / 100))
-				npc:say("You won! Here's your " .. wonMoney .. " gold coins.", TALKTYPE_SAY)
+				npc:sayLocalized("npc.cassino.won", TALKTYPE_SAY, false, nil, nil, {tostring(wonMoney)})
 				config.dicerCounter:sendMagicEffect(math.random(29, 31))
 				for _, coin in pairs(createMoney(wonMoney)) do
 					Game.createItem(coin[1], coin[2], config.dicerCounter)
 				end
 			else
-				npc:say("You have lost your " .. bet .. " gold coins.", TALKTYPE_SAY)
+				npc:sayLocalized("npc.cassino.lost", TALKTYPE_SAY, false, nil, nil, {tostring(bet)})
 			end
 		elseif table.contains({ "high", "h" }, message) then
 			if table.contains({ 4, 5, 6 }, number) then
 				local wonMoney = math.ceil(bet * (config.bet.win / 100))
-				npc:say("You won! Here's your " .. wonMoney .. " gold coins.", TALKTYPE_SAY)
+				npc:sayLocalized("npc.cassino.won", TALKTYPE_SAY, false, nil, nil, {tostring(wonMoney)})
 				config.dicerCounter:sendMagicEffect(math.random(29, 31))
 				for _, coin in pairs(createMoney(wonMoney)) do
 					Game.createItem(coin[1], coin[2], config.dicerCounter)
 				end
 			else
-				npc:say("You have lost your " .. bet .. " gold coins.", TALKTYPE_SAY)
+				npc:sayLocalized("npc.cassino.lost", TALKTYPE_SAY, false, nil, nil, {tostring(bet)})
 			end
 		elseif table.contains({ "odd", "impar" }, message) then
 			if table.contains({ 1, 3, 5 }, number) then
 				local wonMoney = math.ceil(bet * (config.bet.win / 100))
-				npc:say("You won! Here's your " .. wonMoney .. " gold coins.", TALKTYPE_SAY)
+				npc:sayLocalized("npc.cassino.won", TALKTYPE_SAY, false, nil, nil, {tostring(wonMoney)})
 				config.dicerCounter:sendMagicEffect(math.random(29, 31))
 				for _, coin in pairs(createMoney(wonMoney)) do
 					Game.createItem(coin[1], coin[2], config.dicerCounter)
 				end
 			else
-				npc:say("You have lost your " .. bet .. " gold coins.", TALKTYPE_SAY)
+				npc:sayLocalized("npc.cassino.lost", TALKTYPE_SAY, false, nil, nil, {tostring(bet)})
 			end
 		elseif table.contains({ "par", "even" }, message) then
 			if table.contains({ 2, 4, 6 }, number) then
 				local wonMoney = math.ceil(bet * (config.bet.win / 100))
-				npc:say("You won! Here's your " .. wonMoney .. " gold coins.", TALKTYPE_SAY)
+				npc:sayLocalized("npc.cassino.won", TALKTYPE_SAY, false, nil, nil, {tostring(wonMoney)})
 				config.dicerCounter:sendMagicEffect(math.random(29, 31))
 				for _, coin in pairs(createMoney(wonMoney)) do
 					Game.createItem(coin[1], coin[2], config.dicerCounter)
 				end
 			else
-				npc:say("You have lost your " .. bet .. " gold coins.", TALKTYPE_SAY)
+				npc:sayLocalized("npc.cassino.lost", TALKTYPE_SAY, false, nil, nil, {tostring(bet)})
 			end
 		elseif table.contains({ "1", "2", "3", "4", "5", "6" }, message) then
 			if number == tonumber(message) then
 				local wonMoney = math.ceil(bet * (config.bet.winNum / 100))
-				npc:say("You won! Here's your " .. wonMoney .. " gold coins.", TALKTYPE_SAY)
+				npc:sayLocalized("npc.cassino.won", TALKTYPE_SAY, false, nil, nil, {tostring(wonMoney)})
 				config.dicerCounter:sendMagicEffect(math.random(29, 31))
 				for _, coin in pairs(createMoney(wonMoney)) do
 					Game.createItem(coin[1], coin[2], config.dicerCounter)
 				end
 			else
-				npc:say("You have lost your " .. bet .. " gold coins.", TALKTYPE_SAY)
+				npc:sayLocalized("npc.cassino.lost", TALKTYPE_SAY, false, nil, nil, {tostring(bet)})
 			end
 		end
 	end

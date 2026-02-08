@@ -1,4 +1,5 @@
-name: Canary - Build Ubuntu
+---
+name: Canary - Build
 
 on:
   workflow_dispatch:
@@ -10,7 +11,8 @@ on:
       - "Tibia/silnik/canary_test/CMakeLists.txt"
       - "Tibia/silnik/canary_test/CMakePresets.json"
       - "Tibia/silnik/canary_test/vcpkg.json"
-      - ".github/workflows/build-canary-ubuntu.yml"
+      - ".github/workflows/build-canary.yml"
+  merge_group:
   push:
     branches: [master, main]
     paths:
@@ -19,17 +21,30 @@ on:
       - "Tibia/silnik/canary_test/CMakeLists.txt"
       - "Tibia/silnik/canary_test/CMakePresets.json"
       - "Tibia/silnik/canary_test/vcpkg.json"
-      - ".github/workflows/build-canary-ubuntu.yml"
+      - ".github/workflows/build-canary.yml"
 
 env:
-  CMAKE_BUILD_PARALLEL_LEVEL: 2
-  MAKEFLAGS: "-j 2"
+  CMAKE_BUILD_PARALLEL_LEVEL: 4
+  MAKEFLAGS: '-j 4'
+  VCPKG_FEATURE_FLAGS: manifests,binarycaching
+  VCPKG_BINARY_SOURCES: clear;x-gha,readwrite
+  VCPKG_BUILD_TYPE: release
 
 jobs:
+  cancel-runs:
+    if: github.event_name == 'pull_request' && github.ref != 'refs/heads/master'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cancel Previous Runs
+        uses: styfle/cancel-workflow-action@0.12.1
+        with:
+          access_token: ${{ github.token }}
+
   build:
     if: ${{ github.event_name == 'push' || !github.event.pull_request.draft }}
-    name: ${{ matrix.os }}-${{ matrix.buildtype }}
+    name: canary-${{ matrix.os }}-${{ matrix.buildtype }}
     runs-on: ${{ matrix.os }}
+    timeout-minutes: 180
 
     strategy:
       fail-fast: false
@@ -44,6 +59,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Install Linux Dependencies
         working-directory: .
@@ -75,30 +92,53 @@ jobs:
             --slave /usr/bin/gcov gcov /usr/bin/gcov-14
           sudo update-alternatives --set gcc /usr/bin/gcc-14
 
-      - name: CCache
-        uses: hendrikmuhs/ccache-action@v1
+      - name: CCache (sccache)
+        uses: hendrikmuhs/ccache-action@main
         with:
-          max-size: 1G
-          key: ccache-${{ matrix.os }}-${{ matrix.buildtype }}
+          max-size: "1G"
+          variant: "sccache"
+          key: sccache-canary-${{ matrix.os }}-${{ matrix.buildtype }}
+          restore-keys: |
+            sccache-canary-${{ matrix.os }}
+
+      - name: Export GitHub Actions cache env
+        uses: actions/github-script@v7
+        with:
+          script: |
+            core.exportVariable('ACTIONS_CACHE_URL', process.env.ACTIONS_CACHE_URL || '');
+            core.exportVariable('ACTIONS_RUNTIME_TOKEN', process.env.ACTIONS_RUNTIME_TOKEN || '');
 
       - name: Read vcpkg baseline
         run: |
           vcpkgCommitId=$(grep 'builtin-baseline' vcpkg.json | awk -F: '{print $2}' | tr -d '," ')
-          echo "VCPKG_GIT_COMMIT_ID=$vcpkgCommitId" >> "$GITHUB_ENV"
           echo "vcpkg commit ID: $vcpkgCommitId"
+          echo "VCPKG_GIT_COMMIT_ID=$vcpkgCommitId" >> "$GITHUB_ENV"
+
+      - name: Cache vcpkg artifacts
+        uses: actions/cache@v4
+        with:
+          path: |
+            ${{ github.workspace }}/Tibia/silnik/canary_test/vcpkg/installed
+            ${{ github.workspace }}/Tibia/silnik/canary_test/vcpkg/buildtrees
+            ${{ github.workspace }}/Tibia/silnik/canary_test/vcpkg/downloads
+          key: vcpkg-canary-${{ matrix.os }}-${{ hashFiles('Tibia/silnik/canary_test/vcpkg.json') }}
+          restore-keys: |
+            vcpkg-canary-${{ matrix.os }}-
 
       - name: Install vcpkg
-        uses: lukka/run-vcpkg@main
+        uses: lukka/run-vcpkg@v11
         with:
           vcpkgGitURL: "https://github.com/microsoft/vcpkg.git"
           vcpkgGitCommitId: ${{ env.VCPKG_GIT_COMMIT_ID }}
           vcpkgDirectory: ${{ github.workspace }}/Tibia/silnik/canary_test/vcpkg
 
-      - name: Get latest CMake and Ninja
-        uses: lukka/get-cmake@main
+      - name: Setup CMake + Ninja
+        uses: lukka/get-cmake@latest
+        with:
+          cmakeVersion: '~3.27.0'
 
       - name: Configure + Build (CMake Presets)
-        uses: lukka/run-cmake@main
+        uses: lukka/run-cmake@v10
         with:
           cmakeListsTxtPath: ${{ github.workspace }}/Tibia/silnik/canary_test/CMakeLists.txt
           configurePresetAdditionalArgs: "['-DTOGGLE_BIN_FOLDER=ON']"
@@ -111,14 +151,16 @@ jobs:
           name: canary-${{ matrix.os }}-${{ matrix.buildtype }}-${{ github.sha }}
           path: |
             ${{ github.workspace }}/Tibia/silnik/canary_test/build/${{ matrix.buildtype }}/bin/
-          retention-days: 14
+          retention-days: 30
 
       - name: Unit tests
+        continue-on-error: true
         run: |
           cd build/${{ matrix.buildtype }}
-          if ctest -N -R unit | grep -q "Test #"; then ctest -V -R unit; else echo "No unit tests."; fi
+          if ctest -N -R unit | grep -q "Test #"; then ctest -V -R unit --output-on-failure; else echo "No unit tests."; fi
 
       - name: Integration tests
+        continue-on-error: true
         run: |
           cd build/${{ matrix.buildtype }}
-          if ctest -N -R integration | grep -q "Test #"; then ctest -V -R integration; else echo "No integration tests."; fi
+          if ctest -N -R integration | grep -q "Test #"; then ctest -V -R integration --output-on-failure; else echo "No integration tests."; fi

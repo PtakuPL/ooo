@@ -1,3 +1,4 @@
+---
 name: Build - Android
 
 on:
@@ -7,10 +8,16 @@ on:
     paths:
       - 'Tibia/silnik/canary_test/testyy/src/**'
       - 'Tibia/silnik/canary_test/testyy/android/**'
+      - 'Tibia/silnik/canary_test/testyy/CMakeLists.txt'
+      - 'Tibia/silnik/canary_test/testyy/vcpkg.json'
+      - '.github/workflows/build-android.yml'
   push:
     paths:
       - 'Tibia/silnik/canary_test/testyy/src/**'
       - 'Tibia/silnik/canary_test/testyy/android/**'
+      - 'Tibia/silnik/canary_test/testyy/CMakeLists.txt'
+      - 'Tibia/silnik/canary_test/testyy/vcpkg.json'
+      - '.github/workflows/build-android.yml'
     branches:
       - master
 
@@ -18,21 +25,24 @@ env:
   CMAKE_BUILD_PARALLEL_LEVEL: 4
   MAKEFLAGS: '-j 4'
   VCPKG_ROOT: C:\vcpkg
+  VCPKG_FEATURE_FLAGS: manifests,binarycaching
+  VCPKG_BINARY_SOURCES: clear;x-gha,readwrite
+  VCPKG_BUILD_TYPE: release
 
 jobs:
   cancel-runs:
-    if: github.event_name == 'pull_request'
+    if: github.event_name == 'pull_request' && github.ref != 'refs/heads/master'
     runs-on: ubuntu-latest
     steps:
       - name: Cancel Previous Runs
-        uses: styfle/cancel-workflow-action@0.11.0
+        uses: styfle/cancel-workflow-action@0.12.1
         with:
           access_token: ${{ github.token }}
 
   android:
     name: android-apk
     runs-on: windows-2022
-    timeout-minutes: 120
+    timeout-minutes: 180
     defaults:
       run:
         working-directory: Tibia/silnik/canary_test/testyy
@@ -55,6 +65,22 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
+      - name: CCache (sccache)
+        uses: hendrikmuhs/ccache-action@main
+        with:
+          max-size: "1G"
+          variant: "sccache"
+          key: sccache-android
+          restore-keys: |
+            sccache-android
+
+      - name: Export GitHub Actions cache env
+        uses: actions/github-script@v7
+        with:
+          script: |
+            core.exportVariable('ACTIONS_CACHE_URL', process.env.ACTIONS_CACHE_URL || '');
+            core.exportVariable('ACTIONS_RUNTIME_TOKEN', process.env.ACTIONS_RUNTIME_TOKEN || '');
+
       - name: Get vcpkg commit ID
         id: vcpkg-step
         shell: bash
@@ -67,7 +93,9 @@ jobs:
         uses: actions/cache@v4
         with:
           path: |
-            C:\vcpkg
+            C:\vcpkg\installed
+            C:\vcpkg\buildtrees
+            C:\vcpkg\downloads
             ${{ env.LOCALAPPDATA }}\vcpkg
           key: vcpkg-android-${{ steps.vcpkg-step.outputs.hash }}
           restore-keys: |
@@ -116,13 +144,11 @@ jobs:
       - name: Install CMake via sdkmanager
         shell: powershell
         run: |
-          # Try to use sdkmanager from GitHub runner's ANDROID_HOME
           $sdkmanager = "$env:ANDROID_HOME\cmdline-tools\latest\bin\sdkmanager.bat"
           if (Test-Path $sdkmanager) {
             Write-Host "Using sdkmanager at: $sdkmanager"
             echo "y" | & $sdkmanager --install "cmake;3.22.1"
           } else {
-            # CMake is preinstalled on GitHub runners
             Write-Host "sdkmanager not found at $sdkmanager"
             Write-Host "Using preinstalled CMake from GitHub runner..."
             cmake --version
@@ -188,3 +214,4 @@ jobs:
           name: otclient-android-${{ github.sha }}
           path: ${{ steps.find-apk.outputs.apk_path }}
           if-no-files-found: warn
+          retention-days: 30

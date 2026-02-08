@@ -1,20 +1,22 @@
 ---
-name: Analysis - SonarCloud (Canary)
+name: Analysis - SonarCloud (WASM)
 
 on:
   workflow_dispatch:
   pull_request_target:
     types: [opened, synchronize, reopened]
     paths:
-      - "Tibia/silnik/canary_test/src/**"
-      - "Tibia/silnik/canary_test/CMakeLists.txt"
-      - "Tibia/silnik/canary_test/vcpkg.json"
+      - "Tibia/silnik/canary_test/testyy/src/**"
+      - "Tibia/silnik/canary_test/testyy/browser/**"
+      - "Tibia/silnik/canary_test/testyy/CMakeLists.txt"
+      - "Tibia/silnik/canary_test/testyy/vcpkg.json"
   push:
     branches: [master]
     paths:
-      - "Tibia/silnik/canary_test/src/**"
-      - "Tibia/silnik/canary_test/CMakeLists.txt"
-      - "Tibia/silnik/canary_test/vcpkg.json"
+      - "Tibia/silnik/canary_test/testyy/src/**"
+      - "Tibia/silnik/canary_test/testyy/browser/**"
+      - "Tibia/silnik/canary_test/testyy/CMakeLists.txt"
+      - "Tibia/silnik/canary_test/testyy/vcpkg.json"
 
 permissions:
   contents: read
@@ -26,16 +28,18 @@ env:
   VCPKG_FEATURE_FLAGS: manifests,binarycaching
   VCPKG_BINARY_SOURCES: clear;x-gha,readwrite
   VCPKG_BUILD_TYPE: release
+  VCPKG_DEFAULT_TRIPLET: wasm32-emscripten
+  VCPKG_DEFAULT_HOST_TRIPLET: x64-linux
 
 jobs:
-  sonarcloud-canary:
-    name: SonarCloud (Canary Server)
-    runs-on: ubuntu-24.04
+  sonarcloud-wasm:
+    name: SonarCloud (WASM OTC)
+    runs-on: ubuntu-22.04
     env:
       SONAR_TOKEN: ${{ secrets.SONARCLOUDTOKEN }}
     defaults:
       run:
-        working-directory: Tibia/silnik/canary_test
+        working-directory: Tibia/silnik/canary_test/testyy
 
     steps:
       - name: Checkout repository
@@ -53,18 +57,13 @@ jobs:
         working-directory: .
         run: |
           sudo apt-get update
-          sudo apt-get install -y ccache software-properties-common
+          sudo apt-get install -y ccache pkg-config
 
-      - name: Switch to gcc-14
-        working-directory: .
-        run: |
-          sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y
-          sudo apt-get update
-          sudo apt-get install -y gcc-14 g++-14
-          sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-14 100 \
-            --slave /usr/bin/g++ g++ /usr/bin/g++-14 \
-            --slave /usr/bin/gcov gcov /usr/bin/gcov-14
-          sudo update-alternatives --set gcc /usr/bin/gcc-14
+      - name: Setup Emscripten
+        uses: mymindstorm/setup-emsdk@v14
+        with:
+          version: 3.1.56
+          actions-cache-folder: emsdk-cache
 
       - name: Export GitHub Actions cache env
         uses: actions/github-script@v7
@@ -73,63 +72,65 @@ jobs:
             core.exportVariable('ACTIONS_CACHE_URL', process.env.ACTIONS_CACHE_URL || '');
             core.exportVariable('ACTIONS_RUNTIME_TOKEN', process.env.ACTIONS_RUNTIME_TOKEN || '');
 
-      - name: Read vcpkg baseline
+      - name: Get vcpkg commit ID
+        id: vcpkg-step
         run: |
           vcpkgCommitId=$(grep 'builtin-baseline' vcpkg.json | awk -F: '{print $2}' | tr -d '," ')
           echo "vcpkg commit ID: $vcpkgCommitId"
-          echo "VCPKG_GIT_COMMIT_ID=$vcpkgCommitId" >> "$GITHUB_ENV"
+          echo "vcpkgGitCommitId=$vcpkgCommitId" >> $GITHUB_OUTPUT
 
       - name: Cache vcpkg artifacts
         uses: actions/cache@v4
         with:
           path: |
-            ${{ github.workspace }}/Tibia/silnik/canary_test/vcpkg/installed
-            ${{ github.workspace }}/Tibia/silnik/canary_test/vcpkg/buildtrees
-            ${{ github.workspace }}/Tibia/silnik/canary_test/vcpkg/downloads
-          key: vcpkg-sonar-canary-${{ hashFiles('Tibia/silnik/canary_test/vcpkg.json') }}
+            ${{ github.workspace }}/vcpkg/installed
+            ${{ github.workspace }}/vcpkg/buildtrees
+            ${{ github.workspace }}/vcpkg/downloads
+          key: vcpkg-sonar-wasm32-emscripten-${{ hashFiles('Tibia/silnik/canary_test/testyy/vcpkg.json') }}
           restore-keys: |
-            vcpkg-sonar-canary-
+            vcpkg-sonar-wasm32-emscripten-
 
       - name: Cache SonarCloud analysis data
         uses: actions/cache@v4
         with:
           path: ~/.cfamily
-          key: sonar-cfamily-Canary-${{ hashFiles('Tibia/silnik/canary_test/CMakeLists.txt','Tibia/silnik/canary_test/vcpkg.json') }}
+          key: sonar-cfamily-WASM-${{ hashFiles('Tibia/silnik/canary_test/testyy/CMakeLists.txt','Tibia/silnik/canary_test/testyy/vcpkg.json') }}
           restore-keys: |
-            sonar-cfamily-Canary-
+            sonar-cfamily-WASM-
 
       - name: Cache SonarCloud packages
         uses: actions/cache@v4
         with:
           path: ~/.sonar/cache
-          key: sonar-packages-Canary
+          key: sonar-packages-WASM
           restore-keys: |
-            sonar-packages-Canary-
+            sonar-packages-WASM-
 
       - name: Install vcpkg
         uses: lukka/run-vcpkg@v11
         with:
-          vcpkgGitURL: "https://github.com/microsoft/vcpkg.git"
-          vcpkgGitCommitId: ${{ env.VCPKG_GIT_COMMIT_ID }}
-          vcpkgDirectory: ${{ github.workspace }}/Tibia/silnik/canary_test/vcpkg
+          vcpkgGitCommitId: ${{ steps.vcpkg-step.outputs.vcpkgGitCommitId }}
 
       - name: Setup CMake + Ninja
         uses: lukka/get-cmake@latest
         with:
           cmakeVersion: '~3.27.0'
 
-      - name: Generate compilation database
+      - name: Generate compilation database (Emscripten)
         run: |
-          rm -rf build-sonar
-          mkdir -p build-sonar
-          cmake -G "Ninja" \
+          mkdir -p build
+          emcmake cmake -G "Ninja" \
                 -DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
                 -DCMAKE_BUILD_TYPE=Debug \
-                -DCMAKE_TOOLCHAIN_FILE="${{ github.workspace }}/Tibia/silnik/canary_test/vcpkg/scripts/buildsystems/vcpkg.cmake" \
+                -DCMAKE_TOOLCHAIN_FILE="$VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake" \
+                -DVCPKG_CHAINLOAD_TOOLCHAIN_FILE="$EMSDK/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake" \
+                -DVCPKG_TARGET_TRIPLET=wasm32-emscripten \
+                -DVCPKG_OVERLAY_PORTS="${{ github.workspace }}/Tibia/silnik/canary_test/testyy/browser/overlay-ports" \
                 -DSPEED_UP_BUILD_UNITY=OFF \
-                -DUSE_PRECOMPILED_HEADER=OFF \
-                -DDEBUG_LOG=ON \
-                -S . -B build-sonar
+                -DOTC_ENABLE_TTF=OFF \
+                -DOTC_ENABLE_HARFBUZZ=OFF \
+                -DOTC_ENABLE_FRIBIDI=OFF \
+                -S . -B build
 
       - name: Run PR sonar-scanner
         if: ${{ (github.event_name == 'pull_request' || github.event_name == 'pull_request_target') && env.SONAR_TOKEN != '' }}
@@ -138,12 +139,12 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ env.SONAR_TOKEN }}
         with:
-          projectBaseDir: Tibia/silnik/canary_test
+          projectBaseDir: Tibia/silnik/canary_test/testyy
           args: >
             -Dsonar.cfamily.threads=4
             -Dsonar.cfamily.cache.enabled=true
             "-Dsonar.cfamily.cache.path=$HOME/.cfamily"
-            -Dsonar.cfamily.compile-commands=Tibia/silnik/canary_test/build-sonar/compile_commands.json
+            -Dsonar.cfamily.compile-commands=Tibia/silnik/canary_test/testyy/build/compile_commands.json
             -Dsonar.pullrequest.key=${{ github.event.pull_request.number }}
             -Dsonar.pullrequest.branch=${{ github.event.pull_request.head.ref }}
             -Dsonar.pullrequest.base=${{ github.event.pull_request.base.ref }}
@@ -155,9 +156,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ env.SONAR_TOKEN }}
         with:
-          projectBaseDir: Tibia/silnik/canary_test
+          projectBaseDir: Tibia/silnik/canary_test/testyy
           args: >
             -Dsonar.cfamily.threads=4
             -Dsonar.cfamily.cache.enabled=true
             "-Dsonar.cfamily.cache.path=$HOME/.cfamily"
-            -Dsonar.cfamily.compile-commands=Tibia/silnik/canary_test/build-sonar/compile_commands.json
+            -Dsonar.cfamily.compile-commands=Tibia/silnik/canary_test/testyy/build/compile_commands.json

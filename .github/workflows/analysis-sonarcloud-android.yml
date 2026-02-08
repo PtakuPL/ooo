@@ -3,10 +3,20 @@ name: Analysis - SonarCloud (Android)
 
 on:
   workflow_dispatch:
-  pull_request:
+  pull_request_target:
     types: [opened, synchronize, reopened]
+    paths:
+      - "Tibia/silnik/canary_test/testyy/src/**"
+      - "Tibia/silnik/canary_test/testyy/android/**"
+      - "Tibia/silnik/canary_test/testyy/CMakeLists.txt"
+      - "Tibia/silnik/canary_test/testyy/vcpkg.json"
   push:
     branches: [master]
+    paths:
+      - "Tibia/silnik/canary_test/testyy/src/**"
+      - "Tibia/silnik/canary_test/testyy/android/**"
+      - "Tibia/silnik/canary_test/testyy/CMakeLists.txt"
+      - "Tibia/silnik/canary_test/testyy/vcpkg.json"
 
 permissions:
   contents: read
@@ -19,7 +29,7 @@ env:
 
 jobs:
   sonarcloud-android:
-    name: SonarCloud (Android)
+    name: SonarCloud (Android OTC)
     runs-on: ubuntu-22.04
     env:
       SONAR_TOKEN: ${{ secrets.SONARCLOUDTOKEN }}
@@ -55,7 +65,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~/.cfamily
-          key: sonar-cfamily-Android-${{ hashFiles('Tibia/silnik/canary_test/testyy/CMakeLists.txt') }}
+          key: sonar-cfamily-Android-${{ hashFiles('Tibia/silnik/canary_test/testyy/CMakeLists.txt','Tibia/silnik/canary_test/testyy/vcpkg.json') }}
           restore-keys: |
             sonar-cfamily-Android-
 
@@ -111,7 +121,7 @@ jobs:
                 -S . -B build-android
 
       - name: Run PR sonar-scanner
-        if: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository && env.SONAR_TOKEN != '' }}
+        if: ${{ (github.event_name == 'pull_request' || github.event_name == 'pull_request_target') && env.SONAR_TOKEN != '' }}
         uses: SonarSource/sonarqube-scan-action@v6
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

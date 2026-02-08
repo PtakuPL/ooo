@@ -1,6 +1,6 @@
 {
-  "creaturescripts.free_quest.msg_1": "Player FreeQuest in progress..",
-  "creaturescripts.free_quest.msg_2": "Player FreeQuest is complete.",
-  "creaturescripts.boss_defeated": "The {name} has been defeated. You have {seconds} seconds to leave the room.",
-  "creaturescripts.empty_parcels_removed": "{count} empty parcels were removed from your store inbox!"
+  "creaturescripts.free_quest.msg_1": "gracz Freezadanie w progress..",
+  "creaturescripts.free_quest.msg_2": "gracz Freezadanie jest I..",
+  "creaturescripts.boss_defeated": "The {name} ma był I.. Masz {seconds} sekundy do I. the miejsce.",
+  "creaturescripts.empty_parcels_removed": "{count} puste paczka, pakunek były usuniędo z twój I. inbox!"
 }

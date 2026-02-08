@@ -1,7 +1,7 @@
 {
-  "globalevents.online_record": "New record: %s players are logged in.",
-  "globalevents.save_interval.complete_plural": "Server save complete. Next save in %s %ss!",
-  "globalevents.save_interval.complete_singular": "Server save complete. Next save in %s %s!",
-  "globalevents.save_interval.warning": "The server will save all accounts within %s seconds. You might lag or freeze for 5 seconds, please find a safe place.",
-  "globalevents.server_save.warning": "Server is saving the game in %s minute(s). Please logout."
+  "globalevents.online_record": "New record: %s gracze są logged w.",
+  "globalevents.save_interval.complete_plural": "Serwer, usługodawca I. I.. Next I. w %s %ss!",
+  "globalevents.save_interval.complete_singular": "Serwer, usługodawca I. I.. Next I. w %s %s!",
+  "globalevents.save_interval.warning": "The serwer, usługodawca will I. wszystkie konto wewnątrz %s sekundy. Ty might lag lub I. dla 5 sekundy, Proszę I. jeden I. I..",
+  "globalevents.server_save.warning": "Serwer, usługodawca jest saving the I. w %s minuta(s). Proszę logout."
 }

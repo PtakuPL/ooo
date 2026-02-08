@@ -1,7 +1,6 @@
 {
   "_comment": "Example Merchant NPC - Polish translations",
-  "_file": "data-otservbr-global/npc/example_merchant_i18n.lua",
-  
+  "_file": "I.-otservbr-globalny/npc/przykład_I._i18n.lua",
   "npc.example_merchant.greeting": "Witaj %s! Zapraszam do mojego sklepu. Powiedz {trade} aby zobaczyć ofertę.",
   "npc.example_merchant.low_level": "Przepraszam, ale jesteś zbyt niedoświadczony. Wróć gdy osiągniesz poziom 8.",
   "npc.example_merchant.farewell": "Żegnaj, %s. Odwiedź mnie ponownie!",
@@ -11,7 +10,6 @@
   "npc.example_merchant.trade": "Oczywiście! Oto moja oferta.",
   "npc.example_merchant.news_1": "Słyszałeś? Smoki zostały zauważone w pobliżu gór!",
   "npc.example_merchant.news_2": "Król szuka dzielnych poszukiwaczy przygód.",
-  
   "nv.example_merchant.1": "Najlepsze mikstury w mieście!",
   "nv.example_merchant.2": "Bronie i zbroje wysokiej jakości!",
   "nv.example_merchant.3": "DZISIEJSZE PROMOCJE!"

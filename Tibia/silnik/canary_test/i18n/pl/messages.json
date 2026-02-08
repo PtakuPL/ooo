@@ -1,13 +1,13 @@
 {
-  "system.trade.sold": "Sold {1}x {2} for {3} gold.",
-  "system.trade.bought": "Bought {1}x {2} for {3} gold.",
-  "system.blessing.received": "You received the remaining {1} blesses.",
-  "system.blessing.already": "You are already blessed.",
-  "system.store.check_inbox": "Please make sure you have free slots in your store inbox.",
-  "system.experience.gained": "You gained {1} experience points.",
-  "system.mission.points": "You earned {1} point(s) on the {2} mission.",
-  "system.mount.received": "Congratulations you received the {1} mount.",
-  "system.item.received": "You gained a {1}.",
-  "system.stash.count": "Your supply stash contains {1} items.",
-  "system.venture.decay": "Venture the path of decay!"
+  "system.trade.sold": "Sold {1}x {2} dla {3} złota.",
+  "system.trade.bought": "Bought {1}x {2} dla {3} złota.",
+  "system.blessing.received": "Ty otrzymaNie the I. {1} błogosławić.",
+  "system.blessing.already": "Masz już błogosławieństwo.",
+  "system.store.check_inbox": "Proszę make sure Masz I. I. w twój I. inbox.",
+  "system.experience.gained": "Ty I. {1} I. points.",
+  "system.mission.points": "Ty zarabiać na, zarabiać {1} point(s) na the {2} misja.",
+  "system.mount.received": "Gratulacje ty otrzymaNie the {1} I..",
+  "system.item.received": "Ty I. jeden {1}.",
+  "system.stash.count": "Twój I. stash zawierać {1} przedmioty.",
+  "system.venture.decay": "I. the ścieżka z I.!"
 }

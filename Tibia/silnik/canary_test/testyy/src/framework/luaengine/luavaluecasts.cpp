@@ -336,7 +336,7 @@ bool luavalue_cast(const int index, OTMLNodePtr& node)
             } else {
                 std::string value;
                 if (g_lua.isBoolean())
-                    value = stdext::unsafe_cast<std::string>(g_lua.toBoolean());
+                    value = g_lua.toBoolean() ? "true" : "false";
                 else
                     value = g_lua.toString();
                 if (cnodeName.empty())

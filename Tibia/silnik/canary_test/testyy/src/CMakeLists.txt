@@ -121,15 +121,11 @@ endif()
 if (MSVC)
   # Ensure MSVC treats source files as UTF-8 and can emit larger object files without ICEs
   target_compile_options(${PROJECT_NAME} PUBLIC /utf-8 /bigobj)
-  # Link-Time Code Generation triggers ICEs in some TU; keep it disabled explicitly
-  target_link_options(${PROJECT_NAME} PRIVATE /LTCG:OFF)
   # Prevent Windows.h from defining min/max macros that conflict with std::min/std::max
   target_compile_definitions(${PROJECT_NAME} PRIVATE NOMINMAX)
   # Workaround for MSVC Internal Compiler Error (ICE) C1001 on complex template code
   # The ICE occurs in cast.h which is included via stdext.h across all source files.
-  # Since it's a header-only template library, we can't target specific source files.
-  # Using /O1 globally is necessary as the ICE triggers during template instantiation
-  # across multiple TUs. /O1 still provides optimizations (for size) while being safer.
+  # Using /O1 globally is necessary as the ICE triggers during template instantiation.
   # Remove default /O2 from Release flags before adding /O1 to avoid D9025 warning
   string(REPLACE "/O2" "" CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE}")
   string(REPLACE "/O2" "" CMAKE_CXX_FLAGS_RELWITHDEBINFO "${CMAKE_CXX_FLAGS_RELWITHDEBINFO}")
@@ -139,6 +135,21 @@ if (MSVC)
     $<$<CONFIG:Release>:/O1>  # Use /O1 (minimize size) instead of /O2 (maximize speed) for Release
     $<$<CONFIG:RelWithDebInfo>:/O1>
   )
+  # Fully disable LTCG to avoid ICE C1001 during link-time code generation.
+  # /LTCG may be injected by the toolchain or vcpkg into the per-config linker flags;
+  # target_link_options(/LTCG:OFF) alone is not sufficient because /LTCG appears AFTER
+  # it in the final link command and takes precedence. Strip it from all flag variables.
+  target_link_options(${PROJECT_NAME} PRIVATE /LTCG:OFF)
+  foreach(_flag_var
+      CMAKE_EXE_LINKER_FLAGS_RELEASE
+      CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO
+      CMAKE_EXE_LINKER_FLAGS_MINSIZEREL
+      CMAKE_SHARED_LINKER_FLAGS_RELEASE
+      CMAKE_SHARED_LINKER_FLAGS_RELWITHDEBINFO
+      CMAKE_SHARED_LINKER_FLAGS_MINSIZEREL)
+    string(REGEX REPLACE "[ ;]?/LTCG([ ;]|$)" "\\1" ${_flag_var} "${${_flag_var}}")
+    set(${_flag_var} "${${_flag_var}}" CACHE STRING "" FORCE)
+  endforeach()
 endif()
 
 if(THREADS_HAVE_PTHREAD_ARG)

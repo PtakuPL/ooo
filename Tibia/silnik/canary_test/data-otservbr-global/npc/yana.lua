@@ -57,14 +57,14 @@ npcType.onCheckItem = function(npc, player, clientId, subType) end
 local products = {
 	["strike"] = {
 		["basic"] = {
-			text = "The basic bundle for the strike imbuement consists of 20 protective charms. Would you like to buy it for 2 gold tokens??",
+			i18nKey = "npc.yana.voice_2",
 			itens = {
 				[1] = { id = 11444, amount = 20 },
 			},
 			value = 2,
 		},
 		["intricate"] = {
-			text = "The intricate bundle for the strike imbuement consists of 20 protective charms and 25 sabreteeth. Would you like to buy it for 4 gold tokens??",
+			i18nKey = "npc.yana.voice_3",
 			itens = {
 				[1] = { id = 11444, amount = 20 },
 				[2] = { id = 10311, amount = 25 },
@@ -72,7 +72,7 @@ local products = {
 			value = 4,
 		},
 		["powerful"] = {
-			text = "The powerful bundle for the strike imbuement consists of 20 protective charms, 25 sabreteeth and 5 vexclaw talons. Would you like to buy it for 6 gold tokens??",
+			i18nKey = "npc.yana.voice_4",
 			itens = {
 				[1] = { id = 11444, amount = 20 },
 				[2] = { id = 10311, amount = 25 },
@@ -83,14 +83,14 @@ local products = {
 	},
 	["vampirism"] = {
 		["basic"] = {
-			text = "The basic bundle for the vampirism imbuement consists of 25 vampire teeth. Would you like to buy it for 2 gold tokens??",
+			i18nKey = "npc.yana.voice_5",
 			itens = {
 				[1] = { id = 9685, amount = 25 },
 			},
 			value = 2,
 		},
 		["intricate"] = {
-			text = "The intricate bundle for the strike imbuement consists of 20 protective charms and 25 sabreteeth. Would you like to buy it for 4 gold tokens??",
+			i18nKey = "npc.yana.voice_6",
 			itens = {
 				[1] = { id = 9685, amount = 25 },
 				[2] = { id = 9633, amount = 15 },
@@ -98,7 +98,7 @@ local products = {
 			value = 4,
 		},
 		["powerful"] = {
-			text = "The powerful bundle for the vampirism imbuement consists of 25 vampire teeth, 15 bloody pincers and 5 pieces of dead brain. Would you like to it for 6 gold tokens??",
+			i18nKey = "npc.yana.voice_7",
 			itens = {
 				[1] = { id = 9685, amount = 25 },
 				[2] = { id = 9633, amount = 15 },
@@ -109,14 +109,14 @@ local products = {
 	},
 	["void"] = {
 		["basic"] = {
-			text = "The basic bundle for the void imbuement consists of 25 rope belts. Would you like to buy it for 2 gold tokens??",
+			i18nKey = "npc.yana.voice_8",
 			itens = {
 				[1] = { id = 11492, amount = 25 },
 			},
 			value = 2,
 		},
 		["intricate"] = {
-			text = "The intricate bundle for the void imbuement consists of 25 rope belts and 25 silencer claws. Would you like to buy it for 4 gold tokens??.",
+			i18nKey = "npc.yana.voice_9",
 			itens = {
 				[1] = { id = 11492, amount = 25 },
 				[2] = { id = 20200, amount = 25 },
@@ -124,7 +124,7 @@ local products = {
 			value = 4,
 		},
 		["powerful"] = {
-			text = "The powerful bundle for the void imbuement consists of 25 rope belts, 25 silencer claws and 5 grimeleech wings. Would you like to buy it for 6 gold tokens??",
+			i18nKey = "npc.yana.voice_10",
 			itens = {
 				[1] = { id = 11492, amount = 25 },
 				[2] = { id = 20200, amount = 25 },
@@ -180,58 +180,72 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "information") then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.yana.say_1")
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.yana.say_1", "npc.yana.say_2" }, 100)
 	elseif MsgContains(message, "worth") then
 		-- to do: check if Heart of Destruction was killed
 		-- after kill message: 'You disrupted the Heart of Destruction, defeated the World Devourer and bought our world some time. You have proven your worth.'
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.yana.say_2")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.yana.say_3")
 	elseif MsgContains(message, "tokens") then
 		npc:openShopWindow(creature)
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.yana.say_3")
-	elseif MsgContains(message, "trade") then
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.yana.say_4")
+	elseif MsgContains(message, "trade") then
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.yana.say_5")
 		npcHandler:setTopic(playerId, 1)
 	elseif npcHandler:getTopic(playerId) == 1 then
-		local imbueType = products[message:lower()]
+		local selectedType = message:lower()
+		local imbueType = products[selectedType]
 		if imbueType then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.yana.multi_1")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.yana.multi_2")
-			answerType[playerId] = message
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.yana.say_6", { message })
+			answerType[playerId] = selectedType
 			npcHandler:setTopic(playerId, 2)
 		end
 	elseif npcHandler:getTopic(playerId) == 2 then
-		local imbueLevel = products[answerType[playerId]][message:lower()]
+		local playerType = answerType[playerId]
+		if not playerType then
+			return true
+		end
+		local selectedLevel = message:lower()
+		local imbueLevel = products[playerType][selectedLevel]
 		if imbueLevel then
-			answerLevel[playerId] = message:lower()
+			answerLevel[playerId] = selectedLevel
 			local neededCap = 0
-			for i = 1, #products[answerType[playerId]][answerLevel[playerId]].itens do
-				neededCap = neededCap + ItemType(products[answerType[playerId]][answerLevel[playerId]].itens[i].id):getWeight() * products[answerType[playerId]][answerLevel[playerId]].itens[i].amount
+			for i = 1, #products[playerType][selectedLevel].itens do
+				neededCap = neededCap + ItemType(products[playerType][selectedLevel].itens[i].id):getWeight() * products[playerType][selectedLevel].itens[i].amount
 			end
-			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.yana.say_1", "npc.yana.say_2", "npc.yana.say_3", "npc.yana.say_4", "npc.yana.say_5"}, 100)
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {
+				imbueLevel.i18nKey,
+				{ key = "npc.yana.say_7", args = { tostring(#products[playerType][selectedLevel].itens), string.format("%.2f", neededCap / 100) } },
+			}, 100)
 			npcHandler:setTopic(playerId, 3)
 		end
 	elseif npcHandler:getTopic(playerId) == 3 then
 		if MsgContains(message, "yes") then
+			local playerType = answerType[playerId]
+			local playerLevel = answerLevel[playerId]
+			if not playerType or not playerLevel then
+				return true
+			end
+
 			local neededCap = 0
-			for i = 1, #products[answerType[playerId]][answerLevel[playerId]].itens do
-				neededCap = neededCap + ItemType(products[answerType[playerId]][answerLevel[playerId]].itens[i].id):getWeight() * products[answerType[playerId]][answerLevel[playerId]].itens[i].amount
+			for i = 1, #products[playerType][playerLevel].itens do
+				neededCap = neededCap + ItemType(products[playerType][playerLevel].itens[i].id):getWeight() * products[playerType][playerLevel].itens[i].amount
 			end
 			if player:getFreeCapacity() > neededCap then
-				if player:getItemCount(npc:getCurrency()) >= products[answerType[playerId]][answerLevel[playerId]].value then
-					for i = 1, #products[answerType[playerId]][answerLevel[playerId]].itens do
-						player:addItem(products[answerType[playerId]][answerLevel[playerId]].itens[i].id, products[answerType[playerId]][answerLevel[playerId]].itens[i].amount)
+				if player:getItemCount(npc:getCurrency()) >= products[playerType][playerLevel].value then
+					for i = 1, #products[playerType][playerLevel].itens do
+						player:addItem(products[playerType][playerLevel].itens[i].id, products[playerType][playerLevel].itens[i].amount)
 					end
-					player:removeItem(npc:getCurrency(), products[answerType[playerId]][answerLevel[playerId]].value)
-					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.yana.say_5")
+					player:removeItem(npc:getCurrency(), products[playerType][playerLevel].value)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.yana.say_8")
 					npcHandler:setTopic(playerId, 0)
 				else
-					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.yana.say_1", { ItemType(npc:getCurrency()):getPluralName():lower(), products[answerType[playerId]][answerLevel[playerId]].value })
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.yana.say_9", { ItemType(npc:getCurrency()):getPluralName():lower(), tostring(products[playerType][playerLevel].value) })
 				end
 			else
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.yana.say_2", { neededCap })
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.yana.say_10", { string.format("%.2f", neededCap / 100) })
 			end
 		elseif MsgContains(message, "no") then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.yana.say_7")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.yana.say_11")
 		end
 		npcHandler:setTopic(playerId, 0)
 	end

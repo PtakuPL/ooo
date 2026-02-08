@@ -1,9 +1,9 @@
 local words = {
-	"YOU ARE DREAMING!",
-	"WAKE UP!",
-	"TIC TAC",
-	"TAC",
-	"TIC",
+	"quests.dreamers_challenge.clock_word_1",
+	"quests.dreamers_challenge.clock_word_2",
+	"quests.dreamers_challenge.clock_word_3",
+	"quests.dreamers_challenge.clock_word_4",
+	"quests.dreamers_challenge.clock_word_5",
 }
 
 local clockTile = MoveEvent()
@@ -16,7 +16,7 @@ function clockTile.onStepIn(creature, item, position, fromPosition)
 
 	position.x = position.x + math.random(-3, 3)
 	position.y = position.y + math.random(-3, 3)
-	player:say(words[math.random(#words)], TALKTYPE_MONSTER_SAY, false, 0, position)
+	player:sayLocalized(words[math.random(#words)], TALKTYPE_MONSTER_SAY, false, 0, position)
 	return true
 end
 

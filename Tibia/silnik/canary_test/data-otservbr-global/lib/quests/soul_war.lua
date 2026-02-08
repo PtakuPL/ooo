@@ -540,7 +540,7 @@ SoulWarQuest = {
 		local boss = Creature("Goshnar's Megalomania")
 		if boss then
 			boss:teleportTo(SoulWarQuest.levers.goshnarsMegalomania.boss.position)
-			boss:say("ENOUGH! I WILL MAKE YOU SUFFER FOR YOUR INSOLENCE! NOW - I - WILL - ANIHILATE - YOU!")
+			boss:sayLocalized("scripts.soul_war.megalomania_blue_taunt")
 			boss:setType("Goshnar's Megalomania Blue")
 			local function changeBack()
 				boss:setType("Goshnar's Megalomania Purple")
@@ -1150,7 +1150,7 @@ function Monster:onThinkMegalomaniaWhiteTiles(interval, zonePositions, revertTim
 	accumulatedTime = accumulatedTime + interval
 
 	if accumulatedTime == bossSayInterval then
-		self:say("FEEL THE POWER OF MY WRATH!!")
+		self:sayLocalized("scripts.soul_war.megalomania_wrath")
 	end
 	-- Execute only after 40 seconds
 	if accumulatedTime >= desiredInterval then
@@ -1177,7 +1177,7 @@ function Player:addNextTaint()
 	for _, taintName in ipairs(soulWarTaints) do
 		if not soulWarQuest:get(taintName) then
 			soulWarQuest:set(taintName, true)
-			self:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have gained the " .. taintName .. ".")
+			self:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quest.soul_war.taint_gained", {taintName})
 			self:setTaintIcon()
 			break
 		end
@@ -1221,11 +1221,11 @@ function Player:resetTaints(skipCheckTime)
 		end
 		self:resetTaintConditions()
 		soulWarQuest:remove("firstTaintTime")
-		local resetMessage = "Your Goshnar's taints have been reset."
-		if not skipCheckTime then
-			resetMessage = resetMessage .. " You didn't finish the quest in 14 days."
+		if skipCheckTime then
+			self:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quest.soul_war.taints_reset")
+		else
+			self:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quest.soul_war.taints_reset_timeout")
 		end
-		self:sendTextMessage(MESSAGE_EVENT_ADVANCE, resetMessage)
 
 		for bossName, _ in pairs(SoulWarQuest.miniBosses) do
 			soulWarQuest:remove(bossName)
@@ -1401,7 +1401,7 @@ function Monster:increaseAspectOfPowerDeathCount()
 	bossKV:set("aspect-of-power-death-count", newCount)
 	if newCount == 4 then
 		self:setType("Goshnar's Megalomania Green")
-		self:say("THE DEATH OF ASPECTS DIMINISHES GOSHNAR'S POWER AND HE TURNS VULNERABLE!")
+		self:sayLocalized("scripts.soul_war.megalomania_vulnerable")
 		bossKV:set("aspect-of-power-death-count", 0)
 		SoulWarQuest.changeBlueEvent = addEvent(SoulWarQuest.changeMegalomaniaBlue, 1 * 60 * 1000)
 		logger.trace("Aspect of Power defeated all and Megalomania is now vulnerable, reseting death count.")
@@ -1409,7 +1409,7 @@ function Monster:increaseAspectOfPowerDeathCount()
 			local boss = Creature("Goshnar's Megalomania")
 			if boss and boss:getTypeName() == "Goshnar's Megalomania Green" then
 				boss:setType("Goshnar's Megalomania Purple")
-				boss:say("GOSHNAR REGAINED ENOUGH POWER TO TURN INVULNERABLE AGAIN!")
+				boss:sayLocalized("scripts.soul_war.megalomania_immune")
 				logger.trace("Megalomania is now immune again")
 			end
 		end, SoulWarQuest.timeToReturnImmuneMegalomania * 1000)

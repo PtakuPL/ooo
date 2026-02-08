@@ -6,10 +6,10 @@ function ferumbrasAscendantManaKeg.onUse(player, item, fromPosition, target, toP
 		item:transform(22770)
 		item:decay()
 		player:getPosition():sendMagicEffect(CONST_ME_MAGIC_RED)
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.ferumbras_mana_keg.msg_1")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.ferumbras_mana_keg.msg_1")
 		return true
 	elseif item.itemid == 22770 then
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.ferumbras_mana_keg.msg_2")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.ferumbras_mana_keg.msg_2")
 	end
 	return true
 end

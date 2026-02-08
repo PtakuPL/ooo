@@ -1,0 +1,163 @@
+---
+name: Build - Linux (OTC Client)
+
+on:
+  workflow_dispatch:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+    paths:
+      - "Tibia/silnik/canary_test/testyy/src/**"
+      - "Tibia/silnik/canary_test/testyy/CMakeLists.txt"
+      - "Tibia/silnik/canary_test/testyy/CMakePresets.json"
+      - "Tibia/silnik/canary_test/testyy/vcpkg.json"
+      - ".github/workflows/build-linux.yml"
+  push:
+    branches: [master, main]
+    paths:
+      - "Tibia/silnik/canary_test/testyy/src/**"
+      - "Tibia/silnik/canary_test/testyy/CMakeLists.txt"
+      - "Tibia/silnik/canary_test/testyy/CMakePresets.json"
+      - "Tibia/silnik/canary_test/testyy/vcpkg.json"
+      - ".github/workflows/build-linux.yml"
+
+env:
+  CMAKE_BUILD_PARALLEL_LEVEL: 4
+  MAKEFLAGS: '-j 4'
+  VCPKG_FEATURE_FLAGS: manifests,binarycaching
+  VCPKG_BINARY_SOURCES: clear;x-gha,readwrite
+  VCPKG_BUILD_TYPE: release
+  VCPKG_DEFAULT_TRIPLET: x64-linux
+  VCPKG_DEFAULT_HOST_TRIPLET: x64-linux
+
+jobs:
+  cancel-runs:
+    if: github.event_name == 'pull_request' && github.ref != 'refs/heads/master'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cancel Previous Runs
+        uses: styfle/cancel-workflow-action@0.12.1
+        with:
+          access_token: ${{ github.token }}
+
+  build-linux:
+    name: OTC Linux Build (${{ matrix.buildtype }})
+    runs-on: ubuntu-22.04
+    timeout-minutes: 360
+    defaults:
+      run:
+        working-directory: Tibia/silnik/canary_test/testyy
+
+    strategy:
+      fail-fast: false
+      matrix:
+        buildtype: [Release, Debug]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Remove nested git directories (upstream mirrors)
+        shell: bash
+        run: |
+          rm -rf oryginall/canary-serwer/.git || true
+          rm -rf oryginall/otclient/.git || true
+
+      - name: Install Linux Dependencies
+        working-directory: .
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            ccache software-properties-common \
+            libx11-dev libxrandr-dev libxinerama-dev libxcursor-dev libxi-dev \
+            libgl-dev libglu1-mesa-dev \
+            libasound2-dev libpulse-dev \
+            pkg-config
+          # gcc-13 for full C++20 support
+          sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y
+          sudo apt-get update
+          sudo apt-get install -y gcc-13 g++-13
+          sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-13 100 \
+            --slave /usr/bin/g++ g++ /usr/bin/g++-13 \
+            --slave /usr/bin/gcov gcov /usr/bin/gcov-13
+          sudo update-alternatives --set gcc /usr/bin/gcc-13
+
+      - name: CCache (sccache)
+        uses: hendrikmuhs/ccache-action@main
+        with:
+          max-size: "1G"
+          variant: "sccache"
+          key: sccache-otc-linux-${{ matrix.buildtype }}
+          restore-keys: |
+            sccache-otc-linux
+
+      - name: Export GitHub Actions cache env
+        uses: actions/github-script@v7
+        with:
+          script: |
+            core.exportVariable('ACTIONS_CACHE_URL', process.env.ACTIONS_CACHE_URL || '');
+            core.exportVariable('ACTIONS_RUNTIME_TOKEN', process.env.ACTIONS_RUNTIME_TOKEN || '');
+
+      - name: Get vcpkg commit ID
+        id: vcpkg-step
+        run: |
+          vcpkgCommitId=$(grep 'builtin-baseline' vcpkg.json | awk -F: '{print $2}' | tr -d '," ')
+          echo "vcpkg commit ID: $vcpkgCommitId"
+          echo "vcpkgGitCommitId=$vcpkgCommitId" >> $GITHUB_OUTPUT
+
+      - name: Cache vcpkg artifacts
+        uses: actions/cache@v4
+        with:
+          path: |
+            ${{ github.workspace }}/vcpkg/installed
+            ${{ github.workspace }}/vcpkg/buildtrees
+            ${{ github.workspace }}/vcpkg/downloads
+          key: vcpkg-otc-x64-linux-${{ hashFiles('Tibia/silnik/canary_test/testyy/vcpkg.json') }}
+          restore-keys: |
+            vcpkg-otc-x64-linux-
+
+      - name: Install vcpkg
+        uses: lukka/run-vcpkg@v11
+        with:
+          vcpkgGitCommitId: ${{ steps.vcpkg-step.outputs.vcpkgGitCommitId }}
+
+      - name: Setup CMake + Ninja
+        uses: lukka/get-cmake@latest
+        with:
+          cmakeVersion: '~3.27.0'
+
+      - name: Configure CMake
+        run: |
+          mkdir -p build
+          cmake -G "Ninja" \
+                -DCMAKE_BUILD_TYPE=${{ matrix.buildtype }} \
+                -DCMAKE_TOOLCHAIN_FILE="$VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake" \
+                -DOPTIONS_ENABLE_SCCACHE=ON \
+                -DSPEED_UP_BUILD_UNITY=OFF \
+                -DTOGGLE_BIN_FOLDER=ON \
+                -S . -B build
+
+      - name: Build
+        run: |
+          cmake --build build --config ${{ matrix.buildtype }} --parallel 4
+
+      - name: Create and Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: otclient-linux-${{ matrix.buildtype }}-${{ github.sha }}
+          path: |
+            ${{ github.workspace }}/Tibia/silnik/canary_test/testyy/build/bin/
+          retention-days: 30
+
+      - name: Run Unit Tests
+        working-directory: Tibia/silnik/canary_test/testyy/build
+        continue-on-error: true
+        run: |
+          if ctest -N -R unit | grep -q "Test #"; then ctest -V -R unit --output-on-failure; else echo "No unit tests."; fi
+
+      - name: Run Integration Tests
+        working-directory: Tibia/silnik/canary_test/testyy/build
+        continue-on-error: true
+        run: |
+          if ctest -N -R integration | grep -q "Test #"; then ctest -V -R integration --output-on-failure; else echo "No integration tests."; fi

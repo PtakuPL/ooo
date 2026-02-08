@@ -72,7 +72,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.liane.say_1")
 			npcHandler:setTopic(playerId, 1)
 		else
-			npcHandler:say("...", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.common.ellipsis")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "yes") then

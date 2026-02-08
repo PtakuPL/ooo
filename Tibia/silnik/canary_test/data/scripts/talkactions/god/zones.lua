@@ -4,7 +4,7 @@ function zones.onSay(player, words, param)
 	local params = string.split(param, ",")
 	local cmd = params[1]
 	if not cmd then
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.zones.msg_1")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.zones.msg_1")
 		return true
 	end
 
@@ -20,19 +20,19 @@ function zones.onSay(player, words, param)
 			table.insert(list, zone:getName())
 			::continue::
 		end
-		player:sendTextMessage(MESSAGE_HEALED, "Zones:\n" .. table.concat(list, "\n "))
+		player:sendLocalizedTextMessage(MESSAGE_HEALED, "talkaction.god.zones.msg_list", {table.concat(list, "\n ")})
 		return true
 	end
 
 	local function zoneFromParam()
 		local zoneName = params[2]:trim()
 		if not zoneName then
-			player:sendLocalizedMessage(MESSAGE_HEALED, "scripts.zones.msg_2")
+			player:sendLocalizedTextMessage(MESSAGE_HEALED, "scripts.zones.msg_2")
 			return true
 		end
 		local zone = Zone.getByName(zoneName)
 		if not zone then
-			player:sendLocalizedMessage(MESSAGE_HEALED, "scripts.zones.msg_3")
+			player:sendLocalizedTextMessage(MESSAGE_HEALED, "scripts.zones.msg_3")
 			return true
 		end
 		return zone
@@ -42,31 +42,31 @@ function zones.onSay(player, words, param)
 		["goto"] = function(zone)
 			local pos = zone:randomPosition()
 			if not pos then
-				player:sendLocalizedMessage(MESSAGE_HEALED, "scripts.zones.msg_4")
+				player:sendLocalizedTextMessage(MESSAGE_HEALED, "scripts.zones.msg_4")
 				return true
 			end
 			player:teleportTo(pos)
-			player:sendLocalizedMessage(MESSAGE_HEALED, "scripts.zones.msg_5" .. zone:getName() .. ".")
+			player:sendLocalizedTextMessage(MESSAGE_HEALED, "scripts.zones.goto_success", { zone:getName() })
 		end,
 		removeMonsters = function(zone)
 			zone:removeMonsters()
-			player:sendLocalizedMessage(MESSAGE_HEALED, "scripts.zones.msg_6" .. zone:getName() .. ".")
+			player:sendLocalizedTextMessage(MESSAGE_HEALED, "scripts.zones.remove_monsters_success", { zone:getName() })
 		end,
 		countMonsters = function(zone)
 			local monsters = zone:getMonsters()
-			player:sendTextMessage(MESSAGE_HEALED, "Zone " .. zone:getName() .. " monsters: " .. #monsters .. ".")
+			player:sendLocalizedTextMessage(MESSAGE_HEALED, "talkaction.god.zones.msg_monsters", {zone:getName(), #monsters})
 		end,
 		removeNpcs = function(zone)
 			zone:removeNpcs()
-			player:sendLocalizedMessage(MESSAGE_HEALED, "scripts.zones.msg_7" .. zone:getName() .. ".")
+			player:sendLocalizedTextMessage(MESSAGE_HEALED, "scripts.zones.remove_npcs_success", { zone:getName() })
 		end,
 		countNpcs = function(zone)
 			local npcs = zone:getNpcs()
-			player:sendTextMessage(MESSAGE_HEALED, "Zone " .. zone:getName() .. " NPCs: " .. #npcs .. ".")
+			player:sendLocalizedTextMessage(MESSAGE_HEALED, "talkaction.god.zones.msg_npcs", {zone:getName(), #npcs})
 		end,
 		kickPlayers = function(zone)
 			zone:removePlayers()
-			player:sendLocalizedMessage(MESSAGE_HEALED, "scripts.zones.msg_8" .. zone:getName() .. ".")
+			player:sendLocalizedTextMessage(MESSAGE_HEALED, "scripts.zones.kick_players_success", { zone:getName() })
 		end,
 		listPlayers = function(zone)
 			local players = zone:getPlayers()
@@ -74,21 +74,21 @@ function zones.onSay(player, words, param)
 			for _, player in ipairs(players) do
 				table.insert(list, player:getName())
 			end
-			player:sendTextMessage(MESSAGE_HEALED, "Zone " .. zone:getName() .. " players: " .. table.concat(list, ", ") .. ".")
+			player:sendLocalizedTextMessage(MESSAGE_HEALED, "talkaction.god.zones.msg_players_list", {zone:getName(), table.concat(list, ", ")})
 		end,
 		countPlayers = function(zone)
 			local players = zone:getPlayers()
-			player:sendTextMessage(MESSAGE_HEALED, "Zone " .. zone:getName() .. " players: " .. #players .. ".")
+			player:sendLocalizedTextMessage(MESSAGE_HEALED, "talkaction.god.zones.msg_players_count", {zone:getName(), #players})
 		end,
 		size = function(zone)
 			local positions = zone:getPositions()
-			player:sendTextMessage(MESSAGE_HEALED, "Zone " .. zone:getName() .. " size: " .. #positions .. ".")
+			player:sendLocalizedTextMessage(MESSAGE_HEALED, "talkaction.god.zones.msg_size", {zone:getName(), #positions})
 		end,
 	}
 
 	local command = commands[cmd]
 	if not command then
-		player:sendLocalizedMessage(MESSAGE_HEALED, "scripts.zones.msg_9")
+		player:sendLocalizedTextMessage(MESSAGE_HEALED, "scripts.zones.msg_9")
 		return true
 	end
 	local zone = zoneFromParam()

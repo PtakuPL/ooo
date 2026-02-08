@@ -286,12 +286,9 @@ local function townTravelHandler(npc, creature, message, keywords, parameters, n
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.captain_dreadnought.say_8", { townNames.free })
 		end
 		npcHandler.keywordHandler:moveUp(creature, 1)
-	elseif (parameters.sailableTowns == true) and parameters.text then
-		if player:isPremium() then
-			npcHandler:say(string.gsub(parameters.text, "|TOWNS|", townNames.premium), npc, creature)
-		else
-			npcHandler:say(string.gsub(parameters.text, "|TOWNS|", townNames.free), npc, creature)
-		end
+	elseif (parameters.sailableTowns == true) and parameters.i18nKey then
+		local sailableTownNames = player:isPremium() and townNames.premium or townNames.free
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, parameters.i18nKey, { sailableTownNames })
 	end
 	return true
 end
@@ -318,11 +315,7 @@ keywordHandler:addKeyword({ "rookgaard" }, StdModule.say, {
 })
 keywordHandler:addKeyword({ "adventurers guild" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"Those fellows help still green adventurers like you, so you learn the lay of the Tibian Mainlands. \z
-		With the adventurer's stone you can reach their guild hall from all major temples. ...",
-		"I recommend you travel there as soon as possible.",
-	},
+	i18nKey = "npc.captain_dreadnought.stdmod_20",
 })
 keywordHandler:addKeyword({ "premium" }, StdModule.say, {
 	npcHandler = npcHandler,
@@ -345,12 +338,7 @@ local notReadyNode = keywordHandler:addKeyword({ "no" }, StdModule.say, {
 -- hi, yes, ...
 local defaultTownNode = readyNode:addChildKeyword({ "yes" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"Quick learner, good answer. For inexperienced newcomers, \z
-		I'd recommend the city of {" .. towns[defaultTown].name .. "}. Great place to start! ...",
-		"Though I can tell you about the other main Tibian {cities} too, if you wish. \z
-		So, ready to set sail for {" .. towns[defaultTown].name .. "}?",
-	},
+	i18nKey = "npc.captain_dreadnought.stdmod_21",
 })
 readyNode:addChildKeyword({ "no" }, StdModule.say, {
 	npcHandler = npcHandler,
@@ -360,11 +348,12 @@ readyNode:addChildKeyword({ "no" }, StdModule.say, {
 -- hi, no, ...
 local aboutTownsNode = notReadyNode:addChildKeyword({ "yes" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.captain_dreadnought.stdmod_11" .. townNames.all .. ".",
+	i18nKey = "npc.captain_dreadnought.stdmod_16",
+	i18nArgs = { townNames.all },
 })
 local aboutSailNode = notReadyNode:addChildKeyword({ "no" }, townTravelHandler, {
 	sailableTowns = true,
-	text = "So you know it all, huh? Where do you want me to bring you to, kid? |TOWNS|?",
+	i18nKey = "npc.captain_dreadnought.stdmod_17",
 })
 -- hi, yes, yes, ...
 defaultTownNode:addChildKeyword({ "yes" }, townTravelHandler, { confirm = true, townId = defaultTown })
@@ -373,7 +362,8 @@ defaultTownNode:addChildKeyword({ "no" }, townTravelHandler, { decline = true })
 -- Towns topic nodes
 local townsNode = keywordHandler:addKeyword({ "cities" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.captain_dreadnought.stdmod_12" .. townNames.all .. "?",
+	i18nKey = "npc.captain_dreadnought.stdmod_18",
+	i18nArgs = { townNames.all },
 })
 for id, town in pairs(towns) do
 	local townNode = KeywordNode:new({ town.name:lower() }, StdModule.say, { npcHandler = npcHandler, text = town.about })
@@ -405,10 +395,11 @@ donateNode:addChildKeywordNode(KeywordNode:new({ "yes" }, donationHandler, { con
 donateNode:addChildKeywordNode(KeywordNode:new({ "no" }, donationHandler, { decline = true }))
 
 local function greetCallback(npc, creature)
-	local playerId = creature:getId()
-	local player = Player(creature)
-	npcHandler:setMessage(MESSAGE_GREET, "Well, well, a new " .. player:getVocation():getName():lower() .. "! Want me to bring you somewhere nice? \z
-		Just say {yes}.")
+	npcHandler:setLocalizedMessage(MESSAGE_GREET, "npc.captain_dreadnought.greet_msg_1", {
+		args = function(targetPlayer)
+			return { targetPlayer:getVocation():getName():lower() }
+		end,
+	})
 	return true
 end
 

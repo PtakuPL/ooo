@@ -1,14 +1,14 @@
 local bossForms = {
 	["snake god essence"] = {
-		text = "IT'S NOT THAT EASY MORTALS! FEEL THE POWER OF THE GOD!",
+		i18nKey = "scripts.zalamon_kill.say_1",
 		newForm = "snake thing",
 	},
 	["snake thing"] = {
-		text = "NOOO! NOW YOU HERETICS WILL FACE MY GODLY WRATH!",
+		i18nKey = "scripts.zalamon_kill.say_2",
 		newForm = "lizard abomination",
 	},
 	["lizard abomination"] = {
-		text = "YOU ... WILL ... PAY WITH ETERNITY ... OF AGONY!",
+		i18nKey = "scripts.zalamon_kill.say_3",
 		newForm = "mutated zalamon",
 	},
 }
@@ -37,7 +37,7 @@ function zalamonKill.onDeath(creature)
 	if not found then
 		local monster = Game.createMonster(bossConfig.newForm, creature:getPosition(), false, true)
 		if monster then
-			monster:say(bossConfig.text, TALKTYPE_MONSTER_SAY)
+			monster:sayLocalized(bossConfig.i18nKey, TALKTYPE_MONSTER_SAY)
 		end
 	end
 	return true

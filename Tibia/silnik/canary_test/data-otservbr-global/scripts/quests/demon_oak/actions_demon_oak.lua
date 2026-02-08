@@ -1,15 +1,15 @@
 local config = {
 	demonOakIds = { 914, 915, 916, 917 },
 	sounds = {
-		"MY ROOTS ARE SHARP AS A SCYTHE! FEEL IT?!?",
-		"CURSE YOU!",
-		"RISE, MINIONS, RISE FROM THE DEAD!!!!",
-		"AHHHH! YOUR BLOOD MAKES ME STRONG!",
-		"GET THE BONES, HELLHOUND! GET THEM!!",
-		"GET THERE WHERE I CAN REACH YOU!!!",
-		"ETERNAL PAIN AWAITS YOU! NICE REWARD, HUH?!?!",
-		"YOU ARE GOING TO PAY FOR EACH HIT WITH DECADES OF TORTURE!!",
-		"ARGG! TORTURE IT!! KILL IT SLOWLY MY MINION!!",
+		"quests.demon_oak.sound_1",
+		"quests.demon_oak.sound_2",
+		"quests.demon_oak.sound_3",
+		"quests.demon_oak.sound_4",
+		"quests.demon_oak.sound_5",
+		"quests.demon_oak.sound_6",
+		"quests.demon_oak.sound_7",
+		"quests.demon_oak.sound_8",
+		"quests.demon_oak.sound_9",
 	},
 	bonebeastChance = 90,
 	bonebeastCount = 4,
@@ -119,7 +119,7 @@ function demonOak.onUse(player, item, fromPosition, target, toPosition, isHotkey
 		end
 	end
 
-	player:say(isLastCut and "HOW IS THAT POSSIBLE?!? MY MASTER WILL CRUSH YOU!! AHRRGGG!" or config.sounds[math.random(#config.sounds)], TALKTYPE_MONSTER_YELL, false, player, DEMON_OAK_POSITION)
+	player:sayLocalized(isLastCut and "quests.demon_oak.master_crush" or config.sounds[math.random(#config.sounds)], TALKTYPE_MONSTER_YELL, false, player, DEMON_OAK_POSITION)
 	toPosition:sendMagicEffect(CONST_ME_DRAWBLOOD)
 	player:setStorageValue(cStorage, progress + 1)
 	player:sayLocalized("scripts.actions_demon_oak.say_1", TALKTYPE_MONSTER_YELL, false, player, toPosition)

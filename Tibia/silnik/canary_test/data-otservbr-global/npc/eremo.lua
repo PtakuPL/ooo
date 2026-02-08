@@ -78,7 +78,7 @@ local blessKeyword = keywordHandler:addKeyword({ "solitude" }, StdModule.say, {
 })
 blessKeyword:addChildKeyword({ "yes" }, StdModule.bless, {
 	npcHandler = npcHandler,
-	text = "So receive the wisdom of solitude, pilgrim.",
+	i18nKey = "npc.eremo.stdmod_2",
 	cost = "|BLESSCOST|",
 	bless = 2,
 })
@@ -130,7 +130,7 @@ local teleportKeyword = keywordHandler:addKeyword({ "cormaya" }, StdModule.say, 
 })
 teleportKeyword:addChildKeyword({ "yes" }, StdModule.travel, {
 	npcHandler = npcHandler,
-	text = "Here you go!",
+	i18nKey = "npc.eremo.stdmod_7",
 	premium = false,
 	destination = Position(33288, 31956, 6),
 })

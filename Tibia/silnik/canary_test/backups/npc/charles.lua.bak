@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Passages to Thais, Darashia, Edron, Venore, Ankrahmun, Liberty Bay and Yalahar." },
+	{ i18nKey = "npc.charles.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -137,9 +137,9 @@ keywordHandler:addKeyword({ "port hope" }, StdModule.say, { npcHandler = npcHand
 keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.charles.stdmod_9" })
 keywordHandler:addKeyword({ "svargrond" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.charles.stdmod_10" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Ahoy. Where can I sail you today?")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Bye.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Bye.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.charles.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.charles.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.charles.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 

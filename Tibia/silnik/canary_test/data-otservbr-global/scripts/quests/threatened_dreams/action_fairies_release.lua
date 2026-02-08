@@ -3,27 +3,27 @@ local config = {
 	[40016] = {
 		pos = Position(33576, 32185, 8),
 		storage = ThreatenedDreams.Mission02.Fairy01,
-		message = "My tainted siblings locked me up in the dark far too long. Now I'm finally free! Thank you, mortal being!",
+		message = "quests.threatened_dreams.fairy_free",
 	},
 	[40017] = {
 		pos = Position(33621, 32214, 8),
 		storage = ThreatenedDreams.Mission02.Fairy02,
-		message = "My tainted siblings locked me up in the dark far too long. Now I'm finally free! Thank you, mortal being!",
+		message = "quests.threatened_dreams.fairy_free",
 	},
 	[40018] = {
 		pos = Position(33559, 32203, 9),
 		storage = ThreatenedDreams.Mission02.Fairy03,
-		message = "My tainted siblings locked me up in the dark far too long. Now I'm finally free! Thank you, mortal being!",
+		message = "quests.threatened_dreams.fairy_free",
 	},
 	[40019] = {
 		pos = Position(33505, 32286, 8),
 		storage = ThreatenedDreams.Mission02.Fairy04,
-		message = "My tainted siblings locked me up in the dark far too long. Now I'm finally free! Thank you, mortal being!",
+		message = "quests.threatened_dreams.fairy_free",
 	},
 	[40020] = {
 		pos = Position(33440, 32217, 8),
 		storage = ThreatenedDreams.Mission02.Fairy05,
-		message = "My tainted siblings locked me up in the dark far too long. Now I'm finally free! Thank you, mortal being!",
+		message = "quests.threatened_dreams.fairy_free",
 	},
 }
 
@@ -46,7 +46,7 @@ function fairiesRelease.onUse(player, item, fromPosition, target, toPosition, is
 		if player:getStorageValue(fairy.storage) < 1 then
 			item:transform(25797)
 			addEvent(revertFairy, 30 * 1000, toPosition, 25797)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, fairy.message)
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, fairy.message)
 			toPosition:sendMagicEffect(CONST_ME_PURPLESMOKE)
 			toPosition:sendMagicEffect(CONST_ME_MAGIC_GREEN)
 			player:setStorageValue(fairy.storage, 1)
@@ -58,7 +58,7 @@ function fairiesRelease.onUse(player, item, fromPosition, target, toPosition, is
 			return true
 		else
 			toPosition:sendMagicEffect(CONST_ME_PURPLESMOKE)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, fairy.message)
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, fairy.message)
 		end
 	else
 		return false

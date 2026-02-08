@@ -103,12 +103,7 @@ mission4LostHerbs:addChildKeyword({ "no" }, StdModule.say, {
 -- Mission 4: Accept (First reward)
 keywordHandler:addKeyword({ "yes" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"Here you go - two small health potions. If you use them on yourself, they will recover some of your hitpoints. ...",
-		"I recommend setting them on a hotkey so you don't have to search for them in a case of emergency. ...",
-		"Once you are a bit more experienced and have chosen a vocation, you'll have access to many different potions and also spells to restore your health. ...",
-		"Oh, and I also have another present for you! Do you still have some space in your inventory?",
-	},
+	i18nKey = "npc.hyacinth.stdmod_53",
 }, function(player)
 	return player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission04) == 3
 end, function(player)
@@ -119,13 +114,7 @@ end)
 -- Mission 4: Accept (Second reward)
 keywordHandler:addKeyword({ "yes" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"Take this star ring. When you wear it in your ring slot, it will improve the effect of food that you have eaten for a limited time. So as long as you're not hungry, you will have increased hitpoint regeneration. ...",
-		"It makes sense to undress it when you have full hitpoints, so that the effect of the ring won't be wasted. ...",
-		"There are a lot of different rings in Tibia, but this one only works as long as you haven't learnt a vocation, so don't be afraid to use it. ...",
-		"Anyway, thanks so much for your help. I can brew a lot of potions from these herbs. If you're in the area and find yourself in need of potions, don't hesitate to drop by and ask me for a {trade}. ...",
-		"Anyway, this old man has taken enough of your time. Why don't you go back to the village and talk to Vascalir? If you stay on the path, you should be safe. Don't forget your potions!",
-	},
+	i18nKey = "npc.hyacinth.stdmod_54",
 }, function(player)
 	return player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission04) == 4
 end, function(player)

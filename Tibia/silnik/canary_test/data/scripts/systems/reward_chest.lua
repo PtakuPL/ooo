@@ -113,14 +113,13 @@ function bossDeath.onDeath(creature, corpse, killer, mostDamageKiller, lastHitUn
 
 				if con.player then
 					local collorMessage = player:getClient().version > 1200
-					local lootMessage = ("The following items dropped by %s are available in your reward chest: %s"):format(creature:getName(), reward:getContentDescription(collorMessage))
-					if rolls > 1 then
-						lootMessage = lootMessage .. " (boss bonus)"
-					end
+					local contentDesc = reward:getContentDescription(collorMessage)
+					local bossName = creature:getName()
+					local lootKey = rolls > 1 and "system.reward_chest.loot_boss_bonus" or "system.reward_chest.loot_available"
+					player:sendLocalizedTextMessage(MESSAGE_LOOT, lootKey, {bossName, contentDesc})
 					if stamina > 840 then
-						reward:getContentDescription(lootMessage)
+						reward:getContentDescription(lootKey)
 					end
-					player:sendTextMessage(MESSAGE_LOOT, lootMessage)
 				else
 					player:save()
 				end

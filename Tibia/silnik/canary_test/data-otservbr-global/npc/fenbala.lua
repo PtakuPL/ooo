@@ -78,8 +78,8 @@ local function creatureSayCallback(npc, creature, type, message)
 end
 
 -- Greeting
-keywordHandler:addGreetKeyword({ "hail queen" }, { npcHandler = npcHandler, text = "HAIL TO THE QUEEN!", i18nKey = "npc.fenbala.greet_1" })
-keywordHandler:addGreetKeyword({ "salutations queen" }, { npcHandler = npcHandler, text = "HAIL TO THE QUEEN!", i18nKey = "npc.fenbala.greet_2" })
+keywordHandler:addGreetKeyword({ "hail queen" }, { npcHandler = npcHandler, i18nKey = "npc.fenbala.greet_1" })
+keywordHandler:addGreetKeyword({ "salutations queen" }, { npcHandler = npcHandler, i18nKey = "npc.fenbala.greet_2" })
 
 NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.fenbala.walkaway_msg_1")
 NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.fenbala.farewell_msg_1")

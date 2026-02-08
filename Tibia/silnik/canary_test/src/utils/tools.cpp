@@ -10,6 +10,7 @@
 #include "utils/tools.hpp"
 
 #include "core.hpp"
+#include "utils/i18n/translator.hpp"
 #include "enums/object_category.hpp"
 #include "items/item.hpp"
 #include "lua/lua_definitions.hpp"
@@ -971,55 +972,58 @@ SpawnType_t getSpawnType(const std::string &strValue) {
 	return RESPAWN_IN_ALL;
 }
 
-std::string getSkillName(uint8_t skillid) {
+std::string getSkillName(uint8_t skillid, std::string_view locale /*= {}*/) {
+	const std::string locStr(locale.empty() ? "en" : locale);
+	auto &tr = i18n::g_translator();
+
 	switch (skillid) {
 		case SKILL_FIST:
-			return "fist fighting";
+			return tr.get("cpp.skill.fist_fighting", locStr);
 
 		case SKILL_CLUB:
-			return "club fighting";
+			return tr.get("cpp.skill.club_fighting", locStr);
 
 		case SKILL_SWORD:
-			return "sword fighting";
+			return tr.get("cpp.skill.sword_fighting", locStr);
 
 		case SKILL_AXE:
-			return "axe fighting";
+			return tr.get("cpp.skill.axe_fighting", locStr);
 
 		case SKILL_DISTANCE:
-			return "distance fighting";
+			return tr.get("cpp.skill.distance_fighting", locStr);
 
 		case SKILL_SHIELD:
-			return "shielding";
+			return tr.get("cpp.skill.shielding", locStr);
 
 		case SKILL_FISHING:
-			return "fishing";
+			return tr.get("cpp.skill.fishing", locStr);
 
 		case SKILL_CRITICAL_HIT_CHANCE:
-			return "critical hit chance";
+			return tr.get("cpp.skill.critical_hit_chance", locStr);
 
 		case SKILL_CRITICAL_HIT_DAMAGE:
-			return "critical extra damage";
+			return tr.get("cpp.skill.critical_extra_damage", locStr);
 
 		case SKILL_LIFE_LEECH_CHANCE:
-			return "life leech chance";
+			return tr.get("cpp.skill.life_leech_chance", locStr);
 
 		case SKILL_LIFE_LEECH_AMOUNT:
-			return "life leech";
+			return tr.get("cpp.skill.life_leech", locStr);
 
 		case SKILL_MANA_LEECH_CHANCE:
-			return "mana leech chance";
+			return tr.get("cpp.skill.mana_leech_chance", locStr);
 
 		case SKILL_MANA_LEECH_AMOUNT:
-			return "mana leech";
+			return tr.get("cpp.skill.mana_leech", locStr);
 
 		case SKILL_MAGLEVEL:
-			return "magic level";
+			return tr.get("cpp.skill.magic_level", locStr);
 
 		case SKILL_LEVEL:
-			return "level";
+			return tr.get("cpp.skill.level", locStr);
 
 		default:
-			return "unknown";
+			return tr.get("cpp.skill.unknown", locStr);
 	}
 }
 
@@ -1083,22 +1087,25 @@ bool booleanString(const std::string &str) {
 	return ch != 'f' && ch != 'n' && ch != '0';
 }
 
-std::string getWeaponName(WeaponType_t weaponType) {
+std::string getWeaponName(WeaponType_t weaponType, std::string_view locale /*= {}*/) {
+	const std::string locStr(locale.empty() ? "en" : locale);
+	auto &tr = i18n::g_translator();
+
 	switch (weaponType) {
 		case WEAPON_SWORD:
-			return "sword";
+			return tr.get("cpp.weapon.sword", locStr);
 		case WEAPON_CLUB:
-			return "club";
+			return tr.get("cpp.weapon.club", locStr);
 		case WEAPON_AXE:
-			return "axe";
+			return tr.get("cpp.weapon.axe", locStr);
 		case WEAPON_DISTANCE:
-			return "distance";
+			return tr.get("cpp.weapon.distance", locStr);
 		case WEAPON_WAND:
-			return "wand";
+			return tr.get("cpp.weapon.wand", locStr);
 		case WEAPON_AMMO:
-			return "ammunition";
+			return tr.get("cpp.weapon.ammunition", locStr);
 		case WEAPON_MISSILE:
-			return "missile";
+			return tr.get("cpp.weapon.missile", locStr);
 		default:
 			return {};
 	}
@@ -1145,12 +1152,32 @@ MoveEvent_t getMoveEventType(const std::string &name) {
 	return MOVE_EVENT_NONE;
 }
 
-std::string getCombatName(CombatType_t combatType) {
-	const auto combatName = combatTypeNames.find(combatType);
-	if (combatName != combatTypeNames.end()) {
-		return combatName->second;
+std::string getCombatName(CombatType_t combatType, std::string_view locale /*= {}*/) {
+	const std::string locStr(locale.empty() ? "en" : locale);
+	auto &tr = i18n::g_translator();
+
+	static const std::unordered_map<CombatType_t, std::string> combatKeyMap = {
+		{ COMBAT_DROWNDAMAGE, "cpp.combat.drown" },
+		{ COMBAT_DEATHDAMAGE, "cpp.combat.death" },
+		{ COMBAT_ENERGYDAMAGE, "cpp.combat.energy" },
+		{ COMBAT_EARTHDAMAGE, "cpp.combat.earth" },
+		{ COMBAT_FIREDAMAGE, "cpp.combat.fire" },
+		{ COMBAT_HEALING, "cpp.combat.healing" },
+		{ COMBAT_HOLYDAMAGE, "cpp.combat.holy" },
+		{ COMBAT_ICEDAMAGE, "cpp.combat.ice" },
+		{ COMBAT_UNDEFINEDDAMAGE, "cpp.combat.undefined" },
+		{ COMBAT_LIFEDRAIN, "cpp.combat.lifedrain" },
+		{ COMBAT_MANADRAIN, "cpp.combat.manadrain" },
+		{ COMBAT_PHYSICALDAMAGE, "cpp.combat.physical" },
+		{ COMBAT_AGONYDAMAGE, "cpp.combat.agony" },
+		{ COMBAT_NEUTRALDAMAGE, "cpp.combat.neutral" },
+	};
+
+	const auto it = combatKeyMap.find(combatType);
+	if (it != combatKeyMap.end()) {
+		return tr.get(it->second, locStr);
 	}
-	return "unknown";
+	return tr.get("cpp.combat.unknown", locStr);
 }
 
 CombatType_t getCombatTypeByName(const std::string &combatname) {
@@ -1561,6 +1588,276 @@ const char* getReturnMessage(ReturnValue value) {
 		// Any unhandled ReturnValue will go enter here
 		default:
 			return "Unknown error.";
+	}
+}
+
+const char* getReturnMessageI18nKey(ReturnValue value) {
+	switch (value) {
+		case RETURNVALUE_NOERROR:
+			return "cpp.returnvalue.no_error";
+
+		case RETURNVALUE_NOTBOUGHTINSTORE:
+			return "cpp.returnvalue.not_bought_in_store";
+
+		case RETURNVALUE_ITEMCANNOTBEMOVEDPOUCH:
+			return "cpp.returnvalue.item_cannot_be_moved_pouch";
+
+		case RETURNVALUE_ITEMCANNOTBEMOVEDTHERE:
+			return "cpp.returnvalue.item_cannot_be_moved_there";
+
+		case RETURNVALUE_REWARDCHESTISEMPTY:
+			return "cpp.returnvalue.reward_chest_is_empty";
+
+		case RETURNVALUE_DESTINATIONOUTOFREACH:
+			return "cpp.returnvalue.destination_out_of_reach";
+
+		case RETURNVALUE_NOTMOVABLE:
+			return "cpp.returnvalue.not_movable";
+
+		case RETURNVALUE_DROPTWOHANDEDITEM:
+			return "cpp.returnvalue.drop_two_handed_item";
+
+		case RETURNVALUE_BOTHHANDSNEEDTOBEFREE:
+			return "cpp.returnvalue.both_hands_need_to_be_free";
+
+		case RETURNVALUE_CANNOTBEDRESSED:
+			return "cpp.returnvalue.cannot_be_dressed";
+
+		case RETURNVALUE_PUTTHISOBJECTINYOURHAND:
+			return "cpp.returnvalue.put_this_object_in_your_hand";
+
+		case RETURNVALUE_PUTTHISOBJECTINBOTHHANDS:
+			return "cpp.returnvalue.put_this_object_in_both_hands";
+
+		case RETURNVALUE_CANONLYUSEONEWEAPON:
+			return "cpp.returnvalue.can_only_use_one_weapon";
+
+		case RETURNVALUE_TOOFARAWAY:
+			return "cpp.returnvalue.too_far_away";
+
+		case RETURNVALUE_FIRSTGODOWNSTAIRS:
+			return "cpp.returnvalue.first_go_downstairs";
+
+		case RETURNVALUE_FIRSTGOUPSTAIRS:
+			return "cpp.returnvalue.first_go_upstairs";
+
+		case RETURNVALUE_NOTENOUGHCAPACITY:
+			return "cpp.returnvalue.not_enough_capacity";
+
+		case RETURNVALUE_CONTAINERNOTENOUGHROOM:
+			return "cpp.returnvalue.container_not_enough_room";
+
+		case RETURNVALUE_ONLYAMMOINQUIVER:
+			return "cpp.returnvalue.only_ammo_in_quiver";
+
+		case RETURNVALUE_CREATUREBLOCK:
+		case RETURNVALUE_NEEDEXCHANGE:
+		case RETURNVALUE_NOTENOUGHROOM:
+			return "cpp.returnvalue.not_enough_room";
+
+		case RETURNVALUE_CANNOTPICKUP:
+			return "cpp.returnvalue.cannot_pickup";
+
+		case RETURNVALUE_CANNOTTHROW:
+			return "cpp.returnvalue.cannot_throw";
+
+		case RETURNVALUE_THEREISNOWAY:
+			return "cpp.returnvalue.there_is_no_way";
+
+		case RETURNVALUE_THISISIMPOSSIBLE:
+			return "cpp.returnvalue.this_is_impossible";
+
+		case RETURNVALUE_PLAYERISPZLOCKED:
+			return "cpp.returnvalue.player_is_pz_locked";
+
+		case RETURNVALUE_PLAYERISNOTINVITED:
+			return "cpp.returnvalue.player_is_not_invited";
+
+		case RETURNVALUE_CREATUREDOESNOTEXIST:
+			return "cpp.returnvalue.creature_does_not_exist";
+
+		case RETURNVALUE_DEPOTISFULL:
+			return "cpp.returnvalue.depot_is_full";
+
+		case RETURNVALUE_CONTAINERISFULL:
+			return "cpp.returnvalue.container_is_full";
+
+		case RETURNVALUE_CANNOTUSETHISOBJECT:
+			return "cpp.returnvalue.cannot_use_this_object";
+
+		case RETURNVALUE_PLAYERWITHTHISNAMEISNOTONLINE:
+			return "cpp.returnvalue.player_with_this_name_is_not_online";
+
+		case RETURNVALUE_NOTREQUIREDLEVELTOUSERUNE:
+			return "cpp.returnvalue.not_required_level_to_use_rune";
+
+		case RETURNVALUE_YOUAREALREADYTRADING:
+			return "cpp.returnvalue.you_are_already_trading";
+
+		case RETURNVALUE_THISPLAYERISALREADYTRADING:
+			return "cpp.returnvalue.this_player_is_already_trading";
+
+		case RETURNVALUE_YOUMAYNOTLOGOUTDURINGAFIGHT:
+			return "cpp.returnvalue.you_may_not_logout_during_a_fight";
+
+		case RETURNVALUE_DIRECTPLAYERSHOOT:
+			return "cpp.returnvalue.direct_player_shoot";
+
+		case RETURNVALUE_NOTENOUGHLEVEL:
+			return "cpp.returnvalue.not_enough_level";
+
+		case RETURNVALUE_NOTENOUGHMAGICLEVEL:
+			return "cpp.returnvalue.not_enough_magic_level";
+
+		case RETURNVALUE_NOTENOUGHMANA:
+			return "cpp.returnvalue.not_enough_mana";
+
+		case RETURNVALUE_NOTENOUGHSOUL:
+			return "cpp.returnvalue.not_enough_soul";
+
+		case RETURNVALUE_YOUAREEXHAUSTED:
+			return "cpp.returnvalue.you_are_exhausted";
+
+		case RETURNVALUE_CANONLYUSETHISRUNEONCREATURES:
+			return "cpp.returnvalue.can_only_use_this_rune_on_creatures";
+
+		case RETURNVALUE_PLAYERISNOTREACHABLE:
+			return "cpp.returnvalue.player_is_not_reachable";
+
+		case RETURNVALUE_CREATUREISNOTREACHABLE:
+			return "cpp.returnvalue.creature_is_not_reachable";
+
+		case RETURNVALUE_ACTIONNOTPERMITTEDINPROTECTIONZONE:
+			return "cpp.returnvalue.action_not_permitted_in_protection_zone";
+
+		case RETURNVALUE_YOUMAYNOTATTACKTHISPLAYER:
+			return "cpp.returnvalue.you_may_not_attack_this_player";
+
+		case RETURNVALUE_YOUMAYNOTATTACKTHISCREATURE:
+			return "cpp.returnvalue.you_may_not_attack_this_creature";
+
+		case RETURNVALUE_YOUMAYNOTATTACKAPERSONINPROTECTIONZONE:
+			return "cpp.returnvalue.you_may_not_attack_a_person_in_protection_zone";
+
+		case RETURNVALUE_YOUMAYNOTATTACKAPERSONWHILEINPROTECTIONZONE:
+			return "cpp.returnvalue.you_may_not_attack_a_person_while_in_protection_zone";
+
+		case RETURNVALUE_YOUCANONLYUSEITONCREATURES:
+			return "cpp.returnvalue.you_can_only_use_it_on_creatures";
+
+		case RETURNVALUE_TURNSECUREMODETOATTACKUNMARKEDPLAYERS:
+			return "cpp.returnvalue.turn_secure_mode_to_attack_unmarked_players";
+
+		case RETURNVALUE_YOUNEEDPREMIUMACCOUNT:
+			return "cpp.returnvalue.you_need_premium_account";
+
+		case RETURNVALUE_YOUNEEDTOLEARNTHISSPELL:
+			return "cpp.returnvalue.you_need_to_learn_this_spell";
+
+		case RETURNVALUE_YOURVOCATIONCANNOTUSETHISSPELL:
+			return "cpp.returnvalue.your_vocation_cannot_use_this_spell";
+
+		case RETURNVALUE_YOUNEEDAWEAPONTOUSETHISSPELL:
+			return "cpp.returnvalue.you_need_a_weapon_to_use_this_spell";
+
+		case RETURNVALUE_PLAYERISPZLOCKEDLEAVEPVPZONE:
+			return "cpp.returnvalue.player_is_pz_locked_leave_pvp_zone";
+
+		case RETURNVALUE_PLAYERISPZLOCKEDENTERPVPZONE:
+			return "cpp.returnvalue.player_is_pz_locked_enter_pvp_zone";
+
+		case RETURNVALUE_ACTIONNOTPERMITTEDINANOPVPZONE:
+			return "cpp.returnvalue.action_not_permitted_in_a_no_pvp_zone";
+
+		case RETURNVALUE_YOUCANNOTLOGOUTHERE:
+			return "cpp.returnvalue.you_cannot_logout_here";
+
+		case RETURNVALUE_YOUNEEDAMAGICITEMTOCASTSPELL:
+			return "cpp.returnvalue.you_need_a_magic_item_to_cast_spell";
+
+		case RETURNVALUE_CANNOTCONJUREITEMHERE:
+			return "cpp.returnvalue.cannot_conjure_item_here";
+
+		case RETURNVALUE_YOUNEEDTOSPLITYOURSPEARS:
+			return "cpp.returnvalue.you_need_to_split_your_spears";
+
+		case RETURNVALUE_NAMEISTOOAMBIGUOUS:
+			return "cpp.returnvalue.name_is_too_ambiguous";
+
+		case RETURNVALUE_CANONLYUSEONESHIELD:
+			return "cpp.returnvalue.can_only_use_one_shield";
+
+		case RETURNVALUE_NOPARTYMEMBERSINRANGE:
+			return "cpp.returnvalue.no_party_members_in_range";
+
+		case RETURNVALUE_YOUARENOTTHEOWNER:
+			return "cpp.returnvalue.you_are_not_the_owner";
+
+		case RETURNVALUE_YOUCANTOPENCORPSEADM:
+			return "cpp.returnvalue.you_cant_open_corpse_admin";
+
+		case RETURNVALUE_NOSUCHRAIDEXISTS:
+			return "cpp.returnvalue.no_such_raid_exists";
+
+		case RETURNVALUE_ANOTHERRAIDISALREADYEXECUTING:
+			return "cpp.returnvalue.another_raid_is_already_executing";
+
+		case RETURNVALUE_TRADEPLAYERFARAWAY:
+			return "cpp.returnvalue.trade_player_far_away";
+
+		case RETURNVALUE_YOUDONTOWNTHISHOUSE:
+			return "cpp.returnvalue.you_dont_own_this_house";
+
+		case RETURNVALUE_TRADEPLAYERALREADYOWNSAHOUSE:
+			return "cpp.returnvalue.trade_player_already_owns_a_house";
+
+		case RETURNVALUE_TRADEPLAYERHIGHESTBIDDER:
+			return "cpp.returnvalue.trade_player_highest_bidder";
+
+		case RETURNVALUE_YOUCANNOTTRADETHISHOUSE:
+			return "cpp.returnvalue.you_cannot_trade_this_house";
+
+		case RETURNVALUE_YOUDONTHAVEREQUIREDPROFESSION:
+			return "cpp.returnvalue.you_dont_have_required_profession";
+
+		case RETURNVALUE_NOTENOUGHFISTLEVEL:
+			return "cpp.returnvalue.not_enough_fist_level";
+
+		case RETURNVALUE_NOTENOUGHCLUBLEVEL:
+			return "cpp.returnvalue.not_enough_club_level";
+
+		case RETURNVALUE_NOTENOUGHSWORDLEVEL:
+			return "cpp.returnvalue.not_enough_sword_level";
+
+		case RETURNVALUE_NOTENOUGHAXELEVEL:
+			return "cpp.returnvalue.not_enough_axe_level";
+
+		case RETURNVALUE_NOTENOUGHDISTANCELEVEL:
+			return "cpp.returnvalue.not_enough_distance_level";
+
+		case RETURNVALUE_NOTENOUGHSHIELDLEVEL:
+			return "cpp.returnvalue.not_enough_shield_level";
+
+		case RETURNVALUE_NOTENOUGHFISHLEVEL:
+			return "cpp.returnvalue.not_enough_fish_level";
+
+		case RETURNVALUE_NOTPOSSIBLE:
+			return "cpp.returnvalue.not_possible";
+
+		case RETURNVALUE_REWARDCONTAINERISEMPTY:
+			return "cpp.returnvalue.reward_container_is_empty";
+
+		case RETURNVALUE_CONTACTADMINISTRATOR:
+			return "cpp.returnvalue.contact_administrator";
+
+		case RETURNVALUE_ITEMISNOTYOURS:
+			return "cpp.returnvalue.item_is_not_yours";
+
+		case RETURNVALUE_ITEMUNTRADEABLE:
+			return "cpp.returnvalue.item_untradeable";
+
+		default:
+			return "cpp.returnvalue.unknown_error";
 	}
 }
 

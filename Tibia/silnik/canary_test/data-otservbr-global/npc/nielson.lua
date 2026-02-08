@@ -60,16 +60,16 @@ end
 local function addTravelKeyword(keyword, cost, destination)
 	local travelKeyword = keywordHandler:addKeyword({ keyword }, StdModule.say, {
 		npcHandler = npcHandler,
-		i18nKey = "npc.nielson.stdmod_1" .. keyword:titleCase() .. " for |TRAVELCOST|?",
+		i18nKey = "npc.nielson.stdmod_2", i18nArgs = { keyword:titleCase() },
 		cost = cost,
 		discount = "postman",
 	})
-	travelKeyword:addChildKeyword({ "yes" }, StdModule.travel, {
-		npcHandler = npcHandler,
-		text = "Have a nice trip!",
-		premium = false,
-		cost = cost,
-		discount = "postman",
+		travelKeyword:addChildKeyword({ "yes" }, StdModule.travel, {
+			npcHandler = npcHandler,
+			i18nKey = "npc.nielson.stdmod_3",
+			premium = false,
+			cost = cost,
+			discount = "postman",
 		destination = destination,
 	})
 	travelKeyword:addChildKeyword({ "no" }, StdModule.say, {

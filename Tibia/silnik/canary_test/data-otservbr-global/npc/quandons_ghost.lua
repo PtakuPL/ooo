@@ -55,12 +55,13 @@ local function greetCallback(npc, creature)
 	local playerId = player:getId()
 
 	if player:getStorageValue(Storage.Quest.U10_50.DarkTrails.Mission15) == 3 and player:getStorageValue(Storage.Quest.U10_50.DarkTrails.Mission16) < 1 then
-		npcHandler:setMessage(MESSAGE_GREET, {
-			"He murdered me. I shouldn't have trusted him! The money! All that money blinded me! To the east I brought his stuff. In night and darkness, covered by some kind of magic of his. The minotaurs did not bother us, like he promised. ...",
-			"His ... his true name is Shargon and he is a priest of some kind. He belongs to a powerful secret society and is looking for something on their behalves. ...",
-			"We brought his stuff to a hideout, I'll mark it on your map! The things that I've seen there! Horrible, horrible things! I fled, but he found me, killed me. He murdered me!",
-		})
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {
+			"npc.quandons_ghost.greet_msg_2",
+			"npc.quandons_ghost.greet_msg_3",
+			"npc.quandons_ghost.greet_msg_4",
+		}, 1000)
 		player:setStorageValue(Storage.Quest.U10_50.DarkTrails.Mission16, 1)
+		return false
 	else
 		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.quandons_ghost.greet_msg_1")
 	end

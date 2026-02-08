@@ -66,12 +66,12 @@ function explorerSocietyFindings.onUse(player, item, fromPosition, target, toPos
 		return true
 	end
 	if player:getStorageValue(item.uid) >= 1 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The " .. getItemName(uniqueItem.itemId) .. " is empty.")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.common.item_is_empty", { getItemName(uniqueItem.itemId) })
 		return true
 	end
 	if player:getStorageValue(uniqueItem.storageMission) ~= uniqueItem.storageMissionValue then
 		player:addItem(uniqueItem.rewardItemId, 1)
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_findings.msg_1" .. getItemName(uniqueItem.rewardItemId) .. ".")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_findings.msg_1", { getItemName(uniqueItem.rewardItemId) })
 		player:setStorageValue(item.uid, 1)
 		player:setStorageValue(uniqueItem.storageMission, uniqueItem.storageMissionValue)
 		if uniqueItem.storageQuestlineValue > 0 then

@@ -10,12 +10,102 @@ end
 
 -- Text functions
 
-local function evaluateText(value, player)
-	if type(value) == "function" then
-		return tostring(value(player))
+local QUESTLOG_KEY_PREFIX = "questlog"
+local QUESTLOG_MARKER_PREFIX = "#i18n:"
+local UNPACK_ARGS = table.unpack or unpack
+
+local function translateQuestlogKey(player, key, fallback)
+	if not key or key == "" then
+		return fallback or ""
 	end
 
-	return tostring(value)
+	local locale = "en"
+	if player and player.getLocale then
+		local playerLocale = player:getLocale()
+		if playerLocale and playerLocale ~= "" then
+			locale = playerLocale
+		end
+	end
+
+	local translated = i18nTranslate(key, locale)
+	if translated and translated ~= "" then
+		return translated
+	end
+
+	local english = i18nTranslate(key, "en")
+	if english and english ~= "" then
+		return english
+	end
+
+	return fallback or ""
+end
+
+local function resolveQuestlogMarker(player, text)
+	if text == nil then
+		return ""
+	end
+
+	if type(text) ~= "string" then
+		return tostring(text)
+	end
+
+	if text:sub(1, #QUESTLOG_MARKER_PREFIX) ~= QUESTLOG_MARKER_PREFIX then
+		return text
+	end
+
+	local key = text:sub(#QUESTLOG_MARKER_PREFIX + 1)
+	return translateQuestlogKey(player, key, key)
+end
+
+local function getQuestlogQuestName(player, questId, fallback)
+	return translateQuestlogKey(player, string.format("%s.quest_%d.name", QUESTLOG_KEY_PREFIX, questId), fallback)
+end
+
+local function getQuestlogMissionName(player, questId, missionId, fallback)
+	return translateQuestlogKey(player, string.format("%s.quest_%d.mission_%d.name", QUESTLOG_KEY_PREFIX, questId, missionId), fallback)
+end
+
+local function getQuestlogMissionDescription(player, questId, missionId, fallback)
+	return translateQuestlogKey(player, string.format("%s.quest_%d.mission_%d.description", QUESTLOG_KEY_PREFIX, questId, missionId), fallback)
+end
+
+local function getQuestlogMissionDynamicDescription(player, questId, missionId, fallback)
+	return translateQuestlogKey(player, string.format("%s.quest_%d.mission_%d.description_dynamic", QUESTLOG_KEY_PREFIX, questId, missionId), fallback)
+end
+
+local function getQuestlogMissionState(player, questId, missionId, state, fallback)
+	return translateQuestlogKey(player, string.format("%s.quest_%d.mission_%d.state_%d", QUESTLOG_KEY_PREFIX, questId, missionId, state), fallback)
+end
+
+local function evaluateDynamicDescription(descriptionFunction, player)
+	local originalFormat = string.format
+	local capturedTemplate
+	local capturedArgs = {}
+
+	string.format = function(template, ...)
+		if not capturedTemplate then
+			capturedTemplate = template
+			capturedArgs = { ... }
+		end
+		return originalFormat(template, ...)
+	end
+
+	local ok, result = pcall(descriptionFunction, player)
+	string.format = originalFormat
+
+	if not ok then
+		return "", nil, {}
+	end
+
+	return resolveQuestlogMarker(player, tostring(result)), capturedTemplate, capturedArgs
+end
+
+local function evaluateText(value, player)
+	if type(value) == "function" then
+		return resolveQuestlogMarker(player, tostring(value(player)))
+	end
+
+	return resolveQuestlogMarker(player, tostring(value))
 end
 
 -- Game functions
@@ -41,7 +131,8 @@ function Player.getQuestDataByMissionId(self, missionId)
 				for i = 1, #quest.missions do
 					local mission = quest.missions[i]
 					if mission and mission.missionId == missionId then
-						return quest.name, questId, i
+						local fallbackQuestName = resolveQuestlogMarker(self, tostring(quest.name))
+						return getQuestlogQuestName(self, questId, fallbackQuestName), questId, i
 					end
 				end
 			end
@@ -258,10 +349,13 @@ end
 function Player.getMissionName(self, questId, missionId)
 	local mission = Game.getMission(questId, missionId)
 	if mission then
+		local fallbackMissionName = resolveQuestlogMarker(self, tostring(mission.name))
+		local missionName = getQuestlogMissionName(self, questId, missionId, fallbackMissionName)
 		if self:missionIsCompleted(questId, missionId) then
-			return mission.name .. " (completed)"
+			local completedFormat = translateQuestlogKey(self, "questlog.common.mission_completed_format", "%s (completed)")
+			return string.format(completedFormat, missionName)
 		end
-		return mission.name
+		return missionName
 	end
 	return ""
 end
@@ -278,15 +372,38 @@ function Player.getMissionDescription(self, questId, missionId)
 	local mission = Game.getMission(questId, missionId)
 	if mission then
 		if mission.description then
-			return evaluateText(mission.description, self)
+			if type(mission.description) == "string" then
+				local fallbackDescription = evaluateText(mission.description, self)
+				return getQuestlogMissionDescription(self, questId, missionId, fallbackDescription)
+			end
+
+			local fallbackDescription, fallbackTemplate, fallbackArgs = evaluateDynamicDescription(mission.description, self)
+			if fallbackTemplate and fallbackTemplate ~= "" then
+				local localizedTemplate = getQuestlogMissionDynamicDescription(self, questId, missionId, fallbackTemplate)
+				if localizedTemplate and localizedTemplate ~= "" then
+					local okFormat, localizedDescription = pcall(string.format, localizedTemplate, UNPACK_ARGS(fallbackArgs))
+					if okFormat and localizedDescription then
+						return localizedDescription
+					end
+				end
+			end
+
+			return fallbackDescription
 		end
 
 		local value = self:getStorageValue(mission.storageId)
 		local state = value
-		if mission.ignoreendvalue and value > table.maxn(mission.states) then
+		if mission.ignoreendvalue and mission.states and value > table.maxn(mission.states) then
 			state = table.maxn(mission.states)
 		end
-		return evaluateText(mission.states[state], self)
+
+		local stateText = mission.states and mission.states[state]
+		local fallbackStateText = evaluateText(stateText, self)
+		if type(stateText) == "string" then
+			return getQuestlogMissionState(self, questId, missionId, state, fallbackStateText)
+		end
+
+		return fallbackStateText
 	end
 	return "An error has occurred, please contact a gamemaster."
 end
@@ -298,7 +415,9 @@ function Player.sendQuestLog(self)
 	for questId = 1, #Quests do
 		if self:questIsStarted(questId) then
 			msg:addU16(questId)
-			msg:addString(Quests[questId].name, "Player.sendQuestLog")
+			local quest = Quests[questId]
+			local fallbackQuestName = resolveQuestlogMarker(self, tostring(quest.name))
+			msg:addString(getQuestlogQuestName(self, questId, fallbackQuestName), "Player.sendQuestLog")
 			msg:addByte(self:questIsCompleted(questId) and 0x01 or 0x00)
 		end
 	end
@@ -366,7 +485,7 @@ function Player.updateStorage(self, key, value, oldValue, currentFrameTime)
 	if LastQuestlogUpdate[playerId] ~= currentFrameTime and Game.isQuestStorage(key, value, oldValue) then
 		LastQuestlogUpdate[playerId] = currentFrameTime
 		if value ~= oldValue then
-			self:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Your questlog has been updated.")
+			self:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "lib.quests.msg_updated")
 		end
 	end
 	local missions = self:getMissionsData(key)

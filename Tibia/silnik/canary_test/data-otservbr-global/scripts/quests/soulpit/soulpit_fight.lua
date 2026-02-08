@@ -54,8 +54,9 @@ function soulPitAction.onUse(player, item, fromPosition, target, toPosition, isH
 
 		local isAccountNormal = creature:getAccountType() < ACCOUNT_TYPE_GAMEMASTER
 		if isAccountNormal and creature:getLevel() < SoulPit.requiredLevel then
-			local message = string.format("All players need to be level %s or higher.", SoulPit.requiredLevel)
-			creature:sendTextMessage(MESSAGE_EVENT_ADVANCE, message)
+			local messageKey = "quests.soulpit.level_required"
+		local messageArgs = { tostring(SoulPit.requiredLevel) }
+			creature:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, messageKey, messageArgs)
 			return false
 		end
 

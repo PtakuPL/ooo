@@ -9,13 +9,13 @@ function removeThing.onSay(player, words, param)
 
 	local tile = Tile(position)
 	if not tile then
-		player:sendCancelMessage("Object not found.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.god.remove_thing.msg_object_not_found")
 		return true
 	end
 
 	local thing = tile:getTopVisibleThing(player)
 	if not thing then
-		player:sendCancelMessage("Thing not found.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.god.remove_thing.msg_thing_not_found")
 		return true
 	end
 
@@ -23,7 +23,7 @@ function removeThing.onSay(player, words, param)
 		thing:remove()
 	elseif thing:isItem() then
 		if thing == tile:getGround() then
-			player:sendCancelMessage("You may not remove a ground tile.")
+			player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.god.remove_thing.msg_no_ground")
 			return true
 		end
 		if param == "all" then

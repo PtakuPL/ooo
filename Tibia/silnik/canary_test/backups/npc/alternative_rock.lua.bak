@@ -21,7 +21,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Passages to Tibia, Folda and Vega." },
+	{ i18nKey = "npc.alternative_rock.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()

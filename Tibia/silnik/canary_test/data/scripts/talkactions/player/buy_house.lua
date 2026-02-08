@@ -7,13 +7,13 @@ function buyHouse.onSay(player, words, param)
 	end
 
 	if not player:isPremium() then
-		player:sendCancelMessage("You need a premium account.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.player.buy_house.msg_need_premium")
 		return true
 	end
 
 	local houseBuyLevel = configManager.getNumber(configKeys.HOUSE_BUY_LEVEL)
 	if player:getLevel() < houseBuyLevel then
-		player:sendCancelMessage("You need to be level " .. houseBuyLevel .. " to buy a house.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.player.buy_house.msg_need_level", {houseBuyLevel})
 		return true
 	end
 
@@ -26,28 +26,28 @@ function buyHouse.onSay(player, words, param)
 	local houseEntry = house and house:getExitPosition()
 
 	if not house or playerPos ~= houseEntry then
-		player:sendCancelMessage("You have to be looking at the door of the house you would like to buy.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.player.buy_house.msg_look_at_door")
 		return true
 	end
 
 	if house:getOwnerGuid() > 0 then
-		player:sendCancelMessage("This house already has an owner.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.player.buy_house.msg_has_owner")
 		return true
 	end
 
 	if player:getHouse() then
-		player:sendCancelMessage("You are already the owner of a house.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.player.buy_house.msg_already_owner")
 		return true
 	end
 
 	if house:hasItemOnTile() then
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.buy_house.msg_1")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.buy_house.msg_1")
 		return true
 	end
 
 	local price = house:getPrice()
 	if not player:removeMoneyBank(price) then
-		player:sendCancelMessage("You do not have enough money.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.player.buy_house.msg_not_enough_money")
 		return true
 	end
 	metrics.addCounter("balance_decrease", remainsPrice, {
@@ -56,7 +56,7 @@ function buyHouse.onSay(player, words, param)
 	})
 
 	house:setHouseOwner(player:getGuid())
-	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.buy_house.msg_2")
+	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.buy_house.msg_2")
 	return true
 end
 

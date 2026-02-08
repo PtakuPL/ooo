@@ -37,7 +37,7 @@ local containers = {
 		storage = Storage.Quest.U12_00.TheDreamCourts.BurriedCatedral.BarrelWord,
 		value = 1,
 		defaultItem = false,
-		text = "The inside of this barrel's lid has a word written onto it: 'O'kteth'.",
+		text = "quests.dream_courts.barrel_word",
 	},
 	[6] = {
 		uniqueid = 23107,
@@ -45,7 +45,7 @@ local containers = {
 		storage = Storage.Quest.U12_00.TheDreamCourts.BurriedCatedral.EstatueWord,
 		value = 1,
 		defaultItem = false,
-		text = "This statue has a word written on her hand: 'N'ogalu'.",
+		text = "quests.dream_courts.statue_word",
 	},
 	[7] = {
 		uniqueid = 23108,
@@ -53,7 +53,7 @@ local containers = {
 		storage = Storage.Quest.U12_00.TheDreamCourts.BurriedCatedral.BedWord,
 		value = 1,
 		defaultItem = false,
-		text = "This end of the bed has a stack of notes hidden under it. There is only one word on all of them: 'T'sough'.",
+		text = "quests.dream_courts.bed_notes",
 	},
 	[8] = {
 		uniqueid = 23109,
@@ -122,10 +122,10 @@ function actions_containerRewards.onUse(player, item, fromPosition, target, toPo
 		if iPos == k.cPosition and item:getUniqueId() == k.uniqueid then
 			if player:getStorageValue(k.storage) < k.value then
 				if k.defaultItem then
-					player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_containerRewards.msg_1" .. ItemType(k.reward):getName() .. ".")
+					player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_containerRewards.msg_1", { ItemType(k.reward):getName() })
 					player:addItem(k.reward, 1)
 				else
-					player:sendTextMessage(MESSAGE_EVENT_ADVANCE, k.text)
+					player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, k.text)
 					if player:getStorageValue(Storage.Quest.U12_00.TheDreamCourts.BurriedCatedral.WordCount) < 0 then
 						player:setStorageValue(Storage.Quest.U12_00.TheDreamCourts.BurriedCatedral.WordCount, 0)
 					end

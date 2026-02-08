@@ -7,7 +7,7 @@ function riverTeleport.onStepIn(creature, item, position, fromPosition)
 	end
 
 	if not player:canFightBoss("The Sandking") then
-		player:sendCancelMessage("You need to wait for 10 hours to face this boss again.")
+		player:sendLocalizedCancelMessage("quests.cults_of_tibia.you_need_to_wait_for_10")
 		player:teleportTo(fromPosition)
 		return false
 	end

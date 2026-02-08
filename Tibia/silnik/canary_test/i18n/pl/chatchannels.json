@@ -1,10 +1,18 @@
 {
-  "channel.advertising.name": "[PL] Advertising",
-  "channel.advertising_rook.name": "[PL] Advertising-Rook",
-  "channel.english_chat.name": "[PL] English Chat",
-  "channel.gamemaster.name": "[PL] Gamemaster",
-  "channel.guild_leaders.name": "[PL] Guild Leaders",
-  "channel.help.name": "Pomoc",
-  "channel.tutor.name": "[PL] Tutor",
-  "channel.world_chat.name": "[PL] World Chat"
+  "channel.english_chat.name": "I. I.",
+  "channel.tutor.name": "I.",
+  "channel.guild_leaders.name": "Gildia Lider, przywódca",
+  "channel.help.name": "Help",
+  "channel.advertising_rook.name": "Reklama, ogłoszenia-Gawron",
+  "channel.gamemaster.name": "Gamemaster",
+  "channel.advertising.name": "Reklama, ogłoszenia",
+  "channel.world_chat.name": "I. I.",
+  "channel.msg_level1_mute": "Ty a. móc Niet I. a. do I. as long as Jesteś na poziom 1.",
+  "channel.msg_level20_premium": "Ty a. móc Niet I. w I. I. jeżeli nie, o ile nie Masz reached poziom 20 lub twój konto ma premium status.",
+  "channel.msg_offer_cooldown": "Ty a. móc tylko I. I. offer w dwa minuty.",
+  "channel.help.msg_muted": "Jesteś przytłumiony z the Help I. dla using to nieodpowiedni.",
+  "channel.help.msg_already_muted": "That gracz jest już przytłumiony.",
+  "channel.help.msg_not_authorized_mute": "Nie jesteś authorized do I. that gracz.",
+  "channel.help.msg_not_muted": "That gracz jest Niet przytłumiony.",
+  "channel.help.msg_not_authorized_unmute": "Nie jesteś authorized do unmute that gracz."
 }

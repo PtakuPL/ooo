@@ -19,7 +19,7 @@ function levelDoor.onUse(player, item, fromPosition, target, toPosition, isHotke
 				player:teleportTo(toPosition, true)
 				return true
 			else
-				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.level_door.msg_1")
+				player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.level_door.msg_1")
 				return true
 			end
 		end

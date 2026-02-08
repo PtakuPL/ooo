@@ -3,13 +3,13 @@
 local missionTiles = {
 	[50350] = {
 		state = 1,
-		message = "Cross the bridge to the west and go south to reach the wasps' nest.",
+		message = "quests.rookie_guard.m11.wasps_nest",
 		arrowPosition = { x = 32090, y = 32147, z = 7 },
 	},
 	[50353] = {
 		state = 1,
 		newState = 2,
-		message = "You've found the wasp tower. Kill a wasp and use the flask you got from Vascalir on its corpse to retrieve some of its poison.",
+		message = "quests.rookie_guard.m11.wasp_tower",
 	},
 }
 
@@ -32,7 +32,7 @@ function missionGuide.onStepIn(creature, item, position, fromPosition)
 	if missionState == missionTile.state then
 		-- Check delayed notifications (message/arrow)
 		if not isTutorialNotificationDelayed(player) then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, missionTile.message)
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, missionTile.message)
 			if missionTile.arrowPosition then
 				Position(missionTile.arrowPosition):sendMagicEffect(CONST_ME_TUTORIALARROW)
 			end

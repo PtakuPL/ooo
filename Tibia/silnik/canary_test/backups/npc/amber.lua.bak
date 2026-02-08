@@ -26,11 +26,11 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "I wish I could eat some salmon right now... best prepared in Liberty Bay style... yummy." },
-	{ text = "Wow, I'm tired. I really should get some sleep... zzzz." },
-	{ text = "What was that word again in Orcish language... hmm." },
-	{ text = "Hey you! Are you an adventurer, too?" },
-	{ text = "<sings> Stormy weathers, stormy weathers... stormy weathers on the sea!" },
+	{ i18nKey = "npc.amber.voice_1" },
+	{ i18nKey = "npc.amber.voice_2" },
+	{ i18nKey = "npc.amber.voice_3" },
+	{ i18nKey = "npc.amber.voice_4" },
+	{ i18nKey = "npc.amber.voice_5" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -423,9 +423,9 @@ bookKeyword:addChildKeyword({ "" }, StdModule.say, {
 })
 keywordHandler:addAliasKeyword({ "notebook" })
 
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Yeah, see you later.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "See you later, |PLAYERNAME|.")
-npcHandler:setMessage(MESSAGE_GREET, "Oh hello, nice to see you |PLAYERNAME|. Are you here to hear some stories of my {adventures} or do you need {help}?")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.amber.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.amber.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.amber.greet_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 

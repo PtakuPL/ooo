@@ -133,11 +133,11 @@ local function playerSayCallback(npc, player, type, message)
 
 		local message
 		if #bossesYetToDefeat > 0 then
-			message = "You haven't killed " .. table.concat(bossesYetToDefeat, ", ") .. " yet."
+			local bossList = table.concat(bossesYetToDefeat, ", ")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.flickering_soul.shards_remaining", { bossList })
 		else
-			message = "You have defeated all the Goshnar's Bosses. Your soul shines brighter with each victory."
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.flickering_soul.shards_all_done")
 		end
-		npcHandler:say(message, npc, player)
 	elseif MsgContains(message, "taints") or MsgContains(message, "penalties") then
 		if player:getTaintLevel() ~= nil then
 			player:resetTaints(true)

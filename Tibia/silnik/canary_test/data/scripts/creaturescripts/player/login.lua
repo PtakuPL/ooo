@@ -8,7 +8,7 @@ function playerLoginGlobal.onLogin(player)
 	-- Welcome
 	local loginStr
 	if player:getLastLoginSaved() == 0 then
-		loginStr = "Please choose your outfit."
+		loginStr = Translator.getTranslation(player, "scripts.login.choose_outfit")
 		player:sendOutfitWindow()
 		local startStreakLevel = configManager.getNumber(configKeys.START_STREAK_LEVEL)
 		if startStreakLevel > 0 then
@@ -17,7 +17,8 @@ function playerLoginGlobal.onLogin(player)
 
 		db.query("UPDATE `players` SET `istutorial` = 0 WHERE `id` = " .. player:getGuid())
 	else
-		loginStr = string.format("Your last visit in %s: %s.", SERVER_NAME, os.date("%d %b %Y %X", player:getLastLoginSaved()))
+		local template = Translator.getTranslation(player, "scripts.login.last_visit")
+		loginStr = string.format(template, SERVER_NAME, os.date("%d %b %Y %X", player:getLastLoginSaved()))
 	end
 	player:sendTextMessage(MESSAGE_LOGIN, loginStr)
 
@@ -91,7 +92,7 @@ function playerLoginGlobal.onLogin(player)
 			if vipBonusExp > 0 and player:isVip() then
 				vipBonusExp = (vipBonusExp > 100 and 100) or vipBonusExp
 				baseRate = baseRate * (1 + (vipBonusExp / 100))
-				player:sendLocalizedMessage(MESSAGE_BOOSTED_CREATURE, "scripts.login.msg_1" .. baseRate .. "%, because you are VIP, bonus of " .. vipBonusExp .. "%")
+				player:sendLocalizedTextMessage(MESSAGE_BOOSTED_CREATURE, "scripts.login.msg_5", { baseRate, vipBonusExp })
 			end
 		end
 
@@ -160,6 +161,7 @@ function playerLoginGlobal.onLogin(player)
 	player:registerEvent("DropLoot")
 	player:registerEvent("BossParticipation")
 	player:registerEvent("UpdatePlayerOnAdvancedLevel")
+	player:registerEvent("ExtendedOpcode")
 	return true
 end
 

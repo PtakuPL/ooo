@@ -436,10 +436,9 @@ function createHirelingType(HirelingName)
 	}
 
 	local GREETINGS = {
-		BANK = "Alright! What can I do for you and your bank business, |PLAYERNAME|?",
-		FOOD = [[Hmm, yes! A variety of fine food awaits! However, a small expense of 15000 gold is expected to make these delicious masterpieces happen.
-	For 90000 gold I will also serve you a specific dish. Just tell me what it shall be: a {specific} meal or a little {surprise}.]],
-		STASH = "Of course, here is your stash! Well-maintained and neatly sorted for your convenience!",
+		BANK = "npc.hireling.greet_bank",
+		FOOD = "npc.hireling.greet_food",
+		STASH = "npc.hireling.greet_stash",
 	}
 
 	local function getHirelingSkills()
@@ -487,12 +486,11 @@ function createHirelingType(HirelingName)
 	end
 
 	local function sendSkillNotLearned(npc, creature, skillName)
-		local message = "Sorry, but I do not have mastery in this skill yet."
 		if skillName then
-			message = string.format("I'm not a %s and would not know how to help you with that, sorry. I can start a %s apprenticeship if you buy it for me in the store!", skillName, skillName)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hireling.skill_not_learned_named", {skillName, skillName})
+		else
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hireling.skill_not_learned")
 		end
-
-		npcHandler:say(message, npc, creature)
 	end
 	-- ----------------------[[ END STEWARD FUNCTIONS ]] ------------------------------
 	--[[
@@ -502,29 +500,19 @@ function createHirelingType(HirelingName)
 	]]
 	-- ========================[[ COOKER FUNCTIONS ]] ========================== --
 
-	local function getDeliveredMessageByFoodId(food_id) -- remove the hardcoded food ids
-		local message = ""
-		if food_id == 29408 then
-			message = "Oh yes, a tasty roasted wings to make you even tougher and skilled with the defensive arts."
-		elseif food_id == 29409 then
-			message = "Divine! Carrot is a well known nourishment that makes the eyes see even more sharply."
-		elseif food_id == 29410 then
-			message = "Magnifique! A tiger meat that has been marinated for several hours in magic spices."
-		elseif food_id == 29411 then
-			message = "Aaah, the beauty of the simple dishes! A delicate salad made of selected ingredients, capable of bring joy to the hearts of bravest warriors and their weapons."
-		elseif food_id == 29412 then
-			message = "Oh yes, very spicy chilly combined with delicious minced carniphila meat and a side dish of fine salad!"
-		elseif food_id == 29413 then
-			message = "Aaah, the northern cuisine! A catch of fresh salmon right from the coast Svargrond is the base of this extraordinary fish dish."
-		elseif food_id == 29414 then
-			message = "A traditional and classy meal. A beefy casserole which smells far better than it sounds!"
-		elseif food_id == 29415 then
-			message = "A tasty chunk of juicy beef with an aromatic sauce and parsley potatoes, mmh!"
-		elseif food_id == 29416 then
-			message = "Oooh, well... that one didn't quite turn out as it was supposed to be, I'm sorry."
-		end
-
-		return message
+	local function getDeliveredMessageKeyByFoodId(food_id) -- returns i18n key for food delivery message
+		local foodKeys = {
+			[29408] = "npc.hireling.food_29408",
+			[29409] = "npc.hireling.food_29409",
+			[29410] = "npc.hireling.food_29410",
+			[29411] = "npc.hireling.food_29411",
+			[29412] = "npc.hireling.food_29412",
+			[29413] = "npc.hireling.food_29413",
+			[29414] = "npc.hireling.food_29414",
+			[29415] = "npc.hireling.food_29415",
+			[29416] = "npc.hireling.food_29416",
+		}
+		return foodKeys[food_id] or ""
 	end
 
 	local function deliverFood(npc, creature, food_id, cost)
@@ -534,15 +522,17 @@ function createHirelingType(HirelingName)
 		local inbox = player:getStoreInbox()
 		local inboxItems = inbox:getItems()
 		if player:getFreeCapacity() < itType:getWeight(1) then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hireling.say_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hireling.say_food_no_cap")
 		elseif not inbox or #inboxItems >= inbox:getMaxCapacity() then
 			player:getPosition():sendMagicEffect(CONST_ME_POFF)
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hireling.say_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hireling.say_food_no_inbox")
 		elseif not player:removeMoneyBank(cost) then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hireling.say_3")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hireling.say_food_no_money")
 		else
-			local message = getDeliveredMessageByFoodId(food_id)
-			npcHandler:say(message, npc, creature)
+			local key = getDeliveredMessageKeyByFoodId(food_id)
+			if key ~= "" then
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, key)
+			end
 			inbox:addItem(food_id, 1, INDEX_WHEREEVER, FLAG_NOLIMIT)
 		end
 		npcHandler:setTopic(playerId, TOPIC.SERVICES)
@@ -632,7 +622,7 @@ function createHirelingType(HirelingName)
 				action = function()
 					npcHandler:setTopic(playerId, TOPIC.BANK)
 					count[playerId], transfer[playerId] = nil, nil
-					npcHandler:say(GREETINGS.BANK, npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, GREETINGS.BANK)
 				end,
 			},
 			["food"] = {
@@ -640,31 +630,29 @@ function createHirelingType(HirelingName)
 				topic = TOPIC.FOOD,
 				action = function()
 					npcHandler:setTopic(playerId, TOPIC.FOOD)
-					npcHandler:say(GREETINGS.FOOD, npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, GREETINGS.FOOD)
 				end,
 			},
 			["stash"] = {
 				skill = HIRELING_SKILLS.STEWARD[2],
 				topic = TOPIC.SERVICES,
 				action = function()
-					npcHandler:say(GREETINGS.STASH, npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, GREETINGS.STASH)
 					player:setSpecialContainersAvailable(true)
 					player:openStash(true)
-					player:sendTextMessage(MESSAGE_FAILURE, "Your supply stash contains " .. player:getStashCount() .. " item" .. (player:getStashCount() > 1 and "s." or "."))
+					player:sendLocalizedTextMessage(MESSAGE_FAILURE, "npc.hireling.supply_stash_count", {player:getStashCount()})
 				end,
 			},
 			["goods"] = {
 				skill = HIRELING_SKILLS.TRADER[2],
 				topic = TOPIC.GOODS,
 				action = function()
-					local string
-					if not hireling:hasSkill(HIRELING_SKILLS.TRADER[2]) then
-						string = "While I'm not a trader, I still have a collection of {various} items to sell if you like!"
-					else
-						string = "I sell a selection of {various} items, {exercise weapons}, {equipment}, " .. "{distance} weapons, {wands} and {rods}, {potions}, {runes}, " .. "{supplies}, {tools} and {postal} goods. Just ask!"
-					end
 					npcHandler:setTopic(playerId, TOPIC.GOODS)
-					npcHandler:say(string, npc, creature)
+					if not hireling:hasSkill(HIRELING_SKILLS.TRADER[2]) then
+						NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hireling.goods_no_trader")
+					else
+						NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hireling.goods_trader")
+					end
 				end,
 			},
 		}
@@ -707,14 +695,14 @@ function createHirelingType(HirelingName)
 		elseif MsgContains(message, "service") then
 			npcHandler:setTopic(playerId, TOPIC.SERVICES)
 			local servicesMsg = getHirelingServiceString(creature)
-			npcHandler:say(servicesMsg, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hireling.say_services", { servicesMsg })
 		elseif npcHandler:getTopic(playerId) == TOPIC.SERVICES then
 			if MsgContains(message, "bank") then
 				local bankerSkillName = HIRELING_SKILLS.BANKER[2]
 				if hireling:hasSkill(bankerSkillName) then
 					npcHandler:setTopic(playerId, TOPIC.BANK)
 					count[playerId], transfer[playerId] = nil, nil
-					npcHandler:say(GREETINGS.BANK, npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, GREETINGS.BANK)
 				else
 					sendSkillNotLearned(npc, creature, bankerSkillName)
 				end
@@ -722,29 +710,27 @@ function createHirelingType(HirelingName)
 				local bankerSkillName = HIRELING_SKILLS.COOKING[2]
 				if hireling:hasSkill(bankerSkillName) then
 					npcHandler:setTopic(playerId, TOPIC.FOOD)
-					npcHandler:say(GREETINGS.FOOD, npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, GREETINGS.FOOD)
 				else
 					sendSkillNotLearned(npc, creature, bankerSkillName)
 				end
 			elseif MsgContains(message, "stash") then
 				local bankerSkillName = HIRELING_SKILLS.STEWARD[2]
 				if hireling:hasSkill(bankerSkillName) then
-					npcHandler:say(GREETINGS.STASH, npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, GREETINGS.STASH)
 					player:setSpecialContainersAvailable(true)
 					player:openStash(true)
-					player:sendTextMessage(MESSAGE_FAILURE, "Your stash contains " .. player:getStashCount() .. " item" .. (player:getStashCount() > 1 and "s." or "."))
+					player:sendLocalizedTextMessage(MESSAGE_FAILURE, "npc.hireling.stash_count", {player:getStashCount()})
 				else
 					sendSkillNotLearned(npc, creature, bankerSkillName)
 				end
 			elseif MsgContains(message, "goods") then
-				local string
-				if not hireling:hasSkill(HIRELING_SKILLS.TRADER[2]) then
-					string = "While I'm not a trader, I still have a collection of {various} items to sell if you like!"
-				else
-					string = "I sell a selection of {various} items, {exercise weapons}, {equipment}, " .. "{distance} weapons, {wands} and {rods}, {potions}, {runes}, " .. "{supplies}, {tools} and {postal} goods. Just ask!"
-				end
 				npcHandler:setTopic(playerId, TOPIC.GOODS)
-				npcHandler:say(string, npc, creature)
+				if not hireling:hasSkill(HIRELING_SKILLS.TRADER[2]) then
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hireling.goods_no_trader")
+				else
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hireling.goods_trader")
+				end
 			elseif MsgContains(message, "lamp") then
 				npcHandler:setTopic(playerId, TOPIC.LAMP)
 				if player:getGuid() ~= hireling:getOwnerId() then

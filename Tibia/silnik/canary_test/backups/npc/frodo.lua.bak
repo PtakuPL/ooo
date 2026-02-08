@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Come into my tavern and share some stories!" },
+	{ i18nKey = "npc.frodo.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -104,9 +104,9 @@ keywordHandler:addKeyword({ "samuel" }, StdModule.say, { npcHandler = npcHandler
 keywordHandler:addKeyword({ "todd" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.frodo.stdmod_41" })
 keywordHandler:addKeyword({ "xodet" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.frodo.stdmod_42" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Welcome to Frodo's Hut. You heard about the {news}?")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Please come back from time to time.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Please come back from time to time.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.frodo.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.frodo.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.frodo.walkaway_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

@@ -5,7 +5,7 @@ function createMonster.onSay(player, words, param)
 	logCommand(player, words, param)
 
 	if param == "" then
-		player:sendCancelMessage("Command param required.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_command_param_required")
 		return true
 	end
 
@@ -22,7 +22,7 @@ function createMonster.onSay(player, words, param)
 	spawn:setPositions(config)
 	spawn:executeSpawn()
 	player:getPosition():sendMagicEffect(CONST_ME_MAGIC_GREEN)
-	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.create_spawn.msg_1" .. parameter[1] .. ".")
+	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.create_spawn.msg_1", { parameter[1] })
 	return true
 end
 

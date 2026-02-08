@@ -13,6 +13,7 @@
 #include "creatures/players/player.hpp"
 #include "game/game.hpp"
 #include "lib/di/container.hpp"
+#include "utils/i18n/translator.hpp"
 #include "utils/tools.hpp"
 
 IOBosstiary &IOBosstiary::getInstance() {
@@ -204,11 +205,9 @@ void IOBosstiary::addBosstiaryKill(const std::shared_ptr<Player> &player, const 
 			return;
 		}
 
-		std::string podiumMessage = "Congratulations! You have reached the Expertise level for your first boss. "
-									"As a reward, a free Podium of Vigour has been sent to your Store inbox. "
-									"You can place this podium in any house you own with this character. "
-									"Use it to display bosses for which you have reached at least the Expertise level.";
-		player->sendTextMessage(MESSAGE_GAME_HIGHLIGHT, podiumMessage);
+		const std::string loc(player->getLocale().empty() ? "en" : std::string(player->getLocale()));
+		auto &tr = i18n::g_translator();
+		player->sendTextMessage(MESSAGE_GAME_HIGHLIGHT, tr.get("cpp.bosstiary.podium_reward", loc));
 
 		player->addStorageValue(STORAGEVALUE_PODIUM, 1);
 	}

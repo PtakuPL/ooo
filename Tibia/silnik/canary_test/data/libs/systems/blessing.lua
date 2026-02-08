@@ -194,12 +194,12 @@ Blessings.useCharm = function(player, item)
 			end
 
 			if player:hasBlessing(value.id) then
-				player:say("You already possess this blessing.", TALKTYPE_MONSTER_SAY)
+				player:sayLocalized("scripts.blessing.already_possess", TALKTYPE_MONSTER_SAY)
 				return true
 			end
 
 			player:addBlessing(value.id, 1)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, value.name .. " protects you.")
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "lib.blessing.msg_protects", {value.name})
 			player:getPosition():sendMagicEffect(CONST_ME_LOSEENERGY)
 			item:remove(1)
 			return true
@@ -208,12 +208,17 @@ Blessings.useCharm = function(player, item)
 end
 
 Blessings.checkBless = function(player)
-	local result = "Received blessings:"
+	local header = Translator.getTranslation(player, "lib.blessing.received_header")
+	local result = header
 	for k, v in pairs(Blessings.All) do
 		result = player:hasBlessing(k) and result .. "\n" .. v.name or result
 	end
 
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, 20 > result:len() and "No blessings received." or result)
+	if result:len() <= header:len() then
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "lib.blessing.msg_none")
+	else
+		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, result)
+	end
 	return true
 end
 
@@ -224,7 +229,7 @@ Blessings.doAdventurerBlessing = function(player)
 
 	player:addMissingBless(true, true)
 
-	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "misc.blessing.msg_1" .. Blessings.Config.AdventurerBlessingLevel .. "!")
+	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "misc.blessing.msg_1", {tostring(Blessings.Config.AdventurerBlessingLevel)})
 	player:getPosition():sendMagicEffect(CONST_ME_HOLYDAMAGE)
 	return true
 end
@@ -246,7 +251,7 @@ end
 
 Blessings.BuyAllBlesses = function(player)
 	if not Tile(player:getPosition()):hasFlag(TILESTATE_PROTECTIONZONE) and (player:isPzLocked() or player:getCondition(CONDITION_INFIGHT, CONDITIONID_DEFAULT)) then
-		player:sendCancelMessage("You can't buy bless while in battle.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "lib.blessing.msg_battle")
 		player:getPosition():sendMagicEffect(CONST_ME_POFF)
 		return true
 	end
@@ -265,7 +270,7 @@ Blessings.BuyAllBlesses = function(player)
 	end
 
 	if missingBlessAmt == 0 then
-		player:sendCancelMessage("You are already blessed.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "lib.blessing.msg_already")
 		player:getPosition():sendMagicEffect(CONST_ME_POFF)
 		return true
 	end
@@ -284,10 +289,10 @@ Blessings.BuyAllBlesses = function(player)
 			player:addBlessing(bless.id, 1)
 		end
 
-		player:sendCancelMessage(string.format("You received the remaining %d blesses for a total of %d gold.", missingBlessAmt, totalCost))
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "lib.blessing.msg_received", {tostring(missingBlessAmt), tostring(totalCost)})
 		player:getPosition():sendMagicEffect(CONST_ME_HOLYAREA)
 	else
-		player:sendCancelMessage(string.format("You don't have enough money. You need %d to buy all blesses.", totalCost))
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "lib.blessing.msg_not_enough", {tostring(totalCost)})
 		player:getPosition():sendMagicEffect(CONST_ME_POFF)
 	end
 

@@ -67,12 +67,10 @@ local function greetCallback(npc, creature)
 		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.jamesfrancis.greet_msg_2")
 		npcHandler:setTopic(playerId, 0)
 	elseif player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.Minotaurs.Mission) == 4 then
-		npcHandler:setMessage(MESSAGE_GREET, {
-			"You say the minotaurs were controlled by a very powerful boss they worshipped. This explains why they had so much more power than the normal ones. ...",
-			"I'm very thankful. Please go to the Druid of Crunor and tell him what you've seen. He might be interested in that.",
-		})
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.jamesfrancis.greet_msg_3", "npc.jamesfrancis.greet_msg_4" }, 1000)
 		player:setStorageValue(Storage.Quest.U11_40.CultsOfTibia.Minotaurs.Mission, 5)
 		npcHandler:setTopic(playerId, 0)
+		return false
 	end
 
 	return true

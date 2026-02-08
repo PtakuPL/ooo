@@ -25258,3 +25258,96 @@ Duplikaty, błędy składni, brakujące tłumaczenia
 Klucze i18n: 40200
 
 ---
+
+## [2026-02-05] INTEGRACJA I18N W C++ - Tłumaczenie nazw server-side
+
+### Podsumowanie
+Zaimplementowano system tłumaczenia nazw potworów, przedmiotów i zaklęć po stronie serwera C++. Serwer automatycznie wysyła do klienta przetłumaczone nazwy na podstawie locale gracza (player->getLocale()).
+
+### Zmodyfikowane pliki:
+
+**src/server/network/protocol/protocolgame.hpp:**
+- Dodano 5 deklaracji metod: translateCreatureName, translateCreatureDescription, translateItemName, translateItemDescription, translateSpellName
+
+**src/server/network/protocol/protocolgame.cpp:**
+- Dodano #include "utils/i18n/translator.hpp"
+- Dodano nameToSlug() - konwersja nazw na klucze ("Frost Troll" -> "frost_troll")
+- Dodano 5 implementacji metod translate*
+- Hook: AddCreature() ~8172 - creature->getName() -> translateCreatureName(creature)
+- Hook: sendCreatureSay() ~6594 - j.w.
+- Hook: sendCreatureLocalizedSay() ~6643 - j.w.
+- Hook: sendToChannel() ~6699 - j.w.
+- Hook: sendItemInspection() ~2201-2204 - translateItemName(itemId, ...)
+- Hook: sendCyclopediaCharacterStoreSummary() ~4027 - translateItemName(it.id, it.name)
+- Hook: addImbuementInfo() ~8515 - translateItemName(it.id, it.name)
+- Hook: AddShopItem() ~8977 - translateItemName(shopBlock.itemId, ...)
+
+**src/lua/functions/creatures/creature_functions.hpp + .cpp:**
+- Dodano #include "utils/i18n/translator.hpp"
+- Nowa metoda Lua: creature:getTranslatedName(locale)
+- Przykład: creature:getTranslatedName("pl") -> "Wilk"
+
+**src/lua/functions/core/game/global_functions.hpp + .cpp:**
+- Dodano #include "utils/i18n/translator.hpp"
+- Nowa globalna funkcja Lua: i18nTranslate(key, locale)
+- Przykład: i18nTranslate("monster.wolf.name", "pl") -> "Wilk"
+
+### Przepływ tłumaczenia:
+1. Gracz loguje się -> player->setLocale("pl")
+2. Serwer wysyła dane -> translateCreatureName(creature)
+3. Typ stwora: Monster -> klucz "monster.frost_troll.name", NPC/Player -> oryginalna nazwa
+4. i18n::g_translator().get(key, locale) -> szuka w i18n/pl/monsters.json
+5. Znalezione -> przetłumaczone; brak -> fallback na angielski
+
+### Klucze JSON:
+- Potwory: monster.<slug>.name, monster.<slug>.desc
+- Przedmioty: item.<id>.name (np. item.2400.name)
+- Zaklęcia: spell.<slug>.name
+
+### Znane braki:
+- 37 potworów ze znakami specjalnymi brak w JSON
+- Outfity/Mounty/Familiars - brak JSON (pliki puste)
+- Opisy "You see..." (onLook) - wymaga hooków w Lua events
+- Placeholdery [PL] Wolf w innych językach - wymagają prawdziwych tłumaczeń
+
+---
+
+## [2026-02-05 UPDATE] Dodatkowe hooki i18n + analiza brakujących tekstów
+
+### Dodano 4 kolejne hooki translateItemName:
+- Linia ~2520: bestiary loot item name (newmsg.addString(loot.name))
+- Linia ~4052: cyclopedia inspection - equipped item name (inventoryItem->getName())
+- Linia ~5014: container name w sendContainer (container->getName())
+- Linia ~5170: loot tracker item name (lootedItem->getName())
+
+ŁĄCZNIE: 13 hooków translateItemName + 4 hooki translateCreatureName = 17 hooków i18n
+
+### Analiza pozostałych msg.addString - SKIP (nie wymagają tłumaczenia):
+- 11x player->getName() / leader->getName() / member->getName() - nicknames graczy
+- 1x npc->getName() - imiona własne NPC
+- 1x "Browse Field" - string UI klienta (tłumaczony po stronie klienta)
+
+### Analiza - SKIP_NO_DATA (wymagają tłumaczenia ale brak JSON):
+- ~15x outfit->name - outfity (brak outfits.json)
+- ~6x mount->name - mounty (mounts.json pusty)
+- ~2x familiar->name - familiars (brak familiars.json)
+- 1x achievement.name - osiągnięcia (brak achievements.json)
+- 1x badge.m_name - odznaki (brak badges.json)
+- 1x channel->getName() - kanały czatu (brak channels.json)
+- 1x category.m_name - kategorie highscore (brak JSON)
+
+### Hardcoded teksty w C++ wymagające i18n w przyszłości:
+- game.cpp: ~66 tekstów ("You cannot...", "You are...", "Sorry...")
+- player.cpp: ~37 tekstów
+- protocolgame.cpp: ~25 tekstów
+- Lua events: "You see " .. creature:getDescription() (player.lua:212)
+- ŁĄCZNIE: ~130 hardcoded tekstów do migracji
+
+### Priorytet migracji:
+1. DONE: Nazwy potworów w AddCreature i sendCreatureSay
+2. DONE: Nazwy itemów we wszystkich 9 miejscach
+3. TODO: Outfity/mounty/familiars (potrzeba JSON)
+4. TODO: "You see..." opisy (Lua hook)
+5. TODO: ~130 hardcoded tekstów (game.cpp, player.cpp)
+
+---

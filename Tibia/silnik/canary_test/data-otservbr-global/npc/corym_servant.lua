@@ -55,23 +55,15 @@ local function greetCallback(npc, creature, message)
 	local player = Player(creature)
 
 	if player:getStorageValue(HiddenThreats.QuestLine) == 1 then
-		npcHandler:setMessage(MESSAGE_GREET, {
-			"We work as hard we can, my master! Wait, I haven't seen you here before. You were sent by the Corym Ratter, I see. He misses the courage to visit us and find the reason for {decreasing resources}? He's the coward I have expected.",
-		})
+		npcHandler:setLocalizedMessage(MESSAGE_GREET, "npc.corym_servant.greet_msg_2")
 	elseif player:getStorageValue(HiddenThreats.CorymRescueMission) == 8 and player:getStorageValue(HiddenThreats.QuestLine) == 3 then
-		npcHandler:setMessage(MESSAGE_GREET, {
-			"Well done! The riot progesses! No fight without weapons. In the mine the temperature is quite high, higher as expected in this depth. Therefore we need heat-resistent weapons and armors. ...",
-			"This effect can be reached by adding rare earth to the common materials. But this can only be found in the stomaches of stonerefiners. 20 of these should be enough. Well, I see you have already collected enough of them! Would you give it to me?",
-		})
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.corym_servant.greet_msg_5", "npc.corym_servant.greet_msg_6" }, 1000)
 		player:setStorageValue(HiddenThreats.QuestLine, 4)
+		return false
 	elseif player:getStorageValue(HiddenThreats.QuestLine) == 4 then
-		npcHandler:setMessage(MESSAGE_GREET, {
-			"Well, I see you have already collected enough rare earth! Would you give it to me?",
-		})
+		npcHandler:setLocalizedMessage(MESSAGE_GREET, "npc.corym_servant.greet_msg_3")
 	elseif player:getStorageValue(HiddenThreats.QuestLine) == 3 then
-		npcHandler:setMessage(MESSAGE_GREET, {
-			"You have to liberate all the Corym I told you. Unlock the three affected areas.",
-		})
+		npcHandler:setLocalizedMessage(MESSAGE_GREET, "npc.corym_servant.greet_msg_4")
 	else
 		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.corym_servant.greet_msg_1")
 	end

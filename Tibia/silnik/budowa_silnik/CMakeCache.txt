@@ -205,7 +205,7 @@ CMAKE_TOOLCHAIN_FILE:FILEPATH=/home/ptaku/vcpkg/scripts/buildsystems/vcpkg.cmake
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //The directory containing a CMake configuration file for CURL.
-CURL_DIR:PATH=/home/ptaku/serweryt/Tibia/silnik/budowa_silnik/vcpkg_installed/x64-linux/share/curl
+CURL_DIR:PATH=CURL_DIR-NOTFOUND
 
 //Enable metrics feature
 FEATURE_METRICS:BOOL=OFF
@@ -225,7 +225,7 @@ OPENSSL_SSL_LIBRARY:FILEPATH=/home/ptaku/serweryt/Tibia/silnik/budowa_silnik/vcp
 //Enable ccache
 OPTIONS_ENABLE_CCACHE:BOOL=OFF
 
-//Enable IPO/LTO
+//Check and Enable interprocedural optimization (IPO/LTO)
 OPTIONS_ENABLE_IPO:BOOL=ON
 
 //Use sccache to speed up compilation process
@@ -243,7 +243,7 @@ PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
 //Path to a program.
 Protobuf_PROTOC_EXECUTABLE:FILEPATH=/home/ptaku/serweryt/Tibia/silnik/budowa_silnik/vcpkg_installed/x64-linux/tools/protobuf/protoc
 
-//Run tests after build
+//Run tests when building
 RUN_TESTS_AFTER_BUILD:BOOL=OFF
 
 //Automatically copy dependencies into the output directory for
@@ -465,7 +465,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -512,12 +512,8 @@ CMAKE_TOOLCHAIN_FILE-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CURL_LIBRARY_DEBUG
-CURL_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 //vcpkg
 CURL_LIBRARY_DEBUG:INTERNAL=/home/ptaku/serweryt/Tibia/silnik/budowa_silnik/vcpkg_installed/x64-linux/debug/lib/libcurl-d.a
-//ADVANCED property for variable: CURL_LIBRARY_RELEASE
-CURL_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 //vcpkg
 CURL_LIBRARY_RELEASE:INTERNAL=/home/ptaku/serweryt/Tibia/silnik/budowa_silnik/vcpkg_installed/x64-linux/lib/libcurl.a
 //Details about finding Boost

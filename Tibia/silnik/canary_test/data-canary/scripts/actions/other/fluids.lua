@@ -10,24 +10,24 @@ poison:setParameter(CONDITION_PARAM_TICKINTERVAL, 4000)
 poison:setParameter(CONDITION_PARAM_FORCEUPDATE, true)
 
 local fluidMessage = {
-	[1] = "Gulp.", -- water
-	[2] = "Aah...", -- wine
-	[3] = "Aah...", -- beer
-	[4] = "Gulp.", -- mud
-	[5] = "Gulp.", -- blood
-	[6] = "Urgh!", -- slime
-	[7] = "Gulp.", -- oil
-	[8] = "Urgh!", -- urine
-	[9] = "Gulp.", -- milk
-	[10] = "Aaaah...", -- manafluid
-	[11] = "Aaaah...", -- lifefluid
-	[12] = "Mmmh.", -- lemonade
-	[13] = "Aah...", -- rum
-	[14] = "Mmmh.", -- fruit juice
-	[15] = "Mmmh.", -- coconut milk
-	[16] = "Aah...", -- mead
-	[17] = "Gulp.", -- tea
-	[18] = "Urgh!", -- ink
+	[1] = "scripts.fluids.msg_1", -- water
+	[2] = "scripts.fluids.msg_2", -- wine
+	[3] = "scripts.fluids.msg_2", -- beer
+	[4] = "scripts.fluids.msg_1", -- mud
+	[5] = "scripts.fluids.msg_1", -- blood
+	[6] = "scripts.fluids.msg_3", -- slime
+	[7] = "scripts.fluids.msg_1", -- oil
+	[8] = "scripts.fluids.msg_3", -- urine
+	[9] = "scripts.fluids.msg_1", -- milk
+	[10] = "scripts.fluids.msg_4", -- manafluid
+	[11] = "scripts.fluids.msg_4", -- lifefluid
+	[12] = "scripts.fluids.msg_5", -- lemonade
+	[13] = "scripts.fluids.msg_2", -- rum
+	[14] = "scripts.fluids.msg_5", -- fruit juice
+	[15] = "scripts.fluids.msg_5", -- coconut milk
+	[16] = "scripts.fluids.msg_2", -- mead
+	[17] = "scripts.fluids.msg_1", -- tea
+	[18] = "scripts.fluids.msg_3", -- ink
 }
 
 local fluid = Action()
@@ -61,7 +61,7 @@ function fluid.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 				player:addHealth(60)
 				fromPosition:sendMagicEffect(CONST_ME_MAGIC_BLUE)
 			end
-			player:say(fluidMessage[item.type] or "Gulp.", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized(fluidMessage[item.type] or "scripts.fluids.gulp", TALKTYPE_MONSTER_SAY)
 			item:transform(item:getId(), 0)
 		else
 			Game.createItem(2886, item.type, toPosition):decay()

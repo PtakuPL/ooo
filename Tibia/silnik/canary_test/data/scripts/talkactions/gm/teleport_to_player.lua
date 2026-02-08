@@ -30,13 +30,13 @@ function teleportToCreature.onSay(player, words, param)
 	end
 
 	if #playerList == 0 then
-		player:sendCancelMessage("There are no active players.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_no_active_players")
 		return true
 	end
 
 	local window = ModalWindow({
-		title = "Teleport to Player",
-		message = "select player to teleport",
+		title = i18nTranslate("scripts.teleport_to_player.modal_title", player:getLocale()),
+		message = i18nTranslate("scripts.teleport_to_player.modal_message", player:getLocale()),
 	})
 	for _, targetPlayer in pairs(playerList) do
 		if targetPlayer then

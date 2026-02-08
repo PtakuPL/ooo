@@ -34,7 +34,7 @@ function leverTheRavager.onUse(player, item, fromPosition, target, toPosition, i
 		for i = 1, #setting.playerPositions do
 			local creature = Tile(setting.playerPositions[i]):getTopCreature()
 			if not creature or not creature:isPlayer() then
-				player:sendCancelMessage("You need 4 players to fight with The Ravager.")
+				player:sendLocalizedCancelMessage("quests.dark_trails.you_need_4_players_to_fight")
 				return true
 			end
 			storePlayers[#storePlayers + 1] = creature

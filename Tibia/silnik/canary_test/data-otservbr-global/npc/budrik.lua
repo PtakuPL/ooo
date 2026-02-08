@@ -121,6 +121,22 @@ local function creatureSayCallback(npc, creature, type, message)
 end
 
 -- Basic
+local function sayTimeKeyword(npc, player, message, keywords, parameters, node)
+	if not npcHandler:checkInteraction(npc, player) then
+		return false
+	end
+	NPC_LIB.i18n.npcSay(npcHandler, npc, player, "npc.budrik.time_now", { getFormattedWorldTime() })
+	return true
+end
+
+local function saySheartonKeyword(npc, player, message, keywords, parameters, node)
+	if not npcHandler:checkInteraction(npc, player) then
+		return false
+	end
+	NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, player, { "npc.budrik.kw_shearton_softbeard_1", "npc.budrik.kw_shearton_softbeard_2" }, 100)
+	return true
+end
+
 keywordHandler:addKeyword({ "disturb" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.budrik.stdmod_1" })
 keywordHandler:addAliasKeyword({ "job" })
 keywordHandler:addAliasKeyword({ "shop" })
@@ -132,15 +148,9 @@ keywordHandler:addKeyword({ "mine" }, StdModule.say, { npcHandler = npcHandler, 
 keywordHandler:addAliasKeyword({ "dungeon" })
 keywordHandler:addKeyword({ "monster" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.budrik.stdmod_7" })
 keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.budrik.stdmod_8" })
-keywordHandler:addKeyword({ "time" }, StdModule.say, { npcHandler = npcHandler, text = { "Precisely " .. getFormattedWorldTime() .. ", young one." } })
+keywordHandler:addKeyword({ "time" }, sayTimeKeyword, { npcHandler = npcHandler })
 keywordHandler:addKeyword({ "trouble" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.budrik.stdmod_9" })
-keywordHandler:addKeyword({ "shearton softbeard" }, StdModule.say, {
-	npcHandler = npcHandler,
-	text = {
-		"Yes, I remember him well. It was a tragedy. An earthquake led to a cave-in and many of our brave miners died. ...",
-		"Their ghosts still haunt the Grothmok tunnel in which they died, so we had to seal it off.",
-	},
-})
+keywordHandler:addKeyword({ "shearton softbeard" }, saySheartonKeyword, { npcHandler = npcHandler })
 keywordHandler:addKeyword({ "grothmok" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.budrik.stdmod_10" })
 keywordHandler:addKeyword({ "deeper mines" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.budrik.stdmod_11" })
 NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.budrik.walkaway_msg_1")

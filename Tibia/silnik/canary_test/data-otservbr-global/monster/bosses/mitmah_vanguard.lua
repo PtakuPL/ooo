@@ -69,7 +69,7 @@ monster.voices = {
 	{ text = "FEAR THE CURSE!", yell = true , i18nKey = "monster.mitmah_vanguard.voice_2"},
 	{ text = "You're the intruder.", yell = true , i18nKey = "monster.mitmah_vanguard.voice_3"},
 	{ text = "The Iks have always been ours.", yell = true , i18nKey = "monster.mitmah_vanguard.voice_4"},
-	{ text = "NOW TREMBLE!", "GOT YOU NOW!", yell = true , i18nKey = "monster.mitmah_vanguard.voice_5"},
+	{ text = "NOW TREMBLE! GOT YOU NOW!", yell = true , i18nKey = "monster.mitmah_vanguard.voice_5"},
 }
 
 monster.loot = {

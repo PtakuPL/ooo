@@ -29,7 +29,7 @@ local npcHandler = NpcHandler:new(keywordHandler)
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Passages to Edron, Darashia, Oramond, Thais and Venore." },
+	{ i18nKey = "npc.captain_pelagia.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -99,9 +99,9 @@ keywordHandler:addKeyword({ "captain" }, StdModule.say, { npcHandler = npcHandle
 keywordHandler:addKeyword({ "venore" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.captain_pelagia.stdmod_11" })
 keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.captain_pelagia.stdmod_12" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Welcome on board, |PLAYERNAME|. Where can I {sail} you today?")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye. Recommend us if you were satisfied with our service.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Good bye then.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.captain_pelagia.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.captain_pelagia.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.captain_pelagia.walkaway_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

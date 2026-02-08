@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 """
-Export item names from items.xml into JSON translation packs.
+Export item names/descriptions from items.xml into JSON translation packs.
 
 Usage examples:
   python tools/export_items_translations.py --locale en --locale pl
@@ -22,11 +22,11 @@ DEFAULT_ITEMS = PROJECT_ROOT / "data" / "items" / "items.xml"
 DEFAULT_I18N = PROJECT_ROOT / "i18n"
 
 
-def parse_ids(node: ET.Element) -> list[int]:
+def parse_ids(node: ET.Element, include_ranges: bool = False) -> list[int]:
 	if "id" in node.attrib:
 		return [int(node.attrib["id"])]
 
-	if "fromid" in node.attrib and "toid" in node.attrib:
+	if include_ranges and "fromid" in node.attrib and "toid" in node.attrib:
 		start = int(node.attrib["fromid"])
 		end = int(node.attrib["toid"])
 		return list(range(start, end + 1))
@@ -34,23 +34,51 @@ def parse_ids(node: ET.Element) -> list[int]:
 	return []
 
 
-def load_items(items_path: Path) -> dict[str, str]:
+def find_description(node: ET.Element) -> str:
+	for attribute in node.findall("attribute"):
+		key = (attribute.get("key") or "").strip().lower()
+		if key == "description":
+			return (attribute.get("value") or "").strip()
+	return ""
+
+
+def load_items(items_path: Path, existing_en: dict[str, str]) -> tuple[dict[str, str], int]:
 	if not items_path.is_file():
 		raise FileNotFoundError(f"items.xml not found: {items_path}")
 
 	tree = ET.parse(items_path)
 	root = tree.getroot()
 	mapping: dict[str, str] = {}
+	missing_marker_values = 0
 
 	for node in root.findall("item"):
+		item_ids = parse_ids(node, include_ranges=False)
+
 		name = (node.get("name") or "").strip()
-		if not name:
+		if name:
+			for item_id in item_ids:
+				mapping[f"item.{item_id}.name"] = name
+
+		description = find_description(node)
+		if not description:
 			continue
 
-		for item_id in parse_ids(node):
-			mapping[f"items.{item_id}.name"] = name
+		if description.startswith("#i18n:"):
+			key = description[6:].strip()
+			if not key:
+				continue
+			if key in existing_en and existing_en[key].strip():
+				mapping[key] = existing_en[key]
+			else:
+				mapping[key] = ""
+				missing_marker_values += 1
+			continue
 
-	return mapping
+		# Legacy literal descriptions: when migrating from raw XML, map one key per item id.
+		for item_id in parse_ids(node, include_ranges=True):
+			mapping[f"item.{item_id}.desc"] = description
+
+	return mapping, missing_marker_values
 
 
 def load_existing(path: Path) -> dict[str, str]:
@@ -70,7 +98,10 @@ def write_locale(locale: str, values: dict[str, str], i18n_root: Path, backfill:
 
 	for key, english_value in values.items():
 		if locale == "en":
-			merged[key] = english_value
+			if english_value:
+				merged[key] = english_value
+			else:
+				merged[key] = existing.get(key, "")
 			continue
 
 		if key in existing and existing[key].strip():
@@ -80,9 +111,8 @@ def write_locale(locale: str, values: dict[str, str], i18n_root: Path, backfill:
 		else:
 			merged[key] = ""
 
-	if locale != "en":
-		for stale_key in set(existing.keys()) - set(values.keys()):
-			merged.pop(stale_key, None)
+	for stale_key in set(existing.keys()) - set(values.keys()):
+		merged.pop(stale_key, None)
 
 	with target_file.open("w", encoding="utf-8") as handle:
 		json.dump(dict(sorted(merged.items())), handle, ensure_ascii=False, indent=2)
@@ -99,8 +129,12 @@ def main(argv: list[str]) -> int:
 	parser.add_argument("--no-backfill", action="store_true", help="Do not prefill missing translations with English text.")
 	args = parser.parse_args(argv)
 
-	item_values = load_items(args.items)
-	print(f"[i18n] Parsed {len(item_values):,} item names from {args.items}")
+	en_file = args.i18n_root / "en" / "items.json"
+	existing_en = load_existing(en_file)
+	item_values, missing_marker_values = load_items(args.items, existing_en)
+	print(f"[i18n] Parsed {len(item_values):,} item keys (name+desc) from {args.items}")
+	if missing_marker_values:
+		print(f"[i18n] Warning: {missing_marker_values} marker keys had no EN value in existing items.json")
 
 	for locale in args.locale:
 		write_locale(locale, item_values, args.i18n_root, backfill=not args.no_backfill)

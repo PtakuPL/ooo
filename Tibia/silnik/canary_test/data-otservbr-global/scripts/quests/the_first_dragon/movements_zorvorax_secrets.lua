@@ -1,15 +1,15 @@
 local UniqueTable = {
 	[25002] = {
 		storage = Storage.Quest.U11_02.TheFirstDragon.DesertTile,
-		msg = "You enter the beautiful oasis. By visiting this sacred site you're infused with the power of water bringing life to the desert.",
+		msg = "quests.first_dragon.oasis",
 	},
 	[25003] = {
 		storage = Storage.Quest.U11_02.TheFirstDragon.StoneSculptureTile,
-		msg = "You enter the circle of trees and flowers. By visiting this sacred site you're infused with the power of nature and plants.",
+		msg = "quests.first_dragon.circle_trees",
 	},
 	[25004] = {
 		storage = Storage.Quest.U11_02.TheFirstDragon.SuntowerTile,
-		msg = "You entered the suntower of Ab'dendriel. By visiting this sacred site you're infused with the power of the life-giving sun.",
+		msg = "quests.first_dragon.suntower",
 	},
 }
 
@@ -29,7 +29,7 @@ function zorvoraxSecrets.onStepIn(creature, item, position, fromPosition)
 	if player:getStorageValue(setting.storage) < 1 then
 		player:setStorageValue(setting.storage, 1)
 		player:setStorageValue(Storage.Quest.U11_02.TheFirstDragon.SecretsCounter, player:getStorageValue(Storage.Quest.U11_02.TheFirstDragon.SecretsCounter) + 1)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, setting.msg)
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, setting.msg)
 		return true
 	end
 	return true

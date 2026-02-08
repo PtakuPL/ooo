@@ -3,22 +3,22 @@
 local missionTiles = {
 	[50317] = {
 		states = 1,
-		message = "This is not the way to Lily. Follow the road leading to the south-west to find her shop.",
+		message = "quests.rookie_guard.m04.not_lily",
 		arrowPosition = { x = 32090, y = 32201, z = 7 },
 	},
 	[50318] = {
 		states = 2,
-		message = "This is not the way to Hyacinth. Follow the path to the north exit of the village.",
+		message = "quests.rookie_guard.m04.not_hyacinth_north",
 		arrowPosition = { x = 32090, y = 32190, z = 7 },
 	},
 	[50320] = {
 		states = 2,
-		message = "This is not the way to Hyacinth. Follow the path to the east to find Hyacinth's little house.",
+		message = "quests.rookie_guard.m04.not_hyacinth_east",
 		arrowPosition = { x = 32092, y = 32164, z = 7 },
 	},
 	[50322] = {
 		states = 2,
-		message = "This is not the way to Hyacinth. Stay on the path a little more to the north to find Hyacinth's little house.",
+		message = "quests.rookie_guard.m04.not_hyacinth_stay",
 	},
 }
 
@@ -41,7 +41,7 @@ function missionGuide.onStepIn(creature, item, position, fromPosition)
 	if missionTile.states == missionState then
 		-- Check delayed notifications (message/arrow)
 		if not isTutorialNotificationDelayed(player) then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, missionTile.message)
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, missionTile.message)
 			if missionTile.arrowPosition then
 				Position(missionTile.arrowPosition):sendMagicEffect(CONST_ME_TUTORIALARROW)
 			end

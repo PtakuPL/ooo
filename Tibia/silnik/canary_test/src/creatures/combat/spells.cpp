@@ -41,14 +41,14 @@ TalkActionResult_t Spells::playerSaySpell(const std::shared_ptr<Player> &player,
 			}
 		}
 		if (countOutsizePZ >= maxOutsizePZ) {
-			player->sendTextMessage(MESSAGE_FAILURE, fmt::format("You cannot cast spells while you have {} character(s) outside of a protection zone.", maxOutsizePZ));
+			player->sendLocalizedTextMessage(MESSAGE_FAILURE, "server.spells.msg_3", { std::to_string(maxOutsizePZ) });
 			return TALKACTION_FAILED;
 		}
 	}
 	std::string str_words = words;
 
 	if (player->hasCondition(CONDITION_FEARED)) {
-		player->sendTextMessage(MESSAGE_FAILURE, "You are feared.");
+		player->sendLocalizedTextMessage(MESSAGE_FAILURE, "server.spells.msg_1");
 		return TALKACTION_FAILED;
 	}
 
@@ -437,7 +437,7 @@ bool Spell::playerSpellCheck(const std::shared_ptr<Player> &player) const {
 	}
 
 	if (player->hasCondition(CONDITION_FEARED)) {
-		player->sendTextMessage(MESSAGE_FAILURE, "You are feared.");
+		player->sendLocalizedTextMessage(MESSAGE_FAILURE, "server.spells.msg_2");
 		return false;
 	}
 

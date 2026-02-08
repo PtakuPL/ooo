@@ -15,11 +15,11 @@ function hunterMusic.onUse(player, item, fromPosition, target, toPosition, isHot
 	local cStorage = useItem.storage
 	if player:getStorageValue(cStorage) ~= 1 then
 		player:setStorageValue(cStorage, 1)
-		player:sendLocalizedMessage(MESSAGE_GAME_HIGHLIGHT, "scripts.action_music_sheet.msg_1" .. useItem.text .. " part of a hymn.")
+		player:sendLocalizedMessage(MESSAGE_GAME_HIGHLIGHT, "scripts.action_music_sheet.msg_1", { useItem.text })
 		player:getPosition():sendMagicEffect(CONST_ME_MAGIC_RED)
 		item:remove(1)
 	else
-		player:sendLocalizedMessage(MESSAGE_GAME_HIGHLIGHT, "scripts.action_music_sheet.msg_2" .. useItem.text .. " verse of the hymn.")
+		player:sendLocalizedMessage(MESSAGE_GAME_HIGHLIGHT, "scripts.action_music_sheet.msg_2", { useItem.text })
 	end
 	return true
 end

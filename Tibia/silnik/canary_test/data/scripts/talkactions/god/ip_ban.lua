@@ -7,7 +7,7 @@ function ipBan.onSay(player, words, param)
 	logCommand(player, words, param)
 
 	if param == "" then
-		player:sendCancelMessage("Command param required.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_command_param_required")
 		return true
 	end
 
@@ -32,14 +32,14 @@ function ipBan.onSay(player, words, param)
 
 	resultId = db.storeQuery("SELECT 1 FROM `ip_bans` WHERE `ip` = " .. targetIp)
 	if resultId ~= false then
-		player:sendTextMessage(MESSAGE_ADMINISTRATOR, targetName .. "  is already IP banned.")
+		player:sendLocalizedTextMessage(MESSAGE_ADMINISTRATOR, "talkaction.god.ip_ban.msg_already_banned", {targetName})
 		Result.free(resultId)
 		return true
 	end
 
 	local timeNow = os.time()
 	db.query("INSERT INTO `ip_bans` (`ip`, `reason`, `banned_at`, `expires_at`, `banned_by`) VALUES (" .. targetIp .. ", '', " .. timeNow .. ", " .. timeNow + (ipBanDays * 86400) .. ", " .. player:getGuid() .. ")")
-	player:sendTextMessage(MESSAGE_ADMINISTRATOR, targetName .. "  has been IP banned.")
+	player:sendLocalizedTextMessage(MESSAGE_ADMINISTRATOR, "talkaction.god.ip_ban.msg_banned", {targetName})
 	return true
 end
 

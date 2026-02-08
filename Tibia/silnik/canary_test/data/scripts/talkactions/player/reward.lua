@@ -12,9 +12,10 @@ local config = {
 }
 
 local function sendExerciseRewardModal(player)
+	local locale = player:getLocale()
 	local window = ModalWindow({
-		title = "Exercise Reward",
-		message = "choose a item",
+		title = i18nTranslate("scripts.reward.modal_title", locale),
+		message = i18nTranslate("scripts.reward.modal_message", locale),
 	})
 	for _, it in pairs(config.items) do
 		local iType = ItemType(it.id)
@@ -31,15 +32,18 @@ local function sendExerciseRewardModal(player)
 					if item then
 						item:setActionId(IMMOVABLE_ACTION_ID)
 						item:setAttribute(ITEM_ATTRIBUTE_STORE, systemTime())
-						item:setAttribute(ITEM_ATTRIBUTE_DESCRIPTION, string.format("You won this exercise weapon as a reward to be a %s player. Use it in a dummy!\nHave a nice game..", configManager.getString(configKeys.SERVER_NAME)))
+						item:setAttribute(
+							ITEM_ATTRIBUTE_DESCRIPTION,
+							string.format(i18nTranslate("scripts.reward.item_description", locale), configManager.getString(configKeys.SERVER_NAME))
+						)
 					else
-						player:sendLocalizedMessage(MESSAGE_LOOK, "scripts.reward.msg_1")
+						player:sendLocalizedTextMessage(MESSAGE_LOOK, "scripts.reward.msg_4")
 						return
 					end
 					player:sendLocalizedTextMessage(MESSAGE_LOOK, "scripts.reward.msg_1", {iType:getName(), it.charges})
 					player:setStorageValue(config.storage, 1)
 				else
-					player:sendLocalizedMessage(MESSAGE_LOOK, "scripts.reward.msg_2")
+					player:sendLocalizedTextMessage(MESSAGE_LOOK, "scripts.reward.msg_2")
 				end
 			end)
 		end
@@ -57,7 +61,7 @@ function exerciseRewardModal.onSay(player, words, param)
 		return true
 	end
 	if player:getStorageValue(config.storage) > 0 then
-		player:sendLocalizedMessage(MESSAGE_LOOK, "scripts.reward.msg_3")
+		player:sendLocalizedTextMessage(MESSAGE_LOOK, "scripts.reward.msg_3")
 		return true
 	end
 	sendExerciseRewardModal(player)

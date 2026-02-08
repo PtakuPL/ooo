@@ -14,7 +14,7 @@ function upperSpikeKill.onDeath(creature, _corpse, _lastHitKiller, mostDamageKil
 		if not table.contains({ -1, 7 }, player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Upper_Kill_Main)) then
 			local sum = player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Upper_Kill_Main) + 1
 			player:setStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Upper_Kill_Main, sum)
-			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.creaturescripts_upper_spike_kill.msg_1" .. sum .. " out of 7 Demon Skeletons.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.creaturescripts_upper_spike_kill.msg_1", { sum })
 			if sum == 7 then
 				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.creaturescripts_upper_spike_kill.msg_2")
 			end

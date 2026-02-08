@@ -45,7 +45,10 @@
 #include "server/network/message/outputmessage.hpp"
 #include "utils/tools.hpp"
 #include "utils/i18n/keymap.hpp"
+#include "utils/i18n/translator.hpp"
 #include "creatures/players/vocations/vocation.hpp"
+
+#include <fmt/format.h>
 
 #include "enums/account_coins.hpp"
 #include "enums/account_group_type.hpp"
@@ -70,6 +73,102 @@ namespace {
 		}
 
 		return totalIterationCount;
+	}
+
+	constexpr uint8_t kLastLocalizedTitleId = 93;
+
+	bool hasFemaleTitleVariant(uint8_t titleId) {
+		switch (titleId) {
+			case 32:
+			case 35:
+			case 43:
+			case 44:
+			case 45:
+			case 47:
+			case 48:
+			case 70:
+			case 90:
+				return true;
+			default:
+				return false;
+		}
+	}
+
+	std::string getLocalizedTitleName(const Title &title, PlayerSex_t sex, const std::string &locale) {
+		if (title.m_id == 0) {
+			return {};
+		}
+
+		if (title.m_id >= 1 && title.m_id <= kLastLocalizedTitleId) {
+			auto &tr = i18n::g_translator();
+			if (sex == PLAYERSEX_FEMALE && hasFemaleTitleVariant(title.m_id)) {
+				return tr.get(fmt::format("cpp.title.name_{}_female", title.m_id), locale);
+			}
+			return tr.get(fmt::format("cpp.title.name_{}", title.m_id), locale);
+		}
+
+		if (sex == PLAYERSEX_FEMALE && !title.m_femaleName.empty()) {
+			return title.m_femaleName;
+		}
+		return title.m_maleName;
+	}
+
+	std::string getLocalizedTitleDescription(const Title &title, const std::string &locale) {
+		if (title.m_id >= 1 && title.m_id <= kLastLocalizedTitleId) {
+			return i18n::g_translator().get(fmt::format("cpp.title.desc_{}", title.m_id), locale);
+		}
+
+		return title.m_description;
+	}
+
+	std::string getLocalizedCurrentTitleName(const std::shared_ptr<Player> &player, const std::string &locale) {
+		if (!player) {
+			return {};
+		}
+
+		const auto currentTitle = player->title().getCurrentTitle();
+		if (currentTitle == 0) {
+			return {};
+		}
+
+		const auto &title = g_game().getTitleById(currentTitle);
+		return getLocalizedTitleName(title, player->getSex(), locale);
+	}
+
+	std::string getLocalizedVocationName(uint16_t vocationId, const std::string &fallbackName, const std::string &locale) {
+		const std::string key = fmt::format("cpp.vocation.id_{}", vocationId);
+		const std::string translated = i18n::g_translator().get(key, locale);
+		if (translated.empty() || translated == key) {
+			return fallbackName;
+		}
+		return translated;
+	}
+
+	std::string getLocalizedBlessingName(Blessings blessing, const std::string &locale) {
+		const std::string fallbackName = toStartCaseWithSpace(magic_enum::enum_name(blessing).data());
+		const std::string key = fmt::format("cpp.player.blessing_name_{}", enumToValue(blessing));
+		const std::string translated = i18n::g_translator().get(key, locale);
+		if (translated.empty() || translated == key) {
+			return fallbackName;
+		}
+		return translated;
+	}
+
+	std::string getLocalizedLoyaltyTitle(const std::string &titleOrKey, const std::string &locale) {
+		if (titleOrKey.empty()) {
+			return {};
+		}
+
+		static constexpr const char* loyaltyTitlePrefix = "lib.player.loyalty_title_";
+		if (titleOrKey.rfind(loyaltyTitlePrefix, 0) != 0) {
+			return titleOrKey;
+		}
+
+		const std::string translated = i18n::g_translator().get(titleOrKey, locale);
+		if (translated.empty() || translated == titleOrKey) {
+			return titleOrKey;
+		}
+		return translated;
 	}
 
 	void addOutfitAndMountBytes(NetworkMessage &msg, const std::shared_ptr<Item> &item, const CustomAttribute* attribute, const std::string &head, const std::string &body, const std::string &legs, const std::string &feet, bool addAddon = false, bool addByte = false) {
@@ -558,17 +657,17 @@ void ProtocolGame::login(const std::string &name, uint32_t accountId, OperatingS
 		player->setID();
 
 		if (!IOLoginDataLoad::preLoadPlayer(player, name)) {
-			disconnectClient("Your character could not be loaded.");
+			disconnectClient(i18n::g_translator().get("cpp.protocol.char_could_not_be_loaded", (player && !player->getLocale().empty()) ? std::string(player->getLocale()) : "en"));
 			return;
 		}
 
 		if (IOBan::isPlayerNamelocked(player->getGUID())) {
-			disconnectClient("Your character has been namelocked.");
+			disconnectClient(i18n::g_translator().get("cpp.protocol.char_namelocked", (player && !player->getLocale().empty()) ? std::string(player->getLocale()) : "en"));
 			return;
 		}
 
 		if (g_game().getGameState() == GAME_STATE_CLOSING && !player->hasFlag(PlayerFlags_t::CanAlwaysLogin)) {
-			disconnectClient("The game is just going down.\nPlease try again later.");
+			disconnectClient(i18n::g_translator().get("cpp.protocol.game_going_down", (player && !player->getLocale().empty()) ? std::string(player->getLocale()) : "en"));
 			return;
 		}
 
@@ -577,20 +676,20 @@ void ProtocolGame::login(const std::string &name, uint32_t accountId, OperatingS
 			if (!maintainMessage.empty()) {
 				disconnectClient(maintainMessage);
 			} else {
-				disconnectClient("Server is currently closed.\nPlease try again later.");
+				disconnectClient(i18n::g_translator().get("cpp.protocol.server_closed", (player && !player->getLocale().empty()) ? std::string(player->getLocale()) : "en"));
 			}
 			return;
 		}
 
 		if (g_configManager().getBoolean(ONLY_PREMIUM_ACCOUNT) && !player->isPremium() && (player->getGroup()->id < GROUP_TYPE_GAMEMASTER || player->getAccountType() < ACCOUNT_TYPE_GAMEMASTER)) {
-			disconnectClient("Your premium time for this account is out.\n\nTo play please buy additional premium time from our website");
+			disconnectClient(i18n::g_translator().get("cpp.protocol.premium_expired", (player && !player->getLocale().empty()) ? std::string(player->getLocale()) : "en"));
 			return;
 		}
 
 		auto onlineCount = g_game().getPlayersByAccount(player->getAccount()).size();
 		auto maxOnline = g_configManager().getNumber(MAX_PLAYERS_PER_ACCOUNT);
 		if (player->getAccountType() < ACCOUNT_TYPE_GAMEMASTER && onlineCount >= maxOnline) {
-			disconnectClient(fmt::format("You may only login with {} character{}\nof your account at the same time.", maxOnline, maxOnline > 1 ? "s" : ""));
+			disconnectClient(i18n::g_translator().format("cpp.protocol.max_chars_online", (player && !player->getLocale().empty()) ? std::string(player->getLocale()) : "en", {std::to_string(maxOnline)}));
 			return;
 		}
 
@@ -602,12 +701,11 @@ void ProtocolGame::login(const std::string &name, uint32_t accountId, OperatingS
 				}
 
 				std::ostringstream ss;
+				const std::string loc((player && !player->getLocale().empty()) ? std::string(player->getLocale()) : "en");
 				if (banInfo.expiresAt > 0) {
-					ss << "Your account has been banned until " << formatDateShort(banInfo.expiresAt) << " by " << banInfo.bannedBy << ".\n\nReason specified:\n"
-					   << banInfo.reason;
+					ss << i18n::g_translator().format("cpp.protocol.account_banned_until", loc, {formatDateShort(banInfo.expiresAt), banInfo.bannedBy, banInfo.reason});
 				} else {
-					ss << "Your account has been permanently banned by " << banInfo.bannedBy << ".\n\nReason specified:\n"
-					   << banInfo.reason;
+					ss << i18n::g_translator().format("cpp.protocol.account_banned_permanent", loc, {banInfo.bannedBy, banInfo.reason});
 				}
 				disconnectClient(ss.str());
 				return;
@@ -620,8 +718,7 @@ void ProtocolGame::login(const std::string &name, uint32_t accountId, OperatingS
 			auto retryTime = static_cast<uint32_t>(WaitingList::getTime(currentSlot));
 			std::ostringstream ss;
 
-			ss << "Too many players online.\nYou are at place "
-			   << currentSlot << " on the waiting list.";
+			ss << i18n::g_translator().format("cpp.protocol.waiting_list", (player && !player->getLocale().empty()) ? std::string(player->getLocale()) : "en", {std::to_string(currentSlot)});
 
 			auto output = OutputMessagePool::getOutputMessage();
 			output->addByte(0x16);
@@ -633,7 +730,7 @@ void ProtocolGame::login(const std::string &name, uint32_t accountId, OperatingS
 		}
 
 		if (!IOLoginData::loadPlayerById(player, player->getGUID(), false)) {
-			disconnectClient("Your character could not be loaded, please contact an adminstrator.");
+			disconnectClient(i18n::g_translator().get("cpp.protocol.char_load_failed_contact_admin", (player && !player->getLocale().empty()) ? std::string(player->getLocale()) : "en"));
 			return;
 		}
 
@@ -651,13 +748,13 @@ void ProtocolGame::login(const std::string &name, uint32_t accountId, OperatingS
 				}
 			}
 			if (countOutsizePZ >= maxOutsizePZ) {
-				disconnectClient(fmt::format("You can only have {} character{} from your account outside of a protection zone.", maxOutsizePZ == 1 ? "one" : std::to_string(maxOutsizePZ), maxOutsizePZ > 1 ? "s" : ""));
+				disconnectClient(i18n::g_translator().format("cpp.protocol.max_chars_outside_pz", (player && !player->getLocale().empty()) ? std::string(player->getLocale()) : "en", {std::to_string(maxOutsizePZ)}));
 				return;
 			}
 		}
 
 		if (!g_game().placeCreature(player, player->getLoginPosition()) && !g_game().placeCreature(player, player->getTemplePosition(), false, true)) {
-			disconnectClient("Temple position is wrong. Please, contact the administrator.");
+			disconnectClient(i18n::g_translator().get("cpp.protocol.temple_position_wrong", (player && !player->getLocale().empty()) ? std::string(player->getLocale()) : "en"));
 			g_logger().warn("Player {} temple position is wrong", player->getName());
 			return;
 		}
@@ -669,7 +766,7 @@ void ProtocolGame::login(const std::string &name, uint32_t accountId, OperatingS
 	} else {
 		if (eventConnect != 0 || !g_configManager().getBoolean(REPLACE_KICK_ON_LOGIN)) {
 			// Already trying to connect
-			disconnectClient("You are already logged in.");
+			disconnectClient(i18n::g_translator().get("cpp.protocol.already_logged_in", (player && !player->getLocale().empty()) ? std::string(player->getLocale()) : "en"));
 			return;
 		}
 
@@ -694,7 +791,7 @@ void ProtocolGame::connect(const std::string &playerName, OperatingSystem_t oper
 
 	std::shared_ptr<Player> foundPlayer = g_game().getPlayerByName(playerName);
 	if (!foundPlayer) {
-		disconnectClient("You are already logged in.");
+		disconnectClient(i18n::g_translator().get("cpp.protocol.already_logged_in", (player && !player->getLocale().empty()) ? std::string(player->getLocale()) : "en"));
 		return;
 	}
 
@@ -825,14 +922,14 @@ void ProtocolGame::onRecvFirstMessage(NetworkMessage &msg) {
 	if (authType != "session") {
 		size_t pos = sessionKey.find('\n');
 		if (pos == std::string::npos) {
-			ss << "You must enter your " << (oldProtocol ? "username" : "email") << ".";
+			ss << i18n::g_translator().get(oldProtocol ? "cpp.protocol.enter_username" : "cpp.protocol.enter_email", "en");
 			disconnectClient(ss.str());
 			return;
 		}
 		accountDescriptor = sessionKey.substr(0, pos);
 		if (accountDescriptor.empty()) {
 			ss.str(std::string());
-			ss << "You must enter your " << (oldProtocol ? "username" : "email") << ".";
+			ss << i18n::g_translator().get(oldProtocol ? "cpp.protocol.enter_username" : "cpp.protocol.enter_email", "en");
 			disconnectClient(ss.str());
 			return;
 		}
@@ -851,13 +948,13 @@ void ProtocolGame::onRecvFirstMessage(NetworkMessage &msg) {
 	const auto &foundPlayer = !onlinePlayer ? g_game().getDeadPlayer(characterName) : onlinePlayer;
 	if (foundPlayer && foundPlayer->client) {
 		if (foundPlayer->isDead()) {
-			disconnectClient("You are already logged in.");
+			disconnectClient(i18n::g_translator().get("cpp.protocol.already_logged_in", "en"));
 			return;
 		}
 
-		auto message = fmt::format("You are already connected through another client. Please use only one client at a time!");
+		auto message = i18n::g_translator().get("cpp.protocol.already_connected_other_client", "en");
 		if (foundPlayer->getProtocolVersion() != getVersion() && foundPlayer->isOldProtocol() != oldProtocol) {
-			message = fmt::format("You are already logged in using protocol '{}'. Please log out from the other session to connect here.", foundPlayer->getProtocolVersion());
+			message = i18n::g_translator().format("cpp.protocol.already_logged_protocol", "en", {std::to_string(foundPlayer->getProtocolVersion())});
 		}
 
 		foundPlayer->client->disconnectClient(message);
@@ -878,22 +975,23 @@ void ProtocolGame::onRecvFirstMessage(NetworkMessage &msg) {
 
 	if (!oldProtocol && clientVersion != CLIENT_VERSION) {
 		ss.str(std::string());
-		ss << "Only clients with protocol " << CLIENT_VERSION_UPPER << "." << CLIENT_VERSION_LOWER;
+		{ std::string ver = std::to_string(CLIENT_VERSION_UPPER) + "." + std::to_string(CLIENT_VERSION_LOWER);
 		if (g_configManager().getBoolean(OLD_PROTOCOL)) {
-			ss << " or 11.00";
-		}
-		ss << " allowed!";
+			ss << i18n::g_translator().format("cpp.protocol.only_clients_or_old", "en", {ver});
+		} else {
+			ss << i18n::g_translator().format("cpp.protocol.only_clients", "en", {ver});
+		} }
 		disconnectClient(ss.str());
 		return;
 	}
 
 	if (g_game().getGameState() == GAME_STATE_STARTUP) {
-		disconnectClient("Gameworld is starting up. Please wait.");
+		disconnectClient(i18n::g_translator().get("cpp.protocol.gameworld_starting", "en"));
 		return;
 	}
 
 	if (g_game().getGameState() == GAME_STATE_MAINTAIN) {
-		disconnectClient("Gameworld is under maintenance. Please re-connect in a while.");
+		disconnectClient(i18n::g_translator().get("cpp.protocol.gameworld_maintenance", "en"));
 		return;
 	}
 
@@ -904,8 +1002,7 @@ void ProtocolGame::onRecvFirstMessage(NetworkMessage &msg) {
 		}
 
 		ss.str(std::string());
-		ss << "Your IP has been banned until " << formatDateShort(banInfo.expiresAt) << " by " << banInfo.bannedBy << ".\n\nReason specified:\n"
-		   << banInfo.reason;
+		ss << i18n::g_translator().format("cpp.protocol.ip_banned_until", "en", {formatDateShort(banInfo.expiresAt), banInfo.bannedBy, banInfo.reason});
 		disconnectClient(ss.str());
 		return;
 	}
@@ -914,9 +1011,9 @@ void ProtocolGame::onRecvFirstMessage(NetworkMessage &msg) {
 	if (!IOLoginData::gameWorldAuthentication(accountDescriptor, password, characterName, accountId, oldProtocol, getIP())) {
 		ss.str(std::string());
 		if (authType == "session") {
-			ss << "Your session has expired. Please log in again.";
+			ss << i18n::g_translator().get("cpp.protocol.session_expired", "en");
 		} else { // authType == "password"
-			ss << "Your " << (oldProtocol ? "username" : "email") << " or password is not correct.";
+			ss << i18n::g_translator().get(oldProtocol ? "cpp.protocol.wrong_username_password" : "cpp.protocol.wrong_email_password", "en");
 		}
 
 		auto output = OutputMessagePool::getOutputMessage();
@@ -2197,15 +2294,15 @@ void ProtocolGame::sendItemInspection(uint16_t itemId, uint8_t itemCount, const 
 	const ItemType &it = Item::items[itemId];
 
 	if (item) {
-		msg.addString(item->getName());
+		msg.addString(translateItemName(itemId, item->getName())); // I18N
 		AddItem(msg, item);
 	} else {
-		msg.addString(it.name);
+		msg.addString(translateItemName(itemId, it.name)); // I18N
 		AddItem(msg, it.id, itemCount, 0);
 	}
 	msg.addByte(0);
 
-	auto descriptions = Item::getDescriptions(it, item);
+	auto descriptions = Item::getDescriptions(it, item, player->getLocale());
 	msg.addByte(descriptions.size());
 	for (const auto &description : descriptions) {
 		msg.addString(description.first);
@@ -2297,6 +2394,8 @@ void ProtocolGame::sendHighscores(const std::vector<HighscoreCharacter> &charact
 	NetworkMessage msg;
 	msg.addByte(0xB1);
 	msg.addByte(0x00); // All data available
+	const std::string locale((player && !player->getLocale().empty()) ? std::string(player->getLocale()) : "en");
+	auto &tr = i18n::g_translator();
 
 	msg.addByte(1); // Worlds
 	auto serverName = g_configManager().getString(SERVER_NAME);
@@ -2311,7 +2410,7 @@ void ProtocolGame::sendHighscores(const std::vector<HighscoreCharacter> &charact
 
 	msg.skipBytes(1); // Vocation Count
 	msg.add<uint32_t>(0xFFFFFFFF); // All Vocations - hardcoded
-	msg.addString("(all)"); // All Vocations - hardcoded
+	msg.addString(tr.get("cpp.protocol.vocation_all", locale));
 
 	uint32_t selectedVocation = 0xFFFFFFFF;
 	const auto vocationsMap = g_vocations().getVocations();
@@ -2319,7 +2418,7 @@ void ProtocolGame::sendHighscores(const std::vector<HighscoreCharacter> &charact
 		const auto &vocation = it.second;
 		if (vocation->getFromVocation() == static_cast<uint32_t>(vocation->getId())) {
 			msg.add<uint32_t>(vocation->getFromVocation()); // Vocation Id
-			msg.addString(vocation->getVocName()); // Vocation Name
+			msg.addString(getLocalizedVocationName(vocation->getId(), vocation->getVocName(), locale)); // Vocation Name
 			++vocations;
 			if (vocation->getFromVocation() == vocationId) {
 				selectedVocation = vocationId;
@@ -2335,7 +2434,7 @@ void ProtocolGame::sendHighscores(const std::vector<HighscoreCharacter> &charact
 	for (const HighscoreCategory &category : highscoreCategories) {
 		g_logger().debug("[ProtocolGame::sendHighscores] - Category: {} - Name: {}", category.m_id, category.m_name);
 		msg.addByte(category.m_id); // Category Id
-		msg.addString(category.m_name); // Category Name
+		msg.addString(tr.get(category.m_name, locale)); // Category Name
 		if (category.m_id == categoryId) {
 			selectedCategory = categoryId;
 		}
@@ -2349,7 +2448,7 @@ void ProtocolGame::sendHighscores(const std::vector<HighscoreCharacter> &charact
 	for (const HighscoreCharacter &character : characters) {
 		msg.add<uint32_t>(character.rank); // Rank
 		msg.addString(character.name); // Character Name
-		msg.addString(character.loyaltyTitle); // Character Loyalty Title
+		msg.addString(getLocalizedLoyaltyTitle(character.loyaltyTitle, locale)); // Character Loyalty Title
 		msg.addByte(character.vocation); // Vocation Id
 		msg.addString(serverName); // World
 		msg.add<uint16_t>(character.level); // Level
@@ -2516,7 +2615,7 @@ void ProtocolGame::parseBestiarysendMonsterData(NetworkMessage &msg) {
 		newmsg.addByte(difficult);
 		newmsg.addByte(0); // 1 if special event - 0 if regular loot (?)
 		if (g_configManager().getBoolean(SHOW_LOOTS_IN_BESTIARY) || shouldAddItem == true) {
-			newmsg.addString(loot.name);
+			newmsg.addString(translateItemName(loot.id, loot.name)); // I18N
 			newmsg.addByte(loot.countmax > 0 ? 0x1 : 0x0);
 		}
 	}
@@ -2869,15 +2968,15 @@ void ProtocolGame::parseLeaderFinderWindow(NetworkMessage &msg) {
 
 			switch (memberStatus) {
 				case 2: {
-					member->sendTextMessage(MESSAGE_STATUS, "You are invited to a new team.");
+					member->sendLocalizedTextMessage(MESSAGE_STATUS, "server.protocolgame.msg_1");
 					break;
 				}
 				case 3: {
-					member->sendTextMessage(MESSAGE_STATUS, "Your team finder request was accepted.");
+					member->sendLocalizedTextMessage(MESSAGE_STATUS, "server.protocolgame.msg_2");
 					break;
 				}
 				case 4: {
-					member->sendTextMessage(MESSAGE_STATUS, "Your team finder request was denied.");
+					member->sendLocalizedTextMessage(MESSAGE_STATUS, "server.protocolgame.msg_3");
 					break;
 				}
 
@@ -2919,7 +3018,7 @@ void ProtocolGame::parseMemberFinderWindow(NetworkMessage &msg) {
 		}
 
 		if (action == 1) {
-			leader->sendTextMessage(MESSAGE_STATUS, "There is a new request to join your team.");
+			leader->sendLocalizedTextMessage(MESSAGE_STATUS, "server.protocolgame.msg_4");
 			teamAssemble->membersMap.insert({ player->getGUID(), 1 });
 		} else {
 			for (auto itt = teamAssemble->membersMap.begin(), end = teamAssemble->membersMap.end(); itt != end; ++itt) {
@@ -3576,17 +3675,19 @@ void ProtocolGame::sendCyclopediaCharacterBaseInformation() {
 		return;
 	}
 
+	const std::string locale(player->getLocale().empty() ? "en" : std::string(player->getLocale()));
+
 	NetworkMessage msg;
 	msg.addByte(0xDA);
 	msg.addByte(CYCLOPEDIA_CHARACTERINFO_BASEINFORMATION);
 	msg.addByte(0x00);
 	msg.addString(player->getName());
-	msg.addString(player->getVocation()->getVocName());
+	msg.addString(getLocalizedVocationName(player->getVocation()->getId(), player->getVocation()->getVocName(), locale));
 	msg.add<uint16_t>(player->getLevel());
 	AddOutfit(msg, player->getDefaultOutfit(), false);
 
 	msg.addByte(0x01); // Store summary & Character titles
-	msg.addString(player->title().getCurrentTitleName()); // character title
+	msg.addString(getLocalizedCurrentTitleName(player, locale)); // character title
 	writeToOutputBuffer(msg);
 }
 
@@ -3714,13 +3815,19 @@ void ProtocolGame::sendCyclopediaCharacterAchievements(uint16_t secretsUnlocked,
 	msg.add<uint16_t>(player->achiev().getPoints());
 	msg.add<uint16_t>(secretsUnlocked);
 	msg.add<uint16_t>(static_cast<uint16_t>(achievementsUnlocked.size()));
+	auto &tr = i18n::g_translator();
+	const std::string loc(player->getLocale().empty() ? "en" : std::string(player->getLocale()));
 	for (const auto &[achievement, addedTimestamp] : achievementsUnlocked) {
 		msg.add<uint16_t>(achievement.id);
 		msg.add<uint32_t>(addedTimestamp);
 		if (achievement.secret) {
 			msg.addByte(0x01);
-			msg.addString(achievement.name);
-			msg.addString(achievement.description);
+			std::string nameKey = "achievement." + std::to_string(achievement.id) + ".name";
+			std::string descKey = "achievement." + std::to_string(achievement.id) + ".description";
+			std::string localizedName = tr.get(nameKey, loc);
+			std::string localizedDesc = tr.get(descKey, loc);
+			msg.addString(localizedName.empty() ? achievement.name : localizedName);
+			msg.addString(localizedDesc.empty() ? achievement.description : localizedDesc);
 			msg.addByte(achievement.grade);
 		} else {
 			msg.addByte(0x00);
@@ -3952,6 +4059,7 @@ void ProtocolGame::sendCyclopediaCharacterStoreSummary() {
 	if (!player || oldProtocol) {
 		return;
 	}
+	const std::string locale((player && !player->getLocale().empty()) ? std::string(player->getLocale()) : "en");
 
 	NetworkMessage msg;
 	msg.addByte(0xDA);
@@ -3965,8 +4073,7 @@ void ProtocolGame::sendCyclopediaCharacterStoreSummary() {
 
 	msg.addByte(static_cast<uint8_t>(magic_enum::enum_count<Blessings>()));
 	for (auto bless : magic_enum::enum_values<Blessings>()) {
-		std::string name = toStartCaseWithSpace(magic_enum::enum_name(bless).data());
-		msg.addString(name);
+		msg.addString(getLocalizedBlessingName(bless, locale));
 		auto blessValue = enumToValue(bless);
 		if (player->hasBlessing(blessValue)) {
 			msg.addByte(static_cast<uint16_t>(player->blessings[blessValue - 1]));
@@ -4023,7 +4130,7 @@ void ProtocolGame::sendCyclopediaCharacterStoreSummary() {
 	for (const auto &hItem_it : houseItems) {
 		const ItemType &it = Item::items[hItem_it.first];
 		msg.add<uint16_t>(it.id); // Item ID
-		msg.addString(it.name);
+		msg.addString(translateItemName(it.id, it.name)); // I18N
 		msg.addByte(hItem_it.second);
 	}
 
@@ -4042,13 +4149,15 @@ void ProtocolGame::sendCyclopediaCharacterInspection() {
 	uint8_t inventoryItems = 0;
 	auto startInventory = msg.getBufferPosition();
 	msg.skipBytes(1);
+	const std::string locale(player->getLocale().empty() ? "en" : std::string(player->getLocale()));
+	auto &tr = i18n::g_translator();
 	for (std::underlying_type<Slots_t>::type slot = CONST_SLOT_FIRST; slot <= CONST_SLOT_LAST; slot++) {
 		std::shared_ptr<Item> inventoryItem = player->getInventoryItem(static_cast<Slots_t>(slot));
 		if (inventoryItem) {
 			++inventoryItems;
 
 			msg.addByte(slot);
-			msg.addString(inventoryItem->getName());
+			msg.addString(translateItemName(inventoryItem->getID(), inventoryItem->getName())); // I18N
 			AddItem(msg, inventoryItem);
 
 			uint8_t itemImbuements = 0;
@@ -4069,7 +4178,7 @@ void ProtocolGame::sendCyclopediaCharacterInspection() {
 			msg.addByte(itemImbuements);
 			msg.setBufferPosition(endImbuements);
 
-			auto descriptions = Item::getDescriptions(Item::items[inventoryItem->getID()], inventoryItem);
+			auto descriptions = Item::getDescriptions(Item::items[inventoryItem->getID()], inventoryItem, player->getLocale());
 			msg.addByte(descriptions.size());
 			for (const auto &description : descriptions) {
 				msg.addString(description.first);
@@ -4088,32 +4197,33 @@ void ProtocolGame::sendCyclopediaCharacterInspection() {
 	// Player title
 	if (player->title().getCurrentTitle() != 0) {
 		playerDescriptionSize++;
-		msg.addString("Character Title");
-		msg.addString(player->title().getCurrentTitleName());
+		msg.addString(tr.get("cpp.protocol.character_title_label", locale));
+		msg.addString(getLocalizedCurrentTitleName(player, locale));
 	}
 
 	// Level description
 	playerDescriptionSize++;
-	msg.addString("Level");
+	msg.addString(tr.get("cpp.protocol.level_label", locale));
 	msg.addString(std::to_string(player->getLevel()));
 
 	// Vocation description
 	playerDescriptionSize++;
-	msg.addString("Vocation");
-	msg.addString(player->getVocation()->getVocName());
+	msg.addString(tr.get("cpp.protocol.vocation_label", locale));
+	msg.addString(getLocalizedVocationName(player->getVocation()->getId(), player->getVocation()->getVocName(), locale));
 
 	// Loyalty title
-	if (!player->getLoyaltyTitle().empty()) {
+	const std::string loyaltyTitle = player->getLoyaltyTitleLocalized(locale);
+	if (!loyaltyTitle.empty()) {
 		playerDescriptionSize++;
-		msg.addString("Loyalty Title");
-		msg.addString(player->getLoyaltyTitle());
+		msg.addString(tr.get("cpp.protocol.loyalty_title_label", locale));
+		msg.addString(loyaltyTitle);
 	}
 
 	// Marriage description
 	if (const auto spouseId = player->getMarriageSpouse(); spouseId > 0) {
 		if (const auto &spouse = g_game().getPlayerByID(spouseId, true); spouse) {
 			playerDescriptionSize++;
-			msg.addString("Married to");
+			msg.addString(tr.get("cpp.protocol.married_to_label", locale));
 			msg.addString(spouse->getName());
 		}
 	}
@@ -4123,40 +4233,42 @@ void ProtocolGame::sendCyclopediaCharacterInspection() {
 		if (const auto &slot = player->getPreySlotById(static_cast<PreySlot_t>(slotId));
 		    slot && slot->isOccupied()) {
 			playerDescriptionSize++;
-			std::string activePrey = fmt::format("Active Prey {}", slotId + 1);
-			msg.addString(activePrey);
+			msg.addString(tr.format("cpp.protocol.active_prey_label", locale, {std::to_string(slotId + 1)}));
 
-			std::string desc;
+			std::string creatureName;
 			if (auto mtype = g_monsters().getMonsterTypeByRaceId(slot->selectedRaceId)) {
-				desc.append(mtype->name);
+				creatureName = mtype->name;
 			} else {
-				desc.append("Unknown creature");
+				creatureName = tr.get("cpp.protocol.unknown_creature", locale);
 			}
 
+			std::string bonusName;
 			if (slot->bonus == PreyBonus_Damage) {
-				desc.append(" (Improved Damage +");
+				bonusName = tr.get("cpp.protocol.prey_bonus_improved_damage", locale);
 			} else if (slot->bonus == PreyBonus_Defense) {
-				desc.append(" (Improved Defense +");
+				bonusName = tr.get("cpp.protocol.prey_bonus_improved_defense", locale);
 			} else if (slot->bonus == PreyBonus_Experience) {
-				desc.append(" (Improved Experience +");
+				bonusName = tr.get("cpp.protocol.prey_bonus_improved_experience", locale);
 			} else if (slot->bonus == PreyBonus_Loot) {
-				desc.append(" (Improved Loot +");
+				bonusName = tr.get("cpp.protocol.prey_bonus_improved_loot", locale);
+			} else {
+				bonusName = tr.get("cpp.protocol.prey_bonus_unknown", locale);
 			}
-			desc.append(fmt::format("{}%, remaining", slot->bonusPercentage));
+
 			uint8_t hours = slot->bonusTimeLeft / 3600;
 			uint8_t minutes = (slot->bonusTimeLeft - (hours * 3600)) / 60;
-			desc.append(fmt::format("{}:{}{}h", hours, (minutes < 10 ? "0" : ""), minutes));
-			msg.addString(desc);
+			const std::string timeLeft = fmt::format("{}:{:02}h", hours, minutes);
+			msg.addString(tr.format("cpp.protocol.active_prey_desc", locale, {creatureName, bonusName, std::to_string(slot->bonusPercentage), timeLeft}));
 		}
 	}
 
 	// Outfit description
 	playerDescriptionSize++;
-	msg.addString("Outfit");
+	msg.addString(tr.get("cpp.protocol.outfit_label", locale));
 	if (const auto outfit = Outfits::getInstance().getOutfitByLookType(player, player->getDefaultOutfit().lookType)) {
 		msg.addString(outfit->name);
 	} else {
-		msg.addString("unknown");
+		msg.addString(tr.get("cpp.protocol.unknown_label", locale));
 	}
 
 	msg.setBufferPosition(startInventory);
@@ -4173,6 +4285,35 @@ void ProtocolGame::sendCyclopediaCharacterBadges() {
 		return;
 	}
 
+	const std::string locale(player->getLocale().empty() ? "en" : std::string(player->getLocale()));
+	auto &tr = i18n::g_translator();
+	auto badgeKeyById = [](uint32_t badgeId) -> const char* {
+		switch (badgeId) {
+			case 1: return "cpp.badge.name_1";
+			case 2: return "cpp.badge.name_2";
+			case 3: return "cpp.badge.name_3";
+			case 4: return "cpp.badge.name_4";
+			case 5: return "cpp.badge.name_5";
+			case 6: return "cpp.badge.name_6";
+			case 7: return "cpp.badge.name_7";
+			case 8: return "cpp.badge.name_8";
+			case 9: return "cpp.badge.name_9";
+			case 10: return "cpp.badge.name_10";
+			case 11: return "cpp.badge.name_11";
+			case 12: return "cpp.badge.name_12";
+			case 13: return "cpp.badge.name_13";
+			case 14: return "cpp.badge.name_14";
+			case 15: return "cpp.badge.name_15";
+			case 16: return "cpp.badge.name_16";
+			case 17: return "cpp.badge.name_17";
+			case 18: return "cpp.badge.name_18";
+			case 19: return "cpp.badge.name_19";
+			case 20: return "cpp.badge.name_20";
+			case 21: return "cpp.badge.name_21";
+			default: return nullptr;
+		}
+	};
+
 	NetworkMessage msg;
 	msg.addByte(0xDA);
 	msg.addByte(CYCLOPEDIA_CHARACTERINFO_BADGES);
@@ -4183,7 +4324,7 @@ void ProtocolGame::sendCyclopediaCharacterBadges() {
 	msg.addByte(loggedPlayer ? 0x01 : 0x00); // IsOnline
 	msg.addByte(player->isPremium() ? 0x01 : 0x00); // IsPremium (GOD has always 'Premium')
 	// Character loyalty title
-	msg.addString(player->getLoyaltyTitle());
+	msg.addString(player->getLoyaltyTitleLocalized(locale));
 
 	uint8_t badgesSize = 0;
 	auto badgesSizePosition = msg.getBufferPosition();
@@ -4191,7 +4332,11 @@ void ProtocolGame::sendCyclopediaCharacterBadges() {
 	for (const auto &badge : g_game().getBadges()) {
 		if (player->badge().hasBadge(badge.m_id)) {
 			msg.add<uint32_t>(badge.m_id);
-			msg.addString(badge.m_name);
+			if (const char* badgeKey = badgeKeyById(badge.m_id); badgeKey != nullptr) {
+				msg.addString(tr.get(badgeKey, locale));
+			} else {
+				msg.addString(badge.m_name);
+			}
 			badgesSize++;
 		}
 	}
@@ -4207,6 +4352,7 @@ void ProtocolGame::sendCyclopediaCharacterTitles() {
 		return;
 	}
 
+	const std::string locale(player->getLocale().empty() ? "en" : std::string(player->getLocale()));
 	auto titles = g_game().getTitles();
 
 	NetworkMessage msg;
@@ -4217,9 +4363,11 @@ void ProtocolGame::sendCyclopediaCharacterTitles() {
 	msg.addByte(static_cast<uint8_t>(titles.size()));
 	for (const auto &title : titles) {
 		msg.addByte(title.m_id);
-		auto titleName = player->title().getNameBySex(player->getSex(), title.m_maleName, title.m_femaleName);
+		const auto titleName = getLocalizedTitleName(title, player->getSex(), locale);
+		const auto titleDescription = getLocalizedTitleDescription(title, locale);
+
 		msg.addString(titleName);
-		msg.addString(title.m_description);
+		msg.addString(titleDescription);
 		msg.addByte(title.m_permanent ? 0x01 : 0x00);
 		auto isUnlocked = player->title().isTitleUnlocked(title.m_id);
 		msg.addByte(isUnlocked ? 0x01 : 0x00);
@@ -4705,7 +4853,7 @@ void ProtocolGame::sendPremiumTrigger() {
 void ProtocolGame::sendTextMessage(const TextMessage &message) {
 	if (message.type == MESSAGE_NONE) {
 		g_logger().error("[ProtocolGame::sendTextMessage] - Message type is wrong, missing or invalid for player with name {}, on position {}", player->getName(), player->getPosition().toString());
-		player->sendTextMessage(MESSAGE_ADMINISTRATOR, "There was a problem requesting your message, please contact the administrator");
+		player->sendLocalizedTextMessage(MESSAGE_ADMINISTRATOR, "server.protocolgame.msg_5");
 		return;
 	}
 
@@ -5004,13 +5152,15 @@ void ProtocolGame::sendContainer(uint8_t cid, const std::shared_ptr<Container> &
 	msg.addByte(0x6E);
 
 	msg.addByte(cid);
+	const std::string locale(player->getLocale().empty() ? "en" : std::string(player->getLocale()));
+	auto &tr = i18n::g_translator();
 
 	if (container->getID() == ITEM_BROWSEFIELD) {
 		AddItem(msg, ITEM_BAG, 1, container->getTier());
-		msg.addString("Browse Field");
+		msg.addString(tr.get("cpp.protocol.browse_field", locale));
 	} else {
 		AddItem(msg, container);
-		msg.addString(container->getName());
+		msg.addString(translateItemName(container->getID(), container->getName())); // I18N
 	}
 
 	const auto itemsStoreInboxToSend = container->getStoreInboxFilteredItems();
@@ -5166,7 +5316,7 @@ void ProtocolGame::sendLootStats(const std::shared_ptr<Item> &item, uint8_t coun
 	NetworkMessage msg;
 	msg.addByte(0xCF);
 	AddItem(msg, lootedItem);
-	msg.addString(lootedItem->getName());
+	msg.addString(translateItemName(lootedItem->getID(), lootedItem->getName())); // I18N
 	item->setIsLootTrackeable(false);
 	writeToOutputBuffer(msg);
 
@@ -6120,7 +6270,8 @@ void ProtocolGame::sendForgeHistory(uint8_t page) {
 }
 
 void ProtocolGame::sendForgeError(const ReturnValue returnValue) {
-	sendMessageDialog(getReturnMessage(returnValue));
+	const std::string loc = (player && !player->getLocale().empty()) ? std::string(player->getLocale()) : "en";
+	sendMessageDialog(i18n::g_translator().get(getReturnMessageI18nKey(returnValue), loc));
 	closeForgeWindow();
 }
 
@@ -6135,6 +6286,9 @@ void ProtocolGame::sendMarketDetail(uint16_t itemId, uint8_t tier) {
 	msg.addByte(0xF8);
 	msg.add<uint16_t>(itemId);
 	const ItemType &it = Item::items[itemId];
+
+	const std::string locStr(player->getLocale().empty() ? "en" : std::string(player->getLocale()));
+	auto &tr = i18n::g_translator();
 
 	if (!oldProtocol && it.upgradeClassification > 0) {
 		msg.addByte(tier);
@@ -6151,7 +6305,7 @@ void ProtocolGame::sendMarketDetail(uint16_t itemId, uint8_t tier) {
 		bool separator = false;
 
 		if (it.attack != 0) {
-			ss << "attack +" << it.attack;
+			ss << tr.format("cpp.inspect.attack_plus", locStr, {std::to_string(it.attack)});
 			separator = true;
 		}
 
@@ -6159,7 +6313,7 @@ void ProtocolGame::sendMarketDetail(uint16_t itemId, uint8_t tier) {
 			if (separator) {
 				ss << ", ";
 			}
-			ss << "chance to hit +" << static_cast<int16_t>(it.hitChance) << "%";
+			ss << tr.format("cpp.inspect.chance_to_hit", locStr, {std::to_string(static_cast<int16_t>(it.hitChance))});
 			separator = true;
 		}
 
@@ -6167,17 +6321,17 @@ void ProtocolGame::sendMarketDetail(uint16_t itemId, uint8_t tier) {
 			if (separator) {
 				ss << ", ";
 			}
-			ss << static_cast<uint16_t>(it.shootRange) << " fields";
+			ss << tr.format("cpp.inspect.n_fields", locStr, {std::to_string(static_cast<uint16_t>(it.shootRange))});
 		}
 		msg.addString(ss.str());
 	} else {
 		std::string attackDescription;
 		if (it.abilities && it.abilities->elementType != COMBAT_NONE && it.abilities->elementDamage != 0) {
-			attackDescription = fmt::format("{} {}", it.abilities->elementDamage, getCombatName(it.abilities->elementType));
+			attackDescription = fmt::format("{} {}", it.abilities->elementDamage, getCombatName(it.abilities->elementType, locStr));
 		}
 
 		if (it.attack != 0 && !attackDescription.empty()) {
-			attackDescription = fmt::format("{} physical + {}", it.attack, attackDescription);
+			attackDescription = tr.format("cpp.inspect.physical_plus", locStr, {std::to_string(it.attack), attackDescription});
 		} else if (it.attack != 0 && attackDescription.empty()) {
 			attackDescription = std::to_string(it.attack);
 		}
@@ -6204,11 +6358,14 @@ void ProtocolGame::sendMarketDetail(uint16_t itemId, uint8_t tier) {
 	}
 
 	if (!it.description.empty()) {
-		const std::string &descr = it.description;
+		std::string descr = translateItemDescription(it.id, it.description);
 		if (descr.back() == '.') {
-			msg.addString(std::string(descr, 0, descr.length() - 1));
-		} else {
+			descr.pop_back();
+		}
+		if (!descr.empty()) {
 			msg.addString(descr);
+		} else {
+			msg.add<uint16_t>(0x00);
 		}
 	} else {
 		msg.add<uint16_t>(0x00);
@@ -6216,7 +6373,7 @@ void ProtocolGame::sendMarketDetail(uint16_t itemId, uint8_t tier) {
 
 	if (it.decayTime != 0) {
 		std::ostringstream ss;
-		ss << it.decayTime << " seconds";
+		ss << tr.format("cpp.inspect.n_seconds", locStr, {std::to_string(it.decayTime)});
 		msg.addString(ss.str());
 	} else {
 		msg.add<uint16_t>(0x00);
@@ -6237,7 +6394,7 @@ void ProtocolGame::sendMarketDetail(uint16_t itemId, uint8_t tier) {
 				separator = true;
 			}
 
-			ss << fmt::format("{} {:+}%", getCombatName(indexToCombatType(i)), it.abilities->absorbPercent[i]);
+			ss << fmt::format("{} {:+}%", getCombatName(indexToCombatType(i), locStr), it.abilities->absorbPercent[i]);
 		}
 
 		msg.addString(ss.str());
@@ -6275,7 +6432,7 @@ void ProtocolGame::sendMarketDetail(uint16_t itemId, uint8_t tier) {
 				separator = true;
 			}
 
-			ss << fmt::format("{} {:+}", getSkillName(i), it.abilities->skills[i]);
+			ss << fmt::format("{} {:+}", getSkillName(i, locStr), it.abilities->skills[i]);
 		}
 
 		for (uint8_t i = SKILL_CRITICAL_HIT_CHANCE; i <= SKILL_LAST; i++) {
@@ -6294,7 +6451,7 @@ void ProtocolGame::sendMarketDetail(uint16_t itemId, uint8_t tier) {
 				separator = true;
 			}
 
-			ss << fmt::format("{} {:+}%", getSkillName(i), skills / 100.0);
+			ss << fmt::format("{} {:+}%", getSkillName(i, locStr), skills / 100.0);
 		}
 
 		if (it.abilities->stats[STAT_MAGICPOINTS] != 0) {
@@ -6304,7 +6461,7 @@ void ProtocolGame::sendMarketDetail(uint16_t itemId, uint8_t tier) {
 				separator = true;
 			}
 
-			ss << fmt::format(" magic level {:+}", it.abilities->stats[STAT_MAGICPOINTS]);
+			ss << fmt::format(" {} {:+}", tr.get("cpp.skill.magic_level", locStr), it.abilities->stats[STAT_MAGICPOINTS]);
 		}
 
 		// Version 12.72 (Specialized magic level modifier)
@@ -6315,8 +6472,8 @@ void ProtocolGame::sendMarketDetail(uint16_t itemId, uint8_t tier) {
 				} else {
 					separator = true;
 				}
-				std::string combatName = getCombatName(indexToCombatType(i));
-				ss << std::showpos << combatName << std::noshowpos << "magic level +" << it.abilities->specializedMagicLevel[i];
+				std::string combatName = getCombatName(indexToCombatType(i), locStr);
+				ss << std::showpos << combatName << std::noshowpos << tr.get("cpp.skill.magic_level", locStr) << " +" << it.abilities->specializedMagicLevel[i];
 			}
 		}
 
@@ -6325,7 +6482,7 @@ void ProtocolGame::sendMarketDetail(uint16_t itemId, uint8_t tier) {
 				ss << ", ";
 			}
 
-			ss << fmt::format("speed {:+}", (it.abilities->speed >> 1));
+			ss << tr.format("cpp.inspect.speed_value", locStr, {fmt::format("{:+}", (it.abilities->speed >> 1))});
 		}
 
 		msg.addString(ss.str());
@@ -6339,13 +6496,13 @@ void ProtocolGame::sendMarketDetail(uint16_t itemId, uint8_t tier) {
 		msg.add<uint16_t>(0x00);
 	}
 
-	std::string weaponName = getWeaponName(it.weaponType);
+	std::string weaponName = getWeaponName(it.weaponType, locStr);
 
 	if (it.slotPosition & SLOTP_TWO_HAND) {
 		if (!weaponName.empty()) {
-			weaponName += ", two-handed";
+			weaponName += ", " + tr.get("cpp.inspect.two_handed", locStr);
 		} else {
-			weaponName = "two-handed";
+			weaponName = tr.get("cpp.inspect.two_handed", locStr);
 		}
 	}
 
@@ -6362,14 +6519,14 @@ void ProtocolGame::sendMarketDetail(uint16_t itemId, uint8_t tier) {
 			weightString.insert(weightString.end() - 2, '.');
 			ss << weightString;
 		}
-		ss << " oz";
+		ss << tr.get("cpp.inspect.oz", locStr);
 		msg.addString(ss.str());
 	} else {
 		msg.add<uint16_t>(0x00);
 	}
 
 	if (!oldProtocol) {
-		std::string augmentsDescription = it.parseAugmentDescription(true);
+		std::string augmentsDescription = it.parseAugmentDescription(true, player->getLocale());
 		if (!augmentsDescription.empty()) {
 			msg.addString(augmentsDescription);
 		} else {
@@ -6389,7 +6546,7 @@ void ProtocolGame::sendMarketDetail(uint16_t itemId, uint8_t tier) {
 			std::ostringstream string;
 			if (it.abilities->magicShieldCapacityFlat > 0) {
 				string.clear();
-				string << std::showpos << it.abilities->magicShieldCapacityFlat << std::noshowpos << " and " << it.abilities->magicShieldCapacityPercent << "%";
+				string << std::showpos << it.abilities->magicShieldCapacityFlat << std::noshowpos << tr.get("cpp.inspect.and_connector", locStr) << it.abilities->magicShieldCapacityPercent << "%";
 				msg.addString(string.str());
 			} else {
 				msg.add<uint16_t>(0x00);
@@ -6413,7 +6570,7 @@ void ProtocolGame::sendMarketDetail(uint16_t itemId, uint8_t tier) {
 
 			if (it.abilities->perfectShotDamage > 0) {
 				string.clear();
-				string << std::showpos << it.abilities->perfectShotDamage << std::noshowpos << " at range " << unsigned(it.abilities->perfectShotRange);
+				string << std::showpos << it.abilities->perfectShotDamage << std::noshowpos << tr.get("cpp.inspect.at_range", locStr) << unsigned(it.abilities->perfectShotRange);
 				msg.addString(string.str());
 			} else {
 				msg.add<uint16_t>(0x00);
@@ -6438,19 +6595,19 @@ void ProtocolGame::sendMarketDetail(uint16_t itemId, uint8_t tier) {
 			double chance;
 			if (it.isWeapon()) {
 				chance = (0.05 * tier * tier) + (0.4 * tier) + 0.05;
-				ss << fmt::format("{} ({:.2f}% Onslaught)", static_cast<uint16_t>(tier), chance);
+				ss << fmt::format("{} ({})", static_cast<uint16_t>(tier), tr.format("cpp.look.tier_onslaught", locStr, {fmt::format("{:.2f}", chance)}));
 			} else if (it.isHelmet()) {
 				chance = (0.05 * tier * tier) + (1.9 * tier) + 0.05;
-				ss << fmt::format("{} ({:.2f}% Momentum)", static_cast<uint16_t>(tier), chance);
+				ss << fmt::format("{} ({})", static_cast<uint16_t>(tier), tr.format("cpp.look.tier_momentum", locStr, {fmt::format("{:.2f}", chance)}));
 			} else if (it.isArmor()) {
 				chance = (0.0307576 * tier * tier) + (0.440697 * tier) + 0.026;
-				ss << fmt::format("{} ({:.2f}% Ruse)", static_cast<uint16_t>(tier), chance);
+				ss << fmt::format("{} ({})", static_cast<uint16_t>(tier), tr.format("cpp.look.tier_ruse", locStr, {fmt::format("{:.2f}", chance)}));
 			} else if (it.isLegs()) {
 				chance = (0.0127 * tier * tier) + (0.1070 * tier) + 0.0073;
-				ss << fmt::format("{} ({:.2f}% Transcendence)", static_cast<uint16_t>(tier), chance);
+				ss << fmt::format("{} ({})", static_cast<uint16_t>(tier), tr.format("cpp.look.tier_transcendence", locStr, {fmt::format("{:.2f}", chance)}));
 			} else if (it.isBoots()) {
 				chance = (0.4 * tier * tier) + (1.7 * tier) + 0.4;
-				ss << fmt::format("{} ({:.2f}% Amplification)", static_cast<uint16_t>(tier), chance);
+				ss << fmt::format("{} ({})", static_cast<uint16_t>(tier), tr.format("cpp.look.tier_amplification", locStr, {fmt::format("{:.2f}", chance)}));
 			}
 			msg.addString(ss.str());
 		} else if (it.upgradeClassification > 0 && tier == 0) {
@@ -6590,7 +6747,7 @@ void ProtocolGame::sendCreatureSay(const std::shared_ptr<Creature> &creature, Sp
 	static uint32_t statementId = 0;
 	msg.add<uint32_t>(++statementId);
 
-	msg.addString(creature->getName());
+	msg.addString(translateCreatureName(creature)); // I18N
 
 	if (!oldProtocol) {
 		msg.addByte(0x00); // Show (Traded)
@@ -6639,7 +6796,7 @@ void ProtocolGame::sendCreatureLocalizedSay(const std::shared_ptr<Creature> &cre
 	static uint32_t statementId = 0;
 	msg.add<uint32_t>(++statementId);
 
-	msg.addString(creature->getName());
+	msg.addString(translateCreatureName(creature)); // I18N
 
 	if (!oldProtocol) {
 		msg.addByte(0x00); // Show (Traded)
@@ -6695,7 +6852,7 @@ void ProtocolGame::sendToChannel(const std::shared_ptr<Creature> &creature, Spea
 		}
 		type = TALKTYPE_CHANNEL_R1;
 	} else {
-		msg.addString(creature->getName());
+		msg.addString(translateCreatureName(creature)); // I18N
 		if (!oldProtocol && statementId != 0) {
 			msg.addByte(0x00); // Show (Traded)
 		}
@@ -6819,6 +6976,9 @@ void ProtocolGame::sendRestingStatus(uint8_t protection) {
 		return;
 	}
 
+	const std::string locale(player->getLocale().empty() ? "en" : std::string(player->getLocale()));
+	auto &tr = i18n::g_translator();
+
 	NetworkMessage msg;
 	msg.addByte(0xA9);
 	msg.addByte(protection); // 1 / 0
@@ -6831,30 +6991,37 @@ void ProtocolGame::sendRestingStatus(uint8_t protection) {
 
 	msg.addByte(dailyStreak < 2 ? 0 : 1);
 	if (dailyStreak < 2) {
-		msg.addString("Resting Area (no active bonus)");
+		msg.addString(tr.get("cpp.protocol.resting_no_bonus", locale));
 	} else {
-		std::ostringstream ss;
-		ss << "Active Resting Area Bonuses: ";
+		std::vector<std::string> activeBonuses;
 		if (dailyStreak < DAILY_REWARD_DOUBLE_HP_REGENERATION) {
-			ss << "\nHit Points Regeneration";
+			activeBonuses.emplace_back(tr.get("cpp.protocol.resting_hp_regen", locale));
 		} else {
-			ss << "\nDouble Hit Points Regeneration";
+			activeBonuses.emplace_back(tr.get("cpp.protocol.resting_hp_regen_double", locale));
 		}
 		if (dailyStreak >= DAILY_REWARD_MP_REGENERATION) {
 			if (dailyStreak < DAILY_REWARD_DOUBLE_MP_REGENERATION) {
-				ss << ",\nMana Points Regeneration";
+				activeBonuses.emplace_back(tr.get("cpp.protocol.resting_mana_regen", locale));
 			} else {
-				ss << ",\nDouble Mana Points Regeneration";
+				activeBonuses.emplace_back(tr.get("cpp.protocol.resting_mana_regen_double", locale));
 			}
 		}
 		if (dailyStreak >= DAILY_REWARD_STAMINA_REGENERATION) {
-			ss << ",\nStamina Points Regeneration";
+			activeBonuses.emplace_back(tr.get("cpp.protocol.resting_stamina_regen", locale));
 		}
 		if (dailyStreak >= DAILY_REWARD_SOUL_REGENERATION) {
-			ss << ",\nSoul Points Regeneration";
+			activeBonuses.emplace_back(tr.get("cpp.protocol.resting_soul_regen", locale));
 		}
-		ss << ".";
-		msg.addString(ss.str());
+
+		std::ostringstream bonusList;
+		for (size_t i = 0; i < activeBonuses.size(); ++i) {
+			if (i > 0) {
+				bonusList << ",\n";
+			}
+			bonusList << activeBonuses[i];
+		}
+
+		msg.addString(tr.format("cpp.protocol.resting_active_bonuses", locale, {bonusList.str()}));
 	}
 	writeToOutputBuffer(msg);
 }
@@ -7475,7 +7642,8 @@ void ProtocolGame::sendTextWindow(uint32_t windowTextId, const std::shared_ptr<I
 		msg.add<uint16_t>(maxlen);
 		msg.addString(item->getAttribute<std::string>(ItemAttribute_t::TEXT));
 	} else {
-		const std::string &text = item->getAttribute<std::string>(ItemAttribute_t::TEXT);
+		const std::string &originalText = item->getAttribute<std::string>(ItemAttribute_t::TEXT);
+		const std::string text = translateBookText(originalText); // I18N: translate book/letter/scroll text
 		msg.add<uint16_t>(text.size());
 		msg.addString(text);
 	}
@@ -7506,8 +7674,9 @@ void ProtocolGame::sendTextWindow(uint32_t windowTextId, uint32_t itemId, const 
 	msg.addByte(0x96);
 	msg.add<uint32_t>(windowTextId);
 	AddItem(msg, itemId, 1, 0);
-	msg.add<uint16_t>(text.size());
-	msg.addString(text);
+	const std::string translatedText = translateBookText(text); // I18N: translate book/letter/scroll text
+	msg.add<uint16_t>(translatedText.size());
+	msg.addString(translatedText);
 	msg.add<uint16_t>(0x00);
 
 	if (!oldProtocol) {
@@ -7534,6 +7703,8 @@ void ProtocolGame::sendOutfitWindow() {
 	Outfit_t currentOutfit = player->getDefaultOutfit();
 	auto isSupportOutfit = player->isWearingSupportOutfit();
 	bool mounted = false;
+	const std::string locale(player->getLocale().empty() ? "en" : std::string(player->getLocale()));
+	auto &tr = i18n::g_translator();
 
 	if (!isSupportOutfit) {
 		const auto currentMount = g_game().mounts->getMountByID(player->getLastMount());
@@ -7628,19 +7799,19 @@ void ProtocolGame::sendOutfitWindow() {
 
 	if (player->isAccessPlayer() && g_configManager().getBoolean(ENABLE_SUPPORT_OUTFIT)) {
 		msg.add<uint16_t>(75);
-		msg.addString("Gamemaster");
+		msg.addString(tr.get("cpp.protocol.support_outfit_gamemaster", locale));
 		msg.addByte(0);
 		msg.addByte(0x00);
 		++outfitSize;
 
 		msg.add<uint16_t>(266);
-		msg.addString("Customer Support");
+		msg.addString(tr.get("cpp.protocol.support_outfit_customer_support", locale));
 		msg.addByte(0);
 		msg.addByte(0x00);
 		++outfitSize;
 
 		msg.add<uint16_t>(302);
-		msg.addString("Community Manager");
+		msg.addString(tr.get("cpp.protocol.support_outfit_community_manager", locale));
 		msg.addByte(0);
 		msg.addByte(0x00);
 		++outfitSize;
@@ -8168,7 +8339,7 @@ void ProtocolGame::AddCreature(NetworkMessage &msg, const std::shared_ptr<Creatu
 		if (!oldProtocol && creature->isHealthHidden()) {
 			msg.addString(std::string());
 		} else {
-			msg.addString(creature->getName());
+			msg.addString(translateCreatureName(creature)); // I18N
 		}
 	}
 
@@ -8511,7 +8682,7 @@ void ProtocolGame::addImbuementInfo(NetworkMessage &msg, uint16_t imbuementId) c
 	for (const auto &itm : items) {
 		const ItemType &it = Item::items[itm.first];
 		msg.add<uint16_t>(itm.first);
-		msg.addString(it.name);
+		msg.addString(translateItemName(it.id, it.name)); // I18N
 		msg.add<uint16_t>(itm.second);
 	}
 
@@ -8973,9 +9144,9 @@ void ProtocolGame::AddShopItem(NetworkMessage &msg, const ShopBlock &shopBlock) 
 
 	// If not send "itemName" variable from the npc shop, will registered the name that is in items.xml
 	if (shopBlock.itemName.empty()) {
-		msg.addString(it.name);
+		msg.addString(translateItemName(shopBlock.itemId, it.name)); // I18N
 	} else {
-		msg.addString(shopBlock.itemName);
+		msg.addString(translateItemName(shopBlock.itemId, shopBlock.itemName)); // I18N
 	}
 	msg.add<uint32_t>(it.weight);
 	msg.add<uint32_t>(shopBlock.itemBuyPrice == 4294967295 ? 0 : shopBlock.itemBuyPrice);
@@ -8983,11 +9154,227 @@ void ProtocolGame::AddShopItem(NetworkMessage &msg, const ShopBlock &shopBlock) 
 }
 
 void ProtocolGame::parseExtendedOpcode(NetworkMessage &msg) {
+	static constexpr uint8_t LOCALE_EXTENDED_OPCODE = 1;
 	uint8_t opcode = msg.getByte();
 	const std::string &buffer = msg.getString();
 
+	if (opcode == LOCALE_EXTENDED_OPCODE) {
+		player->setLocale(buffer);
+	}
+
 	// process additional opcodes via lua script event
 	g_game().parsePlayerExtendedOpcode(player->getID(), opcode, buffer);
+}
+
+// ──────────────────────────────────────────────────────────────
+// I18N: Server-side translation helpers
+// ──────────────────────────────────────────────────────────────
+
+namespace {
+	// Convert a display name to i18n slug: "Frost Troll" → "frost_troll"
+	std::string nameToSlug(const std::string &name) {
+		std::string slug;
+		slug.reserve(name.size());
+		for (char ch : name) {
+			if (ch == ' ' || ch == '\t') {
+				slug += '_';
+			} else if (ch == '\'' || ch == '`') {
+				// skip apostrophes: "Goshnar's" → "goshnars"
+				continue;
+			} else {
+				slug += static_cast<char>(std::tolower(static_cast<unsigned char>(ch)));
+			}
+		}
+		return slug;
+	}
+} // namespace
+
+std::string ProtocolGame::translateCreatureName(const std::shared_ptr<Creature> &creature) const {
+	if (!creature) {
+		return {};
+	}
+
+	const std::string &originalName = creature->getName();
+
+	if (!player) {
+		return originalName;
+	}
+
+	const std::string &locale = player->getLocale();
+	if (locale.empty() || locale == "en") {
+		return originalName;
+	}
+
+	// Determine translation key prefix based on creature type
+	std::string key;
+	if (creature->getMonster()) {
+		key = "monster." + nameToSlug(originalName) + ".name";
+	} else if (creature->getNpc()) {
+		// NPC names are proper names – keep untranslated (no npc.X.name keys exist)
+		return originalName;
+	} else {
+		// Player names are never translated
+		return originalName;
+	}
+
+	const std::string &translated = i18n::g_translator().get(key, locale);
+	// g_translator().get() returns the key itself when translation is missing
+	if (translated.empty() || translated == key) {
+		return originalName;
+	}
+	return translated;
+}
+
+std::string ProtocolGame::translateCreatureDescription(const std::shared_ptr<Creature> &creature) const {
+	if (!creature) {
+		return {};
+	}
+
+	std::string originalDesc;
+	if (const auto &monster = creature->getMonster()) {
+		originalDesc = monster->getNameDescription();
+	} else {
+		return creature->getDescription(0);
+	}
+
+	if (!player) {
+		return originalDesc;
+	}
+
+	const std::string &locale = player->getLocale();
+	if (locale.empty() || locale == "en") {
+		return originalDesc;
+	}
+
+	const std::string slug = nameToSlug(creature->getName());
+	const std::string key = "monster." + slug + ".desc";
+
+	const std::string &translated = i18n::g_translator().get(key, locale);
+	if (translated.empty() || translated == key) {
+		return originalDesc;
+	}
+	return translated;
+}
+
+std::string ProtocolGame::translateItemName(uint16_t itemId, const std::string &fallbackName) const {
+	if (!player) {
+		return fallbackName;
+	}
+
+	const std::string &locale = player->getLocale();
+	if (locale.empty() || locale == "en") {
+		return fallbackName;
+	}
+
+	const std::string key = "item." + std::to_string(itemId) + ".name";
+	const std::string &translated = i18n::g_translator().get(key, locale);
+	if (translated.empty() || translated == key) {
+		return fallbackName;
+	}
+	return translated;
+}
+
+std::string ProtocolGame::translateItemDescription(uint16_t itemId, const std::string &fallbackDesc) const {
+	if (fallbackDesc.empty()) {
+		return fallbackDesc;
+	}
+
+	std::string locale = "en";
+	if (player) {
+		locale = player->getLocale();
+	}
+	if (locale.empty()) {
+		locale = "en";
+	}
+
+	if (fallbackDesc.starts_with("#i18n:")) {
+		const std::string key = fallbackDesc.substr(6);
+		const std::string &translated = i18n::g_translator().get(key, locale);
+		if (!translated.empty() && translated != key) {
+			return translated;
+		}
+		const std::string &fallbackTranslated = i18n::g_translator().get(key, "en");
+		if (!fallbackTranslated.empty() && fallbackTranslated != key) {
+			return fallbackTranslated;
+		}
+		return fallbackDesc;
+	}
+
+	if (locale == "en") {
+		return fallbackDesc;
+	}
+
+	const std::string key = "item." + std::to_string(itemId) + ".desc";
+	const std::string &translated = i18n::g_translator().get(key, locale);
+	if (translated.empty() || translated == key) {
+		return fallbackDesc;
+	}
+	return translated;
+}
+
+std::string ProtocolGame::translateSpellName(const std::string &spellName) const {
+	if (!player || spellName.empty()) {
+		return spellName;
+	}
+
+	const std::string &locale = player->getLocale();
+	if (locale.empty() || locale == "en") {
+		return spellName;
+	}
+
+	const std::string key = "spell." + nameToSlug(spellName) + ".name";
+	const std::string &translated = i18n::g_translator().get(key, locale);
+	if (translated.empty() || translated == key) {
+		return spellName;
+	}
+	return translated;
+}
+
+std::string ProtocolGame::translateBookText(const std::string &text) const {
+	if (!player || text.empty()) {
+		return text;
+	}
+
+	const std::string &locale = player->getLocale();
+	if (locale.empty() || locale == "en") {
+		// For English locale, still need to resolve #i18n: markers to actual text
+		if (text.starts_with("#i18n:")) {
+			const std::string key = text.substr(6);
+			const std::string &resolved = i18n::g_translator().get(key, "en");
+			if (!resolved.empty() && resolved != key) {
+				return resolved;
+			}
+		}
+		return text;
+	}
+
+	// Check for #i18n: marker (Lua-set book texts with explicit key)
+	if (text.starts_with("#i18n:")) {
+		const std::string key = text.substr(6);
+		const std::string &translated = i18n::g_translator().get(key, locale);
+		if (!translated.empty() && translated != key) {
+			return translated;
+		}
+		// Fallback to English text
+		const std::string &enText = i18n::g_translator().get(key, "en");
+		if (!enText.empty() && enText != key) {
+			return enText;
+		}
+		return text;
+	}
+
+	// Reverse lookup for .otbm texts (books/letters/scrolls embedded in map)
+	// Build reverse map lazily on first call
+	i18n::g_translator().buildReverseTextMap("book.otbm.");
+	const std::string &key = i18n::g_translator().getKeyForText(text);
+	if (!key.empty()) {
+		const std::string &translated = i18n::g_translator().get(key, locale);
+		if (!translated.empty() && translated != key) {
+			return translated;
+		}
+	}
+
+	return text;
 }
 
 // OTCv8
@@ -9187,12 +9574,12 @@ void ProtocolGame::parseStashWithdraw(NetworkMessage &msg) {
 	}
 
 	if (!player->isAccessPlayer() && !player->isStashMenuAvailable()) {
-		player->sendCancelMessage("You can't use stash right now.");
+		player->sendLocalizedTextMessage(MESSAGE_FAILURE, "cpp.cancel.stash_wait");
 		return;
 	}
 
 	if (player->isUIExhausted(500)) {
-		player->sendCancelMessage("You need to wait to do this again.");
+		player->sendLocalizedTextMessage(MESSAGE_FAILURE, "cpp.cancel.wait_again");
 		return;
 	}
 
@@ -9700,6 +10087,8 @@ void ProtocolGame::parseBosstiarySlot(NetworkMessage &msg) {
 }
 
 void ProtocolGame::sendPodiumDetails(NetworkMessage &msg, const std::vector<uint16_t> &toSendMonsters, bool isBoss) const {
+	const std::string locale((player && !player->getLocale().empty()) ? std::string(player->getLocale()) : "en");
+	auto &tr = i18n::g_translator();
 	auto toSendMonstersSize = static_cast<uint16_t>(toSendMonsters.size());
 	msg.add<uint16_t>(toSendMonstersSize);
 	for (const auto &raceId : toSendMonsters) {
@@ -9717,13 +10106,13 @@ void ProtocolGame::sendPodiumDetails(NetworkMessage &msg, const std::vector<uint
 		auto monsterOutfit = mType->info.outfit;
 		msg.add<uint16_t>(raceId);
 		auto isLookType = monsterOutfit.lookType != 0;
-		// "Tantugly's Head" boss have to send other looktype to the podium
-		if (monsterOutfit.lookTypeEx == 35105) {
-			monsterOutfit.lookTypeEx = 39003;
-			msg.addString("Tentugly");
-		} else {
-			msg.addString(mType->name);
-		}
+			// "Tantugly's Head" boss have to send other looktype to the podium
+			if (monsterOutfit.lookTypeEx == 35105) {
+				monsterOutfit.lookTypeEx = 39003;
+				msg.addString(tr.get("cpp.protocol.tentugly_name", locale));
+			} else {
+				msg.addString(mType->name);
+			}
 		msg.add<uint16_t>(monsterOutfit.lookType);
 		if (isLookType) {
 			msg.addByte(monsterOutfit.lookHead);

@@ -56,7 +56,7 @@ local function greetCallback(npc, creature)
 	if player:getStorageValue(Storage.Quest.U12_60.APiratesTail.TentuglyKilled) == 1 then
 		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.captain_jack_rat.greet_msg_1")
 	else
-		npcHandler:setMessage(MESSAGE_GREET, "...")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.captain_jack_rat.greet_msg_1")
 	end
 	return true
 end

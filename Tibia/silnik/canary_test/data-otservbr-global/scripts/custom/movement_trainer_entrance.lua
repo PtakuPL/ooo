@@ -56,7 +56,7 @@ local function calculatingRoom(uid, position, column, line)
 			calculatingRoom(uid, position, column + 1, line)
 		end
 	else
-		player:sendCancelMessage("Couldn't find any position for you right now.")
+		player:sendLocalizedCancelMessage("quests.custom.couldnt_find_any_position_for_you")
 	end
 end
 

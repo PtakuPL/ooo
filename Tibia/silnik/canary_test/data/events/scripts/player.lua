@@ -85,7 +85,7 @@ local function antiPush(player, item, count, fromPosition, toPosition, fromCylin
 	end
 
 	if pushDelay[playerId].time > currentTime then
-		player:sendCancelMessage("You can't move that item so fast.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "event.player.msg_move_fast")
 		return false
 	end
 
@@ -209,30 +209,43 @@ function Player:onLookInBattleList(creature, distance)
 		return false
 	end
 
-	local description = "You see " .. creature:getDescription(distance)
+	local description = string.format(Translator.getTranslation(self, "scripts.on_look.see_prefix"), creature:getDescription(distance, self))
 	if creature:isMonster() then
 		local master = creature:getMaster()
 		local summons = { "sorcerer familiar", "knight familiar", "druid familiar", "paladin familiar" }
 		if master and table.contains(summons, creature:getName():lower()) then
 			local familiarSummonTime = master:kv():get("familiar-summon-time") or 0
-			description = description .. " (Master: " .. master:getName() .. "). \z
-				It will disappear in " .. Game.getTimeInWords(familiarSummonTime - os.time())
+			description = string.format(
+				Translator.getTranslation(self, "scripts.on_look.familiar_master"),
+				description,
+				master:getName(),
+				Game.getTimeInWords(familiarSummonTime - os.time())
+			)
 		end
 	end
+
 	if self:getGroup():getAccess() then
-		local str = "%s\nHealth: %d / %d"
+		local healthDescription, creatureId = Translator.getTranslation(self, "scripts.on_look.admin_player_health")
 		if creature:isPlayer() and creature:getMaxMana() > 0 then
-			str = string.format("%s, Mana: %d / %d", str, creature:getMana(), creature:getMaxMana())
+			creatureId = string.format(Translator.getTranslation(self, "scripts.on_look.admin_player_id"), creature:getGuid())
+			healthDescription = string.format(Translator.getTranslation(self, "scripts.on_look.admin_player_health_mana"), healthDescription, creature:getMana(), creature:getMaxMana())
+		elseif creature:isMonster() then
+			creatureId = string.format(Translator.getTranslation(self, "scripts.on_look.admin_monster_id"), creature:getId())
+		elseif creature:isNpc() then
+			creatureId = string.format(Translator.getTranslation(self, "scripts.on_look.admin_npc_id"), creature:getId())
 		end
-		description = string.format(str, description, creature:getHealth(), creature:getMaxHealth()) .. "."
+
+		description = string.format(healthDescription, description, creatureId, creature:getHealth(), creature:getMaxHealth())
 
 		local position = creature:getPosition()
-		description = string.format("%s\nPosition: %d, %d, %d", description, position.x, position.y, position.z)
+		description = string.format("%s\n%s", description, string.format(Translator.getTranslation(self, "scripts.on_look.position_coords"), position.x, position.y, position.z))
+		description = string.format(Translator.getTranslation(self, "scripts.on_look.admin_speed"), description, creature:getBaseSpeed(), creature:getSpeed())
 
 		if creature:isPlayer() then
-			description = string.format("%s\nIP: %s", description, Game.convertIpToString(creature:getIp()))
+			description = string.format(Translator.getTranslation(self, "scripts.on_look.admin_ip"), description, Game.convertIpToString(creature:getIp()))
 		end
 	end
+
 	self:sendTextMessage(MESSAGE_LOOK, description)
 end
 
@@ -313,7 +326,7 @@ function Player:onMoveItem(item, count, fromPosition, toPosition, fromCylinder, 
 		if moveItem then
 			local parent = item:getParent()
 			if parent:getSize() == parent:getCapacity() then
-				self:sendTextMessage(MESSAGE_FAILURE, Game.getReturnMessage(RETURNVALUE_CONTAINERNOTENOUGHROOM))
+				self:sendLocalizedTextMessage(MESSAGE_FAILURE, Game.getReturnMessageKey(RETURNVALUE_CONTAINERNOTENOUGHROOM))
 				return false
 			end
 			return moveItem:moveTo(parent)
@@ -498,7 +511,7 @@ function Player:onReportBug(message, position, category)
 	io.write("Comment: " .. message .. "\n")
 	io.close(file)
 
-	self:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Your report has been sent to " .. configManager.getString(configKeys.SERVER_NAME) .. ".")
+	self:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "event.player.msg_report_sent", {configManager.getString(configKeys.SERVER_NAME)})
 	return true
 end
 
@@ -663,8 +676,7 @@ function Player:onChangeZone(zone)
 							delay = configManager.getNumber(configKeys.STAMINA_GREEN_DELAY)
 						end
 
-						local message = string.format("In protection zone. Recharging %i stamina every %i minutes.", configManager.getNumber(configKeys.STAMINA_PZ_GAIN), delay)
-						self:sendTextMessage(MESSAGE_FAILURE, message)
+						self:sendLocalizedTextMessage(MESSAGE_FAILURE, "event.player.stamina_pz_recharge", {configManager.getNumber(configKeys.STAMINA_PZ_GAIN), delay})
 						staminaBonus.eventsPz[self:getId()] = addEvent(addStamina, delay * 60 * 1000, nil, self:getId(), delay * 60 * 1000)
 					end
 				end

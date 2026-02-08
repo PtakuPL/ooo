@@ -29,7 +29,7 @@ function chestRoomTile.onStepIn(creature, item, position, fromPosition)
 	if chestRoomExit then
 		if player:getVocation():getId() == chestRoomExit.vocation then
 			if player:getStorageValue(Storage.Quest.U10_55.Dawnport.VocationReward) == -1 then
-				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.dawnport_tiles.msg_1" .. player:getVocation():getName() .. " equipment.")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.dawnport_tiles.msg_11", { player:getVocation():getName() })
 			elseif player:getStorageValue(Storage.Quest.U10_55.Dawnport.VocationReward) == 1 then
 				player:teleportTo(chestRoomExit.destination, true)
 				player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)

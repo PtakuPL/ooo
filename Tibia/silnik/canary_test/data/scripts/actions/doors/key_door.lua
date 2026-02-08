@@ -29,7 +29,7 @@ local keyDoor = Action()
 function keyDoor.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	-- It is locked msg
 	if table.contains(keyLockedDoor, item.itemid) or (table.contains(keyUnlockedDoor, item.itemid) and table.contains({ 1001, 101 }, item.actionid)) then
-		player:sendLocalizedMessage(MESSAGE_LOOK, "scripts.key_door.msg_1")
+		player:sendLocalizedTextMessage(MESSAGE_LOOK, "scripts.key_door.msg_1")
 		return true
 	end
 
@@ -56,7 +56,7 @@ function keyDoor.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if target.actionid > 0 then
 		for index, value in ipairs(KeyDoorTable) do
 			if item.actionid ~= target.actionid and value.lockedDoor == target.itemid then
-				player:sendCancelMessage("The key does not match.")
+				player:sendLocalizedTextMessage(MESSAGE_FAILURE, "actions.key_door.msg_wrong_key")
 				return true
 			end
 			if item.actionid == target.actionid then

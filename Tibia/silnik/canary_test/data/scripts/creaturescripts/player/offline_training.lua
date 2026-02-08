@@ -12,7 +12,7 @@ function offlineTraining.onLogin(player)
 	player:setOfflineTrainingSkill(SKILL_NONE)
 
 	if offlineTime < 600 then
-		player:sendLocalizedMessage(MESSAGE_OFFLINE_TRAINING, "scripts.offline_training.msg_1")
+		player:sendLocalizedTextMessage(MESSAGE_OFFLINE_TRAINING, "scripts.offline_training.msg_1")
 		return true
 	end
 
@@ -28,28 +28,30 @@ function offlineTraining.onLogin(player)
 		return true
 	end
 
-	local text = "During your absence you trained for"
+	local text = Translator.getTranslation(player, "scripts.offline_training.prefix")
 	local hours = math.floor(trainingTime / 3600)
 	if hours > 1 then
-		text = string.format("%s %d hours", text, hours)
+		local hoursText = Translator.getTranslation(player, "scripts.offline_training.hours_plural")
+		text = text .. " " .. string.format(hoursText, hours)
 	elseif hours == 1 then
-		text = string.format("%s 1 hour", text)
+		text = text .. " " .. Translator.getTranslation(player, "scripts.offline_training.hours_singular")
 	end
 
 	local minutes = math.floor((trainingTime % 3600) / 60)
 	if minutes ~= 0 then
 		if hours ~= 0 then
-			text = string.format("%s and", text)
+			text = text .. " " .. Translator.getTranslation(player, "scripts.offline_training.and")
 		end
 
 		if minutes > 1 then
-			text = string.format("%s %d minutes", text, minutes)
+			local minText = Translator.getTranslation(player, "scripts.offline_training.minutes_plural")
+			text = text .. " " .. string.format(minText, minutes)
 		else
-			text = string.format("%s 1 minute", text)
+			text = text .. " " .. Translator.getTranslation(player, "scripts.offline_training.minutes_singular")
 		end
 	end
 
-	text = string.format("%s.", text)
+	text = text .. "."
 	player:sendTextMessage(MESSAGE_OFFLINE_TRAINING, text)
 
 	local vocation = player:getVocation()

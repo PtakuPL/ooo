@@ -169,8 +169,8 @@ end
 -- On check npc shop message (look item)
 npcType.onCheckItem = function(npc, player, clientId, subType) end
 
-npcHandler:setMessage(MESSAGE_GREET, "Hello, |PLAYERNAME| and welcome to my little forge.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Bye.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.esrik.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.esrik.farewell_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

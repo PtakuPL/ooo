@@ -103,7 +103,12 @@ keywordHandler:addKeyword({ "rope" }, StdModule.say, { npcHandler = npcHandler, 
 keywordHandler:addKeyword({ "weapon" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.cipfried.stdmod_24" })
 keywordHandler:addKeyword({ "food" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.cipfried.stdmod_25" })
 keywordHandler:addKeyword({ "premium" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.cipfried.stdmod_26" })
-keywordHandler:addKeyword({ "ship" }, StdModule.say, { npcHandler = npcHandler, text = { "Ships are a comfortable way of travelling to distant cities. At any harbour, you can board the ship and ask its captain where he sails to.", "Travelling by ship will cost you some gold, though, so be sure to have money with you." } })
+keywordHandler:addKeyword({ "ship" }, function(npc, player)
+	if not npcHandler:checkInteraction(npc, player) then
+		return false
+	end
+	return NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, player, { "npc.cipfried.kw_ship_1", "npc.cipfried.kw_ship_2" }, 10)
+end, {})
 keywordHandler:addKeyword({ "potion" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.cipfried.stdmod_27" })
 keywordHandler:addKeyword({ "academy" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.cipfried.stdmod_28" })
 keywordHandler:addKeyword({ "king" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.cipfried.stdmod_29" })

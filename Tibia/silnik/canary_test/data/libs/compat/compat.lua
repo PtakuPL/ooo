@@ -818,7 +818,7 @@ function doPlayerJoinParty(cid, leaderId)
 	end
 
 	if player:getParty() then
-		player:sendLocalizedMessage(MESSAGE_PARTY_MANAGEMENT, "misc.compat.msg_1")
+		player:sendLocalizedTextMessage(MESSAGE_PARTY_MANAGEMENT, "misc.compat.msg_1")
 		return true
 	end
 

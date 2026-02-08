@@ -163,13 +163,13 @@ function BossLever:onUse(player)
 	end
 
 	if self.disabled then
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "misc.boss_lever.msg_1")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "misc.boss_lever.disabled")
 		return true
 	end
 
 	local zone = self:getZone()
 	if zone:countPlayers(IgnoredByMonsters) > 0 then
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "misc.boss_lever.msg_2" .. monsterName .. ".")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "misc.boss_lever.already_fighting", {monsterName})
 		return true
 	end
 
@@ -183,9 +183,10 @@ function BossLever:onUse(player)
 
 		local isAccountNormal = creature:getAccountType() < ACCOUNT_TYPE_GAMEMASTER
 		if isAccountNormal and creature:getLevel() < self.requiredLevel then
-			local message = "All players need to be level " .. self.requiredLevel .. " or higher."
-			creature:sendTextMessage(MESSAGE_EVENT_ADVANCE, message)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, message)
+			creature:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "misc.boss_lever.level_requirement", {self.requiredLevel})
+			if creature ~= player then
+				player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "misc.boss_lever.level_requirement", {self.requiredLevel})
+			end
 			return false
 		end
 
@@ -198,14 +199,13 @@ function BossLever:onUse(player)
 					local currentTime = os.time()
 					if lastEncounter and currentTime < lastEncounter then
 						local timeLeft = lastEncounter - currentTime
-						local timeMessage = Game.getTimeInWords(timeLeft) .. " to face " .. self.name .. " again!"
-						local message = "You have to wait " .. timeMessage
+						local timeInWords = Game.getTimeInWords(timeLeft)
 
 						if currentPlayer ~= player then
-							player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "misc.boss_lever.msg_3" .. timeMessage)
+							player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "misc.boss_lever.team_cooldown", {timeInWords, self.name})
 						end
 
-						currentPlayer:sendTextMessage(MESSAGE_EVENT_ADVANCE, message)
+						currentPlayer:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "misc.boss_lever.cooldown_wait", {timeInWords, self.name})
 						currentPlayer:getPosition():sendMagicEffect(CONST_ME_POFF)
 					end
 				end
@@ -219,8 +219,7 @@ function BossLever:onUse(player)
 	lever:checkPositions()
 	if #lever:getPlayers() < self.minPlayers then
 		lever:executeOnPlayers(function(creature)
-			local message = string.format("You need %d qualified players for this challenge.", self.minPlayers)
-			creature:sendTextMessage(MESSAGE_EVENT_ADVANCE, message)
+			creature:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "misc.boss_lever.min_players", {self.minPlayers})
 			creature:getPosition():sendMagicEffect(CONST_ME_POFF)
 		end)
 		return false

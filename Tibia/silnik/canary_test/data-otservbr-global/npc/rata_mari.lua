@@ -96,7 +96,7 @@ end
 keywordHandler:addKeyword({ "rat" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.rata_mari.stdmod_1" })
 
 -- Greeting message
-keywordHandler:addGreetKeyword({ "piedpiper" }, { npcHandler = npcHandler, text = "Meep? I mean - hello! Sorry, |PLAYERNAME|... Being a {rat} has kind of grown on me.", i18nKey = "npc.rata_mari.greet_1" })
+keywordHandler:addGreetKeyword({ "piedpiper" }, { npcHandler = npcHandler, i18nKey = "npc.rata_mari.greet_1" })
 
 NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.rata_mari.greet_msg_1")
 NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.rata_mari.farewell_msg_1")

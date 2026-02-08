@@ -81,10 +81,7 @@ end
 -- Mission 4: Start
 local mission4 = keywordHandler:addKeyword({ "yes" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"That's great to hear! You see, I'm not the only potion brewer on Rookgaard. The hermit Hyacinth has his little alchemy lab outside the village. ...",
-		"He's old and can't make his way into the village anymore, but needs some of the herbs that grow only around here. Could you please deliver a bag of herbs to Hyacinth?",
-	},
+	i18nKey = "npc.lily.stdmod_77",
 }, function(player)
 	return player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission04) == 1
 end)
@@ -105,10 +102,7 @@ mission4:addChildKeyword(
 	StdModule.say,
 	{
 		npcHandler = npcHandler,
-		text = {
-			"Here you go, honey. I really appreciate your help. To find Hyacinth, leave the village to the north and go pretty much straight to the east. ...",
-			"His little alchemy lab is on top of a mountain. I'll mark the ramp leading up on your map, here. Don't stray from the path! There are dangerous monsters roaming the island.",
-		},
+		i18nKey = "npc.lily.stdmod_78",
 	},
 	nil,
 	function(player)
@@ -161,10 +155,7 @@ mission4AcceptAnotherHerbs:addChildKeyword(
 	StdModule.say,
 	{
 		npcHandler = npcHandler,
-		text = {
-			"Here you go, honey. I really appreciate your help. To find Hyacinth, leave the village to the north and go pretty much straight to the east. ...",
-			"His little alchemy lab is on top of a mountain. I'll mark the ramp leading up on your map, here. Don't stray from the path! There are dangerous monsters roaming the island.",
-		},
+		i18nKey = "npc.lily.stdmod_79",
 		reset = true,
 	},
 	nil,
@@ -206,7 +197,12 @@ keywordHandler:addKeyword({ "temple" }, StdModule.say, { npcHandler = npcHandler
 keywordHandler:addKeyword({ "tibia" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.lily.stdmod_16" })
 keywordHandler:addKeyword({ "crunor" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.lily.stdmod_17" })
 keywordHandler:addKeyword({ "food" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.lily.stdmod_18" })
-keywordHandler:addKeyword({ "premium" }, StdModule.say, { npcHandler = npcHandler, text = { "If you purchase premium time for your account, this opens up a lot of possibilities. ...", "For example, you will be able to travel off the mainland, ride a mount and benefit from offline training as well as having more outfits and magic spells to choose from." } })
+keywordHandler:addKeyword({ "premium" }, function(npc, player)
+	if not npcHandler:checkInteraction(npc, player) then
+		return false
+	end
+	return NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, player, { "npc.lily.kw_premium_1", "npc.lily.kw_premium_2" }, 10)
+end, {})
 keywordHandler:addKeyword({ "potion" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.lily.stdmod_19" })
 keywordHandler:addKeyword({ "health" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.lily.stdmod_20" })
 keywordHandler:addKeyword({ "king" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.lily.stdmod_21" })

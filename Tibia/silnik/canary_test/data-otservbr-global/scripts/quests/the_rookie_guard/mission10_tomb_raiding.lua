@@ -4,33 +4,33 @@ local missionTiles = {
 	[50346] = {
 		{
 			sarcophagus = -1,
-			message = "This is not the way to the crypt. Go south-west to reach the graveyard.",
+			message = "quests.rookie_guard.m10.not_crypt",
 			arrowPosition = { x = 32124, y = 32177, z = 7 },
 		},
 	},
 	[50347] = {
 		{
 			sarcophagus = -1,
-			message = "This is the crypt Vascalir was talking about. Explore it and search the coffins - one of them must hold a nice fleshy bone.",
+			message = "quests.rookie_guard.m10.crypt_explore",
 			arrowPosition = { x = 32131, y = 32201, z = 7 },
 		},
 	},
 	[50348] = {
 		{
 			sarcophagus = -1,
-			message = "This door seems to lead deeper into the crypt. Go downstairs and look for a special coffin. Beware of the walking dead!",
+			message = "quests.rookie_guard.m10.deeper_crypt",
 			arrowPosition = { x = 32147, y = 32185, z = 9 },
 		},
 	},
 	[50349] = {
 		{
 			sarcophagus = -1,
-			message = "This sarcophagus seems special. Sarcophagi are said to conserve meat longer than normal coffins - maybe you get lucky.",
+			message = "quests.rookie_guard.m10.sarcophagus",
 			arrowPosition = { x = 32145, y = 32204, z = 10 },
 		},
 		{
 			sarcophagus = 1,
-			message = "Now that you have a fleshy bone, it's time to find out what Vascalir wanted with it.",
+			message = "quests.rookie_guard.m10.fleshy_bone",
 			arrowPosition = { x = 32136, y = 32202, z = 10 },
 		},
 	},
@@ -58,7 +58,7 @@ function missionGuide.onStepIn(creature, item, position, fromPosition)
 		if missionState == 1 and sarcophagusState == missionTile[i].sarcophagus then
 			-- Check delayed notifications (message/arrow)
 			if not isTutorialNotificationDelayed(player) then
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, missionTile[i].message)
+				player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, missionTile[i].message)
 				if missionTile[i].arrowPosition then
 					Position(missionTile[i].arrowPosition):sendMagicEffect(CONST_ME_TUTORIALARROW)
 				end
@@ -88,11 +88,11 @@ function sarcophagus.onUse(player, item, frompos, item2, topos)
 		local sarcophagusState = player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Sarcophagus)
 		if sarcophagusState == -1 then
 			local reward = Game.createItem(12674, 1)
-			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission10_tomb_raiding.msg_1" .. reward:getArticle() .. " " .. reward:getName() .. ".")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission10_tomb_raiding.msg_1", { reward:getArticle(), reward:getName() })
 			player:setStorageValue(Storage.Quest.U9_1.TheRookieGuard.Sarcophagus, 1)
 			player:addItemEx(reward, true, CONST_SLOT_WHEREEVER)
 		else
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The " .. item:getName() .. " is empty.")
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.common.item_is_empty", { item:getName() })
 		end
 	end
 	return true
@@ -139,14 +139,14 @@ function unholyCryptChests.onUse(player, item, frompos, item2, topos)
 	if not hasOpenedChest then
 		local reward = Game.createItem(chest.item.id, chest.item.amount)
 		if reward:getCount() == 1 then
-			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission10_tomb_raiding.msg_2" .. reward:getArticle() .. " " .. reward:getName() .. ".")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission10_tomb_raiding.msg_2", { reward:getArticle(), reward:getName() })
 		elseif reward:getCount() > 1 then
-			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission10_tomb_raiding.msg_3" .. reward:getCount() .. " " .. reward:getPluralName() .. ".")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission10_tomb_raiding.msg_3", { reward:getCount(), reward:getPluralName() })
 		end
 		player:setStorageValue(Storage.Quest.U9_1.TheRookieGuard.UnholyCryptChests, chestsState + chest.id)
 		player:addItemEx(reward, true, CONST_SLOT_WHEREEVER)
 	else
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The " .. item:getName() .. " is empty.")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.common.item_is_empty", { item:getName() })
 	end
 	return true
 end

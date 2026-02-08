@@ -60,7 +60,7 @@ keywordHandler:addKeyword({ "graubart" }, StdModule.say, { npcHandler = npcHandl
 
 NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.bruno.greet_msg_1")
 NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.bruno.farewell_msg_1")
-npcHandler:setMessage(MESSAGE_SENDTRADE, "Buy all the fish you want. It's fresh and healthy, promised.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_SENDTRADE, "npc.bruno.sendtrade_msg_1")
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 
 -- npcType registering the npcConfig table

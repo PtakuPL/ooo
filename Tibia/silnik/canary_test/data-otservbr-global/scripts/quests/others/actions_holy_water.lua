@@ -12,10 +12,10 @@ local function revertItem(position, itemId, transformId)
 	end
 end
 
-local function nexusMessage(player, message)
+local function nexusMessage(player, messageKey, messageArgs)
 	local spectators = Game.getSpectators(shadowNexusPosition, false, true, 3, 3)
 	for i = 1, #spectators do
-		player:say(message, TALKTYPE_MONSTER_YELL, false, spectators[i], shadowNexusPosition)
+		player:sayLocalized(messageKey, TALKTYPE_MONSTER_YELL, false, spectators[i], shadowNexusPosition, messageArgs)
 	end
 end
 
@@ -112,7 +112,7 @@ function othersHolyWater.onUse(player, item, fromPosition, target, toPosition, i
 			target:remove()
 			newShadowNexus:decay()
 		end
-		nexusMessage(player, player:getName() .. " damaged the shadow nexus! You can't damage it while it's burning.")
+		nexusMessage(player, "quests.others.holy_water_damaged", { player:getName() })
 		toPosition:sendMagicEffect(CONST_ME_ENERGYHIT)
 
 		-- Transformação do Shadow Nexus
@@ -126,7 +126,7 @@ function othersHolyWater.onUse(player, item, fromPosition, target, toPosition, i
 			for i = 1, #effectPositions do
 				effectPositions[i]:sendMagicEffect(CONST_ME_HOLYAREA)
 			end
-			nexusMessage(player, player:getName() .. " destroyed the shadow nexus! In 10 seconds it will return to its original state.")
+			nexusMessage(player, "quests.others.holy_water_destroyed", { player:getName() })
 			item:remove(1)
 			player:setStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline, 22)
 			toPosition:sendMagicEffect(CONST_ME_HOLYAREA)

@@ -1,9 +1,9 @@
 local chance = {
-	{ 90, "You unearthed a spirit's anger!!!", "Enraged Soul" },
-	{ 80, "Your crude digging has angered some ancient ghost.", "Ghost" },
-	{ 70, "You unearthed some not-so-death creature.", "Demon Skeleton" },
-	{ 50, "You unearthed some not-so-death creature.", "Zombie" },
-	{ 1, "You've found nothing special." },
+	{ 90, "quests.spike_tasks.spirit_anger", "Enraged Soul" },
+	{ 80, "quests.spike_tasks.ancient_ghost", "Ghost" },
+	{ 70, "quests.spike_tasks.undead_creature", "Demon Skeleton" },
+	{ 50, "quests.spike_tasks.undead_creature", "Zombie" },
+	{ 1, "quests.spike_tasks.nothing_special" },
 }
 
 local spikeTasksShovel = Action()
@@ -21,7 +21,7 @@ function spikeTasksShovel.onUse(player, item, fromPosition, target, toPosition, 
 	local luck = math.random(100)
 	for i, result in ipairs(chance) do
 		if luck >= result[1] then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, result[2])
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, result[2])
 			if result[3] then
 				Game.createMonster(result[3], toPosition)
 			end

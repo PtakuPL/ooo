@@ -45,7 +45,7 @@ local function createCrystal(crystalId, player)
 	local item = Game.createItem(itemId, 1)
 	local ret = player:addItemEx(item)
 	if ret ~= RETURNVALUE_NOERROR then
-		player:sendCancelMessage(Game.getReturnMessage(ret))
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, Game.getReturnMessageKey(ret))
 		return false
 	end
 

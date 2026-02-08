@@ -234,5 +234,11 @@
   "client.viplist.text4": "[EN] add group",
   "client.walk.text1": "[EN] Ctrl+Right",
   "client.walk.text2": "[EN] walkTurnDelay",
-  "client.walk.text3": "[EN] walkTeleportDelay"
+  "client.walk.text3": "[EN] walkTeleportDelay",
+  "client.game_store.text1": "HomePanel",
+  "client.game_store.text2": "HTTP error:",
+  "client.blessing.text1": "Record of Blessings",
+  "client.blessing.text2": ".. entry.store ..",
+  "client.blessing.text3": "Your character is promoted and your account has Premium\nstatus. As a result, your XP loss is reduced by",
+  "client.blessing.text4": "Your character is promoted and your account has Premium\nstatus. As a result, your XP loss is reduced by"
 }

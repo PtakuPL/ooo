@@ -65,9 +65,9 @@ keywordHandler:addKeyword({ "need" }, StdModule.say, { npcHandler = npcHandler, 
 keywordHandler:addKeyword({ "offers" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.eliyas.stdmod_2" })
 keywordHandler:addKeyword({ "goblets" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.eliyas.stdmod_3" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Be greeted, |PLAYERNAME|. Which of my fine gems do you {need}?")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Daraman's blessings and good bye.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Daraman's blessings and good bye.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.eliyas.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.eliyas.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.eliyas.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

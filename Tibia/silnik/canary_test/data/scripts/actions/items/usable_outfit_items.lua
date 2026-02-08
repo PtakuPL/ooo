@@ -10,29 +10,29 @@ local outfitConfig = {
 	[16257] = { female = 513, male = 512, addon = 2, effect = CONST_ME_GIANTICE, achievement = "Crystal Clear" },
 
 	-- makeshift warrior
-	[27655] = { female = 1043, male = 1042, whiteText = "By using the plan you knock together a makeshift armour out of wooden planks, rusty nails and leather rags." },
-	[27657] = { female = 1043, male = 1042, addon = 1, achievement = "Cobbled and Patched", whiteText = "You use the wooden planks to knock up a makeshift shield and weapon." },
-	[27656] = { female = 1043, male = 1042, addon = 2, achievement = "Cobbled and Patched", whiteText = "You use the tinged pot as a makeshift helmet." },
+	[27655] = { female = 1043, male = 1042, whiteText = "scripts.usable_outfit_items.makeshift_warrior_plan" },
+	[27657] = { female = 1043, male = 1042, addon = 1, achievement = "Cobbled and Patched", whiteText = "scripts.usable_outfit_items.makeshift_warrior_shield" },
+	[27656] = { female = 1043, male = 1042, addon = 2, achievement = "Cobbled and Patched", whiteText = "scripts.usable_outfit_items.makeshift_warrior_helmet" },
 
 	-- hand of the inquisition
 	[31738] = { female = 1244, male = 1243, addon = 1, effect = CONST_ME_HOLYAREA, achievement = "Inquisition's Arm" },
 	[31737] = { female = 1244, male = 1243, addon = 2, effect = CONST_ME_HOLYAREA, achievement = "Inquisition's Arm" },
 
 	-- poltergeist
-	[32630] = { female = 1271, male = 1270, addon = 1, effect = CONST_ME_BLUE_GHOST, achievement = "Mainstreet Nightmare", orangeText = "The spooky hood is yours!" },
-	[32631] = { female = 1271, male = 1270, addon = 2, effect = CONST_ME_BLUE_GHOST, achievement = "Mainstreet Nightmare", orangeText = "You can use the ghost claw now!" },
+	[32630] = { female = 1271, male = 1270, addon = 1, effect = CONST_ME_BLUE_GHOST, achievement = "Mainstreet Nightmare", orangeText = "scripts.usable_outfit_items.poltergeist_hood" },
+	[32631] = { female = 1271, male = 1270, addon = 2, effect = CONST_ME_BLUE_GHOST, achievement = "Mainstreet Nightmare", orangeText = "scripts.usable_outfit_items.poltergeist_claw" },
 
 	-- revenant
-	[34075] = { female = 1323, male = 1322, addon = 1, effect = CONST_ME_HOLYAREA, achievement = "Unleash the Beast", orangeText = "Now the beast is unleashed!" },
-	[34076] = { female = 1323, male = 1322, addon = 2, effect = CONST_ME_HOLYAREA, achievement = "Unleash the Beast", orangeText = "Wild power flows though your body!" },
+	[34075] = { female = 1323, male = 1322, addon = 1, effect = CONST_ME_HOLYAREA, achievement = "Unleash the Beast", orangeText = "scripts.usable_outfit_items.revenant_beast" },
+	[34076] = { female = 1323, male = 1322, addon = 2, effect = CONST_ME_HOLYAREA, achievement = "Unleash the Beast", orangeText = "scripts.usable_outfit_items.revenant_power" },
 
 	-- rascoohan
-	[35595] = { female = 1372, male = 1371, addon = 1, achievement = "Honorary Rascoohan", orangeText = "You feel a bit more raccoonish." },
-	[35695] = { female = 1372, male = 1371, addon = 2, achievement = "Honorary Rascoohan", orangeText = "Hmmm, trash cans!!" },
+	[35595] = { female = 1372, male = 1371, addon = 1, achievement = "Honorary Rascoohan", orangeText = "scripts.usable_outfit_items.rascoohan_raccoon" },
+	[35695] = { female = 1372, male = 1371, addon = 2, achievement = "Honorary Rascoohan", orangeText = "scripts.usable_outfit_items.rascoohan_trash" },
 
 	-- fire-fighter
-	[39544] = { female = 1569, male = 1568, addon = 1, achievement = "Friendly Fire", orangeText = "You feel like fighting a fire!" },
-	[39545] = { female = 1569, male = 1568, addon = 2, achievement = "Friendly Fire", orangeText = "The flame engulfs you!" },
+	[39544] = { female = 1569, male = 1568, addon = 1, achievement = "Friendly Fire", orangeText = "scripts.usable_outfit_items.firefighter_fight" },
+	[39545] = { female = 1569, male = 1568, addon = 2, achievement = "Friendly Fire", orangeText = "scripts.usable_outfit_items.firefighter_flame" },
 }
 
 local usableOutfitItems = Action()
@@ -47,7 +47,7 @@ function usableOutfitItems.onUse(player, item, fromPosition, target, toPosition,
 	local looktype = player:getSex() == PLAYERSEX_FEMALE and outfitInfo.female or outfitInfo.male
 	if not player:hasOutfit(looktype) then
 		if outfitInfo.addon then
-			player:sendCancelMessage("You need the outfit for this part.")
+			player:sendLocalizedTextMessage(MESSAGE_FAILURE, "actions.outfit_items.msg_need_outfit")
 			return true
 		end
 
@@ -55,16 +55,16 @@ function usableOutfitItems.onUse(player, item, fromPosition, target, toPosition,
 		player:addOutfit(outfitInfo.male)
 		player:getPosition():sendMagicEffect(outfitInfo.effect or CONST_ME_GIFT_WRAPS)
 		if outfitInfo.orangeText then
-			player:say(outfitInfo.orangeText, TALKTYPE_MONSTER_SAY)
+			player:sayLocalized(outfitInfo.orangeText, TALKTYPE_MONSTER_SAY)
 		elseif outfitInfo.whiteText then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, outfitInfo.whiteText)
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, outfitInfo.whiteText)
 		end
 		item:remove(1)
 		return true
 	end
 
 	if player:hasOutfit(looktype, outfitInfo.addon) then
-		player:sendCancelMessage("You already own this outfit part.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "actions.outfit_items.msg_already_own")
 		return true
 	end
 
@@ -72,9 +72,9 @@ function usableOutfitItems.onUse(player, item, fromPosition, target, toPosition,
 	player:addOutfitAddon(outfitInfo.male, outfitInfo.addon)
 	player:getPosition():sendMagicEffect(outfitInfo.effect or CONST_ME_GIFT_WRAPS)
 	if outfitInfo.orangeText then
-		player:say(outfitInfo.orangeText, TALKTYPE_MONSTER_SAY)
+		player:sayLocalized(outfitInfo.orangeText, TALKTYPE_MONSTER_SAY)
 	elseif outfitInfo.whiteText then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, outfitInfo.whiteText)
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, outfitInfo.whiteText)
 	end
 
 	if player:hasOutfit(looktype, 3) then

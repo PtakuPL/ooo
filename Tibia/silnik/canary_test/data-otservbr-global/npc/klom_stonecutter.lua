@@ -61,6 +61,14 @@ end
 
 local count = {}
 
+local function greetCallback(npc, creature)
+	NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {
+		"npc.klom_stonecutter.greet_msg_1",
+		"npc.klom_stonecutter.greet_msg_2",
+	}, 1000)
+	return false
+end
+
 local function creatureSayCallback(npc, creature, type, message)
 	local player = Player(creature)
 	local playerId = player:getId()
@@ -174,7 +182,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			if count[playerId] > 1 then
 				plural = plural .. "s"
 			end
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You earned " .. count[playerId] .. " point" .. plural .. " on the gnomes mission.")
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quest.dangerous_depths.earned_points_gnomes", {count[playerId]})
 			player:removeItem(27653, count[playerId])
 			player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Points, player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Points) + count[playerId])
 		else
@@ -187,7 +195,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			if count[playerId] > 1 then
 				plural = plural .. "s"
 			end
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You earned " .. count[playerId] .. " point" .. plural .. " on the dwarves mission.")
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quest.dangerous_depths.earned_points_dwarves", {count[playerId]})
 			player:removeItem(27653, count[playerId])
 			player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.Points, player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.Points) + count[playerId])
 		else
@@ -200,7 +208,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			if count[playerId] > 1 then
 				plural = plural .. "s"
 			end
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You earned " .. count[playerId] .. " point" .. plural .. " on the scouts mission.")
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quest.dangerous_depths.earned_points_scouts", {count[playerId]})
 			player:removeItem(27653, count[playerId])
 			player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Scouts.Points, player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Scouts.Points) + count[playerId])
 		else
@@ -227,32 +235,18 @@ keywordHandler:addKeyword({ "help" }, StdModule.say, { npcHandler = npcHandler, 
 keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.klom_stonecutter.stdmod_2" })
 keywordHandler:addKeyword({ "defences" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"The attacks of the enemy forces are fierce but we hold our ground. ... ",
-		"I'd love to face one of their generals in combat but as their masters they cowardly hide far behind enemy lines and I have other duties to fulfil. ... ",
-		"I envy you for the chance to thrust into the heart of the enemy, locking weapons with their jaws... or whatever... and see the fear in their eyes when they recognise they were bested.",
-	},
+	i18nKey = "npc.klom_stonecutter.stdmod_7",
 })
 keywordHandler:addKeyword({ "counterattacks" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"I welcome a fine battle as any dwarf worth his beard should do. As long as it's a battle against something I can hit with my trusty axe. ...",
-		"But here the true {enemy} eludes us. We fight wave after wave of their lackeys and if the gnomes are right the true enemy is up to something far more sinister. ",
-	},
+	i18nKey = "npc.klom_stonecutter.stdmod_8",
 })
 keywordHandler:addKeyword({ "enemy" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"I have no idea what kind of creeps are behind all this. Even the gnomes don't and they have handled that stuff way more often. ...",
-		"But even if we knew nothing more about them, the fact alone that they employ the help of those mockeries of all things dwarfish, marks them as an enemy of the dwarves and it's our obligation to annihilate them.",
-	},
+	i18nKey = "npc.klom_stonecutter.stdmod_9",
 })
 keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.klom_stonecutter.stdmod_3" })
 
-npcHandler:setMessage(MESSAGE_GREET, {
-	"Greetings. A warning straight ahead: I don't like loiterin'. If you're not here to {help} us, you're here to waste my time. Which I consider loiterin'. Now, try and prove your {worth} to our alliance. ... ",
-	"I have sealed some of the areas far too dangerous for anyone to enter. If you can prove you're capable, you'll get an opportunity to help destroy the weird machines, pumping lava into the caves leading to the most dangerous enemies.",
-})
 NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.klom_stonecutter.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_SET_INTERACTION, onAddFocus)

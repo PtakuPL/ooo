@@ -50,7 +50,7 @@ npcType.onCloseChannel = function(npc, creature)
 	npcHandler:onCloseChannel(npc, creature)
 end
 
-keywordHandler:addGreetKeyword({ "hi" }, { npcHandler = npcHandler, text = "Hello and welcome in the gnomish {recruitment} office.", i18nKey = "npc.gnomerik.greet_1" }, function(player)
+keywordHandler:addGreetKeyword({ "hi" }, { npcHandler = npcHandler, i18nKey = "npc.gnomerik.greet_1" }, function(player)
 	if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLine) == 1 then
 		player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLine, 3)
 	end
@@ -194,7 +194,7 @@ local function creatureSayCallback(npc, creature, type, message)
 						NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomerik.say_20")
 						npcHandler:setTopic(playerId, npcHandler:getTopic(playerId) + 1)
 						if npcHandler:getTopic(playerId) >= 33 then
-							npcHandler:say("Stop it! The test is over, you can ask me for your {results}.")
+							NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomerik.say_stop")
 						end
 					end
 				end

@@ -66,11 +66,9 @@ local function greetCallback(npc, creature, message)
 	if player:getStorageValue(Storage.Quest.U8_7.JackFutureQuest.QuestLine) == 7 then
 		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.jack.greet_msg_1")
 	elseif player:getStorageValue(Storage.Quest.U8_7.JackFutureQuest.QuestLine) == 8 then
-		npcHandler:setMessage(MESSAGE_GREET, {
-			"What did you do to my SCULPTURE? You simply DESTROYED it? Why? You... you ruined everything... my house, my hobby, my life. My family even refuses to talk to me anymore. ...",
-			"Alright, alright you win. I am done for. You... you must be right, yes. Yes, I was working as an intern... in the academy in Edron... yes... Just... tell this Spectulus guy I want to see him. I have nothing left. I am ready.",
-		})
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.jack.greet_msg_4", "npc.jack.greet_msg_5" }, 1000)
 		player:setStorageValue(Storage.Quest.U8_7.JackFutureQuest.QuestLine, 9)
+		return false
 	elseif player:getStorageValue(Storage.Quest.U8_7.JackFutureQuest.QuestLine) == 10 then
 		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.jack.greet_msg_2")
 	else

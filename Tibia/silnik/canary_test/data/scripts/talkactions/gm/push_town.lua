@@ -9,14 +9,14 @@ function pushTown.onSay(player, words, param)
 	else
 		local targetPlayer = Player(param)
 		if not targetPlayer then
-			player:sendCancelMessage("A player with that name is not online.")
+			player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_player_name_not_online")
 			return true
 		end
-		player:sendLocalizedMessage(MESSAGE_STATUS, "scripts.push_town.msg_1" .. targetPlayer:getName() .. " to temple.")
+		player:sendLocalizedTextMessage(MESSAGE_STATUS, "scripts.push_town.msg_2", { targetPlayer:getName() })
 		targetPlayer:teleportTo(targetPlayer:getTown():getTemplePosition())
 		targetPlayer:sendLocalizedTextMessage(MESSAGE_STATUS, "scripts.talkactions.gm.push_town_1")
 		targetPlayer:getPosition():sendMagicEffect(CONST_ME_HOLYAREA)
-		local text = "Player " .. targetPlayer:getName() .. " has been teleported to temple by " .. player:getName() .. "."
+		local text = string.format(i18nTranslate("scripts.push_town.log_teleported", "en"), targetPlayer:getName(), player:getName())
 		logger.info("[pushTown.onSay] - {}", text)
 		Webhook.sendMessage("Player Teleported", text, WEBHOOK_COLOR_YELLOW, announcementChannels["serverAnnouncements"])
 	end

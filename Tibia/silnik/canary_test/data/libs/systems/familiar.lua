@@ -12,7 +12,7 @@ FAMILIAR_TIMER = {
 
 function SendMessageFunction(playerId, message)
 	if Player(playerId) then
-		Player(playerId):sendTextMessage(MESSAGE_LOOT, "Your summon will disappear in less than " .. message)
+		Player(playerId):sendLocalizedTextMessage(MESSAGE_LOOT, "lib.familiar.msg_disappear", {message})
 	end
 end
 

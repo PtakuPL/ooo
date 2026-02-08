@@ -7,19 +7,19 @@ function largeSeashell.onUse(player, item, fromPosition, target, toPosition, isH
 	end
 
 	local chance = math.random(100)
-	local message = "Nothing is inside."
+	local messageKey = "scripts.large_seashell.nothing_inside"
 
 	if chance <= 16 then
 		doTargetCombatHealth(0, player, COMBAT_PHYSICALDAMAGE, -200, -200, CONST_ME_NONE)
-		message = "Ouch! You squeezed your fingers."
+		messageKey = "scripts.large_seashell.squeezed_fingers"
 	elseif chance > 16 and chance <= 64 then
 		Game.createItem(math.random(281, 282), 1, player:getPosition())
-		message = "You found a beautiful pearl."
+		messageKey = "scripts.large_seashell.found_pearl"
 		player:addAchievementProgress("Shell Seeker", 100)
 	end
 
 	player:setExhaustion("delay-large-seashell", 20 * 60 * 60)
-	player:say(message, TALKTYPE_MONSTER_SAY, false, player, item:getPosition())
+	player:sayLocalized(messageKey, TALKTYPE_MONSTER_SAY, false, player, item:getPosition())
 	item:transform(198)
 	item:decay()
 	item:getPosition():sendMagicEffect(CONST_ME_BUBBLES)

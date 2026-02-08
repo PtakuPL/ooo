@@ -65,8 +65,8 @@ local function addBuyableKeyword(keywords, itemid, amount, price, text)
 end
 
 -- Greeting and Farewell
-keywordHandler:addGreetKeyword({ "charach" }, { npcHandler = npcHandler, text = "Ikem Charach maruk.", i18nKey = "npc.blind_orc.greet_1" })
-keywordHandler:addFarewellKeyword({ "futchi" }, { npcHandler = npcHandler, text = "Futchi!", i18nKey = "npc.blind_orc.farewell_1" })
+keywordHandler:addGreetKeyword({ "charach" }, { npcHandler = npcHandler, i18nKey = "npc.blind_orc.greet_1" })
+keywordHandler:addFarewellKeyword({ "futchi" }, { npcHandler = npcHandler, i18nKey = "npc.blind_orc.farewell_1" })
 
 keywordHandler:addKeyword({ "" }, StdModule.say, { npcHandler = npcHandler, onlyUnfocus = true, i18nKey = "npc.blind_orc.stdmod_4" })
 

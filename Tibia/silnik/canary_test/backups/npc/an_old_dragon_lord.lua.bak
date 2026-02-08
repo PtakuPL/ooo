@@ -21,7 +21,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "AHHHH THE PAIN OF AGESSS! THE PAIN!" },
+	{ i18nKey = "npc.an_old_dragon_lord.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()

@@ -3,7 +3,7 @@ local cobraFlask = Action()
 function cobraFlask.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if table.contains({ 31284, 31285, 31286, 31287 }, target:getId()) then
 		target:getPosition():sendMagicEffect(CONST_ME_GREENSMOKE)
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.cobra_flask.msg_1")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.cobra_flask.msg_1")
 		item:transform(31297)
 		Game.setStorageValue(Global.Storage.CobraFlask, os.time() + 30 * 60)
 	end

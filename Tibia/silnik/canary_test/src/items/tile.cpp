@@ -22,6 +22,7 @@
 #include "items/trashholder.hpp"
 #include "lua/creature/movement.hpp"
 #include "map/spectators.hpp"
+#include "utils/i18n/translator.hpp"
 #include "utils/tools.hpp"
 #include "game/scheduling/dispatcher.hpp"
 
@@ -146,7 +147,7 @@ uint32_t Tile::getDownItemCount() const {
 }
 
 std::string Tile::getDescription(int32_t) {
-	return "You dont know why, but you cant see anything!";
+	return i18n::g_translator().get("cpp.tile.cant_see", "en");
 }
 
 std::shared_ptr<Teleport> Tile::getTeleportItem() const {

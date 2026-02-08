@@ -22,7 +22,7 @@ end
 
 function afk.onSay(player, words, param)
 	if param == "" then
-		player:sendCancelMessage("You need to specify on/off param.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_on_off_required")
 		return true
 	end
 
@@ -30,7 +30,7 @@ function afk.onSay(player, words, param)
 	local isAfk = checkIsAFK(id)
 	if param == "on" then
 		if isAfk.afk then
-			player:sendCancelMessage("You are already AFK!")
+			player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.gm.afk.msg_already_afk")
 			return true
 		end
 
@@ -38,13 +38,13 @@ function afk.onSay(player, words, param)
 		if player:isInGhostMode() then
 			player:setGhostMode(false)
 		end
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.afk.msg_1")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.afk.msg_1")
 		playerPosition:sendMagicEffect(CONST_ME_REDSMOKE)
 		showAfkMessage(playerPosition)
 	elseif param == "off" then
 		if isAfk.afk then
 			table.remove(playersAFKs, isAfk.index)
-			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.afk.msg_2")
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.afk.msg_2")
 			playerPosition:sendMagicEffect(CONST_ME_REDSMOKE)
 		end
 	end
@@ -74,7 +74,7 @@ function callback.playerOnWalk(player, creature, creaturePos, toPos)
 	local isAfk = checkIsAFK(player:getId())
 	if isAfk.afk then
 		table.remove(playersAFKs, isAfk.index)
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.afk.msg_3")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.afk.msg_3")
 	end
 	return true
 end

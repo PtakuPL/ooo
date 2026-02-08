@@ -37,6 +37,7 @@ private:
 
 	static int luaCreatureGetId(lua_State* L);
 	static int luaCreatureGetName(lua_State* L);
+	static int luaCreatureGetTranslatedName(lua_State* L); // I18N
 	static int luaCreatureGetTypeName(lua_State* L);
 
 	static int luaCreatureGetTarget(lua_State* L);

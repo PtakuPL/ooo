@@ -10,24 +10,24 @@ local CATAPULT_ID = {
 local missionTiles = {
 	[50313] = {
 		states = { 1 },
-		message = "This is the house Vascalir mentioned. You should find a stone pile in the cellar. Use it to get a stone!",
+		message = "quests.rookie_guard.m02.house_vascalir",
 		arrowPosition = { x = 32082, y = 32189, z = 7 },
 	},
 	[50314] = {
 		states = { 2, 3 },
-		message = "This is Norma's bar. If you go to the roof, you should find one of the catapults that need to be filled with stones.",
+		message = "quests.rookie_guard.m02.norma_bar",
 		arrowPosition = { x = 32097, y = 32184, z = 7 },
 		catapults = { CATAPULT_ID.BAR },
 	},
 	[50315] = {
 		states = { 2, 3 },
-		message = "These stairs lead up to the roof of the academy. Up there you should find TWO of the catapults.",
+		message = "quests.rookie_guard.m02.academy_roof",
 		arrowPosition = { x = 32098, y = 32190, z = 7 },
 		catapults = { CATAPULT_ID.ACADEMY_1, CATAPULT_ID.ACADEMY_2 },
 	},
 	[50316] = {
 		states = { 2, 3 },
-		message = "This is Obi's shop. Up on his roof you should find one of the catapults Vascalir mentioned.",
+		message = "quests.rookie_guard.m02.obi_shop",
 		arrowPosition = { x = 32104, y = 32205, z = 7 },
 		catapults = { CATAPULT_ID.SHOP },
 	},
@@ -64,7 +64,7 @@ function missionGuide.onStepIn(creature, item, position, fromPosition)
 	if table.find(missionTile.states, missionState) and not hasUsedCatapult then
 		-- Check delayed notifications (message/arrow)
 		if not isTutorialNotificationDelayed(player) then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, missionTile.message)
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, missionTile.message)
 			if missionTile.arrowPosition then
 				Position(missionTile.arrowPosition):sendMagicEffect(CONST_ME_TUTORIALARROW)
 			end

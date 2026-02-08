@@ -53,45 +53,39 @@ end
 local config = {
 	["hardened bones"] = {
 		value = 1,
-		message = {
-			wrongValue = "Well, I'll give you a little hint. They can sometimes be extracted from creatures \z
-				that consist only of - you guessed it, bones. You need an obsidian knife though.",
-			deliever = "How are you faring with your mission? Have you collected all 100 hardened bones?",
-			success = "I'm surprised. That's pretty good for a man. Now, bring us the 100 turtle shells.",
+		messageKey = {
+			wrongValue = "npc.trisha.bones_wrong",
+			deliever = "npc.trisha.bones_deliver",
+			success = "npc.trisha.bones_success",
 		},
 		itemId = 5925,
 		count = 100,
 	},
 	["turtle shells"] = {
 		value = 2,
-		message = {
-			wrongValue = "Turtles can be found on some idyllic islands which have recently been discovered.",
-			deliever = "Did you get us 100 turtle shells so we can make new shields?",
-			success = "Well done - for a man. These shells are enough to build many strong new shields. \z
-			Thank you! Now - show me fighting spirit.",
+		messageKey = {
+			wrongValue = "npc.trisha.turtle_wrong",
+			deliever = "npc.trisha.turtle_deliver",
+			success = "npc.trisha.turtle_success",
 		},
 		itemId = 5899,
 		count = 100,
 	},
 	["fighting spirit"] = {
 		value = 3,
-		message = {
-			wrongValue = "You should have enough fighting spirit if you are a true hero. \z
-				Sorry, but you have to figure this one out by yourself. Unless someone grants you a wish.",
-			deliever = "So, can you show me your fighting spirit?",
-			success = "Correct - pretty smart for a man. But the hardest task is yet to come: \z
-				the claw from a lord among the dragon lords.",
+		messageKey = {
+			wrongValue = "npc.trisha.spirit_wrong",
+			deliever = "npc.trisha.spirit_deliver",
+			success = "npc.trisha.spirit_success",
 		},
 		itemId = 5884,
 	},
 	["dragon claw"] = {
 		value = 4,
-		message = {
-			wrongValue = "You cannot get this special red claw from any common dragon in Tibia. \z
-				It requires a special one, a lord among the lords.",
-			deliever = "Have you actually managed to obtain the dragon claw I asked for?",
-			success = "You did it! I have seldom seen a man as courageous as you. \z
-				I really have to say that you deserve to wear a spike. Go ask Cornelia to adorn your armour.",
+		messageKey = {
+			wrongValue = "npc.trisha.claw_wrong",
+			deliever = "npc.trisha.claw_deliver",
+			success = "npc.trisha.claw_success",
 		},
 		itemId = 5919,
 	},
@@ -130,11 +124,11 @@ local function creatureSayCallback(npc, creature, type, message)
 		elseif config[message:lower()] then
 			local targetMessage = config[message:lower()]
 			if player:getStorageValue(storage) ~= targetMessage.value then
-				npcHandler:say(targetMessage.message.wrongValue, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, targetMessage.messageKey.wrongValue)
 				return true
 			end
 
-			npcHandler:say(targetMessage.message.deliever, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, targetMessage.messageKey.deliever)
 			npcHandler:setTopic(playerId, 3)
 			topic[playerId] = targetMessage
 		end
@@ -166,7 +160,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			end
 
 			player:setStorageValue(storage, player:getStorageValue(storage) + 1)
-			npcHandler:say(targetMessage.message.success, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, targetMessage.messageKey.success)
 		elseif MsgContains(message, "no") then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.trisha.say_9")
 		end

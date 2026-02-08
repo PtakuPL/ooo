@@ -125,14 +125,14 @@ end, function(player)
 end)
 
 -- Kick
-keywordHandler:addKeyword({ "kick" }, StdModule.kick, { npcHandler = npcHandler, text = "Get out o' here!*HICKS*", destination = { Position(32020, 31297, 7), Position(32021, 31297, 7), Position(32022, 31297, 7) } })
+keywordHandler:addKeyword({ "kick" }, StdModule.kick, { npcHandler = npcHandler, i18nKey = "npc.buddel_raider_camp.keyword_1", destination = { Position(32020, 31297, 7), Position(32021, 31297, 7), Position(32022, 31297, 7) } })
 
 keywordHandler:addKeyword({ "passage" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.buddel_raider_camp.stdmod_6" })
 keywordHandler:addAliasKeyword({ "trip" })
 keywordHandler:addAliasKeyword({ "go" })
 keywordHandler:addAliasKeyword({ "sail" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Where are we at the moment? Is this {Svargrond}? NO,*HICKS* it's Camp! Anyway, where do you want to go?")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.buddel_raider_camp.greet_msg_1")
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 
 npcConfig.shop = {

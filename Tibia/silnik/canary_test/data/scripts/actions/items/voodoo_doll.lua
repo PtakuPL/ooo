@@ -5,16 +5,16 @@ function voodooDoll.onUse(player, item, fromPosition, target, toPosition, isHotk
 		return false
 	end
 
-	local text = ""
+	local textKey = nil
 	if math.random(100) <= 5 then
-		text = "You concentrate on your victim and hit the needle in the doll."
+		textKey = "scripts.voodoo_doll.hit_success"
 		player:addAchievement("Dark Voodoo Priest")
 		toPosition:sendMagicEffect(CONST_ME_DRAWBLOOD, player)
 	else
-		text = "You concentrate on your victim, hit the needle in the doll.......but nothing happens."
+		textKey = "scripts.voodoo_doll.hit_fail"
 	end
 
-	player:say(text, TALKTYPE_MONSTER_SAY, false, player)
+	player:sayLocalized(textKey, TALKTYPE_MONSTER_SAY, false, player)
 	return true
 end
 

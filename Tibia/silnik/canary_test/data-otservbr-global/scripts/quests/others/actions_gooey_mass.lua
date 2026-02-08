@@ -75,17 +75,17 @@ function gooeyMass.onUse(player, item, fromPosition, target, toPosition, isHotke
 			if backpack and backpack:getEmptySlots(true) >= 1 then
 				if (player:getFreeCapacity() / 100) > getItemWeight(setting.reward) then
 					player:addItem(setting.reward)
-					player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_gooey_mass.msg_1" .. getItemName(setting.reward) .. ".")
+						player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_gooey_mass.msg_1", { getItemName(setting.reward) })
 					player:setStorageValue(setting.storage, os.time() + 7 * 24 * 60 * 60) -- 7 days
 					return true
 				else
-					player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_gooey_mass.msg_2" .. getItemName(setting.reward) .. ". Weighing " .. getItemWeight(setting.reward) .. " oz it is too heavy.")
+						player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_gooey_mass.msg_2", { getItemName(setting.reward), getItemWeight(setting.reward) })
 				end
 			else
-				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_gooey_mass.msg_3" .. getItemName(setting.reward) .. ", but you have no room to take it")
+					player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_gooey_mass.msg_3", { getItemName(setting.reward) })
 			end
 		else
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The " .. getItemName(setting.itemId) .. " is empty.")
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.common.item_is_empty", { getItemName(setting.itemId) })
 		end
 	end
 	return true

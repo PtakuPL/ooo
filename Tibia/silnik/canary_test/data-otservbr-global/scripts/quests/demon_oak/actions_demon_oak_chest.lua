@@ -17,7 +17,8 @@ function demonOakChest.onUse(player, item, fromPosition, target, toPosition, isH
 		local itemType = ItemType(chest.itemid)
 		if itemType then
 			local article = itemType:getArticle()
-			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_demon_oak_chest.msg_2" .. (#article > 0 and article .. " " or "") .. itemType:getName() .. ".")
+			local rewardName = (#article > 0 and article .. " " or "") .. itemType:getName()
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_demon_oak_chest.msg_2", { rewardName })
 		end
 
 		player:addItem(chest.itemid, chest.count)

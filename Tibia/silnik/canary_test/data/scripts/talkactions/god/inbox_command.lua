@@ -15,17 +15,17 @@ function inboxCommand.onSay(player, words, param)
 						local itemToDelete = Item(item.uid)
 						if itemToDelete then
 							itemToDelete:remove()
-							player:say(item:getId() .. " removed")
+							player:sendLocalizedTextMessage(MESSAGE_STATUS, "scripts.inbox_command.item_removed", { tostring(item:getId()) })
 						end
 					end
 				end
 			elseif param[2] == "add" then
 				target:addItemStoreInbox(tonumber(param[3]), 1, true, false)
-				player:say(tonumber(param[3]) .. " added")
+				player:sendLocalizedTextMessage(MESSAGE_STATUS, "scripts.inbox_command.item_added", { tostring(param[3]) })
 			end
 		end
 	else
-		player:sendCancelMessage("Creature not found.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_creature_not_found")
 	end
 
 	return true

@@ -1,31 +1,31 @@
 local ThaisExhibitionConfig = {
 	[Storage.ThaisExhibition.FriendshipAmulet] = {
 		sounds = {
-			{ text = "Hail |PLAYERNAME|, my friend!" },
-			{ text = "Friends forever!" },
-			{ text = "Look, how our friendship shines!" },
-			{ text = "Hail Tibiafriends!" },
+			{ text = "scripts.thais_exhibition.say_1" },
+			{ text = "scripts.thais_exhibition.say_2" },
+			{ text = "scripts.thais_exhibition.say_3" },
+			{ text = "scripts.thais_exhibition.say_4" },
 		},
 		itemid = 9802,
 		dir = DIRECTION_NORTH,
 	},
 	[Storage.ThaisExhibition.HandPuppets] = {
 		sounds = {
-			{ text = "Why so serious?" },
-			{ text = "These are not the puppets you are looking for..." },
-			{ text = "May the roleplay be with you." },
-			{ text = "An age of roleplay, and all will know, that three hundred puppets gave their last breath to defend it!" },
-			{ text = "They stoles it! Sneaky little puppetses!" },
-			{ text = "There was a dream that was roleplay. You could only whisper it. Anything more than a whisper and it would vanish." },
+			{ text = "scripts.thais_exhibition.say_5" },
+			{ text = "scripts.thais_exhibition.say_6" },
+			{ text = "scripts.thais_exhibition.say_7" },
+			{ text = "scripts.thais_exhibition.say_8" },
+			{ text = "scripts.thais_exhibition.say_9" },
+			{ text = "scripts.thais_exhibition.say_10" },
 		},
 		itemid = 9189,
 		dir = DIRECTION_WEST,
 	},
 	[Storage.ThaisExhibition.EpaminondasDoll] = {
 		sounds = {
-			{ text = "Hauopa!" },
-			{ text = "Yala Boom", exhibitEffect = CONST_ME_SOUND_RED },
-			{ text = "Hail Portal Tibia!" },
+			{ text = "scripts.thais_exhibition.say_11" },
+			{ text = "scripts.thais_exhibition.say_12", exhibitEffect = CONST_ME_SOUND_RED },
+			{ text = "scripts.thais_exhibition.say_13" },
 		},
 		itemid = 9144,
 		transformid = 9145,
@@ -33,48 +33,48 @@ local ThaisExhibitionConfig = {
 	},
 	[Storage.ThaisExhibition.NorsemanDoll] = {
 		sounds = {
-			{ text = "Hail TibiaNordic!" },
-			{ text = "So cold..." },
-			{ text = "Run, mammoth!" },
+			{ text = "scripts.thais_exhibition.say_14" },
+			{ text = "scripts.thais_exhibition.say_15" },
+			{ text = "scripts.thais_exhibition.say_16" },
 		},
 		itemid = 8154,
 		dir = DIRECTION_WEST,
 	},
 	[Storage.ThaisExhibition.BookwormDoll] = {
 		sounds = {
-			{ text = "Hail Tibia Library!" },
-			{ text = "Shhhhhh, please be quiet!" },
-			{ text = "Books are great!! Aren't they?" },
+			{ text = "scripts.thais_exhibition.say_17" },
+			{ text = "scripts.thais_exhibition.say_18" },
+			{ text = "scripts.thais_exhibition.say_19" },
 		},
 		itemid = 18343,
 		dir = DIRECTION_NORTH,
 	},
 	[Storage.ThaisExhibition.GoldenNewspaper] = {
 		sounds = {
-			{ text = "It's news to me." },
-			{ text = "News, updated as infrequently as possible!" },
-			{ text = "Extra! Extra! Read all about it!" },
-			{ text = "Fresh off the press!" },
+			{ text = "scripts.thais_exhibition.say_20" },
+			{ text = "scripts.thais_exhibition.say_21" },
+			{ text = "scripts.thais_exhibition.say_22" },
+			{ text = "scripts.thais_exhibition.say_23" },
 		},
 		itemid = 8153,
 		dir = DIRECTION_NORTH,
 	},
 	[Storage.ThaisExhibition.TibiacityEncyclopedia] = {
 		sounds = {
-			{ text = "I own, Tibiacity owns, perfect match!" },
-			{ text = "Weirdo, you're a weirdo! Actually all of you are!" },
-			{ text = "All hail the control panel!" },
-			{ text = "Pie for breakfast, pie for lunch and pie for dinner!" },
-			{ text = "Hug me! Feed me! Hail me!" },
+			{ text = "scripts.thais_exhibition.say_24" },
+			{ text = "scripts.thais_exhibition.say_25" },
+			{ text = "scripts.thais_exhibition.say_26" },
+			{ text = "scripts.thais_exhibition.say_27" },
+			{ text = "scripts.thais_exhibition.say_28" },
 		},
 		itemid = 8149,
 		dir = DIRECTION_WEST,
 	},
 	[Storage.ThaisExhibition.GoldenFalcon] = {
 		sounds = {
-			{ text = "Oh, when I get my claws on you..." },
-			{ text = "Let's hunt, |PLAYERNAME|!" },
-			{ text = "Hail TibiaBR.com! Flap! Flap!" },
+			{ text = "scripts.thais_exhibition.say_29" },
+			{ text = "scripts.thais_exhibition.say_30" },
+			{ text = "scripts.thais_exhibition.say_31" },
 		},
 		itemid = 8148,
 		transformid = 8175,
@@ -82,30 +82,30 @@ local ThaisExhibitionConfig = {
 	},
 	[Storage.ThaisExhibition.DragonGoblet] = {
 		sounds = {
-			{ text = "I WILL PROTECT YOUR KNOWLEDGEZZZ." },
-			{ text = "FCHHH - FEEEEED ME AT TIBIAVENEZUELA.COM" },
-			{ text = "I SENSE WISDOM...HUMILITY...AND...PERSEVERANCE!!!" },
-			{ text = "MAY MY ETERNAL FLAME BE YOUR SHIELD AND PATH OF SUCCESS, |PLAYERNAME|!" },
+			{ text = "scripts.thais_exhibition.say_32" },
+			{ text = "scripts.thais_exhibition.say_33" },
+			{ text = "scripts.thais_exhibition.say_34" },
+			{ text = "scripts.thais_exhibition.say_35" },
 		},
 		itemid = 10477,
 		dir = DIRECTION_NORTH,
 	},
 	[Storage.ThaisExhibition.FerumbrasDoll] = {
 		sounds = {
-			{ text = "Mwahaha!" },
-			{ text = "NO ONE WILL STOP ME THIS TIME!" },
-			{ text = "THE POWER IS IN TIBIOPEDIA!" },
-			{ text = "THE POWER IS MINE!" },
+			{ text = "scripts.thais_exhibition.say_36" },
+			{ text = "scripts.thais_exhibition.say_37" },
+			{ text = "scripts.thais_exhibition.say_38" },
+			{ text = "scripts.thais_exhibition.say_39" },
 		},
 		itemid = 10798,
 		dir = DIRECTION_NORTH,
 	},
 	[Storage.ThaisExhibition.FrozenHeart] = {
 		sounds = {
-			{ text = "Could a dead, frozen heart beat again? It felt like mine was about to." },
-			{ text = "The world was born from Tibiasula's love." },
-			{ text = "Look after TibiaTR's frozen heart. I've left it with you." },
-			{ text = "Hail TibiaTR.net!" },
+			{ text = "scripts.thais_exhibition.say_40" },
+			{ text = "scripts.thais_exhibition.say_41" },
+			{ text = "scripts.thais_exhibition.say_42" },
+			{ text = "scripts.thais_exhibition.say_43" },
 		},
 		itemid = 12041,
 		transformid = 12042,
@@ -114,9 +114,9 @@ local ThaisExhibitionConfig = {
 	},
 	[Storage.ThaisExhibition.DrakenDoll] = {
 		sounds = {
-			{ text = "For zze emperor!" },
-			{ text = "Hail TibiaJourney.com!" },
-			{ text = "Hail |PLAYERNAME|!" },
+			{ text = "scripts.thais_exhibition.say_44" },
+			{ text = "scripts.thais_exhibition.say_45" },
+			{ text = "scripts.thais_exhibition.say_46" },
 		},
 		itemid = 12043,
 		dir = DIRECTION_NORTH,
@@ -136,29 +136,29 @@ local ThaisExhibitionConfig = {
 	},
 	[Storage.ThaisExhibition.DurinTheAlmighty] = {
 		sounds = {
-			{ text = "My powers are limitless!" },
-			{ text = "Hail Tibia Bariloche!" },
+			{ text = "scripts.thais_exhibition.say_47" },
+			{ text = "scripts.thais_exhibition.say_48" },
 		},
 		itemid = 14764,
 		dir = DIRECTION_NORTH,
 	},
 	[Storage.ThaisExhibition.DragonEye] = {
 		sounds = {
-			{ text = "Do not trade me!" },
-			{ text = "Hail |PLAYERNAME|!" },
-			{ text = "Hail Tibia-Market!" },
+			{ text = "scripts.thais_exhibition.say_49" },
+			{ text = "scripts.thais_exhibition.say_50" },
+			{ text = "scripts.thais_exhibition.say_51" },
 		},
 		itemid = 16262,
 		dir = DIRECTION_NORTH,
 	},
 	[Storage.ThaisExhibition.MemoryBox] = {
 		sounds = {
-			{ text = "Uploading to TibiaEvents.... processing..." },
-			{ text = 'Say "Rat CHeese!"' },
-			{ text = "I got the perfect shot!" },
-			{ text = "Hold still...got it!" },
-			{ text = "Look at this one! Wasn't this your first battle with a dragon?" },
-			{ text = "This picture reminds me of the latest event." },
+			{ text = "scripts.thais_exhibition.say_52" },
+			{ text = "scripts.thais_exhibition.say_86" },
+			{ text = "scripts.thais_exhibition.say_53" },
+			{ text = "scripts.thais_exhibition.say_54" },
+			{ text = "scripts.thais_exhibition.say_55" },
+			{ text = "scripts.thais_exhibition.say_56" },
 		},
 		itemid = 19397,
 		transformid = 19398,
@@ -172,8 +172,8 @@ local ThaisExhibitionConfig = {
 	},
 	[Storage.ThaisExhibition.MedusaSkull] = {
 		sounds = {
-			{ text = "I will petrify thisss moment! Sstonesss are forever!!!" },
-			{ text = "Where isss my body?!? I'll kill you!!!" },
+			{ text = "scripts.thais_exhibition.say_57" },
+			{ text = "scripts.thais_exhibition.say_58" },
 		},
 		itemid = 14762,
 		dir = DIRECTION_NORTH,
@@ -188,10 +188,10 @@ local ThaisExhibitionConfig = {
 	},
 	[Storage.ThaisExhibition.Imortus] = {
 		sounds = {
-			{ text = "Now you will see, |PLAYERNAME|!" },
-			{ text = "More eyes for many numbers!" },
-			{ text = "594!? So easy..." },
-			{ text = "Numbers for Exhiti..." },
+			{ text = "scripts.thais_exhibition.say_59" },
+			{ text = "scripts.thais_exhibition.say_60" },
+			{ text = "scripts.thais_exhibition.say_61" },
+			{ text = "scripts.thais_exhibition.say_62" },
 		},
 		itemid = 12811,
 		transformid = 12812,
@@ -201,9 +201,9 @@ local ThaisExhibitionConfig = {
 		itemids = {
 			{
 				sounds = {
-					{ text = "Now Tibia bffff... has sound." },
-					{ text = "Hail bffff... RadioTibia!" },
-					{ text = "Hello bffff... |PLAYERNAME|." },
+					{ text = "scripts.thais_exhibition.say_63" },
+					{ text = "scripts.thais_exhibition.say_64" },
+					{ text = "scripts.thais_exhibition.say_65" },
 				},
 				itemid = 12813,
 				transformid = 12814,
@@ -217,56 +217,56 @@ local ThaisExhibitionConfig = {
 	},
 	[Storage.ThaisExhibition.EpicWisdom] = {
 		sounds = {
-			{ text = "MY BRAIN... TOO MUCH... KNOWLEDGE! AAAAH!", playerEffect = CONST_ME_STUN },
-			{ text = "Excalibug is lying at the heart of every true fighter." },
-			{ text = "Fire is fascinating. But whether it is going to light your path or burning you till death, you can never tell." },
+			{ text = "scripts.thais_exhibition.say_66", playerEffect = CONST_ME_STUN },
+			{ text = "scripts.thais_exhibition.say_67" },
+			{ text = "scripts.thais_exhibition.say_68" },
 		},
 		itemid = 12809,
 		dir = DIRECTION_NORTH,
 	},
 	[Storage.ThaisExhibition.DreadDoll] = {
 		sounds = {
-			{ text = "Mhausheausheu! What a FAIL! Mwahaha!" },
-			{ text = "Hail |PLAYERNAME|! You are wearing old socks!" },
-			{ text = "ou are so unpopular even your own shadow refuses to follow you." },
-			{ text = "Have fun with FunTibia.com!" },
+			{ text = "scripts.thais_exhibition.say_69" },
+			{ text = "scripts.thais_exhibition.say_70" },
+			{ text = "scripts.thais_exhibition.say_71" },
+			{ text = "scripts.thais_exhibition.say_72" },
 		},
 		itemid = 12904,
 		dir = DIRECTION_NORTH,
 	},
 	[Storage.ThaisExhibition.PhoenixStatue] = {
 		sounds = {
-			{ text = "Come closer, I will show some Tibian mysteries to you!" },
-			{ text = "Feel the eternity of Tibiafans.se!" },
-			{ text = "|PLAYERNAME|, you are worthy to feel the power of Tibiafans.se! HAIL TIBIAFANS!" },
+			{ text = "scripts.thais_exhibition.say_73" },
+			{ text = "scripts.thais_exhibition.say_74" },
+			{ text = "scripts.thais_exhibition.say_75" },
 		},
 		itemid = 4115,
 		dir = DIRECTION_WEST,
 	},
 	[Storage.ThaisExhibition.OrcsJawShredder] = {
 		sounds = {
-			{ text = "Hail |PLAYERNAME|!" },
-			{ text = "Hail TibiaSpy.com!" },
-			{ text = "Wrrrzzzgggrrzzzz..." },
-			{ text = "Yummy..." },
+			{ text = "scripts.thais_exhibition.say_76" },
+			{ text = "scripts.thais_exhibition.say_77" },
+			{ text = "scripts.thais_exhibition.say_78" },
+			{ text = "scripts.thais_exhibition.say_79" },
 		},
 		itemid = 10800,
 		dir = DIRECTION_NORTH,
 	},
 	[Storage.ThaisExhibition.BagOfOrientalSpices] = {
 		sounds = {
-			{ text = "According to tibia-wiki.net, Jalapeño Peppers are as hot and famous as the place they come from - Ankrahmun." },
-			{ text = "According to tibia-wiki.net, a Bulb of Garlic is a great spice AND protection against vampires." },
-			{ text = "According to tibia-wiki.net, star and sling herbs taste like cinnamon and vanilla." },
+			{ text = "scripts.thais_exhibition.say_80" },
+			{ text = "scripts.thais_exhibition.say_81" },
+			{ text = "scripts.thais_exhibition.say_82" },
 		},
 		itemid = 10817,
 		dir = DIRECTION_NORTH,
 	},
 	[Storage.ThaisExhibition.TibiorasBox] = {
 		sounds = {
-			{ text = "Click! You don't seem experienced enough to open this properly." },
-			{ text = "Click! The box won't open for you." },
-			{ text = "Click! This item is too precious for a newbie. You are unable to open it." },
+			{ text = "scripts.thais_exhibition.say_83" },
+			{ text = "scripts.thais_exhibition.say_84" },
+			{ text = "scripts.thais_exhibition.say_85" },
 		},
 		itemid = 3997,
 		transformid = 4010,
@@ -331,7 +331,7 @@ function thaisExhibition.onUse(player, item, fromPosition, target, toPosition, i
 	if settings.sounds and #settings.sounds > 0 then
 		local sound = settings.sounds[math.random(#settings.sounds)]
 		if sound.text then
-			player:say(sound.text:gsub("|PLAYERNAME|", player:getName()), TALKTYPE_MONSTER_SAY, false, nil, exhibitPosition)
+			player:sayLocalized(sound.text, TALKTYPE_MONSTER_SAY, false, nil, exhibitPosition, { player:getName() })
 		end
 
 		if sound.exhibitEffect then

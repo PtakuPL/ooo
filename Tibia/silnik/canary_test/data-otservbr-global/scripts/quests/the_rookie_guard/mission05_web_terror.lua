@@ -3,22 +3,22 @@
 local missionTiles = {
 	[50324] = {
 		states = { 1 },
-		message = "This is not the way to the tarantula's lair. Head up the little ramp to the southwest.",
+		message = "quests.rookie_guard.m05.not_tarantula_sw",
 		arrowPosition = { x = 32090, y = 32147, z = 7 },
 	},
 	[50326] = {
 		states = { 1 },
-		message = "Follow the small path to the north to reach the spider lair.",
+		message = "quests.rookie_guard.m05.follow_north",
 		arrowPosition = { x = 32067, y = 32132, z = 7 },
 	},
 	[50327] = {
 		states = { 1 },
-		message = "Walk to the west from here to reach the hole leading to the tarantula lair.",
+		message = "quests.rookie_guard.m05.walk_west",
 		arrowPosition = { x = 32051, y = 32110, z = 7 },
 	},
 	[50328] = {
 		states = { 1, 2, 4 },
-		message = "Remember that you have to aquire a web sample for Vascalir. You should not leave this cave without it.",
+		message = "quests.rookie_guard.m05.remember_web",
 		arrowPosition = { x = 32003, y = 32109, z = 11 },
 		walkBack = true,
 	},
@@ -43,7 +43,7 @@ function missionGuide.onStepIn(creature, item, position, fromPosition)
 	if table.find(missionTile.states, state) then
 		-- Check delayed notifications (message/arrow)
 		if not isTutorialNotificationDelayed(player) then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, missionTile.message)
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, missionTile.message)
 			if missionTile.arrowPosition then
 				Position(missionTile.arrowPosition):sendMagicEffect(CONST_ME_TUTORIALARROW)
 			end

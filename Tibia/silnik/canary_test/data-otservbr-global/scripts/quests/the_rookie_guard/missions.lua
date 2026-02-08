@@ -19,12 +19,12 @@ local missionTiles = {
 		{
 			mission = Storage.Quest.U9_1.TheRookieGuard.Mission02,
 			states = { 1, 2, 3, 4 },
-			message = "This road is the main access of the village. You might want to finish your business here first.",
+			message = "quests.rookie_guard.missions.road_main",
 		},
 		{
 			mission = Storage.Quest.U9_1.TheRookieGuard.Mission03,
 			states = { 1 },
-			message = "This road is the main access of the village. You might want to finish your business here first.",
+			message = "quests.rookie_guard.missions.road_main",
 		},
 	},
 	-- North bridge exit
@@ -32,19 +32,19 @@ local missionTiles = {
 		{
 			mission = Storage.Quest.U9_1.TheRookieGuard.Mission04,
 			states = { 2 },
-			message = "Follow the path to the east to find Hyacinth's little house.",
+			message = "quests.rookie_guard.missions.hyacinth_east",
 			arrowPosition = { x = 32096, y = 32169, z = 7 },
 		},
 		{
 			mission = Storage.Quest.U9_1.TheRookieGuard.Mission06,
 			states = { 2 },
-			message = "Follow the path east, and when it splits, head north-east to find the wolf forest.",
+			message = "quests.rookie_guard.missions.wolf_forest",
 			arrowPosition = { x = 32094, y = 32169, z = 7 },
 		},
 		{
 			mission = Storage.Quest.U9_1.TheRookieGuard.Mission09,
 			states = { 1 },
-			message = "Follow the path to the north past the hill to reach the troll caves.",
+			message = "quests.rookie_guard.missions.troll_caves",
 			arrowPosition = { x = 32091, y = 32166, z = 7 },
 		},
 		{
@@ -54,13 +54,13 @@ local missionTiles = {
 				storage = Storage.Quest.U9_1.TheRookieGuard.Sarcophagus,
 				state = -1,
 			},
-			message = "Follow the way to the east and go south to reach the graveyard.",
+			message = "quests.rookie_guard.missions.graveyard_east",
 			arrowPosition = { x = 32095, y = 32169, z = 7 },
 		},
 		{
 			mission = Storage.Quest.U9_1.TheRookieGuard.Mission11,
 			states = { 1 },
-			message = "To reach the wasps' nests follow the path to the north and cross the bridge to the west as if you wanted to reach the spiders.",
+			message = "quests.rookie_guard.missions.wasps_bridge",
 			arrowPosition = { x = 32090, y = 32165, z = 7 },
 		},
 		{
@@ -70,7 +70,7 @@ local missionTiles = {
 				storage = Storage.Quest.U9_1.TheRookieGuard.AcademyChest,
 				state = 1,
 			},
-			message = "Follow the path to the north, cross the bridge to the south and walk west to reach the orc fortress.",
+			message = "quests.rookie_guard.missions.orc_fortress_path",
 			arrowPosition = { x = 32091, y = 32166, z = 7 },
 		},
 	},
@@ -78,7 +78,7 @@ local missionTiles = {
 		{
 			mission = Storage.Quest.U9_1.TheRookieGuard.Mission04,
 			states = { 2 },
-			message = "This is not the way to Hyacinth. Stay on the path a little more to the south to find Hyacinth's little house.",
+			message = "quests.rookie_guard.missions.not_hyacinth_south",
 		},
 		{
 			mission = Storage.Quest.U9_1.TheRookieGuard.Mission10,
@@ -87,7 +87,7 @@ local missionTiles = {
 				storage = Storage.Quest.U9_1.TheRookieGuard.Sarcophagus,
 				state = -1,
 			},
-			message = "This is not the way to the crypt. Go south to reach the graveyard.",
+			message = "quests.rookie_guard.missions.not_crypt_south",
 		},
 	},
 	-- Outer east
@@ -95,12 +95,12 @@ local missionTiles = {
 		{
 			mission = Storage.Quest.U9_1.TheRookieGuard.Mission05,
 			states = { 1 },
-			message = "This is not the way to the tarantula's lair. Head northwest and go up the little ramp.",
+			message = "quests.rookie_guard.missions.not_tarantula_nw",
 		},
 		{
 			mission = Storage.Quest.U9_1.TheRookieGuard.Mission09,
 			states = { 1 },
-			message = "This is not the way to the troll caves. Follow the path to the north past the hill to reach them.",
+			message = "quests.rookie_guard.missions.not_troll_north",
 			arrowPosition = { x = 32091, y = 32166, z = 7 },
 		},
 	},
@@ -109,13 +109,13 @@ local missionTiles = {
 		{
 			mission = Storage.Quest.U9_1.TheRookieGuard.Mission05,
 			states = { 1 },
-			message = "Walk to the north and down the stairs to reach the tarantula's lair.",
+			message = "quests.rookie_guard.missions.tarantula_stairs",
 			arrowPosition = { x = 32069, y = 32145, z = 6 },
 		},
 		{
 			mission = Storage.Quest.U9_1.TheRookieGuard.Mission11,
 			states = { 1 },
-			message = "Take the southern stairs down the bridge to go to the wasps' lair.",
+			message = "quests.rookie_guard.missions.wasps_bridge_south",
 			arrowPosition = { x = 32068, y = 32149, z = 6 },
 		},
 	},
@@ -128,13 +128,13 @@ local missionTiles = {
 				storage = Storage.Quest.U9_1.TheRookieGuard.LibraryChest,
 				state = -1,
 			},
-			message = "The library vault is below the academy. Go north and head down several stairs until you find a quest door.",
+			message = "quests.rookie_guard.missions.library_vault",
 			arrowPosition = { x = 32097, y = 32197, z = 7 },
 		},
 		{
 			mission = Storage.Quest.U9_1.TheRookieGuard.Mission08,
 			states = { 1 },
-			message = "The bank is below the academy. Go north and head down the stairs and to the right.",
+			message = "quests.rookie_guard.missions.bank_academy",
 			arrowPosition = { x = 32097, y = 32197, z = 7 },
 		},
 		{
@@ -144,7 +144,7 @@ local missionTiles = {
 				storage = Storage.Quest.U9_1.TheRookieGuard.AcademyChest,
 				state = -1,
 			},
-			message = "You don't have the bag with the items yet. Open the door in the basement of the academy to the left of Paulie to get them!",
+			message = "quests.rookie_guard.missions.no_bag_yet",
 			arrowPosition = { x = 32097, y = 32197, z = 7 },
 		},
 	},
@@ -157,13 +157,13 @@ local missionTiles = {
 				storage = Storage.Quest.U9_1.TheRookieGuard.LibraryChest,
 				state = -1,
 			},
-			message = "Head through the northern door and follow the hallways to find the library vault.",
+			message = "quests.rookie_guard.missions.hallway_library",
 			arrowPosition = { x = 32095, y = 32188, z = 8 },
 		},
 		{
 			mission = Storage.Quest.U9_1.TheRookieGuard.Mission08,
 			states = { 1 },
-			message = "Go to the right to find the bank and talk to Paulie.",
+			message = "quests.rookie_guard.missions.bank_paulie",
 			arrowPosition = { x = 32100, y = 32191, z = 8 },
 		},
 	},
@@ -172,7 +172,7 @@ local missionTiles = {
 		{
 			mission = Storage.Quest.U9_1.TheRookieGuard.Mission11,
 			states = { 1 },
-			message = "Follow the path to the west to find the wasps' lair.",
+			message = "quests.rookie_guard.missions.wasps_west",
 			arrowPosition = { x = 32063, y = 32159, z = 7 },
 		},
 		{
@@ -182,7 +182,7 @@ local missionTiles = {
 				storage = Storage.Quest.U9_1.TheRookieGuard.AcademyChest,
 				state = 1,
 			},
-			message = "Follow the path to the west to reach the orc fortress.",
+			message = "quests.rookie_guard.missions.orc_west",
 			arrowPosition = { x = 32063, y = 32159, z = 7 },
 		},
 	},
@@ -191,7 +191,7 @@ local missionTiles = {
 		{
 			mission = Storage.Quest.U9_1.TheRookieGuard.Mission11,
 			states = { 1 },
-			message = "This is not the way to the wasps' lair. Choose the northern path to reach it.",
+			message = "quests.rookie_guard.missions.not_wasps_north",
 			arrowPosition = { x = 32003, y = 32148, z = 7 },
 		},
 		{
@@ -201,7 +201,7 @@ local missionTiles = {
 				storage = Storage.Quest.U9_1.TheRookieGuard.AcademyChest,
 				state = 1,
 			},
-			message = "You're entering orcland.",
+			message = "quests.rookie_guard.missions.entering_orcland",
 		},
 	},
 }
@@ -224,7 +224,7 @@ function missionGuide.onStepIn(creature, item, position, fromPosition)
 		if missionState ~= -1 and table.find(tile[i].states, missionState) and extraState then
 			-- Check delayed notifications (message/arrow)
 			if not isTutorialNotificationDelayed(player) then
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, tile[i].message)
+				player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, tile[i].message)
 				if tile[i].arrowPosition then
 					Position(tile[i].arrowPosition):sendMagicEffect(CONST_ME_TUTORIALARROW)
 				end

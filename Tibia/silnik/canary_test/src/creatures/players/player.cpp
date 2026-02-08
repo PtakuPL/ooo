@@ -11,6 +11,7 @@
 
 #include <algorithm>
 #include <cctype>
+#include <string_view>
 #include <fmt/format.h>
 
 #include "account/account.hpp"
@@ -141,6 +142,45 @@ uint32_t Player::getLastID() {
 	return playerLastID;
 }
 
+namespace {
+	constexpr uint8_t kLastLocalizedTitleId = 93;
+	constexpr std::string_view kLoyaltyTitleKeyPrefix = "lib.player.loyalty_title_";
+
+	bool hasFemaleTitleVariant(uint8_t titleId) {
+		switch (titleId) {
+			case 32:
+			case 35:
+			case 43:
+			case 44:
+			case 45:
+			case 47:
+			case 48:
+			case 70:
+			case 90:
+				return true;
+			default:
+				return false;
+		}
+	}
+
+	std::string getTranslationOrFallback(const std::string &key, const std::string &locale, const std::string &fallback) {
+		const std::string translated = i18n::g_translator().get(key, locale);
+		if (translated.empty() || translated == key) {
+			return fallback;
+		}
+		return translated;
+	}
+
+	bool startsWithVowelLetter(const std::string &text) {
+		if (text.empty()) {
+			return false;
+		}
+
+		const char first = static_cast<char>(std::tolower(static_cast<unsigned char>(text.front())));
+		return first == 'a' || first == 'e' || first == 'i' || first == 'o' || first == 'u';
+	}
+} // namespace
+
 void Player::setID() {
 	// guid = player id from database
 	if (id == 0 && guid != 0) {
@@ -152,77 +192,104 @@ void Player::setID() {
 }
 
 std::string Player::getDescription(int32_t lookDistance) {
+	return getDescriptionLocalized(lookDistance, "en");
+}
+
+std::string Player::getDescriptionLocalized(int32_t lookDistance, const std::string &viewerLocale) {
+	const std::string localeToUse = viewerLocale.empty() ? "en" : viewerLocale;
+	auto &tr = i18n::g_translator();
+
 	std::ostringstream s;
 	std::string subjectPronoun = getSubjectPronoun();
 	capitalizeWords(subjectPronoun);
-	const auto playerTitle = title().getCurrentTitle() == 0 ? "" : (", " + title().getCurrentTitleName());
+	const std::string subjectVerb = getSubjectVerb();
+
+	std::string playerTitle;
+	if (const auto currentTitle = title().getCurrentTitle(); currentTitle != 0) {
+		const auto titleData = g_game().getTitleById(currentTitle);
+		std::string fallbackTitle = title().getNameBySex(getSex(), titleData.m_maleName, titleData.m_femaleName);
+		if (titleData.m_id >= 1 && titleData.m_id <= kLastLocalizedTitleId) {
+			const std::string key = (getSex() == PLAYERSEX_FEMALE && hasFemaleTitleVariant(titleData.m_id))
+			                            ? fmt::format("cpp.title.name_{}_female", titleData.m_id)
+			                            : fmt::format("cpp.title.name_{}", titleData.m_id);
+			fallbackTitle = getTranslationOrFallback(key, localeToUse, fallbackTitle);
+		}
+		if (!fallbackTitle.empty()) {
+			playerTitle = ", " + fallbackTitle;
+		}
+	}
+
+	std::string vocationDescription;
+	if (vocation && vocation->getId() != VOCATION_NONE) {
+		const std::string key = fmt::format("cpp.vocation.desc_id_{}", vocation->getId());
+		vocationDescription = getTranslationOrFallback(key, localeToUse, vocation->getVocDescription());
+	}
+	const std::string localizedLoyaltyTitle = getLoyaltyTitleLocalized(localeToUse);
 
 	if (lookDistance == -1) {
-		s << "yourself" << playerTitle << ".";
+		s << tr.get("cpp.player.look.self", localeToUse) << playerTitle << ".";
 
 		if (group->access) {
-			s << " You are " << group->name << '.';
-		} else if (vocation->getId() != VOCATION_NONE) {
-			s << " You are " << vocation->getVocDescription() << '.';
+			s << " " << tr.format("cpp.player.look.you_are", localeToUse, {group->name});
+		} else if (!vocationDescription.empty()) {
+			s << " " << tr.format("cpp.player.look.you_are", localeToUse, {vocationDescription});
 		} else {
-			s << " You have no vocation.";
+			s << " " << tr.get("cpp.player.look.you_have_no_vocation", localeToUse);
 		}
 
-		if (!loyaltyTitle.empty()) {
-			s << " You are a " << loyaltyTitle << ".";
+		if (!localizedLoyaltyTitle.empty()) {
+			const std::string article = startsWithVowelLetter(localizedLoyaltyTitle) ? tr.get("cpp.player.look.article_an", localeToUse) : tr.get("cpp.player.look.article_a", localeToUse);
+			s << " " << tr.format("cpp.player.look.you_are_loyalty", localeToUse, {article, localizedLoyaltyTitle});
 		}
 
 		if (isVip()) {
-			s << " You are VIP.";
+			s << " " << tr.get("cpp.player.look.you_are_vip", localeToUse);
 		}
 	} else {
 		s << name;
 		if (!group->access) {
-			s << " (Level " << level << ')';
+			s << " (" << tr.format("cpp.player.look.level_fmt", localeToUse, {std::to_string(level)}) << ')';
 		}
 
 		s << playerTitle << ". " << subjectPronoun;
 
 		if (group->access) {
-			s << " " << getSubjectVerb() << " " << group->name << '.';
-		} else if (vocation->getId() != VOCATION_NONE) {
-			s << " " << getSubjectVerb() << " " << vocation->getVocDescription() << '.';
+			s << " " << tr.format("cpp.player.look.verb_role", localeToUse, {subjectVerb, group->name});
+		} else if (!vocationDescription.empty()) {
+			s << " " << tr.format("cpp.player.look.verb_role", localeToUse, {subjectVerb, vocationDescription});
 		} else {
-			s << " has no vocation.";
+			s << " " << tr.get("cpp.player.look.has_no_vocation", localeToUse);
 		}
 
-		if (!loyaltyTitle.empty()) {
-			std::string article = "a";
-			if (loyaltyTitle[0] == 'A' || loyaltyTitle[0] == 'E' || loyaltyTitle[0] == 'I' || loyaltyTitle[0] == 'O' || loyaltyTitle[0] == 'U') {
-				article = "an";
-			}
-			s << " " << subjectPronoun << " " << getSubjectVerb() << " " << article << " " << loyaltyTitle << ".";
+		if (!localizedLoyaltyTitle.empty()) {
+			const std::string article = startsWithVowelLetter(localizedLoyaltyTitle) ? tr.get("cpp.player.look.article_an", localeToUse) : tr.get("cpp.player.look.article_a", localeToUse);
+			s << " " << subjectPronoun << " " << tr.format("cpp.player.look.verb_loyalty", localeToUse, {subjectVerb, article, localizedLoyaltyTitle});
 		}
 
 		if (isVip()) {
-			s << " " << subjectPronoun << " " << getSubjectVerb() << " VIP.";
+			s << " " << subjectPronoun << " " << tr.format("cpp.player.look.verb_vip", localeToUse, {subjectVerb});
 		}
 	}
 
 	if (m_party) {
 		if (lookDistance == -1) {
-			s << " Your party has ";
+			s << " " << tr.get("cpp.player.look.party_prefix_self", localeToUse) << " ";
 		} else {
-			s << " " << subjectPronoun << " " << getSubjectVerb() << " in a party with ";
+			s << " " << subjectPronoun << " " << tr.format("cpp.player.look.party_prefix_other", localeToUse, {subjectVerb}) << " ";
 		}
 
 		const size_t memberCount = m_party->getMemberCount() + 1;
 		if (memberCount == 1) {
-			s << "1 member and ";
+			s << tr.get("cpp.player.look.party_member_one", localeToUse) << " ";
 		} else {
-			s << memberCount << " members and ";
+			s << tr.format("cpp.player.look.party_member_many", localeToUse, {std::to_string(memberCount)}) << " ";
 		}
 
 		const size_t invitationCount = m_party->getInvitationCount();
 		if (invitationCount == 1) {
-			s << "1 pending invitation.";
+			s << tr.get("cpp.player.look.party_invite_one", localeToUse);
 		} else {
-			s << invitationCount << " pending invitations.";
+			s << tr.format("cpp.player.look.party_invite_many", localeToUse, {std::to_string(invitationCount)});
 		}
 	}
 
@@ -234,43 +301,31 @@ std::string Player::getDescription(int32_t lookDistance) {
 		}
 
 		if (lookDistance == -1) {
-			s << " You are ";
+			s << " " << tr.get("cpp.player.look.guild_prefix_self", localeToUse) << " ";
 		} else {
-			s << " " << subjectPronoun << " " << getSubjectVerb() << " ";
+			s << " " << subjectPronoun << " " << tr.format("cpp.player.look.guild_prefix_other", localeToUse, {subjectVerb}) << " ";
 		}
 
-		s << guildRank->name << " of the " << guild->getName();
+		s << tr.format("cpp.player.look.guild_rank_of", localeToUse, {guildRank->name, guild->getName()});
 		if (!guildNick.empty()) {
-			s << " (" << guildNick << ')';
+			s << " " << tr.format("cpp.player.look.guild_nick", localeToUse, {guildNick});
 		}
 
 		if (memberCount == 1) {
-			s << ", which has 1 member, " << guild->getMembersOnline().size() << " of them online.";
+			s << tr.format("cpp.player.look.guild_members_one", localeToUse, {std::to_string(guild->getMembersOnline().size())});
 		} else {
-			s << ", which has " << memberCount << " members, " << guild->getMembersOnline().size() << " of them online.";
+			s << tr.format("cpp.player.look.guild_members_many", localeToUse, {std::to_string(memberCount), std::to_string(guild->getMembersOnline().size())});
 		}
 	}
 	return s.str();
 }
 
 void Player::setLocale(const std::string &value) {
-	std::string desired = value;
-	if (desired.empty()) {
-		desired = g_configManager().getString(DEFAULT_LOCALE);
-	}
-
-	desired = asLowerCaseString(desired);
-	desired.erase(
-		std::remove_if(desired.begin(), desired.end(), [](unsigned char ch) {
-			return !(std::isalpha(ch) || std::isdigit(ch) || ch == '-' || ch == '_');
-		}),
-		desired.end()
-	);
+	const auto normalizedDefault = i18n::Translator::normalizeLocale(g_configManager().getString(DEFAULT_LOCALE));
+	auto desired = i18n::Translator::normalizeLocale(value);
 
 	if (desired.empty()) {
-		desired = "en";
-	} else if (desired.size() > 5) {
-		desired.resize(5);
+		desired = normalizedDefault.empty() ? "en" : normalizedDefault;
 	}
 
 	locale = desired;
@@ -1133,7 +1188,7 @@ void Player::addSkillAdvance(skills_t skill, uint64_t count) {
 		skills[skill].percent = 0;
 
 		std::ostringstream ss;
-		ss << "You advanced to " << getSkillName(skill) << " level " << skills[skill].level << '.';
+		{ const std::string loc(getLocale().empty() ? "en" : std::string(getLocale())); auto &tr = i18n::g_translator(); ss << tr.format("cpp.player.skill_advance", loc, {getSkillName(skill, loc), std::to_string(skills[skill].level)}); }
 		sendTextMessage(MESSAGE_EVENT_ADVANCE, ss.str());
 		if (skill == SKILL_LEVEL) {
 			sendTakeScreenshot(SCREENSHOT_TYPE_LEVELUP);
@@ -1557,7 +1612,7 @@ std::pair<uint64_t, uint64_t> Player::getForgeSliversAndCores() const {
 
 void Player::onReceiveMail() {
 	if (isNearDepotBox()) {
-		sendTextMessage(MESSAGE_EVENT_ADVANCE, "New mail has arrived.");
+		sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "server.player.msg_1");
 	}
 }
 
@@ -2084,7 +2139,7 @@ void Player::sendCancelMessage(const std::string &msg) const {
 }
 
 void Player::sendCancelMessage(ReturnValue message) const {
-	sendCancelMessage(getReturnMessage(message));
+	sendLocalizedTextMessage(MESSAGE_FAILURE, getReturnMessageI18nKey(message));
 }
 
 void Player::sendCancelTarget() const {
@@ -2386,12 +2441,20 @@ std::string Player::getLocalizedItemName(const ItemType &itemType) const {
 
 	const std::string fallbackLocale = g_configManager().getString(DEFAULT_LOCALE);
 	const std::string &activeLocale = locale.empty() ? fallbackLocale : locale;
-	const auto key = fmt::format("items.{}.name", itemType.id);
-	const auto localized = i18n::g_translator().get(key, activeLocale);
-	if (localized.empty() || localized == key) {
+	auto &tr = i18n::g_translator();
+	const auto key = fmt::format("item.{}.name", itemType.id);
+	const auto localized = tr.get(key, activeLocale);
+	if (!localized.empty() && localized != key) {
+		return localized;
+	}
+
+	// Backward compatibility for early namespace used before key normalization.
+	const auto legacyKey = fmt::format("items.{}.name", itemType.id);
+	const auto legacyLocalized = tr.get(legacyKey, activeLocale);
+	if (legacyLocalized.empty() || legacyLocalized == legacyKey) {
 		return fallbackName;
 	}
-	return localized;
+	return legacyLocalized;
 }
 
 void Player::sendReLoginWindow(uint8_t unfairFightReduction) const {
@@ -2589,7 +2652,7 @@ void Player::onApplyImbuement(const Imbuement* imbuement, const std::shared_ptr<
 	ImbuementInfo imbuementInfo;
 	if (item->getImbuementInfo(slot, &imbuementInfo)) {
 		g_logger().error("[Player::onApplyImbuement] - An error occurred while player with name {} try to apply imbuement, item already contains imbuement", this->getName());
-		this->sendImbuementResult("An error ocurred, please reopen imbuement window.");
+		{ const std::string loc(getLocale().empty() ? "en" : std::string(getLocale())); this->sendImbuementResult(i18n::g_translator().get("cpp.player.imbuement_error", loc)); }
 		return;
 	}
 
@@ -2602,14 +2665,14 @@ void Player::onApplyImbuement(const Imbuement* imbuement, const std::shared_ptr<
 		if (item->getImbuementInfo(i, &existingImbuement) && existingImbuement.imbuement) {
 			if (existingImbuement.imbuement->getName() == imbuement->getName()) {
 				g_logger().error("[Player::onApplyImbuement] - Player {} attempted to apply the same imbuement in multiple slots", this->getName());
-				this->sendImbuementResult("You cannot apply the same imbuement in multiple slots.");
+				{ const std::string loc(getLocale().empty() ? "en" : std::string(getLocale())); this->sendImbuementResult(i18n::g_translator().get("cpp.player.imbuement_duplicate_slot", loc)); }
 				return;
 			}
 		}
 
 		if (imbuementInfo.imbuement == imbuement) {
 			g_logger().error("[Player::onApplyImbuement] - Duplicate imbuement application detected for '{}'", imbuement->getName());
-			sendImbuementResult("This imbuement is already applied to this item.");
+			{ const std::string loc(getLocale().empty() ? "en" : std::string(getLocale())); sendImbuementResult(i18n::g_translator().get("cpp.player.imbuement_already_applied", loc)); }
 			return;
 		}
 	}
@@ -2618,7 +2681,7 @@ void Player::onApplyImbuement(const Imbuement* imbuement, const std::shared_ptr<
 	for (auto &[key, value] : items) {
 		const ItemType &itemType = Item::items[key];
 		if (getItemTypeCount(key) + this->getStashItemCount(itemType.id) < value) {
-			this->sendImbuementResult("You don't have all necessary items.");
+			{ const std::string loc(getLocale().empty() ? "en" : std::string(getLocale())); this->sendImbuementResult(i18n::g_translator().get("cpp.player.imbuement_missing_items", loc)); }
 			return;
 		}
 	}
@@ -2632,7 +2695,8 @@ void Player::onApplyImbuement(const Imbuement* imbuement, const std::shared_ptr<
 	price += protectionCharm ? baseImbuement->protectionPrice : 0;
 
 	if (!g_game().removeMoney(thisPlayer, price, 0, true)) {
-		const std::string message = fmt::format("You don't have {} gold coins.", price);
+		const std::string loc(getLocale().empty() ? "en" : std::string(getLocale()));
+		const std::string message = i18n::g_translator().format("cpp.player.not_enough_gold", loc, {std::to_string(price)});
 
 		g_logger().error("[Player::onApplyImbuement] - An error occurred while player with name {} try to apply imbuement, player do not have money", this->getName());
 		sendImbuementResult(message);
@@ -2657,14 +2721,14 @@ void Player::onApplyImbuement(const Imbuement* imbuement, const std::shared_ptr<
 
 		const ItemType &itemType = Item::items[key];
 
-		withdrawItemMessage << "Using " << mathItemCount << "x " << itemType.name << " from your stash. ";
+		{ const std::string loc(getLocale().empty() ? "en" : std::string(getLocale())); withdrawItemMessage << i18n::g_translator().format("cpp.player.using_from_stash", loc, {std::to_string(mathItemCount), itemType.name}); }
 		withdrawItem(itemType.id, mathItemCount);
 		sendTextMessage(MESSAGE_STATUS, withdrawItemMessage.str());
 	}
 
 	if (!protectionCharm && uniform_random(1, 100) > baseImbuement->percent) {
 		openImbuementWindow(item);
-		sendImbuementResult("Oh no!\n\nThe imbuement has failed. You have lost the astral sources and gold you needed for the imbuement.\n\nNext time use a protection charm to better your chances.");
+		{ const std::string loc(getLocale().empty() ? "en" : std::string(getLocale())); sendImbuementResult(i18n::g_translator().get("cpp.player.imbuement_failed", loc)); }
 		openImbuementWindow(item);
 		return;
 	}
@@ -2693,7 +2757,7 @@ void Player::onClearImbuement(const std::shared_ptr<Item> &item, uint8_t slot) {
 	ImbuementInfo imbuementInfo;
 	if (!item->getImbuementInfo(slot, &imbuementInfo)) {
 		g_logger().error("[Player::onClearImbuement] - An error occurred while player with name {} try to apply imbuement, item not contains imbuement", this->getName());
-		this->sendImbuementResult("An error ocurred, please reopen imbuement window.");
+		{ const std::string loc(getLocale().empty() ? "en" : std::string(getLocale())); this->sendImbuementResult(i18n::g_translator().get("cpp.player.imbuement_error", loc)); }
 		return;
 	}
 
@@ -2703,7 +2767,8 @@ void Player::onClearImbuement(const std::shared_ptr<Item> &item, uint8_t slot) {
 	}
 
 	if (!g_game().removeMoney(static_self_cast<Player>(), baseImbuement->removeCost, 0, true)) {
-		const std::string message = fmt::format("You don't have {} gold coins.", baseImbuement->removeCost);
+		const std::string loc(getLocale().empty() ? "en" : std::string(getLocale()));
+		const std::string message = i18n::g_translator().format("cpp.player.not_enough_gold", loc, {std::to_string(baseImbuement->removeCost)});
 
 		g_logger().error("[Player::onClearImbuement] - An error occurred while player with name {} try to apply imbuement, player do not have money", this->getName());
 		this->sendImbuementResult(message);
@@ -2726,13 +2791,13 @@ void Player::openImbuementWindow(const std::shared_ptr<Item> &item) {
 	}
 
 	if (item->getImbuementSlot() <= 0) {
-		this->sendTextMessage(MESSAGE_EVENT_ADVANCE, "This item is not imbuable.");
+		this->sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "server.player.msg_2");
 		return;
 	}
 
 	const auto &itemParent = item->getTopParent();
 	if (itemParent && itemParent != getPlayer()) {
-		this->sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have to pick up the item to imbue it.");
+		this->sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "server.player.msg_3");
 		return;
 	}
 
@@ -3342,7 +3407,7 @@ void Player::removeMessageBuffer() {
 			addCondition(condition);
 
 			std::ostringstream ss;
-			ss << "You are muted for " << muteTime << " seconds.";
+			{ const std::string loc(getLocale().empty() ? "en" : std::string(getLocale())); auto &tr = i18n::g_translator(); ss << tr.format("cpp.player.muted_for", loc, {std::to_string(muteTime)}); }
 			sendTextMessage(MESSAGE_FAILURE, ss.str());
 		}
 	}
@@ -3388,7 +3453,7 @@ void Player::addManaSpent(uint64_t amount) {
 		manaSpent = 0;
 
 		std::ostringstream ss;
-		ss << "You advanced to magic level " << magLevel << '.';
+		{ const std::string loc(getLocale().empty() ? "en" : std::string(getLocale())); auto &tr = i18n::g_translator(); ss << tr.format("cpp.player.magic_level_advance", loc, {std::to_string(magLevel)}); }
 		sendTextMessage(MESSAGE_EVENT_ADVANCE, ss.str());
 		sendTakeScreenshot(SCREENSHOT_TYPE_SKILLUP);
 
@@ -3468,19 +3533,21 @@ void Player::addExperience(const std::shared_ptr<Creature> &target, uint64_t exp
 	experience += exp;
 
 	if (sendText) {
-		std::string expString = fmt::format("{} experience point{}.", exp, (exp != 1 ? "s" : ""));
+		const std::string loc(getLocale().empty() ? "en" : std::string(getLocale()));
+		auto &tr = i18n::g_translator();
+		std::string expString = tr.plural("cpp.player.exp_points", loc, exp, {std::to_string(exp)});
 		if (isVip()) {
 			uint8_t expPercent = g_configManager().getNumber(VIP_BONUS_EXP);
 			if (expPercent > 0) {
-				expString = expString + fmt::format(" (VIP bonus {}%)", expPercent > 100 ? 100 : expPercent);
+				expString = expString + tr.format("cpp.player.exp_vip_bonus", loc, {std::to_string(expPercent > 100 ? 100 : expPercent)});
 			}
 		}
 
 		if (handleAnimusMastery) {
-			expString = fmt::format("{} (animus mastery bonus {:.1f}%)", expString, (animusMasteryMultiplier - 1) * 100);
+			expString = expString + tr.format("cpp.player.exp_animus_bonus", loc, {fmt::format("{:.1f}", (animusMasteryMultiplier - 1) * 100)});
 		}
 
-		TextMessage message(MESSAGE_EXPERIENCE, "You gained " + expString + (handleHazardExperience ? " (Hazard)" : ""));
+		TextMessage message(MESSAGE_EXPERIENCE, tr.format("cpp.player.exp_gained", loc, {expString}) + (handleHazardExperience ? tr.get("cpp.game.hazard_tag", loc) : ""));
 		message.position = position;
 		message.primary.value = exp;
 		message.primary.color = TEXTCOLOR_WHITE_EXP;
@@ -3490,7 +3557,7 @@ void Player::addExperience(const std::shared_ptr<Creature> &target, uint64_t exp
 		spectators.erase(static_self_cast<Player>());
 		if (!spectators.empty()) {
 			message.type = MESSAGE_EXPERIENCE_OTHERS;
-			message.text = getName() + " gained " + expString;
+			message.text = tr.format("cpp.player.exp_gained_other", loc, {getName(), expString});
 			for (const auto &spectator : spectators) {
 				spectator->getPlayer()->sendTextMessage(message);
 			}
@@ -3541,7 +3608,7 @@ void Player::addExperience(const std::shared_ptr<Creature> &target, uint64_t exp
 		g_creatureEvents().playerAdvance(static_self_cast<Player>(), SKILL_LEVEL, prevLevel, level);
 
 		std::ostringstream ss;
-		ss << "You advanced from Level " << prevLevel << " to Level " << level << '.';
+		{ const std::string loc2(getLocale().empty() ? "en" : std::string(getLocale())); auto &tr2 = i18n::g_translator(); ss << tr2.format("cpp.player.level_advance", loc2, {std::to_string(prevLevel), std::to_string(level)}); }
 		sendTextMessage(MESSAGE_EVENT_ADVANCE, ss.str());
 		sendTakeScreenshot(SCREENSHOT_TYPE_LEVELUP);
 	}
@@ -3572,7 +3639,9 @@ void Player::removeExperience(uint64_t exp, bool sendText /* = false*/) {
 	if (sendText) {
 		lostExp -= experience;
 
-		const std::string expString = fmt::format("You lost {} experience point{}.", lostExp, (lostExp != 1 ? "s" : ""));
+		const std::string loc(getLocale().empty() ? "en" : std::string(getLocale()));
+		auto &tr = i18n::g_translator();
+		const std::string expString = tr.plural("cpp.player.exp_lost_points", loc, lostExp, {std::to_string(lostExp)});
 
 		TextMessage message(MESSAGE_EXPERIENCE, expString);
 		message.position = position;
@@ -3584,7 +3653,7 @@ void Player::removeExperience(uint64_t exp, bool sendText /* = false*/) {
 		spectators.erase(static_self_cast<Player>());
 		if (!spectators.empty()) {
 			message.type = MESSAGE_EXPERIENCE_OTHERS;
-			message.text = getName() + " lost " + expString;
+			message.text = tr.format("cpp.player.exp_lost_other", loc, {getName(), expString});
 			for (const auto &spectator : spectators) {
 				spectator->getPlayer()->sendTextMessage(message);
 			}
@@ -3626,7 +3695,7 @@ void Player::removeExperience(uint64_t exp, bool sendText /* = false*/) {
 		}
 
 		std::ostringstream ss;
-		ss << "You were downgraded from Level " << oldLevel << " to Level " << level << '.';
+		{ const std::string loc3(getLocale().empty() ? "en" : std::string(getLocale())); auto &tr3 = i18n::g_translator(); ss << tr3.format("cpp.player.level_downgrade", loc3, {std::to_string(oldLevel), std::to_string(level)}); }
 		sendTextMessage(MESSAGE_EVENT_ADVANCE, ss.str());
 	}
 
@@ -3929,9 +3998,11 @@ void Player::death(const std::shared_ptr<Creature> &lastHitCreature) {
 		g_events().eventPlayerOnLoseExperience(static_self_cast<Player>(), expLoss);
 		g_callbacks().executeCallback(EventCallback_t::playerOnLoseExperience, &EventCallback::playerOnLoseExperience, getPlayer(), expLoss);
 
-		sendTextMessage(MESSAGE_EVENT_ADVANCE, "You are dead.");
+		sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "server.player.msg_4");
+		const std::string loc(getLocale().empty() ? "en" : std::string(getLocale()));
+		auto &tr = i18n::g_translator();
 		std::ostringstream lostExp;
-		lostExp << "You lost " << expLoss << " experience.";
+		lostExp << tr.format("cpp.player.death_exp_lost", loc, {std::to_string(expLoss)});
 
 		// Skill loss
 		for (uint8_t i = SKILL_FIRST; i <= SKILL_LAST; ++i) { // For each skill
@@ -3979,7 +4050,7 @@ void Player::death(const std::shared_ptr<Creature> &lastHitCreature) {
 
 			if (oldLevel != level) {
 				std::ostringstream ss;
-				ss << "You were downgraded from Level " << oldLevel << " to Level " << level << '.';
+				ss << tr.format("cpp.player.level_downgrade", loc, {std::to_string(oldLevel), std::to_string(level)});
 				sendTextMessage(MESSAGE_EVENT_ADVANCE, ss.str());
 			}
 
@@ -3992,14 +4063,11 @@ void Player::death(const std::shared_ptr<Creature> &lastHitCreature) {
 			}
 		}
 
-		std::ostringstream deathType;
-		deathType << "You died during ";
 		if (pvpDeath) {
-			deathType << "PvP.";
+			sendTextMessage(MESSAGE_EVENT_ADVANCE, tr.get("cpp.player.death_pvp", loc));
 		} else {
-			deathType << "PvE.";
+			sendTextMessage(MESSAGE_EVENT_ADVANCE, tr.get("cpp.player.death_pve", loc));
 		}
-		sendTextMessage(MESSAGE_EVENT_ADVANCE, deathType.str());
 
 		auto adventurerBlessingLevel = g_configManager().getNumber(ADVENTURERSBLESSING_LEVEL);
 		auto willNotLoseBless = getLevel() < adventurerBlessingLevel && getVocationId() > VOCATION_NONE;
@@ -4007,10 +4075,10 @@ void Player::death(const std::shared_ptr<Creature> &lastHitCreature) {
 		std::string bless = getBlessingsName();
 		std::ostringstream blessOutput;
 		if (willNotLoseBless) {
-			blessOutput << fmt::format("You still have adventurer's blessings for being level lower than {}!", adventurerBlessingLevel);
+			blessOutput << tr.format("cpp.player.adventurer_blessings_kept", loc, {std::to_string(adventurerBlessingLevel)});
 		} else {
-			bless.empty() ? blessOutput << "You weren't protected with any blessings."
-						  : blessOutput << "You were blessed with " << bless;
+			bless.empty() ? blessOutput << tr.get("cpp.player.no_blessings", loc)
+						  : blessOutput << tr.format("cpp.player.blessed_with", loc, {bless});
 
 			const auto playerSkull = getSkull();
 			bool hasSkull = (playerSkull == Skulls_t::SKULL_RED || playerSkull == Skulls_t::SKULL_BLACK);
@@ -4176,7 +4244,9 @@ std::shared_ptr<Item> Player::getCorpse(const std::shared_ptr<Creature> &lastHit
 	if (corpse && corpse->getContainer()) {
 		std::ostringstream ss;
 
-		ss << "You recognize " << getNameDescription() << ". ";
+		const std::string loc(getLocale().empty() ? "en" : std::string(getLocale()));
+		auto &tr = i18n::g_translator();
+		ss << tr.format("cpp.player.corpse_recognize", loc, {getNameDescription()});
 
 		std::string responsibleName;
 		std::string secondaryResponsibleName;
@@ -4217,22 +4287,22 @@ std::shared_ptr<Item> Player::getCorpse(const std::shared_ptr<Creature> &lastHit
 		}
 
 		if (!responsibleName.empty()) {
-			ss << getSubjectPronoun() << " " << getSubjectVerb(true) << " killed by " << responsibleName;
+			ss << tr.format("cpp.player.corpse_killed_by", loc, {getSubjectPronoun(), getSubjectVerb(true), responsibleName});
 
 			if (!secondaryResponsibleName.empty()) {
-				ss << " and " << secondaryResponsibleName;
+				ss << tr.format("cpp.player.corpse_and", loc, {secondaryResponsibleName});
 			} else if (hasOthers) {
-				ss << " and others";
+				ss << tr.get("cpp.player.corpse_and_others", loc);
 			}
 			ss << '.';
 		} else if (lastHitCreature) {
-			ss << getSubjectPronoun() << " " << getSubjectVerb(true) << " killed by " << lastHitCreature->getNameDescription();
+			ss << tr.format("cpp.player.corpse_killed_by", loc, {getSubjectPronoun(), getSubjectVerb(true), lastHitCreature->getNameDescription()});
 			if (hasOthers) {
-				ss << " and others";
+				ss << tr.get("cpp.player.corpse_and_others", loc);
 			}
 			ss << '.';
 		} else {
-			ss << "No attackers were identified.";
+			ss << tr.get("cpp.player.corpse_no_attackers", loc);
 		}
 
 		corpse->setAttribute(ItemAttribute_t::DESCRIPTION, ss.str());
@@ -5005,7 +5075,7 @@ void Player::stashContainer(const StashContainerList &itemDict) {
 	updateState();
 
 	if (totalStowed == 0) {
-		sendCancelMessage("Sorry, not possible.");
+		sendLocalizedTextMessage(MESSAGE_FAILURE, "cpp.cancel.not_possible");
 		return;
 	}
 
@@ -5013,9 +5083,11 @@ void Player::stashContainer(const StashContainerList &itemDict) {
 	sendInventoryIds();
 
 	std::ostringstream retString;
-	retString << "Stowed " << totalStowed << " object" << (totalStowed > 1 ? "s." : ".");
+	const std::string loc(getLocale().empty() ? "en" : std::string(getLocale()));
+	auto &tr = i18n::g_translator();
+	retString << tr.plural("cpp.player.stowed_objects", loc, totalStowed, {std::to_string(totalStowed)});
 	if (moved) {
-		retString << " Moved " << movedItems << " object" << (movedItems > 1 ? "s." : ".");
+		retString << tr.plural("cpp.player.moved_objects", loc, movedItems, {std::to_string(movedItems)});
 		movedItems = 0;
 	}
 	sendTextMessage(MESSAGE_STATUS, retString.str());
@@ -6245,7 +6317,8 @@ void Player::addHuntingTaskKill(const std::shared_ptr<MonsterType> &mType) {
 		taskSlot->currentKills += 1;
 		if ((taskSlot->upgrade && taskSlot->currentKills >= option->secondKills) || (!taskSlot->upgrade && taskSlot->currentKills >= option->firstKills)) {
 			taskSlot->state = PreyTaskDataState_Completed;
-			const std::string message = "You succesfully finished your hunting task. Your reward is ready to be claimed!";
+			const std::string loc(getLocale().empty() ? "en" : std::string(getLocale()));
+			const std::string message = i18n::g_translator().get("cpp.player.hunting_task_complete", loc);
 			sendTextMessage(MESSAGE_STATUS, message);
 		}
 		reloadTaskSlot(taskSlot->id);
@@ -6744,7 +6817,7 @@ void Player::addUnjustifiedDead(const std::shared_ptr<Player> &attacked) {
 		return;
 	}
 
-	sendTextMessage(MESSAGE_EVENT_ADVANCE, "Warning! The murder of " + attacked->getName() + " was not justified.");
+	sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "server.player.msg_13", { attacked->getName() });
 
 	unjustifiedKills.emplace_back(attacked->getGUID(), time(nullptr), true);
 
@@ -7632,7 +7705,7 @@ bool Player::addOfflineTrainingTries(skills_t skill, uint64_t tries) {
 
 		if (magLevel != currMagLevel) {
 			std::ostringstream ss;
-			ss << "You advanced to magic level " << magLevel << '.';
+			{ const std::string loc(getLocale().empty() ? "en" : std::string(getLocale())); auto &tr = i18n::g_translator(); ss << tr.format("cpp.player.magic_level_advance", loc, {std::to_string(magLevel)}); }
 			sendTextMessage(MESSAGE_EVENT_ADVANCE, ss.str());
 			sendTakeScreenshot(SCREENSHOT_TYPE_SKILLUP);
 		}
@@ -7689,7 +7762,7 @@ bool Player::addOfflineTrainingTries(skills_t skill, uint64_t tries) {
 
 		if (currSkillLevel != skills[skill].level) {
 			std::ostringstream ss;
-			ss << "You advanced to " << getSkillName(skill) << " level " << skills[skill].level << '.';
+			{ const std::string loc(getLocale().empty() ? "en" : std::string(getLocale())); auto &tr = i18n::g_translator(); ss << tr.format("cpp.player.skill_advance", loc, {getSkillName(skill, loc), std::to_string(skills[skill].level)}); }
 			sendTextMessage(MESSAGE_EVENT_ADVANCE, ss.str());
 			if (skill == SKILL_LEVEL) {
 				sendTakeScreenshot(SCREENSHOT_TYPE_LEVELUP);
@@ -7720,16 +7793,17 @@ bool Player::addOfflineTrainingTries(skills_t skill, uint64_t tries) {
 		sendStats();
 	}
 
-	std::string message = fmt::format(
-		"Your {} skill changed from level {} (with {:.2f}% progress towards level {}) to level {} (with {:.2f}% progress towards level {})",
-		ucwords(getSkillName(skill)),
-		oldSkillValue,
-		oldPercentToNextLevel,
-		oldSkillValue + 1,
-		newSkillValue,
-		newPercentToNextLevel,
-		newSkillValue + 1
-	);
+	const std::string loc4(getLocale().empty() ? "en" : std::string(getLocale()));
+	auto &tr4 = i18n::g_translator();
+	std::string message = tr4.format("cpp.player.skill_changed_offline", loc4, {
+		ucwords(getSkillName(skill, loc4)),
+		std::to_string(oldSkillValue),
+		fmt::format("{:.2f}", oldPercentToNextLevel),
+		std::to_string(oldSkillValue + 1),
+		std::to_string(newSkillValue),
+		fmt::format("{:.2f}", newPercentToNextLevel),
+		std::to_string(newSkillValue + 1)
+	});
 
 	sendTextMessage(MESSAGE_EVENT_ADVANCE, message);
 	return sendUpdate;
@@ -8036,7 +8110,7 @@ void Player::onThink(uint32_t interval) {
 			removePlayer(true);
 		} else if (client && idleTime == 60000 * kickAfterMinutes) {
 			std::ostringstream ss;
-			ss << "There was no variation in your behaviour for " << kickAfterMinutes << " minutes. You will be disconnected in one minute if there is no change in your actions until then.";
+			{ const std::string loc(getLocale().empty() ? "en" : std::string(getLocale())); auto &tr = i18n::g_translator(); ss << tr.format("cpp.player.idle_kick_warning", loc, {std::to_string(kickAfterMinutes)}); }
 			client->sendTextMessage(TextMessage(MESSAGE_ADMINISTRATOR, ss.str()));
 		}
 	}
@@ -8983,21 +9057,21 @@ uint32_t sendStowItems(const std::shared_ptr<Item> &item, const std::shared_ptr<
 
 void Player::stowItem(const std::shared_ptr<Item> &item, uint32_t count, bool allItems) {
 	if (!item || (!item->isItemStorable() && item->getID() != ITEM_GOLD_POUCH)) {
-		sendCancelMessage("This item cannot be stowed here.");
+		sendLocalizedTextMessage(MESSAGE_FAILURE, "cpp.cancel.cannot_stow_here");
 		return;
 	}
 
 	if (!item->isItemStorable() && item->getID() != ITEM_GOLD_POUCH) {
 		if (!item->getParent()) {
-			sendCancelMessage("This item cannot be stowed here.");
+			sendLocalizedTextMessage(MESSAGE_FAILURE, "cpp.cancel.cannot_stow_here");
 			return;
 		}
 		if (!item->getParent()->getItem()) {
-			sendCancelMessage("This item cannot be stowed here.");
+			sendLocalizedTextMessage(MESSAGE_FAILURE, "cpp.cancel.cannot_stow_here");
 			return;
 		}
 		if (item->getParent()->getItem()->getID() != ITEM_GOLD_POUCH) {
-			sendCancelMessage("This item cannot be stowed here.");
+			sendLocalizedTextMessage(MESSAGE_FAILURE, "cpp.cancel.cannot_stow_here");
 			return;
 		}
 	}
@@ -9008,7 +9082,7 @@ void Player::stowItem(const std::shared_ptr<Item> &item, uint32_t count, bool al
 
 	if (allItems) {
 		if (item->getContainer()) {
-			sendCancelMessage("You cannot stow containers.");
+			sendLocalizedTextMessage(MESSAGE_FAILURE, "cpp.cancel.cannot_stow_containers");
 			return;
 		}
 
@@ -9051,12 +9125,12 @@ void Player::stowItem(const std::shared_ptr<Item> &item, uint32_t count, bool al
 	}
 
 	if (itemDict.empty()) {
-		sendCancelMessage("There are no stowable items in this container.");
+		sendLocalizedTextMessage(MESSAGE_FAILURE, "cpp.cancel.no_stowable_items");
 		return;
 	}
 
 	if (totalItemsToStow >= maxItemsToStow) {
-		sendTextMessage(MESSAGE_EVENT_ADVANCE, fmt::format("You have reached the maximum stow limit of {} items. Try to stow again.", maxItemsToStow));
+		sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "server.player.msg_11", { std::to_string(maxItemsToStow) });
 	}
 
 	stashContainer(itemDict);
@@ -9221,24 +9295,30 @@ uint8_t Player::getBlessingCount(uint8_t index, bool storeCount) const {
 }
 
 std::string Player::getBlessingsName() const {
+	const std::string loc(getLocale().empty() ? "en" : std::string(getLocale()));
 	std::vector<std::string> blessingNames;
 	for (const auto &bless : magic_enum::enum_values<Blessings>()) {
 		if (hasBlessing(enumToValue(bless))) {
-			std::string name = toStartCaseWithSpace(magic_enum::enum_name(bless).data());
-			blessingNames.emplace_back(name);
+			const uint8_t blessId = enumToValue(bless);
+			const std::string fallbackName = toStartCaseWithSpace(magic_enum::enum_name(bless).data());
+			const std::string blessKey = fmt::format("cpp.player.blessing_name_{}", blessId);
+			blessingNames.emplace_back(getTranslationOrFallback(blessKey, loc, fallbackName));
 		}
 	}
 
 	std::ostringstream os;
 	if (!blessingNames.empty()) {
-		// Join all elements but the last with ", " and add the last one with " and "
+		const std::string delimiter = getTranslationOrFallback("cpp.player.list_delimiter", loc, ", ");
+		const std::string conjunction = getTranslationOrFallback("cpp.player.list_and", loc, "and ");
+		const std::string terminator = getTranslationOrFallback("cpp.player.list_end", loc, ".");
+
 		for (size_t i = 0; i < blessingNames.size() - 1; ++i) {
-			os << blessingNames[i] << ", ";
+			os << blessingNames[i] << delimiter;
 		}
 		if (blessingNames.size() > 1) {
-			os << "and ";
+			os << conjunction;
 		}
-		os << blessingNames.back() << ".";
+		os << blessingNames.back() << terminator;
 	}
 
 	return os.str();
@@ -9356,6 +9436,23 @@ void Player::setLoyaltyTitle(std::string title) {
 
 std::string Player::getLoyaltyTitle() const {
 	return loyaltyTitle;
+}
+
+std::string Player::getLoyaltyTitleLocalized(std::string_view locale) const {
+	if (loyaltyTitle.empty()) {
+		return {};
+	}
+
+	if (loyaltyTitle.rfind(kLoyaltyTitleKeyPrefix.data(), 0) != 0) {
+		return loyaltyTitle;
+	}
+
+	const std::string localeToUse = locale.empty() ? "en" : std::string(locale);
+	const std::string translated = i18n::g_translator().get(loyaltyTitle, localeToUse);
+	if (translated.empty() || translated == loyaltyTitle) {
+		return loyaltyTitle;
+	}
+	return translated;
 }
 
 uint16_t Player::getLoyaltyBonus() const {
@@ -9760,7 +9857,7 @@ void Player::triggerMomentum() {
 		}
 		if (triggered) {
 			g_game().addMagicEffect(getPosition(), CONST_ME_HOURGLASS);
-			sendTextMessage(MESSAGE_ATTENTION, "Momentum was triggered.");
+			sendLocalizedTextMessage(MESSAGE_ATTENTION, "server.player.msg_6");
 		}
 	}
 }
@@ -9822,7 +9919,7 @@ void Player::triggerTranscendence() {
 		sendStats();
 		sendBasicData();
 
-		sendTextMessage(MESSAGE_ATTENTION, "Transcendence was triggered.");
+		sendLocalizedTextMessage(MESSAGE_ATTENTION, "server.player.msg_7");
 
 		// Send player data after transcendence timer expire
 		const auto &task = createPlayerTask(
@@ -9866,7 +9963,7 @@ void Player::forgeFuseItems(ForgeAction_t actionType, uint16_t firstItemId, uint
 	auto returnValue = g_game().internalRemoveItem(firstForgingItem, 1);
 	if (returnValue != RETURNVALUE_NOERROR) {
 		g_logger().error("[Log 1] Failed to remove forge item {} from player with name {}", firstItemId, getName());
-		sendCancelMessage(getReturnMessage(returnValue));
+		sendCancelMessage(returnValue);
 		sendForgeError(RETURNVALUE_CONTACTADMINISTRATOR);
 		return;
 	}
@@ -9879,7 +9976,7 @@ void Player::forgeFuseItems(ForgeAction_t actionType, uint16_t firstItemId, uint
 	if (returnValue = g_game().internalRemoveItem(secondForgingItem, 1);
 	    returnValue != RETURNVALUE_NOERROR) {
 		g_logger().error("[Log 2] Failed to remove forge item {} from player with name {}", secondItemId, getName());
-		sendCancelMessage(getReturnMessage(returnValue));
+		sendCancelMessage(returnValue);
 		sendForgeError(RETURNVALUE_CONTACTADMINISTRATOR);
 		return;
 	}
@@ -9906,7 +10003,7 @@ void Player::forgeFuseItems(ForgeAction_t actionType, uint16_t firstItemId, uint
 	returnValue = g_game().internalAddItem(exaltationContainer, firstForgedItem, INDEX_WHEREEVER);
 	if (returnValue != RETURNVALUE_NOERROR) {
 		g_logger().error("[Log 1] Failed to add forge item {} from player with name {}", firstItemId, getName());
-		sendCancelMessage(getReturnMessage(returnValue));
+		sendCancelMessage(returnValue);
 		sendForgeError(RETURNVALUE_CONTACTADMINISTRATOR);
 		return;
 	}
@@ -9952,7 +10049,7 @@ void Player::forgeFuseItems(ForgeAction_t actionType, uint16_t firstItemId, uint
 		returnValue = g_game().internalAddItem(exaltationContainer, secondForgedItem, INDEX_WHEREEVER);
 		if (returnValue != RETURNVALUE_NOERROR) {
 			g_logger().error("[Log 2] Failed to add forge item {} from player with name {}", secondItemId, getName());
-			sendCancelMessage(getReturnMessage(returnValue));
+			sendCancelMessage(returnValue);
 			sendForgeError(RETURNVALUE_CONTACTADMINISTRATOR);
 			return;
 		}
@@ -10009,7 +10106,7 @@ void Player::forgeFuseItems(ForgeAction_t actionType, uint16_t firstItemId, uint
 				returnValue = g_game().internalRemoveItem(secondForgedItem, 1);
 				if (returnValue != RETURNVALUE_NOERROR) {
 					g_logger().error("[Log 6] Failed to remove forge item {} from player with name {}", secondItemId, getName());
-					sendCancelMessage(getReturnMessage(returnValue));
+					sendCancelMessage(returnValue);
 					sendForgeError(RETURNVALUE_CONTACTADMINISTRATOR);
 					return;
 				}
@@ -10023,7 +10120,7 @@ void Player::forgeFuseItems(ForgeAction_t actionType, uint16_t firstItemId, uint
 					returnValue = g_game().internalRemoveItem(secondForgedItem, 1);
 					if (returnValue != RETURNVALUE_NOERROR) {
 						g_logger().error("[Log 7] Failed to remove forge item {} from player with name {}", secondItemId, getName());
-						sendCancelMessage(getReturnMessage(returnValue));
+						sendCancelMessage(returnValue);
 						sendForgeError(RETURNVALUE_CONTACTADMINISTRATOR);
 						return;
 					}
@@ -10073,7 +10170,7 @@ void Player::forgeFuseItems(ForgeAction_t actionType, uint16_t firstItemId, uint
 	returnValue = g_game().internalAddItem(static_self_cast<Player>(), exaltationContainer, INDEX_WHEREEVER);
 	if (returnValue != RETURNVALUE_NOERROR) {
 		g_logger().error("Failed to add exaltation chest to player with name {}", getName());
-		sendCancelMessage(getReturnMessage(returnValue));
+		sendCancelMessage(returnValue);
 		sendForgeError(RETURNVALUE_CONTACTADMINISTRATOR);
 		return;
 	}
@@ -10108,7 +10205,7 @@ void Player::forgeTransferItemTier(ForgeAction_t actionType, uint16_t donorItemI
 	auto returnValue = g_game().internalRemoveItem(donorItem, 1);
 	if (returnValue != RETURNVALUE_NOERROR) {
 		g_logger().error("[Log 1] Failed to remove transfer item {} from player with name {}", donorItemId, getName());
-		sendCancelMessage(getReturnMessage(returnValue));
+		sendCancelMessage(returnValue);
 		sendForgeError(RETURNVALUE_CONTACTADMINISTRATOR);
 		return;
 	}
@@ -10122,7 +10219,7 @@ void Player::forgeTransferItemTier(ForgeAction_t actionType, uint16_t donorItemI
 	if (returnValue = g_game().internalRemoveItem(receiveItem, 1);
 	    returnValue != RETURNVALUE_NOERROR) {
 		g_logger().error("[Log 2] Failed to remove transfer item {} from player with name {}", receiveItemId, getName());
-		sendCancelMessage(getReturnMessage(returnValue));
+		sendCancelMessage(returnValue);
 		sendForgeError(RETURNVALUE_CONTACTADMINISTRATOR);
 		return;
 	}
@@ -10148,13 +10245,15 @@ void Player::forgeTransferItemTier(ForgeAction_t actionType, uint16_t donorItemI
 	}
 
 	auto configKey = convergence ? FORGE_CONVERGENCE_TRANSFER_DUST_COST : FORGE_TRANSFER_DUST_COST;
-	if (getForgeDusts() < g_configManager().getNumber(configKey)) {
+	const auto transferDustCost = static_cast<uint64_t>(g_configManager().getNumber(configKey));
+	if (getForgeDusts() < transferDustCost) {
 		g_logger().error("[Log 8] Failed to remove transfer dusts from player with name {}", getName());
 		sendForgeError(RETURNVALUE_CONTACTADMINISTRATOR);
 		return;
 	}
 
-	setForgeDusts(getForgeDusts() - g_configManager().getNumber(configKey));
+	history.dustCost = transferDustCost;
+	setForgeDusts(getForgeDusts() - transferDustCost);
 
 	if (convergence) {
 		newReceiveItem->setTier(tier);
@@ -10164,7 +10263,7 @@ void Player::forgeTransferItemTier(ForgeAction_t actionType, uint16_t donorItemI
 	returnValue = g_game().internalAddItem(exaltationContainer, newReceiveItem, INDEX_WHEREEVER);
 	if (returnValue != RETURNVALUE_NOERROR) {
 		g_logger().error("[Log 7] Failed to add forge item {} from player with name {}", receiveItemId, getName());
-		sendCancelMessage(getReturnMessage(returnValue));
+		sendCancelMessage(returnValue);
 		sendForgeError(RETURNVALUE_CONTACTADMINISTRATOR);
 		return;
 	}
@@ -10193,6 +10292,7 @@ void Player::forgeTransferItemTier(ForgeAction_t actionType, uint16_t donorItemI
 		sendForgeError(RETURNVALUE_CONTACTADMINISTRATOR);
 		return;
 	}
+	history.coresCost = coresAmount;
 
 	if (!g_game().removeMoney(static_self_cast<Player>(), cost, 0, true)) {
 		g_logger().error("[{}] Failed to remove {} gold from player with name {}", __FUNCTION__, cost, getName());
@@ -10205,7 +10305,7 @@ void Player::forgeTransferItemTier(ForgeAction_t actionType, uint16_t donorItemI
 	returnValue = g_game().internalAddItem(static_self_cast<Player>(), exaltationContainer, INDEX_WHEREEVER);
 	if (returnValue != RETURNVALUE_NOERROR) {
 		g_logger().error("[Log 10] Failed to add forge item {} from player with name {}", fmt::underlying(ITEM_EXALTATION_CHEST), getName());
-		sendCancelMessage(getReturnMessage(returnValue));
+		sendCancelMessage(returnValue);
 		sendForgeError(RETURNVALUE_CONTACTADMINISTRATOR);
 		return;
 	}
@@ -10239,7 +10339,7 @@ void Player::forgeResourceConversion(ForgeAction_t actionType) {
 		returnValue = g_game().internalPlayerAddItem(static_self_cast<Player>(), item);
 		if (returnValue != RETURNVALUE_NOERROR) {
 			g_logger().error("Failed to add {} slivers to player with name {}", itemCount, getName());
-			sendCancelMessage(getReturnMessage(returnValue));
+			sendCancelMessage(returnValue);
 			sendForgeError(RETURNVALUE_CONTACTADMINISTRATOR);
 			return;
 		}
@@ -10267,7 +10367,7 @@ void Player::forgeResourceConversion(ForgeAction_t actionType) {
 		}
 		if (returnValue != RETURNVALUE_NOERROR) {
 			g_logger().error("Failed to add one core to player with name {}", getName());
-			sendCancelMessage(getReturnMessage(returnValue));
+			sendCancelMessage(returnValue);
 			sendForgeError(RETURNVALUE_CONTACTADMINISTRATOR);
 			return;
 		}
@@ -10387,151 +10487,73 @@ void Player::setForgeHistory(const ForgeHistory &history) {
 }
 
 void Player::registerForgeHistoryDescription(ForgeHistory history) {
-	std::string successfulString = history.success ? "Successful" : "Unsuccessful";
-	std::string historyTierString = history.tier > 0 ? "tier - 1" : "consumed";
+	const std::string loc(getLocale().empty() ? "en" : std::string(getLocale()));
+	auto &tr = i18n::g_translator();
+	std::string successfulString = history.success ? tr.get("cpp.forge.successful", loc) : tr.get("cpp.forge.unsuccessful", loc);
+	std::string historyTierString = history.tier > 0 ? tr.get("cpp.forge.tier_minus_one", loc) : tr.get("cpp.forge.consumed", loc);
+	std::string convergenceSuffix = history.convergence ? tr.get("cpp.forge.convergence_suffix", loc) : "";
+	std::string unchangedString = tr.get("cpp.forge.unchanged", loc);
 	std::string price = history.bonus != 3 ? formatPrice(std::to_string(history.cost), true) : "0";
 	std::stringstream detailsResponse;
-	auto itemId = Item::items.getItemIdByName(history.firstItemName);
-	const ItemType &itemType = Item::items[itemId];
+	auto firstItemId = Item::items.getItemIdByName(history.firstItemName);
+	auto secondItemId = Item::items.getItemIdByName(history.secondItemName);
+	const ItemType &firstItemType = Item::items[firstItemId];
+	const ItemType &secondItemType = Item::items[secondItemId];
 	if (history.actionType == ForgeAction_t::FUSION) {
-		if (history.success) {
-			detailsResponse << fmt::format(
-				"{:s}{:s} <br><br>"
-				"Fusion partners:"
-				"<ul> "
-				"<li>"
-				"First item: {:s} {:s}, tier {:s}"
-				"</li>"
-				"<li>"
-				"Second item: {:s} {:s}, tier {:s}"
-				"</li>"
-				"</ul>"
-				"<br>"
-				"Result:"
-				"<ul> "
-				"<li>"
-				"First item: tier + 1"
-				"</li>"
-				"<li>"
-				"Second item: {:s}"
-				"</li>"
-				"</ul>"
-				"<br>"
-				"Invested:"
-				"<ul>"
-				"<li>"
-				"{:d} cores"
-				"</li>"
-				"<li>"
-				"{:d} dust"
-				"</li>"
-				"<li>"
-				"{:s} gold"
-				"</li>"
-				"</ul>",
-				successfulString,
-				history.convergence ? " (convergence)" : "",
-				itemType.article, itemType.name, std::to_string(history.tier),
-				itemType.article, itemType.name, std::to_string(history.tier),
-				history.bonus == 8 ? "unchanged" : "consumed",
-				history.coresCost, history.dustCost, price
-			);
-		} else {
-			detailsResponse << fmt::format(
-				"{:s}{:s} <br><br>"
-				"Fusion partners:"
-				"<ul> "
-				"<li>"
-				"First item: {:s} {:s}, tier {:s}"
-				"</li>"
-				"<li>"
-				"Second item: {:s} {:s}, tier {:s}"
-				"</li>"
-				"</ul>"
-				"<br>"
-				"Result:"
-				"<ul> "
-				"<li>"
-				"First item: unchanged"
-				"</li>"
-				"<li>"
-				"Second item: {:s}"
-				"</li>"
-				"</ul>"
-				"<br>"
-				"Invested:"
-				"<ul>"
-				"<li>"
-				"{:d} cores"
-				"</li>"
-				"<li>"
-				"100 dust"
-				"</li>"
-				"<li>"
-				"{:s} gold"
-				"</li>"
-				"</ul>",
-				successfulString,
-				history.convergence ? " (convergence)" : "",
-				itemType.article, itemType.name, std::to_string(history.tier),
-				itemType.article, itemType.name, std::to_string(history.tier),
-				history.bonus == 8 ? "unchanged" : historyTierString,
-				history.coresCost, price
-			);
-		}
-	} else if (history.actionType == ForgeAction_t::TRANSFER) {
-		detailsResponse << fmt::format(
-			"{:s}{:s} <br><br>"
-			"Transfer partners:"
-			"<ul> "
-			"<li>"
-			"First item: {:s} {:s}, tier {:s}"
-			"</li>"
-			"<li>"
-			"Second item: {:s} {:s}, tier {:s}"
-			"</li>"
-			"</ul>"
-			"<br>"
-			"Result:"
-			"<ul> "
-			"<li>"
-			"First item: {:s} {:s}, tier {:s}"
-			"</li>"
-			"<li>"
-			"Second item: {:s} {:s}, {:s}"
-			"</li>"
-			"</ul>"
-			"<br>"
-			"Invested:"
-			"<ul>"
-			"<li>"
-			"1 cores"
-			"</li>"
-			"<li>"
-			"100 dust"
-			"</li>"
-			"<li>"
-			"{:s} gold"
-			"</li>"
-			"</ul>",
+		const std::string firstItemResult = history.success ? tr.get("cpp.forge.tier_plus_one", loc) : unchangedString;
+		const std::string secondItemResult = history.success ?
+			                                    (history.bonus == 8 ? unchangedString : tr.get("cpp.forge.consumed", loc)) :
+			                                    (history.bonus == 8 ? unchangedString : historyTierString);
+		const std::string coresCost = tr.plural("cpp.forge.cores", loc, history.coresCost, {std::to_string(history.coresCost)});
+		const std::string dustCost = tr.plural("cpp.forge.dust", loc, history.dustCost, {std::to_string(history.dustCost)});
+		detailsResponse << tr.format("cpp.forge.history_fusion", loc, {
 			successfulString,
-			history.convergence ? " (convergence)" : "",
-			itemType.article, itemType.name, std::to_string(history.tier),
-			itemType.article, itemType.name, std::to_string(history.tier),
-			itemType.article, itemType.name, std::to_string(history.tier),
-			itemType.article, itemType.name, std::to_string(history.tier),
+			convergenceSuffix,
+			firstItemType.article,
+			firstItemType.name,
+			std::to_string(history.tier),
+			secondItemType.article,
+			secondItemType.name,
+			std::to_string(history.tier),
+			firstItemResult,
+			secondItemResult,
+			coresCost,
+			dustCost,
 			price
-		);
+		});
+	} else if (history.actionType == ForgeAction_t::TRANSFER) {
+		const std::string coresCost = tr.plural("cpp.forge.cores", loc, history.coresCost, {std::to_string(history.coresCost)});
+		const std::string dustCost = tr.plural("cpp.forge.dust", loc, history.dustCost, {std::to_string(history.dustCost)});
+		const std::string resultTier = history.convergence ? std::to_string(history.tier) : historyTierString;
+		detailsResponse << tr.format("cpp.forge.history_transfer", loc, {
+			successfulString,
+			convergenceSuffix,
+			firstItemType.article,
+			firstItemType.name,
+			std::to_string(history.tier),
+			secondItemType.article,
+			secondItemType.name,
+			std::to_string(history.tier),
+			firstItemType.article,
+			firstItemType.name,
+			std::to_string(history.tier),
+			secondItemType.article,
+			secondItemType.name,
+			resultTier,
+			coresCost,
+			dustCost,
+			price
+		});
 	} else if (history.actionType == ForgeAction_t::DUSTTOSLIVERS) {
-		detailsResponse << fmt::format("Converted {:d} dust to {:d} slivers.", history.cost, history.gained);
+		detailsResponse << tr.format("cpp.forge.dust_to_slivers", loc, {std::to_string(history.cost), std::to_string(history.gained)});
 	} else if (history.actionType == ForgeAction_t::SLIVERSTOCORES) {
 		history.actionType = ForgeAction_t::DUSTTOSLIVERS;
-		detailsResponse << fmt::format("Converted {:d} slivers to {:d} exalted core.", history.cost, history.gained);
+		detailsResponse << tr.format("cpp.forge.slivers_to_cores", loc, {std::to_string(history.cost), std::to_string(history.gained)});
 	} else if (history.actionType == ForgeAction_t::INCREASELIMIT) {
 		history.actionType = ForgeAction_t::DUSTTOSLIVERS;
-		detailsResponse << fmt::format("Spent {:d} dust to increase the dust limit to {:d}.", history.cost, history.gained + 1);
+		detailsResponse << tr.format("cpp.forge.increase_dust_limit", loc, {std::to_string(history.cost), std::to_string(history.gained + 1)});
 	} else {
-		detailsResponse << "(unknown)";
+		detailsResponse << tr.get("cpp.forge.unknown", loc);
 	}
 
 	history.description = detailsResponse.str();
@@ -10860,7 +10882,7 @@ void Player::onCreatureMove(const std::shared_ptr<Creature> &creature, const std
 		// TODO: This shouldn't be hardcoded
 		for (const uint32_t modalWindowId : modalWindows) {
 			if (modalWindowId == std::numeric_limits<uint32_t>::max()) {
-				sendTextMessage(MESSAGE_EVENT_ADVANCE, "Offline training aborted.");
+				sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "server.player.msg_8");
 				break;
 			}
 		}
@@ -10910,7 +10932,7 @@ void Player::onAttackedCreatureDisappear(bool isLogout) {
 	sendCancelTarget();
 
 	if (!isLogout) {
-		sendTextMessage(MESSAGE_FAILURE, "Target lost.");
+		sendLocalizedTextMessage(MESSAGE_FAILURE, "server.player.msg_9");
 	}
 }
 
@@ -10918,7 +10940,7 @@ void Player::onFollowCreatureDisappear(bool isLogout) {
 	sendCancelTarget();
 
 	if (!isLogout) {
-		sendTextMessage(MESSAGE_FAILURE, "Target lost.");
+		sendLocalizedTextMessage(MESSAGE_FAILURE, "server.player.msg_10");
 	}
 }
 
@@ -11443,10 +11465,10 @@ void Player::checkAndShowBlessingMessage() {
 		}
 		sendBlessStatus();
 		if (addedBless) {
-			blessOutput << fmt::format("You have received adventurer's blessings for being level lower than {}!\nYou are still blessed with {}", adventurerBlessingLevel, bless);
+			{ const std::string loc(getLocale().empty() ? "en" : std::string(getLocale())); auto &tr = i18n::g_translator(); blessOutput << tr.format("cpp.player.adventurer_blessings_received", loc, {std::to_string(adventurerBlessingLevel), bless}); }
 		}
 	} else {
-		bless.empty() ? blessOutput << "You lost all your blessings." : blessOutput << "You are still blessed with " << bless;
+		{ const std::string loc(getLocale().empty() ? "en" : std::string(getLocale())); auto &tr = i18n::g_translator(); bless.empty() ? blessOutput << tr.get("cpp.player.lost_all_blessings", loc) : blessOutput << tr.format("cpp.player.still_blessed_with", loc, {bless}); }
 	}
 
 	if (!blessOutput.str().empty()) {

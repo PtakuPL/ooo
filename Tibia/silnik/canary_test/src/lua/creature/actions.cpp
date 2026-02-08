@@ -10,6 +10,7 @@
 #include "lua/creature/actions.hpp"
 
 #include "config/configmanager.hpp"
+#include "utils/i18n/translator.hpp"
 #include "creatures/combat/spells.hpp"
 #include "creatures/players/player.hpp"
 #include "enums/account_group_type.hpp"
@@ -483,17 +484,17 @@ bool Actions::useItemEx(const std::shared_ptr<Player> &player, const Position &f
 }
 
 void Actions::showUseHotkeyMessage(const std::shared_ptr<Player> &player, const std::shared_ptr<Item> &item, uint32_t count) {
-	std::ostringstream ss;
+	const auto &tr = i18n::g_translator();
+	const std::string loc = player->getLocale();
 
 	const ItemType &it = Item::items[item->getID()];
 	if (!it.showCount) {
-		ss << "Using one of " << item->getName() << "...";
+		player->sendLocalizedTextMessage(MESSAGE_HOTKEY_PRESSED, "cpp.hotkey.using_one", { item->getName() });
 	} else if (count == 1) {
-		ss << "Using the last " << item->getName() << "...";
+		player->sendLocalizedTextMessage(MESSAGE_HOTKEY_PRESSED, "cpp.hotkey.using_last", { item->getName() });
 	} else {
-		ss << "Using one of " << count << ' ' << item->getPluralName() << "...";
+		player->sendLocalizedTextMessage(MESSAGE_HOTKEY_PRESSED, "cpp.hotkey.using_count", { std::to_string(count), item->getPluralName() });
 	}
-	player->sendTextMessage(MESSAGE_HOTKEY_PRESSED, ss.str());
 }
 
 /*

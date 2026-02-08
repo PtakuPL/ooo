@@ -10,7 +10,7 @@ function die.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 
 		local spectators = Game.getSpectators(position, false, true, 3, 3)
 		for _, spectator in ipairs(spectators) do
-			player:say(player:getName() .. " rolled a " .. value .. ".", TALKTYPE_MONSTER_SAY, isInGhostMode, spectator, position)
+			player:sayLocalized("scripts.die.rolled", TALKTYPE_MONSTER_SAY, isInGhostMode, spectator, position, { player:getName(), tostring(value) })
 		end
 	end
 

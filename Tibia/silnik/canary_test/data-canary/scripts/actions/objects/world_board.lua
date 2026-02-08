@@ -1,7 +1,7 @@
-local communicates = {
-	"Welcome to Canary Server! Visit the organization to see all our work: https://github.com/opentibiabr",
-	"Did you like it? Help support what we do here with a donation by visiting the link: https://docs.opentibiabr.com/home/donate/",
-	"Visit our discord to ask questions or report issues: https://discord.gg/gvTj5sh9Mp",
+local communicateKeys = {
+	"scripts.world_board.msg_1",
+	"scripts.world_board.msg_2",
+	"scripts.world_board.msg_3",
 }
 
 local scriptConfig = {
@@ -25,8 +25,8 @@ function worldBoard.onUse(player, item, fromPosition, target, toPosition, isHotk
 		return false
 	end
 
-	for index, value in pairs(communicates) do
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, value)
+	for _, key in ipairs(communicateKeys) do
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, key)
 	end
 	return true
 end

@@ -157,10 +157,6 @@ keywordHandler:addKeyword({ "thais" }, StdModule.say, {
 	npcHandler = npcHandler,
 	i18nKey = "npc.elathriel.stdmod_28",
 })
-keywordHandler:addKeyword({ "carlin" }, StdModule.say, {
-	npcHandler = npcHandler,
-	text = "",
-})
 keywordHandler:addKeyword({ "offer" }, StdModule.say, {
 	npcHandler = npcHandler,
 	i18nKey = "npc.elathriel.stdmod_29",
@@ -183,12 +179,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "key") then
-		npcHandler:say(
-			"If you are that curious, do you want to buy a key for 5000 gold? \z
-						Don't blame me if you get sucked in.",
-			npc,
-			creature
-		)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.elathriel.say_key")
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
@@ -215,12 +206,12 @@ end
 -- Greeting message
 keywordHandler:addGreetKeyword({ "ashari" }, {
 	npcHandler = npcHandler,
-	text = "Be greeted |PLAYERNAME|. What is your {business} near the {hellgate}?", i18nKey = "npc.elathriel.greet_1",
+	i18nKey = "npc.elathriel.greet_1",
 })
 --Farewell message
 keywordHandler:addFarewellKeyword({ "asgha thrazi" }, {
 	npcHandler = npcHandler,
-	text = "Asha Thrazi, |PLAYERNAME|.", i18nKey = "npc.elathriel.farewell_1",
+	i18nKey = "npc.elathriel.farewell_1",
 })
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)

@@ -5,7 +5,7 @@ function unban.onSay(player, words, param)
 	logCommand(player, words, param)
 
 	if param == "" then
-		player:sendCancelMessage("Command param required.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_command_param_required")
 		return true
 	end
 
@@ -18,7 +18,7 @@ function unban.onSay(player, words, param)
 	db.asyncQuery("DELETE FROM `ip_bans` WHERE `ip` = " .. Result.getNumber(resultId, "lastip"))
 	Result.free(resultId)
 	local text = param .. " has been unbanned."
-	player:sendTextMessage(MESSAGE_ADMINISTRATOR, text)
+	player:sendLocalizedTextMessage(MESSAGE_ADMINISTRATOR, "talkaction.gm.unban.msg_unbanned", {param})
 	Webhook.sendMessage("Player Unbanned", text .. " (by: " .. player:getName() .. ")", WEBHOOK_COLOR_YELLOW, announcementChannels["serverAnnouncements"])
 	return true
 end

@@ -48,12 +48,7 @@ end
 -- Wooden Stake Quest
 local stakeKeyword = keywordHandler:addKeyword({ "stake" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"A blessed stake to defeat evil spirits? I do know an old prayer which is said to grant sacred power and to be able to bind this power to someone, or something. ...",
-		"However, this prayer needs the combined energy of ten priests. Each of them has to say one line of the prayer. ...",
-		"I could start with the prayer, but since the next priest has to be in a different location, you probably will have to travel a lot. ...",
-		"Is this stake really important enough to you so that you are willing to take this burden?",
-	},
+	i18nKey = "npc.quentin.stdmod_32",
 }, function(player)
 	return player:getStorageValue(Storage.Quest.U7_8.FriendsAndTraders.TheBlessedStake) == -1
 end)
@@ -84,12 +79,7 @@ keywordHandler:addKeyword({ "stake" }, StdModule.say, { npcHandler = npcHandler,
 -- Twist of Fate
 local blessKeyword = keywordHandler:addKeyword({ "twist of fate" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"This is a special blessing I can bestow upon you once you have obtained at least one of the other blessings and which functions a bit differently. ...",
-		"It only works when you're killed by other adventurers, which means that at least half of the damage leading to your death was caused by others, not by monsters or the environment. ...",
-		"The {twist of fate} will not reduce the death penalty like the other blessings, but instead prevent you from losing your other blessings as well as the amulet of loss, should you wear one. It costs the same as the other blessings. ...",
-		"Would you like to receive that protection for a sacrifice of |PVPBLESSCOST| gold, child?",
-	},
+	i18nKey = "npc.quentin.stdmod_33",
 })
 blessKeyword:addChildKeyword({ "yes" }, StdModule.bless, { npcHandler = npcHandler, i18nKey = "npc.quentin.keyword_1", cost = "|PVPBLESSCOST|", bless = 1 })
 blessKeyword:addChildKeyword({ "" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.quentin.stdmod_8", reset = true })

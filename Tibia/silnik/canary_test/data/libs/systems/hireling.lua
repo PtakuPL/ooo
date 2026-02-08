@@ -338,7 +338,7 @@ function Hireling:returnToLamp(player_id)
 	local player = Player(player_id)
 	if self:getOwnerId() ~= player_id then
 		player:getPosition():sendMagicEffect(CONST_ME_POFF)
-		return player:sendLocalizedMessage(MESSAGE_FAILURE, "misc.hireling.msg_1")
+		return player:sendLocalizedTextMessage(MESSAGE_FAILURE, "misc.hireling.msg_1")
 	end
 
 	self.active = 0
@@ -356,14 +356,14 @@ function Hireling:returnToLamp(player_id)
 		local lampType = ItemType(HIRELING_LAMP)
 		if owner:getFreeCapacity() < lampType:getWeight(1) then
 			owner:getPosition():sendMagicEffect(CONST_ME_POFF)
-			return owner:sendTextMessage(MESSAGE_FAILURE, "You do not have enough capacity.")
+			return owner:sendLocalizedTextMessage(MESSAGE_FAILURE, "lib.hireling.msg1")
 		end
 
 		local inbox = owner:getStoreInbox()
 		local inboxItems = inbox:getItems()
 		if not inbox or #inboxItems >= inbox:getMaxCapacity() then
 			owner:getPosition():sendMagicEffect(CONST_ME_POFF)
-			return owner:sendTextMessage(MESSAGE_FAILURE, "You don't have enough room in your inbox.")
+			return owner:sendLocalizedTextMessage(MESSAGE_FAILURE, "lib.hireling.msg2")
 		end
 
 		local hireling = getHirelingById(hirelingId)
@@ -371,11 +371,12 @@ function Hireling:returnToLamp(player_id)
 			return logger.error("[Hireling:returnToLamp] - Hireling not found or is nil for hireling name for player {}.", owner:getName())
 		end
 
-		npc:say("As you wish!", TALKTYPE_PRIVATE_NP, false, owner, npc:getPosition())
+		npc:sayLocalized("lib.hireling.as_you_wish", TALKTYPE_PRIVATE_NP, false, owner, npc:getPosition())
 		local lamp = inbox:addItem(HIRELING_LAMP, 1, INDEX_WHEREEVER, FLAG_NOLIMIT)
 		npc:getPosition():sendMagicEffect(CONST_ME_PURPLESMOKE)
 		npc:remove() --remove hireling
-		lamp:setAttribute(ITEM_ATTRIBUTE_DESCRIPTION, "This mysterious lamp summons your very own personal hireling.\nThis item cannot be traded.\nThis magic lamp is the home of " .. self:getName() .. ".")
+		local desc = string.format(i18nTranslate("lib.hireling.lamp_description", "en"), self:getName())
+		lamp:setAttribute(ITEM_ATTRIBUTE_DESCRIPTION, desc)
 		lamp:setCustomAttribute("Hireling", hirelingId) --save hirelingId on item
 		hireling:setPosition({ x = 0, y = 0, z = 0 })
 	end, 1000, self.cid, player:getGuid(), self.id)
@@ -550,7 +551,7 @@ function Player:addNewHireling(name, sex)
 	local lampType = ItemType(HIRELING_LAMP)
 	if not lampType or self:getFreeCapacity() < lampType:getWeight(1) then
 		self:getPosition():sendMagicEffect(CONST_ME_POFF)
-		self:sendTextMessage(MESSAGE_FAILURE, "You do not have enough capacity.")
+		self:sendLocalizedTextMessage(MESSAGE_FAILURE, "lib.hireling.msg3")
 		return false
 	end
 
@@ -558,7 +559,7 @@ function Player:addNewHireling(name, sex)
 	local inboxItems = inbox:getItems()
 	if not inbox or #inboxItems >= inbox:getMaxCapacity() then
 		self:getPosition():sendMagicEffect(CONST_ME_POFF)
-		self:sendTextMessage(MESSAGE_FAILURE, "You don't have enough room in your inbox.")
+		self:sendLocalizedTextMessage(MESSAGE_FAILURE, "lib.hireling.msg4")
 		return false
 	end
 

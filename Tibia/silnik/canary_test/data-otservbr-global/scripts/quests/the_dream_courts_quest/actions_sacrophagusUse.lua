@@ -32,7 +32,7 @@ local function resetActionId(player, itemid, position, actionid, message, reward
 		if check then
 			if check:getActionId() == actionid then
 				if r >= 7 then
-					player:say(message, TALKTYPE_MONSTER_SAY)
+					player:sayLocalized(message, TALKTYPE_MONSTER_SAY)
 					local item = player:addItem(rewardid, 1)
 					item:decay()
 				else
@@ -67,7 +67,7 @@ function actions_sacrophagusUse.onUse(player, item, fromPosition, target, toPosi
 	if player:getStorageValue(storage) == 1 and isInQuest < 1 then
 		for _, k in pairs(sacrophagus) do
 			if tPos == k.hisPosition then
-				resetActionId(player:getId(), tId, tPos, 23104, "You got a " .. ItemType(rewardId):getName() .. "!", rewardId)
+				resetActionId(player:getId(), tId, tPos, 23104, "quests.dream_courts.sarcophagus_say_1" .. ItemType(rewardId):getName() .. "!", rewardId)
 			end
 		end
 	end

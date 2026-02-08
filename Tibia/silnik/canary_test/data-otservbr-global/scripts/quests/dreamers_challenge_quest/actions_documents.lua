@@ -33,14 +33,14 @@ function dreamerDocuments.onUse(player, item, fromPosition, target, toPosition, 
 				if player:getStorageValue(Storage.Quest.U7_9.NightmareOutfits.Outfits) >= useItem.storageValue or player:getStorageValue(Storage.Quest.U7_9.BrotherhoodOutfits.Outfits) >= useItem.storageValue then
 					player:addOutfitAddon(choice.female, choice.addon)
 					player:addOutfitAddon(choice.male, choice.addon)
-					player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_documents.msg_1" .. choice.msg .. " addon!")
+					player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_documents.msg_1", { choice.msg })
 					player:getPosition():sendMagicEffect(CONST_ME_MAGIC_GREEN)
 					item:remove(1)
 				else
 					return false
 				end
 			else
-				player:sendCancelMessage("You have already obtained this addon!")
+				player:sendLocalizedCancelMessage("quests.dreamers_challenge_quest.you_have_already_obtained_this_addon")
 			end
 		else
 			return false
@@ -50,14 +50,14 @@ function dreamerDocuments.onUse(player, item, fromPosition, target, toPosition, 
 			if player:getStorageValue(Storage.Quest.U7_9.NightmareOutfits.Outfits) >= 1 or player:getStorageValue(Storage.Quest.U7_9.BrotherhoodOutfits.Outfits) >= 1 then
 				player:addOutfit(choice.female)
 				player:addOutfit(choice.male)
-				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_documents.msg_2" .. choice.msg .. " outfit!")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_documents.msg_2", { choice.msg })
 				player:getPosition():sendMagicEffect(CONST_ME_MAGIC_GREEN)
 				item:remove(1)
 			else
 				return false
 			end
 		else
-			player:sendCancelMessage("You have already obtained this outfit!")
+			player:sendLocalizedCancelMessage("quests.adventures_of_galthen.you_have_already_obtained_this_outfit")
 		end
 	end
 	return true

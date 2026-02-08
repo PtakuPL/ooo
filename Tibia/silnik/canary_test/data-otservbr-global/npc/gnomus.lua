@@ -237,7 +237,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			if amount[playerId] > 1 then
 				plural = plural .. "s"
 			end
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You earned " .. amount[playerId] .. " point" .. plural .. " on the gnomes mission.")
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quest.dangerous_depths.earned_points_gnomes", {amount[playerId]})
 			player:removeItem(27653, amount[playerId])
 			player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Points, player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Points) + amount[playerId])
 		else
@@ -250,7 +250,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			if amount[playerId] > 1 then
 				plural = plural .. "s"
 			end
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You earned " .. amount[playerId] .. " point" .. plural .. " on the dwarves mission.")
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quest.dangerous_depths.earned_points_dwarves", {amount[playerId]})
 			player:removeItem(27653, amount[playerId])
 			player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.Points, player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.Points) + amount[playerId])
 		else
@@ -263,7 +263,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			if amount[playerId] > 1 then
 				plural = plural .. "s"
 			end
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You earned " .. amount[playerId] .. " point" .. plural .. " on the scouts mission.")
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quest.dangerous_depths.earned_points_scouts", {amount[playerId]})
 			player:removeItem(27653, amount[playerId])
 			player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Scouts.Points, player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Scouts.Points) + amount[playerId])
 		else
@@ -289,23 +289,12 @@ end
 keywordHandler:addKeyword({ "help" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.gnomus.stdmod_1" })
 keywordHandler:addKeyword({ "worthy" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"You're already known amongst the gnomes, member of the Bigfoot Brigade. I will make sure that the alliance learns of your deeds but you'll still need to help the dwarves and gnomes of this outpost to show your worth. ...",
-		"We also found {suspicious devices} carried by all kinds of creatures down here. Down here, they are of extreme worth to us since they could contain the key to what's happening all around us. ...",
-		"If you can aquire any, return them to me and I make sure to tell the others of your generosity. Return to me afterwards to check on your current {status}.",
-	},
+	i18nKey = "npc.gnomus.stdmod_4",
 })
-keywordHandler:addKeyword({ "base" }, StdModule.say, { npcHandler = npcHandler, text = {
-	"Gnomish supplies and ingenuity have helped to establish and fortify this outpost. ...",
-	"Our knowledge of the enemy and it's tactics would be of more use if the dwarves would listen to us somewhat more. But gnomes have learned to live with the imperfection of the other races.",
-} })
+keywordHandler:addKeyword({ "base" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.gnomus.stdmod_6" })
 keywordHandler:addKeyword({ "efforts" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"Our surveys of the area showed us some spikes in heat and seismic activity at very specific places. ...",
-		"We conclude this is no coincidence and the enemy is using devices to pump up the lava to flood the area. We have seen it before and had to retreat each time. ...",
-		"This time though we might have a counter prepared - given me manage to pierce their defences.",
-	},
+	i18nKey = "npc.gnomus.stdmod_5",
 })
 keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.gnomus.stdmod_2" })
 keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.gnomus.stdmod_3" })

@@ -55,9 +55,7 @@ local function greetCallback(npc, creature, message)
 	local player = Player(creature)
 
 	if player:getStorageValue(HiddenThreats.CorymRescued02) < 0 then
-		npcHandler:setMessage(MESSAGE_GREET, {
-			"Every man is the architect of his own fortune. There will be the day of {pay back}.",
-		})
+		npcHandler:setLocalizedMessage(MESSAGE_GREET, "npc.corym_slave.greet_msg_2")
 	else
 		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.corym_slave.greet_msg_1")
 	end

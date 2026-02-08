@@ -51,9 +51,9 @@ void PlayerVIP::notifyStatusChange(const std::shared_ptr<Player> &loginPlayer, V
 
 	if (message) {
 		if (vipStatus == VipStatus_t::Online) {
-			m_player.sendTextMessage(TextMessage(MESSAGE_FAILURE, fmt::format("{} has logged in.", loginPlayer->getName())));
+			m_player.sendLocalizedTextMessage(MESSAGE_FAILURE, "server.player_vip.msg_3", { loginPlayer->getName() });
 		} else if (vipStatus == VipStatus_t::Offline) {
-			m_player.sendTextMessage(TextMessage(MESSAGE_FAILURE, fmt::format("{} has logged out.", loginPlayer->getName())));
+			m_player.sendLocalizedTextMessage(MESSAGE_FAILURE, "server.player_vip.msg_4", { loginPlayer->getName() });
 		}
 	}
 }
@@ -73,12 +73,12 @@ bool PlayerVIP::remove(uint32_t vipGuid) {
 
 bool PlayerVIP::add(uint32_t vipGuid, const std::string &vipName, VipStatus_t vipStatus) {
 	if (vipGuids.size() >= getMaxEntries() || vipGuids.size() == 200) { // max number of buddies is 200 in 9.53
-		m_player.sendTextMessage(MESSAGE_FAILURE, "You cannot add more buddies.");
+		m_player.sendLocalizedTextMessage(MESSAGE_FAILURE, "server.player_vip.msg_1");
 		return false;
 	}
 
 	if (!vipGuids.insert(vipGuid).second) {
-		m_player.sendTextMessage(MESSAGE_FAILURE, "This player is already in your list.");
+		m_player.sendLocalizedTextMessage(MESSAGE_FAILURE, "server.player_vip.msg_2");
 		return false;
 	}
 
@@ -178,7 +178,7 @@ void PlayerVIP::removeGroup(uint8_t groupId) {
 
 void PlayerVIP::addGroup(const std::string &name, bool customizable /*= true */) {
 	if (getGroupByName(name) != nullptr) {
-		m_player.sendCancelMessage("A group with this name already exists. Please choose another name.");
+		m_player.sendLocalizedTextMessage(MESSAGE_FAILURE, "cpp.cancel.group_name_exists");
 		return;
 	}
 
@@ -202,7 +202,7 @@ void PlayerVIP::addGroup(const std::string &name, bool customizable /*= true */)
 
 void PlayerVIP::editGroup(uint8_t groupId, const std::string &newName, bool customizable /*= true*/) const {
 	if (getGroupByName(newName) != nullptr) {
-		m_player.sendCancelMessage("A group with this name already exists. Please choose another name.");
+		m_player.sendLocalizedTextMessage(MESSAGE_FAILURE, "cpp.cancel.group_name_exists");
 		return;
 	}
 

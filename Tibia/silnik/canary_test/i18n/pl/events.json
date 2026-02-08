@@ -1,7 +1,16 @@
 {
-  "event.player.msg1": "You can't move that Przedmiot so fast.",
-  "event.player.msg2": "[PL] daily-reward-xp-boost",
-  "event.player.msg3": "[PL] daily-reward-xp-boost",
-  "event.player.msg4": "[PL] daily-reward-xp-boost",
-  "event.player.msg5": "[PL] daily-reward-xp-boost"
+  "event.player.msg1": "Lekarz rejonowyżesz't I. that przedmiot I. I..",
+  "event.player.msg2": "I.-nagroda-xp-I.",
+  "event.player.msg3": "I.-nagroda-xp-I.",
+  "event.player.msg4": "I.-nagroda-xp-I.",
+  "event.player.msg5": "I.-nagroda-xp-I.",
+  "event.player.msg_1": "Jesteś Nie longer refilling wytrzymałość, wytrwałość, I. ty I. jeden regeneration strefa.",
+  "event.player.msg_2": "There był jeden błąd when processing twój I., Proszę I. jeden gamemaster.",
+  "event.player.msg_3": "I. ty dla I. {}. Twój I. \\z will być processed by {} zespół as wkrótce, szybko as możliwy.",
+  "event.player.msg_4": "There był jeden błąd when processing twój I., Proszę I. jeden gamemaster.",
+  "event.player.msg_5": "Twój I. jest istota processed.",
+  "event.player.say_1": "Ty I. the żółw, Niew ty a. móc I..",
+  "event.player.msg_move_fast": "Lekarz rejonowyżesz't I. that przedmiot I. I..",
+  "event.player.msg_report_sent": "Twój I. ma był sent do {server}.",
+  "event.player.stamina_pz_recharge": "W ochrona, osłona strefa. Recharging {0} wytrzymałość, wytrwałość I. {1} minuty."
 }

@@ -167,15 +167,18 @@ function goshnarGreedEntrance.onStepIn(creature, item, position, fromPosition)
 
 	local soulWarQuest = player:soulWarQuestKV()
 	local hasAccess = true
-	local message = "Progress towards Mirrored Nightmare boss access:\n"
+	local headerTpl = Translator.getTranslation(player, "quest.soul_war.boss_progress_header")
+	local killsTpl = Translator.getTranslation(player, "quest.soul_war.boss_progress_kills")
+	local accessTpl = Translator.getTranslation(player, "quest.soul_war.boss_progress_access")
+	local message = headerTpl .. "\n"
 
 	for _, apparitionName in pairs(SoulWarQuest.apparitionNames) do
 		local count = soulWarQuest:get(apparitionName) or 0
 		if count < SoulWarQuest.requiredCountPerApparition then
 			hasAccess = false
-			message = message .. apparitionName .. ": " .. count .. "/" .. SoulWarQuest.requiredCountPerApparition .. " kills\n"
+			message = message .. string.format(killsTpl, apparitionName, count, SoulWarQuest.requiredCountPerApparition) .. "\n"
 		else
-			message = message .. apparitionName .. ": Access achieved!\n"
+			message = message .. string.format(accessTpl, apparitionName) .. "\n"
 		end
 	end
 
@@ -212,7 +215,7 @@ function checkTaint.onSay(player, words, param)
 	local taintLevel = player:getTaintLevel()
 	local taintName = player:getTaintNameByNumber(taintLevel)
 	if taintLevel ~= nil and taintName ~= nil then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Your current taint level is: " .. taintLevel .. " name: " .. taintName)
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.soul_war.current_taint", {tostring(taintLevel), taintName})
 	else
 		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.soul_war_mechanics.msg_3")
 	end
@@ -238,8 +241,8 @@ function setTaint.onSay(player, words, param)
 	if taintName ~= nil then
 		target:resetTaints(true)
 		target:soulWarQuestKV():set(taintName, true)
-		target:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You new taint level is: " .. taintLevel .. ", name: " .. taintName)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Added taint level: " .. taintLevel .. ", name: " .. taintName .. " to player: " .. target:getName())
+		target:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.soul_war.new_taint", {tostring(taintLevel), taintName})
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.soul_war.added_taint", {tostring(taintLevel), taintName, target:getName()})
 		target:setTaintIcon()
 	end
 end
@@ -288,8 +291,8 @@ function setTaint.onSay(player, words, param)
 	local taintName = player:getTaintNameByNumber(tonumber(taintLevel))
 	if taintName ~= nil then
 		target:soulWarQuestKV():remove(taintName)
-		target:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You lose taint level: " .. taintLevel .. ", name: " .. taintName)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Removed taint level: " .. taintLevel .. ", name: " .. taintName .. " from player: " .. target:getName())
+		target:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.soul_war.lose_taint", {tostring(taintLevel), taintName})
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.soul_war.removed_taint", {tostring(taintLevel), taintName, target:getName()})
 	end
 end
 

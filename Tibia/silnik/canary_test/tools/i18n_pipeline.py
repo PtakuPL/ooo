@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
 """
-Run the full server-side i18n tooling pipeline (extract ➜ sync ➜ items ➜ report)
-with a single command so both agents can refresh data/CSV in one step.
+Run the full i18n tooling pipeline (extract ➜ sync ➜ items ➜ questlog ➜ client-export ➜ report)
+with a single command so both agents can refresh server and client artifacts in one step.
 
 Example:
     python tools/i18n_pipeline.py --locales pl
@@ -20,6 +20,8 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 BUILD_I18N_DIR = PROJECT_ROOT / "build" / "i18n"
 DEFAULT_MESSAGES = BUILD_I18N_DIR / "messages.json"
 DEFAULT_REPORTS_DIR = PROJECT_ROOT / "i18n" / "reports"
+DEFAULT_CLIENT_LOCALES_DIR = PROJECT_ROOT / "testyy" / "data" / "locales"
+DEFAULT_QUESTS_FILE = PROJECT_ROOT / "data-otservbr-global" / "lib" / "core" / "quests.lua"
 
 
 def run_step(cmd: Sequence[str], *, cwd: Path = PROJECT_ROOT) -> None:
@@ -60,6 +62,27 @@ def parse_args(argv: Sequence[str]) -> argparse.Namespace:
 		action="store_true",
 		help="Skip export_items_translations.py (useful for quick sync/report).",
 	)
+	parser.add_argument(
+		"--skip-questlog",
+		action="store_true",
+		help="Skip export_questlog_translations.py (quest log names/missions/states).",
+	)
+	parser.add_argument(
+		"--client-locales-dir",
+		type=Path,
+		default=DEFAULT_CLIENT_LOCALES_DIR,
+		help="Directory for generated OTClient Lua locales (default: %(default)s).",
+	)
+	parser.add_argument(
+		"--skip-client-export",
+		action="store_true",
+		help="Skip json_to_lua_locales.py export (OTClient locale package).",
+	)
+	parser.add_argument(
+		"--client-compact-keys",
+		action="store_true",
+		help="Also export compact-key OTClient locales using i18n/keymap.json.",
+	)
 	return parser.parse_args(argv)
 
 
@@ -69,9 +92,12 @@ def main(argv: Sequence[str]) -> int:
 	messages_out = args.messages_out
 	reports_dir = args.reports_dir
 	i18n_root = args.i18n_root
+	client_locales_dir = args.client_locales_dir
 
 	BUILD_I18N_DIR.mkdir(parents=True, exist_ok=True)
 	reports_dir.mkdir(parents=True, exist_ok=True)
+	if not args.skip_client_export:
+		client_locales_dir.mkdir(parents=True, exist_ok=True)
 
 	run_step(["python3", "tools/i18n_extract_messages.py", "--out", str(messages_out)])
 
@@ -96,6 +122,46 @@ def main(argv: Sequence[str]) -> int:
 			cmd.extend(["--locale", locale])
 		cmd.extend(["--i18n-root", str(i18n_root)])
 		run_step(cmd)
+
+	if not args.skip_questlog:
+		questlog_cmd = [
+			"python3",
+			"tools/export_questlog_translations.py",
+			"--locale",
+			"en",
+			"--quests-file",
+			str(DEFAULT_QUESTS_FILE),
+			"--i18n-root",
+			str(i18n_root),
+		]
+		run_step(questlog_cmd)
+
+	if not args.skip_client_export:
+		client_cmd = [
+			"python3",
+			"tools/json_to_lua_locales.py",
+			"--all",
+			"--server-dir",
+			str(i18n_root),
+			"--client-dir",
+			str(client_locales_dir),
+		]
+		run_step(client_cmd)
+
+		if args.client_compact_keys:
+			compact_client_cmd = [
+				"python3",
+				"tools/json_to_lua_locales.py",
+				"--all",
+				"--compact-keys",
+				"--server-dir",
+				str(i18n_root),
+				"--client-dir",
+				str(client_locales_dir),
+				"--i18n-dir",
+				str(i18n_root),
+			]
+			run_step(compact_client_cmd)
 
 	report_cmd = [
 		"python3",

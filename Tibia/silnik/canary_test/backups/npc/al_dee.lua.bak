@@ -165,7 +165,7 @@ keywordHandler:addAliasKeyword({ "small", "axe" })
 
 NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.al_dee.walkaway_msg_1")
 NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.al_dee.farewell_msg_1")
-npcHandler:setMessage(MESSAGE_SENDTRADE, "Take a look in the trade window to your left.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_SENDTRADE, "npc.al_dee.sendtrade_msg_1")
 npcHandler:setMessage(MESSAGE_GREET, {
 	"Hello, hello, |PLAYERNAME|! Please come in, look, and buy! I'm a specialist for all sorts of {tools}. Just ask me for a {trade} to see my offers! You can also ask me for general {hints} about the game. ...",
 	"You can also ask me about each {citizen} of the isle.",

@@ -61,8 +61,8 @@ keywordHandler:addKeyword({ "water" }, StdModule.say, { npcHandler = npcHandler,
 keywordHandler:addKeyword({ "marlene" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.graubart.stdmod_9" })
 keywordHandler:addKeyword({ "bruno" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.graubart.stdmod_10" })
 
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye and don't forget me!")
-npcHandler:setMessage(MESSAGE_GREET, "Ahoi, young man |PLAYERNAME|. Looking for work on my ship?")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.graubart.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.graubart.greet_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

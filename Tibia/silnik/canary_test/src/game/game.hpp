@@ -145,7 +145,7 @@ public:
 	std::shared_ptr<Thing> internalGetThing(const std::shared_ptr<Player> &player, const Position &pos, int32_t index, uint32_t itemId, StackPosType_t type);
 	static void internalGetPosition(const std::shared_ptr<Item> &item, Position &pos, uint8_t &stackpos);
 
-	static std::string getTradeErrorDescription(ReturnValue ret, const std::shared_ptr<Item> &item);
+	static std::string getTradeErrorDescription(ReturnValue ret, const std::shared_ptr<Item> &item, std::string_view locale = {});
 
 	std::shared_ptr<Creature> getCreatureByID(uint32_t id);
 
@@ -849,7 +849,7 @@ private:
 
 	std::unordered_set<std::shared_ptr<Tile>> tilesToClean;
 
-	ModalWindow offlineTrainingWindow { std::numeric_limits<uint32_t>::max(), "Choose a Skill", "Please choose a skill:" };
+		ModalWindow offlineTrainingWindow { std::numeric_limits<uint32_t>::max(), "cpp.game.offline_training_title", "cpp.game.offline_training_message" };
 
 	static constexpr int32_t DAY_LENGTH_SECONDS = 3600;
 	static constexpr int32_t LIGHT_DAY_LENGTH = 1440;
@@ -908,19 +908,20 @@ private:
 
 	void buildMessageAsAttacker(
 		const std::shared_ptr<Creature> &target, const CombatDamage &damage, TextMessage &message,
-		std::stringstream &ss, const std::string &damageString, bool amplified = false, const std::shared_ptr<Player> &attackerPlayer = nullptr
+		int32_t realDamage, bool amplified, const std::shared_ptr<Player> &attackerPlayer,
+		const std::string &locale
 	) const;
 
 	void buildMessageAsTarget(
 		const std::shared_ptr<Creature> &attacker, const CombatDamage &damage, const std::shared_ptr<Player> &attackerPlayer,
-		const std::shared_ptr<Player> &targetPlayer, TextMessage &message, std::stringstream &ss,
-		const std::string &damageString
+		const std::shared_ptr<Player> &targetPlayer, TextMessage &message,
+		int32_t realDamage, const std::string &locale
 	) const;
 
 	void buildMessageAsSpectator(
 		const std::shared_ptr<Creature> &attacker, const std::shared_ptr<Creature> &target, const CombatDamage &damage,
-		const std::shared_ptr<Player> &targetPlayer, TextMessage &message, std::stringstream &ss,
-		const std::string &damageString, std::string &spectatorMessage
+		const std::shared_ptr<Player> &targetPlayer, TextMessage &message,
+		int32_t realDamage, const std::string &locale
 	) const;
 
 	void unwrapItem(const std::shared_ptr<Item> &item, uint16_t unWrapId, const std::shared_ptr<House> &house, const std::shared_ptr<Player> &player);

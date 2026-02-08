@@ -76,7 +76,7 @@ function soul_war_megalomania_entrance.onStepIn(creature, item, position, fromPo
 	end
 
 	if soulWarCount < 5 then
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.moveevent-soul_war_entrances.msg_4" .. text)
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.moveevent-soul_war_entrances.msg_4", { text })
 		player:teleportTo(fromPosition, true)
 		return false
 	end
@@ -128,7 +128,7 @@ function goshnarSpiteEntrance.onStepIn(creature, item, position, fromPosition)
 	local soulWarQuest = player:soulWarQuestKV()
 	local killCount = soulWarQuest:get("hazardous-phantom-death") or 0
 	if killCount < 20 then
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.moveevent-soul_war_entrances.msg_5" .. killCount .. " and need to kill 20 Hazardous Phantoms")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.moveevent-soul_war_entrances.msg_5", { tostring(killCount), "20" })
 		player:teleportTo(fromPosition, true)
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 		return false

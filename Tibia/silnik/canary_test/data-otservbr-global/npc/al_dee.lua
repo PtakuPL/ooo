@@ -163,13 +163,18 @@ pickKeyword:addChildKeyword({ "yes" }, StdModule.say, { npcHandler = npcHandler,
 pickKeyword:addChildKeyword({ "" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.al_dee.stdmod_57", reset = true })
 keywordHandler:addAliasKeyword({ "small", "axe" })
 
+local function greetCallback(npc, creature)
+	NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {
+		"npc.al_dee.greet_msg_1",
+		"npc.al_dee.greet_msg_2",
+	}, 1000)
+	return false
+end
+
 NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.al_dee.walkaway_msg_1")
 NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.al_dee.farewell_msg_1")
 NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_SENDTRADE, "npc.al_dee.sendtrade_msg_1")
-npcHandler:setMessage(MESSAGE_GREET, {
-	"Hello, hello, |PLAYERNAME|! Please come in, look, and buy! I'm a specialist for all sorts of {tools}. Just ask me for a {trade} to see my offers! You can also ask me for general {hints} about the game. ...",
-	"You can also ask me about each {citizen} of the isle.",
-})
+npcHandler:setCallback(CALLBACK_GREET, greetCallback)
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

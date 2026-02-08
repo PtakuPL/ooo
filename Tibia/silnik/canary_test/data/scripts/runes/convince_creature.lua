@@ -17,7 +17,7 @@ function rune.onCastSpell(creature, variant, isHotkey)
 		end
 
 		if #creature:getSummons() >= 2 then
-			creature:sendCancelMessage("You cannot control more creatures.")
+			creature:sendLocalizedTextMessage(MESSAGE_FAILURE, "rune.msg_cannot_control_more")
 			creature:getPosition():sendMagicEffect(CONST_ME_POFF)
 			return false
 		end

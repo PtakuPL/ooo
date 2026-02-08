@@ -234,5 +234,11 @@
   "client.viplist.text4": "[TR] add group",
   "client.walk.text1": "[TR] Ctrl+Right",
   "client.walk.text2": "[TR] Ctrl+Down",
-  "client.walk.text3": "[TR] Ctrl+Left"
+  "client.walk.text3": "[TR] Ctrl+Left",
+  "client.game_store.text1": "HomePanel",
+  "client.game_store.text2": "HTTP error:",
+  "client.blessing.text1": "Record of Blessings",
+  "client.blessing.text2": ".. entry.store ..",
+  "client.blessing.text3": "Your character is promoted and your account has Premium\nstatus. As a result, your XP loss is reduced by",
+  "client.blessing.text4": "Your character is promoted and your account has Premium\nstatus. As a result, your XP loss is reduced by"
 }

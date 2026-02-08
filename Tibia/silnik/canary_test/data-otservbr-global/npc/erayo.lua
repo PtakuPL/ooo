@@ -52,15 +52,23 @@ end
 
 local topic = {}
 
+local stage1Keys = { "npc.erayo.stage_1_request", "npc.erayo.stage_1_progress" }
+local stage2Keys = { "npc.erayo.stage_2_request", "npc.erayo.stage_2_progress" }
+local stage3Keys = { "npc.erayo.stage_3_request", "npc.erayo.stage_3_progress" }
+local stage4Keys = { "npc.erayo.stage_4_request", "npc.erayo.stage_4_progress" }
+local stage5Keys = { "npc.erayo.stage_5_request", "npc.erayo.stage_5_progress" }
+local stage6Keys = { "npc.erayo.stage_6_request", "npc.erayo.stage_6_progress" }
+local stage7Keys = { "npc.erayo.stage_7_request", "npc.erayo.stage_7_progress" }
+
 local config = {
-	["50 blue cloth"] = { storageValue = 1, text = { "Brought the 50 pieces of blue cloth?", "Good. Get me 50 pieces of green cloth now." }, itemId = 5912, count = 50 },
-	["50 green cloth"] = { storageValue = 2, text = { "Brought the 50 pieces of green cloth?", "Good. Get me 50 pieces of red cloth now." }, itemId = 5910, count = 50 },
-	["50 red cloth"] = { storageValue = 3, text = { "Brought the 50 pieces of red cloth?", "Good. Get me 50 pieces of brown cloth now." }, itemId = 5911, count = 50 },
-	["50 brown cloth"] = { storageValue = 4, text = { "Brought the 50 pieces of brown cloth?", "Good. Get me 50 pieces of yellow cloth now." }, itemId = 5913, count = 50 },
-	["50 yellow cloth"] = { storageValue = 5, text = { "Brought the 50 pieces of yellow cloth?", "Good. Get me 50 pieces of white cloth now." }, itemId = 5914, count = 50 },
-	["50 white cloth"] = { storageValue = 6, text = { "Brought the 50 pieces of white cloth?", "Good. Get me 10 spools of yarn now." }, itemId = 5909, count = 50 },
-	["10 spools of yarn"] = { storageValue = 7, text = { "Brought the 10 spools of yarn?", "Thanks. That's it, you're done. Good job, |PLAYERNAME|. I keep my promise. Here's my old assassin head piece." }, itemId = 5886, count = 10 },
-	["10 yarn"] = { storageValue = 7, text = { "Brought the 10 spools of yarn?", "Thanks. That's it, you're done. Good job, |PLAYERNAME|. I keep my promise. Here's my old assassin head piece." }, itemId = 5886, count = 10 },
+	["50 blue cloth"] = { storageValue = 1, i18nKeys = stage1Keys, itemId = 5912, count = 50 },
+	["50 green cloth"] = { storageValue = 2, i18nKeys = stage2Keys, itemId = 5910, count = 50 },
+	["50 red cloth"] = { storageValue = 3, i18nKeys = stage3Keys, itemId = 5911, count = 50 },
+	["50 brown cloth"] = { storageValue = 4, i18nKeys = stage4Keys, itemId = 5913, count = 50 },
+	["50 yellow cloth"] = { storageValue = 5, i18nKeys = stage5Keys, itemId = 5914, count = 50 },
+	["50 white cloth"] = { storageValue = 6, i18nKeys = stage6Keys, itemId = 5909, count = 50 },
+	["10 spools of yarn"] = { storageValue = 7, i18nKeys = stage7Keys, itemId = 5886, count = 10 },
+	["10 yarn"] = { storageValue = 7, i18nKeys = stage7Keys, itemId = 5886, count = 10 },
 }
 
 local function creatureSayCallback(npc, creature, type, message)
@@ -78,16 +86,13 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif config[message] and npcHandler:getTopic(playerId) == 0 then
 		if player:getStorageValue(Storage.Quest.U7_8.AssassinOutfits.AssassinFirstAddon) == config[message].storageValue then
-			npcHandler:say(config[message].text[1], npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, config[message].i18nKeys[1])
 			npcHandler:setTopic(playerId, 3)
 			topic[playerId] = message
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.erayo.multi_1")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.erayo.multi_2")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.erayo.multi_3")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.erayo.multi_4")
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.erayo.multi_1", "npc.erayo.multi_2", "npc.erayo.multi_3", "npc.erayo.multi_4" }, 10)
 			npcHandler:setTopic(playerId, 2)
 		elseif npcHandler:getTopic(playerId) == 2 then
 			if player:getStorageValue(Storage.OutfitQuest.DefaultStart) ~= 1 then
@@ -110,7 +115,8 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:addOutfitAddon(152, 1)
 				player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
 			end
-			npcHandler:say(targetMessage.text[2], npc, creature)
+			local completionArgs = targetMessage.storageValue == 7 and { player:getName() } or nil
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, targetMessage.i18nKeys[2], completionArgs)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "no") and npcHandler:getTopic(playerId) > 0 then

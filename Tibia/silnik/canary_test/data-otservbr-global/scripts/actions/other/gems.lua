@@ -40,7 +40,7 @@ local lionsRock = {
 		value = 6,
 		item = 3030,
 		fieldId = 2123,
-		message = "You place the ruby on the small socket. A red flame begins to burn.",
+		message = "scripts.gems.msg_1",
 		effect = CONST_ME_MAGIC_RED,
 	},
 	[25007] = {
@@ -50,7 +50,7 @@ local lionsRock = {
 		value = 7,
 		item = 3029,
 		fieldId = 21463,
-		message = "You place the sapphire on the small socket. A blue flame begins to burn.",
+		message = "scripts.gems.msg_2",
 		effect = CONST_ME_MAGIC_BLUE,
 	},
 	[25008] = {
@@ -60,7 +60,7 @@ local lionsRock = {
 		value = 8,
 		item = 3033,
 		fieldId = 7465,
-		message = "You place the amethyst on the small socket. A violet flame begins to burn.",
+		message = "scripts.gems.msg_3",
 		effect = CONST_ME_PURPLESMOKE,
 	},
 	[25009] = {
@@ -70,7 +70,7 @@ local lionsRock = {
 		value = 9,
 		item = 9057,
 		fieldId = 21465,
-		message = "You place the topaz on the small socket. A yellow flame begins to burn.",
+		message = "scripts.gems.msg_4",
 		effect = CONST_ME_BLOCKHIT,
 	},
 }
@@ -118,7 +118,7 @@ function gems.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 					return true
 				end
 			else
-				player:say("When the time comes, '" .. item:getName() .. "' will be accepted at this shrine.")
+				player:sayLocalized("scripts.gems.shrine_time", TALKTYPE_MONSTER_SAY, false, nil, nil, { item:getName() })
 				return true
 			end
 		end
@@ -170,7 +170,7 @@ function gems.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 			local gemSpot = Tile(setting.itemPos):getItemById(setting.fieldId)
 			if not gemSpot then
 				toPosition:sendMagicEffect(setting.effect)
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, setting.message)
+				player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, setting.message)
 				item:remove(1)
 				player:setStorageValue(setting.storage, setting.value + 1)
 				addEvent(lionsRockCreateField, 2 * 1000, setting.itemPos, setting.fieldId, setting.storage)

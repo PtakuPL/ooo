@@ -1,15 +1,15 @@
 local config = {
 	[8009] = {
 		storage = Storage.Quest.U8_54.ChildrenOfTheRevolution.SpyBuilding01,
-		text = "An impressive ammount of fish is stored here.",
+		text = "quests.children_revolution.spy_say_1",
 	},
 	[8010] = {
 		storage = Storage.Quest.U8_54.ChildrenOfTheRevolution.SpyBuilding02,
-		text = "A seemingly endless array of weapon stretches before you into the darkness.",
+		text = "quests.children_revolution.spy_say_2",
 	},
 	[8011] = {
 		storage = Storage.Quest.U8_54.ChildrenOfTheRevolution.SpyBuilding03,
-		text = "These barracks seem to be home for quite a lot of soldiers.",
+		text = "quests.children_revolution.spy_say_3",
 	},
 }
 
@@ -30,7 +30,7 @@ function spy.onStepIn(creature, item, position, fromPosition)
 		--Questlog, Children of the Revolution "Mission 2: Imperial Zzecret Weaponzz"
 		player:setStorageValue(Storage.Quest.U8_54.ChildrenOfTheRevolution.Mission02, player:getStorageValue(Storage.Quest.U8_54.ChildrenOfTheRevolution.Mission02) + 1)
 		player:setStorageValue(targetTile.storage, 1)
-		player:say(targetTile.text, TALKTYPE_MONSTER_SAY)
+		player:sayLocalized(targetTile.text, TALKTYPE_MONSTER_SAY)
 	end
 	return true
 end

@@ -173,5 +173,63 @@ function Game.broadcastLocalizedMessageLua(key, messageType, args)
 	return true
 end
 
+-- ============================================
+-- Player i18n aliases
+-- ============================================
+-- Many migrated scripts use player:sendLocalizedMessage(type, key, args)
+-- and player:sendLocalizedCancelMessage(key, args) — these are aliases for
+-- the C++-registered player:sendLocalizedTextMessage(type, key, args).
+
+--- Alias: player:sendLocalizedMessage(type, key[, args])
+-- Same as sendLocalizedTextMessage — added for compatibility with migrated scripts
+function Player:sendLocalizedMessage(messageType, key, args)
+	return self:sendLocalizedTextMessage(messageType, key, args or {})
+end
+
+--- Alias: player:sendLocalizedCancelMessage(key[, args])
+-- Sends a localized cancel message (MESSAGE_FAILURE) to the player
+function Player:sendLocalizedCancelMessage(key, args)
+	return self:sendLocalizedTextMessage(MESSAGE_FAILURE, key, args or {})
+end
+
+-- ============================================
+-- Global Translator API (Lua wrapper for C++ i18n::Translator)
+-- Used by gamestore, on_look, blessing, player modal windows
+-- ============================================
+Translator = {}
+
+--- Get a translated string for a player's locale
+-- @param player Player object
+-- @param key i18n key (e.g. "gamestore.transfer.success")
+-- @param args Optional table of format arguments
+-- @return Translated string (or key as fallback if Player:getTranslation unavailable)
+function Translator.getTranslation(player, key, args)
+	if not player or not key then
+		return key or ""
+	end
+	-- Use C++ Player:getTranslation(key, args) if available
+	if player.getTranslation then
+		return player:getTranslation(key, args or {})
+	end
+	-- Fallback: return key (untranslated)
+	return key
+end
+
+--- Format a translated string with arguments
+-- @param player Player object
+-- @param key i18n key
+-- @param ... Format arguments (string.format style)
+-- @return Formatted translated string
+function Translator.getFormattedTranslation(player, key, ...)
+	local translated = Translator.getTranslation(player, key)
+	if select("#", ...) > 0 then
+		local ok, result = pcall(string.format, translated, ...)
+		if ok then
+			return result
+		end
+	end
+	return translated
+end
+
 -- Log that i18n wrappers are loaded
-print("[i18n] Wrappers loaded: NPC_LIB.i18n.npcSay, Item:setLocalizedDescription, creature:sayLocalized")
+print("[i18n] Wrappers loaded: NPC_LIB.i18n.npcSay, Item:setLocalizedDescription, creature:sayLocalized, Player:sendLocalizedMessage, Player:sendLocalizedCancelMessage, Translator")

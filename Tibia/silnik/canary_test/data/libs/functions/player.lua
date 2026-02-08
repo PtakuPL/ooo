@@ -43,7 +43,9 @@ end
 
 function Player.sendCancelMessage(self, message)
 	if type(message) == "number" then
-		message = Game.getReturnMessage(message)
+		-- ReturnValue enum → i18n key → localized message
+		local key = Game.getReturnMessageKey(message)
+		return self:sendLocalizedTextMessage(MESSAGE_FAILURE, key)
 	end
 	return self:sendTextMessage(MESSAGE_FAILURE, message)
 end
@@ -104,7 +106,7 @@ function Player.transferMoneyTo(self, target, amount)
 
 	local targetPlayer = Player(target)
 	if targetPlayer then
-		targetPlayer:sendTextMessage(MESSAGE_LOOK, self:getName() .. " has transferred " .. FormatNumber(amount) .. " gold coins to you.")
+		targetPlayer:sendLocalizedTextMessage(MESSAGE_LOOK, "lib.player.msg_transfer", {self:getName(), FormatNumber(amount)})
 	end
 	return true
 end
@@ -120,7 +122,7 @@ function Player.removeMoneyBank(self, amount)
 	if amount <= inventoryMoney then
 		self:removeMoney(amount)
 		if amount > 0 then
-			self:sendTextMessage(MESSAGE_TRADE, ("Paid %d gold from inventory."):format(amount))
+			self:sendLocalizedTextMessage(MESSAGE_TRADE, "lib.player.msg_paid_inventory", {tostring(amount)})
 		end
 		return true
 	end
@@ -136,7 +138,7 @@ function Player.removeMoneyBank(self, amount)
 		Bank.debit(self, remainingAmount)
 
 		self:setBankBalance(bankBalance - remainingAmount)
-		self:sendTextMessage(MESSAGE_TRADE, ("Paid %s from inventory and %s gold from bank account. Your account balance is now %s gold."):format(FormatNumber(amount - remainingAmount), FormatNumber(remainingAmount), FormatNumber(self:getBankBalance())))
+		self:sendLocalizedTextMessage(MESSAGE_TRADE, "lib.player.msg_paid_mixed", {FormatNumber(amount - remainingAmount), FormatNumber(remainingAmount), FormatNumber(self:getBankBalance())})
 		return true
 	end
 	return false
@@ -231,12 +233,12 @@ function Player:CreateFamiliarSpell(spellId)
 	local playerPosition = self:getPosition()
 	if not self:isPremium() then
 		playerPosition:sendMagicEffect(CONST_ME_POFF)
-		self:sendCancelMessage("You need a premium account.")
+		self:sendLocalizedTextMessage(MESSAGE_FAILURE, "lib.player.msg_need_premium")
 		return false
 	end
 
 	if #self:getSummons() >= 1 and self:getAccountType() < ACCOUNT_TYPE_GOD then
-		self:sendCancelMessage("You can't have other summons.")
+		self:sendLocalizedTextMessage(MESSAGE_FAILURE, "lib.player.msg_no_other_summons")
 		playerPosition:sendMagicEffect(CONST_ME_POFF)
 		return false
 	end
@@ -514,7 +516,7 @@ function Player:setFiendish()
 	local tile = Tile(position)
 	local thing = tile:getTopVisibleThing(self)
 	if not tile or thing and not thing:isMonster() then
-		self:sendCancelMessage("Monster not found.")
+		self:sendLocalizedTextMessage(MESSAGE_FAILURE, "lib.player.msg_monster_not_found")
 		return false
 	end
 
@@ -525,12 +527,22 @@ function Player:setFiendish()
 	return false
 end
 
+local function getTranslationOrFallback(player, key, fallback)
+	if Translator and Translator.getTranslation then
+		local translated = Translator.getTranslation(player, key)
+		if translated and translated ~= key then
+			return translated
+		end
+	end
+	return fallback
+end
+
 function Player:showInfoModal(title, message, buttonText)
 	local modal = ModalWindow({
 		title = title,
 		message = message,
 	})
-	buttonText = buttonText or "Close"
+	buttonText = buttonText or getTranslationOrFallback(self, "lib.player.modal_button_close", "Close")
 	modal:addButton(buttonText, function() end)
 	modal:setDefaultEscapeButton(buttonText)
 
@@ -542,9 +554,9 @@ function Player:showConfirmationModal(title, message, yesCallback, noCallback, y
 		title = title,
 		message = message,
 	})
-	yesText = yesText or "Yes"
+	yesText = yesText or getTranslationOrFallback(self, "lib.player.modal_button_yes", "Yes")
 	modal:addButton(yesText, yesCallback or function() end)
-	noText = noText or "No"
+	noText = noText or getTranslationOrFallback(self, "lib.player.modal_button_no", "No")
 	modal:addButton(noText, noCallback or function() end)
 	modal:setDefaultEscapeButton(noText)
 
@@ -726,17 +738,17 @@ do
 	local loyaltySystem = {
 		enable = configManager.getBoolean(configKeys.LOYALTY_ENABLED),
 		titles = {
-			[1] = { name = "Scout of Tibia", points = 50 },
-			[2] = { name = "Sentinel of Tibia", points = 100 },
-			[3] = { name = "Steward of Tibia", points = 200 },
-			[4] = { name = "Warden of Tibia", points = 400 },
-			[5] = { name = "Squire of Tibia", points = 1000 },
-			[6] = { name = "Warrior of Tibia", points = 2000 },
-			[7] = { name = "Keeper of Tibia", points = 3000 },
-			[8] = { name = "Guardian of Tibia", points = 4000 },
-			[9] = { name = "Sage of Tibia", points = 5000 },
-			[10] = { name = "Savant of Tibia", points = 6000 },
-			[11] = { name = "Enlightened of Tibia", points = 7000 },
+			[1] = { key = "lib.player.loyalty_title_1", points = 50 },
+			[2] = { key = "lib.player.loyalty_title_2", points = 100 },
+			[3] = { key = "lib.player.loyalty_title_3", points = 200 },
+			[4] = { key = "lib.player.loyalty_title_4", points = 400 },
+			[5] = { key = "lib.player.loyalty_title_5", points = 1000 },
+			[6] = { key = "lib.player.loyalty_title_6", points = 2000 },
+			[7] = { key = "lib.player.loyalty_title_7", points = 3000 },
+			[8] = { key = "lib.player.loyalty_title_8", points = 4000 },
+			[9] = { key = "lib.player.loyalty_title_9", points = 5000 },
+			[10] = { key = "lib.player.loyalty_title_10", points = 6000 },
+			[11] = { key = "lib.player.loyalty_title_11", points = 7000 },
 		},
 		bonus = {
 			{ minPoints = 360, percentage = 5 },
@@ -750,7 +762,7 @@ do
 			{ minPoints = 3240, percentage = 45 },
 			{ minPoints = 3600, percentage = 50 },
 		},
-		messageTemplate = "Due to your long-term loyalty to " .. SERVER_NAME .. " you currently benefit from a ${bonusPercentage}% bonus on all of your skills. (You have ${loyaltyPoints} loyalty points)",
+		messageTemplate = "lib.player.loyalty_bonus",
 	}
 
 	function Player.initializeLoyaltySystem(self)
@@ -761,15 +773,15 @@ do
 		local playerLoyaltyPoints = self:getLoyaltyPoints()
 
 		-- Title
-		local title = ""
+		local loyaltyTitleKey = ""
 		for _, titleTable in ipairs(loyaltySystem.titles) do
 			if playerLoyaltyPoints >= titleTable.points then
-				title = titleTable.name
+				loyaltyTitleKey = titleTable.key
 			end
 		end
 
-		if title ~= "" then
-			self:setLoyaltyTitle(title)
+		if loyaltyTitleKey ~= "" then
+			self:setLoyaltyTitle(loyaltyTitleKey)
 		end
 
 		-- Bonus
@@ -784,7 +796,7 @@ do
 		self:setLoyaltyBonus(playerBonusPercentage)
 
 		if self:getLoyaltyBonus() ~= 0 then
-			self:sendTextMessage(MESSAGE_STATUS, string.formatNamed(loyaltySystem.messageTemplate, { bonusPercentage = playerBonusPercentage, loyaltyPoints = playerLoyaltyPoints }))
+			self:sendLocalizedTextMessage(MESSAGE_STATUS, loyaltySystem.messageTemplate, {playerBonusPercentage, playerLoyaltyPoints, SERVER_NAME})
 		end
 
 		return true
@@ -808,17 +820,14 @@ function Player:canGetReward(rewardId, questName)
 	end
 
 	local itemWeight = rewardItem:getWeight() / 100
-	local baseMessage = "You have found a " .. rewardItem:getName()
 	local backpack = self:getSlotItem(CONST_SLOT_BACKPACK)
 	if not backpack or backpack:getEmptySlots(true) < 1 then
-		baseMessage = baseMessage .. ", but you have no room to take it."
-		self:sendTextMessage(MESSAGE_EVENT_ADVANCE, baseMessage)
+		self:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "lib.player.msg_found_no_room", {rewardItem:getName()})
 		return false
 	end
 
 	if (self:getFreeCapacity() / 100) < itemWeight then
-		baseMessage = baseMessage .. ". Weighing " .. itemWeight .. " oz, it is too heavy for you to carry."
-		self:sendTextMessage(MESSAGE_EVENT_ADVANCE, baseMessage)
+		self:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "lib.player.msg_found_too_heavy", {rewardItem:getName(), tostring(itemWeight)})
 		return false
 	end
 

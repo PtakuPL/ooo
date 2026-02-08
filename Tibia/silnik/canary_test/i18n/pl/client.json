@@ -234,5 +234,11 @@
   "client.viplist.text4": "[PL] add group",
   "client.walk.text1": "[PL] Ctrl+Right",
   "client.walk.text2": "[PL] Ctrl+Down",
-  "client.walk.text3": "[PL] Ctrl+Left"
+  "client.walk.text3": "[PL] Ctrl+Left",
+  "client.game_store.text1": "PL: HomePanel",
+  "client.game_store.text2": "HTTP błąd:",
+  "client.blessing.text1": "[PL] Record of Blessings",
+  "client.blessing.text2": ".. zgłoszenie.I...",
+  "client.blessing.text3": "[PL] Your character is promoted and your account has Premium\nstatus. As a result, your XP loss is reduced by",
+  "client.blessing.text4": "[PL] Your character is promoted and your account has Premium\nstatus. As a result, your XP loss is reduced by"
 }

@@ -19,6 +19,7 @@
 #include "lib/metrics/metrics.hpp"
 #include "utils/pugicast.hpp"
 #include "creatures/players/player.hpp"
+#include "utils/i18n/translator.hpp"
 
 House::House(uint32_t houseId) :
 	id(houseId) { }
@@ -153,29 +154,56 @@ void House::setOwner(uint32_t guid, bool updateDatabase /* = true*/, const std::
 }
 
 void House::updateDoorDescription() const {
+	// Build i18n marker string: #i18n:key|arg1|arg2
+	// Will be resolved per-player locale when looked at (via resolveI18nMarker in item.cpp)
 	std::ostringstream ss;
 	if (owner != 0) {
-		ss << "It belongs to house '" << houseName << "'. " << ownerName << " owns this house.";
+		ss << "#i18n:cpp.house.door_owned|" << houseName << "|" << ownerName;
 	} else {
-		ss << "It belongs to house '" << houseName << "'. Nobody owns this house.";
+		ss << "#i18n:cpp.house.door_unowned|" << houseName;
 	}
 
+	// Append extra info as separate lines (also i18n markers)
+	std::string extraInfo;
 	if (!g_configManager().getBoolean(CYCLOPEDIA_HOUSE_AUCTION)) {
-		ss << " It is " << getSize() << " square meters.";
+		extraInfo += " #i18n:cpp.house.door_size|" + std::to_string(getSize());
 		const int32_t housePrice = getPrice();
 		if (housePrice != -1) {
 			if (g_configManager().getBoolean(HOUSE_PURSHASED_SHOW_PRICE) || owner == 0) {
-				ss << " It costs " << formatNumber(getPrice()) << " gold coins.";
+				extraInfo += " #i18n:cpp.house.door_price|" + formatNumber(getPrice());
 			}
 			std::string strRentPeriod = asLowerCaseString(g_configManager().getString(HOUSE_RENT_PERIOD));
 			if (strRentPeriod != "never") {
-				ss << " The rent cost is " << formatNumber(getRent()) << " gold coins and it is billed " << strRentPeriod << ".";
+				extraInfo += " #i18n:cpp.house.door_rent|" + formatNumber(getRent()) + "|" + strRentPeriod;
+			}
+		}
+	}
+
+	// For now, use EN fallback since description is stored without player context
+	const auto &tr = i18n::g_translator();
+	std::string desc;
+	if (owner != 0) {
+		desc = tr.format("cpp.house.door_owned", "en", { houseName, ownerName });
+	} else {
+		desc = tr.format("cpp.house.door_unowned", "en", { houseName });
+	}
+
+	if (!g_configManager().getBoolean(CYCLOPEDIA_HOUSE_AUCTION)) {
+		desc += " " + tr.format("cpp.house.door_size", "en", { std::to_string(getSize()) });
+		const int32_t housePrice = getPrice();
+		if (housePrice != -1) {
+			if (g_configManager().getBoolean(HOUSE_PURSHASED_SHOW_PRICE) || owner == 0) {
+				desc += " " + tr.format("cpp.house.door_price", "en", { formatNumber(getPrice()) });
+			}
+			std::string strRentPeriod = asLowerCaseString(g_configManager().getString(HOUSE_RENT_PERIOD));
+			if (strRentPeriod != "never") {
+				desc += " " + tr.format("cpp.house.door_rent", "en", { formatNumber(getRent()), strRentPeriod });
 			}
 		}
 	}
 
 	for (const auto &it : doorList) {
-		it->setAttribute(ItemAttribute_t::DESCRIPTION, ss.str());
+		it->setAttribute(ItemAttribute_t::DESCRIPTION, desc);
 	}
 }
 
@@ -555,15 +583,17 @@ void HouseTransferItem::onTradeEvent(TradeEvents_t event, const std::shared_ptr<
 	if (event == ON_TRADE_TRANSFER) {
 		if (house) {
 			auto isTransferOnRestart = g_configManager().getBoolean(TOGGLE_HOUSE_TRANSFER_ON_SERVER_RESTART);
-			auto ownershipTransferMessage = " The ownership will be transferred upon server restart.";
-			const auto boughtMessage = fmt::format("You have successfully bought the house.{}", isTransferOnRestart ? ownershipTransferMessage : "");
-			const auto soldMessage = fmt::format("You have successfully sold your house.{}", isTransferOnRestart ? ownershipTransferMessage : "");
-
-			owner->sendTextMessage(MESSAGE_EVENT_ADVANCE, boughtMessage);
+			auto &tr = i18n::g_translator();
+			auto makeTransferMessage = [&](const std::shared_ptr<Player> &targetPlayer, const std::string &messageKey) {
+				const std::string loc(targetPlayer->getLocale().empty() ? "en" : std::string(targetPlayer->getLocale()));
+				const std::string transferSuffix = isTransferOnRestart ? tr.get("cpp.house.ownership_transfer_on_restart", loc) : "";
+				return tr.format(messageKey, loc, {transferSuffix});
+			};
+			owner->sendTextMessage(MESSAGE_EVENT_ADVANCE, makeTransferMessage(owner, "cpp.house.bought_success"));
 
 			const auto oldOwner = g_game().getPlayerByGUID(house->getOwner());
 			if (oldOwner) {
-				oldOwner->sendTextMessage(MESSAGE_EVENT_ADVANCE, soldMessage);
+				oldOwner->sendTextMessage(MESSAGE_EVENT_ADVANCE, makeTransferMessage(oldOwner, "cpp.house.sold_success"));
 			}
 			house->executeTransfer(static_self_cast<HouseTransferItem>(), owner);
 		}

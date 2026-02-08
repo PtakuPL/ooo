@@ -1,15 +1,15 @@
 local UniqueTable = {
 	[40001] = {
 		storage = Storage.Quest.U7_8.TheShatteredIsles.TavernMap1,
-		message = "You have sucessfully read plan A.",
+		message = "quests.shattered_isles.nargor_map_1",
 	},
 	[40002] = {
 		storage = Storage.Quest.U7_8.TheShatteredIsles.TavernMap2,
-		message = "You have sucessfully read plan B.",
+		message = "quests.shattered_isles.nargor_map_2",
 	},
 	[40003] = {
 		storage = Storage.Quest.U7_8.TheShatteredIsles.TavernMap3,
-		message = "You have sucessfully read plan C.",
+		message = "quests.shattered_isles.nargor_map_3",
 	},
 }
 
@@ -27,7 +27,7 @@ function nargorMaps.onUse(player, item, fromPosition, target, toPosition, isHotk
 
 	if player:getStorageValue(setting.storage) < 0 then
 		player:setStorageValue(setting.storage, 1)
-		player:say(setting.message, TALKTYPE_MONSTER_SAY)
+		player:sayLocalized(setting.message, TALKTYPE_MONSTER_SAY)
 		return true
 	end
 	return false

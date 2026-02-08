@@ -373,7 +373,7 @@ function timiraChest.onUse(player, item, fromPosition, target, toPosition, isHot
 	}
 
 	if table.contains(rewards[toPosition.z], player:getGuid()) then
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_boss_timira_fight.msg_1")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_boss_timira_fight.msg_3")
 		player:getPosition():sendMagicEffect(CONST_ME_POFF)
 		return false
 	end
@@ -386,7 +386,7 @@ function timiraChest.onUse(player, item, fromPosition, target, toPosition, isHot
 
 	local rewardItem = ItemType(itemName)
 	player:addItem(rewardItem:getId(), 1)
-	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_boss_timira_fight.msg_2" .. itemName .. ".")
+	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_boss_timira_fight.msg_2", { itemName })
 	return true
 end
 timiraChest:id(chestId)

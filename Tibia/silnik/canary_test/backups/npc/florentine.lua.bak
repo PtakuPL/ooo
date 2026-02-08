@@ -57,7 +57,7 @@ npcType.onCloseChannel = function(npc, creature)
 end
 
 NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.florentine.greet_msg_1")
-npcHandler:setMessage(MESSAGE_SENDTRADE, "Of course, just browse through my wares.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_SENDTRADE, "npc.florentine.sendtrade_msg_1")
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 
 npcConfig.shop = {

@@ -53,9 +53,10 @@ local function doNotTeleport(player)
 	if config.enableDepots then
 		table.insert(enabledLocations, "depot")
 	end
-	local message = "Try to move more to the center of a " .. table.concat(enabledLocations, " or ") .. " to use the spiritual energy for a teleport."
+	local messageKey = "scripts.adventurers_stone.teleport_center"
+		local messageArgs = { table.concat(enabledLocations, " or ") }
 	player:getPosition():sendMagicEffect(CONST_ME_POFF)
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, message)
+	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, messageKey, messageArgs)
 end
 
 function adventurersStone.onUse(player, item, fromPosition, target, toPosition, isHotkey)

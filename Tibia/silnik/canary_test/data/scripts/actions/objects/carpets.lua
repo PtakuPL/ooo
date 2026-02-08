@@ -172,13 +172,13 @@ function carpets.onUse(player, item, fp, target, toPosition, isHotkey)
 	local fromPosition = item:getPosition()
 	local tile = fromPosition:getTile()
 	if not tile then
-		player:sendLocalizedMessage(MESSAGE_FAILURE, "scripts.carpets.msg_1")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "scripts.carpets.msg_1")
 		return true
 	end
 
 	local house = tile:getHouse()
 	if not house then
-		player:sendLocalizedMessage(MESSAGE_FAILURE, "scripts.carpets.msg_2")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "scripts.carpets.msg_2")
 		return true
 	end
 
@@ -192,7 +192,7 @@ function carpets.onUse(player, item, fp, target, toPosition, isHotkey)
 
 		for k, v in pairs(carpetItems) do
 			if k ~= item.itemid and tile:getItemCountById(k) > 0 then
-				player:sendCancelMessage(Game.getReturnMessage(RETURNVALUE_NOTPOSSIBLE))
+				player:sendLocalizedTextMessage(MESSAGE_FAILURE, Game.getReturnMessageKey(RETURNVALUE_NOTPOSSIBLE))
 				return true
 			end
 		end

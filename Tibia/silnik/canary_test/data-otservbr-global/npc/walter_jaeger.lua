@@ -257,23 +257,22 @@ local function getOfferByIndex(offerIndex, offer, topic)
 end
 
 local function getOfferString(name, offer, topic)
-	local string = ""
 	if offer == nil or #offer == 0 then
-		return string
+		return nil
 	end
 
 	local offerTable = getOfferByName(name, offer, topic)
 	if offerTable == nil then
-		return string
+		return nil
 	end
 
 	if topic == config.topics.outfit then
-		string = "The {base} " .. offerTable.name .. " outfit costs " .. tostring(offerTable.base) .. " HTP, the {first} addon " .. tostring(offerTable.firstAddon) .. " HTP and the {second} addon " .. tostring(offerTable.secondAddon) .. " HTP."
+		return "npc.walter_jaeger.say_offer_outfit", { offerTable.name, tostring(offerTable.base), tostring(offerTable.firstAddon), tostring(offerTable.secondAddon) }
 	elseif topic == config.topics.mount then
-		string = "The {" .. offerTable.name .. "} mount costs " .. tostring(offerTable.value) .. " HTP."
+		return "npc.walter_jaeger.say_offer_mount", { offerTable.name, tostring(offerTable.value) }
 	end
 
-	return string
+	return nil
 end
 
 local function processItemInboxPurchase(player, name, id)
@@ -291,7 +290,7 @@ local function processItemInboxPurchase(player, name, id)
 			return true
 		end
 	else
-		player:sendTextMessage(MESSAGE_LOOK, "Please make sure you have free slots in your store inbox.")
+		player:sendLocalizedTextMessage(MESSAGE_LOOK, "npc.walter_jaeger.store_inbox_full")
 	end
 
 	return false
@@ -362,12 +361,18 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif npcHandler:getTopic(playerId) > 1 then
 		if npcHandler:getTopic(playerId) == config.topics.outfit then
 			if config ~= nil and config.outifts ~= nil and #config.outifts > 0 then
-				npcHandler:say(getOfferString(message, config.outifts, npcHandler:getTopic(playerId)), npc, creature)
+				local offerKey, offerArgs = getOfferString(message, config.outifts, npcHandler:getTopic(playerId))
+				if offerKey then
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, offerKey, offerArgs)
+				end
 				npcHandler:setTopic(playerId, getOfferIndex(message, config.outifts, npcHandler:getTopic(playerId)))
 			end
 		elseif npcHandler:getTopic(playerId) == config.topics.mount then
 			if config ~= nil and config.mounts ~= nil and #config.mounts > 0 then
-				npcHandler:say(getOfferString(message, config.mounts, npcHandler:getTopic(playerId)), npc, creature)
+				local offerKey, offerArgs = getOfferString(message, config.mounts, npcHandler:getTopic(playerId))
+				if offerKey then
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, offerKey, offerArgs)
+				end
 				npcHandler:setTopic(playerId, getOfferIndex(message, config.mounts, npcHandler:getTopic(playerId)))
 			end
 		elseif npcHandler:getTopic(playerId) == config.topics.trophy then

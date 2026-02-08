@@ -5,25 +5,25 @@ function startRaid.onSay(player, words, param)
 	logCommand(player, words, param)
 
 	if param == "" then
-		player:sendCancelMessage("Command param required.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_command_param_required")
 		return true
 	end
 
 	if Raid.registry[param] then
 		local raid = Raid.registry[param]
 		if raid:tryStart(true) then
-			player:sendTextMessage(MESSAGE_ADMINISTRATOR, "Raid " .. param .. " started.")
+			player:sendLocalizedTextMessage(MESSAGE_ADMINISTRATOR, "talkaction.god.raids.msg_started", {param})
 		else
-			player:sendTextMessage(MESSAGE_ADMINISTRATOR, "Raid " .. param .. " could not be started.")
+			player:sendLocalizedTextMessage(MESSAGE_ADMINISTRATOR, "talkaction.god.raids.msg_could_not_start", {param})
 		end
 		return true
 	end
 
 	local returnValue = Game.startRaid(param)
 	if returnValue ~= RETURNVALUE_NOERROR then
-		player:sendTextMessage(MESSAGE_ADMINISTRATOR, Game.getReturnMessage(returnValue))
+		player:sendLocalizedTextMessage(MESSAGE_ADMINISTRATOR, Game.getReturnMessageKey(returnValue))
 	else
-		player:sendLocalizedMessage(MESSAGE_ADMINISTRATOR, "scripts.raids.msg_1")
+		player:sendLocalizedTextMessage(MESSAGE_ADMINISTRATOR, "scripts.raids.msg_1")
 	end
 	return true
 end
@@ -59,7 +59,11 @@ function simulator.onSay(player, words, param)
 	local triggerCount = 0
 	local rolls = 0
 
-	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.raids.msg_2" .. initialChance .. ", targetChancePerDay=" .. targetChancePerDay .. ", maxChancePerCheck=" .. maxChancePerCheck .. "...")
+	player:sendLocalizedTextMessage(
+		MESSAGE_EVENT_ADVANCE,
+		"scripts.raids.msg_2",
+		{ tostring(initialChance), tostring(targetChancePerDay), tostring(maxChancePerCheck) }
+	)
 
 	local checksPerDay = ParseDuration("23h") / ParseDuration(Raid.checkInterval)
 	while triggerCount < 10 do
@@ -70,7 +74,11 @@ function simulator.onSay(player, words, param)
 		end
 	end
 
-	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.raids.msg_3" .. triggerCount .. " times in " .. rolls .. " rolls (" .. rolls / checksPerDay .. " days or once every " .. (rolls / checksPerDay) / triggerCount .. " days)")
+	player:sendLocalizedTextMessage(
+		MESSAGE_EVENT_ADVANCE,
+		"scripts.raids.msg_3",
+		{ tostring(triggerCount), tostring(rolls), tostring(rolls / checksPerDay), tostring((rolls / checksPerDay) / triggerCount) }
+	)
 	return true
 end
 
@@ -90,12 +98,12 @@ function listRaid.onSay(player, words, param)
 	end
 	table.sort(raids)
 
-	local message = "Registered raids: "
+	local message = i18nTranslate("scripts.raids.registered_prefix", player:getLocale())
 	for _, name in ipairs(raids) do
 		message = message .. name .. ", "
 	end
 	message = message:sub(1, -3)
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, message)
+	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "talkaction.god.raids.msg_list", {message})
 	return true
 end
 

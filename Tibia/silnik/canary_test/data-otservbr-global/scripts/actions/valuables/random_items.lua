@@ -208,7 +208,14 @@ function randomItems.onUse(player, item, fromPosition, target, toPosition, isHot
 				player:addItem(itemId, count)
 				if item.itemid == 12413 then
 					local itemType = ItemType(itemId)
-					player:say("You found " .. (count > 1 and count or (itemType:getArticle() ~= "" and itemType:getArticle() or "")) .. " " .. (count > 1 and itemType:getPluralName() or itemType:getName()) .. " in the bag.", TALKTYPE_MONSTER_SAY)
+					local itemLabel
+					if count > 1 then
+						itemLabel = string.format("%s %s", tostring(count), itemType:getPluralName())
+					else
+						local article = itemType:getArticle()
+						itemLabel = article ~= "" and string.format("%s %s", article, itemType:getName()) or itemType:getName()
+					end
+					player:sayLocalized("scripts.random_items.found_in_bag", TALKTYPE_MONSTER_SAY, false, nil, nil, { itemLabel })
 				end
 			else
 				player:sayLocalized("actions.random_items.say_3", TALKTYPE_MONSTER_SAY)

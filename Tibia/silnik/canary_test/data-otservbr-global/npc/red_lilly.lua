@@ -120,10 +120,7 @@ keywordHandler:addKeyword({ "pirate" }, StdModule.say, { npcHandler = npcHandler
 keywordHandler:addKeyword({ "plantations" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.red_lilly.stdmod_15" })
 keywordHandler:addKeyword({ "quara" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"The quara are the curse of the sea. Everybody that dares to enrage the sea spirits has to fear their vengeance. They come at night to kidnap people who forgot their lucky charms at home ...",
-		"Sometimes those evil beings take the most naughty children to raise them as their own underwater.",
-	},
+	i18nKey = "npc.red_lilly.stdmod_27",
 })
 keywordHandler:addKeyword({ "rum" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.red_lilly.stdmod_16" })
 keywordHandler:addKeyword({ "striker" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.red_lilly.stdmod_17" })

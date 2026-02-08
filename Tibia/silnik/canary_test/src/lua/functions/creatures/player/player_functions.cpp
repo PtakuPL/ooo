@@ -30,6 +30,7 @@
 #include "map/spectators.hpp"
 #include "kv/kv.hpp"
 #include "creatures/players/components/wheel/wheel_definitions.hpp"
+#include "utils/i18n/translator.hpp"
 
 #include "enums/account_coins.hpp"
 #include "enums/account_errors.hpp"
@@ -57,6 +58,9 @@ void PlayerFunctions::init(lua_State* L) {
 
 	Lua::registerMethod(L, "Player", "getAccountType", PlayerFunctions::luaPlayerGetAccountType);
 	Lua::registerMethod(L, "Player", "setAccountType", PlayerFunctions::luaPlayerSetAccountType);
+	Lua::registerMethod(L, "Player", "getLocale", PlayerFunctions::luaPlayerGetLocale);
+	Lua::registerMethod(L, "Player", "setLocale", PlayerFunctions::luaPlayerSetLocale);
+	Lua::registerMethod(L, "Player", "getTranslation", PlayerFunctions::luaPlayerGetTranslation);
 
 	Lua::registerMethod(L, "Player", "isMonsterBestiaryUnlocked", PlayerFunctions::luaPlayerIsMonsterBestiaryUnlocked);
 	Lua::registerMethod(L, "Player", "addBestiaryKill", PlayerFunctions::luaPlayerAddBestiaryKill);
@@ -750,6 +754,61 @@ int PlayerFunctions::luaPlayerSetAccountType(lua_State* L) {
 	}
 
 	Lua::pushBoolean(L, true);
+	return 1;
+}
+
+int PlayerFunctions::luaPlayerGetLocale(lua_State* L) {
+	// player:getLocale()
+	const auto &player = Lua::getUserdataShared<Player>(L, 1, "Player");
+	if (player) {
+		Lua::pushString(L, player->getLocale());
+	} else {
+		lua_pushnil(L);
+	}
+	return 1;
+}
+
+int PlayerFunctions::luaPlayerSetLocale(lua_State* L) {
+	// player:setLocale(locale)
+	const auto &player = Lua::getUserdataShared<Player>(L, 1, "Player");
+	if (player) {
+		player->setLocale(Lua::getString(L, 2));
+		Lua::pushBoolean(L, true);
+	} else {
+		lua_pushnil(L);
+	}
+	return 1;
+}
+
+int PlayerFunctions::luaPlayerGetTranslation(lua_State* L) {
+	// player:getTranslation(key[, args])
+	const int parameters = lua_gettop(L);
+	const auto &player = Lua::getUserdataShared<Player>(L, 1, "Player");
+	if (!player) {
+		lua_pushnil(L);
+		return 1;
+	}
+
+	const std::string &key = Lua::getString(L, 2);
+	const std::string locale = !player->getLocale().empty() ? std::string(player->getLocale()) : "en";
+
+	std::vector<std::string> args;
+	if (parameters >= 3 && lua_istable(L, 3)) {
+		const auto length = lua_objlen(L, 3);
+		args.reserve(length);
+		for (size_t idx = 1; idx <= length; ++idx) {
+			lua_rawgeti(L, 3, idx);
+			args.emplace_back(Lua::getString(L, -1));
+			lua_pop(L, 1);
+		}
+	}
+
+	const auto &tr = i18n::g_translator();
+	if (args.empty()) {
+		Lua::pushString(L, tr.get(key, locale));
+	} else {
+		Lua::pushString(L, tr.format(key, locale, args));
+	}
 	return 1;
 }
 

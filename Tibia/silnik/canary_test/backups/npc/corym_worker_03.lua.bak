@@ -62,7 +62,7 @@ local function greetCallback(npc, creature, message)
 		player:setStorageValue(HiddenThreats.CorymRescued04, 1)
 		player:addItem(3032, 1)
 	else
-		npcHandler:setMessage(MESSAGE_GREET, "My hero! A friend of mine sent you to liberate me? A true friend!")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.corym_worker_03.greet_msg_1")
 	end
 	return true
 end
@@ -76,7 +76,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 -- Greeting message
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye, |PLAYERNAME|.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.corym_worker_03.farewell_msg_1")
 
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)

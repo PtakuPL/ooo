@@ -17,7 +17,7 @@ function rune.onCastSpell(player, variant)
 						return true
 					end
 				else
-					player:sendCancelMessage("You cannot control more creatures.")
+					player:sendLocalizedTextMessage(MESSAGE_FAILURE, "rune.msg_cannot_control_more")
 					player:getPosition():sendMagicEffect(CONST_ME_POFF)
 					return false
 				end

@@ -4,46 +4,13 @@
 
 local AttributeTable = {
 	[6013] = {
-		text = [[
-Hardek *
-Bozo *
-Sam ****
-Oswald
-Partos ***
-Quentin *
-Tark ***
-Harsky ***
-Stutch *
-Ferumbras *
-Frodo **
-Noodles ****]],
+		text = "#i18n:book.quest_reward.wanted_list",
 	},
 	[6112] = {
-		text = [[
-... the dream master retreated to the world behind the curtains of awareness, I can't reach him, now that the last hall of dreams is lost to the forces of evil.
-I sealed Goshnar's grave so no one can enter the pits without knowing our secret.
-I will try to retreat to Knightwatch Tower and wait for a dreamer in possession of the key.
-So we can travel on one of the dream paths to a saver place to regroup and to plan a counter-attack.
-I fear we have to recruit new members and we have only little time left to train them.
-I hope Taciror will not waste our last forces in a futile attack on the Ruthless Seven.
-Our order has never truly recovered from the losses in our war against Goshnar and his undead hordes.
-Now that our leaders and best warriors have died in the attack on the demonic forces, we don't stand a chance against our enemies.
-Our only hope is to gather new forces and to recapture the chamber of dreams.
-Of course I know the right method to distract Hugo long enough to get past him.
-The dream master is important to teach our recruits in the old ways and in the art of dreamwalking.
-We need a leader for our cause and we need him badly. Headless we will fail and fall.
-It is already uncertain who took the Nightmare Chronicles out of the pits and I have no idea where they are hidden.
-They are fighting about power and influence but unity is the key to success. Our whole order is centred about unity.
-All our rituals and procedures rooted on unity and sharing, they can't neglect that.
-]],
+		text = "#i18n:book.quest_reward.nightmare_knights_diary",
 	},
 	[6183] = {
-		text = [[
-Looks like the fox is out!
-More luck next time!
-Signed:
-the horned fox
-]],
+		text = "#i18n:book.quest_reward.horned_fox_note",
 	},
 }
 
@@ -85,7 +52,7 @@ local function playerAddItem(params, item, rewardIndex)
 		end
 	end
 
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, params.message .. ".")
+	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, params.message, params.args or {})
 	if params.useKV then
 		player:questKV(params.questName):set("completed", true)
 		if params.timer then
@@ -128,7 +95,7 @@ local function playerAddContainerItem(params, item, rewardIndex)
 		player:addAchievement(achievement)
 	end
 
-	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.quest_reward_common.msg_1" .. getItemName(params.itemBagName) .. ".")
+	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.common.found_container", { getItemName(params.itemBagName) })
 	if params.useKV then
 		player:questKV(params.questName):set("completed", true)
 		if params.timer then
@@ -157,35 +124,35 @@ function questReward.onUse(player, item, fromPosition, itemEx, toPosition)
 	end
 
 	if setting.weight then
-		local message = "You have found a " .. getItemName(setting.container) .. "."
+		local message = getItemName(setting.container)
 
 		local backpack = player:getSlotItem(CONST_SLOT_BACKPACK)
 		if not backpack or backpack:getEmptySlots(true) < 1 then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, message .. " But you have no room to take it.")
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.common.found_no_room_to_take", { getItemName(setting.container) })
 			return true
 		end
 		if (player:getFreeCapacity() / 100) < setting.weight then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, message .. ". Weighing " .. setting.weight .. " oz, it is too heavy for you to carry.")
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.common.found_too_heavy_to_carry", { getItemName(setting.container), setting.weight })
 			return true
 		end
 	end
 
 	if setting.useKV then
 		if player:questKV(setting.questName):get("completed") then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The " .. getItemName(setting.itemId) .. " is empty.")
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.common.item_is_empty", { getItemName(setting.itemId) })
 			return true
 		end
 		if setting.timerStorage and player:questKV(setting.questName):get("timer") and player:questKV(setting.questName):get("timer") > os.time() then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The " .. getItemName(setting.itemId) .. " is empty.")
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.common.item_is_empty", { getItemName(setting.itemId) })
 			return true
 		end
 	else
 		if player:getStorageValue(setting.storage) >= 1 then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The " .. getItemName(setting.itemId) .. " is empty.")
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.common.item_is_empty", { getItemName(setting.itemId) })
 			return true
 		end
 		if setting.timerStorage and player:getStorageValue(setting.timerStorage) > os.time() then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The " .. getItemName(setting.itemId) .. " is empty.")
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.common.item_is_empty", { getItemName(setting.itemId) })
 			return true
 		end
 	end
@@ -224,14 +191,17 @@ function questReward.onUse(player, item, fromPosition, itemEx, toPosition)
 				if itemDescriptions.plural then
 					itemName = itemDescriptions.plural
 				end
-				addItemParams.message = "You have found " .. count .. " " .. itemName
+				addItemParams.message = "quests.common.found_item"
+				addItemParams.args = { count .. " " .. itemName }
 			elseif ItemType(itemid):getCharges() > 0 then
-				addItemParams.message = "You have found " .. itemArticle .. " " .. itemName
+				addItemParams.message = "quests.common.found_item"
+				addItemParams.args = { itemArticle .. " " .. itemName }
 				if not ItemType(itemid):isRune() then
 					addItemParams.weight = getItemWeight(itemid)
 				end
 			else
-				addItemParams.message = "You have found " .. itemArticle .. " " .. itemName
+				addItemParams.message = "quests.common.found_item"
+				addItemParams.args = { itemArticle .. " " .. itemName }
 			end
 			if not playerAddItem(addItemParams, item, i) then
 				return true

@@ -64,7 +64,7 @@ function randomItems.onUse(player, item, fromPosition, target, toPosition, isHot
 	local randomIndex = math.random(1, #rewardBag)
 	local rewardItem = rewardBag[randomIndex]
 	player:addItem(rewardItem.id, 1)
-	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.reward_bags.msg_1" .. rewardItem.name .. ".")
+player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.reward_bags.msg_1", { rewardItem.name })
 
 	local text = player:getName() .. " received a " .. rewardItem.name .. " from a " .. item:getName() .. "."
 	Webhook.sendMessage(":game_die: " .. player:getMarkdownLink() .. " received a **" .. rewardItem.name .. "** from a _" .. item:getName() .. "_.")

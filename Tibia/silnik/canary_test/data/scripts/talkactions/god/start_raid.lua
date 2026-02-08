@@ -5,15 +5,15 @@ function startRaid.onSay(player, words, param)
 	logCommand(player, words, param)
 
 	if param == "" then
-		player:sendCancelMessage("Command param required.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_command_param_required")
 		return true
 	end
 
 	local returnValue = Game.startRaid(param)
 	if returnValue ~= RETURNVALUE_NOERROR then
-		player:sendTextMessage(MESSAGE_ADMINISTRATOR, Game.getReturnMessage(returnValue))
+		player:sendLocalizedTextMessage(MESSAGE_ADMINISTRATOR, Game.getReturnMessageKey(returnValue))
 	else
-		player:sendLocalizedMessage(MESSAGE_ADMINISTRATOR, "scripts.start_raid.msg_1")
+		player:sendLocalizedTextMessage(MESSAGE_ADMINISTRATOR, "scripts.start_raid.msg_1")
 	end
 	return true
 end

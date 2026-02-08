@@ -12,7 +12,7 @@ function poacherBook.onUse(player, item, fromPosition, target, toPosition, isHot
 			return true
 		end
 	else
-		player:sendCancelMessage("You are not on that mission.")
+		player:sendLocalizedCancelMessage("quests.threatened_dreams.you_are_not_on_that_mission")
 	end
 end
 

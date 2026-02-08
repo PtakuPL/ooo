@@ -6,24 +6,24 @@ function addCharm.onSay(player, words, param)
 
 	local usage = "/addcharms PLAYER NAME,AMOUNT"
 	if param == "" then
-		player:sendCancelMessage("Command param required. Usage: " .. usage)
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_command_param_usage", {usage})
 		return true
 	end
 	local split = param:split(",")
 	if not split[2] then
-		player:sendCancelMessage("Insufficient parameters. Usage: " .. usage)
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_insufficient_usage", {usage})
 		return true
 	end
 	local target = Player(split[1])
 	if not target then
-		player:sendCancelMessage("A player with that name is not online.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_player_name_not_online")
 		return true
 	end
 
 	split[2] = split[2]:trimSpace()
 
-	player:sendCancelMessage("Added " .. split[2] .. " charm points to character '" .. target:getName() .. "'.")
-	target:sendCancelMessage("Received " .. split[2] .. " charm points!")
+	player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.god.charms.msg_added_points", {split[2], target:getName()})
+	target:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.god.charms.msg_received_points", {split[2]})
 	target:addCharmPoints(tonumber(split[2]))
 	target:getPosition():sendMagicEffect(CONST_ME_HOLYAREA)
 end
@@ -42,24 +42,24 @@ function addMinorCharm.onSay(player, words, param)
 
 	local usage = "/addminorcharms PLAYER NAME,AMOUNT"
 	if param == "" then
-		player:sendCancelMessage("Command param required. Usage: " .. usage)
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_command_param_usage", {usage})
 		return true
 	end
 	local split = param:split(",")
 	if not split[2] then
-		player:sendCancelMessage("Insufficient parameters. Usage: " .. usage)
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_insufficient_usage", {usage})
 		return true
 	end
 	local target = Player(split[1])
 	if not target then
-		player:sendCancelMessage("A player with that name is not online.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_player_name_not_online")
 		return true
 	end
 
 	split[2] = split[2]:trimSpace()
 
-	player:sendCancelMessage("Added " .. split[2] .. " minor charm points to character '" .. target:getName() .. "'.")
-	target:sendCancelMessage("Received " .. split[2] .. " minor charm points!")
+	player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.god.charms.msg_added_minor", {split[2], target:getName()})
+	target:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.god.charms.msg_received_minor", {split[2]})
 	target:addMinorCharmEchoes(tonumber(split[2]))
 	target:getPosition():sendMagicEffect(CONST_ME_HOLYAREA)
 end
@@ -81,12 +81,12 @@ function resetCharm.onSay(player, words, param)
 	end
 	local target = Player(param)
 	if not target then
-		player:sendCancelMessage("A player with that name is not online.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_player_name_not_online")
 		return true
 	end
 
-	player:sendCancelMessage("Reseted charm points from character '" .. target:getName() .. "'.")
-	target:sendCancelMessage("Reseted your charm points!")
+	player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.god.charms.msg_reset_other", {target:getName()})
+	target:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.god.charms.msg_reset_self")
 	target:resetCharmsBestiary()
 	target:getPosition():sendMagicEffect(CONST_ME_HOLYAREA)
 end
@@ -107,12 +107,12 @@ function charmExpansion.onSay(player, words, param)
 	end
 	local target = Player(param)
 	if not target then
-		player:sendCancelMessage("A player with that name is not online.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_player_name_not_online")
 		return true
 	end
 
-	player:sendCancelMessage("Added charm expansion for player '" .. target:getName() .. "'.")
-	target:sendCancelMessage("Received charm expansion!")
+	player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.god.charms.msg_expansion_other", {target:getName()})
+	target:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.god.charms.msg_expansion_self")
 	target:charmExpansion(true)
 	target:getPosition():sendMagicEffect(CONST_ME_HOLYAREA)
 end
@@ -133,12 +133,12 @@ function charmRune.onSay(player, words, param)
 	end
 	local target = Player(param)
 	if not target then
-		player:sendCancelMessage("A player with that name is not online.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_player_name_not_online")
 		return true
 	end
 
-	player:sendCancelMessage("Added all charm runes to '" .. target:getName() .. "'.")
-	target:sendCancelMessage("Received all charm runes!")
+	player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.god.charms.msg_runes_other", {target:getName()})
+	target:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.god.charms.msg_runes_self")
 	target:unlockAllCharmRunes()
 	target:getPosition():sendMagicEffect(CONST_ME_HOLYAREA)
 end
@@ -156,17 +156,17 @@ function setBestiary.onSay(player, words, param)
 
 	local usage = "/setbestiary PLAYER NAME,MONSTER NAME/ALL,AMOUNT"
 	if param == "" then
-		player:sendCancelMessage("Command param required. Usage: " .. usage)
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_command_param_usage", {usage})
 		return true
 	end
 	local split = param:split(",")
 	if not split[3] then
-		player:sendCancelMessage("Insufficient parameters. Usage: " .. usage)
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_insufficient_usage", {usage})
 		return true
 	end
 	local target = Player(split[1])
 	if not target then
-		player:sendCancelMessage("A player with that name is not online.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_player_name_not_online")
 		return true
 	end
 
@@ -175,7 +175,7 @@ function setBestiary.onSay(player, words, param)
 
 	local amount = tonumber(split[3])
 	if not amount then
-		player:sendCancelMessage("Wrong kill amount.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.god.charms.msg_wrong_kill")
 		return true
 	end
 
@@ -188,18 +188,18 @@ function setBestiary.onSay(player, words, param)
 				target:addBestiaryKill(mType:name(), amount)
 			end
 		end
-		player:sendCancelMessage("Set bestiary kill count to '" .. amount .. "' for all monsters for player '" .. target:getName() .. "'.")
-		target:sendCancelMessage("Updated kills for all monsters in the bestiary!")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.god.charms.msg_set_all_other", {amount, target:getName()})
+		target:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.god.charms.msg_set_all_self")
 	else
 		local mType = MonsterType(monsterName)
 		if not mType or (mType and mType:raceId() == 0) then
-			player:sendCancelMessage("This monster has no bestiary. Type the name exactly as in the game.")
+			player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.god.charms.msg_no_bestiary")
 			return true
 		end
 
 		target:addBestiaryKill(monsterName, amount)
-		player:sendCancelMessage("Set bestiary kill of monster '" .. monsterName .. "' for player '" .. target:getName() .. "' to '" .. amount .. "'.")
-		target:sendCancelMessage("Updated kills of monster '" .. monsterName .. "'!")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.god.charms.msg_set_single_other", {monsterName, target:getName(), amount})
+		target:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.god.charms.msg_set_single_self", {monsterName})
 	end
 
 	target:getPosition():sendMagicEffect(CONST_ME_HOLYAREA)

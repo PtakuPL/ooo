@@ -93,13 +93,7 @@ end
 -- Mission 6: Start
 local mission6 = keywordHandler:addKeyword({ "yes" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"I can help you get boots, but I can't give them to you for free. Besides, you'd want good boots, not that stuff made from rat leather. The best leather you'd find on Rook is wolf leather. ...",
-		"War wolf leather, to be precise. Problem is - war wolves are rare, and you can't hope to fight and defeat them. So your only chance is to find an already dead war wolf, take his skin, and escape really fast. ...",
-		"What an interesting coincidence that I've seen a poacher sneak into the wolf den just a few hours ago. I'm not exactly a fan of poachers - they kill too many of our wolves. ...",
-		"Sooo... what I'm suggesting is: follow his traces into the wolf den, and if you get lucky, you'll be able to take one of his illegally obtained war wolf skins. ...",
-		"That's why I wouldn't call it 'stealing', what an ugly word... anyway, if you bring the skin back to me, I'll make some great war wolf boots from them. What do you say?",
-	},
+	i18nKey = "npc.tom.stdmod_45",
 }, function(player)
 	return player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission06) == 1
 end)
@@ -139,13 +133,7 @@ mission6:addChildKeyword({ "no" }, StdModule.say, {
 -- Mission 6: Finish - Confirm (Give skin)
 keywordHandler:addKeyword({ "yes" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"Hmm... unfortunately the skin is damaged too badly. Whoever skinned this wolf wasn't very skilled at it. Hmm. ...",
-		"Ah, no need to fret. Tell you what kid, I'm gonna give you some normal leather boots instead. They should keep your feet warm as well. Here you go. ...",
-		"By the way... that running you did to get out of the cave will be your normal walking speed when you are several levels higher. With each level you gain, you'll also become a little faster. ...",
-		"There are also other items, spells and equipment that increase your speed. ...",
-		"You can also tame creatures to ride on that will also increase your speed. So don't worry if you're out of breath now - you won't always be that slow. Now off with you and back to Vascalir, I have work to do.",
-	},
+	i18nKey = "npc.tom.stdmod_46",
 }, function(player)
 	return player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission06) == 6 and player:getItemCount(12740) >= 1
 end, function(player)

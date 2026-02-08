@@ -253,13 +253,13 @@ function addaddon.onSay(player, words, param)
 	logCommand(player, words, param)
 
 	if param == "" then
-		player:sendCancelMessage("Command param required.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_command_param_required")
 		return true
 	end
 
 	local split = param:split(",")
 	if #split < 3 then
-		player:sendCancelMessage("Usage: /addaddon <player name>, <looktype or 'all'>, <value>")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.god.addon.msg_usage")
 		return true
 	end
 
@@ -267,7 +267,7 @@ function addaddon.onSay(player, words, param)
 	local target = Player(playerName)
 
 	if not target then
-		player:sendCancelMessage("Player not found.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_player_not_found")
 		return true
 	end
 
@@ -275,7 +275,7 @@ function addaddon.onSay(player, words, param)
 	local addonValue = tonumber(string.trim(split[3]))
 
 	if not addonValue or addonValue < 0 or addonValue > 3 then
-		player:sendCancelMessage("Invalid addon value. It should be between 0 and 3.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.god.addon.msg_invalid_value")
 		return true
 	end
 
@@ -289,7 +289,7 @@ function addaddon.onSay(player, words, param)
 	else
 		local looktype = tonumber(addonParam)
 		if not looktype then
-			player:sendCancelMessage("Invalid looktype.")
+			player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.god.addon.msg_invalid_looktype")
 			return true
 		end
 

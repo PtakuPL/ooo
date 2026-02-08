@@ -16,11 +16,11 @@ function idol.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if not player:hasOutfit(player:getSex() == PLAYERSEX_FEMALE and choice.female or choice.male) then
 		player:addOutfit(choice.female)
 		player:addOutfit(choice.male)
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_idol_of_tukh.msg_1" .. choice.msg .. " outfit!")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_idol_of_tukh.msg_1", { choice.msg })
 		player:getPosition():sendMagicEffect(CONST_ME_MAGIC_GREEN)
 		item:remove(1)
 	else
-		player:sendCancelMessage("You have already obtained this outfit!")
+		player:sendLocalizedCancelMessage("quests.adventures_of_galthen.you_have_already_obtained_this_outfit")
 	end
 	return true
 end

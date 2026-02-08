@@ -106,9 +106,9 @@ keywordHandler:addKeyword({ "join army" }, StdModule.say, { npcHandler = npcHand
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 
-npcHandler:setMessage(MESSAGE_GREET, "Address me properly |PLAYERNAME|!")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "LONG LIVE THE QUEEN!")
-npcHandler:setMessage(MESSAGE_FAREWELL, "LONG LIVE THE QUEEN!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.bunny_bonecrusher.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.bunny_bonecrusher.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.bunny_bonecrusher.farewell_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

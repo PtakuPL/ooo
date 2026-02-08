@@ -44,13 +44,11 @@ void PrivateChatChannel::invitePlayer(const std::shared_ptr<Player> &player, con
 		return;
 	}
 
-	std::ostringstream ss;
-	ss << player->getName() << " invites you to " << player->getPossessivePronoun() << " private chat channel.";
-	invitePlayer->sendTextMessage(MESSAGE_PARTY_MANAGEMENT, ss.str());
-
-	ss.str(std::string());
-	ss << invitePlayer->getName() << " has been invited.";
-	player->sendTextMessage(MESSAGE_PARTY_MANAGEMENT, ss.str());
+	invitePlayer->sendLocalizedTextMessage(MESSAGE_PARTY_MANAGEMENT, "cpp.chat.private_invite_received", {
+		player->getName(),
+		player->getPossessivePronoun()
+	});
+	player->sendLocalizedTextMessage(MESSAGE_PARTY_MANAGEMENT, "cpp.chat.private_invited_confirm", {invitePlayer->getName()});
 
 	for (const auto &[playerUserId, playerUser] : users) {
 		if (playerUserId == 0 || !playerUser) {
@@ -68,9 +66,7 @@ void PrivateChatChannel::excludePlayer(const std::shared_ptr<Player> &player, co
 
 	removeUser(excludePlayer);
 
-	std::ostringstream ss;
-	ss << excludePlayer->getName() << " has been excluded.";
-	player->sendTextMessage(MESSAGE_PARTY_MANAGEMENT, ss.str());
+	player->sendLocalizedTextMessage(MESSAGE_PARTY_MANAGEMENT, "cpp.chat.private_excluded_confirm", {excludePlayer->getName()});
 
 	excludePlayer->sendClosePrivate(id);
 

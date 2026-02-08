@@ -200,7 +200,7 @@ node1:addChildKeyword({ "yes" }, StdModule.promotePlayer, {
 	npcHandler = npcHandler,
 	cost = 20000,
 	level = 20,
-	text = "Congratulations! You are now promoted.",
+	i18nKey = "npc.king_tibianus.stdmod_2",
 })
 node1:addChildKeyword({ "no" }, StdModule.say, {
 	npcHandler = npcHandler,
@@ -445,11 +445,11 @@ keywordHandler:addAliasKeyword({ "marvik" })
 -- Greeting message
 keywordHandler:addGreetKeyword({ "hail king" }, {
 	npcHandler = npcHandler,
-	text = "I greet thee, my loyal subject |PLAYERNAME|.", i18nKey = "npc.king_tibianus.greet_1",
+	i18nKey = "npc.king_tibianus.greet_1",
 })
 keywordHandler:addGreetKeyword({ "salutations king" }, {
 	npcHandler = npcHandler,
-	text = "I greet thee, my loyal subject |PLAYERNAME|.", i18nKey = "npc.king_tibianus.greet_2",
+	i18nKey = "npc.king_tibianus.greet_2",
 })
 
 NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.king_tibianus.walkaway_msg_1")

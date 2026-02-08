@@ -1,0 +1,126 @@
+---
+name: Build - WASM (OTC Client Web)
+
+on:
+  workflow_dispatch: # Build WASM wymaga overlay-ports i Emscripten — tylko reczne uruchomienie
+
+env:
+  CMAKE_BUILD_PARALLEL_LEVEL: 4
+  MAKEFLAGS: '-j 4'
+  VCPKG_FEATURE_FLAGS: manifests,binarycaching
+  VCPKG_BINARY_SOURCES: clear;x-gha,readwrite
+  VCPKG_BUILD_TYPE: release
+  VCPKG_DEFAULT_TRIPLET: wasm32-emscripten
+  VCPKG_DEFAULT_HOST_TRIPLET: x64-linux
+
+jobs:
+  build-wasm:
+    name: OTC WASM Build (Emscripten)
+    runs-on: ubuntu-22.04
+    timeout-minutes: 360
+    defaults:
+      run:
+        working-directory: Tibia/silnik/canary_test/testyy
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Remove nested git directories (upstream mirrors)
+        shell: bash
+        run: |
+          rm -rf oryginall/canary-serwer/.git || true
+          rm -rf oryginall/otclient/.git || true
+
+      - name: Install Linux Dependencies
+        working-directory: .
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ccache pkg-config
+
+      - name: Setup Emscripten
+        uses: mymindstorm/setup-emsdk@v14
+        with:
+          version: 3.1.56
+          actions-cache-folder: emsdk-cache
+
+      - name: Verify Emscripten
+        run: |
+          emcc --version
+          em++ --version
+          echo "EMSDK=$EMSDK"
+
+      - name: CCache (sccache)
+        uses: hendrikmuhs/ccache-action@main
+        with:
+          max-size: "1G"
+          variant: "sccache"
+          key: sccache-otc-wasm
+          restore-keys: |
+            sccache-otc-wasm
+
+      - name: Export GitHub Actions cache env
+        uses: actions/github-script@v7
+        with:
+          script: |
+            core.exportVariable('ACTIONS_CACHE_URL', process.env.ACTIONS_CACHE_URL || '');
+            core.exportVariable('ACTIONS_RUNTIME_TOKEN', process.env.ACTIONS_RUNTIME_TOKEN || '');
+
+      - name: Get vcpkg commit ID
+        id: vcpkg-step
+        run: |
+          vcpkgCommitId=$(grep 'builtin-baseline' vcpkg.json | awk -F: '{print $2}' | tr -d '," ')
+          echo "vcpkg commit ID: $vcpkgCommitId"
+          echo "vcpkgGitCommitId=$vcpkgCommitId" >> $GITHUB_OUTPUT
+
+      - name: Cache vcpkg artifacts
+        uses: actions/cache@v4
+        with:
+          path: |
+            ${{ github.workspace }}/vcpkg/installed
+            ${{ github.workspace }}/vcpkg/buildtrees
+            ${{ github.workspace }}/vcpkg/downloads
+          key: vcpkg-otc-wasm32-emscripten-${{ hashFiles('Tibia/silnik/canary_test/testyy/vcpkg.json') }}
+          restore-keys: |
+            vcpkg-otc-wasm32-emscripten-
+
+      - name: Install vcpkg
+        uses: lukka/run-vcpkg@v11
+        with:
+          vcpkgGitCommitId: ${{ steps.vcpkg-step.outputs.vcpkgGitCommitId }}
+
+      - name: Setup CMake + Ninja
+        uses: lukka/get-cmake@latest
+        with:
+          cmakeVersion: '~3.27.0'
+
+      - name: Configure CMake (Emscripten)
+        run: |
+          mkdir -p build
+          emcmake cmake -G "Ninja" \
+                -DCMAKE_BUILD_TYPE=Release \
+                -DCMAKE_TOOLCHAIN_FILE="$VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake" \
+                -DVCPKG_CHAINLOAD_TOOLCHAIN_FILE="$EMSDK/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake" \
+                -DVCPKG_TARGET_TRIPLET=wasm32-emscripten \
+                -DVCPKG_OVERLAY_PORTS="${{ github.workspace }}/Tibia/silnik/canary_test/testyy/browser/overlay-ports" \
+                -DSPEED_UP_BUILD_UNITY=OFF \
+                -DTOGGLE_BIN_FOLDER=ON \
+                -S . -B build
+
+      - name: Build
+        run: |
+          cmake --build build --config Release --parallel 4
+
+      - name: Create and Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: otclient-wasm-${{ github.sha }}
+          path: |
+            ${{ github.workspace }}/Tibia/silnik/canary_test/testyy/build/bin/
+            ${{ github.workspace }}/Tibia/silnik/canary_test/testyy/build/*.html
+            ${{ github.workspace }}/Tibia/silnik/canary_test/testyy/build/*.js
+            ${{ github.workspace }}/Tibia/silnik/canary_test/testyy/build/*.wasm
+            ${{ github.workspace }}/Tibia/silnik/canary_test/testyy/build/*.data
+          retention-days: 30

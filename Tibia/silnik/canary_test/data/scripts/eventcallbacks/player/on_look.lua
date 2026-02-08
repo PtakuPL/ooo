@@ -14,67 +14,67 @@ local function isSpecialItem(itemId)
 	return false
 end
 
-local function getPositionDescription(position)
+local function getPositionDescription(position, player)
 	if position.x == 65535 then
-		return "Position: In your inventory."
+		return Translator.getTranslation(player, "scripts.on_look.position_inventory")
 	else
-		return string.format("Position: (%d, %d, %d)", position.x, position.y, position.z)
+		return string.format(Translator.getTranslation(player, "scripts.on_look.position_coords"), position.x, position.y, position.z)
 	end
 end
 
 local function handleItemDescription(inspectedThing, lookDistance, player)
-	local descriptionText = inspectedThing:getDescription(lookDistance)
+	local descriptionText = inspectedThing:getDescription(lookDistance, player)
 
 	if not player:getGroup():getAccess() then
 		if inspectedThing:getId() == ITEM_MAGICWALL or inspectedThing:getId() == ITEM_MAGICWALL_SAFE then
-			return "You see a magic wall."
+			return Translator.getTranslation(player, "scripts.on_look.magic_wall")
 		elseif inspectedThing:getId() == ITEM_WILDGROWTH or inspectedThing:getId() == ITEM_WILDGROWTH_SAFE then
-			return "You see rush wood."
+			return Translator.getTranslation(player, "scripts.on_look.rush_wood")
 		end
 	end
 	if isSpecialItem(inspectedThing.itemid) then
 		local itemCharges = inspectedThing:getCharges()
 		if itemCharges > 0 then
-			return string.format("You see %s\nIt has %d refillings left.", descriptionText, itemCharges)
+			return string.format(Translator.getTranslation(player, "scripts.on_look.see_refillings"), descriptionText, itemCharges)
 		end
 	else
-		return "You see " .. descriptionText
+		return string.format(Translator.getTranslation(player, "scripts.on_look.see_prefix"), descriptionText)
 	end
 
 	return descriptionText
 end
 
-local function handleCreatureDescription(inspectedThing, lookDistance)
-	local descriptionText = inspectedThing:getDescription(lookDistance)
+local function handleCreatureDescription(inspectedThing, lookDistance, player)
+	local descriptionText = inspectedThing:getDescription(lookDistance, player)
 
 	if inspectedThing:isMonster() then
 		local monsterMaster = inspectedThing:getMaster()
 		if monsterMaster and table.contains({ "sorcerer familiar", "knight familiar", "druid familiar", "paladin familiar" }, inspectedThing:getName():lower()) then
 			local summonTimeRemaining = monsterMaster:kv():get("familiar-summon-time") or 0
-			descriptionText = string.format("%s (Master: %s). It will disappear in %s", descriptionText, monsterMaster:getName(), Game.getTimeInWords(summonTimeRemaining - os.time()))
+			descriptionText = string.format(Translator.getTranslation(player, "scripts.on_look.familiar_master"), descriptionText, monsterMaster:getName(), Game.getTimeInWords(summonTimeRemaining - os.time()))
 		end
 	end
 
-	return "You see " .. descriptionText
+	return string.format(Translator.getTranslation(player, "scripts.on_look.see_prefix"), descriptionText)
 end
 
-local function appendAdminDetails(descriptionText, inspectedThing, inspectedPosition)
+local function appendAdminDetails(descriptionText, inspectedThing, inspectedPosition, player)
 	if inspectedThing:isItem() then
-		descriptionText = string.format("%s\nClient ID: %d", descriptionText, inspectedThing:getId())
+		descriptionText = string.format(Translator.getTranslation(player, "scripts.on_look.admin_client_id"), descriptionText, inspectedThing:getId())
 
 		local itemActionId = inspectedThing:getActionId()
 		if itemActionId ~= 0 then
-			descriptionText = string.format("%s, Action ID: %d", descriptionText, itemActionId)
+			descriptionText = string.format(Translator.getTranslation(player, "scripts.on_look.admin_action_id"), descriptionText, itemActionId)
 		end
 
 		local itemUniqueId = inspectedThing:getUniqueId()
 		if itemUniqueId > 0 and itemUniqueId < 65536 then
-			descriptionText = string.format("%s, Unique ID: %d", descriptionText, itemUniqueId)
+			descriptionText = string.format(Translator.getTranslation(player, "scripts.on_look.admin_unique_id"), descriptionText, itemUniqueId)
 		end
 
 		local doorIdAttribute = inspectedThing:getAttribute(ITEM_ATTRIBUTE_DOORID)
 		if doorIdAttribute and doorIdAttribute > 0 then
-			descriptionText = string.format("%s, Door ID: %d", descriptionText, doorIdAttribute)
+			descriptionText = string.format(Translator.getTranslation(player, "scripts.on_look.admin_door_id"), descriptionText, doorIdAttribute)
 		end
 
 		local itemType = inspectedThing:getType()
@@ -82,38 +82,38 @@ local function appendAdminDetails(descriptionText, inspectedThing, inspectedPosi
 		local transformOnDeEquipId = itemType:getTransformDeEquipId()
 
 		if transformOnEquipId ~= 0 then
-			descriptionText = string.format("%s\nTransforms to: %d (onEquip)", descriptionText, transformOnEquipId)
+			descriptionText = string.format(Translator.getTranslation(player, "scripts.on_look.admin_transform_equip"), descriptionText, transformOnEquipId)
 		elseif transformOnDeEquipId ~= 0 then
-			descriptionText = string.format("%s\nTransforms to: %d (onDeEquip)", descriptionText, transformOnDeEquipId)
+			descriptionText = string.format(Translator.getTranslation(player, "scripts.on_look.admin_transform_deequip"), descriptionText, transformOnDeEquipId)
 		end
 
 		local itemDecayId = itemType:getDecayId()
 		if itemDecayId ~= -1 then
-			descriptionText = string.format("%s\nDecays to: %d", descriptionText, itemDecayId)
+			descriptionText = string.format(Translator.getTranslation(player, "scripts.on_look.admin_decay"), descriptionText, itemDecayId)
 		end
 	elseif inspectedThing:isCreature() then
-		local healthDescription, creatureId = "%s\n%s\nHealth: %d / %d"
+		local healthDescription, creatureId = Translator.getTranslation(player, "scripts.on_look.admin_player_health")
 		if inspectedThing:isPlayer() and inspectedThing:getMaxMana() > 0 then
-			creatureId = string.format("Player ID: %i", inspectedThing:getGuid())
-			healthDescription = string.format("%s, Mana: %d / %d", healthDescription, inspectedThing:getMana(), inspectedThing:getMaxMana())
+			creatureId = string.format(Translator.getTranslation(player, "scripts.on_look.admin_player_id"), inspectedThing:getGuid())
+			healthDescription = string.format(Translator.getTranslation(player, "scripts.on_look.admin_player_health_mana"), healthDescription, inspectedThing:getMana(), inspectedThing:getMaxMana())
 		elseif inspectedThing:isMonster() then
-			creatureId = string.format("Monster ID: %i", inspectedThing:getId())
+			creatureId = string.format(Translator.getTranslation(player, "scripts.on_look.admin_monster_id"), inspectedThing:getId())
 		elseif inspectedThing:isNpc() then
-			creatureId = string.format("NPC ID: %i", inspectedThing:getId())
+			creatureId = string.format(Translator.getTranslation(player, "scripts.on_look.admin_npc_id"), inspectedThing:getId())
 		end
 
 		descriptionText = string.format(healthDescription, descriptionText, creatureId, inspectedThing:getHealth(), inspectedThing:getMaxHealth())
 	end
 
-	descriptionText = string.format("%s\n%s", descriptionText, getPositionDescription(inspectedPosition))
+	descriptionText = string.format("%s\n%s", descriptionText, getPositionDescription(inspectedPosition, player))
 
 	if inspectedThing:isCreature() then
 		local creatureBaseSpeed = inspectedThing:getBaseSpeed()
 		local creatureCurrentSpeed = inspectedThing:getSpeed()
-		descriptionText = string.format("%s\nSpeed Base: %d\nSpeed: %d", descriptionText, creatureBaseSpeed, creatureCurrentSpeed)
+		descriptionText = string.format(Translator.getTranslation(player, "scripts.on_look.admin_speed"), descriptionText, creatureBaseSpeed, creatureCurrentSpeed)
 
 		if inspectedThing:isPlayer() then
-			descriptionText = string.format("%s\nIP: %s", descriptionText, Game.convertIpToString(inspectedThing:getIp()))
+			descriptionText = string.format(Translator.getTranslation(player, "scripts.on_look.admin_ip"), descriptionText, Game.convertIpToString(inspectedThing:getIp()))
 		end
 	end
 
@@ -128,11 +128,11 @@ function callback.playerOnLook(player, inspectedThing, inspectedPosition, lookDi
 	if inspectedThing:isItem() then
 		descriptionText = handleItemDescription(inspectedThing, lookDistance, player)
 	elseif inspectedThing:isCreature() then
-		descriptionText = handleCreatureDescription(inspectedThing, lookDistance)
+		descriptionText = handleCreatureDescription(inspectedThing, lookDistance, player)
 	end
 
 	if player:getGroup():getAccess() then
-		descriptionText = appendAdminDetails(descriptionText, inspectedThing, inspectedPosition)
+		descriptionText = appendAdminDetails(descriptionText, inspectedThing, inspectedPosition, player)
 	end
 
 	player:sendTextMessage(MESSAGE_LOOK, descriptionText)

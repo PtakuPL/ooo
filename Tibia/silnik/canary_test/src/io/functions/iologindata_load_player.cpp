@@ -140,6 +140,7 @@ bool IOLoginDataLoad::loadPlayerBasicInfo(const std::shared_ptr<Player> &player,
 		return false;
 	}
 	player->setGroup(group);
+	player->setLocale(result->getString("locale"));
 
 	player->setBankBalance(result->getNumber<uint64_t>("balance"));
 	player->quickLootFallbackToMainContainer = result->getNumber<bool>("quickloot_fallback");

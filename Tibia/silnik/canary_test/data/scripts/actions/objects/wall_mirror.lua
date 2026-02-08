@@ -1,15 +1,15 @@
 local setting = {
-	"You could win a beauty contest today!",
-	"You rarely looked better.",
-	"Well, you can't look good every day.",
-	"You should think about a makeover.",
-	"Is that the indication of a potbelly looming under your clothes?",
-	"You look irresistible.",
-	"You look tired.",
-	"You look awesome!",
-	"You nearly don't recognize yourself.",
-	"You look fabulous.",
-	"Surprise, surprise, you don't see yourself.",
+	"scripts.wall_mirror.msg_1",
+	"scripts.wall_mirror.msg_2",
+	"scripts.wall_mirror.msg_3",
+	"scripts.wall_mirror.msg_4",
+	"scripts.wall_mirror.msg_5",
+	"scripts.wall_mirror.msg_6",
+	"scripts.wall_mirror.msg_7",
+	"scripts.wall_mirror.msg_8",
+	"scripts.wall_mirror.msg_9",
+	"scripts.wall_mirror.msg_10",
+	"scripts.wall_mirror.msg_11",
 }
 
 local wallMirror = Action()
@@ -20,7 +20,7 @@ function wallMirror.onUse(player, item, fromPosition, target, toPosition, isHotk
 		return true
 	end
 
-	player:say(setting[math.random(1, #setting)], TALKTYPE_MONSTER_SAY)
+	player:sayLocalized(setting[math.random(1, #setting)], TALKTYPE_MONSTER_SAY)
 	player:setExhaustion("delay-wall-mirror", 20 * 60 * 60)
 	return true
 end

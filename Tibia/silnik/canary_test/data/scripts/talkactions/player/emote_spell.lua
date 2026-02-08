@@ -3,21 +3,21 @@ local emoteSpell = TalkAction("!emote")
 
 function emoteSpell.onSay(player, words, param)
 	if configManager.getBoolean(configKeys.EMOTE_SPELLS) == false then
-		player:sendLocalizedMessage(MESSAGE_LOOK, "scripts.emote_spell.msg_1")
+		player:sendLocalizedTextMessage(MESSAGE_LOOK, "scripts.emote_spell.msg_1")
 		return true
 	end
 
 	if param == "" then
-		player:sendCancelMessage("Please specify the parameter: 'on' to activate or 'off' to deactivate.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.player.emote_spell.msg_specify_param")
 		return true
 	end
 
 	if param == "on" then
 		player:setStorageValue(STORAGEVALUE_EMOTE, 1)
-		player:sendLocalizedMessage(MESSAGE_LOOK, "scripts.emote_spell.msg_2")
+		player:sendLocalizedTextMessage(MESSAGE_LOOK, "scripts.emote_spell.msg_2")
 	elseif param == "off" then
 		player:setStorageValue(STORAGEVALUE_EMOTE, 0)
-		player:sendLocalizedMessage(MESSAGE_LOOK, "scripts.emote_spell.msg_3")
+		player:sendLocalizedTextMessage(MESSAGE_LOOK, "scripts.emote_spell.msg_3")
 	end
 	return true
 end

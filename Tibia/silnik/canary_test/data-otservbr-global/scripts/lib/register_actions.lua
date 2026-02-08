@@ -258,7 +258,7 @@ function onDestroyItem(player, item, fromPosition, target, toPosition, isHotkey)
 	end
 
 	if toPosition.x == CONTAINER_POSITION then
-		player:sendCancelMessage(Game.getReturnMessage(RETURNVALUE_NOTPOSSIBLE))
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, Game.getReturnMessageKey(RETURNVALUE_NOTPOSSIBLE))
 		return true
 	end
 
@@ -481,7 +481,7 @@ function onUseShovel(player, item, fromPosition, target, toPosition, isHotkey)
 			local randItem = config[i]
 			if chance >= randItem.from and chance <= randItem.to then
 				player:addItem(randItem.itemId, 1)
-				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.register_actions.msg_10" .. ItemType(randItem.itemId):getName() .. ".")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.register_actions.msg_10", { ItemType(randItem.itemId):getName() })
 				player:setStorageValue(Storage.SwampDiggingTimeout, os.time() + 604800)
 				toPosition:sendMagicEffect(CONST_ME_GREEN_RINGS)
 				break
@@ -553,10 +553,10 @@ function onUsePick(player, item, fromPosition, target, toPosition, isHotkey)
 				local r = math.random(1, 3)
 				local item_id = secret_library.items[r]
 				player:addItem(item_id, 1)
-				player:say("You have found a " .. ItemType(item_id):getName() .. ".", TALKTYPE_MONSTER_SAY)
+				player:sayLocalized("scripts.register_actions.found_item", TALKTYPE_MONSTER_SAY, false, nil, nil, { ItemType(item_id):getName() })
 				player:setStorageValue(j.storage, os.time() + 2 * 60)
 			else
-				player:say(secret_library.exhaustMessage, TALKTYPE_MONSTER_SAY)
+				player:sayLocalized(secret_library.exhaustMessage, TALKTYPE_MONSTER_SAY)
 			end
 			return true
 		end
@@ -1056,10 +1056,10 @@ function onUseKitchenKnife(player, item, fromPosition, target, toPosition, isHot
 				local r = math.random(1, 3)
 				local item_id = secret_library.items[r]
 				player:addItem(item_id, 1)
-				player:say("You have found a " .. ItemType(item_id):getName() .. ".", TALKTYPE_MONSTER_SAY)
+				player:sayLocalized("scripts.register_actions.found_item", TALKTYPE_MONSTER_SAY, false, nil, nil, { ItemType(item_id):getName() })
 				player:setStorageValue(j.storage, os.time() + 2 * 60)
 			else
-				player:say(secret_library.exhaustMessage, TALKTYPE_MONSTER_SAY)
+				player:sayLocalized(secret_library.exhaustMessage, TALKTYPE_MONSTER_SAY)
 			end
 			return true
 		end
@@ -1150,7 +1150,7 @@ function onGrindItem(player, item, fromPosition, target, toPosition)
 				local parent = item:getParent()
 				if not parent:isTile() and (parent:addItem(value.item_id, 1) or topParent:addItem(value.item_id, 1)) then
 					item:remove(1)
-					player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.register_actions.msg_18" .. ItemType(index):getName() .. " into fine, " .. ItemType(value.item_id):getName() .. ".")
+					player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.register_actions.msg_18", { ItemType(index):getName(), ItemType(value.item_id):getName() })
 					doSendMagicEffect(target:getPosition(), value.effect)
 					return true
 				else
@@ -1159,7 +1159,7 @@ function onGrindItem(player, item, fromPosition, target, toPosition)
 			else
 				Game.createItem(value.item_id, 1, item:getPosition())
 			end
-			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.register_actions.msg_19" .. ItemType(index):getName() .. " into fine, " .. ItemType(value.item_id):getName() .. ".")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.register_actions.msg_19", { ItemType(index):getName(), ItemType(value.item_id):getName() })
 			item:remove(1)
 			doSendMagicEffect(target:getPosition(), value.effect)
 			return

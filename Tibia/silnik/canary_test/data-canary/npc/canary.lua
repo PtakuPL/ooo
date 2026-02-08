@@ -117,7 +117,7 @@ end
 
 -- On sell npc shop message
 npcType.onSellItem = function(npc, player, itemId, subtype, amount, ignore, name, totalCost)
-	player:sendTextMessage(MESSAGE_TRADE, string.format("Sold %ix %s for %i gold.", amount, name, totalCost))
+	player:sendLocalizedTextMessage(MESSAGE_TRADE, "scripts.npc.sold_item", {tostring(amount), name, tostring(totalCost)})
 end
 
 -- On check npc shop message (look item)

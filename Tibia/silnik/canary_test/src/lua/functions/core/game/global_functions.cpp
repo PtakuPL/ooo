@@ -25,6 +25,7 @@
 #include "server/network/protocol/protocolstatus.hpp"
 #include "lua/functions/lua_functions_loader.hpp"
 #include "creatures/players/player.hpp"
+#include "utils/i18n/translator.hpp"
 
 void GlobalFunctions::init(lua_State* L) {
 	lua_register(L, "addEvent", GlobalFunctions::luaAddEvent);
@@ -64,6 +65,7 @@ void GlobalFunctions::init(lua_State* L) {
 	Lua::registerGlobalMethod(L, "systemTime", GlobalFunctions::luaSystemTime);
 	Lua::registerGlobalMethod(L, "getFormattedTimeRemaining", GlobalFunctions::luaGetFormattedTimeRemaining);
 	Lua::registerGlobalMethod(L, "reportError", GlobalFunctions::luaReportError);
+	Lua::registerGlobalMethod(L, "i18nTranslate", GlobalFunctions::luaI18nTranslate); // I18N
 }
 
 int GlobalFunctions::luaDoPlayerAddItem(lua_State* L) {
@@ -911,4 +913,26 @@ bool GlobalFunctions::getArea(lua_State* L, std::list<uint32_t> &list, uint32_t 
 
 	lua_pop(L, 1);
 	return (rows != 0);
+}
+
+// I18N: Translate a key using the i18n system
+// Usage: i18nTranslate("monster.wolf.name", "pl") → "Wilk"
+int GlobalFunctions::luaI18nTranslate(lua_State* L) {
+	// i18nTranslate(key, locale)
+	const std::string key = Lua::getString(L, 1);
+	const std::string locale = Lua::getString(L, 2, "en");
+
+	if (key.empty()) {
+		Lua::pushString(L, "");
+		return 1;
+	}
+
+	const std::string &translated = i18n::g_translator().get(key, locale);
+	// g_translator().get() returns the key itself when no translation found
+	if (translated == key) {
+		Lua::pushString(L, "");
+	} else {
+		Lua::pushString(L, translated);
+	}
+	return 1;
 }

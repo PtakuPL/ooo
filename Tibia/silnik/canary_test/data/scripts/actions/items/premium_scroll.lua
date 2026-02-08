@@ -5,10 +5,10 @@ function premiumScroll.onUse(player, item, fromPosition, target, toPosition, isH
 	if player:getPremiumDays() <= maxDays then
 		item:remove(1)
 		player:addPremiumDays(30)
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.premium_scroll.msg_1")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.premium_scroll.msg_1")
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 	else
-		player:sendCancelMessage("You can not buy more than " .. maxDays .. " days of premium account.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "actions.premium_scroll.msg_max_days", {maxDays})
 	end
 	return true
 end

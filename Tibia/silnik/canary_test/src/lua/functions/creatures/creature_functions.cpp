@@ -17,6 +17,7 @@
 #include "lua/creature/creatureevent.hpp"
 #include "map/spectators.hpp"
 #include "lua/functions/lua_functions_loader.hpp"
+#include "utils/i18n/translator.hpp"
 
 void CreatureFunctions::init(lua_State* L) {
 	Lua::registerSharedClass(L, "Creature", "", CreatureFunctions::luaCreatureCreate);
@@ -34,6 +35,7 @@ void CreatureFunctions::init(lua_State* L) {
 	Lua::registerMethod(L, "Creature", "getParent", CreatureFunctions::luaCreatureGetParent);
 	Lua::registerMethod(L, "Creature", "getId", CreatureFunctions::luaCreatureGetId);
 	Lua::registerMethod(L, "Creature", "getName", CreatureFunctions::luaCreatureGetName);
+	Lua::registerMethod(L, "Creature", "getTranslatedName", CreatureFunctions::luaCreatureGetTranslatedName); // I18N
 	Lua::registerMethod(L, "Creature", "getTypeName", CreatureFunctions::luaCreatureGetTypeName);
 	Lua::registerMethod(L, "Creature", "getTarget", CreatureFunctions::luaCreatureGetTarget);
 	Lua::registerMethod(L, "Creature", "setTarget", CreatureFunctions::luaCreatureSetTarget);
@@ -272,6 +274,55 @@ int CreatureFunctions::luaCreatureGetName(lua_State* L) {
 		Lua::pushString(L, creature->getName());
 	} else {
 		lua_pushnil(L);
+	}
+	return 1;
+}
+
+int CreatureFunctions::luaCreatureGetTranslatedName(lua_State* L) {
+	// creature:getTranslatedName(locale)
+	// Returns the creature name translated to the given locale.
+	// If locale is omitted, returns the original name.
+	const auto &creature = Lua::getUserdataShared<Creature>(L, 1, "Creature");
+	if (!creature) {
+		lua_pushnil(L);
+		return 1;
+	}
+
+	const std::string &originalName = creature->getName();
+	const std::string locale = Lua::getString(L, 2, "en");
+
+	if (locale.empty() || locale == "en") {
+		Lua::pushString(L, originalName);
+		return 1;
+	}
+
+	// Build translation key based on creature type
+	std::string key;
+	if (creature->getMonster()) {
+		// Convert name to slug: "Frost Troll" → "frost_troll"
+		std::string slug;
+		slug.reserve(originalName.size());
+		for (char ch : originalName) {
+			if (ch == ' ' || ch == '\t') {
+				slug += '_';
+			} else if (ch == '\'' || ch == '`') {
+				continue;
+			} else {
+				slug += static_cast<char>(std::tolower(static_cast<unsigned char>(ch)));
+			}
+		}
+		key = "monster." + slug + ".name";
+	} else {
+		// NPC and Player names are not translated
+		Lua::pushString(L, originalName);
+		return 1;
+	}
+
+	const std::string &translated = i18n::g_translator().get(key, locale);
+	if (translated.empty() || translated == key) {
+		Lua::pushString(L, originalName);
+	} else {
+		Lua::pushString(L, translated);
 	}
 	return 1;
 }
@@ -998,11 +1049,20 @@ int CreatureFunctions::luaCreatureHasBeenSummoned(lua_State* L) {
 }
 
 int CreatureFunctions::luaCreatureGetDescription(lua_State* L) {
-	// creature:getDescription(distance)
+	// creature:getDescription(distance[, viewerPlayer])
 	const int32_t distance = Lua::getNumber<int32_t>(L, 2);
 	const auto &creature = Lua::getUserdataShared<Creature>(L, 1, "Creature");
 	if (creature) {
-		Lua::pushString(L, creature->getDescription(distance));
+		const auto &viewer = Lua::getUserdataShared<Player>(L, 3, "Player");
+		if (viewer) {
+			if (const auto &inspectedPlayer = creature->getPlayer()) {
+				Lua::pushString(L, inspectedPlayer->getDescriptionLocalized(distance, viewer->getLocale()));
+			} else {
+				Lua::pushString(L, creature->getDescription(distance));
+			}
+		} else {
+			Lua::pushString(L, creature->getDescription(distance));
+		}
 	} else {
 		lua_pushnil(L);
 	}

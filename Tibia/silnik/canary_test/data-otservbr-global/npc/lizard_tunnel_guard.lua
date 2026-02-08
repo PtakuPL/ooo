@@ -54,7 +54,7 @@ local function greetCallback(npc, creature)
 		player:removeCondition(CONDITION_OUTFIT)
 		player:removeItem(11328, 1)
 		player:teleportTo(Position(33361, 31206, 8))
-		player:say("The guards have spotted you. You were forcibly dragged into a small cell. It looks like you need to build another disguise.", TALKTYPE_MONSTER_SAY)
+		player:sayLocalized("npc.lizard_tunnel_guard.spotted", TALKTYPE_MONSTER_SAY)
 	end
 	return true
 end

@@ -1,14 +1,4 @@
-local adventurersGuildText = [[
-Brave adventurer,
-
-the Adventurers' Guild bids you welcome as a new hero of the land.
-
-Take this adventurer's stone and use it in any city temple to instantly travel to our guild hall. If you should ever lose your adventurer's stone, you can replace it by talking to a priest in the temple.
-I hope you will be visiting us soon.
-
-Kind regards,
-Rotem, Head of the Adventurers' Guild
-]]
+local adventurersGuildText = "#i18n:book.dawnport.adventurers_guild_letter"
 
 local reward = {
 	container = 2854,
@@ -71,7 +61,7 @@ function vocationReward.onUse(player, item, fromPosition, itemEx, toPosition)
 	end
 	-- Check quest storage
 	if player:getStorageValue(Storage.Quest.U10_55.Dawnport.VocationReward) == 1 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The " .. item:getName() .. " is empty.")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.common.item_is_empty", { item:getName() })
 		return true
 	end
 	-- Calculate reward weight
@@ -84,12 +74,16 @@ function vocationReward.onUse(player, item, fromPosition, itemEx, toPosition)
 	end
 	-- Check if enough weight capacity
 	if player:getFreeCapacity() < rewardsWeight then
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_vocation_reward.msg_1" .. getItemName(reward.container) .. ". Weighing " .. (rewardsWeight / 100) .. " oz it is too heavy.")
+		player:sendLocalizedMessage(
+			MESSAGE_EVENT_ADVANCE,
+			"scripts.actions_vocation_reward.msg_1",
+			{ getItemName(reward.container), rewardsWeight / 100 }
+		)
 		return true
 	end
 	-- Check if enough free slots
 	if player:getFreeBackpackSlots() < 1 then
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_vocation_reward.msg_2" .. getItemName(reward.container) .. ". There is no room.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_vocation_reward.msg_2", { getItemName(reward.container) })
 		return true
 	end
 	-- Create reward container
@@ -112,7 +106,7 @@ function vocationReward.onUse(player, item, fromPosition, itemEx, toPosition)
 	end
 	-- Ensure reward was added properly to player
 	if player:addItemEx(container, false, CONST_SLOT_WHEREEVER) == RETURNVALUE_NOERROR then
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_vocation_reward.msg_3" .. container:getName() .. ".")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_vocation_reward.msg_3", { container:getName() })
 		player:setStorageValue(Storage.Quest.U10_55.Dawnport.VocationReward, 1)
 	end
 	return true

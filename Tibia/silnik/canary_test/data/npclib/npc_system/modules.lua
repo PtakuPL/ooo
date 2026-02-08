@@ -74,10 +74,13 @@ if Modules == nil then
 		if parameters.i18nKey then
 			-- Używamy sendLocalizedTextMessage z kluczem i18n
 			local args = {}
-			-- Zbieramy argumenty z parseInfo dla placeholderów {0}, {1}, etc.
-			if parseInfo[TAG_PLAYERNAME] then
-				table.insert(args, parseInfo[TAG_PLAYERNAME])
+			-- Custom i18nArgs first (become {0}, {1}, ...)
+			if parameters.i18nArgs then
+				for _, v in ipairs(parameters.i18nArgs) do
+					table.insert(args, tostring(v))
+				end
 			end
+			-- Then append standard TAG args after custom args
 			if parseInfo[TAG_TRAVELCOST] then
 				table.insert(args, parseInfo[TAG_TRAVELCOST])
 			end
@@ -116,19 +119,25 @@ if Modules == nil then
 			local promotion = player:getVocation():getPromotion()
 			local hasPromotion = player:kv():get("promoted")
 			if not promotion or hasPromotion then
-				npcHandler:sayLocalized("misc.modules.say_1", npc, player)
+				npcHandler:sayLocalized("npclib.modules.already_promoted", npc, player)
 			elseif player:getLevel() < parameters.level then
 				npcHandler:sayLocalized("npclib.modules.say_6", npc, player, {parameters.level})
 			elseif not player:removeMoneyBank(parameters.cost) then
-				npcHandler:sayLocalized("misc.modules.say_2", npc, player)
+				npcHandler:sayLocalized("npclib.modules.promote_no_money", npc, player)
 			else
-				npcHandler:say(parameters.text, npc, player)
+				if parameters.i18nKey then
+					npcHandler:sayLocalized(parameters.i18nKey, npc, player)
+				elseif parameters.text then
+					npcHandler:say(parameters.text, npc, player)
+				else
+					npcHandler:sayLocalized("npclib.modules.promote_success", npc, player)
+				end
 				player:setVocation(promotion)
 				player:addMinorCharmEchoes(100)
 				player:kv():set("promoted", true)
 			end
 		else
-			npcHandler:sayLocalized("misc.modules.say_3", npc, player)
+			npcHandler:sayLocalized("npclib.modules.promote_need_premium", npc, player)
 		end
 		npcHandler:resetNpc(player)
 		return true
@@ -146,9 +155,9 @@ if Modules == nil then
 
 		if player:isPremium() or not parameters.premium then
 			if player:hasLearnedSpell(parameters.spellName) then
-				npcHandler:sayLocalized("misc.modules.say_4", npc, player)
+				npcHandler:sayLocalized("npclib.modules.spell_already_known", npc, player)
 			elseif not player:canLearnSpell(parameters.spellName) then
-				npcHandler:sayLocalized("misc.modules.say_5", npc, player)
+				npcHandler:sayLocalized("npclib.modules.spell_cannot_learn", npc, player)
 			elseif not player:removeMoneyBank(parameters.price) then
 				npcHandler:sayLocalized("npclib.modules.say_5", npc, player, {parameters.price})
 			else
@@ -178,15 +187,21 @@ if Modules == nil then
 			[TAG_PVPBLESSCOST] = Blessings.getPvpBlessingCost(player:getLevel(), false),
 		}
 		if player:hasBlessing(parameters.bless) then
-			npcHandler:sayLocalized("misc.modules.say_6", npc, player)
+			npcHandler:sayLocalized("npclib.modules.bless_already_have", npc, player)
 		elseif parameters.bless == 3 and player:getStorageValue(Storage.KawillBlessing) ~= 1 then
-			npcHandler:sayLocalized("misc.modules.say_7", npc, player)
+			npcHandler:sayLocalized("npclib.modules.bless_need_geomancer", npc, player)
 		elseif parameters.bless == 1 and #player:getBlessings() == 0 and not player:getItemById(3057, true) then
 			npcHandler:sayLocalized("npclib.modules.say_2", npc, player)
 		elseif not player:removeMoneyBank(type(parameters.cost) == "string" and tonumber(npcHandler:parseMessage(parameters.cost, parseInfo)) or parameters.cost) then
-			npcHandler:sayLocalized("misc.modules.say_8", npc, player)
+			npcHandler:sayLocalized("npclib.modules.bless_no_money", npc, player)
 		else
-			npcHandler:say(parameters.text or "You have been blessed by one of the seven gods!", npc, player)
+			if parameters.i18nKey then
+				npcHandler:sayLocalized(parameters.i18nKey, npc, player)
+			elseif parameters.text then
+				npcHandler:say(parameters.text, npc, player)
+			else
+				npcHandler:sayLocalized("npclib.modules.bless_success", npc, player)
+			end
 			if parameters.bless == 3 then
 				player:setStorageValue(Storage.KawillBlessing, 0)
 			end
@@ -224,21 +239,27 @@ if Modules == nil then
 		local playerPosition = player:getPosition()
 
 		if parameters.premium and not player:isPremium() then
-			npcHandler:sayLocalized("misc.modules.say_9", npc, player)
+			npcHandler:sayLocalized("npclib.modules.travel_need_premium", npc, player)
 		elseif parameters.level and player:getLevel() < parameters.level then
-			npcHandler:sayLocalized("misc.modules.say_10" .. parameters.level .. " before I can let you go there.", npc, player)
+			npcHandler:sayLocalized("npclib.modules.travel_level_req", npc, player, {parameters.level})
 		elseif player:isPzLocked() then
-			npcHandler:sayLocalized("misc.modules.say_11", npc, player)
+			npcHandler:sayLocalized("npclib.modules.travel_pz_locked", npc, player)
 		elseif not player:removeMoneyBank(cost) then
-			npcHandler:sayLocalized("misc.modules.say_12", npc, player)
+			npcHandler:sayLocalized("npclib.modules.travel_no_money", npc, player)
 		else
 			local hasExhaustion = player:kv():get("npc-exhaustion") or 0
 			if hasExhaustion > os.time() then
-				npcHandler:sayLocalized("misc.modules.say_13", player)
+				npcHandler:sayLocalized("npclib.modules.travel_exhaustion", npc, player)
 				playerPosition:sendMagicEffect(CONST_ME_POFF)
 			else
 				npcHandler:removeInteraction(npc, player)
-				npcHandler:say(parameters.text or "Set the sails!", npc, player)
+				if parameters.i18nKey then
+					npcHandler:sayLocalized(parameters.i18nKey, npc, player)
+				elseif parameters.text then
+					npcHandler:say(parameters.text, npc, player)
+				else
+					npcHandler:sayLocalized("npclib.modules.travel_depart", npc, player)
+				end
 
 				local destination = parameters.destination
 				if type(destination) == "function" then
@@ -546,11 +567,11 @@ if Modules == nil then
 
 		if player:isPremium() or not premium then
 			if not player:removeMoneyBank(cost) then
-				npcHandler:sayLocalized("misc.modules.say_14", npc, player)
+				npcHandler:sayLocalized("npclib.modules.confirm_no_money", npc, player)
 			elseif player:isPzLocked(player) then
-				npcHandler:sayLocalized("misc.modules.say_15", npc, player)
+				npcHandler:sayLocalized("npclib.modules.confirm_pz_locked", npc, player)
 			else
-				npcHandler:sayLocalized("misc.modules.say_16", npc, player)
+				npcHandler:sayLocalized("npclib.modules.confirm_success", npc, player)
 				npcHandler:removeInteraction(npc, player)
 
 				local position = player:getPosition()
@@ -560,7 +581,7 @@ if Modules == nil then
 				destination:sendMagicEffect(CONST_ME_TELEPORT)
 			end
 		else
-			npcHandler:sayLocalized("misc.modules.say_17", npc, player)
+			npcHandler:sayLocalized("npclib.modules.confirm_need_premium", npc, player)
 		end
 
 		npcHandler:resetNpc(player)
@@ -576,8 +597,10 @@ if Modules == nil then
 		local parseInfo = {
 			[TAG_PLAYERNAME] = Player(player):getName(),
 		}
-		local msg = module.npcHandler:parseMessage(module.npcHandler:getMessage(MESSAGE_DECLINE), parseInfo)
-		module.npcHandler:say(msg, npc, player)
+		if not module.npcHandler:tryLocalizedMessage(MESSAGE_DECLINE, player) then
+			local msg = module.npcHandler:parseMessage(module.npcHandler:getMessage(MESSAGE_DECLINE), parseInfo)
+			module.npcHandler:say(msg, npc, player)
+		end
 		module.npcHandler:resetNpc(player)
 		return true
 	end
@@ -609,21 +632,13 @@ if Modules == nil then
 			return false
 		end
 
-		local msg = "I can bring you to "
-		--local i = 1
-		local maxn = #module.destinations
-		for i, destination in pairs(module.destinations) do
-			msg = msg .. destination
-			if i == maxn - 1 then
-				msg = msg .. " and "
-			elseif i == maxn then
-				msg = msg .. "."
-			else
-				msg = msg .. ", "
-			end
+		local destList = table.concat(module.destinations, ", ")
+		-- Replace last comma with " and "
+		local lastComma = destList:match("^.*(),%s")
+		if lastComma then
+			destList = destList:sub(1, lastComma - 1) .. " and " .. destList:sub(lastComma + 2)
 		end
-
-		module.npcHandler:say(msg, npc, player)
+		module.npcHandler:sayLocalized("npclib.modules.travel_destinations", npc, player, {destList})
 		module.npcHandler:resetNpc(player)
 		return true
 	end

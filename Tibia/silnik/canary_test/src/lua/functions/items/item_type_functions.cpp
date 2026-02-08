@@ -9,9 +9,11 @@
 
 #include "lua/functions/items/item_type_functions.hpp"
 
+#include "creatures/players/player.hpp"
 #include "items/item.hpp"
 #include "items/items.hpp"
 #include "lua/functions/lua_functions_loader.hpp"
+#include "utils/i18n/translator.hpp"
 
 void ItemTypeFunctions::init(lua_State* L) {
 	Lua::registerClass(L, "ItemType", "", ItemTypeFunctions::luaItemTypeCreate);
@@ -318,9 +320,37 @@ int ItemTypeFunctions::luaItemTypeGetId(lua_State* L) {
 }
 
 int ItemTypeFunctions::luaItemTypeGetName(lua_State* L) {
-	// itemType:getName()
+	// itemType:getName([player|string locale])
 	const auto* itemType = Lua::getUserdata<const ItemType>(L, 1);
 	if (itemType) {
+		std::string locale;
+		if (const auto &viewer = Lua::getUserdataShared<Player>(L, 2, "Player")) {
+			locale = viewer->getLocale();
+		} else if (lua_isstring(L, 2)) {
+			locale = Lua::getString(L, 2);
+		}
+
+		if (locale.empty() || locale == "en") {
+			Lua::pushString(L, itemType->name);
+			return 1;
+		}
+
+		auto &tr = i18n::g_translator();
+		const std::string key = "item." + std::to_string(itemType->id) + ".name";
+		const std::string localized = tr.get(key, locale);
+		if (!localized.empty() && localized != key) {
+			Lua::pushString(L, localized);
+			return 1;
+		}
+
+		// Backward compatibility with older key namespace.
+		const std::string legacyKey = "items." + std::to_string(itemType->id) + ".name";
+		const std::string legacyLocalized = tr.get(legacyKey, locale);
+		if (!legacyLocalized.empty() && legacyLocalized != legacyKey) {
+			Lua::pushString(L, legacyLocalized);
+			return 1;
+		}
+
 		Lua::pushString(L, itemType->name);
 	} else {
 		lua_pushnil(L);

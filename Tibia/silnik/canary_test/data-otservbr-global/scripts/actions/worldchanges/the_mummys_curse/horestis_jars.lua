@@ -4,7 +4,7 @@ local Poswall1 = { x = 32941, y = 32754, z = 12 }
 local Poswall2 = { x = 32942, y = 32754, z = 12 }
 local Poswall3 = { x = 32943, y = 32754, z = 12 }
 local Poswall4 = { x = 32944, y = 32754, z = 12 }
-local failMessages = { "Waaaaaah", "You are too afraid to destroy this object" }
+local failMessages = { "scripts.horestis_jars.fail_1", "scripts.horestis_jars.fail_2" }
 
 function createWall() --creates walls
 	Game.createItem(1603, 1, Poswall1)
@@ -27,12 +27,12 @@ function horestisJars.onUse(cid, item, fromPosition, itemEx, toPosition)
 					doTransformItem(item.uid, 12506)
 					setGlobalStorageValue(GlobalStorage.TheMummysCurse, 1)
 				else
-					player:say(failMessages[math.random(#failMessages)], TALKTYPE_MONSTER_SAY)
+					player:sayLocalized(failMessages[math.random(#failMessages)], TALKTYPE_MONSTER_SAY)
 					player:getPosition():sendMagicEffect(CONST_ME_POFF)
 					setPlayerStorageValue(cid, Storage.TheMummysCurse.Time1, os.time() + exaustedSeconds * 1800)
 				end
 			else
-				doPlayerSendCancel(cid, "You need wait 30 minutes to use again.")
+				Player(cid):sendLocalizedCancelMessage("scripts.horestis_jars.wait_30min")
 			end
 		end
 	elseif item.actionid == 50007 then
@@ -43,15 +43,15 @@ function horestisJars.onUse(cid, item, fromPosition, itemEx, toPosition)
 						doTransformItem(item.uid, 12506)
 						setGlobalStorageValue(GlobalStorage.TheMummysCurse, 2)
 					else
-						player:say(failMessages[math.random(#failMessages)], TALKTYPE_MONSTER_SAY)
+						player:sayLocalized(failMessages[math.random(#failMessages)], TALKTYPE_MONSTER_SAY)
 						player:getPosition():sendMagicEffect(CONST_ME_POFF)
 						setPlayerStorageValue(cid, Storage.TheMummysCurse.Time2, os.time() + exaustedSeconds * 1800)
 					end
 				else
-					doPlayerSendCancel(cid, "You need wait 30 minutes to use again.")
+					Player(cid):sendLocalizedCancelMessage("scripts.horestis_jars.wait_30min")
 				end
 			else
-				doPlayerSendCancel(cid, "You need to break the first jar.")
+				Player(cid):sendLocalizedCancelMessage("scripts.horestis_jars.break_first")
 			end
 		end
 	elseif item.actionid == 50008 then
@@ -62,15 +62,15 @@ function horestisJars.onUse(cid, item, fromPosition, itemEx, toPosition)
 						doTransformItem(item.uid, 12506)
 						setGlobalStorageValue(GlobalStorage.TheMummysCurse, 3)
 					else
-						player:say(failMessages[math.random(#failMessages)], TALKTYPE_MONSTER_SAY)
+						player:sayLocalized(failMessages[math.random(#failMessages)], TALKTYPE_MONSTER_SAY)
 						player:getPosition():sendMagicEffect(CONST_ME_POFF)
 						setPlayerStorageValue(cid, Storage.TheMummysCurse.Time3, os.time() + exaustedSeconds * 1800)
 					end
 				else
-					doPlayerSendCancel(cid, "You need wait 30 minutes to use again.")
+					Player(cid):sendLocalizedCancelMessage("scripts.horestis_jars.wait_30min")
 				end
 			else
-				doPlayerSendCancel(cid, "You need to break the second jar.")
+				Player(cid):sendLocalizedCancelMessage("scripts.horestis_jars.break_second")
 			end
 		end
 	elseif item.actionid == 50009 then
@@ -81,15 +81,15 @@ function horestisJars.onUse(cid, item, fromPosition, itemEx, toPosition)
 						doTransformItem(item.uid, 12506)
 						setGlobalStorageValue(GlobalStorage.TheMummysCurse, 4)
 					else
-						player:say(failMessages[math.random(#failMessages)], TALKTYPE_MONSTER_SAY)
+						player:sayLocalized(failMessages[math.random(#failMessages)], TALKTYPE_MONSTER_SAY)
 						player:getPosition():sendMagicEffect(CONST_ME_POFF)
 						setPlayerStorageValue(cid, Storage.TheMummysCurse.Time4, os.time() + exaustedSeconds * 1800)
 					end
 				else
-					doPlayerSendCancel(cid, "You need wait 30 minutes to use again.")
+					Player(cid):sendLocalizedCancelMessage("scripts.horestis_jars.wait_30min")
 				end
 			else
-				doPlayerSendCancel(cid, "You need to break the third jar.")
+				Player(cid):sendLocalizedCancelMessage("scripts.horestis_jars.break_third")
 			end
 		end
 	elseif item.actionid == 50010 then
@@ -101,7 +101,7 @@ function horestisJars.onUse(cid, item, fromPosition, itemEx, toPosition)
 				doRemoveItem(getTileItemById({ x = 32942, y = 32754, z = 12 }, 3514).uid, 1)
 				doRemoveItem(getTileItemById({ x = 32943, y = 32754, z = 12 }, 3514).uid, 1)
 				doRemoveItem(getTileItemById({ x = 32944, y = 32754, z = 12 }, 3514).uid, 1)
-				doCreatureSay(cid, "The horestis tomb was broken, the boss of the tomb will be reborn in 45 seconds. The barrier will be built from here 2 minutes.", TALKTYPE_MONSTER_SAY)
+				Creature(cid):sayLocalized("scripts.horestis_jars.tomb_broken", TALKTYPE_MONSTER_SAY)
 				Game.createMonster(bossName, bossPosition)
 				addEvent(doSummonCreature, 45 * 1000, "Horestis", { x = 32942, y = 32765, z = 12 })
 
@@ -111,7 +111,7 @@ function horestisJars.onUse(cid, item, fromPosition, itemEx, toPosition)
 				addEvent(Game.createItem, 20 * 60 * 1000, 3514, { x = 32943, y = 32754, z = 12 })
 				addEvent(Game.createItem, 20 * 60 * 1000, 3514, { x = 32944, y = 32754, z = 12 })
 			else
-				doPlayerSendCancel(cid, "You need to break the fourth jar.")
+				Player(cid):sendLocalizedCancelMessage("scripts.horestis_jars.break_fourth")
 			end
 		end
 	end

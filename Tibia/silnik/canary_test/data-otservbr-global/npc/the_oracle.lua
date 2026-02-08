@@ -55,19 +55,19 @@ local config = {
 	},
 	vocations = {
 		["sorcerer"] = {
-			text = "A SORCERER! ARE YOU SURE? THIS DECISION IS IRREVERSIBLE!",
+			i18nKey = "npc.the_oracle.vocation_sorcerer",
 			vocationId = VOCATION.ID.SORCERER,
 		},
 		["druid"] = {
-			text = "A DRUID! ARE YOU SURE? THIS DECISION IS IRREVERSIBLE!",
+			i18nKey = "npc.the_oracle.vocation_druid",
 			vocationId = VOCATION.ID.DRUID,
 		},
 		["paladin"] = {
-			text = "A PALADIN! ARE YOU SURE? THIS DECISION IS IRREVERSIBLE!",
+			i18nKey = "npc.the_oracle.vocation_paladin",
 			vocationId = VOCATION.ID.PALADIN,
 		},
 		["knight"] = {
-			text = "A KNIGHT! ARE YOU SURE? THIS DECISION IS IRREVERSIBLE!",
+			i18nKey = "npc.the_oracle.vocation_knight",
 			vocationId = VOCATION.ID.KNIGHT,
 		},
 	},
@@ -78,7 +78,7 @@ local function greetCallback(npc, creature)
 	local player = Player(creature)
 	local level = player:getLevel()
 	if level < 8 then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_oracle.say_1")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_oracle.say_8")
 		npcHandler:resetNpc(creature)
 		return false
 	elseif level > 10 then
@@ -86,11 +86,15 @@ local function greetCallback(npc, creature)
 		npcHandler:resetNpc(creature)
 		return false
 	elseif player:getVocation():getId() > VOCATION.ID.NONE then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_oracle.say_2")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_oracle.say_9")
 		npcHandler:resetNpc(creature)
 		return false
 	else
-		npcHandler:setMessage(MESSAGE_GREET, player:getName() .. ", ARE YOU PREPARED TO FACE YOUR DESTINY?")
+		npcHandler:setLocalizedMessage(MESSAGE_GREET, "npc.the_oracle.greet_msg_1", {
+			args = function(targetPlayer)
+				return { targetPlayer:getName() }
+			end,
+		})
 	end
 	return true
 end
@@ -115,12 +119,12 @@ local function creatureSayCallback(npc, creature, type, message)
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_oracle.say_2", { string.upper(message) })
 			npcHandler:setTopic(playerId, 2)
 		else
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_oracle.say_4")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_oracle.say_3")
 		end
 	elseif npcHandler:getTopic(playerId) == 2 then
 		local vocationTable = config.vocations[message:lower()]
 		if vocationTable then
-			npcHandler:say(vocationTable.text, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, vocationTable.i18nKey)
 			npcHandler:setTopic(playerId, 3)
 			vocation[playerId] = vocationTable.vocationId
 		else

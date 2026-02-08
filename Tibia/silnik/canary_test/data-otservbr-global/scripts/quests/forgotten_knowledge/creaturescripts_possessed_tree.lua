@@ -8,7 +8,7 @@ function possessedTree.onDeath(creature, corpse, lasthitkiller, mostdamagekiller
 	targetMonster:getPosition():sendMagicEffect(CONST_ME_SMALLPLANTS)
 	local monster = Game.createMonster(monsters[math.random(#monsters)], targetMonster:getPosition(), true, true)
 	if monster then
-		monster:say("The destruction of the tree unleashes the " .. monster:getName():lower() .. "!", TALKTYPE_MONSTER_SAY)
+		monster:sayLocalized("quests.forgotten_knowledge.tree_destruction", TALKTYPE_MONSTER_SAY, false, nil, nil, {monster:getName():lower()})
 	end
 	addEvent(Game.createMonster, 60 * 1000, "possessed tree", targetMonster:getPosition(), true, true)
 	return true

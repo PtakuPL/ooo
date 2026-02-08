@@ -17,12 +17,12 @@ function onSpeak(player, type, message)
 	end
 
 	if player:getLevel() == 1 then
-		player:sendCancelMessage("You may not speak into channels as long as you are on level 1.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "channel.msg_level1_mute")
 		return false
 	end
 
 	if player:getCondition(CONDITION_CHANNELMUTEDTICKS, CONDITIONID_DEFAULT, CHANNEL_ADVERTISING_ROOK) then
-		player:sendCancelMessage("You may only place one offer in two minutes.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "channel.msg_offer_cooldown")
 		return false
 	end
 	player:addCondition(muted)

@@ -57,20 +57,16 @@ local function addTravelKeyword(keyword, text, cost, discount, destination, cond
 	if condition then
 		keywordHandler:addKeyword({ keyword }, StdModule.say, {
 			npcHandler = npcHandler,
-			text = {
-				"Well, you might be just the hero they need there. To tell you the truth, some our most reliable ore mines have started to run low. ...",
-				"This is why we developed new steamship technologies to be able to further explore and cartograph the great subterraneous rivers. Our brothers have established a base on a continent far, far away. ...",
-				"We call that the far, far away base. But since it will hopefully become a flourishing mine one day, most of us started to call it {Farmine}. The dwarfs there could really use some help right now.",
-			},
+			i18nKey = "npc.gurbasch.stdmod_3",
 		}, condition, action)
 	end
 
-	local travelKeyword = keywordHandler:addKeyword({ keyword }, StdModule.say, { npcHandler = npcHandler, text = { text[1] }, cost = cost, discount = discount })
-	travelKeyword:addChildKeyword({ "yes" }, StdModule.travel, { npcHandler = npcHandler, premium = false, text = text[2], cost = cost, discount = discount, destination = destination })
-	travelKeyword:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, text = text[3], reset = true })
+	local travelKeyword = keywordHandler:addKeyword({ keyword }, StdModule.say, { npcHandler = npcHandler, i18nKey = text[1], cost = cost, discount = discount })
+	travelKeyword:addChildKeyword({ "yes" }, StdModule.travel, { npcHandler = npcHandler, premium = false, i18nKey = text[2], cost = cost, discount = discount, destination = destination })
+	travelKeyword:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, i18nKey = text[3], reset = true })
 end
 
-addTravelKeyword("farmine", { "Do you seek a ride to Farmine for |TRAVELCOST|?", "Hold on!", "You shouldn't miss the experience." }, 110, { "postman", "new frontier" }, function(player)
+addTravelKeyword("farmine", { "npc.gurbasch.stdmod_4", "npc.gurbasch.stdmod_5", "npc.gurbasch.stdmod_6" }, 110, { "postman", "new frontier" }, function(player)
 	local destination = Position(33025, 31553, 14)
 	if player:getStorageValue(TheNewFrontier.Mission05[1]) == 2 then --if The New Frontier Quest 'Mission 05: Getting Things Busy' complete then Stage 3
 		destination.z = 10
@@ -86,8 +82,8 @@ end, function(player)
 	end
 end)
 
-addTravelKeyword("kazordoon", { "Do you want to go to Kazordoon to try the beer there? |TRAVELCOST|?", "Set the sails!", "Then not." }, 160, "postman", Position(32660, 31957, 15))
-addTravelKeyword("gnomprona", { "Would you like to travel to Gnomprona for |TRAVELCOST|?", "Full steam ahead!", "Then not." }, 200, "postman", Position(33516, 32856, 14))
+addTravelKeyword("kazordoon", { "npc.gurbasch.stdmod_7", "npc.gurbasch.stdmod_8", "npc.gurbasch.stdmod_9" }, 160, "postman", Position(32660, 31957, 15))
+addTravelKeyword("gnomprona", { "npc.gurbasch.stdmod_10", "npc.gurbasch.stdmod_11", "npc.gurbasch.stdmod_12" }, 200, "postman", Position(33516, 32856, 14))
 keywordHandler:addKeyword({ "passage" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.gurbasch.stdmod_1" })
 
 NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.gurbasch.greet_msg_1")

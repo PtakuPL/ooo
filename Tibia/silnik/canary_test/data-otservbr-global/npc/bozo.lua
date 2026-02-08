@@ -61,11 +61,7 @@ end
 
 local config = {
 	[1] = {
-		text = {
-			[1] = "Do you have a fitting flower for me?",
-			[2] = "You don't have a fitting flower! Why do only fools apply for the fools guild?",
-			[3] = "Indeed. This flower will do the trick, so to say. Just ask me about another mission whenever you're ready.",
-		},
+		i18nKey = "npc.bozo.stdmod_81",
 		yes = true,
 		removeItem = { itemId = 102 },
 		updateStorages = {
@@ -74,13 +70,7 @@ local config = {
 		},
 	},
 	[2] = {
-		text = {
-			[1] = {
-				"The next task will be a bit more difficult. I pride myself on being the major manufacturer of stink bombs in whole Tibia. Stop chuckling you fool aspirant ...",
-				"The worst part is getting the perfect stench. Whenever a slime dies, it leaves a noxious gas cloud ...",
-				"If you are able to collect its scent in the first few seconds after the slime's death, we have the ideal substance to create dozens of stink bombs ...",
-				"Take this special vial and fill it with the perfect stench. Then return here and we will talk about your mission.",
-			},
+		i18nKey = "npc.bozo.stdmod_82",
 		},
 		addItem = { itemId = 135 },
 		updateStorages = {
@@ -89,11 +79,7 @@ local config = {
 		},
 	},
 	[3] = {
-		text = {
-			[1] = "Do you have acquired the exquisite stench we need?",
-			[2] = "No, you haven't! Why do only fools apply for the fools guild?",
-			[3] = "Ugh. You got some efficient stuff there. I have to admit you have a talent for such distasteful matters. Perhaps you feel ready for another mission. Just ask me about it.",
-		},
+		i18nKey = "npc.bozo.stdmod_83",
 		yes = true,
 		removeItem = { itemId = 107 },
 		updateStorages = {
@@ -102,13 +88,7 @@ local config = {
 		},
 	},
 	[4] = {
-		text = {
-			[1] = {
-				"I think you're ready for a small promotion. Provided that you finish another mission, that is ...",
-				"As you might know, nothing helps you to break the ice so easily when you meet new people as a pie thrown in the face ...",
-				"Of course, this habit leads to a dramatic shortage of pies now and then. And that's what we need you for. Mirabell in Edron creates the most creamy and sticky pies in the world ...",
-				"Get me a dozen of them, this means 12, you fool. Then report to me about your mission.",
-			},
+		i18nKey = "npc.bozo.stdmod_84",
 		},
 		updateStorages = {
 			{ key = Storage.Quest.U8_1.WhatAFoolishQuest.Mission3, value = 1 },
@@ -116,14 +96,7 @@ local config = {
 		},
 	},
 	[5] = {
-		text = {
-			[1] = "So do you bring me a box full of pies?",
-			[2] = "No, you don't! Why do only fools apply for the fools guild?",
-			[3] = {
-				"Excellent. Poor Harsky, poor Stutch. They will mourn the day they dared to yawn during a performance of the magnificent Bozo ...",
-				"However, I grant you the title of 'Fool in Training' for your efforts. Just don't let it go to your head and don't use this highly spiritual title to show off ...",
-				"If you are interested in another mission, talk to me.",
-			},
+		i18nKey = "npc.bozo.stdmod_85",
 		},
 		yes = true,
 		removeItem = { itemId = 119 },
@@ -134,11 +107,7 @@ local config = {
 		},
 	},
 	[6] = {
-		text = {
-			[1] = {
-				"Ah, the fool in training wants to see some action? Fine with me. I think you are ready for a big prank. But first I need 18 vials filled with wine ...",
-				"Get them and report here about your mission.",
-			},
+		i18nKey = "npc.bozo.stdmod_86",
 		},
 		updateStorages = {
 			{ key = Storage.Quest.U8_1.WhatAFoolishQuest.Mission4, value = 1 },
@@ -146,14 +115,7 @@ local config = {
 		},
 	},
 	[7] = {
-		text = {
-			[1] = "Do you have 18 vials of wine?",
-			[2] = "No, you haven't! Why do only fools apply for the fools guild?",
-			[3] = {
-				"So lets see. I put them into this crate which looks just like the ones in which old Xodet gets his mana potions [1]ed ...",
-				"Here take this crate and bring it to Xodet's shop. In front of the shop, you should see the latest [1]y. Just use this crate on the other one to exchange them ...",
-				"Bring me the interchanged crate and talk to me about your mission.",
-			},
+		i18nKey = "npc.bozo.stdmod_87",
 		},
 		yes = true,
 		removeItem = { itemId = 2874, count = 18, subType = 2 },
@@ -164,11 +126,7 @@ local config = {
 		addItem = { itemId = 117 },
 	},
 	[8] = {
-		text = {
-			[1] = "Do you bring me Xodet's exchanged crate?",
-			[2] = "No, you don't! Why do only fools apply for the fools guild?",
-			[3] = "I see. I guess we can expect a few drunken mages soon! Am I mistaken or are you up for some more challenging missions? Just ask me about if you feel foolish enough.",
-		},
+		i18nKey = "npc.bozo.stdmod_88",
 		yes = true,
 		removeItem = { itemId = 118 },
 		updateStorages = {
@@ -177,12 +135,7 @@ local config = {
 		},
 	},
 	[9] = {
-		text = {
-			[1] = {
-				"I have a fine prank in mind but without proper preparation, you'd end up hacked in pieces by the dwarfs. By chance I found out about an artefact that might save the day ...",
-				"There is a mysterious tower, known as Triangle Tower, north of Jakundaf Desert. In this tower, you will find a magic watch that we need for our dangerous fun ...",
-				"Well, I'll have the fun and you'll have the danger but you can view it from a positive side - view it from my side for instance. Now get that watch and report about your mission.",
-			},
+		i18nKey = "npc.bozo.stdmod_89",
 		},
 		updateStorages = {
 			{ key = Storage.Quest.U8_1.WhatAFoolishQuest.Mission5, value = 1 },
@@ -191,16 +144,7 @@ local config = {
 		},
 	},
 	[10] = {
-		text = {
-			[1] = "Did you get the watch?",
-			[2] = "No you have not! Why do only fools apply to the fools guild?",
-			[3] = {
-				"Oh boy, you will have so much fun with that watch if they don't catch and kill you. I envy you so much ... Bozo: So listen my little fool, this watch has the power to advance you in time. It will come in handy when you are stealing the beard of the dwarven emperor ...",
-				"Oh, come on, don't faint like some baby. It's perfectly safe with that watch ... well, almost. You sneak into the emperor's bedroom when it's empty. Use the watch directly beside the bed's pillow ...",
-				"This should advance you in time. You will appear next to the sleeping emperor. His guards will be outside so they shouldn't bother you. Use a sharp kitchen knife to cut off his beard ...",
-				"Then quickly use the watch again to advance in time once more. You should appear at a time when everybody has left the room...",
-				"Sneak out and come here to report about your mission. As the watch will only work those 2 times, make sure that you've got the beard when returning here.",
-			},
+		i18nKey = "npc.bozo.stdmod_90",
 		},
 		yes = true,
 		checkItemCount = 112,
@@ -210,13 +154,7 @@ local config = {
 		},
 	},
 	[11] = {
-		text = {
-			[1] = "Did you get the beard?",
-			[2] = "No, you don't! Why do only fools apply for the fools guild?",
-			[3] = {
-				"You got the beard and survived. I think for the first time in my whole life I'm impressed, no wait, it was just a stone in my shoe ...",
-				"Still, as a small recognition of your accomplishments I'm willing to tell you how to get your own jester outfit. If you are interested in more fun and adventures, ask me for more missions.",
-			},
+		i18nKey = "npc.bozo.stdmod_91",
 		},
 		yes = true,
 		checkStorage = Storage.Quest.U8_1.WhatAFoolishQuest.EmperorBeardShave,
@@ -227,25 +165,17 @@ local config = {
 		},
 	},
 	[12] = {
-		text = {
-			[1] = "I can't think of anything right now. Maybe you should try to get your jester outfit.",
-		},
+		i18nKey = "npc.bozo.stdmod_92",
 	},
 	[13] = {
-		text = {
-			[1] = "You know, nothing has brought more fun and joy to humanity than the whoopee cushion. Its creation is a delicate matter though. Bring me 4 pieces of minotaur leather first and then lets talk about this mission.",
-		},
+		i18nKey = "npc.bozo.stdmod_93",
 		updateStorages = {
 			{ key = Storage.Quest.U8_1.WhatAFoolishQuest.Mission6, value = 1 },
 			{ key = Storage.Quest.U8_1.WhatAFoolishQuest.Questline, value = 14 },
 		},
 	},
 	[14] = {
-		text = {
-			[1] = "Do you have the four minotaur leathers?",
-			[2] = "No, you don't! Why do only fools apply for the fools guild?",
-			[3] = "Good, this was the first part. Now it gets difficult. To sew it together, we need a very fine yarn, as fine as the silk of a giant spider. Bring me some giant spider silk and talk to me about your mission.",
-		},
+		i18nKey = "npc.bozo.stdmod_94",
 		yes = true,
 		removeItem = { itemId = 5878, count = 4 },
 		updateStorages = {
@@ -254,11 +184,7 @@ local config = {
 		},
 	},
 	[15] = {
-		text = {
-			[1] = "Do you have the spider silk with you?",
-			[2] = "No, you don't! Why do only fools apply for the fools guild?",
-			[3] = "Let's see, a stitch here, a stitch there. Hey Presto! A whoopee cushion! Are you ready for the fun part? Then talk to me about your next mission.",
-		},
+		i18nKey = "npc.bozo.stdmod_95",
 		yes = true,
 		removeItem = { itemId = 5879 },
 		updateStorages = {
@@ -268,11 +194,7 @@ local config = {
 		effect = CONST_ME_POFF,
 	},
 	[16] = {
-		text = {
-			[1] = {
-				"Now that we have this whoopee cushion it would be a waste not to use it, don't you agree ...",
-				"Don't speak! I already know what you have in your impish mind my friend and I agree fully. You will bring this cushion to Carlin and place it right on Queen Eloise's throne! Then return here and talk to me about your mission.",
-			},
+		i18nKey = "npc.bozo.stdmod_96",
 		},
 		addItem = { itemId = 121 },
 		updateStorages = {
@@ -281,11 +203,7 @@ local config = {
 		},
 	},
 	[17] = {
-		text = {
-			[1] = "Have you placed the whoopee cushion on the throne in Carlin?",
-			[2] = "No, you haven't! Why do only fools apply for the fools guild?",
-			[3] = "This will cause quite a commotion in Carlin. I think we should play some pranks in many more places to spread humour all over the world. Talk to me about your next mission to learn more about it.",
-		},
+		i18nKey = "npc.bozo.stdmod_97",
 		yes = true,
 		checkStorage = Storage.Quest.U8_1.WhatAFoolishQuest.WhoopeeCushion,
 		updateStorages = {
@@ -294,11 +212,7 @@ local config = {
 		},
 	},
 	[18] = {
-		text = {
-			[1] = {
-				"The time has come to play a prank on some arrogant Venorean. I found out that Carina, the jeweller, is terribly afraid of mice ...",
-				"Your task is quite easy. Steal the toy mouse of Queen Eloise's cat and show it to Carina in Venore to scare her to death. Then report about your mission.",
-			},
+		i18nKey = "npc.bozo.stdmod_98",
 		},
 		updateStorages = {
 			{ key = Storage.Quest.U8_1.WhatAFoolishQuest.Mission7, value = 1 },
@@ -307,11 +221,7 @@ local config = {
 		},
 	},
 	[19] = {
-		text = {
-			[1] = "Have you been to Venore and scared Carina as I asked you to?",
-			[2] = "No, you haven't! Why do only fools apply for the fools guild?",
-			[3] = "Excellent. The Venoreans have been safe from my pranks far too long. If you are ready for another mission, talk to me.",
-		},
+		i18nKey = "npc.bozo.stdmod_99",
 		yes = true,
 		checkStorage = Storage.Quest.U8_1.WhatAFoolishQuest.ScaredCarina,
 		updateStorages = {
@@ -320,11 +230,7 @@ local config = {
 		},
 	},
 	[20] = {
-		text = {
-			[1] = {
-				"These Venoreans think they are safe from us. They couldn't be more wrong. Let them feel the wrath of the fools! Get a spoon and collect some sulphur from an inactive lava hole ...",
-				"Be very careful when you get the easily inflammable substance. Then let's talk about the next part of your mission.",
-			},
+		i18nKey = "npc.bozo.stdmod_100",
 		},
 		updateStorages = {
 			{ key = Storage.Quest.U8_1.WhatAFoolishQuest.Mission8, value = 1 },
@@ -332,11 +238,7 @@ local config = {
 		},
 	},
 	[21] = {
-		text = {
-			[1] = "Have you collected the sulphur?",
-			[2] = "No, you haven't! Why do only fools apply for the fools guild?",
-			[3] = "So much for part one of my foolish master plan. Now travel to Tiquanda and use a kitchen knife to cut some leaves of the jungle dweller bush for me. Bring them with you when you report about your mission.",
-		},
+		i18nKey = "npc.bozo.stdmod_101",
 		yes = true,
 		removeItem = { itemId = 124 },
 		updateStorages = {
@@ -345,11 +247,7 @@ local config = {
 		},
 	},
 	[22] = {
-		text = {
-			[1] = "Do you have the leaves with you?",
-			[2] = "No, you don't! Why do only fools apply for the fools guild?",
-			[3] = "So far so good. I will prepare some nasty surprise for your next mission. Talk to me about it whenever you feel ready.",
-		},
+		i18nKey = "npc.bozo.stdmod_102",
 		yes = true,
 		removeItem = { itemId = 3129 },
 		updateStorages = {
@@ -358,11 +256,7 @@ local config = {
 		},
 	},
 	[23] = {
-		text = {
-			[1] = {
-				"Now look at this, someone has made exploding cigars out of the sulphur and the leaves! Coincidentally I have a great idea how wecould use them ...",
-				"Take this cigar and give it to Theodore Loveless, the Venorean representative in Liberty Bay. After you [1]ed our little'present', report here about the outcome of your mission.",
-			},
+		i18nKey = "npc.bozo.stdmod_103",
 		},
 		addItem = { itemId = 141 },
 		updateStorages = {
@@ -371,11 +265,7 @@ local config = {
 		},
 	},
 	[24] = {
-		text = {
-			[1] = "Have you delivered the exploding cigar to Theodore Loveless?",
-			[2] = "No, you haven't! Why do only fools apply for the fools guild?",
-			[3] = "You're hell of a guy, I bet you enjoyed it. As you represent everything a fool stands for, I give you this fool's sceptre to spiceup your jester outfit. If you are interested, there are even more missions for a fool like yourself. Just ask about them.",
-		},
+		i18nKey = "npc.bozo.stdmod_104",
 		yes = true,
 		checkStorage = Storage.Quest.U8_1.WhatAFoolishQuest.Cigar,
 		updateStorages = {
@@ -386,11 +276,7 @@ local config = {
 		addon = 1,
 	},
 	[25] = {
-		text = {
-			[1] = {
-				"Well, I think as a true fool you have to think big. So our next little prank will be on a grand scale. Of course, this will need some preparation ...",
-				"Firstly, take this vial and use it on a dead stalker immediately after his death to collect his warm blood. Report about your mission when you are done.",
-			},
+		i18nKey = "npc.bozo.stdmod_105",
 		},
 		updateStorages = {
 			{ key = Storage.Quest.U8_1.WhatAFoolishQuest.Mission9, value = 1 },
@@ -399,13 +285,7 @@ local config = {
 		addItem = { itemId = 135 },
 	},
 	[26] = {
-		text = {
-			[1] = "Have you gotten the blood that we need?",
-			[2] = "No, you haven't! Why do only fools apply for the fools guild?",
-			[3] = {
-				"Congratulations! Now let's talk about the complicated part. We need the ink of a quara constrictor. Use this vial on a fresh corpse to get the ink ...",
-				"Stop making these grimaces! I know it's a foolish task, but after all that's also the fun about it. Get the ink and report to me about your mission.",
-			},
+		i18nKey = "npc.bozo.stdmod_106",
 		},
 		yes = true,
 		removeItem = { itemId = 125 },
@@ -416,11 +296,7 @@ local config = {
 		addItem = { itemId = 135 },
 	},
 	[27] = {
-		text = {
-			[1] = "Have you acquired the constrictor's ink?",
-			[2] = "No, you haven't! Why do only fools apply for the fools guild?",
-			[3] = "Excellent. As a true fool you have of course no clue what these ingredients are good for, but I will enlighten you. Just ask about your next mission and I'll tell you everything you need to know.",
-		},
+		i18nKey = "npc.bozo.stdmod_107",
 		yes = true,
 		removeItem = { itemId = 9149 },
 		updateStorages = {
@@ -429,13 +305,7 @@ local config = {
 		},
 	},
 	[28] = {
-		text = {
-			[1] = {
-				"Blood of a stalker and ink of a quara are the main ingredients of the prop for our next prank. Mix it together to obtain some nice vanishing ink ...",
-				"It looks exactly like normal ink, however, exposed to air it will vanish within minutes. I'm sure you understand how useful this ink can be ...",
-				"Now, listen to my plan. Go to Sam and order 2000 steel shields. He will never agree to it if you do not sign a contract ...",
-				"Use the vanishing ink to sign the contract and then hand the paper back to him. This will keep this humourless doter busy for a while. Talk to me about your mission when you are done.",
-			},
+		i18nKey = "npc.bozo.stdmod_108",
 		},
 		updateStorages = {
 			{ key = Storage.Quest.U8_1.WhatAFoolishQuest.Mission9, value = 4 },
@@ -444,11 +314,7 @@ local config = {
 		addItem = { itemId = 127 },
 	},
 	[29] = {
-		text = {
-			[1] = "So have you fooled the old Sam yet?",
-			[2] = "No, you haven't! Why do only fools apply for the fools guild?",
-			[3] = "What a splendid prank! If you are ready for more, ask me about the next mission.",
-		},
+		i18nKey = "npc.bozo.stdmod_109",
 		yes = true,
 		checkStorage = Storage.Quest.U8_1.WhatAFoolishQuest.Contract,
 		updateStorages = {
@@ -457,17 +323,13 @@ local config = {
 		},
 	},
 	[30] = {
-		text = {
-			[1] = {
-				"This time I have no real mission for you, rather a small errand. I bet you had expected some dangerous and exhausting quest but since I like you so much, I make it veeeeery easy for you ...",
-				"Here are some cookies. Beware though, those are exploding confetti cookies. You will have to [1] them to 10 special persons, then return to me and report about your mission. Seems easy, doesn't it? Are you going to accept this mission?",
-			},
+		i18nKey = "npc.bozo.stdmod_110",
 			[3] = {
-				"Great! That's the word of a true fool! Maybe you want to write the names down. Here we go: [1] a cookie to: ...",
-				"The pompous hero Avar Tar in Edron, Simon the greedy beggar on Fibula, the pirate Ariella on the Shattered Isles, the dubious Lorbas next to the ruins of the Dark Cathedral, King Markwin in the underground city Mintwalin ...",
-				"The shaman Hjaern on the ice island Nibelor, the witch Wyda in the Green Claw Swamp, the ape Hairycles in the jungle city Banuta ...",
-				"The orc king in the orc fortress Uldrek's Rock and the last one to EITHER Yaman, the green djinn, OR, Nah'Bob, the blue djinn ...",
-				"A piece of cake isn't it? Did you take notes? If you need the list again, just ask me for it. Otherwise leave now and report about the mission whenever you're done.",
+				"npc.bozo.mission_30_t3_1",
+				"npc.bozo.mission_30_t3_2",
+				"npc.bozo.mission_30_t3_3",
+				"npc.bozo.mission_30_t3_4",
+				"npc.bozo.mission_30_t3_5",
 			},
 		},
 		yes = true,
@@ -478,10 +340,7 @@ local config = {
 		addItem = { itemId = 130, count = 10 },
 	},
 	[31] = {
-		text = {
-			[1] = "Are you done with your little delivery mission?",
-			[3] = "Indeed, you're done. By the way, you look a little bit tired and dirty. However, if you still have some power left, ask me about the next mission.",
-		},
+		i18nKey = "npc.bozo.stdmod_111",
 		yes = true,
 		cookiesDelivery = true,
 		updateStorages = {
@@ -490,11 +349,7 @@ local config = {
 		},
 	},
 	[32] = {
-		text = {
-			[1] = {
-				"I'm sure you're wondering how many tiring missions old Bozo has still in store for you! Don't worry! You're almost done, only one final mission left ...",
-				"Well, that is after you got the needed material. First of all, bring me 5 pieces of white cloth. Then we talk more about your mission.",
-			},
+		i18nKey = "npc.bozo.stdmod_112",
 		},
 		updateStorages = {
 			{ key = Storage.Quest.U8_1.WhatAFoolishQuest.Mission11, value = 1 },
@@ -502,14 +357,7 @@ local config = {
 		},
 	},
 	[33] = {
-		text = {
-			[1] = "Have you been able to get hold of 5 pieces of white cloth?",
-			[2] = "No, you haven't! Why do only fools apply for the fools guild?",
-			[3] = {
-				"Well done. Anyway, I reeeally hate to tell you but ... as white as it's now we have no use for it. Don't worry though. There is a way to give it an old and worn look ...",
-				"The unforgiving desert sun combined with the noxious fumes of the Plague Spike in Darama will do the trick ...",
-				"Travel to Darama, climb the Plague Spike and look for a nice spot to let mother nature do the work. Perhaps something like an altar would be useful. Once you're done, return here and learn about the next step of your mission.",
-			},
+		i18nKey = "npc.bozo.stdmod_113",
 		},
 		yes = true,
 		removeItem = { itemId = 5909, count = 5 },
@@ -520,14 +368,7 @@ local config = {
 		addItem = { itemId = 142 },
 	},
 	[34] = {
-		text = {
-			[1] = "Do you have a piece of old and worn cloth?",
-			[2] = "No, you don't! Why do only fools apply for the fools guild?",
-			[3] = {
-				"Fine, fine. Now let's do the last step of our foolish plan. Smart as I am, I used a pair of scissors to create some old and worn bands from the cloth you have brought me. DON'T touch it yet ...",
-				"Travel to Darashia and visit caliph Kazzan. Use the bands made of the worn cloth to disguise yourself as a mummy ...",
-				"Finally, talk to the caliph to give him the scare of his lifetime. Afterwards come back here and tell me about the fun you had with this mission.",
-			},
+		i18nKey = "npc.bozo.stdmod_114",
 		},
 		yes = true,
 		removeItem = { itemId = 143 },
@@ -538,11 +379,7 @@ local config = {
 		addItem = { itemId = 144 },
 	},
 	[35] = {
-		text = {
-			[1] = "Well, my diligent pupil, have you scared the caliph yet?",
-			[2] = "No, you don't! Why do only fools apply for the fools guild?",
-			[3] = "By Kurik, I knew you have it in you. You are a fool after my fancy. Take this jester hat, you deserve it. It will go nicely with your jester costume.",
-		},
+		i18nKey = "npc.bozo.stdmod_115",
 		yes = true,
 		checkStorage = Storage.Quest.U8_1.WhatAFoolishQuest.ScaredKazzan,
 		updateStorages = {
@@ -554,45 +391,31 @@ local config = {
 		last = true,
 	},
 	[36] = {
-		text = {
-			[1] = "You are a fully trained fool now who has developed to an accomplished jester. Your final mission is to bring fun and joy to the whole world.",
-		},
+		i18nKey = "npc.bozo.stdmod_116",
 	},
 }
 
 local jesterOutfit = {
 	[-1] = {
-		text = {
-			[1] = "First we will need one piece of red cloth. Do you have it with you?",
-			[2] = "Ok, now we need one piece of blue cloth. Do you have one with you by chance?",
-		},
+		i18nKey = "npc.bozo.stdmod_117",
 		removeItemId = 5911,
 		newValue = 1,
 		choice = 1,
 	},
 	[1] = {
-		text = {
-			[1] = "Now we need one piece of blue cloth. Do you have one with you by chance?",
-			[2] = "Ok, now we need one piece of green cloth. Do you have one with you by chance?",
-		},
+		i18nKey = "npc.bozo.stdmod_118",
 		removeItemId = 5912,
 		newValue = 2,
 		choice = 2,
 	},
 	[2] = {
-		text = {
-			[1] = "Now we need one piece of green cloth. Do you have one with you by chance?",
-			[2] = "At last we need one piece of yellow cloth. Do you have one with you by chance?",
-		},
+		i18nKey = "npc.bozo.stdmod_119",
 		removeItemId = 5910,
 		newValue = 3,
 		choice = 3,
 	},
 	[3] = {
-		text = {
-			[1] = "Now we need one piece of yellow cloth. Do you have one with you by chance?",
-			[2] = "That's it. Here is your jester outfit. It's admittedly a bit basic but maybe you'll earn some nice accessories soon. At least you are more fittingly dressed for your next missions now.",
-		},
+		i18nKey = "npc.bozo.stdmod_120",
 		removeItemId = 5914,
 		newValue = 4,
 		addOutfit = true,
@@ -611,6 +434,15 @@ local function greetCallback(npc, creature)
 	end
 	value[playerId] = nil
 	return true
+end
+
+
+local function sayBozoText(npcHandler, npc, creature, textValue)
+	if type(textValue) == "table" then
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, textValue)
+	else
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, textValue)
+	end
 end
 
 local function creatureSayCallback(npc, creature, type, message)
@@ -648,7 +480,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			end
 		end
 
-		npcHandler:say(targetValue.text[1], npc, creature)
+		sayBozoText(npcHandler, npc, creature, targetValue.text[1])
 		if targetValue.yes then
 			npcHandler:setTopic(playerId, 3)
 			value[playerId] = targetValue
@@ -660,7 +492,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				return true
 			end
 
-			npcHandler:say(targetValue.text[1], npc, creature)
+			sayBozoText(npcHandler, npc, creature, targetValue.text[1])
 			npcHandler:setTopic(playerId, 4)
 			value[playerId] = targetValue
 		else
@@ -686,7 +518,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			local targetValue = value[playerId]
 			if targetValue.checkStorage then
 				if player:getStorageValue(targetValue.checkStorage) ~= 1 then
-					npcHandler:say(targetValue.text[2], npc, creature)
+					sayBozoText(npcHandler, npc, creature, targetValue.text[2])
 					npcHandler:setTopic(playerId, 0)
 					return true
 				end
@@ -694,7 +526,7 @@ local function creatureSayCallback(npc, creature, type, message)
 
 			if targetValue.removeItem then
 				if not player:removeItem(targetValue.removeItem.itemId, targetValue.removeItem.count or 1, targetValue.removeItem.subType or -1) then
-					npcHandler:say(targetValue.text[2], npc, creature)
+					sayBozoText(npcHandler, npc, creature, targetValue.text[2])
 					npcHandler:setTopic(playerId, 0)
 					return true
 				end
@@ -702,7 +534,7 @@ local function creatureSayCallback(npc, creature, type, message)
 
 			if targetValue.checkItemCount then
 				if player:getItemCount(targetValue.checkItemCount) == 0 then
-					npcHandler:say(targetValue.text[2], npc, creature)
+					sayBozoText(npcHandler, npc, creature, targetValue.text[2])
 					npcHandler:setTopic(playerId, 0)
 					return true
 				end
@@ -750,7 +582,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:addAchievement("Fool at Heart")
 			end
 
-			npcHandler:say(targetValue.text[3], npc, creature)
+			sayBozoText(npcHandler, npc, creature, targetValue.text[3])
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 4 then
 			local targetValue = value[playerId]
@@ -766,7 +598,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:addOutfit(273)
 				player:setStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.Questline, 13)
 			end
-			npcHandler:say(targetValue.text[2], npc, creature)
+			sayBozoText(npcHandler, npc, creature, targetValue.text[2])
 			if not targetValue.last then
 				value[playerId] = jesterOutfit[targetValue.choice]
 			else

@@ -40,12 +40,12 @@ local reload = TalkAction("/reload")
 
 function reload.onSay(player, words, param)
 	if not configManager.getBoolean(configKeys.ALLOW_RELOAD) then
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.reload.msg_1")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.reload.msg_1")
 		return true
 	end
 
 	if param == "" then
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.reload.msg_2")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.reload.msg_2")
 		return true
 	end
 
@@ -54,7 +54,7 @@ function reload.onSay(player, words, param)
 
 	local reloadType = reloadTypes[param:lower()]
 	if not reloadType then
-		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.reload.msg_3")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.reload.msg_3")
 		return true
 	end
 

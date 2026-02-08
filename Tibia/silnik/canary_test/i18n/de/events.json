@@ -1,7 +1,16 @@
 {
-  "event.player.msg1": "[DE] You can't move that item so fast.",
-  "event.player.msg2": "[DE] daily-reward-xp-boost",
-  "event.player.msg3": "[DE] daily-reward-xp-boost",
-  "event.player.msg4": "[DE] daily-reward-xp-boost",
-  "event.player.msg5": "[DE] daily-reward-xp-boost"
+  "event.player.msg1": "You can't move that item so fast.",
+  "event.player.msg2": "daily-reward-xp-boost",
+  "event.player.msg3": "daily-reward-xp-boost",
+  "event.player.msg4": "daily-reward-xp-boost",
+  "event.player.msg5": "daily-reward-xp-boost",
+  "event.player.msg_1": "You are no longer refilling stamina, since you left a regeneration zone.",
+  "event.player.msg_2": "There was an error when processing your report, please contact a gamemaster.",
+  "event.player.msg_3": "Thank you for reporting {}. Your report \\z\n\twill be processed by {} team as soon as possible.",
+  "event.player.msg_4": "There was an error when processing your report, please contact a gamemaster.",
+  "event.player.msg_5": "Your report is being processed.",
+  "event.player.say_1": "You feed the turtle, now you may pass.",
+  "event.player.msg_move_fast": "You can't move that item so fast.",
+  "event.player.msg_report_sent": "Your report has been sent to {server}.",
+  "event.player.stamina_pz_recharge": "In protection zone. Recharging {0} stamina every {1} minutes."
 }

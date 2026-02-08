@@ -58,6 +58,7 @@
 #include "server/server.hpp"
 #include "utils/tools.hpp"
 #include "utils/wildcardtree.hpp"
+#include "utils/i18n/translator.hpp"
 #include "creatures/players/vocations/vocation.hpp"
 #include "creatures/players/components/wheel/wheel_definitions.hpp"
 
@@ -205,13 +206,13 @@ namespace InternalGame {
 } // Namespace InternalGame
 
 Game::Game() {
-	offlineTrainingWindow.choices.emplace_back("Sword Fighting and Shielding", SKILL_SWORD);
-	offlineTrainingWindow.choices.emplace_back("Axe Fighting and Shielding", SKILL_AXE);
-	offlineTrainingWindow.choices.emplace_back("Club Fighting and Shielding", SKILL_CLUB);
-	offlineTrainingWindow.choices.emplace_back("Distance Fighting and Shielding", SKILL_DISTANCE);
-	offlineTrainingWindow.choices.emplace_back("Magic Level and Shielding", SKILL_MAGLEVEL);
-	offlineTrainingWindow.buttons.emplace_back("Okay", 1);
-	offlineTrainingWindow.buttons.emplace_back("Cancel", 0);
+	offlineTrainingWindow.choices.emplace_back("cpp.game.offline_training_choice_sword", SKILL_SWORD);
+	offlineTrainingWindow.choices.emplace_back("cpp.game.offline_training_choice_axe", SKILL_AXE);
+	offlineTrainingWindow.choices.emplace_back("cpp.game.offline_training_choice_club", SKILL_CLUB);
+	offlineTrainingWindow.choices.emplace_back("cpp.game.offline_training_choice_distance", SKILL_DISTANCE);
+	offlineTrainingWindow.choices.emplace_back("cpp.game.offline_training_choice_magic", SKILL_MAGLEVEL);
+	offlineTrainingWindow.buttons.emplace_back("cpp.game.offline_training_button_ok", 1);
+	offlineTrainingWindow.buttons.emplace_back("cpp.game.offline_training_button_cancel", 0);
 	offlineTrainingWindow.defaultEscapeButton = 1;
 	offlineTrainingWindow.defaultEnterButton = 0;
 	offlineTrainingWindow.priority = true;
@@ -382,15 +383,15 @@ Game::Game() {
 	};
 
 	m_highscoreCategories = {
-		HighscoreCategory("Experience Points", static_cast<uint8_t>(HighscoreCategories_t::EXPERIENCE)),
-		HighscoreCategory("Fist Fighting", static_cast<uint8_t>(HighscoreCategories_t::FIST_FIGHTING)),
-		HighscoreCategory("Club Fighting", static_cast<uint8_t>(HighscoreCategories_t::CLUB_FIGHTING)),
-		HighscoreCategory("Sword Fighting", static_cast<uint8_t>(HighscoreCategories_t::SWORD_FIGHTING)),
-		HighscoreCategory("Axe Fighting", static_cast<uint8_t>(HighscoreCategories_t::AXE_FIGHTING)),
-		HighscoreCategory("Distance Fighting", static_cast<uint8_t>(HighscoreCategories_t::DISTANCE_FIGHTING)),
-		HighscoreCategory("Shielding", static_cast<uint8_t>(HighscoreCategories_t::SHIELDING)),
-		HighscoreCategory("Fishing", static_cast<uint8_t>(HighscoreCategories_t::FISHING)),
-		HighscoreCategory("Magic Level", static_cast<uint8_t>(HighscoreCategories_t::MAGIC_LEVEL))
+		HighscoreCategory("cpp.game.highscore_category_experience", static_cast<uint8_t>(HighscoreCategories_t::EXPERIENCE)),
+		HighscoreCategory("cpp.game.highscore_category_fist", static_cast<uint8_t>(HighscoreCategories_t::FIST_FIGHTING)),
+		HighscoreCategory("cpp.game.highscore_category_club", static_cast<uint8_t>(HighscoreCategories_t::CLUB_FIGHTING)),
+		HighscoreCategory("cpp.game.highscore_category_sword", static_cast<uint8_t>(HighscoreCategories_t::SWORD_FIGHTING)),
+		HighscoreCategory("cpp.game.highscore_category_axe", static_cast<uint8_t>(HighscoreCategories_t::AXE_FIGHTING)),
+		HighscoreCategory("cpp.game.highscore_category_distance", static_cast<uint8_t>(HighscoreCategories_t::DISTANCE_FIGHTING)),
+		HighscoreCategory("cpp.game.highscore_category_shielding", static_cast<uint8_t>(HighscoreCategories_t::SHIELDING)),
+		HighscoreCategory("cpp.game.highscore_category_fishing", static_cast<uint8_t>(HighscoreCategories_t::FISHING)),
+		HighscoreCategory("cpp.game.highscore_category_magic_level", static_cast<uint8_t>(HighscoreCategories_t::MAGIC_LEVEL))
 	};
 
 	m_summaryCategories = {
@@ -1878,7 +1879,7 @@ void Game::playerMoveItem(const std::shared_ptr<Player> &player, const Position 
 		const auto toHouseTile = map.getTile(mapToPos)->dynamic_self_cast<HouseTile>();
 		const auto fromHouseTile = map.getTile(mapFromPos)->dynamic_self_cast<HouseTile>();
 		if (fromHouseTile && (!toHouseTile || toHouseTile->getHouse()->getId() != fromHouseTile->getHouse()->getId())) {
-			player->sendCancelMessage("You cannot move this item out of this house.");
+			player->sendLocalizedTextMessage(MESSAGE_FAILURE, "cpp.cancel.cannot_move_house");
 			return;
 		}
 	}
@@ -2545,7 +2546,8 @@ std::tuple<ReturnValue, uint32_t, uint32_t> Game::createItemBatch(const std::sha
 			if (itemType.isWrappable()) {
 				countPerItem = 1;
 				item = Item::CreateItem(ITEM_DECORATION_KIT, subType);
-				item->setAttribute(ItemAttribute_t::DESCRIPTION, "Unwrap this item in your own house to create a <" + itemType.name + ">.");
+				auto &storeTr = i18n::g_translator();
+				item->setAttribute(ItemAttribute_t::DESCRIPTION, storeTr.format("cpp.game.unwrap_house_description", "en", {itemType.name}));
 				item->setCustomAttribute("unWrapId", static_cast<int64_t>(itemId));
 			} else {
 				item = Item::CreateItem(itemId, itemType.stackable ? std::min<uint32_t>(countPerItem, count - i) : subType);
@@ -2998,66 +3000,68 @@ void Game::playerQuickLootCorpse(const std::shared_ptr<Player> &player, const st
 	if (totalLootedGold != 0 || missedAnyGold || totalLootedItems != 0 || missedAnyItem) {
 		bool lootedAllGold = totalLootedGold != 0 && !missedAnyGold;
 		bool lootedAllItems = totalLootedItems != 0 && !missedAnyItem;
+		const std::string loc(player->getLocale().empty() ? "en" : std::string(player->getLocale()));
+		auto &tr = i18n::g_translator();
 		if (lootedAllGold) {
 			if (totalLootedItems != 0 || missedAnyItem) {
-				ss << "You looted the complete " << totalLootedGold << " gold";
+				ss << tr.format("cpp.game.looted_complete_gold", loc, {std::to_string(totalLootedGold)});
 
 				if (lootedAllItems) {
-					ss << " and all dropped items";
+					ss << tr.get("cpp.game.and_all_dropped_items", loc);
 				} else if (totalLootedItems != 0) {
-					ss << ", but you only looted some of the items";
+					ss << tr.get("cpp.game.but_only_some_items", loc);
 				} else if (missedAnyItem) {
-					ss << " but none of the dropped items";
+					ss << tr.get("cpp.game.but_no_items", loc);
 				}
 			} else {
-				ss << "You looted " << totalLootedGold << " gold";
+				ss << tr.format("cpp.game.looted_gold", loc, {std::to_string(totalLootedGold)});
 			}
 		} else if (lootedAllItems) {
 			if (totalLootedItems == 1) {
-				ss << "You looted 1 item";
+				ss << tr.get("cpp.game.looted_one_item", loc);
 			} else if (totalLootedGold != 0 || missedAnyGold) {
-				ss << "You looted all of the dropped items";
+				ss << tr.get("cpp.game.looted_all_dropped_items", loc);
 			} else {
-				ss << "You looted all items";
+				ss << tr.get("cpp.game.looted_all_items", loc);
 			}
 
 			if (totalLootedGold != 0) {
-				ss << ", but you only looted " << totalLootedGold << " of the dropped gold";
+				ss << tr.format("cpp.game.but_only_some_gold", loc, {std::to_string(totalLootedGold)});
 			} else if (missedAnyGold) {
-				ss << " but none of the dropped gold";
+				ss << tr.get("cpp.game.but_no_gold", loc);
 			}
 		} else if (totalLootedGold != 0) {
-			ss << "You only looted " << totalLootedGold << " of the dropped gold";
+			ss << tr.format("cpp.game.only_looted_some_gold", loc, {std::to_string(totalLootedGold)});
 			if (totalLootedItems != 0) {
-				ss << " and some of the dropped items";
+				ss << tr.get("cpp.game.and_some_items", loc);
 			} else if (missedAnyItem) {
-				ss << " but none of the dropped items";
+				ss << tr.get("cpp.game.but_no_items", loc);
 			}
 		} else if (totalLootedItems != 0) {
-			ss << "You looted some of the dropped items";
+			ss << tr.get("cpp.game.looted_some_items", loc);
 			if (missedAnyGold) {
-				ss << " but none of the dropped gold";
+				ss << tr.get("cpp.game.but_no_gold", loc);
 			}
 		} else if (missedAnyGold) {
-			ss << "You looted none of the dropped gold";
+			ss << tr.get("cpp.game.looted_no_gold", loc);
 			if (missedAnyItem) {
-				ss << " and none of the items";
+				ss << tr.get("cpp.game.and_no_items", loc);
 			}
 		} else if (missedAnyItem) {
-			ss << "You looted none of the dropped items";
+			ss << tr.get("cpp.game.looted_no_items", loc);
 		}
 	} else {
-		ss << "No loot";
+		ss << tr.get("cpp.game.no_loot", loc);
 	}
 	ss << ".";
 	player->sendTextMessage(MESSAGE_STATUS, ss.str());
 
 	if (shouldNotifyCapacity) {
 		ss.str(std::string());
-		ss << "Attention! The loot you are trying to pick up is too heavy for you to carry.";
+		ss << tr.get("cpp.game.loot_too_heavy", loc);
 	} else if (shouldNotifyNotEnoughRoom != OBJECTCATEGORY_NONE) {
 		ss.str(std::string());
-		ss << "Attention! The container assigned to category " << getObjectCategoryName(shouldNotifyNotEnoughRoom) << " is full.";
+		ss << tr.format("cpp.game.loot_container_full", loc, {getObjectCategoryName(shouldNotifyNotEnoughRoom)});
 	} else {
 		return;
 	}
@@ -3239,7 +3243,7 @@ ReturnValue Game::collectRewardChestItems(const std::shared_ptr<Player> &player,
 		// Limit the collect count if the "maxMoveItems" is not "0"
 		auto limitMove = maxMoveItems != 0 && movedRewardItems == maxMoveItems;
 		if (limitMove) {
-			lootedItemsMessage = fmt::format("You can only collect {} items at a time. {} of {} objects were picked up.", maxMoveItems, movedRewardItems, rewardCount);
+			{ const std::string loc(player->getLocale().empty() ? "en" : std::string(player->getLocale())); auto &tr = i18n::g_translator(); lootedItemsMessage = tr.format("cpp.game.collect_limit_reached", loc, {std::to_string(maxMoveItems), std::to_string(movedRewardItems), std::to_string(rewardCount)}); }
 			player->sendTextMessage(MESSAGE_EVENT_ADVANCE, lootedItemsMessage);
 			return RETURNVALUE_NOERROR;
 		}
@@ -3250,7 +3254,7 @@ ReturnValue Game::collectRewardChestItems(const std::shared_ptr<Player> &player,
 		}
 	}
 
-	lootedItemsMessage = fmt::format("{} of {} objects were picked up.", movedRewardItems, rewardCount);
+	{ const std::string loc(player->getLocale().empty() ? "en" : std::string(player->getLocale())); auto &tr = i18n::g_translator(); lootedItemsMessage = tr.format("cpp.game.objects_picked_up", loc, {std::to_string(movedRewardItems), std::to_string(rewardCount)}); }
 	player->sendTextMessage(MESSAGE_EVENT_ADVANCE, lootedItemsMessage);
 
 	if (movedRewardItems == 0) {
@@ -3440,7 +3444,7 @@ void Game::playerEquipItem(uint32_t playerId, uint16_t itemId, bool hasTier /* =
 		/*
 		 *	When player is feared the player can´t equip any items.
 		 */
-		player->sendTextMessage(MESSAGE_FAILURE, "You are feared.");
+		player->sendLocalizedTextMessage(MESSAGE_FAILURE, "server.game.msg_1");
 		return;
 	}
 
@@ -3676,12 +3680,12 @@ void Game::playerOpenPrivateChannel(uint32_t playerId, std::string &receiver) {
 	}
 
 	if (!IOLoginData::formatPlayerName(receiver)) {
-		player->sendCancelMessage("A player with this name does not exist.");
+		player->sendLocalizedTextMessage(MESSAGE_FAILURE, "server.game.msg_14");
 		return;
 	}
 
 	if (player->getName() == receiver) {
-		player->sendCancelMessage("You cannot set up a private message channel with yourself.");
+		player->sendLocalizedTextMessage(MESSAGE_FAILURE, "cpp.cancel.no_pm_self");
 		return;
 	}
 
@@ -4529,17 +4533,17 @@ void Game::playerWrapableItem(uint32_t playerId, const Position &pos, uint8_t st
 
 	const auto houseTile = tile->dynamic_self_cast<HouseTile>();
 	if (!tile->hasFlag(TILESTATE_PROTECTIONZONE) || !houseTile) {
-		player->sendCancelMessage("You may construct this only inside a house.");
+		player->sendLocalizedTextMessage(MESSAGE_FAILURE, "cpp.cancel.construct_inside_house");
 		return;
 	}
 	const auto &house = houseTile->getHouse();
 	if (!house) {
-		player->sendCancelMessage("You may construct this only inside a house.");
+		player->sendLocalizedTextMessage(MESSAGE_FAILURE, "cpp.cancel.construct_inside_house");
 		return;
 	}
 
 	if (house->getHouseAccessLevel(player) < HOUSE_OWNER) {
-		player->sendCancelMessage("You are not allowed to construct this here.");
+		player->sendLocalizedTextMessage(MESSAGE_FAILURE, "cpp.cancel.not_allowed_construct");
 		return;
 	}
 
@@ -4587,7 +4591,7 @@ void Game::playerWrapableItem(uint32_t playerId, const Position &pos, uint8_t st
 	bool blockedUnwrap = topItem && topItem->canReceiveAutoCarpet() && !item->hasProperty(CONST_PROP_IMMOVABLEBLOCKSOLID);
 
 	if (unwrappable || blockedUnwrap) {
-		player->sendCancelMessage("You can only wrap/unwrap on the floor.");
+		player->sendLocalizedTextMessage(MESSAGE_FAILURE, "cpp.cancel.wrap_on_floor");
 		return;
 	}
 
@@ -4630,7 +4634,8 @@ std::shared_ptr<Item> Game::wrapItem(const std::shared_ptr<Item> &item, const st
 		newItem->setAttribute(ItemAttribute_t::STORE, attributeStore);
 	}
 	newItem->setCustomAttribute("unWrapId", static_cast<int64_t>(oldItemID));
-	newItem->setAttribute(ItemAttribute_t::DESCRIPTION, "You bought this item in the Store.\nUnwrap it in your own house to create a <" + itemName + ">.");
+	auto &storetr = i18n::g_translator();
+	newItem->setAttribute(ItemAttribute_t::DESCRIPTION, storetr.format("cpp.game.store_item_description", "en", {itemName}));
 	if (hiddenCharges > 0) {
 		newItem->setAttribute(ItemAttribute_t::DATE, hiddenCharges);
 	}
@@ -4649,7 +4654,7 @@ void Game::unwrapItem(const std::shared_ptr<Item> &item, uint16_t unWrapId, cons
 	auto hiddenCharges = item->getAttribute<uint16_t>(ItemAttribute_t::DATE);
 	const ItemType &newiType = Item::items.getItemType(unWrapId);
 	if (player != nullptr && house != nullptr && newiType.isBed() && house->getMaxBeds() > -1 && house->getBedCount() >= house->getMaxBeds()) {
-		player->sendCancelMessage("You reached the maximum beds in this house");
+		player->sendLocalizedTextMessage(MESSAGE_FAILURE, "cpp.cancel.max_beds");
 		return;
 	}
 	auto amount = item->getAttribute<uint16_t>(ItemAttribute_t::AMOUNT);
@@ -4867,7 +4872,7 @@ void Game::playerStashWithdraw(uint32_t playerId, uint16_t itemId, uint32_t coun
 	auto maxWithdrawLimit = static_cast<uint32_t>(g_configManager().getNumber(STASH_MANAGE_AMOUNT));
 	if (count > maxWithdrawLimit) {
 		std::stringstream limitMessage;
-		limitMessage << "You can only withdraw up to " << maxWithdrawLimit << " items at a time from the stash.";
+		{ const std::string loc(player->getLocale().empty() ? "en" : std::string(player->getLocale())); auto &tr = i18n::g_translator(); limitMessage << tr.format("cpp.game.stash_withdraw_limit", loc, {std::to_string(maxWithdrawLimit)}); }
 		player->sendTextMessage(MESSAGE_EVENT_ADVANCE, limitMessage.str());
 		count = maxWithdrawLimit;
 	}
@@ -4936,13 +4941,13 @@ void Game::playerRequestTrade(uint32_t playerId, const Position &pos, uint8_t st
 
 	std::shared_ptr<Player> tradePartner = getPlayerByID(tradePlayerId);
 	if (!tradePartner || tradePartner == player) {
-		player->sendTextMessage(MESSAGE_FAILURE, "Sorry, not possible.");
+		player->sendLocalizedTextMessage(MESSAGE_FAILURE, "server.game.msg_2");
 		return;
 	}
 
 	if (!Position::areInRange<2, 2, 0>(tradePartner->getPosition(), player->getPosition())) {
 		std::ostringstream ss;
-		ss << tradePartner->getName() << " tells you to move closer.";
+		{ const std::string loc(player->getLocale().empty() ? "en" : std::string(player->getLocale())); auto &tr = i18n::g_translator(); ss << tr.format("cpp.game.trade_move_closer", loc, {tradePartner->getName()}); }
 		player->sendTextMessage(MESSAGE_TRADE, ss.str());
 		return;
 	}
@@ -5008,18 +5013,18 @@ void Game::playerRequestTrade(uint32_t playerId, const Position &pos, uint8_t st
 		for (const auto &it : tradeItems) {
 			const auto &item = it.first;
 			if (tradeItem == item) {
-				player->sendTextMessage(MESSAGE_TRADE, "This item is already being traded.");
+				player->sendLocalizedTextMessage(MESSAGE_TRADE, "server.game.msg_3");
 				return;
 			}
 
 			if (tradeItemContainer->isHoldingItem(item)) {
-				player->sendTextMessage(MESSAGE_TRADE, "This item is already being traded.");
+				player->sendLocalizedTextMessage(MESSAGE_TRADE, "server.game.msg_4");
 				return;
 			}
 
 			const std::shared_ptr<Container> &container = item->getContainer();
 			if (container && container->isHoldingItem(tradeItem)) {
-				player->sendTextMessage(MESSAGE_TRADE, "This item is already being traded.");
+				player->sendLocalizedTextMessage(MESSAGE_TRADE, "server.game.msg_5");
 				return;
 			}
 		}
@@ -5027,32 +5032,32 @@ void Game::playerRequestTrade(uint32_t playerId, const Position &pos, uint8_t st
 		for (const auto &it : tradeItems) {
 			const auto &item = it.first;
 			if (tradeItem == item) {
-				player->sendTextMessage(MESSAGE_TRADE, "This item is already being traded.");
+				player->sendLocalizedTextMessage(MESSAGE_TRADE, "server.game.msg_6");
 				return;
 			}
 
 			const std::shared_ptr<Container> &container = item->getContainer();
 			if (container && container->isHoldingItem(tradeItem)) {
-				player->sendTextMessage(MESSAGE_TRADE, "This item is already being traded.");
+				player->sendLocalizedTextMessage(MESSAGE_TRADE, "server.game.msg_7");
 				return;
 			}
 		}
 	}
 
 	if (tradeItemContainer && tradeItemContainer->getItemHoldingCount() + 1 > 100) {
-		player->sendTextMessage(MESSAGE_TRADE, "You can not trade more than 100 items.");
+		player->sendLocalizedTextMessage(MESSAGE_TRADE, "server.game.msg_8");
 		return;
 	}
 
 	if (tradeItem->isStoreItem()) {
-		player->sendTextMessage(MESSAGE_TRADE, "This item cannot be trade.");
+		player->sendLocalizedTextMessage(MESSAGE_TRADE, "server.game.msg_9");
 		return;
 	}
 
 	if (tradeItemContainer) {
 		for (const std::shared_ptr<Item> &containerItem : tradeItemContainer->getItems(true)) {
 			if (containerItem->isStoreItem()) {
-				player->sendTextMessage(MESSAGE_TRADE, "This item cannot be trade.");
+				player->sendLocalizedTextMessage(MESSAGE_TRADE, "server.game.msg_10");
 				return;
 			}
 		}
@@ -5091,7 +5096,7 @@ bool Game::internalStartTrade(const std::shared_ptr<Player> &player, const std::
 
 	if (tradePartner->tradeState == TRADE_NONE) {
 		std::ostringstream ss;
-		ss << player->getName() << " wants to trade with you.";
+		{ const std::string loc(tradePartner->getLocale().empty() ? "en" : std::string(tradePartner->getLocale())); auto &tr = i18n::g_translator(); ss << tr.format("cpp.game.trade_wants_to_trade", loc, {player->getName()}); }
 		tradePartner->sendTextMessage(MESSAGE_TRANSACTION, ss.str());
 		tradePartner->tradeState = TRADE_ACKNOWLEDGE;
 		tradePartner->tradePartner = player;
@@ -5182,13 +5187,13 @@ void Game::playerAcceptTrade(uint32_t playerId) {
 			std::string errorDescription;
 
 			if (tradePartner->tradeItem) {
-				errorDescription = getTradeErrorDescription(ret1, tradeItem1);
+				errorDescription = getTradeErrorDescription(ret1, tradeItem1, tradePartner->getLocale());
 				tradePartner->sendTextMessage(MESSAGE_TRANSACTION, errorDescription);
 				tradePartner->tradeItem->onTradeEvent(ON_TRADE_CANCEL, tradePartner);
 			}
 
 			if (player->tradeItem) {
-				errorDescription = getTradeErrorDescription(ret2, tradeItem2);
+				errorDescription = getTradeErrorDescription(ret2, tradeItem2, player->getLocale());
 				player->sendTextMessage(MESSAGE_TRANSACTION, errorDescription);
 				player->tradeItem->onTradeEvent(ON_TRADE_CANCEL, player);
 			}
@@ -5206,35 +5211,38 @@ void Game::playerAcceptTrade(uint32_t playerId) {
 	}
 }
 
-std::string Game::getTradeErrorDescription(ReturnValue ret, const std::shared_ptr<Item> &item) {
+std::string Game::getTradeErrorDescription(ReturnValue ret, const std::shared_ptr<Item> &item, std::string_view locale /*= {}*/) {
+	const std::string locStr(locale.empty() ? "en" : locale);
+	auto &tr = i18n::g_translator();
+
 	if (item) {
 		if (ret == RETURNVALUE_NOTENOUGHCAPACITY) {
 			std::ostringstream ss;
-			ss << "You do not have enough capacity to carry";
+			ss << tr.get("cpp.trade.not_enough_capacity", locStr);
 
 			if (item->isStackable() && item->getItemCount() > 1) {
-				ss << " these objects.";
+				ss << tr.get("cpp.trade.these_objects", locStr);
 			} else {
-				ss << " this object.";
+				ss << tr.get("cpp.trade.this_object", locStr);
 			}
 
 			ss << std::endl
-			   << ' ' << item->getWeightDescription();
+			   << ' ' << item->getWeightDescription(locale);
 			return ss.str();
 		} else if (ret == RETURNVALUE_NOTENOUGHROOM || ret == RETURNVALUE_CONTAINERNOTENOUGHROOM) {
 			std::ostringstream ss;
-			ss << "You do not have enough room to carry";
+			ss << tr.get("cpp.trade.not_enough_room", locStr);
 
 			if (item->isStackable() && item->getItemCount() > 1) {
-				ss << " these objects.";
+				ss << tr.get("cpp.trade.these_objects", locStr);
 			} else {
-				ss << " this object.";
+				ss << tr.get("cpp.trade.this_object", locStr);
 			}
 
 			return ss.str();
 		}
 	}
-	return "Trade could not be completed.";
+	return tr.get("cpp.trade.could_not_complete", locStr);
 }
 
 void Game::playerLookInTrade(uint32_t playerId, bool lookAtCounterOffer, uint8_t index) {
@@ -5324,7 +5332,7 @@ void Game::internalCloseTrade(const std::shared_ptr<Player> &player) {
 	player->setTradeState(TRADE_NONE);
 	player->tradePartner = nullptr;
 
-	player->sendTextMessage(MESSAGE_FAILURE, "Trade cancelled.");
+	player->sendLocalizedTextMessage(MESSAGE_FAILURE, "server.game.msg_11");
 	player->sendTradeClose();
 
 	if (tradePartner) {
@@ -5341,7 +5349,7 @@ void Game::internalCloseTrade(const std::shared_ptr<Player> &player) {
 		tradePartner->setTradeState(TRADE_NONE);
 		tradePartner->tradePartner = nullptr;
 
-		tradePartner->sendTextMessage(MESSAGE_FAILURE, "Trade cancelled.");
+		tradePartner->sendLocalizedTextMessage(MESSAGE_FAILURE, "server.game.msg_12");
 		tradePartner->sendTradeClose();
 	}
 }
@@ -5471,7 +5479,8 @@ void Game::playerLookInShop(uint32_t playerId, uint16_t itemId, uint8_t count) {
 	}
 
 	std::ostringstream ss;
-	ss << "You see " << Item::getDescription(it, 1, nullptr, count);
+	const std::string playerLocale(player->getLocale().empty() ? "en" : player->getLocale());
+	ss << i18n::g_translator().get("cpp.look.you_see", playerLocale) << Item::getDescription(it, 1, nullptr, count, true, player->getLocale());
 	player->sendTextMessage(MESSAGE_LOOK, ss.str());
 	merchant->onPlayerCheckItem(player, it.id, count);
 }
@@ -5586,7 +5595,7 @@ void Game::playerQuickLoot(uint32_t playerId, const Position &pos, uint16_t item
 			return;
 		}
 	} else if (!player->isPremium()) {
-		player->sendCancelMessage("You must be premium.");
+		player->sendLocalizedTextMessage(MESSAGE_FAILURE, "cpp.cancel.must_be_premium");
 		return;
 	}
 
@@ -5644,21 +5653,25 @@ void Game::playerQuickLoot(uint32_t playerId, const Position &pos, uint16_t item
 
 		std::stringstream ss;
 		if (ret == RETURNVALUE_NOTENOUGHCAPACITY) {
-			ss << "Attention! The loot you are trying to pick up is too heavy for you to carry.";
+			{ const std::string loc(player->getLocale().empty() ? "en" : std::string(player->getLocale())); auto &tr = i18n::g_translator(); ss << tr.get("cpp.game.loot_too_heavy", loc); }
 		} else if (ret == RETURNVALUE_CONTAINERNOTENOUGHROOM) {
-			ss << "Attention! The container for " << getObjectCategoryName(category) << " is full.";
+			{ const std::string loc(player->getLocale().empty() ? "en" : std::string(player->getLocale())); auto &tr = i18n::g_translator(); ss << tr.format("cpp.game.loot_container_for_full", loc, {getObjectCategoryName(category)}); }
 		} else {
+			const std::string loc(player->getLocale().empty() ? "en" : std::string(player->getLocale()));
+			auto &tr = i18n::g_translator();
 			if (ret == RETURNVALUE_NOERROR) {
 				player->sendLootStats(item, item->getItemCount());
-				ss << "You looted ";
+				if (worth != 0) {
+					ss << tr.format("cpp.game.quick_loot_success_gold", loc, { std::to_string(worth) });
+				} else {
+					ss << tr.get("cpp.game.quick_loot_success_one_item", loc);
+				}
 			} else {
-				ss << "You could not loot ";
-			}
-
-			if (worth != 0) {
-				ss << worth << " gold.";
-			} else {
-				ss << "1 item.";
+				if (worth != 0) {
+					ss << tr.format("cpp.game.quick_loot_fail_gold", loc, { std::to_string(worth) });
+				} else {
+					ss << tr.get("cpp.game.quick_loot_fail_one_item", loc);
+				}
 			}
 
 			player->sendTextMessage(MESSAGE_LOOT, ss.str());
@@ -5727,7 +5740,7 @@ void Game::playerLootAllCorpses(const std::shared_ptr<Player> &player, const Pos
 		if (corpses > 0) {
 			if (corpses > 1) {
 				std::stringstream string;
-				string << "You looted " << corpses << " corpses.";
+				{ const std::string loc(player->getLocale().empty() ? "en" : std::string(player->getLocale())); auto &tr = i18n::g_translator(); string << tr.format("cpp.game.looted_corpses", loc, {std::to_string(corpses)}); }
 				player->sendTextMessage(MESSAGE_LOOT, string.str());
 			}
 
@@ -5758,12 +5771,12 @@ void Game::playerSetManagedContainer(uint32_t playerId, ObjectCategory_t categor
 	}
 
 	if (container->getID() == ITEM_GOLD_POUCH && !isLootContainer) {
-		player->sendTextMessage(MESSAGE_FAILURE, "You can only set the gold pouch as a loot container.");
+		player->sendLocalizedTextMessage(MESSAGE_FAILURE, "server.game.msg_13");
 		return;
 	}
 
 	if (container->getHoldingPlayer() != player) {
-		player->sendCancelMessage("You must be holding the container to set it as a loot container.");
+		player->sendLocalizedTextMessage(MESSAGE_FAILURE, "cpp.cancel.hold_container_loot");
 		return;
 	}
 
@@ -5987,19 +6000,19 @@ void Game::playerRequestAddVip(uint32_t playerId, const std::string &name) {
 		bool specialVip;
 		std::string formattedName = name;
 		if (!IOLoginData::getGuidByNameEx(guid, specialVip, formattedName)) {
-			player->sendTextMessage(MESSAGE_FAILURE, "A player with this name does not exist.");
+			player->sendLocalizedTextMessage(MESSAGE_FAILURE, "server.game.msg_14");
 			return;
 		}
 
 		if (specialVip && !player->hasFlag(PlayerFlags_t::SpecialVIP)) {
-			player->sendTextMessage(MESSAGE_FAILURE, "You can not add this player");
+			player->sendLocalizedTextMessage(MESSAGE_FAILURE, "server.game.msg_15");
 			return;
 		}
 
 		player->vip().add(guid, formattedName, VipStatus_t::Offline);
 	} else {
 		if (vipPlayer->hasFlag(PlayerFlags_t::SpecialVIP) && !player->hasFlag(PlayerFlags_t::SpecialVIP)) {
-			player->sendTextMessage(MESSAGE_FAILURE, "You can not add this player");
+			player->sendLocalizedTextMessage(MESSAGE_FAILURE, "server.game.msg_16");
 			return;
 		}
 
@@ -6058,7 +6071,7 @@ void Game::playerApplyImbuement(uint32_t playerId, uint16_t imbuementid, uint8_t
 
 	if (item->getTopParent() != player) {
 		g_logger().error("[Game::playerApplyImbuement] - An error occurred while player with name {} try to apply imbuement", player->getName());
-		player->sendImbuementResult("An error has occurred, reopen the imbuement window. If the problem persists, contact your administrator.");
+		{ const std::string loc(player->getLocale().empty() ? "en" : std::string(player->getLocale())); player->sendImbuementResult(i18n::g_translator().get("cpp.game.imbuement_error_reopen", loc)); }
 		return;
 	}
 
@@ -6323,7 +6336,7 @@ void Game::playerSay(uint32_t playerId, uint16_t channelId, SpeakClasses type, c
 	uint32_t muteTime = player->isMuted();
 	if (muteTime > 0) {
 		std::ostringstream ss;
-		ss << "You are still muted for " << muteTime << " seconds.";
+		{ const std::string loc(player->getLocale().empty() ? "en" : std::string(player->getLocale())); auto &tr = i18n::g_translator(); ss << tr.format("cpp.game.still_muted", loc, {std::to_string(muteTime)}); }
 		player->sendTextMessage(MESSAGE_FAILURE, ss.str());
 		return;
 	}
@@ -6419,7 +6432,7 @@ void Game::playerWhisper(const std::shared_ptr<Player> &player, const std::strin
 
 bool Game::playerYell(const std::shared_ptr<Player> &player, const std::string &text) {
 	if (player->getLevel() == 1) {
-		player->sendTextMessage(MESSAGE_FAILURE, "You may not yell as long as you are on level 1.");
+		player->sendLocalizedTextMessage(MESSAGE_FAILURE, "server.game.msg_17");
 		return false;
 	}
 
@@ -6440,7 +6453,7 @@ bool Game::playerYell(const std::shared_ptr<Player> &player, const std::string &
 bool Game::playerSpeakTo(const std::shared_ptr<Player> &player, SpeakClasses type, const std::string &receiver, const std::string &text) {
 	std::shared_ptr<Player> toPlayer = getPlayerByName(receiver);
 	if (!toPlayer) {
-		player->sendTextMessage(MESSAGE_FAILURE, "A player with this name is not online.");
+		player->sendLocalizedTextMessage(MESSAGE_FAILURE, "server.game.msg_18");
 		return false;
 	}
 
@@ -6454,10 +6467,10 @@ bool Game::playerSpeakTo(const std::shared_ptr<Player> &player, SpeakClasses typ
 	toPlayer->onCreatureSay(player, type, text);
 
 	if (toPlayer->isInGhostMode() && !player->isAccessPlayer()) {
-		player->sendTextMessage(MESSAGE_FAILURE, "A player with this name is not online.");
+		player->sendLocalizedTextMessage(MESSAGE_FAILURE, "server.game.msg_19");
 	} else {
 		std::ostringstream ss;
-		ss << "Message sent to " << toPlayer->getName() << '.';
+		{ const std::string loc(player->getLocale().empty() ? "en" : std::string(player->getLocale())); auto &tr = i18n::g_translator(); ss << tr.format("cpp.game.message_sent_to", loc, {toPlayer->getName()}); }
 		player->sendTextMessage(MESSAGE_FAILURE, ss.str());
 	}
 	return true;
@@ -6800,7 +6813,7 @@ bool Game::combatBlockHit(CombatDamage &damage, const std::shared_ptr<Creature> 
 		auto chance = targetPlayer->getDodgeChance();
 		if ((chance > 0 && uniform_random(0, 10000) < chance) || damage.hazardDodge) {
 			InternalGame::sendBlockEffect(BLOCK_DODGE, damage.primary.type, target->getPosition(), attacker);
-			targetPlayer->sendTextMessage(MESSAGE_ATTENTION, "You dodged an attack.");
+			targetPlayer->sendLocalizedTextMessage(MESSAGE_ATTENTION, "server.game.msg_20");
 			return true;
 		}
 	}
@@ -7112,16 +7125,17 @@ void Game::notifySpectators(const CreatureVector &spectators, const Position &ta
 				continue;
 			}
 
-			std::stringstream ss;
-			ss << ucfirst(targetMonster->getNameDescription()) << " has dodged";
+			const std::string loc(tmpPlayer->getLocale().empty() ? "en" : std::string(tmpPlayer->getLocale()));
+			auto &tr = i18n::g_translator();
+			std::string monsterName = ucfirst(targetMonster->getNameDescription());
+			const std::string hazardTag = tr.get("cpp.game.hazard_tag", loc);
 			if (tmpPlayer == attackerPlayer) {
-				ss << " your attack.";
-				attackerPlayer->sendCancelMessage(ss.str());
-				ss << " (Hazard)";
-				attackerPlayer->sendTextMessage(MESSAGE_DAMAGE_OTHERS, ss.str());
+				std::string cancelMsg = tr.format("cpp.game.hazard_dodged_your", loc, {monsterName});
+				attackerPlayer->sendCancelMessage(cancelMsg);
+				attackerPlayer->sendTextMessage(MESSAGE_DAMAGE_OTHERS, cancelMsg + hazardTag);
 			} else {
-				ss << " an attack by " << attackerPlayer->getName() << ". (Hazard)";
-				tmpPlayer->sendTextMessage(MESSAGE_DAMAGE_OTHERS, ss.str());
+				std::string msg = tr.format("cpp.game.hazard_dodged_by", loc, {monsterName, attackerPlayer->getName()});
+				tmpPlayer->sendTextMessage(MESSAGE_DAMAGE_OTHERS, msg + hazardTag);
 			}
 		}
 		addMagicEffect(targetPos, CONST_ME_DODGE);
@@ -7289,17 +7303,13 @@ bool Game::combatChangeHealth(const std::shared_ptr<Creature> &attacker, const s
 				party->addPlayerHealing(attackerPlayer, realHealthChange);
 			}
 
-			std::stringstream ss;
-
-			ss << realHealthChange << (realHealthChange != 1 ? " hitpoints." : " hitpoint.");
-			std::string damageString = ss.str();
-
-			std::string spectatorMessage;
-
 			TextMessage message;
 			message.position = targetPos;
 			message.primary.value = realHealthChange;
 			message.primary.color = TEXTCOLOR_PASTELRED;
+
+			std::unordered_map<std::string, std::string> spectatorHealCache;
+			auto &tr = i18n::g_translator();
 
 			for (const auto &spectator : Spectators().find<Player>(targetPos)) {
 				const auto &tmpPlayer = spectator->getPlayer();
@@ -7307,41 +7317,37 @@ bool Game::combatChangeHealth(const std::shared_ptr<Creature> &attacker, const s
 					continue;
 				}
 
+				const std::string loc(tmpPlayer->getLocale().empty() ? "en" : std::string(tmpPlayer->getLocale()));
+				const std::string hpAmount = std::to_string(realHealthChange);
+
 				if (tmpPlayer == attackerPlayer && attackerPlayer != targetPlayer) {
-					ss.str({});
-					ss << "You heal " << target->getNameDescription() << " for " << damageString;
 					message.type = MESSAGE_HEALED;
-					message.text = ss.str();
+					message.text = tr.plural("cpp.combat.heal_attacker", loc, realHealthChange, {target->getNameDescription(), hpAmount});
 				} else if (tmpPlayer == targetPlayer) {
-					ss.str({});
-					if (!attacker) {
-						ss << "You were healed";
-					} else if (targetPlayer == attackerPlayer) {
-						ss << "You heal yourself";
-					} else {
-						ss << "You were healed by " << attacker->getNameDescription();
-					}
-					ss << " for " << damageString;
 					message.type = MESSAGE_HEALED;
-					message.text = ss.str();
+					if (!attacker) {
+						message.text = tr.plural("cpp.combat.heal_target_none", loc, realHealthChange, {hpAmount});
+					} else if (targetPlayer == attackerPlayer) {
+						message.text = tr.plural("cpp.combat.heal_target_self", loc, realHealthChange, {hpAmount});
+					} else {
+						message.text = tr.plural("cpp.combat.heal_target_by", loc, realHealthChange, {attacker->getNameDescription(), hpAmount});
+					}
 				} else {
-					if (spectatorMessage.empty()) {
-						ss.str({});
+					auto it = spectatorHealCache.find(loc);
+					if (it != spectatorHealCache.end()) {
+						message.text = it->second;
+					} else {
 						if (!attacker && target) {
-							ss << ucfirst(target->getNameDescription()) << " was healed";
-						} else {
-							ss << ucfirst(attacker->getNameDescription()) << " healed ";
-							if (attacker == target) {
-								ss << (targetPlayer ? targetPlayer->getReflexivePronoun() : "itself");
-							} else if (target) {
-								ss << target->getNameDescription();
-							}
+							message.text = tr.plural("cpp.combat.heal_spectator_none", loc, realHealthChange, {ucfirst(target->getNameDescription()), hpAmount});
+						} else if (attacker == target) {
+							std::string reflexive = targetPlayer ? targetPlayer->getReflexivePronoun() : "itself";
+							message.text = tr.plural("cpp.combat.heal_spectator_self", loc, realHealthChange, {ucfirst(attacker->getNameDescription()), reflexive, hpAmount});
+						} else if (target) {
+							message.text = tr.plural("cpp.combat.heal_spectator_other", loc, realHealthChange, {ucfirst(attacker->getNameDescription()), target->getNameDescription(), hpAmount});
 						}
-						ss << " for " << damageString;
-						spectatorMessage = ss.str();
+						spectatorHealCache[loc] = message.text;
 					}
 					message.type = MESSAGE_HEALED_OTHERS;
-					message.text = spectatorMessage;
 				}
 				tmpPlayer->sendTextMessage(message);
 			}
@@ -7525,12 +7531,13 @@ bool Game::combatChangeHealth(const std::shared_ptr<Creature> &attacker, const s
 
 				addMagicEffect(spectators.data(), targetPos, CONST_ME_LOSEENERGY);
 
-				std::string damageString = std::to_string(manaDamage);
-
-				std::string spectatorMessage;
-
 				message.primary.value = manaDamage;
 				message.primary.color = TEXTCOLOR_BLUE;
+
+				std::unordered_map<std::string, std::string> spectatorManaCache;
+				auto &mtr = i18n::g_translator();
+				const bool manaCrit = damage.critical;
+				const std::string manaAmount = std::to_string(manaDamage);
 
 				for (const auto &spectator : spectators) {
 					const auto &tmpPlayer = spectator->getPlayer();
@@ -7538,44 +7545,44 @@ bool Game::combatChangeHealth(const std::shared_ptr<Creature> &attacker, const s
 						continue;
 					}
 
-					if (tmpPlayer == attackerPlayer && attackerPlayer != targetPlayer) {
-						ss.str({});
-						ss << ucfirst(target->getNameDescription()) << " loses " << damageString + " mana due to your " << attackMsg << ".";
+					const std::string loc(tmpPlayer->getLocale().empty() ? "en" : std::string(tmpPlayer->getLocale()));
 
+					if (tmpPlayer == attackerPlayer && attackerPlayer != targetPlayer) {
+						std::string key = manaCrit ? "cpp.combat.mana_attacker_crit" : "cpp.combat.mana_attacker";
+						std::string text = mtr.format(key, loc, {ucfirst(target->getNameDescription()), manaAmount});
 						if (!damage.exString.empty()) {
-							ss << " (" << damage.exString << ")";
+							text += " (" + damage.exString + ")";
 						}
 						message.type = MESSAGE_DAMAGE_DEALT;
-						message.text = ss.str();
+						message.text = std::move(text);
 					} else if (tmpPlayer == targetPlayer) {
-						ss.str({});
-						ss << "You lose " << damageString << " mana";
 						if (!attacker) {
-							ss << '.';
+							message.text = mtr.format("cpp.combat.mana_target_none", loc, {manaAmount});
 						} else if (targetPlayer == attackerPlayer) {
-							ss << " due to your own " << attackMsg << ".";
+							std::string key = manaCrit ? "cpp.combat.mana_target_self_crit" : "cpp.combat.mana_target_self";
+							message.text = mtr.format(key, loc, {manaAmount});
 						} else {
-							ss << " due to an " << attackMsg << " by " << attacker->getNameDescription() << '.';
+							std::string key = manaCrit ? "cpp.combat.mana_target_by_crit" : "cpp.combat.mana_target_by";
+							message.text = mtr.format(key, loc, {manaAmount, attacker->getNameDescription()});
 						}
 						message.type = MESSAGE_DAMAGE_RECEIVED;
-						message.text = ss.str();
 					} else {
-						if (spectatorMessage.empty()) {
-							ss.str({});
-							ss << ucfirst(target->getNameDescription()) << " loses " << damageString + " mana";
-							if (attacker) {
-								ss << " due to ";
-								if (attacker == target) {
-									ss << (targetPlayer ? targetPlayer->getPossessivePronoun() : "its") << " own attack";
-								} else {
-									ss << "an " << attackMsg << " by " << attacker->getNameDescription();
-								}
+						auto it = spectatorManaCache.find(loc);
+						if (it != spectatorManaCache.end()) {
+							message.text = it->second;
+						} else {
+							if (!attacker) {
+								message.text = mtr.format("cpp.combat.mana_spectator_none", loc, {ucfirst(target->getNameDescription()), manaAmount});
+							} else if (attacker == target) {
+								std::string poss = targetPlayer ? targetPlayer->getPossessivePronoun() : "its";
+								message.text = mtr.format("cpp.combat.mana_spectator_self", loc, {ucfirst(target->getNameDescription()), manaAmount, poss});
+							} else {
+								std::string key = manaCrit ? "cpp.combat.mana_spectator_by_crit" : "cpp.combat.mana_spectator_by";
+								message.text = mtr.format(key, loc, {ucfirst(target->getNameDescription()), manaAmount, attacker->getNameDescription()});
 							}
-							ss << '.';
-							spectatorMessage = ss.str();
+							spectatorManaCache[loc] = message.text;
 						}
 						message.type = MESSAGE_DAMAGE_OTHERS;
-						message.text = spectatorMessage;
 					}
 					tmpPlayer->sendTextMessage(message);
 				}
@@ -7728,12 +7735,7 @@ void Game::sendMessages(
 			}
 		}
 	}
-	std::stringstream ss;
-
-	ss << realDamage << (realDamage != 1 ? " hitpoints" : " hitpoint");
-	std::string damageString = ss.str();
-
-	std::string spectatorMessage;
+	std::unordered_map<std::string, std::string> spectatorDmgCache;
 
 	for (const std::shared_ptr<Creature> &spectator : spectators) {
 		std::shared_ptr<Player> tmpPlayer = spectator->getPlayer();
@@ -7741,14 +7743,23 @@ void Game::sendMessages(
 			continue;
 		}
 
+		const std::string loc(tmpPlayer->getLocale().empty() ? "en" : std::string(tmpPlayer->getLocale()));
+
 		if (tmpPlayer == attackerPlayer && attackerPlayer != targetPlayer) {
 			const auto &boots = tmpPlayer->getInventoryItem(CONST_SLOT_FEET);
 			bool amplifiedFatal = boots ? boots->getTier() > 0 : false;
-			buildMessageAsAttacker(target, damage, message, ss, damageString, amplifiedFatal, attackerPlayer);
+			buildMessageAsAttacker(target, damage, message, realDamage, amplifiedFatal, attackerPlayer, loc);
 		} else if (tmpPlayer == targetPlayer) {
-			buildMessageAsTarget(attacker, damage, attackerPlayer, targetPlayer, message, ss, damageString);
+			buildMessageAsTarget(attacker, damage, attackerPlayer, targetPlayer, message, realDamage, loc);
 		} else {
-			buildMessageAsSpectator(attacker, target, damage, targetPlayer, message, ss, damageString, spectatorMessage);
+			auto it = spectatorDmgCache.find(loc);
+			if (it != spectatorDmgCache.end()) {
+				message.type = MESSAGE_DAMAGE_OTHERS;
+				message.text = it->second;
+			} else {
+				buildMessageAsSpectator(attacker, target, damage, targetPlayer, message, realDamage, loc);
+				spectatorDmgCache[loc] = message.text;
+			}
 		}
 		tmpPlayer->sendTextMessage(message);
 	}
@@ -7756,98 +7767,104 @@ void Game::sendMessages(
 
 void Game::buildMessageAsSpectator(
 	const std::shared_ptr<Creature> &attacker, const std::shared_ptr<Creature> &target, const CombatDamage &damage,
-	const std::shared_ptr<Player> &targetPlayer, TextMessage &message, std::stringstream &ss,
-	const std::string &damageString, std::string &spectatorMessage
+	const std::shared_ptr<Player> &targetPlayer, TextMessage &message,
+	int32_t realDamage, const std::string &locale
 ) const {
-	if (spectatorMessage.empty()) {
-		ss.str({});
-		auto attackMsg = damage.critical ? "critical " : "";
-		auto article = damage.critical ? "a" : "an";
-		ss << ucfirst(target->getNameDescription()) << " loses " << damageString;
-		if (attacker) {
-			ss << " due to ";
-			if (attacker == target) {
-				if (targetPlayer) {
-					ss << targetPlayer->getPossessivePronoun() << " own " << attackMsg << "attack";
-				} else {
-					ss << "its own " << attackMsg << "attack";
-				}
-			} else {
-				ss << article << " " << attackMsg << "attack by " << attacker->getNameDescription();
-			}
-		}
-		ss << '.';
-		if (damage.extension) {
-			ss << " " << damage.exString;
-		}
-		spectatorMessage = ss.str();
+	auto &tr = i18n::g_translator();
+	const std::string targetName = ucfirst(target->getNameDescription());
+	const std::string amount = std::to_string(realDamage);
+
+	std::string text;
+	if (!attacker) {
+		text = tr.plural("cpp.combat.dmg_spectator_none", locale, realDamage, {targetName, amount});
+	} else if (attacker == target) {
+		std::string poss = targetPlayer ? targetPlayer->getPossessivePronoun() : "its";
+		std::string key = damage.critical ? "cpp.combat.dmg_spectator_self_crit" : "cpp.combat.dmg_spectator_self";
+		text = tr.plural(key, locale, realDamage, {targetName, amount, poss});
+	} else {
+		std::string key = damage.critical ? "cpp.combat.dmg_spectator_by_crit" : "cpp.combat.dmg_spectator_by";
+		text = tr.plural(key, locale, realDamage, {targetName, amount, attacker->getNameDescription()});
+	}
+
+	if (damage.extension) {
+		text += " " + damage.exString;
 	}
 
 	message.type = MESSAGE_DAMAGE_OTHERS;
-	message.text = spectatorMessage;
+	message.text = std::move(text);
 }
 
 void Game::buildMessageAsTarget(
 	const std::shared_ptr<Creature> &attacker, const CombatDamage &damage, const std::shared_ptr<Player> &attackerPlayer,
-	const std::shared_ptr<Player> &targetPlayer, TextMessage &message, std::stringstream &ss,
-	const std::string &damageString
+	const std::shared_ptr<Player> &targetPlayer, TextMessage &message,
+	int32_t realDamage, const std::string &locale
 ) const {
-	ss.str({});
+	auto &tr = i18n::g_translator();
+	const std::string amount = std::to_string(realDamage);
+
 	const auto &monster = attacker ? attacker->getMonster() : nullptr;
 	bool handleSoulPit = monster ? monster->getSoulPit() && monster->getForgeStack() == 40 : false;
+	bool showCrit = damage.critical && !handleSoulPit;
 
-	std::string attackMsg = damage.critical && !handleSoulPit ? "critical " : "";
-	std::string article = damage.critical && !handleSoulPit ? "a" : "an";
-
-	ss << "You lose " << damageString;
+	std::string text;
 	if (!attacker) {
-		ss << '.';
+		text = tr.plural("cpp.combat.dmg_target_none", locale, realDamage, {amount});
 	} else if (targetPlayer == attackerPlayer) {
-		ss << " due to your own " << attackMsg << "attack.";
+		std::string key = showCrit ? "cpp.combat.dmg_target_self_crit" : "cpp.combat.dmg_target_self";
+		text = tr.plural(key, locale, realDamage, {amount});
 	} else {
-		ss << " due to " << article << " " << attackMsg << "attack by " << attacker->getNameDescription() << '.';
+		std::string key = showCrit ? "cpp.combat.dmg_target_by_crit" : "cpp.combat.dmg_target_by";
+		text = tr.plural(key, locale, realDamage, {amount, attacker->getNameDescription()});
 	}
+
 	if (damage.extension) {
-		ss << " " << damage.exString;
+		text += " " + damage.exString;
 	}
 	if (handleSoulPit && damage.critical) {
-		ss << " (Soulpit Crit)";
+		text += tr.get("cpp.combat.soulpit_crit", locale);
 	}
+
 	message.type = MESSAGE_DAMAGE_RECEIVED;
-	message.text = ss.str();
+	message.text = std::move(text);
 }
 
 void Game::buildMessageAsAttacker(
 	const std::shared_ptr<Creature> &target, const CombatDamage &damage, TextMessage &message,
-	std::stringstream &ss, const std::string &damageString, bool amplified, const std::shared_ptr<Player> &attackerPlayer
+	int32_t realDamage, bool amplified, const std::shared_ptr<Player> &attackerPlayer,
+	const std::string &locale
 ) const {
-	ss.str({});
-	ss << ucfirst(target->getNameDescription()) << " loses " << damageString << " due to your " << (damage.critical ? "critical " : " ") << "attack.";
+	auto &tr = i18n::g_translator();
+	const std::string targetName = ucfirst(target->getNameDescription());
+	const std::string amount = std::to_string(realDamage);
+
+	std::string key = damage.critical ? "cpp.combat.dmg_attacker_crit" : "cpp.combat.dmg_attacker";
+	std::string text = tr.plural(key, locale, realDamage, {targetName, amount});
 
 	if (damage.critical && target->getMonster() && attackerPlayer) {
 		const auto &targetMonster = target->getMonster();
-		static const std::pair<charmRune_t, std::string_view> charms[] = {
-			{ CHARM_LOW, " (low blow charm)" },
-			{ CHARM_SAVAGE, " (savage blow charm)" }
+		static const std::pair<charmRune_t, std::string_view> charmKeys[] = {
+			{ CHARM_LOW, "cpp.combat.charm_low_blow" },
+			{ CHARM_SAVAGE, "cpp.combat.charm_savage_blow" }
 		};
 
-		for (const auto &[charmType, charmText] : charms) {
+		for (const auto &[charmType, charmKey] : charmKeys) {
 			if (targetMonster->checkCanApplyCharm(attackerPlayer, charmType)) {
-				ss << charmText;
+				text += tr.get(std::string(charmKey), locale);
 				break;
 			}
 		}
 	}
 
 	if (damage.extension) {
-		ss << " " << damage.exString;
+		text += " " + damage.exString;
 	}
 
 	if (damage.fatal) {
-		ss << (amplified ? " (Amplified Onslaught)" : " (Onslaught)");
+		text += tr.get(amplified ? "cpp.combat.amplified_onslaught" : "cpp.combat.onslaught", locale);
 	}
+
 	message.type = MESSAGE_DAMAGE_DEALT;
-	message.text = ss.str();
+	message.text = std::move(text);
 }
 
 void Game::sendEffects(
@@ -8011,27 +8028,14 @@ bool Game::combatChangeMana(const std::shared_ptr<Creature> &attacker, const std
 		realManaChange = target->getMana() - realManaChange;
 
 		if (realManaChange > 0 && !target->isInGhostMode()) {
-			std::string damageString = fmt::format("{} mana", realManaChange);
-
-			std::string spectatorMessage;
-			if (!attacker) {
-				spectatorMessage += ucfirst(target->getNameDescription());
-				spectatorMessage += " was restored for " + damageString;
-			} else {
-				spectatorMessage += ucfirst(attacker->getNameDescription());
-				spectatorMessage += " restored ";
-				if (attacker == target) {
-					spectatorMessage += (targetPlayer ? targetPlayer->getReflexivePronoun() : "itself");
-				} else {
-					spectatorMessage += target->getNameDescription();
-				}
-				spectatorMessage += " for " + damageString;
-			}
-
 			TextMessage message;
 			message.position = targetPos;
 			message.primary.value = realManaChange;
 			message.primary.color = TEXTCOLOR_MAYABLUE;
+
+			std::unordered_map<std::string, std::string> spectatorRestoreCache;
+			auto &mtr = i18n::g_translator();
+			const std::string manaAmount = std::to_string(realManaChange);
 
 			for (const auto &spectator : spectators) {
 				const auto &tmpPlayer = spectator->getPlayer();
@@ -8039,21 +8043,36 @@ bool Game::combatChangeMana(const std::shared_ptr<Creature> &attacker, const std
 					continue;
 				}
 
+				const std::string loc(tmpPlayer->getLocale().empty() ? "en" : std::string(tmpPlayer->getLocale()));
+
 				if (tmpPlayer == attackerPlayer && attackerPlayer != targetPlayer) {
 					message.type = MESSAGE_HEALED;
-					message.text = "You restored " + target->getNameDescription() + " for " + damageString;
+					message.text = mtr.format("cpp.combat.restore_attacker", loc, {target->getNameDescription(), manaAmount});
 				} else if (tmpPlayer == targetPlayer) {
 					message.type = MESSAGE_HEALED;
 					if (!attacker) {
-						message.text = "You were restored for " + damageString;
+						message.text = mtr.format("cpp.combat.restore_target_none", loc, {manaAmount});
 					} else if (targetPlayer == attackerPlayer) {
-						message.text = "You restore yourself for " + damageString;
+						message.text = mtr.format("cpp.combat.restore_target_self", loc, {manaAmount});
 					} else {
-						message.text = "You were restored by " + attacker->getNameDescription() + " for " + damageString;
+						message.text = mtr.format("cpp.combat.restore_target_by", loc, {attacker->getNameDescription(), manaAmount});
 					}
 				} else {
 					message.type = MESSAGE_HEALED_OTHERS;
-					message.text = spectatorMessage;
+					auto it = spectatorRestoreCache.find(loc);
+					if (it != spectatorRestoreCache.end()) {
+						message.text = it->second;
+					} else {
+						if (!attacker && target) {
+							message.text = mtr.format("cpp.combat.restore_spectator_none", loc, {ucfirst(target->getNameDescription()), manaAmount});
+						} else if (attacker == target) {
+							std::string reflexive = targetPlayer ? targetPlayer->getReflexivePronoun() : "itself";
+							message.text = mtr.format("cpp.combat.restore_spectator_self", loc, {ucfirst(attacker->getNameDescription()), reflexive, manaAmount});
+						} else if (target) {
+							message.text = mtr.format("cpp.combat.restore_spectator_other", loc, {ucfirst(attacker->getNameDescription()), target->getNameDescription(), manaAmount});
+						}
+						spectatorRestoreCache[loc] = message.text;
+					}
 				}
 				tmpPlayer->sendTextMessage(message);
 			}
@@ -8123,57 +8142,54 @@ bool Game::combatChangeMana(const std::shared_ptr<Creature> &attacker, const std
 
 		target->drainMana(attacker, manaLoss);
 
-		std::stringstream ss;
-
-		std::string damageString = std::to_string(manaLoss);
-
-		std::string spectatorMessage;
-
 		TextMessage message;
 		message.position = targetPos;
 		message.primary.value = manaLoss;
 		message.primary.color = TEXTCOLOR_BLUE;
+		auto &mtr = i18n::g_translator();
+		const std::string manaAmount = std::to_string(manaLoss);
+		const std::string targetName = ucfirst(target->getNameDescription());
+		std::unordered_map<std::string, std::string> spectatorManaCache;
 
 		for (const auto &spectator : spectators) {
 			const auto &tmpPlayer = spectator->getPlayer();
 			if (!tmpPlayer) {
 				continue;
 			}
+			const std::string loc(tmpPlayer->getLocale().empty() ? "en" : std::string(tmpPlayer->getLocale()));
 
 			if (tmpPlayer == attackerPlayer && attackerPlayer != targetPlayer) {
-				ss.str({});
-				ss << ucfirst(target->getNameDescription()) << " loses " << damageString << " mana due to your attack.";
 				message.type = MESSAGE_DAMAGE_DEALT;
-				message.text = ss.str();
+				const std::string key = damage.critical ? "cpp.combat.mana_attacker_crit" : "cpp.combat.mana_attacker";
+				message.text = mtr.format(key, loc, {targetName, manaAmount});
 			} else if (tmpPlayer == targetPlayer) {
-				ss.str({});
-				ss << "You lose " << damageString << "";
-				if (!attacker) {
-					ss << '.';
-				} else if (targetPlayer == attackerPlayer) {
-					ss << " due to your own attack.";
-				} else {
-					ss << " mana due to an attack by " << attacker->getNameDescription() << '.';
-				}
 				message.type = MESSAGE_DAMAGE_RECEIVED;
-				message.text = ss.str();
-			} else {
-				if (spectatorMessage.empty()) {
-					ss.str({});
-					ss << ucfirst(target->getNameDescription()) << " loses " << damageString << " mana";
-					if (attacker) {
-						ss << " due to ";
-						if (attacker == target) {
-							ss << (targetPlayer ? targetPlayer->getPossessivePronoun() : "its") << " own attack";
-						} else {
-							ss << "an attack by " << attacker->getNameDescription();
-						}
-					}
-					ss << '.';
-					spectatorMessage = ss.str();
+				if (!attacker) {
+					message.text = mtr.format("cpp.combat.mana_target_none", loc, {manaAmount});
+				} else if (targetPlayer == attackerPlayer) {
+					const std::string key = damage.critical ? "cpp.combat.mana_target_self_crit" : "cpp.combat.mana_target_self";
+					message.text = mtr.format(key, loc, {manaAmount});
+				} else {
+					const std::string key = damage.critical ? "cpp.combat.mana_target_by_crit" : "cpp.combat.mana_target_by";
+					message.text = mtr.format(key, loc, {manaAmount, attacker->getNameDescription()});
 				}
+			} else {
 				message.type = MESSAGE_DAMAGE_OTHERS;
-				message.text = spectatorMessage;
+				auto it = spectatorManaCache.find(loc);
+				if (it != spectatorManaCache.end()) {
+					message.text = it->second;
+				} else {
+					if (!attacker) {
+						message.text = mtr.format("cpp.combat.mana_spectator_none", loc, {targetName, manaAmount});
+					} else if (attacker == target) {
+						std::string possessive = targetPlayer ? targetPlayer->getPossessivePronoun() : "its";
+						message.text = mtr.format("cpp.combat.mana_spectator_self", loc, {targetName, manaAmount, possessive});
+					} else {
+						const std::string key = damage.critical ? "cpp.combat.mana_spectator_by_crit" : "cpp.combat.mana_spectator_by";
+						message.text = mtr.format(key, loc, {targetName, manaAmount, attacker->getNameDescription()});
+					}
+					spectatorManaCache[loc] = message.text;
+				}
 			}
 			tmpPlayer->sendTextMessage(message);
 		}
@@ -8560,7 +8576,7 @@ void Game::playerInviteToParty(uint32_t playerId, uint32_t invitedId) {
 
 	if (invitedPlayer->getParty()) {
 		std::ostringstream ss;
-		ss << invitedPlayer->getName() << " is already in a party.";
+		{ const std::string loc(player->getLocale().empty() ? "en" : std::string(player->getLocale())); auto &tr = i18n::g_translator(); ss << tr.format("cpp.game.already_in_party", loc, {invitedPlayer->getName()}); }
 		player->sendTextMessage(MESSAGE_PARTY_MANAGEMENT, ss.str());
 		return;
 	}
@@ -8603,7 +8619,7 @@ void Game::playerJoinParty(uint32_t playerId, uint32_t leaderId) {
 	}
 
 	if (player->getParty()) {
-		player->sendTextMessage(MESSAGE_PARTY_MANAGEMENT, "You are already in a party.");
+		player->sendLocalizedTextMessage(MESSAGE_PARTY_MANAGEMENT, "server.game.msg_21");
 		return;
 	}
 
@@ -8656,7 +8672,7 @@ void Game::playerLeaveParty(uint32_t playerId) {
 
 	std::shared_ptr<Party> party = player->getParty();
 	if (!party || (player->hasCondition(CONDITION_INFIGHT) && !player->getZoneType() == ZONE_PROTECTION)) {
-		player->sendTextMessage(TextMessage(MESSAGE_FAILURE, "You cannot leave party, contact the administrator."));
+		player->sendLocalizedTextMessage(MESSAGE_FAILURE, "server.game.msg_22");
 		return;
 	}
 
@@ -8686,7 +8702,7 @@ void Game::sendGuildMotd(uint32_t playerId) {
 
 	const auto guild = player->getGuild();
 	if (guild) {
-		player->sendChannelMessage("Message of the Day", guild->getMotd(), TALKTYPE_CHANNEL_R1, CHANNEL_GUILD);
+		{ const std::string loc(player->getLocale().empty() ? "en" : std::string(player->getLocale())); player->sendChannelMessage(i18n::g_translator().get("cpp.game.guild_motd_title", loc), guild->getMotd(), TALKTYPE_CHANNEL_R1, CHANNEL_GUILD); }
 	}
 }
 
@@ -8891,12 +8907,30 @@ void Game::processHighscoreResults(const DBResult_ptr &result, uint32_t playerID
 	} else {
 		std::vector<HighscoreCharacter> characters;
 		characters.reserve(result->countResults());
+		std::unordered_map<uint32_t, std::string> onlineLoyaltyTitleByGuid;
+		onlineLoyaltyTitleByGuid.reserve(players.size());
+		for (const auto &[playerId, onlinePlayer] : players) {
+			(void)playerId;
+			if (!onlinePlayer) {
+				continue;
+			}
+
+			const std::string loyaltyTitle = onlinePlayer->getLoyaltyTitle();
+			if (!loyaltyTitle.empty()) {
+				onlineLoyaltyTitleByGuid.emplace(onlinePlayer->getGUID(), loyaltyTitle);
+			}
+		}
+
 		if (result) {
 			do {
 				const auto &voc = g_vocations().getVocation(result->getNumber<uint16_t>("vocation"));
+				const uint32_t characterGuid = result->getNumber<uint32_t>("id");
 				uint8_t characterVocation = voc ? voc->getClientId() : 0;
-				std::string loyaltyTitle; // todo get loyalty title from player
-				characters.emplace_back(std::move(result->getString("name")), result->getNumber<uint64_t>("points"), result->getNumber<uint32_t>("id"), result->getNumber<uint32_t>("rank"), result->getNumber<uint16_t>("level"), characterVocation, loyaltyTitle);
+				std::string loyaltyTitle;
+				if (const auto itLoyalty = onlineLoyaltyTitleByGuid.find(characterGuid); itLoyalty != onlineLoyaltyTitleByGuid.end()) {
+					loyaltyTitle = itLoyalty->second;
+				}
+				characters.emplace_back(std::move(result->getString("name")), result->getNumber<uint64_t>("points"), characterGuid, result->getNumber<uint32_t>("rank"), result->getNumber<uint16_t>("level"), characterVocation, loyaltyTitle);
 			} while (result->next());
 		}
 
@@ -9149,6 +9183,8 @@ void Game::playerBrowseMarketOwnHistory(uint32_t playerId) {
 }
 
 namespace {
+	constexpr std::string_view marketInvalidItemMessageKey = "cpp.game.market_item_not_correct";
+
 	bool removeOfferItems(const std::shared_ptr<Player> &player, const std::shared_ptr<DepotLocker> &depotLocker, const ItemType &itemType, uint16_t amount, uint8_t tier, std::ostringstream &offerStatus) {
 		uint16_t removeAmount = amount;
 		if (
@@ -9202,7 +9238,7 @@ namespace {
 
 			if (removedCount < removeAmount) {
 				g_logger().error("Player {} tried to sell an item {} without this item", player->getName(), itemType.id);
-				offerStatus << "The item you tried to market is not correct. Check the item again.";
+				offerStatus << marketInvalidItemMessageKey;
 				return false;
 			}
 		}
@@ -9221,9 +9257,9 @@ namespace {
 		);
 		if (returnValue != RETURNVALUE_NOERROR) {
 			if (actuallyAdded == 0) {
-				recipient->sendTextMessage(MESSAGE_MARKET, fmt::format("Not enough space in your inbox."));
+				recipient->sendLocalizedTextMessage(MESSAGE_MARKET, "server.game.msg_31");
 			} else {
-				recipient->sendTextMessage(MESSAGE_MARKET, fmt::format("Not enough space in your inbox to all items, processed only {} items.", actuallyAdded));
+				recipient->sendLocalizedTextMessage(MESSAGE_MARKET, "server.game.msg_32", { std::to_string(actuallyAdded) });
 				g_logger().warn("{} - Failed to add item {} total amount {}, currently added: {} to inbox for player {}, error code: {}", __FUNCTION__, itemId, amount, actuallyAdded, recipient->getName(), getReturnMessage(returnValue));
 			}
 		}
@@ -9284,7 +9320,7 @@ bool checkCanInitCreateMarketOffer(const std::shared_ptr<Player> &player, uint8_
 	g_logger().debug("{} - Offer amount: {}", __FUNCTION__, amount);
 
 	if (g_configManager().getBoolean(MARKET_PREMIUM) && !player->isPremium()) {
-		player->sendTextMessage(MESSAGE_MARKET, "Only premium accounts may create offers for that object.");
+		player->sendLocalizedTextMessage(MESSAGE_MARKET, "server.game.msg_23");
 		return false;
 	}
 
@@ -9345,6 +9381,11 @@ void Game::playerCreateMarketOffer(uint32_t playerId, uint8_t type, uint16_t ite
 			player->getAccount()->removeCoins(CoinType::Transferable, static_cast<uint32_t>(amount), "");
 		} else {
 			if (!removeOfferItems(player, depotLocker, it, amount, tier, offerStatus)) {
+				if (offerStatus.str() == marketInvalidItemMessageKey) {
+					player->sendLocalizedTextMessage(MESSAGE_MARKET, std::string(marketInvalidItemMessageKey));
+				} else {
+					player->sendLocalizedTextMessage(MESSAGE_MARKET, "server.game.msg_24");
+				}
 				g_logger().error("[{}] failed to remove item with id {}, from player {}, errorcode: {}", __FUNCTION__, it.id, player->getName(), offerStatus.str());
 				return;
 			}
@@ -9370,10 +9411,10 @@ void Game::playerCreateMarketOffer(uint32_t playerId, uint8_t type, uint16_t ite
 	// If there is any error, then we will send the log and block the creation of the offer to avoid clone of items
 	// The player may lose the item as it will have already been removed, but will not clone
 	if (!offerStatus.str().empty()) {
-		if (offerStatus.str() == "The item you tried to market is not correct. Check the item again.") {
-			player->sendTextMessage(MESSAGE_MARKET, offerStatus.str());
+		if (offerStatus.str() == marketInvalidItemMessageKey) {
+			player->sendLocalizedTextMessage(MESSAGE_MARKET, std::string(marketInvalidItemMessageKey));
 		} else {
-			player->sendTextMessage(MESSAGE_MARKET, "There was an error processing your offer, please contact the administrator.");
+			player->sendLocalizedTextMessage(MESSAGE_MARKET, "server.game.msg_24");
 		}
 		g_logger().error("{} - Player {} had an error creating an offer on the market, error code: {}", __FUNCTION__, player->getName(), offerStatus.str());
 		return;
@@ -9512,6 +9553,9 @@ void Game::playerAcceptMarketOffer(uint32_t playerId, uint32_t timestamp, uint16
 	const auto &playerInbox = player->getInbox();
 
 	uint64_t totalPrice = offer.price * amount;
+	auto &marketTr = i18n::g_translator();
+	const std::string marketCoinPurchasedDetail = marketTr.get("cpp.game.market_coin_transaction_purchased", "en");
+	const std::string marketCoinSoldDetail = marketTr.get("cpp.game.market_coin_transaction_sold", "en");
 
 	// The player has an offer to by something and someone is going to sell to item type
 	// so the market action is 'buy' as who created the offer is buying.
@@ -9530,13 +9574,13 @@ void Game::playerAcceptMarketOffer(uint32_t playerId, uint32_t timestamp, uint16
 
 		const auto &buyerPlayerAccount = buyerPlayer->getAccount();
 		if (!buyerPlayerAccount) {
-			player->sendTextMessage(MESSAGE_MARKET, "Cannot accept offer.");
+			player->sendLocalizedTextMessage(MESSAGE_MARKET, "server.game.msg_25");
 			return;
 		}
 
 		const auto &playerAccount = player->getAccount();
 		if (player == buyerPlayer || playerAccount == buyerPlayerAccount) {
-			player->sendTextMessage(MESSAGE_MARKET, "You cannot accept your own offer.");
+			player->sendLocalizedTextMessage(MESSAGE_MARKET, "server.game.msg_26");
 			return;
 		}
 
@@ -9558,11 +9602,17 @@ void Game::playerAcceptMarketOffer(uint32_t playerId, uint32_t timestamp, uint16
 			playerAccount->removeCoins(
 				CoinType::Transferable,
 				amount,
-				"Sold on Market"
+				marketCoinSoldDetail
 			);
 		} else {
 			if (!removeOfferItems(player, depotLocker, it, amount, offer.tier, offerStatus)) {
+				if (offerStatus.str() == marketInvalidItemMessageKey) {
+					player->sendLocalizedTextMessage(MESSAGE_MARKET, std::string(marketInvalidItemMessageKey));
+				} else {
+					player->sendLocalizedTextMessage(MESSAGE_MARKET, "server.game.msg_27");
+				}
 				g_logger().error("[{}] failed to remove item with id {}, from player {}, errorcode: {}", __FUNCTION__, it.id, player->getName(), offerStatus.str());
+				player->sendMarketEnter(player->getLastDepotId());
 				return;
 			}
 		}
@@ -9570,10 +9620,10 @@ void Game::playerAcceptMarketOffer(uint32_t playerId, uint32_t timestamp, uint16
 		// If there is any error, then we will send the log and block the creation of the offer to avoid clone of items
 		// The player may lose the item as it will have already been removed, but will not clone
 		if (!offerStatus.str().empty()) {
-			if (offerStatus.str() == "The item you tried to market is not correct. Check the item again.") {
-				player->sendTextMessage(MESSAGE_MARKET, offerStatus.str());
+			if (offerStatus.str() == marketInvalidItemMessageKey) {
+				player->sendLocalizedTextMessage(MESSAGE_MARKET, std::string(marketInvalidItemMessageKey));
 			} else {
-				player->sendTextMessage(MESSAGE_MARKET, "There was an error processing your offer, please contact the administrator.");
+				player->sendLocalizedTextMessage(MESSAGE_MARKET, "server.game.msg_27");
 			}
 			g_logger().error("{} - Player {} had an error creating an offer on the market, error code: {}", __FUNCTION__, player->getName(), offerStatus.str());
 			player->sendMarketEnter(player->getLastDepotId());
@@ -9584,7 +9634,7 @@ void Game::playerAcceptMarketOffer(uint32_t playerId, uint32_t timestamp, uint16
 		g_metrics().addCounter("balance_increase", totalPrice, { { "player", player->getName() }, { "context", "market_sale" } });
 
 		if (it.id == ITEM_STORE_COIN) {
-			buyerPlayer->getAccount()->addCoins(CoinType::Transferable, amount, "Purchased on Market");
+			buyerPlayer->getAccount()->addCoins(CoinType::Transferable, amount, marketCoinPurchasedDetail);
 		} else {
 			uint16_t processedAmount = amount;
 			uint64_t effectivePrice = offer.price * processedAmount;
@@ -9604,7 +9654,7 @@ void Game::playerAcceptMarketOffer(uint32_t playerId, uint32_t timestamp, uint16
 		}
 
 		if (player == sellerPlayer || player->getAccount() == sellerPlayer->getAccount()) {
-			player->sendTextMessage(MESSAGE_MARKET, "You cannot accept your own offer.");
+			player->sendLocalizedTextMessage(MESSAGE_MARKET, "server.game.msg_28");
 			return;
 		}
 
@@ -9624,7 +9674,7 @@ void Game::playerAcceptMarketOffer(uint32_t playerId, uint32_t timestamp, uint16
 		g_metrics().addCounter("balance_decrease", totalPrice, { { "player", player->getName() }, { "context", "market_purchase" } });
 
 		if (it.id == ITEM_STORE_COIN) {
-			player->getAccount()->addCoins(CoinType::Transferable, amount, "Purchased on Market");
+			player->getAccount()->addCoins(CoinType::Transferable, amount, marketCoinPurchasedDetail);
 		} else {
 			uint16_t processedAmount = amount;
 			uint64_t effectivePrice = offer.price * processedAmount;
@@ -9636,7 +9686,7 @@ void Game::playerAcceptMarketOffer(uint32_t playerId, uint32_t timestamp, uint16
 		sellerPlayer->setBankBalance(sellerPlayer->getBankBalance() + totalPrice);
 		g_metrics().addCounter("balance_increase", totalPrice, { { "player", sellerPlayer->getName() }, { "context", "market_sale" } });
 		if (it.id == ITEM_STORE_COIN) {
-			sellerPlayer->getAccount()->registerCoinTransaction(CoinTransactionType::Remove, CoinType::Transferable, amount, "Sold on Market");
+			sellerPlayer->getAccount()->registerCoinTransaction(CoinTransactionType::Remove, CoinType::Transferable, amount, marketCoinSoldDetail);
 		}
 
 		if (it.id != ITEM_STORE_COIN) {
@@ -9652,7 +9702,7 @@ void Game::playerAcceptMarketOffer(uint32_t playerId, uint32_t timestamp, uint16
 	player->sendMarketEnter(player->getLastDepotId());
 
 	if (!offerStatus.str().empty()) {
-		player->sendTextMessage(MESSAGE_MARKET, "There was an error processing your offer, please contact the administrator.");
+		player->sendLocalizedTextMessage(MESSAGE_MARKET, "server.game.msg_29");
 		g_logger().error("{} - Player {} had an error accepting an offer on the market, error code: {}", __FUNCTION__, player->getName(), offerStatus.str());
 		return;
 	}
@@ -9704,7 +9754,20 @@ void Game::sendOfflineTrainingDialog(const std::shared_ptr<Player> &player) {
 	}
 
 	if (!player->hasModalWindowOpen(offlineTrainingWindow.id)) {
-		player->sendModalWindow(offlineTrainingWindow);
+		ModalWindow localizedWindow = offlineTrainingWindow;
+		const std::string loc(player->getLocale().empty() ? "en" : std::string(player->getLocale()));
+		auto &tr = i18n::g_translator();
+		localizedWindow.title = tr.get(localizedWindow.title, loc);
+		localizedWindow.message = tr.get(localizedWindow.message, loc);
+
+		for (auto &button : localizedWindow.buttons) {
+			button.first = tr.get(button.first, loc);
+		}
+		for (auto &choice : localizedWindow.choices) {
+			choice.first = tr.get(choice.first, loc);
+		}
+
+		player->sendModalWindow(localizedWindow);
 	}
 }
 
@@ -9731,7 +9794,7 @@ void Game::playerAnswerModalWindow(uint32_t playerId, uint32_t modalWindowId, ui
 				}
 			}
 		} else {
-			player->sendTextMessage(MESSAGE_EVENT_ADVANCE, "Offline training aborted.");
+			player->sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "server.game.msg_30");
 		}
 
 		player->setBedItem(nullptr);
@@ -9932,14 +9995,14 @@ void Game::playerSetMonsterPodium(uint32_t playerId, uint32_t monsterRaceId, con
 
 	// Change Podium name
 	if (monsterVisible) {
-		std::ostringstream name;
-		item->removeAttribute(ItemAttribute_t::NAME);
-		name << item->getName() << " displaying ";
-		if (changeTentuglyName) {
-			name << "Tentugly";
-		} else {
-			name << mType->name;
-		}
+			std::ostringstream name;
+			item->removeAttribute(ItemAttribute_t::NAME);
+			name << item->getName() << " displaying ";
+			if (changeTentuglyName) {
+				name << i18n::g_translator().get("cpp.game.tentugly_name", "en");
+			} else {
+				name << mType->name;
+			}
 		item->setAttribute(ItemAttribute_t::NAME, name.str());
 	} else {
 		item->removeAttribute(ItemAttribute_t::NAME);
@@ -10750,7 +10813,8 @@ bool Game::addItemStoreInbox(const std::shared_ptr<Player> &player, uint32_t ite
 		return false;
 	}
 	const ItemType &itemType = Item::items[itemId];
-	std::string description = fmt::format("You bought this item in the Store.\nUnwrap it in your own house to create a <{}>.", itemType.name);
+	auto &storeTr = i18n::g_translator();
+	std::string description = storeTr.format("cpp.game.store_item_description", "en", {itemType.name});
 	decoKit->setAttribute(ItemAttribute_t::DESCRIPTION, description);
 	decoKit->setCustomAttribute("unWrapId", static_cast<int64_t>(itemId));
 

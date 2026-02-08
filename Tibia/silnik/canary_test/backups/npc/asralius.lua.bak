@@ -26,8 +26,8 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Let me speak a few words to you." },
-	{ text = "Death comes to the best of us, but this time you had no chance." },
+	{ i18nKey = "npc.asralius.voice_1" },
+	{ i18nKey = "npc.asralius.voice_2" },
 }
 
 local keywordHandler = KeywordHandler:new()

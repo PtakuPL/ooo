@@ -48,6 +48,7 @@ private:
 	static int luaSystemTime(lua_State* L);
 	static int luaGetFormattedTimeRemaining(lua_State* L);
 	static int luaReportError(lua_State* L);
+	static int luaI18nTranslate(lua_State* L); // I18N
 
 	static bool getArea(lua_State* L, std::list<uint32_t> &list, uint32_t &rows);
 };

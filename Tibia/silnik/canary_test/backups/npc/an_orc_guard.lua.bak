@@ -21,8 +21,8 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Grrrr." },
-	{ text = "Fetchi maruk buta." },
+	{ i18nKey = "npc.an_orc_guard.voice_1" },
+	{ i18nKey = "npc.an_orc_guard.voice_2" },
 }
 
 local keywordHandler = KeywordHandler:new()

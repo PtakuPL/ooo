@@ -58,8 +58,8 @@ keywordHandler:addKeyword({ "brother" }, StdModule.say, { npcHandler = npcHandle
 keywordHandler:addKeyword({ "savage" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.gelagos.stdmod_6" })
 keywordHandler:addKeyword({ "cyclops" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.gelagos.stdmod_7" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Hehehe.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Hope you die and lose it.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.gelagos.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.gelagos.farewell_msg_1")
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 
 -- npcType registering the npcConfig table

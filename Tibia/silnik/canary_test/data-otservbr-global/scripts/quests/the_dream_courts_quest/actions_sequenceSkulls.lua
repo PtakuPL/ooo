@@ -8,19 +8,19 @@ local sequence = {
 		id = 29988,
 		number = 0,
 		position = Position(32071, 31977, 14),
-		msg = "You put the minotaur skull into the coffin within the minotaur skeleton. One of the door's locks clicks.",
+		msg = "quests.dream_courts.skull_minotaur",
 	},
 	[2] = {
 		id = 29989,
 		number = 1,
 		position = Position(32074, 31977, 14),
-		msg = "You put the orc skull into the coffin within the orc skeleton. One of the door's locks clicks.",
+		msg = "quests.dream_courts.skull_orc",
 	},
 	[3] = {
 		id = 29990,
 		number = 2,
 		position = Position(32077, 31977, 14),
-		msg = "You put the minotaur skull into the coffin within the minotaur skeleton. One of the door's locks clicks.",
+		msg = "quests.dream_courts.skull_minotaur",
 	},
 }
 
@@ -43,7 +43,7 @@ function actions_sequenceSkulls.onUse(player, item, fromPosition, target, toPosi
 				if player:getStorageValue(sequenceSkulls) == skull.number then
 					player:setStorageValue(sequenceSkulls, player:getStorageValue(sequenceSkulls) + 1)
 					tPos:sendMagicEffect(CONST_ME_MAGIC_GREEN)
-					player:sendTextMessage(MESSAGE_EVENT_ADVANCE, skull.msg)
+					player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, skull.msg)
 					item:remove(1)
 					if player:getStorageValue(sequenceSkulls) == 3 then
 						player:setStorageValue(Count, player:getStorageValue(Count) + 1)

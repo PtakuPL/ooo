@@ -10,27 +10,27 @@ poison:setParameter(CONDITION_PARAM_TICKINTERVAL, 4000)
 poison:setParameter(CONDITION_PARAM_FORCEUPDATE, true)
 
 local fluidMessage = {
-	[FLUID_NONE] = "Gulp.", -- water 0
-	[FLUID_WATER] = "Gulp.", -- water 1
-	[FLUID_WINE] = "Aah...", -- wine 2
-	[FLUID_BEER] = "Aah...", -- beer 3
-	[FLUID_MUD] = "Gulp.", -- mud 4
-	[FLUID_BLOOD] = "Gulp.", -- blood 5
-	[FLUID_SLIME] = "Urgh!", -- slime 6
-	[FLUID_OIL] = "Gulp.", -- oil 7
-	[FLUID_URINE] = "Urgh!", -- urine 8
-	[FLUID_MILK] = "Gulp.", -- milk 9
-	[FLUID_MANA] = "Aaaah...", -- mana fluid 10
-	[FLUID_LIFE] = "Aaaah...", -- life fluid 11
-	[FLUID_LEMONADE] = "Mmmh.", -- lemonade 12
-	[FLUID_RUM] = "Aah...", -- rum 13
-	[FLUID_FRUITJUICE] = "Mmmh.", -- fruit juice 14
-	[FLUID_COCONUTMILK] = "Mmmh.", -- coconut milk 15
-	[FLUID_MEAD] = "Aah...", -- mead 16
-	[FLUID_TEA] = "Gulp.", -- tea 17
-	[FLUID_INK] = "Urgh!", -- ink 18
-	[FLUID_CANDY] = "Mmmh.", -- candy fluid 19
-	[FLUID_CHOCOLATE] = "Mmmh.", -- chocolate 20
+	[FLUID_NONE] = "scripts.fluids.msg_1", -- water 0
+	[FLUID_WATER] = "scripts.fluids.msg_1", -- water 1
+	[FLUID_WINE] = "scripts.fluids.msg_2", -- wine 2
+	[FLUID_BEER] = "scripts.fluids.msg_2", -- beer 3
+	[FLUID_MUD] = "scripts.fluids.msg_1", -- mud 4
+	[FLUID_BLOOD] = "scripts.fluids.msg_1", -- blood 5
+	[FLUID_SLIME] = "scripts.fluids.msg_3", -- slime 6
+	[FLUID_OIL] = "scripts.fluids.msg_1", -- oil 7
+	[FLUID_URINE] = "scripts.fluids.msg_3", -- urine 8
+	[FLUID_MILK] = "scripts.fluids.msg_1", -- milk 9
+	[FLUID_MANA] = "scripts.fluids.msg_4", -- mana fluid 10
+	[FLUID_LIFE] = "scripts.fluids.msg_4", -- life fluid 11
+	[FLUID_LEMONADE] = "scripts.fluids.msg_5", -- lemonade 12
+	[FLUID_RUM] = "scripts.fluids.msg_2", -- rum 13
+	[FLUID_FRUITJUICE] = "scripts.fluids.msg_5", -- fruit juice 14
+	[FLUID_COCONUTMILK] = "scripts.fluids.msg_5", -- coconut milk 15
+	[FLUID_MEAD] = "scripts.fluids.msg_2", -- mead 16
+	[FLUID_TEA] = "scripts.fluids.msg_1", -- tea 17
+	[FLUID_INK] = "scripts.fluids.msg_3", -- ink 18
+	[FLUID_CANDY] = "scripts.fluids.msg_5", -- candy fluid 19
+	[FLUID_CHOCOLATE] = "scripts.fluids.msg_5", -- chocolate 20
 }
 
 local function graveStoneTeleport(cid, fromPosition, toPosition)
@@ -135,7 +135,7 @@ function fluid.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 				fromPosition:sendMagicEffect(CONST_ME_MAGIC_BLUE)
 			end
 
-			player:say(fluidMessage[item.type] or "Gulp.", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized(fluidMessage[item.type] or "scripts.fluids.gulp", TALKTYPE_MONSTER_SAY)
 			item:transform(item.itemid, 0)
 		else
 			local pool = Game.createItem(2886, item.type, toPosition)

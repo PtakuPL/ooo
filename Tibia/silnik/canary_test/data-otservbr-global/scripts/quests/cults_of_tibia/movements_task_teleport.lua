@@ -2,13 +2,13 @@ local setting = {
 	[32415] = {
 		storage = Storage.Quest.U11_40.CultsOfTibia.Humans.Decaying,
 		max = 10,
-		text = "You absorb the energetic remains of this decaying soul. Its power is very fragile and fleeting",
+		text = "quests.cults_of_tibia.task_teleport_say_1",
 		effect = CONST_ME_GREEN_ENERGY_SPARK,
 	},
 	[32414] = {
 		storage = Storage.Quest.U11_40.CultsOfTibia.Humans.Vaporized,
 		max = 10,
-		text = "You absorb the energetic remains of this whitering soul. Its power is very fragile and fleeting.",
+		text = "quests.cults_of_tibia.task_teleport_say_2",
 		effect = CONST_ME_BLUE_ENERGY_SPARK,
 	},
 }
@@ -42,7 +42,7 @@ function taskTeleport.onStepIn(creature, item, position, fromPosition)
 			player:setStorageValue(value.storage, storage + 1)
 			player:getPosition():sendMagicEffect(value.effect)
 			teleport:remove()
-			player:say(value.text, TALKTYPE_MONSTER_SAY)
+			player:sayLocalized(value.text, TALKTYPE_MONSTER_SAY)
 		end
 	end
 	return true

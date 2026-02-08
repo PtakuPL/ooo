@@ -61,27 +61,27 @@ local function greetCallback(npc, creature)
 	end
 	return true
 end
-local randomMessages = {
+local randomMessageKeys = {
 	straight = {
-		"STRAIGHT AHED! WE GOT FOLLOWING WINDS, LETS'S GO!!",
-		"STRAIGHT AHED!! WHY DOES THIS TAKE SO LONG?!? HURRY UP!",
-		"LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-		"GO GO GO, SEA SERPENT STRAIGHT AHEAD!!",
-		"SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
+		"npc.captain_haba_open_sea.straight_1",
+		"npc.captain_haba_open_sea.straight_2",
+		"npc.captain_haba_open_sea.straight_3",
+		"npc.captain_haba_open_sea.straight_4",
+		"npc.captain_haba_open_sea.straight_5",
 	},
 	starboard = {
-		"SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-		"LOOKOUT REPORTS SEA SERPENT ON SIGHT!! SEA SERPENT ON THE STARBOARD SIEDE!!",
-		"COME ON YOU LAZY FOOLS!! SEA SERPENT ON THE STARBOARD SIDE!!",
-		"GO GO GO, SEA SERPENT ON THE STARBOARD SIDE!!",
-		"CHANGE COURSE TO STARBOARD!! WHY DOES THIS TAKE SO LONG?!? HURRY UP!",
+		"npc.captain_haba_open_sea.starboard_1",
+		"npc.captain_haba_open_sea.starboard_2",
+		"npc.captain_haba_open_sea.starboard_3",
+		"npc.captain_haba_open_sea.starboard_4",
+		"npc.captain_haba_open_sea.starboard_5",
 	},
 	larboard = {
-		"SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-		"SEA SERPENT AHEAD!! LARBOARD SIDE!!",
-		"SEA SERPENT ON SIGHT!! TO THE LARBOARD SIDE, FAST!",
-		"LARBOARD!! THY DOES THIS TAKE SO LONG?!? LET'S GET IT ON!",
-		"LET'S GO YOU LAZY FOOLS. WE GOT A SEA SERPENT TO CATCH! TO LARBOARD SIDE, GO, GO, GO!",
+		"npc.captain_haba_open_sea.larboard_1",
+		"npc.captain_haba_open_sea.larboard_2",
+		"npc.captain_haba_open_sea.larboard_3",
+		"npc.captain_haba_open_sea.larboard_4",
+		"npc.captain_haba_open_sea.larboard_5",
 	},
 }
 local function creatureSayCallback(npc, creature, type, message)
@@ -92,7 +92,6 @@ local function creatureSayCallback(npc, creature, type, message)
 		return false
 	end
 
-	local randomMessagesResult
 	if MsgContains(message, "instructions") then
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.captain_haba_open_sea.multi_3")
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.captain_haba_open_sea.multi_4")
@@ -109,8 +108,8 @@ local function creatureSayCallback(npc, creature, type, message)
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.captain_haba_open_sea.multi_2")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message:lower(), "straight") then
-		randomMessagesResult = randomMessages.straight[math.random(#randomMessages.straight)]
-		npcHandler:say(randomMessagesResult, npc, creature)
+		local key = randomMessageKeys.straight[math.random(#randomMessageKeys.straight)]
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, key)
 		if player:getStorageValue(Storage.Quest.U8_2.TheHuntForTheSeaSerpent.Direction) == 1 then
 			player:setStorageValue(Storage.Quest.U8_2.TheHuntForTheSeaSerpent.SuccessSwitch, 1)
 			player:setStorageValue(Storage.Quest.U8_2.TheHuntForTheSeaSerpent.Direction, 0)
@@ -119,8 +118,8 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U8_2.TheHuntForTheSeaSerpent.Direction, 0)
 		end
 	elseif MsgContains(message:lower(), "starboard") then
-		randomMessagesResult = randomMessages.starboard[math.random(#randomMessages.starboard)]
-		npcHandler:say(randomMessagesResult, npc, creature)
+		local key = randomMessageKeys.starboard[math.random(#randomMessageKeys.starboard)]
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, key)
 		if player:getStorageValue(Storage.Quest.U8_2.TheHuntForTheSeaSerpent.Direction) == 2 then
 			player:setStorageValue(Storage.Quest.U8_2.TheHuntForTheSeaSerpent.SuccessSwitch, 1)
 			player:setStorageValue(Storage.Quest.U8_2.TheHuntForTheSeaSerpent.Direction, 0)
@@ -129,8 +128,8 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U8_2.TheHuntForTheSeaSerpent.Direction, 0)
 		end
 	elseif MsgContains(message:lower(), "larboard") then
-		randomMessagesResult = randomMessages.larboard[math.random(#randomMessages.larboard)]
-		npcHandler:say(randomMessagesResult, npc, creature)
+		local key = randomMessageKeys.larboard[math.random(#randomMessageKeys.larboard)]
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, key)
 		if player:getStorageValue(Storage.Quest.U8_2.TheHuntForTheSeaSerpent.Direction) == 3 then
 			player:setStorageValue(Storage.Quest.U8_2.TheHuntForTheSeaSerpent.SuccessSwitch, 1)
 			player:setStorageValue(Storage.Quest.U8_2.TheHuntForTheSeaSerpent.Direction, 0)

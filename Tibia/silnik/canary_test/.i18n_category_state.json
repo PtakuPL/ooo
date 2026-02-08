@@ -1,55 +1,49 @@
 {
   "skip_until": {
-    "npc": 1765965999.8994849,
-    "scripts": 1765967433.3161507,
-    "monsters": 1765968051.4173195,
-    "actions": 1765966230.3931904,
-    "quests": 1765966239.3058949,
-    "raids": 1765966247.9581125,
-    "world": 1765967474.0396717,
-    "spells": 1765967483.3023405,
-    "talkactions": 1765967492.0606544,
-    "movements": 1765967500.9279718,
-    "creaturescripts": 1765967509.9869711,
-    "globalevents": 1765967519.4048953,
-    "mounts": 1765968186.5395372,
-    "libs": 1765967560.1945305,
-    "events": 1765967811.084914,
-    "chatchannels": 1765967820.6620967,
-    "modules": 1765954881.3465712,
-    "startup": 1765954883.982409,
-    "npclib": 1765954891.2007701,
-    "dataroot": 1765954893.4171572,
-    "cpp": 1765955206.5254543,
-    "otclient_modules": 1765967601.0357666,
-    "otclient_mods": 1765954918.239609,
-    "otclient_data": 1765967612.6246326,
-    "otclient_src": 1765954930.4491873,
-    "otclient_tools": 1765954937.7025886,
-    "server": 1765954941.7744484,
-    "errors": 1765954947.6153712,
-    "items": 1765968797.621003
+    "npc": 1766333681.8778424,
+    "scripts": 1766333705.2544873,
+    "actions": 1766332862.5758169,
+    "quests": 1766333417.969024,
+    "spells": 1766334948.7437356,
+    "talkactions": 1766334956.5501142,
+    "movements": 1766334965.6019456,
+    "creaturescripts": 1766334973.743521,
+    "globalevents": 1766334982.0926607,
+    "mounts": 1766335583.856596,
+    "libs": 1766335728.7206404,
+    "events": 1766335737.693797,
+    "chatchannels": 1766335746.132332,
+    "modules": 1766335756.25121,
+    "npclib": 1766335767.3992062,
+    "dataroot": 1766335775.8804386,
+    "cpp": 1766335787.6348054,
+    "otclient_modules": 1766335795.6398284,
+    "otclient_data": 1766335835.5933478,
+    "otclient_src": 1766335843.7979543,
+    "otclient_tools": 1766335852.7642105,
+    "server": 1766335861.0207076,
+    "errors": 1766335869.026305
   },
   "last_processed": {
     "npc": {
       "count": 0,
-      "timestamp": 1765958799.899481
+      "timestamp": 1766326481.8778389
     },
     "scripts": {
       "count": 0,
-      "timestamp": 1765960233.316147
+      "timestamp": 1766326505.254484
     },
     "monsters": {
-      "count": 0,
-      "timestamp": 1765960851.4173157
+      "count": 87,
+      "timestamp": 1766297363.658293
     },
     "actions": {
       "count": 0,
-      "timestamp": 1765959030.393187
+      "timestamp": 1766325662.5758138
     },
     "quests": {
       "count": 0,
-      "timestamp": 1765959039.305891
+      "timestamp": 1766326217.9690206
     },
     "raids": {
       "count": 0,
@@ -61,47 +55,47 @@
     },
     "spells": {
       "count": 0,
-      "timestamp": 1765960283.302337
+      "timestamp": 1766327748.7437322
     },
     "talkactions": {
       "count": 0,
-      "timestamp": 1765960292.0606508
+      "timestamp": 1766327756.5501096
     },
     "movements": {
       "count": 0,
-      "timestamp": 1765960300.9279678
+      "timestamp": 1766327765.601941
     },
     "creaturescripts": {
       "count": 0,
-      "timestamp": 1765960309.986967
+      "timestamp": 1766327773.7435174
     },
     "globalevents": {
       "count": 0,
-      "timestamp": 1765960319.4048903
+      "timestamp": 1766327782.0926569
     },
     "items": {
-      "count": 0,
-      "timestamp": 1765961597.620999
+      "count": 12,
+      "timestamp": 1766300360.3580143
     },
     "mounts": {
       "count": 0,
-      "timestamp": 1765960986.5395336
+      "timestamp": 1766328383.8565922
     },
     "libs": {
       "count": 0,
-      "timestamp": 1765960360.194527
+      "timestamp": 1766328528.720637
     },
     "events": {
       "count": 0,
-      "timestamp": 1765960611.0849104
+      "timestamp": 1766328537.6937847
     },
     "chatchannels": {
       "count": 0,
-      "timestamp": 1765960620.6620934
+      "timestamp": 1766328546.1323287
     },
     "modules": {
       "count": 0,
-      "timestamp": 1765954581.3465674
+      "timestamp": 1766328556.2512066
     },
     "startup": {
       "count": 0,
@@ -109,19 +103,19 @@
     },
     "npclib": {
       "count": 0,
-      "timestamp": 1765954591.2007663
+      "timestamp": 1766328567.3992023
     },
     "dataroot": {
       "count": 0,
-      "timestamp": 1765954593.4171536
+      "timestamp": 1766328575.880435
     },
     "cpp": {
       "count": 0,
-      "timestamp": 1765954606.5254488
+      "timestamp": 1766328587.6348019
     },
     "otclient_modules": {
       "count": 0,
-      "timestamp": 1765960401.035763
+      "timestamp": 1766328595.6398206
     },
     "otclient_mods": {
       "count": 0,
@@ -129,60 +123,68 @@
     },
     "otclient_data": {
       "count": 0,
-      "timestamp": 1765960412.6246293
+      "timestamp": 1766328635.5933444
     },
     "otclient_src": {
       "count": 0,
-      "timestamp": 1765954630.4491827
+      "timestamp": 1766328643.7979503
     },
     "otclient_tools": {
       "count": 0,
-      "timestamp": 1765954637.7025843
+      "timestamp": 1766328652.764207
     },
     "server": {
       "count": 0,
-      "timestamp": 1765954641.7744439
+      "timestamp": 1766328661.0207033
     },
     "errors": {
       "count": 0,
-      "timestamp": 1765954647.6153667
+      "timestamp": 1766328669.026301
     }
   },
   "consecutive_zeros": {
-    "npc": 5,
-    "scripts": 5,
-    "monsters": 5,
-    "actions": 5,
-    "quests": 5,
-    "raids": 5,
-    "world": 5,
-    "spells": 5,
-    "talkactions": 5,
-    "movements": 5,
-    "creaturescripts": 5,
-    "globalevents": 5,
-    "items": 5,
-    "mounts": 5,
-    "libs": 5,
-    "events": 5,
-    "chatchannels": 5,
-    "modules": 1,
-    "startup": 1,
-    "npclib": 1,
-    "dataroot": 1,
-    "cpp": 2,
-    "otclient_modules": 5,
-    "otclient_mods": 1,
-    "otclient_data": 5,
-    "otclient_src": 1,
-    "otclient_tools": 1,
-    "server": 1,
-    "errors": 1
+    "npc": 10,
+    "scripts": 10,
+    "monsters": 0,
+    "actions": 8,
+    "quests": 8,
+    "raids": 0,
+    "world": 0,
+    "spells": 8,
+    "talkactions": 8,
+    "movements": 8,
+    "creaturescripts": 8,
+    "globalevents": 8,
+    "items": 0,
+    "mounts": 8,
+    "libs": 8,
+    "events": 8,
+    "chatchannels": 8,
+    "modules": 8,
+    "startup": 0,
+    "npclib": 8,
+    "dataroot": 8,
+    "cpp": 8,
+    "otclient_modules": 8,
+    "otclient_mods": 0,
+    "otclient_data": 8,
+    "otclient_src": 8,
+    "otclient_tools": 8,
+    "server": 8,
+    "errors": 8
   },
   "total_processed": {
-    "items": 27196
+    "items": 30208,
+    "monsters": 6714,
+    "actions": 10,
+    "quests": 18,
+    "spells": 100,
+    "libs": 11,
+    "events": 7,
+    "modules": 2,
+    "npclib": 42
   },
-  "migrations_done": true,
+  "migrations_done": false,
   "docs_done": false,
   "translation_sync": {
     "current_lang": "sw",

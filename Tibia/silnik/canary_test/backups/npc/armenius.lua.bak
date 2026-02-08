@@ -71,7 +71,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif message:lower() == "alori mort" and player:getStorageValue(Storage.Quest.U8_4.BloodBrothers.Mission03) == 1 then
 		if npcHandler:getTopic(playerId) == 2 then
 			local rand = math.random(2)
-			npcHandler:setMessage(MESSAGE_WALKAWAY, "Oh, the nerve. Go to the rats which raised you.")
+			NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.armenius.walkaway_msg_1")
 			player:teleportTo(Position(32759, 31241, 9))
 			player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 			player:setStorageValue(Storage.Quest.U8_4.BloodBrothers.Mission03, 2)
@@ -83,7 +83,7 @@ local function creatureSayCallback(npc, creature, type, message)
 end
 -- Basic
 
-npcHandler:setMessage(MESSAGE_GREET, "Ah, an adventurer. Be greeted and have a seat. How may I {serve} you?")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.armenius.greet_msg_1")
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

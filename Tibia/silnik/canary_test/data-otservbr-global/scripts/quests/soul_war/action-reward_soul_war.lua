@@ -19,7 +19,7 @@ function rewardSoulWar.onUse(creature, item, fromPosition, target, toPosition, i
 	end
 
 	player:addItem(rewardItem.id, 1)
-	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.action-reward_soul_war.msg_3" .. rewardItem.name .. ".")
+	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.action-reward_soul_war.msg_3", { rewardItem.name })
 	soulWarQuest:set("final-reward", true)
 	return true
 end

@@ -224,6 +224,7 @@ bool IOLoginDataSave::savePlayerFirst(const std::shared_ptr<Player> &player) {
 
 	query << "`cap` = " << (player->capacity / 100) << ",";
 	query << "`sex` = " << static_cast<uint16_t>(player->sex) << ",";
+	query << "`locale` = " << db.escapeString(player->getLocale()) << ",";
 
 	if (player->lastLoginSaved != 0) {
 		query << "`lastlogin` = " << player->lastLoginSaved << ",";

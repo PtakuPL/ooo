@@ -367,9 +367,20 @@ int ItemFunctions::luaItemGetSubType(lua_State* L) {
 }
 
 int ItemFunctions::luaItemGetName(lua_State* L) {
-	// item:getName()
+	// item:getName([player|string locale])
 	const auto &item = Lua::getUserdataShared<Item>(L, 1, "Item");
 	if (item) {
+		const auto &viewer = Lua::getUserdataShared<Player>(L, 2, "Player");
+		if (viewer) {
+			Lua::pushString(L, item->getNameLocalized(viewer->getLocale()));
+			return 1;
+		}
+
+		if (lua_isstring(L, 2)) {
+			Lua::pushString(L, item->getNameLocalized(Lua::getString(L, 2)));
+			return 1;
+		}
+
 		Lua::pushString(L, item->getName());
 	} else {
 		lua_pushnil(L);
@@ -838,11 +849,16 @@ int ItemFunctions::luaItemMoveToSlot(lua_State* L) {
 }
 
 int ItemFunctions::luaItemGetDescription(lua_State* L) {
-	// item:getDescription(distance)
+	// item:getDescription(distance[, player])
 	const auto &item = Lua::getUserdataShared<Item>(L, 1, "Item");
 	if (item) {
 		const int32_t distance = Lua::getNumber<int32_t>(L, 2);
-		Lua::pushString(L, item->getDescription(distance));
+		const auto &viewer = Lua::getUserdataShared<Player>(L, 3, "Player");
+		if (viewer) {
+			Lua::pushString(L, item->getDescriptionLocalized(distance, viewer->getLocale()));
+		} else {
+			Lua::pushString(L, item->getDescription(distance));
+		}
 	} else {
 		lua_pushnil(L);
 	}

@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "By direct edict of the honorable Henricus, we are ordered to give passage for all recruits to Thais." },
+	{ i18nKey = "npc.captain_chelop.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -72,9 +72,9 @@ keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, i
 keywordHandler:addKeyword({ "inquisition" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.captain_chelop.stdmod_6" })
 keywordHandler:addKeyword({ "roshamuul" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.captain_chelop.stdmod_7" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Welcome on board, recruit |PLAYERNAME|. Where can I {sail} you today?")
-npcHandler:setMessage(MESSAGE_FAREWELL, "On behalf of the inquisition, I bid you farewell.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Good bye then.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.captain_chelop.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.captain_chelop.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.captain_chelop.walkaway_msg_1")
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 
 -- npcType registering the npcConfig table

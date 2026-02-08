@@ -157,7 +157,7 @@ npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.mordecai.greet_msg_1")
 NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.mordecai.farewell_msg_1")
 NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.mordecai.walkaway_msg_1")
-npcHandler:setMessage(MESSAGE_SENDTRADE, "Choose wisely! Or maybe you want to look only at " .. GetFormattedShopCategoryNames(itemsTable) .. ".")
+npcHandler:setLocalizedMessage(MESSAGE_SENDTRADE, "npclib.handler.sendtrade_choose_wisely_with_categories", { args = function(_player) return { GetFormattedShopCategoryNames(itemsTable) } end })
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 
 -- On buy npc shop message

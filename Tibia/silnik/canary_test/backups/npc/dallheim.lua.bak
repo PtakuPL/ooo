@@ -26,11 +26,11 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "The most dangerous monsters of Rookgaard are on the other side of this bridge." },
-	{ text = "Want to know what monsters are good for you at your level? Just ask me!" },
-	{ text = "I'll crush all monsters who dare to attack our base." },
-	{ text = "Are you injured or poisoned? I can help you." },
-	{ text = "For Rookgaard! For Tibia!" },
+	{ i18nKey = "npc.dallheim.voice_1" },
+	{ i18nKey = "npc.dallheim.voice_2" },
+	{ i18nKey = "npc.dallheim.voice_3" },
+	{ i18nKey = "npc.dallheim.voice_4" },
+	{ i18nKey = "npc.dallheim.voice_5" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -213,7 +213,7 @@ end, function(player)
 end)
 keywordHandler:addKeyword({ "heal" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.dallheim.stdmod_55" })
 
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Hm.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.dallheim.walkaway_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

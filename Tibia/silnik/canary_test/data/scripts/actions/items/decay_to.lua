@@ -1,6 +1,6 @@
 local voices = {
-	[23708] = "Au au!",
-	[23443] = "Grooaarr!",
+	[23708] = "scripts.decay_to.voice_23708",
+	[23443] = "scripts.decay_to.voice_23443",
 }
 
 local transformItems = {
@@ -493,7 +493,7 @@ function decayTo.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if voices[itemId] then
 		local spectators = Game.getSpectators(fromPosition, false, true, 3, 3)
 		for _, spectator in ipairs(spectators) do
-			player:say(voices[itemId], TALKTYPE_MONSTER_SAY, false, spectator, fromPosition)
+			player:sayLocalized(voices[itemId], TALKTYPE_MONSTER_SAY, false, spectator, fromPosition)
 		end
 	end
 

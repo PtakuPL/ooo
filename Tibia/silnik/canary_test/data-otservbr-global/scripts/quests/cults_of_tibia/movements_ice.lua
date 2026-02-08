@@ -12,16 +12,16 @@ local function sendConditionCults(playerId, info, fromPos, toPos, fromPos2, toPo
 
 	time = time + 2
 	if time == 30 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, info.msgs[2])
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, info.msgs[2])
 	elseif time == 60 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, info.msgs[2])
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, info.msgs[2])
 	elseif time == 90 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, info.msgs[2])
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, info.msgs[2])
 	elseif time >= 120 then
 		local storage = player:getStorageValue(info.storageBarkless) < 0 and 0 or player:getStorageValue(info.storageBarkless)
 		if storage < 3 and storage ~= 1 and storage ~= 2 then
 			if player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.Barkless.Sulphur) == 3 and player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.Barkless.Tar) == 3 then
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, info.msgs[3])
+				player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, info.msgs[3])
 				player:setStorageValue(info.storageBarkless, 1)
 			else
 				return true
@@ -40,7 +40,7 @@ local function floorPassage(playerId, info, time)
 	local storage = player:getStorageValue(info.storageBarkless) < 0 and 0 or player:getStorageValue(info.storageBarkless)
 	if time == 0 and storage < 3 then
 		player:setStorageValue(info.storageBarkless, 0)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, info.msgs[6])
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, info.msgs[6])
 		return true
 	end
 	if storage == 3 then
@@ -65,16 +65,16 @@ function ice.onStepIn(creature, item, position, fromPosition)
 		firstTile = Position(32698, 31405, 8),
 		storageBarkless = Storage.Quest.U11_40.CultsOfTibia.Barkless.Ice,
 		msgs = {
-			"As you enter the icy cavern, you feel an unnatural frostiness. The ice cold air stings in your face. Survive and prove worthy.", -- on enter
-			"Your body temperature sinks. You can see your breath freezing in the cold.", -- 30/60/90 seconds
-			"The icy cold is grasping to you. You can barely move anymore.", -- 120 seconds
-			"You are now washed and ready to purify yourself in the chambers of purification.", -- step on the first tile
-			"You are now ready to prove your worth. Take heart and cross the threshold of ice.", -- step on the second tile
-			"You took so long. You are no longer purified.", -- didn't step in time
+			"quests.cults_of_tibia.ice.msg_1", -- on enter
+			"quests.cults_of_tibia.ice.msg_2", -- 30/60/90 seconds
+			"quests.cults_of_tibia.ice.msg_3", -- 120 seconds
+			"quests.cults_of_tibia.ice.msg_4", -- step on the first tile
+			"quests.cults_of_tibia.ice.msg_5", -- step on the second tile
+			"quests.cults_of_tibia.ice.msg_6", -- didn't step in time
 		},
 	}
 	if fromPosition.y == 31441 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, setting.msgs[1])
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, setting.msgs[1])
 		sendConditionCults(player:getId(), setting, setting.fromPos, setting.toPos, setting.fromPos2, setting.toPos2, 0)
 		return true
 	end
@@ -84,7 +84,7 @@ function ice.onStepIn(creature, item, position, fromPosition)
 			return true
 		end
 		player:setStorageValue(setting.storageBarkless, 2)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, setting.msgs[4])
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, setting.msgs[4])
 		floorPassage(player:getId(), setting, 60)
 		return true
 	end

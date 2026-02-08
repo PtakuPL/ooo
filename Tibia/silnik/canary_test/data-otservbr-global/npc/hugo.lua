@@ -55,44 +55,44 @@ local config = {
 		itemId = 5913,
 		count = 20,
 		value = 1,
-		messages = {
-			done = "Ghouls sometimes carry it with them. My assistant Irmana can also fabricate cloth from secondhand clothing.",
-			deliever = "Ah! Have you brought 20 pieces of brown cloth?",
-			notEnough = "Uh, that is not even enough cloth for a poor dwarf's look.",
-			success = "Yes, yes, that's it! Very well, now I need 50 pieces of minotaur leather to continue.",
+		messageKey = {
+			done = "npc.hugo.cloth_done",
+			deliever = "npc.hugo.cloth_deliver",
+			notEnough = "npc.hugo.cloth_not_enough",
+			success = "npc.hugo.cloth_success",
 		},
 	},
 	["50 minotaur leathers"] = {
 		itemId = 5878,
 		count = 50,
 		value = 2,
-		messages = {
-			done = "If you don't know how to obtain minotaur leather, ask my apprentice Kalvin. I'm far too busy for these trivial matters.",
-			deliever = "Were you able to obtain 50 pieces of minotaur leather?",
-			notEnough = "Uh, that is not even enough leather for a poor dwarf's look.",
-			success = "Great! This leather will suffice. Now, please, the 10 bat wings.",
+		messageKey = {
+			done = "npc.hugo.leather_done",
+			deliever = "npc.hugo.leather_deliver",
+			notEnough = "npc.hugo.leather_not_enough",
+			success = "npc.hugo.leather_success",
 		},
 	},
 	["10 bat wings"] = {
 		itemId = 5894,
 		count = 10,
 		value = 3,
-		messages = {
-			done = "Well, what do you expect? Bat wings come from bats, of course.",
-			deliever = "Did you get me the 10 bat wings?",
-			notEnough = "No, no. I need more bat wings! I said, 10!",
-			success = "Hooray! These bat wings are ugly enough. Now the last thing: Please bring me 30 heaven blossoms to neutralise the ghoulish stench.",
+		messageKey = {
+			done = "npc.hugo.bat_done",
+			deliever = "npc.hugo.bat_deliver",
+			notEnough = "npc.hugo.bat_not_enough",
+			success = "npc.hugo.bat_success",
 		},
 	},
 	["30 heaven blossoms"] = {
 		itemId = 5921,
 		count = 30,
 		value = 4,
-		messages = {
-			done = "A flower favoured by almost all elves.",
-			deliever = "Is this the lovely smell of 30 heaven blossoms?",
-			notEnough = "These few flowers are not enough to neutralise the ghoulish stench.",
-			success = "This is it! I will immediately start to work on this outfit. Come back in a day or something... then my new creation will be born!",
+		messageKey = {
+			done = "npc.hugo.blossom_done",
+			deliever = "npc.hugo.blossom_deliver",
+			notEnough = "npc.hugo.blossom_not_enough",
+			success = "npc.hugo.blossom_success",
 		},
 		lastItem = true,
 	},
@@ -154,11 +154,11 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif config[message:lower()] then
 		local targetMessage = config[message:lower()]
 		if player:getStorageValue(Storage.Quest.U7_8.BeggarOutfits.BeggarOutfit) ~= targetMessage.value then
-			npcHandler:say(targetMessage.messages.done, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, targetMessage.messageKey.done)
 			return true
 		end
 
-		npcHandler:say(targetMessage.messages.deliever, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, targetMessage.messageKey.deliever)
 		npcHandler:setTopic(playerId, 4)
 		topic[playerId] = targetMessage
 	elseif MsgContains(message, "yes") then
@@ -177,7 +177,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		elseif npcHandler:getTopic(playerId) == 4 then
 			local targetMessage = topic[playerId]
 			if not player:removeItem(targetMessage.itemId, targetMessage.count) then
-				npcHandler:say(targetMessage.messages.notEnough, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, targetMessage.messageKey.notEnough)
 				return true
 			end
 
@@ -185,7 +185,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			if targetMessage.lastItem then
 				player:setStorageValue(Storage.Quest.U7_8.BeggarOutfits.BeggarOutfitTimer, os.time() + 86400)
 			end
-			npcHandler:say(targetMessage.messages.success, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, targetMessage.messageKey.success)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 5 then
 			player:addOutfit(153)

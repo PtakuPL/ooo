@@ -127,7 +127,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		elseif npcHandler:getTopic(playerId) == 5 then
 			if player:removeItem(6097, 100) then
 				player:setStorageValue(storage, 4)
-				npcHandler:say("I see, I see. Well done. Go to Morgan and tell him this codeword: 'firebird'. He'll know what to do.", creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.duncan.say_firebird")
 				npcHandler:setTopic(playerId, 0)
 			else
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.duncan.say_15")

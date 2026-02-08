@@ -346,12 +346,7 @@ keywordHandler:addKeyword({ "job" }, StdModule.say, {
 })
 keywordHandler:addKeyword({ "mainland" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"Aye, Tibia is a vast world, my friend, with plenty of adventures, harbours, and loot! \z
-			The Mainland is open to everyone; but there are many beautiful islands and more cities to explore, \z
-			if you have premium rights and can use a ship.",
-		"Once you have reached level 8 here on this isle, you can choose your definite vocation and leave for the Mainland.",
-	},
+	i18nKey = "npc.plunderpurse.stdmod_25",
 })
 keywordHandler:addKeyword({ "vocation" }, StdModule.say, {
 	npcHandler = npcHandler,
@@ -406,11 +401,7 @@ keywordHandler:addKeyword({ "wentworth" }, StdModule.say, {
 	i18nKey = "npc.plunderpurse.stdmod_21",
 })
 
-npcHandler:setMessage(
-	MESSAGE_GREET,
-	"Welcome, young adventurer! Harr! {Deposit} your gold or {withdraw} \z
-	your money from your bank account. I can also explain the functions of your {bank} account to ya."
-)
+npcHandler:setLocalizedMessage(MESSAGE_GREET, "npc.plunderpurse.greet_msg_1")
 NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.plunderpurse.farewell_msg_1")
 NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.plunderpurse.walkaway_msg_1")
 

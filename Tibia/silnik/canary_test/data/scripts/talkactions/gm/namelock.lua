@@ -5,7 +5,7 @@ function namelock.onSay(player, words, param)
 	logCommand(player, words, param)
 
 	if param == "" then
-		player:sendCancelMessage("Command param required.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.common.msg_command_param_required")
 		return true
 	end
 
@@ -19,7 +19,7 @@ function namelock.onSay(player, words, param)
 	end
 
 	if reason == "" then
-		player:sendCancelMessage("You must specify a reason.")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.gm.namelock.msg_reason_required")
 		return true
 	end
 
@@ -33,13 +33,13 @@ function namelock.onSay(player, words, param)
 		target:kv():set("namelock", reason)
 		local text = target:getName() .. " has been namelocked"
 		logger.info(text .. ", reason: " .. reason)
-		player:sendTextMessage(MESSAGE_ADMINISTRATOR, text)
+		player:sendLocalizedTextMessage(MESSAGE_ADMINISTRATOR, "talkaction.gm.namelock.msg_namelocked", {target:getName()})
 		Webhook.sendMessage("Player Namelocked", text .. " reason: " .. reason .. ".", WEBHOOK_COLOR_YELLOW, announcementChannels["serverAnnouncements"])
 		if online then
 			CheckNamelock(target)
 		end
 	else
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, name .. " was not found.")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "talkaction.gm.namelock.msg_not_found", {name})
 	end
 end
 

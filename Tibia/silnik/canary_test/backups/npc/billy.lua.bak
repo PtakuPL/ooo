@@ -143,7 +143,7 @@ panKeyword:addChildKeyword({ "" }, StdModule.say, { npcHandler = npcHandler, i18
 
 NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.billy.walkaway_msg_1")
 NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.billy.farewell_msg_1")
-npcHandler:setMessage(MESSAGE_SENDTRADE, "Sure.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_SENDTRADE, "npc.billy.sendtrade_msg_1")
 NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.billy.greet_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

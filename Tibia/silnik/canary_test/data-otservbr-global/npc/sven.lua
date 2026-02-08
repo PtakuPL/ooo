@@ -52,7 +52,11 @@ end
 
 local function greetCallback(npc, player)
 	if player:getStorageValue(Storage.Quest.U8_0.TheIceIslands.HuskyKillStatus) == 1 then
-		npcHandler:setMessage(MESSAGE_GREET, "Iskan told me that you killed huskies here in Svargrond. I will be lenient towards you and won't ban you from Svargrond. But you have to pay me a compensation of 1500 gold for each husky you have killed. Are you willing to pay " .. player:getStorageValue(Storage.Quest.U8_0.TheIceIslands.HuskyKill) * 1500 .. "?")
+		npcHandler:setLocalizedMessage(MESSAGE_GREET, "npc.sven.greet_msg_2", {
+			args = function(targetPlayer)
+				return { targetPlayer:getStorageValue(Storage.Quest.U8_0.TheIceIslands.HuskyKill) * 1500 }
+			end,
+		})
 	else
 		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.sven.greet_msg_1")
 	end

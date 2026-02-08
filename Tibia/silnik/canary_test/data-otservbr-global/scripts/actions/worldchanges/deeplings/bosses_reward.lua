@@ -43,7 +43,7 @@ function bossesReward.onUse(player, item, fromPosition, target, toPosition, isHo
 		end
 
 		if player:getStorageValue(reward.storage) ~= 1 then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, reward.bossName .. " defends his belongings and will not let you open his chest.")
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.deeplings.boss_defends", {reward.bossName})
 			return true
 		end
 

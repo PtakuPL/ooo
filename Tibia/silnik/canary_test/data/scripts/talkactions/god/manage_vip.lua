@@ -7,7 +7,7 @@ local config = {
 
 function vipGod.onSay(player, words, param)
 	if not configManager.getBoolean(configKeys.VIP_SYSTEM_ENABLED) then
-		player:sendCancelMessage("Vip System are not enabled!")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.god.manage_vip.msg_not_enabled")
 		return true
 	end
 
@@ -19,7 +19,7 @@ function vipGod.onSay(player, words, param)
 
 	local targetName = params[2]:trim()
 	if not action or not targetName then
-		player:sendLocalizedMessage(MESSAGE_LOOK, "scripts.manage_vip.msg_1")
+		player:sendLocalizedTextMessage(MESSAGE_LOOK, "scripts.manage_vip.msg_1")
 		return true
 	end
 
@@ -37,7 +37,7 @@ function vipGod.onSay(player, words, param)
 	elseif action == "adddays" then
 		local amount = tonumber(params[3])
 		if not amount or amount <= 0 then
-			player:sendCancelMessage("<value> has to be a numeric value.")
+			player:sendLocalizedTextMessage(MESSAGE_FAILURE, "talkaction.god.manage_vip.msg_numeric_required")
 			return true
 		end
 
@@ -53,7 +53,7 @@ function vipGod.onSay(player, words, param)
 	elseif action == "removedays" then
 		local amount = tonumber(params[3])
 		if not amount then
-			player:sendLocalizedMessage(MESSAGE_LOOK, "scripts.manage_vip.msg_2")
+			player:sendLocalizedTextMessage(MESSAGE_LOOK, "scripts.manage_vip.msg_2")
 			return true
 		end
 		if amount > targetVipDays then
@@ -71,7 +71,7 @@ function vipGod.onSay(player, words, param)
 		target:getPosition():sendMagicEffect(CONST_ME_MAGIC_RED)
 		player:sendLocalizedTextMessage(MESSAGE_STATUS, "scripts.manage_vip.msg_1", {targetName})
 	else
-		player:sendLocalizedMessage(MESSAGE_LOOK, "scripts.manage_vip.msg_3")
+		player:sendLocalizedTextMessage(MESSAGE_LOOK, "scripts.manage_vip.msg_3")
 		return true
 	end
 	return true

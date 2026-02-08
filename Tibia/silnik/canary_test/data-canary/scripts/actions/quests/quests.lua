@@ -20,21 +20,21 @@ function quests.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 				else
 					player:addItem(item.uid, 1)
 				end
-				player:sendTextMessage(MESSAGE_LOOK, "You have found a " .. itemType:getName() .. ".")
+				player:sendLocalizedTextMessage(MESSAGE_LOOK, "scripts.quests.found_item", {itemType:getName()})
 				player:setStorageValue(Storage.Quest.ExampleQuest.Example, 1)
 			else
-				player:sendTextMessage(MESSAGE_LOOK, "You have found a " .. itemType:getName() .. " weighing " .. itemWeight .. " oz it's too heavy.")
+				player:sendLocalizedTextMessage(MESSAGE_LOOK, "scripts.quests.found_too_heavy", {itemType:getName(), tostring(itemWeight)})
 			end
 		else
 			player:sendLocalizedTextMessage(MESSAGE_LOOK, "actions.quests.msg_2")
 		end
 	elseif player:getStorageValue(item.uid) == -1 then
 		if playerCap >= itemWeight then
-			player:sendTextMessage(MESSAGE_LOOK, "You have found a " .. itemType:getName() .. ".")
+			player:sendLocalizedTextMessage(MESSAGE_LOOK, "scripts.quests.found_item", {itemType:getName()})
 			player:addItem(item.uid, 1)
 			player:setStorageValue(item.uid, 1)
 		else
-			player:sendTextMessage(MESSAGE_LOOK, "You have found a " .. itemType:getName() .. " weighing " .. itemWeight .. " oz it's too heavy.")
+			player:sendLocalizedTextMessage(MESSAGE_LOOK, "scripts.quests.found_too_heavy", {itemType:getName(), tostring(itemWeight)})
 		end
 	else
 		player:sendLocalizedTextMessage(MESSAGE_LOOK, "actions.quests.msg_1")

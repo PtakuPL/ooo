@@ -1,0 +1,16 @@
+{
+  "_comment": "Example Merchant NPC - English translations",
+  "_file": "data-otservbr-global/npc/example_merchant_i18n.lua",
+  "npc.example_merchant.greeting": "Hello %s! Welcome to my shop. Say {trade} to see my offers.",
+  "npc.example_merchant.low_level": "Sorry, but you are too inexperienced. Come back when you reach level 8.",
+  "npc.example_merchant.farewell": "Farewell, %s. Visit me again!",
+  "npc.example_merchant.help": "I can sell you potions, weapons and armor. Say {trade} to browse my goods.",
+  "npc.example_merchant.job": "I am a merchant. I sell various goods to adventurers.",
+  "npc.example_merchant.name": "My name is Marcus. I run this shop.",
+  "npc.example_merchant.trade": "Of course! Here are my offers.",
+  "npc.example_merchant.news_1": "Have you heard? Dragons were spotted near the mountains!",
+  "npc.example_merchant.news_2": "The king is looking for brave adventurers.",
+  "nv.example_merchant.1": "Best potions in town!",
+  "nv.example_merchant.2": "Quality weapons and armor!",
+  "nv.example_merchant.3": "SPECIAL OFFERS TODAY!"
+}

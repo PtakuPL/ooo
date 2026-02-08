@@ -1,11 +1,20 @@
-name: build-linux (disabled)
+name: build-linux
 
 on:
+  push:
+    branches: [ master, feature/i18n-multilanguage ]
+    paths:
+      - 'Tibia/silnik/canary_test/testyy/src/**'
+      - 'Tibia/silnik/canary_test/testyy/CMakeLists.txt'
+      - 'Tibia/silnik/canary_test/testyy/vcpkg.json'
+      - 'Tibia/silnik/canary_test/testyy/.github/workflows/build-linux.yml'
+  pull_request:
+    branches: [ master ]
+    paths:
+      - 'Tibia/silnik/canary_test/testyy/src/**'
+      - 'Tibia/silnik/canary_test/testyy/CMakeLists.txt'
+      - 'Tibia/silnik/canary_test/testyy/vcpkg.json'
   workflow_dispatch:
-    inputs:
-      note:
-        description: 'Workflow disabled; manual dispatch only.'
-        required: false
 
 jobs:
   linux:
@@ -33,21 +42,28 @@ jobs:
             libasound2-dev \
             libudev-dev
 
-      - name: Setup vcpkg (manifest mode)
-        uses: microsoft/setup-vcpkg@v1
+      - name: Setup vcpkg
+        uses: lukka/run-vcpkg@v11
         with:
-          vcpkg-json: '${{ github.workspace }}/Tibia/silnik/canary_test/testyy/vcpkg.json'
-          triplet: x64-linux
+          vcpkgDirectory: '${{ github.workspace }}/vcpkg'
+          vcpkgGitCommitId: '5b1214315250939257ef5d62ecdcbca18cf4fb1c'
+
+      - name: Export GitHub Actions cache variables
+        uses: actions/github-script@v7
+        with:
+          script: |
+            core.exportVariable('ACTIONS_CACHE_URL', process.env.ACTIONS_CACHE_URL || '');
+            core.exportVariable('ACTIONS_RUNTIME_TOKEN', process.env.ACTIONS_RUNTIME_TOKEN || '');
 
       - name: Configure CMake
         working-directory: Tibia/silnik/canary_test/testyy
         env:
-          VCPKG_ROOT: ${{ env.VCPKG_ROOT }}
+          VCPKG_BINARY_SOURCES: "clear;x-gha,readwrite"
         run: |
           cmake -S . -B build -G Ninja \
             -DCMAKE_BUILD_TYPE=RelWithDebInfo \
             -DVCPKG_TARGET_TRIPLET=x64-linux \
-            -DCMAKE_TOOLCHAIN_FILE="$VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake"
+            -DCMAKE_TOOLCHAIN_FILE="${{ github.workspace }}/vcpkg/scripts/buildsystems/vcpkg.cmake"
 
       - name: Build
         working-directory: Tibia/silnik/canary_test/testyy

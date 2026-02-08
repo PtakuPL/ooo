@@ -1,0 +1,124 @@
+name: Build - Web (WASM)
+
+on:
+  push:
+    branches:
+      - master
+      - feature/i18n-multilanguage
+    paths:
+      - 'src/**'
+      - 'CMakeLists.txt'
+      - 'vcpkg.json'
+      - 'browser/**'
+      - 'cmake/**'
+      - '.github/workflows/build-wasm.yml'
+  pull_request:
+    branches:
+      - master
+      - feature/i18n-multilanguage
+    paths:
+      - 'src/**'
+      - 'CMakeLists.txt'
+      - 'vcpkg.json'
+      - 'browser/**'
+      - 'cmake/**'
+      - '.github/workflows/build-wasm.yml'
+
+env:
+  VCPKG_BINARY_SOURCES: "clear;x-gha,readwrite"
+  EMSDK_VERSION: "3.1.56"
+
+jobs:
+  build-wasm:
+    name: Web (Emscripten WASM)
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            ninja-build \
+            pkg-config \
+            python3
+
+      - name: Export GitHub Actions cache variables
+        uses: actions/github-script@v7
+        with:
+          script: |
+            core.exportVariable('ACTIONS_CACHE_URL', process.env.ACTIONS_CACHE_URL || '');
+            core.exportVariable('ACTIONS_RUNTIME_TOKEN', process.env.ACTIONS_RUNTIME_TOKEN || '');
+
+      - name: Cache Emscripten SDK
+        uses: actions/cache@v4
+        with:
+          path: emsdk
+          key: emsdk-${{ env.EMSDK_VERSION }}-${{ runner.os }}
+
+      - name: Set up Emscripten
+        run: |
+          if [ ! -d "emsdk" ]; then
+            git clone https://github.com/emscripten-core/emsdk.git
+          fi
+          cd emsdk
+          ./emsdk install ${{ env.EMSDK_VERSION }}
+          ./emsdk activate ${{ env.EMSDK_VERSION }}
+
+      - name: Set up vcpkg
+        uses: lukka/run-vcpkg@v11
+        with:
+          vcpkgGitCommitId: '5b1214315250939257ef5d62ecdcbca18cf4fb1c'
+
+      - name: Cache vcpkg packages (wasm32-emscripten)
+        uses: actions/cache@v4
+        with:
+          path: |
+            ${{ github.workspace }}/vcpkg/installed
+            ${{ github.workspace }}/vcpkg/packages
+          key: vcpkg-wasm-${{ hashFiles('vcpkg.json') }}
+          restore-keys: |
+            vcpkg-wasm-
+
+      - name: Configure CMake (Emscripten)
+        run: |
+          source emsdk/emsdk_env.sh
+          mkdir -p build-wasm
+          emcmake cmake -B build-wasm \
+            -G Ninja \
+            -DCMAKE_BUILD_TYPE=Release \
+            -DVCPKG_TARGET_TRIPLET=wasm32-emscripten \
+            -DVCPKG_CHAINLOAD_TOOLCHAIN_FILE=$EMSDK/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake \
+            -DCMAKE_TOOLCHAIN_FILE=${{ github.workspace }}/vcpkg/scripts/buildsystems/vcpkg.cmake \
+            -DVCPKG_OVERLAY_PORTS=browser/overlay-ports \
+            -DOPTIONS_ENABLE_IPO=OFF \
+            .
+
+      - name: Build WASM
+        run: |
+          source emsdk/emsdk_env.sh
+          cmake --build build-wasm --config Release --parallel $(nproc)
+
+      - name: Prepare web distribution
+        run: |
+          mkdir -p dist-web
+          # Copy generated WASM/JS/HTML files
+          cp build-wasm/src/otclient.html dist-web/index.html 2>/dev/null || true
+          cp build-wasm/src/otclient.js dist-web/ 2>/dev/null || true
+          cp build-wasm/src/otclient.wasm dist-web/ 2>/dev/null || true
+          cp build-wasm/src/otclient.worker.js dist-web/ 2>/dev/null || true
+          cp build-wasm/src/otclient.data dist-web/ 2>/dev/null || true
+          # List what we got
+          echo "=== dist-web contents ==="
+          ls -lh dist-web/
+
+      - name: Upload Web artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: otclient-web-wasm
+          path: dist-web/
+          if-no-files-found: warn

@@ -1,0 +1,79 @@
+name: build-windows
+
+on:
+  push:
+    branches: [ master, feature/i18n-multilanguage ]
+    paths:
+      - 'Tibia/silnik/canary_test/testyy/src/**'
+      - 'Tibia/silnik/canary_test/testyy/CMakeLists.txt'
+      - 'Tibia/silnik/canary_test/testyy/vcpkg.json'
+      - 'Tibia/silnik/canary_test/testyy/.github/workflows/build-windows.yml'
+  pull_request:
+    branches: [ master ]
+    paths:
+      - 'Tibia/silnik/canary_test/testyy/src/**'
+      - 'Tibia/silnik/canary_test/testyy/CMakeLists.txt'
+      - 'Tibia/silnik/canary_test/testyy/vcpkg.json'
+  workflow_dispatch:
+
+env:
+  VCPKG_BINARY_SOURCES: "clear;x-gha,readwrite"
+
+jobs:
+  windows:
+    name: Build (Windows x64)
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Export GitHub Actions cache variables
+        uses: actions/github-script@v7
+        with:
+          script: |
+            core.exportVariable('ACTIONS_CACHE_URL', process.env.ACTIONS_CACHE_URL || '');
+            core.exportVariable('ACTIONS_RUNTIME_TOKEN', process.env.ACTIONS_RUNTIME_TOKEN || '');
+
+      - name: Setup vcpkg
+        uses: lukka/run-vcpkg@v11
+        with:
+          vcpkgDirectory: '${{ github.workspace }}/vcpkg'
+          vcpkgGitCommitId: '5b1214315250939257ef5d62ecdcbca18cf4fb1c'
+
+      - name: Setup MSVC Developer Command Prompt
+        uses: ilammy/msvc-dev-cmd@v1
+        with:
+          arch: x64
+
+      - name: Install Ninja
+        run: choco install ninja -y
+
+      - name: Configure CMake
+        working-directory: Tibia/silnik/canary_test/testyy
+        run: |
+          cmake -S . -B build -G Ninja `
+            -DCMAKE_BUILD_TYPE=RelWithDebInfo `
+            -DVCPKG_TARGET_TRIPLET=x64-windows-static `
+            -DCMAKE_TOOLCHAIN_FILE="${{ github.workspace }}/vcpkg/scripts/buildsystems/vcpkg.cmake" `
+            -DCMAKE_MSVC_RUNTIME_LIBRARY="MultiThreaded"
+
+      - name: Build
+        working-directory: Tibia/silnik/canary_test/testyy
+        run: cmake --build build --config RelWithDebInfo --parallel
+
+      - name: Run unit tests
+        working-directory: Tibia/silnik/canary_test/testyy
+        run: ctest --test-dir build --output-on-failure
+        continue-on-error: true
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: otclient-windows-x64
+          path: |
+            Tibia/silnik/canary_test/testyy/build/**/*.exe
+            Tibia/silnik/canary_test/testyy/build/**/*.dll
+          retention-days: 30

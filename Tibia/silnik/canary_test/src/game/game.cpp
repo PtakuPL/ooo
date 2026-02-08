@@ -2997,11 +2997,11 @@ void Game::playerQuickLootCorpse(const std::shared_ptr<Player> &player, const st
 	}
 
 	std::stringstream ss;
+	const std::string loc(player->getLocale().empty() ? "en" : std::string(player->getLocale()));
+	auto &tr = i18n::g_translator();
 	if (totalLootedGold != 0 || missedAnyGold || totalLootedItems != 0 || missedAnyItem) {
 		bool lootedAllGold = totalLootedGold != 0 && !missedAnyGold;
 		bool lootedAllItems = totalLootedItems != 0 && !missedAnyItem;
-		const std::string loc(player->getLocale().empty() ? "en" : std::string(player->getLocale()));
-		auto &tr = i18n::g_translator();
 		if (lootedAllGold) {
 			if (totalLootedItems != 0 || missedAnyItem) {
 				ss << tr.format("cpp.game.looted_complete_gold", loc, {std::to_string(totalLootedGold)});

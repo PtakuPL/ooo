@@ -147,7 +147,7 @@ if (MSVC)
       CMAKE_SHARED_LINKER_FLAGS_RELEASE
       CMAKE_SHARED_LINKER_FLAGS_RELWITHDEBINFO
       CMAKE_SHARED_LINKER_FLAGS_MINSIZEREL)
-    string(REGEX REPLACE "/LTCG([ ;]|$)" "\\1" ${_flag_var} "${${_flag_var}}")
+    string(REGEX REPLACE "[ ;]?/LTCG([ ;]|$)" "\\1" ${_flag_var} "${${_flag_var}}")
     set(${_flag_var} "${${_flag_var}}" CACHE STRING "" FORCE)
   endforeach()
 endif()

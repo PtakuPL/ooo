@@ -10,6 +10,7 @@
 #include "lua/functions/creatures/npc/npc_functions.hpp"
 
 #include "creatures/creature.hpp"
+#include "utils/i18n/translator.hpp"
 #include "creatures/npcs/npc.hpp"
 #include "creatures/players/player.hpp"
 #include "game/game.hpp"
@@ -623,7 +624,6 @@ int NpcFunctions::luaNpcSellItem(lua_State* L) {
 
 	const auto &[_, itemsPurchased, backpacksPurchased] = g_game().createItem(player, itemId, amount, subType, actionId, ignoreCap, inBackpacks ? ITEM_SHOPPING_BAG : 0);
 
-	std::stringstream ss;
 	const uint64_t itemCost = itemsPurchased * pricePerUnit;
 	const uint64_t backpackCost = backpacksPurchased * shoppingBagPrice;
 	if (npc->getCurrency() == ITEM_GOLD_COIN) {
@@ -631,55 +631,33 @@ int NpcFunctions::luaNpcSellItem(lua_State* L) {
 			g_logger().error("[NpcFunctions::luaNpcSellItem (removeMoney)] - Player {} have a problem for buy item {} on shop for npc {}", player->getName(), itemId, npc->getName());
 			g_logger().debug("[Information] Player {} bought {} x item {} on shop for npc {}, at position {}", player->getName(), itemsPurchased, itemId, npc->getName(), player->getPosition().toString());
 		} else if (backpacksPurchased > 0) {
-			ss << "Bought " << std::to_string(itemsPurchased) << "x " << it.name << " and " << std::to_string(backpacksPurchased);
+			const uint64_t totalCost = itemCost + backpackCost;
 			if (backpacksPurchased > 1) {
-				ss << " shopping bags for " << std::to_string(itemCost + backpackCost) << " gold coin";
+				player->sendLocalizedTextMessage(MESSAGE_TRADE, "cpp.npc.bought_bags_gold", { std::to_string(itemsPurchased), it.name, std::to_string(backpacksPurchased), std::to_string(totalCost) });
 			} else {
-				ss << " shopping bag for " << std::to_string(itemCost + backpackCost) << " gold coin";
-			}
-			if ((itemCost + backpackCost) > 1) {
-				ss << "s.";
-			} else {
-				ss << ".";
+				player->sendLocalizedTextMessage(MESSAGE_TRADE, "cpp.npc.bought_bag_gold", { std::to_string(itemsPurchased), it.name, std::to_string(totalCost) });
 			}
 		} else {
-			ss << "Bought " << std::to_string(itemsPurchased) << "x " << it.name << " for " << std::to_string(itemCost) << " gold coin";
-			if (itemCost > 1) {
-				ss << "s.";
-			} else {
-				ss << ".";
-			}
+			player->sendLocalizedTextMessage(MESSAGE_TRADE, "cpp.npc.bought_gold", { std::to_string(itemsPurchased), it.name, std::to_string(itemCost) });
 		}
 	} else {
 		if (!g_game().removeMoney(player, backpackCost, 0, true) || !player->removeItemOfType(npc->getCurrency(), itemCost, -1, false)) {
 			g_logger().error("[NpcFunctions::luaNpcSellItem (removeItemOfType)] - Player {} have a problem for buy item {} on shop for npc {}", player->getName(), itemId, npc->getName());
 			g_logger().debug("[Information] Player {} buyed item {} on shop for npc {}, at position {}", player->getName(), itemId, npc->getName(), player->getPosition().toString());
 		} else if (backpacksPurchased > 0) {
-			ss << "Bought " << std::to_string(itemsPurchased) << "x " << it.name << " for " << std::to_string(itemCost) << " " << Item::items[npc->getCurrency()].name;
-			if (itemCost > 1) {
-				ss << "s";
-			}
-			ss << " and " << std::to_string(backpacksPurchased) << "x shopping bag";
+			const std::string currencyName = Item::items[npc->getCurrency()].name;
 			if (backpacksPurchased > 1) {
-				ss << "s";
-			}
-			ss << " for " << std::to_string(backpackCost) << " gold coin";
-			if (backpackCost > 1) {
-				ss << "s.";
+				player->sendLocalizedTextMessage(MESSAGE_TRADE, "cpp.npc.bought_bags_currency", { std::to_string(itemsPurchased), it.name, std::to_string(itemCost), currencyName, std::to_string(backpacksPurchased), std::to_string(backpackCost) });
 			} else {
-				ss << ".";
+				player->sendLocalizedTextMessage(MESSAGE_TRADE, "cpp.npc.bought_bag_currency", { std::to_string(itemsPurchased), it.name, std::to_string(itemCost), currencyName, std::to_string(backpackCost) });
 			}
 		} else {
-			ss << "Bought " << std::to_string(itemsPurchased) << "x " << it.name << " for " << std::to_string(itemCost) << " " << Item::items[npc->getCurrency()].name;
-			if (itemCost > 1) {
-				ss << "s.";
-			} else {
-				ss << ".";
-			}
+			const std::string currencyName = Item::items[npc->getCurrency()].name;
+			player->sendLocalizedTextMessage(MESSAGE_TRADE, "cpp.npc.bought_currency", { std::to_string(itemsPurchased), it.name, std::to_string(itemCost), currencyName });
 		}
 	}
 
-	player->sendTextMessage(MESSAGE_TRADE, ss.str());
+	// Message already sent via sendLocalizedTextMessage above
 	Lua::pushBoolean(L, true);
 	return 1;
 }

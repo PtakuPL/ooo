@@ -48,6 +48,8 @@
 #include "utils/i18n/translator.hpp"
 #include "creatures/players/vocations/vocation.hpp"
 
+#include <fmt/format.h>
+
 #include "enums/account_coins.hpp"
 #include "enums/account_group_type.hpp"
 #include "enums/account_type.hpp"

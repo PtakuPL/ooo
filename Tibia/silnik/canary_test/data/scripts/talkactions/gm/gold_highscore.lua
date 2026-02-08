@@ -21,10 +21,10 @@ function goldRank.onSay(player, words, param)
 
 	Result.free(highscoreQuery)
 	if highscoreList == "" then
-		highscoreList = "No highscore to show."
+		highscoreList = player:getTranslation("talkaction.gm.gold_highscore.msg_no_highscore")
 	end
 
-	player:popupFYI("Current gold highscore for this server:\n" .. highscoreList)
+	player:popupFYI(player:getTranslation("talkaction.gm.gold_highscore.msg_header") .. "\n" .. highscoreList)
 	return true
 end
 

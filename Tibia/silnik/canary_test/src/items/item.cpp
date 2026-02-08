@@ -39,20 +39,45 @@ std::string resolveI18nMarker(const std::string &text, std::string_view locale) 
 		return text;
 	}
 
-	const std::string key = text.substr(6);
+	const std::string payload = text.substr(6);
+	std::string key;
+	std::vector<std::string> args;
+	if (const auto sepPos = payload.find('|'); sepPos != std::string::npos) {
+		key = payload.substr(0, sepPos);
+		size_t argStart = sepPos + 1;
+		while (argStart <= payload.size()) {
+			const auto argEnd = payload.find('|', argStart);
+			if (argEnd == std::string::npos) {
+				args.emplace_back(payload.substr(argStart));
+				break;
+			}
+			args.emplace_back(payload.substr(argStart, argEnd - argStart));
+			argStart = argEnd + 1;
+		}
+	} else {
+		key = payload;
+	}
+
 	if (key.empty()) {
 		return text;
 	}
 
+	const auto translate = [&](const std::string &targetLocale) -> std::string {
+		if (args.empty()) {
+			return i18n::g_translator().get(key, targetLocale);
+		}
+		return i18n::g_translator().format(key, targetLocale, args);
+	};
+
 	if (!locale.empty()) {
 		const std::string requestedLocale(locale);
-		const std::string &translated = i18n::g_translator().get(key, requestedLocale);
+		const std::string translated = translate(requestedLocale);
 		if (!translated.empty() && translated != key) {
 			return translated;
 		}
 	}
 
-	const std::string &fallback = i18n::g_translator().get(key, "en");
+	const std::string fallback = translate("en");
 	if (!fallback.empty() && fallback != key) {
 		return fallback;
 	}
@@ -143,7 +168,7 @@ std::shared_ptr<Item> Item::CreateItem(const uint16_t type, uint16_t count /*= 0
 		uint16_t wrapId = it.wrapableTo;
 		auto wrappedItem = std::make_shared<Item>(wrapId, 1);
 		wrappedItem->setCustomAttribute("unWrapId", static_cast<int64_t>(type));
-		wrappedItem->setAttribute(ItemAttribute_t::DESCRIPTION, "Unwrap it in your own house to create a <" + it.name + ">.");
+		wrappedItem->setAttribute(ItemAttribute_t::DESCRIPTION, "#i18n:cpp.item.unwrap_in_house|" + it.name);
 		return wrappedItem;
 	}
 

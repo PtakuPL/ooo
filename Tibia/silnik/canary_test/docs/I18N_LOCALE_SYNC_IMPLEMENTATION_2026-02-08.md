@@ -1578,3 +1578,181 @@ Kolejny moduł C++ ma komplet EN jako źródło do tłumaczeń na wszystkie jęz
   - `description_dynamic: 21`
   - `states: 1363`
 - Testów runtime/CI nie uruchamiano (zgodnie z ustaleniem: testy dopiero na GitHub Actions po pełnym domknięciu i18n).
+
+---
+
+## 76) Kontynuacja prac (Localized API: konwersja printf `%s/%d` -> fmt `{n}`) - 2026-02-08
+
+### Zakres
+- Audyt kluczy używanych przez runtime localized API w Lua:
+  - `sendLocalizedTextMessage`
+  - `sendLocalizedMessage`
+  - `sendLocalizedCancelMessage`
+  - `sayLocalized`
+  - `addLocalizedBroadcast`
+  - `broadcastLocalized`
+- Wykryto `39` kluczy z legacy placeholderami printf (`%s/%d/%i/%f`) w EN, które są formatowane przez `fmt::vformat` (wymaga `{0}`, `{1}`, ...).
+
+### Co zmieniono
+- Hurtowo przekonwertowano placeholdery dla tych kluczy we wszystkich locale JSON:
+  - `%s/%d/%i/%f` -> `{0}`, `{1}`, ... (kolejność zgodna z wystąpieniem w tekście)
+- Zakres plików:
+  - `i18n/*/quests.json`
+  - `i18n/*/scripts.json`
+- Efekt:
+  - usunięto niespójność formatowania między treścią kluczy i runtime formatterem C++.
+
+### Po co
+- Bez tej konwersji część komunikatów localized API wyświetlała surowe `%s`/`%d` zamiast podstawionych argumentów.
+- To była blokada jakościowa dla pełnej i18n w questach/skryptach runtime.
+
+---
+
+## 77) Kontynuacja prac (brakujący klucz `misc.blessing.msg_1` + fallback w locale) - 2026-02-08
+
+### Pliki
+- `i18n/*/scripts.json`
+
+### Co zmieniono
+- Dodano brakujący klucz:
+  - `misc.blessing.msg_1`: `You have received Adventurer's Blessing, which applies up to level {0}!`
+- Klucz został dopisany do wszystkich locale `scripts.json` jako fallback EN.
+
+### Po co
+- Domknięcie regresji po zmianie `Blessings.doAdventurerBlessing` na `sendLocalizedTextMessage(...)` z argumentem.
+- Eliminacja ostrzeżeń "Missing translation" dla tego komunikatu.
+
+---
+
+## 78) Kontynuacja prac (Random Items: stabilne budowanie `itemLabel`) - 2026-02-08
+
+### Pliki
+- `data-otservbr-global/scripts/actions/valuables/random_items.lua`
+- `i18n/en/scripts.json` (wartość klucza po konwersji placeholderów)
+
+### Co zmieniono
+- W `random_items.lua` uproszczono i ustabilizowano budowę argumentu dla:
+  - `scripts.random_items.found_in_bag`
+- Zamiast składania inline z ryzykiem zbędnych spacji:
+  - wyliczane jest `itemLabel` (liczba + plural lub article + singular).
+- Klucz EN po konwersji placeholderów używa teraz:
+  - `You found {0} in the bag.`
+
+### Po co
+- Czytelniejszy i bezpieczniejszy runtime (brak artefaktów typu podwójne spacje przy pustym article).
+- Spójność z formatterem `fmt`.
+
+---
+
+## 79) Walidacja po tym etapie
+- Audyt localized API:
+  - `used keys: 2101`
+  - `printf placeholders in used keys: 0` (po konwersji)
+  - `missing_en: 179` (stan niepogorszony; dotyczy innych obszarów backlogu)
+- Kontrola JSON:
+  - parsowanie wszystkich `i18n/**/*.json` (bez `.bak/.corrupted`) -> `bad_json_count: 0`
+- Kontrola przykładowych kluczy:
+  - `misc.blessing.msg_1` istnieje i używa `{0}`
+  - `scripts.random_items.found_in_bag` używa `{0}`
+  - `scripts.die.rolled` używa `{0}`, `{1}`
+- Kontrola whitespace:
+  - `git diff --check` bez błędów.
+- Testów runtime/CI nie uruchamiano (zgodnie z ustaleniem projektowym).
+
+---
+
+## 80) Kontynuacja prac (domknięcie brakujących kluczy EN dla localized API) - 2026-02-08
+
+### Pliki
+- `i18n/en/npclib.json`
+- `i18n/en/libs.json`
+- `i18n/en/scripts.json`
+
+### Co zmieniono
+- Odtworzono i dopisano brakujące teksty EN dla wszystkich kluczy używanych przez runtime localized API, które wcześniej nie miały wpisu w EN.
+- Źródło tekstów:
+  - historia `git` (hunky migracji `sendTextMessage/say` -> `sendLocalized*/sayLocalized`), aby przywrócić oryginalne komunikaty zamiast wpisów zastępczych.
+- Zakres dopisanych kluczy:
+  - `misc.bank_system.say_1..67` -> `npclib.json` (67 kluczy),
+  - `misc.compat.msg_1`, `misc.daily_reward.msg_1`, `misc.daily_reward.msg_2`, `misc.functions.msg_1`, `misc.hireling.msg_1` -> `libs.json` (5 kluczy),
+  - brakujące `scripts.*` używane przez localized API -> `scripts.json` (105 kluczy).
+- Naprawiono placeholder dla:
+  - `misc.bank_system.say_54`: `%d` -> `{0}` (zgodność z formatterem runtime).
+
+### Po co
+- Wcześniej część `sendLocalized*/sayLocalized` zwracała brak tłumaczenia (klucz zamiast tekstu), bo EN nie miał wpisów.
+- Po tym etapie EN jest kompletnym fallbackiem dla aktualnie używanych kluczy localized API.
+
+---
+
+## 81) Kontynuacja prac (bank_system: poprawne przekazanie argumentu do wiadomości guild withdraw) - 2026-02-08
+
+### Pliki
+- `data/npclib/npc_system/bank_system.lua`
+
+### Co zmieniono
+- Poprawiono wywołanie:
+  - `npcHandler:sayLocalized("misc.bank_system.say_54", npc, creature)`
+  - -> `npcHandler:sayLocalized("misc.bank_system.say_54", npc, creature, {count[playerId]})`
+
+### Po co
+- Klucz `misc.bank_system.say_54` zawiera parametr kwoty (`{0}`), więc brak argumentu powodowałby tekst bez podstawionej wartości.
+- Zmiana przywraca pełny komunikat potwierdzenia wypłaty z konta gildii.
+
+---
+
+## 82) Walidacja po tym etapie
+- Audyt użyć localized API w Lua:
+  - `used_unique: 1498`
+  - `missing_en: 0`
+- Potwierdzenie obecności przykładowych wcześniej brakujących kluczy:
+  - `scripts.afk.msg_1..3`
+  - `scripts.banana_chocolate_shake.msg_2`
+  - `scripts.reload.msg_2`
+  - `scripts.vip.msg_1`
+  - `misc.bank_system.say_1..67`
+- Testów runtime/CI nie uruchamiano (zgodnie z ustaleniem: testy na GitHub Actions po pełnym domknięciu i18n).
+
+---
+
+## 83) Kontynuacja prac (OTC: faktyczna regeneracja paczki `game_i18n_en*` z pełnego `i18n/en`) - 2026-02-08
+
+### Pliki
+- `testyy/data/locales/game_i18n_en.lua`
+- `testyy/data/locales/game_i18n_en_compact.lua`
+- `i18n/keymap.json`
+- `i18n/keymap_rev.json`
+- `i18n/keymap_meta.json`
+
+### Co zmieniono
+- Wykonano realny eksport klientowy EN (nie tylko konfiguracja pipeline):
+  - `generate_game_i18n(..., compact_keys=False)` -> `game_i18n_en.lua`
+  - `generate_game_i18n(..., compact_keys=True)` -> `game_i18n_en_compact.lua`
+- Eksport zebrał klucze ze wszystkich kategorii `i18n/en/*.json` (w tym wcześniej problematyczne `otclient_modules.json`).
+- Przy eksporcie compact zaktualizowano mapowania `keymap*` o nowe klucze dodane w tym etapie.
+
+### Wynik
+- `game_i18n_en.lua`:
+  - `Total translations: 52317`
+  - zawiera sekcję `otclient_modules` z `1987` kluczami.
+- `game_i18n_en_compact.lua`:
+  - `Total translations: 52317`
+- Rozmiar plików po regeneracji:
+  - `game_i18n_en.lua`: `52456` linii
+  - `game_i18n_en_compact.lua`: `52373` linii
+
+### Po co
+- Domknięcie luki „czy instalka/OTC czyta `otclient_modules.json`” nie tylko na poziomie kodu pipeline, ale też na poziomie realnie wygenerowanego artefaktu klienta.
+- Synchronizacja semantic + compact dictionaries dla EN (gotowe pod klientowe `tr()` i compact-key flow).
+
+---
+
+## 84) Walidacja po tym etapie
+- Potwierdzono obecność kluczy `otclient_modules.*` w:
+  - `testyy/data/locales/game_i18n_en.lua`
+- Potwierdzono obecność świeżo dopisanych kluczy runtime:
+  - `misc.bank_system.say_54`
+  - `scripts.banana_chocolate_shake.msg_2`
+  - `scripts.vip.msg_1`
+- Potwierdzono wpisy compact w `i18n/keymap.json` i `i18n/keymap_rev.json` dla nowych kluczy.
+- Testów runtime/CI nie uruchamiano (zgodnie z ustaleniem projektowym).

@@ -467,7 +467,7 @@ function Npc:parseGuildBank(message, npc, creature, playerId, npcHandler)
 		if string.match(message, "%d+") then
 			count[playerId] = getMoneyCount(message)
 			if isValidMoney(count[playerId]) then
-				npcHandler:sayLocalized("misc.bank_system.say_54", npc, creature)
+				npcHandler:sayLocalized("misc.bank_system.say_54", npc, creature, {count[playerId]})
 				npcHandler:setTopic(playerId, 125)
 			else
 				npcHandler:sayLocalized("misc.bank_system.say_55", npc, creature)

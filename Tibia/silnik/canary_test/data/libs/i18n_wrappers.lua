@@ -173,5 +173,24 @@ function Game.broadcastLocalizedMessageLua(key, messageType, args)
 	return true
 end
 
+-- ============================================
+-- Player i18n aliases
+-- ============================================
+-- Many migrated scripts use player:sendLocalizedMessage(type, key, args)
+-- and player:sendLocalizedCancelMessage(key, args) — these are aliases for
+-- the C++-registered player:sendLocalizedTextMessage(type, key, args).
+
+--- Alias: player:sendLocalizedMessage(type, key[, args])
+-- Same as sendLocalizedTextMessage — added for compatibility with migrated scripts
+function Player:sendLocalizedMessage(messageType, key, args)
+	return self:sendLocalizedTextMessage(messageType, key, args or {})
+end
+
+--- Alias: player:sendLocalizedCancelMessage(key[, args])
+-- Sends a localized cancel message (MESSAGE_FAILURE) to the player
+function Player:sendLocalizedCancelMessage(key, args)
+	return self:sendLocalizedTextMessage(MESSAGE_FAILURE, key, args or {})
+end
+
 -- Log that i18n wrappers are loaded
-print("[i18n] Wrappers loaded: NPC_LIB.i18n.npcSay, Item:setLocalizedDescription, creature:sayLocalized")
+print("[i18n] Wrappers loaded: NPC_LIB.i18n.npcSay, Item:setLocalizedDescription, creature:sayLocalized, Player:sendLocalizedMessage, Player:sendLocalizedCancelMessage")

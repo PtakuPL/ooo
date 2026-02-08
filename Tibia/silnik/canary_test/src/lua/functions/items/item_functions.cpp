@@ -367,9 +367,20 @@ int ItemFunctions::luaItemGetSubType(lua_State* L) {
 }
 
 int ItemFunctions::luaItemGetName(lua_State* L) {
-	// item:getName()
+	// item:getName([player|string locale])
 	const auto &item = Lua::getUserdataShared<Item>(L, 1, "Item");
 	if (item) {
+		const auto &viewer = Lua::getUserdataShared<Player>(L, 2, "Player");
+		if (viewer) {
+			Lua::pushString(L, item->getNameLocalized(viewer->getLocale()));
+			return 1;
+		}
+
+		if (lua_isstring(L, 2)) {
+			Lua::pushString(L, item->getNameLocalized(Lua::getString(L, 2)));
+			return 1;
+		}
+
 		Lua::pushString(L, item->getName());
 	} else {
 		lua_pushnil(L);

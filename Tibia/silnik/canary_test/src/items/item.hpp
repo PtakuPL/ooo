@@ -300,7 +300,7 @@ public:
 
 	static std::vector<std::pair<std::string, std::string>> getDescriptions(const ItemType &it, const std::shared_ptr<Item> &item = nullptr, std::string_view locale = {});
 	static std::string getDescription(const ItemType &it, int32_t lookDistance, const std::shared_ptr<Item> &item = nullptr, int32_t subType = -1, bool addArticle = true, std::string_view locale = {});
-	static std::string getNameDescription(const ItemType &it, const std::shared_ptr<Item> &item = nullptr, int32_t subType = -1, bool addArticle = true);
+	static std::string getNameDescription(const ItemType &it, const std::shared_ptr<Item> &item = nullptr, int32_t subType = -1, bool addArticle = true, std::string_view locale = {});
 	static std::string getWeightDescription(const ItemType &it, uint32_t weight, uint32_t count = 1, std::string_view locale = {});
 
 	std::string getDescription(int32_t lookDistance) final;
@@ -558,6 +558,7 @@ public:
 		}
 		return items[id].name;
 	}
+	std::string getNameLocalized(std::string_view locale) const;
 	std::string getPluralName() const {
 		if (hasAttribute(ItemAttribute_t::PLURALNAME)) {
 			return getString(ItemAttribute_t::PLURALNAME);

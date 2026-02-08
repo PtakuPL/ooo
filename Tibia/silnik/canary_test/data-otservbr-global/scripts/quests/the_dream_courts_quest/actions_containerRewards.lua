@@ -122,7 +122,7 @@ function actions_containerRewards.onUse(player, item, fromPosition, target, toPo
 		if iPos == k.cPosition and item:getUniqueId() == k.uniqueid then
 			if player:getStorageValue(k.storage) < k.value then
 				if k.defaultItem then
-					player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_containerRewards.msg_1" .. ItemType(k.reward):getName() .. ".")
+					player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_containerRewards.msg_1", { ItemType(k.reward):getName() })
 					player:addItem(k.reward, 1)
 				else
 					player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, k.text)

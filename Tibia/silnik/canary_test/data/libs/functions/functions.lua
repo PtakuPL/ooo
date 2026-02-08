@@ -552,7 +552,16 @@ function cleanAreaQuest(frompos, topos, itemtable, blockmonsters)
 	return true
 end
 
-function kickerPlayerRoomAfterMin(playername, fromPosition, toPosition, teleportPos, message, monsterName, minutes, firstCall, itemtable, blockmonsters)
+local function sendKickRoomMessage(player, fallbackMessage, messageI18nKey, messageI18nArgs)
+	if type(messageI18nKey) == "string" and messageI18nKey ~= "" then
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, messageI18nKey, messageI18nArgs or {})
+		return
+	end
+
+	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, fallbackMessage or "")
+end
+
+function kickerPlayerRoomAfterMin(playername, fromPosition, toPosition, teleportPos, message, monsterName, minutes, firstCall, itemtable, blockmonsters, messageI18nKey, messageI18nArgs)
 	local players = false
 	if type(playername) == table then
 		players = true
@@ -588,7 +597,7 @@ function kickerPlayerRoomAfterMin(playername, fromPosition, toPosition, teleport
 				cleanAreaQuest(fromPosition, toPosition, itemtable, blockmonsters)
 			end
 			player:teleportTo(teleportPos, true)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, message)
+			sendKickRoomMessage(player, message, messageI18nKey, messageI18nArgs)
 			return true
 		end
 	else
@@ -614,7 +623,7 @@ function kickerPlayerRoomAfterMin(playername, fromPosition, toPosition, teleport
 				local player = Player(pid)
 				if player and player:getPosition():isInRange(fromPosition, toPosition) then
 					player:teleportTo(teleportPos, true)
-					player:sendTextMessage(MESSAGE_EVENT_ADVANCE, message)
+					sendKickRoomMessage(player, message, messageI18nKey, messageI18nArgs)
 				end
 			end
 			return true
@@ -622,7 +631,7 @@ function kickerPlayerRoomAfterMin(playername, fromPosition, toPosition, teleport
 	end
 	local min = 60 -- Use the 60 for 1 minute
 	if firstCall then
-		addEvent(kickerPlayerRoomAfterMin, 1000, playername, fromPosition, toPosition, teleportPos, message, monsterName, minutes, false, itemtable, blockmonsters)
+		addEvent(kickerPlayerRoomAfterMin, 1000, playername, fromPosition, toPosition, teleportPos, message, monsterName, minutes, false, itemtable, blockmonsters, messageI18nKey, messageI18nArgs)
 	else
 		local subt = minutes - 1
 		if monsterName ~= "" then
@@ -630,7 +639,7 @@ function kickerPlayerRoomAfterMin(playername, fromPosition, toPosition, teleport
 				subt = 2
 			end
 		end
-		addEvent(kickerPlayerRoomAfterMin, min * 1000, playername, fromPosition, toPosition, teleportPos, message, monsterName, subt, false, itemtable, blockmonsters)
+		addEvent(kickerPlayerRoomAfterMin, min * 1000, playername, fromPosition, toPosition, teleportPos, message, monsterName, subt, false, itemtable, blockmonsters, messageI18nKey, messageI18nArgs)
 	end
 end
 

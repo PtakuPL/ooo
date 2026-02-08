@@ -18,7 +18,7 @@ function actions_sunFruit.onUse(player, item, fromPosition, target, toPosition, 
 	local r = math.random(2, 4)
 
 	player:addItem(fruitId, r)
-	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_sunFruit.msg_1" .. ItemType(fruitId):getName() .. "s.")
+	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_sunFruit.msg_1", { ItemType(fruitId):getName() })
 	item:transform(29970)
 	item:getPosition():sendMagicEffect(CONST_ME_MAGIC_RED)
 	addEvent(placeFruits, 1 * 60 * 60 * 1000, item:getPosition(), 29969, 29970)

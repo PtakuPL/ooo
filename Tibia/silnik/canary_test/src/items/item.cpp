@@ -60,6 +60,37 @@ std::string resolveI18nMarker(const std::string &text, std::string_view locale) 
 	return text;
 }
 
+std::string resolveItemTypeName(const ItemType &it, std::string_view locale) {
+	if (it.name.empty()) {
+		return {};
+	}
+
+	const std::string markerResolved = resolveI18nMarker(it.name, locale);
+	if (it.name.starts_with("#i18n:")) {
+		return markerResolved;
+	}
+
+	if (locale.empty() || locale == "en") {
+		return markerResolved;
+	}
+
+	const std::string requestedLocale(locale);
+	const std::string key = "item." + std::to_string(it.id) + ".name";
+	const std::string &translated = i18n::g_translator().get(key, requestedLocale);
+	if (!translated.empty() && translated != key) {
+		return translated;
+	}
+
+	// Backward compatibility for early key namespace used in some paths.
+	const std::string legacyKey = "items." + std::to_string(it.id) + ".name";
+	const std::string &legacyTranslated = i18n::g_translator().get(legacyKey, requestedLocale);
+	if (!legacyTranslated.empty() && legacyTranslated != legacyKey) {
+		return legacyTranslated;
+	}
+
+	return markerResolved;
+}
+
 std::string resolveItemTypeDescription(const ItemType &it, std::string_view locale) {
 	if (it.description.empty()) {
 		return {};
@@ -2562,7 +2593,7 @@ std::string Item::getDescription(const ItemType &it, int32_t lookDistance, const
 	auto &tr = i18n::g_translator();
 
 	std::ostringstream s;
-	s << getNameDescription(it, item, subType, addArticle);
+	s << getNameDescription(it, item, subType, addArticle, locale);
 
 	if (item) {
 		subType = item->getSubType();
@@ -3357,14 +3388,22 @@ std::string Item::getDescriptionLocalized(int32_t lookDistance, std::string_view
 	return getDescription(it, lookDistance, getItem(), -1, true, locale);
 }
 
-std::string Item::getNameDescription(const ItemType &it, const std::shared_ptr<Item> &item /*= nullptr*/, int32_t subType /*= -1*/, bool addArticle /*= true*/) {
+std::string Item::getNameLocalized(std::string_view locale) const {
+	if (hasAttribute(ItemAttribute_t::NAME)) {
+		return getString(ItemAttribute_t::NAME);
+	}
+
+	return resolveItemTypeName(items[id], locale);
+}
+
+std::string Item::getNameDescription(const ItemType &it, const std::shared_ptr<Item> &item /*= nullptr*/, int32_t subType /*= -1*/, bool addArticle /*= true*/, std::string_view locale /*= {}*/) {
 	if (item) {
 		subType = item->getSubType();
 	}
 
 	std::ostringstream s;
 
-	const std::string &name = (item ? item->getName() : it.name);
+	const std::string name = (item ? item->getNameLocalized(locale) : resolveItemTypeName(it, locale));
 	if (!name.empty()) {
 		if (it.stackable && subType > 1) {
 			if (it.showCount) {

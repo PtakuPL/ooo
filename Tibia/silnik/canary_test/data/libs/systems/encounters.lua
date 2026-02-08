@@ -258,6 +258,35 @@ function Encounter:broadcast(...)
 	self:getZone():sendTextMessage(...)
 end
 
+---Broadcasts a localized message to all players
+---@param messageType MessageClasses
+---@param key string
+---@param args table?
+---@param fallbackMessage string?
+function Encounter:broadcastLocalized(messageType, key, args, fallbackMessage)
+	messageType = messageType or MESSAGE_EVENT_ADVANCE
+	args = args or {}
+
+	local function sendToPlayer(player)
+		if type(key) == "string" and key ~= "" then
+			player:sendLocalizedTextMessage(messageType, key, args)
+		else
+			player:sendTextMessage(messageType, fallbackMessage or "")
+		end
+	end
+
+	if self.global then
+		for _, player in ipairs(Game.getPlayers()) do
+			sendToPlayer(player)
+		end
+		return
+	end
+
+	for _, player in ipairs(self:getZone():getPlayers()) do
+		sendToPlayer(player)
+	end
+end
+
 ---Counts the number of monsters with the given name in the encounter zone
 ---@param name string The name of the monster to count
 ---@return number The number of monsters with the given name
@@ -357,6 +386,21 @@ function Encounter:addBroadcast(message, type)
 	return self:addStage({
 		start = function()
 			self:broadcast(type, message)
+		end,
+	})
+end
+
+---Adds a stage that sends a localized message to all players
+---@param key string The i18n key
+---@param fallbackMessage string? Fallback plain message
+---@param args table? Message args
+---@param type MessageClasses?
+---@return boolean True if the message stage is added successfully, false otherwise
+function Encounter:addLocalizedBroadcast(key, fallbackMessage, args, type)
+	type = type or MESSAGE_EVENT_ADVANCE
+	return self:addStage({
+		start = function()
+			self:broadcastLocalized(type, key, args, fallbackMessage)
 		end,
 	})
 end

@@ -146,6 +146,8 @@ function cultsOfTibiaLevers.onUse(player, item, fromPosition, itemEx, toPosition
 	local ittable = {}
 	local blockmonsters = { "Leiden", "Wine Cask", "Liquor Spirit", "Ravenous Hunger" }
 	local convertTable = {}
+	local timeoutKickMessage = "You were kicked for exceeding the time limit within the boss room."
+	local timeoutKickMessageKey = "quests.cults_of_tibia.boss_room_timeout_kick"
 	item:transform(transformid[item:getId()])
 
 	if item:getActionId() == 5501 and item:getId() == 8912 then
@@ -196,7 +198,7 @@ function cultsOfTibiaLevers.onUse(player, item, fromPosition, itemEx, toPosition
 			Game.createMonster("Wine Cask", Position(33162, 31945, 15))
 			local leiden = Game.createMonster("Leiden", Position(33162, 31950, 15))
 			leiden:setHealth(leiden:getHealth() / 2)
-			kickerPlayerRoomAfterMin(convertTable, frompos, topos, Position(33121, 31951, 15), "You were kicked for exceeding the time limit within the boss room.", "", 60, true, ittable, blockmonsters)
+			kickerPlayerRoomAfterMin(convertTable, frompos, topos, Position(33121, 31951, 15), timeoutKickMessage, "", 60, true, ittable, blockmonsters, timeoutKickMessageKey)
 		end
 	end
 
@@ -248,7 +250,7 @@ function cultsOfTibiaLevers.onUse(player, item, fromPosition, itemEx, toPosition
 			transformMonster(25300, 1, "minotaur idol", Position(33158, 31921, 15), Position(33168, 31921, 15), 6)
 			addEvent(transformMonster, 13 * 15000, 3, 3, "Sphere Of Wrath", {}, {}, 0)
 			Game.createMonster("The False God", Position(33159, 31914, 15))
-			kickerPlayerRoomAfterMin(convertTable, frompos, topos, Position(33181, 31894, 15), "You were kicked for exceeding the time limit within the boss room.", "", 60, true, ittable, blockmonsters)
+			kickerPlayerRoomAfterMin(convertTable, frompos, topos, Position(33181, 31894, 15), timeoutKickMessage, "", 60, true, ittable, blockmonsters, timeoutKickMessageKey)
 		end
 	end
 
@@ -296,7 +298,7 @@ function cultsOfTibiaLevers.onUse(player, item, fromPosition, itemEx, toPosition
 				player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 			end
 
-			kickerPlayerRoomAfterMin(convertTable, frompos, topos, Position(33091, 31963, 15), "You were kicked for exceeding the time limit within the boss room.", "", 60, true, ittable, blockmonsters)
+			kickerPlayerRoomAfterMin(convertTable, frompos, topos, Position(33091, 31963, 15), timeoutKickMessage, "", 60, true, ittable, blockmonsters, timeoutKickMessageKey)
 			Game.createMonster("Pillar of Summoning", Position(33093, 31919, 15))
 			Game.createMonster("Pillar of Death", Position(33098, 31915, 15))
 			Game.createMonster("Pillar of Protection", Position(33103, 31919, 15))
@@ -354,7 +356,7 @@ function cultsOfTibiaLevers.onUse(player, item, fromPosition, itemEx, toPosition
 				player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 			end
 
-			kickerPlayerRoomAfterMin(convertTable, frompos, topos, Position(33109, 31887, 15), "You were kicked for exceeding the time limit within the boss room.", "", 60, true, ittable, blockmonsters)
+			kickerPlayerRoomAfterMin(convertTable, frompos, topos, Position(33109, 31887, 15), timeoutKickMessage, "", 60, true, ittable, blockmonsters, timeoutKickMessageKey)
 			Game.createMonster("The Sinister Hermit Dirty", Position(33131, 31925, 15))
 			activateGeyser()
 		end
@@ -448,7 +450,7 @@ function cultsOfTibiaLevers.onUse(player, item, fromPosition, itemEx, toPosition
 
 			Game.createMonster("Containment Machine", Position(33133, 31864, 15)):registerEvent("MachineDeath")
 			Game.createMonster("The Armored Voidborn", Position(33135, 31859, 15)):registerEvent("MachineDeath")
-			kickerPlayerRoomAfterMin(convertTable, frompos, topos, Position(33179, 31840, 15), "You were kicked for exceeding the time limit within the boss room.", "", 60, true, ittable, blockmonsters)
+			kickerPlayerRoomAfterMin(convertTable, frompos, topos, Position(33179, 31840, 15), timeoutKickMessage, "", 60, true, ittable, blockmonsters, timeoutKickMessageKey)
 		end
 	end
 
@@ -509,7 +511,7 @@ function cultsOfTibiaLevers.onUse(player, item, fromPosition, itemEx, toPosition
 
 			Game.createMonster("the sandking fake", Position(33099, 31858, 15)):registerEvent("SandkingThink")
 			Game.setStorageValue("sandking", 1)
-			kickerPlayerRoomAfterMin(convertTable, frompos, topos, Position(33459, 32269, 10), "You were kicked for exceeding the time limit within the boss room.", "", 60, true, ittable, blockmonsters)
+			kickerPlayerRoomAfterMin(convertTable, frompos, topos, Position(33459, 32269, 10), timeoutKickMessage, "", 60, true, ittable, blockmonsters, timeoutKickMessageKey)
 		end
 	end
 
@@ -584,7 +586,7 @@ function cultsOfTibiaLevers.onUse(player, item, fromPosition, itemEx, toPosition
 			spawnDarkSoul(2, 30)
 			spawnStolenSoul(30)
 
-			kickerPlayerRoomAfterMin(playersInArea, frompos, topos, Position(33072, 31867, 15), "You were kicked for exceeding the time limit within the boss room.", "", 60, true, ittable, blockmonsters)
+			kickerPlayerRoomAfterMin(playersInArea, frompos, topos, Position(33072, 31867, 15), timeoutKickMessage, "", 60, true, ittable, blockmonsters, timeoutKickMessageKey)
 		end
 	end
 

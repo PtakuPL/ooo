@@ -1175,3 +1175,318 @@ Kolejny moduł C++ ma komplet EN jako źródło do tłumaczeń na wszystkie jęz
   - `Player::getLoyaltyTitleLocalized(...)`
 - Lokalny parser Lua nie był dostępny (`SKIP_LUA_PARSE`), więc walidację Lua wykonano przez diff + spójność kluczy.
 - Testów nie uruchamiano (zgodnie z ustaleniem projektowym).
+
+---
+
+## 58) Kontynuacja prac (Highscore: loyalty title pod i18n + optymalizacja lookup) - 2026-02-08
+
+### Pliki
+- `src/game/game.cpp`
+- `src/server/network/protocol/protocolgame.cpp`
+
+### Co zmieniono
+- `protocolgame.cpp`:
+  - dodano helper `getLocalizedLoyaltyTitle(const std::string&, const std::string&)`,
+  - `sendHighscores(...)` nie wysyła już loyalty title „as-is”, tylko:
+    - `getLocalizedLoyaltyTitle(character.loyaltyTitle, locale)`.
+  - jeśli wartość jest kluczem (`lib.player.loyalty_title_*`), jest tłumaczona na locale odbiorcy;
+    dla wartości legacy (literal) zachowany jest fallback.
+- `game.cpp` (`Game::processHighscoreResults(...)`):
+  - usunięto TODO z pustym loyalty title,
+  - dodano jednorazową mapę `GUID -> loyaltyTitle` budowaną z aktualnie online graczy,
+  - przy budowie `HighscoreCharacter` loyalty title jest uzupełniany z tej mapy (bez ładowania offline postaci).
+
+### Po co
+- Highscore jest spójny z nowym modelem i18n loyalty title.
+- Eliminujemy EN-only prezentację tam, gdzie loyalty title jest dostępny.
+- Rozwiązanie jest lekkie wydajnościowo:
+  - brak dodatkowych zapytań DB,
+  - brak kosztownego `loadPlayerById` dla każdej pozycji highscore,
+  - lookup O(1) po lokalnej mapie zamiast powtarzanych skanów.
+
+---
+
+## 59) Walidacja po tym etapie
+- Sprawdzono `git diff --check` dla:
+  - `src/game/game.cpp`
+  - `src/server/network/protocol/protocolgame.cpp`
+  - `docs/I18N_LOCALE_SYNC_IMPLEMENTATION_2026-02-08.md`
+- Potwierdzono użycie:
+  - `getLocalizedLoyaltyTitle(...)` w `sendHighscores(...)`,
+  - mapy `onlineLoyaltyTitleByGuid` w `Game::processHighscoreResults(...)`.
+- Testów nie uruchamiano (zgodnie z ustaleniem projektowym).
+
+---
+
+## 60) Kontynuacja prac (punkt 2: Lua modal defaults bez hardcoded EN) - 2026-02-08
+
+### Pliki
+- `data/libs/functions/player.lua`
+- `i18n/en/libs.json`
+
+### Co zmieniono
+- `Player:showInfoModal(...)`:
+  - domyślny tekst przycisku nie jest już hardcoded (`"Close"`),
+  - używany jest klucz i18n:
+    - `lib.player.modal_button_close`
+- `Player:showConfirmationModal(...)`:
+  - domyślne przyciski `Yes` / `No` zostały przepięte na klucze i18n:
+    - `lib.player.modal_button_yes`
+    - `lib.player.modal_button_no`
+- Dodano bezpieczny helper Lua:
+  - `getTranslationOrFallback(player, key, fallback)`
+  - pobiera tłumaczenie z `Translator.getTranslation(...)` i robi fallback, gdy klucz/translator niedostępny.
+- Usunięto martwy hardcoded fragment EN:
+  - `baseMessage = "You have found a ..."` w `Player:canGetReward(...)` (zmienna nieużywana).
+- `i18n/en/libs.json`:
+  - dodano klucze EN:
+    - `lib.player.modal_button_close`
+    - `lib.player.modal_button_yes`
+    - `lib.player.modal_button_no`
+
+### Po co
+- Kolejne teksty UI po stronie Lua są gotowe pod wielojęzyczność.
+- Usunięto twarde EN ze wspólnych helperów modalnych, które są używane w wielu miejscach.
+
+---
+
+## 61) Walidacja po tym etapie
+- Zweryfikowano JSON:
+  - `python3 -m json.tool i18n/en/libs.json`
+- Sprawdzono `git diff --check` dla:
+  - `data/libs/functions/player.lua`
+  - `i18n/en/libs.json`
+- Potwierdzono użycia nowych kluczy:
+  - `lib.player.modal_button_close`
+  - `lib.player.modal_button_yes`
+  - `lib.player.modal_button_no`
+- Lokalny parser Lua niedostępny (`SKIP_LUA_PARSE`), więc walidację Lua wykonano przez diff + spójność kluczy.
+- Testów nie uruchamiano (zgodnie z ustaleniem projektowym).
+
+---
+
+## 62) Backlog / później (punkt 1)
+- Zgodnie z decyzją: odkładamy na później temat
+  - pełnego uzupełnienia loyalty title dla **offline** wpisów highscore.
+- Aktualny stan:
+  - loyalty title w highscore działa dla online postaci i jest lokalizowany per-locale odbiorcy.
+- Plan na później:
+  - dodać źródło loyalty title dla offline wpisów bez nadmiernego kosztu (np. precomputing/lekki cache/rozszerzenie query).
+
+---
+
+## 63) Kontynuacja prac (Questy: timeout boss-room bez hardcoded EN) - 2026-02-08
+
+### Pliki
+- `data/libs/functions/functions.lua`
+- `data-otservbr-global/scripts/quests/cults_of_tibia/actions_bosses_levers.lua`
+- `i18n/en/quests.json`
+
+### Co zmieniono
+- Rozszerzono helper `kickerPlayerRoomAfterMin(...)` o opcjonalne parametry:
+  - `messageI18nKey`
+  - `messageI18nArgs`
+- Dodano wewnętrzną obsługę wysyłki:
+  - jeżeli podany jest `messageI18nKey`, używane jest `sendLocalizedTextMessage(...)`,
+  - w przeciwnym razie zachowany dotychczasowy fallback do `sendTextMessage(...)`.
+- W `actions_bosses_levers.lua`:
+  - zastąpiono 7 hardcoded wywołań EN komunikatu timeoutu boss-room zmiennymi:
+    - `timeoutKickMessage` (fallback tekstu),
+    - `timeoutKickMessageKey` (`quests.cults_of_tibia.boss_room_timeout_kick`).
+- W `i18n/en/quests.json` dodano klucz:
+  - `quests.cults_of_tibia.boss_room_timeout_kick`.
+
+### Po co
+- Najwyższy priorytet z listy questowej: usunięcie powtarzanego EN-only komunikatu z krytycznego flow quest boss-room.
+- Zachowana pełna kompatybilność wstecz:
+  - stare wywołania helpera bez klucza i18n nadal działają.
+
+---
+
+## 64) Kontynuacja prac (Items: locale-aware nazwa + pipeline eksportu klienta OTC) - 2026-02-08
+
+### Pliki
+- `src/items/item.hpp`
+- `src/items/item.cpp`
+- `src/lua/functions/items/item_functions.cpp`
+- `src/creatures/players/player.cpp`
+- `tools/i18n_pipeline.py`
+
+### Co zmieniono
+- Dodano API C++:
+  - `Item::getNameLocalized(std::string_view locale) const`
+  - tłumaczy nazwę przez `item.<id>.name` (z fallback do tekstu bazowego),
+  - obsługuje też legacy namespace `items.<id>.name` dla kompatybilności.
+- Lua `item:getName()` rozszerzone do:
+  - `item:getName([player|string locale])`
+  - dzięki temu skrypty mogą pobierać nazwę itemu w locale odbiorcy bez ręcznych obejść.
+- Poprawiono key namespace w stash:
+  - `Player::getLocalizedItemName(...)` używa teraz `item.<id>.name`,
+  - pozostawiono fallback do `items.<id>.name` (legacy).
+- Pipeline i18n (`tools/i18n_pipeline.py`) rozszerzony o etap eksportu klienta OTC:
+  - wywołuje `tools/json_to_lua_locales.py --all`,
+  - nowa konfiguracja:
+    - `--client-locales-dir`
+    - `--skip-client-export`
+    - `--client-compact-keys`
+  - to domyka temat „czy `otclient_modules.json` jest brane do paczki klienta” na poziomie pipeline.
+
+### Po co
+- Usunięto blokadę z listy Copilot dla itemów: brak locale-aware `Item::getName()` dostępnego dla warstwy skryptowej.
+- Uspójniono nazewnictwo kluczy itemów (`item.*`) i zachowano bezpieczny fallback.
+- Zabezpieczono workflow klienta OTC przed pomijaniem kategorii JSON (w tym `otclient_modules.json`) podczas eksportu locale.
+
+---
+
+## 65) Walidacja po tym etapie
+- Zweryfikowano JSON:
+  - `python3 -m json.tool i18n/en/quests.json`
+- Zweryfikowano składnię Pythona:
+  - `python3 -m py_compile tools/i18n_pipeline.py`
+- Sprawdzono `git diff --check` dla:
+  - `data/libs/functions/functions.lua`
+  - `data-otservbr-global/scripts/quests/cults_of_tibia/actions_bosses_levers.lua`
+  - `i18n/en/quests.json`
+  - `src/items/item.hpp`
+  - `src/items/item.cpp`
+  - `src/lua/functions/items/item_functions.cpp`
+  - `src/creatures/players/player.cpp`
+  - `tools/i18n_pipeline.py`
+- Potwierdzono, że w `cults_of_tibia` wszystkie 7 wywołań timeoutu używa już klucza:
+  - `quests.cults_of_tibia.boss_room_timeout_kick`
+- Testów nie uruchamiano (zgodnie z ustaleniem projektowym).
+
+---
+
+## 66) Kontynuacja prac (Encounter broadcast: ścieżka localized bez łamania legacy) - 2026-02-08
+
+### Pliki
+- `data/libs/systems/encounters.lua`
+
+### Co zmieniono
+- Dodano nową metodę runtime:
+  - `Encounter:broadcastLocalized(messageType, key, args, fallbackMessage)`
+  - wysyła komunikat per-gracz przez `sendLocalizedTextMessage(...)`.
+- Dodano nowy builder stage:
+  - `Encounter:addLocalizedBroadcast(key, fallbackMessage, args, type)`
+  - analogiczny do `addBroadcast(...)`, ale pod i18n.
+- Zachowano pełną kompatybilność:
+  - istniejące `Encounter:addBroadcast(...)` i `Encounter:broadcast(...)` działają bez zmian.
+
+### Po co
+- Encounter stage był jedną z dróg, która naturalnie omijała i18n i trzymała EN literal.
+- Nowa metoda pozwala migrować questy etapami, bez masowego refaktoru istniejących raidów/encounterów.
+
+---
+
+## 67) Kontynuacja prac (Questy: kolejny batch EN -> i18n w encounter/soul war) - 2026-02-08
+
+### Pliki
+- `data-otservbr-global/scripts/quests/feaster_of_souls/actions_portal_brain_head.lua`
+- `data-otservbr-global/scripts/quests/primal_ordeal_quest/magma_bubble_fight.lua`
+- `data-otservbr-global/scripts/quests/soul_war/moveevent-soul_war_entrances.lua`
+- `i18n/en/scripts.json`
+
+### Co zmieniono
+- `actions_portal_brain_head.lua`:
+  - wejściowy broadcast encounter przepięty na:
+    - `encounter:addLocalizedBroadcast("scripts.actions_portal_brain_head.msg_5", ...)`
+- `magma_bubble_fight.lua`:
+  - 3 broadcasty EN (`entered volcano`, `volcano vibrates`, `take its revenge`) przepięte na `addLocalizedBroadcast(...)` z kluczami:
+    - `scripts.magma_bubble_fight.msg_2`
+    - `scripts.magma_bubble_fight.msg_3`
+    - `scripts.magma_bubble_fight.msg_4`
+- `moveevent-soul_war_entrances.lua`:
+  - usunięto sklejanie tekstu z kluczem i liczbą (anti-pattern),
+  - `msg_4` i `msg_5` teraz idą przez args do lokalizacji:
+    - `scripts.moveevent-soul_war_entrances.msg_4` + `{ text }`
+    - `scripts.moveevent-soul_war_entrances.msg_5` + `{ killCount, "20" }`
+- `i18n/en/scripts.json`:
+  - dodano:
+    - `scripts.actions_portal_brain_head.msg_5`
+    - `scripts.magma_bubble_fight.msg_2`
+    - `scripts.magma_bubble_fight.msg_3`
+    - `scripts.magma_bubble_fight.msg_4`
+  - poprawiono format klucza:
+    - `scripts.moveevent-soul_war_entrances.msg_5` (drugi placeholder `{1}` zamiast hardcoded `20`).
+
+### Po co
+- Usunięto kolejne realne EN-only komunikaty gracza w questach (nie nazwy potworów/ID techniczne).
+- Naprawiono ścieżkę soul war, gdzie klucz i18n był wcześniej de facto obchodzony przez konkatenację.
+
+---
+
+## 68) Walidacja po tym etapie
+- Zweryfikowano JSON:
+  - `python3 -m json.tool i18n/en/scripts.json`
+- Sprawdzono `git diff --check` dla:
+  - `data/libs/systems/encounters.lua`
+  - `data-otservbr-global/scripts/quests/feaster_of_souls/actions_portal_brain_head.lua`
+  - `data-otservbr-global/scripts/quests/primal_ordeal_quest/magma_bubble_fight.lua`
+  - `data-otservbr-global/scripts/quests/soul_war/moveevent-soul_war_entrances.lua`
+  - `i18n/en/scripts.json`
+- Potwierdzono użycie nowych kluczy i metod (`addLocalizedBroadcast`, `broadcastLocalized`, `msg_5` z argami).
+- Testów nie uruchamiano (zgodnie z ustaleniem projektowym).
+
+---
+
+## 69) Weryfikacja OTC (`otclient_modules.json`) i stan eksportu - 2026-02-08
+
+### Co sprawdzono
+- Porównano źródło i18n modułów OTC:
+  - `i18n/en/otclient_modules.json` (1,987 kluczy)
+- Ze stanem aktualnego artefaktu klientowego:
+  - `testyy/data/locales/game_i18n_en.lua`
+
+### Wynik
+- Aktualny `game_i18n_en.lua` jest krótki (177 linii) i **nie zawiera** kluczy z `otclient_modules.json`.
+- To oznacza, że artefakt klientowy jest niezsynchronizowany / historyczny (nieprzegenerowany pełnym eksporterem).
+
+### Działanie naprawcze (workflow)
+- W poprzednim etapie rozszerzono `tools/i18n_pipeline.py` o krok:
+  - `tools/json_to_lua_locales.py --all`
+- Dzięki temu przy uruchomieniu pipeline klucze z `otclient_modules.json` będą trafiać do paczek `game_i18n_<lang>.lua`.
+
+### Po co
+- Domknięcie punktu „czy instalka/pack bierze `otclient_modules.json`” na poziomie procesu build/export.
+- Eliminacja cichego rozjazdu między serwerowym `i18n/*.json` a klientowym bundle locale.
+
+---
+
+## 70) Kontynuacja prac (Items: locale-aware nazwa także w opisie/look i ItemType API) - 2026-02-08
+
+### Pliki
+- `src/items/item.hpp`
+- `src/items/item.cpp`
+- `src/lua/functions/items/item_type_functions.cpp`
+
+### Co zmieniono
+- `Item::getNameDescription(...)`:
+  - rozszerzono sygnaturę o `std::string_view locale` (domyślnie pusty),
+  - `Item::getDescription(..., locale)` przekazuje locale dalej do `getNameDescription(...)`,
+  - nazwa itemu w opisie/look korzysta teraz z lokalizacji (`item.<id>.name`) przez `resolveItemTypeName(...)` / `getNameLocalized(...)`.
+- `ItemType:getName(...)` w Lua:
+  - rozszerzono do wariantu:
+    - `itemType:getName([player|string locale])`
+  - dodano tłumaczenie po kluczu `item.<id>.name` z fallbackiem do `items.<id>.name` i finalnie do bazowej nazwy.
+
+### Po co
+- To domyka praktyczną część punktu „brak implementacji locale dla `Item::getName()`”:
+  - nie tylko `Item:getName(...)`, ale też opis/look itemu i `ItemType:getName(...)` w skryptach respektują locale.
+- Ułatwia dalszą migrację questów i UI, gdzie często operuje się na `ItemType` zamiast instancji `Item`.
+
+---
+
+## 71) Walidacja po tym etapie
+- Sprawdzono `git diff --check` dla:
+  - `src/items/item.hpp`
+  - `src/items/item.cpp`
+  - `src/lua/functions/items/item_type_functions.cpp`
+  - oraz batcha questowego (`encounters.lua`, questy, `i18n/en/scripts.json`).
+- Zweryfikowano JSON:
+  - `python3 -m json.tool i18n/en/scripts.json`
+- Potwierdzono użycia:
+  - `Encounter:addLocalizedBroadcast(...)`
+  - `Item::getNameDescription(..., locale)`
+  - `itemType:getName([player|string locale])`
+- Testów nie uruchamiano (zgodnie z ustaleniem projektowym).

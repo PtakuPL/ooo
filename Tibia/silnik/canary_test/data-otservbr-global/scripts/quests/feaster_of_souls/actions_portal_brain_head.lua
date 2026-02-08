@@ -58,7 +58,7 @@ function encounter:onReset()
 end
 
 encounter:addRemoveMonsters():autoAdvance()
-encounter:addBroadcast("You've entered the Brain Head's lair."):autoAdvance()
+encounter:addLocalizedBroadcast("scripts.actions_portal_brain_head.msg_5", "You've entered the Brain Head's lair."):autoAdvance()
 encounter
 	:addSpawnMonsters({
 		{

@@ -8907,12 +8907,30 @@ void Game::processHighscoreResults(const DBResult_ptr &result, uint32_t playerID
 	} else {
 		std::vector<HighscoreCharacter> characters;
 		characters.reserve(result->countResults());
+		std::unordered_map<uint32_t, std::string> onlineLoyaltyTitleByGuid;
+		onlineLoyaltyTitleByGuid.reserve(players.size());
+		for (const auto &[playerId, onlinePlayer] : players) {
+			(void)playerId;
+			if (!onlinePlayer) {
+				continue;
+			}
+
+			const std::string loyaltyTitle = onlinePlayer->getLoyaltyTitle();
+			if (!loyaltyTitle.empty()) {
+				onlineLoyaltyTitleByGuid.emplace(onlinePlayer->getGUID(), loyaltyTitle);
+			}
+		}
+
 		if (result) {
 			do {
 				const auto &voc = g_vocations().getVocation(result->getNumber<uint16_t>("vocation"));
+				const uint32_t characterGuid = result->getNumber<uint32_t>("id");
 				uint8_t characterVocation = voc ? voc->getClientId() : 0;
-				std::string loyaltyTitle; // todo get loyalty title from player
-				characters.emplace_back(std::move(result->getString("name")), result->getNumber<uint64_t>("points"), result->getNumber<uint32_t>("id"), result->getNumber<uint32_t>("rank"), result->getNumber<uint16_t>("level"), characterVocation, loyaltyTitle);
+				std::string loyaltyTitle;
+				if (const auto itLoyalty = onlineLoyaltyTitleByGuid.find(characterGuid); itLoyalty != onlineLoyaltyTitleByGuid.end()) {
+					loyaltyTitle = itLoyalty->second;
+				}
+				characters.emplace_back(std::move(result->getString("name")), result->getNumber<uint64_t>("points"), characterGuid, result->getNumber<uint32_t>("rank"), result->getNumber<uint16_t>("level"), characterVocation, loyaltyTitle);
 			} while (result->next());
 		}
 

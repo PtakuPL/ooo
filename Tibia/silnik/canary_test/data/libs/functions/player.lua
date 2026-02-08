@@ -527,12 +527,22 @@ function Player:setFiendish()
 	return false
 end
 
+local function getTranslationOrFallback(player, key, fallback)
+	if Translator and Translator.getTranslation then
+		local translated = Translator.getTranslation(player, key)
+		if translated and translated ~= key then
+			return translated
+		end
+	end
+	return fallback
+end
+
 function Player:showInfoModal(title, message, buttonText)
 	local modal = ModalWindow({
 		title = title,
 		message = message,
 	})
-	buttonText = buttonText or "Close"
+	buttonText = buttonText or getTranslationOrFallback(self, "lib.player.modal_button_close", "Close")
 	modal:addButton(buttonText, function() end)
 	modal:setDefaultEscapeButton(buttonText)
 
@@ -544,9 +554,9 @@ function Player:showConfirmationModal(title, message, yesCallback, noCallback, y
 		title = title,
 		message = message,
 	})
-	yesText = yesText or "Yes"
+	yesText = yesText or getTranslationOrFallback(self, "lib.player.modal_button_yes", "Yes")
 	modal:addButton(yesText, yesCallback or function() end)
-	noText = noText or "No"
+	noText = noText or getTranslationOrFallback(self, "lib.player.modal_button_no", "No")
 	modal:addButton(noText, noCallback or function() end)
 	modal:setDefaultEscapeButton(noText)
 
@@ -810,7 +820,6 @@ function Player:canGetReward(rewardId, questName)
 	end
 
 	local itemWeight = rewardItem:getWeight() / 100
-	local baseMessage = "You have found a " .. rewardItem:getName()
 	local backpack = self:getSlotItem(CONST_SLOT_BACKPACK)
 	if not backpack or backpack:getEmptySlots(true) < 1 then
 		self:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "lib.player.msg_found_no_room", {rewardItem:getName()})

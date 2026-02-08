@@ -108,7 +108,7 @@ function movements_acessTeleports.onStepIn(creature, item, position, fromPositio
 			for i = 1, #dreamScar do
 				if os.date("%A") == dreamScar[i].day then
 					if player:getStorageValue(dreamScar[i].storageTimer) > os.time() then
-						player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_acessTeleports.msg_3" .. dreamScar[i].bossName .. " again!")
+						player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_acessTeleports.msg_3", { dreamScar[i].bossName })
 						player:teleportTo(fromPosition)
 					else
 						player:teleportTo(Position(32208, 32026, 13))

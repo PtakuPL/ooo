@@ -2441,12 +2441,20 @@ std::string Player::getLocalizedItemName(const ItemType &itemType) const {
 
 	const std::string fallbackLocale = g_configManager().getString(DEFAULT_LOCALE);
 	const std::string &activeLocale = locale.empty() ? fallbackLocale : locale;
-	const auto key = fmt::format("items.{}.name", itemType.id);
-	const auto localized = i18n::g_translator().get(key, activeLocale);
-	if (localized.empty() || localized == key) {
+	auto &tr = i18n::g_translator();
+	const auto key = fmt::format("item.{}.name", itemType.id);
+	const auto localized = tr.get(key, activeLocale);
+	if (!localized.empty() && localized != key) {
+		return localized;
+	}
+
+	// Backward compatibility for early namespace used before key normalization.
+	const auto legacyKey = fmt::format("items.{}.name", itemType.id);
+	const auto legacyLocalized = tr.get(legacyKey, activeLocale);
+	if (legacyLocalized.empty() || legacyLocalized == legacyKey) {
 		return fallbackName;
 	}
-	return localized;
+	return legacyLocalized;
 }
 
 void Player::sendReLoginWindow(uint8_t unfairFightReduction) const {

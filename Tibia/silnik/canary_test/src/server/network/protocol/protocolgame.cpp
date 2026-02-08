@@ -152,6 +152,23 @@ namespace {
 		return translated;
 	}
 
+	std::string getLocalizedLoyaltyTitle(const std::string &titleOrKey, const std::string &locale) {
+		if (titleOrKey.empty()) {
+			return {};
+		}
+
+		static constexpr const char* loyaltyTitlePrefix = "lib.player.loyalty_title_";
+		if (titleOrKey.rfind(loyaltyTitlePrefix, 0) != 0) {
+			return titleOrKey;
+		}
+
+		const std::string translated = i18n::g_translator().get(titleOrKey, locale);
+		if (translated.empty() || translated == titleOrKey) {
+			return titleOrKey;
+		}
+		return translated;
+	}
+
 	void addOutfitAndMountBytes(NetworkMessage &msg, const std::shared_ptr<Item> &item, const CustomAttribute* attribute, const std::string &head, const std::string &body, const std::string &legs, const std::string &feet, bool addAddon = false, bool addByte = false) {
 		auto look = attribute->getAttribute<uint16_t>();
 		msg.add<uint16_t>(look);
@@ -2429,7 +2446,7 @@ void ProtocolGame::sendHighscores(const std::vector<HighscoreCharacter> &charact
 	for (const HighscoreCharacter &character : characters) {
 		msg.add<uint32_t>(character.rank); // Rank
 		msg.addString(character.name); // Character Name
-		msg.addString(character.loyaltyTitle); // Character Loyalty Title
+		msg.addString(getLocalizedLoyaltyTitle(character.loyaltyTitle, locale)); // Character Loyalty Title
 		msg.addByte(character.vocation); // Vocation Id
 		msg.addString(serverName); // World
 		msg.add<uint16_t>(character.level); // Level

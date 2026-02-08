@@ -579,7 +579,7 @@ else()
       set(LUA_LIBRARY ${LUA_LIBRARIES})
     endif()
     # Set browser include dir but exclude lua51 since we're using vcpkg's Lua
-    set(BROWSER_INCLUDE_DIR ${BROWSER_INCLUDE_DIR} ${CMAKE_SOURCE_DIR}/browser/include/bitlib)
+    set(BROWSER_INCLUDE_DIR ${BROWSER_INCLUDE_DIR} ${CMAKE_SOURCE_DIR}/browser/include)
   endif()
 endif()
 

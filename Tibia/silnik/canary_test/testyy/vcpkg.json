@@ -31,5 +31,5 @@
     { "name": "lua",    "platform": "wasm" },
     { "name": "pkgconf", "host": true, "platform": "windows" }
   ],
-  "builtin-baseline": "5b1214315250939257ef5d62ecdcbca18cf4fb1c"
+  "builtin-baseline": "cf6692675e04c036e21f26d64ae5fa3c8485f224"
 }

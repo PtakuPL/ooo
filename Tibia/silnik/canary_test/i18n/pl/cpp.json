@@ -195,6 +195,8 @@
   "cpp.game.looted_no_items": "You looted none of the dropped items",
   "cpp.game.looted_one_item": "You looted 1 item",
   "cpp.game.looted_some_items": "You looted some of the dropped items",
+  "cpp.game.market_coin_transaction_purchased": "Purchased on Market",
+  "cpp.game.market_coin_transaction_sold": "Sold on Market",
   "cpp.game.market_item_not_correct": "The item you tried to market is not correct. Check the item again.",
   "cpp.game.message_sent_to": "Message sent to {0}.",
   "cpp.game.no_loot": "No loot",

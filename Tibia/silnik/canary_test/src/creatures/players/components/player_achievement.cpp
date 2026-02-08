@@ -12,6 +12,7 @@
 
 #include "game/game.hpp"
 #include "kv/kv.hpp"
+#include "utils/i18n/translator.hpp"
 
 PlayerAchievement::PlayerAchievement(Player &player) :
 	m_player(player) { }
@@ -27,7 +28,13 @@ bool PlayerAchievement::add(uint16_t id, bool message /* = true*/, uint32_t time
 	}
 
 	if (message) {
-		m_player.sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "server.player_achievement.msg_1", { achievement.name });
+		auto &tr = i18n::g_translator();
+		const std::string loc(m_player.getLocale().empty() ? "en" : std::string(m_player.getLocale()));
+		std::string localizedName = tr.get("achievement." + std::to_string(achievement.id) + ".name", loc);
+		if (localizedName.empty()) {
+			localizedName = achievement.name;
+		}
+		m_player.sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "server.player_achievement.msg_1", { localizedName });
 	}
 
 	addPoints(achievement.points);

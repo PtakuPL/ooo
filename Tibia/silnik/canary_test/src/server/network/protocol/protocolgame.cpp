@@ -3815,13 +3815,19 @@ void ProtocolGame::sendCyclopediaCharacterAchievements(uint16_t secretsUnlocked,
 	msg.add<uint16_t>(player->achiev().getPoints());
 	msg.add<uint16_t>(secretsUnlocked);
 	msg.add<uint16_t>(static_cast<uint16_t>(achievementsUnlocked.size()));
+	auto &tr = i18n::g_translator();
+	const std::string loc(player->getLocale().empty() ? "en" : std::string(player->getLocale()));
 	for (const auto &[achievement, addedTimestamp] : achievementsUnlocked) {
 		msg.add<uint16_t>(achievement.id);
 		msg.add<uint32_t>(addedTimestamp);
 		if (achievement.secret) {
 			msg.addByte(0x01);
-			msg.addString(achievement.name);
-			msg.addString(achievement.description);
+			std::string nameKey = "achievement." + std::to_string(achievement.id) + ".name";
+			std::string descKey = "achievement." + std::to_string(achievement.id) + ".description";
+			std::string localizedName = tr.get(nameKey, loc);
+			std::string localizedDesc = tr.get(descKey, loc);
+			msg.addString(localizedName.empty() ? achievement.name : localizedName);
+			msg.addString(localizedDesc.empty() ? achievement.description : localizedDesc);
 			msg.addByte(achievement.grade);
 		} else {
 			msg.addByte(0x00);

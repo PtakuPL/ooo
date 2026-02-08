@@ -9553,6 +9553,9 @@ void Game::playerAcceptMarketOffer(uint32_t playerId, uint32_t timestamp, uint16
 	const auto &playerInbox = player->getInbox();
 
 	uint64_t totalPrice = offer.price * amount;
+	auto &marketTr = i18n::g_translator();
+	const std::string marketCoinPurchasedDetail = marketTr.get("cpp.game.market_coin_transaction_purchased", "en");
+	const std::string marketCoinSoldDetail = marketTr.get("cpp.game.market_coin_transaction_sold", "en");
 
 	// The player has an offer to by something and someone is going to sell to item type
 	// so the market action is 'buy' as who created the offer is buying.
@@ -9599,7 +9602,7 @@ void Game::playerAcceptMarketOffer(uint32_t playerId, uint32_t timestamp, uint16
 			playerAccount->removeCoins(
 				CoinType::Transferable,
 				amount,
-				"Sold on Market"
+				marketCoinSoldDetail
 			);
 		} else {
 			if (!removeOfferItems(player, depotLocker, it, amount, offer.tier, offerStatus)) {
@@ -9631,7 +9634,7 @@ void Game::playerAcceptMarketOffer(uint32_t playerId, uint32_t timestamp, uint16
 		g_metrics().addCounter("balance_increase", totalPrice, { { "player", player->getName() }, { "context", "market_sale" } });
 
 		if (it.id == ITEM_STORE_COIN) {
-			buyerPlayer->getAccount()->addCoins(CoinType::Transferable, amount, "Purchased on Market");
+			buyerPlayer->getAccount()->addCoins(CoinType::Transferable, amount, marketCoinPurchasedDetail);
 		} else {
 			uint16_t processedAmount = amount;
 			uint64_t effectivePrice = offer.price * processedAmount;
@@ -9671,7 +9674,7 @@ void Game::playerAcceptMarketOffer(uint32_t playerId, uint32_t timestamp, uint16
 		g_metrics().addCounter("balance_decrease", totalPrice, { { "player", player->getName() }, { "context", "market_purchase" } });
 
 		if (it.id == ITEM_STORE_COIN) {
-			player->getAccount()->addCoins(CoinType::Transferable, amount, "Purchased on Market");
+			player->getAccount()->addCoins(CoinType::Transferable, amount, marketCoinPurchasedDetail);
 		} else {
 			uint16_t processedAmount = amount;
 			uint64_t effectivePrice = offer.price * processedAmount;
@@ -9683,7 +9686,7 @@ void Game::playerAcceptMarketOffer(uint32_t playerId, uint32_t timestamp, uint16
 		sellerPlayer->setBankBalance(sellerPlayer->getBankBalance() + totalPrice);
 		g_metrics().addCounter("balance_increase", totalPrice, { { "player", sellerPlayer->getName() }, { "context", "market_sale" } });
 		if (it.id == ITEM_STORE_COIN) {
-			sellerPlayer->getAccount()->registerCoinTransaction(CoinTransactionType::Remove, CoinType::Transferable, amount, "Sold on Market");
+			sellerPlayer->getAccount()->registerCoinTransaction(CoinTransactionType::Remove, CoinType::Transferable, amount, marketCoinSoldDetail);
 		}
 
 		if (it.id != ITEM_STORE_COIN) {

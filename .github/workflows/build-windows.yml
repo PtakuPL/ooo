@@ -16,15 +16,6 @@ env:
   VCPKG_DEFAULT_HOST_TRIPLET: x64-windows
 
 jobs:
-  cancel-runs:
-    if: github.event_name == 'pull_request' && github.ref != 'refs/heads/master'
-    runs-on: ubuntu-latest
-    steps:
-      - name: Cancel Previous Runs
-        uses: styfle/cancel-workflow-action@0.12.1
-        with:
-          access_token: ${{ github.token }}
-
   build-windows:
     name: Windows Build (Release)
     runs-on: windows-2022
@@ -42,8 +33,8 @@ jobs:
       - name: Remove nested git directories (upstream mirrors)
         shell: bash
         run: |
-          rm -rf oryginall/canary-serwer/.git || true
-          rm -rf oryginall/otclient/.git || true
+          rm -rf ../oryginall/canary-serwer/.git || true
+          rm -rf ../oryginall/otclient/.git || true
 
       - name: Setup MSBuild
         uses: microsoft/setup-msbuild@v1.1
@@ -102,6 +93,7 @@ jobs:
           cmake -G "Ninja" `
                 -DCMAKE_BUILD_TYPE=Release `
                 -DCMAKE_TOOLCHAIN_FILE="$env:VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake" `
+                -DOPTIONS_ENABLE_SCCACHE=ON `
                 -DSPEED_UP_BUILD_UNITY=OFF `
                 -DTOGGLE_BIN_FOLDER=ON `
                 -S . -B build

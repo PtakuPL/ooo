@@ -1,7 +1,8 @@
 # Plan prac: Rendering fontów Unicode + Kompilacja multi-platform
 
 **Data:** 2026-02-08  
-**Status:** DO ZROBIENIA  
+**Ostatnia aktualizacja:** 2026-02-09  
+**Status:** W TRAKCIE  
 **Priorytet:** WYSOKI — blokuje release wielojęzyczny
 
 ---
@@ -63,25 +64,23 @@ Litery spoza ASCII (polskie: ą, ć, ę, ł, ń, ó, ś, ź, ż, oraz inne języ
 ## 2. Kompilacja OTC na platformy
 
 ### A) Kompilacja WWW (Emscripten/WASM)
-- **Brak** wsparcia Emscripten w obecnym CMakeLists.txt
-- Trzeba dodać toolchain emscripten, warunkową kompilację, WebGL renderer
-- FreeType i HarfBuzz muszą być skompilowane pod WASM
-- Problem: duże rozmiary binarne (fonty TTF → embed w WASM?)
+- **Istnieje** pełne wsparcie Emscripten w `src/CMakeLists.txt` (browserwindow, browserplatform, webconnection)
+- **Istnieje** `browser/shell.html` + `browser/overlay-ports/` (abseil, physfs, protobuf, lua51)
+- **Utworzono** workflow `.github/workflows/build-wasm.yml` — Emscripten 3.1.56, vcpkg wasm32-emscripten, Ninja
+- FreeType i HarfBuzz kompilują się pod WASM (wsparcie w vcpkg)
 
 ### B) Kompilacja Android
-- **Istnieje** katalog `android/` z gradle build
+- **Istnieje** katalog `android/` z Gradle build (GameActivity, Kotlin)
 - **Istnieje** w CMakeLists.txt: `VCPKG_TARGET_ANDROID` + `vcpkg_android.cmake`
-- Trzeba sprawdzić czy kompilacja działa po dodaniu TTFFont/TextShaper/HarfBuzz
-- NDK compatibility z FreeType + HarfBuzz
+- **Utworzono** workflow `.github/workflows/build-android.yml` — NDK r27, Gradle, vcpkg (arm64-v8a, armeabi-v7a)
+- **Zaktualizowano** `build.gradle`: stabilny NDK 27.2.12479018, CI-overridable ABI filter via `-Pabi=`
 
 ### C) Kompilacja Windows (GitHub Actions)
-- **Istnieje** workflow `build-linux.yml` ale **brak** `build-windows.yml`
-- Trzeba dodać workflow Windows z MSVC/MinGW
-- vcpkg na Windows obsługuje FreeType/HarfBuzz (trzeba sprawdzić konfigurację)
+- **Utworzono** workflow `.github/workflows/build-windows.yml` — MSVC + Ninja + vcpkg x64-windows-static
+- Statyczny runtime library (/MT), GHA binary caching
 
-### D) Kompilacja serwera Canary (Linux)
-- Działa — budowa w `budowa_silnik/`
-- Nie wymaga zmian fontowych (serwer nie renderuje tekstu)
+### D) Kompilacja Linux (GitHub Actions)
+- **Naprawiono** workflow `.github/workflows/build-linux.yml` — re-enabled, lukka/run-vcpkg@v11, GHA binary caching
 
 ---
 
@@ -93,17 +92,22 @@ Litery spoza ASCII (polskie: ą, ć, ę, ł, ń, ó, ś, ź, ż, oraz inne języ
 - [ ] Codex tłumaczy wszystkie klucze EN→PL
 - [ ] Weryfikacja kompletności tłumaczeń
 
-### Faza 2: Fix renderingu fontów Unicode
-- [ ] Analiza problemu spacing/sizing polskich znaków
-- [ ] Poprawki TTFFont.cpp — metryki, advance, bearing
-- [ ] Poprawki TextShaper.cpp — HarfBuzz shaping Latin Extended
-- [ ] Testy wizualne — porównanie EN vs PL liter w każdym rozmiarze fontu
-- [ ] Fix bitmapfont.cpp jeśli legacy fonty nadal używane
+### Faza 2: Fix renderingu fontów Unicode ✅ (commit `e94513e4c`)
+- [x] Analiza problemu spacing/sizing polskich znaków
+- [x] **KRYTYCZNY BUG**: Bitmap fonty przetwarzały tekst bajt-po-bajcie (`uint8_t text[i]`) — UTF-8 polskie znaki (np. 'ą' = 0xC4 0x85) renderowały się jako 2 śmieciowe glyphe
+- [x] Konwersja 11 bitmap fontów na TTF (NotoSans) — bypass uszkodzonego bitmap path
+- [x] Atlas `setSmooth(false)` — ostra tekstura zamiast rozmytego bilinear filtering
+- [x] FreeType `FT_LOAD_TARGET_LIGHT` / `FT_RENDER_MODE_LIGHT` — lżejszy hinting dla akcent chars
+- [x] Multi-line rendering TTF w `BitmapFont::drawText()` i `CachedText::update()` — split po '\n'
+- [ ] Testy wizualne — porównanie EN vs PL liter w każdym rozmiarze fontu (wymaga kompilacji)
+- [ ] Fine-tuning rozmiarów TTF (obecne mapowania to estymaty)
+- [ ] Fix bitmapfont.cpp jeśli legacy fonty nadal używane (konwersja na TTF już zastosowana)
 
-### Faza 3: Kompilacja multi-platform
-- [ ] Naprawić kompilację Windows (workflow + MSVC)  
-- [ ] Naprawić kompilację Android (gradle + NDK + FreeType/HarfBuzz)
-- [ ] Zbadać kompilację WWW (Emscripten + WASM)
+### Faza 3: Kompilacja multi-platform ✅ (commit `48a5dea99`)
+- [x] Naprawić kompilację Linux (workflow re-enabled, lukka/run-vcpkg@v11)
+- [x] Naprawić kompilację Windows (workflow `build-windows.yml` — MSVC + Ninja + vcpkg)
+- [x] Naprawić kompilację Android (workflow `build-android.yml` — NDK r27 + Gradle + vcpkg)
+- [x] Zbadać kompilację WWW (workflow `build-wasm.yml` — Emscripten + vcpkg wasm32-emscripten)
 
 ### Faza 4: Testing & Release
 - [ ] Test PL w kliencie Windows

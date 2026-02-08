@@ -133,6 +133,7 @@ jobs:
 
       - name: Run PR sonar-scanner
         if: ${{ (github.event_name == 'pull_request' || github.event_name == 'pull_request_target') && env.SONAR_TOKEN != '' }}
+        continue-on-error: true  # TODO: remove after creating PtakuPL_ooo_canary project on sonarcloud.io
         uses: SonarSource/sonarqube-scan-action@v6
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -150,6 +151,7 @@ jobs:
 
       - name: Run sonar-scanner
         if: ${{ github.event_name == 'push' && env.SONAR_TOKEN != '' }}
+        continue-on-error: true  # TODO: remove after creating PtakuPL_ooo_canary project on sonarcloud.io
         uses: SonarSource/sonarqube-scan-action@v6
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

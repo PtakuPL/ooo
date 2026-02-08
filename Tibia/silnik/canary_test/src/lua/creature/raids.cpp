@@ -11,6 +11,7 @@
 
 #include "config/configmanager.hpp"
 #include "creatures/monsters/monster.hpp"
+#include "creatures/players/player.hpp"
 #include "game/game.hpp"
 #include "game/scheduling/dispatcher.hpp"
 #include "server/network/webhook/webhook.hpp"

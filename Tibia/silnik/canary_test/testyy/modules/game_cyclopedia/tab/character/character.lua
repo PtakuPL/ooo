@@ -428,10 +428,23 @@ function Cyclopedia.achievementSort(option)
     local tempTable = {}
 
     for id, data in pairs(ACHIEVEMENTS) do
+        -- i18n: resolve translated name/description with fallback to hardcoded EN
+        local nameKey = "achievement." .. id .. ".name"
+        local descKey = "achievement." .. id .. ".description"
+        local translatedName = tr(nameKey)
+        local translatedDesc = tr(descKey)
+        -- If tr() returns the key itself, it means no translation found — use fallback
+        if translatedName == nameKey then
+            translatedName = data.name
+        end
+        if translatedDesc == descKey then
+            translatedDesc = data.description
+        end
+
         local tempData = {
             id = id,
-            name = data.name,
-            description = data.description,
+            name = translatedName,
+            description = translatedDesc,
             grade = data.grade
         }
 

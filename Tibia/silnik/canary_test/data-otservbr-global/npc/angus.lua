@@ -529,7 +529,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			-- Spectral Dress
 			-- Spectral Stone
 		elseif npcHandler:getTopic(playerId) == 32 then
-			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {\"npc.angus.say_spectral_1\", \"npc.angus.say_spectral_2\"}, 4000)
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.angus.say_spectral_1", "npc.angus.say_spectral_2"}, 4000)
 			npcHandler:setTopic(playerId, 0)
 			player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheSpectralStone, 53)
 			player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.SpectralStoneDoor, 1)

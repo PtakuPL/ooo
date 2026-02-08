@@ -53,21 +53,17 @@ local function addTravelKeyword(keyword, text, cost, discount, destination, cond
 	if condition then
 		keywordHandler:addKeyword({ keyword }, StdModule.say, {
 			npcHandler = npcHandler,
-			text = {
-				"Well, you might be just the hero they need there. To tell you the truth, some our most reliable ore mines have started to run low. ...",
-				"This is why we developed new steamship technologies to be able to further explore and cartograph the great subterraneous rivers. Our brothers have established a base on a continent far, far away. ...",
-				"We call that the far, far away base. But since it will hopefully become a flourishing mine one day, most of us started to call it {Farmine}. The dwarfs there could really use some help right now.",
-			},
+			i18nKey = "npc.urks_the_mute.stdmod_2",
 		}, condition, action)
 	end
 
-	local travelKeyword = keywordHandler:addKeyword({ keyword }, StdModule.say, { npcHandler = npcHandler, text = { text[1] }, cost = cost, discount = discount })
-	travelKeyword:addChildKeyword({ "yes" }, StdModule.travel, { npcHandler = npcHandler, premium = false, text = text[2], cost = cost, discount = discount, destination = destination })
-	travelKeyword:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, text = text[3], reset = true })
+	local travelKeyword = keywordHandler:addKeyword({ keyword }, StdModule.say, { npcHandler = npcHandler, i18nKey = text[1], cost = cost, discount = discount })
+	travelKeyword:addChildKeyword({ "yes" }, StdModule.travel, { npcHandler = npcHandler, premium = false, i18nKey = text[2], cost = cost, discount = discount, destination = destination })
+	travelKeyword:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, i18nKey = text[3], reset = true })
 end
 
-addTravelKeyword("kazordoon", { "<the dwarf smiles slightly, shows you a piece of paper with |TRAVELCOST| written on it, as expecting a {yes} or {no}>", "<the dwarf nods>", "<the dwarf just shrugs>" }, 200, "postman", Position(32660, 31957, 15))
-addTravelKeyword("cormaya", { "<the dwarf smiles slightly, shows you a piece of paper with |TRAVELCOST| written on it, as expecting a {yes} or {no}>", "<the dwarf nods>", "<the dwarf just shrugs>" }, 200, "postman", Position(33311, 31989, 15))
+addTravelKeyword("kazordoon", { "npc.urks_the_mute.stdmod_3", "npc.urks_the_mute.stdmod_4", "npc.urks_the_mute.stdmod_5" }, 200, "postman", Position(32660, 31957, 15))
+addTravelKeyword("cormaya", { "npc.urks_the_mute.stdmod_6", "npc.urks_the_mute.stdmod_7", "npc.urks_the_mute.stdmod_8" }, 200, "postman", Position(33311, 31989, 15))
 keywordHandler:addKeyword({ "passage" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.urks_the_mute.stdmod_1" })
 
 NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.urks_the_mute.greet_msg_1")

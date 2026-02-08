@@ -228,33 +228,21 @@ keywordHandler:addKeyword({ "carlin" }, StdModule.say, { npcHandler = npcHandler
 keywordHandler:addKeyword({ "service" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.emma.stdmod_3" })
 keywordHandler:addKeyword({ "cgb" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"The CGB is a patriotic organisation that fights our numerous enemies with means that guards or army do not have at their disposal. ...",
-		"We work secretly and covertly. We uncover secret plots and we are both the first line of defence of our city and the last. We are joined only by the best of the best.",
-	},
+	i18nKey = "npc.emma.stdmod_13",
 })
 keywordHandler:addKeyword({ "avin" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"The AVIN is rather a crime syndicate than anything else. If there is something dirty and illegal, they are most likely involved. ...",
-		"They are unscrupulous and also do not back away from blackmailing and assassination.",
-	},
+	i18nKey = "npc.emma.stdmod_14",
 })
 keywordHandler:addKeyword({ "tbi" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"The TBI is as old-fashioned, stubborn and inflexible as only males can be. What makes this bureaucracy somewhat dangerous, is the money they have at their disposal. ...",
-		"They buy spies and traitors - all of them weak-willed or greedy individuals.",
-	},
+	i18nKey = "npc.emma.stdmod_15",
 })
 keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.emma.stdmod_4" })
 keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.emma.stdmod_5" })
 keywordHandler:addKeyword({ "ab'dendriel" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"The elves of Ab'Dendriel are our allies. Our druids contribute most to keeping such a good relation. ...",
-		"They seem to understand the elves a bit better than we ordinary people do.",
-	},
+	i18nKey = "npc.emma.stdmod_16",
 })
 keywordHandler:addKeyword({ "thais" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.emma.stdmod_6" })
 keywordHandler:addKeyword({ "venore" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.emma.stdmod_7" })
@@ -263,10 +251,7 @@ keywordHandler:addKeyword({ "ankrahmun" }, StdModule.say, { npcHandler = npcHand
 keywordHandler:addKeyword({ "darashia" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.emma.stdmod_10" })
 keywordHandler:addKeyword({ "liberty bay" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"The name of the city is a cruel joke. The people there are oppressed by Thais and Venore who slowly bleed the isle and its people white. ...",
-		"It shows what would have happened to us if our rebellion had failed.",
-	},
+	i18nKey = "npc.emma.stdmod_17",
 })
 keywordHandler:addKeyword({ "port hope" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.emma.stdmod_11" })
 keywordHandler:addKeyword({ "kazordoon" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.emma.stdmod_12" })

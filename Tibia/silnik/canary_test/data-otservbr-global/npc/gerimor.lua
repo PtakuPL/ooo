@@ -69,11 +69,7 @@ keywordHandler:addKeyword({ "place" }, StdModule.say, {
 
 keywordHandler:addKeyword({ "me" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"I'm a member of a circle of persons, that joined wisdom and resources for a common purpose. Let's say, we have an eye on the greater picture in the matters of our world. ...",
-		"We are watching and evaluating what is happening in our world.	Trying to avert the worst and offering a helping hand where we deem it needed. ...",
-		"We usually avoid to interfere directly in the affairs of the world and vain politics are not our concern at all.",
-	},
+	i18nKey = "npc.gerimor.stdmod_10",
 })
 
 keywordHandler:addKeyword({ "circle" }, StdModule.say, {
@@ -83,10 +79,7 @@ keywordHandler:addKeyword({ "circle" }, StdModule.say, {
 
 keywordHandler:addKeyword({ "persons" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"Well, while I focus more on the matters of life, some of my peers have different approaches and emphasize other aspects of the world more in their observations. ...",
-		"Regardless we share a common goal of balance and harmony.",
-	},
+	i18nKey = "npc.gerimor.stdmod_11",
 })
 
 keywordHandler:addKeyword({ "approaches" }, StdModule.say, {
@@ -96,27 +89,17 @@ keywordHandler:addKeyword({ "approaches" }, StdModule.say, {
 
 keywordHandler:addKeyword({ "dawn" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"Even we know the individual that was somewhat of our funder, only as the wise man. ...",
-		"He was the first to bring bright and dedicated minds together, to bring at least a little order and guidance into troubled and chaotic times. ...",
-		"The order predates mankind and never bothered to give itself a name. Such assumptions of pretence and vanity have no place in our mindset.",
-	},
+	i18nKey = "npc.gerimor.stdmod_12",
 })
 
 keywordHandler:addKeyword({ "guidance" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"Most times we are silent watchers and keeper of knowledge that share what they have learned with each other. We are more concerned about knowledge and wisdom and power means little to us. ...",
-		"To solve problems we usually try to convince the right people to do the right thing. We usually even lack the means for a more direct interference.",
-	},
+	i18nKey = "npc.gerimor.stdmod_13",
 })
 
 keywordHandler:addKeyword({ "direct" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"Sometimes it's necessary to do something about a situation that became threatening to the world itself. ...",
-		"It is gladly a rare occurrence and usually it is sufficient to somewhat offer a guiding hand to avert a course that would lead to more dire consequences. Nonetheless sometimes we have to interfere.",
-	},
+	i18nKey = "npc.gerimor.stdmod_14",
 })
 
 keywordHandler:addKeyword({ "interfere" }, StdModule.say, {
@@ -131,95 +114,57 @@ keywordHandler:addKeyword({ "feyrist" }, StdModule.say, {
 
 keywordHandler:addKeyword({ "fae" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"The fae vary greatly in size and appearance. There are different kinds of fae like fauns, pixies, pookas, swan maidens, nymphs and boogies. Those mystical creatures are wielding power in magic and elementals. ...",
-		"Most of them are rather reclusive and live peaceful lives in their secret realm. Sometimes they are called the 'children of dreams' or 'the dream born' because the fae are born from the mortals' dreams.",
-	},
+	i18nKey = "npc.gerimor.stdmod_15",
 })
 
 keywordHandler:addKeyword({ "fauns" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"Fauns are half-human, half-beast nature spirits inhabiting the woods and mountains of Feyrist. They are a slightly roguish but cheerful folk, lovers of wine and dancing. ...",
-		"Fauns show a youthful and graceful aspect but they are also brave and fearless when it comes to defend themselves. As Maelyrra told me, they emerge from mortals' dreams about celebrations, music and dancing. ...",
-		"Lately, some fauns on Feyrist are tainted by the mysterious, sinister force that is threatening Feyrist as well as the rest of Tibia.",
-	},
+	i18nKey = "npc.gerimor.stdmod_16",
 })
 
 keywordHandler:addKeyword({ "pixies" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"Pixies are small nature spirits and mythical creatures inhabiting the forests and plains of Feyrist. They are generally benign, but at times, they may also display mischievous traits. ...",
-		"Like most of the fae, pixies love dancing and are often gathering in larger groups to dance on secluded glades. Pixies love flowers, butterflies, shimmering beetles, gems and other colourful things. ...",
-		"They also love the taste of honey, sweetened oat and ripe grapes. As Maelyrra told me, pixies emerge from mortals' dreams about friends and family.",
-	},
+	i18nKey = "npc.gerimor.stdmod_17",
 })
 
 keywordHandler:addKeyword({ "pookas" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"Pookas are nature spirits in animal form, looking like big hares with a faintly glittering fur. They are benign but mischievous, for sure with good reason regarded as the tricksters among the fae. ...",
-		"Pookas love to play pranks on others, snitching and hiding things or telling made-up stories. They are capricious and fickle creatures. Pookas emerge from mortals' dreams about gems, treasures and gold. ...",
-		"Lately, some pookas on Feyrist are tainted by a mysterious, sinister force that is threatening Feyrist as well as the rest of Tibia.",
-	},
+	i18nKey = "npc.gerimor.stdmod_18",
 })
 
 keywordHandler:addKeyword({ "swan maidens" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"Swan maidens are fae who can shapeshift from human form to swan form. The magical item allowing this transformation is a swan feather cloak, a garment with swan feathers attached. ...",
-		"Here on Feyrist it is always hard to tell whether a swan swimming on a lake is an ordinary animal or a swan maiden in her bird shape. ...",
-		"They protect the wilds of their secret realm from every intruder and live in small flocks along secluded lakeshores. As Maelyrra told me, swan maidens emerge from mortals' dreams about flying.",
-	},
+	i18nKey = "npc.gerimor.stdmod_19",
 })
 
 keywordHandler:addKeyword({ "nymphs" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"Nymphs are female nature spirits and usually take the form of beautiful, young maidens who love to dance and sing. They dwell in the hills and forests of Feyrist, often near lakes and streams and they can't die of old age nor illness. ...",
-		"They have a special, strong bond to the plants and animals of their domain and are very protective of Feyrist's flora and fauna. As Maelyrra told me, nymphs emerge from mortals' dreams about love.",
-	},
+	i18nKey = "npc.gerimor.stdmod_20",
 })
 
 keywordHandler:addKeyword({ "boogies" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"Boogies are a rather twisted kind of fae. Other than pixies, nymphs or fauns they favour underground caves and tunnels over forests or lush meadows. ...",
-		"Only at night, they are roaming the surface, chasing other fae and visitors to Feyrist alike. They were once clumsy yet peaceful fae, but they are now twisted and tainted by a mysterious, sinister force.",
-	},
+	i18nKey = "npc.gerimor.stdmod_21",
 })
 
 keywordHandler:addKeyword({ "maelyrra" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"She's the queen of a fae court. You can find her on a glade in the deep forest. It was queen Maelyrra who granted me permission to stay here in Feyrist. ...",
-		"I promised to inform her about anything I find out about the abominable force that threatens this world.",
-	},
+	i18nKey = "npc.gerimor.stdmod_22",
 })
 
 keywordHandler:addKeyword({ "fae court" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"The fae vary greatly in size and appearance. There are different kinds of fae like fauns, pixies, pookas, swan maidens, nymphs and boogies. Those mystical creatures are wielding power in magic and elementals. ...",
-		"Most of them are rather reclusive and live peaceful lives in their secret realm. Sometimes they are called the ,children of dreams' or ,the dream born' because the fae are born from the mortals' dreams.",
-	},
+	i18nKey = "npc.gerimor.stdmod_23",
 })
 
 keywordHandler:addKeyword({ "cults" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"It doesn't seem that the cults share a common theme or object of reverence but there has to be some connection beyond being at the centre of culminations of disruptive power from beyond. ...",
-		"The connection is of second thought though. Connected or not, they further the death of our world. That alone makes it imperative to dig those cults out and destroy their cores. ...",
-		"We won't be able to rout our each and any movement but if we manage to neutralize the worst, we gain some time and deny the enemy much of its leverage on the future of our world.",
-	},
+	i18nKey = "npc.gerimor.stdmod_24",
 })
 
 keywordHandler:addKeyword({ "worst" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"We have located some of the worst culminations of otherworldly presence and our sources returned information about them with different results of success. ...",
-		"Some information I can provide you will be rather sparse and much is left to speculation but you should have at least some lead where to go and investigate.",
-	},
+	i18nKey = "npc.gerimor.stdmod_25",
 })
 
 keywordHandler:addKeyword({ "investigate" }, StdModule.say, {
@@ -237,13 +182,7 @@ keywordHandler:addKeyword({ "fabric" }, StdModule.say, {
 
 keywordHandler:addKeyword({ "works" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"We haven't completely figured out what our enemy exactly is. For one, this thing defies all laws of nature and comprehension, ...",
-		"that understanding it is either impossible or twist a mind in ways that are not meant to be. Also the Yalahari who figured out way too much about the thing, became tainted and changed by this knowledge ...",
-		"And ultimately not only fell and became his, they also provided the thing with something of their own, be it knowledge, understanding or even direction, purpose. ...",
-		"In some way their tainted knowledge brought the unthinkable into a resemblance of existence. ...",
-		"That is why we cant dabble too much in figuring this out and rather concentrate on our fight to severe its ties to our world.",
-	},
+	i18nKey = "npc.gerimor.stdmod_26",
 })
 
 keywordHandler:addKeyword({ "ties" }, StdModule.say, {

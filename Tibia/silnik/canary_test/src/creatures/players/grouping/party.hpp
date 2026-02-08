@@ -54,6 +54,7 @@ public:
 	bool isPlayerInvited(const std::shared_ptr<Player> &player) const;
 	void updateAllPartyIcons();
 	void broadcastPartyMessage(MessageClasses msgClass, const std::string &msg, bool sendToInvitations = false);
+	void broadcastPartyLocalizedMessage(MessageClasses msgClass, const std::string &key, std::vector<std::string> args = {}, bool sendToInvitations = false);
 	bool empty() const;
 	bool canOpenCorpse(uint32_t ownerId) const;
 
@@ -95,7 +96,7 @@ public:
 	std::vector<std::shared_ptr<PartyAnalyzer>> membersData;
 
 private:
-	const char* getSharedExpReturnMessage(SharedExpStatus_t value) const;
+	const char* getSharedExpReturnKey(SharedExpStatus_t value) const;
 	bool isPlayerActive(const std::shared_ptr<Player> &player);
 	SharedExpStatus_t getSharedExperienceStatus();
 	uint32_t getHighestLevel();

@@ -8990,8 +8990,13 @@ void ProtocolGame::AddShopItem(NetworkMessage &msg, const ShopBlock &shopBlock) 
 }
 
 void ProtocolGame::parseExtendedOpcode(NetworkMessage &msg) {
+	static constexpr uint8_t LOCALE_EXTENDED_OPCODE = 1;
 	uint8_t opcode = msg.getByte();
 	const std::string &buffer = msg.getString();
+
+	if (opcode == LOCALE_EXTENDED_OPCODE) {
+		player->setLocale(buffer);
+	}
 
 	// process additional opcodes via lua script event
 	g_game().parsePlayerExtendedOpcode(player->getID(), opcode, buffer);

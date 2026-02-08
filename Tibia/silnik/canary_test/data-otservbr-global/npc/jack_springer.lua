@@ -200,75 +200,46 @@ keywordHandler:addKeyword({ "discuss" }, StdModule.say, { npcHandler = npcHandle
 keywordHandler:addKeyword({ "urgency" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.jack_springer.stdmod_2" })
 keywordHandler:addKeyword({ "start" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.jack_springer.stdmod_3" })
 keywordHandler:addKeyword({ "source" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.jack_springer.stdmod_4" })
-keywordHandler:addKeyword({ "events" }, StdModule.say, { npcHandler = npcHandler, text = {
-	"Well, in Rathleton there was an individual at work, looking for some ancient artefact of power. ...",
-	"To cover its escape the creature left another creature, known as the ravager to cover his tracks. But there is {more}.",
-} })
-keywordHandler:addKeyword({ "more" }, StdModule.say, { npcHandler = npcHandler, text = {
-	"Only recently someone was trying to manipulate the elven dream courts into releasing a monstrosity of nightmares, probably planning to control or recruit this creature. ....",
-	"But those incidents were just some of {many}.",
-} })
+keywordHandler:addKeyword({ "events" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.jack_springer.stdmod_21" })
+keywordHandler:addKeyword({ "more" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.jack_springer.stdmod_22" })
 keywordHandler:addKeyword({ "many" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.jack_springer.stdmod_5" })
 keywordHandler:addKeyword(
 	{ "iceberg" },
 	StdModule.say,
-	{ npcHandler = npcHandler, text = {
-		"There is a scheming going on behind the scenes. Powerful good people were corrupted. Evil-doers got backup and resources from a hidden ally. ...",
-		"Powerful malignant creatures, gathering their kind under their banner and so much more. These things are not happening by chance. There is a pattern, a guiding {hand}.",
-	} }
+	{ npcHandler = npcHandler, i18nKey = "npc.jack_springer.stdmod_23" }
 )
 keywordHandler:addKeyword({ "hand" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.jack_springer.stdmod_6" })
 keywordHandler:addKeyword({ "predates" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.jack_springer.stdmod_7" })
 keywordHandler:addKeyword(
 	{ "language" },
 	StdModule.say,
-	{ npcHandler = npcHandler, text = {
-		"It has a rather complex meaning and as far as we can tell it translates to 'army of those who are many, dedicated to the ultimate time of mayhem and despair'. ...",
-		"Other, more handy names are army of the last battlefield, army of the last days, legion of mayhem, dread legion or simply the {legion}.",
-	} }
+	{ npcHandler = npcHandler, i18nKey = "npc.jack_springer.stdmod_24" }
 )
 keywordHandler:addKeyword(
 	{ "legion" },
 	StdModule.say,
-	{ npcHandler = npcHandler, text = {
-		"We know little for sure. You can look into our books to see some of our sources. But most are vague and some even contradictory. ...",
-		"To summarise what we know, let me tell you this: The Shiron'Fal is an extremely old organisation. It seeks to accumulate power for some unknown but certainly sinister {goal}.",
-	} }
+	{ npcHandler = npcHandler, i18nKey = "npc.jack_springer.stdmod_25" }
 )
 keywordHandler:addKeyword({ "goal" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"For this purpose, the members gather knowledge, artefacts and powerful individuals. The members are formidable at certain fields of expertise. They are cunning and powerful and act with no regard for others, with no remorse or mercy. ...",
-		"As they are doing this since ages, they must have acquired tremendous powers and knowledge. Their members often operate alone but are usually well funded with the necessary resources. ...",
-		"Whatever their endgame might be, each of their operations pose a grave danger to the whole world and have to be {stopped}.",
-	},
+	i18nKey = "npc.jack_springer.stdmod_18",
 })
 keywordHandler:addKeyword({ "stopped" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.jack_springer.stdmod_8" })
 keywordHandler:addKeyword({ "clashes" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.jack_springer.stdmod_9" })
 keywordHandler:addKeyword({ "hurry" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.jack_springer.stdmod_10" })
 keywordHandler:addKeyword({ "problem" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.jack_springer.stdmod_11" })
-keywordHandler:addKeyword({ "knights" }, StdModule.say, { npcHandler = npcHandler, text = {
-	"The knights they aim at were tainted in life by their actions or happenstance. ...",
-	"This leaves their bodies vulnerable to their special breed of necromancy that would raise them as powerful {lich}-knights.",
-} })
+keywordHandler:addKeyword({ "knights" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.jack_springer.stdmod_26" })
 keywordHandler:addKeyword({ "lich" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.jack_springer.stdmod_12" })
 keywordHandler:addKeyword({ "scheme" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.jack_springer.stdmod_13" })
 keywordHandler:addKeyword({ "threats" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.jack_springer.stdmod_14" })
 keywordHandler:addKeyword({ "rituals" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.jack_springer.stdmod_15" })
 keywordHandler:addKeyword({ "purge" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"Reaching the graves will not be without danger and if you encounter the death cultists you will have to fight them. Even worse, they might have even succeeded in some cases. ...",
-		"As a newly risen lich-knight is not able to leave the site of its resurrection for some time, you might have to fight some of them. ...",
-		"Let us pray that you never come too {late} or else some of the fiends might be able to leave their crypts.",
-	},
+	i18nKey = "npc.jack_springer.stdmod_19",
 })
 keywordHandler:addKeyword({ "locations" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"We have located twelve graves that have to be secured: In the old northern Edron graveyard, in the dark cathedral of the plains of havoc, in the ghostlands, on Cormaya, Somewhere in the Femor Hills, on Vengoth, ...",
-		"in the graveyard of Darashia, in the old temple north of Thais, at the entrance to the orcland, one is on the southern ice islands, in a mountain on Kilmaresh, one on an island north-east of Ankrahmun.",
-	},
+	i18nKey = "npc.jack_springer.stdmod_20",
 })
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

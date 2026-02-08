@@ -27,6 +27,7 @@ public:
 
 	[[nodiscard]] std::string get(const std::string &key, const std::string &locale = "en") const;
 	[[nodiscard]] std::string format(const std::string &key, const std::string &locale, const std::vector<std::string> &args) const;
+	[[nodiscard]] static std::string normalizeLocale(std::string locale);
 
 	/// Plural-aware translation: selects key_one / key_few / key_many / key_other based on CLDR rules for @p locale.
 	/// Falls back: key+suffix → key_other → bare key.

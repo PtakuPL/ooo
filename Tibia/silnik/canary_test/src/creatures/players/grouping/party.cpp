@@ -203,9 +203,7 @@ bool Party::leaveParty(const std::shared_ptr<Player> &player, bool forceRemove /
 
 	clearPlayerPoints(player);
 
-	std::ostringstream ss;
-	ss << player->getName() << " has left the party.";
-	broadcastPartyMessage(MESSAGE_PARTY_MANAGEMENT, ss.str());
+	broadcastPartyLocalizedMessage(MESSAGE_PARTY_MANAGEMENT, "cpp.party.member_left", {player->getName()});
 
 	if (missingLeader || empty()) {
 		disband();
@@ -231,9 +229,7 @@ bool Party::passPartyLeadership(const std::shared_ptr<Player> &player) {
 		memberList.erase(it);
 	}
 
-	std::ostringstream ss;
-	ss << player->getName() << " is now the leader of the party.";
-	broadcastPartyMessage(MESSAGE_PARTY_MANAGEMENT, ss.str(), true);
+	broadcastPartyLocalizedMessage(MESSAGE_PARTY_MANAGEMENT, "cpp.party.new_leader", {player->getName()}, true);
 
 	const auto &oldLeader = leader;
 	m_leader = player;
@@ -281,9 +277,7 @@ bool Party::joinParty(const std::shared_ptr<Player> &player) {
 
 	inviteList.erase(it);
 
-	std::ostringstream ss;
-	ss << player->getName() << " has joined the party.";
-	broadcastPartyMessage(MESSAGE_PARTY_MANAGEMENT, ss.str());
+	broadcastPartyLocalizedMessage(MESSAGE_PARTY_MANAGEMENT, "cpp.party.member_joined", {player->getName()});
 
 	player->setParty(getParty());
 
@@ -357,13 +351,8 @@ void Party::revokeInvitation(const std::shared_ptr<Player> &player) {
 		return;
 	}
 
-	std::ostringstream ss;
-	ss << leader->getName() << " has revoked " << leader->getPossessivePronoun() << " invitation.";
-	player->sendTextMessage(MESSAGE_PARTY_MANAGEMENT, ss.str());
-
-	ss.str(std::string());
-	ss << "Invitation for " << player->getName() << " has been revoked.";
-	leader->sendTextMessage(MESSAGE_PARTY_MANAGEMENT, ss.str());
+	player->sendLocalizedTextMessage(MESSAGE_PARTY_MANAGEMENT, "cpp.party.invitation_revoked_by_leader", {leader->getName(), leader->getPossessivePronoun()});
+	leader->sendLocalizedTextMessage(MESSAGE_PARTY_MANAGEMENT, "cpp.party.invitation_revoked_for", {player->getName()});
 
 	removeInvite(player);
 }
@@ -378,16 +367,16 @@ bool Party::invitePlayer(const std::shared_ptr<Player> &player) {
 		return false;
 	}
 
-	std::ostringstream ss;
-	ss << player->getName() << " has been invited to join the party (Share range: " << getMinLevel() << "-" << getMaxLevel() << ").";
+	const std::string minLevel = std::to_string(getMinLevel());
+	const std::string maxLevel = std::to_string(getMaxLevel());
 
 	if (empty()) {
-		ss << " Open the party channel to communicate with your members.";
+		leader->sendLocalizedTextMessage(MESSAGE_PARTY_MANAGEMENT, "cpp.party.invited_member_with_hint", {player->getName(), minLevel, maxLevel});
 		g_game().updatePlayerShield(leader);
 		leader->sendCreatureSkull(leader);
+	} else {
+		leader->sendLocalizedTextMessage(MESSAGE_PARTY_MANAGEMENT, "cpp.party.invited_member", {player->getName(), minLevel, maxLevel});
 	}
-
-	leader->sendTextMessage(MESSAGE_PARTY_MANAGEMENT, ss.str());
 
 	inviteList.emplace_back(player);
 
@@ -401,9 +390,12 @@ bool Party::invitePlayer(const std::shared_ptr<Player> &player) {
 
 	player->addPartyInvitation(getParty());
 
-	ss.str(std::string());
-	ss << leader->getName() << " has invited you to " << leader->getPossessivePronoun() << " party (Share range: " << getMinLevel() << "-" << getMaxLevel() << ").";
-	player->sendTextMessage(MESSAGE_PARTY_MANAGEMENT, ss.str());
+	player->sendLocalizedTextMessage(MESSAGE_PARTY_MANAGEMENT, "cpp.party.invited_you", {
+		leader->getName(),
+		leader->getPossessivePronoun(),
+		minLevel,
+		maxLevel
+	});
 
 	return true;
 }
@@ -448,6 +440,25 @@ void Party::broadcastPartyMessage(MessageClasses msgClass, const std::string &ms
 	}
 }
 
+void Party::broadcastPartyLocalizedMessage(MessageClasses msgClass, const std::string &key, std::vector<std::string> args, bool sendToInvitations /*= false*/) {
+	const auto &leader = getLeader();
+	if (!leader) {
+		return;
+	}
+
+	for (const auto &member : getMembers()) {
+		member->sendLocalizedTextMessage(msgClass, key, args);
+	}
+
+	leader->sendLocalizedTextMessage(msgClass, key, args);
+
+	if (sendToInvitations) {
+		for (const auto &invitee : getInvitees()) {
+			invitee->sendLocalizedTextMessage(msgClass, key, args);
+		}
+	}
+}
+
 bool Party::empty() const {
 	return memberList.empty() && inviteList.empty();
 }
@@ -462,20 +473,20 @@ void Party::updateSharedExperience() {
 	}
 }
 
-const char* Party::getSharedExpReturnMessage(SharedExpStatus_t value) const {
+const char* Party::getSharedExpReturnKey(SharedExpStatus_t value) const {
 	switch (value) {
 		case SHAREDEXP_OK:
-			return "Shared Experience is now active.";
+			return "cpp.party.shared_exp_active";
 		case SHAREDEXP_TOOFARAWAY:
-			return "Shared Experience has been activated, but some members of your party are too far away.";
+			return "cpp.party.shared_exp_active_too_far";
 		case SHAREDEXP_LEVELDIFFTOOLARGE:
-			return "Shared Experience has been activated, but the level spread of your party is too wide.";
+			return "cpp.party.shared_exp_active_level_spread";
 		case SHAREDEXP_MEMBERINACTIVE:
-			return "Shared Experience has been activated, but some members of your party are inactive.";
+			return "cpp.party.shared_exp_active_inactive";
 		case SHAREDEXP_EMPTYPARTY:
-			return "Shared Experience has been activated, but you are alone in your party.";
+			return "cpp.party.shared_exp_active_alone";
 		default:
-			return "An error occured. Unable to activate shared experience.";
+			return "cpp.party.shared_exp_error";
 	}
 }
 
@@ -495,7 +506,7 @@ bool Party::setSharedExperience(const std::shared_ptr<Player> &player, bool newS
 		const SharedExpStatus_t &sharedExpStatus = getSharedExperienceStatus();
 		this->sharedExpEnabled = sharedExpStatus == SHAREDEXP_OK;
 		if (!silent) {
-			leader->sendTextMessage(MESSAGE_PARTY_MANAGEMENT, getSharedExpReturnMessage(sharedExpStatus));
+			leader->sendLocalizedTextMessage(MESSAGE_PARTY_MANAGEMENT, getSharedExpReturnKey(sharedExpStatus));
 		}
 	} else {
 		if (!silent) {

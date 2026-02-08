@@ -61,11 +61,7 @@ end
 
 local config = {
 	[1] = {
-		text = {
-			[1] = "npc.bozo.mission_1_t1",
-			[2] = "npc.bozo.mission_1_t2",
-			[3] = "npc.bozo.mission_1_t3",
-		},
+		i18nKey = "npc.bozo.stdmod_81",
 		yes = true,
 		removeItem = { itemId = 102 },
 		updateStorages = {
@@ -74,13 +70,7 @@ local config = {
 		},
 	},
 	[2] = {
-		text = {
-			[1] = {
-				"npc.bozo.mission_2_t1_1",
-				"npc.bozo.mission_2_t1_2",
-				"npc.bozo.mission_2_t1_3",
-				"npc.bozo.mission_2_t1_4",
-			},
+		i18nKey = "npc.bozo.stdmod_82",
 		},
 		addItem = { itemId = 135 },
 		updateStorages = {
@@ -89,11 +79,7 @@ local config = {
 		},
 	},
 	[3] = {
-		text = {
-			[1] = "npc.bozo.mission_3_t1",
-			[2] = "npc.bozo.mission_3_t2",
-			[3] = "npc.bozo.mission_3_t3",
-		},
+		i18nKey = "npc.bozo.stdmod_83",
 		yes = true,
 		removeItem = { itemId = 107 },
 		updateStorages = {
@@ -102,13 +88,7 @@ local config = {
 		},
 	},
 	[4] = {
-		text = {
-			[1] = {
-				"npc.bozo.mission_4_t1_1",
-				"npc.bozo.mission_4_t1_2",
-				"npc.bozo.mission_4_t1_3",
-				"npc.bozo.mission_4_t1_4",
-			},
+		i18nKey = "npc.bozo.stdmod_84",
 		},
 		updateStorages = {
 			{ key = Storage.Quest.U8_1.WhatAFoolishQuest.Mission3, value = 1 },
@@ -116,14 +96,7 @@ local config = {
 		},
 	},
 	[5] = {
-		text = {
-			[1] = "npc.bozo.mission_5_t1",
-			[2] = "npc.bozo.mission_5_t2",
-			[3] = {
-				"npc.bozo.mission_5_t3_1",
-				"npc.bozo.mission_5_t3_2",
-				"npc.bozo.mission_5_t3_3",
-			},
+		i18nKey = "npc.bozo.stdmod_85",
 		},
 		yes = true,
 		removeItem = { itemId = 119 },
@@ -134,11 +107,7 @@ local config = {
 		},
 	},
 	[6] = {
-		text = {
-			[1] = {
-				"npc.bozo.mission_6_t1_1",
-				"npc.bozo.mission_6_t1_2",
-			},
+		i18nKey = "npc.bozo.stdmod_86",
 		},
 		updateStorages = {
 			{ key = Storage.Quest.U8_1.WhatAFoolishQuest.Mission4, value = 1 },
@@ -146,14 +115,7 @@ local config = {
 		},
 	},
 	[7] = {
-		text = {
-			[1] = "npc.bozo.mission_7_t1",
-			[2] = "npc.bozo.mission_7_t2",
-			[3] = {
-				"npc.bozo.mission_7_t3_1",
-				"npc.bozo.mission_7_t3_2",
-				"npc.bozo.mission_7_t3_3",
-			},
+		i18nKey = "npc.bozo.stdmod_87",
 		},
 		yes = true,
 		removeItem = { itemId = 2874, count = 18, subType = 2 },
@@ -164,11 +126,7 @@ local config = {
 		addItem = { itemId = 117 },
 	},
 	[8] = {
-		text = {
-			[1] = "npc.bozo.mission_8_t1",
-			[2] = "npc.bozo.mission_8_t2",
-			[3] = "npc.bozo.mission_8_t3",
-		},
+		i18nKey = "npc.bozo.stdmod_88",
 		yes = true,
 		removeItem = { itemId = 118 },
 		updateStorages = {
@@ -177,12 +135,7 @@ local config = {
 		},
 	},
 	[9] = {
-		text = {
-			[1] = {
-				"npc.bozo.mission_9_t1_1",
-				"npc.bozo.mission_9_t1_2",
-				"npc.bozo.mission_9_t1_3",
-			},
+		i18nKey = "npc.bozo.stdmod_89",
 		},
 		updateStorages = {
 			{ key = Storage.Quest.U8_1.WhatAFoolishQuest.Mission5, value = 1 },
@@ -191,16 +144,7 @@ local config = {
 		},
 	},
 	[10] = {
-		text = {
-			[1] = "npc.bozo.mission_10_t1",
-			[2] = "npc.bozo.mission_10_t2",
-			[3] = {
-				"npc.bozo.mission_10_t3_1",
-				"npc.bozo.mission_10_t3_2",
-				"npc.bozo.mission_10_t3_3",
-				"npc.bozo.mission_10_t3_4",
-				"npc.bozo.mission_10_t3_5",
-			},
+		i18nKey = "npc.bozo.stdmod_90",
 		},
 		yes = true,
 		checkItemCount = 112,
@@ -210,13 +154,7 @@ local config = {
 		},
 	},
 	[11] = {
-		text = {
-			[1] = "npc.bozo.mission_11_t1",
-			[2] = "npc.bozo.mission_11_t2",
-			[3] = {
-				"npc.bozo.mission_11_t3_1",
-				"npc.bozo.mission_11_t3_2",
-			},
+		i18nKey = "npc.bozo.stdmod_91",
 		},
 		yes = true,
 		checkStorage = Storage.Quest.U8_1.WhatAFoolishQuest.EmperorBeardShave,
@@ -227,25 +165,17 @@ local config = {
 		},
 	},
 	[12] = {
-		text = {
-			[1] = "npc.bozo.mission_12_t1",
-		},
+		i18nKey = "npc.bozo.stdmod_92",
 	},
 	[13] = {
-		text = {
-			[1] = "npc.bozo.mission_13_t1",
-		},
+		i18nKey = "npc.bozo.stdmod_93",
 		updateStorages = {
 			{ key = Storage.Quest.U8_1.WhatAFoolishQuest.Mission6, value = 1 },
 			{ key = Storage.Quest.U8_1.WhatAFoolishQuest.Questline, value = 14 },
 		},
 	},
 	[14] = {
-		text = {
-			[1] = "npc.bozo.mission_14_t1",
-			[2] = "npc.bozo.mission_14_t2",
-			[3] = "npc.bozo.mission_14_t3",
-		},
+		i18nKey = "npc.bozo.stdmod_94",
 		yes = true,
 		removeItem = { itemId = 5878, count = 4 },
 		updateStorages = {
@@ -254,11 +184,7 @@ local config = {
 		},
 	},
 	[15] = {
-		text = {
-			[1] = "npc.bozo.mission_15_t1",
-			[2] = "npc.bozo.mission_15_t2",
-			[3] = "npc.bozo.mission_15_t3",
-		},
+		i18nKey = "npc.bozo.stdmod_95",
 		yes = true,
 		removeItem = { itemId = 5879 },
 		updateStorages = {
@@ -268,11 +194,7 @@ local config = {
 		effect = CONST_ME_POFF,
 	},
 	[16] = {
-		text = {
-			[1] = {
-				"npc.bozo.mission_16_t1_1",
-				"npc.bozo.mission_16_t1_2",
-			},
+		i18nKey = "npc.bozo.stdmod_96",
 		},
 		addItem = { itemId = 121 },
 		updateStorages = {
@@ -281,11 +203,7 @@ local config = {
 		},
 	},
 	[17] = {
-		text = {
-			[1] = "npc.bozo.mission_17_t1",
-			[2] = "npc.bozo.mission_17_t2",
-			[3] = "npc.bozo.mission_17_t3",
-		},
+		i18nKey = "npc.bozo.stdmod_97",
 		yes = true,
 		checkStorage = Storage.Quest.U8_1.WhatAFoolishQuest.WhoopeeCushion,
 		updateStorages = {
@@ -294,11 +212,7 @@ local config = {
 		},
 	},
 	[18] = {
-		text = {
-			[1] = {
-				"npc.bozo.mission_18_t1_1",
-				"npc.bozo.mission_18_t1_2",
-			},
+		i18nKey = "npc.bozo.stdmod_98",
 		},
 		updateStorages = {
 			{ key = Storage.Quest.U8_1.WhatAFoolishQuest.Mission7, value = 1 },
@@ -307,11 +221,7 @@ local config = {
 		},
 	},
 	[19] = {
-		text = {
-			[1] = "npc.bozo.mission_19_t1",
-			[2] = "npc.bozo.mission_19_t2",
-			[3] = "npc.bozo.mission_19_t3",
-		},
+		i18nKey = "npc.bozo.stdmod_99",
 		yes = true,
 		checkStorage = Storage.Quest.U8_1.WhatAFoolishQuest.ScaredCarina,
 		updateStorages = {
@@ -320,11 +230,7 @@ local config = {
 		},
 	},
 	[20] = {
-		text = {
-			[1] = {
-				"npc.bozo.mission_20_t1_1",
-				"npc.bozo.mission_20_t1_2",
-			},
+		i18nKey = "npc.bozo.stdmod_100",
 		},
 		updateStorages = {
 			{ key = Storage.Quest.U8_1.WhatAFoolishQuest.Mission8, value = 1 },
@@ -332,11 +238,7 @@ local config = {
 		},
 	},
 	[21] = {
-		text = {
-			[1] = "npc.bozo.mission_21_t1",
-			[2] = "npc.bozo.mission_21_t2",
-			[3] = "npc.bozo.mission_21_t3",
-		},
+		i18nKey = "npc.bozo.stdmod_101",
 		yes = true,
 		removeItem = { itemId = 124 },
 		updateStorages = {
@@ -345,11 +247,7 @@ local config = {
 		},
 	},
 	[22] = {
-		text = {
-			[1] = "npc.bozo.mission_22_t1",
-			[2] = "npc.bozo.mission_22_t2",
-			[3] = "npc.bozo.mission_22_t3",
-		},
+		i18nKey = "npc.bozo.stdmod_102",
 		yes = true,
 		removeItem = { itemId = 3129 },
 		updateStorages = {
@@ -358,11 +256,7 @@ local config = {
 		},
 	},
 	[23] = {
-		text = {
-			[1] = {
-				"npc.bozo.mission_23_t1_1",
-				"npc.bozo.mission_23_t1_2",
-			},
+		i18nKey = "npc.bozo.stdmod_103",
 		},
 		addItem = { itemId = 141 },
 		updateStorages = {
@@ -371,11 +265,7 @@ local config = {
 		},
 	},
 	[24] = {
-		text = {
-			[1] = "npc.bozo.mission_24_t1",
-			[2] = "npc.bozo.mission_24_t2",
-			[3] = "npc.bozo.mission_24_t3",
-		},
+		i18nKey = "npc.bozo.stdmod_104",
 		yes = true,
 		checkStorage = Storage.Quest.U8_1.WhatAFoolishQuest.Cigar,
 		updateStorages = {
@@ -386,11 +276,7 @@ local config = {
 		addon = 1,
 	},
 	[25] = {
-		text = {
-			[1] = {
-				"npc.bozo.mission_25_t1_1",
-				"npc.bozo.mission_25_t1_2",
-			},
+		i18nKey = "npc.bozo.stdmod_105",
 		},
 		updateStorages = {
 			{ key = Storage.Quest.U8_1.WhatAFoolishQuest.Mission9, value = 1 },
@@ -399,13 +285,7 @@ local config = {
 		addItem = { itemId = 135 },
 	},
 	[26] = {
-		text = {
-			[1] = "npc.bozo.mission_26_t1",
-			[2] = "npc.bozo.mission_26_t2",
-			[3] = {
-				"npc.bozo.mission_26_t3_1",
-				"npc.bozo.mission_26_t3_2",
-			},
+		i18nKey = "npc.bozo.stdmod_106",
 		},
 		yes = true,
 		removeItem = { itemId = 125 },
@@ -416,11 +296,7 @@ local config = {
 		addItem = { itemId = 135 },
 	},
 	[27] = {
-		text = {
-			[1] = "npc.bozo.mission_27_t1",
-			[2] = "npc.bozo.mission_27_t2",
-			[3] = "npc.bozo.mission_27_t3",
-		},
+		i18nKey = "npc.bozo.stdmod_107",
 		yes = true,
 		removeItem = { itemId = 9149 },
 		updateStorages = {
@@ -429,13 +305,7 @@ local config = {
 		},
 	},
 	[28] = {
-		text = {
-			[1] = {
-				"npc.bozo.mission_28_t1_1",
-				"npc.bozo.mission_28_t1_2",
-				"npc.bozo.mission_28_t1_3",
-				"npc.bozo.mission_28_t1_4",
-			},
+		i18nKey = "npc.bozo.stdmod_108",
 		},
 		updateStorages = {
 			{ key = Storage.Quest.U8_1.WhatAFoolishQuest.Mission9, value = 4 },
@@ -444,11 +314,7 @@ local config = {
 		addItem = { itemId = 127 },
 	},
 	[29] = {
-		text = {
-			[1] = "npc.bozo.mission_29_t1",
-			[2] = "npc.bozo.mission_29_t2",
-			[3] = "npc.bozo.mission_29_t3",
-		},
+		i18nKey = "npc.bozo.stdmod_109",
 		yes = true,
 		checkStorage = Storage.Quest.U8_1.WhatAFoolishQuest.Contract,
 		updateStorages = {
@@ -457,11 +323,7 @@ local config = {
 		},
 	},
 	[30] = {
-		text = {
-			[1] = {
-				"npc.bozo.mission_30_t1_1",
-				"npc.bozo.mission_30_t1_2",
-			},
+		i18nKey = "npc.bozo.stdmod_110",
 			[3] = {
 				"npc.bozo.mission_30_t3_1",
 				"npc.bozo.mission_30_t3_2",
@@ -478,10 +340,7 @@ local config = {
 		addItem = { itemId = 130, count = 10 },
 	},
 	[31] = {
-		text = {
-			[1] = "npc.bozo.mission_31_t1",
-			[3] = "npc.bozo.mission_31_t3",
-		},
+		i18nKey = "npc.bozo.stdmod_111",
 		yes = true,
 		cookiesDelivery = true,
 		updateStorages = {
@@ -490,11 +349,7 @@ local config = {
 		},
 	},
 	[32] = {
-		text = {
-			[1] = {
-				"npc.bozo.mission_32_t1_1",
-				"npc.bozo.mission_32_t1_2",
-			},
+		i18nKey = "npc.bozo.stdmod_112",
 		},
 		updateStorages = {
 			{ key = Storage.Quest.U8_1.WhatAFoolishQuest.Mission11, value = 1 },
@@ -502,14 +357,7 @@ local config = {
 		},
 	},
 	[33] = {
-		text = {
-			[1] = "npc.bozo.mission_33_t1",
-			[2] = "npc.bozo.mission_33_t2",
-			[3] = {
-				"npc.bozo.mission_33_t3_1",
-				"npc.bozo.mission_33_t3_2",
-				"npc.bozo.mission_33_t3_3",
-			},
+		i18nKey = "npc.bozo.stdmod_113",
 		},
 		yes = true,
 		removeItem = { itemId = 5909, count = 5 },
@@ -520,14 +368,7 @@ local config = {
 		addItem = { itemId = 142 },
 	},
 	[34] = {
-		text = {
-			[1] = "npc.bozo.mission_34_t1",
-			[2] = "npc.bozo.mission_34_t2",
-			[3] = {
-				"npc.bozo.mission_34_t3_1",
-				"npc.bozo.mission_34_t3_2",
-				"npc.bozo.mission_34_t3_3",
-			},
+		i18nKey = "npc.bozo.stdmod_114",
 		},
 		yes = true,
 		removeItem = { itemId = 143 },
@@ -538,11 +379,7 @@ local config = {
 		addItem = { itemId = 144 },
 	},
 	[35] = {
-		text = {
-			[1] = "npc.bozo.mission_35_t1",
-			[2] = "npc.bozo.mission_35_t2",
-			[3] = "npc.bozo.mission_35_t3",
-		},
+		i18nKey = "npc.bozo.stdmod_115",
 		yes = true,
 		checkStorage = Storage.Quest.U8_1.WhatAFoolishQuest.ScaredKazzan,
 		updateStorages = {
@@ -554,45 +391,31 @@ local config = {
 		last = true,
 	},
 	[36] = {
-		text = {
-			[1] = "npc.bozo.mission_36_t1",
-		},
+		i18nKey = "npc.bozo.stdmod_116",
 	},
 }
 
 local jesterOutfit = {
 	[-1] = {
-		text = {
-			[1] = "npc.bozo.jester_n1_t1",
-			[2] = "npc.bozo.jester_n1_t2",
-		},
+		i18nKey = "npc.bozo.stdmod_117",
 		removeItemId = 5911,
 		newValue = 1,
 		choice = 1,
 	},
 	[1] = {
-		text = {
-			[1] = "npc.bozo.jester_1_t1",
-			[2] = "npc.bozo.jester_1_t2",
-		},
+		i18nKey = "npc.bozo.stdmod_118",
 		removeItemId = 5912,
 		newValue = 2,
 		choice = 2,
 	},
 	[2] = {
-		text = {
-			[1] = "npc.bozo.jester_2_t1",
-			[2] = "npc.bozo.jester_2_t2",
-		},
+		i18nKey = "npc.bozo.stdmod_119",
 		removeItemId = 5910,
 		newValue = 3,
 		choice = 3,
 	},
 	[3] = {
-		text = {
-			[1] = "npc.bozo.jester_3_t1",
-			[2] = "npc.bozo.jester_3_t2",
-		},
+		i18nKey = "npc.bozo.stdmod_120",
 		removeItemId = 5914,
 		newValue = 4,
 		addOutfit = true,

@@ -254,23 +254,11 @@ std::string Player::getDescription(int32_t lookDistance) {
 }
 
 void Player::setLocale(const std::string &value) {
-	std::string desired = value;
-	if (desired.empty()) {
-		desired = g_configManager().getString(DEFAULT_LOCALE);
-	}
-
-	desired = asLowerCaseString(desired);
-	desired.erase(
-		std::remove_if(desired.begin(), desired.end(), [](unsigned char ch) {
-			return !(std::isalpha(ch) || std::isdigit(ch) || ch == '-' || ch == '_');
-		}),
-		desired.end()
-	);
+	const auto normalizedDefault = i18n::Translator::normalizeLocale(g_configManager().getString(DEFAULT_LOCALE));
+	auto desired = i18n::Translator::normalizeLocale(value);
 
 	if (desired.empty()) {
-		desired = "en";
-	} else if (desired.size() > 5) {
-		desired.resize(5);
+		desired = normalizedDefault.empty() ? "en" : normalizedDefault;
 	}
 
 	locale = desired;
@@ -3472,19 +3460,19 @@ void Player::addExperience(const std::shared_ptr<Creature> &target, uint64_t exp
 	if (sendText) {
 		const std::string loc(getLocale().empty() ? "en" : std::string(getLocale()));
 		auto &tr = i18n::g_translator();
-		std::string expString = fmt::format("{} experience point{}.", exp, (exp != 1 ? "s" : ""));
+		std::string expString = tr.plural("cpp.player.exp_points", loc, exp, {std::to_string(exp)});
 		if (isVip()) {
 			uint8_t expPercent = g_configManager().getNumber(VIP_BONUS_EXP);
 			if (expPercent > 0) {
-				expString = expString + fmt::format(" (VIP bonus {}%)", expPercent > 100 ? 100 : expPercent);
+				expString = expString + tr.format("cpp.player.exp_vip_bonus", loc, {std::to_string(expPercent > 100 ? 100 : expPercent)});
 			}
 		}
 
 		if (handleAnimusMastery) {
-			expString = fmt::format("{} (animus mastery bonus {:.1f}%)", expString, (animusMasteryMultiplier - 1) * 100);
+			expString = expString + tr.format("cpp.player.exp_animus_bonus", loc, {fmt::format("{:.1f}", (animusMasteryMultiplier - 1) * 100)});
 		}
 
-		TextMessage message(MESSAGE_EXPERIENCE, tr.format("cpp.player.exp_gained", loc, {expString}) + (handleHazardExperience ? " (Hazard)" : ""));
+		TextMessage message(MESSAGE_EXPERIENCE, tr.format("cpp.player.exp_gained", loc, {expString}) + (handleHazardExperience ? tr.get("cpp.game.hazard_tag", loc) : ""));
 		message.position = position;
 		message.primary.value = exp;
 		message.primary.color = TEXTCOLOR_WHITE_EXP;
@@ -3578,7 +3566,7 @@ void Player::removeExperience(uint64_t exp, bool sendText /* = false*/) {
 
 		const std::string loc(getLocale().empty() ? "en" : std::string(getLocale()));
 		auto &tr = i18n::g_translator();
-		const std::string expString = tr.format("cpp.player.exp_lost", loc, {std::to_string(lostExp), (lostExp != 1 ? "s" : "")});
+		const std::string expString = tr.plural("cpp.player.exp_lost_points", loc, lostExp, {std::to_string(lostExp)});
 
 		TextMessage message(MESSAGE_EXPERIENCE, expString);
 		message.position = position;
@@ -5020,10 +5008,11 @@ void Player::stashContainer(const StashContainerList &itemDict) {
 	sendInventoryIds();
 
 	std::ostringstream retString;
-	{ const std::string loc(getLocale().empty() ? "en" : std::string(getLocale())); auto &tr = i18n::g_translator();
-	retString << tr.format("cpp.player.stowed_objects", loc, {std::to_string(totalStowed), (totalStowed > 1 ? "s" : "")});
+	const std::string loc(getLocale().empty() ? "en" : std::string(getLocale()));
+	auto &tr = i18n::g_translator();
+	retString << tr.plural("cpp.player.stowed_objects", loc, totalStowed, {std::to_string(totalStowed)});
 	if (moved) {
-		retString << tr.format("cpp.player.moved_objects", loc, {std::to_string(movedItems), (movedItems > 1 ? "s" : "")});
+		retString << tr.plural("cpp.player.moved_objects", loc, movedItems, {std::to_string(movedItems)});
 		movedItems = 0;
 	}
 	sendTextMessage(MESSAGE_STATUS, retString.str());
@@ -10158,13 +10147,15 @@ void Player::forgeTransferItemTier(ForgeAction_t actionType, uint16_t donorItemI
 	}
 
 	auto configKey = convergence ? FORGE_CONVERGENCE_TRANSFER_DUST_COST : FORGE_TRANSFER_DUST_COST;
-	if (getForgeDusts() < g_configManager().getNumber(configKey)) {
+	const auto transferDustCost = static_cast<uint64_t>(g_configManager().getNumber(configKey));
+	if (getForgeDusts() < transferDustCost) {
 		g_logger().error("[Log 8] Failed to remove transfer dusts from player with name {}", getName());
 		sendForgeError(RETURNVALUE_CONTACTADMINISTRATOR);
 		return;
 	}
 
-	setForgeDusts(getForgeDusts() - g_configManager().getNumber(configKey));
+	history.dustCost = transferDustCost;
+	setForgeDusts(getForgeDusts() - transferDustCost);
 
 	if (convergence) {
 		newReceiveItem->setTier(tier);
@@ -10203,6 +10194,7 @@ void Player::forgeTransferItemTier(ForgeAction_t actionType, uint16_t donorItemI
 		sendForgeError(RETURNVALUE_CONTACTADMINISTRATOR);
 		return;
 	}
+	history.coresCost = coresAmount;
 
 	if (!g_game().removeMoney(static_self_cast<Player>(), cost, 0, true)) {
 		g_logger().error("[{}] Failed to remove {} gold from player with name {}", __FUNCTION__, cost, getName());
@@ -10401,139 +10393,59 @@ void Player::registerForgeHistoryDescription(ForgeHistory history) {
 	auto &tr = i18n::g_translator();
 	std::string successfulString = history.success ? tr.get("cpp.forge.successful", loc) : tr.get("cpp.forge.unsuccessful", loc);
 	std::string historyTierString = history.tier > 0 ? tr.get("cpp.forge.tier_minus_one", loc) : tr.get("cpp.forge.consumed", loc);
+	std::string convergenceSuffix = history.convergence ? tr.get("cpp.forge.convergence_suffix", loc) : "";
+	std::string unchangedString = tr.get("cpp.forge.unchanged", loc);
 	std::string price = history.bonus != 3 ? formatPrice(std::to_string(history.cost), true) : "0";
 	std::stringstream detailsResponse;
-	auto itemId = Item::items.getItemIdByName(history.firstItemName);
-	const ItemType &itemType = Item::items[itemId];
+	auto firstItemId = Item::items.getItemIdByName(history.firstItemName);
+	auto secondItemId = Item::items.getItemIdByName(history.secondItemName);
+	const ItemType &firstItemType = Item::items[firstItemId];
+	const ItemType &secondItemType = Item::items[secondItemId];
 	if (history.actionType == ForgeAction_t::FUSION) {
-		if (history.success) {
-			detailsResponse << fmt::format(
-				"{:s}{:s} <br><br>"
-				"Fusion partners:"
-				"<ul> "
-				"<li>"
-				"First item: {:s} {:s}, tier {:s}"
-				"</li>"
-				"<li>"
-				"Second item: {:s} {:s}, tier {:s}"
-				"</li>"
-				"</ul>"
-				"<br>"
-				"Result:"
-				"<ul> "
-				"<li>"
-				"First item: tier + 1"
-				"</li>"
-				"<li>"
-				"Second item: {:s}"
-				"</li>"
-				"</ul>"
-				"<br>"
-				"Invested:"
-				"<ul>"
-				"<li>"
-				"{:d} cores"
-				"</li>"
-				"<li>"
-				"{:d} dust"
-				"</li>"
-				"<li>"
-				"{:s} gold"
-				"</li>"
-				"</ul>",
-				successfulString,
-				history.convergence ? " (convergence)" : "",
-				itemType.article, itemType.name, std::to_string(history.tier),
-				itemType.article, itemType.name, std::to_string(history.tier),
-				history.bonus == 8 ? "unchanged" : "consumed",
-				history.coresCost, history.dustCost, price
-			);
-		} else {
-			detailsResponse << fmt::format(
-				"{:s}{:s} <br><br>"
-				"Fusion partners:"
-				"<ul> "
-				"<li>"
-				"First item: {:s} {:s}, tier {:s}"
-				"</li>"
-				"<li>"
-				"Second item: {:s} {:s}, tier {:s}"
-				"</li>"
-				"</ul>"
-				"<br>"
-				"Result:"
-				"<ul> "
-				"<li>"
-				"First item: unchanged"
-				"</li>"
-				"<li>"
-				"Second item: {:s}"
-				"</li>"
-				"</ul>"
-				"<br>"
-				"Invested:"
-				"<ul>"
-				"<li>"
-				"{:d} cores"
-				"</li>"
-				"<li>"
-				"100 dust"
-				"</li>"
-				"<li>"
-				"{:s} gold"
-				"</li>"
-				"</ul>",
-				successfulString,
-				history.convergence ? " (convergence)" : "",
-				itemType.article, itemType.name, std::to_string(history.tier),
-				itemType.article, itemType.name, std::to_string(history.tier),
-				history.bonus == 8 ? "unchanged" : historyTierString,
-				history.coresCost, price
-			);
-		}
-	} else if (history.actionType == ForgeAction_t::TRANSFER) {
-		detailsResponse << fmt::format(
-			"{:s}{:s} <br><br>"
-			"Transfer partners:"
-			"<ul> "
-			"<li>"
-			"First item: {:s} {:s}, tier {:s}"
-			"</li>"
-			"<li>"
-			"Second item: {:s} {:s}, tier {:s}"
-			"</li>"
-			"</ul>"
-			"<br>"
-			"Result:"
-			"<ul> "
-			"<li>"
-			"First item: {:s} {:s}, tier {:s}"
-			"</li>"
-			"<li>"
-			"Second item: {:s} {:s}, {:s}"
-			"</li>"
-			"</ul>"
-			"<br>"
-			"Invested:"
-			"<ul>"
-			"<li>"
-			"1 cores"
-			"</li>"
-			"<li>"
-			"100 dust"
-			"</li>"
-			"<li>"
-			"{:s} gold"
-			"</li>"
-			"</ul>",
+		const std::string firstItemResult = history.success ? tr.get("cpp.forge.tier_plus_one", loc) : unchangedString;
+		const std::string secondItemResult = history.success ?
+			                                    (history.bonus == 8 ? unchangedString : tr.get("cpp.forge.consumed", loc)) :
+			                                    (history.bonus == 8 ? unchangedString : historyTierString);
+		const std::string coresCost = tr.plural("cpp.forge.cores", loc, history.coresCost, {std::to_string(history.coresCost)});
+		const std::string dustCost = tr.plural("cpp.forge.dust", loc, history.dustCost, {std::to_string(history.dustCost)});
+		detailsResponse << tr.format("cpp.forge.history_fusion", loc, {
 			successfulString,
-			history.convergence ? " (convergence)" : "",
-			itemType.article, itemType.name, std::to_string(history.tier),
-			itemType.article, itemType.name, std::to_string(history.tier),
-			itemType.article, itemType.name, std::to_string(history.tier),
-			itemType.article, itemType.name, std::to_string(history.tier),
+			convergenceSuffix,
+			firstItemType.article,
+			firstItemType.name,
+			std::to_string(history.tier),
+			secondItemType.article,
+			secondItemType.name,
+			std::to_string(history.tier),
+			firstItemResult,
+			secondItemResult,
+			coresCost,
+			dustCost,
 			price
-		);
+		});
+	} else if (history.actionType == ForgeAction_t::TRANSFER) {
+		const std::string coresCost = tr.plural("cpp.forge.cores", loc, history.coresCost, {std::to_string(history.coresCost)});
+		const std::string dustCost = tr.plural("cpp.forge.dust", loc, history.dustCost, {std::to_string(history.dustCost)});
+		const std::string resultTier = history.convergence ? std::to_string(history.tier) : historyTierString;
+		detailsResponse << tr.format("cpp.forge.history_transfer", loc, {
+			successfulString,
+			convergenceSuffix,
+			firstItemType.article,
+			firstItemType.name,
+			std::to_string(history.tier),
+			secondItemType.article,
+			secondItemType.name,
+			std::to_string(history.tier),
+			firstItemType.article,
+			firstItemType.name,
+			std::to_string(history.tier),
+			secondItemType.article,
+			secondItemType.name,
+			resultTier,
+			coresCost,
+			dustCost,
+			price
+		});
 	} else if (history.actionType == ForgeAction_t::DUSTTOSLIVERS) {
 		detailsResponse << tr.format("cpp.forge.dust_to_slivers", loc, {std::to_string(history.cost), std::to_string(history.gained)});
 	} else if (history.actionType == ForgeAction_t::SLIVERSTOCORES) {
@@ -10543,7 +10455,7 @@ void Player::registerForgeHistoryDescription(ForgeHistory history) {
 		history.actionType = ForgeAction_t::DUSTTOSLIVERS;
 		detailsResponse << tr.format("cpp.forge.increase_dust_limit", loc, {std::to_string(history.cost), std::to_string(history.gained + 1)});
 	} else {
-		detailsResponse << "(unknown)";
+		detailsResponse << tr.get("cpp.forge.unknown", loc);
 	}
 
 	history.description = detailsResponse.str();

@@ -150,11 +150,7 @@ keywordHandler:addKeyword({ "raiders" }, StdModule.say, { npcHandler = npcHandle
 keywordHandler:addKeyword({ "enemies" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.iskan.stdmod_14" })
 keywordHandler:addKeyword({ "bonelords" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"I'll tell you something. I have seen such a creature once, far on the ice to the east. It was the coldest winter I can remember and the chakoyas were roaming the ice almost everywhere. ...",
-		"To evade them, me and the boys had to walk a long way to a spot where the ice was treacherous and thin. ...",
-		"And there I've seen such a creature. The boys went almost mad and I turned my sled immediately. No idea how we made it home. True story.",
-	},
+	i18nKey = "npc.iskan.stdmod_24",
 })
 keywordHandler:addKeyword({ "edron" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.iskan.stdmod_15" })
 keywordHandler:addAliasKeyword({ "thais" })

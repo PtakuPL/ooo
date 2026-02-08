@@ -111,10 +111,7 @@ keywordHandler:addKeyword({ "protect" }, StdModule.say, { npcHandler = npcHandle
 keywordHandler:addKeyword({ "energy" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.alkestios.stdmod_6" })
 keywordHandler:addKeyword({ "fae" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"Some call us nature spirits or peri but we prefer the term fae. Most of us are rather reclusive and live peaceful lives in our secret realm. We only leave it in order to protect our home. ...",
-		"We tend to be secretive about our true nature, but I guess there was once an elven sage who visited our realm and put his experiences down on paper. There might be a book about the fae in the library of Ab'Dendriel.",
-	},
+	i18nKey = "npc.alkestios.stdmod_7",
 })
 
 NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.alkestios.greet_msg_1")

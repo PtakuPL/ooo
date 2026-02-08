@@ -2546,7 +2546,8 @@ std::tuple<ReturnValue, uint32_t, uint32_t> Game::createItemBatch(const std::sha
 			if (itemType.isWrappable()) {
 				countPerItem = 1;
 				item = Item::CreateItem(ITEM_DECORATION_KIT, subType);
-				item->setAttribute(ItemAttribute_t::DESCRIPTION, "Unwrap this item in your own house to create a <" + itemType.name + ">.");
+				auto &storeTr = i18n::g_translator();
+				item->setAttribute(ItemAttribute_t::DESCRIPTION, storeTr.format("cpp.game.unwrap_house_description", "en", {itemType.name}));
 				item->setCustomAttribute("unWrapId", static_cast<int64_t>(itemId));
 			} else {
 				item = Item::CreateItem(itemId, itemType.stackable ? std::min<uint32_t>(countPerItem, count - i) : subType);
@@ -4946,7 +4947,7 @@ void Game::playerRequestTrade(uint32_t playerId, const Position &pos, uint8_t st
 
 	if (!Position::areInRange<2, 2, 0>(tradePartner->getPosition(), player->getPosition())) {
 		std::ostringstream ss;
-		ss << tradePartner->getName() << " tells you to move closer.";
+		{ const std::string loc(player->getLocale().empty() ? "en" : std::string(player->getLocale())); auto &tr = i18n::g_translator(); ss << tr.format("cpp.game.trade_move_closer", loc, {tradePartner->getName()}); }
 		player->sendTextMessage(MESSAGE_TRADE, ss.str());
 		return;
 	}
@@ -5095,7 +5096,7 @@ bool Game::internalStartTrade(const std::shared_ptr<Player> &player, const std::
 
 	if (tradePartner->tradeState == TRADE_NONE) {
 		std::ostringstream ss;
-		ss << player->getName() << " wants to trade with you.";
+		{ const std::string loc(tradePartner->getLocale().empty() ? "en" : std::string(tradePartner->getLocale())); auto &tr = i18n::g_translator(); ss << tr.format("cpp.game.trade_wants_to_trade", loc, {player->getName()}); }
 		tradePartner->sendTextMessage(MESSAGE_TRANSACTION, ss.str());
 		tradePartner->tradeState = TRADE_ACKNOWLEDGE;
 		tradePartner->tradePartner = player;
@@ -9165,6 +9166,8 @@ void Game::playerBrowseMarketOwnHistory(uint32_t playerId) {
 }
 
 namespace {
+	constexpr std::string_view marketInvalidItemMessageKey = "cpp.game.market_item_not_correct";
+
 	bool removeOfferItems(const std::shared_ptr<Player> &player, const std::shared_ptr<DepotLocker> &depotLocker, const ItemType &itemType, uint16_t amount, uint8_t tier, std::ostringstream &offerStatus) {
 		uint16_t removeAmount = amount;
 		if (
@@ -9218,7 +9221,7 @@ namespace {
 
 			if (removedCount < removeAmount) {
 				g_logger().error("Player {} tried to sell an item {} without this item", player->getName(), itemType.id);
-				offerStatus << "The item you tried to market is not correct. Check the item again.";
+				offerStatus << marketInvalidItemMessageKey;
 				return false;
 			}
 		}
@@ -9361,6 +9364,11 @@ void Game::playerCreateMarketOffer(uint32_t playerId, uint8_t type, uint16_t ite
 			player->getAccount()->removeCoins(CoinType::Transferable, static_cast<uint32_t>(amount), "");
 		} else {
 			if (!removeOfferItems(player, depotLocker, it, amount, tier, offerStatus)) {
+				if (offerStatus.str() == marketInvalidItemMessageKey) {
+					player->sendLocalizedTextMessage(MESSAGE_MARKET, std::string(marketInvalidItemMessageKey));
+				} else {
+					player->sendLocalizedTextMessage(MESSAGE_MARKET, "server.game.msg_24");
+				}
 				g_logger().error("[{}] failed to remove item with id {}, from player {}, errorcode: {}", __FUNCTION__, it.id, player->getName(), offerStatus.str());
 				return;
 			}
@@ -9386,8 +9394,8 @@ void Game::playerCreateMarketOffer(uint32_t playerId, uint8_t type, uint16_t ite
 	// If there is any error, then we will send the log and block the creation of the offer to avoid clone of items
 	// The player may lose the item as it will have already been removed, but will not clone
 	if (!offerStatus.str().empty()) {
-		if (offerStatus.str() == "The item you tried to market is not correct. Check the item again.") {
-			player->sendTextMessage(MESSAGE_MARKET, offerStatus.str());
+		if (offerStatus.str() == marketInvalidItemMessageKey) {
+			player->sendLocalizedTextMessage(MESSAGE_MARKET, std::string(marketInvalidItemMessageKey));
 		} else {
 			player->sendLocalizedTextMessage(MESSAGE_MARKET, "server.game.msg_24");
 		}
@@ -9578,7 +9586,13 @@ void Game::playerAcceptMarketOffer(uint32_t playerId, uint32_t timestamp, uint16
 			);
 		} else {
 			if (!removeOfferItems(player, depotLocker, it, amount, offer.tier, offerStatus)) {
+				if (offerStatus.str() == marketInvalidItemMessageKey) {
+					player->sendLocalizedTextMessage(MESSAGE_MARKET, std::string(marketInvalidItemMessageKey));
+				} else {
+					player->sendLocalizedTextMessage(MESSAGE_MARKET, "server.game.msg_27");
+				}
 				g_logger().error("[{}] failed to remove item with id {}, from player {}, errorcode: {}", __FUNCTION__, it.id, player->getName(), offerStatus.str());
+				player->sendMarketEnter(player->getLastDepotId());
 				return;
 			}
 		}
@@ -9586,8 +9600,8 @@ void Game::playerAcceptMarketOffer(uint32_t playerId, uint32_t timestamp, uint16
 		// If there is any error, then we will send the log and block the creation of the offer to avoid clone of items
 		// The player may lose the item as it will have already been removed, but will not clone
 		if (!offerStatus.str().empty()) {
-			if (offerStatus.str() == "The item you tried to market is not correct. Check the item again.") {
-				player->sendTextMessage(MESSAGE_MARKET, offerStatus.str());
+			if (offerStatus.str() == marketInvalidItemMessageKey) {
+				player->sendLocalizedTextMessage(MESSAGE_MARKET, std::string(marketInvalidItemMessageKey));
 			} else {
 				player->sendLocalizedTextMessage(MESSAGE_MARKET, "server.game.msg_27");
 			}
@@ -10766,7 +10780,8 @@ bool Game::addItemStoreInbox(const std::shared_ptr<Player> &player, uint32_t ite
 		return false;
 	}
 	const ItemType &itemType = Item::items[itemId];
-	std::string description = fmt::format("You bought this item in the Store.\nUnwrap it in your own house to create a <{}>.", itemType.name);
+	auto &storeTr = i18n::g_translator();
+	std::string description = storeTr.format("cpp.game.store_item_description", "en", {itemType.name});
 	decoKit->setAttribute(ItemAttribute_t::DESCRIPTION, description);
 	decoKit->setCustomAttribute("unWrapId", static_cast<int64_t>(itemId));
 

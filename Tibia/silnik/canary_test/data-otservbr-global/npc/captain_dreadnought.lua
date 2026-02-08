@@ -315,11 +315,7 @@ keywordHandler:addKeyword({ "rookgaard" }, StdModule.say, {
 })
 keywordHandler:addKeyword({ "adventurers guild" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"Those fellows help still green adventurers like you, so you learn the lay of the Tibian Mainlands. \z
-		With the adventurer's stone you can reach their guild hall from all major temples. ...",
-		"I recommend you travel there as soon as possible.",
-	},
+	i18nKey = "npc.captain_dreadnought.stdmod_20",
 })
 keywordHandler:addKeyword({ "premium" }, StdModule.say, {
 	npcHandler = npcHandler,
@@ -342,12 +338,7 @@ local notReadyNode = keywordHandler:addKeyword({ "no" }, StdModule.say, {
 -- hi, yes, ...
 local defaultTownNode = readyNode:addChildKeyword({ "yes" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"Quick learner, good answer. For inexperienced newcomers, \z
-		I'd recommend the city of {" .. towns[defaultTown].name .. "}. Great place to start! ...",
-		"Though I can tell you about the other main Tibian {cities} too, if you wish. \z
-		So, ready to set sail for {" .. towns[defaultTown].name .. "}?",
-	},
+	i18nKey = "npc.captain_dreadnought.stdmod_21",
 })
 readyNode:addChildKeyword({ "no" }, StdModule.say, {
 	npcHandler = npcHandler,

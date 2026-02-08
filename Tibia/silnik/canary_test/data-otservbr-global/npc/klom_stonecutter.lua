@@ -235,25 +235,15 @@ keywordHandler:addKeyword({ "help" }, StdModule.say, { npcHandler = npcHandler, 
 keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.klom_stonecutter.stdmod_2" })
 keywordHandler:addKeyword({ "defences" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"The attacks of the enemy forces are fierce but we hold our ground. ... ",
-		"I'd love to face one of their generals in combat but as their masters they cowardly hide far behind enemy lines and I have other duties to fulfil. ... ",
-		"I envy you for the chance to thrust into the heart of the enemy, locking weapons with their jaws... or whatever... and see the fear in their eyes when they recognise they were bested.",
-	},
+	i18nKey = "npc.klom_stonecutter.stdmod_7",
 })
 keywordHandler:addKeyword({ "counterattacks" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"I welcome a fine battle as any dwarf worth his beard should do. As long as it's a battle against something I can hit with my trusty axe. ...",
-		"But here the true {enemy} eludes us. We fight wave after wave of their lackeys and if the gnomes are right the true enemy is up to something far more sinister. ",
-	},
+	i18nKey = "npc.klom_stonecutter.stdmod_8",
 })
 keywordHandler:addKeyword({ "enemy" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"I have no idea what kind of creeps are behind all this. Even the gnomes don't and they have handled that stuff way more often. ...",
-		"But even if we knew nothing more about them, the fact alone that they employ the help of those mockeries of all things dwarfish, marks them as an enemy of the dwarves and it's our obligation to annihilate them.",
-	},
+	i18nKey = "npc.klom_stonecutter.stdmod_9",
 })
 keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.klom_stonecutter.stdmod_3" })
 

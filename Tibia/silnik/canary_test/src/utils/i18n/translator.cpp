@@ -1,6 +1,8 @@
 #include "utils/i18n/translator.hpp"
 
+#include <algorithm>
 #include <array>
+#include <cctype>
 #include <fstream>
 #include <system_error>
 
@@ -18,6 +20,69 @@ const std::array DEFAULT_SEARCH_PATHS = {
 	std::filesystem::path("i18n")
 };
 
+std::string normalizeLocaleForCompare(const std::string &input) {
+	std::string normalized;
+	normalized.reserve(input.size());
+
+	for (unsigned char ch : input) {
+		if (std::isalnum(ch) || ch == '_' || ch == '-') {
+			normalized += static_cast<char>(std::tolower(ch));
+		}
+	}
+
+	std::replace(normalized.begin(), normalized.end(), '-', '_');
+	return normalized;
+}
+
+std::string canonicalizeLocaleTag(const std::string &input) {
+	const auto normalized = normalizeLocaleForCompare(input);
+	if (normalized.empty()) {
+		return {};
+	}
+
+	const auto separator = normalized.find('_');
+	std::string language = separator == std::string::npos ? normalized : normalized.substr(0, separator);
+	std::string region = separator == std::string::npos ? "" : normalized.substr(separator + 1);
+	if (language.empty()) {
+		return {};
+	}
+
+	// Common legacy aliases.
+	if (language == "fil") {
+		language = "tl";
+	} else if (language == "iw") {
+		language = "he";
+	} else if (language == "in") {
+		language = "id";
+	}
+
+	// Canonical Chinese mapping used in datapack directories.
+	if (language == "zh") {
+		if (region == "tw" || region == "hk" || region == "mo" || region == "hant") {
+			return "zh_TW";
+		}
+		return "zh";
+	}
+
+	// We keep only generic Portuguese locale in the server dictionaries.
+	if (language == "pt" && !region.empty()) {
+		return "pt";
+	}
+
+	// We keep only generic English locale in the server dictionaries.
+	if (language == "en" && !region.empty()) {
+		return "en";
+	}
+
+	if (!region.empty() && region.size() == 2 && std::isalpha(static_cast<unsigned char>(region[0])) && std::isalpha(static_cast<unsigned char>(region[1]))) {
+		region[0] = static_cast<char>(std::toupper(static_cast<unsigned char>(region[0])));
+		region[1] = static_cast<char>(std::toupper(static_cast<unsigned char>(region[1])));
+		return language + "_" + region;
+	}
+
+	return language;
+}
+
 const std::vector<std::string> &supportedLocaleList() {
 	// Ujednolicona lista 53+ języków zgodna z klientem (I18N) – rozszerzona, aby serwer obsługiwał te same locale.
 	static const std::vector<std::string> locales = {
@@ -28,7 +93,7 @@ const std::vector<std::string> &supportedLocaleList() {
 		// Baltic
 		"lt", "lv", "et",
 		// Asian
-		"zh", "ja", "ko", "vi", "th", "hi", "id", "ms", "fil", "bn",
+		"zh", "zh_TW", "ja", "ko", "vi", "th", "hi", "id", "ms", "tl", "bn",
 		// Middle Eastern (RTL)
 		"ar", "he", "fa", "tr",
 		// Caucasus
@@ -41,6 +106,33 @@ const std::vector<std::string> &supportedLocaleList() {
 		"eu", "ca", "gl", "el"
 	};
 	return locales;
+}
+
+std::string findSupportedLocale(const std::string &localeTag) {
+	const auto normalizedTag = normalizeLocaleForCompare(localeTag);
+	if (normalizedTag.empty()) {
+		return {};
+	}
+
+	for (const auto &supported : supportedLocaleList()) {
+		if (normalizeLocaleForCompare(supported) == normalizedTag) {
+			return supported;
+		}
+	}
+
+	const auto separator = normalizedTag.find('_');
+	if (separator == std::string::npos) {
+		return {};
+	}
+
+	const auto base = normalizedTag.substr(0, separator);
+	for (const auto &supported : supportedLocaleList()) {
+		if (normalizeLocaleForCompare(supported) == base) {
+			return supported;
+		}
+	}
+
+	return {};
 }
 } // namespace
 
@@ -82,12 +174,13 @@ void Translator::setSearchPaths(std::vector<std::filesystem::path> paths) {
 }
 
 void Translator::setFallbackLocale(std::string locale) {
-	if (locale.empty()) {
+	auto normalized = normalizeLocale(std::move(locale));
+	if (normalized.empty()) {
 		return;
 	}
 
 	std::scoped_lock lock(mutex);
-	fallbackLocale = std::move(locale);
+	fallbackLocale = std::move(normalized);
 }
 
 const std::string &Translator::getFallbackLocale() const {
@@ -95,17 +188,23 @@ const std::string &Translator::getFallbackLocale() const {
 }
 
 void Translator::loadLocale(const std::string &locale) const {
-	if (locale.empty()) {
+	const auto normalized = normalizeLocale(locale);
+	if (normalized.empty()) {
 		return;
 	}
 
 	std::scoped_lock lock(mutex);
-	loadLocaleUnlocked(locale);
+	loadLocaleUnlocked(normalized);
 }
 
 bool Translator::isLocaleLoaded(const std::string &locale) const {
+	const auto normalized = normalizeLocale(locale);
+	if (normalized.empty()) {
+		return false;
+	}
+
 	std::scoped_lock lock(mutex);
-	const auto it = locales.find(locale);
+	const auto it = locales.find(normalized);
 	return it != locales.end() && it->second.loaded;
 }
 
@@ -118,7 +217,8 @@ std::string Translator::format(const std::string &key, const std::string &locale
 		return {};
 	}
 
-	const auto resolvedLocale = locale.empty() ? fallbackLocale : locale;
+	const auto normalizedLocale = normalizeLocale(locale);
+	const auto resolvedLocale = normalizedLocale.empty() ? fallbackLocale : normalizedLocale;
 	ensureLocaleLoaded(resolvedLocale);
 	if (resolvedLocale != fallbackLocale) {
 		ensureLocaleLoaded(fallbackLocale);
@@ -153,6 +253,19 @@ std::string Translator::format(const std::string &key, const std::string &locale
 		g_logger().warn("Failed to format translation '{}' (locale '{}'): {}", key, resolvedLocale, err.what());
 		return translation;
 	}
+}
+
+std::string Translator::normalizeLocale(std::string locale) {
+	const auto canonical = canonicalizeLocaleTag(locale);
+	if (canonical.empty()) {
+		return {};
+	}
+
+	if (const auto supported = findSupportedLocale(canonical); !supported.empty()) {
+		return supported;
+	}
+
+	return {};
 }
 
 const std::vector<std::string> &Translator::supportedLocales() {
@@ -280,7 +393,8 @@ std::string Translator::plural(const std::string &key, const std::string &locale
 		return {};
 	}
 
-	const auto resolvedLocale = locale.empty() ? fallbackLocale : locale;
+	const auto normalizedLocale = normalizeLocale(locale);
+	const auto resolvedLocale = normalizedLocale.empty() ? fallbackLocale : normalizedLocale;
 	ensureLocaleLoaded(resolvedLocale);
 	if (resolvedLocale != fallbackLocale) {
 		ensureLocaleLoaded(fallbackLocale);

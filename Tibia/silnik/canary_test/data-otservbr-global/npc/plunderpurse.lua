@@ -346,12 +346,7 @@ keywordHandler:addKeyword({ "job" }, StdModule.say, {
 })
 keywordHandler:addKeyword({ "mainland" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"Aye, Tibia is a vast world, my friend, with plenty of adventures, harbours, and loot! \z
-			The Mainland is open to everyone; but there are many beautiful islands and more cities to explore, \z
-			if you have premium rights and can use a ship.",
-		"Once you have reached level 8 here on this isle, you can choose your definite vocation and leave for the Mainland.",
-	},
+	i18nKey = "npc.plunderpurse.stdmod_25",
 })
 keywordHandler:addKeyword({ "vocation" }, StdModule.say, {
 	npcHandler = npcHandler,

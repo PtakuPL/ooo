@@ -6262,7 +6262,8 @@ void ProtocolGame::sendForgeHistory(uint8_t page) {
 }
 
 void ProtocolGame::sendForgeError(const ReturnValue returnValue) {
-	sendMessageDialog(getReturnMessage(returnValue));
+	const std::string loc = (player && !player->getLocale().empty()) ? std::string(player->getLocale()) : "en";
+	sendMessageDialog(i18n::g_translator().get(getReturnMessageI18nKey(returnValue), loc));
 	closeForgeWindow();
 }
 

@@ -25,6 +25,8 @@ env:
   CMAKE_BUILD_PARALLEL_LEVEL: 4
   MAKEFLAGS: '-j 4'
   VCPKG_ROOT: C:\vcpkg
+  # Use a recent vcpkg commit — the old builtin-baseline lacks utf8-range (protobuf dep).
+  VCPKG_TOOL_COMMIT: cf6692675e04c036e21f26d64ae5fa3c8485f224
   VCPKG_FEATURE_FLAGS: manifests,binarycaching
   VCPKG_BINARY_SOURCES: clear;x-gha,readwrite
   VCPKG_BUILD_TYPE: release
@@ -85,8 +87,7 @@ jobs:
         id: vcpkg-step
         shell: bash
         run: |
-          vcpkgCommitId=$(grep '.builtin-baseline' vcpkg.json | awk -F: '{print $2}' | tr -d '," ')
-          echo "vcpkgGitCommitId=$vcpkgCommitId" >> $GITHUB_OUTPUT
+          echo "vcpkgGitCommitId=${{ env.VCPKG_TOOL_COMMIT }}" >> $GITHUB_OUTPUT
           echo "hash=$(sha256sum vcpkg.json | cut -d' ' -f1)" >> $GITHUB_OUTPUT
 
       - name: Cache vcpkg

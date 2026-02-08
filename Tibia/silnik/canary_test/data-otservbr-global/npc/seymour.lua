@@ -75,7 +75,7 @@ local ratsKeyword = keywordHandler:addKeyword({ "%d+", "dead", "rat" }, StdModul
 	npcHandler.rats[player.uid] = data[1]
 	return data[1] and data[1] > 0 and data[1] < 0xFFFFFFFF
 end, function(player)
-	npcHandler:say(string.format("Have you brought %d dead rats to me to pick up your reward?", npcHandler.rats[player.uid]), player.uid)
+	player:sendLocalizedTextMessage(MESSAGE_NPC_FROM, "npc.seymour.say_1", { tostring(npcHandler.rats[player.uid]) })
 end)
 ratsKeyword:addChildKeyword({ "yes" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.seymour.stdmod_4", reset = true }, function(player)
 	return player:getItemCount(3994) >= npcHandler.rats[player.uid]
@@ -194,13 +194,13 @@ end)
 destinyKeyword:addChildKeyword({ "yes" }, StdModule.say, { npcHandler = npcHandler, reset = true }, nil, function(player)
 	local destiny = math.random(1, 4)
 	if destiny == 1 then
-		npcHandler:say("Hmmm, let me look at you. You got that intelligent sparkle in your eyes and you'd love to handle great power - that must be a future sorcerer!", player.uid)
+		player:sendLocalizedTextMessage(MESSAGE_NPC_FROM, "npc.seymour.say_2")
 	elseif destiny == 2 then
-		npcHandler:say("Hmmm, let me look at you. You have an aura of great wisdom and may have healing hands as well as a sense for the powers of nature - I think you're a natural born druid!", player.uid)
+		player:sendLocalizedTextMessage(MESSAGE_NPC_FROM, "npc.seymour.say_3")
 	elseif destiny == 3 then
-		npcHandler:say("Hmmm, let me look at you. <missing message, destiny for paladin>!", player.uid)
+		player:sendLocalizedTextMessage(MESSAGE_NPC_FROM, "npc.seymour.say_4")
 	elseif destiny == 4 then
-		npcHandler:say("Hmmm, let me look at you. Strong and sturdy, with a determined look in your eyes - no doubt the knight profession would be suited for you!", player.uid)
+		player:sendLocalizedTextMessage(MESSAGE_NPC_FROM, "npc.seymour.say_5")
 	end
 	player:setStorageValue(Storage.RookgaardDestiny, destiny)
 end)

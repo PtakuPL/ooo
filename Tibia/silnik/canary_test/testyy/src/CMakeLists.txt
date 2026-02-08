@@ -125,15 +125,19 @@ if (MSVC)
   target_compile_definitions(${PROJECT_NAME} PRIVATE NOMINMAX)
   # Workaround for MSVC Internal Compiler Error (ICE) C1001 on complex template code
   # The ICE occurs in cast.h which is included via stdext.h across all source files.
-  # Using /O1 globally is necessary as the ICE triggers during template instantiation.
-  # Remove default /O2 from Release flags before adding /O1 to avoid D9025 warning
+  # /O1 alone still triggers the ICE on luavaluecasts.cpp; disable optimization
+  # entirely for that file and use /O1 for the rest of the project.
   string(REPLACE "/O2" "" CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE}")
   string(REPLACE "/O2" "" CMAKE_CXX_FLAGS_RELWITHDEBINFO "${CMAKE_CXX_FLAGS_RELWITHDEBINFO}")
   set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE}" CACHE STRING "" FORCE)
   set(CMAKE_CXX_FLAGS_RELWITHDEBINFO "${CMAKE_CXX_FLAGS_RELWITHDEBINFO}" CACHE STRING "" FORCE)
   target_compile_options(${PROJECT_NAME} PRIVATE
-    $<$<CONFIG:Release>:/O1>  # Use /O1 (minimize size) instead of /O2 (maximize speed) for Release
+    $<$<CONFIG:Release>:/O1>
     $<$<CONFIG:RelWithDebInfo>:/O1>
+  )
+  set_source_files_properties(
+    framework/luaengine/luavaluecasts.cpp
+    PROPERTIES COMPILE_FLAGS "/Od"
   )
   # Fully disable LTCG to avoid ICE C1001 during link-time code generation.
   # /LTCG may be injected by the toolchain or vcpkg into the per-config linker flags;
@@ -219,13 +223,18 @@ add_definitions(${FRAMEWORK_DEFINITIONS})
 add_definitions(-D"VERSION=${VERSION}")
 
 # === Build options ===
+# Use target_compile_definitions instead of add_definitions for string defines.
+# The old add_definitions(-D"BUILD_TYPE=\\\"...\\\") escaping produces a bare $
+# in the Ninja build file with CMake 3.22.1 (Android SDK), causing:
+#   ninja: error: build.ninja:NNN: bad $-escape
 message(STATUS "Build type: " ${CMAKE_BUILD_TYPE})
-add_definitions(-D"BUILD_TYPE=\\\"${CMAKE_BUILD_TYPE}\\\"")
 message(STATUS "Build commit: ${BUILD_COMMIT}")
-add_definitions(-D"BUILD_COMMIT=\\\"${BUILD_COMMIT}\\\"")
 message(STATUS "Build revision: ${BUILD_REVISION}")
-add_definitions(-D"BUILD_REVISION=\\\"${BUILD_REVISION}\\\"")
-
+target_compile_definitions(${PROJECT_NAME} PRIVATE
+    "BUILD_TYPE=\"${CMAKE_BUILD_TYPE}\""
+    "BUILD_COMMIT=\"${BUILD_COMMIT}\""
+    "BUILD_REVISION=\"${BUILD_REVISION}\""
+)
 # *****************************************************************************
 # Packages / Libs
 # *****************************************************************************

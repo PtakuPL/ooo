@@ -94,13 +94,11 @@ jobs:
         uses: actions/cache@v4
         with:
           path: |
-            C:\vcpkg\installed
-            C:\vcpkg\buildtrees
             C:\vcpkg\downloads
             ${{ env.LOCALAPPDATA }}\vcpkg
-          key: vcpkg-android-${{ steps.vcpkg-step.outputs.hash }}
+          key: vcpkg-android-${{ steps.vcpkg-step.outputs.vcpkgGitCommitId }}-${{ steps.vcpkg-step.outputs.hash }}
           restore-keys: |
-            vcpkg-android-
+            vcpkg-android-${{ steps.vcpkg-step.outputs.vcpkgGitCommitId }}-
 
       - name: Setup vcpkg
         shell: powershell
@@ -111,8 +109,11 @@ jobs:
           cd C:\vcpkg
           git fetch --all
           git checkout ${{ steps.vcpkg-step.outputs.vcpkgGitCommitId }}
-          if (-not (Test-Path "C:\vcpkg\vcpkg.exe")) {
-            .\bootstrap-vcpkg.bat
+          # Always re-bootstrap to ensure vcpkg.exe matches the checked-out commit
+          .\bootstrap-vcpkg.bat
+          # Remove stale buildtrees to avoid using cached source from wrong versions
+          if (Test-Path "C:\vcpkg\buildtrees") {
+            Remove-Item -Recurse -Force "C:\vcpkg\buildtrees"
           }
 
       - name: Ensure 7zip and pkg-config

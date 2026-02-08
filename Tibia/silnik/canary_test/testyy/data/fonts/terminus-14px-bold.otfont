@@ -1,8 +1,9 @@
 Font
   name: terminus-14px-bold
-  texture: terminus-14px-bold
-  height: 16
-  y-offset: 2
-  glyph-size: 16 16
-  fixed-glyph-width: 8
-  space-width: 8
+  type: ttf
+  source: /fonts/ttf/NotoSansMono-Regular.ttf
+  size: 14
+  y-offset: 0
+  fallback:
+    - /fonts/ttf/NotoSansSC-Regular.ttf
+    - /fonts/ttf/NotoSansJP-Regular.otf

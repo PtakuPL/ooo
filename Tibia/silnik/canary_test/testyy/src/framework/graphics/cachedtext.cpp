@@ -152,22 +152,57 @@ void CachedText::update()
             const auto text32 = otc::text::utf8ToU32(m_text);
             const auto sp = otc::text::LocaleShaping::paramsFromUtf8(m_text, otc::text::LocaleShaping::getDefaultLocaleTag());
 
-            std::vector<GlyphQuad> quads;
-            const Rect bounds = m_font->getTTFFont()->buildQuads(text32, sp, quads);
-            m_textSize = bounds.isValid() ? bounds.size() : Size();
+            // Split text into lines by '\n' for multi-line support
+            std::vector<std::u32string> lines;
+            {
+                std::u32string currentLine;
+                for (const char32_t cp : text32) {
+                    if (cp == U'\n') {
+                        lines.push_back(currentLine);
+                        currentLine.clear();
+                    } else {
+                        currentLine += cp;
+                    }
+                }
+                lines.push_back(currentLine);
+            }
 
-            if (!quads.empty() && bounds.isValid()) {
-                const Point topLeft = bounds.topLeft();
-                m_ttfGlyphs.reserve(quads.size());
-                for (const auto& quad : quads) {
+            const auto* ttf = m_font->getTTFFont().get();
+            const int ascentPx = std::max(0, ttf->ascent());
+            const int descentPx = std::max(0, ttf->descent());
+            const int lineHeightPx = std::max({ ttf->lineHeight(), m_font->getGlyphHeight(), ascentPx + descentPx });
+
+            int maxLineWidth = 0;
+            int totalHeight = lineHeightPx * static_cast<int>(lines.size());
+
+            // Build quads for each line, offset by line number * lineHeight
+            for (int lineIdx = 0; lineIdx < static_cast<int>(lines.size()); ++lineIdx) {
+                const auto& line = lines[lineIdx];
+                if (line.empty())
+                    continue;
+
+                std::vector<GlyphQuad> lineQuads;
+                const Rect lineBounds = m_font->getTTFFont()->buildQuads(line, sp, lineQuads);
+                if (lineQuads.empty())
+                    continue;
+
+                const int lineOffsetY = lineIdx * lineHeightPx;
+                const Point lineTopLeft = lineBounds.topLeft();
+
+                for (const auto& quad : lineQuads) {
                     CachedGlyph cached;
                     cached.texture = quad.texture;
                     cached.src = quad.src;
                     cached.dest = quad.dest;
-                    cached.dest.translate(-topLeft);
+                    cached.dest.translate(-lineTopLeft.x, -lineTopLeft.y + lineOffsetY);
                     m_ttfGlyphs.push_back(std::move(cached));
                 }
+
+                if (lineBounds.width() > maxLineWidth)
+                    maxLineWidth = lineBounds.width();
             }
+
+            m_textSize = Size(maxLineWidth, totalHeight);
         } else {
             m_font->calculateGlyphsPositions(m_text, m_align, m_glyphsPositions, &m_textSize);
         }

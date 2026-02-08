@@ -228,7 +228,9 @@ int TTFFont::ensureAtlas() {
     // Create blank RGBA image and corresponding GPU texture
     a.image = std::make_shared<Image>(Size(a.width, a.height), 4 /*bpp*/, nullptr);
     a.texture = std::make_shared<Texture>(a.image, /*buildMipmaps*/false, /*compress*/false);
-    a.texture->setSmooth(true);
+    // Pixel-crisp rendering: no bilinear filtering on glyph atlas
+    // This matches Tibia's pixel-art style and prevents blurry glyphs at small sizes
+    a.texture->setSmooth(false);
 
     m_atlases.push_back(a);
     return static_cast<int>(m_atlases.size() - 1);
@@ -274,8 +276,10 @@ const AtlasGlyph* TTFFont::cacheGlyph(uint32_t glyphIndex, char32_t codepoint) {
   if (it != m_glyphs.end()) return &it->second;
 
   // Try to render from main font
-  if (FT_Load_Glyph(m_face, glyphIndex, FT_LOAD_DEFAULT) == 0 &&
-      FT_Render_Glyph(m_face->glyph, FT_RENDER_MODE_NORMAL) == 0) {
+  // FT_LOAD_TARGET_LIGHT provides better hinting for small pixel sizes
+  // while maintaining antialiased output (less aggressive grid-fitting than FT_LOAD_DEFAULT)
+  if (FT_Load_Glyph(m_face, glyphIndex, FT_LOAD_TARGET_LIGHT) == 0 &&
+      FT_Render_Glyph(m_face->glyph, FT_RENDER_MODE_LIGHT) == 0) {
     // Check if glyph was found (not the .notdef glyph with index 0, or has actual bitmap)
     FT_GlyphSlot g = m_face->glyph;
     if (glyphIndex != 0 || g->bitmap.width > 0) {
@@ -292,8 +296,8 @@ const AtlasGlyph* TTFFont::cacheGlyph(uint32_t glyphIndex, char32_t codepoint) {
       FT_UInt fbGlyphIndex = FT_Get_Char_Index(fallbackFace, codepoint);
       if (fbGlyphIndex == 0) continue; // .notdef glyph - font doesn't have this char
 
-      if (FT_Load_Glyph(fallbackFace, fbGlyphIndex, FT_LOAD_DEFAULT) == 0 &&
-          FT_Render_Glyph(fallbackFace->glyph, FT_RENDER_MODE_NORMAL) == 0) {
+      if (FT_Load_Glyph(fallbackFace, fbGlyphIndex, FT_LOAD_TARGET_LIGHT) == 0 &&
+          FT_Render_Glyph(fallbackFace->glyph, FT_RENDER_MODE_LIGHT) == 0) {
         // IMPORTANT: Use mainCacheKey so subsequent lookups for this codepoint hit cache!
         // The mainCacheKey already encodes the codepoint when glyphIndex==0.
         if (!s_loggedFirstFallback) {

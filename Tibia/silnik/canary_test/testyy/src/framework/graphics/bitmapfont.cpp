@@ -203,31 +203,56 @@ if (m_isTTF && m_ttf) {
     }
     const auto text32 = otc::text::utf8ToU32(text);
     const auto sp = otc::text::LocaleShaping::paramsFromUtf8(text, otc::text::LocaleShaping::getDefaultLocaleTag());
-    const float w = m_ttf->measureTextWidth(text32, sp);
     const int ascentPx = std::max(0, m_ttf->ascent());
     const int descentPx = std::max(0, m_ttf->descent());
     const int lineHeightPx = std::max({ m_ttf->lineHeight(), m_glyphHeight, ascentPx + descentPx });
-    const float h = static_cast<float>(lineHeightPx);
 
-    // baseline at top-left by default
-    float bx = static_cast<float>(screenCoords.left());
-    float by = static_cast<float>(screenCoords.top()) + static_cast<float>(ascentPx);
+    // Split text into lines by '\n' for multi-line support
+    std::vector<std::u32string> lines;
+    {
+        std::u32string currentLine;
+        for (const char32_t cp : text32) {
+            if (cp == U'\n') {
+                lines.push_back(currentLine);
+                currentLine.clear();
+            } else {
+                currentLine += cp;
+            }
+        }
+        lines.push_back(currentLine); // last (or only) line
+    }
 
-    // vertical align
+    const int lineCount = static_cast<int>(lines.size());
+    const float totalHeight = static_cast<float>(lineHeightPx * lineCount);
+
+    // Calculate starting baseline Y based on vertical alignment
+    float startY = static_cast<float>(screenCoords.top()) + static_cast<float>(ascentPx);
     if (align & Fw::AlignBottom) {
-        by = static_cast<float>(screenCoords.bottom()) - static_cast<float>(descentPx);
+        startY = static_cast<float>(screenCoords.bottom()) - totalHeight + static_cast<float>(ascentPx);
     } else if (align & Fw::AlignVerticalCenter) {
-        by = static_cast<float>(screenCoords.top()) + (screenCoords.height() - h) * 0.5f + static_cast<float>(ascentPx);
+        startY = static_cast<float>(screenCoords.top()) + (screenCoords.height() - totalHeight) * 0.5f + static_cast<float>(ascentPx);
     }
 
-    // horizontal align
-    if (align & Fw::AlignRight) {
-        bx = static_cast<float>(screenCoords.right()) - w;
-    } else if (align & Fw::AlignHorizontalCenter) {
-        bx = static_cast<float>(screenCoords.left()) + (screenCoords.width() - w) * 0.5f;
-    }
+    // Render each line
+    for (int lineIdx = 0; lineIdx < lineCount; ++lineIdx) {
+        const auto& line = lines[lineIdx];
+        if (line.empty()) {
+            continue; // skip empty lines (just advance Y)
+        }
 
-    m_ttf->drawText(text32, bx, by, sp, color);
+        const float lineWidth = m_ttf->measureTextWidth(line, sp);
+        float bx = static_cast<float>(screenCoords.left());
+
+        // Horizontal alignment per line
+        if (align & Fw::AlignRight) {
+            bx = static_cast<float>(screenCoords.right()) - lineWidth;
+        } else if (align & Fw::AlignHorizontalCenter) {
+            bx = static_cast<float>(screenCoords.left()) + (screenCoords.width() - lineWidth) * 0.5f;
+        }
+
+        const float by = startY + static_cast<float>(lineIdx * lineHeightPx);
+        m_ttf->drawText(line, bx, by, sp, color);
+    }
     return;
 }
 

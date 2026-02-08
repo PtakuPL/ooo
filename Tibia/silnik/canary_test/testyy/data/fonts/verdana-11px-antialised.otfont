@@ -1,7 +1,12 @@
 Font
   name: verdana-11px-antialised
-  texture: verdana-11px-antialised_cp1250
-  charset: cp1250
-  height: 14
-  glyph-size: 16 16
-  space-width: 4
+  type: ttf
+  source: /fonts/ttf/NotoSans-Regular.ttf
+  bold-source: /fonts/ttf/NotoSans-Bold.ttf
+  size: 11
+  y-offset: 0
+  fallback:
+    - /fonts/ttf/NotoSansSC-Regular.ttf
+    - /fonts/ttf/NotoSansHebrew-Regular.ttf
+    - /fonts/ttf/NotoNaskhArabic-Regular.ttf
+    - /fonts/ttf/NotoSansJP-Regular.otf

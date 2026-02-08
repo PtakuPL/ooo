@@ -1,8 +1,9 @@
 Font
   name: terminus-10px
-  texture: terminus-10px
-  height: 12
+  type: ttf
+  source: /fonts/ttf/NotoSansMono-Regular.ttf
+  size: 10
   y-offset: 0
-  glyph-size: 16 16
-  fixed-glyph-width: 6
-  space-width: 6
+  fallback:
+    - /fonts/ttf/NotoSansSC-Regular.ttf
+    - /fonts/ttf/NotoSansJP-Regular.otf

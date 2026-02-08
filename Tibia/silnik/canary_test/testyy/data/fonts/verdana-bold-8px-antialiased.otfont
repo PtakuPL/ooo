@@ -1,7 +1,11 @@
 Font
   name: verdana-bold-8px-antialiased
-  texture: small-9px
-  height: 9
-  glyph-size: 9 9
-  space-width: 3
-  spacing: 1 0
+  type: ttf
+  source: /fonts/ttf/NotoSans-Bold.ttf
+  size: 8
+  y-offset: 0
+  fallback:
+    - /fonts/ttf/NotoSansSC-Regular.ttf
+    - /fonts/ttf/NotoSansHebrew-Regular.ttf
+    - /fonts/ttf/NotoNaskhArabic-Regular.ttf
+    - /fonts/ttf/NotoSansJP-Regular.otf

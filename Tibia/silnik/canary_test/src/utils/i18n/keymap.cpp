@@ -73,14 +73,14 @@ void Keymap::ensureLoadedUnlocked() const {
 
 	std::ifstream stream(path);
 	if (!stream.is_open()) {
-		g_logger().warning("[i18n::Keymap] Cannot open keymap file: {}", path.string());
+		g_logger().warn("[i18n::Keymap] Cannot open keymap file: {}", path.string());
 		return;
 	}
 
 	try {
 		const auto json = nlohmann::json::parse(stream, nullptr, true, true);
 		if (!json.is_object()) {
-			g_logger().warning("[i18n::Keymap] keymap.json is not an object: {}", path.string());
+			g_logger().warn("[i18n::Keymap] keymap.json is not an object: {}", path.string());
 			return;
 		}
 
@@ -94,7 +94,7 @@ void Keymap::ensureLoadedUnlocked() const {
 
 		g_logger().info("[i18n::Keymap] Loaded {} mappings from {}", semanticToCompact.size(), path.string());
 	} catch (const std::exception &e) {
-		g_logger().warning("[i18n::Keymap] Failed to parse {}: {}", path.string(), e.what());
+		g_logger().warn("[i18n::Keymap] Failed to parse {}: {}", path.string(), e.what());
 	}
 }
 

@@ -6,7 +6,7 @@ index b3291cc..a5d8225 100644
  
  # I hate that they define "WIN32" ... we're about to move to Win64...I hope!
  
-+if(EMSCRIPTEN)
++if(EMSCRIPTEN OR CMAKE_SYSTEM_NAME STREQUAL "Emscripten")
 +  add_compile_options(-pthread -matomics -mbulk-memory)
 +else()
 +  add_compile_options(-pthread)

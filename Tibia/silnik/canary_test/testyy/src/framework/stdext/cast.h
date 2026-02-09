@@ -145,14 +145,6 @@ namespace stdext
             ss << "failed to cast value of type '" << demangle_type<T>() << "' to type '" << demangle_type<R>() << "'";
             m_what = ss.str();
         }
-#ifdef _MSC_VER
-        // MSVC ICE workaround: avoid heavy template instantiation in update_what<T,R>()
-        void update_what_basic()
-        {
-            m_what = "failed to cast value";
-        }
-#endif
-
         const char* what() const noexcept override { return m_what.c_str(); }
     private:
         std::string m_what;
@@ -206,11 +198,7 @@ namespace stdext
         R r;
         if (!cast(t, r)) {
             cast_exception e;
-#ifdef _MSC_VER
-            e.update_what_basic();
-#else
             e.update_what<T, R>();
-#endif
             throw e;
         }
         return r;

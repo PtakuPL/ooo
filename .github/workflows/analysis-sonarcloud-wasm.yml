@@ -32,6 +32,10 @@ env:
   VCPKG_BUILD_TYPE: release
   VCPKG_DEFAULT_TRIPLET: wasm32-emscripten
   VCPKG_DEFAULT_HOST_TRIPLET: x64-linux
+  VCPKG_OVERLAY_PORTS: ${{ github.workspace }}/Tibia/silnik/canary_test/testyy/browser/overlay-ports
+  # NOTE: Do NOT set VCPKG_C_FLAGS / VCPKG_CXX_FLAGS here — they apply to ALL
+  # triplets (including x64-linux host) and GCC does not understand -matomics.
+  # Emscripten-specific flags are set in browser/triplets/wasm32-emscripten.cmake.
 
 jobs:
   sonarcloud-wasm:

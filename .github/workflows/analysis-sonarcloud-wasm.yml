@@ -81,7 +81,7 @@ jobs:
             ${{ github.workspace }}/vcpkg/installed
             ${{ github.workspace }}/vcpkg/buildtrees
             ${{ github.workspace }}/vcpkg/downloads
-          key: vcpkg-sonar-wasm32-emscripten-${{ hashFiles('Tibia/silnik/canary_test/testyy/vcpkg.json') }}
+          key: vcpkg-sonar-wasm32-emscripten-${{ hashFiles('Tibia/silnik/canary_test/testyy/vcpkg.json', 'Tibia/silnik/canary_test/testyy/browser/overlay-ports/**') }}
           restore-keys: |
             vcpkg-sonar-wasm32-emscripten-
 

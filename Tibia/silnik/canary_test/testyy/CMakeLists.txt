@@ -107,6 +107,8 @@ if(OPTIONS_ENABLE_IPO)
 		# LTO.  Enabling CMAKE_INTERPROCEDURAL_OPTIMIZATION adds -flto=thin which
 		# causes: wasm-ld: error: attempt to add bitcode file after LTO
 		log_war("IPO/LTO disabled for Emscripten to avoid wasm-ld linker errors")
+	elseif(CMAKE_SYSTEM_NAME STREQUAL "Android")
+		log_war("IPO/LTO disabled for Android to avoid NDK gold linker errors")
 	else()
 		log_option_enabled("ipo")
 

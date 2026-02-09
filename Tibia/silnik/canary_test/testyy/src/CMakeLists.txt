@@ -838,7 +838,7 @@ target_sources(${PROJECT_NAME} PRIVATE ${SOURCE_FILES})
 # LTO (Link-Time Optimization) - Only for GCC/Clang on native platforms.
 # MSVC uses /LTCG which is handled separately.
 # Emscripten system libs are compiled without LTO; mixing causes wasm-ld errors.
-if(NOT MSVC AND NOT CMAKE_SYSTEM_NAME STREQUAL "Emscripten")
+if(NOT MSVC AND NOT CMAKE_SYSTEM_NAME STREQUAL "Emscripten" AND NOT CMAKE_SYSTEM_NAME STREQUAL "Android")
   target_link_options(${PROJECT_NAME} PUBLIC -flto=auto)
 endif()
 
@@ -1045,15 +1045,15 @@ elseif(WASM)
     set(linkflags "${linkflags} -sASSERTIONS=1")
   endif()
 
-  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3 -ffast-math -frtti -pthread -fexceptions")
+  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3 -ffast-math -frtti -fexceptions")
   set(linkflags "${linkflags}
 			-sINVOKE_RUN=0 -sEXIT_RUNTIME=1 -sTEXTDECODER=0 -sCASE_INSENSITIVE_FS=1
 			-lopenal -lidbfs.js -lwebsocket.js -sEXPORTED_RUNTIME_METHODS=ccall -sEXPORTED_FUNCTIONS=_main,_paste_return
 			-sINCOMING_MODULE_JS_API=[locateFile,preRun,postRun,print,printErr,canvas,setStatus,monitorRunDependencies]
 			-sFORCE_FILESYSTEM -sMALLOC=mimalloc -sWEBSOCKET_SUBPROTOCOL=binary -sOFFSCREENCANVAS_SUPPORT=1
-			-sOFFSCREEN_FRAMEBUFFER -sENVIRONMENT=web,worker -sPROXY_TO_PTHREAD -sFULL_ES2=1
-			-sMIN_WEBGL_VERSION=2 -sMAX_WEBGL_VERSION=2 -sUSE_PTHREADS=1 -sFETCH=1
-			-sPTHREAD_POOL_SIZE=navigator.hardwareConcurrency -sALLOW_MEMORY_GROWTH=1
+			-sOFFSCREEN_FRAMEBUFFER -sENVIRONMENT=web,worker -sFULL_ES2=1
+			-sMIN_WEBGL_VERSION=2 -sMAX_WEBGL_VERSION=2 -sFETCH=1
+			-sALLOW_MEMORY_GROWTH=1
 			--preload-file=../otclientrc.lua@otclientrc.lua --preload-file=../init.lua@init.lua
 			--preload-file=../data@data --preload-file=../mods@mods --preload-file=../modules@modules
 			--shell-file=../browser/shell.html --use-preload-cache")

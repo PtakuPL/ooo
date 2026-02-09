@@ -127,6 +127,8 @@ if (MSVC)
   # The ICE occurs in cast.h which is included via stdext.h across all source files.
   # /O1 alone still triggers the ICE on luavaluecasts.cpp; disable optimization
   # entirely for that file and use /O1 for the rest of the project.
+  # PCH must also be skipped for this file because the PCH is compiled with /O1
+  # and mixing /Od with /O1-compiled PCH triggers warning C4653 and ICE C1001.
   string(REPLACE "/O2" "" CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE}")
   string(REPLACE "/O2" "" CMAKE_CXX_FLAGS_RELWITHDEBINFO "${CMAKE_CXX_FLAGS_RELWITHDEBINFO}")
   set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE}" CACHE STRING "" FORCE)
@@ -137,7 +139,7 @@ if (MSVC)
   )
   set_source_files_properties(
     framework/luaengine/luavaluecasts.cpp
-    PROPERTIES COMPILE_FLAGS "/Od"
+    PROPERTIES COMPILE_FLAGS "/Od" SKIP_PRECOMPILE_HEADERS ON
   )
   # Fully disable LTCG to avoid ICE C1001 during link-time code generation.
   # /LTCG may be injected by the toolchain or vcpkg into the per-config linker flags;

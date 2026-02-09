@@ -11,7 +11,11 @@ CMAKE_MINIMUM_REQUIRED(VERSION 3.18)
 
 PROJECT(lua)
 
-add_compile_options(-pthread)
+if(EMSCRIPTEN)
+  add_compile_options(-pthread -matomics -mbulk-memory)
+else()
+  add_compile_options(-pthread)
+endif()
 
 # Build Libraries
 FILE(GLOB HDR_LIBLUA "${CMAKE_SOURCE_DIR}/src/*.h")

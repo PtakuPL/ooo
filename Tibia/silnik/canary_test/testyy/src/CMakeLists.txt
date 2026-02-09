@@ -1018,7 +1018,6 @@ elseif(WASM)
           protobuf::libprotobuf protobuf
           ${ABSL_LOG_TARGET}
 
-          Threads::Threads
           asio::asio
           # OpenAL::OpenAL (using emscripten openal api)
           LibLZMA::LibLZMA

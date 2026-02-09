@@ -152,29 +152,17 @@ namespace stdext
 
     // cast a type to another type, any error throws a cast_exception
 #ifdef _MSC_VER
-    // MSVC workaround: The combination of safe_cast<R,T> calling
-    // cast_exception::update_what<T,R> (a nested member-template inside a
-    // function-template) causes Internal Compiler Error C1001
-    // (EXCEPTION_ACCESS_VIOLATION) in the MSVC front-end, even at /Od.
-    // Splitting into two non-nested steps avoids the crash.
-    namespace detail {
-        inline void throw_cast_failure(const std::string& from_type, const std::string& to_type)
-        {
-            std::stringstream ss;
-            ss << "failed to cast value of type '" << from_type
-               << "' to type '" << to_type << "'";
-            throw std::runtime_error(ss.str());
-        }
-    }
-
+    // MSVC 14.44 ICE workaround: Even simple template helper calls (like
+    // demangle_type<T>()) inside safe_cast<R,T> crash the P2 (codegen) phase.
+    // The safest approach is to avoid ANY template-based calls in the error
+    // path — use a plain string literal instead of demangled type names.
     template<typename R, typename T>
     __declspec(noinline)
     R safe_cast(const T& t)
     {
         R r;
         if (!cast(t, r)) {
-            detail::throw_cast_failure(
-                demangle_type<T>(), demangle_type<R>());
+            throw std::runtime_error("failed to cast value");
         }
         return r;
     }

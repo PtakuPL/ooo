@@ -127,6 +127,8 @@ if (MSVC)
   # The ICE occurs in cast.h which is included via stdext.h across all source files.
   # /O1 alone still triggers the ICE on luavaluecasts.cpp; disable optimization
   # entirely for that file and use /O1 for the rest of the project.
+  # PCH must also be skipped for this file because the PCH is compiled with /O1
+  # and mixing /Od with /O1-compiled PCH triggers warning C4653 and ICE C1001.
   string(REPLACE "/O2" "" CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE}")
   string(REPLACE "/O2" "" CMAKE_CXX_FLAGS_RELWITHDEBINFO "${CMAKE_CXX_FLAGS_RELWITHDEBINFO}")
   set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE}" CACHE STRING "" FORCE)
@@ -137,23 +139,55 @@ if (MSVC)
   )
   set_source_files_properties(
     framework/luaengine/luavaluecasts.cpp
-    PROPERTIES COMPILE_FLAGS "/Od"
+    PROPERTIES COMPILE_FLAGS "/Od" SKIP_PRECOMPILE_HEADERS ON
   )
   # Fully disable LTCG to avoid ICE C1001 during link-time code generation.
-  # /LTCG may be injected by the toolchain or vcpkg into the per-config linker flags;
-  # target_link_options(/LTCG:OFF) alone is not sufficient because /LTCG appears AFTER
-  # it in the final link command and takes precedence. Strip it from all flag variables.
-  target_link_options(${PROJECT_NAME} PRIVATE /LTCG:OFF)
+  # /LTCG may be injected by the toolchain or vcpkg into the per-config AND
+  # non-config-specific linker flags.  /GL (whole-program optimization) in the
+  # compile flags also implicitly enables LTCG at link time.
+  # We must strip BOTH /GL and /LTCG from every flag variable and explicitly
+  # disable them so the linker never performs code generation.
+  set_target_properties(${PROJECT_NAME} PROPERTIES
+    INTERPROCEDURAL_OPTIMIZATION FALSE
+    INTERPROCEDURAL_OPTIMIZATION_RELEASE FALSE
+    INTERPROCEDURAL_OPTIMIZATION_RELWITHDEBINFO FALSE
+  )
+  # Strip /GL from compile flags to prevent implicit LTCG at link time
+  foreach(_cflag_var
+      CMAKE_CXX_FLAGS
+      CMAKE_CXX_FLAGS_RELEASE
+      CMAKE_CXX_FLAGS_RELWITHDEBINFO
+      CMAKE_CXX_FLAGS_MINSIZEREL
+      CMAKE_C_FLAGS
+      CMAKE_C_FLAGS_RELEASE
+      CMAKE_C_FLAGS_RELWITHDEBINFO
+      CMAKE_C_FLAGS_MINSIZEREL)
+    string(REGEX REPLACE "(^|[ ;])/GL([ ;]|$)" "\\2" ${_cflag_var} "${${_cflag_var}}")
+    set(${_cflag_var} "${${_cflag_var}}" CACHE STRING "" FORCE)
+  endforeach()
+  # Strip /LTCG from ALL linker flag variables (config-specific AND base)
   foreach(_flag_var
+      CMAKE_EXE_LINKER_FLAGS
       CMAKE_EXE_LINKER_FLAGS_RELEASE
       CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO
       CMAKE_EXE_LINKER_FLAGS_MINSIZEREL
+      CMAKE_SHARED_LINKER_FLAGS
       CMAKE_SHARED_LINKER_FLAGS_RELEASE
       CMAKE_SHARED_LINKER_FLAGS_RELWITHDEBINFO
-      CMAKE_SHARED_LINKER_FLAGS_MINSIZEREL)
-    string(REGEX REPLACE "[ ;]?/LTCG([ ;]|$)" "\\1" ${_flag_var} "${${_flag_var}}")
+      CMAKE_SHARED_LINKER_FLAGS_MINSIZEREL
+      CMAKE_MODULE_LINKER_FLAGS
+      CMAKE_MODULE_LINKER_FLAGS_RELEASE
+      CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO
+      CMAKE_MODULE_LINKER_FLAGS_MINSIZEREL
+      CMAKE_STATIC_LINKER_FLAGS
+      CMAKE_STATIC_LINKER_FLAGS_RELEASE
+      CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO
+      CMAKE_STATIC_LINKER_FLAGS_MINSIZEREL)
+    string(REGEX REPLACE "(^|[ ;])/LTCG(:OFF)?([ ;]|$)" "\\3" ${_flag_var} "${${_flag_var}}")
     set(${_flag_var} "${${_flag_var}}" CACHE STRING "" FORCE)
   endforeach()
+  target_link_options(${PROJECT_NAME} PRIVATE /LTCG:OFF)
+  target_compile_options(${PROJECT_NAME} PRIVATE /GL-)
 endif()
 
 if(THREADS_HAVE_PTHREAD_ARG)

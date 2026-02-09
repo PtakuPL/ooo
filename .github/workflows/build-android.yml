@@ -194,7 +194,11 @@ jobs:
           VCPKG_ROOT: C:\vcpkg
         run: |
           # Remove stale CMake-generated Ninja files to avoid cached $-escape errors
+          # The dollar-escape bug occurs when stale build.ninja files contain paths
+          # with $ characters from previous vcpkg/NDK configurations.
           rm -rf app/.cxx || true
+          find app/build -name "build.ninja" -delete 2>/dev/null || true
+          find app/build -name "rules.ninja" -delete 2>/dev/null || true
           chmod +x ./gradlew 2>/dev/null || true
           ./gradlew assembleRelease --no-daemon --stacktrace --build-cache --warning-mode all
 

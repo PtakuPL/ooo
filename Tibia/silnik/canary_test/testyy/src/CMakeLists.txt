@@ -137,9 +137,13 @@ if (MSVC)
     $<$<CONFIG:Release>:/O1>
     $<$<CONFIG:RelWithDebInfo>:/O1>
   )
+  # Disable optimization and SSA optimizer for files that instantiate
+  # complex cast<> templates — prevents MSVC C1001 ACCESS_VIOLATION.
   set_source_files_properties(
     framework/luaengine/luavaluecasts.cpp
-    PROPERTIES COMPILE_FLAGS "/Od" SKIP_PRECOMPILE_HEADERS ON
+    framework/otml/otmlparser.cpp
+    framework/ui/uiwidgetbasestyle.cpp
+    PROPERTIES COMPILE_FLAGS "/Od /d2SSAOptimizer-" SKIP_PRECOMPILE_HEADERS ON
   )
   # Fully disable LTCG to avoid ICE C1001 during link-time code generation.
   # /LTCG may be injected by the toolchain or vcpkg into the per-config AND
@@ -1165,8 +1169,14 @@ if(WIN32)
 endif(WIN32)
 
 if(ANDROID)
-  set(CMAKE_SHARED_LINKER_FLAGS "-fuse-ld=lld")
-  set(CMAKE_EXE_LINKER_FLAGS "-fuse-ld=lld")
+  # NDK r23c+ defaults to lld; only set it when not already the default to avoid
+  # issues with the linker not being found on CI paths.
+  # Use APPEND so we don't overwrite other flags (which can cause $-escape errors
+  # in the generated build.ninja file due to incomplete flag strings).
+  if(CMAKE_ANDROID_NDK_VERSION VERSION_LESS "23")
+    string(APPEND CMAKE_SHARED_LINKER_FLAGS " -fuse-ld=lld")
+    string(APPEND CMAKE_EXE_LINKER_FLAGS " -fuse-ld=lld")
+  endif()
 endif()
 
 # *****************************************************************************

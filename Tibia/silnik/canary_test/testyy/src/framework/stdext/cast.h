@@ -145,6 +145,13 @@ namespace stdext
             ss << "failed to cast value of type '" << demangle_type<T>() << "' to type '" << demangle_type<R>() << "'";
             m_what = ss.str();
         }
+#ifdef _MSC_VER
+        // MSVC ICE workaround: avoid heavy template instantiation in update_what<T,R>()
+        void update_what_basic()
+        {
+            m_what = "failed to cast value";
+        }
+#endif
 
         const char* what() const noexcept override { return m_what.c_str(); }
     private:
@@ -153,18 +160,57 @@ namespace stdext
 
     // cast a type to another type, any error throws a cast_exception
 #ifdef _MSC_VER
-#pragma optimize("", off) // workaround MSVC ICE in Release builds
-#endif
+    // MSVC workaround: The combination of safe_cast<R,T> calling
+    // cast_exception::update_what<T,R> (a nested member-template inside a
+    // function-template) causes Internal Compiler Error C1001
+    // (EXCEPTION_ACCESS_VIOLATION) in the MSVC front-end, even at /Od.
+    // Splitting into two non-nested steps avoids the crash.
+    namespace detail {
+        inline void throw_cast_failure(const char* from_type, const char* to_type)
+        {
+            std::stringstream ss;
+            ss << "failed to cast value of type '" << from_type
+               << "' to type '" << to_type << "'";
+            throw std::runtime_error(ss.str());
+        }
+    }
+
     template<typename R, typename T>
-#ifdef _MSC_VER
     __declspec(noinline)
-#endif
+    R safe_cast(const T& t)
+    {
+        R r;
+        if (!cast(t, r)) {
+            detail::throw_cast_failure(
+                demangle_type<T>(), demangle_type<R>());
+        }
+        return r;
+    }
+
+    // cast a type to another type, cast errors are ignored
+    template<typename R, typename T>
+    __declspec(noinline)
+    R unsafe_cast(const T& t, R def = R())
+    {
+        try {
+            return safe_cast<R, T>(t);
+        } catch (const std::exception& e) {
+            std::cerr << "CAST ERROR: " << e.what() << std::endl;
+            return def;
+        }
+    }
+#else
+    template<typename R, typename T>
     R safe_cast(const T& t)
     {
         R r;
         if (!cast(t, r)) {
             cast_exception e;
+#ifdef _MSC_VER
+            e.update_what_basic();
+#else
             e.update_what<T, R>();
+#endif
             throw e;
         }
         return r;
@@ -181,7 +227,5 @@ namespace stdext
             return def;
         }
     }
-#ifdef _MSC_VER
-#pragma optimize("", on)
 #endif
 }

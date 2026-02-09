@@ -19,6 +19,11 @@ endif()
 set(VCPKG_FEATURE_FLAGS "versions")
 set(VCPKG_BUILD_TYPE "release")
 
+if(CMAKE_SYSTEM_NAME STREQUAL "Emscripten")
+	set(VCPKG_C_FLAGS "${VCPKG_C_FLAGS} -pthread -matomics -mbulk-memory" CACHE STRING "Emscripten C flags" FORCE)
+	set(VCPKG_CXX_FLAGS "${VCPKG_CXX_FLAGS} -pthread -matomics -mbulk-memory" CACHE STRING "Emscripten C++ flags" FORCE)
+endif()
+
 # For static triplet (x64-windows-static), use static runtime library (/MT)
 # This ensures consistency between vcpkg libraries and project code
 # Must be set BEFORE project() for it to take effect on MSVC

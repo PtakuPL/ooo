@@ -176,7 +176,6 @@ jobs:
         with:
           path: |
             Tibia/silnik/canary_test/testyy/android/app/build
-            Tibia/silnik/canary_test/testyy/android/app/.cxx
           key: android-build-${{ hashFiles('Tibia/silnik/canary_test/testyy/src/**/*.cpp', 'Tibia/silnik/canary_test/testyy/src/**/*.h', 'Tibia/silnik/canary_test/testyy/src/**/*.hpp', 'Tibia/silnik/canary_test/testyy/CMakeLists.txt') }}
           restore-keys: |
             android-build-
@@ -194,6 +193,8 @@ jobs:
           ANDROID_SDK_ROOT: ${{ env.ANDROID_HOME }}
           VCPKG_ROOT: C:\vcpkg
         run: |
+          # Remove stale CMake-generated Ninja files to avoid cached $-escape errors
+          rm -rf app/.cxx || true
           chmod +x ./gradlew 2>/dev/null || true
           ./gradlew assembleRelease --no-daemon --stacktrace --build-cache --warning-mode all
 

@@ -127,6 +127,16 @@ jobs:
                 -DOTC_ENABLE_FRIBIDI=OFF \
                 -S . -B build
 
+      # SonarCloud CFamily analyzer does not recognise Emscripten's em++ wrapper.
+      # Replace em++ → clang++ in compile_commands.json so the analyzer can parse
+      # the compilation units.  em++ is a thin wrapper around clang++ so include
+      # paths and flags are compatible for static analysis purposes.
+      - name: Patch compile_commands.json for SonarCloud
+        run: |
+          sed -i 's|/em++"|/clang++"|g; s|/emcc"|/clang"|g' build/compile_commands.json
+          echo "Patched compile_commands.json — first entry:"
+          head -20 build/compile_commands.json
+
       - name: Run PR sonar-scanner
         if: ${{ (github.event_name == 'pull_request' || github.event_name == 'pull_request_target') && env.SONAR_TOKEN != '' }}
         uses: SonarSource/sonarqube-scan-action@v6

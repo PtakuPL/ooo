@@ -101,6 +101,11 @@ option(OPTIONS_ENABLE_IPO "Check and Enable interprocedural optimization (IPO/LT
 if(OPTIONS_ENABLE_IPO)
 	if(MSVC)
 		log_war("IPO/LTCG disabled on MSVC to avoid internal compiler error C1001")
+	elseif(CMAKE_SYSTEM_NAME STREQUAL "Emscripten")
+		# Emscripten's system libraries (libhtml5.a, libc++-mt) are compiled without
+		# LTO.  Enabling CMAKE_INTERPROCEDURAL_OPTIMIZATION adds -flto=thin which
+		# causes: wasm-ld: error: attempt to add bitcode file after LTO
+		log_war("IPO/LTO disabled for Emscripten to avoid wasm-ld linker errors")
 	else()
 		log_option_enabled("ipo")
 

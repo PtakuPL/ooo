@@ -11,11 +11,13 @@ CMAKE_MINIMUM_REQUIRED(VERSION 3.18)
 
 PROJECT(lua)
 
-if(EMSCRIPTEN OR CMAKE_SYSTEM_NAME STREQUAL "Emscripten")
-  add_compile_options(-pthread -matomics -mbulk-memory)
-else()
-  add_compile_options(-pthread)
-endif()
+# Emscripten pthreads require -matomics -mbulk-memory on ALL compilation units.
+# This overlay port is ONLY used for the wasm32-emscripten triplet (WASM workflows),
+# so we can safely add these flags unconditionally.  The conditional check for
+# EMSCRIPTEN was unreliable because vcpkg's chainloaded toolchain may not set
+# the EMSCRIPTEN variable before this CMakeLists.txt is processed.
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -pthread -matomics -mbulk-memory")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread -matomics -mbulk-memory")
 
 # Build Libraries
 FILE(GLOB HDR_LIBLUA "${CMAKE_SOURCE_DIR}/src/*.h")
@@ -43,6 +45,8 @@ ADD_LIBRARY ( lua ${SRC_LIBLUAC} ${HDR_LIBLUA} )
 TARGET_INCLUDE_DIRECTORIES(lua PRIVATE $<BUILD_INTERFACE:${CMAKE_CURRENT_LIST_DIR}/src> PUBLIC $<INSTALL_INTERFACE:include>)
 SET_PROPERTY (TARGET lua PROPERTY POSITION_INDEPENDENT_CODE ON)
 SET_SOURCE_FILES_PROPERTIES(${SRC_LIBLUAC} PROPERTIES LANGUAGE C)
+# Belt-and-suspenders: ensure atomics flags reach every .c object in the library
+target_compile_options(lua PRIVATE -pthread -matomics -mbulk-memory)
 
 IF (BUILD_SHARED_LIBS AND WIN32)
     TARGET_COMPILE_DEFINITIONS (lua PUBLIC -DLUA_BUILD_AS_DLL )

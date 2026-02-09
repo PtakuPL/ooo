@@ -158,7 +158,7 @@ namespace stdext
     // (EXCEPTION_ACCESS_VIOLATION) in the MSVC front-end, even at /Od.
     // Splitting into two non-nested steps avoids the crash.
     namespace detail {
-        inline void throw_cast_failure(const char* from_type, const char* to_type)
+        inline void throw_cast_failure(const std::string& from_type, const std::string& to_type)
         {
             std::stringstream ss;
             ss << "failed to cast value of type '" << from_type

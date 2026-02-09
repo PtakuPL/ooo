@@ -11,7 +11,7 @@ CMAKE_MINIMUM_REQUIRED(VERSION 3.18)
 
 PROJECT(lua)
 
-if(EMSCRIPTEN)
+if(EMSCRIPTEN OR CMAKE_SYSTEM_NAME STREQUAL "Emscripten")
   add_compile_options(-pthread -matomics -mbulk-memory)
 else()
   add_compile_options(-pthread)

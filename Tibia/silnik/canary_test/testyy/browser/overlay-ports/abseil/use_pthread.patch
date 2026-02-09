@@ -6,7 +6,7 @@ index 7c82b3a..48474ec 100644
  set(ABSL_SOVERSION "2407.0.0")
  include(CTest)
  
-+if(EMSCRIPTEN)
++if(EMSCRIPTEN OR CMAKE_SYSTEM_NAME STREQUAL "Emscripten")
 +  add_compile_options(-pthread -matomics -mbulk-memory)
 +else()
 +  add_compile_options(-pthread)

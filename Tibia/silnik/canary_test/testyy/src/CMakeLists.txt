@@ -838,7 +838,7 @@ target_sources(${PROJECT_NAME} PRIVATE ${SOURCE_FILES})
 # LTO (Link-Time Optimization) - Only for GCC/Clang on native platforms.
 # MSVC uses /LTCG which is handled separately.
 # Emscripten system libs are compiled without LTO; mixing causes wasm-ld errors.
-if(NOT MSVC AND NOT CMAKE_SYSTEM_NAME STREQUAL "Emscripten")
+if(NOT MSVC AND NOT CMAKE_SYSTEM_NAME STREQUAL "Emscripten" AND NOT CMAKE_SYSTEM_NAME STREQUAL "Android")
   target_link_options(${PROJECT_NAME} PUBLIC -flto=auto)
 endif()
 

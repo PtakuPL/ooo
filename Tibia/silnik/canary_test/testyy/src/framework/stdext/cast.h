@@ -156,6 +156,9 @@ namespace stdext
 #pragma optimize("", off) // workaround MSVC ICE in Release builds
 #endif
     template<typename R, typename T>
+#ifdef _MSC_VER
+    __declspec(noinline)
+#endif
     R safe_cast(const T& t)
     {
         R r;

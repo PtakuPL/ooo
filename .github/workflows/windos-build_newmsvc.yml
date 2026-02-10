@@ -42,7 +42,15 @@ jobs:
       - name: Detect latest MSVC toolset
         shell: pwsh
         run: |
-          $vswhere = "$env:ProgramFiles(x86)\Microsoft Visual Studio\Installer\vswhere.exe"
+          $vswhereCmd = Get-Command vswhere.exe -ErrorAction SilentlyContinue
+          if ($vswhereCmd) {
+            $vswhere = $vswhereCmd.Source
+          } elseif (Test-Path "C:\ProgramData\Chocolatey\bin\vswhere.exe") {
+            $vswhere = "C:\ProgramData\Chocolatey\bin\vswhere.exe"
+          } else {
+            $vswhere = "$env:ProgramFiles(x86)\Microsoft Visual Studio\Installer\vswhere.exe"
+          }
+          if (-not (Test-Path $vswhere)) { throw "vswhere.exe not found" }
           $vsPath = & $vswhere -latest -products * -requires Microsoft.VisualStudio.Component.VC.Tools.x86.x64 -property installationPath
           if (-not $vsPath) { throw "Visual Studio not found" }
           $toolset = Get-ChildItem "$vsPath\VC\Tools\MSVC" | Sort-Object Name -Descending | Select-Object -First 1

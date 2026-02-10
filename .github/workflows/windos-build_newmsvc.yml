@@ -1,0 +1,147 @@
+---
+name: windos-build_newmsvc
+
+on:
+  workflow_dispatch:  # Tylko ręczne uruchomienie - build trwa 3h+
+
+env:
+  CMAKE_BUILD_PARALLEL_LEVEL: 4
+  MAKEFLAGS: '-j 4'
+  # Use a recent vcpkg tool commit to avoid stale MSYS2 package URLs on Windows.
+  VCPKG_TOOL_COMMIT: cf6692675e04c036e21f26d64ae5fa3c8485f224
+  VCPKG_FEATURE_FLAGS: manifests,binarycaching
+  VCPKG_BINARY_SOURCES: clear;x-gha,readwrite
+  VCPKG_BUILD_TYPE: release
+  VCPKG_DEFAULT_TRIPLET: x64-windows
+  VCPKG_DEFAULT_HOST_TRIPLET: x64-windows
+
+jobs:
+  build-windows:
+    name: Windows Build (Release, New MSVC)
+    runs-on: windows-2022
+    timeout-minutes: 360  # 6 godzin timeout dla długiego buildu
+    defaults:
+      run:
+        working-directory: Tibia/silnik/canary_test/testyy
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Remove nested git directories (upstream mirrors)
+        shell: bash
+        run: |
+          rm -rf ../oryginall/canary-serwer/.git || true
+          rm -rf ../oryginall/otclient/.git || true
+
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v1.1
+
+      - name: Detect latest MSVC toolset
+        shell: pwsh
+        run: |
+          $vswhere = "$env:ProgramFiles(x86)\Microsoft Visual Studio\Installer\vswhere.exe"
+          $vsPath = & $vswhere -latest -products * -requires Microsoft.VisualStudio.Component.VC.Tools.x86.x64 -property installationPath
+          if (-not $vsPath) { throw "Visual Studio not found" }
+          $toolset = Get-ChildItem "$vsPath\VC\Tools\MSVC" | Sort-Object Name -Descending | Select-Object -First 1
+          if (-not $toolset) { throw "MSVC toolset not found" }
+          "MSVC_TOOLSET=$($toolset.Name)" | Out-File -FilePath $env:GITHUB_ENV -Append
+          "VSINSTALLDIR=$vsPath" | Out-File -FilePath $env:GITHUB_ENV -Append
+
+      - name: Setup MSVC environment (latest toolset)
+        shell: pwsh
+        run: |
+          $vcvars = Join-Path $env:VSINSTALLDIR "VC\Auxiliary\Build\vcvars64.bat"
+          cmd /c "\"$vcvars\" -vcvars_ver=%MSVC_TOOLSET% && set" | ForEach-Object {
+            if ($_ -match "^(.*?)=(.*)$") {
+              "$($matches[1])=$($matches[2])" | Out-File -FilePath $env:GITHUB_ENV -Append
+            }
+          }
+
+      - name: Print MSVC version
+        shell: pwsh
+        run: |
+          cl.exe 2>&1 | Select-String "Version"
+
+      - name: CCache
+        uses: hendrikmuhs/ccache-action@main
+        with:
+          max-size: "1G"
+          variant: "sccache"
+          key: ccache-windows-release
+          restore-keys: |
+            ccache-windows
+
+      - name: Export GitHub Actions cache env
+        uses: actions/github-script@v7
+        with:
+          script: |
+            core.exportVariable('ACTIONS_CACHE_URL', process.env.ACTIONS_CACHE_URL || '');
+            core.exportVariable('ACTIONS_RUNTIME_TOKEN', process.env.ACTIONS_RUNTIME_TOKEN || '');
+
+      - name: Cache vcpkg artifacts
+        uses: actions/cache@v4
+        with:
+          path: |
+            ${{ github.workspace }}\vcpkg\installed
+            ${{ github.workspace }}\vcpkg\buildtrees
+            ${{ github.workspace }}\vcpkg\downloads
+          key: vcpkg-build-x64-windows-${{ hashFiles('Tibia/silnik/canary_test/testyy/vcpkg.json') }}
+          restore-keys: |
+            vcpkg-build-x64-windows-
+
+      - name: Remove Windows pre-installed MySQL
+        shell: pwsh
+        run: |
+          Remove-Item -Path "C:\mysql*" -Recurse -Force -ErrorAction SilentlyContinue
+
+      - name: Install vcpkg
+        uses: lukka/run-vcpkg@v11
+        with:
+          vcpkgGitCommitId: ${{ env.VCPKG_TOOL_COMMIT }}
+
+      - name: Setup CMake + Ninja
+        uses: lukka/get-cmake@latest
+        with:
+          cmakeVersion: '~3.27.0'
+
+      - name: Configure CMake
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force -Path build | Out-Null
+          cmake -G "Ninja" `
+                -DCMAKE_BUILD_TYPE=Release `
+                -DCMAKE_TOOLCHAIN_FILE="$env:VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake" `
+                -DOPTIONS_ENABLE_SCCACHE=ON `
+                -DSPEED_UP_BUILD_UNITY=OFF `
+                -DTOGGLE_BIN_FOLDER=ON `
+                -S . -B build
+
+      - name: Build
+        shell: pwsh
+        run: |
+          cmake --build build --config Release --parallel 4
+
+      - name: Create and Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: otclient-windows-release-${{ github.sha }}
+          path: |
+            ${{ github.workspace }}/Tibia/silnik/canary_test/testyy/build/bin/
+          retention-days: 30
+
+      - name: Run Unit Tests
+        shell: pwsh
+        working-directory: Tibia/silnik/canary_test/testyy/build
+        continue-on-error: true
+        run: |
+          ctest -V -R unit --output-on-failure
+
+      - name: Run Integration Tests
+        shell: pwsh
+        working-directory: Tibia/silnik/canary_test/testyy/build
+        continue-on-error: true
+        run: |
+          ctest -V -R integration --output-on-failure

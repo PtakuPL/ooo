@@ -145,6 +145,7 @@ namespace stdext
             ss << "failed to cast value of type '" << demangle_type<T>() << "' to type '" << demangle_type<R>() << "'";
             m_what = ss.str();
         }
+
         const char* what() const noexcept override { return m_what.c_str(); }
     private:
         std::string m_what;
@@ -152,34 +153,8 @@ namespace stdext
 
     // cast a type to another type, any error throws a cast_exception
 #ifdef _MSC_VER
-    // MSVC 14.44 ICE workaround: Even simple template helper calls (like
-    // demangle_type<T>()) inside safe_cast<R,T> crash the P2 (codegen) phase.
-    // The safest approach is to avoid ANY template-based calls in the error
-    // path — use a plain string literal instead of demangled type names.
-    template<typename R, typename T>
-    __declspec(noinline)
-    R safe_cast(const T& t)
-    {
-        R r;
-        if (!cast(t, r)) {
-            throw std::runtime_error("failed to cast value");
-        }
-        return r;
-    }
-
-    // cast a type to another type, cast errors are ignored
-    template<typename R, typename T>
-    __declspec(noinline)
-    R unsafe_cast(const T& t, R def = R())
-    {
-        try {
-            return safe_cast<R, T>(t);
-        } catch (const std::exception& e) {
-            std::cerr << "CAST ERROR: " << e.what() << std::endl;
-            return def;
-        }
-    }
-#else
+#pragma optimize("", off) // workaround MSVC ICE in Release builds
+#endif
     template<typename R, typename T>
     R safe_cast(const T& t)
     {
@@ -203,5 +178,7 @@ namespace stdext
             return def;
         }
     }
+#ifdef _MSC_VER
+#pragma optimize("", on)
 #endif
 }

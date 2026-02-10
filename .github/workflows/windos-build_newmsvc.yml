@@ -55,14 +55,16 @@ jobs:
           if (-not $vsPath) { throw "Visual Studio not found" }
           $toolset = Get-ChildItem "$vsPath\VC\Tools\MSVC" | Sort-Object Name -Descending | Select-Object -First 1
           if (-not $toolset) { throw "MSVC toolset not found" }
+          $toolsetShort = ($toolset.Name -split "\.")[0..1] -join "."
           "MSVC_TOOLSET=$($toolset.Name)" | Out-File -FilePath $env:GITHUB_ENV -Append
+          "MSVC_TOOLSET_SHORT=$toolsetShort" | Out-File -FilePath $env:GITHUB_ENV -Append
           "VSINSTALLDIR=$vsPath" | Out-File -FilePath $env:GITHUB_ENV -Append
 
       - name: Setup MSVC environment (latest toolset)
         uses: ilammy/msvc-dev-cmd@v1
         with:
           arch: x64
-          toolset: ${{ env.MSVC_TOOLSET }}
+          toolset: ${{ env.MSVC_TOOLSET_SHORT }}
 
       - name: Print MSVC version
         shell: pwsh

@@ -797,6 +797,21 @@ endif()
 
 target_sources(${PROJECT_NAME} PRIVATE ${SOURCE_FILES})
 
+# Workaround: MSVC ICE C1001 at cast.h(160) during compilation of luavaluecasts.cpp
+# The ICE occurs in the compiler's p2 code-generation phase (MSVC 14.44, C++20).
+# Disabling optimization (/Od) for this single TU bypasses the broken compiler
+# code path. Skipping the precompiled header removes PCH as a confounding factor
+# (PCH can interfere with #pragma optimize state during template instantiation).
+# This affects only Lua value casting helpers — negligible performance impact.
+if(MSVC)
+  set_source_files_properties(
+    framework/luaengine/luavaluecasts.cpp
+    PROPERTIES
+      COMPILE_FLAGS "/Od"
+      SKIP_PRECOMPILE_HEADERS ON
+  )
+endif()
+
 # LTO (Link-Time Optimization) - Only for GCC/Clang on native platforms.
 # MSVC uses /LTCG which is handled separately.
 # Emscripten system libs are compiled without LTO; mixing causes wasm-ld errors.

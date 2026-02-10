@@ -141,7 +141,18 @@ jobs:
       # paths and flags are compatible for static analysis purposes.
       - name: Patch compile_commands.json for SonarCloud
         run: |
+          EMSDK_UPSTREAM="$(dirname "$(which em++)")"
+          CLANGXX="${EMSDK_UPSTREAM}/upstream/bin/clang++"
+          CLANG="${EMSDK_UPSTREAM}/upstream/bin/clang"
+          # If upstream clang doesn't exist, use system clang
+          if [ ! -f "$CLANGXX" ]; then CLANGXX="$(which clang++ 2>/dev/null || echo clang++)"; fi
+          if [ ! -f "$CLANG" ];   then CLANG="$(which clang 2>/dev/null || echo clang)"; fi
+          # Replace all occurrences of em++/emcc with real clang paths
+          # The command field may have em++ followed by space (not quote)
+          sed -i "s|/em++ |${CLANGXX} |g; s|/emcc |${CLANG} |g" build/compile_commands.json
           sed -i 's|/em++"|/clang++"|g; s|/emcc"|/clang"|g' build/compile_commands.json
+          # Also strip emscripten-specific flags that clang doesn't understand
+          sed -i 's|-s USE_PTHREADS=1||g; s|-s PTHREAD_POOL_SIZE=[0-9]*||g' build/compile_commands.json
           echo "Patched compile_commands.json — first entry:"
           head -20 build/compile_commands.json
 

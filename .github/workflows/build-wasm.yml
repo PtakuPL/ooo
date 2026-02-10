@@ -18,6 +18,9 @@ env:
   # NOTE: Do NOT set VCPKG_C_FLAGS / VCPKG_CXX_FLAGS here — they apply to ALL
   # triplets (including x64-linux host) and GCC does not understand -matomics.
   # Emscripten-specific flags are set in browser/triplets/wasm32-emscripten.cmake.
+  # For non-cmake vcpkg ports (e.g. OpenSSL), use EMCC_CFLAGS which only affects
+  # the emcc compiler, not the host GCC.
+  EMCC_CFLAGS: -pthread -matomics -mbulk-memory
 
 jobs:
   build-wasm:

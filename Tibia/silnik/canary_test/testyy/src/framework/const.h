@@ -28,8 +28,28 @@
 #define DEG_TO_RAD (std::acos(-1.f)/180.f)
 #define RAD_TO_DEC (180.f/std::acos(-1.f))
 
-#ifndef BUILD_TYPE
+// Stringify helpers — used to turn unquoted CMake -D values into C strings.
+// CMake 3.22.1's Ninja generator produces bare $ when definitions contain
+// embedded quotes, so we pass raw identifiers and stringify in the preprocessor.
+#define OTC_STR_(x) #x
+#define OTC_STR(x)  OTC_STR_(x)
+
+#ifdef BUILD_TYPE_RAW
+#define BUILD_TYPE OTC_STR(BUILD_TYPE_RAW)
+#else
 #define BUILD_TYPE "unknown"
+#endif
+
+#ifdef BUILD_COMMIT_RAW
+#define BUILD_COMMIT OTC_STR(BUILD_COMMIT_RAW)
+#else
+#define BUILD_COMMIT ""
+#endif
+
+#ifdef BUILD_REVISION_RAW
+#define BUILD_REVISION OTC_STR(BUILD_REVISION_RAW)
+#else
+#define BUILD_REVISION ""
 #endif
 
 #ifndef BUILD_ARCH

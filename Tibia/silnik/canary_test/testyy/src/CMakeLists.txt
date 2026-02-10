@@ -233,18 +233,29 @@ add_definitions(${FRAMEWORK_DEFINITIONS})
 add_definitions(-D"VERSION=${VERSION}")
 
 # === Build options ===
-# Use target_compile_definitions instead of add_definitions for string defines.
-# The old add_definitions(-D"BUILD_TYPE=\\\"...\\\") escaping produces a bare $
-# in the Ninja build file with CMake 3.22.1 (Android SDK), causing:
+# BUILD_TYPE, BUILD_COMMIT, BUILD_REVISION — pass as UNQUOTED _RAW tokens.
+# The const.h header stringifies them with OTC_STR() preprocessor macro.
+# This avoids CMake 3.22.1's Ninja generator bug where embedded quotes in
+# -D definitions produce bare $ characters, causing:
 #   ninja: error: build.ninja:NNN: bad $-escape
 message(STATUS "Build type: " ${CMAKE_BUILD_TYPE})
 message(STATUS "Build commit: ${BUILD_COMMIT}")
 message(STATUS "Build revision: ${BUILD_REVISION}")
-target_compile_definitions(${PROJECT_NAME} PRIVATE
-    "BUILD_TYPE=\"${CMAKE_BUILD_TYPE}\""
-    "BUILD_COMMIT=\"${BUILD_COMMIT}\""
-    "BUILD_REVISION=\"${BUILD_REVISION}\""
-)
+if(CMAKE_BUILD_TYPE)
+  target_compile_definitions(${PROJECT_NAME} PRIVATE
+      BUILD_TYPE_RAW=${CMAKE_BUILD_TYPE}
+  )
+endif()
+if(BUILD_COMMIT)
+  target_compile_definitions(${PROJECT_NAME} PRIVATE
+      BUILD_COMMIT_RAW=${BUILD_COMMIT}
+  )
+endif()
+if(BUILD_REVISION)
+  target_compile_definitions(${PROJECT_NAME} PRIVATE
+      BUILD_REVISION_RAW=${BUILD_REVISION}
+  )
+endif()
 # *****************************************************************************
 # Packages / Libs
 # *****************************************************************************

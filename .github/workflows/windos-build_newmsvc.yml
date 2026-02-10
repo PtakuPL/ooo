@@ -39,27 +39,6 @@ jobs:
       - name: Setup MSBuild
         uses: microsoft/setup-msbuild@v1.1
 
-      - name: Detect latest MSVC toolset
-        shell: pwsh
-        run: |
-          $vswhereCmd = Get-Command vswhere.exe -ErrorAction SilentlyContinue
-          if ($vswhereCmd) {
-            $vswhere = $vswhereCmd.Source
-          } elseif (Test-Path "C:\ProgramData\Chocolatey\bin\vswhere.exe") {
-            $vswhere = "C:\ProgramData\Chocolatey\bin\vswhere.exe"
-          } else {
-            $vswhere = "$env:ProgramFiles(x86)\Microsoft Visual Studio\Installer\vswhere.exe"
-          }
-          if (-not (Test-Path $vswhere)) { throw "vswhere.exe not found" }
-          $vsPath = & $vswhere -latest -products * -requires Microsoft.VisualStudio.Component.VC.Tools.x86.x64 -property installationPath
-          if (-not $vsPath) { throw "Visual Studio not found" }
-          $toolset = Get-ChildItem "$vsPath\VC\Tools\MSVC" | Sort-Object Name -Descending | Select-Object -First 1
-          if (-not $toolset) { throw "MSVC toolset not found" }
-          $toolsetShort = ($toolset.Name -split "\.")[0..1] -join "."
-          "MSVC_TOOLSET=$($toolset.Name)" | Out-File -FilePath $env:GITHUB_ENV -Append
-          "MSVC_TOOLSET_SHORT=$toolsetShort" | Out-File -FilePath $env:GITHUB_ENV -Append
-          "VSINSTALLDIR=$vsPath" | Out-File -FilePath $env:GITHUB_ENV -Append
-
       - name: Setup MSVC environment (latest toolset)
         uses: ilammy/msvc-dev-cmd@v1
         with:

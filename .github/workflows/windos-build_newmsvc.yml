@@ -64,7 +64,6 @@ jobs:
         uses: ilammy/msvc-dev-cmd@v1
         with:
           arch: x64
-          toolset: ${{ env.MSVC_TOOLSET_SHORT }}
 
       - name: Print MSVC version
         shell: pwsh

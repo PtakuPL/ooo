@@ -39,25 +39,10 @@ jobs:
       - name: Setup MSBuild
         uses: microsoft/setup-msbuild@v1.1
 
-      - name: Select MSVC toolset (avoid 14.44 ICE if possible)
-        shell: pwsh
-        run: |
-          $root = "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC"
-          if (Test-Path $root) {
-            $toolsets = Get-ChildItem $root -Directory | Select-Object -ExpandProperty Name | Sort-Object -Descending
-            $selected = $toolsets | Where-Object { $_ -notmatch '^14\.44\.' } | Select-Object -First 1
-            if (-not $selected) { $selected = $toolsets | Select-Object -First 1 }
-            "VCTOOLS_VERSION=$selected" | Out-File -FilePath $env:GITHUB_ENV -Append
-            Write-Host "Selected MSVC toolset: $selected"
-          } else {
-            Write-Host "MSVC toolset root not found; using default toolset."
-          }
-
       - name: Setup MSVC environment
         uses: ilammy/msvc-dev-cmd@v1
         with:
           arch: x64
-          toolset: ${{ env.VCTOOLS_VERSION }}
 
       - name: CCache
         uses: hendrikmuhs/ccache-action@main
@@ -105,13 +90,8 @@ jobs:
         shell: pwsh
         run: |
           New-Item -ItemType Directory -Force -Path build | Out-Null
-          # Use Clang-CL instead of MSVC cl.exe to avoid MSVC 14.44 Internal
-          # Compiler Error C1001 in the P2 (codegen) phase.  Clang-CL is
-          # ABI-compatible with MSVC and can link vcpkg-built MSVC libraries.
           cmake -G "Ninja" `
                 -DCMAKE_BUILD_TYPE=Release `
-                -DCMAKE_C_COMPILER=clang-cl `
-                -DCMAKE_CXX_COMPILER=clang-cl `
                 -DCMAKE_TOOLCHAIN_FILE="$env:VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake" `
                 -DOPTIONS_ENABLE_SCCACHE=ON `
                 -DSPEED_UP_BUILD_UNITY=OFF `

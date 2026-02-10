@@ -1153,6 +1153,24 @@ if(ANDROID)
     string(APPEND CMAKE_SHARED_LINKER_FLAGS " -fuse-ld=lld")
     string(APPEND CMAKE_EXE_LINKER_FLAGS " -fuse-ld=lld")
   endif()
+  # Ninja requires literal '$' to be escaped as '$$'. Some toolchains inject
+  # '$' into flags (e.g. $ORIGIN or generator expressions), which breaks the
+  # generated build.ninja. Sanitize known flag variables for Android+Ninja.
+  if(CMAKE_GENERATOR MATCHES "Ninja")
+    foreach(_flag_var
+        CMAKE_C_FLAGS
+        CMAKE_CXX_FLAGS
+        CMAKE_EXE_LINKER_FLAGS
+        CMAKE_SHARED_LINKER_FLAGS
+        CMAKE_MODULE_LINKER_FLAGS)
+      if(DEFINED ${_flag_var} AND NOT "${${_flag_var}}" STREQUAL "")
+        string(REPLACE "$" "$$" _flag_escaped "${${_flag_var}}")
+        if(NOT _flag_escaped STREQUAL "${${_flag_var}}")
+          set(${_flag_var} "${_flag_escaped}" CACHE STRING "" FORCE)
+        endif()
+      endif()
+    endforeach()
+  endif()
 endif()
 
 # *****************************************************************************

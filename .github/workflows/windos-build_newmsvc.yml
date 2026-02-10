@@ -59,14 +59,10 @@ jobs:
           "VSINSTALLDIR=$vsPath" | Out-File -FilePath $env:GITHUB_ENV -Append
 
       - name: Setup MSVC environment (latest toolset)
-        shell: pwsh
-        run: |
-          $vcvars = Join-Path $env:VSINSTALLDIR "VC\Auxiliary\Build\vcvars64.bat"
-          cmd /c "\"$vcvars\" -vcvars_ver=%MSVC_TOOLSET% && set" | ForEach-Object {
-            if ($_ -match "^(.*?)=(.*)$") {
-              "$($matches[1])=$($matches[2])" | Out-File -FilePath $env:GITHUB_ENV -Append
-            }
-          }
+        uses: ilammy/msvc-dev-cmd@v1
+        with:
+          arch: x64
+          toolset: ${{ env.MSVC_TOOLSET }}
 
       - name: Print MSVC version
         shell: pwsh

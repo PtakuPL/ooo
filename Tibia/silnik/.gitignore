@@ -9,6 +9,7 @@ Firma_budowlana/
 # But allow i18n translation files
 !canary_test/i18n/**/*.json
 !canary_test/i18n/*.json
+!canary/i18n/**/*.json
 
 # Ignore Django media and local env files inside this subtree
 **/media/

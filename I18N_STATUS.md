@@ -99,7 +99,7 @@
 | PT | 55 | ✅ TM |
 | RO | 0 | ⚠️ placeholdery (brak TM) |
 | RU | 0 | ⚠️ placeholdery (brak TM) |
-| SR | 31251 | ✅ TM |
+| SR | 37365 | ✅ TM |
 | SV | 0 | ⚠️ placeholdery (brak TM) |
 | TR | 0 | ⚠️ placeholdery (brak TM) |
 
@@ -168,7 +168,7 @@
 | PT | 55 | ✅ TM |
 | RO | 0 | ⚠️ placeholdery (brak TM) |
 | RU | 0 | ⚠️ placeholdery (brak TM) |
-| SR | 31251 | ✅ TM |
+| SR | 37365 | ✅ TM |
 | SV | 0 | ⚠️ placeholdery (brak TM) |
 | TR | 0 | ⚠️ placeholdery (brak TM) |
 

@@ -2,9 +2,9 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 6000, 'npc': 15000, 'player': 200, 'quests': 700, 'scripts': 2500, 'server': 3000, 'spells': 2000, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 900, 'html': 1500, 'client': 300, 'otclient_modules': 2000, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50, 'achievements': 1048, 'actions': 100, 'books': 1403, 'chatchannels': 100, 'creaturescripts': 100, 'dataroot': 100, 'errors': 100, 'events': 100, 'example_merchant': 100, 'globalevents': 100, 'libs': 100, 'messages': 100, 'modules': 100, 'mounts': 100, 'movements': 100, 'npclib': 147, 'questlog': 1918, 'raids': 273, 'startup': 100, 'talkactions': 199, 'world': 100} -->
 
-> **Aktualizacja:** 2026-02-13 20:26:14 UTC  
+> **Aktualizacja:** 2026-02-13 20:28:32 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 53586  
-> **LIVE:** Cykl #50 | Status: 🟢 RUNNING | Faza: AUTO_TRANSLATE | Etap: parallel_start | Kategoria: pl | Plik: otclient_modules.json | ETA: 0 | Heartbeat: 2026-02-13T20:25:41Z
+> **LIVE:** Cykl #51 | Status: 🟢 RUNNING | Faza: AUTO_TRANSLATE | Etap: parallel_start | Kategoria: pl | Plik: otclient_modules.json | ETA: 0 | Heartbeat: 2026-02-13T20:27:44Z
 
 ---
 
@@ -106,8 +106,8 @@
 ### 🎯 Pokrycie tłumaczeń per język (EN → LANG)
 | Język | Przetłumaczone | % poprawnie przetłumaczonych | EN-copy | Braki kluczy |
 |-------|----------------|-------------------------------|---------|--------------|
-| PL (Polski) | 37,174/53,586 | 69.37% | 2,986 | 2,083 |
-| ES (Hiszpański) | 35,183/53,586 | 65.66% | 17,138 | 232 |
+| PL (Polski) | 37,264/53,586 | 69.54% | 2,988 | 2,083 |
+| ES (Hiszpański) | 35,236/53,586 | 65.76% | 17,085 | 232 |
 | AR (Arabski) | 11,447/53,586 | 21.36% | 30,982 | 2,150 |
 | ID (ID) | 11,301/53,586 | 21.09% | 29,171 | 2,155 |
 | VI (VI) | 11,294/53,586 | 21.08% | 29,170 | 2,155 |
@@ -129,38 +129,59 @@
 
 ### 🧭 Aktywny folder tłumaczeń
 - **Folder:** ES - Hiszpański - Serwer
-- **Plik JSON:** server.json
-- **Ostatnie klucze (10-20):** 2
+- **Plik JSON:** quests.json
+- **Ostatnie klucze (10-20):** 20
 
 ### 📝 Ostatnie 10-20 przetłumaczonych kluczy
-- <gasp> → <gasp> (quests.bigfoot_burden.gasp)
-- <crack> → <crack> (quests.mission09_rock_troll.say_1)
+- Sell To → Sprzedaj (otclient_modules.items_otui.tr_10)
+- Basic Item Details → Podstawowe szczegóły przedmiotu (otclient_modules.items_otui.tr_12)
+- Please select an item from the list to see its details here. → Proszę wybrać pozycję z listy, aby zobaczyć tutaj jej szczegóły. (otclient_modules.items_otui.tr_13)
+- Market Average Value → Market Wartość średnia (otclient_modules.items_otui.tr_14)
+- NPC Buy Value → Wartość zakupu NPC (otclient_modules.items_otui.tr_15)
+- Loot Value Source → Źródło wartości łupów (otclient_modules.items_otui.tr_16)
+- Track drops of this item → Śledź spadki tego przedmiotu (otclient_modules.items_otui.tr_2)
+- 2H → 2H (otclient_modules.items_otui.tr_20)
+- 1H → 1H (otclient_modules.items_otui.tr_21)
+- Categories → Kategorie (otclient_modules.items_otui.tr_23)
+- Resulting Value → Wynikowa wartość (otclient_modules.items_otui.tr_3)
+- Prefer Own Loot Value → Preferuj własną wartość łupu (otclient_modules.items_otui.tr_5)
+- Type to set → Wpisz, aby ustawić (otclient_modules.items_otui.tr_6)
+- Average Market Price → Średnia cena Market (otclient_modules.items_otui.tr_7)
+- Buy From → Kup od (otclient_modules.items_otui.tr_9)
+- Mode: "Chat On" → Tryb: „Czat włączony” (otclient_modules.key_edit_otui.tr_6)
+- There are two chat modes for each hotkey preset: Chat On and Chat
+ Off.You can f → Dla każdego ustawienia skrótu klawiszowego dostępne są dwa tryby czatu: Czat włą (otclient_modules.keybinds_otui.tr_10)
+- If you have named your hotkey presets the same like your
+characters and have che → Jeśli nazwałeś swoje ustawienia klawiszy skrótu tak samo jak Twoje
+znaków i zazn (otclient_modules.keybinds_otui.tr_11)
+- Auto-Switch Hotkey Preset → Wstępne ustawienie klawisza skrótu automatycznego przełączania (otclient_modules.keybinds_otui.tr_12)
+- Type to search for a hotkey: → Wpisz, aby wyszukać klawisz skrótu: (otclient_modules.keybinds_otui.tr_6)
 
 ### 🚫 Raporty "nie mogę przetłumaczyć"
-- Guard reports: **1249**  
+- Guard reports: **1252**  
 - Blocker reports: **0**  
-- Widoczne raporty 'nie mogę tłumaczyć': **1199**
+- Widoczne raporty 'nie mogę tłumaczyć': **1202**
 
 ### 🌐 Globalne info wszystkich języków
-- **Global completion:** **19.63%** (547,069/2,786,472)
-- **EN-copy łącznie:** **1,336,119**
+- **Global completion:** **19.64%** (547,212/2,786,472)
+- **EN-copy łącznie:** **1,336,068**
 - **Braki kluczy łącznie:** **110,060**
 - **Brakujące pliki językowe:** **0**
 - **Cache STATUSPY (per-lang):** **mixed** | hit **50**, miss **2**, hit-rate **96.2%**
-- **Cache STATUSPY (per-file):** hit **1971**, miss **5**, hit-rate **99.7%**
+- **Cache STATUSPY (per-file):** hit **1974**, miss **2**, hit-rate **99.9%**
 - **Profiler cyklu (ostatni):** -
 - **Osobny raport:** `i18n/status/translation_global_overview.json`
 
 ### 🔬 Jakość tłumaczeń
-- **Ostatni audyt:** SLOW_MODE | 50 issue(s) / 100 entries | 2026-02-13T20:25:28.475642Z
-- **Top 5 typów problemów:** suspicious_log_medium=113, identical_to_en=50, suspicious_log_low=44, suspicious_log_high=43
-- **Języki o najsłabszej jakości:** pl(60.1, issues=62534), es(60.2, issues=73343), de(71.4, issues=3460), zh_TW(82.9, issues=0), az(83.1, issues=1126)
+- **Ostatni audyt:** SLOW_MODE | 43 issue(s) / 100 entries | 2026-02-13T20:28:32.781303Z
+- **Top 5 typów problemów:** suspicious_log_medium=108, suspicious_log_low=49, identical_to_en=43, suspicious_log_high=43
+- **Języki o najsłabszej jakości:** es(60.1, issues=73676), pl(60.1, issues=62696), de(71.4, issues=3460), zh_TW(82.9, issues=0), az(83.1, issues=1126)
 - **Pliki:** `i18n/status/quality_audit_latest.json`, `i18n/status/quality_dashboard.json`, `i18n/status/quality_report.jsonl`
 
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#50** | od uruchomienia |
+| 🔄 Cykl aktualny | **#51** | od uruchomienia |
 | 🔑 Kluczy wyekstrahowanych | **6,248** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
@@ -262,7 +283,7 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #    50 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #    51 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      🤖 AUTO_TRANSLATE (parallel_start)        │
@@ -273,33 +294,33 @@
 │ Postęp: 0/0 keys                                              │
 │ Info: parallel auto translate                                 │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2026-02-13T20:25:41Z           │
+│ ❤️ Heartbeat: 2026-02-13T20:27:44Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 🧾 Ostatnie akcje (dla czytelności)
 
+- 2026-02-13 20:27:44 | AUTO_TRANSLATE:parallel_start | pl | ok | otclient_modules.json
+- 2026-02-13 20:27:43 | AUTO_TRANSLATE:auto_done | es | ok | scripts.json
+- 2026-02-13 20:26:49 | AUTO_TRANSLATE:auto_start | es | ok | scripts.json
 - 2026-02-13 20:25:41 | AUTO_TRANSLATE:parallel_start | pl | ok | otclient_modules.json
 - 2026-02-13 20:25:40 | AUTO_TRANSLATE:auto_done | es | ok | quests.json
 - 2026-02-13 20:25:36 | AUTO_TRANSLATE:auto_start | es | ok | quests.json
-- 2026-02-13 20:25:21 | AUTO_TRANSLATE:parallel_start | pl | ok | scripts.json
-- 2026-02-13 20:25:20 | AUTO_TRANSLATE:auto_done | es | ok | server.json
-- 2026-02-13 20:25:15 | AUTO_TRANSLATE:auto_start | es | ok | server.json
 
 ---
 
 ## 🔁 W tym cyklu
 
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [es] → warn (files+1, translated+2, skipped+0) — lang=es file=quests.json strict_skipped_done=608
-- 🔧 MIGRATION: zakończono kategorię [cpp] → ok (keys+0, files+0) — migration finished
-- 🔧 MIGRATION: mini-batch stop [cpp] → ok (keys+0) — no new data
-- 🔧 MIGRATION: mini-batch [cpp] → ok (keys+0) — mini_batch=1 processed=5/5
-- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [de] → ok (translated+5, skipped+0) — parallel lang=de file=items.json
-- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [es] → ok (translated+5, skipped+0) — parallel lang=es file=server.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+5, skipped+0) — lang=pl file=spells.json strict_skipped_done=1526
-- 🔧 MIGRATION: zakończono kategorię [quests] → ok (keys+5, files+0) — migration finished
+- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [pl] → ok (translated+59, skipped+0) — parallel lang=pl file=otclient_modules.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [es] → warn (files+1, translated+80, skipped+0) — lang=es file=scripts.json strict_skipped_done=2074
+- 🔧 MIGRATION: zakończono kategorię [otclient_modules] → ok (keys+0, files+0) — migration finished
+- 🔧 MIGRATION: mini-batch stop [otclient_modules] → ok (keys+0) — no new data
+- 🔧 MIGRATION: mini-batch [otclient_modules] → ok (keys+0) — mini_batch=1 processed=5/5
+- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [es] → ok (translated+1, skipped+0) — parallel lang=es file=items.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+6, skipped+0) — lang=pl file=items.json strict_skipped_done=210
+- 🔧 MIGRATION: zakończono kategorię [quests] → ok (keys+0, files+0) — migration finished
 - 🔧 MIGRATION: mini-batch stop [quests] → ok (keys+0) — no new data
-- 🔧 MIGRATION: mini-batch [quests] → ok (keys+0) — mini_batch=4 processed=40/50
+- 🔧 MIGRATION: mini-batch [quests] → ok (keys+0) — mini_batch=1 processed=10/50
 
 
 
@@ -309,7 +330,7 @@
 - Cykle: **471**
 - MIGRATION: **+330** kluczy, **0** plików `.lua`
 - Kategorie dotknięte: actions, chatchannels, cpp, creaturescripts, dataroot, errors, events, items, libs, mounts...
-- Błędy: **699**
+- Błędy: **700**
 
 
 ---
@@ -323,7 +344,7 @@
 | ⬜ Plików bez kluczy | **402** | czyste (brak hardcoded) |
 | 🔑 Kluczy wyciągniętych | **6248** | przez workera w tej sesji |
 | 🌍 Języków | **53** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#50** | continuous mode |
+| 🔄 Cykli wykonanych | **#51** | continuous mode |
 
 ---
 
@@ -533,7 +554,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #50 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #51 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -620,7 +641,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2026-02-13 20:26:14  
+📅 Auto-updated by Worker v1.1 | Last: 2026-02-13 20:28:32  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

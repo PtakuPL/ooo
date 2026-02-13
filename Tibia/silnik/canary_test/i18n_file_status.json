@@ -57363,7 +57363,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-21T15:48:36.038331",
+      "completed_at": "2026-02-13T18:49:07.278107",
       "category": "libs"
     },
     "data/libs/compat/compat.lua": {
@@ -57377,7 +57377,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-21T15:48:36.404032",
+      "completed_at": "2026-02-13T18:49:07.797907",
       "category": "libs"
     },
     "data/libs/debugging/dump.lua": {
@@ -57391,7 +57391,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-21T15:48:36.970286",
+      "completed_at": "2026-02-13T18:49:08.047569",
       "category": "libs"
     },
     "data/libs/functions/game.lua": {
@@ -57405,7 +57405,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-21T15:48:37.580736",
+      "completed_at": "2026-02-13T18:49:08.485200",
       "category": "libs"
     },
     "data/libs/functions/party.lua": {
@@ -57419,7 +57419,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-21T15:48:38.392500",
+      "completed_at": "2026-02-13T18:49:08.823936",
       "category": "libs"
     },
     "data/libs/functions/spectators.lua": {
@@ -57511,7 +57511,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-21T15:48:41.404974",
+      "completed_at": "2026-02-13T18:49:10.156981",
       "category": "libs"
     },
     "data-otservbr-global/lib/core/constants.lua": {
@@ -57525,7 +57525,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-21T15:48:41.829766",
+      "completed_at": "2026-02-13T18:49:10.388099",
       "category": "libs"
     },
     "data-otservbr-global/lib/core/storages.lua": {
@@ -57539,7 +57539,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-21T15:48:42.677914",
+      "completed_at": "2026-02-13T18:49:10.626691",
       "category": "libs"
     },
     "data-otservbr-global/lib/core/load.lua": {
@@ -57553,7 +57553,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-21T15:48:42.931615",
+      "completed_at": "2026-02-13T18:49:11.139113",
       "category": "libs"
     },
     "data-otservbr-global/lib/lib.lua": {
@@ -57567,7 +57567,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-21T15:48:43.338763",
+      "completed_at": "2026-02-13T18:49:11.373634",
       "category": "libs"
     },
     "data-otservbr-global/lib/quests/their_masters_voice.lua": {
@@ -57655,7 +57655,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-21T15:48:46.478695",
+      "completed_at": "2026-02-13T18:49:11.901614",
       "category": "libs"
     },
     "data-canary/lib/core/storages.lua": {
@@ -57669,7 +57669,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-21T15:48:46.927155",
+      "completed_at": "2026-02-13T18:49:12.140009",
       "category": "libs"
     },
     "data-canary/lib/core/load.lua": {
@@ -57683,7 +57683,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-21T15:48:47.261424",
+      "completed_at": "2026-02-13T18:49:12.659787",
       "category": "libs"
     },
     "data-canary/lib/lib.lua": {
@@ -57697,7 +57697,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-21T15:48:47.594163",
+      "completed_at": "2026-02-13T18:49:12.891380",
       "category": "libs"
     },
     "data/events/scripts/party.lua": {
@@ -57711,7 +57711,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-21T15:48:55.995482",
+      "completed_at": "2026-02-13T18:49:22.096195",
       "category": "events"
     },
     "data/events/scripts/monster.lua": {
@@ -57725,7 +57725,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-21T15:48:56.163869",
+      "completed_at": "2026-02-13T18:49:22.333418",
       "category": "events"
     },
     "data/events/scripts/player.lua": {
@@ -57743,7 +57743,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-21T15:48:56.447388",
+      "completed_at": "2026-02-13T18:49:23.846073",
       "category": "events"
     },
     "data/events/scripts/creature.lua": {
@@ -57757,7 +57757,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-21T15:48:56.615159",
+      "completed_at": "2026-02-13T18:49:24.076636",
       "category": "events"
     },
     "data/modules/lib/modules.lua": {
@@ -57869,7 +57869,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-21T15:49:23.600071",
+      "completed_at": "2026-02-13T18:49:55.311498",
       "category": "npclib"
     },
     "data/npclib/npc_system/keyword_handler.lua": {
@@ -57883,7 +57883,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-21T15:49:23.766278",
+      "completed_at": "2026-02-13T18:49:55.550754",
       "category": "npclib"
     },
     "data/npclib/npc_system/bank_system.lua": {
@@ -57901,7 +57901,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-21T15:49:24.013398",
+      "completed_at": "2026-02-13T18:49:55.791276",
       "category": "npclib"
     },
     "data/npclib/npc_system/modules.lua": {
@@ -57919,7 +57919,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-21T15:49:24.285854",
+      "completed_at": "2026-02-13T18:49:56.123505",
       "category": "npclib"
     },
     "data/npclib/npc_system/npc_handler.lua": {
@@ -57933,7 +57933,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-21T15:49:25.657201",
+      "completed_at": "2026-02-13T18:49:56.464928",
       "category": "npclib"
     },
     "data/npclib/npc.lua": {
@@ -57972,10 +57972,14 @@
         },
         "8_sync": {
           "status": "completed"
+        },
+        "5_extraction_en": {
+          "keys_added": 1,
+          "status": "completed"
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-21T15:49:45.094737",
+      "completed_at": "2026-02-13T18:50:12.710998",
       "category": "cpp"
     },
     "src/game/game_definitions.hpp": {
@@ -57986,10 +57990,14 @@
         },
         "8_sync": {
           "status": "completed"
+        },
+        "5_extraction_en": {
+          "keys_added": 1,
+          "status": "completed"
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-21T15:49:45.256420",
+      "completed_at": "2026-02-13T18:50:12.951042",
       "category": "cpp"
     },
     "src/pch.cpp": {
@@ -58000,10 +58008,14 @@
         },
         "8_sync": {
           "status": "completed"
+        },
+        "5_extraction_en": {
+          "keys_added": 1,
+          "status": "completed"
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-21T15:49:45.423331",
+      "completed_at": "2026-02-13T18:50:13.198017",
       "category": "cpp"
     },
     "src/account/account.hpp": {
@@ -58014,10 +58026,14 @@
         },
         "8_sync": {
           "status": "completed"
+        },
+        "5_extraction_en": {
+          "keys_added": 1,
+          "status": "completed"
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-21T15:49:45.588799",
+      "completed_at": "2026-02-13T18:50:13.479582",
       "category": "cpp"
     },
     "src/account/account_repository_db.hpp": {
@@ -58028,10 +58044,14 @@
         },
         "8_sync": {
           "status": "completed"
+        },
+        "5_extraction_en": {
+          "keys_added": 1,
+          "status": "completed"
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-21T15:49:45.756012",
+      "completed_at": "2026-02-13T18:50:13.769518",
       "category": "cpp"
     },
     "src/account/account_info.hpp": {

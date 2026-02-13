@@ -1,0 +1,426 @@
+{
+  "monster.hunter.name": {
+    "src_hash": "5e409e09f43d85c6e61301149e4f803b",
+    "text": "Hunter",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-12T22:22:49.724647Z"
+  },
+  "monster.sorcerer_familiar.name": {
+    "src_hash": "fe695fb861f4a78482830bcb8e24bee3",
+    "text": "Sorcerer familiar",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-12T22:22:49.725988Z"
+  },
+  "monster.knight_familiar.name": {
+    "src_hash": "59bb8dfecc548a5d097b6f0b0d0149e4",
+    "text": "Knight familiar",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-12T22:22:49.727453Z"
+  },
+  "npc.example_merchant.name": {
+    "src_hash": "16373b8c3c6c497895786de3804c2e0c",
+    "text": "My name is Marcus. I run this shop.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-12T23:39:41.333708Z"
+  },
+  "npc.a_bearded_woman.greet_msg_1": {
+    "src_hash": "dec88b2ad57c0b13cc1cf44b9711944a",
+    "text": "MƏNİ BURDAN QUTUR! İNDİ!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-12T23:39:53.047839Z"
+  },
+  "npc.a_bearded_woman.stdmod_1": {
+    "src_hash": "85b863553a645f3e69472bcbeea15190",
+    "text": "Ədalətli dünyada mən böyük bir gəminin kapitanı olardım, ... \\z\n\tOradakı o quldurlar indi mənim əlaltılarım olardı və biz dənizlərdə cəsarət edib sahilyanı şəhərlərin dəhşətinə çevrilərdik! ... \\z\n\tKaş planımız işləsəydi!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-12T23:39:53.048701Z"
+  },
+  "npc.a_bearded_woman.stdmod_2": {
+    "src_hash": "e665aff3c7b262f14bc1bdc6ecab7294",
+    "text": "Kapitan Kid öz gəmisini kamera qapıları üçün çox bahalı qıfıllar kimi mənasız şeylər almaq üçün satdı. ... \\z\n\tO, kanoelərin bir müddət iş görəcəyini söylədi. ... \\z\n\tMəndə elə təəssürat yarandı ki, o, dəniz xəstəliyindən çox əziyyət çəkdiyi üçün gəmi ilə ayrılmaq üçün çox da kədərlənmir.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-12T23:39:53.049625Z"
+  },
+  "npc.a_bearded_woman.stdmod_3": {
+    "src_hash": "d0300a2639da1cea9ef53f1c6c9289c0",
+    "text": "Kiddən daha yaxşı kapitan olardım. Səhnədə bir neçə kapitan oynadım və yaxşı idim! ... \\z\n\tKidin öz adamlarının təqdirini arzuladığı yerdə mən qorxu və dəmir yumruqla hökm edərdim!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-12T23:39:53.050865Z"
+  },
+  "npc.a_bearded_woman.stdmod_6": {
+    "src_hash": "8addcda1b472b30e046fd34589b4879f",
+    "text": "İnsanlar nə qədər axmaq olsalar, onları aldatmaq bir o qədər asan olar. ... \\z\n\tVə nə qədər yoxsul olsalar, qisas almaq üçün bir o qədər az imkan var. Har Har! ... \\z\n\tBuna görə də fırıldaqçılarımı məhv etdiyimə əminəm. Onda məndən qisas almaqdan başqa narahat olmaları lazımdır.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-12T23:39:53.051863Z"
+  },
+  "item.21351.name": {
+    "src_hash": "03944c28dd1d99648eda34c26d3de4ac",
+    "text": "Light Stone Shower Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-12T23:46:23.839739Z"
+  },
+  "monster.paladin_familiar.name": {
+    "src_hash": "394dc0c96d4265282f9b9e07a32e4dae",
+    "text": "Paladin familiar",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-12T23:46:52.585421Z"
+  },
+  "npc.a_bearded_woman.voice_1": {
+    "src_hash": "58767cda40525ee7cbdee616d85cb646",
+    "text": "Mən KİŞİyəm! Məni çıxarın, ey sərxoş axmaqlar!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T00:02:27.720708Z"
+  },
+  "npc.a_dead_bureaucrat1.walkaway_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Əlvida və məni unutma!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:08:33.464840Z"
+  },
+  "npc.a_dead_bureaucrat2.farewell_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Əlvida və məni unutma!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:08:33.465291Z"
+  },
+  "npc.a_dead_bureaucrat2.voice_1": {
+    "src_hash": "cdcea1350c387fbbeec64fa8f0b8ddea",
+    "text": "İndi o formanı hara qoymuşam?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:08:33.465761Z"
+  },
+  "npc.a_dead_bureaucrat2.walkaway_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Əlvida və məni unutma!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:08:33.466174Z"
+  },
+  "npc.a_dead_bureaucrat3.farewell_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Əlvida və məni unutma!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:08:33.466647Z"
+  },
+  "item.21352.name": {
+    "src_hash": "31cd2c4b8700d3fba06777b6f804dbdd",
+    "text": "Lightest Missile Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:10:25.231556Z"
+  },
+  "item.21432.name": {
+    "src_hash": "31cd2c4b8700d3fba06777b6f804dbdd",
+    "text": "Lightest Missile Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:10:25.233167Z"
+  },
+  "item.21434.name": {
+    "src_hash": "03944c28dd1d99648eda34c26d3de4ac",
+    "text": "Light Stone Shower Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:10:25.233894Z"
+  },
+  "item.24966.name": {
+    "src_hash": "7c7004d4846601f4cc710309ded176ef",
+    "text": "Forbidden Fruit",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:10:25.249502Z"
+  },
+  "item.29276.name": {
+    "src_hash": "2f00d19e4fb2d9e1c321035e9ad9a8d2",
+    "text": "Dream Catcher",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:10:25.263754Z"
+  },
+  "item.30215.name": {
+    "src_hash": "7bdff76536f12a7c5ffde207e72cfe3a",
+    "text": "ice",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:14:16.310487Z"
+  },
+  "item.30218.name": {
+    "src_hash": "7bdff76536f12a7c5ffde207e72cfe3a",
+    "text": "ice",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:14:16.310923Z"
+  },
+  "item.30273.name": {
+    "src_hash": "7bdff76536f12a7c5ffde207e72cfe3a",
+    "text": "ice",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:14:16.311917Z"
+  },
+  "item.3051.name": {
+    "src_hash": "c193d863e3cfa9eb7c10c24bc406c615",
+    "text": "energy ring",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:14:16.313393Z"
+  },
+  "item.3088.name": {
+    "src_hash": "c193d863e3cfa9eb7c10c24bc406c615",
+    "text": "energy ring",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:14:16.654498Z"
+  },
+  "item.3147.name": {
+    "src_hash": "967513bc0728d5d1211f01974ab4dee5",
+    "text": "Blank Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:14:16.658454Z"
+  },
+  "item.3148.name": {
+    "src_hash": "108014137d9b1b568bc5809b2ae08993",
+    "text": "Destroy Field Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:14:16.658973Z"
+  },
+  "monster.druid_familiar.name": {
+    "src_hash": "99443d0ef921af33631809b8edfb838c",
+    "text": "Druid familiar",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:15:56.590455Z"
+  },
+  "monster.dharalion.name": {
+    "src_hash": "f4b02a0be06c383d37eaf02f4359402b",
+    "text": "Dharalion",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:15:56.591128Z"
+  },
+  "monster.dharalion.desc": {
+    "src_hash": "f4b02a0be06c383d37eaf02f4359402b",
+    "text": "Dharalion",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:15:56.591561Z"
+  },
+  "monster.cyclops.name": {
+    "src_hash": "1a1ea04451ed996376aac96e92f38324",
+    "text": "Cyclops",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:15:56.591960Z"
+  },
+  "monster.orc.name": {
+    "src_hash": "34b0ceb41c3a8896e074f8e59190021b",
+    "text": "Orc",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:15:56.599683Z"
+  },
+  "monster.the_old_widow.name": {
+    "src_hash": "0a46dc1f306c4565526cd2e7b1631bd1",
+    "text": "The Old Widow",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:15:56.602711Z"
+  },
+  "monster.the_old_widow.desc": {
+    "src_hash": "0a46dc1f306c4565526cd2e7b1631bd1",
+    "text": "The Old Widow",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:15:56.603891Z"
+  },
+  "monster.fallen_mooh'tah_master_ghar.desc": {
+    "src_hash": "8ee1f9a65d98e75b769dc3ebc05fd719",
+    "text": "Fallen Mooh'tah Master Ghar",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:18:58.057123Z"
+  },
+  "monster.lord_of_the_elements.name": {
+    "src_hash": "26f35529002a0a103c2080451deda86a",
+    "text": "Lord of the Elements",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:18:58.062074Z"
+  },
+  "monster.lord_of_the_elements.desc": {
+    "src_hash": "26f35529002a0a103c2080451deda86a",
+    "text": "Lord of the Elements",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:18:58.062934Z"
+  },
+  "monster.generator.name": {
+    "src_hash": "92a8f0b9d28a89b480bd1d29f46f0484",
+    "text": "generator",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:18:58.063527Z"
+  },
+  "monster.gaz'haragoth.desc": {
+    "src_hash": "62ad3edd6f61c6fad46755eb7cdc163a",
+    "text": "Gaz'Haragoth",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:18:58.071533Z"
+  },
+  "npc.a_dead_bureaucrat3.voice_1": {
+    "src_hash": "cdcea1350c387fbbeec64fa8f0b8ddea",
+    "text": "İndi o formanı hara qoymuşam?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:25:51.471044Z"
+  },
+  "npc.a_dead_bureaucrat3.walkaway_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Əlvida və məni unutma!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:25:51.471575Z"
+  },
+  "npc.a_dead_bureaucrat4.farewell_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Əlvida və məni unutma!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:25:51.471989Z"
+  },
+  "npc.a_dead_bureaucrat4.voice_1": {
+    "src_hash": "cdcea1350c387fbbeec64fa8f0b8ddea",
+    "text": "İndi o formanı hara qoymuşam?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:25:51.472457Z"
+  },
+  "npc.a_dead_bureaucrat4.walkaway_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Əlvida və məni unutma!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:25:51.472883Z"
+  },
+  "npc.a_dragon_lord.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Aşağı saxlayın! <sizə canavar fəaliyyəti haqqında ətraflı hesabat verir>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:25:51.473438Z"
+  },
+  "npc.a_dragon_lord.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Aşağı saxlayın! <sizə canavar fəaliyyəti haqqında ətraflı hesabat verir>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:25:51.473954Z"
+  },
+  "npc.a_dragon_lord.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Aşağı saxlayın! <sizə canavar fəaliyyəti haqqında ətraflı hesabat verir>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:25:51.474526Z"
+  },
+  "npc.a_drillworm.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Aşağı saxlayın! <sizə canavar fəaliyyəti haqqında ətraflı hesabat verir>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:25:51.475145Z"
+  },
+  "npc.a_drillworm.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Aşağı saxlayın! <sizə canavar fəaliyyəti haqqında ətraflı hesabat verir>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:25:51.475674Z"
+  },
+  "npc.a_drillworm.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Aşağı saxlayın! <sizə canavar fəaliyyəti haqqında ətraflı hesabat verir>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:25:51.476174Z"
+  },
+  "npc.a_lost_basher.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Aşağı saxlayın! <sizə canavar fəaliyyəti haqqında ətraflı hesabat verir>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:25:51.477392Z"
+  }
+}

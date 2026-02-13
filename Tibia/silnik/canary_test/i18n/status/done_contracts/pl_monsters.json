@@ -1,0 +1,28 @@
+{
+  "file": "monsters.json",
+  "lang": "pl",
+  "conditions": {
+    "no_critical_token_errors": {
+      "ok": true,
+      "guard_placeholder": 0,
+      "guard_pipe": 0
+    },
+    "guard_command_below_threshold": {
+      "ok": true,
+      "guard_command": 0,
+      "threshold": 5
+    },
+    "coverage_above_95pct": {
+      "ok": false,
+      "coverage_pct": 75.8,
+      "total_keys": 5915,
+      "real_translations": 4481
+    },
+    "quality_entry_present": {
+      "ok": true,
+      "has_quality_data": true
+    }
+  },
+  "is_done": false,
+  "timestamp": "2026-02-13T22:31:20.326052Z"
+}

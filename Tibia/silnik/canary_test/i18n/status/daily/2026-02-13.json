@@ -1,0 +1,151 @@
+{
+  "cycles": 471,
+  "date": "2026-02-13",
+  "errors": {
+    "count": 980
+  },
+  "generated_at_utc": "2026-02-13T22:41:04Z",
+  "work": {
+    "auto_translate": {
+      "langs": {
+        "AZ": {
+          "skipped": 0,
+          "translated": 44
+        },
+        "DE": {
+          "skipped": 0,
+          "translated": 920
+        },
+        "ES": {
+          "skipped": 0,
+          "translated": 19347
+        },
+        "FR": {
+          "skipped": 0,
+          "translated": 98
+        },
+        "IT": {
+          "skipped": 0,
+          "translated": 98
+        },
+        "LV": {
+          "skipped": 0,
+          "translated": 5
+        },
+        "MK": {
+          "skipped": 0,
+          "translated": 5
+        },
+        "MS": {
+          "skipped": 0,
+          "translated": 5
+        },
+        "NL": {
+          "skipped": 0,
+          "translated": 12
+        },
+        "PL": {
+          "skipped": 0,
+          "translated": 17037
+        },
+        "PT": {
+          "skipped": 0,
+          "translated": 256
+        },
+        "RU": {
+          "skipped": 0,
+          "translated": 98
+        },
+        "SK": {
+          "skipped": 0,
+          "translated": 5
+        },
+        "SQ": {
+          "skipped": 0,
+          "translated": 5
+        },
+        "SR": {
+          "skipped": 0,
+          "translated": 5
+        },
+        "SV": {
+          "skipped": 0,
+          "translated": 12
+        },
+        "SW": {
+          "skipped": 0,
+          "translated": 5
+        },
+        "TA": {
+          "skipped": 0,
+          "translated": 5
+        },
+        "TE": {
+          "skipped": 0,
+          "translated": 5
+        },
+        "TL": {
+          "skipped": 0,
+          "translated": 5
+        },
+        "TR": {
+          "skipped": 0,
+          "translated": 104
+        },
+        "UK": {
+          "skipped": 0,
+          "translated": 5
+        },
+        "UZ": {
+          "skipped": 0,
+          "translated": 7
+        },
+        "VI": {
+          "skipped": 0,
+          "translated": 7
+        },
+        "ZH": {
+          "skipped": 0,
+          "translated": 0
+        },
+        "ZH_TW": {
+          "skipped": 0,
+          "translated": 1
+        }
+      }
+    },
+    "compact_keys": {
+      "exported_langs": [],
+      "mapped_new": 0
+    },
+    "migration": {
+      "categories_touched": [
+        "actions",
+        "chatchannels",
+        "cpp",
+        "creaturescripts",
+        "dataroot",
+        "errors",
+        "events",
+        "items",
+        "libs",
+        "mounts",
+        "npclib",
+        "otclient_data",
+        "otclient_modules",
+        "otclient_src",
+        "otclient_tools",
+        "quests",
+        "scripts",
+        "server",
+        "spells",
+        "talkactions"
+      ],
+      "files_changed": 0,
+      "keys_added": 330
+    },
+    "translation_sync": {
+      "langs": {}
+    }
+  }
+}

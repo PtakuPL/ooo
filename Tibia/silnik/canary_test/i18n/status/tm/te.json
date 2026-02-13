@@ -1,0 +1,42 @@
+{
+  "spell.msg_cannot_cast": {
+    "src_hash": "2e82fa5082130470b26e6e1db5f8d366",
+    "text": "మీరు ఈ మంత్రం వేయలేరు",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T00:09:46.033111Z"
+  },
+  "spell.msg_need_learn": {
+    "src_hash": "24c37be7de2773e7687c1bb0b58d66a9",
+    "text": "మీరు ముందుగా ఈ స్పెల్ నేర్చుకోవాలి",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T00:09:46.034085Z"
+  },
+  "spell.msg_no_party_in_range": {
+    "src_hash": "fca01b330772f55532e24d9cf2108105",
+    "text": "పరిధిలో పార్టీ సభ్యులు లేరు.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T00:09:46.035339Z"
+  },
+  "spell.msg_no_creatures_around": {
+    "src_hash": "e8ab5eef836b9bcbfe91c55f008b6f15",
+    "text": "చుట్టూ జీవులు లేవు",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T00:09:46.036011Z"
+  },
+  "spell.msg_cannot_summon_more": {
+    "src_hash": "1718b9c7c3db387960dae22e578e4df5",
+    "text": "మీరు మరిన్ని జీవులను పిలవలేరు.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T00:09:46.036441Z"
+  }
+}

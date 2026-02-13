@@ -10,6 +10,147 @@ Automatyczna dokumentacja wszystkich zmian internacjonalizacji.
 
 # 🔧 CHANGELOG POPRAWEK WORKERA
 
+## [2026-02-12] Worker: TRANSLATIONS_ONLY STRICT + multi-language + raporty jakości
+
+### 📋 Zakres wykonanych zmian
+
+W tej sesji skupiliśmy się na pracy **tylko tłumaczeniowej** (bez migracji) i na poprawie czytelności statusów.
+
+Najważniejsze wdrożenia:
+
+1. **Tryb tłumaczeń wielojęzykowych (`--langs`)**
+    - Worker może działać na wielu językach wskazanych flagą `--langs "pl tr ..."`.
+    - Dispatcher respektuje kolejność języków i dynamicznie wybiera język/plik do pracy.
+
+2. **Tryb `--translations-only` jako STRICT (bez nowych kluczy i plików)**
+    - W trybie strict worker **nie tworzy nowych kluczy** i **nie tworzy brakujących plików językowych**.
+    - Gdy wykryje brakujące pliki lub klucze EN→LANG, zgłasza blokadę i zapisuje raport zamiast wykonywać niedozwolone modyfikacje.
+
+3. **Lepsza selekcja zadań tłumaczeniowych**
+    - Selekcja AUTO tłumaczeń uwzględnia teraz:
+      - brakujące klucze EN w języku,
+      - wartości nieprzetłumaczone,
+      - wartości będące kopią EN (EN-copy).
+    - To eliminuje sytuację, w której worker nie podejmował pracy mimo realnych braków.
+
+4. **Raportowanie guard/strict i blokerów**
+    - Dodano raporty:
+      - `i18n/status/translation_guard_latest.json`
+      - `i18n/status/translation_guard_report.jsonl`
+      - `i18n/status/translation_blockers_latest.json`
+      - `i18n/status/translation_blockers_report.jsonl`
+    - Raporty obejmują m.in. `guard_fail`, `strict_missing_file`, `strict_missing_key` i liczniki skipów.
+
+5. **Historia ostatnich tłumaczeń (10–20 kluczy)**
+    - Dodano zapis ostatnich przetłumaczonych par EN→LANG:
+      - `i18n/status/translation_recent_latest.json`
+      - `i18n/status/translation_recent_report.jsonl`
+    - Każdy wpis zawiera m.in. `key`, `en`, `translated`, `source` (TM/simple).
+
+6. **Globalny przegląd wszystkich języków**
+    - Dodano agregację globalną EN→LANG:
+      - `i18n/status/translation_global_overview.json`
+    - Raport zawiera per-język: `translated_keys`, `missing_keys`, `english_copy_keys`, `% completion`.
+
+7. **Status LIVE i dashboard: kontekst folderu i raporty „nie mogę”**
+    - W AUTO worker pokazuje kontekst folderu: `LANG - NazwaJęzyka - Serwer/Klient`.
+    - Dashboard pokazuje liczniki raportów blokad oraz sekcję ostatnich przetłumaczonych kluczy.
+
+---
+
+### ✅ Osiągnięte cele funkcjonalne
+
+- Tryb tłumaczeń może działać bez migracji i bez dodawania nowych kluczy.
+- Worker raportuje „dlaczego nie może tłumaczyć” zamiast wykonywać niedozwolone zmiany.
+- Jest dostępny podgląd ostatnich tłumaczeń i oddzielna agregacja globalna języków.
+
+---
+
+### ⚠️ Znane ograniczenia (kolejny etap prac)
+
+1. **Część metryk statusu nadal bywa niespójna**
+    - `I18N_STATUS.md` łączy dane z wielu źródeł (`i18n_file_status.json`, `i18n_global_stats.json`, `i18n/status/*`).
+    - Przy długim continuous run, przerwaniach i backupach część wartości może chwilowo się rozjeżdżać.
+
+2. **„Klucze EN 54k+” vs wyświetlane total**
+    - Licznik total zależy od sumowania kategorii i zakresu (`I18N_SCOPE`) oraz jakości JSON-ów źródłowych.
+    - Kolejny krok: jedna kanoniczna funkcja zliczania EN + walidacja spójności na końcu cyklu.
+
+3. **Jakość gramatyczna tłumaczeń**
+    - Obecne guardy chronią strukturę (placeholder/komendy/pipes), ale nie robią pełnej oceny gramatycznej.
+    - Kolejny krok: osobny walidator gramatyczno-językowy per język.
+
+---
+
+## [2026-02-12] P3: Throttle STATUSPY przez cache per-język (inkrementalnie)
+
+### 📋 Zakres wdrożenia
+
+W `update_github_status` (blok `STATUSPY` w `i18n_worker_simple.sh`) dodano cache statystyk tłumaczeń per-język,
+aby nie przeliczać pełnego EN→53 LANG przy każdym odświeżeniu statusu.
+
+Wdrożone elementy:
+
+1. **Cache plikowy statystyk per-lang**
+    - Plik: `i18n/status/translation_lang_stats_cache.json`
+    - Zawiera:
+      - `scope` (server/full),
+      - sygnaturę EN (`en_signature` + `en_total_keys`),
+      - per-język: sygnatury plików (`sig`) oraz wyliczony `row` (completion/missing/english_copy).
+
+2. **Sygnatury zamiast pełnego parsowania**
+    - Dla każdego `lang/json` liczone są lekkie sygnatury `mtime_ns + size`.
+    - Jeśli sygnatura i EN signature się nie zmieniły → używany jest cached `row`.
+    - Tylko zmienione języki są przeliczane przez pełne JSON parse.
+
+3. **Bezpieczna invalidacja cache**
+    - Cache unieważnia się automatycznie przy zmianie:
+      - `I18N_SCOPE`,
+      - plików EN (`en_signature`),
+      - sumy kluczy EN (`en_total_keys`).
+
+4. **Atomowy zapis cache**
+    - Zapis przez `*.tmp` + `os.replace`, żeby uniknąć uszkodzeń przy przerwaniu.
+
+5. **Widoczność cache w dashboardzie**
+    - `I18N_STATUS.md` pokazuje teraz live metryki cache STATUSPY:
+      - tryb (`cold-cache` / `mixed` / `warm-cache`),
+      - `hit`, `miss`, `hit-rate`.
+
+6. **Dodatkowy cache inwentaryzacji plików projektu**
+    - Ciężki skan `os.walk('.')` ma teraz cache:
+      - `i18n/status/project_file_inventory_cache.json`
+    - Domyślny TTL: 600s (env: `STATUS_PROJECT_SCAN_TTL_SEC`).
+    - Ogranicza koszt sekcji „Pliki Projektu” przy częstych update-status.
+
+### ✅ Wynik praktyczny
+
+Test lokalny (`--update-status` 2x, ten sam stan repo):
+- pierwszy przebieg (cold cache): ~`14.40s`
+- drugi przebieg (warm cache): ~`3.60s`
+
+Czyli ~4x szybciej dla samego statusu, przy zachowaniu pełnej zgodności metryk.
+
+### 📌 Backlog rzeczy do zrobienia w workerze (kolejność)
+
+1. **✅ P3.1 — cache per-file (w ramach języka) w STATUSPY**
+    - Cel: przy zmianie 1 pliku `lang/*.json` nie przeliczać całego języka.
+    - Zakres: trzymać wkład metryk per `lang+json_file`, składać wynik języka inkrementalnie.
+
+2. **✅ P3.2 — współdzielony cache EN inventory dla STATUSPY + strict selector**
+    - Cel: ograniczyć duplikację odczytów EN JSON między statusem i selektorem tłumaczeń.
+    - Zakres: jedno źródło sygnatur/liczników EN w `i18n/status/`.
+
+3. **✅ P3.3 — profiler cyklu workera**
+    - Cel: widzieć koszt faz (dispatch/sync/auto/status) i szybko łapać regresje.
+    - Zakres: zapis czasów do `i18n/status` + krótki podgląd w `I18N_STATUS.md`.
+
+4. **✅ P3.4 — smart force update statusu**
+    - Cel: wymuszać pełny status tylko przy istotnych zmianach metryk, nie na każdym ONCE/idle.
+    - Zakres: porównanie delty (`translated/missing/guard`) i warunkowy force.
+
+---
+
 ## [2025-12-17 06:00-07:00] Naprawa dynamicznych tekstów i przechodzenia między kategoriami
 
 ### 📋 Podsumowanie sesji nocnej

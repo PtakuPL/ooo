@@ -1,0 +1,2658 @@
+{
+  "channel.help.name": {
+    "src_hash": "6a26f548831e6a8c26bfbbd9f6ec61e0",
+    "text": "Ajuda",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.509360Z"
+  },
+  "otclient_modules.character.tr_56": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "Não",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.509450Z"
+  },
+  "otclient_modules.character.tr_57": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Sim",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.509471Z"
+  },
+  "otclient_modules.charms.tr_1": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "Não",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.509510Z"
+  },
+  "otclient_modules.charms.tr_10": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Sim",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.509526Z"
+  },
+  "otclient_modules.charms.tr_13": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "Não",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.509540Z"
+  },
+  "otclient_modules.charms.tr_14": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Sim",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.509555Z"
+  },
+  "otclient_modules.charms.tr_17": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "Não",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.509568Z"
+  },
+  "otclient_modules.charms.tr_18": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Sim",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.509621Z"
+  },
+  "otclient_modules.charms.tr_2": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Sim",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.509640Z"
+  },
+  "otclient_modules.charms.tr_5": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "Não",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.509653Z"
+  },
+  "otclient_modules.charms.tr_6": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Sim",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.509669Z"
+  },
+  "otclient_modules.charms.tr_9": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "Não",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.509683Z"
+  },
+  "otclient_modules.game_shop.tr_16": {
+    "src_hash": "831a28f1e8df07c553fcd59546465d13",
+    "text": "Comprar",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.509696Z"
+  },
+  "otclient_modules.game_shop.tr_17": {
+    "src_hash": "831a28f1e8df07c553fcd59546465d13",
+    "text": "Comprar",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.509709Z"
+  },
+  "otclient_modules.game_shop.tr_18": {
+    "src_hash": "831a28f1e8df07c553fcd59546465d13",
+    "text": "Comprar",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.509723Z"
+  },
+  "otclient_modules.game_shop.tr_3": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "Não",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.509754Z"
+  },
+  "otclient_modules.game_shop.tr_4": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Sim",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.509769Z"
+  },
+  "otclient_modules.game_shop.tr_5": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "Não",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.509782Z"
+  },
+  "otclient_modules.game_shop.tr_6": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Sim",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.509795Z"
+  },
+  "otclient_modules.game_store.tr_2": {
+    "src_hash": "831a28f1e8df07c553fcd59546465d13",
+    "text": "Comprar",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.509809Z"
+  },
+  "otclient_modules.gameinterface.tr_43": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Sim",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.509822Z"
+  },
+  "otclient_modules.gameinterface.tr_44": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "Não",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.509838Z"
+  },
+  "otclient_modules.house.tr_31": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "Não",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.509852Z"
+  },
+  "otclient_modules.house.tr_32": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Sim",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.509865Z"
+  },
+  "otclient_modules.house.tr_39": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "Não",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.509879Z"
+  },
+  "otclient_modules.house.tr_40": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Sim",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.509892Z"
+  },
+  "otclient_modules.house.tr_43": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "Não",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.509919Z"
+  },
+  "otclient_modules.house.tr_44": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Sim",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.509934Z"
+  },
+  "otclient_modules.house.tr_49": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "Não",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.509947Z"
+  },
+  "otclient_modules.house.tr_50": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Sim",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.509960Z"
+  },
+  "otclient_modules.house.tr_55": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "Não",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.509973Z"
+  },
+  "otclient_modules.house.tr_56": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Sim",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.509987Z"
+  },
+  "otclient_modules.house.tr_61": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "Não",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.510000Z"
+  },
+  "otclient_modules.house.tr_62": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Sim",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.510013Z"
+  },
+  "otclient_modules.imbuing.tr_2": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "Não",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.510035Z"
+  },
+  "otclient_modules.imbuing.tr_3": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Sim",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.510057Z"
+  },
+  "otclient_modules.imbuing.tr_5": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "Não",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.510071Z"
+  },
+  "otclient_modules.imbuing.tr_6": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Sim",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.510085Z"
+  },
+  "otclient_modules.items.tr_26": {
+    "src_hash": "9768feb3fdb1f267b06093bc572952dd",
+    "text": "Ouro",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.510097Z"
+  },
+  "otclient_modules.market.tr_16": {
+    "src_hash": "e07e81c20cf5935f5225765f0af81755",
+    "text": "Ouro",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.510111Z"
+  },
+  "otclient_modules.market.tr_20": {
+    "src_hash": "3068c5a98c003498f1fec0c489212e8b",
+    "text": "Vender",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.510124Z"
+  },
+  "otclient_modules.market.tr_21": {
+    "src_hash": "831a28f1e8df07c553fcd59546465d13",
+    "text": "Comprar",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.510138Z"
+  },
+  "otclient_modules.npctrade.tr_1": {
+    "src_hash": "831a28f1e8df07c553fcd59546465d13",
+    "text": "Comprar",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.510155Z"
+  },
+  "otclient_modules.npctrade_otui.tr_14": {
+    "src_hash": "3068c5a98c003498f1fec0c489212e8b",
+    "text": "Vender",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.510169Z"
+  },
+  "otclient_modules.npctrade_otui.tr_16": {
+    "src_hash": "831a28f1e8df07c553fcd59546465d13",
+    "text": "Comprar",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.510182Z"
+  },
+  "otclient_modules.npctrade_otui.tr_2": {
+    "src_hash": "831a28f1e8df07c553fcd59546465d13",
+    "text": "Comprar",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.510196Z"
+  },
+  "otclient_modules.serverlist.tr_1": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "Não",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.510209Z"
+  },
+  "otclient_modules.serverlist.tr_2": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Sim",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.510222Z"
+  },
+  "otclient_modules.spelllist_otui.tr_1": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Sim",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.510236Z"
+  },
+  "otclient_modules.spelllist_otui.tr_2": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "Não",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.510249Z"
+  },
+  "otclient_modules.tasks.tr_10": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Sim",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.510262Z"
+  },
+  "otclient_modules.tasks.tr_9": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "Não",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.510320Z"
+  },
+  "otclient_modules.tradewindow_otui.tr_3": {
+    "src_hash": "5f390d80b20daad8f5d2f483fb0ae9d8",
+    "text": "Comércio",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.510334Z"
+  },
+  "otclient_modules.ui_otui.tr_2": {
+    "src_hash": "831a28f1e8df07c553fcd59546465d13",
+    "text": "Comprar",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:17.510360Z"
+  },
+  "monster.hunter.name": {
+    "src_hash": "5e409e09f43d85c6e61301149e4f803b",
+    "text": "Hunter",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:18.351877Z"
+  },
+  "monster.sorcerer_familiar.name": {
+    "src_hash": "fe695fb861f4a78482830bcb8e24bee3",
+    "text": "Sorcerer familiar",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:18.353420Z"
+  },
+  "monster.knight_familiar.name": {
+    "src_hash": "59bb8dfecc548a5d097b6f0b0d0149e4",
+    "text": "Knight familiar",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-12T22:18:18.354024Z"
+  },
+  "item.21351.name": {
+    "src_hash": "03944c28dd1d99648eda34c26d3de4ac",
+    "text": "Light Stone Shower Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-12T23:10:03.557869Z"
+  },
+  "item.21352.name": {
+    "src_hash": "31cd2c4b8700d3fba06777b6f804dbdd",
+    "text": "Lightest Missile Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-12T23:10:03.558774Z"
+  },
+  "item.21432.name": {
+    "src_hash": "31cd2c4b8700d3fba06777b6f804dbdd",
+    "text": "Lightest Missile Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-12T23:10:03.565933Z"
+  },
+  "item.21434.name": {
+    "src_hash": "03944c28dd1d99648eda34c26d3de4ac",
+    "text": "Light Stone Shower Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-12T23:10:03.567150Z"
+  },
+  "item.24966.name": {
+    "src_hash": "7c7004d4846601f4cc710309ded176ef",
+    "text": "Forbidden Fruit",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-12T23:10:03.627651Z"
+  },
+  "item.29276.name": {
+    "src_hash": "2f00d19e4fb2d9e1c321035e9ad9a8d2",
+    "text": "Dream Catcher",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-12T23:10:03.692473Z"
+  },
+  "monster.paladin_familiar.name": {
+    "src_hash": "394dc0c96d4265282f9b9e07a32e4dae",
+    "text": "Paladin familiar",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-12T23:24:21.172538Z"
+  },
+  "monster.druid_familiar.name": {
+    "src_hash": "99443d0ef921af33631809b8edfb838c",
+    "text": "Druid familiar",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-12T23:24:21.173625Z"
+  },
+  "monster.dharalion.name": {
+    "src_hash": "f4b02a0be06c383d37eaf02f4359402b",
+    "text": "Dharalion",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-12T23:24:21.176454Z"
+  },
+  "monster.dharalion.desc": {
+    "src_hash": "f4b02a0be06c383d37eaf02f4359402b",
+    "text": "Dharalion",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-12T23:24:21.177336Z"
+  },
+  "monster.cyclops.name": {
+    "src_hash": "1a1ea04451ed996376aac96e92f38324",
+    "text": "Cyclops",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-12T23:24:21.178702Z"
+  },
+  "data.otservbr.global.npc.a.dead.bureaucrat1.L64.461": {
+    "src_hash": "8b1a9953c4611296a827abf8c47804d7",
+    "text": "Olá",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-12T23:32:52.423137Z"
+  },
+  "data.otservbr.global.npc.a.dead.bureaucrat2.L57.884": {
+    "src_hash": "8b1a9953c4611296a827abf8c47804d7",
+    "text": "Olá",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-12T23:32:52.423460Z"
+  },
+  "data.otservbr.global.npc.a.dead.bureaucrat3.L57.1106": {
+    "src_hash": "8b1a9953c4611296a827abf8c47804d7",
+    "text": "Olá",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-12T23:32:52.423834Z"
+  },
+  "data.otservbr.global.npc.a.dead.bureaucrat4.L64.264": {
+    "src_hash": "8b1a9953c4611296a827abf8c47804d7",
+    "text": "Olá",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-12T23:32:52.424180Z"
+  },
+  "data.otservbr.global.scripts.actions.system.quest.reward.common.L131.2379": {
+    "src_hash": "c4db9b4be8514b06fd87145049b8d545",
+    "text": "You have found a",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-12T23:32:52.492638Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.movements.boss.entrance.L40.2207": {
+    "src_hash": "94b4f1a6e2d7181478d46ec8861373d5",
+    "text": "You have to wait",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-12T23:32:52.499888Z"
+  },
+  "data.otservbr.global.scripts.quests.dawnport.actions.vocation.reward.L115.2051": {
+    "src_hash": "c4db9b4be8514b06fd87145049b8d545",
+    "text": "You have found a",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-12T23:32:52.501350Z"
+  },
+  "item.30215.name": {
+    "src_hash": "7bdff76536f12a7c5ffde207e72cfe3a",
+    "text": "ice",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:22:45.757861Z"
+  },
+  "item.30218.name": {
+    "src_hash": "7bdff76536f12a7c5ffde207e72cfe3a",
+    "text": "ice",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:22:45.758416Z"
+  },
+  "item.30273.name": {
+    "src_hash": "7bdff76536f12a7c5ffde207e72cfe3a",
+    "text": "ice",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:22:45.761193Z"
+  },
+  "item.3051.name": {
+    "src_hash": "c193d863e3cfa9eb7c10c24bc406c615",
+    "text": "energy ring",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:22:45.766096Z"
+  },
+  "item.3088.name": {
+    "src_hash": "c193d863e3cfa9eb7c10c24bc406c615",
+    "text": "energy ring",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:22:45.772683Z"
+  },
+  "item.3147.name": {
+    "src_hash": "967513bc0728d5d1211f01974ab4dee5",
+    "text": "Blank Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:22:45.787090Z"
+  },
+  "item.3148.name": {
+    "src_hash": "108014137d9b1b568bc5809b2ae08993",
+    "text": "Destroy Field Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:22:45.788085Z"
+  },
+  "item.3149.name": {
+    "src_hash": "cb4d58d9f24fa57abff821799c9fc94f",
+    "text": "Energy Bomb Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:22:45.790693Z"
+  },
+  "npc.elane.keyword_1": {
+    "src_hash": "8ad971c5d8a76d2b69437c57eda95147",
+    "text": "Sim?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:25:24.367577Z"
+  },
+  "npc.example_merchant.name": {
+    "src_hash": "16373b8c3c6c497895786de3804c2e0c",
+    "text": "My name is Marcus. I run this shop.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:25:24.391603Z"
+  },
+  "npc.lily.keyword_1": {
+    "src_hash": "8ad971c5d8a76d2b69437c57eda95147",
+    "text": "Sim?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:25:24.592720Z"
+  },
+  "npc.a_bearded_woman.greet_msg_1": {
+    "src_hash": "dec88b2ad57c0b13cc1cf44b9711944a",
+    "text": "ME TIRA DAQUI! AGORA!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T00:25:32.866026Z"
+  },
+  "npc.a_bearded_woman.stdmod_1": {
+    "src_hash": "85b863553a645f3e69472bcbeea15190",
+    "text": "Num mundo justo, eu seria capitão de um grande navio,...\\z\n\tAqueles piratas lá fora seriam agora meus asseclas, e nós enfrentaríamos os mares e nos tornaríamos o terror das cidades costeiras! ...\\z\n\tSe ao menos nosso plano tivesse funcionado!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T00:25:32.867498Z"
+  },
+  "npc.a_bearded_woman.stdmod_2": {
+    "src_hash": "e665aff3c7b262f14bc1bdc6ecab7294",
+    "text": "O Capitão Kid vendeu seu navio para comprar coisas inúteis, como aquelas fechaduras absurdamente caras para as portas das celas. ...\\z\n\tEle disse que as canoas serviriam por um tempo. ...\\z\n\tTive a impressão de que ele não ficou muito triste por se separar do navio porque era conhecido por sofrer muito de enjôo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T00:25:32.869194Z"
+  },
+  "npc.a_bearded_woman.stdmod_3": {
+    "src_hash": "d0300a2639da1cea9ef53f1c6c9289c0",
+    "text": "Eu teria sido um capitão muito melhor do que Kid. Interpretei vários capitães no palco e fui bem! ...\\z\n\tOnde Kid ansiava pela apreciação de seus homens, eu governaria pelo medo e com mão de ferro!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T00:25:32.870908Z"
+  },
+  "npc.a_bearded_woman.stdmod_6": {
+    "src_hash": "8addcda1b472b30e046fd34589b4879f",
+    "text": "Quanto mais estúpidas forem as pessoas, mais fácil será enganá-las. ...\\z\n\tE quanto mais pobres são, menos meios têm para se vingar. Har Har! ...\\z\n\tEntão eu me certifico de arruinar aqueles que eu engano. Então eles têm outras coisas com que se preocupar além de se vingar de mim.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T00:25:32.872502Z"
+  },
+  "monster.worker_golem.voice_2": {
+    "src_hash": "12b2df1cd3a8a5ce3aa54c7a801643e4",
+    "text": "Klonk klonk klonk",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.370399Z"
+  },
+  "monster.orc.name": {
+    "src_hash": "34b0ceb41c3a8896e074f8e59190021b",
+    "text": "Orc",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.386804Z"
+  },
+  "monster.the_old_widow.name": {
+    "src_hash": "0a46dc1f306c4565526cd2e7b1631bd1",
+    "text": "The Old Widow",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.401049Z"
+  },
+  "monster.the_old_widow.desc": {
+    "src_hash": "0a46dc1f306c4565526cd2e7b1631bd1",
+    "text": "The Old Widow",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.401980Z"
+  },
+  "monster.lord_of_the_elements.name": {
+    "src_hash": "26f35529002a0a103c2080451deda86a",
+    "text": "Lord of the Elements",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.416328Z"
+  },
+  "monster.lord_of_the_elements.desc": {
+    "src_hash": "26f35529002a0a103c2080451deda86a",
+    "text": "Lord of the Elements",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.416895Z"
+  },
+  "monster.generator.name": {
+    "src_hash": "92a8f0b9d28a89b480bd1d29f46f0484",
+    "text": "generator",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.418742Z"
+  },
+  "monster.omrafir.name": {
+    "src_hash": "97a239b13834eab0ab19c2978ec1ef57",
+    "text": "Omrafir",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.453739Z"
+  },
+  "monster.omrafir.desc": {
+    "src_hash": "97a239b13834eab0ab19c2978ec1ef57",
+    "text": "Omrafir",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.454519Z"
+  },
+  "monster.feroxa.name": {
+    "src_hash": "6c59b09bfce69d20bb2b2e9eccf12b41",
+    "text": "Feroxa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.463209Z"
+  },
+  "monster.feroxa.desc": {
+    "src_hash": "6c59b09bfce69d20bb2b2e9eccf12b41",
+    "text": "Feroxa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.463905Z"
+  },
+  "monster.feroxa2.name": {
+    "src_hash": "6c59b09bfce69d20bb2b2e9eccf12b41",
+    "text": "Feroxa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.464528Z"
+  },
+  "monster.feroxa2.desc": {
+    "src_hash": "6c59b09bfce69d20bb2b2e9eccf12b41",
+    "text": "Feroxa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.465204Z"
+  },
+  "monster.feroxa4.name": {
+    "src_hash": "6c59b09bfce69d20bb2b2e9eccf12b41",
+    "text": "Feroxa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.465928Z"
+  },
+  "monster.feroxa4.desc": {
+    "src_hash": "6c59b09bfce69d20bb2b2e9eccf12b41",
+    "text": "Feroxa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.466472Z"
+  },
+  "monster.feroxa3.name": {
+    "src_hash": "6c59b09bfce69d20bb2b2e9eccf12b41",
+    "text": "Feroxa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.466950Z"
+  },
+  "monster.feroxa3.desc": {
+    "src_hash": "6c59b09bfce69d20bb2b2e9eccf12b41",
+    "text": "Feroxa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.467383Z"
+  },
+  "monster.feroxa5.name": {
+    "src_hash": "6c59b09bfce69d20bb2b2e9eccf12b41",
+    "text": "Feroxa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.467841Z"
+  },
+  "monster.feroxa5.desc": {
+    "src_hash": "6c59b09bfce69d20bb2b2e9eccf12b41",
+    "text": "Feroxa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.468269Z"
+  },
+  "monster.undead_cavebear.name": {
+    "src_hash": "64e09822bd15852b6ce465912554b067",
+    "text": "Undead Cavebear",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.513906Z"
+  },
+  "monster.gravedigger.name": {
+    "src_hash": "41c9a4f0a182d00173d25b206c72d367",
+    "text": "Gravedigger",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.520898Z"
+  },
+  "monster.spyrat_facing_west.name": {
+    "src_hash": "d2daea170b386f256578376627093768",
+    "text": "Spyrat Nãorth",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.522605Z"
+  },
+  "monster.arachir_the_ancient_one.name": {
+    "src_hash": "63bb82e2253de368e2b77b8429564aaa",
+    "text": "Arachir The Ancient One",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.523347Z"
+  },
+  "monster.arachir_the_ancient_one.desc": {
+    "src_hash": "63bb82e2253de368e2b77b8429564aaa",
+    "text": "Arachir The Ancient One",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.523844Z"
+  },
+  "monster.ocyakao.name": {
+    "src_hash": "49a73d64c23681571806a21b38c2614e",
+    "text": "Ocyakao",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.525979Z"
+  },
+  "monster.ocyakao.desc": {
+    "src_hash": "49a73d64c23681571806a21b38c2614e",
+    "text": "Ocyakao",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.526751Z"
+  },
+  "monster.spyrat_facing_east.name": {
+    "src_hash": "d2daea170b386f256578376627093768",
+    "text": "Spyrat Nãorth",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.527341Z"
+  },
+  "monster.necropharus.name": {
+    "src_hash": "1dfc4ba3c2e8604e04b859187b61ce43",
+    "text": "Necropharus",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.528912Z"
+  },
+  "monster.necropharus.desc": {
+    "src_hash": "1dfc4ba3c2e8604e04b859187b61ce43",
+    "text": "Necropharus",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.529690Z"
+  },
+  "monster.the_pale_count.name": {
+    "src_hash": "3b72b8f24e68dd7e889fa0bcc093f7d4",
+    "text": "The Pale Count",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.530861Z"
+  },
+  "monster.the_pale_count.desc": {
+    "src_hash": "3b72b8f24e68dd7e889fa0bcc093f7d4",
+    "text": "The Pale Count",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.532765Z"
+  },
+  "monster.ghazbaran.name": {
+    "src_hash": "7011c4937708c913e39ffc5369fbf7c9",
+    "text": "Ghazbaran",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.535047Z"
+  },
+  "monster.ghazbaran.desc": {
+    "src_hash": "7011c4937708c913e39ffc5369fbf7c9",
+    "text": "Ghazbaran",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.535573Z"
+  },
+  "monster.hirintror.name": {
+    "src_hash": "fecc29ff7925e8e289a31d474cef424d",
+    "text": "Hirintror",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.536063Z"
+  },
+  "monster.hirintror.desc": {
+    "src_hash": "fecc29ff7925e8e289a31d474cef424d",
+    "text": "Hirintror",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.537195Z"
+  },
+  "monster.sir_valorcrest.name": {
+    "src_hash": "f8298500215b17e312aa870c0031d7e4",
+    "text": "Sir Valorcrest",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.538069Z"
+  },
+  "monster.sir_valorcrest.desc": {
+    "src_hash": "f8298500215b17e312aa870c0031d7e4",
+    "text": "Sir Valorcrest",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.538477Z"
+  },
+  "monster.draptor.name": {
+    "src_hash": "0298e34bc88fa8299cacd8f457233da3",
+    "text": "Draptor",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.539350Z"
+  },
+  "monster.chayenne.name": {
+    "src_hash": "33cb5e6c61118b97e3593d52e381b83d",
+    "text": "Chayenne",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.539924Z"
+  },
+  "monster.chayenne.desc": {
+    "src_hash": "33cb5e6c61118b97e3593d52e381b83d",
+    "text": "Chayenne",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.540293Z"
+  },
+  "monster.zulazza_the_corruptor.name": {
+    "src_hash": "1b0b0d80ea379359ff4bf4cb334e13ee",
+    "text": "Zulazza The Corruptor",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.541017Z"
+  },
+  "monster.zulazza_the_corruptor.desc": {
+    "src_hash": "1b0b0d80ea379359ff4bf4cb334e13ee",
+    "text": "Zulazza The Corruptor",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.541491Z"
+  },
+  "monster.orc_sambackpack.name": {
+    "src_hash": "34b0ceb41c3a8896e074f8e59190021b",
+    "text": "Orc",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.542389Z"
+  },
+  "monster.spyrat_facing_south.name": {
+    "src_hash": "d2daea170b386f256578376627093768",
+    "text": "Spyrat Nãorth",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.543091Z"
+  },
+  "monster.orshabaal.name": {
+    "src_hash": "a1a6be7fbfd8c4e5a1ce9d81dc611d65",
+    "text": "Orshabaal",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.543713Z"
+  },
+  "monster.orshabaal.desc": {
+    "src_hash": "a1a6be7fbfd8c4e5a1ce9d81dc611d65",
+    "text": "Orshabaal",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.544137Z"
+  },
+  "monster.white_pale.name": {
+    "src_hash": "c26999e79917dc6219158f8955472741",
+    "text": "White Pale",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.544938Z"
+  },
+  "monster.white_pale.desc": {
+    "src_hash": "c26999e79917dc6219158f8955472741",
+    "text": "White Pale",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.545493Z"
+  },
+  "monster.the_welter.name": {
+    "src_hash": "06c5706a0ac0ee90aae4d076fff06ecb",
+    "text": "The Welter",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.545983Z"
+  },
+  "monster.the_welter.desc": {
+    "src_hash": "06c5706a0ac0ee90aae4d076fff06ecb",
+    "text": "The Welter",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.546501Z"
+  },
+  "monster.morgaroth.name": {
+    "src_hash": "2dd5541bb6ffb2bd9fca93c0a930a82b",
+    "text": "Morgaroth",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.547093Z"
+  },
+  "monster.morgaroth.desc": {
+    "src_hash": "2dd5541bb6ffb2bd9fca93c0a930a82b",
+    "text": "Morgaroth",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.547639Z"
+  },
+  "monster.ferumbras.name": {
+    "src_hash": "3b17736682c3b11fddce38fb42db75d2",
+    "text": "Ferumbras",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.548709Z"
+  },
+  "monster.ferumbras.desc": {
+    "src_hash": "3b17736682c3b11fddce38fb42db75d2",
+    "text": "Ferumbras",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.549236Z"
+  },
+  "monster.furyosa.name": {
+    "src_hash": "d91fb198c826b263e5a57919515e7713",
+    "text": "Furyosa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.550018Z"
+  },
+  "monster.furyosa.desc": {
+    "src_hash": "d91fb198c826b263e5a57919515e7713",
+    "text": "Furyosa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.550610Z"
+  },
+  "monster.fernfang.name": {
+    "src_hash": "15a8628afcbb835f4244ba1f151e5d8c",
+    "text": "Fernfang",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.551247Z"
+  },
+  "monster.fernfang.desc": {
+    "src_hash": "15a8628afcbb835f4244ba1f151e5d8c",
+    "text": "Fernfang",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.551660Z"
+  },
+  "monster.badger.name": {
+    "src_hash": "5841d0014fc42f0fcf9a019d349d50fd",
+    "text": "Badger",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.552498Z"
+  },
+  "monster.water_buffalo.name": {
+    "src_hash": "76970c076e84449bff9de4d9398d697e",
+    "text": "Water Buffalo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.556871Z"
+  },
+  "monster.yeti.name": {
+    "src_hash": "9cb073d5208162d71991a6077288e01e",
+    "text": "Yeti",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.558930Z"
+  },
+  "monster.wild_warrior.name": {
+    "src_hash": "745e8600f5a851ce1e1cb53b1343329a",
+    "text": "Wild Warrior",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.568482Z"
+  },
+  "monster.warlock.name": {
+    "src_hash": "21305b754e03843876abc27387a0e57e",
+    "text": "Warlock",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.570438Z"
+  },
+  "monster.renegade_knight.name": {
+    "src_hash": "9857523dc0efbd187fff110e64e8affb",
+    "text": "renegade knight",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.576814Z"
+  },
+  "monster.feverish_citizen.name": {
+    "src_hash": "7f9a98bbccbfd04494fb0436a1bb2de3",
+    "text": "Feverish Citizen",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.581496Z"
+  },
+  "monster.vile_grandmaster.name": {
+    "src_hash": "53e7346641af7337f8f8351c979ea372",
+    "text": "vile grandmaster",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.583261Z"
+  },
+  "monster.training_machine.voice_6": {
+    "src_hash": "12b2df1cd3a8a5ce3aa54c7a801643e4",
+    "text": "Klonk klonk klonk",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.585376Z"
+  },
+  "monster.fire_devil.name": {
+    "src_hash": "1a15ce236e5ddcbd2d36969e7d467b64",
+    "text": "Fire Devil",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.586936Z"
+  },
+  "monster.serpent_spawn.name": {
+    "src_hash": "4122411a36fbcd6b3d08ec393758d536",
+    "text": "Serpent Spawn",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.593701Z"
+  },
+  "monster.cobra.name": {
+    "src_hash": "d13eca1c700558f57d0310ef14277cc2",
+    "text": "Cobra",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.595941Z"
+  },
+  "monster.scarab.name": {
+    "src_hash": "a9fd3ff5b6ff3cd3f3a1a900e46295f8",
+    "text": "Scarab",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.602787Z"
+  },
+  "monster.terramite.name": {
+    "src_hash": "6f60f48e7910fcc0ac596725ef4034f8",
+    "text": "Terramite",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.605462Z"
+  },
+  "monster.gargoyle.name": {
+    "src_hash": "fa149962cca7ce4eae40089644c4616b",
+    "text": "Gargoyle",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.618620Z"
+  },
+  "monster.zushuka.name": {
+    "src_hash": "f7d3f936c82d25f009159f66874105e9",
+    "text": "Zushuka",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.623668Z"
+  },
+  "monster.zushuka.desc": {
+    "src_hash": "8ceaa475576021fe834434d50a085901",
+    "text": "Zushuka",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.624034Z"
+  },
+  "monster.mad_mage.name": {
+    "src_hash": "7cb4e60cd0927f995c74a12fe8154ebc",
+    "text": "Mad Mage",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.627166Z"
+  },
+  "monster.mad_mage.desc": {
+    "src_hash": "6b06be9dd0ef983f81d16b26af526a7f",
+    "text": "Mad Mage",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.627578Z"
+  },
+  "monster.zevelon_duskbringer.name": {
+    "src_hash": "5ce47d3193e6d4fdcb52a667ed3dd600",
+    "text": "Zevelon Duskbringer",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.629166Z"
+  },
+  "monster.zevelon_duskbringer.desc": {
+    "src_hash": "5ce47d3193e6d4fdcb52a667ed3dd600",
+    "text": "Zevelon Duskbringer",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.629715Z"
+  },
+  "monster.munster.name": {
+    "src_hash": "ad3f071289dbbac276fadf870913fbf9",
+    "text": "Munster",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:57:12.632222Z"
+  },
+  "data.otservbr.global.npc.a.bearded.woman.L144.674": {
+    "src_hash": "dec88b2ad57c0b13cc1cf44b9711944a",
+    "text": "ME TIRA DAQUI! AGORA!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.406643Z"
+  },
+  "data.otservbr.global.npc.a.dragon.mother.L62.204": {
+    "src_hash": "c6a0aabd2af804ac1f00c1504af5edf4",
+    "text": "Grrr.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.409974Z"
+  },
+  "data.otservbr.global.npc.a.fading.memory.L53.1295": {
+    "src_hash": "22567aba8d64ab99fe9115b6f7cb9c48",
+    "text": "Oh...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.410735Z"
+  },
+  "data.otservbr.global.npc.a.fluffy.squirrel.L71.1052": {
+    "src_hash": "e7c179e419e210af295f41ecac05aa1b",
+    "text": "Chhchh?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.411116Z"
+  },
+  "data.otservbr.global.npc.a.fluffy.squirrel.L72.1053": {
+    "src_hash": "0d0fa573b6610b79f1936f9a9fc407ac",
+    "text": "Chh...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.411663Z"
+  },
+  "data.otservbr.global.npc.a.fluffy.squirrel.L73.1054": {
+    "src_hash": "0d0fa573b6610b79f1936f9a9fc407ac",
+    "text": "Chh...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.412290Z"
+  },
+  "data.otservbr.global.npc.a.ghostly.sage.L61.1104": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Good bye.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.414473Z"
+  },
+  "data.otservbr.global.npc.a.ghostly.sage.L62.1105": {
+    "src_hash": "dd4dd73f3c2fe38f2d02c9b2a246f3ce",
+    "text": "Farewell then.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.415432Z"
+  },
+  "data.otservbr.global.npc.a.majestic.warwolf.L84.38": {
+    "src_hash": "abacc700c1b2adc83a8a15b2a66caf22",
+    "text": "YOOOOUHHOOOUU!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.417805Z"
+  },
+  "data.otservbr.global.npc.a.majestic.warwolf.L85.39": {
+    "src_hash": "abacc700c1b2adc83a8a15b2a66caf22",
+    "text": "YOOOOUHHOOOUU!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.418589Z"
+  },
+  "data.otservbr.global.npc.a.restless.soul.L53.44": {
+    "src_hash": "d2e1c2596114fc28d32071615889eea3",
+    "text": "Uhhhh...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.419802Z"
+  },
+  "data.otservbr.global.npc.a.sleeping.dragon.L51.150": {
+    "src_hash": "ad1b522fb407c0fba2321f3dbe4192c0",
+    "text": "ZzzzZzzZz...chrrr...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.420802Z"
+  },
+  "data.otservbr.global.npc.al.dee.L166.596": {
+    "src_hash": "4fc97451032f367fe2b63b922f5b48d2",
+    "text": "Bye, bye.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.423765Z"
+  },
+  "data.otservbr.global.npc.al.dee.L167.597": {
+    "src_hash": "9e61047ab3d551d7478466ce6a0284d0",
+    "text": "Bye, bye |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.425271Z"
+  },
+  "data.otservbr.global.npc.albinius.L268.1036": {
+    "src_hash": "3ccd2ecf07640e1f1cdbc81aff67c2cb",
+    "text": "Oh... farewell, child.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.426981Z"
+  },
+  "data.otservbr.global.npc.alesar.L206.1591": {
+    "src_hash": "227134d69dc2cf3f9ee7012bf8b196d8",
+    "text": "Finally.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.427797Z"
+  },
+  "data.otservbr.global.npc.alesar.L207.1592": {
+    "src_hash": "227134d69dc2cf3f9ee7012bf8b196d8",
+    "text": "Finally.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.428588Z"
+  },
+  "data.otservbr.global.npc.alexander.L172.1568": {
+    "src_hash": "fa07eeb5b43148cd479e57957d82514c",
+    "text": "See you, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.430150Z"
+  },
+  "data.otservbr.global.npc.alexander.L173.1569": {
+    "src_hash": "fa07eeb5b43148cd479e57957d82514c",
+    "text": "See you, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.431646Z"
+  },
+  "data.otservbr.global.npc.altar.L84.731": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Bye.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.433321Z"
+  },
+  "data.otservbr.global.npc.altar.L85.732": {
+    "src_hash": "a92da8c66b9b9619c20b6731ca45827d",
+    "text": "Bye, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.433960Z"
+  },
+  "data.otservbr.global.npc.alyxo.L210.798": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Well, bye then.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.434995Z"
+  },
+  "data.otservbr.global.npc.ambassador.of.rathleton.L86.343": {
+    "src_hash": "0922290764356f2882310a5fd9aff64d",
+    "text": "Greetings, friend.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.436190Z"
+  },
+  "data.otservbr.global.npc.ambassador.of.rathleton.L87.344": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Well, bye then.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.437148Z"
+  },
+  "data.otservbr.global.npc.amber.L426.528": {
+    "src_hash": "d732678ccaedfd5a4549c0b91b7b7eda",
+    "text": "Yeah, see you later.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.438242Z"
+  },
+  "data.otservbr.global.npc.amber.L427.529": {
+    "src_hash": "887efd8fd27234772fbb778a5f22828a",
+    "text": "See you later, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.439748Z"
+  },
+  "data.otservbr.global.npc.andrew.lyze.L107.517": {
+    "src_hash": "6e24bf1ae149637c184ae6b5d5454a1c",
+    "text": "Greetings.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.440617Z"
+  },
+  "data.otservbr.global.npc.andrew.lyze.L263.518": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Well, bye then.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.441525Z"
+  },
+  "data.otservbr.global.npc.andrew.lyze.L264.519": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Good bye.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.442085Z"
+  },
+  "data.otservbr.global.npc.anerui.L71.1487": {
+    "src_hash": "aa4114434bc744c1e617f6dab17ec06c",
+    "text": "Ashari |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.442687Z"
+  },
+  "data.otservbr.global.npc.anerui.L72.1488": {
+    "src_hash": "8d8cc3a78ab40b5ed8ed329ee206b50d",
+    "text": "Asha Thrazi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.443156Z"
+  },
+  "data.otservbr.global.npc.anerui.L73.1489": {
+    "src_hash": "8d8cc3a78ab40b5ed8ed329ee206b50d",
+    "text": "Asha Thrazi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.443710Z"
+  },
+  "data.otservbr.global.npc.angelo.L153.1447": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Well, bye then.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.444578Z"
+  },
+  "data.otservbr.global.npc.archery.L64.538": {
+    "src_hash": "c90ac5a24448fefe2cc247cd6fc33965",
+    "text": "Welcome to Archery's shop!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.445706Z"
+  },
+  "data.otservbr.global.npc.ariella.L161.242": {
+    "src_hash": "164dfcf01584bd0e3595b62fb53cf12c",
+    "text": "Hi there.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.446585Z"
+  },
+  "data.otservbr.global.npc.arito.L117.1343": {
+    "src_hash": "f0b34b79690c6d46e121ad2c89fce38b",
+    "text": "Do visit us again.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.447172Z"
+  },
+  "data.otservbr.global.npc.arito.L118.1344": {
+    "src_hash": "f0b34b79690c6d46e121ad2c89fce38b",
+    "text": "Do visit us again.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.447688Z"
+  },
+  "data.otservbr.global.npc.ashari.L53.1582": {
+    "src_hash": "4c843bd5e890558b89583052fe61a44c",
+    "text": "Bye!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.448673Z"
+  },
+  "data.otservbr.global.npc.ashari.L54.1583": {
+    "src_hash": "4c843bd5e890558b89583052fe61a44c",
+    "text": "Bye!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.449077Z"
+  },
+  "data.otservbr.global.npc.atur.L77.728": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Have a nice day.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.449636Z"
+  },
+  "data.otservbr.global.npc.atur.L78.729": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Have a nice day.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.450078Z"
+  },
+  "data.otservbr.global.npc.aurita.L114.171": {
+    "src_hash": "137658075f160330e74aca230bcfad53",
+    "text": "Greetings, traveller!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.450917Z"
+  },
+  "data.otservbr.global.npc.avar.tar.L137.859": {
+    "src_hash": "4233e1c5eecd4d6ff4661b1c689d42f1",
+    "text": "Greetings, traveller |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.451861Z"
+  },
+  "data.otservbr.global.npc.avar.tar.L138.860": {
+    "src_hash": "887efd8fd27234772fbb778a5f22828a",
+    "text": "See you later, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.452658Z"
+  },
+  "data.otservbr.global.npc.avar.tar.L139.861": {
+    "src_hash": "887efd8fd27234772fbb778a5f22828a",
+    "text": "See you later, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.453419Z"
+  },
+  "data.otservbr.global.npc.baa.leal.L158.273": {
+    "src_hash": "f0c0b5e1465c5af2fbf46970f115b627",
+    "text": "Stand down, soldier!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.454546Z"
+  },
+  "data.otservbr.global.npc.bambi.bonecrusher.L76.573": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "LONG LIVE THE QUEEN!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.455489Z"
+  },
+  "data.otservbr.global.npc.bambi.bonecrusher.L77.574": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "LONG LIVE THE QUEEN!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.455992Z"
+  },
+  "data.otservbr.global.npc.bambi.bonecrusher.L78.575": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "LONG LIVE THE QUEEN!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.456510Z"
+  },
+  "data.otservbr.global.npc.barazbaz.L93.18": {
+    "src_hash": "e1a424e3041a1d4d8eb80a24666c19ec",
+    "text": "Oh, hello there!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.456975Z"
+  },
+  "data.otservbr.global.npc.barbara.L84.1299": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "LONG LIVE THE QUEEN!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.457544Z"
+  },
+  "data.otservbr.global.npc.barnabas.dee.L131.1047": {
+    "src_hash": "164bf7927be7ad2fcc799b6872a2a3c1",
+    "text": "Take care, child",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.458165Z"
+  },
+  "data.otservbr.global.npc.bashira.L63.1584": {
+    "src_hash": "1ab992ebc47c02f476153edbb5649f2a",
+    "text": "Welcome, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.459479Z"
+  },
+  "data.otservbr.global.npc.bashira.L64.1585": {
+    "src_hash": "aa9516b030cac7a45cce88509881a4ea",
+    "text": "Good Bye, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.460603Z"
+  },
+  "data.otservbr.global.npc.battlemart.L66.1362": {
+    "src_hash": "737f9f60ee1047ae862449129dbe60d6",
+    "text": "Come back soon!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.461494Z"
+  },
+  "data.otservbr.global.npc.baxter.L60.1236": {
+    "src_hash": "5a79b0f1ba416a18a992917d1837d174",
+    "text": "LONG LIVE KING TIBIANUS!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.462461Z"
+  },
+  "data.otservbr.global.npc.baxter.L61.1237": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "LONG LIVE THE KING!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.463170Z"
+  },
+  "data.otservbr.global.npc.baxter.L62.1238": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "LONG LIVE THE KING!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.463721Z"
+  },
+  "data.otservbr.global.npc.beatrice.L87.769": {
+    "src_hash": "887efd8fd27234772fbb778a5f22828a",
+    "text": "See you later, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.464600Z"
+  },
+  "data.otservbr.global.npc.beatrice.L88.770": {
+    "src_hash": "887efd8fd27234772fbb778a5f22828a",
+    "text": "See you later, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.465444Z"
+  },
+  "data.otservbr.global.npc.bertha.L89.1553": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Good bye, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.466734Z"
+  },
+  "data.otservbr.global.npc.bertha.L90.1554": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Good bye, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.467523Z"
+  },
+  "data.otservbr.global.npc.billy.L144.1384": {
+    "src_hash": "1972a0eaf694e91957684eba0ce0acdc",
+    "text": "HOW RUDE!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.468000Z"
+  },
+  "data.otservbr.global.npc.billy.L145.1385": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Bye.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.468393Z"
+  },
+  "data.otservbr.global.npc.billy.L146.1386": {
+    "src_hash": "b2f4b32b5e4d159ff2454d5774afc511",
+    "text": "Sure.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.468757Z"
+  },
+  "data.otservbr.global.npc.black.bert.L197.41": {
+    "src_hash": "962f99ce919b3a8eab1fbe21989935c2",
+    "text": "Bye, |PLAYERNAME|",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.469359Z"
+  },
+  "data.otservbr.global.npc.blind.orc.L102.1517": {
+    "src_hash": "28271e708d06453b7febf147a1c473ef",
+    "text": "Futchi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.469800Z"
+  },
+  "data.otservbr.global.npc.bloodshade.rotten.L73.428": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Bye.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.470376Z"
+  },
+  "data.otservbr.global.npc.bloodshade.rotten.L74.429": {
+    "src_hash": "a92da8c66b9b9619c20b6731ca45827d",
+    "text": "Bye, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.470890Z"
+  },
+  "data.otservbr.global.npc.bloodshade.sacrifice.L94.1260": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Bye.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.471354Z"
+  },
+  "data.otservbr.global.npc.bloodshade.sacrifice.L95.1261": {
+    "src_hash": "a92da8c66b9b9619c20b6731ca45827d",
+    "text": "Bye, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.472556Z"
+  },
+  "data.otservbr.global.npc.blossom.bonecrusher.L76.842": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "LONG LIVE THE QUEEN!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.473711Z"
+  },
+  "data.otservbr.global.npc.blossom.bonecrusher.L77.843": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "LONG LIVE THE QUEEN!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.474925Z"
+  },
+  "data.otservbr.global.npc.blossom.bonecrusher.L78.844": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "LONG LIVE THE QUEEN!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.477736Z"
+  },
+  "data.otservbr.global.npc.bolfona.L91.688": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "See you my friend.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.479812Z"
+  },
+  "data.otservbr.global.npc.bolfona.L92.689": {
+    "src_hash": "8cac492421d384fdbf6a679fae13eefe",
+    "text": "See you my friend.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.481181Z"
+  },
+  "data.otservbr.global.npc.boveas.L45.25": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Good bye, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.483737Z"
+  },
+  "data.otservbr.global.npc.boveas.L46.26": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Good bye, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.485197Z"
+  },
+  "data.otservbr.global.npc.brasith.L59.1211": {
+    "src_hash": "afb8a66bbd457858c305533b93f273bb",
+    "text": "Ashari, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.486497Z"
+  },
+  "data.otservbr.global.npc.brasith.L60.1212": {
+    "src_hash": "8d8cc3a78ab40b5ed8ed329ee206b50d",
+    "text": "Asha Thrazi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:59:14.487059Z"
+  },
+  "monster.munster.desc": {
+    "src_hash": "ad3f071289dbbac276fadf870913fbf9",
+    "text": "Munster",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:06.064124Z"
+  },
+  "monster.weakened_shlorg.name": {
+    "src_hash": "7d6db214fa9761098b8e5462761b864c",
+    "text": "Weakened Shlorg",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:06.068478Z"
+  },
+  "monster.weakened_shlorg.desc": {
+    "src_hash": "7d6db214fa9761098b8e5462761b864c",
+    "text": "Weakened Shlorg",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:06.069006Z"
+  },
+  "monster.diblis_the_fair.name": {
+    "src_hash": "2896e4d5e296038dfa89470397e4f19f",
+    "text": "Diblis The Fair",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:06.069926Z"
+  },
+  "monster.diblis_the_fair.desc": {
+    "src_hash": "5cd6555c19e0b434371a7a34d538792b",
+    "text": "Diblis The Fair",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:06.070511Z"
+  },
+  "monster.teleskor.name": {
+    "src_hash": "39b531430b46066d965dffc91ef989fc",
+    "text": "Teleskor",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:06.075224Z"
+  },
+  "monster.teleskor.desc": {
+    "src_hash": "39b531430b46066d965dffc91ef989fc",
+    "text": "Teleskor",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:06.075775Z"
+  },
+  "monster.salamander.name": {
+    "src_hash": "5617d73c694ad8f8004009e0f6b2e3d6",
+    "text": "Salamandra",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:09.781568Z"
+  },
+  "monster.salamander.desc": {
+    "src_hash": "f79786cf7753cb0656165f2cb5237d63",
+    "text": "uma salamandra",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:09.781926Z"
+  },
+  "monster.infernal_frog.name": {
+    "src_hash": "ac73dcaa6d477dee2e13e907726e1e89",
+    "text": "Sapo Infernal",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:09.782295Z"
+  },
+  "monster.infernal_frog.desc": {
+    "src_hash": "65c26bf28c30f488e6cbb62e337ba835",
+    "text": "um sapo infernal",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:09.782886Z"
+  },
+  "monster.orchid_frog.name": {
+    "src_hash": "ab152f791a1d3a232d015f8bd893ff2b",
+    "text": "Sapo orquídea",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:09.783460Z"
+  },
+  "monster.orchid_frog.desc": {
+    "src_hash": "b4d22881650e417cdd0baffa0cd12910",
+    "text": "um sapo orquídea",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:16.640143Z"
+  },
+  "monster.azure_frog.name": {
+    "src_hash": "23313f7df02a26b437807139f8cf6d4f",
+    "text": "Sapo Azul",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:16.640866Z"
+  },
+  "monster.azure_frog.desc": {
+    "src_hash": "59c7ca9b9c073c8a79119373da76f121",
+    "text": "um sapo azul",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:16.644367Z"
+  },
+  "monster.deathspawn.name": {
+    "src_hash": "a5093d8d030e55f6d31522da7b0f1e1b",
+    "text": "Cria da Morte",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:16.645152Z"
+  },
+  "monster.deathspawn.desc": {
+    "src_hash": "3b37cb8ee83d1f764a407bb07147deea",
+    "text": "um peão da morte",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:16.645895Z"
+  },
+  "monster.bog_frog.name": {
+    "src_hash": "1f841ce43d9c5934a55a06814d04ec0e",
+    "text": "Sapo do pântano",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:21.552716Z"
+  },
+  "monster.bog_frog.desc": {
+    "src_hash": "02ad7cd0462e724edd3d32c70c1eb405",
+    "text": "um sapo do pântano",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:21.553146Z"
+  },
+  "monster.crimson_frog.name": {
+    "src_hash": "edc908c3340929cbb2675b53727ea188",
+    "text": "Sapo Carmesim",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:21.553493Z"
+  },
+  "monster.crimson_frog.desc": {
+    "src_hash": "a1b755cebdaccdd7eb15db6e325c79eb",
+    "text": "um sapo carmesim",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:21.553837Z"
+  },
+  "monster.toad.name": {
+    "src_hash": "c7ccfc161889ed90a90ff22c92369226",
+    "text": "Sapo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:21.554173Z"
+  },
+  "monster.toad.desc": {
+    "src_hash": "7b68fb78bf1d528baf8a3812a21beec6",
+    "text": "um sapo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:26.967847Z"
+  },
+  "monster.coral_frog.name": {
+    "src_hash": "a69001bef54b57da0deed8c4d5699a02",
+    "text": "Sapo Coral",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:26.968215Z"
+  },
+  "monster.coral_frog.desc": {
+    "src_hash": "76fc47947c1b7b703d3d45874d9477ca",
+    "text": "um sapo coral",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:26.968594Z"
+  },
+  "monster.filth_toad.name": {
+    "src_hash": "1abf448c003eff773e3609cee7ec2bae",
+    "text": "Sapo Imundo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:26.968913Z"
+  },
+  "monster.filth_toad.desc": {
+    "src_hash": "7519555a25e45c1da4ef3f91cd4969a9",
+    "text": "um sapo imundo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:26.969229Z"
+  },
+  "monster.slime.name": {
+    "src_hash": "a537a3d7d5ede5718f2b597568233925",
+    "text": "Lodo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:32.944865Z"
+  },
+  "monster.slime.desc": {
+    "src_hash": "e624599b6a9e4f1bbde107cb39944595",
+    "text": "um lodo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:32.945538Z"
+  },
+  "monster.defiler.name": {
+    "src_hash": "06432eefe619b19aa24a54c7b96244d8",
+    "text": "Profanador",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:32.945873Z"
+  },
+  "monster.defiler.desc": {
+    "src_hash": "a6afa6db875a5227cc954200b26df79c",
+    "text": "um profanador",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:32.946201Z"
+  },
+  "monster.frost_troll.name": {
+    "src_hash": "c6ab0f735ce887708ab91bfe1d63bf8c",
+    "text": "Troll de Gelo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:32.946668Z"
+  },
+  "monster.frost_troll.desc": {
+    "src_hash": "db1f835d583a0a795b50f91297add7fd",
+    "text": "um troll de gelo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:39.225397Z"
+  },
+  "monster.troll.name": {
+    "src_hash": "922a511f02d148e4c9390526d85ca519",
+    "text": "Troll",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:39.225719Z"
+  },
+  "monster.troll.desc": {
+    "src_hash": "40ffb882a54ee403b27433962b5c1448",
+    "text": "um troll",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:39.226011Z"
+  },
+  "monster.island_troll.name": {
+    "src_hash": "b1a2aa325c39c830d83db485ab126a26",
+    "text": "Troll da Ilha",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:39.226459Z"
+  },
+  "monster.island_troll.desc": {
+    "src_hash": "400a5e1ff35499497afc5127d0ac8cb5",
+    "text": "um troll da ilha",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:39.226826Z"
+  },
+  "monster.goblin.name": {
+    "src_hash": "8e81e2940511f7152ba4462fe53e35b8",
+    "text": "Duende",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:44.012468Z"
+  },
+  "monster.goblin.desc": {
+    "src_hash": "a7f3ac990652166f157dcf42a1ee0be5",
+    "text": "um duende",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:44.012791Z"
+  },
+  "monster.ghoul.name": {
+    "src_hash": "a8515fffc5e27c8c977bec3adc1d06e6",
+    "text": "Carniçal",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:44.013082Z"
+  },
+  "monster.ghoul.desc": {
+    "src_hash": "cf870f1b9483da668f96ed26cc50b576",
+    "text": "um ghoul",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:44.013371Z"
+  },
+  "monster.skeleton.name": {
+    "src_hash": "6ab48f7ed56efc362f41853c5616bf75",
+    "text": "Esqueleto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:44.013655Z"
+  },
+  "monster.skeleton.desc": {
+    "src_hash": "3671d9838dcee79307f4c8b4ddb33743",
+    "text": "um esqueleto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:49.707800Z"
+  },
+  "monster.mummy.name": {
+    "src_hash": "4af8989a64edc6f13a0b59ec047d1db5",
+    "text": "Múmia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:49.708600Z"
+  },
+  "monster.mummy.desc": {
+    "src_hash": "a2ffedde2f493213a2258da350bd2f23",
+    "text": "uma múmia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:49.709389Z"
+  },
+  "monster.wolf.name": {
+    "src_hash": "279ede0c6bdbd7d26309becd159053d8",
+    "text": "Lobo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:49.709952Z"
+  },
+  "monster.wolf.desc": {
+    "src_hash": "cffc94c08fa39be49cf4626dcf016ba4",
+    "text": "um lobo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:49.710380Z"
+  },
+  "monster.winter_wolf.name": {
+    "src_hash": "f75e559b1871eca0fb6acb16a4fbb99c",
+    "text": "Lobo de inverno",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:54.728352Z"
+  },
+  "monster.winter_wolf.desc": {
+    "src_hash": "f1500141149d2e865dc7088814fd17bc",
+    "text": "um lobo de inverno",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:54.728995Z"
+  },
+  "monster.cave_rat.name": {
+    "src_hash": "4c2c32bad4494a18938eccaf6235937e",
+    "text": "Rato da Caverna",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:54.729316Z"
+  },
+  "monster.cave_rat.desc": {
+    "src_hash": "b4b535fbc0886e031208addd8e1c8984",
+    "text": "um rato da caverna",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:54.729627Z"
+  },
+  "monster.bat.name": {
+    "src_hash": "2d5b3d62e7bd3a1d79494bd85e69b5ba",
+    "text": "Bastão",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:54.729948Z"
+  },
+  "monster.bat.desc": {
+    "src_hash": "3195b1e1ca5adc3efa2213047e4ffb7f",
+    "text": "um morcego",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:59.215303Z"
+  },
+  "monster.amazon.name": {
+    "src_hash": "b3b3a6ac74ecbd56bcdbefa4799fb9df",
+    "text": "Amazônia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:59.215626Z"
+  },
+  "monster.amazon.desc": {
+    "src_hash": "9966c9483db020755b9b332ccda0e0c8",
+    "text": "uma amazona",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:59.215932Z"
+  },
+  "monster.monk.name": {
+    "src_hash": "844a2b0ce474227509eb629bc56c1359",
+    "text": "Monge",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:59.216245Z"
+  },
+  "monster.monk.desc": {
+    "src_hash": "d56e8d3e6c358414f7afa788ed492be1",
+    "text": "um monge",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:39:59.216543Z"
+  },
+  "monster.hunter.desc": {
+    "src_hash": "246604b043bfc8edbea78331c080f2ca",
+    "text": "um caçador",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:40:05.467373Z"
+  },
+  "monster.bandit.name": {
+    "src_hash": "7534759ceb94c0e91b13a22fe6e16980",
+    "text": "Bandido",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:40:05.467681Z"
+  },
+  "monster.bandit.desc": {
+    "src_hash": "45dc92ef8b428687c725448a9692d5d4",
+    "text": "um bandido",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:40:05.468014Z"
+  },
+  "monster.valkyrie.name": {
+    "src_hash": "0af3f80a54716414f24a166e5c1b6c26",
+    "text": "Valquíria",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:40:05.468322Z"
+  },
+  "monster.valkyrie.desc": {
+    "src_hash": "182de564b1fe25142e78b2a977a2b514",
+    "text": "uma valquíria",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:40:05.468635Z"
+  },
+  "monster.assassin.name": {
+    "src_hash": "9b2dd2ace4fae2ba85df02e3ebf3f89e",
+    "text": "Assassino",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:40:11.735796Z"
+  },
+  "monster.assassin.desc": {
+    "src_hash": "fdfb1e58c7b72c5ca5d0ceeb2779a82f",
+    "text": "um assassino",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:40:11.736207Z"
+  },
+  "monster.training_machine.name": {
+    "src_hash": "239f8d0ccb4342a21943b1bcc65edf0f",
+    "text": "Máquina de treinamento",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:40:11.736622Z"
+  },
+  "monster.training_machine.desc": {
+    "src_hash": "1922aa2f9cedffc2998eba7853975355",
+    "text": "uma máquina de treinamento",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:40:11.737099Z"
+  },
+  "monster.juggernaut.name": {
+    "src_hash": "024fc70d51074c9f42ee7f917c37b4ed",
+    "text": "Juggernaut",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:40:11.737420Z"
+  },
+  "monster.juggernaut.desc": {
+    "src_hash": "c92f93987179e5a10d26cae3f0029ad4",
+    "text": "um rolo compressor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:40:17.980097Z"
+  },
+  "monster.demon.name": {
+    "src_hash": "300d4af0950c89b847cf6f7500e6060c",
+    "text": "Demônio",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:40:17.980434Z"
+  },
+  "monster.demon.desc": {
+    "src_hash": "4eecfcf58a9a1b1a531bff973762c1f1",
+    "text": "um demônio",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:40:17.980740Z"
+  },
+  "monster.hellhound.name": {
+    "src_hash": "7f67cc83cb82576db750ab2ba9cbfb17",
+    "text": "Cão infernal",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:40:17.981084Z"
+  },
+  "monster.hellhound.desc": {
+    "src_hash": "b92ee8bbd39544c02e135bd24c80f5ed",
+    "text": "um cão infernal",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:40:17.981419Z"
+  },
+  "monster.destroyer.name": {
+    "src_hash": "f90034e6810bf57cdb3d99a298221fc9",
+    "text": "Destruidor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:40:22.030854Z"
+  },
+  "monster.destroyer.desc": {
+    "src_hash": "5248d6bb81a85e4c7366a96625430cec",
+    "text": "um destruidor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:40:22.031260Z"
+  },
+  "monster.hellspawn.name": {
+    "src_hash": "6f4596e4b6567420115ceb0704e9d14d",
+    "text": "Cria do Inferno",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:40:22.031569Z"
+  },
+  "monster.hellspawn.desc": {
+    "src_hash": "6f19ff227fa7faacc99c006f496ce06e",
+    "text": "um infernal",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:40:22.031876Z"
+  },
+  "monster.fury.name": {
+    "src_hash": "02752885df8d50fc2f489ad17fcab9e8",
+    "text": "Fúria",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:40:22.032201Z"
+  },
+  "monster.fury.desc": {
+    "src_hash": "99f6dd119ffa9143fcbbcf598688f578",
+    "text": "uma fúria",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:40:26.332171Z"
+  },
+  "monster.tortoise.name": {
+    "src_hash": "f32eeee0726588ed71cbdb58b921cb7c",
+    "text": "Tartaruga",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:40:26.333081Z"
+  },
+  "monster.tortoise.desc": {
+    "src_hash": "c171d85643d7df811a40bb9ab617206c",
+    "text": "uma tartaruga",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T22:40:26.334169Z"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "monster.hunter.name": {
+    "src_hash": "5e409e09f43d85c6e61301149e4f803b",
+    "text": "Hunter",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-12T22:23:46.832330Z"
+  },
+  "monster.sorcerer_familiar.name": {
+    "src_hash": "fe695fb861f4a78482830bcb8e24bee3",
+    "text": "Sorcerer familiar",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-12T22:23:46.833568Z"
+  },
+  "monster.knight_familiar.name": {
+    "src_hash": "59bb8dfecc548a5d097b6f0b0d0149e4",
+    "text": "Knight familiar",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-12T22:23:46.833978Z"
+  },
+  "npc.example_merchant.name": {
+    "src_hash": "16373b8c3c6c497895786de3804c2e0c",
+    "text": "My name is Marcus. I run this shop.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-12T23:41:10.710756Z"
+  },
+  "npc.a_bearded_woman.greet_msg_1": {
+    "src_hash": "dec88b2ad57c0b13cc1cf44b9711944a",
+    "text": "VODITE ME ODAVDE! SADA!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-12T23:41:19.093460Z"
+  },
+  "npc.a_bearded_woman.stdmod_1": {
+    "src_hash": "85b863553a645f3e69472bcbeea15190",
+    "text": "U pravednom svijetu, ja bih bio kapetan velikog broda, ... \\z\n\tTi pirati tamo bi sada bili moji sluge, a mi bismo hrabrili more i postali teror primorskih gradova! ... \\z\n\tDa je samo naš plan uspio!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-12T23:41:19.094034Z"
+  },
+  "npc.a_bearded_woman.stdmod_2": {
+    "src_hash": "e665aff3c7b262f14bc1bdc6ecab7294",
+    "text": "Kapetan Kid je prodao svoj brod da kupi besmislene stvari poput onih ludo skupih brava za vrata ćelije. ... \\z\n\tRekao je da će kanui poslužiti neko vrijeme. ... \\z\n\tStekao sam utisak da nije bio previše tužan što se rastaje od broda jer se znalo da je dosta patio od morske bolesti.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-12T23:41:19.094716Z"
+  },
+  "npc.a_bearded_woman.stdmod_3": {
+    "src_hash": "d0300a2639da1cea9ef53f1c6c9289c0",
+    "text": "Bio bih mnogo bolji kapiten od Kida. Igrao sam nekoliko kapitena na sceni i bio sam dobar! ... \\z\n\tTamo gdje je Kid čeznuo za poštovanjem svojih ljudi, ja bih vladao strahom i gvozdenom šakom!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-12T23:41:19.095138Z"
+  },
+  "spell.msg_cannot_cast": {
+    "src_hash": "2e82fa5082130470b26e6e1db5f8d366",
+    "text": "Ne možete baciti ovu čini",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-12T23:51:34.590547Z"
+  },
+  "spell.msg_need_learn": {
+    "src_hash": "24c37be7de2773e7687c1bb0b58d66a9",
+    "text": "Prvo morate naučiti ovu čaroliju",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-12T23:51:34.591419Z"
+  },
+  "spell.msg_no_party_in_range": {
+    "src_hash": "fca01b330772f55532e24d9cf2108105",
+    "text": "Nema članova stranke u dometu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-12T23:51:34.592034Z"
+  },
+  "spell.msg_no_creatures_around": {
+    "src_hash": "e8ab5eef836b9bcbfe91c55f008b6f15",
+    "text": "Nema stvorenja u blizini",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-12T23:51:34.592472Z"
+  },
+  "spell.msg_cannot_summon_more": {
+    "src_hash": "1718b9c7c3db387960dae22e578e4df5",
+    "text": "Ne možete prizvati više stvorenja.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-12T23:51:34.592915Z"
+  }
+}

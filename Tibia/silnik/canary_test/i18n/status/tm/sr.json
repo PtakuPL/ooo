@@ -1,0 +1,42 @@
+{
+  "spell.msg_cannot_cast": {
+    "src_hash": "2e82fa5082130470b26e6e1db5f8d366",
+    "text": "You cannot cast this spell",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T00:07:22.905868Z"
+  },
+  "spell.msg_need_learn": {
+    "src_hash": "24c37be7de2773e7687c1bb0b58d66a9",
+    "text": "You need to learn this spell first",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T00:07:22.907218Z"
+  },
+  "spell.msg_no_party_in_range": {
+    "src_hash": "fca01b330772f55532e24d9cf2108105",
+    "text": "No party members in range.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T00:07:22.908796Z"
+  },
+  "spell.msg_no_creatures_around": {
+    "src_hash": "e8ab5eef836b9bcbfe91c55f008b6f15",
+    "text": "No creatures around",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T00:07:22.911259Z"
+  },
+  "spell.msg_cannot_summon_more": {
+    "src_hash": "1718b9c7c3db387960dae22e578e4df5",
+    "text": "You cannot summon more creatures.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T00:07:22.913511Z"
+  }
+}

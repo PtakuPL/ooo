@@ -1,0 +1,74 @@
+{
+  "monster.hunter.name": {
+    "src_hash": "5e409e09f43d85c6e61301149e4f803b",
+    "text": "Hunter",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-12T22:21:22.329038Z"
+  },
+  "npc.example_merchant.name": {
+    "src_hash": "16373b8c3c6c497895786de3804c2e0c",
+    "text": "My name is Marcus. I run this shop.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-12T23:36:26.700806Z"
+  },
+  "npc.a_bearded_woman.greet_msg_1": {
+    "src_hash": "dec88b2ad57c0b13cc1cf44b9711944a",
+    "text": "FÅ MIG UD HERFRA! NU!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-12T23:36:38.345707Z"
+  },
+  "npc.a_bearded_woman.stdmod_1": {
+    "src_hash": "85b863553a645f3e69472bcbeea15190",
+    "text": "I en retfærdig verden ville jeg være kaptajn på et stort skib, ... \\z\n\tDe pirater derude ville nu være mine håndlangere, og vi ville trodse havene og blive kystbyernes terror! ... \\z\n\tHvis bare vores plan havde fungeret!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-12T23:36:38.347005Z"
+  },
+  "npc.a_bearded_woman.stdmod_2": {
+    "src_hash": "e665aff3c7b262f14bc1bdc6ecab7294",
+    "text": "Kaptajn Kid solgte sit skib for at købe meningsløse ting som de vanvittigt dyre låse til celledørene. ... \\z\n\tHan sagde, at kanoerne ville klare sig et stykke tid. ... \\z\n\tJeg fik det indtryk, at han ikke var alt for ked af at skille sig af med skibet, fordi han var kendt for at lide meget af søsyge.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-12T23:36:38.348527Z"
+  },
+  "npc.a_bearded_woman.stdmod_3": {
+    "src_hash": "d0300a2639da1cea9ef53f1c6c9289c0",
+    "text": "Jeg ville have været en meget bedre kaptajn, end Kid var. Jeg spillede flere kaptajner på scenen, og jeg var god! ... \\z\n\tHvor Kid længtes efter påskønnelse af sine mænd, ville jeg herske med frygt og med jernhånd!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-12T23:36:38.350123Z"
+  },
+  "npc.a_bearded_woman.stdmod_6": {
+    "src_hash": "8addcda1b472b30e046fd34589b4879f",
+    "text": "Jo dummere folk er, jo lettere er det at snyde dem. ... \\z\n\tOg jo fattigere de er, jo færre midler har de til at få hævn. Har Har! ... \\z\n\tSå jeg sørger for, at jeg ødelægger dem, jeg svindler. Så har de andre ting at bekymre sig om end at hævne sig på mig.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-12T23:36:38.351804Z"
+  },
+  "npc.a_bearded_woman.voice_1": {
+    "src_hash": "58767cda40525ee7cbdee616d85cb646",
+    "text": "Jeg er en MAND! Få mig ud, dine fulde fjols!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-12T23:36:38.352699Z"
+  },
+  "npc.a_bearded_woman.voice_2": {
+    "src_hash": "72b86601b93166f02b9c4cd08dfeee5d",
+    "text": "FÅ MIG UD HERFRA!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-12T23:36:38.353332Z"
+  }
+}

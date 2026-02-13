@@ -14,6 +14,13 @@ env:
   VCPKG_BUILD_TYPE: release
   VCPKG_DEFAULT_TRIPLET: wasm32-emscripten
   VCPKG_DEFAULT_HOST_TRIPLET: x64-linux
+  VCPKG_OVERLAY_PORTS: ${{ github.workspace }}/Tibia/silnik/canary_test/testyy/browser/overlay-ports
+  # NOTE: Do NOT set VCPKG_C_FLAGS / VCPKG_CXX_FLAGS here — they apply to ALL
+  # triplets (including x64-linux host) and GCC does not understand -matomics.
+  # Emscripten-specific flags are set in browser/triplets/wasm32-emscripten.cmake.
+  # For non-cmake vcpkg ports (e.g. OpenSSL), use EMCC_CFLAGS which only affects
+  # the emcc compiler, not the host GCC.
+  EMCC_CFLAGS: -pthread -matomics -mbulk-memory
 
 jobs:
   build-wasm:
@@ -77,7 +84,7 @@ jobs:
             ${{ github.workspace }}/vcpkg/installed
             ${{ github.workspace }}/vcpkg/buildtrees
             ${{ github.workspace }}/vcpkg/downloads
-          key: vcpkg-otc-wasm32-emscripten-${{ hashFiles('Tibia/silnik/canary_test/testyy/vcpkg.json') }}
+          key: vcpkg-otc-wasm32-emscripten-${{ hashFiles('Tibia/silnik/canary_test/testyy/vcpkg.json', 'Tibia/silnik/canary_test/testyy/browser/overlay-ports/**', 'Tibia/silnik/canary_test/testyy/browser/triplets/**') }}
           restore-keys: |
             vcpkg-otc-wasm32-emscripten-
 
@@ -99,6 +106,7 @@ jobs:
                 -DCMAKE_TOOLCHAIN_FILE="$VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake" \
                 -DVCPKG_CHAINLOAD_TOOLCHAIN_FILE="$EMSDK/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake" \
                 -DVCPKG_TARGET_TRIPLET=wasm32-emscripten \
+                -DVCPKG_OVERLAY_TRIPLETS="${{ github.workspace }}/Tibia/silnik/canary_test/testyy/browser/triplets" \
                 -DVCPKG_OVERLAY_PORTS="${{ github.workspace }}/Tibia/silnik/canary_test/testyy/browser/overlay-ports" \
                 -DSPEED_UP_BUILD_UNITY=OFF \
                 -DTOGGLE_BIN_FOLDER=ON \

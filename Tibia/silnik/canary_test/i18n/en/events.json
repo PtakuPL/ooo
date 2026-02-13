@@ -1,5 +1,5 @@
 {
-  "event.player.msg1": "You can't move that item so fast.",
+  "event.player.msg1": "event.player.msg_move_fast",
   "event.player.msg2": "daily-reward-xp-boost",
   "event.player.msg3": "daily-reward-xp-boost",
   "event.player.msg4": "daily-reward-xp-boost",

@@ -1,0 +1,165 @@
+# Komendy workera i18n (ściąga)
+
+Plik dotyczy: `i18n_worker_simple.sh` + `i18n_guardian.sh`
+Repo: `feature/i18n-multilanguage`
+
+## 1) Start/stop i monitoring (systemd user)
+
+### Guardian (zalecane)
+- Start: `systemctl --user start i18n-guardian.service`
+- Stop: `systemctl --user stop i18n-guardian.service`
+- Restart: `systemctl --user restart i18n-guardian.service`
+- Status: `systemctl --user status i18n-guardian.service --no-pager -l`
+- Log live: `journalctl --user -u i18n-guardian.service -f`
+
+### Worker (manualnie, bez guardiana)
+- Start ciągły:
+  `bash i18n_worker_simple.sh --continuous --batch 20 --delay 4 --no-git`
+- Start tłumaczenia-only:
+  `bash i18n_worker_simple.sh --continuous --batch 20 --delay 4 --translations-only --no-git --use-gt`
+
+## 2) Główne tryby CLI workera
+
+- Jeden plik (migracja):
+  `bash i18n_worker_simple.sh --file <path>`
+- Interaktywne tłumaczenia:
+  `bash i18n_worker_simple.sh --translate [lang]`
+- Self-check:
+  `bash i18n_worker_simple.sh --self-check`
+- Dashboard status:
+  `bash i18n_worker_simple.sh --status`
+- Stats języków:
+  `bash i18n_worker_simple.sh --stats`
+- Auto migracja N plików:
+  `bash i18n_worker_simple.sh --auto [N]`
+- Tryb ciągły:
+  `bash i18n_worker_simple.sh --continuous --batch <B> --delay <D>`
+- Aktualizacja status markdown:
+  `bash i18n_worker_simple.sh --update-status`
+- Walidacja języka:
+  `bash i18n_worker_simple.sh --lang-validate <lang>`
+- Walidacja wszystkich:
+  `bash i18n_worker_simple.sh --lang-validate-all`
+
+## 3) Opcje dla `--continuous`
+
+- `--no-git` – wyłącz `git add/commit/push` w workerze
+- `--translate-limit N` – limit kluczy/cykl
+- `--translations-only` – tylko tłumaczenia (strict)
+- `--langs "pl,de"` – ogranicz targety językowe
+- `--use-gt` – Google Translate fallback
+- `--gt-batch N` – batch GT
+- `--gt-delay N` – opóźnienie GT
+- `--auto-fix-crossref` – auto-fix crossref
+- `--auto-fix-crossref-limit N` – limit auto-fix
+- `--no-adaptive-batch` – wyłącz adaptive tuning
+- `--parallel-langs N` – liczba języków/cykl
+
+## 4) Komendy runtime (sterowanie w locie)
+
+Worker czyta komendy z:
+1. `.github/worker_commands.txt` (preferowane z GitHub)
+2. `worker_commands.txt` (lokalny fallback)
+3. `.worker_command` (jednorazowo, lokalnie)
+
+Przykład wpisania komendy lokalnie:
+- `echo "LANG:pl" > .worker_command`
+
+### Jak wpisywać komendy (krok po kroku)
+
+#### A) Lokalnie, bez GitHub (najszybciej)
+1. Wejdź do katalogu:
+  `cd /home/ptaku/serweryt/Tibia/silnik/canary_test`
+2. Jednorazowa komenda (wykonanie raz):
+  `echo "TEST:pl" > .worker_command`
+3. Komenda trwała w pliku lokalnym:
+  dopisz linię do `worker_commands.txt` (bez `#` na początku), np.
+  `LANG:de`
+
+#### B) Przez GitHub (zalecane do zdalnego sterowania)
+1. Otwórz w repo `PtakuPL/ooo` plik:
+  `Tibia/silnik/canary_test/.github/worker_commands.txt`
+2. Dodaj nową linię z komendą, np.:
+  `LANG:random`
+3. Zapisz commit na gałęzi, z której czyta worker (u Ciebie: `feature/i18n-multilanguage`).
+4. Guardian robi fetch, worker pobierze komendę i oznaczy ją jako wykonaną (`# ... Wykonano ...`).
+
+#### C) Ważne zasady formatu
+- Jedna komenda = jedna linia.
+- Nie poprzedzaj aktywnej komendy `#` (linie z `#` są komentarzem).
+- Używaj dokładnego formatu, np. `LANG:pl`, `TEST:de`, `FOCUS:pl:npc.json:200`.
+- Gdy chcesz wykonać tylko raz i zakończyć cykl testowo: dodaj sufiks `:ONCE`, np. `SPOTCHECK:pl:30:ONCE`.
+- Jeśli w pliku jest wiele komend, worker bierze pierwszą pasującą aktywną linię.
+
+### A) Sterowanie trybem/kategorią
+- `FORCE:<kategoria>`
+- `RANDOM`
+- `COMPACT_KEYS`
+- `IDLE`
+- `SYNC:<lang>:<json_file>`
+- `AUTO:<lang>:<json_file>:<limit>`
+- `STATUS`
+- `SKIP`
+- `PAUSE:<N>`
+- `NOTE:<tekst>`
+- `RESTART`
+- `SELFTEST` / `SELF_CHECK`
+
+### B) Sterowanie językami
+- `LANG:<lang>`
+- `LANG:<lang>:<plik1>,<plik2>,...`
+- `LANG:random`
+- `FOCUS:<lang>[:json[:limit]]`
+- `UNFOCUS`
+- `SWITCH:<lang>[:json[:limit]]` (alias legacy)
+- `UNSWITCH` (alias legacy)
+
+### C) Testy i walidacja
+- `TEST:<lang>`
+- `TEST_ALL`
+- `LANGVAL:all`
+- `LANGVAL:<lang>`
+- `SPOTCHECK:<lang>[:N]`
+- `GRAMMARFIX:<lang>[:json[:N]]`
+
+### D) Konfiguracja runtime
+- `GT:on`
+- `GT:off`
+- `BATCH:<N>`
+- `SET:<key>=<value>`
+- `CONFIG`
+- `REPORT`
+- `LANGS`
+
+## 5) Gotowe scenariusze (to, o co najczęściej chodzi)
+
+### Losowe tłumaczenie języków (powrót do random)
+- Runtime:
+  `echo "LANG:random" > .worker_command`
+- Jeśli był focus:
+  `echo "UNFOCUS" > .worker_command`
+
+### Tylko 2 języki (np. PL + DE)
+Opcja 1 (przy starcie workera):
+- `bash i18n_worker_simple.sh --continuous --translations-only --langs "pl,de" --batch 20 --delay 4 --no-git --use-gt`
+
+Opcja 2 (w locie, runtime):
+- `echo "LANG:pl" > .worker_command`
+- po zakończeniu/na zmianę:
+  `echo "LANG:de" > .worker_command`
+
+Opcja 3 (testowo pełny cykl dla 2 języków):
+- `echo "TEST:pl" > .worker_command`
+- `echo "TEST:de" > .worker_command`
+
+### Jeden język + konkretne pliki
+- `echo "LANG:de:npc.json,items.json,spells.json" > .worker_command`
+
+## 6) Przydatne pliki
+
+- Worker: `i18n_worker_simple.sh`
+- Guardian: `i18n_guardian.sh`
+- Runtime komendy (repo): `.github/worker_commands.txt`
+- Runtime komendy (lokalnie): `worker_commands.txt` i `.worker_command`
+- Runtime config: `worker_config.json`
+- Logi: `i18n_worker_continuous.log`, `guardian.log`, `guardian_daemon.out`

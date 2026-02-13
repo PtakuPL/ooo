@@ -2,11 +2,15 @@ diff --git a/CMakeLists.txt b/CMakeLists.txt
 index 7ca1b21..0984f19 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -23,6 +23,8 @@ if(protobuf_DEPRECATED_CMAKE_SUBDIRECTORY_USAGE)
+@@ -23,6 +23,12 @@ if(protobuf_DEPRECATED_CMAKE_SUBDIRECTORY_USAGE)
    get_filename_component(protobuf_SOURCE_DIR ${protobuf_SOURCE_DIR} DIRECTORY)
  endif()
  
-+add_compile_options(-pthread)
++if(EMSCRIPTEN OR CMAKE_SYSTEM_NAME STREQUAL "Emscripten")
++  add_compile_options(-pthread -matomics -mbulk-memory)
++else()
++  add_compile_options(-pthread)
++endif()
 +
  # Options
  option(protobuf_INSTALL "Install protobuf binaries and files" ON)

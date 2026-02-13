@@ -1,0 +1,74 @@
+{
+  "monster.hunter.name": {
+    "src_hash": "5e409e09f43d85c6e61301149e4f803b",
+    "text": "Hunter",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-12T22:21:48.461074Z"
+  },
+  "npc.example_merchant.name": {
+    "src_hash": "16373b8c3c6c497895786de3804c2e0c",
+    "text": "My name is Marcus. I run this shop.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-12T23:38:40.719134Z"
+  },
+  "npc.a_bearded_woman.greet_msg_1": {
+    "src_hash": "dec88b2ad57c0b13cc1cf44b9711944a",
+    "text": "DOSTAŇ MĚ ODsud! TEĎ!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-12T23:38:53.622989Z"
+  },
+  "npc.a_bearded_woman.stdmod_1": {
+    "src_hash": "85b863553a645f3e69472bcbeea15190",
+    "text": "Ve spravedlivém světě bych byl kapitánem velké lodi, ... \\z\n\tTi piráti tam venku by teď byli mými přisluhovači a my bychom vzdorovali mořím a stali se postrachem pobřežních měst! ... \\z\n\tKdyby náš plán fungoval!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-12T23:38:53.623781Z"
+  },
+  "npc.a_bearded_woman.stdmod_2": {
+    "src_hash": "e665aff3c7b262f14bc1bdc6ecab7294",
+    "text": "Kapitán Kid prodal svou loď, aby koupil nesmyslné věci, jako ty šíleně drahé zámky na dveře cel. ... \\z\n\tŘekl, že kánoe na chvíli vystačí. ... \\z\n\tMěl jsem dojem, že nebyl příliš smutný z toho, že se s lodí loučil, protože bylo známo, že hodně trpí mořskou nemocí.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-12T23:38:53.624676Z"
+  },
+  "npc.a_bearded_woman.stdmod_3": {
+    "src_hash": "d0300a2639da1cea9ef53f1c6c9289c0",
+    "text": "Byl bych mnohem lepším kapitánem než byl Kid. Hrál jsem na pódiu několik kapitánů a byl jsem dobrý! ... \\z\n\tTam, kde Kid toužil po uznání svých mužů, bych vládl strachem a železnou pěstí!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-12T23:38:53.625644Z"
+  },
+  "npc.a_bearded_woman.stdmod_6": {
+    "src_hash": "8addcda1b472b30e046fd34589b4879f",
+    "text": "Čím jsou lidé hloupější, tím je snazší je oklamat. ... \\z\n\tA čím jsou chudší, tím méně prostředků mají k pomstě. Har Har! ... \\z\n\tTakže se ujistím, že zničím ty, které podvádím. Pak mají jiné starosti, než se mi pomstít.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-12T23:38:53.626759Z"
+  },
+  "npc.a_bearded_woman.voice_1": {
+    "src_hash": "58767cda40525ee7cbdee616d85cb646",
+    "text": "Jsem MUŽ! Dostaňte mě ven, vy opilí blázni!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-12T23:38:53.627241Z"
+  },
+  "npc.a_bearded_woman.voice_2": {
+    "src_hash": "72b86601b93166f02b9c4cd08dfeee5d",
+    "text": "DOSTAŇ MĚ ODsud!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-12T23:38:53.627561Z"
+  }
+}

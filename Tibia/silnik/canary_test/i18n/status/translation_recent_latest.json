@@ -1,0 +1,128 @@
+{
+  "timestamp": "2026-02-13T22:40:26.415328Z",
+  "language": "pt",
+  "json_file": "monsters.json",
+  "translated": 80,
+  "entries": [
+    {
+      "key": "monster.valkyrie.name",
+      "en": "Valkyrie",
+      "translated": "Valquíria",
+      "source": "google_translate"
+    },
+    {
+      "key": "monster.valkyrie.desc",
+      "en": "a valkyrie",
+      "translated": "uma valquíria",
+      "source": "google_translate"
+    },
+    {
+      "key": "monster.assassin.name",
+      "en": "Assassin",
+      "translated": "Assassino",
+      "source": "google_translate"
+    },
+    {
+      "key": "monster.assassin.desc",
+      "en": "an assassin",
+      "translated": "um assassino",
+      "source": "google_translate"
+    },
+    {
+      "key": "monster.training_machine.name",
+      "en": "Training Machine",
+      "translated": "Máquina de treinamento",
+      "source": "google_translate"
+    },
+    {
+      "key": "monster.training_machine.desc",
+      "en": "a training machine",
+      "translated": "uma máquina de treinamento",
+      "source": "google_translate"
+    },
+    {
+      "key": "monster.juggernaut.name",
+      "en": "Juggernaut",
+      "translated": "Juggernaut",
+      "source": "google_translate"
+    },
+    {
+      "key": "monster.juggernaut.desc",
+      "en": "a juggernaut",
+      "translated": "um rolo compressor",
+      "source": "google_translate"
+    },
+    {
+      "key": "monster.demon.name",
+      "en": "Demon",
+      "translated": "Demônio",
+      "source": "google_translate"
+    },
+    {
+      "key": "monster.demon.desc",
+      "en": "a demon",
+      "translated": "um demônio",
+      "source": "google_translate"
+    },
+    {
+      "key": "monster.hellhound.name",
+      "en": "Hellhound",
+      "translated": "Cão infernal",
+      "source": "google_translate"
+    },
+    {
+      "key": "monster.hellhound.desc",
+      "en": "a hellhound",
+      "translated": "um cão infernal",
+      "source": "google_translate"
+    },
+    {
+      "key": "monster.destroyer.name",
+      "en": "Destroyer",
+      "translated": "Destruidor",
+      "source": "google_translate"
+    },
+    {
+      "key": "monster.destroyer.desc",
+      "en": "a destroyer",
+      "translated": "um destruidor",
+      "source": "google_translate"
+    },
+    {
+      "key": "monster.hellspawn.name",
+      "en": "Hellspawn",
+      "translated": "Cria do Inferno",
+      "source": "google_translate"
+    },
+    {
+      "key": "monster.hellspawn.desc",
+      "en": "a hellspawn",
+      "translated": "um infernal",
+      "source": "google_translate"
+    },
+    {
+      "key": "monster.fury.name",
+      "en": "Fury",
+      "translated": "Fúria",
+      "source": "google_translate"
+    },
+    {
+      "key": "monster.fury.desc",
+      "en": "a fury",
+      "translated": "uma fúria",
+      "source": "google_translate"
+    },
+    {
+      "key": "monster.tortoise.name",
+      "en": "Tortoise",
+      "translated": "Tartaruga",
+      "source": "google_translate"
+    },
+    {
+      "key": "monster.tortoise.desc",
+      "en": "a tortoise",
+      "translated": "uma tartaruga",
+      "source": "google_translate"
+    }
+  ]
+}

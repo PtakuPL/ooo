@@ -1,25 +1,30 @@
 {
-  "total_cycles": 932,
-  "mode": "MIGRATION",
-  "category": "errors",
-  "last_update": "2025-12-21T15:51:09.186375",
+  "total_cycles": 2,
+  "mode": "AUTO_TRANSLATE",
+  "category": "es",
+  "last_update": "2026-02-13T23:34:45.265517",
   "migration": {
     "files_scanned": 2297,
-    "files_with_keys": 1892,
-    "files_without_keys": 405,
-    "keys_extracted": 6243,
-    "current_category": "errors",
-    "batch_size": 126
+    "files_with_keys": 1897,
+    "files_without_keys": 400,
+    "keys_extracted": 6248,
+    "current_category": "quests",
+    "batch_size": 1
   },
   "translation_sync": {
-    "language": "sw",
-    "json_file": "spells.json",
-    "keys_to_sync": 1122
+    "language": "pl",
+    "json_file": "scripts.json",
+    "keys_to_sync": 0
   },
   "auto_translate": {
-    "language": "lt",
-    "json_file": "spells.json",
-    "keys_to_translate": 1426
+    "language": "es",
+    "json_file": "scripts.json",
+    "keys_to_translate": 24,
+    "guard_fail": 29,
+    "strict_missing_key": 0,
+    "strict_blocker": "",
+    "recent_translated": 0,
+    "recent_examples": []
   },
   "idle": {
     "new_files_detected": 152,

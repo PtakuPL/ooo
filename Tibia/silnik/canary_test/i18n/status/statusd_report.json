@@ -1,0 +1,343 @@
+{
+  "timestamp": "2026-02-13T21:50:11.628864Z",
+  "version": "statusd-mvp-1.0",
+  "worker": {
+    "heartbeat_at": "2026-02-13T21:49:22Z",
+    "heartbeat_age_s": 49.6,
+    "cycle": 2,
+    "mode": "manual",
+    "category": "?",
+    "pid_alive": false
+  },
+  "guardian": {
+    "state": "healthy",
+    "throughput_per_h": 4280.0,
+    "guard_fail_rate_pct": 3.3,
+    "issues": []
+  },
+  "translation_kpi": {
+    "window_entries": 200,
+    "total_translated": 5969,
+    "total_guard_fail": 229,
+    "guard_fail_rate_pct": 3.69,
+    "per_lang": {
+      "es": {
+        "translated": 3395,
+        "guard_fail": 39,
+        "cycles": 103
+      },
+      "pl": {
+        "translated": 2574,
+        "guard_fail": 190,
+        "cycles": 97
+      }
+    }
+  },
+  "adaptive_batch": {
+    "batch_size": 50,
+    "guard_fail_rate": 1.08,
+    "reason": "increase_low_fail_rate=1.1%"
+  },
+  "dispatch": {
+    "last_target": "pl:monsters.json",
+    "pending_total": 1771,
+    "candidates": 33,
+    "skipped_backoff": 3,
+    "skipped_guard_fail": 1
+  },
+  "coverage": {
+    "ar": {
+      "coverage_pct": 21.36,
+      "missing": 2150,
+      "en_copy": 30982
+    },
+    "az": {
+      "coverage_pct": 15.4,
+      "missing": 2155,
+      "en_copy": 24264
+    },
+    "bg": {
+      "coverage_pct": 15.25,
+      "missing": 2155,
+      "en_copy": 24307
+    },
+    "bn": {
+      "coverage_pct": 21.07,
+      "missing": 2155,
+      "en_copy": 29180
+    },
+    "bs": {
+      "coverage_pct": 15.26,
+      "missing": 2155,
+      "en_copy": 24300
+    },
+    "cs": {
+      "coverage_pct": 15.26,
+      "missing": 2155,
+      "en_copy": 24298
+    },
+    "da": {
+      "coverage_pct": 15.26,
+      "missing": 2155,
+      "en_copy": 24298
+    },
+    "de": {
+      "coverage_pct": 16.39,
+      "missing": 2155,
+      "en_copy": 26160
+    },
+    "el": {
+      "coverage_pct": 15.26,
+      "missing": 2155,
+      "en_copy": 24302
+    },
+    "es": {
+      "coverage_pct": 68.85,
+      "missing": 232,
+      "en_copy": 16315
+    },
+    "et": {
+      "coverage_pct": 15.26,
+      "missing": 2155,
+      "en_copy": 24298
+    },
+    "fa": {
+      "coverage_pct": 21.07,
+      "missing": 2155,
+      "en_copy": 29180
+    },
+    "fi": {
+      "coverage_pct": 15.26,
+      "missing": 2155,
+      "en_copy": 24298
+    },
+    "fr": {
+      "coverage_pct": 15.29,
+      "missing": 2155,
+      "en_copy": 24311
+    },
+    "he": {
+      "coverage_pct": 21.07,
+      "missing": 2155,
+      "en_copy": 29177
+    },
+    "hi": {
+      "coverage_pct": 21.07,
+      "missing": 2155,
+      "en_copy": 29179
+    },
+    "hr": {
+      "coverage_pct": 15.26,
+      "missing": 2155,
+      "en_copy": 24298
+    },
+    "hu": {
+      "coverage_pct": 15.26,
+      "missing": 2155,
+      "en_copy": 24298
+    },
+    "hy": {
+      "coverage_pct": 21.07,
+      "missing": 2155,
+      "en_copy": 29180
+    },
+    "id": {
+      "coverage_pct": 21.09,
+      "missing": 2155,
+      "en_copy": 29171
+    },
+    "it": {
+      "coverage_pct": 15.29,
+      "missing": 2155,
+      "en_copy": 24311
+    },
+    "ja": {
+      "coverage_pct": 21.07,
+      "missing": 2155,
+      "en_copy": 29179
+    },
+    "ka": {
+      "coverage_pct": 21.07,
+      "missing": 2155,
+      "en_copy": 29180
+    },
+    "kk": {
+      "coverage_pct": 15.24,
+      "missing": 2155,
+      "en_copy": 24303
+    },
+    "ko": {
+      "coverage_pct": 21.07,
+      "missing": 2155,
+      "en_copy": 29171
+    },
+    "lt": {
+      "coverage_pct": 15.25,
+      "missing": 2155,
+      "en_copy": 24298
+    },
+    "lv": {
+      "coverage_pct": 15.25,
+      "missing": 2155,
+      "en_copy": 24298
+    },
+    "mk": {
+      "coverage_pct": 15.25,
+      "missing": 2155,
+      "en_copy": 24298
+    },
+    "ml": {
+      "coverage_pct": 21.07,
+      "missing": 2155,
+      "en_copy": 29176
+    },
+    "ms": {
+      "coverage_pct": 21.07,
+      "missing": 2155,
+      "en_copy": 29173
+    },
+    "nl": {
+      "coverage_pct": 15.27,
+      "missing": 2155,
+      "en_copy": 24311
+    },
+    "no": {
+      "coverage_pct": 15.26,
+      "missing": 2155,
+      "en_copy": 24298
+    },
+    "pl": {
+      "coverage_pct": 72.54,
+      "missing": 2083,
+      "en_copy": 2994
+    },
+    "pt": {
+      "coverage_pct": 17.39,
+      "missing": 2155,
+      "en_copy": 24297
+    },
+    "ro": {
+      "coverage_pct": 15.24,
+      "missing": 2155,
+      "en_copy": 24303
+    },
+    "ru": {
+      "coverage_pct": 17.29,
+      "missing": 2155,
+      "en_copy": 24296
+    },
+    "sk": {
+      "coverage_pct": 15.25,
+      "missing": 2155,
+      "en_copy": 24298
+    },
+    "sl": {
+      "coverage_pct": 15.24,
+      "missing": 2155,
+      "en_copy": 24303
+    },
+    "sq": {
+      "coverage_pct": 15.25,
+      "missing": 2155,
+      "en_copy": 24299
+    },
+    "sr": {
+      "coverage_pct": 15.24,
+      "missing": 2155,
+      "en_copy": 24304
+    },
+    "sv": {
+      "coverage_pct": 15.28,
+      "missing": 2155,
+      "en_copy": 24304
+    },
+    "sw": {
+      "coverage_pct": 21.07,
+      "missing": 2155,
+      "en_copy": 29172
+    },
+    "ta": {
+      "coverage_pct": 21.07,
+      "missing": 2155,
+      "en_copy": 29172
+    },
+    "te": {
+      "coverage_pct": 21.07,
+      "missing": 2155,
+      "en_copy": 29172
+    },
+    "th": {
+      "coverage_pct": 21.07,
+      "missing": 2155,
+      "en_copy": 29172
+    },
+    "tl": {
+      "coverage_pct": 21.07,
+      "missing": 2155,
+      "en_copy": 29173
+    },
+    "tr": {
+      "coverage_pct": 16.25,
+      "missing": 2155,
+      "en_copy": 24133
+    },
+    "uk": {
+      "coverage_pct": 15.25,
+      "missing": 2155,
+      "en_copy": 24299
+    },
+    "uz": {
+      "coverage_pct": 15.25,
+      "missing": 2155,
+      "en_copy": 24297
+    },
+    "vi": {
+      "coverage_pct": 21.08,
+      "missing": 2155,
+      "en_copy": 29170
+    },
+    "zh": {
+      "coverage_pct": 21.07,
+      "missing": 2155,
+      "en_copy": 29178
+    },
+    "zh_tw": {
+      "coverage_pct": 21.07,
+      "missing": 2155,
+      "en_copy": 29176
+    }
+  },
+  "recent_transitions": [],
+  "recent_errors": [
+    {
+      "action": "review placeholder/en-copy backlog",
+      "category": "pl",
+      "cycle": 5,
+      "error": "strict_skipped_done=13 translated=1",
+      "file": "example_merchant.json",
+      "phase": "AUTO_TRANSLATE",
+      "stage": "AUTO_TRANSLATE_NO_PROGRESS",
+      "t": "2026-02-13T21:46:47Z"
+    },
+    {
+      "action": "review placeholder/en-copy backlog",
+      "category": "pl",
+      "cycle": 1,
+      "error": "strict_skipped_done=13333 translated=79",
+      "file": "npc.json",
+      "phase": "AUTO_TRANSLATE",
+      "stage": "AUTO_TRANSLATE_NO_PROGRESS",
+      "t": "2026-02-13T21:48:42Z"
+    },
+    {
+      "action": "placeholder=0 command=0 pipe=0",
+      "category": "pl",
+      "cycle": 1,
+      "error": "guard_fail=1",
+      "file": "npc.json",
+      "phase": "AUTO_TRANSLATE",
+      "stage": "AUTO_TRANSLATE_GUARD",
+      "t": "2026-02-13T21:48:42Z"
+    }
+  ]
+}

@@ -19,6 +19,68 @@ To jest **audyt statyczny** skryptu `i18n_worker_simple.sh` pod kątem:
 
 ---
 
+## Aktualizacja audytu (2026-02-12)
+
+W najnowszych zmianach workera wdrożono dodatkowo:
+
+- tryb `--translations-only` jako strict (bez dodawania nowych kluczy i bez tworzenia brakujących plików),
+- priorytetyzację tłumaczeń dla braków EN→LANG i EN-copy,
+- raporty blokad/guardów (`translation_guard_*`, `translation_blockers_*`),
+- historię ostatnich tłumaczeń (`translation_recent_*`),
+- globalny przegląd języków (`translation_global_overview.json`) oraz rozszerzone sekcje statusu LIVE.
+
+Te zmiany nie zamykają audytu całościowego; pozostaje temat pełnej normalizacji metryk statusu i spójnego jednego źródła prawdy dla liczników EN/coverage.
+
+## Aktualizacja audytu (2026-02-12, Faza 4 — cross-reference)
+
+W `run_full_lang_validation()` wdrożono pipeline cross-referencing EN↔PL↔LANG:
+
+- consistency check w obrębie języka (wykrywanie wielu tłumaczeń dla tego samego EN),
+- PL-reference check (flagowanie EN-copy w LANG, gdy PL ma sensowne tłumaczenie),
+- length-ratio cross-check (odchylenie ratio LANG/EN względem PL/EN).
+
+Wyniki są zapisywane per język do `i18n/status/validation/{lang}_crossref.json`, a agregacja trafia do `i18n/status/validation/summary.json` (`crossref_issues` per język + `crossref_total_issues`).
+
+Weryfikacja po wdrożeniu (krótki run `:ONCE`):
+- wygenerowano raporty `*_crossref.json` dla 52 języków,
+- `summary.json` zawiera `crossref_total_issues` (aktualny snapshot: `24609`),
+- worker kończy cykl poprawnie i nie wywraca walidacji per-język.
+
+## Aktualizacja audytu (2026-02-12, Faza 4.5 + Faza 6)
+
+Wdrożono flagowany Tryb 2 auto-fix dla cross-reference:
+
+- nowe flagi runtime: `--auto-fix-crossref` i `--auto-fix-crossref-limit N` (domyślnie OFF),
+- aktywacja tylko z `--use-gt` i tylko dla języków z coverage `>=30%` (`lang != pl`),
+- auto-fix dotyczy oczywistych EN-copy z PL-reference i zapisuje wynik z metrykami `attempted/applied/skipped/errors` do `validation/{lang}_crossref.json`.
+
+Rozszerzenia raportów walidacji (sekcja 6):
+
+- `validation/summary.json` zawiera teraz `crossref_autofix_total_applied`,
+- parser logu walidacji zwraca dodatkowo `crossref_autofix=...`, aby sygnalizować zastosowane poprawki.
+
+Weryfikacja runtime:
+
+- uruchomiono bounded test `timeout 40s` z `--auto-fix-crossref --auto-fix-crossref-limit 1`,
+- worker poprawnie rozpoznał flagi i uruchomił cykl bez awarii,
+- pełny przebieg walidacji 52 języków nie zamknął się w 40s (oczekiwane dla krótkiego okna testowego).
+
+## Aktualizacja audytu (2026-02-13, runtime switch + readiness)
+
+Wdrożono sterowanie językiem w trakcie działania workera (na granicy cyklu):
+
+- `SWITCH:<lang>[:json[:limit]]` — natychmiastowe przełączenie i przypięcie języka AUTO_TRANSLATE na kolejne cykle,
+- `UNSWITCH` — zdjęcie przypięcia,
+- `LANGVAL:all|<lang>` — wymuszenie walidacji języków po bieżącym cyklu,
+- CLI: `--lang-validate <lang>` i `--lang-validate-all`.
+
+Weryfikacja runtime:
+
+- test `SWITCH:ru:npc.json:1:ONCE` (40s) potwierdził przełączenie dispatchera na RU i wykonanie AUTO_TRANSLATE,
+- dodano raport gotowości języków przed runem nocnym: `tools/i18n_language_readiness_report.py` generuje `i18n/status/language_readiness.md`.
+
+---
+
 ## TL;DR — najważniejsze problemy do naprawy (kolejność sugerowana)
 
 ### Krytyczne
@@ -464,3 +526,81 @@ Stan na dziś (zliczenia po `rg` w katalogach NPC):
 - `chatchannels`: brak mechanizmu użycia i18n dla nazw kanałów po stronie serwera/klienta (wymaga integracji).
 - `keywordHandler` bez i18nKey: nadal tylko ekstrakcja kluczy, brak transformacji kodu (do wdrożenia).
 - Pozostałe hardcoded wzorce NPC z aneksu nadal wymagają osobnych migratorów (np. `StdModule.promotePlayer` text, `npcHandler:say` z dodatkowymi parametrami, tablice z nieliteralnymi elementami, złożone konkatenacje z `and/or` lub porównaniami).
+
+---
+
+## Audyt sesji 2026-02-XX: Poprawki workera (9 fixów)
+
+### Kontekst
+Codex i głęboka analiza zidentyfikowały 14 bugów (2 CRITICAL, 3 HIGH, 5 MEDIUM, 4 LOW). 
+Zaimplementowano 9 poprawek opisanych poniżej.
+
+### Fix #1: MODE_EXTRA2 nigdy nie resetowane (CRITICAL)
+**Problem:** `MODE_EXTRA2` ustawiane przez komendy `SYNC`/`AUTO` (linie ~10941/10987) nigdy nie było czyszczone między cyklami. Sprawdzenie `if [ "$MODE_EXTRA2" = "AUTO" ]` w pętli ciągłej powodowało permanentne pomijanie dispatchera → nieskończona pętla tego samego zadania.  
+**Fix:** Dodano `MODE_EXTRA2=""` + `MODE_TYPE=""` + `MODE_CAT=""` + `MODE_COUNT=""` na końcu każdego cyklu oraz na początku pętli ciągłej.  
+**Linie:** ~11737 (reset cyklu), ~10823 (inicjalizacja cyklu).
+
+### Fix #2: Anti-loop z backoffem per kandydat
+**Problem:** `select_auto_translate_target_strict()` miał jednopoziomowy guard — gdy jedyny kandydat miał 0 postępu, pętla się zapętlała.  
+**Fix:** Wprowadzono `no_progress_counts` dict śledzący liczbę wizyt z zerowym postępem per kandydat. Po ≥3 wizytach kandydat jest pomijany. Gdy wszyscy wyczerpani — reset liczników.  
+**Linia:** ~10420.
+
+### Fix #3: Niecytowany heredoc AUTOTRANSPY
+**Problem:** `<< AUTOTRANSPY` (bez cudzysłowów) powodował ekspansję zmiennych Basha wewnątrz kodu Pythona. Zmienne `$target_lang`, `$json_file` itp. były rozwijane przez Bash zamiast przekazywane jako argumenty.  
+**Fix:** Zmieniono na `<< 'AUTOTRANSPY'` + `python3 - "$target_lang" "$json_file" "$translate_limit" "$strict_mode"` + użycie `sys.argv` w Pythonie.  
+**Linia:** ~7867.
+
+### Fix #4: EN-copy fałszywie traktowane jako nieprzetłumaczone
+**Problem:** `_is_untranslated()` (w 3 lokalizacjach: STATUSPY, select_auto_translate_target_strict, auto_translate_keys) traktowała WSZYSTKIE `lang_value == en_value` jako nieprzetłumaczone. Tysiące kluczy (nazwy itemów, potworów, zaklęć) są poprawnie identyczne z EN.  
+**Fix:** Dodano `_is_likely_proper_noun()` / `_is_proper_noun_key()` rozpoznające:
+- klucze `item.*.name`, `monster.*.name`, `spell.*.words`
+- wartości ≤3 znaków
+- wartości wyłącznie wielkie litery (skróty)  
+**Linie:** ~1208 (STATUSPY), ~10308 (strict dispatcher), ~8084 (auto_translate_keys).
+
+### Fix #5: Próg STALE vs IDLE sleep
+**Problem:** IDLE sleep 300s > stale_threshold 120s → dashboard raportował STALE podczas normalnego IDLE.  
+**Fix:** Zwiększono `stale_threshold_seconds` z 120 na 360. Dodano `status_update_activity` przed snem IDLE.  
+**Linie:** ~1517 (próg), ~11759 (heartbeat przed sleep).
+
+### Fix #6: Hardcoded kategorie w walidacji/dokumentacji/raportach
+**Problem:**  
+- `validate_translation_quality()`: tylko 7 kategorii hardcoded  
+- `generate_npc_documentation()`: tylko 8 kategorii hardcoded  
+- `generate_daily_report()`: skanował tylko 3 podkatalogi (`npc`, `scripts`, `monsters`) zamiast struktury `i18n/{lang}/`
+- Realnie istnieje 38 kategorii w `i18n/en/`  
+**Fix:** Wszystkie 3 funkcje teraz dynamicznie odkrywają kategorie z `os.listdir(i18n/en/)`.  
+**Linie:** ~8788 (validate), ~8603 (generate_npc_doc), ~8849 (daily_report).
+
+### Fix #7: Nieatomowy zapis TM i lang_file
+**Problem:** `translation_memory.json` i pliki `i18n/{lang}/{cat}.json` zapisywane bezpośrednio — crash w trakcie zapisu = utrata/zniszczenie danych.  
+**Fix:** Użycie `tempfile.mkstemp()` + `os.replace()` (atomowy rename) dla obu zapisów w `auto_translate_keys()`.  
+**Linie:** ~8346 (lang_file), ~8358 (TM).
+
+### Fix #8: Dashboard roadmap + targets dynamicznie
+**Problem:**  
+- `category_current` miał tylko 12 ręcznie wymienionych kategorii → targets auto-adjust nie działał dla 26 pozostałych  
+- Roadmap w `I18N_STATUS.md` pokazywał tylko 8 wierszy → 30 kategorii niewidocznych  
+- Nowe kategorie nie miały celów → procent postępu = 0% lub brak  
+**Fix:**  
+- `category_current` teraz używa `all_json_categories` (dynamicznie z `i18n/en/`)
+- Nowe kategorie automatycznie dostają cel = `auto_adjust_target(current, max(current, 100))`
+- Roadmap generowany pętlą po wszystkich kategoriach z ikonami
+**Linie:** ~1115 (category_current), ~1144 (roadmap_rows_list), ~2345 (template).
+
+### Znane pozostałe problemy (niezaimplementowane)
+1. **SIMPLE_TRANSLATIONS** pokrywa tylko 5 języków × ~20 słów → 48+ języków ma zero realnych tłumaczeń (potrzebna integracja z API tłumaczeń lub większy słownik)
+2. **`simple_translate()` ignoruje casing** — "Hello" i "hello" traktowane jednakowo
+3. **`generate_daily_report()` — stara sekcja "Tłumaczenia według języków"** — teraz zlicza poprawnie, ale format raportu mógłby być bogatszy
+4. **`count_untranslated_keys()` (~line 9917)** — martwy kod, nigdzie nie wywoływany
+5. **Brak retry/fallback** przy niepowodzeniu tłumaczenia — kandydat jest po prostu pomijany
+
+### Aktualizacja 2026-02-12 — domknięcie Fazy 0
+
+- ✅ **0.1 GT_LANG_MAP**: dodano mapowanie `he -> iw` oraz normalizację `zh_TW/zh_tw`.
+- ✅ **0.2 Cache target selection**: strict dispatcher korzysta z cache kandydatów z TTL cykli.
+- ✅ **0.3 Throttle STATUSPY**: aktywne `should_update_github_status()` + smart-force.
+- ✅ **0.4 Spójność struktury języków**: brakujące pliki JSON uzupełnione; walidacja `missing_total=0`.
+- ✅ **0.5 Test wydajności 2 min**: wykonany bounded run workera + odczyt profiler `cycle_total`.
+
+Wynik 0.5 (6 ostatnich pełnych `cycle_total`): min `4089 ms`, p50 `12771 ms`, avg `10810 ms`, max `20444 ms`.

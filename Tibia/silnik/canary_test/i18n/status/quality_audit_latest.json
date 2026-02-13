@@ -1,0 +1,52 @@
+{
+  "timestamp": "2026-02-13T22:34:45.049782Z",
+  "checked_entries": 100,
+  "issues_found": 5,
+  "issues_by_type": {
+    "identical_to_en_exempt": 57,
+    "identical_to_en": 5,
+    "suspicious_log_critical": 194,
+    "suspicious_log_high": 1,
+    "suspicious_log_low": 5,
+    "suspicious_rejected_critical": 200
+  },
+  "issues": [
+    {
+      "key": "otclient_modules.charms.tr_64",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Curse",
+      "translated": "Curse"
+    },
+    {
+      "key": "otclient_modules.game_cyclopedia.tr_6",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Cyclopedia",
+      "translated": "Cyclopedia"
+    },
+    {
+      "key": "otclient_modules.game_cyclopedia_otui.tr_8",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Cyclopedia",
+      "translated": "Cyclopedia"
+    },
+    {
+      "key": "otclient_modules.player.tr_6",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Druid",
+      "translated": "Druid"
+    },
+    {
+      "key": "otclient_modules.spelllist_otui.tr_12",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Druid",
+      "translated": "Druid"
+    }
+  ],
+  "threshold": 10,
+  "slow_mode": false
+}

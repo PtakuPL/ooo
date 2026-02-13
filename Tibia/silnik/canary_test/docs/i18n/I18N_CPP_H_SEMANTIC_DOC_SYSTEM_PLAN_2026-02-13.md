@@ -1,0 +1,291 @@
+# Plan systemu semantycznej analizy C++/H dla i18n i dokumentacji technicznej
+
+**Data:** 2026-02-13  
+**Zakres:** repo Canary (`src/*.cpp`, `src/*.h`) + mapowanie do domen i18n  
+**Cel:** zbudować pipeline, który tworzy dwa równoległe widoki: **Human View** i **Developer View**.
+
+---
+
+## 0) Aktualizacja koordynacyjna (2026-02-13 22:14 UTC)
+
+W tej iteracji wykonano Fazę 0 z planu workera (baseline 24h):
+- artefakt: `i18n/status/baseline/baseline_2026-02-13_210014.json`.
+- baseline raport ma już blok `strict_hourly_window` (JSONL-only KPI).
+- `I18N_STATUS.md` renderuje już sekcję „Strict Hourly Window (JSONL-only)” z tego samego kontraktu.
+
+Aktualizacja uzupełniająca (2026-02-13 22:25 UTC):
+- ✅ Domknięto `P0.1 Spójny status` po stronie workera.
+- ✅ Dodano kontrakt sekcji statusu do artefaktu `i18n/status/status_sections_latest.json` (state/freshness/source/last_update per sekcja).
+- ✅ `TRANSLATION` freshness jest liczony z realnych timestampów tłumaczeń (`translation_guard_latest.json` / `translation_recent_latest.json`), a nie z `sync_last_ts`.
+- ✅ Domknięto TODO operacyjny poza zakresem C++/H: debounce/backoff restartów guardiana dla triggera `mtime` (`.guardian_restart_state.json`, `i18n/status/guardian_restart_metrics.json`, `.guardian_run.lock`).
+
+Aktualizacja uzupełniająca (2026-02-13 21:47 UTC):
+- ✅ Domknięto operacyjnie `P2.1`: webhook alerting w `statusd` (`doctor_critical`, `guardian_stuck`, `no_progress`) z cooldown/deduplikacją (`statusd_alert_state.json`).
+- ✅ Domknięto operacyjnie `P2.2`: raport 24h (`statusd_daily_report.json` + `statusd_daily_report.md`) z trendami per język/per kategoria.
+- ✅ Naprawiono zgodność kontraktu coverage w `statusd` pod `translation_global_overview.json` (`languages[]`).
+- ⬜ Nowe TODO kontraktowe: dodać dedykowany artefakt `pending_skip` dla okna 24h (obecnie raport 24h bazuje na sygnałach z `worker_cycle_perf.detail`).
+
+Aktualizacja uzupełniająca (2026-02-13 — quality hardening PL/ES):
+- ✅ Domknięto po stronie workera rozróżnienie `identical_to_en`:
+  - translacyjne regresje vs techniczne wyjątki (`identical_to_en_exempt`).
+- ✅ Heurystyka wyjątków obejmuje ścieżki, template markup, emotes i identyfikatory techniczne.
+- ✅ Dzięki temu metryki quality lepiej odzwierciedlają realny problem językowy, a nie artefakty kodowe.
+- ⬜ Nowe wymaganie dla pipeline C++/H:
+  - dodać tag semantyczny `text_kind` (`natural_language` / `technical_token` / `script_path` / `template_fragment`) w emitowanych sygnałach,
+  - przekazywać ten tag do i18n, aby quality gate i audyt miały wspólny kontrakt klasyfikacji.
+
+Aktualizacja uzupełniająca (2026-02-13 22:23 UTC):
+- ✅ Decyzja orkiestracyjna dla guardiana:
+  - tryb startowy tłumaczeń: wszystkie języki (`translations_general`),
+  - kolejność bootstrap: `es` -> `pl` -> pozostałe języki.
+- Wpływ na pipeline C++/H:
+  - sygnały priorytetu/domeny powinny uwzględniać, że PL/ES są pierwszą falą walidacyjną, a nie jedynym targetem.
+
+Aktualizacja uzupełniająca (2026-02-13 22:38 UTC):
+- ✅ Runtime alignment potwierdzony:
+  - guardian pracuje na `translations_general` bez `--langs`,
+  - selector publikuje stan bootstrapu `es -> pl` w `translation_dispatch_state.json` (`bootstrap_priority`, `bootstrap_forced_lang`, `cycle_counter`).
+- ✅ Domknięto kolejkę naprawczą `identical_to_en (translatable)` dla PL/ES:
+  - artefakty: `i18n/status/identical_to_en_repair_queue.json` + `i18n/status/identical_to_en_repair_queue_report.jsonl`,
+  - priorytet domen queue: `npc -> server -> talkactions`.
+- ⬜ Nowe wymaganie dla planu C++/H:
+  - pipeline semantyczny powinien emitować tag domeny kompatybilny z queue repair (`npc/server/talkactions/...`), żeby statusd mógł korelować źródło zmian C++/H z realnym backlogiem tłumaczeń.
+
+Wpływ na plan C++/H:
+- semantyczny pipeline powinien emitować sygnały czasowe kompatybilne z `strict_hourly_window`, żeby statusd mógł łączyć dane C++/H i i18n bez mieszania metryk godzinowych z dobowymi.
+- semantyczny pipeline powinien też zachować kompatybilność z kontraktem `status_sections_latest.json`, aby statusd mógł łączyć sygnały semantyczne z aktualnym stanem sekcji (active/inactive + freshness).
+- semantyczny pipeline powinien publikować własne sygnały skip/no-progress w jawnych polach licznikowych (nie tylko w opisach tekstowych), żeby raport 24h miał spójne źródła KPI.
+
+---
+
+## 1) Problem do rozwiązania
+
+Obecnie wiedza o kodzie C++/H jest rozproszona: funkcje, eventy, zależności i przepływy danych są trudne do odtworzenia bez ręcznego czytania wielu plików. To utrudnia:
+- bezpieczne modyfikacje pod i18n,
+- analizę ryzyk regresji,
+- onboarding i szybkie diagnozowanie błędów.
+
+Potrzebny jest system, który automatycznie buduje mapę semantyczną kodu i publikuje ją w formie użytecznej dla operatora i dewelopera.
+
+---
+
+## 2) Wynik docelowy (co ma powstać)
+
+1. **Human View (skrót operacyjny):**
+   - „co ten moduł robi”,
+   - „jakie eventy uruchamia”,
+   - „jakie są punkty ryzyka i18n”.
+
+2. **Developer View (techniczny):**
+   - graf funkcji (`caller -> callee`),
+   - zależności plików (`include`, moduły, warstwy),
+   - mapy eventów (`source -> handler -> side effect`),
+   - punkty mutacji danych i I/O.
+
+3. **Artefakty maszynowe:**
+   - indeks symboli,
+   - graf wywołań,
+   - graf zależności include,
+   - słownik eventów i hooków,
+   - raport zmian semantycznych per commit.
+
+---
+
+## 3) Architektura pipeline
+
+## 3.1 Wejścia
+- `compile_commands.json`
+- pliki `src/**/*.cpp`, `src/**/*.h`
+- metadane build (`CMakeLists.txt`, konfiguracje)
+- opcjonalnie logi runtime (dla walidacji event flow)
+
+## 3.2 Etapy
+1. **Parse & Index:** AST/IR symboli (funkcje, klasy, metody, pola, enumy).
+2. **Graph Build:** graf wywołań, zależności includes, relacje modułowe.
+3. **Event Extraction:** wykrycie event source/handler i efektów ubocznych.
+4. **Semantic Tagging:** oznaczenie domen (`combat`, `quest`, `npc`, `network`, `i18n`).
+5. **Dual Rendering:** generacja Human View + Developer View.
+6. **Delta Engine:** porównanie wersji i raport zmian wpływających na i18n.
+
+## 3.3 Wyjścia
+- `docs/i18n/generated/human/*.md`
+- `docs/i18n/generated/developer/*.md`
+- `docs/i18n/generated/graphs/*.json|*.mmd`
+- `docs/i18n/generated/delta/*.md`
+
+---
+
+## 4) Model danych semantycznych
+
+## 4.1 Jednostki
+- `Symbol`: funkcja/metoda/klasa/namespace.
+- `Module`: logiczna domena kodu.
+- `Event`: trigger + payload + handler.
+- `Edge`: relacja (`calls`, `includes`, `emits`, `handles`, `reads`, `writes`).
+
+## 4.2 Atrybuty wymagane
+- plik, zakres linii, sygnatura, dostępność,
+- zależności wejściowe/wyjściowe,
+- poziom ryzyka i18n (`low|medium|high`),
+- powiązane klucze i18n (jeśli wykryte).
+
+## 4.3 Kontrakt kompatybilności
+- każdy rekord ma `schema_version`,
+- parser nie łamie starszych raportów (backward-compatible fields),
+- brak danych oznaczany jawnie (`unknown`), nie pomijany.
+
+---
+
+## 5) Widoki: Human vs Developer
+
+## 5.1 Human View (dla operatora/projektu)
+Każdy moduł dostaje kartę:
+1. Co robi moduł (2–5 zdań).
+2. Najważniejsze eventy i skutki.
+3. Punkty ryzyka (np. tekst dynamiczny, placeholdery, serializacja).
+4. Ostatnie zmiany i wpływ na tłumaczenia.
+
+## 5.2 Developer View (dla implementacji)
+Każdy moduł dostaje:
+1. listę symboli public/private,
+2. call graph z poziomami głębokości,
+3. dependency graph include,
+4. event graph i side effects,
+5. odnośniki do miejsc krytycznych dla i18n walidacji.
+
+---
+
+## 6) Integracja z workflow i18n
+
+1. Pipeline uruchamiany cyklicznie (np. nightly) i przy większych zmianach w `src/`.
+2. Raport delta trafia do statusu i checklisty pracy workera.
+3. Jeśli delta wykrywa nowe źródła tekstów, tworzy zadanie do `KEY_MANAGEMENT`.
+4. Jeśli delta wykrywa zmianę formatów/tokenów, podnosi priorytet `VALIDATION_QUALITY`.
+5. Status operatorski pokazuje skrót: „które moduły C++/H zmieniły ryzyko i18n”.
+
+---
+
+## 7) Plan wdrożenia P0/P1/P2
+
+## P0 — Fundament semantyczny
+1. Parser AST + indeks symboli.
+2. Graf wywołań i include dla krytycznych modułów (`game`, `npc`, `network`, `i18n`).
+3. Minimalny Human View + Developer View dla top 10 modułów.
+
+**DoD P0:** można wskazać dla każdej zmiany: dotknięte symbole, zależności i ryzyka i18n.
+
+## P1 — Eventy i delta
+1. Ekstrakcja eventów source/handler.
+2. Delta engine między snapshotami.
+3. Raport „zmiana semantyczna wpływa/nie wpływa na i18n”.
+
+**DoD P1:** każdy większy PR ma automatyczny raport wpływu semantycznego.
+
+## P2 — Automatyzacja i jakość
+1. Ranking ryzyk modułów.
+2. Sugestie testów regresji na podstawie graph delta.
+3. Integracja z dashboardem i alertami.
+
+**DoD P2:** automatyczne rekomendacje testów i zadań i18n z wysoką trafnością.
+
+---
+
+## 8) Testy i walidacja jakości danych
+
+1. **Snapshot tests:** ten sam kod -> ten sam indeks/graf.
+2. **Drift tests:** wykrywanie nieoczekiwanych zmian w parserze.
+3. **Coverage tests:** procent symboli zmapowanych vs całkowitych.
+4. **Accuracy review:** ręczna weryfikacja próbek top modułów.
+5. **Latency budget:** pełny pipeline w akceptowalnym czasie CI.
+
+Minimalne progi jakości:
+- mapowanie symboli >= 95%,
+- poprawność relacji `calls/includes` >= 90% na próbce kontrolnej,
+- 0 krytycznych błędów schematu wyjściowego.
+
+---
+
+## 9) Ryzyka i mitigacje
+
+1. **Różnice parserów/C++ dialect:**
+   - mitigacja: bazowanie na `compile_commands.json` i stałej wersji toolchain.
+2. **Duża objętość grafów:**
+   - mitigacja: sharding per moduł + cache incremental.
+3. **Fałszywe alarmy ryzyka i18n:**
+   - mitigacja: scoring + whitelist + review loop.
+4. **Nadmiar danych dla operatora:**
+   - mitigacja: Human View jako krótki executive summary.
+
+---
+
+## 10) Deliverables do natychmiastowego uruchomienia
+
+1. Specyfikacja JSON dla `Symbol`, `Event`, `Edge`.
+2. Skeleton generatora raportów `human/developer`.
+3. Lista modułów startowych i właścicieli przeglądu.
+4. Checklista walidacyjna „go/no-go” dla publikacji raportu.
+
+---
+
+## 11) Kryteria odbioru końcowego
+
+- Każda zmiana w C++/H ma automatyczną mapę wpływu i ryzyka.
+- Human View jest czytelny dla osoby nietechnicznej w < 2 min.
+- Developer View pozwala prześledzić przepływ funkcji/eventów bez ręcznego grepowania całego repo.
+- System wspiera i18n worker przez konkretne sygnały do `KEY_MANAGEMENT` i `VALIDATION_QUALITY`.
+
+---
+
+## 12) Braki, które trzeba domknąć przed implementacją
+
+### 12.1 Decyzja narzędziowa (parser)
+- Brakowało jednoznacznej decyzji parsera AST.
+- Decyzja startowa: parser oparty o `clang` z wejściem z `compile_commands.json`.
+- Wymóg: ta sama wersja parsera w lokalnym środowisku i CI.
+
+### 12.2 Kontrakt wejście/wyjście do i18n
+- Brakowało twardego kontraktu dla integracji z workerem.
+- Dodajemy artefakty:
+   1. `semantic_delta.json` (zmienione symbole/eventy),
+   2. `i18n_risk_signals.json` (sygnały do `KEY_MANAGEMENT`/`VALIDATION_QUALITY`),
+   3. `module_summary.md` (human digest).
+
+### 12.3 Ownership i cykl publikacji
+- Brakowało odpowiedzialności za review danych semantycznych.
+- Wymagane role:
+   - owner parsera,
+   - owner klasyfikacji i18n,
+   - reviewer runtime.
+
+### 12.4 Testy jakości klasyfikacji
+- Brakowało testów błędnych klasyfikacji ryzyka i18n.
+- Dodajemy zestaw walidacyjny dla false-positive i false-negative na próbce kontrolnej modułów.
+
+### 12.5 Kontrakt czasowy dla metryk (nowe po Fazie 0)
+- Brakowało jawnego rozróżnienia metryk godzinowych vs dobowych.
+- Stan: `strict_hourly_window` jest już wdrożony w raporcie baseline i18n.
+- Stan: kontrakt działa już także w renderingu `I18N_STATUS.md`.
+- Wymagane dalej: pipeline semantyczny ma dostarczać znaczniki czasu i agregaty zgodne z tym kontraktem (`strict_hourly_window`, JSONL-first), aby status/KPI nie były zniekształcone przez sumy dzienne.
+
+---
+
+## 13) Najważniejsze luki dla trybu tłumaczeń (wynik z analizy C++/H)
+
+### 13.1 Brak mapy źródeł tekstów runtime
+- Potrzebna lista miejsc generujących teksty dynamiczne w C++ (`emit`, `message`, `description`, `dialog`).
+- Bez tego worker nie dostaje pełnych sygnałów do tworzenia/aktualizacji kluczy.
+
+### 13.2 Brak mapy placeholder contracts
+- Potrzebne wykrywanie formatów (`%s`, `%d`, `{name}`, custom tokens) per moduł.
+- Sygnał ma trafiać do quality gate tłumaczeń zanim klucz dostanie status done.
+
+### 13.3 Brak mapy event -> locale impact
+- Potrzebna zależność: który event wpływa na które locale/path.
+- Pozwala to ustawić priorytet tłumaczeń po zmianach w kodzie.
+
+### 13.4 Brak „translation hot paths”
+- Potrzebny ranking krytycznych ścieżek (npc dialogi, quest outputs, item descriptions, client messages).
+- Te ścieżki powinny mieć wyższy priorytet walidacji i krótszy czas reakcji.
+
+### 13.5 Brak automatycznego triggera do Translation First
+- Jeśli semantic delta dotyczy źródeł tekstu, system powinien automatycznie uruchomić etap `TRANSLATION_SYNC` + `VALIDATION_QUALITY` dla dotkniętych kategorii.

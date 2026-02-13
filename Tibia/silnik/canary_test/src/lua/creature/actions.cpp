@@ -484,9 +484,6 @@ bool Actions::useItemEx(const std::shared_ptr<Player> &player, const Position &f
 }
 
 void Actions::showUseHotkeyMessage(const std::shared_ptr<Player> &player, const std::shared_ptr<Item> &item, uint32_t count) {
-	const auto &tr = i18n::g_translator();
-	const std::string loc = player->getLocale();
-
 	const ItemType &it = Item::items[item->getID()];
 	if (!it.showCount) {
 		player->sendLocalizedTextMessage(MESSAGE_HOTKEY_PRESSED, "cpp.hotkey.using_one", { item->getName() });

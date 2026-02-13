@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-02-13T22:42:15.491496Z",
+  "state": "degraded",
+  "heartbeat_age_s": 108.5,
+  "translated_window": 608,
+  "guard_fail_window": 101,
+  "guard_fail_rate_pct": 14.2,
+  "throughput_per_h": 2432.0,
+  "entries_in_window": 17,
+  "worker_cycle": 1,
+  "issues": [
+    "heartbeat_aging (108s)"
+  ]
+}

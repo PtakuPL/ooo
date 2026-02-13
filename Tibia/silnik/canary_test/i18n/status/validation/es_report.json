@@ -1,0 +1,155 @@
+{
+  "lang": "es",
+  "script_group": "latin",
+  "total_keys": 53586,
+  "translated": 52035,
+  "identical_to_en": 15639,
+  "placeholder_keys": 1319,
+  "coverage_pct": 97.1,
+  "issues_total": 5299,
+  "issues_by_type": {
+    "V3_empty": 5280,
+    "V4_artifact": 13,
+    "V1_placeholder_mismatch": 4,
+    "V6_newline_mismatch": 1,
+    "V5_pipe_mismatch": 1
+  },
+  "issues_by_severity": {
+    "CRITICAL": 5,
+    "HIGH": 13,
+    "MEDIUM": 1,
+    "LOW": 5280
+  },
+  "score": 99.4,
+  "worst_keys": [
+    {
+      "key": "server.game.msg_32",
+      "category": "server",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "server.player.msg_11",
+      "category": "server",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "server.spells.msg_3",
+      "category": "server",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "talkaction.online.msg_summary",
+      "category": "talkactions",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "talkaction.online.msg_summary",
+      "category": "talkactions",
+      "type": "V5_pipe_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "achievement.317.description",
+      "category": "achievements",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "book.otbm.battletactics_for_mages_ii",
+      "category": "books",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "book.otbm.battletactics_for_mages_iii",
+      "category": "books",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "book.otbm.battletactics_for_mages_iv",
+      "category": "books",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "monster.ferumbras_mortal_shell.voice_4",
+      "category": "monsters",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "monster.prince_drazzak.voice_8",
+      "category": "monsters",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "monster.grynch_clan_goblin.voice_15",
+      "category": "monsters",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "monster.the_abomination.voice_14",
+      "category": "monsters",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "monster.bazir.voice_1",
+      "category": "monsters",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "quests.bigfoot_burden.gnomedix_msg4",
+      "category": "quests",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "scripts.auto_loot.msg_2",
+      "category": "scripts",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "scripts.prince_drazzak_summon.say_1",
+      "category": "scripts",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "scripts.thais_exhibition.say_58",
+      "category": "scripts",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "npclib.bank_system.say_21",
+      "category": "npclib",
+      "type": "V6_newline_mismatch",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.a_weakened_forest_fury.multi_2",
+      "category": "npc",
+      "type": "V3_empty",
+      "severity": "LOW"
+    }
+  ],
+  "crossref": {
+    "enabled": true,
+    "issues_total": 540,
+    "consistency": 53,
+    "pl_reference": 400,
+    "length_ratio": 87,
+    "auto_fix_applied": 0
+  },
+  "validated_at": "2026-02-13T22:33:45.538739Z"
+}

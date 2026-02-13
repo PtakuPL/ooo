@@ -275,6 +275,7 @@ OTCLIENT_DATA:testyy/data/locales/game_i18n_no_compact.lua
 OTCLIENT_DATA:testyy/data/locales/game_i18n_pl.lua
 OTCLIENT_DATA:testyy/data/locales/game_i18n_pl_compact.lua
 OTCLIENT_DATA:testyy/data/locales/game_i18n_pt_compact.lua
+OTCLIENT_DATA:testyy/data/locales/game_i18n_reports_compact.lua
 OTCLIENT_DATA:testyy/data/locales/game_i18n_ro_compact.lua
 OTCLIENT_DATA:testyy/data/locales/game_i18n_ru_compact.lua
 OTCLIENT_DATA:testyy/data/locales/game_i18n_sk_compact.lua

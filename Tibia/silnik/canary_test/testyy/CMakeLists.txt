@@ -99,14 +99,26 @@ endif()
 # === IPO ===
 option(OPTIONS_ENABLE_IPO "Check and Enable interprocedural optimization (IPO/LTO)" ON)
 if(OPTIONS_ENABLE_IPO)
-	log_option_enabled("ipo")
-
-	include(CheckIPOSupported)
-	check_ipo_supported(RESULT result OUTPUT output)
-	if(result)
-		set(CMAKE_INTERPROCEDURAL_OPTIMIZATION TRUE)
+	if(MSVC)
+		log_war("IPO/LTCG disabled on MSVC to avoid internal compiler error C1001")
+		set(CMAKE_INTERPROCEDURAL_OPTIMIZATION FALSE)
+	elseif(CMAKE_SYSTEM_NAME STREQUAL "Emscripten")
+		# Emscripten's system libraries (libhtml5.a, libc++-mt) are compiled without
+		# LTO.  Enabling CMAKE_INTERPROCEDURAL_OPTIMIZATION adds -flto=thin which
+		# causes: wasm-ld: error: attempt to add bitcode file after LTO
+		log_war("IPO/LTO disabled for Emscripten to avoid wasm-ld linker errors")
+	elseif(CMAKE_SYSTEM_NAME STREQUAL "Android")
+		log_war("IPO/LTO disabled for Android to avoid NDK gold linker errors")
 	else()
-		log_war("IPO is not supported: ${output}")
+		log_option_enabled("ipo")
+
+		include(CheckIPOSupported)
+		check_ipo_supported(RESULT result OUTPUT output)
+		if(result)
+			set(CMAKE_INTERPROCEDURAL_OPTIMIZATION TRUE)
+		else()
+			log_war("IPO is not supported: ${output}")
+		endif()
 	endif()
 else()
 	log_option_disabled("ipo")

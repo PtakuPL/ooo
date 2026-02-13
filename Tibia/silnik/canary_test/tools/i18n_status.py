@@ -23,6 +23,33 @@ def utc_now_iso() -> str:
     return datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
 
 
+# ── P1.9: Domain tag derivation ─────────────────────────────────────────────
+_PHASE_TO_DOMAIN = {
+    "MIGRATION": "MIGRATION",
+    "COMPACT_KEYS": "KEY",
+    "KEY_SYNC": "KEY",
+    "TRANSLATION_SYNC": "SYNC",
+    "AUTO_TRANSLATE": "AUTO",
+    "QUALITY": "QUALITY",
+    "QUALITY_AUDIT": "QUALITY",
+    "IDLE": "QUALITY",
+    "SELFTEST": "QUALITY",
+}
+
+
+def _derive_domain(phase: str, stage: str = "") -> str:
+    """Derive normalized domain tag from phase/stage."""
+    p = (phase or "").upper()
+    if p in _PHASE_TO_DOMAIN:
+        return _PHASE_TO_DOMAIN[p]
+    # Fallback: check stage for clues
+    s = (stage or "").upper()
+    for key, domain in _PHASE_TO_DOMAIN.items():
+        if key in s:
+            return domain
+    return "AUTO"  # default
+
+
 def atomic_write_json(path: str, data: Dict[str, Any]) -> None:
     os.makedirs(os.path.dirname(path), exist_ok=True)
     tmp_path = f"{path}.tmp"
@@ -188,6 +215,7 @@ def cmd_log_op(args: argparse.Namespace) -> None:
         "category": args.category,
         "file": args.file,
         "result": args.result,
+        "domain": _derive_domain(args.phase, args.stage),
     }
 
     delta: Dict[str, Any] = {}
@@ -223,6 +251,7 @@ def cmd_log_error(args: argparse.Namespace) -> None:
         "file": args.file,
         "error": args.error,
         "action": args.action,
+        "domain": _derive_domain(args.phase, args.stage),
     }
 
     append_jsonl(paths.errors_jsonl, event)

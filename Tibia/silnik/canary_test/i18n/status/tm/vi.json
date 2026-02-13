@@ -1,0 +1,58 @@
+{
+  "spell.msg_cannot_cast": {
+    "src_hash": "2e82fa5082130470b26e6e1db5f8d366",
+    "text": "Bạn không thể sử dụng câu thần chú này",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T00:13:22.796633Z"
+  },
+  "spell.msg_need_learn": {
+    "src_hash": "24c37be7de2773e7687c1bb0b58d66a9",
+    "text": "Bạn cần học câu thần chú này trước",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T00:13:22.797405Z"
+  },
+  "spell.msg_no_party_in_range": {
+    "src_hash": "fca01b330772f55532e24d9cf2108105",
+    "text": "Không có đảng viên nào trong phạm vi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T00:13:22.797816Z"
+  },
+  "spell.msg_no_creatures_around": {
+    "src_hash": "e8ab5eef836b9bcbfe91c55f008b6f15",
+    "text": "Không có sinh vật xung quanh",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T00:13:22.798160Z"
+  },
+  "spell.msg_cannot_summon_more": {
+    "src_hash": "1718b9c7c3db387960dae22e578e4df5",
+    "text": "Bạn không thể triệu tập thêm sinh vật.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T00:13:22.798640Z"
+  },
+  "spell.msg_no_ranged_monsters": {
+    "src_hash": "728afddc1a77526ad5ea881c638312eb",
+    "text": "Không có quái vật tầm xa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T00:31:51.270058Z"
+  },
+  "spell.msg_no_self_cast": {
+    "src_hash": "4f940074a28c2a7dbdb25c1987e4dfd2",
+    "text": "Bạn không thể sử dụng câu thần chú này cho chính mình.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T00:31:51.270849Z"
+  }
+}

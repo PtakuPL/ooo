@@ -1,0 +1,154 @@
+{
+  "lang": "bg",
+  "script_group": "cyrillic",
+  "total_keys": 53586,
+  "translated": 30595,
+  "identical_to_en": 24307,
+  "placeholder_keys": 20836,
+  "coverage_pct": 57.1,
+  "issues_total": 6294,
+  "issues_by_type": {
+    "V3_empty": 6274,
+    "script_cyrillic_latin_mix": 12,
+    "V1_placeholder_mismatch": 7,
+    "V5_pipe_mismatch": 1
+  },
+  "issues_by_severity": {
+    "CRITICAL": 8,
+    "HIGH": 12,
+    "MEDIUM": 0,
+    "LOW": 6274
+  },
+  "score": 98.8,
+  "worst_keys": [
+    {
+      "key": "scripts.actions_rewards.msg_1",
+      "category": "scripts",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "scripts.manage_tutor.msg_1",
+      "category": "scripts",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "scripts.manage_tutor.msg_2",
+      "category": "scripts",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "server.game.msg_32",
+      "category": "server",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "server.player.msg_11",
+      "category": "server",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "server.spells.msg_3",
+      "category": "server",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "talkaction.online.msg_summary",
+      "category": "talkactions",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "talkaction.online.msg_summary",
+      "category": "talkactions",
+      "type": "V5_pipe_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "event.player.msg1",
+      "category": "events",
+      "type": "script_cyrillic_latin_mix",
+      "severity": "HIGH"
+    },
+    {
+      "key": "scripts.actions_rewards.msg_1",
+      "category": "scripts",
+      "type": "script_cyrillic_latin_mix",
+      "severity": "HIGH"
+    },
+    {
+      "key": "scripts.actions_rewards.msg_2",
+      "category": "scripts",
+      "type": "script_cyrillic_latin_mix",
+      "severity": "HIGH"
+    },
+    {
+      "key": "scripts.icons_functions.msg_1",
+      "category": "scripts",
+      "type": "script_cyrillic_latin_mix",
+      "severity": "HIGH"
+    },
+    {
+      "key": "scripts.manage_kv.msg_1",
+      "category": "scripts",
+      "type": "script_cyrillic_latin_mix",
+      "severity": "HIGH"
+    },
+    {
+      "key": "scripts.manage_tutor.msg_1",
+      "category": "scripts",
+      "type": "script_cyrillic_latin_mix",
+      "severity": "HIGH"
+    },
+    {
+      "key": "scripts.manage_tutor.msg_2",
+      "category": "scripts",
+      "type": "script_cyrillic_latin_mix",
+      "severity": "HIGH"
+    },
+    {
+      "key": "server.game.msg_32",
+      "category": "server",
+      "type": "script_cyrillic_latin_mix",
+      "severity": "HIGH"
+    },
+    {
+      "key": "server.player.msg_11",
+      "category": "server",
+      "type": "script_cyrillic_latin_mix",
+      "severity": "HIGH"
+    },
+    {
+      "key": "server.spells.msg_3",
+      "category": "server",
+      "type": "script_cyrillic_latin_mix",
+      "severity": "HIGH"
+    },
+    {
+      "key": "talkaction.gm.spy.msg_specify_name",
+      "category": "talkactions",
+      "type": "script_cyrillic_latin_mix",
+      "severity": "HIGH"
+    },
+    {
+      "key": "talkaction.online.msg_summary",
+      "category": "talkactions",
+      "type": "script_cyrillic_latin_mix",
+      "severity": "HIGH"
+    }
+  ],
+  "crossref": {
+    "enabled": true,
+    "issues_total": 481,
+    "consistency": 0,
+    "pl_reference": 400,
+    "length_ratio": 81,
+    "auto_fix_applied": 0
+  },
+  "validated_at": "2026-02-13T22:33:42.983872Z"
+}

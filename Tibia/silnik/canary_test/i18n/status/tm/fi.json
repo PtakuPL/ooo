@@ -1,0 +1,74 @@
+{
+  "monster.hunter.name": {
+    "src_hash": "5e409e09f43d85c6e61301149e4f803b",
+    "text": "Hunter",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-12T22:21:39.914407Z"
+  },
+  "npc.example_merchant.name": {
+    "src_hash": "16373b8c3c6c497895786de3804c2e0c",
+    "text": "My name is Marcus. I run this shop.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-12T23:37:53.026020Z"
+  },
+  "npc.a_bearded_woman.greet_msg_1": {
+    "src_hash": "dec88b2ad57c0b13cc1cf44b9711944a",
+    "text": "POIS MINUT TÄÄLTÄ! NYT!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-12T23:38:06.629805Z"
+  },
+  "npc.a_bearded_woman.stdmod_1": {
+    "src_hash": "85b863553a645f3e69472bcbeea15190",
+    "text": "Oikeudenmukaisessa maailmassa olisin suuren laivan kapteeni, ... \\z\n\tNuo merirosvot siellä olisivat nyt kätyriäni, ja me uskaltaisimme meriä ja tulisimme rannikkokaupunkien kauhuksi! ... \\z\n\tKunpa suunnitelmamme olisi toiminut!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-12T23:38:06.631465Z"
+  },
+  "npc.a_bearded_woman.stdmod_2": {
+    "src_hash": "e665aff3c7b262f14bc1bdc6ecab7294",
+    "text": "Kapteeni Kid myi aluksensa ostaakseen turhia tavaroita, kuten noita älyttömän kalliita lukkoja sellin oviin. ... \\z\n\tHän sanoi, että kanootit kestävät jonkin aikaa. ... \\z\n\tSain vaikutelman, että hän ei ollut liian surullinen erottuaan laivasta, koska hänen tiedettiin kärsivän paljon merisairaudesta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-12T23:38:06.632795Z"
+  },
+  "npc.a_bearded_woman.stdmod_3": {
+    "src_hash": "d0300a2639da1cea9ef53f1c6c9289c0",
+    "text": "Olisin ollut paljon parempi kapteeni kuin Kid. Esitin useita kapteeneja lavalla ja olin hyvä! ... \\z\n\tSiellä missä Kid kaipasi miestensä arvostusta, hallitsisin pelolla ja rautaisella nyrkillä!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-12T23:38:06.634166Z"
+  },
+  "npc.a_bearded_woman.stdmod_6": {
+    "src_hash": "8addcda1b472b30e046fd34589b4879f",
+    "text": "Mitä typerimpiä ihmiset ovat, sitä helpompi on huijata heitä. ... \\z\n\tJa mitä köyhempiä he ovat, sitä vähemmän heillä on mahdollisuuksia kostaa. Har Har! ... \\z\n\tJoten varmistan, että pilaan ne, jotka huijaan. Sitten heillä on muuta huolehdittavaa kuin kostaa minulle.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-12T23:38:06.635176Z"
+  },
+  "npc.a_bearded_woman.voice_1": {
+    "src_hash": "58767cda40525ee7cbdee616d85cb646",
+    "text": "Olen MIES! Päästä minut ulos, te humalaiset typerykset!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-12T23:38:06.635653Z"
+  },
+  "npc.a_bearded_woman.voice_2": {
+    "src_hash": "72b86601b93166f02b9c4cd08dfeee5d",
+    "text": "POIS MINUT TÄÄLTÄ!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-12T23:38:06.635965Z"
+  }
+}

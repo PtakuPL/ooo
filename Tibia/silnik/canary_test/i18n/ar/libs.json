@@ -81,6 +81,11 @@
   "lib.vip.msg_inactive": "Your VIP status is currently inactive.",
   "lib.vip.msg_remaining": "You have {time} of VIP time remaining.",
   "lib.vip.msg_unlimited": "You have unlimited VIP status.",
+  "misc.compat.msg_1": "[EN] You are already in a party.",
+  "misc.daily_reward.msg_1": "[EN] One minute of stamina has been refilled.",
+  "misc.daily_reward.msg_2": "[EN] One soul point has been restored.",
+  "misc.functions.msg_1": "[EN] You were kicked by exceding time inside the boss room.",
+  "misc.hireling.msg_1": "[EN] You are not the master of this hireling.",
   "rune.msg_cannot_control_more": "You cannot control more creatures.",
   "rune.msg_sorry_not_possible": "Sorry, not possible."
 }

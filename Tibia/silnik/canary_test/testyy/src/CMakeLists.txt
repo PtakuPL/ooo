@@ -121,24 +121,49 @@ endif()
 if (MSVC)
   # Ensure MSVC treats source files as UTF-8 and can emit larger object files without ICEs
   target_compile_options(${PROJECT_NAME} PUBLIC /utf-8 /bigobj)
-  # Link-Time Code Generation triggers ICEs in some TU; keep it disabled explicitly
-  target_link_options(${PROJECT_NAME} PRIVATE /LTCG:OFF)
   # Prevent Windows.h from defining min/max macros that conflict with std::min/std::max
   target_compile_definitions(${PROJECT_NAME} PRIVATE NOMINMAX)
-  # Workaround for MSVC Internal Compiler Error (ICE) C1001 on complex template code
-  # The ICE occurs in cast.h which is included via stdext.h across all source files.
-  # Since it's a header-only template library, we can't target specific source files.
-  # Using /O1 globally is necessary as the ICE triggers during template instantiation
-  # across multiple TUs. /O1 still provides optimizations (for size) while being safer.
-  # Remove default /O2 from Release flags before adding /O1 to avoid D9025 warning
-  string(REPLACE "/O2" "" CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE}")
-  string(REPLACE "/O2" "" CMAKE_CXX_FLAGS_RELWITHDEBINFO "${CMAKE_CXX_FLAGS_RELWITHDEBINFO}")
-  set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE}" CACHE STRING "" FORCE)
-  set(CMAKE_CXX_FLAGS_RELWITHDEBINFO "${CMAKE_CXX_FLAGS_RELWITHDEBINFO}" CACHE STRING "" FORCE)
-  target_compile_options(${PROJECT_NAME} PRIVATE
-    $<$<CONFIG:Release>:/O1>  # Use /O1 (minimize size) instead of /O2 (maximize speed) for Release
-    $<$<CONFIG:RelWithDebInfo>:/O1>
-  )
+
+  # The following workarounds apply ONLY to Microsoft's cl.exe compiler.
+  # Clang-CL also sets MSVC=TRUE but doesn't need (and rejects) these flags.
+  if(CMAKE_CXX_COMPILER_ID STREQUAL "MSVC")
+    # Workaround for MSVC Internal Compiler Error (ICE) C1001 on complex template code
+    string(REPLACE "/O2" "" CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE}")
+    string(REPLACE "/O2" "" CMAKE_CXX_FLAGS_RELWITHDEBINFO "${CMAKE_CXX_FLAGS_RELWITHDEBINFO}")
+    set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE}" CACHE STRING "" FORCE)
+    set(CMAKE_CXX_FLAGS_RELWITHDEBINFO "${CMAKE_CXX_FLAGS_RELWITHDEBINFO}" CACHE STRING "" FORCE)
+    target_compile_options(${PROJECT_NAME} PRIVATE
+      $<$<CONFIG:Release>:/O1>
+      $<$<CONFIG:RelWithDebInfo>:/O1>
+    )
+    set_source_files_properties(
+      framework/luaengine/luavaluecasts.cpp
+      framework/otml/otmlparser.cpp
+      framework/ui/uiwidgetbasestyle.cpp
+      PROPERTIES COMPILE_FLAGS "/Od /d2SSAOptimizer-" SKIP_PRECOMPILE_HEADERS ON
+    )
+    set_target_properties(${PROJECT_NAME} PROPERTIES
+      INTERPROCEDURAL_OPTIMIZATION FALSE
+      INTERPROCEDURAL_OPTIMIZATION_RELEASE FALSE
+      INTERPROCEDURAL_OPTIMIZATION_RELWITHDEBINFO FALSE
+    )
+    foreach(_cflag_var
+        CMAKE_CXX_FLAGS CMAKE_CXX_FLAGS_RELEASE CMAKE_CXX_FLAGS_RELWITHDEBINFO CMAKE_CXX_FLAGS_MINSIZEREL
+        CMAKE_C_FLAGS CMAKE_C_FLAGS_RELEASE CMAKE_C_FLAGS_RELWITHDEBINFO CMAKE_C_FLAGS_MINSIZEREL)
+      string(REGEX REPLACE "(^|[ ;])/GL([ ;]|$)" "\\2" ${_cflag_var} "${${_cflag_var}}")
+      set(${_cflag_var} "${${_cflag_var}}" CACHE STRING "" FORCE)
+    endforeach()
+    foreach(_flag_var
+        CMAKE_EXE_LINKER_FLAGS CMAKE_EXE_LINKER_FLAGS_RELEASE CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO CMAKE_EXE_LINKER_FLAGS_MINSIZEREL
+        CMAKE_SHARED_LINKER_FLAGS CMAKE_SHARED_LINKER_FLAGS_RELEASE CMAKE_SHARED_LINKER_FLAGS_RELWITHDEBINFO CMAKE_SHARED_LINKER_FLAGS_MINSIZEREL
+        CMAKE_MODULE_LINKER_FLAGS CMAKE_MODULE_LINKER_FLAGS_RELEASE CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO CMAKE_MODULE_LINKER_FLAGS_MINSIZEREL
+        CMAKE_STATIC_LINKER_FLAGS CMAKE_STATIC_LINKER_FLAGS_RELEASE CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO CMAKE_STATIC_LINKER_FLAGS_MINSIZEREL)
+      string(REGEX REPLACE "(^|[ ;])/LTCG(:OFF)?([ ;]|$)" "\\3" ${_flag_var} "${${_flag_var}}")
+      set(${_flag_var} "${${_flag_var}}" CACHE STRING "" FORCE)
+    endforeach()
+    target_link_options(${PROJECT_NAME} PRIVATE /LTCG:OFF)
+    target_compile_options(${PROJECT_NAME} PRIVATE /GL-)
+  endif() # CMAKE_CXX_COMPILER_ID STREQUAL "MSVC"
 endif()
 
 if(THREADS_HAVE_PTHREAD_ARG)
@@ -208,13 +233,18 @@ add_definitions(${FRAMEWORK_DEFINITIONS})
 add_definitions(-D"VERSION=${VERSION}")
 
 # === Build options ===
+# Use target_compile_definitions instead of add_definitions for string defines.
+# The old add_definitions(-D"BUILD_TYPE=\\\"...\\\") escaping produces a bare $
+# in the Ninja build file with CMake 3.22.1 (Android SDK), causing:
+#   ninja: error: build.ninja:NNN: bad $-escape
 message(STATUS "Build type: " ${CMAKE_BUILD_TYPE})
-add_definitions(-D"BUILD_TYPE=\\\"${CMAKE_BUILD_TYPE}\\\"")
 message(STATUS "Build commit: ${BUILD_COMMIT}")
-add_definitions(-D"BUILD_COMMIT=\\\"${BUILD_COMMIT}\\\"")
 message(STATUS "Build revision: ${BUILD_REVISION}")
-add_definitions(-D"BUILD_REVISION=\\\"${BUILD_REVISION}\\\"")
-
+target_compile_definitions(${PROJECT_NAME} PRIVATE
+    "BUILD_TYPE=\"${CMAKE_BUILD_TYPE}\""
+    "BUILD_COMMIT=\"${BUILD_COMMIT}\""
+    "BUILD_REVISION=\"${BUILD_REVISION}\""
+)
 # *****************************************************************************
 # Packages / Libs
 # *****************************************************************************
@@ -579,7 +609,7 @@ else()
       set(LUA_LIBRARY ${LUA_LIBRARIES})
     endif()
     # Set browser include dir but exclude lua51 since we're using vcpkg's Lua
-    set(BROWSER_INCLUDE_DIR ${BROWSER_INCLUDE_DIR} ${CMAKE_SOURCE_DIR}/browser/include/bitlib)
+    set(BROWSER_INCLUDE_DIR ${BROWSER_INCLUDE_DIR} ${CMAKE_SOURCE_DIR}/browser/include)
   endif()
 endif()
 
@@ -781,8 +811,10 @@ endif()
 
 target_sources(${PROJECT_NAME} PRIVATE ${SOURCE_FILES})
 
-# LTO (Link-Time Optimization) - Only for GCC/Clang, MSVC uses /LTCG which is handled separately
-if(NOT MSVC)
+# LTO (Link-Time Optimization) - Only for GCC/Clang on native platforms.
+# MSVC uses /LTCG which is handled separately.
+# Emscripten system libs are compiled without LTO; mixing causes wasm-ld errors.
+if(NOT MSVC AND NOT CMAKE_SYSTEM_NAME STREQUAL "Emscripten" AND NOT CMAKE_SYSTEM_NAME STREQUAL "Android")
   target_link_options(${PROJECT_NAME} PUBLIC -flto=auto)
 endif()
 
@@ -799,7 +831,11 @@ if(MSVC)
           WINVER=0x0A00
   )
 
-  target_compile_options(${PROJECT_NAME} PUBLIC /MP /FS /Zf /EHsc /bigobj)
+  target_compile_options(${PROJECT_NAME} PUBLIC /MP /EHsc /bigobj)
+  # /FS and /Zf improve PDB generation speed but are MSVC-only (clang-cl rejects /Zf)
+  if(NOT CMAKE_CXX_COMPILER_ID STREQUAL "Clang")
+    target_compile_options(${PROJECT_NAME} PUBLIC /FS /Zf)
+  endif()
 
   if(CMAKE_BUILD_TYPE STREQUAL "Debug")
     string(REPLACE "/Zi" "/Z7" CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG}")
@@ -1109,8 +1145,32 @@ if(WIN32)
 endif(WIN32)
 
 if(ANDROID)
-  set(CMAKE_SHARED_LINKER_FLAGS "-fuse-ld=lld")
-  set(CMAKE_EXE_LINKER_FLAGS "-fuse-ld=lld")
+  # NDK r23c+ defaults to lld; only set it when not already the default to avoid
+  # issues with the linker not being found on CI paths.
+  # Use APPEND so we don't overwrite other flags (which can cause $-escape errors
+  # in the generated build.ninja file due to incomplete flag strings).
+  if(CMAKE_ANDROID_NDK_VERSION VERSION_LESS "23")
+    string(APPEND CMAKE_SHARED_LINKER_FLAGS " -fuse-ld=lld")
+    string(APPEND CMAKE_EXE_LINKER_FLAGS " -fuse-ld=lld")
+  endif()
+  # Ninja requires literal '$' to be escaped as '$$'. Some toolchains inject
+  # '$' into flags (e.g. $ORIGIN or generator expressions), which breaks the
+  # generated build.ninja. Sanitize known flag variables for Android+Ninja.
+  if(CMAKE_GENERATOR MATCHES "Ninja")
+    foreach(_flag_var
+        CMAKE_C_FLAGS
+        CMAKE_CXX_FLAGS
+        CMAKE_EXE_LINKER_FLAGS
+        CMAKE_SHARED_LINKER_FLAGS
+        CMAKE_MODULE_LINKER_FLAGS)
+      if(DEFINED ${_flag_var} AND NOT "${${_flag_var}}" STREQUAL "")
+        string(REPLACE "$" "$$" _flag_escaped "${${_flag_var}}")
+        if(NOT _flag_escaped STREQUAL "${${_flag_var}}")
+          set(${_flag_var} "${_flag_escaped}" CACHE STRING "" FORCE)
+        endif()
+      endif()
+    endforeach()
+  endif()
 endif()
 
 # *****************************************************************************

@@ -1,0 +1,122 @@
+{
+  "monster.hunter.name": {
+    "src_hash": "5e409e09f43d85c6e61301149e4f803b",
+    "text": "Hunter",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-12T22:19:56.805501Z"
+  },
+  "monster.sorcerer_familiar.name": {
+    "src_hash": "fe695fb861f4a78482830bcb8e24bee3",
+    "text": "Sorcerer familiar",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-12T22:19:56.806393Z"
+  },
+  "monster.knight_familiar.name": {
+    "src_hash": "59bb8dfecc548a5d097b6f0b0d0149e4",
+    "text": "Knight familiar",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-12T22:19:56.807063Z"
+  },
+  "item.21351.name": {
+    "src_hash": "03944c28dd1d99648eda34c26d3de4ac",
+    "text": "Light Stone Shower Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:32:34.981700Z"
+  },
+  "item.21352.name": {
+    "src_hash": "31cd2c4b8700d3fba06777b6f804dbdd",
+    "text": "Lightest Missile Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:32:34.983078Z"
+  },
+  "item.21432.name": {
+    "src_hash": "31cd2c4b8700d3fba06777b6f804dbdd",
+    "text": "Lightest Missile Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:32:34.986067Z"
+  },
+  "item.21434.name": {
+    "src_hash": "03944c28dd1d99648eda34c26d3de4ac",
+    "text": "Light Stone Shower Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:32:34.987645Z"
+  },
+  "item.24966.name": {
+    "src_hash": "7c7004d4846601f4cc710309ded176ef",
+    "text": "Forbidden Fruit",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:32:35.018792Z"
+  },
+  "item.29276.name": {
+    "src_hash": "2f00d19e4fb2d9e1c321035e9ad9a8d2",
+    "text": "Dream Catcher",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:32:35.054626Z"
+  },
+  "item.30215.name": {
+    "src_hash": "7bdff76536f12a7c5ffde207e72cfe3a",
+    "text": "ice",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:32:35.064441Z"
+  },
+  "item.30218.name": {
+    "src_hash": "7bdff76536f12a7c5ffde207e72cfe3a",
+    "text": "ice",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:32:35.065277Z"
+  },
+  "item.30273.name": {
+    "src_hash": "7bdff76536f12a7c5ffde207e72cfe3a",
+    "text": "ice",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:32:35.066856Z"
+  },
+  "item.3051.name": {
+    "src_hash": "c193d863e3cfa9eb7c10c24bc406c615",
+    "text": "energy ring",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:32:35.068759Z"
+  },
+  "item.3088.name": {
+    "src_hash": "c193d863e3cfa9eb7c10c24bc406c615",
+    "text": "energy ring",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:32:35.071330Z"
+  },
+  "item.3147.name": {
+    "src_hash": "967513bc0728d5d1211f01974ab4dee5",
+    "text": "Blank Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:32:35.079137Z"
+  }
+}

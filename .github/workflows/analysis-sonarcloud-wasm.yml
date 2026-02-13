@@ -32,6 +32,13 @@ env:
   VCPKG_BUILD_TYPE: release
   VCPKG_DEFAULT_TRIPLET: wasm32-emscripten
   VCPKG_DEFAULT_HOST_TRIPLET: x64-linux
+  VCPKG_OVERLAY_PORTS: ${{ github.workspace }}/Tibia/silnik/canary_test/testyy/browser/overlay-ports
+  # NOTE: Do NOT set VCPKG_C_FLAGS / VCPKG_CXX_FLAGS here — they apply to ALL
+  # triplets (including x64-linux host) and GCC does not understand -matomics.
+  # Emscripten-specific flags are set in browser/triplets/wasm32-emscripten.cmake.
+  # For non-cmake vcpkg ports (e.g. OpenSSL), use EMCC_CFLAGS which only affects
+  # the emcc compiler, not the host GCC.
+  EMCC_CFLAGS: -pthread -matomics -mbulk-memory
 
 jobs:
   sonarcloud-wasm:
@@ -81,7 +88,7 @@ jobs:
             ${{ github.workspace }}/vcpkg/installed
             ${{ github.workspace }}/vcpkg/buildtrees
             ${{ github.workspace }}/vcpkg/downloads
-          key: vcpkg-sonar-wasm32-emscripten-${{ hashFiles('Tibia/silnik/canary_test/testyy/vcpkg.json') }}
+          key: vcpkg-sonar-wasm32-emscripten-${{ hashFiles('Tibia/silnik/canary_test/testyy/vcpkg.json', 'Tibia/silnik/canary_test/testyy/browser/overlay-ports/**', 'Tibia/silnik/canary_test/testyy/browser/triplets/**') }}
           restore-keys: |
             vcpkg-sonar-wasm32-emscripten-
 
@@ -120,12 +127,23 @@ jobs:
                 -DCMAKE_TOOLCHAIN_FILE="$VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake" \
                 -DVCPKG_CHAINLOAD_TOOLCHAIN_FILE="$EMSDK/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake" \
                 -DVCPKG_TARGET_TRIPLET=wasm32-emscripten \
+                -DVCPKG_OVERLAY_TRIPLETS="${{ github.workspace }}/Tibia/silnik/canary_test/testyy/browser/triplets" \
                 -DVCPKG_OVERLAY_PORTS="${{ github.workspace }}/Tibia/silnik/canary_test/testyy/browser/overlay-ports" \
                 -DSPEED_UP_BUILD_UNITY=OFF \
                 -DOTC_ENABLE_TTF=OFF \
                 -DOTC_ENABLE_HARFBUZZ=OFF \
                 -DOTC_ENABLE_FRIBIDI=OFF \
                 -S . -B build
+
+      # SonarCloud CFamily analyzer does not recognise Emscripten's em++ wrapper.
+      # Replace em++ → clang++ in compile_commands.json so the analyzer can parse
+      # the compilation units.  em++ is a thin wrapper around clang++ so include
+      # paths and flags are compatible for static analysis purposes.
+      - name: Patch compile_commands.json for SonarCloud
+        run: |
+          sed -i 's|/em++"|/clang++"|g; s|/emcc"|/clang"|g' build/compile_commands.json
+          echo "Patched compile_commands.json — first entry:"
+          head -20 build/compile_commands.json
 
       - name: Run PR sonar-scanner
         if: ${{ (github.event_name == 'pull_request' || github.event_name == 'pull_request_target') && env.SONAR_TOKEN != '' }}

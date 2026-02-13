@@ -875,5 +875,7 @@
   "cpp.weapon.distance": "distance",
   "cpp.weapon.missile": "missile",
   "cpp.weapon.sword": "sword",
-  "cpp.weapon.wand": "wand"
+  "cpp.weapon.wand": "wand",
+  "cpp.zone.str1": "Area(from: {}, to: {})",
+  "cpp.account.str1": "REMOVE Coins"
 }

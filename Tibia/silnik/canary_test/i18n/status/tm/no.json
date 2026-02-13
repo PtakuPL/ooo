@@ -1,0 +1,74 @@
+{
+  "monster.hunter.name": {
+    "src_hash": "5e409e09f43d85c6e61301149e4f803b",
+    "text": "Hunter",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-12T22:21:31.540744Z"
+  },
+  "npc.example_merchant.name": {
+    "src_hash": "16373b8c3c6c497895786de3804c2e0c",
+    "text": "My name is Marcus. I run this shop.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-12T23:37:09.845441Z"
+  },
+  "npc.a_bearded_woman.greet_msg_1": {
+    "src_hash": "dec88b2ad57c0b13cc1cf44b9711944a",
+    "text": "FÅ MEG UT HERFRA! NÅ!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-12T23:37:21.581704Z"
+  },
+  "npc.a_bearded_woman.stdmod_1": {
+    "src_hash": "85b863553a645f3e69472bcbeea15190",
+    "text": "I en rettferdig verden ville jeg vært kaptein på et storslått skip, ... \\z\n\tDisse piratene der ute ville nå være mine undersåtter, og vi ville trosse havet og bli kystbyenes terror! ... \\z\n\tHvis bare planen vår hadde fungert!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-12T23:37:21.584028Z"
+  },
+  "npc.a_bearded_woman.stdmod_2": {
+    "src_hash": "e665aff3c7b262f14bc1bdc6ecab7294",
+    "text": "Kaptein Kid solgte skipet sitt for å kjøpe meningsløse ting som de vanvittig dyre låsene til celledørene. ... \\z\n\tHan sa at kanoene ville klare seg en stund. ... \\z\n\tJeg fikk inntrykk av at han ikke var altfor trist over å skille seg fra skipet fordi han var kjent for å lide mye av sjøsyke.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-12T23:37:21.585517Z"
+  },
+  "npc.a_bearded_woman.stdmod_3": {
+    "src_hash": "d0300a2639da1cea9ef53f1c6c9289c0",
+    "text": "Jeg ville vært en mye bedre kaptein enn Kid var. Jeg spilte flere kapteiner på scenen og jeg var god! ... \\z\n\tDer Kid lengtet etter å sette pris på mennene sine, ville jeg herske med frykt og med jernhånd!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-12T23:37:21.587195Z"
+  },
+  "npc.a_bearded_woman.stdmod_6": {
+    "src_hash": "8addcda1b472b30e046fd34589b4879f",
+    "text": "Jo dummere folk er, jo lettere er det å lure dem. ... \\z\n\tOg jo fattigere de er, jo mindre midler har de for å ta hevn. Har Har! ... \\z\n\tSå jeg sørger for at jeg ødelegger de jeg svindler. Da har de andre ting å bekymre seg for enn å hevne seg på meg.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-12T23:37:21.588741Z"
+  },
+  "npc.a_bearded_woman.voice_1": {
+    "src_hash": "58767cda40525ee7cbdee616d85cb646",
+    "text": "Jeg er en MANN! Få meg ut, dere fulle idioter!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-12T23:37:21.589601Z"
+  },
+  "npc.a_bearded_woman.voice_2": {
+    "src_hash": "72b86601b93166f02b9c4cd08dfeee5d",
+    "text": "FÅ MEG UT HERFRA!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-12T23:37:21.590224Z"
+  }
+}

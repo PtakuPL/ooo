@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-02-13T21:47:44.388544Z",
+  "overall": "WARNING",
+  "issues_count": 0,
+  "warnings_count": 2,
+  "ok_count": 5,
+  "issues": [],
+  "warnings": [
+    "BLACKLISTED_TARGET: es:items.json ma 11 guard_fail w blackliście",
+    "NO_PID_FILE: brak .worker_simple.pid"
+  ],
+  "ok": [
+    "heartbeat_fresh (140s)",
+    "status_md_fresh (130s)",
+    "guard_report_fresh (53s)",
+    "dispatch_fresh (46s)",
+    "guardian_healthy"
+  ]
+}

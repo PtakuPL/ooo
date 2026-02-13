@@ -1,0 +1,154 @@
+{
+  "lang": "ru",
+  "script_group": "cyrillic",
+  "total_keys": 53586,
+  "translated": 31748,
+  "identical_to_en": 24360,
+  "placeholder_keys": 19683,
+  "coverage_pct": 59.2,
+  "issues_total": 7425,
+  "issues_by_type": {
+    "V3_empty": 6274,
+    "script_cyrillic_latin_mix": 1066,
+    "V1_placeholder_mismatch": 84,
+    "V5_pipe_mismatch": 1
+  },
+  "issues_by_severity": {
+    "CRITICAL": 85,
+    "HIGH": 1066,
+    "MEDIUM": 0,
+    "LOW": 6274
+  },
+  "score": 93.2,
+  "worst_keys": [
+    {
+      "key": "html.statistics.html.text2",
+      "category": "html",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "html.statistics.html.text3",
+      "category": "html",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "html.forum.add_board.html.text2",
+      "category": "html",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "html.admin.news.form.html.text2",
+      "category": "html",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "html.admin.news.form.html.text3",
+      "category": "html",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "html.admin.news.form.html.text5",
+      "category": "html",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "html.highscores.html.text1",
+      "category": "html",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "html.highscores.html.text3",
+      "category": "html",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "html.highscores.html.text4",
+      "category": "html",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "html.highscores.html.text5",
+      "category": "html",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "html.monster.html.text1",
+      "category": "html",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "html.monster.html.text2",
+      "category": "html",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "html.monster.html.text3",
+      "category": "html",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "html.monster.html.text5",
+      "category": "html",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "html.account.characters.change_sex.html.text2",
+      "category": "html",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "html.commands.form.html.text2",
+      "category": "html",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "html.monsters.html.text1",
+      "category": "html",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "html.monsters.html.text2",
+      "category": "html",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "html.monsters.html.text3",
+      "category": "html",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "html.monsters.html.text4",
+      "category": "html",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    }
+  ],
+  "crossref": {
+    "enabled": true,
+    "issues_total": 483,
+    "consistency": 2,
+    "pl_reference": 400,
+    "length_ratio": 81,
+    "auto_fix_applied": 0
+  },
+  "validated_at": "2026-02-13T22:33:54.077423Z"
+}

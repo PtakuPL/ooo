@@ -1,0 +1,58 @@
+{
+  "spell.msg_cannot_cast": {
+    "src_hash": "2e82fa5082130470b26e6e1db5f8d366",
+    "text": "Siz bu sehrni qila olmaysiz",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T00:12:43.459261Z"
+  },
+  "spell.msg_need_learn": {
+    "src_hash": "24c37be7de2773e7687c1bb0b58d66a9",
+    "text": "Avval bu sehrni o'rganishingiz kerak",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T00:12:43.459731Z"
+  },
+  "spell.msg_no_party_in_range": {
+    "src_hash": "fca01b330772f55532e24d9cf2108105",
+    "text": "Atrofda partiya a'zolari yo'q.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T00:12:43.460147Z"
+  },
+  "spell.msg_no_creatures_around": {
+    "src_hash": "e8ab5eef836b9bcbfe91c55f008b6f15",
+    "text": "Atrofda jonzotlar yo'q",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T00:12:43.460500Z"
+  },
+  "spell.msg_cannot_summon_more": {
+    "src_hash": "1718b9c7c3db387960dae22e578e4df5",
+    "text": "Siz ko'proq mavjudotlarni chaqira olmaysiz.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T00:12:43.460890Z"
+  },
+  "spell.msg_no_ranged_monsters": {
+    "src_hash": "728afddc1a77526ad5ea881c638312eb",
+    "text": "Uzoq masofali yirtqich hayvonlar yo'q.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T00:28:07.308484Z"
+  },
+  "spell.msg_no_self_cast": {
+    "src_hash": "4f940074a28c2a7dbdb25c1987e4dfd2",
+    "text": "Siz bu sehrni o'zingizga qila olmaysiz.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-13T00:28:07.309529Z"
+  }
+}

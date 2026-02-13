@@ -1,0 +1,5212 @@
+{
+  "lang": "es",
+  "coverage_pct": 97.1,
+  "crossref_enabled": true,
+  "auto_fix_enabled": false,
+  "auto_fix_limit": 30,
+  "checked_at": "2026-02-13T22:33:45.519994Z",
+  "issues_total": 540,
+  "issues_by_type": {
+    "consistency_in_language": 53,
+    "pl_reference_missing_translation": 400,
+    "length_ratio_crosscheck": 87
+  },
+  "consistency_issues": [
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Butterfly",
+      "variants": [
+        "mariposa",
+        "mariposa amarilla",
+        "mariposa azul",
+        "mariposa púrpura",
+        "mariposa roja",
+        "mariposa rosa"
+      ],
+      "variants_count": 6,
+      "examples": [
+        "monsters:monster.red_butterfly.name",
+        "monsters:monster.blue_butterfly.name",
+        "monsters:monster.pink_butterfly.name",
+        "monsters:monster.purple_butterfly.name",
+        "monsters:monster.yellow_butterfly.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Orc Warlord",
+      "variants": [
+        "armadura de orco",
+        "casco de orco",
+        "escudo de orco",
+        "señor de la guerra orco"
+      ],
+      "variants_count": 4,
+      "examples": [
+        "monsters:monster.orc_warlord.name",
+        "monsters:monster.orc_shield.name",
+        "monsters:monster.orc_armor.name",
+        "monsters:monster.orc_helmet.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Feroxa",
+      "variants": [
+        "Feroxa2",
+        "Feroxa3",
+        "Feroxa4",
+        "Feroxa5"
+      ],
+      "variants_count": 4,
+      "examples": [
+        "monsters:monster.feroxa2.name",
+        "monsters:monster.feroxa4.name",
+        "monsters:monster.feroxa3.name",
+        "monsters:monster.feroxa5.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Spyrat",
+      "variants": [
+        "Spyrat East",
+        "Spyrat North",
+        "Spyrat South",
+        "Spyrat West"
+      ],
+      "variants_count": 4,
+      "examples": [
+        "monsters:monster.spyrat_facing_west.name",
+        "monsters:monster.spyrat_facing_east.name",
+        "monsters:monster.spyrat_facing_north.name",
+        "monsters:monster.spyrat_facing_south.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Horse",
+      "variants": [
+        "caballo",
+        "caballo gris",
+        "caballo marrón"
+      ],
+      "variants_count": 3,
+      "examples": [
+        "monsters:monster.horse.name",
+        "monsters:monster.grey_horse.name",
+        "monsters:monster.brown_horse.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Nomad",
+      "variants": [
+        "blue de nómada",
+        "female de nómada",
+        "nómada"
+      ],
+      "variants_count": 3,
+      "examples": [
+        "monsters:monster.nomad.name",
+        "monsters:monster.nomad_blue.name",
+        "monsters:monster.nomad_female.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "You have an eye for suspicious places and love to read other people's diaries, especially those with vampire stories in it. You're also a dedicated token collector and explorer. Respect!",
+      "variants": [
+        "Tienes ojo para los lugares sospechosos y te encanta leer los diarios ajenos, especialmente los que tienen historias de vampiros. También eres un dedicado coleccionista de tokens y explorador. ¡Respeto!",
+        "Tienes ojo para lugares sospechosos y te encanta leer los diarios de otros, especialmente los que tienen historias de vampiros. También eres un dedicado coleccionista de fichas y explorador. ¡Respeto!"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "achievements:achievement.1.description",
+        "client:client.utils.text2"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Lalalala... you now know the cult's hymn sung in Liberty Bay by heart. Not that hard, considering that it mainly consists of two notes and repetitive lyrics.",
+      "variants": [
+        "Lalalala... ya te sabes de memoria el himno del culto que se canta en Liberty Bay. No es tan difícil, considerando que se compone principalmente de dos notas y letras repetitivas.",
+        "Lalalala... you Now kNow the cult's hymn sung in Liberty Bay by heart. Not that hard, considering that it mainly consists of two Notes and repetitive lyrics."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "achievements:achievement.2.description",
+        "client:client.utils.text4"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Lord of the Elements",
+      "variants": [
+        "Señor de los Elementos",
+        "señor de elements"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "achievements:achievement.15.name",
+        "monsters:monster.lord_of_the_elements.name",
+        "monsters:monster.lord_of_the_elements.desc"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Wild Warrior",
+      "variants": [
+        "Guerrero Salvaje",
+        "guerrero salvaje"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "achievements:achievement.164.name",
+        "monsters:monster.wild_warrior.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Warlock",
+      "variants": [
+        "Brujo",
+        "brujo"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "achievements:achievement.170.name",
+        "monsters:monster.warlock.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Fire Devil",
+      "variants": [
+        "Diablo de Fuego",
+        "diablo de fuego"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "achievements:achievement.186.name",
+        "monsters:monster.fire_devil.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Gravedigger",
+      "variants": [
+        "Sepulturero",
+        "sepulturero"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "achievements:achievement.326.name",
+        "monsters:monster.gravedigger.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Knowledge Raider",
+      "variants": [
+        "Asaltante del Conocimiento",
+        "KNowledge Raider"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "achievements:achievement.524.name",
+        "monsters:monster.knowledge_raider.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "You found ",
+      "variants": [
+        "Encontraste ",
+        "You found"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "actions:actions.random_items.say_1",
+        "quests:quests.actions_rewards.msg_1",
+        "quests:quests.actions_rewards.msg_2",
+        "scripts:scripts.action_tortoise_egg_nargor.msg_1",
+        "scripts:scripts.actions_treasure_chest.msg_1"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "tricks to torment other beings. The legend goes that everybody that dares to disturb them is put to death or faces a fate even worse than death. But if you manage to step into their dancing circle at the height of the ceremony, the witches have to fulfil you a wish.",
+      "variants": [
+        "trucos para atormentar a otros seres. La leyenda cuenta que cualquiera que se atreva a molestarlos es condenado a muerte o se enfrenta a un destino incluso peor que la muerte. Pero si logras entrar en su círculo de baile en el momento culminante de la ceremonia, las brujas tendrán que cumplirte un deseo.",
+        "trucos para atormentar a otros seres. La leyenda cuenta que cualquiera que se atreva a molestarlos es condenado a muerte o se enfrenta a un destino incluso peor que la muerte. Pero si logras entrar en su círculo de baile en el momento álgido de la ceremonia, las brujas tendrán que cumplirte un deseo."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "books:book.otbm.tricks_to_torment_other_beings",
+        "books:book.otbm.tricks_to_torment_other_beings_7cf6f56f"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Magic Level",
+      "variants": [
+        "Nivel Mágico",
+        "Nivel de Magia"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "client:client.statsbar.text1",
+        "cpp:cpp.game.highscore_category_magic_level",
+        "cpp:cpp.inspect.magic_level",
+        "html:web.tpl.spells.th_17",
+        "otclient_modules:otclient_modules.game_healthcircle.tr_17"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "{0} healed {1} for {2} hitpoint.",
+      "variants": [
+        "{0} curó a {1} por {2} punto de vida.",
+        "{0} se curó a {1} por {2} punto de vida."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "cpp:cpp.combat.heal_spectator_other_one",
+        "cpp:cpp.combat.heal_spectator_self_one"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "{0} healed {1} for {2} hitpoints.",
+      "variants": [
+        "{0} curó a {1} por {2} puntos de vida.",
+        "{0} se curó a {1} por {2} puntos de vida."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "cpp:cpp.combat.heal_spectator_other_other",
+        "cpp:cpp.combat.heal_spectator_self_other"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "{0} restored {1} for {2} mana.",
+      "variants": [
+        "{0} restauró a {1} por {2} maná.",
+        "{0} se restauró a {1} por {2} maná."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "cpp:cpp.combat.restore_spectator_other",
+        "cpp:cpp.combat.restore_spectator_self"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "unknown",
+      "variants": [
+        "desconocido",
+        "unkNown"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "cpp:cpp.combat.unknown",
+        "cpp:cpp.look.unknown",
+        "cpp:cpp.protocol.unknown_label",
+        "cpp:cpp.skill.unknown",
+        "items:item.31127.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "You do not have enough level.",
+      "variants": [
+        "No tienes suficiente nivel.",
+        "Solo los dignos pueden pasar."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "cpp:cpp.returnvalue.not_enough_level",
+        "quests:quests.actions_doors.msg_6",
+        "quests:quests.the_secret_library_quest.you_do_not_have_enough_level",
+        "scripts:scripts.actions_doors.msg_1"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Pinata Dragon",
+      "variants": [
+        "dragón de Pinata",
+        "dragón de pinata"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "items:item.25062.name",
+        "monsters:monster.pinata_dragon.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "The door seems to be sealed against unwanted intruders.",
+      "variants": [
+        "La puerta parece estar sellada contra intrusos no deseados.",
+        "The door parece ser sealed against unwanted intruders."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "items:item.5745.desc",
+        "items:item.5746.desc",
+        "items:item.5748.desc",
+        "items:item.5749.desc",
+        "quests:quests.actions_doors.msg_1"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "You must wait. Someone is challenging ",
+      "variants": [
+        "Debes esperar. Alguien está desafiando a",
+        "Debes esperar. Alguien está desafiando a "
+      ],
+      "variants_count": 2,
+      "examples": [
+        "libs:lib.functions.msg1",
+        "libs:lib.functions.msg2",
+        "quests:quests.movements_stepin.msg_1",
+        "scripts:scripts.movements_stepin.msg_1"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Giant Spider",
+      "variants": [
+        "araña gigante",
+        "gigante araña wyda"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "monsters:monster.old_giant_spider.name",
+        "monsters:monster.giant_spider_wyda.name",
+        "monsters:monster.giant_spider.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Orc",
+      "variants": [
+        "orco",
+        "sambackpack de orco"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "monsters:monster.orc.name",
+        "monsters:monster.orc_sambackpack.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Eliz The Unyielding",
+      "variants": [
+        "eliz unyielding",
+        "eliz unyielding stop"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "monsters:monster.eliz_the_unyielding_stop.name",
+        "monsters:monster.eliz_the_unyielding_stop.desc"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "The Sinister Hermit",
+      "variants": [
+        "sinister ermitaño",
+        "sinister ermitaño sucio"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "monsters:monster.the_sinister_hermit_dirty.name",
+        "monsters:monster.the_sinister_hermit_dirty.desc",
+        "monsters:monster.the_sinister_hermit_clean.name",
+        "monsters:monster.the_sinister_hermit_clean.desc"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Dorokoll The Mystic",
+      "variants": [
+        "dorokoll místico",
+        "dorokoll místico stop"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "monsters:monster.dorokoll_the_mystic_stop.name",
+        "monsters:monster.dorokoll_the_mystic_stop.desc"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Mezlon The Defiler",
+      "variants": [
+        "mezlon defiler",
+        "mezlon defiler stop"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "monsters:monster.mezlon_the_defiler.desc",
+        "monsters:monster.mezlon_the_defiler_stop.name",
+        "monsters:monster.mezlon_the_defiler_stop.desc"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Eshtaba The Conjurer",
+      "variants": [
+        "eshtaba conjurador",
+        "eshtaba conjurador stop"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "monsters:monster.eshtaba_the_conjurer_stop.name",
+        "monsters:monster.eshtaba_the_conjurer_stop.desc"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "The Sandking",
+      "variants": [
+        "sandking",
+        "sandking falso"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "monsters:monster.the_sandking.name",
+        "monsters:monster.the_sandking.desc",
+        "monsters:monster.the_sandking_fake.name",
+        "monsters:monster.the_sandking_fake.desc"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Zamulosh",
+      "variants": [
+        "Zamulosh2",
+        "Zamulosh3"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "monsters:monster.zamulosh3.name",
+        "monsters:monster.zamulosh2.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Cosmic Energy Prism A",
+      "variants": [
+        "cosmic energía prisma",
+        "cosmic energía prisma invu"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "monsters:monster.cosmic_energy_prism_a_invu.name",
+        "monsters:monster.cosmic_energy_prism_a.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Cosmic Energy Prism B",
+      "variants": [
+        "cosmic energía prisma b",
+        "cosmic energía prisma b invu"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "monsters:monster.cosmic_energy_prism_b.name",
+        "monsters:monster.cosmic_energy_prism_b_invu.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Cosmic Energy Prism C",
+      "variants": [
+        "cosmic energía prisma c",
+        "cosmic energía prisma c invu"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "monsters:monster.cosmic_energy_prism_c.name",
+        "monsters:monster.cosmic_energy_prism_c_invu.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Cosmic Energy Prism D",
+      "variants": [
+        "cosmic energía prisma d",
+        "cosmic energía prisma d invu"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "monsters:monster.cosmic_energy_prism_d_invu.name",
+        "monsters:monster.cosmic_energy_prism_d.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "An Observer Eye",
+      "variants": [
+        "un observer ojo (imune)",
+        "un ojo de observer"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "monsters:monster.an_observer_eye_(imune).name",
+        "monsters:monster.an_observer_eye.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Rewar The Bloody",
+      "variants": [
+        "rewar bloody",
+        "rewar bloody inv"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "monsters:monster.rewar_the_bloody.name",
+        "monsters:monster.rewar_the_bloody_inv.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Spidris Elite",
+      "variants": [
+        "spidris élite",
+        "spidris élite summon"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "monsters:monster.spidris_elite.name",
+        "monsters:monster.spidris_elitesumom.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Hahahaha! ...",
+      "variants": [
+        "",
+        "¡Jajajaja! ..."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.alesar.multi_18",
+        "npc:npc.baa_leal.multi_13",
+        "npc:npc.bo_ques.multi_10",
+        "npc:npc.bo_ques.multi_12",
+        "npc:npc.fa_hradin.multi_16"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "I'm sorry, but you don't have Malor's permission to trade with me.",
+      "variants": [
+        "",
+        "Lo siento, pero no tienes el permiso de Malor para comerciar conmigo."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.alesar.say_8",
+        "npc:npc.yaman.say_15"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Unknown",
+      "variants": [
+        "Desconocido",
+        "unkNown"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "otclient_modules:otclient_modules.bestiary.tr_4",
+        "scripts:scripts.find_fiend.level_unknown"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "All the players need to be level ",
+      "variants": [
+        "Todos los jugadores necesitan ser nivel",
+        "Todos los jugadores necesitan ser nivel "
+      ],
+      "variants_count": 2,
+      "examples": [
+        "quests:quests.actions_portal_minis_feaster.msg_1",
+        "scripts:scripts.actions_portal_minis_ancient_feud.msg_1",
+        "scripts:scripts.actions_portal_minis_feaster.msg_1",
+        "scripts:scripts.actions_portal_minis_kilmaresh.msg_1"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "You have to wait ",
+      "variants": [
+        "Tienes que esperar",
+        "Tienes que esperar "
+      ],
+      "variants_count": 2,
+      "examples": [
+        "quests:quests.actions_portal_minis_feaster.msg_2",
+        "scripts:scripts.actions_portal_minis_ancient_feud.msg_2",
+        "scripts:scripts.actions_portal_minis_feaster.msg_2",
+        "scripts:scripts.actions_portal_minis_grimvale.msg_1",
+        "scripts:scripts.actions_portal_minis_kilmaresh.msg_2"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "You have found a {0}.",
+      "variants": [
+        "Has encontrado un {0}.",
+        "Has encontrado un/a {0}."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "quests:quests.secret_library.found_item_lower",
+        "scripts:scripts.action-reward_soul_war.msg_3",
+        "scripts:scripts.actions_containerRewards.msg_1",
+        "scripts:scripts.register_actions.found_item"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "You are making many purchases simultaneously in a few moments.",
+      "variants": [
+        "Estás haciendo muchas compras simultáneamente en pocos momentos.",
+        "Estás realizando muchas compras simultáneamente en pocos momentos."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "scripts:gamestore.error.too_many_purchases",
+        "scripts:scripts.init.msg_1"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "You have found a {}.",
+      "variants": [
+        "Has encontrado un {}.",
+        "Has encontrado un/a {}."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "scripts:scripts.actions_boss_timira_fight.msg_2",
+        "scripts:scripts.actions_findings.msg_1",
+        "scripts:scripts.actions_gooey_mass.msg_1",
+        "scripts:scripts.actions_vocation_reward.msg_3"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "You have found a ",
+      "variants": [
+        "Has encontrado un ",
+        "Has encontrado un/a "
+      ],
+      "variants_count": 2,
+      "examples": [
+        "scripts:scripts.actions_chests.msg_1",
+        "scripts:scripts.quests.msg_1",
+        "scripts:scripts.quests.msg_2",
+        "scripts:scripts.quests.msg_4",
+        "scripts:scripts.quests.msg_5"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "You don't know how to use this yet.",
+      "variants": [
+        "Aún no sabes cómo usar esto.",
+        "No sabes cómo usar esto todavía."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "scripts:scripts.actions_ore_wagon.msg_2",
+        "scripts:scripts.moviments_elevator.msg_1"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Weirdo, you're a weirdo! Actually all of you are!",
+      "variants": [
+        "¡Raro, eres raro! ¡De hecho todos lo sois!",
+        "¡Raro, eres un raro! ¡De hecho todos lo sois!"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "scripts:scripts.dolls.8149_1",
+        "scripts:scripts.thais_exhibition.say_25"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Fresh off the press!",
+      "variants": [
+        "¡Recién salido de la imprenta!",
+        "¡Recién salido de la prensa!"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "scripts:scripts.dolls.8153_4",
+        "scripts:scripts.thais_exhibition.say_23"
+      ]
+    }
+  ],
+  "pl_reference_issues": [
+    {
+      "key": "achievement.30.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Territorial",
+      "pl": "Terytorialny",
+      "lang": "Territorial"
+    },
+    {
+      "key": "achievement.123.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Berserker",
+      "pl": "To go berserk",
+      "lang": "Berserker"
+    },
+    {
+      "key": "achievement.363.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Robo Chop",
+      "pl": "Robo I.",
+      "lang": "Robo Chop"
+    },
+    {
+      "key": "achievement.463.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Glooth Punk",
+      "pl": "Glooth I.",
+      "lang": "Glooth Punk"
+    },
+    {
+      "key": "book.otbm.obujos_domingo_18h_01h",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Obujos: Domingo (18h - 01h)",
+      "pl": "Obujos: Domingo (18:00 - 01:00)",
+      "lang": "Obujos: Domingo (18h - 01h)"
+    },
+    {
+      "key": "book.otbm.obujos_domingo_18h_01h_867ad284",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Obujos: Domingo (18h - 01h)",
+      "pl": "Obujos: Domingo (18:00 - 01:00)",
+      "lang": "Obujos: Domingo (18h - 01h)"
+    },
+    {
+      "key": "book.otbm.orruk_ahtanri_anvi_ra_shuk",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Orruk ah'tanri, anvi ra shuk ta",
+      "pl": "Orruk ah'tanri, anvi Akademia Królewska shuk dzięki, dziękuję",
+      "lang": "Orruk ah'tanri, anvi ra shuk ta"
+    },
+    {
+      "key": "book.otbm.the_thorntower_of_shadowthorn",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "The thorntower of Shadowthorn",
+      "pl": "The thorntower z Shadowthorn",
+      "lang": "The thorntower of Shadowthorn"
+    },
+    {
+      "key": "book.otbm.the_tibian_worldwonders",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "The tibian world-wonders!",
+      "pl": "The tibian I.-I.!",
+      "lang": "The tibian world-wonders!"
+    },
+    {
+      "key": "book.otbm.treasure_of_captain_iglue",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Treasure of Captain Iglue",
+      "pl": "I. z I. Iglue",
+      "lang": "Treasure of Captain Iglue"
+    },
+    {
+      "key": "book.otbm.vashresamuns_chorus_lane",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Vashresamun's Chorus Lane",
+      "pl": "Vashresamun's I. Alejka, dróżka",
+      "lang": "Vashresamun's Chorus Lane"
+    },
+    {
+      "key": "book.otbm.warehouse_of_abran_ironeye",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Warehouse of Abran Ironeye",
+      "pl": "Waredom z Abran Ironeye",
+      "lang": "Warehouse of Abran Ironeye"
+    },
+    {
+      "key": "book.otbm.warehouse_of_abran_ironeye_4c3c466b",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Warehouse of Abran Ironeye",
+      "pl": "Waredom z Abran Ironeye",
+      "lang": "Warehouse of Abran Ironeye"
+    },
+    {
+      "key": "book.otbm.warehouse_of_leeland_slim",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Warehouse of Leeland Slim",
+      "pl": "Waredom z Leeland I.",
+      "lang": "Warehouse of Leeland Slim"
+    },
+    {
+      "key": "book.otbm.warehouse_of_leeland_slim_e1870d40",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Warehouse of Leeland Slim",
+      "pl": "Waredom z Leeland I.",
+      "lang": "Warehouse of Leeland Slim"
+    },
+    {
+      "key": "book.otbm.warehouse_of_talesia_demir",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Warehouse of Talesia De'Mir",
+      "pl": "Waredom z Talesia De'Mir",
+      "lang": "Warehouse of Talesia De'Mir"
+    },
+    {
+      "key": "book.otbm.warehouse_of_talesia_demir_0513d8f4",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Warehouse of Talesia De'Mir",
+      "pl": "Waredom z Talesia De'Mir",
+      "lang": "Warehouse of Talesia De'Mir"
+    },
+    {
+      "key": "book.otbm.warentrosa_base_de_edron",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "War-Entrosa base de Edron",
+      "pl": "I.-Entrosa I. de Edron",
+      "lang": "War-Entrosa base de Edron"
+    },
+    {
+      "key": "book.otbm.warentrosa_base_de_edron_52a0d1fb",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "War-Entrosa base de Edron",
+      "pl": "I.-Entrosa I. de Edron",
+      "lang": "War-Entrosa base de Edron"
+    },
+    {
+      "key": "book.otbm.welcome_to_village_fibula",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Welcome to Village Fibula!",
+      "pl": "I. do Wioska Fibula!",
+      "lang": "Welcome to Village Fibula!"
+    },
+    {
+      "key": "book.otbm.written_by_hrmumundus_grofrukle",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Written by Hrmumundus Grofrukle",
+      "pl": "Pisemny by Hrmumundus Grofrukle",
+      "lang": "Written by Hrmumundus Grofrukle"
+    },
+    {
+      "key": "channel.tutor.name",
+      "category": "chatchannels",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Tutor",
+      "pl": "Korepetytor",
+      "lang": "Tutor"
+    },
+    {
+      "key": "client.map.text2",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "MarkListItem",
+      "pl": "MarkListPrzedmiot",
+      "lang": "MarkListItem"
+    },
+    {
+      "key": "client.imbuementtracker.text1",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "ImbuementTracker",
+      "pl": "Śledzenie nasycenia",
+      "lang": "ImbuementTracker"
+    },
+    {
+      "key": "client.uiwidget.text2",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": ".. color ..",
+      "pl": ".. kolor ..",
+      "lang": ".. color .."
+    },
+    {
+      "key": "cpp.combat.neutral",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "neutral",
+      "pl": "neutralny",
+      "lang": "neutral"
+    },
+    {
+      "key": "cpp.inspect.oz",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": " oz",
+      "pl": "oz",
+      "lang": " oz"
+    },
+    {
+      "key": "cpp.player.list_delimiter",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": ", ",
+      "pl": ",",
+      "lang": ", "
+    },
+    {
+      "key": "npc.example_merchant.name",
+      "category": "example_merchant",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "My name is Marcus. I run this shop.",
+      "pl": "Mam na imię Marcus. Prowadzę ten sklep.",
+      "lang": "My name is Marcus. I run this shop."
+    },
+    {
+      "key": "web.tpl.forum.add_board.td_4",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Guild:",
+      "pl": "Gildia:",
+      "lang": "Guild:"
+    },
+    {
+      "key": "web.tpl.guilds.view.set_6",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "_sbutton_invitecharacter",
+      "pl": "_sbutton_inviteznak",
+      "lang": "_sbutton_invitecharacter"
+    },
+    {
+      "key": "web.tpl.guilds.view.set_10",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "_sbutton_leaveguild",
+      "pl": "_sbutton_opuśćgildię",
+      "lang": "_sbutton_leaveguild"
+    },
+    {
+      "key": "web.tpl.characters.td_10",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Balance:",
+      "pl": "Balansować:",
+      "lang": "Balance:"
+    },
+    {
+      "key": "web.tpl.balance.th_3",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Balance",
+      "pl": "Balansować",
+      "lang": "Balance"
+    },
+    {
+      "key": "web.tpl.buttons.change_sex.set_2",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "_sbutton_changesex",
+      "pl": "_sbutton_zmianapłci",
+      "lang": "_sbutton_changesex"
+    },
+    {
+      "key": "web.tpl.buttons.delete_character.set_2",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "_sbutton_deletecharacter",
+      "pl": "_sbutton_deleteznak",
+      "lang": "_sbutton_deletecharacter"
+    },
+    {
+      "key": "item.10096.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "stacke",
+      "pl": "stos",
+      "lang": "stacke"
+    },
+    {
+      "key": "item.10180.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "groud",
+      "pl": "grunt",
+      "lang": "groud"
+    },
+    {
+      "key": "item.10185.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "swich",
+      "pl": "przełącznik",
+      "lang": "swich"
+    },
+    {
+      "key": "item.10186.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "scrying ball",
+      "pl": "wróżąca kula",
+      "lang": "scrying ball"
+    },
+    {
+      "key": "item.10273.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "terrorbird beak",
+      "pl": "dziób terrorysty",
+      "lang": "terrorbird beak"
+    },
+    {
+      "key": "item.10297.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "antlers",
+      "pl": "poroże",
+      "lang": "antlers"
+    },
+    {
+      "key": "item.10308.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "mutated flesh",
+      "pl": "zmutowane mięso",
+      "lang": "mutated flesh"
+    },
+    {
+      "key": "item.10311.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "sabretooth",
+      "pl": "szablozębny",
+      "lang": "sabretooth"
+    },
+    {
+      "key": "item.10386.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Zaoan shoes",
+      "pl": "Buty Zaoańskie",
+      "lang": "Zaoan shoes"
+    },
+    {
+      "key": "item.10389.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "sai",
+      "pl": "Sai",
+      "lang": "sai"
+    },
+    {
+      "key": "item.10414.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "zaogun shoulderplates",
+      "pl": "naramienniki zaogun",
+      "lang": "zaogun shoulderplates"
+    },
+    {
+      "key": "item.10417.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "legionnaire flags",
+      "pl": "flagi legionistów",
+      "lang": "legionnaire flags"
+    },
+    {
+      "key": "item.10592.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "sulphur",
+      "pl": "siarka",
+      "lang": "sulphur"
+    },
+    {
+      "key": "item.1067.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "pitfall",
+      "pl": "pułapka",
+      "lang": "pitfall"
+    },
+    {
+      "key": "item.1069.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "bug tral",
+      "pl": "błąd tral",
+      "lang": "bug tral"
+    },
+    {
+      "key": "item.10748.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "insectoid pore",
+      "pl": "pory insektoidalne",
+      "lang": "insectoid pore"
+    },
+    {
+      "key": "item.1079.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "ant-hill",
+      "pl": "mrowisko",
+      "lang": "ant-hill"
+    },
+    {
+      "key": "item.1080.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "pitfall",
+      "pl": "pułapka",
+      "lang": "pitfall"
+    },
+    {
+      "key": "item.10840.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "dimensional portal",
+      "pl": "portal wymiarowy",
+      "lang": "dimensional portal"
+    },
+    {
+      "key": "item.10842.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "dimensional portal",
+      "pl": "portal wymiarowy",
+      "lang": "dimensional portal"
+    },
+    {
+      "key": "item.10864.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "leechbloom",
+      "pl": "kwiat pijawki",
+      "lang": "leechbloom"
+    },
+    {
+      "key": "item.1099.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.11068.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "timbers",
+      "pl": "drewno",
+      "lang": "timbers"
+    },
+    {
+      "key": "item.11157.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "timbers",
+      "pl": "drewno",
+      "lang": "timbers"
+    },
+    {
+      "key": "item.11318.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "watchguard",
+      "pl": "strażnik",
+      "lang": "watchguard"
+    },
+    {
+      "key": "item.11455.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "cultish symbol",
+      "pl": "kultowy symbol",
+      "lang": "cultish symbol"
+    },
+    {
+      "key": "item.11459.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "pineapple",
+      "pl": "ananas",
+      "lang": "pineapple"
+    },
+    {
+      "key": "item.11460.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "aubergine",
+      "pl": "bakłażan",
+      "lang": "aubergine"
+    },
+    {
+      "key": "item.11461.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "broccoli",
+      "pl": "brokuł",
+      "lang": "broccoli"
+    },
+    {
+      "key": "item.11462.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "cauliflower",
+      "pl": "kalafior",
+      "lang": "cauliflower"
+    },
+    {
+      "key": "item.11465.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "elven astral observer",
+      "pl": "elficki obserwator astralny",
+      "lang": "elven astral observer"
+    },
+    {
+      "key": "item.11468.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "ornamented brooch",
+      "pl": "zdobiona broszka",
+      "lang": "ornamented brooch"
+    },
+    {
+      "key": "item.11474.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "miraculum",
+      "pl": "cud",
+      "lang": "miraculum"
+    },
+    {
+      "key": "item.11477.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "orcish gear",
+      "pl": "orkowy sprzęt",
+      "lang": "orcish gear"
+    },
+    {
+      "key": "item.11478.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "shamanic hood",
+      "pl": "szamański kaptur",
+      "lang": "shamanic hood"
+    },
+    {
+      "key": "item.11657.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "twiceslicer",
+      "pl": "krajalnica dwukrotna",
+      "lang": "twiceslicer"
+    },
+    {
+      "key": "item.11658.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "draken sulphur",
+      "pl": "wyssana siarka",
+      "lang": "draken sulphur"
+    },
+    {
+      "key": "item.11659.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "draken wristbands",
+      "pl": "drapiące opaski",
+      "lang": "draken wristbands"
+    },
+    {
+      "key": "item.11675.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "dissolved souleater",
+      "pl": "rozpuszczony pożeracz dusz",
+      "lang": "dissolved souleater"
+    },
+    {
+      "key": "item.11676.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "dissolved souleater",
+      "pl": "rozpuszczony pożeracz dusz",
+      "lang": "dissolved souleater"
+    },
+    {
+      "key": "item.11677.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "dissolved souleater",
+      "pl": "rozpuszczony pożeracz dusz",
+      "lang": "dissolved souleater"
+    },
+    {
+      "key": "item.11678.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "dissolved souleater",
+      "pl": "rozpuszczony pożeracz dusz",
+      "lang": "dissolved souleater"
+    },
+    {
+      "key": "item.11681.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "ectoplasmic sushi",
+      "pl": "ektoplazmatyczne sushi",
+      "lang": "ectoplasmic sushi"
+    },
+    {
+      "key": "item.11682.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "dragonfruit",
+      "pl": "smoczy owoc",
+      "lang": "dragonfruit"
+    },
+    {
+      "key": "item.11683.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "peas",
+      "pl": "groszek",
+      "lang": "peas"
+    },
+    {
+      "key": "item.11699.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "botany almanach",
+      "pl": "botany alManach",
+      "lang": "botany almanach"
+    },
+    {
+      "key": "item.11700.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "sedge hat",
+      "pl": "kapelusz z turzycy",
+      "lang": "sedge hat"
+    },
+    {
+      "key": "item.11814.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "barbecue",
+      "pl": "rożen",
+      "lang": "barbecue"
+    },
+    {
+      "key": "item.11825.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "rods",
+      "pl": "pręty",
+      "lang": "rods"
+    },
+    {
+      "key": "item.11827.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "rods",
+      "pl": "pręty",
+      "lang": "rods"
+    },
+    {
+      "key": "item.12.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "lemonade",
+      "pl": "lemoniada",
+      "lang": "lemonade"
+    },
+    {
+      "key": "item.12032.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.12064.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.12074.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.121.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "whoopee cushion",
+      "pl": "cholerna poduszka",
+      "lang": "whoopee cushion"
+    },
+    {
+      "key": "item.12135.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "whirl pool",
+      "pl": "basen z hydromasażem",
+      "lang": "whirl pool"
+    },
+    {
+      "key": "item.12230.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "meaty vortex",
+      "pl": "mięsisty wir",
+      "lang": "meaty vortex"
+    },
+    {
+      "key": "item.12231.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "tonguefruit",
+      "pl": "owoc języka",
+      "lang": "tonguefruit"
+    },
+    {
+      "key": "item.12234.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "sprocketwhip cone",
+      "pl": "stożek zębaty",
+      "lang": "sprocketwhip cone"
+    },
+    {
+      "key": "item.12235.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "witherblossom",
+      "pl": "kwiecie",
+      "lang": "witherblossom"
+    },
+    {
+      "key": "item.12251.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "shapechanger",
+      "pl": "zmiennokształtny",
+      "lang": "shapechanger"
+    },
+    {
+      "key": "item.123.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "toy mouse",
+      "pl": "mysz zabawkowa",
+      "lang": "toy mouse"
+    },
+    {
+      "key": "item.12304.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "maxilla maximus",
+      "pl": "szczęka maksymalna",
+      "lang": "maxilla maximus"
+    },
+    {
+      "key": "item.12307.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "harness",
+      "pl": "uprząż",
+      "lang": "harness"
+    },
+    {
+      "key": "item.12308.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "reins",
+      "pl": "lejce",
+      "lang": "reins"
+    },
+    {
+      "key": "item.12313.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "stampor talons",
+      "pl": "szpony stemplowe",
+      "lang": "stampor talons"
+    },
+    {
+      "key": "item.12315.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "maxilla",
+      "pl": "szczęka",
+      "lang": "maxilla"
+    },
+    {
+      "key": "item.124.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "easily inflammable sulphur",
+      "pl": "łatwopalna siarka",
+      "lang": "easily inflammable sulphur"
+    },
+    {
+      "key": "item.12540.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "armageddon plans",
+      "pl": "plany armagedonu",
+      "lang": "armageddon plans"
+    },
+    {
+      "key": "item.12547.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "diapason",
+      "pl": "diapazon",
+      "lang": "diapason"
+    },
+    {
+      "key": "item.12557.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "shimmer swimmer",
+      "pl": "błyszczący pływak",
+      "lang": "shimmer swimmer"
+    },
+    {
+      "key": "item.12574.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.12578.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Evilina",
+      "pl": "Ewilina",
+      "lang": "Evilina"
+    },
+    {
+      "key": "item.12582.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Evilina",
+      "pl": "Ewilina",
+      "lang": "Evilina"
+    },
+    {
+      "key": "item.12650.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "branches",
+      "pl": "gałęzie",
+      "lang": "branches"
+    },
+    {
+      "key": "item.12651.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "branches",
+      "pl": "gałęzie",
+      "lang": "branches"
+    },
+    {
+      "key": "item.12655.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "corms",
+      "pl": "bulwy",
+      "lang": "corms"
+    },
+    {
+      "key": "item.12656.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "root vegetable dish",
+      "pl": "danie z warzyw korzeniowych",
+      "lang": "root vegetable dish"
+    },
+    {
+      "key": "item.12657.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.12723.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.12726.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.12729.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.12734.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "shimmer ball",
+      "pl": "błyszcząca kula",
+      "lang": "shimmer ball"
+    },
+    {
+      "key": "item.12735.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "shimmer glower",
+      "pl": "błyszczący blask",
+      "lang": "shimmer glower"
+    },
+    {
+      "key": "item.12736.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "babel swimmer",
+      "pl": "babel, pływak",
+      "lang": "babel swimmer"
+    },
+    {
+      "key": "item.12738.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.12793.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.12795.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.12797.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.12798.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.128.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "signed contract",
+      "pl": "podpisana umowa",
+      "lang": "signed contract"
+    },
+    {
+      "key": "item.12805.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "yielocks",
+      "pl": "tak",
+      "lang": "yielocks"
+    },
+    {
+      "key": "item.12806.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "flintstone",
+      "pl": "Flinston",
+      "lang": "flintstone"
+    },
+    {
+      "key": "item.12807.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "shimmer ball",
+      "pl": "błyszcząca kula",
+      "lang": "shimmer ball"
+    },
+    {
+      "key": "item.12817.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.13268.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.13272.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.13397.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.13968.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.13975.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.13977.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.14024.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.14039.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.14141.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "lava",
+      "pl": "lawa",
+      "lang": "lava"
+    },
+    {
+      "key": "item.14254.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.14752.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.15142.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.15275.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.15297.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.15346.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.15702.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.15863.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.16198.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "skill trainer",
+      "pl": "umiejętność trener",
+      "lang": "skill trainer"
+    },
+    {
+      "key": "item.16199.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "skill trainer",
+      "pl": "umiejętność trener",
+      "lang": "skill trainer"
+    },
+    {
+      "key": "item.16200.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "skill trainer",
+      "pl": "umiejętność trener",
+      "lang": "skill trainer"
+    },
+    {
+      "key": "item.16201.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "skill trainer",
+      "pl": "umiejętność trener",
+      "lang": "skill trainer"
+    },
+    {
+      "key": "item.16202.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "skill trainer",
+      "pl": "umiejętność trener",
+      "lang": "skill trainer"
+    },
+    {
+      "key": "item.16204.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.16241.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.16243.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.16245.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.16247.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.16249.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.16278.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.16679.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.168.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.16862.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.16864.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.16867.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.17114.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.17150.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.17317.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.17322.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.17519.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.17527.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.17811.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.17936.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.17967.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.17973.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.17976.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.17986.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.18014.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.18385.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.18481.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.18881.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.18916.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.19032.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.19115.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.19164.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.19248.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.19314.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.19360.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.19364.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.19370.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.19386.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.19399.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.19493.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.1990.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.1991.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.19918.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.20028.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.20052.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "bad dream",
+      "pl": "Zły sen",
+      "lang": "bad dream"
+    },
+    {
+      "key": "item.20089.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "umbral spellbook",
+      "pl": "umbral Zaklęciebook",
+      "lang": "umbral spellbook"
+    },
+    {
+      "key": "item.20120.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.20127.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.20176.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.20181.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.20211.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.20252.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.20343.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.20354.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.20373.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.21133.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.21157.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.21160.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.21162.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.21181.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.21220.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.21291.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "juicy roots",
+      "pl": "soczysty korzenie",
+      "lang": "juicy roots"
+    },
+    {
+      "key": "item.21299.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.21343.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.21347.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.21349.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.21376.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.2139.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.2141.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.2142.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.2143.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.2144.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "lava",
+      "pl": "lawa",
+      "lang": "lava"
+    },
+    {
+      "key": "item.21444.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.21477.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "lava",
+      "pl": "lawa",
+      "lang": "lava"
+    },
+    {
+      "key": "item.2149.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.2150.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.2151.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.21574.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.21695.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.21738.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.21742.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.21756.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.21760.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.21771.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.21786.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.21793.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.21807.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.2186.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.21879.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.21944.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.21949.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.21951.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.21969.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.21971.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "pitfall",
+      "pl": "pułapka",
+      "lang": "pitfall"
+    },
+    {
+      "key": "item.21972.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "pitfall",
+      "pl": "pułapka",
+      "lang": "pitfall"
+    },
+    {
+      "key": "item.21976.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.22065.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.22105.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.22112.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.22117.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.22155.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.2217.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.22173.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.22181.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.22494.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.22641.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.22657.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.22675.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "lava",
+      "pl": "lawa",
+      "lang": "lava"
+    },
+    {
+      "key": "item.22761.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "vortex",
+      "pl": "wir",
+      "lang": "vortex"
+    },
+    {
+      "key": "item.22769.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ferumbras' mana keg",
+      "pl": "Ferumbras' Mana keg",
+      "lang": "Ferumbras' mana keg"
+    },
+    {
+      "key": "item.22770.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ferumbras' mana keg",
+      "pl": "Ferumbras' Mana keg",
+      "lang": "Ferumbras' mana keg"
+    },
+    {
+      "key": "item.22891.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.22894.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "vortex",
+      "pl": "wir",
+      "lang": "vortex"
+    },
+    {
+      "key": "item.23190.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.23361.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.23397.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.23574.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "vortex",
+      "pl": "wir",
+      "lang": "vortex"
+    },
+    {
+      "key": "item.23692.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.24187.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.24244.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.24249.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.2479.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.24865.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.24876.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.24878.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.24887.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.24912.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.24931.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.24953.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.24966.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "forbidden fruit",
+      "pl": "Zakazany I.",
+      "lang": "forbidden fruit"
+    },
+    {
+      "key": "item.25130.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.25197.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.25626.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.25628.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.25688.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.25755.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.25774.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "guilt",
+      "pl": "Wina",
+      "lang": "guilt"
+    },
+    {
+      "key": "item.25781.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.25879.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "health cask",
+      "pl": "Zdrowie cask",
+      "lang": "health cask"
+    },
+    {
+      "key": "item.25889.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "mana cask",
+      "pl": "Mana cask",
+      "lang": "mana cask"
+    },
+    {
+      "key": "item.25903.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "health keg",
+      "pl": "Zdrowie keg",
+      "lang": "health keg"
+    },
+    {
+      "key": "item.25908.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "mana keg",
+      "pl": "Mana keg",
+      "lang": "mana keg"
+    },
+    {
+      "key": "item.27232.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.27259.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.27546.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.27564.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.27587.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.27609.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.27617.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Last Planegazer",
+      "pl": "Ostatni Planegazer",
+      "lang": "Last Planegazer"
+    },
+    {
+      "key": "item.27642.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.27672.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.27690.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.27726.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.27727.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "lava",
+      "pl": "lawa",
+      "lang": "lava"
+    },
+    {
+      "key": "item.27875.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.28145.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.28259.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.28480.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.28487.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.28499.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.28524.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.28660.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.28671.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.28819.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.28853.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Spatial Warp Almanac",
+      "pl": "Spatial Warp AlManac",
+      "lang": "Spatial Warp Almanac"
+    },
+    {
+      "key": "item.28919.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.294.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "pitfall",
+      "pl": "pułapka",
+      "lang": "pitfall"
+    },
+    {
+      "key": "item.29434.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.30008.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.30032.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.30130.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.30199.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.30217.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.31159.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.31239.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.31322.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.31373.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.31415.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.31491.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.31517.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.31667.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.31677.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.31908.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Time Distort Almanac",
+      "pl": "Time Distort AlManac",
+      "lang": "Time Distort Almanac"
+    },
+    {
+      "key": "item.31912.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.31926.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "reserved sprite",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "reserved sprite"
+    },
+    {
+      "key": "item.31928.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "reserved sprite",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "reserved sprite"
+    },
+    {
+      "key": "item.31930.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "reserved sprite",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "reserved sprite"
+    },
+    {
+      "key": "item.31960.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "reserved sprite",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "reserved sprite"
+    },
+    {
+      "key": "item.31962.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "reserved sprite",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "reserved sprite"
+    },
+    {
+      "key": "item.32065.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "reserved sprite",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "reserved sprite"
+    },
+    {
+      "key": "item.32092.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "reserved sprite",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "reserved sprite"
+    },
+    {
+      "key": "item.32588.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "loom",
+      "pl": "krosno",
+      "lang": "loom"
+    },
+    {
+      "key": "item.33709.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "pitfall",
+      "pl": "pułapka",
+      "lang": "pitfall"
+    },
+    {
+      "key": "item.33790.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "inactive vortex",
+      "pl": "nieaktywny wir",
+      "lang": "inactive vortex"
+    },
+    {
+      "key": "item.36741.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "death amplification",
+      "pl": "śmierć wzmocnienie",
+      "lang": "death amplification"
+    },
+    {
+      "key": "item.36742.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "physical amplification",
+      "pl": "fizyczny wzmocnienie",
+      "lang": "physical amplification"
+    },
+    {
+      "key": "item.371.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.39003.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "tentugly",
+      "pl": "Delikatnie",
+      "lang": "tentugly"
+    },
+    {
+      "key": "item.395.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.43845.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.43851.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "darklight matter",
+      "pl": "Materia ciemnego światła",
+      "lang": "darklight matter"
+    },
+    {
+      "key": "item.451.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.4653.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.5542.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "rope-ladder",
+      "pl": "lina-drabina",
+      "lang": "rope-ladder"
+    },
+    {
+      "key": "item.616.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "DEPRECATED item",
+      "pl": "DEPRECATED Przedmiot",
+      "lang": "DEPRECATED item"
+    },
+    {
+      "key": "item.617.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "DEPRECATED item",
+      "pl": "DEPRECATED Przedmiot",
+      "lang": "DEPRECATED item"
+    },
+    {
+      "key": "item.651.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "spellwand",
+      "pl": "Zaklęciewand",
+      "lang": "spellwand"
+    },
+    {
+      "key": "item.7403.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "berserker",
+      "pl": "To go berserk",
+      "lang": "berserker"
+    },
+    {
+      "key": "item.7536.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.7933.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "invitation",
+      "pl": "zaproszenie",
+      "lang": "invitation"
+    },
+    {
+      "key": "item.8217.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.894.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "jester hat",
+      "pl": "dowcip kapelusz",
+      "lang": "jester hat"
+    },
+    {
+      "key": "item.8969.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "lava",
+      "pl": "lawa",
+      "lang": "lava"
+    },
+    {
+      "key": "item.9044.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.9118.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.922.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.9245.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "lib.player.modal_button_no",
+      "category": "libs",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "No",
+      "pl": "Nie",
+      "lang": "No"
+    },
+    {
+      "key": "module.hireling_module.text1",
+      "category": "modules",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Pereira (jlcvp)',",
+      "pl": "Pereira (jlcvp)”,",
+      "lang": "Pereira (jlcvp)',"
+    },
+    {
+      "key": "monster.salamander.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Salamander",
+      "pl": "Salamandra",
+      "lang": "Salamander"
+    },
+    {
+      "key": "monster.salamander.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a salamander",
+      "pl": "salamandra",
+      "lang": "a salamander"
+    },
+    {
+      "key": "monster.deathspawn.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Deathspawn",
+      "pl": "Pomiot Śmierci",
+      "lang": "Deathspawn"
+    },
+    {
+      "key": "monster.deathspawn.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a deathspawn",
+      "pl": "pomiot śmierci",
+      "lang": "a deathspawn"
+    },
+    {
+      "key": "monster.defiler.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Defiler",
+      "pl": "Defilator",
+      "lang": "Defiler"
+    },
+    {
+      "key": "monster.defiler.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a defiler",
+      "pl": "profanator",
+      "lang": "a defiler"
+    },
+    {
+      "key": "monster.ghoul.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ghoul",
+      "pl": "Wampir",
+      "lang": "Ghoul"
+    },
+    {
+      "key": "monster.training_machine.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Training Machine",
+      "pl": "Maszyna treningowa",
+      "lang": "Training Machine"
+    },
+    {
+      "key": "monster.training_machine.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a training machine",
+      "pl": "maszyna treningowa",
+      "lang": "a training machine"
+    },
+    {
+      "key": "monster.tortoise.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Tortoise",
+      "pl": "Żółw",
+      "lang": "Tortoise"
+    },
+    {
+      "key": "monster.tortoise.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a tortoise",
+      "pl": "żółw",
+      "lang": "a tortoise"
+    },
+    {
+      "key": "monster.sandcrawler.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Sandcrawler",
+      "pl": "Piaskownik",
+      "lang": "Sandcrawler"
+    },
+    {
+      "key": "monster.sandcrawler.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a sandcrawler",
+      "pl": "piaskowiec",
+      "lang": "a sandcrawler"
+    },
+    {
+      "key": "monster.frazzlemaw.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a frazzlemaw",
+      "pl": "frazzlemaw",
+      "lang": "a frazzlemaw"
+    },
+    {
+      "key": "monster.guzzlemaw.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a guzzlemaw",
+      "pl": "żarłok",
+      "lang": "a guzzlemaw"
+    },
+    {
+      "key": "monster.shadowpelt.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Shadowpelt",
+      "pl": "Skórka Cienia",
+      "lang": "Shadowpelt"
+    },
+    {
+      "key": "monster.shadowpelt.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a shadowpelt",
+      "pl": "skórka cienia",
+      "lang": "a shadowpelt"
+    },
+    {
+      "key": "monster.custodian.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Custodian",
+      "pl": "Kustosz",
+      "lang": "Custodian"
+    },
+    {
+      "key": "monster.custodian.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a custodian",
+      "pl": "opiekun",
+      "lang": "a custodian"
+    },
+    {
+      "key": "monster.bullwark.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bullwark",
+      "pl": "Byk",
+      "lang": "Bullwark"
+    },
+    {
+      "key": "monster.bullwark.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bullwark",
+      "pl": "Byk",
+      "lang": "Bullwark"
+    },
+    {
+      "key": "monster.behemoth.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Behemoth",
+      "pl": "Potwór",
+      "lang": "Behemoth"
+    },
+    {
+      "key": "monster.old_bonelord.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Beholder",
+      "pl": "Widzący",
+      "lang": "Beholder"
+    },
+    {
+      "key": "monster.old_bonelord.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a beholder",
+      "pl": "obserwator",
+      "lang": "a beholder"
+    },
+    {
+      "key": "monster.old_bonelord.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Olho por Olho!",
+      "pl": "Olho na Olho!",
+      "lang": "Olho por Olho!"
+    },
+    {
+      "key": "monster.old_bonelord.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Estou olhando para voce!",
+      "pl": "Możesz to zrobić para voce!",
+      "lang": "Estou olhando para voce!"
+    },
+    {
+      "key": "monster.old_bonelord.voice_4",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Voce tem o olhar!",
+      "pl": "Głosuj na ten temat!",
+      "lang": "Voce tem o olhar!"
+    },
+    {
+      "key": "monster.old_wasp.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bssssss",
+      "pl": "Bsssss",
+      "lang": "Bssssss"
+    }
+  ],
+  "length_ratio_issues": [
+    {
+      "key": "achievement.25.name",
+      "category": "achievements",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 12,
+      "lang_ratio": 1.167,
+      "pl_ratio": 3.0
+    },
+    {
+      "key": "achievement.68.name",
+      "category": "achievements",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 12,
+      "lang_ratio": 1.583,
+      "pl_ratio": 3.417
+    },
+    {
+      "key": "achievement.77.name",
+      "category": "achievements",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 4,
+      "lang_ratio": 1.0,
+      "pl_ratio": 3.75
+    },
+    {
+      "key": "achievement.97.name",
+      "category": "achievements",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 17,
+      "lang_ratio": 0.941,
+      "pl_ratio": 3.529
+    },
+    {
+      "key": "achievement.128.name",
+      "category": "achievements",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 10,
+      "lang_ratio": 1.1,
+      "pl_ratio": 4.5
+    },
+    {
+      "key": "achievement.274.name",
+      "category": "achievements",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 5,
+      "lang_ratio": 1.4,
+      "pl_ratio": 4.2
+    },
+    {
+      "key": "achievement.301.name",
+      "category": "achievements",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 12,
+      "lang_ratio": 0.917,
+      "pl_ratio": 3.25
+    },
+    {
+      "key": "achievement.324.name",
+      "category": "achievements",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 15,
+      "lang_ratio": 1.333,
+      "pl_ratio": 3.267
+    },
+    {
+      "key": "achievement.411.name",
+      "category": "achievements",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 9,
+      "lang_ratio": 1.0,
+      "pl_ratio": 3.556
+    },
+    {
+      "key": "ui.readable.you_read_prefix",
+      "category": "books",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 9,
+      "lang_ratio": 0.556,
+      "pl_ratio": 2.444
+    },
+    {
+      "key": "cpp.look.you_read",
+      "category": "cpp",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 9,
+      "lang_ratio": 0.556,
+      "pl_ratio": 2.444
+    },
+    {
+      "key": "cpp.player.look.verb_vip",
+      "category": "cpp",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 8,
+      "lang_ratio": 0.875,
+      "pl_ratio": 2.875
+    },
+    {
+      "key": "cpp.weapon.missile",
+      "category": "cpp",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 7,
+      "lang_ratio": 0.714,
+      "pl_ratio": 3.571
+    },
+    {
+      "key": "item.20237.desc",
+      "category": "items",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 24,
+      "lang_ratio": 0.833,
+      "pl_ratio": 2.667
+    },
+    {
+      "key": "item.29344.desc",
+      "category": "items",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 25,
+      "lang_ratio": 0.92,
+      "pl_ratio": 2.84
+    },
+    {
+      "key": "item.30085.desc",
+      "category": "items",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 25,
+      "lang_ratio": 0.92,
+      "pl_ratio": 2.84
+    },
+    {
+      "key": "item.34026.desc",
+      "category": "items",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 17,
+      "lang_ratio": 0.706,
+      "pl_ratio": 3.059
+    },
+    {
+      "key": "item.390.desc",
+      "category": "items",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 24,
+      "lang_ratio": 0.833,
+      "pl_ratio": 2.667
+    },
+    {
+      "key": "item.6092.desc",
+      "category": "items",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 35,
+      "lang_ratio": 0.971,
+      "pl_ratio": 3.057
+    },
+    {
+      "key": "item.8781.desc",
+      "category": "items",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 27,
+      "lang_ratio": 0.852,
+      "pl_ratio": 2.667
+    },
+    {
+      "key": "monster.glooth_golem.voice_2",
+      "category": "monsters",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 7,
+      "lang_ratio": 3.143,
+      "pl_ratio": 0.571
+    },
+    {
+      "key": "monster.abyssador.voice_1",
+      "category": "monsters",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 15,
+      "lang_ratio": 0.933,
+      "pl_ratio": 2.867
+    },
+    {
+      "key": "npc.alyxo.say_12",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 6,
+      "lang_ratio": 1.667,
+      "pl_ratio": 4.0
+    },
+    {
+      "key": "npc.alyxo.say_15",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 6,
+      "lang_ratio": 1.667,
+      "pl_ratio": 4.0
+    },
+    {
+      "key": "npc.alyxo.say_18",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 6,
+      "lang_ratio": 1.667,
+      "pl_ratio": 4.0
+    },
+    {
+      "key": "npc.alyxo.say_21",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 6,
+      "lang_ratio": 1.667,
+      "pl_ratio": 4.0
+    },
+    {
+      "key": "npc.alyxo.say_24",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 6,
+      "lang_ratio": 1.667,
+      "pl_ratio": 4.0
+    },
+    {
+      "key": "npc.alyxo.say_6",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 6,
+      "lang_ratio": 1.667,
+      "pl_ratio": 4.0
+    },
+    {
+      "key": "npc.alyxo.say_9",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 6,
+      "lang_ratio": 1.667,
+      "pl_ratio": 4.0
+    },
+    {
+      "key": "npc.bo_ques.say_6",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 14,
+      "lang_ratio": 0.0,
+      "pl_ratio": 2.214
+    },
+    {
+      "key": "npc.broken_servant_sentry.say_5",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 119,
+      "lang_ratio": 0.0,
+      "pl_ratio": 2.286
+    },
+    {
+      "key": "npc.broken_servant_sentry.say_7",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 119,
+      "lang_ratio": 0.0,
+      "pl_ratio": 2.286
+    },
+    {
+      "key": "npc.chartan.multi_10",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 21,
+      "lang_ratio": 0.0,
+      "pl_ratio": 2.143
+    },
+    {
+      "key": "npc.chester_kahs.say_19",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 112,
+      "lang_ratio": 0.0,
+      "pl_ratio": 1.839
+    },
+    {
+      "key": "npc.chester_kahs.say_6",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 26,
+      "lang_ratio": 0.0,
+      "pl_ratio": 2.038
+    },
+    {
+      "key": "npc.commander_stone.say_18",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 21,
+      "lang_ratio": 0.0,
+      "pl_ratio": 1.81
+    },
+    {
+      "key": "npc.commander_stone.say_23",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 21,
+      "lang_ratio": 0.0,
+      "pl_ratio": 1.81
+    },
+    {
+      "key": "npc.commander_stone.say_6",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 21,
+      "lang_ratio": 0.0,
+      "pl_ratio": 1.81
+    },
+    {
+      "key": "npc.gnomaticus.say_3",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 27,
+      "lang_ratio": 0.0,
+      "pl_ratio": 2.296
+    },
+    {
+      "key": "npc.gnomeral.say_11",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 21,
+      "lang_ratio": 0.0,
+      "pl_ratio": 1.81
+    },
+    {
+      "key": "npc.gnomeral.say_16",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 21,
+      "lang_ratio": 0.0,
+      "pl_ratio": 1.81
+    },
+    {
+      "key": "npc.gnomeral.say_21",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 21,
+      "lang_ratio": 0.0,
+      "pl_ratio": 1.81
+    },
+    {
+      "key": "npc.gnomeral.say_5",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 21,
+      "lang_ratio": 0.0,
+      "pl_ratio": 1.81
+    },
+    {
+      "key": "npc.gregor.say_23",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 32,
+      "lang_ratio": 0.0,
+      "pl_ratio": 2.469
+    },
+    {
+      "key": "npc.gregor.say_26",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 32,
+      "lang_ratio": 0.0,
+      "pl_ratio": 2.469
+    },
+    {
+      "key": "npc.gregor.say_29",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 32,
+      "lang_ratio": 0.0,
+      "pl_ratio": 2.469
+    },
+    {
+      "key": "npc.gregor.say_32",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 32,
+      "lang_ratio": 0.0,
+      "pl_ratio": 2.469
+    },
+    {
+      "key": "npc.guard_saros.say_3",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 55,
+      "lang_ratio": 0.0,
+      "pl_ratio": 2.018
+    },
+    {
+      "key": "npc.hairycles.say_42",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 65,
+      "lang_ratio": 0.0,
+      "pl_ratio": 1.908
+    },
+    {
+      "key": "npc.hairycles.say_54",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 26,
+      "lang_ratio": 0.0,
+      "pl_ratio": 1.962
+    },
+    {
+      "key": "npc.hairycles.say_56",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 26,
+      "lang_ratio": 0.0,
+      "pl_ratio": 1.962
+    },
+    {
+      "key": "npc.hairycles.say_61",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 26,
+      "lang_ratio": 0.0,
+      "pl_ratio": 1.962
+    },
+    {
+      "key": "npc.harog.greet_msg_1",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 6,
+      "lang_ratio": 0.833,
+      "pl_ratio": 3.167
+    },
+    {
+      "key": "npc.henricus.say_28",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 8,
+      "lang_ratio": 0.0,
+      "pl_ratio": 2.25
+    },
+    {
+      "key": "npc.kallimae.say_3",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 6,
+      "lang_ratio": 1.667,
+      "pl_ratio": 4.0
+    },
+    {
+      "key": "npc.kallimae.say_6",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 6,
+      "lang_ratio": 1.667,
+      "pl_ratio": 4.0
+    },
+    {
+      "key": "npc.kallimae.say_9",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 6,
+      "lang_ratio": 1.667,
+      "pl_ratio": 4.0
+    },
+    {
+      "key": "npc.karith.say_6",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 45,
+      "lang_ratio": 0.0,
+      "pl_ratio": 1.844
+    },
+    {
+      "key": "npc.lurik.say_2",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 22,
+      "lang_ratio": 0.0,
+      "pl_ratio": 1.864
+    },
+    {
+      "key": "npc.markwin.say_7",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 16,
+      "lang_ratio": 0.0,
+      "pl_ratio": 2.875
+    },
+    {
+      "key": "npc.narsai.say_3",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 6,
+      "lang_ratio": 1.667,
+      "pl_ratio": 4.0
+    },
+    {
+      "key": "npc.narsai.say_6",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 6,
+      "lang_ratio": 1.667,
+      "pl_ratio": 4.0
+    },
+    {
+      "key": "npc.pig.say_2",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 78,
+      "lang_ratio": 0.0,
+      "pl_ratio": 2.128
+    },
+    {
+      "key": "npc.pompan.greet_msg_1",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 6,
+      "lang_ratio": 0.833,
+      "pl_ratio": 3.167
+    },
+    {
+      "key": "npc.saideh.say_3",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 6,
+      "lang_ratio": 1.667,
+      "pl_ratio": 4.0
+    },
+    {
+      "key": "npc.sandomo.greet_msg_1",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 14,
+      "lang_ratio": 0.0,
+      "pl_ratio": 2.5
+    },
+    {
+      "key": "npc.santa_claus.say_1",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 28,
+      "lang_ratio": 0.0,
+      "pl_ratio": 1.821
+    },
+    {
+      "key": "npc.shimun.say_3",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 6,
+      "lang_ratio": 1.667,
+      "pl_ratio": 4.0
+    },
+    {
+      "key": "npc.shimun.say_6",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 6,
+      "lang_ratio": 1.667,
+      "pl_ratio": 4.0
+    },
+    {
+      "key": "npc.simon_the_beggar.say_27",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 25,
+      "lang_ratio": 0.0,
+      "pl_ratio": 3.08
+    },
+    {
+      "key": "npc.stricken_soul.multi_1",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 12,
+      "lang_ratio": 0.0,
+      "pl_ratio": 2.083
+    },
+    {
+      "key": "npc.stricken_soul.say_3",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 27,
+      "lang_ratio": 0.0,
+      "pl_ratio": 1.963
+    },
+    {
+      "key": "npc.tefrit.say_3",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 6,
+      "lang_ratio": 1.667,
+      "pl_ratio": 4.0
+    },
+    {
+      "key": "npc.tefrit.say_6",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 6,
+      "lang_ratio": 1.667,
+      "pl_ratio": 4.0
+    },
+    {
+      "key": "npc.telas.greet_msg_1",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 6,
+      "lang_ratio": 0.833,
+      "pl_ratio": 3.167
+    },
+    {
+      "key": "npc.tomruk_the_ruddy.say_3",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 81,
+      "lang_ratio": 0.0,
+      "pl_ratio": 1.827
+    },
+    {
+      "key": "npc.undal.say_14",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 27,
+      "lang_ratio": 0.0,
+      "pl_ratio": 1.963
+    },
+    {
+      "key": "npc.vanys.say_14",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 27,
+      "lang_ratio": 0.0,
+      "pl_ratio": 1.963
+    },
+    {
+      "key": "npc.wyda.say_1",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 24,
+      "lang_ratio": 0.0,
+      "pl_ratio": 1.875
+    },
+    {
+      "key": "npc.yonan.say_3",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 6,
+      "lang_ratio": 1.667,
+      "pl_ratio": 4.0
+    },
+    {
+      "key": "npc.yonan.say_6",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 6,
+      "lang_ratio": 1.667,
+      "pl_ratio": 4.0
+    },
+    {
+      "key": "npc.yonan.say_9",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 41,
+      "lang_ratio": 0.0,
+      "pl_ratio": 1.805
+    },
+    {
+      "key": "otclient_modules.createaccount_otui.tr_37",
+      "category": "otclient_modules",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 6,
+      "lang_ratio": 3.167,
+      "pl_ratio": 1.167
+    },
+    {
+      "key": "otclient_modules.entergame.tr_16",
+      "category": "otclient_modules",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 6,
+      "lang_ratio": 3.167,
+      "pl_ratio": 1.167
+    },
+    {
+      "key": "otclient_modules.graphics_otui.tr_7",
+      "category": "otclient_modules",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 12,
+      "lang_ratio": 1.083,
+      "pl_ratio": 3.083
+    },
+    {
+      "key": "quests.actions_coral.msg_1",
+      "category": "quests",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 6,
+      "lang_ratio": 1.667,
+      "pl_ratio": 4.0
+    },
+    {
+      "key": "quests.actions_crystal.msg_1",
+      "category": "quests",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 6,
+      "lang_ratio": 1.667,
+      "pl_ratio": 4.0
+    }
+  ],
+  "auto_fix": {
+    "attempted": 0,
+    "applied": 0,
+    "skipped": 0,
+    "errors": 0
+  }
+}

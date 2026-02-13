@@ -1,0 +1,106 @@
+{
+  "monster.wolf.name": {
+    "src_hash": "279ede0c6bdbd7d26309becd159053d8",
+    "text": "Wolf",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-12T22:42:46.724065Z"
+  },
+  "monster.hunter.name": {
+    "src_hash": "5e409e09f43d85c6e61301149e4f803b",
+    "text": "Hunter",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-12T22:42:46.724684Z"
+  },
+  "monster.sorcerer_familiar.name": {
+    "src_hash": "fe695fb861f4a78482830bcb8e24bee3",
+    "text": "Sorcerer familiar",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-12T22:42:46.725152Z"
+  },
+  "npc.example_merchant.name": {
+    "src_hash": "16373b8c3c6c497895786de3804c2e0c",
+    "text": "My name is Marcus. I run this shop.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-12T23:45:01.575711Z"
+  },
+  "npc.a_bearded_woman.greet_msg_1": {
+    "src_hash": "dec88b2ad57c0b13cc1cf44b9711944a",
+    "text": "KELUARKAN AKU DARI SINI! SEKARANG!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-12T23:45:06.460771Z"
+  },
+  "npc.a_bearded_woman.stdmod_1": {
+    "src_hash": "85b863553a645f3e69472bcbeea15190",
+    "text": "Di dunia yang adil, saya akan menjadi kapten kapal besar, ... \\z\n\tPara perompak di luar sana sekarang akan menjadi antek-antekku, dan kami akan menantang lautan dan menjadi teror di kota-kota pesisir! ... \\z\n\tAndai saja rencana kita berhasil!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-12T23:45:06.461461Z"
+  },
+  "npc.a_bearded_woman.stdmod_2": {
+    "src_hash": "e665aff3c7b262f14bc1bdc6ecab7294",
+    "text": "Kapten Kid menjual kapalnya untuk membeli barang-barang tak berguna seperti kunci pintu sel yang sangat mahal itu. ... \\z\n\tDia mengatakan kano akan berfungsi untuk sementara waktu. ... \\z\n\tSaya mendapat kesan dia tidak terlalu sedih berpisah dengan kapal tersebut karena dia diketahui sangat menderita mabuk laut.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-12T23:45:06.462297Z"
+  },
+  "npc.a_bearded_woman.stdmod_3": {
+    "src_hash": "d0300a2639da1cea9ef53f1c6c9289c0",
+    "text": "Saya akan menjadi kapten yang jauh lebih baik daripada Kid. Saya berperan sebagai beberapa kapten di atas panggung dan saya bagus! ... \\z\n\tKetika Kid merindukan penghargaan dari anak buahnya, saya akan memerintah dengan rasa takut dan dengan tangan besi!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-12T23:45:06.462868Z"
+  },
+  "spell.msg_cannot_cast": {
+    "src_hash": "2e82fa5082130470b26e6e1db5f8d366",
+    "text": "Anda tidak dapat mengucapkan mantra ini",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-12T23:56:36.835621Z"
+  },
+  "spell.msg_need_learn": {
+    "src_hash": "24c37be7de2773e7687c1bb0b58d66a9",
+    "text": "Anda perlu mempelajari mantra ini terlebih dahulu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-12T23:56:36.836045Z"
+  },
+  "spell.msg_no_party_in_range": {
+    "src_hash": "fca01b330772f55532e24d9cf2108105",
+    "text": "Tidak ada anggota partai dalam jangkauan.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-12T23:56:36.836443Z"
+  },
+  "spell.msg_no_creatures_around": {
+    "src_hash": "e8ab5eef836b9bcbfe91c55f008b6f15",
+    "text": "Tidak ada makhluk di sekitar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-12T23:56:36.836765Z"
+  },
+  "spell.msg_cannot_summon_more": {
+    "src_hash": "1718b9c7c3db387960dae22e578e4df5",
+    "text": "Anda tidak dapat memanggil lebih banyak makhluk.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-12T23:56:36.837141Z"
+  }
+}

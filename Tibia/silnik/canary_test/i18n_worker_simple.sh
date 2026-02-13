@@ -10,11 +10,18 @@
 # Worker automatycznie przełącza się między trybami w trybie --continuous
 #===============================================================================
 
+# Zachowaj oryginalne argumenty (do RESTART)
+WORKER_ORIGINAL_ARGS=("$@")
+WORKER_SCRIPT="$(readlink -f "$0")"
+
 cd "$(dirname "$0")"
 WORK_DIR="$(pwd)"
 
-# Repo root (do odczytu komend z origin/master bez robienia pull)
+# Repo root (do odczytu komend z origin/<branch> bez robienia pull)
 REPO_ROOT="$(git -C "$WORK_DIR" rev-parse --show-toplevel 2>/dev/null || echo "")"
+GIT_TRACK_BRANCH="${GIT_TRACK_BRANCH:-$(git -C "$WORK_DIR" rev-parse --abbrev-ref HEAD 2>/dev/null || echo master)}"
+[ -z "$GIT_TRACK_BRANCH" ] && GIT_TRACK_BRANCH="master"
+[ "$GIT_TRACK_BRANCH" = "HEAD" ] && GIT_TRACK_BRANCH="master"
 
 STATUS_FILE="i18n_file_status.json"
 I18N_DIR="i18n"
@@ -29,11 +36,62 @@ CYCLE_PAUSE=12              # Pauza po pełnym cyklu (sekundy)
 TRANSLATION_BATCH=300       # Ile kluczy na batch synchronizacji
 TRANSLATION_SUBSTAGE=4      # Ile kluczy na składnię
 LANG_PRIORITY="de pl es pt fr it ru nl sv da no fi cs"  # Priorytet języków (Europa first)
+TARGET_LANGS="${TARGET_LANGS:-}"  # --langs "pl,de,es" lub env TARGET_LANGS
+BOOTSTRAP_PRIORITY_LANGS="${BOOTSTRAP_PRIORITY_LANGS:-es pl}"  # Bootstrap dla trybu ogólnego: es -> pl
+STRICT_SELECTOR_CACHE_TTL_CYCLES="${STRICT_SELECTOR_CACHE_TTL_CYCLES:-5}"  # co ile cykli odświeżać pełny skan strict selector
+STATUS_UPDATE_EVERY_CYCLES="${STATUS_UPDATE_EVERY_CYCLES:-5}"              # pełny update I18N_STATUS.md co N cykli
+STATUS_UPDATE_MIN_INTERVAL_SEC="${STATUS_UPDATE_MIN_INTERVAL_SEC:-300}"    # lub co N sekund (fallback)
+WORKER_PROFILING="${WORKER_PROFILING:-1}"                                  # 1=loguj czasy faz cyklu do i18n/status
+QUALITY_AUDIT_EVERY_CYCLES="${QUALITY_AUDIT_EVERY_CYCLES:-10}"             # audyt jakości co N cykli
+QUALITY_AUDIT_MIN_INTERVAL_SEC="${QUALITY_AUDIT_MIN_INTERVAL_SEC:-3600}"   # lub co N sekund
+QUALITY_AUDIT_THRESHOLD="${QUALITY_AUDIT_THRESHOLD:-10}"                    # powyżej tylu issue spowolnij batch
+
+# ==== TIER SYSTEM (Sekcja 5) ====
+# Tier 1: języki priorytetowe — cel: 90% coverage
+# Tier 2: języki "bliskie" — cel: 50% coverage
+# Tier 3: pozostałe — cel: 30% coverage
+# Tier weight = ile razy częściej język danego tieru dostaje cykl tłumaczenia
+TIER1_LANGS="pl es"                # Tier 1: PL i ES (już mają >50%)
+TIER2_LANGS="de pt ru tr fr it"    # Tier 2: europejskie z istniejącą bazą
+TIER1_TARGET=90                    # Docelowe pokrycie %
+TIER2_TARGET=50
+TIER3_TARGET=30
+TIER1_WEIGHT=4                     # Tier 1 dostaje 4x więcej cykli
+TIER2_WEIGHT=2                     # Tier 2 dostaje 2x więcej
+TIER3_WEIGHT=1                     # Tier 3 = baseline
+# Priorytet kategorii plików JSON dla tłumaczenia (niższy = ważniejszy)
+# items (16894), npc (13769), monsters (5915), server (2574), spells, quests...
+CATEGORY_TRANSLATE_PRIORITY="items.json npc.json monsters.json server.json spells.json quests.json scripts.json actions.json raids.json"
+
 
 # Nowe opcje (Agent 2)
 NO_GIT=false                # Flaga --no-git: wyłącza git add/commit/push
 TRANSLATE_LIMIT=0           # --translate-limit N: max kluczy do przetłumaczenia na cykl (0=brak limitu)
 TRANSLATIONS_ONLY=false     # --translations-only: tylko tłumaczenia, bez migracji kodu
+TRANSLATIONS_STRICT=false   # Tryb strict: zero nowych kluczy, tylko istniejące wpisy do tłumaczenia
+USE_GOOGLE_TRANSLATE=false  # --use-gt: używaj Google Translate jako fallback po słownikach
+GT_BATCH_SIZE=50            # ile kluczy tłumaczyć w jednym batchu GT
+GT_DELAY=1.5                # sekundy przerwy między batchami GT (anty rate-limit)
+CROSSREF_AUTO_FIX=false     # --auto-fix-crossref: faza 4.5 (Tryb 2), domyślnie OFF
+CROSSREF_AUTO_FIX_LIMIT=30  # maksymalna liczba auto-fix na język / przebieg walidacji
+PINNED_AUTO_LANG=""        # SWITCH:<lang> - przypięty język AUTO_TRANSLATE między cyklami
+PINNED_AUTO_JSON=""        # opcjonalny plik JSON przypięty do SWITCH
+PINNED_AUTO_LIMIT=0         # opcjonalny limit przypięty do SWITCH
+PINNED_AUTO_JSON_LIST=""   # LANG:<code>:<f1>,<f2>,... - lista plików do cyklicznego przechodzenia
+PINNED_AUTO_JSON_IDX=0      # aktualny indeks w PINNED_AUTO_JSON_LIST
+
+# === Sekcja 8 P1: Adaptive batch tuning (8.3) ===
+ADAPTIVE_BATCH_ENABLED=true     # włącz adaptive batch (8.3.3)
+ADAPTIVE_BATCH_DEFAULT=20       # domyślny batch kluczy/cykl (8.3.1)
+ADAPTIVE_BATCH_MIN=5            # minimalny batch (high guard_fail)
+ADAPTIVE_BATCH_MAX=50           # maksymalny batch (low guard_fail)
+ADAPTIVE_BATCH_WINDOW=10        # ile ostatnich cykli brać pod uwagę
+ADAPTIVE_BATCH_HIGH_THRESHOLD=20  # guard_fail_rate% powyżej → zmniejsz batch
+ADAPTIVE_BATCH_LOW_THRESHOLD=5    # guard_fail_rate% poniżej → zwiększ batch
+
+# === Sekcja 8 P1: Parallel language processing (8.4) ===
+PARALLEL_LANGS_PER_CYCLE=3     # ile języków tłumaczyć w jednym cyklu (8.4.1)
+PARALLEL_GT_MAX_RPM=100        # max GT requests/min (8.4.3)
 
 # Zakres pracy workera:
 # - server: tylko serwer (bez website + OTClient/testyy)
@@ -301,6 +359,295 @@ sanitize_batch() {
         echo "$value"
     else
         echo "$default"
+    fi
+}
+
+extract_auto_result_metric() {
+    local line="$1"
+    local metric="$2"
+    local value
+    value=$(printf '%s\n' "$line" | grep -oE "${metric}=[0-9]+" | head -n 1 | cut -d= -f2)
+    if [[ ! "$value" =~ ^[0-9]+$ ]]; then
+        value=0
+    fi
+    echo "$value"
+}
+
+extract_quality_metric_number() {
+    local line="$1"
+    local key="$2"
+    python3 - "$line" "$key" << 'PY'
+import json
+import re
+import sys
+
+line = sys.argv[1] if len(sys.argv) > 1 else ""
+key = sys.argv[2] if len(sys.argv) > 2 else ""
+
+m = re.search(r"__QUALITY__\s+(\{.*\})", line)
+if not m:
+    print("0")
+    raise SystemExit(0)
+
+try:
+    payload = json.loads(m.group(1))
+except Exception:
+    print("0")
+    raise SystemExit(0)
+
+value = payload.get(key, 0)
+try:
+    if isinstance(value, float):
+        print(f"{value:.3f}")
+    else:
+        print(int(value))
+except Exception:
+    print("0")
+PY
+}
+
+ensure_tibia_proper_nouns() {
+    local nouns_file="$STATUS_DIR/tibia_proper_nouns.json"
+    # Zawsze regeneruj — auto-ekstrakcja z danych EN
+    mkdir -p "$STATUS_DIR" 2>/dev/null || true
+    python3 - "$nouns_file" "$I18N_DIR" << 'PROPER_NOUNS_PY'
+import json
+import os
+import re
+import sys
+
+out_path = sys.argv[1]
+i18n_dir = sys.argv[2] if len(sys.argv) > 2 else "i18n"
+en_dir = os.path.join(i18n_dir, "en")
+
+# ============================================================================
+# 1. Hardcoded core terms (cities, regions, vocations, key Tibia terms)
+# ============================================================================
+CORE_TERMS = [
+    # Miasta i regiony
+    "Tibia", "Rookgaard", "Thais", "Carlin", "Venore", "Kazordoon", "Ankrahmun",
+    "Darashia", "Edron", "Yalahar", "Roshamuul", "Rathleton", "Ab'Dendriel",
+    "Svargrond", "Liberty Bay", "Port Hope", "Farmine", "Issavi", "Marapur",
+    "Gray Beach", "Bounac", "Azerus", "Oramond", "Falcon Bastion", "Zao",
+    "Krailos", "Cormaya", "Fibula", "Mintwallin", "Femor Hills", "Drefia",
+    "Demona", "Banuta", "Beregar", "Dawnport", "Feyrist", "Gnomprona",
+    "Hrodmir", "Kha'zeel", "Kilmaresh", "Muggy Plains", "Nimmersatt",
+    "Opticording", "Ramoa", "Quirefang", "Tiquanda", "Trapwood", "Vengoth",
+    "Zao Steppe", "Cyclopolis", "Ghastly Dragon Lair",
+    # Klasy / Promocje
+    "Knight", "Paladin", "Druid", "Sorcerer",
+    "Royal Paladin", "Elite Knight", "Master Sorcerer", "Elder Druid",
+    # Bogowie / NPC kluczowi
+    "Ferumbras", "Orshabaal", "Morgaroth", "Ghazbaran", "Apocalypse",
+    "Durin", "Cipfried", "Henricus", "Rashid", "Nah'Bob", "The Ruthless Seven",
+    # Questy kluczowe
+    "Pits of Inferno", "Inquisition", "Demon Oak", "Soul War",
+    "Forgotten Knowledge", "Wrath of the Emperor", "Children of the Revolution",
+    "Dangerous Depths", "Feaster of Souls", "The Dream Courts",
+    "Heart of Destruction", "Grimvale", "Cults of Tibia",
+    # Systemy gry
+    "Exiva", "Prey", "Bestiary", "Imbuing", "Cyclopedia",
+    "Party", "Guild", "Market", "Depot",
+]
+
+# ============================================================================
+# 2. Auto-extract spell words (incantations) — NEVER translate these
+# ============================================================================
+spell_words = set()
+spells_file = os.path.join(en_dir, "spells.json")
+if os.path.exists(spells_file):
+    try:
+        with open(spells_file, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        for k, v in data.items():
+            if k.endswith(".words"):
+                word = str(v).strip().strip('"').strip("'")
+                if len(word) > 2 and not word.startswith("#"):
+                    spell_words.add(word)
+    except Exception:
+        pass
+
+# ============================================================================
+# 3. Auto-extract spell names — keep as reference (not all need protection)
+# ============================================================================
+spell_names = set()
+if os.path.exists(spells_file):
+    try:
+        with open(spells_file, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        for k, v in data.items():
+            if k.endswith(".name"):
+                name = str(v).strip()
+                # Only short spell names (long descriptions are translatable)
+                if 2 < len(name) <= 40 and not name.startswith("#"):
+                    spell_names.add(name)
+    except Exception:
+        pass
+
+# ============================================================================
+# 4. Auto-extract quest names
+# ============================================================================
+quest_names = set()
+quest_file = os.path.join(en_dir, "questlog.json")
+if os.path.exists(quest_file):
+    try:
+        with open(quest_file, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        for k, v in data.items():
+            if k.endswith(".name") or k.endswith(".title"):
+                name = str(v).strip()
+                if 2 < len(name) <= 60 and not name.startswith("#"):
+                    quest_names.add(name)
+    except Exception:
+        pass
+
+# ============================================================================
+# 5. Auto-extract raid names
+# ============================================================================
+raid_names = set()
+raid_file = os.path.join(en_dir, "raids.json")
+if os.path.exists(raid_file):
+    try:
+        with open(raid_file, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        for k, v in data.items():
+            if k.endswith(".name"):
+                name = str(v).strip()
+                if 2 < len(name) <= 60 and not name.startswith("#"):
+                    raid_names.add(name)
+    except Exception:
+        pass
+
+# ============================================================================
+# 6. Build final set — deduplicate and sort
+# ============================================================================
+all_terms = set(CORE_TERMS)
+all_terms.update(spell_words)  # Always protect incantations
+# Add top spell names (common ones)
+all_terms.update(spell_names)
+all_terms.update(quest_names)
+all_terms.update(raid_names)
+
+# Remove empty / too short
+all_terms = sorted(t for t in all_terms if isinstance(t, str) and len(t.strip()) > 1)
+
+payload = {
+    "version": 2,
+    "description": "Nazwy własne Tibia - nie tłumaczyć. Auto-generowane z danych EN + ręczne core terms.",
+    "auto_generated": True,
+    "stats": {
+        "core_terms": len(CORE_TERMS),
+        "spell_words": len(spell_words),
+        "spell_names": len(spell_names),
+        "quest_names": len(quest_names),
+        "raid_names": len(raid_names),
+        "total_unique": len(all_terms),
+    },
+    "terms": all_terms,
+}
+
+os.makedirs(os.path.dirname(out_path) or ".", exist_ok=True)
+tmp = out_path + ".tmp"
+with open(tmp, "w", encoding="utf-8") as f:
+    json.dump(payload, f, indent=2, ensure_ascii=False)
+os.replace(tmp, out_path)
+print(f"tibia_proper_nouns: {len(all_terms)} terms (core={len(CORE_TERMS)}, spells={len(spell_words)+len(spell_names)}, quests={len(quest_names)}, raids={len(raid_names)})")
+PROPER_NOUNS_PY
+}
+
+apply_manual_review_approvals() {
+    mkdir -p "$STATUS_DIR" 2>/dev/null || true
+    python3 - "$I18N_DIR" "$STATUS_DIR" << 'PY'
+import json
+import os
+import tempfile
+import time
+import sys
+
+i18n_dir = sys.argv[1]
+status_dir = sys.argv[2]
+queue_path = os.path.join(status_dir, "manual_review_queue.json")
+
+if not os.path.exists(queue_path):
+    payload = {
+        "queue": [],
+        "stats": {"total": 0, "reviewed": 0, "approved": 0, "rejected": 0, "applied": 0},
+        "updated_at": int(time.time()),
+    }
+    fd, tmp = tempfile.mkstemp(dir=status_dir, suffix=".tmp")
+    with os.fdopen(fd, "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=2, ensure_ascii=False)
+    os.replace(tmp, queue_path)
+    print("0")
+    raise SystemExit(0)
+
+try:
+    with open(queue_path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+except Exception:
+    data = {"queue": [], "stats": {}}
+
+queue = data.get("queue", []) if isinstance(data.get("queue", []), list) else []
+stats = data.get("stats", {}) if isinstance(data.get("stats", {}), dict) else {}
+
+applied = 0
+for item in queue:
+    if not isinstance(item, dict):
+        continue
+    if str(item.get("status", "")).lower() != "approved":
+        continue
+    if item.get("applied"):
+        continue
+
+    lang = str(item.get("lang", "") or "").strip()
+    json_file = str(item.get("json_file", "") or "").strip()
+    key = str(item.get("key", "") or "").strip()
+    approved_translation = item.get("approved_translation")
+    if not (lang and json_file and key and isinstance(approved_translation, str) and approved_translation.strip()):
+        continue
+
+    target_file = os.path.join(i18n_dir, lang, json_file)
+    if not os.path.exists(target_file):
+        continue
+    try:
+        with open(target_file, "r", encoding="utf-8") as f:
+            payload = json.load(f)
+        if not isinstance(payload, dict):
+            continue
+    except Exception:
+        continue
+
+    payload[key] = approved_translation
+    fd, tmp = tempfile.mkstemp(dir=os.path.dirname(target_file) or ".", suffix=".tmp")
+    with os.fdopen(fd, "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=2, ensure_ascii=False)
+    os.replace(tmp, target_file)
+
+    item["applied"] = True
+    item["applied_at"] = int(time.time())
+    applied += 1
+
+stats["applied"] = int(stats.get("applied", 0) or 0) + applied
+data["stats"] = stats
+data["updated_at"] = int(time.time())
+
+fd, tmp = tempfile.mkstemp(dir=status_dir, suffix=".tmp")
+with os.fdopen(fd, "w", encoding="utf-8") as f:
+    json.dump(data, f, indent=2, ensure_ascii=False)
+os.replace(tmp, queue_path)
+print(str(applied))
+PY
+}
+
+ensure_external_dictionary_files() {
+    mkdir -p "$STATUS_DIR" 2>/dev/null || true
+    local simple_file="$STATUS_DIR/simple_translations.json"
+    local word_file="$STATUS_DIR/word_translations.json"
+    if [ -f "$simple_file" ] && [ -f "$word_file" ]; then
+        return 0
+    fi
+    if [ -x "tools/i18n_dictionary_materialize.py" ] || [ -f "tools/i18n_dictionary_materialize.py" ]; then
+        python3 tools/i18n_dictionary_materialize.py --i18n-dir "$I18N_DIR" --status-dir "$STATUS_DIR" >/dev/null 2>&1 || true
     fi
 }
 
@@ -671,8 +1018,10 @@ update_github_status() {
     python3 << 'STATUSPY'
 import json
 import os
+import re
 import subprocess
-from datetime import datetime, timezone
+import time
+from datetime import datetime, timedelta, timezone
 
 WORK_DIR = os.getcwd()
 STATUS_FILE = "i18n_file_status.json"
@@ -854,7 +1203,7 @@ def _list_language_dirs(i18n_dir: str):
         if name in ("status",):
             continue
         path = os.path.join(i18n_dir, name)
-        if os.path.isdir(path):
+        if os.path.isdir(path) and re.fullmatch(r"[a-z]{2}(?:_[A-Z]{2})?", name):
             langs.append(name)
     return sorted(langs)
 
@@ -956,14 +1305,51 @@ all_project_files = 0
 files_by_type = {}
 scannable_extensions = ['.lua', '.xml', '.php', '.html', '.js', '.cpp', '.hpp', '.h', '.py', '.json', '.ts', '.css']
 
-for root, dirs, flist in os.walk('.'):
-    # Pomijaj foldery które nie są częścią projektu
-    dirs[:] = [d for d in dirs if d not in ['vcpkg', 'build', '.git', 'node_modules', 'html_copy', 'oryginall', '__pycache__', 'large_files_zip']]
-    for fname in flist:
-        all_project_files += 1
-        ext = os.path.splitext(fname)[1].lower()
-        if ext:
-            files_by_type[ext] = files_by_type.get(ext, 0) + 1
+inventory_cache_path = os.path.join(I18N_DIR, "status", "project_file_inventory_cache.json")
+inventory_cache_ttl = 600
+try:
+    inventory_cache_ttl = max(30, int(os.environ.get("STATUS_PROJECT_SCAN_TTL_SEC", "600") or 600))
+except Exception:
+    inventory_cache_ttl = 600
+
+inventory_cache_used = False
+try:
+    if os.path.exists(inventory_cache_path):
+        with open(inventory_cache_path, "r", encoding="utf-8") as f:
+            inv = json.load(f)
+        inv_ts = int(inv.get("timestamp", 0) or 0)
+        if inv_ts > 0 and (int(time.time()) - inv_ts) <= inventory_cache_ttl:
+            all_project_files = int(inv.get("all_project_files", 0) or 0)
+            fb = inv.get("files_by_type", {})
+            files_by_type = fb if isinstance(fb, dict) else {}
+            inventory_cache_used = True
+except Exception:
+    inventory_cache_used = False
+
+if not inventory_cache_used:
+    for root, dirs, flist in os.walk('.'):
+        # Pomijaj foldery które nie są częścią projektu
+        dirs[:] = [d for d in dirs if d not in ['vcpkg', 'build', '.git', 'node_modules', 'html_copy', 'oryginall', '__pycache__', 'large_files_zip']]
+        for fname in flist:
+            all_project_files += 1
+            ext = os.path.splitext(fname)[1].lower()
+            if ext:
+                files_by_type[ext] = files_by_type.get(ext, 0) + 1
+
+    try:
+        os.makedirs(os.path.join(I18N_DIR, "status"), exist_ok=True)
+        inv_out = {
+            "timestamp": int(time.time()),
+            "ttl_sec": int(inventory_cache_ttl),
+            "all_project_files": int(all_project_files),
+            "files_by_type": files_by_type,
+        }
+        tmp_inv = inventory_cache_path + ".tmp"
+        with open(tmp_inv, "w", encoding="utf-8") as f:
+            json.dump(inv_out, f, indent=2, ensure_ascii=False)
+        os.replace(tmp_inv, inventory_cache_path)
+    except Exception:
+        pass
 
 # 2. PLIKI DO SKANOWANIA (wszystkie z kodem/tekstami)
 scannable_files = sum(files_by_type.get(ext, 0) for ext in scannable_extensions)
@@ -1019,10 +1405,11 @@ files_to_migrate = files_needs_migration
 # 6. JĘZYKI - szczegółowa analiza
 translated_langs = 0
 prepared_langs = 0
+prepared_lang_codes = set()
 langs_with_real_translations = []
 langs_with_placeholders_only = []
 
-for lang_dir in os.listdir(I18N_DIR):
+for lang_dir in ALL_LANGUAGES:
     lang_path = os.path.join(I18N_DIR, lang_dir)
     if not os.path.isdir(lang_path) or lang_dir == 'en':
         continue
@@ -1048,6 +1435,7 @@ for lang_dir in os.listdir(I18N_DIR):
     
     if has_json:
         prepared_langs += 1
+        prepared_lang_codes.add(lang_dir)
         if has_real_translations:
             translated_langs += 1
             langs_with_real_translations.append(lang_dir)
@@ -1096,16 +1484,14 @@ def auto_adjust_target(current, base_target):
     else:
         return ((current // 1000) + 1) * 1000  # np. 15500 -> 16000
 
-# Aktualizuj TARGETS na podstawie aktualnych danych
-category_current = {
-    "items": items_keys, "monsters": monsters_keys, "npc": npc_keys,
-    "scripts": scripts_keys, "spells": spells_keys, "server": server_keys,
-    "system": system_keys, "ui": ui_keys, "php": php_keys, "cpp": cpp_keys,
-    "html": html_keys, "client": client_keys
-}
+# Auto-adjust targets na podstawie aktualnych wartości — WSZYSTKIE kategorie z en/
+category_current = dict(all_json_categories)  # dynamicznie z i18n/en/*.json
 for cat, cur in category_current.items():
     if cat in TARGETS:
         TARGETS[cat] = auto_adjust_target(cur, TARGETS[cat])
+    else:
+        # Nowa kategoria bez zdefiniowanego celu — generuj automatycznie
+        TARGETS[cat] = auto_adjust_target(cur, max(cur, 100))
 
 def progress_bar(current, target, width=20):
     if target == 0:
@@ -1124,18 +1510,32 @@ def status_icon(current, target):
         return "🔄"
     return "⏳"
 
-# Generuj timestamp
-timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+# Generuj timestamp (UTC, spójny z heartbeat/reportami)
+timestamp = datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S')
 
-# Pre-compute roadmap values for table
-roadmap_items = f"| 🎒 Items | {items_keys} | {progress_bar(items_keys, TARGETS['items'])} | {TARGETS['items']} | {status_icon(items_keys, TARGETS['items'])} {round(items_keys/TARGETS['items']*100) if TARGETS['items'] else 0}% |"
-roadmap_npc = f"| 🧙 NPC | {npc_keys} | {progress_bar(npc_keys, TARGETS['npc'])} | {TARGETS['npc']} | {status_icon(npc_keys, TARGETS['npc'])} {round(npc_keys/TARGETS['npc']*100) if TARGETS['npc'] else 0}% |"
-roadmap_scripts = f"| 📜 Scripts | {scripts_keys} | {progress_bar(scripts_keys, TARGETS['scripts'])} | {TARGETS['scripts']} | {status_icon(scripts_keys, TARGETS['scripts'])} {round(scripts_keys/TARGETS['scripts']*100) if TARGETS['scripts'] else 0}% |"
-roadmap_monsters = f"| 👹 Monsters | {monsters_keys} | {progress_bar(monsters_keys, TARGETS['monsters'])} | {TARGETS['monsters']} | {status_icon(monsters_keys, TARGETS['monsters'])} {round(monsters_keys/TARGETS['monsters']*100) if TARGETS['monsters'] else 0}% |"
-roadmap_spells = f"| ✨ Spells | {spells_keys} | {progress_bar(spells_keys, TARGETS['spells'])} | {TARGETS['spells']} | {status_icon(spells_keys, TARGETS['spells'])} {round(spells_keys/TARGETS['spells']*100) if TARGETS['spells'] else 0}% |"
-roadmap_server = f"| ⚙️ Server | {server_keys} | {progress_bar(server_keys, TARGETS['server'])} | {TARGETS['server']} | {status_icon(server_keys, TARGETS['server'])} {round(server_keys/TARGETS['server']*100) if TARGETS['server'] else 0}% |"
-roadmap_system = f"| 🖥️ System | {system_keys} | {progress_bar(system_keys, TARGETS['system'])} | {TARGETS['system']} | {status_icon(system_keys, TARGETS['system'])} {round(system_keys/TARGETS['system']*100) if TARGETS['system'] else 0}% |"
-roadmap_ui = f"| 🎨 UI | {ui_keys} | {progress_bar(ui_keys, TARGETS['ui'])} | {TARGETS['ui']} | {status_icon(ui_keys, TARGETS['ui'])} {round(ui_keys/TARGETS['ui']*100) if TARGETS['ui'] else 0}% |"
+# Pre-compute roadmap values for table — dynamicznie z all_json_categories
+CATEGORY_ICONS = {
+    "achievements": "🏆", "actions": "⚡", "books": "📖", "chatchannels": "💬",
+    "client": "🖥️", "cpp": "⚙️", "creaturescripts": "🐾", "dataroot": "📂",
+    "errors": "❌", "events": "🎉", "globalevents": "🌐", "html": "🌍",
+    "items": "🎒", "libs": "📚", "messages": "✉️", "modules": "📦",
+    "monsters": "👹", "mounts": "🐴", "movements": "🚶", "npc": "🧙",
+    "npclib": "📜", "otclient_data": "📊", "otclient_mods": "🔧",
+    "otclient_modules": "🧩", "otclient_src": "💻", "otclient_tools": "🛠️",
+    "php": "🐘", "questlog": "📋", "quests": "🗡️", "raids": "⚔️",
+    "scripts": "📜", "server": "🖧", "spells": "✨", "startup": "🚀",
+    "system": "🖥️", "talkactions": "🗣️", "ui": "🎨", "world": "🌎",
+}
+roadmap_rows_list = []
+for cat in sorted(all_json_categories.keys()):
+    cur = all_json_categories[cat]
+    tgt = TARGETS.get(cat, cur)
+    icon = CATEGORY_ICONS.get(cat, "📁")
+    pct = round(cur / tgt * 100) if tgt else 0
+    roadmap_rows_list.append(
+        f"| {icon} {cat.capitalize()} | {cur} | {progress_bar(cur, tgt)} | {tgt} | {status_icon(cur, tgt)} {pct}% |"
+    )
+roadmap_table = chr(10).join(roadmap_rows_list)
 
 # Debug targets (łatwiej znaleźć rozjazdy auto-adjust)
 targets_comment = f"<!-- TARGETS {TARGETS} -->"
@@ -1155,6 +1555,683 @@ for _lang in auto_langs:
     status_auto = "✅ TM" if tm_count > 0 else "⚠️ placeholdery (brak TM)"
     auto_rows.append(f"| {_lang.upper()} | {tm_count} | {status_auto} |")
 auto_table = chr(10).join(auto_rows)
+
+LANG_NAMES = {
+    "pl": "Polski",
+    "tr": "Turecki",
+    "de": "Niemiecki",
+    "es": "Hiszpański",
+    "pt": "Portugalski",
+    "ru": "Rosyjski",
+    "fr": "Francuski",
+    "it": "Włoski",
+    "sv": "Szwedzki",
+    "ro": "Rumuński",
+    "cs": "Czeski",
+    "sk": "Słowacki",
+    "hu": "Węgierski",
+    "nl": "Niderlandzki",
+    "uk": "Ukraiński",
+    "ar": "Arabski",
+    "zh": "Chiński",
+    "ja": "Japoński",
+    "ko": "Koreański",
+}
+
+CLIENT_CATEGORIES = {
+    "client", "php", "html", "ui", "otclient_modules", "otclient_data",
+    "otclient_src", "otclient_mods", "otclient_tools"
+}
+
+def _lang_name(code: str) -> str:
+    return LANG_NAMES.get(str(code or "").lower(), str(code or "").upper())
+
+def _scope_from_json(json_file: str) -> str:
+    cat = os.path.splitext(os.path.basename(str(json_file or "")))[0].lower()
+    return "Klient" if cat in CLIENT_CATEGORIES else "Serwer"
+
+def _is_likely_proper_noun_status(key, en_value):
+    """Heurystyka: klucz, którego wartość EN jest prawdopodobnie nazwą własną."""
+    proper_noun_prefixes = (
+        "item.", "monster.", "spell.", "mount.", "quest.", "raid.",
+        "achievement.", "npc.", "book.otbm."
+    )
+    proper_noun_suffixes = (".name", ".words", ".title", ".desc", ".announce")
+    if any(key.startswith(p) for p in proper_noun_prefixes):
+        if any(key.endswith(s) for s in proper_noun_suffixes):
+            return True
+        # Short text (1-4 words) starting with uppercase under proper-noun prefix
+        words = en_value.strip().split()
+        if words and len(words) <= 4 and words[0][0:1].isupper():
+            return True
+    if len(en_value.strip()) <= 3:
+        return True
+    stripped = en_value.strip()
+    if stripped and all(c.isupper() or c.isdigit() or c in ".-_/ " for c in stripped):
+        return True
+    return False
+
+def _is_untranslated(value, en_value, key=""):
+    if value is None:
+        return True
+    text = str(value)
+    if text.startswith("["):
+        return True
+    if text.strip() == "":
+        return True
+    if text == str(en_value):
+        # Nazwy własne identyczne z EN to poprawne tłumaczenia
+        if _is_likely_proper_noun_status(key, str(en_value)):
+            return False
+        return True
+    return False
+
+translation_lang_overview = []
+translation_global = {
+    "total_reference_keys": 0,
+    "translated_keys": 0,
+    "english_copy_keys": 0,
+    "missing_keys": 0,
+    "missing_files": 0,
+}
+
+en_json_dir = os.path.join(I18N_DIR, "en")
+en_json_files_all = sorted([f for f in os.listdir(en_json_dir) if f.endswith(".json")]) if os.path.isdir(en_json_dir) else []
+if SCOPE in ("server", "canary", "server_only", "server-only"):
+    en_json_files = [
+        jf for jf in en_json_files_all
+        if os.path.splitext(jf)[0].lower() not in CLIENT_CATEGORIES
+    ]
+else:
+    en_json_files = en_json_files_all
+
+en_file_key_count = {}
+for jf in en_json_files:
+    try:
+        with open(os.path.join(I18N_DIR, "en", jf), encoding="utf-8") as f:
+            en_file_key_count[jf] = len(json.load(f))
+    except Exception:
+        en_file_key_count[jf] = 0
+
+# Jedno źródło prawdy dla licznika kluczy EN używanego w dashboardzie.
+total_keys = int(sum(en_file_key_count.values()))
+
+# Preload EN dane raz na przebieg STATUSPY (P3 cold-path optimization)
+en_data_cache = {}
+for jf in en_json_files:
+    en_path = os.path.join(I18N_DIR, "en", jf)
+    try:
+        with open(en_path, encoding="utf-8") as f:
+            en_data_cache[jf] = json.load(f)
+    except Exception:
+        en_data_cache[jf] = None
+
+status_translation_dir = os.path.join(I18N_DIR, "status")
+os.makedirs(status_translation_dir, exist_ok=True)
+lang_stats_cache_path = os.path.join(status_translation_dir, "translation_lang_stats_cache.json")
+
+def _safe_stat_sig(path: str):
+    try:
+        st = os.stat(path)
+        return [int(st.st_mtime_ns), int(st.st_size)]
+    except Exception:
+        return [0, 0]
+
+en_signature = []
+for jf in en_json_files:
+    en_path = os.path.join(I18N_DIR, "en", jf)
+    sig = _safe_stat_sig(en_path)
+    en_signature.append([jf, sig[0], sig[1], int(en_file_key_count.get(jf, 0))])
+
+cache_payload = {}
+cache_langs = {}
+cache_valid = False
+try:
+    if os.path.exists(lang_stats_cache_path):
+        with open(lang_stats_cache_path, "r", encoding="utf-8") as f:
+            cache_payload = json.load(f)
+        cache_langs = cache_payload.get("langs", {}) if isinstance(cache_payload.get("langs", {}), dict) else {}
+        cache_valid = (
+            cache_payload.get("version") == 2
+            and cache_payload.get("scope") == SCOPE
+            and cache_payload.get("en_signature") == en_signature
+            and cache_payload.get("en_total_keys") == int(total_keys)
+        )
+except Exception:
+    cache_payload = {}
+    cache_langs = {}
+    cache_valid = False
+
+cache_hits = 0
+cache_misses = 0
+file_cache_hits = 0
+file_cache_misses = 0
+new_cache_langs = {}
+
+def _compute_lang_file_row(lang: str, jf: str, en_data):
+    if not isinstance(en_data, dict):
+        return {
+            "total_reference_keys": 0,
+            "translated_keys": 0,
+            "english_copy_keys": 0,
+            "missing_keys": 0,
+            "missing_files": 0,
+        }
+
+    lang_path = os.path.join(I18N_DIR, lang, jf)
+    total_reference = int(en_file_key_count.get(jf, len(en_data)))
+    translated_ok = 0
+    english_copy = 0
+    missing_keys = 0
+    missing_files = 0
+
+    if not os.path.exists(lang_path):
+        return {
+            "total_reference_keys": total_reference,
+            "translated_keys": 0,
+            "english_copy_keys": 0,
+            "missing_keys": int(len(en_data)),
+            "missing_files": 1,
+        }
+
+    try:
+        with open(lang_path, encoding="utf-8") as f:
+            lang_data = json.load(f)
+    except Exception:
+        return {
+            "total_reference_keys": total_reference,
+            "translated_keys": 0,
+            "english_copy_keys": 0,
+            "missing_keys": int(len(en_data)),
+            "missing_files": 1,
+        }
+
+    for k, en_text in en_data.items():
+        if k not in lang_data:
+            missing_keys += 1
+            continue
+        tr_val = lang_data.get(k)
+        if str(tr_val) == str(en_text):
+            english_copy += 1
+        if not _is_untranslated(tr_val, en_text, k):
+            translated_ok += 1
+
+    return {
+        "total_reference_keys": int(total_reference),
+        "translated_keys": int(translated_ok),
+        "english_copy_keys": int(english_copy),
+        "missing_keys": int(missing_keys),
+        "missing_files": int(missing_files),
+    }
+
+for lang in [l for l in ALL_LANGUAGES if l != "en"]:
+    lang_sig = []
+    lang_sig_by_file = {}
+    for jf in en_json_files:
+        lang_path = os.path.join(I18N_DIR, lang, jf)
+        if os.path.exists(lang_path):
+            sig = _safe_stat_sig(lang_path)
+            sig_row = [1, sig[0], sig[1]]
+            lang_sig.append([jf, sig_row[0], sig_row[1], sig_row[2]])
+            lang_sig_by_file[jf] = sig_row
+        else:
+            sig_row = [0, 0, 0]
+            lang_sig.append([jf, sig_row[0], sig_row[1], sig_row[2]])
+            lang_sig_by_file[jf] = sig_row
+
+    cached_entry = cache_langs.get(lang, {}) if cache_valid else {}
+    cached_files = cached_entry.get("files") if isinstance(cached_entry.get("files"), dict) else {}
+    new_files = {}
+
+    total_reference = 0
+    translated_ok = 0
+    english_copy = 0
+    missing_keys = 0
+    missing_files = 0
+
+    lang_all_files_from_cache = cache_valid and bool(cached_files)
+
+    for jf in en_json_files:
+        current_file_sig = lang_sig_by_file.get(jf, [0, 0, 0])
+        cached_file = cached_files.get(jf, {}) if cache_valid else {}
+        cached_file_sig = cached_file.get("sig") if isinstance(cached_file.get("sig"), list) else None
+        cached_file_row = cached_file.get("row") if isinstance(cached_file.get("row"), dict) else None
+
+        if cache_valid and cached_file_row and cached_file_sig == current_file_sig:
+            file_row = cached_file_row
+            file_cache_hits += 1
+        else:
+            file_row = _compute_lang_file_row(lang, jf, en_data_cache.get(jf))
+            file_cache_misses += 1
+            lang_all_files_from_cache = False
+
+        new_files[jf] = {
+            "sig": current_file_sig,
+            "row": file_row,
+        }
+
+        total_reference += int(file_row.get("total_reference_keys", 0) or 0)
+        translated_ok += int(file_row.get("translated_keys", 0) or 0)
+        english_copy += int(file_row.get("english_copy_keys", 0) or 0)
+        missing_keys += int(file_row.get("missing_keys", 0) or 0)
+        missing_files += int(file_row.get("missing_files", 0) or 0)
+
+    completion = round((translated_ok / total_reference) * 100, 2) if total_reference else 0.0
+    row = {
+        "lang": lang,
+        "language_name": _lang_name(lang),
+        "scope": "global",
+        "total_reference_keys": int(total_reference),
+        "translated_keys": int(translated_ok),
+        "english_copy_keys": int(english_copy),
+        "missing_keys": int(missing_keys),
+        "missing_files": int(missing_files),
+        "completion_pct": completion,
+    }
+
+    if lang_all_files_from_cache:
+        cache_hits += 1
+    else:
+        cache_misses += 1
+
+    translation_lang_overview.append(row)
+    new_cache_langs[lang] = {
+        "sig": lang_sig,
+        "row": row,
+        "files": new_files,
+    }
+
+    translation_global["total_reference_keys"] += int(row.get("total_reference_keys", 0) or 0)
+    translation_global["translated_keys"] += int(row.get("translated_keys", 0) or 0)
+    translation_global["english_copy_keys"] += int(row.get("english_copy_keys", 0) or 0)
+    translation_global["missing_keys"] += int(row.get("missing_keys", 0) or 0)
+    translation_global["missing_files"] += int(row.get("missing_files", 0) or 0)
+
+try:
+    cache_out = {
+        "version": 2,
+        "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+        "scope": SCOPE,
+        "en_total_keys": int(total_keys),
+        "en_signature": en_signature,
+        "cache_hits": int(cache_hits),
+        "cache_misses": int(cache_misses),
+        "file_cache_hits": int(file_cache_hits),
+        "file_cache_misses": int(file_cache_misses),
+        "langs": new_cache_langs,
+    }
+    tmp_path = lang_stats_cache_path + ".tmp"
+    with open(tmp_path, "w", encoding="utf-8") as f:
+        json.dump(cache_out, f, indent=2, ensure_ascii=False)
+    os.replace(tmp_path, lang_stats_cache_path)
+except Exception:
+    pass
+
+cache_hit_pct = round((cache_hits / max(cache_hits + cache_misses, 1)) * 100, 1)
+file_cache_hit_pct = round((file_cache_hits / max(file_cache_hits + file_cache_misses, 1)) * 100, 1)
+cache_mode_label = "warm-cache" if cache_hits > 0 and cache_misses == 0 else ("mixed" if cache_hits > 0 and cache_misses > 0 else "cold-cache")
+
+translation_lang_overview.sort(key=lambda x: (-x.get("completion_pct", 0), x.get("lang", "")))
+
+# Urealnij metrykę "Przetłumaczone": język liczony jako gotowy, jeśli ma >=95% pokrycia
+# i 0 brakujących kluczy (dla języków faktycznie przygotowanych w i18n/<lang>/).
+translated_langs = sum(
+    1 for row in translation_lang_overview
+    if row.get("lang") in prepared_lang_codes
+    and float(row.get("completion_pct", 0.0) or 0.0) >= 95.0
+    and int(row.get("missing_keys", 0) or 0) == 0
+)
+translated_pct = round(translated_langs / prepared_langs * 100, 1) if prepared_langs > 0 else 0
+
+language_rows = []
+for row in translation_lang_overview[:20]:
+    language_rows.append(
+        f"| {row['lang'].upper()} ({row['language_name']}) | {int(row['translated_keys']):,}/{int(row['total_reference_keys']):,} | {row['completion_pct']:.2f}% | {int(row['english_copy_keys']):,} | {int(row['missing_keys']):,} |"
+    )
+translation_lang_table = "\n".join(language_rows) if language_rows else "| - | - | - | - | - |"
+
+global_completion_pct = round((translation_global["translated_keys"] / max(translation_global["total_reference_keys"], 1)) * 100, 2)
+
+def _count_jsonl(path: str):
+    total = 0
+    blocked = 0
+    if not os.path.exists(path):
+        return total, blocked
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if not line:
+                    continue
+                total += 1
+                try:
+                    obj = json.loads(line)
+                except Exception:
+                    continue
+                gf = int(obj.get("guard_fail", 0) or 0)
+                smf = int(obj.get("strict_missing_file", 0) or 0)
+                smk = int(obj.get("strict_missing_key", 0) or 0)
+                ssd = int(obj.get("strict_skipped_done", 0) or 0)
+                if gf > 0 or smf > 0 or smk > 0 or ssd > 0:
+                    blocked += 1
+    except Exception:
+        pass
+    return total, blocked
+
+guard_total, guard_blocked = _count_jsonl(os.path.join(status_translation_dir, "translation_guard_report.jsonl"))
+blockers_total, _ = _count_jsonl(os.path.join(status_translation_dir, "translation_blockers_report.jsonl"))
+cannot_translate_reports = int(guard_blocked + blockers_total)
+
+recent_translation_entry = {}
+recent_translations = []
+try:
+    recent_path = os.path.join(status_translation_dir, "translation_recent_latest.json")
+    if os.path.exists(recent_path):
+        with open(recent_path, "r", encoding="utf-8") as f:
+            recent_translation_entry = json.load(f)
+        if isinstance(recent_translation_entry.get("entries", []), list):
+            recent_translations = recent_translation_entry.get("entries", [])[-20:]
+except Exception:
+    recent_translation_entry = {}
+    recent_translations = []
+
+translation_guard_latest = {}
+try:
+    guard_latest_path = os.path.join(status_translation_dir, "translation_guard_latest.json")
+    if os.path.exists(guard_latest_path):
+        with open(guard_latest_path, "r", encoding="utf-8") as f:
+            translation_guard_latest = json.load(f)
+except Exception:
+    translation_guard_latest = {}
+
+recent_translation_md = "\n".join(
+    [f"- {str(it.get('en', ''))[:80]} → {str(it.get('translated', ''))[:80]} ({it.get('key', '-')})" for it in recent_translations[-20:]]
+) if recent_translations else "- Brak nowych tłumaczeń w ostatnim cyklu"
+
+perf_latest = {}
+perf_summary_md = "-"
+try:
+    perf_path = os.path.join(status_translation_dir, "worker_cycle_perf_latest.json")
+    if os.path.exists(perf_path):
+        with open(perf_path, "r", encoding="utf-8") as f:
+            perf_latest = json.load(f)
+except Exception:
+    perf_latest = {}
+
+try:
+    events = perf_latest.get("events", {}) if isinstance(perf_latest.get("events", {}), dict) else {}
+    dispatch_ms = int(events.get("dispatch", 0) or 0)
+    mode_run_ms = int(events.get("mode_run", 0) or 0)
+    status_update_ms = int(events.get("status_update", 0) or 0)
+    cycle_total_ms = int(events.get("cycle_total", 0) or 0)
+    perf_cycle = int(perf_latest.get("cycle", 0) or 0)
+    perf_mode = str(perf_latest.get("mode", "-") or "-")
+    if cycle_total_ms > 0:
+        perf_summary_md = (
+            f"cykl #{perf_cycle} ({perf_mode}): dispatch {dispatch_ms}ms, "
+            f"mode {mode_run_ms}ms, status {status_update_ms}ms, total {cycle_total_ms}ms"
+        )
+except Exception:
+    perf_summary_md = "-"
+
+
+def _parse_iso_any(value):
+    if value is None:
+        return None
+    try:
+        if isinstance(value, (int, float)):
+            return datetime.fromtimestamp(float(value), tz=timezone.utc)
+        text = str(value).strip()
+        if not text:
+            return None
+        if text.endswith("Z"):
+            text = text[:-1] + "+00:00"
+        dt = datetime.fromisoformat(text)
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        return dt.astimezone(timezone.utc)
+    except Exception:
+        return None
+
+
+def _jsonl_window(path: str, cutoff_dt: datetime):
+    rows = []
+    if not os.path.exists(path):
+        return rows
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if not line:
+                    continue
+                try:
+                    obj = json.loads(line)
+                except Exception:
+                    continue
+                ts = _parse_iso_any(obj.get("timestamp"))
+                if ts and ts >= cutoff_dt:
+                    rows.append(obj)
+    except Exception:
+        pass
+    return rows
+
+
+# ============================================================================
+# STRICT HOURLY WINDOW (JSONL-only contract)
+# ============================================================================
+strict_window_hours = 1.0
+try:
+    strict_window_hours = float(os.environ.get("STATUS_STRICT_WINDOW_HOURS", "1") or "1")
+except Exception:
+    strict_window_hours = 1.0
+if strict_window_hours <= 0:
+    strict_window_hours = 1.0
+
+strict_now = datetime.now(timezone.utc)
+strict_cutoff = strict_now - timedelta(hours=strict_window_hours)
+
+strict_perf_entries = _jsonl_window(
+    os.path.join(status_translation_dir, "worker_cycle_perf.jsonl"),
+    strict_cutoff,
+)
+strict_guard_entries = _jsonl_window(
+    os.path.join(status_translation_dir, "translation_guard_report.jsonl"),
+    strict_cutoff,
+)
+strict_susp_entries = _jsonl_window(
+    os.path.join(status_translation_dir, "suspicious_log.jsonl"),
+    strict_cutoff,
+)
+
+strict_mode_counts = {}
+strict_migration_cats = {}
+strict_duration_ms = 0
+for _row in strict_perf_entries:
+    _mode = str(_row.get("mode", "?") or "?")
+    _cat = str(_row.get("category", "?") or "?")
+    strict_mode_counts[_mode] = int(strict_mode_counts.get(_mode, 0)) + 1
+    strict_duration_ms += int(_row.get("duration_ms", 0) or 0)
+    if _mode == "MIGRATION":
+        strict_migration_cats[_cat] = int(strict_migration_cats.get(_cat, 0)) + 1
+
+strict_total_cycles = len(strict_perf_entries)
+strict_migration_cycles = int(strict_mode_counts.get("MIGRATION", 0))
+strict_pending_skip_count = int(strict_migration_cats.get("pending_skip", 0))
+strict_pending_skip_share_total = (
+    strict_pending_skip_count / strict_total_cycles if strict_total_cycles > 0 else 0.0
+)
+strict_pending_skip_share_migration = (
+    strict_pending_skip_count / strict_migration_cycles if strict_migration_cycles > 0 else 0.0
+)
+
+strict_translated = 0
+strict_guard_fail = 0
+strict_no_progress_entries = 0
+strict_targets = {}
+for _row in strict_guard_entries:
+    _translated = int(_row.get("translated", 0) or 0)
+    _guard_fail = int(_row.get("guard_fail", 0) or 0)
+    strict_translated += _translated
+    strict_guard_fail += _guard_fail
+    if _translated == 0:
+        strict_no_progress_entries += 1
+
+    _lang = str(_row.get("language", "?") or "?").lower()
+    _file = str(_row.get("json_file", "?") or "?")
+    _key = f"{_lang}/{_file}"
+    _tg = strict_targets.get(
+        _key,
+        {"target": _key, "translated": 0, "guard_fail": 0, "guard_command": 0},
+    )
+    _tg["translated"] += _translated
+    _tg["guard_fail"] += _guard_fail
+    _guard_obj = _row.get("guard") if isinstance(_row.get("guard"), dict) else {}
+    _tg["guard_command"] += int(_guard_obj.get("command", 0) or 0)
+    strict_targets[_key] = _tg
+
+strict_attempts = strict_translated + strict_guard_fail
+strict_guard_fail_rate = (strict_guard_fail / strict_attempts) if strict_attempts > 0 else 0.0
+strict_no_progress_rate = (
+    strict_no_progress_entries / len(strict_guard_entries) if len(strict_guard_entries) > 0 else 0.0
+)
+strict_runtime_h = strict_duration_ms / 3600000.0 if strict_duration_ms > 0 else strict_window_hours
+strict_throughput = strict_translated / strict_runtime_h if strict_runtime_h > 0 else 0.0
+strict_top_guard_fail_targets = sorted(
+    strict_targets.values(),
+    key=lambda x: int(x.get("guard_fail", 0)),
+    reverse=True,
+)[:8]
+
+strict_window_payload = {
+    "window_start_utc": strict_cutoff.isoformat().replace("+00:00", "Z"),
+    "window_end_utc": strict_now.isoformat().replace("+00:00", "Z"),
+    "window_hours": round(strict_window_hours, 3),
+    "sources": [
+        "i18n/status/worker_cycle_perf.jsonl",
+        "i18n/status/translation_guard_report.jsonl",
+        "i18n/status/suspicious_log.jsonl",
+    ],
+    "total_cycles": strict_total_cycles,
+    "mode_distribution": strict_mode_counts,
+    "auto_translate_cycles": int(strict_mode_counts.get("AUTO_TRANSLATE", 0)),
+    "migration_cycles": strict_migration_cycles,
+    "pending_skip_count": strict_pending_skip_count,
+    "pending_skip_share_pct": round(strict_pending_skip_share_total * 100, 1),
+    "pending_skip_share_migration_pct": round(strict_pending_skip_share_migration * 100, 1),
+    "translated": strict_translated,
+    "guard_fail": strict_guard_fail,
+    "guard_fail_rate_pct": round(strict_guard_fail_rate * 100, 1),
+    "no_progress_entries": strict_no_progress_entries,
+    "no_progress_rate_pct": round(strict_no_progress_rate * 100, 1),
+    "throughput_keys_per_h": round(strict_throughput, 1),
+    "suspicious_total": len(strict_susp_entries),
+    "top_guard_fail_targets": strict_top_guard_fail_targets,
+}
+
+strict_summary_md = (
+    f"okno={strict_window_payload['window_hours']}h | cycles={strict_total_cycles} | "
+    f"pending_skip={strict_window_payload['pending_skip_share_pct']}% | "
+    f"guard_fail={strict_window_payload['guard_fail_rate_pct']}% | "
+    f"throughput={strict_window_payload['throughput_keys_per_h']}/h"
+)
+strict_sources_md = ", ".join([f"`{p}`" for p in strict_window_payload["sources"]])
+strict_top_targets_md = ", ".join(
+    [
+        f"{it.get('target')} (gf={int(it.get('guard_fail', 0) or 0)})"
+        for it in strict_top_guard_fail_targets[:5]
+    ]
+) if strict_top_guard_fail_targets else "-"
+
+try:
+    with open(os.path.join(status_translation_dir, "strict_hourly_window_latest.json"), "w", encoding="utf-8") as f:
+        json.dump(strict_window_payload, f, indent=2, ensure_ascii=False)
+except Exception:
+    pass
+
+quality_audit_latest = {}
+quality_dashboard = {}
+quality_summary_md = "-"
+quality_top_issues_md = "-"
+quality_worst_langs_md = "-"
+try:
+    qa_path = os.path.join(status_translation_dir, "quality_audit_latest.json")
+    if os.path.exists(qa_path):
+        with open(qa_path, "r", encoding="utf-8") as f:
+            quality_audit_latest = json.load(f)
+except Exception:
+    quality_audit_latest = {}
+
+try:
+    qd_path = os.path.join(status_translation_dir, "quality_dashboard.json")
+    if os.path.exists(qd_path):
+        with open(qd_path, "r", encoding="utf-8") as f:
+            quality_dashboard = json.load(f)
+except Exception:
+    quality_dashboard = {}
+
+try:
+    qa_checked = int(quality_audit_latest.get("checked_entries", 0) or 0)
+    qa_issues = int(quality_audit_latest.get("issues_found", 0) or 0)
+    qa_ts = str(quality_audit_latest.get("timestamp", "-") or "-")
+    qa_slow = bool(quality_audit_latest.get("slow_mode", False))
+    qa_status = "SLOW_MODE" if qa_slow else "OK"
+    if qa_checked > 0 or qa_issues > 0:
+        quality_summary_md = f"{qa_status} | {qa_issues} issue(s) / {qa_checked} entries | {qa_ts}"
+
+    by_type = quality_audit_latest.get("issues_by_type", {}) if isinstance(quality_audit_latest.get("issues_by_type", {}), dict) else {}
+    top_types = sorted(by_type.items(), key=lambda x: int(x[1] or 0), reverse=True)[:5]
+    if top_types:
+        quality_top_issues_md = ", ".join([f"{k}={int(v or 0)}" for k, v in top_types])
+
+    lang_rows = []
+    for lang, row in (quality_dashboard.items() if isinstance(quality_dashboard, dict) else []):
+        if not isinstance(row, dict):
+            continue
+        score = float(row.get("quality_score", 100.0) or 100.0)
+        cnt = int(row.get("issues_count", 0) or 0)
+        lang_rows.append((lang, score, cnt))
+    worst = sorted(lang_rows, key=lambda x: (x[1], -x[2], x[0]))[:5]
+    if worst:
+        quality_worst_langs_md = ", ".join([f"{lang}({score:.1f}, issues={cnt})" for lang, score, cnt in worst])
+except Exception:
+    pass
+
+overview_payload = {
+    "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+    "global": {
+        **translation_global,
+        "completion_pct": global_completion_pct,
+    },
+    "reports": {
+        "guard_reports_total": guard_total,
+        "guard_reports_blocked": guard_blocked,
+        "blockers_reports_total": blockers_total,
+        "cannot_translate_reports_visible": cannot_translate_reports,
+    },
+    "cache": {
+        "lang_stats_hits": int(cache_hits),
+        "lang_stats_misses": int(cache_misses),
+        "lang_stats_hit_pct": cache_hit_pct,
+        "lang_stats_mode": cache_mode_label,
+        "lang_file_hits": int(file_cache_hits),
+        "lang_file_misses": int(file_cache_misses),
+        "lang_file_hit_pct": file_cache_hit_pct,
+        "lang_stats_cache_file": "i18n/status/translation_lang_stats_cache.json",
+    },
+    "profiler_latest": perf_latest,
+    "strict_hourly_window": strict_window_payload,
+    "quality": {
+        "audit_latest": quality_audit_latest,
+        "dashboard": quality_dashboard,
+        "summary": quality_summary_md,
+    },
+    "languages": translation_lang_overview,
+}
+try:
+    with open(os.path.join(status_translation_dir, "translation_global_overview.json"), "w", encoding="utf-8") as f:
+        json.dump(overview_payload, f, indent=2, ensure_ascii=False)
+except Exception:
+    pass
 
 # ============ WCZYTAJ ROZSZERZONE DANE Z i18n_global_stats.json ============
 global_stats = {}
@@ -1271,7 +2348,7 @@ if not heartbeat_iso and worker_state_present:
     heartbeat_iso = (worker_state.get("worker", {}) or {}).get("heartbeat_at_utc")
 
 heartbeat_age = _heartbeat_age_seconds(heartbeat_iso) if heartbeat_iso else 0
-stale_threshold_seconds = 120
+stale_threshold_seconds = 360  # 6 min, bo IDLE sleep = 300s + margines
 is_stale = bool(heartbeat_iso) and heartbeat_age >= stale_threshold_seconds
 
 # Dane specyficzne dla trybu
@@ -1279,6 +2356,7 @@ migration_data = global_stats.get("migration", {})
 translation_sync_data_gs = global_stats.get("translation_sync", {})
 auto_translate_data = global_stats.get("auto_translate", {})
 idle_data = global_stats.get("idle", {})
+translations_only_mode = (os.environ.get("TRANSLATIONS_ONLY", "false") or "false").lower() == "true"
 
 # ============ GENERUJ LIVE DISPLAY W ZALEŻNOŚCI OD TRYBU ============
 def fit(text: str, width: int = 61) -> str:
@@ -1380,12 +2458,20 @@ elif last_mode == "AUTO_TRANSLATE":
     at_lang = auto_translate_data.get("language", "?")
     at_file = auto_translate_data.get("json_file", "?")
     at_keys = auto_translate_data.get("keys_to_translate", 0)
+    at_guard_fail = auto_translate_data.get("guard_fail", 0)
+    at_strict_missing = auto_translate_data.get("strict_missing_key", 0)
+    at_recent = auto_translate_data.get("recent_translated", 0)
+    at_scope = _scope_from_json(at_file)
+    at_lang_name = _lang_name(at_lang)
+    at_folder_label = f"{str(at_lang).upper()} - {at_lang_name} - {at_scope}"
     category_display = f"🤖 {at_lang.upper()}/{at_file}"
     
     live_details = f"""│ 📊 Automatyczne tłumaczenie                                       │
-│    ├─ Język:          {at_lang.upper():>10}                               │
+│    ├─ Folder:         {at_folder_label[:28]:>28}                       │
 │    ├─ Plik:           {at_file:>20}                       │
-│    └─ Kluczy:         {at_keys:>6}                                 │"""
+│    ├─ Kluczy:         {at_keys:>6}                                 │
+│    ├─ Ostatnio:       {at_recent:>6} przetłumaczonych                  │
+│    └─ Guard/Strict:   {at_guard_fail:>3}/{at_strict_missing:>3}                              │"""
 
     summary_phase = "AUTO_TRANSLATE"
     summary_stage = "-"
@@ -1448,7 +2534,13 @@ elif last_mode == "IDLE":
     new_files = idle_data.get("new_files_detected", 0)
     quality_issues = idle_data.get("quality_issues", 0)
     
-    live_details = f"""│ 📊 Tryb IDLE - wszystko zrobione                                  │
+    if translations_only_mode:
+        blocker = auto_translate_data.get("strict_blocker", "")
+        live_details = f"""│ 📊 Tryb IDLE - strict tłumaczenia                                 │
+│    ├─ Blokery:        {(blocker or 'brak'):>20}                       │
+│    └─ Problemy TM:    {quality_issues:>6}                                 │"""
+    else:
+        live_details = f"""│ 📊 Tryb IDLE - wszystko zrobione                                  │
 │    ├─ Nowe pliki:     {new_files:>6} {'(restart!)' if new_files > 0 else '(brak)'}             │
 │    └─ Problemy TM:    {quality_issues:>6}                                 │"""
 
@@ -1468,6 +2560,9 @@ else:
     summary_category = str(last_category or "-")
     summary_file = "-"
     summary_eta = "-"
+
+if translations_only_mode:
+    mode_display = f"{mode_display} | STRICT"
 
 # TM coverage (do notki o placeholderach)
 try:
@@ -1573,14 +2668,294 @@ try:
 except Exception:
     cycle_ops_md = "- Brak operacji"
 
+active_lang = str(auto_translate_data.get("language", "") or recent_translation_entry.get("language", "") or "-")
+active_file = str(auto_translate_data.get("json_file", "") or recent_translation_entry.get("json_file", "") or "-")
+active_scope = _scope_from_json(active_file) if active_file not in ("", "-") else "-"
+active_lang_name = _lang_name(active_lang) if active_lang not in ("", "-") else "-"
+active_folder_display = f"{active_lang.upper()} - {active_lang_name} - {active_scope}" if active_lang not in ("", "-") else "-"
+recent_count = len(recent_translations)
+report_counter_md = f"- Guard reports: **{guard_total}**  \n- Blocker reports: **{blockers_total}**  \n- Widoczne raporty 'nie mogę tłumaczyć': **{cannot_translate_reports}**"
+
+# ============ SECTION METADATA (P0.1 Spójny status) ============
+_now_utc = datetime.now(timezone.utc)
+
+def _section_state(phase_list, current_phase):
+    """Returns (state_label, reason) based on current worker mode."""
+    current = str(current_phase or "").upper()
+    if current in [p.upper() for p in phase_list]:
+        return ("🟢 ACTIVE", "")
+    return ("🔒 INACTIVE", f"worker w trybie {current}")
+
+def _freshness_label(iso_or_ts):
+    """Human-readable freshness from ISO timestamp or unix timestamp."""
+    if not iso_or_ts:
+        return "brak danych"
+    try:
+        if isinstance(iso_or_ts, (int, float)):
+            dt = datetime.fromtimestamp(float(iso_or_ts), tz=timezone.utc)
+        else:
+            dt = _parse_iso_z(str(iso_or_ts))
+        if not dt:
+            return "?"
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        age = (_now_utc - dt).total_seconds()
+        if age < 0:
+            return "przyszłość?"
+        if age < 60:
+            return f"{int(age)}s temu"
+        if age < 3600:
+            return f"{int(age//60)}min temu"
+        if age < 86400:
+            return f"{int(age//3600)}h temu"
+        return f"{int(age//86400)}d temu"
+    except Exception:
+        return "?"
+
+def _section_hdr(name, state, reason, freshness, source, last_update):
+    """Generate section metadata block."""
+    reason_txt = f" ({reason})" if reason else ""
+    return (
+        f"> **[{name}]** {state}{reason_txt}  \n"
+        f"> Świeżość: {freshness} | Źródło: `{source}` | Ostatnia aktualizacja: {last_update}"
+    )
+
+# Current phase for section state computation
+_current_phase = str(summary_phase if 'summary_phase' in dir() else last_mode or "").upper()
+
+# Section states
+sec_meta_state, sec_meta_reason = "🟢 ACTIVE", ""
+sec_live_state, sec_live_reason = _section_state(
+    ["MIGRATION", "TRANSLATION_SYNC", "AUTO_TRANSLATE", "COMPACT_KEYS", "VALIDATION", "IDLE"],
+    _current_phase
+)
+sec_migration_state, sec_migration_reason = _section_state(
+    ["MIGRATION", "COMPACT_KEYS"], _current_phase
+)
+sec_translation_state, sec_translation_reason = _section_state(
+    ["AUTO_TRANSLATE", "TRANSLATION_SYNC"], _current_phase
+)
+sec_quality_state, sec_quality_reason = _section_state(["VALIDATION"], _current_phase)
+sec_history_state, sec_history_reason = "🟢 ACTIVE", ""
+
+# Section sources + last_update
+meta_source = "update_github_status()"
+meta_last_update = timestamp
+live_source = "activity.json / worker_state.json"
+live_last_update = str(heartbeat_iso or "-")
+migration_source = "i18n_file_status.json"
+migration_last_update = timestamp
+translation_source = "translation_guard_latest.json / translation_recent_latest.json"
+translation_last_update = next(
+    (
+        str(_v)
+        for _v in [
+            translation_guard_latest.get("timestamp") if isinstance(translation_guard_latest, dict) else None,
+            recent_translation_entry.get("timestamp") if isinstance(recent_translation_entry, dict) else None,
+            heartbeat_iso if _current_phase in ("AUTO_TRANSLATE", "TRANSLATION_SYNC") else None,
+        ]
+        if _v
+    ),
+    "-",
+)
+quality_source = "quality_audit_latest.json"
+quality_last_update = str(quality_audit_latest.get("timestamp", "-")) if isinstance(quality_audit_latest, dict) else "-"
+history_source = "daily/*.json / ops.jsonl"
+history_last_update = timestamp
+
+# Section freshness
+meta_freshness = "teraz"
+live_freshness = _freshness_label(heartbeat_iso) if heartbeat_iso else "brak heartbeat"
+migration_freshness = _freshness_label(last_activity_time) if last_activity_time > 0 else "brak aktywności migracji"
+translation_freshness = _freshness_label(translation_last_update) if translation_last_update != "-" else "brak"
+quality_freshness = _freshness_label(quality_last_update) if quality_last_update != "-" else "brak"
+history_freshness = "teraz"
+
+# Generate section metadata headers
+meta_section_hdr = _section_hdr("META", sec_meta_state, sec_meta_reason, meta_freshness,
+    meta_source, meta_last_update)
+live_section_hdr = _section_hdr("LIVE", sec_live_state, sec_live_reason, live_freshness,
+    live_source, live_last_update)
+migration_section_hdr = _section_hdr("MIGRATION", sec_migration_state, sec_migration_reason,
+    migration_freshness, migration_source, migration_last_update)
+translation_section_hdr = _section_hdr("TRANSLATION", sec_translation_state, sec_translation_reason,
+    translation_freshness, translation_source, translation_last_update)
+quality_section_hdr = _section_hdr("QUALITY", sec_quality_state, sec_quality_reason,
+    quality_freshness, quality_source, quality_last_update)
+history_section_hdr = _section_hdr("HISTORY", sec_history_state, sec_history_reason,
+    history_freshness, history_source, history_last_update)
+
+def _state_plain(state_label: str) -> str:
+    label = str(state_label or "").upper()
+    if "INACTIVE" in label:
+        return "inactive"
+    if "ACTIVE" in label:
+        return "active"
+    return "unknown"
+
+def _section_record(name, state, reason, freshness, source, last_update):
+    return {
+        "name": name,
+        "state": _state_plain(state),
+        "state_label": state,
+        "reason": reason or "",
+        "freshness": freshness,
+        "source": source,
+        "last_update": str(last_update),
+    }
+
+section_records = [
+    _section_record("META", sec_meta_state, sec_meta_reason, meta_freshness, meta_source, meta_last_update),
+    _section_record("LIVE", sec_live_state, sec_live_reason, live_freshness, live_source, live_last_update),
+    _section_record("MIGRATION", sec_migration_state, sec_migration_reason, migration_freshness, migration_source, migration_last_update),
+    _section_record("TRANSLATION", sec_translation_state, sec_translation_reason, translation_freshness, translation_source, translation_last_update),
+    _section_record("QUALITY", sec_quality_state, sec_quality_reason, quality_freshness, quality_source, quality_last_update),
+    _section_record("HISTORY", sec_history_state, sec_history_reason, history_freshness, history_source, history_last_update),
+]
+
+sections_matrix_md = "\n".join(
+    [
+        f"| {r['name']} | {r['state_label']} | {r['freshness']} | {r['reason'] or '-'} | `{r['source']}` | {r['last_update']} |"
+        for r in section_records
+    ]
+)
+
+sections_payload = {
+    "schema_version": "1.0",
+    "generated_at_utc": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+    "current_phase": _current_phase,
+    "sections": {r["name"]: {
+        "state": r["state"],
+        "state_label": r["state_label"],
+        "reason": r["reason"],
+        "freshness": r["freshness"],
+        "source": r["source"],
+        "last_update": r["last_update"],
+    } for r in section_records},
+}
+try:
+    with open(os.path.join(status_translation_dir, "status_sections_latest.json"), "w", encoding="utf-8") as f:
+        json.dump(sections_payload, f, indent=2, ensure_ascii=False)
+except Exception:
+    pass
+
+# net_effective_translated (P0.1 checklist item 3)
+net_effective_translated = 0
+try:
+    _grd_path = os.path.join(status_translation_dir, "translation_guard_report.jsonl")
+    if os.path.exists(_grd_path):
+        with open(_grd_path, "r", encoding="utf-8") as _gf:
+            for _gl in _gf:
+                _gl = _gl.strip()
+                if not _gl:
+                    continue
+                try:
+                    _ge = json.loads(_gl)
+                    net_effective_translated += max(0, int(_ge.get("translated", 0) or 0) - int(_ge.get("guard_fail", 0) or 0))
+                except Exception:
+                    pass
+except Exception:
+    pass
+
+# ============ DASHBOARD KPI — Pilot health PL/ES ============
+kpi_pilot_langs = ["pl", "es"]
+kpi_data = {}
+for _kl in kpi_pilot_langs:
+    _row = next((r for r in translation_lang_overview if r.get("lang") == _kl), None)
+    _cov = float(_row.get("completion_pct", 0) or 0) if _row else 0.0
+    _miss = int(_row.get("missing_keys", 0) or 0) if _row else 0
+    _encopy = int(_row.get("english_copy_keys", 0) or 0) if _row else 0
+
+    # Per-lang guard stats from last 200 entries
+    _kpi_translated = 0
+    _kpi_guard_fail = 0
+    _kpi_entries = 0
+    try:
+        _grd_path2 = os.path.join(status_translation_dir, "translation_guard_report.jsonl")
+        if os.path.exists(_grd_path2):
+            with open(_grd_path2, "r", encoding="utf-8") as _gf2:
+                _lines2 = _gf2.readlines()
+            for _gl2 in _lines2[-200:]:
+                _gl2 = _gl2.strip()
+                if not _gl2:
+                    continue
+                try:
+                    _ge2 = json.loads(_gl2)
+                    if str(_ge2.get("language", "")).lower() == _kl:
+                        _kpi_entries += 1
+                        _kpi_translated += int(_ge2.get("translated", 0) or 0)
+                        _kpi_guard_fail += int(_ge2.get("guard_fail", 0) or 0)
+                except Exception:
+                    pass
+    except Exception:
+        pass
+    _kpi_gf_rate = round(_kpi_guard_fail / max(_kpi_translated + _kpi_guard_fail, 1) * 100, 1)
+    kpi_data[_kl] = {
+        "coverage_pct": round(_cov, 2),
+        "missing_keys": _miss,
+        "en_copy": _encopy,
+        "translated_recent": _kpi_translated,
+        "guard_fail_recent": _kpi_guard_fail,
+        "guard_fail_rate_pct": _kpi_gf_rate,
+        "entries": _kpi_entries,
+    }
+
+# Adaptive batch state
+_adaptive_label = "-"
+try:
+    _adf = os.path.join(status_translation_dir, "adaptive_batch_state.json")
+    if os.path.exists(_adf):
+        with open(_adf) as _af:
+            _ad = json.load(_af)
+        _adaptive_label = f"batch={_ad.get('batch_size', '?')}, gf_rate={_ad.get('guard_fail_rate', '?')}%, reason={_ad.get('reason', '?')}"
+except Exception:
+    pass
+
+# Build KPI table rows
+kpi_rows = []
+for _kl in kpi_pilot_langs:
+    d = kpi_data[_kl]
+    health_icon = "🟢" if d["coverage_pct"] >= 80 and d["guard_fail_rate_pct"] < 10 else ("🟡" if d["coverage_pct"] >= 50 else "🔴")
+    kpi_rows.append(
+        f"| {health_icon} {_kl.upper()} | {d['coverage_pct']:.1f}% | {d['missing_keys']:,} | {d['en_copy']:,} | "
+        f"{d['translated_recent']:,} | {d['guard_fail_recent']} ({d['guard_fail_rate_pct']}%) | {d['entries']} |"
+    )
+kpi_table = chr(10).join(kpi_rows)
+
 # ==================== GENERUJ PEŁNY I18N_STATUS.md ====================
 md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 
 {targets_comment}
 
+## 🧭 META
+
+{meta_section_hdr}
+
 > **Aktualizacja:** {timestamp} UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** {langs_count} | **Klucze EN:** {total_keys}  
-> **LIVE:** Cykl #{cycle_count} | Status: {status_display} | Faza: {summary_phase} | Etap: {summary_stage} | Kategoria: {summary_category} | Plik: {summary_file} | ETA: {summary_eta} | Heartbeat: {str(heartbeat_iso or '-')}
+> **LIVE:** Cykl #{cycle_count} | Status: {status_display} | Faza: {summary_phase} | Etap: {summary_stage} | Kategoria: {summary_category} | Plik: {summary_file} | ETA: {summary_eta} | Heartbeat: {str(heartbeat_iso or '-')}  
+> **Strict hourly (JSONL-only):** {strict_summary_md}  
+> **Net effective translated:** {net_effective_translated:,}
+
+### 🧩 Status sekcji (P0.1)
+| Sekcja | Stan | Świeżość | Powód | Źródło | Ostatnia aktualizacja |
+|--------|------|----------|-------|--------|-----------------------|
+{sections_matrix_md}
+
+> Artefakt machine-readable: `i18n/status/status_sections_latest.json`
+
+---
+
+## 🔴 LIVE
+
+{live_section_hdr}
+
+- **Faza:** `{summary_phase}`
+- **Etap:** `{summary_stage}`
+- **Kategoria:** `{summary_category}`
+- **Plik:** `{summary_file}`
+- **Status:** {status_display}
+- **Heartbeat:** `{str(heartbeat_iso or '-')}`
 
 ---
 
@@ -1600,9 +2975,41 @@ md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 - Wpisz **jedną** komendę w nowej linii (bez `#`), np.: `FORCE:scripts:ONCE` lub `COMPACT_KEYS:ONCE`
 - Worker sam zakomentuje wykonaną komendę i dopisze historię.
 
+#### Sterowanie językiem
+| Komenda | Opis |
+|---------|------|
+| `LANG:<lang>` | Przypiąj worker do jednego języka (auto-wybór plików) |
+| `LANG:<lang>:<plik1>,<plik2>,...` | Przypiąj język + cyklicznie przechodź podane pliki |
+| `LANG:random` | Przywróć tryb losowy (wszystkie języki) |
+| `FOCUS:<lang>[:json[:limit]]` | Skup na języku (persystentne, zapis do config) |
+| `UNFOCUS` | Zdejmij focus, wróć do tier-round-robin |
+
+#### Tłumaczenie i testy
+| Komenda | Opis |
+|---------|------|
+| `AUTO:<lang>:<json>:<limit>` | Jednorazowe tłumaczenie (lang/plik/limit) |
+| `TEST:<lang>` | Pełny test: translate + validate + crossref (1 cykl) |
+| `TEST_ALL` | Dodaj WSZYSTKIE języki do kolejki testowej |
+| `LANGVAL:all` / `LANGVAL:<lang>` | Wymuś walidację |
+| `SPOTCHECK:<lang>[:N]` | Losowy audit N tłumaczeń |
+| `GRAMMARFIX:<lang>[:json[:N]]` | Napraw EN-copy/artefakty + walidacja |
+
+#### Konfiguracja w locie
+| Komenda | Opis |
+|---------|------|
+| `GT:on` / `GT:off` | Włącz/wyłącz Google Translate |
+| `BATCH:<N>` | Ustaw translate_limit na N kluczy/cykl |
+| `SET:<key>=<value>` | Zmień wartość w worker_config.json |
+| `RESTART` | Restart workera (git pull + exec) |
+| `CONFIG` | Wyświetl aktualną konfigurację |
+| `REPORT` / `LANGS` | Raport coverage / lista języków |
+| `SKIP` / `PAUSE:<N>` / `IDLE` | Kontrola cyklu |
+
 ---
 
-## 📊 Globalny Postęp
+## 🛠️ MIGRATION
+
+{migration_section_hdr}
 
 ### 📁 Pliki Projektu (pełny skan)
 | Metryka | Wartość | Procent | Info |
@@ -1641,13 +3048,65 @@ md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 | 📊 HTML | {html_keys:,} | widoki web |
 | 📊 Pozostałe | {total_keys - npc_keys - items_keys - monsters_keys - html_keys:,} | scripts, spells, etc. |
 
-### 🌍 Języki i Tłumaczenia
+## 🌍 TRANSLATION
+
+{translation_section_hdr}
+
 | Metryka | Wartość | Procent | Info |
 |---------|---------|---------|------|
 | 🌐 Wszystkie języki | **{langs_count}** | 100% | foldery w i18n/ |
 | 📋 Przygotowane | **{prepared_langs}** | {round(prepared_langs/langs_count*100) if langs_count else 0}% | mają pliki [EN] |
-| ✅ **Przetłumaczone** | **{translated_langs}** | **{translated_pct}%** | prawdziwe tłumaczenia |
-| ⏳ Do tłumaczenia | **{prepared_langs - translated_langs}** | - | tylko placeholdery |
+| ✅ **Przetłumaczone** | **{translated_langs}** | **{translated_pct}%** | >=95% pokrycia i 0 braków kluczy |
+| ⏳ Do tłumaczenia | **{prepared_langs - translated_langs}** | - | wymagają dalszego uzupełnienia |
+
+### 🎯 Pokrycie tłumaczeń per język (EN → LANG)
+| Język | Przetłumaczone | % poprawnie przetłumaczonych | EN-copy | Braki kluczy |
+|-------|----------------|-------------------------------|---------|--------------|
+{translation_lang_table}
+
+### 🧭 Aktywny folder tłumaczeń
+- **Folder:** {active_folder_display}
+- **Plik JSON:** {active_file}
+- **Ostatnie klucze (10-20):** {recent_count}
+
+### 📝 Ostatnie 10-20 przetłumaczonych kluczy
+{recent_translation_md}
+
+### 🚫 Raporty "nie mogę przetłumaczyć"
+{report_counter_md}
+
+### 🌐 Globalne info wszystkich języków
+- **Global completion:** **{global_completion_pct}%** ({translation_global['translated_keys']:,}/{translation_global['total_reference_keys']:,})
+- **EN-copy łącznie:** **{translation_global['english_copy_keys']:,}**
+- **Braki kluczy łącznie:** **{translation_global['missing_keys']:,}**
+- **Brakujące pliki językowe:** **{translation_global['missing_files']:,}**
+- **Cache STATUSPY (per-lang):** **{cache_mode_label}** | hit **{cache_hits}**, miss **{cache_misses}**, hit-rate **{cache_hit_pct}%**
+- **Cache STATUSPY (per-file):** hit **{file_cache_hits}**, miss **{file_cache_misses}**, hit-rate **{file_cache_hit_pct}%**
+- **Profiler cyklu (ostatni):** {perf_summary_md}
+- **Osobny raport:** `i18n/status/translation_global_overview.json`
+
+### ⏱️ Strict Hourly Window (JSONL-only)
+| Metryka | Wartość |
+|---------|---------|
+| Okno | **{strict_window_payload['window_hours']}h** ({strict_window_payload['window_start_utc']} → {strict_window_payload['window_end_utc']}) |
+| Cykle | **{strict_window_payload['total_cycles']}** (AUTO={strict_window_payload['auto_translate_cycles']}, MIGRATION={strict_window_payload['migration_cycles']}) |
+| Pending skip | **{strict_window_payload['pending_skip_count']}** (all={strict_window_payload['pending_skip_share_pct']}%, migration={strict_window_payload['pending_skip_share_migration_pct']}%) |
+| Guard fail rate | **{strict_window_payload['guard_fail_rate_pct']}%** |
+| No progress rate | **{strict_window_payload['no_progress_rate_pct']}%** |
+| Throughput | **{strict_window_payload['throughput_keys_per_h']} kluczy/h** |
+| Suspicious | **{strict_window_payload['suspicious_total']}** |
+| Top guard_fail targets | {strict_top_targets_md} |
+| Źródła | {strict_sources_md} |
+| Plik | `i18n/status/strict_hourly_window_latest.json` |
+
+## 🔬 QUALITY
+
+{quality_section_hdr}
+
+- **Ostatni audyt:** {quality_summary_md}
+- **Top 5 typów problemów:** {quality_top_issues_md}
+- **Języki o najsłabszej jakości:** {quality_worst_langs_md}
+- **Pliki:** `i18n/status/quality_audit_latest.json`, `i18n/status/quality_dashboard.json`, `i18n/status/quality_report.jsonl`
 
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
@@ -1675,8 +3134,9 @@ md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 
 ## ✅ CHECKLIST - Plan Pracy
 
-> **Aktualna faza:** 🎮 Canary Server  
-> **Aktualna kategoria:** NPC Migration
+> **Aktualna faza:** {summary_phase}  
+> **Aktualna kategoria:** {summary_category}
+{"> **Tryb:** 🔒 TRANSLATIONS_ONLY STRICT (bez dodawania nowych kluczy)" if os.environ.get("TRANSLATIONS_ONLY", "false") == "true" else ""}
 
 ### 🔄 Faza 1: 🎮 Canary Server
 
@@ -1694,20 +3154,20 @@ md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 | Kategoria | Status | Postęp | Cel |
 |-----------|--------|--------|-----|
 | 🐘 PHP Backend | {status_icon(php_keys, TARGETS["php"])} | {php_keys}/{TARGETS["php"]} ({round(php_keys/TARGETS["php"]*100) if TARGETS["php"] else 0}%) | {TARGETS["php"]} |
-| 📄 HTML Views | {status_icon(html_keys, 300)} | {html_keys}/300 ({round(html_keys/300*100) if html_keys else 0}%) | 300 |
+| 📄 HTML Views | {status_icon(html_keys, TARGETS["html"])} | {html_keys}/{TARGETS["html"]} ({round(html_keys/TARGETS["html"]*100) if TARGETS["html"] else 0}%) | {TARGETS["html"]} |
 | 📦 JavaScript | {status_icon(client_keys, TARGETS["client"])} | {client_keys}/{TARGETS["client"]} ({round(client_keys/TARGETS["client"]*100) if TARGETS["client"] else 0}%) | {TARGETS["client"]} |
 
 ### ⏳ Faza 3: 📱 OTClient / Testyy
 
 | Kategoria | Status | Postęp | Cel |
 |-----------|--------|--------|-----|
-| 🖥️ Client UI | {status_icon(ui_keys, 200)} | {ui_keys}/200 ({round(ui_keys/200*100)}%) | 200 |
+| 🖥️ Client UI | {status_icon(ui_keys, TARGETS["ui"])} | {ui_keys}/{TARGETS["ui"]} ({round(ui_keys/TARGETS["ui"]*100) if TARGETS["ui"] else 0}%) | {TARGETS["ui"]} |
 | 💿 Server C++ | {status_icon(cpp_keys, TARGETS["cpp"])} | {cpp_keys}/{TARGETS["cpp"]} ({round(cpp_keys/TARGETS["cpp"]*100) if TARGETS["cpp"] else 0}%) | {TARGETS["cpp"]} |
-| 🎮 OTClient Modules | {status_icon(otclient_modules_keys, 500)} | {otclient_modules_keys}/500 ({round(otclient_modules_keys/500*100) if otclient_modules_keys else 0}%) | 500 |
-| 📦 OTClient Data | {status_icon(otclient_data_keys, 200)} | {otclient_data_keys}/200 ({round(otclient_data_keys/200*100) if otclient_data_keys else 0}%) | 200 |
-| ⚙️ OTClient Src | {status_icon(otclient_src_keys, 300)} | {otclient_src_keys}/300 ({round(otclient_src_keys/300*100) if otclient_src_keys else 0}%) | 300 |
-| 🔧 OTClient Mods | {status_icon(otclient_mods_keys, 100)} | {otclient_mods_keys}/100 ({round(otclient_mods_keys/100*100) if otclient_mods_keys else 0}%) | 100 |
-| 🛠️ OTClient Tools | {status_icon(otclient_tools_keys, 50)} | {otclient_tools_keys}/50 ({round(otclient_tools_keys/50*100) if otclient_tools_keys else 0}%) | 50 |
+| 🎮 OTClient Modules | {status_icon(otclient_modules_keys, TARGETS["otclient_modules"])} | {otclient_modules_keys}/{TARGETS["otclient_modules"]} ({round(otclient_modules_keys/TARGETS["otclient_modules"]*100) if TARGETS["otclient_modules"] else 0}%) | {TARGETS["otclient_modules"]} |
+| 📦 OTClient Data | {status_icon(otclient_data_keys, TARGETS["otclient_data"])} | {otclient_data_keys}/{TARGETS["otclient_data"]} ({round(otclient_data_keys/TARGETS["otclient_data"]*100) if TARGETS["otclient_data"] else 0}%) | {TARGETS["otclient_data"]} |
+| ⚙️ OTClient Src | {status_icon(otclient_src_keys, TARGETS["otclient_src"])} | {otclient_src_keys}/{TARGETS["otclient_src"]} ({round(otclient_src_keys/TARGETS["otclient_src"]*100) if TARGETS["otclient_src"] else 0}%) | {TARGETS["otclient_src"]} |
+| 🔧 OTClient Mods | {status_icon(otclient_mods_keys, TARGETS["otclient_mods"])} | {otclient_mods_keys}/{TARGETS["otclient_mods"]} ({round(otclient_mods_keys/TARGETS["otclient_mods"]*100) if TARGETS["otclient_mods"] else 0}%) | {TARGETS["otclient_mods"]} |
+| 🛠️ OTClient Tools | {status_icon(otclient_tools_keys, TARGETS["otclient_tools"])} | {otclient_tools_keys}/{TARGETS["otclient_tools"]} ({round(otclient_tools_keys/TARGETS["otclient_tools"]*100) if TARGETS["otclient_tools"] else 0}%) | {TARGETS["otclient_tools"]} |
 
 ### ⏳ Faza 4: 🌍 Tłumaczenia (Etap 1: Sync Kluczy)
 
@@ -1731,7 +3191,9 @@ md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 **Języki bez TM (AUTO → placeholdery):** {', '.join(no_tm_langs[:8]) + ('...' if len(no_tm_langs) > 8 else '') if no_tm_langs else 'brak (TM dostępny)'}
 ---
 
-## 🔴 LIVE: Aktualna Aktywność
+## 🔴 LIVE: Szczegóły wykonania
+
+{live_section_hdr}
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
@@ -1753,7 +3215,23 @@ md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 
 ---
 
-## 🔁 W tym cyklu
+## 📊 KPI Dashboard — Pilot Health (PL/ES)
+
+| Język | Coverage | Brakujące | EN-copy | Translated(200) | Guard fail | Entries |
+|-------|----------|-----------|---------|-----------------|------------|---------|
+{kpi_table}
+
+| KPI | Wartość | Target | Status |
+|-----|---------|--------|--------|
+| Net effective translated | **{net_effective_translated:,}** | — | 📊 |
+| Adaptive batch | {_adaptive_label} | gf <5% → increase | 📊 |
+| Throughput (last window) | {sum(d['translated_recent'] for d in kpi_data.values()):,} keys / {sum(d['entries'] for d in kpi_data.values())} entries | >50/h | 📊 |
+
+---
+
+## 📜 HISTORY
+
+{history_section_hdr}
 
 {cycle_ops_md}
 
@@ -2025,6 +3503,193 @@ if lang_progress:
 else:
     md += "*Synchronizacja jeszcze nie rozpoczęta*"
 
+# ============================================================================
+# SEKCJA: JAKOŚĆ TŁUMACZEŃ (Quality Dashboard)
+# ============================================================================
+quality_dashboard_section = ""
+try:
+    qd_path = os.path.join(STATUS_DIR, "quality_dashboard.json")
+    qa_path = os.path.join(STATUS_DIR, "quality_audit_latest.json")
+    
+    if os.path.exists(qd_path):
+        with open(qd_path, "r", encoding="utf-8") as f:
+            qd = json.load(f)
+        
+        # Tabela per-język
+        rows = []
+        for lang_code in sorted(qd.keys()):
+            ld = qd[lang_code]
+            score = ld.get("quality_score", 0)
+            cycles = ld.get("cycles", 0)
+            suspicious = ld.get("total_suspicious", 0)
+            rejected = ld.get("total_rejected", 0)
+            gt_fail = ld.get("total_gt_guard_fail", 0)
+            last = ld.get("last_cycle", "")[:10]
+            
+            # Ikona jakości
+            if score >= 90:
+                icon = "🟢"
+            elif score >= 70:
+                icon = "🟡"
+            elif score >= 50:
+                icon = "🟠"
+            else:
+                icon = "🔴"
+            
+            rows.append(f"| {icon} {lang_code.upper()} | {score} | {cycles} | {suspicious} | {rejected} | {gt_fail} | {last} |")
+        
+        if rows:
+            quality_dashboard_section = """
+---
+
+## 🔬 Jakość Tłumaczeń
+
+| Język | Jakość | Cykli | Podejrzane | Odrzucone | GT fail | Ostatni |
+|-------|--------|-------|------------|-----------|---------|---------|
+""" + "\n".join(rows[:20])
+            
+            if len(rows) > 20:
+                quality_dashboard_section += f"\n\n> *...i {len(rows) - 20} więcej języków*"
+    
+    # Ostatni audyt
+    if os.path.exists(qa_path):
+        with open(qa_path, "r", encoding="utf-8") as f:
+            qa = json.load(f)
+        
+        qa_ts = qa.get("timestamp", "?")[:19]
+        qa_issues = qa.get("issues_found", 0)
+        qa_sev = qa.get("issues_by_severity", {})
+        qa_sources = qa.get("source_breakdown_total", {})
+        
+        if not quality_dashboard_section:
+            quality_dashboard_section = "\n---\n\n## 🔬 Jakość Tłumaczeń\n"
+        
+        quality_dashboard_section += f"""
+
+### Ostatni audyt jakości
+
+| Metryka | Wartość |
+|---------|---------|
+| 📅 Data | {qa_ts} |
+| 🔍 Problemy | {qa_issues} |
+| 🚨 CRITICAL | {qa_sev.get('CRITICAL', 0)} |
+| ⚠️ HIGH | {qa_sev.get('HIGH', 0)} |
+| 📊 MEDIUM | {qa_sev.get('MEDIUM', 0)} |
+"""
+
+        if qa_sources:
+            src_parts = [f"{k}: {v}" for k, v in sorted(qa_sources.items(), key=lambda x: -x[1])]
+            quality_dashboard_section += f"\n> **Źródła tłumaczeń:** {', '.join(src_parts)}\n"
+        
+        # Top issues
+        top_issues = qa.get("issues", [])[:3]
+        if top_issues:
+            quality_dashboard_section += "\n**Top problemy:**\n"
+            for issue in top_issues:
+                sev = issue.get("severity", "?")
+                msg = issue.get("message", "?")
+                quality_dashboard_section += f"- [{sev}] {msg}\n"
+
+except Exception:
+    pass
+
+md += quality_dashboard_section
+
+# ============================================================================
+# SEKCJA: WALIDACJA PER-JĘZYK (Validation Summary)
+# ============================================================================
+validation_section = ""
+try:
+    val_summary_path = os.path.join(STATUS_DIR, "validation", "summary.json")
+    if os.path.exists(val_summary_path):
+        with open(val_summary_path, "r", encoding="utf-8") as f:
+            val_sum = json.load(f)
+
+        val_ts = str(val_sum.get("validated_at", "?"))[:19]
+        val_avg = val_sum.get("avg_score", 0)
+        val_total_langs = val_sum.get("total_languages", 0)
+        by_score = val_sum.get("by_score", {})
+        by_group = val_sum.get("by_group", {})
+
+        validation_section = f"""
+---
+
+## ✅ Walidacja Per-Język
+
+> Ostatnia walidacja: **{val_ts}** | Języków: **{val_total_langs}** | Średni score: **{val_avg}**
+
+"""
+        # Score icon
+        def _scr_icon(s):
+            if s >= 95: return "🟢"
+            if s >= 80: return "🟡"
+            if s >= 60: return "🟠"
+            return "🔴"
+
+        # Groups summary
+        group_names = {"latin": "Łacińskie", "cyrillic": "Cyrylica", "cjk": "CJK", "rtl": "RTL", "exotic": "Egzotyczne"}
+        for grp, grp_name in group_names.items():
+            langs_in_grp = by_group.get(grp, [])
+            if not langs_in_grp:
+                continue
+            # Get scores for langs in this group
+            grp_rows = []
+            for lg in sorted(langs_in_grp):
+                info = by_score.get(lg, {})
+                sc = info.get("score", 0)
+                cov = info.get("coverage_pct", 0)
+                iss = info.get("issues", 0)
+                crit = info.get("critical", 0)
+                high_c = info.get("high", 0)
+                grp_rows.append(f"| {_scr_icon(sc)} {lg.upper()} | {sc} | {cov}% | {iss} | {crit} | {high_c} |")
+
+            validation_section += f"### {grp_name} ({len(langs_in_grp)} języków)\n\n"
+            validation_section += "| Język | Score | Coverage | Issues | CRIT | HIGH |\n"
+            validation_section += "|-------|-------|----------|--------|------|------|\n"
+            # Show max 10 per group, worst first
+            grp_rows_sorted = sorted(grp_rows)
+            for row in grp_rows_sorted[:10]:
+                validation_section += row + "\n"
+            if len(grp_rows) > 10:
+                validation_section += f"\n> *+{len(grp_rows) - 10} więcej*\n"
+            validation_section += "\n"
+
+except Exception:
+    pass
+
+md += validation_section
+
+# === Tier system info ===
+tier_section = ""
+try:
+    dsp = os.path.join(status_dir, "translation_dispatch_state.json")
+    if os.path.exists(dsp):
+        with open(dsp) as f:
+            ds = json.load(f)
+        tc = ds.get("tier_config", {})
+        if tc:
+            t1 = ", ".join(tc.get("tier1", []))
+            t2 = ", ".join(tc.get("tier2", []))
+            tier_section = f"""
+---
+
+## ⚡ System tierów (Sekcja 5)
+
+| Tier | Języki | Waga | Cel pokrycia |
+|------|--------|------|-------------|
+| **Tier 1** | {t1} | ×{tc.get("w1", 4)} | 90% |
+| **Tier 2** | {t2} | ×{tc.get("w2", 2)} | 50% |
+| **Tier 3** | reszta ({52 - len(tc.get("tier1",[])) - len(tc.get("tier2",[]))}) | ×{tc.get("w3", 1)} | 30% |
+
+**Priorytet kategorii:** items → npc → monsters → server → spells → quests → scripts → actions → raids
+
+> Tier 1 przetwarza 4 pliki per super-rundę, Tier 2 przetwarza 2, Tier 3 przetwarza 1.
+"""
+except Exception:
+    pass
+
+md += tier_section
+
 md += f'''
 
 ---
@@ -2033,14 +3698,7 @@ md += f'''
 
 | Kategoria | Kluczy | Postęp | Cel | Status |
 |-----------|--------|--------|-----|--------|
-{roadmap_items}
-{roadmap_npc}
-{roadmap_scripts}
-{roadmap_monsters}
-{roadmap_spells}
-{roadmap_server}
-{roadmap_system}
-{roadmap_ui}
+{roadmap_table}
 
 ---
 
@@ -2095,7 +3753,14 @@ for p in status_paths:
 print(f"✅ I18N_STATUS.md zaktualizowany: {timestamp}")
 for p in written:
     print(f"   Ścieżka: {p}")
-print(f"   NPC: {npc_keys} kluczy, {completed} zmigrowanych, {needs_migration_npc} do zrobienia")
+if translations_only_mode:
+    at_lang = auto_translate_data.get("language", "-")
+    at_file = auto_translate_data.get("json_file", "-")
+    at_guard = auto_translate_data.get("guard_fail", 0)
+    at_strict = auto_translate_data.get("strict_missing_key", 0)
+    print(f"   TRYB: TRANSLATIONS_ONLY STRICT | AUTO: {at_lang}/{at_file} | guard_fail={at_guard} | strict_missing_key={at_strict}")
+else:
+    print(f"   NPC: {npc_keys} kluczy, {completed} zmigrowanych, {needs_migration_npc} do zrobienia")
 print(f"   Total: {total_keys} kluczy | Języki: {len(langs_with_data)}/{langs_count}")
 STATUSPY
 }
@@ -6517,7 +8182,7 @@ process_cpp_category() {
             | grep -v '%' \
             | grep -v '\\' \
             | grep -v '::' \
-            | grep -v '->' \
+            | grep -v -- '->' \
             | grep -v '/' \
             | grep -v '\.' \
             | grep -v '_' \
@@ -7405,6 +9070,7 @@ import json
 import os
 import time
 import sys
+import re
 
 I18N_DIR = "i18n"
 target_lang = "$target_lang"
@@ -7439,11 +9105,30 @@ else:
     lang_data = {}
     print(f"   📄 Tworzę nowy plik: {lang_path}")
 
+# Normalizacja legacy placeholderów ([PL]/[TR]/...) do [EN]
+normalized_placeholders = 0
+for key, en_value in en_data.items():
+    if key not in lang_data:
+        continue
+    value = lang_data.get(key)
+    if not isinstance(value, str):
+        continue
+    m = re.match(r'^\[([A-Z]{2}(?:_[A-Z]{2})?)\]\s*', value)
+    if not m:
+        continue
+    if m.group(1) == "EN":
+        continue
+    lang_data[key] = f"{UNTRANSLATED_PREFIX}{en_value}"
+    normalized_placeholders += 1
+
+if normalized_placeholders > 0:
+    print(f"   🧹 Znormalizowano placeholdery: {normalized_placeholders}")
+
 # Znajdź brakujące klucze
 missing_keys = [key for key in en_data if key not in lang_data]
 print(f"   🔍 Brakujących: {len(missing_keys)}")
 
-if not missing_keys:
+if not missing_keys and normalized_placeholders == 0:
     print(f"   ✅ Wszystkie klucze zsynchronizowane dla {target_lang}/{json_file}")
     print("__SYNC_RESULT__ synced=0")
     sys.exit(0)
@@ -7456,12 +9141,14 @@ for key in missing_keys[:batch_size]:
     lang_data[key] = f"{UNTRANSLATED_PREFIX}{en_value}"
     synced += 1
 
+total_synced = synced + normalized_placeholders
+
 # Zapisz plik językowy (posortowany alfabetycznie)
 lang_data_sorted = dict(sorted(lang_data.items()))
 with open(lang_path, 'w', encoding='utf-8') as f:
     json.dump(lang_data_sorted, f, indent=2, ensure_ascii=False)
 
-print(f"   ✅ Zsynchronizowano: +{synced} kluczy → {target_lang}/{json_file}")
+print(f"   ✅ Zsynchronizowano: +{total_synced} wpisów → {target_lang}/{json_file}")
 print(f"   📊 Teraz: {len(lang_data)} kluczy (pozostało: {len(missing_keys) - synced})")
 
 # Zaktualizuj state synchronizacji
@@ -7524,7 +9211,7 @@ with open(CATEGORY_STATE_FILE, 'w') as f:
 
 print(f"   💾 State zapisany")
 
-print(f"__SYNC_RESULT__ synced={synced}")
+print(f"__SYNC_RESULT__ synced={total_synced}")
 SYNCPY
     2>&1)
     _sync_rc=$?
@@ -7536,6 +9223,237 @@ SYNCPY
     echo "$_synced"
     
     log "${GREEN}✅ Sync: Zakończono batch${NC}"
+}
+
+#===============================================================================
+# REPAIR IDENTICAL BONUS ROUND — Sekcja 12.5
+#===============================================================================
+# Dedykowana runda naprawcza:
+# 1) buduje kolejkę backlogu "identical_to_en (translatable)" dla PL/ES
+# 2) zapisuje artefakt queue do i18n/status/identical_to_en_repair_queue.json
+# 3) wybiera kolejny target wg priorytetu lang + domeny i uruchamia auto_translate_keys
+# Wywoływane co N cykli po standardowej translacji.
+#===============================================================================
+REPAIR_IDENTICAL_INTERVAL="${REPAIR_IDENTICAL_INTERVAL:-3}"
+REPAIR_IDENTICAL_LIMIT="${REPAIR_IDENTICAL_LIMIT:-200}"
+REPAIR_PRIORITY_LANGS="${REPAIR_PRIORITY_LANGS:-es pl}"
+
+repair_identical_bonus_round() {
+    local cycle="$1"
+    
+    # Sprawdź interwał — uruchamiaj tylko co REPAIR_IDENTICAL_INTERVAL cykli
+    if (( cycle % REPAIR_IDENTICAL_INTERVAL != 0 )); then
+        return 0
+    fi
+    
+    echo "🔧 REPAIR: identical_to_en bonus round (cykl $cycle)"
+    
+    # Zbuduj kolejkę naprawczą i wybierz target wg priorytetu
+    local repair_target
+    export REPAIR_PRIORITY_LANGS
+    repair_target=$(python3 << 'REPAIR_SELECT_PY'
+import json, os, re
+from collections import Counter
+from datetime import datetime, timezone
+
+I18N_DIR = "i18n"
+en_dir = os.path.join(I18N_DIR, "en")
+status_dir = os.environ.get("STATUS_DIR", os.path.join(I18N_DIR, "status"))
+queue_latest_path = os.path.join(status_dir, "identical_to_en_repair_queue.json")
+queue_report_path = os.path.join(status_dir, "identical_to_en_repair_queue_report.jsonl")
+
+_split = lambda raw: [p for p in re.split(r"[\s,;]+", str(raw or "").strip()) if p]
+tier1_langs = _split(os.environ.get("TIER1_LANGS", "pl es"))
+priority_langs = _split(os.environ.get("REPAIR_PRIORITY_LANGS", "es pl"))
+
+langs = [l for l in priority_langs if l in tier1_langs]
+langs += [l for l in tier1_langs if l not in langs]
+if not langs:
+    langs = ["es", "pl"]
+
+domain_priority = [
+    "npc.json",
+    "server.json",
+    "talkactions.json",
+    "quests.json",
+    "actions.json",
+    "modules.json",
+    "messages.json",
+    "items.json",
+    "monsters.json",
+]
+domain_rank = {name: idx for idx, name in enumerate(domain_priority)}
+
+# Ta sama heurystyka co w workerze
+def _is_game_nontranslatable(key, t):
+    t = str(t or "").strip()
+    if not t:
+        return False
+    _animal = ('GRRR','YOOO','ZZZZ','ROAR','HISS','SNARL','RAWR','HOWL','GROWL','SCREE','CLANK','BOOM')
+    if any(p in t.upper() for p in _animal):
+        return True
+    if re.search(r'\b(?:gort|utash|karek|booz|omark|ikem|goshak|torilu[nm]?|garnum|saethelon|zathroth|uthun|nortat|urghh?|brakka|morda|chakka|batuk|charach|galunda|mugrah|gorak|shakk|uurgh|tanjil|lanar|kull|ogar|azarak)\b', t, re.I):
+        return True
+    words = re.findall(r'[A-Za-z]+', t)
+    if len(words) >= 3:
+        _common_en = {
+            'a','i','an','am','as','at','be','by','do','go','he','if','in','is','it','me','my','no',
+            'of','on','or','so','to','up','us','we','the','and','are','but','can','did','for','get',
+            'got','had','has','her','him','his','how','its','let','may','new','nor','not','now','old',
+            'one','our','out','own','put','ran','run','saw','say','set','she','sit','too','try',
+            'two','use','was','way','who','why','win','won','yes','yet','you','all','any','ask','bad',
+            'big','bit','boy','buy','cut','day','eat','end','far','few','fly','fun','god','hat','hit',
+            'hot','job','key','lay','led','lie','lot','low','man','map','men','met','mix','off',
+            'oil','pay','per','red','rid','sad','six','son','ten','top','war','wet',
+            'able','also','back','been','best','body','both','call','came','case','come','could','each',
+            'even','fact','feel','find','first','from','gave','give','goes','gone','good','great',
+            'hand','have','head','help','here','high','home','hope','into','just','keep','kind','knew',
+            'know','last','left','life','like','line','live','long','look','lost','made','make','many',
+            'mind','more','most','much','must','name','need','next','only','open','over','part','plan',
+            'play','real','rest','room','said','same','seem','show','side','some','soon','stop','such',
+            'sure','take','talk','tell','than','that','them','then','they','this','time','told','took',
+            'turn','upon','very','walk','want','well','went','were','what','when','will','with','word',
+            'work','year','your','about','after','again','being','below','bring','carry','cause',
+            'close','doing','don','every','found','going','house','human','large','later','leave',
+            'light','might','money','never','night','often','order','other','place','point','right',
+            'shall','should','since','small','sorry','start','still','story','study','thank','their',
+            'there','these','thing','think','those','three','today','under','until','watch','water',
+            'where','which','while','world','would','write','young','really','little','around',
+            'before','always','people','already',
+        }
+        en_count = sum(1 for w in words if w.lower() in _common_en)
+        if en_count == 0 and all(len(w) <= 6 for w in words):
+            return True
+    if re.match(r'^([A-Za-z]{2,8})[,.\s]+\1(?:[,.\s]+\1)*[.!?]*$', t, re.I):
+        return True
+    return False
+
+def _is_proper_noun(key, en_value):
+    pn_prefixes = ("item.","monster.","spell.","mount.","quest.","raid.","achievement.","npc.","book.otbm.")
+    pn_suffixes = (".name",".words",".title",".desc",".announce")
+    if any(key.startswith(p) for p in pn_prefixes) and any(key.endswith(s) for s in pn_suffixes):
+        return True
+    en_s = en_value.strip()
+    if len(en_s) <= 3:
+        return True
+    if _is_game_nontranslatable(key, en_s):
+        return True
+    if any(key.startswith(p) for p in pn_prefixes):
+        words = en_s.split()
+        if len(words) <= 4 and words[0][0:1].isupper():
+            return True
+    if en_s and all(c.isupper() or c.isdigit() or c in ".-_/ " for c in en_s):
+        return True
+    return False
+
+json_files = sorted([f for f in os.listdir(en_dir) if f.endswith(".json")]) if os.path.isdir(en_dir) else []
+entries = []
+
+for lang in langs:
+    for jf in json_files:
+        en_path = os.path.join(en_dir, jf)
+        lang_path = os.path.join(I18N_DIR, lang, jf)
+        if not os.path.exists(en_path) or not os.path.exists(lang_path):
+            continue
+        try:
+            with open(en_path, encoding="utf-8") as f:
+                en_data = json.load(f)
+            with open(lang_path, encoding="utf-8") as f:
+                lang_data = json.load(f)
+        except Exception:
+            continue
+        identical_translatable = 0
+        for k, v in en_data.items():
+            if k in lang_data and str(lang_data[k]) == str(v):
+                if not _is_proper_noun(k, str(v)):
+                    identical_translatable += 1
+        if identical_translatable > 0:
+            entries.append({
+                "lang": lang,
+                "json_file": jf,
+                "identical_to_en": int(identical_translatable),
+                "domain_priority": int(domain_rank.get(jf, len(domain_priority))),
+            })
+
+entries.sort(
+    key=lambda e: (
+        langs.index(e["lang"]) if e["lang"] in langs else 999,
+        e["domain_priority"],
+        -int(e["identical_to_en"]),
+        str(e["json_file"]),
+    )
+)
+selected = entries[0] if entries else None
+
+entries_by_lang = Counter()
+for e in entries:
+    entries_by_lang[e["lang"]] += int(e["identical_to_en"])
+
+payload = {
+    "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+    "priority_langs": langs,
+    "domain_priority": domain_priority,
+    "entries_total": len(entries),
+    "entries_by_lang": dict(entries_by_lang),
+    "top_entries": entries[:200],
+    "selected": selected or {},
+}
+
+try:
+    os.makedirs(status_dir, exist_ok=True)
+    with open(queue_latest_path, "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=2, ensure_ascii=False)
+    with open(queue_report_path, "a", encoding="utf-8") as f:
+        f.write(json.dumps({
+            "timestamp": payload["timestamp"],
+            "entries_total": payload["entries_total"],
+            "entries_by_lang": payload["entries_by_lang"],
+            "selected": selected or {},
+        }, ensure_ascii=False) + "\n")
+except Exception:
+    pass
+
+if selected:
+    print(f"{selected['lang']}:{selected['json_file']}:{selected['identical_to_en']}")
+else:
+    print("NONE:0:0")
+REPAIR_SELECT_PY
+    )
+
+    local R_LANG R_FILE R_COUNT
+    R_LANG=$(echo "$repair_target" | cut -d: -f1)
+    R_FILE=$(echo "$repair_target" | cut -d: -f2)
+    R_COUNT=$(echo "$repair_target" | cut -d: -f3)
+    
+    if [ "$R_LANG" = "NONE" ] || [ "${R_COUNT:-0}" -le 0 ] 2>/dev/null; then
+        echo "   ✅ REPAIR: brak kluczy identical_to_en do naprawy"
+        return 0
+    fi
+    
+    echo "   🎯 REPAIR target: $R_LANG/$R_FILE ($R_COUNT identical_to_en translatable)"
+    
+    # Zapisz obecny limit i ustaw podwyższony
+    local orig_limit="${TRANSLATE_LIMIT:-80}"
+    export TRANSLATE_LIMIT="$REPAIR_IDENTICAL_LIMIT"
+    
+    # Uruchom auto_translate_keys z podwyższonym limitem
+    local R_TRANSLATED R_PLACEHOLDERS R_GUARD_FAIL R_GUARD_PH R_GUARD_CMD R_GUARD_PIPE R_SKIP_FILE R_SKIP_KEY R_SKIP_DONE
+    read -r R_TRANSLATED R_PLACEHOLDERS R_GUARD_FAIL R_GUARD_PH R_GUARD_CMD R_GUARD_PIPE R_SKIP_FILE R_SKIP_KEY R_SKIP_DONE <<< "$(auto_translate_keys "$R_LANG" "$R_FILE" "$R_COUNT")"
+    R_TRANSLATED=${R_TRANSLATED:-0}
+    R_GUARD_FAIL=${R_GUARD_FAIL:-0}
+    
+    # Przywróć limit
+    export TRANSLATE_LIMIT="$orig_limit"
+    
+    echo "   📊 REPAIR result: translated=$R_TRANSLATED guard_fail=$R_GUARD_FAIL (limit=$REPAIR_IDENTICAL_LIMIT)"
+    
+    # Loguj operację repair
+    status_log_op "$cycle" "AUTO_TRANSLATE" "REPAIR_IDENTICAL_DONE" "$R_LANG" "$R_FILE" "ok" "repair_identical lang=${R_LANG} file=${R_FILE} target_identical=${R_COUNT}" "" "" "" "$R_TRANSLATED" ""
+    
+    # Wyczyść cache selektora (repair zmienił dane)
+    rm -f "$STATUS_DIR/translation_strict_candidates_cache.json" 2>/dev/null || true
+
+    return 0
 }
 
 #===============================================================================
@@ -7557,45 +9475,428 @@ auto_translate_keys() {
         translate_limit="${keys_count:-0}"
     fi  # 0 = brak limitu
     
-    log "${CYAN}🌍 AUTO TRANSLATE: $target_lang <- $json_file (limit: $translate_limit)${NC}"
+    local strict_mode="false"
+    if [ "${TRANSLATIONS_STRICT:-false}" = "true" ]; then
+        strict_mode="true"
+    fi
+
+    log "${CYAN}🌍 AUTO TRANSLATE: $target_lang <- $json_file (limit: $translate_limit, strict: $strict_mode, GT: $USE_GOOGLE_TRANSLATE)${NC}"
     
     local _at_out _at_rc _translated _placeholders
-    _at_out=$(python3 << AUTOTRANSPY
+    _at_out=$(USE_GOOGLE_TRANSLATE="$USE_GOOGLE_TRANSLATE" GT_BATCH_SIZE="$GT_BATCH_SIZE" GT_DELAY="$GT_DELAY" python3 - "$target_lang" "$json_file" "$translate_limit" "$strict_mode" << 'AUTOTRANSPY'
 import json
 import os
 import re
 import hashlib
 import sys
+from datetime import datetime, timezone
 
 I18N_DIR = "i18n"
-target_lang = "$target_lang"
-json_file = "$json_file"
-translate_limit = int("$translate_limit" or "0")
+target_lang = sys.argv[1]
+json_file = sys.argv[2]
+translate_limit = int(sys.argv[3] or "0")
+strict_mode = sys.argv[4] == "true"
+status_dir = os.environ.get("STATUS_DIR", os.path.join(I18N_DIR, "status"))
+proper_nouns_path = os.path.join(status_dir, "tibia_proper_nouns.json")
+
+try:
+    with open(proper_nouns_path, "r", encoding="utf-8") as f:
+        _pn_data = json.load(f)
+    TIBIA_PROPER_NOUNS = set(str(x).strip() for x in _pn_data.get("terms", []) if str(x).strip())
+except Exception:
+    TIBIA_PROPER_NOUNS = set()
+
+# Google Translate config (from env)
+use_google_translate = os.environ.get("USE_GOOGLE_TRANSLATE", "false") == "true"
+gt_batch_size = int(os.environ.get("GT_BATCH_SIZE", "50"))
+gt_delay = float(os.environ.get("GT_DELAY", "1.5"))
+
+# Mapowanie kodów języków i18n -> kody Google Translate
+GT_LANG_MAP = {
+    "pt-br": "pt", "zh": "zh-CN", "zh-cn": "zh-CN", "zh-tw": "zh-TW", "zh_tw": "zh-TW", "he": "iw",
+    "sr": "sr", "bs": "bs", "no": "no", "nb": "no",
+}
+
+def _gt_lang_code(lang):
+    """Konwertuj kod języka i18n na kod Google Translate."""
+    raw = str(lang or "").strip()
+    low = raw.lower()
+    normalized = low.replace("_", "-")
+    return GT_LANG_MAP.get(raw) or GT_LANG_MAP.get(low) or GT_LANG_MAP.get(normalized) or raw
+
+def _protect_placeholders(text):
+    """Zamień placeholdery, HTML tagi, escape sequences i nazwy własne na tokeny ochronne przed GT."""
+    replacements = {}
+    idx = [0]
+    def _replace(m):
+        token = f"__PH{idx[0]}__"
+        replacements[token] = m.group(0)
+        idx[0] += 1
+        return token
+    protected = str(text)
+    # Krok 1: Chroń nazwy własne Tibia NAJPIERW (zanim regex zamieni otaczające tagi)
+    if TIBIA_PROPER_NOUNS:
+        sorted_nouns = sorted(
+            (n for n in TIBIA_PROPER_NOUNS if len(n) > 4),
+            key=len, reverse=True
+        )
+        for noun in sorted_nouns:
+            if noun in protected:
+                pattern = r'\b' + re.escape(noun) + r'\b'
+                protected = re.sub(pattern, lambda m, n=noun: _replace(m), protected, count=0)
+    # Krok 2: Chroń placeholdery, tagi HTML, escape sequences, komendy
+    protected = re.sub(
+        r"\{[^}]*\}"               # {0}, {player}, {}
+        r"|%[0-9]*[sdifuxXcp%]"    # %s, %d, %02d, %%
+        r"|\|[A-Z_]+\|"           # |PLAYERNAME|, |NAME|
+        r"|''[^']*''"             # ''trade'', ''job''
+        r"|(?<!['\w])'([^']{1,200}?)'(?!')"   # 'task', 'keyword', 'long game command' — single-quoted commands
+        r"|'\/[a-zA-Z]+'"         # '/heal', '/cast'
+        r"|<[a-zA-Z/][^>]*>"     # <b>, </b>, <br>, <font color='red'>
+        r"|\\[ntr]"               # \n, \t, \r
+        r"|&[a-zA-Z]+;"          # &amp;, &lt;, &gt;
+        r"|&#[0-9]+;"            # &#123;
+        , _replace, protected)
+    return protected, replacements
+
+def _restore_placeholders(text, replacements):
+    """Przywróć oryginalne placeholdery po tłumaczeniu GT."""
+    for token, original in replacements.items():
+        text = text.replace(token, original)
+    return text
 
 # Prosty słownik tłumaczeń dla popularnych fraz
 SIMPLE_TRANSLATIONS = {
     "pl": {
+        # === Powitania / Pożegnania ===
         "Hello": "Witaj",
+        "Hello!": "Witaj!",
+        "Hi": "Cześć",
+        "Hi!": "Cześć!",
         "Welcome": "Witamy",
+        "Welcome!": "Witamy!",
         "Goodbye": "Do widzenia",
-        "Thank you": "Dziękuję",
+        "Good bye.": "Do widzenia.",
+        "Good bye!": "Do widzenia!",
+        "Good bye then.": "W takim razie do widzenia.",
+        "Good bye, |PLAYERNAME|.": "Do widzenia, |PLAYERNAME|.",
+        "Bye.": "Cześć.",
+        "Bye!": "Cześć!",
+        "Bye, bye.": "Pa, pa.",
+        "Bye, |PLAYERNAME|.": "Cześć, |PLAYERNAME|.",
+        "Well, bye then.": "No to cześć.",
+        "See you my friend.": "Do zobaczenia, przyjacielu.",
+        "Farewell.": "Żegnaj.",
+        "Farewell!": "Żegnaj!",
+        "Have a nice day.": "Miłego dnia.",
+        "Have a nice day!": "Miłego dnia!",
+        "Good bye and don't forget me!": "Do widzenia i nie zapomnij o mnie!",
+        "Good bye. Come back soon.": "Do widzenia. Wracaj wkrótce.",
+        "Good bye. Recommend us if you were satisfied with our service.": "Do widzenia. Polecaj nas, jeśli byłeś zadowolony z naszych usług.",
+        "Please come back from time to time.": "Wracaj od czasu do czasu.",
+        "We would like to serve you some time.": "Chętnie ci kiedyś usłużymy.",
+        "May your path always be even.": "Niech twoja droga będzie zawsze równa.",
+        "It was a pleasure to help you, |PLAYERNAME|.": "Cieszę się, że mogłem ci pomóc, |PLAYERNAME|.",
+        "May the gods bless you, |PLAYERNAME|!": "Niech bogowie ci błogosławią, |PLAYERNAME|!",
+        "Greetings, |PLAYERNAME|.": "Pozdrowienia, |PLAYERNAME|.",
+        # === Tak/Nie/Anuluj ===
         "Yes": "Tak",
+        "Yes!": "Tak!",
+        "Yes?": "Tak?",
         "No": "Nie",
+        "No!": "Nie!",
+        "Ok": "Ok",
+        "Ok.": "Ok.",
+        "Ok then.": "No dobrze.",
+        "Cancel": "Anuluj",
+        "Sure.": "Jasne.",
+        "Fine.": "Dobrze.",
+        "Sorry.": "Przepraszam.",
+        "Sorry!": "Przepraszam!",
+        "Oh well.": "No cóż.",
+        "Oh...": "Och...",
+        "Then not.": "W takim razie nie.",
+        "No problem.": "Nie ma problemu.",
+        "Fine. You are free to decline my offer.": "Dobrze. Możesz odrzucić moją ofertę.",
+        "Sorry, not possible.": "Przepraszam, to niemożliwe.",
+        # === Handel ===
         "Buy": "Kup",
         "Sell": "Sprzedaj",
         "Trade": "Handel",
-        "Help": "Pomoc",
-        "Quest": "Zadanie",
-        "Mission": "Misja",
         "Gold": "Złoto",
-        "Player": "Gracz",
-        "Monster": "Potwór",
+        "You don't have enough money.": "Nie masz wystarczająco dużo pieniędzy.",
+        "Sorry, you don't have enough money.": "Przepraszam, nie masz wystarczająco dużo pieniędzy.",
+        "Here you are.": "Proszę bardzo.",
+        "Here you are. Take care.": "Proszę bardzo. Uważaj na siebie.",
+        "Here it is.": "Oto jest.",
+        "Of course, just browse through my wares. You can also look at {}.": "Oczywiście, przejrzyj moje towary. Możesz też zobaczyć {}.",
+        "You don't have it...": "Nie masz tego...",
+        "You shouldn't miss the experience.": "Nie powinieneś tracić doświadczenia.",
+        # === NPC ogólne ===
+        "How could I help you?": "Jak mogę ci pomóc?",
+        "Well, can I help you with something else?": "Cóż, mogę ci w czymś jeszcze pomóc?",
+        "Talk to me if you need directions.": "Porozmawiaj ze mną, jeśli potrzebujesz wskazówek.",
+        "I am the captain of this ship.": "Jestem kapitanem tego statku.",
+        "Do you seek a passage to {0} for {1}?": "Szukasz przeprawy do {0} za {1}?",
+        "Welcome on board, |PLAYERNAME|. Where can I {sail} you today?": "Witaj na pokładzie, |PLAYERNAME|. Dokąd mogę cię dziś {sail}?",
+        "Yes? What may I do for you, |PLAYERNAME|? Bank business, perhaps?": "Tak? Czym mogę ci służyć, |PLAYERNAME|? Może sprawy bankowe?",
+        "Don't forget to deposit your money here in the Global Bank before you head out for adventure.": "Nie zapomnij wpłacić pieniędzy w Globalnym Banku przed wyruszeniem na przygodę.",
+        "Free escort to the depot for newcomers!": "Darmowa eskorta do depo dla nowych graczy!",
+        "Hello and welcome in the Gnomprona Gardens": "Witaj w Ogrodach Gnomprona",
+        "Keep your adventurer's stone well.": "Pilnuj dobrze swojego kamienia poszukiwacza przygód.",
+        "Ah, you want to replace your adventurer's stone for free?": "Chcesz wymienić swój kamień poszukiwacza przygód za darmo?",
+        "Ah, you want to replace your adventurer's stone for 30 gold?": "Chcesz wymienić swój kamień poszukiwacza przygód za 30 złotych?",
+        "LONG LIVE THE KING!": "NIECH ŻYJE KRÓL!",
+        "LONG LIVE THE QUEEN!": "NIECH ŻYJE KRÓLOWA!",
+        # === Leczenie / Blessings ===
+        "You are hurt, my child. I will heal your wounds.": "Jesteś ranny, moje dziecko. Uleczę twoje rany.",
+        "Remember: If you are heavily wounded or poisoned, I can heal you for free.": "Pamiętaj: jeśli jesteś ciężko ranny lub zatruty, mogę cię uleczyć za darmo.",
+        "Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal} you for free.": "Witaj, młody |PLAYERNAME|! Jeśli jesteś ciężko ranny lub zatruty, mogę cię {heal} za darmo.",
+        "So receive the protection of the twist of fate, pilgrim.": "Przyjmij ochronę zrządzenia losu, pielgrzymie.",
+        "You can ask for the blessing of spiritual shielding in the whiteflower temple south of Thais.": "Możesz poprosić o błogosławieństwo duchowej tarczy w świątyni białokwiatowej na południe od Thais.",
+        "You can ask for the blessing of the two suns in the suntower near Ab'Dendriel.": "Możesz poprosić o błogosławieństwo dwóch słońc w wieży słonecznej koło Ab'Dendriel.",
+        "The spark of the phoenix is given by the dwarven priests of earth and fire in Kazordoon.": "Iskra feniksa jest dawana przez krasnoludzkich kapłanów ziemi i ognia w Kazordoon.",
+        "The druids north of Carlin will provide you with the embrace of Tibia.": "Druidzi na północ od Carlin obdarzą cię objęciem Tibii.",
+        "A hermit near Carlin might be able to tell you more about it": "Pustelnik koło Carlin może ci o tym więcej opowiedzieć",
+        "I see you received the spiritual shielding in the whiteflower temple south of Thais.": "Widzę, że otrzymałeś duchową tarczę w świątyni białokwiatowej na południe od Thais.",
+        "I can sense that the druids north of Carlin have provided you with the Embrace of Tibia.": "Wyczuwam, że druidzi na północ od Carlin obdarzyli cię Objęciem Tibii.",
+        "I can see you received the blessing of the two suns in the suntower near Ab'Dendriel.": "Widzę, że otrzymałeś błogosławieństwo dwóch słońc w wieży słonecznej koło Ab'Dendriel.",
+        # === Przedmioty / Otoczenie ===
+        "closed door": "zamknięte drzwi",
+        "open door": "otwarte drzwi",
+        "gate of expertise": "brama wiedzy",
+        "stairs": "schody",
+        "unknown item": "nieznany przedmiot",
+        "It is locked.": "Jest zamknięte.",
+        "It is empty.": "Jest puste.",
+        "The door seems to be sealed against unwanted intruders.": "Drzwi wydają się być zabezpieczone przed niechcianymi intruzami.",
+        "Somebody is sleeping there": "Ktoś tam śpi",
+        "The chest is empty.": "Skrzynia jest pusta.",
+        "stone wall": "kamienna ściana",
+        "stone floor": "kamienna podłoga",
+        "wooden floor": "drewniana podłoga",
+        "flower pot": "doniczka z kwiatem",
+        "wall lamp": "kinkiet",
+        "lit wall lamp": "zapalony kinkiet",
+        "cozy couch": "przytulna kanapa",
+        "hole": "dziura",
+        "ladder": "drabina",
+        "trapdoor": "klapa",
+        "parchment": "pergamin",
+        "book": "księga",
+        "chest": "skrzynia",
+        "crate": "skrzynka",
+        "skull": "czaszka",
+        "stone": "kamień",
+        "snow": "śnieg",
+        "grass": "trawa",
+        "earth": "ziemia",
+        "entrance": "wejście",
+        "fire field": "pole ognia",
+        "magic tile": "magiczna płytka",
+        "crystal column": "kryształowa kolumna",
+        "ramp": "rampa",
+        "bed": "łóżko",
+        "simple bed": "proste łóżko",
+        "hammock": "hamak",
+        "verdant bed": "zielone łóżko",
+        "homely bed": "domowe łóżko",
+        "wrought-iron bed": "łóżko z kutego żelaza",
+        "magnificent bed": "wspaniałe łóżko",
+        "ornate bed": "ozdobne łóżko",
+        "vengothic bed": "vengothickie łóżko",
+        "grandiose couch": "okazała kanapa",
+        "grandiose bed": "okazałe łóżko",
+        "log bed": "łóżko z bali",
+        "kraken bed": "łóżko krakena",
+        "sleeping mat": "mata do spania",
+        "knightly bed": "rycerskie łóżko",
+        "flower bed": "kwiatowe łóżko",
+        "seafarer bed": "łóżko żeglarza",
+        "opulent kline": "luksusowa kline",
+        "straw mat": "słomiana mata",
+        "knightly bench": "rycerska ławka",
+        "carved table": "rzeźbiony stół",
+        "silver rune emblem": "srebrny emblemat runiczny",
+        "golden rune emblem": "złoty emblemat runiczny",
+        "golden outfit display": "złota gablotka strojów",
+        "Souvenir from Thais Museum": "Pamiątka z Muzeum Thais",
+        "This replica looks charged": "Ta replika wygląda na naładowaną",
+        "This replica looks heavily charged": "Ta replika wygląda na mocno naładowaną",
+        "This replica looks overcharged": "Ta replika wygląda na przeładowaną",
+        "It can be disassembled with the right tool": "Można to rozmontować odpowiednim narzędziem",
+        "You need to wait before using it again.": "Musisz poczekać zanim użyjesz tego ponownie.",
+        "You have %s hours and %s minutes left": "Pozostało %s godzin i %s minut",
+        # === Trupy / Monster ===
+        "dead orc": "martwy ork",
+        "dead human": "martwy człowiek",
+        "dead troll": "martwy trol",
+        "dead corpse": "martwe zwłoki",
+        "dead wolf": "martwy wilk",
+        "dead dwarf": "martwy krasnolud",
+        "dead cyclops": "martwy cyklop",
+        "dead dragon": "martwy smok",
+        "dead bear": "martwy niedźwiedź",
+        "dead dworc": "martwy dworc",
+        "dead spider": "martwy pająk",
+        "dead elf": "martwy elf",
+        "dead dragon hatchling": "martwe pisklę smoka",
+        "dead djinn": "martwy dżinn",
+        "dead chakoya": "martwy chakoya",
+        "dead iks": "martwy iks",
+        "dead rat": "martwy szczur",
+        "dead minotaur": "martwy minotaur",
+        "slain skeleton": "zabity szkielet",
+        # === Odgłosy stworzeń ===
+        "Ribbit!": "Kum!",
+        "Ribbit! Ribbit!": "Kum! Kum!",
+        "Grrr.": "Grrr.",
+        "Hiss.": "Syk.",
+        "FIRE!": "OGIEŃ!",
+        "BURN!": "PŁOŃ!",
+        "Meat!": "Mięso!",
+        "MINE!": "MOJE!",
+        "PAIN!": "BÓL!",
+        # === NPC podróże ===
+        "Pssst! Keep it down! <gives you an elaborate report on monster activity>": "Pssst! Ciszej! <daje ci szczegółowy raport o aktywności potworów>",
+        # === Terminy gry ===
         "Item": "Przedmiot",
         "Spell": "Zaklęcie",
         "Attack": "Atak",
         "Defense": "Obrona",
         "Health": "Zdrowie",
         "Mana": "Mana",
+        "Help": "Pomoc",
+        "Quest": "Zadanie",
+        "Mission": "Misja",
+        "Player": "Gracz",
+        "Monster": "Potwór",
+        "Name": "Nazwa",
+        "Level": "Poziom",
+        "Status": "Status",
+        "Error": "Błąd",
+        "Close": "Zamknij",
+        "Description": "Opis",
+        "The": "Ten",
+        "RESERVED SPRITE": "ZAREZERWOWANY SPRITE",
+        "Sort by name": "Sortuj po nazwie",
+        "Loading": "Ładowanie",
+        # === Znalezione przedmioty ===
+        "You found ": "Znalazłeś ",
+        "You found a bag.": "Znalazłeś torbę.",
+        "You found a wooden sword.": "Znalazłeś drewniany miecz.",
+        "You found a beautiful pearl.": "Znalazłeś piękną perłę.",
+        "You found Waldo's posthorn.": "Znalazłeś róg pocztowy Waldo.",
+        "You found %s %s in the bag.": "W torbie znalazłeś %s %s.",
+        "You found {0} in the bag.": "W torbie znalazłeś {0}.",
+        "You found {} while digging.": "Podczas kopania znalazłeś {}.",
+        # === Materiały / kompozycje (poprawna gramatyka polska) ===
+        "stone wall": "kamienna ściana",
+        "Stone Wall": "Kamienna Ściana",
+        "stone floor": "kamienna podłoga",
+        "Stone Floor": "Kamienna Podłoga",
+        "stone stairs": "kamienne schody",
+        "Stone Stairs": "Kamienne Schody",
+        "stone tile": "kamienna płytka",
+        "stone pillar": "kamienny filar",
+        "stone bridge": "kamienny most",
+        "wooden floor": "drewniana podłoga",
+        "Wooden Floor": "Drewniana Podłoga",
+        "wooden wall": "drewniana ściana",
+        "wooden door": "drewniane drzwi",
+        "wooden chest": "drewniana skrzynia",
+        "wooden box": "drewniane pudełko",
+        "wooden table": "drewniany stół",
+        "wooden chair": "drewniane krzesło",
+        "wooden shelf": "drewniana półka",
+        "wooden stairs": "drewniane schody",
+        "wooden barrel": "drewniana beczka",
+        "wall lamp": "lampa ścienna",
+        "Wall Lamp": "Lampa Ścienna",
+        "dead corpse": "martwe zwłoki",
+        "Dead Corpse": "Martwe Zwłoki",
+        "unknown corpse": "nieznane zwłoki",
+        "Unknown Corpse": "Nieznane Zwłoki",
+        "dead witch": "martwa wiedźma",
+        "dead spider": "martwy pająk",
+        "dead crystal wolf": "martwy kryształowy wilk",
+        "dead ghost wolf": "martwy widmowy wilk",
+        "dead sacred spider": "martwy święty pająk",
+        "slain ice witch": "zabita lodowa wiedźma",
+        "Magic Level": "Poziom Magii",
+        "magic level": "poziom magii",
+        "Item Name": "Nazwa Przedmiotu",
+        "item name": "nazwa przedmiotu",
+        "special flask": "specjalna butelka",
+        "Special Flask": "Specjalna Butelka",
+        "spell rune": "runa zaklęcia",
+        "Spell Rune": "Runa Zaklęcia",
+        "dead human": "martwy człowiek",
+        "dead rat": "martwy szczur",
+        "dead wolf": "martwy wilk",
+        "dead bear": "martwy niedźwiedź",
+        "dead troll": "martwy trol",
+        "dead orc": "martwy ork",
+        "dead dragon": "martwy smok",
+        "dead demon": "martwy demon",
+        "dead dwarf": "martwy krasnolud",
+        "dead elf": "martwy elf",
+        "dead goblin": "martwy goblin",
+        "dead giant": "martwy olbrzym",
+        "dead vampire": "martwy wampir",
+        "dead skeleton": "martwy szkielet",
+        "dead zombie": "martwy zombi",
+        "dead knight": "martwy rycerz",
+        "dead warrior": "martwy wojownik",
+        "dead minotaur": "martwy minotaur",
+        "dead werewolf": "martwy wilkołak",
+        "slain skeleton": "zabity szkielet",
+        "slain orc": "zabity ork",
+        "slain troll": "zabity trol",
+        "slain goblin": "zabity goblin",
+        "slain wolf": "zabity wilk",
+        "slain rat": "zabity szczur",
+        "slain spider": "zabity pająk",
+        "slain dragon": "zabity smok",
+        "gold coin": "złota moneta",
+        "Gold Coin": "Złota Moneta",
+        "gold coins": "złote monety",
+        "silver coin": "srebrna moneta",
+        "crystal coin": "kryształowa moneta",
+        "iron helmet": "żelazny hełm",
+        "iron armor": "żelazny pancerz",
+        "iron shield": "żelazna tarcza",
+        "steel helmet": "stalowy hełm",
+        "steel armor": "stalowy pancerz",
+        "steel shield": "stalowa tarcza",
+        "golden armor": "złoty pancerz",
+        "ancient shield": "starożytna tarcza",
+        "magic shield": "magiczna tarcza",
+        "enchanted sword": "zaczarowany miecz",
+        "enchanted staff": "zaczarowany kostur",
+        "Royal Paladin": "Królewski Paladyn",
+        "Elite Knight": "Elitarny Rycerz",
+        "Master Sorcerer": "Arcyczarnoksiężnik",
+        "Elder Druid": "Starszy Druid",
+        "dark cave": "ciemna jaskinia",
+        "old temple": "stara świątynia",
+        "ancient temple": "starożytna świątynia",
+        "dark tower": "ciemna wieża",
+        "crystal cave": "kryształowa jaskinia",
+        "snow ramp": "śnieżna rampa",
+        "dirt floor": "ziemna podłoga",
+        "dirt ramp": "ziemna rampa",
+        "grass floor": "trawiasta podłoga",
+        "sand floor": "piaszczysta podłoga",
+        "ice floor": "lodowa podłoga",
+        "North East": "Północny Wschód",
+        "North West": "Północny Zachód",
+        "South East": "Południowy Wschód",
+        "South West": "Południowy Zachód",
+        "north east": "północny wschód",
+        "north west": "północny zachód",
+        "south east": "południowy wschód",
+        "south west": "południowy zachód",
     },
     "de": {
         "Hello": "Hallo",
@@ -7620,6 +9921,12 @@ SIMPLE_TRANSLATIONS = {
         "Hello": "Hola",
         "Welcome": "Bienvenido",
         "Goodbye": "Adiós",
+        "Good bye.": "Adiós.",
+        "Good bye!": "¡Adiós!",
+        "Good bye then.": "Bueno, adiós entonces.",
+        "Bye.": "Chao.",
+        "Bye!": "¡Chao!",
+        "Bye, bye.": "Chao, chao.",
         "Thank you": "Gracias",
         "Yes": "Sí",
         "No": "No",
@@ -7628,6 +9935,10 @@ SIMPLE_TRANSLATIONS = {
         "Trade": "Comercio",
         "Help": "Ayuda",
         "Quest": "Misión",
+        "Town not found.": "Ciudad no encontrada.",
+        "Helmet": "Casco",
+        "Left Hand": "Mano izquierda",
+        "Right Hand": "Mano derecha",
         "Gold": "Oro",
         "Player": "Jugador",
         "Monster": "Monstruo",
@@ -7663,12 +9974,1075 @@ SIMPLE_TRANSLATIONS = {
         "Gold": "Ouro",
         "Player": "Jogador",
         "Monster": "Monstro",
+    },
+    "tr": {
+        # === Selamlaşmalar / Vedalaşmalar ===
+        "Hello": "Merhaba",
+        "Hello!": "Merhaba!",
+        "Hi": "Selam",
+        "Hi!": "Selam!",
+        "Welcome": "Hoş geldin",
+        "Welcome!": "Hoş geldin!",
+        "Goodbye": "Hoşça kal",
+        "Good bye.": "Hoşça kal.",
+        "Good bye!": "Hoşça kal!",
+        "Good bye then.": "O zaman hoşça kal.",
+        "Good bye, |PLAYERNAME|.": "Hoşça kal, |PLAYERNAME|.",
+        "Bye.": "Güle güle.",
+        "Bye!": "Güle güle!",
+        "Bye, bye.": "Güle güle.",
+        "Bye, |PLAYERNAME|.": "Güle güle, |PLAYERNAME|.",
+        "Well, bye then.": "Peki, hoşça kal o zaman.",
+        "See you my friend.": "Görüşürüz dostum.",
+        "Farewell.": "Elveda.",
+        "Farewell!": "Elveda!",
+        "Have a nice day.": "İyi günler.",
+        "Have a nice day!": "İyi günler!",
+        "Good bye and don't forget me!": "Hoşça kal ve beni unutma!",
+        "Good bye. Come back soon.": "Hoşça kal. Yakında tekrar gel.",
+        "Good bye. Recommend us if you were satisfied with our service.": "Hoşça kal. Hizmetimizden memnun kaldıysan bizi tavsiye et.",
+        "Please come back from time to time.": "Lütfen zaman zaman tekrar gel.",
+        "We would like to serve you some time.": "Size bir zaman hizmet etmek isteriz.",
+        "May your path always be even.": "Yolun hep düz olsun.",
+        "It was a pleasure to help you, |PLAYERNAME|.": "Sana yardım etmek bir zevkti, |PLAYERNAME|.",
+        "May the gods bless you, |PLAYERNAME|!": "Tanrılar seni korusun, |PLAYERNAME|!",
+        "Greetings, |PLAYERNAME|.": "Selamlar, |PLAYERNAME|.",
+        # === Evet/Hayır/İptal ===
+        "Yes": "Evet",
+        "Yes!": "Evet!",
+        "Yes?": "Evet?",
+        "No": "Hayır",
+        "No!": "Hayır!",
+        "Ok": "Tamam",
+        "Ok.": "Tamam.",
+        "Ok then.": "Peki o zaman.",
+        "Cancel": "İptal",
+        "Sure.": "Tabii.",
+        "Fine.": "İyi.",
+        "Sorry.": "Özür dilerim.",
+        "Sorry!": "Özür dilerim!",
+        "Oh well.": "Neyse.",
+        "Oh...": "Ah...",
+        "Then not.": "O zaman hayır.",
+        "No problem.": "Sorun değil.",
+        "Fine. You are free to decline my offer.": "Peki. Teklifimi reddetmekte özgürsün.",
+        "Sorry, not possible.": "Üzgünüm, mümkün değil.",
+        # === Ticaret ===
+        "Buy": "Satın al",
+        "Sell": "Sat",
+        "Trade": "Takas",
+        "Gold": "Altın",
+        "You don't have enough money.": "Yeterli paran yok.",
+        "Sorry, you don't have enough money.": "Üzgünüm, yeterli paran yok.",
+        "Here you are.": "Buyur.",
+        "Here you are. Take care.": "Buyur. Kendine iyi bak.",
+        "Here it is.": "İşte burada.",
+        "Of course, just browse through my wares. You can also look at {}.": "Tabii, mallarıma göz at. Ayrıca {} de bakabilirsin.",
+        "You don't have it...": "Sende yok...",
+        "You shouldn't miss the experience.": "Bu deneyimi kaçırmamalısın.",
+        # === NPC genel ===
+        "How could I help you?": "Sana nasıl yardımcı olabilirim?",
+        "Well, can I help you with something else?": "Peki, başka bir konuda yardımcı olabilir miyim?",
+        "Talk to me if you need directions.": "Yön tarifi lazımsa benimle konuş.",
+        "I am the captain of this ship.": "Bu geminin kaptanıyım.",
+        "Do you seek a passage to {0} for {1}?": "{0} yolculuğu {1} karşılığında ister misin?",
+        "Welcome on board, |PLAYERNAME|. Where can I {sail} you today?": "Gemiye hoş geldin, |PLAYERNAME|. Bugün seni nereye {sail} edebilirim?",
+        "Yes? What may I do for you, |PLAYERNAME|? Bank business, perhaps?": "Evet? Sana nasıl yardımcı olabilirim, |PLAYERNAME|? Banka işleri belki?",
+        "Don't forget to deposit your money here in the Global Bank before you head out for adventure.": "Maceraya çıkmadan önce paranı Global Banka yatırmayı unutma.",
+        "Free escort to the depot for newcomers!": "Yeni oyuncular için depoya ücretsiz eşlik!",
+        "Hello and welcome in the Gnomprona Gardens": "Merhaba ve Gnomprona Bahçelerine hoş geldin",
+        "Keep your adventurer's stone well.": "Maceracı taşını iyi koru.",
+        "Ah, you want to replace your adventurer's stone for free?": "Maceracı taşını ücretsiz değiştirmek mi istiyorsun?",
+        "Ah, you want to replace your adventurer's stone for 30 gold?": "Maceracı taşını 30 altına değiştirmek mi istiyorsun?",
+        "LONG LIVE THE KING!": "YAŞASIN KRAL!",
+        "LONG LIVE THE QUEEN!": "YAŞASIN KRALİÇE!",
+        # === İyileşme / Kutsama ===
+        "You are hurt, my child. I will heal your wounds.": "Yaralısın, çocuğum. Yaralarını iyileştireceğim.",
+        "Remember: If you are heavily wounded or poisoned, I can heal you for free.": "Unutma: Ağır yaralı veya zehirlenmişsen seni ücretsiz iyileştirebilirim.",
+        "Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal} you for free.": "Hoş geldin, genç |PLAYERNAME|! Ağır yaralı veya zehirlenmişsen seni ücretsiz {heal} edebilirim.",
+        "So receive the protection of the twist of fate, pilgrim.": "Kaderin bükülesinin korumasını al, hacı.",
+        "You can ask for the blessing of spiritual shielding in the whiteflower temple south of Thais.": "Thais'in güneyindeki beyaz çiçek tapınağında ruhani kalkan kutsağını isteyebilirsin.",
+        "You can ask for the blessing of the two suns in the suntower near Ab'Dendriel.": "Ab'Dendriel yakınlarındaki güneş kulesinde iki güneşin kutsağını isteyebilirsin.",
+        "The spark of the phoenix is given by the dwarven priests of earth and fire in Kazordoon.": "Anka kuşu kıvılcımı Kazordoon'daki cüce toprak ve ateş rahipleri tarafından verilir.",
+        "The druids north of Carlin will provide you with the embrace of Tibia.": "Carlin'in kuzeyindeki druidler sana Tibia'nın kucaklamasını sağlayacak.",
+        "A hermit near Carlin might be able to tell you more about it": "Carlin yakınlarındaki bir münzevi sana daha fazla bilgi verebilir",
+        "I see you received the spiritual shielding in the whiteflower temple south of Thais.": "Thais'in güneyindeki beyaz çiçek tapınağında ruhani kalkanı aldığını görüyorum.",
+        "I can sense that the druids north of Carlin have provided you with the Embrace of Tibia.": "Carlin'in kuzeyindeki druidlerin sana Tibia'nın Kucaklamasını sağladığını hissedebiliyorum.",
+        "I can see you received the blessing of the two suns in the suntower near Ab'Dendriel.": "Ab'Dendriel yakınlarındaki güneş kulesinde iki güneşin kutsağını aldığını görebiliyorum.",
+        # === Eşyalar / Çevre ===
+        "closed door": "kapalı kapı",
+        "open door": "açık kapı",
+        "gate of expertise": "uzmanlık kapısı",
+        "stairs": "merdivenler",
+        "unknown item": "bilinmeyen eşya",
+        "It is locked.": "Kilitli.",
+        "It is empty.": "Boş.",
+        "The door seems to be sealed against unwanted intruders.": "Kapı istenmeyen davetsiz misafirlere karşı mühürlenmiş görünüyor.",
+        "Somebody is sleeping there": "Orada birisi uyuyor",
+        "The chest is empty.": "Sandık boş.",
+        "stone wall": "taş duvar",
+        "stone floor": "taş zemin",
+        "wooden floor": "ahşap zemin",
+        "flower pot": "saksı",
+        "wall lamp": "duvar lambası",
+        "lit wall lamp": "yanan duvar lambası",
+        "cozy couch": "rahat kanepe",
+        "hole": "delik",
+        "ladder": "merdiven",
+        "trapdoor": "tuzak kapı",
+        "parchment": "parşömen",
+        "book": "kitap",
+        "chest": "sandık",
+        "crate": "kasa",
+        "skull": "kafatası",
+        "stone": "taş",
+        "snow": "kar",
+        "grass": "çimen",
+        "earth": "toprak",
+        "entrance": "giriş",
+        "fire field": "ateş alanı",
+        "magic tile": "sihirli karo",
+        "crystal column": "kristal sütun",
+        "ramp": "rampa",
+        "bed": "yatak",
+        "simple bed": "basit yatak",
+        "hammock": "hamak",
+        "verdant bed": "yeşil yatak",
+        "homely bed": "ev yatağı",
+        "wrought-iron bed": "ferforje yatak",
+        "magnificent bed": "muhteşem yatak",
+        "ornate bed": "süslü yatak",
+        "vengothic bed": "vengothik yatak",
+        "grandiose couch": "görkemli kanepe",
+        "grandiose bed": "görkemli yatak",
+        "log bed": "kütük yatak",
+        "kraken bed": "kraken yatağı",
+        "sleeping mat": "uyku matı",
+        "knightly bed": "şövalye yatağı",
+        "flower bed": "çiçekli yatak",
+        "seafarer bed": "denizci yatağı",
+        "opulent kline": "lüks kline",
+        "straw mat": "saman mat",
+        "knightly bench": "şövalye bankı",
+        "carved table": "oyma masa",
+        "silver rune emblem": "gümüş rün amblemi",
+        "golden rune emblem": "altın rün amblemi",
+        "golden outfit display": "altın kıyafet vitrini",
+        "Souvenir from Thais Museum": "Thais Müzesi hatırası",
+        "This replica looks charged": "Bu replika şarjlı görünüyor",
+        "This replica looks heavily charged": "Bu replika çok şarjlı görünüyor",
+        "This replica looks overcharged": "Bu replika aşırı şarjlı görünüyor",
+        "It can be disassembled with the right tool": "Doğru aletle sökülebilir",
+        "You need to wait before using it again.": "Tekrar kullanmadan önce beklemelisin.",
+        "You have %s hours and %s minutes left": "%s saat ve %s dakikan kaldı",
+        # === Ölüler / Canavar ===
+        "dead orc": "ölü ork",
+        "dead human": "ölü insan",
+        "dead troll": "ölü trol",
+        "dead corpse": "ölü ceset",
+        "dead wolf": "ölü kurt",
+        "dead dwarf": "ölü cüce",
+        "dead cyclops": "ölü tepegöz",
+        "dead dragon": "ölü ejderha",
+        "dead bear": "ölü ayı",
+        "dead dworc": "ölü dworc",
+        "dead spider": "ölü örümcek",
+        "dead elf": "ölü elf",
+        "dead dragon hatchling": "ölü ejderha yavrusu",
+        "dead djinn": "ölü cin",
+        "dead chakoya": "ölü chakoya",
+        "dead iks": "ölü iks",
+        "dead rat": "ölü fare",
+        "dead minotaur": "ölü minotaur",
+        "slain skeleton": "öldürülmüş iskelet",
+        # === Yaratık sesleri ===
+        "Ribbit!": "Vrak!",
+        "Ribbit! Ribbit!": "Vrak! Vrak!",
+        "Grrr.": "Grrr.",
+        "Hiss.": "Tıs.",
+        "FIRE!": "ATEŞ!",
+        "BURN!": "YAN!",
+        "Meat!": "Et!",
+        "MINE!": "BENİM!",
+        "PAIN!": "ACI!",
+        # === NPC yolculuklar ===
+        "Pssst! Keep it down! <gives you an elaborate report on monster activity>": "Pssst! Sessiz ol! <canavar aktivitesi hakkında detaylı rapor verir>",
+        # === Oyun terimleri ===
+        "Item": "Eşya",
+        "Spell": "Büyü",
+        "Attack": "Saldırı",
+        "Defense": "Savunma",
+        "Health": "Sağlık",
+        "Mana": "Mana",
+        "Help": "Yardım",
+        "Quest": "Görev",
+        "Mission": "Görev",
+        "Player": "Oyuncu",
+        "Monster": "Canavar",
+        "Name": "İsim",
+        "Level": "Seviye",
+        "Status": "Durum",
+        "Error": "Hata",
+        "Close": "Kapat",
+        "Description": "Açıklama",
+        "The": "Bu",
+        "RESERVED SPRITE": "AYRILMIŞ SPRİTE",
+        "Sort by name": "İsme göre sırala",
+        "Loading": "Yükleniyor",
+        # === Bulunan eşyalar ===
+        "You found ": "Buldun ",
+        "You found a bag.": "Bir çanta buldun.",
+        "You found a wooden sword.": "Ahşap bir kılıç buldun.",
+        "You found a beautiful pearl.": "Güzel bir inci buldun.",
+        "You found Waldo's posthorn.": "Waldo'nun posta borusunu buldun.",
+        "You found %s %s in the bag.": "Çantada %s %s buldun.",
+        "You found {0} in the bag.": "Çantada {0} buldun.",
+        "You found {} while digging.": "Kazarken {} buldun.",
+        "Thank you": "Teşekkür ederim",
+        # === Malzeme / bileşimler (doğru Türkçe dilbilgisi) ===
+        "stone wall": "taş duvar",
+        "Stone Wall": "Taş Duvar",
+        "stone floor": "taş zemin",
+        "Stone Floor": "Taş Zemin",
+        "stone stairs": "taş merdivenler",
+        "stone tile": "taş karo",
+        "stone pillar": "taş sütun",
+        "stone bridge": "taş köprü",
+        "wooden floor": "ahşap zemin",
+        "Wooden Floor": "Ahşap Zemin",
+        "wooden wall": "ahşap duvar",
+        "wooden door": "ahşap kapı",
+        "wooden chest": "ahşap sandık",
+        "wooden box": "ahşap kutu",
+        "wooden table": "ahşap masa",
+        "wooden chair": "ahşap sandalye",
+        "wooden shelf": "ahşap raf",
+        "wooden stairs": "ahşap merdivenler",
+        "wooden barrel": "ahşap fıçı",
+        "wall lamp": "duvar lambası",
+        "Wall Lamp": "Duvar Lambası",
+        "dead corpse": "ölü ceset",
+        "Dead Corpse": "Ölü Ceset",
+        "unknown corpse": "bilinmeyen ceset",
+        "dead witch": "ölü cadı",
+        "dead spider": "ölü örümcek",
+        "dead crystal wolf": "ölü kristal kurt",
+        "dead ghost wolf": "ölü hayalet kurt",
+        "dead sacred spider": "ölü kutsal örümcek",
+        "slain ice witch": "öldürülmüş buz cadısı",
+        "Magic Level": "Büyü Seviyesi",
+        "magic level": "büyü seviyesi",
+        "Item Name": "Eşya Adı",
+        "item name": "eşya adı",
+        "special flask": "özel şişe",
+        "spell rune": "büyü rünü",
+        "dead human": "ölü insan",
+        "dead rat": "ölü fare",
+        "dead wolf": "ölü kurt",
+        "dead bear": "ölü ayı",
+        "dead troll": "ölü trol",
+        "dead orc": "ölü ork",
+        "dead dragon": "ölü ejderha",
+        "dead demon": "ölü iblis",
+        "dead dwarf": "ölü cüce",
+        "dead elf": "ölü elf",
+        "dead goblin": "ölü goblin",
+        "dead giant": "ölü dev",
+        "dead vampire": "ölü vampir",
+        "dead skeleton": "ölü iskelet",
+        "dead zombie": "ölü zombi",
+        "dead knight": "ölü şövalye",
+        "dead minotaur": "ölü minotaur",
+        "dead werewolf": "ölü kurtadam",
+        "slain skeleton": "öldürülmüş iskelet",
+        "slain orc": "öldürülmüş ork",
+        "slain troll": "öldürülmüş trol",
+        "slain goblin": "öldürülmüş goblin",
+        "slain wolf": "öldürülmüş kurt",
+        "slain rat": "öldürülmüş fare",
+        "slain spider": "öldürülmüş örümcek",
+        "slain dragon": "öldürülmüş ejderha",
+        "gold coin": "altın sikke",
+        "gold coins": "altın sikkeler",
+        "silver coin": "gümüş sikke",
+        "crystal coin": "kristal sikke",
+        "iron helmet": "demir miğfer",
+        "iron armor": "demir zırh",
+        "iron shield": "demir kalkan",
+        "steel helmet": "çelik miğfer",
+        "steel armor": "çelik zırh",
+        "steel shield": "çelik kalkan",
+        "golden armor": "altın zırh",
+        "ancient shield": "antik kalkan",
+        "magic shield": "büyülü kalkan",
+        "enchanted sword": "büyülü kılıç",
+        "Royal Paladin": "Kraliyet Paladini",
+        "Elite Knight": "Elit Şövalye",
+        "dark cave": "karanlık mağara",
+        "old temple": "eski tapınak",
+        "ancient temple": "antik tapınak",
+        "dark tower": "karanlık kule",
+        "crystal cave": "kristal mağara",
+        "snow ramp": "kar rampası",
+        "dirt floor": "toprak zemin",
+        "dirt ramp": "toprak rampa",
+        "grass floor": "çimen zemin",
+        "sand floor": "kum zemin",
+        "ice floor": "buz zemin",
+        "North East": "Kuzey Doğu",
+        "North West": "Kuzey Batı",
+        "South East": "Güney Doğu",
+        "South West": "Güney Batı",
+        "north east": "kuzey doğu",
+        "north west": "kuzey batı",
+        "south east": "güney doğu",
+        "south west": "güney batı",
     }
+}
+
+WORD_TRANSLATIONS = {
+    "pl": {
+        # Walka / Statystyki
+        "attack": "atak",
+        "defense": "obrona",
+        "speed": "szybkość",
+        "health": "zdrowie",
+        "mana": "mana",
+        "magic": "magia",
+        "fire": "ogień",
+        "ice": "lód",
+        "earth": "ziemia",
+        "energy": "energia",
+        "holy": "świętość",
+        "death": "śmierć",
+        "physical": "fizyczny",
+        "sword": "miecz",
+        "axe": "topór",
+        "club": "obuch",
+        "distance": "dystans",
+        "shield": "tarcza",
+        "armor": "pancerz",
+        "helmet": "hełm",
+        "boots": "buty",
+        "ring": "pierścień",
+        "amulet": "amulet",
+        "level": "poziom",
+        "experience": "doświadczenie",
+        "required": "wymagany",
+        "weight": "waga",
+        "charges": "ładunki",
+        "duration": "czas trwania",
+        "chance": "szansa",
+        "bonus": "premia",
+        # Typy stworzeń / przeciwników
+        "dead": "martwy",
+        "slain": "zabity",
+        "corpse": "zwłoki",
+        "skeleton": "szkielet",
+        "zombie": "zombi",
+        "ghost": "duch",
+        "rat": "szczur",
+        "wolf": "wilk",
+        "bear": "niedźwiedź",
+        "spider": "pająk",
+        "troll": "trol",
+        "orc": "ork",
+        "dragon": "smok",
+        "demon": "demon",
+        "dwarf": "krasnolud",
+        "elf": "elf",
+        "goblin": "goblin",
+        "giant": "olbrzym",
+        "serpent": "wąż",
+        "beast": "bestia",
+        "creature": "stworzenie",
+        "undead": "nieumarły",
+        "vampire": "wampir",
+        "witch": "wiedźma",
+        "wizard": "czarodziej",
+        "knight": "rycerz",
+        "paladin": "paladyn",
+        "sorcerer": "czarnoksiężnik",
+        "druid": "druid",
+        # Przedmioty / Materiały
+        "gold": "złoto",
+        "silver": "srebro",
+        "iron": "żelazo",
+        "steel": "stal",
+        "wood": "drewno",
+        "wooden": "drewniany",
+        "stone": "kamień",
+        "crystal": "kryształ",
+        "gem": "klejnot",
+        "diamond": "diament",
+        "ruby": "rubin",
+        "emerald": "szmaragd",
+        "sapphire": "szafir",
+        "potion": "mikstura",
+        "scroll": "zwój",
+        "rune": "runa",
+        "key": "klucz",
+        "door": "drzwi",
+        "chest": "skrzynia",
+        "bag": "torba",
+        "box": "pudełko",
+        "flask": "butelka",
+        "vial": "fiolka",
+        "rope": "lina",
+        "torch": "pochodnia",
+        "lamp": "lampa",
+        "candle": "świeca",
+        "coin": "moneta",
+        "coins": "monety",
+        # Otoczenie / Mapa
+        "north": "północ",
+        "south": "południe",
+        "east": "wschód",
+        "west": "zachód",
+        "left": "lewo",
+        "right": "prawo",
+        "up": "góra",
+        "down": "dół",
+        "entrance": "wejście",
+        "exit": "wyjście",
+        "bridge": "most",
+        "mountain": "góra",
+        "forest": "las",
+        "desert": "pustynia",
+        "cave": "jaskinia",
+        "dungeon": "loch",
+        "temple": "świątynia",
+        "tower": "wieża",
+        "castle": "zamek",
+        "house": "dom",
+        "shop": "sklep",
+        "bank": "bank",
+        "depot": "depo",
+        "island": "wyspa",
+        "city": "miasto",
+        "village": "wioska",
+        "harbor": "port",
+        "lake": "jezioro",
+        "river": "rzeka",
+        "sea": "morze",
+        "ocean": "ocean",
+        "swamp": "bagno",
+        "floor": "podłoga",
+        "wall": "ściana",
+        "roof": "dach",
+        "stairs": "schody",
+        "hole": "dziura",
+        "closed": "zamknięte",
+        "open": "otwarte",
+        "locked": "zamknięte na klucz",
+        # Akcje / Czasowniki
+        "buy": "kup",
+        "sell": "sprzedaj",
+        "trade": "handel",
+        "look": "popatrz",
+        "use": "użyj",
+        "move": "przesuń",
+        "take": "weź",
+        "drop": "upuść",
+        "eat": "zjedz",
+        "drink": "wypij",
+        "read": "czytaj",
+        "write": "pisz",
+        "open": "otwórz",
+        "close": "zamknij",
+        "push": "popchnij",
+        "pull": "pociągnij",
+        "throw": "rzuć",
+        "cast": "rzuć",
+        "heal": "lecz",
+        "kill": "zabij",
+        "fight": "walcz",
+        "run": "biegnij",
+        "walk": "idź",
+        "stop": "stój",
+        "wait": "czekaj",
+        "rest": "odpocznij",
+        "sleep": "śpij",
+        "talk": "rozmawiaj",
+        "say": "powiedz",
+        "ask": "zapytaj",
+        "answer": "odpowiedz",
+        "search": "szukaj",
+        "find": "znajdź",
+        "hide": "ukryj",
+        "show": "pokaż",
+        "give": "daj",
+        "receive": "otrzymaj",
+        # Przymiotniki / Przysłówki
+        "small": "mały",
+        "big": "duży",
+        "large": "duży",
+        "huge": "ogromny",
+        "tiny": "malutki",
+        "old": "stary",
+        "new": "nowy",
+        "ancient": "starożytny",
+        "dark": "ciemny",
+        "light": "jasny",
+        "bright": "jasny",
+        "strong": "silny",
+        "weak": "słaby",
+        "fast": "szybki",
+        "slow": "wolny",
+        "hot": "gorący",
+        "cold": "zimny",
+        "warm": "ciepły",
+        "empty": "pusty",
+        "full": "pełny",
+        "broken": "złamany",
+        "enchanted": "zaczarowany",
+        "magical": "magiczny",
+        "cursed": "przeklęty",
+        "blessed": "błogosławiony",
+        "sacred": "święty",
+        "royal": "królewski",
+        "golden": "złoty",
+        "unknown": "nieznany",
+        "rare": "rzadki",
+        "common": "zwykły",
+        "special": "specjalny",
+        "normal": "normalny",
+        "simple": "prosty",
+        # Ogólne / UI
+        "yes": "tak",
+        "no": "nie",
+        "ok": "ok",
+        "name": "nazwa",
+        "error": "błąd",
+        "warning": "ostrzeżenie",
+        "success": "sukces",
+        "failed": "nieudane",
+        "loading": "ładowanie",
+        "cancel": "anuluj",
+        "confirm": "potwierdź",
+        "delete": "usuń",
+        "save": "zapisz",
+        "load": "wczytaj",
+        "status": "status",
+        "description": "opis",
+        "quest": "zadanie",
+        "mission": "misja",
+        "reward": "nagroda",
+        "player": "gracz",
+        "monster": "potwór",
+        "item": "przedmiot",
+        "spell": "zaklęcie",
+        # Dodatkowe stworzenia / Tibia
+        "ramp": "rampa",
+        "bed": "łóżko",
+        "skull": "czaszka",
+        "book": "książka",
+        "human": "człowiek",
+        "statue": "posąg",
+        "pillar": "filar",
+        "werewolf": "wilkołak",
+        "minotaur": "minotaur",
+        "parchment": "pergamin",
+        "strange": "dziwny",
+        "snow": "śnieg",
+        "dirt": "ziemia",
+        "sand": "piasek",
+        "grass": "trawa",
+        "mud": "błoto",
+        "water": "woda",
+        "blood": "krew",
+        "bone": "kość",
+        "bones": "kości",
+        "skull": "czaszka",
+        "sign": "znak",
+        "banner": "sztandar",
+        "flag": "flaga",
+        "throne": "tron",
+        "altar": "ołtarz",
+        "fountain": "fontanna",
+        "grave": "grób",
+        "tomb": "grobowiec",
+        "coffin": "trumna",
+        "shelf": "półka",
+        "table": "stół",
+        "chair": "krzesło",
+        "barrel": "beczka",
+        "crate": "skrzynia",
+        "basket": "kosz",
+        "flower": "kwiat",
+        "plant": "roślina",
+        "tree": "drzewo",
+        "bush": "krzak",
+        "mushroom": "grzyb",
+        "fish": "ryba",
+        "meat": "mięso",
+        "bread": "chleb",
+        "cheese": "ser",
+        "apple": "jabłko",
+        "cake": "ciasto",
+        "wine": "wino",
+        "beer": "piwo",
+        "horn": "róg",
+        "wing": "skrzydło",
+        "claw": "pazur",
+        "fang": "kieł",
+        "tail": "ogon",
+        "scale": "łuska",
+        "skin": "skóra",
+        "leather": "skóra",
+        "cloth": "tkanina",
+        "fur": "futro",
+        "feather": "pióro",
+        "shard": "odłamek",
+        "piece": "kawałek",
+        "fragment": "fragment",
+        "remains": "szczątki",
+        "powder": "proszek",
+        "dust": "pył",
+        "ashes": "popioły",
+        "slime": "szlam",
+        "web": "pajęczyna",
+        "nest": "gniazdo",
+        "lair": "legowisko",
+        "den": "nora",
+        "pit": "dół",
+        "trap": "pułapka",
+        "lever": "dźwignia",
+        "switch": "przełącznik",
+        "gate": "brama",
+        "fence": "płot",
+        "ladder": "drabina",
+        "well": "studnia",
+        "oven": "piec",
+        "anvil": "kowadło",
+        "loom": "krosno",
+        "hammer": "młot",
+        "pickaxe": "kilof",
+        "shovel": "łopata",
+        "saw": "piła",
+        "nail": "gwóźdź",
+        "chain": "łańcuch",
+        "mirror": "lustro",
+        "painting": "obraz",
+        "carpet": "dywan",
+        "curtain": "zasłona",
+        "window": "okno",
+        "balcony": "balkon",
+        "armor": "pancerz",
+        "weapon": "broń",
+        "bow": "łuk",
+        "arrow": "strzała",
+        "crossbow": "kusza",
+        "bolt": "bełt",
+        "spear": "włócznia",
+        "dagger": "sztylet",
+        "wand": "różdżka",
+        "staff": "kostur",
+        "backpack": "plecak",
+        "belt": "pas",
+        "legs": "nogawice",
+        "plate": "płyta",
+        "mail": "kolczuga",
+        "cap": "czapka",
+        "hat": "kapelusz",
+        "crown": "korona",
+        "cloak": "peleryna",
+        "cape": "peleryna",
+        "gloves": "rękawice",
+        "sandals": "sandały",
+        "depot": "depo",
+        "supply": "zaopatrzenie",
+        "depot": "depo",
+    },
+    "tr": {
+        # Savaş / İstatistikler
+        "attack": "saldırı",
+        "defense": "savunma",
+        "speed": "hız",
+        "health": "sağlık",
+        "mana": "mana",
+        "magic": "büyü",
+        "fire": "ateş",
+        "ice": "buz",
+        "earth": "toprak",
+        "energy": "enerji",
+        "holy": "kutsal",
+        "death": "ölüm",
+        "physical": "fiziksel",
+        "sword": "kılıç",
+        "axe": "balta",
+        "club": "topuz",
+        "distance": "mesafe",
+        "shield": "kalkan",
+        "armor": "zırh",
+        "helmet": "miğfer",
+        "boots": "çizme",
+        "ring": "yüzük",
+        "amulet": "muska",
+        "level": "seviye",
+        "experience": "deneyim",
+        "required": "gerekli",
+        "weight": "ağırlık",
+        "charges": "yük",
+        "duration": "süre",
+        "chance": "şans",
+        "bonus": "bonus",
+        # Yaratık türleri
+        "dead": "ölü",
+        "slain": "öldürülmüş",
+        "corpse": "ceset",
+        "skeleton": "iskelet",
+        "zombie": "zombi",
+        "ghost": "hayalet",
+        "rat": "fare",
+        "wolf": "kurt",
+        "bear": "ayı",
+        "spider": "örümcek",
+        "troll": "trol",
+        "orc": "ork",
+        "dragon": "ejderha",
+        "demon": "iblis",
+        "dwarf": "cüce",
+        "elf": "elf",
+        "goblin": "goblin",
+        "giant": "dev",
+        "serpent": "yılan",
+        "beast": "canavar",
+        "creature": "yaratık",
+        "undead": "yaşayan ölü",
+        "vampire": "vampir",
+        "witch": "cadı",
+        "wizard": "büyücü",
+        "knight": "şövalye",
+        "paladin": "paladin",
+        "sorcerer": "büyücü",
+        "druid": "druid",
+        # Eşyalar / Malzemeler
+        "gold": "altın",
+        "silver": "gümüş",
+        "iron": "demir",
+        "steel": "çelik",
+        "wood": "odun",
+        "wooden": "ahşap",
+        "stone": "taş",
+        "crystal": "kristal",
+        "gem": "mücevher",
+        "diamond": "elmas",
+        "ruby": "yakut",
+        "emerald": "zümrüt",
+        "sapphire": "safir",
+        "potion": "iksir",
+        "scroll": "tomar",
+        "rune": "rün",
+        "key": "anahtar",
+        "door": "kapı",
+        "chest": "sandık",
+        "bag": "çanta",
+        "box": "kutu",
+        "flask": "şişe",
+        "vial": "flakon",
+        "rope": "halat",
+        "torch": "meşale",
+        "lamp": "lamba",
+        "candle": "mum",
+        "coin": "sikke",
+        "coins": "sikkeler",
+        # Çevre / Harita
+        "north": "kuzey",
+        "south": "güney",
+        "east": "doğu",
+        "west": "batı",
+        "left": "sol",
+        "right": "sağ",
+        "up": "yukarı",
+        "down": "aşağı",
+        "entrance": "giriş",
+        "exit": "çıkış",
+        "bridge": "köprü",
+        "mountain": "dağ",
+        "forest": "orman",
+        "desert": "çöl",
+        "cave": "mağara",
+        "dungeon": "zindan",
+        "temple": "tapınak",
+        "tower": "kule",
+        "castle": "kale",
+        "house": "ev",
+        "shop": "dükkan",
+        "bank": "banka",
+        "depot": "depo",
+        "island": "ada",
+        "city": "şehir",
+        "village": "köy",
+        "harbor": "liman",
+        "lake": "göl",
+        "river": "nehir",
+        "sea": "deniz",
+        "ocean": "okyanus",
+        "swamp": "bataklık",
+        "floor": "zemin",
+        "wall": "duvar",
+        "roof": "çatı",
+        "stairs": "merdivenler",
+        "hole": "delik",
+        "closed": "kapalı",
+        "open": "açık",
+        "locked": "kilitli",
+        # Eylemler
+        "buy": "satın al",
+        "sell": "sat",
+        "trade": "takas",
+        "look": "bak",
+        "use": "kullan",
+        "move": "taşı",
+        "take": "al",
+        "drop": "bırak",
+        "eat": "ye",
+        "drink": "iç",
+        "read": "oku",
+        "write": "yaz",
+        "open": "aç",
+        "close": "kapat",
+        "push": "it",
+        "pull": "çek",
+        "throw": "at",
+        "cast": "yap",
+        "heal": "iyileştir",
+        "kill": "öldür",
+        "fight": "savaş",
+        "run": "koş",
+        "walk": "yürü",
+        "stop": "dur",
+        "wait": "bekle",
+        "rest": "dinlen",
+        "sleep": "uyu",
+        "talk": "konuş",
+        "say": "söyle",
+        "ask": "sor",
+        "answer": "cevapla",
+        "search": "ara",
+        "find": "bul",
+        "hide": "saklan",
+        "show": "göster",
+        "give": "ver",
+        "receive": "al",
+        # Sıfatlar
+        "small": "küçük",
+        "big": "büyük",
+        "large": "büyük",
+        "huge": "devasa",
+        "tiny": "minik",
+        "old": "eski",
+        "new": "yeni",
+        "ancient": "antik",
+        "dark": "karanlık",
+        "light": "aydınlık",
+        "bright": "parlak",
+        "strong": "güçlü",
+        "weak": "zayıf",
+        "fast": "hızlı",
+        "slow": "yavaş",
+        "hot": "sıcak",
+        "cold": "soğuk",
+        "warm": "ılık",
+        "empty": "boş",
+        "full": "dolu",
+        "broken": "kırık",
+        "enchanted": "büyülü",
+        "magical": "sihirli",
+        "cursed": "lanetli",
+        "blessed": "kutsanmış",
+        "sacred": "kutsal",
+        "royal": "kraliyet",
+        "golden": "altın",
+        "unknown": "bilinmeyen",
+        "rare": "nadir",
+        "common": "yaygın",
+        "special": "özel",
+        "normal": "normal",
+        "simple": "basit",
+        # Genel / UI
+        "yes": "evet",
+        "no": "hayır",
+        "ok": "tamam",
+        "name": "isim",
+        "error": "hata",
+        "warning": "uyarı",
+        "success": "başarı",
+        "failed": "başarısız",
+        "loading": "yükleniyor",
+        "cancel": "iptal",
+        "confirm": "onayla",
+        "delete": "sil",
+        "save": "kaydet",
+        "load": "yükle",
+        "status": "durum",
+        "description": "açıklama",
+        "quest": "görev",
+        "mission": "görev",
+        "reward": "ödül",
+        "player": "oyuncu",
+        "monster": "canavar",
+        "item": "eşya",
+        "spell": "büyü",
+        # Ek yaratıklar / Tibia
+        "ramp": "rampa",
+        "bed": "yatak",
+        "skull": "kafatası",
+        "book": "kitap",
+        "human": "insan",
+        "statue": "heykel",
+        "pillar": "sütun",
+        "werewolf": "kurtadam",
+        "minotaur": "minotaur",
+        "parchment": "parşömen",
+        "strange": "tuhaf",
+        "snow": "kar",
+        "dirt": "toprak",
+        "sand": "kum",
+        "grass": "çimen",
+        "mud": "çamur",
+        "water": "su",
+        "blood": "kan",
+        "bone": "kemik",
+        "bones": "kemikler",
+        "sign": "tabela",
+        "banner": "sancak",
+        "flag": "bayrak",
+        "throne": "taht",
+        "altar": "sunak",
+        "fountain": "çeşme",
+        "grave": "mezar",
+        "tomb": "türbe",
+        "coffin": "tabut",
+        "shelf": "raf",
+        "table": "masa",
+        "chair": "sandalye",
+        "barrel": "fıçı",
+        "crate": "sandık",
+        "basket": "sepet",
+        "flower": "çiçek",
+        "plant": "bitki",
+        "tree": "ağaç",
+        "bush": "çalı",
+        "mushroom": "mantar",
+        "fish": "balık",
+        "meat": "et",
+        "bread": "ekmek",
+        "cheese": "peynir",
+        "apple": "elma",
+        "cake": "pasta",
+        "wine": "şarap",
+        "beer": "bira",
+        "horn": "boynuz",
+        "wing": "kanat",
+        "claw": "pençe",
+        "fang": "diş",
+        "tail": "kuyruk",
+        "scale": "pul",
+        "skin": "deri",
+        "leather": "deri",
+        "cloth": "kumaş",
+        "fur": "kürk",
+        "feather": "tüy",
+        "shard": "parça",
+        "piece": "parça",
+        "fragment": "parça",
+        "remains": "kalıntılar",
+        "powder": "toz",
+        "dust": "toz",
+        "ashes": "küller",
+        "slime": "balçık",
+        "web": "ağ",
+        "nest": "yuva",
+        "lair": "in",
+        "den": "in",
+        "pit": "çukur",
+        "trap": "tuzak",
+        "lever": "kol",
+        "switch": "düğme",
+        "gate": "kapı",
+        "fence": "çit",
+        "ladder": "merdiven",
+        "well": "kuyu",
+        "oven": "fırın",
+        "anvil": "örs",
+        "loom": "tezgah",
+        "hammer": "çekiç",
+        "pickaxe": "kazma",
+        "shovel": "kürek",
+        "saw": "testere",
+        "nail": "çivi",
+        "chain": "zincir",
+        "mirror": "ayna",
+        "painting": "tablo",
+        "carpet": "halı",
+        "curtain": "perde",
+        "window": "pencere",
+        "balcony": "balkon",
+        "weapon": "silah",
+        "bow": "yay",
+        "arrow": "ok",
+        "crossbow": "tatar yayı",
+        "bolt": "cıvata",
+        "spear": "mızrak",
+        "dagger": "hançer",
+        "wand": "asa",
+        "staff": "asa",
+        "backpack": "sırt çantası",
+        "belt": "kemer",
+        "legs": "bacaklık",
+        "plate": "plaka",
+        "mail": "zırh",
+        "cap": "şapka",
+        "hat": "şapka",
+        "crown": "taç",
+        "cloak": "pelerin",
+        "cape": "pelerin",
+        "gloves": "eldiven",
+        "sandals": "sandalet",
+        "supply": "erzak",
+    },
+}
+
+def _load_external_dict(path: str):
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        return data if isinstance(data, dict) else {}
+    except Exception:
+        return {}
+
+EXT_SIMPLE_TRANSLATIONS = _load_external_dict(os.path.join(status_dir, "simple_translations.json"))
+EXT_WORD_TRANSLATIONS = _load_external_dict(os.path.join(status_dir, "word_translations.json"))
+
+def _merged_lang_dict(external_dict: dict, fallback_dict: dict, lang: str):
+    merged = {}
+    ext_lang = external_dict.get(lang, {}) if isinstance(external_dict.get(lang, {}), dict) else {}
+    fb_lang = fallback_dict.get(lang, {}) if isinstance(fallback_dict.get(lang, {}), dict) else {}
+    # Dla pilota jakości PL/ES nie pozwalamy, by zewnętrzny słownik nadpisywał
+    # ręcznie kuratorowane wpisy bazowe (zostają tylko dodatkowe klucze).
+    if str(lang or "").lower() in {"pl", "es"}:
+        merged.update(ext_lang)
+        merged.update(fb_lang)  # fallback ma priorytet
+    else:
+        merged.update(fb_lang)
+        merged.update(ext_lang)  # external ma priorytet
+    return merged
+
+SIMPLE_TRANSLATIONS_ACTIVE = {
+    lang: _merged_lang_dict(EXT_SIMPLE_TRANSLATIONS, SIMPLE_TRANSLATIONS, lang)
+    for lang in set(list(SIMPLE_TRANSLATIONS.keys()) + list(EXT_SIMPLE_TRANSLATIONS.keys()))
+}
+
+WORD_TRANSLATIONS_ACTIVE = {
+    lang: _merged_lang_dict(EXT_WORD_TRANSLATIONS, WORD_TRANSLATIONS, lang)
+    for lang in set(list(WORD_TRANSLATIONS.keys()) + list(EXT_WORD_TRANSLATIONS.keys()))
 }
 
 def simple_translate(text, lang):
     """Zwraca tłumaczenie TYLKO gdy całe zdanie równa się wpisowi w słowniku."""
-    translations = SIMPLE_TRANSLATIONS.get(lang)
+    translations = SIMPLE_TRANSLATIONS_ACTIVE.get(lang)
     if not translations:
         return None
     for en, translated in translations.items():
@@ -7676,10 +11050,250 @@ def simple_translate(text, lang):
             return translated
     return None
 
+def _is_game_nontranslatable(key, en_value):
+    """Heurystyka: tekst nieprzetłumaczalny specyficzny dla gry Tibia.
+    Fikcyjne języki (orcki, smocze), odgłosy zwierząt, onomatopeje."""
+    t = str(en_value or "").strip()
+    if not t:
+        return False
+    # Odgłosy zwierząt / krzyki: GRRRR, YOOOO, ZzzZzz, ROAAAAR itp.
+    _animal_patterns = ('GRRR', 'YOOO', 'ZZZZ', 'ROAR', 'HISS', 'SNARL', 'RAWR',
+                        'HOWL', 'GROWL', 'SCREE', 'CLANK', 'BOOM')
+    if any(p in t.upper() for p in _animal_patterns):
+        return True
+    # Fikcyjne frazy językowe Tibia (orcki, smocze, starożytne)
+    _fictional_words = re.compile(
+        r'\b(?:gort|utash|karek|booz|omark|ikem|goshak|torilu[nm]?|garnum|'
+        r'saethelon|zathroth|uthun|nortat|urghh?|brakka|morda|chakka|'
+        r'batuk|goshak|charach|galunda|mugrah|gorak|shakk|uurgh|'
+        r'tanjil|lanar|kull|ogar|azarak)\b', re.IGNORECASE
+    )
+    if _fictional_words.search(t):
+        return True
+    # Tekst wyłącznie z nie-angielskich nonsensownych sylab (≥3 "słowa" ≤5 liter, brak znanych angielskich słów)
+    words = re.findall(r'[A-Za-z]+', t)
+    if len(words) >= 3:
+        _common_en = {
+            'a','i','an','am','as','at','be','by','do','go','he','if','in','is','it','me','my','no',
+            'of','on','or','so','to','up','us','we','the','and','are','but','can','did','for','get',
+            'got','had','has','her','him','his','how','its','let','may','new','nor','not','now','old',
+            'one','our','out','own','put','ran','run','saw','say','set','she','sit','the','too','try',
+            'two','use','was','way','who','why','win','won','yes','yet','you','all','any','ask','bad',
+            'big','bit','boy','buy','cut','day','eat','end','far','few','fly','fun','god','hat','hit',
+            'hot','job','key','lay','led','lie','lot','low','man','map','men','met','mix','nor','off',
+            'oil','pay','per','red','rid','run','sad','sit','six','son','ten','top','war','wet','yet',
+            'able','also','back','been','best','body','both','call','came','case','come','could','each',
+            'even','fact','feel','find','first','from','gave','give','goes','gone','good','great',
+            'hand','have','head','help','here','high','home','hope','into','just','keep','kind','knew',
+            'know','last','left','life','like','line','live','long','look','lost','made','make','many',
+            'mind','more','most','much','must','name','need','next','only','open','over','part','plan',
+            'play','real','rest','room','said','same','seem','show','side','some','soon','stop','such',
+            'sure','take','talk','tell','than','that','them','then','they','this','time','told','took',
+            'turn','upon','very','walk','want','well','went','were','what','when','will','with','word',
+            'work','year','your','about','after','again','being','below','bring','carry','cause',
+            'close','could','doing','don','every','first','found','going','great','house','human',
+            'large','later','leave','light','might','money','never','night','often','order','other',
+            'place','point','right','shall','should','since','small','sorry','start','still','story',
+            'study','thank','their','there','these','thing','think','those','three','today','under',
+            'until','watch','water','where','which','while','world','would','write','young',
+            'really','little','around','before','always','people','after','again','already',
+        }
+        en_count = sum(1 for w in words if w.lower() in _common_en)
+        if en_count == 0 and all(len(w) <= 6 for w in words):
+            return True
+    # Czysta onomatopeja: powtórzenie tego samego wzorca liter 3+ razy (Hum hum hum, Clink clank clink)
+    if re.match(r'^([A-Za-z]{2,8})[,.\s]+\1(?:[,.\s]+\1)*[.!?]*$', t, re.IGNORECASE):
+        return True
+    return False
+
+def _is_proper_noun_key(key, en_value):
+    """Klucz z nazwą własną — identyczna wartość = poprawne tłumaczenie."""
+    pn_prefixes = ("item.", "monster.", "spell.", "mount.", "quest.", "raid.", "achievement.", "npc.", "book.otbm.")
+    pn_suffixes = (".name", ".words", ".title", ".desc", ".announce")
+    if any(key.startswith(p) for p in pn_prefixes) and any(key.endswith(s) for s in pn_suffixes):
+        return True
+    en_stripped = en_value.strip()
+    if len(en_stripped) <= 3:
+        return True
+    # Game-specific nontranslatable content (fictional languages, animal sounds)
+    if _is_game_nontranslatable(key, en_stripped):
+        return True
+    # Short text (1-4 words) starting with uppercase under proper-noun prefix = likely a name
+    if any(key.startswith(p) for p in pn_prefixes):
+        words = en_stripped.split()
+        if len(words) <= 4 and words[0][0:1].isupper():
+            return True
+    # All-uppercase/digit strings (abbreviations, codes)
+    if en_stripped and all(c.isupper() or c.isdigit() or c in ".-_/ " for c in en_stripped):
+        return True
+    return False
+
+def is_untranslated_value(value, en_value, key=""):
+    if value is None:
+        return True
+    txt = str(value)
+    if txt.startswith("["):
+        return True
+    if txt.strip() == "":
+        return True
+    if txt == str(en_value):
+        if _is_proper_noun_key(key, str(en_value)):
+            return False
+        return True
+    return False
+
+# Whitelist of REAL Tibia game commands that must be preserved literally in translations.
+# Only these tokens trigger guard_command. Everything else in single quotes is normal text.
+GAME_COMMANDS = {
+    'hi', 'hello', 'bye', 'trade', 'job', 'task', 'mission', 'quest',
+    'yes', 'no', 'name', 'offer', 'sell', 'buy', 'outfit', 'addon',
+    'heal', 'bank', 'balance', 'deposit', 'withdraw', 'transfer',
+    'bless', 'blessing', 'passage', 'travel', 'destination',
+    'help', 'info', 'report', 'news', 'rumour', 'rumor',
+    'key', 'door', 'boss', 'hunt', 'monster', 'spell',
+    'join', 'leave', 'invite', 'kick', 'war', 'guild',
+    'promotion', 'premium', 'reward', 'claim',
+    'alana sio', 'exani hur', 'exani tera', 'exani mort',
+    'utevo lux', 'utevo gran lux', 'utevo vis lux',
+    'exura', 'exura gran', 'exura vita', 'exura sio',
+    'exani hur up', 'exani hur down',
+}
+# Slash-command regex: excludes URLs (://...) and file paths (/a/b/...)
+_SLASH_CMD_RE = re.compile(r"(?<![\w:/])/([a-zA-Z][\w-]*)")
+_URL_RE = re.compile(r"https?://\S+")
+
+def _extract_command_tokens(text: str):
+    """Extract game command tokens from text.
+    Pattern 1: ''double-quoted'' tokens — always treated as commands.
+    Pattern 2: 'single-quoted' tokens — ONLY if they match GAME_COMMANDS whitelist.
+    Pattern 3: /slash-commands like /heal, /cast — always treated as commands.
+    """
+    src = str(text or "")
+    normalized = src.translate(str.maketrans({
+        "’": "'",
+        "‘": "'",
+        "`": "'",
+        "´": "'",
+    }))
+    tokens = set()
+
+    # Pattern 1: ''double-quoted'' tokens — always treated as commands
+    for m in re.finditer(r"''([^']+?)''", normalized):
+        token = m.group(1).strip().lower()
+        if token:
+            tokens.add(token)
+
+    # Pattern 2 (WHITELIST): 'single-quoted' — ONLY if token matches GAME_COMMANDS
+    for m in re.finditer(r"(?<!['\w])'([^']+?)'(?!')", normalized):
+        token = m.group(1).strip().lower()
+        if token and token in GAME_COMMANDS:
+            tokens.add(token)
+
+    # Pattern 3: /slash-commands like /heal, /house-kick
+    # Strip URLs first to avoid false positives from https://github.com etc.
+    text_no_urls = _URL_RE.sub("", normalized)
+    for m in _SLASH_CMD_RE.finditer(text_no_urls):
+        full_token = "/" + m.group(1).strip().lower()
+        # Skip if followed by / (file paths like /startup/tables/...)
+        end_pos = m.end()
+        if end_pos < len(text_no_urls) and text_no_urls[end_pos] == "/":
+            continue
+        tokens.add(full_token)
+
+    return tokens
+def _token_sets_fast(text: str):
+    placeholders = set(re.findall(r'\{[^}]*\}', text or ""))
+    commands = _extract_command_tokens(text)
+    pipes = set(re.findall(r'\|[^|]+\|', text or ""))
+    return placeholders, commands, pipes
+
+def _candidate_shape_ok(en_text: str, candidate: str):
+    src = str(en_text or "").strip()
+    dst = str(candidate or "").strip()
+    if not dst:
+        return False
+
+    en_ph, en_cmd, en_pipe = _token_sets_fast(src)
+    tr_ph, tr_cmd, tr_pipe = _token_sets_fast(dst)
+    if en_ph != tr_ph:
+        return False
+    if en_cmd and en_cmd != tr_cmd:
+        return False
+    if en_pipe != tr_pipe:
+        return False
+
+    en_words = re.findall(r"[^\W\d_]+", src, flags=re.UNICODE)
+    tr_words = re.findall(r"[^\W\d_]+", dst, flags=re.UNICODE)
+    if len(en_words) >= 2:
+        min_words = max(1, len(en_words) // 2)
+        if len(tr_words) < min_words:
+            return False
+
+    # Ochrona przed skróconymi tłumaczeniami jak "distance" → "I."
+    # Ratio długości: tłumaczenie nie powinno być <30% ani >400% oryginału
+    src_len = len(src)
+    dst_len = len(dst)
+    if src_len >= 4 and dst_len > 0:
+        ratio = dst_len / src_len
+        if ratio < 0.3 or ratio > 4.0:
+            return False
+
+    if len(src) >= 12:
+        dst_has_latin = bool(re.search(r"[A-Za-zÀ-ÿ]", dst))
+        if dst_has_latin and len(dst) < 6:
+            return False
+        if not dst_has_latin and len(dst) < 2:
+            return False
+    return True
+
+def match_case(src_word: str, translated_word: str) -> str:
+    if not translated_word:
+        return translated_word
+    if src_word.isupper():
+        return translated_word.upper()
+    if src_word.istitle():
+        return translated_word[:1].upper() + translated_word[1:]
+    return translated_word
+
+def translate_words_for_simple_text(text: str, lang: str):
+    # Sekcja 5.3: WORD_TRANSLATIONS only for latin-script languages
+    lang_lc = lang.lower().replace("_", "-")
+    group = LANG_SCRIPT_GROUP.get(lang_lc, "latin")
+    if group != "latin":
+        return None
+    vocab = WORD_TRANSLATIONS_ACTIVE.get(lang, {})
+    if not vocab:
+        return None
+    src = str(text or "")
+    if re.search(r"\{[^}]*\}|\|[^|]+\||'[^']+'", src):
+        return None
+    words = re.findall(r"[A-Za-zÀ-ÿ]+", src)
+    if len(words) == 0 or len(words) > 6:
+        return None
+
+    changed = False
+    ok = True
+    def repl(m):
+        nonlocal changed, ok
+        w = m.group(0)
+        lw = w.lower()
+        tw = vocab.get(lw)
+        if tw is None:
+            ok = False
+            return w
+        changed = True
+        return match_case(w, tw)
+
+    out = re.sub(r"[A-Za-zÀ-ÿ]+", repl, src)
+    if not ok or not changed:
+        return None
+    return out
+
 # Wczytaj EN jako źródło
 en_file = f"{I18N_DIR}/en/{json_file}"
 if not os.path.exists(en_file):
     print(f"Brak pliku źródłowego: {en_file}")
+    print("__AUTO_RESULT__ translated=0 placeholders=0 guard_fail=0 guard_placeholder=0 guard_command=0 guard_pipe=0")
     exit(0)
 
 with open(en_file) as f:
@@ -7687,6 +11301,11 @@ with open(en_file) as f:
 
 # Wczytaj lub utwórz plik docelowy
 lang_file = f"{I18N_DIR}/{target_lang}/{json_file}"
+if strict_mode and not os.path.exists(lang_file):
+    print(f"⚠️ STRICT: Brak pliku docelowego {lang_file} - nie mogę dodać nowych kluczy")
+    print("__AUTO_RESULT__ translated=0 placeholders=0 guard_fail=0 guard_placeholder=0 guard_command=0 guard_pipe=0 skipped_missing_file=1 skipped_missing_key=0 skipped_not_placeholder=0")
+    exit(0)
+
 os.makedirs(os.path.dirname(lang_file), exist_ok=True)
 
 try:
@@ -7695,16 +11314,131 @@ try:
 except:
     lang_data = {}
 
-# Pamięć tłumaczeń (TM) - przechowuje tłumaczenie + hash źródła
-tm_path = f"{I18N_DIR}/translation_memory.json"
+# Pamięć tłumaczeń (TM) - per-język + metadata jakości
+tm_dir = os.path.join(status_dir, "tm")
+os.makedirs(tm_dir, exist_ok=True)
+tm_path = os.path.join(tm_dir, f"{target_lang}.json")
+legacy_tm_path = f"{I18N_DIR}/translation_memory.json"
+
+tm_data = {}
 try:
-    with open(tm_path) as f:
+    with open(tm_path, "r", encoding="utf-8") as f:
         tm_data = json.load(f)
-except:
+    if not isinstance(tm_data, dict):
+        tm_data = {}
+except Exception:
     tm_data = {}
 
-if target_lang not in tm_data:
-    tm_data[target_lang] = {}
+if not tm_data and os.path.exists(legacy_tm_path):
+    try:
+        with open(legacy_tm_path, "r", encoding="utf-8") as f:
+            legacy = json.load(f)
+        if isinstance(legacy, dict) and isinstance(legacy.get(target_lang, {}), dict):
+            tm_data = legacy.get(target_lang, {})
+    except Exception:
+        pass
+
+normalized_tm = {}
+for _k, _v in (tm_data.items() if isinstance(tm_data, dict) else []):
+    if isinstance(_v, dict):
+        normalized_tm[_k] = {
+            "src_hash": str(_v.get("src_hash", "") or ""),
+            "text": str(_v.get("text", "") or ""),
+            "source": str(_v.get("source", "legacy") or "legacy"),
+            "confidence": float(_v.get("confidence", 0.8) or 0.8),
+            "verified": bool(_v.get("verified", False)),
+            "updated_at": str(_v.get("updated_at", datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")) or datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")),
+        }
+    elif isinstance(_v, str):
+        normalized_tm[_k] = {
+            "src_hash": "",
+            "text": _v,
+            "source": "legacy",
+            "confidence": 0.8,
+            "verified": False,
+            "updated_at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+        }
+tm_data = normalized_tm
+
+# Sanitize TM: usuń znane artefakty z istniejących danych TM
+_tm_bad_keys = []
+for _tk, _tv in tm_data.items():
+    _t_text = str(_tv.get("text", "") or "").strip()
+    if _t_text in ("I.", "I..", "Nie.", "Niene", "Tak.", "Ja.", ""):
+        _tm_bad_keys.append(_tk)
+    elif re.match(r'^\[([A-Z]{2}(?:_[A-Z]{2})?)\]\s*', _t_text):
+        _tm_bad_keys.append(_tk)
+for _tk in _tm_bad_keys:
+    del tm_data[_tk]
+if _tm_bad_keys:
+    print(f"🧹 TM sanitizer: usunięto {len(_tm_bad_keys)} artefaktów z TM")
+
+def tm_upsert(key: str, src_hash_value: str, text: str, source: str, confidence: float, verified: bool = False):
+    # Quality gate: odrzuć śmieci zanim trafią do TM
+    txt = str(text or "").strip()
+    if not txt or len(txt) < 1:
+        return  # pusty
+    if txt in ("I.", "I..", "Nie.", "Niene", "Tak.", "Ja."):
+        return  # znane artefakty GT
+    if re.match(r'^\[([A-Z]{2}(?:_[A-Z]{2})?)\]\s*', txt):
+        return  # placeholder [PL] xxx — nie zapisuj do TM
+    tm_data[key] = {
+        "src_hash": src_hash_value,
+        "text": text,
+        "source": source,
+        "confidence": float(confidence),
+        "verified": bool(verified),
+        "updated_at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+    }
+
+text_memory = {}
+text_memory_lc = {}
+text_memory_counts = {}
+lang_dir = os.path.join(I18N_DIR, target_lang)
+if os.path.isdir(lang_dir):
+    for lf in os.listdir(lang_dir):
+        if not lf.endswith('.json'):
+            continue
+        en_ref = os.path.join(I18N_DIR, 'en', lf)
+        tr_ref = os.path.join(lang_dir, lf)
+        if not os.path.exists(en_ref) or not os.path.exists(tr_ref):
+            continue
+        try:
+            with open(en_ref, encoding='utf-8') as f:
+                en_ref_data = json.load(f)
+            with open(tr_ref, encoding='utf-8') as f:
+                tr_ref_data = json.load(f)
+        except Exception:
+            continue
+        for k, en_src in en_ref_data.items():
+            if k not in tr_ref_data:
+                continue
+            tr_val = tr_ref_data.get(k)
+            if is_untranslated_value(tr_val, en_src, k):
+                continue
+            en_src_s = str(en_src)
+            tr_val_s = str(tr_val)
+            # Quality gate: odrzuć artefakty z text_memory
+            if tr_val_s in ("I.", "I..", "Nie.", "Niene", "Tak.", "Ja."):
+                continue
+            if len(en_src_s) >= 4 and len(tr_val_s) > 0:
+                _tm_ratio = len(tr_val_s) / len(en_src_s)
+                if _tm_ratio < 0.3 or _tm_ratio > 4.0:
+                    continue
+            if en_src_s and tr_val_s and _candidate_shape_ok(en_src_s, tr_val_s):
+                bucket = text_memory_counts.setdefault(en_src_s, {})
+                bucket[tr_val_s] = int(bucket.get(tr_val_s, 0) or 0) + 1
+
+for en_src_s, variants in text_memory_counts.items():
+    if not variants:
+        continue
+    best_val = sorted(
+        variants.items(),
+        key=lambda it: (int(it[1] or 0), len(str(it[0] or ""))),
+        reverse=True,
+    )[0][0]
+    text_memory[en_src_s] = best_val
+    text_memory_lc.setdefault(en_src_s.lower(), best_val)
 
 def src_hash(text: str) -> str:
     return hashlib.md5(text.encode("utf-8")).hexdigest()
@@ -7714,82 +11448,1752 @@ def count_placeholders(text: str):
     pipes = re.findall(r'\|[^|]+\|', text)
     return len(braces), len(pipes)
 
+def token_sets(text: str):
+    placeholders = set(re.findall(r'\{[^}]*\}', text or ""))
+    commands = _extract_command_tokens(text)
+    pipes = set(re.findall(r'\|[^|]+\|', text or ""))
+    return placeholders, commands, pipes
+
+# ── Faza 4: Auto-fix pass po tłumaczeniu ─────────────────────────────────────
+# Normalizuje spacing, punctuation, capitalization —  BEZ zmiany znaczenia.
+# Zwraca (fixed_text, list_of_fixes_applied).
+_DOUBLE_SPACE_RE = re.compile(r'  +')
+_TRAILING_SPACE_RE = re.compile(r' +\n')
+
+def _auto_fix_translation(en_text: str, candidate: str, lang: str = ""):
+    """Apply safe auto-fixes to a candidate translation.
+    Returns (fixed_text, fixes_applied: list[str])."""
+    fixes = []
+    text = str(candidate)
+
+    # F1: Trailing whitespace normalization
+    stripped = text.rstrip()
+    if stripped != text and not en_text.endswith(' '):
+        text = stripped
+        fixes.append("trailing_whitespace")
+
+    # F2: Double spaces → single (unless EN has them)
+    if '  ' in text and '  ' not in en_text:
+        text = _DOUBLE_SPACE_RE.sub(' ', text)
+        fixes.append("double_space")
+
+    # F3: Trailing space before newline
+    if ' \n' in text:
+        text = _TRAILING_SPACE_RE.sub('\n', text)
+        fixes.append("trailing_space_before_newline")
+
+    # F4: Match EN leading/trailing punctuation
+    # If EN ends with period and translation doesn't, add period
+    en_s = str(en_text).strip()
+    tr_s = text.strip()
+    if en_s and tr_s:
+        # Match trailing punctuation (. ! ? ... only)
+        for punc in ['.', '!', '?']:
+            if en_s.endswith(punc) and not tr_s.endswith(punc) and not tr_s.endswith('...'):
+                # Don't add punctuation if translation ends with another valid punctuation
+                if not tr_s[-1:] in '.!?…':
+                    text = text.rstrip() + punc
+                    fixes.append(f"trailing_punct_{punc}")
+                    break
+
+    # F5: Capitalize first letter to match EN (if EN starts uppercase)
+    if en_s and en_s[0].isupper() and text and text[0].islower():
+        # Don't capitalize if it's a special token like {placeholder}
+        if not text.startswith('{') and not text.startswith('|') and not text.startswith("'"):
+            text = text[0].upper() + text[1:]
+            fixes.append("capitalize_first")
+
+    # F6: Preserve EN leading/trailing newlines
+    if en_text.startswith('\n') and not text.startswith('\n'):
+        text = '\n' + text
+        fixes.append("leading_newline")
+    if en_text.endswith('\n') and not text.endswith('\n'):
+        text = text + '\n'
+        fixes.append("trailing_newline")
+
+    return text, fixes
+
+# ── Faza 4 / Section 12.5: Post-translation validation ──────────────────────
+# Re-runs validate_key() + validate_candidate() AFTER auto-fix.
+# Returns (is_ok, issues_list, fixed_text).
+def _post_translation_validate(en_text: str, candidate: str, lang: str, key: str):
+    """Full post-translation validation gate.
+    1. Apply auto-fix
+    2. Re-validate candidate (placeholder/command/pipe)
+    3. Run validate_key() for V1-V7 checks
+    Returns (ok: bool, fixed: str, fixes: list, issues: list)."""
+    # Step 1: auto-fix
+    fixed, fixes = _auto_fix_translation(en_text, candidate, lang)
+
+    # Step 2: validate_candidate (hard gate on tokens)
+    ok, reason = validate_candidate(en_text, fixed)
+    if not ok:
+        return False, fixed, fixes, [{"type": f"post_validate_{reason}", "severity": "CRITICAL"}]
+
+    # Step 3: validate_key V1-V7
+    issues = validate_key(en_text, fixed, lang, key)
+    critical = [i for i in issues if i.get("severity") == "CRITICAL"]
+    if critical:
+        return False, fixed, fixes, issues
+
+    return True, fixed, fixes, issues
+
+def validate_candidate(en_text: str, candidate: str):
+    if not candidate:
+        return False, "empty"
+
+    en_ph, en_cmd, en_pipe = token_sets(en_text)
+    tr_ph, tr_cmd, tr_pipe = token_sets(candidate)
+    if en_ph != tr_ph:
+        return False, "placeholder"
+    if en_cmd and en_cmd != tr_cmd:
+        return False, "command"
+    if en_pipe != tr_pipe:
+        return False, "pipe"
+
+    if not _candidate_shape_ok(en_text, candidate):
+        return False, "quality"
+
+    return True, "ok"
+
+def _append_jsonl(path: str, entry: dict):
+    try:
+        with open(path, "a", encoding="utf-8") as f:
+            f.write(json.dumps(entry, ensure_ascii=False) + "\n")
+    except Exception:
+        pass
+
+def _enqueue_manual_review(status_dir: str, item: dict):
+    queue_path = os.path.join(status_dir, "manual_review_queue.json")
+    payload = {
+        "queue": [],
+        "stats": {"total": 0, "reviewed": 0, "approved": 0, "rejected": 0, "applied": 0},
+        "updated_at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+    }
+    try:
+        if os.path.exists(queue_path):
+            with open(queue_path, "r", encoding="utf-8") as f:
+                cur = json.load(f)
+            if isinstance(cur, dict):
+                payload.update(cur)
+    except Exception:
+        pass
+
+    queue = payload.get("queue", []) if isinstance(payload.get("queue", []), list) else []
+    stats = payload.get("stats", {}) if isinstance(payload.get("stats", {}), dict) else {}
+
+    dedupe_id = f"{item.get('lang','')}::{item.get('json_file','')}::{item.get('key','')}"
+    already = False
+    for q in queue:
+        if not isinstance(q, dict):
+            continue
+        qid = f"{q.get('lang','')}::{q.get('json_file','')}::{q.get('key','')}"
+        if qid == dedupe_id and not q.get("applied"):
+            already = True
+            break
+
+    if not already:
+        queue.append(item)
+        stats["total"] = int(stats.get("total", 0) or 0) + 1
+
+    payload["queue"] = queue
+    payload["stats"] = stats
+    payload["updated_at"] = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+
+    try:
+        tmp = queue_path + ".tmp"
+        with open(tmp, "w", encoding="utf-8") as f:
+            json.dump(payload, f, indent=2, ensure_ascii=False)
+        os.replace(tmp, queue_path)
+    except Exception:
+        pass
+
+def _max_severity(issues):
+    order = {"LOW": 1, "MEDIUM": 2, "HIGH": 3, "CRITICAL": 4}
+    best = "LOW"
+    best_rank = 1
+    for issue in issues or []:
+        sev = str(issue.get("severity", "LOW") or "LOW").upper()
+        rank = order.get(sev, 1)
+        if rank > best_rank:
+            best_rank = rank
+            best = sev
+    return best
+
+def _contains_mixed_scripts(text: str):
+    has_latin = bool(re.search(r"[A-Za-z]", text or ""))
+    has_cyr = bool(re.search(r"[\u0400-\u04FF]", text or ""))
+    has_ar = bool(re.search(r"[\u0600-\u06FF]", text or ""))
+    has_cjk = bool(re.search(r"[\u3040-\u30FF\u3400-\u4DBF\u4E00-\u9FFF]", text or ""))
+    groups = int(has_latin) + int(has_cyr) + int(has_ar) + int(has_cjk)
+    return groups >= 2
+
+def _has_issue_type(issues, issue_type: str) -> bool:
+    issue_type = str(issue_type or "").strip().lower()
+    if not issue_type:
+        return False
+    for issue in issues or []:
+        if str(issue.get("type", "")).strip().lower() == issue_type:
+            return True
+    return False
+
+def _is_probably_nontranslatable_text(text: str) -> bool:
+    t = str(text or "").strip()
+    if not t:
+        return True
+    # URLs i template markup zwykle powinny zostać bez zmian.
+    if re.search(r"https?://|www\.", t, re.IGNORECASE):
+        return True
+    if "{{" in t or "}}" in t or "{%" in t or "%}" in t:
+        return True
+    # Ścieżki plików / startup skrypty / include-like tokens.
+    if re.search(r"(?:^|\s)/(?:[A-Za-z0-9_.-]+/){1,}[A-Za-z0-9_.-]+", t):
+        return True
+    # Template concatenation / kodowe fragmenty twig/lua/php.
+    if "~" in t and re.search(r"[A-Za-z_]", t):
+        return True
+    # Ujęte w nawiasy ostre adnotacje i emotes: <gasp>, <click>, <...>.
+    if re.fullmatch(r"<[^<>]+>", t):
+        return True
+    # Tokeny techniczne (css classes, identifiers, keys, env names).
+    tokens = [tok for tok in re.split(r"\s+", t) if tok]
+    if tokens and all(re.fullmatch(r"[A-Za-z0-9_.:-]+", tok) for tok in tokens):
+        if any(("/" in tok) or ("_" in tok) or ("-" in tok) or re.search(r"\d", tok) for tok in tokens):
+            return True
+        if len(tokens) == 1 and "." in tokens[0]:
+            return True
+    # Czyste symbole / cyfry / placeholdery.
+    cleaned = re.sub(r'__PH\d+__|[{}\[\]|%$0-9\s_\-:;.,!?/\\()<>\"\'`~+=*&^#@]', '', t)
+    if not cleaned:
+        return True
+    # Jednowyrazowe onomatopeje i krzyki typu BOOOM!
+    words = [w for w in re.findall(r"[A-Za-zÀ-ÖØ-öø-ÿ]{2,}", t)]
+    if len(words) <= 1 and t.upper() == t and len(t) <= 20:
+        return True
+    return False
+
+def detect_suspicious(en_text: str, translated_text: str, lang: str, key: str = ""):
+    en = str(en_text or "")
+    tr = str(translated_text or "")
+    issues = []
+
+    en_ph, en_cmd, en_pipe = token_sets(en)
+    tr_ph, tr_cmd, tr_pipe = token_sets(tr)
+
+    # S1: Placeholder mismatch
+    if en_ph != tr_ph or (en_cmd and en_cmd != tr_cmd) or en_pipe != tr_pipe:
+        issues.append({
+            "type": "placeholder_mismatch",
+            "severity": "CRITICAL",
+            "message": "Tokeny placeholder/command/pipe nie zgadzają się z EN",
+        })
+
+    en_len = len(en.strip())
+    tr_len = len(tr.strip())
+    ratio = (tr_len / en_len) if en_len > 0 else 1.0
+
+    # S2: Extreme length ratio
+    if en_len >= 5 and (ratio < 0.3 or ratio > 4.0):
+        issues.append({
+            "type": "length_extreme_ratio",
+            "severity": "HIGH",
+            "ratio": round(ratio, 3),
+            "message": "Ekstremalna proporcja długości tłumaczenia",
+        })
+
+    # S3: Identical to EN (z wykluczeniem nazw własnych)
+    if tr == en and not _is_proper_noun_key(key, en) and (en not in TIBIA_PROPER_NOUNS):
+        lang_lc = str(lang or "").lower()
+        if lang_lc in {"pl", "es"}:
+            # Dla PL/ES wymuszamy realne tłumaczenie: EN-copy tylko gdy tekst
+            # jest technicznie nieprzetłumaczalny.
+            if _is_probably_nontranslatable_text(en):
+                pass
+            else:
+                issues.append({
+                    "type": "identical_to_en",
+                    "severity": "CRITICAL",
+                    "message": "Tłumaczenie identyczne z EN",
+                })
+        else:
+            # Skip short single-word/phrase texts (likely names/terms/labels that don't change)
+            en_words = [w.rstrip(":,.!?") for w in en.strip().split() if w.rstrip(":,.!?")]
+            if len(en_words) <= 3 and all(w[0:1].isupper() for w in en_words if w):
+                pass  # Short capitalized phrase — likely a proper name or label
+            elif len(en.strip()) <= 20 and not any(c.islower() for c in en.strip()[:1]):
+                pass  # Short text starting with uppercase — likely a label
+            else:
+                issues.append({
+                    "type": "identical_to_en",
+                    "severity": "MEDIUM",
+                    "message": "Tłumaczenie identyczne z EN",
+                })
+
+    # Trudne termy gry: niekoniecznie błąd, ale sygnał do manual review
+    if TIBIA_PROPER_NOUNS and any(term in en for term in TIBIA_PROPER_NOUNS):
+        issues.append({
+            "type": "contains_tibia_proper_noun",
+            "severity": "LOW",
+            "message": "Tekst zawiera nazwę własną Tibia",
+        })
+
+    # S4: Mixed scripts (heurystyka dla części języków)
+    non_latin_langs = {"ar", "he", "ru", "uk", "bg", "mk", "sr", "ja", "zh", "zh_tw", "zh-cn", "zh-tw", "ko"}
+    if str(lang or "").lower() in non_latin_langs and _contains_mixed_scripts(tr):
+        issues.append({
+            "type": "mixed_scripts",
+            "severity": "HIGH",
+            "message": "Wykryto mieszane skrypty Unicode",
+        })
+
+    # S6: Artifacts
+    if re.search(r"\?\?\?|\[[A-Z]{2,}(?:[-_][A-Z]{2,})?\]|TODO|FIXME", tr):
+        issues.append({
+            "type": "artifact_tokens",
+            "severity": "HIGH",
+            "message": "Wykryto artefakty typu TODO/[LANG]/???",
+        })
+
+    # S8: Exploded translation size
+    if en_len > 0 and en_len < 50 and tr_len > 500:
+        issues.append({
+            "type": "exploded_length",
+            "severity": "MEDIUM",
+            "ratio": round(ratio, 3),
+            "message": "Tłumaczenie nadmiernie długie względem EN",
+        })
+
+    # S9: repeated word 3+
+    if re.search(r"\b(\w+)\b(?:\s+\1\b){2,}", tr.lower()):
+        issues.append({
+            "type": "word_repetition",
+            "severity": "HIGH",
+            "message": "Powtórzony wyraz 3+ razy",
+        })
+
+    # S5: Cross-language duplicate hint (same translation in many langs = probably untranslated EN copy)
+    # Note: Full cross-lang analysis is in run_quality_audit (batch). Here we flag obvious cases.
+    if tr == en and en_len > 10 and not _is_proper_noun_key(key, en):
+        # Already covered by S3 "identical_to_en" above, but S5 adds context for audit
+        pass  # Handled by S3 + audit cross-referencing
+
+    # S7: Capitalization mismatch (EN starts uppercase, LANG doesn't — script-dependent)
+    latin_langs = {
+        "az", "bs", "cs", "da", "de", "es", "et", "fi", "fr", "ga", "gl", "hr", "hu",
+        "id", "it", "lt", "lv", "ms", "mt", "nl", "no", "pl", "pt", "ro", "sk", "sl",
+        "sq", "sv", "sw", "tl", "tr", "vi", "cy",
+    }
+    if str(lang or "").lower() in latin_langs and en_len > 3 and tr_len > 1:
+        en_first = en.lstrip()[:1] if en.strip() else ""
+        tr_first = tr.lstrip()[:1] if tr.strip() else ""
+        if en_first.isupper() and tr_first.isalpha() and tr_first.islower():
+            # Skip if EN is a single word (might be intentional lowercase in LANG)
+            if " " in en.strip() or en_len > 15:
+                issues.append({
+                    "type": "capitalization_mismatch",
+                    "severity": "LOW",
+                    "message": "EN zaczyna wielką literą, tłumaczenie małą",
+                })
+
+    # S10: Incomplete sentence (EN ends with punctuation, LANG doesn't)
+    if en_len > 10 and tr_len > 5:
+        en_stripped = en.rstrip()
+        tr_stripped = tr.rstrip()
+        en_end = en_stripped[-1] if en_stripped else ""
+        tr_end = tr_stripped[-1] if tr_stripped else ""
+        # EN ends with sentence punctuation
+        if en_end in ".!?。！？":
+            # LANG should also end with some punctuation (any script)
+            if tr_end.isalnum():
+                issues.append({
+                    "type": "incomplete_sentence",
+                    "severity": "LOW",
+                    "message": f"EN kończy się '{en_end}', tłumaczenie nie ma znaku końca zdania",
+                })
+
+    # S11: Mixed-language detection for Latin-script (np. "Handel mógł Niet być completed.")
+    # Sprawdź czy tłumaczenie zawiera zbyt wiele nienaruszonych angielskich słów
+    if str(lang or "").lower() in latin_langs and en_len > 15 and tr != en:
+        en_words_set = set(w.lower() for w in re.findall(r"[a-zA-Z]{3,}", en))
+        tr_words_list = re.findall(r"[a-zA-Z]{3,}", tr)
+        if len(tr_words_list) >= 3 and en_words_set:
+            # Ile słów z tłumaczenia jest identycznych z EN (poza nazwami własnymi)
+            en_kept = sum(1 for w in tr_words_list if w.lower() in en_words_set and not w[0:1].isupper())
+            en_kept_ratio = en_kept / len(tr_words_list) if tr_words_list else 0
+            if en_kept_ratio > 0.6:
+                issues.append({
+                    "type": "mixed_language",
+                    "severity": "HIGH",
+                    "message": f"Tłumaczenie zawiera {int(en_kept_ratio*100)}% nieprzetłumaczonych angielskich słów",
+                    "en_kept_ratio": round(en_kept_ratio, 3),
+                })
+
+    return issues
+
+# ==========================================================================
+# WALIDACJA PER-JĘZYK — walidatory specyficzne per pismo/grupa (6.1–6.2)
+# ==========================================================================
+
+# Mapowanie języków → grupy pism
+LANG_SCRIPT_GROUP = {
+    # Grupa A: Latin
+    "az": "latin", "bs": "latin", "cs": "latin", "cy": "latin", "da": "latin",
+    "de": "latin", "en": "latin", "es": "latin", "et": "latin", "fi": "latin",
+    "fr": "latin", "ga": "latin", "gl": "latin", "hr": "latin", "hu": "latin",
+    "id": "latin", "it": "latin", "lt": "latin", "lv": "latin", "ms": "latin",
+    "mt": "latin", "nl": "latin", "no": "latin", "pl": "latin", "pt": "latin",
+    "pt-br": "latin", "ro": "latin", "sk": "latin", "sl": "latin", "sq": "latin",
+    "sv": "latin", "sw": "latin", "tl": "latin", "tr": "latin", "vi": "latin",
+    # Grupa B: Cyrillic
+    "bg": "cyrillic", "mk": "cyrillic", "ru": "cyrillic", "sr": "cyrillic", "uk": "cyrillic",
+    # Grupa C: CJK
+    "ja": "cjk", "ko": "cjk", "zh": "cjk", "zh-cn": "cjk", "zh-tw": "cjk", "zh_tw": "cjk",
+    # Grupa D: RTL (Right-to-Left)
+    "ar": "rtl", "he": "rtl",
+    # Grupa E: Exotic scripts
+    "bn": "exotic", "el": "exotic", "hi": "exotic", "hy": "exotic", "ka": "exotic",
+    "ml": "exotic", "ta": "exotic", "te": "exotic", "th": "exotic",
+}
+
+# Oczekiwane pisma dla języków egzotycznych (unicodedata.name)
+EXPECTED_SCRIPTS = {
+    "bn": "BENGALI",
+    "el": "GREEK",
+    "hi": "DEVANAGARI",
+    "hy": "ARMENIAN",
+    "ka": "GEORGIAN",
+    "ml": "MALAYALAM",
+    "ta": "TAMIL",
+    "te": "TELUGU",
+    "th": "THAI",
+}
+
+def validate_per_lang(en_text: str, translated_text: str, lang: str, key: str = ""):
+    """
+    Walidacja specyficzna per-język/pismo.
+    Zwraca listę issue dicts (jak detect_suspicious).
+    V1-V5,V7 są już w validate_candidate/detect_suspicious.
+    Tu dodajemy: V6 (newline), script-specific checks.
+    """
+    import unicodedata as _ud
+    en = str(en_text or "")
+    tr = str(translated_text or "")
+    lang_lc = str(lang or "").lower().replace("_", "-")
+    issues = []
+
+    # V6: Newline count check — EN i LANG powinny mieć tyle samo \n
+    en_nl = en.count("\\n") + en.count("\n")
+    tr_nl = tr.count("\\n") + tr.count("\n")
+    if en_nl != tr_nl and en_nl > 0:
+        issues.append({
+            "type": "newline_mismatch",
+            "severity": "MEDIUM",
+            "message": f"EN ma {en_nl} newline(s), tłumaczenie ma {tr_nl}",
+        })
+
+    group = LANG_SCRIPT_GROUP.get(lang_lc, "latin")
+
+    # === Grupa B: Cyrillic script check ===
+    if group == "cyrillic":
+        # Odfiltruj tokeny ochronne i placeholder'y
+        clean = re.sub(r'__PH\d+__|[{}\d|%]', '', tr)
+        if len(clean) > 5:
+            latin_count = sum(1 for c in clean if c.isalpha() and ord(c) < 0x0400)
+            total_alpha = sum(1 for c in clean if c.isalpha())
+            if total_alpha > 3:
+                latin_ratio = latin_count / total_alpha
+                if latin_ratio > 0.3:
+                    issues.append({
+                        "type": "cyrillic_latin_mix",
+                        "severity": "HIGH",
+                        "ratio": round(latin_ratio, 3),
+                        "message": f"Język cyrylicowy ma {latin_ratio:.0%} łacińskich liter",
+                    })
+
+    # === Grupa C: CJK ratio check ===
+    elif group == "cjk":
+        en_len = len(en.strip())
+        tr_len = len(tr.strip())
+        if en_len > 3:
+            ratio = tr_len / en_len
+            # CJK text is typically 30-80% of EN length in characters
+            if ratio < 0.15 or ratio > 2.5:
+                issues.append({
+                    "type": "cjk_ratio_anomaly",
+                    "severity": "MEDIUM",
+                    "ratio": round(ratio, 3),
+                    "message": f"CJK ratio {ratio:.2f} poza zakresem 0.15–2.5",
+                })
+
+    # === Grupa D: RTL direction check ===
+    elif group == "rtl":
+        clean = re.sub(r'__PH\d+__|[{}\d|%\s]', '', tr)
+        if len(clean) > 5:
+            rtl_count = sum(
+                1 for c in clean
+                if _ud.bidirectional(c) in ('R', 'AL', 'AN')
+            )
+            total_vis = len(clean)
+            if total_vis > 3:
+                rtl_ratio = rtl_count / total_vis
+                if rtl_ratio < 0.3:
+                    issues.append({
+                        "type": "rtl_insufficient",
+                        "severity": "HIGH",
+                        "ratio": round(rtl_ratio, 3),
+                        "message": f"Język RTL ma tylko {rtl_ratio:.0%} znaków RTL",
+                    })
+
+    # === Grupa E: Exotic script consistency ===
+    elif group == "exotic":
+        expected_script = EXPECTED_SCRIPTS.get(lang_lc)
+        if expected_script:
+            clean = re.sub(r'__PH\d+__|[{}\d|%\s]', '', tr)
+            total_alpha = sum(1 for c in clean if c.isalpha())
+            if total_alpha > 5:
+                correct_script = sum(
+                    1 for c in clean
+                    if c.isalpha() and expected_script in _ud.name(c, '')
+                )
+                script_ratio = correct_script / total_alpha
+                if script_ratio < 0.4:
+                    issues.append({
+                        "type": "wrong_script",
+                        "severity": "HIGH",
+                        "expected_script": expected_script,
+                        "ratio": round(script_ratio, 3),
+                        "message": f"Oczekiwane pismo {expected_script}, znaleziono tylko {script_ratio:.0%}",
+                    })
+
+    return issues
+
 # Przetwórz klucze
 translated = 0
 placeholders = 0
 guard_fail = 0
+guard_placeholder = 0
+guard_command = 0
+guard_pipe = 0
+guard_quality = 0
+skipped_missing_file = 0
+skipped_missing_key = 0
+skipped_not_placeholder = 0
+suspicious_existing = 0
+sanitized_existing = 0
 tm_updates = 0
+suspicious_detected = 0
+suspicious_rejected = 0
+suspicious_high = 0
+recent_translations = []
+gt_pending = []  # Klucze do tłumaczenia przez Google Translate
+suspicious_log_path = os.path.join(status_dir, "suspicious_log.jsonl")
+suspicious_rejected_path = os.path.join(status_dir, "suspicious_rejected.jsonl")
 for key, en_text in en_data.items():
     # Sprawdź limit tłumaczeń
     if translate_limit > 0 and translated >= translate_limit:
         print(f"⚠️ Osiągnięto limit {translate_limit} tłumaczeń")
         break
         
+    if strict_mode and key not in lang_data:
+        skipped_missing_key += 1
+        continue
+
+    suspicious_existing_current = False
+
     if key in lang_data:
-        # Sprawdź czy to placeholder
-        if not lang_data[key].startswith("["):
-            continue  # Już przetłumaczone
+        current_value = str(lang_data.get(key, ""))
+        # W strict tłumaczymy tylko placeholdery / TODO / wartości równe EN
+        if strict_mode:
+            if current_value == en_text and _is_proper_noun_key(key, en_text):
+                skipped_not_placeholder += 1  # Nazwa własna — identyczna = OK
+                continue
+            if not (current_value.startswith("[") or current_value.startswith("[TODO]") or current_value == en_text):
+                ok_current, _ = validate_candidate(en_text, current_value)
+                if ok_current:
+                    skipped_not_placeholder += 1
+                    continue
+                suspicious_existing += 1
+                suspicious_existing_current = True
+        else:
+            if not current_value.startswith("["):
+                continue  # Już przetłumaczone
     
     # TM lookup: użyj zapamiętanego tłumaczenia jeśli hash źródła pasuje
     h = src_hash(en_text)
-    saved = tm_data.get(target_lang, {}).get(key)
+    saved = tm_data.get(key)
     if saved and saved.get("src_hash") == h:
         candidate = saved.get("text", "")
-        sb, sp = count_placeholders(en_text)
-        tb, tp = count_placeholders(candidate)
-        if sb == tb and sp == tp and candidate:
+        # ── Faza 4: Auto-fix pass na TM candidate ──────────────────────
+        candidate, _af_fixes = _auto_fix_translation(en_text, candidate, target_lang)
+        ok, reason = validate_candidate(en_text, candidate)
+        if ok:
+            issues = detect_suspicious(en_text, candidate, target_lang, key)
+            issues.extend(validate_per_lang(en_text, candidate, target_lang, key))
+            max_sev = _max_severity(issues)
+            if issues:
+                # Only count MEDIUM+ issues as truly suspicious (LOW = informational)
+                if max_sev != "LOW":
+                    suspicious_detected += 1
+                if max_sev in ("HIGH", "CRITICAL"):
+                    suspicious_high += 1
+                log_entry = {
+                    "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+                    "lang": target_lang,
+                    "category": json_file,
+                    "key": key,
+                    "source": "tm",
+                    "severity": max_sev,
+                    "issues": issues,
+                    "en": str(en_text),
+                    "translated": str(candidate),
+                }
+                if len(issues) > 3:
+                    suspicious_rejected += 1
+                    _append_jsonl(suspicious_rejected_path, log_entry)
+                    _enqueue_manual_review(status_dir, {
+                        "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+                        "status": "pending",
+                        "lang": target_lang,
+                        "json_file": json_file,
+                        "key": key,
+                        "reason": "more_than_3_suspicious_flags",
+                        "en_text": str(en_text),
+                        "attempted_translation": str(candidate),
+                        "issues": issues,
+                        "source": "tm",
+                    })
+                    guard_fail += 1
+                    guard_quality += 1
+                    if strict_mode:
+                        if suspicious_existing_current:
+                            lang_data[key] = str(en_text)
+                            sanitized_existing += 1
+                        skipped_not_placeholder += 1
+                    else:
+                        lang_data[key] = f"[{target_lang.upper()}] {en_text}"
+                        placeholders += 1
+                    continue
+                if max_sev == "CRITICAL":
+                    if _has_issue_type(issues, "identical_to_en") and use_google_translate:
+                        # TM dał EN-copy dla PL/ES — spróbuj realnego tłumaczenia przez GT.
+                        gt_pending.append((key, en_text, h, suspicious_existing_current))
+                        _append_jsonl(suspicious_log_path, {
+                            "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+                            "lang": target_lang,
+                            "category": json_file,
+                            "key": key,
+                            "source": "tm",
+                            "severity": "CRITICAL",
+                            "issues": issues,
+                            "action": "fallback_to_google_translate",
+                            "en": str(en_text),
+                            "translated": str(candidate),
+                        })
+                        continue
+                    suspicious_rejected += 1
+                    _append_jsonl(suspicious_rejected_path, log_entry)
+                    guard_fail += 1
+                    guard_quality += 1
+                    if strict_mode:
+                        if suspicious_existing_current:
+                            lang_data[key] = str(en_text)
+                            sanitized_existing += 1
+                        skipped_not_placeholder += 1
+                    else:
+                        lang_data[key] = f"[{target_lang.upper()}] {en_text}"
+                        placeholders += 1
+                    continue
+                _append_jsonl(suspicious_log_path, log_entry)
             lang_data[key] = candidate
             translated += 1
+            recent_translations.append({
+                "key": key,
+                "en": en_text,
+                "translated": candidate,
+                "source": "tm",
+            })
             continue
-
-    # Spróbuj prostego tłumaczenia
-    simple = simple_translate(en_text, target_lang)
-    
-    if simple:
-        # Guard na placeholdery {} i |...|
-        sb, sp = count_placeholders(en_text)
-        tb, tp = count_placeholders(simple)
-        if sb == tb and sp == tp:
-            lang_data[key] = simple
-            translated += 1
-            tm_data[target_lang][key] = {"src_hash": h, "text": simple}
-            tm_updates += 1
+        guard_fail += 1
+        if reason == "placeholder":
+            guard_placeholder += 1
+        elif reason == "command":
+            guard_command += 1
+        elif reason == "pipe":
+            guard_pipe += 1
+        else:
+            guard_quality += 1
+        if strict_mode:
+            if suspicious_existing_current:
+                lang_data[key] = str(en_text)
+                sanitized_existing += 1
+            skipped_not_placeholder += 1
         else:
             lang_data[key] = f"[{target_lang.upper()}] {en_text}"
             placeholders += 1
-            guard_fail += 1
-    else:
-        # Placeholder z kodem języka
-        lang_data[key] = f"[{target_lang.upper()}] {en_text}"
-        placeholders += 1
+        continue
 
-# Zapisz
+    # Spróbuj prostego tłumaczenia
+    simple = simple_translate(en_text, target_lang)
+
+    if not simple:
+        by_text = text_memory.get(str(en_text))
+        if not by_text:
+            by_text = text_memory_lc.get(str(en_text).lower())
+        if by_text:
+            simple = by_text
+
+    if not simple:
+        simple = translate_words_for_simple_text(str(en_text), target_lang)
+    
+    if simple:
+        # ── Faza 4: Auto-fix pass na simple candidate ─────────────────
+        simple, _af_fixes = _auto_fix_translation(en_text, simple, target_lang)
+        # Guard na placeholdery {} + komendy '' + formatowanie |...|
+        ok, reason = validate_candidate(en_text, simple)
+        if ok:
+            issues = detect_suspicious(en_text, simple, target_lang, key)
+            issues.extend(validate_per_lang(en_text, simple, target_lang, key))
+            max_sev = _max_severity(issues)
+            if issues:
+                # Only count MEDIUM+ issues as truly suspicious (LOW = informational)
+                if max_sev != "LOW":
+                    suspicious_detected += 1
+                if max_sev in ("HIGH", "CRITICAL"):
+                    suspicious_high += 1
+                log_entry = {
+                    "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+                    "lang": target_lang,
+                    "category": json_file,
+                    "key": key,
+                    "source": "simple",
+                    "severity": max_sev,
+                    "issues": issues,
+                    "en": str(en_text),
+                    "translated": str(simple),
+                }
+                if len(issues) > 3:
+                    suspicious_rejected += 1
+                    _append_jsonl(suspicious_rejected_path, log_entry)
+                    _enqueue_manual_review(status_dir, {
+                        "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+                        "status": "pending",
+                        "lang": target_lang,
+                        "json_file": json_file,
+                        "key": key,
+                        "reason": "more_than_3_suspicious_flags",
+                        "en_text": str(en_text),
+                        "attempted_translation": str(simple),
+                        "issues": issues,
+                        "source": "simple",
+                    })
+                    guard_fail += 1
+                    guard_quality += 1
+                    if strict_mode:
+                        skipped_not_placeholder += 1
+                    else:
+                        lang_data[key] = f"[{target_lang.upper()}] {en_text}"
+                        placeholders += 1
+                    continue
+                if max_sev == "CRITICAL":
+                    if _has_issue_type(issues, "identical_to_en") and use_google_translate:
+                        # Simple/TM-text dał EN-copy dla PL/ES — przekieruj do GT.
+                        gt_pending.append((key, en_text, h, suspicious_existing_current))
+                        _append_jsonl(suspicious_log_path, {
+                            "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+                            "lang": target_lang,
+                            "category": json_file,
+                            "key": key,
+                            "source": "simple",
+                            "severity": "CRITICAL",
+                            "issues": issues,
+                            "action": "fallback_to_google_translate",
+                            "en": str(en_text),
+                            "translated": str(simple),
+                        })
+                        continue
+                    suspicious_rejected += 1
+                    _append_jsonl(suspicious_rejected_path, log_entry)
+                    guard_fail += 1
+                    guard_quality += 1
+                    if strict_mode:
+                        skipped_not_placeholder += 1
+                    else:
+                        lang_data[key] = f"[{target_lang.upper()}] {en_text}"
+                        placeholders += 1
+                    continue
+                _append_jsonl(suspicious_log_path, log_entry)
+            lang_data[key] = simple
+            translated += 1
+            source_name = "simple_dict" if simple_translate(en_text, target_lang) else "word_dict"
+            tm_upsert(key, h, simple, source_name, 0.98 if source_name == "simple_dict" else 0.92)
+            tm_updates += 1
+            recent_translations.append({
+                "key": key,
+                "en": en_text,
+                "translated": simple,
+                "source": "simple",
+            })
+        else:
+            if strict_mode:
+                skipped_not_placeholder += 1
+            else:
+                lang_data[key] = f"[{target_lang.upper()}] {en_text}"
+                placeholders += 1
+            guard_fail += 1
+            if reason == "placeholder":
+                guard_placeholder += 1
+            elif reason == "command":
+                guard_command += 1
+            elif reason == "pipe":
+                guard_pipe += 1
+            else:
+                guard_quality += 1
+            if strict_mode and suspicious_existing_current:
+                lang_data[key] = str(en_text)
+                sanitized_existing += 1
+    else:
+        # Brak tłumaczenia z słowników — zbierz do GT lub ustaw placeholder
+        if use_google_translate:
+            # Zbierz do batch GT (działa zarówno w strict jak i non-strict)
+            gt_pending.append((key, en_text, h, suspicious_existing_current))
+        elif strict_mode:
+            if suspicious_existing_current:
+                lang_data[key] = str(en_text)
+                sanitized_existing += 1
+            skipped_not_placeholder += 1
+        else:
+            # Placeholder z kodem języka
+            lang_data[key] = f"[{target_lang.upper()}] {en_text}"
+            placeholders += 1
+
+# ============================================================================
+# GOOGLE TRANSLATE — batch fallback
+# ============================================================================
+gt_translated = 0
+gt_guard_fail = 0
+
+if use_google_translate and gt_pending:
+    import time
+    gt_lang = _gt_lang_code(target_lang)
+    try:
+        from deep_translator import GoogleTranslator
+        translator = GoogleTranslator(source='en', target=gt_lang)
+        print(f"🌍 GT: {len(gt_pending)} kluczy do tłumaczenia via Google Translate ({gt_lang})")
+
+        # Limit GT do translate_limit (jeśli ustawiony)
+        gt_todo = gt_pending
+        if translate_limit > 0:
+            remaining = translate_limit - translated
+            if remaining <= 0:
+                gt_todo = []
+                print(f"⚠️ GT: limit tłumaczeń osiągnięty ({translate_limit}), pomijam GT")
+            else:
+                gt_todo = gt_pending[:remaining]
+
+        for batch_start in range(0, len(gt_todo), gt_batch_size):
+            batch = gt_todo[batch_start:batch_start + gt_batch_size]
+            # Przygotuj teksty z ochroną placeholderów
+            protected_texts = []
+            meta = []  # (key, en_text, hash, suspicious, replacements)
+            for key, en_text, h, suspicious in batch:
+                protected, replacements = _protect_placeholders(str(en_text))
+                protected_texts.append(protected)
+                meta.append((key, en_text, h, suspicious, replacements))
+
+            # Batch translate
+            try:
+                if len(protected_texts) == 1:
+                    gt_results = [translator.translate(protected_texts[0])]
+                else:
+                    gt_results = translator.translate_batch(protected_texts)
+                if gt_results is None:
+                    gt_results = protected_texts  # fallback — użyj oryginału
+            except Exception as e:
+                print(f"⚠️ GT batch error: {e}")
+                gt_results = protected_texts  # fallback
+
+            # Zastosuj wyniki
+            for i, (key, en_text, h, suspicious, replacements) in enumerate(meta):
+                if i >= len(gt_results) or gt_results[i] is None:
+                    # GT nie dał wyniku
+                    if not strict_mode:
+                        lang_data[key] = f"[{target_lang.upper()}] {en_text}"
+                        placeholders += 1
+                    else:
+                        skipped_not_placeholder += 1
+                    continue
+
+                candidate = _restore_placeholders(gt_results[i], replacements)
+
+                # ── Faza 4: Auto-fix + post-translation validation ────────────
+                candidate, _af_fixes = _auto_fix_translation(en_text, candidate, target_lang)
+
+                # Walidacja tłumaczenia GT
+                ok, reason = validate_candidate(en_text, candidate)
+                if ok:
+                    issues = detect_suspicious(en_text, candidate, target_lang, key)
+                    issues.extend(validate_per_lang(en_text, candidate, target_lang, key))
+                    max_sev = _max_severity(issues)
+                    if issues:
+                        # Only count MEDIUM+ issues as truly suspicious (LOW = informational)
+                        if max_sev != "LOW":
+                            suspicious_detected += 1
+                        if max_sev in ("HIGH", "CRITICAL"):
+                            suspicious_high += 1
+                        log_entry = {
+                            "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+                            "lang": target_lang,
+                            "category": json_file,
+                            "key": key,
+                            "source": "google_translate",
+                            "severity": max_sev,
+                            "issues": issues,
+                            "en": str(en_text),
+                            "translated": str(candidate),
+                        }
+                        if len(issues) > 3:
+                            suspicious_rejected += 1
+                            _append_jsonl(suspicious_rejected_path, log_entry)
+                            _enqueue_manual_review(status_dir, {
+                                "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+                                "status": "pending",
+                                "lang": target_lang,
+                                "json_file": json_file,
+                                "key": key,
+                                "reason": "more_than_3_suspicious_flags",
+                                "en_text": str(en_text),
+                                "attempted_translation": str(candidate),
+                                "issues": issues,
+                                "source": "google_translate",
+                            })
+                            gt_guard_fail += 1
+                            guard_fail += 1
+                            guard_quality += 1
+                            if not strict_mode:
+                                lang_data[key] = f"[{target_lang.upper()}] {en_text}"
+                                placeholders += 1
+                            else:
+                                skipped_not_placeholder += 1
+                            continue
+                        if max_sev == "CRITICAL":
+                            suspicious_rejected += 1
+                            _append_jsonl(suspicious_rejected_path, log_entry)
+                            gt_guard_fail += 1
+                            guard_fail += 1
+                            guard_quality += 1
+                            if not strict_mode:
+                                lang_data[key] = f"[{target_lang.upper()}] {en_text}"
+                                placeholders += 1
+                            else:
+                                skipped_not_placeholder += 1
+                            continue
+                        _append_jsonl(suspicious_log_path, log_entry)
+                    lang_data[key] = candidate
+                    gt_translated += 1
+                    translated += 1
+                    tm_upsert(key, h, candidate, "google_translate", 0.90)
+                    tm_updates += 1
+                    recent_translations.append({
+                        "key": key,
+                        "en": en_text,
+                        "translated": candidate,
+                        "source": "google_translate",
+                    })
+                else:
+                    gt_guard_fail += 1
+                    guard_fail += 1
+                    if reason == "placeholder":
+                        guard_placeholder += 1
+                    elif reason == "command":
+                        guard_command += 1
+                    elif reason == "pipe":
+                        guard_pipe += 1
+                    else:
+                        guard_quality += 1
+                    if not strict_mode:
+                        lang_data[key] = f"[{target_lang.upper()}] {en_text}"
+                        placeholders += 1
+                    else:
+                        skipped_not_placeholder += 1
+
+            # Rate limit delay między batchami
+            if batch_start + gt_batch_size < len(gt_todo):
+                time.sleep(gt_delay)
+
+        print(f"✅ GT: {gt_translated} przetłumaczonych, {gt_guard_fail} odrzuconych przez guard")
+
+    except ImportError:
+        print("⚠️ GT: deep-translator nie zainstalowany (pip install deep-translator)")
+        for key, en_text, h, suspicious in gt_pending:
+            if not strict_mode:
+                lang_data[key] = f"[{target_lang.upper()}] {en_text}"
+                placeholders += 1
+            else:
+                skipped_not_placeholder += 1
+    except Exception as e:
+        print(f"⚠️ GT: błąd inicjalizacji: {e}")
+        for key, en_text, h, suspicious in gt_pending:
+            if not strict_mode:
+                lang_data[key] = f"[{target_lang.upper()}] {en_text}"
+                placeholders += 1
+            else:
+                skipped_not_placeholder += 1
+
+# Zapisz (atomic)
+import tempfile
 lang_data = dict(sorted(lang_data.items()))
-with open(lang_file, 'w') as f:
-    json.dump(lang_data, f, indent=2, ensure_ascii=False)
+lang_dir_path = os.path.dirname(lang_file) or "."
+fd, tmp_lang = tempfile.mkstemp(dir=lang_dir_path, suffix=".tmp")
+try:
+    with os.fdopen(fd, 'w', encoding='utf-8') as f:
+        json.dump(lang_data, f, indent=2, ensure_ascii=False)
+    os.replace(tmp_lang, lang_file)
+except Exception:
+    try: os.unlink(tmp_lang)
+    except: pass
+    raise
 
 if tm_updates > 0:
-    with open(tm_path, 'w') as f:
-        json.dump(tm_data, f, indent=2, ensure_ascii=False)
+    import tempfile
+    tm_dir = os.path.dirname(tm_path) or "."
+    fd, tmp_tm = tempfile.mkstemp(dir=tm_dir, suffix=".tmp")
+    try:
+        with os.fdopen(fd, 'w', encoding='utf-8') as f:
+            json.dump(tm_data, f, indent=2, ensure_ascii=False)
+        os.replace(tmp_tm, tm_path)
+    except Exception:
+        try: os.unlink(tmp_tm)
+        except: pass
+        raise
 
-print(f"✅ {target_lang}/{json_file}: {translated} przetłumaczonych, {placeholders} placeholder'ów, TM+{tm_updates}, guard_fail={guard_fail}")
+# ============================================================================
+# QUALITY METRICS — oblicz metryki jakości z tego cyklu tłumaczeń
+# ============================================================================
+quality_data = {}
+all_recent = list(recent_translations)  # kopia przed obcięciem
+if all_recent:
+    en_lengths = [len(str(e.get("en", ""))) for e in all_recent]
+    tr_lengths = [len(str(e.get("translated", ""))) for e in all_recent]
+    avg_en = sum(en_lengths) / len(en_lengths) if en_lengths else 0
+    avg_tr = sum(tr_lengths) / len(tr_lengths) if tr_lengths else 0
+    length_ratio = avg_tr / avg_en if avg_en > 0 else 1.0
 
-print(f"__AUTO_RESULT__ translated={translated} placeholders={placeholders}")
+    # Source breakdown
+    source_breakdown = {}
+    for e in all_recent:
+        src = e.get("source", "unknown")
+        source_breakdown[src] = source_breakdown.get(src, 0) + 1
+
+    # Identical to EN count
+    identical_to_en_translatable = 0
+    identical_to_en_exempt = 0
+    for e in all_recent:
+        en_text = str(e.get("en", "")).strip()
+        tr_text = str(e.get("translated", "")).strip()
+        if tr_text != en_text:
+            continue
+        if _is_probably_nontranslatable_text(en_text):
+            identical_to_en_exempt += 1
+        else:
+            identical_to_en_translatable += 1
+
+    # Very short/long
+    very_short = sum(1 for e in all_recent if len(str(e.get("translated", ""))) < 2 and len(str(e.get("en", ""))) > 5)
+    very_long = sum(1 for e in all_recent if len(str(e.get("translated", ""))) > 500 and len(str(e.get("en", ""))) < 50)
+
+    quality_data = {
+        "avg_en_len": round(avg_en, 1),
+        "avg_translated_len": round(avg_tr, 1),
+        "length_ratio": round(length_ratio, 3),
+        "source_breakdown": source_breakdown,
+        "suspicious_count": suspicious_detected,
+        "suspicious_rejected": suspicious_rejected,
+        "suspicious_high": suspicious_high,
+        "gt_guard_fails": gt_guard_fail,
+        "identical_to_en": identical_to_en_translatable,
+        "identical_to_en_exempt": identical_to_en_exempt,
+        "very_short_translations": very_short,
+        "very_long_translations": very_long,
+    }
+
+# Zapisz quality_report.jsonl
+try:
+    os.makedirs(status_dir, exist_ok=True)
+    quality_entry = {
+        "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+        "language": target_lang,
+        "json_file": json_file,
+        "translated": translated,
+        "quality": quality_data,
+    }
+    with open(os.path.join(status_dir, "quality_report.jsonl"), "a", encoding="utf-8") as f:
+        f.write(json.dumps(quality_entry, ensure_ascii=False) + "\n")
+except Exception:
+    pass
+
+# Zapisz quality_dashboard.json — aktualizuj per-język
+try:
+    dash_path = os.path.join(status_dir, "quality_dashboard.json")
+    dashboard = {}
+    if os.path.exists(dash_path):
+        with open(dash_path, "r", encoding="utf-8") as f:
+            dashboard = json.load(f)
+    lang_entry = dashboard.get(target_lang, {})
+    lang_entry["last_cycle"] = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+    lang_entry["last_translated"] = translated
+    lang_entry["total_suspicious"] = lang_entry.get("total_suspicious", 0) + suspicious_detected
+    lang_entry["total_rejected"] = lang_entry.get("total_rejected", 0) + suspicious_rejected
+    lang_entry["total_gt_guard_fail"] = lang_entry.get("total_gt_guard_fail", 0) + gt_guard_fail
+    cycles_count = lang_entry.get("cycles", 0) + 1
+    lang_entry["cycles"] = cycles_count
+    # Rolling quality score (0-100)
+    if quality_data:
+        ratio = quality_data.get("length_ratio", 1.0)
+        ratio_score = max(0, 100 - abs(ratio - 1.0) * 50)  # ideal=1.0
+        reject_rate = (suspicious_rejected / max(translated, 1)) * 100
+        reject_score = max(0, 100 - reject_rate * 5)
+        new_score = round((ratio_score + reject_score) / 2, 1)
+        old_score = lang_entry.get("quality_score", new_score)
+        lang_entry["quality_score"] = round((old_score * (cycles_count - 1) + new_score) / cycles_count, 1)
+    dashboard[target_lang] = lang_entry
+    import tempfile as _qd_tmp
+    fd, tmp_dash = _qd_tmp.mkstemp(dir=status_dir, suffix=".tmp")
+    try:
+        with os.fdopen(fd, 'w', encoding='utf-8') as f:
+            json.dump(dashboard, f, indent=2, ensure_ascii=False)
+        os.replace(tmp_dash, dash_path)
+    except Exception:
+        try: os.unlink(tmp_dash)
+        except: pass
+except Exception:
+    pass
+
+recent_translations = recent_translations[-20:]
+try:
+    os.makedirs(status_dir, exist_ok=True)
+    recent_entry = {
+        "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+        "language": target_lang,
+        "json_file": json_file,
+        "translated": translated,
+        "entries": recent_translations,
+    }
+    with open(os.path.join(status_dir, "translation_recent_latest.json"), "w", encoding="utf-8") as f:
+        json.dump(recent_entry, f, indent=2, ensure_ascii=False)
+    with open(os.path.join(status_dir, "translation_recent_report.jsonl"), "a", encoding="utf-8") as f:
+        f.write(json.dumps(recent_entry, ensure_ascii=False) + "\n")
+except Exception:
+    pass
+
+# Quality warnings
+quality_warnings = []
+if quality_data:
+    lr = quality_data.get("length_ratio", 1.0)
+    if lr < 0.5 or lr > 3.0:
+        quality_warnings.append(f"LENGTH_RATIO={lr:.2f}")
+    if quality_data.get("suspicious_count", 0) > 20:
+        quality_warnings.append(f"SUSPICIOUS={quality_data['suspicious_count']}")
+    if translated > 0 and gt_guard_fail / max(translated, 1) > 0.2:
+        quality_warnings.append(f"GT_FAIL_RATE={gt_guard_fail}/{translated}")
+    if quality_data.get("very_long_translations", 0) > 0:
+        quality_warnings.append(f"VERY_LONG={quality_data['very_long_translations']}")
+
+print(f"✅ {target_lang}/{json_file}: {translated} przetłumaczonych (GT: {gt_translated}), {placeholders} placeholder'ów, TM+{tm_updates}, guard_fail={guard_fail}, guard_quality={guard_quality}, suspicious_existing={suspicious_existing}, suspicious_detected={suspicious_detected}, suspicious_high={suspicious_high}, suspicious_rejected={suspicious_rejected}, sanitized_existing={sanitized_existing}")
+
+if quality_warnings:
+    print(f"⚠️ QUALITY_WARNINGS: {', '.join(quality_warnings)}")
+
+# ── Section 12.2: Translation Done Contract ──────────────────────────────────
+# Formalna definicja "tłumaczenie gotowe" per plik/lang.
+# Warunki: (1) brak CRITICAL token errors, (2) guard_command <= próg,
+#           (3) no_progress nie rośnie, (4) wpis quality z timestamp.
+done_contract = {
+    "file": json_file,
+    "lang": target_lang,
+    "conditions": {},
+    "is_done": False,
+}
+
+# Cond 1: No CRITICAL token errors
+cond1_ok = (guard_placeholder == 0 and guard_pipe == 0)
+done_contract["conditions"]["no_critical_token_errors"] = {
+    "ok": cond1_ok,
+    "guard_placeholder": guard_placeholder,
+    "guard_pipe": guard_pipe,
+}
+
+# Cond 2: guard_command <= threshold (5)
+guard_cmd_threshold = 5
+cond2_ok = (guard_command <= guard_cmd_threshold)
+done_contract["conditions"]["guard_command_below_threshold"] = {
+    "ok": cond2_ok,
+    "guard_command": guard_command,
+    "threshold": guard_cmd_threshold,
+}
+
+# Cond 3: Coverage check — all EN keys present and translated
+total_en_keys = len(en_data)
+real_translations = sum(1 for k, v in lang_data.items() if k in en_data and not str(v).startswith(f"[{target_lang.upper()}]"))
+coverage_pct = round(real_translations / max(total_en_keys, 1) * 100, 1)
+cond3_ok = (coverage_pct >= 95.0)
+done_contract["conditions"]["coverage_above_95pct"] = {
+    "ok": cond3_ok,
+    "coverage_pct": coverage_pct,
+    "total_keys": total_en_keys,
+    "real_translations": real_translations,
+}
+
+# Cond 4: Quality entry present with timestamp
+cond4_ok = bool(quality_data)
+done_contract["conditions"]["quality_entry_present"] = {
+    "ok": cond4_ok,
+    "has_quality_data": cond4_ok,
+}
+
+# Final verdict
+done_contract["is_done"] = all([cond1_ok, cond2_ok, cond3_ok, cond4_ok])
+done_contract["timestamp"] = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+
+# Zapisz done contract do pliku
+try:
+    done_dir = os.path.join(status_dir, "done_contracts")
+    os.makedirs(done_dir, exist_ok=True)
+    done_path = os.path.join(done_dir, f"{target_lang}_{json_file.replace('.json', '')}.json")
+    with open(done_path, "w", encoding="utf-8") as f:
+        json.dump(done_contract, f, indent=2, ensure_ascii=False)
+    # JSONL append
+    _append_jsonl(os.path.join(status_dir, "done_contract_history.jsonl"), done_contract)
+except Exception:
+    pass
+
+if done_contract["is_done"]:
+    print(f"🏁 DONE_CONTRACT: {target_lang}/{json_file} — SPEŁNIONY ✅ (coverage={coverage_pct}%)")
+else:
+    failed = [k for k, v in done_contract["conditions"].items() if not v.get("ok")]
+    print(f"📋 DONE_CONTRACT: {target_lang}/{json_file} — NIESPEŁNIONY ({', '.join(failed)})")
+
+print(f"__DONE_CONTRACT__ is_done={'1' if done_contract['is_done'] else '0'} coverage={coverage_pct} guard_placeholder={guard_placeholder} guard_pipe={guard_pipe} guard_command={guard_command}")
+
+print(f"__AUTO_RESULT__ translated={translated} placeholders={placeholders} guard_fail={guard_fail} guard_placeholder={guard_placeholder} guard_command={guard_command} guard_pipe={guard_pipe} guard_quality={guard_quality} skipped_missing_file={skipped_missing_file} skipped_missing_key={skipped_missing_key} skipped_not_placeholder={skipped_not_placeholder} suspicious_existing={suspicious_existing} suspicious_detected={suspicious_detected} suspicious_high={suspicious_high} suspicious_rejected={suspicious_rejected} sanitized_existing={sanitized_existing} gt_translated={gt_translated} gt_guard_fail={gt_guard_fail}")
+print(f"__QUALITY__ {json.dumps(quality_data, ensure_ascii=False)}")
 AUTOTRANSPY
     2>&1)
     _at_rc=$?
 
     echo "$_at_out" >&2
 
-    _translated=$(echo "$_at_out" | awk -F'translated=' '/__AUTO_RESULT__/{print $2}' | awk '{print $1}' | tail -n 1 | tr -dc '0-9')
-    _placeholders=$(echo "$_at_out" | awk -F'placeholders=' '/__AUTO_RESULT__/{print $2}' | tail -n 1 | tr -dc '0-9')
+    local _auto_result_line
+    _auto_result_line=$(printf '%s\n' "$_at_out" | grep '__AUTO_RESULT__' | tail -n 1)
+
+    _translated=$(extract_auto_result_metric "$_auto_result_line" "translated")
+    _placeholders=$(extract_auto_result_metric "$_auto_result_line" "placeholders")
+    _guard_fail=$(extract_auto_result_metric "$_auto_result_line" "guard_fail")
+    _guard_placeholder=$(extract_auto_result_metric "$_auto_result_line" "guard_placeholder")
+    _guard_command=$(extract_auto_result_metric "$_auto_result_line" "guard_command")
+    _guard_pipe=$(extract_auto_result_metric "$_auto_result_line" "guard_pipe")
+    _skipped_missing_file=$(extract_auto_result_metric "$_auto_result_line" "skipped_missing_file")
+    _skipped_missing_key=$(extract_auto_result_metric "$_auto_result_line" "skipped_missing_key")
+    _skipped_not_placeholder=$(extract_auto_result_metric "$_auto_result_line" "skipped_not_placeholder")
     _translated=${_translated:-0}
     _placeholders=${_placeholders:-0}
+    _guard_fail=${_guard_fail:-0}
+    _guard_placeholder=${_guard_placeholder:-0}
+    _guard_command=${_guard_command:-0}
+    _guard_pipe=${_guard_pipe:-0}
+    _skipped_missing_file=${_skipped_missing_file:-0}
+    _skipped_missing_key=${_skipped_missing_key:-0}
+    _skipped_not_placeholder=${_skipped_not_placeholder:-0}
 
-    # stdout: "translated placeholders" (dla status_log_op)
-    echo "$_translated $_placeholders"
+    # Parsuj __QUALITY__ — ostrzeżenia jakości
+    local _quality_line
+    _quality_line=$(printf '%s\n' "$_at_out" | grep '__QUALITY__' | tail -n 1)
+    if [ -n "$_quality_line" ]; then
+        local _quality_json="${_quality_line#__QUALITY__ }"
+        log "${CYAN}📊 Quality metrics: ${_quality_json:0:200}${NC}"
+    fi
+
+    # Parsuj QUALITY_WARNINGS
+    local _qwarn_line
+    _qwarn_line=$(printf '%s\n' "$_at_out" | grep 'QUALITY_WARNINGS' | tail -n 1)
+    if [ -n "$_qwarn_line" ]; then
+        log "${YELLOW}⚠️ ${_qwarn_line}${NC}"
+    fi
+
+    # Parsuj __DONE_CONTRACT__
+    local _done_line
+    _done_line=$(printf '%s\n' "$_at_out" | grep '__DONE_CONTRACT__' | tail -n 1)
+    if [ -n "$_done_line" ]; then
+        local _is_done
+        _is_done=$(printf '%s\n' "$_done_line" | grep -oE 'is_done=[01]' | cut -d= -f2)
+        local _coverage
+        _coverage=$(printf '%s\n' "$_done_line" | grep -oE 'coverage=[0-9.]+' | cut -d= -f2)
+        if [ "${_is_done:-0}" = "1" ]; then
+            log "${GREEN}🏁 Done Contract: SPEŁNIONY (coverage=${_coverage}%)${NC}"
+        else
+            log "${YELLOW}📋 Done Contract: NIESPEŁNIONY (coverage=${_coverage}%)${NC}"
+        fi
+    fi
+
+    # stdout: "translated placeholders guard_fail guard_placeholder guard_command guard_pipe skipped_missing_file skipped_missing_key skipped_not_placeholder"
+    echo "$_translated $_placeholders $_guard_fail $_guard_placeholder $_guard_command $_guard_pipe $_skipped_missing_file $_skipped_missing_key $_skipped_not_placeholder"
     
     log "${GREEN}✅ Auto-translate zakończone${NC}"
+}
+
+append_translation_guard_report() {
+    local cycle="$1"
+    local lang="$2"
+    local json_file="$3"
+    local translated="$4"
+    local placeholders="$5"
+    local guard_fail="$6"
+    local guard_placeholder="$7"
+    local guard_command="$8"
+    local guard_pipe="$9"
+    local strict_missing_file="${10}"
+    local strict_missing_key="${11}"
+    local strict_skipped_done="${12}"
+
+    mkdir -p "$STATUS_DIR" 2>/dev/null || true
+
+    python3 - "$STATUS_DIR" "$cycle" "$lang" "$json_file" "$translated" "$placeholders" "$guard_fail" "$guard_placeholder" "$guard_command" "$guard_pipe" "$strict_missing_file" "$strict_missing_key" "$strict_skipped_done" << 'PYGUARD'
+import json
+import os
+import sys
+from datetime import datetime, timezone
+
+status_dir = sys.argv[1]
+cycle = int(sys.argv[2]) if sys.argv[2].isdigit() else 0
+lang = sys.argv[3]
+json_file = sys.argv[4]
+translated = int(sys.argv[5]) if sys.argv[5].isdigit() else 0
+placeholders = int(sys.argv[6]) if sys.argv[6].isdigit() else 0
+guard_fail = int(sys.argv[7]) if sys.argv[7].isdigit() else 0
+guard_placeholder = int(sys.argv[8]) if sys.argv[8].isdigit() else 0
+guard_command = int(sys.argv[9]) if sys.argv[9].isdigit() else 0
+guard_pipe = int(sys.argv[10]) if sys.argv[10].isdigit() else 0
+strict_missing_file = int(sys.argv[11]) if sys.argv[11].isdigit() else 0
+strict_missing_key = int(sys.argv[12]) if sys.argv[12].isdigit() else 0
+strict_skipped_done = int(sys.argv[13]) if sys.argv[13].isdigit() else 0
+
+entry = {
+    "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+    "cycle": cycle,
+    "language": lang,
+    "json_file": json_file,
+    "translated": translated,
+    "placeholders": placeholders,
+    "guard_fail": guard_fail,
+    "guard": {
+        "placeholder": guard_placeholder,
+        "command": guard_command,
+        "pipe": guard_pipe,
+    },
+    "strict_missing_file": strict_missing_file,
+    "strict_missing_key": strict_missing_key,
+    "strict_skipped_done": strict_skipped_done,
+}
+
+jsonl_path = os.path.join(status_dir, "translation_guard_report.jsonl")
+with open(jsonl_path, "a", encoding="utf-8") as f:
+    f.write(json.dumps(entry, ensure_ascii=False) + "\n")
+
+latest_path = os.path.join(status_dir, "translation_guard_latest.json")
+with open(latest_path, "w", encoding="utf-8") as f:
+    json.dump(entry, f, indent=2, ensure_ascii=False)
+PYGUARD
+}
+
+# === Runtime config: worker_config.json ===
+# Persystentna konfiguracja runtime'owa, czytana co cykl bez restartu workera.
+# Edytuj plik worker_config.json aby zmienić zachowanie workera w locie.
+WORKER_CONFIG_FILE="worker_config.json"
+
+save_default_worker_config() {
+    [ -f "$WORKER_CONFIG_FILE" ] && return 0
+    cat > "$WORKER_CONFIG_FILE" << 'WCEOF'
+{
+  "_comment": "Runtime config for i18n_worker_simple.sh — edytuj w dowolnym momencie, worker wczyta zmiany w następnym cyklu",
+  "focus_lang": "",
+  "focus_category": "",
+  "use_gt": false,
+  "gt_batch_size": 50,
+  "gt_delay": 1.5,
+  "translate_limit": 0,
+  "parallel_langs": 3,
+  "adaptive_batch": true,
+  "crossref_auto_fix": false,
+  "crossref_auto_fix_limit": 30,
+  "paused": false,
+  "test_lang": "",
+  "test_all_langs_queue": []
+}
+WCEOF
+    log "${GREEN}📄 Utworzono domyślny $WORKER_CONFIG_FILE${NC}"
+}
+
+load_worker_config() {
+    [ ! -f "$WORKER_CONFIG_FILE" ] && return 0
+
+    local cfg
+    cfg=$(python3 - "$WORKER_CONFIG_FILE" << 'LOADCFGPY'
+import json, sys, os
+
+path = sys.argv[1]
+defaults = {
+    "focus_lang": "",
+    "focus_category": "",
+    "use_gt": False,
+    "gt_batch_size": 50,
+    "gt_delay": 1.5,
+    "translate_limit": 0,
+    "parallel_langs": 3,
+    "adaptive_batch": True,
+    "crossref_auto_fix": False,
+    "crossref_auto_fix_limit": 30,
+    "paused": False,
+    "test_lang": "",
+    "test_all_langs_queue": [],
+}
+
+try:
+    with open(path, "r", encoding="utf-8") as f:
+        cfg = json.load(f)
+except Exception:
+    cfg = {}
+
+# Merge with defaults
+for k, v in defaults.items():
+    if k not in cfg:
+        cfg[k] = v
+
+# Output: key=value lines for bash eval
+out = []
+def bval(v):
+    if isinstance(v, bool):
+        return "true" if v else "false"
+    return str(v)
+
+out.append(f"CFG_FOCUS_LANG={cfg['focus_lang']}")
+out.append(f"CFG_FOCUS_CATEGORY={cfg['focus_category']}")
+out.append(f"CFG_USE_GT={bval(cfg['use_gt'])}")
+out.append(f"CFG_GT_BATCH_SIZE={cfg['gt_batch_size']}")
+out.append(f"CFG_GT_DELAY={cfg['gt_delay']}")
+out.append(f"CFG_TRANSLATE_LIMIT={cfg['translate_limit']}")
+out.append(f"CFG_PARALLEL_LANGS={cfg['parallel_langs']}")
+out.append(f"CFG_ADAPTIVE_BATCH={bval(cfg['adaptive_batch'])}")
+out.append(f"CFG_CROSSREF_AUTO_FIX={bval(cfg['crossref_auto_fix'])}")
+out.append(f"CFG_CROSSREF_AUTO_FIX_LIMIT={cfg['crossref_auto_fix_limit']}")
+out.append(f"CFG_PAUSED={bval(cfg['paused'])}")
+out.append(f"CFG_TEST_LANG={cfg['test_lang']}")
+
+# test_all_langs_queue as space-separated
+queue = cfg.get("test_all_langs_queue", [])
+if isinstance(queue, list):
+    out.append(f"CFG_TEST_QUEUE={' '.join(str(x) for x in queue)}")
+else:
+    out.append("CFG_TEST_QUEUE=")
+
+print("\n".join(out))
+LOADCFGPY
+    ) 2>/dev/null || true
+
+    [ -z "$cfg" ] && return 0
+
+    # Eval config values
+    eval "$cfg"
+
+    # Apply config to worker variables (config overrides CLI defaults, but explicit CLI flags take priority)
+    local changed=""
+
+    # use_gt
+    if [ "$CFG_USE_GT" = "true" ] && [ "$USE_GOOGLE_TRANSLATE" != "true" ]; then
+        USE_GOOGLE_TRANSLATE=true
+        changed="${changed} gt=on"
+    elif [ "$CFG_USE_GT" = "false" ] && [ "$USE_GOOGLE_TRANSLATE" = "true" ] && [ "${CLI_USE_GT:-}" != "true" ]; then
+        USE_GOOGLE_TRANSLATE=false
+        changed="${changed} gt=off"
+    fi
+
+    # gt_batch_size
+    if [ "${CFG_GT_BATCH_SIZE:-0}" -gt 0 ] 2>/dev/null; then
+        GT_BATCH_SIZE="$CFG_GT_BATCH_SIZE"
+    fi
+
+    # gt_delay
+    if [ -n "$CFG_GT_DELAY" ]; then
+        GT_DELAY="$CFG_GT_DELAY"
+    fi
+
+    # translate_limit (config override, 0 = let adaptive decide)
+    if [ "${CFG_TRANSLATE_LIMIT:-0}" -gt 0 ] 2>/dev/null && [ "${USER_TRANSLATE_LIMIT:-0}" -eq 0 ] 2>/dev/null; then
+        TRANSLATE_LIMIT="$CFG_TRANSLATE_LIMIT"
+        changed="${changed} limit=$CFG_TRANSLATE_LIMIT"
+    fi
+
+    # parallel_langs
+    if [ "${CFG_PARALLEL_LANGS:-0}" -gt 0 ] 2>/dev/null; then
+        PARALLEL_LANGS_PER_CYCLE="$CFG_PARALLEL_LANGS"
+    fi
+
+    # adaptive_batch
+    ADAPTIVE_BATCH_ENABLED="$CFG_ADAPTIVE_BATCH"
+
+    # crossref
+    CROSSREF_AUTO_FIX="$CFG_CROSSREF_AUTO_FIX"
+    if [ "${CFG_CROSSREF_AUTO_FIX_LIMIT:-0}" -gt 0 ] 2>/dev/null; then
+        CROSSREF_AUTO_FIX_LIMIT="$CFG_CROSSREF_AUTO_FIX_LIMIT"
+    fi
+
+    # focus_lang → PINNED_AUTO_LANG
+    if [ -n "$CFG_FOCUS_LANG" ]; then
+        if [ "$CFG_FOCUS_LANG" != "${PINNED_AUTO_LANG:-}" ]; then
+            PINNED_AUTO_LANG="$CFG_FOCUS_LANG"
+            PINNED_AUTO_JSON="${CFG_FOCUS_CATEGORY:-}"
+            PINNED_AUTO_LIMIT=0
+            changed="${changed} focus=$CFG_FOCUS_LANG"
+        fi
+    elif [ -n "${PINNED_AUTO_LANG:-}" ] && [ -z "${CFG_FOCUS_LANG:-}" ]; then
+        # Config cleared focus → unpin
+        if [ "${_LAST_CFG_FOCUS:-SET}" != "" ]; then
+            PINNED_AUTO_LANG=""
+            PINNED_AUTO_JSON=""
+            PINNED_AUTO_LIMIT=0
+            changed="${changed} unfocus"
+        fi
+    fi
+    _LAST_CFG_FOCUS="${CFG_FOCUS_LANG:-}"
+
+    # test_lang → wymuszenie cyklu test
+    if [ -n "$CFG_TEST_LANG" ]; then
+        RUNTIME_TEST_LANG="$CFG_TEST_LANG"
+        changed="${changed} test=$CFG_TEST_LANG"
+    else
+        RUNTIME_TEST_LANG=""
+    fi
+
+    # test_all_langs_queue
+    RUNTIME_TEST_QUEUE="${CFG_TEST_QUEUE:-}"
+
+    # paused
+    if [ "$CFG_PAUSED" = "true" ]; then
+        changed="${changed} PAUSED"
+    fi
+    RUNTIME_PAUSED="$CFG_PAUSED"
+
+    if [ -n "$changed" ]; then
+        log "${CYAN}⚙️ Config reload:${changed}${NC}"
+    fi
+}
+
+# Zapisz wartość do worker_config.json (key=value)
+update_worker_config() {
+    local key="$1"
+    local value="$2"
+    python3 - "$WORKER_CONFIG_FILE" "$key" "$value" << 'UPDATECFGPY'
+import json, sys, os
+
+path = sys.argv[1]
+key = sys.argv[2]
+raw_value = sys.argv[3]
+
+try:
+    with open(path, "r", encoding="utf-8") as f:
+        cfg = json.load(f)
+except Exception:
+    cfg = {}
+
+# Auto-detect type
+if raw_value.lower() in ("true", "on", "yes", "1"):
+    value = True
+elif raw_value.lower() in ("false", "off", "no", "0"):
+    value = False
+else:
+    try:
+        value = int(raw_value)
+    except ValueError:
+        try:
+            value = float(raw_value)
+        except ValueError:
+            value = raw_value
+
+cfg[key] = value
+with open(path, "w", encoding="utf-8") as f:
+    json.dump(cfg, f, indent=2, ensure_ascii=False)
+print(f"OK {key}={value}")
+UPDATECFGPY
+}
+
+# Wyczyść test_lang z config po wykonaniu testu
+clear_test_lang_from_config() {
+    update_worker_config "test_lang" "" >/dev/null 2>&1 || true
+}
+
+# Pop next lang from test_all_langs_queue
+pop_test_queue_lang() {
+    python3 - "$WORKER_CONFIG_FILE" << 'POPQPY'
+import json, sys, os
+
+path = sys.argv[1]
+try:
+    with open(path, "r", encoding="utf-8") as f:
+        cfg = json.load(f)
+except Exception:
+    cfg = {}
+
+queue = cfg.get("test_all_langs_queue", [])
+if not queue:
+    print("")
+    sys.exit(0)
+
+lang = queue.pop(0)
+cfg["test_all_langs_queue"] = queue
+with open(path, "w", encoding="utf-8") as f:
+    json.dump(cfg, f, indent=2, ensure_ascii=False)
+print(lang)
+POPQPY
+}
+
+# === Sekcja 8.3: Adaptive batch tuning ===
+# Analizuje ostatnie N cykli z guard_report i dynamicznie dostosowuje
+# GT_BATCH_SIZE i efektywny translate_limit.
+# Wynik: ustawia ADAPTIVE_BATCH_CURRENT (liczba kluczy/cykl) i GT_BATCH_SIZE.
+compute_adaptive_batch() {
+    if [ "${ADAPTIVE_BATCH_ENABLED:-true}" != "true" ]; then
+        ADAPTIVE_BATCH_CURRENT="${ADAPTIVE_BATCH_DEFAULT:-20}"
+        return 0
+    fi
+
+    local result
+    result=$(python3 - "$STATUS_DIR" "$ADAPTIVE_BATCH_DEFAULT" "$ADAPTIVE_BATCH_MIN" \
+        "$ADAPTIVE_BATCH_MAX" "$ADAPTIVE_BATCH_WINDOW" \
+        "$ADAPTIVE_BATCH_HIGH_THRESHOLD" "$ADAPTIVE_BATCH_LOW_THRESHOLD" \
+        "$GT_BATCH_SIZE" << 'ADAPTIVEPY'
+import json
+import os
+import sys
+
+status_dir = sys.argv[1]
+default_batch = int(sys.argv[2] or "20")
+min_batch = int(sys.argv[3] or "5")
+max_batch = int(sys.argv[4] or "50")
+window = int(sys.argv[5] or "10")
+high_threshold = float(sys.argv[6] or "20")
+low_threshold = float(sys.argv[7] or "5")
+current_gt_batch = int(sys.argv[8] or "50")
+
+guard_report_path = os.path.join(status_dir, "translation_guard_report.jsonl")
+adaptive_state_path = os.path.join(status_dir, "adaptive_batch_state.json")
+
+# Odczytaj ostatnich N wpisów z guard_report
+entries = []
+if os.path.exists(guard_report_path):
+    try:
+        with open(guard_report_path, "r", encoding="utf-8") as f:
+            lines = f.readlines()
+        for line in lines[-window:]:
+            line = line.strip()
+            if line:
+                try:
+                    entries.append(json.loads(line))
+                except Exception:
+                    pass
+    except Exception:
+        pass
+
+# Oblicz guard_fail_rate z ostatnich N cykli
+total_translated = 0
+total_guard_fail = 0
+total_attempts = 0
+for e in entries:
+    translated = int(e.get("translated", 0) or 0)
+    guard_fail = int(e.get("guard_fail", 0) or 0)
+    total_translated += translated
+    total_guard_fail += guard_fail
+    total_attempts += translated + guard_fail
+
+if total_attempts == 0:
+    # Brak danych — użyj domyślnego
+    guard_fail_rate = 0.0
+    new_batch = default_batch
+    reason = "no_data"
+else:
+    guard_fail_rate = (total_guard_fail / total_attempts) * 100.0
+
+    # Odczytaj poprzedni batch size
+    prev_batch = default_batch
+    try:
+        if os.path.exists(adaptive_state_path):
+            with open(adaptive_state_path, "r", encoding="utf-8") as f:
+                prev_state = json.load(f)
+            prev_batch = int(prev_state.get("batch_size", default_batch))
+    except Exception:
+        pass
+
+    if guard_fail_rate > high_threshold:
+        # Wysoki fail rate → zmniejsz batch o 25%
+        new_batch = max(min_batch, int(prev_batch * 0.75))
+        reason = f"decrease_high_fail_rate={guard_fail_rate:.1f}%"
+    elif guard_fail_rate < low_threshold:
+        # Niski fail rate → zwiększ batch o 25%
+        new_batch = min(max_batch, int(prev_batch * 1.25))
+        reason = f"increase_low_fail_rate={guard_fail_rate:.1f}%"
+    else:
+        # W normie → utrzymaj
+        new_batch = prev_batch
+        reason = f"stable_fail_rate={guard_fail_rate:.1f}%"
+
+# Dostosuj GT_BATCH_SIZE: nie powinien być większy niż batch kluczy
+new_gt_batch = min(current_gt_batch, new_batch)
+
+# Zapisz stan
+try:
+    os.makedirs(status_dir, exist_ok=True)
+    state = {
+        "batch_size": new_batch,
+        "gt_batch_size": new_gt_batch,
+        "guard_fail_rate": round(guard_fail_rate, 2),
+        "total_translated": total_translated,
+        "total_guard_fail": total_guard_fail,
+        "total_attempts": total_attempts,
+        "window": window,
+        "entries_used": len(entries),
+        "reason": reason,
+    }
+    with open(adaptive_state_path, "w", encoding="utf-8") as f:
+        json.dump(state, f, indent=2, ensure_ascii=False)
+except Exception:
+    pass
+
+# Output: batch_size gt_batch_size guard_fail_rate reason
+print(f"{new_batch} {new_gt_batch} {guard_fail_rate:.1f} {reason}")
+ADAPTIVEPY
+    ) 2>/dev/null || true
+
+    if [ -n "$result" ]; then
+        ADAPTIVE_BATCH_CURRENT=$(echo "$result" | awk '{print $1}')
+        local new_gt_batch=$(echo "$result" | awk '{print $2}')
+        local fail_rate=$(echo "$result" | awk '{print $3}')
+        local reason=$(echo "$result" | awk '{$1=$2=$3=""; print $0}' | sed 's/^ *//')
+
+        # Aktualizuj GT_BATCH_SIZE jeśli adaptive zmniejszył
+        if [ "${new_gt_batch:-0}" -gt 0 ] 2>/dev/null; then
+            GT_BATCH_SIZE="$new_gt_batch"
+        fi
+
+        # Jeśli TRANSLATE_LIMIT nie jest ustawiony ręcznie, użyj adaptive
+        if [ "${TRANSLATE_LIMIT:-0}" -eq 0 ] 2>/dev/null; then
+            TRANSLATE_LIMIT="$ADAPTIVE_BATCH_CURRENT"
+        fi
+
+        log "${CYAN}📊 Adaptive batch: keys=$ADAPTIVE_BATCH_CURRENT gt_batch=$GT_BATCH_SIZE fail_rate=${fail_rate}% ($reason)${NC}"
+    else
+        ADAPTIVE_BATCH_CURRENT="${ADAPTIVE_BATCH_DEFAULT:-20}"
+        if [ "${TRANSLATE_LIMIT:-0}" -eq 0 ] 2>/dev/null; then
+            TRANSLATE_LIMIT="$ADAPTIVE_BATCH_CURRENT"
+        fi
+        log "${YELLOW}⚠ Adaptive batch: fallback to default=$ADAPTIVE_BATCH_CURRENT${NC}"
+    fi
 }
 
 #===============================================================================
@@ -7900,16 +13304,15 @@ I18N_DIR = "i18n"
 DOCS_DIR = "docs/i18n/categories"
 os.makedirs(DOCS_DIR, exist_ok=True)
 
-# Kategorie do dokumentowania
-CATEGORIES = ["npc", "scripts", "monsters", "items", "spells", "quests", "actions", "events"]
-
-generated = 0
-
-# Zbierz dane z EN jako bazę (ma wszystkie klucze)
+# Kategorie do dokumentowania - dynamicznie z katalogu EN
 en_dir = os.path.join(I18N_DIR, "en")
 if not os.path.exists(en_dir):
     print("⚠️ Brak katalogu i18n/en")
     exit(0)
+
+CATEGORIES = [f[:-5] for f in sorted(os.listdir(en_dir)) if f.endswith('.json')]
+
+generated = 0
 
 for category in CATEGORIES:
     en_file = os.path.join(en_dir, f"{category}.json")
@@ -8086,23 +13489,22 @@ def check_translation(key, en_text, translation, lang, source_file):
     return local_issues
 
 # Skanuj wszystkie pliki JSON w strukturze i18n/{lang}/{category}.json
-CATEGORIES = ['npc', 'scripts', 'monsters', 'items', 'spells', 'quests', 'actions']
-
-# Najpierw wczytaj EN jako bazę
+# Dynamicznie wykrywaj kategorie z katalogu EN
 en_dir = os.path.join(I18N_DIR, "en")
 if not os.path.exists(en_dir):
     print("⚠️ Brak katalogu i18n/en")
     exit(0)
 
+CATEGORIES = [f[:-5] for f in sorted(os.listdir(en_dir)) if f.endswith('.json')]
+
 en_data = {}  # {category: {key: text}}
 for cat in CATEGORIES:
     en_file = os.path.join(en_dir, f"{cat}.json")
-    if os.path.exists(en_file):
-        try:
-            with open(en_file, 'r', encoding='utf-8') as f:
-                en_data[cat] = json.load(f)
-        except:
-            pass
+    try:
+        with open(en_file, 'r', encoding='utf-8') as f:
+            en_data[cat] = json.load(f)
+    except:
+        pass
 
 # Teraz sprawdź tłumaczenia w innych językach
 for lang_dir in os.listdir(I18N_DIR):
@@ -8155,6 +13557,989 @@ else:
 VALIDATEPY
 }
 
+run_language_spotcheck() {
+    local target_lang="${1:-}"
+    local sample_size="${2:-20}"
+    if [ -z "$target_lang" ]; then
+        echo "SPOTCHECK_ERROR=missing_lang"
+        return 1
+    fi
+    python3 tools/i18n_language_spotcheck.py --i18n-dir "$I18N_DIR" --lang "$target_lang" --sample "$sample_size" 2>/dev/null || true
+}
+
+run_language_grammar_fix() {
+    local target_lang="${1:-}"
+    local json_file="${2:-npc.json}"
+    local fix_limit="${3:-20}"
+    if [ -z "$target_lang" ]; then
+        echo "GRAMMARFIX_ERROR=missing_lang"
+        return 1
+    fi
+    local args=(tools/i18n_grammar_refine.py --i18n-dir "$I18N_DIR" --lang "$target_lang" --json "$json_file" --limit "$fix_limit")
+    if [ "$USE_GOOGLE_TRANSLATE" = "true" ]; then
+        args+=(--use-gt)
+    fi
+    python3 "${args[@]}" 2>/dev/null || true
+}
+
+#===============================================================================
+# WALIDACJA PER-JĘZYK — pełen audyt jednego lub wszystkich języków (6.3)
+#===============================================================================
+# Skanuje WSZYSTKIE klucze tłumaczeń, uruchamia walidatory V1–V7 + script-specific
+# Generuje: i18n/status/validation/{lang}_report.json + summary.json
+#===============================================================================
+LANG_VALIDATION_INTERVAL="${LANG_VALIDATION_INTERVAL:-50}"  # co ile cykli
+LAST_LANG_VALIDATION_CYCLE=0
+
+run_full_lang_validation() {
+    local current_cycle="${1:-0}"
+    local force_lang="${2:-}"  # jeśli pusty, waliduj active lang z aktualnego cyklu
+
+    # Sprawdź interwał (chyba że wymuszony)
+    if [ -z "$force_lang" ]; then
+        local cycles_since=$(( current_cycle - LAST_LANG_VALIDATION_CYCLE ))
+        if [ "$cycles_since" -lt "$LANG_VALIDATION_INTERVAL" ] && [ "$LAST_LANG_VALIDATION_CYCLE" -gt 0 ]; then
+            return 0
+        fi
+    fi
+
+    log "${CYAN}🔬 LANG VALIDATION: Pełna walidacja per-język (cykl $current_cycle)...${NC}"
+    LAST_LANG_VALIDATION_CYCLE=$current_cycle
+
+    mkdir -p "$STATUS_DIR/validation" 2>/dev/null || true
+
+    local _val_out
+    _val_out=$(python3 - "$I18N_DIR" "$STATUS_DIR" "$force_lang" << 'LANG_VALIDATION_PY'
+import json
+import os
+import re
+import sys
+import unicodedata
+from collections import Counter, defaultdict
+from datetime import datetime, timezone
+
+I18N_DIR = sys.argv[1]
+STATUS_DIR = sys.argv[2]
+FORCE_LANG = sys.argv[3] if len(sys.argv) > 3 and sys.argv[3] else ""
+
+AUTO_FIX_CROSSREF = os.environ.get("CROSSREF_AUTO_FIX", "false").lower() == "true"
+USE_GOOGLE_TRANSLATE = os.environ.get("USE_GOOGLE_TRANSLATE", "false").lower() == "true"
+try:
+    AUTO_FIX_CROSSREF_LIMIT = int(os.environ.get("CROSSREF_AUTO_FIX_LIMIT", "30") or "30")
+except Exception:
+    AUTO_FIX_CROSSREF_LIMIT = 30
+AUTO_FIX_CROSSREF_LIMIT = max(0, min(AUTO_FIX_CROSSREF_LIMIT, 200))
+
+en_dir = os.path.join(I18N_DIR, "en")
+val_dir = os.path.join(STATUS_DIR, "validation")
+os.makedirs(val_dir, exist_ok=True)
+
+# ============================================================================
+# Mapowania pism
+# ============================================================================
+LANG_SCRIPT_GROUP = {
+    "az": "latin", "bs": "latin", "cs": "latin", "cy": "latin", "da": "latin",
+    "de": "latin", "es": "latin", "et": "latin", "fi": "latin",
+    "fr": "latin", "ga": "latin", "gl": "latin", "hr": "latin", "hu": "latin",
+    "id": "latin", "it": "latin", "lt": "latin", "lv": "latin", "ms": "latin",
+    "mt": "latin", "nl": "latin", "no": "latin", "pl": "latin", "pt": "latin",
+    "pt-br": "latin", "ro": "latin", "sk": "latin", "sl": "latin", "sq": "latin",
+    "sv": "latin", "sw": "latin", "tl": "latin", "tr": "latin", "vi": "latin",
+    "bg": "cyrillic", "mk": "cyrillic", "ru": "cyrillic", "sr": "cyrillic", "uk": "cyrillic",
+    "ja": "cjk", "ko": "cjk", "zh": "cjk", "zh-cn": "cjk", "zh-tw": "cjk", "zh_tw": "cjk",
+    "ar": "rtl", "he": "rtl",
+    "bn": "exotic", "el": "exotic", "hi": "exotic", "hy": "exotic", "ka": "exotic",
+    "ml": "exotic", "ta": "exotic", "te": "exotic", "th": "exotic",
+}
+
+EXPECTED_SCRIPTS = {
+    "bn": "BENGALI", "el": "GREEK", "hi": "DEVANAGARI", "hy": "ARMENIAN",
+    "ka": "GEORGIAN", "ml": "MALAYALAM", "ta": "TAMIL", "te": "TELUGU", "th": "THAI",
+}
+
+# ============================================================================
+# Załaduj EN data
+# ============================================================================
+if not os.path.isdir(en_dir):
+    print("__LANGVAL__ error=no_en_dir")
+    raise SystemExit(0)
+
+en_data_all = {}  # {category: {key: text}}
+categories = [f[:-5] for f in sorted(os.listdir(en_dir)) if f.endswith(".json")]
+for cat in categories:
+    try:
+        with open(os.path.join(en_dir, f"{cat}.json"), "r", encoding="utf-8") as f:
+            en_data_all[cat] = json.load(f)
+    except Exception:
+        pass
+
+pl_data_all = {}
+pl_dir = os.path.join(I18N_DIR, "pl")
+if os.path.isdir(pl_dir):
+    for cat in categories:
+        pl_path = os.path.join(pl_dir, f"{cat}.json")
+        if not os.path.exists(pl_path):
+            continue
+        try:
+            with open(pl_path, "r", encoding="utf-8") as f:
+                loaded = json.load(f)
+            if isinstance(loaded, dict):
+                pl_data_all[cat] = loaded
+        except Exception:
+            continue
+
+total_en_keys = sum(len(v) for v in en_data_all.values())
+
+# ============================================================================
+# Determine which languages to validate
+# ============================================================================
+if FORCE_LANG:
+    langs_to_check = [FORCE_LANG]
+else:
+    _SKIP_DIRS = {"en", "status", "reports", "scripts", "tools", "docs", "backup"}
+    langs_to_check = sorted(
+        d for d in os.listdir(I18N_DIR)
+        if os.path.isdir(os.path.join(I18N_DIR, d))
+        and d not in _SKIP_DIRS
+        and not d.startswith(".")
+        and len(d) <= 6  # language codes are short: pl, pt-br, zh_TW
+    )
+
+# ============================================================================
+# Validators
+# ============================================================================
+PH_RE = re.compile(r'\{[^}]*\}')
+CMD_RE = re.compile(r"''[^']+?''")   # Double-quoted commands: ''trade'', ''job''
+PIPE_RE = re.compile(r'\|[^|]+\|')
+ARTIFACT_RE = re.compile(r'\?\?\?|\[[A-Z]{2,}(?:[-_][A-Z]{2,})?\]|TODO|FIXME')
+
+def validate_key(en_text: str, tr_text: str, lang: str, key: str):
+    """Run all validators V1–V7 + script-specific. Returns list of issues."""
+    issues = []
+    en = str(en_text or "")
+    tr = str(tr_text or "")
+
+    # Skip identical (proper nouns, not-translated)
+    if tr == en:
+        return []
+    # Skip placeholders [LANG] ...
+    if tr.startswith("[") and "]" in tr[:8]:
+        return []
+
+    # V3: Empty check — return early, no point validating empty string
+    if not tr.strip():
+        return [{"type": "V3_empty", "severity": "LOW"}]
+
+    # V1: Placeholder match
+    en_ph = set(PH_RE.findall(en))
+    tr_ph = set(PH_RE.findall(tr))
+    if en_ph != tr_ph:
+        issues.append({"type": "V1_placeholder_mismatch", "severity": "CRITICAL"})
+
+    # V5: Pipe token check
+    en_pipe = set(PIPE_RE.findall(en))
+    tr_pipe = set(PIPE_RE.findall(tr))
+    if en_pipe != tr_pipe:
+        issues.append({"type": "V5_pipe_mismatch", "severity": "CRITICAL"})
+
+    # V7: Command check (double-quoted commands ''trade'', ''job'')
+    en_cmd = set(CMD_RE.findall(en))
+    if en_cmd:
+        tr_cmd = set(CMD_RE.findall(tr))
+        if en_cmd != tr_cmd:
+            issues.append({"type": "V7_command_mismatch", "severity": "MEDIUM"})
+
+    # V2: Length ratio
+    en_len = len(en.strip())
+    tr_len = len(tr.strip())
+    if en_len > 3:
+        ratio = tr_len / en_len
+        if ratio < 0.2 or ratio > 5.0:
+            issues.append({"type": "V2_length_ratio", "severity": "MEDIUM", "ratio": round(ratio, 3)})
+
+    # V4: Artifact check
+    if ARTIFACT_RE.search(tr):
+        issues.append({"type": "V4_artifact", "severity": "HIGH"})
+
+    # V6: Newline count
+    en_nl = en.count("\\n") + en.count("\n")
+    tr_nl = tr.count("\\n") + tr.count("\n")
+    if en_nl > 0 and en_nl != tr_nl:
+        issues.append({"type": "V6_newline_mismatch", "severity": "MEDIUM"})
+
+    # === Script-specific ===
+    lang_lc = lang.lower().replace("_", "-")
+    group = LANG_SCRIPT_GROUP.get(lang_lc, "latin")
+
+    if group == "cyrillic":
+        clean = re.sub(r'[{}\d|%\s]', '', tr)
+        if len(clean) > 5:
+            latin_c = sum(1 for c in clean if c.isalpha() and ord(c) < 0x0400)
+            total_a = sum(1 for c in clean if c.isalpha())
+            if total_a > 3 and (latin_c / total_a) > 0.3:
+                issues.append({"type": "script_cyrillic_latin_mix", "severity": "HIGH",
+                               "ratio": round(latin_c / total_a, 3)})
+
+    elif group == "cjk":
+        if en_len > 3:
+            ratio = tr_len / en_len
+            if ratio < 0.15 or ratio > 2.5:
+                issues.append({"type": "script_cjk_ratio", "severity": "MEDIUM",
+                               "ratio": round(ratio, 3)})
+
+    elif group == "rtl":
+        clean = re.sub(r'[{}\d|%\s]', '', tr)
+        if len(clean) > 5:
+            rtl_c = sum(1 for c in clean if unicodedata.bidirectional(c) in ('R', 'AL', 'AN'))
+            total = len(clean)
+            if total > 3 and (rtl_c / total) < 0.3:
+                issues.append({"type": "script_rtl_insufficient", "severity": "HIGH",
+                               "ratio": round(rtl_c / total, 3)})
+
+    elif group == "exotic":
+        exp = EXPECTED_SCRIPTS.get(lang_lc)
+        if exp:
+            clean = re.sub(r'[{}\d|%\s]', '', tr)
+            total_a = sum(1 for c in clean if c.isalpha())
+            if total_a > 5:
+                correct = sum(1 for c in clean if c.isalpha() and exp in unicodedata.name(c, ''))
+                if (correct / total_a) < 0.4:
+                    issues.append({"type": "script_wrong_script", "severity": "HIGH",
+                                   "expected": exp, "ratio": round(correct / total_a, 3)})
+
+    return issues
+
+def _is_placeholder_like(value):
+    txt = str(value or "")
+    return txt.startswith("[") and "]" in txt[:8]
+
+def _is_meaningful_translation(value, en_text):
+    txt = str(value or "").strip()
+    if not txt:
+        return False
+    if _is_placeholder_like(txt):
+        return False
+    if txt == str(en_text or ""):
+        return False
+    return True
+
+def _map_gt_target(lang_code: str) -> str:
+    norm = str(lang_code or "").replace("_", "-").lower()
+    if norm == "he":
+        return "iw"
+    if norm == "zh-tw":
+        return "zh-TW"
+    if norm == "zh-cn":
+        return "zh-CN"
+    return norm
+
+def _protect_special_tokens(text: str):
+    src = str(text or "")
+    token_map = {}
+    token_idx = 0
+
+    def _put_token(match):
+        nonlocal token_idx
+        token = f"__I18N_TOKEN_{token_idx}__"
+        token_idx += 1
+        token_map[token] = match.group(0)
+        return token
+
+    for pattern in (PH_RE, PIPE_RE, CMD_RE):
+        src = pattern.sub(_put_token, src)
+    return src, token_map
+
+def _restore_special_tokens(text: str, token_map: dict):
+    restored = str(text or "")
+    for token, original in token_map.items():
+        restored = restored.replace(token, original)
+    return restored
+
+# ============================================================================
+# Run validation for each language
+# ============================================================================
+summary_langs = {}
+
+for lang in langs_to_check:
+    lang_dir = os.path.join(I18N_DIR, lang)
+    if not os.path.isdir(lang_dir):
+        continue
+
+    lang_issues = []
+    issue_types = Counter()
+    total_keys = 0
+    translated_keys = 0
+    identical_to_en = 0
+    placeholder_keys = 0
+    worst_keys = []  # top 20 worst
+    consistency_map = defaultdict(set)      # en_text -> set(translations)
+    consistency_examples = defaultdict(list)  # en_text -> [cat:key]
+    pl_reference_issues = []
+    ratio_crossref_issues = []
+    auto_fix_candidates = []
+    autofix_attempted = 0
+    autofix_applied = 0
+    autofix_skipped = 0
+    autofix_errors = 0
+
+    for cat in categories:
+        en_cat = en_data_all.get(cat, {})
+        lang_file = os.path.join(lang_dir, f"{cat}.json")
+        if not os.path.exists(lang_file):
+            continue
+        try:
+            with open(lang_file, "r", encoding="utf-8") as f:
+                lang_cat = json.load(f)
+        except Exception:
+            continue
+
+        for key, en_val in en_cat.items():
+            total_keys += 1
+            tr_val = lang_cat.get(key)
+            if tr_val is None:
+                continue
+
+            tr_str = str(tr_val)
+            en_str = str(en_val)
+
+            # Classification
+            if tr_str.startswith("[") and "]" in tr_str[:8]:
+                placeholder_keys += 1
+                continue
+            if tr_str == en_str:
+                identical_to_en += 1
+
+                if lang != "pl":
+                    pl_val = pl_data_all.get(cat, {}).get(key)
+                    if _is_meaningful_translation(pl_val, en_str):
+                        pl_reference_issues.append({
+                            "key": key,
+                            "category": cat,
+                            "type": "pl_reference_missing_translation",
+                            "severity": "MEDIUM",
+                            "en": en_str,
+                            "pl": str(pl_val),
+                            "lang": tr_str,
+                        })
+                        auto_fix_candidates.append({
+                            "key": key,
+                            "category": cat,
+                            "en": en_str,
+                        })
+
+                # Still count as "translated" if it's a proper noun
+                translated_keys += 1
+                continue
+
+            translated_keys += 1
+
+            if en_str.strip():
+                consistency_map[en_str].add(tr_str)
+                if len(consistency_examples[en_str]) < 5:
+                    consistency_examples[en_str].append(f"{cat}:{key}")
+
+            if lang != "pl":
+                pl_val = pl_data_all.get(cat, {}).get(key)
+                if _is_meaningful_translation(pl_val, en_str):
+                    en_len = len(en_str.strip())
+                    if en_len > 3:
+                        lang_ratio = len(tr_str.strip()) / en_len
+                        pl_ratio = len(str(pl_val).strip()) / en_len
+                        if abs(lang_ratio - pl_ratio) > 1.8:
+                            ratio_crossref_issues.append({
+                                "key": key,
+                                "category": cat,
+                                "type": "crossref_length_ratio_diff",
+                                "severity": "MEDIUM",
+                                "en_len": en_len,
+                                "lang_ratio": round(lang_ratio, 3),
+                                "pl_ratio": round(pl_ratio, 3),
+                            })
+
+            # Validate
+            issues = validate_key(en_str, tr_str, lang, key)
+            for iss in issues:
+                issue_types[iss["type"]] += 1
+                lang_issues.append({
+                    "key": key,
+                    "category": cat,
+                    "type": iss["type"],
+                    "severity": iss.get("severity", "LOW"),
+                })
+
+    # Score: 100 - penalties
+    critical_count = sum(1 for i in lang_issues if i["severity"] == "CRITICAL")
+    high_count = sum(1 for i in lang_issues if i["severity"] == "HIGH")
+    medium_count = sum(1 for i in lang_issues if i["severity"] == "MEDIUM")
+    low_count = sum(1 for i in lang_issues if i["severity"] == "LOW")
+
+    penalty = (critical_count * 3 + high_count * 1.5 + medium_count * 0.3 + low_count * 0.05)
+    # Score as percentage of translations without issues
+    issue_rate = penalty / max(translated_keys, 1)
+    score = max(0, min(100, 100 * (1 - issue_rate)))
+    score = round(score, 1)
+
+    coverage = round(translated_keys / max(total_keys, 1) * 100, 1)
+
+    # ========================================================================
+    # Phase 4: Cross-referencing checks (run only when lang coverage >= 30%)
+    # ========================================================================
+    consistency_issues = []
+    if coverage >= 30 and lang != "pl":
+        for en_text, variants in consistency_map.items():
+            if len(variants) <= 1:
+                continue
+            consistency_issues.append({
+                "type": "crossref_inconsistent_translation",
+                "severity": "MEDIUM",
+                "en": en_text,
+                "variants": sorted(variants),
+                "variants_count": len(variants),
+                "examples": consistency_examples.get(en_text, [])[:5],
+            })
+
+    # Cap lists for report readability
+    consistency_issues = sorted(consistency_issues, key=lambda x: x.get("variants_count", 0), reverse=True)[:200]
+    pl_reference_issues = pl_reference_issues[:400]
+    ratio_crossref_issues = ratio_crossref_issues[:400]
+
+    crossref_total = len(consistency_issues) + len(pl_reference_issues) + len(ratio_crossref_issues)
+
+    auto_fix_enabled = bool(AUTO_FIX_CROSSREF and USE_GOOGLE_TRANSLATE and coverage >= 30 and lang != "pl")
+    if auto_fix_enabled and AUTO_FIX_CROSSREF_LIMIT > 0 and auto_fix_candidates:
+        gt_lang = _map_gt_target(lang)
+        try:
+            from deep_translator import GoogleTranslator
+            translator = GoogleTranslator(source='en', target=gt_lang)
+
+            by_cat = defaultdict(list)
+            for cand in auto_fix_candidates[:AUTO_FIX_CROSSREF_LIMIT]:
+                by_cat[cand["category"]].append(cand)
+
+            for cat, cands in by_cat.items():
+                lang_file = os.path.join(lang_dir, f"{cat}.json")
+                if not os.path.exists(lang_file):
+                    autofix_skipped += len(cands)
+                    continue
+                try:
+                    with open(lang_file, "r", encoding="utf-8") as f:
+                        lang_cat_data = json.load(f)
+                    if not isinstance(lang_cat_data, dict):
+                        autofix_skipped += len(cands)
+                        continue
+                except Exception:
+                    autofix_skipped += len(cands)
+                    continue
+
+                changed = False
+                for i in range(0, len(cands), 20):
+                    batch = cands[i:i + 20]
+                    protected = []
+                    token_maps = []
+                    for c in batch:
+                        ptxt, pmap = _protect_special_tokens(c["en"])
+                        protected.append(ptxt)
+                        token_maps.append(pmap)
+
+                    try:
+                        gt_results = translator.translate_batch(protected)
+                    except Exception:
+                        autofix_errors += len(batch)
+                        continue
+
+                    if isinstance(gt_results, str):
+                        gt_results = [gt_results]
+                    if not isinstance(gt_results, list):
+                        gt_results = []
+
+                    while len(gt_results) < len(batch):
+                        gt_results.append("")
+
+                    for cand, gt_text, token_map in zip(batch, gt_results, token_maps):
+                        autofix_attempted += 1
+                        restored = _restore_special_tokens(str(gt_text or ""), token_map).strip()
+                        if not restored or restored == cand["en"].strip():
+                            autofix_skipped += 1
+                            continue
+
+                        fix_issues = validate_key(cand["en"], restored, lang, cand["key"])
+                        has_critical = any(i.get("severity") == "CRITICAL" for i in fix_issues)
+                        if has_critical:
+                            autofix_skipped += 1
+                            continue
+
+                        lang_cat_data[cand["key"]] = restored
+                        autofix_applied += 1
+                        changed = True
+
+                if changed:
+                    try:
+                        tmp = lang_file + ".tmp"
+                        with open(tmp, "w", encoding="utf-8") as f:
+                            json.dump(lang_cat_data, f, indent=2, ensure_ascii=False)
+                        os.replace(tmp, lang_file)
+                    except Exception:
+                        autofix_errors += 1
+        except Exception:
+            autofix_errors += len(auto_fix_candidates[:AUTO_FIX_CROSSREF_LIMIT])
+
+    crossref_report = {
+        "lang": lang,
+        "coverage_pct": coverage,
+        "crossref_enabled": bool(coverage >= 30 and lang != "pl"),
+        "auto_fix_enabled": auto_fix_enabled,
+        "auto_fix_limit": AUTO_FIX_CROSSREF_LIMIT,
+        "checked_at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+        "issues_total": crossref_total,
+        "issues_by_type": {
+            "consistency_in_language": len(consistency_issues),
+            "pl_reference_missing_translation": len(pl_reference_issues),
+            "length_ratio_crosscheck": len(ratio_crossref_issues),
+        },
+        "consistency_issues": consistency_issues,
+        "pl_reference_issues": pl_reference_issues,
+        "length_ratio_issues": ratio_crossref_issues,
+        "auto_fix": {
+            "attempted": autofix_attempted,
+            "applied": autofix_applied,
+            "skipped": autofix_skipped,
+            "errors": autofix_errors,
+        },
+    }
+
+    crossref_path = os.path.join(val_dir, f"{lang}_crossref.json")
+    try:
+        tmp = crossref_path + ".tmp"
+        with open(tmp, "w", encoding="utf-8") as f:
+            json.dump(crossref_report, f, indent=2, ensure_ascii=False)
+        os.replace(tmp, crossref_path)
+    except Exception:
+        pass
+
+    # worst keys (by severity)
+    sev_order = {"CRITICAL": 4, "HIGH": 3, "MEDIUM": 2, "LOW": 1}
+    worst_keys = sorted(lang_issues, key=lambda x: sev_order.get(x["severity"], 0), reverse=True)[:20]
+
+    group = LANG_SCRIPT_GROUP.get(lang.lower().replace("_", "-"), "latin")
+
+    report = {
+        "lang": lang,
+        "script_group": group,
+        "total_keys": total_keys,
+        "translated": translated_keys,
+        "identical_to_en": identical_to_en,
+        "placeholder_keys": placeholder_keys,
+        "coverage_pct": coverage,
+        "issues_total": len(lang_issues),
+        "issues_by_type": dict(issue_types.most_common()),
+        "issues_by_severity": {
+            "CRITICAL": critical_count,
+            "HIGH": high_count,
+            "MEDIUM": medium_count,
+            "LOW": low_count,
+        },
+        "score": score,
+        "worst_keys": worst_keys,
+        "crossref": {
+            "enabled": bool(coverage >= 30 and lang != "pl"),
+            "issues_total": crossref_total,
+            "consistency": len(consistency_issues),
+            "pl_reference": len(pl_reference_issues),
+            "length_ratio": len(ratio_crossref_issues),
+            "auto_fix_applied": autofix_applied,
+        },
+        "validated_at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+    }
+
+    # Save per-lang report
+    report_path = os.path.join(val_dir, f"{lang}_report.json")
+    try:
+        tmp = report_path + ".tmp"
+        with open(tmp, "w", encoding="utf-8") as f:
+            json.dump(report, f, indent=2, ensure_ascii=False)
+        os.replace(tmp, report_path)
+    except Exception:
+        pass
+
+    summary_langs[lang] = {
+        "score": score,
+        "coverage_pct": coverage,
+        "issues": len(lang_issues),
+        "critical": critical_count,
+        "high": high_count,
+        "crossref_issues": crossref_total,
+        "crossref_autofix_applied": autofix_applied,
+        "translated": translated_keys,
+        "script_group": group,
+    }
+
+# ============================================================================
+# Summary report
+# ============================================================================
+summary = {
+    "total_languages": len(summary_langs),
+    "total_en_keys": total_en_keys,
+    "validated_at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+    "by_score": dict(sorted(summary_langs.items(), key=lambda x: x[1]["score"])),
+    "avg_score": round(
+        sum(v["score"] for v in summary_langs.values()) / max(len(summary_langs), 1), 1
+    ),
+    "by_group": {},
+}
+
+# Group stats
+groups = defaultdict(list)
+for lg, info in summary_langs.items():
+    groups[info["script_group"]].append(lg)
+summary["by_group"] = {g: sorted(ls) for g, ls in groups.items()}
+summary["crossref_total_issues"] = int(sum(v.get("crossref_issues", 0) for v in summary_langs.values()))
+summary["crossref_autofix_total_applied"] = int(sum(v.get("crossref_autofix_applied", 0) for v in summary_langs.values()))
+
+summary_path = os.path.join(val_dir, "summary.json")
+try:
+    tmp = summary_path + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(summary, f, indent=2, ensure_ascii=False)
+    os.replace(tmp, summary_path)
+except Exception:
+    pass
+
+# Output for bash
+langs_checked = len(summary_langs)
+total_issues = sum(v["issues"] for v in summary_langs.values())
+total_critical = sum(v["critical"] for v in summary_langs.values())
+avg_score = summary.get("avg_score", 0)
+autofix_total = summary.get("crossref_autofix_total_applied", 0)
+
+# Worst 5 languages
+worst5 = sorted(summary_langs.items(), key=lambda x: x[1]["score"])[:5]
+worst_str = ", ".join(f"{l}({v['score']})" for l, v in worst5)
+
+print(f"__LANGVAL__ langs={langs_checked} issues={total_issues} critical={total_critical} avg_score={avg_score} crossref_autofix={autofix_total} worst={worst_str}")
+LANG_VALIDATION_PY
+) 2>&1
+
+    # Parse output
+    local val_line
+    val_line=$(echo "$_val_out" | grep "__LANGVAL__" | tail -1)
+    if [ -n "$val_line" ]; then
+        local langs_checked issues critical avg_score worst crossref_autofix
+        langs_checked=$(echo "$val_line" | sed -n 's/.*langs=\([^ ]*\).*/\1/p')
+        issues=$(echo "$val_line" | sed -n 's/.*issues=\([^ ]*\).*/\1/p')
+        critical=$(echo "$val_line" | sed -n 's/.*critical=\([^ ]*\).*/\1/p')
+        avg_score=$(echo "$val_line" | sed -n 's/.*avg_score=\([^ ]*\).*/\1/p')
+        crossref_autofix=$(echo "$val_line" | sed -n 's/.*crossref_autofix=\([^ ]*\).*/\1/p')
+        log "${GREEN}✅ LANG VALIDATION: ${langs_checked} języków, ${issues} problemów (${critical} krytycznych), avg score: ${avg_score}${NC}"
+        if [ "${crossref_autofix:-0}" -gt 0 ] 2>/dev/null; then
+            log "${GREEN}🛠️ CROSSREF AUTO-FIX: zastosowano ${crossref_autofix} poprawek${NC}"
+        fi
+    else
+        log "${YELLOW}⚠️ LANG VALIDATION: brak wyniku${NC}" >&2
+    fi
+}
+
+#===============================================================================
+# CYKLICZNY AUDYT JAKOŚCI (co N cykli)
+#===============================================================================
+# Analizuje ostatnie tłumaczenia z quality_report.jsonl
+# Sprawdza wzorce, powtórzenia cross-language, anomalie
+# Wynik: quality_audit_latest.json + quality_dashboard.json
+#===============================================================================
+QUALITY_AUDIT_INTERVAL="${QUALITY_AUDIT_INTERVAL:-10}"  # co ile cykli
+LAST_QUALITY_AUDIT_CYCLE=0
+
+run_quality_audit() {
+    local current_cycle="${1:-0}"
+    
+    # Sprawdź czy pora na audyt
+    local cycles_since=$(( current_cycle - LAST_QUALITY_AUDIT_CYCLE ))
+    if [ "$cycles_since" -lt "$QUALITY_AUDIT_INTERVAL" ] && [ "$LAST_QUALITY_AUDIT_CYCLE" -gt 0 ]; then
+        return 0
+    fi
+    
+    log "${CYAN}🔬 QUALITY AUDIT: Uruchamiam cykliczny audyt jakości (cykl $current_cycle)...${NC}"
+    LAST_QUALITY_AUDIT_CYCLE=$current_cycle
+    
+    local _audit_out
+    _audit_out=$(python3 << 'QUALITY_AUDIT_PY'
+import os
+import json
+import re
+from datetime import datetime, timezone
+from collections import Counter, defaultdict
+
+STATUS_DIR = "i18n/status"
+I18N_DIR = "i18n"
+
+# ============================================================================
+# 1. Wczytaj ostatnie wpisy z quality_report.jsonl
+# ============================================================================
+quality_log_path = os.path.join(STATUS_DIR, "quality_report.jsonl")
+recent_report_path = os.path.join(STATUS_DIR, "translation_recent_report.jsonl")
+
+quality_entries = []
+if os.path.exists(quality_log_path):
+    try:
+        with open(quality_log_path, "r", encoding="utf-8") as f:
+            lines = f.readlines()
+        # Ostatnie 200 wpisów
+        for line in lines[-200:]:
+            line = line.strip()
+            if line:
+                try:
+                    quality_entries.append(json.loads(line))
+                except json.JSONDecodeError:
+                    pass
+    except Exception:
+        pass
+
+# Wczytaj ostatnie wpisy z translation_recent_report.jsonl
+recent_entries = []
+if os.path.exists(recent_report_path):
+    try:
+        with open(recent_report_path, "r", encoding="utf-8") as f:
+            lines = f.readlines()
+        for line in lines[-100:]:
+            line = line.strip()
+            if line:
+                try:
+                    recent_entries.append(json.loads(line))
+                except json.JSONDecodeError:
+                    pass
+    except Exception:
+        pass
+
+# ============================================================================
+# 2. Analiza metryka jakości
+# ============================================================================
+issues = []
+
+# 2a. Anomalie length_ratio per-język
+lang_ratios = defaultdict(list)
+for entry in quality_entries:
+    q = entry.get("quality", {})
+    lang = entry.get("language", "")
+    lr = q.get("length_ratio", 1.0)
+    if lang and lr:
+        lang_ratios[lang].append(lr)
+
+for lang, ratios in lang_ratios.items():
+    if len(ratios) < 3:
+        continue
+    avg_ratio = sum(ratios) / len(ratios)
+    if avg_ratio < 0.5 or avg_ratio > 3.0:
+        issues.append({
+            "type": "persistent_length_anomaly",
+            "severity": "HIGH",
+            "lang": lang,
+            "avg_ratio": round(avg_ratio, 3),
+            "samples": len(ratios),
+            "message": f"Język {lang} ma trwale nieprawidłowy ratio długości: {avg_ratio:.2f}",
+        })
+
+# 2b. Wysoki wskaźnik odrzuceń per-język
+lang_reject_rate = defaultdict(lambda: {"translated": 0, "rejected": 0, "gt_fail": 0})
+for entry in quality_entries:
+    q = entry.get("quality", {})
+    lang = entry.get("language", "")
+    t = entry.get("translated", 0)
+    r = q.get("suspicious_rejected", 0)
+    gf = q.get("gt_guard_fails", 0)
+    lang_reject_rate[lang]["translated"] += t
+    lang_reject_rate[lang]["rejected"] += r
+    lang_reject_rate[lang]["gt_fail"] += gf
+
+for lang, stats in lang_reject_rate.items():
+    total = stats["translated"]
+    rejected = stats["rejected"]
+    gt_fail = stats["gt_fail"]
+    if total >= 10:
+        reject_pct = (rejected / total) * 100
+        gt_fail_pct = (gt_fail / total) * 100
+        if reject_pct > 15:
+            issues.append({
+                "type": "high_reject_rate",
+                "severity": "HIGH",
+                "lang": lang,
+                "reject_pct": round(reject_pct, 1),
+                "translated": total,
+                "rejected": rejected,
+                "message": f"Język {lang}: {reject_pct:.1f}% tłumaczeń odrzuconych ({rejected}/{total})",
+            })
+        if gt_fail_pct > 20:
+            issues.append({
+                "type": "high_gt_fail_rate",
+                "severity": "MEDIUM",
+                "lang": lang,
+                "gt_fail_pct": round(gt_fail_pct, 1),
+                "gt_fail": gt_fail,
+                "message": f"Język {lang}: {gt_fail_pct:.1f}% GT odrzuceń ({gt_fail}/{total})",
+            })
+
+# 2c. Cross-language duplikaty — ten sam EN→TRANSLATED w 5+ językach
+translation_map = defaultdict(set)  # en_text → set of (lang, translated)
+for entry in recent_entries:
+    for item in entry.get("entries", []):
+        en = str(item.get("en", "")).strip()
+        tr = str(item.get("translated", "")).strip()
+        lang = entry.get("language", "")
+        if en and tr and lang and en != tr:
+            translation_map[en].add((lang, tr))
+
+for en_text, lang_translations in translation_map.items():
+    # Sprawdź czy wiele języków ma identyczne tłumaczenie
+    tr_to_langs = defaultdict(list)
+    for lang, tr in lang_translations:
+        tr_to_langs[tr].append(lang)
+    for tr, langs in tr_to_langs.items():
+        if len(langs) >= 4 and tr != en_text:
+            issues.append({
+                "type": "cross_lang_duplicate",
+                "severity": "MEDIUM",
+                "en": en_text[:80],
+                "translated": tr[:80],
+                "langs": langs[:6],
+                "count": len(langs),
+                "message": f"To samo tłumaczenie \"{tr[:40]}\" w {len(langs)} językach — prawdopodobnie nietłumaczone",
+            })
+
+# 2d. Tłumaczenia zawierające artefakty z danych historycznych
+suspicious_log_path = os.path.join(STATUS_DIR, "suspicious_log.jsonl")
+suspicious_count_by_type = Counter()
+if os.path.exists(suspicious_log_path):
+    try:
+        with open(suspicious_log_path, "r", encoding="utf-8") as f:
+            for line in f.readlines()[-500:]:
+                line = line.strip()
+                if line:
+                    try:
+                        entry = json.loads(line)
+                        for issue in entry.get("issues", []):
+                            suspicious_count_by_type[issue.get("type", "unknown")] += 1
+                    except json.JSONDecodeError:
+                        pass
+    except Exception:
+        pass
+
+# 2e. Podsumowanie źródeł tłumaczeń
+source_totals = Counter()
+for entry in quality_entries:
+    q = entry.get("quality", {})
+    for src, count in q.get("source_breakdown", {}).items():
+        source_totals[src] += count
+
+# ============================================================================
+# 3. Budowa raportu audytu
+# ============================================================================
+severity_order = {"CRITICAL": 4, "HIGH": 3, "MEDIUM": 2, "LOW": 1}
+issues.sort(key=lambda x: -severity_order.get(x.get("severity", "LOW"), 0))
+
+audit_report = {
+    "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+    "checked_quality_entries": len(quality_entries),
+    "checked_recent_entries": len(recent_entries),
+    "issues_found": len(issues),
+    "issues_by_severity": {
+        "CRITICAL": sum(1 for i in issues if i.get("severity") == "CRITICAL"),
+        "HIGH": sum(1 for i in issues if i.get("severity") == "HIGH"),
+        "MEDIUM": sum(1 for i in issues if i.get("severity") == "MEDIUM"),
+        "LOW": sum(1 for i in issues if i.get("severity") == "LOW"),
+    },
+    "issues_by_type": dict(Counter(i.get("type", "unknown") for i in issues)),
+    "source_breakdown_total": dict(source_totals),
+    "suspicious_by_type_total": dict(suspicious_count_by_type),
+    "issues": issues[:50],  # Top 50 issues
+}
+
+# Zapisz audit
+os.makedirs(STATUS_DIR, exist_ok=True)
+audit_path = os.path.join(STATUS_DIR, "quality_audit_latest.json")
+try:
+    import tempfile
+    fd, tmp = tempfile.mkstemp(dir=STATUS_DIR, suffix=".tmp")
+    with os.fdopen(fd, "w", encoding="utf-8") as f:
+        json.dump(audit_report, f, indent=2, ensure_ascii=False)
+    os.replace(tmp, audit_path)
+except Exception as e:
+    try: os.unlink(tmp)
+    except: pass
+    print(f"⚠️ Nie udało się zapisać audytu: {e}")
+
+# Zapisz historię audytów (JSONL)
+try:
+    audit_history_path = os.path.join(STATUS_DIR, "quality_audit_history.jsonl")
+    summary = {
+        "timestamp": audit_report["timestamp"],
+        "issues_found": audit_report["issues_found"],
+        "issues_by_severity": audit_report["issues_by_severity"],
+    }
+    with open(audit_history_path, "a", encoding="utf-8") as f:
+        f.write(json.dumps(summary, ensure_ascii=False) + "\n")
+except Exception:
+    pass
+
+# ============================================================================
+# 4. Output
+# ============================================================================
+print(f"🔬 QUALITY AUDIT: Sprawdzono {len(quality_entries)} wpisów jakości, {len(recent_entries)} ostatnich tłumaczeń")
+print(f"   Znaleziono problemów: {len(issues)} (CRITICAL: {audit_report['issues_by_severity']['CRITICAL']}, HIGH: {audit_report['issues_by_severity']['HIGH']}, MEDIUM: {audit_report['issues_by_severity']['MEDIUM']})")
+
+if source_totals:
+    parts = [f"{src}={cnt}" for src, cnt in source_totals.most_common()]
+    print(f"   Źródła tłumaczeń: {', '.join(parts)}")
+
+if suspicious_count_by_type:
+    parts = [f"{t}={c}" for t, c in suspicious_count_by_type.most_common(5)]
+    print(f"   Top podejrzane typy: {', '.join(parts)}")
+
+for issue in issues[:5]:
+    sev = issue.get("severity", "?")
+    msg = issue.get("message", "?")
+    print(f"   [{sev}] {msg}")
+
+if len(issues) > 5:
+    print(f"   ... i {len(issues) - 5} więcej (szczegóły: {audit_path})")
+
+# Return code for bash
+if audit_report["issues_by_severity"]["CRITICAL"] > 0:
+    print("__AUDIT_RESULT__ CRITICAL")
+elif audit_report["issues_by_severity"]["HIGH"] > 3:
+    print("__AUDIT_RESULT__ HIGH")
+elif len(issues) > 10:
+    print("__AUDIT_RESULT__ WARN")
+else:
+    print("__AUDIT_RESULT__ OK")
+QUALITY_AUDIT_PY
+    ) 2>&1
+    local _audit_rc=$?
+    
+    echo "$_audit_out" >&2
+    
+    # Sprawdź wynik audytu
+    local _audit_result
+    _audit_result=$(printf '%s\n' "$_audit_out" | grep '__AUDIT_RESULT__' | tail -n 1 | awk '{print $2}')
+    
+    case "$_audit_result" in
+        CRITICAL)
+            log "${RED}🚨 QUALITY AUDIT: Znaleziono KRYTYCZNE problemy jakości!${NC}"
+            # Zmniejsz batch na następne cykle
+            if [ "${TRANSLATE_LIMIT:-20}" -gt 5 ]; then
+                export TRANSLATE_LIMIT=5
+                log "${YELLOW}⚠️ Zmniejszono batch do 5 z powodu problemów jakości${NC}"
+            fi
+            ;;
+        HIGH)
+            log "${YELLOW}⚠️ QUALITY AUDIT: Znaleziono poważne problemy jakości${NC}"
+            ;;
+        WARN)
+            log "${YELLOW}📊 QUALITY AUDIT: Kilka problemów do sprawdzenia${NC}"
+            ;;
+        *)
+            log "${GREEN}✅ QUALITY AUDIT: Jakość OK${NC}"
+            ;;
+    esac
+}
+
 #===============================================================================
 # TRYB IDLE: DZIENNY RAPORT
 #===============================================================================
@@ -8173,7 +14558,7 @@ os.makedirs(REPORTS_DIR, exist_ok=True)
 today = datetime.now().strftime('%Y-%m-%d')
 report_file = os.path.join(REPORTS_DIR, f"daily_{today}.md")
 
-# Zbierz statystyki
+# Zbierz statystyki — dynamicznie z i18n/en/
 stats = {
     "npc_files": 0,
     "total_keys": 0,
@@ -8181,31 +14566,46 @@ stats = {
     "quality_issues": 0
 }
 
-for subdir in ['npc', 'scripts', 'monsters']:
-    dir_path = os.path.join(I18N_DIR, subdir)
-    if not os.path.exists(dir_path):
-        continue
-    
-    for fname in os.listdir(dir_path):
-        if not fname.endswith('.json'):
-            continue
-        
+en_dir = os.path.join(I18N_DIR, "en")
+if not os.path.exists(en_dir):
+    print("⚠️ Brak katalogu i18n/en")
+    exit(0)
+
+all_categories = [f[:-5] for f in sorted(os.listdir(en_dir)) if f.endswith('.json')]
+
+# Zlicz klucze z EN
+en_data = {}
+for cat in all_categories:
+    fpath = os.path.join(en_dir, f"{cat}.json")
+    try:
+        with open(fpath, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        en_data[cat] = data
         stats["npc_files"] += 1
-        fpath = os.path.join(dir_path, fname)
-        
+        stats["total_keys"] += len(data)
+    except:
+        pass
+
+# Zlicz tłumaczenia w każdym języku
+for lang_dir in os.listdir(I18N_DIR):
+    lang_path = os.path.join(I18N_DIR, lang_dir)
+    if not os.path.isdir(lang_path) or lang_dir == 'en':
+        continue
+    lang_translated = 0
+    for cat in all_categories:
+        lang_file = os.path.join(lang_path, f"{cat}.json")
+        if not os.path.exists(lang_file):
+            continue
         try:
-            with open(fpath, 'r', encoding='utf-8') as f:
-                data = json.load(f)
-            
-            stats["total_keys"] += len(data)
-            
-            for key, val in data.items():
-                if isinstance(val, dict):
-                    for lang in val.keys():
-                        if lang != 'en' and val.get(lang):
-                            stats["translations"][lang] = stats["translations"].get(lang, 0) + 1
+            with open(lang_file, 'r', encoding='utf-8') as f:
+                lang_data = json.load(f)
+            en_keys = en_data.get(cat, {})
+            translated = sum(1 for k, v in lang_data.items() if v and v != en_keys.get(k, ''))
+            lang_translated += translated
         except:
             pass
+    if lang_translated > 0:
+        stats["translations"][lang_dir] = lang_translated
 
 # Wczytaj raport jakości
 quality_file = os.path.join(I18N_DIR, "quality_report.json")
@@ -8576,6 +14976,8 @@ PYTRANSLATE
 # Po zakończeniu migracji wszystkich kategorii → AUTO_TRANSLATE
 #===============================================================================
 select_work_mode() {
+    export DISPATCHER_LANG_PRIORITY="$LANG_PRIORITY"
+    export DISPATCHER_TARGET_LANGS="$TARGET_LANGS"
     python3 << 'DISPATCHERPY'
 import os
 import json
@@ -8583,8 +14985,70 @@ import glob
 import re
 
 I18N_DIR = "i18n"
-LANG_PRIORITY = ["pl", "de", "es", "pt", "fr", "it", "ru", "nl", "sv", "cs"]
-ALL_LANGUAGES = ["pl", "de", "es", "pt", "fr", "it", "ru", "uk", "nl", "sv", "da", "no", "fi", "cs", "sk", "hu", "ro", "bg", "el", "tr", "ar", "he", "hi", "zh", "ja", "ko", "th", "vi", "id", "ms"]
+
+def _split_langs(raw):
+    if not raw:
+        return []
+    parts = re.split(r"[\s,;]+", raw.strip())
+    out = []
+    seen = set()
+    for p in parts:
+        if not p:
+            continue
+        lang = p.strip()
+        if lang.lower() == "en":
+            continue
+        if lang not in seen:
+            out.append(lang)
+            seen.add(lang)
+    return out
+
+def _list_language_dirs(i18n_dir):
+    langs = []
+    seen = set()
+    if not os.path.isdir(i18n_dir):
+        return langs
+    for name in sorted(os.listdir(i18n_dir)):
+        p = os.path.join(i18n_dir, name)
+        if not os.path.isdir(p):
+            continue
+        if name == "en":
+            continue
+        if re.fullmatch(r"[a-z]{2}(?:_[A-Z]{2})?", name):
+            if name not in seen:
+                langs.append(name)
+                seen.add(name)
+    return langs
+
+DEFAULT_TARGET_LANGUAGES = [
+    "de", "pl", "es", "pt", "fr", "it", "nl", "cs", "sk", "hu",
+    "sv", "da", "no", "fi", "et", "lv", "lt", "ro", "bg", "el",
+    "hr", "sl", "bs", "sr", "mk", "sq", "ru", "uk", "kk", "uz",
+    "az", "hy", "ka", "tr", "ar", "he", "fa", "zh", "zh_TW", "ja",
+    "ko", "hi", "th", "vi", "id", "ms", "tl", "bn", "ta", "te",
+    "ml", "sw"
+]
+
+priority_from_env = _split_langs(os.environ.get("DISPATCHER_LANG_PRIORITY", ""))
+if not priority_from_env:
+    priority_from_env = ["de", "pl", "es", "pt", "fr", "it", "ru", "nl", "sv", "cs"]
+
+langs_override = _split_langs(os.environ.get("DISPATCHER_TARGET_LANGS", ""))
+langs_from_dirs = _list_language_dirs(I18N_DIR)
+
+if langs_override:
+    TARGET_LANGUAGES = langs_override
+elif langs_from_dirs:
+    ranked = []
+    for l in priority_from_env:
+        if l in langs_from_dirs and l not in ranked:
+            ranked.append(l)
+    for l in langs_from_dirs:
+        if l not in ranked:
+            ranked.append(l)
+    TARGET_LANGUAGES = ranked
+else:
+    TARGET_LANGUAGES = DEFAULT_TARGET_LANGUAGES
 
 # ==========================================================================
 # Kategorie (kolejność wg priority)
@@ -9399,6 +15863,111 @@ def count_untranslated_keys(lang, json_file):
     except:
         return 0
 
+# ============ HARD GATE — P0.2 Dispatcher transition guards ============
+
+PHASE_ORDER = ["MIGRATION", "COMPACT_KEYS", "TRANSLATION_SYNC", "AUTO_TRANSLATE", "IDLE"]
+
+def _phase_rank(phase):
+    """Numerical rank of a phase; higher = later in pipeline."""
+    p = str(phase or "").upper()
+    try:
+        return PHASE_ORDER.index(p)
+    except ValueError:
+        return -1
+
+def _load_last_phase():
+    """Load the last committed phase from dispatcher state."""
+    try:
+        dp = os.path.join(I18N_DIR, "status", "translation_dispatch_state.json")
+        if os.path.exists(dp):
+            with open(dp, "r", encoding="utf-8") as f:
+                ds = json.load(f)
+            return str(ds.get("last_phase", "")).upper() or None
+    except Exception:
+        pass
+    return None
+
+def _log_transition(from_phase, to_phase, gate_result, reason=""):
+    """Append transition event to JSONL log."""
+    import time as _tm
+    entry = {
+        "ts": datetime.now().strftime("%Y-%m-%dT%H:%M:%S"),
+        "from": str(from_phase or ""),
+        "to": str(to_phase or ""),
+        "gate": gate_result,  # "pass" | "block" | "forced"
+        "reason": str(reason or ""),
+    }
+    try:
+        log_path = os.path.join(I18N_DIR, "status", "transition_log.jsonl")
+        with open(log_path, "a", encoding="utf-8") as f:
+            f.write(json.dumps(entry, ensure_ascii=False) + "\n")
+    except Exception:
+        pass
+
+def transition_gate(target_phase, cat_state, force=False):
+    """Check hard gate conditions for transitioning to target_phase.
+    Returns (allowed: bool, reason: str).
+    If force=True, logs as 'forced' and always allows.
+    """
+    target = str(target_phase or "").upper()
+    last_phase = _load_last_phase() or "MIGRATION"
+    last_rank = _phase_rank(last_phase)
+    target_rank = _phase_rank(target)
+
+    # Rule 1: backwards movement is blocked (unless forced)
+    if target_rank >= 0 and last_rank >= 0 and target_rank < last_rank:
+        if not force:
+            reason = f"backwards {last_phase}→{target} blocked (rank {last_rank}→{target_rank})"
+            _log_transition(last_phase, target, "block", reason)
+            return False, reason
+
+    # Rule 2: MIGRATION → COMPACT_KEYS requires migrations_done
+    if target == "COMPACT_KEYS":
+        if not cat_state.get("migrations_done", False):
+            reason = "COMPACT_KEYS blocked: migrations_done=False"
+            if not force:
+                _log_transition(last_phase, target, "block", reason)
+                return False, reason
+
+    # Rule 3: TRANSLATION_SYNC requires migrations_done
+    if target == "TRANSLATION_SYNC":
+        if not cat_state.get("migrations_done", False):
+            reason = "TRANSLATION_SYNC blocked: migrations_done=False"
+            if not force:
+                _log_transition(last_phase, target, "block", reason)
+                return False, reason
+
+    # Rule 4: AUTO_TRANSLATE requires migrations_done (sync is optional — can translate what exists)
+    if target == "AUTO_TRANSLATE":
+        if not cat_state.get("migrations_done", False):
+            reason = "AUTO_TRANSLATE blocked: migrations_done=False"
+            if not force:
+                _log_transition(last_phase, target, "block", reason)
+                return False, reason
+
+    gate_label = "forced" if force else "pass"
+    _log_transition(last_phase, target, gate_label, "")
+    return True, ""
+
+def _commit_phase(phase):
+    """Save the current phase to dispatcher state for future gate checks."""
+    try:
+        dp = os.path.join(I18N_DIR, "status", "translation_dispatch_state.json")
+        ds = {}
+        if os.path.exists(dp):
+            with open(dp, "r", encoding="utf-8") as f:
+                ds = json.load(f)
+        ds["last_phase"] = str(phase or "").upper()
+        ds["last_phase_ts"] = datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
+        tmp = dp + ".tmp"
+        with open(tmp, "w", encoding="utf-8") as f:
+            json.dump(ds, f, indent=2, ensure_ascii=False)
+        os.replace(tmp, dp)
+    except Exception:
+        pass
+
+from datetime import datetime
+
 # ============ GŁÓWNA LOGIKA DISPATCHERA ============
 
 # 0. Sprawdź komendy sterowania
@@ -9410,6 +15979,8 @@ if cmd:
         
         # FORCE:translation - wymuś przejście do synchronizacji tłumaczeń
         if forced_cat == "translation":
+            _log_transition(_load_last_phase() or "?", "TRANSLATION_SYNC", "forced", f"FORCE:{forced_cat}")
+            _commit_phase("TRANSLATION_SYNC")
             # Znajdź pierwszy język/kategorię do synchronizacji
             json_files = list(set([c["json"] for c in CATEGORIES.values()]))
             json_files.sort()
@@ -9477,6 +16048,7 @@ for cat_name, config in sorted_cats:
     if needs_work > 0:
         cat_state["migrations_done"] = False
         write_category_state(cat_state)
+        _commit_phase("MIGRATION")
         print(f"MIGRATION:{cat_name}:{needs_work}")
         exit(0)
 
@@ -9485,6 +16057,7 @@ if pending_skip:
     cat_state["migrations_done"] = False
     write_category_state(cat_state)
     if skip_has_work or total_needs > 0:
+        _commit_phase("MIGRATION")
         print(f"MIGRATION:pending_skip:{total_needs}:WAIT")
         exit(0)
     # jeśli nie ma realnej pracy, pozwól przejść dalej
@@ -9492,6 +16065,7 @@ if pending_skip:
 # Jeśli tu doszliśmy: brak pracy migracyjnej → uznaj migracje za zakończone
 cat_state["migrations_done"] = True
 write_category_state(cat_state)
+_log_transition("MIGRATION", "post-migration", "pass", "all categories done")
 
 # 1.5) COMPACT_KEYS (po zakończeniu migracji): sync keymap + export compact locales
 def count_en_keys_total():
@@ -9538,6 +16112,12 @@ km_total = count_keymap_total()
 missing_langs = compact_locales_missing()
 
 if km_total < en_total or missing_langs:
+    allowed, gate_reason = transition_gate("COMPACT_KEYS", cat_state)
+    if not allowed:
+        # Gate blocked — fall back to MIGRATION
+        print(f"MIGRATION:gate_blocked:0:{gate_reason}")
+        exit(0)
+    _commit_phase("COMPACT_KEYS")
     reason = []
     if km_total < en_total:
         reason.append(f"keymap_missing={en_total - km_total}")
@@ -9551,24 +16131,6 @@ if km_total < en_total or missing_langs:
 if not cat_state.get("migrations_done", False):
     print("MIGRATION:pending:0:WAIT")
     exit(0)
-# Kolejność języków: Europa → Rosja/Azja Śr. → Bliski Wschód → Azja → Inne
-TARGET_LANGUAGES = [
-    # Europa Zachodnia & Środkowa
-    "de", "pl", "es", "pt", "fr", "it", "nl", "cs", "sk", "hu",
-    # Europa Północna
-    "sv", "da", "no", "fi", "et", "lv", "lt",
-    # Europa Południowa & Wschodnia
-    "ro", "bg", "el", "hr", "sl", "bs", "sr", "mk", "sq",
-    # Rosja & Azja Środkowa
-    "ru", "uk", "kk", "uz", "az", "hy", "ka",
-    # Bliski Wschód
-    "tr", "ar", "he", "fa",
-    # Azja
-    "zh", "zh_TW", "ja", "ko", "hi", "th", "vi", "id", "ms", "tl",
-    # Inne
-    "bn", "ta", "te", "ml", "sw"
-]
-
 # Funkcja synchronizacji kluczy EN → LANG
 def get_sync_state():
     """Pobierz stan synchronizacji z category_state"""
@@ -9621,6 +16183,12 @@ for lang in TARGET_LANGUAGES:
     for json_file in json_files:
         missing = count_missing_keys(lang, json_file)
         if missing > 0:
+            # Hard gate check before TRANSLATION_SYNC
+            allowed, gate_reason = transition_gate("TRANSLATION_SYNC", cat_state)
+            if not allowed:
+                print(f"MIGRATION:gate_blocked:0:{gate_reason}")
+                exit(0)
+            _commit_phase("TRANSLATION_SYNC")
             # Znaleziono język/kategorię do synchronizacji
             print(f"TRANSLATION_SYNC:{lang}:{json_file}:{missing}")
             exit(0)
@@ -9636,11 +16204,1669 @@ for lang in TARGET_LANGUAGES:
         break
 
 if all_synced:
+    _commit_phase("IDLE")
+    _log_transition("TRANSLATION_SYNC", "IDLE", "pass", "all_synced")
     print("IDLE:all_synced:0")
 else:
     # Coś poszło nie tak - powtórz od początku
     print(f"TRANSLATION_SYNC:{TARGET_LANGUAGES[0]}:{json_files[0]}:retry")
 DISPATCHERPY
+}
+
+select_translation_sync_target() {
+    export TARGET_LANGS
+    export LANG_PRIORITY
+    python3 << 'SYNCSELECTPY'
+import json
+import os
+import re
+
+I18N_DIR = "i18n"
+
+def split_langs(raw):
+    if not raw:
+        return []
+    parts = re.split(r"[\s,;]+", raw.strip())
+    out = []
+    seen = set()
+    for p in parts:
+        if not p:
+            continue
+        lang = p.strip()
+        if lang.lower() == "en":
+            continue
+        if lang not in seen:
+            out.append(lang)
+            seen.add(lang)
+    return out
+
+def list_language_dirs(i18n_dir):
+    langs = []
+    seen = set()
+    if not os.path.isdir(i18n_dir):
+        return langs
+    for name in sorted(os.listdir(i18n_dir)):
+        p = os.path.join(i18n_dir, name)
+        if not os.path.isdir(p):
+            continue
+        if name == "en":
+            continue
+        if re.fullmatch(r"[a-z]{2}(?:_[A-Z]{2})?", name):
+            if name not in seen:
+                langs.append(name)
+                seen.add(name)
+    return langs
+
+def count_missing_keys(lang, json_file):
+    en_path = os.path.join(I18N_DIR, "en", json_file)
+    lang_path = os.path.join(I18N_DIR, lang, json_file)
+    if not os.path.exists(en_path):
+        return 0
+    try:
+        with open(en_path, encoding="utf-8") as f:
+            en_data = json.load(f)
+        if not os.path.exists(lang_path):
+            return len(en_data)
+        with open(lang_path, encoding="utf-8") as f:
+            lang_data = json.load(f)
+        return sum(1 for key in en_data if key not in lang_data)
+    except Exception:
+        return 0
+
+priority = split_langs(os.environ.get("LANG_PRIORITY", ""))
+targets = split_langs(os.environ.get("TARGET_LANGS", ""))
+if not targets:
+    langs_from_dirs = list_language_dirs(I18N_DIR)
+    if langs_from_dirs:
+        ranked = [l for l in priority if l in langs_from_dirs]
+        ranked += [l for l in langs_from_dirs if l not in ranked]
+        targets = ranked
+
+if not targets:
+    targets = ["pl"]
+
+en_dir = os.path.join(I18N_DIR, "en")
+json_files = []
+if os.path.isdir(en_dir):
+    json_files = sorted([f for f in os.listdir(en_dir) if f.endswith(".json")])
+if not json_files:
+    json_files = ["npc.json"]
+
+en_data_by_file = {}
+for json_file in json_files:
+    en_path = os.path.join(I18N_DIR, "en", json_file)
+    if not os.path.exists(en_path):
+        continue
+    try:
+        with open(en_path, encoding="utf-8") as f:
+            data = json.load(f)
+        if isinstance(data, dict):
+            en_data_by_file[json_file] = data
+    except Exception:
+        continue
+
+for lang in targets:
+    for json_file in json_files:
+        en_data = en_data_by_file.get(json_file)
+        if not isinstance(en_data, dict):
+            continue
+        lang_path = os.path.join(I18N_DIR, lang, json_file)
+        if not os.path.exists(lang_path):
+            missing = len(en_data)
+        else:
+            try:
+                with open(lang_path, encoding="utf-8") as f:
+                    lang_data = json.load(f)
+                missing = sum(1 for key in en_data if key not in lang_data)
+            except Exception:
+                missing = 0
+        if missing > 0:
+            print(f"{lang}:{json_file}:{missing}")
+            raise SystemExit(0)
+
+print(f"{targets[0]}:{json_files[0]}:0")
+SYNCSELECTPY
+}
+
+select_auto_translate_target_strict() {
+    export TARGET_LANGS
+    export LANG_PRIORITY
+    export BOOTSTRAP_PRIORITY_LANGS
+    export STATUS_DIR
+    export CURRENT_CYCLE
+    export STRICT_SELECTOR_CACHE_TTL_CYCLES
+    export TIER1_LANGS TIER2_LANGS TIER1_WEIGHT TIER2_WEIGHT TIER3_WEIGHT
+    export CATEGORY_TRANSLATE_PRIORITY
+    python3 << 'AUTOSTRICTPY'
+import json
+import os
+import re
+from datetime import datetime, timezone
+
+I18N_DIR = "i18n"
+status_dir = os.environ.get("STATUS_DIR", "i18n/status")
+dispatch_state_path = os.path.join(status_dir, "translation_dispatch_state.json")
+guard_latest_path = os.path.join(status_dir, "translation_guard_latest.json")
+selector_cache_path = os.path.join(status_dir, "translation_strict_candidates_cache.json")
+
+def _to_int(value, default=0):
+    try:
+        return int(value)
+    except Exception:
+        return default
+
+current_cycle = _to_int(os.environ.get("CURRENT_CYCLE", "0"), 0)
+cache_ttl_cycles = max(1, _to_int(os.environ.get("STRICT_SELECTOR_CACHE_TTL_CYCLES", "5"), 5))
+
+def split_langs(raw):
+    if not raw:
+        return []
+    parts = re.split(r"[\s,;]+", raw.strip())
+    out = []
+    seen = set()
+    for p in parts:
+        if not p:
+            continue
+        lang = p.strip()
+        if lang.lower() == "en":
+            continue
+        if lang not in seen:
+            out.append(lang)
+            seen.add(lang)
+    return out
+
+def list_language_dirs(i18n_dir):
+    langs = []
+    if not os.path.isdir(i18n_dir):
+        return langs
+    for name in sorted(os.listdir(i18n_dir)):
+        p = os.path.join(i18n_dir, name)
+        if not os.path.isdir(p) or name == "en":
+            continue
+        if re.fullmatch(r"[a-z]{2}(?:_[A-Z]{2})?", name):
+            langs.append(name)
+    return langs
+
+def _is_likely_proper_noun(key, en_value):
+    """Heurystyka: klucz, którego wartość EN jest prawdopodobnie nazwą własną
+    i identyczne tłumaczenie jest poprawne (nie wymaga tłumaczenia)."""
+    # Nazwy przedmiotów, potworów, zaklęć, questów — często nie tłumaczymy
+    proper_noun_prefixes = (
+        "item.", "monster.", "spell.", "mount.", "quest.", "raid.",
+        "achievement.", "npc.", "book.otbm."
+    )
+    proper_noun_suffixes = (".name", ".words", ".title", ".desc", ".announce")
+
+    if any(key.startswith(p) for p in proper_noun_prefixes):
+        if any(key.endswith(s) for s in proper_noun_suffixes):
+            return True
+        # Short text (1-4 words) starting with uppercase = likely a proper name
+        words = en_value.strip().split()
+        if words and len(words) <= 4 and words[0][0:1].isupper():
+            return True
+
+    # Krótkie wartości (<=3 znaki) typu "No", "Mana" — prawdopodobnie nazwy/komendy
+    if len(en_value.strip()) <= 3:
+        return True
+
+    # Wartość jest tylko wielką literą/cyframi/znakami specjalnymi (skrót, kod)
+    stripped = en_value.strip()
+    if stripped and all(c.isupper() or c.isdigit() or c in ".-_/ " for c in stripped):
+        return True
+
+    # === Game-specific nontranslatable: fictional languages, animal sounds ===
+    _animal_patterns = ('GRRR', 'YOOO', 'ZZZZ', 'ROAR', 'HISS', 'SNARL', 'RAWR',
+                        'HOWL', 'GROWL', 'SCREE', 'CLANK', 'BOOM')
+    if any(p in stripped.upper() for p in _animal_patterns):
+        return True
+    _fictional_words = re.compile(
+        r'\b(?:gort|utash|karek|booz|omark|ikem|goshak|torilu[nm]?|garnum|'
+        r'saethelon|zathroth|uthun|nortat|urghh?|brakka|morda|chakka|'
+        r'batuk|goshak|charach|galunda|mugrah|gorak|shakk|uurgh|'
+        r'tanjil|lanar|kull|ogar|azarak)\b', re.IGNORECASE
+    )
+    if _fictional_words.search(stripped):
+        return True
+    # Nonsensowne sylaby (fikcyjny język) — >=3 "słowa" ≤6 liter, brak angielskich
+    words_re = re.findall(r'[A-Za-z]+', stripped)
+    if len(words_re) >= 3:
+        _common_en = {
+            'a','i','an','am','as','at','be','by','do','go','he','if','in','is','it','me','my','no',
+            'of','on','or','so','to','up','us','we','the','and','are','but','can','did','for','get',
+            'got','had','has','her','him','his','how','its','let','may','new','nor','not','now','old',
+            'one','our','out','own','put','ran','run','saw','say','set','she','sit','too','try',
+            'two','use','was','way','who','why','win','won','yes','yet','you','all','any','ask','bad',
+            'big','bit','boy','buy','cut','day','eat','end','far','few','fly','fun','god','hat','hit',
+            'hot','job','key','lay','led','lie','lot','low','man','map','men','met','mix','off',
+            'oil','pay','per','red','rid','sad','six','son','ten','top','war','wet',
+            'able','also','back','been','best','body','both','call','came','case','come','could','each',
+            'even','fact','feel','find','first','from','gave','give','goes','gone','good','great',
+            'hand','have','head','help','here','high','home','hope','into','just','keep','kind','knew',
+            'know','last','left','life','like','line','live','long','look','lost','made','make','many',
+            'mind','more','most','much','must','name','need','next','only','open','over','part','plan',
+            'play','real','rest','room','said','same','seem','show','side','some','soon','stop','such',
+            'sure','take','talk','tell','than','that','them','then','they','this','time','told','took',
+            'turn','upon','very','walk','want','well','went','were','what','when','will','with','word',
+            'work','year','your','about','after','again','being','below','bring','carry','cause',
+            'close','doing','don','every','found','going','house','human','large','later','leave',
+            'light','might','money','never','night','often','order','other','place','point','right',
+            'shall','should','since','small','sorry','start','still','story','study','thank','their',
+            'there','these','thing','think','those','three','today','under','until','watch','water',
+            'where','which','while','world','would','write','young','really','little','around',
+            'before','always','people','already',
+        }
+        en_count = sum(1 for w in words_re if w.lower() in _common_en)
+        if en_count == 0 and all(len(w) <= 6 for w in words_re):
+            return True
+    # Onomatopeja: powtórzenie wzorca 3+ razy
+    if re.match(r'^([A-Za-z]{2,8})[,.\s]+\1(?:[,.\s]+\1)*[.!?]*$', stripped, re.IGNORECASE):
+        return True
+
+    return False
+
+def is_untranslated(value, en_value, key=""):
+    if value is None:
+        return True
+    text = str(value)
+    if text.startswith("["):
+        return True
+    if text.strip() == "":
+        return True
+    if text == en_value:
+        # Jeśli to prawdopodobnie nazwa własna, NIE traktuj jako nieprzetłumaczone
+        if _is_likely_proper_noun(key, en_value):
+            return False
+        return True
+    return False
+
+def pending_for_translation(value, en_value, key=""):
+    text = "" if value is None else str(value)
+    if text == en_value:
+        if _is_likely_proper_noun(key, en_value):
+            return False
+        return True
+    return is_untranslated(value, en_value, key)
+
+def is_simple_text(text):
+    txt = str(text or "")
+    if not txt.strip():
+        return False
+    if re.search(r"\{[^}]*\}|\|[^|]+\||'[^']+'", txt):
+        return False
+    if len(txt) > 80:
+        return False
+    words = re.findall(r"[A-Za-zÀ-ÿ]+", txt)
+    if len(words) == 0 or len(words) > 6:
+        return False
+    if re.search(r"[\\/<>`$]", txt):
+        return False
+    return True
+
+priority = split_langs(os.environ.get("LANG_PRIORITY", ""))
+raw_targets = split_langs(os.environ.get("TARGET_LANGS", ""))
+targets = list(raw_targets)
+explicit_target_langs = bool(raw_targets)
+if not targets:
+    langs_from_dirs = list_language_dirs(I18N_DIR)
+    ranked = [l for l in priority if l in langs_from_dirs]
+    ranked += [l for l in langs_from_dirs if l not in ranked]
+    targets = ranked
+if not targets:
+    targets = ["pl"]
+
+en_dir = os.path.join(I18N_DIR, "en")
+json_files = sorted([f for f in os.listdir(en_dir) if f.endswith(".json")]) if os.path.isdir(en_dir) else []
+if not json_files:
+    print("IDLE:translation_only_no_source:0:missing_en_json")
+    raise SystemExit(0)
+
+en_data_by_file = {}
+for json_file in json_files:
+    en_path = os.path.join(I18N_DIR, "en", json_file)
+    if not os.path.exists(en_path):
+        continue
+    try:
+        with open(en_path, encoding="utf-8") as f:
+            data = json.load(f)
+        if isinstance(data, dict):
+            en_data_by_file[json_file] = data
+    except Exception:
+        continue
+
+missing_lang_files_count = 0
+missing_lang_file_examples = []
+missing_keys_total = 0
+candidates = []
+
+def load_selector_cache(expected_targets, expected_json_files):
+    if not os.path.exists(selector_cache_path):
+        return None
+    try:
+        with open(selector_cache_path, "r", encoding="utf-8") as f:
+            payload = json.load(f)
+    except Exception:
+        return None
+
+    if payload.get("targets") != expected_targets:
+        return None
+    if payload.get("json_files") != expected_json_files:
+        return None
+
+    built_cycle = _to_int(payload.get("built_cycle", 0), 0)
+    if current_cycle > 0 and built_cycle > 0 and (current_cycle - built_cycle) > cache_ttl_cycles:
+        return None
+
+    cached_candidates = payload.get("candidates", [])
+    if not isinstance(cached_candidates, list):
+        return None
+    return payload
+
+cache_payload = load_selector_cache(targets, json_files)
+cache_hit = cache_payload is not None
+
+if cache_hit:
+    candidates = cache_payload.get("candidates", [])
+    missing_lang_files_count = _to_int(cache_payload.get("missing_lang_files_count", 0), 0)
+    cached_examples = cache_payload.get("missing_lang_file_examples", [])
+    if isinstance(cached_examples, list):
+        missing_lang_file_examples = [str(x) for x in cached_examples[:50]]
+    missing_keys_total = _to_int(cache_payload.get("missing_keys_total", 0), 0)
+else:
+    for lang in targets:
+        for json_file in json_files:
+            lang_path = os.path.join(I18N_DIR, lang, json_file)
+            en_data = en_data_by_file.get(json_file)
+            if not isinstance(en_data, dict):
+                continue
+
+            if not os.path.exists(lang_path):
+                missing_lang_files_count += 1
+                if len(missing_lang_file_examples) < 50:
+                    missing_lang_file_examples.append(f"{lang}/{json_file}")
+                continue
+
+            try:
+                with open(lang_path, encoding="utf-8") as f:
+                    lang_data = json.load(f)
+            except Exception:
+                continue
+
+            missing_in_lang = sum(1 for key in en_data if key not in lang_data)
+            missing_keys_total += missing_in_lang
+
+            todo = 0
+            simple_todo = 0
+            for key, en_value in en_data.items():
+                if key not in lang_data:
+                    continue
+                if pending_for_translation(lang_data.get(key), en_value, key):
+                    todo += 1
+                    if is_simple_text(en_value):
+                        simple_todo += 1
+
+            pending_total = todo + missing_in_lang
+            if pending_total > 0:
+                candidates.append({
+                    "lang": lang,
+                    "json_file": json_file,
+                    "pending_total": int(pending_total),
+                    "todo": int(todo),
+                    "simple_todo": int(simple_todo),
+                    "missing_in_lang": int(missing_in_lang),
+                })
+
+    try:
+        os.makedirs(status_dir, exist_ok=True)
+        cache_out = {
+            "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+            "built_cycle": int(current_cycle),
+            "cache_ttl_cycles": int(cache_ttl_cycles),
+            "targets": targets,
+            "json_files": json_files,
+            "missing_lang_files_count": int(missing_lang_files_count),
+            "missing_lang_file_examples": missing_lang_file_examples[:50],
+            "missing_keys_total": int(missing_keys_total),
+            "candidates": candidates,
+        }
+        with open(selector_cache_path, "w", encoding="utf-8") as f:
+            json.dump(cache_out, f, indent=2, ensure_ascii=False)
+    except Exception:
+        pass
+
+if candidates:
+    os.makedirs(status_dir, exist_ok=True)
+
+    # === Sekcja 5: TIER-AWARE SCHEDULING ===
+    # Tier config from environment
+    TIER1_LANGS = set(split_langs(os.environ.get("TIER1_LANGS", "pl es")))
+    TIER2_LANGS = set(split_langs(os.environ.get("TIER2_LANGS", "de pt ru tr fr it")))
+    TIER1_WEIGHT = max(1, _to_int(os.environ.get("TIER1_WEIGHT", "4"), 4))
+    TIER2_WEIGHT = max(1, _to_int(os.environ.get("TIER2_WEIGHT", "2"), 2))
+    TIER3_WEIGHT = 1
+
+    # Category translation priority (lower index = higher priority)
+    CATEGORY_PRIO_RAW = os.environ.get("CATEGORY_TRANSLATE_PRIORITY",
+        "items.json npc.json monsters.json server.json spells.json quests.json scripts.json actions.json raids.json")
+    CATEGORY_PRIO_LIST = [c.strip() for c in CATEGORY_PRIO_RAW.split() if c.strip()]
+    CATEGORY_PRIO_MAP = {cat: idx for idx, cat in enumerate(CATEGORY_PRIO_LIST)}
+    DEFAULT_CAT_PRIO = len(CATEGORY_PRIO_LIST)  # categories not in list get lowest priority
+
+    def get_tier(lang):
+        if lang in TIER1_LANGS:
+            return 1
+        if lang in TIER2_LANGS:
+            return 2
+        return 3
+
+    def get_tier_weight(lang):
+        t = get_tier(lang)
+        if t == 1:
+            return TIER1_WEIGHT
+        if t == 2:
+            return TIER2_WEIGHT
+        return TIER3_WEIGHT
+
+    def get_cat_priority(json_file):
+        return CATEGORY_PRIO_MAP.get(json_file, DEFAULT_CAT_PRIO)
+
+    # Interleave: group by language, sort within language by category priority
+    per_lang = {}
+    for cand in candidates:
+        per_lang.setdefault(cand.get("lang"), []).append(cand)
+
+    for lang in list(per_lang.keys()):
+        per_lang[lang].sort(
+            key=lambda c: (
+                get_cat_priority(c.get("json_file", "")),
+                -int(c.get("simple_todo", 0) or 0),
+                -int(c.get("pending_total", 0) or 0),
+                str(c.get("json_file", "")),
+            )
+        )
+
+    # Tier-weighted interleaving: In each super-round:
+    #   - Tier 1 advances TIER1_WEIGHT files per language
+    #   - Tier 2 advances TIER2_WEIGHT files per language
+    #   - Tier 3 advances 1 file per language
+    # This ensures high-priority languages cover more categories per cycle window.
+    tier1_langs = [l for l in targets if l in TIER1_LANGS]
+    tier2_langs = [l for l in targets if l in TIER2_LANGS]
+    tier3_langs = [l for l in targets if l not in TIER1_LANGS and l not in TIER2_LANGS]
+
+    ordered_candidates = []
+    t1_idx = 0
+    t2_idx = 0
+    t3_idx = 0
+    max_bucket = max((len(per_lang.get(l, [])) for l in per_lang), default=0)
+
+    while t1_idx < max_bucket or t2_idx < max_bucket or t3_idx < max_bucket:
+        added_any = False
+
+        # Tier 1: advance TIER1_WEIGHT steps
+        for _ in range(TIER1_WEIGHT):
+            if t1_idx >= max_bucket:
+                break
+            for lang in tier1_langs:
+                bucket = per_lang.get(lang, [])
+                if t1_idx < len(bucket):
+                    ordered_candidates.append(bucket[t1_idx])
+                    added_any = True
+            t1_idx += 1
+
+        # Tier 2: advance TIER2_WEIGHT steps
+        for _ in range(TIER2_WEIGHT):
+            if t2_idx >= max_bucket:
+                break
+            for lang in tier2_langs:
+                bucket = per_lang.get(lang, [])
+                if t2_idx < len(bucket):
+                    ordered_candidates.append(bucket[t2_idx])
+                    added_any = True
+            t2_idx += 1
+
+        # Tier 3: advance 1 step
+        if t3_idx < max_bucket:
+            for lang in tier3_langs:
+                bucket = per_lang.get(lang, [])
+                if t3_idx < len(bucket):
+                    ordered_candidates.append(bucket[t3_idx])
+                    added_any = True
+            t3_idx += 1
+
+        if not added_any:
+            break
+
+    if ordered_candidates:
+        candidates = ordered_candidates
+
+    state = {}
+    try:
+        if os.path.exists(dispatch_state_path):
+            with open(dispatch_state_path, "r", encoding="utf-8") as f:
+                state = json.load(f)
+    except Exception:
+        state = {}
+
+    last_key = str(state.get("last_target_key", "") or "")
+    ordered_keys = [f"{c['lang']}:{c['json_file']}" for c in candidates]
+
+    # Anti-loop z backoff: śledź ile razy z rzędu kandydat miał zero postępu.
+    # Pomijaj kandydatów z >= MAX_NO_PROGRESS_VISITS wizytami bez postępu.
+    MAX_NO_PROGRESS_VISITS = 3
+    no_progress_map = state.get("no_progress_counts", {})
+
+    # Odczytaj ostatni guard report aby zaktualizować no_progress_counts
+    try:
+        if os.path.exists(guard_latest_path):
+            with open(guard_latest_path, "r", encoding="utf-8") as f:
+                g = json.load(f)
+            guard_key = f"{g.get('language', '')}:{g.get('json_file', '')}"
+            guard_translated = int(g.get("translated", 0) or 0)
+            if guard_key == last_key:
+                if guard_translated == 0:
+                    no_progress_map[guard_key] = no_progress_map.get(guard_key, 0) + 1
+                else:
+                    no_progress_map[guard_key] = 0  # reset po postępie
+    except Exception:
+        pass
+
+    # --- Faza 3: guard_fail_rate blacklist z retry policy per reason ---
+    # Odczytaj ostatnie N wpisów guard_report i oblicz guard_fail_rate per target.
+    # Targets z >80% guard_fail rate w ostatnich 5 cyklach -> backoff.
+    # Różne cooldowny per reason:
+    #   placeholder/pipe → 15 cykli (krytyczne token errors, wymagają poprawy kodu)
+    #   command → 5 cykli (zwykle false positive, krótszy cooldown)
+    #   quality/shape → 8 cykli (umiarkowane, średni cooldown)
+    #   provider_error → 3 cykle (tymczasowe, szybki retry)
+    GUARD_FAIL_THRESHOLD = 0.80
+    GUARD_FAIL_WINDOW = 5
+    RETRY_COOLDOWN_PER_REASON = {
+        "placeholder": 15,
+        "pipe": 15,
+        "command": 5,
+        "quality": 8,
+        "shape": 8,
+        "provider_error": 3,
+        "default": 10,
+    }
+    guard_fail_blacklist = state.get("guard_fail_blacklist", {})
+    current_cycle_num = state.get("cycle_counter", 0) + 1
+    state["cycle_counter"] = current_cycle_num
+
+    try:
+        guard_report_path = os.path.join(status_dir, "translation_guard_report.jsonl")
+        if os.path.exists(guard_report_path):
+            import collections
+            target_stats = collections.defaultdict(lambda: {"translated": 0, "guard_fail": 0, "entries": 0, "reasons": collections.Counter()})
+            # Odczytaj ostatnie 200 linii (wystarczy dla okna)
+            with open(guard_report_path, "r", encoding="utf-8") as f:
+                lines = f.readlines()
+            for line in lines[-200:]:
+                try:
+                    entry = json.loads(line.strip())
+                    tkey = f"{entry.get('language', '')}:{entry.get('json_file', '')}"
+                    target_stats[tkey]["translated"] += int(entry.get("translated", 0) or 0)
+                    gf_count = int(entry.get("guard_fail", 0) or 0)
+                    target_stats[tkey]["guard_fail"] += gf_count
+                    target_stats[tkey]["entries"] += 1
+                    # Zbierz powody guard_fail
+                    if gf_count > 0:
+                        guard_detail = entry.get("guard", {})
+                        for reason_key in ("placeholder", "command", "pipe"):
+                            rc = int(guard_detail.get(reason_key, 0) or 0)
+                            if rc > 0:
+                                target_stats[tkey]["reasons"][reason_key] += rc
+                except Exception:
+                    continue
+
+            # Zaktualizuj blacklist: jeśli target ma >THRESHOLD guard_fail rate w oknie
+            # Cooldown zależy od dominującego powodu guard_fail
+            for tkey, stats in target_stats.items():
+                total_attempts = stats["translated"] + stats["guard_fail"]
+                if stats["entries"] >= GUARD_FAIL_WINDOW and total_attempts > 0:
+                    gf_rate = stats["guard_fail"] / total_attempts
+                    if gf_rate >= GUARD_FAIL_THRESHOLD:
+                        if tkey not in guard_fail_blacklist or guard_fail_blacklist[tkey] <= current_cycle_num:
+                            # Wybierz cooldown na podstawie dominującej przyczyny
+                            dominant_reason = "default"
+                            if stats["reasons"]:
+                                dominant_reason = stats["reasons"].most_common(1)[0][0]
+                            cooldown_cycles = RETRY_COOLDOWN_PER_REASON.get(dominant_reason, RETRY_COOLDOWN_PER_REASON["default"])
+                            guard_fail_blacklist[tkey] = current_cycle_num + cooldown_cycles
+    except Exception:
+        pass
+
+    state["guard_fail_blacklist"] = guard_fail_blacklist
+
+    # Przefiltruj kandydatów: pomiń tych z backoff LUB guard_fail blacklist
+    active_candidates = []
+    skipped_backoff = 0
+    skipped_guard_fail = 0
+    for i, c in enumerate(candidates):
+        ckey = f"{c['lang']}:{c['json_file']}"
+        visits = no_progress_map.get(ckey, 0)
+        if visits >= MAX_NO_PROGRESS_VISITS:
+            skipped_backoff += 1
+        elif ckey in guard_fail_blacklist and guard_fail_blacklist[ckey] > current_cycle_num:
+            skipped_guard_fail += 1
+        else:
+            active_candidates.append((i, c))
+
+    # Jeśli WSZYSCY kandydaci są na backoff, zresetuj liczniki i zwróć IDLE-blocked
+    if not active_candidates:
+        reason = f"all_candidates_backoff total={len(candidates)} skipped_noprogress={skipped_backoff} skipped_guard_fail={skipped_guard_fail}"
+        # Reset liczników co pełny cykl, aby spróbować ponownie za następnym razem
+        no_progress_map = {}
+        state["no_progress_counts"] = no_progress_map
+        try:
+            with open(dispatch_state_path, "w", encoding="utf-8") as f:
+                json.dump(state, f, indent=2, ensure_ascii=False)
+        except Exception:
+            pass
+        print(f"IDLE:translation_only_blocked:0:{reason}")
+        raise SystemExit(0)
+
+    # Round-robin wśród aktywnych kandydatów
+    active_keys = [f"{c['lang']}:{c['json_file']}" for _, c in active_candidates]
+
+    # ── Bootstrap kolejności (general mode): es -> pl -> reszta ───────────
+    bootstrap_priority = [l for l in split_langs(os.environ.get("BOOTSTRAP_PRIORITY_LANGS", "es pl")) if l in targets]
+    bootstrap_enabled = bool(bootstrap_priority) and not explicit_target_langs
+    bootstrap_forced = False
+    bootstrap_forced_lang = ""
+    bootstrap_completed = []
+    bootstrap_skipped_no_pending = []
+    try:
+        bootstrap_state = state.get("bootstrap_priority", {})
+        if isinstance(bootstrap_state, dict):
+            prev_completed = bootstrap_state.get("completed", [])
+            if isinstance(prev_completed, list):
+                bootstrap_completed = [str(x) for x in prev_completed if str(x) in bootstrap_priority]
+        if bootstrap_enabled:
+            pending_bootstrap = [l for l in bootstrap_priority if l not in bootstrap_completed]
+            for b_lang in pending_bootstrap:
+                lang_candidates = [(oi, bc) for oi, bc in active_candidates if bc.get("lang") == b_lang]
+                if lang_candidates:
+                    rest = [(oi, bc) for oi, bc in active_candidates if bc.get("lang") != b_lang]
+                    active_candidates = lang_candidates + rest
+                    active_keys = [f"{c2['lang']}:{c2['json_file']}" for _, c2 in active_candidates]
+                    bootstrap_forced = True
+                    bootstrap_forced_lang = b_lang
+                    bootstrap_completed.append(b_lang)
+                    break
+                bootstrap_completed.append(b_lang)
+                bootstrap_skipped_no_pending.append(b_lang)
+    except Exception:
+        pass
+
+    # ── Twardy balans PL/ES (Section 12.4) ──────────────────────────────
+    # Jeśli profil to pl,es: wymuszaj min. 35% udziału ES (i min. 35% PL).
+    # Sprawdzamy ostatnie 20 wpisów guard_report — jeśli ES < 35%, wymuszaj ES.
+    MIN_BALANCE_SHARE = 0.35
+    BALANCE_WINDOW = 20
+    balance_forced = False
+    try:
+        tier1_active_langs = set()
+        for _, c in active_candidates:
+            if c["lang"] in TIER1_LANGS:
+                tier1_active_langs.add(c["lang"])
+        if (not bootstrap_forced) and len(tier1_active_langs) >= 2 and "pl" in tier1_active_langs and "es" in tier1_active_langs:
+            guard_report_path_bal = os.path.join(status_dir, "translation_guard_report.jsonl")
+            if os.path.exists(guard_report_path_bal):
+                recent_langs = []
+                with open(guard_report_path_bal, "r", encoding="utf-8") as f:
+                    bal_lines = f.readlines()
+                for bline in bal_lines[-BALANCE_WINDOW:]:
+                    try:
+                        be = json.loads(bline.strip())
+                        bl = be.get("language", "")
+                        if bl in ("pl", "es"):
+                            recent_langs.append(bl)
+                    except Exception:
+                        continue
+                if len(recent_langs) >= BALANCE_WINDOW // 2:
+                    pl_share = recent_langs.count("pl") / len(recent_langs)
+                    es_share = recent_langs.count("es") / len(recent_langs)
+                    # Wymuszaj język z mniejszym udziałem jeśli < MIN_BALANCE_SHARE
+                    starved_lang = None
+                    if es_share < MIN_BALANCE_SHARE:
+                        starved_lang = "es"
+                    elif pl_share < MIN_BALANCE_SHARE:
+                        starved_lang = "pl"
+                    if starved_lang:
+                        # Przesuń pierwszego kandydata ze starved_lang na początek
+                        for bi, (oi, bc) in enumerate(active_candidates):
+                            if bc["lang"] == starved_lang:
+                                # Jeśli round-robin wybrałby inny język, wymuś starved
+                                starved_candidates = [(oi2, bc2) for oi2, bc2 in active_candidates if bc2["lang"] == starved_lang]
+                                if starved_candidates:
+                                    balance_forced = True
+                                    # Docelowo: wstawiamy starved kandydatów na początek
+                                    rest = [(oi2, bc2) for oi2, bc2 in active_candidates if bc2["lang"] != starved_lang]
+                                    active_candidates = starved_candidates + rest
+                                    active_keys = [f"{c2['lang']}:{c2['json_file']}" for _, c2 in active_candidates]
+                                break
+    except Exception:
+        pass
+
+    selected_idx = 0
+    if last_key in active_keys:
+        selected_idx = (active_keys.index(last_key) + 1) % len(active_candidates)
+
+    _, selected = active_candidates[selected_idx]
+
+    state_payload = {
+        "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+        "cycle_counter": int(current_cycle_num),
+        "last_target_key": f"{selected['lang']}:{selected['json_file']}",
+        "last_pending_total": int(selected.get("pending_total", 0) or 0),
+        "last_tier": get_tier(selected['lang']),
+        "last_cat_priority": get_cat_priority(selected['json_file']),
+        "candidates_count": len(candidates),
+        "active_candidates_count": len(active_candidates),
+        "skipped_backoff": skipped_backoff,
+        "skipped_guard_fail": skipped_guard_fail,
+        "guard_fail_blacklist": {k: v for k, v in guard_fail_blacklist.items() if v > current_cycle_num},
+        "tier_config": {"tier1": sorted(TIER1_LANGS), "tier2": sorted(TIER2_LANGS),
+                        "w1": TIER1_WEIGHT, "w2": TIER2_WEIGHT, "w3": TIER3_WEIGHT},
+        "cache_hit": bool(cache_hit),
+        "cache_ttl_cycles": int(cache_ttl_cycles),
+        "cache_cycle": int(current_cycle),
+        "no_progress_counts": no_progress_map,
+        "bootstrap_priority": {
+            "enabled": bool(bootstrap_enabled),
+            "sequence": bootstrap_priority,
+            "completed": bootstrap_completed,
+            "skipped_no_pending": bootstrap_skipped_no_pending,
+            "forced_lang": bootstrap_forced_lang,
+        },
+        "bootstrap_forced": bool(bootstrap_forced),
+        "bootstrap_forced_lang": bootstrap_forced_lang,
+        "balance_forced": bool(balance_forced),
+    }
+    try:
+        with open(dispatch_state_path, "w", encoding="utf-8") as f:
+            json.dump(state_payload, f, indent=2, ensure_ascii=False)
+    except Exception:
+        pass
+
+    print(f"AUTO_TRANSLATE:{selected['lang']}:{selected['json_file']}:{selected['pending_total']}:STRICT")
+    raise SystemExit(0)
+
+os.makedirs(status_dir, exist_ok=True)
+entry = {
+    "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+    "mode": "translations_only_strict",
+    "missing_lang_files": int(missing_lang_files_count),
+    "missing_lang_file_examples": missing_lang_file_examples[:20],
+    "missing_keys_total": int(missing_keys_total),
+    "targets": targets,
+    "json_files": len(json_files),
+    "cache_hit": bool(cache_hit),
+    "cache_ttl_cycles": int(cache_ttl_cycles),
+    "cache_cycle": int(current_cycle),
+}
+with open(os.path.join(status_dir, "translation_blockers_latest.json"), "w", encoding="utf-8") as f:
+    json.dump(entry, f, indent=2, ensure_ascii=False)
+with open(os.path.join(status_dir, "translation_blockers_report.jsonl"), "a", encoding="utf-8") as f:
+    f.write(json.dumps(entry, ensure_ascii=False) + "\n")
+
+if missing_lang_files_count > 0 or missing_keys_total > 0:
+    reason = f"strict_blocked missing_lang_files={missing_lang_files_count} missing_keys={missing_keys_total}"
+    print(f"IDLE:translation_only_blocked:0:{reason}")
+else:
+    print("IDLE:translation_only_done:0:all_translations_completed")
+AUTOSTRICTPY
+}
+
+should_update_github_status() {
+    local force_mode="${1:-}"
+    local cycle_now="${CYCLE:-0}"
+    local every_cycles="${STATUS_UPDATE_EVERY_CYCLES:-5}"
+    local min_interval_sec="${STATUS_UPDATE_MIN_INTERVAL_SEC:-300}"
+    local state_file="$STATUS_DIR/status_update_state.json"
+
+    if [ "$force_mode" = "force" ]; then
+        mkdir -p "$STATUS_DIR" 2>/dev/null || true
+        python3 - "$state_file" "$cycle_now" << 'PY'
+import json
+import os
+import sys
+import time
+
+state_file = sys.argv[1]
+cycle_now = int(sys.argv[2]) if len(sys.argv) > 2 else 0
+payload = {
+    "last_cycle": cycle_now,
+    "last_ts": int(time.time()),
+    "reason": "forced",
+}
+tmp = state_file + ".tmp"
+with open(tmp, "w", encoding="utf-8") as f:
+    json.dump(payload, f, indent=2, ensure_ascii=False)
+os.replace(tmp, state_file)
+PY
+        return 0
+    fi
+
+    local decision
+    decision=$(python3 - "$state_file" "$cycle_now" "$every_cycles" "$min_interval_sec" << 'PY'
+import json
+import os
+import sys
+import time
+
+state_file = sys.argv[1]
+cycle_now = int(sys.argv[2]) if len(sys.argv) > 2 else 0
+every_cycles = max(1, int(sys.argv[3]) if len(sys.argv) > 3 else 5)
+min_interval_sec = max(1, int(sys.argv[4]) if len(sys.argv) > 4 else 300)
+now_ts = int(time.time())
+
+last_cycle = -1
+last_ts = 0
+try:
+    if os.path.exists(state_file):
+        with open(state_file, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        last_cycle = int(data.get("last_cycle", -1) or -1)
+        last_ts = int(data.get("last_ts", 0) or 0)
+except Exception:
+    last_cycle = -1
+    last_ts = 0
+
+cycle_delta = cycle_now - last_cycle if cycle_now >= 0 and last_cycle >= 0 else every_cycles
+time_delta = now_ts - last_ts if last_ts > 0 else min_interval_sec
+
+should = (last_cycle < 0) or (cycle_delta >= every_cycles) or (time_delta >= min_interval_sec)
+
+if should:
+    payload = {
+        "last_cycle": cycle_now,
+        "last_ts": now_ts,
+        "every_cycles": every_cycles,
+        "min_interval_sec": min_interval_sec,
+        "cycle_delta": cycle_delta,
+        "time_delta": time_delta,
+    }
+    tmp = state_file + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=2, ensure_ascii=False)
+    os.replace(tmp, state_file)
+    print("1")
+else:
+    print("0")
+PY
+)
+
+    [ "$decision" = "1" ]
+}
+
+should_force_status_update_on_metrics_delta() {
+    local cycle_now="${CYCLE:-0}"
+    local state_file="$STATUS_DIR/status_force_metrics_state.json"
+    local overview_file="$STATUS_DIR/translation_global_overview.json"
+    local guard_file="$STATUS_DIR/translation_guard_latest.json"
+    local blockers_file="$STATUS_DIR/translation_blockers_latest.json"
+    local recent_file="$STATUS_DIR/translation_recent_latest.json"
+
+    local decision
+    decision=$(python3 - "$state_file" "$cycle_now" "$overview_file" "$guard_file" "$blockers_file" "$recent_file" << 'PY'
+import json
+import os
+import sys
+from datetime import datetime, timezone
+
+state_file = sys.argv[1]
+cycle_now = int(sys.argv[2]) if len(sys.argv) > 2 else 0
+overview_file = sys.argv[3] if len(sys.argv) > 3 else ""
+guard_file = sys.argv[4] if len(sys.argv) > 4 else ""
+blockers_file = sys.argv[5] if len(sys.argv) > 5 else ""
+recent_file = sys.argv[6] if len(sys.argv) > 6 else ""
+
+def _load_json(path):
+    if not path or not os.path.exists(path):
+        return {}
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        return data if isinstance(data, dict) else {}
+    except Exception:
+        return {}
+
+overview = _load_json(overview_file)
+guard = _load_json(guard_file)
+blockers = _load_json(blockers_file)
+recent = _load_json(recent_file)
+
+global_data = overview.get("global", {}) if isinstance(overview.get("global", {}), dict) else {}
+
+current = {
+    "translated_keys": int(global_data.get("translated_keys", 0) or 0),
+    "missing_keys": int(global_data.get("missing_keys", 0) or 0),
+    "missing_files": int(global_data.get("missing_files", 0) or 0),
+    "guard_fail": int(guard.get("guard_fail", 0) or 0),
+    "strict_missing_file": int(guard.get("strict_missing_file", 0) or 0),
+    "strict_missing_key": int(guard.get("strict_missing_key", 0) or 0),
+    "strict_skipped_done": int(guard.get("strict_skipped_done", 0) or 0),
+    "blockers_missing_keys_total": int(blockers.get("missing_keys_total", 0) or 0),
+    "blockers_missing_lang_files": int(blockers.get("missing_lang_files", 0) or 0),
+    "recent_translated": int(recent.get("translated", 0) or 0),
+}
+
+previous = {}
+if os.path.exists(state_file):
+    try:
+        with open(state_file, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        previous = data.get("metrics", {}) if isinstance(data.get("metrics", {}), dict) else {}
+    except Exception:
+        previous = {}
+
+force = False
+reason = ""
+
+if not previous:
+    force = True
+    reason = "initial_metrics_baseline"
+else:
+    tracked = [
+        "translated_keys",
+        "missing_keys",
+        "missing_files",
+        "guard_fail",
+        "strict_missing_file",
+        "strict_missing_key",
+        "strict_skipped_done",
+        "blockers_missing_keys_total",
+        "blockers_missing_lang_files",
+    ]
+    for key in tracked:
+        if int(previous.get(key, 0) or 0) != int(current.get(key, 0) or 0):
+            force = True
+            reason = f"delta:{key}:{int(previous.get(key, 0) or 0)}->{int(current.get(key, 0) or 0)}"
+            break
+
+    if not force and int(current.get("recent_translated", 0) or 0) > 0:
+        force = True
+        reason = "recent_translated_gt_0"
+
+payload = {
+    "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+    "cycle": cycle_now,
+    "force": bool(force),
+    "reason": reason,
+    "metrics": current,
+}
+
+tmp = state_file + ".tmp"
+os.makedirs(os.path.dirname(state_file) or ".", exist_ok=True)
+with open(tmp, "w", encoding="utf-8") as f:
+    json.dump(payload, f, indent=2, ensure_ascii=False)
+os.replace(tmp, state_file)
+
+print("1" if force else "0")
+PY
+)
+
+    [ "$decision" = "1" ]
+}
+
+should_run_quality_audit() {
+    local cycle_now="${CYCLE:-0}"
+    local every_cycles="${QUALITY_AUDIT_EVERY_CYCLES:-10}"
+    local min_interval_sec="${QUALITY_AUDIT_MIN_INTERVAL_SEC:-3600}"
+    local state_file="$STATUS_DIR/quality_audit_state.json"
+
+    local decision
+    decision=$(python3 - "$state_file" "$cycle_now" "$every_cycles" "$min_interval_sec" << 'PY'
+import json
+import os
+import sys
+import time
+
+state_file = sys.argv[1]
+cycle_now = int(sys.argv[2]) if len(sys.argv) > 2 else 0
+every_cycles = max(1, int(sys.argv[3]) if len(sys.argv) > 3 else 10)
+min_interval_sec = max(1, int(sys.argv[4]) if len(sys.argv) > 4 else 3600)
+now_ts = int(time.time())
+
+last_cycle = -1
+last_ts = 0
+try:
+    if os.path.exists(state_file):
+        with open(state_file, "r", encoding="utf-8") as f:
+            d = json.load(f)
+        last_cycle = int(d.get("last_cycle", -1) or -1)
+        last_ts = int(d.get("last_ts", 0) or 0)
+except Exception:
+    pass
+
+cycle_delta = cycle_now - last_cycle if last_cycle >= 0 else every_cycles
+time_delta = now_ts - last_ts if last_ts > 0 else min_interval_sec
+should = (last_cycle < 0) or (cycle_delta >= every_cycles) or (time_delta >= min_interval_sec)
+
+if should:
+    payload = {
+        "last_cycle": cycle_now,
+        "last_ts": now_ts,
+        "every_cycles": every_cycles,
+        "min_interval_sec": min_interval_sec,
+    }
+    os.makedirs(os.path.dirname(state_file) or ".", exist_ok=True)
+    tmp = state_file + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=2, ensure_ascii=False)
+    os.replace(tmp, state_file)
+    print("1")
+else:
+    print("0")
+PY
+)
+
+    [ "$decision" = "1" ]
+}
+
+run_quality_audit() {
+    mkdir -p "$STATUS_DIR" 2>/dev/null || true
+    python3 - "$STATUS_DIR" "$QUALITY_AUDIT_THRESHOLD" << 'QUALITY_AUDIT_PY'
+import json
+import os
+import re
+import sys
+from collections import Counter, defaultdict
+from datetime import datetime, timezone
+
+status_dir = sys.argv[1]
+threshold = int(sys.argv[2]) if len(sys.argv) > 2 else 10
+
+recent_path = os.path.join(status_dir, "translation_recent_report.jsonl")
+suspicious_log_path = os.path.join(status_dir, "suspicious_log.jsonl")
+suspicious_rejected_path = os.path.join(status_dir, "suspicious_rejected.jsonl")
+audit_latest_path = os.path.join(status_dir, "quality_audit_latest.json")
+dashboard_path = os.path.join(status_dir, "quality_dashboard.json")
+
+entries = []
+if os.path.exists(recent_path):
+    with open(recent_path, "r", encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                obj = json.loads(line)
+            except Exception:
+                continue
+            for e in (obj.get("entries", []) if isinstance(obj.get("entries", []), list) else []):
+                if not isinstance(e, dict):
+                    continue
+                entries.append({
+                    "lang": obj.get("language", ""),
+                    "json_file": obj.get("json_file", ""),
+                    "key": e.get("key", ""),
+                    "en": str(e.get("en", "") or ""),
+                    "translated": str(e.get("translated", "") or ""),
+                })
+
+entries = entries[-100:]
+issues = []
+issue_counter = Counter()
+lang_issue_counter = Counter()
+
+def _is_probably_nontranslatable_text(text: str) -> bool:
+    t = str(text or "").strip()
+    if not t:
+        return True
+    if re.search(r"https?://|www\.", t, re.IGNORECASE):
+        return True
+    if "{{" in t or "}}" in t or "{%" in t or "%}" in t:
+        return True
+    if re.search(r"(?:^|\s)/(?:[A-Za-z0-9_.-]+/){1,}[A-Za-z0-9_.-]+", t):
+        return True
+    if "~" in t and re.search(r"[A-Za-z_]", t):
+        return True
+    if re.fullmatch(r"<[^<>]+>", t):
+        return True
+    tokens = [tok for tok in re.split(r"\s+", t) if tok]
+    if tokens and all(re.fullmatch(r"[A-Za-z0-9_.:-]+", tok) for tok in tokens):
+        if any(("/" in tok) or ("_" in tok) or ("-" in tok) or re.search(r"\d", tok) for tok in tokens):
+            return True
+        if len(tokens) == 1 and "." in tokens[0]:
+            return True
+    cleaned = re.sub(r'__PH\d+__|[{}\[\]|%$0-9\s_\-:;.,!?/\\()<>\"\'`~+=*&^#@]', '', t)
+    if not cleaned:
+        return True
+    words = [w for w in re.findall(r"[A-Za-zÀ-ÖØ-öø-ÿ]{2,}", t)]
+    if len(words) <= 1 and t.upper() == t and len(t) <= 20:
+        return True
+    return False
+
+value_langs = defaultdict(set)
+for e in entries:
+    tr = e["translated"].strip()
+    if tr:
+        value_langs[tr].add(str(e["lang"] or ""))
+
+for e in entries:
+    en = e["en"]
+    tr = e["translated"]
+    lang = str(e["lang"] or "")
+    key = str(e["key"] or "")
+    if not en or not tr:
+        continue
+
+    ratio = (len(tr) / max(len(en), 1))
+    if ratio < 0.3 or ratio > 4.0:
+        issues.append({"key": key, "lang": lang, "type": "length_anomaly", "ratio": round(ratio, 3), "en": en, "translated": tr})
+        issue_counter["length_anomaly"] += 1
+        lang_issue_counter[lang] += 1
+
+    if tr == en:
+        if _is_probably_nontranslatable_text(en):
+            issue_counter["identical_to_en_exempt"] += 1
+        else:
+            issues.append({"key": key, "lang": lang, "type": "identical_to_en", "en": en, "translated": tr})
+            issue_counter["identical_to_en"] += 1
+            lang_issue_counter[lang] += 1
+
+    if re.search(r"\?\?\?|\[[A-Z]{2,}(?:[-_][A-Z]{2,})?\]|TODO|FIXME", tr):
+        issues.append({"key": key, "lang": lang, "type": "artifact_token", "en": en, "translated": tr})
+        issue_counter["artifact_token"] += 1
+        lang_issue_counter[lang] += 1
+
+    if len(value_langs.get(tr, set())) >= 5:
+        issues.append({"key": key, "lang": lang, "type": "same_translation_many_langs", "langs": sorted(value_langs.get(tr, set()))[:12], "en": en, "translated": tr})
+        issue_counter["same_translation_many_langs"] += 1
+        lang_issue_counter[lang] += 1
+
+for path, source in ((suspicious_log_path, "suspicious_log"), (suspicious_rejected_path, "suspicious_rejected")):
+    if not os.path.exists(path):
+        continue
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            lines = [x.strip() for x in f if x.strip()][-200:]
+        for line in lines:
+            try:
+                obj = json.loads(line)
+            except Exception:
+                continue
+            lang = str(obj.get("lang", "") or "")
+            typ = str(obj.get("severity", "") or "")
+            if typ:
+                issue_counter[f"{source}_{typ.lower()}"] += 1
+                lang_issue_counter[lang] += 1
+    except Exception:
+        pass
+
+checked_entries = len(entries)
+issues_found = len(issues)
+ts = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+
+audit_payload = {
+    "timestamp": ts,
+    "checked_entries": checked_entries,
+    "issues_found": issues_found,
+    "issues_by_type": dict(issue_counter),
+    "issues": issues[:200],
+    "threshold": threshold,
+    "slow_mode": bool(issues_found > threshold),
+}
+
+tmp = audit_latest_path + ".tmp"
+with open(tmp, "w", encoding="utf-8") as f:
+    json.dump(audit_payload, f, indent=2, ensure_ascii=False)
+os.replace(tmp, audit_latest_path)
+
+dashboard = {}
+if os.path.exists(dashboard_path):
+    try:
+        with open(dashboard_path, "r", encoding="utf-8") as f:
+            dashboard = json.load(f)
+    except Exception:
+        dashboard = {}
+
+for lang, count in lang_issue_counter.items():
+    if not lang:
+        continue
+    cur = dashboard.get(lang, {}) if isinstance(dashboard.get(lang, {}), dict) else {}
+    prev_score = float(cur.get("quality_score", 100) or 100)
+    penalty = min(40.0, float(count) * 2.0)
+    score = max(0.0, round((prev_score * 0.6) + ((100.0 - penalty) * 0.4), 1))
+    cur["last_audit"] = ts
+    cur["issues_count"] = int(cur.get("issues_count", 0) or 0) + int(count)
+    cur["quality_score"] = score
+    dashboard[lang] = cur
+
+tmp_dash = dashboard_path + ".tmp"
+with open(tmp_dash, "w", encoding="utf-8") as f:
+    json.dump(dashboard, f, indent=2, ensure_ascii=False)
+os.replace(tmp_dash, dashboard_path)
+
+print(f"__QUALITY_AUDIT__ checked={checked_entries} issues={issues_found} threshold={threshold} slow={1 if issues_found > threshold else 0}")
+QUALITY_AUDIT_PY
+}
+
+#===============================================================================
+# TIER QUALITY GATE — Faza 6: Formalna walidacja tierów
+#===============================================================================
+# Walidacja jakości per tier (coverage, guard_fail, krytyczne błędy).
+# Uruchamiana co TIER_VALIDATION_INTERVAL cykli.
+# Wynik: JSONL log + dynamiczne dostosowanie wag tierów.
+#===============================================================================
+TIER_VALIDATION_INTERVAL="${TIER_VALIDATION_INTERVAL:-15}"
+TIER1_COVERAGE_TARGET="${TIER1_TARGET:-90}"
+TIER2_COVERAGE_TARGET="${TIER2_TARGET:-50}"
+TIER3_COVERAGE_TARGET="${TIER3_TARGET:-30}"
+
+validate_tier_quality() {
+    local cycle="$1"
+    
+    # Sprawdź interwał
+    if (( cycle % TIER_VALIDATION_INTERVAL != 0 )); then
+        return 0
+    fi
+    
+    echo "📊 TIER VALIDATION: formalna walidacja jakości tierów (cykl $cycle)"
+    
+    local tier_result
+    tier_result=$(python3 << 'TIER_VALIDATE_PY'
+import json, os, re
+from datetime import datetime, timezone
+from collections import defaultdict
+
+I18N_DIR = "i18n"
+STATUS_DIR = os.path.join(I18N_DIR, "status")
+
+# Konfiguracja tierów
+TIER1_LANGS = set(os.environ.get("TIER1_LANGS", "pl es").split())
+TIER2_LANGS = set(os.environ.get("TIER2_LANGS", "de pt ru tr fr it").split())
+TIER1_TARGET = int(os.environ.get("TIER1_TARGET", "90"))
+TIER2_TARGET = int(os.environ.get("TIER2_TARGET", "50"))
+TIER3_TARGET = int(os.environ.get("TIER3_TARGET", "30"))
+
+en_dir = os.path.join(I18N_DIR, "en")
+json_files = [f for f in os.listdir(en_dir) if f.endswith(".json")] if os.path.isdir(en_dir) else []
+
+# Wczytaj dane EN
+en_data_all = {}
+en_total_keys = 0
+for jf in json_files:
+    try:
+        with open(os.path.join(en_dir, jf), encoding="utf-8") as f:
+            data = json.load(f)
+        en_data_all[jf] = data
+        en_total_keys += len(data)
+    except Exception:
+        continue
+
+# Oblicz pokrycie per język
+lang_dirs = sorted([d for d in os.listdir(I18N_DIR)
+                    if os.path.isdir(os.path.join(I18N_DIR, d)) and d != "en" and d != "status"
+                    and re.fullmatch(r"[a-z]{2}(?:_[A-Z]{2})?", d)])
+
+lang_coverage = {}
+for lang in lang_dirs:
+    translated = 0
+    total = 0
+    for jf, en_data in en_data_all.items():
+        lang_path = os.path.join(I18N_DIR, lang, jf)
+        if not os.path.exists(lang_path):
+            continue
+        try:
+            with open(lang_path, encoding="utf-8") as f:
+                ld = json.load(f)
+        except Exception:
+            continue
+        for k, v in en_data.items():
+            if k in ld:
+                total += 1
+                lv = str(ld[k])
+                if not lv.startswith("[") and lv != str(v):
+                    translated += 1
+    cov = round(translated / total * 100, 1) if total > 0 else 0.0
+    lang_coverage[lang] = {"coverage": cov, "translated": translated, "total": total}
+
+# Guard fail rate z ostatnich 200 wpisów
+guard_fail_per_lang = defaultdict(lambda: {"translated": 0, "guard_fail": 0})
+try:
+    guard_path = os.path.join(STATUS_DIR, "translation_guard_report.jsonl")
+    if os.path.exists(guard_path):
+        with open(guard_path, "r", encoding="utf-8") as f:
+            lines = f.readlines()
+        for line in lines[-200:]:
+            try:
+                e = json.loads(line.strip())
+                lang = e.get("language", "")
+                guard_fail_per_lang[lang]["translated"] += int(e.get("translated", 0) or 0)
+                guard_fail_per_lang[lang]["guard_fail"] += int(e.get("guard_fail", 0) or 0)
+            except Exception:
+                continue
+except Exception:
+    pass
+
+# Walidacja per tier
+tier_results = {}
+for tier_name, tier_langs, target in [
+    ("tier1", TIER1_LANGS, TIER1_TARGET),
+    ("tier2", TIER2_LANGS, TIER2_TARGET),
+    ("tier3", set(lang_dirs) - TIER1_LANGS - TIER2_LANGS, TIER3_TARGET),
+]:
+    langs_in_tier = [l for l in lang_dirs if l in tier_langs]
+    if not langs_in_tier:
+        continue
+    
+    tier_coverages = []
+    tier_gate_pass = True
+    lang_details = {}
+    
+    for lang in langs_in_tier:
+        lc = lang_coverage.get(lang, {"coverage": 0})
+        cov = lc["coverage"]
+        tier_coverages.append(cov)
+        
+        gf = guard_fail_per_lang.get(lang, {"translated": 0, "guard_fail": 0})
+        total_attempts = gf["translated"] + gf["guard_fail"]
+        gf_rate = round(gf["guard_fail"] / total_attempts * 100, 1) if total_attempts > 0 else 0.0
+        
+        gate_ok = cov >= target
+        lang_details[lang] = {
+            "coverage": cov,
+            "target": target,
+            "gate_pass": gate_ok,
+            "guard_fail_rate": gf_rate,
+        }
+        if not gate_ok:
+            tier_gate_pass = False
+    
+    avg_cov = round(sum(tier_coverages) / len(tier_coverages), 1) if tier_coverages else 0
+    tier_results[tier_name] = {
+        "langs": sorted(langs_in_tier),
+        "avg_coverage": avg_cov,
+        "target": target,
+        "gate_pass": tier_gate_pass,
+        "langs_passing": sum(1 for d in lang_details.values() if d["gate_pass"]),
+        "langs_total": len(langs_in_tier),
+        "lang_details": lang_details,
+    }
+
+# Zapisz wynik
+result = {
+    "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+    "en_total_keys": en_total_keys,
+    "tier_results": tier_results,
+    "recommendation": "",
+}
+
+# Rekomendacje
+if tier_results.get("tier1", {}).get("gate_pass"):
+    if tier_results.get("tier2", {}).get("gate_pass"):
+        result["recommendation"] = "ALL_TIERS_PASS: można przejść do Tier 3 rollout"
+    else:
+        result["recommendation"] = "TIER1_PASS: kontynuuj Tier 2 z priorytetem"
+else:
+    result["recommendation"] = "TIER1_INCOMPLETE: priorytet na PL/ES"
+
+# Zapisz raport
+os.makedirs(STATUS_DIR, exist_ok=True)
+report_path = os.path.join(STATUS_DIR, "tier_quality_gate.json")
+try:
+    with open(report_path, "w", encoding="utf-8") as f:
+        json.dump(result, f, indent=2, ensure_ascii=False)
+except Exception:
+    pass
+
+# JSONL log
+log_path = os.path.join(STATUS_DIR, "tier_quality_gate.jsonl")
+log_entry = {
+    "t": result["timestamp"],
+    "tier1_avg": tier_results.get("tier1", {}).get("avg_coverage", 0),
+    "tier1_pass": tier_results.get("tier1", {}).get("gate_pass", False),
+    "tier2_avg": tier_results.get("tier2", {}).get("avg_coverage", 0),
+    "tier2_pass": tier_results.get("tier2", {}).get("gate_pass", False),
+    "recommendation": result["recommendation"],
+}
+try:
+    with open(log_path, "a", encoding="utf-8") as f:
+        f.write(json.dumps(log_entry, ensure_ascii=False) + "\n")
+except Exception:
+    pass
+
+# Wynik na stdout
+t1 = tier_results.get("tier1", {})
+t2 = tier_results.get("tier2", {})
+print(f"__TIER_GATE__ tier1_avg={t1.get('avg_coverage',0)}% pass={t1.get('gate_pass',False)} "
+      f"tier2_avg={t2.get('avg_coverage',0)}% pass={t2.get('gate_pass',False)} "
+      f"rec={result['recommendation']}")
+TIER_VALIDATE_PY
+    )
+    
+    echo "   $tier_result"
+    status_log_op "$cycle" "AUTO_TRANSLATE" "TIER_QUALITY_GATE" "-" "-" "ok" "$tier_result"
+}
+
+# ── pending_skip 24h dedicated artifact (#14) ────────────────────────────────
+# Zamiast parsować `worker_cycle_perf.detail`, logujemy pending_skip zdarzenia
+# do dedykowanego JSONL i obliczamy metryki 24h z niego.
+log_pending_skip_event() {
+    # Użycie: log_pending_skip_event <cycle> <total_needs> <reason>
+    local cycle="${1:-0}"
+    local total_needs="${2:-0}"
+    local reason="${3:-backoff}"
+    mkdir -p "$STATUS_DIR" 2>/dev/null || true
+    python3 - "$STATUS_DIR" "$cycle" "$total_needs" "$reason" << 'PSKIP_LOG_PY'
+import json, os, sys
+from datetime import datetime, timezone
+
+status_dir = sys.argv[1]
+cycle = int(sys.argv[2]) if len(sys.argv) > 2 else 0
+total_needs = int(sys.argv[3]) if len(sys.argv) > 3 else 0
+reason = sys.argv[4] if len(sys.argv) > 4 else "backoff"
+
+jsonl_path = os.path.join(status_dir, "pending_skip_events.jsonl")
+ts = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+entry = {
+    "timestamp": ts,
+    "cycle": cycle,
+    "total_needs": total_needs,
+    "reason": reason,
+}
+try:
+    with open(jsonl_path, "a", encoding="utf-8") as f:
+        f.write(json.dumps(entry, ensure_ascii=False) + "\n")
+except Exception:
+    pass
+PSKIP_LOG_PY
+}
+
+compute_pending_skip_24h() {
+    # Oblicza metryki pending_skip z ostatnich 24h z dedykowanego JSONL.
+    # Wynik: pending_skip_24h_latest.json
+    mkdir -p "$STATUS_DIR" 2>/dev/null || true
+    python3 - "$STATUS_DIR" << 'PSKIP_24H_PY'
+import json, os, sys
+from datetime import datetime, timezone, timedelta
+
+status_dir = sys.argv[1]
+jsonl_path = os.path.join(status_dir, "pending_skip_events.jsonl")
+latest_path = os.path.join(status_dir, "pending_skip_24h_latest.json")
+perf_path = os.path.join(status_dir, "worker_cycle_perf.jsonl")
+
+now = datetime.now(timezone.utc)
+cutoff = now - timedelta(hours=24)
+cutoff_iso = cutoff.isoformat().replace("+00:00", "Z")
+
+# Count pending_skip events in 24h window
+skip_count = 0
+skip_reasons = {}
+total_needs_sum = 0
+
+if os.path.exists(jsonl_path):
+    try:
+        with open(jsonl_path, "r", encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if not line:
+                    continue
+                try:
+                    obj = json.loads(line)
+                    ts = obj.get("timestamp", "")
+                    if ts >= cutoff_iso:
+                        skip_count += 1
+                        r = obj.get("reason", "unknown")
+                        skip_reasons[r] = skip_reasons.get(r, 0) + 1
+                        total_needs_sum += int(obj.get("total_needs", 0))
+                except Exception:
+                    continue
+    except Exception:
+        pass
+
+# Count total cycles in 24h for share calculation
+total_cycles_24h = 0
+if os.path.exists(perf_path):
+    try:
+        with open(perf_path, "r", encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if not line:
+                    continue
+                try:
+                    obj = json.loads(line)
+                    ts = obj.get("timestamp", "")
+                    phase = obj.get("phase", "")
+                    if ts >= cutoff_iso and phase == "cycle_total":
+                        total_cycles_24h += 1
+                except Exception:
+                    continue
+    except Exception:
+        pass
+
+share = round(skip_count / total_cycles_24h * 100, 1) if total_cycles_24h > 0 else 0.0
+
+payload = {
+    "timestamp": now.isoformat().replace("+00:00", "Z"),
+    "window_hours": 24,
+    "pending_skip_count": skip_count,
+    "total_cycles_24h": total_cycles_24h,
+    "pending_skip_share_pct": share,
+    "reasons": skip_reasons,
+    "total_needs_sum": total_needs_sum,
+    "status": "ok" if share < 25.0 else ("warning" if share < 50.0 else "critical"),
+}
+
+try:
+    tmp = latest_path + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=2, ensure_ascii=False)
+    os.replace(tmp, latest_path)
+except Exception:
+    pass
+
+print(f"__PENDING_SKIP_24H__ count={skip_count} cycles={total_cycles_24h} share={share}% status={payload['status']}")
+PSKIP_24H_PY
+}
+
+now_ms() {
+    local ms=""
+    ms=$(date +%s%3N 2>/dev/null || true)
+    if [[ "$ms" =~ ^[0-9]+$ ]]; then
+        echo "$ms"
+        return 0
+    fi
+    python3 - << 'PY'
+import time
+print(int(time.time() * 1000))
+PY
+}
+
+status_log_cycle_perf() {
+    # Użycie: status_log_cycle_perf <cycle> <mode> <category> <phase> <duration_ms> [detail]
+    [ "${WORKER_PROFILING:-1}" = "0" ] && return 0
+    local cycle="${1:-0}"
+    local mode="${2:-IDLE}"
+    local category="${3:--}"
+    local phase="${4:-unknown}"
+    local duration_ms="${5:-0}"
+    local detail="${6:-}"
+
+    mkdir -p "$STATUS_DIR" 2>/dev/null || true
+    python3 - "$STATUS_DIR" "$cycle" "$mode" "$category" "$phase" "$duration_ms" "$detail" << 'PY'
+import json
+import os
+import sys
+from datetime import datetime, timezone
+
+status_dir = sys.argv[1]
+cycle = int(sys.argv[2]) if len(sys.argv) > 2 else 0
+mode = sys.argv[3] if len(sys.argv) > 3 else "IDLE"
+category = sys.argv[4] if len(sys.argv) > 4 else "-"
+phase = sys.argv[5] if len(sys.argv) > 5 else "unknown"
+try:
+    duration_ms = int(float(sys.argv[6])) if len(sys.argv) > 6 else 0
+except Exception:
+    duration_ms = 0
+detail = sys.argv[7] if len(sys.argv) > 7 else ""
+
+os.makedirs(status_dir, exist_ok=True)
+jsonl_path = os.path.join(status_dir, "worker_cycle_perf.jsonl")
+latest_path = os.path.join(status_dir, "worker_cycle_perf_latest.json")
+
+ts = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+event = {
+    "timestamp": ts,
+    "cycle": cycle,
+    "mode": mode,
+    "category": category,
+    "phase": phase,
+    "duration_ms": duration_ms,
+}
+if detail:
+    event["detail"] = detail
+
+try:
+    if os.path.exists(jsonl_path) and os.path.getsize(jsonl_path) > 0:
+        with open(jsonl_path, "rb+") as fb:
+            fb.seek(-1, os.SEEK_END)
+            last = fb.read(1)
+            if last not in (b"\n", b"\r"):
+                fb.write(b"\n")
+    with open(jsonl_path, "a", encoding="utf-8") as f:
+        f.write(json.dumps(event, ensure_ascii=False) + "\n")
+except Exception:
+    pass
+
+latest = {
+    "timestamp": ts,
+    "cycle": cycle,
+    "mode": mode,
+    "category": category,
+    "events": {
+        phase: duration_ms,
+    },
+}
+try:
+    if os.path.exists(latest_path):
+        with open(latest_path, "r", encoding="utf-8") as f:
+            prev = json.load(f)
+        if isinstance(prev, dict) and int(prev.get("cycle", -1)) == cycle:
+            events = prev.get("events", {}) if isinstance(prev.get("events", {}), dict) else {}
+            events[phase] = duration_ms
+            latest = {
+                "timestamp": ts,
+                "cycle": cycle,
+                "mode": mode,
+                "category": category,
+                "events": events,
+            }
+except Exception:
+    pass
+
+tmp = latest_path + ".tmp"
+try:
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(latest, f, indent=2, ensure_ascii=False)
+    os.replace(tmp, latest_path)
+except Exception:
+    pass
+PY
 }
 
 #===============================================================================
@@ -9899,9 +18125,48 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
     --update-status)
         update_github_status
         ;;
+    --lang-validate)
+        FORCE_LANG="${2:-}"
+        if [ -z "$FORCE_LANG" ]; then
+            echo "Użycie: $0 --lang-validate <lang>"
+            exit 1
+        fi
+        echo "🔬 Wymuszona walidacja języka: $FORCE_LANG"
+        run_full_lang_validation 0 "$FORCE_LANG"
+        ;;
+    --lang-validate-all)
+        echo "🔬 Wymuszona walidacja wszystkich języków"
+        run_full_lang_validation 0 ""
+        ;;
     --continuous)
         # Tryb ciągły - pracuje cały czas, przełącza się między trybami
         PID_FILE=".worker_simple.pid"
+        LEGACY_PID_FILE="i18n_worker_continuous.pid"
+        START_LOCK_FILE=".worker_simple.start.lock"
+
+        cleanup_pid_files_if_owner() {
+            for _pidf in "$PID_FILE" "$LEGACY_PID_FILE"; do
+                [ -f "$_pidf" ] || continue
+                _owner=$(cat "$_pidf" 2>/dev/null || echo "")
+                if [ "$_owner" = "$$" ]; then
+                    rm -f "$_pidf" 2>/dev/null || true
+                fi
+            done
+        }
+
+        if command -v flock >/dev/null 2>&1; then
+            exec 7>"$START_LOCK_FILE"
+            if ! flock -n 7; then
+                existing_pid=$(cat "$PID_FILE" 2>/dev/null || echo "")
+                if [[ "$existing_pid" =~ ^[0-9]+$ ]]; then
+                    echo "Inny worker już działa (PID: $existing_pid). Zatrzymuję uruchomienie."
+                else
+                    echo "Inny worker już działa (lock startup). Zatrzymuję uruchomienie."
+                fi
+                exit 1
+            fi
+        fi
+
         if [ -f "$PID_FILE" ]; then
             existing_pid=$(cat "$PID_FILE" 2>/dev/null || echo "")
             if [[ "$existing_pid" =~ ^[0-9]+$ ]] && kill -0 "$existing_pid" 2>/dev/null; then
@@ -9910,6 +18175,7 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
             fi
         fi
         echo $$ > "$PID_FILE"
+        echo $$ > "$LEGACY_PID_FILE"
         
         # Parsuj opcje
         shift  # usuń --continuous
@@ -9933,15 +18199,73 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
                     TRANSLATE_LIMIT="${2:-100}"
                     shift 2
                     ;;
+                --langs)
+                    TARGET_LANGS="${2:-}"
+                    shift 2
+                    ;;
                 --translations-only)
                     TRANSLATIONS_ONLY=true
+                    TRANSLATIONS_STRICT=true
                     shift
+                    ;;
+                --use-gt)
+                    USE_GOOGLE_TRANSLATE=true
+                    shift
+                    ;;
+                --gt-batch)
+                    GT_BATCH_SIZE="${2:-50}"
+                    shift 2
+                    ;;
+                --gt-delay)
+                    GT_DELAY="${2:-1.5}"
+                    shift 2
+                    ;;
+                --auto-fix-crossref)
+                    CROSSREF_AUTO_FIX=true
+                    shift
+                    ;;
+                --auto-fix-crossref-limit)
+                    CROSSREF_AUTO_FIX_LIMIT="${2:-30}"
+                    shift 2
+                    ;;
+                --no-adaptive-batch)
+                    ADAPTIVE_BATCH_ENABLED=false
+                    shift
+                    ;;
+                --parallel-langs)
+                    PARALLEL_LANGS_PER_CYCLE="${2:-3}"
+                    shift 2
                     ;;
                 *)
                     shift
                     ;;
             esac
         done
+
+            export TRANSLATIONS_ONLY
+            export TRANSLATIONS_STRICT
+            export TARGET_LANGS
+            export LANG_PRIORITY
+            export STRICT_SELECTOR_CACHE_TTL_CYCLES
+            export STATUS_UPDATE_EVERY_CYCLES
+            export STATUS_UPDATE_MIN_INTERVAL_SEC
+            export QUALITY_AUDIT_EVERY_CYCLES
+            export QUALITY_AUDIT_MIN_INTERVAL_SEC
+            export QUALITY_AUDIT_THRESHOLD
+            export USE_GOOGLE_TRANSLATE
+            export GT_BATCH_SIZE
+            export GT_DELAY
+            export CROSSREF_AUTO_FIX
+            export CROSSREF_AUTO_FIX_LIMIT
+
+        # 8.3: Zapamiętaj user-specified translate limit (0 = nie ustawiony → adaptive)
+        USER_TRANSLATE_LIMIT="${TRANSLATE_LIMIT:-0}"
+        # CLI flags: zachowane żeby config nie nadpisywał explicit CLI
+        CLI_USE_GT="${USE_GOOGLE_TRANSLATE:-false}"
+
+        ensure_tibia_proper_nouns >/dev/null 2>&1 || true
+        ensure_external_dictionary_files >/dev/null 2>&1 || true
+        save_default_worker_config
         
         echo "╔════════════════════════════════════════════════════════════════════╗"
         echo "║   I18N WORKER v3.1 - FULL AUTONOMOUS (24/7)                        ║"
@@ -9949,7 +18273,12 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
         echo "║   Batch: $BATCH plików | Przerwa: ${DELAY}s                        ║"
         [ "$NO_GIT" = "true" ] && echo "║   🚫 --no-git: Git push WYŁĄCZONY                                ║"
         [ "$TRANSLATE_LIMIT" -gt 0 ] 2>/dev/null && echo "║   📊 --translate-limit: max $TRANSLATE_LIMIT kluczy/cykl                       ║"
-        [ "$TRANSLATIONS_ONLY" = "true" ] && echo "║   🌐 --translations-only: tylko tłumaczenia                      ║"
+        [ -n "$TARGET_LANGS" ] && echo "║   🌐 --langs: $TARGET_LANGS                                         ║"
+        [ "$TRANSLATIONS_ONLY" = "true" ] && echo "║   🌐 --translations-only: tylko tłumaczenia (STRICT, bez nowych kluczy)║"
+        [ "$USE_GOOGLE_TRANSLATE" = "true" ] && echo "║   🌍 --use-gt: Google Translate fallback WŁĄCZONY (batch=$GT_BATCH_SIZE)║"
+        [ "$CROSSREF_AUTO_FIX" = "true" ] && echo "║   🛠️ --auto-fix-crossref: ON (limit=$CROSSREF_AUTO_FIX_LIMIT / język)            ║"
+        [ "$ADAPTIVE_BATCH_ENABLED" = "true" ] && echo "║   📈 Adaptive batch: ON (default=$ADAPTIVE_BATCH_DEFAULT, range=$ADAPTIVE_BATCH_MIN-$ADAPTIVE_BATCH_MAX) ║"
+        [ "$PARALLEL_LANGS_PER_CYCLE" -gt 1 ] 2>/dev/null && echo "║   🔀 Parallel langs: $PARALLEL_LANGS_PER_CYCLE języki/cykl                                    ║"
         echo "║   Tryby: NPC → SCRIPTS → MONSTERS → ITEMS → AUTO_TRANSLATE        ║"
         echo "╚════════════════════════════════════════════════════════════════════╝"
         echo ""
@@ -9959,17 +18288,70 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
         CYCLE=0
         
         # Obsługa Ctrl+C
-        trap 'echo ""; echo "⛔ Zatrzymuję worker..."; status_update_activity "interrupted" "${CYCLE:-0}" "${MODE_TYPE:-IDLE}" "signal" "${MODE_CAT:-}" "-" "stopping" 0 0 "units" 0; update_github_status; rm -f "$PID_FILE"; exit 0' SIGINT SIGTERM
+        trap 'echo ""; echo "⛔ Zatrzymuję worker..."; status_update_activity "interrupted" "${CYCLE:-0}" "${MODE_TYPE:-IDLE}" "signal" "${MODE_CAT:-}" "-" "stopping" 0 0 "units" 0; if should_force_status_update_on_metrics_delta; then echo "📊 Smart force status update (signal)"; if should_update_github_status force; then update_github_status; fi; elif should_update_github_status; then update_github_status; else echo "⏭️ Smart force: brak istotnych zmian metryk (signal), pomijam full status"; fi; cleanup_pid_files_if_owner; exit 0' SIGINT SIGTERM
         
         while true; do
+            ACTIVE_PID=$(cat "$PID_FILE" 2>/dev/null || echo "")
+            if [[ "$ACTIVE_PID" =~ ^[0-9]+$ ]] && [ "$ACTIVE_PID" != "$$" ] && kill -0 "$ACTIVE_PID" 2>/dev/null; then
+                echo "🔁 Wykryto nowszą instancję workera (PID: $ACTIVE_PID). Kończę PID $$"
+                exit 0
+            fi
+
             CYCLE=$((CYCLE + 1))
+            CURRENT_CYCLE="$CYCLE"
+            export CURRENT_CYCLE
+            CYCLE_T0=$(now_ms)
             STOP_AFTER_CYCLE="false"
+            MODE_EXTRA2=""  # Ważne: reset na początku cyklu, aby dispatcher nie był pomijany
+            FORCE_LANG_VALIDATION=""
+
+            # === 8.3: Reset translate_limit na początku cyklu (dla adaptive batch recalc) ===
+            TRANSLATE_LIMIT="${USER_TRANSLATE_LIMIT:-0}"
+
+            # === Runtime config: wczytaj worker_config.json co cykl ===
+            load_worker_config
+
+            # Jeśli worker jest wstrzymany (paused), czekaj
+            if [ "${RUNTIME_PAUSED:-false}" = "true" ]; then
+                echo "⏸️ Worker PAUSED (ustaw paused=false w worker_config.json aby wznowić)"
+                sleep 10
+                continue
+            fi
+
+            # Jeśli jest test_lang w config, wymusz cykl testowy
+            if [ -n "${RUNTIME_TEST_LANG:-}" ]; then
+                echo "🧪 TEST: wymuszam pełny test języka '${RUNTIME_TEST_LANG}'"
+                PINNED_AUTO_LANG="$RUNTIME_TEST_LANG"
+                PINNED_AUTO_JSON=""
+                PINNED_AUTO_LIMIT=0
+                FORCE_LANG_VALIDATION="$RUNTIME_TEST_LANG"
+                # Wyczyść test_lang z config (jednorazowe)
+                clear_test_lang_from_config
+            fi
+
+            # Jeśli jest test_all_langs_queue, pop następny język
+            if [ -z "${RUNTIME_TEST_LANG:-}" ] && [ -n "${RUNTIME_TEST_QUEUE:-}" ]; then
+                NEXT_TEST_LANG=$(pop_test_queue_lang 2>/dev/null || true)
+                if [ -n "$NEXT_TEST_LANG" ]; then
+                    echo "🧪 TEST_ALL: kolejny język z kolejki: '$NEXT_TEST_LANG'"
+                    PINNED_AUTO_LANG="$NEXT_TEST_LANG"
+                    PINNED_AUTO_JSON=""
+                    PINNED_AUTO_LIMIT=0
+                    FORCE_LANG_VALIDATION="$NEXT_TEST_LANG"
+                fi
+            fi
+
             echo ""
             echo "═══════════════════════════════════════════════════════════════"
             echo "🔄 CYKL #$CYCLE - $(date '+%Y-%m-%d %H:%M:%S')"
             echo "═══════════════════════════════════════════════════════════════"
 
             status_update_activity "running" "$CYCLE" "${MODE_TYPE:-IDLE}" "cycle_start" "${MODE_CAT:-}" "-" "cycle start" 0 0 "units" 0
+            APPLIED_APPROVALS=$(apply_manual_review_approvals 2>/dev/null || echo 0)
+            if [ "${APPLIED_APPROVALS:-0}" -gt 0 ] 2>/dev/null; then
+                echo "🧾 Zastosowano manual review approvals: $APPLIED_APPROVALS"
+            fi
+            DISPATCH_T0=$(now_ms)
             
             # Sprawdź komendy sterowania z plików
             # Najpierw sprawdź worker_commands.txt (dla GitHub), potem .worker_command (lokalny)
@@ -9979,12 +18361,12 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
             CMD=""
             
             # 1. Komendy z GitHub:
-            # Preferuj .github/worker_commands.txt z origin/master (działa bez git pull)
+            # Preferuj .github/worker_commands.txt z origin/$GIT_TRACK_BRANCH (działa bez git pull)
             CMD_SOURCE=""
             if [ -n "$REPO_ROOT" ]; then
-                REMOTE_CMDS=$(git -C "$REPO_ROOT" show "origin/master:Tibia/silnik/canary_test/.github/worker_commands.txt" 2>/dev/null || true)
+                REMOTE_CMDS=$(git -C "$REPO_ROOT" show "origin/$GIT_TRACK_BRANCH:Tibia/silnik/canary_test/.github/worker_commands.txt" 2>/dev/null || true)
                 if [ -n "$REMOTE_CMDS" ]; then
-                    CMD=$(echo "$REMOTE_CMDS" | grep -v '^#' | grep -v '^$' | grep -E '^(FORCE:|AUTO:|SYNC:|COMPACT_KEYS|IDLE|RANDOM|STATUS|SELFTEST|SELF_CHECK|SKIP|PAUSE:|NOTE:)' | head -1)
+                    CMD=$(echo "$REMOTE_CMDS" | grep -v '^#' | grep -v '^$' | grep -E '^(FORCE:|AUTO:|SYNC:|SWITCH:|UNSWITCH|LANGVAL:|SPOTCHECK:|GRAMMARFIX:|RESTART|COMPACT_KEYS|IDLE|RANDOM|STATUS|SELFTEST|SELF_CHECK|SKIP|PAUSE:|NOTE:|SET:|TEST:|TEST_ALL|GT:|BATCH:|REPORT|LANGS|CONFIG|FOCUS:|UNFOCUS|LANG:)' | head -1)
                     if [ -n "$CMD" ]; then
                         CMD_SOURCE="github"
                         echo "📨 Odebrano z GitHub (.github/worker_commands.txt): $CMD"
@@ -9999,7 +18381,7 @@ BEGIN { done=0 }
         print line
         next
     }
-    if (!done && line ~ /^(FORCE:|AUTO:|SYNC:|COMPACT_KEYS|IDLE|RANDOM|STATUS|SKIP|PAUSE:|NOTE:)/) {
+    if (!done && line ~ /^(FORCE:|AUTO:|SYNC:|SWITCH:|UNSWITCH|LANGVAL:|SPOTCHECK:|GRAMMARFIX:|RESTART|COMPACT_KEYS|IDLE|RANDOM|STATUS|SKIP|PAUSE:|NOTE:|SET:|TEST:|TEST_ALL|GT:|BATCH:|REPORT|LANGS|CONFIG|FOCUS:|UNFOCUS|LANG:)/) {
         print "#" line "  # Wykonano " ts
         done=1
         next
@@ -10020,7 +18402,7 @@ BEGIN { done=0 }
                 for COMMANDS_TXT in "$COMMANDS_TXT_PRIMARY" "$COMMANDS_TXT_FALLBACK"; do
                     [ -n "$CMD" ] && break
                     if [ -f "$COMMANDS_TXT" ]; then
-                        CMD=$(grep -v '^#' "$COMMANDS_TXT" | grep -v '^$' | grep -E '^(FORCE:|AUTO:|SYNC:|COMPACT_KEYS|IDLE|RANDOM|STATUS|SELFTEST|SELF_CHECK|SKIP|PAUSE:|NOTE:)' | head -1)
+                        CMD=$(grep -v '^#' "$COMMANDS_TXT" | grep -v '^$' | grep -E '^(FORCE:|AUTO:|SYNC:|SWITCH:|UNSWITCH|LANGVAL:|SPOTCHECK:|GRAMMARFIX:|RESTART|COMPACT_KEYS|IDLE|RANDOM|STATUS|SELFTEST|SELF_CHECK|SKIP|PAUSE:|NOTE:|SET:|TEST:|TEST_ALL|GT:|BATCH:|REPORT|LANGS|CONFIG|FOCUS:|UNFOCUS|LANG:)' | head -1)
                         if [ -n "$CMD" ]; then
                             echo "📨 Odebrano z $COMMANDS_TXT: $CMD"
                             TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
@@ -10130,12 +18512,414 @@ BEGIN { done=0 }
                         MODE_EXTRA="${AUTO_LIMIT:-0}"
                         MODE_EXTRA2="AUTO"  # znacznik żeby nie nadpisywać dispatchera
                         ;;
+                    SWITCH:*)
+                        # Format: SWITCH:<lang>[:json_file[:limit]]
+                        SW_LANG=$(echo "$CMD" | cut -d: -f2)
+                        SW_JSON=$(echo "$CMD" | cut -d: -f3)
+                        SW_LIMIT=$(echo "$CMD" | cut -d: -f4)
+                        if [ -z "$SW_LANG" ]; then
+                            echo "⚠️ SWITCH: brak języka (użyj SWITCH:<lang>[:json[:limit]])"
+                        else
+                            PINNED_AUTO_LANG="$SW_LANG"
+                            PINNED_AUTO_JSON="$SW_JSON"
+                            PINNED_AUTO_LIMIT="${SW_LIMIT:-0}"
+                            echo "🔁 SWITCH: przypinam AUTO_TRANSLATE na '$PINNED_AUTO_LANG' (json='${PINNED_AUTO_JSON:-auto}', limit=${PINNED_AUTO_LIMIT:-0})"
+
+                            MODE_TYPE="AUTO_TRANSLATE"
+                            MODE_CAT="$PINNED_AUTO_LANG"
+                            if [ -n "$PINNED_AUTO_JSON" ]; then
+                                MODE_COUNT="$PINNED_AUTO_JSON"
+                                MODE_EXTRA="${PINNED_AUTO_LIMIT:-0}"
+                            else
+                                STRICT_TARGET=$(TARGET_LANGS="$PINNED_AUTO_LANG" select_auto_translate_target_strict)
+                                S_TYPE=$(echo "$STRICT_TARGET" | cut -d: -f1)
+                                S_LANG=$(echo "$STRICT_TARGET" | cut -d: -f2)
+                                S_JSON=$(echo "$STRICT_TARGET" | cut -d: -f3)
+                                S_EXTRA=$(echo "$STRICT_TARGET" | cut -d: -f4)
+                                if [ "$S_TYPE" = "AUTO_TRANSLATE" ]; then
+                                    MODE_CAT="$S_LANG"
+                                    MODE_COUNT="$S_JSON"
+                                    MODE_EXTRA="$S_EXTRA"
+                                else
+                                    MODE_TYPE="IDLE"
+                                    MODE_CAT="switch_no_pending"
+                                    MODE_COUNT="0"
+                                    MODE_EXTRA="SWITCH"
+                                fi
+                            fi
+                            MODE_EXTRA2="AUTO"
+                        fi
+                        ;;
+                    UNSWITCH)
+                        echo "🔓 UNSWITCH: zdejmuję przypięcie języka AUTO_TRANSLATE"
+                        PINNED_AUTO_LANG=""
+                        PINNED_AUTO_JSON=""
+                        PINNED_AUTO_LIMIT=0
+                        PINNED_AUTO_JSON_LIST=""
+                        PINNED_AUTO_JSON_IDX=0
+                        ;;
+                    LANGVAL:*)
+                        # Format: LANGVAL:all lub LANGVAL:<lang>
+                        LV_ARG=$(echo "$CMD" | cut -d: -f2)
+                        LV_ARG=${LV_ARG:-all}
+                        if [ "$LV_ARG" = "all" ]; then
+                            FORCE_LANG_VALIDATION="all"
+                            echo "🔬 LANGVAL: wymuszam walidację wszystkich języków po tym cyklu"
+                        else
+                            FORCE_LANG_VALIDATION="$LV_ARG"
+                            echo "🔬 LANGVAL: wymuszam walidację języka '$LV_ARG' po tym cyklu"
+                        fi
+                        ;;
+                    SPOTCHECK:*)
+                        # Format: SPOTCHECK:<lang>[:sample]
+                        SC_LANG=$(echo "$CMD" | cut -d: -f2)
+                        SC_SAMPLE=$(echo "$CMD" | cut -d: -f3)
+                        SC_SAMPLE=${SC_SAMPLE:-20}
+                        echo "🧪 SPOTCHECK: język '$SC_LANG' (sample=$SC_SAMPLE)"
+                        SC_OUT=$(run_language_spotcheck "$SC_LANG" "$SC_SAMPLE")
+                        [ -n "$SC_OUT" ] && echo "$SC_OUT"
+                        if [ "$STOP_AFTER_CYCLE" = "true" ]; then
+                            echo "🛑 TRYB JEDNORAZOWY: kończę po SPOTCHECK"
+                            break
+                        fi
+                        continue
+                        ;;
+                    GRAMMARFIX:*)
+                        # Format: GRAMMARFIX:<lang>[:json_file[:limit]]
+                        GF_LANG=$(echo "$CMD" | cut -d: -f2)
+                        GF_JSON=$(echo "$CMD" | cut -d: -f3)
+                        GF_LIMIT=$(echo "$CMD" | cut -d: -f4)
+                        GF_JSON=${GF_JSON:-npc.json}
+                        GF_LIMIT=${GF_LIMIT:-20}
+                        echo "🧠 GRAMMARFIX: język '$GF_LANG', plik '$GF_JSON', limit=$GF_LIMIT"
+                        GF_OUT=$(run_language_grammar_fix "$GF_LANG" "$GF_JSON" "$GF_LIMIT")
+                        [ -n "$GF_OUT" ] && echo "$GF_OUT"
+                        if [ -n "$GF_LANG" ]; then
+                            run_full_lang_validation "$CYCLE" "$GF_LANG"
+                        fi
+                        if [ "$STOP_AFTER_CYCLE" = "true" ]; then
+                            echo "🛑 TRYB JEDNORAZOWY: kończę po GRAMMARFIX"
+                            break
+                        fi
+                        continue
+                        ;;
                     SELFTEST|SELF_CHECK)
                         echo "🧪 Wymuszam SELFTEST"
                         MODE_TYPE="SELFTEST"
                         MODE_CAT="-"
                         MODE_COUNT="0"
                         MODE_EXTRA="FORCED"
+                        ;;
+                    RESTART)
+                        echo "🔄 RESTART: worker zakończy bieżący cykl i zrestartuje się"
+                        echo "   → git pull + exec z tymi samymi argumentami"
+                        RESTART_REQUESTED=true
+                        STOP_AFTER_CYCLE=true
+                        ;;
+                    # ===== Nowe komendy runtime (continuous control) =====
+                    FOCUS:*)
+                        # Alias dla SWITCH — bardziej intuicyjny
+                        SW_LANG=$(echo "$CMD" | cut -d: -f2)
+                        SW_JSON=$(echo "$CMD" | cut -d: -f3)
+                        SW_LIMIT=$(echo "$CMD" | cut -d: -f4)
+                        if [ -n "$SW_LANG" ]; then
+                            PINNED_AUTO_LANG="$SW_LANG"
+                            PINNED_AUTO_JSON="${SW_JSON:-}"
+                            PINNED_AUTO_LIMIT="${SW_LIMIT:-0}"
+                            # Synchronizuj do config
+                            update_worker_config "focus_lang" "$SW_LANG" >/dev/null 2>&1 || true
+                            [ -n "$SW_JSON" ] && update_worker_config "focus_category" "$SW_JSON" >/dev/null 2>&1 || true
+                            echo "🎯 FOCUS: przypinam na '$SW_LANG' (kategoria='${SW_JSON:-auto}', limit=${SW_LIMIT:-0})"
+                            MODE_TYPE="AUTO_TRANSLATE"
+                            MODE_CAT="$PINNED_AUTO_LANG"
+                            if [ -n "$PINNED_AUTO_JSON" ]; then
+                                MODE_COUNT="$PINNED_AUTO_JSON"
+                                MODE_EXTRA="${PINNED_AUTO_LIMIT:-0}"
+                            else
+                                STRICT_TARGET=$(TARGET_LANGS="$PINNED_AUTO_LANG" select_auto_translate_target_strict)
+                                S_TYPE=$(echo "$STRICT_TARGET" | cut -d: -f1)
+                                S_LANG=$(echo "$STRICT_TARGET" | cut -d: -f2)
+                                S_JSON=$(echo "$STRICT_TARGET" | cut -d: -f3)
+                                S_EXTRA=$(echo "$STRICT_TARGET" | cut -d: -f4)
+                                if [ "$S_TYPE" = "AUTO_TRANSLATE" ]; then
+                                    MODE_CAT="$S_LANG"
+                                    MODE_COUNT="$S_JSON"
+                                    MODE_EXTRA="$S_EXTRA"
+                                else
+                                    MODE_TYPE="IDLE"
+                                    MODE_CAT="focus_no_pending"
+                                    MODE_COUNT="0"
+                                    MODE_EXTRA="FOCUS"
+                                fi
+                            fi
+                            MODE_EXTRA2="AUTO"
+                        else
+                            echo "⚠️ FOCUS: brak języka (użyj FOCUS:<lang>[:json[:limit]])"
+                        fi
+                        ;;
+                    UNFOCUS)
+                        echo "🔓 UNFOCUS: zdejmuję przypięcie języka"
+                        PINNED_AUTO_LANG=""
+                        PINNED_AUTO_JSON=""
+                        PINNED_AUTO_LIMIT=0
+                        PINNED_AUTO_JSON_LIST=""
+                        PINNED_AUTO_JSON_IDX=0
+                        update_worker_config "focus_lang" "" >/dev/null 2>&1 || true
+                        update_worker_config "focus_category" "" >/dev/null 2>&1 || true
+                        ;;
+                    LANG:*)
+                        # Format: LANG:<lang> — przypiąj język (worker cyklicznie przechodzi pliki)
+                        # Format: LANG:<lang>:<plik1>,<plik2>,... — przypiąj język + konkretne pliki
+                        # Format: LANG:random — powrót do losowego trybu
+                        LANG_ARG=$(echo "$CMD" | cut -d: -f2)
+                        LANG_FILES=$(echo "$CMD" | cut -d: -f3-)
+                        
+                        if [ "$LANG_ARG" = "random" ] || [ "$LANG_ARG" = "RANDOM" ] || [ "$LANG_ARG" = "*" ]; then
+                            echo "🎲 LANG:random — przywracam tryb losowy (wszystkie języki)"
+                            PINNED_AUTO_LANG=""
+                            PINNED_AUTO_JSON=""
+                            PINNED_AUTO_LIMIT=0
+                            PINNED_AUTO_JSON_LIST=""
+                            PINNED_AUTO_JSON_IDX=0
+                            update_worker_config "focus_lang" "" >/dev/null 2>&1 || true
+                            update_worker_config "focus_category" "" >/dev/null 2>&1 || true
+                        elif [ -z "$LANG_ARG" ]; then
+                            echo "⚠️ LANG: brak języka (użyj LANG:<lang> lub LANG:<lang>:<plik1>,<plik2>,...  lub LANG:random)"
+                        else
+                            PINNED_AUTO_LANG="$LANG_ARG"
+                            PINNED_AUTO_LIMIT=0
+                            
+                            if [ -n "$LANG_FILES" ]; then
+                                # Multi-file mode: LANG:de:npc.json,items.json,spells.json
+                                PINNED_AUTO_JSON_LIST="$LANG_FILES"
+                                PINNED_AUTO_JSON_IDX=0
+                                # Ustaw pierwszy plik jako aktualny
+                                FIRST_FILE=$(echo "$LANG_FILES" | cut -d, -f1)
+                                PINNED_AUTO_JSON="$FIRST_FILE"
+                                
+                                FILE_COUNT=$(echo "$LANG_FILES" | tr ',' '\n' | wc -l)
+                                echo "🌐 LANG: przypinam język '$LANG_ARG' z $FILE_COUNT plikami: $LANG_FILES"
+                                echo "   → zaczynamy od: $FIRST_FILE"
+                            else
+                                # Single-lang mode: auto-wybór plików
+                                PINNED_AUTO_JSON=""
+                                PINNED_AUTO_JSON_LIST=""
+                                PINNED_AUTO_JSON_IDX=0
+                                echo "🌐 LANG: przypinam język '$LANG_ARG' (auto-wybór plików z pending)"
+                            fi
+                            
+                            update_worker_config "focus_lang" "$LANG_ARG" >/dev/null 2>&1 || true
+                            [ -n "$LANG_FILES" ] && update_worker_config "focus_category" "$LANG_FILES" >/dev/null 2>&1 || true
+                            
+                            # Ustaw tryb na AUTO_TRANSLATE
+                            MODE_TYPE="AUTO_TRANSLATE"
+                            MODE_CAT="$PINNED_AUTO_LANG"
+                            if [ -n "$PINNED_AUTO_JSON" ]; then
+                                MODE_COUNT="$PINNED_AUTO_JSON"
+                                MODE_EXTRA="${PINNED_AUTO_LIMIT:-0}"
+                            else
+                                STRICT_TARGET=$(TARGET_LANGS="$PINNED_AUTO_LANG" select_auto_translate_target_strict)
+                                S_TYPE=$(echo "$STRICT_TARGET" | cut -d: -f1)
+                                S_LANG=$(echo "$STRICT_TARGET" | cut -d: -f2)
+                                S_JSON=$(echo "$STRICT_TARGET" | cut -d: -f3)
+                                S_EXTRA=$(echo "$STRICT_TARGET" | cut -d: -f4)
+                                if [ "$S_TYPE" = "AUTO_TRANSLATE" ]; then
+                                    MODE_CAT="$S_LANG"
+                                    MODE_COUNT="$S_JSON"
+                                    MODE_EXTRA="$S_EXTRA"
+                                else
+                                    MODE_TYPE="IDLE"
+                                    MODE_CAT="lang_no_pending"
+                                    MODE_COUNT="0"
+                                    MODE_EXTRA="LANG"
+                                fi
+                            fi
+                            MODE_EXTRA2="AUTO"
+                        fi
+                        ;;
+                    TEST:*)
+                        # Format: TEST:<lang> — pełen cykl testowy: translate + validate + crossref
+                        T_LANG=$(echo "$CMD" | cut -d: -f2)
+                        echo "🧪 TEST: wymuszam pełen cykl testowy dla języka '$T_LANG'"
+                        PINNED_AUTO_LANG="$T_LANG"
+                        PINNED_AUTO_JSON=""
+                        PINNED_AUTO_LIMIT=0
+                        FORCE_LANG_VALIDATION="$T_LANG"
+
+                        # Automatyczny strict target
+                        STRICT_TARGET=$(TARGET_LANGS="$T_LANG" select_auto_translate_target_strict)
+                        S_TYPE=$(echo "$STRICT_TARGET" | cut -d: -f1)
+                        S_LANG=$(echo "$STRICT_TARGET" | cut -d: -f2)
+                        S_JSON=$(echo "$STRICT_TARGET" | cut -d: -f3)
+                        S_EXTRA=$(echo "$STRICT_TARGET" | cut -d: -f4)
+                        if [ "$S_TYPE" = "AUTO_TRANSLATE" ]; then
+                            MODE_TYPE="AUTO_TRANSLATE"
+                            MODE_CAT="$S_LANG"
+                            MODE_COUNT="$S_JSON"
+                            MODE_EXTRA="$S_EXTRA"
+                        else
+                            MODE_TYPE="IDLE"
+                            MODE_CAT="test_no_pending"
+                            MODE_COUNT="0"
+                            MODE_EXTRA="TEST"
+                        fi
+                        MODE_EXTRA2="AUTO"
+                        STOP_AFTER_CYCLE="true"
+                        ;;
+                    TEST_ALL)
+                        # Wstaw wszystkie języki do kolejki testowej
+                        echo "🧪 TEST_ALL: tworzę kolejkę testową dla WSZYSTKICH języków"
+                        python3 - "$WORKER_CONFIG_FILE" << 'TESTALLPY'
+import json, os, re, sys
+
+path = sys.argv[1]
+try:
+    with open(path, "r", encoding="utf-8") as f:
+        cfg = json.load(f)
+except Exception:
+    cfg = {}
+
+i18n_dir = "i18n"
+langs = []
+if os.path.isdir(i18n_dir):
+    for name in sorted(os.listdir(i18n_dir)):
+        p = os.path.join(i18n_dir, name)
+        if os.path.isdir(p) and name != "en" and re.fullmatch(r"[a-z]{2}(?:_[A-Z]{2})?", name):
+            langs.append(name)
+
+cfg["test_all_langs_queue"] = langs
+with open(path, "w", encoding="utf-8") as f:
+    json.dump(cfg, f, indent=2, ensure_ascii=False)
+print(f"Dodano {len(langs)} języków do kolejki: {' '.join(langs[:10])}...")
+TESTALLPY
+                        ;;
+                    GT:on|GT:ON)
+                        echo "🌍 GT: włączam Google Translate"
+                        USE_GOOGLE_TRANSLATE=true
+                        update_worker_config "use_gt" "true" >/dev/null 2>&1 || true
+                        ;;
+                    GT:off|GT:OFF)
+                        echo "🌍 GT: wyłączam Google Translate"
+                        USE_GOOGLE_TRANSLATE=false
+                        update_worker_config "use_gt" "false" >/dev/null 2>&1 || true
+                        ;;
+                    BATCH:*)
+                        NEW_BATCH=$(echo "$CMD" | cut -d: -f2)
+                        echo "📊 BATCH: ustawiam translate_limit=$NEW_BATCH"
+                        TRANSLATE_LIMIT="$NEW_BATCH"
+                        USER_TRANSLATE_LIMIT="$NEW_BATCH"
+                        update_worker_config "translate_limit" "$NEW_BATCH" >/dev/null 2>&1 || true
+                        ;;
+                    SET:*)
+                        # Format: SET:key=value — zmienia wartość w worker_config.json
+                        SET_PAIR=$(echo "$CMD" | cut -d: -f2-)
+                        SET_KEY=$(echo "$SET_PAIR" | cut -d= -f1)
+                        SET_VAL=$(echo "$SET_PAIR" | cut -d= -f2-)
+                        if [ -n "$SET_KEY" ] && [ -n "$SET_VAL" ]; then
+                            echo "⚙️ SET: $SET_KEY=$SET_VAL"
+                            update_worker_config "$SET_KEY" "$SET_VAL"
+                            # Reload config aby zmiany zaczęły działać od razu
+                            load_worker_config
+                        else
+                            echo "⚠️ SET: nieprawidłowy format (użyj SET:key=value)"
+                        fi
+                        ;;
+                    REPORT)
+                        # Wygeneruj skrócony raport statusu języków
+                        echo "📊 REPORT: generuję raport..."
+                        python3 << 'REPORTPY'
+import json, os, re
+
+i18n_dir = "i18n"
+status_dir = os.path.join(i18n_dir, "status")
+en_dir = os.path.join(i18n_dir, "en")
+
+# Zlicz klucze EN
+en_total = 0
+en_files = {}
+if os.path.isdir(en_dir):
+    for f in sorted(os.listdir(en_dir)):
+        if f.endswith(".json"):
+            try:
+                data = json.load(open(os.path.join(en_dir, f), encoding="utf-8"))
+                en_files[f] = len(data)
+                en_total += len(data)
+            except Exception:
+                pass
+
+# Zlicz coverage per-lang
+langs = []
+if os.path.isdir(i18n_dir):
+    for name in sorted(os.listdir(i18n_dir)):
+        p = os.path.join(i18n_dir, name)
+        if os.path.isdir(p) and name != "en" and re.fullmatch(r"[a-z]{2}(?:_[A-Z]{2})?", name):
+            langs.append(name)
+
+print(f"📊 Klucze EN: {en_total} (w {len(en_files)} plikach)")
+print(f"📊 Języki: {len(langs)}")
+print(f"{'─'*60}")
+print(f"{'Język':<8} {'Kluczy':<10} {'Coverage':<10} {'Tier':<6}")
+print(f"{'─'*60}")
+
+# Load tier config
+tier1 = set(os.environ.get("TIER1_LANGS", "pl es").split())
+tier2 = set(os.environ.get("TIER2_LANGS", "de pt ru tr fr it").split())
+
+for lang in langs:
+    lang_total = 0
+    translated = 0
+    for fname, en_count in en_files.items():
+        lpath = os.path.join(i18n_dir, lang, fname)
+        if os.path.exists(lpath):
+            try:
+                ldata = json.load(open(lpath, encoding="utf-8"))
+                lang_total += len(ldata)
+                # Policz przetłumaczone (nie-placeholder, nie-identical do EN)
+                en_data = json.load(open(os.path.join(en_dir, fname), encoding="utf-8"))
+                for k, v in ldata.items():
+                    ev = en_data.get(k, "")
+                    if v and str(v) != str(ev) and not str(v).startswith("["):
+                        translated += 1
+            except Exception:
+                pass
+
+    pct = (translated / en_total * 100) if en_total > 0 else 0
+    tier = "T1" if lang in tier1 else ("T2" if lang in tier2 else "T3")
+    bar = "█" * int(pct / 5) + "░" * (20 - int(pct / 5))
+    print(f"{lang:<8} {translated:<10} {pct:>5.1f}%     {tier}")
+
+print(f"{'─'*60}")
+REPORTPY
+                        continue
+                        ;;
+                    LANGS)
+                        # Lista dostępnych języków
+                        echo "🌐 LANGS: dostępne języki:"
+                        ls -d i18n/*/  2>/dev/null | sed 's|i18n/||;s|/||' | grep -v '^en$' | sort | tr '\n' ' '
+                        echo ""
+                        continue
+                        ;;
+                    CONFIG)
+                        # Wyświetl aktualny config
+                        echo "⚙️ CONFIG: aktualna konfiguracja runtime:"
+                        if [ -f "$WORKER_CONFIG_FILE" ]; then
+                            python3 -c "import json; cfg=json.load(open('$WORKER_CONFIG_FILE')); [print(f'  {k}: {v}') for k,v in cfg.items() if not k.startswith('_')]"
+                        else
+                            echo "  (brak pliku $WORKER_CONFIG_FILE)"
+                        fi
+                        echo ""
+                        echo "📌 Zmienne aktywne:"
+                        echo "  USE_GOOGLE_TRANSLATE=$USE_GOOGLE_TRANSLATE"
+                        echo "  GT_BATCH_SIZE=$GT_BATCH_SIZE"
+                        echo "  TRANSLATE_LIMIT=$TRANSLATE_LIMIT"
+                        echo "  PARALLEL_LANGS_PER_CYCLE=$PARALLEL_LANGS_PER_CYCLE"
+                        echo "  ADAPTIVE_BATCH_ENABLED=$ADAPTIVE_BATCH_ENABLED"
+                        echo "  CROSSREF_AUTO_FIX=$CROSSREF_AUTO_FIX"
+                        echo "  PINNED_AUTO_LANG=${PINNED_AUTO_LANG:-<none>}"
+                        echo "  PINNED_AUTO_JSON=${PINNED_AUTO_JSON:-<auto>}"
+                        echo "  PINNED_AUTO_JSON_LIST=${PINNED_AUTO_JSON_LIST:-<none>}"
+                        echo "  PINNED_AUTO_JSON_IDX=${PINNED_AUTO_JSON_IDX:-0}"
+                        continue
                         ;;
                     *)
                         echo "⚠️ Nieznana komenda: $CMD"
@@ -10154,21 +18938,87 @@ BEGIN { done=0 }
                 MODE_EXTRA=$(echo "$MODE_RESULT" | cut -d: -f4)
             fi
             
-            # --translations-only: wymusza TRANSLATION_SYNC zamiast MIGRATION
-            if [ "$TRANSLATIONS_ONLY" = "true" ] && [ "$MODE_TYPE" = "MIGRATION" ]; then
-                echo "🌐 --translations-only: pomijam MIGRATION, przechodzę do TRANSLATION_SYNC"
-                MODE_TYPE="TRANSLATION_SYNC"
-                MODE_CAT=""
-                MODE_COUNT="0"
+            # --translations-only strict: wyłącznie tłumaczenia istniejących kluczy, bez dodawania nowych.
+            # Multi-file cycling: jeśli PINNED_AUTO_JSON_LIST jest ustawiona, cyklicznie przechodź pliki
+            if [ -n "${PINNED_AUTO_JSON_LIST:-}" ] && [ -n "${PINNED_AUTO_LANG:-}" ] && [ "$MODE_EXTRA2" != "AUTO" ]; then
+                # Oblicz ile plików w liście
+                _FILE_COUNT=$(echo "$PINNED_AUTO_JSON_LIST" | tr ',' '\n' | wc -l)
+                if [ "$_FILE_COUNT" -gt 1 ]; then
+                    # Przejdź do następnego pliku w liście
+                    PINNED_AUTO_JSON_IDX=$(( (PINNED_AUTO_JSON_IDX + 1) % _FILE_COUNT ))
+                    _NEXT_FILE=$(echo "$PINNED_AUTO_JSON_LIST" | tr ',' '\n' | sed -n "$((PINNED_AUTO_JSON_IDX + 1))p" | tr -d ' ')
+                    if [ -n "$_NEXT_FILE" ]; then
+                        PINNED_AUTO_JSON="$_NEXT_FILE"
+                        echo "📂 LANG multi-file: przechodzę do pliku [$((PINNED_AUTO_JSON_IDX + 1))/$_FILE_COUNT]: $_NEXT_FILE"
+                    fi
+                fi
+            fi
+
+            if [ "$TRANSLATIONS_ONLY" = "true" ] && [ -n "$PINNED_AUTO_LANG" ] && [ "$MODE_EXTRA2" != "AUTO" ] && [ "$MODE_EXTRA2" != "SYNC" ]; then
+                if [ -n "$PINNED_AUTO_JSON" ]; then
+                    MODE_TYPE="AUTO_TRANSLATE"
+                    MODE_CAT="$PINNED_AUTO_LANG"
+                    MODE_COUNT="$PINNED_AUTO_JSON"
+                    MODE_EXTRA="${PINNED_AUTO_LIMIT:-0}"
+                    MODE_EXTRA2="AUTO"
+                    echo "📌 PINNED LANG: $PINNED_AUTO_LANG/$PINNED_AUTO_JSON (limit=${PINNED_AUTO_LIMIT:-0})"
+                else
+                    STRICT_TARGET=$(TARGET_LANGS="$PINNED_AUTO_LANG" select_auto_translate_target_strict)
+                    S_TYPE=$(echo "$STRICT_TARGET" | cut -d: -f1)
+                    S_LANG=$(echo "$STRICT_TARGET" | cut -d: -f2)
+                    S_JSON=$(echo "$STRICT_TARGET" | cut -d: -f3)
+                    S_EXTRA=$(echo "$STRICT_TARGET" | cut -d: -f4)
+                    if [ "$S_TYPE" = "AUTO_TRANSLATE" ]; then
+                        MODE_TYPE="$S_TYPE"
+                        MODE_CAT="$S_LANG"
+                        MODE_COUNT="$S_JSON"
+                        MODE_EXTRA="$S_EXTRA"
+                        MODE_EXTRA2="AUTO"
+                        echo "📌 PINNED LANG: $S_LANG/$S_JSON (pending=$S_EXTRA)"
+                    fi
+                fi
+            fi
+
+            if [ "$TRANSLATIONS_ONLY" = "true" ] && [ "$MODE_TYPE" != "AUTO_TRANSLATE" ] && [ "$MODE_EXTRA2" != "SYNC" ]; then
+                echo "🌐 --translations-only: pomijam MIGRATION/SYNC, wybieram AUTO_TRANSLATE STRICT"
+                STRICT_TARGET=$(select_auto_translate_target_strict)
+                MODE_TYPE=$(echo "$STRICT_TARGET" | cut -d: -f1)
+                MODE_CAT=$(echo "$STRICT_TARGET" | cut -d: -f2)
+                MODE_COUNT=$(echo "$STRICT_TARGET" | cut -d: -f3)
+                MODE_EXTRA=$(echo "$STRICT_TARGET" | cut -d: -f4)
+
+                # P1: jeśli strict blokuje przez brakujące pliki/klucze, uruchom automatyczny backfill SYNC
+                if [ "$MODE_TYPE" = "IDLE" ] && [ "$MODE_CAT" = "translation_only_blocked" ]; then
+                    SYNC_TARGET=$(select_translation_sync_target)
+                    SYNC_LANG=$(echo "$SYNC_TARGET" | cut -d: -f1)
+                    SYNC_JSON=$(echo "$SYNC_TARGET" | cut -d: -f2)
+                    SYNC_MISSING=$(echo "$SYNC_TARGET" | cut -d: -f3)
+                    SYNC_MISSING=${SYNC_MISSING:-0}
+                    if [ "$SYNC_MISSING" -gt 0 ] 2>/dev/null; then
+                        echo "🔧 P1: strict blocked → przełączam na TRANSLATION_SYNC ($SYNC_LANG/$SYNC_JSON, missing=$SYNC_MISSING)"
+                        MODE_TYPE="TRANSLATION_SYNC"
+                        MODE_CAT="$SYNC_LANG"
+                        MODE_COUNT="$SYNC_JSON"
+                        MODE_EXTRA="$SYNC_MISSING"
+                        MODE_EXTRA2="SYNC"
+                    fi
+                fi
             fi
             
-            echo "📋 Dispatcher: $MODE_TYPE | Kategoria: $MODE_CAT | Ilość: ${MODE_COUNT:-0}"
+            if [ "$MODE_TYPE" = "AUTO_TRANSLATE" ]; then
+                echo "📋 Dispatcher: $MODE_TYPE | Język: $MODE_CAT | Plik: ${MODE_COUNT:--} | Pending: ${MODE_EXTRA:-0}"
+            else
+                echo "📋 Dispatcher: $MODE_TYPE | Kategoria: $MODE_CAT | Ilość: ${MODE_COUNT:-0}"
+            fi
             echo ""
 
             status_update_activity "running" "$CYCLE" "${MODE_TYPE:-IDLE}" "dispatch" "${MODE_CAT:-}" "-" "selected" 0 "${MODE_COUNT:-0}" "items" 0
+            DISPATCH_T1=$(now_ms)
+            status_log_cycle_perf "$CYCLE" "${MODE_TYPE:-IDLE}" "${MODE_CAT:--}" "dispatch" "$((DISPATCH_T1 - DISPATCH_T0))" "count=${MODE_COUNT:-0}"
             
             # Zlicz klucze PRZED przetwarzaniem (do wykrycia czy coś dodano)
             KEYS_BEFORE=$(python3 -c "import json,os; print(sum(len(json.load(open(f'i18n/en/{f}'))) for f in os.listdir('i18n/en') if f.endswith('.json')))" 2>/dev/null || echo 0)
+            MODE_T0=$(now_ms)
             
             case "$MODE_TYPE" in
                 MIGRATION)
@@ -10185,6 +19035,7 @@ BEGIN { done=0 }
                     if [ "$MODE_CAT" = "pending_skip" ]; then
                         echo "   ⏳ Wszystkie kategorie są tymczasowo pominięte (skip), czekam..."
                         status_update_activity "running" "$CYCLE" "MIGRATION" "pending_skip" "$MODE_CAT" "-" "all categories skipped" 0 0 "files" 0
+                        log_pending_skip_event "$CYCLE" "${MODE_COUNT:-0}" "backoff"
                         sleep 30
                         continue
                     fi
@@ -10521,30 +19372,147 @@ PY
                     fi
                     status_log_op "$CYCLE" "TRANSLATION_SYNC" "SYNC_FILE_DONE" "$MODE_CAT" "$MODE_COUNT" "ok" "lang=${MODE_CAT} file=${MODE_COUNT}" "$SYNCED_KEYS" "$SYNC_FILES_CHANGED"
 
+                    # P1: po sync czyść cache strict selector, by następny wybór użył świeżych danych
+                    if [ "$SYNCED_KEYS" -gt 0 ] 2>/dev/null; then
+                        rm -f "$STATUS_DIR/translation_strict_candidates_cache.json" 2>/dev/null || true
+                    fi
+
                     # LIVE: zakończ etap sync dla czytelnego dashboardu
                     status_update_activity "running" "$CYCLE" "TRANSLATION_SYNC" "sync_done" "$MODE_CAT" "$MODE_COUNT" "synced" "$SYNCED_KEYS" "$SYNCED_KEYS" "keys" 0
                     ;;
                 AUTO_TRANSLATE)
                     echo "🌍 TRYB: AUTO TRANSLATE (język: $MODE_CAT, plik: $MODE_COUNT, kluczy: $MODE_EXTRA)"
+
+                    # === 8.3: Adaptive batch tuning ===
+                    compute_adaptive_batch
+
+                    if [[ "$MODE_COUNT" =~ ^(client|php|html|ui|otclient_modules|otclient_data|otclient_src|otclient_mods|otclient_tools)\.json$ ]]; then
+                        echo "   📁 Folder: ${MODE_CAT^^} - Klient"
+                    else
+                        echo "   📁 Folder: ${MODE_CAT^^} - Serwer"
+                    fi
                     
                     # Automatyczne tłumaczenie BEZ interakcji!
                     status_update_activity "running" "$CYCLE" "AUTO_TRANSLATE" "auto_start" "$MODE_CAT" "$MODE_COUNT" "auto translate" 0 0 "keys" 0
-                    read -r AT_TRANSLATED AT_PLACEHOLDERS <<< "$(auto_translate_keys "$MODE_CAT" "$MODE_COUNT" "$MODE_EXTRA")"
+                    read -r AT_TRANSLATED AT_PLACEHOLDERS AT_GUARD_FAIL AT_GUARD_PLACEHOLDER AT_GUARD_COMMAND AT_GUARD_PIPE AT_SKIPPED_MISSING_FILE AT_SKIPPED_MISSING_KEY AT_SKIPPED_NOT_PLACEHOLDER <<< "$(auto_translate_keys "$MODE_CAT" "$MODE_COUNT" "$MODE_EXTRA")"
                     AT_TRANSLATED=${AT_TRANSLATED:-0}
                     AT_PLACEHOLDERS=${AT_PLACEHOLDERS:-0}
+                    AT_GUARD_FAIL=${AT_GUARD_FAIL:-0}
+                    AT_GUARD_PLACEHOLDER=${AT_GUARD_PLACEHOLDER:-0}
+                    AT_GUARD_COMMAND=${AT_GUARD_COMMAND:-0}
+                    AT_GUARD_PIPE=${AT_GUARD_PIPE:-0}
+                    AT_SKIPPED_MISSING_FILE=${AT_SKIPPED_MISSING_FILE:-0}
+                    AT_SKIPPED_MISSING_KEY=${AT_SKIPPED_MISSING_KEY:-0}
+                    AT_SKIPPED_NOT_PLACEHOLDER=${AT_SKIPPED_NOT_PLACEHOLDER:-0}
                     AT_FILES_CHANGED=0
                     if [ "$AT_TRANSLATED" -gt 0 ] 2>/dev/null || [ "$AT_PLACEHOLDERS" -gt 0 ] 2>/dev/null; then
                         AT_FILES_CHANGED=1
                     fi
-                    status_log_op "$CYCLE" "AUTO_TRANSLATE" "AUTO_TRANSLATE_DONE" "$MODE_CAT" "$MODE_COUNT" "ok" "lang=${MODE_CAT} file=${MODE_COUNT}" "" "$AT_FILES_CHANGED" "" "$AT_TRANSLATED" "$AT_PLACEHOLDERS"
+
+                    append_translation_guard_report "$CYCLE" "$MODE_CAT" "$MODE_COUNT" "$AT_TRANSLATED" "$AT_PLACEHOLDERS" "$AT_GUARD_FAIL" "$AT_GUARD_PLACEHOLDER" "$AT_GUARD_COMMAND" "$AT_GUARD_PIPE" "$AT_SKIPPED_MISSING_FILE" "$AT_SKIPPED_MISSING_KEY" "$AT_SKIPPED_NOT_PLACEHOLDER"
+
+                    AUTO_RESULT_STATUS="ok"
+                    AUTO_DETAIL="lang=${MODE_CAT} file=${MODE_COUNT}"
+                    if [ "$AT_SKIPPED_MISSING_FILE" -gt 0 ] 2>/dev/null || [ "$AT_SKIPPED_MISSING_KEY" -gt 0 ] 2>/dev/null; then
+                        AUTO_RESULT_STATUS="warn"
+                        AUTO_DETAIL="${AUTO_DETAIL} strict_skip missing_file=${AT_SKIPPED_MISSING_FILE} missing_key=${AT_SKIPPED_MISSING_KEY} skipped_done=${AT_SKIPPED_NOT_PLACEHOLDER}"
+                        status_log_error "$CYCLE" "AUTO_TRANSLATE" "AUTO_TRANSLATE_STRICT_SKIP" "$MODE_CAT" "$MODE_COUNT" "strict_skip missing_file=$AT_SKIPPED_MISSING_FILE missing_key=$AT_SKIPPED_MISSING_KEY" "skipped_not_placeholder=$AT_SKIPPED_NOT_PLACEHOLDER"
+                    fi
+                    if [ "$AT_SKIPPED_NOT_PLACEHOLDER" -gt 0 ] 2>/dev/null; then
+                        AUTO_RESULT_STATUS="warn"
+                        AUTO_DETAIL="${AUTO_DETAIL} strict_skipped_done=${AT_SKIPPED_NOT_PLACEHOLDER}"
+                        status_log_error "$CYCLE" "AUTO_TRANSLATE" "AUTO_TRANSLATE_NO_PROGRESS" "$MODE_CAT" "$MODE_COUNT" "strict_skipped_done=$AT_SKIPPED_NOT_PLACEHOLDER translated=$AT_TRANSLATED" "review placeholder/en-copy backlog"
+                    fi
+                    if [ "$AT_GUARD_FAIL" -gt 0 ] 2>/dev/null; then
+                        AUTO_RESULT_STATUS="warn"
+                        AUTO_DETAIL="${AUTO_DETAIL} guard_fail=${AT_GUARD_FAIL} placeholder=${AT_GUARD_PLACEHOLDER} command=${AT_GUARD_COMMAND} pipe=${AT_GUARD_PIPE}"
+                        status_log_error "$CYCLE" "AUTO_TRANSLATE" "AUTO_TRANSLATE_GUARD" "$MODE_CAT" "$MODE_COUNT" "guard_fail=$AT_GUARD_FAIL" "placeholder=$AT_GUARD_PLACEHOLDER command=$AT_GUARD_COMMAND pipe=$AT_GUARD_PIPE"
+                        echo "   ⚠️ Guard: fail=$AT_GUARD_FAIL (placeholder=$AT_GUARD_PLACEHOLDER, command=$AT_GUARD_COMMAND, pipe=$AT_GUARD_PIPE)"
+                    fi
+
+                    status_log_op "$CYCLE" "AUTO_TRANSLATE" "AUTO_TRANSLATE_DONE" "$MODE_CAT" "$MODE_COUNT" "$AUTO_RESULT_STATUS" "$AUTO_DETAIL" "" "$AT_FILES_CHANGED" "" "$AT_TRANSLATED" "$AT_PLACEHOLDERS"
 
                     # LIVE: zakończ etap auto dla czytelnego dashboardu
-                    status_update_activity "running" "$CYCLE" "AUTO_TRANSLATE" "auto_done" "$MODE_CAT" "$MODE_COUNT" "translated" "$AT_TRANSLATED" "$AT_TRANSLATED" "keys" 0
+                    status_update_activity "running" "$CYCLE" "AUTO_TRANSLATE" "auto_done" "$MODE_CAT" "$MODE_COUNT" "translated=$AT_TRANSLATED guard_fail=$AT_GUARD_FAIL strict_missing_key=$AT_SKIPPED_MISSING_KEY strict_skipped_done=$AT_SKIPPED_NOT_PLACEHOLDER" "$AT_TRANSLATED" "$AT_TRANSLATED" "keys" 0
+
+                    # === 8.4: Parallel language processing ===
+                    # Po przetworzeniu głównego targetu, przetłumacz dodatkowe języki w tym samym cyklu
+                    if [ "${PARALLEL_LANGS_PER_CYCLE:-1}" -gt 1 ] 2>/dev/null && [ "$TRANSLATIONS_ONLY" = "true" ]; then
+                        PARALLEL_DONE=1  # już przetworzony 1 język
+                        PARALLEL_PRIMARY_LANG="$MODE_CAT"
+                        while [ "$PARALLEL_DONE" -lt "${PARALLEL_LANGS_PER_CYCLE:-3}" ]; do
+                            # Wyczyść cache strict selector aby wybrał nowy target
+                            rm -f "$STATUS_DIR/translation_strict_candidates_cache.json" 2>/dev/null || true
+                            PARALLEL_TARGET=$(select_auto_translate_target_strict)
+                            P_TYPE=$(echo "$PARALLEL_TARGET" | cut -d: -f1)
+                            P_LANG=$(echo "$PARALLEL_TARGET" | cut -d: -f2)
+                            P_FILE=$(echo "$PARALLEL_TARGET" | cut -d: -f3)
+                            P_EXTRA=$(echo "$PARALLEL_TARGET" | cut -d: -f4)
+
+                            # Jeśli selector zwrócił IDLE lub ten sam język, zakończ parallel
+                            if [ "$P_TYPE" != "AUTO_TRANSLATE" ]; then
+                                break
+                            fi
+                            if [ "$P_LANG" = "$PARALLEL_PRIMARY_LANG" ]; then
+                                # Ten sam język — pomiń i zakończ (next cycle will advance)
+                                break
+                            fi
+
+                            echo "   🔀 Parallel [$((PARALLEL_DONE+1))/${PARALLEL_LANGS_PER_CYCLE}]: $P_LANG/$P_FILE ($P_EXTRA kluczy)"
+                            status_update_activity "running" "$CYCLE" "AUTO_TRANSLATE" "parallel_start" "$P_LANG" "$P_FILE" "parallel auto translate" 0 0 "keys" 0
+
+                            read -r P_TRANSLATED P_PLACEHOLDERS P_GUARD_FAIL P_GUARD_PLACEHOLDER P_GUARD_COMMAND P_GUARD_PIPE P_SKIP_FILE P_SKIP_KEY P_SKIP_DONE <<< "$(auto_translate_keys "$P_LANG" "$P_FILE" "$P_EXTRA")"
+                            P_TRANSLATED=${P_TRANSLATED:-0}
+                            P_GUARD_FAIL=${P_GUARD_FAIL:-0}
+
+                            append_translation_guard_report "$CYCLE" "$P_LANG" "$P_FILE" "${P_TRANSLATED:-0}" "${P_PLACEHOLDERS:-0}" "${P_GUARD_FAIL:-0}" "${P_GUARD_PLACEHOLDER:-0}" "${P_GUARD_COMMAND:-0}" "${P_GUARD_PIPE:-0}" "${P_SKIP_FILE:-0}" "${P_SKIP_KEY:-0}" "${P_SKIP_DONE:-0}"
+
+                            echo "   🔀 Parallel result: $P_LANG/$P_FILE → translated=$P_TRANSLATED guard_fail=$P_GUARD_FAIL"
+                            status_log_op "$CYCLE" "AUTO_TRANSLATE" "PARALLEL_TRANSLATE_DONE" "$P_LANG" "$P_FILE" "ok" "parallel lang=${P_LANG} file=${P_FILE}" "" "" "" "$P_TRANSLATED" "$P_PLACEHOLDERS"
+
+                            PARALLEL_DONE=$((PARALLEL_DONE + 1))
+                        done
+                        echo "   📊 Parallel: przetworzono $PARALLEL_DONE język(ów) w cyklu $CYCLE"
+                    fi
+
+                    # === Sekcja 12.5: Repair identical_to_en bonus round ===
+                    repair_identical_bonus_round "$CYCLE"
+
+                    # Cykliczny audyt jakości (co QUALITY_AUDIT_INTERVAL cykli)
+                    run_quality_audit "$CYCLE"
+
+                    # === Faza 6: Formalna walidacja tierów ===
+                    validate_tier_quality "$CYCLE"
+
+                    # Pełna walidacja per-język (co LANG_VALIDATION_INTERVAL cykli)
+                    if [ -n "$FORCE_LANG_VALIDATION" ] && [ "$FORCE_LANG_VALIDATION" != "all" ]; then
+                        run_full_lang_validation "$CYCLE" "$FORCE_LANG_VALIDATION"
+                    else
+                        run_full_lang_validation "$CYCLE"
+                    fi
                     ;;
                 IDLE)
                     echo "✅ TRYB: IDLE - Wszystko zrobione!"
                     echo "   Migracja: ✅ | Tłumaczenia: ✅"
                     echo ""
+
+                    if [ "$MODE_CAT" = "translation_only_blocked" ]; then
+                        echo "⚠️ TRANSLATIONS_ONLY STRICT: blokery uniemożliwiają dalsze tłumaczenie bez dodawania kluczy."
+                        echo "   Sprawdź: i18n/status/translation_blockers_latest.json"
+                    fi
+
+                    if [ "$TRANSLATIONS_ONLY" = "true" ]; then
+                        echo "🌐 TRANSLATIONS_ONLY: pomijam skany migracji, wykonuję tylko walidację tłumaczeń"
+                        status_update_activity "running" "$CYCLE" "IDLE" "translation_only_validation" "-" "-" "translation-only validation" 0 0 "steps" 0
+                        validate_translation_quality
+                        status_log_op "$CYCLE" "IDLE" "TRANSLATION_ONLY_IDLE_DONE" "-" "-" "ok" "validation only"
+                        if [ "${STOP_AFTER_CYCLE:-false}" = "true" ]; then
+                            echo "🛑 ONCE: kończę po cyklu translation-only"
+                        else
+                            sleep 30
+                        fi
+                        continue
+                    fi
                     
                     # Pełny cykl IDLE: skan + walidacja + dokumentacja + raporty
                     status_update_activity "running" "$CYCLE" "IDLE" "idle_cycle" "-" "-" "idle cycle" 0 0 "steps" 0
@@ -10567,6 +19535,8 @@ PY
                     if [ "${STOP_AFTER_CYCLE:-false}" = "true" ]; then
                         echo "🛑 ONCE: pomijam IDLE sleep"
                     else
+                        # Aktualizuj heartbeat przed sleep, żeby dashboard nie pokazywał STALE
+                        status_update_activity "running" "$CYCLE" "IDLE" "sleeping" "-" "-" "idle sleep 300s" 0 0 "units" 0
                         sleep 300
                     fi
                     ;;
@@ -10580,6 +19550,42 @@ PY
                     echo "⚠️ Nieznany tryb: $MODE_TYPE"
                     ;;
             esac
+            MODE_T1=$(now_ms)
+            status_log_cycle_perf "$CYCLE" "${MODE_TYPE:-IDLE}" "${MODE_CAT:--}" "mode_run" "$((MODE_T1 - MODE_T0))" "mode=${MODE_TYPE:-IDLE}"
+
+            # Wymuszona walidacja po cyklu także dla trybów innych niż AUTO_TRANSLATE
+            if [ -n "$FORCE_LANG_VALIDATION" ] && [ "${MODE_TYPE:-}" != "AUTO_TRANSLATE" ]; then
+                if [ "$FORCE_LANG_VALIDATION" = "all" ]; then
+                    run_full_lang_validation "$CYCLE"
+                else
+                    run_full_lang_validation "$CYCLE" "$FORCE_LANG_VALIDATION"
+                fi
+            fi
+
+            if should_run_quality_audit; then
+                QA_OUT=$(run_quality_audit 2>/dev/null || true)
+                QA_LINE=$(printf '%s\n' "$QA_OUT" | grep '__QUALITY_AUDIT__' | tail -n 1)
+                if [ -n "$QA_LINE" ]; then
+                    echo "📊 QUALITY AUDIT: ${QA_LINE#__QUALITY_AUDIT__ }"
+                    QA_ISSUES=$(printf '%s\n' "$QA_LINE" | grep -oE 'issues=[0-9]+' | cut -d= -f2)
+                    QA_SLOW=$(printf '%s\n' "$QA_LINE" | grep -oE 'slow=[01]' | cut -d= -f2)
+                    QA_ISSUES=${QA_ISSUES:-0}
+                    QA_SLOW=${QA_SLOW:-0}
+                    if [ "$QA_SLOW" = "1" ] && [ "$BATCH" -gt 5 ] 2>/dev/null; then
+                        echo "⚠️ QUALITY AUDIT: issues=$QA_ISSUES > threshold=${QUALITY_AUDIT_THRESHOLD}, zmniejszam batch do 5"
+                        BATCH=5
+                    fi
+                fi
+            fi
+
+            # ── pending_skip 24h artifact (#14) — co 10 cykli przelicz metryki ──
+            if (( CYCLE % 10 == 0 )); then
+                PS24_OUT=$(compute_pending_skip_24h 2>/dev/null || true)
+                PS24_LINE=$(printf '%s\n' "$PS24_OUT" | grep '__PENDING_SKIP_24H__' | tail -n 1)
+                if [ -n "$PS24_LINE" ]; then
+                    echo "📊 PENDING_SKIP_24H: ${PS24_LINE#__PENDING_SKIP_24H__ }"
+                fi
+            fi
             
             # Zapisz licznik cykli do pliku (dla statusu) - ROZSZERZONE DANE
             python3 - "$CYCLE" "$MODE_TYPE" "$MODE_CAT" "$MODE_COUNT" "$MODE_EXTRA" << 'SAVEPY'
@@ -10658,10 +19664,51 @@ elif mode_type == 'TRANSLATION_SYNC':
     }
 
 elif mode_type == 'AUTO_TRANSLATE':
+    guard_fail = 0
+    strict_missing_key = 0
+    strict_blocker = ""
+    recent_translated = 0
+    recent_examples = []
+    try:
+        gp = 'i18n/status/translation_guard_latest.json'
+        if os.path.exists(gp):
+            with open(gp) as f:
+                gd = json.load(f)
+            guard_fail = int(gd.get('guard_fail', 0) or 0)
+            strict_missing_key = int(gd.get('strict_missing_key', 0) or 0)
+    except Exception:
+        pass
+    try:
+        bp = 'i18n/status/translation_blockers_latest.json'
+        if os.path.exists(bp):
+            with open(bp) as f:
+                bd = json.load(f)
+            missing_files = int(bd.get('missing_lang_files', 0) or 0)
+            missing_keys = int(bd.get('missing_keys_total', 0) or 0)
+            if missing_files > 0 or missing_keys > 0:
+                strict_blocker = f"missing_files={missing_files},missing_keys={missing_keys}"
+    except Exception:
+        pass
+    try:
+        rp = 'i18n/status/translation_recent_latest.json'
+        if os.path.exists(rp):
+            with open(rp) as f:
+                rd = json.load(f)
+            if str(rd.get('language', '')) == str(mode_cat) and str(rd.get('json_file', '')) == str(mode_count):
+                recent_translated = int(rd.get('translated', 0) or 0)
+                recent_examples = rd.get('entries', []) if isinstance(rd.get('entries', []), list) else []
+    except Exception:
+        pass
+
     data['auto_translate'] = {
         'language': mode_cat,
         'json_file': mode_count,
-        'keys_to_translate': to_int(mode_extra)
+        'keys_to_translate': to_int(mode_extra),
+        'guard_fail': guard_fail,
+        'strict_missing_key': strict_missing_key,
+        'strict_blocker': strict_blocker,
+        'recent_translated': recent_translated,
+        'recent_examples': recent_examples[-20:]
     }
 
 elif mode_type == 'IDLE':
@@ -10698,12 +19745,17 @@ with open(tmp_file, 'w') as f:
 os.replace(tmp_file, output_file)
 SAVEPY
 
-            # Daily agregacja (UTC) na podstawie ops/errors
-            status_build_daily
             status_update_activity "running" "$CYCLE" "${MODE_TYPE:-IDLE}" "cycle_end" "${MODE_CAT:-}" "-" "cycle end" 0 0 "units" 0
             
-            # Aktualizuj status co cykl
-            update_github_status
+            # Aktualizuj pełny status z throttlingiem (P0: ograniczenie ciężkiego STATUSPY)
+            STATUS_T0=$(now_ms)
+            if should_update_github_status; then
+                update_github_status
+            else
+                echo "⏭️ Pomijam pełny status (throttle: co ${STATUS_UPDATE_EVERY_CYCLES} cykli lub ${STATUS_UPDATE_MIN_INTERVAL_SEC}s)"
+            fi
+            STATUS_T1=$(now_ms)
+            status_log_cycle_perf "$CYCLE" "${MODE_TYPE:-IDLE}" "${MODE_CAT:--}" "status_update" "$((STATUS_T1 - STATUS_T0))" "throttle_every=${STATUS_UPDATE_EVERY_CYCLES}"
             
             # Git commit co cykl
             if [ -n "$(git status --porcelain 2>/dev/null)" ]; then
@@ -10733,7 +19785,7 @@ for f in os.listdir('i18n/en'):
 print(total)
 " 2>/dev/null || echo "?")
                             git commit -m "📊 I18N: $TOTAL_KEYS kluczy, $MODE_TYPE - Cykl #$CYCLE" 2>/dev/null
-                            git push origin master 2>/dev/null && echo "📤 Push OK" || echo "⚠️ Push failed"
+                            git push origin "$GIT_TRACK_BRANCH" 2>/dev/null && echo "📤 Push OK ($GIT_TRACK_BRANCH)" || echo "⚠️ Push failed ($GIT_TRACK_BRANCH)"
                             flock -u 9 2>/dev/null || true
                             exec 9>&-
                         else
@@ -10755,7 +19807,7 @@ for f in os.listdir('i18n/en'):
 print(total)
 " 2>/dev/null || echo "?")
                             git commit -m "📊 I18N: $TOTAL_KEYS kluczy, $MODE_TYPE - Cykl #$CYCLE" 2>/dev/null
-                            git push origin master 2>/dev/null && echo "📤 Push OK" || echo "⚠️ Push failed"
+                            git push origin "$GIT_TRACK_BRANCH" 2>/dev/null && echo "📤 Push OK ($GIT_TRACK_BRANCH)" || echo "⚠️ Push failed ($GIT_TRACK_BRANCH)"
                             rmdir "$GIT_LOCK_FILE" 2>/dev/null || true
                         fi
                     )
@@ -10765,16 +19817,41 @@ print(total)
             echo ""
             echo "💤 Przerwa ${DELAY}s przed następnym cyklem..."
 
+            CYCLE_T1=$(now_ms)
+            status_log_cycle_perf "$CYCLE" "${MODE_TYPE:-IDLE}" "${MODE_CAT:--}" "cycle_total" "$((CYCLE_T1 - CYCLE_T0))" "delay=${DELAY}"
+
             if [ "$STOP_AFTER_CYCLE" = "true" ]; then
+                # === RESTART ===
+                if [ "${RESTART_REQUESTED:-false}" = "true" ]; then
+                    echo "🔄 RESTART: pobieranie najnowszego kodu..."
+                    git pull --rebase origin "$GIT_TRACK_BRANCH" 2>&1 | head -5 || true
+                    echo "🔄 RESTART: exec z argumentami: ${WORKER_ORIGINAL_ARGS[*]}"
+                    status_update_activity "restarting" "${CYCLE:-0}" "${MODE_TYPE:-IDLE}" "restart" "${MODE_CAT:-}" "-" "restart" 0 0 "units" 0
+                    cleanup_pid_files_if_owner
+                    exec bash "$WORKER_SCRIPT" "${WORKER_ORIGINAL_ARGS[@]}"
+                fi
                 echo "🛑 Kończę po cyklu (ONCE)"
                 status_update_activity "stopped" "${CYCLE:-0}" "${MODE_TYPE:-IDLE}" "stop_after_cycle" "${MODE_CAT:-}" "-" "stop after cycle" 0 0 "units" 0
-                update_github_status
-                rm -f "$PID_FILE" 2>/dev/null || true
+                if should_force_status_update_on_metrics_delta; then
+                    echo "📊 Smart force status update (ONCE)"
+                    if should_update_github_status force; then
+                        update_github_status
+                    fi
+                elif should_update_github_status; then
+                    update_github_status
+                else
+                    echo "⏭️ Smart force: brak istotnych zmian metryk (ONCE), pomijam full status"
+                fi
+                cleanup_pid_files_if_owner
                 exit 0
             fi
             
             # Reset zmiennych wymuszenia przed następnym cyklem
             MODE_EXTRA=""
+            MODE_EXTRA2=""
+            MODE_TYPE=""
+            MODE_CAT=""
+            MODE_COUNT=""
             
             sleep "$DELAY"
         done
@@ -10804,11 +19881,51 @@ print(total)
         echo "  $0 --auto [N]           Automatyczna migracja N plików"
         echo "  $0 --continuous [B] [D] Tryb ciągły (B=batch, D=delay)"
         echo "  $0 --update-status      Aktualizuj I18N_STATUS.md"
+        echo "  $0 --lang-validate L    Wymuś walidację pojedynczego języka (np. pl)"
+        echo "  $0 --lang-validate-all  Wymuś walidację wszystkich języków"
         echo ""
         echo "Opcje --continuous:"
         echo "  --no-git                Wyłącz git add/commit/push"
         echo "  --translate-limit N     Max N kluczy do tłumaczenia na cykl"
-        echo "  --translations-only     Tylko tłumaczenia, bez migracji kodu"
+        echo "  --translations-only     Tylko tłumaczenia (STRICT: bez nowych kluczy)"
+        echo "  --use-gt                Używaj Google Translate jako fallback po słownikach"
+        echo "  --gt-batch N            Rozmiar batcha GT (domyślnie 50)"
+        echo "  --gt-delay N            Sekundy przerwy między batchami GT (domyślnie 1.5)"
+        echo "  --auto-fix-crossref     Włącz auto-fix cross-reference (Faza 4.5, OFF domyślnie)"
+        echo "  --auto-fix-crossref-limit N  Max poprawek crossref na język (domyślnie 30)"
+        echo "  --no-adaptive-batch     Wyłącz adaptive batch tuning (8.3)"
+        echo "  --parallel-langs N      Tłumacz N języków na cykl (domyślnie 3, sekcja 8.4)"
+        echo ""
+        echo "Komendy runtime (.worker_command / worker_commands.txt / worker_config.json):"
+        echo ""
+        echo "  === Sterowanie językiem ==="
+        echo "  LANG:<lang>                    Przypiąj worker do jednego języka (auto-wybór plików)"
+        echo "  LANG:<lang>:<f1>,<f2>,...       Przypiąj język + cyklicznie przechodź podane pliki"
+        echo "  LANG:random                    Przywróć tryb losowy (wszystkie języki)"
+        echo "  FOCUS:<lang>[:json[:limit]]    Skup się na jednym języku (persystentne)"
+        echo "  UNFOCUS                        Zdejmij focus, wróć do tier-round-robin"
+        echo "  SWITCH:<lang>[:json[:limit]]   Alias (kompatybilność wsteczna)"
+        echo "  UNSWITCH                       Alias dla UNFOCUS"
+        echo ""
+        echo "  === Testowanie języków ==="
+        echo "  TEST:<lang>               Pełny test: translate + validate + crossref (1 cykl)"
+        echo "  TEST_ALL                  Dodaj WSZYSTKIE języki do kolejki testowej"
+        echo "  LANGVAL:all | LANGVAL:<lang>  Wymuś walidację"
+        echo "  SPOTCHECK:<lang>[:N]      Losowy audit N tłumaczeń"
+        echo "  GRAMMARFIX:<lang>[:json[:N]]  Napraw EN-copy/artefakty + walidacja"
+        echo ""
+        echo "  === Konfiguracja w locie ==="
+        echo "  GT:on / GT:off            Włącz/wyłącz Google Translate"
+        echo "  BATCH:<N>                 Ustaw translate_limit na N kluczy/cykl"
+        echo "  SET:<key>=<value>         Zmień dowolną wartość w worker_config.json"
+        echo "  RESTART                   Restart workera z bieżącą konfiguracją"
+        echo "  CONFIG                    Wyświetl aktualną konfigurację"
+        echo "  REPORT                    Raport coverage wszystkich języków"
+        echo "  LANGS                     Lista dostępnych języków"
+        echo "  SKIP / PAUSE:<N> / IDLE   Kontrola cyklu"
+        echo ""
+        echo "  === Plik worker_config.json (edytuj ręcznie, worker wczyta co cykl) ==="
+        echo "  focus_lang, use_gt, translate_limit, parallel_langs, paused, test_lang..."
         echo ""
         ;;
 esac

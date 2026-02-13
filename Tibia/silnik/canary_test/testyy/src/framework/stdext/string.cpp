@@ -29,6 +29,14 @@
 #include "types.h"
 #include <framework/text/Utf8.h>
 
+// Windows headers must be included OUTSIDE namespace stdext, otherwise
+// clang-cl places _GUID, IID, etc. inside stdext:: and COM template
+// methods in the SDK fail to compile.
+#ifdef WIN32
+#include <winsock2.h>
+#include <windows.h>
+#endif
+
 #ifdef _MSC_VER
 #pragma warning(disable:4267) // '?' : conversion from 'A' to 'B', possible loss of data
 #endif
@@ -127,9 +135,6 @@ namespace stdext
     }
 
 #ifdef WIN32
-#include <winsock2.h>
-#include <windows.h>
-
     std::wstring utf8_to_utf16(const std::string_view src)
     {
         constexpr size_t BUFFER_SIZE = 65536;

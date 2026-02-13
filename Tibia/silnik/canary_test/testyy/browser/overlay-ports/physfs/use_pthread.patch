@@ -2,11 +2,15 @@ diff --git a/CMakeLists.txt b/CMakeLists.txt
 index b3291cc..a5d8225 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -25,6 +25,8 @@ set(PHYSFS_CPP_SRCS)
+@@ -25,6 +25,12 @@ set(PHYSFS_CPP_SRCS)
  
  # I hate that they define "WIN32" ... we're about to move to Win64...I hope!
  
-+add_compile_options(-pthread)
++if(EMSCRIPTEN OR CMAKE_SYSTEM_NAME STREQUAL "Emscripten")
++  add_compile_options(-pthread -matomics -mbulk-memory)
++else()
++  add_compile_options(-pthread)
++endif()
 +
  if(APPLE)
      set(OTHER_LDFLAGS ${OTHER_LDFLAGS} "-framework IOKit -framework Foundation")

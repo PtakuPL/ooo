@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-02-13T22:03:12.195896Z",
+  "cycle": 9,
+  "force": true,
+  "reason": "delta:translated_keys:551140->551294",
+  "metrics": {
+    "translated_keys": 551294,
+    "missing_keys": 110060,
+    "missing_files": 0,
+    "guard_fail": 0,
+    "strict_missing_file": 0,
+    "strict_missing_key": 0,
+    "strict_skipped_done": 15,
+    "blockers_missing_keys_total": 0,
+    "blockers_missing_lang_files": 0,
+    "recent_translated": 1
+  }
+}

@@ -94,13 +94,11 @@ jobs:
         uses: actions/cache@v4
         with:
           path: |
-            C:\vcpkg\installed
-            C:\vcpkg\buildtrees
             C:\vcpkg\downloads
             ${{ env.LOCALAPPDATA }}\vcpkg
-          key: vcpkg-android-${{ steps.vcpkg-step.outputs.hash }}
+          key: vcpkg-android-${{ steps.vcpkg-step.outputs.vcpkgGitCommitId }}-${{ steps.vcpkg-step.outputs.hash }}
           restore-keys: |
-            vcpkg-android-
+            vcpkg-android-${{ steps.vcpkg-step.outputs.vcpkgGitCommitId }}-
 
       - name: Setup vcpkg
         shell: powershell
@@ -111,8 +109,11 @@ jobs:
           cd C:\vcpkg
           git fetch --all
           git checkout ${{ steps.vcpkg-step.outputs.vcpkgGitCommitId }}
-          if (-not (Test-Path "C:\vcpkg\vcpkg.exe")) {
-            .\bootstrap-vcpkg.bat
+          # Always re-bootstrap to ensure vcpkg.exe matches the checked-out commit
+          .\bootstrap-vcpkg.bat
+          # Remove stale buildtrees to avoid using cached source from wrong versions
+          if (Test-Path "C:\vcpkg\buildtrees") {
+            Remove-Item -Recurse -Force "C:\vcpkg\buildtrees"
           }
 
       - name: Ensure 7zip and pkg-config
@@ -175,7 +176,6 @@ jobs:
         with:
           path: |
             Tibia/silnik/canary_test/testyy/android/app/build
-            Tibia/silnik/canary_test/testyy/android/app/.cxx
           key: android-build-${{ hashFiles('Tibia/silnik/canary_test/testyy/src/**/*.cpp', 'Tibia/silnik/canary_test/testyy/src/**/*.h', 'Tibia/silnik/canary_test/testyy/src/**/*.hpp', 'Tibia/silnik/canary_test/testyy/CMakeLists.txt') }}
           restore-keys: |
             android-build-
@@ -193,6 +193,12 @@ jobs:
           ANDROID_SDK_ROOT: ${{ env.ANDROID_HOME }}
           VCPKG_ROOT: C:\vcpkg
         run: |
+          # Remove stale CMake-generated Ninja files to avoid cached $-escape errors
+          # The dollar-escape bug occurs when stale build.ninja files contain paths
+          # with $ characters from previous vcpkg/NDK configurations.
+          rm -rf app/.cxx || true
+          find app/build -name "build.ninja" -delete 2>/dev/null || true
+          find app/build -name "rules.ninja" -delete 2>/dev/null || true
           chmod +x ./gradlew 2>/dev/null || true
           ./gradlew assembleRelease --no-daemon --stacktrace --build-cache --warning-mode all
 

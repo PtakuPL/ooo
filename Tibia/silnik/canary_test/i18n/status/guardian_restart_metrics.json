@@ -1,0 +1,205 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-02-13T22:37:52Z",
+  "config": {
+    "mtime_restart_min_interval_sec": 90,
+    "restart_failure_backoff_base_sec": 20,
+    "restart_failure_backoff_max_sec": 300
+  },
+  "last_restart": {
+    "timestamp": "2026-02-13T22:37:52Z",
+    "cause": "mtime",
+    "success": true,
+    "pid": "1523743"
+  },
+  "failure_streak": 0,
+  "cooldown_active": false,
+  "cooldown_remaining_sec": 0,
+  "next_allowed_utc": "",
+  "totals": {
+    "attempts": 12,
+    "successes": 12,
+    "failures": 0,
+    "blocked": 8
+  },
+  "causes": {
+    "worker_missing": {
+      "attempts": 3,
+      "successes": 3,
+      "failures": 0,
+      "blocked": 0
+    },
+    "mtime": {
+      "attempts": 9,
+      "successes": 9,
+      "failures": 0,
+      "blocked": 8
+    }
+  },
+  "recent_events": [
+    {
+      "timestamp": "2026-02-13T21:54:05Z",
+      "type": "result",
+      "cause": "worker_missing",
+      "success": true,
+      "pid": "1472743",
+      "reason": "pid_file",
+      "backoff_sec": 0
+    },
+    {
+      "timestamp": "2026-02-13T21:59:31Z",
+      "type": "result",
+      "cause": "mtime",
+      "success": true,
+      "pid": "1478537",
+      "reason": "pid_file",
+      "backoff_sec": 0
+    },
+    {
+      "timestamp": "2026-02-13T21:59:58Z",
+      "type": "blocked",
+      "cause": "mtime",
+      "reason": "mtime_debounce",
+      "wait_sec": 63
+    },
+    {
+      "timestamp": "2026-02-13T22:00:03Z",
+      "type": "result",
+      "cause": "worker_missing",
+      "success": true,
+      "pid": "1479105",
+      "reason": "pid_file",
+      "backoff_sec": 0
+    },
+    {
+      "timestamp": "2026-02-13T22:01:18Z",
+      "type": "blocked",
+      "cause": "mtime",
+      "reason": "mtime_debounce",
+      "wait_sec": 15
+    },
+    {
+      "timestamp": "2026-02-13T22:03:28Z",
+      "type": "result",
+      "cause": "worker_missing",
+      "success": true,
+      "pid": "1483884",
+      "reason": "pid_file",
+      "backoff_sec": 0
+    },
+    {
+      "timestamp": "2026-02-13T22:04:09Z",
+      "type": "blocked",
+      "cause": "mtime",
+      "reason": "mtime_debounce",
+      "wait_sec": 49
+    },
+    {
+      "timestamp": "2026-02-13T22:09:36Z",
+      "type": "result",
+      "cause": "mtime",
+      "success": true,
+      "pid": "1491957",
+      "reason": "pid_file",
+      "backoff_sec": 0
+    },
+    {
+      "timestamp": "2026-02-13T22:10:41Z",
+      "type": "blocked",
+      "cause": "mtime",
+      "reason": "mtime_debounce",
+      "wait_sec": 25
+    },
+    {
+      "timestamp": "2026-02-13T22:12:57Z",
+      "type": "result",
+      "cause": "mtime",
+      "success": true,
+      "pid": "1495444",
+      "reason": "pid_file",
+      "backoff_sec": 0
+    },
+    {
+      "timestamp": "2026-02-13T22:15:43Z",
+      "type": "result",
+      "cause": "mtime",
+      "success": true,
+      "pid": "1499248",
+      "reason": "pid_file",
+      "backoff_sec": 0
+    },
+    {
+      "timestamp": "2026-02-13T22:29:53Z",
+      "type": "result",
+      "cause": "mtime",
+      "success": true,
+      "pid": "1515650",
+      "reason": "pid_file",
+      "backoff_sec": 0
+    },
+    {
+      "timestamp": "2026-02-13T22:30:28Z",
+      "type": "blocked",
+      "cause": "mtime",
+      "reason": "mtime_debounce",
+      "wait_sec": 55
+    },
+    {
+      "timestamp": "2026-02-13T22:30:58Z",
+      "type": "blocked",
+      "cause": "mtime",
+      "reason": "mtime_debounce",
+      "wait_sec": 25
+    },
+    {
+      "timestamp": "2026-02-13T22:31:34Z",
+      "type": "result",
+      "cause": "mtime",
+      "success": true,
+      "pid": "1517232",
+      "reason": "pid_file",
+      "backoff_sec": 0
+    },
+    {
+      "timestamp": "2026-02-13T22:33:20Z",
+      "type": "result",
+      "cause": "mtime",
+      "success": true,
+      "pid": "1519220",
+      "reason": "pid_file",
+      "backoff_sec": 0
+    },
+    {
+      "timestamp": "2026-02-13T22:33:50Z",
+      "type": "blocked",
+      "cause": "mtime",
+      "reason": "mtime_debounce",
+      "wait_sec": 60
+    },
+    {
+      "timestamp": "2026-02-13T22:34:21Z",
+      "type": "blocked",
+      "cause": "mtime",
+      "reason": "mtime_debounce",
+      "wait_sec": 29
+    },
+    {
+      "timestamp": "2026-02-13T22:35:06Z",
+      "type": "result",
+      "cause": "mtime",
+      "success": true,
+      "pid": "1521375",
+      "reason": "pid_file",
+      "backoff_sec": 0
+    },
+    {
+      "timestamp": "2026-02-13T22:37:52Z",
+      "type": "result",
+      "cause": "mtime",
+      "success": true,
+      "pid": "1523743",
+      "reason": "pid_file",
+      "backoff_sec": 0
+    }
+  ]
+}

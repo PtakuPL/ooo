@@ -1,0 +1,43 @@
+{
+  "timestamp": "2026-02-12T22:12:01.826489Z",
+  "langs": [
+    "pl",
+    "tr",
+    "de",
+    "es",
+    "pt",
+    "ru",
+    "fr",
+    "it",
+    "nl",
+    "cs"
+  ],
+  "simple_counts": {
+    "pl": 782,
+    "tr": 28,
+    "de": 9,
+    "es": 1329,
+    "pt": 62,
+    "ru": 59,
+    "fr": 6,
+    "it": 6,
+    "nl": 6,
+    "cs": 6
+  },
+  "word_counts": {
+    "pl": 660,
+    "tr": 99,
+    "de": 3,
+    "es": 1027,
+    "pt": 84,
+    "ru": 78,
+    "fr": 0,
+    "it": 0,
+    "nl": 0,
+    "cs": 0
+  },
+  "outputs": [
+    "i18n/status/simple_translations.json",
+    "i18n/status/word_translations.json"
+  ]
+}

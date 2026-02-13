@@ -1,0 +1,17 @@
+[Unit]
+Description=i18n Status & Telemetry Daemon (i18n-statusd)
+After=network.target
+Wants=i18n-guardian.service
+
+[Service]
+Type=simple
+User=ptaku
+WorkingDirectory=/home/ptaku/serweryt/Tibia/silnik/canary_test
+ExecStart=/bin/bash /home/ptaku/serweryt/Tibia/silnik/canary_test/i18n-statusd.sh --daemon
+Restart=on-failure
+RestartSec=30
+StandardOutput=append:/home/ptaku/serweryt/Tibia/silnik/canary_test/statusd.log
+StandardError=append:/home/ptaku/serweryt/Tibia/silnik/canary_test/statusd.log
+
+[Install]
+WantedBy=multi-user.target

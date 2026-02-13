@@ -1,0 +1,155 @@
+{
+  "lang": "pl",
+  "script_group": "latin",
+  "total_keys": 53586,
+  "translated": 40199,
+  "identical_to_en": 2949,
+  "placeholder_keys": 11304,
+  "coverage_pct": 75.0,
+  "issues_total": 251,
+  "issues_by_type": {
+    "V6_newline_mismatch": 234,
+    "V4_artifact": 13,
+    "V7_command_mismatch": 2,
+    "V1_placeholder_mismatch": 1,
+    "V5_pipe_mismatch": 1
+  },
+  "issues_by_severity": {
+    "CRITICAL": 2,
+    "HIGH": 13,
+    "MEDIUM": 236,
+    "LOW": 0
+  },
+  "score": 99.8,
+  "worst_keys": [
+    {
+      "key": "html.online.html.text1",
+      "category": "html",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "talkaction.online.msg_summary",
+      "category": "talkactions",
+      "type": "V5_pipe_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "achievement.317.description",
+      "category": "achievements",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "book.otbm.battletactics_for_mages_ii",
+      "category": "books",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "book.otbm.battletactics_for_mages_iii",
+      "category": "books",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "book.otbm.battletactics_for_mages_iv",
+      "category": "books",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "monster.grynch_clan_goblin.voice_15",
+      "category": "monsters",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "npc.carina.say_2",
+      "category": "npc",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "npc.markwin.say_3",
+      "category": "npc",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "npc.riddler.say_12",
+      "category": "npc",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "npc.riddler.say_4",
+      "category": "npc",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "npc.the_orc_king.say_3",
+      "category": "npc",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "npc.theodore_loveless.multi_2",
+      "category": "npc",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "npc.wyda.say_4",
+      "category": "npc",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "quests.bigfoot_burden.gnomedix_msg4",
+      "category": "quests",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "book.dawnport.adventurers_guild_letter",
+      "category": "books",
+      "type": "V6_newline_mismatch",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "book.quest_system2.history_of_the_augur_part_i",
+      "category": "books",
+      "type": "V6_newline_mismatch",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "book.quest_system2.history_of_the_augur_part_ii",
+      "category": "books",
+      "type": "V6_newline_mismatch",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "book.quest_system2.manifest_of_the_yalahari_part_i",
+      "category": "books",
+      "type": "V6_newline_mismatch",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "book.quest_system2.manifest_of_the_yalahari_part_ii",
+      "category": "books",
+      "type": "V6_newline_mismatch",
+      "severity": "MEDIUM"
+    }
+  ],
+  "crossref": {
+    "enabled": false,
+    "issues_total": 0,
+    "consistency": 0,
+    "pl_reference": 0,
+    "length_ratio": 0,
+    "auto_fix_applied": 0
+  },
+  "validated_at": "2026-02-13T22:33:53.153634Z"
+}

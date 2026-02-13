@@ -1,0 +1,5586 @@
+{
+  "item.101.name": {
+    "src_hash": "852488ddd9570bc877783bf4397563e0",
+    "text": "toprak",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156216Z"
+  },
+  "item.1053.name": {
+    "src_hash": "852488ddd9570bc877783bf4397563e0",
+    "text": "toprak",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156267Z"
+  },
+  "item.2727.name": {
+    "src_hash": "852488ddd9570bc877783bf4397563e0",
+    "text": "toprak",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156278Z"
+  },
+  "item.2731.name": {
+    "src_hash": "852488ddd9570bc877783bf4397563e0",
+    "text": "toprak",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156284Z"
+  },
+  "item.30168.name": {
+    "src_hash": "adf99e286e91d4997b2dd81a8f2b67ad",
+    "text": "buz kalkan",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156290Z"
+  },
+  "item.30215.name": {
+    "src_hash": "7bdff76536f12a7c5ffde207e72cfe3a",
+    "text": "buz",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156296Z"
+  },
+  "item.30218.name": {
+    "src_hash": "7bdff76536f12a7c5ffde207e72cfe3a",
+    "text": "buz",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156302Z"
+  },
+  "item.30273.name": {
+    "src_hash": "7bdff76536f12a7c5ffde207e72cfe3a",
+    "text": "buz",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156307Z"
+  },
+  "item.3051.name": {
+    "src_hash": "c193d863e3cfa9eb7c10c24bc406c615",
+    "text": "enerji yüzük",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156313Z"
+  },
+  "item.3088.name": {
+    "src_hash": "c193d863e3cfa9eb7c10c24bc406c615",
+    "text": "enerji yüzük",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156319Z"
+  },
+  "item.3091.name": {
+    "src_hash": "e495c13e047610c2a33c6ba5ab198610",
+    "text": "kılıç yüzük",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156325Z"
+  },
+  "item.3092.name": {
+    "src_hash": "e91f2ba042a1912b8873e63e3d41a768",
+    "text": "balta yüzük",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156330Z"
+  },
+  "item.3093.name": {
+    "src_hash": "106b1ffd58f13eafc17b8d64da025f39",
+    "text": "topuz yüzük",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156336Z"
+  },
+  "item.3094.name": {
+    "src_hash": "e495c13e047610c2a33c6ba5ab198610",
+    "text": "kılıç yüzük",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156341Z"
+  },
+  "item.3095.name": {
+    "src_hash": "e91f2ba042a1912b8873e63e3d41a768",
+    "text": "balta yüzük",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156347Z"
+  },
+  "item.3096.name": {
+    "src_hash": "106b1ffd58f13eafc17b8d64da025f39",
+    "text": "topuz yüzük",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156352Z"
+  },
+  "item.3264.name": {
+    "src_hash": "f3b462d93b24cb0538f5d864546bc3e0",
+    "text": "kılıç",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156367Z"
+  },
+  "item.3270.name": {
+    "src_hash": "95cc6b4ac5abdeadc74b73a8ba7200d9",
+    "text": "topuz",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156376Z"
+  },
+  "item.3274.name": {
+    "src_hash": "c89ee4a2c9dcae6581ca53bff9aa4ee5",
+    "text": "balta",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156382Z"
+  },
+  "item.3280.name": {
+    "src_hash": "f4bd45ccf4bfc185f3f28f05ba1e3c3e",
+    "text": "ateş kılıç",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156387Z"
+  },
+  "item.3288.name": {
+    "src_hash": "959cfbb2a3060ba5b8e0d88c0b7037e5",
+    "text": "büyü kılıç",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156393Z"
+  },
+  "item.3320.name": {
+    "src_hash": "4b18322d3d888ec0e4570608d6c3c12d",
+    "text": "ateş balta",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156398Z"
+  },
+  "item.372.name": {
+    "src_hash": "852488ddd9570bc877783bf4397563e0",
+    "text": "toprak",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156405Z"
+  },
+  "item.3993.name": {
+    "src_hash": "852488ddd9570bc877783bf4397563e0",
+    "text": "toprak",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156410Z"
+  },
+  "item.6299.name": {
+    "src_hash": "6c67bbd80d9571838348e561ab6d2ff6",
+    "text": "ölüm yüzük",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156416Z"
+  },
+  "item.6300.name": {
+    "src_hash": "6c67bbd80d9571838348e561ab6d2ff6",
+    "text": "ölüm yüzük",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156421Z"
+  },
+  "item.7107.name": {
+    "src_hash": "7bdff76536f12a7c5ffde207e72cfe3a",
+    "text": "buz",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156426Z"
+  },
+  "item.7541.name": {
+    "src_hash": "852488ddd9570bc877783bf4397563e0",
+    "text": "toprak",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156432Z"
+  },
+  "item.7594.name": {
+    "src_hash": "852488ddd9570bc877783bf4397563e0",
+    "text": "toprak",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156437Z"
+  },
+  "item.7740.name": {
+    "src_hash": "7bdff76536f12a7c5ffde207e72cfe3a",
+    "text": "buz",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156443Z"
+  },
+  "item.800.name": {
+    "src_hash": "7bdff76536f12a7c5ffde207e72cfe3a",
+    "text": "buz",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156453Z"
+  },
+  "item.8821.name": {
+    "src_hash": "3ee45b1ff632881c66b6b92f45a47fd7",
+    "text": "zırh",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156458Z"
+  },
+  "item.9246.name": {
+    "src_hash": "852488ddd9570bc877783bf4397563e0",
+    "text": "toprak",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156464Z"
+  },
+  "monster.hunter.name": {
+    "src_hash": "5e409e09f43d85c6e61301149e4f803b",
+    "text": "Hunter",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156469Z"
+  },
+  "monster.sorcerer_familiar.name": {
+    "src_hash": "fe695fb861f4a78482830bcb8e24bee3",
+    "text": "Sorcerer familiar",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156475Z"
+  },
+  "monster.knight_familiar.name": {
+    "src_hash": "59bb8dfecc548a5d097b6f0b0d0149e4",
+    "text": "Knight familiar",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156480Z"
+  },
+  "monster.paladin_familiar.name": {
+    "src_hash": "394dc0c96d4265282f9b9e07a32e4dae",
+    "text": "Paladin familiar",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156489Z"
+  },
+  "monster.druid_familiar.name": {
+    "src_hash": "99443d0ef921af33631809b8edfb838c",
+    "text": "Druid familiar",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156495Z"
+  },
+  "monster.dharalion.name": {
+    "src_hash": "f4b02a0be06c383d37eaf02f4359402b",
+    "text": "Dharalion",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156500Z"
+  },
+  "monster.dharalion.desc": {
+    "src_hash": "f4b02a0be06c383d37eaf02f4359402b",
+    "text": "Dharalion",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156505Z"
+  },
+  "monster.cyclops.name": {
+    "src_hash": "1a1ea04451ed996376aac96e92f38324",
+    "text": "Cyclops",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156511Z"
+  },
+  "monster.firestarter.voice_1": {
+    "src_hash": "768bf59c2fc9b6d051299536a1d19e54",
+    "text": "ATEŞ!",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156516Z"
+  },
+  "monster.troll_legionnaire.voice_1": {
+    "src_hash": "aa7ff3bde4dfce4c2ae8eca861db6fce",
+    "text": "Saldırı!",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156522Z"
+  },
+  "monster.lost_berserker.voice_2": {
+    "src_hash": "2f061fa67818fa4d628803439fc59289",
+    "text": "Ölüm! Ölüm! Ölüm!",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156528Z"
+  },
+  "monster.orc.name": {
+    "src_hash": "34b0ceb41c3a8896e074f8e59190021b",
+    "text": "Orc",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156534Z"
+  },
+  "monster.the_old_widow.name": {
+    "src_hash": "0a46dc1f306c4565526cd2e7b1631bd1",
+    "text": "The Old Widow",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156540Z"
+  },
+  "monster.the_old_widow.desc": {
+    "src_hash": "0a46dc1f306c4565526cd2e7b1631bd1",
+    "text": "The Old Widow",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156545Z"
+  },
+  "monster.fallen_mooh'tah_master_ghar.desc": {
+    "src_hash": "8ee1f9a65d98e75b769dc3ebc05fd719",
+    "text": "Fallen Mooh'tah Master Ghar",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156550Z"
+  },
+  "monster.lord_of_the_elements.name": {
+    "src_hash": "26f35529002a0a103c2080451deda86a",
+    "text": "Lord of the Elements",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156556Z"
+  },
+  "monster.lord_of_the_elements.desc": {
+    "src_hash": "26f35529002a0a103c2080451deda86a",
+    "text": "Lord of the Elements",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156565Z"
+  },
+  "monster.generator.name": {
+    "src_hash": "92a8f0b9d28a89b480bd1d29f46f0484",
+    "text": "generator",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156571Z"
+  },
+  "monster.mahrdis.voice_2": {
+    "src_hash": "6e5e535bd84f31cd3112f1962eeef271",
+    "text": "Ateş, Ateş!",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156576Z"
+  },
+  "monster.gaz'haragoth.desc": {
+    "src_hash": "62ad3edd6f61c6fad46755eb7cdc163a",
+    "text": "Gaz'Haragoth",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156582Z"
+  },
+  "monster.omrafir.name": {
+    "src_hash": "97a239b13834eab0ab19c2978ec1ef57",
+    "text": "Omrafir",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156588Z"
+  },
+  "monster.omrafir.desc": {
+    "src_hash": "97a239b13834eab0ab19c2978ec1ef57",
+    "text": "Omrafir",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156593Z"
+  },
+  "monster.abyssador.voice_5": {
+    "src_hash": "fb366f4c31937eea5f3cb8303f759638",
+    "text": "*** ÖLÜM ***",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156602Z"
+  },
+  "monster.ghulosh'_deathgaze.desc": {
+    "src_hash": "9bf0efe132a98903f64313263cee6296",
+    "text": "Ghulosh' Deathgaze",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156607Z"
+  },
+  "monster.knowledge_raider.name": {
+    "src_hash": "6884a734b38551b8f9ceaba3f209d091",
+    "text": "Knowledge Raider",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156613Z"
+  },
+  "monster.feroxa.name": {
+    "src_hash": "6c59b09bfce69d20bb2b2e9eccf12b41",
+    "text": "Feroxa",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156619Z"
+  },
+  "monster.feroxa.desc": {
+    "src_hash": "6c59b09bfce69d20bb2b2e9eccf12b41",
+    "text": "Feroxa",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156624Z"
+  },
+  "monster.feroxa2.name": {
+    "src_hash": "6c59b09bfce69d20bb2b2e9eccf12b41",
+    "text": "Feroxa",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156630Z"
+  },
+  "monster.feroxa2.desc": {
+    "src_hash": "6c59b09bfce69d20bb2b2e9eccf12b41",
+    "text": "Feroxa",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156635Z"
+  },
+  "monster.feroxa4.name": {
+    "src_hash": "6c59b09bfce69d20bb2b2e9eccf12b41",
+    "text": "Feroxa",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156640Z"
+  },
+  "monster.feroxa4.desc": {
+    "src_hash": "6c59b09bfce69d20bb2b2e9eccf12b41",
+    "text": "Feroxa",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156646Z"
+  },
+  "monster.feroxa3.name": {
+    "src_hash": "6c59b09bfce69d20bb2b2e9eccf12b41",
+    "text": "Feroxa",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156651Z"
+  },
+  "monster.feroxa3.desc": {
+    "src_hash": "6c59b09bfce69d20bb2b2e9eccf12b41",
+    "text": "Feroxa",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156657Z"
+  },
+  "monster.feroxa5.name": {
+    "src_hash": "6c59b09bfce69d20bb2b2e9eccf12b41",
+    "text": "Feroxa",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156662Z"
+  },
+  "monster.feroxa5.desc": {
+    "src_hash": "6c59b09bfce69d20bb2b2e9eccf12b41",
+    "text": "Feroxa",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156668Z"
+  },
+  "monster.goshnar's_megalomania_green.desc": {
+    "src_hash": "99c3816abfedc2d6a2b9bcd592d2d586",
+    "text": "Goshnar's Megalomania",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156673Z"
+  },
+  "monster.goshnar's_megalomania_purple.desc": {
+    "src_hash": "99c3816abfedc2d6a2b9bcd592d2d586",
+    "text": "Goshnar's Megalomania",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156679Z"
+  },
+  "monster.goshnar's_megalomania_blue.desc": {
+    "src_hash": "99c3816abfedc2d6a2b9bcd592d2d586",
+    "text": "Goshnar's Megalomania",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156684Z"
+  },
+  "monster.grim_reaper.voice_1": {
+    "src_hash": "593f24c9febaf98b2590e4be5d3a91ed",
+    "text": "Ölüm!",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156689Z"
+  },
+  "monster.undead_cavebear.name": {
+    "src_hash": "64e09822bd15852b6ce465912554b067",
+    "text": "Undead Cavebear",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156695Z"
+  },
+  "monster.gravedigger.name": {
+    "src_hash": "41c9a4f0a182d00173d25b206c72d367",
+    "text": "Gravedigger",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156700Z"
+  },
+  "monster.arachir_the_ancient_one.name": {
+    "src_hash": "63bb82e2253de368e2b77b8429564aaa",
+    "text": "Arachir The Ancient One",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156705Z"
+  },
+  "monster.arachir_the_ancient_one.desc": {
+    "src_hash": "63bb82e2253de368e2b77b8429564aaa",
+    "text": "Arachir The Ancient One",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156714Z"
+  },
+  "monster.ocyakao.name": {
+    "src_hash": "49a73d64c23681571806a21b38c2614e",
+    "text": "Ocyakao",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156719Z"
+  },
+  "monster.ocyakao.desc": {
+    "src_hash": "49a73d64c23681571806a21b38c2614e",
+    "text": "Ocyakao",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156725Z"
+  },
+  "monster.necropharus.name": {
+    "src_hash": "1dfc4ba3c2e8604e04b859187b61ce43",
+    "text": "Necropharus",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156730Z"
+  },
+  "monster.necropharus.desc": {
+    "src_hash": "1dfc4ba3c2e8604e04b859187b61ce43",
+    "text": "Necropharus",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156735Z"
+  },
+  "monster.the_pale_count.name": {
+    "src_hash": "3b72b8f24e68dd7e889fa0bcc093f7d4",
+    "text": "The Pale Count",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156751Z"
+  },
+  "monster.the_pale_count.desc": {
+    "src_hash": "3b72b8f24e68dd7e889fa0bcc093f7d4",
+    "text": "The Pale Count",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156757Z"
+  },
+  "monster.ghazbaran.name": {
+    "src_hash": "7011c4937708c913e39ffc5369fbf7c9",
+    "text": "Ghazbaran",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156763Z"
+  },
+  "monster.ghazbaran.desc": {
+    "src_hash": "7011c4937708c913e39ffc5369fbf7c9",
+    "text": "Ghazbaran",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156768Z"
+  },
+  "monster.hirintror.name": {
+    "src_hash": "fecc29ff7925e8e289a31d474cef424d",
+    "text": "Hirintror",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156774Z"
+  },
+  "monster.hirintror.desc": {
+    "src_hash": "fecc29ff7925e8e289a31d474cef424d",
+    "text": "Hirintror",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156780Z"
+  },
+  "monster.sir_valorcrest.name": {
+    "src_hash": "f8298500215b17e312aa870c0031d7e4",
+    "text": "Sir Valorcrest",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156787Z"
+  },
+  "monster.sir_valorcrest.desc": {
+    "src_hash": "f8298500215b17e312aa870c0031d7e4",
+    "text": "Sir Valorcrest",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156792Z"
+  },
+  "monster.draptor.name": {
+    "src_hash": "0298e34bc88fa8299cacd8f457233da3",
+    "text": "Draptor",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156798Z"
+  },
+  "monster.chayenne.name": {
+    "src_hash": "33cb5e6c61118b97e3593d52e381b83d",
+    "text": "Chayenne",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156803Z"
+  },
+  "monster.chayenne.desc": {
+    "src_hash": "33cb5e6c61118b97e3593d52e381b83d",
+    "text": "Chayenne",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156809Z"
+  },
+  "monster.zulazza_the_corruptor.name": {
+    "src_hash": "1b0b0d80ea379359ff4bf4cb334e13ee",
+    "text": "Zulazza The Corruptor",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156814Z"
+  },
+  "monster.zulazza_the_corruptor.desc": {
+    "src_hash": "1b0b0d80ea379359ff4bf4cb334e13ee",
+    "text": "Zulazza The Corruptor",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156819Z"
+  },
+  "otclient_modules.bestiary_otui.tr_2": {
+    "src_hash": "d1457b72c3fb323a2671125aef3eab5d",
+    "text": "?",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156825Z"
+  },
+  "otclient_modules.bestiary_otui.tr_3": {
+    "src_hash": "d1457b72c3fb323a2671125aef3eab5d",
+    "text": "?",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156834Z"
+  },
+  "otclient_modules.bestiary_otui.tr_4": {
+    "src_hash": "d1457b72c3fb323a2671125aef3eab5d",
+    "text": "?",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156839Z"
+  },
+  "otclient_modules.bestiary_otui.tr_5": {
+    "src_hash": "d1457b72c3fb323a2671125aef3eab5d",
+    "text": "?",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156845Z"
+  },
+  "otclient_modules.bestiary_otui.tr_6": {
+    "src_hash": "d1457b72c3fb323a2671125aef3eab5d",
+    "text": "?",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156850Z"
+  },
+  "otclient_modules.bestiary_otui.tr_9": {
+    "src_hash": "d1457b72c3fb323a2671125aef3eab5d",
+    "text": "?",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156856Z"
+  },
+  "otclient_modules.blessing.tr_10": {
+    "src_hash": "be5d5d37542d75f93a87094459f76678",
+    "text": "and",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156861Z"
+  },
+  "otclient_modules.browse_otui.tr_8": {
+    "src_hash": "a0db49ba470c1c9ae2128c3470339153",
+    "text": "Seviye",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156867Z"
+  },
+  "otclient_modules.character.tr_38": {
+    "src_hash": "7fcbebe44a3ba2d162be939560e75688",
+    "text": "Şans",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156872Z"
+  },
+  "otclient_modules.character.tr_56": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "No",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156877Z"
+  },
+  "otclient_modules.character.tr_57": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Yes",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156883Z"
+  },
+  "otclient_modules.character.tr_94": {
+    "src_hash": "07ad815187b53dc2ceaf5ad6e0a12bb1",
+    "text": "Seviye:",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156888Z"
+  },
+  "otclient_modules.character_otui.tr_56": {
+    "src_hash": "7fcbebe44a3ba2d162be939560e75688",
+    "text": "Şans",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156894Z"
+  },
+  "otclient_modules.character_otui.tr_70": {
+    "src_hash": "0aa6f4210bf373c95eda00232e93cd98",
+    "text": "Mesafe",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156899Z"
+  },
+  "otclient_modules.character_otui.tr_71": {
+    "src_hash": "ed4dd6cc118ab2500715cbd23b054573",
+    "text": "balta",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156905Z"
+  },
+  "otclient_modules.character_otui.tr_72": {
+    "src_hash": "6c198603789a4928477eccd5d550b6b2",
+    "text": "kılıç",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156910Z"
+  },
+  "otclient_modules.character_otui.tr_73": {
+    "src_hash": "aeef646f76c57ed9084edddbb6365b9c",
+    "text": "topuz",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156915Z"
+  },
+  "otclient_modules.character_otui.tr_75": {
+    "src_hash": "02700e454d679f31f27c6f0768986dd1",
+    "text": "Büyü",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156921Z"
+  },
+  "otclient_modules.character_otui.tr_85": {
+    "src_hash": "0a38e7286ebbb560354992b3ce62be67",
+    "text": "Food",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156926Z"
+  },
+  "otclient_modules.character_otui.tr_86": {
+    "src_hash": "44877c6aa8e93fa5a91c9361211464fb",
+    "text": "Hız",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156935Z"
+  },
+  "otclient_modules.character_otui.tr_89": {
+    "src_hash": "02fcc64668dd1b6a85e60ac9797f2dc7",
+    "text": "Mana",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156940Z"
+  },
+  "otclient_modules.character_otui.tr_92": {
+    "src_hash": "4038d5a85906029f46137a4164c51073",
+    "text": "Deneyim",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156949Z"
+  },
+  "otclient_modules.character_otui.tr_93": {
+    "src_hash": "a0db49ba470c1c9ae2128c3470339153",
+    "text": "Seviye",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156954Z"
+  },
+  "otclient_modules.characterlist.tr_5": {
+    "src_hash": "d15305d7a4e34e02489c74a5ef542f36",
+    "text": "OFF",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156960Z"
+  },
+  "otclient_modules.characterlist.tr_6": {
+    "src_hash": "521c36a31c2762741cf0f8890cbe05e3",
+    "text": "ON",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156965Z"
+  },
+  "otclient_modules.characterlist_otui.tr_7": {
+    "src_hash": "a0db49ba470c1c9ae2128c3470339153",
+    "text": "Seviye",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156970Z"
+  },
+  "otclient_modules.charms.tr_1": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "No",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156976Z"
+  },
+  "otclient_modules.charms.tr_10": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Yes",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156981Z"
+  },
+  "otclient_modules.charms.tr_13": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "No",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156987Z"
+  },
+  "otclient_modules.charms.tr_14": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Yes",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156992Z"
+  },
+  "otclient_modules.charms.tr_17": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "No",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.156998Z"
+  },
+  "otclient_modules.charms.tr_18": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Yes",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157003Z"
+  },
+  "otclient_modules.charms.tr_2": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Yes",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157009Z"
+  },
+  "otclient_modules.charms.tr_5": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "No",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157014Z"
+  },
+  "otclient_modules.charms.tr_6": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Yes",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157020Z"
+  },
+  "otclient_modules.charms.tr_64": {
+    "src_hash": "738ca3cb200c27b4996ed320eee15705",
+    "text": "Curse",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157025Z"
+  },
+  "otclient_modules.charms.tr_9": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "No",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157030Z"
+  },
+  "otclient_modules.cooldown_otui.tr_9": {
+    "src_hash": "dcfafcb4323b102c7e204555d313ba0a",
+    "text": "Saldırı",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157036Z"
+  },
+  "otclient_modules.cyclopedia_widgets_otui.tr_12": {
+    "src_hash": "d1457b72c3fb323a2671125aef3eab5d",
+    "text": "?",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157045Z"
+  },
+  "otclient_modules.cyclopedia_widgets_otui.tr_28": {
+    "src_hash": "d1457b72c3fb323a2671125aef3eab5d",
+    "text": "?",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157050Z"
+  },
+  "otclient_modules.cyclopedia_widgets_otui.tr_29": {
+    "src_hash": "ce898d62ed9ca7653a01fe0c781e97e9",
+    "text": "Fiziksel",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157059Z"
+  },
+  "otclient_modules.cyclopedia_widgets_otui.tr_31": {
+    "src_hash": "797e65b9c5cd0da25a932f2b0947b94b",
+    "text": "Çizme",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157064Z"
+  },
+  "otclient_modules.cyclopedia_widgets_otui.tr_8": {
+    "src_hash": "d1457b72c3fb323a2671125aef3eab5d",
+    "text": "?",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157070Z"
+  },
+  "otclient_modules.game_healthcircle.tr_17": {
+    "src_hash": "6e142665254eccd39cf91a20382eca8e",
+    "text": "Büyü Seviye",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157075Z"
+  },
+  "otclient_modules.game_healthcircle.tr_2": {
+    "src_hash": "0aa6f4210bf373c95eda00232e93cd98",
+    "text": "Mesafe",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157081Z"
+  },
+  "otclient_modules.game_highscore_otui.tr_6": {
+    "src_hash": "a0db49ba470c1c9ae2128c3470339153",
+    "text": "Seviye",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157087Z"
+  },
+  "otclient_modules.game_shop.tr_3": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "No",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157092Z"
+  },
+  "otclient_modules.game_shop.tr_4": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Yes",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157097Z"
+  },
+  "otclient_modules.game_shop.tr_5": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "No",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157103Z"
+  },
+  "otclient_modules.game_shop.tr_6": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Yes",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157109Z"
+  },
+  "otclient_modules.gameinterface.tr_23": {
+    "src_hash": "dcfafcb4323b102c7e204555d313ba0a",
+    "text": "Saldırı",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157114Z"
+  },
+  "otclient_modules.gameinterface.tr_43": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Yes",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157120Z"
+  },
+  "otclient_modules.gameinterface.tr_44": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "No",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157164Z"
+  },
+  "otclient_modules.house.tr_31": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "No",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157175Z"
+  },
+  "otclient_modules.house.tr_32": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Yes",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157181Z"
+  },
+  "otclient_modules.house.tr_39": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "No",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157187Z"
+  },
+  "otclient_modules.house.tr_40": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Yes",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157192Z"
+  },
+  "otclient_modules.house.tr_43": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "No",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157198Z"
+  },
+  "otclient_modules.house.tr_44": {
+    "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+    "text": "Yes",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157203Z"
+  },
+  "otclient_modules.house.tr_49": {
+    "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+    "text": "No",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157209Z"
+  },
+  "data.otservbr.global.scripts.actions.rookgaard.chest.L5.2374": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "You found ",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157218Z"
+  },
+  "data.otservbr.global.scripts.quests.children.of.the.revolution.actions.mission3.chest.L9.2156": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "You found ",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157224Z"
+  },
+  "data.otservbr.global.scripts.quests.heart.of.destruction.actions.reward.L16.1867": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "You found ",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157229Z"
+  },
+  "data.otservbr.global.scripts.quests.hero.of.rathleton.actions.reward.L13.2162": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "You found ",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157235Z"
+  },
+  "data.otservbr.global.scripts.quests.in.service.of.yalahar.actions.reward.L10.2180": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "You found ",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157241Z"
+  },
+  "data.otservbr.global.scripts.quests.in.service.of.yalahar.actions.reward.L19.2182": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "You found ",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157246Z"
+  },
+  "data.otservbr.global.scripts.quests.in.service.of.yalahar.actions.reward.L28.2184": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "You found ",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157252Z"
+  },
+  "data.otservbr.global.scripts.quests.marapur.actions.boss.timira.fight.L376.2174": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "You found ",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157257Z"
+  },
+  "data.otservbr.global.scripts.quests.the.first.dragon.actions.rewards.L71.1760": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "You found ",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157263Z"
+  },
+  "data.otservbr.global.scripts.quests.the.inquisition.quest.actions.rewards.L27.1771": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "You found ",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157268Z"
+  },
+  "scripts.actions_boss_timira_fight.msg_3": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "You found ",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157273Z"
+  },
+  "scripts.actions_mission3_chest.msg_2": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "You found ",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157278Z"
+  },
+  "scripts.actions_reward.msg_4": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "You found ",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157284Z"
+  },
+  "scripts.actions_reward.msg_6": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "You found ",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157289Z"
+  },
+  "scripts.actions_rewards.msg_3": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "You found ",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157294Z"
+  },
+  "scripts.chest.msg_1": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "You found ",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157299Z"
+  },
+  "scripts.info.skill_level": {
+    "src_hash": "1084a07bbb814a4df2df940d4f4a760b",
+    "text": "* Seviye: ",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157304Z"
+  },
+  "scripts.info.speed": {
+    "src_hash": "7fddbc6dd512724f7f63b71fd1491ee4",
+    "text": "Hız: ",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157310Z"
+  },
+  "scripts.action_bag.msg_1": {
+    "src_hash": "a0b7b10ccf5607bf6f58907ce8ea7ecb",
+    "text": "Bir çanta buldun.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157319Z"
+  },
+  "scripts.actions_random_items.found_in_bag": {
+    "src_hash": "2eb671bead742f6498e457f29fb57359",
+    "text": "Çantada %s %s buldun.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157328Z"
+  },
+  "scripts.actions_rewards.msg_2": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Sandık boş.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157334Z"
+  },
+  "scripts.actions_steal_from_thieves.msg_2": {
+    "src_hash": "a0b7b10ccf5607bf6f58907ce8ea7ecb",
+    "text": "Bir çanta buldun.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157339Z"
+  },
+  "scripts.actions_waldos_posthorn.msg_1": {
+    "src_hash": "358e1871d6927f9c6a51a8f8e300b4f6",
+    "text": "Waldo'nun posta borusunu buldun.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157344Z"
+  },
+  "scripts.chest.msg_2": {
+    "src_hash": "ac1f9925628d9e59d3b4385a686c8259",
+    "text": "Ahşap bir kılıç buldun.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157350Z"
+  },
+  "scripts.large_seashell.found_pearl": {
+    "src_hash": "d4f68a4e6f8bf42d105a9187ac7a19a9",
+    "text": "Güzel bir inci buldun.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157359Z"
+  },
+  "scripts.random_items.found_in_bag": {
+    "src_hash": "d7c051e1c26bcc95dc7de909ab19d539",
+    "text": "Çantada {0} buldun.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157365Z"
+  },
+  "scripts.register_actions.msg_10": {
+    "src_hash": "4174dfa9efc40d93af2472d565f77247",
+    "text": "Kazarken {} buldun.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157370Z"
+  },
+  "item.21351.name": {
+    "src_hash": "03944c28dd1d99648eda34c26d3de4ac",
+    "text": "Light Stone Shower Rune",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157375Z"
+  },
+  "item.21352.name": {
+    "src_hash": "31cd2c4b8700d3fba06777b6f804dbdd",
+    "text": "Lightest Missile Rune",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157381Z"
+  },
+  "item.21432.name": {
+    "src_hash": "31cd2c4b8700d3fba06777b6f804dbdd",
+    "text": "Lightest Missile Rune",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157390Z"
+  },
+  "item.21434.name": {
+    "src_hash": "03944c28dd1d99648eda34c26d3de4ac",
+    "text": "Light Stone Shower Rune",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157395Z"
+  },
+  "item.24966.name": {
+    "src_hash": "7c7004d4846601f4cc710309ded176ef",
+    "text": "Forbidden Fruit",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157401Z"
+  },
+  "monster.troll.name": {
+    "src_hash": "922a511f02d148e4c9390526d85ca519",
+    "text": "Trol",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157406Z"
+  },
+  "monster.troll.desc": {
+    "src_hash": "40ffb882a54ee403b27433962b5c1448",
+    "text": "bir trol",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157412Z"
+  },
+  "monster.island_troll.name": {
+    "src_hash": "b1a2aa325c39c830d83db485ab126a26",
+    "text": "Ada Trol",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157417Z"
+  },
+  "monster.island_troll.desc": {
+    "src_hash": "400a5e1ff35499497afc5127d0ac8cb5",
+    "text": "bir ada trol",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157423Z"
+  },
+  "monster.goblin.name": {
+    "src_hash": "8e81e2940511f7152ba4462fe53e35b8",
+    "text": "Goblin",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157428Z"
+  },
+  "monster.goblin.desc": {
+    "src_hash": "a7f3ac990652166f157dcf42a1ee0be5",
+    "text": "bir goblin",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157434Z"
+  },
+  "monster.skeleton.name": {
+    "src_hash": "6ab48f7ed56efc362f41853c5616bf75",
+    "text": "Iskelet",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157439Z"
+  },
+  "monster.skeleton.desc": {
+    "src_hash": "3671d9838dcee79307f4c8b4ddb33743",
+    "text": "bir iskelet",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157448Z"
+  },
+  "monster.wolf.name": {
+    "src_hash": "279ede0c6bdbd7d26309becd159053d8",
+    "text": "Kurt",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157453Z"
+  },
+  "monster.wolf.desc": {
+    "src_hash": "cffc94c08fa39be49cf4626dcf016ba4",
+    "text": "bir kurt",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157459Z"
+  },
+  "item.1.name": {
+    "src_hash": "9460370bb0ca1c98a779b1bcc6861c2c",
+    "text": "su",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157464Z"
+  },
+  "item.10069.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "ateş alanı",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157470Z"
+  },
+  "item.10070.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "ateş alanı",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157476Z"
+  },
+  "item.10071.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "ateş alanı",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157481Z"
+  },
+  "item.10112.name": {
+    "src_hash": "2aefe63ef336d4cc0262873f224fbe19",
+    "text": "çamur kum çimen",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157487Z"
+  },
+  "item.10181.name": {
+    "src_hash": "b191656e3ce1b7048b8d4510eb17cf22",
+    "text": "büyü duvar",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157493Z"
+  },
+  "item.10187.name": {
+    "src_hash": "c0e2289468f8376e785248a520b72014",
+    "text": "nadir kristal",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157498Z"
+  },
+  "item.10200.name": {
+    "src_hash": "82e304e7ef04a2a6b31bbabdc33ed9b3",
+    "text": "kristal çizme",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157503Z"
+  },
+  "item.10201.name": {
+    "src_hash": "06d4a8c785c1ed681288854d9af74c05",
+    "text": "ejderha pul çizme",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157509Z"
+  },
+  "item.10206.name": {
+    "src_hash": "02df6ab0ddc16081bf6d400457d5d3c4",
+    "text": "taş merdivenler",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157514Z"
+  },
+  "item.10212.name": {
+    "src_hash": "7131d1c878f058973254abc586e95e18",
+    "text": "ejderha heykel",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157519Z"
+  },
+  "item.10213.name": {
+    "src_hash": "7131d1c878f058973254abc586e95e18",
+    "text": "ejderha heykel",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157525Z"
+  },
+  "item.10214.name": {
+    "src_hash": "7131d1c878f058973254abc586e95e18",
+    "text": "ejderha heykel",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157530Z"
+  },
+  "item.10215.name": {
+    "src_hash": "7131d1c878f058973254abc586e95e18",
+    "text": "ejderha heykel",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157536Z"
+  },
+  "item.10278.name": {
+    "src_hash": "3ec1cce69914c888518234ffbc8dcd4c",
+    "text": "taş kanat",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157545Z"
+  },
+  "item.10286.name": {
+    "src_hash": "efd63614fe94d229f57de216233fb89c",
+    "text": "ejderha taht",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157550Z"
+  },
+  "item.10287.name": {
+    "src_hash": "efd63614fe94d229f57de216233fb89c",
+    "text": "ejderha taht",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157558Z"
+  },
+  "item.103.name": {
+    "src_hash": "c90b1198f689dd950d51142e65a44c81",
+    "text": "toprak",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157564Z"
+  },
+  "item.10317.name": {
+    "src_hash": "9be089ec9fcf39dd5f944a55e9959098",
+    "text": "kurtadam kürk",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157569Z"
+  },
+  "item.10322.name": {
+    "src_hash": "a643f0c67dc8358d762c267269f52f9f",
+    "text": "heykel",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157574Z"
+  },
+  "item.10326.name": {
+    "src_hash": "0b29a3403d3193814ebf74b236081849",
+    "text": "ejderha sırt çantası",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157580Z"
+  },
+  "item.10327.name": {
+    "src_hash": "48eaac8ad0968067e11a82a3b5be2c77",
+    "text": "minotaur sırt çantası",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157585Z"
+  },
+  "item.104.name": {
+    "src_hash": "88336b5bb2a1cc21bac7cf33fd451270",
+    "text": "kum",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157591Z"
+  },
+  "item.10480.name": {
+    "src_hash": "8b16de93821412141506eb60e09180d0",
+    "text": "toprak zemin",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157597Z"
+  },
+  "item.10507.name": {
+    "src_hash": "263addb7611158a2c3db7c164a20cc2f",
+    "text": "lamba",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157602Z"
+  },
+  "item.106.name": {
+    "src_hash": "09d440e487d45777c05c3a6552ad9154",
+    "text": "çimen",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157607Z"
+  },
+  "item.10605.name": {
+    "src_hash": "c95e3dd9ec9230450a558cb17be2106d",
+    "text": "çamur",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157613Z"
+  },
+  "item.107.name": {
+    "src_hash": "3df14ae40dd63cd17895eeb293ed167f",
+    "text": "özel şişe",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157618Z"
+  },
+  "item.10744.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "taş duvar",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157623Z"
+  },
+  "item.10746.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "taş duvar",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157629Z"
+  },
+  "monster.slime.name": {
+    "src_hash": "a537a3d7d5ede5718f2b597568233925",
+    "text": "Balçık",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157634Z"
+  },
+  "monster.cave_rat.name": {
+    "src_hash": "4c2c32bad4494a18938eccaf6235937e",
+    "text": "Mağara Fare",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157640Z"
+  },
+  "monster.demon.name": {
+    "src_hash": "300d4af0950c89b847cf6f7500e6060c",
+    "text": "Iblis",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157645Z"
+  },
+  "monster.spider.name": {
+    "src_hash": "b4d68660c4a56181cd886fe5ecc08f71",
+    "text": "Örümcek",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157651Z"
+  },
+  "monster.ice_dragon.name": {
+    "src_hash": "fc32f0dc4eb39df0b549918c8b8bd83f",
+    "text": "Buz Ejderha",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157656Z"
+  },
+  "monster.dragon.name": {
+    "src_hash": "583f4be146b6127f9e4f3f036ce7df43",
+    "text": "Ejderha",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157661Z"
+  },
+  "monster.old_giant_spider.name": {
+    "src_hash": "9e06f68bf9688070bf6b5d3869e5336b",
+    "text": "Dev Örümcek",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157670Z"
+  },
+  "monster.old_wolf.name": {
+    "src_hash": "279ede0c6bdbd7d26309becd159053d8",
+    "text": "Kurt",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157676Z"
+  },
+  "monster.old_wolf.desc": {
+    "src_hash": "cffc94c08fa39be49cf4626dcf016ba4",
+    "text": "bir kurt",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157681Z"
+  },
+  "monster.old_bear.name": {
+    "src_hash": "372137ebb0d053fecd7a594ec5cb5971",
+    "text": "Ayı",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157694Z"
+  },
+  "monster.old_spider.name": {
+    "src_hash": "b4d68660c4a56181cd886fe5ecc08f71",
+    "text": "Örümcek",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157700Z"
+  },
+  "monster.green_frog.voice_1": {
+    "src_hash": "5f6ceeccb725ed9156272e443ac95761",
+    "text": "Vrak!",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157705Z"
+  },
+  "monster.green_frog.voice_2": {
+    "src_hash": "35bf0989b6e1cf8042449ba434cc03b3",
+    "text": "Vrak! Vrak!",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157711Z"
+  },
+  "monster.infernal_frog.voice_1": {
+    "src_hash": "5f6ceeccb725ed9156272e443ac95761",
+    "text": "Vrak!",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157717Z"
+  },
+  "monster.infernal_frog.voice_2": {
+    "src_hash": "35bf0989b6e1cf8042449ba434cc03b3",
+    "text": "Vrak! Vrak!",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157722Z"
+  },
+  "monster.orchid_frog.voice_1": {
+    "src_hash": "5f6ceeccb725ed9156272e443ac95761",
+    "text": "Vrak!",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157727Z"
+  },
+  "monster.orchid_frog.voice_2": {
+    "src_hash": "35bf0989b6e1cf8042449ba434cc03b3",
+    "text": "Vrak! Vrak!",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157736Z"
+  },
+  "monster.azure_frog.voice_1": {
+    "src_hash": "5f6ceeccb725ed9156272e443ac95761",
+    "text": "Vrak!",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157741Z"
+  },
+  "monster.azure_frog.voice_2": {
+    "src_hash": "35bf0989b6e1cf8042449ba434cc03b3",
+    "text": "Vrak! Vrak!",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157747Z"
+  },
+  "monster.bog_frog.voice_1": {
+    "src_hash": "5f6ceeccb725ed9156272e443ac95761",
+    "text": "Vrak!",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157752Z"
+  },
+  "monster.bog_frog.voice_2": {
+    "src_hash": "35bf0989b6e1cf8042449ba434cc03b3",
+    "text": "Vrak! Vrak!",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157757Z"
+  },
+  "monster.crimson_frog.voice_1": {
+    "src_hash": "5f6ceeccb725ed9156272e443ac95761",
+    "text": "Vrak!",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157763Z"
+  },
+  "monster.crimson_frog.voice_2": {
+    "src_hash": "35bf0989b6e1cf8042449ba434cc03b3",
+    "text": "Vrak! Vrak!",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157768Z"
+  },
+  "monster.toad.voice_1": {
+    "src_hash": "35bf0989b6e1cf8042449ba434cc03b3",
+    "text": "Vrak! Vrak!",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157774Z"
+  },
+  "monster.toad.voice_2": {
+    "src_hash": "5f6ceeccb725ed9156272e443ac95761",
+    "text": "Vrak!",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157779Z"
+  },
+  "monster.coral_frog.voice_1": {
+    "src_hash": "5f6ceeccb725ed9156272e443ac95761",
+    "text": "Vrak!",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157788Z"
+  },
+  "monster.coral_frog.voice_2": {
+    "src_hash": "35bf0989b6e1cf8042449ba434cc03b3",
+    "text": "Vrak! Vrak!",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157793Z"
+  },
+  "monster.enslaved_dwarf.voice_2": {
+    "src_hash": "0b07da94fb7c81ede59aa8706c76c5b8",
+    "text": "Kan!",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157799Z"
+  },
+  "monster.firestarter.voice_2": {
+    "src_hash": "416c5c54bd5caac949407af0505dd433",
+    "text": "YAN!",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157804Z"
+  },
+  "npc.a_behemoth.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Sessiz ol! <canavar aktivitesi hakkında detaylı rapor verir>",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157810Z"
+  },
+  "npc.a_behemoth.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Sessiz ol! <canavar aktivitesi hakkında detaylı rapor verir>",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157815Z"
+  },
+  "npc.a_behemoth.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Sessiz ol! <canavar aktivitesi hakkında detaylı rapor verir>",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157821Z"
+  },
+  "npc.a_dead_bureaucrat1.farewell_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Hoşça kal ve beni unutma!",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157826Z"
+  },
+  "npc.a_dead_bureaucrat1.walkaway_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Hoşça kal ve beni unutma!",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157832Z"
+  },
+  "npc.a_dead_bureaucrat2.farewell_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Hoşça kal ve beni unutma!",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157837Z"
+  },
+  "npc.a_dead_bureaucrat2.walkaway_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Hoşça kal ve beni unutma!",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157842Z"
+  },
+  "npc.a_dead_bureaucrat3.farewell_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Hoşça kal ve beni unutma!",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157848Z"
+  },
+  "npc.a_dead_bureaucrat3.walkaway_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Hoşça kal ve beni unutma!",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157854Z"
+  },
+  "npc.a_dead_bureaucrat4.farewell_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Hoşça kal ve beni unutma!",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157859Z"
+  },
+  "npc.a_dead_bureaucrat4.walkaway_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Hoşça kal ve beni unutma!",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157864Z"
+  },
+  "npc.a_dragon_lord.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Sessiz ol! <canavar aktivitesi hakkında detaylı rapor verir>",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157870Z"
+  },
+  "npc.a_dragon_lord.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Sessiz ol! <canavar aktivitesi hakkında detaylı rapor verir>",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157875Z"
+  },
+  "npc.a_dragon_lord.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Sessiz ol! <canavar aktivitesi hakkında detaylı rapor verir>",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157880Z"
+  },
+  "npc.a_dragon_mother.greet_msg_2": {
+    "src_hash": "c6a0aabd2af804ac1f00c1504af5edf4",
+    "text": "Grrr.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157886Z"
+  },
+  "npc.a_dragon_mother.multi_3": {
+    "src_hash": "c6a0aabd2af804ac1f00c1504af5edf4",
+    "text": "Grrr.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157891Z"
+  },
+  "npc.a_drillworm.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Sessiz ol! <canavar aktivitesi hakkında detaylı rapor verir>",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157900Z"
+  },
+  "npc.a_drillworm.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Sessiz ol! <canavar aktivitesi hakkında detaylı rapor verir>",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157905Z"
+  },
+  "npc.a_drillworm.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Sessiz ol! <canavar aktivitesi hakkında detaylı rapor verir>",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157911Z"
+  },
+  "npc.a_fading_memory.greet_msg_1": {
+    "src_hash": "22567aba8d64ab99fe9115b6f7cb9c48",
+    "text": "Ah...",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157919Z"
+  },
+  "npc.a_ghostly_sage.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Hoşça kal.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157925Z"
+  },
+  "npc.a_lost_basher.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Sessiz ol! <canavar aktivitesi hakkında detaylı rapor verir>",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157930Z"
+  },
+  "npc.a_lost_basher.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Sessiz ol! <canavar aktivitesi hakkında detaylı rapor verir>",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157936Z"
+  },
+  "npc.a_lost_basher.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Sessiz ol! <canavar aktivitesi hakkında detaylı rapor verir>",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157941Z"
+  },
+  "npc.a_lost_husher.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Sessiz ol! <canavar aktivitesi hakkında detaylı rapor verir>",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157947Z"
+  },
+  "npc.a_lost_husher.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Sessiz ol! <canavar aktivitesi hakkında detaylı rapor verir>",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157953Z"
+  },
+  "npc.a_lost_husher.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Sessiz ol! <canavar aktivitesi hakkında detaylı rapor verir>",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157958Z"
+  },
+  "npc.a_lost_thrower.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Sessiz ol! <canavar aktivitesi hakkında detaylı rapor verir>",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157964Z"
+  },
+  "npc.a_lost_thrower.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Sessiz ol! <canavar aktivitesi hakkında detaylı rapor verir>",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157969Z"
+  },
+  "npc.a_lost_thrower.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Sessiz ol! <canavar aktivitesi hakkında detaylı rapor verir>",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157975Z"
+  },
+  "otclient_modules.addgroup_otui.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "İptal",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157984Z"
+  },
+  "otclient_modules.addgroup_otui.tr_2": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Tamam",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157989Z"
+  },
+  "otclient_modules.addserver.tr_1": {
+    "src_hash": "902b0d55fddef6f8d651fe1035b7d4bd",
+    "text": "Hata",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.157995Z"
+  },
+  "otclient_modules.addserver_otui.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "İptal",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158000Z"
+  },
+  "otclient_modules.addvip_otui.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "İptal",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158006Z"
+  },
+  "otclient_modules.addvip_otui.tr_2": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Tamam",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158015Z"
+  },
+  "otclient_modules.amountwindow_otui.tr_1": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Tamam",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158020Z"
+  },
+  "otclient_modules.amountwindow_otui.tr_2": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "İptal",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158026Z"
+  },
+  "otclient_modules.assign_object_otui.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "İptal",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158031Z"
+  },
+  "otclient_modules.assign_object_otui.tr_4": {
+    "src_hash": "ad8783089f828b927473fb61d51940ec",
+    "text": "Kullan",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158037Z"
+  },
+  "otclient_modules.assign_spell_otui.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "İptal",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158042Z"
+  },
+  "otclient_modules.assign_spell_otui.tr_6": {
+    "src_hash": "b068931cc450442b63f5b3d276ea4297",
+    "text": "İsim",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158048Z"
+  },
+  "otclient_modules.assign_text_otui.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "İptal",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158053Z"
+  },
+  "otclient_modules.bestiary.tr_10": {
+    "src_hash": "a2cc588f2ab07ad61b05400f593eeb0a",
+    "text": "Nadir",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158058Z"
+  },
+  "otclient_modules.bestiary.tr_13": {
+    "src_hash": "d13bc5b68b2bd9e18f29777db17cc563",
+    "text": "Yaygın",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158064Z"
+  },
+  "otclient_modules.bestiary.tr_4": {
+    "src_hash": "88183b946cc5f0e8c96b2e66e1c74a7e",
+    "text": "Bilinmeyen",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158069Z"
+  },
+  "otclient_modules.bestiary_otui.tr_13": {
+    "src_hash": "5e2dc2efe9702dd86d89378e76f5201b",
+    "text": "Yaratık Isim",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158075Z"
+  },
+  "otclient_modules.bestiary_otui.tr_16": {
+    "src_hash": "13348442cc6a27032d2b4aa28b75a5d3",
+    "text": "Ara",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158080Z"
+  },
+  "otclient_modules.bottommenu_otui.tr_2": {
+    "src_hash": "35a88e03e6699907873597f5549e0b7a",
+    "text": "Yaratık",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158086Z"
+  },
+  "otclient_modules.browse_otui.tr_3": {
+    "src_hash": "4cfa6c981549e990fe2344e4c805405e",
+    "text": "Bul",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158091Z"
+  },
+  "otclient_modules.bugreport_otui.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "İptal",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158097Z"
+  },
+  "otclient_modules.calendar_otui.tr_1": {
+    "src_hash": "d3d2e617335f08df83599665eef8a418",
+    "text": "Kapat",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158105Z"
+  },
+  "otclient_modules.changename_otui.tr_1": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Tamam",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158111Z"
+  },
+  "otclient_modules.changename_otui.tr_2": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "İptal",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158116Z"
+  },
+  "otclient_modules.changename_otui.tr_6": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Tamam",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158121Z"
+  },
+  "otclient_modules.changename_otui.tr_7": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "İptal",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158131Z"
+  },
+  "otclient_modules.channelswindow_otui.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "İptal",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158136Z"
+  },
+  "otclient_modules.channelswindow_otui.tr_2": {
+    "src_hash": "c3bf447eabe632720a3aa1a7ce401274",
+    "text": "Aç",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158142Z"
+  },
+  "otclient_modules.character.tr_81": {
+    "src_hash": "b4cc0c028355a4c65f1dc582c9cfec2d",
+    "text": "%s saat ve %s dakikan kaldı",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158147Z"
+  },
+  "otclient_modules.character.tr_83": {
+    "src_hash": "b4cc0c028355a4c65f1dc582c9cfec2d",
+    "text": "%s saat ve %s dakikan kaldı",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158153Z"
+  },
+  "data.otservbr.global.npc.a.behemoth.L57.1606": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Sessiz ol! <canavar aktivitesi hakkında detaylı rapor verir>",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158158Z"
+  },
+  "data.otservbr.global.npc.a.behemoth.L66.1607": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Sessiz ol! <canavar aktivitesi hakkında detaylı rapor verir>",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158164Z"
+  },
+  "data.otservbr.global.npc.a.behemoth.L73.1608": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Sessiz ol! <canavar aktivitesi hakkında detaylı rapor verir>",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158169Z"
+  },
+  "data.otservbr.global.npc.a.dead.bureaucrat1.L126.462": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Hoşça kal ve beni unutma!",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158175Z"
+  },
+  "data.otservbr.global.npc.a.dead.bureaucrat1.L127.463": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Hoşça kal ve beni unutma!",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158180Z"
+  },
+  "data.otservbr.global.npc.a.dead.bureaucrat1.L64.461": {
+    "src_hash": "8b1a9953c4611296a827abf8c47804d7",
+    "text": "Merhaba",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158186Z"
+  },
+  "data.otservbr.global.npc.a.dead.bureaucrat2.L57.884": {
+    "src_hash": "8b1a9953c4611296a827abf8c47804d7",
+    "text": "Merhaba",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158191Z"
+  },
+  "data.otservbr.global.npc.a.dead.bureaucrat2.L79.885": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Hoşça kal ve beni unutma!",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158197Z"
+  },
+  "data.otservbr.global.npc.a.dead.bureaucrat2.L80.886": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Hoşça kal ve beni unutma!",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158203Z"
+  },
+  "data.otservbr.global.npc.a.dead.bureaucrat3.L100.1108": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Hoşça kal ve beni unutma!",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158208Z"
+  },
+  "data.otservbr.global.npc.a.dead.bureaucrat3.L57.1106": {
+    "src_hash": "8b1a9953c4611296a827abf8c47804d7",
+    "text": "Merhaba",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158214Z"
+  },
+  "data.otservbr.global.npc.a.dead.bureaucrat3.L99.1107": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Hoşça kal ve beni unutma!",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158219Z"
+  },
+  "data.otservbr.global.npc.a.dead.bureaucrat4.L108.265": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Hoşça kal ve beni unutma!",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158225Z"
+  },
+  "data.otservbr.global.npc.a.dead.bureaucrat4.L109.266": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Hoşça kal ve beni unutma!",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158230Z"
+  },
+  "data.otservbr.global.npc.a.dead.bureaucrat4.L64.264": {
+    "src_hash": "8b1a9953c4611296a827abf8c47804d7",
+    "text": "Merhaba",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158238Z"
+  },
+  "data.otservbr.global.npc.a.dragon.lord.L56.823": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Sessiz ol! <canavar aktivitesi hakkında detaylı rapor verir>",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158244Z"
+  },
+  "data.otservbr.global.npc.a.dragon.lord.L65.824": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Sessiz ol! <canavar aktivitesi hakkında detaylı rapor verir>",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158250Z"
+  },
+  "data.otservbr.global.npc.a.dragon.lord.L72.825": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Sessiz ol! <canavar aktivitesi hakkında detaylı rapor verir>",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158255Z"
+  },
+  "data.otservbr.global.npc.a.dragon.mother.L62.204": {
+    "src_hash": "c6a0aabd2af804ac1f00c1504af5edf4",
+    "text": "Grrr.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158261Z"
+  },
+  "data.otservbr.global.npc.a.drillworm.L56.1124": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Sessiz ol! <canavar aktivitesi hakkında detaylı rapor verir>",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158341Z"
+  },
+  "data.otservbr.global.npc.a.drillworm.L65.1125": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Sessiz ol! <canavar aktivitesi hakkında detaylı rapor verir>",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158354Z"
+  },
+  "data.otservbr.global.npc.a.drillworm.L72.1126": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Sessiz ol! <canavar aktivitesi hakkında detaylı rapor verir>",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158368Z"
+  },
+  "data.otservbr.global.npc.a.fading.memory.L53.1295": {
+    "src_hash": "22567aba8d64ab99fe9115b6f7cb9c48",
+    "text": "Ah...",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158374Z"
+  },
+  "data.otservbr.global.npc.a.ghostly.sage.L61.1104": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Hoşça kal.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158383Z"
+  },
+  "data.otservbr.global.npc.a.lost.basher.L56.230": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Sessiz ol! <canavar aktivitesi hakkında detaylı rapor verir>",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158389Z"
+  },
+  "data.otservbr.global.npc.a.lost.basher.L65.231": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Sessiz ol! <canavar aktivitesi hakkında detaylı rapor verir>",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158394Z"
+  },
+  "data.otservbr.global.npc.a.lost.basher.L72.232": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Sessiz ol! <canavar aktivitesi hakkında detaylı rapor verir>",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158400Z"
+  },
+  "data.otservbr.global.npc.a.lost.husher.L56.1263": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Sessiz ol! <canavar aktivitesi hakkında detaylı rapor verir>",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158405Z"
+  },
+  "data.otservbr.global.npc.a.lost.husher.L65.1264": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Sessiz ol! <canavar aktivitesi hakkında detaylı rapor verir>",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158418Z"
+  },
+  "data.otservbr.global.npc.a.lost.husher.L72.1265": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Sessiz ol! <canavar aktivitesi hakkında detaylı rapor verir>",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158424Z"
+  },
+  "gamestore.modal.error": {
+    "src_hash": "902b0d55fddef6f8d651fe1035b7d4bd",
+    "text": "Hata",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158429Z"
+  },
+  "scripts.actions_MedusaOil.msg_5": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Üzgünüm, mümkün değil.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158435Z"
+  },
+  "scripts.actions_augerfun.msg_2": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Üzgünüm, mümkün değil.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158440Z"
+  },
+  "scripts.actions_calassa_comb_door.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Kapı istenmeyen davetsiz misafirlere karşı mühürlenmiş görünüyor.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158445Z"
+  },
+  "scripts.actions_doors.msg_2": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Kapı istenmeyen davetsiz misafirlere karşı mühürlenmiş görünüyor.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158454Z"
+  },
+  "scripts.actions_glasshoneyfun.msg_2": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Üzgünüm, mümkün değil.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158460Z"
+  },
+  "scripts.actions_outlaw_camp_door.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Kapı istenmeyen davetsiz misafirlere karşı mühürlenmiş görünüyor.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158466Z"
+  },
+  "scripts.actions_peelerfun.msg_2": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Üzgünüm, mümkün değil.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158471Z"
+  },
+  "scripts.actions_pickenchanted.msg_2": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Üzgünüm, mümkün değil.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158477Z"
+  },
+  "scripts.actions_questDoors.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Kapı istenmeyen davetsiz misafirlere karşı mühürlenmiş görünüyor.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158482Z"
+  },
+  "scripts.actions_questDoors.msg_4": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Kapı istenmeyen davetsiz misafirlere karşı mühürlenmiş görünüyor.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158488Z"
+  },
+  "scripts.actions_scissorsfun.msg_1": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Üzgünüm, mümkün değil.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158494Z"
+  },
+  "scripts.actions_ungreez_door.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Kapı istenmeyen davetsiz misafirlere karşı mühürlenmiş görünüyor.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158499Z"
+  },
+  "scripts.actions_zalamon_door.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Kapı istenmeyen davetsiz misafirlere karşı mühürlenmiş görünüyor.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158504Z"
+  },
+  "scripts.banana_chocolate_shake.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "Tekrar kullanmadan önce beklemelisin.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158510Z"
+  },
+  "scripts.blessed_steak.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "Tekrar kullanmadan önce beklemelisin.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158515Z"
+  },
+  "scripts.blueberry_cupcake.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "Tekrar kullanmadan önce beklemelisin.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158520Z"
+  },
+  "scripts.carrot_cake.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "Tekrar kullanmadan önce beklemelisin.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158525Z"
+  },
+  "scripts.closing_door.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Kapı istenmeyen davetsiz misafirlere karşı mühürlenmiş görünüyor.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158531Z"
+  },
+  "scripts.coconut_shrimp_bake.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "Tekrar kullanmadan önce beklemelisin.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158537Z"
+  },
+  "scripts.demonic_candy_ball.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "Tekrar kullanmadan önce beklemelisin.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158542Z"
+  },
+  "scripts.door.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Kapı istenmeyen davetsiz misafirlere karşı mühürlenmiş görünüyor.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158548Z"
+  },
+  "scripts.filled_jalapeno_peppers.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "Tekrar kullanmadan önce beklemelisin.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158553Z"
+  },
+  "scripts.find_fiend.level_unknown": {
+    "src_hash": "88183b946cc5f0e8c96b2e66e1c74a7e",
+    "text": "Bilinmeyen",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158561Z"
+  },
+  "scripts.find_person.dir_east": {
+    "src_hash": "320381dbf7cd2f31c04baa6b36e1c682",
+    "text": "doğu",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158567Z"
+  },
+  "scripts.find_person.dir_north": {
+    "src_hash": "8d8d1437907bca79900ac5f0ea1f5c73",
+    "text": "kuzey",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158575Z"
+  },
+  "scripts.find_person.dir_northeast": {
+    "src_hash": "148c89d38f2721774d605658b86698c6",
+    "text": "kuzey-doğu",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158580Z"
+  },
+  "scripts.find_person.dir_northwest": {
+    "src_hash": "62c454d99c54803bd76d93c7412c2d25",
+    "text": "kuzey-batı",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158586Z"
+  },
+  "scripts.find_person.dir_south": {
+    "src_hash": "50fd76e33fe5b9617c5ca99008af8904",
+    "text": "güney",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158591Z"
+  },
+  "scripts.find_person.dir_southeast": {
+    "src_hash": "d857ea16326ac6746fb8bf70e0fb380b",
+    "text": "güney-doğu",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158596Z"
+  },
+  "web.tpl.forum.add_board.td_1": {
+    "src_hash": "4e140ba723a03baa6948340bf90e2ef6",
+    "text": "Isim:",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158602Z"
+  },
+  "web.tpl.forum.add_board.td_2": {
+    "src_hash": "d0042a700e9bdf79689d63ee6846dc0e",
+    "text": "Açıklama:",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158608Z"
+  },
+  "web.tpl.guilds.list.b_2": {
+    "src_hash": "b5a7adde1af5c87d7fd797b6245c2a39",
+    "text": "Açıklama",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158613Z"
+  },
+  "web.tpl.admin.tools.account.label_2": {
+    "src_hash": "a2aa6b4bebf569d55787e53bb224c072",
+    "text": "Sikkeler",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158619Z"
+  },
+  "web.tpl.highscores.b_4": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "İsim",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158624Z"
+  },
+  "web.tpl.account.create.set_1": {
+    "src_hash": "641342bfe375ce1daa5ccf2eb31489ef",
+    "text": "Masa5",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158630Z"
+  },
+  "web.tpl.experience_stages.b_3": {
+    "src_hash": "a0db49ba470c1c9ae2128c3470339153",
+    "text": "Seviye",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158635Z"
+  },
+  "web.tpl.guilds.manager.b_3": {
+    "src_hash": "b5a7adde1af5c87d7fd797b6245c2a39",
+    "text": "Açıklama",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158641Z"
+  },
+  "web.tpl.commands.form.td_2": {
+    "src_hash": "d0042a700e9bdf79689d63ee6846dc0e",
+    "text": "Açıklama:",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158646Z"
+  },
+  "web.tpl.spells.b_1": {
+    "src_hash": "5bfd24665af25248c404de5e663b08cd",
+    "text": "Büyü Ara",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158651Z"
+  },
+  "web.tpl.spells.th_2": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "İsim",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158657Z"
+  },
+  "web.tpl.spells.th_4": {
+    "src_hash": "a0db49ba470c1c9ae2128c3470339153",
+    "text": "Seviye",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158662Z"
+  },
+  "web.tpl.spells.th_5": {
+    "src_hash": "02fcc64668dd1b6a85e60ac9797f2dc7",
+    "text": "Mana",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158675Z"
+  },
+  "web.tpl.spells.th_7": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "İsim",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158683Z"
+  },
+  "web.tpl.spells.th_9": {
+    "src_hash": "a0db49ba470c1c9ae2128c3470339153",
+    "text": "Seviye",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158689Z"
+  },
+  "web.tpl.spells.th_10": {
+    "src_hash": "02fcc64668dd1b6a85e60ac9797f2dc7",
+    "text": "Mana",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158694Z"
+  },
+  "web.tpl.spells.th_12": {
+    "src_hash": "7d74f3b92b19da5e606d737d339a9679",
+    "text": "Eşya",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158700Z"
+  },
+  "web.tpl.spells.th_15": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "İsim",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158705Z"
+  },
+  "web.tpl.spells.th_16": {
+    "src_hash": "a0db49ba470c1c9ae2128c3470339153",
+    "text": "Seviye",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158710Z"
+  },
+  "web.tpl.spells.th_17": {
+    "src_hash": "6e142665254eccd39cf91a20382eca8e",
+    "text": "Büyü Seviyesi",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158716Z"
+  },
+  "web.tpl.spells.th_18": {
+    "src_hash": "7d74f3b92b19da5e606d737d339a9679",
+    "text": "Eşya",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158721Z"
+  },
+  "web.tpl.monsters.th_1": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "İsim",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158726Z"
+  },
+  "web.tpl.monsters.th_3": {
+    "src_hash": "605669cab962bf944d99ce89cf9e58d9",
+    "text": "Sağlık",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158732Z"
+  },
+  "web.tpl.monsters.th_4": {
+    "src_hash": "4038d5a85906029f46137a4164c51073",
+    "text": "Deneyim",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158737Z"
+  },
+  "web.tpl.account.management.th_12": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "İsim",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158743Z"
+  },
+  "web.tpl.account.management.th_13": {
+    "src_hash": "a0db49ba470c1c9ae2128c3470339153",
+    "text": "Seviye",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158748Z"
+  },
+  "web.tpl.account.management.th_17": {
+    "src_hash": "ec53a8c4f07baed5d8825072c89799be",
+    "text": "Durum",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158754Z"
+  },
+  "web.tpl.account.management.th_18": {
+    "src_hash": "62a5e490880a92eef74f167d9dc6dca0",
+    "text": "Saklan",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158759Z"
+  },
+  "web.tpl.characters.form.set_2": {
+    "src_hash": "3baba45b003bb1c5497303a1b29ae1bb",
+    "text": "Masa1",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158764Z"
+  },
+  "web.tpl.changelog.b_4": {
+    "src_hash": "b5a7adde1af5c87d7fd797b6245c2a39",
+    "text": "Açıklama",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158770Z"
+  },
+  "cpp.cancel.not_possible": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Üzgünüm, mümkün değil.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158775Z"
+  },
+  "cpp.combat.death": {
+    "src_hash": "2e8d6dbf9112a879d4ceb15403d10a78",
+    "text": "ölüm",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158780Z"
+  },
+  "cpp.combat.earth": {
+    "src_hash": "852488ddd9570bc877783bf4397563e0",
+    "text": "toprak",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158789Z"
+  },
+  "cpp.combat.energy": {
+    "src_hash": "05e7d19a6d002118deef70d21ff4226e",
+    "text": "enerji",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158794Z"
+  },
+  "cpp.combat.fire": {
+    "src_hash": "015f28b9df1bdd36427dd976fb73b29d",
+    "text": "ateş",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158799Z"
+  },
+  "cpp.combat.holy": {
+    "src_hash": "ff0eca571f7670efa4ac4a2c37214c6b",
+    "text": "kutsal",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158804Z"
+  },
+  "cpp.combat.physical": {
+    "src_hash": "842e5a39b01fadaead6970f5ff5de1d5",
+    "text": "Fiziksel",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158810Z"
+  },
+  "cpp.combat.unknown": {
+    "src_hash": "ad921d60486366258809553a3db49a4a",
+    "text": "Bilinmeyen",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158815Z"
+  },
+  "cpp.forge.unknown": {
+    "src_hash": "013cf261f9ccf5d4f027bc001d0d1d0c",
+    "text": "(bilinmeyen)",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158820Z"
+  },
+  "cpp.game.highscore_category_magic_level": {
+    "src_hash": "6e142665254eccd39cf91a20382eca8e",
+    "text": "Büyü Seviyesi",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158825Z"
+  },
+  "cpp.game.offline_training_button_cancel": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "İptal",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158831Z"
+  },
+  "cpp.inspect.armor": {
+    "src_hash": "c77a8030f463c2c14aebd6452fc9f0a8",
+    "text": "zırh",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158836Z"
+  },
+  "cpp.inspect.attack": {
+    "src_hash": "dcfafcb4323b102c7e204555d313ba0a",
+    "text": "Saldırı",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158845Z"
+  },
+  "cpp.inspect.body_legs": {
+    "src_hash": "86acdeeaa47a154a6c389199327bb5b9",
+    "text": "bacaklık",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158850Z"
+  },
+  "cpp.inspect.charges": {
+    "src_hash": "17e72430608947c0734ef298429647bb",
+    "text": "Yük",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158855Z"
+  },
+  "cpp.inspect.description": {
+    "src_hash": "b5a7adde1af5c87d7fd797b6245c2a39",
+    "text": "Açıklama",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158861Z"
+  },
+  "cpp.inspect.empty": {
+    "src_hash": "a2e4822a98337283e39f7b60acf85ec9",
+    "text": "boş",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158866Z"
+  },
+  "cpp.inspect.invisibility": {
+    "src_hash": "70840564ed92bb0f351968dd5d47b5bb",
+    "text": "Invisibility",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158871Z"
+  },
+  "cpp.inspect.magic_level": {
+    "src_hash": "6e142665254eccd39cf91a20382eca8e",
+    "text": "Büyü Seviyesi",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158877Z"
+  },
+  "cpp.inspect.mana_shield": {
+    "src_hash": "f249800c7cf9b009f48674253a64721d",
+    "text": "Mana Kalkan",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158882Z"
+  },
+  "cpp.inspect.required": {
+    "src_hash": "b651efdb98a5d6bd2b3935d0c3f4a5e2",
+    "text": "Gerekli",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158887Z"
+  },
+  "cpp.inspect.required_level": {
+    "src_hash": "5ab64d8b1a2cf5b487c1dbf88fdf64c1",
+    "text": "Gerekli Seviye",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158893Z"
+  },
+  "cpp.inspect.required_magic_level": {
+    "src_hash": "6821616c8a63532178ae7438bea1c633",
+    "text": "Gerekli Büyü Seviye",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158901Z"
+  },
+  "cpp.inspect.rune_spell_name": {
+    "src_hash": "8751237628ef1f455997715e35819b4e",
+    "text": "Rün Büyü Isim",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158907Z"
+  },
+  "cpp.inspect.speed": {
+    "src_hash": "44877c6aa8e93fa5a91c9361211464fb",
+    "text": "Hız",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158912Z"
+  },
+  "cpp.inspect.weight": {
+    "src_hash": "8c489d0946f66d17d73f26366a4bf620",
+    "text": "Ağırlık",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158917Z"
+  },
+  "cpp.look.invisibility": {
+    "src_hash": "b31ffe10fc51b2597fc9a74f4da7ce66",
+    "text": "Invisibility",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158923Z"
+  },
+  "cpp.look.magic_level_label": {
+    "src_hash": "35e304d91aea4e7e22e337bf6da2a949",
+    "text": "Büyü Seviyesi",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158928Z"
+  },
+  "cpp.look.mana_shield": {
+    "src_hash": "475e549fe594c71ffa9ca2e3b939c548",
+    "text": "mana kalkan",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158933Z"
+  },
+  "cpp.look.physical_plus": {
+    "src_hash": "3ecd10fa398143a7349ecddd35453c78",
+    "text": " fiziksel + ",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158938Z"
+  },
+  "book.cursed_crystal.crystal_gardens_diary": {
+    "src_hash": "212d4188b1eaafdc59d2337c69c84d21",
+    "text": "Yaptım! Kristal bahçelere ulaştım! Aşağıda ne güzellikler ve ihtişamlar gördüm. Daha da fazlası: Küçük bir yeraltı gölü keşfettim - ama Harry benden önce oradaydı. Ve tuhaf bir şey yaptı: Küçük, şeffaf görünen bir zili çaldı ve anında suda büyük bir girdap belirdi. Sanırım bu, uzun zamandır aradığımız mağaraların derinliklerine giden gizemli yol. Ama korkak Harry suya dalmaya cesaret edemedi. Bunun yerine mağaralardan ayrıldı ve yüzeye geri döndü. Bu zile sahip olmalıyım!",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158944Z"
+  },
+  "book.koshei.famous_inhabitants_page_2": {
+    "src_hash": "a5eab44d23fe57eb0fcd7dfe64a33079",
+    "text": "SAYFA 2\nMeraklı Lord Koshei\n-_-_-_-_-_-_-_-_-_-_-_-\nDoğum tarihi: bilinmiyor\nYaş: bilinmiyor\nMemleketi: bilinmiyor\nÖlüm tarihi: bilinmiyor\nBu adam hakkında bilinen pek fazla şey yok. Bir anda ortaya çıktı ve neredeyse on yıl boyunca burada yaşadı. İletişimsel olmasına rağmen mesleği ya da geçimini sağlamak için ne yaptığı hakkında hiçbir şey anlatmadı. İlk önce Darashia 2, Daire 11'de yaklaşık iki yıl yaşadı. Bu süre zarfında etrafta dolaşıyor, Darama topraklarını dolaşıyor ve sık sık Düşler Hamamı'nı ve Kuzeydeki Minotaur Piramidini ziyaret ediyordu.\nDaha sonra dağların güneyine bir kule inşa ettiği anlaşıldı. Kimsenin ona yardım ettiği görülmediği için bunu nasıl başardığı açıklanamıyor. Neyse, kulesinin kalıntıları hâlâ orada. ...",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158950Z"
+  },
+  "book.new_frontier.hidden_note": {
+    "src_hash": "9ceb31d90dfc2bd835acf14d81f53a52",
+    "text": "Kuzeydeki gizli kapıya git",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158955Z"
+  },
+  "book.otbm.1000_alchemical_uses_of_urine": {
+    "src_hash": "9c23d812ac32f7e41a0537b19e4c8678",
+    "text": "İdrarın 1000 Simyasal Kullanımı",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158960Z"
+  },
+  "book.otbm.1000_gold_10_fire_bugs": {
+    "src_hash": "ea67da6d7646ef0efd5615dd8e19730a",
+    "text": "Dream Challenge için 1000 altın 10 ateş böceği",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158970Z"
+  },
+  "book.otbm.1001_recipes_against_sweaty_hands": {
+    "src_hash": "8275b9995fc68e7998155dae59d10bb0",
+    "text": "El Terlemesine Karşı 1001 Tarif",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158975Z"
+  },
+  "book.otbm.100_gold_coins_equal_1": {
+    "src_hash": "39c18279510fdb3a51a69ee816e0238d",
+    "text": "100 altın para 1 platin paraya eşittir",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158981Z"
+  },
+  "book.otbm.100_gold_coins_equal_1_39c18279": {
+    "src_hash": "39c18279510fdb3a51a69ee816e0238d",
+    "text": "100 altın para 1 platin paraya eşittir",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158986Z"
+  },
+  "book.otbm.100_platinum_coins_equal_1": {
+    "src_hash": "648a8349f24f155bf3be3e9bd80c104d",
+    "text": "100 platin madeni para 1 kristal madeni paraya eşittir",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.158992Z"
+  },
+  "book.otbm.100_platinum_coins_equal_1_648a8349": {
+    "src_hash": "648a8349f24f155bf3be3e9bd80c104d",
+    "text": "100 platin madeni para 1 kristal madeni paraya eşittir",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159023Z"
+  },
+  "book.otbm.1_be_respectful_and_considerate": {
+    "src_hash": "a57d4f9c381d85d1d59ee58709244771",
+    "text": "1. Yoldaşlarınıza karşı saygılı ve düşünceli olun.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159037Z"
+  },
+  "book.otbm.1_discover_secret_of_necromants": {
+    "src_hash": "b262931a57ba6ca52d750f20308ade82",
+    "text": "1. Nekromantın nektarının sırrını keşfedin",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159050Z"
+  },
+  "book.otbm.1_put_a_bunch_of": {
+    "src_hash": "e306ee2cd6f63b0540ec88912bf7026c",
+    "text": "1. Makineye bir miktar şeker kamışı koyun",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159056Z"
+  },
+  "book.otbm.1st_floor_bel_etage_grand": {
+    "src_hash": "f29cc66b29afa145b3a9858568976985",
+    "text": "1. kat (bel etage): Grand Opera Café",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159061Z"
+  },
+  "book.otbm.1st_floor_interior_design_take": {
+    "src_hash": "9fb4f14b9389b9a4981c5b9bd7cbb8a0",
+    "text": "1. kat: İç Tasarım (asansöre binin)",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159067Z"
+  },
+  "book.otbm.1st_floor_magic_emporium": {
+    "src_hash": "3bc17306f6a2a84ed45125c1b8697891",
+    "text": "1. kat: Magic Emporium",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159072Z"
+  },
+  "book.otbm.1st_floor_the_archers_grounds": {
+    "src_hash": "766fedafb986dcfc1155671e1bb154fb",
+    "text": "1. kat: Okçu Alanı - Uzak Silahlar ve Paladin Büyüleri",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159077Z"
+  },
+  "book.otbm.20_tricks_to_get_peoples": {
+    "src_hash": "30aa0d5bee0e41253afba1e1fedcd836",
+    "text": "İnsanların Parasını Kazanmanın 20 Püf Noktası",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159083Z"
+  },
+  "book.otbm.2_dont_be_late_for": {
+    "src_hash": "ad76df038f1054198aa4a295d40dc2b4",
+    "text": "2. Derslere ve antrenmanlara geç kalmayın.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159088Z"
+  },
+  "book.otbm.2_floor_the_room_of": {
+    "src_hash": "2b9486c0596c58b4f7addc9ea8b7a6d1",
+    "text": "2. Kat - Kahin Odası",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159093Z"
+  },
+  "book.otbm.2_molasses_will_be_automatically": {
+    "src_hash": "3e983380c3460c89b75e08bf3fcd4e7e",
+    "text": "2. Melas otomatik olarak çıkarılacak ve rom haline getirilecek",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159099Z"
+  },
+  "book.otbm.2nd_floor_barnabas_dee_astronomer": {
+    "src_hash": "d71fa402f290bf9994eda7fc73808be3",
+    "text": "2. kat: Barnabas Dee, Gökbilimci ve Büyücü Büyü Öğretmeni.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159104Z"
+  },
+  "book.otbm.2nd_floor_exquisite_jewellery": {
+    "src_hash": "46a7e585dbab0fe25bc731f569a5a7b3",
+    "text": "2. kat: Zarif Mücevherat",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159110Z"
+  },
+  "book.otbm.2nd_floor_madame_faylas_music": {
+    "src_hash": "6fb6296d9b6d9246f8e9f5d9e5a10ff7",
+    "text": "2. kat: Madam Fayla'nın Müzik Odası",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159115Z"
+  },
+  "book.otbm.3789_gold_weapons_and_repairs": {
+    "src_hash": "09d42ec9bd3a03229363e3dd475e0f61",
+    "text": "3789 altın silah ve onarımı",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159120Z"
+  },
+  "book.otbm.3_discover_secret_entrance_to": {
+    "src_hash": "4e11b68dea1a42f22925d7964699f36e",
+    "text": "3. Nightmare Pits'in gizli girişini keşfedin",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159126Z"
+  },
+  "book.otbm.3_maintain_your_training_gear": {
+    "src_hash": "cc0e65a42ae00b0f7e26ec4fef3ac429",
+    "text": "3. Antrenman ekipmanınızı iyi durumda tutun.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159131Z"
+  },
+  "book.otbm.3_when_the_distilling_process": {
+    "src_hash": "13420961d8397919f1276d7098d986fa",
+    "text": "3. Damıtma işlemi bittiğinde rom makineden dökülmeye başlayacaktır.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159136Z"
+  },
+  "client.statsbar.text1": {
+    "src_hash": "6e142665254eccd39cf91a20382eca8e",
+    "text": "Büyü Seviyesi",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159142Z"
+  },
+  "client.player.text2": {
+    "src_hash": "b029557ad5ecf8c651bf8750ad64489d",
+    "text": "Elit Şövalye",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159147Z"
+  },
+  "client.player.text3": {
+    "src_hash": "be6e1ac9fcd154890b9fe7b7880cadd6",
+    "text": "Kraliyet Paladini",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159152Z"
+  },
+  "client.const.text1": {
+    "src_hash": "3d7033662f9854085c5da74321ff2779",
+    "text": "Kuzey Doğu",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159161Z"
+  },
+  "client.const.text2": {
+    "src_hash": "b7e1f1c306e3b50e15998797692d2bb2",
+    "text": "Güney Doğu",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159166Z"
+  },
+  "client.const.text3": {
+    "src_hash": "e06870e1f12090f5b207f1a490cf40ad",
+    "text": "Güney Batı",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159172Z"
+  },
+  "client.const.text4": {
+    "src_hash": "52f3e90e1282312c8302e476d7c64ed0",
+    "text": "Kuzey Batı",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159177Z"
+  },
+  "client.spells.text1": {
+    "src_hash": "f9140cb5bf654332975e8f47bfcac5b0",
+    "text": "Apprentice's Strike",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159182Z"
+  },
+  "client.spells.text2": {
+    "src_hash": "fa7b503fd5e42aa8ed809fd9e22c833f",
+    "text": "exeta amp res",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159188Z"
+  },
+  "client.spells.text3": {
+    "src_hash": "40a2cd84931f4f23fc412feba6b5ece6",
+    "text": "exura max vita",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159193Z"
+  },
+  "client.spells.text4": {
+    "src_hash": "c9e8e54ec0b5e93a326f8854998f312f",
+    "text": "Nature's Embrace",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159198Z"
+  },
+  "client.utils.text1": {
+    "src_hash": "64aaabc8fbbfdf4b2e3c489a91d134ee",
+    "text": "Castlemania",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159203Z"
+  },
+  "client.utils.text3": {
+    "src_hash": "064862da0c7cfc2466089ac2e72074a0",
+    "text": "Chorister",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159209Z"
+  },
+  "client.utils.text5": {
+    "src_hash": "6aeca36524a11b8f633da47c9b4f8c5b",
+    "text": "The Milkman",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159214Z"
+  },
+  "client.house.text4": {
+    "src_hash": "deb7ecd44df5d3b059fd31075a895308",
+    "text": "İsme göre sırala",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159219Z"
+  },
+  "otclient_data.30_minimap_otui.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "İptal",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159225Z"
+  },
+  "otclient_data.30_minimap_otui.tr_2": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Tamam",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159230Z"
+  },
+  "otclient_data.30_minimap_otui.tr_3": {
+    "src_hash": "b5a7adde1af5c87d7fd797b6245c2a39",
+    "text": "Açıklama",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159235Z"
+  },
+  "otclient_data.40_inventory_otui.tr_4": {
+    "src_hash": "11a755d598c0c417f9a36758c3da7481",
+    "text": "Dur",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159245Z"
+  },
+  "otclient_data.40_minimap_otui.tr_2": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "İptal",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159250Z"
+  },
+  "otclient_data.40_minimap_otui.tr_3": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Tamam",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159255Z"
+  },
+  "otclient_data.40_minimap_otui.tr_4": {
+    "src_hash": "b5a7adde1af5c87d7fd797b6245c2a39",
+    "text": "Açıklama",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159261Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_1": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Tamam",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159269Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_2": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "İptal",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159275Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_40": {
+    "src_hash": "2fefd38cae42b54fcbc23fec38c9c9fd",
+    "text": "Göster Zemin",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159280Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_43": {
+    "src_hash": "c9cc8cce247e49bae79f15173ce97354",
+    "text": "Kaydet",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159285Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_6": {
+    "src_hash": "f2a6c498fb90ee345d997f888fce3b18",
+    "text": "Sil",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159294Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_7": {
+    "src_hash": "c9cc8cce247e49bae79f15173ce97354",
+    "text": "Kaydet",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159299Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_9": {
+    "src_hash": "03c2e7e41ffc181a4e84080b4710e81e",
+    "text": "Yeni",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159305Z"
+  },
+  "otclient_data.30_minimap_otui.tr_4": {
+    "src_hash": "52f5e0bc3859bc5f5e25130b6c7e8881",
+    "text": "Konum",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159310Z"
+  },
+  "talkaction.gm.spy.msg_empty": {
+    "src_hash": "ce2c8aed9c2fa0cfbed56cbda4d8bf07",
+    "text": "boş",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159315Z"
+  },
+  "talkaction.gm.spy.slot_amulet": {
+    "src_hash": "8ab7b3f922dcbea814209decbc6571ed",
+    "text": "Muska",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159320Z"
+  },
+  "talkaction.gm.spy.slot_armor": {
+    "src_hash": "c77a8030f463c2c14aebd6452fc9f0a8",
+    "text": "zırh",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159326Z"
+  },
+  "talkaction.gm.spy.slot_arrow": {
+    "src_hash": "0f4e1aaabd074689b7d3ead824d1ee8e",
+    "text": "Ok",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159331Z"
+  },
+  "talkaction.gm.spy.slot_backpack": {
+    "src_hash": "10df2101dd922fefc0e66be49b7723c2",
+    "text": "Sırt çantası",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159336Z"
+  },
+  "talkaction.gm.spy.slot_boots": {
+    "src_hash": "797e65b9c5cd0da25a932f2b0947b94b",
+    "text": "Çizme",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159342Z"
+  },
+  "talkaction.gm.spy.slot_helmet": {
+    "src_hash": "5633f0c2ef79566f47e39491600497ff",
+    "text": "Miğfer",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159347Z"
+  },
+  "talkaction.gm.spy.slot_legs": {
+    "src_hash": "48423a9049b3065103ef1026a5fa08e5",
+    "text": "bacaklık",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159352Z"
+  },
+  "talkaction.gm.spy.slot_ring": {
+    "src_hash": "d4db177c94738b72bf9ce61e988ab1f1",
+    "text": "Yüzük",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159358Z"
+  },
+  "talkaction.common.msg_command_param_required": {
+    "src_hash": "c271d2fad3f3e6b7c52384ead3321add",
+    "text": "Komut parametresi gerekli.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159363Z"
+  },
+  "talkaction.common.msg_command_param_usage": {
+    "src_hash": "8a70b215e7b42d0a434259e0b3584f62",
+    "text": "Komut parametresi gerekli. Kullanım: {usage}",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159369Z"
+  },
+  "talkaction.common.msg_creature_not_found": {
+    "src_hash": "9ed7bb1fb53aca902744154ac6d31e8b",
+    "text": "Yaratık bulunamadı.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159374Z"
+  },
+  "talkaction.common.msg_creature_not_found_verbose": {
+    "src_hash": "9d0640938a7f699932dc2fc196a3e258",
+    "text": "Bu isimde bir yaratık bulunamadı.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159383Z"
+  },
+  "talkaction.common.msg_insufficient_parameters": {
+    "src_hash": "1a689cded4cf742d35d3aaf507494fc9",
+    "text": "Yetersiz parametreler.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159388Z"
+  },
+  "talkaction.common.msg_insufficient_usage": {
+    "src_hash": "e8edd16e11be79a9caa1fca8a7c0d55b",
+    "text": "Yetersiz parametreler. Kullanım: {usage}",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159394Z"
+  },
+  "lib.functions.msg_insufficient_params": {
+    "src_hash": "e8edd16e11be79a9caa1fca8a7c0d55b",
+    "text": "Yetersiz parametreler. Kullanım: {usage}",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159399Z"
+  },
+  "lib.functions.msg_param_required": {
+    "src_hash": "8a70b215e7b42d0a434259e0b3584f62",
+    "text": "Komut parametresi gerekli. Kullanım: {usage}",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159405Z"
+  },
+  "lib.player.modal_button_close": {
+    "src_hash": "d3d2e617335f08df83599665eef8a418",
+    "text": "Kapat",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159411Z"
+  },
+  "rune.msg_sorry_not_possible": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Üzgünüm, mümkün değil.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159416Z"
+  },
+  "lib.blessing.msg_already": {
+    "src_hash": "a9eb7f02ee441e9776a88e56807afc24",
+    "text": "Sen zaten kutsanmışsın.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159425Z"
+  },
+  "lib.blessing.msg_battle": {
+    "src_hash": "89c97deb77470fe3cbf0e3d553832e5a",
+    "text": "Savaştayken bereketi satın alamazsınız.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159431Z"
+  },
+  "lib.blessing.msg_none": {
+    "src_hash": "f25caa54b1d4a44e40a1e7b5801fe37b",
+    "text": "Hiçbir bereket alınmadı.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159436Z"
+  },
+  "lib.blessing.msg_not_enough": {
+    "src_hash": "b2f159ac492a3ef91d76250c3fa0b688",
+    "text": "Yeterli paran yok. Tüm nimetleri satın almak için {cost}'ya ihtiyacınız var.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159442Z"
+  },
+  "lib.blessing.msg_protects": {
+    "src_hash": "0610c9df0649d00a62e3a13a274006d9",
+    "text": "{name} sizi korur.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159447Z"
+  },
+  "lib.blessing.msg_received": {
+    "src_hash": "88dd3b311379b0945a1fce136b1d7024",
+    "text": "Kalan {count} kutsamalarını toplam {cost} altın karşılığında aldınız.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159452Z"
+  },
+  "lib.blessing.received_header": {
+    "src_hash": "513ce8b4376826f68cc8d468ea773867",
+    "text": "Alınan nimetler:",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159458Z"
+  },
+  "lib.concoctions.msg1": {
+    "src_hash": "4ea403723d88eef576be5867414c50e8",
+    "text": "Karışımınız",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159463Z"
+  },
+  "lib.concoctions.msg_active": {
+    "src_hash": "efbcafac9607b1597c78433fded4e6dd",
+    "text": "{name} karışımınız başka bir {duration} için hala aktif.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159469Z"
+  },
+  "lib.exaltation_forge.msg1": {
+    "src_hash": "873b8a7bd86f7de3c3afc60d7f842226",
+    "text": "Aldınız",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159474Z"
+  },
+  "lib.exaltation_forge.msg2": {
+    "src_hash": "3086afd3cca5bf3f92bb9fa5824a70bc",
+    "text": "sen almadın",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159480Z"
+  },
+  "php.mailer.text1": {
+    "src_hash": "786f760f0a2b7e6bf394e8fb2e091f01",
+    "text": "<strong>$mail_to</strong> başarıyla gönderildi",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159485Z"
+  },
+  "php.mailer.text2": {
+    "src_hash": "7f1bb541b9251ca3991f9366a4fdcc1d",
+    "text": "<strong>$mail_to</strong> adresine posta gönderilirken hata oluştu. Daha fazla bilgiyi system/logs/mailer-error.log adresinde bulabilirsiniz.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159494Z"
+  },
+  "php.mailer.text3": {
+    "src_hash": "3846ca489dd790dd85e0b5e0b9dad6d5",
+    "text": "$başarı e-postaları teslim edildi.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159499Z"
+  },
+  "php.mailer.text4": {
+    "src_hash": "67634e1d3d15eaa0ce21d2a9f8b03385",
+    "text": "$failed e-postalar başarısız oldu.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159505Z"
+  },
+  "php.server_status.text1": {
+    "src_hash": "fc026d2cbd61046fa6d081aa7997284e",
+    "text": "fas fa-ünlem-daire metni-tehlike",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159510Z"
+  },
+  "php.server_status.text2": {
+    "src_hash": "55ca72648287c8779f1fd60954bfad14",
+    "text": "sütun-md-6 sütun-lg-6",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159516Z"
+  },
+  "php.server_status.text3": {
+    "src_hash": "1c3a471e6ff5a9d34e63038319280b94",
+    "text": "kart kart bilgisi kart anahattı",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159521Z"
+  },
+  "php.server_status.text4": {
+    "src_hash": "7f30b86a3f0468f2d524fea4cb122161",
+    "text": "kart başlığı kenarlığı-alt-0",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159527Z"
+  },
+  "php.server_status.text5": {
+    "src_hash": "6e6159b3c97c1e13c5cd0b6402ae9649",
+    "text": "yazı tipi ağırlığı kalın m-0",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159533Z"
+  },
+  "php.settings.text1": {
+    "src_hash": "353d8ff78b17c34b31c8ad01d525a804",
+    "text": "Eklenti $plugin mevcut değil veya tanımlanmış ayarlara sahip değil.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159539Z"
+  },
+  "php.settings.text2": {
+    "src_hash": "4cf7384b414a9d7d4624d7e776f98aee",
+    "text": "$plugin eklentisi için ayarlar dosyası yüklenemiyor",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159544Z"
+  },
+  "php.plugins.text1": {
+    "src_hash": "f16a06e7d231a35db793c74cf0ed3b68",
+    "text": "$repoUri'den en son bilgiler alınıyor..",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159550Z"
+  },
+  "php.plugins.text2": {
+    "src_hash": "79001f389eb5f5185f6945430cb57be1",
+    "text": "upload_max_filesize",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159555Z"
+  },
+  "php.news.text1": {
+    "src_hash": "64b46d605a153160d660746a9e3f014f",
+    "text": ". TABLE_PREFIX .",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159561Z"
+  },
+  "php.menus.text1": {
+    "src_hash": "efb36922d5d9612c37ad341d2876f464",
+    "text": "Bu şablon menülerin yeniden yüklenmesini desteklemez.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159566Z"
+  },
+  "raid.pirates.announce": {
+    "src_hash": "a9b7ba70783b617e9998dc4dd82eb3c5",
+    "text": "1000",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159572Z"
+  },
+  "raid.arachir_the_ancient_one.announce": {
+    "src_hash": "a9b7ba70783b617e9998dc4dd82eb3c5",
+    "text": "1000",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159577Z"
+  },
+  "raid.lions.announce": {
+    "src_hash": "a9b7ba70783b617e9998dc4dd82eb3c5",
+    "text": "1000",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159586Z"
+  },
+  "raid.minotaurs.announce": {
+    "src_hash": "a9b7ba70783b617e9998dc4dd82eb3c5",
+    "text": "1000",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159592Z"
+  },
+  "raid.necropharus.announce": {
+    "src_hash": "a9b7ba70783b617e9998dc4dd82eb3c5",
+    "text": "1000",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159597Z"
+  },
+  "raid.example.announce": {
+    "src_hash": "a9b7ba70783b617e9998dc4dd82eb3c5",
+    "text": "1000",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159603Z"
+  },
+  "raid.undead_darashia.announce": {
+    "src_hash": "a9b7ba70783b617e9998dc4dd82eb3c5",
+    "text": "1000",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159615Z"
+  },
+  "raid.priestesses.announce": {
+    "src_hash": "a9b7ba70783b617e9998dc4dd82eb3c5",
+    "text": "1000",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159621Z"
+  },
+  "raid.barba_svar.announce": {
+    "src_hash": "a9b7ba70783b617e9998dc4dd82eb3c5",
+    "text": "1000",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159630Z"
+  },
+  "raid.barba_bittermor.announce": {
+    "src_hash": "a9b7ba70783b617e9998dc4dd82eb3c5",
+    "text": "1000",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159635Z"
+  },
+  "raid.ghazbaran.announce": {
+    "src_hash": "a9b7ba70783b617e9998dc4dd82eb3c5",
+    "text": "1000",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159641Z"
+  },
+  "raid.ice_golems.announce": {
+    "src_hash": "a9b7ba70783b617e9998dc4dd82eb3c5",
+    "text": "1000",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159646Z"
+  },
+  "raid.barbarian.announce": {
+    "src_hash": "a9b7ba70783b617e9998dc4dd82eb3c5",
+    "text": "1000",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159652Z"
+  },
+  "raid.ocyakao.announce": {
+    "src_hash": "08f90c1a417155361a5c4b8d297e0d78",
+    "text": "2000",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159658Z"
+  },
+  "raid.warwolf.announce": {
+    "src_hash": "a9b7ba70783b617e9998dc4dd82eb3c5",
+    "text": "1000",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159663Z"
+  },
+  "npclib.handler.decline": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "O zaman hayır.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159668Z"
+  },
+  "npclib.handler.missing_money": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "Yeterli paran yok.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159674Z"
+  },
+  "npclib.handler.need_money": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "Yeterli paran yok.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159679Z"
+  },
+  "npclib.handler.walkaway": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Hoşça kal.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159684Z"
+  },
+  "npclib.modules.travel_no_money": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "Yeterli paran yok.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159690Z"
+  },
+  "npclib.bank_system.say_1": {
+    "src_hash": "6eed737e97c173046cb705428c897583",
+    "text": "{} altını lonca hesabınızdan {} loncasına aktarma emri verdik.  Lütfen onay için gelen kutunuzu kontrol edin.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159696Z"
+  },
+  "npclib.bank_system.say_10": {
+    "src_hash": "c0bbe2361536121213729be4e9f8df89",
+    "text": "Gerçekten {} altını {guild account}'nize yatırmak ister misiniz?",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159701Z"
+  },
+  "npclib.bank_system.say_11": {
+    "src_hash": "6887d1bc7d3f3c653c2c09fbf93b0423",
+    "text": "Lonca hesabı bakiyeniz {} altındır.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159706Z"
+  },
+  "npclib.bank_system.say_12": {
+    "src_hash": "73ebda8add241ec9774bcc92e9aac019",
+    "text": "Yani sizin için kristal paralarınızın {} kısmını {} platin paralara dönüştürmemi ister misiniz?",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159712Z"
+  },
+  "npclib.bank_system.say_13": {
+    "src_hash": "f8e1a62393dac9f71b8e8a19df724d6e",
+    "text": "Yani sizin için {} platin paranızı {} kristal paraya çevirmemi ister misiniz?",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159717Z"
+  },
+  "npclib.bank_system.say_14": {
+    "src_hash": "a9fe7c3d39f783b5b22236afb80fa2b0",
+    "text": "Yani senin için {} platin paranı {} altın paraya çevirmemi ister misin?",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159726Z"
+  },
+  "npclib.bank_system.say_15": {
+    "src_hash": "35bfe2c57d0b9594f3d66ed1c6260b23",
+    "text": "Yani benden {} altın paranızı {} platin paraya çevirmemi istiyorsunuz?",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159731Z"
+  },
+  "npclib.bank_system.say_16": {
+    "src_hash": "cc6d13ca2a9f3fbf27a2e89c63b54782",
+    "text": "Çok iyi. {} altını {}'e aktardınız.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159737Z"
+  },
+  "npclib.bank_system.say_17": {
+    "src_hash": "1f22faf562e72945ad0034c39720b33d",
+    "text": "Peki {} altını {}'e aktarmak mı istiyorsunuz?",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159742Z"
+  },
+  "npclib.bank_system.say_18": {
+    "src_hash": "3fb371d9b0a53e013563378a50813278",
+    "text": "{} altını kime transfer etmek istersiniz?",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159748Z"
+  },
+  "module.hireling_module.text1": {
+    "src_hash": "e99642285b1df7df398ed44d38eafa66",
+    "text": "Pereira (jlcvp)',",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159753Z"
+  },
+  "module.init.text1": {
+    "src_hash": "925c0e774e4825a33c5cc47cb25535b1",
+    "text": "25-07-2020 11:52",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159759Z"
+  },
+  "module.init.text2": {
+    "src_hash": "0b6adaf3b4bd0c7e125bcb00c901950c",
+    "text": "Geliştiriciler = {",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159765Z"
+  },
+  "module.init.text3": {
+    "src_hash": "50c4e4f271f95e6a87283c28bc38cdec",
+    "text": "satın alma-bekleme süresi",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159770Z"
+  },
+  "module.init.text4": {
+    "src_hash": "3529de591833040eced95ee7377b1f42",
+    "text": "Sürüm =",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159775Z"
+  },
+  "module.init.text5": {
+    "src_hash": "517a573bb2eebb6a9c51b2d586663a28",
+    "text": "Size uyacak şekilde yaratılmış bir kıyafet. Beğeneceğinize eminiz.",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159781Z"
+  },
+  "module.gamestore.text1": {
+    "src_hash": "ba3a051022b3f034c629944cb2261c28",
+    "text": "/modules/scripts/gamestore/init.lua",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159786Z"
+  },
+  "module.gamestore.text2": {
+    "src_hash": "6e202427005530bcf8e8a31254e8920e",
+    "text": "ana sayfa/banner_armouredarcher.png",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159792Z"
+  },
+  "module.gamestore.text3": {
+    "src_hash": "bd4b6c6470d8ed138dc0f541b377d424",
+    "text": "ana sayfa/banner_podiumoftenacity.png",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159797Z"
+  },
+  "module.gamestore.text4": {
+    "src_hash": "781a5b5a0909474026612d3e59be1b7c",
+    "text": "Prim Süresi",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159803Z"
+  },
+  "module.gamestore.text5": {
+    "src_hash": "781a5b5a0909474026612d3e59be1b7c",
+    "text": "Prim Süresi",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159812Z"
+  },
+  "module.daily_reward.text1": {
+    "src_hash": "2d14650b96ea305345b6acf7a766ee81",
+    "text": "Westwol, Marcosvf132",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159817Z"
+  },
+  "module.daily_reward.text2": {
+    "src_hash": "4d90862c86132756e513210d29128bc7",
+    "text": "12/10/2020 - 20:30",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159823Z"
+  },
+  "module.daily_reward.text3": {
+    "src_hash": "f7d0eb24bd5b533e125f76d919521d0e",
+    "text": "sonGüncelleme =",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159828Z"
+  },
+  "module.daily_reward.text4": {
+    "src_hash": "3d027d436804557783b7642eab598fda",
+    "text": "İlk güne bonus yok",
+    "source": "legacy",
+    "confidence": 0.8,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.159834Z"
+  },
+  "monster.swamp_troll.name": {
+    "src_hash": "f0dc453bf53b4ae14463c8b73a534dc0",
+    "text": "Bataklık Trol",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.509803Z"
+  },
+  "monster.minotaur.name": {
+    "src_hash": "db4e0c60689b5789486e695c6ae30fb9",
+    "text": "Minotaur",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.515802Z"
+  },
+  "monster.elf.name": {
+    "src_hash": "53094f9586f36c74b0346af8885a3884",
+    "text": "Elf",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.523520Z"
+  },
+  "monster.dwarf.name": {
+    "src_hash": "bc5183644c3cfe8d28e144b1518446d9",
+    "text": "Cüce",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.532339Z"
+  },
+  "monster.hide.name": {
+    "src_hash": "62a5e490880a92eef74f167d9dc6dca0",
+    "text": "Saklan",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-12T23:31:37.564584Z"
+  },
+  "data.otservbr.global.npc.a.lost.thrower.L56.541": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Sessiz ol! <canavar aktivitesi hakkında detaylı rapor verir>",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-12T23:34:13.380701Z"
+  },
+  "data.otservbr.global.npc.a.lost.thrower.L65.542": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Sessiz ol! <canavar aktivitesi hakkında detaylı rapor verir>",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-12T23:34:13.381350Z"
+  },
+  "data.otservbr.global.npc.a.lost.thrower.L72.543": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Sessiz ol! <canavar aktivitesi hakkında detaylı rapor verir>",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-12T23:34:13.382018Z"
+  },
+  "data.otservbr.global.npc.a.nightmare.scion.L56.996": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Sessiz ol! <canavar aktivitesi hakkında detaylı rapor verir>",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-12T23:34:13.383097Z"
+  },
+  "data.otservbr.global.npc.a.nightmare.scion.L65.997": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Sessiz ol! <canavar aktivitesi hakkında detaylı rapor verir>",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-12T23:34:13.383760Z"
+  },
+  "data.otservbr.global.npc.a.nightmare.scion.L72.998": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Sessiz ol! <canavar aktivitesi hakkında detaylı rapor verir>",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-12T23:34:13.384373Z"
+  },
+  "data.otservbr.global.npc.a.vulcongra.L56.934": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Sessiz ol! <canavar aktivitesi hakkında detaylı rapor verir>",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-12T23:34:13.386445Z"
+  },
+  "data.otservbr.global.npc.a.vulcongra.L65.935": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Sessiz ol! <canavar aktivitesi hakkında detaylı rapor verir>",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-12T23:34:13.387120Z"
+  },
+  "data.otservbr.global.npc.a.vulcongra.L72.936": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Sessiz ol! <canavar aktivitesi hakkında detaylı rapor verir>",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-12T23:34:13.387782Z"
+  },
+  "item.10770.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "taş duvar",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-13T00:24:11.997725Z"
+  },
+  "item.10797.name": {
+    "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+    "text": "bilinmeyen eşya",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-13T00:24:11.998341Z"
+  },
+  "item.10841.name": {
+    "src_hash": "264dd3cf39f82396d0c013c52d1df86d",
+    "text": "kafatası sütun",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:24:12.000917Z"
+  },
+  "item.10846.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "taş duvar",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-13T00:24:12.001410Z"
+  },
+  "item.10876.name": {
+    "src_hash": "f13460bd46c28e73e8d2b6122bea2241",
+    "text": "kafatası",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-13T00:24:12.002411Z"
+  },
+  "item.10954.name": {
+    "src_hash": "590d8d939a653f0fb1b7ff4d180ff569",
+    "text": "sütun",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:24:12.003050Z"
+  },
+  "item.10984.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "taş duvar",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-13T00:24:12.003581Z"
+  },
+  "item.1099.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "AYRILMIŞ SPRİTE",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-13T00:24:12.004388Z"
+  },
+  "item.10992.name": {
+    "src_hash": "05b8c74cbd96fbf2de4c1a352702fbf4",
+    "text": "pencere",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:24:12.005107Z"
+  },
+  "item.110.name": {
+    "src_hash": "3df14ae40dd63cd17895eeb293ed167f",
+    "text": "özel şişe",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-13T00:24:12.005875Z"
+  },
+  "item.11006.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "taş duvar",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-13T00:24:12.006253Z"
+  },
+  "item.11009.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "taş duvar",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-13T00:24:12.006687Z"
+  },
+  "npc.a_nightmare_scion.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Sessiz ol! <canavar aktivitesi hakkında detaylı rapor verir>",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-13T00:29:35.598837Z"
+  },
+  "npc.a_nightmare_scion.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Sessiz ol! <canavar aktivitesi hakkında detaylı rapor verir>",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-13T00:29:35.599666Z"
+  },
+  "npc.a_nightmare_scion.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Sessiz ol! <canavar aktivitesi hakkında detaylı rapor verir>",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-13T00:29:35.600439Z"
+  },
+  "npc.a_sleeping_dragon.multi_2": {
+    "src_hash": "93a48f09ee56a48efba85aa39cda7ae9",
+    "text": "UYU. ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T00:29:35.606846Z"
+  },
+  "npc.a_vulcongra.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Sessiz ol! <canavar aktivitesi hakkında detaylı rapor verir>",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-13T00:29:35.630844Z"
+  },
+  "npc.a_vulcongra.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Sessiz ol! <canavar aktivitesi hakkında detaylı rapor verir>",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-13T00:29:35.631990Z"
+  },
+  "npc.a_vulcongra.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Sessiz ol! <canavar aktivitesi hakkında detaylı rapor verir>",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-13T00:29:35.633242Z"
+  },
+  "npc.a_wyrm.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Sessiz ol! <canavar aktivitesi hakkında detaylı rapor verir>",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-13T00:29:35.641015Z"
+  },
+  "npc.a_wyrm.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Sessiz ol! <canavar aktivitesi hakkında detaylı rapor verir>",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-13T00:29:35.641806Z"
+  },
+  "npc.a_wyrm.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Sessiz ol! <canavar aktivitesi hakkında detaylı rapor verir>",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-13T00:29:35.642663Z"
+  },
+  "monster.worker_golem.voice_2": {
+    "src_hash": "12b2df1cd3a8a5ce3aa54c7a801643e4",
+    "text": "Klonk klonk klonk",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:34.856295Z"
+  },
+  "monster.hide.desc": {
+    "src_hash": "62a5e490880a92eef74f167d9dc6dca0",
+    "text": "Saklan",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.010599Z"
+  },
+  "monster.demon_goblin.name": {
+    "src_hash": "551a414121b9fcbdf8d89989dfcaf1f9",
+    "text": "Iblis Goblin",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.030589Z"
+  },
+  "monster.warm_fire.name": {
+    "src_hash": "bc501bc1491919db0c138fe34ca70222",
+    "text": "Ilık Ateş",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.044210Z"
+  },
+  "monster.death_dragon.name": {
+    "src_hash": "ae0b3fb5bd0cdcb47876aa05426c4e4a",
+    "text": "Ölüm Ejderha",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.089417Z"
+  },
+  "monster.mushroom.name": {
+    "src_hash": "b93c3d9029fa42815abf0551db0cec98",
+    "text": "Mantar",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.095046Z"
+  },
+  "monster.strange_slime.name": {
+    "src_hash": "415560b1d8b94e55e901996518c84e24",
+    "text": "Tuhaf Balçık",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.137939Z"
+  },
+  "monster.abyssador.voice_2": {
+    "src_hash": "a44518023038539895faf7a2a1c884a4",
+    "text": "*** SÜRESI ***",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.140042Z"
+  },
+  "monster.demon_blood.name": {
+    "src_hash": "c4b65dfdaeb7b5b0100aa8ac44c96fcc",
+    "text": "Iblis Kan",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.157160Z"
+  },
+  "monster.cave_spider.name": {
+    "src_hash": "feb060fadddedabc29b0f4ae9d6cebf9",
+    "text": "Mağara Örümcek",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.180558Z"
+  },
+  "monster.cave_spider.desc": {
+    "src_hash": "737e2e1683c0bc6b1a4e60d9b37db872",
+    "text": "mağara örümcek",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.181804Z"
+  },
+  "monster.dark_paladin.name": {
+    "src_hash": "06a0dc9422f6f6eb1baca4f6553def9f",
+    "text": "Karanlık Paladin",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.184285Z"
+  },
+  "monster.dark_knight.name": {
+    "src_hash": "8b88c65b1c6d5a969c8fae3769f142a0",
+    "text": "Karanlık Şövalye",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.185809Z"
+  },
+  "monster.dark_sorcerer.name": {
+    "src_hash": "8003fc0d63b5b54b9dfa6af3fbc3d088",
+    "text": "Karanlık Büyücü",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.188237Z"
+  },
+  "monster.dark_druid.name": {
+    "src_hash": "a43778edc3ddba29ab5f9eff54390932",
+    "text": "Karanlık Druid",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.189800Z"
+  },
+  "monster.bones.name": {
+    "src_hash": "dcd154cc54df9b0997e8fd15af8aa315",
+    "text": "Kemikler",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.230718Z"
+  },
+  "monster.bones.desc": {
+    "src_hash": "dcd154cc54df9b0997e8fd15af8aa315",
+    "text": "Kemikler",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.231261Z"
+  },
+  "monster.ghost.name": {
+    "src_hash": "401357e57c765967393ba391a338e89b",
+    "text": "Hayalet",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.252407Z"
+  },
+  "monster.vampire.name": {
+    "src_hash": "41ad87cfc159526f62529db61162a2a7",
+    "text": "Vampir",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.255332Z"
+  },
+  "monster.zombie.name": {
+    "src_hash": "7c3d115a77fd8d39fbbc0bb2bf54cfc7",
+    "text": "Zombi",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.256472Z"
+  },
+  "monster.demon_skeleton.name": {
+    "src_hash": "0bee4a1a833de099098859133a51c0a4",
+    "text": "Iblis Iskelet",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.260792Z"
+  },
+  "monster.undead_dragon.name": {
+    "src_hash": "e1b363afacbec148fecbb661ec0ea26b",
+    "text": "Yaşayan ölü Ejderha",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.264684Z"
+  },
+  "monster.blood_beast.name": {
+    "src_hash": "c1c9f305f6070518b88efffd27f6569d",
+    "text": "Kan Canavar",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.265757Z"
+  },
+  "monster.giant_spider_wyda.name": {
+    "src_hash": "9e06f68bf9688070bf6b5d3869e5336b",
+    "text": "Dev Örümcek",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.273032Z"
+  },
+  "monster.orc_sambackpack.name": {
+    "src_hash": "34b0ceb41c3a8896e074f8e59190021b",
+    "text": "Orc",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.281170Z"
+  },
+  "monster.orshabaal.name": {
+    "src_hash": "a1a6be7fbfd8c4e5a1ce9d81dc611d65",
+    "text": "Orshabaal",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.283060Z"
+  },
+  "monster.orshabaal.desc": {
+    "src_hash": "a1a6be7fbfd8c4e5a1ce9d81dc611d65",
+    "text": "Orshabaal",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.283749Z"
+  },
+  "monster.white_pale.name": {
+    "src_hash": "c26999e79917dc6219158f8955472741",
+    "text": "White Pale",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.285012Z"
+  },
+  "monster.white_pale.desc": {
+    "src_hash": "c26999e79917dc6219158f8955472741",
+    "text": "White Pale",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.285730Z"
+  },
+  "monster.the_welter.name": {
+    "src_hash": "06c5706a0ac0ee90aae4d076fff06ecb",
+    "text": "The Welter",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.286779Z"
+  },
+  "monster.the_welter.desc": {
+    "src_hash": "06c5706a0ac0ee90aae4d076fff06ecb",
+    "text": "The Welter",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.287694Z"
+  },
+  "monster.morgaroth.name": {
+    "src_hash": "2dd5541bb6ffb2bd9fca93c0a930a82b",
+    "text": "Morgaroth",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.288315Z"
+  },
+  "monster.morgaroth.desc": {
+    "src_hash": "2dd5541bb6ffb2bd9fca93c0a930a82b",
+    "text": "Morgaroth",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.288882Z"
+  },
+  "monster.ferumbras.name": {
+    "src_hash": "3b17736682c3b11fddce38fb42db75d2",
+    "text": "Ferumbras",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.292915Z"
+  },
+  "monster.ferumbras.desc": {
+    "src_hash": "3b17736682c3b11fddce38fb42db75d2",
+    "text": "Ferumbras",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.294346Z"
+  },
+  "monster.furyosa.name": {
+    "src_hash": "d91fb198c826b263e5a57919515e7713",
+    "text": "Furyosa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.296766Z"
+  },
+  "monster.furyosa.desc": {
+    "src_hash": "d91fb198c826b263e5a57919515e7713",
+    "text": "Furyosa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.297687Z"
+  },
+  "monster.fernfang.name": {
+    "src_hash": "15a8628afcbb835f4244ba1f151e5d8c",
+    "text": "Fernfang",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.299294Z"
+  },
+  "monster.fernfang.desc": {
+    "src_hash": "15a8628afcbb835f4244ba1f151e5d8c",
+    "text": "Fernfang",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.300239Z"
+  },
+  "monster.badger.name": {
+    "src_hash": "5841d0014fc42f0fcf9a019d349d50fd",
+    "text": "Badger",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.301624Z"
+  },
+  "monster.ghost_wolf.name": {
+    "src_hash": "f6e06b4f34cb162e5e676297c851f19d",
+    "text": "Hayalet Kurt",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.311927Z"
+  },
+  "monster.water_buffalo.name": {
+    "src_hash": "76970c076e84449bff9de4d9398d697e",
+    "text": "Water Buffalo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.313842Z"
+  },
+  "monster.crystal_wolf.name": {
+    "src_hash": "5b965828837c4e693d73805d300e6de4",
+    "text": "Kristal Kurt",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.316335Z"
+  },
+  "monster.rat.name": {
+    "src_hash": "ecd331596f91ddaac07c6e600ed166f1",
+    "text": "Fare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.317682Z"
+  },
+  "monster.yeti.name": {
+    "src_hash": "9cb073d5208162d71991a6077288e01e",
+    "text": "Yeti",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.319654Z"
+  },
+  "monster.bear.name": {
+    "src_hash": "372137ebb0d053fecd7a594ec5cb5971",
+    "text": "Ayı",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.326410Z"
+  },
+  "monster.werewolf.name": {
+    "src_hash": "176935340d9e1c04dcf64bc0c6cf5d44",
+    "text": "Kurtadam",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.333598Z"
+  },
+  "monster.fish.name": {
+    "src_hash": "071642fa72ba780ee90ed36350d82745",
+    "text": "Balık",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.344881Z"
+  },
+  "monster.wild_warrior.name": {
+    "src_hash": "745e8600f5a851ce1e1cb53b1343329a",
+    "text": "Wild Warrior",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.348240Z"
+  },
+  "monster.warlock.name": {
+    "src_hash": "21305b754e03843876abc27387a0e57e",
+    "text": "Warlock",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.352895Z"
+  },
+  "monster.nomad.name": {
+    "src_hash": "aef878e6f44bed61b63c5c91bfdd756c",
+    "text": "Nomad",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.358149Z"
+  },
+  "monster.witch.name": {
+    "src_hash": "1e5801f6c2ee2ba36fb7c41edab701e3",
+    "text": "Cadı",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.368434Z"
+  },
+  "monster.renegade_knight.name": {
+    "src_hash": "9857523dc0efbd187fff110e64e8affb",
+    "text": "renegade knight",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.373829Z"
+  },
+  "monster.nomad_blue.name": {
+    "src_hash": "aef878e6f44bed61b63c5c91bfdd756c",
+    "text": "Nomad",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.380629Z"
+  },
+  "monster.ice_witch.name": {
+    "src_hash": "2ed42cfabffb8ab062e5119288168cbd",
+    "text": "Buz Cadı",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.382842Z"
+  },
+  "monster.feverish_citizen.name": {
+    "src_hash": "7f9a98bbccbfd04494fb0436a1bb2de3",
+    "text": "Feverish Citizen",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.387413Z"
+  },
+  "monster.nomad_female.name": {
+    "src_hash": "aef878e6f44bed61b63c5c91bfdd756c",
+    "text": "Nomad",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.389703Z"
+  },
+  "monster.vile_grandmaster.name": {
+    "src_hash": "53e7346641af7337f8f8351c979ea372",
+    "text": "vile grandmaster",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.391271Z"
+  },
+  "monster.pillar.name": {
+    "src_hash": "5823358bdedcd4c2a70ff563534130d9",
+    "text": "sütun",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.395385Z"
+  },
+  "monster.demon_summoner.desc": {
+    "src_hash": "775f172869d40d605be241a5070b0afa",
+    "text": "kemikler",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.396321Z"
+  },
+  "monster.magic_pillar.name": {
+    "src_hash": "ea35828aefb031127c8afade0a854526",
+    "text": "Büyü Sütun",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.397136Z"
+  },
+  "monster.training_machine.voice_6": {
+    "src_hash": "12b2df1cd3a8a5ce3aa54c7a801643e4",
+    "text": "Klonk klonk klonk",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.399967Z"
+  },
+  "monster.fire_devil.name": {
+    "src_hash": "1a15ce236e5ddcbd2d36969e7d467b64",
+    "text": "Fire Devil",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.403992Z"
+  },
+  "monster.sea_serpent.name": {
+    "src_hash": "68ca65176f93db302cb853b68d455767",
+    "text": "Deniz Yılan",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.418213Z"
+  },
+  "monster.serpent_spawn.name": {
+    "src_hash": "4122411a36fbcd6b3d08ec393758d536",
+    "text": "Serpent Spawn",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.420410Z"
+  },
+  "monster.cobra.name": {
+    "src_hash": "d13eca1c700558f57d0310ef14277cc2",
+    "text": "Cobra",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.425659Z"
+  },
+  "monster.sacred_spider.name": {
+    "src_hash": "f17f6bd4a6d458ea51f0b7889f63d3d2",
+    "text": "Kutsal Örümcek",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.437978Z"
+  },
+  "monster.scarab.name": {
+    "src_hash": "a9fd3ff5b6ff3cd3f3a1a900e46295f8",
+    "text": "Scarab",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.441130Z"
+  },
+  "monster.crystal_spider.name": {
+    "src_hash": "6798a77cd5f76cd34910f633ddd11ca3",
+    "text": "Kristal Örümcek",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.448086Z"
+  },
+  "monster.terramite.name": {
+    "src_hash": "6f60f48e7910fcc0ac596725ef4034f8",
+    "text": "Terramite",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.451347Z"
+  },
+  "monster.giant_spider.name": {
+    "src_hash": "9e06f68bf9688070bf6b5d3869e5336b",
+    "text": "Dev Örümcek",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.456705Z"
+  },
+  "monster.cursed_book.name": {
+    "src_hash": "a0f907a99654a022a93618763befb899",
+    "text": "Lanetli Kitap",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.490210Z"
+  },
+  "monster.gargoyle.name": {
+    "src_hash": "fa149962cca7ce4eae40089644c4616b",
+    "text": "Gargoyle",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.499704Z"
+  },
+  "monster.zushuka.name": {
+    "src_hash": "f7d3f936c82d25f009159f66874105e9",
+    "text": "Zushuka",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.509366Z"
+  },
+  "monster.zushuka.desc": {
+    "src_hash": "8ceaa475576021fe834434d50a085901",
+    "text": "Zushuka",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.509894Z"
+  },
+  "monster.mad_mage.name": {
+    "src_hash": "7cb4e60cd0927f995c74a12fe8154ebc",
+    "text": "Mad Mage",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.517113Z"
+  },
+  "monster.mad_mage.desc": {
+    "src_hash": "6b06be9dd0ef983f81d16b26af526a7f",
+    "text": "Mad Mage",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.518197Z"
+  },
+  "monster.zevelon_duskbringer.name": {
+    "src_hash": "5ce47d3193e6d4fdcb52a667ed3dd600",
+    "text": "Zevelon Duskbringer",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.522832Z"
+  },
+  "monster.zevelon_duskbringer.desc": {
+    "src_hash": "5ce47d3193e6d4fdcb52a667ed3dd600",
+    "text": "Zevelon Duskbringer",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.524373Z"
+  },
+  "monster.munster.name": {
+    "src_hash": "ad3f071289dbbac276fadf870913fbf9",
+    "text": "Munster",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T21:58:35.530861Z"
+  }
+}

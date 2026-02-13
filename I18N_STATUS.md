@@ -2,9 +2,9 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 6000, 'npc': 15000, 'player': 200, 'quests': 700, 'scripts': 2500, 'server': 3000, 'spells': 2000, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 900, 'html': 1500, 'client': 300, 'otclient_modules': 2000, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50, 'achievements': 1048, 'actions': 100, 'books': 1403, 'chatchannels': 100, 'creaturescripts': 100, 'dataroot': 100, 'errors': 100, 'events': 100, 'example_merchant': 100, 'globalevents': 100, 'libs': 100, 'messages': 100, 'modules': 100, 'mounts': 100, 'movements': 100, 'npclib': 147, 'questlog': 1918, 'raids': 273, 'startup': 100, 'talkactions': 199, 'world': 100} -->
 
-> **Aktualizacja:** 2026-02-13 20:56:09 UTC  
+> **Aktualizacja:** 2026-02-13 20:58:27 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 53586  
-> **LIVE:** Cykl #99 | Status: 🟢 RUNNING | Faza: AUTO_TRANSLATE | Etap: parallel_start | Kategoria: pl | Plik: otclient_modules.json | ETA: 0 | Heartbeat: 2026-02-13T20:55:55Z
+> **LIVE:** Cykl #4 | Status: 🟢 RUNNING | Faza: AUTO_TRANSLATE | Etap: cycle_end | Kategoria: es | Plik: - | ETA: 0 | Heartbeat: 2026-02-13T20:58:26Z
 
 ---
 
@@ -106,8 +106,8 @@
 ### 🎯 Pokrycie tłumaczeń per język (EN → LANG)
 | Język | Przetłumaczone | % poprawnie przetłumaczonych | EN-copy | Braki kluczy |
 |-------|----------------|-------------------------------|---------|--------------|
-| PL (Polski) | 37,929/53,586 | 70.78% | 2,996 | 2,083 |
-| ES (Hiszpański) | 35,974/53,586 | 67.13% | 16,754 | 232 |
+| PL (Polski) | 37,973/53,586 | 70.86% | 2,996 | 2,083 |
+| ES (Hiszpański) | 36,041/53,586 | 67.26% | 16,754 | 232 |
 | AR (Arabski) | 11,447/53,586 | 21.36% | 30,982 | 2,150 |
 | ID (ID) | 11,301/53,586 | 21.09% | 29,171 | 2,155 |
 | VI (VI) | 11,294/53,586 | 21.08% | 29,170 | 2,155 |
@@ -129,58 +129,56 @@
 
 ### 🧭 Aktywny folder tłumaczeń
 - **Folder:** ES - Hiszpański - Serwer
-- **Plik JSON:** quests.json
+- **Plik JSON:** talkactions.json
 - **Ostatnie klucze (10-20):** 20
 
 ### 📝 Ostatnie 10-20 przetłumaczonych kluczy
-- {} {}. → {} {}. (scripts.find_person.result)
-- Mmmm. → Mmmm. (scripts.foods.sound_mmmm)
-- Blurg. → Blurg. (scripts.hireling_foods.sound_blurg)
-- Mmmmm. → Mmmmm. (scripts.hireling_foods.sound_mmmmm)
-- Waaaaaah → Waaaaaah (scripts.horestis_jars.fail_1)
-- Mmmm. → Mmmm. (scripts.lemon_cupcake.say_1)
-- <crrk> → <crrk> (scripts.lever.say_1)
-- <squeaak> → <squeaak> (scripts.lever.say_2)
-- Slurp! → Slurp! (scripts.movements_exit.say_1)
-- !-! -O- I_I (/( --I Morgathla → !-! -O- I_I (/( --I Morgathla (scripts.movements_mission4_parchment_decyphering.say_1)
-- rkawdmawfjawkjnfjkawnkjnawkdjawkfmalkwmflkmawkfnzxc → rkawdmawfjawkjnfjkawnkjnawkdjawkfmalkwmflkmawkfnzxc (scripts.movements_teleportto.say_1)
-- Plinngggg → Plinngggg (scripts.music_box.sound_ironblight)
-- ZzzZzzZzzzZz → ZzzZzzZzzzZz (scripts.music_box.sound_magma_crawler)
-- Purrrrrrr → Purrrrrrr (scripts.music_box.sound_midnight_panther)
-- Sssssssss → Sssssssss (scripts.music_box.sound_wailing_widow)
-- %s
-IP: %s → %s
-IP: %s (scripts.on_look.admin_ip)
-- [World Change] Yasir has arrived in %s today! → [Cambio mundial] ¡Yasir ha llegado a %s hoy! (scripts.oriental_trader.arrived_today)
-- Srrrt! → Srrrt! (scripts.rafzane_elevator.sound_1)
-- {} {} → {} {} (scripts.special_tiles.msg_1)
-- Mmmm. → Mmmm. (scripts.strawberry_cupcake.say_1)
+- You must specify a reason. → You must specify a reason. (talkaction.gm.namelock.msg_reason_required)
+- You can not teleport {name}. → You can not teleport {name}. (talkaction.gm.push_creature.msg_cannot_teleport)
+- You need to specify the light color. → You need to specify the light color. (talkaction.gm.set_light.msg_specify_color)
+- Use like this: /setlight color (0-{max}), (1-32). The first param is color and t → Use like this: /setlight color (0-{max}), (1-32). The first param is color and t (talkaction.gm.set_light.msg_usage)
+- You cannot teleport there. → You cannot teleport there. (talkaction.gm.skip_tiles.msg_cannot_teleport)
+- This player is offline or doesn't exist. → This player is offline or doesn't exist. (talkaction.gm.spy.msg_offline)
+- Equipment of {0} → Equipment of {0} (talkaction.gm.spy.msg_equipment_of)
+- ({0}x) → ({0}x) (talkaction.gm.spy.msg_stack_count)
+- Amulet → Amulet (talkaction.gm.spy.slot_amulet)
+- Boots → Boots (talkaction.gm.spy.slot_boots)
+- Helmet → Helmet (talkaction.gm.spy.slot_helmet)
+- Left Hand → Left Hand (talkaction.gm.spy.slot_left_hand)
+- Right Hand → Right Hand (talkaction.gm.spy.slot_right_hand)
+- You need to declare the X, Y of Z of destination. Please use "/teleport X, Y, Z" → You need to declare the X, Y of Z of destination. Please use "/teleport X, Y, Z" (talkaction.gm.teleport.msg_declare_xyz)
+- Destination position is not valid. → Destination position is not valid. (talkaction.gm.teleport.msg_invalid_destination)
+- Town not found. → Town not found. (talkaction.gm.teleport.msg_town_not_found)
+- {name} has been unbanned. → {name} has been unbanned. (talkaction.gm.unban.msg_unbanned)
+- Invalid achievement. Use valid ID or name. → Invalid achievement. Use valid ID or name. (talkaction.god.achievement.msg_add_invalid)
+- Usage: /addachievement playerName, achievementId|Name → Usage: /addachievement playerName, achievementId|Name (talkaction.god.achievement.msg_add_usage)
+- kv[{key}] = {value} → kv[{key}] = {value} (talkaction.god.kv.msg_allkv_value)
 
 ### 🚫 Raporty "nie mogę przetłumaczyć"
-- Guard reports: **1342**  
+- Guard reports: **1349**  
 - Blocker reports: **0**  
-- Widoczne raporty 'nie mogę tłumaczyć': **1292**
+- Widoczne raporty 'nie mogę tłumaczyć': **1299**
 
 ### 🌐 Globalne info wszystkich języków
-- **Global completion:** **19.69%** (548,615/2,786,472)
+- **Global completion:** **19.69%** (548,726/2,786,472)
 - **EN-copy łącznie:** **1,335,745**
 - **Braki kluczy łącznie:** **110,060**
 - **Brakujące pliki językowe:** **0**
 - **Cache STATUSPY (per-lang):** **mixed** | hit **50**, miss **2**, hit-rate **96.2%**
-- **Cache STATUSPY (per-file):** hit **1969**, miss **7**, hit-rate **99.6%**
-- **Profiler cyklu (ostatni):** -
+- **Cache STATUSPY (per-file):** hit **1968**, miss **8**, hit-rate **99.6%**
+- **Profiler cyklu (ostatni):** cykl #4 (AUTO_TRANSLATE): dispatch 601ms, mode 4483ms, status 63ms, total 6308ms
 - **Osobny raport:** `i18n/status/translation_global_overview.json`
 
 ### 🔬 Jakość tłumaczeń
-- **Ostatni audyt:** SLOW_MODE | 59 issue(s) / 100 entries | 2026-02-13T20:55:46.162765Z
-- **Top 5 typów problemów:** suspicious_log_medium=190, identical_to_en=59, suspicious_log_high=6, suspicious_log_low=4
-- **Języki o najsłabszej jakości:** pl(60.1, issues=66772), es(60.2, issues=83459), de(71.4, issues=3460), zh_TW(82.9, issues=0), az(83.1, issues=1126)
+- **Ostatni audyt:** SLOW_MODE | 100 issue(s) / 100 entries | 2026-02-13T20:58:25.891126Z
+- **Top 5 typów problemów:** suspicious_log_low=101, identical_to_en=100, suspicious_log_medium=98, suspicious_log_high=1
+- **Języki o najsłabszej jakości:** pl(60.1, issues=67176), es(60.2, issues=84150), de(71.4, issues=3460), zh_TW(82.9, issues=0), az(83.1, issues=1126)
 - **Pliki:** `i18n/status/quality_audit_latest.json`, `i18n/status/quality_dashboard.json`, `i18n/status/quality_report.jsonl`
 
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#99** | od uruchomienia |
+| 🔄 Cykl aktualny | **#4** | od uruchomienia |
 | 🔑 Kluczy wyekstrahowanych | **6,248** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
@@ -213,7 +211,7 @@ IP: %s (scripts.on_look.admin_ip)
 ## ✅ CHECKLIST - Plan Pracy
 
 > **Aktualna faza:** AUTO_TRANSLATE  
-> **Aktualna kategoria:** pl
+> **Aktualna kategoria:** es
 
 
 ### 🔄 Faza 1: 🎮 Canary Server
@@ -282,44 +280,44 @@ IP: %s (scripts.on_look.admin_ip)
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #    99 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #     4 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
-│ Tryb:      🤖 AUTO_TRANSLATE (parallel_start)        │
-│ Kategoria: 📁 PL                                     │
+│ Tryb:      🤖 AUTO_TRANSLATE (cycle_end)             │
+│ Kategoria: 📁 ES                                     │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status: running                                               │
-│ Plik: otclient_modules.json                                   │
-│ Postęp: 0/0 keys                                              │
-│ Info: parallel auto translate                                 │
+│ Plik: -                                                       │
+│ Postęp: 0/0 units                                             │
+│ Info: cycle end                                               │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2026-02-13T20:55:55Z           │
+│ ❤️ Heartbeat: 2026-02-13T20:58:26Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 🧾 Ostatnie akcje (dla czytelności)
 
-- 2026-02-13 20:55:55 | AUTO_TRANSLATE:parallel_start | pl | ok | otclient_modules.json
-- 2026-02-13 20:55:54 | AUTO_TRANSLATE:auto_done | es | ok | scripts.json
-- 2026-02-13 20:55:52 | AUTO_TRANSLATE:auto_start | es | ok | scripts.json
-- 2026-02-13 20:55:26 | AUTO_TRANSLATE:parallel_start | pl | ok | html.json
-- 2026-02-13 20:55:25 | AUTO_TRANSLATE:auto_done | es | ok | quests.json
-- 2026-02-13 20:55:23 | AUTO_TRANSLATE:auto_start | es | ok | quests.json
+- 2026-02-13 20:58:25 | AUTO_TRANSLATE:auto_done | es | ok | talkactions.json
+- 2026-02-13 20:58:21 | AUTO_TRANSLATE:auto_start | es | ok | talkactions.json
+- 2026-02-13 20:58:11 | AUTO_TRANSLATE:parallel_start | pl | ok | php.json
+- 2026-02-13 20:58:10 | AUTO_TRANSLATE:auto_done | es | ok | html.json
+- 2026-02-13 20:58:08 | AUTO_TRANSLATE:auto_start | es | ok | html.json
+- 2026-02-13 20:57:59 | AUTO_TRANSLATE:parallel_start | pl | ok | client.json
 
 ---
 
 ## 🔁 W tym cyklu
 
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [es] → warn (files+1, translated+30, skipped+0) — lang=es file=scripts.json strict_skipped_done=2140
-- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [de] → ok (translated+8, skipped+0) — parallel lang=de file=spells.json
-- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [es] → ok (translated+18, skipped+0) — parallel lang=es file=talkactions.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+11, skipped+0) — lang=pl file=php.json strict_skipped_done=48
-- 🔧 MIGRATION: zakończono kategorię [items] → ok (keys+50, files+0) — migration finished
-- 🔧 MIGRATION: mini-batch [items] → ok (keys+10) — mini_batch=5 processed=50/50
-- 🔧 MIGRATION: mini-batch [items] → ok (keys+10) — mini_batch=4 processed=40/50
-- 🔧 MIGRATION: mini-batch [items] → ok (keys+10) — mini_batch=3 processed=30/50
-- 🔧 MIGRATION: mini-batch [items] → ok (keys+10) — mini_batch=2 processed=20/50
-- 🔧 MIGRATION: mini-batch [items] → ok (keys+10) — mini_batch=1 processed=10/50
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [es] → warn (files+1, translated+28, skipped+0) — lang=es file=talkactions.json strict_skipped_done=171 guard_fail=1 placeholder=0 command=0 pipe=1
+- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [es] → ok (translated+5, skipped+0) — parallel lang=es file=php.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+10, skipped+0) — lang=pl file=startup.json strict_skipped_done=13
+- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [es] → ok (translated+80, skipped+0) — parallel lang=es file=questlog.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+24, skipped+0) — lang=pl file=cpp.json strict_skip missing_file=0 missing_key=2 skipped_done=853 strict_skipped_done=853 guard_fail=9 placeholder=0 command=0 pipe=0
+- 🔧 MIGRATION: zakończono kategorię [items] → ok (keys+3, files+0) — migration finished
+- 🔧 MIGRATION: mini-batch [items] → ok (keys+3) — mini_batch=1 processed=5/5
+- 🔧 MIGRATION: zakończono kategorię [quests] → ok (keys+0, files+0) — migration finished
+- 🔧 MIGRATION: mini-batch stop [quests] → ok (keys+0) — no new data
+- 🔧 MIGRATION: mini-batch [quests] → ok (keys+0) — mini_batch=1 processed=10/20
 
 
 
@@ -329,7 +327,7 @@ IP: %s (scripts.on_look.admin_ip)
 - Cykle: **471**
 - MIGRATION: **+330** kluczy, **0** plików `.lua`
 - Kategorie dotknięte: actions, chatchannels, cpp, creaturescripts, dataroot, errors, events, items, libs, mounts...
-- Błędy: **767**
+- Błędy: **771**
 
 
 ---
@@ -343,7 +341,7 @@ IP: %s (scripts.on_look.admin_ip)
 | ⬜ Plików bez kluczy | **402** | czyste (brak hardcoded) |
 | 🔑 Kluczy wyciągniętych | **6248** | przez workera w tej sesji |
 | 🌍 Języków | **53** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#99** | continuous mode |
+| 🔄 Cykli wykonanych | **#4** | continuous mode |
 
 ---
 
@@ -553,7 +551,7 @@ IP: %s (scripts.on_look.admin_ip)
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #99 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #4 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -640,7 +638,7 @@ IP: %s (scripts.on_look.admin_ip)
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2026-02-13 20:56:09  
+📅 Auto-updated by Worker v1.1 | Last: 2026-02-13 20:58:27  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

@@ -2,9 +2,9 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 6000, 'npc': 15000, 'player': 200, 'quests': 700, 'scripts': 2500, 'server': 3000, 'spells': 2000, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 900, 'html': 1500, 'client': 300, 'otclient_modules': 2000, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50, 'achievements': 1048, 'actions': 100, 'books': 1403, 'chatchannels': 100, 'creaturescripts': 100, 'dataroot': 100, 'errors': 100, 'events': 100, 'example_merchant': 100, 'globalevents': 100, 'libs': 100, 'messages': 100, 'modules': 100, 'mounts': 100, 'movements': 100, 'npclib': 147, 'questlog': 1918, 'raids': 273, 'startup': 100, 'talkactions': 199, 'world': 100} -->
 
-> **Aktualizacja:** 2026-02-13 19:46:35 UTC  
+> **Aktualizacja:** 2026-02-13 19:48:52 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 53586  
-> **LIVE:** Cykl #9 | Status: 🟢 RUNNING | Faza: AUTO_TRANSLATE | Etap: auto_start | Kategoria: pl | Plik: otclient_modules.json | ETA: 0 | Heartbeat: 2026-02-13T19:46:30Z
+> **LIVE:** Cykl #10 | Status: 🟢 RUNNING | Faza: AUTO_TRANSLATE | Etap: auto_start | Kategoria: es | Plik: otclient_modules.json | ETA: 0 | Heartbeat: 2026-02-13T19:48:30Z
 
 ---
 
@@ -106,8 +106,8 @@
 ### 🎯 Pokrycie tłumaczeń per język (EN → LANG)
 | Język | Przetłumaczone | % poprawnie przetłumaczonych | EN-copy | Braki kluczy |
 |-------|----------------|-------------------------------|---------|--------------|
-| PL (Polski) | 36,302/53,586 | 67.75% | 2,966 | 2,083 |
-| ES (Hiszpański) | 33,919/53,586 | 63.30% | 17,860 | 232 |
+| PL (Polski) | 36,351/53,586 | 67.84% | 2,966 | 2,083 |
+| ES (Hiszpański) | 33,999/53,586 | 63.45% | 17,780 | 232 |
 | AR (Arabski) | 11,447/53,586 | 21.36% | 30,982 | 2,150 |
 | ID (ID) | 11,301/53,586 | 21.09% | 29,171 | 2,155 |
 | VI (VI) | 11,294/53,586 | 21.08% | 29,170 | 2,155 |
@@ -128,39 +128,57 @@
 | TL (TL) | 11,292/53,586 | 21.07% | 29,173 | 2,155 |
 
 ### 🧭 Aktywny folder tłumaczeń
-- **Folder:** PL - Polski - Serwer
-- **Plik JSON:** scripts.json
-- **Ostatnie klucze (10-20):** 2
+- **Folder:** PL - Polski - Klient
+- **Plik JSON:** otclient_modules.json
+- **Ostatnie klucze (10-20):** 20
 
 ### 📝 Ostatnie 10-20 przetłumaczonych kluczy
-- <gasp> → <gasp> (quests.bigfoot_burden.gasp)
-- <crack> → <crack> (quests.mission09_rock_troll.say_1)
+- More orcs have arrived in Zzaion! The city is under attack! Strong lizard leader → ¡Han llegado más orcos a Zzaion! ¡La ciudad está bajo ataque! Fuertes líderes la (raids.farmine.zulazza_the_corruptor.msg_5)
+- Goblins are preparing to attack Kazordoon from Femor Hills! → ¡Goblins se están preparando para atacar a Kazordoon desde Femor Hills! (raids.kazordoon.goblins.msg_1)
+- Goblins attack from Femor Hills! → ¡Goblins ataque de Femor Hills! (raids.kazordoon.goblins.msg_2)
+- Danger! Now the goblin leaders attack Kazordoon from Femor Hills! → ¡Peligro! ¡Ahora los líderes goblins atacan a Kazordoon desde Femor Hills! (raids.kazordoon.goblins.msg_3)
+- Beware of The horned Fox! → ¡Cuidado con el zorro cornudo! (raids.kazordoon.horned.msg_1)
+- Beware of Diblis The Fair! → ¡Cuidado con Diblis The Fair! (raids.liberty_bay.diblis_the_fair.msg_1)
+- The seals on Ferumbras old cidatel are glowing. Prepare for HIS return mortals. → Los sellos de la antigua ciudadela Ferumbras brillan. Prepárense para SU regreso (raids.liberty_bay.ferumbras.msg_1)
+- Ferumbras return is at hand. The Edron Academy calls for Heroes to fight that ev → El regreso de Ferumbras está cerca. La Academia Edron convoca héroes para luchar (raids.liberty_bay.ferumbras.msg_2)
+- Ferumbras has returned to his citadel once more. Stop him before its too late. → Ferumbras ha regresado a su ciudadela una vez más. Detenlo antes de que sea dema (raids.liberty_bay.ferumbras.msg_3)
+- The ancient volcano on Goroma slowly becomes active once again. → El antiguo volcán de Goroma vuelve a estar activo lentamente. (raids.liberty_bay.morgaroth.msg_1)
+- There is an evil presence at the volcano of Goroma. → Hay una presencia maligna en el volcán de Goroma. (raids.liberty_bay.morgaroth.msg_2)
+- Evil Cultists have called an ancient evil into the volcano on Goroma. Beware of  → Los cultistas del mal han llamado a un antiguo mal al volcán de Goroma. Cuidado  (raids.liberty_bay.morgaroth.msg_3)
+- Something is moving in the depths of the sea around Liberty Bay → Algo se mueve en las profundidades del mar alrededor de Liberty Bay (raids.liberty_bay.quaras.msg_1)
+- Numerous Quara fins have been sighted in the seas around Liberty Bay. → Se han avistado numerosas aletas de Quara en los mares alrededor de Liberty Bay. (raids.liberty_bay.quaras.msg_2)
+- Quara emerged from the sea to attack Liberty Bay. → Quara emergió del mar para atacar a Liberty Bay. (raids.liberty_bay.quaras.msg_3)
+- Majestic creatures with stripes roam the small desert at Meriana. → Majestuosas criaturas con rayas deambulan por el pequeño desierto de Meriana. (raids.liberty_bay.tigers.msg_1)
+- Slowly but steady, the population of tortoises grows on liberty island. → Lento pero constante, la población de tortugas crece en Liberty Island. (raids.liberty_bay.tortoises.msg_1)
+- Lizards Sentinels seem to attack Port Hope from Chor. → Lizards Los centinelas parecen atacar a Port Hope de Chor. (raids.port_hope.kongras.msg_1)
+- Lizards are advancing to Port Hope from Chor. → Lizards están avanzando a Port Hope desde Chor. (raids.port_hope.kongras.msg_2)
+- Lizards Sentinels seem to attack Port Hope from Chor. → Lizards Los centinelas parecen atacar a Port Hope de Chor. (raids.port_hope.lizards.msg_1)
 
 ### 🚫 Raporty "nie mogę przetłumaczyć"
-- Guard reports: **1149**  
+- Guard reports: **1151**  
 - Blocker reports: **0**  
-- Widoczne raporty 'nie mogę tłumaczyć': **1099**
+- Widoczne raporty 'nie mogę tłumaczyć': **1101**
 
 ### 🌐 Globalne info wszystkich języków
-- **Global completion:** **19.56%** (544,933/2,786,472)
-- **EN-copy łącznie:** **1,336,821**
+- **Global completion:** **19.56%** (545,062/2,786,472)
+- **EN-copy łącznie:** **1,336,741**
 - **Braki kluczy łącznie:** **110,060**
 - **Brakujące pliki językowe:** **0**
 - **Cache STATUSPY (per-lang):** **mixed** | hit **50**, miss **2**, hit-rate **96.2%**
-- **Cache STATUSPY (per-file):** hit **1972**, miss **4**, hit-rate **99.8%**
+- **Cache STATUSPY (per-file):** hit **1974**, miss **2**, hit-rate **99.9%**
 - **Profiler cyklu (ostatni):** -
 - **Osobny raport:** `i18n/status/translation_global_overview.json`
 
 ### 🔬 Jakość tłumaczeń
-- **Ostatni audyt:** SLOW_MODE | 55 issue(s) / 100 entries | 2026-02-13T19:46:23.478166Z
-- **Top 5 typów problemów:** suspicious_log_low=124, suspicious_log_medium=61, identical_to_en=55, suspicious_log_high=15
-- **Języki o najsłabszej jakości:** es(60.1, issues=64009), pl(60.1, issues=57682), de(71.4, issues=3460), zh_TW(82.9, issues=0), az(83.1, issues=1126)
+- **Ostatni audyt:** SLOW_MODE | 38 issue(s) / 100 entries | 2026-02-13T19:48:23.631761Z
+- **Top 5 typów problemów:** suspicious_log_low=151, suspicious_log_medium=43, identical_to_en=38, suspicious_log_high=6
+- **Języki o najsłabszej jakości:** es(60.1, issues=64186), pl(60.1, issues=57743), de(71.4, issues=3460), zh_TW(82.9, issues=0), az(83.1, issues=1126)
 - **Pliki:** `i18n/status/quality_audit_latest.json`, `i18n/status/quality_dashboard.json`, `i18n/status/quality_report.jsonl`
 
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#9** | od uruchomienia |
+| 🔄 Cykl aktualny | **#10** | od uruchomienia |
 | 🔑 Kluczy wyekstrahowanych | **6,248** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
@@ -193,7 +211,7 @@
 ## ✅ CHECKLIST - Plan Pracy
 
 > **Aktualna faza:** AUTO_TRANSLATE  
-> **Aktualna kategoria:** pl
+> **Aktualna kategoria:** es
 
 
 ### 🔄 Faza 1: 🎮 Canary Server
@@ -262,44 +280,44 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #     9 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #    10 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      🤖 AUTO_TRANSLATE (auto_start)            │
-│ Kategoria: 📁 PL                                     │
+│ Kategoria: 📁 ES                                     │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status: running                                               │
 │ Plik: otclient_modules.json                                   │
 │ Postęp: 0/0 keys                                              │
 │ Info: auto translate                                          │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2026-02-13T19:46:30Z           │
+│ ❤️ Heartbeat: 2026-02-13T19:48:30Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 🧾 Ostatnie akcje (dla czytelności)
 
+- 2026-02-13 19:48:30 | AUTO_TRANSLATE:auto_start | es | ok | otclient_modules.json
+- 2026-02-13 19:47:10 | AUTO_TRANSLATE:parallel_start | es | ok | raids.json
+- 2026-02-13 19:47:09 | AUTO_TRANSLATE:auto_done | pl | ok | otclient_modules.json
 - 2026-02-13 19:46:30 | AUTO_TRANSLATE:auto_start | pl | ok | otclient_modules.json
 - 2026-02-13 19:46:20 | AUTO_TRANSLATE:parallel_start | es | ok | quests.json
 - 2026-02-13 19:46:20 | AUTO_TRANSLATE:auto_done | pl | ok | scripts.json
-- 2026-02-13 19:46:16 | AUTO_TRANSLATE:auto_start | pl | ok | scripts.json
-- 2026-02-13 19:45:16 | AUTO_TRANSLATE:parallel_start | es | ok | monsters.json
-- 2026-02-13 19:45:16 | AUTO_TRANSLATE:auto_done | pl | ok | monsters.json
 
 ---
 
 ## 🔁 W tym cyklu
 
-- 🔧 MIGRATION: zakończono kategorię [npclib] → ok (keys+0, files+0) — migration finished
-- 🔧 MIGRATION: mini-batch stop [npclib] → ok (keys+0) — no new data
-- 🔧 MIGRATION: mini-batch [npclib] → ok (keys+0) — mini_batch=1 processed=5/5
+- 🔧 MIGRATION: zakończono kategorię [dataroot] → ok (keys+0, files+0) — migration finished
+- 🔧 MIGRATION: mini-batch stop [dataroot] → ok (keys+0) — no new data
+- 🔧 MIGRATION: mini-batch [dataroot] → ok (keys+0) — mini_batch=1 processed=5/5
 - 🔧 MIGRATION: zakończono kategorię [items] → ok (keys+20, files+0) — migration finished
 - 🔧 MIGRATION: mini-batch [items] → ok (keys+10) — mini_batch=2 processed=20/20
 - 🔧 MIGRATION: mini-batch [items] → ok (keys+10) — mini_batch=1 processed=10/20
-- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [es] → ok (translated+5, skipped+0) — parallel lang=es file=actions.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+5, skipped+0) — lang=pl file=raids.json strict_skipped_done=5
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+5, skipped+0) — lang=pl file=scripts.json strict_skipped_done=919
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+4, skipped+0) — lang=pl file=chatchannels.json strict_skipped_done=12
+- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [es] → ok (translated+5, skipped+0) — parallel lang=es file=otclient_modules.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+5, skipped+0) — lang=pl file=html.json strict_skipped_done=8 guard_fail=1 placeholder=0 command=0 pipe=0
+- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [es] → ok (translated+7, skipped+0) — parallel lang=es file=npc.json
+- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [pl] → ok (translated+7, skipped+0) — parallel lang=pl file=npc.json
 
 
 
@@ -309,7 +327,7 @@
 - Cykle: **471**
 - MIGRATION: **+330** kluczy, **0** plików `.lua`
 - Kategorie dotknięte: actions, chatchannels, cpp, creaturescripts, dataroot, errors, events, items, libs, mounts...
-- Błędy: **621**
+- Błędy: **623**
 
 
 ---
@@ -323,7 +341,7 @@
 | ⬜ Plików bez kluczy | **402** | czyste (brak hardcoded) |
 | 🔑 Kluczy wyciągniętych | **6248** | przez workera w tej sesji |
 | 🌍 Języków | **53** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#9** | continuous mode |
+| 🔄 Cykli wykonanych | **#10** | continuous mode |
 
 ---
 
@@ -533,7 +551,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #9 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #10 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -620,7 +638,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2026-02-13 19:46:35  
+📅 Auto-updated by Worker v1.1 | Last: 2026-02-13 19:48:52  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

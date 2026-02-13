@@ -2,9 +2,9 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 6000, 'npc': 15000, 'player': 200, 'quests': 700, 'scripts': 2500, 'server': 3000, 'spells': 2000, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 900, 'html': 1500, 'client': 300, 'otclient_modules': 2000, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50, 'achievements': 1048, 'actions': 100, 'books': 1403, 'chatchannels': 100, 'creaturescripts': 100, 'dataroot': 100, 'errors': 100, 'events': 100, 'example_merchant': 100, 'globalevents': 100, 'libs': 100, 'messages': 100, 'modules': 100, 'mounts': 100, 'movements': 100, 'npclib': 147, 'questlog': 1918, 'raids': 273, 'startup': 100, 'talkactions': 199, 'world': 100} -->
 
-> **Aktualizacja:** 2026-02-13 07:30:28 UTC  
+> **Aktualizacja:** 2026-02-13 07:32:43 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 53581  
-> **LIVE:** Cykl #1 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: mini_batch | Kategoria: spells | Plik: - | ETA: 0 | Heartbeat: 2026-02-13T07:28:52Z
+> **LIVE:** Cykl #1 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: mini_batch | Kategoria: spells | Plik: - | ETA: 0 | Heartbeat: 2026-02-13T07:32:07Z
 
 ---
 
@@ -107,7 +107,7 @@
 | Język | Przetłumaczone | % poprawnie przetłumaczonych | EN-copy | Braki kluczy |
 |-------|----------------|-------------------------------|---------|--------------|
 | PL (Polski) | 35,948/53,581 | 67.09% | 2,938 | 2,078 |
-| ES (Hiszpański) | 33,580/53,581 | 62.67% | 18,052 | 227 |
+| ES (Hiszpański) | 33,640/53,581 | 62.78% | 18,052 | 227 |
 | AR (Arabski) | 11,446/53,581 | 21.36% | 30,983 | 2,145 |
 | ID (ID) | 11,300/53,581 | 21.09% | 29,172 | 2,150 |
 | VI (VI) | 11,293/53,581 | 21.08% | 29,171 | 2,150 |
@@ -168,12 +168,12 @@ Dest (otclient_modules.boss_slots.tr_3)
 - Widoczne raporty 'nie mogę tłumaczyć': **1080**
 
 ### 🌐 Globalne info wszystkich języków
-- **Global completion:** **19.53%** (544,190/2,786,212)
+- **Global completion:** **19.53%** (544,250/2,786,212)
 - **EN-copy łącznie:** **1,337,035**
 - **Braki kluczy łącznie:** **109,800**
 - **Brakujące pliki językowe:** **0**
-- **Cache STATUSPY (per-lang):** **mixed** | hit **51**, miss **1**, hit-rate **98.1%**
-- **Cache STATUSPY (per-file):** hit **1975**, miss **1**, hit-rate **99.9%**
+- **Cache STATUSPY (per-lang):** **warm-cache** | hit **52**, miss **0**, hit-rate **100.0%**
+- **Cache STATUSPY (per-file):** hit **1976**, miss **0**, hit-rate **100.0%**
 - **Profiler cyklu (ostatni):** -
 - **Osobny raport:** `i18n/status/translation_global_overview.json`
 
@@ -299,7 +299,7 @@ Dest (otclient_modules.boss_slots.tr_3)
 │ Postęp: 0/20 items                                            │
 │ Info: batch 1 size=10                                         │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2026-02-13T07:28:52Z           │
+│ ❤️ Heartbeat: 2026-02-13T07:32:07Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -646,7 +646,7 @@ Dest (otclient_modules.boss_slots.tr_3)
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2026-02-13 07:30:28  
+📅 Auto-updated by Worker v1.1 | Last: 2026-02-13 07:32:43  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

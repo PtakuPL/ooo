@@ -2,9 +2,9 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 6000, 'npc': 15000, 'player': 200, 'quests': 700, 'scripts': 2500, 'server': 3000, 'spells': 2000, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 900, 'html': 1500, 'client': 300, 'otclient_modules': 2000, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50, 'achievements': 1048, 'actions': 100, 'books': 1403, 'chatchannels': 100, 'creaturescripts': 100, 'dataroot': 100, 'errors': 100, 'events': 100, 'example_merchant': 100, 'globalevents': 100, 'libs': 100, 'messages': 100, 'modules': 100, 'mounts': 100, 'movements': 100, 'npclib': 147, 'questlog': 1918, 'raids': 273, 'startup': 100, 'talkactions': 199, 'world': 100} -->
 
-> **Aktualizacja:** 2026-02-13 20:54:01 UTC  
+> **Aktualizacja:** 2026-02-13 20:56:09 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 53586  
-> **LIVE:** Cykl #95 | Status: 🟢 RUNNING | Faza: AUTO_TRANSLATE | Etap: parallel_start | Kategoria: pl | Plik: monsters.json | ETA: 0 | Heartbeat: 2026-02-13T20:53:08Z
+> **LIVE:** Cykl #99 | Status: 🟢 RUNNING | Faza: AUTO_TRANSLATE | Etap: parallel_start | Kategoria: pl | Plik: otclient_modules.json | ETA: 0 | Heartbeat: 2026-02-13T20:55:55Z
 
 ---
 
@@ -106,8 +106,8 @@
 ### 🎯 Pokrycie tłumaczeń per język (EN → LANG)
 | Język | Przetłumaczone | % poprawnie przetłumaczonych | EN-copy | Braki kluczy |
 |-------|----------------|-------------------------------|---------|--------------|
-| PL (Polski) | 37,846/53,586 | 70.63% | 2,973 | 2,083 |
-| ES (Hiszpański) | 35,915/53,586 | 67.02% | 16,813 | 232 |
+| PL (Polski) | 37,929/53,586 | 70.78% | 2,996 | 2,083 |
+| ES (Hiszpański) | 35,974/53,586 | 67.13% | 16,754 | 232 |
 | AR (Arabski) | 11,447/53,586 | 21.36% | 30,982 | 2,150 |
 | ID (ID) | 11,301/53,586 | 21.09% | 29,171 | 2,155 |
 | VI (VI) | 11,294/53,586 | 21.08% | 29,170 | 2,155 |
@@ -128,57 +128,59 @@
 | TL (TL) | 11,292/53,586 | 21.07% | 29,173 | 2,155 |
 
 ### 🧭 Aktywny folder tłumaczeń
-- **Folder:** PL - Polski - Serwer
-- **Plik JSON:** items.json
+- **Folder:** ES - Hiszpański - Serwer
+- **Plik JSON:** quests.json
 - **Ostatnie klucze (10-20):** 20
 
 ### 📝 Ostatnie 10-20 przetłumaczonych kluczy
-- Yes, yes, I will kill you soon enough, now let me continue my investigation on y → Sí, sí, te mataré pronto, ahora déjame continuar mi investigación sobre ti. (npc.a_wrinkled_bonelord.stdmod_3)
-- They will mourn the day they abandoned us. → Llorarán el día que nos abandonaron. (npc.a_wrinkled_bonelord.stdmod_4)
-- I am the great librarian. → Soy el gran bibliotecario. (npc.a_wrinkled_bonelord.stdmod_5)
-- It's a fine library, isn't it? → Es una buena biblioteca, ¿no? (npc.a_wrinkled_bonelord.stdmod_6)
-- I am 486486 and NOT 'Blinky' as some people called me ... before they died. → Soy 486486 y NO 'Blinky' como me llamaban algunas personas... antes de morir. (npc.a_wrinkled_bonelord.stdmod_7)
-- It's 1, not 'Tibia', silly. → Es 1, no '__PH0__', tonto. (npc.a_wrinkled_bonelord.stdmod_8)
-- Uglyness incarnate. One eye! Imagine that! Horrible! → La fealdad encarnada. ¡Un ojo! ¡Imagínese eso! ¡Horrible! (npc.a_wrinkled_bonelord.stdmod_9)
-- Wait right there. I will eat you after writing down what I found out. → Espera ahí mismo. Te comeré después de escribir lo que descubrí. (npc.a_wrinkled_bonelord.walkaway_msg_1)
-- Be mourned pilgrim in flesh. I'm selling general goods. Just ask me for a {trade → Sea llorado peregrino en carne. Vendo mercadería general. Sólo pídeme un {trade} (npc.ahmet.greet_msg_1)
-- Well then. Here, take the book, I added the story. Oh, just a piece of advice: N → Bueno entonces. Toma, toma el libro, agregué la historia. Oh, sólo un consejo: n (npc.ahmet.multi_1)
-- So if you want to make sure they read this anytime soon, perhaps don't hide the  → Entonces, si quieres asegurarte de que lean esto pronto, tal vez no escondas el  (npc.ahmet.multi_2)
-- Of course you do! Go hunt down the thieves and bring back the stuff they have st → ¡Por supuesto que sí! Ve a cazar a los ladrones y tráeme las cosas que me han ro (npc.ahmet.multi_3)
--  I saw them running out of town and then to the north. Maybe they hide at the oa → Los vi salir corriendo de la ciudad y luego hacia el norte. Quizás se escondan e (npc.ahmet.multi_4)
-- What are you talking about?? I was robbed!!!! Someone catch those filthy thieves → ¿¿De qué estás hablando?? ¡¡¡¡Me han robado!!!! ¡¡¡Que alguien atrape a esos asq (npc.ahmet.multi_5)
-- <nothing happens>....<SIGH> Like usual, they hide at the slightest sign of troub → <nothing happens>....<SIGH> Como de costumbre, ¡se esconden ante la menor señal  (npc.ahmet.multi_6)
-- You need some forged documents? But I will only forge something for a friend. .. → ¿Necesita algunos documentos falsificados? Pero sólo haré algo para un amigo. .. (npc.ahmet.multi_7)
-- The nomads at the northern oasis killed someone dear to me. Go and kill at least → Los nómadas del oasis del norte mataron a alguien querido para mí. Ve y mata al  (npc.ahmet.multi_8)
-- The slayer of my enemies is my friend! For a mere 1000 gold I will create the do → ¡El asesino de mis enemigos es mi amigo! Por sólo 1000 de oro crearé los documen (npc.ahmet.say_1)
-- Did you find my stuff? → ¿Encontraste mis cosas? (npc.ahmet.say_2)
-- I see: You want me to add an additional story to this book. A legend about how i → Ya veo: quieres que agregue una historia adicional a este libro. Una leyenda sob (npc.ahmet.say_3)
+- {} {}. → {} {}. (scripts.find_person.result)
+- Mmmm. → Mmmm. (scripts.foods.sound_mmmm)
+- Blurg. → Blurg. (scripts.hireling_foods.sound_blurg)
+- Mmmmm. → Mmmmm. (scripts.hireling_foods.sound_mmmmm)
+- Waaaaaah → Waaaaaah (scripts.horestis_jars.fail_1)
+- Mmmm. → Mmmm. (scripts.lemon_cupcake.say_1)
+- <crrk> → <crrk> (scripts.lever.say_1)
+- <squeaak> → <squeaak> (scripts.lever.say_2)
+- Slurp! → Slurp! (scripts.movements_exit.say_1)
+- !-! -O- I_I (/( --I Morgathla → !-! -O- I_I (/( --I Morgathla (scripts.movements_mission4_parchment_decyphering.say_1)
+- rkawdmawfjawkjnfjkawnkjnawkdjawkfmalkwmflkmawkfnzxc → rkawdmawfjawkjnfjkawnkjnawkdjawkfmalkwmflkmawkfnzxc (scripts.movements_teleportto.say_1)
+- Plinngggg → Plinngggg (scripts.music_box.sound_ironblight)
+- ZzzZzzZzzzZz → ZzzZzzZzzzZz (scripts.music_box.sound_magma_crawler)
+- Purrrrrrr → Purrrrrrr (scripts.music_box.sound_midnight_panther)
+- Sssssssss → Sssssssss (scripts.music_box.sound_wailing_widow)
+- %s
+IP: %s → %s
+IP: %s (scripts.on_look.admin_ip)
+- [World Change] Yasir has arrived in %s today! → [Cambio mundial] ¡Yasir ha llegado a %s hoy! (scripts.oriental_trader.arrived_today)
+- Srrrt! → Srrrt! (scripts.rafzane_elevator.sound_1)
+- {} {} → {} {} (scripts.special_tiles.msg_1)
+- Mmmm. → Mmmm. (scripts.strawberry_cupcake.say_1)
 
 ### 🚫 Raporty "nie mogę przetłumaczyć"
-- Guard reports: **1334**  
+- Guard reports: **1342**  
 - Blocker reports: **0**  
-- Widoczne raporty 'nie mogę tłumaczyć': **1284**
+- Widoczne raporty 'nie mogę tłumaczyć': **1292**
 
 ### 🌐 Globalne info wszystkich języków
-- **Global completion:** **19.68%** (548,473/2,786,472)
-- **EN-copy łącznie:** **1,335,781**
+- **Global completion:** **19.69%** (548,615/2,786,472)
+- **EN-copy łącznie:** **1,335,745**
 - **Braki kluczy łącznie:** **110,060**
 - **Brakujące pliki językowe:** **0**
-- **Cache STATUSPY (per-lang):** **mixed** | hit **51**, miss **1**, hit-rate **98.1%**
-- **Cache STATUSPY (per-file):** hit **1975**, miss **1**, hit-rate **99.9%**
+- **Cache STATUSPY (per-lang):** **mixed** | hit **50**, miss **2**, hit-rate **96.2%**
+- **Cache STATUSPY (per-file):** hit **1969**, miss **7**, hit-rate **99.6%**
 - **Profiler cyklu (ostatni):** -
 - **Osobny raport:** `i18n/status/translation_global_overview.json`
 
 ### 🔬 Jakość tłumaczeń
-- **Ostatni audyt:** SLOW_MODE | 78 issue(s) / 100 entries | 2026-02-13T20:51:53.752218Z
-- **Top 5 typów problemów:** suspicious_log_medium=135, identical_to_en=78, suspicious_log_low=65
-- **Języki o najsłabszej jakości:** pl(60.1, issues=66476), es(60.2, issues=82788), de(71.4, issues=3460), zh_TW(82.9, issues=0), az(83.1, issues=1126)
+- **Ostatni audyt:** SLOW_MODE | 59 issue(s) / 100 entries | 2026-02-13T20:55:46.162765Z
+- **Top 5 typów problemów:** suspicious_log_medium=190, identical_to_en=59, suspicious_log_high=6, suspicious_log_low=4
+- **Języki o najsłabszej jakości:** pl(60.1, issues=66772), es(60.2, issues=83459), de(71.4, issues=3460), zh_TW(82.9, issues=0), az(83.1, issues=1126)
 - **Pliki:** `i18n/status/quality_audit_latest.json`, `i18n/status/quality_dashboard.json`, `i18n/status/quality_report.jsonl`
 
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#95** | od uruchomienia |
+| 🔄 Cykl aktualny | **#99** | od uruchomienia |
 | 🔑 Kluczy wyekstrahowanych | **6,248** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
@@ -280,44 +282,44 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #    95 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #    99 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      🤖 AUTO_TRANSLATE (parallel_start)        │
 │ Kategoria: 📁 PL                                     │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status: running                                               │
-│ Plik: monsters.json                                           │
+│ Plik: otclient_modules.json                                   │
 │ Postęp: 0/0 keys                                              │
 │ Info: parallel auto translate                                 │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2026-02-13T20:53:08Z           │
+│ ❤️ Heartbeat: 2026-02-13T20:55:55Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 🧾 Ostatnie akcje (dla czytelności)
 
-- 2026-02-13 20:53:08 | AUTO_TRANSLATE:parallel_start | pl | ok | monsters.json
-- 2026-02-13 20:53:07 | AUTO_TRANSLATE:auto_done | es | ok | npc.json
-- 2026-02-13 20:51:59 | AUTO_TRANSLATE:auto_start | es | ok | npc.json
-- 2026-02-13 20:51:53 | AUTO_TRANSLATE:auto_done | pl | ok | items.json
-- 2026-02-13 20:50:51 | AUTO_TRANSLATE:auto_start | pl | ok | items.json
-- 2026-02-13 20:50:40 | AUTO_TRANSLATE:parallel_start | es | ok | startup.json
+- 2026-02-13 20:55:55 | AUTO_TRANSLATE:parallel_start | pl | ok | otclient_modules.json
+- 2026-02-13 20:55:54 | AUTO_TRANSLATE:auto_done | es | ok | scripts.json
+- 2026-02-13 20:55:52 | AUTO_TRANSLATE:auto_start | es | ok | scripts.json
+- 2026-02-13 20:55:26 | AUTO_TRANSLATE:parallel_start | pl | ok | html.json
+- 2026-02-13 20:55:25 | AUTO_TRANSLATE:auto_done | es | ok | quests.json
+- 2026-02-13 20:55:23 | AUTO_TRANSLATE:auto_start | es | ok | quests.json
 
 ---
 
 ## 🔁 W tym cyklu
 
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [es] → warn (files+1, translated+79, skipped+0) — lang=es file=npc.json strict_skipped_done=2028 guard_fail=1 placeholder=0 command=0 pipe=0
-- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [es] → ok (translated+18, skipped+0) — parallel lang=es file=monsters.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+18, skipped+0) — lang=pl file=monsters.json strict_skipped_done=1022
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [es] → warn (files+1, translated+30, skipped+0) — lang=es file=scripts.json strict_skipped_done=2140
+- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [de] → ok (translated+8, skipped+0) — parallel lang=de file=spells.json
+- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [es] → ok (translated+18, skipped+0) — parallel lang=es file=talkactions.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+11, skipped+0) — lang=pl file=php.json strict_skipped_done=48
 - 🔧 MIGRATION: zakończono kategorię [items] → ok (keys+50, files+0) — migration finished
 - 🔧 MIGRATION: mini-batch [items] → ok (keys+10) — mini_batch=5 processed=50/50
 - 🔧 MIGRATION: mini-batch [items] → ok (keys+10) — mini_batch=4 processed=40/50
 - 🔧 MIGRATION: mini-batch [items] → ok (keys+10) — mini_batch=3 processed=30/50
 - 🔧 MIGRATION: mini-batch [items] → ok (keys+10) — mini_batch=2 processed=20/50
 - 🔧 MIGRATION: mini-batch [items] → ok (keys+10) — mini_batch=1 processed=10/50
-- 🔧 MIGRATION: zakończono kategorię [npc] → ok (keys+0, files+0) — migration finished
 
 
 
@@ -327,7 +329,7 @@
 - Cykle: **471**
 - MIGRATION: **+330** kluczy, **0** plików `.lua`
 - Kategorie dotknięte: actions, chatchannels, cpp, creaturescripts, dataroot, errors, events, items, libs, mounts...
-- Błędy: **763**
+- Błędy: **767**
 
 
 ---
@@ -341,7 +343,7 @@
 | ⬜ Plików bez kluczy | **402** | czyste (brak hardcoded) |
 | 🔑 Kluczy wyciągniętych | **6248** | przez workera w tej sesji |
 | 🌍 Języków | **53** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#95** | continuous mode |
+| 🔄 Cykli wykonanych | **#99** | continuous mode |
 
 ---
 
@@ -551,7 +553,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #95 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #99 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -638,7 +640,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2026-02-13 20:54:01  
+📅 Auto-updated by Worker v1.1 | Last: 2026-02-13 20:56:09  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

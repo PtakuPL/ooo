@@ -2,9 +2,9 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 6000, 'npc': 15000, 'player': 200, 'quests': 700, 'scripts': 2500, 'server': 3000, 'spells': 2000, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 900, 'html': 1500, 'client': 300, 'otclient_modules': 2000, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50, 'achievements': 1048, 'actions': 100, 'books': 1403, 'chatchannels': 100, 'creaturescripts': 100, 'dataroot': 100, 'errors': 100, 'events': 100, 'example_merchant': 100, 'globalevents': 100, 'libs': 100, 'messages': 100, 'modules': 100, 'mounts': 100, 'movements': 100, 'npclib': 147, 'questlog': 1918, 'raids': 273, 'startup': 100, 'talkactions': 199, 'world': 100} -->
 
-> **Aktualizacja:** 2026-02-13 20:49:47 UTC  
+> **Aktualizacja:** 2026-02-13 20:51:53 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 53586  
-> **LIVE:** Cykl #89 | Status: 🟢 RUNNING | Faza: AUTO_TRANSLATE | Etap: auto_start | Kategoria: es | Plik: php.json | ETA: 0 | Heartbeat: 2026-02-13T20:49:46Z
+> **LIVE:** Cykl #94 | Status: 🟢 RUNNING | Faza: AUTO_TRANSLATE | Etap: cycle_end | Kategoria: pl | Plik: - | ETA: 0 | Heartbeat: 2026-02-13T20:51:54Z
 
 ---
 
@@ -61,7 +61,7 @@
 ### 📁 Pliki Projektu (pełny skan)
 | Metryka | Wartość | Procent | Info |
 |---------|---------|---------|------|
-| 📂 **Wszystkie pliki** | **20,054** | 100% | cały projekt |
+| 📂 **Wszystkie pliki** | **20,057** | 100% | cały projekt |
 | 📜 Do skanowania (kod) | **9,204** | 45.9% | pliki z kodem/tekstami |
 | 🔍 **Przeskanowane** | **6,443** | **70.0%** | historia workera |
 | ⏳ Nie przeskanowane | **2,761** | 30.0% | czekają na skan |
@@ -106,7 +106,7 @@
 ### 🎯 Pokrycie tłumaczeń per język (EN → LANG)
 | Język | Przetłumaczone | % poprawnie przetłumaczonych | EN-copy | Braki kluczy |
 |-------|----------------|-------------------------------|---------|--------------|
-| PL (Polski) | 37,766/53,586 | 70.48% | 2,973 | 2,083 |
+| PL (Polski) | 37,846/53,586 | 70.63% | 2,973 | 2,083 |
 | ES (Hiszpański) | 35,839/53,586 | 66.88% | 16,860 | 232 |
 | AR (Arabski) | 11,447/53,586 | 21.36% | 30,982 | 2,150 |
 | ID (ID) | 11,301/53,586 | 21.09% | 29,171 | 2,155 |
@@ -128,28 +128,39 @@
 | TL (TL) | 11,292/53,586 | 21.07% | 29,173 | 2,155 |
 
 ### 🧭 Aktywny folder tłumaczeń
-- **Folder:** ES - Hiszpański - Serwer
-- **Plik JSON:** books.json
-- **Ostatnie klucze (10-20):** 9
+- **Folder:** PL - Polski - Serwer
+- **Plik JSON:** items.json
+- **Ostatnie klucze (10-20):** 20
 
 ### 📝 Ostatnie 10-20 przetłumaczonych kluczy
-- /startup/tables/load.lua → /startup/tables/load.lua (startup.startup.msg1)
-- /startup/others/load.lua → /startup/others/load.lua (startup.startup.msg2)
-- [loadLuaMapAction] - Wrong item id {} found → [loadLuaMapAction] — Znaleziono błędny identyfikator elementu {} (startup.functions.msg4)
-- /startup/tables/chest.lua → /startup/tables/chest.lua (startup.load.msg1)
-- legiondawnport → legiondawnport (startup.chest.msg4)
-- /startup/tables/corpse.lua → /startup/tables/corpse.lua (startup.load.msg2)
-- /startup/tables/create_item.lua → /startup/tables/create_item.lua (startup.load.msg3)
-- /startup/tables/door_key.lua → /startup/tables/door_key.lua (startup.load.msg4)
-- /startup/tables/door_level.lua → /startup/tables/door_level.lua (startup.load.msg5)
+- winter wolf fur → zimowe futro wilka (item.10295.name)
+- acorn → żołądź (item.10296.name)
+- antlers → poroże (item.10297.name)
+- metal spike → metalowy kolec (item.10298.name)
+- badger fur → borsucze futro (item.10299.name)
+- carniphila seeds → nasiona carniphila (item.10300.name)
+- centipede leg → noga stonogi (item.10301.name)
+- compass → kompas (item.10302.name)
+- dark rosary → ciemny różaniec (item.10303.name)
+- hellspawn tail → ogon piekielnego pomiotu (item.10304.name)
+- lump of earth → bryła ziemi (item.10305.name)
+- essence of a bad dream → esencja złego snu (item.10306.name)
+- thick fur → grube futro (item.10307.name)
+- mutated flesh → zmutowane mięso (item.10308.name)
+- strand of medusa hair → pasmo włosów meduzy (item.10309.name)
+- sabretooth → szablozębny (item.10311.name)
+- scythe leg → noga kosy (item.10312.name)
+- winged tail → skrzydlaty ogon (item.10313.name)
+- nettle blossom → kwiat pokrzywy (item.10314.name)
+- sulphurous stone → kamień siarkowy (item.10315.name)
 
 ### 🚫 Raporty "nie mogę przetłumaczyć"
-- Guard reports: **1323**  
+- Guard reports: **1333**  
 - Blocker reports: **0**  
-- Widoczne raporty 'nie mogę tłumaczyć': **1273**
+- Widoczne raporty 'nie mogę tłumaczyć': **1283**
 
 ### 🌐 Globalne info wszystkich języków
-- **Global completion:** **19.68%** (548,317/2,786,472)
+- **Global completion:** **19.68%** (548,397/2,786,472)
 - **EN-copy łącznie:** **1,335,828**
 - **Braki kluczy łącznie:** **110,060**
 - **Brakujące pliki językowe:** **0**
@@ -159,15 +170,15 @@
 - **Osobny raport:** `i18n/status/translation_global_overview.json`
 
 ### 🔬 Jakość tłumaczeń
-- **Ostatni audyt:** SLOW_MODE | 99 issue(s) / 100 entries | 2026-02-13T20:49:40.670353Z
-- **Top 5 typów problemów:** suspicious_log_medium=122, identical_to_en=99, suspicious_log_low=78
-- **Języki o najsłabszej jakości:** es(60.1, issues=81208), pl(60.1, issues=65985), de(71.4, issues=3460), zh_TW(82.9, issues=0), az(83.1, issues=1126)
+- **Ostatni audyt:** SLOW_MODE | 78 issue(s) / 100 entries | 2026-02-13T20:51:53.752218Z
+- **Top 5 typów problemów:** suspicious_log_medium=135, identical_to_en=78, suspicious_log_low=65
+- **Języki o najsłabszej jakości:** es(60.1, issues=82788), pl(60.1, issues=66476), de(71.4, issues=3460), zh_TW(82.9, issues=0), az(83.1, issues=1126)
 - **Pliki:** `i18n/status/quality_audit_latest.json`, `i18n/status/quality_dashboard.json`, `i18n/status/quality_report.jsonl`
 
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#89** | od uruchomienia |
+| 🔄 Cykl aktualny | **#94** | od uruchomienia |
 | 🔑 Kluczy wyekstrahowanych | **6,248** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
@@ -200,7 +211,7 @@
 ## ✅ CHECKLIST - Plan Pracy
 
 > **Aktualna faza:** AUTO_TRANSLATE  
-> **Aktualna kategoria:** es
+> **Aktualna kategoria:** pl
 
 
 ### 🔄 Faza 1: 🎮 Canary Server
@@ -269,44 +280,44 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #    89 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #    94 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
-│ Tryb:      🤖 AUTO_TRANSLATE (auto_start)            │
-│ Kategoria: 📁 ES                                     │
+│ Tryb:      🤖 AUTO_TRANSLATE (cycle_end)             │
+│ Kategoria: 📁 PL                                     │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status: running                                               │
-│ Plik: php.json                                                │
-│ Postęp: 0/0 keys                                              │
-│ Info: auto translate                                          │
+│ Plik: -                                                       │
+│ Postęp: 0/0 units                                             │
+│ Info: cycle end                                               │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2026-02-13T20:49:46Z           │
+│ ❤️ Heartbeat: 2026-02-13T20:51:54Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 🧾 Ostatnie akcje (dla czytelności)
 
-- 2026-02-13 20:49:46 | AUTO_TRANSLATE:auto_start | es | ok | php.json
-- 2026-02-13 20:49:37 | AUTO_TRANSLATE:parallel_start | pl | ok | startup.json
-- 2026-02-13 20:49:37 | AUTO_TRANSLATE:auto_done | es | ok | books.json
-- 2026-02-13 20:49:34 | AUTO_TRANSLATE:auto_start | es | ok | books.json
-- 2026-02-13 20:49:25 | AUTO_TRANSLATE:parallel_start | pl | ok | books.json
-- 2026-02-13 20:49:25 | AUTO_TRANSLATE:auto_done | es | ok | client.json
+- 2026-02-13 20:51:53 | AUTO_TRANSLATE:auto_done | pl | ok | items.json
+- 2026-02-13 20:50:51 | AUTO_TRANSLATE:auto_start | pl | ok | items.json
+- 2026-02-13 20:50:40 | AUTO_TRANSLATE:parallel_start | es | ok | startup.json
+- 2026-02-13 20:50:40 | AUTO_TRANSLATE:auto_done | pl | ok | example_merchant.json
+- 2026-02-13 20:50:37 | AUTO_TRANSLATE:auto_start | pl | ok | example_merchant.json
+- 2026-02-13 20:50:30 | AUTO_TRANSLATE:auto_done | es | ok | cpp.json
 
 ---
 
 ## 🔁 W tym cyklu
 
-- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [es] → ok (translated+12, skipped+0) — parallel lang=es file=quests.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+12, skipped+0) — lang=pl file=scripts.json strict_skipped_done=1132
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+80, skipped+0) — lang=pl file=items.json strict_skip missing_file=0 missing_key=163 skipped_done=7199 strict_skipped_done=7199 guard_fail=1 placeholder=0 command=0 pipe=0
+- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [es] → ok (translated+2, skipped+0) — parallel lang=es file=items.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+18, skipped+0) — lang=pl file=items.json strict_skipped_done=333
 - 🔧 MIGRATION: zakończono kategorię [items] → ok (keys+50, files+0) — migration finished
 - 🔧 MIGRATION: mini-batch [items] → ok (keys+10) — mini_batch=5 processed=50/50
 - 🔧 MIGRATION: mini-batch [items] → ok (keys+10) — mini_batch=4 processed=40/50
 - 🔧 MIGRATION: mini-batch [items] → ok (keys+10) — mini_batch=3 processed=30/50
 - 🔧 MIGRATION: mini-batch [items] → ok (keys+10) — mini_batch=2 processed=20/50
 - 🔧 MIGRATION: mini-batch [items] → ok (keys+10) — mini_batch=1 processed=10/50
-- 🔧 MIGRATION: zakończono kategorię [mounts] → ok (keys+0, files+0) — migration finished
-- 🔧 MIGRATION: mini-batch stop [mounts] → ok (keys+0) — no new data
+- 🔧 MIGRATION: zakończono kategorię [spells] → ok (keys+0, files+0) — migration finished
 
 
 
@@ -316,7 +327,7 @@
 - Cykle: **471**
 - MIGRATION: **+330** kluczy, **0** plików `.lua`
 - Kategorie dotknięte: actions, chatchannels, cpp, creaturescripts, dataroot, errors, events, items, libs, mounts...
-- Błędy: **752**
+- Błędy: **758**
 
 
 ---
@@ -330,7 +341,7 @@
 | ⬜ Plików bez kluczy | **402** | czyste (brak hardcoded) |
 | 🔑 Kluczy wyciągniętych | **6248** | przez workera w tej sesji |
 | 🌍 Języków | **53** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#89** | continuous mode |
+| 🔄 Cykli wykonanych | **#94** | continuous mode |
 
 ---
 
@@ -540,7 +551,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #89 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #94 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -627,7 +638,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2026-02-13 20:49:47  
+📅 Auto-updated by Worker v1.1 | Last: 2026-02-13 20:51:53  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

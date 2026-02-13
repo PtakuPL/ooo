@@ -2,9 +2,9 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 6000, 'npc': 15000, 'player': 200, 'quests': 700, 'scripts': 2500, 'server': 3000, 'spells': 2000, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 900, 'html': 1500, 'client': 300, 'otclient_modules': 2000, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50, 'achievements': 1048, 'actions': 100, 'books': 1403, 'chatchannels': 100, 'creaturescripts': 100, 'dataroot': 100, 'errors': 100, 'events': 100, 'example_merchant': 100, 'globalevents': 100, 'libs': 100, 'messages': 100, 'modules': 100, 'mounts': 100, 'movements': 100, 'npclib': 147, 'questlog': 1918, 'raids': 273, 'startup': 100, 'talkactions': 199, 'world': 100} -->
 
-> **Aktualizacja:** 2026-02-13 07:56:51 UTC  
+> **Aktualizacja:** 2026-02-13 07:58:57 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 53586  
-> **LIVE:** Cykl #50 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: cycle_end | Kategoria: cpp | Plik: - | ETA: 0 | Heartbeat: 2026-02-13T07:56:37Z
+> **LIVE:** Cykl #57 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: pending_skip | Kategoria: pending_skip | Plik: - | ETA: 0 | Heartbeat: 2026-02-13T07:58:40Z
 
 ---
 
@@ -172,21 +172,21 @@ Dest (otclient_modules.boss_slots.tr_3)
 - **EN-copy łącznie:** **1,336,985**
 - **Braki kluczy łącznie:** **110,060**
 - **Brakujące pliki językowe:** **0**
-- **Cache STATUSPY (per-lang):** **warm-cache** | hit **52**, miss **0**, hit-rate **100.0%**
-- **Cache STATUSPY (per-file):** hit **1976**, miss **0**, hit-rate **100.0%**
-- **Profiler cyklu (ostatni):** cykl #50 (MIGRATION): dispatch 817ms, mode 8991ms, status 12776ms, total 23756ms
+- **Cache STATUSPY (per-lang):** **cold-cache** | hit **0**, miss **52**, hit-rate **0.0%**
+- **Cache STATUSPY (per-file):** hit **0**, miss **1976**, hit-rate **0.0%**
+- **Profiler cyklu (ostatni):** -
 - **Osobny raport:** `i18n/status/translation_global_overview.json`
 
 ### 🔬 Jakość tłumaczeń
-- **Ostatni audyt:** SLOW_MODE | 30 issue(s) / 100 entries | 2026-02-13T07:53:53.069057Z
+- **Ostatni audyt:** SLOW_MODE | 30 issue(s) / 100 entries | 2026-02-13T07:56:59.648056Z
 - **Top 5 typów problemów:** suspicious_log_medium=170, identical_to_en=30, suspicious_log_low=27, suspicious_log_high=3
-- **Języki o najsłabszej jakości:** es(60.1, issues=59956), pl(60.1, issues=54787), de(71.4, issues=3460), zh_TW(82.9, issues=0), az(83.1, issues=1126)
+- **Języki o najsłabszej jakości:** es(60.1, issues=60086), pl(60.1, issues=54887), de(71.4, issues=3460), zh_TW(82.9, issues=0), az(83.1, issues=1126)
 - **Pliki:** `i18n/status/quality_audit_latest.json`, `i18n/status/quality_dashboard.json`, `i18n/status/quality_report.jsonl`
 
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#50** | od uruchomienia |
+| 🔄 Cykl aktualny | **#57** | od uruchomienia |
 | 🔑 Kluczy wyekstrahowanych | **6,248** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
@@ -219,7 +219,7 @@ Dest (otclient_modules.boss_slots.tr_3)
 ## ✅ CHECKLIST - Plan Pracy
 
 > **Aktualna faza:** MIGRATION  
-> **Aktualna kategoria:** cpp
+> **Aktualna kategoria:** pending_skip
 
 
 ### 🔄 Faza 1: 🎮 Canary Server
@@ -288,18 +288,18 @@ Dest (otclient_modules.boss_slots.tr_3)
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #    50 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #    57 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
-│ Tryb:      🔧 MIGRATION (cycle_end)                  │
-│ Kategoria: 📁 CPP                                    │
+│ Tryb:      🔧 MIGRATION (pending_skip)               │
+│ Kategoria: 📁 PENDING_SKIP                           │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status: running                                               │
 │ Plik: -                                                       │
-│ Postęp: 0/0 units                                             │
-│ Info: cycle end                                               │
+│ Postęp: 0/0 files                                             │
+│ Info: all categories skipped                                  │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2026-02-13T07:56:37Z           │
+│ ❤️ Heartbeat: 2026-02-13T07:58:40Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -316,16 +316,16 @@ Dest (otclient_modules.boss_slots.tr_3)
 
 ## 🔁 W tym cyklu
 
-- 🔧 MIGRATION: zakończono kategorię [cpp] → ok (keys+0, files+0) — migration finished
-- 🔧 MIGRATION: mini-batch stop [cpp] → ok (keys+0) — no new data
-- 🔧 MIGRATION: mini-batch [cpp] → ok (keys+0) — mini_batch=1 processed=5/5
-- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [de] → ok (translated+5, skipped+0) — parallel lang=de file=items.json
-- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [es] → ok (translated+5, skipped+0) — parallel lang=es file=server.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+5, skipped+0) — lang=pl file=spells.json strict_skipped_done=1526
-- 🔧 MIGRATION: zakończono kategorię [quests] → ok (keys+5, files+0) — migration finished
-- 🔧 MIGRATION: mini-batch stop [quests] → ok (keys+0) — no new data
-- 🔧 MIGRATION: mini-batch [quests] → ok (keys+0) — mini_batch=4 processed=40/50
-- 🔧 MIGRATION: mini-batch [quests] → ok (keys+1) — mini_batch=3 processed=30/50
+- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [es] → ok (translated+6, skipped+0) — parallel lang=es file=client.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+3, skipped+0) — lang=pl file=books.json strict_skipped_done=1367 guard_fail=3 placeholder=0 command=3 pipe=0
+- 🔧 MIGRATION: zakończono kategorię [actions] → ok (keys+0, files+0) — migration finished
+- 🔧 MIGRATION: mini-batch stop [actions] → ok (keys+0) — no new data
+- 🔧 MIGRATION: mini-batch [actions] → ok (keys+0) — mini_batch=1 processed=10/50
+- 🔧 MIGRATION: zakończono kategorię [movements] → ok (keys+0, files+0) — migration finished
+- 🔧 MIGRATION: mini-batch stop [movements] → ok (keys+0) — no new data
+- 🔧 MIGRATION: mini-batch [movements] → ok (keys+0) — mini_batch=1 processed=10/20
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [fr] → ok (files+1, translated+0, skipped+117) — lang=fr file=quests.json
+- 🔧 MIGRATION: zakończono kategorię [scripts] → ok (keys+0, files+0) — migration finished
 
 
 
@@ -349,7 +349,7 @@ Dest (otclient_modules.boss_slots.tr_3)
 | ⬜ Plików bez kluczy | **402** | czyste (brak hardcoded) |
 | 🔑 Kluczy wyciągniętych | **6248** | przez workera w tej sesji |
 | 🌍 Języków | **53** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#50** | continuous mode |
+| 🔄 Cykli wykonanych | **#57** | continuous mode |
 
 ---
 
@@ -559,7 +559,7 @@ Dest (otclient_modules.boss_slots.tr_3)
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #50 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #57 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -646,7 +646,7 @@ Dest (otclient_modules.boss_slots.tr_3)
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2026-02-13 07:56:51  
+📅 Auto-updated by Worker v1.1 | Last: 2026-02-13 07:58:57  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

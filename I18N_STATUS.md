@@ -2,9 +2,9 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 6000, 'npc': 15000, 'player': 200, 'quests': 700, 'scripts': 2500, 'server': 3000, 'spells': 2000, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 900, 'html': 1500, 'client': 300, 'otclient_modules': 2000, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50, 'achievements': 1048, 'actions': 100, 'books': 1403, 'chatchannels': 100, 'creaturescripts': 100, 'dataroot': 100, 'errors': 100, 'events': 100, 'example_merchant': 100, 'globalevents': 100, 'libs': 100, 'messages': 100, 'modules': 100, 'mounts': 100, 'movements': 100, 'npclib': 147, 'questlog': 1918, 'raids': 273, 'startup': 100, 'talkactions': 199, 'world': 100} -->
 
-> **Aktualizacja:** 2026-02-13 15:42:56 UTC  
+> **Aktualizacja:** 2026-02-13 15:45:03 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 53586  
-> **LIVE:** Cykl #920 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: mini_batch | Kategoria: spells | Plik: - | ETA: 0 | Heartbeat: 2026-02-13T15:39:40Z
+> **LIVE:** Cykl #926 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: cycle_end | Kategoria: chatchannels | Plik: - | ETA: 0 | Heartbeat: 2026-02-13T15:45:03Z
 
 ---
 
@@ -178,15 +178,15 @@ Dest (otclient_modules.boss_slots.tr_3)
 - **Osobny raport:** `i18n/status/translation_global_overview.json`
 
 ### 🔬 Jakość tłumaczeń
-- **Ostatni audyt:** SLOW_MODE | 30 issue(s) / 100 entries | 2026-02-13T14:55:00.773150Z
+- **Ostatni audyt:** SLOW_MODE | 30 issue(s) / 100 entries | 2026-02-13T15:43:49.989856Z
 - **Top 5 typów problemów:** suspicious_log_medium=170, identical_to_en=30, suspicious_log_low=27, suspicious_log_high=3
-- **Języki o najsłabszej jakości:** es(60.1, issues=61906), pl(60.1, issues=56287), de(71.4, issues=3460), zh_TW(82.9, issues=0), az(83.1, issues=1126)
+- **Języki o najsłabszej jakości:** es(60.1, issues=62036), pl(60.1, issues=56387), de(71.4, issues=3460), zh_TW(82.9, issues=0), az(83.1, issues=1126)
 - **Pliki:** `i18n/status/quality_audit_latest.json`, `i18n/status/quality_dashboard.json`, `i18n/status/quality_report.jsonl`
 
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#920** | od uruchomienia |
+| 🔄 Cykl aktualny | **#926** | od uruchomienia |
 | 🔑 Kluczy wyekstrahowanych | **6,248** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
@@ -219,7 +219,7 @@ Dest (otclient_modules.boss_slots.tr_3)
 ## ✅ CHECKLIST - Plan Pracy
 
 > **Aktualna faza:** MIGRATION  
-> **Aktualna kategoria:** spells
+> **Aktualna kategoria:** chatchannels
 
 
 ### 🔄 Faza 1: 🎮 Canary Server
@@ -288,18 +288,18 @@ Dest (otclient_modules.boss_slots.tr_3)
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #   920 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #   926 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
-│ Tryb:      🔧 MIGRATION (mini_batch)                 │
-│ Kategoria: 📁 SPELLS                                 │
+│ Tryb:      🔧 MIGRATION (cycle_end)                  │
+│ Kategoria: 📁 CHATCHANNELS                           │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status: running                                               │
 │ Plik: -                                                       │
-│ Postęp: 0/5 items                                             │
-│ Info: batch 1 size=5                                          │
+│ Postęp: 0/0 units                                             │
+│ Info: cycle end                                               │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2026-02-13T15:39:40Z           │
+│ ❤️ Heartbeat: 2026-02-13T15:45:03Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -316,9 +316,12 @@ Dest (otclient_modules.boss_slots.tr_3)
 
 ## 🔁 W tym cyklu
 
-- 🔧 MIGRATION: zakończono kategorię [events] → ok (keys+0, files+0) — migration finished
-- 🔧 MIGRATION: mini-batch stop [events] → ok (keys+0) — no new data
-- 🔧 MIGRATION: mini-batch [events] → ok (keys+0) — mini_batch=1 processed=10/20
+- 🔧 MIGRATION: zakończono kategorię [chatchannels] → ok (keys+0, files+0) — migration finished
+- 🔧 MIGRATION: mini-batch stop [chatchannels] → ok (keys+0) — no new data
+- 🔧 MIGRATION: mini-batch [chatchannels] → ok (keys+0) — mini_batch=1 processed=5/5
+- 🔧 MIGRATION: zakończono kategorię [otclient_modules] → ok (keys+0, files+0) — migration finished
+- 🔧 MIGRATION: mini-batch stop [otclient_modules] → ok (keys+0) — no new data
+- 🔧 MIGRATION: mini-batch [otclient_modules] → ok (keys+0) — mini_batch=1 processed=10/20
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [de] → ok (files+1, translated+0, skipped+21) — lang=de file=actions.json
 
 
@@ -326,7 +329,7 @@ Dest (otclient_modules.boss_slots.tr_3)
 
 ## 📅 Dziś (UTC)
 
-- Cykle: **433**
+- Cykle: **439**
 - MIGRATION: **+330** kluczy, **0** plików `.lua`
 - Kategorie dotknięte: actions, chatchannels, cpp, creaturescripts, dataroot, errors, events, items, libs, mounts...
 - Błędy: **607**
@@ -343,7 +346,7 @@ Dest (otclient_modules.boss_slots.tr_3)
 | ⬜ Plików bez kluczy | **402** | czyste (brak hardcoded) |
 | 🔑 Kluczy wyciągniętych | **6248** | przez workera w tej sesji |
 | 🌍 Języków | **53** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#920** | continuous mode |
+| 🔄 Cykli wykonanych | **#926** | continuous mode |
 
 ---
 
@@ -553,7 +556,7 @@ Dest (otclient_modules.boss_slots.tr_3)
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #920 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #926 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -640,23 +643,23 @@ Dest (otclient_modules.boss_slots.tr_3)
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2026-02-13 15:42:56  
+📅 Auto-updated by Worker v1.1 | Last: 2026-02-13 15:45:03  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
 
 ## Ostatnio zmigrowane NPC
 
-- ✅ `account_repository_db.hpp` - ukończono 2026-02-13 14:40
-- ✅ `account.hpp` - ukończono 2026-02-13 14:40
-- ✅ `pch.cpp` - ukończono 2026-02-13 14:40
-- ✅ `game_definitions.hpp` - ukończono 2026-02-13 14:40
-- ✅ `zone.hpp` - ukończono 2026-02-13 14:40
-- ✅ `npc_handler` - ukończono 2026-02-13 14:40
-- ✅ `modules` - ukończono 2026-02-13 14:40
-- ✅ `bank_system` - ukończono 2026-02-13 14:40
-- ✅ `keyword_handler` - ukończono 2026-02-13 14:40
-- ✅ `custom_modules` - ukończono 2026-02-13 14:40
+- ✅ `creature` - ukończono 2026-02-13 16:44
+- ✅ `player` - ukończono 2026-02-13 16:44
+- ✅ `monster` - ukończono 2026-02-13 16:44
+- ✅ `party` - ukończono 2026-02-13 16:44
+- ✅ `lib` - ukończono 2026-02-13 16:44
+- ✅ `load` - ukończono 2026-02-13 16:44
+- ✅ `storages` - ukończono 2026-02-13 16:44
+- ✅ `quests` - ukończono 2026-02-13 16:44
+- ✅ `lib` - ukończono 2026-02-13 16:44
+- ✅ `load` - ukończono 2026-02-13 16:44
 
 ---
 

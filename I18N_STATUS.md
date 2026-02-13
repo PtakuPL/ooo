@@ -2,9 +2,9 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 6000, 'npc': 15000, 'player': 200, 'quests': 700, 'scripts': 2500, 'server': 3000, 'spells': 2000, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 900, 'html': 1500, 'client': 300, 'otclient_modules': 2000, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50, 'achievements': 1048, 'actions': 100, 'books': 1403, 'chatchannels': 100, 'creaturescripts': 100, 'dataroot': 100, 'errors': 100, 'events': 100, 'example_merchant': 100, 'globalevents': 100, 'libs': 100, 'messages': 100, 'modules': 100, 'mounts': 100, 'movements': 100, 'npclib': 147, 'questlog': 1918, 'raids': 273, 'startup': 100, 'talkactions': 199, 'world': 100} -->
 
-> **Aktualizacja:** 2026-02-13 07:23:33 UTC  
+> **Aktualizacja:** 2026-02-13 07:26:01 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 53581  
-> **LIVE:** Cykl #1 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: mini_batch | Kategoria: spells | Plik: - | ETA: 0 | Heartbeat: 2026-02-13T07:23:27Z
+> **LIVE:** Cykl #1 | Status: 🟢 RUNNING | Faza: AUTO_TRANSLATE | Etap: parallel_start | Kategoria: es | Plik: quests.json | ETA: 0 | Heartbeat: 2026-02-13T07:25:55Z
 
 ---
 
@@ -106,8 +106,8 @@
 ### 🎯 Pokrycie tłumaczeń per język (EN → LANG)
 | Język | Przetłumaczone | % poprawnie przetłumaczonych | EN-copy | Braki kluczy |
 |-------|----------------|-------------------------------|---------|--------------|
-| PL (Polski) | 35,934/53,581 | 67.06% | 2,935 | 2,078 |
-| ES (Hiszpański) | 33,229/53,581 | 62.02% | 17,999 | 227 |
+| PL (Polski) | 35,940/53,581 | 67.08% | 2,929 | 2,078 |
+| ES (Hiszpański) | 33,174/53,581 | 61.91% | 18,054 | 227 |
 | AR (Arabski) | 11,446/53,581 | 21.36% | 30,983 | 2,145 |
 | ID (ID) | 11,300/53,581 | 21.09% | 29,172 | 2,150 |
 | VI (VI) | 11,293/53,581 | 21.08% | 29,171 | 2,150 |
@@ -130,33 +130,51 @@
 ### 🧭 Aktywny folder tłumaczeń
 - **Folder:** PL - Polski - Serwer
 - **Plik JSON:** items.json
-- **Ostatnie klucze (10-20):** 4
+- **Ostatnie klucze (10-20):** 20
 
 ### 📝 Ostatnie 10-20 przetłumaczonych kluczy
-- BOOOOM! → BOOOOM! (quests.actions_using_crystals.say_2)
-- <gasp> → <gasp> (quests.bigfoot_burden.gasp)
-- <crack> → <crack> (quests.mission09_rock_troll.say_1)
-- <click> → <click> (quests.mission12_into_fortress.say_1)
+- <click> → <click> (scripts.movement_third_floor_ghoul.say_2)
+- !-! -O- I_I (/( --I Morgathla → !-! -O- I_I (/( --I Morgathla (scripts.movements_mission4_parchment_decyphering.say_1)
+- rkawdmawfjawkjnfjkawnkjnawkdjawkfmalkwmflkmawkfnzxc → rkawdmawfjawkjnfjkawnkjnawkdjawkfmalkwmflkmawkfnzxc (scripts.movements_teleportto.say_1)
+- %s
+IP: %s → %s
+IP: %s (scripts.on_look.admin_ip)
+- %s, Mana: %s / %s → %s, Mana: %s / %s (scripts.on_look.admin_player_health_mana)
+- [World Change] Yasir has arrived in %s today! → [Zmiana Świata] Yasir przybył dziś do %s! (scripts.oriental_trader.arrived_today)
+- {} {} → {} {} (scripts.special_tiles.msg_1)
+- Mwahaha! → Mwahaha! (scripts.thais_exhibition.say_36)
+- Wrrrzzzgggrrzzzz... → Wrrrzzzgggrrzzzz... (scripts.thais_exhibition.say_78)
+- <the welter devours his spawn and heals himself> → <the welter devours his spawn and heals himself> (scripts.the_welter_heal.say_1)
+- <the welter devours his spawn and heals himself> → <the welter devours his spawn and heals himself> (scripts.the_welter_heal.say_2)
+- Faaart! → Faaart! (scripts.yellow_pillow.say_1)
+- You can't use this character '%s' in your new name. → Nie możesz używać tego znaku '%s' w swoim nowym imieniu. (gamestore.validation.invalid_character)
+- Your new name '%s' can't be a monster's name. → Twoje nowe imię '%s' nie może być imieniem potwora. (gamestore.validation.monster_name)
+- You can't use the word '%s' in your new name. → W nowym imieniu nie możesz używać słowa '%s'. (gamestore.validation.new_name_forbidden_word)
+- You can't use the word '%s' even with spaces in your new name. → W nowym imieniu nie możesz używać słowa '%s' nawet ze spacjami. (gamestore.validation.new_name_forbidden_word_space)
+- Your new name '%s' can't be an NPC's name. → Twoje nowe imię '%s' nie może być imieniem NPC. (gamestore.validation.npc_name)
+- Jack: Trying to get rid of your junk in my house? Do I look like I need such a.. → Jack: Próbujesz pozbyć się śmieci z mojego domu? Czy wyglądam jakbym potrzebował (scripts.construction_kits.jack_amphora)
+- Never say 'oops'. Always say 'Ah, interesting!' → Nigdy nie mów 'oops'. Zawsze mów 'Ah, interesting!' (scripts.dolls.5668_9)
+- Aaa... CHOO! → Aaa... CHOO! (scripts.dolls.6566_4)
 
 ### 🚫 Raporty "nie mogę przetłumaczyć"
-- Guard reports: **1126**  
+- Guard reports: **1127**  
 - Blocker reports: **0**  
-- Widoczne raporty 'nie mogę tłumaczyć': **1076**
+- Widoczne raporty 'nie mogę tłumaczyć': **1077**
 
 ### 🌐 Globalne info wszystkich języków
-- **Global completion:** **19.52%** (543,825/2,786,212)
-- **EN-copy łącznie:** **1,336,979**
+- **Global completion:** **19.52%** (543,776/2,786,212)
+- **EN-copy łącznie:** **1,337,028**
 - **Braki kluczy łącznie:** **109,800**
 - **Brakujące pliki językowe:** **0**
-- **Cache STATUSPY (per-lang):** **cold-cache** | hit **0**, miss **52**, hit-rate **0.0%**
-- **Cache STATUSPY (per-file):** hit **0**, miss **1976**, hit-rate **0.0%**
+- **Cache STATUSPY (per-lang):** **mixed** | hit **50**, miss **2**, hit-rate **96.2%**
+- **Cache STATUSPY (per-file):** hit **1974**, miss **2**, hit-rate **99.9%**
 - **Profiler cyklu (ostatni):** -
 - **Osobny raport:** `i18n/status/translation_global_overview.json`
 
 ### 🔬 Jakość tłumaczeń
 - **Ostatni audyt:** SLOW_MODE | 66 issue(s) / 100 entries | 2026-02-13T06:49:30.107148Z
 - **Top 5 typów problemów:** suspicious_log_medium=181, identical_to_en=66, suspicious_log_low=18, suspicious_log_high=1
-- **Języki o najsłabszej jakości:** es(60.2, issues=59180), pl(60.4, issues=54156), de(71.4, issues=3460), zh_TW(82.9, issues=0), az(83.1, issues=1126)
+- **Języki o najsłabszej jakości:** es(60.2, issues=59180), pl(60.5, issues=54156), de(71.4, issues=3460), zh_TW(82.9, issues=0), az(83.1, issues=1126)
 - **Pliki:** `i18n/status/quality_audit_latest.json`, `i18n/status/quality_dashboard.json`, `i18n/status/quality_report.jsonl`
 
 ### 📈 Statystyki Pracy
@@ -194,8 +212,8 @@
 
 ## ✅ CHECKLIST - Plan Pracy
 
-> **Aktualna faza:** MIGRATION  
-> **Aktualna kategoria:** spells
+> **Aktualna faza:** AUTO_TRANSLATE  
+> **Aktualna kategoria:** es
 
 
 ### 🔄 Faza 1: 🎮 Canary Server
@@ -267,31 +285,32 @@
 │ 🔴 LIVE: Worker v2.0                          Cykl #     1 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
-│ Tryb:      🔧 MIGRATION (mini_batch)                 │
-│ Kategoria: 📁 SPELLS                                 │
+│ Tryb:      🤖 AUTO_TRANSLATE (parallel_start)        │
+│ Kategoria: 📁 ES                                     │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status: running                                               │
-│ Plik: -                                                       │
-│ Postęp: 0/20 items                                            │
-│ Info: batch 1 size=10                                         │
+│ Plik: quests.json                                             │
+│ Postęp: 0/0 keys                                              │
+│ Info: parallel auto translate                                 │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2026-02-13T07:23:27Z           │
+│ ❤️ Heartbeat: 2026-02-13T07:25:55Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 🧾 Ostatnie akcje (dla czytelności)
 
+- 2026-02-13 07:25:55 | AUTO_TRANSLATE:parallel_start | es | ok | quests.json
+- 2026-02-13 07:25:29 | AUTO_TRANSLATE:auto_done | pl | ok | scripts.json
+- 2026-02-13 07:25:13 | AUTO_TRANSLATE:auto_start | pl | ok | scripts.json
 - 2026-02-13 06:56:55 | AUTO_TRANSLATE:auto_done | pl | ok | quests.json
 - 2026-02-13 06:56:45 | AUTO_TRANSLATE:auto_start | pl | ok | quests.json
 - 2026-02-13 06:50:19 | AUTO_TRANSLATE:auto_start | pl | ok | monsters.json
-- 2026-02-13 06:48:59 | AUTO_TRANSLATE:parallel_start | es | ok | npc.json
-- 2026-02-13 06:48:31 | AUTO_TRANSLATE:auto_done | pl | ok | items.json
-- 2026-02-13 06:48:20 | AUTO_TRANSLATE:auto_start | pl | ok | items.json
 
 ---
 
 ## 🔁 W tym cyklu
 
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+40, skipped+0) — lang=pl file=scripts.json strict_skipped_done=2130 guard_fail=5 placeholder=0 command=5 pipe=0
 - 🔧 MIGRATION: zakończono kategorię [spells] → ok (keys+0, files+0) — migration finished
 - 🔧 MIGRATION: mini-batch stop [spells] → ok (keys+0) — no new data
 - 🔧 MIGRATION: mini-batch [spells] → ok (keys+0) — mini_batch=1 processed=10/20
@@ -301,7 +320,6 @@
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+50, skipped+0) — lang=pl file=items.json strict_skipped_done=6094
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+18, skipped+0) — lang=pl file=cpp.json strict_skipped_done=859
 - 🔧 MIGRATION: zakończono kategorię [scripts] → ok (keys+0, files+0) — migration finished
-- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [es] → ok (translated+50, skipped+0) — parallel lang=es file=raids.json
 
 
 
@@ -311,7 +329,7 @@
 - Cykle: **395**
 - MIGRATION: **+320** kluczy, **0** plików `.lua`
 - Kategorie dotknięte: actions, creaturescripts, items, quests, scripts, spells, talkactions
-- Błędy: **603**
+- Błędy: **605**
 
 
 ---
@@ -622,7 +640,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2026-02-13 07:23:33  
+📅 Auto-updated by Worker v1.1 | Last: 2026-02-13 07:26:01  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

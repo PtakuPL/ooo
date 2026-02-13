@@ -2,9 +2,9 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 6000, 'npc': 15000, 'player': 200, 'quests': 700, 'scripts': 2500, 'server': 3000, 'spells': 2000, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 900, 'html': 1500, 'client': 300, 'otclient_modules': 2000, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50, 'achievements': 1048, 'actions': 100, 'books': 1403, 'chatchannels': 100, 'creaturescripts': 100, 'dataroot': 100, 'errors': 100, 'events': 100, 'example_merchant': 100, 'globalevents': 100, 'libs': 100, 'messages': 100, 'modules': 100, 'mounts': 100, 'movements': 100, 'npclib': 147, 'questlog': 1918, 'raids': 273, 'startup': 100, 'talkactions': 199, 'world': 100} -->
 
-> **Aktualizacja:** 2026-02-13 11:33:48 UTC  
+> **Aktualizacja:** 2026-02-13 11:35:55 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 53586  
-> **LIVE:** Cykl #454 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: mini_batch | Kategoria: spells | Plik: - | ETA: 0 | Heartbeat: 2026-02-13T11:30:35Z
+> **LIVE:** Cykl #460 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: mini_batch | Kategoria: chatchannels | Plik: - | ETA: 0 | Heartbeat: 2026-02-13T11:35:55Z
 
 ---
 
@@ -178,15 +178,15 @@ Dest (otclient_modules.boss_slots.tr_3)
 - **Osobny raport:** `i18n/status/translation_global_overview.json`
 
 ### 🔬 Jakość tłumaczeń
-- **Ostatni audyt:** SLOW_MODE | 30 issue(s) / 100 entries | 2026-02-13T10:53:28.672779Z
+- **Ostatni audyt:** SLOW_MODE | 30 issue(s) / 100 entries | 2026-02-13T11:34:45.160256Z
 - **Top 5 typów problemów:** suspicious_log_medium=170, identical_to_en=30, suspicious_log_low=27, suspicious_log_high=3
-- **Języki o najsłabszej jakości:** es(60.1, issues=61126), pl(60.1, issues=55687), de(71.4, issues=3460), zh_TW(82.9, issues=0), az(83.1, issues=1126)
+- **Języki o najsłabszej jakości:** es(60.1, issues=61256), pl(60.1, issues=55787), de(71.4, issues=3460), zh_TW(82.9, issues=0), az(83.1, issues=1126)
 - **Pliki:** `i18n/status/quality_audit_latest.json`, `i18n/status/quality_dashboard.json`, `i18n/status/quality_report.jsonl`
 
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#454** | od uruchomienia |
+| 🔄 Cykl aktualny | **#460** | od uruchomienia |
 | 🔑 Kluczy wyekstrahowanych | **6,248** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
@@ -219,7 +219,7 @@ Dest (otclient_modules.boss_slots.tr_3)
 ## ✅ CHECKLIST - Plan Pracy
 
 > **Aktualna faza:** MIGRATION  
-> **Aktualna kategoria:** spells
+> **Aktualna kategoria:** chatchannels
 
 
 ### 🔄 Faza 1: 🎮 Canary Server
@@ -288,18 +288,18 @@ Dest (otclient_modules.boss_slots.tr_3)
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #   454 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #   460 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      🔧 MIGRATION (mini_batch)                 │
-│ Kategoria: 📁 SPELLS                                 │
+│ Kategoria: 📁 CHATCHANNELS                           │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status: running                                               │
 │ Plik: -                                                       │
 │ Postęp: 0/5 items                                             │
 │ Info: batch 1 size=5                                          │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2026-02-13T11:30:35Z           │
+│ ❤️ Heartbeat: 2026-02-13T11:35:55Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -316,9 +316,9 @@ Dest (otclient_modules.boss_slots.tr_3)
 
 ## 🔁 W tym cyklu
 
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [cs] → ok (files+1, translated+0, skipped+23) — lang=cs file=startup.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pt] → ok (files+1, translated+0, skipped+2) — lang=pt file=creaturescripts.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [sv] → ok (files+1, translated+0, skipped+1987) — lang=sv file=otclient_modules.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [sk] → ok (files+1, translated+0, skipped+13749) — lang=sk file=items.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pt] → ok (files+1, translated+0, skipped+132) — lang=pt file=monsters.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [sv] → ok (files+1, translated+0, skipped+23) — lang=sv file=startup.json
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [de] → ok (files+1, translated+0, skipped+21) — lang=de file=actions.json
 
 
@@ -326,7 +326,7 @@ Dest (otclient_modules.boss_slots.tr_3)
 
 ## 📅 Dziś (UTC)
 
-- Cykle: **395**
+- Cykle: **401**
 - MIGRATION: **+330** kluczy, **0** plików `.lua`
 - Kategorie dotknięte: actions, chatchannels, cpp, creaturescripts, dataroot, errors, events, items, libs, mounts...
 - Błędy: **607**
@@ -343,7 +343,7 @@ Dest (otclient_modules.boss_slots.tr_3)
 | ⬜ Plików bez kluczy | **402** | czyste (brak hardcoded) |
 | 🔑 Kluczy wyciągniętych | **6248** | przez workera w tej sesji |
 | 🌍 Języków | **53** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#454** | continuous mode |
+| 🔄 Cykli wykonanych | **#460** | continuous mode |
 
 ---
 
@@ -553,7 +553,7 @@ Dest (otclient_modules.boss_slots.tr_3)
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #454 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #460 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -640,23 +640,23 @@ Dest (otclient_modules.boss_slots.tr_3)
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2026-02-13 11:33:48  
+📅 Auto-updated by Worker v1.1 | Last: 2026-02-13 11:35:55  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
 
 ## Ostatnio zmigrowane NPC
 
-- ✅ `account_repository_db.hpp` - ukończono 2026-02-13 10:31
-- ✅ `account.hpp` - ukończono 2026-02-13 10:31
-- ✅ `pch.cpp` - ukończono 2026-02-13 10:31
-- ✅ `game_definitions.hpp` - ukończono 2026-02-13 10:31
-- ✅ `zone.hpp` - ukończono 2026-02-13 10:31
-- ✅ `npc_handler` - ukończono 2026-02-13 10:31
-- ✅ `modules` - ukończono 2026-02-13 10:31
-- ✅ `bank_system` - ukończono 2026-02-13 10:31
-- ✅ `keyword_handler` - ukończono 2026-02-13 10:31
-- ✅ `custom_modules` - ukończono 2026-02-13 10:31
+- ✅ `creature` - ukończono 2026-02-13 12:35
+- ✅ `player` - ukończono 2026-02-13 12:35
+- ✅ `monster` - ukończono 2026-02-13 12:35
+- ✅ `party` - ukończono 2026-02-13 12:35
+- ✅ `lib` - ukończono 2026-02-13 12:35
+- ✅ `load` - ukończono 2026-02-13 12:35
+- ✅ `storages` - ukończono 2026-02-13 12:35
+- ✅ `quests` - ukończono 2026-02-13 12:35
+- ✅ `lib` - ukończono 2026-02-13 12:35
+- ✅ `load` - ukończono 2026-02-13 12:35
 
 ---
 

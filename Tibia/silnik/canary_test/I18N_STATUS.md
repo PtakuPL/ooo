@@ -2,9 +2,9 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 6000, 'npc': 15000, 'player': 200, 'quests': 700, 'scripts': 2500, 'server': 3000, 'spells': 2000, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 900, 'html': 1500, 'client': 300, 'otclient_modules': 2000, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50, 'achievements': 1048, 'actions': 100, 'books': 1403, 'chatchannels': 100, 'creaturescripts': 100, 'dataroot': 100, 'errors': 100, 'events': 100, 'example_merchant': 100, 'globalevents': 100, 'libs': 100, 'messages': 100, 'modules': 100, 'mounts': 100, 'movements': 100, 'npclib': 147, 'questlog': 1918, 'raids': 273, 'startup': 100, 'talkactions': 199, 'world': 100} -->
 
-> **Aktualizacja:** 2026-02-13 20:41:21 UTC  
+> **Aktualizacja:** 2026-02-13 20:43:27 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 53586  
-> **LIVE:** Cykl #77 | Status: 🟢 RUNNING | Faza: AUTO_TRANSLATE | Etap: dispatch | Kategoria: es | Plik: - | ETA: 0 | Heartbeat: 2026-02-13T20:41:21Z
+> **LIVE:** Cykl #78 | Status: 🟢 RUNNING | Faza: AUTO_TRANSLATE | Etap: parallel_start | Kategoria: es | Plik: npc.json | ETA: 0 | Heartbeat: 2026-02-13T20:42:34Z
 
 ---
 
@@ -106,7 +106,7 @@
 ### 🎯 Pokrycie tłumaczeń per język (EN → LANG)
 | Język | Przetłumaczone | % poprawnie przetłumaczonych | EN-copy | Braki kluczy |
 |-------|----------------|-------------------------------|---------|--------------|
-| PL (Polski) | 37,505/53,586 | 69.99% | 2,997 | 2,083 |
+| PL (Polski) | 37,620/53,586 | 70.20% | 2,962 | 2,083 |
 | ES (Hiszpański) | 35,624/53,586 | 66.48% | 16,932 | 232 |
 | AR (Arabski) | 11,447/53,586 | 21.36% | 30,982 | 2,150 |
 | ID (ID) | 11,301/53,586 | 21.09% | 29,171 | 2,155 |
@@ -129,37 +129,56 @@
 
 ### 🧭 Aktywny folder tłumaczeń
 - **Folder:** ES - Hiszpański - Serwer
-- **Plik JSON:** chatchannels.json
-- **Ostatnie klucze (10-20):** 1
+- **Plik JSON:** startup.json
+- **Ostatnie klucze (10-20):** 20
 
 ### 📝 Ostatnie 10-20 przetłumaczonych kluczy
-- data-otservbr-global/npc/example_merchant_i18n.lua → data-otservbr-global/npc/example_merchant_i18n.lua (_file)
+- I am the captain of the 'Sea Goddess', the splendid and beautiful ship you see o → Jestem kapitanem 'Sea Goddess', wspaniałego i pięknego statku, który tam widzisz (npc.captain_gulliver.stdmod_5)
+- I am the captain of the 'Sea Goddess', the splendid and beautiful ship you see o → Jestem kapitanem 'Sea Goddess', wspaniałego i pięknego statku, który tam widzisz (npc.captain_gulliver.stdmod_6)
+- The 'Sea Goddess' is the most beautiful in Oramond, a whole new model of ship, e → 'Sea Goddess' jest najpiękniejszy w Oramond, zupełnie nowy model statku, eleganc (npc.captain_gulliver.stdmod_7)
+- Excellent, that should be enough fish to make the bait. Tell me when ya're ready → Świetnie. To powinno wystarczyć na przynętę. Powiedz mi, kiedy będziesz gotowy n (npc.captain_haba.say_10)
+- Let's go fo' a {hunt} and bring the beast down! → Chodźmy na {hunt} i powalmy bestię! (npc.captain_haba.say_6)
+- Dis is no passenger ship it's a WARship. I'm on hunting business. → Dis nie jest statkiem pasażerskim, to okręt wojenny. I'm on hunting business. (npc.captain_haba.stdmod_10)
+- Never heard of him. He is no captain that's for sure, otherwise I'd know him. I  → Nigdy o nim nie słyszałem. Na pewno nie jest kapitanem, w przeciwnym razie pozna (npc.captain_haba.stdmod_11)
+- Yee, I've been chasing that monster for over 20 years now. I promise I'll bring  → Tak, ścigam tego potwora od ponad 20 lat. Obiecuję, że to obniżę! (npc.captain_haba.stdmod_12)
+- I'm faithful - I'll catch that monster one day. Yes I will, as sure as my name i → Jestem wierny – pewnego dnia złapię tego potwora. Tak, tak, jestem pewien, że na (npc.captain_haba.stdmod_17)
+- I know Marvik in Thais. He once helped me with a furuncle I had on my ...ahh, do → Znam Marvika w Thais. Kiedyś pomógł mi z czyrakiem, który miałam na... ach, to n (npc.captain_haba.stdmod_23)
+- My worst enemy is a huge sea serpent. I dunno when I started to follow it's trai → Moim najgorszym wrogiem jest ogromny wąż morski. Nie wiem, kiedy zacząłem podąża (npc.captain_haba.stdmod_24)
+- I ain't no pirate. Don't let yourself mislead by my pirate hat. I got it from a  → Nie jestem piratem. Nie daj się zwieść mojemu pirackemu kapeluszowi. Dostałem to (npc.captain_haba.stdmod_6)
+- Most o' my friends are dead the others don't like me anymore......well, seems th → Większość moich przyjaciół nie żyje, inni już mnie nie lubią... cóż, wygląda na  (npc.captain_haba.stdmod_7)
+- A'right, first of all you need a bait which isn't for free, though. I sell them  → Jasne, przede wszystkim potrzebujesz przynęty, która nie jest jednak darmowa. Sp (npc.captain_haba_open_sea.multi_3)
+- Already got enough, huh? I kind o' expected that, landlubber! Let's head for Sva → Masz już dość, co? W pewnym sensie się tego spodziewałem, szczur lądowy! Jedźmy  (npc.captain_haba_open_sea.say_4)
+- Y' already wanna give up?? I should've known. I bring ya back to Svargrond, 'kay → Już chcesz się poddać? Powinienem był wiedzieć. Zabiorę cię z powrotem do Svargr (npc.captain_haba_open_sea.say_5)
+- I'd go by myself and tear that beast's heart out if I were younger. I hope ya ca → Gdybym był młodszy, poszedłbym sam i wyrwał serce tej bestii. Mam nadzieję, że m (npc.captain_haba_open_sea.stdmod_1)
+- Ya're a coward, aren't ya? Prove that I'm wrong and get your lazy bones up to th → Jesteś tchórzem, prawda? Udowodnij, że się mylę i wyprowadź swoje leniwe kości n (npc.captain_haba_open_sea.stdmod_2)
+- I'm sorry but we don't serve this route. → Przykro mi, ale nie obsługujemy tej trasy. (npc.captain_max.stdmod_2)
+- I'm sorry but we don't serve this route. → Przykro mi, ale nie obsługujemy tej trasy. (npc.captain_max.stdmod_3)
 
 ### 🚫 Raporty "nie mogę przetłumaczyć"
-- Guard reports: **1299**  
+- Guard reports: **1302**  
 - Blocker reports: **0**  
-- Widoczne raporty 'nie mogę tłumaczyć': **1249**
+- Widoczne raporty 'nie mogę tłumaczyć': **1252**
 
 ### 🌐 Globalne info wszystkich języków
-- **Global completion:** **19.66%** (547,841/2,786,472)
-- **EN-copy łącznie:** **1,335,924**
+- **Global completion:** **19.66%** (547,956/2,786,472)
+- **EN-copy łącznie:** **1,335,889**
 - **Braki kluczy łącznie:** **110,060**
 - **Brakujące pliki językowe:** **0**
 - **Cache STATUSPY (per-lang):** **mixed** | hit **50**, miss **2**, hit-rate **96.2%**
-- **Cache STATUSPY (per-file):** hit **1974**, miss **2**, hit-rate **99.9%**
+- **Cache STATUSPY (per-file):** hit **1973**, miss **3**, hit-rate **99.8%**
 - **Profiler cyklu (ostatni):** -
 - **Osobny raport:** `i18n/status/translation_global_overview.json`
 
 ### 🔬 Jakość tłumaczeń
-- **Ostatni audyt:** SLOW_MODE | 96 issue(s) / 100 entries | 2026-02-13T20:41:15.676534Z
-- **Top 5 typów problemów:** suspicious_log_medium=132, identical_to_en=96, suspicious_log_low=68
-- **Języki o najsłabszej jakości:** es(60.1, issues=79099), pl(60.1, issues=64712), de(71.4, issues=3460), zh_TW(82.9, issues=0), az(83.1, issues=1126)
+- **Ostatni audyt:** SLOW_MODE | 75 issue(s) / 100 entries | 2026-02-13T20:41:50.989848Z
+- **Top 5 typów problemów:** suspicious_log_medium=132, identical_to_en=75, suspicious_log_low=68
+- **Języki o najsłabszej jakości:** es(60.1, issues=79305), pl(60.2, issues=64781), de(71.4, issues=3460), zh_TW(82.9, issues=0), az(83.1, issues=1126)
 - **Pliki:** `i18n/status/quality_audit_latest.json`, `i18n/status/quality_dashboard.json`, `i18n/status/quality_report.jsonl`
 
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#77** | od uruchomienia |
+| 🔄 Cykl aktualny | **#78** | od uruchomienia |
 | 🔑 Kluczy wyekstrahowanych | **6,248** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
@@ -261,44 +280,44 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #    77 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #    78 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
-│ Tryb:      🤖 AUTO_TRANSLATE (dispatch)              │
+│ Tryb:      🤖 AUTO_TRANSLATE (parallel_start)        │
 │ Kategoria: 📁 ES                                     │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status: running                                               │
-│ Plik: -                                                       │
-│ Postęp: 0/0 items                                             │
-│ Info: selected                                                │
+│ Plik: npc.json                                                │
+│ Postęp: 0/0 keys                                              │
+│ Info: parallel auto translate                                 │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2026-02-13T20:41:21Z           │
+│ ❤️ Heartbeat: 2026-02-13T20:42:34Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 🧾 Ostatnie akcje (dla czytelności)
 
-- 2026-02-13 20:41:12 | AUTO_TRANSLATE:parallel_start | pl | ok | example_merchant.json
-- 2026-02-13 20:41:12 | AUTO_TRANSLATE:auto_done | es | ok | chatchannels.json
-- 2026-02-13 20:41:09 | AUTO_TRANSLATE:auto_start | es | ok | chatchannels.json
-- 2026-02-13 20:40:57 | AUTO_TRANSLATE:parallel_start | es | ok | cpp.json
-- 2026-02-13 20:40:57 | AUTO_TRANSLATE:auto_done | pl | ok | otclient_data.json
-- 2026-02-13 20:40:54 | AUTO_TRANSLATE:auto_start | pl | ok | otclient_data.json
+- 2026-02-13 20:42:34 | AUTO_TRANSLATE:parallel_start | es | ok | npc.json
+- 2026-02-13 20:42:33 | AUTO_TRANSLATE:auto_done | pl | ok | npc.json
+- 2026-02-13 20:41:57 | AUTO_TRANSLATE:auto_start | pl | ok | npc.json
+- 2026-02-13 20:41:27 | AUTO_TRANSLATE:parallel_start | pl | ok | items.json
+- 2026-02-13 20:41:26 | AUTO_TRANSLATE:auto_done | es | ok | startup.json
+- 2026-02-13 20:41:21 | AUTO_TRANSLATE:auto_start | es | ok | startup.json
 
 ---
 
 ## 🔁 W tym cyklu
 
-- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [es] → ok (translated+5, skipped+0) — parallel lang=es file=books.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+5, skipped+0) — lang=pl file=php.json strict_skipped_done=35
-- 🔧 MIGRATION: zakończono kategorię [modules] → ok (keys+0, files+0) — migration finished
-- 🔧 MIGRATION: mini-batch stop [modules] → ok (keys+0) — no new data
-- 🔧 MIGRATION: mini-batch [modules] → ok (keys+0) — mini_batch=1 processed=10/20
-- 🔧 MIGRATION: zakończono kategorię [movements] → ok (keys+0, files+0) — migration finished
-- 🔧 MIGRATION: mini-batch stop [movements] → ok (keys+0) — no new data
-- 🔧 MIGRATION: mini-batch [movements] → ok (keys+0) — mini_batch=1 processed=10/50
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [it] → ok (files+1, translated+0, skipped+634) — lang=it file=scripts.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → ok (files+1, translated+0, skipped+7) — lang=pl file=chatchannels.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+77, skipped+0) — lang=pl file=npc.json strict_skipped_done=13265 guard_fail=3 placeholder=0 command=0 pipe=0
+- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [es] → ok (translated+6, skipped+0) — parallel lang=es file=php.json
+- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [es] → ok (translated+6, skipped+0) — parallel lang=es file=client.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+6, skipped+0) — lang=pl file=modules.json strict_skipped_done=10
+- 🔧 MIGRATION: zakończono kategorię [npclib] → ok (keys+0, files+0) — migration finished
+- 🔧 MIGRATION: mini-batch stop [npclib] → ok (keys+0) — no new data
+- 🔧 MIGRATION: mini-batch [npclib] → ok (keys+0) — mini_batch=1 processed=10/20
+- 🔧 MIGRATION: zakończono kategorię [creaturescripts] → ok (keys+0, files+0) — migration finished
+- 🔧 MIGRATION: mini-batch stop [creaturescripts] → ok (keys+0) — no new data
+- 🔧 MIGRATION: mini-batch [creaturescripts] → ok (keys+0) — mini_batch=1 processed=10/50
 
 
 
@@ -308,7 +327,7 @@
 - Cykle: **471**
 - MIGRATION: **+330** kluczy, **0** plików `.lua`
 - Kategorie dotknięte: actions, chatchannels, cpp, creaturescripts, dataroot, errors, events, items, libs, mounts...
-- Błędy: **731**
+- Błędy: **735**
 
 
 ---
@@ -322,7 +341,7 @@
 | ⬜ Plików bez kluczy | **402** | czyste (brak hardcoded) |
 | 🔑 Kluczy wyciągniętych | **6248** | przez workera w tej sesji |
 | 🌍 Języków | **53** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#77** | continuous mode |
+| 🔄 Cykli wykonanych | **#78** | continuous mode |
 
 ---
 
@@ -532,7 +551,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #77 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #78 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -619,7 +638,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2026-02-13 20:41:21  
+📅 Auto-updated by Worker v1.1 | Last: 2026-02-13 20:43:27  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

@@ -2,9 +2,9 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 6000, 'npc': 15000, 'player': 200, 'quests': 700, 'scripts': 2500, 'server': 3000, 'spells': 2000, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 900, 'html': 1500, 'client': 300, 'otclient_modules': 2000, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50, 'achievements': 1048, 'actions': 100, 'books': 1403, 'chatchannels': 100, 'creaturescripts': 100, 'dataroot': 100, 'errors': 100, 'events': 100, 'example_merchant': 100, 'globalevents': 100, 'libs': 100, 'messages': 100, 'modules': 100, 'mounts': 100, 'movements': 100, 'npclib': 147, 'questlog': 1918, 'raids': 273, 'startup': 100, 'talkactions': 199, 'world': 100} -->
 
-> **Aktualizacja:** 2026-02-13 21:04:52 UTC  
+> **Aktualizacja:** 2026-02-13 21:07:01 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 53586  
-> **LIVE:** Cykl #13 | Status: 🟢 RUNNING | Faza: AUTO_TRANSLATE | Etap: parallel_start | Kategoria: es | Plik: monsters.json | ETA: 0 | Heartbeat: 2026-02-13T21:04:12Z
+> **LIVE:** Cykl #17 | Status: 🟢 RUNNING | Faza: AUTO_TRANSLATE | Etap: parallel_start | Kategoria: es | Plik: otclient_modules.json | ETA: 0 | Heartbeat: 2026-02-13T21:06:54Z
 
 ---
 
@@ -106,8 +106,8 @@
 ### 🎯 Pokrycie tłumaczeń per język (EN → LANG)
 | Język | Przetłumaczone | % poprawnie przetłumaczonych | EN-copy | Braki kluczy |
 |-------|----------------|-------------------------------|---------|--------------|
-| PL (Polski) | 38,161/53,586 | 71.21% | 2,975 | 2,083 |
-| ES (Hiszpański) | 36,123/53,586 | 67.41% | 16,699 | 232 |
+| PL (Polski) | 38,211/53,586 | 71.31% | 2,979 | 2,083 |
+| ES (Hiszpański) | 36,180/53,586 | 67.52% | 16,642 | 232 |
 | AR (Arabski) | 11,447/53,586 | 21.36% | 30,982 | 2,150 |
 | ID (ID) | 11,301/53,586 | 21.09% | 29,171 | 2,155 |
 | VI (VI) | 11,294/53,586 | 21.08% | 29,170 | 2,155 |
@@ -128,57 +128,57 @@
 | TL (TL) | 11,292/53,586 | 21.07% | 29,173 | 2,155 |
 
 ### 🧭 Aktywny folder tłumaczeń
-- **Folder:** PL - Polski - Serwer
-- **Plik JSON:** npc.json
+- **Folder:** PL - Polski - Klient
+- **Plik JSON:** html.json
 - **Ostatnie klucze (10-20):** 20
 
 ### 📝 Ostatnie 10-20 przetłumaczonych kluczy
-- a sin devourer → pożeracz grzechów (monster.sin_devourer.desc)
-- Ascending Ferumbras → Rosnąco Ferumbras (monster.ascending_ferumbras.name)
-- Ascending Ferumbras → Rosnąco Ferumbras (monster.ascending_ferumbras.desc)
-- The Shatterer → Rozbijacz (monster.the_shatterer.name)
-- The Shatterer → Rozbijacz (monster.the_shatterer.desc)
-- Ferumbras Mortal Shell → Ferumbras Śmiertelna Skorupa (monster.ferumbras_mortal_shell.name)
-- Ferumbras Mortal Shell → Ferumbras Śmiertelna Skorupa (monster.ferumbras_mortal_shell.desc)
-- Zamulosh → Zamułosz (monster.zamulosh3.name)
-- Zamulosh → Zamułosz (monster.zamulosh3.desc)
-- Zamulosh → Zamułosz (monster.zamulosh2.name)
-- zamulosh → zamulosz (monster.zamulosh2.desc)
-- Destabilized Ferumbras → Zdestabilizowany Ferumbras (monster.destabilized_ferumbras.name)
-- Destabilized Ferumbras → Zdestabilizowany Ferumbras (monster.destabilized_ferumbras.desc)
-- Plagirath → Plagirat (monster.plagirath.name)
-- Plagirath → Plagirat (monster.plagirath.desc)
-- a death dragon → smok śmierci (monster.death_dragon.desc)
-- Desperate Soul → Zdesperowana Dusza (monster.desperate_soul.name)
-- a desperate soul → zdesperowana dusza (monster.desperate_soul.desc)
-- Lovely Snake → Piękny Wąż (monster.lovely_snake.name)
-- a lovely snake → piękny wąż (monster.lovely_snake.desc)
+- Quick Loot Filter: → Szybki filtr łupów: (otclient_modules.quickloot_otui.tr_8)
+- Obtain → Uzyskać (otclient_modules.quickloot_otui.tr_9)
+- You must enter a comment. → Musisz wpisać komentarz. (otclient_modules.ruleviolation.tr_1)
+- Name Report + Banishment + Final Warning → Raport imienny + Wygnanie + Ostateczne ostrzeżenie (otclient_modules.ruleviolation.tr_10)
+- Banishment + Final Warning → Wygnanie + Ostateczne ostrzeżenie (otclient_modules.ruleviolation.tr_11)
+- Name Report + Banishment → Raport imienny + wygnanie (otclient_modules.ruleviolation.tr_12)
+- Name Report → Raport nazw (otclient_modules.ruleviolation.tr_14)
+- Notation → Notacja (otclient_modules.ruleviolation.tr_15)
+- Excessive Unjustified Player Killing → Nadmierne nieuzasadnione zabijanie graczy (otclient_modules.ruleviolation.tr_16)
+- Destructive Behaviour → Destrukcyjne zachowanie (otclient_modules.ruleviolation.tr_17)
+- 4c) False Report to Gamemaster → 4c) Fałszywe zgłoszenie Mistrzowi Gry (otclient_modules.ruleviolation.tr_18)
+- 4b) Pretending to Have Influence on Rule Enforcement → 4b) Udawanie, że ma się wpływ na egzekwowanie przepisów (otclient_modules.ruleviolation.tr_19)
+- 4a) Threatening Gamemaster → 4a) Grożenie Mistrzowi Gry (otclient_modules.ruleviolation.tr_20)
+- 3f) Account Trading or Sharing → 3f) Handel kontem lub udostępnianie (otclient_modules.ruleviolation.tr_21)
+- 3e) Multi-Clienting → 3e) Wielu klientów (otclient_modules.ruleviolation.tr_22)
+- 3d) Hacking → 3d) Hakowanie (otclient_modules.ruleviolation.tr_23)
+- 3c) Using Unofficial Software to Play → 3c) Używanie nieoficjalnego oprogramowania do grania (otclient_modules.ruleviolation.tr_24)
+- 3b) Game Weakness Abuse → 3b) Nadużycie słabości gry (otclient_modules.ruleviolation.tr_25)
+- 3a) Bug Abuse → 3a) Nadużycie błędów (otclient_modules.ruleviolation.tr_26)
+- 2f) Inciting Rule Violation → 2f) Nawoływanie do naruszenia zasad (otclient_modules.ruleviolation.tr_27)
 
 ### 🚫 Raporty "nie mogę przetłumaczyć"
-- Guard reports: **1366**  
+- Guard reports: **1374**  
 - Blocker reports: **0**  
-- Widoczne raporty 'nie mogę tłumaczyć': **1316**
+- Widoczne raporty 'nie mogę tłumaczyć': **1324**
 
 ### 🌐 Globalne info wszystkich języków
-- **Global completion:** **19.7%** (548,996/2,786,472)
-- **EN-copy łącznie:** **1,335,669**
+- **Global completion:** **19.71%** (549,103/2,786,472)
+- **EN-copy łącznie:** **1,335,616**
 - **Braki kluczy łącznie:** **110,060**
 - **Brakujące pliki językowe:** **0**
 - **Cache STATUSPY (per-lang):** **mixed** | hit **50**, miss **2**, hit-rate **96.2%**
-- **Cache STATUSPY (per-file):** hit **1974**, miss **2**, hit-rate **99.9%**
+- **Cache STATUSPY (per-file):** hit **1969**, miss **7**, hit-rate **99.6%**
 - **Profiler cyklu (ostatni):** -
 - **Osobny raport:** `i18n/status/translation_global_overview.json`
 
 ### 🔬 Jakość tłumaczeń
-- **Ostatni audyt:** SLOW_MODE | 34 issue(s) / 100 entries | 2026-02-13T21:03:01.846801Z
-- **Top 5 typów problemów:** suspicious_log_medium=175, identical_to_en=34, suspicious_log_low=18, suspicious_log_high=7
-- **Języki o najsłabszej jakości:** es(60.2, issues=85846), pl(60.2, issues=67782), de(71.4, issues=3460), zh_TW(82.9, issues=0), az(83.1, issues=1126)
+- **Ostatni audyt:** SLOW_MODE | 78 issue(s) / 100 entries | 2026-02-13T21:05:58.388935Z
+- **Top 5 typów problemów:** suspicious_log_medium=164, identical_to_en=78, suspicious_log_low=24, suspicious_log_high=12
+- **Języki o najsłabszej jakości:** es(60.2, issues=86306), pl(60.2, issues=68271), de(71.4, issues=3460), zh_TW(82.9, issues=0), az(83.1, issues=1126)
 - **Pliki:** `i18n/status/quality_audit_latest.json`, `i18n/status/quality_dashboard.json`, `i18n/status/quality_report.jsonl`
 
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#13** | od uruchomienia |
+| 🔄 Cykl aktualny | **#17** | od uruchomienia |
 | 🔑 Kluczy wyekstrahowanych | **6,248** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
@@ -280,44 +280,44 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #    13 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #    17 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      🤖 AUTO_TRANSLATE (parallel_start)        │
 │ Kategoria: 📁 ES                                     │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status: running                                               │
-│ Plik: monsters.json                                           │
+│ Plik: otclient_modules.json                                   │
 │ Postęp: 0/0 keys                                              │
 │ Info: parallel auto translate                                 │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2026-02-13T21:04:12Z           │
+│ ❤️ Heartbeat: 2026-02-13T21:06:54Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 🧾 Ostatnie akcje (dla czytelności)
 
-- 2026-02-13 21:04:12 | AUTO_TRANSLATE:parallel_start | es | ok | monsters.json
-- 2026-02-13 21:04:11 | AUTO_TRANSLATE:auto_done | pl | ok | monsters.json
-- 2026-02-13 21:03:08 | AUTO_TRANSLATE:auto_start | pl | ok | monsters.json
-- 2026-02-13 21:01:34 | AUTO_TRANSLATE:parallel_start | es | ok | npc.json
-- 2026-02-13 21:01:33 | AUTO_TRANSLATE:auto_done | pl | ok | npc.json
-- 2026-02-13 21:00:53 | AUTO_TRANSLATE:auto_start | pl | ok | npc.json
+- 2026-02-13 21:06:54 | AUTO_TRANSLATE:parallel_start | es | ok | otclient_modules.json
+- 2026-02-13 21:06:54 | AUTO_TRANSLATE:auto_done | pl | ok | otclient_modules.json
+- 2026-02-13 21:06:05 | AUTO_TRANSLATE:auto_start | pl | ok | otclient_modules.json
+- 2026-02-13 21:05:54 | AUTO_TRANSLATE:parallel_start | es | ok | scripts.json
+- 2026-02-13 21:05:53 | AUTO_TRANSLATE:auto_done | pl | ok | html.json
+- 2026-02-13 21:05:42 | AUTO_TRANSLATE:auto_start | pl | ok | html.json
 
 ---
 
 ## 🔁 W tym cyklu
 
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+79, skipped+0) — lang=pl file=monsters.json strict_skipped_done=3851 guard_fail=1 placeholder=0 command=0 pipe=0
-- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [es] → ok (translated+80, skipped+0) — parallel lang=es file=server.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+5, skipped+0) — lang=pl file=quests.json strict_skipped_done=605 guard_fail=3 placeholder=0 command=0 pipe=0
-- 🔧 MIGRATION: zakończono kategorię [otclient_modules] → ok (keys+0, files+0) — migration finished
-- 🔧 MIGRATION: mini-batch stop [otclient_modules] → ok (keys+0) — no new data
-- 🔧 MIGRATION: mini-batch [otclient_modules] → ok (keys+0) — mini_batch=1 processed=5/5
-- 🔧 MIGRATION: zakończono kategorię [items] → ok (keys+20, files+0) — migration finished
-- 🔧 MIGRATION: mini-batch [items] → ok (keys+10) — mini_batch=2 processed=20/20
-- 🔧 MIGRATION: mini-batch [items] → ok (keys+10) — mini_batch=1 processed=10/20
-- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [es] → ok (translated+7, skipped+0) — parallel lang=es file=modules.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+59, skipped+0) — lang=pl file=otclient_modules.json strict_skipped_done=1787 guard_fail=15 placeholder=0 command=0 pipe=0
+- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [es] → ok (translated+80, skipped+0) — parallel lang=es file=monsters.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+80, skipped+0) — lang=pl file=monsters.json strict_skipped_done=3409
+- 🔧 MIGRATION: zakończono kategorię [server] → ok (keys+0, files+0) — migration finished
+- 🔧 MIGRATION: mini-batch stop [server] → ok (keys+0) — no new data
+- 🔧 MIGRATION: mini-batch [server] → ok (keys+0) — mini_batch=1 processed=5/5
+- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [es] → ok (translated+8, skipped+0) — parallel lang=es file=actions.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+8, skipped+0) — lang=pl file=raids.json strict_skipped_done=175
+- 🔧 MIGRATION: zakończono kategorię [otclient_data] → ok (keys+0, files+0) — migration finished
+- 🔧 MIGRATION: mini-batch stop [otclient_data] → ok (keys+0) — no new data
 
 
 
@@ -327,7 +327,7 @@
 - Cykle: **471**
 - MIGRATION: **+330** kluczy, **0** plików `.lua`
 - Kategorie dotknięte: actions, chatchannels, cpp, creaturescripts, dataroot, errors, events, items, libs, mounts...
-- Błędy: **785**
+- Błędy: **793**
 
 
 ---
@@ -341,7 +341,7 @@
 | ⬜ Plików bez kluczy | **402** | czyste (brak hardcoded) |
 | 🔑 Kluczy wyciągniętych | **6248** | przez workera w tej sesji |
 | 🌍 Języków | **53** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#13** | continuous mode |
+| 🔄 Cykli wykonanych | **#17** | continuous mode |
 
 ---
 
@@ -551,7 +551,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #13 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #17 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -638,7 +638,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2026-02-13 21:04:52  
+📅 Auto-updated by Worker v1.1 | Last: 2026-02-13 21:07:01  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

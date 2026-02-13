@@ -2,9 +2,9 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 6000, 'npc': 15000, 'player': 200, 'quests': 700, 'scripts': 2500, 'server': 3000, 'spells': 2000, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 900, 'html': 1500, 'client': 300, 'otclient_modules': 2000, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50, 'achievements': 1048, 'actions': 100, 'books': 1403, 'chatchannels': 100, 'creaturescripts': 100, 'dataroot': 100, 'errors': 100, 'events': 100, 'example_merchant': 100, 'globalevents': 100, 'libs': 100, 'messages': 100, 'modules': 100, 'mounts': 100, 'movements': 100, 'npclib': 147, 'questlog': 1918, 'raids': 273, 'startup': 100, 'talkactions': 199, 'world': 100} -->
 
-> **Aktualizacja:** 2026-02-13 19:57:49 UTC  
+> **Aktualizacja:** 2026-02-13 20:02:05 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 53586  
-> **LIVE:** Cykl #12 | Status: 🟢 RUNNING | Faza: AUTO_TRANSLATE | Etap: auto_start | Kategoria: pl | Plik: monsters.json | ETA: 0 | Heartbeat: 2026-02-13T19:57:01Z
+> **LIVE:** Cykl #17 | Status: 🟢 RUNNING | Faza: AUTO_TRANSLATE | Etap: auto_start | Kategoria: pl | Plik: monsters.json | ETA: 0 | Heartbeat: 2026-02-13T20:01:59Z
 
 ---
 
@@ -106,8 +106,8 @@
 ### 🎯 Pokrycie tłumaczeń per język (EN → LANG)
 | Język | Przetłumaczone | % poprawnie przetłumaczonych | EN-copy | Braki kluczy |
 |-------|----------------|-------------------------------|---------|--------------|
-| PL (Polski) | 36,511/53,586 | 68.14% | 2,887 | 2,083 |
-| ES (Hiszpański) | 34,272/53,586 | 63.96% | 17,723 | 232 |
+| PL (Polski) | 36,663/53,586 | 68.42% | 2,884 | 2,083 |
+| ES (Hiszpański) | 34,431/53,586 | 64.25% | 17,623 | 232 |
 | AR (Arabski) | 11,447/53,586 | 21.36% | 30,982 | 2,150 |
 | ID (ID) | 11,301/53,586 | 21.09% | 29,171 | 2,155 |
 | VI (VI) | 11,294/53,586 | 21.08% | 29,170 | 2,155 |
@@ -133,35 +133,35 @@
 - **Ostatnie klucze (10-20):** 20
 
 ### 📝 Ostatnie 10-20 przetłumaczonych kluczy
-- May the gods bless you, |PLAYERNAME|! → ¡Que los dioses te bendigan, |PLAYERNAME|! (npc.isimov.farewell_msg_1)
-- Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal → ¡Bienvenido, joven |PLAYERNAME|! Si estás gravemente herido o envenenado, puedo  (npc.isimov.greet_msg_1)
-- Besides my various {duties} in the temple, I also take care of visitors. Well, I → Además de mis diversos {duties} en el templo, también atiendo a los visitantes.  (npc.ivalisse.stdmod_5)
-- You don't have enough money. → No tienes suficiente dinero. (npc.iwar.say_3)
-- Set the sails! → ¡Prepara las velas! (npc.jack_fate_goroma.say_7)
-- I need your help in a matter of utmost {urgency}. → Necesito tu ayuda en un asunto de suma importancia {urgency}. (npc.jack_springer.stdmod_3)
-- Take this! → Take this! (npc.jean_claude.say_1)
-- Yes? What may I do for you, |PLAYERNAME|? Bank business, perhaps? → ¿Sí? ¿Qué puedo hacer por ti, |PLAYERNAME|? ¿Negocios bancarios, tal vez? (npc.jefrey.greet_msg_1)
-- Yes? What may I do for you, |PLAYERNAME|? Bank business, perhaps? → ¿Sí? ¿Qué puedo hacer por ti, |PLAYERNAME|? ¿Negocios bancarios, tal vez? (npc.jessica.greet_msg_1)
-- Sorry. → Lo siento. (npc.kallimae.say_3)
-- Sorry. → Lo siento. (npc.kallimae.say_6)
-- Sorry. → Lo siento. (npc.kallimae.say_9)
-- Well, bye then. → Well, bye then. (npc.kallimae.walkaway_msg_1)
-- Set the sails! → ¡Prepara las velas! (npc.karith.say_10)
-- You don't have enough money. → No tienes suficiente dinero. (npc.karith.say_11)
-- Set the sails! → ¡Prepara las velas! (npc.karith.say_12)
-- You don't have enough money. → No tienes suficiente dinero. (npc.karith.say_13)
-- Set the sails! → ¡Prepara las velas! (npc.karith.say_14)
-- You don't have enough money. → No tienes suficiente dinero. (npc.karith.say_15)
-- Set the sails! → ¡Prepara las velas! (npc.karith.say_16)
+- You don't have enough money. → No tienes suficiente dinero. (npc.palomino.say_4)
+- Have a nice trip! → Have a nice trip! (npc.palomino.say_5)
+- Then not. → Entonces no. (npc.palomino.say_9)
+- Yes? What may I do for you, |PLAYERNAME|? Bank business, perhaps? → ¿Sí? ¿Qué puedo hacer por ti, |PLAYERNAME|? ¿Negocios bancarios, tal vez? (npc.paulie.greet_msg_2)
+- Are you sure you wish to withdraw {} gold from your bank account? → ¿Está seguro de que desea retirar {} oro de su cuenta bancaria? (npc.paulie.say_11)
+- Are you sure you wish to withdraw {} gold from your bank account? → ¿Está seguro de que desea retirar {} oro de su cuenta bancaria? (npc.paulie.say_12)
+- Your account balance is {} gold. → El saldo de su cuenta es {} oro. (npc.paulie.say_5)
+- Would you really like to deposit {} gold? → ¿Realmente te gustaría depositar {} oro? (npc.paulie.say_6)
+- Would you really like to deposit {} gold? → ¿Realmente te gustaría depositar {} oro? (npc.paulie.say_7)
+- Would you really like to deposit {} gold? → ¿Realmente te gustaría depositar {} oro? (npc.paulie.say_8)
+- You don't have enough money. → No tienes suficiente dinero. (npc.perod.say_3)
+- Are you sure you wish to withdraw {} gold from your bank account? → ¿Está seguro de que desea retirar {} oro de su cuenta bancaria? (npc.plunderpurse.say_10)
+- Are you sure you wish to withdraw {} gold from your bank account? → ¿Está seguro de que desea retirar {} oro de su cuenta bancaria? (npc.plunderpurse.say_11)
+- Your account balance is {} gold. → El saldo de su cuenta es {} oro. (npc.plunderpurse.say_5)
+- Would you really like to deposit {} gold? → ¿Realmente te gustaría depositar {} oro? (npc.plunderpurse.say_6)
+- Would you really like to deposit {} gold? → ¿Realmente te gustaría depositar {} oro? (npc.plunderpurse.say_7)
+- Would you really like to deposit {} gold? → ¿Realmente te gustaría depositar {} oro? (npc.plunderpurse.say_8)
+- May the gods bless you, |PLAYERNAME|! → ¡Que los dioses te bendigan, |PLAYERNAME|! (npc.prezil.farewell_msg_1)
+- Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal → ¡Bienvenido, joven |PLAYERNAME|! Si estás gravemente herido o envenenado, puedo  (npc.prezil.greet_msg_1)
+- You don't have enough money. → No tienes suficiente dinero. (npc.pukosch.say_4)
 
 ### 🚫 Raporty "nie mogę przetłumaczyć"
-- Guard reports: **1174**  
+- Guard reports: **1183**  
 - Blocker reports: **0**  
-- Widoczne raporty 'nie mogę tłumaczyć': **1124**
+- Widoczne raporty 'nie mogę tłumaczyć': **1133**
 
 ### 🌐 Globalne info wszystkich języków
-- **Global completion:** **19.58%** (545,495/2,786,472)
-- **EN-copy łącznie:** **1,336,605**
+- **Global completion:** **19.59%** (545,806/2,786,472)
+- **EN-copy łącznie:** **1,336,502**
 - **Braki kluczy łącznie:** **110,060**
 - **Brakujące pliki językowe:** **0**
 - **Cache STATUSPY (per-lang):** **warm-cache** | hit **52**, miss **0**, hit-rate **100.0%**
@@ -170,15 +170,15 @@
 - **Osobny raport:** `i18n/status/translation_global_overview.json`
 
 ### 🔬 Jakość tłumaczeń
-- **Ostatni audyt:** SLOW_MODE | 39 issue(s) / 100 entries | 2026-02-13T19:56:47.605803Z
-- **Top 5 typów problemów:** suspicious_log_low=130, suspicious_log_medium=69, identical_to_en=39, suspicious_log_high=1
-- **Języki o najsłabszej jakości:** es(60.1, issues=66597), pl(60.1, issues=58660), de(71.4, issues=3460), zh_TW(82.9, issues=0), az(83.1, issues=1126)
+- **Ostatni audyt:** SLOW_MODE | 76 issue(s) / 100 entries | 2026-02-13T20:01:48.364429Z
+- **Top 5 typów problemów:** suspicious_log_medium=105, suspicious_log_low=88, identical_to_en=76, suspicious_log_high=7
+- **Języki o najsłabszej jakości:** es(60.1, issues=67268), pl(60.1, issues=59214), de(71.4, issues=3460), zh_TW(82.9, issues=0), az(83.1, issues=1126)
 - **Pliki:** `i18n/status/quality_audit_latest.json`, `i18n/status/quality_dashboard.json`, `i18n/status/quality_report.jsonl`
 
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#12** | od uruchomienia |
+| 🔄 Cykl aktualny | **#17** | od uruchomienia |
 | 🔑 Kluczy wyekstrahowanych | **6,248** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
@@ -280,7 +280,7 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #    12 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #    17 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      🤖 AUTO_TRANSLATE (auto_start)            │
@@ -291,33 +291,33 @@
 │ Postęp: 0/0 keys                                              │
 │ Info: auto translate                                          │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2026-02-13T19:57:01Z           │
+│ ❤️ Heartbeat: 2026-02-13T20:01:59Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 🧾 Ostatnie akcje (dla czytelności)
 
-- 2026-02-13 19:57:01 | AUTO_TRANSLATE:auto_start | pl | ok | monsters.json
-- 2026-02-13 19:56:40 | AUTO_TRANSLATE:parallel_start | es | ok | npc.json
-- 2026-02-13 19:56:39 | AUTO_TRANSLATE:auto_done | pl | ok | npc.json
-- 2026-02-13 19:55:25 | AUTO_TRANSLATE:auto_start | pl | ok | npc.json
-- 2026-02-13 19:55:10 | AUTO_TRANSLATE:parallel_start | pl | ok | items.json
-- 2026-02-13 19:55:09 | AUTO_TRANSLATE:auto_done | es | ok | startup.json
+- 2026-02-13 20:01:59 | AUTO_TRANSLATE:auto_start | pl | ok | monsters.json
+- 2026-02-13 20:01:39 | AUTO_TRANSLATE:parallel_start | es | ok | npc.json
+- 2026-02-13 20:01:39 | AUTO_TRANSLATE:auto_done | pl | ok | npc.json
+- 2026-02-13 20:00:06 | AUTO_TRANSLATE:auto_start | pl | ok | npc.json
+- 2026-02-13 19:59:57 | AUTO_TRANSLATE:auto_done | pl | ok | raids.json
+- 2026-02-13 19:59:43 | AUTO_TRANSLATE:auto_start | pl | ok | raids.json
 
 ---
 
 ## 🔁 W tym cyklu
 
-- 🔧 MIGRATION: zakończono kategorię [cpp] → ok (keys+0, files+0) — migration finished
-- 🔧 MIGRATION: mini-batch stop [cpp] → ok (keys+0) — no new data
-- 🔧 MIGRATION: mini-batch [cpp] → ok (keys+0) — mini_batch=1 processed=5/5
-- 🔧 MIGRATION: zakończono kategorię [items] → ok (keys+20, files+0) — migration finished
-- 🔧 MIGRATION: mini-batch [items] → ok (keys+10) — mini_batch=2 processed=20/20
-- 🔧 MIGRATION: mini-batch [items] → ok (keys+10) — mini_batch=1 processed=10/20
-- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [es] → ok (translated+6, skipped+0) — parallel lang=es file=talkactions.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+6, skipped+0) — lang=pl file=otclient_data.json strict_skipped_done=57
-- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [pt] → ok (translated+8, skipped+0) — parallel lang=pt file=items.json
-- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [de] → ok (translated+8, skipped+0) — parallel lang=de file=items.json
+- 🔧 MIGRATION: zakończono kategorię [server] → ok (keys+0, files+0) — migration finished
+- 🔧 MIGRATION: mini-batch stop [server] → ok (keys+0) — no new data
+- 🔧 MIGRATION: mini-batch [server] → ok (keys+0) — mini_batch=1 processed=5/5
+- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [es] → ok (translated+8, skipped+0) — parallel lang=es file=actions.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+8, skipped+0) — lang=pl file=raids.json strict_skipped_done=175
+- 🔧 MIGRATION: zakończono kategorię [otclient_data] → ok (keys+0, files+0) — migration finished
+- 🔧 MIGRATION: mini-batch stop [otclient_data] → ok (keys+0) — no new data
+- 🔧 MIGRATION: mini-batch [otclient_data] → ok (keys+0) — mini_batch=1 processed=10/20
+- 🔧 MIGRATION: zakończono kategorię [monsters] → ok (keys+112, files+10) — migration finished
+- 🔧 MIGRATION: mini-batch [monsters] → ok (keys+24) — mini_batch=5 processed=50/50
 
 
 
@@ -327,7 +327,7 @@
 - Cykle: **471**
 - MIGRATION: **+330** kluczy, **0** plików `.lua`
 - Kategorie dotknięte: actions, chatchannels, cpp, creaturescripts, dataroot, errors, events, items, libs, mounts...
-- Błędy: **640**
+- Błędy: **648**
 
 
 ---
@@ -341,7 +341,7 @@
 | ⬜ Plików bez kluczy | **402** | czyste (brak hardcoded) |
 | 🔑 Kluczy wyciągniętych | **6248** | przez workera w tej sesji |
 | 🌍 Języków | **53** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#12** | continuous mode |
+| 🔄 Cykli wykonanych | **#17** | continuous mode |
 
 ---
 
@@ -551,7 +551,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #12 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #17 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -638,7 +638,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2026-02-13 19:57:49  
+📅 Auto-updated by Worker v1.1 | Last: 2026-02-13 20:02:05  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

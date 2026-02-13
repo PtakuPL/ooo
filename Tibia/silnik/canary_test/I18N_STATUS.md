@@ -2,9 +2,9 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 6000, 'npc': 15000, 'player': 200, 'quests': 700, 'scripts': 2500, 'server': 3000, 'spells': 2000, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 900, 'html': 1500, 'client': 300, 'otclient_modules': 2000, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50, 'achievements': 1048, 'actions': 100, 'books': 1403, 'chatchannels': 100, 'creaturescripts': 100, 'dataroot': 100, 'errors': 100, 'events': 100, 'example_merchant': 100, 'globalevents': 100, 'libs': 100, 'messages': 100, 'modules': 100, 'mounts': 100, 'movements': 100, 'npclib': 147, 'questlog': 1918, 'raids': 273, 'startup': 100, 'talkactions': 199, 'world': 100} -->
 
-> **Aktualizacja:** 2026-02-13 20:45:34 UTC  
+> **Aktualizacja:** 2026-02-13 20:47:41 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 53586  
-> **LIVE:** Cykl #79 | Status: 🟢 RUNNING | Faza: AUTO_TRANSLATE | Etap: parallel_start | Kategoria: es | Plik: monsters.json | ETA: 0 | Heartbeat: 2026-02-13T20:44:52Z
+> **LIVE:** Cykl #83 | Status: 🟢 RUNNING | Faza: AUTO_TRANSLATE | Etap: auto_start | Kategoria: pl | Plik: otclient_modules.json | ETA: 0 | Heartbeat: 2026-02-13T20:47:11Z
 
 ---
 
@@ -106,8 +106,8 @@
 ### 🎯 Pokrycie tłumaczeń per język (EN → LANG)
 | Język | Przetłumaczone | % poprawnie przetłumaczonych | EN-copy | Braki kluczy |
 |-------|----------------|-------------------------------|---------|--------------|
-| PL (Polski) | 37,693/53,586 | 70.34% | 2,968 | 2,083 |
-| ES (Hiszpański) | 35,701/53,586 | 66.62% | 16,928 | 232 |
+| PL (Polski) | 37,722/53,586 | 70.40% | 2,972 | 2,083 |
+| ES (Hiszpański) | 35,771/53,586 | 66.75% | 16,858 | 232 |
 | AR (Arabski) | 11,447/53,586 | 21.36% | 30,982 | 2,150 |
 | ID (ID) | 11,301/53,586 | 21.09% | 29,171 | 2,155 |
 | VI (VI) | 11,294/53,586 | 21.08% | 29,170 | 2,155 |
@@ -128,57 +128,59 @@
 | TL (TL) | 11,292/53,586 | 21.07% | 29,173 | 2,155 |
 
 ### 🧭 Aktywny folder tłumaczeń
-- **Folder:** PL - Polski - Serwer
-- **Plik JSON:** npc.json
+- **Folder:** PL - Polski - Klient
+- **Plik JSON:** html.json
 - **Ostatnie klucze (10-20):** 20
 
 ### 📝 Ostatnie 10-20 przetłumaczonych kluczy
-- a disruption → zakłócenie (monster.disruption.desc)
-- Damage Resonance → Rezonans uszkodzeń (monster.damage_resonance.name)
-- Damage Resonance → Rezonans uszkodzeń (monster.damage_resonance.desc)
-- The Rage → Wściekłość (monster.the_rage.name)
-- The Rage → Wściekłość (monster.the_rage.desc)
-- Outburst → Wybuch (monster.outburst.name)
-- Outburst → Wybuch (monster.outburst.desc)
-- Spark of Destruction → Iskra Zniszczenia (monster.spark_of_destruction.name)
-- a spark of destruction → iskra zniszczenia (monster.spark_of_destruction.desc)
-- Overcharged Disruption → Przeciążone zakłócenia (monster.overcharged_disruption.name)
-- an overcharged disruption → nadmierne obciążenie (monster.overcharged_disruption.desc)
-- Foreshock → Przedwstrząs (monster.foreshock.name)
-- Foreshock → Przedwstrząs (monster.foreshock.desc)
-- Overcharge → Przeciążenie (monster.overcharge.name)
-- an overcharge → nadmierne obciążenie (monster.overcharge.desc)
-- Greed → Chciwość (monster.greed.name)
-- Greed → Chciwość (monster.greed.desc)
-- Aftershock → Wstrząs wtórny (monster.aftershock.name)
-- Aftershock → Wstrząs wtórny (monster.aftershock.desc)
-- Eradicator → Eliminator (monster.eradicator2.name)
+- {} {}. → {} {}. (scripts.find_person.result)
+- Mmmm. → Mmmm. (scripts.foods.sound_mmmm)
+- Blurg. → Blurg. (scripts.hireling_foods.sound_blurg)
+- Mmmmm. → Mmmmm. (scripts.hireling_foods.sound_mmmmm)
+- Waaaaaah → Waaaaaah (scripts.horestis_jars.fail_1)
+- Mmmm. → Mmmm. (scripts.lemon_cupcake.say_1)
+- <crrk> → <crrk> (scripts.lever.say_1)
+- <squeaak> → <squeaak> (scripts.lever.say_2)
+- Slurp! → Slurp! (scripts.movements_exit.say_1)
+- !-! -O- I_I (/( --I Morgathla → !-! -O- I_I (/( --I Morgathla (scripts.movements_mission4_parchment_decyphering.say_1)
+- rkawdmawfjawkjnfjkawnkjnawkdjawkfmalkwmflkmawkfnzxc → rkawdmawfjawkjnfjkawnkjnawkdjawkfmalkwmflkmawkfnzxc (scripts.movements_teleportto.say_1)
+- Plinngggg → Plinngggg (scripts.music_box.sound_ironblight)
+- ZzzZzzZzzzZz → ZzzZzzZzzzZz (scripts.music_box.sound_magma_crawler)
+- Purrrrrrr → Purrrrrrr (scripts.music_box.sound_midnight_panther)
+- Sssssssss → Sssssssss (scripts.music_box.sound_wailing_widow)
+- %s
+IP: %s → %s
+IP: %s (scripts.on_look.admin_ip)
+- [World Change] Yasir has arrived in %s today! → [Cambio mundial] ¡Yasir ha llegado a %s hoy! (scripts.oriental_trader.arrived_today)
+- Srrrt! → Srrrt! (scripts.rafzane_elevator.sound_1)
+- {} {} → {} {} (scripts.special_tiles.msg_1)
+- Mmmm. → Mmmm. (scripts.strawberry_cupcake.say_1)
 
 ### 🚫 Raporty "nie mogę przetłumaczyć"
-- Guard reports: **1304**  
+- Guard reports: **1311**  
 - Blocker reports: **0**  
-- Widoczne raporty 'nie mogę tłumaczyć': **1254**
+- Widoczne raporty 'nie mogę tłumaczyć': **1261**
 
 ### 🌐 Globalne info wszystkich języków
-- **Global completion:** **19.67%** (548,106/2,786,472)
-- **EN-copy łącznie:** **1,335,891**
+- **Global completion:** **19.67%** (548,205/2,786,472)
+- **EN-copy łącznie:** **1,335,825**
 - **Braki kluczy łącznie:** **110,060**
 - **Brakujące pliki językowe:** **0**
 - **Cache STATUSPY (per-lang):** **mixed** | hit **50**, miss **2**, hit-rate **96.2%**
-- **Cache STATUSPY (per-file):** hit **1974**, miss **2**, hit-rate **99.9%**
+- **Cache STATUSPY (per-file):** hit **1972**, miss **4**, hit-rate **99.8%**
 - **Profiler cyklu (ostatni):** -
 - **Osobny raport:** `i18n/status/translation_global_overview.json`
 
 ### 🔬 Jakość tłumaczeń
-- **Ostatni audyt:** SLOW_MODE | 38 issue(s) / 100 entries | 2026-02-13T20:43:49.410080Z
-- **Top 5 typów problemów:** suspicious_log_medium=175, identical_to_en=38, suspicious_log_low=25
-- **Języki o najsłabszej jakości:** es(60.1, issues=79436), pl(60.2, issues=64888), de(71.4, issues=3460), zh_TW(82.9, issues=0), az(83.1, issues=1126)
+- **Ostatni audyt:** SLOW_MODE | 72 issue(s) / 100 entries | 2026-02-13T20:47:05.988393Z
+- **Top 5 typów problemów:** suspicious_log_medium=171, identical_to_en=72, suspicious_log_low=22, suspicious_log_high=7
+- **Języki o najsłabszej jakości:** es(60.1, issues=80060), pl(60.1, issues=65450), de(71.4, issues=3460), zh_TW(82.9, issues=0), az(83.1, issues=1126)
 - **Pliki:** `i18n/status/quality_audit_latest.json`, `i18n/status/quality_dashboard.json`, `i18n/status/quality_report.jsonl`
 
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#79** | od uruchomienia |
+| 🔄 Cykl aktualny | **#83** | od uruchomienia |
 | 🔑 Kluczy wyekstrahowanych | **6,248** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
@@ -211,7 +213,7 @@
 ## ✅ CHECKLIST - Plan Pracy
 
 > **Aktualna faza:** AUTO_TRANSLATE  
-> **Aktualna kategoria:** es
+> **Aktualna kategoria:** pl
 
 
 ### 🔄 Faza 1: 🎮 Canary Server
@@ -280,44 +282,44 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #    79 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #    83 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
-│ Tryb:      🤖 AUTO_TRANSLATE (parallel_start)        │
-│ Kategoria: 📁 ES                                     │
+│ Tryb:      🤖 AUTO_TRANSLATE (auto_start)            │
+│ Kategoria: 📁 PL                                     │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status: running                                               │
-│ Plik: monsters.json                                           │
+│ Plik: otclient_modules.json                                   │
 │ Postęp: 0/0 keys                                              │
-│ Info: parallel auto translate                                 │
+│ Info: auto translate                                          │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2026-02-13T20:44:52Z           │
+│ ❤️ Heartbeat: 2026-02-13T20:47:11Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 🧾 Ostatnie akcje (dla czytelności)
 
-- 2026-02-13 20:44:52 | AUTO_TRANSLATE:parallel_start | es | ok | monsters.json
-- 2026-02-13 20:44:51 | AUTO_TRANSLATE:auto_done | pl | ok | monsters.json
-- 2026-02-13 20:43:55 | AUTO_TRANSLATE:auto_start | pl | ok | monsters.json
-- 2026-02-13 20:42:34 | AUTO_TRANSLATE:parallel_start | es | ok | npc.json
-- 2026-02-13 20:42:33 | AUTO_TRANSLATE:auto_done | pl | ok | npc.json
-- 2026-02-13 20:41:57 | AUTO_TRANSLATE:auto_start | pl | ok | npc.json
+- 2026-02-13 20:47:11 | AUTO_TRANSLATE:auto_start | pl | ok | otclient_modules.json
+- 2026-02-13 20:47:03 | AUTO_TRANSLATE:parallel_start | es | ok | scripts.json
+- 2026-02-13 20:47:03 | AUTO_TRANSLATE:auto_done | pl | ok | html.json
+- 2026-02-13 20:46:28 | AUTO_TRANSLATE:auto_start | pl | ok | html.json
+- 2026-02-13 20:46:19 | AUTO_TRANSLATE:parallel_start | es | ok | quests.json
+- 2026-02-13 20:46:19 | AUTO_TRANSLATE:auto_done | pl | ok | scripts.json
 
 ---
 
 ## 🔁 W tym cyklu
 
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+79, skipped+0) — lang=pl file=monsters.json strict_skipped_done=3705 guard_fail=1 placeholder=0 command=0 pipe=0
-- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [es] → ok (translated+1, skipped+0) — parallel lang=es file=items.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+7, skipped+0) — lang=pl file=items.json strict_skipped_done=279
-- 🔧 MIGRATION: zakończono kategorię [dataroot] → ok (keys+0, files+0) — migration finished
-- 🔧 MIGRATION: mini-batch stop [dataroot] → ok (keys+0) — no new data
-- 🔧 MIGRATION: mini-batch [dataroot] → ok (keys+0) — mini_batch=1 processed=10/20
-- 🔧 MIGRATION: zakończono kategorię [globalevents] → ok (keys+0, files+0) — migration finished
-- 🔧 MIGRATION: mini-batch stop [globalevents] → ok (keys+0) — no new data
-- 🔧 MIGRATION: mini-batch [globalevents] → ok (keys+0) — mini_batch=1 processed=10/50
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [it] → ok (files+1, translated+0, skipped+304) — lang=it file=spells.json
+- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [es] → ok (translated+7, skipped+0) — parallel lang=es file=html.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+7, skipped+0) — lang=pl file=client.json strict_skipped_done=22
+- 🔧 MIGRATION: zakończono kategorię [otclient_data] → ok (keys+0, files+0) — migration finished
+- 🔧 MIGRATION: mini-batch stop [otclient_data] → ok (keys+0) — no new data
+- 🔧 MIGRATION: mini-batch [otclient_data] → ok (keys+0) — mini_batch=1 processed=10/20
+- 🔧 MIGRATION: zakończono kategorię [items] → ok (keys+50, files+0) — migration finished
+- 🔧 MIGRATION: mini-batch [items] → ok (keys+10) — mini_batch=5 processed=50/50
+- 🔧 MIGRATION: mini-batch [items] → ok (keys+10) — mini_batch=4 processed=40/50
+- 🔧 MIGRATION: mini-batch [items] → ok (keys+10) — mini_batch=3 processed=30/50
+- 🔧 MIGRATION: mini-batch [items] → ok (keys+10) — mini_batch=2 processed=20/50
 
 
 
@@ -327,7 +329,7 @@
 - Cykle: **471**
 - MIGRATION: **+330** kluczy, **0** plików `.lua`
 - Kategorie dotknięte: actions, chatchannels, cpp, creaturescripts, dataroot, errors, events, items, libs, mounts...
-- Błędy: **737**
+- Błędy: **743**
 
 
 ---
@@ -341,7 +343,7 @@
 | ⬜ Plików bez kluczy | **402** | czyste (brak hardcoded) |
 | 🔑 Kluczy wyciągniętych | **6248** | przez workera w tej sesji |
 | 🌍 Języków | **53** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#79** | continuous mode |
+| 🔄 Cykli wykonanych | **#83** | continuous mode |
 
 ---
 
@@ -551,7 +553,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #79 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #83 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -638,7 +640,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2026-02-13 20:45:34  
+📅 Auto-updated by Worker v1.1 | Last: 2026-02-13 20:47:41  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

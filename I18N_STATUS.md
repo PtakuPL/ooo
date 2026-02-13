@@ -2,9 +2,9 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 6000, 'npc': 15000, 'player': 200, 'quests': 700, 'scripts': 2500, 'server': 3000, 'spells': 2000, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 900, 'html': 1500, 'client': 300, 'otclient_modules': 2000, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50, 'achievements': 1048, 'actions': 100, 'books': 1403, 'chatchannels': 100, 'creaturescripts': 100, 'dataroot': 100, 'errors': 100, 'events': 100, 'example_merchant': 100, 'globalevents': 100, 'libs': 100, 'messages': 100, 'modules': 100, 'mounts': 100, 'movements': 100, 'npclib': 147, 'questlog': 1918, 'raids': 273, 'startup': 100, 'talkactions': 199, 'world': 100} -->
 
-> **Aktualizacja:** 2026-02-13 20:21:51 UTC  
+> **Aktualizacja:** 2026-02-13 20:24:02 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 53586  
-> **LIVE:** Cykl #47 | Status: 🟢 RUNNING | Faza: AUTO_TRANSLATE | Etap: auto_start | Kategoria: es | Plik: npc.json | ETA: 0 | Heartbeat: 2026-02-13T20:21:48Z
+> **LIVE:** Cykl #48 | Status: 🟢 RUNNING | Faza: AUTO_TRANSLATE | Etap: auto_start | Kategoria: es | Plik: monsters.json | ETA: 0 | Heartbeat: 2026-02-13T20:24:02Z
 
 ---
 
@@ -106,8 +106,8 @@
 ### 🎯 Pokrycie tłumaczeń per język (EN → LANG)
 | Język | Przetłumaczone | % poprawnie przetłumaczonych | EN-copy | Braki kluczy |
 |-------|----------------|-------------------------------|---------|--------------|
-| PL (Polski) | 37,100/53,586 | 69.23% | 2,931 | 2,083 |
-| ES (Hiszpański) | 34,989/53,586 | 65.30% | 17,302 | 232 |
+| PL (Polski) | 37,174/53,586 | 69.37% | 2,986 | 2,083 |
+| ES (Hiszpański) | 35,068/53,586 | 65.44% | 17,253 | 232 |
 | AR (Arabski) | 11,447/53,586 | 21.36% | 30,982 | 2,150 |
 | ID (ID) | 11,301/53,586 | 21.09% | 29,171 | 2,155 |
 | VI (VI) | 11,294/53,586 | 21.08% | 29,170 | 2,155 |
@@ -128,57 +128,57 @@
 | TL (TL) | 11,292/53,586 | 21.07% | 29,173 | 2,155 |
 
 ### 🧭 Aktywny folder tłumaczeń
-- **Folder:** PL - Polski - Serwer
-- **Plik JSON:** items.json
+- **Folder:** ES - Hiszpański - Serwer
+- **Plik JSON:** npc.json
 - **Ostatnie klucze (10-20):** 20
 
 ### 📝 Ostatnie 10-20 przetłumaczonych kluczy
-- stairs → schody (item.859.name)
-- dead troll → martwy trol (item.861.name)
-- dead troll → martwy trol (item.862.name)
-- dead troll → martwy trol (item.863.name)
-- dead troll → martwy trol (item.864.name)
-- dead troll → martwy trol (item.865.name)
-- dead troll → martwy trol (item.866.name)
-- wall mirror → ściana lustro (item.8667.name)
-- large hole → duży dziura (item.867.name)
-- hole → dziura (item.868.name)
-- water → woda (item.8684.name)
-- wall mirror → ściana lustro (item.8689.name)
-- stairs → schody (item.8690.name)
-- swamp → bagno (item.8716.name)
-- large hole → duży dziura (item.874.name)
-- crate → skrzynka (item.8745.name)
-- stone floor → kamienna podłoga (item.8757.name)
-- cave entrance → jaskinia wejście (item.877.name)
-- sand → piasek (item.8770.name)
-- crate → skrzynka (item.8771.name)
+- Massacre → Masakra (monster.massacre.desc)
+- a demon goblin → demoniczny goblin (monster.demon_goblin.desc)
+- The Handmaiden → Służąca (monster.the_handmaiden.name)
+- The Handmaiden → Służąca (monster.the_handmaiden.desc)
+- Inky → Atramentowy (monster.inky.name)
+- Inky → Atramentowy (monster.inky.desc)
+- Azerus → Azerus (monster.azerus2.name)
+- Azerus → Azerus (monster.azerus2.desc)
+- Azerus → Azerus (monster.azerus.name)
+- Azerus → Azerus (monster.azerus.desc)
+- Rift Phantom → Upiór Szczeliny (monster.rift_phantom.name)
+- a rift phantom → fantom szczeliny (monster.rift_phantom.desc)
+- Yalahari → Yalahari (monster.yalahari.name)
+- a Yalahari → Yalahari (monster.yalahari.desc)
+- Tormented Ghost → Udręczony Duch (monster.tormented_ghost.name)
+- a tormented ghost → udręczony duch (monster.tormented_ghost.desc)
+- Rift Lord → Lord Riftu (monster.rift_lord.name)
+- a rift lord → władca szczeliny (monster.rift_lord.desc)
+- Sharptooth → Ostry ząb (monster.sharptooth.name)
+- Sharptooth → Ostry ząb (monster.sharptooth.desc)
 
 ### 🚫 Raporty "nie mogę przetłumaczyć"
-- Guard reports: **1242**  
+- Guard reports: **1244**  
 - Blocker reports: **0**  
-- Widoczne raporty 'nie mogę tłumaczyć': **1192**
+- Widoczne raporty 'nie mogę tłumaczyć': **1194**
 
 ### 🌐 Globalne info wszystkich języków
-- **Global completion:** **19.62%** (546,801/2,786,472)
-- **EN-copy łącznie:** **1,336,228**
+- **Global completion:** **19.63%** (546,954/2,786,472)
+- **EN-copy łącznie:** **1,336,234**
 - **Braki kluczy łącznie:** **110,060**
 - **Brakujące pliki językowe:** **0**
-- **Cache STATUSPY (per-lang):** **warm-cache** | hit **52**, miss **0**, hit-rate **100.0%**
-- **Cache STATUSPY (per-file):** hit **1976**, miss **0**, hit-rate **100.0%**
+- **Cache STATUSPY (per-lang):** **mixed** | hit **50**, miss **2**, hit-rate **96.2%**
+- **Cache STATUSPY (per-file):** hit **1974**, miss **2**, hit-rate **99.9%**
 - **Profiler cyklu (ostatni):** -
 - **Osobny raport:** `i18n/status/translation_global_overview.json`
 
 ### 🔬 Jakość tłumaczeń
-- **Ostatni audyt:** SLOW_MODE | 79 issue(s) / 100 entries | 2026-02-13T20:21:33.359800Z
-- **Top 5 typów problemów:** suspicious_log_medium=101, suspicious_log_low=96, identical_to_en=79, suspicious_log_high=3
-- **Języki o najsłabszej jakości:** es(60.1, issues=72831), pl(60.1, issues=62325), de(71.4, issues=3460), zh_TW(82.9, issues=0), az(83.1, issues=1126)
+- **Ostatni audyt:** SLOW_MODE | 44 issue(s) / 100 entries | 2026-02-13T20:23:53.958097Z
+- **Top 5 typów problemów:** suspicious_log_medium=102, suspicious_log_low=84, identical_to_en=44, suspicious_log_high=14
+- **Języki o najsłabszej jakości:** es(60.1, issues=73006), pl(60.1, issues=62394), de(71.4, issues=3460), zh_TW(82.9, issues=0), az(83.1, issues=1126)
 - **Pliki:** `i18n/status/quality_audit_latest.json`, `i18n/status/quality_dashboard.json`, `i18n/status/quality_report.jsonl`
 
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#47** | od uruchomienia |
+| 🔄 Cykl aktualny | **#48** | od uruchomienia |
 | 🔑 Kluczy wyekstrahowanych | **6,248** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
@@ -280,44 +280,44 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #    47 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #    48 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      🤖 AUTO_TRANSLATE (auto_start)            │
 │ Kategoria: 📁 ES                                     │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status: running                                               │
-│ Plik: npc.json                                                │
+│ Plik: monsters.json                                           │
 │ Postęp: 0/0 keys                                              │
 │ Info: auto translate                                          │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2026-02-13T20:21:48Z           │
+│ ❤️ Heartbeat: 2026-02-13T20:24:02Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 🧾 Ostatnie akcje (dla czytelności)
 
+- 2026-02-13 20:24:02 | AUTO_TRANSLATE:auto_start | es | ok | monsters.json
+- 2026-02-13 20:23:05 | AUTO_TRANSLATE:parallel_start | pl | ok | monsters.json
+- 2026-02-13 20:23:04 | AUTO_TRANSLATE:auto_done | es | ok | npc.json
 - 2026-02-13 20:21:48 | AUTO_TRANSLATE:auto_start | es | ok | npc.json
 - 2026-02-13 20:21:32 | AUTO_TRANSLATE:auto_done | pl | ok | items.json
 - 2026-02-13 20:21:21 | AUTO_TRANSLATE:auto_start | pl | ok | items.json
-- 2026-02-13 20:21:09 | AUTO_TRANSLATE:parallel_start | pl | ok | questlog.json
-- 2026-02-13 20:21:08 | AUTO_TRANSLATE:auto_done | es | ok | cpp.json
-- 2026-02-13 20:21:04 | AUTO_TRANSLATE:auto_start | es | ok | cpp.json
 
 ---
 
 ## 🔁 W tym cyklu
 
-- 🔧 MIGRATION: zakończono kategorię [npclib] → ok (keys+0, files+0) — migration finished
-- 🔧 MIGRATION: mini-batch stop [npclib] → ok (keys+0) — no new data
-- 🔧 MIGRATION: mini-batch [npclib] → ok (keys+0) — mini_batch=1 processed=5/5
-- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [es] → ok (translated+5, skipped+0) — parallel lang=es file=quests.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+4, skipped+0) — lang=pl file=quests.json strict_skipped_done=605 guard_fail=1 placeholder=0 command=1 pipe=0
-- 🔧 MIGRATION: zakończono kategorię [actions] → ok (keys+7, files+3) — migration finished
+- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [es] → ok (translated+2, skipped+0) — parallel lang=es file=actions.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+5, skipped+0) — lang=pl file=raids.json strict_skipped_done=5
+- 🔧 MIGRATION: zakończono kategorię [actions] → ok (keys+0, files+0) — migration finished
 - 🔧 MIGRATION: mini-batch stop [actions] → ok (keys+0) — no new data
-- 🔧 MIGRATION: mini-batch [actions] → ok (keys+0) — mini_batch=2 processed=20/50
-- 🔧 MIGRATION: mini-batch [actions] → ok (keys+7) — mini_batch=1 processed=10/50
-- 🔧 MIGRATION: zakończono kategorię [spells] → ok (keys+26, files+0) — migration finished
+- 🔧 MIGRATION: mini-batch [actions] → ok (keys+0) — mini_batch=1 processed=10/50
+- 🔧 MIGRATION: zakończono kategorię [spells] → ok (keys+28, files+0) — migration finished
+- 🔧 MIGRATION: mini-batch [spells] → ok (keys+14) — mini_batch=2 processed=20/20
+- 🔧 MIGRATION: mini-batch [spells] → ok (keys+14) — mini_batch=1 processed=10/20
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [fr] → ok (files+1, translated+0, skipped+3) — lang=fr file=dataroot.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [el] → ok (files+1, translated+0, skipped+132) — lang=el file=monsters.json
 
 
 
@@ -327,7 +327,7 @@
 - Cykle: **471**
 - MIGRATION: **+330** kluczy, **0** plików `.lua`
 - Kategorie dotknięte: actions, chatchannels, cpp, creaturescripts, dataroot, errors, events, items, libs, mounts...
-- Błędy: **695**
+- Błędy: **696**
 
 
 ---
@@ -341,7 +341,7 @@
 | ⬜ Plików bez kluczy | **402** | czyste (brak hardcoded) |
 | 🔑 Kluczy wyciągniętych | **6248** | przez workera w tej sesji |
 | 🌍 Języków | **53** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#47** | continuous mode |
+| 🔄 Cykli wykonanych | **#48** | continuous mode |
 
 ---
 
@@ -551,7 +551,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #47 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #48 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -638,7 +638,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2026-02-13 20:21:51  
+📅 Auto-updated by Worker v1.1 | Last: 2026-02-13 20:24:02  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

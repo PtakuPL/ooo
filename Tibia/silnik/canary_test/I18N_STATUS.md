@@ -2,9 +2,9 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 6000, 'npc': 15000, 'player': 200, 'quests': 700, 'scripts': 2500, 'server': 3000, 'spells': 2000, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 900, 'html': 1500, 'client': 300, 'otclient_modules': 2000, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50, 'achievements': 1048, 'actions': 100, 'books': 1403, 'chatchannels': 100, 'creaturescripts': 100, 'dataroot': 100, 'errors': 100, 'events': 100, 'example_merchant': 100, 'globalevents': 100, 'libs': 100, 'messages': 100, 'modules': 100, 'mounts': 100, 'movements': 100, 'npclib': 147, 'questlog': 1918, 'raids': 273, 'startup': 100, 'talkactions': 199, 'world': 100} -->
 
-> **Aktualizacja:** 2026-02-13 07:21:25 UTC  
-> **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 53541  
-> **LIVE:** Cykl #14 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: dispatch | Kategoria: items | Plik: - | ETA: 0 | Heartbeat: 2026-02-13T07:21:43Z
+> **Aktualizacja:** 2026-02-13 07:23:33 UTC  
+> **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 53581  
+> **LIVE:** Cykl #1 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: mini_batch | Kategoria: spells | Plik: - | ETA: 0 | Heartbeat: 2026-02-13T07:23:27Z
 
 ---
 
@@ -61,7 +61,7 @@
 ### 📁 Pliki Projektu (pełny skan)
 | Metryka | Wartość | Procent | Info |
 |---------|---------|---------|------|
-| 📂 **Wszystkie pliki** | **20,045** | 100% | cały projekt |
+| 📂 **Wszystkie pliki** | **20,046** | 100% | cały projekt |
 | 📜 Do skanowania (kod) | **9,200** | 45.9% | pliki z kodem/tekstami |
 | 🔍 **Przeskanowane** | **6,442** | **70.0%** | historia workera |
 | ⏳ Nie przeskanowane | **2,758** | 30.0% | czekają na skan |
@@ -88,9 +88,9 @@
 ### 🔑 Klucze i18n
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔑 **Klucze EN (źródłowe)** | **53,541** | wszystkie kategorie |
+| 🔑 **Klucze EN (źródłowe)** | **53,581** | wszystkie kategorie |
 | 📊 NPC | 13,769 | dialogi NPC |
-| 📊 Items | 17,014 | przedmioty |
+| 📊 Items | 17,054 | przedmioty |
 | 📊 Monsters | 5,915 | potwory |
 | 📊 HTML | 1,495 | widoki web |
 | 📊 Pozostałe | 15,348 | scripts, spells, etc. |
@@ -106,26 +106,26 @@
 ### 🎯 Pokrycie tłumaczeń per język (EN → LANG)
 | Język | Przetłumaczone | % poprawnie przetłumaczonych | EN-copy | Braki kluczy |
 |-------|----------------|-------------------------------|---------|--------------|
-| PL (Polski) | 35,934/53,541 | 67.11% | 2,935 | 2,038 |
-| ES (Hiszpański) | 33,229/53,541 | 62.06% | 17,999 | 187 |
-| AR (Arabski) | 11,446/53,541 | 21.38% | 30,983 | 2,105 |
-| ID (ID) | 11,300/53,541 | 21.11% | 29,172 | 2,110 |
-| BN (BN) | 11,292/53,541 | 21.09% | 29,181 | 2,110 |
-| FA (FA) | 11,292/53,541 | 21.09% | 29,181 | 2,110 |
-| HI (HI) | 11,291/53,541 | 21.09% | 29,180 | 2,110 |
-| HY (HY) | 11,292/53,541 | 21.09% | 29,181 | 2,110 |
-| JA (Japoński) | 11,291/53,541 | 21.09% | 29,180 | 2,110 |
-| KA (KA) | 11,292/53,541 | 21.09% | 29,181 | 2,110 |
-| KO (Koreański) | 11,292/53,541 | 21.09% | 29,172 | 2,110 |
-| MS (MS) | 11,291/53,541 | 21.09% | 29,174 | 2,110 |
-| SW (SW) | 11,291/53,541 | 21.09% | 29,173 | 2,110 |
-| TA (TA) | 11,291/53,541 | 21.09% | 29,173 | 2,110 |
-| TE (TE) | 11,291/53,541 | 21.09% | 29,173 | 2,110 |
-| TH (TH) | 11,291/53,541 | 21.09% | 29,173 | 2,110 |
-| TL (TL) | 11,291/53,541 | 21.09% | 29,174 | 2,110 |
-| VI (VI) | 11,293/53,541 | 21.09% | 29,171 | 2,110 |
-| HE (HE) | 11,289/53,541 | 21.08% | 29,178 | 2,110 |
-| ML (ML) | 11,288/53,541 | 21.08% | 29,177 | 2,110 |
+| PL (Polski) | 35,934/53,581 | 67.06% | 2,935 | 2,078 |
+| ES (Hiszpański) | 33,229/53,581 | 62.02% | 17,999 | 227 |
+| AR (Arabski) | 11,446/53,581 | 21.36% | 30,983 | 2,145 |
+| ID (ID) | 11,300/53,581 | 21.09% | 29,172 | 2,150 |
+| VI (VI) | 11,293/53,581 | 21.08% | 29,171 | 2,150 |
+| BN (BN) | 11,292/53,581 | 21.07% | 29,181 | 2,150 |
+| FA (FA) | 11,292/53,581 | 21.07% | 29,181 | 2,150 |
+| HE (HE) | 11,289/53,581 | 21.07% | 29,178 | 2,150 |
+| HI (HI) | 11,291/53,581 | 21.07% | 29,180 | 2,150 |
+| HY (HY) | 11,292/53,581 | 21.07% | 29,181 | 2,150 |
+| JA (Japoński) | 11,291/53,581 | 21.07% | 29,180 | 2,150 |
+| KA (KA) | 11,292/53,581 | 21.07% | 29,181 | 2,150 |
+| KO (Koreański) | 11,292/53,581 | 21.07% | 29,172 | 2,150 |
+| ML (ML) | 11,288/53,581 | 21.07% | 29,177 | 2,150 |
+| MS (MS) | 11,291/53,581 | 21.07% | 29,174 | 2,150 |
+| SW (SW) | 11,291/53,581 | 21.07% | 29,173 | 2,150 |
+| TA (TA) | 11,291/53,581 | 21.07% | 29,173 | 2,150 |
+| TE (TE) | 11,291/53,581 | 21.07% | 29,173 | 2,150 |
+| TH (TH) | 11,291/53,581 | 21.07% | 29,173 | 2,150 |
+| TL (TL) | 11,291/53,581 | 21.07% | 29,174 | 2,150 |
 
 ### 🧭 Aktywny folder tłumaczeń
 - **Folder:** PL - Polski - Serwer
@@ -144,9 +144,9 @@
 - Widoczne raporty 'nie mogę tłumaczyć': **1076**
 
 ### 🌐 Globalne info wszystkich języków
-- **Global completion:** **19.53%** (543,825/2,784,132)
+- **Global completion:** **19.52%** (543,825/2,786,212)
 - **EN-copy łącznie:** **1,336,979**
-- **Braki kluczy łącznie:** **107,720**
+- **Braki kluczy łącznie:** **109,800**
 - **Brakujące pliki językowe:** **0**
 - **Cache STATUSPY (per-lang):** **cold-cache** | hit **0**, miss **52**, hit-rate **0.0%**
 - **Cache STATUSPY (per-file):** hit **0**, miss **1976**, hit-rate **0.0%**
@@ -162,7 +162,7 @@
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#14** | od uruchomienia |
+| 🔄 Cykl aktualny | **#1** | od uruchomienia |
 | 🔑 Kluczy wyekstrahowanych | **6,243** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
@@ -195,7 +195,7 @@
 ## ✅ CHECKLIST - Plan Pracy
 
 > **Aktualna faza:** MIGRATION  
-> **Aktualna kategoria:** items
+> **Aktualna kategoria:** spells
 
 
 ### 🔄 Faza 1: 🎮 Canary Server
@@ -204,7 +204,7 @@
 |-----------|--------|--------|-----|
 | 🧙 NPC Dialogs | ✅ | 13769/15000 (92%) | 15000 |
 | 📜 Lua Scripts | 🔄 | 2170/2500 (87%) | 2500 |
-| 🎒 Items Database | 🔄 | 17014/40000 (43%) | 40000 |
+| 🎒 Items Database | 🔄 | 17054/40000 (43%) | 40000 |
 | 👹 Monsters | ✅ | 5915/6000 (99%) | 6000 |
 | ✨ Spells & Magic | 🔄 | 1534/2000 (77%) | 2000 |
 | ⚙️ Server C++ | 🔄 | 2574/3000 (86%) | 3000 |
@@ -264,18 +264,18 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #    14 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #     1 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
-│ Tryb:      🔧 MIGRATION (dispatch)                   │
-│ Kategoria: 📁 ITEMS                                  │
+│ Tryb:      🔧 MIGRATION (mini_batch)                 │
+│ Kategoria: 📁 SPELLS                                 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status: running                                               │
 │ Plik: -                                                       │
-│ Postęp: 0/1 items                                             │
-│ Info: selected                                                │
+│ Postęp: 0/20 items                                            │
+│ Info: batch 1 size=10                                         │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2026-02-13T07:21:43Z           │
+│ ❤️ Heartbeat: 2026-02-13T07:23:27Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -292,16 +292,16 @@
 
 ## 🔁 W tym cyklu
 
-- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [es] → ok (translated+1, skipped+0) — parallel lang=es file=items.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+8, skipped+0) — lang=pl file=items.json strict_skipped_done=126
-- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [pt] → ok (translated+8, skipped+0) — parallel lang=pt file=npc.json
-- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [de] → ok (translated+8, skipped+0) — parallel lang=de file=npc.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [tr] → warn (files+1, translated+12, skipped+0) — lang=tr file=items.json strict_skipped_done=32
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+5, skipped+0) — lang=pl file=otclient_data.json strict_skipped_done=53
-- 🔧 MIGRATION: zakończono kategorię [dataroot] → ok (keys+0, files+0) — migration finished
-- 🔧 MIGRATION: mini-batch stop [dataroot] → ok (keys+0) — no new data
-- 🔧 MIGRATION: mini-batch [dataroot] → ok (keys+0) — mini_batch=1 processed=10/20
+- 🔧 MIGRATION: zakończono kategorię [spells] → ok (keys+0, files+0) — migration finished
+- 🔧 MIGRATION: mini-batch stop [spells] → ok (keys+0) — no new data
+- 🔧 MIGRATION: mini-batch [spells] → ok (keys+0) — mini_batch=1 processed=10/20
 - 🔧 MIGRATION: zakończono kategorię [scripts] → ok (keys+0, files+0) — migration finished
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+4, skipped+0) — lang=pl file=quests.json strict_skipped_done=606 guard_fail=2 placeholder=0 command=2 pipe=0
+- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [es] → ok (translated+50, skipped+0) — parallel lang=es file=npc.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+50, skipped+0) — lang=pl file=items.json strict_skipped_done=6094
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+18, skipped+0) — lang=pl file=cpp.json strict_skipped_done=859
+- 🔧 MIGRATION: zakończono kategorię [scripts] → ok (keys+0, files+0) — migration finished
+- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [es] → ok (translated+50, skipped+0) — parallel lang=es file=raids.json
 
 
 
@@ -309,7 +309,7 @@
 ## 📅 Dziś (UTC)
 
 - Cykle: **395**
-- MIGRATION: **+240** kluczy, **0** plików `.lua`
+- MIGRATION: **+320** kluczy, **0** plików `.lua`
 - Kategorie dotknięte: actions, creaturescripts, items, quests, scripts, spells, talkactions
 - Błędy: **603**
 
@@ -325,7 +325,7 @@
 | ⬜ Plików bez kluczy | **407** | czyste (brak hardcoded) |
 | 🔑 Kluczy wyciągniętych | **6243** | przez workera w tej sesji |
 | 🌍 Języków | **53** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#14** | continuous mode |
+| 🔄 Cykli wykonanych | **#1** | continuous mode |
 
 ---
 
@@ -348,7 +348,7 @@
 
 | Metryka | Wartość |
 |---------|---------|
-| 🔑 Kluczy | 17014 |
+| 🔑 Kluczy | 17054 |
 | 🎯 Cel | 40000 |
 | 📊 Postęp | 43% |
 | 📁 Plik | i18n/en/items.json |
@@ -484,7 +484,7 @@
 
 | Kategoria | Kluczy | Przetworzono | Seria zer | Status |
 |-----------|--------|--------------|-----------|--------|
-| items | 17014 | 0 | 0 | ✅ Active |
+| items | 17054 | 0 | 0 | ✅ Active |
 | npc | 13769 | 0 | 0 | ✅ Active |
 | monsters | 5915 | 0 | 0 | ✅ Active |
 | server | 2574 | 0 | 0 | ✅ Active |
@@ -535,7 +535,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #14 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #1 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -593,7 +593,7 @@
 | 📁 Example_merchant | 14 | ██░░░░░░░░░░░░░░░░░░ | 100 | 🔄 14% |
 | 🌐 Globalevents | 5 | █░░░░░░░░░░░░░░░░░░░ | 100 | 🔄 5% |
 | 🌍 Html | 1495 | ███████████████████░ | 1500 | ✅ 100% |
-| 🎒 Items | 17014 | ████████░░░░░░░░░░░░ | 40000 | 🔄 43% |
+| 🎒 Items | 17054 | ████████░░░░░░░░░░░░ | 40000 | 🔄 43% |
 | 📚 Libs | 89 | █████████████████░░░ | 100 | 🔄 89% |
 | ✉️ Messages | 11 | ██░░░░░░░░░░░░░░░░░░ | 100 | 🔄 11% |
 | 📦 Modules | 19 | ███░░░░░░░░░░░░░░░░░ | 100 | 🔄 19% |
@@ -622,7 +622,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2026-02-13 07:21:25  
+📅 Auto-updated by Worker v1.1 | Last: 2026-02-13 07:23:33  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

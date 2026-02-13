@@ -2,9 +2,9 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 6000, 'npc': 15000, 'player': 200, 'quests': 700, 'scripts': 2500, 'server': 3000, 'spells': 2000, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 900, 'html': 1500, 'client': 300, 'otclient_modules': 2000, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50, 'achievements': 1048, 'actions': 100, 'books': 1403, 'chatchannels': 100, 'creaturescripts': 100, 'dataroot': 100, 'errors': 100, 'events': 100, 'example_merchant': 100, 'globalevents': 100, 'libs': 100, 'messages': 100, 'modules': 100, 'mounts': 100, 'movements': 100, 'npclib': 147, 'questlog': 1918, 'raids': 273, 'startup': 100, 'talkactions': 199, 'world': 100} -->
 
-> **Aktualizacja:** 2026-02-13 21:02:43 UTC  
+> **Aktualizacja:** 2026-02-13 21:04:52 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 53586  
-> **LIVE:** Cykl #12 | Status: 🟢 RUNNING | Faza: AUTO_TRANSLATE | Etap: parallel_start | Kategoria: es | Plik: npc.json | ETA: 0 | Heartbeat: 2026-02-13T21:01:34Z
+> **LIVE:** Cykl #13 | Status: 🟢 RUNNING | Faza: AUTO_TRANSLATE | Etap: parallel_start | Kategoria: es | Plik: monsters.json | ETA: 0 | Heartbeat: 2026-02-13T21:04:12Z
 
 ---
 
@@ -106,8 +106,8 @@
 ### 🎯 Pokrycie tłumaczeń per język (EN → LANG)
 | Język | Przetłumaczone | % poprawnie przetłumaczonych | EN-copy | Braki kluczy |
 |-------|----------------|-------------------------------|---------|--------------|
-| PL (Polski) | 38,088/53,586 | 71.08% | 2,963 | 2,083 |
-| ES (Hiszpański) | 36,048/53,586 | 67.27% | 16,747 | 232 |
+| PL (Polski) | 38,161/53,586 | 71.21% | 2,975 | 2,083 |
+| ES (Hiszpański) | 36,123/53,586 | 67.41% | 16,699 | 232 |
 | AR (Arabski) | 11,447/53,586 | 21.36% | 30,982 | 2,150 |
 | ID (ID) | 11,301/53,586 | 21.09% | 29,171 | 2,155 |
 | VI (VI) | 11,294/53,586 | 21.08% | 29,170 | 2,155 |
@@ -128,57 +128,57 @@
 | TL (TL) | 11,292/53,586 | 21.07% | 29,173 | 2,155 |
 
 ### 🧭 Aktywny folder tłumaczeń
-- **Folder:** ES - Hiszpański - Serwer
-- **Plik JSON:** startup.json
+- **Folder:** PL - Polski - Serwer
+- **Plik JSON:** npc.json
 - **Ostatnie klucze (10-20):** 20
 
 ### 📝 Ostatnie 10-20 przetłumaczonych kluczy
-- Hmm. No, I don't think you have something with you that I'd like to eat. Please  → Hmm. Nie, nie sądzę, że masz przy sobie coś, co chciałbym zjeść. Wróć, gdy ukrad (npc.carlos.say_6)
-- Hello, hello! Don't be shy, I don't bite. → Witam, witam! Nie wstydź się, nie gryzę. (npc.carlos.voice_4)
-- By the way, if you want to look at old hints again, find the 'Help' button near  → Przy okazji, jeśli chcesz ponownie spojrzeć na stare podpowiedzi, znajdź przycis (npc.carlos.voice_5)
-- Alright then. Take this botanist's container and return to me once you were able → W porządku. Weź pojemnik tego botanika i wróć do mnie, gdy uda ci się pobrać pró (npc.ceiron.say_9)
-- It is hard to explain. Of course, it's not a real song as you would understand i → Trudno to wyjaśnić. Oczywiście nie jest to prawdziwa piosenka, jak można by ją z (npc.cerdras.multi_1)
-- You know, we are so dependent on words that we can't think about concepts when w → Wiesz, jesteśmy tak zależni od słów, że nie możemy myśleć o pojęciach, jeśli nie (npc.cerdras.multi_4)
-- Hmm, it seems that Eleonore does trust you. Perhaps she is even right. However.  → Hmm, wygląda na to, że Eleonora ci ufa. Być może nawet ma rację. Jednakże. Ponie (npc.charlotta.say_2)
-- Hey there, just to let you know - I am not a man of many words. I prefer 'deeds' → Hej, chcę tylko powiedzieć, że nie jestem człowiekiem wielu słów. Wolę 'deeds',  (npc.chavis.say_1)
-- So in case you've got nothing better to do - and it sure looks that way judging  → Jeśli więc nie masz nic lepszego do roboty – a z pewnością tak to wygląda, sądzą (npc.chavis.say_2)
-- These papers can tell us much about Carlin's plans in the North. We need you to  → Dokumenty te mogą nam wiele powiedzieć o planach Carlin na Północy. Potrzebujemy (npc.chester_kahs.multi_12)
-- Then don't bother me with it. I'm a busy man. → Więc nie zawracaj mi tym głowy. Jestem zajętym człowiekiem. (npc.chester_kahs.say_21)
-- Don't tell me I didn't warn you. → Nie mów mi, że cię nie ostrzegałem. (npc.chester_kahs.voice_2)
-- Very good! <mumble> 'Your soul shall be protected!' Now, I need a fresh dead rat → Bardzo dobry! <mumble> 'Your soul shall be protected!' Teraz potrzebuję świeżego (npc.chondur.say_20)
-- Very good! <chants and dances> 'You shall face black magic without fear!' Now, I → Bardzo dobry! <chants and dances> 'You shall face black magic without fear!' Ter (npc.chondur.say_22)
-- Very good! <stomps staff on ground> 'EVIL POWERS SHALL NOT KEEP YOU ANYMORE! SO  → Bardzo dobry! <stomps staff on ground> 'EVIL POWERS SHALL NOT KEEP YOU ANYMORE!  (npc.chondur.say_24)
-- Ten prayers for a blessed stake? Don't tell me they made you travel whole Tibia  → Dziesięć modlitw za błogosławiony palik? Nie mów mi, że kazali ci podróżować prz (npc.chondur.say_26)
-- Ah, the energy barrier set up by the cult is maintained by lousy magic, but it's → Ach, bariera energetyczna wzniesiona przez kult jest utrzymywana przez kiepską m (npc.chondur.say_38)
-- Never go adventuring without a rope! If you don't have one when you fall through → Nigdy nie wybieraj się na przygodę bez liny! Jeśli go nie posiadasz, wpadając pr (npc.cipfried.stdmod_27)
-- I'm sorry, but I'm not interested in worldly goods. If you want to buy or sell s → Przykro mi, ale nie interesują mnie dobra doczesne. Jeśli chcesz coś kupić lub s (npc.cipfried.stdmod_39)
-- In Al Dee's shop you'll find important general equipment such as {ropes}, {shove → W sklepie Al Dee znajdziesz ważny sprzęt ogólny, taki jak {ropes}, {shovels} i l (npc.cipfried.stdmod_53)
+- a sin devourer → pożeracz grzechów (monster.sin_devourer.desc)
+- Ascending Ferumbras → Rosnąco Ferumbras (monster.ascending_ferumbras.name)
+- Ascending Ferumbras → Rosnąco Ferumbras (monster.ascending_ferumbras.desc)
+- The Shatterer → Rozbijacz (monster.the_shatterer.name)
+- The Shatterer → Rozbijacz (monster.the_shatterer.desc)
+- Ferumbras Mortal Shell → Ferumbras Śmiertelna Skorupa (monster.ferumbras_mortal_shell.name)
+- Ferumbras Mortal Shell → Ferumbras Śmiertelna Skorupa (monster.ferumbras_mortal_shell.desc)
+- Zamulosh → Zamułosz (monster.zamulosh3.name)
+- Zamulosh → Zamułosz (monster.zamulosh3.desc)
+- Zamulosh → Zamułosz (monster.zamulosh2.name)
+- zamulosh → zamulosz (monster.zamulosh2.desc)
+- Destabilized Ferumbras → Zdestabilizowany Ferumbras (monster.destabilized_ferumbras.name)
+- Destabilized Ferumbras → Zdestabilizowany Ferumbras (monster.destabilized_ferumbras.desc)
+- Plagirath → Plagirat (monster.plagirath.name)
+- Plagirath → Plagirat (monster.plagirath.desc)
+- a death dragon → smok śmierci (monster.death_dragon.desc)
+- Desperate Soul → Zdesperowana Dusza (monster.desperate_soul.name)
+- a desperate soul → zdesperowana dusza (monster.desperate_soul.desc)
+- Lovely Snake → Piękny Wąż (monster.lovely_snake.name)
+- a lovely snake → piękny wąż (monster.lovely_snake.desc)
 
 ### 🚫 Raporty "nie mogę przetłumaczyć"
-- Guard reports: **1364**  
+- Guard reports: **1366**  
 - Blocker reports: **0**  
-- Widoczne raporty 'nie mogę tłumaczyć': **1314**
+- Widoczne raporty 'nie mogę tłumaczyć': **1316**
 
 ### 🌐 Globalne info wszystkich języków
-- **Global completion:** **19.7%** (548,848/2,786,472)
-- **EN-copy łącznie:** **1,335,705**
+- **Global completion:** **19.7%** (548,996/2,786,472)
+- **EN-copy łącznie:** **1,335,669**
 - **Braki kluczy łącznie:** **110,060**
 - **Brakujące pliki językowe:** **0**
-- **Cache STATUSPY (per-lang):** **mixed** | hit **51**, miss **1**, hit-rate **98.1%**
+- **Cache STATUSPY (per-lang):** **mixed** | hit **50**, miss **2**, hit-rate **96.2%**
 - **Cache STATUSPY (per-file):** hit **1974**, miss **2**, hit-rate **99.9%**
 - **Profiler cyklu (ostatni):** -
 - **Osobny raport:** `i18n/status/translation_global_overview.json`
 
 ### 🔬 Jakość tłumaczeń
-- **Ostatni audyt:** SLOW_MODE | 73 issue(s) / 100 entries | 2026-02-13T21:00:47.176231Z
-- **Top 5 typów problemów:** suspicious_log_medium=135, identical_to_en=73, suspicious_log_low=59, suspicious_log_high=6
-- **Języki o najsłabszej jakości:** es(60.2, issues=85713), pl(60.2, issues=67681), de(71.4, issues=3460), zh_TW(82.9, issues=0), az(83.1, issues=1126)
+- **Ostatni audyt:** SLOW_MODE | 34 issue(s) / 100 entries | 2026-02-13T21:03:01.846801Z
+- **Top 5 typów problemów:** suspicious_log_medium=175, identical_to_en=34, suspicious_log_low=18, suspicious_log_high=7
+- **Języki o najsłabszej jakości:** es(60.2, issues=85846), pl(60.2, issues=67782), de(71.4, issues=3460), zh_TW(82.9, issues=0), az(83.1, issues=1126)
 - **Pliki:** `i18n/status/quality_audit_latest.json`, `i18n/status/quality_dashboard.json`, `i18n/status/quality_report.jsonl`
 
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#12** | od uruchomienia |
+| 🔄 Cykl aktualny | **#13** | od uruchomienia |
 | 🔑 Kluczy wyekstrahowanych | **6,248** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
@@ -280,44 +280,44 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #    12 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #    13 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      🤖 AUTO_TRANSLATE (parallel_start)        │
 │ Kategoria: 📁 ES                                     │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status: running                                               │
-│ Plik: npc.json                                                │
+│ Plik: monsters.json                                           │
 │ Postęp: 0/0 keys                                              │
 │ Info: parallel auto translate                                 │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2026-02-13T21:01:34Z           │
+│ ❤️ Heartbeat: 2026-02-13T21:04:12Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 🧾 Ostatnie akcje (dla czytelności)
 
+- 2026-02-13 21:04:12 | AUTO_TRANSLATE:parallel_start | es | ok | monsters.json
+- 2026-02-13 21:04:11 | AUTO_TRANSLATE:auto_done | pl | ok | monsters.json
+- 2026-02-13 21:03:08 | AUTO_TRANSLATE:auto_start | pl | ok | monsters.json
 - 2026-02-13 21:01:34 | AUTO_TRANSLATE:parallel_start | es | ok | npc.json
 - 2026-02-13 21:01:33 | AUTO_TRANSLATE:auto_done | pl | ok | npc.json
 - 2026-02-13 21:00:53 | AUTO_TRANSLATE:auto_start | pl | ok | npc.json
-- 2026-02-13 20:59:57 | AUTO_TRANSLATE:parallel_start | pl | ok | items.json
-- 2026-02-13 20:59:56 | AUTO_TRANSLATE:auto_done | es | ok | startup.json
-- 2026-02-13 20:59:51 | AUTO_TRANSLATE:auto_start | es | ok | startup.json
 
 ---
 
 ## 🔁 W tym cyklu
 
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+77, skipped+0) — lang=pl file=npc.json strict_skipped_done=13300 guard_fail=3 placeholder=0 command=0 pipe=0
-- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [es] → ok (translated+80, skipped+0) — parallel lang=es file=monsters.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+80, skipped+0) — lang=pl file=monsters.json strict_skipped_done=3335
-- 🔧 MIGRATION: zakończono kategorię [cpp] → ok (keys+0, files+0) — migration finished
-- 🔧 MIGRATION: mini-batch stop [cpp] → ok (keys+0) — no new data
-- 🔧 MIGRATION: mini-batch [cpp] → ok (keys+0) — mini_batch=1 processed=5/5
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+79, skipped+0) — lang=pl file=monsters.json strict_skipped_done=3851 guard_fail=1 placeholder=0 command=0 pipe=0
+- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [es] → ok (translated+80, skipped+0) — parallel lang=es file=server.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+5, skipped+0) — lang=pl file=quests.json strict_skipped_done=605 guard_fail=3 placeholder=0 command=0 pipe=0
+- 🔧 MIGRATION: zakończono kategorię [otclient_modules] → ok (keys+0, files+0) — migration finished
+- 🔧 MIGRATION: mini-batch stop [otclient_modules] → ok (keys+0) — no new data
+- 🔧 MIGRATION: mini-batch [otclient_modules] → ok (keys+0) — mini_batch=1 processed=5/5
 - 🔧 MIGRATION: zakończono kategorię [items] → ok (keys+20, files+0) — migration finished
 - 🔧 MIGRATION: mini-batch [items] → ok (keys+10) — mini_batch=2 processed=20/20
 - 🔧 MIGRATION: mini-batch [items] → ok (keys+10) — mini_batch=1 processed=10/20
-- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [es] → ok (translated+6, skipped+0) — parallel lang=es file=talkactions.json
+- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [es] → ok (translated+7, skipped+0) — parallel lang=es file=modules.json
 
 
 
@@ -327,7 +327,7 @@
 - Cykle: **471**
 - MIGRATION: **+330** kluczy, **0** plików `.lua`
 - Kategorie dotknięte: actions, chatchannels, cpp, creaturescripts, dataroot, errors, events, items, libs, mounts...
-- Błędy: **783**
+- Błędy: **785**
 
 
 ---
@@ -341,7 +341,7 @@
 | ⬜ Plików bez kluczy | **402** | czyste (brak hardcoded) |
 | 🔑 Kluczy wyciągniętych | **6248** | przez workera w tej sesji |
 | 🌍 Języków | **53** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#12** | continuous mode |
+| 🔄 Cykli wykonanych | **#13** | continuous mode |
 
 ---
 
@@ -551,7 +551,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #12 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #13 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -638,7 +638,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2026-02-13 21:02:43  
+📅 Auto-updated by Worker v1.1 | Last: 2026-02-13 21:04:52  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

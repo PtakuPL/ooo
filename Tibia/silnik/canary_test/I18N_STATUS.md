@@ -2,9 +2,9 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 6000, 'npc': 15000, 'player': 200, 'quests': 700, 'scripts': 2500, 'server': 3000, 'spells': 2000, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 900, 'html': 1500, 'client': 300, 'otclient_modules': 2000, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50, 'achievements': 1048, 'actions': 100, 'books': 1403, 'chatchannels': 100, 'creaturescripts': 100, 'dataroot': 100, 'errors': 100, 'events': 100, 'example_merchant': 100, 'globalevents': 100, 'libs': 100, 'messages': 100, 'modules': 100, 'mounts': 100, 'movements': 100, 'npclib': 147, 'questlog': 1918, 'raids': 273, 'startup': 100, 'talkactions': 199, 'world': 100} -->
 
-> **Aktualizacja:** 2026-02-13 07:26:01 UTC  
+> **Aktualizacja:** 2026-02-13 07:28:13 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 53581  
-> **LIVE:** Cykl #1 | Status: 🟢 RUNNING | Faza: AUTO_TRANSLATE | Etap: parallel_start | Kategoria: es | Plik: quests.json | ETA: 0 | Heartbeat: 2026-02-13T07:25:55Z
+> **LIVE:** Cykl #2 | Status: ⛔ INTERRUPTED | Faza: AUTO_TRANSLATE | Etap: signal | Kategoria: pl | Plik: - | ETA: 0 | Heartbeat: 2026-02-13T07:28:10Z
 
 ---
 
@@ -106,8 +106,8 @@
 ### 🎯 Pokrycie tłumaczeń per język (EN → LANG)
 | Język | Przetłumaczone | % poprawnie przetłumaczonych | EN-copy | Braki kluczy |
 |-------|----------------|-------------------------------|---------|--------------|
-| PL (Polski) | 35,940/53,581 | 67.08% | 2,929 | 2,078 |
-| ES (Hiszpański) | 33,174/53,581 | 61.91% | 18,054 | 227 |
+| PL (Polski) | 35,948/53,581 | 67.09% | 2,938 | 2,078 |
+| ES (Hiszpański) | 33,400/53,581 | 62.34% | 18,052 | 227 |
 | AR (Arabski) | 11,446/53,581 | 21.36% | 30,983 | 2,145 |
 | ID (ID) | 11,300/53,581 | 21.09% | 29,172 | 2,150 |
 | VI (VI) | 11,293/53,581 | 21.08% | 29,171 | 2,150 |
@@ -129,58 +129,64 @@
 
 ### 🧭 Aktywny folder tłumaczeń
 - **Folder:** PL - Polski - Serwer
-- **Plik JSON:** items.json
+- **Plik JSON:** scripts.json
 - **Ostatnie klucze (10-20):** 20
 
 ### 📝 Ostatnie 10-20 przetłumaczonych kluczy
-- <click> → <click> (scripts.movement_third_floor_ghoul.say_2)
-- !-! -O- I_I (/( --I Morgathla → !-! -O- I_I (/( --I Morgathla (scripts.movements_mission4_parchment_decyphering.say_1)
-- rkawdmawfjawkjnfjkawnkjnawkdjawkfmalkwmflkmawkfnzxc → rkawdmawfjawkjnfjkawnkjnawkdjawkfmalkwmflkmawkfnzxc (scripts.movements_teleportto.say_1)
-- %s
-IP: %s → %s
-IP: %s (scripts.on_look.admin_ip)
-- %s, Mana: %s / %s → %s, Mana: %s / %s (scripts.on_look.admin_player_health_mana)
-- [World Change] Yasir has arrived in %s today! → [Zmiana Świata] Yasir przybył dziś do %s! (scripts.oriental_trader.arrived_today)
-- {} {} → {} {} (scripts.special_tiles.msg_1)
-- Mwahaha! → Mwahaha! (scripts.thais_exhibition.say_36)
-- Wrrrzzzgggrrzzzz... → Wrrrzzzgggrrzzzz... (scripts.thais_exhibition.say_78)
-- <the welter devours his spawn and heals himself> → <the welter devours his spawn and heals himself> (scripts.the_welter_heal.say_1)
-- <the welter devours his spawn and heals himself> → <the welter devours his spawn and heals himself> (scripts.the_welter_heal.say_2)
-- Faaart! → Faaart! (scripts.yellow_pillow.say_1)
-- You can't use this character '%s' in your new name. → Nie możesz używać tego znaku '%s' w swoim nowym imieniu. (gamestore.validation.invalid_character)
-- Your new name '%s' can't be a monster's name. → Twoje nowe imię '%s' nie może być imieniem potwora. (gamestore.validation.monster_name)
-- You can't use the word '%s' in your new name. → W nowym imieniu nie możesz używać słowa '%s'. (gamestore.validation.new_name_forbidden_word)
-- You can't use the word '%s' even with spaces in your new name. → W nowym imieniu nie możesz używać słowa '%s' nawet ze spacjami. (gamestore.validation.new_name_forbidden_word_space)
-- Your new name '%s' can't be an NPC's name. → Twoje nowe imię '%s' nie może być imieniem NPC. (gamestore.validation.npc_name)
-- Jack: Trying to get rid of your junk in my house? Do I look like I need such a.. → Jack: Próbujesz pozbyć się śmieci z mojego domu? Czy wyglądam jakbym potrzebował (scripts.construction_kits.jack_amphora)
-- Never say 'oops'. Always say 'Ah, interesting!' → Nigdy nie mów 'oops'. Zawsze mów 'Ah, interesting!' (scripts.dolls.5668_9)
-- Aaa... CHOO! → Aaa... CHOO! (scripts.dolls.6566_4)
+- Track Kills → Seguimiento de muertes (otclient_modules.bestiary_otui.tr_12)
+- 1 / 1 → 1/1 (otclient_modules.bestiary_otui.tr_14)
+- Type to search → Escribe para buscar (otclient_modules.bestiary_otui.tr_15)
+- Search → Buscar (otclient_modules.bestiary_otui.tr_16)
+- Charm Selection: → Selección de encanto: (otclient_modules.bestiary_otui.tr_7)
+- Select → Seleccionar (otclient_modules.bestiary_otui.tr_8)
+- Event → Evento (otclient_modules.blessing.tr_1)
+- - Depending on the fair fight rules, you will lose between → - Dependiendo de las reglas de la pelea justa, perderás entre (otclient_modules.blessing.tr_11)
+- History → Historia (otclient_modules.blessing.tr_14)
+- chance that you will lose items upon your next death. → probabilidad de que pierda objetos en su próxima muerte. (otclient_modules.blessing.tr_3)
+- - There is a → - Hay un (otclient_modules.blessing.tr_4)
+- chance that you will lose your equipped container on your next death. → posibilidad de que pierda su contenedor equipado en su próxima muerte. (otclient_modules.blessing.tr_5)
+- - There is a → - Hay un (otclient_modules.blessing.tr_6)
+- less XP and skill points upon your next PvE death. → menos XP y puntos de habilidad en tu próxima muerte en PvE. (otclient_modules.blessing.tr_7)
+- - You will lose → - perderás (otclient_modules.blessing.tr_8)
+- less XP and skill points 
+upon your next PvP death. → menos XP y puntos de habilidad 
+en tu próxima muerte PvP. (otclient_modules.blessing.tr_9)
+- (fully unlocked) → (completamente desbloqueado) (otclient_modules.boss_slots.tr_1)
+- Nemesis
+
+For unlocking a level, you will receive the following boss points:
+Prow → Némesis
+
+Por desbloquear un nivel, recibirás los siguientes puntos de jefe:
+Dest (otclient_modules.boss_slots.tr_3)
+- Slot %d: %s → Ranura %d: %s (otclient_modules.boss_slots.tr_5)
+- Progress → Progreso (otclient_modules.boss_slots_otui.tr_10)
 
 ### 🚫 Raporty "nie mogę przetłumaczyć"
-- Guard reports: **1127**  
+- Guard reports: **1130**  
 - Blocker reports: **0**  
-- Widoczne raporty 'nie mogę tłumaczyć': **1077**
+- Widoczne raporty 'nie mogę tłumaczyć': **1080**
 
 ### 🌐 Globalne info wszystkich języków
-- **Global completion:** **19.52%** (543,776/2,786,212)
-- **EN-copy łącznie:** **1,337,028**
+- **Global completion:** **19.53%** (544,010/2,786,212)
+- **EN-copy łącznie:** **1,337,035**
 - **Braki kluczy łącznie:** **109,800**
 - **Brakujące pliki językowe:** **0**
 - **Cache STATUSPY (per-lang):** **mixed** | hit **50**, miss **2**, hit-rate **96.2%**
-- **Cache STATUSPY (per-file):** hit **1974**, miss **2**, hit-rate **99.9%**
+- **Cache STATUSPY (per-file):** hit **1973**, miss **3**, hit-rate **99.8%**
 - **Profiler cyklu (ostatni):** -
 - **Osobny raport:** `i18n/status/translation_global_overview.json`
 
 ### 🔬 Jakość tłumaczeń
-- **Ostatni audyt:** SLOW_MODE | 66 issue(s) / 100 entries | 2026-02-13T06:49:30.107148Z
-- **Top 5 typów problemów:** suspicious_log_medium=181, identical_to_en=66, suspicious_log_low=18, suspicious_log_high=1
-- **Języki o najsłabszej jakości:** es(60.2, issues=59180), pl(60.5, issues=54156), de(71.4, issues=3460), zh_TW(82.9, issues=0), az(83.1, issues=1126)
+- **Ostatni audyt:** SLOW_MODE | 57 issue(s) / 100 entries | 2026-02-13T07:26:33.142798Z
+- **Top 5 typów problemów:** suspicious_log_medium=179, identical_to_en=57, suspicious_log_low=18, suspicious_log_high=3
+- **Języki o najsłabszej jakości:** es(60.3, issues=59306), pl(60.4, issues=54287), de(71.4, issues=3460), zh_TW(82.9, issues=0), az(83.1, issues=1126)
 - **Pliki:** `i18n/status/quality_audit_latest.json`, `i18n/status/quality_dashboard.json`, `i18n/status/quality_report.jsonl`
 
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#1** | od uruchomienia |
+| 🔄 Cykl aktualny | **#2** | od uruchomienia |
 | 🔑 Kluczy wyekstrahowanych | **6,243** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
@@ -213,7 +219,7 @@ IP: %s (scripts.on_look.admin_ip)
 ## ✅ CHECKLIST - Plan Pracy
 
 > **Aktualna faza:** AUTO_TRANSLATE  
-> **Aktualna kategoria:** es
+> **Aktualna kategoria:** pl
 
 
 ### 🔄 Faza 1: 🎮 Canary Server
@@ -282,44 +288,44 @@ IP: %s (scripts.on_look.admin_ip)
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #     1 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #     2 │
 ├─────────────────────────────────────────────────────────────────┤
-│ Status:    🟢 RUNNING                                │
-│ Tryb:      🤖 AUTO_TRANSLATE (parallel_start)        │
-│ Kategoria: 📁 ES                                     │
+│ Status:    ⛔ INTERRUPTED                            │
+│ Tryb:      🤖 AUTO_TRANSLATE (signal)                │
+│ Kategoria: 📁 PL                                     │
 ├─────────────────────────────────────────────────────────────────┤
-│ Status: running                                               │
-│ Plik: quests.json                                             │
-│ Postęp: 0/0 keys                                              │
-│ Info: parallel auto translate                                 │
+│ Status: interrupted                                           │
+│ Plik: -                                                       │
+│ Postęp: 0/0 units                                             │
+│ Info: stopping                                                │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2026-02-13T07:25:55Z           │
+│ ❤️ Heartbeat: 2026-02-13T07:28:10Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 🧾 Ostatnie akcje (dla czytelności)
 
+- 2026-02-13 07:27:43 | AUTO_TRANSLATE:parallel_start | es | ok | otclient_modules.json
+- 2026-02-13 07:27:18 | AUTO_TRANSLATE:auto_done | pl | ok | otclient_modules.json
+- 2026-02-13 07:27:06 | AUTO_TRANSLATE:auto_start | pl | ok | otclient_modules.json
 - 2026-02-13 07:25:55 | AUTO_TRANSLATE:parallel_start | es | ok | quests.json
 - 2026-02-13 07:25:29 | AUTO_TRANSLATE:auto_done | pl | ok | scripts.json
 - 2026-02-13 07:25:13 | AUTO_TRANSLATE:auto_start | pl | ok | scripts.json
-- 2026-02-13 06:56:55 | AUTO_TRANSLATE:auto_done | pl | ok | quests.json
-- 2026-02-13 06:56:45 | AUTO_TRANSLATE:auto_start | pl | ok | quests.json
-- 2026-02-13 06:50:19 | AUTO_TRANSLATE:auto_start | pl | ok | monsters.json
 
 ---
 
 ## 🔁 W tym cyklu
 
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+40, skipped+0) — lang=pl file=scripts.json strict_skipped_done=2130 guard_fail=5 placeholder=0 command=5 pipe=0
-- 🔧 MIGRATION: zakończono kategorię [spells] → ok (keys+0, files+0) — migration finished
-- 🔧 MIGRATION: mini-batch stop [spells] → ok (keys+0) — no new data
-- 🔧 MIGRATION: mini-batch [spells] → ok (keys+0) — mini_batch=1 processed=10/20
+- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [es] → ok (translated+49, skipped+0) — parallel lang=es file=otclient_modules.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+33, skipped+0) — lang=pl file=otclient_modules.json strict_skipped_done=1447 guard_fail=15 placeholder=0 command=0 pipe=0
 - 🔧 MIGRATION: zakończono kategorię [scripts] → ok (keys+0, files+0) — migration finished
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+4, skipped+0) — lang=pl file=quests.json strict_skipped_done=606 guard_fail=2 placeholder=0 command=2 pipe=0
-- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [es] → ok (translated+50, skipped+0) — parallel lang=es file=npc.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+50, skipped+0) — lang=pl file=items.json strict_skipped_done=6094
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+18, skipped+0) — lang=pl file=cpp.json strict_skipped_done=859
-- 🔧 MIGRATION: zakończono kategorię [scripts] → ok (keys+0, files+0) — migration finished
+- 🔧 MIGRATION: zakończono kategorię [actions] → ok (keys+0, files+0) — migration finished
+- 🔧 MIGRATION: mini-batch stop [actions] → ok (keys+0) — no new data
+- 🔧 MIGRATION: mini-batch [actions] → ok (keys+0) — mini_batch=1 processed=10/20
+- 🔧 MIGRATION: zakończono kategorię [actions] → ok (keys+0, files+0) — migration finished
+- 🔧 MIGRATION: mini-batch stop [actions] → ok (keys+0) — no new data
+- 🔧 MIGRATION: mini-batch [actions] → ok (keys+0) — mini_batch=1 processed=10/20
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+26, skipped+0) — lang=pl file=client.json strict_skipped_done=216 guard_fail=1 placeholder=0 command=1 pipe=0
 
 
 
@@ -329,7 +335,7 @@ IP: %s (scripts.on_look.admin_ip)
 - Cykle: **395**
 - MIGRATION: **+320** kluczy, **0** plików `.lua`
 - Kategorie dotknięte: actions, creaturescripts, items, quests, scripts, spells, talkactions
-- Błędy: **605**
+- Błędy: **607**
 
 
 ---
@@ -343,7 +349,7 @@ IP: %s (scripts.on_look.admin_ip)
 | ⬜ Plików bez kluczy | **407** | czyste (brak hardcoded) |
 | 🔑 Kluczy wyciągniętych | **6243** | przez workera w tej sesji |
 | 🌍 Języków | **53** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#1** | continuous mode |
+| 🔄 Cykli wykonanych | **#2** | continuous mode |
 
 ---
 
@@ -553,7 +559,7 @@ IP: %s (scripts.on_look.admin_ip)
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #1 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #2 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -640,7 +646,7 @@ IP: %s (scripts.on_look.admin_ip)
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2026-02-13 07:26:01  
+📅 Auto-updated by Worker v1.1 | Last: 2026-02-13 07:28:13  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

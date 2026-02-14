@@ -13153,10 +13153,16 @@ def _load_external_dict(path: str):
         return {}
 
 EXT_SIMPLE_TRANSLATIONS = _load_external_dict(os.path.join(status_dir, "simple_translations.json"))
+BASE_SIMPLE_TRANSLATIONS = _load_external_dict(os.path.join(status_dir, "simple_translations_base.json"))
 EXT_WORD_TRANSLATIONS = _load_external_dict(os.path.join(status_dir, "word_translations.json"))
 
-def _merged_lang_dict(external_dict: dict, fallback_dict: dict, lang: str):
+def _merged_lang_dict(external_dict: dict, fallback_dict: dict, lang: str, base_dict: dict = None):
     merged = {}
+    # Layer 1: base dict from JSON file (lowest priority)
+    if base_dict:
+        base_lang = base_dict.get(lang, {}) if isinstance(base_dict.get(lang, {}), dict) else {}
+        merged.update(base_lang)
+    # Layer 2+3: inline fallback + external override (with PL/ES protection)
     ext_lang = external_dict.get(lang, {}) if isinstance(external_dict.get(lang, {}), dict) else {}
     fb_lang = fallback_dict.get(lang, {}) if isinstance(fallback_dict.get(lang, {}), dict) else {}
     # Dla pilota jakości PL/ES nie pozwalamy, by zewnętrzny słownik nadpisywał
@@ -13170,8 +13176,8 @@ def _merged_lang_dict(external_dict: dict, fallback_dict: dict, lang: str):
     return merged
 
 SIMPLE_TRANSLATIONS_ACTIVE = {
-    lang: _merged_lang_dict(EXT_SIMPLE_TRANSLATIONS, SIMPLE_TRANSLATIONS, lang)
-    for lang in set(list(SIMPLE_TRANSLATIONS.keys()) + list(EXT_SIMPLE_TRANSLATIONS.keys()))
+    lang: _merged_lang_dict(EXT_SIMPLE_TRANSLATIONS, SIMPLE_TRANSLATIONS, lang, BASE_SIMPLE_TRANSLATIONS)
+    for lang in set(list(SIMPLE_TRANSLATIONS.keys()) + list(EXT_SIMPLE_TRANSLATIONS.keys()) + list(BASE_SIMPLE_TRANSLATIONS.keys()))
 }
 
 WORD_TRANSLATIONS_ACTIVE = {
@@ -20800,6 +20806,31 @@ for jf in json_files:
     except Exception:
         continue
 
+# Helper: detect nontranslatable text (proper nouns, identifiers, URLs etc.)
+def _is_nontranslatable_tier(text):
+    t = str(text or "").strip()
+    if not t:
+        return True
+    if re.search(r"https?://|www\.", t, re.IGNORECASE):
+        return True
+    if "{{" in t or "}}" in t or "{%" in t or "%}" in t:
+        return True
+    if re.search(r"(?:^|\s)/(?:[A-Za-z0-9_.-]+/){1,}[A-Za-z0-9_.-]+", t):
+        return True
+    tokens = [tok for tok in re.split(r"\s+", t) if tok]
+    if tokens and all(re.fullmatch(r"[A-Za-z0-9_.:-]+", tok) for tok in tokens):
+        if any(("/" in tok) or ("_" in tok) or ("-" in tok) or re.search(r"\d", tok) for tok in tokens):
+            return True
+        if len(tokens) == 1 and "." in tokens[0]:
+            return True
+    cleaned = re.sub(r'__PH\d+__|[{}\[\]|%$0-9\s_\-:;.,!?/\\()<>\"\'`~+=*&^#@]', '', t)
+    if not cleaned:
+        return True
+    words = [w for w in re.findall(r"[A-Za-zÀ-ÖØ-öø-ÿ]{2,}", t)]
+    if len(words) <= 1 and t.upper() == t and len(t) <= 20:
+        return True
+    return False
+
 # Oblicz pokrycie per język
 lang_dirs = sorted([d for d in os.listdir(I18N_DIR)
                     if os.path.isdir(os.path.join(I18N_DIR, d)) and d != "en" and d != "status"
@@ -20808,6 +20839,7 @@ lang_dirs = sorted([d for d in os.listdir(I18N_DIR)
 lang_coverage = {}
 for lang in lang_dirs:
     translated = 0
+    exempt = 0
     total = 0
     for jf, en_data in en_data_all.items():
         lang_path = os.path.join(I18N_DIR, lang, jf)
@@ -20822,10 +20854,22 @@ for lang in lang_dirs:
             if k in ld:
                 total += 1
                 lv = str(ld[k])
-                if not lv.startswith("[") and lv != str(v):
+                if lv.startswith("["):
+                    continue  # [EN] prefix — pending
+                if lv != str(v):
                     translated += 1
+                elif _is_nontranslatable_tier(str(v)):
+                    exempt += 1
+                    translated += 1  # count exempt as effectively translated
     cov = round(translated / total * 100, 1) if total > 0 else 0.0
-    lang_coverage[lang] = {"coverage": cov, "translated": translated, "total": total}
+    cov_genuine = round((translated - exempt) / total * 100, 1) if total > 0 else 0.0
+    lang_coverage[lang] = {
+        "coverage": cov,
+        "coverage_genuine": cov_genuine,
+        "translated": translated,
+        "exempt": exempt,
+        "total": total,
+    }
 
 # Guard fail rate z ostatnich 200 wpisów
 guard_fail_per_lang = defaultdict(lambda: {"translated": 0, "guard_fail": 0})
@@ -20888,6 +20932,8 @@ for tier_name, tier_langs, target in [
     for lang in langs_in_tier:
         lc = lang_coverage.get(lang, {"coverage": 0})
         cov = lc["coverage"]
+        cov_genuine = lc.get("coverage_genuine", cov)
+        exempt_count = lc.get("exempt", 0)
         tier_coverages.append(cov)
         
         gf = guard_fail_per_lang.get(lang, {"translated": 0, "guard_fail": 0})
@@ -20907,6 +20953,8 @@ for tier_name, tier_langs, target in [
         gate_ok = bool(coverage_pass and quality_pass)
         lang_details[lang] = {
             "coverage": cov,
+            "coverage_genuine": cov_genuine,
+            "identical_to_en_exempt": exempt_count,
             "target": target,
             "gate_pass": gate_ok,
             "coverage_pass": coverage_pass,

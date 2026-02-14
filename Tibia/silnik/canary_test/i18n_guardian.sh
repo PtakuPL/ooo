@@ -41,6 +41,9 @@ MANUAL_START_CONTEXT_TS_FILE="$WORK_DIR/.guardian_manual_context_last_ts"
 MANUAL_START_CONTEXT_LOG_INTERVAL_SEC="${GUARDIAN_MANUAL_CONTEXT_LOG_INTERVAL_SEC:-300}"
 MANUAL_START_LIMIT_LOG_TS_FILE="$WORK_DIR/.guardian_manual_limit_last_log_ts"
 MANUAL_START_LIMIT_LOG_INTERVAL_SEC="${GUARDIAN_MANUAL_LIMIT_LOG_INTERVAL_SEC:-60}"
+GUARDIAN_ENFORCE_TRANSLATION_CONTRACT="${GUARDIAN_ENFORCE_TRANSLATION_CONTRACT:-true}"
+GUARDIAN_REQUIRE_USE_GT="${GUARDIAN_REQUIRE_USE_GT:-true}"
+GUARDIAN_REQUIRE_NO_GIT="${GUARDIAN_REQUIRE_NO_GIT:-true}"
 
 export HOME="/home/ptaku"
 export PATH="/usr/local/bin:/usr/bin:/bin:$PATH"
@@ -313,6 +316,32 @@ release_daemon_lock() {
         rm -rf "$DAEMON_LOCK_DIR" 2>/dev/null || true
         write_daemon_state "stopped" "$source" "$$" "daemon_exit" "$owner_pid" "$owner_source" "0"
     fi
+}
+
+ensure_daemon_lock_ownership() {
+    local source="${1:-manual}"
+    local owner_pid owner_source
+
+    if [ -d "$DAEMON_LOCK_DIR" ]; then
+        owner_pid=$(cat "$DAEMON_LOCK_DIR/pid" 2>/dev/null || echo "")
+        owner_source=$(cat "$DAEMON_LOCK_DIR/source" 2>/dev/null || echo "")
+        if [ "$owner_pid" = "$$" ]; then
+            date +%s > "$DAEMON_LOCK_DIR/ts" 2>/dev/null || true
+            echo "$source" > "$DAEMON_LOCK_DIR/source" 2>/dev/null || true
+            return 0
+        fi
+        if [ -n "$owner_pid" ] && guardian_daemon_owner_alive "$owner_pid"; then
+            log_guardian "🛑 Guardian daemon utracił lock (owner_pid=$owner_pid, owner_source=${owner_source:-unknown}). Zatrzymuję pid=$$."
+            write_daemon_state "blocked" "$source" "$$" "lost_daemon_lock" "$owner_pid" "$owner_source" "0"
+            return 1
+        fi
+    fi
+
+    if acquire_daemon_lock "$source"; then
+        return 0
+    fi
+    log_guardian "🛑 Guardian daemon nie odzyskał locka (source=$source). Zatrzymuję pid=$$."
+    return 1
 }
 
 load_guardian_profile() {
@@ -1014,6 +1043,44 @@ worker_running() {
     return 1
 }
 
+worker_translation_contract_ok() {
+    local pid cmdline
+    local -a missing
+    missing=()
+
+    pid=$(cat "$PID_FILE" 2>/dev/null || echo "")
+    [[ "$pid" =~ ^[0-9]+$ ]] || {
+        echo "pid_missing_or_invalid"
+        return 1
+    }
+    [ -r "/proc/$pid/cmdline" ] || {
+        echo "worker_cmdline_unreadable(pid=$pid)"
+        return 1
+    }
+
+    cmdline=$(tr '\0' ' ' < "/proc/$pid/cmdline" 2>/dev/null || true)
+    [ -n "$cmdline" ] || {
+        echo "worker_cmdline_empty(pid=$pid)"
+        return 1
+    }
+
+    if truthy "$GUARDIAN_ENFORCE_TRANSLATION_CONTRACT"; then
+        [[ "$cmdline" == *"--translations-only"* ]] || missing+=("translations_only")
+    fi
+    if truthy "$GUARDIAN_REQUIRE_USE_GT"; then
+        [[ "$cmdline" == *"--use-gt"* ]] || missing+=("use_gt")
+    fi
+    if truthy "$GUARDIAN_REQUIRE_NO_GIT"; then
+        [[ "$cmdline" == *"--no-git"* ]] || missing+=("no_git")
+    fi
+
+    if [ "${#missing[@]}" -gt 0 ]; then
+        echo "missing_flag_${missing[0]} pid=$pid cmdline='$cmdline'"
+        return 1
+    fi
+    return 0
+}
+
 # ── Health check: heartbeat, postęp, guard_fail trend ──────────────────────
 # Zwraca: healthy | degraded | stuck
 # Zapisuje metryki do guardian_health.json
@@ -1257,9 +1324,18 @@ if ! worker_running; then
     log_guardian "⚠️ Worker nie działa - restartuję..."
     restart_worker "worker_missing"
     else
+        PID=$(cat "$PID_FILE" 2>/dev/null)
+        CONTRACT_REASON=""
+        if ! CONTRACT_REASON=$(worker_translation_contract_ok); then
+            log_guardian "🚨 Worker contract broken (PID: $PID) — $CONTRACT_REASON"
+            restart_worker "translation_contract" || true
+            trap - RETURN
+            release_run_lock
+            return 0
+        fi
+
         # Worker działa — sprawdź zdrowie
         HEALTH=$(check_worker_health)
-        PID=$(cat "$PID_FILE" 2>/dev/null)
 
         case "$HEALTH" in
             healthy)
@@ -1355,8 +1431,18 @@ case "${1:-}" in
         log_guardian "▶️ Guardian daemon start (pid=$$, source=$daemon_source)"
         trap 'rm -f "$GUARDIAN_PID_FILE"; release_daemon_lock "$daemon_source"; exit 0' SIGINT SIGTERM EXIT
         while true; do
+            if ! ensure_daemon_lock_ownership "$daemon_source"; then
+                break
+            fi
             run_once
-            sleep 30
+            _daemon_sleep=30
+            while [ "$_daemon_sleep" -gt 0 ]; do
+                sleep 1
+                _daemon_sleep=$((_daemon_sleep - 1))
+                if ! ensure_daemon_lock_ownership "$daemon_source"; then
+                    break 2
+                fi
+            done
         done
         ;;
     *)

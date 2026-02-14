@@ -90,6 +90,16 @@ TIER3_WEIGHT="${TIER3_WEIGHT:-1}"                  # Tier 3 = baseline
 # items (16894), npc (13769), monsters (5915), server (2574), spells, quests...
 CATEGORY_TRANSLATE_PRIORITY="items.json npc.json monsters.json server.json spells.json quests.json scripts.json actions.json raids.json"
 
+# ==== MULTILANG WAVE: LT/CS/EL/IT domain boost ====
+# Dedykowany dispatch wave dla języków z bardzo niskim coverage w kluczowych domenach.
+# Wymuszony priorytet domen: items.json (desc) → npc.json → quests.json
+# Domain floor: minimum 25% genuine coverage w items.json przed przejściem do npc/quests
+MULTILANG_WAVE_ENABLED="${MULTILANG_WAVE_ENABLED:-true}"
+MULTILANG_WAVE_LANGS="${MULTILANG_WAVE_LANGS:-lt cs el it}"
+MULTILANG_WAVE_DOMAIN_ORDER="${MULTILANG_WAVE_DOMAIN_ORDER:-items.json npc.json quests.json}"
+MULTILANG_WAVE_DOMAIN_FLOOR_PCT="${MULTILANG_WAVE_DOMAIN_FLOOR_PCT:-25}"   # min % genuine coverage w domenie zanim przejdzie do następnej
+MULTILANG_WAVE_WEIGHT="${MULTILANG_WAVE_WEIGHT:-2}"                        # boost weight dla tych języków w wave
+
 # Tryb globalnego dowożenia jakości 100% (coverage + jakość)
 GLOBAL_QUALITY_MODE="${GLOBAL_QUALITY_MODE:-false}"
 GLOBAL_QUALITY_COVERAGE_TARGET="${GLOBAL_QUALITY_COVERAGE_TARGET:-100}"
@@ -19341,6 +19351,8 @@ select_auto_translate_target_strict() {
     export STRICT_SELECTOR_CACHE_TTL_CYCLES
     export TIER1_LANGS TIER2_LANGS TIER1_WEIGHT TIER2_WEIGHT TIER3_WEIGHT
     export CATEGORY_TRANSLATE_PRIORITY
+    export MULTILANG_WAVE_ENABLED MULTILANG_WAVE_LANGS MULTILANG_WAVE_DOMAIN_ORDER
+    export MULTILANG_WAVE_DOMAIN_FLOOR_PCT MULTILANG_WAVE_WEIGHT
     python3 << 'AUTOSTRICTPY'
 import json
 import os
@@ -19741,6 +19753,79 @@ if candidates:
             return CATEGORY_PRIO_MAP_T3.get(json_file, DEFAULT_CAT_PRIO_T3)
         return CATEGORY_PRIO_MAP.get(json_file, DEFAULT_CAT_PRIO)
 
+    # === MULTILANG WAVE: LT/CS/EL/IT domain boost with floor gate ===
+    # Wymusza priorytet domen (items→npc→quests) dla wskazanych języków.
+    # Jeśli genuine coverage w domenie < floor_pct, blokuje przejście do kolejnej domeny.
+    MULTILANG_WAVE_ENABLED_PY = str(os.environ.get("MULTILANG_WAVE_ENABLED", "true")).strip().lower() in {"1", "true", "yes", "on"}
+    MULTILANG_WAVE_LANGS_PY = set(split_langs(os.environ.get("MULTILANG_WAVE_LANGS", "lt cs el it")))
+    MULTILANG_WAVE_DOMAIN_ORDER_PY = [d.strip() for d in os.environ.get("MULTILANG_WAVE_DOMAIN_ORDER", "items.json npc.json quests.json").split() if d.strip()]
+    MULTILANG_WAVE_FLOOR_PCT = _to_float(os.environ.get("MULTILANG_WAVE_DOMAIN_FLOOR_PCT", "25"), 25.0)
+    MULTILANG_WAVE_WEIGHT_PY = max(1, _to_int(os.environ.get("MULTILANG_WAVE_WEIGHT", "2"), 2))
+
+    multilang_wave_active = False
+    multilang_wave_gated_langs = {}  # lang -> {"allowed_domain": ..., "coverage": {...}}
+    multilang_wave_candidates = []
+
+    if MULTILANG_WAVE_ENABLED_PY and MULTILANG_WAVE_LANGS_PY and MULTILANG_WAVE_DOMAIN_ORDER_PY:
+        # Oblicz genuine coverage per lang/domain dla wave langs
+        for wave_lang in MULTILANG_WAVE_LANGS_PY:
+            if wave_lang not in targets:
+                continue
+            allowed_domain = MULTILANG_WAVE_DOMAIN_ORDER_PY[0]  # default: first domain
+            domain_coverages = {}
+            for domain_file in MULTILANG_WAVE_DOMAIN_ORDER_PY:
+                en_data = en_data_by_file.get(domain_file, {})
+                if not en_data:
+                    continue
+                lang_path = os.path.join(I18N_DIR, wave_lang, domain_file)
+                genuine_count = 0
+                total_count = len(en_data)
+                if os.path.exists(lang_path):
+                    try:
+                        with open(lang_path, encoding="utf-8") as f:
+                            lang_data = json.load(f)
+                        for key, en_val in en_data.items():
+                            if key in lang_data:
+                                val = lang_data[key]
+                                if val and str(val) != str(en_val) and not str(val).startswith("["):
+                                    genuine_count += 1
+                    except Exception:
+                        pass
+                cov_pct = (genuine_count / total_count * 100) if total_count > 0 else 0.0
+                domain_coverages[domain_file] = round(cov_pct, 2)
+
+            # Wyznacz dozwoloną domenę: pierwsza z floor < MULTILANG_WAVE_FLOOR_PCT
+            for d_idx, domain_file in enumerate(MULTILANG_WAVE_DOMAIN_ORDER_PY):
+                cov = domain_coverages.get(domain_file, 0.0)
+                if cov < MULTILANG_WAVE_FLOOR_PCT:
+                    allowed_domain = domain_file
+                    break
+                # Ta domena ma >= floor, sprawdź następną
+                if d_idx + 1 < len(MULTILANG_WAVE_DOMAIN_ORDER_PY):
+                    allowed_domain = MULTILANG_WAVE_DOMAIN_ORDER_PY[d_idx + 1]
+                else:
+                    allowed_domain = None  # wszystkie domeny mają >= floor
+
+            multilang_wave_gated_langs[wave_lang] = {
+                "allowed_domain": allowed_domain,
+                "domain_coverages": domain_coverages,
+            }
+
+        # Przefiltruj kandydatów wave: dla wave langs, trzymaj tylko dozwoloną domenę
+        if multilang_wave_gated_langs:
+            for cand in candidates:
+                cl = cand.get("lang", "")
+                cf = cand.get("json_file", "")
+                if cl in multilang_wave_gated_langs:
+                    gate_info = multilang_wave_gated_langs[cl]
+                    allowed = gate_info.get("allowed_domain")
+                    if allowed and cf == allowed:
+                        multilang_wave_candidates.append(cand)
+                    elif allowed is None:
+                        # Wszystkie wave domeny mają >= floor => normalny scheduling
+                        pass
+            multilang_wave_active = bool(multilang_wave_candidates)
+
     # Interleave: group by language, sort within language by category priority
     per_lang = {}
     for cand in candidates:
@@ -19811,6 +19896,35 @@ if candidates:
 
     if ordered_candidates:
         candidates = ordered_candidates
+
+    # === MULTILANG WAVE: wstaw wave candidates co MULTILANG_WAVE_WEIGHT kroków ===
+    # Dodaje boosted kandydatów wave (items.json dla lt/cs/el/it) do rotacji
+    if multilang_wave_active and multilang_wave_candidates:
+        boosted = []
+        wave_set = set()
+        for wc in multilang_wave_candidates:
+            wk = f"{wc['lang']}:{wc['json_file']}"
+            if wk not in wave_set:
+                boosted.append(wc)
+                wave_set.add(wk)
+        # Wstaw wave kandydatów na początek co MULTILANG_WAVE_WEIGHT_PY pozycji
+        merged = []
+        wave_idx = 0
+        for ci, c in enumerate(candidates):
+            ck = f"{c['lang']}:{c['json_file']}"
+            if ci > 0 and ci % (MULTILANG_WAVE_WEIGHT_PY + 1) == 0 and wave_idx < len(boosted):
+                bk = f"{boosted[wave_idx]['lang']}:{boosted[wave_idx]['json_file']}"
+                if bk not in {f"{x['lang']}:{x['json_file']}" for x in merged}:
+                    merged.append(boosted[wave_idx])
+                wave_idx += 1
+            if ck not in {f"{x['lang']}:{x['json_file']}" for x in merged}:
+                merged.append(c)
+        # Dodaj resztę wave candidates
+        for wi in range(wave_idx, len(boosted)):
+            bk = f"{boosted[wi]['lang']}:{boosted[wi]['json_file']}"
+            if bk not in {f"{x['lang']}:{x['json_file']}" for x in merged}:
+                merged.append(boosted[wi])
+        candidates = merged
 
     state = {}
     try:
@@ -20057,6 +20171,16 @@ if candidates:
         "bootstrap_forced_lang": bootstrap_forced_lang,
         "balance_forced": bool(balance_forced),
         "global_quality_mode": bool(global_quality_mode),
+        "multilang_wave": {
+            "enabled": bool(MULTILANG_WAVE_ENABLED_PY),
+            "active": bool(multilang_wave_active),
+            "langs": sorted(MULTILANG_WAVE_LANGS_PY),
+            "domain_order": MULTILANG_WAVE_DOMAIN_ORDER_PY,
+            "floor_pct": MULTILANG_WAVE_FLOOR_PCT,
+            "weight": MULTILANG_WAVE_WEIGHT_PY,
+            "gated_langs": multilang_wave_gated_langs,
+            "wave_candidates_count": len(multilang_wave_candidates),
+        },
         "priority_gate": {
             "enabled": bool(priority_gate_enabled),
             "active": bool(priority_gate_active),

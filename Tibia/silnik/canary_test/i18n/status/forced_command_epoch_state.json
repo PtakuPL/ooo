@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "updated_at_utc": "2026-02-14T15:38:53.420412Z",
+  "current_epoch_id": "d8347adf8dae5163",
+  "current_epoch_raw": "script_mtime=1771083106|script_size=934767|script_checkpoint=1771083106|restart_ts=1771083071|restart_cause=mtime|worker_pid=2382607",
+  "current_epoch_sources": {
+    "script_mtime": 1771083106,
+    "script_size": 934767,
+    "script_checkpoint": 1771083106,
+    "restart_ts": 1771083071,
+    "restart_cause": "mtime",
+    "restart_failure_streak": 0,
+    "worker_pid": 2382607,
+    "worker_cycle": 3
+  },
+  "current_epoch_first_seen_utc": "2026-02-14T15:33:06.526419Z",
+  "current_epoch_last_seen_utc": "2026-02-14T15:38:53.420412Z",
+  "current_epoch_baseline_ts_utc": "2026-02-14T15:31:04.747217Z",
+  "last_effective_baseline_ts_utc": "2026-02-14T15:31:04.747217Z",
+  "last_effective_baseline_source": "manual_config",
+  "auto_baseline_on_epoch_change": true,
+  "epoch_cooldown_seconds": 600,
+  "epoch_changed": false,
+  "last_reason": "manual_baseline_active",
+  "last_auto_baseline_ts_utc": "2026-02-14T15:31:04.747217Z",
+  "last_auto_baseline_epoch_id": "b467fa2955c72def",
+  "last_auto_baseline_reason": "epoch_changed",
+  "bootstrap_first_observation": true
+}

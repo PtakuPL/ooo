@@ -833,8 +833,8 @@ Wniosek:
 - ale SLA nadal nie jest osiągane przy długim cyklu, bo brakuje pollingu komendy wewnątrz długiego tłumaczenia.
 
 Nowe TODO dla status+guard+statusd:
-- [ ] `SGD-CMD-FAST-1`: statusd doctor ma raportować `p95/p99 forced_command_roundtrip_s` per 24h.
-- [ ] `SGD-CMD-FAST-2`: alert CRIT gdy `sla_met=false` dla >=3 kolejnych komend `AUTO N<=30`.
+- [x] `SGD-CMD-FAST-1`: statusd doctor ma raportować `p95/p99 forced_command_roundtrip_s` per 24h. (DONE 2026-02-14)
+- [x] `SGD-CMD-FAST-2`: alert CRIT gdy `sla_met=false` dla >=3 kolejnych komend `AUTO N<=30`. (DONE 2026-02-14)
 - [ ] `SGD-CMD-FAST-3`: dodać osobny kontrakt `mid_cycle_command_pickup` (czas od `received` do wejścia w `AUTO_TRANSLATE`).
 
 ### 11.5 Aktualizacja wykonania (2026-02-14 13:12 UTC) — stabilizacja telemetry forced commands
@@ -853,4 +853,119 @@ Wniosek:
 - natomiast SLA czasowe dla `AUTO N<=30` nadal pozostaje niespełnione.
 
 Dopisane TODO:
-- [ ] `SGD-CMD-FAST-4`: doctor ma osobno raportować `pending_age_s` i `exec_time_s = roundtrip_s - pending_age_s`, aby rozdzielić problem kolejki od problemu wykonania.
+- [x] `SGD-CMD-FAST-4`: doctor ma osobno raportować `pending_age_s` i `exec_time_s = roundtrip_s - pending_age_s`, aby rozdzielić problem kolejki od problemu wykonania. (DONE 2026-02-14)
+
+### 11.6 Aktualizacja wykonania (2026-02-14 14:07 UTC) — singleton guardian + contract runtime
+
+Zrobione:
+- ✅ Guardian ma lock ownership watchdog (`ensure_daemon_lock_ownership()`):
+  - daemon utrzymuje heartbeat locka,
+  - proces kończy się, gdy lock jest przejęty przez inną aktywną instancję.
+- ✅ Guardian egzekwuje kontrakt uruchomionego workera:
+  - wymagane flagi: `--translations-only`, `--use-gt`, `--no-git`,
+  - przy naruszeniu: restart `cause=translation_contract`.
+- ✅ Worker dostał dodatkowe preemption checkpoints, co zmniejsza latency komend:
+  - kontrolny test: `AUTO:cs:npc.json:1:ONCE` -> `pending_age_s=13`, `roundtrip_s=15`, `sla_met=true`.
+
+Nowe problemy wykryte:
+1. `start_all --stop` historycznie opiera się na PID files, więc po crashach może nie ubić wszystkich starszych daemonów.
+2. W środowisku nadal pojawiają się próby uruchomienia `source=manual` z `systemd --user`, co miesza z kanonicznym `source=start_all`.
+
+Nowe TODO:
+- [x] `SGD-ORCH-1` (P1): `i18n_start_all.sh --stop` ma kończyć wszystkie aktywne `guardian/statusd` po cmdline (z self-match guard), nie tylko pidfile owner. (DONE 2026-02-14 14:12 UTC)
+- [x] `SGD-ORCH-2` (P1): doctor check dla stale daemon-lock (`owner_pid` martwy, lock_age > 60s) + reason code webhook. (DONE 2026-02-14 14:31 UTC)
+- [x] `SGD-CMD-FAST-5` (P1): dodać telemetry `mid_cycle_command_pickup_s` (zależność od `SEM-CMD-1`). (DONE 2026-02-14 14:31 UTC)
+
+### 11.7 Aktualizacja wykonania (2026-02-14 14:31 UTC) — stale daemon-lock doctor + mid-cycle pickup telemetry
+
+Zrobione:
+- ✅ `i18n_worker_simple.sh`:
+  - wpisy `forced_command_metrics*.json` mają jawne pole `mid_cycle_command_pickup_s` (alias: `forced_command_mid_cycle_pickup_s`).
+- ✅ `i18n-statusd.sh --doctor`:
+  - nowy kontrakt `guardian_daemon_lock` (owner PID, lock age, stale threshold, `stale_owner_dead`),
+  - check `GUARDIAN_DAEMON_LOCK_STALE` (CRIT) gdy owner PID martwy i `lock_age_s >= 60`,
+  - check `GUARDIAN_DAEMON_LOCK_WARNING` dla przypadku owner dead, ale lock jeszcze poniżej progu,
+  - `forced_command_fast` raportuje teraz dodatkowo `p95_mid_cycle_command_pickup_s` + `latest_mid_cycle_command_pickup_s`.
+- ✅ `i18n-statusd.sh --alert-check`:
+  - nowe reason codes webhook: `guardian_daemon_lock_stale`, `guardian_daemon_lock_warning`,
+  - payload webhooka zawiera sekcję `guardian_daemon_lock` (age/owner/status/threshold).
+
+Walidacja:
+- ✅ `bash i18n-statusd.sh --doctor` działa po zmianach.
+- ✅ `statusd_doctor.json` zawiera sekcje `guardian_daemon_lock` i rozszerzone `forced_command_fast` z metryką pickup.
+- ✅ `bash i18n-statusd.sh --alert-check` działa (bez webhook URL: `WEBHOOK_NOT_CONFIGURED`, bez błędów kontraktu).
+
+Nowe problemy wykryte:
+1. Okno 24h nadal zawiera stare, wolne próbki forced command, więc `p95` bywa wysokie mimo aktualnych szybkich wyników (`latest` spełnia SLA).
+2. Brak automatycznego „rebaseline” po wdrożeniach wydajnościowych utrudnia ocenę, czy regresja jest bieżąca czy historyczna.
+
+Nowe TODO:
+- [x] `SGD-CMD-FAST-6` (P1): dodać segmentację metryk forced command na `before_fix`/`after_fix` (lub rolling short window), żeby doctor nie mieszał historycznych slow-samples z aktualnym stanem runtime. (DONE 2026-02-14 14:44 UTC)
+
+### 11.8 Aktualizacja wykonania (2026-02-14 14:44 UTC) — rolling operational window dla forced-command SLA
+
+Zrobione:
+- ✅ `statusd` liczy teraz dwa widoki SLA:
+  - `full_window` (24h, historyczny),
+  - `operational_window` (rolling 2h, operacyjny; aktywny jeśli ma min. 3 próbki).
+- ✅ `forced_command_fast` publikuje:
+  - `analysis_view`,
+  - `operational_window_ready`,
+  - `full_window{...}` i `operational_window{...}` z pełnymi p95/samples/status/severity.
+- ✅ Alerty doctor/webhook bazują na aktywnym widoku (`analysis_view`), więc nie są zdominowane przez dawny ogon 24h.
+
+Walidacja:
+- `statusd_doctor.json` pokazuje `analysis_view=operational_window`.
+- warning SLA zawiera jawnie: `view=operational_window` i `op=<samples>/<min_samples>`.
+
+Nowe problemy wykryte:
+1. Nadal brakuje ręcznego markera „post-fix epoch” dla sytuacji, gdy operator chce natychmiast odciąć historyczne dane niezależnie od rolling window.
+
+Nowe TODO:
+- [x] `SGD-CMD-FAST-7` (P1): dodać opcjonalny `forced_command_fast_baseline_ts` (manual/auto) do natychmiastowego przełączenia analizy na epokę post-fix. (DONE 2026-02-14 14:50 UTC)
+
+### 11.9 Aktualizacja wykonania (2026-02-14 14:50 UTC) — manual baseline epoch dla forced-command SLA
+
+Zrobione:
+- ✅ `forced_command_fast` dostał opcjonalny marker `baseline_ts_utc`:
+  - konfigurowalny przez progi `forced_command_fast.baseline_ts_utc`,
+  - z obsługą env override (`STATUSD_FORCED_COMMAND_FAST_BASELINE_TS` przy `STATUSD_USE_ENV_OVERRIDES=1`).
+- ✅ `statusd_doctor` publikuje:
+  - `baseline_ts_utc`,
+  - `baseline_ts_valid`,
+  - `baseline_effective_start_utc`,
+  - `operational_window.baseline_applied`.
+- ✅ Snapshot progów (`statusd_report` / `statusd_doctor` / `statusd_daily_report`) zawiera `baseline_ts_utc`.
+
+Nowe problemy wykryte:
+1. Brakuje automatycznego ustawienia baseline przy wykryciu istotnej zmiany runtime (np. deploy fixu), obecnie to opcja manualna.
+
+Nowe TODO:
+- [x] `SGD-CMD-FAST-8` (P1): auto-baseline na zmianę epoki runtime (np. hash/mtime skryptu) z cooldownem, aby ograniczyć manualną obsługę. (DONE 2026-02-14 15:05 UTC)
+
+### 11.10 Aktualizacja wykonania (2026-02-14 15:05 UTC) — domknięcie SGD-CMD-FAST-8 (auto-baseline runtime epoch)
+
+Zrobione:
+- [x] `SGD-CMD-FAST-8` (P1): auto-baseline na zmianę epoki runtime (np. hash/mtime skryptu) z cooldownem, aby ograniczyć manualną obsługę. (DONE 2026-02-14 15:05 UTC)
+- ✅ `statusd` utrzymuje stan epoki w `i18n/status/forced_command_epoch_state.json` i automatycznie mapuje `baseline_ts_utc` do bieżącej epoki runtime.
+- ✅ Konfiguracja operacyjna:
+  - `forced_command_fast.auto_baseline_on_epoch_change`,
+  - `forced_command_fast.epoch_cooldown_seconds`.
+- ✅ Kontrakt doctor/webhook/daily/report zawiera teraz:
+  - `runtime_epoch_id`,
+  - `baseline_source`,
+  - `auto_baseline_applied`,
+  - `auto_baseline_reason`,
+  - `epoch_changed`.
+- ✅ Doctor publikuje `recommended_action` dla forced-command SLA (mapowanie `analysis_view` + gotowość okna operacyjnego).
+
+Walidacja:
+- `bash i18n-statusd.sh --doctor` -> `forced_command_fast.runtime_epoch_id` + `recommended_action` obecne.
+- `bash i18n-statusd.sh --alert-check` -> payload webhook zawiera rozszerzoną sekcję `forced_command_fast`.
+- `bash i18n-statusd.sh --daily-report` -> `thresholds_snapshot.forced_command_fast` ma nowe pola epoki.
+
+Nowe problemy wykryte:
+1. W stanie bootstrap (pierwsza obserwacja epoki) baseline nie jest automatycznie ustawiany, co jest bezpieczne, ale może chwilowo mieszać dane historyczne.
+
+Nowe TODO:
+- [ ] `SGD-CMD-FAST-9` (P1): dodać opcjonalny bootstrap auto-baseline dla pierwszej obserwacji epoki (feature-flag), aby skrócić czas dojścia do czystego widoku post-fix.

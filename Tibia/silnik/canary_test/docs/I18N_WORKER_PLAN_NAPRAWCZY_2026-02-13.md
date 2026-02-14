@@ -1021,12 +1021,12 @@ NICE TO HAVE (optymalizacja):
 6. Restarty ręczne: czasem zostaje lock `.worker_simple.start.lock` (proces `sleep` trzyma FD), co blokuje szybki restart testowy.
 
 ### 9.3 Nowe zadania (priorytet)
-- [ ] WQ-FAST-1 (P1): dodać SLA komend wymuszonych (`AUTO N<=30 -> czas roundtrip <=45s`) + metrykę `forced_command_roundtrip_s` w status.
-- [ ] WQ-FAST-2 (P1): dodać high-priority poll `.worker_command` także między fazami cyklu (nie tylko na starcie).
-- [ ] WQ-LOCK-1 (P1): watchdog locka startowego — jeśli PID owner martwy, auto-clear lock + event do `errors.jsonl`.
-- [ ] WQ-QUEST-1 (P0): naprawić `simple` mapowania questowe (usunąć/zakazać mappingu `The chest is empty.` -> `You found.`).
-- [ ] WQ-QUEST-2 (P0): zachowanie końcowych spacji dla fragmentów konkatenowanych (kontrakt placeholder/concat).
-- [ ] WQ-TM-1 (P0): twardy gate TM dla EN-copy (translatable key: `translated==en` -> reject + kolejka repair).
+- [x] WQ-FAST-1 (P1): dodać SLA komend wymuszonych (`AUTO N<=30 -> czas roundtrip <=45s`) + metrykę `forced_command_roundtrip_s` w status. (DONE 2026-02-14)
+- [x] WQ-FAST-2 (P1): dodać high-priority poll `.worker_command` także między fazami cyklu (nie tylko na starcie). (DONE 2026-02-14)
+- [x] WQ-LOCK-1 (P1): watchdog locka startowego — jeśli PID owner martwy, auto-clear lock + event do `errors.jsonl`. (DONE 2026-02-14)
+- [x] WQ-QUEST-1 (P0): naprawić `simple` mapowania questowe (usunąć/zakazać mappingu `The chest is empty.` -> `You found.`). (DONE 2026-02-14)
+- [x] WQ-QUEST-2 (P0): zachowanie końcowych spacji dla fragmentów konkatenowanych (kontrakt placeholder/concat). (DONE 2026-02-14)
+- [x] WQ-TM-1 (P0): twardy gate TM dla EN-copy (translatable key: `translated==en` -> reject + kolejka repair). (DONE 2026-02-14)
 
 ### 9.4 Aktualizacja wykonania (2026-02-14 12:35 UTC) — SLA/preemption/status freshness + audyt LT/CS/EL/IT
 
@@ -1052,7 +1052,7 @@ Nowe problemy wykryte:
 
 Nowe zadania dopisane:
 - [x] `WQ-FAST-3` (P1): high-priority poll `.worker_command` wewnątrz `auto_translate_keys` co X kluczy (mid-batch interrupt point). (DONE 2026-02-14 13:12 UTC)
-- [ ] `WQ-FAST-4` (P1): osobna „fast lane” dla komend operatorskich (`AUTO N<=30`) z natychmiastowym przejściem przez dispatcher.
+- [x] `WQ-FAST-4` (P1): osobna „fast lane” dla komend operatorskich (`AUTO N<=30`) z natychmiastowym przejściem przez dispatcher. (DONE 2026-02-14 14:07 UTC)
 - [x] `WQ-QUEST-IT-1` (P0): naprawa trailing-space contract dla `it/quests.json` + test regresji concat fragmentów. (DONE 2026-02-14 13:12 UTC)
 - [x] `WQ-NPC-SHORT-1` (P0): dedykowany słownik krótkich dialogów NPC (bye/ok/then not/greetings) dla LT/CS/EL/IT, z hard reject EN-copy. (DONE 2026-02-14 13:12 UTC)
 
@@ -1086,5 +1086,127 @@ Nowe problemy wykryte:
 2. Część opóźnienia nadal bierze się z kolejki wejścia do aktywnego cyklu (`pending_age_s` bywa 30-60s).
 
 Nowe TODO:
-- [ ] `WQ-FAST-5` (P1): zejść z `pending_age_s` do `<=15s` dla komend operatorskich (obecnie piki 34-59s).
-- [ ] `WQ-FAST-6` (P1): zejść z `roundtrip_s` do `<=45s` dla `AUTO N<=30` (obecnie 104-169s).
+- [x] `WQ-FAST-5` (P1): zejść z `pending_age_s` do `<=15s` dla komend operatorskich (obecnie piki 34-59s). (DONE 2026-02-14 14:07 UTC, smoke: `pending_age_s=13`)
+- [x] `WQ-FAST-6` (P1): zejść z `roundtrip_s` do `<=45s` dla `AUTO N<=30` (obecnie 104-169s). (DONE 2026-02-14 14:07 UTC, smoke: `roundtrip_s=15`)
+
+### 9.6 Aktualizacja wykonania (2026-02-14 14:07 UTC) — domknięcie fast-lane SLA + kontrakt guardiana
+
+Zrobione:
+- ✅ `WQ-FAST-4` domknięte runtime:
+  - operator fast-lane dla `AUTO N<=30`,
+  - pre-selekcja kandydatów i redukcja kosztu strict-recheck.
+- ✅ `WQ-FAST-5` domknięte wykonawczo:
+  - `sleep_with_forced_command_wakeup()` (przerywalny sleep na `.worker_command`),
+  - dodatkowe preemption check przed `repair/audit/validation`,
+  - przerwanie `parallel langs`, gdy jest pending komenda.
+- ✅ `WQ-FAST-6` domknięte w smoke teście wymuszenia:
+  - `AUTO:cs:npc.json:1:ONCE` -> `pending_age_s=13`, `roundtrip_s=15`, `sla_met=true`.
+- ✅ Guardian twardo egzekwuje kontrakt tłumaczeń przy aktywnym workerze:
+  - wymagane flagi runtime: `--translations-only`, `--use-gt`, `--no-git`,
+  - przy naruszeniu kontraktu: restart `cause=translation_contract`.
+- ✅ Guardian daemon ma teraz ochronę ownership locka:
+  - cykliczny check `ensure_daemon_lock_ownership()`,
+  - exit procesu, gdy lock przejmuje inna instancja.
+
+Nowe problemy wykryte:
+1. Orkiestracja nadal bywa niestabilna, gdy lock/pidfile jest niespójny po wcześniejszych crashach.
+2. `i18n_start_all.sh --stop` operuje głównie na PID file; historycznie może zostawić starszy daemon uruchomiony.
+3. Zewnętrzne uruchamianie przez `systemd --user` (source=`manual`) nadal potrafi mieszać z kanonicznym startem `start_all`.
+
+Nowe TODO:
+- [ ] `WQ-FAST-7` (P1): utrzymać SLA na oknie 24h (`p95 pending_age<=15s`, `p95 roundtrip<=45s`, min 20 próbek `AUTO N<=30`).
+- [x] `WQ-ORCH-1` (P1): rozszerzyć `i18n_start_all.sh --stop` o kill wszystkich matching daemonów po cmdline (nie tylko PID file owner). (DONE 2026-02-14 14:12 UTC)
+- [ ] `WQ-QUALITY-55-1` (P0): uruchomić stałą pętlę audytu gramatyczno-stylistycznego dla wszystkich 55 języków, osobno dla `items/npc/quests`.
+
+### 9.7 Aktualizacja wykonania (2026-02-14 14:31 UTC) — `mid_cycle_command_pickup` + stale-lock watchdog w statusd
+
+Zrobione:
+- ✅ Worker telemetry:
+  - `forced_command_metrics*.json` ma jawne pole `mid_cycle_command_pickup_s` (alias `forced_command_mid_cycle_pickup_s`).
+- ✅ Statusd doctor:
+  - `forced_command_fast` publikuje `p95_mid_cycle_command_pickup_s` i `latest_mid_cycle_command_pickup_s`,
+  - nowa sekcja `guardian_daemon_lock` z polami owner/age/threshold/state.
+- ✅ Alerting:
+  - webhook ma reason codes `guardian_daemon_lock_stale` i `guardian_daemon_lock_warning`,
+  - payload zawiera obiekt `guardian_daemon_lock`.
+
+Walidacja:
+- `bash i18n-statusd.sh --doctor` -> nowe sekcje są obecne w `statusd_doctor.json`.
+- `bash i18n-statusd.sh --alert-check` -> działa po zmianie, bez błędów kontraktu (bez URL: `WEBHOOK_NOT_CONFIGURED`).
+
+Nowe problemy wykryte:
+1. Historyczne próbki (sprzed poprawek preemption) nadal zawyżają 24h `p95`, mimo aktualnego `latest` spełniającego SLA.
+2. Przy braku segmentacji czasowej trudniej automatycznie wyciągnąć wniosek „regresja teraz” vs „stary dług telemetryczny”.
+
+Nowe TODO:
+- [x] `WQ-FAST-8` (P1): dodać segmentację/rebaseline forced-command SLA (np. `post_fix_only` window), żeby doctor i alerty nie bazowały na pre-fix historii. (DONE 2026-02-14 14:44 UTC)
+
+### 9.8 Aktualizacja wykonania (2026-02-14 14:44 UTC) — segmentacja SLA forced commands (rolling op window)
+
+Zrobione:
+- ✅ `statusd` liczy i publikuje dwa profile SLA:
+  - `full_window` (24h),
+  - `operational_window` (2h, min 3 próbki).
+- ✅ Aktywny profil jest jawny (`analysis_view`) i używany przez doctor do oceny severity/status.
+- ✅ Kontrakt forced metrics pozostał kompatybilny, a nowe pola są addytywne.
+
+Walidacja:
+- `statusd_doctor.json` zawiera:
+  - `analysis_view`,
+  - `operational_window_ready`,
+  - `full_window{...}`,
+  - `operational_window{...}`.
+- warning SLA zawiera `view=operational_window` i jawne `op=<samples>/<min_samples>`.
+
+Nowe problemy wykryte:
+1. Rolling 2h zmniejsza wpływ historii, ale nie daje operatorowi ręcznego "cut-over now" po dużym fixie.
+
+Nowe TODO:
+- [x] `WQ-FAST-9` (P1): dodać opcjonalny `baseline_ts` dla forced-command SLA (manualny marker epoki post-fix). (DONE 2026-02-14 14:50 UTC)
+
+### 9.9 Aktualizacja wykonania (2026-02-14 14:50 UTC) — baseline epoch dla forced SLA
+
+Zrobione:
+- ✅ `statusd` obsługuje opcjonalny marker epoki `baseline_ts_utc` dla forced-command SLA.
+- ✅ Marker jest publikowany do telemetry:
+  - `forced_command_fast.baseline_ts_utc`,
+  - `forced_command_fast.baseline_ts_valid`,
+  - `forced_command_fast.baseline_effective_start_utc`,
+  - `forced_command_fast.operational_window.baseline_applied`.
+- ✅ Snapshoty progów mają teraz `forced_command_fast.baseline_ts_utc`.
+
+Walidacja:
+- `bash i18n-statusd.sh --doctor` -> warning SLA zawiera `baseline=...` (lub `baseline=-` jeśli nie ustawiony).
+- `statusd_doctor/report/daily` mają spójny kontrakt `baseline_ts_utc`.
+
+Nowe TODO:
+- [x] `WQ-FAST-10` (P1): auto-baseline po zmianie epoki runtime (deploy/hash), aby operator nie musiał ręcznie ustawiać markera. (DONE 2026-02-14 15:05 UTC)
+
+### 9.10 Aktualizacja wykonania (2026-02-14 15:05 UTC) — domknięcie WQ-FAST-10 (auto-baseline runtime epoch)
+
+Zrobione:
+- [x] `WQ-FAST-10` (P1): auto-baseline po zmianie epoki runtime (deploy/hash), aby operator nie musiał ręcznie ustawiać markera. (DONE 2026-02-14 15:05 UTC)
+- ✅ `i18n-statusd.sh` wykrywa epokę runtime dla forced-command SLA i utrzymuje stan w `i18n/status/forced_command_epoch_state.json`.
+- ✅ Detektor epoki opiera się o stabilne sygnały runtime:
+  - `script_mtime` + `script_size`,
+  - checkpoint `.worker_script_mtime`,
+  - `guardian_restart_state.last_restart_ts/cause`,
+  - aktywny `worker_pid`.
+- ✅ Auto-baseline działa z cooldownem (`forced_command_fast.epoch_cooldown_seconds`) i może być wyłączony przez `forced_command_fast.auto_baseline_on_epoch_change=false`.
+- ✅ Kontrakt `doctor/report/daily/webhook` ma teraz spójne pola:
+  - `runtime_epoch_id`,
+  - `baseline_source`,
+  - `auto_baseline_applied`,
+  - `auto_baseline_reason`,
+  - `recommended_action` (mapowanie `analysis_view` + `operational_window_ready`).
+
+Walidacja:
+- `bash i18n-statusd.sh --aggregate` -> `statusd_report.json.forced_command_fast_runtime` obecny.
+- `bash i18n-statusd.sh --doctor` -> `statusd_doctor.json.forced_command_fast.runtime_epoch_id` + `recommended_action` obecne.
+- `bash i18n-statusd.sh --daily-report` -> `statusd_daily_report.json.forced_command_fast_runtime` obecny.
+
+Nowe problemy wykryte:
+1. Przy pierwszej obserwacji nowego mechanizmu (brak wcześniejszego baseline state) auto-baseline celowo nie ustawia od razu markera (`first_observation_no_baseline`), więc krótkoterminowo może wrócić wpływ starszych próbek.
+
+Nowe TODO:
+- [ ] `WQ-FAST-11` (P1): dodać kontrolowany tryb bootstrap dla pierwszej obserwacji epoki (`first_observation_bootstrap`), aby operator mógł opcjonalnie wymusić natychmiastowy baseline bez ręcznego markera.

@@ -77,6 +77,18 @@ is_running() {
     return 1
 }
 
+list_matching_pids() {
+    local name="$1"
+    local candidate
+    while read -r candidate; do
+        [[ "$candidate" =~ ^[0-9]+$ ]] || continue
+        [[ "$candidate" = "$$" || "$candidate" = "$PPID" || "$candidate" = "${BASHPID:-}" ]] && continue
+        if pid_matches_name "$candidate" "$name"; then
+            echo "$candidate"
+        fi
+    done < <(pgrep -f "$name" -u "$(whoami)" 2>/dev/null || true)
+}
+
 wait_for_stable_process() {
     local pidfile="$1" name="$2"
     local min_consecutive="${3:-3}" max_wait_sec="${4:-12}"
@@ -217,25 +229,47 @@ start_statusd() {
 
 stop_daemon() {
     local pidfile="$1" name="$2" label="$3"
-    local pid
+    local pid candidate
+    local -a pids
+    pids=()
     pid=$(is_running "$pidfile" "$name") || true
-    if [[ -z "$pid" ]]; then
+    if [[ -n "$pid" ]]; then
+        pids+=("$pid")
+    fi
+    while read -r candidate; do
+        [[ -z "${candidate:-}" ]] && continue
+        local exists=0
+        for pid in "${pids[@]}"; do
+            if [[ "$pid" = "$candidate" ]]; then
+                exists=1
+                break
+            fi
+        done
+        if [[ "$exists" -eq 0 ]]; then
+            pids+=("$candidate")
+        fi
+    done < <(list_matching_pids "$name")
+
+    if [[ "${#pids[@]}" -eq 0 ]]; then
         log "⏹️  $label nie działa"
         return 0
     fi
-    log "⛔  Zatrzymuję $label (pid=$pid)..."
-    kill "$pid" 2>/dev/null || true
-    local waited=0
-    while ps -p "$pid" >/dev/null 2>&1 && (( waited < 10 )); do
-        sleep 1
-        waited=$((waited + 1))
+
+    for pid in "${pids[@]}"; do
+        log "⛔  Zatrzymuję $label (pid=$pid)..."
+        kill "$pid" 2>/dev/null || true
+        local waited=0
+        while ps -p "$pid" >/dev/null 2>&1 && (( waited < 10 )); do
+            sleep 1
+            waited=$((waited + 1))
+        done
+        if ps -p "$pid" >/dev/null 2>&1; then
+            kill -9 "$pid" 2>/dev/null || true
+            log "⚠️  $label wymuszone zamknięcie (SIGKILL, pid=$pid)"
+        else
+            log "✅  $label zatrzymany (pid=$pid)"
+        fi
     done
-    if ps -p "$pid" >/dev/null 2>&1; then
-        kill -9 "$pid" 2>/dev/null || true
-        log "⚠️  $label wymuszone zamknięcie (SIGKILL)"
-    else
-        log "✅  $label zatrzymany"
-    fi
     rm -f "$pidfile"
 }
 

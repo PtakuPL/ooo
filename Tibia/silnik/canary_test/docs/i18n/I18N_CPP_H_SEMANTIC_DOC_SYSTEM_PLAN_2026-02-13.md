@@ -500,3 +500,88 @@ Wniosek semantyczny:
 
 Status backlogu semantycznego:
 - `SEM-CMD-1`, `SEM-CMD-2`, `SEM-CONCAT-1` pozostają otwarte i są nadal wymagane do pełnej automatyzacji statusd/doctor.
+
+### 13.9 Aktualizacja runtime (2026-02-14 14:07 UTC) — preemption checkpoints i kontrakt 55 języków
+
+Wdrożone w warstwie wykonawczej (worker/guardian):
+- ✅ etapy `AUTO_TRANSLATE` i końcówka cyklu są bardziej przerywalne:
+  - dodatkowe checkpointy pending command przed/po repair,
+  - przerwanie `parallel langs`, gdy czeka nowa komenda,
+  - `mid-batch` poll zagęszczony do co 4 klucze.
+- ✅ sleep końcowy i IDLE sleep są przerywalne przez `.worker_command`.
+- ✅ guardian wymusza kontrakt pracy tłumaczeniowej (`--translations-only --use-gt --no-git`) na aktywnym workerze.
+
+Pomiar kontrolny:
+- `AUTO:cs:npc.json:1:ONCE` -> `pending_age_s=13`, `roundtrip_s=15` (`sla_met=true`).
+
+Wniosek semantyczny:
+- wykonawczo `interruptible` działa, ale semantyczna telemetria nadal nie emituje jawnego pola
+  `mid_cycle_pickup_delay_s`, więc doctor nie rozróżnia pełnego opóźnienia wejścia do aktywnego etapu.
+
+Nowe TODO semantyczne:
+- [ ] `SEM-55-LANG-1` (P0): dodać semantyczny profil domenowy `items/npc/quests` dla pełnych 55 języków (gramatyka/styl + placeholder contract).
+- [ ] `SEM-55-LANG-2` (P0): publikować per-język sygnał `grammar_style_risk` do kolejki quality-repair.
+
+### 13.10 Aktualizacja runtime (2026-02-14 14:31 UTC) — materializacja `SEM-CMD-1` w telemetryce wykonawczej
+
+Zrobione:
+- ✅ `SEM-CMD-1` domknięte po stronie telemetry worker/statusd:
+  - worker publikuje `mid_cycle_command_pickup_s`,
+  - statusd doctor liczy `p95_mid_cycle_command_pickup_s` i `latest_mid_cycle_command_pickup_s`.
+- ✅ Statusd dostał dodatkowy kontrakt orkiestracyjny:
+  - `guardian_daemon_lock` (owner/age/threshold/stale_owner_dead) z alertingiem webhook reason code.
+
+Wniosek semantyczny:
+- sygnał „czas wejścia komendy do aktywnego etapu” jest już widoczny operacyjnie,
+- ale mapowanie `interruptible=true` i semantyczne tagowanie etapów nadal wymaga domknięcia (`SEM-CMD-2` pozostaje otwarte).
+
+Nowe TODO semantyczne:
+- [x] `SEM-CMD-3` (P1): dodać semantyczny znacznik epoki telemetry (`runtime_epoch_id`), aby odróżniać próbki pre-fix/post-fix przy liczeniu p95 SLA. (DONE 2026-02-14 15:05 UTC)
+
+### 13.11 Aktualizacja runtime (2026-02-14 14:44 UTC) — operational SLA view jako etap semantyczny
+
+Zrobione:
+- ✅ statusd ma teraz semantyczny podział SLA forced commands na:
+  - `full_window` (historyczny kontekst),
+  - `operational_window` (bieżąca praca),
+  - aktywny wybór `analysis_view`.
+
+Wniosek semantyczny:
+- kontrakt „pre-fix vs post-fix” jest częściowo domknięty przez rolling operational window,
+- pełne semantyczne odcięcie epoki nadal wymaga jawnego znacznika `runtime_epoch_id` / `baseline_ts`.
+
+Nowe TODO semantyczne:
+- [x] `SEM-CMD-4` (P1): mapować `analysis_view` + `operational_window_ready` do rekomendacji auto-akcji (np. różne progi dla rollback vs continue). (DONE 2026-02-14 15:05 UTC)
+
+### 13.12 Aktualizacja runtime (2026-02-14 14:50 UTC) — baseline epoch jako fallback semantyczny
+
+Zrobione:
+- ✅ Wprowadzono opcjonalny `baseline_ts_utc` dla forced-command SLA:
+  - pozwala ręcznie odciąć epokę pre-fix,
+  - statusd publikuje poprawność i efektywny start baseline.
+
+Wniosek semantyczny:
+- `baseline_ts_utc` działa jako praktyczny fallback semantyczny dla rozdziału epok,
+- docelowy, automatyczny `runtime_epoch_id` nadal pozostaje właściwym rozwiązaniem systemowym.
+
+Nowe TODO semantyczne:
+- [x] `SEM-CMD-5` (P1): zautomatyzować mapowanie `baseline_ts_utc` <-> `runtime_epoch_id` (spójny kontrakt semantyczny dla doctor/webhook/daily). (DONE 2026-02-14 15:05 UTC)
+
+### 13.13 Aktualizacja runtime (2026-02-14 15:05 UTC) — domknięcie SEM-CMD-3/4/5 (kontrakt epoki + rekomendacje)
+
+Zrobione:
+- [x] `SEM-CMD-3` (P1): dodać semantyczny znacznik epoki telemetry (`runtime_epoch_id`), aby odróżniać próbki pre-fix/post-fix przy liczeniu p95 SLA. (DONE 2026-02-14 15:05 UTC)
+- [x] `SEM-CMD-4` (P1): mapować `analysis_view` + `operational_window_ready` do rekomendacji auto-akcji (np. różne progi dla rollback vs continue). (DONE 2026-02-14 15:05 UTC)
+- [x] `SEM-CMD-5` (P1): zautomatyzować mapowanie `baseline_ts_utc` <-> `runtime_epoch_id` (spójny kontrakt semantyczny dla doctor/webhook/daily). (DONE 2026-02-14 15:05 UTC)
+- ✅ Semantyczny kontrakt epoki jest publikowany spójnie w:
+  - `statusd_report.json`,
+  - `statusd_doctor.json`,
+  - `statusd_daily_report.json`,
+  - webhook payload `forced_command_fast`.
+- ✅ `recommended_action` materializuje decyzję operacyjną na podstawie semantyki aktywnego widoku (`operational_window` vs `full_window`) i gotowości próbek.
+
+Wniosek semantyczny:
+- Warstwa semantyczna ma już jawny kontrakt epoki runtime oraz deterministyczne mapowanie decyzji operacyjnych dla forced-command SLA.
+
+Nowe TODO semantyczne:
+- [ ] `SEM-CMD-6` (P1): dodać semantyczny tryb bootstrap pierwszej obserwacji epoki (`first_observation_no_baseline` -> opcjonalny auto-baseline), aby kontrakt epoki był kompletny także na pierwszym starcie mechanizmu.

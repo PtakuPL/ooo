@@ -33,6 +33,7 @@ STATUSD_AUDIT_FILE="$STATUS_DIR/statusd_audit.jsonl"
 STATUSD_ALERT_STATE_FILE="$STATUS_DIR/statusd_alert_state.json"
 STATUSD_DAILY_REPORT_JSON="$STATUS_DIR/statusd_daily_report.json"
 STATUSD_DAILY_REPORT_MD="$STATUS_DIR/statusd_daily_report.md"
+FORCED_COMMAND_FAST_EPOCH_STATE_FILE="$STATUS_DIR/forced_command_epoch_state.json"
 AUTO_ACTIONS_ENABLED_FILE="$WORK_DIR/.statusd_auto_actions"
 ALERT_WEBHOOK_URL_FILE="$WORK_DIR/.statusd_webhook_url"
 ALERT_COOLDOWN_SECONDS="${STATUSD_ALERT_COOLDOWN_SECONDS:-900}"
@@ -66,8 +67,15 @@ DEFAULT_FORCED_COMMAND_FAST_PENDING_WARN_S=15
 DEFAULT_FORCED_COMMAND_FAST_EXEC_WARN_S=30
 DEFAULT_FORCED_COMMAND_FAST_CONSECUTIVE_CRIT=3
 DEFAULT_FORCED_COMMAND_FAST_MIN_SAMPLES=3
+DEFAULT_FORCED_COMMAND_FAST_OPERATIONAL_WINDOW_HOURS=2
+DEFAULT_FORCED_COMMAND_FAST_OPERATIONAL_MIN_SAMPLES=3
+DEFAULT_FORCED_COMMAND_FAST_BASELINE_TS=""
+DEFAULT_FORCED_COMMAND_FAST_AUTO_BASELINE_ON_EPOCH_CHANGE=true
+DEFAULT_FORCED_COMMAND_FAST_EPOCH_COOLDOWN_SECONDS=600
+DEFAULT_FORCED_COMMAND_FAST_BOOTSTRAP_FIRST_OBSERVATION=true
 DEFAULT_QUEUE_FRESHNESS_WARN_S=900
 DEFAULT_QUEUE_FRESHNESS_CRIT_S=1800
+DEFAULT_GUARDIAN_DAEMON_LOCK_STALE_SECONDS=60
 
 REPAIR_QUEUE_STAGNATION_HOURS="$DEFAULT_REPAIR_QUEUE_STAGNATION_HOURS"
 REPAIR_QUEUE_STAGNATION_MIN_SAMPLES="$DEFAULT_REPAIR_QUEUE_STAGNATION_MIN_SAMPLES"
@@ -94,8 +102,20 @@ FORCED_COMMAND_FAST_PENDING_WARN_S="$DEFAULT_FORCED_COMMAND_FAST_PENDING_WARN_S"
 FORCED_COMMAND_FAST_EXEC_WARN_S="$DEFAULT_FORCED_COMMAND_FAST_EXEC_WARN_S"
 FORCED_COMMAND_FAST_CONSECUTIVE_CRIT="$DEFAULT_FORCED_COMMAND_FAST_CONSECUTIVE_CRIT"
 FORCED_COMMAND_FAST_MIN_SAMPLES="$DEFAULT_FORCED_COMMAND_FAST_MIN_SAMPLES"
+FORCED_COMMAND_FAST_OPERATIONAL_WINDOW_HOURS="$DEFAULT_FORCED_COMMAND_FAST_OPERATIONAL_WINDOW_HOURS"
+FORCED_COMMAND_FAST_OPERATIONAL_MIN_SAMPLES="$DEFAULT_FORCED_COMMAND_FAST_OPERATIONAL_MIN_SAMPLES"
+FORCED_COMMAND_FAST_BASELINE_TS="${FORCED_COMMAND_FAST_BASELINE_TS:-$DEFAULT_FORCED_COMMAND_FAST_BASELINE_TS}"
+FORCED_COMMAND_FAST_AUTO_BASELINE_ON_EPOCH_CHANGE="$DEFAULT_FORCED_COMMAND_FAST_AUTO_BASELINE_ON_EPOCH_CHANGE"
+FORCED_COMMAND_FAST_EPOCH_COOLDOWN_SECONDS="$DEFAULT_FORCED_COMMAND_FAST_EPOCH_COOLDOWN_SECONDS"
+FORCED_COMMAND_FAST_RUNTIME_EPOCH_ID=""
+FORCED_COMMAND_FAST_RUNTIME_EPOCH_RAW=""
+FORCED_COMMAND_FAST_BASELINE_SOURCE="none"
+FORCED_COMMAND_FAST_AUTO_BASELINE_APPLIED="0"
+FORCED_COMMAND_FAST_AUTO_BASELINE_REASON=""
+FORCED_COMMAND_FAST_EPOCH_CHANGED="0"
 QUEUE_FRESHNESS_WARN_S="$DEFAULT_QUEUE_FRESHNESS_WARN_S"
 QUEUE_FRESHNESS_CRIT_S="$DEFAULT_QUEUE_FRESHNESS_CRIT_S"
+GUARDIAN_DAEMON_LOCK_STALE_SECONDS="${GUARDIAN_DAEMON_LOCK_STALE_SECONDS:-$DEFAULT_GUARDIAN_DAEMON_LOCK_STALE_SECONDS}"
 DAEMON_INTERVAL_SECONDS=60
 STATUS_MD_REFRESH_ENABLED="${STATUSD_STATUS_MD_REFRESH_ENABLED:-true}"
 STATUS_MD_REFRESH_MIN_INTERVAL_SECONDS="${STATUSD_STATUS_MD_REFRESH_MIN_INTERVAL_SECONDS:-300}"
@@ -156,10 +176,20 @@ ensure_statusd_thresholds_file() {
   "forced_command_fast": {
     "window_hours": $DEFAULT_FORCED_COMMAND_FAST_WINDOW_HOURS,
     "sla_target_s": $DEFAULT_FORCED_COMMAND_FAST_SLA_TARGET_S,
+    "pickup_warn_s": $DEFAULT_FORCED_COMMAND_FAST_PENDING_WARN_S,
     "pending_warn_s": $DEFAULT_FORCED_COMMAND_FAST_PENDING_WARN_S,
     "exec_warn_s": $DEFAULT_FORCED_COMMAND_FAST_EXEC_WARN_S,
     "consecutive_crit": $DEFAULT_FORCED_COMMAND_FAST_CONSECUTIVE_CRIT,
-    "min_samples": $DEFAULT_FORCED_COMMAND_FAST_MIN_SAMPLES
+    "min_samples": $DEFAULT_FORCED_COMMAND_FAST_MIN_SAMPLES,
+    "operational_window_hours": $DEFAULT_FORCED_COMMAND_FAST_OPERATIONAL_WINDOW_HOURS,
+    "operational_min_samples": $DEFAULT_FORCED_COMMAND_FAST_OPERATIONAL_MIN_SAMPLES,
+    "baseline_ts_utc": "$DEFAULT_FORCED_COMMAND_FAST_BASELINE_TS",
+    "auto_baseline_on_epoch_change": $DEFAULT_FORCED_COMMAND_FAST_AUTO_BASELINE_ON_EPOCH_CHANGE,
+    "epoch_cooldown_seconds": $DEFAULT_FORCED_COMMAND_FAST_EPOCH_COOLDOWN_SECONDS,
+    "bootstrap_first_observation": $DEFAULT_FORCED_COMMAND_FAST_BOOTSTRAP_FIRST_OBSERVATION
+  },
+  "guardian_daemon_lock": {
+    "stale_owner_threshold_seconds": $DEFAULT_GUARDIAN_DAEMON_LOCK_STALE_SECONDS
   },
   "registry_reconcile": {
     "min_outside_keys": $DEFAULT_REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS,
@@ -194,6 +224,7 @@ md = cfg.get("metrics_drift", {}) if isinstance(cfg.get("metrics_drift", {}), di
 pg = cfg.get("priority_gate_stuck", {}) if isinstance(cfg.get("priority_gate_stuck", {}), dict) else {}
 rr = cfg.get("registry_reconcile", {}) if isinstance(cfg.get("registry_reconcile", {}), dict) else {}
 fc = cfg.get("forced_command_fast", {}) if isinstance(cfg.get("forced_command_fast", {}), dict) else {}
+gdl = cfg.get("guardian_daemon_lock", {}) if isinstance(cfg.get("guardian_daemon_lock", {}), dict) else {}
 
 out("REPAIR_QUEUE_STAGNATION_HOURS", rq.get("window_hours"))
 out("REPAIR_QUEUE_STAGNATION_MIN_SAMPLES", rq.get("min_samples"))
@@ -221,10 +252,17 @@ out("REGISTRY_RECONCILE_ALWAYS_SYNC_ANY_DRIFT", str(rr.get("always_sync_any_drif
 
 out("FORCED_COMMAND_FAST_WINDOW_HOURS", fc.get("window_hours"))
 out("FORCED_COMMAND_FAST_SLA_TARGET_S", fc.get("sla_target_s"))
-out("FORCED_COMMAND_FAST_PENDING_WARN_S", fc.get("pending_warn_s"))
+out("FORCED_COMMAND_FAST_PENDING_WARN_S", fc.get("pending_warn_s", fc.get("pickup_warn_s")))
 out("FORCED_COMMAND_FAST_EXEC_WARN_S", fc.get("exec_warn_s"))
 out("FORCED_COMMAND_FAST_CONSECUTIVE_CRIT", fc.get("consecutive_crit"))
 out("FORCED_COMMAND_FAST_MIN_SAMPLES", fc.get("min_samples"))
+out("FORCED_COMMAND_FAST_OPERATIONAL_WINDOW_HOURS", fc.get("operational_window_hours"))
+out("FORCED_COMMAND_FAST_OPERATIONAL_MIN_SAMPLES", fc.get("operational_min_samples"))
+out("FORCED_COMMAND_FAST_BASELINE_TS", fc.get("baseline_ts_utc", fc.get("baseline_ts", "")))
+out("FORCED_COMMAND_FAST_AUTO_BASELINE_ON_EPOCH_CHANGE", str(fc.get("auto_baseline_on_epoch_change")).lower() if "auto_baseline_on_epoch_change" in fc else None)
+out("FORCED_COMMAND_FAST_EPOCH_COOLDOWN_SECONDS", fc.get("epoch_cooldown_seconds"))
+
+out("GUARDIAN_DAEMON_LOCK_STALE_SECONDS", gdl.get("stale_owner_threshold_seconds"))
 PY
 )
 
@@ -256,6 +294,12 @@ PY
             FORCED_COMMAND_FAST_EXEC_WARN_S) FORCED_COMMAND_FAST_EXEC_WARN_S="$value" ;;
             FORCED_COMMAND_FAST_CONSECUTIVE_CRIT) FORCED_COMMAND_FAST_CONSECUTIVE_CRIT="$value" ;;
             FORCED_COMMAND_FAST_MIN_SAMPLES) FORCED_COMMAND_FAST_MIN_SAMPLES="$value" ;;
+            FORCED_COMMAND_FAST_OPERATIONAL_WINDOW_HOURS) FORCED_COMMAND_FAST_OPERATIONAL_WINDOW_HOURS="$value" ;;
+            FORCED_COMMAND_FAST_OPERATIONAL_MIN_SAMPLES) FORCED_COMMAND_FAST_OPERATIONAL_MIN_SAMPLES="$value" ;;
+            FORCED_COMMAND_FAST_BASELINE_TS) FORCED_COMMAND_FAST_BASELINE_TS="$value" ;;
+            FORCED_COMMAND_FAST_AUTO_BASELINE_ON_EPOCH_CHANGE) FORCED_COMMAND_FAST_AUTO_BASELINE_ON_EPOCH_CHANGE="$value" ;;
+            FORCED_COMMAND_FAST_EPOCH_COOLDOWN_SECONDS) FORCED_COMMAND_FAST_EPOCH_COOLDOWN_SECONDS="$value" ;;
+            GUARDIAN_DAEMON_LOCK_STALE_SECONDS) GUARDIAN_DAEMON_LOCK_STALE_SECONDS="$value" ;;
         esac
     done <<< "$parsed"
 }
@@ -287,18 +331,250 @@ apply_statusd_env_overrides() {
     FORCED_COMMAND_FAST_EXEC_WARN_S="${STATUSD_FORCED_COMMAND_FAST_EXEC_WARN_S:-$FORCED_COMMAND_FAST_EXEC_WARN_S}"
     FORCED_COMMAND_FAST_CONSECUTIVE_CRIT="${STATUSD_FORCED_COMMAND_FAST_CONSECUTIVE_CRIT:-$FORCED_COMMAND_FAST_CONSECUTIVE_CRIT}"
     FORCED_COMMAND_FAST_MIN_SAMPLES="${STATUSD_FORCED_COMMAND_FAST_MIN_SAMPLES:-$FORCED_COMMAND_FAST_MIN_SAMPLES}"
+    FORCED_COMMAND_FAST_OPERATIONAL_WINDOW_HOURS="${STATUSD_FORCED_COMMAND_FAST_OPERATIONAL_WINDOW_HOURS:-$FORCED_COMMAND_FAST_OPERATIONAL_WINDOW_HOURS}"
+    FORCED_COMMAND_FAST_OPERATIONAL_MIN_SAMPLES="${STATUSD_FORCED_COMMAND_FAST_OPERATIONAL_MIN_SAMPLES:-$FORCED_COMMAND_FAST_OPERATIONAL_MIN_SAMPLES}"
+    FORCED_COMMAND_FAST_BASELINE_TS="${STATUSD_FORCED_COMMAND_FAST_BASELINE_TS:-$FORCED_COMMAND_FAST_BASELINE_TS}"
+    FORCED_COMMAND_FAST_AUTO_BASELINE_ON_EPOCH_CHANGE="${STATUSD_FORCED_COMMAND_FAST_AUTO_BASELINE_ON_EPOCH_CHANGE:-$FORCED_COMMAND_FAST_AUTO_BASELINE_ON_EPOCH_CHANGE}"
+    FORCED_COMMAND_FAST_EPOCH_COOLDOWN_SECONDS="${STATUSD_FORCED_COMMAND_FAST_EPOCH_COOLDOWN_SECONDS:-$FORCED_COMMAND_FAST_EPOCH_COOLDOWN_SECONDS}"
+    GUARDIAN_DAEMON_LOCK_STALE_SECONDS="${STATUSD_GUARDIAN_DAEMON_LOCK_STALE_SECONDS:-$GUARDIAN_DAEMON_LOCK_STALE_SECONDS}"
+}
+
+refresh_forced_command_fast_epoch_context() {
+    local parsed
+    parsed=$(python3 - "$WORK_DIR" "$STATUS_DIR" "$FORCED_COMMAND_FAST_EPOCH_STATE_FILE" "$FORCED_COMMAND_FAST_BASELINE_TS" "$FORCED_COMMAND_FAST_AUTO_BASELINE_ON_EPOCH_CHANGE" "$FORCED_COMMAND_FAST_EPOCH_COOLDOWN_SECONDS" "${FORCED_COMMAND_FAST_BOOTSTRAP_FIRST_OBSERVATION:-$DEFAULT_FORCED_COMMAND_FAST_BOOTSTRAP_FIRST_OBSERVATION}" <<'PYEPOCH'
+import json
+import hashlib
+import os
+import sys
+from datetime import datetime, timezone
+
+work_dir = sys.argv[1]
+status_dir = sys.argv[2]
+state_path = sys.argv[3]
+configured_baseline = str(sys.argv[4] if len(sys.argv) > 4 else "").strip()
+auto_enabled_raw = str(sys.argv[5] if len(sys.argv) > 5 else "true").strip()
+cooldown_raw = str(sys.argv[6] if len(sys.argv) > 6 else "600").strip()
+bootstrap_first_obs_raw = str(sys.argv[7] if len(sys.argv) > 7 else "true").strip()
+now = datetime.now(timezone.utc)
+now_z = now.isoformat().replace("+00:00", "Z")
+
+def _to_int(v, default=0):
+    try:
+        return int(float(v))
+    except Exception:
+        return int(default)
+
+def _parse_bool(v):
+    return str(v or "").strip().lower() in {"1", "true", "yes", "on"}
+
+def _parse_ts(ts):
+    if not ts:
+        return None
+    try:
+        return datetime.fromisoformat(str(ts).replace("Z", "+00:00"))
+    except Exception:
+        return None
+
+def _read_json(path):
+    try:
+        with open(path, encoding="utf-8") as f:
+            data = json.load(f)
+        return data if isinstance(data, dict) else {}
+    except Exception:
+        return {}
+
+script_path = os.path.join(work_dir, "i18n_worker_simple.sh")
+script_mtime = 0
+script_size = 0
+try:
+    st = os.stat(script_path)
+    script_mtime = int(st.st_mtime)
+    script_size = int(st.st_size)
+except Exception:
+    pass
+
+script_checkpoint = 0
+try:
+    with open(os.path.join(work_dir, ".worker_script_mtime"), encoding="utf-8") as f:
+        script_checkpoint = _to_int(str(f.read()).strip(), 0)
+except Exception:
+    script_checkpoint = 0
+
+restart_state = _read_json(os.path.join(work_dir, ".guardian_restart_state.json"))
+restart_ts = _to_int(restart_state.get("last_restart_ts", 0), 0)
+restart_cause = str(restart_state.get("last_restart_cause", "") or "")
+restart_failure_streak = _to_int(restart_state.get("failure_streak", 0), 0)
+
+worker_state = _read_json(os.path.join(status_dir, "worker_state.json"))
+worker = worker_state.get("worker", {}) if isinstance(worker_state.get("worker", {}), dict) else {}
+worker_pid = _to_int(worker.get("pid", 0), 0)
+worker_cycle = _to_int(worker.get("cycle", 0), 0)
+
+epoch_sources = {
+    "script_mtime": int(script_mtime),
+    "script_size": int(script_size),
+    "script_checkpoint": int(script_checkpoint),
+    "restart_ts": int(restart_ts),
+    "restart_cause": restart_cause,
+    "restart_failure_streak": int(restart_failure_streak),
+    "worker_pid": int(worker_pid),
+    "worker_cycle": int(worker_cycle),
+}
+epoch_raw = "|".join([
+    f"script_mtime={epoch_sources['script_mtime']}",
+    f"script_size={epoch_sources['script_size']}",
+    f"script_checkpoint={epoch_sources['script_checkpoint']}",
+    f"restart_ts={epoch_sources['restart_ts']}",
+    f"restart_cause={epoch_sources['restart_cause']}",
+    f"worker_pid={epoch_sources['worker_pid']}",
+])
+epoch_id = hashlib.sha1(epoch_raw.encode("utf-8")).hexdigest()[:16]
+
+state = _read_json(state_path)
+prev_epoch_id = str(state.get("current_epoch_id", "") or "")
+prev_epoch_first_seen = str(state.get("current_epoch_first_seen_utc", "") or "")
+prev_baseline_same_epoch = str(state.get("current_epoch_baseline_ts_utc", "") or "") if prev_epoch_id == epoch_id else ""
+epoch_changed = bool(prev_epoch_id and prev_epoch_id != epoch_id)
+auto_enabled = _parse_bool(auto_enabled_raw)
+bootstrap_first_obs = _parse_bool(bootstrap_first_obs_raw)
+cooldown_s = max(0, _to_int(cooldown_raw, 600))
+
+effective_baseline = ""
+baseline_source = "none"
+auto_applied = False
+auto_reason = ""
+
+if configured_baseline:
+    effective_baseline = configured_baseline
+    baseline_source = "manual_config"
+    auto_reason = "manual_baseline_active"
+elif not auto_enabled:
+    effective_baseline = prev_baseline_same_epoch
+    baseline_source = "auto_disabled_state" if effective_baseline else "none"
+    auto_reason = "auto_baseline_disabled"
+else:
+    if epoch_changed:
+        last_auto_ts = str(state.get("last_auto_baseline_ts_utc", "") or "")
+        wait_sec = 0
+        last_auto_dt = _parse_ts(last_auto_ts)
+        if last_auto_dt is not None:
+            age_s = (now - last_auto_dt).total_seconds()
+            if age_s < cooldown_s:
+                wait_sec = int(cooldown_s - age_s)
+        if wait_sec > 0:
+            effective_baseline = ""
+            baseline_source = "none"
+            auto_reason = f"epoch_changed_cooldown_{wait_sec}s"
+        else:
+            effective_baseline = now_z
+            baseline_source = "auto_epoch_change"
+            auto_applied = True
+            auto_reason = "epoch_changed"
+    elif prev_baseline_same_epoch:
+        effective_baseline = prev_baseline_same_epoch
+        baseline_source = "auto_state"
+        auto_reason = "epoch_stable_reuse"
+    elif not prev_epoch_id:
+        if bootstrap_first_obs:
+            effective_baseline = now_z
+            baseline_source = "auto_bootstrap_first_observation"
+            auto_applied = True
+            auto_reason = "first_observation_bootstrap"
+        else:
+            effective_baseline = ""
+            baseline_source = "none"
+            auto_reason = "first_observation_no_baseline"
+    else:
+        if bootstrap_first_obs and not prev_baseline_same_epoch:
+            effective_baseline = now_z
+            baseline_source = "auto_bootstrap_stable_no_baseline"
+            auto_applied = True
+            auto_reason = "epoch_stable_bootstrap"
+        else:
+            effective_baseline = ""
+            baseline_source = "none"
+            auto_reason = "epoch_stable_no_baseline"
+
+if epoch_changed:
+    current_epoch_first_seen = now_z
+else:
+    current_epoch_first_seen = prev_epoch_first_seen or now_z
+state["bootstrap_first_observation"] = bool(bootstrap_first_obs)
+state["schema_version"] = "1.0"
+state["updated_at_utc"] = now_z
+state["current_epoch_id"] = epoch_id
+state["current_epoch_raw"] = epoch_raw
+state["current_epoch_sources"] = epoch_sources
+state["current_epoch_first_seen_utc"] = current_epoch_first_seen
+state["current_epoch_last_seen_utc"] = now_z
+state["current_epoch_baseline_ts_utc"] = effective_baseline
+state["last_effective_baseline_ts_utc"] = effective_baseline
+state["last_effective_baseline_source"] = baseline_source
+state["auto_baseline_on_epoch_change"] = bool(auto_enabled)
+state["epoch_cooldown_seconds"] = int(cooldown_s)
+state["epoch_changed"] = bool(epoch_changed)
+state["last_reason"] = auto_reason
+
+if auto_applied:
+    state["last_auto_baseline_ts_utc"] = effective_baseline
+    state["last_auto_baseline_epoch_id"] = epoch_id
+    state["last_auto_baseline_reason"] = auto_reason
+else:
+    state.setdefault("last_auto_baseline_ts_utc", str(state.get("last_auto_baseline_ts_utc", "") or ""))
+    state.setdefault("last_auto_baseline_epoch_id", str(state.get("last_auto_baseline_epoch_id", "") or ""))
+    state.setdefault("last_auto_baseline_reason", str(state.get("last_auto_baseline_reason", "") or ""))
+
+try:
+    os.makedirs(os.path.dirname(state_path), exist_ok=True)
+    tmp = state_path + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(state, f, indent=2, ensure_ascii=False)
+    os.replace(tmp, state_path)
+except Exception:
+    pass
+
+print(f"FORCED_COMMAND_FAST_RUNTIME_EPOCH_ID={epoch_id}")
+print(f"FORCED_COMMAND_FAST_RUNTIME_EPOCH_RAW={epoch_raw}")
+print(f"FORCED_COMMAND_FAST_BASELINE_TS_EFFECTIVE={effective_baseline}")
+print(f"FORCED_COMMAND_FAST_BASELINE_SOURCE={baseline_source}")
+print(f"FORCED_COMMAND_FAST_AUTO_BASELINE_APPLIED={1 if auto_applied else 0}")
+print(f"FORCED_COMMAND_FAST_AUTO_BASELINE_REASON={auto_reason}")
+print(f"FORCED_COMMAND_FAST_EPOCH_CHANGED={1 if epoch_changed else 0}")
+PYEPOCH
+)
+
+    local old_baseline="${FORCED_COMMAND_FAST_BASELINE_TS:-}"
+    while IFS='=' read -r key value; do
+        [ -z "${key:-}" ] && continue
+        case "$key" in
+            FORCED_COMMAND_FAST_RUNTIME_EPOCH_ID) FORCED_COMMAND_FAST_RUNTIME_EPOCH_ID="$value" ;;
+            FORCED_COMMAND_FAST_RUNTIME_EPOCH_RAW) FORCED_COMMAND_FAST_RUNTIME_EPOCH_RAW="$value" ;;
+            FORCED_COMMAND_FAST_BASELINE_TS_EFFECTIVE) FORCED_COMMAND_FAST_BASELINE_TS="$value" ;;
+            FORCED_COMMAND_FAST_BASELINE_SOURCE) FORCED_COMMAND_FAST_BASELINE_SOURCE="$value" ;;
+            FORCED_COMMAND_FAST_AUTO_BASELINE_APPLIED) FORCED_COMMAND_FAST_AUTO_BASELINE_APPLIED="$value" ;;
+            FORCED_COMMAND_FAST_AUTO_BASELINE_REASON) FORCED_COMMAND_FAST_AUTO_BASELINE_REASON="$value" ;;
+            FORCED_COMMAND_FAST_EPOCH_CHANGED) FORCED_COMMAND_FAST_EPOCH_CHANGED="$value" ;;
+        esac
+    done <<< "$parsed"
+
+    if [ "${FORCED_COMMAND_FAST_AUTO_BASELINE_APPLIED:-0}" = "1" ]; then
+        log_statusd "⚡ forced_command_fast auto-baseline: epoch=${FORCED_COMMAND_FAST_RUNTIME_EPOCH_ID:-?} baseline=${FORCED_COMMAND_FAST_BASELINE_TS:-} reason=${FORCED_COMMAND_FAST_AUTO_BASELINE_REASON:-epoch_changed}"
+    elif [ "${old_baseline:-}" != "${FORCED_COMMAND_FAST_BASELINE_TS:-}" ]; then
+        log_statusd "ℹ️ forced_command_fast baseline updated: source=${FORCED_COMMAND_FAST_BASELINE_SOURCE:-none} baseline=${FORCED_COMMAND_FAST_BASELINE_TS:-} epoch=${FORCED_COMMAND_FAST_RUNTIME_EPOCH_ID:-?}"
+    fi
 }
 
 ensure_statusd_thresholds_file
 load_statusd_thresholds_from_file
 apply_statusd_env_overrides
+refresh_forced_command_fast_epoch_context
 
 # ═══════════════════════════════════════════════════════════════════════════════
 # MODUŁ 1: Agregacja telemetrii
 # ═══════════════════════════════════════════════════════════════════════════════
 
 aggregate_telemetry() {
-    python3 - "$WORK_DIR" "$STATUS_DIR" "$STATUSD_REPORT_FILE" "$REPAIR_QUEUE_STAGNATION_HOURS" "$REPAIR_QUEUE_STAGNATION_MIN_SAMPLES" "$REPAIR_QUEUE_STAGNATION_MIN_DROP" "$SUSPICIOUS_HIGH_WINDOW_HOURS" "$SUSPICIOUS_HIGH_WARN_COUNT" "$SUSPICIOUS_HIGH_CRIT_COUNT" "$METRICS_DRIFT_WARN_KEYS" "$METRICS_DRIFT_CRIT_KEYS" "$METRICS_DRIFT_WARN_PCT" "$METRICS_DRIFT_CRIT_PCT" "$SUSPICIOUS_HIGH_RATE_WARN_PCT" "$SUSPICIOUS_HIGH_RATE_CRIT_PCT" "$STATUSD_THRESHOLDS_FILE" "$STATUSD_USE_ENV_OVERRIDES" "$PRIORITY_GATE_STUCK_MAX_ACTIVE_MINUTES" "$PRIORITY_GATE_STUCK_MAX_CYCLES" "$PRIORITY_GATE_STUCK_MIN_QUALITY_DROP_PCT" "$REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS" "$REGISTRY_RECONCILE_MIN_OUTSIDE_PCT" "$REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS" "$REGISTRY_RECONCILE_ALWAYS_SYNC_ANY_DRIFT" "$FORCED_COMMAND_FAST_WINDOW_HOURS" "$FORCED_COMMAND_FAST_SLA_TARGET_S" "$FORCED_COMMAND_FAST_PENDING_WARN_S" "$FORCED_COMMAND_FAST_EXEC_WARN_S" "$FORCED_COMMAND_FAST_CONSECUTIVE_CRIT" "$FORCED_COMMAND_FAST_MIN_SAMPLES" <<'PYAGG'
+    python3 - "$WORK_DIR" "$STATUS_DIR" "$STATUSD_REPORT_FILE" "$REPAIR_QUEUE_STAGNATION_HOURS" "$REPAIR_QUEUE_STAGNATION_MIN_SAMPLES" "$REPAIR_QUEUE_STAGNATION_MIN_DROP" "$SUSPICIOUS_HIGH_WINDOW_HOURS" "$SUSPICIOUS_HIGH_WARN_COUNT" "$SUSPICIOUS_HIGH_CRIT_COUNT" "$METRICS_DRIFT_WARN_KEYS" "$METRICS_DRIFT_CRIT_KEYS" "$METRICS_DRIFT_WARN_PCT" "$METRICS_DRIFT_CRIT_PCT" "$SUSPICIOUS_HIGH_RATE_WARN_PCT" "$SUSPICIOUS_HIGH_RATE_CRIT_PCT" "$STATUSD_THRESHOLDS_FILE" "$STATUSD_USE_ENV_OVERRIDES" "$PRIORITY_GATE_STUCK_MAX_ACTIVE_MINUTES" "$PRIORITY_GATE_STUCK_MAX_CYCLES" "$PRIORITY_GATE_STUCK_MIN_QUALITY_DROP_PCT" "$REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS" "$REGISTRY_RECONCILE_MIN_OUTSIDE_PCT" "$REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS" "$REGISTRY_RECONCILE_ALWAYS_SYNC_ANY_DRIFT" "$FORCED_COMMAND_FAST_WINDOW_HOURS" "$FORCED_COMMAND_FAST_SLA_TARGET_S" "$FORCED_COMMAND_FAST_PENDING_WARN_S" "$FORCED_COMMAND_FAST_EXEC_WARN_S" "$FORCED_COMMAND_FAST_CONSECUTIVE_CRIT" "$FORCED_COMMAND_FAST_MIN_SAMPLES" "$FORCED_COMMAND_FAST_OPERATIONAL_WINDOW_HOURS" "$FORCED_COMMAND_FAST_OPERATIONAL_MIN_SAMPLES" "$FORCED_COMMAND_FAST_BASELINE_TS" "$FORCED_COMMAND_FAST_AUTO_BASELINE_ON_EPOCH_CHANGE" "$FORCED_COMMAND_FAST_EPOCH_COOLDOWN_SECONDS" "$FORCED_COMMAND_FAST_RUNTIME_EPOCH_ID" "$FORCED_COMMAND_FAST_RUNTIME_EPOCH_RAW" "$FORCED_COMMAND_FAST_BASELINE_SOURCE" "$FORCED_COMMAND_FAST_AUTO_BASELINE_APPLIED" "$FORCED_COMMAND_FAST_AUTO_BASELINE_REASON" "$FORCED_COMMAND_FAST_EPOCH_CHANGED" <<'PYAGG'
 import json, sys, os, time
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
@@ -334,12 +610,17 @@ forced_cmd_fast_pending_warn_s = float(sys.argv[27] if len(sys.argv) > 27 and sy
 forced_cmd_fast_exec_warn_s = float(sys.argv[28] if len(sys.argv) > 28 and sys.argv[28] else "30")
 forced_cmd_fast_consecutive_crit = int(float(sys.argv[29] if len(sys.argv) > 29 and sys.argv[29] else "3"))
 forced_cmd_fast_min_samples = int(float(sys.argv[30] if len(sys.argv) > 30 and sys.argv[30] else "3"))
-forced_cmd_fast_window_h = float(sys.argv[25] if len(sys.argv) > 25 and sys.argv[25] else "24")
-forced_cmd_fast_sla_target_s = float(sys.argv[26] if len(sys.argv) > 26 and sys.argv[26] else "45")
-forced_cmd_fast_pending_warn_s = float(sys.argv[27] if len(sys.argv) > 27 and sys.argv[27] else "15")
-forced_cmd_fast_exec_warn_s = float(sys.argv[28] if len(sys.argv) > 28 and sys.argv[28] else "30")
-forced_cmd_fast_consecutive_crit = int(float(sys.argv[29] if len(sys.argv) > 29 and sys.argv[29] else "3"))
-forced_cmd_fast_min_samples = int(float(sys.argv[30] if len(sys.argv) > 30 and sys.argv[30] else "3"))
+forced_cmd_fast_operational_window_h = float(sys.argv[31] if len(sys.argv) > 31 and sys.argv[31] else "2")
+forced_cmd_fast_operational_min_samples = int(float(sys.argv[32] if len(sys.argv) > 32 and sys.argv[32] else "3"))
+forced_cmd_fast_baseline_ts = str(sys.argv[33]).strip() if len(sys.argv) > 33 else ""
+forced_cmd_fast_auto_baseline_on_epoch_change = bool(str(sys.argv[34]).strip().lower() in ("1", "true", "yes", "on")) if len(sys.argv) > 34 else True
+forced_cmd_fast_epoch_cooldown_s = int(float(sys.argv[35] if len(sys.argv) > 35 and sys.argv[35] else "600"))
+forced_cmd_fast_runtime_epoch_id = str(sys.argv[36]).strip() if len(sys.argv) > 36 else ""
+forced_cmd_fast_runtime_epoch_raw = str(sys.argv[37]).strip() if len(sys.argv) > 37 else ""
+forced_cmd_fast_baseline_source = str(sys.argv[38]).strip() if len(sys.argv) > 38 else "none"
+forced_cmd_fast_auto_baseline_applied = bool(str(sys.argv[39]).strip().lower() in ("1", "true", "yes", "on")) if len(sys.argv) > 39 else False
+forced_cmd_fast_auto_baseline_reason = str(sys.argv[40]).strip() if len(sys.argv) > 40 else ""
+forced_cmd_fast_epoch_changed = bool(str(sys.argv[41]).strip().lower() in ("1", "true", "yes", "on")) if len(sys.argv) > 41 else False
 
 now = datetime.now(timezone.utc)
 report = {
@@ -1212,10 +1493,25 @@ report["thresholds_snapshot"] = {
     "forced_command_fast": {
         "window_hours": float(max(forced_cmd_fast_window_h, 0.1)),
         "sla_target_s": float(max(forced_cmd_fast_sla_target_s, 1.0)),
+        "pickup_warn_s": float(max(forced_cmd_fast_pending_warn_s, 1.0)),
         "pending_warn_s": float(max(forced_cmd_fast_pending_warn_s, 1.0)),
         "exec_warn_s": float(max(forced_cmd_fast_exec_warn_s, 1.0)),
         "consecutive_crit": int(max(forced_cmd_fast_consecutive_crit, 1)),
         "min_samples": int(max(forced_cmd_fast_min_samples, 1)),
+        "operational_window_hours": float(max(forced_cmd_fast_operational_window_h, 0.1)),
+        "operational_min_samples": int(max(forced_cmd_fast_operational_min_samples, 1)),
+        "baseline_ts_utc": str(forced_cmd_fast_baseline_ts or ""),
+        "auto_baseline_on_epoch_change": bool(forced_cmd_fast_auto_baseline_on_epoch_change),
+        "epoch_cooldown_seconds": int(max(forced_cmd_fast_epoch_cooldown_s, 0)),
+        "runtime_epoch_id": str(forced_cmd_fast_runtime_epoch_id or ""),
+        "runtime_epoch_raw": str(forced_cmd_fast_runtime_epoch_raw or ""),
+        "baseline_source": str(forced_cmd_fast_baseline_source or "none"),
+        "auto_baseline_applied": bool(forced_cmd_fast_auto_baseline_applied),
+        "auto_baseline_reason": str(forced_cmd_fast_auto_baseline_reason or ""),
+        "epoch_changed": bool(forced_cmd_fast_epoch_changed),
+    },
+    "guardian_daemon_lock": {
+        "stale_owner_threshold_seconds": int(max(30, _safe_int(os.environ.get("GUARDIAN_DAEMON_LOCK_STALE_SECONDS", "60"), 60))),
     },
     "registry_reconcile": {
         "min_outside_keys": int(registry_reconcile_min_outside_keys),
@@ -1223,6 +1519,18 @@ report["thresholds_snapshot"] = {
         "min_interval_seconds": int(registry_reconcile_min_interval_s),
         "always_sync_any_drift": bool(registry_reconcile_always_sync_any_drift),
     },
+}
+
+report["forced_command_fast_runtime"] = {
+    "runtime_epoch_id": str(forced_cmd_fast_runtime_epoch_id or ""),
+    "runtime_epoch_raw": str(forced_cmd_fast_runtime_epoch_raw or ""),
+    "baseline_ts_utc": str(forced_cmd_fast_baseline_ts or ""),
+    "baseline_source": str(forced_cmd_fast_baseline_source or "none"),
+    "auto_baseline_on_epoch_change": bool(forced_cmd_fast_auto_baseline_on_epoch_change),
+    "auto_baseline_applied": bool(forced_cmd_fast_auto_baseline_applied),
+    "auto_baseline_reason": str(forced_cmd_fast_auto_baseline_reason or ""),
+    "epoch_changed": bool(forced_cmd_fast_epoch_changed),
+    "epoch_cooldown_seconds": int(max(forced_cmd_fast_epoch_cooldown_s, 0)),
 }
 
 # Zapisz snapshot progów jako osobny artefakt audytowy
@@ -1251,8 +1559,8 @@ PYAGG
 # ═══════════════════════════════════════════════════════════════════════════════
 
 run_status_doctor() {
-    QUEUE_FRESHNESS_WARN_S="$QUEUE_FRESHNESS_WARN_S" QUEUE_FRESHNESS_CRIT_S="$QUEUE_FRESHNESS_CRIT_S" \
-    python3 - "$WORK_DIR" "$STATUS_DIR" "$STATUSD_DOCTOR_FILE" "$REPAIR_QUEUE_STAGNATION_HOURS" "$REPAIR_QUEUE_STAGNATION_MIN_SAMPLES" "$REPAIR_QUEUE_STAGNATION_MIN_DROP" "$SUSPICIOUS_HIGH_WINDOW_HOURS" "$SUSPICIOUS_HIGH_WARN_COUNT" "$SUSPICIOUS_HIGH_CRIT_COUNT" "$METRICS_DRIFT_WARN_KEYS" "$METRICS_DRIFT_CRIT_KEYS" "$METRICS_DRIFT_WARN_PCT" "$METRICS_DRIFT_CRIT_PCT" "$SUSPICIOUS_HIGH_RATE_WARN_PCT" "$SUSPICIOUS_HIGH_RATE_CRIT_PCT" "$STATUSD_THRESHOLDS_FILE" "$STATUSD_USE_ENV_OVERRIDES" "$PRIORITY_GATE_STUCK_MAX_ACTIVE_MINUTES" "$PRIORITY_GATE_STUCK_MAX_CYCLES" "$PRIORITY_GATE_STUCK_MIN_QUALITY_DROP_PCT" "$REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS" "$REGISTRY_RECONCILE_MIN_OUTSIDE_PCT" "$REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS" "$REGISTRY_RECONCILE_ALWAYS_SYNC_ANY_DRIFT" "$FORCED_COMMAND_FAST_WINDOW_HOURS" "$FORCED_COMMAND_FAST_SLA_TARGET_S" "$FORCED_COMMAND_FAST_PENDING_WARN_S" "$FORCED_COMMAND_FAST_EXEC_WARN_S" "$FORCED_COMMAND_FAST_CONSECUTIVE_CRIT" "$FORCED_COMMAND_FAST_MIN_SAMPLES" <<'PYDOCTOR'
+    QUEUE_FRESHNESS_WARN_S="$QUEUE_FRESHNESS_WARN_S" QUEUE_FRESHNESS_CRIT_S="$QUEUE_FRESHNESS_CRIT_S" GUARDIAN_DAEMON_LOCK_STALE_SECONDS="$GUARDIAN_DAEMON_LOCK_STALE_SECONDS" \
+    python3 - "$WORK_DIR" "$STATUS_DIR" "$STATUSD_DOCTOR_FILE" "$REPAIR_QUEUE_STAGNATION_HOURS" "$REPAIR_QUEUE_STAGNATION_MIN_SAMPLES" "$REPAIR_QUEUE_STAGNATION_MIN_DROP" "$SUSPICIOUS_HIGH_WINDOW_HOURS" "$SUSPICIOUS_HIGH_WARN_COUNT" "$SUSPICIOUS_HIGH_CRIT_COUNT" "$METRICS_DRIFT_WARN_KEYS" "$METRICS_DRIFT_CRIT_KEYS" "$METRICS_DRIFT_WARN_PCT" "$METRICS_DRIFT_CRIT_PCT" "$SUSPICIOUS_HIGH_RATE_WARN_PCT" "$SUSPICIOUS_HIGH_RATE_CRIT_PCT" "$STATUSD_THRESHOLDS_FILE" "$STATUSD_USE_ENV_OVERRIDES" "$PRIORITY_GATE_STUCK_MAX_ACTIVE_MINUTES" "$PRIORITY_GATE_STUCK_MAX_CYCLES" "$PRIORITY_GATE_STUCK_MIN_QUALITY_DROP_PCT" "$REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS" "$REGISTRY_RECONCILE_MIN_OUTSIDE_PCT" "$REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS" "$REGISTRY_RECONCILE_ALWAYS_SYNC_ANY_DRIFT" "$FORCED_COMMAND_FAST_WINDOW_HOURS" "$FORCED_COMMAND_FAST_SLA_TARGET_S" "$FORCED_COMMAND_FAST_PENDING_WARN_S" "$FORCED_COMMAND_FAST_EXEC_WARN_S" "$FORCED_COMMAND_FAST_CONSECUTIVE_CRIT" "$FORCED_COMMAND_FAST_MIN_SAMPLES" "$FORCED_COMMAND_FAST_OPERATIONAL_WINDOW_HOURS" "$FORCED_COMMAND_FAST_OPERATIONAL_MIN_SAMPLES" "$FORCED_COMMAND_FAST_BASELINE_TS" "$FORCED_COMMAND_FAST_AUTO_BASELINE_ON_EPOCH_CHANGE" "$FORCED_COMMAND_FAST_EPOCH_COOLDOWN_SECONDS" "$FORCED_COMMAND_FAST_RUNTIME_EPOCH_ID" "$FORCED_COMMAND_FAST_RUNTIME_EPOCH_RAW" "$FORCED_COMMAND_FAST_BASELINE_SOURCE" "$FORCED_COMMAND_FAST_AUTO_BASELINE_APPLIED" "$FORCED_COMMAND_FAST_AUTO_BASELINE_REASON" "$FORCED_COMMAND_FAST_EPOCH_CHANGED" <<'PYDOCTOR'
 import json, sys, os, subprocess
 from datetime import datetime, timezone, timedelta
 from collections import Counter
@@ -1287,6 +1595,17 @@ forced_cmd_fast_pending_warn_s = float(sys.argv[27] if len(sys.argv) > 27 and sy
 forced_cmd_fast_exec_warn_s = float(sys.argv[28] if len(sys.argv) > 28 and sys.argv[28] else "30")
 forced_cmd_fast_consecutive_crit = int(float(sys.argv[29] if len(sys.argv) > 29 and sys.argv[29] else "3"))
 forced_cmd_fast_min_samples = int(float(sys.argv[30] if len(sys.argv) > 30 and sys.argv[30] else "3"))
+forced_cmd_fast_operational_window_h = float(sys.argv[31] if len(sys.argv) > 31 and sys.argv[31] else "2")
+forced_cmd_fast_operational_min_samples = int(float(sys.argv[32] if len(sys.argv) > 32 and sys.argv[32] else "3"))
+forced_cmd_fast_baseline_ts = str(sys.argv[33]).strip() if len(sys.argv) > 33 else ""
+forced_cmd_fast_auto_baseline_on_epoch_change = bool(str(sys.argv[34]).strip().lower() in ("1", "true", "yes", "on")) if len(sys.argv) > 34 else True
+forced_cmd_fast_epoch_cooldown_s = int(float(sys.argv[35] if len(sys.argv) > 35 and sys.argv[35] else "600"))
+forced_cmd_fast_runtime_epoch_id = str(sys.argv[36]).strip() if len(sys.argv) > 36 else ""
+forced_cmd_fast_runtime_epoch_raw = str(sys.argv[37]).strip() if len(sys.argv) > 37 else ""
+forced_cmd_fast_baseline_source = str(sys.argv[38]).strip() if len(sys.argv) > 38 else "none"
+forced_cmd_fast_auto_baseline_applied = bool(str(sys.argv[39]).strip().lower() in ("1", "true", "yes", "on")) if len(sys.argv) > 39 else False
+forced_cmd_fast_auto_baseline_reason = str(sys.argv[40]).strip() if len(sys.argv) > 40 else ""
+forced_cmd_fast_epoch_changed = bool(str(sys.argv[41]).strip().lower() in ("1", "true", "yes", "on")) if len(sys.argv) > 41 else False
 
 now = datetime.now(timezone.utc)
 issues = []
@@ -1298,6 +1617,11 @@ def _safe_int(v, default=0):
         return int(v)
     except Exception:
         return default
+
+guardian_daemon_lock_stale_s = max(
+    30,
+    _safe_int(os.environ.get("GUARDIAN_DAEMON_LOCK_STALE_SECONDS", "60"), 60),
+)
 
 def _parse_ts(ts):
     if not ts:
@@ -1589,6 +1913,128 @@ def _read_worker_translation_contract():
         data["status"] = "contract_ok"
         data["reason"] = "translations_general_runtime_contract_ok"
 
+    return data
+
+def _read_guardian_daemon_lock_health():
+    data = {
+        "available": False,
+        "severity": "info",
+        "status": "unknown",
+        "reason": "not_checked",
+        "stale_threshold_s": int(max(30, guardian_daemon_lock_stale_s)),
+        "daemon_state": "",
+        "daemon_reason": "",
+        "owner_pid": 0,
+        "owner_source": "",
+        "lock_age_s": 0,
+        "owner_pid_alive": False,
+        "stale_owner_dead": False,
+        "lock_dir_present": False,
+        "state_file_present": False,
+        "state_timestamp": "",
+    }
+
+    state_path = os.path.join(status_dir, "guardian_daemon_state.json")
+    lock_dir = os.path.join(work_dir, ".guardian_daemon.lock")
+    lock_pid_path = os.path.join(lock_dir, "pid")
+    lock_source_path = os.path.join(lock_dir, "source")
+    lock_ts_path = os.path.join(lock_dir, "ts")
+
+    state_owner_pid = 0
+    state_owner_source = ""
+    state_lock_age = 0
+    state_data = {}
+
+    if os.path.exists(state_path):
+        data["state_file_present"] = True
+        try:
+            with open(state_path, encoding="utf-8") as f:
+                state_data = json.load(f)
+        except Exception:
+            state_data = {}
+
+    if isinstance(state_data, dict) and state_data:
+        data["available"] = True
+        data["state_timestamp"] = str(state_data.get("timestamp", "") or "")
+        data["daemon_state"] = str(state_data.get("state", "") or "")
+        data["daemon_reason"] = str(state_data.get("reason", "") or "")
+        state_owner_pid = _safe_int(state_data.get("owner_pid", 0), 0)
+        state_owner_source = str(state_data.get("owner_source", "") or "")
+        state_lock_age = max(0, _safe_int(state_data.get("lock_age_sec", 0), 0))
+
+    lock_pid = 0
+    lock_source = ""
+    lock_age_s = 0
+
+    if os.path.isdir(lock_dir):
+        data["lock_dir_present"] = True
+        data["available"] = True
+        if os.path.exists(lock_pid_path):
+            try:
+                with open(lock_pid_path, encoding="utf-8") as f:
+                    lock_pid = _safe_int(str(f.read()).strip() or "0", 0)
+            except Exception:
+                lock_pid = 0
+        if os.path.exists(lock_source_path):
+            try:
+                with open(lock_source_path, encoding="utf-8") as f:
+                    lock_source = str(f.read().strip() or "")
+            except Exception:
+                lock_source = ""
+        if os.path.exists(lock_ts_path):
+            try:
+                with open(lock_ts_path, encoding="utf-8") as f:
+                    lock_ts_raw = _safe_int(str(f.read()).strip() or "0", 0)
+                if lock_ts_raw > 0:
+                    now_epoch = int(now.timestamp())
+                    if now_epoch >= lock_ts_raw:
+                        lock_age_s = now_epoch - lock_ts_raw
+            except Exception:
+                lock_age_s = 0
+
+    owner_pid = lock_pid if lock_pid > 0 else state_owner_pid
+    owner_source = lock_source if lock_source else state_owner_source
+    age_s = max(lock_age_s, state_lock_age)
+    owner_alive = bool(owner_pid > 0 and os.path.exists(f"/proc/{owner_pid}"))
+
+    data.update({
+        "owner_pid": int(owner_pid),
+        "owner_source": str(owner_source or ""),
+        "lock_age_s": int(max(0, age_s)),
+        "owner_pid_alive": bool(owner_alive),
+    })
+
+    if not data["available"]:
+        data["status"] = "missing"
+        data["reason"] = "guardian_daemon_state_and_lock_missing"
+        return data
+
+    if owner_pid <= 0:
+        if data["daemon_reason"] in {"manual_rate_limit", "daemon_exit", "lock_acquired"}:
+            data["severity"] = "ok"
+            data["status"] = "no_active_owner"
+            data["reason"] = data["daemon_reason"] or "no_owner_pid"
+        else:
+            data["severity"] = "info"
+            data["status"] = "owner_unknown"
+            data["reason"] = data["daemon_reason"] or "no_owner_pid"
+        return data
+
+    if owner_alive:
+        data["severity"] = "ok"
+        data["status"] = "owner_alive"
+        data["reason"] = "daemon_lock_owner_alive"
+        return data
+
+    if age_s >= data["stale_threshold_s"]:
+        data["severity"] = "critical"
+        data["status"] = "stale_lock_owner_dead"
+        data["reason"] = "daemon_lock_owner_dead_and_stale"
+        data["stale_owner_dead"] = True
+    else:
+        data["severity"] = "warning"
+        data["status"] = "owner_dead_lock_recent"
+        data["reason"] = "daemon_lock_owner_dead_below_stale_threshold"
     return data
 
 def _read_repair_queue_health():
@@ -1966,25 +2412,49 @@ def _read_forced_command_fast_health():
         "available": False,
         "status": "missing",
         "severity": "info",
+        "analysis_view": "full_window",
+        "operational_window_ready": False,
         "window_hours": float(max(forced_cmd_fast_window_h, 0.1)),
+        "operational_window_hours": float(max(forced_cmd_fast_operational_window_h, 0.1)),
         "sla_target_s": float(max(forced_cmd_fast_sla_target_s, 1.0)),
+        "pickup_warn_s": float(max(forced_cmd_fast_pending_warn_s, 1.0)),
         "pending_warn_s": float(max(forced_cmd_fast_pending_warn_s, 1.0)),
         "exec_warn_s": float(max(forced_cmd_fast_exec_warn_s, 1.0)),
         "consecutive_crit": int(max(forced_cmd_fast_consecutive_crit, 1)),
         "min_samples": int(max(forced_cmd_fast_min_samples, 1)),
+        "operational_min_samples": int(max(forced_cmd_fast_operational_min_samples, 1)),
         "samples": 0,
         "sla_met_count": 0,
         "sla_miss_count": 0,
         "sla_miss_rate_pct": 0.0,
         "consecutive_sla_miss": 0,
         "p95_roundtrip_s": 0.0,
+        "p95_mid_cycle_command_pickup_s": 0.0,
         "p95_pending_age_s": 0.0,
         "p95_exec_time_s": 0.0,
         "latest_timestamp": "",
         "latest_command": "",
         "latest_roundtrip_s": 0.0,
+        "latest_mid_cycle_command_pickup_s": 0.0,
         "latest_pending_age_s": 0.0,
         "latest_exec_time_s": 0.0,
+        "active_window_start_utc": "",
+        "active_window_end_utc": "",
+        "baseline_ts_utc": str(forced_cmd_fast_baseline_ts or ""),
+        "baseline_ts_valid": False,
+        "baseline_effective_start_utc": "",
+        "baseline_source": str(forced_cmd_fast_baseline_source or "none"),
+        "auto_baseline_on_epoch_change": bool(forced_cmd_fast_auto_baseline_on_epoch_change),
+        "auto_baseline_applied": bool(forced_cmd_fast_auto_baseline_applied),
+        "auto_baseline_reason": str(forced_cmd_fast_auto_baseline_reason or ""),
+        "epoch_cooldown_seconds": int(max(forced_cmd_fast_epoch_cooldown_s, 0)),
+        "runtime_epoch_id": str(forced_cmd_fast_runtime_epoch_id or ""),
+        "runtime_epoch_raw": str(forced_cmd_fast_runtime_epoch_raw or ""),
+        "runtime_epoch_changed": bool(forced_cmd_fast_epoch_changed),
+        "baseline_runtime_epoch_linked": False,
+        "recommended_action": {},
+        "full_window": {},
+        "operational_window": {},
     }
     metrics_path = os.path.join(status_dir, "forced_command_metrics.jsonl")
     if not os.path.exists(metrics_path):
@@ -2020,6 +2490,87 @@ def _read_forced_command_fast_health():
         frac = pos - lo
         return arr[lo] * (1.0 - frac) + arr[hi] * frac
 
+    def _evaluate(rows_subset, severity_min_samples):
+        stats = {
+            "samples": 0,
+            "sla_met_count": 0,
+            "sla_miss_count": 0,
+            "sla_miss_rate_pct": 0.0,
+            "consecutive_sla_miss": 0,
+            "p95_roundtrip_s": 0.0,
+            "p95_mid_cycle_command_pickup_s": 0.0,
+            "p95_pending_age_s": 0.0,
+            "p95_exec_time_s": 0.0,
+            "latest_timestamp": "",
+            "latest_command": "",
+            "latest_roundtrip_s": 0.0,
+            "latest_mid_cycle_command_pickup_s": 0.0,
+            "latest_pending_age_s": 0.0,
+            "latest_exec_time_s": 0.0,
+            "severity": "info",
+            "status": "no_completed_samples",
+            "window_start_utc": "",
+            "window_end_utc": now.isoformat().replace("+00:00", "Z"),
+        }
+        if not rows_subset:
+            return stats
+
+        rows_sorted = sorted(rows_subset, key=lambda x: x["timestamp"])
+        samples = len(rows_sorted)
+        sla_miss_count = sum(1 for r in rows_sorted if not r["sla_met"])
+        sla_met_count = samples - sla_miss_count
+        p95_roundtrip = _pct([r["roundtrip"] for r in rows_sorted], 0.95)
+        p95_pickup = _pct([r["pickup"] for r in rows_sorted], 0.95)
+        p95_pending = _pct([r["pending"] for r in rows_sorted], 0.95)
+        p95_exec = _pct([r["exec"] for r in rows_sorted], 0.95)
+
+        consecutive_miss = 0
+        for r in reversed(rows_sorted):
+            if r["sla_met"]:
+                break
+            consecutive_miss += 1
+
+        latest = rows_sorted[-1]
+        miss_rate_pct = round((sla_miss_count / float(max(samples, 1))) * 100.0, 3)
+        stats.update({
+            "samples": int(samples),
+            "sla_met_count": int(sla_met_count),
+            "sla_miss_count": int(sla_miss_count),
+            "sla_miss_rate_pct": float(miss_rate_pct),
+            "consecutive_sla_miss": int(consecutive_miss),
+            "p95_roundtrip_s": round(float(p95_roundtrip), 3),
+            "p95_mid_cycle_command_pickup_s": round(float(p95_pickup), 3),
+            "p95_pending_age_s": round(float(p95_pending), 3),
+            "p95_exec_time_s": round(float(p95_exec), 3),
+            "latest_timestamp": latest["timestamp"].isoformat().replace("+00:00", "Z"),
+            "latest_command": str(latest["command"]),
+            "latest_roundtrip_s": round(float(latest["roundtrip"]), 3),
+            "latest_mid_cycle_command_pickup_s": round(float(latest["pickup"]), 3),
+            "latest_pending_age_s": round(float(latest["pending"]), 3),
+            "latest_exec_time_s": round(float(latest["exec"]), 3),
+            "window_start_utc": rows_sorted[0]["timestamp"].isoformat().replace("+00:00", "Z"),
+        })
+
+        min_samples_local = int(max(severity_min_samples, 1))
+        if samples < min_samples_local:
+            stats["severity"] = "info"
+            stats["status"] = "insufficient_samples"
+        elif consecutive_miss >= out["consecutive_crit"]:
+            stats["severity"] = "critical"
+            stats["status"] = "consecutive_sla_miss"
+        elif (
+            p95_roundtrip > out["sla_target_s"]
+            or p95_pickup > out["pickup_warn_s"]
+            or p95_pending > out["pending_warn_s"]
+            or p95_exec > out["exec_warn_s"]
+        ):
+            stats["severity"] = "warning"
+            stats["status"] = "sla_elevated"
+        else:
+            stats["severity"] = "ok"
+            stats["status"] = "stable"
+        return stats
+
     window_start = now - timedelta(hours=out["window_hours"])
     rows = []
     with open(metrics_path, encoding="utf-8") as f:
@@ -2041,70 +2592,135 @@ def _read_forced_command_fast_health():
             if ts is None or ts < window_start:
                 continue
             pending = max(0.0, float(row.get("pending_age_s", row.get("forced_command_pending_age_s", 0)) or 0))
+            pickup = max(
+                0.0,
+                float(
+                    row.get(
+                        "mid_cycle_command_pickup_s",
+                        row.get(
+                            "forced_command_mid_cycle_pickup_s",
+                            pending,
+                        ),
+                    ) or 0
+                ),
+            )
             roundtrip = max(0.0, float(row.get("roundtrip_s", row.get("forced_command_roundtrip_s", 0)) or 0))
             exec_time = max(0.0, roundtrip - pending)
             sla_met = bool(row.get("sla_met", roundtrip <= out["sla_target_s"]))
             rows.append({
                 "timestamp": ts,
                 "command": cmd,
+                "pickup": pickup,
                 "pending": pending,
                 "roundtrip": roundtrip,
                 "exec": exec_time,
                 "sla_met": sla_met,
             })
 
-    if not rows:
-        out["status"] = "no_completed_samples"
-        return out
+    full_stats = _evaluate(rows, out["min_samples"])
+    full_stats["window_start_utc"] = window_start.isoformat().replace("+00:00", "Z")
+    full_stats["window_end_utc"] = now.isoformat().replace("+00:00", "Z")
 
-    rows.sort(key=lambda x: x["timestamp"])
-    samples = len(rows)
-    sla_miss_count = sum(1 for r in rows if not r["sla_met"])
-    sla_met_count = samples - sla_miss_count
-    p95_roundtrip = _pct([r["roundtrip"] for r in rows], 0.95)
-    p95_pending = _pct([r["pending"] for r in rows], 0.95)
-    p95_exec = _pct([r["exec"] for r in rows], 0.95)
-    consecutive_miss = 0
-    for r in reversed(rows):
-        if r["sla_met"]:
-            break
-        consecutive_miss += 1
+    baseline_raw = str(forced_cmd_fast_baseline_ts or "").strip()
+    baseline_dt = _parse_ts(baseline_raw) if baseline_raw else None
+    if baseline_dt is not None and baseline_dt > now:
+        baseline_dt = None
+    out["baseline_ts_utc"] = baseline_raw
+    out["baseline_ts_valid"] = bool(baseline_dt is not None)
 
-    latest = rows[-1]
-    miss_rate_pct = round((sla_miss_count / float(max(samples, 1))) * 100.0, 3)
+    op_window_start = now - timedelta(hours=out["operational_window_hours"])
+    baseline_applied = False
+    if baseline_dt is not None and baseline_dt > op_window_start:
+        op_window_start = baseline_dt
+        baseline_applied = True
+    out["baseline_effective_start_utc"] = op_window_start.isoformat().replace("+00:00", "Z")
+
+    op_rows = [r for r in rows if r["timestamp"] >= op_window_start]
+    op_stats = _evaluate(op_rows, out["operational_min_samples"])
+    op_stats["window_start_utc"] = op_window_start.isoformat().replace("+00:00", "Z")
+    op_stats["window_end_utc"] = now.isoformat().replace("+00:00", "Z")
+    op_stats["baseline_applied"] = bool(baseline_applied)
+    op_stats["baseline_ts_utc"] = baseline_raw
+    op_stats["baseline_ts_valid"] = bool(baseline_dt is not None)
+
+    out["full_window"] = full_stats
+    out["operational_window"] = op_stats
+    out["operational_window_ready"] = bool(op_stats.get("samples", 0) >= out["operational_min_samples"])
+
+    active = full_stats
+    if out["operational_window_ready"]:
+        out["analysis_view"] = "operational_window"
+        active = op_stats
 
     out.update({
-        "samples": int(samples),
-        "sla_met_count": int(sla_met_count),
-        "sla_miss_count": int(sla_miss_count),
-        "sla_miss_rate_pct": float(miss_rate_pct),
-        "consecutive_sla_miss": int(consecutive_miss),
-        "p95_roundtrip_s": round(float(p95_roundtrip), 3),
-        "p95_pending_age_s": round(float(p95_pending), 3),
-        "p95_exec_time_s": round(float(p95_exec), 3),
-        "latest_timestamp": latest["timestamp"].isoformat().replace("+00:00", "Z"),
-        "latest_command": str(latest["command"]),
-        "latest_roundtrip_s": round(float(latest["roundtrip"]), 3),
-        "latest_pending_age_s": round(float(latest["pending"]), 3),
-        "latest_exec_time_s": round(float(latest["exec"]), 3),
+        "samples": int(active.get("samples", 0)),
+        "sla_met_count": int(active.get("sla_met_count", 0)),
+        "sla_miss_count": int(active.get("sla_miss_count", 0)),
+        "sla_miss_rate_pct": float(active.get("sla_miss_rate_pct", 0.0)),
+        "consecutive_sla_miss": int(active.get("consecutive_sla_miss", 0)),
+        "p95_roundtrip_s": float(active.get("p95_roundtrip_s", 0.0)),
+        "p95_mid_cycle_command_pickup_s": float(active.get("p95_mid_cycle_command_pickup_s", 0.0)),
+        "p95_pending_age_s": float(active.get("p95_pending_age_s", 0.0)),
+        "p95_exec_time_s": float(active.get("p95_exec_time_s", 0.0)),
+        "latest_timestamp": str(active.get("latest_timestamp", "") or ""),
+        "latest_command": str(active.get("latest_command", "") or ""),
+        "latest_roundtrip_s": float(active.get("latest_roundtrip_s", 0.0)),
+        "latest_mid_cycle_command_pickup_s": float(active.get("latest_mid_cycle_command_pickup_s", 0.0)),
+        "latest_pending_age_s": float(active.get("latest_pending_age_s", 0.0)),
+        "latest_exec_time_s": float(active.get("latest_exec_time_s", 0.0)),
+        "severity": str(active.get("severity", "info") or "info"),
+        "status": str(active.get("status", "no_completed_samples") or "no_completed_samples"),
+        "active_window_start_utc": str(active.get("window_start_utc", "") or ""),
+        "active_window_end_utc": str(active.get("window_end_utc", "") or ""),
     })
+    out["baseline_runtime_epoch_linked"] = bool(
+        out.get("baseline_ts_valid", False)
+        and str(out.get("runtime_epoch_id", "") or "")
+        and str(out.get("baseline_source", "") or "").startswith("auto")
+    )
 
-    if samples < out["min_samples"]:
-        out["severity"] = "info"
-        out["status"] = "insufficient_samples"
-    elif consecutive_miss >= out["consecutive_crit"]:
-        out["severity"] = "critical"
-        out["status"] = "consecutive_sla_miss"
-    elif (
-        p95_roundtrip > out["sla_target_s"]
-        or p95_pending > out["pending_warn_s"]
-        or p95_exec > out["exec_warn_s"]
-    ):
-        out["severity"] = "warning"
-        out["status"] = "sla_elevated"
-    else:
-        out["severity"] = "ok"
-        out["status"] = "stable"
+    def _build_action_hint(payload):
+        view = str(payload.get("analysis_view", "full_window") or "full_window")
+        ready = bool(payload.get("operational_window_ready", False))
+        sev = str(payload.get("severity", "info") or "info").lower()
+        status = str(payload.get("status", "unknown") or "unknown").lower()
+        if not ready or status == "insufficient_samples":
+            return {
+                "action": "collect_samples",
+                "urgency": "low",
+                "reason": "operational_window_not_ready",
+            }
+        if sev == "critical":
+            if view == "operational_window":
+                return {
+                    "action": "rollback_or_pause_fast_lane",
+                    "urgency": "high",
+                    "reason": "recent_sla_critical",
+                }
+            return {
+                "action": "confirm_recent_window_then_rollback",
+                "urgency": "medium",
+                "reason": "critical_seen_in_full_window",
+            }
+        if sev == "warning":
+            if view == "operational_window":
+                return {
+                    "action": "continue_with_tuning",
+                    "urgency": "medium",
+                    "reason": "recent_sla_warning",
+                }
+            return {
+                "action": "observe_recent_window",
+                "urgency": "low",
+                "reason": "warning_seen_in_full_window",
+            }
+        return {
+            "action": "continue",
+            "urgency": "none",
+            "reason": "sla_stable",
+        }
+
+    out["recommended_action"] = _build_action_hint(out)
     return out
 
 # ── 1. Freshness: heartbeat (dynamiczny kontrakt pod długie cykle) ─────
@@ -2321,6 +2937,37 @@ try:
 except Exception as e:
     warnings.append(f"WORKER_TRANSLATION_CONTRACT_CHECK_ERROR: {e}")
 
+# ── 5d. Guardian daemon lock watchdog (owner dead + stale age) ─────────
+guardian_daemon_lock_info = {}
+try:
+    guardian_daemon_lock_info = _read_guardian_daemon_lock_health()
+    if not guardian_daemon_lock_info.get("available", False):
+        warnings.append(
+            f"GUARDIAN_DAEMON_LOCK_UNAVAILABLE: status={guardian_daemon_lock_info.get('status', 'unknown')} "
+            f"reason={guardian_daemon_lock_info.get('reason', 'unknown')}"
+        )
+    else:
+        desc = (
+            f"owner_pid={guardian_daemon_lock_info.get('owner_pid', 0)} "
+            f"owner_alive={int(bool(guardian_daemon_lock_info.get('owner_pid_alive', False)))} "
+            f"lock_age={guardian_daemon_lock_info.get('lock_age_s', 0)}s "
+            f"stale_threshold={guardian_daemon_lock_info.get('stale_threshold_s', 60)}s "
+            f"daemon_state={guardian_daemon_lock_info.get('daemon_state', '-') or '-'} "
+            f"daemon_reason={guardian_daemon_lock_info.get('daemon_reason', '-') or '-'} "
+            f"status={guardian_daemon_lock_info.get('status', 'unknown')}"
+        )
+        sev = str(guardian_daemon_lock_info.get("severity", "ok") or "ok").lower()
+        if sev == "critical":
+            issues.append(f"GUARDIAN_DAEMON_LOCK_STALE: {desc}")
+        elif sev == "warning":
+            warnings.append(f"GUARDIAN_DAEMON_LOCK_WARNING: {desc}")
+        elif sev == "info":
+            ok_checks.append(f"guardian_daemon_lock_observed ({desc})")
+        else:
+            ok_checks.append(f"guardian_daemon_lock_ok ({desc})")
+except Exception as e:
+    warnings.append(f"GUARDIAN_DAEMON_LOCK_CHECK_ERROR: {e}")
+
 # ── 6. Guardian health spójny ──────────────────────────────────────────
 try:
     with open(os.path.join(status_dir, "guardian_health.json"), encoding="utf-8") as f:
@@ -2476,13 +3123,21 @@ try:
         warnings.append("FORCED_CMD_FAST_UNAVAILABLE: brak forced_command_metrics.jsonl")
     else:
         desc = (
+            f"view={forced_command_fast_info.get('analysis_view', 'full_window')} "
             f"samples={forced_command_fast_info.get('samples', 0)} "
+            f"(op={forced_command_fast_info.get('operational_window', {}).get('samples', 0) if isinstance(forced_command_fast_info.get('operational_window', {}), dict) else 0}/"
+            f"{forced_command_fast_info.get('operational_min_samples', 0)}) "
+            f"baseline={forced_command_fast_info.get('baseline_ts_utc', '') or '-'} "
+            f"baseline_src={forced_command_fast_info.get('baseline_source', 'none')} "
+            f"epoch={forced_command_fast_info.get('runtime_epoch_id', '')[:8] or '-'} "
             f"sla_target={forced_command_fast_info.get('sla_target_s', 45):.0f}s "
             f"p95_roundtrip={forced_command_fast_info.get('p95_roundtrip_s', 0):.1f}s "
+            f"p95_pickup={forced_command_fast_info.get('p95_mid_cycle_command_pickup_s', 0):.1f}s "
             f"p95_pending={forced_command_fast_info.get('p95_pending_age_s', 0):.1f}s "
             f"p95_exec={forced_command_fast_info.get('p95_exec_time_s', 0):.1f}s "
             f"miss={forced_command_fast_info.get('sla_miss_count', 0)}/{forced_command_fast_info.get('samples', 0)} "
-            f"consecutive_miss={forced_command_fast_info.get('consecutive_sla_miss', 0)}"
+            f"consecutive_miss={forced_command_fast_info.get('consecutive_sla_miss', 0)} "
+            f"action={(forced_command_fast_info.get('recommended_action', {}) or {}).get('action', '-')}"
         )
         sev = str(forced_command_fast_info.get("severity", "info") or "info").lower()
         if sev == "critical":
@@ -2631,6 +3286,7 @@ doctor_report = {
     "forced_command_fast": forced_command_fast_info if isinstance(forced_command_fast_info, dict) else {},
     "worker_process_watch": worker_process_watch_info if isinstance(worker_process_watch_info, dict) else {},
     "translation_contract": translation_contract_info if isinstance(translation_contract_info, dict) else {},
+    "guardian_daemon_lock": guardian_daemon_lock_info if isinstance(guardian_daemon_lock_info, dict) else {},
     "thresholds_snapshot": {
         "source_of_truth": "statusd_thresholds_file",
         "config_file": thresholds_file,
@@ -2661,10 +3317,25 @@ doctor_report = {
         "forced_command_fast": {
             "window_hours": float(max(forced_cmd_fast_window_h, 0.1)),
             "sla_target_s": float(max(forced_cmd_fast_sla_target_s, 1.0)),
+            "pickup_warn_s": float(max(forced_cmd_fast_pending_warn_s, 1.0)),
             "pending_warn_s": float(max(forced_cmd_fast_pending_warn_s, 1.0)),
             "exec_warn_s": float(max(forced_cmd_fast_exec_warn_s, 1.0)),
             "consecutive_crit": int(max(forced_cmd_fast_consecutive_crit, 1)),
             "min_samples": int(max(forced_cmd_fast_min_samples, 1)),
+            "operational_window_hours": float(max(forced_cmd_fast_operational_window_h, 0.1)),
+            "operational_min_samples": int(max(forced_cmd_fast_operational_min_samples, 1)),
+            "baseline_ts_utc": str(forced_cmd_fast_baseline_ts or ""),
+            "auto_baseline_on_epoch_change": bool(forced_cmd_fast_auto_baseline_on_epoch_change),
+            "epoch_cooldown_seconds": int(max(forced_cmd_fast_epoch_cooldown_s, 0)),
+            "runtime_epoch_id": str(forced_cmd_fast_runtime_epoch_id or ""),
+            "runtime_epoch_raw": str(forced_cmd_fast_runtime_epoch_raw or ""),
+            "baseline_source": str(forced_cmd_fast_baseline_source or "none"),
+            "auto_baseline_applied": bool(forced_cmd_fast_auto_baseline_applied),
+            "auto_baseline_reason": str(forced_cmd_fast_auto_baseline_reason or ""),
+            "epoch_changed": bool(forced_cmd_fast_epoch_changed),
+        },
+        "guardian_daemon_lock": {
+            "stale_owner_threshold_seconds": int(max(30, guardian_daemon_lock_stale_s)),
         },
         "registry_reconcile": {
             "min_outside_keys": int(registry_reconcile_min_outside_keys),
@@ -3417,6 +4088,15 @@ priority_gate_active_minutes = float(priority_gate_watch.get("active_minutes", 0
 priority_gate_cycle_delta = int(priority_gate_watch.get("cycle_delta", 0) or 0)
 priority_gate_best_drop = float(priority_gate_watch.get("best_quality_drop_pct", 0) or 0.0)
 priority_gate_reason = str(priority_gate_watch.get("reason", "") or "")
+guardian_daemon_lock = doctor.get("guardian_daemon_lock", {}) if isinstance(doctor.get("guardian_daemon_lock", {}), dict) else {}
+guardian_daemon_lock_detected = bool(guardian_daemon_lock.get("stale_owner_dead", False))
+guardian_daemon_lock_severity = str(guardian_daemon_lock.get("severity", "ok") or "ok").lower()
+guardian_daemon_lock_owner_pid = int(guardian_daemon_lock.get("owner_pid", 0) or 0)
+guardian_daemon_lock_owner_alive = bool(guardian_daemon_lock.get("owner_pid_alive", False))
+guardian_daemon_lock_age_s = int(guardian_daemon_lock.get("lock_age_s", 0) or 0)
+guardian_daemon_lock_threshold_s = int(guardian_daemon_lock.get("stale_threshold_s", 60) or 60)
+guardian_daemon_lock_status = str(guardian_daemon_lock.get("status", "") or "")
+forced_command_fast = doctor.get("forced_command_fast", {}) if isinstance(doctor.get("forced_command_fast", {}), dict) else {}
 quality_watch_top_lang = ""
 try:
     top_langs = quality_watch.get("top_langs", [])
@@ -3446,6 +4126,22 @@ if priority_gate_detected:
         pg_signal_severity,
         "priority_gate_stuck",
         f"priority_gate stuck pending=[{pending_label}] active={priority_gate_active_minutes:.1f}m cycles={priority_gate_cycle_delta} drop={priority_gate_best_drop:.3f}% reason={priority_gate_reason}",
+    ))
+if guardian_daemon_lock_detected:
+    signals.append((
+        "CRITICAL",
+        "guardian_daemon_lock_stale",
+        f"guardian daemon lock stale: owner_pid={guardian_daemon_lock_owner_pid} "
+        f"alive={int(guardian_daemon_lock_owner_alive)} age={guardian_daemon_lock_age_s}s "
+        f"threshold={guardian_daemon_lock_threshold_s}s status={guardian_daemon_lock_status}",
+    ))
+elif guardian_daemon_lock_severity == "warning":
+    signals.append((
+        "WARNING",
+        "guardian_daemon_lock_warning",
+        f"guardian daemon lock warning: owner_pid={guardian_daemon_lock_owner_pid} "
+        f"alive={int(guardian_daemon_lock_owner_alive)} age={guardian_daemon_lock_age_s}s "
+        f"threshold={guardian_daemon_lock_threshold_s}s status={guardian_daemon_lock_status}",
     ))
 if quality_watch_severity == "critical":
     signals.append((
@@ -3507,6 +4203,22 @@ elif forced_cmd_warnings:
         forced_cmd_warnings[0],
     ))
 
+# ── Signal: guardian daemon stale lock fallback (doctor text) ──────────
+daemon_lock_issues = [i for i in doctor_issues if "GUARDIAN_DAEMON_LOCK_STALE" in i]
+daemon_lock_warnings = [w for w in doctor_warnings if "GUARDIAN_DAEMON_LOCK_WARNING" in w]
+if not guardian_daemon_lock_detected and daemon_lock_issues:
+    signals.append((
+        "CRITICAL",
+        "guardian_daemon_lock_stale",
+        daemon_lock_issues[0],
+    ))
+elif guardian_daemon_lock_severity != "warning" and daemon_lock_warnings:
+    signals.append((
+        "WARNING",
+        "guardian_daemon_lock_warning",
+        daemon_lock_warnings[0],
+    ))
+
 # ── Signal: repair tuning no samples ──────────────────────────────────
 tuning_warnings = [w for w in doctor_warnings if "REPAIR_TUNING_NO_SAMPLES" in w]
 if tuning_warnings:
@@ -3524,11 +4236,13 @@ severity_rank = {"CRITICAL": 3, "WARNING": 2, "INFO": 1}
 reason_rank = {
     "guardian_stuck": 8,
     "doctor_critical": 7,
+    "guardian_daemon_lock_stale": 7,
     "metrics_drift_high": 6,
     "priority_gate_stuck": 6,
     "forced_command_sla_critical": 6,
     "suspicious_high_spike": 5,
     "repair_queue_stagnation": 4,
+    "guardian_daemon_lock_warning": 4,
     "metrics_drift_elevated": 3,
     "forced_command_sla_warning": 3,
     "suspicious_high_elevated": 3,
@@ -3609,12 +4323,42 @@ payload = {
         "cycle_delta": int(priority_gate_cycle_delta),
         "best_quality_drop_pct": round(priority_gate_best_drop, 3),
     },
+    "guardian_daemon_lock": {
+        "detected_stale_owner_dead": bool(guardian_daemon_lock_detected),
+        "severity": guardian_daemon_lock_severity,
+        "status": guardian_daemon_lock_status,
+        "owner_pid": int(guardian_daemon_lock_owner_pid),
+        "owner_pid_alive": bool(guardian_daemon_lock_owner_alive),
+        "lock_age_s": int(guardian_daemon_lock_age_s),
+        "stale_threshold_s": int(guardian_daemon_lock_threshold_s),
+    },
+    "forced_command_fast": {
+        "analysis_view": str(forced_command_fast.get("analysis_view", "") or ""),
+        "operational_window_ready": bool(forced_command_fast.get("operational_window_ready", False)),
+        "samples": int(forced_command_fast.get("samples", 0) or 0),
+        "status": str(forced_command_fast.get("status", "") or ""),
+        "severity": str(forced_command_fast.get("severity", "") or ""),
+        "p95_roundtrip_s": float(forced_command_fast.get("p95_roundtrip_s", 0) or 0.0),
+        "p95_mid_cycle_command_pickup_s": float(forced_command_fast.get("p95_mid_cycle_command_pickup_s", 0) or 0.0),
+        "baseline_ts_utc": str(forced_command_fast.get("baseline_ts_utc", "") or ""),
+        "baseline_source": str(forced_command_fast.get("baseline_source", "") or ""),
+        "runtime_epoch_id": str(forced_command_fast.get("runtime_epoch_id", "") or ""),
+        "runtime_epoch_changed": bool(forced_command_fast.get("runtime_epoch_changed", False)),
+        "auto_baseline_on_epoch_change": bool(forced_command_fast.get("auto_baseline_on_epoch_change", False)),
+        "auto_baseline_applied": bool(forced_command_fast.get("auto_baseline_applied", False)),
+        "auto_baseline_reason": str(forced_command_fast.get("auto_baseline_reason", "") or ""),
+        "recommended_action": forced_command_fast.get("recommended_action", {}) if isinstance(forced_command_fast.get("recommended_action", {}), dict) else {},
+    },
     "content": (
         f"[i18n-statusd][{severity}] {reason_text} | "
         f"doctor={doctor_overall} guardian={guardian_state} hb_age={worker.get('heartbeat_age_s', -1)}s "
         f"repair_stagnation={'yes' if repair_stagnation_detected else 'no'} "
         f"suspicious_high={quality_watch_total} metrics_drift={metrics_drift_outside} "
-        f"priority_gate_stuck={'yes' if priority_gate_detected else 'no'}"
+        f"priority_gate_stuck={'yes' if priority_gate_detected else 'no'} "
+        f"daemon_lock_stale={'yes' if guardian_daemon_lock_detected else 'no'} "
+        f"forced_view={forced_command_fast.get('analysis_view', '-')} "
+        f"forced_epoch={(forced_command_fast.get('runtime_epoch_id', '') or '-')[:8]} "
+        f"forced_action={(forced_command_fast.get('recommended_action', {}) or {}).get('action', '-')}"
     ),
 }
 
@@ -3678,7 +4422,7 @@ PYALERT
 # ═══════════════════════════════════════════════════════════════════════════════
 
 generate_daily_report() {
-    python3 - "$STATUS_DIR" "$STATUSD_DAILY_REPORT_JSON" "$STATUSD_DAILY_REPORT_MD" "$REPAIR_QUEUE_STAGNATION_HOURS" "$REPAIR_QUEUE_STAGNATION_MIN_SAMPLES" "$REPAIR_QUEUE_STAGNATION_MIN_DROP" "$METRICS_DRIFT_WARN_KEYS" "$METRICS_DRIFT_CRIT_KEYS" "$METRICS_DRIFT_WARN_PCT" "$METRICS_DRIFT_CRIT_PCT" "$STATUSD_THRESHOLDS_FILE" "$STATUSD_USE_ENV_OVERRIDES" "$PRIORITY_GATE_STUCK_MAX_ACTIVE_MINUTES" "$PRIORITY_GATE_STUCK_MAX_CYCLES" "$PRIORITY_GATE_STUCK_MIN_QUALITY_DROP_PCT" "$REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS" "$REGISTRY_RECONCILE_MIN_OUTSIDE_PCT" "$REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS" "$REGISTRY_RECONCILE_ALWAYS_SYNC_ANY_DRIFT" "$FORCED_COMMAND_FAST_WINDOW_HOURS" "$FORCED_COMMAND_FAST_SLA_TARGET_S" "$FORCED_COMMAND_FAST_PENDING_WARN_S" "$FORCED_COMMAND_FAST_EXEC_WARN_S" "$FORCED_COMMAND_FAST_CONSECUTIVE_CRIT" "$FORCED_COMMAND_FAST_MIN_SAMPLES" <<'PYDAILY'
+    python3 - "$STATUS_DIR" "$STATUSD_DAILY_REPORT_JSON" "$STATUSD_DAILY_REPORT_MD" "$REPAIR_QUEUE_STAGNATION_HOURS" "$REPAIR_QUEUE_STAGNATION_MIN_SAMPLES" "$REPAIR_QUEUE_STAGNATION_MIN_DROP" "$METRICS_DRIFT_WARN_KEYS" "$METRICS_DRIFT_CRIT_KEYS" "$METRICS_DRIFT_WARN_PCT" "$METRICS_DRIFT_CRIT_PCT" "$STATUSD_THRESHOLDS_FILE" "$STATUSD_USE_ENV_OVERRIDES" "$PRIORITY_GATE_STUCK_MAX_ACTIVE_MINUTES" "$PRIORITY_GATE_STUCK_MAX_CYCLES" "$PRIORITY_GATE_STUCK_MIN_QUALITY_DROP_PCT" "$REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS" "$REGISTRY_RECONCILE_MIN_OUTSIDE_PCT" "$REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS" "$REGISTRY_RECONCILE_ALWAYS_SYNC_ANY_DRIFT" "$FORCED_COMMAND_FAST_WINDOW_HOURS" "$FORCED_COMMAND_FAST_SLA_TARGET_S" "$FORCED_COMMAND_FAST_PENDING_WARN_S" "$FORCED_COMMAND_FAST_EXEC_WARN_S" "$FORCED_COMMAND_FAST_CONSECUTIVE_CRIT" "$FORCED_COMMAND_FAST_MIN_SAMPLES" "$FORCED_COMMAND_FAST_OPERATIONAL_WINDOW_HOURS" "$FORCED_COMMAND_FAST_OPERATIONAL_MIN_SAMPLES" "$FORCED_COMMAND_FAST_BASELINE_TS" "$FORCED_COMMAND_FAST_AUTO_BASELINE_ON_EPOCH_CHANGE" "$FORCED_COMMAND_FAST_EPOCH_COOLDOWN_SECONDS" "$FORCED_COMMAND_FAST_RUNTIME_EPOCH_ID" "$FORCED_COMMAND_FAST_RUNTIME_EPOCH_RAW" "$FORCED_COMMAND_FAST_BASELINE_SOURCE" "$FORCED_COMMAND_FAST_AUTO_BASELINE_APPLIED" "$FORCED_COMMAND_FAST_AUTO_BASELINE_REASON" "$FORCED_COMMAND_FAST_EPOCH_CHANGED" <<'PYDAILY'
 import json, sys, os, re
 from collections import defaultdict, Counter
 from datetime import datetime, timezone, timedelta
@@ -3708,6 +4452,17 @@ forced_cmd_fast_pending_warn_s = float(sys.argv[22] if len(sys.argv) > 22 and sy
 forced_cmd_fast_exec_warn_s = float(sys.argv[23] if len(sys.argv) > 23 and sys.argv[23] else "30")
 forced_cmd_fast_consecutive_crit = int(float(sys.argv[24] if len(sys.argv) > 24 and sys.argv[24] else "3"))
 forced_cmd_fast_min_samples = int(float(sys.argv[25] if len(sys.argv) > 25 and sys.argv[25] else "3"))
+forced_cmd_fast_operational_window_h = float(sys.argv[26] if len(sys.argv) > 26 and sys.argv[26] else "2")
+forced_cmd_fast_operational_min_samples = int(float(sys.argv[27] if len(sys.argv) > 27 and sys.argv[27] else "3"))
+forced_cmd_fast_baseline_ts = str(sys.argv[28]).strip() if len(sys.argv) > 28 else ""
+forced_cmd_fast_auto_baseline_on_epoch_change = bool(str(sys.argv[29]).strip().lower() in ("1", "true", "yes", "on")) if len(sys.argv) > 29 else True
+forced_cmd_fast_epoch_cooldown_s = int(float(sys.argv[30] if len(sys.argv) > 30 and sys.argv[30] else "600"))
+forced_cmd_fast_runtime_epoch_id = str(sys.argv[31]).strip() if len(sys.argv) > 31 else ""
+forced_cmd_fast_runtime_epoch_raw = str(sys.argv[32]).strip() if len(sys.argv) > 32 else ""
+forced_cmd_fast_baseline_source = str(sys.argv[33]).strip() if len(sys.argv) > 33 else "none"
+forced_cmd_fast_auto_baseline_applied = bool(str(sys.argv[34]).strip().lower() in ("1", "true", "yes", "on")) if len(sys.argv) > 34 else False
+forced_cmd_fast_auto_baseline_reason = str(sys.argv[35]).strip() if len(sys.argv) > 35 else ""
+forced_cmd_fast_epoch_changed = bool(str(sys.argv[36]).strip().lower() in ("1", "true", "yes", "on")) if len(sys.argv) > 36 else False
 
 now = datetime.now(timezone.utc)
 window_start = now - timedelta(hours=24)
@@ -4337,10 +5092,25 @@ report = {
         "forced_command_fast": {
             "window_hours": float(max(forced_cmd_fast_window_h, 0.1)),
             "sla_target_s": float(max(forced_cmd_fast_sla_target_s, 1.0)),
+            "pickup_warn_s": float(max(forced_cmd_fast_pending_warn_s, 1.0)),
             "pending_warn_s": float(max(forced_cmd_fast_pending_warn_s, 1.0)),
             "exec_warn_s": float(max(forced_cmd_fast_exec_warn_s, 1.0)),
             "consecutive_crit": int(max(forced_cmd_fast_consecutive_crit, 1)),
             "min_samples": int(max(forced_cmd_fast_min_samples, 1)),
+            "operational_window_hours": float(max(forced_cmd_fast_operational_window_h, 0.1)),
+            "operational_min_samples": int(max(forced_cmd_fast_operational_min_samples, 1)),
+            "baseline_ts_utc": str(forced_cmd_fast_baseline_ts or ""),
+            "auto_baseline_on_epoch_change": bool(forced_cmd_fast_auto_baseline_on_epoch_change),
+            "epoch_cooldown_seconds": int(max(forced_cmd_fast_epoch_cooldown_s, 0)),
+            "runtime_epoch_id": str(forced_cmd_fast_runtime_epoch_id or ""),
+            "runtime_epoch_raw": str(forced_cmd_fast_runtime_epoch_raw or ""),
+            "baseline_source": str(forced_cmd_fast_baseline_source or "none"),
+            "auto_baseline_applied": bool(forced_cmd_fast_auto_baseline_applied),
+            "auto_baseline_reason": str(forced_cmd_fast_auto_baseline_reason or ""),
+            "epoch_changed": bool(forced_cmd_fast_epoch_changed),
+        },
+        "guardian_daemon_lock": {
+            "stale_owner_threshold_seconds": int(max(30, _safe_int(os.environ.get("GUARDIAN_DAEMON_LOCK_STALE_SECONDS", "60"), 60))),
         },
         "registry_reconcile": {
             "min_outside_keys": int(registry_reconcile_min_outside_keys),
@@ -4357,6 +5127,17 @@ report = {
         "categories_by_translated": [{"category": k, **v} for k, v in top_categories],
     },
     "strict_hourly_snapshot": strict_hourly,
+    "forced_command_fast_runtime": {
+        "runtime_epoch_id": str(forced_cmd_fast_runtime_epoch_id or ""),
+        "runtime_epoch_raw": str(forced_cmd_fast_runtime_epoch_raw or ""),
+        "baseline_ts_utc": str(forced_cmd_fast_baseline_ts or ""),
+        "baseline_source": str(forced_cmd_fast_baseline_source or "none"),
+        "auto_baseline_on_epoch_change": bool(forced_cmd_fast_auto_baseline_on_epoch_change),
+        "auto_baseline_applied": bool(forced_cmd_fast_auto_baseline_applied),
+        "auto_baseline_reason": str(forced_cmd_fast_auto_baseline_reason or ""),
+        "epoch_changed": bool(forced_cmd_fast_epoch_changed),
+        "epoch_cooldown_seconds": int(max(forced_cmd_fast_epoch_cooldown_s, 0)),
+    },
     "repair_queue_24h": repair_queue_24h,
     "repair_tuning_24h": repair_tuning_24h,
     "notes": [
@@ -5008,6 +5789,135 @@ maybe_run_stagnation_check() {
     if [ "$age_s" -ge "$STAGNATION_CHECK_INTERVAL" ]; then
         run_repair_stagnation_check
     fi
+}
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# MODUŁ 7b-bis: Domain audit (per-lang/per-domain quality artifact)
+# ═══════════════════════════════════════════════════════════════════════════════
+
+run_domain_audit() {
+    python3 - "$WORK_DIR" "$STATUS_DIR" <<'PYDOMAINAUDIT'
+import json, os, sys, re
+from datetime import datetime, timezone
+
+work_dir = sys.argv[1]
+status_dir = sys.argv[2]
+i18n_dir = os.path.join(work_dir, "i18n")
+en_dir = os.path.join(i18n_dir, "en")
+
+# Załaduj EN data
+en_data_by_file = {}
+if os.path.isdir(en_dir):
+    for fn in sorted(os.listdir(en_dir)):
+        if not fn.endswith(".json"):
+            continue
+        try:
+            with open(os.path.join(en_dir, fn), encoding="utf-8") as f:
+                data = json.load(f)
+            if isinstance(data, dict):
+                en_data_by_file[fn] = data
+        except Exception:
+            continue
+
+if not en_data_by_file:
+    print("DOMAIN_AUDIT_SKIP: no EN data")
+    sys.exit(0)
+
+# Lista języków
+lang_dirs = []
+if os.path.isdir(i18n_dir):
+    for name in sorted(os.listdir(i18n_dir)):
+        if name == "en":
+            continue
+        p = os.path.join(i18n_dir, name)
+        if os.path.isdir(p) and re.fullmatch(r"[a-z]{2}(?:_[A-Z]{2})?", name):
+            lang_dirs.append(name)
+
+audit_entries = []
+
+for lang in lang_dirs:
+    for json_file, en_data in en_data_by_file.items():
+        lang_path = os.path.join(i18n_dir, lang, json_file)
+        total = len(en_data)
+        genuine = 0
+        en_copy = 0
+        en_prefix = 0
+        missing = 0
+        placeholder_mismatch = 0
+
+        if not os.path.exists(lang_path):
+            missing = total
+        else:
+            try:
+                with open(lang_path, encoding="utf-8") as f:
+                    lang_data = json.load(f)
+            except Exception:
+                missing = total
+                lang_data = {}
+
+            if isinstance(lang_data, dict):
+                for key, en_val in en_data.items():
+                    val = lang_data.get(key)
+                    if val is None or key not in lang_data:
+                        missing += 1
+                        continue
+                    s_val = str(val)
+                    s_en = str(en_val)
+                    if s_val.startswith("[EN]") or s_val.startswith("["):
+                        en_prefix += 1
+                    elif s_val == s_en:
+                        en_copy += 1
+                    else:
+                        genuine += 1
+                        # Placeholder check: {name}, %s, %d
+                        en_ph = set(re.findall(r'\{[^}]+\}|%[sd]', s_en))
+                        lang_ph = set(re.findall(r'\{[^}]+\}|%[sd]', s_val))
+                        if en_ph != lang_ph:
+                            placeholder_mismatch += 1
+
+        genuine_pct = round(genuine / total * 100, 2) if total > 0 else 0.0
+        audit_entries.append({
+            "lang": lang,
+            "domain": json_file,
+            "total_keys": total,
+            "genuine": genuine,
+            "genuine_pct": genuine_pct,
+            "en_copy": en_copy,
+            "en_prefix": en_prefix,
+            "missing": missing,
+            "placeholder_mismatch": placeholder_mismatch,
+        })
+
+# Zapisz artefakt
+output_path = os.path.join(status_dir, "translation_domain_audit_latest.json")
+payload = {
+    "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+    "total_langs": len(lang_dirs),
+    "total_domains": len(en_data_by_file),
+    "entries": audit_entries,
+    "summary": {},
+}
+
+# Podsumowanie per domena (agregat)
+domain_summary = {}
+for e in audit_entries:
+    d = e["domain"]
+    if d not in domain_summary:
+        domain_summary[d] = {"total_keys": e["total_keys"], "langs": 0, "avg_genuine_pct": 0.0, "total_placeholder_mismatch": 0}
+    domain_summary[d]["langs"] += 1
+    domain_summary[d]["avg_genuine_pct"] += e["genuine_pct"]
+    domain_summary[d]["total_placeholder_mismatch"] += e["placeholder_mismatch"]
+for d, s in domain_summary.items():
+    if s["langs"] > 0:
+        s["avg_genuine_pct"] = round(s["avg_genuine_pct"] / s["langs"], 2)
+payload["summary"] = domain_summary
+
+os.makedirs(status_dir, exist_ok=True)
+with open(output_path, "w", encoding="utf-8") as f:
+    json.dump(payload, f, indent=2, ensure_ascii=False)
+
+print(f"DOMAIN_AUDIT_OK: {len(audit_entries)} entries, {len(lang_dirs)} langs, {len(en_data_by_file)} domains")
+PYDOMAINAUDIT
 }
 
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -6299,6 +7209,7 @@ PYWEEKLYMULTILANG
 
 run_statusd_cycle() {
     local result reconcile_result
+    refresh_forced_command_fast_epoch_context
     reconcile_result=$(run_registry_reconcile 2>/dev/null || true)
     if [ -n "$reconcile_result" ]; then
         log_statusd "🧩 Registry reconcile: $reconcile_result"
@@ -6313,6 +7224,9 @@ run_statusd_cycle() {
     fi
 
     run_status_doctor >> "$STATUSD_LOG" 2>&1 || true
+
+    # Domain audit (per-lang/per-domain quality artifact)
+    run_domain_audit >> "$STATUSD_LOG" 2>&1 || true
 
     # Alerting webhook (P2.1)
     run_webhook_alerting >> "$STATUSD_LOG" 2>&1 || true
@@ -6418,6 +7332,10 @@ case "${1:-}" in
             echo "$reconcile_result"
         fi
         maybe_refresh_status_md "$reconcile_result"
+        ;;
+    --domain-audit)
+        echo "═══ Domain audit (ręczne uruchomienie) ═══"
+        run_domain_audit
         ;;
     --historia)
         HISTORIA_ENABLED=true

@@ -1810,13 +1810,109 @@ Godzina 3:30  Guardian uruchamia Worker C (migration) — slot 30min
 
 ### Nadal otwarte
 - [ ] `MQ-COVERAGE-1` (P0): podnieść coverage `items/npc` LT/CS/EL/IT do min. 15% non-placeholder na etapie testowym.
-- [ ] `MQ-FAST-2` (P1): zejść do `p95 roundtrip <=45s` dla `AUTO N<=30` (aktualnie nadal >100s).
-- [ ] `MQ-FAST-3` (P1, nowe): osobno raportować i redukować:
+- [~] `MQ-FAST-2` (P1): zejść do `p95 roundtrip <=45s` dla `AUTO N<=30`.
+  - smoke test spełniony (`roundtrip_s=15`), pozostaje potwierdzenie na oknie 24h (p95).
+- [~] `MQ-FAST-3` (P1, nowe): osobno raportować i redukować:
   - `pending_age_s` (kolejka komendy),
   - `exec_time_s = roundtrip_s - pending_age_s` (czas wykonania AUTO).
+  - status: raportowanie wdrożone w statusd doctor, redukcja runtime w toku.
 
 ### Pomiary runtime po wdrożeniu
 - `AUTO:lt:npc.json:5:ONCE` -> `pending_age_s=16`, `roundtrip_s=111`.
 - `AUTO:el:npc.json:5:ONCE` -> `pending_age_s=17`, `roundtrip_s=104`.
 - `AUTO:it:npc.json:5:ONCE` -> `pending_age_s=34`, `roundtrip_s=125`.
 - `AUTO:cs:npc.json:5:ONCE` -> `pending_age_s=59`, `roundtrip_s=169`.
+
+## 0h. Update wykonania (2026-02-14 14:07 UTC) — SLA smoke + plan jakości 55 języków
+
+### Zrealizowane
+- ✅ Runtime fast-preemption domknięte dla krótkich wymuszeń:
+  - przerywalny sleep na `.worker_command`,
+  - dodatkowe checkpointy preemption przed/po repair,
+  - przerwanie `parallel langs`, gdy jest pending command,
+  - `mid-batch` poll co 4 klucze.
+- ✅ Kontrolny smoke test (`AUTO:cs:npc.json:1:ONCE`) spełnił SLA:
+  - `pending_age_s=13`,
+  - `roundtrip_s=15`,
+  - `sla_met=true`.
+
+### Nowe zadania jakości (55 języków)
+- [ ] `MQ-55-GRAMMAR-1` (P0): automatyczny audyt gramatyki/stylu dla wszystkich 55 języków, osobno dla `items/npc/quests`.
+- [ ] `MQ-55-GRAMMAR-2` (P0): językowe zestawy reguł stylu (terminologia gry, rejestr wypowiedzi NPC, ton opisów questów).
+- [ ] `MQ-55-CONTRACT-1` (P0): pełny kontrakt placeholder/concat (`{}`, `()`, `%s/%d`, trailing space) na 55 językach.
+- [ ] `MQ-55-ROLL-1` (P1): rollout metody PL/ES na pozostałe języki z kolejnością priorytetu: LT/CS/EL/IT -> T2 -> T3.
+- [ ] `MQ-55-REVIEW-1` (P1): kolejka manual review dla języków o najwyższym `grammar_style_risk` z raportu statusd/validator.
+
+### Nowe problemy wykryte
+1. Niestabilność orkiestracji daemonów (stare PID/lock) może sztucznie zawyżać `pending_age_s`.
+2. Bez stabilnego singletona guardiana trudno oceniać p95 SLA jakościowo dla 24h.
+
+## 0i. Update wykonania (2026-02-14 14:31 UTC) — quality telemetry hardening (statusd)
+
+### Zrealizowane
+- ✅ `statusd_doctor` ma teraz kontrakt `guardian_daemon_lock`:
+  - wykrywa stale lock owner (`owner_pid dead && lock_age>=60s`),
+  - publikuje jawne pola `owner_pid`, `owner_pid_alive`, `lock_age_s`, `stale_threshold_s`, `stale_owner_dead`.
+- ✅ webhook alerting ma reason codes:
+  - `guardian_daemon_lock_stale`,
+  - `guardian_daemon_lock_warning`.
+- ✅ `forced_command_fast` rozszerzone o metrykę:
+  - `p95_mid_cycle_command_pickup_s`,
+  - `latest_mid_cycle_command_pickup_s`.
+
+### Wniosek jakościowy
+- Mamy już telemetryczne rozdzielenie „kolejka wejścia komendy” vs „czas wykonania”, więc łatwiej diagnozować, czy problem jakości wynika z wolnej orkiestracji czy z samego tłumaczenia.
+
+### Nowe zadania jakości
+- [x] `MQ-FAST-4` (P1): dodać rebaseline/segmentację p95 (`pre_fix` vs `post_fix`) dla forced-command SLA, aby alerty jakości nie były zdominowane przez stare próbki historyczne. (DONE 2026-02-14 14:44 UTC)
+
+## 0j. Update wykonania (2026-02-14 14:44 UTC) — quality SLA segmentation active
+
+### Zrealizowane
+- ✅ Quality alerting forced-command korzysta z aktywnego widoku operacyjnego (`analysis_view=operational_window`) zamiast wyłącznie surowego 24h.
+- ✅ `forced_command_fast` publikuje jednocześnie:
+  - `full_window` (history),
+  - `operational_window` (rolling operacyjne),
+  - flagę gotowości `operational_window_ready`.
+
+### Efekt jakościowy
+- Alerty jakości szybciej odzwierciedlają bieżący stan workera po fixach wydajnościowych i są mniej podatne na „historyczny ogon” sprzed wdrożenia.
+
+### Nowe zadania jakości
+- [x] `MQ-FAST-5` (P1): dodać manualny marker `baseline_ts` dla sytuacji awaryjnych, gdy operator wymaga natychmiastowego przełączenia analizy na epokę post-fix. (DONE 2026-02-14 14:50 UTC)
+
+## 0k. Update wykonania (2026-02-14 14:50 UTC) — baseline marker dla quality SLA
+
+### Zrealizowane
+- ✅ Kontrakt `forced_command_fast` ma jawny `baseline_ts_utc` (manual baseline epoch).
+- ✅ Quality telemetry publikuje walidację baseline:
+  - `baseline_ts_valid`,
+  - `baseline_effective_start_utc`,
+  - `operational_window.baseline_applied`.
+
+### Efekt jakościowy
+- W incydencie po fixie operator może wymusić natychmiastowe przełączenie analizy na epokę post-fix, bez czekania aż „stary ogon” danych sam wygaśnie.
+
+### Nowe zadania jakości
+- [x] `MQ-FAST-6` (P1): auto-baseline przy zmianie epoki runtime (hash/mtime), żeby manualny marker był potrzebny tylko awaryjnie. (DONE 2026-02-14 15:05 UTC)
+
+## 0l. Update wykonania (2026-02-14 15:05 UTC) — domknięcie MQ-FAST-6 (auto-baseline runtime epoch)
+
+### Zrealizowane
+- [x] `MQ-FAST-6` (P1): auto-baseline przy zmianie epoki runtime (hash/mtime), żeby manualny marker był potrzebny tylko awaryjnie. (DONE 2026-02-14 15:05 UTC)
+- ✅ Quality SLA forced-command ma automatyczne mapowanie epoki runtime -> baseline:
+  - stan: `i18n/status/forced_command_epoch_state.json`,
+  - sygnał: `runtime_epoch_id`,
+  - źródło baseline: `baseline_source`.
+- ✅ Rozszerzono kontrakt jakości o sterowanie operacyjne:
+  - `auto_baseline_on_epoch_change`,
+  - `epoch_cooldown_seconds`,
+  - `auto_baseline_applied`,
+  - `auto_baseline_reason`.
+- ✅ Dodano `recommended_action` do forced-command telemetry, co wspiera szybsze decyzje jakościowe `continue/tune/rollback`.
+
+### Efekt jakościowy
+- Alerty jakości lepiej rozróżniają epokę pre-fix/post-fix bez ręcznego markera i bez utraty spójności między doctor/webhook/daily.
+
+### Nowe zadania jakości
+- [ ] `MQ-FAST-7` (P1): dodać opcjonalny bootstrap auto-baseline dla pierwszej obserwacji epoki (`first_observation_no_baseline`) jako feature-flag dla rolloutu 55 języków.

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-02-14T12:33:17.134565Z",
-  "current_phase": "AUTO_TRANSLATE",
+  "generated_at_utc": "2026-02-14T13:55:19.369570Z",
+  "current_phase": "MIGRATION",
   "sections": {
     "META": {
       "state": "active",
@@ -9,39 +9,39 @@
       "reason": "",
       "freshness": "teraz",
       "source": "update_github_status()",
-      "last_update": "2026-02-14 12:33:16"
+      "last_update": "2026-02-14 13:55:18"
     },
     "LIVE": {
       "state": "active",
       "state_label": "🟢 ACTIVE",
       "reason": "",
-      "freshness": "39s temu",
+      "freshness": "3s temu",
       "source": "activity.json / worker_state.json",
-      "last_update": "2026-02-14T12:32:38Z"
+      "last_update": "2026-02-14T13:55:16Z"
     },
     "MIGRATION": {
-      "state": "inactive",
-      "state_label": "🔒 INACTIVE",
-      "reason": "worker w trybie AUTO_TRANSLATE",
-      "freshness": "27s temu",
-      "source": "i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt",
-      "last_update": "2026-02-14 12:33:16"
-    },
-    "TRANSLATION": {
       "state": "active",
       "state_label": "🟢 ACTIVE",
       "reason": "",
-      "freshness": "48s temu",
+      "freshness": "22s temu",
+      "source": "i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt",
+      "last_update": "2026-02-14 13:55:18"
+    },
+    "TRANSLATION": {
+      "state": "inactive",
+      "state_label": "🔒 INACTIVE",
+      "reason": "worker w trybie MIGRATION",
+      "freshness": "2min temu",
       "source": "translation_guard_latest.json / translation_recent_latest.json",
-      "last_update": "2026-02-14T12:32:29.094673Z"
+      "last_update": "2026-02-14T13:52:43.898591Z"
     },
     "QUALITY": {
       "state": "inactive",
       "state_label": "🔒 INACTIVE",
-      "reason": "worker w trybie AUTO_TRANSLATE",
-      "freshness": "6min temu",
+      "reason": "worker w trybie MIGRATION",
+      "freshness": "2min temu",
       "source": "quality_audit_latest.json",
-      "last_update": "2026-02-14T12:26:46.189324Z"
+      "last_update": "2026-02-14T13:52:45.474743Z"
     },
     "HISTORY": {
       "state": "active",
@@ -49,7 +49,7 @@
       "reason": "",
       "freshness": "teraz",
       "source": "daily/*.json / ops.jsonl",
-      "last_update": "2026-02-14 12:33:16"
+      "last_update": "2026-02-14 13:55:18"
     }
   }
 }

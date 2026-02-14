@@ -1,10 +1,10 @@
 {
   "lang": "zh_TW",
-  "coverage_pct": 20.0,
+  "coverage_pct": 19.5,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-14T12:28:30.498779Z",
+  "checked_at": "2026-02-14T13:48:07.074903Z",
   "issues_total": 422,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -464,15 +464,6 @@
       "lang": "Ripp-Ripp Hooray!"
     },
     {
-      "key": "achievement.541.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Warrior of the Iks",
-      "pl": "Wojownik z the Iks",
-      "lang": "Warrior of the Iks"
-    },
-    {
       "key": "achievement.543.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -489,15 +480,6 @@
       "en": "Museum Goer",
       "pl": "Muzeum Goer",
       "lang": "Museum Goer"
-    },
-    {
-      "key": "actions.fishing.msg_1",
-      "category": "actions",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You are not the owner.",
-      "pl": "Nie jesteś właścicielem.",
-      "lang": "You are not the owner."
     },
     {
       "key": "actions.fluids.msg_1",
@@ -1459,7 +1441,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "images/icon-questionmark",
-      "pl": "images/icon-Zadanieionmark",
+      "pl": "obrazy/ikona-znak zapytania",
       "lang": "images/icon-questionmark"
     },
     {
@@ -1695,6 +1677,15 @@
       "en": "space-separated tokens",
       "pl": "żetony oddzielone spacją",
       "lang": "space-separated tokens"
+    },
+    {
+      "key": "client.elementnode.text3",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": ".. -- e = the optional",
+      "pl": ".. -- e = opcja",
+      "lang": ".. -- e = the optional"
     },
     {
       "key": "client.elementnode.text5",
@@ -2462,15 +2453,6 @@
       "lang": "Unsuccessful"
     },
     {
-      "key": "cpp.game.guild_motd_title",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Message of the Day",
-      "pl": "Wiadomość z the Dzień",
-      "lang": "Message of the Day"
-    },
-    {
       "key": "cpp.game.hazard_tag",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -3182,15 +3164,6 @@
       "lang": "invisibility"
     },
     {
-      "key": "cpp.look.it_is_empty",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": ". It is empty",
-      "pl": ". To jest puste",
-      "lang": ". It is empty"
-    },
-    {
       "key": "cpp.look.key_fmt",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -3612,6 +3585,33 @@
       "en": "You are {0} {1}.",
       "pl": "Jesteś {0} {1}.",
       "lang": "You are {0} {1}."
+    },
+    {
+      "key": "cpp.player.look.you_are_vip",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You are VIP.",
+      "pl": "Jesteś BARDZO WAŻNA OSOBA.",
+      "lang": "You are VIP."
+    },
+    {
+      "key": "cpp.player.moved_objects",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": " Moved {0} object{1}.",
+      "pl": "Moved {0} obiekt{1}.",
+      "lang": " Moved {0} object{1}."
+    },
+    {
+      "key": "cpp.player.moved_objects_one",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": " Moved {0} object.",
+      "pl": "Moved {0} obiekt.",
+      "lang": " Moved {0} object."
     }
   ],
   "length_ratio_issues": [

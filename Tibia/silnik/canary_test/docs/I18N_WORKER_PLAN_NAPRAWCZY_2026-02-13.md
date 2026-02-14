@@ -1051,7 +1051,40 @@ Nowe problemy wykryte:
 3. LT/CS/EL/IT: niski coverage `items/npc` i wysoki udział EN-copy w krótkich dialogach NPC.
 
 Nowe zadania dopisane:
-- [ ] `WQ-FAST-3` (P1): high-priority poll `.worker_command` wewnątrz `auto_translate_keys` co X kluczy (mid-batch interrupt point).
+- [x] `WQ-FAST-3` (P1): high-priority poll `.worker_command` wewnątrz `auto_translate_keys` co X kluczy (mid-batch interrupt point). (DONE 2026-02-14 13:12 UTC)
 - [ ] `WQ-FAST-4` (P1): osobna „fast lane” dla komend operatorskich (`AUTO N<=30`) z natychmiastowym przejściem przez dispatcher.
-- [ ] `WQ-QUEST-IT-1` (P0): naprawa trailing-space contract dla `it/quests.json` + test regresji concat fragmentów.
-- [ ] `WQ-NPC-SHORT-1` (P0): dedykowany słownik krótkich dialogów NPC (bye/ok/then not/greetings) dla LT/CS/EL/IT, z hard reject EN-copy.
+- [x] `WQ-QUEST-IT-1` (P0): naprawa trailing-space contract dla `it/quests.json` + test regresji concat fragmentów. (DONE 2026-02-14 13:12 UTC)
+- [x] `WQ-NPC-SHORT-1` (P0): dedykowany słownik krótkich dialogów NPC (bye/ok/then not/greetings) dla LT/CS/EL/IT, z hard reject EN-copy. (DONE 2026-02-14 13:12 UTC)
+
+### 9.5 Aktualizacja wykonania (2026-02-14 13:12 UTC) — domknięcie fast-poll + quest concat + short NPC
+
+Zrobione:
+- ✅ Mid-batch interrupt point w `auto_translate_keys`:
+  - checkpoint `.worker_command` co `AUTO_TRANSLATE_MID_BATCH_CMD_CHECK_EVERY` (domyślnie 8),
+  - preempt GT fallback, gdy czeka nowa komenda,
+  - marker `__AUTO_PREEMPT__` + log parsowany po stronie bash.
+- ✅ Utrwalono telemetry `completed` dla komend wymuszonych:
+  - zapis `completed` nie jest już odkładany tylko na sam koniec całego cyklu,
+  - metryki nie gubią się przy restartach guardiana w post-processingu.
+- ✅ `it/quests.json` naprawione deterministycznie dla fragmentów concat:
+  - `You acquired ` -> `Hai acquisito `,
+  - `You flipped the ` -> `Hai capovolto il `,
+  - `You found ` -> `Hai trovato `,
+  - `You slayed ` -> `Hai ucciso `.
+- ✅ LT/CS/EL/IT short NPC phrase repair pass:
+  - `Good bye.`, `Good bye!`, `Good bye then.`, `Then not.`, `Ok then.`, `Take this!`, `Greetings, |PLAYERNAME|.`
+  - wynik: EN-copy na tej liście spadł do `0/164` dla `lt`, `cs`, `el`, `it`.
+
+Pomiary runtime po wdrożeniu:
+- `AUTO:lt:npc.json:5:ONCE` -> `pending_age_s=16`, `roundtrip_s=111`.
+- `AUTO:el:npc.json:5:ONCE` -> `pending_age_s=17`, `roundtrip_s=104`.
+- `AUTO:it:npc.json:5:ONCE` -> `pending_age_s=34`, `roundtrip_s=125`.
+- `AUTO:cs:npc.json:5:ONCE` -> `pending_age_s=59`, `roundtrip_s=169`.
+
+Nowe problemy wykryte:
+1. SLA `AUTO N<=30` nadal niespełnione (`sla_met=false`) mimo preempt i timeoutów GT.
+2. Część opóźnienia nadal bierze się z kolejki wejścia do aktywnego cyklu (`pending_age_s` bywa 30-60s).
+
+Nowe TODO:
+- [ ] `WQ-FAST-5` (P1): zejść z `pending_age_s` do `<=15s` dla komend operatorskich (obecnie piki 34-59s).
+- [ ] `WQ-FAST-6` (P1): zejść z `roundtrip_s` do `<=45s` dla `AUTO N<=30` (obecnie 104-169s).

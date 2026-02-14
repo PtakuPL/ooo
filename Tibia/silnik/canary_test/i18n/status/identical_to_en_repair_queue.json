@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-14T12:32:38.387809Z",
+  "timestamp": "2026-02-14T13:52:38.976125Z",
   "priority_langs": [
     "es",
     "pl",
@@ -65,10 +65,10 @@
     "items.json",
     "monsters.json"
   ],
-  "entries_total": 736,
+  "entries_total": 735,
   "entries_by_lang": {
-    "es": 214,
-    "pl": 130,
+    "es": 222,
+    "pl": 137,
     "cs": 649,
     "de": 667,
     "fr": 599,
@@ -77,7 +77,7 @@
     "nl": 699,
     "pt": 628,
     "ro": 699,
-    "ru": 497,
+    "ru": 493,
     "sk": 671,
     "tr": 549,
     "ar": 920,
@@ -124,13 +124,13 @@
     {
       "lang": "es",
       "json_file": "npc.json",
-      "identical_to_en": 14,
+      "identical_to_en": 24,
       "domain_priority": 0
     },
     {
       "lang": "es",
       "json_file": "server.json",
-      "identical_to_en": 97,
+      "identical_to_en": 96,
       "domain_priority": 1
     },
     {
@@ -148,7 +148,7 @@
     {
       "lang": "es",
       "json_file": "monsters.json",
-      "identical_to_en": 21,
+      "identical_to_en": 20,
       "domain_priority": 8
     },
     {
@@ -245,6 +245,12 @@
       "lang": "pl",
       "json_file": "html.json",
       "identical_to_en": 16,
+      "domain_priority": 9
+    },
+    {
+      "lang": "pl",
+      "json_file": "startup.json",
+      "identical_to_en": 7,
       "domain_priority": 9
     },
     {
@@ -981,12 +987,6 @@
     },
     {
       "lang": "ru",
-      "json_file": "modules.json",
-      "identical_to_en": 3,
-      "domain_priority": 5
-    },
-    {
-      "lang": "ru",
       "json_file": "monsters.json",
       "identical_to_en": 58,
       "domain_priority": 8
@@ -1019,12 +1019,6 @@
       "lang": "ru",
       "json_file": "html.json",
       "identical_to_en": 4,
-      "domain_priority": 9
-    },
-    {
-      "lang": "ru",
-      "json_file": "libs.json",
-      "identical_to_en": 1,
       "domain_priority": 9
     },
     {
@@ -1320,12 +1314,18 @@
       "json_file": "books.json",
       "identical_to_en": 7,
       "domain_priority": 9
+    },
+    {
+      "lang": "az",
+      "json_file": "chatchannels.json",
+      "identical_to_en": 4,
+      "domain_priority": 9
     }
   ],
   "selected": {
     "lang": "es",
     "json_file": "npc.json",
-    "identical_to_en": 14,
+    "identical_to_en": 24,
     "domain_priority": 0
   }
 }

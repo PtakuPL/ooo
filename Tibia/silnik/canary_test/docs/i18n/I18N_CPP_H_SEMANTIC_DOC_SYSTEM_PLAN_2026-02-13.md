@@ -483,3 +483,20 @@ Dopisane zadania do warstwy semantycznej:
 - [ ] `SEM-CMD-1`: sygnał `mid_cycle_pickup_delay_s` (czas od `received` do wejścia w wykonanie w obrębie aktywnego cyklu).
 - [ ] `SEM-CMD-2`: oznaczenie etapów przerywalnych (`interruptible=true`) dla `AUTO_TRANSLATE` i `VALIDATION`.
 - [ ] `SEM-CONCAT-1`: rozszerzyć klasyfikację `fragment_concat_required` o krótkie questowe komunikaty runtime (`msg_*/say_*`) dla LT/CS/EL/IT.
+
+### 13.8 Aktualizacja runtime (2026-02-14 13:12 UTC) — domknięcie kontraktu short/concat po stronie worker
+
+Wdrożone operacyjnie (warstwa wykonawcza):
+- ✅ `npc short-dialog contract`: dla LT/CS/EL/IT uruchomiony dedykowany repair pass + hard reject EN-copy dla fraz:
+  `Good bye.`, `Good bye!`, `Good bye then.`, `Then not.`, `Ok then.`, `Take this!`, `Greetings, |PLAYERNAME|.`
+- ✅ `quest concat contract` dla `it/quests.json`: runtime fragmenty z trailing-space zostały naprawione deterministycznie.
+- ✅ Wynik jakości: EN-copy dla wymuszonej listy short fraz spadł do `0/164` w `lt/cs/el/it`.
+
+Wniosek semantyczny:
+- wykonawczo kontrakty działają, ale warstwa semantyczna nadal nie publikuje jawnych metryk:
+  - `mid_cycle_pickup_delay_s`,
+  - `interruptible=true` per etap,
+  - globalny sygnał concat-contract per domena.
+
+Status backlogu semantycznego:
+- `SEM-CMD-1`, `SEM-CMD-2`, `SEM-CONCAT-1` pozostają otwarte i są nadal wymagane do pełnej automatyzacji statusd/doctor.

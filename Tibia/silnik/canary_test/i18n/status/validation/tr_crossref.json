@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-14T12:28:29.858624Z",
+  "checked_at": "2026-02-14T13:48:06.259073Z",
   "issues_total": 415,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -570,15 +570,6 @@
       "en": "Ripp-Ripp Hooray!",
       "pl": "Ripp-Ripp Hura!",
       "lang": "Ripp-Ripp Hooray!"
-    },
-    {
-      "key": "achievement.541.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Warrior of the Iks",
-      "pl": "Wojownik z the Iks",
-      "lang": "Warrior of the Iks"
     },
     {
       "key": "achievement.543.name",
@@ -3612,6 +3603,15 @@
       "en": "Uhhhh...",
       "pl": "Uuuuhhh...",
       "lang": "Uhhhh..."
+    },
+    {
+      "key": "npc.a_sleeping_dragon.multi_3",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "GAIN. ...",
+      "pl": "NABIERZ SIŁ....",
+      "lang": "GAIN. ..."
     }
   ],
   "length_ratio_issues": [

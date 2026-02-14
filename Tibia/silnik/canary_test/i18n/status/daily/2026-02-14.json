@@ -2,9 +2,9 @@
   "cycles": 49,
   "date": "2026-02-14",
   "errors": {
-    "count": 355
+    "count": 367
   },
-  "generated_at_utc": "2026-02-14T12:33:11Z",
+  "generated_at_utc": "2026-02-14T13:55:12Z",
   "work": {
     "auto_translate": {
       "langs": {
@@ -34,7 +34,7 @@
         },
         "CS": {
           "skipped": 0,
-          "translated": 559
+          "translated": 733
         },
         "DA": {
           "skipped": 0,
@@ -46,11 +46,11 @@
         },
         "EL": {
           "skipped": 0,
-          "translated": 500
+          "translated": 664
         },
         "ES": {
           "skipped": 0,
-          "translated": 7313
+          "translated": 7504
         },
         "ET": {
           "skipped": 0,
@@ -94,7 +94,7 @@
         },
         "IT": {
           "skipped": 0,
-          "translated": 807
+          "translated": 971
         },
         "JA": {
           "skipped": 0,
@@ -113,8 +113,8 @@
           "translated": 380
         },
         "LT": {
-          "skipped": 0,
-          "translated": 400
+          "skipped": 1,
+          "translated": 539
         },
         "LV": {
           "skipped": 0,
@@ -142,7 +142,7 @@
         },
         "PL": {
           "skipped": 0,
-          "translated": 1848
+          "translated": 1860
         },
         "PT": {
           "skipped": 0,
@@ -227,7 +227,27 @@
       "mapped_new": 0
     },
     "migration": {
-      "categories_touched": [],
+      "categories_touched": [
+        "actions",
+        "chatchannels",
+        "cpp",
+        "creaturescripts",
+        "dataroot",
+        "errors",
+        "events",
+        "libs",
+        "mounts",
+        "npclib",
+        "otclient_data",
+        "otclient_modules",
+        "otclient_src",
+        "otclient_tools",
+        "quests",
+        "scripts",
+        "server",
+        "spells",
+        "talkactions"
+      ],
       "files_changed": 0,
       "keys_added": 0
     },

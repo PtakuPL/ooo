@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-14T12:28:28.701892Z",
+  "checked_at": "2026-02-14T13:48:04.770258Z",
   "issues_total": 407,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -120,15 +120,6 @@
       "en": "Task Manager",
       "pl": "Zadanie, zajęcie Dyrektor, kierownik",
       "lang": "Task Manager"
-    },
-    {
-      "key": "achievement.336.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Umbral Berserker",
-      "pl": "Umbral To go berserk",
-      "lang": "Umbral Berserker"
     },
     {
       "key": "achievement.359.name",
@@ -453,15 +444,6 @@
       "en": "Ripp-Ripp Hooray!",
       "pl": "Ripp-Ripp Hura!",
       "lang": "Ripp-Ripp Hooray!"
-    },
-    {
-      "key": "achievement.541.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Warrior of the Iks",
-      "pl": "Wojownik z the Iks",
-      "lang": "Warrior of the Iks"
     },
     {
       "key": "achievement.543.name",
@@ -3612,6 +3594,24 @@
       "en": "GRRR",
       "pl": "Wrr",
       "lang": "GRRR"
+    },
+    {
+      "key": "monster.dragon.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "FCHHHHH",
+      "pl": "Fchhhh",
+      "lang": "FCHHHHH"
+    },
+    {
+      "key": "monster.green_frog.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ribbit!",
+      "pl": "Kum!",
+      "lang": "Ribbit!"
     }
   ],
   "length_ratio_issues": [

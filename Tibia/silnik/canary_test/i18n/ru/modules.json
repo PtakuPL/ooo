@@ -11,11 +11,11 @@
   "module.gamestore.text4": "[EN] Premium Time",
   "module.gamestore.text5": "[EN] Premium Time",
   "module.hireling_module.text1": "[EN] Pereira (jlcvp)',",
-  "module.hireling_module.text2": "\tVersion = ",
-  "module.hireling_module.text4": "\tDate =",
+  "module.hireling_module.text2": "Версия =",
+  "module.hireling_module.text4": "Дата =",
   "module.init.text1": "[EN] 25-07-2020 11:52AM",
   "module.init.text2": "[EN] \tDevelopers = { ",
   "module.init.text3": "[EN] purchase-cooldown",
-  "module.init.text4": "\tVersion = ",
+  "module.init.text4": "Версия =",
   "module.init.text5": "[EN] An outfit that was created to suit you. We are sure you'll like it."
 }

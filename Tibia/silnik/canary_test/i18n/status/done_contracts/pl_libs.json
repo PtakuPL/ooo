@@ -1,6 +1,6 @@
 {
-  "file": "raids.json",
-  "lang": "es",
+  "file": "libs.json",
+  "lang": "pl",
   "conditions": {
     "no_critical_token_errors": {
       "ok": true,
@@ -13,16 +13,16 @@
       "threshold": 5
     },
     "coverage_above_95pct": {
-      "ok": false,
-      "coverage_pct": 91.6,
-      "total_keys": 273,
-      "real_translations": 250
+      "ok": true,
+      "coverage_pct": 98.9,
+      "total_keys": 89,
+      "real_translations": 88
     },
     "quality_entry_present": {
       "ok": true,
       "has_quality_data": true
     }
   },
-  "is_done": false,
-  "timestamp": "2026-02-14T13:52:42.843601Z"
+  "is_done": true,
+  "timestamp": "2026-02-14T13:27:02.179145Z"
 }

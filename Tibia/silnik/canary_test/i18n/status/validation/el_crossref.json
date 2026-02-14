@@ -1,10 +1,10 @@
 {
   "lang": "el",
-  "coverage_pct": 6.9,
+  "coverage_pct": 7.0,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-14T12:26:48.923155Z",
+  "checked_at": "2026-02-14T13:52:47.249014Z",
   "issues_total": 405,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -3596,15 +3596,6 @@
       "lang": "Chh..."
     },
     {
-      "key": "npc.a_ghostly_sage.farewell_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Good bye.",
-      "pl": "Żegnaj.",
-      "lang": "Good bye."
-    },
-    {
       "key": "npc.a_restless_soul.greet_msg_1",
       "category": "npc",
       "type": "pl_reference_missing_translation",
@@ -3612,6 +3603,15 @@
       "en": "Uhhhh...",
       "pl": "Uuuuhhh...",
       "lang": "Uhhhh..."
+    },
+    {
+      "key": "npc.a_sleeping_dragon.multi_2",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "SLEEP. ...",
+      "pl": "SEN....",
+      "lang": "SLEEP. ..."
     }
   ],
   "length_ratio_issues": [

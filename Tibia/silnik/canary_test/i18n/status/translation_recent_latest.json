@@ -1,92 +1,128 @@
 {
-  "timestamp": "2026-02-14T12:32:42.417183Z",
+  "timestamp": "2026-02-14T13:52:42.842467Z",
   "language": "es",
-  "json_file": "npc.json",
-  "translated": 14,
+  "json_file": "raids.json",
+  "translated": 23,
   "entries": [
     {
-      "key": "npc.a_beautiful_girl.greet_msg_1",
-      "en": "So you have come, |PLAYERNAME|. I hoped you would not...",
-      "translated": "Entonces has venido, |PLAYERNAME|. Esperaba que no lo hicieras...",
+      "key": "raid.barba_bittermor.name",
+      "en": "Barba Bittermor",
+      "translated": "Barba Bittermor",
       "source": "tm"
     },
     {
-      "key": "npc.a_dead_bureaucrat1.farewell_msg_1",
-      "en": "Good bye and don't forget me!",
-      "translated": "¡Adiós y no me olvides!",
+      "key": "raid.ice_golems.name",
+      "en": "Ice Golems",
+      "translated": "Hielo Exitosamente",
+      "source": "simple"
+    },
+    {
+      "key": "raid.badger.name",
+      "en": "Badger",
+      "translated": "Tejón",
+      "source": "simple"
+    },
+    {
+      "key": "raid.the_welter.name",
+      "en": "The Welter",
+      "translated": "Welter",
+      "source": "simple"
+    },
+    {
+      "key": "raid.midnight_panther_3.name",
+      "en": "Midnight Panther 3",
+      "translated": "Midnight Panther 3",
       "source": "tm"
     },
     {
-      "key": "npc.a_dead_bureaucrat1.walkaway_msg_1",
-      "en": "Good bye and don't forget me!",
-      "translated": "¡Adiós y no me olvides!",
+      "key": "raid.midnight_panther_1.name",
+      "en": "Midnight Panther 1",
+      "translated": "Midnight Panther 1",
       "source": "tm"
     },
     {
-      "key": "npc.a_dead_bureaucrat2.farewell_msg_1",
-      "en": "Good bye and don't forget me!",
-      "translated": "¡Adiós y no me olvides!",
+      "key": "raid.terrorbirds.name",
+      "en": "Terrorbirds",
+      "translated": "Terrorbirds",
       "source": "tm"
     },
     {
-      "key": "npc.a_dead_bureaucrat2.walkaway_msg_1",
-      "en": "Good bye and don't forget me!",
-      "translated": "¡Adiós y no me olvides!",
+      "key": "raid.midnight_panther_2.name",
+      "en": "Midnight Panther 2",
+      "translated": "Midnight Panther 2",
       "source": "tm"
     },
     {
-      "key": "npc.a_dead_bureaucrat3.farewell_msg_1",
-      "en": "Good bye and don't forget me!",
-      "translated": "¡Adiós y no me olvides!",
+      "key": "raid.cyclops.name",
+      "en": "Cyclops",
+      "translated": "Cíclope",
+      "source": "simple"
+    },
+    {
+      "key": "raid.wild_horses.name",
+      "en": "Wild Horses",
+      "translated": "Wild Horses",
       "source": "tm"
     },
     {
-      "key": "npc.a_dead_bureaucrat3.walkaway_msg_1",
-      "en": "Good bye and don't forget me!",
-      "translated": "¡Adiós y no me olvides!",
+      "key": "raid.yeti.name",
+      "en": "Yeti",
+      "translated": "Muerto",
+      "source": "simple"
+    },
+    {
+      "key": "raid.gargoyle.name",
+      "en": "Gargoyle",
+      "translated": "Gárgola",
+      "source": "simple"
+    },
+    {
+      "key": "raid.nomad.name",
+      "en": "Nomad",
+      "translated": "Female de nómada",
+      "source": "simple"
+    },
+    {
+      "key": "raid.cobra.name",
+      "en": "Cobra",
+      "translated": "Muerto",
+      "source": "simple"
+    },
+    {
+      "key": "raid.terramite.name",
+      "en": "Terramite",
+      "translated": "Muerto",
+      "source": "simple"
+    },
+    {
+      "key": "raid.scarab.name",
+      "en": "Scarab",
+      "translated": "Escarabajo",
+      "source": "simple"
+    },
+    {
+      "key": "raid.diblis_the_fair.name",
+      "en": "Diblis The Fair",
+      "translated": "Diblis fair",
       "source": "tm"
     },
     {
-      "key": "npc.a_dead_bureaucrat4.farewell_msg_1",
-      "en": "Good bye and don't forget me!",
-      "translated": "¡Adiós y no me olvides!",
+      "key": "raid.fernfang.name",
+      "en": "Fernfang",
+      "translated": "Muerto",
+      "source": "simple"
+    },
+    {
+      "key": "raid.orc_backpack.name",
+      "en": "Orc Backpack",
+      "translated": "Orc Backpack",
       "source": "tm"
     },
     {
-      "key": "npc.a_dead_bureaucrat4.walkaway_msg_1",
-      "en": "Good bye and don't forget me!",
-      "translated": "¡Adiós y no me olvides!",
-      "source": "tm"
-    },
-    {
-      "key": "npc.a_ghostly_sage.stdmod_4",
-      "en": "Dont mind me.",
-      "translated": "No me hagas caso.",
-      "source": "tm"
-    },
-    {
-      "key": "npc.a_starving_dog.greet_1",
-      "en": "<sniff>",
-      "translated": "<sniff>",
-      "source": "tm"
-    },
-    {
-      "key": "npc.a_starving_dog.say_1",
-      "en": "<munch>",
-      "translated": "<munch>",
-      "source": "tm"
-    },
-    {
-      "key": "npc.a_sweaty_cyclops.stdmod_25",
-      "en": "Me not fight them, they not fight me.",
-      "translated": "Yo no peleo con ellos, ellos no pelean conmigo.",
-      "source": "tm"
-    },
-    {
-      "key": "npc.a_weakened_forest_fury.multi_1",
-      "en": "Crafted generations ago to rob a creature of its freedom for that it may earn it again truthfully. You will need them if you plan on returning the birds to their rightful home in the glade. ... ",
-      "translated": "Creado hace generaciones para robarle a una criatura su libertad para que pueda volver a ganarla con sinceridad. Los necesitarás si planeas devolver los pájaros al hogar que les corresponde en el claro. ... ",
-      "source": "tm"
+      "key": "raid.hunter.name",
+      "en": "Hunter",
+      "translated": "Cazador",
+      "source": "simple"
     }
   ]
 }

@@ -1,56 +1,76 @@
 {
-  "category": "es",
-  "cycle": 1,
+  "category": "pending_skip",
+  "cycle": 6,
   "eta_seconds": 0,
-  "file": "npc.json",
-  "generated_at_utc": "2026-02-14T12:32:38Z",
-  "message": "auto translate in progress",
-  "phase": "AUTO_TRANSLATE",
+  "file": "-",
+  "generated_at_utc": "2026-02-14T13:55:49Z",
+  "message": "all categories skipped",
+  "phase": "MIGRATION",
   "progress": {
     "done": 0,
     "total": 0,
-    "unit": "keys"
+    "unit": "files"
   },
   "recent": [
     {
       "action": "update",
       "category": "es",
       "cycle": 1,
+      "file": "raids.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "auto_done",
+      "t": "2026-02-14T13:52:44Z"
+    },
+    {
+      "action": "update",
+      "category": "es",
+      "cycle": 1,
+      "file": "raids.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-02-14T13:52:39Z"
+    },
+    {
+      "action": "update",
+      "category": "es",
+      "cycle": 1,
+      "file": "raids.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "auto_start",
+      "t": "2026-02-14T13:52:31Z"
+    },
+    {
+      "action": "update",
+      "category": "cs",
+      "cycle": 1,
+      "file": "npc.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "auto_done",
+      "t": "2026-02-14T13:49:18Z"
+    },
+    {
+      "action": "update",
+      "category": "cs",
+      "cycle": 1,
       "file": "npc.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "heartbeat_tick",
-      "t": "2026-02-14T12:32:38Z"
+      "t": "2026-02-14T13:49:17Z"
     },
     {
       "action": "update",
-      "category": "pl",
+      "category": "cs",
       "cycle": 1,
-      "file": "php.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "auto_done",
-      "t": "2026-02-14T12:32:29Z"
-    },
-    {
-      "action": "update",
-      "category": "pl",
-      "cycle": 1,
-      "file": "php.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-02-14T12:30:59Z"
-    },
-    {
-      "action": "update",
-      "category": "pl",
-      "cycle": 1,
-      "file": "php.json",
+      "file": "npc.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "auto_start",
-      "t": "2026-02-14T12:30:58Z"
+      "t": "2026-02-14T13:49:16Z"
     },
     {
       "action": "update",
@@ -60,7 +80,7 @@
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "auto_done",
-      "t": "2026-02-14T12:30:33Z"
+      "t": "2026-02-14T13:48:37Z"
     },
     {
       "action": "update",
@@ -70,7 +90,7 @@
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "heartbeat_tick",
-      "t": "2026-02-14T12:29:02Z"
+      "t": "2026-02-14T13:48:34Z"
     },
     {
       "action": "update",
@@ -80,39 +100,19 @@
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "auto_start",
-      "t": "2026-02-14T12:29:02Z"
+      "t": "2026-02-14T13:48:34Z"
     },
     {
       "action": "update",
-      "category": "pl",
+      "category": "es",
       "cycle": 1,
-      "file": "client.json",
+      "file": "quests.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "auto_done",
-      "t": "2026-02-14T12:29:00Z"
-    },
-    {
-      "action": "update",
-      "category": "pl",
-      "cycle": 1,
-      "file": "client.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-02-14T12:27:29Z"
-    },
-    {
-      "action": "update",
-      "category": "pl",
-      "cycle": 1,
-      "file": "client.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "auto_start",
-      "t": "2026-02-14T12:27:29Z"
+      "t": "2026-02-14T13:46:35Z"
     }
   ],
-  "stage": "heartbeat_tick",
+  "stage": "pending_skip",
   "status": "running"
 }

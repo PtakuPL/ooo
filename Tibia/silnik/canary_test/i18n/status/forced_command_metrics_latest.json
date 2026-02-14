@@ -1,14 +1,14 @@
 {
-  "timestamp": "2026-02-14T12:30:33.264776Z",
+  "timestamp": "2026-02-14T13:49:18.932029Z",
   "stage": "completed",
-  "command": "AUTO:lt:npc.json:20:ONCE",
-  "pending_age_s": 61,
-  "roundtrip_s": 153,
-  "forced_command_pending_age_s": 61,
-  "forced_command_roundtrip_s": 153,
+  "command": "AUTO:cs:npc.json:5:ONCE",
+  "pending_age_s": 19,
+  "roundtrip_s": 22,
+  "forced_command_pending_age_s": 19,
+  "forced_command_roundtrip_s": 22,
   "mode_type": "AUTO_TRANSLATE",
-  "mode_cat": "lt",
+  "mode_cat": "cs",
   "mode_count": "npc.json",
   "sla_target_s": 45,
-  "sla_met": false
+  "sla_met": true
 }

@@ -864,7 +864,30 @@ Pomiar po wdrożeniu:
 - Wniosek: telemetry jest kompletne, ale nadal potrzeba głębszego pollingu komend podczas długiego batcha tłumaczeń.
 
 Nowe TODO:
-- [ ] `WQ-FAST-3`: mid-batch poll `.worker_command` w `auto_translate_keys` (checkpoint co N kluczy).
+- [x] `WQ-FAST-3`: mid-batch poll `.worker_command` w `auto_translate_keys` (checkpoint co N kluczy). (DONE 2026-02-14 13:12 UTC)
 - [ ] `WQ-FAST-4`: osobna ścieżka „operator fast lane” dla krótkich wymuszeń (`N<=30`) z minimalnym post-processingiem.
-- [ ] `WQ-QUEST-IT-1`: naprawa trailing-space contract w `it/quests.json` (`You acquired `, `You flipped the `, `You found `, `You slayed `).
-- [ ] `WQ-NPC-SHORT-1`: dedykowana naprawa EN-copy dla krótkich dialogów NPC (LT/CS/EL/IT), aby nie zostawiać `Good bye.`, `Then not.`, `Take this!` jako EN.
+- [x] `WQ-QUEST-IT-1`: naprawa trailing-space contract w `it/quests.json` (`You acquired `, `You flipped the `, `You found `, `You slayed `). (DONE 2026-02-14 13:12 UTC)
+- [x] `WQ-NPC-SHORT-1`: dedykowana naprawa EN-copy dla krótkich dialogów NPC (LT/CS/EL/IT), aby nie zostawiać `Good bye.`, `Then not.`, `Take this!` jako EN. (DONE 2026-02-14 13:12 UTC)
+
+### 13.10 Aktualizacja runtime (2026-02-14 13:12 UTC) — domknięcie WQ-FAST-3/WQ-QUEST-IT-1/WQ-NPC-SHORT-1
+
+Zrealizowane:
+- ✅ Mid-batch polling `.worker_command` działa w pętli `auto_translate_keys` (preempt co N kluczy + marker `__AUTO_PREEMPT__`).
+- ✅ GT fallback ma timeouty i fallback single-request:
+  - `GT_BATCH_TIMEOUT` (domyślnie 18s),
+  - `GT_SINGLE_TIMEOUT` (domyślnie 7s),
+  - nowe flagi CLI: `--gt-timeout`, `--gt-single-timeout`.
+- ✅ `completed` metric dla forced commands jest zapisywany bliżej końca realnej pracy AUTO, więc metryki nie gubią się przy restartach guardiana.
+- ✅ `it/quests.json` naprawiony (concat trailing-space + tłumaczenia runtime fragmentów).
+- ✅ Short NPC phrase repair pass dla LT/CS/EL/IT domknął EN-copy dla listy wymuszonych fraz (`0/164` identycznych z EN w każdym z 4 języków).
+
+Pomiary po wdrożeniu:
+- `AUTO:lt:npc.json:5:ONCE` -> `roundtrip_s=111`, `pending_age_s=16`.
+- `AUTO:el:npc.json:5:ONCE` -> `roundtrip_s=104`, `pending_age_s=17`.
+- `AUTO:it:npc.json:5:ONCE` -> `roundtrip_s=125`, `pending_age_s=34`.
+- `AUTO:cs:npc.json:5:ONCE` -> `roundtrip_s=169`, `pending_age_s=59`.
+
+Otwarte:
+- [ ] `WQ-FAST-4` (pozostaje P1) — nadal brak SLA `<=45s` dla `AUTO N<=30`.
+- [ ] `WQ-FAST-5` (nowe P1) — redukcja `pending_age_s` do `<=15s`.
+- [ ] `WQ-FAST-6` (nowe P1) — redukcja pełnego `roundtrip_s` do `<=45s`.

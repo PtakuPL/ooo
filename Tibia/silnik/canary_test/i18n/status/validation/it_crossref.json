@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-14T12:27:54.045185Z",
+  "checked_at": "2026-02-14T13:47:32.755630Z",
   "issues_total": 405,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -3470,15 +3470,6 @@
       "lang": "Chh..."
     },
     {
-      "key": "npc.a_ghostly_sage.farewell_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Good bye.",
-      "pl": "Żegnaj.",
-      "lang": "Good bye."
-    },
-    {
       "key": "npc.a_restless_soul.greet_msg_1",
       "category": "npc",
       "type": "pl_reference_missing_translation",
@@ -3542,15 +3533,6 @@
       "lang": "Bye, bye."
     },
     {
-      "key": "npc.aldo.say_5",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ok then.",
-      "pl": "Ok wtedy.",
-      "lang": "Ok then."
-    },
-    {
       "key": "npc.alesar.farewell_msg_1",
       "category": "npc",
       "type": "pl_reference_missing_translation",
@@ -3558,15 +3540,6 @@
       "en": "Finally.",
       "pl": "W końcu, ostatecznie.",
       "lang": "Finally."
-    },
-    {
-      "key": "npc.alesar.say_5",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Then not.",
-      "pl": "W takim razie nie.",
-      "lang": "Then not."
     },
     {
       "key": "npc.alesar.walkaway_msg_1",
@@ -3578,24 +3551,6 @@
       "lang": "Finally."
     },
     {
-      "key": "npc.alesar_functions.say_3",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Then not.",
-      "pl": "W takim razie nie.",
-      "lang": "Then not."
-    },
-    {
-      "key": "npc.alkestios.say_4",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Then not.",
-      "pl": "W takim razie nie.",
-      "lang": "Then not."
-    },
-    {
       "key": "npc.altar.walkaway_msg_1",
       "category": "npc",
       "type": "pl_reference_missing_translation",
@@ -3605,13 +3560,58 @@
       "lang": "Bye."
     },
     {
-      "key": "npc.alwin.say_1",
+      "key": "npc.andrew_lyze.greet_msg_4",
       "category": "npc",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Take this!",
-      "pl": "Weź to!",
-      "lang": "Take this!"
+      "en": "Greetings.",
+      "pl": "Witaj.",
+      "lang": "Greetings."
+    },
+    {
+      "key": "npc.ariella.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hi there.",
+      "pl": "Cześć.",
+      "lang": "Hi there."
+    },
+    {
+      "key": "npc.ariella.say_15",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I see.",
+      "pl": "Rozumiem.",
+      "lang": "I see."
+    },
+    {
+      "key": "npc.arkulius.stdmod_3",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "<mumbles>",
+      "pl": "<mamrota>",
+      "lang": "<mumbles>"
+    },
+    {
+      "key": "npc.arkulius.voice_3",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "<mumbles>",
+      "pl": "<mamrota>",
+      "lang": "<mumbles>"
+    },
+    {
+      "key": "npc.ashari.farewell_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bye!",
+      "pl": "Pa!",
+      "lang": "Bye!"
     }
   ],
   "length_ratio_issues": [

@@ -1,73 +1,43 @@
 {
-  "timestamp": "2026-02-14T12:26:46.189324Z",
+  "timestamp": "2026-02-14T13:52:45.474743Z",
   "checked_entries": 100,
-  "issues_found": 8,
+  "issues_found": 4,
   "issues_by_type": {
-    "identical_to_en": 7,
-    "artifact_token": 1,
-    "identical_to_en_exempt": 3,
-    "suspicious_log_high": 28,
-    "suspicious_log_critical": 38,
-    "suspicious_log_low": 100,
-    "suspicious_log_medium": 1,
-    "suspicious_rejected_critical": 1
+    "identical_to_en_exempt": 6,
+    "identical_to_en": 4,
+    "suspicious_log_critical": 97,
+    "suspicious_log_high": 64,
+    "suspicious_log_low": 39,
+    "suspicious_rejected_critical": 12
   },
   "issues": [
     {
-      "key": "spell.apprentice's_strike.name",
-      "lang": "pl",
+      "key": "raid.barba_bittermor.name",
+      "lang": "es",
       "type": "identical_to_en",
-      "en": "Apprentice's Strike",
-      "translated": "Apprentice's Strike"
+      "en": "Barba Bittermor",
+      "translated": "Barba Bittermor"
     },
     {
-      "key": "spell.nature's_embrace.name",
-      "lang": "pl",
+      "key": "raid.terrorbirds.name",
+      "lang": "es",
       "type": "identical_to_en",
-      "en": "Nature's Embrace",
-      "translated": "Nature's Embrace"
-    },
-    {
-      "key": "spell.annihilon_paralyze.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Annihilon Paralyze",
-      "translated": "Annihilon Paralyze"
-    },
-    {
-      "key": "quests.bigfoot_burden.gnomedix_msg4",
-      "lang": "pl",
-      "type": "artifact_token",
-      "en": "Gnomedix: We're almost don... holy gnome! What's THIS???",
-      "translated": "Gnomedix: Prawie skończyliśmy... święty gnom! CO TO JEST???"
+      "en": "Terrorbirds",
+      "translated": "Terrorbirds"
     },
     {
       "key": "raid.wild_horses.name",
-      "lang": "pl",
+      "lang": "es",
       "type": "identical_to_en",
       "en": "Wild Horses",
       "translated": "Wild Horses"
     },
     {
-      "key": "raid.sheng.name",
-      "lang": "pl",
+      "key": "raid.orc_backpack.name",
+      "lang": "es",
       "type": "identical_to_en",
-      "en": "Sheng",
-      "translated": "Sheng"
-    },
-    {
-      "key": "raid.quaras.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Quaras",
-      "translated": "Quaras"
-    },
-    {
-      "key": "raid.elves.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Elves",
-      "translated": "Elves"
+      "en": "Orc Backpack",
+      "translated": "Orc Backpack"
     }
   ],
   "threshold": 10,

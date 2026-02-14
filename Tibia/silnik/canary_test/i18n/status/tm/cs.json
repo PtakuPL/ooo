@@ -97,35 +97,35 @@
   },
   "npc.alesar.say_5": {
     "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
-    "text": "Then not.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Tak tedy ne.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
     "verified": false,
-    "updated_at": "2026-02-13T22:57:35.733589Z"
+    "updated_at": "2026-02-14T13:22:32.797176Z"
   },
   "npc.alesar_functions.say_3": {
     "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
-    "text": "Then not.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Tak tedy ne.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
     "verified": false,
-    "updated_at": "2026-02-13T22:57:35.734062Z"
+    "updated_at": "2026-02-14T13:22:32.797383Z"
   },
   "npc.alkestios.say_4": {
     "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
-    "text": "Then not.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Tak tedy ne.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
     "verified": false,
-    "updated_at": "2026-02-13T22:57:35.736325Z"
+    "updated_at": "2026-02-14T13:22:32.797867Z"
   },
   "npc.alwin.say_1": {
     "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
-    "text": "Take this!",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Vezmi si to!",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
     "verified": false,
-    "updated_at": "2026-02-13T22:57:35.737550Z"
+    "updated_at": "2026-02-14T13:22:32.798066Z"
   },
   "npc.andrew_lyze.say_14": {
     "src_hash": "69ce05199222d304e8f82cb747eed8ab",
@@ -145,11 +145,11 @@
   },
   "npc.appaloosa.say_9": {
     "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
-    "text": "Then not.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Tak tedy ne.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
     "verified": false,
-    "updated_at": "2026-02-13T22:57:35.749300Z"
+    "updated_at": "2026-02-14T13:22:32.801203Z"
   },
   "npc.ariella.say_15": {
     "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
@@ -161,11 +161,11 @@
   },
   "npc.arnold.say_1": {
     "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
-    "text": "Take this!",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Vezmi si to!",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
     "verified": false,
-    "updated_at": "2026-02-13T22:57:35.751772Z"
+    "updated_at": "2026-02-14T13:22:32.802070Z"
   },
   "npc.atrad.say_3": {
     "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
@@ -177,11 +177,11 @@
   },
   "npc.aurita.say_1": {
     "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
-    "text": "Then not.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Tak tedy ne.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
     "verified": false,
-    "updated_at": "2026-02-13T22:57:35.753544Z"
+    "updated_at": "2026-02-14T13:22:32.802673Z"
   },
   "npc.avar_tar.say_5": {
     "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
@@ -201,35 +201,35 @@
   },
   "npc.bambi_bonecrusher.say_1": {
     "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
-    "text": "Take this!",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Vezmi si to!",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
     "verified": false,
-    "updated_at": "2026-02-13T22:57:35.756377Z"
+    "updated_at": "2026-02-14T13:22:32.803395Z"
   },
   "npc.barbara.say_3": {
     "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
-    "text": "Take this!",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Vezmi si to!",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
     "verified": false,
-    "updated_at": "2026-02-13T22:57:35.757829Z"
+    "updated_at": "2026-02-14T13:22:32.803624Z"
   },
   "npc.blossom_bonecrusher.say_1": {
     "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
-    "text": "Take this!",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Vezmi si to!",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
     "verified": false,
-    "updated_at": "2026-02-13T22:57:35.763388Z"
+    "updated_at": "2026-02-14T13:22:32.804810Z"
   },
   "npc.brodrosch.farewell_msg_1": {
     "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
-    "text": "Good bye.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
     "verified": false,
-    "updated_at": "2026-02-13T22:57:35.773541Z"
+    "updated_at": "2026-02-14T13:22:32.806434Z"
   },
   "npc.brodrosch.say_5": {
     "src_hash": "12d673409d71f1fc127ebad108378378",
@@ -241,27 +241,27 @@
   },
   "npc.brodrosch.walkaway_msg_1": {
     "src_hash": "5c29fcf0005b56ffead61fcf00537096",
-    "text": "Good bye then.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Tak tedy sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
     "verified": false,
-    "updated_at": "2026-02-13T22:57:35.774788Z"
+    "updated_at": "2026-02-14T13:22:32.806593Z"
   },
   "npc.busty_bonecrusher.say_1": {
     "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
-    "text": "Take this!",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Vezmi si to!",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
     "verified": false,
-    "updated_at": "2026-02-13T22:57:35.779430Z"
+    "updated_at": "2026-02-14T13:22:32.807679Z"
   },
   "npc.captain_seahorse.walkaway_msg_1": {
     "src_hash": "5c29fcf0005b56ffead61fcf00537096",
-    "text": "Good bye then.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Tak tedy sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
     "verified": false,
-    "updated_at": "2026-02-13T22:57:35.794594Z"
+    "updated_at": "2026-02-14T13:22:32.811087Z"
   },
   "npc.chester_kahs.say_23": {
     "src_hash": "8ebe07d7adacdd880130a981ebf53704",
@@ -281,35 +281,35 @@
   },
   "npc.christoph.say_1": {
     "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
-    "text": "Take this!",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Vezmi si to!",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
     "verified": false,
-    "updated_at": "2026-02-13T22:57:35.805554Z"
+    "updated_at": "2026-02-14T13:22:32.814463Z"
   },
   "npc.cillia.say_3": {
     "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
-    "text": "Then not.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Tak tedy ne.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
     "verified": false,
-    "updated_at": "2026-02-13T22:57:35.806081Z"
+    "updated_at": "2026-02-14T13:22:32.814528Z"
   },
   "npc.dalbrect.walkaway_msg_1": {
     "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
-    "text": "Good bye.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
     "verified": false,
-    "updated_at": "2026-02-13T22:57:35.816357Z"
+    "updated_at": "2026-02-14T13:22:32.816828Z"
   },
   "npc.dancing_fairy.say_1": {
     "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
-    "text": "Then not.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Tak tedy ne.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
     "verified": false,
-    "updated_at": "2026-02-13T22:57:35.819663Z"
+    "updated_at": "2026-02-14T13:22:32.817457Z"
   },
   "npc.dedoras.walkaway_msg_1": {
     "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
@@ -321,11 +321,11 @@
   },
   "npc.demonguard.say_1": {
     "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
-    "text": "Take this!",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Vezmi si to!",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
     "verified": false,
-    "updated_at": "2026-02-13T22:57:35.823236Z"
+    "updated_at": "2026-02-14T13:22:32.818510Z"
   },
   "npc.dukosch.say_5": {
     "src_hash": "12d673409d71f1fc127ebad108378378",
@@ -425,11 +425,11 @@
   },
   "npc.fenbala.say_3": {
     "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
-    "text": "Take this!",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Vezmi si to!",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
     "verified": false,
-    "updated_at": "2026-02-13T22:57:35.854112Z"
+    "updated_at": "2026-02-14T13:22:32.825139Z"
   },
   "npc.ferks.farewell_msg_1": {
     "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
@@ -465,11 +465,11 @@
   },
   "npc.ghostly_wolf.say_4": {
     "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
-    "text": "Then not.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Tak tedy ne.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
     "verified": false,
-    "updated_at": "2026-02-13T22:57:35.876513Z"
+    "updated_at": "2026-02-14T13:22:32.829519Z"
   },
   "npc.gnomus.say_10": {
     "src_hash": "69ce05199222d304e8f82cb747eed8ab",
@@ -617,11 +617,11 @@
   },
   "npc.harsky.say_3": {
     "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
-    "text": "Take this!",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Vezmi si to!",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
     "verified": false,
-    "updated_at": "2026-02-13T22:57:35.918010Z"
+    "updated_at": "2026-02-14T13:22:32.840029Z"
   },
   "npc.hjaern.say_15": {
     "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
@@ -633,11 +633,11 @@
   },
   "npc.ikassis.say_3": {
     "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
-    "text": "Then not.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Tak tedy ne.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
     "verified": false,
-    "updated_at": "2026-02-13T22:57:35.929652Z"
+    "updated_at": "2026-02-14T13:22:32.842858Z"
   },
   "npc.jack_fate_goroma.say_7": {
     "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
@@ -649,11 +649,11 @@
   },
   "npc.jean_claude.say_1": {
     "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
-    "text": "Take this!",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Vezmi si to!",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
     "verified": false,
-    "updated_at": "2026-02-13T22:57:35.956262Z"
+    "updated_at": "2026-02-14T13:22:32.848581Z"
   },
   "npc.kallimae.walkaway_msg_1": {
     "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
@@ -1473,11 +1473,11 @@
   },
   "npc.maelyrra.say_18": {
     "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
-    "text": "Then not.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Tak tedy ne.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
     "verified": false,
-    "updated_at": "2026-02-14T01:15:06.652206Z"
+    "updated_at": "2026-02-14T13:22:32.859841Z"
   },
   "npc.melfar.say_3": {
     "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
@@ -1505,11 +1505,11 @@
   },
   "npc.ocelus.farewell_msg_1": {
     "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
-    "text": "Good bye.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
     "verified": false,
-    "updated_at": "2026-02-14T01:15:06.682752Z"
+    "updated_at": "2026-02-14T13:22:32.868823Z"
   },
   "npc.ocelus.walkaway_msg_1": {
     "src_hash": "cbca1e780ae7e44aa43debe068beb490",
@@ -1529,11 +1529,11 @@
   },
   "npc.palomino.say_9": {
     "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
-    "text": "Then not.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Tak tedy ne.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
     "verified": false,
-    "updated_at": "2026-02-14T01:15:06.696682Z"
+    "updated_at": "2026-02-14T13:22:32.873613Z"
   },
   "npc.pukosch.say_5": {
     "src_hash": "12d673409d71f1fc127ebad108378378",
@@ -1561,11 +1561,11 @@
   },
   "npc.rose.say_4": {
     "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
-    "text": "Then not.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Tak tedy ne.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
     "verified": false,
-    "updated_at": "2026-02-14T01:15:06.730776Z"
+    "updated_at": "2026-02-14T13:22:32.880954Z"
   },
   "npc.sam.say_10": {
     "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
@@ -1601,11 +1601,11 @@
   },
   "npc.stutch.say_3": {
     "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
-    "text": "Take this!",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Vezmi si to!",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
     "verified": false,
-    "updated_at": "2026-02-14T01:15:06.756175Z"
+    "updated_at": "2026-02-14T13:22:32.889187Z"
   },
   "npc.suzy.farewell_msg_1": {
     "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
@@ -1625,11 +1625,11 @@
   },
   "npc.taegen.say_1": {
     "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
-    "text": "Then not.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Tak tedy ne.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
     "verified": false,
-    "updated_at": "2026-02-14T01:15:06.759625Z"
+    "updated_at": "2026-02-14T13:22:32.889798Z"
   },
   "npc.tamerin.say_4": {
     "src_hash": "706b1a009354e93f05beff4ba2e0a628",
@@ -1689,11 +1689,11 @@
   },
   "npc.warbert.say_1": {
     "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
-    "text": "Take this!",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Vezmi si to!",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
     "verified": false,
-    "updated_at": "2026-02-14T01:15:06.802407Z"
+    "updated_at": "2026-02-14T13:22:32.899569Z"
   },
   "npc.wyda.say_8": {
     "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
@@ -1841,27 +1841,27 @@
   },
   "npc.a_behemoth.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Drž to dole! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Drž to dole! <poskytne vám podrobnou zprávu o aktivitě monster>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T01:15:28.708225Z"
+    "updated_at": "2026-02-14T13:43:36.905943Z"
   },
   "npc.a_behemoth.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Drž to dole! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Drž to dole! <poskytne vám podrobnou zprávu o aktivitě monster>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T01:15:28.709000Z"
+    "updated_at": "2026-02-14T13:43:36.907061Z"
   },
   "npc.a_behemoth.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Drž to dole! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Drž to dole! <poskytne vám podrobnou zprávu o aktivitě monster>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T01:15:28.709683Z"
+    "updated_at": "2026-02-14T13:43:36.907925Z"
   },
   "npc.a_dead_bureaucrat.greet_msg_1": {
     "src_hash": "1fb51950fc35d0b9f7979cbb0fff81b2",
@@ -3337,19 +3337,19 @@
   },
   "npc.a_dragon_lord.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Drž to dole! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Drž to dole! <poskytne vám podrobnou zprávu o aktivitě monster>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T06:17:27.674160Z"
+    "updated_at": "2026-02-14T13:49:17.889030Z"
   },
   "npc.a_dragon_lord.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Drž to dole! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Drž to dole! <poskytne vám podrobnou zprávu o aktivitě monster>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T06:17:27.675305Z"
+    "updated_at": "2026-02-14T13:49:17.889671Z"
   },
   "npc.a_dragon_lord.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
@@ -5598,5 +5598,1101 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-14T12:17:11.553846Z"
+  },
+  "npc.a_ghostly_sage.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.793319Z"
+  },
+  "npc.aldo.say_5": {
+    "src_hash": "8936c4405857b4f0c4a62fbd983ab87f",
+    "text": "Dobře tedy.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.796915Z"
+  },
+  "npc.amarie.greet_1": {
+    "src_hash": "def396ba41b632b5013a533f685b7648",
+    "text": "Zdravím tě, |PLAYERNAME|.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.798557Z"
+  },
+  "npc.andrew_lyze.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.799278Z"
+  },
+  "npc.bashira.greet_1": {
+    "src_hash": "def396ba41b632b5013a533f685b7648",
+    "text": "Zdravím tě, |PLAYERNAME|.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.803839Z"
+  },
+  "npc.briasol.greet_1": {
+    "src_hash": "def396ba41b632b5013a533f685b7648",
+    "text": "Zdravím tě, |PLAYERNAME|.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.806369Z"
+  },
+  "npc.brodrosch.stdmod_12": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Tak tedy ne.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.806512Z"
+  },
+  "npc.captain_bluebear.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Tak tedy sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.809069Z"
+  },
+  "npc.captain_breezelda.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Tak tedy sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.809135Z"
+  },
+  "npc.captain_chelop.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Tak tedy sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.809221Z"
+  },
+  "npc.captain_cookie.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.809237Z"
+  },
+  "npc.captain_cookie.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.809291Z"
+  },
+  "npc.captain_fearless.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Tak tedy sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.809612Z"
+  },
+  "npc.captain_greyhound.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Tak tedy sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.809790Z"
+  },
+  "npc.captain_harava.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Tak tedy sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.810487Z"
+  },
+  "npc.captain_max.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.810547Z"
+  },
+  "npc.captain_max.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.810615Z"
+  },
+  "npc.captain_max_calassa.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.810631Z"
+  },
+  "npc.captain_max_calassa.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.810683Z"
+  },
+  "npc.captain_pelagia.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Tak tedy sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.810767Z"
+  },
+  "npc.captain_seagull.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.810957Z"
+  },
+  "npc.captain_sinbeard.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Tak tedy sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.811264Z"
+  },
+  "npc.captain_waverider.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.811282Z"
+  },
+  "npc.captain_waverider_island.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.811359Z"
+  },
+  "npc.cassino.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.811911Z"
+  },
+  "npc.cassino.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.811963Z"
+  },
+  "npc.charlotta.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.812868Z"
+  },
+  "npc.chondur.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.813999Z"
+  },
+  "npc.cornell.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Tak tedy sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.815696Z"
+  },
+  "npc.duncan.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.819877Z"
+  },
+  "npc.edala.greet_1": {
+    "src_hash": "def396ba41b632b5013a533f685b7648",
+    "text": "Zdravím tě, |PLAYERNAME|.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.820249Z"
+  },
+  "npc.eleonore.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.821564Z"
+  },
+  "npc.eruaran.farewell_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "Sbohem!",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.823803Z"
+  },
+  "npc.eruaran.greet_1": {
+    "src_hash": "def396ba41b632b5013a533f685b7648",
+    "text": "Zdravím tě, |PLAYERNAME|.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.823834Z"
+  },
+  "npc.falonzo.farewell_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "Sbohem!",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.824732Z"
+  },
+  "npc.faluae.farewell_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "Sbohem!",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.825012Z"
+  },
+  "npc.faluae.greet_1": {
+    "src_hash": "def396ba41b632b5013a533f685b7648",
+    "text": "Zdravím tě, |PLAYERNAME|.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.825041Z"
+  },
+  "npc.galuna.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.826983Z"
+  },
+  "npc.galuna.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.827020Z"
+  },
+  "npc.gamon.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.827134Z"
+  },
+  "npc.gewen.farewell_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "Sbohem!",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.828788Z"
+  },
+  "npc.gewen.walkaway_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "Sbohem!",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.828877Z"
+  },
+  "npc.gnomargery.say_24": {
+    "src_hash": "8936c4405857b4f0c4a62fbd983ab87f",
+    "text": "Dobře tedy.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.830041Z"
+  },
+  "npc.gnomargery.say_29": {
+    "src_hash": "8936c4405857b4f0c4a62fbd983ab87f",
+    "text": "Dobře tedy.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.830100Z"
+  },
+  "npc.gnomargery.say_34": {
+    "src_hash": "8936c4405857b4f0c4a62fbd983ab87f",
+    "text": "Dobře tedy.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.830165Z"
+  },
+  "npc.gnomargery.say_39": {
+    "src_hash": "8936c4405857b4f0c4a62fbd983ab87f",
+    "text": "Dobře tedy.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.830206Z"
+  },
+  "npc.gnombold.say_21": {
+    "src_hash": "8936c4405857b4f0c4a62fbd983ab87f",
+    "text": "Dobře tedy.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.830535Z"
+  },
+  "npc.gnombold.say_26": {
+    "src_hash": "8936c4405857b4f0c4a62fbd983ab87f",
+    "text": "Dobře tedy.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.830594Z"
+  },
+  "npc.gnombold.say_31": {
+    "src_hash": "8936c4405857b4f0c4a62fbd983ab87f",
+    "text": "Dobře tedy.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.830662Z"
+  },
+  "npc.gnombold.say_36": {
+    "src_hash": "8936c4405857b4f0c4a62fbd983ab87f",
+    "text": "Dobře tedy.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.830706Z"
+  },
+  "npc.gnomilly.say_22": {
+    "src_hash": "8936c4405857b4f0c4a62fbd983ab87f",
+    "text": "Dobře tedy.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.832165Z"
+  },
+  "npc.gnomilly.say_27": {
+    "src_hash": "8936c4405857b4f0c4a62fbd983ab87f",
+    "text": "Dobře tedy.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.832227Z"
+  },
+  "npc.gnomilly.say_31": {
+    "src_hash": "8936c4405857b4f0c4a62fbd983ab87f",
+    "text": "Dobře tedy.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.832271Z"
+  },
+  "npc.gnomilly.say_36": {
+    "src_hash": "8936c4405857b4f0c4a62fbd983ab87f",
+    "text": "Dobře tedy.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.832315Z"
+  },
+  "npc.gorn.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.833642Z"
+  },
+  "npc.gorn.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.833789Z"
+  },
+  "npc.guide_alexena.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.836445Z"
+  },
+  "npc.guide_behil.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.836576Z"
+  },
+  "npc.guide_davina.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.836700Z"
+  },
+  "npc.guide_edna.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.836832Z"
+  },
+  "npc.guide_elena.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.837000Z"
+  },
+  "npc.guide_kunibert.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.837244Z"
+  },
+  "npc.guide_luke.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.837507Z"
+  },
+  "npc.guide_rahlkora.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.837652Z"
+  },
+  "npc.guide_thelandil.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.837849Z"
+  },
+  "npc.guide_tiko.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.837981Z"
+  },
+  "npc.gurbasch.stdmod_12": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Tak tedy ne.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.838032Z"
+  },
+  "npc.gurbasch.stdmod_9": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Tak tedy ne.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.838109Z"
+  },
+  "npc.hanna.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.839570Z"
+  },
+  "npc.hanna.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.839683Z"
+  },
+  "npc.harlow.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.839726Z"
+  },
+  "npc.harlow.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Tak tedy sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.839825Z"
+  },
+  "npc.harlow_vengoth.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.839851Z"
+  },
+  "npc.harlow_vengoth.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Tak tedy sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.839883Z"
+  },
+  "npc.haroun.say_10": {
+    "src_hash": "8936c4405857b4f0c4a62fbd983ab87f",
+    "text": "Dobře tedy.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.839941Z"
+  },
+  "npc.hawkhurst.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.840061Z"
+  },
+  "npc.hawkhurst.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.840097Z"
+  },
+  "npc.hawkhurst_ingol.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.840112Z"
+  },
+  "npc.hawkhurst_ingol.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.840145Z"
+  },
+  "npc.hoggle.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.841711Z"
+  },
+  "npc.hoggle.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.841740Z"
+  },
+  "npc.inkaef.say_3": {
+    "src_hash": "8936c4405857b4f0c4a62fbd983ab87f",
+    "text": "Dobře tedy.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.844711Z"
+  },
+  "npc.irea.farewell_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "Sbohem!",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.845085Z"
+  },
+  "npc.irea.greet_1": {
+    "src_hash": "def396ba41b632b5013a533f685b7648",
+    "text": "Zdravím tě, |PLAYERNAME|.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.845115Z"
+  },
+  "npc.iyad.walkaway_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "Sbohem!",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.847045Z"
+  },
+  "npc.jack_drone.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Tak tedy sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.847465Z"
+  },
+  "npc.jack_fate.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Tak tedy sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.847571Z"
+  },
+  "npc.jack_fate_goroma.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.847588Z"
+  },
+  "npc.jack_fate_goroma.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Tak tedy sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.847705Z"
+  },
+  "npc.karith.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.851655Z"
+  },
+  "npc.karith.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.852036Z"
+  },
+  "npc.kendra.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Tak tedy sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.852705Z"
+  },
+  "npc.kendra_thais.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Tak tedy sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.852774Z"
+  },
+  "npc.lavirias.farewell_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "Sbohem!",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.855180Z"
+  },
+  "npc.lavirias.greet_1": {
+    "src_hash": "def396ba41b632b5013a533f685b7648",
+    "text": "Zdravím tě, |PLAYERNAME|.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.855211Z"
+  },
+  "npc.lea.greet_msg_1": {
+    "src_hash": "def396ba41b632b5013a533f685b7648",
+    "text": "Zdravím tě, |PLAYERNAME|.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.855470Z"
+  },
+  "npc.llathriel.farewell_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "Sbohem!",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.856917Z"
+  },
+  "npc.llathriel.greet_1": {
+    "src_hash": "def396ba41b632b5013a533f685b7648",
+    "text": "Zdravím tě, |PLAYERNAME|.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.856947Z"
+  },
+  "npc.lubo.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.858389Z"
+  },
+  "npc.maryza.farewell_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "Sbohem!",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.861195Z"
+  },
+  "npc.mazarius.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.861252Z"
+  },
+  "npc.melian.farewell_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "Sbohem!",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.862116Z"
+  },
+  "npc.melian.walkaway_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "Sbohem!",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.862387Z"
+  },
+  "npc.morgan.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.863015Z"
+  },
+  "npc.naji.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.865892Z"
+  },
+  "npc.naji.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.865939Z"
+  },
+  "npc.pemaret.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.874010Z"
+  },
+  "npc.pino.farewell_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "Sbohem!",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.874675Z"
+  },
+  "npc.pino.walkaway_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "Sbohem!",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.874721Z"
+  },
+  "npc.rabaz.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.876691Z"
+  },
+  "npc.rabaz.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.876897Z"
+  },
+  "npc.rapanaio_boat.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Tak tedy sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.877457Z"
+  },
+  "npc.rapanaio_isle_of_evil.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Tak tedy sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.877501Z"
+  },
+  "npc.raymond_striker.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.878788Z"
+  },
+  "npc.romir.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.880841Z"
+  },
+  "npc.romir.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.880889Z"
+  },
+  "npc.sebastian.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.882914Z"
+  },
+  "npc.sebastian_nargor.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.882977Z"
+  },
+  "npc.shanar.farewell_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "Sbohem!",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.884457Z"
+  },
+  "npc.shanar.greet_1": {
+    "src_hash": "def396ba41b632b5013a533f685b7648",
+    "text": "Zdravím tě, |PLAYERNAME|.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.884491Z"
+  },
+  "npc.shiriel.greet_1": {
+    "src_hash": "def396ba41b632b5013a533f685b7648",
+    "text": "Zdravím tě, |PLAYERNAME|.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.884852Z"
+  },
+  "npc.shiriel.greet_msg_1": {
+    "src_hash": "def396ba41b632b5013a533f685b7648",
+    "text": "Zdravím tě, |PLAYERNAME|.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.884876Z"
+  },
+  "npc.shirith.farewell_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "Sbohem!",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.884905Z"
+  },
+  "npc.shirith.greet_1": {
+    "src_hash": "def396ba41b632b5013a533f685b7648",
+    "text": "Zdravím tě, |PLAYERNAME|.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.884925Z"
+  },
+  "npc.shirith.walkaway_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "Sbohem!",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.884954Z"
+  },
+  "npc.tanyt.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Tak tedy sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.890355Z"
+  },
+  "npc.the_beggar_king.farewell_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "Sbohem!",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.891487Z"
+  },
+  "npc.thorgrin.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.893128Z"
+  },
+  "npc.thorgrin.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Tak tedy sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.893173Z"
+  },
+  "npc.ukea.farewell_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "Sbohem!",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.895442Z"
+  },
+  "npc.ukea.greet_1": {
+    "src_hash": "def396ba41b632b5013a533f685b7648",
+    "text": "Zdravím tě, |PLAYERNAME|.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.895473Z"
+  },
+  "npc.yaman.say_13": {
+    "src_hash": "8936c4405857b4f0c4a62fbd983ab87f",
+    "text": "Dobře tedy.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.901727Z"
+  },
+  "npc.ziyad.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Tak tedy sbohem.",
+    "source": "forced_npc_short",
+    "confidence": 0.996,
+    "verified": false,
+    "updated_at": "2026-02-14T13:22:32.904694Z"
+  },
+  "npc.a_dead_bureaucrat1.voice_2": {
+    "src_hash": "e77105e8c04ed0b00ebdea90f9e4463c",
+    "text": "Nazdar Pumin. Ano, kroupy.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T13:43:36.908442Z"
+  },
+  "npc.a_dead_bureaucrat2.voice_2": {
+    "src_hash": "e77105e8c04ed0b00ebdea90f9e4463c",
+    "text": "Nazdar Pumin. Ano, kroupy.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:49:17.887200Z"
+  },
+  "npc.a_dead_bureaucrat3.voice_2": {
+    "src_hash": "e77105e8c04ed0b00ebdea90f9e4463c",
+    "text": "Nazdar Pumin. Ano, kroupy.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:49:17.887656Z"
+  },
+  "npc.a_dead_bureaucrat4.voice_2": {
+    "src_hash": "e77105e8c04ed0b00ebdea90f9e4463c",
+    "text": "Nazdar Pumin. Ano, kroupy.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:49:17.888048Z"
   }
 }

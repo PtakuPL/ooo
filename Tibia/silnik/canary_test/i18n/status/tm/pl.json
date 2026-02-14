@@ -87774,5 +87774,37 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-14T12:27:48.076387Z"
+  },
+  "_comment": {
+    "src_hash": "92c37f5d3c00bcd4993ae8b20d4912c6",
+    "text": "Example Kupiec NPC - tłumaczenia na język angielski",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T13:18:51.882200Z"
+  },
+  "lib.exaltation_forge.msg_limit": {
+    "src_hash": "d23f840b820625790fd6520edf2af123",
+    "text": "Nie otrzymałeś {amount} pyłu do Kuźni Podniesienia, ponieważ osiągnąłeś już maksimum {limit} pyłu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T13:27:02.033965Z"
+  },
+  "lib.exaltation_forge.msg_received": {
+    "src_hash": "0834a3424f51f208a0ba4b512c3621e8",
+    "text": "Otrzymałeś {amount} pyłu do Kuźni Podniesienia. Masz teraz {current} z maksymalnie {limit} pyłów.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T13:27:02.034647Z"
+  },
+  "lib.monster.msg_not_forgeable": {
+    "src_hash": "a10e1af7c03f1d55c3badcb24d1e953f",
+    "text": "Tego potwora nie da się podrobić, nie można go dodać.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T13:27:02.035061Z"
   }
 }

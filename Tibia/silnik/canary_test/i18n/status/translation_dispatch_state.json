@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-02-14T12:32:30.158823Z",
-  "cycle_counter": 542,
-  "last_target_key": "pl:talkactions.json",
-  "last_pending_total": 59,
+  "timestamp": "2026-02-14T13:52:45.116377Z",
+  "cycle_counter": 555,
+  "last_target_key": "es:questlog.json",
+  "last_pending_total": 1644,
   "last_tier": 1,
   "last_cat_priority": 9,
   "candidates_count": 46,
@@ -268,7 +268,8 @@
     "ja:monsters.json": 0,
     "kk:monsters.json": 0,
     "ko:monsters.json": 0,
-    "pl:server.json": 0
+    "pl:server.json": 0,
+    "pl:libs.json": 0
   },
   "bootstrap_priority": {
     "enabled": true,
@@ -285,7 +286,7 @@
   },
   "bootstrap_forced": false,
   "bootstrap_forced_lang": "",
-  "balance_forced": true,
+  "balance_forced": false,
   "global_quality_mode": true,
   "priority_gate": {
     "enabled": true,
@@ -300,8 +301,10 @@
       "pl"
     ],
     "lang_completion": {
-      "es": 73.07,
-      "pl": 42.15
+      "es": 73.14,
+      "pl": 42.02
     }
-  }
+  },
+  "last_phase": "MIGRATION",
+  "last_phase_ts": "2026-02-14T14:55:48"
 }

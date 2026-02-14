@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-14T12:32:30.150982Z",
+  "timestamp": "2026-02-14T13:52:45.103408Z",
   "built_cycle": 1,
   "cache_ttl_cycles": 5,
   "targets": [
@@ -85,9 +85,9 @@
     {
       "lang": "pl",
       "json_file": "example_merchant.json",
-      "pending_total": 2,
-      "todo": 2,
-      "simple_todo": 1,
+      "pending_total": 1,
+      "todo": 1,
+      "simple_todo": 0,
       "missing_in_lang": 0
     },
     {
@@ -109,8 +109,8 @@
     {
       "lang": "pl",
       "json_file": "libs.json",
-      "pending_total": 4,
-      "todo": 4,
+      "pending_total": 1,
+      "todo": 1,
       "simple_todo": 0,
       "missing_in_lang": 0
     },
@@ -309,17 +309,17 @@
     {
       "lang": "es",
       "json_file": "monsters.json",
-      "pending_total": 1414,
-      "todo": 1414,
+      "pending_total": 1413,
+      "todo": 1413,
       "simple_todo": 1366,
       "missing_in_lang": 0
     },
     {
       "lang": "es",
       "json_file": "npc.json",
-      "pending_total": 3571,
-      "todo": 3571,
-      "simple_todo": 829,
+      "pending_total": 3537,
+      "todo": 3537,
+      "simple_todo": 817,
       "missing_in_lang": 0
     },
     {
@@ -365,8 +365,8 @@
     {
       "lang": "es",
       "json_file": "quests.json",
-      "pending_total": 21,
-      "todo": 21,
+      "pending_total": 17,
+      "todo": 17,
       "simple_todo": 3,
       "missing_in_lang": 0
     },
@@ -389,9 +389,9 @@
     {
       "lang": "es",
       "json_file": "server.json",
-      "pending_total": 2013,
-      "todo": 2013,
-      "simple_todo": 771,
+      "pending_total": 1951,
+      "todo": 1951,
+      "simple_todo": 759,
       "missing_in_lang": 0
     },
     {

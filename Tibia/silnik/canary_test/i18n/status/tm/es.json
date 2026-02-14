@@ -497,11 +497,11 @@
   },
   "npc.example_merchant.name": {
     "src_hash": "16373b8c3c6c497895786de3804c2e0c",
-    "text": "My name is Marcus. I run this shop.",
+    "text": "Mi nombre es Marco. Dirijo esta tienda.",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-12T22:48:36.954043Z"
+    "updated_at": "2026-02-14T13:30:04.898044Z"
   },
   "npc.flora.say_3": {
     "src_hash": "b183fc3434451dda9eebab79da02156b",
@@ -2545,19 +2545,19 @@
   },
   "quests.actions_rewards.msg_1": {
     "src_hash": "2dba8779b7220248332287566af0d980",
-    "text": "You found",
-    "source": "simple_dict",
-    "confidence": 0.98,
+    "text": "Encontraste ",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T01:26:43.478700Z"
+    "updated_at": "2026-02-14T13:46:28.280233Z"
   },
   "quests.actions_rewards.msg_2": {
     "src_hash": "2dba8779b7220248332287566af0d980",
-    "text": "You found",
-    "source": "simple_dict",
-    "confidence": 0.98,
+    "text": "Encontraste ",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T01:26:43.478988Z"
+    "updated_at": "2026-02-14T13:46:28.280439Z"
   },
   "quests.actions_scarlett.msg_1": {
     "src_hash": "7c285fed0553b05349a0985cdd855e24",
@@ -28049,11 +28049,11 @@
   },
   "quests.actions_mono_detector_strange_probing_device.msg_3": {
     "src_hash": "5ddadd6ad0c06716b93e59f10d11de37",
-    "text": "El dispositivo lee: 'abnormal glooth structure detected, possible probing location'",
+    "text": "El dispositivo dice: \"Se detectó una estructura de brillo anormal, posible ubicación del sondeo\".",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T19:40:53.198379Z"
+    "updated_at": "2026-02-14T13:46:28.279960Z"
   },
   "otclient_modules.boss_slots_otui.tr_2": {
     "src_hash": "ba79bc10653863243469213e946899e9",
@@ -138830,5 +138830,981 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-14T12:01:25.624933Z"
+  },
+  "npc.altar.walkaway_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Chao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T13:17:49.735318Z"
+  },
+  "npc.ashari.farewell_msg_1": {
+    "src_hash": "4c843bd5e890558b89583052fe61a44c",
+    "text": "¡Chao!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T13:17:50.014191Z"
+  },
+  "npc.ashari.walkaway_msg_1": {
+    "src_hash": "4c843bd5e890558b89583052fe61a44c",
+    "text": "¡Chao!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T13:17:50.015838Z"
+  },
+  "npc.billy.farewell_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Chao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T13:17:50.124130Z"
+  },
+  "npc.bloodshade_rotten.walkaway_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Chao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T13:17:50.159634Z"
+  },
+  "npc.bloodshade_sacrifice.walkaway_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Chao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T13:17:50.166038Z"
+  },
+  "npc.captain_bluebear.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Bueno, adiós entonces.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T13:30:03.950749Z"
+  },
+  "npc.captain_breezelda.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Bueno, adiós entonces.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T13:30:03.954972Z"
+  },
+  "npc.captain_chelop.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Bueno, adiós entonces.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T13:30:03.959994Z"
+  },
+  "npc.captain_fearless.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Bueno, adiós entonces.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T13:30:03.984110Z"
+  },
+  "npc.captain_greyhound.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Bueno, adiós entonces.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T13:30:03.995919Z"
+  },
+  "npc.captain_haba.farewell_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Chao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T13:30:04.004776Z"
+  },
+  "npc.captain_haba.walkaway_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Chao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T13:30:04.023100Z"
+  },
+  "npc.captain_harava.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Bueno, adiós entonces.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T13:30:04.047019Z"
+  },
+  "npc.captain_pelagia.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Bueno, adiós entonces.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T13:30:04.063672Z"
+  },
+  "npc.captain_sinbeard.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Bueno, adiós entonces.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T13:30:04.090888Z"
+  },
+  "npc.charles.farewell_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Chao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T13:30:04.183090Z"
+  },
+  "npc.charles.walkaway_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Chao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T13:30:04.190908Z"
+  },
+  "npc.cornell.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Bueno, adiós entonces.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T13:30:04.374074Z"
+  },
+  "npc.duncan.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T13:30:04.618846Z"
+  },
+  "npc.eleonore.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T13:30:04.722101Z"
+  },
+  "npc.eruaran.farewell_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "¡Adiós!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T13:30:04.860729Z"
+  },
+  "npc.esrik.farewell_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Chao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T13:30:04.890233Z"
+  },
+  "npc.example_merchant_i18n.voice_1": {
+    "src_hash": "e988ae8e1d942593474bbe72fb1af93d",
+    "text": "¡Las mejores pociones de la ciudad!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:30:04.901556Z"
+  },
+  "npc.falonzo.farewell_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "¡Adiós!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T13:30:04.920157Z"
+  },
+  "npc.faluae.farewell_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "¡Adiós!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T13:30:04.936606Z"
+  },
+  "npc.frans.farewell_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Chao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T13:30:05.018379Z"
+  },
+  "npc.frans.walkaway_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Chao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T13:30:05.020735Z"
+  },
+  "npc.galuna.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T13:30:05.069149Z"
+  },
+  "npc.galuna.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T13:30:05.070931Z"
+  },
+  "npc.gamon.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T13:30:05.079706Z"
+  },
+  "npc.gewen.farewell_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "¡Adiós!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T13:30:05.174063Z"
+  },
+  "npc.gewen.walkaway_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "¡Adiós!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T13:30:05.180360Z"
+  },
+  "npc.ghost_of_a_priest.farewell_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Chao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T13:30:05.183932Z"
+  },
+  "npc.gorn.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T13:30:05.447340Z"
+  },
+  "npc.gorn.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T13:30:05.458151Z"
+  },
+  "npc.guide_alexena.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T13:30:05.620712Z"
+  },
+  "npc.guide_behil.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T13:30:05.629454Z"
+  },
+  "npc.guide_davina.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T13:30:05.637996Z"
+  },
+  "npc.guide_edna.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T13:30:05.647058Z"
+  },
+  "npc.guide_elena.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T13:30:05.655565Z"
+  },
+  "npc.guide_kunibert.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T13:30:05.671579Z"
+  },
+  "npc.guide_luke.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T13:30:05.680073Z"
+  },
+  "npc.guide_rahlkora.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T13:30:05.689118Z"
+  },
+  "npc.guide_thelandil.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T13:30:05.696358Z"
+  },
+  "npc.guide_tiko.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T13:30:05.705320Z"
+  },
+  "npc.gurbasch.stdmod_12": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Entonces no.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:30:05.708663Z"
+  },
+  "npc.gurbasch.stdmod_8": {
+    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
+    "text": "¡Prepara las velas!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:30:05.711500Z"
+  },
+  "npc.gurbasch.stdmod_9": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Entonces no.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:30:05.712432Z"
+  },
+  "npc.hanna.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T13:30:05.803447Z"
+  },
+  "npc.hanna.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T13:30:05.810659Z"
+  },
+  "data.otservbr.global.npc.guide.kunibert.L101.835": {
+    "src_hash": "8d5b35490be06573b0d84578330702c1",
+    "text": "¡Bienvenido a Rathleton, |PLAYERNAME|! ¿Busca un transporte a la isla principal de Oramond o desea información y una guía de mapas?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:43.998108Z"
+  },
+  "data.otservbr.global.npc.guide.luke.L103.466": {
+    "src_hash": "3b3c55987c8a03288b16269c3dff2d65",
+    "text": "¡Hola, |PLAYERNAME| y bienvenido a Thais! ¿Quieres una guía de {information} y {map}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.000108Z"
+  },
+  "data.otservbr.global.npc.guide.rahlkora.L104.1325": {
+    "src_hash": "52692c98bd63afaf89abaf3f0a156585",
+    "text": "Bienvenido a Ankrahmun, |PLAYERNAME|. Esta ciudad puede resultar un poco confusa al principio. ¿Quieres información y una guía cartográfica?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.002215Z"
+  },
+  "data.otservbr.global.npc.guide.thelandil.L99.627": {
+    "src_hash": "11b80660f39241a5434022eabd0920c4",
+    "text": "¡Hola, |PLAYERNAME| y bienvenido a Ab'Dendriel! ¿Quieres información y una guía cartográfica?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.004644Z"
+  },
+  "data.otservbr.global.npc.guide.tiko.L103.800": {
+    "src_hash": "a0b7663b86e7e4547b427353adbbb525",
+    "text": "¡Hola y bienvenido a Port Hope! ¿Quieres información y una guía cartográfica?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.005890Z"
+  },
+  "data.otservbr.global.npc.habdel.L108.482": {
+    "src_hash": "bf6a673ffca08400fa3398d19e7284a2",
+    "text": "Adiós. Vuelve pronto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.009053Z"
+  },
+  "data.otservbr.global.npc.habdel.L109.483": {
+    "src_hash": "bf6a673ffca08400fa3398d19e7284a2",
+    "text": "Adiós. Vuelve pronto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.010115Z"
+  },
+  "data.otservbr.global.npc.hairycles.L56.1001": {
+    "src_hash": "4d984a36878f21f786d9ee11c24866fc",
+    "text": "¡Oh! ¡Hola! ¡Hola! ¡No me di cuenta!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.011243Z"
+  },
+  "data.otservbr.global.npc.hairycles.L58.1002": {
+    "src_hash": "2809de79894765e53e9373dcb1e1ac78",
+    "text": "Sea saludado, amigo del pueblo simio. Si quieres {trade}, solo pregunta por mis ofertas. Si estás herido, pide curación.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.012582Z"
+  },
+  "data.otservbr.global.npc.hamish.L206.768": {
+    "src_hash": "0906a8c64321591aa58fc77fd2ad5878",
+    "text": "¡Haz tu elección! ¿O tal vez quieras mirar solo {potions}, {wands} o {runes}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.015453Z"
+  },
+  "data.otservbr.global.npc.hanna.L121.875": {
+    "src_hash": "56afffb157e0e4ad58f9731e846f8f36",
+    "text": "Oh, por favor entra, |PLAYERNAME|. ¿Qué necesitas? Echa un vistazo a mi maravilloso {offers} en gemas y joyería.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.016789Z"
+  },
+  "data.otservbr.global.npc.hardek.L61.756": {
+    "src_hash": "b70b0bfb818df36aacf3825c1a6182b3",
+    "text": "¡Hola |PLAYERNAME|! ¿Necesitas mis servicios?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.018291Z"
+  },
+  "data.otservbr.global.npc.hardek.L62.757": {
+    "src_hash": "511be326f0223306e232ba60e626481f",
+    "text": "Adiós. Visítame cuando quieras vender algo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.019394Z"
+  },
+  "data.otservbr.global.npc.hardek.L63.758": {
+    "src_hash": "511be326f0223306e232ba60e626481f",
+    "text": "Adiós. Visítame cuando quieras vender algo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.020528Z"
+  },
+  "data.otservbr.global.npc.harog.L69.1500": {
+    "src_hash": "ff286ad0325b0dfb6ab6df93be4c1201",
+    "text": "Fue un placer ayudarte, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.023332Z"
+  },
+  "data.otservbr.global.npc.harog.L71.1501": {
+    "src_hash": "7ab7a918399e516ca6b9bc0cc9d8b8f9",
+    "text": "Tenga en cuenta que no encontrará mejores ofertas aquí. Simplemente navega por mis productos.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.024543Z"
+  },
+  "data.otservbr.global.npc.haroun.L142.805": {
+    "src_hash": "31e8eeb709dbdbe39f67da7006e7a38a",
+    "text": "¡Despedida! Que la luz serena del descanso iluminado brille en vuestros viajes.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.025710Z"
+  },
+  "data.otservbr.global.npc.harsky.L85.888": {
+    "src_hash": "2303a1d196e96f4f401a39fa25e92876",
+    "text": "¡VIVA EL REY! ¡Puedes irte ahora!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.027921Z"
+  },
+  "data.otservbr.global.npc.hawkhurst.L64.881": {
+    "src_hash": "91cafd9ed503a906d4a9dbde9373f615",
+    "text": "¡Ah, amigo! Buscando un {passage}, eh.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.029022Z"
+  },
+  "data.otservbr.global.npc.hawkhurst.ingol.L64.808": {
+    "src_hash": "91cafd9ed503a906d4a9dbde9373f615",
+    "text": "¡Ah, amigo! Buscando un {passage}, eh.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.030554Z"
+  },
+  "data.otservbr.global.npc.henricus.L380.1617": {
+    "src_hash": "1f2fe19b292a922bbdcbf6f793f18b01",
+    "text": "¡Esté siempre en guardia, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.032380Z"
+  },
+  "data.otservbr.global.npc.henricus.L381.1618": {
+    "src_hash": "097549e900b2d712d091f169d833e03b",
+    "text": "¡Esta prisa tan vergonzosa es sumamente sospechosa!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.033512Z"
+  },
+  "data.otservbr.global.npc.hireling.L792.1381": {
+    "src_hash": "f8bfbe1829d4c38e56699f0fb3bb651d",
+    "text": "Es bueno verte. Siempre estoy en tu {service}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.035332Z"
+  },
+  "data.otservbr.global.npc.hireling.L793.1382": {
+    "src_hash": "c4e64ce0ff5d5866857024d5aec7cf90",
+    "text": "Adiós, |PLAYERNAME|, aquí estaré si me necesitas de nuevo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.036456Z"
+  },
+  "data.otservbr.global.npc.hjaern.L234.1020": {
+    "src_hash": "00835d63e500cbea55ad90f8a88d8c16",
+    "text": "Sea saludado, |PLAYERNAME|. El mundo {spiritual} te mira a ti y a tus obras.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.037986Z"
+  },
+  "data.otservbr.global.npc.hoggle.L59.1549": {
+    "src_hash": "1602b615a53c201714b0acb1d1375a04",
+    "text": "¡Bienvenidos a mi humilde hogar!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.039072Z"
+  },
+  "data.otservbr.global.npc.huntsman.L102.382": {
+    "src_hash": "72c6f681201030fa20c4be66b4fd1131",
+    "text": "Todavía puedo verte.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.042232Z"
+  },
+  "data.otservbr.global.npc.hyacinth.L221.656": {
+    "src_hash": "56bcc5cd8a51fbaa712e5426f2dc3e99",
+    "text": "Aquí. No olvides que si compras pociones, hay un {deposit} de 5 de oro en el matraz vacío.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.044775Z"
+  },
+  "data.otservbr.global.npc.hyacinth.L58.651": {
+    "src_hash": "496ad5f3e14146562fd4fa124ab41003",
+    "text": "Saludos viajero |PLAYERNAME|. Debes ser el enviado por Lily. ¿Tienes un saco de {herbs} para mí?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.046023Z"
+  },
+  "data.otservbr.global.npc.hyacinth.L60.652": {
+    "src_hash": "843c94ca8dd14ccdedf91d5a409788a8",
+    "text": "Saludos viajero |PLAYERNAME|. ¡Aún tengo un regalo para ti! ¿Quieres tenerlo ahora?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.047304Z"
+  },
+  "data.otservbr.global.npc.hyacinth.L62.653": {
+    "src_hash": "190ad7101e079d912f649ef487140629",
+    "text": "Saludos viajero |PLAYERNAME|. Como has encontrado el camino a mi cabaña, ¿cómo puedo {help}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.048488Z"
+  },
+  "data.otservbr.global.npc.imalas.L55.670": {
+    "src_hash": "2c6fc266297ccd7c56ad4ba34b259141",
+    "text": "¡Hola |PLAYERNAME|! ¿Qué necesitas? Si es {food}, has venido al lugar correcto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.050116Z"
+  },
+  "data.otservbr.global.npc.imalas.L56.671": {
+    "src_hash": "7f11902c4408305e1726523ca95b1f39",
+    "text": "Sí, mira bien.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.051254Z"
+  },
+  "data.otservbr.global.npc.imbuement.assistant.L360.558": {
+    "src_hash": "028ff767db8f071f3c945cbba81c8bb1",
+    "text": "Hasta luego |PLAYERNAME| vuelve pronto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.052908Z"
+  },
+  "data.otservbr.global.npc.imbuement.assistant.L361.559": {
+    "src_hash": "028ff767db8f071f3c945cbba81c8bb1",
+    "text": "Hasta luego |PLAYERNAME| vuelve pronto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.054050Z"
+  },
+  "data.otservbr.global.npc.irmana.L275.380": {
+    "src_hash": "43d5fe0a150dec0be2ad2a9ecf6210cb",
+    "text": "¡Bienvenido a la casa de la moda, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.057120Z"
+  },
+  "data.otservbr.global.npc.ishebad.L53.1162": {
+    "src_hash": "f565f4fee9939868e1a59c6891683b49",
+    "text": "Sé de luto, peregrino en carne. ¿Estás buscando una promoción?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.058246Z"
+  },
+  "data.otservbr.global.npc.ishina.L111.412": {
+    "src_hash": "c0bddf3746d07eca97d3a84bb9d04884",
+    "text": "Sea saludado, |PLAYERNAME|. ¿Cuál de mis finas gemas prefieres {need}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.060069Z"
+  },
+  "data.otservbr.global.npc.ishina.L112.413": {
+    "src_hash": "45f2935aa8a5385fe0bbcc2fa0a3ec47",
+    "text": "Bendiciones de Daraman y adiós.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.061116Z"
+  },
+  "data.otservbr.global.npc.ishina.L113.414": {
+    "src_hash": "45f2935aa8a5385fe0bbcc2fa0a3ec47",
+    "text": "Bendiciones de Daraman y adiós.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.062298Z"
+  },
+  "data.otservbr.global.npc.iskan.L57.1280": {
+    "src_hash": "983337edfc377e32a812a0a308132a5f",
+    "text": "¡Me dijeron que has estado matando perros esquimales aquí en Svargrond! Nunca vuelvas a hacer eso, ¿vale? Son animales preciosos para nosotros. Dame 500 de oro y olvidaré ese incidente sin contárselo a Jarl Sven. ¿Bueno?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.065777Z"
+  },
+  "data.otservbr.global.npc.iskan.L59.1281": {
+    "src_hash": "3ac39dbfcbd7770977fff7c140ac7c6a",
+    "text": "¡Salve al señor de la guerra de la arena! |PLAYERNAME|, héroe de Svargrond! ¿Qué puedo {do for you}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.067171Z"
+  },
+  "data.otservbr.global.npc.iskan.L61.1282": {
+    "src_hash": "1f70c3044c3ea23a982b1dd0d61fc964",
+    "text": "Saludos. ¿Qué puedo {do for you}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.068197Z"
+  },
+  "data.otservbr.global.npc.ivalisse.L124.1119": {
+    "src_hash": "f0b27be99dc5c8311301ee5fe06d8f6a",
+    "text": "¡Hola, adorador de los Formadores Astrales! ¡Bienvenidos al templo! Mientras esté aquí para rendir homenaje, también podrá aprender algo sobre el antiguo arte de imbuir.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.069607Z"
+  },
+  "data.otservbr.global.npc.iwan.L59.1266": {
+    "src_hash": "9ad6d2c4dbecd894e37fc099d0032119",
+    "text": "Siéntete bienvenido a mi tienda de gemas, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.071047Z"
+  },
+  "data.otservbr.global.npc.iwar.L84.274": {
+    "src_hash": "5907e7d8a8271a0514abcb5c939244b7",
+    "text": "¡Hola, asesino de tormentas! Bienvenido a la tienda de muebles Kazordoon.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.073840Z"
+  },
+  "data.otservbr.global.npc.iyad.L107.746": {
+    "src_hash": "df894e47fdb48b4f587d24a4d645c85c",
+    "text": "¡Finalmente! ¡Un c...c...cliente! ¿Q...dónde quieres f...f...{fly}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.076008Z"
+  },
+  "data.otservbr.global.npc.iyad.L108.747": {
+    "src_hash": "8e0f4300a9c29375ccb4d379315755a4",
+    "text": "D... las bendiciones de Daraman... oh, cómo extraño mi cálido Darashia...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.077767Z"
+  },
+  "data.otservbr.global.npc.jack.L67.1251": {
+    "src_hash": "4e2dd6d8a79d10c357123bcd4d0e66c3",
+    "text": "¡¡Tú!! ¿Qué le has dicho a mi familia? ¡Están enojados conmigo y ni siquiera sé por qué! ¡Creen que les mentí acerca de trabajar en Edron en secreto! ¿Por qué debería hacer eso?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.080389Z"
+  },
+  "data.otservbr.global.npc.jack.L75.1252": {
+    "src_hash": "5ae62e2362c88f90c7477b5d525bc5a4",
+    "text": "Entonces, ¿has regresado a Spectulus? ¿Qué dijo? ¿Pasa algo? Tienes una expresión extraña en tu cara. ¿Pasa algo? Me dijiste la verdad aquí, ¿no?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.082024Z"
+  },
+  "data.otservbr.global.npc.jack.L77.1253": {
+    "src_hash": "88343b5b53d91f0b3358fbbee649c61f",
+    "text": "¿Sí? ¿Qué puedo hacer por ti? Aunque espero que esto no tarde mucho.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.083332Z"
+  },
+  "data.otservbr.global.npc.jack.drone.L61.504": {
+    "src_hash": "3b806053434c79038dd24fb8c3bf2065",
+    "text": "Bienvenido a bordo, |PLAYERNAME|. ¿Dónde puedo {sail} hoy? Puedo viajar contigo de regreso a {thais}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.084642Z"
+  },
+  "data.otservbr.global.npc.jack.drone.L62.505": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "Adiós. Recomiéndenos si quedó satisfecho con nuestro servicio.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.085777Z"
+  },
+  "data.otservbr.global.npc.jack.fate.L109.733": {
+    "src_hash": "8a3a57974c1e5d4b3e4a66585fd49c38",
+    "text": "Bienvenido a bordo, señor |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.087054Z"
+  },
+  "data.otservbr.global.npc.jack.fate.L110.734": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "Adiós. Recomiéndenos si quedó satisfecho con nuestro servicio.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.088119Z"
+  },
+  "data.otservbr.global.npc.jack.springer.L85.390": {
+    "src_hash": "049e45e3a662118a9531760c987d28d1",
+    "text": "¡Hola, extraño! Me pareces sospechoso. No creo que tengamos nada que discutir.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.091025Z"
+  },
+  "data.otservbr.global.npc.jack.springer.L90.392": {
+    "src_hash": "6b5ff900f0fc6473f4ea9c676b2d3009",
+    "text": "¡Hola, extraño! Lo siento, pero nunca escuché de ti. Estoy buscando ayuda con más experiencia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.092886Z"
+  },
+  "data.otservbr.global.npc.jacob.L132.763": {
+    "src_hash": "27e435b4c746a3efcf2e9e10c4abb36d",
+    "text": "<nods> Hola.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:31:44.094988Z"
+  },
+  "raid.white_pale.name": {
+    "src_hash": "c26999e79917dc6219158f8955472741",
+    "text": "Pale blanco",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:52:42.150936Z"
+  },
+  "raid.ice_golems.name": {
+    "src_hash": "724107539796c10b6ed076eeb39ffb6f",
+    "text": "Hielo Exitosamente",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:52:42.153951Z"
+  },
+  "raid.badger.name": {
+    "src_hash": "5841d0014fc42f0fcf9a019d349d50fd",
+    "text": "Tejón",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:52:42.158040Z"
+  },
+  "raid.the_welter.name": {
+    "src_hash": "06c5706a0ac0ee90aae4d076fff06ecb",
+    "text": "Welter",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:52:42.159118Z"
+  },
+  "raid.cyclops.name": {
+    "src_hash": "1a1ea04451ed996376aac96e92f38324",
+    "text": "Cíclope",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:52:42.163518Z"
+  },
+  "raid.yeti.name": {
+    "src_hash": "9cb073d5208162d71991a6077288e01e",
+    "text": "Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:52:42.170296Z"
+  },
+  "raid.gargoyle.name": {
+    "src_hash": "fa149962cca7ce4eae40089644c4616b",
+    "text": "Gárgola",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:52:42.171430Z"
+  },
+  "raid.nomad.name": {
+    "src_hash": "aef878e6f44bed61b63c5c91bfdd756c",
+    "text": "Female de nómada",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:52:42.172887Z"
+  },
+  "raid.cobra.name": {
+    "src_hash": "d13eca1c700558f57d0310ef14277cc2",
+    "text": "Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:52:42.174398Z"
+  },
+  "raid.terramite.name": {
+    "src_hash": "6f60f48e7910fcc0ac596725ef4034f8",
+    "text": "Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:52:42.176804Z"
+  },
+  "raid.scarab.name": {
+    "src_hash": "a9fd3ff5b6ff3cd3f3a1a900e46295f8",
+    "text": "Escarabajo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:52:42.178524Z"
+  },
+  "raid.fernfang.name": {
+    "src_hash": "15a8628afcbb835f4244ba1f151e5d8c",
+    "text": "Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:52:42.185187Z"
+  },
+  "raid.hunter.name": {
+    "src_hash": "5e409e09f43d85c6e61301149e4f803b",
+    "text": "Cazador",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T13:52:42.186999Z"
   }
 }

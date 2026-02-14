@@ -114,6 +114,7 @@ GT_BATCH_SIZE=50            # ile kluczy tłumaczyć w jednym batchu GT
 GT_DELAY=1.5                # sekundy przerwy między batchami GT (anty rate-limit)
 GT_BATCH_TIMEOUT=18         # timeout (s) na pojedynczy request translate_batch
 GT_SINGLE_TIMEOUT=7         # timeout (s) na pojedynczy request translate
+FORCED_AUTO_FAST_LANE_MAX_LIMIT="${FORCED_AUTO_FAST_LANE_MAX_LIMIT:-30}"  # AUTO N<=X używa operator fast-lane
 CROSSREF_AUTO_FIX=false     # --auto-fix-crossref: faza 4.5 (Tryb 2), domyślnie OFF
 CROSSREF_AUTO_FIX_LIMIT=30  # maksymalna liczba auto-fix na język / przebieg walidacji
 PINNED_AUTO_LANG=""        # SWITCH:<lang> - przypięty język AUTO_TRANSLATE między cyklami
@@ -9844,6 +9845,35 @@ def _is_game_nontranslatable(key, t):
         return True
     return False
 
+# --- Code/technical detection (repair queue mirror) ---
+_GAME_NONTRANSLATABLE_TERMS = {
+    'bosstiary', 'manadrain', 'legiondawnport', 'castlemania',
+}
+
+def _is_code_or_technical(key, en_value):
+    t = str(en_value or "").strip()
+    if not t:
+        return False
+    if key == "_file":
+        return True
+    if re.match(r'^\^', t):
+        return True
+    if re.match(r'^fx\s+[a-zA-Z]', t):
+        return True
+    if t.startswith('Mozilla/'):
+        return True
+    if re.match(r'^images?/', t):
+        return True
+    if ' ' not in t and len(t) >= 8 and re.search(r'[a-z][A-Z]', t):
+        return True
+    if re.match(r'^[\s{}\d\->,.;:s|]+$', t):
+        return True
+    if re.match(r'^(Ctrl|Alt|Shift)\+', t):
+        return True
+    if t.lower() in _GAME_NONTRANSLATABLE_TERMS:
+        return True
+    return False
+
 def _is_proper_noun(key, en_value):
     pn_prefixes = ("item.","monster.","spell.","mount.","quest.","raid.","achievement.","npc.","book.otbm.")
     pn_suffixes = (".name",".words",".title",".desc",".announce")
@@ -9851,6 +9881,8 @@ def _is_proper_noun(key, en_value):
         return True
     en_s = en_value.strip()
     if len(en_s) <= 3:
+        return True
+    if _is_code_or_technical(key, en_s):
         return True
     if _is_game_nontranslatable(key, en_s):
         return True
@@ -10256,6 +10288,7 @@ auto_translate_keys() {
     if [ "${TRANSLATIONS_STRICT:-false}" = "true" ]; then
         strict_mode="true"
     fi
+    local _operator_fast_mode="${AUTO_OPERATOR_FAST_LANE:-false}"
 
     log "${CYAN}🌍 AUTO TRANSLATE: $target_lang <- $json_file (limit: $translate_limit, strict: $strict_mode, GT: $USE_GOOGLE_TRANSLATE)${NC}"
 
@@ -10275,8 +10308,16 @@ auto_translate_keys() {
     if [ "$_hb_enabled" = "1" ] || [ "$_hb_enabled" = "true" ] || [ "$_hb_enabled" = "yes" ] || [ "$_hb_enabled" = "on" ]; then
         status_update_activity "running" "${CYCLE:-0}" "AUTO_TRANSLATE" "heartbeat_tick" "$target_lang" "$json_file" "auto translate in progress" 0 0 "keys" 0
         (
+            trap 'exit 0' TERM INT
+            _hb_elapsed=0
             while true; do
-                sleep "$_hb_interval" || break
+                # sleep in 1s slices so TERM exits quickly (prevents ~90s tail latency on wait)
+                sleep 1 || break
+                _hb_elapsed=$((_hb_elapsed + 1))
+                if [ "$_hb_elapsed" -lt "$_hb_interval" ] 2>/dev/null; then
+                    continue
+                fi
+                _hb_elapsed=0
                 status_update_activity "running" "${CYCLE:-0}" "AUTO_TRANSLATE" "heartbeat_tick" "$target_lang" "$json_file" "auto translate in progress" 0 0 "keys" 0
                 repair_identical_bonus_round "${CYCLE:-0}" "queue_only" >/dev/null 2>&1 || true
             done
@@ -10285,7 +10326,7 @@ auto_translate_keys() {
     fi
 
     local _at_out _at_rc _translated _placeholders
-    _at_out=$(USE_GOOGLE_TRANSLATE="$USE_GOOGLE_TRANSLATE" GT_BATCH_SIZE="$GT_BATCH_SIZE" GT_DELAY="$GT_DELAY" GT_BATCH_TIMEOUT="$GT_BATCH_TIMEOUT" GT_SINGLE_TIMEOUT="$GT_SINGLE_TIMEOUT" AUTO_TRANSLATE_COMMAND_FILE="${COMMAND_FILE:-.worker_command}" AUTO_TRANSLATE_MID_BATCH_CMD_CHECK_EVERY="${AUTO_TRANSLATE_MID_BATCH_CMD_CHECK_EVERY:-8}" python3 - "$target_lang" "$json_file" "$translate_limit" "$strict_mode" << 'AUTOTRANSPY'
+    _at_out=$(USE_GOOGLE_TRANSLATE="$USE_GOOGLE_TRANSLATE" GT_BATCH_SIZE="$GT_BATCH_SIZE" GT_DELAY="$GT_DELAY" GT_BATCH_TIMEOUT="$GT_BATCH_TIMEOUT" GT_SINGLE_TIMEOUT="$GT_SINGLE_TIMEOUT" AUTO_TRANSLATE_COMMAND_FILE="${COMMAND_FILE:-.worker_command}" AUTO_TRANSLATE_MID_BATCH_CMD_CHECK_EVERY="${AUTO_TRANSLATE_MID_BATCH_CMD_CHECK_EVERY:-8}" AUTO_TRANSLATE_OPERATOR_FAST_MODE="${_operator_fast_mode:-false}" AUTO_TRANSLATE_OPERATOR_FAST_LIMIT_MAX="${FORCED_AUTO_FAST_LANE_MAX_LIMIT:-30}" python3 - "$target_lang" "$json_file" "$translate_limit" "$strict_mode" << 'AUTOTRANSPY'
 import json
 import os
 import re
@@ -10308,6 +10349,17 @@ except Exception:
     mid_batch_cmd_check_every = 8
 if mid_batch_cmd_check_every < 1:
     mid_batch_cmd_check_every = 1
+operator_fast_mode = str(os.environ.get("AUTO_TRANSLATE_OPERATOR_FAST_MODE", "false")).strip().lower() in ("1", "true", "yes", "on")
+try:
+    operator_fast_limit_max = int(os.environ.get("AUTO_TRANSLATE_OPERATOR_FAST_LIMIT_MAX", "30") or "30")
+except Exception:
+    operator_fast_limit_max = 30
+if operator_fast_limit_max < 1:
+    operator_fast_limit_max = 30
+if translate_limit <= 0 or translate_limit > operator_fast_limit_max:
+    operator_fast_mode = False
+operator_fast_scan_multiplier = 12
+operator_fast_scan_extra = 24
 
 try:
     with open(proper_nouns_path, "r", encoding="utf-8") as f:
@@ -12578,12 +12630,54 @@ def simple_translate(text, lang):
                 return translated
     return None
 
+# --- Game-specific nontranslatable terms (single-word identifiers used in code/engine) ---
+_GAME_NONTRANSLATABLE_TERMS = {
+    'bosstiary', 'manadrain', 'legiondawnport', 'castlemania',
+}
+
+def _is_code_or_technical(key, en_value):
+    """Detect code, regex, format strings, and technical identifiers that should NEVER be translated."""
+    t = str(en_value or "").strip()
+    if not t:
+        return False
+    # Metadata keys
+    if key == "_file":
+        return True
+    # Regex patterns (starts with ^ or contains regex quantifiers)
+    if re.match(r'^\^', t):
+        return True
+    # Code function references: "fx functionName"
+    if re.match(r'^fx\s+[a-zA-Z]', t):
+        return True
+    # HTTP User-Agent strings
+    if t.startswith('Mozilla/'):
+        return True
+    # Image/resource paths: images/something
+    if re.match(r'^images?/', t):
+        return True
+    # PascalCase/camelCase code identifiers (single word, no spaces, >=8 chars, lowercase->uppercase transition)
+    if ' ' not in t and len(t) >= 8 and re.search(r'[a-z][A-Z]', t):
+        return True
+    # Pure format strings: only {N}, arrows, digits, punctuation, 's' (seconds)
+    if re.match(r'^[\s{}\d\->,.;:s|]+$', t):
+        return True
+    # Keyboard shortcuts: Ctrl+Key, Alt+Key, Shift+Key
+    if re.match(r'^(Ctrl|Alt|Shift)\+', t):
+        return True
+    # Known game engine terms that must stay untranslated
+    if t.lower() in _GAME_NONTRANSLATABLE_TERMS:
+        return True
+    return False
+
 def _is_game_nontranslatable(key, en_value):
     """Heurystyka: tekst nieprzetłumaczalny specyficzny dla gry Tibia.
     Fikcyjne języki (orcki, smocze), odgłosy zwierząt, onomatopeje."""
     t = str(en_value or "").strip()
     if not t:
         return False
+    # Code/technical values (regex, format strings, code identifiers)
+    if _is_code_or_technical(key, t):
+        return True
     # Odgłosy zwierząt / krzyki: GRRRR, YOOOO, ZzzZzz, ROAAAAR itp.
     _animal_patterns = ('GRRR', 'YOOO', 'ZZZZ', 'ROAR', 'HISS', 'SNARL', 'RAWR',
                         'HOWL', 'GROWL', 'SCREE', 'CLANK', 'BOOM')
@@ -12648,6 +12742,9 @@ def _is_proper_noun_key(key, en_value):
         return True
     en_stripped = en_value.strip()
     if len(en_stripped) <= 3:
+        return True
+    # Code/technical values (regex, format strings, code identifiers)
+    if _is_code_or_technical(key, en_stripped):
         return True
     # Game-specific nontranslatable content (fictional languages, animal sounds)
     if _is_game_nontranslatable(key, en_stripped):
@@ -14015,9 +14112,43 @@ if str(target_lang or "").lower() == "it" and str(json_file or "").lower() == "q
 if forced_it_quest_fragment_repairs > 0:
     print(f"🧩 IT quest fragment repair: {forced_it_quest_fragment_repairs} naprawionych")
 
+iter_items = list(en_data.items())
+if operator_fast_mode and translate_limit > 0:
+    max_candidates = max(translate_limit * operator_fast_scan_multiplier, translate_limit + operator_fast_scan_extra)
+    fast_candidates = []
+    for _fk, _fe in en_data.items():
+        _has_value = _fk in lang_data
+        if strict_mode and not _has_value:
+            continue
+        _cur = str(lang_data.get(_fk, "")) if _has_value else ""
+        _is_forced = _is_forced_short_npc_dialogue(_fk, _fe, target_lang) or _is_forced_quest_runtime_fragment(_fk, _fe, json_file)
+        _needs_repair = False
+        if _has_value:
+            if _cur.strip() == "" or _cur.startswith("[") or _cur.startswith("[TODO]") or _cur == str(_fe):
+                _needs_repair = True
+            elif _requires_trailing_space_contract(_fk, _fe):
+                _en_ts = len(str(_fe)) - len(str(_fe).rstrip(" "))
+                _cur_ts = len(_cur) - len(_cur.rstrip(" "))
+                if _en_ts > _cur_ts:
+                    _needs_repair = True
+        elif not strict_mode:
+            _needs_repair = True
+        if _is_forced or _needs_repair:
+            fast_candidates.append((_fk, _fe))
+            if len(fast_candidates) >= max_candidates:
+                break
+    if fast_candidates:
+        iter_items = fast_candidates
+        print(
+            f"⚡ FAST-LANE: wybrano {len(fast_candidates)} kandydatów "
+            f"(limit={translate_limit}, strict={strict_mode}, max={max_candidates})"
+        )
+    else:
+        print("⚡ FAST-LANE: brak szybkich kandydatów — fallback do pełnego skanu")
+
 processed_keys = 0
 mid_batch_preempt = False
-for key, en_text in en_data.items():
+for key, en_text in iter_items:
     processed_keys += 1
     if command_file and (processed_keys % mid_batch_cmd_check_every == 0) and os.path.exists(command_file):
         mid_batch_preempt = True
@@ -14056,7 +14187,20 @@ for key, en_text in en_data.items():
             if current_value == en_text and _is_proper_noun_key(key, en_text):
                 skipped_not_placeholder += 1  # Nazwa własna — identyczna = OK
                 continue
+            # Stabilizuj już naprawione frazy wymuszone (short NPC + quest concat),
+            # aby kolejne cykle strict nie cofały ich do EN przy false-positive quality flags.
+            if _is_forced_short_npc_dialogue(key, en_text, target_lang):
+                if current_value and not current_value.startswith("[") and current_value.strip() != str(en_text).strip():
+                    skipped_not_placeholder += 1
+                    continue
+            if _is_forced_quest_runtime_fragment(key, en_text, json_file):
+                if current_value and not current_value.startswith("[") and current_value.strip() != str(en_text).strip():
+                    skipped_not_placeholder += 1
+                    continue
             if not (current_value.startswith("[") or current_value.startswith("[TODO]") or current_value == en_text):
+                if operator_fast_mode:
+                    skipped_not_placeholder += 1
+                    continue
                 ok_current, _ = validate_candidate(en_text, current_value)
                 current_issues = []
                 current_max_sev = "LOW"
@@ -14247,6 +14391,15 @@ for key, en_text in en_data.items():
                 placeholders += 1
             continue
         # Quality/shape/word_salad/wrong_script from TM — fall through to simple/GT
+
+    # book.otbm.* content → GT only (skip simple/word_translate to avoid partial word translations)
+    if key.startswith("book.otbm.") and not _is_proper_noun_key(key, en_text) and not _is_game_nontranslatable(key, en_text):
+        if use_google_translate:
+            gt_pending.append((key, en_text, h, suspicious_existing_current))
+            continue
+        # GT unavailable — skip, will be translated when GT is enabled
+        skipped_not_placeholder += 1
+        continue
 
     # Spróbuj prostego tłumaczenia
     simple = simple_translate(en_text, target_lang)
@@ -20976,6 +21129,7 @@ PYFORCEDMETRIC
             MODE_EXTRA2=""  # Ważne: reset na początku cyklu, aby dispatcher nie był pomijany
             FORCE_LANG_VALIDATION=""
             AUTO_COMMAND_FAST_MODE=false
+            AUTO_OPERATOR_FAST_LANE=false
             FORCED_CMD_RAW=""
             FORCED_CMD_FILE_MTIME=0
             FORCED_CMD_PENDING_AGE_S=0
@@ -21210,6 +21364,10 @@ BEGIN { done=0 }
                         MODE_EXTRA2="AUTO"  # znacznik żeby nie nadpisywać dispatchera
                         if [ "$AUTO_LIMIT" -gt 0 ] 2>/dev/null; then
                             AUTO_COMMAND_FAST_MODE=true
+                        fi
+                        if [ "$AUTO_LIMIT" -gt 0 ] 2>/dev/null && [ "$AUTO_LIMIT" -le "${FORCED_AUTO_FAST_LANE_MAX_LIMIT:-30}" ] 2>/dev/null; then
+                            AUTO_OPERATOR_FAST_LANE=true
+                            echo "   ⚡ OPERATOR FAST-LANE: ON (AUTO limit=$AUTO_LIMIT <= ${FORCED_AUTO_FAST_LANE_MAX_LIMIT:-30})"
                         fi
                         ;;
                     SWITCH:*)

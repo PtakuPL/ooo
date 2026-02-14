@@ -1,42 +1,47 @@
 [
   {
     "date": "2026-02-14",
-    "hours_covered": 7,
+    "hours_covered": 8,
     "threshold": 5,
     "is_final": false,
     "ts_first": "2026-02-14T08:00:00Z",
-    "ts_last": "2026-02-14T11:56:16Z",
-    "translated": 1440,
-    "guard_fail": 862,
-    "suspicious_high": 1144,
-    "identical_to_en": 383,
+    "ts_last": "2026-02-14T13:16:09Z",
+    "translated": 1817,
+    "guard_fail": 973,
+    "suspicious_high": 1276,
+    "identical_to_en": 487,
     "repair_start": 4800,
-    "repair_end": 1084776,
-    "cycles": 12,
+    "repair_end": 61175,
+    "cycles": 14,
     "coverage_start": 22.5,
-    "coverage_end": 10.78,
-    "guard_fail_pct": 37.45,
-    "throughput_per_h": 205.7,
+    "coverage_end": 9.8,
+    "guard_fail_pct": 34.87,
+    "throughput_per_h": 227.1,
     "per_lang": {
       "pl": {
-        "t": 903,
-        "gf": 448,
-        "cov": 72.97
+        "t": 1181,
+        "gf": 507,
+        "cov": 42.01
       },
       "es": {
         "t": 417,
         "gf": 414,
-        "cov": 77.96
+        "cov": 72.98
+      },
+      "cs": {
+        "t": 79,
+        "gf": 5,
+        "cov": 5.94
+      },
+      "lt": {
+        "t": 40,
+        "gf": 47,
+        "cov": 6.36
       },
       "el": {
         "t": 20,
         "gf": 0,
-        "cov": 5.67
-      },
-      "lt": {
-        "t": 20,
-        "gf": 0,
-        "cov": 6.23
+        "cov": 5.63
       }
     },
     "per_cat": {
@@ -45,8 +50,12 @@
         "gf": 28
       },
       "npc.json": {
-        "t": 347,
-        "gf": 534
+        "t": 367,
+        "gf": 581
+      },
+      "quests.json": {
+        "t": 188,
+        "gf": 39
       },
       "monsters.json": {
         "t": 147,
@@ -55,6 +64,14 @@
       "server.json": {
         "t": 98,
         "gf": 15
+      },
+      "cpp.json": {
+        "t": 95,
+        "gf": 33
+      },
+      "raids.json": {
+        "t": 80,
+        "gf": 0
       },
       "html.json": {
         "t": 75,
@@ -67,22 +84,11 @@
       "spells.json": {
         "t": 36,
         "gf": 0
-      },
-      "quests.json": {
-        "t": 29,
-        "gf": 3
-      },
-      "books.json": {
-        "t": 25,
-        "gf": 20
-      },
-      "otclient_modules.json": {
-        "t": 20,
-        "gf": 144
       }
     },
     "mode_distribution": {
-      "AUTO_TRANSLATE": 97
+      "AUTO_TRANSLATE": 117,
+      "MIGRATION": 2
     },
     "migration_completed": 2297,
     "migration_total": 2299

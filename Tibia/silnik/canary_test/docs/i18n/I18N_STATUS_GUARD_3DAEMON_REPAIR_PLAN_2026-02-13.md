@@ -836,3 +836,21 @@ Nowe TODO dla status+guard+statusd:
 - [ ] `SGD-CMD-FAST-1`: statusd doctor ma raportować `p95/p99 forced_command_roundtrip_s` per 24h.
 - [ ] `SGD-CMD-FAST-2`: alert CRIT gdy `sla_met=false` dla >=3 kolejnych komend `AUTO N<=30`.
 - [ ] `SGD-CMD-FAST-3`: dodać osobny kontrakt `mid_cycle_command_pickup` (czas od `received` do wejścia w `AUTO_TRANSLATE`).
+
+### 11.5 Aktualizacja wykonania (2026-02-14 13:12 UTC) — stabilizacja telemetry forced commands
+
+Zrobione:
+- ✅ Worker dopisuje `completed` metrykę forced command bliżej końca realnej pracy `AUTO_TRANSLATE`, zamiast odkładać zapis wyłącznie na sam koniec całego cyklu.
+- ✅ Dzięki temu zniknął przypadek „zostaje tylko `stage=received` mimo zakończonego tłumaczenia” przy restartach guardiana.
+- ✅ Potwierdzone runtime:
+  - `AUTO:lt:npc.json:5:ONCE` -> `completed` z `roundtrip_s=111`,
+  - `AUTO:el:npc.json:5:ONCE` -> `completed` z `roundtrip_s=104`,
+  - `AUTO:it:npc.json:5:ONCE` -> `completed` z `roundtrip_s=125`,
+  - `AUTO:cs:npc.json:5:ONCE` -> `completed` z `roundtrip_s=169`.
+
+Wniosek:
+- pipeline status/guardian jest teraz spójniejszy telemetrycznie (brak utraty `completed` eventów),
+- natomiast SLA czasowe dla `AUTO N<=30` nadal pozostaje niespełnione.
+
+Dopisane TODO:
+- [ ] `SGD-CMD-FAST-4`: doctor ma osobno raportować `pending_age_s` i `exec_time_s = roundtrip_s - pending_age_s`, aby rozdzielić problem kolejki od problemu wykonania.

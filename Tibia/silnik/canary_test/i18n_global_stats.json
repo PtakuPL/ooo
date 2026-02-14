@@ -1,21 +1,24 @@
 {
   "total_cycles": 1,
   "mode": "AUTO_TRANSLATE",
-  "category": "lt",
-  "last_update": "2026-02-14T13:30:33.349129",
+  "category": "cs",
+  "last_update": "2026-02-14T14:49:19.161886",
   "migration": {
-    "files_scanned": 2297,
-    "files_scanned_live": 2299,
+    "files_scanned": 15,
+    "files_scanned_live": 15,
     "files_scanned_history": 6443,
-    "files_scanned_history_minus_live": 4144,
-    "files_with_keys": 1897,
-    "files_without_keys": 400,
+    "files_scanned_history_minus_live": 6428,
+    "files_with_keys": 7,
+    "files_without_keys": 8,
     "keys_extracted": 53586,
     "keys_extracted_live": 53586,
-    "keys_extracted_worker_registry": 6248,
-    "keys_extracted_outside_worker_registry": 47338,
-    "current_category": "tr",
-    "batch_size": 0
+    "keys_extracted_worker_registry": 53593,
+    "keys_extracted_worker_registry_raw": 7,
+    "registry_reconcile_adjustment": 53586,
+    "keys_extracted_outside_worker_registry": 0,
+    "keys_extracted_outside_worker_registry_raw": 53579,
+    "current_category": "errors",
+    "batch_size": 110
   },
   "translation_sync": {
     "language": "pl",
@@ -23,132 +26,42 @@
     "keys_to_sync": 0
   },
   "auto_translate": {
-    "language": "lt",
+    "language": "cs",
     "json_file": "npc.json",
-    "keys_to_translate": 20,
-    "guard_fail": 47,
+    "keys_to_translate": 5,
+    "guard_fail": 0,
     "strict_missing_key": 0,
     "strict_blocker": "",
-    "recent_translated": 20,
+    "recent_translated": 5,
     "recent_examples": [
       {
-        "key": "npc.alyxo.say_12",
-        "en": "Sorry.",
-        "translated": "Atsipra\u0161au.",
+        "key": "npc.a_dead_bureaucrat2.voice_2",
+        "en": "Hail Pumin. Yes, hail.",
+        "translated": "Nazdar Pumin. Ano, kroupy.",
         "source": "simple"
       },
       {
-        "key": "npc.alyxo.say_15",
-        "en": "Sorry.",
-        "translated": "Atsipra\u0161au.",
+        "key": "npc.a_dead_bureaucrat3.voice_2",
+        "en": "Hail Pumin. Yes, hail.",
+        "translated": "Nazdar Pumin. Ano, kroupy.",
         "source": "simple"
       },
       {
-        "key": "npc.alyxo.say_18",
-        "en": "Sorry.",
-        "translated": "Atsipra\u0161au.",
+        "key": "npc.a_dead_bureaucrat4.voice_2",
+        "en": "Hail Pumin. Yes, hail.",
+        "translated": "Nazdar Pumin. Ano, kroupy.",
         "source": "simple"
       },
       {
-        "key": "npc.alyxo.say_21",
-        "en": "Sorry.",
-        "translated": "Atsipra\u0161au.",
+        "key": "npc.a_dragon_lord.greet_msg_1",
+        "en": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+        "translated": "Pssst! Dr\u017e to dole! <poskytne v\u00e1m podrobnou zpr\u00e1vu o aktivit\u011b monster>",
         "source": "simple"
       },
       {
-        "key": "npc.alyxo.say_24",
-        "en": "Sorry.",
-        "translated": "Atsipra\u0161au.",
-        "source": "simple"
-      },
-      {
-        "key": "npc.alyxo.say_6",
-        "en": "Sorry.",
-        "translated": "Atsipra\u0161au.",
-        "source": "simple"
-      },
-      {
-        "key": "npc.alyxo.say_9",
-        "en": "Sorry.",
-        "translated": "Atsipra\u0161au.",
-        "source": "simple"
-      },
-      {
-        "key": "npc.gnomus.say_11",
-        "en": "Done.",
-        "translated": "Done.",
-        "source": "tm"
-      },
-      {
-        "key": "npc.gnomus.say_13",
-        "en": "Done.",
-        "translated": "Done.",
-        "source": "tm"
-      },
-      {
-        "key": "npc.gnomus.say_15",
-        "en": "Done.",
-        "translated": "Done.",
-        "source": "tm"
-      },
-      {
-        "key": "npc.guide_davina.walkaway_msg_1",
-        "en": "Good bye.",
-        "translated": "Viso gero.",
-        "source": "simple"
-      },
-      {
-        "key": "npc.guide_edna.walkaway_msg_1",
-        "en": "Good bye.",
-        "translated": "Viso gero.",
-        "source": "simple"
-      },
-      {
-        "key": "npc.guide_elena.walkaway_msg_1",
-        "en": "Good bye.",
-        "translated": "Viso gero.",
-        "source": "simple"
-      },
-      {
-        "key": "npc.guide_kunibert.walkaway_msg_1",
-        "en": "Good bye.",
-        "translated": "Viso gero.",
-        "source": "simple"
-      },
-      {
-        "key": "npc.guide_luke.walkaway_msg_1",
-        "en": "Good bye.",
-        "translated": "Viso gero.",
-        "source": "simple"
-      },
-      {
-        "key": "npc.guide_rahlkora.walkaway_msg_1",
-        "en": "Good bye.",
-        "translated": "Viso gero.",
-        "source": "simple"
-      },
-      {
-        "key": "npc.guide_thelandil.walkaway_msg_1",
-        "en": "Good bye.",
-        "translated": "Viso gero.",
-        "source": "simple"
-      },
-      {
-        "key": "npc.guide_tiko.walkaway_msg_1",
-        "en": "Good bye.",
-        "translated": "Viso gero.",
-        "source": "simple"
-      },
-      {
-        "key": "npc.hanna.farewell_msg_1",
-        "en": "Good bye.",
-        "translated": "Viso gero.",
-        "source": "simple"
-      },
-      {
-        "key": "npc.hanna.walkaway_msg_1",
-        "en": "Good bye.",
-        "translated": "Viso gero.",
+        "key": "npc.a_dragon_lord.greet_msg_2",
+        "en": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+        "translated": "Pssst! Dr\u017e to dole! <poskytne v\u00e1m podrobnou zpr\u00e1vu o aktivit\u011b monster>",
         "source": "simple"
       }
     ]

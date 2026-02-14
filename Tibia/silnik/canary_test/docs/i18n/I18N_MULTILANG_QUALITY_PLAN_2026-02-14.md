@@ -1794,3 +1794,29 @@ Godzina 3:30  Guardian uruchamia Worker C (migration) — slot 30min
 | 2026-02-15 | 4c DONE: MODUŁ 10 w statusd — tygodniowy raport wielojęzyczny. Per-tier coverage, fastest/slowest growing, ETA, 52-entry history. CLI: `--weekly-multilang`. Artefakty: `weekly_multilang_report.json`, `weekly_multilang_history.json`, `i18n_weekly_multilang_report.md`. |
 | 2026-02-15 | Queue freshness SLA ✅: WARN >900s, CRIT >1800s w doctor (MODUŁ 2) + KPI (MODUŁ 3). Config: `QUEUE_FRESHNESS_WARN_S`, `QUEUE_FRESHNESS_CRIT_S`. |
 | 2026-02-15 | Guardian manual rate limiter ✅: max 3 manual starts/h. `check_manual_start_limit()` w guardian. Config: `GUARDIAN_MANUAL_START_MAX_PER_HOUR`, `GUARDIAN_MANUAL_START_WINDOW_SEC`. |
+
+## 0g. Update wykonania (2026-02-14 13:12 UTC) — short NPC + quest concat contract
+
+### Zrealizowane
+- [x] `MQ-NPC-SHORT-2` (P0): short-dialog phrase pack + hard reject EN-copy dla `npc_dialogue` (LT/CS/EL/IT).
+  - Runtime wynik po repair pass: EN-copy dla wymuszonej listy fraz = `0/164` w `lt`, `cs`, `el`, `it`.
+- [~] `MQ-QUEST-CONCAT-2` (P0): automatyczna naprawa trailing-space contract dla `quest_msgs`.
+  - DONE dla krytycznych fragmentów `it/quests.json`:
+    - `You acquired ` -> `Hai acquisito `,
+    - `You flipped the ` -> `Hai capovolto il `,
+    - `You found ` -> `Hai trovato `,
+    - `You slayed ` -> `Hai ucciso `.
+  - Pozostało rozszerzenie tej samej metody na pozostałe języki.
+
+### Nadal otwarte
+- [ ] `MQ-COVERAGE-1` (P0): podnieść coverage `items/npc` LT/CS/EL/IT do min. 15% non-placeholder na etapie testowym.
+- [ ] `MQ-FAST-2` (P1): zejść do `p95 roundtrip <=45s` dla `AUTO N<=30` (aktualnie nadal >100s).
+- [ ] `MQ-FAST-3` (P1, nowe): osobno raportować i redukować:
+  - `pending_age_s` (kolejka komendy),
+  - `exec_time_s = roundtrip_s - pending_age_s` (czas wykonania AUTO).
+
+### Pomiary runtime po wdrożeniu
+- `AUTO:lt:npc.json:5:ONCE` -> `pending_age_s=16`, `roundtrip_s=111`.
+- `AUTO:el:npc.json:5:ONCE` -> `pending_age_s=17`, `roundtrip_s=104`.
+- `AUTO:it:npc.json:5:ONCE` -> `pending_age_s=34`, `roundtrip_s=125`.
+- `AUTO:cs:npc.json:5:ONCE` -> `pending_age_s=59`, `roundtrip_s=169`.

@@ -60,6 +60,12 @@ DEFAULT_REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS=1000
 DEFAULT_REGISTRY_RECONCILE_MIN_OUTSIDE_PCT=2
 DEFAULT_REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS=1800
 DEFAULT_REGISTRY_RECONCILE_ALWAYS_SYNC_ANY_DRIFT=true
+DEFAULT_FORCED_COMMAND_FAST_WINDOW_HOURS=24
+DEFAULT_FORCED_COMMAND_FAST_SLA_TARGET_S=45
+DEFAULT_FORCED_COMMAND_FAST_PENDING_WARN_S=15
+DEFAULT_FORCED_COMMAND_FAST_EXEC_WARN_S=30
+DEFAULT_FORCED_COMMAND_FAST_CONSECUTIVE_CRIT=3
+DEFAULT_FORCED_COMMAND_FAST_MIN_SAMPLES=3
 DEFAULT_QUEUE_FRESHNESS_WARN_S=900
 DEFAULT_QUEUE_FRESHNESS_CRIT_S=1800
 
@@ -82,6 +88,12 @@ REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS="$DEFAULT_REGISTRY_RECONCILE_MIN_OUTSIDE_KEY
 REGISTRY_RECONCILE_MIN_OUTSIDE_PCT="$DEFAULT_REGISTRY_RECONCILE_MIN_OUTSIDE_PCT"
 REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS="$DEFAULT_REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS"
 REGISTRY_RECONCILE_ALWAYS_SYNC_ANY_DRIFT="$DEFAULT_REGISTRY_RECONCILE_ALWAYS_SYNC_ANY_DRIFT"
+FORCED_COMMAND_FAST_WINDOW_HOURS="$DEFAULT_FORCED_COMMAND_FAST_WINDOW_HOURS"
+FORCED_COMMAND_FAST_SLA_TARGET_S="$DEFAULT_FORCED_COMMAND_FAST_SLA_TARGET_S"
+FORCED_COMMAND_FAST_PENDING_WARN_S="$DEFAULT_FORCED_COMMAND_FAST_PENDING_WARN_S"
+FORCED_COMMAND_FAST_EXEC_WARN_S="$DEFAULT_FORCED_COMMAND_FAST_EXEC_WARN_S"
+FORCED_COMMAND_FAST_CONSECUTIVE_CRIT="$DEFAULT_FORCED_COMMAND_FAST_CONSECUTIVE_CRIT"
+FORCED_COMMAND_FAST_MIN_SAMPLES="$DEFAULT_FORCED_COMMAND_FAST_MIN_SAMPLES"
 QUEUE_FRESHNESS_WARN_S="$DEFAULT_QUEUE_FRESHNESS_WARN_S"
 QUEUE_FRESHNESS_CRIT_S="$DEFAULT_QUEUE_FRESHNESS_CRIT_S"
 DAEMON_INTERVAL_SECONDS=60
@@ -141,6 +153,14 @@ ensure_statusd_thresholds_file() {
     "max_cycles": $DEFAULT_PRIORITY_GATE_STUCK_MAX_CYCLES,
     "min_quality_drop_pct": $DEFAULT_PRIORITY_GATE_STUCK_MIN_QUALITY_DROP_PCT
   },
+  "forced_command_fast": {
+    "window_hours": $DEFAULT_FORCED_COMMAND_FAST_WINDOW_HOURS,
+    "sla_target_s": $DEFAULT_FORCED_COMMAND_FAST_SLA_TARGET_S,
+    "pending_warn_s": $DEFAULT_FORCED_COMMAND_FAST_PENDING_WARN_S,
+    "exec_warn_s": $DEFAULT_FORCED_COMMAND_FAST_EXEC_WARN_S,
+    "consecutive_crit": $DEFAULT_FORCED_COMMAND_FAST_CONSECUTIVE_CRIT,
+    "min_samples": $DEFAULT_FORCED_COMMAND_FAST_MIN_SAMPLES
+  },
   "registry_reconcile": {
     "min_outside_keys": $DEFAULT_REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS,
     "min_outside_pct": $DEFAULT_REGISTRY_RECONCILE_MIN_OUTSIDE_PCT,
@@ -173,6 +193,7 @@ sh = cfg.get("suspicious_high", {}) if isinstance(cfg.get("suspicious_high", {})
 md = cfg.get("metrics_drift", {}) if isinstance(cfg.get("metrics_drift", {}), dict) else {}
 pg = cfg.get("priority_gate_stuck", {}) if isinstance(cfg.get("priority_gate_stuck", {}), dict) else {}
 rr = cfg.get("registry_reconcile", {}) if isinstance(cfg.get("registry_reconcile", {}), dict) else {}
+fc = cfg.get("forced_command_fast", {}) if isinstance(cfg.get("forced_command_fast", {}), dict) else {}
 
 out("REPAIR_QUEUE_STAGNATION_HOURS", rq.get("window_hours"))
 out("REPAIR_QUEUE_STAGNATION_MIN_SAMPLES", rq.get("min_samples"))
@@ -197,6 +218,13 @@ out("REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS", rr.get("min_outside_keys"))
 out("REGISTRY_RECONCILE_MIN_OUTSIDE_PCT", rr.get("min_outside_pct"))
 out("REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS", rr.get("min_interval_seconds"))
 out("REGISTRY_RECONCILE_ALWAYS_SYNC_ANY_DRIFT", str(rr.get("always_sync_any_drift")).lower() if "always_sync_any_drift" in rr else None)
+
+out("FORCED_COMMAND_FAST_WINDOW_HOURS", fc.get("window_hours"))
+out("FORCED_COMMAND_FAST_SLA_TARGET_S", fc.get("sla_target_s"))
+out("FORCED_COMMAND_FAST_PENDING_WARN_S", fc.get("pending_warn_s"))
+out("FORCED_COMMAND_FAST_EXEC_WARN_S", fc.get("exec_warn_s"))
+out("FORCED_COMMAND_FAST_CONSECUTIVE_CRIT", fc.get("consecutive_crit"))
+out("FORCED_COMMAND_FAST_MIN_SAMPLES", fc.get("min_samples"))
 PY
 )
 
@@ -222,6 +250,12 @@ PY
             REGISTRY_RECONCILE_MIN_OUTSIDE_PCT) REGISTRY_RECONCILE_MIN_OUTSIDE_PCT="$value" ;;
             REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS) REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS="$value" ;;
             REGISTRY_RECONCILE_ALWAYS_SYNC_ANY_DRIFT) REGISTRY_RECONCILE_ALWAYS_SYNC_ANY_DRIFT="$value" ;;
+            FORCED_COMMAND_FAST_WINDOW_HOURS) FORCED_COMMAND_FAST_WINDOW_HOURS="$value" ;;
+            FORCED_COMMAND_FAST_SLA_TARGET_S) FORCED_COMMAND_FAST_SLA_TARGET_S="$value" ;;
+            FORCED_COMMAND_FAST_PENDING_WARN_S) FORCED_COMMAND_FAST_PENDING_WARN_S="$value" ;;
+            FORCED_COMMAND_FAST_EXEC_WARN_S) FORCED_COMMAND_FAST_EXEC_WARN_S="$value" ;;
+            FORCED_COMMAND_FAST_CONSECUTIVE_CRIT) FORCED_COMMAND_FAST_CONSECUTIVE_CRIT="$value" ;;
+            FORCED_COMMAND_FAST_MIN_SAMPLES) FORCED_COMMAND_FAST_MIN_SAMPLES="$value" ;;
         esac
     done <<< "$parsed"
 }
@@ -247,6 +281,12 @@ apply_statusd_env_overrides() {
     REGISTRY_RECONCILE_MIN_OUTSIDE_PCT="${STATUSD_REGISTRY_RECONCILE_MIN_OUTSIDE_PCT:-$REGISTRY_RECONCILE_MIN_OUTSIDE_PCT}"
     REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS="${STATUSD_REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS:-$REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS}"
     REGISTRY_RECONCILE_ALWAYS_SYNC_ANY_DRIFT="${STATUSD_REGISTRY_RECONCILE_ALWAYS_SYNC_ANY_DRIFT:-$REGISTRY_RECONCILE_ALWAYS_SYNC_ANY_DRIFT}"
+    FORCED_COMMAND_FAST_WINDOW_HOURS="${STATUSD_FORCED_COMMAND_FAST_WINDOW_HOURS:-$FORCED_COMMAND_FAST_WINDOW_HOURS}"
+    FORCED_COMMAND_FAST_SLA_TARGET_S="${STATUSD_FORCED_COMMAND_FAST_SLA_TARGET_S:-$FORCED_COMMAND_FAST_SLA_TARGET_S}"
+    FORCED_COMMAND_FAST_PENDING_WARN_S="${STATUSD_FORCED_COMMAND_FAST_PENDING_WARN_S:-$FORCED_COMMAND_FAST_PENDING_WARN_S}"
+    FORCED_COMMAND_FAST_EXEC_WARN_S="${STATUSD_FORCED_COMMAND_FAST_EXEC_WARN_S:-$FORCED_COMMAND_FAST_EXEC_WARN_S}"
+    FORCED_COMMAND_FAST_CONSECUTIVE_CRIT="${STATUSD_FORCED_COMMAND_FAST_CONSECUTIVE_CRIT:-$FORCED_COMMAND_FAST_CONSECUTIVE_CRIT}"
+    FORCED_COMMAND_FAST_MIN_SAMPLES="${STATUSD_FORCED_COMMAND_FAST_MIN_SAMPLES:-$FORCED_COMMAND_FAST_MIN_SAMPLES}"
 }
 
 ensure_statusd_thresholds_file
@@ -258,7 +298,7 @@ apply_statusd_env_overrides
 # ═══════════════════════════════════════════════════════════════════════════════
 
 aggregate_telemetry() {
-    python3 - "$WORK_DIR" "$STATUS_DIR" "$STATUSD_REPORT_FILE" "$REPAIR_QUEUE_STAGNATION_HOURS" "$REPAIR_QUEUE_STAGNATION_MIN_SAMPLES" "$REPAIR_QUEUE_STAGNATION_MIN_DROP" "$SUSPICIOUS_HIGH_WINDOW_HOURS" "$SUSPICIOUS_HIGH_WARN_COUNT" "$SUSPICIOUS_HIGH_CRIT_COUNT" "$METRICS_DRIFT_WARN_KEYS" "$METRICS_DRIFT_CRIT_KEYS" "$METRICS_DRIFT_WARN_PCT" "$METRICS_DRIFT_CRIT_PCT" "$SUSPICIOUS_HIGH_RATE_WARN_PCT" "$SUSPICIOUS_HIGH_RATE_CRIT_PCT" "$STATUSD_THRESHOLDS_FILE" "$STATUSD_USE_ENV_OVERRIDES" "$PRIORITY_GATE_STUCK_MAX_ACTIVE_MINUTES" "$PRIORITY_GATE_STUCK_MAX_CYCLES" "$PRIORITY_GATE_STUCK_MIN_QUALITY_DROP_PCT" "$REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS" "$REGISTRY_RECONCILE_MIN_OUTSIDE_PCT" "$REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS" "$REGISTRY_RECONCILE_ALWAYS_SYNC_ANY_DRIFT" <<'PYAGG'
+    python3 - "$WORK_DIR" "$STATUS_DIR" "$STATUSD_REPORT_FILE" "$REPAIR_QUEUE_STAGNATION_HOURS" "$REPAIR_QUEUE_STAGNATION_MIN_SAMPLES" "$REPAIR_QUEUE_STAGNATION_MIN_DROP" "$SUSPICIOUS_HIGH_WINDOW_HOURS" "$SUSPICIOUS_HIGH_WARN_COUNT" "$SUSPICIOUS_HIGH_CRIT_COUNT" "$METRICS_DRIFT_WARN_KEYS" "$METRICS_DRIFT_CRIT_KEYS" "$METRICS_DRIFT_WARN_PCT" "$METRICS_DRIFT_CRIT_PCT" "$SUSPICIOUS_HIGH_RATE_WARN_PCT" "$SUSPICIOUS_HIGH_RATE_CRIT_PCT" "$STATUSD_THRESHOLDS_FILE" "$STATUSD_USE_ENV_OVERRIDES" "$PRIORITY_GATE_STUCK_MAX_ACTIVE_MINUTES" "$PRIORITY_GATE_STUCK_MAX_CYCLES" "$PRIORITY_GATE_STUCK_MIN_QUALITY_DROP_PCT" "$REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS" "$REGISTRY_RECONCILE_MIN_OUTSIDE_PCT" "$REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS" "$REGISTRY_RECONCILE_ALWAYS_SYNC_ANY_DRIFT" "$FORCED_COMMAND_FAST_WINDOW_HOURS" "$FORCED_COMMAND_FAST_SLA_TARGET_S" "$FORCED_COMMAND_FAST_PENDING_WARN_S" "$FORCED_COMMAND_FAST_EXEC_WARN_S" "$FORCED_COMMAND_FAST_CONSECUTIVE_CRIT" "$FORCED_COMMAND_FAST_MIN_SAMPLES" <<'PYAGG'
 import json, sys, os, time
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
@@ -288,6 +328,18 @@ registry_reconcile_min_outside_keys = int(float(sys.argv[21] if len(sys.argv) > 
 registry_reconcile_min_outside_pct = float(sys.argv[22] if len(sys.argv) > 22 and sys.argv[22] else "2")
 registry_reconcile_min_interval_s = int(float(sys.argv[23] if len(sys.argv) > 23 and sys.argv[23] else "1800"))
 registry_reconcile_always_sync_any_drift = bool(str(sys.argv[24]).strip().lower() in ("1", "true", "yes", "on")) if len(sys.argv) > 24 else True
+forced_cmd_fast_window_h = float(sys.argv[25] if len(sys.argv) > 25 and sys.argv[25] else "24")
+forced_cmd_fast_sla_target_s = float(sys.argv[26] if len(sys.argv) > 26 and sys.argv[26] else "45")
+forced_cmd_fast_pending_warn_s = float(sys.argv[27] if len(sys.argv) > 27 and sys.argv[27] else "15")
+forced_cmd_fast_exec_warn_s = float(sys.argv[28] if len(sys.argv) > 28 and sys.argv[28] else "30")
+forced_cmd_fast_consecutive_crit = int(float(sys.argv[29] if len(sys.argv) > 29 and sys.argv[29] else "3"))
+forced_cmd_fast_min_samples = int(float(sys.argv[30] if len(sys.argv) > 30 and sys.argv[30] else "3"))
+forced_cmd_fast_window_h = float(sys.argv[25] if len(sys.argv) > 25 and sys.argv[25] else "24")
+forced_cmd_fast_sla_target_s = float(sys.argv[26] if len(sys.argv) > 26 and sys.argv[26] else "45")
+forced_cmd_fast_pending_warn_s = float(sys.argv[27] if len(sys.argv) > 27 and sys.argv[27] else "15")
+forced_cmd_fast_exec_warn_s = float(sys.argv[28] if len(sys.argv) > 28 and sys.argv[28] else "30")
+forced_cmd_fast_consecutive_crit = int(float(sys.argv[29] if len(sys.argv) > 29 and sys.argv[29] else "3"))
+forced_cmd_fast_min_samples = int(float(sys.argv[30] if len(sys.argv) > 30 and sys.argv[30] else "3"))
 
 now = datetime.now(timezone.utc)
 report = {
@@ -1157,6 +1209,14 @@ report["thresholds_snapshot"] = {
         "max_cycles": int(priority_gate_max_cycles),
         "min_quality_drop_pct": float(priority_gate_min_quality_drop_pct),
     },
+    "forced_command_fast": {
+        "window_hours": float(max(forced_cmd_fast_window_h, 0.1)),
+        "sla_target_s": float(max(forced_cmd_fast_sla_target_s, 1.0)),
+        "pending_warn_s": float(max(forced_cmd_fast_pending_warn_s, 1.0)),
+        "exec_warn_s": float(max(forced_cmd_fast_exec_warn_s, 1.0)),
+        "consecutive_crit": int(max(forced_cmd_fast_consecutive_crit, 1)),
+        "min_samples": int(max(forced_cmd_fast_min_samples, 1)),
+    },
     "registry_reconcile": {
         "min_outside_keys": int(registry_reconcile_min_outside_keys),
         "min_outside_pct": float(registry_reconcile_min_outside_pct),
@@ -1192,7 +1252,7 @@ PYAGG
 
 run_status_doctor() {
     QUEUE_FRESHNESS_WARN_S="$QUEUE_FRESHNESS_WARN_S" QUEUE_FRESHNESS_CRIT_S="$QUEUE_FRESHNESS_CRIT_S" \
-    python3 - "$WORK_DIR" "$STATUS_DIR" "$STATUSD_DOCTOR_FILE" "$REPAIR_QUEUE_STAGNATION_HOURS" "$REPAIR_QUEUE_STAGNATION_MIN_SAMPLES" "$REPAIR_QUEUE_STAGNATION_MIN_DROP" "$SUSPICIOUS_HIGH_WINDOW_HOURS" "$SUSPICIOUS_HIGH_WARN_COUNT" "$SUSPICIOUS_HIGH_CRIT_COUNT" "$METRICS_DRIFT_WARN_KEYS" "$METRICS_DRIFT_CRIT_KEYS" "$METRICS_DRIFT_WARN_PCT" "$METRICS_DRIFT_CRIT_PCT" "$SUSPICIOUS_HIGH_RATE_WARN_PCT" "$SUSPICIOUS_HIGH_RATE_CRIT_PCT" "$STATUSD_THRESHOLDS_FILE" "$STATUSD_USE_ENV_OVERRIDES" "$PRIORITY_GATE_STUCK_MAX_ACTIVE_MINUTES" "$PRIORITY_GATE_STUCK_MAX_CYCLES" "$PRIORITY_GATE_STUCK_MIN_QUALITY_DROP_PCT" "$REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS" "$REGISTRY_RECONCILE_MIN_OUTSIDE_PCT" "$REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS" "$REGISTRY_RECONCILE_ALWAYS_SYNC_ANY_DRIFT" <<'PYDOCTOR'
+    python3 - "$WORK_DIR" "$STATUS_DIR" "$STATUSD_DOCTOR_FILE" "$REPAIR_QUEUE_STAGNATION_HOURS" "$REPAIR_QUEUE_STAGNATION_MIN_SAMPLES" "$REPAIR_QUEUE_STAGNATION_MIN_DROP" "$SUSPICIOUS_HIGH_WINDOW_HOURS" "$SUSPICIOUS_HIGH_WARN_COUNT" "$SUSPICIOUS_HIGH_CRIT_COUNT" "$METRICS_DRIFT_WARN_KEYS" "$METRICS_DRIFT_CRIT_KEYS" "$METRICS_DRIFT_WARN_PCT" "$METRICS_DRIFT_CRIT_PCT" "$SUSPICIOUS_HIGH_RATE_WARN_PCT" "$SUSPICIOUS_HIGH_RATE_CRIT_PCT" "$STATUSD_THRESHOLDS_FILE" "$STATUSD_USE_ENV_OVERRIDES" "$PRIORITY_GATE_STUCK_MAX_ACTIVE_MINUTES" "$PRIORITY_GATE_STUCK_MAX_CYCLES" "$PRIORITY_GATE_STUCK_MIN_QUALITY_DROP_PCT" "$REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS" "$REGISTRY_RECONCILE_MIN_OUTSIDE_PCT" "$REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS" "$REGISTRY_RECONCILE_ALWAYS_SYNC_ANY_DRIFT" "$FORCED_COMMAND_FAST_WINDOW_HOURS" "$FORCED_COMMAND_FAST_SLA_TARGET_S" "$FORCED_COMMAND_FAST_PENDING_WARN_S" "$FORCED_COMMAND_FAST_EXEC_WARN_S" "$FORCED_COMMAND_FAST_CONSECUTIVE_CRIT" "$FORCED_COMMAND_FAST_MIN_SAMPLES" <<'PYDOCTOR'
 import json, sys, os, subprocess
 from datetime import datetime, timezone, timedelta
 from collections import Counter
@@ -1221,6 +1281,12 @@ registry_reconcile_min_outside_keys = int(float(sys.argv[21] if len(sys.argv) > 
 registry_reconcile_min_outside_pct = float(sys.argv[22] if len(sys.argv) > 22 and sys.argv[22] else "2")
 registry_reconcile_min_interval_s = int(float(sys.argv[23] if len(sys.argv) > 23 and sys.argv[23] else "1800"))
 registry_reconcile_always_sync_any_drift = bool(str(sys.argv[24]).strip().lower() in ("1", "true", "yes", "on")) if len(sys.argv) > 24 else True
+forced_cmd_fast_window_h = float(sys.argv[25] if len(sys.argv) > 25 and sys.argv[25] else "24")
+forced_cmd_fast_sla_target_s = float(sys.argv[26] if len(sys.argv) > 26 and sys.argv[26] else "45")
+forced_cmd_fast_pending_warn_s = float(sys.argv[27] if len(sys.argv) > 27 and sys.argv[27] else "15")
+forced_cmd_fast_exec_warn_s = float(sys.argv[28] if len(sys.argv) > 28 and sys.argv[28] else "30")
+forced_cmd_fast_consecutive_crit = int(float(sys.argv[29] if len(sys.argv) > 29 and sys.argv[29] else "3"))
+forced_cmd_fast_min_samples = int(float(sys.argv[30] if len(sys.argv) > 30 and sys.argv[30] else "3"))
 
 now = datetime.now(timezone.utc)
 issues = []
@@ -1895,6 +1961,152 @@ def _read_priority_gate_watch():
     })
     return data
 
+def _read_forced_command_fast_health():
+    out = {
+        "available": False,
+        "status": "missing",
+        "severity": "info",
+        "window_hours": float(max(forced_cmd_fast_window_h, 0.1)),
+        "sla_target_s": float(max(forced_cmd_fast_sla_target_s, 1.0)),
+        "pending_warn_s": float(max(forced_cmd_fast_pending_warn_s, 1.0)),
+        "exec_warn_s": float(max(forced_cmd_fast_exec_warn_s, 1.0)),
+        "consecutive_crit": int(max(forced_cmd_fast_consecutive_crit, 1)),
+        "min_samples": int(max(forced_cmd_fast_min_samples, 1)),
+        "samples": 0,
+        "sla_met_count": 0,
+        "sla_miss_count": 0,
+        "sla_miss_rate_pct": 0.0,
+        "consecutive_sla_miss": 0,
+        "p95_roundtrip_s": 0.0,
+        "p95_pending_age_s": 0.0,
+        "p95_exec_time_s": 0.0,
+        "latest_timestamp": "",
+        "latest_command": "",
+        "latest_roundtrip_s": 0.0,
+        "latest_pending_age_s": 0.0,
+        "latest_exec_time_s": 0.0,
+    }
+    metrics_path = os.path.join(status_dir, "forced_command_metrics.jsonl")
+    if not os.path.exists(metrics_path):
+        return out
+    out["available"] = True
+
+    def _parse_auto_limit(raw_cmd):
+        cmd = str(raw_cmd or "").strip()
+        if not cmd:
+            return 0
+        cmd = cmd.replace(":ONCE", "")
+        if not cmd.startswith("AUTO:"):
+            return 0
+        parts = cmd.split(":")
+        if len(parts) < 4:
+            return 0
+        try:
+            lim = int(parts[3])
+            return lim if lim > 0 else 0
+        except Exception:
+            return 0
+
+    def _pct(values, q):
+        arr = sorted(float(v) for v in values)
+        if not arr:
+            return 0.0
+        if len(arr) == 1:
+            return arr[0]
+        qv = max(0.0, min(float(q), 1.0))
+        pos = qv * (len(arr) - 1)
+        lo = int(pos)
+        hi = min(lo + 1, len(arr) - 1)
+        frac = pos - lo
+        return arr[lo] * (1.0 - frac) + arr[hi] * frac
+
+    window_start = now - timedelta(hours=out["window_hours"])
+    rows = []
+    with open(metrics_path, encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                row = json.loads(line)
+            except Exception:
+                continue
+            if str(row.get("stage", "")).lower() != "completed":
+                continue
+            cmd = str(row.get("command", "") or "")
+            limit = _parse_auto_limit(cmd)
+            if limit <= 0 or limit > 30:
+                continue
+            ts = _parse_ts(row.get("timestamp"))
+            if ts is None or ts < window_start:
+                continue
+            pending = max(0.0, float(row.get("pending_age_s", row.get("forced_command_pending_age_s", 0)) or 0))
+            roundtrip = max(0.0, float(row.get("roundtrip_s", row.get("forced_command_roundtrip_s", 0)) or 0))
+            exec_time = max(0.0, roundtrip - pending)
+            sla_met = bool(row.get("sla_met", roundtrip <= out["sla_target_s"]))
+            rows.append({
+                "timestamp": ts,
+                "command": cmd,
+                "pending": pending,
+                "roundtrip": roundtrip,
+                "exec": exec_time,
+                "sla_met": sla_met,
+            })
+
+    if not rows:
+        out["status"] = "no_completed_samples"
+        return out
+
+    rows.sort(key=lambda x: x["timestamp"])
+    samples = len(rows)
+    sla_miss_count = sum(1 for r in rows if not r["sla_met"])
+    sla_met_count = samples - sla_miss_count
+    p95_roundtrip = _pct([r["roundtrip"] for r in rows], 0.95)
+    p95_pending = _pct([r["pending"] for r in rows], 0.95)
+    p95_exec = _pct([r["exec"] for r in rows], 0.95)
+    consecutive_miss = 0
+    for r in reversed(rows):
+        if r["sla_met"]:
+            break
+        consecutive_miss += 1
+
+    latest = rows[-1]
+    miss_rate_pct = round((sla_miss_count / float(max(samples, 1))) * 100.0, 3)
+
+    out.update({
+        "samples": int(samples),
+        "sla_met_count": int(sla_met_count),
+        "sla_miss_count": int(sla_miss_count),
+        "sla_miss_rate_pct": float(miss_rate_pct),
+        "consecutive_sla_miss": int(consecutive_miss),
+        "p95_roundtrip_s": round(float(p95_roundtrip), 3),
+        "p95_pending_age_s": round(float(p95_pending), 3),
+        "p95_exec_time_s": round(float(p95_exec), 3),
+        "latest_timestamp": latest["timestamp"].isoformat().replace("+00:00", "Z"),
+        "latest_command": str(latest["command"]),
+        "latest_roundtrip_s": round(float(latest["roundtrip"]), 3),
+        "latest_pending_age_s": round(float(latest["pending"]), 3),
+        "latest_exec_time_s": round(float(latest["exec"]), 3),
+    })
+
+    if samples < out["min_samples"]:
+        out["severity"] = "info"
+        out["status"] = "insufficient_samples"
+    elif consecutive_miss >= out["consecutive_crit"]:
+        out["severity"] = "critical"
+        out["status"] = "consecutive_sla_miss"
+    elif (
+        p95_roundtrip > out["sla_target_s"]
+        or p95_pending > out["pending_warn_s"]
+        or p95_exec > out["exec_warn_s"]
+    ):
+        out["severity"] = "warning"
+        out["status"] = "sla_elevated"
+    else:
+        out["severity"] = "ok"
+        out["status"] = "stable"
+    return out
+
 # ── 1. Freshness: heartbeat (dynamiczny kontrakt pod długie cykle) ─────
 try:
     ws = {}
@@ -2256,6 +2468,34 @@ try:
 except Exception as e:
     warnings.append(f"PRIORITY_GATE_WATCH_CHECK_ERROR: {e}")
 
+# ── 11b. Forced command fast-lane SLA (AUTO N<=30) ─────────────────────
+forced_command_fast_info = {}
+try:
+    forced_command_fast_info = _read_forced_command_fast_health()
+    if not forced_command_fast_info.get("available", False):
+        warnings.append("FORCED_CMD_FAST_UNAVAILABLE: brak forced_command_metrics.jsonl")
+    else:
+        desc = (
+            f"samples={forced_command_fast_info.get('samples', 0)} "
+            f"sla_target={forced_command_fast_info.get('sla_target_s', 45):.0f}s "
+            f"p95_roundtrip={forced_command_fast_info.get('p95_roundtrip_s', 0):.1f}s "
+            f"p95_pending={forced_command_fast_info.get('p95_pending_age_s', 0):.1f}s "
+            f"p95_exec={forced_command_fast_info.get('p95_exec_time_s', 0):.1f}s "
+            f"miss={forced_command_fast_info.get('sla_miss_count', 0)}/{forced_command_fast_info.get('samples', 0)} "
+            f"consecutive_miss={forced_command_fast_info.get('consecutive_sla_miss', 0)}"
+        )
+        sev = str(forced_command_fast_info.get("severity", "info") or "info").lower()
+        if sev == "critical":
+            issues.append(f"FORCED_CMD_SLA_CRITICAL: {desc} status={forced_command_fast_info.get('status', 'unknown')}")
+        elif sev == "warning":
+            warnings.append(f"FORCED_CMD_SLA_WARNING: {desc} status={forced_command_fast_info.get('status', 'unknown')}")
+        elif forced_command_fast_info.get("status") == "insufficient_samples":
+            ok_checks.append(f"forced_cmd_sla_sampling ({desc})")
+        else:
+            ok_checks.append(f"forced_cmd_sla_ok ({desc})")
+except Exception as e:
+    warnings.append(f"FORCED_CMD_FAST_CHECK_ERROR: {e}")
+
 # ── 12. Repair tuning samples check ────────────────────────────────────
 try:
     rq_available = False
@@ -2388,6 +2628,7 @@ doctor_report = {
     "ok": ok_checks,
     "metrics_drift": metrics_drift_info if isinstance(metrics_drift_info, dict) else {},
     "priority_gate_watch": priority_gate_watch_info if isinstance(priority_gate_watch_info, dict) else {},
+    "forced_command_fast": forced_command_fast_info if isinstance(forced_command_fast_info, dict) else {},
     "worker_process_watch": worker_process_watch_info if isinstance(worker_process_watch_info, dict) else {},
     "translation_contract": translation_contract_info if isinstance(translation_contract_info, dict) else {},
     "thresholds_snapshot": {
@@ -2416,6 +2657,14 @@ doctor_report = {
             "max_active_minutes": float(priority_gate_max_active_min),
             "max_cycles": int(priority_gate_max_cycles),
             "min_quality_drop_pct": float(priority_gate_min_quality_drop_pct),
+        },
+        "forced_command_fast": {
+            "window_hours": float(max(forced_cmd_fast_window_h, 0.1)),
+            "sla_target_s": float(max(forced_cmd_fast_sla_target_s, 1.0)),
+            "pending_warn_s": float(max(forced_cmd_fast_pending_warn_s, 1.0)),
+            "exec_warn_s": float(max(forced_cmd_fast_exec_warn_s, 1.0)),
+            "consecutive_crit": int(max(forced_cmd_fast_consecutive_crit, 1)),
+            "min_samples": int(max(forced_cmd_fast_min_samples, 1)),
         },
         "registry_reconcile": {
             "min_outside_keys": int(registry_reconcile_min_outside_keys),
@@ -3242,6 +3491,22 @@ elif drift_warnings:
         f"metric drift LIVE vs registry: {drift_warnings[0]}",
     ))
 
+# ── Signal: forced command SLA / pending vs exec ────────────────────────
+forced_cmd_issues = [i for i in doctor_issues if "FORCED_CMD_SLA" in i]
+forced_cmd_warnings = [w for w in doctor_warnings if "FORCED_CMD_SLA" in w]
+if forced_cmd_issues:
+    signals.append((
+        "CRITICAL",
+        "forced_command_sla_critical",
+        forced_cmd_issues[0],
+    ))
+elif forced_cmd_warnings:
+    signals.append((
+        "WARNING",
+        "forced_command_sla_warning",
+        forced_cmd_warnings[0],
+    ))
+
 # ── Signal: repair tuning no samples ──────────────────────────────────
 tuning_warnings = [w for w in doctor_warnings if "REPAIR_TUNING_NO_SAMPLES" in w]
 if tuning_warnings:
@@ -3261,9 +3526,11 @@ reason_rank = {
     "doctor_critical": 7,
     "metrics_drift_high": 6,
     "priority_gate_stuck": 6,
+    "forced_command_sla_critical": 6,
     "suspicious_high_spike": 5,
     "repair_queue_stagnation": 4,
     "metrics_drift_elevated": 3,
+    "forced_command_sla_warning": 3,
     "suspicious_high_elevated": 3,
     "repair_tuning_no_samples": 2,
     "no_progress": 1,
@@ -3411,7 +3678,7 @@ PYALERT
 # ═══════════════════════════════════════════════════════════════════════════════
 
 generate_daily_report() {
-    python3 - "$STATUS_DIR" "$STATUSD_DAILY_REPORT_JSON" "$STATUSD_DAILY_REPORT_MD" "$REPAIR_QUEUE_STAGNATION_HOURS" "$REPAIR_QUEUE_STAGNATION_MIN_SAMPLES" "$REPAIR_QUEUE_STAGNATION_MIN_DROP" "$METRICS_DRIFT_WARN_KEYS" "$METRICS_DRIFT_CRIT_KEYS" "$METRICS_DRIFT_WARN_PCT" "$METRICS_DRIFT_CRIT_PCT" "$STATUSD_THRESHOLDS_FILE" "$STATUSD_USE_ENV_OVERRIDES" "$PRIORITY_GATE_STUCK_MAX_ACTIVE_MINUTES" "$PRIORITY_GATE_STUCK_MAX_CYCLES" "$PRIORITY_GATE_STUCK_MIN_QUALITY_DROP_PCT" "$REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS" "$REGISTRY_RECONCILE_MIN_OUTSIDE_PCT" "$REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS" "$REGISTRY_RECONCILE_ALWAYS_SYNC_ANY_DRIFT" <<'PYDAILY'
+    python3 - "$STATUS_DIR" "$STATUSD_DAILY_REPORT_JSON" "$STATUSD_DAILY_REPORT_MD" "$REPAIR_QUEUE_STAGNATION_HOURS" "$REPAIR_QUEUE_STAGNATION_MIN_SAMPLES" "$REPAIR_QUEUE_STAGNATION_MIN_DROP" "$METRICS_DRIFT_WARN_KEYS" "$METRICS_DRIFT_CRIT_KEYS" "$METRICS_DRIFT_WARN_PCT" "$METRICS_DRIFT_CRIT_PCT" "$STATUSD_THRESHOLDS_FILE" "$STATUSD_USE_ENV_OVERRIDES" "$PRIORITY_GATE_STUCK_MAX_ACTIVE_MINUTES" "$PRIORITY_GATE_STUCK_MAX_CYCLES" "$PRIORITY_GATE_STUCK_MIN_QUALITY_DROP_PCT" "$REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS" "$REGISTRY_RECONCILE_MIN_OUTSIDE_PCT" "$REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS" "$REGISTRY_RECONCILE_ALWAYS_SYNC_ANY_DRIFT" "$FORCED_COMMAND_FAST_WINDOW_HOURS" "$FORCED_COMMAND_FAST_SLA_TARGET_S" "$FORCED_COMMAND_FAST_PENDING_WARN_S" "$FORCED_COMMAND_FAST_EXEC_WARN_S" "$FORCED_COMMAND_FAST_CONSECUTIVE_CRIT" "$FORCED_COMMAND_FAST_MIN_SAMPLES" <<'PYDAILY'
 import json, sys, os, re
 from collections import defaultdict, Counter
 from datetime import datetime, timezone, timedelta
@@ -3435,6 +3702,12 @@ registry_reconcile_min_outside_keys = int(float(sys.argv[16] if len(sys.argv) > 
 registry_reconcile_min_outside_pct = float(sys.argv[17] if len(sys.argv) > 17 and sys.argv[17] else "2")
 registry_reconcile_min_interval_s = int(float(sys.argv[18] if len(sys.argv) > 18 and sys.argv[18] else "1800"))
 registry_reconcile_always_sync_any_drift = bool(str(sys.argv[19]).strip().lower() in ("1", "true", "yes", "on")) if len(sys.argv) > 19 else True
+forced_cmd_fast_window_h = float(sys.argv[20] if len(sys.argv) > 20 and sys.argv[20] else "24")
+forced_cmd_fast_sla_target_s = float(sys.argv[21] if len(sys.argv) > 21 and sys.argv[21] else "45")
+forced_cmd_fast_pending_warn_s = float(sys.argv[22] if len(sys.argv) > 22 and sys.argv[22] else "15")
+forced_cmd_fast_exec_warn_s = float(sys.argv[23] if len(sys.argv) > 23 and sys.argv[23] else "30")
+forced_cmd_fast_consecutive_crit = int(float(sys.argv[24] if len(sys.argv) > 24 and sys.argv[24] else "3"))
+forced_cmd_fast_min_samples = int(float(sys.argv[25] if len(sys.argv) > 25 and sys.argv[25] else "3"))
 
 now = datetime.now(timezone.utc)
 window_start = now - timedelta(hours=24)
@@ -4060,6 +4333,14 @@ report = {
             "max_active_minutes": float(priority_gate_max_active_min),
             "max_cycles": int(priority_gate_max_cycles),
             "min_quality_drop_pct": float(priority_gate_min_quality_drop_pct),
+        },
+        "forced_command_fast": {
+            "window_hours": float(max(forced_cmd_fast_window_h, 0.1)),
+            "sla_target_s": float(max(forced_cmd_fast_sla_target_s, 1.0)),
+            "pending_warn_s": float(max(forced_cmd_fast_pending_warn_s, 1.0)),
+            "exec_warn_s": float(max(forced_cmd_fast_exec_warn_s, 1.0)),
+            "consecutive_crit": int(max(forced_cmd_fast_consecutive_crit, 1)),
+            "min_samples": int(max(forced_cmd_fast_min_samples, 1)),
         },
         "registry_reconcile": {
             "min_outside_keys": int(registry_reconcile_min_outside_keys),

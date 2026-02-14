@@ -1,52 +1,543 @@
 {
-  "timestamp": "2026-02-13T22:34:45.049782Z",
+  "timestamp": "2026-02-14T06:07:46.216900Z",
   "checked_entries": 100,
-  "issues_found": 5,
+  "issues_found": 75,
   "issues_by_type": {
-    "identical_to_en_exempt": 57,
-    "identical_to_en": 5,
-    "suspicious_log_critical": 194,
-    "suspicious_log_high": 1,
-    "suspicious_log_low": 5,
+    "identical_to_en": 75,
+    "identical_to_en_exempt": 5,
+    "suspicious_log_low": 92,
+    "suspicious_log_critical": 15,
+    "suspicious_log_medium": 34,
+    "suspicious_log_high": 59,
     "suspicious_rejected_critical": 200
   },
   "issues": [
     {
-      "key": "otclient_modules.charms.tr_64",
-      "lang": "pl",
+      "key": "data.otservbr.global.npc.amber.L426.528",
+      "lang": "de",
       "type": "identical_to_en",
-      "en": "Curse",
-      "translated": "Curse"
+      "en": "Yeah, see you later.",
+      "translated": "Yeah, see you later."
     },
     {
-      "key": "otclient_modules.game_cyclopedia.tr_6",
-      "lang": "pl",
+      "key": "data.otservbr.global.npc.amber.L427.529",
+      "lang": "de",
       "type": "identical_to_en",
-      "en": "Cyclopedia",
-      "translated": "Cyclopedia"
+      "en": "See you later, |PLAYERNAME|.",
+      "translated": "See you later, |PLAYERNAME|."
     },
     {
-      "key": "otclient_modules.game_cyclopedia_otui.tr_8",
-      "lang": "pl",
+      "key": "data.otservbr.global.npc.andrew.lyze.L263.518",
+      "lang": "de",
       "type": "identical_to_en",
-      "en": "Cyclopedia",
-      "translated": "Cyclopedia"
+      "en": "Well, bye then.",
+      "translated": "Well, bye then."
     },
     {
-      "key": "otclient_modules.player.tr_6",
-      "lang": "pl",
+      "key": "data.otservbr.global.npc.andrew.lyze.L264.519",
+      "lang": "de",
       "type": "identical_to_en",
-      "en": "Druid",
-      "translated": "Druid"
+      "en": "Good bye.",
+      "translated": "Good bye."
     },
     {
-      "key": "otclient_modules.spelllist_otui.tr_12",
-      "lang": "pl",
+      "key": "data.otservbr.global.npc.anerui.L71.1487",
+      "lang": "de",
       "type": "identical_to_en",
-      "en": "Druid",
-      "translated": "Druid"
+      "en": "Ashari |PLAYERNAME|.",
+      "translated": "Ashari |PLAYERNAME|."
+    },
+    {
+      "key": "data.otservbr.global.npc.anerui.L72.1488",
+      "lang": "de",
+      "type": "identical_to_en",
+      "en": "Asha Thrazi.",
+      "translated": "Asha Thrazi."
+    },
+    {
+      "key": "data.otservbr.global.npc.anerui.L73.1489",
+      "lang": "de",
+      "type": "identical_to_en",
+      "en": "Asha Thrazi.",
+      "translated": "Asha Thrazi."
+    },
+    {
+      "key": "data.otservbr.global.npc.angelo.L153.1447",
+      "lang": "de",
+      "type": "identical_to_en",
+      "en": "Well, bye then.",
+      "translated": "Well, bye then."
+    },
+    {
+      "key": "data.otservbr.global.npc.archery.L64.538",
+      "lang": "de",
+      "type": "identical_to_en",
+      "en": "Welcome to Archery's shop!",
+      "translated": "Welcome to Archery's shop!"
+    },
+    {
+      "key": "data.otservbr.global.npc.ariella.L161.242",
+      "lang": "de",
+      "type": "identical_to_en",
+      "en": "Hi there.",
+      "translated": "Hi there."
+    },
+    {
+      "key": "data.otservbr.global.npc.arito.L117.1343",
+      "lang": "de",
+      "type": "identical_to_en",
+      "en": "Do visit us again.",
+      "translated": "Do visit us again."
+    },
+    {
+      "key": "data.otservbr.global.npc.arito.L118.1344",
+      "lang": "de",
+      "type": "identical_to_en",
+      "en": "Do visit us again.",
+      "translated": "Do visit us again."
+    },
+    {
+      "key": "data.otservbr.global.npc.ashari.L53.1582",
+      "lang": "de",
+      "type": "identical_to_en",
+      "en": "Bye!",
+      "translated": "Bye!"
+    },
+    {
+      "key": "data.otservbr.global.npc.ashari.L54.1583",
+      "lang": "de",
+      "type": "identical_to_en",
+      "en": "Bye!",
+      "translated": "Bye!"
+    },
+    {
+      "key": "data.otservbr.global.npc.atur.L77.728",
+      "lang": "de",
+      "type": "identical_to_en",
+      "en": "Have a nice day.",
+      "translated": "Have a nice day."
+    },
+    {
+      "key": "data.otservbr.global.npc.atur.L78.729",
+      "lang": "de",
+      "type": "identical_to_en",
+      "en": "Have a nice day.",
+      "translated": "Have a nice day."
+    },
+    {
+      "key": "data.otservbr.global.npc.aurita.L114.171",
+      "lang": "de",
+      "type": "identical_to_en",
+      "en": "Greetings, traveller!",
+      "translated": "Greetings, traveller!"
+    },
+    {
+      "key": "data.otservbr.global.npc.avar.tar.L137.859",
+      "lang": "de",
+      "type": "identical_to_en",
+      "en": "Greetings, traveller |PLAYERNAME|!",
+      "translated": "Greetings, traveller |PLAYERNAME|!"
+    },
+    {
+      "key": "data.otservbr.global.npc.avar.tar.L138.860",
+      "lang": "de",
+      "type": "identical_to_en",
+      "en": "See you later, |PLAYERNAME|.",
+      "translated": "See you later, |PLAYERNAME|."
+    },
+    {
+      "key": "data.otservbr.global.npc.altar.L85.732",
+      "lang": "pt",
+      "type": "identical_to_en",
+      "en": "Bye, |PLAYERNAME|.",
+      "translated": "Bye, |PLAYERNAME|."
+    },
+    {
+      "key": "data.otservbr.global.npc.alyxo.L210.798",
+      "lang": "pt",
+      "type": "identical_to_en",
+      "en": "Well, bye then.",
+      "translated": "Well, bye then."
+    },
+    {
+      "key": "data.otservbr.global.npc.ambassador.of.rathleton.L86.343",
+      "lang": "pt",
+      "type": "identical_to_en",
+      "en": "Greetings, friend.",
+      "translated": "Greetings, friend."
+    },
+    {
+      "key": "data.otservbr.global.npc.ambassador.of.rathleton.L87.344",
+      "lang": "pt",
+      "type": "identical_to_en",
+      "en": "Well, bye then.",
+      "translated": "Well, bye then."
+    },
+    {
+      "key": "data.otservbr.global.npc.amber.L426.528",
+      "lang": "pt",
+      "type": "identical_to_en",
+      "en": "Yeah, see you later.",
+      "translated": "Yeah, see you later."
+    },
+    {
+      "key": "data.otservbr.global.npc.amber.L427.529",
+      "lang": "pt",
+      "type": "identical_to_en",
+      "en": "See you later, |PLAYERNAME|.",
+      "translated": "See you later, |PLAYERNAME|."
+    },
+    {
+      "key": "data.otservbr.global.npc.andrew.lyze.L263.518",
+      "lang": "pt",
+      "type": "identical_to_en",
+      "en": "Well, bye then.",
+      "translated": "Well, bye then."
+    },
+    {
+      "key": "data.otservbr.global.npc.andrew.lyze.L264.519",
+      "lang": "pt",
+      "type": "identical_to_en",
+      "en": "Good bye.",
+      "translated": "Good bye."
+    },
+    {
+      "key": "data.otservbr.global.npc.anerui.L71.1487",
+      "lang": "pt",
+      "type": "identical_to_en",
+      "en": "Ashari |PLAYERNAME|.",
+      "translated": "Ashari |PLAYERNAME|."
+    },
+    {
+      "key": "data.otservbr.global.npc.anerui.L72.1488",
+      "lang": "pt",
+      "type": "identical_to_en",
+      "en": "Asha Thrazi.",
+      "translated": "Asha Thrazi."
+    },
+    {
+      "key": "data.otservbr.global.npc.anerui.L73.1489",
+      "lang": "pt",
+      "type": "identical_to_en",
+      "en": "Asha Thrazi.",
+      "translated": "Asha Thrazi."
+    },
+    {
+      "key": "data.otservbr.global.npc.angelo.L153.1447",
+      "lang": "pt",
+      "type": "identical_to_en",
+      "en": "Well, bye then.",
+      "translated": "Well, bye then."
+    },
+    {
+      "key": "data.otservbr.global.npc.archery.L64.538",
+      "lang": "pt",
+      "type": "identical_to_en",
+      "en": "Welcome to Archery's shop!",
+      "translated": "Welcome to Archery's shop!"
+    },
+    {
+      "key": "data.otservbr.global.npc.ariella.L161.242",
+      "lang": "pt",
+      "type": "identical_to_en",
+      "en": "Hi there.",
+      "translated": "Hi there."
+    },
+    {
+      "key": "data.otservbr.global.npc.arito.L117.1343",
+      "lang": "pt",
+      "type": "identical_to_en",
+      "en": "Do visit us again.",
+      "translated": "Do visit us again."
+    },
+    {
+      "key": "data.otservbr.global.npc.arito.L118.1344",
+      "lang": "pt",
+      "type": "identical_to_en",
+      "en": "Do visit us again.",
+      "translated": "Do visit us again."
+    },
+    {
+      "key": "data.otservbr.global.npc.ashari.L53.1582",
+      "lang": "pt",
+      "type": "identical_to_en",
+      "en": "Bye!",
+      "translated": "Bye!"
+    },
+    {
+      "key": "data.otservbr.global.npc.ashari.L54.1583",
+      "lang": "pt",
+      "type": "identical_to_en",
+      "en": "Bye!",
+      "translated": "Bye!"
+    },
+    {
+      "key": "data.otservbr.global.npc.altar.L85.732",
+      "lang": "fr",
+      "type": "identical_to_en",
+      "en": "Bye, |PLAYERNAME|.",
+      "translated": "Bye, |PLAYERNAME|."
+    },
+    {
+      "key": "data.otservbr.global.npc.alyxo.L210.798",
+      "lang": "fr",
+      "type": "identical_to_en",
+      "en": "Well, bye then.",
+      "translated": "Well, bye then."
+    },
+    {
+      "key": "data.otservbr.global.npc.ambassador.of.rathleton.L86.343",
+      "lang": "fr",
+      "type": "identical_to_en",
+      "en": "Greetings, friend.",
+      "translated": "Greetings, friend."
+    },
+    {
+      "key": "data.otservbr.global.npc.ambassador.of.rathleton.L87.344",
+      "lang": "fr",
+      "type": "identical_to_en",
+      "en": "Well, bye then.",
+      "translated": "Well, bye then."
+    },
+    {
+      "key": "data.otservbr.global.npc.amber.L426.528",
+      "lang": "fr",
+      "type": "identical_to_en",
+      "en": "Yeah, see you later.",
+      "translated": "Yeah, see you later."
+    },
+    {
+      "key": "data.otservbr.global.npc.amber.L427.529",
+      "lang": "fr",
+      "type": "identical_to_en",
+      "en": "See you later, |PLAYERNAME|.",
+      "translated": "See you later, |PLAYERNAME|."
+    },
+    {
+      "key": "data.otservbr.global.npc.andrew.lyze.L263.518",
+      "lang": "fr",
+      "type": "identical_to_en",
+      "en": "Well, bye then.",
+      "translated": "Well, bye then."
+    },
+    {
+      "key": "data.otservbr.global.npc.andrew.lyze.L264.519",
+      "lang": "fr",
+      "type": "identical_to_en",
+      "en": "Good bye.",
+      "translated": "Good bye."
+    },
+    {
+      "key": "data.otservbr.global.npc.anerui.L71.1487",
+      "lang": "fr",
+      "type": "identical_to_en",
+      "en": "Ashari |PLAYERNAME|.",
+      "translated": "Ashari |PLAYERNAME|."
+    },
+    {
+      "key": "data.otservbr.global.npc.anerui.L72.1488",
+      "lang": "fr",
+      "type": "identical_to_en",
+      "en": "Asha Thrazi.",
+      "translated": "Asha Thrazi."
+    },
+    {
+      "key": "data.otservbr.global.npc.anerui.L73.1489",
+      "lang": "fr",
+      "type": "identical_to_en",
+      "en": "Asha Thrazi.",
+      "translated": "Asha Thrazi."
+    },
+    {
+      "key": "data.otservbr.global.npc.angelo.L153.1447",
+      "lang": "fr",
+      "type": "identical_to_en",
+      "en": "Well, bye then.",
+      "translated": "Well, bye then."
+    },
+    {
+      "key": "data.otservbr.global.npc.archery.L64.538",
+      "lang": "fr",
+      "type": "identical_to_en",
+      "en": "Welcome to Archery's shop!",
+      "translated": "Welcome to Archery's shop!"
+    },
+    {
+      "key": "data.otservbr.global.npc.ariella.L161.242",
+      "lang": "fr",
+      "type": "identical_to_en",
+      "en": "Hi there.",
+      "translated": "Hi there."
+    },
+    {
+      "key": "data.otservbr.global.npc.arito.L117.1343",
+      "lang": "fr",
+      "type": "identical_to_en",
+      "en": "Do visit us again.",
+      "translated": "Do visit us again."
+    },
+    {
+      "key": "data.otservbr.global.npc.arito.L118.1344",
+      "lang": "fr",
+      "type": "identical_to_en",
+      "en": "Do visit us again.",
+      "translated": "Do visit us again."
+    },
+    {
+      "key": "data.otservbr.global.npc.ashari.L53.1582",
+      "lang": "fr",
+      "type": "identical_to_en",
+      "en": "Bye!",
+      "translated": "Bye!"
+    },
+    {
+      "key": "data.otservbr.global.npc.ashari.L54.1583",
+      "lang": "fr",
+      "type": "identical_to_en",
+      "en": "Bye!",
+      "translated": "Bye!"
+    },
+    {
+      "key": "data.otservbr.global.npc.atur.L77.728",
+      "lang": "fr",
+      "type": "identical_to_en",
+      "en": "Have a nice day.",
+      "translated": "Have a nice day."
+    },
+    {
+      "key": "data.otservbr.global.npc.amber.L426.528",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Yeah, see you later.",
+      "translated": "Yeah, see you later."
+    },
+    {
+      "key": "data.otservbr.global.npc.amber.L427.529",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "See you later, |PLAYERNAME|.",
+      "translated": "See you later, |PLAYERNAME|."
+    },
+    {
+      "key": "data.otservbr.global.npc.andrew.lyze.L263.518",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Well, bye then.",
+      "translated": "Well, bye then."
+    },
+    {
+      "key": "data.otservbr.global.npc.andrew.lyze.L264.519",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Good bye.",
+      "translated": "Good bye."
+    },
+    {
+      "key": "data.otservbr.global.npc.anerui.L71.1487",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Ashari |PLAYERNAME|.",
+      "translated": "Ashari |PLAYERNAME|."
+    },
+    {
+      "key": "data.otservbr.global.npc.anerui.L72.1488",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Asha Thrazi.",
+      "translated": "Asha Thrazi."
+    },
+    {
+      "key": "data.otservbr.global.npc.anerui.L73.1489",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Asha Thrazi.",
+      "translated": "Asha Thrazi."
+    },
+    {
+      "key": "data.otservbr.global.npc.angelo.L153.1447",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Well, bye then.",
+      "translated": "Well, bye then."
+    },
+    {
+      "key": "data.otservbr.global.npc.archery.L64.538",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Welcome to Archery's shop!",
+      "translated": "Welcome to Archery's shop!"
+    },
+    {
+      "key": "data.otservbr.global.npc.ariella.L161.242",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Hi there.",
+      "translated": "Hi there."
+    },
+    {
+      "key": "data.otservbr.global.npc.arito.L117.1343",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Do visit us again.",
+      "translated": "Do visit us again."
+    },
+    {
+      "key": "data.otservbr.global.npc.arito.L118.1344",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Do visit us again.",
+      "translated": "Do visit us again."
+    },
+    {
+      "key": "data.otservbr.global.npc.ashari.L53.1582",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Bye!",
+      "translated": "Bye!"
+    },
+    {
+      "key": "data.otservbr.global.npc.ashari.L54.1583",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Bye!",
+      "translated": "Bye!"
+    },
+    {
+      "key": "data.otservbr.global.npc.atur.L77.728",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Have a nice day.",
+      "translated": "Have a nice day."
+    },
+    {
+      "key": "data.otservbr.global.npc.atur.L78.729",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Have a nice day.",
+      "translated": "Have a nice day."
+    },
+    {
+      "key": "data.otservbr.global.npc.aurita.L114.171",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Greetings, traveller!",
+      "translated": "Greetings, traveller!"
+    },
+    {
+      "key": "data.otservbr.global.npc.avar.tar.L137.859",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Greetings, traveller |PLAYERNAME|!",
+      "translated": "Greetings, traveller |PLAYERNAME|!"
+    },
+    {
+      "key": "data.otservbr.global.npc.avar.tar.L138.860",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "See you later, |PLAYERNAME|.",
+      "translated": "See you later, |PLAYERNAME|."
     }
   ],
   "threshold": 10,
-  "slow_mode": false
+  "slow_mode": true
 }

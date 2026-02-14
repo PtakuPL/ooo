@@ -1,19 +1,19 @@
 {
-  "timestamp": "2026-02-13T21:47:44.388544Z",
-  "overall": "WARNING",
-  "issues_count": 0,
-  "warnings_count": 2,
-  "ok_count": 5,
-  "issues": [],
-  "warnings": [
-    "BLACKLISTED_TARGET: es:items.json ma 11 guard_fail w blackliście",
-    "NO_PID_FILE: brak .worker_simple.pid"
+  "timestamp": "2026-02-14T06:10:17.596437Z",
+  "overall": "CRITICAL",
+  "issues_count": 1,
+  "warnings_count": 0,
+  "ok_count": 6,
+  "issues": [
+    "GUARDIAN_STUCK: guardian raportuje stuck"
   ],
+  "warnings": [],
   "ok": [
-    "heartbeat_fresh (140s)",
-    "status_md_fresh (130s)",
-    "guard_report_fresh (53s)",
-    "dispatch_fresh (46s)",
-    "guardian_healthy"
+    "heartbeat_fresh (9s)",
+    "status_md_fresh (146s)",
+    "guard_report_fresh (61s)",
+    "dispatch_fresh (64s)",
+    "worker_pid_alive (1795173)",
+    "repair_queue_fresh (237s)"
   ]
 }

@@ -70,5 +70,3205 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-12T23:38:53.627561Z"
+  },
+  "npc.a_dragon_mother.multi_3": {
+    "src_hash": "c6a0aabd2af804ac1f00c1504af5edf4",
+    "text": "Grrr.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.721947Z"
+  },
+  "npc.a_weakened_forest_fury.say_4": {
+    "src_hash": "055d4f5ac2a5439f55bddb2343c0a757",
+    "text": "Take care, guardian.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.727176Z"
+  },
+  "npc.albinius.say_10": {
+    "src_hash": "8ebe07d7adacdd880130a981ebf53704",
+    "text": "As you wish.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.732847Z"
+  },
+  "npc.alesar.say_5": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.733589Z"
+  },
+  "npc.alesar_functions.say_3": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.734062Z"
+  },
+  "npc.alkestios.say_4": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.736325Z"
+  },
+  "npc.alwin.say_1": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Take this!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.737550Z"
+  },
+  "npc.andrew_lyze.say_14": {
+    "src_hash": "69ce05199222d304e8f82cb747eed8ab",
+    "text": "Don't waste my time.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.745158Z"
+  },
+  "npc.appaloosa.say_5": {
+    "src_hash": "cc67edbe5929572b201f9b2aa0f478f9",
+    "text": "Have a nice trip!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.749017Z"
+  },
+  "npc.appaloosa.say_9": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.749300Z"
+  },
+  "npc.ariella.say_15": {
+    "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
+    "text": "I see.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.749959Z"
+  },
+  "npc.arnold.say_1": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Take this!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.751772Z"
+  },
+  "npc.atrad.say_3": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.752996Z"
+  },
+  "npc.aurita.say_1": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.753544Z"
+  },
+  "npc.avar_tar.say_5": {
+    "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
+    "text": "I see.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.753950Z"
+  },
+  "npc.awarness_of_the_emperor.say_1": {
+    "src_hash": "706b1a009354e93f05beff4ba2e0a628",
+    "text": "SO BE IT!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.754499Z"
+  },
+  "npc.bambi_bonecrusher.say_1": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Take this!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.756377Z"
+  },
+  "npc.barbara.say_3": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Take this!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.757829Z"
+  },
+  "npc.blossom_bonecrusher.say_1": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Take this!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.763388Z"
+  },
+  "npc.brodrosch.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Good bye.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.773541Z"
+  },
+  "npc.brodrosch.say_5": {
+    "src_hash": "12d673409d71f1fc127ebad108378378",
+    "text": "No then.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.773893Z"
+  },
+  "npc.brodrosch.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Good bye then.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.774788Z"
+  },
+  "npc.busty_bonecrusher.say_1": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Take this!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.779430Z"
+  },
+  "npc.captain_seahorse.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Good bye then.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.794594Z"
+  },
+  "npc.chester_kahs.say_23": {
+    "src_hash": "8ebe07d7adacdd880130a981ebf53704",
+    "text": "As you wish.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.803127Z"
+  },
+  "npc.chondur.say_18": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.805036Z"
+  },
+  "npc.christoph.say_1": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Take this!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.805554Z"
+  },
+  "npc.cillia.say_3": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.806081Z"
+  },
+  "npc.dalbrect.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Good bye.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.816357Z"
+  },
+  "npc.dancing_fairy.say_1": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.819663Z"
+  },
+  "npc.dedoras.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Well, bye then.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.822982Z"
+  },
+  "npc.demonguard.say_1": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Take this!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.823236Z"
+  },
+  "npc.dukosch.say_5": {
+    "src_hash": "12d673409d71f1fc127ebad108378378",
+    "text": "No then.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.828097Z"
+  },
+  "npc.duncan.say_12": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.828593Z"
+  },
+  "npc.duncan.say_14": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.828998Z"
+  },
+  "npc.duncan.say_15": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.829352Z"
+  },
+  "npc.duncan.say_17": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.829746Z"
+  },
+  "npc.duncan.say_19": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.830112Z"
+  },
+  "npc.elane.say_11": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.835729Z"
+  },
+  "npc.elane.say_13": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.836101Z"
+  },
+  "npc.elane.say_15": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.836460Z"
+  },
+  "npc.elane.say_9": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.836931Z"
+  },
+  "npc.emma.say_14": {
+    "src_hash": "8ebe07d7adacdd880130a981ebf53704",
+    "text": "As you wish.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.843812Z"
+  },
+  "npc.farhilorn_of_the_winter_court.say_3": {
+    "src_hash": "8ebe07d7adacdd880130a981ebf53704",
+    "text": "As you wish.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.853572Z"
+  },
+  "npc.fenbala.say_3": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Take this!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.854112Z"
+  },
+  "npc.ferks.farewell_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Have a nice day.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.854852Z"
+  },
+  "npc.ferks.walkaway_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Have a nice day.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.855243Z"
+  },
+  "npc.gabel.say_6": {
+    "src_hash": "8ebe07d7adacdd880130a981ebf53704",
+    "text": "As you wish.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.864451Z"
+  },
+  "npc.gewen.say_5": {
+    "src_hash": "12d673409d71f1fc127ebad108378378",
+    "text": "No then.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.873350Z"
+  },
+  "npc.ghostly_wolf.say_4": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.876513Z"
+  },
+  "npc.gnomus.say_10": {
+    "src_hash": "69ce05199222d304e8f82cb747eed8ab",
+    "text": "Don't waste my time.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.883696Z"
+  },
+  "npc.gnomus.say_11": {
+    "src_hash": "f5940523060652e3a7d9c269ce48de50",
+    "text": "Done.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.883997Z"
+  },
+  "npc.gnomus.say_13": {
+    "src_hash": "f5940523060652e3a7d9c269ce48de50",
+    "text": "Done.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.884239Z"
+  },
+  "npc.gnomus.say_15": {
+    "src_hash": "f5940523060652e3a7d9c269ce48de50",
+    "text": "Done.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.884521Z"
+  },
+  "npc.guide_alexena.say_2": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Here you go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.899934Z"
+  },
+  "npc.guide_behil.say_2": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Here you go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.900981Z"
+  },
+  "npc.guide_davina.say_2": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Here you go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.901945Z"
+  },
+  "npc.guide_edna.say_2": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Here you go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.902944Z"
+  },
+  "npc.guide_elena.say_2": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Here you go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.903900Z"
+  },
+  "npc.guide_jonathan.say_2": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Here you go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.905074Z"
+  },
+  "npc.guide_kunibert.say_2": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Here you go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.906068Z"
+  },
+  "npc.guide_luke.say_2": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Here you go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.907157Z"
+  },
+  "npc.guide_rahlkora.say_2": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Here you go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.908194Z"
+  },
+  "npc.guide_thelandil.say_2": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Here you go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.909293Z"
+  },
+  "npc.guide_tiko.say_2": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Here you go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.910200Z"
+  },
+  "npc.gurbasch.walkaway_msg_1": {
+    "src_hash": "8c767380dfcf1e12c4c84eef6324bdca",
+    "text": "Until next time.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.911742Z"
+  },
+  "npc.hairycles.say_66": {
+    "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
+    "text": "I see.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.913068Z"
+  },
+  "npc.hanna.say_10": {
+    "src_hash": "ebaeda37e982b71a905f5f1995285a85",
+    "text": "Maybe another time.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.916429Z"
+  },
+  "npc.harsky.say_3": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Take this!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.918010Z"
+  },
+  "npc.hjaern.say_15": {
+    "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
+    "text": "I see.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.923263Z"
+  },
+  "npc.ikassis.say_3": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.929652Z"
+  },
+  "npc.jack_fate_goroma.say_7": {
+    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
+    "text": "Set the sails!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.952176Z"
+  },
+  "npc.jean_claude.say_1": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Take this!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.956262Z"
+  },
+  "npc.kallimae.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Well, bye then.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.962861Z"
+  },
+  "npc.karith.say_10": {
+    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
+    "text": "Set the sails!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.963487Z"
+  },
+  "npc.karith.say_12": {
+    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
+    "text": "Set the sails!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.963802Z"
+  },
+  "npc.karith.say_14": {
+    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
+    "text": "Set the sails!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.964114Z"
+  },
+  "npc.karith.say_16": {
+    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
+    "text": "Set the sails!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.964430Z"
+  },
+  "npc.karith.say_18": {
+    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
+    "text": "Set the sails!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.964740Z"
+  },
+  "npc.karith.say_20": {
+    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
+    "text": "Set the sails!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:57:35.965058Z"
+  },
+  "item.21351.name": {
+    "src_hash": "03944c28dd1d99648eda34c26d3de4ac",
+    "text": "Light Stone Shower Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:04.919231Z"
+  },
+  "item.21352.name": {
+    "src_hash": "31cd2c4b8700d3fba06777b6f804dbdd",
+    "text": "Lightest Missile Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:04.919647Z"
+  },
+  "item.21393.name": {
+    "src_hash": "4c50203dd80176e84e2da2675073da00",
+    "text": "krailos",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:04.920094Z"
+  },
+  "item.21432.name": {
+    "src_hash": "31cd2c4b8700d3fba06777b6f804dbdd",
+    "text": "Lightest Missile Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:04.920632Z"
+  },
+  "item.21434.name": {
+    "src_hash": "03944c28dd1d99648eda34c26d3de4ac",
+    "text": "Light Stone Shower Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:04.920987Z"
+  },
+  "item.24966.name": {
+    "src_hash": "7c7004d4846601f4cc710309ded176ef",
+    "text": "Forbidden Fruit",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:04.929698Z"
+  },
+  "item.29276.name": {
+    "src_hash": "2f00d19e4fb2d9e1c321035e9ad9a8d2",
+    "text": "Dream Catcher",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:04.939285Z"
+  },
+  "item.30215.name": {
+    "src_hash": "7bdff76536f12a7c5ffde207e72cfe3a",
+    "text": "ice",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:04.941831Z"
+  },
+  "item.30218.name": {
+    "src_hash": "7bdff76536f12a7c5ffde207e72cfe3a",
+    "text": "ice",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:04.942053Z"
+  },
+  "item.30273.name": {
+    "src_hash": "7bdff76536f12a7c5ffde207e72cfe3a",
+    "text": "ice",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:04.942783Z"
+  },
+  "item.3051.name": {
+    "src_hash": "c193d863e3cfa9eb7c10c24bc406c615",
+    "text": "energy ring",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:04.943987Z"
+  },
+  "item.3088.name": {
+    "src_hash": "c193d863e3cfa9eb7c10c24bc406c615",
+    "text": "energy ring",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:04.945050Z"
+  },
+  "item.3147.name": {
+    "src_hash": "967513bc0728d5d1211f01974ab4dee5",
+    "text": "Blank Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:04.947400Z"
+  },
+  "item.3148.name": {
+    "src_hash": "108014137d9b1b568bc5809b2ae08993",
+    "text": "Destroy Field Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:04.947787Z"
+  },
+  "item.3149.name": {
+    "src_hash": "cb4d58d9f24fa57abff821799c9fc94f",
+    "text": "Energy Bomb Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:04.948216Z"
+  },
+  "item.3152.name": {
+    "src_hash": "33956e826a4ef3b5c532347fc58fc51a",
+    "text": "Intense Healing Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:04.948702Z"
+  },
+  "item.3153.name": {
+    "src_hash": "e9b8ea43be6033af680c3a1498536208",
+    "text": "Cure Poison Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:04.949063Z"
+  },
+  "item.3155.name": {
+    "src_hash": "fb18e4528342a1c41cbe37d70830a516",
+    "text": "Sudden Death Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:04.949477Z"
+  },
+  "item.3156.name": {
+    "src_hash": "9dc8d6d2135459483a32e42f4c71bfae",
+    "text": "Wild Growth Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:04.949881Z"
+  },
+  "item.3158.name": {
+    "src_hash": "a63c57be298a194a943475aa554f5f78",
+    "text": "Icicle Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:04.950367Z"
+  },
+  "item.3160.name": {
+    "src_hash": "b25b53c822bcd98974fcaa1fbf8fb0aa",
+    "text": "Ultimate Healing Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:04.950954Z"
+  },
+  "item.3161.name": {
+    "src_hash": "cab3c5eb8827f3e61c150d57ca197f88",
+    "text": "Avalanche Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:04.951271Z"
+  },
+  "item.3164.name": {
+    "src_hash": "f60e5a60c1b758e59152ab854051f6f2",
+    "text": "Energy Field Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:04.951940Z"
+  },
+  "item.3166.name": {
+    "src_hash": "9afbdfa527777fc5d260fcd1dd0f4094",
+    "text": "Energy Wall Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:04.952411Z"
+  },
+  "item.3172.name": {
+    "src_hash": "29bdf0054473b50fa81a1b59875edbf9",
+    "text": "Poison Field Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:04.953086Z"
+  },
+  "item.3173.name": {
+    "src_hash": "858721d74877cf4710ed54517d35713d",
+    "text": "Poison Bomb Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:04.953400Z"
+  },
+  "item.3174.name": {
+    "src_hash": "ea8aea2d9723287e660b1406fec99eb1",
+    "text": "Light Magic Missile Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:04.953748Z"
+  },
+  "item.3175.name": {
+    "src_hash": "25854a690aad0b2f569b5c34e1691b91",
+    "text": "Stone Shower Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:04.954024Z"
+  },
+  "item.3176.name": {
+    "src_hash": "78e6136805ee4ea8f53e60caf96a394b",
+    "text": "Poison Wall Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:04.954321Z"
+  },
+  "item.3177.name": {
+    "src_hash": "961fd74b70425c951d4cbbb14b6479e3",
+    "text": "Convince Creature Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:04.954628Z"
+  },
+  "item.3178.name": {
+    "src_hash": "013606651a891a3bd1001805d0da726e",
+    "text": "Chameleon Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:04.954876Z"
+  },
+  "item.3179.name": {
+    "src_hash": "210691f016709d7398e1d323b9da8859",
+    "text": "Stalagmite Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:04.955129Z"
+  },
+  "item.3180.name": {
+    "src_hash": "130859064dcec73dfefffb635fd5b0c6",
+    "text": "Magic Wall Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:04.955381Z"
+  },
+  "item.3182.name": {
+    "src_hash": "79269881630466ca0eca7525a026c059",
+    "text": "Holy Missile Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:04.955697Z"
+  },
+  "item.3188.name": {
+    "src_hash": "bf99d79327d646790c45047cc04d8182",
+    "text": "Fire Field Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:04.955959Z"
+  },
+  "item.3189.name": {
+    "src_hash": "9fa403a008c2a7bb5138a129f950d02b",
+    "text": "Fireball Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:04.956197Z"
+  },
+  "item.3190.name": {
+    "src_hash": "5eb3ba2aca23558a99f38c4ac773a913",
+    "text": "Fire Wall Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:04.956441Z"
+  },
+  "item.3191.name": {
+    "src_hash": "7997a69ae49a90c11c1136ac972bc953",
+    "text": "Great Fireball Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:04.956750Z"
+  },
+  "item.3192.name": {
+    "src_hash": "533a42d998f407c9860eda103d41854c",
+    "text": "Fire Bomb Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:04.957048Z"
+  },
+  "item.3195.name": {
+    "src_hash": "2f2f34b93816d3e6dc730a3b95d76e78",
+    "text": "Soulfire Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:04.957468Z"
+  },
+  "item.3197.name": {
+    "src_hash": "a20a2360568eda693272b183da79d321",
+    "text": "Disintegrate Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:04.957806Z"
+  },
+  "item.3198.name": {
+    "src_hash": "914de3c6825f6f3cb25da03b5fb65a8b",
+    "text": "Heavy Magic Missile Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:04.958162Z"
+  },
+  "item.3200.name": {
+    "src_hash": "22494ca9495b54d62a7467fd9018dc7f",
+    "text": "Explosion Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:04.958503Z"
+  },
+  "item.3202.name": {
+    "src_hash": "83a4224e6625714976b634a3099f2f6e",
+    "text": "Thunderstorm Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:04.958845Z"
+  },
+  "item.3203.name": {
+    "src_hash": "69c97276273d5b7f4faf11b058c37266",
+    "text": "Animate Dead Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:04.959143Z"
+  },
+  "item.3274.name": {
+    "src_hash": "c89ee4a2c9dcae6581ca53bff9aa4ee5",
+    "text": "axe",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:04.961875Z"
+  },
+  "item.36786.name": {
+    "src_hash": "8bac228393c7fc0a4f3ac1a0c4622505",
+    "text": "lavafungus ring",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:04.971806Z"
+  },
+  "item.7107.name": {
+    "src_hash": "7bdff76536f12a7c5ffde207e72cfe3a",
+    "text": "ice",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:05.000135Z"
+  },
+  "item.7403.name": {
+    "src_hash": "d085749c93295c3002525428f3318cc1",
+    "text": "Berserker",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:05.001481Z"
+  },
+  "item.7740.name": {
+    "src_hash": "7bdff76536f12a7c5ffde207e72cfe3a",
+    "text": "ice",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:05.002735Z"
+  },
+  "item.800.name": {
+    "src_hash": "7bdff76536f12a7c5ffde207e72cfe3a",
+    "text": "ice",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:05.003708Z"
+  },
+  "item.1.name": {
+    "src_hash": "9460370bb0ca1c98a779b1bcc6861c2c",
+    "text": "water",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:19.715663Z"
+  },
+  "item.10.name": {
+    "src_hash": "90fbbee0c198b3f16d17271f8ca29d70",
+    "text": "manafluid",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:19.715916Z"
+  },
+  "item.100.name": {
+    "src_hash": "cab8111fd0b710a336c898e539090e34",
+    "text": "void",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:19.716119Z"
+  },
+  "item.10000.name": {
+    "src_hash": "aa63b14cb9675819aa6ecea9feeb5d27",
+    "text": "solstice tree",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:19.716359Z"
+  },
+  "item.10009.name": {
+    "src_hash": "2b120bc99743cc25cc800661bd42f168",
+    "text": "flask of crown polisher",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:19.716647Z"
+  },
+  "item.10010.name": {
+    "src_hash": "2476a5a90c029582282973dffc394319",
+    "text": "zaoan decoration",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:19.716902Z"
+  },
+  "item.10011.name": {
+    "src_hash": "36227190a857cf681921d9bf34a765ad",
+    "text": "map to the unknown",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:19.717170Z"
+  },
+  "item.10025.name": {
+    "src_hash": "3f76a90627bb7b7ad4e71375df6aa29f",
+    "text": "almanac of magic",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:19.717421Z"
+  },
+  "item.10026.name": {
+    "src_hash": "aabdddfc93cdfc8322f94b68f9cc0760",
+    "text": "baby rotworm",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:19.717642Z"
+  },
+  "item.10027.name": {
+    "src_hash": "c1bcf9b8357f67370e4599d8b21749be",
+    "text": "universal tool",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:19.717875Z"
+  },
+  "item.10028.name": {
+    "src_hash": "466a6bdf5ea677b6e1344f8bd3619a4a",
+    "text": "soul contract",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:19.718101Z"
+  },
+  "item.1006.name": {
+    "src_hash": "eee3db73cf76cd1ca29c6c5d40f44fb4",
+    "text": "jagged stones",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:19.718357Z"
+  },
+  "item.10069.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "fire field",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:19.718573Z"
+  },
+  "item.10070.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "fire field",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:19.718777Z"
+  },
+  "item.10071.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "fire field",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:19.719176Z"
+  },
+  "item.10096.name": {
+    "src_hash": "cd2878e9d8d9bd39b4e50c83b5990cc8",
+    "text": "stacke",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:19.719403Z"
+  },
+  "item.10097.name": {
+    "src_hash": "ffb79de3dd0555fb7a5ca7071a0c1b4a",
+    "text": "pepper grass",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:19.719630Z"
+  },
+  "item.10098.name": {
+    "src_hash": "8365620ffd40a47e8c1d7d5b5c7633cb",
+    "text": "high grass",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:19.719838Z"
+  },
+  "item.101.name": {
+    "src_hash": "852488ddd9570bc877783bf4397563e0",
+    "text": "earth",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:19.720027Z"
+  },
+  "item.10111.name": {
+    "src_hash": "ffb79de3dd0555fb7a5ca7071a0c1b4a",
+    "text": "pepper grass",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:19.720275Z"
+  },
+  "item.10112.name": {
+    "src_hash": "2aefe63ef336d4cc0262873f224fbe19",
+    "text": "mud sand grass",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:19.720516Z"
+  },
+  "item.1012.name": {
+    "src_hash": "74d7b04810e76e98881a64131caa3e87",
+    "text": "sparkling gem",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:19.720742Z"
+  },
+  "item.10140.name": {
+    "src_hash": "3b2fa34af93b15d8e28dacad96e85076",
+    "text": "demonic residue",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:19.720981Z"
+  },
+  "item.10159.name": {
+    "src_hash": "9fbf6b7186d409b5605c7eb845ed7443",
+    "text": "skull of a caveman",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:19.721274Z"
+  },
+  "item.10180.name": {
+    "src_hash": "418acd2dc26b4e76fa2db55ab2f3e659",
+    "text": "groud",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:19.721472Z"
+  },
+  "item.10181.name": {
+    "src_hash": "b191656e3ce1b7048b8d4510eb17cf22",
+    "text": "magic wall",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:19.721679Z"
+  },
+  "item.10182.name": {
+    "src_hash": "33f19afbf6744c10a2e913608b22cb83",
+    "text": "rush wood",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:19.721880Z"
+  },
+  "item.10183.name": {
+    "src_hash": "166e86f69d6225986d74594875d5b86d",
+    "text": "flask of poison",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:19.722145Z"
+  },
+  "item.10184.name": {
+    "src_hash": "6a5213ef75be2d75ba25027c7e78be72",
+    "text": "tactical map",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:07:19.722401Z"
+  },
+  "npc.karith.say_22": {
+    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
+    "text": "Set the sails!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:06.612278Z"
+  },
+  "npc.karith.say_24": {
+    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
+    "text": "Set the sails!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:06.613202Z"
+  },
+  "npc.karith.say_26": {
+    "src_hash": "69ce05199222d304e8f82cb747eed8ab",
+    "text": "Don't waste my time.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:06.613970Z"
+  },
+  "npc.kevin.say_46": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:06.619888Z"
+  },
+  "npc.lardoc_bashsmite.say_10": {
+    "src_hash": "f5940523060652e3a7d9c269ce48de50",
+    "text": "Done.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:06.627796Z"
+  },
+  "npc.lardoc_bashsmite.say_12": {
+    "src_hash": "f5940523060652e3a7d9c269ce48de50",
+    "text": "Done.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:06.628047Z"
+  },
+  "npc.lardoc_bashsmite.say_14": {
+    "src_hash": "f5940523060652e3a7d9c269ce48de50",
+    "text": "Done.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:06.628316Z"
+  },
+  "npc.lardoc_bashsmite.say_9": {
+    "src_hash": "69ce05199222d304e8f82cb747eed8ab",
+    "text": "Don't waste my time.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:06.628923Z"
+  },
+  "npc.lokur.say_5": {
+    "src_hash": "12d673409d71f1fc127ebad108378378",
+    "text": "No then.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:06.638764Z"
+  },
+  "npc.lorbas.say_4": {
+    "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
+    "text": "I see.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:06.639130Z"
+  },
+  "npc.lugri.say_13": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:06.646336Z"
+  },
+  "npc.lugri.say_15": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:06.646724Z"
+  },
+  "npc.lugri.say_17": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:06.647090Z"
+  },
+  "npc.lugri.say_19": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:06.647489Z"
+  },
+  "npc.lukosch.say_5": {
+    "src_hash": "12d673409d71f1fc127ebad108378378",
+    "text": "No then.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:06.647987Z"
+  },
+  "npc.maelyrra.say_18": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:06.652206Z"
+  },
+  "npc.melfar.say_3": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Here you go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:06.656949Z"
+  },
+  "npc.nah_bob.say_6": {
+    "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
+    "text": "I see.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:06.668175Z"
+  },
+  "npc.norma.say_9": {
+    "src_hash": "ebaeda37e982b71a905f5f1995285a85",
+    "text": "Maybe another time.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:06.676701Z"
+  },
+  "npc.ocelus.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Good bye.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:06.682752Z"
+  },
+  "npc.ocelus.walkaway_msg_1": {
+    "src_hash": "cbca1e780ae7e44aa43debe068beb490",
+    "text": "Oh well.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:06.683132Z"
+  },
+  "npc.palomino.say_5": {
+    "src_hash": "cc67edbe5929572b201f9b2aa0f478f9",
+    "text": "Have a nice trip!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:06.696382Z"
+  },
+  "npc.palomino.say_9": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:06.696682Z"
+  },
+  "npc.pukosch.say_5": {
+    "src_hash": "12d673409d71f1fc127ebad108378378",
+    "text": "No then.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:06.706770Z"
+  },
+  "npc.robson.say_4": {
+    "src_hash": "b5010567e209726a125c9ed59162eca5",
+    "text": "Fine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:06.727119Z"
+  },
+  "npc.robson.say_6": {
+    "src_hash": "b5010567e209726a125c9ed59162eca5",
+    "text": "Fine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:06.727376Z"
+  },
+  "npc.rose.say_4": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:06.730776Z"
+  },
+  "npc.sam.say_10": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:06.732476Z"
+  },
+  "npc.sebastian.say_2": {
+    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
+    "text": "Set the sails!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:06.735935Z"
+  },
+  "npc.shirtalis_of_the_summer_court.say_3": {
+    "src_hash": "8ebe07d7adacdd880130a981ebf53704",
+    "text": "As you wish.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:06.748119Z"
+  },
+  "npc.siflind.say_31": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Here you go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:06.749622Z"
+  },
+  "npc.stutch.say_3": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Take this!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:06.756175Z"
+  },
+  "npc.suzy.farewell_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Have a nice day.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:06.757102Z"
+  },
+  "npc.suzy.walkaway_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Have a nice day.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:06.757762Z"
+  },
+  "npc.taegen.say_1": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:06.759625Z"
+  },
+  "npc.tamerin.say_4": {
+    "src_hash": "706b1a009354e93f05beff4ba2e0a628",
+    "text": "SO BE IT!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:06.760538Z"
+  },
+  "npc.tamerin.say_5": {
+    "src_hash": "706b1a009354e93f05beff4ba2e0a628",
+    "text": "SO BE IT!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:06.760761Z"
+  },
+  "npc.tarun.say_3": {
+    "src_hash": "8ebe07d7adacdd880130a981ebf53704",
+    "text": "As you wish.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:06.762353Z"
+  },
+  "npc.the_blind_prophet.say_14": {
+    "src_hash": "80daa793e7bea0f5da969ee940135c1a",
+    "text": "Take care!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:06.766598Z"
+  },
+  "npc.the_orc_king.say_8": {
+    "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
+    "text": "I see.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:06.770213Z"
+  },
+  "npc.tom.stdmod_31": {
+    "src_hash": "aafa4696d9102bda2dc5250066f65b13",
+    "text": "He's an apple polisher.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:06.777797Z"
+  },
+  "npc.uncle.say_11": {
+    "src_hash": "8ebe07d7adacdd880130a981ebf53704",
+    "text": "As you wish.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:06.785315Z"
+  },
+  "npc.warbert.say_1": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Take this!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:06.802407Z"
+  },
+  "npc.wyda.say_8": {
+    "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
+    "text": "I see.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:06.807022Z"
+  },
+  "npc.yaman.say_14": {
+    "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
+    "text": "I see.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:06.808790Z"
+  },
+  "npc.a_bearded_woman.stdmod_4": {
+    "src_hash": "2d38ace4459f0ec00320789d297c3501",
+    "text": "Všechno to byl nápad kapitána Kida. Vidíte, nenáviděl své jméno a plánoval, že se stane známým pod jménem kapitán Kidnap. ... \\z\n\tPotřeboval jen někoho slavného, kterého by mohl unést. ... \\z\n\tVzhledem k neutěšenému nedostatku talentu a inteligence jeho mužů by to byl docela výkon. ... \\z\n\tZnali jsme se z pár podvodů, které jsme spolu v minulosti udělali, a tak mě kontaktoval. ... \\z\n\tMěl jsem se vydávat za slavnou princeznu Lumelii. Víš, ten, kterého všichni hledali. ... \\z\n\tTo by jeho mužům a ostatním pirátům ukázalo, jaký to byl skvělý únosce. ... \\z\n\tSlíbil mi, že se stanu jeho druhým velitelem a povedu nádherný život plný plenění, loupení a drancování. ... \\z\n\tTak jsem souhlasil, že se budu na chvíli vydávat za princeznu a zpočátku to fungovalo dobře. ... \\z\n\tVrátil se se mnou oblečený jako princezna z nájezdu na vlastní pěst a pro své muže se okamžitě stal hrdinou dne. ... \\z\n\tVěci se zhoršily, když se rozhodli uspořádat vítěznou párty. ... \\z\n\tPokud jsem mohl rozeznat mumlání pirátů, Kid ztratil klíč od mé cely, když si ulevoval v podzemní řece. ... \\z\n\tTen blázen se rozhodl, že se po něm ponoří... už ho nikdy nikdo nespatří. ... \\z\n\tKdyž jsem se dozvěděl o Kidově smrti, snažil jsem se přesvědčit piráty, že to byl podvod, ale oni mi prostě neuvěří!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:28.697850Z"
+  },
+  "npc.a_bearded_woman.stdmod_5": {
+    "src_hash": "d02c0ffb00f9c85e39e5609e3ffcfc53",
+    "text": "Ach, únos je tak zábavný. Tedy pokud nejste na příjmu. ... \\z\n\tJsou to snadné peníze a vy máte šanci vyděsit a mučit někoho, kdo se nemůže bránit!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:28.698681Z"
+  },
+  "npc.a_bearded_woman.stdmod_7": {
+    "src_hash": "a07eb0740959112055b5524599e7a7e2",
+    "text": "Klíč se ztratil v podzemní řece a už se pravděpodobně vyplavil do sedmi moří! ... \\z\n\tKdyby ten hloupý Kid nebyl tak posedlý únosem, neprodal by svou loď, aby si koupil ty nejdražší a nejkomplikovanější zámky pro své cely!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:28.699603Z"
+  },
+  "npc.a_bearded_woman.stdmod_8": {
+    "src_hash": "611cca91ceb08fc3c7143e9b26284ef9",
+    "text": "Dokud se budeme držet nechráněných pobřežních měst, můžeme snadno vydělat jmění. Har Har! ... \\z\n\tJakmile se odsud dostanu, stanu se konečně sám pirátským kapitánem. Nepotřebuji kapitána Kida!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:28.700399Z"
+  },
+  "npc.a_bearded_woman.voice_3": {
+    "src_hash": "c28763b34d8b1e303d10487a3c6bdda4",
+    "text": "Dostaň mě ven! Všechno to bylo součástí plánu, vy blázni!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:28.700823Z"
+  },
+  "npc.a_bearded_woman.voice_4": {
+    "src_hash": "f6e4d063bc0eade947ac0001b744445e",
+    "text": "Jestli se odsud někdy dostanu, všechny vás zabiju! Vy všichni!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:28.701281Z"
+  },
+  "npc.a_bearded_woman.voice_5": {
+    "src_hash": "610ef2c5395758ac8169140d09ad737a",
+    "text": "NEJSEM princezna Lumelie, vy blázni!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:28.701646Z"
+  },
+  "npc.a_bearded_woman.voice_6": {
+    "src_hash": "53c4ab6007ae6d3e10ea4ddf7dce9bf1",
+    "text": "Sežeň si zámečníka a osvoboď mě, nebo toho budeš litovat, ty pošetilí piráti!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:28.702143Z"
+  },
+  "npc.a_bearded_woman.voice_7": {
+    "src_hash": "6ad2054bb73e4f51e22543c42ffc5d5b",
+    "text": "Nejsem princezna, jsem herec!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:28.702514Z"
+  },
+  "npc.a_beautiful_girl.greet_msg_1": {
+    "src_hash": "12c56c6555b96d78e471b6866d61e5dc",
+    "text": "Tak jsi přišel, |PLAYERNAME|. Doufal jsem, že nebudeš...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:28.702932Z"
+  },
+  "npc.a_beggar.greet_msg_1": {
+    "src_hash": "fb67985b03b0041bfb5a827c66ff748c",
+    "text": "Ahoj! Co to je, co d'ye {want}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:28.703305Z"
+  },
+  "npc.a_beggar.say_1": {
+    "src_hash": "dfa16f2971d25fe56e1c023824c93b08",
+    "text": "Myslel jsem si to. Budete si muset promluvit s králem. Tedy žebrácký král. Král neuděluje audienci jen tak každému. Víš, jací jsou ti králové, že? ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:28.704038Z"
+  },
+  "npc.a_beggar.say_2": {
+    "src_hash": "7f8292b9eb7566b64edd089a2459de83",
+    "text": "Chcete-li však získat audienci u krále, budete muset jeho poddaným trochu pomoci. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:28.705123Z"
+  },
+  "npc.a_beggar.say_3": {
+    "src_hash": "c00ef85e3c706aa4e1feb0023c862a5e",
+    "text": "Jeho poddanými bychom byli my, chudí, víš? ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:28.706250Z"
+  },
+  "npc.a_beggar.say_4": {
+    "src_hash": "4083b6eb97ef1d492dafe67ced5e1d1b",
+    "text": "Proč tedy neukážete svou oddanost chudým? Jdi a pomoz Chavisovi v chudinském domě. Sbírá jídlo pro lidi, jako jsme my. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:28.706903Z"
+  },
+  "npc.a_beggar.say_5": {
+    "src_hash": "8bb1bd6a0ab3fe83a4488aa718b941f9",
+    "text": "Pokud jste přinesli dostatek věcí, uvidíte, že vám král povolí vstup do svého {palace}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:28.707468Z"
+  },
+  "npc.a_behemoth.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Drž to dole! <gives you an elaborate report on monster activity>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:28.708225Z"
+  },
+  "npc.a_behemoth.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Drž to dole! <gives you an elaborate report on monster activity>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:28.709000Z"
+  },
+  "npc.a_behemoth.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Drž to dole! <gives you an elaborate report on monster activity>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:28.709683Z"
+  },
+  "npc.a_dead_bureaucrat.greet_msg_1": {
+    "src_hash": "1fb51950fc35d0b9f7979cbb0fff81b2",
+    "text": "Dobrý den {}, vítejte v atriu Pumin's Domain. Než vás budeme moci nechat projít, potřebujeme od vás nějaké informace. kam chceš jít?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:28.710479Z"
+  },
+  "npc.a_dead_bureaucrat1.farewell_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Sbohem a nezapomeň na mě!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:28.710838Z"
+  },
+  "npc.a_dead_bureaucrat1.say_1": {
+    "src_hash": "f4195eed0570aee7a7882eadb5b85979",
+    "text": "Huhu, prosím, neubližuj mi svými {}! Důvod Vaší návštěvy?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:28.711283Z"
+  },
+  "npc.a_dead_bureaucrat1.say_2": {
+    "src_hash": "6c80ac504f39e09fc288756acfd7a105",
+    "text": "Jak velmi zajímavé. Musím to okamžitě říct svému pánovi. Přejděte prosím k mým kolegům a požádejte o formulář 356. Budete jej potřebovat, abyste mohli pokračovat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:28.712004Z"
+  },
+  "npc.a_dead_bureaucrat1.say_3": {
+    "src_hash": "7c9a6b9ee4bce0d9b7654294cdfe405e",
+    "text": "Dobře |PLAYERNAME|. Povolání?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:28.712353Z"
+  },
+  "npc.a_dead_bureaucrat1.say_5": {
+    "src_hash": "7025be9c3a92e5d4e7965480ef624e3a",
+    "text": "Formulář 411? K tomu potřebujete formulář 287! máš to?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:28.712768Z"
+  },
+  "npc.a_dead_bureaucrat1.say_6": {
+    "src_hash": "7025be9c3a92e5d4e7965480ef624e3a",
+    "text": "Formulář 411? K tomu potřebujete formulář 287! máš to?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:28.713283Z"
+  },
+  "npc.a_dead_bureaucrat1.say_7": {
+    "src_hash": "22849ba6a7644915a8cb4de5b2a8e521",
+    "text": "Oh, jaká škoda. Jděte za jedním z mých kolegů. Dávám vám povolení získat formulář 287. Nashledanou!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:28.713817Z"
+  },
+  "npc.a_dead_bureaucrat1.say_8": {
+    "src_hash": "68c9f9ee9212c1c305a253d3d1aebeb0",
+    "text": "Velký. Tady to máš. Formulář 411. Vraťte se, kdykoli si budete chtít promluvit. Na shledanou.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:28.714359Z"
+  },
+  "npc.a_dead_bureaucrat1.say_9": {
+    "src_hash": "6c558828065bb071d2bead0fc23aef37",
+    "text": "NEUVĚŘITELNÉ, povedlo se ti to!! Bavte se v Pumin's Domain!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:28.714805Z"
+  },
+  "npc.a_dead_bureaucrat1.voice_1": {
+    "src_hash": "cdcea1350c387fbbeec64fa8f0b8ddea",
+    "text": "Kam jsem dal ten formulář?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:28.715166Z"
+  },
+  "npc.a_dead_bureaucrat1.walkaway_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Sbohem a nezapomeň na mě!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:28.715523Z"
+  },
+  "npc.a_dead_bureaucrat2.farewell_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Sbohem a nezapomeň na mě!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:28.715874Z"
+  },
+  "npc.a_dead_bureaucrat2.say_1": {
+    "src_hash": "14fd31f81c485fd102c189615f61a284",
+    "text": "Jasně, ode mě to můžeš dostat. Tady to máš. Ahoj",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:28.716301Z"
+  },
+  "npc.a_dead_bureaucrat2.voice_1": {
+    "src_hash": "cdcea1350c387fbbeec64fa8f0b8ddea",
+    "text": "Kam jsem dal ten formulář?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:28.716665Z"
+  },
+  "npc.a_dead_bureaucrat2.walkaway_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Sbohem a nezapomeň na mě!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:15:28.717017Z"
+  },
+  "item.1053.name": {
+    "src_hash": "852488ddd9570bc877783bf4397563e0",
+    "text": "earth",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:51:38.942476Z"
+  },
+  "item.1090.name": {
+    "src_hash": "eee3db73cf76cd1ca29c6c5d40f44fb4",
+    "text": "jagged stones",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:51:38.943123Z"
+  },
+  "item.2118.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "fire field",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:51:38.969798Z"
+  },
+  "item.2119.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "fire field",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:51:38.970822Z"
+  },
+  "item.2120.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "fire field",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:51:38.971522Z"
+  },
+  "item.2123.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "fire field",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:51:38.972338Z"
+  },
+  "item.2124.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "fire field",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:51:38.972873Z"
+  },
+  "item.2125.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "fire field",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:51:38.973401Z"
+  },
+  "item.2128.name": {
+    "src_hash": "b191656e3ce1b7048b8d4510eb17cf22",
+    "text": "magic wall",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:51:38.973918Z"
+  },
+  "item.2129.name": {
+    "src_hash": "b191656e3ce1b7048b8d4510eb17cf22",
+    "text": "magic wall",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:51:38.974462Z"
+  },
+  "item.2130.name": {
+    "src_hash": "33f19afbf6744c10a2e913608b22cb83",
+    "text": "rush wood",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:51:38.975068Z"
+  },
+  "item.2131.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "fire field",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:51:38.975592Z"
+  },
+  "item.2132.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "fire field",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:51:38.976053Z"
+  },
+  "item.2133.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "fire field",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:51:38.976566Z"
+  },
+  "item.21462.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "fire field",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:51:38.978923Z"
+  },
+  "item.21465.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "fire field",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:51:38.979434Z"
+  },
+  "item.2727.name": {
+    "src_hash": "852488ddd9570bc877783bf4397563e0",
+    "text": "earth",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:51:39.001242Z"
+  },
+  "item.2731.name": {
+    "src_hash": "852488ddd9570bc877783bf4397563e0",
+    "text": "earth",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:51:39.001570Z"
+  },
+  "item.28690.name": {
+    "src_hash": "aabdddfc93cdfc8322f94b68f9cc0760",
+    "text": "baby rotworm",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:51:39.005306Z"
+  },
+  "item.28691.name": {
+    "src_hash": "aabdddfc93cdfc8322f94b68f9cc0760",
+    "text": "baby rotworm",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:51:39.005588Z"
+  },
+  "item.28692.name": {
+    "src_hash": "aabdddfc93cdfc8322f94b68f9cc0760",
+    "text": "baby rotworm",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:51:39.005836Z"
+  },
+  "item.28693.name": {
+    "src_hash": "aabdddfc93cdfc8322f94b68f9cc0760",
+    "text": "baby rotworm",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:51:39.006073Z"
+  },
+  "item.30224.name": {
+    "src_hash": "33f19afbf6744c10a2e913608b22cb83",
+    "text": "rush wood",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:51:39.010494Z"
+  },
+  "item.372.name": {
+    "src_hash": "852488ddd9570bc877783bf4397563e0",
+    "text": "earth",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:51:39.030918Z"
+  },
+  "item.38478.name": {
+    "src_hash": "9460370bb0ca1c98a779b1bcc6861c2c",
+    "text": "water",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:51:39.033751Z"
+  },
+  "item.3993.name": {
+    "src_hash": "852488ddd9570bc877783bf4397563e0",
+    "text": "earth",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:51:39.037186Z"
+  },
+  "item.622.name": {
+    "src_hash": "9460370bb0ca1c98a779b1bcc6861c2c",
+    "text": "water",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:51:39.053450Z"
+  },
+  "item.7541.name": {
+    "src_hash": "852488ddd9570bc877783bf4397563e0",
+    "text": "earth",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:51:39.057775Z"
+  },
+  "item.7594.name": {
+    "src_hash": "852488ddd9570bc877783bf4397563e0",
+    "text": "earth",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:51:39.058501Z"
+  },
+  "item.7747.name": {
+    "src_hash": "cab8111fd0b710a336c898e539090e34",
+    "text": "void",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:51:39.059314Z"
+  },
+  "item.7893.name": {
+    "src_hash": "3b2fa34af93b15d8e28dacad96e85076",
+    "text": "demonic residue",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:51:39.060396Z"
+  },
+  "item.8684.name": {
+    "src_hash": "9460370bb0ca1c98a779b1bcc6861c2c",
+    "text": "water",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:51:39.063052Z"
+  },
+  "item.9246.name": {
+    "src_hash": "852488ddd9570bc877783bf4397563e0",
+    "text": "earth",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:51:39.065844Z"
+  },
+  "item.9804.name": {
+    "src_hash": "2476a5a90c029582282973dffc394319",
+    "text": "zaoan decoration",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:51:39.067625Z"
+  },
+  "item.9995.name": {
+    "src_hash": "aa63b14cb9675819aa6ecea9feeb5d27",
+    "text": "solstice tree",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:51:39.068081Z"
+  },
+  "item.9997.name": {
+    "src_hash": "8365620ffd40a47e8c1d7d5b5c7633cb",
+    "text": "high grass",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:51:39.068314Z"
+  },
+  "item.9998.name": {
+    "src_hash": "8365620ffd40a47e8c1d7d5b5c7633cb",
+    "text": "high grass",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:51:39.068534Z"
+  },
+  "item.9999.name": {
+    "src_hash": "8365620ffd40a47e8c1d7d5b5c7633cb",
+    "text": "high grass",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:51:39.068750Z"
+  },
+  "item.10185.name": {
+    "src_hash": "fb22606aca32dcbce80ae759f3e23f66",
+    "text": "swich",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:52:03.436791Z"
+  },
+  "item.10186.name": {
+    "src_hash": "2d9e53feb0673a054464fd17e13ab87e",
+    "text": "křičící koule",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:52:03.437088Z"
+  },
+  "item.10187.name": {
+    "src_hash": "c0e2289468f8376e785248a520b72014",
+    "text": "vzácný krystal",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:52:03.437340Z"
+  },
+  "item.10189.name": {
+    "src_hash": "bf28efa02d6ee5e3c9d823175b421301",
+    "text": "láhev extra mastného oleje",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:52:03.437848Z"
+  },
+  "item.1019.name": {
+    "src_hash": "ce1ca28266c962ae55f0a786013793d5",
+    "text": "džungle tráva",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:52:03.438108Z"
+  },
+  "item.10190.name": {
+    "src_hash": "c4f472440ff1cb095aa917bb4daa2be0",
+    "text": "mrtvý drakenský válečný velitel",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:52:03.438513Z"
+  },
+  "item.10191.name": {
+    "src_hash": "c4f472440ff1cb095aa917bb4daa2be0",
+    "text": "mrtvý drakenský válečný velitel",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:52:03.438835Z"
+  },
+  "item.10192.name": {
+    "src_hash": "c4f472440ff1cb095aa917bb4daa2be0",
+    "text": "mrtvý drakenský válečný velitel",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:52:03.439142Z"
+  },
+  "item.10193.name": {
+    "src_hash": "c4f472440ff1cb095aa917bb4daa2be0",
+    "text": "mrtvý drakenský válečný velitel",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:52:03.439478Z"
+  },
+  "item.10194.name": {
+    "src_hash": "feb706aed35979e15f25a1f15bb6f71f",
+    "text": "bambusová zásuvka",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:52:03.439734Z"
+  },
+  "item.10195.name": {
+    "src_hash": "79f7d2ef17285d43eb5819ce8fd4699a",
+    "text": "listy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:52:03.439932Z"
+  },
+  "item.10196.name": {
+    "src_hash": "108dd41b5aa8c784aec5f9101c11f1ad",
+    "text": "orkský zub",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:52:03.440142Z"
+  },
+  "item.10197.name": {
+    "src_hash": "ce1ca28266c962ae55f0a786013793d5",
+    "text": "džungle tráva",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:52:03.440397Z"
+  },
+  "item.10198.name": {
+    "src_hash": "0a6dcecfe4aa9c8c2ec49ab453984657",
+    "text": "kmenový erb",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:52:03.440634Z"
+  },
+  "item.10199.name": {
+    "src_hash": "9ca33c2744c767a83e7045f51bd5935c",
+    "text": "hadí hřeben",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:52:03.440869Z"
+  },
+  "item.102.name": {
+    "src_hash": "2357c882fbe6b5613c047cdba496334b",
+    "text": "bílý květ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:52:03.441095Z"
+  },
+  "item.10200.name": {
+    "src_hash": "82e304e7ef04a2a6b31bbabdc33ed9b3",
+    "text": "křišťálové boty",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:52:03.441330Z"
+  },
+  "item.10201.name": {
+    "src_hash": "06d4a8c785c1ed681288854d9af74c05",
+    "text": "boty z dračích šupin",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:52:03.441649Z"
+  },
+  "item.10202.name": {
+    "src_hash": "2c9020abf2bfa613ade54e932cc5761d",
+    "text": "batoh srdce",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:52:03.441896Z"
+  },
+  "item.10203.name": {
+    "src_hash": "28f61ed3699ca1c9a528636cf5d04021",
+    "text": "hromada lebky",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:52:03.442111Z"
+  },
+  "item.10205.name": {
+    "src_hash": "b00fcd304c378b1eea88e6d50f5a642a",
+    "text": "hromada kostí",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:52:03.442409Z"
+  },
+  "item.10206.name": {
+    "src_hash": "02df6ab0ddc16081bf6d400457d5d3c4",
+    "text": "kamenné schody",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:52:03.442648Z"
+  },
+  "item.10207.name": {
+    "src_hash": "3dad4960c0bca534f7b644707d6f35bf",
+    "text": "balíček sněhuláka",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:52:03.442901Z"
+  },
+  "item.10208.name": {
+    "src_hash": "b932a6ec0f3bef993326983f5c8808eb",
+    "text": "sněhulák",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:52:03.443101Z"
+  },
+  "item.10209.name": {
+    "src_hash": "11af29272a9b9fc23ef2b7f853795776",
+    "text": "sada nosiče zbraní pro ještěrky",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:52:03.443435Z"
+  },
+  "item.10210.name": {
+    "src_hash": "5451e3ed5604c536bb8c849f209da5b9",
+    "text": "stojan na ještěrčí zbraně",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:52:03.443729Z"
+  },
+  "item.10211.name": {
+    "src_hash": "5451e3ed5604c536bb8c849f209da5b9",
+    "text": "stojan na ještěrčí zbraně",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:52:03.444010Z"
+  },
+  "item.10212.name": {
+    "src_hash": "7131d1c878f058973254abc586e95e18",
+    "text": "socha draka",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:52:03.444241Z"
+  },
+  "item.10213.name": {
+    "src_hash": "7131d1c878f058973254abc586e95e18",
+    "text": "socha draka",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:52:03.444493Z"
+  },
+  "item.10214.name": {
+    "src_hash": "7131d1c878f058973254abc586e95e18",
+    "text": "socha draka",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:52:03.444725Z"
+  },
+  "item.10215.name": {
+    "src_hash": "7131d1c878f058973254abc586e95e18",
+    "text": "socha draka",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:52:03.444946Z"
+  },
+  "item.10216.name": {
+    "src_hash": "a5c37b0b99535230dcd569b7130cc54b",
+    "text": "stavebnice sochy draka",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:52:03.445244Z"
+  },
+  "item.10217.name": {
+    "src_hash": "910960a7c0b00d2d1e1209ff40d1381e",
+    "text": "Kniha Knowledge",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:52:03.445687Z"
+  },
+  "item.10218.name": {
+    "src_hash": "f9300686f5bdfa92fe3c8a12b3365fdb",
+    "text": "konzervovaná ryba",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:52:03.445948Z"
+  },
+  "item.10219.name": {
+    "src_hash": "e002ba7b4a12cf1f32203f0401207ff5",
+    "text": "krokodýlí steak",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:52:03.446198Z"
+  },
+  "item.10221.name": {
+    "src_hash": "4212181ee4e21c2ab9a4a71943c92c0e",
+    "text": "mrtvý zabiják kajman",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:52:03.446563Z"
+  },
+  "item.10222.name": {
+    "src_hash": "4212181ee4e21c2ab9a4a71943c92c0e",
+    "text": "mrtvý zabiják kajman",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:52:03.446849Z"
+  },
+  "item.10223.name": {
+    "src_hash": "4212181ee4e21c2ab9a4a71943c92c0e",
+    "text": "mrtvý zabiják kajman",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:52:03.447123Z"
+  },
+  "item.10224.name": {
+    "src_hash": "4212181ee4e21c2ab9a4a71943c92c0e",
+    "text": "mrtvý zabiják kajman",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:52:03.447426Z"
+  },
+  "item.10227.name": {
+    "src_hash": "092e30b8a679b0c3eab38f6cd63f79ce",
+    "text": "noční můra panenka",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:52:03.447689Z"
+  },
+  "item.10244.name": {
+    "src_hash": "cdc52e0f25dbe88246f4a9f0db43e517",
+    "text": "trofej kostní šelmy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:52:03.448208Z"
+  },
+  "item.10247.name": {
+    "src_hash": "22bc99e4f9c4d97053f643f4ecffacf6",
+    "text": "bedna se zbraněmi",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:52:03.448471Z"
+  },
+  "item.11210.name": {
+    "src_hash": "7131d1c878f058973254abc586e95e18",
+    "text": "socha draka",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T04:52:56.685630Z"
+  },
+  "item.1977.name": {
+    "src_hash": "02df6ab0ddc16081bf6d400457d5d3c4",
+    "text": "kamenné schody",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T04:52:56.701491Z"
+  },
+  "item.1978.name": {
+    "src_hash": "02df6ab0ddc16081bf6d400457d5d3c4",
+    "text": "kamenné schody",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T04:52:56.701829Z"
+  },
+  "item.2465.name": {
+    "src_hash": "feb706aed35979e15f25a1f15bb6f71f",
+    "text": "bambusová zásuvka",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T04:52:56.713973Z"
+  },
+  "item.2466.name": {
+    "src_hash": "feb706aed35979e15f25a1f15bb6f71f",
+    "text": "bambusová zásuvka",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T04:52:56.714283Z"
+  },
+  "item.2467.name": {
+    "src_hash": "feb706aed35979e15f25a1f15bb6f71f",
+    "text": "bambusová zásuvka",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T04:52:56.714545Z"
+  },
+  "item.2468.name": {
+    "src_hash": "feb706aed35979e15f25a1f15bb6f71f",
+    "text": "bambusová zásuvka",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T04:52:56.714839Z"
+  },
+  "item.30336.name": {
+    "src_hash": "b932a6ec0f3bef993326983f5c8808eb",
+    "text": "sněhulák",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T04:52:56.729133Z"
+  },
+  "item.3656.name": {
+    "src_hash": "2357c882fbe6b5613c047cdba496334b",
+    "text": "bílý květ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T04:52:56.745621Z"
+  },
+  "item.3695.name": {
+    "src_hash": "ce1ca28266c962ae55f0a786013793d5",
+    "text": "džungle tráva",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T04:52:56.747769Z"
+  },
+  "item.3696.name": {
+    "src_hash": "ce1ca28266c962ae55f0a786013793d5",
+    "text": "džungle tráva",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T04:52:56.748106Z"
+  },
+  "item.3701.name": {
+    "src_hash": "ce1ca28266c962ae55f0a786013793d5",
+    "text": "džungle tráva",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T04:52:56.748669Z"
+  },
+  "item.3702.name": {
+    "src_hash": "ce1ca28266c962ae55f0a786013793d5",
+    "text": "džungle tráva",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T04:52:56.748952Z"
+  },
+  "item.405.name": {
+    "src_hash": "22bc99e4f9c4d97053f643f4ecffacf6",
+    "text": "bedna se zbraněmi",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T04:52:56.755519Z"
+  },
+  "item.4254.name": {
+    "src_hash": "b00fcd304c378b1eea88e6d50f5a642a",
+    "text": "hromada kostí",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T04:52:56.757935Z"
+  },
+  "item.4271.name": {
+    "src_hash": "b00fcd304c378b1eea88e6d50f5a642a",
+    "text": "hromada kostí",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T04:52:56.758367Z"
+  },
+  "item.4276.name": {
+    "src_hash": "b00fcd304c378b1eea88e6d50f5a642a",
+    "text": "hromada kostí",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T04:52:56.758683Z"
+  },
+  "item.4280.name": {
+    "src_hash": "b00fcd304c378b1eea88e6d50f5a642a",
+    "text": "hromada kostí",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T04:52:56.758956Z"
+  },
+  "item.4285.name": {
+    "src_hash": "b00fcd304c378b1eea88e6d50f5a642a",
+    "text": "hromada kostí",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T04:52:56.759208Z"
+  },
+  "item.4298.name": {
+    "src_hash": "b00fcd304c378b1eea88e6d50f5a642a",
+    "text": "hromada kostí",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T04:52:56.759596Z"
+  },
+  "item.747.name": {
+    "src_hash": "7131d1c878f058973254abc586e95e18",
+    "text": "socha draka",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T04:52:56.777020Z"
+  },
+  "item.7748.name": {
+    "src_hash": "ce1ca28266c962ae55f0a786013793d5",
+    "text": "džungle tráva",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T04:52:56.777795Z"
+  },
+  "item.7888.name": {
+    "src_hash": "02df6ab0ddc16081bf6d400457d5d3c4",
+    "text": "kamenné schody",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T04:52:56.778480Z"
+  },
+  "item.855.name": {
+    "src_hash": "02df6ab0ddc16081bf6d400457d5d3c4",
+    "text": "kamenné schody",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T04:52:56.780664Z"
+  },
+  "item.856.name": {
+    "src_hash": "02df6ab0ddc16081bf6d400457d5d3c4",
+    "text": "kamenné schody",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T04:52:56.780912Z"
+  },
+  "item.9697.name": {
+    "src_hash": "c0e2289468f8376e785248a520b72014",
+    "text": "vzácný krystal",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T04:52:56.785469Z"
+  },
+  "item.10272.name": {
+    "src_hash": "a10eed158a96a24198c61013fc3a40cb",
+    "text": "krabí kleště",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:53:07.160534Z"
+  },
+  "item.10273.name": {
+    "src_hash": "d4456df84711920832024bfea9a04500",
+    "text": "terorbird zobák",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:53:07.160814Z"
+  },
+  "item.10274.name": {
+    "src_hash": "7d753eb0b3a91bd2673be6c9a41a7873",
+    "text": "skunk ocas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:53:07.161034Z"
+  },
+  "item.10275.name": {
+    "src_hash": "7a7bdb3cfb96189cee8a3b274dff7d0e",
+    "text": "mrchožrout tesák",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:53:07.161483Z"
+  },
+  "item.10276.name": {
+    "src_hash": "ca604850f968bb36a2e97ca9d3189618",
+    "text": "chapadlo staršího bonelorda",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:53:07.161814Z"
+  },
+  "item.10277.name": {
+    "src_hash": "ff07a5a0ea550902cea144efa4c26c88",
+    "text": "kostnatý ocas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:53:07.162042Z"
+  },
+  "item.10278.name": {
+    "src_hash": "3ec1cce69914c888518234ffbc8dcd4c",
+    "text": "kamenné křídlo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:53:07.162319Z"
+  },
+  "item.10279.name": {
+    "src_hash": "d1d1b936cc9f73ee9b81790464742d4e",
+    "text": "kus krokodýlí kůže",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:53:07.162683Z"
+  },
+  "item.10280.name": {
+    "src_hash": "2487ec3e5887b0d6975eb9e021220882",
+    "text": "obří oko",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:53:07.162907Z"
+  },
+  "item.10281.name": {
+    "src_hash": "afd439b99257c9a00c118d865ac5fcc1",
+    "text": "vejce tarantule",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:53:07.163138Z"
+  },
+  "item.10282.name": {
+    "src_hash": "c7d8fb7c100b1eaef2543f94776f7223",
+    "text": "hlava hydry",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:53:07.163348Z"
+  },
+  "item.10283.name": {
+    "src_hash": "7a89c42b9c239f19082d6d687c0d44ff",
+    "text": "napůl strávený kus masa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:53:07.163707Z"
+  },
+  "item.10286.name": {
+    "src_hash": "efd63614fe94d229f57de216233fb89c",
+    "text": "dračí trůn",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:53:07.163950Z"
+  },
+  "item.10287.name": {
+    "src_hash": "efd63614fe94d229f57de216233fb89c",
+    "text": "dračí trůn",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:53:07.164184Z"
+  },
+  "item.10288.name": {
+    "src_hash": "48abff4f3c8ca9969884c4c2101279d7",
+    "text": "souprava dračího trůnu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:53:07.164487Z"
+  },
+  "item.10289.name": {
+    "src_hash": "8d58a849efe72bf104c97ad52a9de0e6",
+    "text": "červená lucerna",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:53:07.164722Z"
+  },
+  "item.10290.name": {
+    "src_hash": "b75a25495c0245871b59e4ff4bd78ec7",
+    "text": "mini mumie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:53:07.164930Z"
+  },
+  "item.10291.name": {
+    "src_hash": "71092a873f395637a3f8bf76ef2da618",
+    "text": "shnilý kus látky",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:53:07.165215Z"
+  },
+  "item.10292.name": {
+    "src_hash": "1aeed4210790afb32bcf828b09ed6b1c",
+    "text": "hedvábná srst",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:53:19.921008Z"
+  },
+  "item.10293.name": {
+    "src_hash": "6f552cbd214da9f216e0992b1ae1906b",
+    "text": "pruhovaná srst",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:53:19.921254Z"
+  },
+  "item.10294.name": {
+    "src_hash": "a729c5bbec6770913a0fadb3600b5644",
+    "text": "vycpaná ropucha",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:53:19.921522Z"
+  },
+  "item.10295.name": {
+    "src_hash": "90cf458e1e33ec9b684fc8baa78a9771",
+    "text": "zimní vlčí kožešina",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:53:19.921789Z"
+  },
+  "item.10296.name": {
+    "src_hash": "ece8e3803fb3b8e5e081f3c90abea858",
+    "text": "žalud",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:53:19.921990Z"
+  },
+  "item.10297.name": {
+    "src_hash": "30bcf1207738a7e1218e9cc426e228b0",
+    "text": "parohy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:53:19.922187Z"
+  },
+  "item.10298.name": {
+    "src_hash": "adec68888bb0f86b0d2ccb7f9d99140f",
+    "text": "kovový hrot",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:53:19.922503Z"
+  },
+  "item.10299.name": {
+    "src_hash": "9269e34558de79bfe1e38796e2e9cd9e",
+    "text": "jezevčí srst",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:53:19.922737Z"
+  },
+  "item.103.name": {
+    "src_hash": "c90b1198f689dd950d51142e65a44c81",
+    "text": "špína",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:53:19.922933Z"
+  },
+  "item.10300.name": {
+    "src_hash": "648a0ce319a658f0e9477eff441e1aed",
+    "text": "semena carniphila",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:53:19.923190Z"
+  },
+  "item.10301.name": {
+    "src_hash": "ff26275e2c36257210572b2c536d78ee",
+    "text": "stonožková noha",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:53:19.923426Z"
+  },
+  "item.10302.name": {
+    "src_hash": "869d7b08ed596dbaadf3e827ce9dbd88",
+    "text": "kompas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:53:19.923620Z"
+  },
+  "item.10303.name": {
+    "src_hash": "eca35ff99054b0852920ec165d4e0734",
+    "text": "temný růženec",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:53:19.923840Z"
+  },
+  "item.10304.name": {
+    "src_hash": "a6f2ec5291f19a8a05f401fe553601c3",
+    "text": "hellspawn ocas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:53:19.924073Z"
+  },
+  "item.10305.name": {
+    "src_hash": "92d1b5a3ca53a96f9c786b87d7807a0a",
+    "text": "kus země",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:53:19.924303Z"
+  },
+  "item.10306.name": {
+    "src_hash": "ec98bcab585b9e48d89dfc985a77455f",
+    "text": "esence špatného snu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:53:19.924600Z"
+  },
+  "item.10307.name": {
+    "src_hash": "7afd5bed67b66a4a2d9b47e5b0721a15",
+    "text": "hustá srst",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:53:19.924815Z"
+  },
+  "item.10308.name": {
+    "src_hash": "ce041dac1cc84ec74f3fcad474b9d0a6",
+    "text": "zmutované maso",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:53:19.925046Z"
+  },
+  "item.10309.name": {
+    "src_hash": "c752a633fac9d8b23b5fef3fdc67a11f",
+    "text": "pramen vlasů medúzy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:53:31.593783Z"
+  },
+  "item.10310.name": {
+    "src_hash": "e9284a43d184f9ab54404ee6367ba714",
+    "text": "lesklý kámen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:53:31.594029Z"
+  },
+  "item.10311.name": {
+    "src_hash": "801d49ef5d0b22c3e85b179f5edf74fd",
+    "text": "šavlozub",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:53:31.594244Z"
+  },
+  "item.10312.name": {
+    "src_hash": "0864cee69182583b50302ead6c9ab9a2",
+    "text": "kosa noha",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:53:31.594546Z"
+  },
+  "item.10313.name": {
+    "src_hash": "e0314d9b60aebbbbd8d8bbc182c4c3bc",
+    "text": "okřídlený ocas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:53:31.594777Z"
+  },
+  "item.10314.name": {
+    "src_hash": "5352a9cf8423ca616d3079263ed97363",
+    "text": "květ kopřivy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:53:31.595014Z"
+  },
+  "item.10315.name": {
+    "src_hash": "06ef3decc6d627d2b121cc380b0a87c7",
+    "text": "sirný kámen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:53:31.595270Z"
+  },
+  "item.10316.name": {
+    "src_hash": "4266580860c8ca55ed261210dd9cdd65",
+    "text": "bezbožná kost",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:53:31.595493Z"
+  },
+  "item.10317.name": {
+    "src_hash": "9be089ec9fcf39dd5f944a55e9959098",
+    "text": "vlkodlačí srst",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:53:31.595715Z"
+  },
+  "item.10318.name": {
+    "src_hash": "143eec50bc23ca5d787b2fa786bd2051",
+    "text": "vlčí kožešina",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:53:31.595930Z"
+  },
+  "item.10319.name": {
+    "src_hash": "27a18ca062a4121b180022c59e1c0d25",
+    "text": "vlna",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:53:31.596122Z"
+  },
+  "item.10320.name": {
+    "src_hash": "a4e41a29f24a163a9c6d6ccbdc280f20",
+    "text": "kniha nekromantických rituálů",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:53:31.596444Z"
+  },
+  "item.10321.name": {
+    "src_hash": "36428b55670c8882c1db63f7c9e29ede",
+    "text": "mamutí kel",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:53:31.596719Z"
+  },
+  "item.10322.name": {
+    "src_hash": "a643f0c67dc8358d762c267269f52f9f",
+    "text": "socha",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:53:31.597055Z"
+  },
+  "item.10323.name": {
+    "src_hash": "f8615c4e06ac78ad253b643eecb893a5",
+    "text": "strážní boty",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:53:31.597320Z"
+  },
+  "item.10324.name": {
+    "src_hash": "388cc25f567c8efa9eafbbb8d7a4e50d",
+    "text": "expediční batoh",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:53:31.597598Z"
+  },
+  "item.10325.name": {
+    "src_hash": "264693254b1a770a4a1e7865f127dc80",
+    "text": "expediční taška",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:53:31.597842Z"
+  },
+  "item.10326.name": {
+    "src_hash": "0b29a3403d3193814ebf74b236081849",
+    "text": "dračí batoh",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:53:31.598121Z"
   }
 }

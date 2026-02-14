@@ -1,0 +1,238 @@
+{
+  "cycles": 49,
+  "date": "2026-02-14",
+  "errors": {
+    "count": 232
+  },
+  "generated_at_utc": "2026-02-14T06:10:13Z",
+  "work": {
+    "auto_translate": {
+      "langs": {
+        "?": {
+          "skipped": 0,
+          "translated": 0
+        },
+        "AR": {
+          "skipped": 0,
+          "translated": 320
+        },
+        "AZ": {
+          "skipped": 0,
+          "translated": 320
+        },
+        "BG": {
+          "skipped": 0,
+          "translated": 320
+        },
+        "BN": {
+          "skipped": 0,
+          "translated": 320
+        },
+        "BS": {
+          "skipped": 0,
+          "translated": 320
+        },
+        "CS": {
+          "skipped": 0,
+          "translated": 320
+        },
+        "DA": {
+          "skipped": 0,
+          "translated": 240
+        },
+        "DE": {
+          "skipped": 0,
+          "translated": 800
+        },
+        "EL": {
+          "skipped": 0,
+          "translated": 320
+        },
+        "ES": {
+          "skipped": 0,
+          "translated": 5210
+        },
+        "ET": {
+          "skipped": 0,
+          "translated": 320
+        },
+        "FA": {
+          "skipped": 0,
+          "translated": 320
+        },
+        "FI": {
+          "skipped": 0,
+          "translated": 320
+        },
+        "FR": {
+          "skipped": 0,
+          "translated": 800
+        },
+        "HE": {
+          "skipped": 0,
+          "translated": 320
+        },
+        "HI": {
+          "skipped": 0,
+          "translated": 320
+        },
+        "HR": {
+          "skipped": 0,
+          "translated": 320
+        },
+        "HU": {
+          "skipped": 0,
+          "translated": 320
+        },
+        "HY": {
+          "skipped": 0,
+          "translated": 240
+        },
+        "ID": {
+          "skipped": 0,
+          "translated": 240
+        },
+        "IT": {
+          "skipped": 0,
+          "translated": 647
+        },
+        "JA": {
+          "skipped": 0,
+          "translated": 257
+        },
+        "KA": {
+          "skipped": 0,
+          "translated": 320
+        },
+        "KK": {
+          "skipped": 0,
+          "translated": 320
+        },
+        "KO": {
+          "skipped": 0,
+          "translated": 314
+        },
+        "LT": {
+          "skipped": 0,
+          "translated": 320
+        },
+        "LV": {
+          "skipped": 0,
+          "translated": 320
+        },
+        "MK": {
+          "skipped": 0,
+          "translated": 320
+        },
+        "ML": {
+          "skipped": 0,
+          "translated": 320
+        },
+        "MS": {
+          "skipped": 0,
+          "translated": 240
+        },
+        "NL": {
+          "skipped": 0,
+          "translated": 320
+        },
+        "NO": {
+          "skipped": 0,
+          "translated": 320
+        },
+        "PL": {
+          "skipped": 0,
+          "translated": 782
+        },
+        "PT": {
+          "skipped": 0,
+          "translated": 800
+        },
+        "RO": {
+          "skipped": 0,
+          "translated": 320
+        },
+        "RU": {
+          "skipped": 0,
+          "translated": 647
+        },
+        "SK": {
+          "skipped": 0,
+          "translated": 320
+        },
+        "SL": {
+          "skipped": 0,
+          "translated": 320
+        },
+        "SQ": {
+          "skipped": 0,
+          "translated": 320
+        },
+        "SR": {
+          "skipped": 0,
+          "translated": 231
+        },
+        "SV": {
+          "skipped": 0,
+          "translated": 320
+        },
+        "SW": {
+          "skipped": 0,
+          "translated": 320
+        },
+        "TA": {
+          "skipped": 0,
+          "translated": 240
+        },
+        "TE": {
+          "skipped": 0,
+          "translated": 320
+        },
+        "TH": {
+          "skipped": 0,
+          "translated": 320
+        },
+        "TL": {
+          "skipped": 0,
+          "translated": 320
+        },
+        "TR": {
+          "skipped": 0,
+          "translated": 647
+        },
+        "UK": {
+          "skipped": 0,
+          "translated": 320
+        },
+        "UZ": {
+          "skipped": 0,
+          "translated": 320
+        },
+        "VI": {
+          "skipped": 0,
+          "translated": 320
+        },
+        "ZH": {
+          "skipped": 0,
+          "translated": 231
+        },
+        "ZH_TW": {
+          "skipped": 0,
+          "translated": 202
+        }
+      }
+    },
+    "compact_keys": {
+      "exported_langs": [],
+      "mapped_new": 0
+    },
+    "migration": {
+      "categories_touched": [],
+      "files_changed": 0,
+      "keys_added": 0
+    },
+    "translation_sync": {
+      "langs": {}
+    }
+  }
+}

@@ -9234,9 +9234,14 @@ SYNCPY
 # 3) wybiera kolejny target wg priorytetu lang + domeny i uruchamia auto_translate_keys
 # Wywoływane co N cykli po standardowej translacji.
 #===============================================================================
-REPAIR_IDENTICAL_INTERVAL="${REPAIR_IDENTICAL_INTERVAL:-3}"
-REPAIR_IDENTICAL_LIMIT="${REPAIR_IDENTICAL_LIMIT:-200}"
+REPAIR_IDENTICAL_INTERVAL="${REPAIR_IDENTICAL_INTERVAL:-2}"
+REPAIR_IDENTICAL_LIMIT="${REPAIR_IDENTICAL_LIMIT:-300}"
 REPAIR_PRIORITY_LANGS="${REPAIR_PRIORITY_LANGS:-es pl}"
+REPAIR_IDENTICAL_LIMIT_HIGH="${REPAIR_IDENTICAL_LIMIT_HIGH:-380}"
+REPAIR_IDENTICAL_LIMIT_LOW="${REPAIR_IDENTICAL_LIMIT_LOW:-180}"
+REPAIR_IDENTICAL_HIGH_BACKLOG="${REPAIR_IDENTICAL_HIGH_BACKLOG:-1500}"
+REPAIR_IDENTICAL_LOW_BACKLOG="${REPAIR_IDENTICAL_LOW_BACKLOG:-350}"
+REPAIR_IDENTICAL_FORCE_GT="${REPAIR_IDENTICAL_FORCE_GT:-true}"
 
 repair_identical_bonus_round() {
     local cycle="$1"
@@ -9432,11 +9437,52 @@ REPAIR_SELECT_PY
     
     echo "   🎯 REPAIR target: $R_LANG/$R_FILE ($R_COUNT identical_to_en translatable)"
     
-    # Zapisz obecny limit i ustaw podwyższony
+    # Adaptacyjne strojenie limitu naprawy na podstawie wielkości backlogu.
+    local repair_limit="$REPAIR_IDENTICAL_LIMIT"
+    local repair_limit_tier="base"
+    if [ "${R_COUNT:-0}" -ge "${REPAIR_IDENTICAL_HIGH_BACKLOG:-1500}" ] 2>/dev/null; then
+        repair_limit="$REPAIR_IDENTICAL_LIMIT_HIGH"
+        repair_limit_tier="high_backlog"
+    elif [ "${R_COUNT:-0}" -le "${REPAIR_IDENTICAL_LOW_BACKLOG:-350}" ] 2>/dev/null; then
+        repair_limit="$REPAIR_IDENTICAL_LIMIT_LOW"
+        repair_limit_tier="low_backlog"
+    fi
+    case "${repair_limit:-}" in
+        ''|*[!0-9]*)
+            repair_limit="$REPAIR_IDENTICAL_LIMIT"
+            repair_limit_tier="${repair_limit_tier}_fallback_base"
+            ;;
+    esac
+    if [ "${repair_limit:-0}" -le 0 ] 2>/dev/null; then
+        repair_limit="$REPAIR_IDENTICAL_LIMIT"
+        repair_limit_tier="${repair_limit_tier}_fallback_base"
+    fi
+    if [ "${repair_limit:-0}" -le 0 ] 2>/dev/null; then
+        repair_limit=300
+        repair_limit_tier="${repair_limit_tier}_fallback_hard"
+    fi
+
+    # W rundzie repair dla PL/ES można wymusić GT, żeby szybciej zbijać EN-copy.
+    local orig_use_gt="${USE_GOOGLE_TRANSLATE:-false}"
+    local repair_gt_mode="$orig_use_gt"
+    local repair_gt_forced="false"
+    case "$(echo "${REPAIR_IDENTICAL_FORCE_GT:-true}" | tr '[:upper:]' '[:lower:]')" in
+        1|true|yes|on)
+            if [ "$orig_use_gt" != "true" ] && { [ "$R_LANG" = "es" ] || [ "$R_LANG" = "pl" ]; }; then
+                export USE_GOOGLE_TRANSLATE=true
+                repair_gt_mode="true"
+                repair_gt_forced="true"
+            fi
+            ;;
+    esac
+
+    echo "   🎚️ REPAIR tuning: tier=$repair_limit_tier limit=$repair_limit gt=$repair_gt_mode"
+
+    # Zapisz obecny limit i ustaw limit rundy repair
     local orig_limit="${TRANSLATE_LIMIT:-80}"
-    export TRANSLATE_LIMIT="$REPAIR_IDENTICAL_LIMIT"
+    export TRANSLATE_LIMIT="$repair_limit"
     
-    # Uruchom auto_translate_keys z podwyższonym limitem
+    # Uruchom auto_translate_keys z limitem repair
     local R_TRANSLATED R_PLACEHOLDERS R_GUARD_FAIL R_GUARD_PH R_GUARD_CMD R_GUARD_PIPE R_SKIP_FILE R_SKIP_KEY R_SKIP_DONE
     read -r R_TRANSLATED R_PLACEHOLDERS R_GUARD_FAIL R_GUARD_PH R_GUARD_CMD R_GUARD_PIPE R_SKIP_FILE R_SKIP_KEY R_SKIP_DONE <<< "$(auto_translate_keys "$R_LANG" "$R_FILE" "$R_COUNT")"
     R_TRANSLATED=${R_TRANSLATED:-0}
@@ -9444,11 +9490,14 @@ REPAIR_SELECT_PY
     
     # Przywróć limit
     export TRANSLATE_LIMIT="$orig_limit"
+    if [ "$repair_gt_forced" = "true" ]; then
+        export USE_GOOGLE_TRANSLATE="$orig_use_gt"
+    fi
     
-    echo "   📊 REPAIR result: translated=$R_TRANSLATED guard_fail=$R_GUARD_FAIL (limit=$REPAIR_IDENTICAL_LIMIT)"
+    echo "   📊 REPAIR result: translated=$R_TRANSLATED guard_fail=$R_GUARD_FAIL (limit=$repair_limit tier=$repair_limit_tier gt=$repair_gt_mode)"
     
     # Loguj operację repair
-    status_log_op "$cycle" "AUTO_TRANSLATE" "REPAIR_IDENTICAL_DONE" "$R_LANG" "$R_FILE" "ok" "repair_identical lang=${R_LANG} file=${R_FILE} target_identical=${R_COUNT}" "" "" "" "$R_TRANSLATED" ""
+    status_log_op "$cycle" "AUTO_TRANSLATE" "REPAIR_IDENTICAL_DONE" "$R_LANG" "$R_FILE" "ok" "repair_identical lang=${R_LANG} file=${R_FILE} target_identical=${R_COUNT} limit=${repair_limit} tier=${repair_limit_tier} gt=${repair_gt_mode}" "" "" "" "$R_TRANSLATED" ""
     
     # Wyczyść cache selektora (repair zmienił dane)
     rm -f "$STATUS_DIR/translation_strict_candidates_cache.json" 2>/dev/null || true

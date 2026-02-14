@@ -38,5 +38,3205 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-13T00:01:07.669892Z"
+  },
+  "npc.a_dragon_mother.multi_3": {
+    "src_hash": "c6a0aabd2af804ac1f00c1504af5edf4",
+    "text": "Grrr.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.473051Z"
+  },
+  "npc.a_weakened_forest_fury.say_4": {
+    "src_hash": "055d4f5ac2a5439f55bddb2343c0a757",
+    "text": "Take care, guardian.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.478261Z"
+  },
+  "npc.albinius.say_10": {
+    "src_hash": "8ebe07d7adacdd880130a981ebf53704",
+    "text": "As you wish.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.487232Z"
+  },
+  "npc.alesar.say_5": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.488722Z"
+  },
+  "npc.alesar_functions.say_3": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.489504Z"
+  },
+  "npc.alkestios.say_4": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.491998Z"
+  },
+  "npc.alwin.say_1": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Take this!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.493338Z"
+  },
+  "npc.andrew_lyze.say_14": {
+    "src_hash": "69ce05199222d304e8f82cb747eed8ab",
+    "text": "Don't waste my time.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.500476Z"
+  },
+  "npc.appaloosa.say_5": {
+    "src_hash": "cc67edbe5929572b201f9b2aa0f478f9",
+    "text": "Have a nice trip!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.504226Z"
+  },
+  "npc.appaloosa.say_9": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.504736Z"
+  },
+  "npc.ariella.say_15": {
+    "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
+    "text": "I see.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.505749Z"
+  },
+  "npc.arnold.say_1": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Take this!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.507701Z"
+  },
+  "npc.atrad.say_3": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.509004Z"
+  },
+  "npc.aurita.say_1": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.509703Z"
+  },
+  "npc.avar_tar.say_5": {
+    "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
+    "text": "I see.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.510257Z"
+  },
+  "npc.awarness_of_the_emperor.say_1": {
+    "src_hash": "706b1a009354e93f05beff4ba2e0a628",
+    "text": "SO BE IT!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.510914Z"
+  },
+  "npc.bambi_bonecrusher.say_1": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Take this!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.512796Z"
+  },
+  "npc.barbara.say_3": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Take this!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.514345Z"
+  },
+  "npc.blossom_bonecrusher.say_1": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Take this!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.519941Z"
+  },
+  "npc.brodrosch.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Good bye.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.529953Z"
+  },
+  "npc.brodrosch.say_5": {
+    "src_hash": "12d673409d71f1fc127ebad108378378",
+    "text": "No then.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.530489Z"
+  },
+  "npc.brodrosch.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Good bye then.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.531525Z"
+  },
+  "npc.busty_bonecrusher.say_1": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Take this!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.536080Z"
+  },
+  "npc.captain_seahorse.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Good bye then.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.551248Z"
+  },
+  "npc.chester_kahs.say_23": {
+    "src_hash": "8ebe07d7adacdd880130a981ebf53704",
+    "text": "As you wish.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.561781Z"
+  },
+  "npc.chondur.say_18": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.565978Z"
+  },
+  "npc.christoph.say_1": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Take this!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.567290Z"
+  },
+  "npc.cillia.say_3": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.568553Z"
+  },
+  "npc.dalbrect.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Good bye.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.589503Z"
+  },
+  "npc.dancing_fairy.say_1": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.592879Z"
+  },
+  "npc.dedoras.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Well, bye then.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.596043Z"
+  },
+  "npc.demonguard.say_1": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Take this!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.596465Z"
+  },
+  "npc.dukosch.say_5": {
+    "src_hash": "12d673409d71f1fc127ebad108378378",
+    "text": "No then.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.601151Z"
+  },
+  "npc.duncan.say_12": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.601873Z"
+  },
+  "npc.duncan.say_14": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.602554Z"
+  },
+  "npc.duncan.say_15": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.603157Z"
+  },
+  "npc.duncan.say_17": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.603847Z"
+  },
+  "npc.duncan.say_19": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.604395Z"
+  },
+  "npc.elane.say_11": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.610168Z"
+  },
+  "npc.elane.say_13": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.610930Z"
+  },
+  "npc.elane.say_15": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.611543Z"
+  },
+  "npc.elane.say_9": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.612127Z"
+  },
+  "npc.emma.say_14": {
+    "src_hash": "8ebe07d7adacdd880130a981ebf53704",
+    "text": "As you wish.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.618506Z"
+  },
+  "npc.example_merchant.name": {
+    "src_hash": "16373b8c3c6c497895786de3804c2e0c",
+    "text": "My name is Marcus. I run this shop.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.625602Z"
+  },
+  "npc.farhilorn_of_the_winter_court.say_3": {
+    "src_hash": "8ebe07d7adacdd880130a981ebf53704",
+    "text": "As you wish.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.627984Z"
+  },
+  "npc.fenbala.say_3": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Take this!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.628763Z"
+  },
+  "npc.ferks.farewell_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Have a nice day.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.629690Z"
+  },
+  "npc.ferks.walkaway_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Have a nice day.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.630253Z"
+  },
+  "npc.gabel.say_6": {
+    "src_hash": "8ebe07d7adacdd880130a981ebf53704",
+    "text": "As you wish.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.639538Z"
+  },
+  "npc.gewen.say_5": {
+    "src_hash": "12d673409d71f1fc127ebad108378378",
+    "text": "No then.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.649548Z"
+  },
+  "npc.ghostly_wolf.say_4": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.653652Z"
+  },
+  "npc.gnomus.say_10": {
+    "src_hash": "69ce05199222d304e8f82cb747eed8ab",
+    "text": "Don't waste my time.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.660280Z"
+  },
+  "npc.gnomus.say_11": {
+    "src_hash": "f5940523060652e3a7d9c269ce48de50",
+    "text": "Done.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.660545Z"
+  },
+  "npc.gnomus.say_13": {
+    "src_hash": "f5940523060652e3a7d9c269ce48de50",
+    "text": "Done.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.660788Z"
+  },
+  "npc.gnomus.say_15": {
+    "src_hash": "f5940523060652e3a7d9c269ce48de50",
+    "text": "Done.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.661020Z"
+  },
+  "npc.guide_alexena.say_2": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Here you go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.676444Z"
+  },
+  "npc.guide_behil.say_2": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Here you go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.677703Z"
+  },
+  "npc.guide_davina.say_2": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Here you go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.678975Z"
+  },
+  "npc.guide_edna.say_2": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Here you go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.680135Z"
+  },
+  "npc.guide_elena.say_2": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Here you go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.681412Z"
+  },
+  "npc.guide_jonathan.say_2": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Here you go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.682588Z"
+  },
+  "npc.guide_kunibert.say_2": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Here you go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.683703Z"
+  },
+  "npc.guide_luke.say_2": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Here you go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.684971Z"
+  },
+  "npc.guide_rahlkora.say_2": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Here you go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.686342Z"
+  },
+  "npc.guide_thelandil.say_2": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Here you go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.687798Z"
+  },
+  "npc.guide_tiko.say_2": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Here you go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.688838Z"
+  },
+  "npc.gurbasch.walkaway_msg_1": {
+    "src_hash": "8c767380dfcf1e12c4c84eef6324bdca",
+    "text": "Until next time.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.690667Z"
+  },
+  "npc.hairycles.say_66": {
+    "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
+    "text": "I see.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.692334Z"
+  },
+  "npc.hanna.say_10": {
+    "src_hash": "ebaeda37e982b71a905f5f1995285a85",
+    "text": "Maybe another time.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.696027Z"
+  },
+  "npc.harsky.say_3": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Take this!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.697601Z"
+  },
+  "npc.hjaern.say_15": {
+    "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
+    "text": "I see.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.702428Z"
+  },
+  "npc.ikassis.say_3": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.708865Z"
+  },
+  "npc.jack_fate_goroma.say_7": {
+    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
+    "text": "Set the sails!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.730338Z"
+  },
+  "npc.jean_claude.say_1": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Take this!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.733814Z"
+  },
+  "npc.kallimae.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Well, bye then.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.739994Z"
+  },
+  "npc.karith.say_10": {
+    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
+    "text": "Set the sails!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.740785Z"
+  },
+  "npc.karith.say_12": {
+    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
+    "text": "Set the sails!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.741273Z"
+  },
+  "npc.karith.say_14": {
+    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
+    "text": "Set the sails!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.741797Z"
+  },
+  "npc.karith.say_16": {
+    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
+    "text": "Set the sails!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.742293Z"
+  },
+  "npc.karith.say_18": {
+    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
+    "text": "Set the sails!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:14:06.742816Z"
+  },
+  "item.21351.name": {
+    "src_hash": "03944c28dd1d99648eda34c26d3de4ac",
+    "text": "Light Stone Shower Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:27.289197Z"
+  },
+  "item.21352.name": {
+    "src_hash": "31cd2c4b8700d3fba06777b6f804dbdd",
+    "text": "Lightest Missile Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:27.290342Z"
+  },
+  "item.21393.name": {
+    "src_hash": "4c50203dd80176e84e2da2675073da00",
+    "text": "krailos",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:27.291454Z"
+  },
+  "item.21432.name": {
+    "src_hash": "31cd2c4b8700d3fba06777b6f804dbdd",
+    "text": "Lightest Missile Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:27.292597Z"
+  },
+  "item.21434.name": {
+    "src_hash": "03944c28dd1d99648eda34c26d3de4ac",
+    "text": "Light Stone Shower Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:27.293665Z"
+  },
+  "item.24966.name": {
+    "src_hash": "7c7004d4846601f4cc710309ded176ef",
+    "text": "Forbidden Fruit",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:27.307020Z"
+  },
+  "item.29276.name": {
+    "src_hash": "2f00d19e4fb2d9e1c321035e9ad9a8d2",
+    "text": "Dream Catcher",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:27.315116Z"
+  },
+  "item.30215.name": {
+    "src_hash": "7bdff76536f12a7c5ffde207e72cfe3a",
+    "text": "ice",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:27.317740Z"
+  },
+  "item.30218.name": {
+    "src_hash": "7bdff76536f12a7c5ffde207e72cfe3a",
+    "text": "ice",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:27.317985Z"
+  },
+  "item.30273.name": {
+    "src_hash": "7bdff76536f12a7c5ffde207e72cfe3a",
+    "text": "ice",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:27.318548Z"
+  },
+  "item.3051.name": {
+    "src_hash": "c193d863e3cfa9eb7c10c24bc406c615",
+    "text": "energy ring",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:27.319500Z"
+  },
+  "item.3088.name": {
+    "src_hash": "c193d863e3cfa9eb7c10c24bc406c615",
+    "text": "energy ring",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:27.320202Z"
+  },
+  "item.3147.name": {
+    "src_hash": "967513bc0728d5d1211f01974ab4dee5",
+    "text": "Blank Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:27.322155Z"
+  },
+  "item.3148.name": {
+    "src_hash": "108014137d9b1b568bc5809b2ae08993",
+    "text": "Destroy Field Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:27.322690Z"
+  },
+  "item.3149.name": {
+    "src_hash": "cb4d58d9f24fa57abff821799c9fc94f",
+    "text": "Energy Bomb Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:27.323248Z"
+  },
+  "item.3152.name": {
+    "src_hash": "33956e826a4ef3b5c532347fc58fc51a",
+    "text": "Intense Healing Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:27.323804Z"
+  },
+  "item.3153.name": {
+    "src_hash": "e9b8ea43be6033af680c3a1498536208",
+    "text": "Cure Poison Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:27.324309Z"
+  },
+  "item.3155.name": {
+    "src_hash": "fb18e4528342a1c41cbe37d70830a516",
+    "text": "Sudden Death Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:27.324819Z"
+  },
+  "item.3156.name": {
+    "src_hash": "9dc8d6d2135459483a32e42f4c71bfae",
+    "text": "Wild Growth Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:27.325334Z"
+  },
+  "item.3158.name": {
+    "src_hash": "a63c57be298a194a943475aa554f5f78",
+    "text": "Icicle Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:27.325837Z"
+  },
+  "item.3160.name": {
+    "src_hash": "b25b53c822bcd98974fcaa1fbf8fb0aa",
+    "text": "Ultimate Healing Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:27.326452Z"
+  },
+  "item.3161.name": {
+    "src_hash": "cab3c5eb8827f3e61c150d57ca197f88",
+    "text": "Avalanche Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:27.326879Z"
+  },
+  "item.3164.name": {
+    "src_hash": "f60e5a60c1b758e59152ab854051f6f2",
+    "text": "Energy Field Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:27.327490Z"
+  },
+  "item.3166.name": {
+    "src_hash": "9afbdfa527777fc5d260fcd1dd0f4094",
+    "text": "Energy Wall Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:27.328026Z"
+  },
+  "item.3172.name": {
+    "src_hash": "29bdf0054473b50fa81a1b59875edbf9",
+    "text": "Poison Field Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:27.328687Z"
+  },
+  "item.3173.name": {
+    "src_hash": "858721d74877cf4710ed54517d35713d",
+    "text": "Poison Bomb Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:27.329257Z"
+  },
+  "item.3174.name": {
+    "src_hash": "ea8aea2d9723287e660b1406fec99eb1",
+    "text": "Light Magic Missile Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:27.329821Z"
+  },
+  "item.3175.name": {
+    "src_hash": "25854a690aad0b2f569b5c34e1691b91",
+    "text": "Stone Shower Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:27.330254Z"
+  },
+  "item.3176.name": {
+    "src_hash": "78e6136805ee4ea8f53e60caf96a394b",
+    "text": "Poison Wall Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:27.330749Z"
+  },
+  "item.3177.name": {
+    "src_hash": "961fd74b70425c951d4cbbb14b6479e3",
+    "text": "Convince Creature Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:27.331209Z"
+  },
+  "item.3178.name": {
+    "src_hash": "013606651a891a3bd1001805d0da726e",
+    "text": "Chameleon Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:27.331652Z"
+  },
+  "item.3179.name": {
+    "src_hash": "210691f016709d7398e1d323b9da8859",
+    "text": "Stalagmite Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:27.332068Z"
+  },
+  "item.3180.name": {
+    "src_hash": "130859064dcec73dfefffb635fd5b0c6",
+    "text": "Magic Wall Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:27.332512Z"
+  },
+  "item.3182.name": {
+    "src_hash": "79269881630466ca0eca7525a026c059",
+    "text": "Holy Missile Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:27.332952Z"
+  },
+  "item.3188.name": {
+    "src_hash": "bf99d79327d646790c45047cc04d8182",
+    "text": "Fire Field Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:27.333394Z"
+  },
+  "item.3189.name": {
+    "src_hash": "9fa403a008c2a7bb5138a129f950d02b",
+    "text": "Fireball Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:27.333798Z"
+  },
+  "item.3190.name": {
+    "src_hash": "5eb3ba2aca23558a99f38c4ac773a913",
+    "text": "Fire Wall Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:27.334204Z"
+  },
+  "item.3191.name": {
+    "src_hash": "7997a69ae49a90c11c1136ac972bc953",
+    "text": "Great Fireball Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:27.334732Z"
+  },
+  "item.3192.name": {
+    "src_hash": "533a42d998f407c9860eda103d41854c",
+    "text": "Fire Bomb Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:27.335185Z"
+  },
+  "item.3195.name": {
+    "src_hash": "2f2f34b93816d3e6dc730a3b95d76e78",
+    "text": "Soulfire Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:27.335753Z"
+  },
+  "item.3197.name": {
+    "src_hash": "a20a2360568eda693272b183da79d321",
+    "text": "Disintegrate Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:27.336256Z"
+  },
+  "item.3198.name": {
+    "src_hash": "914de3c6825f6f3cb25da03b5fb65a8b",
+    "text": "Heavy Magic Missile Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:27.336753Z"
+  },
+  "item.3200.name": {
+    "src_hash": "22494ca9495b54d62a7467fd9018dc7f",
+    "text": "Explosion Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:27.337172Z"
+  },
+  "item.3202.name": {
+    "src_hash": "83a4224e6625714976b634a3099f2f6e",
+    "text": "Thunderstorm Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:27.337672Z"
+  },
+  "item.3203.name": {
+    "src_hash": "69c97276273d5b7f4faf11b058c37266",
+    "text": "Animate Dead Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:27.338114Z"
+  },
+  "item.3274.name": {
+    "src_hash": "c89ee4a2c9dcae6581ca53bff9aa4ee5",
+    "text": "axe",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:27.340266Z"
+  },
+  "item.36786.name": {
+    "src_hash": "8bac228393c7fc0a4f3ac1a0c4622505",
+    "text": "lavafungus ring",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:27.347213Z"
+  },
+  "item.7107.name": {
+    "src_hash": "7bdff76536f12a7c5ffde207e72cfe3a",
+    "text": "ice",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:27.368096Z"
+  },
+  "item.7403.name": {
+    "src_hash": "d085749c93295c3002525428f3318cc1",
+    "text": "Berserker",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:27.369458Z"
+  },
+  "item.7740.name": {
+    "src_hash": "7bdff76536f12a7c5ffde207e72cfe3a",
+    "text": "ice",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:27.370506Z"
+  },
+  "item.800.name": {
+    "src_hash": "7bdff76536f12a7c5ffde207e72cfe3a",
+    "text": "ice",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:27.371599Z"
+  },
+  "item.1.name": {
+    "src_hash": "9460370bb0ca1c98a779b1bcc6861c2c",
+    "text": "вода",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:42.187460Z"
+  },
+  "item.10.name": {
+    "src_hash": "90fbbee0c198b3f16d17271f8ca29d70",
+    "text": "манафлуид",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:42.187744Z"
+  },
+  "item.100.name": {
+    "src_hash": "cab8111fd0b710a336c898e539090e34",
+    "text": "празнина",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:42.187967Z"
+  },
+  "item.10000.name": {
+    "src_hash": "aa63b14cb9675819aa6ecea9feeb5d27",
+    "text": "солстициско дрво",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:42.188227Z"
+  },
+  "item.10009.name": {
+    "src_hash": "2b120bc99743cc25cc800661bd42f168",
+    "text": "колба за полирање на круна",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:42.188549Z"
+  },
+  "item.10010.name": {
+    "src_hash": "2476a5a90c029582282973dffc394319",
+    "text": "заоан декорација",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:42.188885Z"
+  },
+  "item.10011.name": {
+    "src_hash": "36227190a857cf681921d9bf34a765ad",
+    "text": "мапа на непознатото",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:42.189179Z"
+  },
+  "item.10025.name": {
+    "src_hash": "3f76a90627bb7b7ad4e71375df6aa29f",
+    "text": "алманах на магијата",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:42.189454Z"
+  },
+  "item.10026.name": {
+    "src_hash": "aabdddfc93cdfc8322f94b68f9cc0760",
+    "text": "бебешки црви",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:42.189725Z"
+  },
+  "item.10027.name": {
+    "src_hash": "c1bcf9b8357f67370e4599d8b21749be",
+    "text": "универзална алатка",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:42.189993Z"
+  },
+  "item.10028.name": {
+    "src_hash": "466a6bdf5ea677b6e1344f8bd3619a4a",
+    "text": "договор на душата",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:42.190243Z"
+  },
+  "item.1006.name": {
+    "src_hash": "eee3db73cf76cd1ca29c6c5d40f44fb4",
+    "text": "нерамни камења",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:42.190581Z"
+  },
+  "item.10069.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "противпожарно поле",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:42.190855Z"
+  },
+  "item.10070.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "противпожарно поле",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:42.191092Z"
+  },
+  "item.10071.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "противпожарно поле",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:42.191323Z"
+  },
+  "item.10096.name": {
+    "src_hash": "cd2878e9d8d9bd39b4e50c83b5990cc8",
+    "text": "оџак",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:42.191525Z"
+  },
+  "item.10097.name": {
+    "src_hash": "ffb79de3dd0555fb7a5ca7071a0c1b4a",
+    "text": "бибер трева",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:42.191787Z"
+  },
+  "item.10098.name": {
+    "src_hash": "8365620ffd40a47e8c1d7d5b5c7633cb",
+    "text": "висока трева",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:42.192024Z"
+  },
+  "item.101.name": {
+    "src_hash": "852488ddd9570bc877783bf4397563e0",
+    "text": "земјата",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:42.192232Z"
+  },
+  "item.10111.name": {
+    "src_hash": "ffb79de3dd0555fb7a5ca7071a0c1b4a",
+    "text": "бибер трева",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:42.192464Z"
+  },
+  "item.10112.name": {
+    "src_hash": "2aefe63ef336d4cc0262873f224fbe19",
+    "text": "кал песок трева",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:42.192743Z"
+  },
+  "item.1012.name": {
+    "src_hash": "74d7b04810e76e98881a64131caa3e87",
+    "text": "пенлив скапоцен камен",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:42.193004Z"
+  },
+  "item.10140.name": {
+    "src_hash": "3b2fa34af93b15d8e28dacad96e85076",
+    "text": "демонски остаток",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:42.193264Z"
+  },
+  "item.10159.name": {
+    "src_hash": "9fbf6b7186d409b5605c7eb845ed7443",
+    "text": "череп на пештерски човек",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:42.193553Z"
+  },
+  "item.10180.name": {
+    "src_hash": "418acd2dc26b4e76fa2db55ab2f3e659",
+    "text": "груд",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:42.193779Z"
+  },
+  "item.10181.name": {
+    "src_hash": "b191656e3ce1b7048b8d4510eb17cf22",
+    "text": "магичен ѕид",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:42.194014Z"
+  },
+  "item.10182.name": {
+    "src_hash": "33f19afbf6744c10a2e913608b22cb83",
+    "text": "брзање дрво",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:42.194239Z"
+  },
+  "item.10183.name": {
+    "src_hash": "166e86f69d6225986d74594875d5b86d",
+    "text": "колба со отров",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:42.194561Z"
+  },
+  "item.10184.name": {
+    "src_hash": "6a5213ef75be2d75ba25027c7e78be72",
+    "text": "тактичка карта",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:28:42.194837Z"
+  },
+  "npc.karith.say_20": {
+    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
+    "text": "Set the sails!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:42:35.855528Z"
+  },
+  "npc.karith.say_22": {
+    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
+    "text": "Set the sails!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:42:35.856126Z"
+  },
+  "npc.karith.say_24": {
+    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
+    "text": "Set the sails!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:42:35.856679Z"
+  },
+  "npc.karith.say_26": {
+    "src_hash": "69ce05199222d304e8f82cb747eed8ab",
+    "text": "Don't waste my time.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:42:35.857279Z"
+  },
+  "npc.kevin.say_46": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:42:35.862681Z"
+  },
+  "npc.lardoc_bashsmite.say_10": {
+    "src_hash": "f5940523060652e3a7d9c269ce48de50",
+    "text": "Done.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:42:35.869887Z"
+  },
+  "npc.lardoc_bashsmite.say_12": {
+    "src_hash": "f5940523060652e3a7d9c269ce48de50",
+    "text": "Done.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:42:35.870147Z"
+  },
+  "npc.lardoc_bashsmite.say_14": {
+    "src_hash": "f5940523060652e3a7d9c269ce48de50",
+    "text": "Done.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:42:35.870423Z"
+  },
+  "npc.lardoc_bashsmite.say_9": {
+    "src_hash": "69ce05199222d304e8f82cb747eed8ab",
+    "text": "Don't waste my time.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:42:35.871349Z"
+  },
+  "npc.lokur.say_5": {
+    "src_hash": "12d673409d71f1fc127ebad108378378",
+    "text": "No then.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:42:35.881041Z"
+  },
+  "npc.lorbas.say_4": {
+    "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
+    "text": "I see.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:42:35.881597Z"
+  },
+  "npc.lugri.say_13": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:42:35.888140Z"
+  },
+  "npc.lugri.say_15": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:42:35.888689Z"
+  },
+  "npc.lugri.say_17": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:42:35.889230Z"
+  },
+  "npc.lugri.say_19": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:42:35.889834Z"
+  },
+  "npc.lukosch.say_5": {
+    "src_hash": "12d673409d71f1fc127ebad108378378",
+    "text": "No then.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:42:35.890638Z"
+  },
+  "npc.maelyrra.say_18": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:42:35.894638Z"
+  },
+  "npc.melfar.say_3": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Here you go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:42:35.898634Z"
+  },
+  "npc.nah_bob.say_6": {
+    "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
+    "text": "I see.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:42:35.909185Z"
+  },
+  "npc.norma.say_9": {
+    "src_hash": "ebaeda37e982b71a905f5f1995285a85",
+    "text": "Maybe another time.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:42:35.918649Z"
+  },
+  "npc.ocelus.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Good bye.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:42:35.924632Z"
+  },
+  "npc.ocelus.walkaway_msg_1": {
+    "src_hash": "cbca1e780ae7e44aa43debe068beb490",
+    "text": "Oh well.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:42:35.925167Z"
+  },
+  "npc.palomino.say_5": {
+    "src_hash": "cc67edbe5929572b201f9b2aa0f478f9",
+    "text": "Have a nice trip!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:42:35.937545Z"
+  },
+  "npc.palomino.say_9": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:42:35.938101Z"
+  },
+  "npc.pukosch.say_5": {
+    "src_hash": "12d673409d71f1fc127ebad108378378",
+    "text": "No then.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:42:35.948092Z"
+  },
+  "npc.robson.say_4": {
+    "src_hash": "b5010567e209726a125c9ed59162eca5",
+    "text": "Fine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:42:35.968264Z"
+  },
+  "npc.robson.say_6": {
+    "src_hash": "b5010567e209726a125c9ed59162eca5",
+    "text": "Fine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:42:35.968532Z"
+  },
+  "npc.rose.say_4": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:42:35.971850Z"
+  },
+  "npc.sam.say_10": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:42:35.973635Z"
+  },
+  "npc.sebastian.say_2": {
+    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
+    "text": "Set the sails!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:42:35.977251Z"
+  },
+  "npc.shirtalis_of_the_summer_court.say_3": {
+    "src_hash": "8ebe07d7adacdd880130a981ebf53704",
+    "text": "As you wish.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:42:35.989121Z"
+  },
+  "npc.siflind.say_31": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Here you go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:42:35.990694Z"
+  },
+  "npc.stutch.say_3": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Take this!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:42:35.996354Z"
+  },
+  "npc.suzy.farewell_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Have a nice day.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:42:35.997101Z"
+  },
+  "npc.suzy.walkaway_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Have a nice day.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:42:35.997785Z"
+  },
+  "npc.taegen.say_1": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:42:35.999185Z"
+  },
+  "npc.tamerin.say_4": {
+    "src_hash": "706b1a009354e93f05beff4ba2e0a628",
+    "text": "SO BE IT!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:42:36.000169Z"
+  },
+  "npc.tamerin.say_5": {
+    "src_hash": "706b1a009354e93f05beff4ba2e0a628",
+    "text": "SO BE IT!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:42:36.000557Z"
+  },
+  "npc.tarun.say_3": {
+    "src_hash": "8ebe07d7adacdd880130a981ebf53704",
+    "text": "As you wish.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:42:36.002235Z"
+  },
+  "npc.the_blind_prophet.say_14": {
+    "src_hash": "80daa793e7bea0f5da969ee940135c1a",
+    "text": "Take care!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:42:36.006577Z"
+  },
+  "npc.the_orc_king.say_8": {
+    "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
+    "text": "I see.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:42:36.010157Z"
+  },
+  "npc.tom.stdmod_31": {
+    "src_hash": "aafa4696d9102bda2dc5250066f65b13",
+    "text": "He's an apple polisher.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:42:36.017974Z"
+  },
+  "npc.uncle.say_11": {
+    "src_hash": "8ebe07d7adacdd880130a981ebf53704",
+    "text": "As you wish.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:42:36.025697Z"
+  },
+  "npc.warbert.say_1": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Take this!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:42:36.043219Z"
+  },
+  "npc.wyda.say_8": {
+    "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
+    "text": "I see.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:42:36.047962Z"
+  },
+  "npc.yaman.say_14": {
+    "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
+    "text": "I see.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:42:36.049691Z"
+  },
+  "npc.a_bearded_woman.greet_msg_1": {
+    "src_hash": "dec88b2ad57c0b13cc1cf44b9711944a",
+    "text": "ИЗБЕДИ МЕ ОД ОВДЕ! СЕГА!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:43:05.324355Z"
+  },
+  "npc.a_bearded_woman.stdmod_1": {
+    "src_hash": "85b863553a645f3e69472bcbeea15190",
+    "text": "Во праведен свет, јас би бил капетан на голем брод, ... \\z\n\tТие пирати таму сега би биле мои потчинети, а ние би се храбреле на морињата и би станале теророт на крајбрежните градови! ... \\z\n\tДа успееше нашиот план!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:43:05.325517Z"
+  },
+  "npc.a_bearded_woman.stdmod_2": {
+    "src_hash": "e665aff3c7b262f14bc1bdc6ecab7294",
+    "text": "Капетанот Кид го продаде својот брод за да купи бесмислени работи како оние лудо скапи брави за вратите на ќелијата. ... \\z\n\tТој рече дека кануата ќе прават некое време. ... \\z\n\tДобив впечаток дека не беше премногу тажен што се раздели со бродот бидејќи беше познато дека многу страдаше од морска болест.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:43:05.326905Z"
+  },
+  "npc.a_bearded_woman.stdmod_3": {
+    "src_hash": "d0300a2639da1cea9ef53f1c6c9289c0",
+    "text": "Ќе бев многу подобар капитен од Кид. Играв неколку капетани на сцената и бев добар! ... \\z\n\tОнаму каде што Кид копнееше за ценење на неговите луѓе, јас би владеел со страв и со железна тупаница!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:43:05.328071Z"
+  },
+  "npc.a_bearded_woman.stdmod_4": {
+    "src_hash": "2d38ace4459f0ec00320789d297c3501",
+    "text": "Сето тоа беше идеја на капетанот Кид. Гледате, тој го мразеше своето име и планираше да стане познат по името капетан Киднап. ... \\z\n\tСè што му требаше беше некој познат да киднапира. ... \\z\n\tСо оглед на лош недостиг на талент и интелигенција на неговите луѓе, тоа би било голем подвиг. ... \\z\n\tСе познававме по неколку измами што ги направивме заедно во минатото, па тој ме контактираше. ... \\z\n\tТребаше да ја имитирам познатата принцеза Лумелија. Знаете, оној кој сите го бараа. ... \\z\n\tТоа ќе им покаже на неговите луѓе и на другите пирати каков голем киднапер бил. ... \\z\n\tМи вети дека ќе му станам втор човек и ќе водам прекрасен живот на грабеж, грабеж и грабеж. ... \\z\n\tТака, се согласив да ја имитирам принцезата некое време и тоа на почетокот функционираше добро. ... \\z\n\tТој се врати со мене облечен како принцезата од рација сам и веднаш беше херој на денот за своите луѓе. ... \\z\n\tРаботите тргнаа на лошо кога решија да направат победничка забава. ... \\z\n\tКолку што можев да забележам од мрморењето на пиратите, Кид го изгуби клучот од мојата ќелија додека се олеснуваше во подземната река. ... \\z\n\tБудалата реши да се нурне по неа.. никогаш повеќе да не се види. ... \\z\n\tКога дознав за смртта на Кид, се обидов да ги убедам пиратите дека тоа е измама, но тие едноставно нема да ми веруваат!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:43:05.332082Z"
+  },
+  "npc.a_bearded_woman.stdmod_5": {
+    "src_hash": "d02c0ffb00f9c85e39e5609e3ffcfc53",
+    "text": "Ах, киднапирањето е многу забавно. Тоа е, ако не сте на примачот. ... \\z\n\tЛесни се парите и имаш шанса да исплашиш и измачуваш некој што не може да возврати!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:43:05.333037Z"
+  },
+  "npc.a_bearded_woman.stdmod_6": {
+    "src_hash": "8addcda1b472b30e046fd34589b4879f",
+    "text": "Колку луѓето се поглупави, толку е полесно да се измамат. ... \\z\n\tИ колку се посиромашни толку помалку средства имаат да се одмаздат. Хар Хар! ... \\z\n\tЗатоа се погрижувам да ги уништам оние што ги измамувам. Тогаш тие имаат други работи за кои треба да се грижат освен да ми се одмаздат.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:43:05.334261Z"
+  },
+  "npc.a_bearded_woman.stdmod_7": {
+    "src_hash": "a07eb0740959112055b5524599e7a7e2",
+    "text": "Клучот е изгубен во подземната река и веројатно до сега се фрлил во седумте мориња! ... \\z\n\tАко тоа глупаво Дете не беше толку опседнато со киднапирање, немаше да го продаде својот брод за да ги купи најскапите и најкомплицираните брави за неговите ќелии!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:43:05.335443Z"
+  },
+  "npc.a_bearded_woman.stdmod_8": {
+    "src_hash": "611cca91ceb08fc3c7143e9b26284ef9",
+    "text": "Сè додека се држиме до небранетите крајбрежни градови, можеме лесно да се збогатиме. Хар Хар! ... \\z\n\tШтом ќе излезам одовде, конечно сам ќе станам пиратски капетан. Не ми треба капетан Кид!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:43:05.336448Z"
+  },
+  "npc.a_bearded_woman.voice_1": {
+    "src_hash": "58767cda40525ee7cbdee616d85cb646",
+    "text": "Јас сум МАЖ! Извадете ме пијани будали!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:43:05.336891Z"
+  },
+  "npc.a_bearded_woman.voice_2": {
+    "src_hash": "72b86601b93166f02b9c4cd08dfeee5d",
+    "text": "ИЗБЕДИ МЕ ОД ОВДЕ!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:43:05.337198Z"
+  },
+  "npc.a_bearded_woman.voice_3": {
+    "src_hash": "c28763b34d8b1e303d10487a3c6bdda4",
+    "text": "Извади ме! Сето тоа беше дел од планот, будали!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:43:05.337610Z"
+  },
+  "npc.a_bearded_woman.voice_4": {
+    "src_hash": "f6e4d063bc0eade947ac0001b744445e",
+    "text": "Ако некогаш излезам одовде, ќе ве убијам сите! Сите вие!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:43:05.338067Z"
+  },
+  "npc.a_bearded_woman.voice_5": {
+    "src_hash": "610ef2c5395758ac8169140d09ad737a",
+    "text": "Јас НЕ Сум принцезата Лумелија, будали!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:43:05.338511Z"
+  },
+  "npc.a_bearded_woman.voice_6": {
+    "src_hash": "53c4ab6007ae6d3e10ea4ddf7dce9bf1",
+    "text": "Земи си бравар и ослободи ме или ќе зажалиш, глупави пирати!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:43:05.339004Z"
+  },
+  "npc.a_bearded_woman.voice_7": {
+    "src_hash": "6ad2054bb73e4f51e22543c42ffc5d5b",
+    "text": "Јас не сум принцеза, јас сум актер!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:43:05.339383Z"
+  },
+  "npc.a_beautiful_girl.greet_msg_1": {
+    "src_hash": "12c56c6555b96d78e471b6866d61e5dc",
+    "text": "Значи, дојдовте, |PLAYERNAME|. Се надевав дека нема да...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:43:05.339979Z"
+  },
+  "npc.a_beggar.greet_msg_1": {
+    "src_hash": "fb67985b03b0041bfb5a827c66ff748c",
+    "text": "Здраво! Што е тоа, што си {want}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:43:05.340520Z"
+  },
+  "npc.a_beggar.say_1": {
+    "src_hash": "dfa16f2971d25fe56e1c023824c93b08",
+    "text": "Мислеше така. Сепак, ќе мора да разговарате со кралот. Царот просјак што е. Кралот не дава публика само за секого. Знаеш како се тие кралеви, нели? ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:43:05.341294Z"
+  },
+  "npc.a_beggar.say_2": {
+    "src_hash": "7f8292b9eb7566b64edd089a2459de83",
+    "text": "Меѓутоа, за да добиете публика кај кралот, ќе треба малку да им помогнете на неговите поданици. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:43:05.341856Z"
+  },
+  "npc.a_beggar.say_3": {
+    "src_hash": "c00ef85e3c706aa4e1feb0023c862a5e",
+    "text": "Неговите поданици би биле ние, сиромашните, знаеш? ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:43:05.342334Z"
+  },
+  "npc.a_beggar.say_4": {
+    "src_hash": "4083b6eb97ef1d492dafe67ced5e1d1b",
+    "text": "Па зошто не ја покажеш својата посветеност на сиромашните? Одете и помогнете му на Чавис во сиромашната куќа. Тој собира храна за луѓе како нас. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:43:05.343024Z"
+  },
+  "npc.a_beggar.say_5": {
+    "src_hash": "8bb1bd6a0ab3fe83a4488aa718b941f9",
+    "text": "Ако донесете доволно работи, ќе видите дека кралот ќе ви дозволи влез во неговата {palace}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:43:05.343768Z"
+  },
+  "npc.a_behemoth.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссст! Чувајте го надолу! <gives you an elaborate report on monster activity>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:43:05.344436Z"
+  },
+  "npc.a_behemoth.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссст! Чувајте го надолу! <gives you an elaborate report on monster activity>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:43:05.345114Z"
+  },
+  "npc.a_behemoth.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссст! Чувајте го надолу! <gives you an elaborate report on monster activity>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:43:05.345774Z"
+  },
+  "npc.a_dead_bureaucrat.greet_msg_1": {
+    "src_hash": "1fb51950fc35d0b9f7979cbb0fff81b2",
+    "text": "Здраво {}, добредојдовте во атриумот на Pumin's Domain. Бараме некои информации од вас пред да ви дозволиме да поминете. Каде сакаш да одиш?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:43:05.346667Z"
+  },
+  "npc.a_dead_bureaucrat1.farewell_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Збогум и не ме заборавај!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:43:05.347061Z"
+  },
+  "npc.a_dead_bureaucrat1.say_1": {
+    "src_hash": "f4195eed0570aee7a7882eadb5b85979",
+    "text": "Хуху, те молам не ме повредувај со твојот {}! Причината за вашата посета?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:43:05.347534Z"
+  },
+  "npc.a_dead_bureaucrat1.say_2": {
+    "src_hash": "6c80ac504f39e09fc288756acfd7a105",
+    "text": "Колку многу интересно. Тоа треба веднаш да му го кажам на мојот господар. Ве молиме одете кај моите колеги и побарајте формулар 356. Ќе ви треба за да продолжите.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:43:05.348384Z"
+  },
+  "npc.a_dead_bureaucrat1.say_3": {
+    "src_hash": "7c9a6b9ee4bce0d9b7654294cdfe405e",
+    "text": "Во ред |PLAYERNAME|. Вокација?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:43:05.348994Z"
+  },
+  "npc.a_dead_bureaucrat1.say_5": {
+    "src_hash": "7025be9c3a92e5d4e7965480ef624e3a",
+    "text": "Образец 411? Потребен ви е формулар 287 за да го добиете тоа! Дали го имате?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:43:05.349476Z"
+  },
+  "npc.a_dead_bureaucrat1.say_6": {
+    "src_hash": "7025be9c3a92e5d4e7965480ef624e3a",
+    "text": "Образец 411? Потребен ви е формулар 287 за да го добиете тоа! Дали го имате?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:43:05.349994Z"
+  },
+  "npc.a_dead_bureaucrat1.say_7": {
+    "src_hash": "22849ba6a7644915a8cb4de5b2a8e521",
+    "text": "О, каква штета. Оди кај еден од моите колеги. Ви давам дозвола да добиете формулар 287. Збогум!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:43:05.350638Z"
+  },
+  "item.1053.name": {
+    "src_hash": "852488ddd9570bc877783bf4397563e0",
+    "text": "земјата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:14.033747Z"
+  },
+  "item.1090.name": {
+    "src_hash": "eee3db73cf76cd1ca29c6c5d40f44fb4",
+    "text": "нерамни камења",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:14.034439Z"
+  },
+  "item.2118.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "противпожарно поле",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:14.049514Z"
+  },
+  "item.2119.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "противпожарно поле",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:14.049912Z"
+  },
+  "item.2120.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "противпожарно поле",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:14.050287Z"
+  },
+  "item.2123.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "противпожарно поле",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:14.050673Z"
+  },
+  "item.2124.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "противпожарно поле",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:14.050953Z"
+  },
+  "item.2125.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "противпожарно поле",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:14.051207Z"
+  },
+  "item.2128.name": {
+    "src_hash": "b191656e3ce1b7048b8d4510eb17cf22",
+    "text": "магичен ѕид",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:14.051456Z"
+  },
+  "item.2129.name": {
+    "src_hash": "b191656e3ce1b7048b8d4510eb17cf22",
+    "text": "магичен ѕид",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:14.051688Z"
+  },
+  "item.2130.name": {
+    "src_hash": "33f19afbf6744c10a2e913608b22cb83",
+    "text": "брзање дрво",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:14.052007Z"
+  },
+  "item.2131.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "противпожарно поле",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:14.052277Z"
+  },
+  "item.2132.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "противпожарно поле",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:14.052520Z"
+  },
+  "item.2133.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "противпожарно поле",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:14.052764Z"
+  },
+  "item.21462.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "противпожарно поле",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:14.054019Z"
+  },
+  "item.21465.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "противпожарно поле",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:14.054410Z"
+  },
+  "item.2727.name": {
+    "src_hash": "852488ddd9570bc877783bf4397563e0",
+    "text": "земјата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:14.064459Z"
+  },
+  "item.2731.name": {
+    "src_hash": "852488ddd9570bc877783bf4397563e0",
+    "text": "земјата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:14.064757Z"
+  },
+  "item.28690.name": {
+    "src_hash": "aabdddfc93cdfc8322f94b68f9cc0760",
+    "text": "бебешки црви",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:14.067858Z"
+  },
+  "item.28691.name": {
+    "src_hash": "aabdddfc93cdfc8322f94b68f9cc0760",
+    "text": "бебешки црви",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:14.068157Z"
+  },
+  "item.28692.name": {
+    "src_hash": "aabdddfc93cdfc8322f94b68f9cc0760",
+    "text": "бебешки црви",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:14.068418Z"
+  },
+  "item.28693.name": {
+    "src_hash": "aabdddfc93cdfc8322f94b68f9cc0760",
+    "text": "бебешки црви",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:14.068668Z"
+  },
+  "item.30224.name": {
+    "src_hash": "33f19afbf6744c10a2e913608b22cb83",
+    "text": "брзање дрво",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:14.072488Z"
+  },
+  "item.372.name": {
+    "src_hash": "852488ddd9570bc877783bf4397563e0",
+    "text": "земјата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:14.088913Z"
+  },
+  "item.38478.name": {
+    "src_hash": "9460370bb0ca1c98a779b1bcc6861c2c",
+    "text": "вода",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:14.091195Z"
+  },
+  "item.3993.name": {
+    "src_hash": "852488ddd9570bc877783bf4397563e0",
+    "text": "земјата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:14.093914Z"
+  },
+  "item.622.name": {
+    "src_hash": "9460370bb0ca1c98a779b1bcc6861c2c",
+    "text": "вода",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:14.106319Z"
+  },
+  "item.7541.name": {
+    "src_hash": "852488ddd9570bc877783bf4397563e0",
+    "text": "земјата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:14.109553Z"
+  },
+  "item.7594.name": {
+    "src_hash": "852488ddd9570bc877783bf4397563e0",
+    "text": "земјата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:14.109881Z"
+  },
+  "item.7747.name": {
+    "src_hash": "cab8111fd0b710a336c898e539090e34",
+    "text": "празнина",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:14.110333Z"
+  },
+  "item.7893.name": {
+    "src_hash": "3b2fa34af93b15d8e28dacad96e85076",
+    "text": "демонски остаток",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:14.111069Z"
+  },
+  "item.8684.name": {
+    "src_hash": "9460370bb0ca1c98a779b1bcc6861c2c",
+    "text": "вода",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:14.112914Z"
+  },
+  "item.9246.name": {
+    "src_hash": "852488ddd9570bc877783bf4397563e0",
+    "text": "земјата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:14.115233Z"
+  },
+  "item.9804.name": {
+    "src_hash": "2476a5a90c029582282973dffc394319",
+    "text": "заоан декорација",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:14.116979Z"
+  },
+  "item.9995.name": {
+    "src_hash": "aa63b14cb9675819aa6ecea9feeb5d27",
+    "text": "солстициско дрво",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:14.117543Z"
+  },
+  "item.9997.name": {
+    "src_hash": "8365620ffd40a47e8c1d7d5b5c7633cb",
+    "text": "висока трева",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:14.117853Z"
+  },
+  "item.9998.name": {
+    "src_hash": "8365620ffd40a47e8c1d7d5b5c7633cb",
+    "text": "висока трева",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:14.118231Z"
+  },
+  "item.9999.name": {
+    "src_hash": "8365620ffd40a47e8c1d7d5b5c7633cb",
+    "text": "висока трева",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:14.118601Z"
+  },
+  "item.10185.name": {
+    "src_hash": "fb22606aca32dcbce80ae759f3e23f66",
+    "text": "прекинувач",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:36.771985Z"
+  },
+  "item.10186.name": {
+    "src_hash": "2d9e53feb0673a054464fd17e13ab87e",
+    "text": "топка за врескање",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:36.772268Z"
+  },
+  "item.10187.name": {
+    "src_hash": "c0e2289468f8376e785248a520b72014",
+    "text": "редок кристал",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:36.772517Z"
+  },
+  "item.10189.name": {
+    "src_hash": "bf28efa02d6ee5e3c9d823175b421301",
+    "text": "колба со дополнително мрсно масло",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:36.772852Z"
+  },
+  "item.1019.name": {
+    "src_hash": "ce1ca28266c962ae55f0a786013793d5",
+    "text": "џунгла трева",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:36.773205Z"
+  },
+  "item.10190.name": {
+    "src_hash": "c4f472440ff1cb095aa917bb4daa2be0",
+    "text": "мртов дракен грејач",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:36.773518Z"
+  },
+  "item.10191.name": {
+    "src_hash": "c4f472440ff1cb095aa917bb4daa2be0",
+    "text": "мртов дракен грејач",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:36.773845Z"
+  },
+  "item.10192.name": {
+    "src_hash": "c4f472440ff1cb095aa917bb4daa2be0",
+    "text": "мртов дракен грејач",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:36.774148Z"
+  },
+  "item.10193.name": {
+    "src_hash": "c4f472440ff1cb095aa917bb4daa2be0",
+    "text": "мртов дракен грејач",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:36.774519Z"
+  },
+  "item.10194.name": {
+    "src_hash": "feb706aed35979e15f25a1f15bb6f71f",
+    "text": "фиока од бамбус",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:36.774782Z"
+  },
+  "item.10195.name": {
+    "src_hash": "79f7d2ef17285d43eb5819ce8fd4699a",
+    "text": "лисја",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:36.774988Z"
+  },
+  "item.10196.name": {
+    "src_hash": "108dd41b5aa8c784aec5f9101c11f1ad",
+    "text": "заб од орка",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:36.775211Z"
+  },
+  "item.10197.name": {
+    "src_hash": "ce1ca28266c962ae55f0a786013793d5",
+    "text": "џунгла трева",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:36.775446Z"
+  },
+  "item.10198.name": {
+    "src_hash": "0a6dcecfe4aa9c8c2ec49ab453984657",
+    "text": "племенски грб",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:36.775682Z"
+  },
+  "item.10199.name": {
+    "src_hash": "9ca33c2744c767a83e7045f51bd5935c",
+    "text": "сртот на змијата",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:36.775925Z"
+  },
+  "item.102.name": {
+    "src_hash": "2357c882fbe6b5613c047cdba496334b",
+    "text": "бел цвет",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:36.776153Z"
+  },
+  "item.10200.name": {
+    "src_hash": "82e304e7ef04a2a6b31bbabdc33ed9b3",
+    "text": "кристални чизми",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:36.776393Z"
+  },
+  "item.10201.name": {
+    "src_hash": "06d4a8c785c1ed681288854d9af74c05",
+    "text": "чизми од вага на змеј",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:36.776674Z"
+  },
+  "item.10202.name": {
+    "src_hash": "2c9020abf2bfa613ade54e932cc5761d",
+    "text": "ранец со срце",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:36.776921Z"
+  },
+  "item.10203.name": {
+    "src_hash": "28f61ed3699ca1c9a528636cf5d04021",
+    "text": "куп на черепот",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:36.777148Z"
+  },
+  "item.10205.name": {
+    "src_hash": "b00fcd304c378b1eea88e6d50f5a642a",
+    "text": "куп коски",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:36.777442Z"
+  },
+  "item.10206.name": {
+    "src_hash": "02df6ab0ddc16081bf6d400457d5d3c4",
+    "text": "камени скали",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:36.777735Z"
+  },
+  "item.10207.name": {
+    "src_hash": "3dad4960c0bca534f7b644707d6f35bf",
+    "text": "пакет снешко",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:36.778002Z"
+  },
+  "item.10208.name": {
+    "src_hash": "b932a6ec0f3bef993326983f5c8808eb",
+    "text": "снешко",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:36.778213Z"
+  },
+  "item.10209.name": {
+    "src_hash": "11af29272a9b9fc23ef2b7f853795776",
+    "text": "комплет за држач за оружје за гуштер",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:36.778567Z"
+  },
+  "item.10210.name": {
+    "src_hash": "5451e3ed5604c536bb8c849f209da5b9",
+    "text": "багажник за оружје за гуштер",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:36.778892Z"
+  },
+  "item.10211.name": {
+    "src_hash": "5451e3ed5604c536bb8c849f209da5b9",
+    "text": "багажник за оружје за гуштер",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:36.779194Z"
+  },
+  "item.10212.name": {
+    "src_hash": "7131d1c878f058973254abc586e95e18",
+    "text": "статуа на змеј",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:36.779442Z"
+  },
+  "item.10213.name": {
+    "src_hash": "7131d1c878f058973254abc586e95e18",
+    "text": "статуа на змеј",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:36.779686Z"
+  },
+  "item.10214.name": {
+    "src_hash": "7131d1c878f058973254abc586e95e18",
+    "text": "статуа на змеј",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:36.779961Z"
+  },
+  "item.10215.name": {
+    "src_hash": "7131d1c878f058973254abc586e95e18",
+    "text": "статуа на змеј",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:36.780211Z"
+  },
+  "item.10216.name": {
+    "src_hash": "a5c37b0b99535230dcd569b7130cc54b",
+    "text": "комплет за статуа на змеј",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:36.780547Z"
+  },
+  "item.10217.name": {
+    "src_hash": "910960a7c0b00d2d1e1209ff40d1381e",
+    "text": "Дома од Knowledge",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:36.781067Z"
+  },
+  "item.10218.name": {
+    "src_hash": "f9300686f5bdfa92fe3c8a12b3365fdb",
+    "text": "пченкарна риба",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:36.781343Z"
+  },
+  "item.10219.name": {
+    "src_hash": "e002ba7b4a12cf1f32203f0401207ff5",
+    "text": "крокодилски стек",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:36.781612Z"
+  },
+  "item.10221.name": {
+    "src_hash": "4212181ee4e21c2ab9a4a71943c92c0e",
+    "text": "мртов убиец кајман",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:36.781928Z"
+  },
+  "item.10222.name": {
+    "src_hash": "4212181ee4e21c2ab9a4a71943c92c0e",
+    "text": "мртов убиец кајман",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:36.782218Z"
+  },
+  "item.10223.name": {
+    "src_hash": "4212181ee4e21c2ab9a4a71943c92c0e",
+    "text": "мртов убиец кајман",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:36.782531Z"
+  },
+  "item.10224.name": {
+    "src_hash": "4212181ee4e21c2ab9a4a71943c92c0e",
+    "text": "мртов убиец кајман",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:36.782844Z"
+  },
+  "item.10227.name": {
+    "src_hash": "092e30b8a679b0c3eab38f6cd63f79ce",
+    "text": "кошмарна кукла",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:36.783110Z"
+  },
+  "item.10244.name": {
+    "src_hash": "cdc52e0f25dbe88246f4a9f0db43e517",
+    "text": "трофеј на коскениот ѕвер",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:36.783389Z"
+  },
+  "item.10247.name": {
+    "src_hash": "22bc99e4f9c4d97053f643f4ecffacf6",
+    "text": "гајба за оружје",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:23:36.783639Z"
+  },
+  "item.11210.name": {
+    "src_hash": "7131d1c878f058973254abc586e95e18",
+    "text": "статуа на змеј",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:08.021793Z"
+  },
+  "item.1977.name": {
+    "src_hash": "02df6ab0ddc16081bf6d400457d5d3c4",
+    "text": "камени скали",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:08.034369Z"
+  },
+  "item.1978.name": {
+    "src_hash": "02df6ab0ddc16081bf6d400457d5d3c4",
+    "text": "камени скали",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:08.035197Z"
+  },
+  "item.2465.name": {
+    "src_hash": "feb706aed35979e15f25a1f15bb6f71f",
+    "text": "фиока од бамбус",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:08.045451Z"
+  },
+  "item.2466.name": {
+    "src_hash": "feb706aed35979e15f25a1f15bb6f71f",
+    "text": "фиока од бамбус",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:08.045735Z"
+  },
+  "item.2467.name": {
+    "src_hash": "feb706aed35979e15f25a1f15bb6f71f",
+    "text": "фиока од бамбус",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:08.045999Z"
+  },
+  "item.2468.name": {
+    "src_hash": "feb706aed35979e15f25a1f15bb6f71f",
+    "text": "фиока од бамбус",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:08.046257Z"
+  },
+  "item.30336.name": {
+    "src_hash": "b932a6ec0f3bef993326983f5c8808eb",
+    "text": "снешко",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:08.056732Z"
+  },
+  "item.3656.name": {
+    "src_hash": "2357c882fbe6b5613c047cdba496334b",
+    "text": "бел цвет",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:08.069467Z"
+  },
+  "item.3695.name": {
+    "src_hash": "ce1ca28266c962ae55f0a786013793d5",
+    "text": "џунгла трева",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:08.071985Z"
+  },
+  "item.3696.name": {
+    "src_hash": "ce1ca28266c962ae55f0a786013793d5",
+    "text": "џунгла трева",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:08.072500Z"
+  },
+  "item.3701.name": {
+    "src_hash": "ce1ca28266c962ae55f0a786013793d5",
+    "text": "џунгла трева",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:08.073031Z"
+  },
+  "item.3702.name": {
+    "src_hash": "ce1ca28266c962ae55f0a786013793d5",
+    "text": "џунгла трева",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:08.073340Z"
+  },
+  "item.405.name": {
+    "src_hash": "22bc99e4f9c4d97053f643f4ecffacf6",
+    "text": "гајба за оружје",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:08.079975Z"
+  },
+  "item.4254.name": {
+    "src_hash": "b00fcd304c378b1eea88e6d50f5a642a",
+    "text": "куп коски",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:08.082321Z"
+  },
+  "item.4271.name": {
+    "src_hash": "b00fcd304c378b1eea88e6d50f5a642a",
+    "text": "куп коски",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:08.082715Z"
+  },
+  "item.4276.name": {
+    "src_hash": "b00fcd304c378b1eea88e6d50f5a642a",
+    "text": "куп коски",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:08.082993Z"
+  },
+  "item.4280.name": {
+    "src_hash": "b00fcd304c378b1eea88e6d50f5a642a",
+    "text": "куп коски",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:08.083273Z"
+  },
+  "item.4285.name": {
+    "src_hash": "b00fcd304c378b1eea88e6d50f5a642a",
+    "text": "куп коски",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:08.083532Z"
+  },
+  "item.4298.name": {
+    "src_hash": "b00fcd304c378b1eea88e6d50f5a642a",
+    "text": "куп коски",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:08.083912Z"
+  },
+  "item.747.name": {
+    "src_hash": "7131d1c878f058973254abc586e95e18",
+    "text": "статуа на змеј",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:08.097542Z"
+  },
+  "item.7748.name": {
+    "src_hash": "ce1ca28266c962ae55f0a786013793d5",
+    "text": "џунгла трева",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:08.098388Z"
+  },
+  "item.7888.name": {
+    "src_hash": "02df6ab0ddc16081bf6d400457d5d3c4",
+    "text": "камени скали",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:08.099001Z"
+  },
+  "item.855.name": {
+    "src_hash": "02df6ab0ddc16081bf6d400457d5d3c4",
+    "text": "камени скали",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:08.100824Z"
+  },
+  "item.856.name": {
+    "src_hash": "02df6ab0ddc16081bf6d400457d5d3c4",
+    "text": "камени скали",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:08.101120Z"
+  },
+  "item.9697.name": {
+    "src_hash": "c0e2289468f8376e785248a520b72014",
+    "text": "редок кристал",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:08.104938Z"
+  },
+  "item.10272.name": {
+    "src_hash": "a10eed158a96a24198c61013fc3a40cb",
+    "text": "штипки за ракови",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:39.567238Z"
+  },
+  "item.10273.name": {
+    "src_hash": "d4456df84711920832024bfea9a04500",
+    "text": "клун од застрашувачки птици",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:39.567734Z"
+  },
+  "item.10274.name": {
+    "src_hash": "7d753eb0b3a91bd2673be6c9a41a7873",
+    "text": "опашка опашка",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:39.568014Z"
+  },
+  "item.10275.name": {
+    "src_hash": "7a7bdb3cfb96189cee8a3b274dff7d0e",
+    "text": "песец од мрши црв",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:39.568347Z"
+  },
+  "item.10276.name": {
+    "src_hash": "ca604850f968bb36a2e97ca9d3189618",
+    "text": "старешина бонелорд пипало",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:39.568688Z"
+  },
+  "item.10277.name": {
+    "src_hash": "ff07a5a0ea550902cea144efa4c26c88",
+    "text": "коскена опашка",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:39.568935Z"
+  },
+  "item.10278.name": {
+    "src_hash": "3ec1cce69914c888518234ffbc8dcd4c",
+    "text": "камено крило",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:39.569173Z"
+  },
+  "item.10279.name": {
+    "src_hash": "d1d1b936cc9f73ee9b81790464742d4e",
+    "text": "парче крокодилска кожа",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:39.569559Z"
+  },
+  "item.10280.name": {
+    "src_hash": "2487ec3e5887b0d6975eb9e021220882",
+    "text": "џиновско око",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:39.569808Z"
+  },
+  "item.10281.name": {
+    "src_hash": "afd439b99257c9a00c118d865ac5fcc1",
+    "text": "јајце од тарантула",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:39.570067Z"
+  },
+  "item.10282.name": {
+    "src_hash": "c7d8fb7c100b1eaef2543f94776f7223",
+    "text": "глава на хидра",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:39.570450Z"
+  },
+  "item.10283.name": {
+    "src_hash": "7a89c42b9c239f19082d6d687c0d44ff",
+    "text": "половина сварено парче месо",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:39.570803Z"
+  },
+  "item.10286.name": {
+    "src_hash": "efd63614fe94d229f57de216233fb89c",
+    "text": "змеј престол",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:39.571061Z"
+  },
+  "item.10287.name": {
+    "src_hash": "efd63614fe94d229f57de216233fb89c",
+    "text": "змеј престол",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:39.571343Z"
+  },
+  "item.10288.name": {
+    "src_hash": "48abff4f3c8ca9969884c4c2101279d7",
+    "text": "комплет за змеј престол",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:39.571638Z"
+  },
+  "item.10289.name": {
+    "src_hash": "8d58a849efe72bf104c97ad52a9de0e6",
+    "text": "црвен фенер",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:39.571876Z"
+  },
+  "item.10290.name": {
+    "src_hash": "b75a25495c0245871b59e4ff4bd78ec7",
+    "text": "мини мумија",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:39.572103Z"
+  },
+  "item.10291.name": {
+    "src_hash": "71092a873f395637a3f8bf76ef2da618",
+    "text": "расипано парче ткаенина",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:39.572435Z"
+  },
+  "item.10292.name": {
+    "src_hash": "1aeed4210790afb32bcf828b09ed6b1c",
+    "text": "свилено крзно",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:39.572675Z"
+  },
+  "item.10293.name": {
+    "src_hash": "6f552cbd214da9f216e0992b1ae1906b",
+    "text": "крзно со пруги",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:39.572912Z"
+  },
+  "item.10294.name": {
+    "src_hash": "a729c5bbec6770913a0fadb3600b5644",
+    "text": "полнети крастава жаба",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:39.573161Z"
+  },
+  "item.10295.name": {
+    "src_hash": "90cf458e1e33ec9b684fc8baa78a9771",
+    "text": "зимско волчко крзно",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:39.573456Z"
+  },
+  "item.10296.name": {
+    "src_hash": "ece8e3803fb3b8e5e081f3c90abea858",
+    "text": "желад",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:39.573666Z"
+  },
+  "item.10297.name": {
+    "src_hash": "30bcf1207738a7e1218e9cc426e228b0",
+    "text": "рогови",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:39.573877Z"
+  },
+  "item.10298.name": {
+    "src_hash": "adec68888bb0f86b0d2ccb7f9d99140f",
+    "text": "метален шип",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:39.574109Z"
+  },
+  "item.10299.name": {
+    "src_hash": "9269e34558de79bfe1e38796e2e9cd9e",
+    "text": "крзно од јазовец",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:39.574425Z"
+  },
+  "item.103.name": {
+    "src_hash": "c90b1198f689dd950d51142e65a44c81",
+    "text": "нечистотија",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:39.574647Z"
+  },
+  "item.10300.name": {
+    "src_hash": "648a0ce319a658f0e9477eff441e1aed",
+    "text": "семе од карнифила",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:39.574921Z"
+  },
+  "item.10301.name": {
+    "src_hash": "ff26275e2c36257210572b2c536d78ee",
+    "text": "стоногалка нога",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:39.575170Z"
+  },
+  "item.10302.name": {
+    "src_hash": "869d7b08ed596dbaadf3e827ce9dbd88",
+    "text": "компас",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:39.575412Z"
+  },
+  "item.10303.name": {
+    "src_hash": "eca35ff99054b0852920ec165d4e0734",
+    "text": "темна бројаница",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:39.575659Z"
+  },
+  "item.10304.name": {
+    "src_hash": "a6f2ec5291f19a8a05f401fe553601c3",
+    "text": "опашка од пеколниот мрест",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:39.575929Z"
+  },
+  "item.10305.name": {
+    "src_hash": "92d1b5a3ca53a96f9c786b87d7807a0a",
+    "text": "грутка земја",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:39.576173Z"
+  },
+  "item.10306.name": {
+    "src_hash": "ec98bcab585b9e48d89dfc985a77455f",
+    "text": "суштината на лошиот сон",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:39.576516Z"
+  },
+  "item.10307.name": {
+    "src_hash": "7afd5bed67b66a4a2d9b47e5b0721a15",
+    "text": "густо крзно",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:39.576750Z"
+  },
+  "item.10308.name": {
+    "src_hash": "ce041dac1cc84ec74f3fcad474b9d0a6",
+    "text": "мутирано месо",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:39.577204Z"
+  },
+  "item.10309.name": {
+    "src_hash": "c752a633fac9d8b23b5fef3fdc67a11f",
+    "text": "прамен од коса на медуза",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:39.577535Z"
+  },
+  "item.10310.name": {
+    "src_hash": "e9284a43d184f9ab54404ee6367ba714",
+    "text": "сјаен камен",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:39.577815Z"
+  },
+  "item.10311.name": {
+    "src_hash": "801d49ef5d0b22c3e85b179f5edf74fd",
+    "text": "сабрезаб",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:39.578041Z"
+  },
+  "item.10312.name": {
+    "src_hash": "0864cee69182583b50302ead6c9ab9a2",
+    "text": "кожа нога",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:39.578268Z"
+  },
+  "item.10313.name": {
+    "src_hash": "e0314d9b60aebbbbd8d8bbc182c4c3bc",
+    "text": "крилеста опашка",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:39.578549Z"
+  },
+  "item.10314.name": {
+    "src_hash": "5352a9cf8423ca616d3079263ed97363",
+    "text": "цут од коприва",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:39.578806Z"
+  },
+  "item.10315.name": {
+    "src_hash": "06ef3decc6d627d2b121cc380b0a87c7",
+    "text": "сулфурен камен",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:39.579072Z"
+  },
+  "item.10316.name": {
+    "src_hash": "4266580860c8ca55ed261210dd9cdd65",
+    "text": "несвета коска",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:39.579306Z"
+  },
+  "item.10317.name": {
+    "src_hash": "9be089ec9fcf39dd5f944a55e9959098",
+    "text": "крзно од врколак",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:39.579545Z"
+  },
+  "item.10318.name": {
+    "src_hash": "143eec50bc23ca5d787b2fa786bd2051",
+    "text": "крзно од волк",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:39.579774Z"
+  },
+  "item.10319.name": {
+    "src_hash": "27a18ca062a4121b180022c59e1c0d25",
+    "text": "волна",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:39.579973Z"
+  },
+  "item.10320.name": {
+    "src_hash": "a4e41a29f24a163a9c6d6ccbdc280f20",
+    "text": "книга за некромантични ритуали",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:39.580308Z"
+  },
+  "item.10321.name": {
+    "src_hash": "36428b55670c8882c1db63f7c9e29ede",
+    "text": "мамут заб",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:39.580543Z"
+  },
+  "item.10322.name": {
+    "src_hash": "a643f0c67dc8358d762c267269f52f9f",
+    "text": "статуа",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:39.580750Z"
+  },
+  "item.10323.name": {
+    "src_hash": "f8615c4e06ac78ad253b643eecb893a5",
+    "text": "чизми за чувари",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:43.181215Z"
+  },
+  "item.10324.name": {
+    "src_hash": "388cc25f567c8efa9eafbbb8d7a4e50d",
+    "text": "ранец за експедиција",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:43.181611Z"
+  },
+  "item.10325.name": {
+    "src_hash": "264693254b1a770a4a1e7865f127dc80",
+    "text": "торба за експедиција",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:43.181918Z"
+  },
+  "item.10326.name": {
+    "src_hash": "0b29a3403d3193814ebf74b236081849",
+    "text": "змеј ранец",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:22:43.182196Z"
   }
 }

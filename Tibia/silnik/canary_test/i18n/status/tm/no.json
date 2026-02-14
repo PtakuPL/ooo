@@ -70,5 +70,3205 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-12T23:37:21.590224Z"
+  },
+  "npc.a_dragon_mother.multi_3": {
+    "src_hash": "c6a0aabd2af804ac1f00c1504af5edf4",
+    "text": "Grrr.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:43.840761Z"
+  },
+  "npc.a_weakened_forest_fury.say_4": {
+    "src_hash": "055d4f5ac2a5439f55bddb2343c0a757",
+    "text": "Take care, guardian.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:43.845763Z"
+  },
+  "npc.albinius.say_10": {
+    "src_hash": "8ebe07d7adacdd880130a981ebf53704",
+    "text": "As you wish.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:43.852559Z"
+  },
+  "npc.alesar.say_5": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:43.853459Z"
+  },
+  "npc.alesar_functions.say_3": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:43.853921Z"
+  },
+  "npc.alkestios.say_4": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:43.856110Z"
+  },
+  "npc.alwin.say_1": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Take this!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:43.857268Z"
+  },
+  "npc.andrew_lyze.say_14": {
+    "src_hash": "69ce05199222d304e8f82cb747eed8ab",
+    "text": "Don't waste my time.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:43.865471Z"
+  },
+  "npc.appaloosa.say_5": {
+    "src_hash": "cc67edbe5929572b201f9b2aa0f478f9",
+    "text": "Have a nice trip!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:43.868694Z"
+  },
+  "npc.appaloosa.say_9": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:43.869004Z"
+  },
+  "npc.ariella.say_15": {
+    "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
+    "text": "I see.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:43.869641Z"
+  },
+  "npc.arnold.say_1": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Take this!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:43.871394Z"
+  },
+  "npc.atrad.say_3": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:43.872586Z"
+  },
+  "npc.aurita.say_1": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:43.873143Z"
+  },
+  "npc.avar_tar.say_5": {
+    "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
+    "text": "I see.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:43.873539Z"
+  },
+  "npc.awarness_of_the_emperor.say_1": {
+    "src_hash": "706b1a009354e93f05beff4ba2e0a628",
+    "text": "SO BE IT!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:43.874029Z"
+  },
+  "npc.bambi_bonecrusher.say_1": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Take this!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:43.875854Z"
+  },
+  "npc.barbara.say_3": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Take this!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:43.877252Z"
+  },
+  "npc.blossom_bonecrusher.say_1": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Take this!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:43.882400Z"
+  },
+  "npc.brodrosch.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Good bye.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:43.900719Z"
+  },
+  "npc.brodrosch.say_5": {
+    "src_hash": "12d673409d71f1fc127ebad108378378",
+    "text": "No then.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:43.901640Z"
+  },
+  "npc.brodrosch.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Good bye then.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:43.903377Z"
+  },
+  "npc.busty_bonecrusher.say_1": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Take this!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:43.909409Z"
+  },
+  "npc.captain_seahorse.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Good bye then.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:43.923627Z"
+  },
+  "npc.chester_kahs.say_23": {
+    "src_hash": "8ebe07d7adacdd880130a981ebf53704",
+    "text": "As you wish.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:43.931739Z"
+  },
+  "npc.chondur.say_18": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:43.933475Z"
+  },
+  "npc.christoph.say_1": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Take this!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:43.933937Z"
+  },
+  "npc.cillia.say_3": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:43.934472Z"
+  },
+  "npc.dalbrect.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Good bye.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:43.944019Z"
+  },
+  "npc.dancing_fairy.say_1": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:43.947210Z"
+  },
+  "npc.dedoras.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Well, bye then.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:43.950362Z"
+  },
+  "npc.demonguard.say_1": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Take this!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:43.950630Z"
+  },
+  "npc.dukosch.say_5": {
+    "src_hash": "12d673409d71f1fc127ebad108378378",
+    "text": "No then.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:43.955535Z"
+  },
+  "npc.duncan.say_12": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:43.956085Z"
+  },
+  "npc.duncan.say_14": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:43.956446Z"
+  },
+  "npc.duncan.say_15": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:43.956788Z"
+  },
+  "npc.duncan.say_17": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:43.957136Z"
+  },
+  "npc.duncan.say_19": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:43.957483Z"
+  },
+  "npc.elane.say_11": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:43.962614Z"
+  },
+  "npc.elane.say_13": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:43.962973Z"
+  },
+  "npc.elane.say_15": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:43.963324Z"
+  },
+  "npc.elane.say_9": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:43.963713Z"
+  },
+  "npc.emma.say_14": {
+    "src_hash": "8ebe07d7adacdd880130a981ebf53704",
+    "text": "As you wish.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:43.970078Z"
+  },
+  "npc.farhilorn_of_the_winter_court.say_3": {
+    "src_hash": "8ebe07d7adacdd880130a981ebf53704",
+    "text": "As you wish.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:43.978607Z"
+  },
+  "npc.fenbala.say_3": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Take this!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:43.979145Z"
+  },
+  "npc.ferks.farewell_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Have a nice day.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:43.979834Z"
+  },
+  "npc.ferks.walkaway_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Have a nice day.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:43.980243Z"
+  },
+  "npc.gabel.say_6": {
+    "src_hash": "8ebe07d7adacdd880130a981ebf53704",
+    "text": "As you wish.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:43.989395Z"
+  },
+  "npc.gewen.say_5": {
+    "src_hash": "12d673409d71f1fc127ebad108378378",
+    "text": "No then.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:43.998090Z"
+  },
+  "npc.ghostly_wolf.say_4": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:44.000984Z"
+  },
+  "npc.gnomus.say_10": {
+    "src_hash": "69ce05199222d304e8f82cb747eed8ab",
+    "text": "Don't waste my time.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:44.007455Z"
+  },
+  "npc.gnomus.say_11": {
+    "src_hash": "f5940523060652e3a7d9c269ce48de50",
+    "text": "Done.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:44.007688Z"
+  },
+  "npc.gnomus.say_13": {
+    "src_hash": "f5940523060652e3a7d9c269ce48de50",
+    "text": "Done.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:44.007911Z"
+  },
+  "npc.gnomus.say_15": {
+    "src_hash": "f5940523060652e3a7d9c269ce48de50",
+    "text": "Done.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:44.008127Z"
+  },
+  "npc.guide_alexena.say_2": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Here you go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:44.023305Z"
+  },
+  "npc.guide_behil.say_2": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Here you go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:44.024350Z"
+  },
+  "npc.guide_davina.say_2": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Here you go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:44.025322Z"
+  },
+  "npc.guide_edna.say_2": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Here you go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:44.026378Z"
+  },
+  "npc.guide_elena.say_2": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Here you go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:44.027347Z"
+  },
+  "npc.guide_jonathan.say_2": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Here you go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:44.028388Z"
+  },
+  "npc.guide_kunibert.say_2": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Here you go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:44.029328Z"
+  },
+  "npc.guide_luke.say_2": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Here you go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:44.030323Z"
+  },
+  "npc.guide_rahlkora.say_2": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Here you go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:44.031396Z"
+  },
+  "npc.guide_thelandil.say_2": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Here you go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:44.032366Z"
+  },
+  "npc.guide_tiko.say_2": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Here you go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:44.033245Z"
+  },
+  "npc.gurbasch.walkaway_msg_1": {
+    "src_hash": "8c767380dfcf1e12c4c84eef6324bdca",
+    "text": "Until next time.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:44.034727Z"
+  },
+  "npc.hairycles.say_66": {
+    "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
+    "text": "I see.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:44.036111Z"
+  },
+  "npc.hanna.say_10": {
+    "src_hash": "ebaeda37e982b71a905f5f1995285a85",
+    "text": "Maybe another time.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:44.039655Z"
+  },
+  "npc.harsky.say_3": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Take this!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:44.041047Z"
+  },
+  "npc.hjaern.say_15": {
+    "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
+    "text": "I see.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:44.045653Z"
+  },
+  "npc.ikassis.say_3": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:44.051603Z"
+  },
+  "npc.jack_fate_goroma.say_7": {
+    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
+    "text": "Set the sails!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:44.072591Z"
+  },
+  "npc.jean_claude.say_1": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Take this!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:44.075880Z"
+  },
+  "npc.kallimae.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Well, bye then.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:44.081855Z"
+  },
+  "npc.karith.say_10": {
+    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
+    "text": "Set the sails!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:44.082532Z"
+  },
+  "npc.karith.say_12": {
+    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
+    "text": "Set the sails!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:44.082857Z"
+  },
+  "npc.karith.say_14": {
+    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
+    "text": "Set the sails!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:44.083170Z"
+  },
+  "npc.karith.say_16": {
+    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
+    "text": "Set the sails!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:44.083518Z"
+  },
+  "npc.karith.say_18": {
+    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
+    "text": "Set the sails!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:44.083828Z"
+  },
+  "npc.karith.say_20": {
+    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
+    "text": "Set the sails!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T22:56:44.084140Z"
+  },
+  "item.21351.name": {
+    "src_hash": "03944c28dd1d99648eda34c26d3de4ac",
+    "text": "Light Stone Shower Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:04.599866Z"
+  },
+  "item.21352.name": {
+    "src_hash": "31cd2c4b8700d3fba06777b6f804dbdd",
+    "text": "Lightest Missile Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:04.600228Z"
+  },
+  "item.21393.name": {
+    "src_hash": "4c50203dd80176e84e2da2675073da00",
+    "text": "krailos",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:04.600604Z"
+  },
+  "item.21432.name": {
+    "src_hash": "31cd2c4b8700d3fba06777b6f804dbdd",
+    "text": "Lightest Missile Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:04.601045Z"
+  },
+  "item.21434.name": {
+    "src_hash": "03944c28dd1d99648eda34c26d3de4ac",
+    "text": "Light Stone Shower Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:04.601371Z"
+  },
+  "item.24966.name": {
+    "src_hash": "7c7004d4846601f4cc710309ded176ef",
+    "text": "Forbidden Fruit",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:04.607691Z"
+  },
+  "item.29276.name": {
+    "src_hash": "2f00d19e4fb2d9e1c321035e9ad9a8d2",
+    "text": "Dream Catcher",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:04.614911Z"
+  },
+  "item.30215.name": {
+    "src_hash": "7bdff76536f12a7c5ffde207e72cfe3a",
+    "text": "ice",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:04.616837Z"
+  },
+  "item.30218.name": {
+    "src_hash": "7bdff76536f12a7c5ffde207e72cfe3a",
+    "text": "ice",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:04.617051Z"
+  },
+  "item.30273.name": {
+    "src_hash": "7bdff76536f12a7c5ffde207e72cfe3a",
+    "text": "ice",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:04.617556Z"
+  },
+  "item.3051.name": {
+    "src_hash": "c193d863e3cfa9eb7c10c24bc406c615",
+    "text": "energy ring",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:04.618536Z"
+  },
+  "item.3088.name": {
+    "src_hash": "c193d863e3cfa9eb7c10c24bc406c615",
+    "text": "energy ring",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:04.619184Z"
+  },
+  "item.3147.name": {
+    "src_hash": "967513bc0728d5d1211f01974ab4dee5",
+    "text": "Blank Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:04.620881Z"
+  },
+  "item.3148.name": {
+    "src_hash": "108014137d9b1b568bc5809b2ae08993",
+    "text": "Destroy Field Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:04.621220Z"
+  },
+  "item.3149.name": {
+    "src_hash": "cb4d58d9f24fa57abff821799c9fc94f",
+    "text": "Energy Bomb Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:04.621564Z"
+  },
+  "item.3152.name": {
+    "src_hash": "33956e826a4ef3b5c532347fc58fc51a",
+    "text": "Intense Healing Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:04.621941Z"
+  },
+  "item.3153.name": {
+    "src_hash": "e9b8ea43be6033af680c3a1498536208",
+    "text": "Cure Poison Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:04.622309Z"
+  },
+  "item.3155.name": {
+    "src_hash": "fb18e4528342a1c41cbe37d70830a516",
+    "text": "Sudden Death Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:04.622661Z"
+  },
+  "item.3156.name": {
+    "src_hash": "9dc8d6d2135459483a32e42f4c71bfae",
+    "text": "Wild Growth Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:04.623003Z"
+  },
+  "item.3158.name": {
+    "src_hash": "a63c57be298a194a943475aa554f5f78",
+    "text": "Icicle Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:04.623392Z"
+  },
+  "item.3160.name": {
+    "src_hash": "b25b53c822bcd98974fcaa1fbf8fb0aa",
+    "text": "Ultimate Healing Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:04.623785Z"
+  },
+  "item.3161.name": {
+    "src_hash": "cab3c5eb8827f3e61c150d57ca197f88",
+    "text": "Avalanche Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:04.624045Z"
+  },
+  "item.3164.name": {
+    "src_hash": "f60e5a60c1b758e59152ab854051f6f2",
+    "text": "Energy Field Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:04.624498Z"
+  },
+  "item.3166.name": {
+    "src_hash": "9afbdfa527777fc5d260fcd1dd0f4094",
+    "text": "Energy Wall Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:04.624856Z"
+  },
+  "item.3172.name": {
+    "src_hash": "29bdf0054473b50fa81a1b59875edbf9",
+    "text": "Poison Field Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:04.625368Z"
+  },
+  "item.3173.name": {
+    "src_hash": "858721d74877cf4710ed54517d35713d",
+    "text": "Poison Bomb Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:04.625673Z"
+  },
+  "item.3174.name": {
+    "src_hash": "ea8aea2d9723287e660b1406fec99eb1",
+    "text": "Light Magic Missile Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:04.626002Z"
+  },
+  "item.3175.name": {
+    "src_hash": "25854a690aad0b2f569b5c34e1691b91",
+    "text": "Stone Shower Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:04.626323Z"
+  },
+  "item.3176.name": {
+    "src_hash": "78e6136805ee4ea8f53e60caf96a394b",
+    "text": "Poison Wall Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:04.626602Z"
+  },
+  "item.3177.name": {
+    "src_hash": "961fd74b70425c951d4cbbb14b6479e3",
+    "text": "Convince Creature Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:04.626900Z"
+  },
+  "item.3178.name": {
+    "src_hash": "013606651a891a3bd1001805d0da726e",
+    "text": "Chameleon Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:04.627146Z"
+  },
+  "item.3179.name": {
+    "src_hash": "210691f016709d7398e1d323b9da8859",
+    "text": "Stalagmite Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:04.627550Z"
+  },
+  "item.3180.name": {
+    "src_hash": "130859064dcec73dfefffb635fd5b0c6",
+    "text": "Magic Wall Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:04.627985Z"
+  },
+  "item.3182.name": {
+    "src_hash": "79269881630466ca0eca7525a026c059",
+    "text": "Holy Missile Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:04.628326Z"
+  },
+  "item.3188.name": {
+    "src_hash": "bf99d79327d646790c45047cc04d8182",
+    "text": "Fire Field Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:04.628589Z"
+  },
+  "item.3189.name": {
+    "src_hash": "9fa403a008c2a7bb5138a129f950d02b",
+    "text": "Fireball Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:04.628827Z"
+  },
+  "item.3190.name": {
+    "src_hash": "5eb3ba2aca23558a99f38c4ac773a913",
+    "text": "Fire Wall Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:04.629070Z"
+  },
+  "item.3191.name": {
+    "src_hash": "7997a69ae49a90c11c1136ac972bc953",
+    "text": "Great Fireball Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:04.629451Z"
+  },
+  "item.3192.name": {
+    "src_hash": "533a42d998f407c9860eda103d41854c",
+    "text": "Fire Bomb Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:04.629812Z"
+  },
+  "item.3195.name": {
+    "src_hash": "2f2f34b93816d3e6dc730a3b95d76e78",
+    "text": "Soulfire Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:04.630186Z"
+  },
+  "item.3197.name": {
+    "src_hash": "a20a2360568eda693272b183da79d321",
+    "text": "Disintegrate Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:04.630552Z"
+  },
+  "item.3198.name": {
+    "src_hash": "914de3c6825f6f3cb25da03b5fb65a8b",
+    "text": "Heavy Magic Missile Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:04.630862Z"
+  },
+  "item.3200.name": {
+    "src_hash": "22494ca9495b54d62a7467fd9018dc7f",
+    "text": "Explosion Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:04.631116Z"
+  },
+  "item.3202.name": {
+    "src_hash": "83a4224e6625714976b634a3099f2f6e",
+    "text": "Thunderstorm Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:04.631422Z"
+  },
+  "item.3203.name": {
+    "src_hash": "69c97276273d5b7f4faf11b058c37266",
+    "text": "Animate Dead Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:04.631706Z"
+  },
+  "item.3274.name": {
+    "src_hash": "c89ee4a2c9dcae6581ca53bff9aa4ee5",
+    "text": "axe",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:04.634182Z"
+  },
+  "item.36786.name": {
+    "src_hash": "8bac228393c7fc0a4f3ac1a0c4622505",
+    "text": "lavafungus ring",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:04.642340Z"
+  },
+  "item.7107.name": {
+    "src_hash": "7bdff76536f12a7c5ffde207e72cfe3a",
+    "text": "ice",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:04.661540Z"
+  },
+  "item.7403.name": {
+    "src_hash": "d085749c93295c3002525428f3318cc1",
+    "text": "Berserker",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:04.662609Z"
+  },
+  "item.7740.name": {
+    "src_hash": "7bdff76536f12a7c5ffde207e72cfe3a",
+    "text": "ice",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:04.663622Z"
+  },
+  "item.800.name": {
+    "src_hash": "7bdff76536f12a7c5ffde207e72cfe3a",
+    "text": "ice",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:04.664415Z"
+  },
+  "item.1.name": {
+    "src_hash": "9460370bb0ca1c98a779b1bcc6861c2c",
+    "text": "vann",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:32.830101Z"
+  },
+  "item.10.name": {
+    "src_hash": "90fbbee0c198b3f16d17271f8ca29d70",
+    "text": "manafluid",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:32.830405Z"
+  },
+  "item.100.name": {
+    "src_hash": "cab8111fd0b710a336c898e539090e34",
+    "text": "ugyldig",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:32.830612Z"
+  },
+  "item.10000.name": {
+    "src_hash": "aa63b14cb9675819aa6ecea9feeb5d27",
+    "text": "solverv tre",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:32.830896Z"
+  },
+  "item.10009.name": {
+    "src_hash": "2b120bc99743cc25cc800661bd42f168",
+    "text": "kolbe med kronepolerer",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:32.831201Z"
+  },
+  "item.10010.name": {
+    "src_hash": "2476a5a90c029582282973dffc394319",
+    "text": "zaoan dekorasjon",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:32.831461Z"
+  },
+  "item.10011.name": {
+    "src_hash": "36227190a857cf681921d9bf34a765ad",
+    "text": "kart til det ukjente",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:32.831761Z"
+  },
+  "item.10025.name": {
+    "src_hash": "3f76a90627bb7b7ad4e71375df6aa29f",
+    "text": "almanakk av magi",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:32.832021Z"
+  },
+  "item.10026.name": {
+    "src_hash": "aabdddfc93cdfc8322f94b68f9cc0760",
+    "text": "baby rotorm",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:32.832241Z"
+  },
+  "item.10027.name": {
+    "src_hash": "c1bcf9b8357f67370e4599d8b21749be",
+    "text": "universelt verktøy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:32.832483Z"
+  },
+  "item.10028.name": {
+    "src_hash": "466a6bdf5ea677b6e1344f8bd3619a4a",
+    "text": "sjelekontrakt",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:32.832734Z"
+  },
+  "item.1006.name": {
+    "src_hash": "eee3db73cf76cd1ca29c6c5d40f44fb4",
+    "text": "taggete steiner",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:32.832970Z"
+  },
+  "item.10069.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "brannfelt",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:32.833178Z"
+  },
+  "item.10070.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "brannfelt",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:32.833381Z"
+  },
+  "item.10071.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "brannfelt",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:32.833581Z"
+  },
+  "item.10096.name": {
+    "src_hash": "cd2878e9d8d9bd39b4e50c83b5990cc8",
+    "text": "stabel",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:32.833795Z"
+  },
+  "item.10097.name": {
+    "src_hash": "ffb79de3dd0555fb7a5ca7071a0c1b4a",
+    "text": "pepper gress",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:32.834017Z"
+  },
+  "item.10098.name": {
+    "src_hash": "8365620ffd40a47e8c1d7d5b5c7633cb",
+    "text": "høyt gress",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:32.834227Z"
+  },
+  "item.101.name": {
+    "src_hash": "852488ddd9570bc877783bf4397563e0",
+    "text": "jord",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:32.834433Z"
+  },
+  "item.10111.name": {
+    "src_hash": "ffb79de3dd0555fb7a5ca7071a0c1b4a",
+    "text": "pepper gress",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:32.834648Z"
+  },
+  "item.10112.name": {
+    "src_hash": "2aefe63ef336d4cc0262873f224fbe19",
+    "text": "gjørme sand gress",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:32.834920Z"
+  },
+  "item.1012.name": {
+    "src_hash": "74d7b04810e76e98881a64131caa3e87",
+    "text": "glitrende perle",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:32.835148Z"
+  },
+  "item.10140.name": {
+    "src_hash": "3b2fa34af93b15d8e28dacad96e85076",
+    "text": "demoniske rester",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:32.835383Z"
+  },
+  "item.10159.name": {
+    "src_hash": "9fbf6b7186d409b5605c7eb845ed7443",
+    "text": "skallen til en huleboer",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:32.835652Z"
+  },
+  "item.10180.name": {
+    "src_hash": "418acd2dc26b4e76fa2db55ab2f3e659",
+    "text": "jord",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:32.835874Z"
+  },
+  "item.10181.name": {
+    "src_hash": "b191656e3ce1b7048b8d4510eb17cf22",
+    "text": "magisk vegg",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:32.836141Z"
+  },
+  "item.10182.name": {
+    "src_hash": "33f19afbf6744c10a2e913608b22cb83",
+    "text": "rush ved",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:32.836355Z"
+  },
+  "item.10183.name": {
+    "src_hash": "166e86f69d6225986d74594875d5b86d",
+    "text": "flaske med gift",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:32.836668Z"
+  },
+  "item.10184.name": {
+    "src_hash": "6a5213ef75be2d75ba25027c7e78be72",
+    "text": "taktisk kart",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:03:32.836922Z"
+  },
+  "npc.karith.say_22": {
+    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
+    "text": "Set the sails!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:12:51.407753Z"
+  },
+  "npc.karith.say_24": {
+    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
+    "text": "Set the sails!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:12:51.408147Z"
+  },
+  "npc.karith.say_26": {
+    "src_hash": "69ce05199222d304e8f82cb747eed8ab",
+    "text": "Don't waste my time.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:12:51.408521Z"
+  },
+  "npc.kevin.say_46": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:12:51.413748Z"
+  },
+  "npc.lardoc_bashsmite.say_10": {
+    "src_hash": "f5940523060652e3a7d9c269ce48de50",
+    "text": "Done.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:12:51.421044Z"
+  },
+  "npc.lardoc_bashsmite.say_12": {
+    "src_hash": "f5940523060652e3a7d9c269ce48de50",
+    "text": "Done.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:12:51.421279Z"
+  },
+  "npc.lardoc_bashsmite.say_14": {
+    "src_hash": "f5940523060652e3a7d9c269ce48de50",
+    "text": "Done.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:12:51.421501Z"
+  },
+  "npc.lardoc_bashsmite.say_9": {
+    "src_hash": "69ce05199222d304e8f82cb747eed8ab",
+    "text": "Don't waste my time.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:12:51.422108Z"
+  },
+  "npc.lokur.say_5": {
+    "src_hash": "12d673409d71f1fc127ebad108378378",
+    "text": "No then.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:12:51.431541Z"
+  },
+  "npc.lorbas.say_4": {
+    "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
+    "text": "I see.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:12:51.431972Z"
+  },
+  "npc.lugri.say_13": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:12:51.439077Z"
+  },
+  "npc.lugri.say_15": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:12:51.439468Z"
+  },
+  "npc.lugri.say_17": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:12:51.439836Z"
+  },
+  "npc.lugri.say_19": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:12:51.440236Z"
+  },
+  "npc.lukosch.say_5": {
+    "src_hash": "12d673409d71f1fc127ebad108378378",
+    "text": "No then.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:12:51.440696Z"
+  },
+  "npc.maelyrra.say_18": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:12:51.444650Z"
+  },
+  "npc.melfar.say_3": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Here you go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:12:51.448985Z"
+  },
+  "npc.nah_bob.say_6": {
+    "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
+    "text": "I see.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:12:51.459496Z"
+  },
+  "npc.norma.say_9": {
+    "src_hash": "ebaeda37e982b71a905f5f1995285a85",
+    "text": "Maybe another time.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:12:51.467538Z"
+  },
+  "npc.ocelus.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Good bye.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:12:51.473278Z"
+  },
+  "npc.ocelus.walkaway_msg_1": {
+    "src_hash": "cbca1e780ae7e44aa43debe068beb490",
+    "text": "Oh well.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:12:51.473606Z"
+  },
+  "npc.palomino.say_5": {
+    "src_hash": "cc67edbe5929572b201f9b2aa0f478f9",
+    "text": "Have a nice trip!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:12:51.485865Z"
+  },
+  "npc.palomino.say_9": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:12:51.486135Z"
+  },
+  "npc.pukosch.say_5": {
+    "src_hash": "12d673409d71f1fc127ebad108378378",
+    "text": "No then.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:12:51.495817Z"
+  },
+  "npc.robson.say_4": {
+    "src_hash": "b5010567e209726a125c9ed59162eca5",
+    "text": "Fine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:12:51.514872Z"
+  },
+  "npc.robson.say_6": {
+    "src_hash": "b5010567e209726a125c9ed59162eca5",
+    "text": "Fine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:12:51.515123Z"
+  },
+  "npc.rose.say_4": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:12:51.518117Z"
+  },
+  "npc.sam.say_10": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:12:51.519933Z"
+  },
+  "npc.sebastian.say_2": {
+    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
+    "text": "Set the sails!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:12:51.523506Z"
+  },
+  "npc.shirtalis_of_the_summer_court.say_3": {
+    "src_hash": "8ebe07d7adacdd880130a981ebf53704",
+    "text": "As you wish.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:12:51.535271Z"
+  },
+  "npc.siflind.say_31": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Here you go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:12:51.536743Z"
+  },
+  "npc.stutch.say_3": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Take this!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:12:51.542995Z"
+  },
+  "npc.suzy.farewell_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Have a nice day.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:12:51.543595Z"
+  },
+  "npc.suzy.walkaway_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Have a nice day.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:12:51.543992Z"
+  },
+  "npc.taegen.say_1": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:12:51.545247Z"
+  },
+  "npc.tamerin.say_4": {
+    "src_hash": "706b1a009354e93f05beff4ba2e0a628",
+    "text": "SO BE IT!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:12:51.546202Z"
+  },
+  "npc.tamerin.say_5": {
+    "src_hash": "706b1a009354e93f05beff4ba2e0a628",
+    "text": "SO BE IT!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:12:51.546538Z"
+  },
+  "npc.tarun.say_3": {
+    "src_hash": "8ebe07d7adacdd880130a981ebf53704",
+    "text": "As you wish.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:12:51.548235Z"
+  },
+  "npc.the_blind_prophet.say_14": {
+    "src_hash": "80daa793e7bea0f5da969ee940135c1a",
+    "text": "Take care!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:12:51.552653Z"
+  },
+  "npc.the_orc_king.say_8": {
+    "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
+    "text": "I see.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:12:51.556000Z"
+  },
+  "npc.tom.stdmod_31": {
+    "src_hash": "aafa4696d9102bda2dc5250066f65b13",
+    "text": "He's an apple polisher.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:12:51.563376Z"
+  },
+  "npc.uncle.say_11": {
+    "src_hash": "8ebe07d7adacdd880130a981ebf53704",
+    "text": "As you wish.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:12:51.570800Z"
+  },
+  "npc.warbert.say_1": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Take this!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:12:51.587010Z"
+  },
+  "npc.wyda.say_8": {
+    "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
+    "text": "I see.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:12:51.591449Z"
+  },
+  "npc.yaman.say_14": {
+    "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
+    "text": "I see.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:12:51.592958Z"
+  },
+  "npc.a_bearded_woman.stdmod_4": {
+    "src_hash": "2d38ace4459f0ec00320789d297c3501",
+    "text": "Det hele var kaptein Kids idé. Du skjønner, han hatet navnet sitt og planla å bli kjent under navnet kaptein Kidnap. ... \\z\n\tAlt han trengte var en berømt å kidnappe. ... \\z\n\tGitt hans menns dystre mangel på talent og intelligens ville det ha vært litt av en bragd. ... \\z\n\tVi kjente hverandre fra noen få svindel vi gjorde sammen tidligere, så han kontaktet meg. ... \\z\n\tJeg skulle etterligne den berømte prinsesse Lumelia. Du vet, den alle lette etter. ... \\z\n\tDet ville vise mennene hans og de andre piratene hvilken stor kidnapper han var. ... \\z\n\tHan lovet meg at jeg skulle bli hans nestkommanderende og leve et fantastisk liv med plyndring, ran og plyndring. ... \\z\n\tSå jeg gikk med på å etterligne prinsessen en stund, og det fungerte bra til å begynne med. ... \\z\n\tHan kom tilbake med meg kledd som prinsessen fra et raid på egen hånd og ble øyeblikkelig dagens helt for sine menn. ... \\z\n\tDet gikk dårlig da de bestemte seg for å ha en seiersfest. ... \\z\n\tSå langt jeg kunne se ut fra piratenes mumling, mistet Kid nøkkelen til cellen min mens han lettet seg i den underjordiske elven. ... \\z\n\tIdioten bestemte seg for å dykke etter den .. for aldri å bli sett igjen. ... \\z\n\tDa jeg fant ut om Kids bortgang prøvde jeg å overbevise piratene om at det var en bløff, men de vil bare ikke tro meg!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:13:21.459230Z"
+  },
+  "npc.a_bearded_woman.stdmod_5": {
+    "src_hash": "d02c0ffb00f9c85e39e5609e3ffcfc53",
+    "text": "Ah kidnapping er så gøy. Det vil si hvis du ikke er på mottakersiden. ... \\z\n\tDet er enkle penger, og du har en sjanse til å skremme og torturere noen som ikke kan slå tilbake!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:13:21.460023Z"
+  },
+  "npc.a_bearded_woman.stdmod_7": {
+    "src_hash": "a07eb0740959112055b5524599e7a7e2",
+    "text": "Nøkkelen ble tapt i den underjordiske elven og har sannsynligvis skylt inn i de syv hav nå! ... \\z\n\tHvis den dumme ungen ikke hadde vært så besatt av kidnapping, hadde han ikke solgt skipet sitt for å kjøpe de dyreste og mest kompliserte låsene til cellene hans!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:13:21.460952Z"
+  },
+  "npc.a_bearded_woman.stdmod_8": {
+    "src_hash": "611cca91ceb08fc3c7143e9b26284ef9",
+    "text": "Så lenge vi holder oss til uforsvarte kystbyer kan vi tjene en lett formue. Har Har! ... \\z\n\tSå snart jeg kommer ut herfra blir jeg endelig sjørøverkaptein på egenhånd. Jeg trenger ikke Captain Kid!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:13:21.461743Z"
+  },
+  "npc.a_bearded_woman.voice_3": {
+    "src_hash": "c28763b34d8b1e303d10487a3c6bdda4",
+    "text": "Få meg ut! Det hele var en del av planen, dere idioter!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:13:21.462155Z"
+  },
+  "npc.a_bearded_woman.voice_4": {
+    "src_hash": "f6e4d063bc0eade947ac0001b744445e",
+    "text": "Hvis jeg noen gang kommer meg ut herfra, dreper jeg dere alle! Alle sammen!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:13:21.462611Z"
+  },
+  "npc.a_bearded_woman.voice_5": {
+    "src_hash": "610ef2c5395758ac8169140d09ad737a",
+    "text": "Jeg er IKKE prinsesse Lumelia, dere idioter!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:13:21.462970Z"
+  },
+  "npc.a_bearded_woman.voice_6": {
+    "src_hash": "53c4ab6007ae6d3e10ea4ddf7dce9bf1",
+    "text": "Skaff deg en låsesmed og fri meg, ellers kommer du til å angre, dine tåpelige pirater!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:13:21.463434Z"
+  },
+  "npc.a_bearded_woman.voice_7": {
+    "src_hash": "6ad2054bb73e4f51e22543c42ffc5d5b",
+    "text": "Jeg er ikke en prinsesse, jeg er en skuespiller!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:13:21.463813Z"
+  },
+  "npc.a_beautiful_girl.greet_msg_1": {
+    "src_hash": "12c56c6555b96d78e471b6866d61e5dc",
+    "text": "Så du har kommet, |PLAYERNAME|. Jeg håpet du ikke ville...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:13:21.464223Z"
+  },
+  "npc.a_beggar.greet_msg_1": {
+    "src_hash": "fb67985b03b0041bfb5a827c66ff748c",
+    "text": "Hei! Hva er det, hva gjør du {want}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:13:21.464600Z"
+  },
+  "npc.a_beggar.say_1": {
+    "src_hash": "dfa16f2971d25fe56e1c023824c93b08",
+    "text": "Trodde det. Men du må snakke med kongen. Tiggerkongen altså. Kongen gir ikke audiens til bare alle. Du vet hvordan de kongene er, ikke sant? ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:13:21.465280Z"
+  },
+  "npc.a_beggar.say_2": {
+    "src_hash": "7f8292b9eb7566b64edd089a2459de83",
+    "text": "Men for å få audiens hos kongen, må du hjelpe undersåttene hans litt. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:13:21.465784Z"
+  },
+  "npc.a_beggar.say_3": {
+    "src_hash": "c00ef85e3c706aa4e1feb0023c862a5e",
+    "text": "Hans undersåtter som ville være oss, de fattige, vet du? ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:13:21.466200Z"
+  },
+  "npc.a_beggar.say_4": {
+    "src_hash": "4083b6eb97ef1d492dafe67ced5e1d1b",
+    "text": "Så hvorfor viser du ikke din dedikasjon til de fattige? Gå og hjelp Chavis i det fattige huset. Han samler inn mat til folk som oss. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:13:21.466859Z"
+  },
+  "npc.a_beggar.say_5": {
+    "src_hash": "8bb1bd6a0ab3fe83a4488aa718b941f9",
+    "text": "Hvis du tok med nok av tingene, vil du se at kongen vil gi deg inngang i sin {palace}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:13:21.467346Z"
+  },
+  "npc.a_behemoth.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Hold det nede! <gives you an elaborate report on monster activity>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:13:21.467798Z"
+  },
+  "npc.a_behemoth.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Hold det nede! <gives you an elaborate report on monster activity>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:13:21.468226Z"
+  },
+  "npc.a_behemoth.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Hold det nede! <gives you an elaborate report on monster activity>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:13:21.468674Z"
+  },
+  "npc.a_dead_bureaucrat.greet_msg_1": {
+    "src_hash": "1fb51950fc35d0b9f7979cbb0fff81b2",
+    "text": "Hei {}, velkommen til atriumet til Pumin's Domain. Vi krever litt informasjon fra deg før vi kan la deg passere. Hvor vil du dra?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:13:21.469301Z"
+  },
+  "npc.a_dead_bureaucrat1.farewell_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Farvel og ikke glem meg!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:13:21.469649Z"
+  },
+  "npc.a_dead_bureaucrat1.say_1": {
+    "src_hash": "f4195eed0570aee7a7882eadb5b85979",
+    "text": "Huhu, vær så snill, ikke gjør meg vondt med {}! Årsaken til besøket ditt?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:13:21.470118Z"
+  },
+  "npc.a_dead_bureaucrat1.say_2": {
+    "src_hash": "6c80ac504f39e09fc288756acfd7a105",
+    "text": "Hvor veldig interessant. Jeg må fortelle det til min herre umiddelbart. Vennligst gå til kollegene mine og be om skjema 356. Du trenger det for å fortsette.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:13:21.470828Z"
+  },
+  "npc.a_dead_bureaucrat1.say_3": {
+    "src_hash": "7c9a6b9ee4bce0d9b7654294cdfe405e",
+    "text": "Greit |PLAYERNAME|. Kall?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:13:21.471156Z"
+  },
+  "npc.a_dead_bureaucrat1.say_5": {
+    "src_hash": "7025be9c3a92e5d4e7965480ef624e3a",
+    "text": "Skjema 411? Du trenger skjema 287 for å få det! Har du det?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:13:21.471594Z"
+  },
+  "npc.a_dead_bureaucrat1.say_6": {
+    "src_hash": "7025be9c3a92e5d4e7965480ef624e3a",
+    "text": "Skjema 411? Du trenger skjema 287 for å få det! Har du det?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:13:21.472008Z"
+  },
+  "npc.a_dead_bureaucrat1.say_7": {
+    "src_hash": "22849ba6a7644915a8cb4de5b2a8e521",
+    "text": "Å, så synd. Gå til en av mine kolleger. Jeg gir deg tillatelse til å få skjema 287. Hei!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:13:21.472509Z"
+  },
+  "npc.a_dead_bureaucrat1.say_8": {
+    "src_hash": "68c9f9ee9212c1c305a253d3d1aebeb0",
+    "text": "Stor. Her er du. Skjema 411. Kom tilbake når du vil snakke. Ha det.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:13:21.472980Z"
+  },
+  "npc.a_dead_bureaucrat1.say_9": {
+    "src_hash": "6c558828065bb071d2bead0fc23aef37",
+    "text": "UTROLIG, du klarte det!! Ha det gøy på Pumin's Domain!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:13:21.473383Z"
+  },
+  "npc.a_dead_bureaucrat1.voice_1": {
+    "src_hash": "cdcea1350c387fbbeec64fa8f0b8ddea",
+    "text": "Hvor la jeg det skjemaet?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:13:21.473753Z"
+  },
+  "npc.a_dead_bureaucrat1.walkaway_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Farvel og ikke glem meg!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:13:21.474075Z"
+  },
+  "npc.a_dead_bureaucrat2.farewell_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Farvel og ikke glem meg!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:13:21.474401Z"
+  },
+  "npc.a_dead_bureaucrat2.say_1": {
+    "src_hash": "14fd31f81c485fd102c189615f61a284",
+    "text": "Jada, du kan få det fra meg. Her er du. Ha det",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:13:21.474845Z"
+  },
+  "npc.a_dead_bureaucrat2.voice_1": {
+    "src_hash": "cdcea1350c387fbbeec64fa8f0b8ddea",
+    "text": "Hvor la jeg det skjemaet?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:13:21.475183Z"
+  },
+  "npc.a_dead_bureaucrat2.walkaway_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Farvel og ikke glem meg!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:13:21.475500Z"
+  },
+  "item.1053.name": {
+    "src_hash": "852488ddd9570bc877783bf4397563e0",
+    "text": "jord",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:49:25.114038Z"
+  },
+  "item.1090.name": {
+    "src_hash": "eee3db73cf76cd1ca29c6c5d40f44fb4",
+    "text": "taggete steiner",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:49:25.114614Z"
+  },
+  "item.2118.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "brannfelt",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:49:25.130900Z"
+  },
+  "item.2119.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "brannfelt",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:49:25.131203Z"
+  },
+  "item.2120.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "brannfelt",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:49:25.131463Z"
+  },
+  "item.2123.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "brannfelt",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:49:25.131792Z"
+  },
+  "item.2124.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "brannfelt",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:49:25.132006Z"
+  },
+  "item.2125.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "brannfelt",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:49:25.132215Z"
+  },
+  "item.2128.name": {
+    "src_hash": "b191656e3ce1b7048b8d4510eb17cf22",
+    "text": "magisk vegg",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:49:25.132441Z"
+  },
+  "item.2129.name": {
+    "src_hash": "b191656e3ce1b7048b8d4510eb17cf22",
+    "text": "magisk vegg",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:49:25.132652Z"
+  },
+  "item.2130.name": {
+    "src_hash": "33f19afbf6744c10a2e913608b22cb83",
+    "text": "rush ved",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:49:25.132921Z"
+  },
+  "item.2131.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "brannfelt",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:49:25.133149Z"
+  },
+  "item.2132.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "brannfelt",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:49:25.133356Z"
+  },
+  "item.2133.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "brannfelt",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:49:25.133570Z"
+  },
+  "item.21462.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "brannfelt",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:49:25.134770Z"
+  },
+  "item.21465.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "brannfelt",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:49:25.135004Z"
+  },
+  "item.2727.name": {
+    "src_hash": "852488ddd9570bc877783bf4397563e0",
+    "text": "jord",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:49:25.145012Z"
+  },
+  "item.2731.name": {
+    "src_hash": "852488ddd9570bc877783bf4397563e0",
+    "text": "jord",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:49:25.145286Z"
+  },
+  "item.28690.name": {
+    "src_hash": "aabdddfc93cdfc8322f94b68f9cc0760",
+    "text": "baby rotorm",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:49:25.148400Z"
+  },
+  "item.28691.name": {
+    "src_hash": "aabdddfc93cdfc8322f94b68f9cc0760",
+    "text": "baby rotorm",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:49:25.148639Z"
+  },
+  "item.28692.name": {
+    "src_hash": "aabdddfc93cdfc8322f94b68f9cc0760",
+    "text": "baby rotorm",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:49:25.148891Z"
+  },
+  "item.28693.name": {
+    "src_hash": "aabdddfc93cdfc8322f94b68f9cc0760",
+    "text": "baby rotorm",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:49:25.149124Z"
+  },
+  "item.30224.name": {
+    "src_hash": "33f19afbf6744c10a2e913608b22cb83",
+    "text": "rush ved",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:49:25.152477Z"
+  },
+  "item.372.name": {
+    "src_hash": "852488ddd9570bc877783bf4397563e0",
+    "text": "jord",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:49:25.169853Z"
+  },
+  "item.38478.name": {
+    "src_hash": "9460370bb0ca1c98a779b1bcc6861c2c",
+    "text": "vann",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:49:25.172152Z"
+  },
+  "item.3993.name": {
+    "src_hash": "852488ddd9570bc877783bf4397563e0",
+    "text": "jord",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:49:25.174939Z"
+  },
+  "item.622.name": {
+    "src_hash": "9460370bb0ca1c98a779b1bcc6861c2c",
+    "text": "vann",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:49:25.188514Z"
+  },
+  "item.7541.name": {
+    "src_hash": "852488ddd9570bc877783bf4397563e0",
+    "text": "jord",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:49:25.191930Z"
+  },
+  "item.7594.name": {
+    "src_hash": "852488ddd9570bc877783bf4397563e0",
+    "text": "jord",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:49:25.192221Z"
+  },
+  "item.7747.name": {
+    "src_hash": "cab8111fd0b710a336c898e539090e34",
+    "text": "ugyldig",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:49:25.192641Z"
+  },
+  "item.7893.name": {
+    "src_hash": "3b2fa34af93b15d8e28dacad96e85076",
+    "text": "demoniske rester",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:49:25.193321Z"
+  },
+  "item.8684.name": {
+    "src_hash": "9460370bb0ca1c98a779b1bcc6861c2c",
+    "text": "vann",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:49:25.195203Z"
+  },
+  "item.9246.name": {
+    "src_hash": "852488ddd9570bc877783bf4397563e0",
+    "text": "jord",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:49:25.197777Z"
+  },
+  "item.9804.name": {
+    "src_hash": "2476a5a90c029582282973dffc394319",
+    "text": "zaoan dekorasjon",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:49:25.199625Z"
+  },
+  "item.9995.name": {
+    "src_hash": "aa63b14cb9675819aa6ecea9feeb5d27",
+    "text": "solverv tre",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:49:25.200063Z"
+  },
+  "item.9997.name": {
+    "src_hash": "8365620ffd40a47e8c1d7d5b5c7633cb",
+    "text": "høyt gress",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:49:25.200303Z"
+  },
+  "item.9998.name": {
+    "src_hash": "8365620ffd40a47e8c1d7d5b5c7633cb",
+    "text": "høyt gress",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:49:25.200561Z"
+  },
+  "item.9999.name": {
+    "src_hash": "8365620ffd40a47e8c1d7d5b5c7633cb",
+    "text": "høyt gress",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:49:25.200781Z"
+  },
+  "item.10185.name": {
+    "src_hash": "fb22606aca32dcbce80ae759f3e23f66",
+    "text": "bytte",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:50:02.818220Z"
+  },
+  "item.10186.name": {
+    "src_hash": "2d9e53feb0673a054464fd17e13ab87e",
+    "text": "skrikeball",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:50:02.818540Z"
+  },
+  "item.10187.name": {
+    "src_hash": "c0e2289468f8376e785248a520b72014",
+    "text": "sjelden krystall",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:50:02.818775Z"
+  },
+  "item.10189.name": {
+    "src_hash": "bf28efa02d6ee5e3c9d823175b421301",
+    "text": "en kolbe med ekstra fet olje",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:50:02.819093Z"
+  },
+  "item.1019.name": {
+    "src_hash": "ce1ca28266c962ae55f0a786013793d5",
+    "text": "jungelgress",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:50:02.819319Z"
+  },
+  "item.10190.name": {
+    "src_hash": "c4f472440ff1cb095aa917bb4daa2be0",
+    "text": "død draken krigsmester",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:50:02.819610Z"
+  },
+  "item.10191.name": {
+    "src_hash": "c4f472440ff1cb095aa917bb4daa2be0",
+    "text": "død draken krigsmester",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:50:02.819897Z"
+  },
+  "item.10192.name": {
+    "src_hash": "c4f472440ff1cb095aa917bb4daa2be0",
+    "text": "død draken krigsmester",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:50:02.820180Z"
+  },
+  "item.10193.name": {
+    "src_hash": "c4f472440ff1cb095aa917bb4daa2be0",
+    "text": "død draken krigsmester",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:50:02.820464Z"
+  },
+  "item.10194.name": {
+    "src_hash": "feb706aed35979e15f25a1f15bb6f71f",
+    "text": "bambus skuff",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:50:02.820691Z"
+  },
+  "item.10195.name": {
+    "src_hash": "79f7d2ef17285d43eb5819ce8fd4699a",
+    "text": "blader",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:50:02.820881Z"
+  },
+  "item.10196.name": {
+    "src_hash": "108dd41b5aa8c784aec5f9101c11f1ad",
+    "text": "ork tann",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:50:02.821081Z"
+  },
+  "item.10197.name": {
+    "src_hash": "ce1ca28266c962ae55f0a786013793d5",
+    "text": "jungelgress",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:50:02.821294Z"
+  },
+  "item.10198.name": {
+    "src_hash": "0a6dcecfe4aa9c8c2ec49ab453984657",
+    "text": "stammevåpen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:50:02.821510Z"
+  },
+  "item.10199.name": {
+    "src_hash": "9ca33c2744c767a83e7045f51bd5935c",
+    "text": "slangevåpen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:50:02.821825Z"
+  },
+  "item.102.name": {
+    "src_hash": "2357c882fbe6b5613c047cdba496334b",
+    "text": "hvit blomst",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:50:02.822101Z"
+  },
+  "item.10200.name": {
+    "src_hash": "82e304e7ef04a2a6b31bbabdc33ed9b3",
+    "text": "krystall støvler",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:50:02.822410Z"
+  },
+  "item.10201.name": {
+    "src_hash": "06d4a8c785c1ed681288854d9af74c05",
+    "text": "drageskala støvler",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:50:02.822694Z"
+  },
+  "item.10202.name": {
+    "src_hash": "2c9020abf2bfa613ade54e932cc5761d",
+    "text": "hjerte ryggsekk",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:50:02.822928Z"
+  },
+  "item.10203.name": {
+    "src_hash": "28f61ed3699ca1c9a528636cf5d04021",
+    "text": "hodeskallehaug",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:50:02.823165Z"
+  },
+  "item.10205.name": {
+    "src_hash": "b00fcd304c378b1eea88e6d50f5a642a",
+    "text": "haug med bein",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:50:02.823401Z"
+  },
+  "item.10206.name": {
+    "src_hash": "02df6ab0ddc16081bf6d400457d5d3c4",
+    "text": "steintrapper",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:50:02.823625Z"
+  },
+  "item.10207.name": {
+    "src_hash": "3dad4960c0bca534f7b644707d6f35bf",
+    "text": "snømannpakke",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:50:02.823873Z"
+  },
+  "item.10208.name": {
+    "src_hash": "b932a6ec0f3bef993326983f5c8808eb",
+    "text": "snømann",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:50:02.824073Z"
+  },
+  "item.10209.name": {
+    "src_hash": "11af29272a9b9fc23ef2b7f853795776",
+    "text": "øgle våpenstativ sett",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:50:02.824405Z"
+  },
+  "item.10210.name": {
+    "src_hash": "5451e3ed5604c536bb8c849f209da5b9",
+    "text": "øgle våpenstativ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:50:02.824685Z"
+  },
+  "item.10211.name": {
+    "src_hash": "5451e3ed5604c536bb8c849f209da5b9",
+    "text": "øgle våpenstativ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:50:02.824957Z"
+  },
+  "item.10212.name": {
+    "src_hash": "7131d1c878f058973254abc586e95e18",
+    "text": "drage statue",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:50:02.825213Z"
+  },
+  "item.10213.name": {
+    "src_hash": "7131d1c878f058973254abc586e95e18",
+    "text": "drage statue",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:50:02.825445Z"
+  },
+  "item.10214.name": {
+    "src_hash": "7131d1c878f058973254abc586e95e18",
+    "text": "drage statue",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:50:02.825667Z"
+  },
+  "item.10215.name": {
+    "src_hash": "7131d1c878f058973254abc586e95e18",
+    "text": "drage statue",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:50:02.825884Z"
+  },
+  "item.10216.name": {
+    "src_hash": "a5c37b0b99535230dcd569b7130cc54b",
+    "text": "drage statue sett",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:50:02.826165Z"
+  },
+  "item.10217.name": {
+    "src_hash": "910960a7c0b00d2d1e1209ff40d1381e",
+    "text": "Tome av Knowledge",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:50:02.826582Z"
+  },
+  "item.10218.name": {
+    "src_hash": "f9300686f5bdfa92fe3c8a12b3365fdb",
+    "text": "kornfisk",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:50:02.826831Z"
+  },
+  "item.10219.name": {
+    "src_hash": "e002ba7b4a12cf1f32203f0401207ff5",
+    "text": "krokodillebiff",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:50:02.827075Z"
+  },
+  "item.10221.name": {
+    "src_hash": "4212181ee4e21c2ab9a4a71943c92c0e",
+    "text": "død morder kaiman",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:50:02.827382Z"
+  },
+  "item.10222.name": {
+    "src_hash": "4212181ee4e21c2ab9a4a71943c92c0e",
+    "text": "død morder kaiman",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:50:02.827657Z"
+  },
+  "item.10223.name": {
+    "src_hash": "4212181ee4e21c2ab9a4a71943c92c0e",
+    "text": "død morder kaiman",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:50:02.827925Z"
+  },
+  "item.10224.name": {
+    "src_hash": "4212181ee4e21c2ab9a4a71943c92c0e",
+    "text": "død morder kaiman",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:50:02.828220Z"
+  },
+  "item.10227.name": {
+    "src_hash": "092e30b8a679b0c3eab38f6cd63f79ce",
+    "text": "marerittdukke",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:50:02.828464Z"
+  },
+  "item.10244.name": {
+    "src_hash": "cdc52e0f25dbe88246f4a9f0db43e517",
+    "text": "bonebeast trofé",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:50:02.828720Z"
+  },
+  "item.10247.name": {
+    "src_hash": "22bc99e4f9c4d97053f643f4ecffacf6",
+    "text": "våpenkasse",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T02:50:02.828948Z"
+  },
+  "item.11210.name": {
+    "src_hash": "7131d1c878f058973254abc586e95e18",
+    "text": "drage statue",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:24.365941Z"
+  },
+  "item.1977.name": {
+    "src_hash": "02df6ab0ddc16081bf6d400457d5d3c4",
+    "text": "steintrapper",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:24.380121Z"
+  },
+  "item.1978.name": {
+    "src_hash": "02df6ab0ddc16081bf6d400457d5d3c4",
+    "text": "steintrapper",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:24.380415Z"
+  },
+  "item.2465.name": {
+    "src_hash": "feb706aed35979e15f25a1f15bb6f71f",
+    "text": "bambus skuff",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:24.392786Z"
+  },
+  "item.2466.name": {
+    "src_hash": "feb706aed35979e15f25a1f15bb6f71f",
+    "text": "bambus skuff",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:24.393065Z"
+  },
+  "item.2467.name": {
+    "src_hash": "feb706aed35979e15f25a1f15bb6f71f",
+    "text": "bambus skuff",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:24.393308Z"
+  },
+  "item.2468.name": {
+    "src_hash": "feb706aed35979e15f25a1f15bb6f71f",
+    "text": "bambus skuff",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:24.393591Z"
+  },
+  "item.30336.name": {
+    "src_hash": "b932a6ec0f3bef993326983f5c8808eb",
+    "text": "snømann",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:24.404052Z"
+  },
+  "item.3656.name": {
+    "src_hash": "2357c882fbe6b5613c047cdba496334b",
+    "text": "hvit blomst",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:24.417601Z"
+  },
+  "item.3695.name": {
+    "src_hash": "ce1ca28266c962ae55f0a786013793d5",
+    "text": "jungelgress",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:24.419188Z"
+  },
+  "item.3696.name": {
+    "src_hash": "ce1ca28266c962ae55f0a786013793d5",
+    "text": "jungelgress",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:24.419478Z"
+  },
+  "item.3701.name": {
+    "src_hash": "ce1ca28266c962ae55f0a786013793d5",
+    "text": "jungelgress",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:24.419916Z"
+  },
+  "item.3702.name": {
+    "src_hash": "ce1ca28266c962ae55f0a786013793d5",
+    "text": "jungelgress",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:24.420161Z"
+  },
+  "item.405.name": {
+    "src_hash": "22bc99e4f9c4d97053f643f4ecffacf6",
+    "text": "våpenkasse",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:24.425013Z"
+  },
+  "item.4254.name": {
+    "src_hash": "b00fcd304c378b1eea88e6d50f5a642a",
+    "text": "haug med bein",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:24.426823Z"
+  },
+  "item.4271.name": {
+    "src_hash": "b00fcd304c378b1eea88e6d50f5a642a",
+    "text": "haug med bein",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:24.427176Z"
+  },
+  "item.4276.name": {
+    "src_hash": "b00fcd304c378b1eea88e6d50f5a642a",
+    "text": "haug med bein",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:24.427435Z"
+  },
+  "item.4280.name": {
+    "src_hash": "b00fcd304c378b1eea88e6d50f5a642a",
+    "text": "haug med bein",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:24.427684Z"
+  },
+  "item.4285.name": {
+    "src_hash": "b00fcd304c378b1eea88e6d50f5a642a",
+    "text": "haug med bein",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:24.427919Z"
+  },
+  "item.4298.name": {
+    "src_hash": "b00fcd304c378b1eea88e6d50f5a642a",
+    "text": "haug med bein",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:24.428234Z"
+  },
+  "item.747.name": {
+    "src_hash": "7131d1c878f058973254abc586e95e18",
+    "text": "drage statue",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:24.441089Z"
+  },
+  "item.7748.name": {
+    "src_hash": "ce1ca28266c962ae55f0a786013793d5",
+    "text": "jungelgress",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:24.441817Z"
+  },
+  "item.7888.name": {
+    "src_hash": "02df6ab0ddc16081bf6d400457d5d3c4",
+    "text": "steintrapper",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:24.442385Z"
+  },
+  "item.855.name": {
+    "src_hash": "02df6ab0ddc16081bf6d400457d5d3c4",
+    "text": "steintrapper",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:24.444115Z"
+  },
+  "item.856.name": {
+    "src_hash": "02df6ab0ddc16081bf6d400457d5d3c4",
+    "text": "steintrapper",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:24.444346Z"
+  },
+  "item.9697.name": {
+    "src_hash": "c0e2289468f8376e785248a520b72014",
+    "text": "sjelden krystall",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:24.447858Z"
+  },
+  "item.10272.name": {
+    "src_hash": "a10eed158a96a24198c61013fc3a40cb",
+    "text": "krabbetang",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:43.309421Z"
+  },
+  "item.10273.name": {
+    "src_hash": "d4456df84711920832024bfea9a04500",
+    "text": "terrorbird nebb",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:43.309711Z"
+  },
+  "item.10274.name": {
+    "src_hash": "7d753eb0b3a91bd2673be6c9a41a7873",
+    "text": "skunk hale",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:43.309935Z"
+  },
+  "item.10275.name": {
+    "src_hash": "7a7bdb3cfb96189cee8a3b274dff7d0e",
+    "text": "carrion orm fang",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:43.310643Z"
+  },
+  "item.10276.name": {
+    "src_hash": "ca604850f968bb36a2e97ca9d3189618",
+    "text": "eldste bonelord tentakel",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:43.310966Z"
+  },
+  "item.10277.name": {
+    "src_hash": "ff07a5a0ea550902cea144efa4c26c88",
+    "text": "bein hale",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:43.311210Z"
+  },
+  "item.10278.name": {
+    "src_hash": "3ec1cce69914c888518234ffbc8dcd4c",
+    "text": "steinvinge",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:43.311430Z"
+  },
+  "item.10279.name": {
+    "src_hash": "d1d1b936cc9f73ee9b81790464742d4e",
+    "text": "stykke krokodilleskinn",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:43.311732Z"
+  },
+  "item.10280.name": {
+    "src_hash": "2487ec3e5887b0d6975eb9e021220882",
+    "text": "gigantisk øye",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:43.311952Z"
+  },
+  "item.10281.name": {
+    "src_hash": "afd439b99257c9a00c118d865ac5fcc1",
+    "text": "tarantella egg",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:43.312204Z"
+  },
+  "item.10282.name": {
+    "src_hash": "c7d8fb7c100b1eaef2543f94776f7223",
+    "text": "hydra hode",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:43.312422Z"
+  },
+  "item.10283.name": {
+    "src_hash": "7a89c42b9c239f19082d6d687c0d44ff",
+    "text": "halvt fordøyd kjøttstykke",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:43.312741Z"
+  },
+  "item.10286.name": {
+    "src_hash": "efd63614fe94d229f57de216233fb89c",
+    "text": "drage trone",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:43.312973Z"
+  },
+  "item.10287.name": {
+    "src_hash": "efd63614fe94d229f57de216233fb89c",
+    "text": "drage trone",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:43.313226Z"
+  },
+  "item.10288.name": {
+    "src_hash": "48abff4f3c8ca9969884c4c2101279d7",
+    "text": "dragetronesett",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:43.313491Z"
+  },
+  "item.10289.name": {
+    "src_hash": "8d58a849efe72bf104c97ad52a9de0e6",
+    "text": "rød lanterne",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:58.869393Z"
+  },
+  "item.10290.name": {
+    "src_hash": "b75a25495c0245871b59e4ff4bd78ec7",
+    "text": "mini mamma",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:58.869627Z"
+  },
+  "item.10291.name": {
+    "src_hash": "71092a873f395637a3f8bf76ef2da618",
+    "text": "råttent tøystykke",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:58.869949Z"
+  },
+  "item.10292.name": {
+    "src_hash": "1aeed4210790afb32bcf828b09ed6b1c",
+    "text": "silkeaktig pels",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:58.870194Z"
+  },
+  "item.10293.name": {
+    "src_hash": "6f552cbd214da9f216e0992b1ae1906b",
+    "text": "stripet pels",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:58.870561Z"
+  },
+  "item.10294.name": {
+    "src_hash": "a729c5bbec6770913a0fadb3600b5644",
+    "text": "utstoppet padde",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:58.870815Z"
+  },
+  "item.10295.name": {
+    "src_hash": "90cf458e1e33ec9b684fc8baa78a9771",
+    "text": "vinter ulvepels",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:58.871080Z"
+  },
+  "item.10296.name": {
+    "src_hash": "ece8e3803fb3b8e5e081f3c90abea858",
+    "text": "eikenøtt",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:58.871299Z"
+  },
+  "item.10297.name": {
+    "src_hash": "30bcf1207738a7e1218e9cc426e228b0",
+    "text": "gevir",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:58.871513Z"
+  },
+  "item.10298.name": {
+    "src_hash": "adec68888bb0f86b0d2ccb7f9d99140f",
+    "text": "metall pigg",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:58.871742Z"
+  },
+  "item.10299.name": {
+    "src_hash": "9269e34558de79bfe1e38796e2e9cd9e",
+    "text": "grevlingpels",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:58.871970Z"
+  },
+  "item.103.name": {
+    "src_hash": "c90b1198f689dd950d51142e65a44c81",
+    "text": "skitt",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:58.872175Z"
+  },
+  "item.10300.name": {
+    "src_hash": "648a0ce319a658f0e9477eff441e1aed",
+    "text": "carniphila frø",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:58.872455Z"
+  },
+  "item.10301.name": {
+    "src_hash": "ff26275e2c36257210572b2c536d78ee",
+    "text": "tusenbein bein",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:58.872698Z"
+  },
+  "item.10302.name": {
+    "src_hash": "869d7b08ed596dbaadf3e827ce9dbd88",
+    "text": "kompass",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:47:58.872905Z"
+  },
+  "item.10303.name": {
+    "src_hash": "eca35ff99054b0852920ec165d4e0734",
+    "text": "mørk rosenkrans",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:48:18.611303Z"
+  },
+  "item.10304.name": {
+    "src_hash": "a6f2ec5291f19a8a05f401fe553601c3",
+    "text": "helvetes hale",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:48:18.611595Z"
+  },
+  "item.10305.name": {
+    "src_hash": "92d1b5a3ca53a96f9c786b87d7807a0a",
+    "text": "jordklump",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:48:18.611836Z"
+  },
+  "item.10306.name": {
+    "src_hash": "ec98bcab585b9e48d89dfc985a77455f",
+    "text": "essensen av en dårlig drøm",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:48:18.612176Z"
+  },
+  "item.10307.name": {
+    "src_hash": "7afd5bed67b66a4a2d9b47e5b0721a15",
+    "text": "tykk pels",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:48:18.612399Z"
+  },
+  "item.10308.name": {
+    "src_hash": "ce041dac1cc84ec74f3fcad474b9d0a6",
+    "text": "mutert kjøtt",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:48:18.612632Z"
+  },
+  "item.10309.name": {
+    "src_hash": "c752a633fac9d8b23b5fef3fdc67a11f",
+    "text": "hårstrå med medusa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:48:18.612922Z"
+  },
+  "item.10310.name": {
+    "src_hash": "e9284a43d184f9ab54404ee6367ba714",
+    "text": "skinnende stein",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:48:18.613168Z"
+  },
+  "item.10311.name": {
+    "src_hash": "801d49ef5d0b22c3e85b179f5edf74fd",
+    "text": "sabeltann",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:48:18.613383Z"
+  },
+  "item.10312.name": {
+    "src_hash": "0864cee69182583b50302ead6c9ab9a2",
+    "text": "ljåbein",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:48:18.613591Z"
+  },
+  "item.10313.name": {
+    "src_hash": "e0314d9b60aebbbbd8d8bbc182c4c3bc",
+    "text": "bevinget hale",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:48:18.613802Z"
+  },
+  "item.10314.name": {
+    "src_hash": "5352a9cf8423ca616d3079263ed97363",
+    "text": "nesleblomst",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:48:18.614025Z"
+  },
+  "item.10315.name": {
+    "src_hash": "06ef3decc6d627d2b121cc380b0a87c7",
+    "text": "svovelholdig stein",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:48:18.614331Z"
+  },
+  "item.10316.name": {
+    "src_hash": "4266580860c8ca55ed261210dd9cdd65",
+    "text": "uhellig bein",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:48:18.614617Z"
+  },
+  "item.10317.name": {
+    "src_hash": "9be089ec9fcf39dd5f944a55e9959098",
+    "text": "varulv pels",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:48:18.614891Z"
+  },
+  "item.10318.name": {
+    "src_hash": "143eec50bc23ca5d787b2fa786bd2051",
+    "text": "krigulv pels",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:48:28.127362Z"
+  },
+  "item.10319.name": {
+    "src_hash": "27a18ca062a4121b180022c59e1c0d25",
+    "text": "ull",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:48:28.127597Z"
+  },
+  "item.10320.name": {
+    "src_hash": "a4e41a29f24a163a9c6d6ccbdc280f20",
+    "text": "bok med nekromantiske ritualer",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:48:28.127928Z"
+  },
+  "item.10321.name": {
+    "src_hash": "36428b55670c8882c1db63f7c9e29ede",
+    "text": "mammut brosme",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:48:28.128170Z"
+  },
+  "item.10322.name": {
+    "src_hash": "a643f0c67dc8358d762c267269f52f9f",
+    "text": "statue",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:48:28.128374Z"
+  },
+  "item.10323.name": {
+    "src_hash": "f8615c4e06ac78ad253b643eecb893a5",
+    "text": "verge støvler",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:48:28.128619Z"
+  },
+  "item.10324.name": {
+    "src_hash": "388cc25f567c8efa9eafbbb8d7a4e50d",
+    "text": "ekspedisjonsryggsekk",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:48:28.128889Z"
+  },
+  "item.10325.name": {
+    "src_hash": "264693254b1a770a4a1e7865f127dc80",
+    "text": "ekspedisjonspose",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:48:28.129126Z"
+  },
+  "item.10326.name": {
+    "src_hash": "0b29a3403d3193814ebf74b236081849",
+    "text": "drage ryggsekk",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T04:48:28.129364Z"
   }
 }

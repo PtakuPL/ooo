@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-02-13T22:40:26.752705Z",
+  "timestamp": "2026-02-14T06:09:16.898555Z",
   "cycle": 1,
-  "language": "pt",
-  "json_file": "monsters.json",
+  "language": "tr",
+  "json_file": "server.json",
   "translated": 80,
   "placeholders": 0,
   "guard_fail": 0,
@@ -13,5 +13,5 @@
   },
   "strict_missing_file": 0,
   "strict_missing_key": 0,
-  "strict_skipped_done": 1861
+  "strict_skipped_done": 130
 }

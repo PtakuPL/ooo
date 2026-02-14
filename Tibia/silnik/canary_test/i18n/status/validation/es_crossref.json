@@ -1,15 +1,15 @@
 {
   "lang": "es",
-  "coverage_pct": 97.1,
+  "coverage_pct": 97.4,
   "crossref_enabled": true,
   "auto_fix_enabled": false,
   "auto_fix_limit": 30,
-  "checked_at": "2026-02-13T22:33:45.519994Z",
-  "issues_total": 540,
+  "checked_at": "2026-02-14T06:04:11.163565Z",
+  "issues_total": 510,
   "issues_by_type": {
-    "consistency_in_language": 53,
+    "consistency_in_language": 51,
     "pl_reference_missing_translation": 400,
-    "length_ratio_crosscheck": 87
+    "length_ratio_crosscheck": 59
   },
   "consistency_issues": [
     {
@@ -630,37 +630,6 @@
       "examples": [
         "monsters:monster.spidris_elite.name",
         "monsters:monster.spidris_elitesumom.name"
-      ]
-    },
-    {
-      "type": "crossref_inconsistent_translation",
-      "severity": "MEDIUM",
-      "en": "Hahahaha! ...",
-      "variants": [
-        "",
-        "¡Jajajaja! ..."
-      ],
-      "variants_count": 2,
-      "examples": [
-        "npc:npc.alesar.multi_18",
-        "npc:npc.baa_leal.multi_13",
-        "npc:npc.bo_ques.multi_10",
-        "npc:npc.bo_ques.multi_12",
-        "npc:npc.fa_hradin.multi_16"
-      ]
-    },
-    {
-      "type": "crossref_inconsistent_translation",
-      "severity": "MEDIUM",
-      "en": "I'm sorry, but you don't have Malor's permission to trade with me.",
-      "variants": [
-        "",
-        "Lo siento, pero no tienes el permiso de Malor para comerciar conmigo."
-      ],
-      "variants_count": 2,
-      "examples": [
-        "npc:npc.alesar.say_8",
-        "npc:npc.yaman.say_15"
       ]
     },
     {
@@ -1997,6 +1966,24 @@
       "lang": "RESERVED SPRITE"
     },
     {
+      "key": "item.129.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "contract",
+      "pl": "umowa",
+      "lang": "contract"
+    },
+    {
+      "key": "item.12902.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "your inbox",
+      "pl": "swoją skrzynkę odbiorczą",
+      "lang": "your inbox"
+    },
+    {
       "key": "item.13268.name",
       "category": "items",
       "type": "pl_reference_missing_translation",
@@ -2022,6 +2009,87 @@
       "en": "RESERVED SPRITE",
       "pl": "ZAREZERWOWANY SPRITE",
       "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.13647.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "moist stones",
+      "pl": "wilgotne kamienie",
+      "lang": "moist stones"
+    },
+    {
+      "key": "item.13677.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "seaweed",
+      "pl": "wodorost",
+      "lang": "seaweed"
+    },
+    {
+      "key": "item.13901.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "flitter",
+      "pl": "latać",
+      "lang": "flitter"
+    },
+    {
+      "key": "item.13904.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "flitter",
+      "pl": "latać",
+      "lang": "flitter"
+    },
+    {
+      "key": "item.13907.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "lampions",
+      "pl": "lampiony",
+      "lang": "lampions"
+    },
+    {
+      "key": "item.13913.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "flitter",
+      "pl": "latać",
+      "lang": "flitter"
+    },
+    {
+      "key": "item.13915.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "emblems",
+      "pl": "emblematy",
+      "lang": "emblems"
+    },
+    {
+      "key": "item.13917.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "flitter",
+      "pl": "latać",
+      "lang": "flitter"
+    },
+    {
+      "key": "item.13919.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "emblems",
+      "pl": "emblematy",
+      "lang": "emblems"
     },
     {
       "key": "item.13968.name",
@@ -2051,6 +2119,105 @@
       "lang": "RESERVED SPRITE"
     },
     {
+      "key": "item.13992.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "sandfish",
+      "pl": "piaskowiec",
+      "lang": "sandfish"
+    },
+    {
+      "key": "item.13994.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "depth lorica",
+      "pl": "głębia Lorica",
+      "lang": "depth lorica"
+    },
+    {
+      "key": "item.13995.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "depth galea",
+      "pl": "gala głębi",
+      "lang": "depth galea"
+    },
+    {
+      "key": "item.13996.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "depth ocrea",
+      "pl": "głębokość ok",
+      "lang": "depth ocrea"
+    },
+    {
+      "key": "item.13997.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "depth calcei",
+      "pl": "głębokość calcei",
+      "lang": "depth calcei"
+    },
+    {
+      "key": "item.13998.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "depth scutum",
+      "pl": "tarcza głębinowa",
+      "lang": "depth scutum"
+    },
+    {
+      "key": "item.14.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "fruit juice",
+      "pl": "sok owocowy",
+      "lang": "fruit juice"
+    },
+    {
+      "key": "item.14011.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "deepling breaktime snack",
+      "pl": "głęboka przekąska na przerwę",
+      "lang": "deepling breaktime snack"
+    },
+    {
+      "key": "item.14012.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "deepling warts",
+      "pl": "głębokie brodawki",
+      "lang": "deepling warts"
+    },
+    {
+      "key": "item.14013.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "deeptags",
+      "pl": "głębokie tagi",
+      "lang": "deeptags"
+    },
+    {
+      "key": "item.14022.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Tanjis' Sight",
+      "pl": "Wzrok Tanjisa",
+      "lang": "Tanjis' Sight"
+    },
+    {
       "key": "item.14024.name",
       "category": "items",
       "type": "pl_reference_missing_translation",
@@ -2069,6 +2236,60 @@
       "lang": "RESERVED SPRITE"
     },
     {
+      "key": "item.14041.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "deepling ridge",
+      "pl": "głęboki grzbiet",
+      "lang": "deepling ridge"
+    },
+    {
+      "key": "item.14051.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "gooey substance",
+      "pl": "lepka substancja",
+      "lang": "gooey substance"
+    },
+    {
+      "key": "item.14076.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "swarmer antenna",
+      "pl": "antena roju",
+      "lang": "swarmer antenna"
+    },
+    {
+      "key": "item.14082.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "spidris mandible",
+      "pl": "żuchwa spidrisa",
+      "lang": "spidris mandible"
+    },
+    {
+      "key": "item.14085.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "deepling filet",
+      "pl": "głęboki filet",
+      "lang": "deepling filet"
+    },
+    {
+      "key": "item.141.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "cigar",
+      "pl": "cygaro",
+      "lang": "cigar"
+    },
+    {
       "key": "item.14141.name",
       "category": "items",
       "type": "pl_reference_missing_translation",
@@ -2076,6 +2297,69 @@
       "en": "lava",
       "pl": "lawa",
       "lang": "lava"
+    },
+    {
+      "key": "item.14142.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "foxtail",
+      "pl": "ber",
+      "lang": "foxtail"
+    },
+    {
+      "key": "item.14143.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "four-leaf clover",
+      "pl": "czterolistna koniczyna",
+      "lang": "four-leaf clover"
+    },
+    {
+      "key": "item.14163.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "fossilised coral",
+      "pl": "skamieniały koralowiec",
+      "lang": "fossilised coral"
+    },
+    {
+      "key": "item.14172.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "gooey mass",
+      "pl": "lepka masa",
+      "lang": "gooey mass"
+    },
+    {
+      "key": "item.14225.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "dung ball",
+      "pl": "kula gnoju",
+      "lang": "dung ball"
+    },
+    {
+      "key": "item.14250.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "deepling squelcher",
+      "pl": "głęboki squelcher",
+      "lang": "deepling squelcher"
+    },
+    {
+      "key": "item.14253.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "swarmer drum",
+      "pl": "bęben roju",
+      "lang": "swarmer drum"
     },
     {
       "key": "item.14254.name",
@@ -2087,6 +2371,33 @@
       "lang": "RESERVED SPRITE"
     },
     {
+      "key": "item.14255.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "swarmer drum",
+      "pl": "bęben roju",
+      "lang": "swarmer drum"
+    },
+    {
+      "key": "item.14258.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "depth galea",
+      "pl": "gala głębi",
+      "lang": "depth galea"
+    },
+    {
+      "key": "item.14259.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Eighty outfit",
+      "pl": "Strój osiemdziesiąty",
+      "lang": "Eighty outfit"
+    },
+    {
       "key": "item.14752.name",
       "category": "items",
       "type": "pl_reference_missing_translation",
@@ -2094,6 +2405,33 @@
       "en": "RESERVED SPRITE",
       "pl": "ZAREZERWOWANY SPRITE",
       "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.14753.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "dung ball",
+      "pl": "kula gnoju",
+      "lang": "dung ball"
+    },
+    {
+      "key": "item.14878.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "crystals",
+      "pl": "kryształy",
+      "lang": "crystals"
+    },
+    {
+      "key": "item.14886.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "nestled crystals",
+      "pl": "zagnieżdżone kryształy",
+      "lang": "nestled crystals"
     },
     {
       "key": "item.15142.name",
@@ -2436,6 +2774,15 @@
       "en": "RESERVED SPRITE",
       "pl": "ZAREZERWOWANY SPRITE",
       "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.18814.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "branches",
+      "pl": "gałęzie",
+      "lang": "branches"
     },
     {
       "key": "item.18881.name",
@@ -3986,6 +4333,15 @@
       "lang": "RESERVED SPRITE"
     },
     {
+      "key": "item.39551.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "seaweed",
+      "pl": "wodorost",
+      "lang": "seaweed"
+    },
+    {
       "key": "item.43845.name",
       "category": "items",
       "type": "pl_reference_missing_translation",
@@ -4029,393 +4385,6 @@
       "en": "rope-ladder",
       "pl": "lina-drabina",
       "lang": "rope-ladder"
-    },
-    {
-      "key": "item.616.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "DEPRECATED item",
-      "pl": "DEPRECATED Przedmiot",
-      "lang": "DEPRECATED item"
-    },
-    {
-      "key": "item.617.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "DEPRECATED item",
-      "pl": "DEPRECATED Przedmiot",
-      "lang": "DEPRECATED item"
-    },
-    {
-      "key": "item.651.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "spellwand",
-      "pl": "Zaklęciewand",
-      "lang": "spellwand"
-    },
-    {
-      "key": "item.7403.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "berserker",
-      "pl": "To go berserk",
-      "lang": "berserker"
-    },
-    {
-      "key": "item.7536.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "RESERVED SPRITE",
-      "pl": "ZAREZERWOWANY SPRITE",
-      "lang": "RESERVED SPRITE"
-    },
-    {
-      "key": "item.7933.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "invitation",
-      "pl": "zaproszenie",
-      "lang": "invitation"
-    },
-    {
-      "key": "item.8217.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "RESERVED SPRITE",
-      "pl": "ZAREZERWOWANY SPRITE",
-      "lang": "RESERVED SPRITE"
-    },
-    {
-      "key": "item.894.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "jester hat",
-      "pl": "dowcip kapelusz",
-      "lang": "jester hat"
-    },
-    {
-      "key": "item.8969.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "lava",
-      "pl": "lawa",
-      "lang": "lava"
-    },
-    {
-      "key": "item.9044.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "RESERVED SPRITE",
-      "pl": "ZAREZERWOWANY SPRITE",
-      "lang": "RESERVED SPRITE"
-    },
-    {
-      "key": "item.9118.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "RESERVED SPRITE",
-      "pl": "ZAREZERWOWANY SPRITE",
-      "lang": "RESERVED SPRITE"
-    },
-    {
-      "key": "item.922.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "RESERVED SPRITE",
-      "pl": "ZAREZERWOWANY SPRITE",
-      "lang": "RESERVED SPRITE"
-    },
-    {
-      "key": "item.9245.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "RESERVED SPRITE",
-      "pl": "ZAREZERWOWANY SPRITE",
-      "lang": "RESERVED SPRITE"
-    },
-    {
-      "key": "lib.player.modal_button_no",
-      "category": "libs",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "No",
-      "pl": "Nie",
-      "lang": "No"
-    },
-    {
-      "key": "module.hireling_module.text1",
-      "category": "modules",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Pereira (jlcvp)',",
-      "pl": "Pereira (jlcvp)”,",
-      "lang": "Pereira (jlcvp)',"
-    },
-    {
-      "key": "monster.salamander.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Salamander",
-      "pl": "Salamandra",
-      "lang": "Salamander"
-    },
-    {
-      "key": "monster.salamander.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a salamander",
-      "pl": "salamandra",
-      "lang": "a salamander"
-    },
-    {
-      "key": "monster.deathspawn.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Deathspawn",
-      "pl": "Pomiot Śmierci",
-      "lang": "Deathspawn"
-    },
-    {
-      "key": "monster.deathspawn.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a deathspawn",
-      "pl": "pomiot śmierci",
-      "lang": "a deathspawn"
-    },
-    {
-      "key": "monster.defiler.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Defiler",
-      "pl": "Defilator",
-      "lang": "Defiler"
-    },
-    {
-      "key": "monster.defiler.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a defiler",
-      "pl": "profanator",
-      "lang": "a defiler"
-    },
-    {
-      "key": "monster.ghoul.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ghoul",
-      "pl": "Wampir",
-      "lang": "Ghoul"
-    },
-    {
-      "key": "monster.training_machine.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Training Machine",
-      "pl": "Maszyna treningowa",
-      "lang": "Training Machine"
-    },
-    {
-      "key": "monster.training_machine.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a training machine",
-      "pl": "maszyna treningowa",
-      "lang": "a training machine"
-    },
-    {
-      "key": "monster.tortoise.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Tortoise",
-      "pl": "Żółw",
-      "lang": "Tortoise"
-    },
-    {
-      "key": "monster.tortoise.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a tortoise",
-      "pl": "żółw",
-      "lang": "a tortoise"
-    },
-    {
-      "key": "monster.sandcrawler.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Sandcrawler",
-      "pl": "Piaskownik",
-      "lang": "Sandcrawler"
-    },
-    {
-      "key": "monster.sandcrawler.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a sandcrawler",
-      "pl": "piaskowiec",
-      "lang": "a sandcrawler"
-    },
-    {
-      "key": "monster.frazzlemaw.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a frazzlemaw",
-      "pl": "frazzlemaw",
-      "lang": "a frazzlemaw"
-    },
-    {
-      "key": "monster.guzzlemaw.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a guzzlemaw",
-      "pl": "żarłok",
-      "lang": "a guzzlemaw"
-    },
-    {
-      "key": "monster.shadowpelt.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Shadowpelt",
-      "pl": "Skórka Cienia",
-      "lang": "Shadowpelt"
-    },
-    {
-      "key": "monster.shadowpelt.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a shadowpelt",
-      "pl": "skórka cienia",
-      "lang": "a shadowpelt"
-    },
-    {
-      "key": "monster.custodian.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Custodian",
-      "pl": "Kustosz",
-      "lang": "Custodian"
-    },
-    {
-      "key": "monster.custodian.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a custodian",
-      "pl": "opiekun",
-      "lang": "a custodian"
-    },
-    {
-      "key": "monster.bullwark.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Bullwark",
-      "pl": "Byk",
-      "lang": "Bullwark"
-    },
-    {
-      "key": "monster.bullwark.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Bullwark",
-      "pl": "Byk",
-      "lang": "Bullwark"
-    },
-    {
-      "key": "monster.behemoth.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Behemoth",
-      "pl": "Potwór",
-      "lang": "Behemoth"
-    },
-    {
-      "key": "monster.old_bonelord.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Beholder",
-      "pl": "Widzący",
-      "lang": "Beholder"
-    },
-    {
-      "key": "monster.old_bonelord.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a beholder",
-      "pl": "obserwator",
-      "lang": "a beholder"
-    },
-    {
-      "key": "monster.old_bonelord.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Olho por Olho!",
-      "pl": "Olho na Olho!",
-      "lang": "Olho por Olho!"
-    },
-    {
-      "key": "monster.old_bonelord.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Estou olhando para voce!",
-      "pl": "Możesz to zrobić para voce!",
-      "lang": "Estou olhando para voce!"
-    },
-    {
-      "key": "monster.old_bonelord.voice_4",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Voce tem o olhar!",
-      "pl": "Głosuj na ten temat!",
-      "lang": "Voce tem o olhar!"
-    },
-    {
-      "key": "monster.old_wasp.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Bssssss",
-      "pl": "Bsssss",
-      "lang": "Bssssss"
     }
   ],
   "length_ratio_issues": [
@@ -4681,213 +4650,6 @@
       "pl_ratio": 4.0
     },
     {
-      "key": "npc.bo_ques.say_6",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 14,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.214
-    },
-    {
-      "key": "npc.broken_servant_sentry.say_5",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 119,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.286
-    },
-    {
-      "key": "npc.broken_servant_sentry.say_7",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 119,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.286
-    },
-    {
-      "key": "npc.chartan.multi_10",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 21,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.143
-    },
-    {
-      "key": "npc.chester_kahs.say_19",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 112,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.839
-    },
-    {
-      "key": "npc.chester_kahs.say_6",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 26,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.038
-    },
-    {
-      "key": "npc.commander_stone.say_18",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 21,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.81
-    },
-    {
-      "key": "npc.commander_stone.say_23",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 21,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.81
-    },
-    {
-      "key": "npc.commander_stone.say_6",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 21,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.81
-    },
-    {
-      "key": "npc.gnomaticus.say_3",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 27,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.296
-    },
-    {
-      "key": "npc.gnomeral.say_11",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 21,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.81
-    },
-    {
-      "key": "npc.gnomeral.say_16",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 21,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.81
-    },
-    {
-      "key": "npc.gnomeral.say_21",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 21,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.81
-    },
-    {
-      "key": "npc.gnomeral.say_5",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 21,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.81
-    },
-    {
-      "key": "npc.gregor.say_23",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 32,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.469
-    },
-    {
-      "key": "npc.gregor.say_26",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 32,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.469
-    },
-    {
-      "key": "npc.gregor.say_29",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 32,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.469
-    },
-    {
-      "key": "npc.gregor.say_32",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 32,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.469
-    },
-    {
-      "key": "npc.guard_saros.say_3",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 55,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.018
-    },
-    {
-      "key": "npc.hairycles.say_42",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 65,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.908
-    },
-    {
-      "key": "npc.hairycles.say_54",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 26,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.962
-    },
-    {
-      "key": "npc.hairycles.say_56",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 26,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.962
-    },
-    {
-      "key": "npc.hairycles.say_61",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 26,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.962
-    },
-    {
       "key": "npc.harog.greet_msg_1",
       "category": "npc",
       "type": "crossref_length_ratio_diff",
@@ -4895,15 +4657,6 @@
       "en_len": 6,
       "lang_ratio": 0.833,
       "pl_ratio": 3.167
-    },
-    {
-      "key": "npc.henricus.say_28",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 8,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.25
     },
     {
       "key": "npc.kallimae.say_3",
@@ -4931,15 +4684,6 @@
       "en_len": 6,
       "lang_ratio": 1.667,
       "pl_ratio": 4.0
-    },
-    {
-      "key": "npc.karith.say_6",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 45,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.844
     },
     {
       "key": "npc.lurik.say_2",
@@ -5059,15 +4803,6 @@
       "pl_ratio": 2.083
     },
     {
-      "key": "npc.stricken_soul.say_3",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 27,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.963
-    },
-    {
       "key": "npc.tefrit.say_3",
       "category": "npc",
       "type": "crossref_length_ratio_diff",
@@ -5102,24 +4837,6 @@
       "en_len": 81,
       "lang_ratio": 0.0,
       "pl_ratio": 1.827
-    },
-    {
-      "key": "npc.undal.say_14",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 27,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.963
-    },
-    {
-      "key": "npc.vanys.say_14",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 27,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.963
     },
     {
       "key": "npc.wyda.say_1",

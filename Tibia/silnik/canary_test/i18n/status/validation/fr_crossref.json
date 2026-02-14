@@ -1,17 +1,32 @@
 {
   "lang": "fr",
-  "coverage_pct": 57.3,
+  "coverage_pct": 58.1,
   "crossref_enabled": true,
   "auto_fix_enabled": false,
   "auto_fix_limit": 30,
-  "checked_at": "2026-02-13T22:33:46.796404Z",
-  "issues_total": 481,
+  "checked_at": "2026-02-14T06:04:12.065618Z",
+  "issues_total": 460,
   "issues_by_type": {
-    "consistency_in_language": 0,
+    "consistency_in_language": 1,
     "pl_reference_missing_translation": 400,
-    "length_ratio_crosscheck": 81
+    "length_ratio_crosscheck": 59
   },
-  "consistency_issues": [],
+  "consistency_issues": [
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "The chest is empty.",
+      "variants": [
+        "You found ",
+        "You found."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "quests:quests.bigfoot_burden.chest_empty",
+        "scripts:scripts.actions_rewards.msg_2"
+      ]
+    }
+  ],
   "pl_reference_issues": [
     {
       "key": "achievement.1.description",
@@ -3616,48 +3631,12 @@
   ],
   "length_ratio_issues": [
     {
-      "key": "npc.a_ghostly_sage.stdmod_4",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 13,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.alesar.say_5",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 9,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.alesar_functions.say_3",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 9,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.alkestios.say_4",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 9,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
       "key": "npc.alyxo.say_12",
       "category": "npc",
       "type": "crossref_length_ratio_diff",
       "severity": "MEDIUM",
       "en_len": 6,
-      "lang_ratio": 0.0,
+      "lang_ratio": 1.167,
       "pl_ratio": 4.0
     },
     {
@@ -3666,7 +3645,7 @@
       "type": "crossref_length_ratio_diff",
       "severity": "MEDIUM",
       "en_len": 6,
-      "lang_ratio": 0.0,
+      "lang_ratio": 1.167,
       "pl_ratio": 4.0
     },
     {
@@ -3675,7 +3654,7 @@
       "type": "crossref_length_ratio_diff",
       "severity": "MEDIUM",
       "en_len": 6,
-      "lang_ratio": 0.0,
+      "lang_ratio": 1.167,
       "pl_ratio": 4.0
     },
     {
@@ -3684,7 +3663,7 @@
       "type": "crossref_length_ratio_diff",
       "severity": "MEDIUM",
       "en_len": 6,
-      "lang_ratio": 0.0,
+      "lang_ratio": 1.167,
       "pl_ratio": 4.0
     },
     {
@@ -3693,7 +3672,7 @@
       "type": "crossref_length_ratio_diff",
       "severity": "MEDIUM",
       "en_len": 6,
-      "lang_ratio": 0.0,
+      "lang_ratio": 1.167,
       "pl_ratio": 4.0
     },
     {
@@ -3702,7 +3681,7 @@
       "type": "crossref_length_ratio_diff",
       "severity": "MEDIUM",
       "en_len": 6,
-      "lang_ratio": 0.0,
+      "lang_ratio": 1.167,
       "pl_ratio": 4.0
     },
     {
@@ -3711,26 +3690,8 @@
       "type": "crossref_length_ratio_diff",
       "severity": "MEDIUM",
       "en_len": 6,
-      "lang_ratio": 0.0,
+      "lang_ratio": 1.167,
       "pl_ratio": 4.0
-    },
-    {
-      "key": "npc.appaloosa.say_9",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 9,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.aurita.say_1",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 9,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
     },
     {
       "key": "npc.bo_ques.say_6",
@@ -3787,15 +3748,6 @@
       "pl_ratio": 2.038
     },
     {
-      "key": "npc.cillia.say_3",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 9,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
       "key": "npc.commander_stone.say_18",
       "category": "npc",
       "type": "crossref_length_ratio_diff",
@@ -3821,42 +3773,6 @@
       "en_len": 21,
       "lang_ratio": 0.0,
       "pl_ratio": 1.81
-    },
-    {
-      "key": "npc.dancing_fairy.say_1",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 9,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.ferks.farewell_msg_1",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 16,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.312
-    },
-    {
-      "key": "npc.ferks.walkaway_msg_1",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 16,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.312
-    },
-    {
-      "key": "npc.ghostly_wolf.say_4",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 9,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
     },
     {
       "key": "npc.gnomaticus.say_3",
@@ -3902,33 +3818,6 @@
       "en_len": 21,
       "lang_ratio": 0.0,
       "pl_ratio": 1.81
-    },
-    {
-      "key": "npc.gnomus.say_11",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 5,
-      "lang_ratio": 0.0,
-      "pl_ratio": 3.8
-    },
-    {
-      "key": "npc.gnomus.say_13",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 5,
-      "lang_ratio": 0.0,
-      "pl_ratio": 3.8
-    },
-    {
-      "key": "npc.gnomus.say_15",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 5,
-      "lang_ratio": 0.0,
-      "pl_ratio": 3.8
     },
     {
       "key": "npc.gregor.say_23",
@@ -4021,21 +3910,12 @@
       "pl_ratio": 2.25
     },
     {
-      "key": "npc.ikassis.say_3",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 9,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
       "key": "npc.kallimae.say_3",
       "category": "npc",
       "type": "crossref_length_ratio_diff",
       "severity": "MEDIUM",
       "en_len": 6,
-      "lang_ratio": 0.0,
+      "lang_ratio": 1.167,
       "pl_ratio": 4.0
     },
     {
@@ -4044,7 +3924,7 @@
       "type": "crossref_length_ratio_diff",
       "severity": "MEDIUM",
       "en_len": 6,
-      "lang_ratio": 0.0,
+      "lang_ratio": 1.167,
       "pl_ratio": 4.0
     },
     {
@@ -4053,7 +3933,7 @@
       "type": "crossref_length_ratio_diff",
       "severity": "MEDIUM",
       "en_len": 6,
-      "lang_ratio": 0.0,
+      "lang_ratio": 1.167,
       "pl_ratio": 4.0
     },
     {
@@ -4066,33 +3946,6 @@
       "pl_ratio": 1.844
     },
     {
-      "key": "npc.lardoc_bashsmite.say_10",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 5,
-      "lang_ratio": 0.0,
-      "pl_ratio": 3.8
-    },
-    {
-      "key": "npc.lardoc_bashsmite.say_12",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 5,
-      "lang_ratio": 0.0,
-      "pl_ratio": 3.8
-    },
-    {
-      "key": "npc.lardoc_bashsmite.say_14",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 5,
-      "lang_ratio": 0.0,
-      "pl_ratio": 3.8
-    },
-    {
       "key": "npc.lurik.say_2",
       "category": "npc",
       "type": "crossref_length_ratio_diff",
@@ -4100,15 +3953,6 @@
       "en_len": 22,
       "lang_ratio": 0.0,
       "pl_ratio": 1.864
-    },
-    {
-      "key": "npc.maelyrra.say_18",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 9,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
     },
     {
       "key": "npc.markwin.say_7",
@@ -4125,7 +3969,7 @@
       "type": "crossref_length_ratio_diff",
       "severity": "MEDIUM",
       "en_len": 6,
-      "lang_ratio": 0.0,
+      "lang_ratio": 1.167,
       "pl_ratio": 4.0
     },
     {
@@ -4134,17 +3978,8 @@
       "type": "crossref_length_ratio_diff",
       "severity": "MEDIUM",
       "en_len": 6,
-      "lang_ratio": 0.0,
+      "lang_ratio": 1.167,
       "pl_ratio": 4.0
-    },
-    {
-      "key": "npc.palomino.say_9",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 9,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
     },
     {
       "key": "npc.pig.say_2",
@@ -4156,21 +3991,12 @@
       "pl_ratio": 2.128
     },
     {
-      "key": "npc.rose.say_4",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 9,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
       "key": "npc.saideh.say_3",
       "category": "npc",
       "type": "crossref_length_ratio_diff",
       "severity": "MEDIUM",
       "en_len": 6,
-      "lang_ratio": 0.0,
+      "lang_ratio": 1.167,
       "pl_ratio": 4.0
     },
     {
@@ -4197,7 +4023,7 @@
       "type": "crossref_length_ratio_diff",
       "severity": "MEDIUM",
       "en_len": 6,
-      "lang_ratio": 0.0,
+      "lang_ratio": 1.167,
       "pl_ratio": 4.0
     },
     {
@@ -4206,7 +4032,7 @@
       "type": "crossref_length_ratio_diff",
       "severity": "MEDIUM",
       "en_len": 6,
-      "lang_ratio": 0.0,
+      "lang_ratio": 1.167,
       "pl_ratio": 4.0
     },
     {
@@ -4237,39 +4063,12 @@
       "pl_ratio": 1.963
     },
     {
-      "key": "npc.suzy.farewell_msg_1",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 16,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.312
-    },
-    {
-      "key": "npc.suzy.walkaway_msg_1",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 16,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.312
-    },
-    {
-      "key": "npc.taegen.say_1",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 9,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
       "key": "npc.tefrit.say_3",
       "category": "npc",
       "type": "crossref_length_ratio_diff",
       "severity": "MEDIUM",
       "en_len": 6,
-      "lang_ratio": 0.0,
+      "lang_ratio": 1.167,
       "pl_ratio": 4.0
     },
     {
@@ -4278,7 +4077,7 @@
       "type": "crossref_length_ratio_diff",
       "severity": "MEDIUM",
       "en_len": 6,
-      "lang_ratio": 0.0,
+      "lang_ratio": 1.167,
       "pl_ratio": 4.0
     },
     {
@@ -4323,7 +4122,7 @@
       "type": "crossref_length_ratio_diff",
       "severity": "MEDIUM",
       "en_len": 6,
-      "lang_ratio": 0.0,
+      "lang_ratio": 1.167,
       "pl_ratio": 4.0
     },
     {
@@ -4332,7 +4131,7 @@
       "type": "crossref_length_ratio_diff",
       "severity": "MEDIUM",
       "en_len": 6,
-      "lang_ratio": 0.0,
+      "lang_ratio": 1.167,
       "pl_ratio": 4.0
     },
     {
@@ -4343,6 +4142,24 @@
       "en_len": 41,
       "lang_ratio": 0.0,
       "pl_ratio": 1.805
+    },
+    {
+      "key": "quests.actions_coral.msg_1",
+      "category": "quests",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 6,
+      "lang_ratio": 1.167,
+      "pl_ratio": 4.0
+    },
+    {
+      "key": "quests.actions_crystal.msg_1",
+      "category": "quests",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 6,
+      "lang_ratio": 1.167,
+      "pl_ratio": 4.0
     }
   ],
   "auto_fix": {

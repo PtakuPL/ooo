@@ -1,76 +1,76 @@
 {
-  "window_start_utc": "2026-02-13T21:41:10.316651Z",
-  "window_end_utc": "2026-02-13T22:41:10.316651Z",
+  "window_start_utc": "2026-02-14T05:10:25.751302Z",
+  "window_end_utc": "2026-02-14T06:10:25.751302Z",
   "window_hours": 1.0,
   "sources": [
     "i18n/status/worker_cycle_perf.jsonl",
     "i18n/status/translation_guard_report.jsonl",
     "i18n/status/suspicious_log.jsonl"
   ],
-  "total_cycles": 276,
+  "total_cycles": 86,
   "mode_distribution": {
-    "AUTO_TRANSLATE": 276
+    "AUTO_TRANSLATE": 86
   },
-  "auto_translate_cycles": 276,
+  "auto_translate_cycles": 86,
   "migration_cycles": 0,
   "pending_skip_count": 0,
   "pending_skip_share_pct": 0.0,
   "pending_skip_share_migration_pct": 0.0,
-  "translated": 3812,
-  "guard_fail": 646,
-  "guard_fail_rate_pct": 14.5,
-  "no_progress_entries": 14,
-  "no_progress_rate_pct": 11.5,
-  "throughput_keys_per_h": 2956.8,
-  "suspicious_total": 2896,
+  "translated": 3022,
+  "guard_fail": 213,
+  "guard_fail_rate_pct": 6.6,
+  "no_progress_entries": 0,
+  "no_progress_rate_pct": 0.0,
+  "throughput_keys_per_h": 1684.8,
+  "suspicious_total": 366,
   "top_guard_fail_targets": [
     {
+      "target": "zh/items.json",
+      "translated": 29,
+      "guard_fail": 51,
+      "guard_command": 0
+    },
+    {
+      "target": "zh_tw/items.json",
+      "translated": 29,
+      "guard_fail": 51,
+      "guard_command": 0
+    },
+    {
       "target": "pl/otclient_modules.json",
-      "translated": 15,
-      "guard_fail": 87,
+      "translated": 5,
+      "guard_fail": 29,
+      "guard_command": 0
+    },
+    {
+      "target": "ja/items.json",
+      "translated": 62,
+      "guard_fail": 18,
       "guard_command": 0
     },
     {
       "target": "pl/html.json",
-      "translated": 328,
-      "guard_fail": 82,
+      "translated": 66,
+      "guard_fail": 16,
       "guard_command": 0
     },
     {
       "target": "pl/cpp.json",
-      "translated": 47,
-      "guard_fail": 57,
-      "guard_command": 0
-    },
-    {
-      "target": "es/monsters.json",
-      "translated": 262,
-      "guard_fail": 53,
-      "guard_command": 0
-    },
-    {
-      "target": "pl/npc.json",
-      "translated": 113,
-      "guard_fail": 47,
-      "guard_command": 0
-    },
-    {
-      "target": "es/scripts.json",
-      "translated": 97,
-      "guard_fail": 45,
-      "guard_command": 0
-    },
-    {
-      "target": "es/otclient_modules.json",
-      "translated": 255,
-      "guard_fail": 37,
+      "translated": 9,
+      "guard_fail": 16,
       "guard_command": 0
     },
     {
       "target": "pl/scripts.json",
-      "translated": 67,
-      "guard_fail": 35,
-      "guard_command": 3
+      "translated": 16,
+      "guard_fail": 12,
+      "guard_command": 1
+    },
+    {
+      "target": "es/scripts.json",
+      "translated": 13,
+      "guard_fail": 11,
+      "guard_command": 0
     }
   ]
 }

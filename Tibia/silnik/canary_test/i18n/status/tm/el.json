@@ -70,5 +70,3205 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-12T23:58:29.714708Z"
+  },
+  "npc.a_dragon_mother.multi_3": {
+    "src_hash": "c6a0aabd2af804ac1f00c1504af5edf4",
+    "text": "Grrr.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:54.825594Z"
+  },
+  "npc.a_weakened_forest_fury.say_4": {
+    "src_hash": "055d4f5ac2a5439f55bddb2343c0a757",
+    "text": "Take care, guardian.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:54.830652Z"
+  },
+  "npc.albinius.say_10": {
+    "src_hash": "8ebe07d7adacdd880130a981ebf53704",
+    "text": "As you wish.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:54.836298Z"
+  },
+  "npc.alesar.say_5": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:54.837165Z"
+  },
+  "npc.alesar_functions.say_3": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:54.837779Z"
+  },
+  "npc.alkestios.say_4": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:54.840181Z"
+  },
+  "npc.alwin.say_1": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Take this!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:54.841531Z"
+  },
+  "npc.andrew_lyze.say_14": {
+    "src_hash": "69ce05199222d304e8f82cb747eed8ab",
+    "text": "Don't waste my time.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:54.848744Z"
+  },
+  "npc.appaloosa.say_5": {
+    "src_hash": "cc67edbe5929572b201f9b2aa0f478f9",
+    "text": "Have a nice trip!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:54.852886Z"
+  },
+  "npc.appaloosa.say_9": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:54.853597Z"
+  },
+  "npc.ariella.say_15": {
+    "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
+    "text": "I see.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:54.854505Z"
+  },
+  "npc.arnold.say_1": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Take this!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:54.856470Z"
+  },
+  "npc.atrad.say_3": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:54.857812Z"
+  },
+  "npc.aurita.say_1": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:54.858543Z"
+  },
+  "npc.avar_tar.say_5": {
+    "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
+    "text": "I see.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:54.858971Z"
+  },
+  "npc.awarness_of_the_emperor.say_1": {
+    "src_hash": "706b1a009354e93f05beff4ba2e0a628",
+    "text": "SO BE IT!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:54.859584Z"
+  },
+  "npc.bambi_bonecrusher.say_1": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Take this!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:54.861564Z"
+  },
+  "npc.barbara.say_3": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Take this!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:54.863106Z"
+  },
+  "npc.blossom_bonecrusher.say_1": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Take this!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:54.868657Z"
+  },
+  "npc.brodrosch.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Good bye.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:54.878668Z"
+  },
+  "npc.brodrosch.say_5": {
+    "src_hash": "12d673409d71f1fc127ebad108378378",
+    "text": "No then.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:54.879112Z"
+  },
+  "npc.brodrosch.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Good bye then.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:54.880153Z"
+  },
+  "npc.busty_bonecrusher.say_1": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Take this!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:54.884697Z"
+  },
+  "npc.captain_seahorse.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Good bye then.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:54.899541Z"
+  },
+  "npc.chester_kahs.say_23": {
+    "src_hash": "8ebe07d7adacdd880130a981ebf53704",
+    "text": "As you wish.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:54.907356Z"
+  },
+  "npc.chondur.say_18": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:54.909543Z"
+  },
+  "npc.christoph.say_1": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Take this!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:54.910400Z"
+  },
+  "npc.cillia.say_3": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:54.911236Z"
+  },
+  "npc.dalbrect.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Good bye.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:54.921354Z"
+  },
+  "npc.dancing_fairy.say_1": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:54.924716Z"
+  },
+  "npc.dedoras.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Well, bye then.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:54.927895Z"
+  },
+  "npc.demonguard.say_1": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Take this!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:54.928317Z"
+  },
+  "npc.dukosch.say_5": {
+    "src_hash": "12d673409d71f1fc127ebad108378378",
+    "text": "No then.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:54.933347Z"
+  },
+  "npc.duncan.say_12": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:54.934031Z"
+  },
+  "npc.duncan.say_14": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:54.934597Z"
+  },
+  "npc.duncan.say_15": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:54.935149Z"
+  },
+  "npc.duncan.say_17": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:54.935676Z"
+  },
+  "npc.duncan.say_19": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:54.936232Z"
+  },
+  "npc.elane.say_11": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:54.941761Z"
+  },
+  "npc.elane.say_13": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:54.942348Z"
+  },
+  "npc.elane.say_15": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:54.942876Z"
+  },
+  "npc.elane.say_9": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:54.943468Z"
+  },
+  "npc.emma.say_14": {
+    "src_hash": "8ebe07d7adacdd880130a981ebf53704",
+    "text": "As you wish.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:54.949962Z"
+  },
+  "npc.farhilorn_of_the_winter_court.say_3": {
+    "src_hash": "8ebe07d7adacdd880130a981ebf53704",
+    "text": "As you wish.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:54.959576Z"
+  },
+  "npc.fenbala.say_3": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Take this!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:54.960372Z"
+  },
+  "npc.ferks.farewell_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Have a nice day.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:54.961260Z"
+  },
+  "npc.ferks.walkaway_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Have a nice day.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:54.961838Z"
+  },
+  "npc.gabel.say_6": {
+    "src_hash": "8ebe07d7adacdd880130a981ebf53704",
+    "text": "As you wish.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:54.970884Z"
+  },
+  "npc.gewen.say_5": {
+    "src_hash": "12d673409d71f1fc127ebad108378378",
+    "text": "No then.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:54.979558Z"
+  },
+  "npc.ghostly_wolf.say_4": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:54.982754Z"
+  },
+  "npc.gnomus.say_10": {
+    "src_hash": "69ce05199222d304e8f82cb747eed8ab",
+    "text": "Don't waste my time.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:54.989475Z"
+  },
+  "npc.gnomus.say_11": {
+    "src_hash": "f5940523060652e3a7d9c269ce48de50",
+    "text": "Done.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:54.989727Z"
+  },
+  "npc.gnomus.say_13": {
+    "src_hash": "f5940523060652e3a7d9c269ce48de50",
+    "text": "Done.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:54.989960Z"
+  },
+  "npc.gnomus.say_15": {
+    "src_hash": "f5940523060652e3a7d9c269ce48de50",
+    "text": "Done.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:54.990229Z"
+  },
+  "npc.guide_alexena.say_2": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Here you go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:55.005476Z"
+  },
+  "npc.guide_behil.say_2": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Here you go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:55.006794Z"
+  },
+  "npc.guide_davina.say_2": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Here you go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:55.007963Z"
+  },
+  "npc.guide_edna.say_2": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Here you go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:55.009082Z"
+  },
+  "npc.guide_elena.say_2": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Here you go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:55.010290Z"
+  },
+  "npc.guide_jonathan.say_2": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Here you go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:55.011414Z"
+  },
+  "npc.guide_kunibert.say_2": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Here you go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:55.012764Z"
+  },
+  "npc.guide_luke.say_2": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Here you go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:55.013946Z"
+  },
+  "npc.guide_rahlkora.say_2": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Here you go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:55.015161Z"
+  },
+  "npc.guide_thelandil.say_2": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Here you go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:55.016377Z"
+  },
+  "npc.guide_tiko.say_2": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Here you go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:55.017487Z"
+  },
+  "npc.gurbasch.walkaway_msg_1": {
+    "src_hash": "8c767380dfcf1e12c4c84eef6324bdca",
+    "text": "Until next time.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:55.019189Z"
+  },
+  "npc.hairycles.say_66": {
+    "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
+    "text": "I see.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:55.020337Z"
+  },
+  "npc.hanna.say_10": {
+    "src_hash": "ebaeda37e982b71a905f5f1995285a85",
+    "text": "Maybe another time.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:55.023775Z"
+  },
+  "npc.harsky.say_3": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Take this!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:55.025634Z"
+  },
+  "npc.hjaern.say_15": {
+    "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
+    "text": "I see.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:55.030472Z"
+  },
+  "npc.ikassis.say_3": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:55.036682Z"
+  },
+  "npc.jack_fate_goroma.say_7": {
+    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
+    "text": "Set the sails!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:55.058319Z"
+  },
+  "npc.jean_claude.say_1": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Take this!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:55.061843Z"
+  },
+  "npc.kallimae.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Well, bye then.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:55.068080Z"
+  },
+  "npc.karith.say_10": {
+    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
+    "text": "Set the sails!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:55.068887Z"
+  },
+  "npc.karith.say_12": {
+    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
+    "text": "Set the sails!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:55.069370Z"
+  },
+  "npc.karith.say_14": {
+    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
+    "text": "Set the sails!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:55.069873Z"
+  },
+  "npc.karith.say_16": {
+    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
+    "text": "Set the sails!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:55.070399Z"
+  },
+  "npc.karith.say_18": {
+    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
+    "text": "Set the sails!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:55.070904Z"
+  },
+  "npc.karith.say_20": {
+    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
+    "text": "Set the sails!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-13T23:02:55.071391Z"
+  },
+  "item.21351.name": {
+    "src_hash": "03944c28dd1d99648eda34c26d3de4ac",
+    "text": "Light Stone Shower Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:13:56.557324Z"
+  },
+  "item.21352.name": {
+    "src_hash": "31cd2c4b8700d3fba06777b6f804dbdd",
+    "text": "Lightest Missile Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:13:56.557918Z"
+  },
+  "item.21393.name": {
+    "src_hash": "4c50203dd80176e84e2da2675073da00",
+    "text": "krailos",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:13:56.558534Z"
+  },
+  "item.21432.name": {
+    "src_hash": "31cd2c4b8700d3fba06777b6f804dbdd",
+    "text": "Lightest Missile Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:13:56.559255Z"
+  },
+  "item.21434.name": {
+    "src_hash": "03944c28dd1d99648eda34c26d3de4ac",
+    "text": "Light Stone Shower Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:13:56.559882Z"
+  },
+  "item.24966.name": {
+    "src_hash": "7c7004d4846601f4cc710309ded176ef",
+    "text": "Forbidden Fruit",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:13:56.566849Z"
+  },
+  "item.29276.name": {
+    "src_hash": "2f00d19e4fb2d9e1c321035e9ad9a8d2",
+    "text": "Dream Catcher",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:13:56.575460Z"
+  },
+  "item.30215.name": {
+    "src_hash": "7bdff76536f12a7c5ffde207e72cfe3a",
+    "text": "ice",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:13:56.577772Z"
+  },
+  "item.30218.name": {
+    "src_hash": "7bdff76536f12a7c5ffde207e72cfe3a",
+    "text": "ice",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:13:56.578328Z"
+  },
+  "item.30273.name": {
+    "src_hash": "7bdff76536f12a7c5ffde207e72cfe3a",
+    "text": "ice",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:13:56.579151Z"
+  },
+  "item.3051.name": {
+    "src_hash": "c193d863e3cfa9eb7c10c24bc406c615",
+    "text": "energy ring",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:13:56.580677Z"
+  },
+  "item.3088.name": {
+    "src_hash": "c193d863e3cfa9eb7c10c24bc406c615",
+    "text": "energy ring",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:13:56.581856Z"
+  },
+  "item.3147.name": {
+    "src_hash": "967513bc0728d5d1211f01974ab4dee5",
+    "text": "Blank Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:13:56.584208Z"
+  },
+  "item.3148.name": {
+    "src_hash": "108014137d9b1b568bc5809b2ae08993",
+    "text": "Destroy Field Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:13:56.584717Z"
+  },
+  "item.3149.name": {
+    "src_hash": "cb4d58d9f24fa57abff821799c9fc94f",
+    "text": "Energy Bomb Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:13:56.585206Z"
+  },
+  "item.3152.name": {
+    "src_hash": "33956e826a4ef3b5c532347fc58fc51a",
+    "text": "Intense Healing Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:13:56.585725Z"
+  },
+  "item.3153.name": {
+    "src_hash": "e9b8ea43be6033af680c3a1498536208",
+    "text": "Cure Poison Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:13:56.586158Z"
+  },
+  "item.3155.name": {
+    "src_hash": "fb18e4528342a1c41cbe37d70830a516",
+    "text": "Sudden Death Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:13:56.586661Z"
+  },
+  "item.3156.name": {
+    "src_hash": "9dc8d6d2135459483a32e42f4c71bfae",
+    "text": "Wild Growth Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:13:56.587111Z"
+  },
+  "item.3158.name": {
+    "src_hash": "a63c57be298a194a943475aa554f5f78",
+    "text": "Icicle Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:13:56.587569Z"
+  },
+  "item.3160.name": {
+    "src_hash": "b25b53c822bcd98974fcaa1fbf8fb0aa",
+    "text": "Ultimate Healing Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:13:56.588080Z"
+  },
+  "item.3161.name": {
+    "src_hash": "cab3c5eb8827f3e61c150d57ca197f88",
+    "text": "Avalanche Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:13:56.588467Z"
+  },
+  "item.3164.name": {
+    "src_hash": "f60e5a60c1b758e59152ab854051f6f2",
+    "text": "Energy Field Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:13:56.589230Z"
+  },
+  "item.3166.name": {
+    "src_hash": "9afbdfa527777fc5d260fcd1dd0f4094",
+    "text": "Energy Wall Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:13:56.589736Z"
+  },
+  "item.3172.name": {
+    "src_hash": "29bdf0054473b50fa81a1b59875edbf9",
+    "text": "Poison Field Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:13:56.590394Z"
+  },
+  "item.3173.name": {
+    "src_hash": "858721d74877cf4710ed54517d35713d",
+    "text": "Poison Bomb Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:13:56.590827Z"
+  },
+  "item.3174.name": {
+    "src_hash": "ea8aea2d9723287e660b1406fec99eb1",
+    "text": "Light Magic Missile Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:13:56.591287Z"
+  },
+  "item.3175.name": {
+    "src_hash": "25854a690aad0b2f569b5c34e1691b91",
+    "text": "Stone Shower Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:13:56.591679Z"
+  },
+  "item.3176.name": {
+    "src_hash": "78e6136805ee4ea8f53e60caf96a394b",
+    "text": "Poison Wall Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:13:56.592203Z"
+  },
+  "item.3177.name": {
+    "src_hash": "961fd74b70425c951d4cbbb14b6479e3",
+    "text": "Convince Creature Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:13:56.592642Z"
+  },
+  "item.3178.name": {
+    "src_hash": "013606651a891a3bd1001805d0da726e",
+    "text": "Chameleon Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:13:56.593044Z"
+  },
+  "item.3179.name": {
+    "src_hash": "210691f016709d7398e1d323b9da8859",
+    "text": "Stalagmite Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:13:56.593448Z"
+  },
+  "item.3180.name": {
+    "src_hash": "130859064dcec73dfefffb635fd5b0c6",
+    "text": "Magic Wall Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:13:56.593831Z"
+  },
+  "item.3182.name": {
+    "src_hash": "79269881630466ca0eca7525a026c059",
+    "text": "Holy Missile Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:13:56.594234Z"
+  },
+  "item.3188.name": {
+    "src_hash": "bf99d79327d646790c45047cc04d8182",
+    "text": "Fire Field Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:13:56.594669Z"
+  },
+  "item.3189.name": {
+    "src_hash": "9fa403a008c2a7bb5138a129f950d02b",
+    "text": "Fireball Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:13:56.595037Z"
+  },
+  "item.3190.name": {
+    "src_hash": "5eb3ba2aca23558a99f38c4ac773a913",
+    "text": "Fire Wall Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:13:56.595398Z"
+  },
+  "item.3191.name": {
+    "src_hash": "7997a69ae49a90c11c1136ac972bc953",
+    "text": "Great Fireball Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:13:56.595817Z"
+  },
+  "item.3192.name": {
+    "src_hash": "533a42d998f407c9860eda103d41854c",
+    "text": "Fire Bomb Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:13:56.596387Z"
+  },
+  "item.3195.name": {
+    "src_hash": "2f2f34b93816d3e6dc730a3b95d76e78",
+    "text": "Soulfire Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:13:56.596915Z"
+  },
+  "item.3197.name": {
+    "src_hash": "a20a2360568eda693272b183da79d321",
+    "text": "Disintegrate Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:13:56.597394Z"
+  },
+  "item.3198.name": {
+    "src_hash": "914de3c6825f6f3cb25da03b5fb65a8b",
+    "text": "Heavy Magic Missile Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:13:56.597820Z"
+  },
+  "item.3200.name": {
+    "src_hash": "22494ca9495b54d62a7467fd9018dc7f",
+    "text": "Explosion Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:13:56.598219Z"
+  },
+  "item.3202.name": {
+    "src_hash": "83a4224e6625714976b634a3099f2f6e",
+    "text": "Thunderstorm Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:13:56.598718Z"
+  },
+  "item.3203.name": {
+    "src_hash": "69c97276273d5b7f4faf11b058c37266",
+    "text": "Animate Dead Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:13:56.599137Z"
+  },
+  "item.3274.name": {
+    "src_hash": "c89ee4a2c9dcae6581ca53bff9aa4ee5",
+    "text": "axe",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:13:56.601324Z"
+  },
+  "item.36786.name": {
+    "src_hash": "8bac228393c7fc0a4f3ac1a0c4622505",
+    "text": "lavafungus ring",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:13:56.608329Z"
+  },
+  "item.7107.name": {
+    "src_hash": "7bdff76536f12a7c5ffde207e72cfe3a",
+    "text": "ice",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:13:56.630952Z"
+  },
+  "item.7403.name": {
+    "src_hash": "d085749c93295c3002525428f3318cc1",
+    "text": "Berserker",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:13:56.632243Z"
+  },
+  "item.7740.name": {
+    "src_hash": "7bdff76536f12a7c5ffde207e72cfe3a",
+    "text": "ice",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:13:56.633233Z"
+  },
+  "item.800.name": {
+    "src_hash": "7bdff76536f12a7c5ffde207e72cfe3a",
+    "text": "ice",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T00:13:56.634138Z"
+  },
+  "item.1.name": {
+    "src_hash": "9460370bb0ca1c98a779b1bcc6861c2c",
+    "text": "νερό",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:14:12.188318Z"
+  },
+  "item.10.name": {
+    "src_hash": "90fbbee0c198b3f16d17271f8ca29d70",
+    "text": "μαναρευστό",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:14:12.188599Z"
+  },
+  "item.100.name": {
+    "src_hash": "cab8111fd0b710a336c898e539090e34",
+    "text": "κενός",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:14:12.188807Z"
+  },
+  "item.10000.name": {
+    "src_hash": "aa63b14cb9675819aa6ecea9feeb5d27",
+    "text": "δέντρο ηλιοστάσιου",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:14:12.189071Z"
+  },
+  "item.10009.name": {
+    "src_hash": "2b120bc99743cc25cc800661bd42f168",
+    "text": "φιάλη στιλβωτικού στέμματος",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:14:12.189391Z"
+  },
+  "item.10010.name": {
+    "src_hash": "2476a5a90c029582282973dffc394319",
+    "text": "ζαοάν διακόσμηση",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:14:12.189667Z"
+  },
+  "item.10011.name": {
+    "src_hash": "36227190a857cf681921d9bf34a765ad",
+    "text": "χάρτης προς το άγνωστο",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:14:12.189958Z"
+  },
+  "item.10025.name": {
+    "src_hash": "3f76a90627bb7b7ad4e71375df6aa29f",
+    "text": "αλμανάκ της μαγείας",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:14:12.190230Z"
+  },
+  "item.10026.name": {
+    "src_hash": "aabdddfc93cdfc8322f94b68f9cc0760",
+    "text": "μωρό rotworm",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:14:12.190844Z"
+  },
+  "item.10027.name": {
+    "src_hash": "c1bcf9b8357f67370e4599d8b21749be",
+    "text": "καθολικό εργαλείο",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:14:12.191237Z"
+  },
+  "item.10028.name": {
+    "src_hash": "466a6bdf5ea677b6e1344f8bd3619a4a",
+    "text": "συμβόλαιο ψυχής",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:14:12.191505Z"
+  },
+  "item.1006.name": {
+    "src_hash": "eee3db73cf76cd1ca29c6c5d40f44fb4",
+    "text": "οδοντωτές πέτρες",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:14:12.191757Z"
+  },
+  "item.10069.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "πυροσβεστικό πεδίο",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:14:12.191995Z"
+  },
+  "item.10070.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "πυροσβεστικό πεδίο",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:14:12.192229Z"
+  },
+  "item.10071.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "πυροσβεστικό πεδίο",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:14:12.192458Z"
+  },
+  "item.10096.name": {
+    "src_hash": "cd2878e9d8d9bd39b4e50c83b5990cc8",
+    "text": "στοίβα",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:14:12.192715Z"
+  },
+  "item.10097.name": {
+    "src_hash": "ffb79de3dd0555fb7a5ca7071a0c1b4a",
+    "text": "πιπερόχορτο",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:14:12.192956Z"
+  },
+  "item.10098.name": {
+    "src_hash": "8365620ffd40a47e8c1d7d5b5c7633cb",
+    "text": "ψηλό γρασίδι",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:14:12.193185Z"
+  },
+  "item.101.name": {
+    "src_hash": "852488ddd9570bc877783bf4397563e0",
+    "text": "γη",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:14:12.193378Z"
+  },
+  "item.10111.name": {
+    "src_hash": "ffb79de3dd0555fb7a5ca7071a0c1b4a",
+    "text": "πιπερόχορτο",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:14:12.193609Z"
+  },
+  "item.10112.name": {
+    "src_hash": "2aefe63ef336d4cc0262873f224fbe19",
+    "text": "λάσπη άμμο χόρτο",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:14:12.193861Z"
+  },
+  "item.1012.name": {
+    "src_hash": "74d7b04810e76e98881a64131caa3e87",
+    "text": "αστραφτερό στολίδι",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:14:12.194110Z"
+  },
+  "item.10140.name": {
+    "src_hash": "3b2fa34af93b15d8e28dacad96e85076",
+    "text": "δαιμονικό κατάλοιπο",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:14:12.194392Z"
+  },
+  "item.10159.name": {
+    "src_hash": "9fbf6b7186d409b5605c7eb845ed7443",
+    "text": "κρανίο ενός ανθρώπου των σπηλαίων",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:14:12.194699Z"
+  },
+  "item.10180.name": {
+    "src_hash": "418acd2dc26b4e76fa2db55ab2f3e659",
+    "text": "πηχτή",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:14:12.194902Z"
+  },
+  "item.10181.name": {
+    "src_hash": "b191656e3ce1b7048b8d4510eb17cf22",
+    "text": "μαγικός τοίχος",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:14:12.195131Z"
+  },
+  "item.10182.name": {
+    "src_hash": "33f19afbf6744c10a2e913608b22cb83",
+    "text": "βιασύνη ξύλο",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:14:12.195353Z"
+  },
+  "item.10183.name": {
+    "src_hash": "166e86f69d6225986d74594875d5b86d",
+    "text": "φιάλη δηλητηρίου",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:14:12.195609Z"
+  },
+  "item.10184.name": {
+    "src_hash": "6a5213ef75be2d75ba25027c7e78be72",
+    "text": "τακτικός χάρτης",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T00:14:12.195846Z"
+  },
+  "npc.karith.say_22": {
+    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
+    "text": "Set the sails!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:14.756436Z"
+  },
+  "npc.karith.say_24": {
+    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
+    "text": "Set the sails!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:14.757061Z"
+  },
+  "npc.karith.say_26": {
+    "src_hash": "69ce05199222d304e8f82cb747eed8ab",
+    "text": "Don't waste my time.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:14.757646Z"
+  },
+  "npc.kevin.say_46": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:14.763760Z"
+  },
+  "npc.lardoc_bashsmite.say_10": {
+    "src_hash": "f5940523060652e3a7d9c269ce48de50",
+    "text": "Done.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:14.770807Z"
+  },
+  "npc.lardoc_bashsmite.say_12": {
+    "src_hash": "f5940523060652e3a7d9c269ce48de50",
+    "text": "Done.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:14.771046Z"
+  },
+  "npc.lardoc_bashsmite.say_14": {
+    "src_hash": "f5940523060652e3a7d9c269ce48de50",
+    "text": "Done.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:14.771271Z"
+  },
+  "npc.lardoc_bashsmite.say_9": {
+    "src_hash": "69ce05199222d304e8f82cb747eed8ab",
+    "text": "Don't waste my time.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:14.772043Z"
+  },
+  "npc.lokur.say_5": {
+    "src_hash": "12d673409d71f1fc127ebad108378378",
+    "text": "No then.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:14.781933Z"
+  },
+  "npc.lorbas.say_4": {
+    "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
+    "text": "I see.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:14.782350Z"
+  },
+  "npc.lugri.say_13": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:14.789214Z"
+  },
+  "npc.lugri.say_15": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:14.789755Z"
+  },
+  "npc.lugri.say_17": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:14.790329Z"
+  },
+  "npc.lugri.say_19": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:14.790918Z"
+  },
+  "npc.lukosch.say_5": {
+    "src_hash": "12d673409d71f1fc127ebad108378378",
+    "text": "No then.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:14.791549Z"
+  },
+  "npc.maelyrra.say_18": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:14.795801Z"
+  },
+  "npc.melfar.say_3": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Here you go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:14.799815Z"
+  },
+  "npc.nah_bob.say_6": {
+    "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
+    "text": "I see.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:14.810261Z"
+  },
+  "npc.norma.say_9": {
+    "src_hash": "ebaeda37e982b71a905f5f1995285a85",
+    "text": "Maybe another time.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:14.818714Z"
+  },
+  "npc.ocelus.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Good bye.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:14.825342Z"
+  },
+  "npc.ocelus.walkaway_msg_1": {
+    "src_hash": "cbca1e780ae7e44aa43debe068beb490",
+    "text": "Oh well.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:14.826164Z"
+  },
+  "npc.palomino.say_5": {
+    "src_hash": "cc67edbe5929572b201f9b2aa0f478f9",
+    "text": "Have a nice trip!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:14.840500Z"
+  },
+  "npc.palomino.say_9": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:14.841101Z"
+  },
+  "npc.pukosch.say_5": {
+    "src_hash": "12d673409d71f1fc127ebad108378378",
+    "text": "No then.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:14.851338Z"
+  },
+  "npc.robson.say_4": {
+    "src_hash": "b5010567e209726a125c9ed59162eca5",
+    "text": "Fine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:14.871816Z"
+  },
+  "npc.robson.say_6": {
+    "src_hash": "b5010567e209726a125c9ed59162eca5",
+    "text": "Fine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:14.872113Z"
+  },
+  "npc.rose.say_4": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:14.875492Z"
+  },
+  "npc.sam.say_10": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:14.877269Z"
+  },
+  "npc.sebastian.say_2": {
+    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
+    "text": "Set the sails!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:14.880981Z"
+  },
+  "npc.shirtalis_of_the_summer_court.say_3": {
+    "src_hash": "8ebe07d7adacdd880130a981ebf53704",
+    "text": "As you wish.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:14.892978Z"
+  },
+  "npc.siflind.say_31": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Here you go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:14.894650Z"
+  },
+  "npc.stutch.say_3": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Take this!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:14.900560Z"
+  },
+  "npc.suzy.farewell_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Have a nice day.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:14.901402Z"
+  },
+  "npc.suzy.walkaway_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Have a nice day.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:14.902009Z"
+  },
+  "npc.taegen.say_1": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:14.903467Z"
+  },
+  "npc.tamerin.say_4": {
+    "src_hash": "706b1a009354e93f05beff4ba2e0a628",
+    "text": "SO BE IT!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:14.904452Z"
+  },
+  "npc.tamerin.say_5": {
+    "src_hash": "706b1a009354e93f05beff4ba2e0a628",
+    "text": "SO BE IT!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:14.904916Z"
+  },
+  "npc.tarun.say_3": {
+    "src_hash": "8ebe07d7adacdd880130a981ebf53704",
+    "text": "As you wish.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:14.906928Z"
+  },
+  "npc.the_blind_prophet.say_14": {
+    "src_hash": "80daa793e7bea0f5da969ee940135c1a",
+    "text": "Take care!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:14.911499Z"
+  },
+  "npc.the_orc_king.say_8": {
+    "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
+    "text": "I see.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:14.914892Z"
+  },
+  "npc.tom.stdmod_31": {
+    "src_hash": "aafa4696d9102bda2dc5250066f65b13",
+    "text": "He's an apple polisher.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:14.921927Z"
+  },
+  "npc.uncle.say_11": {
+    "src_hash": "8ebe07d7adacdd880130a981ebf53704",
+    "text": "As you wish.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:14.929222Z"
+  },
+  "npc.warbert.say_1": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Take this!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:14.945609Z"
+  },
+  "npc.wyda.say_8": {
+    "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
+    "text": "I see.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:14.950105Z"
+  },
+  "npc.yaman.say_14": {
+    "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
+    "text": "I see.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:14.951643Z"
+  },
+  "npc.a_bearded_woman.greet_msg_1": {
+    "src_hash": "dec88b2ad57c0b13cc1cf44b9711944a",
+    "text": "ΒΓΑΛΕ ΜΕ ΑΠΟ ΕΔΩ! ΤΩΡΑ!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:39.234815Z"
+  },
+  "npc.a_bearded_woman.stdmod_1": {
+    "src_hash": "85b863553a645f3e69472bcbeea15190",
+    "text": "Σε έναν δίκαιο κόσμο, θα ήμουν καπετάνιος ενός μεγάλου πλοίου, ... \\z\n\tΕκείνοι οι πειρατές εκεί έξω θα ήταν τώρα τα τσιράκια μου, και θα παλεύαμε στις θάλασσες και θα γινόμασταν ο τρόμος των παραθαλάσσιων πόλεων! ... \\z\n\tΑν το σχέδιό μας είχε λειτουργήσει!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:39.235806Z"
+  },
+  "npc.a_bearded_woman.stdmod_2": {
+    "src_hash": "e665aff3c7b262f14bc1bdc6ecab7294",
+    "text": "Ο καπετάνιος Κιντ πούλησε το πλοίο του για να αγοράσει άσκοπα πράγματα, όπως αυτές οι τρελά ακριβές κλειδαριές για τις πόρτες των κελιών. ... \\z\n\tΕίπε ότι τα κανό θα έκαναν για λίγο. ... \\z\n\tΕίχα την εντύπωση ότι δεν ήταν πολύ λυπημένος που αποχωρίστηκε το πλοίο επειδή ήταν γνωστό ότι υπέφερε πολύ από θαλασσοπάθεια.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:39.236942Z"
+  },
+  "npc.a_bearded_woman.stdmod_3": {
+    "src_hash": "d0300a2639da1cea9ef53f1c6c9289c0",
+    "text": "Θα ήμουν πολύ καλύτερος καπετάνιος από τον Κιντ. Έπαιξα αρκετούς καπετάνιους στη σκηνή και ήμουν καλός! ... \\z\n\tΕκεί που ο Kid λαχταρούσε την εκτίμηση των αντρών του, θα κυβερνούσα με φόβο και με σιδερογροθιά!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:39.237989Z"
+  },
+  "npc.a_bearded_woman.stdmod_4": {
+    "src_hash": "2d38ace4459f0ec00320789d297c3501",
+    "text": "Όλα ήταν ιδέα του καπετάνιου Κιντ. Βλέπετε, μισούσε το όνομά του και σχεδίαζε να γίνει γνωστός με το όνομα καπετάνιος Kidnap. ... \\z\n\tΤο μόνο που χρειαζόταν ήταν κάποιος διάσημος να απαγάγει. ... \\z\n\tΔεδομένης της θλιβερής έλλειψης ταλέντου και ευφυΐας των ανδρών του, αυτό θα ήταν μεγάλο κατόρθωμα. ... \\z\n\tΓνωριζόμασταν από μερικές απάτες που κάναμε μαζί στο παρελθόν, οπότε επικοινώνησε μαζί μου. ... \\z\n\tΕπρόκειτο να υποδυθώ τη διάσημη πριγκίπισσα Λουμέλια. Ξέρεις, αυτός που όλοι έψαχναν. ... \\z\n\tΑυτό θα έδειχνε στους άντρες του και στους άλλους πειρατές πόσο μεγάλος απαγωγέας ήταν. ... \\z\n\tΜου υποσχέθηκε ότι θα γίνω ο δεύτερος του και θα ζήσω μια υπέροχη ζωή με λεηλασίες, ληστείες και λεηλασίες. ... \\z\n\tΣυμφώνησα λοιπόν να υποδυθώ την Πριγκίπισσα για λίγο και λειτούργησε μια χαρά στην αρχή. ... \\z\n\tΕπέστρεψε μαζί μου ντυμένος ως Πριγκίπισσα από μια επιδρομή μόνος του και έγινε αμέσως ο ήρωας της ημέρας για τους άνδρες του. ... \\z\n\tΤα πράγματα πήγαν άσχημα όταν αποφάσισαν να κάνουν ένα πάρτι νίκης. ... \\z\n\tΑπό όσο μπορούσα να καταλάβω από τις μουρμούρες των πειρατών, ο Κιντ έχασε το κλειδί του κελιού μου ενώ ανακουφιζόταν στον υπόγειο ποταμό. ... \\z\n\tΟ ανόητος αποφάσισε να το βουτήξει .. για να μην τον ξαναδείς ποτέ. ... \\z\n\tΌταν έμαθα για τον θάνατο του Kid προσπάθησα να πείσω τους πειρατές ότι ήταν φάρσα, αλλά δεν θα με πιστέψουν!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:39.241999Z"
+  },
+  "npc.a_bearded_woman.stdmod_5": {
+    "src_hash": "d02c0ffb00f9c85e39e5609e3ffcfc53",
+    "text": "Αχ η απαγωγή είναι τόσο διασκεδαστική. Δηλαδή, εάν δεν είστε στο άκρο λήψης. ... \\z\n\tΕίναι εύκολο χρήμα και έχεις την ευκαιρία να τρομάξεις και να βασανίσεις κάποιον που δεν μπορεί να αντισταθεί!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:39.242855Z"
+  },
+  "npc.a_bearded_woman.stdmod_6": {
+    "src_hash": "8addcda1b472b30e046fd34589b4879f",
+    "text": "Όσο πιο ανόητοι είναι οι άνθρωποι, τόσο πιο εύκολο είναι να τους εξαπατήσεις. ... \\z\n\tΚαι όσο πιο φτωχοί είναι τόσο λιγότερα μέσα έχουν για να εκδικηθούν. Χαρ Χαρ! ... \\z\n\tΟπότε φροντίζω να καταστρέψω αυτούς που απατώ. Μετά έχουν άλλα πράγματα να ανησυχούν από το να με εκδικηθούν.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:39.243934Z"
+  },
+  "npc.a_bearded_woman.stdmod_7": {
+    "src_hash": "a07eb0740959112055b5524599e7a7e2",
+    "text": "Το κλειδί χάθηκε στο υπόγειο ποτάμι και μάλλον έχει ξεβραστεί μέχρι τώρα στις επτά θάλασσες! ... \\z\n\tΑν αυτό το ηλίθιο παιδί δεν είχε τόσο εμμονή με την απαγωγή, δεν θα είχε πουλήσει το πλοίο του για να αγοράσει τις πιο ακριβές και περίπλοκες κλειδαριές για τα κελιά του!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:39.244967Z"
+  },
+  "npc.a_bearded_woman.stdmod_8": {
+    "src_hash": "611cca91ceb08fc3c7143e9b26284ef9",
+    "text": "Όσο παραμένουμε σε ανυπεράσπιστες παράκτιες πόλεις, μπορούμε να κάνουμε μια εύκολη περιουσία. Χαρ Χαρ! ... \\z\n\tΜόλις φύγω από εδώ θα γίνω επιτέλους πειρατής καπετάνιος μόνος μου. Δεν χρειάζομαι τον Captain Kid!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:39.245846Z"
+  },
+  "npc.a_bearded_woman.voice_1": {
+    "src_hash": "58767cda40525ee7cbdee616d85cb646",
+    "text": "Είμαι ΑΝΤΡΑΣ! Βγάλτε με έξω, μεθυσμένοι ηλίθιοι!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:39.246310Z"
+  },
+  "npc.a_bearded_woman.voice_2": {
+    "src_hash": "72b86601b93166f02b9c4cd08dfeee5d",
+    "text": "ΒΓΑΛΕ ΜΕ ΑΠΟ ΕΔΩ!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:39.246635Z"
+  },
+  "npc.a_bearded_woman.voice_3": {
+    "src_hash": "c28763b34d8b1e303d10487a3c6bdda4",
+    "text": "Βγάλε με έξω! Ήταν όλα μέρος του σχεδίου, ανόητοι!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:39.247060Z"
+  },
+  "npc.a_bearded_woman.voice_4": {
+    "src_hash": "f6e4d063bc0eade947ac0001b744445e",
+    "text": "Αν ποτέ φύγω από εδώ, θα σας σκοτώσω όλους! Όλοι σας!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:39.247517Z"
+  },
+  "npc.a_bearded_woman.voice_5": {
+    "src_hash": "610ef2c5395758ac8169140d09ad737a",
+    "text": "ΔΕΝ είμαι η πριγκίπισσα Λουμέλια, ανόητοι!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:39.247907Z"
+  },
+  "npc.a_bearded_woman.voice_6": {
+    "src_hash": "53c4ab6007ae6d3e10ea4ddf7dce9bf1",
+    "text": "Πάρτε έναν κλειδαρά και ελευθέρωσέ με αλλιώς θα το μετανιώσεις, ανόητοι πειρατές!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:39.248394Z"
+  },
+  "npc.a_bearded_woman.voice_7": {
+    "src_hash": "6ad2054bb73e4f51e22543c42ffc5d5b",
+    "text": "Δεν είμαι πριγκίπισσα, είμαι ηθοποιός!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:39.248799Z"
+  },
+  "npc.a_beautiful_girl.greet_msg_1": {
+    "src_hash": "12c56c6555b96d78e471b6866d61e5dc",
+    "text": "Ήρθες λοιπόν, |PLAYERNAME|. Ήλπιζα ότι δεν θα...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:39.249216Z"
+  },
+  "npc.a_beggar.greet_msg_1": {
+    "src_hash": "fb67985b03b0041bfb5a827c66ff748c",
+    "text": "Γεια! Τι είναι αυτό, τι εσείς {want};?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:39.249624Z"
+  },
+  "npc.a_beggar.say_1": {
+    "src_hash": "dfa16f2971d25fe56e1c023824c93b08",
+    "text": "Έτσι σκέφτηκε. Θα πρέπει να μιλήσεις με τον βασιλιά όμως. Ο ζητιάνος βασιλιάς δηλαδή. Ο βασιλιάς δεν δίνει ακροατήριο μόνο σε όλους. Ξέρεις πώς είναι αυτοί οι βασιλιάδες, έτσι δεν είναι; ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:39.250491Z"
+  },
+  "npc.a_beggar.say_2": {
+    "src_hash": "7f8292b9eb7566b64edd089a2459de83",
+    "text": "Ωστόσο, για να έχετε ένα κοινό με τον βασιλιά, θα πρέπει να βοηθήσετε λίγο τους υπηκόους του. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:39.251042Z"
+  },
+  "npc.a_beggar.say_3": {
+    "src_hash": "c00ef85e3c706aa4e1feb0023c862a5e",
+    "text": "Τα θέματά του θα ήμασταν εμείς, οι φτωχοί, ξέρεις; ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:39.251491Z"
+  },
+  "npc.a_beggar.say_4": {
+    "src_hash": "4083b6eb97ef1d492dafe67ced5e1d1b",
+    "text": "Γιατί λοιπόν δεν δείχνετε την αφοσίωσή σας στους φτωχούς; Πήγαινε και βοήθησε τον Τσάβις στο φτωχικό σπίτι. Μαζεύει τρόφιμα για ανθρώπους σαν εμάς. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:39.252170Z"
+  },
+  "npc.a_beggar.say_5": {
+    "src_hash": "8bb1bd6a0ab3fe83a4488aa718b941f9",
+    "text": "Εάν φέρατε αρκετά από τα πράγματα, θα δείτε ότι ο βασιλιάς θα σας επιτρέψει την είσοδο στο {palace} του.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:39.252769Z"
+  },
+  "npc.a_behemoth.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Κράτα το κάτω! <gives you an elaborate report on monster activity>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:39.253474Z"
+  },
+  "npc.a_behemoth.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Κράτα το κάτω! <gives you an elaborate report on monster activity>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:39.254308Z"
+  },
+  "npc.a_behemoth.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Κράτα το κάτω! <gives you an elaborate report on monster activity>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:39.255086Z"
+  },
+  "npc.a_dead_bureaucrat.greet_msg_1": {
+    "src_hash": "1fb51950fc35d0b9f7979cbb0fff81b2",
+    "text": "Γεια {}, καλώς ήρθατε στο αίθριο του Pumin's Domain. Απαιτούμε κάποιες πληροφορίες από εσάς για να μπορέσουμε να σας αφήσουμε να περάσετε. Πού θέλετε να πάτε;?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:39.255854Z"
+  },
+  "npc.a_dead_bureaucrat1.farewell_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Αντίο και μη με ξεχνάς!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:39.256204Z"
+  },
+  "npc.a_dead_bureaucrat1.say_1": {
+    "src_hash": "f4195eed0570aee7a7882eadb5b85979",
+    "text": "Χου, σε παρακαλώ μη με πληγώνεις με το {} σου! Λόγος της επίσκεψής σας;?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:39.256681Z"
+  },
+  "npc.a_dead_bureaucrat1.say_2": {
+    "src_hash": "6c80ac504f39e09fc288756acfd7a105",
+    "text": "Πόσο ενδιαφέρον. Πρέπει να το πω αμέσως στον αφέντη μου. Πηγαίνετε στους συναδέλφους μου και ζητήστε το Έντυπο 356. Θα το χρειαστείτε για να προχωρήσετε.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:39.257393Z"
+  },
+  "npc.a_dead_bureaucrat1.say_3": {
+    "src_hash": "7c9a6b9ee4bce0d9b7654294cdfe405e",
+    "text": "Εντάξει |PLAYERNAME|. Επάγγελμα;?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:39.257747Z"
+  },
+  "npc.a_dead_bureaucrat1.say_5": {
+    "src_hash": "7025be9c3a92e5d4e7965480ef624e3a",
+    "text": "Έντυπο 411; Χρειάζεστε το έντυπο 287 για να το αποκτήσετε! Το έχεις;?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:39.258194Z"
+  },
+  "npc.a_dead_bureaucrat1.say_6": {
+    "src_hash": "7025be9c3a92e5d4e7965480ef624e3a",
+    "text": "Έντυπο 411; Χρειάζεστε το έντυπο 287 για να το αποκτήσετε! Το έχεις;?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:39.258669Z"
+  },
+  "npc.a_dead_bureaucrat1.say_7": {
+    "src_hash": "22849ba6a7644915a8cb4de5b2a8e521",
+    "text": "Ω, τι κρίμα. Πήγαινε να δεις έναν από τους συναδέλφους μου. Σας δίνω την άδεια να λάβετε το έντυπο 287. Αντίο!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:39.259469Z"
+  },
+  "npc.a_dead_bureaucrat1.say_8": {
+    "src_hash": "68c9f9ee9212c1c305a253d3d1aebeb0",
+    "text": "Μεγάλος. Ορίστε. Έντυπο 411. Επιστρέψτε όποτε θέλετε να μιλήσετε. Αντίο.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T01:22:39.259988Z"
+  },
+  "item.1053.name": {
+    "src_hash": "852488ddd9570bc877783bf4397563e0",
+    "text": "γη",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:59:46.881402Z"
+  },
+  "item.1090.name": {
+    "src_hash": "eee3db73cf76cd1ca29c6c5d40f44fb4",
+    "text": "οδοντωτές πέτρες",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:59:46.882040Z"
+  },
+  "item.2118.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "πυροσβεστικό πεδίο",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:59:46.900442Z"
+  },
+  "item.2119.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "πυροσβεστικό πεδίο",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:59:46.901209Z"
+  },
+  "item.2120.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "πυροσβεστικό πεδίο",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:59:46.901832Z"
+  },
+  "item.2123.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "πυροσβεστικό πεδίο",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:59:46.902677Z"
+  },
+  "item.2124.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "πυροσβεστικό πεδίο",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:59:46.903242Z"
+  },
+  "item.2125.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "πυροσβεστικό πεδίο",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:59:46.903742Z"
+  },
+  "item.2128.name": {
+    "src_hash": "b191656e3ce1b7048b8d4510eb17cf22",
+    "text": "μαγικός τοίχος",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:59:46.904291Z"
+  },
+  "item.2129.name": {
+    "src_hash": "b191656e3ce1b7048b8d4510eb17cf22",
+    "text": "μαγικός τοίχος",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:59:46.904801Z"
+  },
+  "item.2130.name": {
+    "src_hash": "33f19afbf6744c10a2e913608b22cb83",
+    "text": "βιασύνη ξύλο",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:59:46.905435Z"
+  },
+  "item.2131.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "πυροσβεστικό πεδίο",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:59:46.905987Z"
+  },
+  "item.2132.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "πυροσβεστικό πεδίο",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:59:46.906506Z"
+  },
+  "item.2133.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "πυροσβεστικό πεδίο",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:59:46.907032Z"
+  },
+  "item.21462.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "πυροσβεστικό πεδίο",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:59:46.908978Z"
+  },
+  "item.21465.name": {
+    "src_hash": "71a6dbd0840ed64b40bcabed17e814d6",
+    "text": "πυροσβεστικό πεδίο",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:59:46.909481Z"
+  },
+  "item.2727.name": {
+    "src_hash": "852488ddd9570bc877783bf4397563e0",
+    "text": "γη",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:59:46.928957Z"
+  },
+  "item.2731.name": {
+    "src_hash": "852488ddd9570bc877783bf4397563e0",
+    "text": "γη",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:59:46.929552Z"
+  },
+  "item.28690.name": {
+    "src_hash": "aabdddfc93cdfc8322f94b68f9cc0760",
+    "text": "μωρό rotworm",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:59:46.934755Z"
+  },
+  "item.28691.name": {
+    "src_hash": "aabdddfc93cdfc8322f94b68f9cc0760",
+    "text": "μωρό rotworm",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:59:46.935237Z"
+  },
+  "item.28692.name": {
+    "src_hash": "aabdddfc93cdfc8322f94b68f9cc0760",
+    "text": "μωρό rotworm",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:59:46.935758Z"
+  },
+  "item.28693.name": {
+    "src_hash": "aabdddfc93cdfc8322f94b68f9cc0760",
+    "text": "μωρό rotworm",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:59:46.936226Z"
+  },
+  "item.30224.name": {
+    "src_hash": "33f19afbf6744c10a2e913608b22cb83",
+    "text": "βιασύνη ξύλο",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:59:46.939505Z"
+  },
+  "item.372.name": {
+    "src_hash": "852488ddd9570bc877783bf4397563e0",
+    "text": "γη",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:59:46.955103Z"
+  },
+  "item.38478.name": {
+    "src_hash": "9460370bb0ca1c98a779b1bcc6861c2c",
+    "text": "νερό",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:59:46.957317Z"
+  },
+  "item.3993.name": {
+    "src_hash": "852488ddd9570bc877783bf4397563e0",
+    "text": "γη",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:59:46.961155Z"
+  },
+  "item.622.name": {
+    "src_hash": "9460370bb0ca1c98a779b1bcc6861c2c",
+    "text": "νερό",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:59:46.973793Z"
+  },
+  "item.7541.name": {
+    "src_hash": "852488ddd9570bc877783bf4397563e0",
+    "text": "γη",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:59:46.977076Z"
+  },
+  "item.7594.name": {
+    "src_hash": "852488ddd9570bc877783bf4397563e0",
+    "text": "γη",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:59:46.977401Z"
+  },
+  "item.7747.name": {
+    "src_hash": "cab8111fd0b710a336c898e539090e34",
+    "text": "κενός",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:59:46.977862Z"
+  },
+  "item.7893.name": {
+    "src_hash": "3b2fa34af93b15d8e28dacad96e85076",
+    "text": "δαιμονικό κατάλοιπο",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:59:46.978604Z"
+  },
+  "item.8684.name": {
+    "src_hash": "9460370bb0ca1c98a779b1bcc6861c2c",
+    "text": "νερό",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:59:46.980318Z"
+  },
+  "item.9246.name": {
+    "src_hash": "852488ddd9570bc877783bf4397563e0",
+    "text": "γη",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:59:46.982554Z"
+  },
+  "item.9804.name": {
+    "src_hash": "2476a5a90c029582282973dffc394319",
+    "text": "ζαοάν διακόσμηση",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:59:46.984024Z"
+  },
+  "item.9995.name": {
+    "src_hash": "aa63b14cb9675819aa6ecea9feeb5d27",
+    "text": "δέντρο ηλιοστάσιου",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:59:46.984500Z"
+  },
+  "item.9997.name": {
+    "src_hash": "8365620ffd40a47e8c1d7d5b5c7633cb",
+    "text": "ψηλό γρασίδι",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:59:46.984757Z"
+  },
+  "item.9998.name": {
+    "src_hash": "8365620ffd40a47e8c1d7d5b5c7633cb",
+    "text": "ψηλό γρασίδι",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:59:46.984995Z"
+  },
+  "item.9999.name": {
+    "src_hash": "8365620ffd40a47e8c1d7d5b5c7633cb",
+    "text": "ψηλό γρασίδι",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T02:59:46.985288Z"
+  },
+  "item.10185.name": {
+    "src_hash": "fb22606aca32dcbce80ae759f3e23f66",
+    "text": "εναλλαγή",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:00:09.574845Z"
+  },
+  "item.10186.name": {
+    "src_hash": "2d9e53feb0673a054464fd17e13ab87e",
+    "text": "κραυγή μπάλα",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:00:09.575139Z"
+  },
+  "item.10187.name": {
+    "src_hash": "c0e2289468f8376e785248a520b72014",
+    "text": "σπάνιο κρύσταλλο",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:00:09.575401Z"
+  },
+  "item.10189.name": {
+    "src_hash": "bf28efa02d6ee5e3c9d823175b421301",
+    "text": "φιάλη με επιπλέον λιπαρό λάδι",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:00:09.575742Z"
+  },
+  "item.1019.name": {
+    "src_hash": "ce1ca28266c962ae55f0a786013793d5",
+    "text": "γρασίδι της ζούγκλας",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:00:09.576003Z"
+  },
+  "item.10190.name": {
+    "src_hash": "c4f472440ff1cb095aa917bb4daa2be0",
+    "text": "νεκρός draken θερμοκόμος",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:00:09.576316Z"
+  },
+  "item.10191.name": {
+    "src_hash": "c4f472440ff1cb095aa917bb4daa2be0",
+    "text": "νεκρός draken θερμοκόμος",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:00:09.576623Z"
+  },
+  "item.10192.name": {
+    "src_hash": "c4f472440ff1cb095aa917bb4daa2be0",
+    "text": "νεκρός draken θερμοκόμος",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:00:09.576928Z"
+  },
+  "item.10193.name": {
+    "src_hash": "c4f472440ff1cb095aa917bb4daa2be0",
+    "text": "νεκρός draken θερμοκόμος",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:00:09.577300Z"
+  },
+  "item.10194.name": {
+    "src_hash": "feb706aed35979e15f25a1f15bb6f71f",
+    "text": "συρτάρι από μπαμπού",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:00:09.577643Z"
+  },
+  "item.10195.name": {
+    "src_hash": "79f7d2ef17285d43eb5819ce8fd4699a",
+    "text": "φύλλα",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:00:09.577860Z"
+  },
+  "item.10196.name": {
+    "src_hash": "108dd41b5aa8c784aec5f9101c11f1ad",
+    "text": "δόντι ορκ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:00:09.578083Z"
+  },
+  "item.10197.name": {
+    "src_hash": "ce1ca28266c962ae55f0a786013793d5",
+    "text": "γρασίδι της ζούγκλας",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:00:09.578370Z"
+  },
+  "item.10198.name": {
+    "src_hash": "0a6dcecfe4aa9c8c2ec49ab453984657",
+    "text": "φυλετικό έμβλημα",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:00:09.578684Z"
+  },
+  "item.10199.name": {
+    "src_hash": "9ca33c2744c767a83e7045f51bd5935c",
+    "text": "λοφίο φιδιού",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:00:09.578937Z"
+  },
+  "item.102.name": {
+    "src_hash": "2357c882fbe6b5613c047cdba496334b",
+    "text": "λευκό λουλούδι",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:00:09.579250Z"
+  },
+  "item.10200.name": {
+    "src_hash": "82e304e7ef04a2a6b31bbabdc33ed9b3",
+    "text": "κρυστάλλινα μποτάκια",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:00:09.579511Z"
+  },
+  "item.10201.name": {
+    "src_hash": "06d4a8c785c1ed681288854d9af74c05",
+    "text": "μπότες ζυγαριάς δράκου",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:00:09.579834Z"
+  },
+  "item.10202.name": {
+    "src_hash": "2c9020abf2bfa613ade54e932cc5761d",
+    "text": "σακίδιο καρδιάς",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:00:09.580093Z"
+  },
+  "item.10203.name": {
+    "src_hash": "28f61ed3699ca1c9a528636cf5d04021",
+    "text": "σωρό κρανίου",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:00:09.580325Z"
+  },
+  "item.10205.name": {
+    "src_hash": "b00fcd304c378b1eea88e6d50f5a642a",
+    "text": "σωρός οστών",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:00:09.580598Z"
+  },
+  "item.10206.name": {
+    "src_hash": "02df6ab0ddc16081bf6d400457d5d3c4",
+    "text": "πέτρινες σκάλες",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:00:09.580850Z"
+  },
+  "item.10207.name": {
+    "src_hash": "3dad4960c0bca534f7b644707d6f35bf",
+    "text": "πακέτο χιονάνθρωπος",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:00:09.581116Z"
+  },
+  "item.10208.name": {
+    "src_hash": "b932a6ec0f3bef993326983f5c8808eb",
+    "text": "χιονάνθρωπος",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:00:09.581332Z"
+  },
+  "item.10209.name": {
+    "src_hash": "11af29272a9b9fc23ef2b7f853795776",
+    "text": "κιτ ραφιών όπλων σαύρας",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:00:09.581665Z"
+  },
+  "item.10210.name": {
+    "src_hash": "5451e3ed5604c536bb8c849f209da5b9",
+    "text": "σχάρα όπλων σαύρας",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:00:09.581957Z"
+  },
+  "item.10211.name": {
+    "src_hash": "5451e3ed5604c536bb8c849f209da5b9",
+    "text": "σχάρα όπλων σαύρας",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:00:09.582239Z"
+  },
+  "item.10212.name": {
+    "src_hash": "7131d1c878f058973254abc586e95e18",
+    "text": "άγαλμα δράκου",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:00:09.582519Z"
+  },
+  "item.10213.name": {
+    "src_hash": "7131d1c878f058973254abc586e95e18",
+    "text": "άγαλμα δράκου",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:00:09.582802Z"
+  },
+  "item.10214.name": {
+    "src_hash": "7131d1c878f058973254abc586e95e18",
+    "text": "άγαλμα δράκου",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:00:09.583048Z"
+  },
+  "item.10215.name": {
+    "src_hash": "7131d1c878f058973254abc586e95e18",
+    "text": "άγαλμα δράκου",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:00:09.583290Z"
+  },
+  "item.10216.name": {
+    "src_hash": "a5c37b0b99535230dcd569b7130cc54b",
+    "text": "κιτ αγάλματος δράκου",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:00:09.583590Z"
+  },
+  "item.10217.name": {
+    "src_hash": "910960a7c0b00d2d1e1209ff40d1381e",
+    "text": "Τόμος του Knowledge",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:00:09.584011Z"
+  },
+  "item.10218.name": {
+    "src_hash": "f9300686f5bdfa92fe3c8a12b3365fdb",
+    "text": "ψάρι καλαμποκιού",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:00:09.584288Z"
+  },
+  "item.10219.name": {
+    "src_hash": "e002ba7b4a12cf1f32203f0401207ff5",
+    "text": "μπριζόλα κροκόδειλου",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:00:09.584583Z"
+  },
+  "item.10221.name": {
+    "src_hash": "4212181ee4e21c2ab9a4a71943c92c0e",
+    "text": "νεκρός δολοφόνος καϊμάν",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:00:09.584884Z"
+  },
+  "item.10222.name": {
+    "src_hash": "4212181ee4e21c2ab9a4a71943c92c0e",
+    "text": "νεκρός δολοφόνος καϊμάν",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:00:09.585172Z"
+  },
+  "item.10223.name": {
+    "src_hash": "4212181ee4e21c2ab9a4a71943c92c0e",
+    "text": "νεκρός δολοφόνος καϊμάν",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:00:09.585459Z"
+  },
+  "item.10224.name": {
+    "src_hash": "4212181ee4e21c2ab9a4a71943c92c0e",
+    "text": "νεκρός δολοφόνος καϊμάν",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:00:09.585777Z"
+  },
+  "item.10227.name": {
+    "src_hash": "092e30b8a679b0c3eab38f6cd63f79ce",
+    "text": "κούκλα εφιάλτη",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:00:09.586038Z"
+  },
+  "item.10244.name": {
+    "src_hash": "cdc52e0f25dbe88246f4a9f0db43e517",
+    "text": "τρόπαιο bonebeast",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:00:09.586373Z"
+  },
+  "item.10247.name": {
+    "src_hash": "22bc99e4f9c4d97053f643f4ecffacf6",
+    "text": "κιβώτιο όπλων",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T03:00:09.586673Z"
+  },
+  "item.11210.name": {
+    "src_hash": "7131d1c878f058973254abc586e95e18",
+    "text": "άγαλμα δράκου",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:11.842458Z"
+  },
+  "item.1977.name": {
+    "src_hash": "02df6ab0ddc16081bf6d400457d5d3c4",
+    "text": "πέτρινες σκάλες",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:11.863482Z"
+  },
+  "item.1978.name": {
+    "src_hash": "02df6ab0ddc16081bf6d400457d5d3c4",
+    "text": "πέτρινες σκάλες",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:11.864797Z"
+  },
+  "item.2465.name": {
+    "src_hash": "feb706aed35979e15f25a1f15bb6f71f",
+    "text": "συρτάρι από μπαμπού",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:11.879826Z"
+  },
+  "item.2466.name": {
+    "src_hash": "feb706aed35979e15f25a1f15bb6f71f",
+    "text": "συρτάρι από μπαμπού",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:11.880676Z"
+  },
+  "item.2467.name": {
+    "src_hash": "feb706aed35979e15f25a1f15bb6f71f",
+    "text": "συρτάρι από μπαμπού",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:11.881408Z"
+  },
+  "item.2468.name": {
+    "src_hash": "feb706aed35979e15f25a1f15bb6f71f",
+    "text": "συρτάρι από μπαμπού",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:11.882042Z"
+  },
+  "item.30336.name": {
+    "src_hash": "b932a6ec0f3bef993326983f5c8808eb",
+    "text": "χιονάνθρωπος",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:11.892818Z"
+  },
+  "item.3656.name": {
+    "src_hash": "2357c882fbe6b5613c047cdba496334b",
+    "text": "λευκό λουλούδι",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:11.917472Z"
+  },
+  "item.3695.name": {
+    "src_hash": "ce1ca28266c962ae55f0a786013793d5",
+    "text": "γρασίδι της ζούγκλας",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:11.921476Z"
+  },
+  "item.3696.name": {
+    "src_hash": "ce1ca28266c962ae55f0a786013793d5",
+    "text": "γρασίδι της ζούγκλας",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:11.922563Z"
+  },
+  "item.3701.name": {
+    "src_hash": "ce1ca28266c962ae55f0a786013793d5",
+    "text": "γρασίδι της ζούγκλας",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:11.923876Z"
+  },
+  "item.3702.name": {
+    "src_hash": "ce1ca28266c962ae55f0a786013793d5",
+    "text": "γρασίδι της ζούγκλας",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:11.924472Z"
+  },
+  "item.405.name": {
+    "src_hash": "22bc99e4f9c4d97053f643f4ecffacf6",
+    "text": "κιβώτιο όπλων",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:11.934218Z"
+  },
+  "item.4254.name": {
+    "src_hash": "b00fcd304c378b1eea88e6d50f5a642a",
+    "text": "σωρός οστών",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:11.937839Z"
+  },
+  "item.4271.name": {
+    "src_hash": "b00fcd304c378b1eea88e6d50f5a642a",
+    "text": "σωρός οστών",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:11.938338Z"
+  },
+  "item.4276.name": {
+    "src_hash": "b00fcd304c378b1eea88e6d50f5a642a",
+    "text": "σωρός οστών",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:11.938639Z"
+  },
+  "item.4280.name": {
+    "src_hash": "b00fcd304c378b1eea88e6d50f5a642a",
+    "text": "σωρός οστών",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:11.938910Z"
+  },
+  "item.4285.name": {
+    "src_hash": "b00fcd304c378b1eea88e6d50f5a642a",
+    "text": "σωρός οστών",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:11.939202Z"
+  },
+  "item.4298.name": {
+    "src_hash": "b00fcd304c378b1eea88e6d50f5a642a",
+    "text": "σωρός οστών",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:11.939557Z"
+  },
+  "item.747.name": {
+    "src_hash": "7131d1c878f058973254abc586e95e18",
+    "text": "άγαλμα δράκου",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:11.952658Z"
+  },
+  "item.7748.name": {
+    "src_hash": "ce1ca28266c962ae55f0a786013793d5",
+    "text": "γρασίδι της ζούγκλας",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:11.953453Z"
+  },
+  "item.7888.name": {
+    "src_hash": "02df6ab0ddc16081bf6d400457d5d3c4",
+    "text": "πέτρινες σκάλες",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:11.954040Z"
+  },
+  "item.855.name": {
+    "src_hash": "02df6ab0ddc16081bf6d400457d5d3c4",
+    "text": "πέτρινες σκάλες",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:11.956163Z"
+  },
+  "item.856.name": {
+    "src_hash": "02df6ab0ddc16081bf6d400457d5d3c4",
+    "text": "πέτρινες σκάλες",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:11.956462Z"
+  },
+  "item.9697.name": {
+    "src_hash": "c0e2289468f8376e785248a520b72014",
+    "text": "σπάνιο κρύσταλλο",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:11.960155Z"
+  },
+  "item.10272.name": {
+    "src_hash": "a10eed158a96a24198c61013fc3a40cb",
+    "text": "καβουράκια",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:30.323458Z"
+  },
+  "item.10273.name": {
+    "src_hash": "d4456df84711920832024bfea9a04500",
+    "text": "ράμφος τρομοκρατών πτηνών",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:30.323768Z"
+  },
+  "item.10274.name": {
+    "src_hash": "7d753eb0b3a91bd2673be6c9a41a7873",
+    "text": "skunk ουρά",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:30.324010Z"
+  },
+  "item.10275.name": {
+    "src_hash": "7a7bdb3cfb96189cee8a3b274dff7d0e",
+    "text": "κυνόδοντας σκουληκιού πτωμάτων",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:30.324313Z"
+  },
+  "item.10276.name": {
+    "src_hash": "ca604850f968bb36a2e97ca9d3189618",
+    "text": "πλοκάμι του γέροντος Bonelord",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:30.324642Z"
+  },
+  "item.10277.name": {
+    "src_hash": "ff07a5a0ea550902cea144efa4c26c88",
+    "text": "οστεώδης ουρά",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:30.324879Z"
+  },
+  "item.10278.name": {
+    "src_hash": "3ec1cce69914c888518234ffbc8dcd4c",
+    "text": "πέτρινο φτερό",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:30.325112Z"
+  },
+  "item.10279.name": {
+    "src_hash": "d1d1b936cc9f73ee9b81790464742d4e",
+    "text": "κομμάτι από δέρμα κροκόδειλου",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:30.325446Z"
+  },
+  "item.10280.name": {
+    "src_hash": "2487ec3e5887b0d6975eb9e021220882",
+    "text": "γιγαντιαίο μάτι",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:30.325680Z"
+  },
+  "item.10281.name": {
+    "src_hash": "afd439b99257c9a00c118d865ac5fcc1",
+    "text": "αυγό ταραντούλας",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:30.325929Z"
+  },
+  "item.10282.name": {
+    "src_hash": "c7d8fb7c100b1eaef2543f94776f7223",
+    "text": "κεφαλή ύδρας",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:30.326217Z"
+  },
+  "item.10283.name": {
+    "src_hash": "7a89c42b9c239f19082d6d687c0d44ff",
+    "text": "μισοχωνεμένο κομμάτι κρέας",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:30.326581Z"
+  },
+  "item.10286.name": {
+    "src_hash": "efd63614fe94d229f57de216233fb89c",
+    "text": "θρόνος δράκου",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:30.326838Z"
+  },
+  "item.10287.name": {
+    "src_hash": "efd63614fe94d229f57de216233fb89c",
+    "text": "θρόνος δράκου",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:30.327088Z"
+  },
+  "item.10288.name": {
+    "src_hash": "48abff4f3c8ca9969884c4c2101279d7",
+    "text": "κιτ dragon throne",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:30.327622Z"
+  },
+  "item.10289.name": {
+    "src_hash": "8d58a849efe72bf104c97ad52a9de0e6",
+    "text": "κόκκινο φανάρι",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:30.327906Z"
+  },
+  "item.10290.name": {
+    "src_hash": "b75a25495c0245871b59e4ff4bd78ec7",
+    "text": "μίνι μούμια",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:30.328144Z"
+  },
+  "item.10291.name": {
+    "src_hash": "71092a873f395637a3f8bf76ef2da618",
+    "text": "σάπιο κομμάτι ύφασμα",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:30.328445Z"
+  },
+  "item.10292.name": {
+    "src_hash": "1aeed4210790afb32bcf828b09ed6b1c",
+    "text": "μεταξένια γούνα",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:30.328679Z"
+  },
+  "item.10293.name": {
+    "src_hash": "6f552cbd214da9f216e0992b1ae1906b",
+    "text": "ριγέ γούνα",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:30.328964Z"
+  },
+  "item.10294.name": {
+    "src_hash": "a729c5bbec6770913a0fadb3600b5644",
+    "text": "γεμιστό φρύνος",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:30.329213Z"
+  },
+  "item.10295.name": {
+    "src_hash": "90cf458e1e33ec9b684fc8baa78a9771",
+    "text": "χειμωνιάτικη γούνα λύκου",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:30.329489Z"
+  },
+  "item.10296.name": {
+    "src_hash": "ece8e3803fb3b8e5e081f3c90abea858",
+    "text": "βελανίδι",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:30.329698Z"
+  },
+  "item.10297.name": {
+    "src_hash": "30bcf1207738a7e1218e9cc426e228b0",
+    "text": "κέρατα",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:30.329904Z"
+  },
+  "item.10298.name": {
+    "src_hash": "adec68888bb0f86b0d2ccb7f9d99140f",
+    "text": "μεταλλική ακίδα",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:30.330140Z"
+  },
+  "item.10299.name": {
+    "src_hash": "9269e34558de79bfe1e38796e2e9cd9e",
+    "text": "γούνα ασβού",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:30.330386Z"
+  },
+  "item.103.name": {
+    "src_hash": "c90b1198f689dd950d51142e65a44c81",
+    "text": "βρωμιά",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:30.330643Z"
+  },
+  "item.10300.name": {
+    "src_hash": "648a0ce319a658f0e9477eff441e1aed",
+    "text": "σπόροι carniphila",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:30.331207Z"
+  },
+  "item.10301.name": {
+    "src_hash": "ff26275e2c36257210572b2c536d78ee",
+    "text": "σαρανταποδαρούσα πόδι",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:30.331508Z"
+  },
+  "item.10302.name": {
+    "src_hash": "869d7b08ed596dbaadf3e827ce9dbd88",
+    "text": "πυξίδα",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:30.331728Z"
+  },
+  "item.10303.name": {
+    "src_hash": "eca35ff99054b0852920ec165d4e0734",
+    "text": "σκούρο κομπολόι",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:30.332004Z"
+  },
+  "item.10304.name": {
+    "src_hash": "a6f2ec5291f19a8a05f401fe553601c3",
+    "text": "ουρά κολασμένου γόνου",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:30.332279Z"
+  },
+  "item.10305.name": {
+    "src_hash": "92d1b5a3ca53a96f9c786b87d7807a0a",
+    "text": "κομμάτι γης",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:30.332527Z"
+  },
+  "item.10306.name": {
+    "src_hash": "ec98bcab585b9e48d89dfc985a77455f",
+    "text": "η ουσία ενός κακού ονείρου",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:46.798794Z"
+  },
+  "item.10307.name": {
+    "src_hash": "7afd5bed67b66a4a2d9b47e5b0721a15",
+    "text": "χοντρή γούνα",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:46.799048Z"
+  },
+  "item.10308.name": {
+    "src_hash": "ce041dac1cc84ec74f3fcad474b9d0a6",
+    "text": "μεταλλαγμένη σάρκα",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:46.799305Z"
+  },
+  "item.10309.name": {
+    "src_hash": "c752a633fac9d8b23b5fef3fdc67a11f",
+    "text": "τρίχα της μέδουσας",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:46.799643Z"
+  },
+  "item.10310.name": {
+    "src_hash": "e9284a43d184f9ab54404ee6367ba714",
+    "text": "γυαλιστερή πέτρα",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:46.799892Z"
+  },
+  "item.10311.name": {
+    "src_hash": "801d49ef5d0b22c3e85b179f5edf74fd",
+    "text": "σαμπρέδοντο",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:46.800116Z"
+  },
+  "item.10312.name": {
+    "src_hash": "0864cee69182583b50302ead6c9ab9a2",
+    "text": "πόδι δρεπάνι",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:46.800372Z"
+  },
+  "item.10313.name": {
+    "src_hash": "e0314d9b60aebbbbd8d8bbc182c4c3bc",
+    "text": "φτερωτή ουρά",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:46.800613Z"
+  },
+  "item.10314.name": {
+    "src_hash": "5352a9cf8423ca616d3079263ed97363",
+    "text": "τσουκνίδα",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:46.800856Z"
+  },
+  "item.10315.name": {
+    "src_hash": "06ef3decc6d627d2b121cc380b0a87c7",
+    "text": "θειούχα πέτρα",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:46.801122Z"
+  },
+  "item.10316.name": {
+    "src_hash": "4266580860c8ca55ed261210dd9cdd65",
+    "text": "ανίερο κόκκαλο",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:46.801394Z"
+  },
+  "item.10317.name": {
+    "src_hash": "9be089ec9fcf39dd5f944a55e9959098",
+    "text": "γούνα λυκάνθρωπου",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:46.801653Z"
+  },
+  "item.10318.name": {
+    "src_hash": "143eec50bc23ca5d787b2fa786bd2051",
+    "text": "γούνα λύκου",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:46.801889Z"
+  },
+  "item.10319.name": {
+    "src_hash": "27a18ca062a4121b180022c59e1c0d25",
+    "text": "μαλλί",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:46.802095Z"
+  },
+  "item.10320.name": {
+    "src_hash": "a4e41a29f24a163a9c6d6ccbdc280f20",
+    "text": "βιβλίο νεκρομαντικών τελετουργιών",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:46.802513Z"
+  },
+  "item.10321.name": {
+    "src_hash": "36428b55670c8882c1db63f7c9e29ede",
+    "text": "χαυλιόδοντας μαμούθ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:46.802786Z"
+  },
+  "item.10322.name": {
+    "src_hash": "a643f0c67dc8358d762c267269f52f9f",
+    "text": "άγαλμα",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:46.803002Z"
+  },
+  "item.10323.name": {
+    "src_hash": "f8615c4e06ac78ad253b643eecb893a5",
+    "text": "μπότες φύλακα",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:46.803263Z"
+  },
+  "item.10324.name": {
+    "src_hash": "388cc25f567c8efa9eafbbb8d7a4e50d",
+    "text": "σακίδιο αποστολής",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:46.803595Z"
+  },
+  "item.10325.name": {
+    "src_hash": "264693254b1a770a4a1e7865f127dc80",
+    "text": "τσάντα αποστολής",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:46.803866Z"
+  },
+  "item.10326.name": {
+    "src_hash": "0b29a3403d3193814ebf74b236081849",
+    "text": "σακίδιο δράκου",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T05:02:46.804130Z"
   }
 }

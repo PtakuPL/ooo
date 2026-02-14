@@ -1,343 +1,633 @@
 {
-  "timestamp": "2026-02-13T21:50:11.628864Z",
+  "timestamp": "2026-02-14T06:10:17.218561Z",
   "version": "statusd-mvp-1.0",
   "worker": {
-    "heartbeat_at": "2026-02-13T21:49:22Z",
-    "heartbeat_age_s": 49.6,
-    "cycle": 2,
-    "mode": "manual",
+    "heartbeat_at": "2026-02-14T06:10:09Z",
+    "heartbeat_age_s": 8.2,
+    "cycle": 1,
+    "mode": "continuous",
     "category": "?",
-    "pid_alive": false
+    "pid_alive": true
   },
   "guardian": {
-    "state": "healthy",
-    "throughput_per_h": 4280.0,
-    "guard_fail_rate_pct": 3.3,
-    "issues": []
+    "state": "stuck",
+    "throughput_per_h": 2880.0,
+    "guard_fail_rate_pct": 0.0,
+    "issues": [
+      "heartbeat_stale (230s > 180s)"
+    ]
   },
   "translation_kpi": {
     "window_entries": 200,
-    "total_translated": 5969,
-    "total_guard_fail": 229,
-    "guard_fail_rate_pct": 3.69,
+    "total_translated": 13434,
+    "total_guard_fail": 791,
+    "guard_fail_rate_pct": 5.56,
     "per_lang": {
-      "es": {
-        "translated": 3395,
-        "guard_fail": 39,
-        "cycles": 103
+      "he": {
+        "translated": 240,
+        "guard_fail": 0,
+        "cycles": 3
+      },
+      "hi": {
+        "translated": 240,
+        "guard_fail": 0,
+        "cycles": 3
+      },
+      "hr": {
+        "translated": 240,
+        "guard_fail": 0,
+        "cycles": 3
+      },
+      "hu": {
+        "translated": 240,
+        "guard_fail": 0,
+        "cycles": 3
+      },
+      "hy": {
+        "translated": 160,
+        "guard_fail": 0,
+        "cycles": 2
+      },
+      "id": {
+        "translated": 160,
+        "guard_fail": 0,
+        "cycles": 2
+      },
+      "ja": {
+        "translated": 177,
+        "guard_fail": 63,
+        "cycles": 3
+      },
+      "ka": {
+        "translated": 240,
+        "guard_fail": 0,
+        "cycles": 3
+      },
+      "kk": {
+        "translated": 240,
+        "guard_fail": 0,
+        "cycles": 3
+      },
+      "ko": {
+        "translated": 234,
+        "guard_fail": 6,
+        "cycles": 3
+      },
+      "lt": {
+        "translated": 240,
+        "guard_fail": 0,
+        "cycles": 3
+      },
+      "lv": {
+        "translated": 240,
+        "guard_fail": 0,
+        "cycles": 3
+      },
+      "mk": {
+        "translated": 240,
+        "guard_fail": 0,
+        "cycles": 3
+      },
+      "ml": {
+        "translated": 240,
+        "guard_fail": 0,
+        "cycles": 3
+      },
+      "ro": {
+        "translated": 240,
+        "guard_fail": 0,
+        "cycles": 3
+      },
+      "sk": {
+        "translated": 240,
+        "guard_fail": 0,
+        "cycles": 3
+      },
+      "sl": {
+        "translated": 240,
+        "guard_fail": 0,
+        "cycles": 3
+      },
+      "sq": {
+        "translated": 240,
+        "guard_fail": 0,
+        "cycles": 3
+      },
+      "sr": {
+        "translated": 151,
+        "guard_fail": 9,
+        "cycles": 2
+      },
+      "sw": {
+        "translated": 240,
+        "guard_fail": 0,
+        "cycles": 3
+      },
+      "ta": {
+        "translated": 160,
+        "guard_fail": 0,
+        "cycles": 2
+      },
+      "te": {
+        "translated": 240,
+        "guard_fail": 0,
+        "cycles": 3
+      },
+      "th": {
+        "translated": 240,
+        "guard_fail": 0,
+        "cycles": 3
+      },
+      "tl": {
+        "translated": 240,
+        "guard_fail": 0,
+        "cycles": 3
+      },
+      "uk": {
+        "translated": 240,
+        "guard_fail": 0,
+        "cycles": 3
+      },
+      "uz": {
+        "translated": 240,
+        "guard_fail": 0,
+        "cycles": 3
+      },
+      "vi": {
+        "translated": 240,
+        "guard_fail": 0,
+        "cycles": 3
+      },
+      "zh": {
+        "translated": 151,
+        "guard_fail": 89,
+        "cycles": 3
+      },
+      "zh_TW": {
+        "translated": 122,
+        "guard_fail": 118,
+        "cycles": 3
       },
       "pl": {
-        "translated": 2574,
-        "guard_fail": 190,
-        "cycles": 97
+        "translated": 686,
+        "guard_fail": 254,
+        "cycles": 21
+      },
+      "es": {
+        "translated": 612,
+        "guard_fail": 241,
+        "cycles": 21
+      },
+      "de": {
+        "translated": 640,
+        "guard_fail": 0,
+        "cycles": 8
+      },
+      "pt": {
+        "translated": 640,
+        "guard_fail": 0,
+        "cycles": 8
+      },
+      "fr": {
+        "translated": 640,
+        "guard_fail": 0,
+        "cycles": 8
+      },
+      "it": {
+        "translated": 487,
+        "guard_fail": 0,
+        "cycles": 7
+      },
+      "ru": {
+        "translated": 487,
+        "guard_fail": 0,
+        "cycles": 7
+      },
+      "tr": {
+        "translated": 487,
+        "guard_fail": 11,
+        "cycles": 7
+      },
+      "nl": {
+        "translated": 160,
+        "guard_fail": 0,
+        "cycles": 2
+      },
+      "sv": {
+        "translated": 160,
+        "guard_fail": 0,
+        "cycles": 2
+      },
+      "da": {
+        "translated": 160,
+        "guard_fail": 0,
+        "cycles": 2
+      },
+      "no": {
+        "translated": 160,
+        "guard_fail": 0,
+        "cycles": 2
+      },
+      "fi": {
+        "translated": 160,
+        "guard_fail": 0,
+        "cycles": 2
+      },
+      "cs": {
+        "translated": 160,
+        "guard_fail": 0,
+        "cycles": 2
+      },
+      "ar": {
+        "translated": 160,
+        "guard_fail": 0,
+        "cycles": 2
+      },
+      "az": {
+        "translated": 160,
+        "guard_fail": 0,
+        "cycles": 2
+      },
+      "bg": {
+        "translated": 160,
+        "guard_fail": 0,
+        "cycles": 2
+      },
+      "bn": {
+        "translated": 160,
+        "guard_fail": 0,
+        "cycles": 2
+      },
+      "bs": {
+        "translated": 160,
+        "guard_fail": 0,
+        "cycles": 2
+      },
+      "el": {
+        "translated": 160,
+        "guard_fail": 0,
+        "cycles": 2
+      },
+      "et": {
+        "translated": 160,
+        "guard_fail": 0,
+        "cycles": 2
+      },
+      "fa": {
+        "translated": 160,
+        "guard_fail": 0,
+        "cycles": 2
+      },
+      "ms": {
+        "translated": 160,
+        "guard_fail": 0,
+        "cycles": 2
       }
     }
   },
   "adaptive_batch": {
-    "batch_size": 50,
-    "guard_fail_rate": 1.08,
-    "reason": "increase_low_fail_rate=1.1%"
+    "batch_size": 31,
+    "guard_fail_rate": 0.75,
+    "reason": "increase_low_fail_rate=0.8%"
   },
   "dispatch": {
-    "last_target": "pl:monsters.json",
-    "pending_total": 1771,
-    "candidates": 33,
-    "skipped_backoff": 3,
-    "skipped_guard_fail": 1
+    "last_target": "tr:server.json",
+    "pending_total": 2376,
+    "candidates": 1576,
+    "skipped_backoff": 4,
+    "skipped_guard_fail": 0
   },
   "coverage": {
     "ar": {
-      "coverage_pct": 21.36,
+      "coverage_pct": 22.11,
       "missing": 2150,
-      "en_copy": 30982
+      "en_copy": 31267
     },
     "az": {
-      "coverage_pct": 15.4,
+      "coverage_pct": 16.15,
       "missing": 2155,
-      "en_copy": 24264
+      "en_copy": 24373
     },
     "bg": {
-      "coverage_pct": 15.25,
+      "coverage_pct": 15.99,
       "missing": 2155,
-      "en_copy": 24307
+      "en_copy": 24411
     },
     "bn": {
-      "coverage_pct": 21.07,
+      "coverage_pct": 21.82,
       "missing": 2155,
-      "en_copy": 29180
+      "en_copy": 29289
     },
     "bs": {
-      "coverage_pct": 15.26,
+      "coverage_pct": 16.01,
       "missing": 2155,
-      "en_copy": 24300
+      "en_copy": 24427
     },
     "cs": {
-      "coverage_pct": 15.26,
+      "coverage_pct": 16.0,
       "missing": 2155,
-      "en_copy": 24298
+      "en_copy": 24472
     },
     "da": {
-      "coverage_pct": 15.26,
+      "coverage_pct": 15.85,
       "missing": 2155,
-      "en_copy": 24298
+      "en_copy": 24390
     },
     "de": {
-      "coverage_pct": 16.39,
+      "coverage_pct": 18.17,
       "missing": 2155,
-      "en_copy": 26160
+      "en_copy": 25984
     },
     "el": {
-      "coverage_pct": 15.26,
+      "coverage_pct": 16.0,
       "missing": 2155,
-      "en_copy": 24302
+      "en_copy": 24406
     },
     "es": {
-      "coverage_pct": 68.85,
+      "coverage_pct": 82.9,
       "missing": 232,
-      "en_copy": 16315
+      "en_copy": 11939
     },
     "et": {
-      "coverage_pct": 15.26,
+      "coverage_pct": 16.01,
       "missing": 2155,
-      "en_copy": 24298
+      "en_copy": 24405
     },
     "fa": {
-      "coverage_pct": 21.07,
+      "coverage_pct": 21.82,
       "missing": 2155,
-      "en_copy": 29180
+      "en_copy": 29289
     },
     "fi": {
-      "coverage_pct": 15.26,
+      "coverage_pct": 16.0,
       "missing": 2155,
-      "en_copy": 24298
+      "en_copy": 24407
     },
     "fr": {
-      "coverage_pct": 15.29,
+      "coverage_pct": 17.14,
       "missing": 2155,
-      "en_copy": 24311
+      "en_copy": 24260
     },
     "he": {
-      "coverage_pct": 21.07,
+      "coverage_pct": 21.82,
       "missing": 2155,
-      "en_copy": 29177
+      "en_copy": 29287
     },
     "hi": {
-      "coverage_pct": 21.07,
+      "coverage_pct": 21.82,
       "missing": 2155,
-      "en_copy": 29179
+      "en_copy": 29290
     },
     "hr": {
-      "coverage_pct": 15.26,
+      "coverage_pct": 16.01,
       "missing": 2155,
-      "en_copy": 24298
+      "en_copy": 24407
     },
     "hu": {
-      "coverage_pct": 15.26,
+      "coverage_pct": 16.01,
       "missing": 2155,
-      "en_copy": 24298
+      "en_copy": 24405
     },
     "hy": {
-      "coverage_pct": 21.07,
+      "coverage_pct": 21.82,
       "missing": 2155,
-      "en_copy": 29180
+      "en_copy": 29290
     },
     "id": {
-      "coverage_pct": 21.09,
+      "coverage_pct": 21.84,
       "missing": 2155,
-      "en_copy": 29171
+      "en_copy": 29282
     },
     "it": {
-      "coverage_pct": 15.29,
+      "coverage_pct": 17.0,
       "missing": 2155,
-      "en_copy": 24311
+      "en_copy": 24332
     },
     "ja": {
-      "coverage_pct": 21.07,
+      "coverage_pct": 21.7,
       "missing": 2155,
-      "en_copy": 29179
+      "en_copy": 29314
     },
     "ka": {
-      "coverage_pct": 21.07,
+      "coverage_pct": 21.82,
       "missing": 2155,
-      "en_copy": 29180
+      "en_copy": 29291
     },
     "kk": {
-      "coverage_pct": 15.24,
+      "coverage_pct": 15.99,
       "missing": 2155,
-      "en_copy": 24303
+      "en_copy": 24408
     },
     "ko": {
-      "coverage_pct": 21.07,
+      "coverage_pct": 21.81,
       "missing": 2155,
-      "en_copy": 29171
+      "en_copy": 29281
     },
     "lt": {
-      "coverage_pct": 15.25,
+      "coverage_pct": 15.99,
       "missing": 2155,
-      "en_copy": 24298
+      "en_copy": 24404
     },
     "lv": {
-      "coverage_pct": 15.25,
+      "coverage_pct": 15.99,
       "missing": 2155,
-      "en_copy": 24298
+      "en_copy": 24404
     },
     "mk": {
-      "coverage_pct": 15.25,
+      "coverage_pct": 15.99,
       "missing": 2155,
-      "en_copy": 24298
+      "en_copy": 24403
     },
     "ml": {
-      "coverage_pct": 21.07,
+      "coverage_pct": 21.81,
       "missing": 2155,
-      "en_copy": 29176
+      "en_copy": 29286
     },
     "ms": {
-      "coverage_pct": 21.07,
+      "coverage_pct": 21.67,
       "missing": 2155,
-      "en_copy": 29173
+      "en_copy": 29270
     },
     "nl": {
-      "coverage_pct": 15.27,
+      "coverage_pct": 16.02,
       "missing": 2155,
-      "en_copy": 24311
+      "en_copy": 24420
     },
     "no": {
-      "coverage_pct": 15.26,
+      "coverage_pct": 16.0,
       "missing": 2155,
-      "en_copy": 24298
+      "en_copy": 24406
     },
     "pl": {
-      "coverage_pct": 72.54,
+      "coverage_pct": 74.96,
       "missing": 2083,
-      "en_copy": 2994
+      "en_copy": 2857
     },
     "pt": {
-      "coverage_pct": 17.39,
+      "coverage_pct": 19.25,
       "missing": 2155,
-      "en_copy": 24297
+      "en_copy": 24238
     },
     "ro": {
-      "coverage_pct": 15.24,
+      "coverage_pct": 15.99,
       "missing": 2155,
-      "en_copy": 24303
+      "en_copy": 24416
     },
     "ru": {
-      "coverage_pct": 17.29,
+      "coverage_pct": 18.93,
       "missing": 2155,
-      "en_copy": 24296
+      "en_copy": 24381
     },
     "sk": {
-      "coverage_pct": 15.25,
+      "coverage_pct": 15.99,
       "missing": 2155,
-      "en_copy": 24298
+      "en_copy": 24407
     },
     "sl": {
-      "coverage_pct": 15.24,
+      "coverage_pct": 15.99,
       "missing": 2155,
-      "en_copy": 24303
+      "en_copy": 24414
     },
     "sq": {
-      "coverage_pct": 15.25,
+      "coverage_pct": 15.99,
       "missing": 2155,
-      "en_copy": 24299
+      "en_copy": 24405
     },
     "sr": {
-      "coverage_pct": 15.24,
+      "coverage_pct": 15.82,
       "missing": 2155,
-      "en_copy": 24304
+      "en_copy": 24417
     },
     "sv": {
-      "coverage_pct": 15.28,
+      "coverage_pct": 16.02,
       "missing": 2155,
-      "en_copy": 24304
+      "en_copy": 24453
     },
     "sw": {
-      "coverage_pct": 21.07,
+      "coverage_pct": 21.82,
       "missing": 2155,
-      "en_copy": 29172
+      "en_copy": 29283
     },
     "ta": {
-      "coverage_pct": 21.07,
+      "coverage_pct": 21.67,
       "missing": 2155,
-      "en_copy": 29172
+      "en_copy": 29282
     },
     "te": {
-      "coverage_pct": 21.07,
+      "coverage_pct": 21.82,
       "missing": 2155,
-      "en_copy": 29172
+      "en_copy": 29282
     },
     "th": {
-      "coverage_pct": 21.07,
+      "coverage_pct": 21.82,
       "missing": 2155,
-      "en_copy": 29172
+      "en_copy": 29282
     },
     "tl": {
-      "coverage_pct": 21.07,
+      "coverage_pct": 21.82,
       "missing": 2155,
-      "en_copy": 29173
+      "en_copy": 29301
     },
     "tr": {
-      "coverage_pct": 16.25,
+      "coverage_pct": 17.89,
       "missing": 2155,
-      "en_copy": 24133
+      "en_copy": 23915
     },
     "uk": {
-      "coverage_pct": 15.25,
+      "coverage_pct": 15.99,
       "missing": 2155,
-      "en_copy": 24299
+      "en_copy": 24404
     },
     "uz": {
-      "coverage_pct": 15.25,
+      "coverage_pct": 16.0,
       "missing": 2155,
-      "en_copy": 24297
+      "en_copy": 24403
     },
     "vi": {
-      "coverage_pct": 21.08,
+      "coverage_pct": 21.82,
       "missing": 2155,
-      "en_copy": 29170
+      "en_copy": 29280
     },
     "zh": {
-      "coverage_pct": 21.07,
+      "coverage_pct": 21.5,
       "missing": 2155,
-      "en_copy": 29178
+      "en_copy": 29273
     },
     "zh_tw": {
-      "coverage_pct": 21.07,
+      "coverage_pct": 21.59,
       "missing": 2155,
-      "en_copy": 29176
+      "en_copy": 29311
+    }
+  },
+  "repair_queue": {
+    "available": true,
+    "latest_timestamp": "2026-02-14T06:06:20.611972Z",
+    "entries_total": 31,
+    "entries_by_lang": {
+      "es": 5184,
+      "pl": 517
+    },
+    "top_target": {
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "es:npc.json",
+      "identical_to_en": 2217
+    },
+    "history_samples_total": 59,
+    "history_latest_timestamp": "2026-02-14T06:06:20.611972Z",
+    "stagnation": {
+      "window_hours": 6.0,
+      "min_samples": 6,
+      "min_drop_required": 1,
+      "detected": false,
+      "reason": "window_too_short",
+      "top_key": "es:npc.json",
+      "sample_count": 44,
+      "span_hours": 5.915,
+      "top_locked_in_window": true,
+      "baseline_count": 4438,
+      "latest_count": 2217,
+      "min_count_seen": 2217,
+      "best_drop": 2221,
+      "latest_drop": 2221,
+      "window_start": "2026-02-14T00:11:27.962868Z",
+      "window_end": "2026-02-14T06:06:20.611972Z"
     }
   },
   "recent_transitions": [],
   "recent_errors": [
     {
       "action": "review placeholder/en-copy backlog",
-      "category": "pl",
-      "cycle": 5,
-      "error": "strict_skipped_done=13 translated=1",
-      "file": "example_merchant.json",
+      "category": "de",
+      "cycle": 2,
+      "domain": "AUTO",
+      "error": "strict_skipped_done=13 translated=80",
+      "file": "server.json",
       "phase": "AUTO_TRANSLATE",
       "stage": "AUTO_TRANSLATE_NO_PROGRESS",
-      "t": "2026-02-13T21:46:47Z"
+      "t": "2026-02-14T06:04:36Z"
     },
     {
       "action": "review placeholder/en-copy backlog",
-      "category": "pl",
-      "cycle": 1,
-      "error": "strict_skipped_done=13333 translated=79",
-      "file": "npc.json",
+      "category": "fr",
+      "cycle": 3,
+      "domain": "AUTO",
+      "error": "strict_skipped_done=9 translated=80",
+      "file": "server.json",
       "phase": "AUTO_TRANSLATE",
       "stage": "AUTO_TRANSLATE_NO_PROGRESS",
-      "t": "2026-02-13T21:48:42Z"
+      "t": "2026-02-14T06:05:31Z"
     },
     {
-      "action": "placeholder=0 command=0 pipe=0",
-      "category": "pl",
+      "action": "review placeholder/en-copy backlog",
+      "category": "tr",
       "cycle": 1,
-      "error": "guard_fail=1",
-      "file": "npc.json",
+      "domain": "AUTO",
+      "error": "strict_skipped_done=130 translated=80",
+      "file": "server.json",
       "phase": "AUTO_TRANSLATE",
-      "stage": "AUTO_TRANSLATE_GUARD",
-      "t": "2026-02-13T21:48:42Z"
+      "stage": "AUTO_TRANSLATE_NO_PROGRESS",
+      "t": "2026-02-14T06:09:16Z"
     }
   ]
 }

@@ -2,13 +2,13 @@
   "lang": "kk",
   "script_group": "latin",
   "total_keys": 53586,
-  "translated": 30592,
-  "identical_to_en": 24303,
-  "placeholder_keys": 20839,
-  "coverage_pct": 57.1,
-  "issues_total": 6283,
+  "translated": 30832,
+  "identical_to_en": 24408,
+  "placeholder_keys": 20599,
+  "coverage_pct": 57.5,
+  "issues_total": 6152,
   "issues_by_type": {
-    "V3_empty": 6275,
+    "V3_empty": 6144,
     "V1_placeholder_mismatch": 7,
     "V5_pipe_mismatch": 1
   },
@@ -16,7 +16,7 @@
     "CRITICAL": 8,
     "HIGH": 0,
     "MEDIUM": 0,
-    "LOW": 6275
+    "LOW": 6144
   },
   "score": 98.9,
   "worst_keys": [
@@ -69,36 +69,6 @@
       "severity": "CRITICAL"
     },
     {
-      "key": "npc.a_dead_bureaucrat1.say_2",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_dead_bureaucrat1.say_3",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_dead_bureaucrat1.say_5",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_dead_bureaucrat1.say_6",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_dead_bureaucrat1.say_7",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
       "key": "npc.a_dead_bureaucrat1.say_8",
       "category": "npc",
       "type": "V3_empty",
@@ -139,15 +109,45 @@
       "category": "npc",
       "type": "V3_empty",
       "severity": "LOW"
+    },
+    {
+      "key": "npc.a_dead_bureaucrat4.say_3",
+      "category": "npc",
+      "type": "V3_empty",
+      "severity": "LOW"
+    },
+    {
+      "key": "npc.a_dead_bureaucrat4.say_4",
+      "category": "npc",
+      "type": "V3_empty",
+      "severity": "LOW"
+    },
+    {
+      "key": "npc.a_dragon_mother.multi_1",
+      "category": "npc",
+      "type": "V3_empty",
+      "severity": "LOW"
+    },
+    {
+      "key": "npc.a_dragon_mother.multi_2",
+      "category": "npc",
+      "type": "V3_empty",
+      "severity": "LOW"
+    },
+    {
+      "key": "npc.a_dragon_mother.multi_4",
+      "category": "npc",
+      "type": "V3_empty",
+      "severity": "LOW"
     }
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 481,
-    "consistency": 0,
+    "issues_total": 459,
+    "consistency": 1,
     "pl_reference": 400,
-    "length_ratio": 81,
+    "length_ratio": 58,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-13T22:33:49.949431Z"
+  "validated_at": "2026-02-14T06:04:14.623085Z"
 }

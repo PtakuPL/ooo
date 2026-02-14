@@ -2,24 +2,24 @@
   "lang": "sr",
   "script_group": "cyrillic",
   "total_keys": 53586,
-  "translated": 30592,
-  "identical_to_en": 24304,
-  "placeholder_keys": 20839,
-  "coverage_pct": 57.1,
-  "issues_total": 6295,
+  "translated": 30752,
+  "identical_to_en": 24417,
+  "placeholder_keys": 20679,
+  "coverage_pct": 57.4,
+  "issues_total": 6208,
   "issues_by_type": {
-    "V3_empty": 6275,
-    "script_cyrillic_latin_mix": 12,
+    "V3_empty": 6145,
+    "script_cyrillic_latin_mix": 55,
     "V1_placeholder_mismatch": 7,
     "V5_pipe_mismatch": 1
   },
   "issues_by_severity": {
     "CRITICAL": 8,
-    "HIGH": 12,
+    "HIGH": 55,
     "MEDIUM": 0,
-    "LOW": 6275
+    "LOW": 6145
   },
-  "score": 98.8,
+  "score": 98.7,
   "worst_keys": [
     {
       "key": "scripts.actions_rewards.msg_1",
@@ -76,79 +76,79 @@
       "severity": "HIGH"
     },
     {
-      "key": "scripts.actions_rewards.msg_1",
-      "category": "scripts",
+      "key": "item.21351.name",
+      "category": "items",
       "type": "script_cyrillic_latin_mix",
       "severity": "HIGH"
     },
     {
-      "key": "scripts.actions_rewards.msg_2",
-      "category": "scripts",
+      "key": "item.21352.name",
+      "category": "items",
       "type": "script_cyrillic_latin_mix",
       "severity": "HIGH"
     },
     {
-      "key": "scripts.icons_functions.msg_1",
-      "category": "scripts",
+      "key": "item.21432.name",
+      "category": "items",
       "type": "script_cyrillic_latin_mix",
       "severity": "HIGH"
     },
     {
-      "key": "scripts.manage_kv.msg_1",
-      "category": "scripts",
+      "key": "item.21434.name",
+      "category": "items",
       "type": "script_cyrillic_latin_mix",
       "severity": "HIGH"
     },
     {
-      "key": "scripts.manage_tutor.msg_1",
-      "category": "scripts",
+      "key": "item.24966.name",
+      "category": "items",
       "type": "script_cyrillic_latin_mix",
       "severity": "HIGH"
     },
     {
-      "key": "scripts.manage_tutor.msg_2",
-      "category": "scripts",
+      "key": "item.29276.name",
+      "category": "items",
       "type": "script_cyrillic_latin_mix",
       "severity": "HIGH"
     },
     {
-      "key": "server.game.msg_32",
-      "category": "server",
+      "key": "item.3147.name",
+      "category": "items",
       "type": "script_cyrillic_latin_mix",
       "severity": "HIGH"
     },
     {
-      "key": "server.player.msg_11",
-      "category": "server",
+      "key": "item.3148.name",
+      "category": "items",
       "type": "script_cyrillic_latin_mix",
       "severity": "HIGH"
     },
     {
-      "key": "server.spells.msg_3",
-      "category": "server",
+      "key": "item.3149.name",
+      "category": "items",
       "type": "script_cyrillic_latin_mix",
       "severity": "HIGH"
     },
     {
-      "key": "talkaction.gm.spy.msg_specify_name",
-      "category": "talkactions",
+      "key": "item.3152.name",
+      "category": "items",
       "type": "script_cyrillic_latin_mix",
       "severity": "HIGH"
     },
     {
-      "key": "talkaction.online.msg_summary",
-      "category": "talkactions",
+      "key": "item.3153.name",
+      "category": "items",
       "type": "script_cyrillic_latin_mix",
       "severity": "HIGH"
     }
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 481,
+    "issues_total": 458,
     "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 81,
+    "length_ratio": 58,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-13T22:33:55.205237Z"
+  "validated_at": "2026-02-14T06:04:19.343508Z"
 }

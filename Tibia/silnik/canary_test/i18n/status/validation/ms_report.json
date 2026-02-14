@@ -2,13 +2,13 @@
   "lang": "ms",
   "script_group": "latin",
   "total_keys": 53586,
-  "translated": 35456,
-  "identical_to_en": 29164,
-  "placeholder_keys": 15975,
-  "coverage_pct": 66.2,
-  "issues_total": 6283,
+  "translated": 35696,
+  "identical_to_en": 29261,
+  "placeholder_keys": 15735,
+  "coverage_pct": 66.6,
+  "issues_total": 6203,
   "issues_by_type": {
-    "V3_empty": 6275,
+    "V3_empty": 6195,
     "V1_placeholder_mismatch": 7,
     "V5_pipe_mismatch": 1
   },
@@ -16,9 +16,9 @@
     "CRITICAL": 8,
     "HIGH": 0,
     "MEDIUM": 0,
-    "LOW": 6275
+    "LOW": 6195
   },
-  "score": 99.0,
+  "score": 99.1,
   "worst_keys": [
     {
       "key": "scripts.actions_rewards.msg_1",
@@ -143,11 +143,11 @@
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 481,
-    "consistency": 0,
+    "issues_total": 468,
+    "consistency": 1,
     "pl_reference": 400,
-    "length_ratio": 81,
+    "length_ratio": 67,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-13T22:33:51.886233Z"
+  "validated_at": "2026-02-14T06:04:16.284828Z"
 }

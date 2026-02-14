@@ -1,15 +1,15 @@
 {
   "lang": "tr",
-  "coverage_pct": 57.8,
+  "coverage_pct": 58.7,
   "crossref_enabled": true,
   "auto_fix_enabled": false,
   "auto_fix_limit": 30,
-  "checked_at": "2026-02-13T22:33:57.259231Z",
-  "issues_total": 486,
+  "checked_at": "2026-02-14T06:04:21.046638Z",
+  "issues_total": 495,
   "issues_by_type": {
-    "consistency_in_language": 5,
+    "consistency_in_language": 15,
     "pl_reference_missing_translation": 400,
-    "length_ratio_crosscheck": 81
+    "length_ratio_crosscheck": 80
   },
   "consistency_issues": [
     {
@@ -66,6 +66,40 @@
     {
       "type": "crossref_inconsistent_translation",
       "severity": "MEDIUM",
+      "en": "Here you are.",
+      "variants": [
+        "",
+        "Buyur."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.aldo.say_4",
+        "npc:npc.frosty.say_4",
+        "npc:npc.haroun.say_8",
+        "npc:npc.paulie.say_20",
+        "npc:npc.paulie.say_28"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Ok then.",
+      "variants": [
+        "",
+        "Peki o zaman."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.aldo.say_5",
+        "npc:npc.gnomargery.say_24",
+        "npc:npc.gnomargery.say_29",
+        "npc:npc.gnomargery.say_34",
+        "npc:npc.gnomargery.say_39"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
       "en": "Then not.",
       "variants": [
         "",
@@ -78,6 +112,139 @@
         "npc:npc.alkestios.say_4",
         "npc:npc.appaloosa.say_9",
         "npc:npc.aurita.say_1"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "How could I help you?",
+      "variants": [
+        "",
+        "Sana nasıl yardımcı olabilirim?"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.alyxo.greet_msg_1",
+        "npc:npc.alyxo.greet_msg_2",
+        "npc:npc.alyxo.greet_msg_3",
+        "npc:npc.kallimae.greet_msg_1",
+        "npc:npc.kallimae.greet_msg_2"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Sorry.",
+      "variants": [
+        "",
+        "Özür dilerim."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.alyxo.say_12",
+        "npc:npc.alyxo.say_15",
+        "npc:npc.alyxo.say_18",
+        "npc:npc.alyxo.say_21",
+        "npc:npc.alyxo.say_24"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "You don't have it...",
+      "variants": [
+        "",
+        "Sende yok..."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.atrad.say_3",
+        "npc:npc.chondur.say_18",
+        "npc:npc.duncan.say_12",
+        "npc:npc.duncan.say_14",
+        "npc:npc.duncan.say_15"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Yes? What may I do for you, |PLAYERNAME|? Bank business, perhaps?",
+      "variants": [
+        "",
+        "Evet? Sana nasıl yardımcı olabilirim, |PLAYERNAME|? Banka işleri belki?"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.atur.greet_msg_1",
+        "npc:npc.ferks.greet_msg_1",
+        "npc:npc.suzy.greet_msg_1",
+        "server:data.otservbr.global.npc.atur.L76.727"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "So be it!",
+      "variants": [
+        "",
+        "SO BE IT!"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.awarness_of_the_emperor.say_1",
+        "npc:npc.tamerin.say_4",
+        "npc:npc.tamerin.say_5"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Here it is.",
+      "variants": [
+        "",
+        "İşte burada."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.beatrice.say_2",
+        "npc:npc.bertha.say_2",
+        "npc:npc.briasol.say_1",
+        "npc:npc.dermot.say_4",
+        "npc:npc.elvith.say_19"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Well, bye then.",
+      "variants": [
+        "",
+        "Peki, hoşça kal o zaman."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.dedoras.walkaway_msg_1",
+        "npc:npc.kallimae.walkaway_msg_1",
+        "server:data.otservbr.global.npc.alyxo.L210.798",
+        "server:data.otservbr.global.npc.ambassador.of.rathleton.L87.344",
+        "server:data.otservbr.global.npc.andrew.lyze.L263.518"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Have a nice day.",
+      "variants": [
+        "",
+        "İyi günler."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.ferks.farewell_msg_1",
+        "npc:npc.ferks.walkaway_msg_1",
+        "npc:npc.suzy.farewell_msg_1",
+        "npc:npc.suzy.walkaway_msg_1",
+        "server:data.otservbr.global.npc.atur.L77.728"
       ]
     },
     {
@@ -3702,6 +3869,51 @@
   ],
   "length_ratio_issues": [
     {
+      "key": "monster.wasp.name",
+      "category": "monsters",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 4,
+      "lang_ratio": 2.75,
+      "pl_ratio": 0.75
+    },
+    {
+      "key": "monster.wasp.desc",
+      "category": "monsters",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 6,
+      "lang_ratio": 2.5,
+      "pl_ratio": 0.5
+    },
+    {
+      "key": "monster.old_wasp.name",
+      "category": "monsters",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 4,
+      "lang_ratio": 2.75,
+      "pl_ratio": 0.75
+    },
+    {
+      "key": "monster.old_wasp.desc",
+      "category": "monsters",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 6,
+      "lang_ratio": 2.5,
+      "pl_ratio": 0.5
+    },
+    {
+      "key": "monster.williwasp.desc",
+      "category": "monsters",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 6,
+      "lang_ratio": 2.5,
+      "pl_ratio": 0.5
+    },
+    {
       "key": "npc.a_ghostly_sage.stdmod_4",
       "category": "npc",
       "type": "crossref_length_ratio_diff",
@@ -3711,39 +3923,12 @@
       "pl_ratio": 2.0
     },
     {
-      "key": "npc.alesar.say_5",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 9,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.alesar_functions.say_3",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 9,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.alkestios.say_4",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 9,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
       "key": "npc.alyxo.say_12",
       "category": "npc",
       "type": "crossref_length_ratio_diff",
       "severity": "MEDIUM",
       "en_len": 6,
-      "lang_ratio": 0.0,
+      "lang_ratio": 2.167,
       "pl_ratio": 4.0
     },
     {
@@ -3752,7 +3937,7 @@
       "type": "crossref_length_ratio_diff",
       "severity": "MEDIUM",
       "en_len": 6,
-      "lang_ratio": 0.0,
+      "lang_ratio": 2.167,
       "pl_ratio": 4.0
     },
     {
@@ -3761,7 +3946,7 @@
       "type": "crossref_length_ratio_diff",
       "severity": "MEDIUM",
       "en_len": 6,
-      "lang_ratio": 0.0,
+      "lang_ratio": 2.167,
       "pl_ratio": 4.0
     },
     {
@@ -3770,7 +3955,7 @@
       "type": "crossref_length_ratio_diff",
       "severity": "MEDIUM",
       "en_len": 6,
-      "lang_ratio": 0.0,
+      "lang_ratio": 2.167,
       "pl_ratio": 4.0
     },
     {
@@ -3779,7 +3964,7 @@
       "type": "crossref_length_ratio_diff",
       "severity": "MEDIUM",
       "en_len": 6,
-      "lang_ratio": 0.0,
+      "lang_ratio": 2.167,
       "pl_ratio": 4.0
     },
     {
@@ -3788,7 +3973,7 @@
       "type": "crossref_length_ratio_diff",
       "severity": "MEDIUM",
       "en_len": 6,
-      "lang_ratio": 0.0,
+      "lang_ratio": 2.167,
       "pl_ratio": 4.0
     },
     {
@@ -3797,26 +3982,8 @@
       "type": "crossref_length_ratio_diff",
       "severity": "MEDIUM",
       "en_len": 6,
-      "lang_ratio": 0.0,
+      "lang_ratio": 2.167,
       "pl_ratio": 4.0
-    },
-    {
-      "key": "npc.appaloosa.say_9",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 9,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.aurita.say_1",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 9,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
     },
     {
       "key": "npc.bo_ques.say_6",
@@ -3871,15 +4038,6 @@
       "en_len": 26,
       "lang_ratio": 0.0,
       "pl_ratio": 2.038
-    },
-    {
-      "key": "npc.cillia.say_3",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 9,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
     },
     {
       "key": "npc.commander_stone.say_18",

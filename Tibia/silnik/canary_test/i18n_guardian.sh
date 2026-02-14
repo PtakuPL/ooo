@@ -282,7 +282,7 @@ tr_coverage_above = tr_cfg.get("pilot_coverage_above_pct", 85)
 tr_cooldown = tr_cfg.get("cooldown_minutes", 120)
 tr_gf_below = tr_cfg.get("guard_fail_rate_below_pct", 8)
 tr_np_below = tr_cfg.get("no_progress_rate_below_pct", 1)
-tr_identical_below = tr_cfg.get("identical_to_en_translatable_below_pct", 2)
+tr_identical_below = tr_cfg.get("identical_to_en_translatable_below_pct", 5)
 
 try:
     overview_file = os.path.join(work_dir, "i18n/status/translation_global_overview.json")

@@ -1,14 +1,14 @@
 {
-  "timestamp": "2026-02-13T22:42:15.491496Z",
+  "timestamp": "2026-02-14T06:12:01.181655Z",
   "state": "degraded",
-  "heartbeat_age_s": 108.5,
-  "translated_window": 608,
-  "guard_fail_window": 101,
-  "guard_fail_rate_pct": 14.2,
-  "throughput_per_h": 2432.0,
-  "entries_in_window": 17,
+  "heartbeat_age_s": 112.2,
+  "translated_window": 640,
+  "guard_fail_window": 0,
+  "guard_fail_rate_pct": 0.0,
+  "throughput_per_h": 2560.0,
+  "entries_in_window": 8,
   "worker_cycle": 1,
   "issues": [
-    "heartbeat_aging (108s)"
+    "heartbeat_aging (112s)"
   ]
 }

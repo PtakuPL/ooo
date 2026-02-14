@@ -2,21 +2,22 @@
   "lang": "de",
   "script_group": "latin",
   "total_keys": 53586,
-  "translated": 31062,
-  "identical_to_en": 26155,
-  "placeholder_keys": 20369,
-  "coverage_pct": 58.0,
-  "issues_total": 4480,
+  "translated": 31420,
+  "identical_to_en": 26025,
+  "placeholder_keys": 20011,
+  "coverage_pct": 58.6,
+  "issues_total": 4310,
   "issues_by_type": {
-    "V3_empty": 4472,
+    "V3_empty": 4301,
     "V1_placeholder_mismatch": 7,
+    "V4_artifact": 1,
     "V5_pipe_mismatch": 1
   },
   "issues_by_severity": {
     "CRITICAL": 8,
-    "HIGH": 0,
+    "HIGH": 1,
     "MEDIUM": 0,
-    "LOW": 4472
+    "LOW": 4301
   },
   "score": 99.2,
   "worst_keys": [
@@ -67,6 +68,12 @@
       "category": "talkactions",
       "type": "V5_pipe_mismatch",
       "severity": "CRITICAL"
+    },
+    {
+      "key": "quests.bigfoot_burden.gnomedix_msg4",
+      "category": "quests",
+      "type": "V4_artifact",
+      "severity": "HIGH"
     },
     {
       "key": "npc.example_merchant.news_1",
@@ -133,21 +140,15 @@
       "category": "npc",
       "type": "V3_empty",
       "severity": "LOW"
-    },
-    {
-      "key": "npc.ezebeth.say_4",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
     }
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 457,
-    "consistency": 0,
+    "issues_total": 426,
+    "consistency": 1,
     "pl_reference": 400,
-    "length_ratio": 57,
+    "length_ratio": 25,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-13T22:33:44.445887Z"
+  "validated_at": "2026-02-14T06:04:10.334060Z"
 }

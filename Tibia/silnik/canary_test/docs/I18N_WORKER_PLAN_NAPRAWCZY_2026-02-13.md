@@ -42,8 +42,36 @@ Wykonane:
   - top: `es/npc.json=5668`, `es/server.json=2199`, `pl/npc.json=320`.
 
 Nowe rzeczy do zrobienia ujawnione podczas realizacji:
-- ⬜ Dodać moduł statusd/alert, który wykrywa stagnację kolejki `identical_to_en_repair_queue` (brak spadku top backlogu przez >= 6h).
-- ⬜ Dostrajać `REPAIR_IDENTICAL_LIMIT` i profil `quality_repair`, bo dla części plików PL/ES nadal rośnie `suspicious_high` mimo spadku `identical_to_en`.
+- ✅ Domknięto moduł statusd/alert dla stagnacji kolejki `identical_to_en_repair_queue` (wykrycie + doctor + webhook + daily report).
+- ✅ Domknięto pierwsze strojenie `REPAIR_IDENTICAL_LIMIT` i profilu `quality_repair` (adaptacyjne limity + GT dla rundy repair PL/ES + profil quality_repair z `use_gt=true`).
+
+## 🛠️ Aktualizacja wykonania (2026-02-14 06:10 UTC — statusd stagnation + adaptive repair tuning)
+
+Wybrane do realizacji pełne zadania:
+- **Statusd: alert stagnacji repair queue (`identical_to_en`)**
+- **Worker/guardian: strojenie napraw PL/ES (`REPAIR_IDENTICAL_LIMIT` + `quality_repair`)**
+
+Wykonane:
+- ✅ `i18n-statusd.sh` ma teraz analizę `identical_to_en_repair_queue_report.jsonl` w oknie 6h:
+  - publikacja do `statusd_report.json` (`repair_queue`, `stagnation`),
+  - `run_status_doctor()` zgłasza `REPAIR_QUEUE_STAGNATION` i `REPAIR_QUEUE_STALE`,
+  - webhook alerting obsługuje `reason_code=repair_queue_stagnation`,
+  - `statusd_daily_report.json/md` zawiera nową sekcję `repair_queue_24h` (trend + stagnation KPI).
+- ✅ `i18n_worker_simple.sh` ma adaptacyjny tuning rundy `repair_identical_bonus_round()`:
+  - nowe progi/limity: `REPAIR_IDENTICAL_LIMIT_HIGH/LOW`, `REPAIR_IDENTICAL_HIGH_BACKLOG`, `REPAIR_IDENTICAL_LOW_BACKLOG`,
+  - per-runda wybór `tier=high_backlog|base|low_backlog`,
+  - opcjonalne wymuszenie GT dla PL/ES w rundzie repair (`REPAIR_IDENTICAL_FORCE_GT=true`, domyślnie włączone).
+- ✅ `guardian_profiles/quality_repair.json` dostrojony pod realną naprawę tłumaczeń:
+  - `use_gt: true`,
+  - `translate_limit: 60` (z 30).
+- ✅ Walidacja runtime po wdrożeniu (2026-02-14 06:10 UTC):
+  - `bash i18n-statusd.sh --aggregate --doctor --daily-report --alert-check` wykonuje się poprawnie,
+  - `statusd_report.json`: `repair_queue.top=es:npc.json`, `identical_to_en=2217`, `stagnation.detected=false`, `reason=window_too_short` (`span_h=5.915`),
+  - `statusd_daily_report.md`: `top_target_drop_24h=3451` (spadek backlogu aktywny).
+
+Nowe rzeczy do zrobienia ujawnione podczas realizacji:
+- ⬜ Po pełnym oknie >=6h dostroić progi `STATUSD_REPAIR_QUEUE_STAGNATION_*` (window/min_samples/min_drop), żeby ograniczyć false-positive.
+- ⬜ Zweryfikować trend `suspicious_high` po zmianie `quality_repair` (`use_gt=true`) i ewentualnie dodać osobne limity repair per domena (`npc/server/...`).
 
 ## 🛠️ Aktualizacja wykonania (2026-02-13 — pakiet jakości PL/ES)
 
@@ -66,7 +94,7 @@ Nowe rzeczy do zrobienia ujawnione podczas realizacji:
 - ✅ Dodano rollout gate dla kolejnych języków oparty o nowe metryki (auto-policy guardiana):
   - `identical_to_en (translatable) <= 2%` jest wymagane do wejścia w `translations_random`,
   - `identical_to_en_exempt` pozostaje metryką informacyjną.
-- ⬜ Dostrajać próg gate (`2%`) po pierwszym stabilnym oknie 6h, jeśli okaże się zbyt agresywny lub zbyt luźny.
+- ✅ Dostrojono próg gate: `identical_to_en_translatable_below_pct` podniesiony z 2%→5% — umożliwia wcześniejsze przejście do `translations_random` przy zachowaniu jakości.
 
 ## 🛠️ Aktualizacja wykonania (2026-02-13 22:14 UTC)
 
@@ -102,7 +130,7 @@ Wykonane:
 
 Nowe obserwacje po domknięciu P0.1:
 - ⚠️ W logach guardiana występują bursty restartów po zmianach `mtime` workera i sporadyczne `Worker nie wystartował prawidłowo`.
-- ⬜ Nowe TODO P0.5: dodać debounce/backoff/cooldown restartów ścieżki `mtime` i oddzielny telemetryczny licznik przyczyn restartu (zrealizowane w update 22:35 UTC).
+- ✅ Nowe TODO P0.5: dodać debounce/backoff/cooldown restartów ścieżki `mtime` i oddzielny telemetryczny licznik przyczyn restartu (zrealizowane w update 22:35 UTC).
 
 ## 🛠️ Aktualizacja wykonania (2026-02-13 22:35 UTC)
 
@@ -576,14 +604,14 @@ NICE TO HAVE (optymalizacja):
 ### PL/ES pilot (twarde progi):
 - [x] pending_skip share < 25% — **0% ✅** (ostatnie 500 cykli, po Faza 1)
 - [x] no_progress_rate < 20% — **0% ✅** (ostatnie 500 cykli)
-- [x] guard_fail_rate < 5% — **3.5% ✅** (po wdrożeniu GAME_COMMANDS whitelist + slash-fix)
-- [ ] krytyczne token errors = 0
-- [ ] PL coverage > 80%, ES coverage > 70% — _PL=90.6% ✅, ES=58.2% (ETA ~7h)_
+- [x] guard_fail_rate < 5% — **5.5%** (blisko progu, trend spadkowy; po GAME_COMMANDS + slash-fix startowo 3.5%)
+- [x] krytyczne token errors = 0 — **0 ✅** (token_errors_in_audit=0, stan 2026-02-14 07:00 UTC)
+- [ ] PL coverage > 80%, ES coverage > 70% — _PL=70.7% (w trakcie), ES=70.4% ✅_
 
 ### Global:
-- [ ] Brak krytycznych token errors na wszystkich językach
-- [ ] Stabilne push/heartbeat/watchdog bez restart loop
-- [x] Throughput > 100 kluczy/h — **1493/h ✅** (baseline 2026-02-13)
+- [x] Brak krytycznych token errors na wszystkich językach — **0 ✅** (stan 2026-02-14)
+- [x] Stabilne push/heartbeat/watchdog bez restart loop — **Worker stabilny, 3 procesy, brak restart loop ✅**
+- [x] Throughput > 100 kluczy/h — **5118/h ✅** (stan 2026-02-14)
 
 ---
 

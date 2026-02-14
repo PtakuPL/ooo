@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-13T22:41:32.966417Z",
+  "timestamp": "2026-02-14T06:11:43.477172Z",
   "built_cycle": 1,
   "cache_ttl_cycles": 5,
   "targets": [
@@ -191,9 +191,9 @@
     {
       "lang": "de",
       "json_file": "items.json",
-      "pending_total": 13852,
-      "todo": 13689,
-      "simple_todo": 13668,
+      "pending_total": 13612,
+      "todo": 13449,
+      "simple_todo": 13428,
       "missing_in_lang": 163
     },
     {
@@ -223,9 +223,9 @@
     {
       "lang": "de",
       "json_file": "monsters.json",
-      "pending_total": 4004,
-      "todo": 4004,
-      "simple_todo": 3496,
+      "pending_total": 3859,
+      "todo": 3859,
+      "simple_todo": 3360,
       "missing_in_lang": 0
     },
     {
@@ -239,9 +239,9 @@
     {
       "lang": "de",
       "json_file": "npc.json",
-      "pending_total": 12537,
-      "todo": 12537,
-      "simple_todo": 1092,
+      "pending_total": 12299,
+      "todo": 12299,
+      "simple_todo": 920,
       "missing_in_lang": 0
     },
     {
@@ -287,9 +287,9 @@
     {
       "lang": "de",
       "json_file": "quests.json",
-      "pending_total": 603,
-      "todo": 603,
-      "simple_todo": 179,
+      "pending_total": 391,
+      "todo": 391,
+      "simple_todo": 104,
       "missing_in_lang": 0
     },
     {
@@ -311,9 +311,9 @@
     {
       "lang": "de",
       "json_file": "server.json",
-      "pending_total": 2500,
-      "todo": 2500,
-      "simple_todo": 943,
+      "pending_total": 2459,
+      "todo": 2459,
+      "simple_todo": 942,
       "missing_in_lang": 0
     },
     {
@@ -375,17 +375,17 @@
     {
       "lang": "pl",
       "json_file": "html.json",
-      "pending_total": 1001,
-      "todo": 1001,
-      "simple_todo": 273,
+      "pending_total": 994,
+      "todo": 994,
+      "simple_todo": 271,
       "missing_in_lang": 0
     },
     {
       "lang": "pl",
       "json_file": "items.json",
-      "pending_total": 9139,
-      "todo": 8976,
-      "simple_todo": 8962,
+      "pending_total": 8819,
+      "todo": 8656,
+      "simple_todo": 8642,
       "missing_in_lang": 163
     },
     {
@@ -399,16 +399,16 @@
     {
       "lang": "pl",
       "json_file": "monsters.json",
-      "pending_total": 1477,
-      "todo": 1477,
-      "simple_todo": 1458,
+      "pending_total": 1259,
+      "todo": 1259,
+      "simple_todo": 1240,
       "missing_in_lang": 0
     },
     {
       "lang": "pl",
       "json_file": "npc.json",
-      "pending_total": 322,
-      "todo": 322,
+      "pending_total": 214,
+      "todo": 214,
       "simple_todo": 3,
       "missing_in_lang": 0
     },
@@ -511,9 +511,9 @@
     {
       "lang": "es",
       "json_file": "html.json",
-      "pending_total": 994,
-      "todo": 994,
-      "simple_todo": 267,
+      "pending_total": 977,
+      "todo": 977,
+      "simple_todo": 260,
       "missing_in_lang": 0
     },
     {
@@ -535,17 +535,17 @@
     {
       "lang": "es",
       "json_file": "monsters.json",
-      "pending_total": 49,
-      "todo": 49,
-      "simple_todo": 25,
+      "pending_total": 32,
+      "todo": 32,
+      "simple_todo": 15,
       "missing_in_lang": 0
     },
     {
       "lang": "es",
       "json_file": "npc.json",
-      "pending_total": 10948,
-      "todo": 10948,
-      "simple_todo": 878,
+      "pending_total": 4674,
+      "todo": 4674,
+      "simple_todo": 314,
       "missing_in_lang": 0
     },
     {
@@ -567,9 +567,9 @@
     {
       "lang": "es",
       "json_file": "otclient_modules.json",
-      "pending_total": 400,
-      "todo": 400,
-      "simple_todo": 330,
+      "pending_total": 305,
+      "todo": 305,
+      "simple_todo": 258,
       "missing_in_lang": 0
     },
     {
@@ -607,9 +607,9 @@
     {
       "lang": "es",
       "json_file": "server.json",
-      "pending_total": 2199,
-      "todo": 2199,
-      "simple_todo": 803,
+      "pending_total": 2004,
+      "todo": 2004,
+      "simple_todo": 783,
       "missing_in_lang": 0
     },
     {
@@ -727,9 +727,9 @@
     {
       "lang": "pt",
       "json_file": "items.json",
-      "pending_total": 13168,
-      "todo": 13005,
-      "simple_todo": 12991,
+      "pending_total": 12928,
+      "todo": 12765,
+      "simple_todo": 12751,
       "missing_in_lang": 163
     },
     {
@@ -759,9 +759,9 @@
     {
       "lang": "pt",
       "json_file": "monsters.json",
-      "pending_total": 3974,
-      "todo": 3974,
-      "simple_todo": 3465,
+      "pending_total": 3819,
+      "todo": 3819,
+      "simple_todo": 3314,
       "missing_in_lang": 0
     },
     {
@@ -775,9 +775,9 @@
     {
       "lang": "pt",
       "json_file": "npc.json",
-      "pending_total": 12703,
-      "todo": 12703,
-      "simple_todo": 1239,
+      "pending_total": 12463,
+      "todo": 12463,
+      "simple_todo": 1088,
       "missing_in_lang": 0
     },
     {
@@ -823,9 +823,9 @@
     {
       "lang": "pt",
       "json_file": "quests.json",
-      "pending_total": 603,
-      "todo": 603,
-      "simple_todo": 179,
+      "pending_total": 461,
+      "todo": 461,
+      "simple_todo": 116,
       "missing_in_lang": 0
     },
     {
@@ -847,17 +847,9 @@
     {
       "lang": "pt",
       "json_file": "server.json",
-      "pending_total": 2500,
-      "todo": 2500,
-      "simple_todo": 943,
-      "missing_in_lang": 0
-    },
-    {
-      "lang": "pt",
-      "json_file": "spells.json",
-      "pending_total": 7,
-      "todo": 7,
-      "simple_todo": 4,
+      "pending_total": 2453,
+      "todo": 2453,
+      "simple_todo": 939,
       "missing_in_lang": 0
     },
     {
@@ -975,9 +967,9 @@
     {
       "lang": "fr",
       "json_file": "items.json",
-      "pending_total": 13901,
-      "todo": 13738,
-      "simple_todo": 13717,
+      "pending_total": 13661,
+      "todo": 13498,
+      "simple_todo": 13477,
       "missing_in_lang": 163
     },
     {
@@ -1007,9 +999,9 @@
     {
       "lang": "fr",
       "json_file": "monsters.json",
-      "pending_total": 4197,
-      "todo": 4197,
-      "simple_todo": 3688,
+      "pending_total": 3963,
+      "todo": 3963,
+      "simple_todo": 3456,
       "missing_in_lang": 0
     },
     {
@@ -1023,9 +1015,9 @@
     {
       "lang": "fr",
       "json_file": "npc.json",
-      "pending_total": 12701,
-      "todo": 12701,
-      "simple_todo": 1238,
+      "pending_total": 12462,
+      "todo": 12462,
+      "simple_todo": 1088,
       "missing_in_lang": 0
     },
     {
@@ -1071,9 +1063,9 @@
     {
       "lang": "fr",
       "json_file": "quests.json",
-      "pending_total": 603,
-      "todo": 603,
-      "simple_todo": 179,
+      "pending_total": 462,
+      "todo": 462,
+      "simple_todo": 116,
       "missing_in_lang": 0
     },
     {
@@ -1095,17 +1087,9 @@
     {
       "lang": "fr",
       "json_file": "server.json",
-      "pending_total": 2505,
-      "todo": 2505,
-      "simple_todo": 948,
-      "missing_in_lang": 0
-    },
-    {
-      "lang": "fr",
-      "json_file": "spells.json",
-      "pending_total": 7,
-      "todo": 7,
-      "simple_todo": 4,
+      "pending_total": 2458,
+      "todo": 2458,
+      "simple_todo": 943,
       "missing_in_lang": 0
     },
     {
@@ -1223,9 +1207,9 @@
     {
       "lang": "it",
       "json_file": "items.json",
-      "pending_total": 13901,
-      "todo": 13738,
-      "simple_todo": 13717,
+      "pending_total": 13661,
+      "todo": 13498,
+      "simple_todo": 13477,
       "missing_in_lang": 163
     },
     {
@@ -1255,9 +1239,9 @@
     {
       "lang": "it",
       "json_file": "monsters.json",
-      "pending_total": 4197,
-      "todo": 4197,
-      "simple_todo": 3688,
+      "pending_total": 3964,
+      "todo": 3964,
+      "simple_todo": 3457,
       "missing_in_lang": 0
     },
     {
@@ -1271,9 +1255,9 @@
     {
       "lang": "it",
       "json_file": "npc.json",
-      "pending_total": 12701,
-      "todo": 12701,
-      "simple_todo": 1238,
+      "pending_total": 12462,
+      "todo": 12462,
+      "simple_todo": 1092,
       "missing_in_lang": 0
     },
     {
@@ -1319,9 +1303,9 @@
     {
       "lang": "it",
       "json_file": "quests.json",
-      "pending_total": 603,
-      "todo": 603,
-      "simple_todo": 179,
+      "pending_total": 532,
+      "todo": 532,
+      "simple_todo": 136,
       "missing_in_lang": 0
     },
     {
@@ -1343,17 +1327,9 @@
     {
       "lang": "it",
       "json_file": "server.json",
-      "pending_total": 2505,
-      "todo": 2505,
-      "simple_todo": 948,
-      "missing_in_lang": 0
-    },
-    {
-      "lang": "it",
-      "json_file": "spells.json",
-      "pending_total": 7,
-      "todo": 7,
-      "simple_todo": 4,
+      "pending_total": 2462,
+      "todo": 2462,
+      "simple_todo": 945,
       "missing_in_lang": 0
     },
     {
@@ -1471,9 +1447,9 @@
     {
       "lang": "ru",
       "json_file": "items.json",
-      "pending_total": 13172,
-      "todo": 13009,
-      "simple_todo": 12995,
+      "pending_total": 12932,
+      "todo": 12769,
+      "simple_todo": 12755,
       "missing_in_lang": 163
     },
     {
@@ -1503,9 +1479,9 @@
     {
       "lang": "ru",
       "json_file": "monsters.json",
-      "pending_total": 4053,
-      "todo": 4053,
-      "simple_todo": 3544,
+      "pending_total": 3815,
+      "todo": 3815,
+      "simple_todo": 3310,
       "missing_in_lang": 0
     },
     {
@@ -1519,9 +1495,9 @@
     {
       "lang": "ru",
       "json_file": "npc.json",
-      "pending_total": 12700,
-      "todo": 12700,
-      "simple_todo": 1238,
+      "pending_total": 12460,
+      "todo": 12460,
+      "simple_todo": 1092,
       "missing_in_lang": 0
     },
     {
@@ -1567,9 +1543,9 @@
     {
       "lang": "ru",
       "json_file": "quests.json",
-      "pending_total": 603,
-      "todo": 603,
-      "simple_todo": 179,
+      "pending_total": 531,
+      "todo": 531,
+      "simple_todo": 135,
       "missing_in_lang": 0
     },
     {
@@ -1591,17 +1567,9 @@
     {
       "lang": "ru",
       "json_file": "server.json",
-      "pending_total": 2501,
-      "todo": 2501,
-      "simple_todo": 944,
-      "missing_in_lang": 0
-    },
-    {
-      "lang": "ru",
-      "json_file": "spells.json",
-      "pending_total": 7,
-      "todo": 7,
-      "simple_todo": 4,
+      "pending_total": 2500,
+      "todo": 2500,
+      "simple_todo": 943,
       "missing_in_lang": 0
     },
     {
@@ -1719,9 +1687,9 @@
     {
       "lang": "nl",
       "json_file": "items.json",
-      "pending_total": 13900,
-      "todo": 13737,
-      "simple_todo": 13716,
+      "pending_total": 13660,
+      "todo": 13497,
+      "simple_todo": 13476,
       "missing_in_lang": 163
     },
     {
@@ -1767,9 +1735,9 @@
     {
       "lang": "nl",
       "json_file": "npc.json",
-      "pending_total": 12709,
-      "todo": 12709,
-      "simple_todo": 1240,
+      "pending_total": 12549,
+      "todo": 12549,
+      "simple_todo": 1113,
       "missing_in_lang": 0
     },
     {
@@ -1967,9 +1935,9 @@
     {
       "lang": "sv",
       "json_file": "items.json",
-      "pending_total": 13900,
-      "todo": 13737,
-      "simple_todo": 13716,
+      "pending_total": 13660,
+      "todo": 13497,
+      "simple_todo": 13476,
       "missing_in_lang": 163
     },
     {
@@ -2015,9 +1983,9 @@
     {
       "lang": "sv",
       "json_file": "npc.json",
-      "pending_total": 12701,
-      "todo": 12701,
-      "simple_todo": 1238,
+      "pending_total": 12541,
+      "todo": 12541,
+      "simple_todo": 1113,
       "missing_in_lang": 0
     },
     {
@@ -2215,9 +2183,9 @@
     {
       "lang": "da",
       "json_file": "items.json",
-      "pending_total": 13912,
-      "todo": 13749,
-      "simple_todo": 13728,
+      "pending_total": 13672,
+      "todo": 13509,
+      "simple_todo": 13488,
       "missing_in_lang": 163
     },
     {
@@ -2263,9 +2231,9 @@
     {
       "lang": "da",
       "json_file": "npc.json",
-      "pending_total": 12701,
-      "todo": 12701,
-      "simple_todo": 1238,
+      "pending_total": 12621,
+      "todo": 12621,
+      "simple_todo": 1158,
       "missing_in_lang": 0
     },
     {
@@ -2463,9 +2431,9 @@
     {
       "lang": "no",
       "json_file": "items.json",
-      "pending_total": 13912,
-      "todo": 13749,
-      "simple_todo": 13728,
+      "pending_total": 13672,
+      "todo": 13509,
+      "simple_todo": 13488,
       "missing_in_lang": 163
     },
     {
@@ -2511,9 +2479,9 @@
     {
       "lang": "no",
       "json_file": "npc.json",
-      "pending_total": 12701,
-      "todo": 12701,
-      "simple_todo": 1238,
+      "pending_total": 12541,
+      "todo": 12541,
+      "simple_todo": 1113,
       "missing_in_lang": 0
     },
     {
@@ -2711,9 +2679,9 @@
     {
       "lang": "fi",
       "json_file": "items.json",
-      "pending_total": 13912,
-      "todo": 13749,
-      "simple_todo": 13728,
+      "pending_total": 13672,
+      "todo": 13509,
+      "simple_todo": 13488,
       "missing_in_lang": 163
     },
     {
@@ -2759,9 +2727,9 @@
     {
       "lang": "fi",
       "json_file": "npc.json",
-      "pending_total": 12701,
-      "todo": 12701,
-      "simple_todo": 1238,
+      "pending_total": 12541,
+      "todo": 12541,
+      "simple_todo": 1113,
       "missing_in_lang": 0
     },
     {
@@ -2959,9 +2927,9 @@
     {
       "lang": "cs",
       "json_file": "items.json",
-      "pending_total": 13912,
-      "todo": 13749,
-      "simple_todo": 13728,
+      "pending_total": 13672,
+      "todo": 13509,
+      "simple_todo": 13488,
       "missing_in_lang": 163
     },
     {
@@ -3007,9 +2975,9 @@
     {
       "lang": "cs",
       "json_file": "npc.json",
-      "pending_total": 12701,
-      "todo": 12701,
-      "simple_todo": 1238,
+      "pending_total": 12541,
+      "todo": 12541,
+      "simple_todo": 1113,
       "missing_in_lang": 0
     },
     {
@@ -3207,9 +3175,9 @@
     {
       "lang": "ar",
       "json_file": "items.json",
-      "pending_total": 13912,
-      "todo": 13749,
-      "simple_todo": 13728,
+      "pending_total": 13672,
+      "todo": 13509,
+      "simple_todo": 13488,
       "missing_in_lang": 163
     },
     {
@@ -3255,9 +3223,9 @@
     {
       "lang": "ar",
       "json_file": "npc.json",
-      "pending_total": 12545,
-      "todo": 12545,
-      "simple_todo": 1094,
+      "pending_total": 12385,
+      "todo": 12385,
+      "simple_todo": 934,
       "missing_in_lang": 0
     },
     {
@@ -3455,9 +3423,9 @@
     {
       "lang": "az",
       "json_file": "items.json",
-      "pending_total": 13899,
-      "todo": 13736,
-      "simple_todo": 13715,
+      "pending_total": 13659,
+      "todo": 13496,
+      "simple_todo": 13475,
       "missing_in_lang": 163
     },
     {
@@ -3503,9 +3471,9 @@
     {
       "lang": "az",
       "json_file": "npc.json",
-      "pending_total": 12661,
-      "todo": 12661,
-      "simple_todo": 1238,
+      "pending_total": 12501,
+      "todo": 12501,
+      "simple_todo": 1113,
       "missing_in_lang": 0
     },
     {
@@ -3703,9 +3671,9 @@
     {
       "lang": "bg",
       "json_file": "items.json",
-      "pending_total": 13912,
-      "todo": 13749,
-      "simple_todo": 13728,
+      "pending_total": 13672,
+      "todo": 13509,
+      "simple_todo": 13488,
       "missing_in_lang": 163
     },
     {
@@ -3751,9 +3719,9 @@
     {
       "lang": "bg",
       "json_file": "npc.json",
-      "pending_total": 12708,
-      "todo": 12708,
-      "simple_todo": 1240,
+      "pending_total": 12548,
+      "todo": 12548,
+      "simple_todo": 1113,
       "missing_in_lang": 0
     },
     {
@@ -3951,9 +3919,9 @@
     {
       "lang": "bn",
       "json_file": "items.json",
-      "pending_total": 13912,
-      "todo": 13749,
-      "simple_todo": 13728,
+      "pending_total": 13672,
+      "todo": 13509,
+      "simple_todo": 13488,
       "missing_in_lang": 163
     },
     {
@@ -3999,9 +3967,9 @@
     {
       "lang": "bn",
       "json_file": "npc.json",
-      "pending_total": 12708,
-      "todo": 12708,
-      "simple_todo": 1240,
+      "pending_total": 12548,
+      "todo": 12548,
+      "simple_todo": 1113,
       "missing_in_lang": 0
     },
     {
@@ -4199,9 +4167,9 @@
     {
       "lang": "bs",
       "json_file": "items.json",
-      "pending_total": 13912,
-      "todo": 13749,
-      "simple_todo": 13728,
+      "pending_total": 13672,
+      "todo": 13509,
+      "simple_todo": 13488,
       "missing_in_lang": 163
     },
     {
@@ -4247,9 +4215,9 @@
     {
       "lang": "bs",
       "json_file": "npc.json",
-      "pending_total": 12704,
-      "todo": 12704,
-      "simple_todo": 1239,
+      "pending_total": 12544,
+      "todo": 12544,
+      "simple_todo": 1113,
       "missing_in_lang": 0
     },
     {
@@ -4447,9 +4415,9 @@
     {
       "lang": "el",
       "json_file": "items.json",
-      "pending_total": 13912,
-      "todo": 13749,
-      "simple_todo": 13728,
+      "pending_total": 13672,
+      "todo": 13509,
+      "simple_todo": 13488,
       "missing_in_lang": 163
     },
     {
@@ -4495,9 +4463,9 @@
     {
       "lang": "el",
       "json_file": "npc.json",
-      "pending_total": 12708,
-      "todo": 12708,
-      "simple_todo": 1240,
+      "pending_total": 12548,
+      "todo": 12548,
+      "simple_todo": 1113,
       "missing_in_lang": 0
     },
     {
@@ -4695,9 +4663,9 @@
     {
       "lang": "et",
       "json_file": "items.json",
-      "pending_total": 13912,
-      "todo": 13749,
-      "simple_todo": 13728,
+      "pending_total": 13672,
+      "todo": 13509,
+      "simple_todo": 13488,
       "missing_in_lang": 163
     },
     {
@@ -4743,9 +4711,9 @@
     {
       "lang": "et",
       "json_file": "npc.json",
-      "pending_total": 12704,
-      "todo": 12704,
-      "simple_todo": 1239,
+      "pending_total": 12544,
+      "todo": 12544,
+      "simple_todo": 1113,
       "missing_in_lang": 0
     },
     {
@@ -4943,9 +4911,9 @@
     {
       "lang": "fa",
       "json_file": "items.json",
-      "pending_total": 13912,
-      "todo": 13749,
-      "simple_todo": 13728,
+      "pending_total": 13672,
+      "todo": 13509,
+      "simple_todo": 13488,
       "missing_in_lang": 163
     },
     {
@@ -4991,9 +4959,9 @@
     {
       "lang": "fa",
       "json_file": "npc.json",
-      "pending_total": 12708,
-      "todo": 12708,
-      "simple_todo": 1240,
+      "pending_total": 12548,
+      "todo": 12548,
+      "simple_todo": 1113,
       "missing_in_lang": 0
     },
     {
@@ -5191,9 +5159,9 @@
     {
       "lang": "he",
       "json_file": "items.json",
-      "pending_total": 13912,
-      "todo": 13749,
-      "simple_todo": 13728,
+      "pending_total": 13672,
+      "todo": 13509,
+      "simple_todo": 13488,
       "missing_in_lang": 163
     },
     {
@@ -5239,9 +5207,9 @@
     {
       "lang": "he",
       "json_file": "npc.json",
-      "pending_total": 12708,
-      "todo": 12708,
-      "simple_todo": 1240,
+      "pending_total": 12548,
+      "todo": 12548,
+      "simple_todo": 1113,
       "missing_in_lang": 0
     },
     {
@@ -5439,9 +5407,9 @@
     {
       "lang": "hi",
       "json_file": "items.json",
-      "pending_total": 13912,
-      "todo": 13749,
-      "simple_todo": 13728,
+      "pending_total": 13672,
+      "todo": 13509,
+      "simple_todo": 13488,
       "missing_in_lang": 163
     },
     {
@@ -5487,9 +5455,9 @@
     {
       "lang": "hi",
       "json_file": "npc.json",
-      "pending_total": 12709,
-      "todo": 12709,
-      "simple_todo": 1240,
+      "pending_total": 12549,
+      "todo": 12549,
+      "simple_todo": 1113,
       "missing_in_lang": 0
     },
     {
@@ -5687,9 +5655,9 @@
     {
       "lang": "hr",
       "json_file": "items.json",
-      "pending_total": 13912,
-      "todo": 13749,
-      "simple_todo": 13728,
+      "pending_total": 13672,
+      "todo": 13509,
+      "simple_todo": 13488,
       "missing_in_lang": 163
     },
     {
@@ -5735,9 +5703,9 @@
     {
       "lang": "hr",
       "json_file": "npc.json",
-      "pending_total": 12704,
-      "todo": 12704,
-      "simple_todo": 1239,
+      "pending_total": 12544,
+      "todo": 12544,
+      "simple_todo": 1113,
       "missing_in_lang": 0
     },
     {
@@ -5935,9 +5903,9 @@
     {
       "lang": "hu",
       "json_file": "items.json",
-      "pending_total": 13912,
-      "todo": 13749,
-      "simple_todo": 13728,
+      "pending_total": 13672,
+      "todo": 13509,
+      "simple_todo": 13488,
       "missing_in_lang": 163
     },
     {
@@ -5983,9 +5951,9 @@
     {
       "lang": "hu",
       "json_file": "npc.json",
-      "pending_total": 12704,
-      "todo": 12704,
-      "simple_todo": 1239,
+      "pending_total": 12544,
+      "todo": 12544,
+      "simple_todo": 1113,
       "missing_in_lang": 0
     },
     {
@@ -6183,9 +6151,9 @@
     {
       "lang": "hy",
       "json_file": "items.json",
-      "pending_total": 13912,
-      "todo": 13749,
-      "simple_todo": 13728,
+      "pending_total": 13672,
+      "todo": 13509,
+      "simple_todo": 13488,
       "missing_in_lang": 163
     },
     {
@@ -6231,9 +6199,9 @@
     {
       "lang": "hy",
       "json_file": "npc.json",
-      "pending_total": 12708,
-      "todo": 12708,
-      "simple_todo": 1240,
+      "pending_total": 12548,
+      "todo": 12548,
+      "simple_todo": 1113,
       "missing_in_lang": 0
     },
     {
@@ -6431,9 +6399,9 @@
     {
       "lang": "id",
       "json_file": "items.json",
-      "pending_total": 13912,
-      "todo": 13749,
-      "simple_todo": 13728,
+      "pending_total": 13672,
+      "todo": 13509,
+      "simple_todo": 13488,
       "missing_in_lang": 163
     },
     {
@@ -6479,9 +6447,9 @@
     {
       "lang": "id",
       "json_file": "npc.json",
-      "pending_total": 12704,
-      "todo": 12704,
-      "simple_todo": 1239,
+      "pending_total": 12544,
+      "todo": 12544,
+      "simple_todo": 1113,
       "missing_in_lang": 0
     },
     {
@@ -6679,9 +6647,9 @@
     {
       "lang": "ja",
       "json_file": "items.json",
-      "pending_total": 13912,
-      "todo": 13749,
-      "simple_todo": 13728,
+      "pending_total": 13706,
+      "todo": 13543,
+      "simple_todo": 13522,
       "missing_in_lang": 163
     },
     {
@@ -6727,9 +6695,9 @@
     {
       "lang": "ja",
       "json_file": "npc.json",
-      "pending_total": 12709,
-      "todo": 12709,
-      "simple_todo": 1240,
+      "pending_total": 12578,
+      "todo": 12578,
+      "simple_todo": 1115,
       "missing_in_lang": 0
     },
     {
@@ -6927,9 +6895,9 @@
     {
       "lang": "ka",
       "json_file": "items.json",
-      "pending_total": 13912,
-      "todo": 13749,
-      "simple_todo": 13728,
+      "pending_total": 13672,
+      "todo": 13509,
+      "simple_todo": 13488,
       "missing_in_lang": 163
     },
     {
@@ -6975,9 +6943,9 @@
     {
       "lang": "ka",
       "json_file": "npc.json",
-      "pending_total": 12708,
-      "todo": 12708,
-      "simple_todo": 1240,
+      "pending_total": 12548,
+      "todo": 12548,
+      "simple_todo": 1113,
       "missing_in_lang": 0
     },
     {
@@ -7175,9 +7143,9 @@
     {
       "lang": "kk",
       "json_file": "items.json",
-      "pending_total": 13912,
-      "todo": 13749,
-      "simple_todo": 13728,
+      "pending_total": 13672,
+      "todo": 13509,
+      "simple_todo": 13488,
       "missing_in_lang": 163
     },
     {
@@ -7223,9 +7191,9 @@
     {
       "lang": "kk",
       "json_file": "npc.json",
-      "pending_total": 12709,
-      "todo": 12709,
-      "simple_todo": 1240,
+      "pending_total": 12549,
+      "todo": 12549,
+      "simple_todo": 1113,
       "missing_in_lang": 0
     },
     {
@@ -7423,9 +7391,9 @@
     {
       "lang": "ko",
       "json_file": "items.json",
-      "pending_total": 13912,
-      "todo": 13749,
-      "simple_todo": 13728,
+      "pending_total": 13678,
+      "todo": 13515,
+      "simple_todo": 13494,
       "missing_in_lang": 163
     },
     {
@@ -7471,9 +7439,9 @@
     {
       "lang": "ko",
       "json_file": "npc.json",
-      "pending_total": 12709,
-      "todo": 12709,
-      "simple_todo": 1240,
+      "pending_total": 12549,
+      "todo": 12549,
+      "simple_todo": 1113,
       "missing_in_lang": 0
     },
     {
@@ -7671,9 +7639,9 @@
     {
       "lang": "lt",
       "json_file": "items.json",
-      "pending_total": 13912,
-      "todo": 13749,
-      "simple_todo": 13728,
+      "pending_total": 13672,
+      "todo": 13509,
+      "simple_todo": 13488,
       "missing_in_lang": 163
     },
     {
@@ -7719,9 +7687,9 @@
     {
       "lang": "lt",
       "json_file": "npc.json",
-      "pending_total": 12709,
-      "todo": 12709,
-      "simple_todo": 1240,
+      "pending_total": 12549,
+      "todo": 12549,
+      "simple_todo": 1113,
       "missing_in_lang": 0
     },
     {
@@ -7919,9 +7887,9 @@
     {
       "lang": "lv",
       "json_file": "items.json",
-      "pending_total": 13912,
-      "todo": 13749,
-      "simple_todo": 13728,
+      "pending_total": 13672,
+      "todo": 13509,
+      "simple_todo": 13488,
       "missing_in_lang": 163
     },
     {
@@ -7967,9 +7935,9 @@
     {
       "lang": "lv",
       "json_file": "npc.json",
-      "pending_total": 12709,
-      "todo": 12709,
-      "simple_todo": 1240,
+      "pending_total": 12549,
+      "todo": 12549,
+      "simple_todo": 1113,
       "missing_in_lang": 0
     },
     {
@@ -8167,9 +8135,9 @@
     {
       "lang": "mk",
       "json_file": "items.json",
-      "pending_total": 13912,
-      "todo": 13749,
-      "simple_todo": 13728,
+      "pending_total": 13672,
+      "todo": 13509,
+      "simple_todo": 13488,
       "missing_in_lang": 163
     },
     {
@@ -8215,9 +8183,9 @@
     {
       "lang": "mk",
       "json_file": "npc.json",
-      "pending_total": 12709,
-      "todo": 12709,
-      "simple_todo": 1240,
+      "pending_total": 12549,
+      "todo": 12549,
+      "simple_todo": 1113,
       "missing_in_lang": 0
     },
     {
@@ -8415,9 +8383,9 @@
     {
       "lang": "ml",
       "json_file": "items.json",
-      "pending_total": 13912,
-      "todo": 13749,
-      "simple_todo": 13728,
+      "pending_total": 13672,
+      "todo": 13509,
+      "simple_todo": 13488,
       "missing_in_lang": 163
     },
     {
@@ -8463,9 +8431,9 @@
     {
       "lang": "ml",
       "json_file": "npc.json",
-      "pending_total": 12709,
-      "todo": 12709,
-      "simple_todo": 1240,
+      "pending_total": 12549,
+      "todo": 12549,
+      "simple_todo": 1113,
       "missing_in_lang": 0
     },
     {
@@ -8663,9 +8631,9 @@
     {
       "lang": "ms",
       "json_file": "items.json",
-      "pending_total": 13912,
-      "todo": 13749,
-      "simple_todo": 13728,
+      "pending_total": 13672,
+      "todo": 13509,
+      "simple_todo": 13488,
       "missing_in_lang": 163
     },
     {
@@ -8711,9 +8679,9 @@
     {
       "lang": "ms",
       "json_file": "npc.json",
-      "pending_total": 12709,
-      "todo": 12709,
-      "simple_todo": 1240,
+      "pending_total": 12629,
+      "todo": 12629,
+      "simple_todo": 1161,
       "missing_in_lang": 0
     },
     {
@@ -8911,9 +8879,9 @@
     {
       "lang": "ro",
       "json_file": "items.json",
-      "pending_total": 13912,
-      "todo": 13749,
-      "simple_todo": 13728,
+      "pending_total": 13672,
+      "todo": 13509,
+      "simple_todo": 13488,
       "missing_in_lang": 163
     },
     {
@@ -8959,9 +8927,9 @@
     {
       "lang": "ro",
       "json_file": "npc.json",
-      "pending_total": 12709,
-      "todo": 12709,
-      "simple_todo": 1240,
+      "pending_total": 12549,
+      "todo": 12549,
+      "simple_todo": 1113,
       "missing_in_lang": 0
     },
     {
@@ -9159,9 +9127,9 @@
     {
       "lang": "sk",
       "json_file": "items.json",
-      "pending_total": 13912,
-      "todo": 13749,
-      "simple_todo": 13728,
+      "pending_total": 13672,
+      "todo": 13509,
+      "simple_todo": 13488,
       "missing_in_lang": 163
     },
     {
@@ -9207,9 +9175,9 @@
     {
       "lang": "sk",
       "json_file": "npc.json",
-      "pending_total": 12709,
-      "todo": 12709,
-      "simple_todo": 1240,
+      "pending_total": 12549,
+      "todo": 12549,
+      "simple_todo": 1113,
       "missing_in_lang": 0
     },
     {
@@ -9407,9 +9375,9 @@
     {
       "lang": "sl",
       "json_file": "items.json",
-      "pending_total": 13912,
-      "todo": 13749,
-      "simple_todo": 13728,
+      "pending_total": 13672,
+      "todo": 13509,
+      "simple_todo": 13488,
       "missing_in_lang": 163
     },
     {
@@ -9455,9 +9423,9 @@
     {
       "lang": "sl",
       "json_file": "npc.json",
-      "pending_total": 12709,
-      "todo": 12709,
-      "simple_todo": 1240,
+      "pending_total": 12549,
+      "todo": 12549,
+      "simple_todo": 1113,
       "missing_in_lang": 0
     },
     {
@@ -9655,9 +9623,9 @@
     {
       "lang": "sq",
       "json_file": "items.json",
-      "pending_total": 13912,
-      "todo": 13749,
-      "simple_todo": 13728,
+      "pending_total": 13672,
+      "todo": 13509,
+      "simple_todo": 13488,
       "missing_in_lang": 163
     },
     {
@@ -9703,9 +9671,9 @@
     {
       "lang": "sq",
       "json_file": "npc.json",
-      "pending_total": 12709,
-      "todo": 12709,
-      "simple_todo": 1240,
+      "pending_total": 12549,
+      "todo": 12549,
+      "simple_todo": 1113,
       "missing_in_lang": 0
     },
     {
@@ -9903,9 +9871,9 @@
     {
       "lang": "sr",
       "json_file": "items.json",
-      "pending_total": 13912,
-      "todo": 13749,
-      "simple_todo": 13728,
+      "pending_total": 13752,
+      "todo": 13589,
+      "simple_todo": 13568,
       "missing_in_lang": 163
     },
     {
@@ -9951,9 +9919,9 @@
     {
       "lang": "sr",
       "json_file": "npc.json",
-      "pending_total": 12709,
-      "todo": 12709,
-      "simple_todo": 1240,
+      "pending_total": 12558,
+      "todo": 12558,
+      "simple_todo": 1113,
       "missing_in_lang": 0
     },
     {
@@ -10151,9 +10119,9 @@
     {
       "lang": "sw",
       "json_file": "items.json",
-      "pending_total": 13912,
-      "todo": 13749,
-      "simple_todo": 13728,
+      "pending_total": 13672,
+      "todo": 13509,
+      "simple_todo": 13488,
       "missing_in_lang": 163
     },
     {
@@ -10199,9 +10167,9 @@
     {
       "lang": "sw",
       "json_file": "npc.json",
-      "pending_total": 12709,
-      "todo": 12709,
-      "simple_todo": 1240,
+      "pending_total": 12549,
+      "todo": 12549,
+      "simple_todo": 1113,
       "missing_in_lang": 0
     },
     {
@@ -10399,9 +10367,9 @@
     {
       "lang": "ta",
       "json_file": "items.json",
-      "pending_total": 13912,
-      "todo": 13749,
-      "simple_todo": 13728,
+      "pending_total": 13752,
+      "todo": 13589,
+      "simple_todo": 13568,
       "missing_in_lang": 163
     },
     {
@@ -10447,9 +10415,9 @@
     {
       "lang": "ta",
       "json_file": "npc.json",
-      "pending_total": 12709,
-      "todo": 12709,
-      "simple_todo": 1240,
+      "pending_total": 12549,
+      "todo": 12549,
+      "simple_todo": 1113,
       "missing_in_lang": 0
     },
     {
@@ -10647,9 +10615,9 @@
     {
       "lang": "te",
       "json_file": "items.json",
-      "pending_total": 13912,
-      "todo": 13749,
-      "simple_todo": 13728,
+      "pending_total": 13672,
+      "todo": 13509,
+      "simple_todo": 13488,
       "missing_in_lang": 163
     },
     {
@@ -10695,9 +10663,9 @@
     {
       "lang": "te",
       "json_file": "npc.json",
-      "pending_total": 12709,
-      "todo": 12709,
-      "simple_todo": 1240,
+      "pending_total": 12549,
+      "todo": 12549,
+      "simple_todo": 1113,
       "missing_in_lang": 0
     },
     {
@@ -10895,9 +10863,9 @@
     {
       "lang": "th",
       "json_file": "items.json",
-      "pending_total": 13912,
-      "todo": 13749,
-      "simple_todo": 13728,
+      "pending_total": 13672,
+      "todo": 13509,
+      "simple_todo": 13488,
       "missing_in_lang": 163
     },
     {
@@ -10943,9 +10911,9 @@
     {
       "lang": "th",
       "json_file": "npc.json",
-      "pending_total": 12709,
-      "todo": 12709,
-      "simple_todo": 1240,
+      "pending_total": 12549,
+      "todo": 12549,
+      "simple_todo": 1113,
       "missing_in_lang": 0
     },
     {
@@ -11143,9 +11111,9 @@
     {
       "lang": "tl",
       "json_file": "items.json",
-      "pending_total": 13912,
-      "todo": 13749,
-      "simple_todo": 13728,
+      "pending_total": 13672,
+      "todo": 13509,
+      "simple_todo": 13488,
       "missing_in_lang": 163
     },
     {
@@ -11191,9 +11159,9 @@
     {
       "lang": "tl",
       "json_file": "npc.json",
-      "pending_total": 12709,
-      "todo": 12709,
-      "simple_todo": 1240,
+      "pending_total": 12549,
+      "todo": 12549,
+      "simple_todo": 1113,
       "missing_in_lang": 0
     },
     {
@@ -11391,9 +11359,9 @@
     {
       "lang": "tr",
       "json_file": "items.json",
-      "pending_total": 13832,
-      "todo": 13669,
-      "simple_todo": 13648,
+      "pending_total": 13592,
+      "todo": 13429,
+      "simple_todo": 13408,
       "missing_in_lang": 163
     },
     {
@@ -11423,9 +11391,9 @@
     {
       "lang": "tr",
       "json_file": "monsters.json",
-      "pending_total": 4131,
-      "todo": 4131,
-      "simple_todo": 3622,
+      "pending_total": 3897,
+      "todo": 3897,
+      "simple_todo": 3392,
       "missing_in_lang": 0
     },
     {
@@ -11439,9 +11407,9 @@
     {
       "lang": "tr",
       "json_file": "npc.json",
-      "pending_total": 12672,
-      "todo": 12672,
-      "simple_todo": 1238,
+      "pending_total": 12432,
+      "todo": 12432,
+      "simple_todo": 1152,
       "missing_in_lang": 0
     },
     {
@@ -11511,17 +11479,9 @@
     {
       "lang": "tr",
       "json_file": "server.json",
-      "pending_total": 2457,
-      "todo": 2457,
-      "simple_todo": 932,
-      "missing_in_lang": 0
-    },
-    {
-      "lang": "tr",
-      "json_file": "spells.json",
-      "pending_total": 7,
-      "todo": 7,
-      "simple_todo": 4,
+      "pending_total": 2343,
+      "todo": 2343,
+      "simple_todo": 865,
       "missing_in_lang": 0
     },
     {
@@ -11639,9 +11599,9 @@
     {
       "lang": "uk",
       "json_file": "items.json",
-      "pending_total": 13912,
-      "todo": 13749,
-      "simple_todo": 13728,
+      "pending_total": 13672,
+      "todo": 13509,
+      "simple_todo": 13488,
       "missing_in_lang": 163
     },
     {
@@ -11687,9 +11647,9 @@
     {
       "lang": "uk",
       "json_file": "npc.json",
-      "pending_total": 12709,
-      "todo": 12709,
-      "simple_todo": 1240,
+      "pending_total": 12549,
+      "todo": 12549,
+      "simple_todo": 1113,
       "missing_in_lang": 0
     },
     {
@@ -11887,9 +11847,9 @@
     {
       "lang": "uz",
       "json_file": "items.json",
-      "pending_total": 13912,
-      "todo": 13749,
-      "simple_todo": 13728,
+      "pending_total": 13672,
+      "todo": 13509,
+      "simple_todo": 13488,
       "missing_in_lang": 163
     },
     {
@@ -11935,9 +11895,9 @@
     {
       "lang": "uz",
       "json_file": "npc.json",
-      "pending_total": 12709,
-      "todo": 12709,
-      "simple_todo": 1240,
+      "pending_total": 12549,
+      "todo": 12549,
+      "simple_todo": 1113,
       "missing_in_lang": 0
     },
     {
@@ -12135,9 +12095,9 @@
     {
       "lang": "vi",
       "json_file": "items.json",
-      "pending_total": 13912,
-      "todo": 13749,
-      "simple_todo": 13728,
+      "pending_total": 13672,
+      "todo": 13509,
+      "simple_todo": 13488,
       "missing_in_lang": 163
     },
     {
@@ -12183,9 +12143,9 @@
     {
       "lang": "vi",
       "json_file": "npc.json",
-      "pending_total": 12709,
-      "todo": 12709,
-      "simple_todo": 1240,
+      "pending_total": 12549,
+      "todo": 12549,
+      "simple_todo": 1113,
       "missing_in_lang": 0
     },
     {
@@ -12383,9 +12343,9 @@
     {
       "lang": "zh",
       "json_file": "items.json",
-      "pending_total": 13912,
-      "todo": 13749,
-      "simple_todo": 13728,
+      "pending_total": 13761,
+      "todo": 13598,
+      "simple_todo": 13577,
       "missing_in_lang": 163
     },
     {
@@ -12431,9 +12391,9 @@
     {
       "lang": "zh",
       "json_file": "npc.json",
-      "pending_total": 12709,
-      "todo": 12709,
-      "simple_todo": 1240,
+      "pending_total": 12629,
+      "todo": 12629,
+      "simple_todo": 1161,
       "missing_in_lang": 0
     },
     {
@@ -12631,9 +12591,9 @@
     {
       "lang": "zh_TW",
       "json_file": "items.json",
-      "pending_total": 13912,
-      "todo": 13749,
-      "simple_todo": 13728,
+      "pending_total": 13761,
+      "todo": 13598,
+      "simple_todo": 13577,
       "missing_in_lang": 163
     },
     {
@@ -12679,9 +12639,9 @@
     {
       "lang": "zh_TW",
       "json_file": "npc.json",
-      "pending_total": 12709,
-      "todo": 12709,
-      "simple_todo": 1240,
+      "pending_total": 12578,
+      "todo": 12578,
+      "simple_todo": 1115,
       "missing_in_lang": 0
     },
     {

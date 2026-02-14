@@ -98,9 +98,29 @@ Wniosek operacyjny po baseline 24h:
 - ✅ Domknięto dedykowany „repair queue” dla zaległego `identical_to_en (translatable)` w PL/ES:
   - artefakty: `i18n/status/identical_to_en_repair_queue.json` + `i18n/status/identical_to_en_repair_queue_report.jsonl`,
   - priorytet kolejki: języki `es -> pl`, domeny `npc -> server -> talkactions -> ...`.
-- ⬜ Nowe TODO rolloutowe:
-  - dostroić próg gate (`identical_to_en_translatable_below_pct`, startowo `2%`) po pierwszym stabilnym oknie.
-  - dodać alert stagnacji kolejki repair (brak spadku top backlogu przez >= 6h).
+- ✅ Nowe TODO rolloutowe (DONE 2026-02-14):
+  - ✅ Próg gate `identical_to_en_translatable_below_pct` podniesiony z 2%→5%.
+  - ✅ Alert stagnacji kolejki repair zaimplementowany w statusd.
+
+### Update wykonania (2026-02-14 06:10 UTC) — statusd repair queue + strojenie quality_repair
+
+- ✅ `i18n-statusd.sh`:
+  - agregacja publikuje `repair_queue` i `repair_queue.stagnation` do `statusd_report.json`,
+  - `run_status_doctor()` raportuje `REPAIR_QUEUE_STAGNATION` i `REPAIR_QUEUE_STALE`,
+  - webhook alerting obsługuje `reason_code=repair_queue_stagnation`,
+  - raport 24h (`statusd_daily_report.json/md`) ma sekcję `Repair Queue 24h`.
+- ✅ `i18n_worker_simple.sh`:
+  - `repair_identical_bonus_round()` ma adaptacyjne limity (`REPAIR_IDENTICAL_LIMIT_HIGH/LOW` + progi backlogu),
+  - dla PL/ES runda repair może wymusić GT (`REPAIR_IDENTICAL_FORCE_GT=true`).
+- ✅ `guardian_profiles/quality_repair.json` dostrojony:
+  - `use_gt=true`,
+  - `translate_limit=60`.
+- ✅ Walidacja runtime (2026-02-14 06:10 UTC):
+  - `statusd_report.json`: `repair_queue.top=es:npc.json`, `count=2217`, `stagnation.detected=false`, `reason=window_too_short`, `span_h=5.915`,
+  - `statusd_daily_report.md`: `top_target_drop_24h=3451`.
+- ⬜ Follow-up:
+  - po pełnym oknie >=6h dostroić `STATUSD_REPAIR_QUEUE_STAGNATION_*`,
+  - potwierdzić trend `suspicious_high` po przełączeniu `quality_repair` na GT.
 
 ### Update wykonania (2026-02-13 22:23 UTC) — kolejność startu języków
 
@@ -504,4 +524,4 @@ Prace startowe koncentrujemy najpierw na trybie tłumaczeń. Etap uznajemy za op
 - ✅ Faza 7: Operacyjne utrwalenie — `docs/I18N_RUNBOOK.md`: start/stop, komendy, profile, monitoring, troubleshooting, rollback, checklista poranna + po deploy.
 - ✅ 12.5 follow-up: kolejka naprawcza `identical_to_en` translatable w istniejących plikach (artefakty queue + report).
 - ✅ identical_to_en repair: `_is_game_nontranslatable()` (fikcyjny język gry, animal sounds), `repair_identical_bonus_round()` (200 kluczy co 3 cykle).
-- ⬜ Nowy follow-up 12.5: dodać telemetryczny alert stagnacji kolejki repair + KPI trendu spadku backlogu.
+- ✅ Nowy follow-up 12.5: telemetryczny alert stagnacji kolejki repair + KPI trendu spadku backlogu — DONE: integracja w `aggregate_telemetry`/`run_status_doctor`/`run_webhook_alerting` + sekcja `Repair Queue 24h` w `statusd_daily_report.json/md`.

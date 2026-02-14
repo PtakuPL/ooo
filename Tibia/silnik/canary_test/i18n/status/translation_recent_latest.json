@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-13T22:40:26.415328Z",
-  "language": "pt",
-  "json_file": "monsters.json",
+  "timestamp": "2026-02-14T06:09:16.678296Z",
+  "language": "tr",
+  "json_file": "server.json",
   "translated": 80,
   "entries": [
     {
-      "key": "monster.valkyrie.name",
-      "en": "Valkyrie",
-      "translated": "Valquíria",
-      "source": "google_translate"
+      "key": "data.otservbr.global.npc.captain.seagull.L107.1471",
+      "en": "Good bye.",
+      "translated": "Hoşça kal.",
+      "source": "simple"
     },
     {
-      "key": "monster.valkyrie.desc",
-      "en": "a valkyrie",
-      "translated": "uma valquíria",
-      "source": "google_translate"
+      "key": "data.otservbr.global.npc.captain.seahorse.L87.1620",
+      "en": "Good bye. Recommend us if you were satisfied with our service.",
+      "translated": "Hoşça kal. Hizmetimizden memnun kaldıysan bizi tavsiye et.",
+      "source": "simple"
     },
     {
-      "key": "monster.assassin.name",
-      "en": "Assassin",
-      "translated": "Assassino",
-      "source": "google_translate"
+      "key": "data.otservbr.global.npc.captain.seahorse.L88.1621",
+      "en": "Good bye then.",
+      "translated": "O zaman hoşça kal.",
+      "source": "simple"
     },
     {
-      "key": "monster.assassin.desc",
-      "en": "an assassin",
-      "translated": "um assassino",
-      "source": "google_translate"
+      "key": "data.otservbr.global.npc.captain.sinbeard.L100.751",
+      "en": "Good bye then.",
+      "translated": "O zaman hoşça kal.",
+      "source": "simple"
     },
     {
-      "key": "monster.training_machine.name",
-      "en": "Training Machine",
-      "translated": "Máquina de treinamento",
-      "source": "google_translate"
+      "key": "data.otservbr.global.npc.captain.sinbeard.L99.750",
+      "en": "Good bye. Recommend us if you were satisfied with our service.",
+      "translated": "Hoşça kal. Hizmetimizden memnun kaldıysan bizi tavsiye et.",
+      "source": "simple"
     },
     {
-      "key": "monster.training_machine.desc",
-      "en": "a training machine",
-      "translated": "uma máquina de treinamento",
-      "source": "google_translate"
+      "key": "data.otservbr.global.npc.captain.waverider.L98.708",
+      "en": "Good bye.",
+      "translated": "Hoşça kal.",
+      "source": "simple"
     },
     {
-      "key": "monster.juggernaut.name",
-      "en": "Juggernaut",
-      "translated": "Juggernaut",
-      "source": "google_translate"
+      "key": "data.otservbr.global.npc.captain.waverider.L99.709",
+      "en": "Oh well.",
+      "translated": "Neyse.",
+      "source": "simple"
     },
     {
-      "key": "monster.juggernaut.desc",
-      "en": "a juggernaut",
-      "translated": "um rolo compressor",
-      "source": "google_translate"
+      "key": "data.otservbr.global.npc.captain.waverider.island.L62.1026",
+      "en": "Good bye.",
+      "translated": "Hoşça kal.",
+      "source": "simple"
     },
     {
-      "key": "monster.demon.name",
-      "en": "Demon",
-      "translated": "Demônio",
-      "source": "google_translate"
+      "key": "data.otservbr.global.npc.captain.waverider.island.L63.1027",
+      "en": "Oh well.",
+      "translated": "Neyse.",
+      "source": "simple"
     },
     {
-      "key": "monster.demon.desc",
-      "en": "a demon",
-      "translated": "um demônio",
-      "source": "google_translate"
+      "key": "data.otservbr.global.npc.carlos.L242.1100",
+      "en": "Good bye |PLAYERNAME|!.",
+      "translated": "Good bye |PLAYERNAME|!.",
+      "source": "simple"
     },
     {
-      "key": "monster.hellhound.name",
-      "en": "Hellhound",
-      "translated": "Cão infernal",
-      "source": "google_translate"
+      "key": "data.otservbr.global.npc.cassino.L251.350",
+      "en": "Good bye.",
+      "translated": "Hoşça kal.",
+      "source": "simple"
     },
     {
-      "key": "monster.hellhound.desc",
-      "en": "a hellhound",
-      "translated": "um cão infernal",
-      "source": "google_translate"
+      "key": "data.otservbr.global.npc.cassino.L252.351",
+      "en": "Good bye.",
+      "translated": "Hoşça kal.",
+      "source": "simple"
     },
     {
-      "key": "monster.destroyer.name",
-      "en": "Destroyer",
-      "translated": "Destruidor",
-      "source": "google_translate"
+      "key": "data.otservbr.global.npc.cedrik.L148.1392",
+      "en": "Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal} you for free.",
+      "translated": "Hoş geldin, genç |PLAYERNAME|! Ağır yaralı veya zehirlenmişsen seni ücretsiz {heal} edebilirim.",
+      "source": "simple"
     },
     {
-      "key": "monster.destroyer.desc",
-      "en": "a destroyer",
-      "translated": "um destruidor",
-      "source": "google_translate"
+      "key": "data.otservbr.global.npc.cedrik.L149.1393",
+      "en": "Remember: If you are heavily wounded or poisoned, I can heal you for free.",
+      "translated": "Unutma: Ağır yaralı veya zehirlenmişsen seni ücretsiz iyileştirebilirim.",
+      "source": "simple"
     },
     {
-      "key": "monster.hellspawn.name",
-      "en": "Hellspawn",
-      "translated": "Cria do Inferno",
-      "source": "google_translate"
+      "key": "data.otservbr.global.npc.cedrik.L150.1394",
+      "en": "May the gods bless you, |PLAYERNAME|!",
+      "translated": "Tanrılar seni korusun, |PLAYERNAME|!",
+      "source": "simple"
     },
     {
-      "key": "monster.hellspawn.desc",
-      "en": "a hellspawn",
-      "translated": "um infernal",
-      "source": "google_translate"
+      "key": "data.otservbr.global.npc.cerdras.L85.657",
+      "en": "Greetings my friend!",
+      "translated": "Greetings my friend!",
+      "source": "simple"
     },
     {
-      "key": "monster.fury.name",
-      "en": "Fury",
-      "translated": "Fúria",
-      "source": "google_translate"
+      "key": "data.otservbr.global.npc.charles.L143.1491",
+      "en": "Bye.",
+      "translated": "Güle güle.",
+      "source": "simple"
     },
     {
-      "key": "monster.fury.desc",
-      "en": "a fury",
-      "translated": "uma fúria",
-      "source": "google_translate"
+      "key": "data.otservbr.global.npc.charles.L144.1492",
+      "en": "Bye.",
+      "translated": "Güle güle.",
+      "source": "simple"
     },
     {
-      "key": "monster.tortoise.name",
-      "en": "Tortoise",
-      "translated": "Tartaruga",
-      "source": "google_translate"
+      "key": "data.otservbr.global.npc.charlotta.L86.902",
+      "en": "Good bye.",
+      "translated": "Hoşça kal.",
+      "source": "simple"
     },
     {
-      "key": "monster.tortoise.desc",
-      "en": "a tortoise",
-      "translated": "uma tartaruga",
-      "source": "google_translate"
+      "key": "data.otservbr.global.npc.charlotta.L87.903",
+      "en": "Oh well.",
+      "translated": "Neyse.",
+      "source": "simple"
     }
   ]
 }

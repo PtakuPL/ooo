@@ -2322,10 +2322,10 @@ strict_window_payload = {
 }
 
 strict_summary_md = (
-    f"okno={strict_window_payload['window_hours']}h | cycles={strict_total_cycles} | "
-    f"pending_skip={strict_window_payload['pending_skip_share_pct']}% | "
-    f"guard_fail={strict_window_payload['guard_fail_rate_pct']}% | "
-    f"throughput={strict_window_payload['throughput_keys_per_h']}/h"
+    f"okno={strict_window_payload['window_hours']}h | cykli={strict_total_cycles} | "
+    f"pominięte={strict_window_payload['pending_skip_share_pct']}% | "
+    f"odrzucone={strict_window_payload['guard_fail_rate_pct']}% | "
+    f"przepustowość={strict_window_payload['throughput_keys_per_h']}/h"
 )
 strict_sources_md = ", ".join([f"`{p}`" for p in strict_window_payload["sources"]])
 strict_top_targets_md = ", ".join(
@@ -2799,20 +2799,20 @@ sync_langs = set(sync_stats.keys()) if isinstance(sync_stats, dict) else set()
 known_langs = sorted(tm_langs | sync_langs | {"pl", "de", "es", "pt", "ru", "fr", "tr"})
 no_tm_langs = [lang for lang in known_langs if lang not in tm_langs]
 
-status_display = ("🟢 RUNNING" if str(last_mode).upper() != "IDLE" else "✅ IDLE")
+status_display = ("🟢 DZIAŁA" if str(last_mode).upper() != "IDLE" else "✅ BEZCZYNNY")
 if is_stale:
-    status_display = f"🟠 STALE (heartbeat {heartbeat_age}s temu)"
+    status_display = f"🟠 NIEAKTYWNY (heartbeat {heartbeat_age}s temu)"
 elif activity_present:
     act_phase = str(activity.get("phase") or "").upper()
     st = str(activity.get("status") or "running").lower()
     if st in ("interrupted", "stopped"):
-        status_display = "⛔ INTERRUPTED"
+        status_display = "⛔ ZATRZYMANY"
     elif st in ("error", "failed"):
-        status_display = "🔴 ERROR"
+        status_display = "🔴 BŁĄD"
     elif st in ("idle",) or act_phase == "IDLE":
-        status_display = "✅ IDLE"
+        status_display = "✅ BEZCZYNNY"
     else:
-        status_display = "🟢 RUNNING"
+        status_display = "🟢 DZIAŁA"
 
 # Per-cycle ops from i18n/status/ops.jsonl ("W tym cyklu" / historia).
 cycle_ops_md = "- Brak operacji"
@@ -2860,7 +2860,24 @@ try:
                 "mini_batch_stop": "mini-batch stop",
                 "migration_start": "start migracji",
                 "file": "plik",
-                "dispatch": "wybór",
+                "dispatch": "wybór zadania",
+                "heartbeat_tick": "sygnał życia",
+                "auto_start": "start tłumaczenia",
+                "auto_done": "tłumaczenie zakończone",
+                "parallel_start": "tłumaczenie równoległe: start",
+                "parallel_done": "tłumaczenie równoległe: zakończone",
+                "repair_identical_start": "naprawa kopii EN: start",
+                "repair_identical_done": "naprawa kopii EN: zakończone",
+                "sync_start": "synchronizacja: start",
+                "sync_done": "synchronizacja: zakończone",
+                "sync_file_done": "synchronizacja pliku",
+                "signal": "sygnał",
+                "stopping": "zatrzymywanie",
+                "scan_start": "skan: start",
+                "pre_migration_scan": "skan pre-migracji",
+                "quality_audit": "audyt jakości",
+                "translate_batch": "tłumaczenie paczki",
+                "blocked": "zablokowane",
             }
             return mapping.get(stg, stg)
 
@@ -2899,7 +2916,7 @@ active_scope = _scope_from_json(active_file) if active_file not in ("", "-") els
 active_lang_name = _lang_name(active_lang) if active_lang not in ("", "-") else "-"
 active_folder_display = f"{active_lang.upper()} - {active_lang_name} - {active_scope}" if active_lang not in ("", "-") else "-"
 recent_count = len(recent_translations)
-report_counter_md = f"- Guard reports: **{guard_total}**  \n- Blocker reports: **{blockers_total}**  \n- Widoczne raporty 'nie mogę tłumaczyć': **{cannot_translate_reports}**"
+report_counter_md = f"- Raporty strażnika jakości: **{guard_total}**  \n- Raporty blokad: **{blockers_total}**  \n- Widoczne raporty 'nie mogę przetłumaczyć': **{cannot_translate_reports}**"
 
 # ============ SECTION METADATA (P0.1 Spójny status) ============
 _now_utc = datetime.now(timezone.utc)
@@ -2908,8 +2925,8 @@ def _section_state(phase_list, current_phase):
     """Returns (state_label, reason) based on current worker mode."""
     current = str(current_phase or "").upper()
     if current in [p.upper() for p in phase_list]:
-        return ("🟢 ACTIVE", "")
-    return ("🔒 INACTIVE", f"worker w trybie {current}")
+        return ("🟢 AKTYWNY", "")
+    return ("🔒 NIEAKTYWNY", f"worker w trybie {current}")
 
 def _freshness_label(iso_or_ts):
     """Human-readable freshness from ISO timestamp or unix timestamp."""
@@ -2949,7 +2966,7 @@ def _section_hdr(name, state, reason, freshness, source, last_update):
 _current_phase = str(summary_phase if 'summary_phase' in dir() else last_mode or "").upper()
 
 # Section states
-sec_meta_state, sec_meta_reason = "🟢 ACTIVE", ""
+sec_meta_state, sec_meta_reason = "🟢 AKTYWNY", ""
 sec_live_state, sec_live_reason = _section_state(
     ["PRE_MIGRATION", "MIGRATION", "TRANSLATION_SYNC", "AUTO_TRANSLATE", "COMPACT_KEYS", "VALIDATION", "IDLE"],
     _current_phase
@@ -2961,7 +2978,7 @@ sec_translation_state, sec_translation_reason = _section_state(
     ["AUTO_TRANSLATE", "TRANSLATION_SYNC"], _current_phase
 )
 sec_quality_state, sec_quality_reason = _section_state(["VALIDATION"], _current_phase)
-sec_history_state, sec_history_reason = "🟢 ACTIVE", ""
+sec_history_state, sec_history_reason = "🟢 AKTYWNY", ""
 
 # Section sources + last_update
 meta_source = "update_github_status()"
@@ -3013,9 +3030,9 @@ history_section_hdr = _section_hdr("HISTORY", sec_history_state, sec_history_rea
 
 def _state_plain(state_label: str) -> str:
     label = str(state_label or "").upper()
-    if "INACTIVE" in label:
+    if "NIEAKTYWNY" in label or "INACTIVE" in label:
         return "inactive"
-    if "ACTIVE" in label:
+    if "AKTYWNY" in label or "ACTIVE" in label:
         return "active"
     return "unknown"
 
@@ -3163,10 +3180,423 @@ for row in translation_lang_overview:
     )
 scope_table = chr(10).join(scope_rows[:12])  # top 12 języków
 
+# ============ NOWE ZMIENNE DLA ROZBUDOWANEGO LIVE (B2, B3, B7, A9) ============
+
+# B2: Opis bieżącej pracy po polsku
+_work_description_map = {
+    "AUTO_TRANSLATE": "Tłumaczenie automatyczne (Google Translate + TM)",
+    "TRANSLATION_SYNC": "Synchronizacja kluczy EN → języki",
+    "PRE_MIGRATION": "Skan plików źródłowych (bez modyfikacji)",
+    "MIGRATION": "Migracja kodu (ZABLOKOWANA)",
+    "COMPACT_KEYS": "Kompaktowanie kluczy i18n",
+    "VALIDATION": "Walidacja jakości tłumaczeń",
+    "IDLE": "Bezczynny — oczekiwanie",
+}
+_current_phase_upper = str(summary_phase if 'summary_phase' in dir() else last_mode or "").upper()
+_work_description = _work_description_map.get(_current_phase_upper, f"Tryb: {_current_phase_upper}")
+
+# Dopisz sub-etap jeśli jest znany
+_current_stage = str(summary_stage if 'summary_stage' in dir() else "").lower()
+_stage_detail_map = {
+    "repair_identical_start": " → naprawianie kopii EN",
+    "repair_identical_done": " → naprawa kopii EN zakończona",
+    "parallel_start": " → tłumaczenie równoległe",
+    "parallel_done": " → tłumaczenie równoległe zakończone",
+    "translate_batch": " → tłumaczenie paczki",
+    "quality_audit": " → audyt jakości",
+    "auto_start": " → start",
+    "auto_done": " → zakończone",
+    "heartbeat_tick": "",
+    "dispatch": " → wybór zadania",
+}
+_stage_suffix = _stage_detail_map.get(_current_stage, f" → {_current_stage}" if _current_stage and _current_stage != "-" else "")
+_work_description += _stage_suffix
+
+# B3: Aktywne języki (z ostatnich 10 min)
+_active_langs_set = set()
+if activity_present and isinstance(activity.get("recent", []), list):
+    _ten_min_ago = (_now_utc - timedelta(minutes=10)).isoformat()
+    for _r in activity.get("recent", []):
+        _rt = str(_r.get("t", ""))
+        _rcat = str(_r.get("category", ""))
+        if _rt >= _ten_min_ago and _rcat and len(_rcat) <= 5 and _rcat.isalpha():
+            _active_langs_set.add(_rcat.upper())
+if summary_category and len(str(summary_category)) <= 5 and str(summary_category).isalpha():
+    _active_langs_set.add(str(summary_category).upper())
+_active_langs_display = ", ".join(sorted(_active_langs_set)) if _active_langs_set else "-"
+
+# A9: Polska nazwa etapu w podsumowaniu
+_nice_stage_map = {
+    "heartbeat_tick": "sygnał życia",
+    "auto_start": "start tłumaczenia",
+    "auto_done": "tłumaczenie zakończone",
+    "parallel_start": "tłumaczenie równoległe",
+    "parallel_done": "tłumaczenie równoległe zakończone",
+    "repair_identical_start": "naprawa kopii EN",
+    "repair_identical_done": "naprawa kopii EN zakończona",
+    "dispatch": "wybór zadania",
+    "signal": "sygnał",
+    "stopping": "zatrzymywanie",
+    "sync_start": "synchronizacja",
+    "sync_done": "synchronizacja zakończona",
+    "sync_file_done": "synchronizacja pliku",
+    "scan_start": "skan",
+    "quality_audit": "audyt jakości",
+    "translate_batch": "tłumaczenie paczki",
+    "blocked": "zablokowane",
+    "mini_batch_done": "mini-batch zakończony",
+    "category_done": "kategoria zakończona",
+}
+_nice_summary_stage = _nice_stage_map.get(str(summary_stage if 'summary_stage' in dir() else ""), str(summary_stage if 'summary_stage' in dir() else "-"))
+
+# B1: Postęp bieżącej pracy (z activity.json → progress.done / progress.total)
+_prog_done = int(prog.get("done", 0) or 0) if activity_present else 0
+_prog_total = int(prog.get("total", 0) or 0) if activity_present else 0
+_prog_unit = str(prog.get("unit", "keys") or "keys") if activity_present else "keys"
+if _prog_total > 0:
+    _prog_pct = round(_prog_done / _prog_total * 100, 1)
+    _bar_len = 20
+    _bar_filled = int(_prog_pct / 100 * _bar_len)
+    _bar = "█" * _bar_filled + "░" * (_bar_len - _bar_filled)
+    _progress_display = f"{_bar} {_prog_done}/{_prog_total} {_prog_unit} ({_prog_pct}%)"
+elif _prog_done > 0:
+    _progress_display = f"{_prog_done} {_prog_unit} (limit: brak)"
+else:
+    _progress_display = "-"
+
+# ============ C1: Języki ostatnia godzina (z strict_targets) ============
+_hourly_lang_stats = {}
+for _tkey, _tval in strict_targets.items():
+    _lang_part = _tkey.split("/")[0] if "/" in _tkey else _tkey
+    if _lang_part not in _hourly_lang_stats:
+        _hourly_lang_stats[_lang_part] = {"translated": 0, "guard_fail": 0, "files": 0}
+    _hourly_lang_stats[_lang_part]["translated"] += int(_tval.get("translated", 0))
+    _hourly_lang_stats[_lang_part]["guard_fail"] += int(_tval.get("guard_fail", 0))
+    _hourly_lang_stats[_lang_part]["files"] += 1
+
+_hourly_lang_sorted = sorted(
+    _hourly_lang_stats.items(),
+    key=lambda x: x[1]["translated"],
+    reverse=True,
+)[:15]
+
+if _hourly_lang_sorted:
+    _hourly_lang_rows = []
+    for _hl_lang, _hl_st in _hourly_lang_sorted:
+        _hl_total = _hl_st["translated"] + _hl_st["guard_fail"]
+        _hl_gf_pct = round(_hl_st["guard_fail"] / _hl_total * 100, 1) if _hl_total > 0 else 0
+        _hourly_lang_rows.append(
+            f"| {_hl_lang.upper()} | {_hl_st['translated']:,} | {_hl_st['guard_fail']} | {_hl_gf_pct}% | {_hl_st['files']} |"
+        )
+    _hourly_lang_table = chr(10).join(_hourly_lang_rows)
+else:
+    _hourly_lang_table = "| - | - | - | - | - |"
+
+# ============ C2: Historia per język 24h (z global overview) ============
+_daily_lang_rows = []
+if isinstance(translation_lang_overview, list) and translation_lang_overview:
+    for _dl_row in translation_lang_overview[:20]:
+        if not isinstance(_dl_row, dict):
+            continue
+        _dl_lang = str(_dl_row.get("lang", "-"))
+        _dl_cov = round(float(_dl_row.get("completion_pct", 0)), 2)
+        _dl_trans = int(_dl_row.get("translated_keys", 0))
+        _dl_total = int(_dl_row.get("total_reference_keys", total_keys))
+        _dl_encopy = int(_dl_row.get("english_copy_keys", 0))
+        _daily_lang_rows.append(
+            f"| {_dl_lang.upper()} | {_dl_trans:,} | {_dl_total:,} | {_dl_cov}% | {_dl_encopy:,} |"
+        )
+
+if _daily_lang_rows:
+    _daily_lang_table = chr(10).join(_daily_lang_rows[:20])
+else:
+    _daily_lang_table = "| - | - | - | - | - |"
+
+# ============ D1: Dane do sekcji "Ta godzina" ============
+_hourly_total_trans = strict_translated
+_hourly_total_gf = strict_guard_fail
+_hourly_cycles = strict_total_cycles
+_hourly_langs_count = len(_hourly_lang_stats)
+_hourly_best_lang = _hourly_lang_sorted[0][0].upper() if _hourly_lang_sorted else "-"
+_hourly_best_lang_trans = _hourly_lang_sorted[0][1]["translated"] if _hourly_lang_sorted else 0
+# Dominujący etap pracy (z ops)
+_hourly_stages = {}
+for _row in strict_guard_entries:
+    _st = str(_row.get("json_file", "-"))
+    _hourly_stages[_st] = _hourly_stages.get(_st, 0) + 1
+_hourly_top_file = max(_hourly_stages, key=_hourly_stages.get) if _hourly_stages else "-"
+# Tempo vs podsumowanie
+_hourly_throughput = round(strict_throughput)
+_hourly_gf_rate = round(strict_guard_fail_rate * 100, 1)
+_hourly_suspicious = len(strict_susp_entries)
+
+# ============ E1-E4: ETA + paski postępu per język ============
+_eta_rows = []
+_target_coverage = 0.95  # 95%
+_keys_per_hour = strict_throughput if strict_throughput > 0 else 1.0
+
+if isinstance(translation_lang_overview, list) and translation_lang_overview:
+    for _el_row in translation_lang_overview[:25]:
+        if not isinstance(_el_row, dict):
+            continue
+        _el_lang = str(_el_row.get("lang", "-"))
+        _el_cov = float(_el_row.get("completion_pct", 0))
+        _el_trans = int(_el_row.get("translated_keys", 0))
+        _el_total = int(_el_row.get("total_reference_keys", total_keys))
+        _el_needed = max(0, int(_el_total * _target_coverage) - _el_trans)
+        # ETA
+        if _el_needed > 0 and _keys_per_hour > 0:
+            _el_eta_h = _el_needed / _keys_per_hour
+            if _el_eta_h >= 48:
+                _el_eta_str = f"~{_el_eta_h / 24:.0f}d"
+            else:
+                _el_eta_str = f"~{_el_eta_h:.0f}h"
+        elif _el_needed <= 0:
+            _el_eta_str = "✅ gotowe"
+        else:
+            _el_eta_str = "?"
+        # Pasek postępu ASCII
+        _bar_w = 20
+        _bar_pct = min(_el_cov / 100, 1.0)
+        _bar_fill = int(_bar_pct * _bar_w)
+        _bar_str = "█" * _bar_fill + "░" * (_bar_w - _bar_fill)
+        _eta_rows.append(
+            f"| {_el_lang.upper()} | {_bar_str} | {_el_cov:.1f}% | {_el_trans:,}/{_el_total:,} | {_el_eta_str} |"
+        )
+
+if _eta_rows:
+    _eta_table = chr(10).join(_eta_rows)
+else:
+    _eta_table = "| - | - | - | - | - |"
+
+# E2: ETA globalne
+_global_remaining = 0
+if isinstance(translation_lang_overview, list):
+    for _gl_row in translation_lang_overview:
+        if isinstance(_gl_row, dict):
+            _gl_trans = int(_gl_row.get("translated_keys", 0))
+            _gl_total = int(_gl_row.get("total_reference_keys", total_keys))
+            _gl_need = max(0, int(_gl_total * _target_coverage) - _gl_trans)
+            _global_remaining += _gl_need
+if _keys_per_hour > 0 and _global_remaining > 0:
+    _global_eta_h = _global_remaining / _keys_per_hour
+    _global_eta_display = f"~{_global_eta_h / 24:.0f} dni ({_global_remaining:,} kluczy do celu 95%)"
+elif _global_remaining <= 0:
+    _global_eta_display = "✅ Cel 95% osiągnięty!"
+else:
+    _global_eta_display = "brak danych tempa"
+
+# ============ G2: Problemy i uwagi ============
+_problems_list = []
+# Z quality_dashboard — języki z niskim quality_score
+if quality_dashboard and isinstance(quality_dashboard, dict):
+    for _ql, _qr in quality_dashboard.items():
+        if isinstance(_qr, dict):
+            _qscore = float(_qr.get("quality_score", 100) or 100)
+            _qissues = int(_qr.get("issues_count", 0) or 0)
+            if _qscore < 90 or _qissues > 10:
+                _problems_list.append(f"⚠️ **{_ql.upper()}**: jakość {_qscore:.0f}%, {_qissues} problemów")
+
+# Z strict_hourly — wysoki guard fail rate per język
+for _hl, _hs in _hourly_lang_stats.items():
+    _hl_tot = _hs["translated"] + _hs["guard_fail"]
+    if _hl_tot > 5 and _hs["guard_fail"] / _hl_tot > 0.3:
+        _problems_list.append(f"🛡️ **{_hl.upper()}**: wysoki GF rate ({round(_hs['guard_fail']/_hl_tot*100)}%) w ostatniej godzinie")
+
+# Jeśli throughput = 0
+if _hourly_throughput == 0 and _hourly_cycles > 0:
+    _problems_list.append("⚡ Brak postępu tłumaczeń w ostatniej godzinie")
+
+# Podejrzane tłumaczenia
+if _hourly_suspicious > 5:
+    _problems_list.append(f"🔍 {_hourly_suspicious} podejrzanych tłumaczeń w ostatniej godzinie")
+
+if _problems_list:
+    _problems_md = chr(10).join(_problems_list[:10])
+else:
+    _problems_md = "✅ Brak problemów."
+
+# ============ G3: Ostatnie komendy ============
+_commands_md = "- Brak dostępnych komend."
+try:
+    _cmd_file = os.path.join(WORK_DIR, ".github", "worker_commands.txt")
+    if os.path.exists(_cmd_file):
+        with open(_cmd_file, "r") as _cf:
+            _cmd_lines = _cf.readlines()
+        # Pokaż ostatnie 5 zakomentowanych (wykonanych) komend
+        _done_cmds = [l.strip() for l in reversed(_cmd_lines) if l.strip().startswith("#") and "DONE" in l.upper()][:5]
+        if _done_cmds:
+            _commands_md = chr(10).join([f"- `{c}`" for c in _done_cmds])
+except Exception:
+    pass
+
+# ============ G4: Zdrowie systemu ============
+_health_rows = []
+# Worker status
+_health_rows.append(f"| Worker | {status_display} | Cykl #{cycle_count} |")
+# Heartbeat
+_hb_age = "-"
+if heartbeat_iso and heartbeat_iso != "-":
+    try:
+        _hb_dt = datetime.fromisoformat(str(heartbeat_iso).replace("Z", "+00:00"))
+        _hb_delta = (_now_utc - _hb_dt).total_seconds()
+        _hb_age = f"{int(_hb_delta)}s temu"
+    except Exception:
+        _hb_age = str(heartbeat_iso)
+_health_rows.append(f"| Heartbeat | {_hb_age} | {str(heartbeat_iso or '-')} |")
+# Uptime (from state file)
+_uptime_str = "-"
+try:
+    _state_path = os.path.join(status_dir, "worker_state.json")
+    if os.path.exists(_state_path):
+        with open(_state_path, "r") as _sf:
+            _state_data = json.load(_sf)
+        _start_ts = _state_data.get("start_time", "")
+        if _start_ts:
+            _start_dt = datetime.fromisoformat(str(_start_ts).replace("Z", "+00:00"))
+            _uptime_sec = (_now_utc - _start_dt).total_seconds()
+            _uptime_h = int(_uptime_sec // 3600)
+            _uptime_m = int((_uptime_sec % 3600) // 60)
+            _uptime_str = f"{_uptime_h}h {_uptime_m}m"
+except Exception:
+    pass
+_health_rows.append(f"| Uptime | {_uptime_str} | od startu workera |")
+_health_table = chr(10).join(_health_rows)
+
+# ============ D2: Rozszerzone "Dziś" (z daily/*.json) ============
+_today_str = _now_utc.strftime("%Y-%m-%d")
+_today_data = {}
+_yesterday_data = {}
+try:
+    _today_path = os.path.join(status_dir, "daily", f"{_today_str}.json")
+    if os.path.exists(_today_path):
+        with open(_today_path, "r") as f:
+            _today_data = json.load(f)
+except Exception:
+    pass
+try:
+    _yesterday_str = (_now_utc - timedelta(days=1)).strftime("%Y-%m-%d")
+    _yest_path = os.path.join(status_dir, "daily", f"{_yesterday_str}.json")
+    if os.path.exists(_yest_path):
+        with open(_yest_path, "r") as f:
+            _yesterday_data = json.load(f)
+except Exception:
+    pass
+
+_daily_cycles = int(_today_data.get("cycles", 0) or 0)
+_daily_errors = int((_today_data.get("errors", {}) or {}).get("count", 0) or 0)
+_daily_at = (_today_data.get("work", {}) or {}).get("auto_translate", {}) or {}
+_daily_langs = _daily_at.get("langs", {}) or {}
+_daily_total_trans = sum(int((v.get("translated", 0) if isinstance(v, dict) else 0) or 0) for v in _daily_langs.values())
+_daily_total_skipped = sum(int((v.get("skipped", 0) if isinstance(v, dict) else 0) or 0) for v in _daily_langs.values())
+_daily_active_count = len([l for l, v in _daily_langs.items() if isinstance(v, dict) and int(v.get("translated", 0) or 0) > 0])
+_daily_top5 = sorted(
+    [(l, int(v.get("translated", 0) or 0)) for l, v in _daily_langs.items() if isinstance(v, dict)],
+    key=lambda x: x[1],
+    reverse=True,
+)[:5]
+_daily_top5_str = ", ".join([f"**{l.upper()}** ({t:,})" for l, t in _daily_top5]) if _daily_top5 else "-"
+
+# Porównanie z wczoraj
+_yest_at = (_yesterday_data.get("work", {}) or {}).get("auto_translate", {}) or {}
+_yest_langs = _yest_at.get("langs", {}) or {}
+_yest_total_trans = sum(int((v.get("translated", 0) if isinstance(v, dict) else 0) or 0) for v in _yest_langs.values())
+if _yest_total_trans > 0:
+    _daily_vs_yesterday_pct = round((_daily_total_trans / _yest_total_trans - 1) * 100, 1)
+    _daily_vs_yesterday = f"{'↑' if _daily_vs_yesterday_pct >= 0 else '↓'} {abs(_daily_vs_yesterday_pct)}% vs wczoraj ({_yest_total_trans:,})"
+else:
+    _daily_vs_yesterday = "brak danych z wczoraj"
+
+# ============ D3: "Ten tydzień" (z daily/*.json) ============
+_weekly_days_rows = []
+_weekly_total_trans = 0
+for _wi in range(6, -1, -1):
+    _wd = (_now_utc - timedelta(days=_wi)).strftime("%Y-%m-%d")
+    _week_path = os.path.join(status_dir, "daily", f"{_wd}.json")
+    _wd_trans = 0
+    _wd_cycles = 0
+    if os.path.exists(_week_path):
+        try:
+            with open(_week_path, "r") as f:
+                _wd_data = json.load(f)
+            _wd_at = (_wd_data.get("work", {}) or {}).get("auto_translate", {}) or {}
+            _wd_langs = _wd_at.get("langs", {}) or {}
+            _wd_trans = sum(int((v.get("translated", 0) if isinstance(v, dict) else 0) or 0) for v in _wd_langs.values())
+            _wd_cycles = int(_wd_data.get("cycles", 0) or 0)
+        except Exception:
+            pass
+    _weekly_total_trans += _wd_trans
+    # ASCII bar
+    _wd_bar_scale = 50  # max width
+    _wd_bar = "█" * max(1, min(_wd_bar_scale, int(_wd_trans / max(1, _daily_total_trans or 1) * _wd_bar_scale))) if _wd_trans > 0 else "░"
+    _weekly_days_rows.append(f"| {_wd} | {_wd_bar} | {_wd_trans:,} | {_wd_cycles} |")
+_weekly_days_table = chr(10).join(_weekly_days_rows)
+
+# ============ B4: Metoda tłumaczenia ============
+_method_display = "-"
+try:
+    _tgl_method = str(translation_guard_latest.get("method", "") or "")
+    _method_map = {
+        "gt": "Google Translate",
+        "tm": "Translation Memory",
+        "dict": "Słownik",
+        "simple": "Proste mapowanie",
+        "gt+tm": "Google Translate + TM fallback",
+    }
+    _method_display = _method_map.get(_tgl_method.lower(), _tgl_method or "-")
+    # Sprawdź czy GT jest włączony
+    _gt_enabled = os.environ.get("USE_GOOGLE_TRANSLATE", "false") == "true"
+    if _gt_enabled and _method_display == "-":
+        _method_display = "Google Translate + TM fallback"
+    elif not _gt_enabled and _method_display == "-":
+        _method_display = "Translation Memory (GT wyłączony)"
+except Exception:
+    pass
+
+# ============ B5: Statystyki bieżącego/ostatniego cyklu ============
+_cycle_stats_md = "-"
+try:
+    _perf_dur = int(perf_latest.get("duration_ms", 0) or 0)
+    _perf_mode = str(perf_latest.get("mode", "-") or "-")
+    _perf_events = perf_latest.get("events", {}) if isinstance(perf_latest.get("events"), dict) else {}
+    _perf_trans = int(_perf_events.get("translated", 0) or 0)
+    _perf_gf = int(_perf_events.get("guard_fail", 0) or 0)
+    _perf_dur_s = round(_perf_dur / 1000, 1) if _perf_dur > 0 else 0
+    _cycle_stats_md = f"{_perf_trans} kluczy, {_perf_gf} odrzuconych, {_perf_dur_s}s, tryb: {_perf_mode}"
+except Exception:
+    pass
+
+# ============ B7: Sub-taski z ops.jsonl (ostatnie 5 operacji) ============
+_recent_ops = []
+try:
+    _ops_path = os.path.join(status_dir, "ops.jsonl")
+    if os.path.exists(_ops_path):
+        with open(_ops_path, "r") as f:
+            _ops_lines = f.readlines()
+        for _ol in reversed(_ops_lines[-20:]):
+            try:
+                _op = json.loads(_ol.strip())
+                _op_stage = str(_op.get("stage", "-"))
+                _op_cat = str(_op.get("category", "-"))
+                _op_result = str(_op.get("result", "-"))
+                _op_nice = _nice_stage_map.get(_op_stage, _op_stage)
+                _recent_ops.append(f"→ {_op_nice} ({_op_cat.upper()}) [{_op_result}]")
+            except Exception:
+                continue
+            if len(_recent_ops) >= 5:
+                break
+except Exception:
+    pass
+_recent_ops_md = chr(10).join([f"- {o}" for o in _recent_ops]) if _recent_ops else "- brak operacji"
+
 # ==================== GENERUJ PEŁNY I18N_STATUS.md ====================
-md = f'''# 🌍 I18N Internationalization System - Live Dashboard
+md = f'''# 🌍 System Tłumaczeń I18N — Dashboard na żywo
 
 {targets_comment}
+
+## 📝 PODSUMOWANIE
+
+> Worker tłumaczy **{langs_count}** języków. Klucze EN: **{total_keys:,}**. Pokrycie globalne: **{global_completion_pct}%**. Tempo: **{strict_window_payload['throughput_keys_per_h']} kluczy/h**. Tłumaczeń netto: **{net_effective_translated:,}**.
 
 ## 🧭 META
 
@@ -3174,11 +3604,11 @@ md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 
 > **Aktualizacja:** {timestamp} UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** {langs_count} | **Klucze EN:** {total_keys}  
-> **LIVE:** Cykl #{cycle_count} | Status: {status_display} | Faza: {summary_phase} | Etap: {summary_stage} | Kategoria: {summary_category} | Plik: {summary_file} | ETA: {summary_eta} | Heartbeat: {str(heartbeat_iso or '-')}  
-> **Strict hourly (JSONL-only):** {strict_summary_md}  
-> **Net effective translated:** {net_effective_translated:,}
+> **LIVE:** Cykl #{cycle_count} | Status: {status_display} | Faza: {summary_phase} | Etap: {summary_stage} | Kategoria: {summary_category} | Plik: {summary_file} | Heartbeat: {str(heartbeat_iso or '-')}  
+> **Okno godzinowe:** {strict_summary_md}  
+> **Tłumaczeń netto:** {net_effective_translated:,}
 
-### 🧩 Status sekcji (P0.1)
+### 🧩 Status sekcji
 | Sekcja | Stan | Świeżość | Powód | Źródło | Ostatnia aktualizacja |
 |--------|------|----------|-------|--------|-----------------------|
 {sections_matrix_md}
@@ -3187,16 +3617,74 @@ md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 
 ---
 
-## 🔴 LIVE
+## 🔴 LIVE — Bieżąca praca
 
 {live_section_hdr}
 
-- **Faza:** `{summary_phase}`
-- **Etap:** `{summary_stage}`
-- **Kategoria:** `{summary_category}`
-- **Plik:** `{summary_file}`
-- **Status:** {status_display}
-- **Heartbeat:** `{str(heartbeat_iso or '-')}`
+| Metryka | Wartość |
+|---------|---------|
+| 🛠️ **Co robi** | {_work_description} |
+| 🌍 **Aktywne języki (10 min)** | {_active_langs_display} |
+| 📝 **Faza** | {summary_phase} |
+| 📋 **Etap** | {_nice_summary_stage} |
+| 📂 **Kategoria / Język** | {summary_category} |
+| 📄 **Plik** | {summary_file} |
+| 📊 **Status** | {status_display} |
+| 📈 **Postęp** | {_progress_display} |
+| 🔧 **Metoda** | {_method_display} |
+| 🔄 **Ostatni cykl** | {_cycle_stats_md} |
+| ❤️ **Heartbeat** | {str(heartbeat_iso or '-')} |
+
+**Ostatnie operacje:**
+{_recent_ops_md}
+
+---
+
+## ⏱️ Ta godzina
+
+| Metryka | Wartość |
+|---------|---------|
+| 📊 Przetłumaczono | **{_hourly_total_trans:,}** kluczy |
+| ❌ Odrzucone (guard) | {_hourly_total_gf} |
+| 🔁 Cykli | {_hourly_cycles} |
+| 🌍 Języków | {_hourly_langs_count} |
+| 🏆 Najaktywniejszy | {_hourly_best_lang} ({_hourly_best_lang_trans:,} kluczy) |
+| 📄 Najczęstszy plik | {_hourly_top_file} |
+| ⚡ Przepustowość | ~{_hourly_throughput} kluczy/h |
+| 🛡️ Guard fail rate | {_hourly_gf_rate}% |
+| ⚠️ Podejrzane | {_hourly_suspicious} |
+
+---
+
+## 🌍 Języki — ostatnia godzina
+
+| Język | Przetłumaczono | Odrzucone | GF% | Pliki |
+|-------|---------------|-----------|-----|-------|
+{_hourly_lang_table}
+
+> Źródło: `translation_guard_report.jsonl` (okno {strict_window_payload['window_hours']}h)
+
+---
+
+## 🗺️ Pokrycie per język (TOP 20)
+
+| Język | Przetłumaczono | Kluczy EN | Pokrycie | Kopie EN |
+|-------|---------------|-----------|----------|----------|
+{_daily_lang_table}
+
+> Źródło: `translation_global_overview.json`
+
+---
+
+## 📈 Postęp i ETA (cel: 95%)
+
+> **ETA globalne:** {_global_eta_display}
+
+| Język | Pasek | Pokrycie | Przetłumaczono | ETA do 95% |
+|-------|-------|----------|---------------|------------|
+{_eta_table}
+
+> Tempo obliczone na bazie ostatniej godziny: ~{_hourly_throughput} kluczy/h.
 
 ---
 
@@ -3248,7 +3736,7 @@ md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 
 ---
 
-## � PRE_MIGRATION (skan)
+## 🔍 PRE_MIGRATION — Skan plików źródłowych
 
 {migration_section_hdr}
 
@@ -3308,7 +3796,7 @@ md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 | ⏳ Do tłumaczenia | **{prepared_langs - translated_langs}** | - | wymagają dalszego uzupełnienia |
 
 ### 🎯 Pokrycie tłumaczeń per język (EN → LANG)
-| Język | Przetłumaczone | % poprawnie przetłumaczonych | EN-copy | Braki kluczy |
+| Język | Przetłumaczone | % poprawnie przetłumaczonych | Kopie EN | Braki kluczy |
 |-------|----------------|-------------------------------|---------|--------------|
 {translation_lang_table}
 
@@ -3320,13 +3808,13 @@ md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 ### 📝 Ostatnie 10-20 przetłumaczonych kluczy
 {recent_translation_md}
 
-### 🚫 Raporty "nie mogę przetłumaczyć"
+### 🚫 Raporty strażnika jakości
 {report_counter_md}
 
 ### 🌐 Globalne info wszystkich języków
-- **Global completion:** **{global_completion_pct}%** ({translation_global['translated_keys']:,}/{translation_global['total_reference_keys']:,})
-- **EN-copy łącznie:** **{translation_global['english_copy_keys']:,}**
-- **Braki kluczy łącznie:** **{translation_global['missing_keys']:,}**
+- **Pokrycie globalne:** **{global_completion_pct}%** ({translation_global['translated_keys']:,}/{translation_global['total_reference_keys']:,})
+- **Kopie EN (łącznie):** **{translation_global['english_copy_keys']:,}**
+- **Braki kluczy (łącznie):** **{translation_global['missing_keys']:,}**
 - **Brakujące pliki językowe:** **{translation_global['missing_files']:,}**
 - **Cache STATUSPY (per-lang):** **{cache_mode_label}** | hit **{cache_hits}**, miss **{cache_misses}**, hit-rate **{cache_hit_pct}%**
 - **Cache STATUSPY (per-file):** hit **{file_cache_hits}**, miss **{file_cache_misses}**, hit-rate **{file_cache_hit_pct}%**
@@ -3343,17 +3831,17 @@ md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 |-------|--------|----------|----------|------------|
 {scope_table}
 
-### ⏱️ Strict Hourly Window (JSONL-only)
+### ⏱️ Ścisłe okno godzinowe (JSONL-only)
 | Metryka | Wartość |
 |---------|---------|
 | Okno | **{strict_window_payload['window_hours']}h** ({strict_window_payload['window_start_utc']} → {strict_window_payload['window_end_utc']}) |
-| Cykle | **{strict_window_payload['total_cycles']}** (AUTO={strict_window_payload['auto_translate_cycles']}, MIGRATION={strict_window_payload['migration_cycles']}) |
-| Pending skip | **{strict_window_payload['pending_skip_count']}** (all={strict_window_payload['pending_skip_share_pct']}%, migration={strict_window_payload['pending_skip_share_migration_pct']}%) |
-| Guard fail rate | **{strict_window_payload['guard_fail_rate_pct']}%** |
-| No progress rate | **{strict_window_payload['no_progress_rate_pct']}%** |
-| Throughput | **{strict_window_payload['throughput_keys_per_h']} kluczy/h** |
-| Suspicious | **{strict_window_payload['suspicious_total']}** |
-| Top guard_fail targets | {strict_top_targets_md} |
+| Cykle | **{strict_window_payload['total_cycles']}** (TŁUMACZENIE={strict_window_payload['auto_translate_cycles']}, PRE_MIGRATION={strict_window_payload['migration_cycles']}) |
+| Pominięte (kat. nieaktywna) | **{strict_window_payload['pending_skip_count']}** (ogółem={strict_window_payload['pending_skip_share_pct']}%, migracja={strict_window_payload['pending_skip_share_migration_pct']}%) |
+| Odrzucone (strażnik jakości) % | **{strict_window_payload['guard_fail_rate_pct']}%** |
+| Cykle bez postępu % | **{strict_window_payload['no_progress_rate_pct']}%** |
+| Przepustowość (kluczy/h) | **{strict_window_payload['throughput_keys_per_h']} kluczy/h** |
+| Podejrzane tłumaczenia | **{strict_window_payload['suspicious_total']}** |
+| Najgorsze cele (strażnik) | {strict_top_targets_md} |
 | Źródła | {strict_sources_md} |
 | Plik | `i18n/status/strict_hourly_window_latest.json` |
 
@@ -3374,6 +3862,26 @@ md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 | 🤖 Kluczy z rejestru workera (efektywne) | **{total_keys_extracted_registry:,}** | raw + reconcile |
 | 🧾 Kluczy z rejestru workera (raw) | **{total_keys_extracted_registry_raw:,}** | historia runów workera |
 | ⚠️ Konfliktów | **0** | merge conflicts |
+
+---
+
+## ⚠️ Problemy i uwagi
+
+{_problems_md}
+
+---
+
+## 📜 Ostatnie komendy
+
+{_commands_md}
+
+---
+
+## 🏥 Zdrowie systemu
+
+| Komponent | Status | Szczegóły |
+|-----------|--------|-----------|
+{_health_table}
 
 ---
 
@@ -3475,17 +3983,17 @@ md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 
 ---
 
-## 📊 KPI Dashboard — Pilot Health (PL/ES)
+## 📊 Wskaźniki KPI — Zdrowie Pilotów (PL/ES)
 
-| Język | Coverage | Brakujące | EN-copy | Translated(200) | Guard fail | Entries |
+| Język | Pokrycie | Brakujące | Kopie EN | Przetłumaczone(200) | Odrzucone | Wpisy |
 |-------|----------|-----------|---------|-----------------|------------|---------|
 {kpi_table}
 
-| KPI | Wartość | Target | Status |
+| Wskaźnik | Wartość | Cel | Status |
 |-----|---------|--------|--------|
-| Net effective translated | **{net_effective_translated:,}** | — | 📊 |
-| Adaptive batch | {_adaptive_label} | gf <5% → increase | 📊 |
-| Throughput (last window) | {sum(d['translated_recent'] for d in kpi_data.values()):,} keys / {sum(d['entries'] for d in kpi_data.values())} entries | >50/h | 📊 |
+| Tłumaczeń netto | **{net_effective_translated:,}** | — | 📊 |
+| Adaptacyjna paczka | {_adaptive_label} | odrzucenia <5% → zwiększ | 📊 |
+| Przepustowość (okno) | {sum(d['translated_recent'] for d in kpi_data.values()):,} kluczy / {sum(d['entries'] for d in kpi_data.values())} wpisów | >50/h | 📊 |
 
 ---
 
@@ -3496,7 +4004,25 @@ md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 {cycle_ops_md}
 
 
-{daily_section}
+## 📅 Dziś ({_today_str})
+
+| Metryka | Wartość |
+|---------|---------|
+| ✅ Przetłumaczono | **{_daily_total_trans:,}** kluczy |
+| ⏭️ Pominięte | {_daily_total_skipped:,} |
+| 🔁 Cykli | {_daily_cycles} |
+| ❌ Błędów | {_daily_errors} |
+| 🌍 Aktywnych języków | {_daily_active_count} |
+| 🏆 TOP 5 | {_daily_top5_str} |
+| 📊 Porównanie | {_daily_vs_yesterday} |
+
+## 📆 Ten tydzień (7 dni)
+
+> Suma tygodnia: **{_weekly_total_trans:,}** kluczy
+
+| Dzień | Wykres | Przetłumaczono | Cykli |
+|-------|--------|---------------|-------|
+{_weekly_days_table}
 
 ---
 
@@ -3726,7 +4252,7 @@ md += f'''
 | System | Status | Info |
 |--------|--------|------|
 | Worker v1.1 | 🟢 RUNNING | Cykl #{cycle_count} |
-| Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
+| Guardian v2.0 | 🟢 AKTYWNY | Push co 2 min |
 
 ---
 
@@ -3999,6 +4525,31 @@ md += f'''
 ---
 
 *Wygenerowano automatycznie przez i18n_worker_simple.sh v1.1*
+
+---
+
+## 🏷️ Legenda
+
+| Symbol | Znaczenie |
+|--------|-----------|
+| 🟢 | Aktywny / OK |
+| 🔴 | Nieaktywny / błąd |
+| 🟡 | Uwaga / ostrzeżenie |
+| 🔒 | Sekcja wyłączona |
+| ✅ | Zakończone / gotowe |
+| ⚠️ | Wymaga uwagi |
+| ██░░ | Pasek postępu (wypełniony/pusty) |
+| **DZIAŁA** | Worker jest aktywny i przetwarza |
+| **BEZCZYNNY** | Worker czeka na następny cykl |
+| **NIEAKTYWNY** | Sekcja/moduł wyłączony |
+| **ZATRZYMANY** | Worker został zatrzymany sygnałem |
+| **Tier 1** | Języki priorytetowe: ES, PL, PT-BR, DE, FR |
+| **Tier 2** | Języki średnio-priorytetowe (10 języków) |
+| **Tier 3** | Pozostałe języki |
+| **GF%** | Guard Fail Rate — % odrzuconych tłumaczeń |
+| **Kopie EN** | Klucze z tłumaczeniem identycznym do EN |
+| **TM** | Translation Memory — pamięć tłumaczeń |
+| **GT** | Google Translate — tłumaczenie maszynowe |
 '''
 
 # Zapisz do git root (dla GitHub) + do lokalnego katalogu workera (dla podglądu w workspace)
@@ -10306,9 +10857,11 @@ auto_translate_keys() {
         _hb_interval=30
     fi
     _hb_pid=""
+    local _progress_tmp="${STATUS_DIR:-i18n/status}/auto_translate_progress.tmp"
+    rm -f "$_progress_tmp" "${_progress_tmp}.w" 2>/dev/null
     repair_identical_bonus_round "${CYCLE:-0}" "queue_only" >/dev/null 2>&1 || true
     if [ "$_hb_enabled" = "1" ] || [ "$_hb_enabled" = "true" ] || [ "$_hb_enabled" = "yes" ] || [ "$_hb_enabled" = "on" ]; then
-        status_update_activity "running" "${CYCLE:-0}" "AUTO_TRANSLATE" "heartbeat_tick" "$target_lang" "$json_file" "auto translate in progress" 0 0 "keys" 0
+        status_update_activity "running" "${CYCLE:-0}" "AUTO_TRANSLATE" "heartbeat_tick" "$target_lang" "$json_file" "auto translate in progress" 0 "$translate_limit" "keys" 0
         (
             trap 'exit 0' TERM INT
             _hb_elapsed=0
@@ -10320,7 +10873,12 @@ auto_translate_keys() {
                     continue
                 fi
                 _hb_elapsed=0
-                status_update_activity "running" "${CYCLE:-0}" "AUTO_TRANSLATE" "heartbeat_tick" "$target_lang" "$json_file" "auto translate in progress" 0 0 "keys" 0
+                # B1: Odczytaj bieżący postęp z pliku (pisanego przez Python)
+                local _hb_done=0 _hb_total="$translate_limit"
+                if [ -f "$_progress_tmp" ]; then
+                    read -r _hb_done _hb_total _ _ < "$_progress_tmp" 2>/dev/null || true
+                fi
+                status_update_activity "running" "${CYCLE:-0}" "AUTO_TRANSLATE" "heartbeat_tick" "$target_lang" "$json_file" "auto translate in progress" "${_hb_done:-0}" "${_hb_total:-$translate_limit}" "keys" 0
                 repair_identical_bonus_round "${CYCLE:-0}" "queue_only" >/dev/null 2>&1 || true
             done
         ) &
@@ -14148,10 +14706,23 @@ if operator_fast_mode and translate_limit > 0:
     else:
         print("⚡ FAST-LANE: brak szybkich kandydatów — fallback do pełnego skanu")
 
+# B1: Plik postępu w czasie rzeczywistym dla heartbeat
+_progress_file = os.path.join(status_dir, "auto_translate_progress.tmp")
+def _write_progress():
+    try:
+        with open(_progress_file + ".w", "w") as f:
+            f.write(f"{translated} {translate_limit} {guard_fail_count} {processed_keys}")
+        os.replace(_progress_file + ".w", _progress_file)
+    except Exception:
+        pass
+
 processed_keys = 0
 mid_batch_preempt = False
 for key, en_text in iter_items:
     processed_keys += 1
+    # Co 5 kluczy zapisz postęp do pliku (dla heartbeat)
+    if processed_keys % 5 == 0:
+        _write_progress()
     if command_file and (processed_keys % mid_batch_cmd_check_every == 0) and os.path.exists(command_file):
         mid_batch_preempt = True
         print(f"⚡ MID-BATCH PREEMPT: wykryto pending command po {processed_keys} kluczach ({command_file})")
@@ -15033,6 +15604,7 @@ else:
 print(f"__DONE_CONTRACT__ is_done={'1' if done_contract['is_done'] else '0'} coverage={coverage_pct} guard_placeholder={guard_placeholder} guard_pipe={guard_pipe} guard_command={guard_command}")
 
 print(f"__AUTO_PREEMPT__ active={'1' if mid_batch_preempt else '0'} processed_keys={processed_keys} check_every={mid_batch_cmd_check_every}")
+_write_progress()  # B1: Ostateczny zapis postępu
 print(f"__AUTO_RESULT__ translated={translated} placeholders={placeholders} guard_fail={guard_fail} guard_placeholder={guard_placeholder} guard_command={guard_command} guard_pipe={guard_pipe} guard_quality={guard_quality} skipped_missing_file={skipped_missing_file} skipped_missing_key={skipped_missing_key} skipped_not_placeholder={skipped_not_placeholder} suspicious_existing={suspicious_existing} suspicious_detected={suspicious_detected} suspicious_high={suspicious_high} suspicious_rejected={suspicious_rejected} sanitized_existing={sanitized_existing} gt_translated={gt_translated} gt_guard_fail={gt_guard_fail}")
 print(f"__QUALITY__ {json.dumps(quality_data, ensure_ascii=False)}")
 AUTOTRANSPY
@@ -15043,6 +15615,7 @@ AUTOTRANSPY
         kill "$_hb_pid" 2>/dev/null || true
         wait "$_hb_pid" 2>/dev/null || true
     fi
+    rm -f "$_progress_tmp" "${_progress_tmp}.w" 2>/dev/null
     repair_identical_bonus_round "${CYCLE:-0}" "queue_only" >/dev/null 2>&1 || true
 
     echo "$_at_out" >&2
@@ -20847,8 +21420,10 @@ entry = {
     "stage": stage,
     "command": cmd,
     "pending_age_s": pending_age_s,
+    "mid_cycle_command_pickup_s": pending_age_s,
     "roundtrip_s": roundtrip_s,
     "forced_command_pending_age_s": pending_age_s,
+    "forced_command_mid_cycle_pickup_s": pending_age_s,
     "forced_command_roundtrip_s": roundtrip_s,
     "mode_type": mode_type,
     "mode_cat": mode_cat,
@@ -22076,7 +22651,7 @@ PREMIGPY
                     fi
                     
                     # Automatyczne tłumaczenie BEZ interakcji!
-                    status_update_activity "running" "$CYCLE" "AUTO_TRANSLATE" "auto_start" "$MODE_CAT" "$MODE_COUNT" "auto translate" 0 0 "keys" 0
+                    status_update_activity "running" "$CYCLE" "AUTO_TRANSLATE" "auto_start" "$MODE_CAT" "$MODE_COUNT" "auto translate" 0 "${TRANSLATE_LIMIT:-0}" "keys" 0
                     read -r AT_TRANSLATED AT_PLACEHOLDERS AT_GUARD_FAIL AT_GUARD_PLACEHOLDER AT_GUARD_COMMAND AT_GUARD_PIPE AT_SKIPPED_MISSING_FILE AT_SKIPPED_MISSING_KEY AT_SKIPPED_NOT_PLACEHOLDER <<< "$(auto_translate_keys "$MODE_CAT" "$MODE_COUNT" "$MODE_EXTRA")"
                     AT_TRANSLATED=${AT_TRANSLATED:-0}
                     AT_PLACEHOLDERS=${AT_PLACEHOLDERS:-0}
@@ -22116,7 +22691,7 @@ PREMIGPY
                     status_log_op "$CYCLE" "AUTO_TRANSLATE" "AUTO_TRANSLATE_DONE" "$MODE_CAT" "$MODE_COUNT" "$AUTO_RESULT_STATUS" "$AUTO_DETAIL" "" "$AT_FILES_CHANGED" "" "$AT_TRANSLATED" "$AT_PLACEHOLDERS"
 
                     # LIVE: zakończ etap auto dla czytelnego dashboardu
-                    status_update_activity "running" "$CYCLE" "AUTO_TRANSLATE" "auto_done" "$MODE_CAT" "$MODE_COUNT" "translated=$AT_TRANSLATED guard_fail=$AT_GUARD_FAIL strict_missing_key=$AT_SKIPPED_MISSING_KEY strict_skipped_done=$AT_SKIPPED_NOT_PLACEHOLDER" "$AT_TRANSLATED" "$AT_TRANSLATED" "keys" 0
+                    status_update_activity "running" "$CYCLE" "AUTO_TRANSLATE" "auto_done" "$MODE_CAT" "$MODE_COUNT" "translated=$AT_TRANSLATED guard_fail=$AT_GUARD_FAIL strict_missing_key=$AT_SKIPPED_MISSING_KEY strict_skipped_done=$AT_SKIPPED_NOT_PLACEHOLDER" "$AT_TRANSLATED" "${TRANSLATE_LIMIT:-$AT_TRANSLATED}" "keys" 0
 
                     # Zapisz completed metric jak najbliżej końca realnej pracy AUTO,
                     # by nie tracić roundtrip przy restartach guardiana w post-processingu.

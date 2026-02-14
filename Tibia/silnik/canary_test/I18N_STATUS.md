@@ -5,23 +5,23 @@
 ## 🧭 META
 
 > **[META]** 🟢 ACTIVE  
-> Świeżość: teraz | Źródło: `update_github_status()` | Ostatnia aktualizacja: 2026-02-14 06:48:28
+> Świeżość: teraz | Źródło: `update_github_status()` | Ostatnia aktualizacja: 2026-02-14 06:50:36
 
-> **Aktualizacja:** 2026-02-14 06:48:28 UTC  
+> **Aktualizacja:** 2026-02-14 06:50:36 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 53586  
-> **LIVE:** Cykl #1 | Status: 🟢 RUNNING | Faza: AUTO_TRANSLATE | Etap: auto_start | Kategoria: lv | Plik: npc.json | ETA: 0 | Heartbeat: 2026-02-14T06:48:20Z  
-> **Strict hourly (JSONL-only):** okno=1.0h | cycles=56 | pending_skip=0.0% | guard_fail=4.2% | throughput=2340.1/h  
-> **Net effective translated:** 62,320
+> **LIVE:** Cykl #1 | Status: 🟢 RUNNING | Faza: AUTO_TRANSLATE | Etap: parallel_start | Kategoria: mk | Plik: npc.json | ETA: 0 | Heartbeat: 2026-02-14T06:50:00Z  
+> **Strict hourly (JSONL-only):** okno=1.0h | cycles=52 | pending_skip=0.0% | guard_fail=2.9% | throughput=2749.5/h  
+> **Net effective translated:** 62,480
 
 ### 🧩 Status sekcji (P0.1)
 | Sekcja | Stan | Świeżość | Powód | Źródło | Ostatnia aktualizacja |
 |--------|------|----------|-------|--------|-----------------------|
-| META | 🟢 ACTIVE | teraz | - | `update_github_status()` | 2026-02-14 06:48:28 |
-| LIVE | 🟢 ACTIVE | 9s temu | - | `activity.json / worker_state.json` | 2026-02-14T06:48:20Z |
-| MIGRATION | 🔒 INACTIVE | 11h temu | worker w trybie AUTO_TRANSLATE | `i18n_file_status.json` | 2026-02-14 06:48:28 |
-| TRANSLATION | 🟢 ACTIVE | 4min temu | - | `translation_guard_latest.json / translation_recent_latest.json` | 2026-02-14T06:43:53.129103Z |
-| QUALITY | 🔒 INACTIVE | 6min temu | worker w trybie AUTO_TRANSLATE | `quality_audit_latest.json` | 2026-02-14T06:41:30.893874Z |
-| HISTORY | 🟢 ACTIVE | teraz | - | `daily/*.json / ops.jsonl` | 2026-02-14 06:48:28 |
+| META | 🟢 ACTIVE | teraz | - | `update_github_status()` | 2026-02-14 06:50:36 |
+| LIVE | 🟢 ACTIVE | 37s temu | - | `activity.json / worker_state.json` | 2026-02-14T06:50:00Z |
+| MIGRATION | 🔒 INACTIVE | 11h temu | worker w trybie AUTO_TRANSLATE | `i18n_file_status.json` | 2026-02-14 06:50:36 |
+| TRANSLATION | 🟢 ACTIVE | 4s temu | - | `translation_guard_latest.json / translation_recent_latest.json` | 2026-02-14T06:50:32.945328Z |
+| QUALITY | 🔒 INACTIVE | 4s temu | worker w trybie AUTO_TRANSLATE | `quality_audit_latest.json` | 2026-02-14T06:50:33.339457Z |
+| HISTORY | 🟢 ACTIVE | teraz | - | `daily/*.json / ops.jsonl` | 2026-02-14 06:50:36 |
 
 > Artefakt machine-readable: `i18n/status/status_sections_latest.json`
 
@@ -30,14 +30,14 @@
 ## 🔴 LIVE
 
 > **[LIVE]** 🟢 ACTIVE  
-> Świeżość: 9s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T06:48:20Z
+> Świeżość: 37s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T06:50:00Z
 
 - **Faza:** `AUTO_TRANSLATE`
-- **Etap:** `auto_start`
-- **Kategoria:** `lv`
+- **Etap:** `parallel_start`
+- **Kategoria:** `mk`
 - **Plik:** `npc.json`
 - **Status:** 🟢 RUNNING
-- **Heartbeat:** `2026-02-14T06:48:20Z`
+- **Heartbeat:** `2026-02-14T06:50:00Z`
 
 ---
 
@@ -92,7 +92,7 @@
 ## 🛠️ MIGRATION
 
 > **[MIGRATION]** 🔒 INACTIVE (worker w trybie AUTO_TRANSLATE)  
-> Świeżość: 11h temu | Źródło: `i18n_file_status.json` | Ostatnia aktualizacja: 2026-02-14 06:48:28
+> Świeżość: 11h temu | Źródło: `i18n_file_status.json` | Ostatnia aktualizacja: 2026-02-14 06:50:36
 
 ### 📁 Pliki Projektu (pełny skan)
 | Metryka | Wartość | Procent | Info |
@@ -134,7 +134,7 @@
 ## 🌍 TRANSLATION
 
 > **[TRANSLATION]** 🟢 ACTIVE  
-> Świeżość: 4min temu | Źródło: `translation_guard_latest.json / translation_recent_latest.json` | Ostatnia aktualizacja: 2026-02-14T06:43:53.129103Z
+> Świeżość: 4s temu | Źródło: `translation_guard_latest.json / translation_recent_latest.json` | Ostatnia aktualizacja: 2026-02-14T06:50:32.945328Z
 
 | Metryka | Wartość | Procent | Info |
 |---------|---------|---------|------|
@@ -173,64 +173,64 @@
 - **Ostatnie klucze (10-20):** 20
 
 ### 📝 Ostatnie 10-20 przetłumaczonych kluczy
-- If another prince comes to kiss me, I'll kick his ass so bad that he'll need a s → 다른 왕자가 나에게 키스하러 온다면, 나는 그의 엉덩이를 너무 걷어차서 그가 도망가려면 가마가 필요할 것입니다. (npc.a_frog.stdmod_1)
-- If another prince comes to kiss me, I'll kick his ass so bad that he'll need a s → 다른 왕자가 나에게 키스하러 온다면, 나는 그의 엉덩이를 너무 걷어차서 그가 도망가려면 가마가 필요할 것입니다. (npc.a_frog.stdmod_2)
-- Don't even try to kiss me or I'll rondhouse kick you! → 나한테 키스하려고도 하지 마세요. 그렇지 않으면 제가 당신을 걷어차버릴 것입니다! (npc.a_frog.stdmod_3)
-- Talking frogs don't exist, idiot. It's your fucking imagination tricking you. An → 말하는 개구리는 존재하지 않아, 바보야. 당신을 속이는 것은 당신의 빌어먹을 상상입니다. 그리고 이제 당신의 상상력은 당신에게 떠나라고 명령합니 (npc.a_frog.stdmod_4)
-- Finally someone notices I'm a FROG. Congratulations, you're VERY observant... *s → 마침내 누군가 내가 개구리라는 것을 알아차렸습니다. 축하합니다. 관찰력이 대단하시네요... *한숨* (npc.a_frog.stdmod_5)
-- A quest? Yeah I got a quest! Go and tell King Tibianus his son tried to kiss me  → 퀘스트? 응, 퀘스트가 있어! 가서 티비아누스 왕의 아들이 나에게 다시 키스하려 했다고 전해주세요! (npc.a_frog.stdmod_6)
-- Pyrale? That idiot transformed me into an human once. But my wife came and kisse → 파이랄? 그 바보는 한때 나를 인간으로 변화시켰어요. 그런데 아내가 와서 뽀뽀를 해서 또 개구리가 됐어요. (npc.a_frog.stdmod_7)
-- Pyrale? That idiot transformed me into an human once. But my wife came and kisse → 파이랄? 그 바보는 한때 나를 인간으로 변화시켰어요. 그런데 아내가 와서 뽀뽀를 해서 또 개구리가 됐어요. (npc.a_frog.stdmod_8)
-- Hah! That idiot finally left. → 하! 그 바보는 결국 떠났다. (npc.a_frog.walkaway_msg_1)
-- Ah, I feel a mortal walks these ancient halls again. Pardon me, I barely notice  → 아, 필멸자가 다시 이 고대 홀을 거닐고 있는 것 같은 느낌이 듭니다. 죄송합니다. 거의 눈치 채지 못했습니다. 나는 내 생각에 너무 빠져 있습 (npc.a_ghostly_sage.greet_msg_1)
-- You will now be travelled out of here. Are you sure that you want to face that t → 이제 당신은 여기서 밖으로 여행하게 될 것입니다. 정말 그 순간이동을 마주하고 싶나요? (npc.a_ghostly_sage.stdmod_1)
-- Then stay here in these ghostly halls. → 그렇다면 여기 이 유령 같은 홀에 머물러 보세요. (npc.a_ghostly_sage.stdmod_2)
-- I can offer you a {teleport}. → {teleport}을(를) 제안해 드릴 수 있습니다. (npc.a_ghostly_sage.stdmod_3)
-- Dont mind me. → 신경쓰지 마세요. (npc.a_ghostly_sage.stdmod_4)
-- Alone ... so alone. So cold. → 혼자...너무 혼자. 너무 추워요. (npc.a_ghostly_woman.farewell_msg_1)
-- I feel you. I hear your thoughts. You are ... alive. → 나는 당신을 느낀다. 나는 당신의 생각을 듣습니다. 당신은... 살아있습니다. (npc.a_ghostly_woman.greet_msg_1)
-- Once I was a member of the order of the nightmare knights. Now I am but a shadow → 한때 나는 악몽의 기사단의 일원이었습니다. 이제 나는 이 차가운 홀을 걷는 그림자일 뿐입니다. (npc.a_ghostly_woman.stdmod_1)
-- The north has a puzzle to complete. → 북쪽에는 완성해야 할 퍼즐이 있습니다. (npc.a_ghostly_woman.stdmod_2)
-- Alone ... so alone. So cold. → 혼자...너무 혼자. 너무 추워요. (npc.a_ghostly_woman.voice_1)
-- Alone ... so alone. So cold. → 혼자...너무 혼자. 너무 추워요. (npc.a_ghostly_woman.walkaway_msg_1)
+- If another prince comes to kiss me, I'll kick his ass so bad that he'll need a s → Ако дојде друг принц да ме бакне, ќе му го клоцам газот толку лошо што ќе му тре (npc.a_frog.stdmod_1)
+- If another prince comes to kiss me, I'll kick his ass so bad that he'll need a s → Ако дојде друг принц да ме бакне, ќе му го клоцам газот толку лошо што ќе му тре (npc.a_frog.stdmod_2)
+- Don't even try to kiss me or I'll rondhouse kick you! → Не се ни обидувај да ме бакнеш или ќе те клоцам Рондхаус! (npc.a_frog.stdmod_3)
+- Talking frogs don't exist, idiot. It's your fucking imagination tricking you. An → Жабите што зборуваат не постојат, идиоту. Тоа е твојата ебана имагинација што те (npc.a_frog.stdmod_4)
+- Finally someone notices I'm a FROG. Congratulations, you're VERY observant... *s → Конечно некој забележа дека сум ЖАБА. Секоја чест, многу си внимателен... *возди (npc.a_frog.stdmod_5)
+- A quest? Yeah I got a quest! Go and tell King Tibianus his son tried to kiss me  → Потрага? Да, добив потрага! Оди и кажи му на кралот Тибијанус дека неговиот син  (npc.a_frog.stdmod_6)
+- Pyrale? That idiot transformed me into an human once. But my wife came and kisse → Пирале? Тој идиот еднаш ме трансформираше во човек. Но, мојата сопруга дојде и м (npc.a_frog.stdmod_7)
+- Pyrale? That idiot transformed me into an human once. But my wife came and kisse → Пирале? Тој идиот еднаш ме трансформираше во човек. Но, мојата сопруга дојде и м (npc.a_frog.stdmod_8)
+- Hah! That idiot finally left. → Хах! Тој идиот конечно си замина. (npc.a_frog.walkaway_msg_1)
+- Ah, I feel a mortal walks these ancient halls again. Pardon me, I barely notice  → Ах, чувствувам дека смртникот повторно ги шета овие древни сали. Извинете, едвај (npc.a_ghostly_sage.greet_msg_1)
+- You will now be travelled out of here. Are you sure that you want to face that t → Сега ќе ве отпатуваат одовде. Дали сте сигурни дека сакате да се соочите со тој  (npc.a_ghostly_sage.stdmod_1)
+- Then stay here in these ghostly halls. → Потоа останете овде во овие сенишни сали. (npc.a_ghostly_sage.stdmod_2)
+- I can offer you a {teleport}. → Можам да ви понудам {teleport}. (npc.a_ghostly_sage.stdmod_3)
+- Dont mind me. → Не ми пречи. (npc.a_ghostly_sage.stdmod_4)
+- Alone ... so alone. So cold. → Сам ... толку сам. Толку ладно. (npc.a_ghostly_woman.farewell_msg_1)
+- I feel you. I hear your thoughts. You are ... alive. → Те чувствувам. Ги слушам твоите мисли. Вие сте ... живи. (npc.a_ghostly_woman.greet_msg_1)
+- Once I was a member of the order of the nightmare knights. Now I am but a shadow → Еднаш бев член на редот на кошмарните витези. Сега сум само сенка која оди по ов (npc.a_ghostly_woman.stdmod_1)
+- The north has a puzzle to complete. → Северот има загатка што треба да ја заврши. (npc.a_ghostly_woman.stdmod_2)
+- Alone ... so alone. So cold. → Сам ... толку сам. Толку ладно. (npc.a_ghostly_woman.voice_1)
+- Alone ... so alone. So cold. → Сам ... толку сам. Толку ладно. (npc.a_ghostly_woman.walkaway_msg_1)
 
 ### 🚫 Raporty "nie mogę przetłumaczyć"
-- Guard reports: **1963**  
+- Guard reports: **1965**  
 - Blocker reports: **0**  
-- Widoczne raporty 'nie mogę tłumaczyć': **1913**
+- Widoczne raporty 'nie mogę tłumaczyć': **1915**
 
 ### 🌐 Globalne info wszystkich języków
-- **Global completion:** **20.97%** (584,338/2,786,472)
-- **EN-copy łącznie:** **1,334,199**
+- **Global completion:** **20.98%** (584,574/2,786,472)
+- **EN-copy łącznie:** **1,334,056**
 - **Braki kluczy łącznie:** **110,060**
 - **Brakujące pliki językowe:** **0**
-- **Cache STATUSPY (per-lang):** **mixed** | hit **50**, miss **2**, hit-rate **96.2%**
-- **Cache STATUSPY (per-file):** hit **1974**, miss **2**, hit-rate **99.9%**
+- **Cache STATUSPY (per-lang):** **mixed** | hit **49**, miss **3**, hit-rate **94.2%**
+- **Cache STATUSPY (per-file):** hit **1973**, miss **3**, hit-rate **99.8%**
 - **Profiler cyklu (ostatni):** -
 - **Osobny raport:** `i18n/status/translation_global_overview.json`
 
 ### ⏱️ Strict Hourly Window (JSONL-only)
 | Metryka | Wartość |
 |---------|---------|
-| Okno | **1.0h** (2026-02-14T05:48:29.112622Z → 2026-02-14T06:48:29.112622Z) |
-| Cykle | **56** (AUTO=56, MIGRATION=0) |
+| Okno | **1.0h** (2026-02-14T05:50:37.300110Z → 2026-02-14T06:50:37.300110Z) |
+| Cykle | **52** (AUTO=52, MIGRATION=0) |
 | Pending skip | **0** (all=0.0%, migration=0.0%) |
-| Guard fail rate | **4.2%** |
+| Guard fail rate | **2.9%** |
 | No progress rate | **0.0%** |
-| Throughput | **2340.1 kluczy/h** |
-| Suspicious | **844** |
-| Top guard_fail targets | ja/npc.json (gf=50), pl/otclient_modules.json (gf=29), pl/cpp.json (gf=16), es/html.json (gf=6), es/questlog.json (gf=0) |
+| Throughput | **2749.5 kluczy/h** |
+| Suspicious | **860** |
+| Top guard_fail targets | ja/npc.json (gf=50), pl/cpp.json (gf=16), es/html.json (gf=6), es/questlog.json (gf=0), de/monsters.json (gf=0) |
 | Źródła | `i18n/status/worker_cycle_perf.jsonl`, `i18n/status/translation_guard_report.jsonl`, `i18n/status/suspicious_log.jsonl` |
 | Plik | `i18n/status/strict_hourly_window_latest.json` |
 
 ## 🔬 QUALITY
 
 > **[QUALITY]** 🔒 INACTIVE (worker w trybie AUTO_TRANSLATE)  
-> Świeżość: 6min temu | Źródło: `quality_audit_latest.json` | Ostatnia aktualizacja: 2026-02-14T06:41:30.893874Z
+> Świeżość: 4s temu | Źródło: `quality_audit_latest.json` | Ostatnia aktualizacja: 2026-02-14T06:50:33.339457Z
 
-- **Ostatni audyt:** OK | 0 issue(s) / 100 entries | 2026-02-14T06:41:30.893874Z
-- **Top 5 typów problemów:** suspicious_rejected_critical=200, suspicious_log_high=155, suspicious_log_low=37, suspicious_log_medium=7, identical_to_en_exempt=2
-- **Języki o najsłabszej jakości:** es(60.1, issues=136040), pl(60.1, issues=106871), ar(62.5, issues=2666), it(66.0, issues=2695), fr(67.3, issues=2437)
+- **Ostatni audyt:** OK | 0 issue(s) / 100 entries | 2026-02-14T06:50:33.339457Z
+- **Top 5 typów problemów:** suspicious_rejected_critical=200, suspicious_log_high=160, suspicious_log_low=33, suspicious_log_medium=6, suspicious_log_critical=1
+- **Języki o najsłabszej jakości:** es(60.1, issues=136162), pl(60.1, issues=106978), ar(62.5, issues=2666), it(66.0, issues=2695), fr(67.3, issues=2437)
 - **Pliki:** `i18n/status/quality_audit_latest.json`, `i18n/status/quality_dashboard.json`, `i18n/status/quality_report.jsonl`
 
 ### 📈 Statystyki Pracy
@@ -269,7 +269,7 @@
 ## ✅ CHECKLIST - Plan Pracy
 
 > **Aktualna faza:** AUTO_TRANSLATE  
-> **Aktualna kategoria:** lv
+> **Aktualna kategoria:** mk
 
 
 ### 🔄 Faza 1: 🎮 Canary Server
@@ -337,33 +337,33 @@
 ## 🔴 LIVE: Szczegóły wykonania
 
 > **[LIVE]** 🟢 ACTIVE  
-> Świeżość: 9s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T06:48:20Z
+> Świeżość: 37s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T06:50:00Z
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │ 🔴 LIVE: Worker v2.0                          Cykl #     1 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
-│ Tryb:      🤖 AUTO_TRANSLATE (auto_start)            │
-│ Kategoria: 📁 LV                                     │
+│ Tryb:      🤖 AUTO_TRANSLATE (parallel_start)        │
+│ Kategoria: 📁 MK                                     │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status: running                                               │
 │ Plik: npc.json                                                │
 │ Postęp: 0/0 keys                                              │
-│ Info: auto translate                                          │
+│ Info: parallel auto translate                                 │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2026-02-14T06:48:20Z           │
+│ ❤️ Heartbeat: 2026-02-14T06:50:00Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 🧾 Ostatnie akcje (dla czytelności)
 
+- 2026-02-14 06:50:00 | AUTO_TRANSLATE:parallel_start | mk | ok | npc.json
+- 2026-02-14 06:49:12 | AUTO_TRANSLATE:auto_done | lv | ok | npc.json
 - 2026-02-14 06:48:20 | AUTO_TRANSLATE:auto_start | lv | ok | npc.json
 - 2026-02-14 06:47:45 | AUTO_TRANSLATE:auto_start | lt | ok | npc.json
 - 2026-02-14 06:47:09 | AUTO_TRANSLATE:auto_start | ko | ok | npc.json
 - 2026-02-14 06:43:01 | AUTO_TRANSLATE:parallel_start | kk | ok | npc.json
-- 2026-02-14 06:42:20 | AUTO_TRANSLATE:auto_done | ka | ok | npc.json
-- 2026-02-14 06:41:52 | AUTO_TRANSLATE:auto_start | ka | ok | npc.json
 
 ---
 
@@ -376,7 +376,7 @@
 
 | KPI | Wartość | Target | Status |
 |-----|---------|--------|--------|
-| Net effective translated | **62,320** | — | 📊 |
+| Net effective translated | **62,480** | — | 📊 |
 | Adaptive batch | batch=50, gf_rate=6.25%, reason=stable_fail_rate=6.2% | gf <5% → increase | 📊 |
 | Throughput (last window) | 1,298 keys / 42 entries | >50/h | 📊 |
 
@@ -385,8 +385,10 @@
 ## 📜 HISTORY
 
 > **[HISTORY]** 🟢 ACTIVE  
-> Świeżość: teraz | Źródło: `daily/*.json / ops.jsonl` | Ostatnia aktualizacja: 2026-02-14 06:48:28
+> Świeżość: teraz | Źródło: `daily/*.json / ops.jsonl` | Ostatnia aktualizacja: 2026-02-14 06:50:36
 
+- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [mk] → ok (translated+80, skipped+0) — parallel lang=mk file=npc.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [lv] → warn (files+1, translated+80, skipped+0) — lang=lv file=npc.json strict_skipped_done=1220
 - 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [ja] → ok (translated+30, skipped+0) — parallel lang=ja file=npc.json
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [id] → warn (files+1, translated+80, skipped+0) — lang=id file=npc.json strict_skipped_done=1225
 - 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [hr] → ok (translated+80, skipped+0) — parallel lang=hr file=npc.json
@@ -395,8 +397,6 @@
 - 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [bn] → ok (translated+80, skipped+0) — parallel lang=bn file=npc.json
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [bg] → warn (files+1, translated+80, skipped+0) — lang=bg file=npc.json strict_skipped_done=1221
 - 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [no] → ok (translated+80, skipped+0) — parallel lang=no file=npc.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [da] → warn (files+1, translated+80, skipped+0) — lang=da file=npc.json strict_skipped_done=1148
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [tr] → warn (files+1, translated+80, skipped+0) — lang=tr file=server.json strict_skipped_done=130
 
 
 
@@ -406,7 +406,7 @@
 - Cykle: **49**
 - MIGRATION: **+0** kluczy, **0** plików `.lua`
 - Kategorie dotknięte: -
-- Błędy: **241**
+- Błędy: **242**
 
 
 ---
@@ -717,7 +717,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2026-02-14 06:48:28  
+📅 Auto-updated by Worker v1.1 | Last: 2026-02-14 06:50:36  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

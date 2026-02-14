@@ -200,7 +200,16 @@ jobs:
           find app/build -name "build.ninja" -delete 2>/dev/null || true
           find app/build -name "rules.ninja" -delete 2>/dev/null || true
           chmod +x ./gradlew 2>/dev/null || true
-          ./gradlew assembleRelease --no-daemon --stacktrace --build-cache --warning-mode all
+          if ! ./gradlew assembleRelease --no-daemon --stacktrace --warning-mode all --rerun-tasks; then
+            echo "Gradle failed. Dumping Ninja diagnostics..."
+            find app/.cxx -type f -name "build.ninja" 2>/dev/null | while IFS= read -r f; do
+              echo "==== ${f} (around line 422) ===="
+              nl -ba "$f" | sed -n '410,440p' || true
+              echo "==== ${f} suspicious '$' tokens ===="
+              rg -n '\$[^ $:]' "$f" | head -n 80 || true
+            done
+            exit 1
+          fi
 
       - name: Find APK
         id: find-apk

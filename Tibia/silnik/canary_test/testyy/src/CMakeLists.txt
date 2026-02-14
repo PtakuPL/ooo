@@ -231,7 +231,7 @@ endif()
 # Client options
 add_definitions(-DCLIENT)
 add_definitions(${FRAMEWORK_DEFINITIONS})
-add_definitions(-D"VERSION=${VERSION}")
+target_compile_definitions(${PROJECT_NAME} PRIVATE "VERSION=${VERSION}")
 
 # === Build options ===
 # Use target_compile_definitions instead of add_definitions for string defines.
@@ -1152,18 +1152,49 @@ if(ANDROID)
     string(APPEND CMAKE_EXE_LINKER_FLAGS " -fuse-ld=lld")
   endif()
   # Ninja requires literal '$' to be escaped as '$$'. Some toolchains inject
-  # '$' into flags (e.g. $ORIGIN or generator expressions), which breaks the
-  # generated build.ninja. Sanitize known flag variables for Android+Ninja.
+  # '$' into config-specific flags (not only base CMAKE_*_FLAGS), which breaks
+  # generated build.ninja on Windows+Gradle Android builds.
   if(CMAKE_GENERATOR MATCHES "Ninja")
     foreach(_flag_var
         CMAKE_C_FLAGS
+        CMAKE_C_FLAGS_DEBUG
+        CMAKE_C_FLAGS_RELEASE
+        CMAKE_C_FLAGS_RELWITHDEBINFO
+        CMAKE_C_FLAGS_MINSIZEREL
         CMAKE_CXX_FLAGS
+        CMAKE_CXX_FLAGS_DEBUG
+        CMAKE_CXX_FLAGS_RELEASE
+        CMAKE_CXX_FLAGS_RELWITHDEBINFO
+        CMAKE_CXX_FLAGS_MINSIZEREL
+        CMAKE_ASM_FLAGS
+        CMAKE_ASM_FLAGS_DEBUG
+        CMAKE_ASM_FLAGS_RELEASE
+        CMAKE_ASM_FLAGS_RELWITHDEBINFO
+        CMAKE_ASM_FLAGS_MINSIZEREL
         CMAKE_EXE_LINKER_FLAGS
+        CMAKE_EXE_LINKER_FLAGS_DEBUG
+        CMAKE_EXE_LINKER_FLAGS_RELEASE
+        CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO
+        CMAKE_EXE_LINKER_FLAGS_MINSIZEREL
         CMAKE_SHARED_LINKER_FLAGS
-        CMAKE_MODULE_LINKER_FLAGS)
+        CMAKE_SHARED_LINKER_FLAGS_DEBUG
+        CMAKE_SHARED_LINKER_FLAGS_RELEASE
+        CMAKE_SHARED_LINKER_FLAGS_RELWITHDEBINFO
+        CMAKE_SHARED_LINKER_FLAGS_MINSIZEREL
+        CMAKE_MODULE_LINKER_FLAGS
+        CMAKE_MODULE_LINKER_FLAGS_DEBUG
+        CMAKE_MODULE_LINKER_FLAGS_RELEASE
+        CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO
+        CMAKE_MODULE_LINKER_FLAGS_MINSIZEREL
+        CMAKE_STATIC_LINKER_FLAGS
+        CMAKE_STATIC_LINKER_FLAGS_DEBUG
+        CMAKE_STATIC_LINKER_FLAGS_RELEASE
+        CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO
+        CMAKE_STATIC_LINKER_FLAGS_MINSIZEREL)
       if(DEFINED ${_flag_var} AND NOT "${${_flag_var}}" STREQUAL "")
         string(REPLACE "$" "$$" _flag_escaped "${${_flag_var}}")
         if(NOT _flag_escaped STREQUAL "${${_flag_var}}")
+          message(STATUS "Android/Ninja: escaped '$' in ${_flag_var}")
           set(${_flag_var} "${_flag_escaped}" CACHE STRING "" FORCE)
         endif()
       endif()

@@ -5,23 +5,23 @@
 ## 🧭 META
 
 > **[META]** 🟢 ACTIVE  
-> Świeżość: teraz | Źródło: `update_github_status()` | Ostatnia aktualizacja: 2026-02-14 12:28:53
+> Świeżość: teraz | Źródło: `update_github_status()` | Ostatnia aktualizacja: 2026-02-14 12:31:07
 
-> **Aktualizacja:** 2026-02-14 12:28:53 UTC  
+> **Aktualizacja:** 2026-02-14 12:31:07 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 53586  
-> **LIVE:** Cykl #1 | Status: 🟢 RUNNING | Faza: AUTO_TRANSLATE | Etap: heartbeat_tick | Kategoria: pl | Plik: client.json | ETA: 0 | Heartbeat: 2026-02-14T12:27:29Z  
-> **Strict hourly (JSONL-only):** okno=1.0h | cycles=59 | pending_skip=0.0% | guard_fail=16.4% | throughput=1404.5/h  
-> **Net effective translated:** 66,978
+> **LIVE:** Cykl #1 | Status: 🟢 RUNNING | Faza: AUTO_TRANSLATE | Etap: heartbeat_tick | Kategoria: pl | Plik: php.json | ETA: 0 | Heartbeat: 2026-02-14T12:30:59Z  
+> **Strict hourly (JSONL-only):** okno=1.0h | cycles=66 | pending_skip=0.0% | guard_fail=22.4% | throughput=1115.4/h  
+> **Net effective translated:** 66,996
 
 ### 🧩 Status sekcji (P0.1)
 | Sekcja | Stan | Świeżość | Powód | Źródło | Ostatnia aktualizacja |
 |--------|------|----------|-------|--------|-----------------------|
-| META | 🟢 ACTIVE | teraz | - | `update_github_status()` | 2026-02-14 12:28:53 |
-| LIVE | 🟢 ACTIVE | 1min temu | - | `activity.json / worker_state.json` | 2026-02-14T12:27:29Z |
-| MIGRATION | 🔒 INACTIVE | 8s temu | worker w trybie AUTO_TRANSLATE | `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | 2026-02-14 12:28:53 |
-| TRANSLATION | 🟢 ACTIVE | 2min temu | - | `translation_guard_latest.json / translation_recent_latest.json` | 2026-02-14T12:26:44.898917Z |
-| QUALITY | 🔒 INACTIVE | 2min temu | worker w trybie AUTO_TRANSLATE | `quality_audit_latest.json` | 2026-02-14T12:26:46.189324Z |
-| HISTORY | 🟢 ACTIVE | teraz | - | `daily/*.json / ops.jsonl` | 2026-02-14 12:28:53 |
+| META | 🟢 ACTIVE | teraz | - | `update_github_status()` | 2026-02-14 12:31:07 |
+| LIVE | 🟢 ACTIVE | 8s temu | - | `activity.json / worker_state.json` | 2026-02-14T12:30:59Z |
+| MIGRATION | 🔒 INACTIVE | 20s temu | worker w trybie AUTO_TRANSLATE | `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | 2026-02-14 12:31:07 |
+| TRANSLATION | 🟢 ACTIVE | 34s temu | - | `translation_guard_latest.json / translation_recent_latest.json` | 2026-02-14T12:30:32.832118Z |
+| QUALITY | 🔒 INACTIVE | 4min temu | worker w trybie AUTO_TRANSLATE | `quality_audit_latest.json` | 2026-02-14T12:26:46.189324Z |
+| HISTORY | 🟢 ACTIVE | teraz | - | `daily/*.json / ops.jsonl` | 2026-02-14 12:31:07 |
 
 > Artefakt machine-readable: `i18n/status/status_sections_latest.json`
 
@@ -30,14 +30,14 @@
 ## 🔴 LIVE
 
 > **[LIVE]** 🟢 ACTIVE  
-> Świeżość: 1min temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T12:27:29Z
+> Świeżość: 8s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T12:30:59Z
 
 - **Faza:** `AUTO_TRANSLATE`
 - **Etap:** `heartbeat_tick`
 - **Kategoria:** `pl`
-- **Plik:** `client.json`
+- **Plik:** `php.json`
 - **Status:** 🟢 RUNNING
-- **Heartbeat:** `2026-02-14T12:27:29Z`
+- **Heartbeat:** `2026-02-14T12:30:59Z`
 
 ---
 
@@ -92,7 +92,7 @@
 ## 🛠️ MIGRATION
 
 > **[MIGRATION]** 🔒 INACTIVE (worker w trybie AUTO_TRANSLATE)  
-> Świeżość: 8s temu | Źródło: `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | Ostatnia aktualizacja: 2026-02-14 12:28:53
+> Świeżość: 20s temu | Źródło: `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | Ostatnia aktualizacja: 2026-02-14 12:31:07
 
 ### 📁 Pliki Projektu (pełny skan)
 | Metryka | Wartość | Procent | Info |
@@ -141,7 +141,7 @@
 ## 🌍 TRANSLATION
 
 > **[TRANSLATION]** 🟢 ACTIVE  
-> Świeżość: 2min temu | Źródło: `translation_guard_latest.json / translation_recent_latest.json` | Ostatnia aktualizacja: 2026-02-14T12:26:44.898917Z
+> Świeżość: 34s temu | Źródło: `translation_guard_latest.json / translation_recent_latest.json` | Ostatnia aktualizacja: 2026-02-14T12:30:32.832118Z
 
 | Metryka | Wartość | Procent | Info |
 |---------|---------|---------|------|
@@ -154,7 +154,7 @@
 | Język | Przetłumaczone | % poprawnie przetłumaczonych | EN-copy | Braki kluczy |
 |-------|----------------|-------------------------------|---------|--------------|
 | ES (Hiszpański) | 39,155/53,586 | 73.07% | 2,765 | 0 |
-| PL (Polski) | 22,581/53,586 | 42.14% | 1,786 | 0 |
+| PL (Polski) | 22,584/53,586 | 42.15% | 1,794 | 0 |
 | FR (Francuski) | 17,710/53,586 | 33.05% | 4,264 | 0 |
 | RU (Rosyjski) | 17,572/53,586 | 32.79% | 3,979 | 0 |
 | RO (Rumuński) | 8,591/53,586 | 16.03% | 2,710 | 0 |
@@ -175,49 +175,36 @@
 | HY (HY) | 3,818/53,586 | 7.12% | 3,733 | 0 |
 
 ### 🧭 Aktywny folder tłumaczeń
-- **Folder:** CS - Czeski - Serwer
-- **Plik JSON:** quests.json
-- **Ostatnie klucze (10-20):** 20
+- **Folder:** LT - LT - Serwer
+- **Plik JSON:** npc.json
+- **Ostatnie klucze (10-20):** 11
 
 ### 📝 Ostatnie 10-20 przetłumaczonych kluczy
-- Nature's Embrace → Nature's Embrace (client.spells.text4)
-- Please select monster from monster list. → Please select Potwór from Potwór list. (client.tasks.text1)
-- Please select monster from monster list. → Please select Potwór from Potwór list. (client.tasks.text2)
-- Please select monster from monster list. → Please select Potwór from Potwór list. (client.tasks.text3)
-- 0 0 108 20 → 0 0 108 20 (client.uimessagebox.text1)
-- If you shut down the program, your character might stay in the game.
-Click on 'L → Jeśli zamkniesz program, Twoja postać może pozostać w grze.
-Kliknij 'Logout', ab (client.neededtranslations.text2)
-- Ctrl+Shift+T → Ctrl+Shift+T (client.topmenu.text2)
-- .. -- e = the optional → .. -- e = opcja (client.elementnode.text3)
-- List of items that you're able to buy → Lista przedmiotów, które możesz kupić (client.npctrade.text1)
-- List of items that you're able to sell → Lista przedmiotów, które możesz sprzedać (client.npctrade.text2)
-- Minor Charm echoes
-Earned by unlocking or upgrading major charm and promotion yo → Pomniejsze Urok odbija się echem
-Zdobyte poprzez odblokowanie lub ulepszenie głó (client.charms1410.text1)
-- Dodges an attack with a chance, avoiding all damage. → Z szansą unika ataku, unikając wszelkich obrażeń. (client.charms.text3)
-- images/icon-questionmark → obrazy/ikona-znak zapytania (client.bottommenu.text5)
-- HTTP.getJSON is not supported → HTTP.getJSON nie jest obsługiwany (client.http.text3)
-- HTTP.post is not supported → HTTP.post nie jest obsługiwany (client.http.text4)
-- HTTP.postJSON is not supported → HTTP.postJSON nie jest obsługiwany (client.http.text5)
-- List of items that you're able to buy → Lista przedmiotów, które możesz kupić (client.neededtranslations.text3)
-- List of items that you're able to sell → Lista przedmiotów, które możesz sprzedać (client.neededtranslations.text4)
-- Click here to carry out the selected imbuement. This will consume the required a → Kliknij tutaj aby przeprowadzić wybrane nasycenie. To pochłonie wymagane źródła  (client.imbuing.text4)
-- Remove completed quests // Automatically track new quests // Automatically untra → Usuń ukończone zadania // Automatycznie śledź nowe zadania // Automatycznie usuw (client.game_questlog.text1)
+- col-md-6 col-lg-6 → col-md-6 col-lg-6 (php.server_status.text2)
+- upload_max_filesize → upload_max_filesize (php.plugins.text2)
+- col-md-12 col-lg-6 → col-md-12 col-lg-6 (php.menus.text2)
+- navbar-nav ml-auto → navbar-nav ml-auto (php.template.text3)
+-  . BASE_URL . install → . BASE_URL . zainstalować (php.index.text1)
+- fas fa-eye-slash → fas fa-eye-slash (php.settings.text4)
+- qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM0123456789- → qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM0123456789- (php.validator.text5)
+- . FORUM_TABLE_PREFIX . → . FORUM_TABLE_PREFIX . (php.forum.text1)
+- 234567QWERTYUIOPASDFGHJKLZXCVBNM → 234567QWERTYUIOPASDFGHJKLZXCVBNM (php.rfc6238.text1)
+- btn btn-success btn-sm → btn btn-sukces btn-sm (php.players.text5)
+- btn btn-success btn-sm → btn btn-sukces btn-sm (php.accounts.text4)
 
 ### 🚫 Raporty "nie mogę przetłumaczyć"
-- Guard reports: **2067**  
+- Guard reports: **2069**  
 - Blocker reports: **0**  
-- Widoczne raporty 'nie mogę tłumaczyć': **2017**
+- Widoczne raporty 'nie mogę tłumaczyć': **2019**
 
 ### 🌐 Globalne info wszystkich języków
-- **Global completion:** **9.81%** (273,328/2,786,472)
-- **EN-copy łącznie:** **169,508**
+- **Global completion:** **9.81%** (273,331/2,786,472)
+- **EN-copy łącznie:** **169,499**
 - **Braki kluczy łącznie:** **2,155**
 - **Brakujące pliki językowe:** **0**
 - **Cache STATUSPY (per-lang):** **mixed** | hit **51**, miss **1**, hit-rate **98.1%**
 - **Cache STATUSPY (per-file):** hit **1975**, miss **1**, hit-rate **99.9%**
-- **Profiler cyklu (ostatni):** -
+- **Profiler cyklu (ostatni):** cykl #1 (AUTO_TRANSLATE): dispatch 501ms, mode 90926ms, status 4671ms, total 97372ms
 - **Osobny raport:** `i18n/status/translation_global_overview.json`
 
 ### 🖥️ Serwer vs 📦 Instalka (OTClient)
@@ -229,7 +216,7 @@ Zdobyte poprzez odblokowanie lub ulepszenie głó (client.charms1410.text1)
 | Język | Serwer | Serwer % | Instalka | Instalka % |
 |-------|--------|----------|----------|------------|
 | ES | 36,679/49,731 | 73.8% | 2,476/3,855 | 64.2% |
-| PL | 19,941/49,731 | 40.1% | 2,640/3,855 | 68.5% |
+| PL | 19,941/49,731 | 40.1% | 2,643/3,855 | 68.6% |
 | FR | 15,162/49,731 | 30.5% | 2,548/3,855 | 66.1% |
 | RU | 14,845/49,731 | 29.9% | 2,727/3,855 | 70.7% |
 | RO | 8,591/49,731 | 17.3% | 0/3,855 | 0.0% |
@@ -244,25 +231,25 @@ Zdobyte poprzez odblokowanie lub ulepszenie głó (client.charms1410.text1)
 ### ⏱️ Strict Hourly Window (JSONL-only)
 | Metryka | Wartość |
 |---------|---------|
-| Okno | **1.0h** (2026-02-14T11:28:53.971959Z → 2026-02-14T12:28:53.971959Z) |
-| Cykle | **59** (AUTO=59, MIGRATION=0) |
+| Okno | **1.0h** (2026-02-14T11:31:07.320975Z → 2026-02-14T12:31:07.320975Z) |
+| Cykle | **66** (AUTO=66, MIGRATION=0) |
 | Pending skip | **0** (all=0.0%, migration=0.0%) |
-| Guard fail rate | **16.4%** |
+| Guard fail rate | **22.4%** |
 | No progress rate | **0.0%** |
-| Throughput | **1404.5 kluczy/h** |
-| Suspicious | **186** |
-| Top guard_fail targets | lt/npc.json (gf=39), pl/quests.json (gf=34), pl/server.json (gf=28), pl/cpp.json (gf=14), es/scripts.json (gf=11) |
+| Throughput | **1115.4 kluczy/h** |
+| Suspicious | **242** |
+| Top guard_fail targets | lt/npc.json (gf=86), pl/quests.json (gf=34), pl/server.json (gf=28), pl/cpp.json (gf=14), es/scripts.json (gf=11) |
 | Źródła | `i18n/status/worker_cycle_perf.jsonl`, `i18n/status/translation_guard_report.jsonl`, `i18n/status/suspicious_log.jsonl` |
 | Plik | `i18n/status/strict_hourly_window_latest.json` |
 
 ## 🔬 QUALITY
 
 > **[QUALITY]** 🔒 INACTIVE (worker w trybie AUTO_TRANSLATE)  
-> Świeżość: 2min temu | Źródło: `quality_audit_latest.json` | Ostatnia aktualizacja: 2026-02-14T12:26:46.189324Z
+> Świeżość: 4min temu | Źródło: `quality_audit_latest.json` | Ostatnia aktualizacja: 2026-02-14T12:26:46.189324Z
 
 - **Ostatni audyt:** OK | 8 issue(s) / 100 entries | 2026-02-14T12:26:46.189324Z
 - **Top 5 typów problemów:** suspicious_log_low=100, suspicious_log_critical=38, suspicious_log_high=28, identical_to_en=7, identical_to_en_exempt=3
-- **Języki o najsłabszej jakości:** pl(60.4, issues=112004), es(64.1, issues=143386), tl(64.2, issues=466), zh_TW(64.8, issues=337), fr(65.2, issues=2470)
+- **Języki o najsłabszej jakości:** pl(60.5, issues=112004), es(64.1, issues=143386), tl(64.2, issues=466), zh_TW(64.8, issues=337), fr(65.2, issues=2470)
 - **Pliki:** `i18n/status/quality_audit_latest.json`, `i18n/status/quality_dashboard.json`, `i18n/status/quality_report.jsonl`
 
 ### 📈 Statystyki Pracy
@@ -371,7 +358,7 @@ Zdobyte poprzez odblokowanie lub ulepszenie głó (client.charms1410.text1)
 ## 🔴 LIVE: Szczegóły wykonania
 
 > **[LIVE]** 🟢 ACTIVE  
-> Świeżość: 1min temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T12:27:29Z
+> Świeżość: 8s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T12:30:59Z
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
@@ -382,22 +369,22 @@ Zdobyte poprzez odblokowanie lub ulepszenie głó (client.charms1410.text1)
 │ Kategoria: 📁 PL                                     │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status: running                                               │
-│ Plik: client.json                                             │
+│ Plik: php.json                                                │
 │ Postęp: 0/0 keys                                              │
 │ Info: auto translate in progress                              │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2026-02-14T12:27:29Z           │
+│ ❤️ Heartbeat: 2026-02-14T12:30:59Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 🧾 Ostatnie akcje (dla czytelności)
 
-- 2026-02-14 12:27:29 | AUTO_TRANSLATE:heartbeat_tick | pl | ok | client.json
-- 2026-02-14 12:27:29 | AUTO_TRANSLATE:auto_start | pl | ok | client.json
-- 2026-02-14 12:26:45 | AUTO_TRANSLATE:auto_done | pl | ok | cpp.json
-- 2026-02-14 12:25:14 | AUTO_TRANSLATE:heartbeat_tick | pl | ok | cpp.json
-- 2026-02-14 12:25:14 | AUTO_TRANSLATE:auto_start | pl | ok | cpp.json
-- 2026-02-14 12:23:59 | AUTO_TRANSLATE:heartbeat_tick | pl | ok | books.json
+- 2026-02-14 12:30:59 | AUTO_TRANSLATE:heartbeat_tick | pl | ok | php.json
+- 2026-02-14 12:30:58 | AUTO_TRANSLATE:auto_start | pl | ok | php.json
+- 2026-02-14 12:30:33 | AUTO_TRANSLATE:auto_done | lt | ok | npc.json
+- 2026-02-14 12:29:02 | AUTO_TRANSLATE:heartbeat_tick | lt | ok | npc.json
+- 2026-02-14 12:29:02 | AUTO_TRANSLATE:auto_start | lt | ok | npc.json
+- 2026-02-14 12:29:00 | AUTO_TRANSLATE:auto_done | pl | ok | client.json
 
 ---
 
@@ -405,22 +392,24 @@ Zdobyte poprzez odblokowanie lub ulepszenie głó (client.charms1410.text1)
 
 | Język | Coverage | Brakujące | EN-copy | Translated(200) | Guard fail | Entries |
 |-------|----------|-----------|---------|-----------------|------------|---------|
-| 🔴 PL | 42.1% | 0 | 1,786 | 1,242 | 512 (29.2%) | 41 |
-| 🟡 ES | 73.1% | 0 | 2,765 | 969 | 400 (29.2%) | 29 |
+| 🔴 PL | 42.1% | 0 | 1,794 | 1,231 | 481 (28.1%) | 41 |
+| 🟡 ES | 73.1% | 0 | 2,765 | 958 | 331 (25.7%) | 28 |
 
 | KPI | Wartość | Target | Status |
 |-----|---------|--------|--------|
-| Net effective translated | **66,978** | — | 📊 |
-| Adaptive batch | batch=5, gf_rate=19.97%, reason=stable_fail_rate=20.0% | gf <5% → increase | 📊 |
-| Throughput (last window) | 2,211 keys / 70 entries | >50/h | 📊 |
+| Net effective translated | **66,996** | — | 📊 |
+| Adaptive batch | batch=5, gf_rate=24.8%, reason=decrease_high_fail_rate=24.8% | gf <5% → increase | 📊 |
+| Throughput (last window) | 2,189 keys / 69 entries | >50/h | 📊 |
 
 ---
 
 ## 📜 HISTORY
 
 > **[HISTORY]** 🟢 ACTIVE  
-> Świeżość: teraz | Źródło: `daily/*.json / ops.jsonl` | Ostatnia aktualizacja: 2026-02-14 12:28:53
+> Świeżość: teraz | Źródło: `daily/*.json / ops.jsonl` | Ostatnia aktualizacja: 2026-02-14 12:31:07
 
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [lt] → warn (files+1, translated+20, skipped+0) — lang=lt file=npc.json strict_skipped_done=238 guard_fail=47 placeholder=0 command=0 pipe=0
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+28, skipped+0) — lang=pl file=client.json strict_skipped_done=213 guard_fail=10 placeholder=0 command=0 pipe=0
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+79, skipped+0) — lang=pl file=cpp.json strict_skipped_done=425 guard_fail=14 placeholder=0 command=0 pipe=0
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+80, skipped+0) — lang=pl file=raids.json strict_skipped_done=105
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+80, skipped+0) — lang=pl file=quests.json strict_skipped_done=158 guard_fail=31 placeholder=0 command=0 pipe=0
@@ -429,8 +418,6 @@ Zdobyte poprzez odblokowanie lub ulepszenie głó (client.charms1410.text1)
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [lt] → warn (files+1, translated+20, skipped+0) — lang=lt file=npc.json strict_skipped_done=215 guard_fail=39 placeholder=0 command=0 pipe=0
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [lt] → warn (files+1, translated+20, skipped+0) — lang=lt file=quests.json strict_skipped_done=37
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+80, skipped+0) — lang=pl file=items.json strict_skipped_done=2479 guard_fail=11 placeholder=0 command=0 pipe=0
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [el] → warn (files+1, translated+20, skipped+0) — lang=el file=quests.json strict_skipped_done=3
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [lt] → warn (files+1, translated+20, skipped+0) — lang=lt file=npc.json strict_skipped_done=274
 
 
 
@@ -440,7 +427,7 @@ Zdobyte poprzez odblokowanie lub ulepszenie głó (client.charms1410.text1)
 - Cykle: **49**
 - MIGRATION: **+0** kluczy, **0** plików `.lua`
 - Kategorie dotknięte: -
-- Błędy: **349**
+- Błędy: **353**
 
 
 ---
@@ -757,7 +744,7 @@ Zdobyte poprzez odblokowanie lub ulepszenie głó (client.charms1410.text1)
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2026-02-14 12:28:53  
+📅 Auto-updated by Worker v1.1 | Last: 2026-02-14 12:31:07  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

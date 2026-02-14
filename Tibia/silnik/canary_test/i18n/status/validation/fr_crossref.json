@@ -1,15 +1,15 @@
 {
   "lang": "fr",
-  "coverage_pct": 36.1,
+  "coverage_pct": 35.9,
   "crossref_enabled": true,
-  "auto_fix_enabled": true,
-  "auto_fix_limit": 80,
-  "checked_at": "2026-02-14T11:45:10.783103Z",
-  "issues_total": 463,
+  "auto_fix_enabled": false,
+  "auto_fix_limit": 30,
+  "checked_at": "2026-02-14T12:00:41.783543Z",
+  "issues_total": 460,
   "issues_by_type": {
-    "consistency_in_language": 49,
+    "consistency_in_language": 50,
     "pl_reference_missing_translation": 400,
-    "length_ratio_crosscheck": 14
+    "length_ratio_crosscheck": 10
   },
   "consistency_issues": [
     {
@@ -153,6 +153,20 @@
         "quests:quests.actions_rewards.msg_2",
         "scripts:scripts.action_tortoise_egg_nargor.msg_1",
         "scripts:scripts.actions_treasure_chest.msg_1"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "You read: ",
+      "variants": [
+        "Vous lisez :",
+        "Vous lisez : "
+      ],
+      "variants_count": 2,
+      "examples": [
+        "books:ui.readable.you_read_prefix",
+        "cpp:cpp.look.you_read"
       ]
     },
     {
@@ -800,96 +814,6 @@
       "lang": "Confusion"
     },
     {
-      "key": "ui.house.rent_period_daily",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "daily",
-      "pl": "I.",
-      "lang": "daily"
-    },
-    {
-      "key": "ui.house.rent_period_monthly",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "monthly",
-      "pl": "miesięczny",
-      "lang": "monthly"
-    },
-    {
-      "key": "ui.house.rent_period_weekly",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "weekly",
-      "pl": "I.",
-      "lang": "weekly"
-    },
-    {
-      "key": "ui.house.rent_period_yearly",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "annual",
-      "pl": "I.",
-      "lang": "annual"
-    },
-    {
-      "key": "ui.readable.wrote",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " wrote",
-      "pl": "wrote",
-      "lang": " wrote"
-    },
-    {
-      "key": "ui.readable.wrote_on_date",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " wrote on ",
-      "pl": "wrote na",
-      "lang": " wrote on "
-    },
-    {
-      "key": "ui.readable.you_read_prefix",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You read: ",
-      "pl": "Ty czytać, przeczytać:",
-      "lang": "You read: "
-    },
-    {
-      "key": "channel.tutor.name",
-      "category": "chatchannels",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Tutor",
-      "pl": "Korepetytor",
-      "lang": "Tutor"
-    },
-    {
-      "key": "channel.help.name",
-      "category": "chatchannels",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Help",
-      "pl": "Pomoc",
-      "lang": "Help"
-    },
-    {
-      "key": "channel.world_chat.name",
-      "category": "chatchannels",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "World Chat",
-      "pl": "Czat światowy",
-      "lang": "World Chat"
-    },
-    {
       "key": "client.game_healthcircle.text1",
       "category": "client",
       "type": "pl_reference_missing_translation",
@@ -906,69 +830,6 @@
       "en": "Interface",
       "pl": "Interfejs",
       "lang": "Interface"
-    },
-    {
-      "key": "client.styles.text1",
-      "category": "client",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "particles",
-      "pl": "cząsteczki",
-      "lang": "particles"
-    },
-    {
-      "key": "client.styles.text2",
-      "category": "client",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "particles",
-      "pl": "cząsteczki",
-      "lang": "particles"
-    },
-    {
-      "key": "client.walk.text2",
-      "category": "client",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ctrl+Down",
-      "pl": "Ctrl+Dół",
-      "lang": "Ctrl+Down"
-    },
-    {
-      "key": "client.utils.text3",
-      "category": "client",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Chorister",
-      "pl": "Chórzysta",
-      "lang": "Chorister"
-    },
-    {
-      "key": "client.boss_slots.text2",
-      "category": "client",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "RightBase",
-      "pl": "Prawa baza",
-      "lang": "RightBase"
-    },
-    {
-      "key": "client.bosstiary.text4",
-      "category": "client",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Expertise",
-      "pl": "Ekspertyza",
-      "lang": "Expertise"
-    },
-    {
-      "key": "client.mounts.text3",
-      "category": "client",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "clientid=",
-      "pl": "identyfikator klienta=",
-      "lang": "clientid="
     },
     {
       "key": "client.mainpanel.text1",
@@ -998,483 +859,6 @@
       "lang": "Interface"
     },
     {
-      "key": "client.game_store.text1",
-      "category": "client",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "HomePanel",
-      "pl": "Panel główny",
-      "lang": "HomePanel"
-    },
-    {
-      "key": "cpp.augment.damage",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "damage",
-      "pl": "szkoda",
-      "lang": "damage"
-    },
-    {
-      "key": "cpp.bestiary.charm_category_major",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Major",
-      "pl": "I.",
-      "lang": "Major"
-    },
-    {
-      "key": "cpp.bestiary.charm_category_minor",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Minor",
-      "pl": "Mini",
-      "lang": "Minor"
-    },
-    {
-      "key": "cpp.combat.agony",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "agony",
-      "pl": "cierpienie",
-      "lang": "agony"
-    },
-    {
-      "key": "cpp.combat.death",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "death",
-      "pl": "I.",
-      "lang": "death"
-    },
-    {
-      "key": "cpp.combat.drown",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "drown",
-      "pl": "topić się, tonąć",
-      "lang": "drown"
-    },
-    {
-      "key": "cpp.combat.earth",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "earth",
-      "pl": "ziemia",
-      "lang": "earth"
-    },
-    {
-      "key": "cpp.combat.energy",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "energy",
-      "pl": "energia",
-      "lang": "energy"
-    },
-    {
-      "key": "cpp.combat.fire",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "fire",
-      "pl": "ogień",
-      "lang": "fire"
-    },
-    {
-      "key": "cpp.combat.holy",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "holy",
-      "pl": "święty",
-      "lang": "holy"
-    },
-    {
-      "key": "cpp.combat.ice",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "ice",
-      "pl": "lód",
-      "lang": "ice"
-    },
-    {
-      "key": "cpp.combat.neutral",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "neutral",
-      "pl": "neutralny",
-      "lang": "neutral"
-    },
-    {
-      "key": "cpp.combat.physical",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "physical",
-      "pl": "Fizyczny",
-      "lang": "physical"
-    },
-    {
-      "key": "cpp.combat.undefined",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "undefined",
-      "pl": "nieokreślony",
-      "lang": "undefined"
-    },
-    {
-      "key": "cpp.combat.unknown",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "unknown",
-      "pl": "unkNiewn",
-      "lang": "unknown"
-    },
-    {
-      "key": "cpp.forge.consumed",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "consumed",
-      "pl": "strawiony",
-      "lang": "consumed"
-    },
-    {
-      "key": "cpp.forge.cores_one",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "{0} core",
-      "pl": "{0} rdzeń",
-      "lang": "{0} core"
-    },
-    {
-      "key": "cpp.forge.cores_other",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "{0} cores",
-      "pl": "{0} rdzeni",
-      "lang": "{0} cores"
-    },
-    {
-      "key": "cpp.forge.successful",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Successful",
-      "pl": "sukcesful",
-      "lang": "Successful"
-    },
-    {
-      "key": "cpp.forge.unchanged",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "unchanged",
-      "pl": "niezmienione",
-      "lang": "unchanged"
-    },
-    {
-      "key": "cpp.forge.unknown",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "(unknown)",
-      "pl": "(nieznany)",
-      "lang": "(unknown)"
-    },
-    {
-      "key": "cpp.game.hazard_tag",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " (Hazard)",
-      "pl": "(I.)",
-      "lang": " (Hazard)"
-    },
-    {
-      "key": "cpp.game.offline_training_button_cancel",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Cancel",
-      "pl": "Anuluj",
-      "lang": "Cancel"
-    },
-    {
-      "key": "cpp.game.offline_training_button_ok",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Okay",
-      "pl": "I.",
-      "lang": "Okay"
-    },
-    {
-      "key": "cpp.game.tentugly_name",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Tentugly",
-      "pl": "Delikatnie",
-      "lang": "Tentugly"
-    },
-    {
-      "key": "cpp.inspect.and_connector",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " and ",
-      "pl": "i",
-      "lang": " and "
-    },
-    {
-      "key": "cpp.inspect.armor",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Armor",
-      "pl": "Zbroja",
-      "lang": "Armor"
-    },
-    {
-      "key": "cpp.inspect.at_range",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " at range ",
-      "pl": "w I.",
-      "lang": " at range "
-    },
-    {
-      "key": "cpp.inspect.attack",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Attack",
-      "pl": "Atak",
-      "lang": "Attack"
-    },
-    {
-      "key": "cpp.inspect.augments",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Augments",
-      "pl": "Zwiększać",
-      "lang": "Augments"
-    },
-    {
-      "key": "cpp.inspect.body_body",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "body",
-      "pl": "ciało",
-      "lang": "body"
-    },
-    {
-      "key": "cpp.inspect.body_both_hands",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "both hands",
-      "pl": "obaj hands",
-      "lang": "both hands"
-    },
-    {
-      "key": "cpp.inspect.body_container",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "container",
-      "pl": "pojemnik",
-      "lang": "container"
-    },
-    {
-      "key": "cpp.inspect.body_feet",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "feet",
-      "pl": "stopy",
-      "lang": "feet"
-    },
-    {
-      "key": "cpp.inspect.body_finger",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "finger",
-      "pl": "palec",
-      "lang": "finger"
-    },
-    {
-      "key": "cpp.inspect.body_head",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "head",
-      "pl": "Głowa",
-      "lang": "head"
-    },
-    {
-      "key": "cpp.inspect.body_legs",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "legs",
-      "pl": "noga",
-      "lang": "legs"
-    },
-    {
-      "key": "cpp.inspect.body_neck",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "neck",
-      "pl": "szyja",
-      "lang": "neck"
-    },
-    {
-      "key": "cpp.inspect.brand_new",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "brand-new",
-      "pl": "I.-new",
-      "lang": "brand-new"
-    },
-    {
-      "key": "cpp.inspect.capacity",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Capacity",
-      "pl": "Udźperuka",
-      "lang": "Capacity"
-    },
-    {
-      "key": "cpp.inspect.charges",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Charges",
-      "pl": "Ładunki",
-      "lang": "Charges"
-    },
-    {
-      "key": "cpp.inspect.cleave",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Cleave",
-      "pl": "Rozszczepiać",
-      "lang": "Cleave"
-    },
-    {
-      "key": "cpp.inspect.contain",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Contain",
-      "pl": "Zawierać",
-      "lang": "Contain"
-    },
-    {
-      "key": "cpp.inspect.defence",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Defence",
-      "pl": "Obrona",
-      "lang": "Defence"
-    },
-    {
-      "key": "cpp.inspect.effect",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Effect",
-      "pl": "Efekt",
-      "lang": "Effect"
-    },
-    {
-      "key": "cpp.inspect.empty",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "empty",
-      "pl": "puste",
-      "lang": "empty"
-    },
-    {
-      "key": "cpp.inspect.expires",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Expires",
-      "pl": "Wygasa",
-      "lang": "Expires"
-    },
-    {
-      "key": "cpp.inspect.key",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Key",
-      "pl": "I.",
-      "lang": "Key"
-    },
-    {
-      "key": "cpp.inspect.n_fields",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "{0} fields",
-      "pl": "{0} I.",
-      "lang": "{0} fields"
-    },
-    {
-      "key": "cpp.inspect.nothing",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Nothing",
-      "pl": "Niething",
-      "lang": "Nothing"
-    },
-    {
-      "key": "cpp.inspect.oz",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " oz",
-      "pl": "oz",
-      "lang": " oz"
-    },
-    {
-      "key": "cpp.inspect.premium",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Premium",
-      "pl": "Premia",
-      "lang": "Premium"
-    },
-    {
       "key": "cpp.inspect.protection",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -1482,24 +866,6 @@
       "en": "Protection",
       "pl": "Ochrona, osłona",
       "lang": "Protection"
-    },
-    {
-      "key": "cpp.inspect.required",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Required",
-      "pl": "wymagany",
-      "lang": "Required"
-    },
-    {
-      "key": "cpp.inspect.speed",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Speed",
-      "pl": "I.",
-      "lang": "Speed"
     },
     {
       "key": "cpp.inspect.tier",
@@ -1565,15 +931,6 @@
       "lang": "Arm:"
     },
     {
-      "key": "cpp.look.at_range",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "at range",
-      "pl": "w I.",
-      "lang": "at range"
-    },
-    {
       "key": "cpp.look.atk",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -1635,15 +992,6 @@
       "en": "Def:",
       "pl": "def:",
       "lang": "Def:"
-    },
-    {
-      "key": "cpp.look.field",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " field",
-      "pl": "I.",
-      "lang": " field"
     },
     {
       "key": "cpp.look.hit_pct",
@@ -1727,15 +1075,6 @@
       "lang": " on "
     },
     {
-      "key": "cpp.look.or_higher",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " or higher",
-      "pl": "lub I.",
-      "lang": " or higher"
-    },
-    {
       "key": "cpp.look.physical_plus",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -1788,15 +1127,6 @@
       "en": "{0} second",
       "pl": "{0} sekunda",
       "lang": "{0} second"
-    },
-    {
-      "key": "cpp.look.speed_label",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "speed",
-      "pl": "I.",
-      "lang": "speed"
     },
     {
       "key": "cpp.look.tier_ruse",
@@ -2004,15 +1334,6 @@
       "en": "level",
       "pl": "poziom",
       "lang": "level"
-    },
-    {
-      "key": "cpp.skill.life_leech",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "life leech",
-      "pl": "I. pijawka",
-      "lang": "life leech"
     },
     {
       "key": "cpp.skill.mana_leech",
@@ -3788,15 +3109,6 @@
       "lang": "gold dust"
     },
     {
-      "key": "item.27511.desc",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "It's black",
-      "pl": "To I.",
-      "lang": "It's black"
-    },
-    {
       "key": "item.27841.name",
       "category": "items",
       "type": "pl_reference_missing_translation",
@@ -4371,18 +3683,711 @@
       "en": "shrimp",
       "pl": "krewetka",
       "lang": "shrimp"
+    },
+    {
+      "key": "item.3595.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "carrot",
+      "pl": "marchew",
+      "lang": "carrot"
+    },
+    {
+      "key": "item.3600.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "bread",
+      "pl": "chleb",
+      "lang": "bread"
+    },
+    {
+      "key": "item.3606.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "egg",
+      "pl": "Jajko",
+      "lang": "egg"
+    },
+    {
+      "key": "item.3607.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "cheese",
+      "pl": "ser",
+      "lang": "cheese"
+    },
+    {
+      "key": "item.3681.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "bush",
+      "pl": "krzak",
+      "lang": "bush"
+    },
+    {
+      "key": "item.38845.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "fence",
+      "pl": "płot",
+      "lang": "fence"
+    },
+    {
+      "key": "item.39003.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "tentugly",
+      "pl": "Delikatnie",
+      "lang": "tentugly"
+    },
+    {
+      "key": "item.39551.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "seaweed",
+      "pl": "wodorost",
+      "lang": "seaweed"
+    },
+    {
+      "key": "item.39559.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "tree coral",
+      "pl": "koral drzewny",
+      "lang": "tree coral"
+    },
+    {
+      "key": "item.39563.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "lava hole",
+      "pl": "lawa dziura",
+      "lang": "lava hole"
+    },
+    {
+      "key": "item.39565.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "lava hole",
+      "pl": "lawa dziura",
+      "lang": "lava hole"
+    },
+    {
+      "key": "item.39705.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "reward box",
+      "pl": "nagroda pudełko",
+      "lang": "reward box"
+    },
+    {
+      "key": "item.4060.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "statue",
+      "pl": "posąg",
+      "lang": "statue"
+    },
+    {
+      "key": "item.4313.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "corpse",
+      "pl": "zwłoki",
+      "lang": "corpse"
+    },
+    {
+      "key": "item.4314.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "corpse",
+      "pl": "zwłoki",
+      "lang": "corpse"
+    },
+    {
+      "key": "item.4837.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "icicle",
+      "pl": "Sopel",
+      "lang": "icicle"
+    },
+    {
+      "key": "item.5901.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "wood",
+      "pl": "drewno",
+      "lang": "wood"
+    },
+    {
+      "key": "item.5951.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "fish tail",
+      "pl": "ryba ogon",
+      "lang": "fish tail"
+    },
+    {
+      "key": "item.6123.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "piano",
+      "pl": "piaNie",
+      "lang": "piano"
+    },
+    {
+      "key": "item.6277.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "cake",
+      "pl": "ciasto",
+      "lang": "cake"
+    },
+    {
+      "key": "item.6278.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "cake",
+      "pl": "ciasto",
+      "lang": "cake"
+    },
+    {
+      "key": "item.6279.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "party cake",
+      "pl": "drużyna ciasto",
+      "lang": "party cake"
+    },
+    {
+      "key": "item.6352.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "swamp",
+      "pl": "bagno",
+      "lang": "swamp"
+    },
+    {
+      "key": "item.6578.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "party hat",
+      "pl": "drużyna kapelusz",
+      "lang": "party hat"
+    },
+    {
+      "key": "item.6594.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "snow",
+      "pl": "sNiew",
+      "lang": "snow"
+    },
+    {
+      "key": "item.6595.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "snow",
+      "pl": "sNiew",
+      "lang": "snow"
+    },
+    {
+      "key": "item.6596.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "snow",
+      "pl": "sNiew",
+      "lang": "snow"
+    },
+    {
+      "key": "item.6597.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "snow",
+      "pl": "sNiew",
+      "lang": "snow"
+    },
+    {
+      "key": "item.6598.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "snow",
+      "pl": "sNiew",
+      "lang": "snow"
+    },
+    {
+      "key": "item.6599.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "snow",
+      "pl": "sNiew",
+      "lang": "snow"
+    },
+    {
+      "key": "item.6600.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "snow",
+      "pl": "sNiew",
+      "lang": "snow"
+    },
+    {
+      "key": "item.6601.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "snow",
+      "pl": "sNiew",
+      "lang": "snow"
+    },
+    {
+      "key": "item.6602.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "snow",
+      "pl": "sNiew",
+      "lang": "snow"
+    },
+    {
+      "key": "item.6603.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "snow",
+      "pl": "sNiew",
+      "lang": "snow"
+    },
+    {
+      "key": "item.6604.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "snow",
+      "pl": "sNiew",
+      "lang": "snow"
+    },
+    {
+      "key": "item.6605.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "snow",
+      "pl": "sNiew",
+      "lang": "snow"
+    },
+    {
+      "key": "item.6606.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "snow",
+      "pl": "sNiew",
+      "lang": "snow"
+    },
+    {
+      "key": "item.6607.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "snow",
+      "pl": "sNiew",
+      "lang": "snow"
+    },
+    {
+      "key": "item.6608.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "snow",
+      "pl": "sNiew",
+      "lang": "snow"
+    },
+    {
+      "key": "item.6775.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "fur pillar",
+      "pl": "futro filar",
+      "lang": "fur pillar"
+    },
+    {
+      "key": "item.6838.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "snow",
+      "pl": "sNiew",
+      "lang": "snow"
+    },
+    {
+      "key": "item.7107.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "ice",
+      "pl": "lód",
+      "lang": "ice"
+    },
+    {
+      "key": "item.7290.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "shard",
+      "pl": "odłamek",
+      "lang": "shard"
+    },
+    {
+      "key": "item.7458.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "fur cap",
+      "pl": "futro czapka",
+      "lang": "fur cap"
+    },
+    {
+      "key": "item.7526.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "mountain",
+      "pl": "góra",
+      "lang": "mountain"
+    },
+    {
+      "key": "item.7570.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "bone claw",
+      "pl": "kość pazur",
+      "lang": "bone claw"
+    },
+    {
+      "key": "item.7572.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "bone claw",
+      "pl": "kość pazur",
+      "lang": "bone claw"
+    },
+    {
+      "key": "item.7740.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "ice",
+      "pl": "lód",
+      "lang": "ice"
+    },
+    {
+      "key": "item.7843.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "anvil",
+      "pl": "kowadło",
+      "lang": "anvil"
+    },
+    {
+      "key": "item.7885.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "fish",
+      "pl": "Ryba",
+      "lang": "fish"
+    },
+    {
+      "key": "item.7933.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "invitation",
+      "pl": "zaproszenie",
+      "lang": "invitation"
+    },
+    {
+      "key": "item.799.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "snow",
+      "pl": "sNiew",
+      "lang": "snow"
+    },
+    {
+      "key": "item.800.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "ice",
+      "pl": "lód",
+      "lang": "ice"
+    },
+    {
+      "key": "item.8064.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "ethno coat",
+      "pl": "ethNie coat",
+      "lang": "ethno coat"
+    },
+    {
+      "key": "item.8390.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "statue",
+      "pl": "posąg",
+      "lang": "statue"
+    },
+    {
+      "key": "item.8645.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "piano",
+      "pl": "piaNie",
+      "lang": "piano"
+    },
+    {
+      "key": "item.8716.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "swamp",
+      "pl": "bagno",
+      "lang": "swamp"
+    },
+    {
+      "key": "item.8737.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "CM token",
+      "pl": "Token CM",
+      "lang": "CM token"
+    },
+    {
+      "key": "item.9058.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "gold ingot",
+      "pl": "Złoto ingot",
+      "lang": "gold ingot"
+    },
+    {
+      "key": "item.9169.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "old crate",
+      "pl": "stary skrzynia",
+      "lang": "old crate"
+    },
+    {
+      "key": "item.9215.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "gold medal",
+      "pl": "Złoto medal",
+      "lang": "gold medal"
+    },
+    {
+      "key": "item.9653.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "witch hat",
+      "pl": "wiedźma kapelusz",
+      "lang": "witch hat"
+    },
+    {
+      "key": "item.9694.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "snake skin",
+      "pl": "wąż skóra",
+      "lang": "snake skin"
+    },
+    {
+      "key": "lib.player.modal_button_close",
+      "category": "libs",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Close",
+      "pl": "Zamknij",
+      "lang": "Close"
+    },
+    {
+      "key": "lib.player.modal_button_no",
+      "category": "libs",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "No",
+      "pl": "Nie",
+      "lang": "No"
+    },
+    {
+      "key": "lib.player.modal_button_yes",
+      "category": "libs",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Yes",
+      "pl": "Tak",
+      "lang": "Yes"
+    },
+    {
+      "key": "module.init.text4",
+      "category": "modules",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "\tVersion = ",
+      "pl": "Wersja =",
+      "lang": "\tVersion = "
+    },
+    {
+      "key": "module.hireling_module.text2",
+      "category": "modules",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "\tVersion = ",
+      "pl": "Wersja =",
+      "lang": "\tVersion = "
+    },
+    {
+      "key": "module.hireling_module.text4",
+      "category": "modules",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "\tDate =",
+      "pl": "Data =",
+      "lang": "\tDate ="
+    },
+    {
+      "key": "monster.troll.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Troll",
+      "pl": "Trol",
+      "lang": "Troll"
+    },
+    {
+      "key": "monster.hunter.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hunter",
+      "pl": "Myśliwy",
+      "lang": "Hunter"
+    },
+    {
+      "key": "monster.bandit.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bandit",
+      "pl": "Bandyta",
+      "lang": "Bandit"
+    },
+    {
+      "key": "monster.valkyrie.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Valkyrie",
+      "pl": "Walkiria",
+      "lang": "Valkyrie"
+    },
+    {
+      "key": "monster.assassin.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Assassin",
+      "pl": "Morderca",
+      "lang": "Assassin"
+    },
+    {
+      "key": "monster.crocodile.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Crocodile",
+      "pl": "Krokodyl",
+      "lang": "Crocodile"
+    },
+    {
+      "key": "monster.dragon.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Dragon",
+      "pl": "Smok",
+      "lang": "Dragon"
+    },
+    {
+      "key": "monster.old_wasp.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bssssss",
+      "pl": "Bsssss",
+      "lang": "Bssssss"
+    },
+    {
+      "key": "monster.old_pig.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Oink oink",
+      "pl": "Chrum chrum",
+      "lang": "Oink oink"
     }
   ],
   "length_ratio_issues": [
-    {
-      "key": "achievement.25.name",
-      "category": "achievements",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 12,
-      "lang_ratio": 1.0,
-      "pl_ratio": 3.0
-    },
     {
       "key": "achievement.68.name",
       "category": "achievements",
@@ -4391,15 +4396,6 @@
       "en_len": 12,
       "lang_ratio": 1.583,
       "pl_ratio": 3.417
-    },
-    {
-      "key": "achievement.97.name",
-      "category": "achievements",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 17,
-      "lang_ratio": 0.941,
-      "pl_ratio": 3.529
     },
     {
       "key": "achievement.128.name",
@@ -4456,13 +4452,13 @@
       "pl_ratio": 3.556
     },
     {
-      "key": "cpp.inspect.body_extra_slot",
+      "key": "cpp.combat.drown",
       "category": "cpp",
       "type": "crossref_length_ratio_diff",
       "severity": "MEDIUM",
-      "en_len": 10,
-      "lang_ratio": 2.6,
-      "pl_ratio": 0.5
+      "en_len": 5,
+      "lang_ratio": 1.0,
+      "pl_ratio": 3.2
     },
     {
       "key": "otclient_modules.gameinterface.tr_35",
@@ -4481,30 +4477,12 @@
       "en_len": 5,
       "lang_ratio": 1.2,
       "pl_ratio": 3.2
-    },
-    {
-      "key": "quests.actions_coral.msg_1",
-      "category": "quests",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 1.167,
-      "pl_ratio": 4.0
-    },
-    {
-      "key": "quests.actions_crystal.msg_1",
-      "category": "quests",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 1.167,
-      "pl_ratio": 4.0
     }
   ],
   "auto_fix": {
-    "attempted": 80,
-    "applied": 71,
-    "skipped": 9,
+    "attempted": 0,
+    "applied": 0,
+    "skipped": 0,
     "errors": 0
   }
 }

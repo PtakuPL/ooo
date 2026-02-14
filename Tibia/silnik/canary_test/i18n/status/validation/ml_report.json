@@ -2,58 +2,28 @@
   "lang": "ml",
   "script_group": "exotic",
   "total_keys": 53586,
-  "translated": 5004,
-  "identical_to_en": 3695,
-  "placeholder_keys": 46427,
+  "translated": 4972,
+  "identical_to_en": 3704,
+  "placeholder_keys": 48614,
   "coverage_pct": 9.3,
-  "issues_total": 133,
+  "issues_total": 87,
   "issues_by_type": {
-    "script_wrong_script": 124,
-    "V1_placeholder_mismatch": 7,
+    "script_wrong_script": 83,
+    "V1_placeholder_mismatch": 2,
     "V4_artifact": 1,
     "V5_pipe_mismatch": 1
   },
   "issues_by_severity": {
-    "CRITICAL": 8,
-    "HIGH": 125,
+    "CRITICAL": 3,
+    "HIGH": 84,
     "MEDIUM": 0,
     "LOW": 0
   },
-  "score": 95.8,
+  "score": 97.3,
   "worst_keys": [
     {
       "key": "scripts.actions_rewards.msg_1",
       "category": "scripts",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "scripts.manage_tutor.msg_1",
-      "category": "scripts",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "scripts.manage_tutor.msg_2",
-      "category": "scripts",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "server.game.msg_32",
-      "category": "server",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "server.player.msg_11",
-      "category": "server",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "server.spells.msg_3",
-      "category": "server",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
     },
@@ -78,12 +48,6 @@
     {
       "key": "achievement.499.name",
       "category": "achievements",
-      "type": "script_wrong_script",
-      "severity": "HIGH"
-    },
-    {
-      "key": "event.player.msg1",
-      "category": "events",
       "type": "script_wrong_script",
       "severity": "HIGH"
     },
@@ -140,15 +104,51 @@
       "category": "items",
       "type": "script_wrong_script",
       "severity": "HIGH"
+    },
+    {
+      "key": "item.20052.name",
+      "category": "items",
+      "type": "script_wrong_script",
+      "severity": "HIGH"
+    },
+    {
+      "key": "item.21352.name",
+      "category": "items",
+      "type": "script_wrong_script",
+      "severity": "HIGH"
+    },
+    {
+      "key": "item.21432.name",
+      "category": "items",
+      "type": "script_wrong_script",
+      "severity": "HIGH"
+    },
+    {
+      "key": "item.21878.name",
+      "category": "items",
+      "type": "script_wrong_script",
+      "severity": "HIGH"
+    },
+    {
+      "key": "item.23442.name",
+      "category": "items",
+      "type": "script_wrong_script",
+      "severity": "HIGH"
+    },
+    {
+      "key": "item.23443.name",
+      "category": "items",
+      "type": "script_wrong_script",
+      "severity": "HIGH"
     }
   ],
   "crossref": {
     "enabled": false,
-    "issues_total": 414,
+    "issues_total": 411,
     "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 14,
+    "length_ratio": 11,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-14T11:45:13.570721Z"
+  "validated_at": "2026-02-14T12:00:43.925973Z"
 }

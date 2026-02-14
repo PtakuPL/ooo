@@ -83886,5 +83886,941 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-14T11:46:52.102657Z"
+  },
+  "scripts.actions_flower_puzzle_lever.msg_2": {
+    "src_hash": "d985281164095a47a746695286cccc17",
+    "text": "Portal nadal jest aktywny.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:52:12.817322Z"
+  },
+  "scripts.info.position": {
+    "src_hash": "8670a5e2c6b581ae3b59d95702d494dc",
+    "text": "Pozycja: ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:52:12.936854Z"
+  },
+  "scripts.mission02_defence.msg_1": {
+    "src_hash": "cd65fd7b97394abf9724e1214499852c",
+    "text": "Musisz poczekać kilka minut, zanim będziesz mógł podnieść nowy kamień.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:52:12.949558Z"
+  },
+  "scripts.register_actions.msg_14": {
+    "src_hash": "41a6b0f2a72e1647d6600ba6d86c2ffa",
+    "text": "Kruszenie kamienia daje trochę drobnego żwiru.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:52:13.008542Z"
+  },
+  "scripts.find_fiend.level_medium": {
+    "src_hash": "87f8a6ab85c9ced3702b4ea641ad4bb5",
+    "text": "Średni",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:52:14.472609Z"
+  },
+  "scripts.hot_cuisine.recipe_2": {
+    "src_hash": "58dfed2d2573f60a89a614d6861f3e1c",
+    "text": "Sałatka Hydra z Językiem\n- 2 języki Hydry\n- 2 pomidory\n- 1 ogórek\n- 2 jajka\n- 1 Troll zielony\n- 1 fiolka wina\n",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:52:18.284715Z"
+  },
+  "scripts.icons_functions.msg_4": {
+    "src_hash": "7d8b3f6fdb463bf522848de1ac76f966",
+    "text": "Nieprawidłowy identyfikator ikony. Korzystanie z rozwiązania zastępczego {} ({}).",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:52:18.285241Z"
+  },
+  "scripts.manage_kv.msg_7": {
+    "src_hash": "0f1f0e381cf6caf300836cdcba897cf1",
+    "text": "Czas odnowienia bossa dla {} został usunięty.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:52:22.230097Z"
+  },
+  "scripts.mounts.fail_1": {
+    "src_hash": "ec1c1f6da0d17ca0ef4c873153dce9d7",
+    "text": "Niedźwiedź uciekł.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:52:22.230525Z"
+  },
+  "scripts.mounts.fail_10": {
+    "src_hash": "723cfc3fefc0226aebb80be4a7869c1c",
+    "text": "Skorupiaki zjadły krewetki.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:52:22.230902Z"
+  },
+  "scripts.mounts.fail_18": {
+    "src_hash": "4d46aea0ae8dd74db2bd5d4b27a377a3",
+    "text": "Draptor uciekł.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:52:22.231228Z"
+  },
+  "scripts.mounts.fail_41": {
+    "src_hash": "8599df07683ce48b674de76119b7a61e",
+    "text": "Manta uciekła.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:52:22.231559Z"
+  },
+  "scripts.mounts.fail_68": {
+    "src_hash": "7f959a712d916bf935e8c7f9f1630036",
+    "text": "Koń zjadł owies.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:52:26.228502Z"
+  },
+  "scripts.mounts.success_12": {
+    "src_hash": "a21eac4d4e82f9b1790f4c18a557926b",
+    "text": "Poskromiłeś piekielny uścisk.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:52:26.228924Z"
+  },
+  "scripts.mounts.success_13": {
+    "src_hash": "3e40637c583ba4c279ce269907936355",
+    "text": "Oswoiłeś gryfa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:52:26.229294Z"
+  },
+  "scripts.mounts.success_17": {
+    "src_hash": "05da45c8def382aa755d222caeae3a38",
+    "text": "Poskromiłeś zarazę żelaza.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:52:26.229655Z"
+  },
+  "scripts.mounts.success_26": {
+    "src_hash": "ac41b3cb2ccd93552120e21c4335e4bb",
+    "text": "Oswoiłeś pandę.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:52:26.229988Z"
+  },
+  "scripts.mounts.success_4": {
+    "src_hash": "5719e009f5b67d9ead02f09e6bda42af",
+    "text": "Oswoiłeś skorupiaki.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:52:29.775675Z"
+  },
+  "scripts.mounts.success_5": {
+    "src_hash": "a09c901e69ea3a64b8e3cac22aeef349",
+    "text": "Oswoiłeś wilka.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:52:29.776114Z"
+  },
+  "scripts.mounts.success_8": {
+    "src_hash": "eb33692d31c973a69d14a94cf3d0a20f",
+    "text": "Oswoiłeś draptora.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:52:29.776499Z"
+  },
+  "scripts.on_look.admin_action_id": {
+    "src_hash": "895c56701c366903777de7b916eb030b",
+    "text": "%s, identyfikator działania: %s",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:52:33.970033Z"
+  },
+  "scripts.on_look.admin_client_id": {
+    "src_hash": "1b2ba68e3acc3484e59958339e944a11",
+    "text": "%s\nIdentyfikator klienta: %s",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:52:33.970373Z"
+  },
+  "scripts.on_look.admin_door_id": {
+    "src_hash": "22c8a5b6c55f059a42ca111a53da892b",
+    "text": "%s, identyfikator drzwi: %s",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:52:33.970659Z"
+  },
+  "scripts.on_look.admin_player_health": {
+    "src_hash": "4926972296ce5551e17e6bf615d492bf",
+    "text": "%s\n%s\nZdrowie: %s / %s",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:52:33.971358Z"
+  },
+  "scripts.on_look.position_coords": {
+    "src_hash": "4e0e3beb96fef75fd81a21856fff288b",
+    "text": "Stanowisko: (%s, %s, %s)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:52:33.971869Z"
+  },
+  "scripts.server_info.lose_house_after_inactivity": {
+    "src_hash": "d481d1cee078c6b9006ba3923523aa18",
+    "text": "Strać dom po bezczynności:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:52:37.116455Z"
+  },
+  "scripts.thais_exhibition.say_52": {
+    "src_hash": "bee58b7e6242e68e8acacf8ea3a86dbd",
+    "text": "Przesyłanie do TibiaEvents.... przetwarzanie...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:52:37.117475Z"
+  },
+  "raid.zulazza_the_corruptor.name": {
+    "src_hash": "50f128ec9e12698f936e0ea56a2b2b61",
+    "text": "Zulazza The Corruptor",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:57:32.626223Z"
+  },
+  "raid.undead_darashia.name": {
+    "src_hash": "514c7d86ea50becf3dec530e0e131ce0",
+    "text": "Undead Darashia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:57:34.110416Z"
+  },
+  "raid.barba_bittermor.name": {
+    "src_hash": "65d5a9017ada07c5fd8a1f1f6f6fa605",
+    "text": "Barba Bittermor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:57:34.110770Z"
+  },
+  "raid.terrorbirds.name": {
+    "src_hash": "ad62c49e881d6596744c943bc6c38cac",
+    "text": "Terrorbirds",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:57:34.111034Z"
+  },
+  "raid.crustacea_gigantica_4.name": {
+    "src_hash": "e705031143466f92173a6cdc650abe2b",
+    "text": "Crustacea Gigantica 4",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:57:34.111349Z"
+  },
+  "raid.crustacea_gigantica_5.name": {
+    "src_hash": "20ac80461ca5823703b1a1c4c5dc1853",
+    "text": "Crustacea Gigantica 5",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:57:34.111690Z"
+  },
+  "raid.gaz_haragoth.name": {
+    "src_hash": "b3dd522c06865f52bf4321b5d07cbd06",
+    "text": "Gaz Haragoth",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:57:36.825863Z"
+  },
+  "raid.crustacea_gigantica_1.name": {
+    "src_hash": "fe15786d2dc84508d331b28dda2fd617",
+    "text": "Crustacea Gigantica 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:57:36.826310Z"
+  },
+  "raid.crustacea_gigantica_2.name": {
+    "src_hash": "dbc8fdb622fbf9185d733a3ba7ddbd8d",
+    "text": "Crustacea Gigantica 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:57:36.826616Z"
+  },
+  "raid.crustacea_gigantica_3.name": {
+    "src_hash": "0baf22f5185dcf61fc250759b7ff6349",
+    "text": "Crustacea Gigantica 3",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:57:36.826891Z"
+  },
+  "raid.gnarlhounds.name": {
+    "src_hash": "2eb6e51fdfb88602e0edca297082c641",
+    "text": "Gnarlhounds",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:57:36.827270Z"
+  },
+  "raids.edron.orc.msg_2": {
+    "src_hash": "7866e86d2554234c3a9c96c51e3429e2",
+    "text": "Orkowie berserkerzy głęboko pod Edron!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:57:39.188606Z"
+  },
+  "item.10198.desc": {
+    "src_hash": "53bce793b3d2a7c30981d12fb5420c6b",
+    "text": "I. crest a. wydawać się być, wydawać się, zdawać się ważny, znaczący. Ty shouldn't lose to",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.176959Z"
+  },
+  "item.10199.desc": {
+    "src_hash": "53bce793b3d2a7c30981d12fb5420c6b",
+    "text": "I. crest a. wydawać się być, wydawać się, zdawać się ważny, znaczący. Ty shouldn't lose to",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.178070Z"
+  },
+  "item.11691.desc": {
+    "src_hash": "deaed1bc929712d0e0b192fc259c7b5b",
+    "text": "To I. twój zaklęCentalna Agencja Wywiadowcza i może także I. o I. when wytarty",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.278358Z"
+  },
+  "item.12260.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Pustelnik koło Carlin może ci o tym więcej opowiedzieć",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.292959Z"
+  },
+  "item.12304.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Pustelnik koło Carlin może ci o tym więcej opowiedzieć",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.295436Z"
+  },
+  "item.12305.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Pustelnik koło Carlin może ci o tym więcej opowiedzieć",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.296284Z"
+  },
+  "item.12306.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Pustelnik koło Carlin może ci o tym więcej opowiedzieć",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.296818Z"
+  },
+  "item.12307.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Pustelnik koło Carlin może ci o tym więcej opowiedzieć",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.297386Z"
+  },
+  "item.12308.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Pustelnik koło Carlin może ci o tym więcej opowiedzieć",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.297937Z"
+  },
+  "item.12311.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Pustelnik koło Carlin może ci o tym więcej opowiedzieć",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.298575Z"
+  },
+  "item.12318.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Pustelnik koło Carlin może ci o tym więcej opowiedzieć",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.299453Z"
+  },
+  "item.12320.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Pustelnik koło Carlin może ci o tym więcej opowiedzieć",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.300064Z"
+  },
+  "item.12509.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Pustelnik koło Carlin może ci o tym więcej opowiedzieć",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.305396Z"
+  },
+  "item.12519.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Pustelnik koło Carlin może ci o tym więcej opowiedzieć",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.306626Z"
+  },
+  "item.12546.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Pustelnik koło Carlin może ci o tym więcej opowiedzieć",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.308365Z"
+  },
+  "item.12547.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Pustelnik koło Carlin może ci o tym więcej opowiedzieć",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.308942Z"
+  },
+  "item.12548.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Pustelnik koło Carlin może ci o tym więcej opowiedzieć",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.309479Z"
+  },
+  "item.12549.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Pustelnik koło Carlin może ci o tym więcej opowiedzieć",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.310060Z"
+  },
+  "item.12550.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Pustelnik koło Carlin może ci o tym więcej opowiedzieć",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.310628Z"
+  },
+  "item.12551.desc": {
+    "src_hash": "88cab01dea6fd171e43538f58e90778c",
+    "text": "To a. wydawać się być, wydawać się, zdawać się do być jeden part z jeden strój. I. wszystkie sześć parts do I. the strój",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.311487Z"
+  },
+  "item.12552.desc": {
+    "src_hash": "88cab01dea6fd171e43538f58e90778c",
+    "text": "To a. wydawać się być, wydawać się, zdawać się do być jeden part z jeden strój. I. wszystkie sześć parts do I. the strój",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.312513Z"
+  },
+  "item.12553.desc": {
+    "src_hash": "88cab01dea6fd171e43538f58e90778c",
+    "text": "To a. wydawać się być, wydawać się, zdawać się do być jeden part z jeden strój. I. wszystkie sześć parts do I. the strój",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.313371Z"
+  },
+  "item.12554.desc": {
+    "src_hash": "88cab01dea6fd171e43538f58e90778c",
+    "text": "To a. wydawać się być, wydawać się, zdawać się do być jeden part z jeden strój. I. wszystkie sześć parts do I. the strój",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.314554Z"
+  },
+  "item.12555.desc": {
+    "src_hash": "88cab01dea6fd171e43538f58e90778c",
+    "text": "To a. wydawać się być, wydawać się, zdawać się do być jeden part z jeden strój. I. wszystkie sześć parts do I. the strój",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.315518Z"
+  },
+  "item.12556.desc": {
+    "src_hash": "88cab01dea6fd171e43538f58e90778c",
+    "text": "To a. wydawać się być, wydawać się, zdawać się do być jeden part z jeden strój. I. wszystkie sześć parts do I. the strój",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.316420Z"
+  },
+  "item.12801.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Pustelnik koło Carlin może ci o tym więcej opowiedzieć",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.329521Z"
+  },
+  "item.12802.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Pustelnik koło Carlin może ci o tym więcej opowiedzieć",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.330379Z"
+  },
+  "item.12935.desc": {
+    "src_hash": "25447addfecb86102efa8cef28f12ea3",
+    "text": "Dowcip jeden I. w the sufit.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.335311Z"
+  },
+  "item.14013.desc": {
+    "src_hash": "d5098cff49ca9ab8295212e8bcec3f13",
+    "text": "The I. z I. deepling jest pisemny there",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.348489Z"
+  },
+  "item.14021.desc": {
+    "src_hash": "d5098cff49ca9ab8295212e8bcec3f13",
+    "text": "The I. z I. deepling jest pisemny there",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.350058Z"
+  },
+  "item.14022.desc": {
+    "src_hash": "d5098cff49ca9ab8295212e8bcec3f13",
+    "text": "The I. z I. deepling jest pisemny there",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.350795Z"
+  },
+  "item.14023.desc": {
+    "src_hash": "d5098cff49ca9ab8295212e8bcec3f13",
+    "text": "The I. z I. deepling jest pisemny there",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.351429Z"
+  },
+  "item.14032.desc": {
+    "src_hash": "ec385e5717e19a2037e8986fc553a3e8",
+    "text": "I. I. pilny, naglący potrzebować I. I., a. inny, jeszcze to will I. I. i znikać I.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.353372Z"
+  },
+  "item.14142.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Pustelnik koło Carlin może ci o tym więcej opowiedzieć",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.358720Z"
+  },
+  "item.14143.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Pustelnik koło Carlin może ci o tym więcej opowiedzieć",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.359250Z"
+  },
+  "item.14238.desc": {
+    "src_hash": "25447addfecb86102efa8cef28f12ea3",
+    "text": "Dowcip jeden I. w the sufit.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.363785Z"
+  },
+  "item.14670.desc": {
+    "src_hash": "3715465c84597a2794431025999cbf3d",
+    "text": "To był I. podczas, w czasie the uroczystość z Tibia's 15th rocznica",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.366302Z"
+  },
+  "item.14671.desc": {
+    "src_hash": "3715465c84597a2794431025999cbf3d",
+    "text": "To był I. podczas, w czasie the uroczystość z Tibia's 15th rocznica",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.367209Z"
+  },
+  "item.14672.desc": {
+    "src_hash": "3715465c84597a2794431025999cbf3d",
+    "text": "To był I. podczas, w czasie the uroczystość z Tibia's 15th rocznica",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.368102Z"
+  },
+  "item.14673.desc": {
+    "src_hash": "3715465c84597a2794431025999cbf3d",
+    "text": "To był I. podczas, w czasie the uroczystość z Tibia's 15th rocznica",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.368999Z"
+  },
+  "item.14674.desc": {
+    "src_hash": "3715465c84597a2794431025999cbf3d",
+    "text": "To był I. podczas, w czasie the uroczystość z Tibia's 15th rocznica",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.369872Z"
+  },
+  "item.14675.desc": {
+    "src_hash": "f8260ddde642e2d75b0a592e57332de8",
+    "text": "To był I. podczas, w czasie the uroczystość z Tibia's rocznica",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.370580Z"
+  },
+  "item.14769.desc": {
+    "src_hash": "deaed1bc929712d0e0b192fc259c7b5b",
+    "text": "To I. twój zaklęCentalna Agencja Wywiadowcza i może także I. o I. when wytarty",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.376495Z"
+  },
+  "item.15822.desc": {
+    "src_hash": "4a52911faeb0be65e7d31bfb2e1a6e26",
+    "text": "As long as to jest immersed that I. ty won't być zdolny do get jeden whetstone.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.386076Z"
+  },
+  "item.15823.desc": {
+    "src_hash": "4a52911faeb0be65e7d31bfb2e1a6e26",
+    "text": "As long as to jest immersed that I. ty won't być zdolny do get jeden whetstone.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.386928Z"
+  },
+  "item.15824.desc": {
+    "src_hash": "4a52911faeb0be65e7d31bfb2e1a6e26",
+    "text": "As long as to jest immersed that I. ty won't być zdolny do get jeden whetstone.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.387736Z"
+  },
+  "item.16107.desc": {
+    "src_hash": "deaed1bc929712d0e0b192fc259c7b5b",
+    "text": "To I. twój zaklęCentalna Agencja Wywiadowcza i może także I. o I. when wytarty",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.394223Z"
+  },
+  "item.16153.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Pustelnik koło Carlin może ci o tym więcej opowiedzieć",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.399580Z"
+  },
+  "item.16154.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Pustelnik koło Carlin może ci o tym więcej opowiedzieć",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.400312Z"
+  },
+  "item.16155.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Pustelnik koło Carlin może ci o tym więcej opowiedzieć",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.401001Z"
+  },
+  "item.16251.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Pustelnik koło Carlin może ci o tym więcej opowiedzieć",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.413508Z"
+  },
+  "item.16264.name": {
+    "src_hash": "0400684d59bb10f7c620e0612035880f",
+    "text": "pryzmatyczny pierścień",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.417456Z"
+  },
+  "item.17238.desc": {
+    "src_hash": "25447addfecb86102efa8cef28f12ea3",
+    "text": "Dowcip jeden I. w the sufit.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.433158Z"
+  },
+  "item.17858.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Pustelnik koło Carlin może ci o tym więcej opowiedzieć",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.472624Z"
+  },
+  "item.19136.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Pustelnik koło Carlin może ci o tym więcej opowiedzieć",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.637047Z"
+  },
+  "item.20270.desc": {
+    "src_hash": "2a2cb639ca3eb503eaa6327e07b5dd8d",
+    "text": "Ty dreamt that I. I. otwierać the więzienie z jeden potężny przerażenie, zgroza that ty miał do I. na twój I.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.717496Z"
+  },
+  "item.20271.desc": {
+    "src_hash": "2a2cb639ca3eb503eaa6327e07b5dd8d",
+    "text": "Ty dreamt that I. I. otwierać the więzienie z jeden potężny przerażenie, zgroza that ty miał do I. na twój I.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.718446Z"
+  },
+  "item.20272.desc": {
+    "src_hash": "2a2cb639ca3eb503eaa6327e07b5dd8d",
+    "text": "Ty dreamt that I. I. otwierać the więzienie z jeden potężny przerażenie, zgroza that ty miał do I. na twój I.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.719775Z"
+  },
+  "item.20273.desc": {
+    "src_hash": "2a2cb639ca3eb503eaa6327e07b5dd8d",
+    "text": "Ty dreamt that I. I. otwierać the więzienie z jeden potężny przerażenie, zgroza that ty miał do I. na twój I.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.721012Z"
+  },
+  "item.20274.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Pustelnik koło Carlin może ci o tym więcej opowiedzieć",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.721705Z"
+  },
+  "item.20355.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Pustelnik koło Carlin może ci o tym więcej opowiedzieć",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.729405Z"
+  },
+  "item.21186.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Pustelnik koło Carlin może ci o tym więcej opowiedzieć",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.772040Z"
+  },
+  "item.21400.desc": {
+    "src_hash": "deaed1bc929712d0e0b192fc259c7b5b",
+    "text": "To I. twój zaklęCentalna Agencja Wywiadowcza i może także I. o I. when wytarty",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.801784Z"
+  },
+  "item.21501.desc": {
+    "src_hash": "25447addfecb86102efa8cef28f12ea3",
+    "text": "Dowcip jeden I. w the sufit.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.819476Z"
+  },
+  "item.21804.desc": {
+    "src_hash": "8ea5477ba9ac1ce6f3e5c5e41145a10e",
+    "text": "I. i I. a. wydawać się być, wydawać się, zdawać się do I. inside z to I. czas ty look I.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.852472Z"
+  },
+  "item.21805.desc": {
+    "src_hash": "8ea5477ba9ac1ce6f3e5c5e41145a10e",
+    "text": "I. i I. a. wydawać się być, wydawać się, zdawać się do I. inside z to I. czas ty look I.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.853616Z"
+  },
+  "item.21812.desc": {
+    "src_hash": "8ea5477ba9ac1ce6f3e5c5e41145a10e",
+    "text": "I. i I. a. wydawać się być, wydawać się, zdawać się do I. inside z to I. czas ty look I.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.856327Z"
+  },
+  "item.21965.desc": {
+    "src_hash": "25447addfecb86102efa8cef28f12ea3",
+    "text": "Dowcip jeden I. w the sufit.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.908416Z"
+  },
+  "item.21966.desc": {
+    "src_hash": "25447addfecb86102efa8cef28f12ea3",
+    "text": "Dowcip jeden I. w the sufit.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.909083Z"
+  },
+  "item.21967.desc": {
+    "src_hash": "25447addfecb86102efa8cef28f12ea3",
+    "text": "Dowcip jeden I. w the sufit.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.910010Z"
+  },
+  "item.21968.desc": {
+    "src_hash": "25447addfecb86102efa8cef28f12ea3",
+    "text": "Dowcip jeden I. w the sufit.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.910867Z"
+  },
+  "item.22764.desc": {
+    "src_hash": "c46f23ae7015e28db0c695f1b3f76970",
+    "text": "To jest zrobiony z I. i I. i topped by jeden large F zrobiony z złota",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:02.999934Z"
+  },
+  "item.22765.desc": {
+    "src_hash": "c46f23ae7015e28db0c695f1b3f76970",
+    "text": "To jest zrobiony z I. i I. i topped by jeden large F zrobiony z złota",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:03.001061Z"
+  },
+  "item.22766.desc": {
+    "src_hash": "c46f23ae7015e28db0c695f1b3f76970",
+    "text": "To jest zrobiony z I. i I. i topped by jeden large F zrobiony z złota",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:03.002150Z"
+  },
+  "item.23363.desc": {
+    "src_hash": "25447addfecb86102efa8cef28f12ea3",
+    "text": "Dowcip jeden I. w the sufit.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:03.024827Z"
+  },
+  "item.23373.name": {
+    "src_hash": "924ff5847516cccc34a14f9e101ca7c6",
+    "text": "ostateczny mana mikstura",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:03.027344Z"
+  },
+  "item.23399.desc": {
+    "src_hash": "d77880585d48fa14b770de7bbc7770bd",
+    "text": "I. Tibia I.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:03.031179Z"
+  },
+  "item.23400.desc": {
+    "src_hash": "d77880585d48fa14b770de7bbc7770bd",
+    "text": "I. Tibia I.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:02:03.032157Z"
   }
 }

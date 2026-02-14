@@ -6,7 +6,7 @@
   "channel.guild_leaders.name": "Guild Líderes",
   "channel.help.msg_already_muted": "Ese reproductor ya está silenciado.",
   "channel.help.msg_muted": "Estás silenciado del canal de Ayuda por usarlo de manera inapropiada.",
-  "channel.help.msg_not_authorized_mute": "No estás autorizado a silenciar a ese jugador.",
+  "channel.help.msg_not_authorized_mute": "[EN] You are not authorized to mute that player.",
   "channel.help.msg_not_authorized_unmute": "No estás autorizado a reactivar el sonido de ese jugador.",
   "channel.help.msg_not_muted": "Ese reproductor no está silenciado.",
   "channel.help.name": "Ayuda",

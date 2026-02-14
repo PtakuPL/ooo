@@ -182,7 +182,7 @@
   "talkaction.online.msg_category_idle": "Bezczynni: {}",
   "talkaction.online.msg_category_training": "Trening: {}",
   "talkaction.online.msg_players_only": "{}",
-  "talkaction.online.msg_summary": "{} graczy online | Trening: {} | Bezczynni: {} | Aktywni: {}",
+  "talkaction.online.msg_summary": "[EN] {} players online | Training: {} | Idle: {} | Active: {}",
   "talkaction.player.aol.msg_not_enough_money": "Nie masz wystarczająco pieniędzy. Potrzebujesz {cost} złota, aby kupić aol!",
   "talkaction.player.auto_loot.msg_vip_required": "Musisz mieć VIP, aby użyć tej komendy!",
   "talkaction.player.buy_house.msg_already_owner": "Już jesteś właścicielem domu.",

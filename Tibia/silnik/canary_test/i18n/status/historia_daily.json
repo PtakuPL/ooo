@@ -1,42 +1,60 @@
 [
   {
     "date": "2026-02-14",
-    "hours_covered": 6,
+    "hours_covered": 7,
     "threshold": 5,
     "is_final": false,
     "ts_first": "2026-02-14T08:00:00Z",
-    "ts_last": "2026-02-14T10:55:35Z",
-    "translated": 1008,
-    "guard_fail": 759,
-    "suspicious_high": 662,
-    "identical_to_en": 280,
+    "ts_last": "2026-02-14T11:56:16Z",
+    "translated": 1440,
+    "guard_fail": 862,
+    "suspicious_high": 1144,
+    "identical_to_en": 383,
     "repair_start": 4800,
-    "repair_end": 799578,
-    "cycles": 10,
+    "repair_end": 1084776,
+    "cycles": 12,
     "coverage_start": 22.5,
-    "coverage_end": 23.16,
-    "guard_fail_pct": 42.95,
-    "throughput_per_h": 168.0,
+    "coverage_end": 10.78,
+    "guard_fail_pct": 37.45,
+    "throughput_per_h": 205.7,
     "per_lang": {
       "pl": {
-        "t": 687,
-        "gf": 418,
-        "cov": 75.31
+        "t": 903,
+        "gf": 448,
+        "cov": 72.97
       },
       "es": {
-        "t": 241,
-        "gf": 341,
-        "cov": 87.39
+        "t": 417,
+        "gf": 414,
+        "cov": 77.96
+      },
+      "el": {
+        "t": 20,
+        "gf": 0,
+        "cov": 5.67
+      },
+      "lt": {
+        "t": 20,
+        "gf": 0,
+        "cov": 6.23
       }
     },
     "per_cat": {
       "items.json": {
-        "t": 420,
-        "gf": 27
+        "t": 500,
+        "gf": 28
       },
       "npc.json": {
-        "t": 312,
-        "gf": 469
+        "t": 347,
+        "gf": 534
+      },
+      "monsters.json": {
+        "t": 147,
+        "gf": 14
+      },
+      "server.json": {
+        "t": 98,
+        "gf": 15
       },
       "html.json": {
         "t": 75,
@@ -46,6 +64,14 @@
         "t": 40,
         "gf": 5
       },
+      "spells.json": {
+        "t": 36,
+        "gf": 0
+      },
+      "quests.json": {
+        "t": 29,
+        "gf": 3
+      },
       "books.json": {
         "t": 25,
         "gf": 20
@@ -53,26 +79,10 @@
       "otclient_modules.json": {
         "t": 20,
         "gf": 144
-      },
-      "php.json": {
-        "t": 10,
-        "gf": 0
-      },
-      "talkactions.json": {
-        "t": 10,
-        "gf": 20
-      },
-      "cpp.json": {
-        "t": 9,
-        "gf": 17
-      },
-      "modules.json": {
-        "t": 5,
-        "gf": 10
       }
     },
     "mode_distribution": {
-      "AUTO_TRANSLATE": 73
+      "AUTO_TRANSLATE": 97
     },
     "migration_completed": 2297,
     "migration_total": 2299

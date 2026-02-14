@@ -1,8 +1,8 @@
 {
-  "total_cycles": 1,
+  "total_cycles": 2,
   "mode": "AUTO_TRANSLATE",
-  "category": "lt",
-  "last_update": "2026-02-14T12:51:26.169561",
+  "category": "es",
+  "last_update": "2026-02-14T13:00:47.763507",
   "migration": {
     "files_scanned": 2297,
     "files_scanned_live": 2299,
@@ -23,135 +23,14 @@
     "keys_to_sync": 0
   },
   "auto_translate": {
-    "language": "lt",
-    "json_file": "npc.json",
-    "keys_to_translate": 20,
+    "language": "es",
+    "json_file": "scripts.json",
+    "keys_to_translate": 32,
     "guard_fail": 0,
     "strict_missing_key": 0,
     "strict_blocker": "",
-    "recent_translated": 20,
-    "recent_examples": [
-      {
-        "key": "npc.a_fluffy_squirrel.sendtrade_msg_1",
-        "en": "Chchch. Chh! <you're not sure, but it seems that squirrel wants to trade your valuable acorns for useless stones that it found and considered uneatable>",
-        "translated": "Chchch. Chh! <you're not sure, but it seems that squirrel wants to trade your valuable acorns for useless stones that it found and considered uneatable>",
-        "source": "tm"
-      },
-      {
-        "key": "npc.a_fluffy_squirrel.stdmod_1",
-        "en": "Chh? Chhh?? <though you don't understand squirrelish, that one seems really excited>",
-        "translated": "Chh? Chhh?? <though you don't understand squirrelish, that one seems really excited>",
-        "source": "tm"
-      },
-      {
-        "key": "npc.a_weakened_forest_fury.say_4",
-        "en": "Take care, guardian.",
-        "translated": "Take care, guardian.",
-        "source": "tm"
-      },
-      {
-        "key": "npc.albinius.say_10",
-        "en": "As you wish.",
-        "translated": "As you wish.",
-        "source": "tm"
-      },
-      {
-        "key": "npc.andrew_lyze.say_14",
-        "en": "Don't waste my time.",
-        "translated": "Don't waste my time.",
-        "source": "tm"
-      },
-      {
-        "key": "npc.appaloosa.say_5",
-        "en": "Have a nice trip!",
-        "translated": "Have a nice trip!",
-        "source": "tm"
-      },
-      {
-        "key": "npc.atrad.say_3",
-        "en": "You don't have it...",
-        "translated": "You don't have it...",
-        "source": "tm"
-      },
-      {
-        "key": "npc.brodrosch.walkaway_msg_1",
-        "en": "Good bye then.",
-        "translated": "Good bye then.",
-        "source": "tm"
-      },
-      {
-        "key": "npc.captain_seahorse.walkaway_msg_1",
-        "en": "Good bye then.",
-        "translated": "Good bye then.",
-        "source": "tm"
-      },
-      {
-        "key": "npc.chester_kahs.say_23",
-        "en": "As you wish.",
-        "translated": "As you wish.",
-        "source": "tm"
-      },
-      {
-        "key": "npc.chondur.say_18",
-        "en": "You don't have it...",
-        "translated": "You don't have it...",
-        "source": "tm"
-      },
-      {
-        "key": "npc.dedoras.walkaway_msg_1",
-        "en": "Well, bye then.",
-        "translated": "Well, bye then.",
-        "source": "tm"
-      },
-      {
-        "key": "npc.duncan.say_12",
-        "en": "You don't have it...",
-        "translated": "You don't have it...",
-        "source": "tm"
-      },
-      {
-        "key": "npc.duncan.say_14",
-        "en": "You don't have it...",
-        "translated": "You don't have it...",
-        "source": "tm"
-      },
-      {
-        "key": "npc.duncan.say_15",
-        "en": "You don't have it...",
-        "translated": "You don't have it...",
-        "source": "tm"
-      },
-      {
-        "key": "npc.duncan.say_17",
-        "en": "You don't have it...",
-        "translated": "You don't have it...",
-        "source": "tm"
-      },
-      {
-        "key": "npc.duncan.say_19",
-        "en": "You don't have it...",
-        "translated": "You don't have it...",
-        "source": "tm"
-      },
-      {
-        "key": "npc.elane.say_11",
-        "en": "You don't have it...",
-        "translated": "You don't have it...",
-        "source": "tm"
-      },
-      {
-        "key": "npc.elane.say_13",
-        "en": "You don't have it...",
-        "translated": "You don't have it...",
-        "source": "tm"
-      },
-      {
-        "key": "npc.elane.say_15",
-        "en": "You don't have it...",
-        "translated": "You don't have it...",
-        "source": "tm"
-      }
-    ]
+    "recent_translated": 0,
+    "recent_examples": []
   },
   "idle": {
     "new_files_detected": 152,

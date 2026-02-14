@@ -4550,5 +4550,165 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-14T07:56:40.519195Z"
+  },
+  "quests.actions_chests.msg_1": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Είναι άδειο.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T11:53:41.963423Z"
+  },
+  "quests.actions_coral.msg_1": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Sorry.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:53:41.963820Z"
+  },
+  "quests.actions_crystal.msg_1": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Sorry.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:53:41.964209Z"
+  },
+  "quests.bigfoot_burden.chest_empty": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "You found.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:53:41.965777Z"
+  },
+  "quests.bigfoot_burden.mouthpiece_empty": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Είναι άδειο.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T11:53:41.966464Z"
+  },
+  "quests.movements_arena_enter.say_1": {
+    "src_hash": "3bb3470755c465f042163233b672a4fb",
+    "text": "Fight!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:53:41.969158Z"
+  },
+  "quests.movements_arena_pit.say_1": {
+    "src_hash": "477fb3950c49773dfcb06d6a48db93db",
+    "text": "Fight!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:53:41.969430Z"
+  },
+  "quests.threatened_dreams.it_is_empty": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Είναι άδειο.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T11:53:41.972136Z"
+  },
+  "quests.2_ambassadors_treason.msg_1": {
+    "src_hash": "8464bf58b6d5fa7bbe7ed698b810582e",
+    "text": "Δεν βρίσκετε τίποτα στο σπίτι του Πρέσβη. Εάν είναι στην πραγματικότητα προδότης, απαλλάχθηκε από κάθε στοιχείο που θα μπορούσε να τον ενοχοποιήσει.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:53:44.816431Z"
+  },
+  "quests.2_ambassadors_treason.msg_2": {
+    "src_hash": "dd483e9a16530ce89de99a1dc0f9f197",
+    "text": "Το έχετε ήδη ερευνήσει.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:53:44.816904Z"
+  },
+  "quests.2_ambassadors_treason.msg_3": {
+    "src_hash": "92080f0ef8fde073cd9d9b26347d601b",
+    "text": "Εξετάζετε προσεκτικά τους κυλίνδρους. Αυτές είναι εντολές από Rathleton για τον Πρέσβη. Κανένα σημάδι προδοσίας εδώ.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:53:44.817800Z"
+  },
+  "quests.2_ambassadors_treason.msg_4": {
+    "src_hash": "dd483e9a16530ce89de99a1dc0f9f197",
+    "text": "Το έχετε ήδη ερευνήσει.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:53:44.818454Z"
+  },
+  "quests.2_ambassadors_treason.msg_5": {
+    "src_hash": "f0502f434837f12f681eb194dd73e2d4",
+    "text": "Τα υπολείμματα χαρτιού βρίσκονται διάσπαρτα στο πάτωμα. Χρειάζεται λίγος χρόνος για να τα συνδυάσετε ξανά. Αλλά είναι μόνο ένα κακογραμμένο ποίημα.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:53:44.819223Z"
+  },
+  "quests.2_ambassadors_treason.msg_6": {
+    "src_hash": "dd483e9a16530ce89de99a1dc0f9f197",
+    "text": "Το έχετε ήδη ερευνήσει.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:53:48.443191Z"
+  },
+  "quests.2_ambassadors_treason.msg_7": {
+    "src_hash": "14dfffed3e8aaff6aa4f4509ee470001",
+    "text": "Έγγραφα κάηκαν εδώ πρόσφατα. Μόνο το μέρος του ενός κυλίνδρου βρίσκεται ακόμα μπροστά από την καμινάδα, αλλά είναι πολύ βρεγμένο για να το διαβάσετε.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:53:48.443940Z"
+  },
+  "quests.6_mind_travel.msg_1": {
+    "src_hash": "98da952f701d6358d74f1d9a180990fa",
+    "text": "Μετακινηθήκατε στην αριστερή πλευρά του εγκεφάλου",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:53:48.444402Z"
+  },
+  "quests.6_mind_travel.msg_2": {
+    "src_hash": "1e57dd425d49fa37eefdeb9faa01a4f2",
+    "text": "Μετακινηθήκατε στη δεξιά πλευρά του εγκεφάλου",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:53:48.444828Z"
+  },
+  "quests.6_mind_travel.msg_3": {
+    "src_hash": "39c4cd386bc515db3ca13ad71ea9a439",
+    "text": "Νιώθεις τρέμουλο και ζαλάδα, ο κόσμος σκοτεινιάζει γύρω σου. Τότε η όρασή σας καθαρίζει ξανά - και βρίσκεστε κάπου αλλού.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:53:48.445521Z"
+  },
+  "quests.8_blessing_the_statues.msg_1": {
+    "src_hash": "4a64e6aeefc9b8c9f1fd15709a257e2d",
+    "text": "Ευλογήσατε ήδη αυτό το άγαλμα.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:53:50.906924Z"
+  },
+  "quests.8_blessing_the_statues.msg_2": {
+    "src_hash": "414cb5c464ec2b74b4431b6931757db9",
+    "text": "Ευλογείς το άγαλμα.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:53:50.907280Z"
   }
 }

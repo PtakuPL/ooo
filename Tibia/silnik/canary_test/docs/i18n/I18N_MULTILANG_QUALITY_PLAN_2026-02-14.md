@@ -1748,6 +1748,33 @@ Godzina 3:30  Guardian uruchamia Worker C (migration) — slot 30min
 
 ---
 
+## 0e. Update wykonania (2026-02-14 11:55 UTC) — macierz LT/CS/EL/IT + szybkie wymuszenia
+
+### Zrealizowane
+- ✅ Runtime audyt workera dla `lt/cs/el/it` z podziałem na `items.json`, `npc.json`, `quests.json` (12 kombinacji).
+- ✅ Uzupełnione brakujące kombinacje questowe `cs/quests` i `el/quests`.
+- ✅ Wdrożona poprawka `AUTO:<lang>:<json>:N`:
+  - limit `N` jest teraz respektowany (nie rozszerza się automatycznie do 80),
+  - dla wymuszeń z limitem działa `AUTO_COMMAND_FAST_MODE` (bez ciężkich etapów po tłumaczeniu).
+- ✅ Artefakty audytu:
+  - `canary_test/i18n/status/manual_runtime_latest_matrix_2026-02-14.tsv`
+  - `canary_test/i18n/status/manual_quality_samples_lt_cs_el_it_2026-02-14.jsonl`
+
+### Najważniejsze błędy jakości wykryte w próbkach
+1. `lt/npc.json`: EN-copy z TM (20/20 wpisów próbki `translated == en`).
+2. `lt/items.json`: EN-copy nazw (`energy ring`, `lavafungus ring`) bez translacji.
+3. `lt/cs/el quests.json`: błędne mapowanie semantyczne `The chest is empty.` -> `You found.`.
+4. `cs/quests.json`: obcięcie trailing-space w fragmentach konkatenowanych (`You have to wait `, `All the players need to be level `).
+5. `lt/cs/el quests.json`: nadal EN-fragmenty (`Sorry.`, `Fight!`) dla kluczy oznaczonych jako translatable.
+
+### Nowe zadania jakości (dodane)
+- [ ] MQ-QUEST-1 (P0): naprawić `simple` mapping dla kluczy questowych z pustą skrzynią i fragmentami komunikatów.
+- [ ] MQ-QUEST-2 (P0): twardy kontrakt zachowania trailing-space dla fragmentów runtime concat.
+- [ ] MQ-NPC-1 (P0): hard reject TM EN-copy dla `npc.json` (z wyjątkiem whitelisty nietłumaczalnych).
+- [ ] MQ-FAST-1 (P1): SLA dla wymuszonych komend testowych (`N<=30` -> roundtrip <=45s) + telemetry.
+
+---
+
 ## Changelog
 
 | Data | Zmiana |
@@ -1762,6 +1789,7 @@ Godzina 3:30  Guardian uruchamia Worker C (migration) — slot 30min
 | 2026-02-14 | Faza 5 PLAN: pełny plan historii postępu (5.0–5.13.14), ~1400 linii dokumentacji |
 | 2026-02-14 | Faza 5 IMPL: MODUŁ 9 w statusd ✅ — run_historia_snapshot(), aggregate_daily_progressive(), aggregate_weekly(), render_historia_md(). Pliki: historia_snapshots.jsonl, historia_daily.json, historia_weekly.json, i18n_status_historia.md. CLI: --historia. Integracja z daemon loop (co 1h). Przetestowane ✅ |
 | 2026-02-14 | Grammar checks ✅: S13 (DE noun capitalization after articles), S14 (FR punctuation spacing before ;:!?). Dodane do detect_suspicious() w workerze. |
+| 2026-02-14 | Runtime matrix LT/CS/EL/IT (items/npc/quests) + fast AUTO limit fix (`AUTO:N` respektuje limit, tryb fast dla krótkich wymuszeń). Wykryte regresje: EN-copy TM, quest semantic map drift, trailing-space drift. |
 | 2026-02-15 | Faza 6 CONCEPT: Dokumentacja wizji guardian multi-worker orchestration (⬜ FUTURE — wymaga zatwierdzenia). Schemat: guardian zarządza wieloma workerami o różnych specjalizacjach, inteligentny scheduler, pause/resume, shared state. |
 | 2026-02-15 | 4c DONE: MODUŁ 10 w statusd — tygodniowy raport wielojęzyczny. Per-tier coverage, fastest/slowest growing, ETA, 52-entry history. CLI: `--weekly-multilang`. Artefakty: `weekly_multilang_report.json`, `weekly_multilang_history.json`, `i18n_weekly_multilang_report.md`. |
 | 2026-02-15 | Queue freshness SLA ✅: WARN >900s, CRIT >1800s w doctor (MODUŁ 2) + KPI (MODUŁ 3). Config: `QUEUE_FRESHNESS_WARN_S`, `QUEUE_FRESHNESS_CRIT_S`. |

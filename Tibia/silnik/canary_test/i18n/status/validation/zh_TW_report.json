@@ -2,57 +2,27 @@
   "lang": "zh_TW",
   "script_group": "cjk",
   "total_keys": 53586,
-  "translated": 35607,
-  "identical_to_en": 34983,
-  "placeholder_keys": 15824,
+  "translated": 35568,
+  "identical_to_en": 34943,
+  "placeholder_keys": 15863,
   "coverage_pct": 66.4,
-  "issues_total": 17,
+  "issues_total": 12,
   "issues_by_type": {
     "V2_length_ratio": 9,
-    "V1_placeholder_mismatch": 7,
+    "V1_placeholder_mismatch": 2,
     "V5_pipe_mismatch": 1
   },
   "issues_by_severity": {
-    "CRITICAL": 8,
+    "CRITICAL": 3,
     "HIGH": 0,
     "MEDIUM": 9,
     "LOW": 0
   },
-  "score": 99.9,
+  "score": 100.0,
   "worst_keys": [
     {
       "key": "scripts.actions_rewards.msg_1",
       "category": "scripts",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "scripts.manage_tutor.msg_1",
-      "category": "scripts",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "scripts.manage_tutor.msg_2",
-      "category": "scripts",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "server.game.msg_32",
-      "category": "server",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "server.player.msg_11",
-      "category": "server",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "server.spells.msg_3",
-      "category": "server",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
     },
@@ -125,11 +95,11 @@
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 416,
+    "issues_total": 413,
     "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 16,
-    "auto_fix_applied": 40
+    "length_ratio": 13,
+    "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-14T11:47:23.187364Z"
+  "validated_at": "2026-02-14T12:00:47.572689Z"
 }

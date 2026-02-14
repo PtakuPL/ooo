@@ -1,293 +1,188 @@
 {
-  "timestamp": "2026-02-14T11:51:26.095327Z",
+  "timestamp": "2026-02-14T12:00:38.863680Z",
   "checked_entries": 100,
-  "issues_found": 40,
+  "issues_found": 25,
   "issues_by_type": {
-    "identical_to_en": 40,
-    "identical_to_en_exempt": 9,
-    "suspicious_log_low": 134,
-    "suspicious_log_critical": 1,
-    "suspicious_log_high": 57,
-    "suspicious_log_medium": 8,
+    "identical_to_en_exempt": 28,
+    "identical_to_en": 25,
+    "suspicious_log_high": 45,
+    "suspicious_log_low": 123,
+    "suspicious_log_medium": 9,
+    "suspicious_log_critical": 23,
     "suspicious_rejected_critical": 200
   },
   "issues": [
     {
-      "key": "spell.hideous_fungus_summon.name",
+      "key": "quests.movements_arena_pit.say_1",
+      "lang": "cs",
+      "type": "identical_to_en",
+      "en": "Fight!",
+      "translated": "Fight!"
+    },
+    {
+      "key": "quests.movements_arena_pit.say_1",
+      "lang": "el",
+      "type": "identical_to_en",
+      "en": "Fight!",
+      "translated": "Fight!"
+    },
+    {
+      "key": "scripts.actions_pyramids2.msg_1",
       "lang": "es",
       "type": "identical_to_en",
-      "en": "Hideous Fungus Summon",
-      "translated": "Hideous Fungus Summon"
+      "en": "<screeeech> <squeak> <squeaaaaal>",
+      "translated": "<screeeech> <squeak> <squeaaaaal>"
     },
     {
-      "key": "spell.death_priest_shargon_curse.name",
+      "key": "scripts.music_box.sound_magma_crawler",
       "lang": "es",
       "type": "identical_to_en",
-      "en": "Death Priest Shargon Curse",
-      "translated": "Death Priest Shargon Curse"
+      "en": "ZzzZzzZzzzZz",
+      "translated": "ZzzZzzZzzzZz"
     },
     {
-      "key": "spell.magma_crawler_soulfire.name",
+      "key": "scripts.on_look.admin_ip",
       "lang": "es",
       "type": "identical_to_en",
-      "en": "Magma Crawler Soulfire",
-      "translated": "Magma Crawler Soulfire"
+      "en": "%s\nIP: %s",
+      "translated": "%s\nIP: %s"
     },
     {
-      "key": "spell.devovorga_curse.name",
+      "key": "raid.undead_cavebear.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Undead Cavebear",
+      "translated": "Undead Cavebear"
+    },
+    {
+      "key": "raid.diblis_the_fair.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Diblis The Fair",
+      "translated": "Diblis The Fair"
+    },
+    {
+      "key": "raid.the_old_widow.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "The Old Widow",
+      "translated": "The Old Widow"
+    },
+    {
+      "key": "raid.feverish_citizen.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Feverish Citizen",
+      "translated": "Feverish Citizen"
+    },
+    {
+      "key": "raid.water_buffalo.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Water Buffalo",
+      "translated": "Water Buffalo"
+    },
+    {
+      "key": "raid.sir_valorcrest.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Sir Valorcrest",
+      "translated": "Sir Valorcrest"
+    },
+    {
+      "key": "raid.weakened_shlorg.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Weakened Shlorg",
+      "translated": "Weakened Shlorg"
+    },
+    {
+      "key": "raid.zevelon_duskbringer.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Zevelon Duskbringer",
+      "translated": "Zevelon Duskbringer"
+    },
+    {
+      "key": "raid.zulazza_the_corruptor.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Zulazza The Corruptor",
+      "translated": "Zulazza The Corruptor"
+    },
+    {
+      "key": "raid.undead_darashia.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Undead Darashia",
+      "translated": "Undead Darashia"
+    },
+    {
+      "key": "raid.barba_bittermor.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Barba Bittermor",
+      "translated": "Barba Bittermor"
+    },
+    {
+      "key": "raid.terrorbirds.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Terrorbirds",
+      "translated": "Terrorbirds"
+    },
+    {
+      "key": "raid.gaz_haragoth.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Gaz Haragoth",
+      "translated": "Gaz Haragoth"
+    },
+    {
+      "key": "raid.gnarlhounds.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Gnarlhounds",
+      "translated": "Gnarlhounds"
+    },
+    {
+      "key": "npc.a_sleeping_dragon.multi_1",
       "lang": "es",
       "type": "identical_to_en",
-      "en": "Devovorga Curse",
-      "translated": "Devovorga Curse"
-    },
-    {
-      "key": "spell.cults_of_tibia_armor_buff.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Cults Of Tibia Armor Buff",
-      "translated": "Cults Of Tibia Armor Buff"
-    },
-    {
-      "key": "spell.white_shade_paralyze.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "White Shade Paralyze",
-      "translated": "White Shade Paralyze"
-    },
-    {
-      "key": "spell.plant_abomination_wave.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Plant Abomination Wave",
-      "translated": "Plant Abomination Wave"
-    },
-    {
-      "key": "spell.large_ice_ring.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Large Ice Ring",
-      "translated": "Large Ice Ring"
-    },
-    {
-      "key": "spell.teleport_strike.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Teleport Strike",
-      "translated": "Teleport Strike"
-    },
-    {
-      "key": "spell.quara_constrictor_freeze.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Quara Constrictor Freeze",
-      "translated": "Quara Constrictor Freeze"
-    },
-    {
-      "key": "spell.lersatio_summon.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Lersatio Summon",
-      "translated": "Lersatio Summon"
-    },
-    {
-      "key": "spell.elder_bonelord_paralyze.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "elder bonelord paralyze",
-      "translated": "elder bonelord paralyze"
-    },
-    {
-      "key": "spell.physical_barrage.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Physical Barrage",
-      "translated": "Physical Barrage"
-    },
-    {
-      "key": "spell.explosion_wave.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Explosion Wave",
-      "translated": "Explosion Wave"
-    },
-    {
-      "key": "spell.incineron_soulfire.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Incineron Soulfire",
-      "translated": "Incineron Soulfire"
-    },
-    {
-      "key": "spell.plaguesmith_wave.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Plaguesmith Wave",
-      "translated": "Plaguesmith Wave"
-    },
-    {
-      "key": "spell.lich_paralyze.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Lich Paralyze",
-      "translated": "Lich Paralyze"
-    },
-    {
-      "key": "item.3051.name",
-      "lang": "lt",
-      "type": "identical_to_en",
-      "en": "energy ring",
-      "translated": "energy ring"
-    },
-    {
-      "key": "item.3088.name",
-      "lang": "lt",
-      "type": "identical_to_en",
-      "en": "energy ring",
-      "translated": "energy ring"
-    },
-    {
-      "key": "item.36786.name",
-      "lang": "lt",
-      "type": "identical_to_en",
-      "en": "lavafungus ring",
-      "translated": "lavafungus ring"
-    },
-    {
-      "key": "npc.a_fluffy_squirrel.sendtrade_msg_1",
-      "lang": "lt",
-      "type": "identical_to_en",
-      "en": "Chchch. Chh! <you're not sure, but it seems that squirrel wants to trade your valuable acorns for useless stones that it found and considered uneatable>",
-      "translated": "Chchch. Chh! <you're not sure, but it seems that squirrel wants to trade your valuable acorns for useless stones that it found and considered uneatable>"
-    },
-    {
-      "key": "npc.a_fluffy_squirrel.stdmod_1",
-      "lang": "lt",
-      "type": "identical_to_en",
-      "en": "Chh? Chhh?? <though you don't understand squirrelish, that one seems really excited>",
-      "translated": "Chh? Chhh?? <though you don't understand squirrelish, that one seems really excited>"
+      "en": "SAETHELON TORILUN GARNUM. ...",
+      "translated": "SAETHELON TORILUN GARNUM. ..."
     },
     {
       "key": "npc.a_weakened_forest_fury.say_4",
-      "lang": "lt",
+      "lang": "es",
       "type": "identical_to_en",
       "en": "Take care, guardian.",
       "translated": "Take care, guardian."
     },
     {
       "key": "npc.albinius.say_10",
-      "lang": "lt",
+      "lang": "es",
       "type": "identical_to_en",
       "en": "As you wish.",
       "translated": "As you wish."
     },
     {
       "key": "npc.andrew_lyze.say_14",
-      "lang": "lt",
+      "lang": "es",
       "type": "identical_to_en",
       "en": "Don't waste my time.",
       "translated": "Don't waste my time."
     },
     {
       "key": "npc.appaloosa.say_5",
-      "lang": "lt",
+      "lang": "es",
       "type": "identical_to_en",
       "en": "Have a nice trip!",
       "translated": "Have a nice trip!"
     },
     {
       "key": "npc.atrad.say_3",
-      "lang": "lt",
-      "type": "identical_to_en",
-      "en": "You don't have it...",
-      "translated": "You don't have it..."
-    },
-    {
-      "key": "npc.brodrosch.walkaway_msg_1",
-      "lang": "lt",
-      "type": "identical_to_en",
-      "en": "Good bye then.",
-      "translated": "Good bye then."
-    },
-    {
-      "key": "npc.captain_seahorse.walkaway_msg_1",
-      "lang": "lt",
-      "type": "identical_to_en",
-      "en": "Good bye then.",
-      "translated": "Good bye then."
-    },
-    {
-      "key": "npc.chester_kahs.say_23",
-      "lang": "lt",
-      "type": "identical_to_en",
-      "en": "As you wish.",
-      "translated": "As you wish."
-    },
-    {
-      "key": "npc.chondur.say_18",
-      "lang": "lt",
-      "type": "identical_to_en",
-      "en": "You don't have it...",
-      "translated": "You don't have it..."
-    },
-    {
-      "key": "npc.dedoras.walkaway_msg_1",
-      "lang": "lt",
-      "type": "identical_to_en",
-      "en": "Well, bye then.",
-      "translated": "Well, bye then."
-    },
-    {
-      "key": "npc.duncan.say_12",
-      "lang": "lt",
-      "type": "identical_to_en",
-      "en": "You don't have it...",
-      "translated": "You don't have it..."
-    },
-    {
-      "key": "npc.duncan.say_14",
-      "lang": "lt",
-      "type": "identical_to_en",
-      "en": "You don't have it...",
-      "translated": "You don't have it..."
-    },
-    {
-      "key": "npc.duncan.say_15",
-      "lang": "lt",
-      "type": "identical_to_en",
-      "en": "You don't have it...",
-      "translated": "You don't have it..."
-    },
-    {
-      "key": "npc.duncan.say_17",
-      "lang": "lt",
-      "type": "identical_to_en",
-      "en": "You don't have it...",
-      "translated": "You don't have it..."
-    },
-    {
-      "key": "npc.duncan.say_19",
-      "lang": "lt",
-      "type": "identical_to_en",
-      "en": "You don't have it...",
-      "translated": "You don't have it..."
-    },
-    {
-      "key": "npc.elane.say_11",
-      "lang": "lt",
-      "type": "identical_to_en",
-      "en": "You don't have it...",
-      "translated": "You don't have it..."
-    },
-    {
-      "key": "npc.elane.say_13",
-      "lang": "lt",
-      "type": "identical_to_en",
-      "en": "You don't have it...",
-      "translated": "You don't have it..."
-    },
-    {
-      "key": "npc.elane.say_15",
-      "lang": "lt",
+      "lang": "es",
       "type": "identical_to_en",
       "en": "You don't have it...",
       "translated": "You don't have it..."

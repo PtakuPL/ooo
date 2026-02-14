@@ -998,3 +998,32 @@ NICE TO HAVE (optymalizacja):
 6. PR: Rollout all-langs
 
 ### Gałąź: `feature/i18n-multilanguage` → merge do `master` (repo: PtakuPL/ooo)
+
+---
+
+## 9. Aktualizacja wykonania (2026-02-14 11:55 UTC) — fast AUTO + audyt LT/CS/EL/IT
+
+### 9.1 Wykonane teraz
+- [x] `i18n_worker_simple.sh`: `AUTO:<lang>:<json>:N` respektuje limit `N` (efektywny limit = `min(global_translate_limit, N)`).
+- [x] Dodany `AUTO_COMMAND_FAST_MODE` dla wymuszeń z limitem (`N>0`): pomijane ciężkie etapy po tłumaczeniu (parallel langs, repair bonus round, quality audit, tier validation, full lang validation).
+- [x] Potwierdzone runtime: wymuszenia 20 kluczy kończą się realnie na 20 (nie 80) dla `lt/items`, `lt/npc`, `lt/quests`, `cs/quests`, `el/quests`.
+- [x] Artefakty audytu runtime:
+  - `canary_test/i18n/status/manual_runtime_forced_lang_matrix_2026-02-14.tsv`
+  - `canary_test/i18n/status/manual_runtime_latest_matrix_2026-02-14.tsv`
+  - `canary_test/i18n/status/manual_quality_samples_lt_cs_el_it_2026-02-14.jsonl`
+
+### 9.2 Nowe problemy wykryte (do naprawy)
+1. `quests.json` (LT/CS/EL): błędna mapa semantyczna `The chest is empty.` -> `You found.` (source=`simple`).
+2. `quests.json` (CS): utrata końcowej spacji w fragmentach łączonych runtime (`"You have to wait "`, `"All the players need to be level "`), co psuje składanie tekstu z parametrem.
+3. `npc.json` (LT): 20/20 wpisów próbki to EN-copy z TM (`translated == en`) mimo języka docelowego.
+4. `items.json` (LT): EN-copy nazw (`energy ring`, `lavafungus ring`) bez whitelisty "proper noun only".
+5. Opóźnienia komend runtime: `.worker_command` jest konsumowany tylko na starcie cyklu; przy długim cyklu operator czeka zbyt długo.
+6. Restarty ręczne: czasem zostaje lock `.worker_simple.start.lock` (proces `sleep` trzyma FD), co blokuje szybki restart testowy.
+
+### 9.3 Nowe zadania (priorytet)
+- [ ] WQ-FAST-1 (P1): dodać SLA komend wymuszonych (`AUTO N<=30 -> czas roundtrip <=45s`) + metrykę `forced_command_roundtrip_s` w status.
+- [ ] WQ-FAST-2 (P1): dodać high-priority poll `.worker_command` także między fazami cyklu (nie tylko na starcie).
+- [ ] WQ-LOCK-1 (P1): watchdog locka startowego — jeśli PID owner martwy, auto-clear lock + event do `errors.jsonl`.
+- [ ] WQ-QUEST-1 (P0): naprawić `simple` mapowania questowe (usunąć/zakazać mappingu `The chest is empty.` -> `You found.`).
+- [ ] WQ-QUEST-2 (P0): zachowanie końcowych spacji dla fragmentów konkatenowanych (kontrakt placeholder/concat).
+- [ ] WQ-TM-1 (P0): twardy gate TM dla EN-copy (translatable key: `translated==en` -> reject + kolejka repair).

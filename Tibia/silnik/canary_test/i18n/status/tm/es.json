@@ -138566,5 +138566,269 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-14T11:46:25.929238Z"
+  },
+  "scripts.moviments_bellow.say_1": {
+    "src_hash": "2d51ff0b2ebc68c6a3a2b38b1e672449",
+    "text": "CHOOOOOOHHHHH",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:55:41.227387Z"
+  },
+  "scripts.on_look.admin_player_health": {
+    "src_hash": "4926972296ce5551e17e6bf615d492bf",
+    "text": "%s\n%s\nSalud: %s / %s",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:55:45.105151Z"
+  },
+  "scripts.on_look.admin_player_health_mana": {
+    "src_hash": "47eb76e97c07498ef340aee6ed94eb7c",
+    "text": "%s, Maná: %s / %s",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:55:45.105623Z"
+  },
+  "scripts.on_look.position_coords": {
+    "src_hash": "4e0e3beb96fef75fd81a21856fff288b",
+    "text": "Posición: (%s, %s, %s)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:55:45.106139Z"
+  },
+  "raid.arachir_the_ancient_one.name": {
+    "src_hash": "0a30cc23ffefbf66b30e5409951d05dc",
+    "text": "Arachir antiguo one",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:01:19.483651Z"
+  },
+  "raid.necropharus.name": {
+    "src_hash": "1dfc4ba3c2e8604e04b859187b61ce43",
+    "text": "Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:01:19.484845Z"
+  },
+  "raid.the_pale_count.name": {
+    "src_hash": "3b72b8f24e68dd7e889fa0bcc093f7d4",
+    "text": "Pale conde",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:01:19.486023Z"
+  },
+  "raid.serpent_spawn.name": {
+    "src_hash": "4122411a36fbcd6b3d08ec393758d536",
+    "text": "Engendro serpiente",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:01:19.488583Z"
+  },
+  "raid.crustacea_gigantica_4.name": {
+    "src_hash": "e705031143466f92173a6cdc650abe2b",
+    "text": "Gigantica Muerto 4",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:01:19.489951Z"
+  },
+  "raid.crustacea_gigantica_5.name": {
+    "src_hash": "20ac80461ca5823703b1a1c4c5dc1853",
+    "text": "Gigantica Muerto 5",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:01:19.490971Z"
+  },
+  "raid.gaz_haragoth.name": {
+    "src_hash": "b3dd522c06865f52bf4321b5d07cbd06",
+    "text": "Haragoth Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:01:19.491886Z"
+  },
+  "raid.crustacea_gigantica_1.name": {
+    "src_hash": "fe15786d2dc84508d331b28dda2fd617",
+    "text": "Gigantica Muerto 1",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:01:19.492811Z"
+  },
+  "raid.undead_cavebear.name": {
+    "src_hash": "64e09822bd15852b6ce465912554b067",
+    "text": "Cavebear no-muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:01:19.493669Z"
+  },
+  "raid.crustacea_gigantica_2.name": {
+    "src_hash": "dbc8fdb622fbf9185d733a3ba7ddbd8d",
+    "text": "Gigantica Muerto 2",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:01:19.494721Z"
+  },
+  "raid.crustacea_gigantica_3.name": {
+    "src_hash": "0baf22f5185dcf61fc250759b7ff6349",
+    "text": "Gigantica Muerto 3",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:01:19.495620Z"
+  },
+  "raid.diblis_the_fair.name": {
+    "src_hash": "5cd6555c19e0b434371a7a34d538792b",
+    "text": "Diblis fair",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:01:19.496543Z"
+  },
+  "raid.the_old_widow.name": {
+    "src_hash": "0a46dc1f306c4565526cd2e7b1631bd1",
+    "text": "Viejo widow",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:01:19.497420Z"
+  },
+  "raid.feverish_citizen.name": {
+    "src_hash": "7f9a98bbccbfd04494fb0436a1bb2de3",
+    "text": "Feverish ciudadano",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:01:19.498574Z"
+  },
+  "raid.water_buffalo.name": {
+    "src_hash": "76970c076e84449bff9de4d9398d697e",
+    "text": "Buffalo de agua",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:01:19.499362Z"
+  },
+  "raid.weakened_shlorg.name": {
+    "src_hash": "7d6db214fa9761098b8e5462761b864c",
+    "text": "Shlorg Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:01:19.500488Z"
+  },
+  "raid.zulazza_the_corruptor.name": {
+    "src_hash": "50f128ec9e12698f936e0ea56a2b2b61",
+    "text": "Zulazza corruptor",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:01:19.502014Z"
+  },
+  "raid.undead_darashia.name": {
+    "src_hash": "514c7d86ea50becf3dec530e0e131ce0",
+    "text": "Undead Darashia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:01:20.935554Z"
+  },
+  "raid.priestesses.name": {
+    "src_hash": "99f5ad99e1be0fc1363f2a850146527c",
+    "text": "Priestesses",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:01:20.935948Z"
+  },
+  "raid.barba_bittermor.name": {
+    "src_hash": "65d5a9017ada07c5fd8a1f1f6f6fa605",
+    "text": "Barba Bittermor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:01:20.936375Z"
+  },
+  "raid.midnight_panther_3.name": {
+    "src_hash": "da72c589dd7fc87a49ed0ad968ab908c",
+    "text": "Midnight Panther 3",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:01:20.936714Z"
+  },
+  "raid.midnight_panther_1.name": {
+    "src_hash": "4dec404364fe3c69ff2b5b22e166ad04",
+    "text": "Midnight Panther 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:01:20.937035Z"
+  },
+  "raid.terrorbirds.name": {
+    "src_hash": "ad62c49e881d6596744c943bc6c38cac",
+    "text": "Terrorbirds",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:01:23.618263Z"
+  },
+  "raid.midnight_panther_2.name": {
+    "src_hash": "6e3040074dacf7fed85d0910a2cb9154",
+    "text": "Midnight Panther 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:01:23.618686Z"
+  },
+  "raid.wild_horses.name": {
+    "src_hash": "b7e3bb5561419e11e0638d054c1f6e13",
+    "text": "Wild Horses",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:01:23.618990Z"
+  },
+  "raid.orc_backpack.name": {
+    "src_hash": "1e7aba3f830ff555f743da7c0fc80c83",
+    "text": "Orc Backpack",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:01:23.619317Z"
+  },
+  "raid.sir_valorcrest.name": {
+    "src_hash": "f8298500215b17e312aa870c0031d7e4",
+    "text": "Sir Valorcrest",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:01:23.619679Z"
+  },
+  "raid.gnarlhounds.name": {
+    "src_hash": "2eb6e51fdfb88602e0edca297082c641",
+    "text": "Gnarlhounds",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:01:25.624484Z"
+  },
+  "raid.zevelon_duskbringer.name": {
+    "src_hash": "5ce47d3193e6d4fdcb52a667ed3dd600",
+    "text": "Zevelon Duskbringer",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:01:25.624933Z"
   }
 }

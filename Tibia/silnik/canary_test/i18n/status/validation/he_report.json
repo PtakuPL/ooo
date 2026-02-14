@@ -2,58 +2,28 @@
   "lang": "he",
   "script_group": "rtl",
   "total_keys": 53586,
-  "translated": 5015,
-  "identical_to_en": 3706,
-  "placeholder_keys": 46416,
-  "coverage_pct": 9.4,
-  "issues_total": 109,
+  "translated": 5007,
+  "identical_to_en": 3715,
+  "placeholder_keys": 48579,
+  "coverage_pct": 9.3,
+  "issues_total": 87,
   "issues_by_type": {
-    "script_rtl_insufficient": 100,
-    "V1_placeholder_mismatch": 7,
+    "script_rtl_insufficient": 83,
+    "V1_placeholder_mismatch": 2,
     "V4_artifact": 1,
     "V5_pipe_mismatch": 1
   },
   "issues_by_severity": {
-    "CRITICAL": 8,
-    "HIGH": 101,
+    "CRITICAL": 3,
+    "HIGH": 84,
     "MEDIUM": 0,
     "LOW": 0
   },
-  "score": 96.5,
+  "score": 97.3,
   "worst_keys": [
     {
       "key": "scripts.actions_rewards.msg_1",
       "category": "scripts",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "scripts.manage_tutor.msg_1",
-      "category": "scripts",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "scripts.manage_tutor.msg_2",
-      "category": "scripts",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "server.game.msg_32",
-      "category": "server",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "server.player.msg_11",
-      "category": "server",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "server.spells.msg_3",
-      "category": "server",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
     },
@@ -71,12 +41,6 @@
     },
     {
       "key": "achievement.67.name",
-      "category": "achievements",
-      "type": "script_rtl_insufficient",
-      "severity": "HIGH"
-    },
-    {
-      "key": "achievement.137.description",
       "category": "achievements",
       "type": "script_rtl_insufficient",
       "severity": "HIGH"
@@ -106,18 +70,6 @@
       "severity": "HIGH"
     },
     {
-      "key": "achievement.394.description",
-      "category": "achievements",
-      "type": "script_rtl_insufficient",
-      "severity": "HIGH"
-    },
-    {
-      "key": "event.player.msg1",
-      "category": "events",
-      "type": "script_rtl_insufficient",
-      "severity": "HIGH"
-    },
-    {
       "key": "item.10311.name",
       "category": "items",
       "type": "script_rtl_insufficient",
@@ -140,15 +92,63 @@
       "category": "items",
       "type": "script_rtl_insufficient",
       "severity": "HIGH"
+    },
+    {
+      "key": "item.11057.name",
+      "category": "items",
+      "type": "script_rtl_insufficient",
+      "severity": "HIGH"
+    },
+    {
+      "key": "item.11897.name",
+      "category": "items",
+      "type": "script_rtl_insufficient",
+      "severity": "HIGH"
+    },
+    {
+      "key": "item.14064.name",
+      "category": "items",
+      "type": "script_rtl_insufficient",
+      "severity": "HIGH"
+    },
+    {
+      "key": "item.14171.name",
+      "category": "items",
+      "type": "script_rtl_insufficient",
+      "severity": "HIGH"
+    },
+    {
+      "key": "item.15700.name",
+      "category": "items",
+      "type": "script_rtl_insufficient",
+      "severity": "HIGH"
+    },
+    {
+      "key": "item.20052.name",
+      "category": "items",
+      "type": "script_rtl_insufficient",
+      "severity": "HIGH"
+    },
+    {
+      "key": "item.21352.name",
+      "category": "items",
+      "type": "script_rtl_insufficient",
+      "severity": "HIGH"
+    },
+    {
+      "key": "item.21432.name",
+      "category": "items",
+      "type": "script_rtl_insufficient",
+      "severity": "HIGH"
     }
   ],
   "crossref": {
     "enabled": false,
-    "issues_total": 417,
+    "issues_total": 414,
     "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 17,
+    "length_ratio": 14,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-14T11:45:10.953606Z"
+  "validated_at": "2026-02-14T12:00:41.945690Z"
 }

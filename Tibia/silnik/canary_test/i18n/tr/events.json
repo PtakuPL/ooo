@@ -1,5 +1,5 @@
 {
-  "event.player.msg1": "You can't move that item so fast.",
+  "event.player.msg1": "[EN] event.player.msg_move_fast",
   "event.player.msg2": "günlük-ödül-xp-arttırma",
   "event.player.msg3": "günlük-ödül-xp-arttırma",
   "event.player.msg4": "günlük-ödül-xp-arttırma",

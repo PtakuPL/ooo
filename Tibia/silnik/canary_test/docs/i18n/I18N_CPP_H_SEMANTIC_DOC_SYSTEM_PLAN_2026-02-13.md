@@ -451,3 +451,16 @@ Minimalne progi jakości:
 
 ### 13.5 Brak automatycznego triggera do Translation First
 - Jeśli semantic delta dotyczy źródeł tekstu, system powinien automatycznie uruchomić etap `TRANSLATION_SYNC` + `VALIDATION_QUALITY` dla dotkniętych kategorii.
+
+### 13.6 Nowy sygnał z runtime audytu (2026-02-14 11:55 UTC)
+- W testach quest/NPC wykryto błędy typu "fragment contract drift":
+  - utrata końcowej spacji w fragmentach łączonych runtime (`"You have to wait "` -> `"You have to wait"`),
+  - błędne mapowanie semantyczne fragmentu (`"The chest is empty."` -> `"You found."`).
+- Wniosek dla systemu semantycznego:
+  1. trzeba jawnie oznaczać w C++/H/Lua klucze typu `fragment_concat_required`,
+  2. trzeba emitować kontrakt `must_preserve_trailing_space=true` dla takich kluczy,
+  3. `simple` dictionary nie może nadpisywać tych kluczy bez walidacji kontekstowej.
+- Dodanie do backlogu semantycznego:
+  - sygnał `placeholder_concat_contract_violation`,
+  - sygnał `semantic_map_mismatch`,
+  - trigger podniesienia priorytetu `VALIDATION_QUALITY` dla dotkniętych event-path.

@@ -823,3 +823,23 @@ Prace startowe koncentrujemy najpierw na trybie tłumaczeń. Etap uznajemy za op
 - ✅ 12.5 follow-up: kolejka naprawcza `identical_to_en` translatable w istniejących plikach (artefakty queue + report).
 - ✅ identical_to_en repair: `_is_game_nontranslatable()` (fikcyjny język gry, animal sounds), `repair_identical_bonus_round()` (200 kluczy co 3 cykle).
 - ✅ Nowy follow-up 12.5: telemetryczny alert stagnacji kolejki repair + KPI trendu spadku backlogu — DONE: integracja w `aggregate_telemetry`/`run_status_doctor`/`run_webhook_alerting` + sekcja `Repair Queue 24h` w `statusd_daily_report.json/md` + zgranie legacy `repair_stagnation_alert.json` z tym samym źródłem progów.
+
+### 13.8 Aktualizacja runtime (2026-02-14 11:55 UTC) — wymuszenia AUTO i jakość LT/CS/EL/IT
+- ✅ Wdrożono poprawkę sterowania limitem: `AUTO:<lang>:<json>:N` nie jest już rozszerzane do globalnego `--translate-limit 80` (efektywnie działa `min(global, N)`).
+- ✅ Wdrożono `AUTO_COMMAND_FAST_MODE` dla krótkich wymuszeń (`N>0`), aby testy operatorskie nie czekały na pełne etapy naprawcze/walidacyjne.
+- ✅ Zebrano matrycę runtime `lt/cs/el/it × items/npc/quests` (12 kombinacji) i zapisano artefakty:
+  - `canary_test/i18n/status/manual_runtime_latest_matrix_2026-02-14.tsv`
+  - `canary_test/i18n/status/manual_quality_samples_lt_cs_el_it_2026-02-14.jsonl`
+- ⚠️ Wykryto regresje jakości:
+  1. quest simple-map drift: `The chest is empty.` -> `You found.` (LT/CS/EL),
+  2. quest fragment contract drift: utrata trailing space (`You have to wait ` itp.),
+  3. TM EN-copy w `lt/npc` (20/20 próbki),
+  4. EN-copy nazw itemów w `lt/items`.
+- ⚠️ Wykryto regresje operacyjne:
+  1. duży lag wykonania `.worker_command` (odczyt tylko na starcie cyklu),
+  2. sporadyczny lock startup (`.worker_simple.start.lock`) trzymany przez orphan `sleep` po ręcznym kill/restart.
+- ➕ Dodane zadania do backlogu wykonawczego:
+  - `WQ-FAST-1/2` (SLA i preemption dla komend wymuszonych),
+  - `WQ-LOCK-1` (auto-clear stale lock owner),
+  - `WQ-QUEST-1/2` (naprawa map quest + zachowanie trailing-space),
+  - `WQ-TM-1` (hard gate EN-copy z TM).

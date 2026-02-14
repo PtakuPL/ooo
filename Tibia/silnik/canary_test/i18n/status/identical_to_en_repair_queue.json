@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-14T11:46:07.073512Z",
+  "timestamp": "2026-02-14T11:59:08.096218Z",
   "priority_langs": [
     "es",
     "pl",
@@ -68,12 +68,12 @@
   "entries_total": 745,
   "entries_by_lang": {
     "es": 213,
-    "pl": 120,
-    "cs": 671,
+    "pl": 123,
+    "cs": 668,
     "de": 667,
     "fr": 669,
     "hu": 671,
-    "it": 636,
+    "it": 642,
     "nl": 699,
     "pt": 628,
     "ro": 699,
@@ -86,7 +86,7 @@
     "bn": 920,
     "bs": 671,
     "da": 671,
-    "el": 671,
+    "el": 670,
     "et": 671,
     "fa": 1134,
     "fi": 671,
@@ -99,7 +99,7 @@
     "ka": 921,
     "kk": 671,
     "ko": 921,
-    "lt": 671,
+    "lt": 672,
     "lv": 671,
     "mk": 670,
     "ml": 921,
@@ -118,7 +118,7 @@
     "uz": 671,
     "vi": 921,
     "zh": 921,
-    "zh_TW": 23132
+    "zh_TW": 23110
   },
   "top_entries": [
     {
@@ -232,7 +232,7 @@
     {
       "lang": "pl",
       "json_file": "scripts.json",
-      "identical_to_en": 18,
+      "identical_to_en": 21,
       "domain_priority": 9
     },
     {
@@ -280,7 +280,7 @@
     {
       "lang": "cs",
       "json_file": "quests.json",
-      "identical_to_en": 34,
+      "identical_to_en": 31,
       "domain_priority": 3
     },
     {
@@ -634,7 +634,7 @@
     {
       "lang": "it",
       "json_file": "quests.json",
-      "identical_to_en": 11,
+      "identical_to_en": 17,
       "domain_priority": 3
     },
     {

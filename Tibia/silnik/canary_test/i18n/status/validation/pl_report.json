@@ -2,43 +2,29 @@
   "lang": "pl",
   "script_group": "latin",
   "total_keys": 53586,
-  "translated": 39196,
-  "identical_to_en": 1633,
-  "placeholder_keys": 12307,
-  "coverage_pct": 73.1,
-  "issues_total": 237,
+  "translated": 24216,
+  "identical_to_en": 1672,
+  "placeholder_keys": 29370,
+  "coverage_pct": 45.2,
+  "issues_total": 44,
   "issues_by_type": {
-    "V6_newline_mismatch": 223,
-    "V4_artifact": 10,
-    "V7_command_mismatch": 2,
-    "V1_placeholder_mismatch": 1,
-    "V5_pipe_mismatch": 1
+    "V6_newline_mismatch": 39,
+    "V4_artifact": 4,
+    "V1_placeholder_mismatch": 1
   },
   "issues_by_severity": {
-    "CRITICAL": 2,
-    "HIGH": 10,
-    "MEDIUM": 225,
+    "CRITICAL": 1,
+    "HIGH": 4,
+    "MEDIUM": 39,
     "LOW": 0
   },
-  "score": 99.8,
+  "score": 99.9,
   "worst_keys": [
     {
       "key": "html.online.html.text1",
       "category": "html",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
-    },
-    {
-      "key": "talkaction.online.msg_summary",
-      "category": "talkactions",
-      "type": "V5_pipe_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "achievement.317.description",
-      "category": "achievements",
-      "type": "V4_artifact",
-      "severity": "HIGH"
     },
     {
       "key": "monster.grynch_clan_goblin.voice_15",
@@ -59,86 +45,98 @@
       "severity": "HIGH"
     },
     {
-      "key": "npc.riddler.say_12",
-      "category": "npc",
-      "type": "V4_artifact",
-      "severity": "HIGH"
-    },
-    {
-      "key": "npc.riddler.say_4",
-      "category": "npc",
-      "type": "V4_artifact",
-      "severity": "HIGH"
-    },
-    {
       "key": "npc.the_orc_king.say_3",
       "category": "npc",
       "type": "V4_artifact",
       "severity": "HIGH"
     },
     {
-      "key": "npc.theodore_loveless.multi_2",
+      "key": "cpp.augment.augments_label",
+      "category": "cpp",
+      "type": "V6_newline_mismatch",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.a_bearded_woman.stdmod_1",
       "category": "npc",
-      "type": "V4_artifact",
-      "severity": "HIGH"
+      "type": "V6_newline_mismatch",
+      "severity": "MEDIUM"
     },
     {
-      "key": "npc.wyda.say_4",
+      "key": "npc.a_bearded_woman.stdmod_2",
       "category": "npc",
-      "type": "V4_artifact",
-      "severity": "HIGH"
-    },
-    {
-      "key": "quests.bigfoot_burden.gnomedix_msg4",
-      "category": "quests",
-      "type": "V4_artifact",
-      "severity": "HIGH"
-    },
-    {
-      "key": "book.dawnport.adventurers_guild_letter",
-      "category": "books",
       "type": "V6_newline_mismatch",
       "severity": "MEDIUM"
     },
     {
-      "key": "book.quest_system2.history_of_the_augur_part_i",
-      "category": "books",
+      "key": "npc.a_bearded_woman.stdmod_3",
+      "category": "npc",
       "type": "V6_newline_mismatch",
       "severity": "MEDIUM"
     },
     {
-      "key": "book.quest_system2.history_of_the_augur_part_ii",
-      "category": "books",
+      "key": "npc.a_bearded_woman.stdmod_6",
+      "category": "npc",
       "type": "V6_newline_mismatch",
       "severity": "MEDIUM"
     },
     {
-      "key": "book.quest_system2.manifest_of_the_yalahari_part_i",
-      "category": "books",
+      "key": "npc.alia.stdmod_25",
+      "category": "npc",
       "type": "V6_newline_mismatch",
       "severity": "MEDIUM"
     },
     {
-      "key": "book.quest_system2.manifest_of_the_yalahari_part_ii",
-      "category": "books",
+      "key": "npc.alkestios.stdmod_7",
+      "category": "npc",
       "type": "V6_newline_mismatch",
       "severity": "MEDIUM"
     },
     {
-      "key": "book.quest_system2.the_map_shows_the_original_floor",
-      "category": "books",
+      "key": "npc.amanda.stdmod_35",
+      "category": "npc",
       "type": "V6_newline_mismatch",
       "severity": "MEDIUM"
     },
     {
-      "key": "book.quest_system2.this_page_seems_to_be_part",
-      "category": "books",
+      "key": "npc.azalea.stdmod_25",
+      "category": "npc",
       "type": "V6_newline_mismatch",
       "severity": "MEDIUM"
     },
     {
-      "key": "book.quest_system2.tunnelling_guide",
-      "category": "books",
+      "key": "npc.brewster.stdmod_32",
+      "category": "npc",
+      "type": "V6_newline_mismatch",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.brodrosch.stdmod_3",
+      "category": "npc",
+      "type": "V6_newline_mismatch",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.captain_dreadnought.stdmod_21",
+      "category": "npc",
+      "type": "V6_newline_mismatch",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.cedrik.stdmod_25",
+      "category": "npc",
+      "type": "V6_newline_mismatch",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.ferus.stdmod_25",
+      "category": "npc",
+      "type": "V6_newline_mismatch",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.iptar-sin.stdmod_2",
+      "category": "npc",
       "type": "V6_newline_mismatch",
       "severity": "MEDIUM"
     }
@@ -151,5 +149,5 @@
     "length_ratio": 0,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-14T11:45:14.695293Z"
+  "validated_at": "2026-02-14T12:00:44.538460Z"
 }

@@ -43,7 +43,7 @@
   "talkaction.gm.spy.msg_empty": "Empty",
   "talkaction.gm.spy.msg_equipment_of": "[EN] Equipment of {0}",
   "talkaction.gm.spy.msg_offline": "[EN] This player is offline or doesn't exist.",
-  "talkaction.gm.spy.msg_specify_name": "Write the name of the character to be spyed.",
+  "talkaction.gm.spy.msg_specify_name": "[EN] Write the name of the character to spy on.",
   "talkaction.gm.spy.msg_stack_count": "({0}x)",
   "talkaction.gm.spy.slot_amulet": "Amulet",
   "talkaction.gm.spy.slot_armor": "Armor",

@@ -2,59 +2,29 @@
   "lang": "bn",
   "script_group": "exotic",
   "total_keys": 53586,
-  "translated": 35779,
-  "identical_to_en": 33928,
-  "placeholder_keys": 15652,
-  "coverage_pct": 66.8,
-  "issues_total": 154,
+  "translated": 5601,
+  "identical_to_en": 3713,
+  "placeholder_keys": 47985,
+  "coverage_pct": 10.5,
+  "issues_total": 108,
   "issues_by_type": {
-    "script_wrong_script": 141,
-    "V1_placeholder_mismatch": 7,
+    "script_wrong_script": 100,
     "V4_artifact": 4,
+    "V1_placeholder_mismatch": 2,
     "V6_newline_mismatch": 1,
     "V5_pipe_mismatch": 1
   },
   "issues_by_severity": {
-    "CRITICAL": 8,
-    "HIGH": 145,
+    "CRITICAL": 3,
+    "HIGH": 104,
     "MEDIUM": 1,
     "LOW": 0
   },
-  "score": 99.3,
+  "score": 97.0,
   "worst_keys": [
     {
       "key": "scripts.actions_rewards.msg_1",
       "category": "scripts",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "scripts.manage_tutor.msg_1",
-      "category": "scripts",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "scripts.manage_tutor.msg_2",
-      "category": "scripts",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "server.game.msg_32",
-      "category": "server",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "server.player.msg_11",
-      "category": "server",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "server.spells.msg_3",
-      "category": "server",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
     },
@@ -141,15 +111,45 @@
       "category": "books",
       "type": "V4_artifact",
       "severity": "HIGH"
+    },
+    {
+      "key": "book.otbm.huv_stollan_match_stuf_from",
+      "category": "books",
+      "type": "script_wrong_script",
+      "severity": "HIGH"
+    },
+    {
+      "key": "item.10010.name",
+      "category": "items",
+      "type": "script_wrong_script",
+      "severity": "HIGH"
+    },
+    {
+      "key": "item.10186.name",
+      "category": "items",
+      "type": "script_wrong_script",
+      "severity": "HIGH"
+    },
+    {
+      "key": "item.10190.name",
+      "category": "items",
+      "type": "script_wrong_script",
+      "severity": "HIGH"
+    },
+    {
+      "key": "item.10191.name",
+      "category": "items",
+      "type": "script_wrong_script",
+      "severity": "HIGH"
     }
   ],
   "crossref": {
-    "enabled": true,
-    "issues_total": 414,
+    "enabled": false,
+    "issues_total": 411,
     "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 14,
-    "auto_fix_applied": 79
+    "length_ratio": 11,
+    "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-14T11:39:42.876608Z"
+  "validated_at": "2026-02-14T12:00:39.746513Z"
 }

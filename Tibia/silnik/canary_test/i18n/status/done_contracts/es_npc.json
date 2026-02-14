@@ -3,8 +3,8 @@
   "lang": "es",
   "conditions": {
     "no_critical_token_errors": {
-      "ok": false,
-      "guard_placeholder": 160,
+      "ok": true,
+      "guard_placeholder": 0,
       "guard_pipe": 0
     },
     "guard_command_below_threshold": {
@@ -23,6 +23,6 @@
       "has_quality_data": true
     }
   },
-  "is_done": false,
-  "timestamp": "2026-02-14T11:36:02.675275Z"
+  "is_done": true,
+  "timestamp": "2026-02-14T11:59:11.453731Z"
 }

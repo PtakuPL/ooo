@@ -1,15 +1,15 @@
 {
   "lang": "hy",
-  "coverage_pct": 9.0,
+  "coverage_pct": 8.9,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
-  "auto_fix_limit": 80,
-  "checked_at": "2026-02-14T11:45:11.556408Z",
-  "issues_total": 411,
+  "auto_fix_limit": 30,
+  "checked_at": "2026-02-14T12:00:42.524618Z",
+  "issues_total": 407,
   "issues_by_type": {
     "consistency_in_language": 0,
     "pl_reference_missing_translation": 400,
-    "length_ratio_crosscheck": 11
+    "length_ratio_crosscheck": 7
   },
   "consistency_issues": [],
   "pl_reference_issues": [
@@ -41,15 +41,6 @@
       "lang": "Goldhunter"
     },
     {
-      "key": "achievement.251.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Dog Sitter",
-      "pl": "I. Sitter",
-      "lang": "Dog Sitter"
-    },
-    {
       "key": "achievement.302.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -57,24 +48,6 @@
       "en": "Gnomelike",
       "pl": "GNiemelike",
       "lang": "Gnomelike"
-    },
-    {
-      "key": "achievement.363.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Robo Chop",
-      "pl": "Robo I.",
-      "lang": "Robo Chop"
-    },
-    {
-      "key": "achievement.398.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Gear Up",
-      "pl": "I. Up",
-      "lang": "Gear Up"
     },
     {
       "key": "achievement.402.name",
@@ -149,15 +122,6 @@
       "lang": "You found "
     },
     {
-      "key": "ui.house.rent_period_daily",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "daily",
-      "pl": "I.",
-      "lang": "daily"
-    },
-    {
       "key": "ui.house.rent_period_monthly",
       "category": "books",
       "type": "pl_reference_missing_translation",
@@ -165,24 +129,6 @@
       "en": "monthly",
       "pl": "miesięczny",
       "lang": "monthly"
-    },
-    {
-      "key": "ui.house.rent_period_weekly",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "weekly",
-      "pl": "I.",
-      "lang": "weekly"
-    },
-    {
-      "key": "ui.house.rent_period_yearly",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "annual",
-      "pl": "I.",
-      "lang": "annual"
     },
     {
       "key": "ui.readable.wrote",
@@ -545,15 +491,6 @@
       "lang": "damage"
     },
     {
-      "key": "cpp.bestiary.charm_category_major",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Major",
-      "pl": "I.",
-      "lang": "Major"
-    },
-    {
       "key": "cpp.bestiary.charm_category_minor",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -570,15 +507,6 @@
       "en": "agony",
       "pl": "cierpienie",
       "lang": "agony"
-    },
-    {
-      "key": "cpp.combat.death",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "death",
-      "pl": "I.",
-      "lang": "death"
     },
     {
       "key": "cpp.combat.drown",
@@ -707,24 +635,6 @@
       "lang": "{0} cores"
     },
     {
-      "key": "cpp.forge.dust_one",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "{0} dust",
-      "pl": "{0} I.",
-      "lang": "{0} dust"
-    },
-    {
-      "key": "cpp.forge.dust_other",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "{0} dust",
-      "pl": "{0} I.",
-      "lang": "{0} dust"
-    },
-    {
       "key": "cpp.forge.successful",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -761,15 +671,6 @@
       "lang": " (Hazard)"
     },
     {
-      "key": "cpp.game.no_loot",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "No loot",
-      "pl": "Nie I.",
-      "lang": "No loot"
-    },
-    {
       "key": "cpp.game.offline_training_button_cancel",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -779,15 +680,6 @@
       "lang": "Cancel"
     },
     {
-      "key": "cpp.game.offline_training_button_ok",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Okay",
-      "pl": "I.",
-      "lang": "Okay"
-    },
-    {
       "key": "cpp.game.tentugly_name",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -795,15 +687,6 @@
       "en": "Tentugly",
       "pl": "Delikatnie",
       "lang": "Tentugly"
-    },
-    {
-      "key": "cpp.game.you_looted",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You looted ",
-      "pl": "Ty I.",
-      "lang": "You looted "
     },
     {
       "key": "cpp.inspect.and_connector",
@@ -822,15 +705,6 @@
       "en": "Armor",
       "pl": "Zbroja",
       "lang": "Armor"
-    },
-    {
-      "key": "cpp.inspect.at_range",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " at range ",
-      "pl": "w I.",
-      "lang": " at range "
     },
     {
       "key": "cpp.inspect.attack",
@@ -876,15 +750,6 @@
       "en": "container",
       "pl": "pojemnik",
       "lang": "container"
-    },
-    {
-      "key": "cpp.inspect.body_extra_slot",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "extra slot",
-      "pl": "I. I.",
-      "lang": "extra slot"
     },
     {
       "key": "cpp.inspect.body_feet",
@@ -1022,24 +887,6 @@
       "lang": "HitChance"
     },
     {
-      "key": "cpp.inspect.key",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Key",
-      "pl": "I.",
-      "lang": "Key"
-    },
-    {
-      "key": "cpp.inspect.n_fields",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "{0} fields",
-      "pl": "{0} I.",
-      "lang": "{0} fields"
-    },
-    {
       "key": "cpp.inspect.nothing",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -1083,24 +930,6 @@
       "en": "Required",
       "pl": "wymagany",
       "lang": "Required"
-    },
-    {
-      "key": "cpp.inspect.speed",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Speed",
-      "pl": "I.",
-      "lang": "Speed"
-    },
-    {
-      "key": "cpp.inspect.speed_value",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "speed {0}",
-      "pl": "I. {0}",
-      "lang": "speed {0}"
     },
     {
       "key": "cpp.inspect.tier",
@@ -1175,15 +1004,6 @@
       "lang": "Arm:"
     },
     {
-      "key": "cpp.look.at_range",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "at range",
-      "pl": "w I.",
-      "lang": "at range"
-    },
-    {
       "key": "cpp.look.atk",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -1245,24 +1065,6 @@
       "en": "Def:",
       "pl": "def:",
       "lang": "Def:"
-    },
-    {
-      "key": "cpp.look.empty_slot",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Empty Slot",
-      "pl": "puste I.",
-      "lang": "Empty Slot"
-    },
-    {
-      "key": "cpp.look.field",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " field",
-      "pl": "I.",
-      "lang": " field"
     },
     {
       "key": "cpp.look.hit_pct",
@@ -1346,15 +1148,6 @@
       "lang": " on "
     },
     {
-      "key": "cpp.look.or_higher",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " or higher",
-      "pl": "lub I.",
-      "lang": " or higher"
-    },
-    {
       "key": "cpp.look.physical_plus",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -1409,15 +1202,6 @@
       "lang": "{0} second"
     },
     {
-      "key": "cpp.look.speed_label",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "speed",
-      "pl": "I.",
-      "lang": "speed"
-    },
-    {
       "key": "cpp.look.tier_ruse",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -1470,15 +1254,6 @@
       "en": "You read: ",
       "pl": "Ty czytać, przeczytać:",
       "lang": "You read: "
-    },
-    {
-      "key": "cpp.look.you_see",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You see ",
-      "pl": "Ty I.",
-      "lang": "You see "
     },
     {
       "key": "cpp.player.corpse_and",
@@ -1661,15 +1436,6 @@
       "lang": "level"
     },
     {
-      "key": "cpp.skill.life_leech",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "life leech",
-      "pl": "I. pijawka",
-      "lang": "life leech"
-    },
-    {
       "key": "cpp.skill.mana_leech",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -1787,15 +1553,6 @@
       "lang": "Manhunter"
     },
     {
-      "key": "cpp.title.name_49",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ooze Blues",
-      "pl": "I. I.",
-      "lang": "Ooze Blues"
-    },
-    {
       "key": "cpp.title.name_50",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -1893,15 +1650,6 @@
       "en": "a paladin",
       "pl": "jeden paladin",
       "lang": "a paladin"
-    },
-    {
-      "key": "cpp.vocation.desc_id_4",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a knight",
-      "pl": "jeden I.",
-      "lang": "a knight"
     },
     {
       "key": "cpp.vocation.id_0",
@@ -3612,45 +3360,261 @@
       "en": "Level",
       "pl": "poziom",
       "lang": "Level"
+    },
+    {
+      "key": "web.tpl.experience_table.b_3",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Experience",
+      "pl": "Doświadczenie",
+      "lang": "Experience"
+    },
+    {
+      "key": "web.tpl.guilds.create.b_1",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Leader:",
+      "pl": "Lider:",
+      "lang": "Leader:"
+    },
+    {
+      "key": "web.tpl.gallery.form.td_1",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Comment:",
+      "pl": "Komentarz:",
+      "lang": "Comment:"
+    },
+    {
+      "key": "web.tpl.gallery.form.td_2",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Image URL:",
+      "pl": "Adres URL obrazu:",
+      "lang": "Image URL:"
+    },
+    {
+      "key": "web.tpl.gallery.form.td_3",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Author:",
+      "pl": "Autor:",
+      "lang": "Author:"
+    },
+    {
+      "key": "web.tpl.account.characters.create.span_1",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Name",
+      "pl": "Nazwa",
+      "lang": "Name"
+    },
+    {
+      "key": "web.tpl.account.characters.create.span_2",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Sex",
+      "pl": "Seks",
+      "lang": "Sex"
+    },
+    {
+      "key": "web.tpl.buttons.cancel.set_1",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Cancel",
+      "pl": "Anuluj",
+      "lang": "Cancel"
+    },
+    {
+      "key": "web.tpl.lastkills.set_1",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Last Kills",
+      "pl": "Ostatnie zabójstwa",
+      "lang": "Last Kills"
+    },
+    {
+      "key": "web.tpl.account.generate_recovery_key.span_1",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Password:",
+      "pl": "Hasło:",
+      "lang": "Password:"
+    },
+    {
+      "key": "web.tpl.commands.b_1",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Words",
+      "pl": "słowa",
+      "lang": "Words"
+    },
+    {
+      "key": "web.tpl.commands.b_3",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Options",
+      "pl": "Opcje",
+      "lang": "Options"
+    },
+    {
+      "key": "web.tpl.created.th_2",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Account",
+      "pl": "Twojego",
+      "lang": "Account"
+    },
+    {
+      "key": "web.tpl.points.th_2",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Account",
+      "pl": "Twojego",
+      "lang": "Account"
+    },
+    {
+      "key": "web.tpl.balance.th_2",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Player",
+      "pl": "Gracz",
+      "lang": "Player"
+    },
+    {
+      "key": "web.tpl.balance.th_3",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Balance",
+      "pl": "Balansować",
+      "lang": "Balance"
+    },
+    {
+      "key": "web.tpl.lastlogin.th_2",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Player",
+      "pl": "Gracz",
+      "lang": "Player"
+    },
+    {
+      "key": "web.tpl.lastlogin.th_3",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Login Date",
+      "pl": "Data logowania",
+      "lang": "Login Date"
+    },
+    {
+      "key": "web.tpl.coins.th_2",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Account",
+      "pl": "Twojego",
+      "lang": "Account"
+    },
+    {
+      "key": "web.tpl.account.management.set_9",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Table3",
+      "pl": "Stół3",
+      "lang": "Table3"
+    },
+    {
+      "key": "web.tpl.account.management.set_10",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Characters",
+      "pl": "Pismo",
+      "lang": "Characters"
+    },
+    {
+      "key": "web.tpl.buttons.base.set_1",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "sbutton",
+      "pl": "przycisk",
+      "lang": "sbutton"
+    },
+    {
+      "key": "item.100.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "void",
+      "pl": "próżnia",
+      "lang": "void"
+    },
+    {
+      "key": "item.23729.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "lost time",
+      "pl": "stracony czas",
+      "lang": "lost time"
+    },
+    {
+      "key": "item.30215.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "ice",
+      "pl": "lód",
+      "lang": "ice"
+    },
+    {
+      "key": "item.30218.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "ice",
+      "pl": "lód",
+      "lang": "ice"
+    },
+    {
+      "key": "item.30273.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "ice",
+      "pl": "lód",
+      "lang": "ice"
+    },
+    {
+      "key": "item.3274.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "axe",
+      "pl": "Topór",
+      "lang": "axe"
     }
   ],
   "length_ratio_issues": [
-    {
-      "key": "achievement.77.name",
-      "category": "achievements",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 4,
-      "lang_ratio": 1.25,
-      "pl_ratio": 3.75
-    },
-    {
-      "key": "achievement.86.name",
-      "category": "achievements",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 2.167,
-      "pl_ratio": 0.333
-    },
-    {
-      "key": "achievement.97.name",
-      "category": "achievements",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 17,
-      "lang_ratio": 1.176,
-      "pl_ratio": 3.529
-    },
-    {
-      "key": "achievement.124.name",
-      "category": "achievements",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 10,
-      "lang_ratio": 2.1,
-      "pl_ratio": 0.2
-    },
     {
       "key": "achievement.128.name",
       "category": "achievements",

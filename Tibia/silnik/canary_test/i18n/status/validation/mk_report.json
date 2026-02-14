@@ -2,23 +2,23 @@
   "lang": "mk",
   "script_group": "cyrillic",
   "total_keys": 53586,
-  "translated": 3915,
-  "identical_to_en": 2653,
-  "placeholder_keys": 47516,
+  "translated": 3895,
+  "identical_to_en": 2662,
+  "placeholder_keys": 49691,
   "coverage_pct": 7.3,
-  "issues_total": 52,
+  "issues_total": 23,
   "issues_by_type": {
-    "script_cyrillic_latin_mix": 48,
+    "script_cyrillic_latin_mix": 19,
     "V4_artifact": 3,
     "V6_newline_mismatch": 1
   },
   "issues_by_severity": {
     "CRITICAL": 0,
-    "HIGH": 51,
+    "HIGH": 22,
     "MEDIUM": 1,
     "LOW": 0
   },
-  "score": 98.0,
+  "score": 99.1,
   "worst_keys": [
     {
       "key": "achievement.26.name",
@@ -129,13 +129,13 @@
       "severity": "HIGH"
     },
     {
-      "key": "npc.a_behemoth.greet_msg_1",
+      "key": "npc.a_dead_bureaucrat1.say_3",
       "category": "npc",
       "type": "script_cyrillic_latin_mix",
       "severity": "HIGH"
     },
     {
-      "key": "npc.a_behemoth.greet_msg_2",
+      "key": "npc.a_dead_bureaucrat3.say_2",
       "category": "npc",
       "type": "script_cyrillic_latin_mix",
       "severity": "HIGH"
@@ -143,11 +143,11 @@
   ],
   "crossref": {
     "enabled": false,
-    "issues_total": 409,
+    "issues_total": 406,
     "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 9,
+    "length_ratio": 6,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-14T11:45:13.354152Z"
+  "validated_at": "2026-02-14T12:00:43.749336Z"
 }

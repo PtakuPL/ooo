@@ -2,39 +2,27 @@
   "lang": "ms",
   "script_group": "latin",
   "total_keys": 53586,
-  "translated": 4779,
-  "identical_to_en": 3729,
-  "placeholder_keys": 46652,
+  "translated": 4784,
+  "identical_to_en": 3738,
+  "placeholder_keys": 48802,
   "coverage_pct": 8.9,
-  "issues_total": 8,
+  "issues_total": 6,
   "issues_by_type": {
-    "V1_placeholder_mismatch": 4,
     "V4_artifact": 2,
+    "V1_placeholder_mismatch": 2,
     "V6_newline_mismatch": 1,
     "V5_pipe_mismatch": 1
   },
   "issues_by_severity": {
-    "CRITICAL": 5,
+    "CRITICAL": 3,
     "HIGH": 2,
     "MEDIUM": 1,
     "LOW": 0
   },
-  "score": 99.6,
+  "score": 99.7,
   "worst_keys": [
     {
       "key": "scripts.actions_rewards.msg_1",
-      "category": "scripts",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "scripts.manage_tutor.msg_1",
-      "category": "scripts",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "scripts.manage_tutor.msg_2",
       "category": "scripts",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
@@ -72,11 +60,11 @@
   ],
   "crossref": {
     "enabled": false,
-    "issues_total": 407,
+    "issues_total": 404,
     "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 7,
+    "length_ratio": 4,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-14T11:45:13.746443Z"
+  "validated_at": "2026-02-14T12:00:44.048383Z"
 }

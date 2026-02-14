@@ -1,15 +1,15 @@
 {
   "lang": "es",
-  "coverage_pct": 93.7,
+  "coverage_pct": 77.2,
   "crossref_enabled": true,
-  "auto_fix_enabled": true,
-  "auto_fix_limit": 80,
-  "checked_at": "2026-02-14T11:43:00.208307Z",
-  "issues_total": 482,
+  "auto_fix_enabled": false,
+  "auto_fix_limit": 30,
+  "checked_at": "2026-02-14T12:00:41.051270Z",
+  "issues_total": 479,
   "issues_by_type": {
-    "consistency_in_language": 50,
+    "consistency_in_language": 56,
     "pl_reference_missing_translation": 400,
-    "length_ratio_crosscheck": 32
+    "length_ratio_crosscheck": 23
   },
   "consistency_issues": [
     {
@@ -374,6 +374,62 @@
     {
       "type": "crossref_inconsistent_translation",
       "severity": "MEDIUM",
+      "en": "Sorcerer familiar",
+      "variants": [
+        "Familiar de hechicero",
+        "familiar de hechicero"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "monsters:monster.sorcerer_familiar.name",
+        "spells:spell.sorcerer_familiar.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Knight familiar",
+      "variants": [
+        "Familiar de caballero",
+        "familiar de caballero"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "monsters:monster.knight_familiar.name",
+        "spells:spell.knight_familiar.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Paladin familiar",
+      "variants": [
+        "Familiar de paladín",
+        "familiar de paladín"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "monsters:monster.paladin_familiar.name",
+        "spells:spell.paladin_familiar.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Druid familiar",
+      "variants": [
+        "Familiar de druida",
+        "familiar de druida"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "monsters:monster.druid_familiar.name",
+        "spells:spell.druid_familiar.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
       "en": "Giant Spider",
       "variants": [
         "araña gigante",
@@ -503,6 +559,35 @@
         "monsters:monster.the_sandking.desc",
         "monsters:monster.the_sandking_fake.name",
         "monsters:monster.the_sandking_fake.desc"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "BOOOM!",
+      "variants": [
+        "¡BUM!",
+        "¡¡BOOOM!!"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "monsters:monster.malofur_mangrinder.voice_2",
+        "scripts:scripts.malofur_explosion.say_4"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Eradicator",
+      "variants": [
+        "Eradicator2",
+        "Erradicador"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "monsters:monster.eradicator.name",
+        "monsters:monster.eradicator.desc",
+        "monsters:monster.eradicator2.name"
       ]
     },
     {
@@ -772,51 +857,6 @@
   ],
   "pl_reference_issues": [
     {
-      "key": "achievement.30.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Territorial",
-      "pl": "Terytorialny",
-      "lang": "Territorial"
-    },
-    {
-      "key": "achievement.363.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Robo Chop",
-      "pl": "Robo I.",
-      "lang": "Robo Chop"
-    },
-    {
-      "key": "book.otbm.obujos_domingo_18h_01h",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Obujos: Domingo (18h - 01h)",
-      "pl": "Obujos: Domingo (18:00 - 01:00)",
-      "lang": "Obujos: Domingo (18h - 01h)"
-    },
-    {
-      "key": "book.otbm.obujos_domingo_18h_01h_867ad284",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Obujos: Domingo (18h - 01h)",
-      "pl": "Obujos: Domingo (18:00 - 01:00)",
-      "lang": "Obujos: Domingo (18h - 01h)"
-    },
-    {
-      "key": "book.otbm.orruk_ahtanri_anvi_ra_shuk",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Orruk ah'tanri, anvi ra shuk ta",
-      "pl": "Orruk ah'tanri, anvi Akademia Królewska shuk dzięki, dziękuję",
-      "lang": "Orruk ah'tanri, anvi ra shuk ta"
-    },
-    {
       "key": "channel.tutor.name",
       "category": "chatchannels",
       "type": "pl_reference_missing_translation",
@@ -824,33 +864,6 @@
       "en": "Tutor",
       "pl": "Korepetytor",
       "lang": "Tutor"
-    },
-    {
-      "key": "client.map.text2",
-      "category": "client",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "MarkListItem",
-      "pl": "MarkListPrzedmiot",
-      "lang": "MarkListItem"
-    },
-    {
-      "key": "client.imbuementtracker.text1",
-      "category": "client",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "ImbuementTracker",
-      "pl": "Śledzenie nasycenia",
-      "lang": "ImbuementTracker"
-    },
-    {
-      "key": "client.uiwidget.text2",
-      "category": "client",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": ".. color ..",
-      "pl": ".. kolor ..",
-      "lang": ".. color .."
     },
     {
       "key": "cpp.combat.neutral",
@@ -871,24 +884,6 @@
       "lang": ", "
     },
     {
-      "key": "web.tpl.guilds.view.set_6",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "_sbutton_invitecharacter",
-      "pl": "_sbutton_inviteznak",
-      "lang": "_sbutton_invitecharacter"
-    },
-    {
-      "key": "web.tpl.guilds.view.set_10",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "_sbutton_leaveguild",
-      "pl": "_sbutton_opuśćgildię",
-      "lang": "_sbutton_leaveguild"
-    },
-    {
       "key": "web.tpl.characters.td_10",
       "category": "html",
       "type": "pl_reference_missing_translation",
@@ -905,24 +900,6 @@
       "en": "Balance",
       "pl": "Balansować",
       "lang": "Balance"
-    },
-    {
-      "key": "web.tpl.buttons.change_sex.set_2",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "_sbutton_changesex",
-      "pl": "_sbutton_zmianapłci",
-      "lang": "_sbutton_changesex"
-    },
-    {
-      "key": "web.tpl.buttons.delete_character.set_2",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "_sbutton_deletecharacter",
-      "pl": "_sbutton_deleteznak",
-      "lang": "_sbutton_deletecharacter"
     },
     {
       "key": "item.14141.name",
@@ -1006,15 +983,6 @@
       "lang": "No"
     },
     {
-      "key": "module.hireling_module.text1",
-      "category": "modules",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Pereira (jlcvp)',",
-      "pl": "Pereira (jlcvp)”,",
-      "lang": "Pereira (jlcvp)',"
-    },
-    {
       "key": "monster.old_wasp.voice_1",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -1022,15 +990,6 @@
       "en": "Bssssss",
       "pl": "Bsssss",
       "lang": "Bssssss"
-    },
-    {
-      "key": "monster.war_golem.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Klonk klonk klonk",
-      "pl": "klon, klon, klon",
-      "lang": "Klonk klonk klonk"
     },
     {
       "key": "monster.rustheap_golem.voice_3",
@@ -1042,24 +1001,6 @@
       "lang": "*frzzp*"
     },
     {
-      "key": "monster.damaged_worker_golem.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Klonk klonk klonk",
-      "pl": "klon, klon, klon",
-      "lang": "Klonk klonk klonk"
-    },
-    {
-      "key": "monster.walker.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "*clop clop*",
-      "pl": "*klap, klop*",
-      "lang": "*clop clop*"
-    },
-    {
       "key": "monster.ice_golem.voice_1",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -1067,15 +1008,6 @@
       "en": "Chrrr.",
       "pl": "Chrr.",
       "lang": "Chrrr."
-    },
-    {
-      "key": "monster.devourer.voice_3",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "*omnnommm nomm*",
-      "pl": "*omnNiemmm Niemm*",
-      "lang": "*omnnommm nomm*"
     },
     {
       "key": "monster.death_blob.voice_1",
@@ -1087,24 +1019,6 @@
       "lang": "Shlorz"
     },
     {
-      "key": "monster.dworc_fleshhunter.voice_3",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Prek tars, dekklep zurk.",
-      "pl": "Prek I., dekklep zurk.",
-      "lang": "Prek tars, dekklep zurk."
-    },
-    {
-      "key": "monster.dworc_voodoomaster.voice_3",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Prek tars, dekklep zurk.",
-      "pl": "Prek I., dekklep zurk.",
-      "lang": "Prek tars, dekklep zurk."
-    },
-    {
       "key": "monster.minotaur.voice_2",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -1112,24 +1026,6 @@
       "en": "Hurr",
       "pl": "Hurra",
       "lang": "Hurr"
-    },
-    {
-      "key": "monster.dworc_venomsniper.voice_3",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Prek tars, dekklep zurk.",
-      "pl": "Prek I., dekklep zurk.",
-      "lang": "Prek tars, dekklep zurk."
-    },
-    {
-      "key": "monster.orc.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Prek tars, dekklep zurk.",
-      "pl": "Prek I., dekklep zurk.",
-      "lang": "Prek tars, dekklep zurk."
     },
     {
       "key": "monster.leiden.name",
@@ -1195,24 +1091,6 @@
       "lang": "Webster"
     },
     {
-      "key": "monster.axeitus_headbanger.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Axeitus Headbanger",
-      "pl": "Headbanger Axeitusa",
-      "lang": "Axeitus Headbanger"
-    },
-    {
-      "key": "monster.axeitus_headbanger.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Axeitus Headbanger",
-      "pl": "Headbanger Axeitusa",
-      "lang": "Axeitus Headbanger"
-    },
-    {
       "key": "monster.kesar.name",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -1229,276 +1107,6 @@
       "en": "Kesar",
       "pl": "Kezara",
       "lang": "Kesar"
-    },
-    {
-      "key": "monster.lucifuga_aranea.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Lucifuga Aranea",
-      "pl": "Lucyfuga Aranea",
-      "lang": "Lucifuga Aranea"
-    },
-    {
-      "key": "monster.faceless_bane.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Faceless Bane",
-      "pl": "Zguba Bez Twarzy",
-      "lang": "Faceless Bane"
-    },
-    {
-      "key": "monster.faceless_bane.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Faceless Bane",
-      "pl": "Zguba Bez Twarzy",
-      "lang": "Faceless Bane"
-    },
-    {
-      "key": "monster.malofur_mangrinder.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "BOOOM!",
-      "pl": "BUM!",
-      "lang": "BOOOM!"
-    },
-    {
-      "key": "monster.plagueroot.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Plagueroot",
-      "pl": "Plaga",
-      "lang": "Plagueroot"
-    },
-    {
-      "key": "monster.plagueroot.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Plagueroot",
-      "pl": "Plaga",
-      "lang": "Plagueroot"
-    },
-    {
-      "key": "monster.charging_outburst.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Charging Outburst",
-      "pl": "Wybuch ładowania",
-      "lang": "Charging Outburst"
-    },
-    {
-      "key": "monster.charging_outburst.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Charging Outburst",
-      "pl": "Wybuch ładowania",
-      "lang": "Charging Outburst"
-    },
-    {
-      "key": "monster.realityquake.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Realityquake",
-      "pl": "Trzęsienie rzeczywistości",
-      "lang": "Realityquake"
-    },
-    {
-      "key": "monster.realityquake.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Realityquake",
-      "pl": "Trzęsienie rzeczywistości",
-      "lang": "Realityquake"
-    },
-    {
-      "key": "monster.frenzy.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Frenzy",
-      "pl": "Szał",
-      "lang": "Frenzy"
-    },
-    {
-      "key": "monster.frenzy.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Frenzy",
-      "pl": "Szał",
-      "lang": "Frenzy"
-    },
-    {
-      "key": "monster.rupture.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Rupture",
-      "pl": "Pęknięcie",
-      "lang": "Rupture"
-    },
-    {
-      "key": "monster.rupture.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Rupture",
-      "pl": "Pęknięcie",
-      "lang": "Rupture"
-    },
-    {
-      "key": "monster.depolarized_crackler.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Depolarized Crackler",
-      "pl": "Depolaryzowany krakers",
-      "lang": "Depolarized Crackler"
-    },
-    {
-      "key": "monster.depolarized_crackler.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a depolarized crackler",
-      "pl": "zdepolaryzowanego crackera",
-      "lang": "a depolarized crackler"
-    },
-    {
-      "key": "monster.eradicator.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Eradicator",
-      "pl": "Eliminator",
-      "lang": "Eradicator"
-    },
-    {
-      "key": "monster.eradicator.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Eradicator",
-      "pl": "Eliminator",
-      "lang": "Eradicator"
-    },
-    {
-      "key": "monster.unstable_spark.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Unstable Spark",
-      "pl": "Niestabilna iskra",
-      "lang": "Unstable Spark"
-    },
-    {
-      "key": "monster.unstable_spark.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "an unstable spark",
-      "pl": "niestabilna iskra",
-      "lang": "an unstable spark"
-    },
-    {
-      "key": "monster.crackler.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Crackler",
-      "pl": "Krakers",
-      "lang": "Crackler"
-    },
-    {
-      "key": "monster.crackler.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a crackler",
-      "pl": "krakers",
-      "lang": "a crackler"
-    },
-    {
-      "key": "monster.disruption.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Disruption",
-      "pl": "Zakłócenie",
-      "lang": "Disruption"
-    },
-    {
-      "key": "monster.disruption.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a disruption",
-      "pl": "zakłócenie",
-      "lang": "a disruption"
-    },
-    {
-      "key": "monster.damage_resonance.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Damage Resonance",
-      "pl": "Rezonans uszkodzeń",
-      "lang": "Damage Resonance"
-    },
-    {
-      "key": "monster.damage_resonance.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Damage Resonance",
-      "pl": "Rezonans uszkodzeń",
-      "lang": "Damage Resonance"
-    },
-    {
-      "key": "monster.outburst.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Outburst",
-      "pl": "Wybuch",
-      "lang": "Outburst"
-    },
-    {
-      "key": "monster.outburst.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Outburst",
-      "pl": "Wybuch",
-      "lang": "Outburst"
-    },
-    {
-      "key": "monster.overcharged_disruption.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Overcharged Disruption",
-      "pl": "Przeciążone zakłócenia",
-      "lang": "Overcharged Disruption"
-    },
-    {
-      "key": "monster.overcharged_disruption.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "an overcharged disruption",
-      "pl": "nadmierne obciążenie",
-      "lang": "an overcharged disruption"
     },
     {
       "key": "monster.foreshock.name",
@@ -1526,15 +1134,6 @@
       "en": "Overcharge",
       "pl": "Przeciążenie",
       "lang": "Overcharge"
-    },
-    {
-      "key": "monster.overcharge.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "an overcharge",
-      "pl": "nadmierne obciążenie",
-      "lang": "an overcharge"
     },
     {
       "key": "monster.greed.name",
@@ -1636,141 +1235,6 @@
       "lang": "Monstor"
     },
     {
-      "key": "monster.monstor.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "ME DESTROY CITY! GROAR!",
-      "pl": "MNIE, MI NISZCZYĆ MIASTO! GROAR!",
-      "lang": "ME DESTROY CITY! GROAR!"
-    },
-    {
-      "key": "monster.doctor_perhaps.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Doctor Perhaps",
-      "pl": "Doktor Być może",
-      "lang": "Doctor Perhaps"
-    },
-    {
-      "key": "monster.doctor_perhaps.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Doctor Perhaps",
-      "pl": "Doktor Być może",
-      "lang": "Doctor Perhaps"
-    },
-    {
-      "key": "monster.evil_mastermind.voice_3",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You can't stop me!",
-      "pl": "Lekarz rejonowyżesz't stop mnie, mi!",
-      "lang": "You can't stop me!"
-    },
-    {
-      "key": "monster.angry_demon.voice_3",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "I SMELL FEEEEAAAAAR!",
-      "pl": "I I. FEEEEAAAAAR!",
-      "lang": "I SMELL FEEEEAAAAAR!"
-    },
-    {
-      "key": "monster.angry_demon.voice_4",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Your resistance is futile!",
-      "pl": "Twój opór jest jałowy!",
-      "lang": "Your resistance is futile!"
-    },
-    {
-      "key": "monster.organic_matter.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Organic Matter",
-      "pl": "Materia organiczna",
-      "lang": "Organic Matter"
-    },
-    {
-      "key": "monster.organic_matter.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "an organic matter",
-      "pl": "materia organiczna",
-      "lang": "an organic matter"
-    },
-    {
-      "key": "monster.lost_gnome.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Are we there yet?",
-      "pl": "Są my there jeszcze?",
-      "lang": "Are we there yet?"
-    },
-    {
-      "key": "monster.ember_beast.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ember Beast",
-      "pl": "Żarowa Bestia",
-      "lang": "Ember Beast"
-    },
-    {
-      "key": "monster.ember_beast.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "an ember beast",
-      "pl": "żarliwa bestia",
-      "lang": "an ember beast"
-    },
-    {
-      "key": "monster.megasylvan_yselda.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "What are you... doing!",
-      "pl": "I. są ty... praca!",
-      "lang": "What are you... doing!"
-    },
-    {
-      "key": "monster.sister_hetai.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Sister Hetai",
-      "pl": "Siostra Hetai",
-      "lang": "Sister Hetai"
-    },
-    {
-      "key": "monster.sister_hetai.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Sister Hetai",
-      "pl": "Siostra Hetai",
-      "lang": "Sister Hetai"
-    },
-    {
-      "key": "monster.urmahlullu_the_weakened.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You will regret this!",
-      "pl": "Ty will I. I.!",
-      "lang": "You will regret this!"
-    },
-    {
       "key": "monster.earworm.name",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -1787,42 +1251,6 @@
       "en": "an earworm",
       "pl": "robak uszny",
       "lang": "an earworm"
-    },
-    {
-      "key": "monster.ferumbras_essence.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ferumbras Essence",
-      "pl": "Ferumbras Esencja",
-      "lang": "Ferumbras Essence"
-    },
-    {
-      "key": "monster.ferumbras_essence.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "ferumbras essence",
-      "pl": "esencja ferumbrasa",
-      "lang": "ferumbras essence"
-    },
-    {
-      "key": "monster.electric_sparks.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Electric Sparks",
-      "pl": "Iskry elektryczne",
-      "lang": "Electric Sparks"
-    },
-    {
-      "key": "monster.electric_sparks.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Electric Sparks",
-      "pl": "Iskry elektryczne",
-      "lang": "Electric Sparks"
     },
     {
       "key": "monster.despair.name",
@@ -1861,15 +1289,6 @@
       "lang": "Guilt"
     },
     {
-      "key": "monster.damned_soul.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Forgive Meeeee!",
-      "pl": "Wybaczać Meeeee!",
-      "lang": "Forgive Meeeee!"
-    },
-    {
       "key": "monster.razzagorn.name",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -1886,15 +1305,6 @@
       "en": "Razzagorn",
       "pl": "Razzagorna",
       "lang": "Razzagorn"
-    },
-    {
-      "key": "monster.razzagorn.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "YOU-ARE-WEAK!!",
-      "pl": "TY-SĄ-SŁABY!!",
-      "lang": "YOU-ARE-WEAK!!"
     },
     {
       "key": "monster.zamulosh.name",
@@ -1915,114 +1325,6 @@
       "lang": "Zamulosh"
     },
     {
-      "key": "monster.redeemed_soul.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ting-a-ling.",
-      "pl": "Ting-jeden-ling.",
-      "lang": "Ting-a-ling."
-    },
-    {
-      "key": "monster.redeemed_soul.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Free ... finally.",
-      "pl": "I.... w końcu, ostatecznie.",
-      "lang": "Free ... finally."
-    },
-    {
-      "key": "monster.shulgrax.voice_3",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "YOU ARE ALL DAMNED!",
-      "pl": "Jesteś WSZYSTKIE I.!",
-      "lang": "YOU ARE ALL DAMNED!"
-    },
-    {
-      "key": "monster.the_lord_of_the_lice.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Feel the fever!",
-      "pl": "I. the gorączka, febra!",
-      "lang": "Feel the fever!"
-    },
-    {
-      "key": "monster.the_lord_of_the_lice.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Feeling queasy? Heeheehee!",
-      "pl": "Uczucie odczuwający mdłości, czujący się niedobrze? Heeheehee!",
-      "lang": "Feeling queasy? Heeheehee!"
-    },
-    {
-      "key": "monster.the_lord_of_the_lice.voice_3",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Swarm forth, minions!",
-      "pl": "I. na zewnątrz, minions!",
-      "lang": "Swarm forth, minions!"
-    },
-    {
-      "key": "monster.the_lord_of_the_lice.voice_4",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Pox upon you!",
-      "pl": "Pox na ty!",
-      "lang": "Pox upon you!"
-    },
-    {
-      "key": "monster.the_lord_of_the_lice.voice_5",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Take your breath away!",
-      "pl": "Take twój a. oddech I.!",
-      "lang": "Take your breath away!"
-    },
-    {
-      "key": "monster.tarbaz.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You are a failure.",
-      "pl": "Jesteś jeden niepowodzenie.",
-      "lang": "You are a failure."
-    },
-    {
-      "key": "monster.ascending_ferumbras.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ascending Ferumbras",
-      "pl": "Rosnąco Ferumbras",
-      "lang": "Ascending Ferumbras"
-    },
-    {
-      "key": "monster.ascending_ferumbras.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ascending Ferumbras",
-      "pl": "Rosnąco Ferumbras",
-      "lang": "Ascending Ferumbras"
-    },
-    {
-      "key": "monster.the_shatterer.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "STOMP! SHAKE! SHATTERER!!",
-      "pl": "STĄPAĆ CIĘŻKO! I.! ROZTRZASKIWAĆ SIĘ, ROZTRZASKIWAĆ!!",
-      "lang": "STOMP! SHAKE! SHATTERER!!"
-    },
-    {
       "key": "monster.ferumbras_mortal_shell.voice_1",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -2030,15 +1332,6 @@
       "en": "INSECTS!",
       "pl": "OWAD!",
       "lang": "INSECTS!"
-    },
-    {
-      "key": "monster.ferumbras_mortal_shell.voice_5",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "THE POWER WAS MINE!",
-      "pl": "THE I. BYŁ I.!",
-      "lang": "THE POWER WAS MINE!"
     },
     {
       "key": "monster.zamulosh3.desc",
@@ -2059,24 +1352,6 @@
       "lang": "zamulosh"
     },
     {
-      "key": "monster.destabilized_ferumbras.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Destabilized Ferumbras",
-      "pl": "Zdestabilizowany Ferumbras",
-      "lang": "Destabilized Ferumbras"
-    },
-    {
-      "key": "monster.destabilized_ferumbras.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Destabilized Ferumbras",
-      "pl": "Zdestabilizowany Ferumbras",
-      "lang": "Destabilized Ferumbras"
-    },
-    {
       "key": "monster.plagirath.name",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -2095,69 +1370,6 @@
       "lang": "Plagirath"
     },
     {
-      "key": "monster.plagirath.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "WITHER AND DIE!",
-      "pl": "I. I DIE!",
-      "lang": "WITHER AND DIE!"
-    },
-    {
-      "key": "monster.plagirath.voice_4",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "DEATH AND DECAY!",
-      "pl": "I. I I.!",
-      "lang": "DEATH AND DECAY!"
-    },
-    {
-      "key": "monster.lovely_souleater.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Lovely Souleater",
-      "pl": "Piękny Souleater",
-      "lang": "Lovely Souleater"
-    },
-    {
-      "key": "monster.lovely_souleater.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a lovely souleater",
-      "pl": "cudowny pożeracz dusz",
-      "lang": "a lovely souleater"
-    },
-    {
-      "key": "monster.lovely_frazzlemaw.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Lovely Frazzlemaw",
-      "pl": "Piękny Frazzlemaw",
-      "lang": "Lovely Frazzlemaw"
-    },
-    {
-      "key": "monster.lovely_frazzlemaw.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a lovely frazzlemaw",
-      "pl": "piękny frazzlemaw",
-      "lang": "a lovely frazzlemaw"
-    },
-    {
-      "key": "monster.lovely_frazzlemaw.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Mwaaaahnducate youuuuuu *gurgle*, mwaaah!",
-      "pl": "Mwaaaahnducate youuuuuu *I.*, mwaaah!",
-      "lang": "Mwaaaahnducate youuuuuu *gurgle*, mwaaah!"
-    },
-    {
       "key": "monster.lovely_polar_bear.voice_1",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -2167,177 +1379,6 @@
       "lang": "Grrrrrr"
     },
     {
-      "key": "monster.lovely_yielothax.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Lovely Yielothax",
-      "pl": "Piękny Yielothax",
-      "lang": "Lovely Yielothax"
-    },
-    {
-      "key": "monster.lovely_yielothax.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a lovely yielothax",
-      "pl": "piękny yielothax",
-      "lang": "a lovely yielothax"
-    },
-    {
-      "key": "monster.darklight_matter.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Darklight Matter",
-      "pl": "Materia ciemnego światła",
-      "lang": "Darklight Matter"
-    },
-    {
-      "key": "monster.darklight_matter.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a darklight matter",
-      "pl": "sprawa ciemnego światła",
-      "lang": "a darklight matter"
-    },
-    {
-      "key": "monster.darklight_source.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Darklight Source",
-      "pl": "Źródło Ciemnego Światła",
-      "lang": "Darklight Source"
-    },
-    {
-      "key": "monster.darklight_source.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a darklight source",
-      "pl": "źródło ciemnego światła",
-      "lang": "a darklight source"
-    },
-    {
-      "key": "monster.oozing_corpus.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Oozing Corpus",
-      "pl": "Sączący się Corpus",
-      "lang": "Oozing Corpus"
-    },
-    {
-      "key": "monster.oozing_corpus.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "an oozing corpus",
-      "pl": "sączący się korpus",
-      "lang": "an oozing corpus"
-    },
-    {
-      "key": "monster.sopping_corpus.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Sopping Corpus",
-      "pl": "Przesiąkający Korpus",
-      "lang": "Sopping Corpus"
-    },
-    {
-      "key": "monster.sopping_corpus.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a sopping corpus",
-      "pl": "przesiąknięty korpusem",
-      "lang": "a sopping corpus"
-    },
-    {
-      "key": "monster.darklight_emitter.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Darklight Emitter",
-      "pl": "Emiter ciemnego światła",
-      "lang": "Darklight Emitter"
-    },
-    {
-      "key": "monster.darklight_emitter.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a darklight emitter",
-      "pl": "emiter ciemnego światła",
-      "lang": "a darklight emitter"
-    },
-    {
-      "key": "monster.oozing_carcass.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Oozing Carcass",
-      "pl": "Sącząca się tusza",
-      "lang": "Oozing Carcass"
-    },
-    {
-      "key": "monster.oozing_carcass.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "an oozing carcass",
-      "pl": "sączącą się padliną",
-      "lang": "an oozing carcass"
-    },
-    {
-      "key": "monster.sopping_carcass.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Sopping Carcass",
-      "pl": "Zamoczenie tuszy",
-      "lang": "Sopping Carcass"
-    },
-    {
-      "key": "monster.sopping_carcass.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a sopping carcass",
-      "pl": "przemoczona tusza",
-      "lang": "a sopping carcass"
-    },
-    {
-      "key": "monster.wandering_pillar.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "DARKNESS. DEATH. ENERGIES.",
-      "pl": "CIEMNOŚĆ. I.. ENERGIA.",
-      "lang": "DARKNESS. DEATH. ENERGIES."
-    },
-    {
-      "key": "monster.bloated_man_maggot.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Bloated Man-Maggot",
-      "pl": "Nadęty człowiek-czerw",
-      "lang": "Bloated Man-Maggot"
-    },
-    {
-      "key": "monster.bloated_man_maggot.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a bloated man-maggot",
-      "pl": "nadęty człowiek-czerw",
-      "lang": "a bloated man-maggot"
-    },
-    {
       "key": "monster.converter.name",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -2345,33 +1386,6 @@
       "en": "Converter",
       "pl": "Przetwornik",
       "lang": "Converter"
-    },
-    {
-      "key": "monster.converter.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a converter",
-      "pl": "konwerter",
-      "lang": "a converter"
-    },
-    {
-      "key": "monster.somewhat_beatable.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Somewhat Beatable",
-      "pl": "Raczej do pokonania",
-      "lang": "Somewhat Beatable"
-    },
-    {
-      "key": "monster.somewhat_beatable.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a somewhat beatable",
-      "pl": "nieco do pokonania",
-      "lang": "a somewhat beatable"
     },
     {
       "key": "monster.kalyassa.name",
@@ -2392,114 +1406,6 @@
       "lang": "kalyassa"
     },
     {
-      "key": "monster.time_waster.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Time Waster",
-      "pl": "Pożeracz czasu",
-      "lang": "Time Waster"
-    },
-    {
-      "key": "monster.time_waster.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a time waster",
-      "pl": "pożeracz czasu",
-      "lang": "a time waster"
-    },
-    {
-      "key": "monster.unbound_defiler.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Unbound Defiler",
-      "pl": "Defilator niezwiązany",
-      "lang": "Unbound Defiler"
-    },
-    {
-      "key": "monster.unbound_defiler.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "an unbound defiler",
-      "pl": "niezwiązany defilator",
-      "lang": "an unbound defiler"
-    },
-    {
-      "key": "monster.soulcatcher.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Soulcatcher",
-      "pl": "Łapacz dusz",
-      "lang": "Soulcatcher"
-    },
-    {
-      "key": "monster.soulcatcher.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a soulcatcher",
-      "pl": "łapacz dusz",
-      "lang": "a soulcatcher"
-    },
-    {
-      "key": "monster.unbound_blightwalker.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Unbound Blightwalker",
-      "pl": "Niezwiązany Blightwalker",
-      "lang": "Unbound Blightwalker"
-    },
-    {
-      "key": "monster.unbound_blightwalker.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "an unbound blightwalker",
-      "pl": "niezwiązany blightwalker",
-      "lang": "an unbound blightwalker"
-    },
-    {
-      "key": "monster.bound_astral_power.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Bound Astral Power",
-      "pl": "Związane Astralne Power",
-      "lang": "Bound Astral Power"
-    },
-    {
-      "key": "monster.the_shielded_thorn_knight.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Together we are unstoppable!",
-      "pl": "Razem my są unstoppable!",
-      "lang": "Together we are unstoppable!"
-    },
-    {
-      "key": "monster.dragonking_zyrtarch.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Dragonking Zyrtarch",
-      "pl": "Smoczy Król Zyrtarch",
-      "lang": "Dragonking Zyrtarch"
-    },
-    {
-      "key": "monster.dragonking_zyrtarch.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Dragonking Zyrtarch",
-      "pl": "Smoczy Król Zyrtarch",
-      "lang": "Dragonking Zyrtarch"
-    },
-    {
       "key": "monster.the_enraged_thorn_knight.voice_3",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -2509,33 +1415,6 @@
       "lang": "NOOOOO!"
     },
     {
-      "key": "monster.soul_of_dragonking_zyrtarch.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "What have you done!?",
-      "pl": "I. masz ty over and done with!?",
-      "lang": "What have you done!?"
-    },
-    {
-      "key": "monster.lady_tenebris.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Lady Tenebris",
-      "pl": "Pani Tenebris",
-      "lang": "Lady Tenebris"
-    },
-    {
-      "key": "monster.lady_tenebris.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Lady Tenebris",
-      "pl": "Pani Tenebris",
-      "lang": "Lady Tenebris"
-    },
-    {
       "key": "monster.lady_tenebris.voice_3",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -2543,51 +1422,6 @@
       "en": "Blackout!",
       "pl": "Zaciemnienie!",
       "lang": "Blackout!"
-    },
-    {
-      "key": "monster.the_time_guardian.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "This place is sacred!",
-      "pl": "I. I. jest święty!",
-      "lang": "This place is sacred!"
-    },
-    {
-      "key": "monster.ratmiral_blackwhiskers.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ratmiral Blackwhiskers",
-      "pl": "Szczurze Czarne Wąsy",
-      "lang": "Ratmiral Blackwhiskers"
-    },
-    {
-      "key": "monster.ratmiral_blackwhiskers.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ratmiral Blackwhiskers",
-      "pl": "Szczurze Czarne Wąsy",
-      "lang": "Ratmiral Blackwhiskers"
-    },
-    {
-      "key": "monster.vashresamun.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Vashresamun",
-      "pl": "Waszresamun",
-      "lang": "Vashresamun"
-    },
-    {
-      "key": "monster.vashresamun.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Vashresamun",
-      "pl": "Waszresamun",
-      "lang": "Vashresamun"
     },
     {
       "key": "monster.dipthrah.name",
@@ -2635,42 +1469,6 @@
       "lang": "Thalas"
     },
     {
-      "key": "monster.shredderthrower.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Shredderthrower",
-      "pl": "Niszczyciel",
-      "lang": "Shredderthrower"
-    },
-    {
-      "key": "monster.shredderthrower.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a shredderthrower",
-      "pl": "niszczarka",
-      "lang": "a shredderthrower"
-    },
-    {
-      "key": "monster.mahrdis.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ashes to ashes!",
-      "pl": "Popiół do popiół!",
-      "lang": "Ashes to ashes!"
-    },
-    {
-      "key": "monster.mahrdis.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Fire, Fire!",
-      "pl": "Ogień, Ogień!",
-      "lang": "Fire, Fire!"
-    },
-    {
       "key": "monster.bad_dream.name",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -2680,15 +1478,6 @@
       "lang": "Bad Dream"
     },
     {
-      "key": "monster.bad_dream.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a bad dream",
-      "pl": "zły sen",
-      "lang": "a bad dream"
-    },
-    {
       "key": "monster.prince_drazzak.voice_1",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -2696,51 +1485,6 @@
       "en": "DIE!",
       "pl": "UMIERAĆ!",
       "lang": "DIE!"
-    },
-    {
-      "key": "monster.prince_drazzak.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "All VOCATIONS must DIE!",
-      "pl": "Wszystkie PROFESJA musi DIE!",
-      "lang": "All VOCATIONS must DIE!"
-    },
-    {
-      "key": "monster.prince_drazzak.voice_3",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "GET OVER HERE!",
-      "pl": "GET I. TUTAJ, TU!",
-      "lang": "GET OVER HERE!"
-    },
-    {
-      "key": "monster.prince_drazzak.voice_4",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "CRUSH THEM ALL!",
-      "pl": "CRUSH ICH WSZYSTKIE!",
-      "lang": "CRUSH THEM ALL!"
-    },
-    {
-      "key": "monster.prince_drazzak.voice_5",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "VARIPHOR WILL RULE!",
-      "pl": "VARIPHOR WILL I.!",
-      "lang": "VARIPHOR WILL RULE!"
-    },
-    {
-      "key": "monster.prince_drazzak.voice_9",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "THEY WILL ALL PAY!",
-      "pl": "ONI WILL WSZYSTKIE I.!",
-      "lang": "THEY WILL ALL PAY!"
     },
     {
       "key": "monster.horadron.name",
@@ -2761,33 +1505,6 @@
       "lang": "Horadron"
     },
     {
-      "key": "monster.omrafir.voice_3",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "FREEDOM FOR THE PRINCES!",
-      "pl": "I. DLA THE KSIĄŻĘ!",
-      "lang": "FREEDOM FOR THE PRINCES!"
-    },
-    {
-      "key": "monster.omrafir.voice_4",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "OMRAFIR INHALES DEEPLY!",
-      "pl": "OMRAFIR WDYCHAĆ I.!",
-      "lang": "OMRAFIR INHALES DEEPLY!"
-    },
-    {
-      "key": "monster.omrafir.voice_5",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "OMRAFIR BREATHES INFERNAL FIRE",
-      "pl": "OMRAFIR A. ODDECH PIEKIELNY FIRE",
-      "lang": "OMRAFIR BREATHES INFERNAL FIRE"
-    },
-    {
       "key": "monster.minion_of_versperoth.voice_1",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -2795,60 +1512,6 @@
       "en": "Grrrrunt",
       "pl": "Wrrrr",
       "lang": "Grrrrunt"
-    },
-    {
-      "key": "monster.gnomevil.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "I'm feeling grrrreat!",
-      "pl": "I'm uczucie grrrreat!",
-      "lang": "I'm feeling grrrreat!"
-    },
-    {
-      "key": "monster.gnomevil.voice_3",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "No more Mr. Nicegnome!",
-      "pl": "Nie more Mr. NicegNieme!",
-      "lang": "No more Mr. Nicegnome!"
-    },
-    {
-      "key": "monster.deathstrike.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Deathstrike",
-      "pl": "Uderzenie Śmierci",
-      "lang": "Deathstrike"
-    },
-    {
-      "key": "monster.deathstrike.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Deathstrike",
-      "pl": "Uderzenie Śmierci",
-      "lang": "Deathstrike"
-    },
-    {
-      "key": "monster.deathstrike.voice_3",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "I am carnage incarnate!",
-      "pl": "Jestem wcieleniem rzezi!",
-      "lang": "I am carnage incarnate!"
-    },
-    {
-      "key": "monster.deathstrike.voice_5",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Taaake... this!",
-      "pl": "Taaake... I.!",
-      "lang": "Taaake... this!"
     },
     {
       "key": "monster.abyssador.name",
@@ -2869,15 +1532,6 @@
       "lang": "Abyssador"
     },
     {
-      "key": "monster.humorless_fungus.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Munch munch munch!",
-      "pl": "Przeżuwać przeżuwać przeżuwać!",
-      "lang": "Munch munch munch!"
-    },
-    {
       "key": "monster.humorless_fungus.voice_2",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -2887,69 +1541,6 @@
       "lang": "Chatter"
     },
     {
-      "key": "monster.oberons_bile.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Oberon's Bile",
-      "pl": "Żółć Oberona",
-      "lang": "Oberon's Bile"
-    },
-    {
-      "key": "monster.oberons_bile.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Oberon's Bile",
-      "pl": "Żółć Oberona",
-      "lang": "Oberon's Bile"
-    },
-    {
-      "key": "monster.brother_freeze.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Brother Freeze",
-      "pl": "Brat Freeze",
-      "lang": "Brother Freeze"
-    },
-    {
-      "key": "monster.brother_freeze.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Brother Freeze",
-      "pl": "Brat Freeze",
-      "lang": "Brother Freeze"
-    },
-    {
-      "key": "monster.oberons_ire.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Oberon's Ire",
-      "pl": "Gniew Oberona",
-      "lang": "Oberon's Ire"
-    },
-    {
-      "key": "monster.oberons_ire.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Oberon's Ire",
-      "pl": "Gniew Oberona",
-      "lang": "Oberon's Ire"
-    },
-    {
-      "key": "monster.yalahari_despoiler.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a yalahari despoiler",
-      "pl": "łupieżca Yalahari",
-      "lang": "a yalahari despoiler"
-    },
-    {
       "key": "monster.librarian.name",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -2957,96 +1548,6 @@
       "en": "Librarian",
       "pl": "Bibliotekarz",
       "lang": "Librarian"
-    },
-    {
-      "key": "monster.librarian.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a librarian",
-      "pl": "bibliotekarz",
-      "lang": "a librarian"
-    },
-    {
-      "key": "monster.oberons_spite.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Oberon's Spite",
-      "pl": "Złość Oberona",
-      "lang": "Oberon's Spite"
-    },
-    {
-      "key": "monster.oberons_spite.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Oberon's Spite",
-      "pl": "Złość Oberona",
-      "lang": "Oberon's Spite"
-    },
-    {
-      "key": "monster.oberons_hate.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Oberon's Hate",
-      "pl": "Nienawiść Oberona",
-      "lang": "Oberon's Hate"
-    },
-    {
-      "key": "monster.oberons_hate.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Oberon's Hate",
-      "pl": "Nienawiść Oberona",
-      "lang": "Oberon's Hate"
-    },
-    {
-      "key": "monster.grand_commander_soeren.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Falcon reigns supreme!",
-      "pl": "The Sokół I. najwyższy, główny!",
-      "lang": "The Falcon reigns supreme!"
-    },
-    {
-      "key": "monster.grand_chaplain_gaunder.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Grand Chaplain Gaunder",
-      "pl": "Wielki Kapelan Gaunder",
-      "lang": "Grand Chaplain Gaunder"
-    },
-    {
-      "key": "monster.grand_chaplain_gaunder.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Grand Chaplain Gaunder",
-      "pl": "Wielki Kapelan Gaunder",
-      "lang": "Grand Chaplain Gaunder"
-    },
-    {
-      "key": "monster.preceptor_lazare.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Preceptor Lazare",
-      "pl": "Nauczyciel Lazare",
-      "lang": "Preceptor Lazare"
-    },
-    {
-      "key": "monster.preceptor_lazare.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Preceptor Lazare",
-      "pl": "Nauczyciel Lazare",
-      "lang": "Preceptor Lazare"
     },
     {
       "key": "monster.jailer.name",
@@ -3067,33 +1568,6 @@
       "lang": "Jailer"
     },
     {
-      "key": "monster.lokathmor_stuck.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Lokathmor Stuck",
-      "pl": "Lokathmor utknął",
-      "lang": "Lokathmor Stuck"
-    },
-    {
-      "key": "monster.brother_chill.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Brother Chill",
-      "pl": "Brat Chill",
-      "lang": "Brother Chill"
-    },
-    {
-      "key": "monster.brother_chill.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Brother Chill",
-      "pl": "Brat Chill",
-      "lang": "Brother Chill"
-    },
-    {
       "key": "monster.bloodback.name",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -3110,15 +1584,6 @@
       "en": "Bloodback",
       "pl": "Krew",
       "lang": "Bloodback"
-    },
-    {
-      "key": "monster.bloodback.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You will DIE!",
-      "pl": "Ty will DIE!",
-      "lang": "You will DIE!"
     },
     {
       "key": "monster.darkfang.name",
@@ -3157,24 +1622,6 @@
       "lang": "Sharpclaw"
     },
     {
-      "key": "monster.sharpclaw.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Never underestimate a badger!",
-      "pl": "Nigdy niedoceniać jeden I.!",
-      "lang": "Never underestimate a badger!"
-    },
-    {
-      "key": "monster.hellgorak.voice_5",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "I smell your fear.",
-      "pl": "I I. twój I..",
-      "lang": "I smell your fear."
-    },
-    {
       "key": "monster.hellgorak.voice_6",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -3191,15 +1638,6 @@
       "en": "Dreadbeast",
       "pl": "Straszna Bestia",
       "lang": "Dreadbeast"
-    },
-    {
-      "key": "monster.dreadbeast.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a dreadbeast",
-      "pl": "przerażająca bestia",
-      "lang": "a dreadbeast"
     },
     {
       "key": "monster.zugurosh.name",
@@ -3220,24 +1658,6 @@
       "lang": "Zugurosh"
     },
     {
-      "key": "monster.golgordan.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Latrivan, you fool!",
-      "pl": "Latrivan, ty fool!",
-      "lang": "Latrivan, you fool!"
-    },
-    {
-      "key": "monster.latrivan.voice_3",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Golgordan you fool!",
-      "pl": "Golgordan ty fool!",
-      "lang": "Golgordan you fool!"
-    },
-    {
       "key": "monster.madareth.name",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -3254,24 +1674,6 @@
       "en": "Madareth",
       "pl": "Madaretha",
       "lang": "Madareth"
-    },
-    {
-      "key": "monster.madareth.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Feel my wrath!",
-      "pl": "I. mój gniew!",
-      "lang": "Feel my wrath!"
-    },
-    {
-      "key": "monster.madareth.voice_4",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You will all die!",
-      "pl": "Ty will wszystkie die!",
-      "lang": "You will all die!"
     },
     {
       "key": "monster.tanjis.name",
@@ -3292,33 +1694,6 @@
       "lang": "Tanjis"
     },
     {
-      "key": "monster.jaul.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "QJELL AFAR GOU JEY!!",
-      "pl": "QJELL DALEKO GOU JEY!!",
-      "lang": "QJELL AFAR GOU JEY!!"
-    },
-    {
-      "key": "monster.condensed_sin.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Condensed Sin",
-      "pl": "Skondensowany grzech",
-      "lang": "Condensed Sin"
-    },
-    {
-      "key": "monster.condensed_sin.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a condensed sin",
-      "pl": "skondensowany grzech",
-      "lang": "a condensed sin"
-    },
-    {
       "key": "monster.fetter.name",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -3335,42 +1710,6 @@
       "en": "a fetter",
       "pl": "pęta",
       "lang": "a fetter"
-    },
-    {
-      "key": "monster.condensed_sins.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Condensed Sins",
-      "pl": "Skondensowane grzechy",
-      "lang": "Condensed Sins"
-    },
-    {
-      "key": "monster.condensed_sins.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a condensed sins",
-      "pl": "skondensowane grzechy",
-      "lang": "a condensed sins"
-    },
-    {
-      "key": "monster.regenerating_mass.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Regenerating Mass",
-      "pl": "Masa regeneracyjna",
-      "lang": "Regenerating Mass"
-    },
-    {
-      "key": "monster.regenerating_mass.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a regenerating mass",
-      "pl": "masa regeneracyjna",
-      "lang": "a regenerating mass"
     },
     {
       "key": "monster.sir_baeloc.name",
@@ -3409,42 +1748,6 @@
       "lang": "Earl Osam"
     },
     {
-      "key": "monster.scarlett_etzel.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Galthen... is that you? ",
-      "pl": "Galthen... jest that ty?",
-      "lang": "Galthen... is that you? "
-    },
-    {
-      "key": "monster.scarlett_etzel.voice_4",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " Aaaaaaah!!!",
-      "pl": "Aaaaaaah!!!",
-      "lang": " Aaaaaaah!!!"
-    },
-    {
-      "key": "monster.sir_nictros.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Sir Nictros",
-      "pl": "Panie Nictrosie",
-      "lang": "Sir Nictros"
-    },
-    {
-      "key": "monster.sir_nictros.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Sir Nictros",
-      "pl": "Panie Nictrosie",
-      "lang": "Sir Nictros"
-    },
-    {
       "key": "monster.doomhowl.name",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -3481,15 +1784,6 @@
       "lang": "Fatality"
     },
     {
-      "key": "monster.dreadwing.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "More blood! More!",
-      "pl": "More I.! More!",
-      "lang": "More blood! More!"
-    },
-    {
       "key": "monster.tirecz.name",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -3506,15 +1800,6 @@
       "en": "Tirecz",
       "pl": "Tyrecz",
       "lang": "Tirecz"
-    },
-    {
-      "key": "monster.the_axeorcist.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Blood! Carnage! Muhahaha!",
-      "pl": "I.! Rzeź! Muhahaha!",
-      "lang": "Blood! Carnage! Muhahaha!"
     },
     {
       "key": "monster.coldheart.name",
@@ -3589,42 +1874,6 @@
       "lang": "Menace"
     },
     {
-      "key": "monster.goshnars_hatred.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Goshnar's Hatred",
-      "pl": "Nienawiść Goshnara",
-      "lang": "Goshnar's Hatred"
-    },
-    {
-      "key": "monster.goshnars_hatred.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Goshnar's Hatred",
-      "pl": "Nienawiść Goshnara",
-      "lang": "Goshnar's Hatred"
-    },
-    {
-      "key": "monster.goshnars_spite.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Goshnar's Spite",
-      "pl": "Złość Goshnara",
-      "lang": "Goshnar's Spite"
-    },
-    {
-      "key": "monster.goshnars_spite.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Goshnar's Spite",
-      "pl": "Złość Goshnara",
-      "lang": "Goshnar's Spite"
-    },
-    {
       "key": "monster.mean_maw.name",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -3632,15 +1881,6 @@
       "en": "Mean Maw",
       "pl": "Wredna Maw",
       "lang": "Mean Maw"
-    },
-    {
-      "key": "monster.mean_maw.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a mean maw",
-      "pl": "podła paszcza",
-      "lang": "a mean maw"
     },
     {
       "key": "monster.mean_maw.voice_2",
@@ -3652,51 +1892,6 @@
       "lang": "Clank."
     },
     {
-      "key": "monster.dreadful_harvester.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Dreadful Harvester",
-      "pl": "Straszny żniwiarz",
-      "lang": "Dreadful Harvester"
-    },
-    {
-      "key": "monster.dreadful_harvester.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a dreadful harvester",
-      "pl": "okropny żniwiarz",
-      "lang": "a dreadful harvester"
-    },
-    {
-      "key": "monster.dreadful_harvester.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Fear for your soul!",
-      "pl": "I. dla twój dusza!",
-      "lang": "Fear for your soul!"
-    },
-    {
-      "key": "monster.soulsnatcher.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Soulsnatcher",
-      "pl": "Porywacz dusz",
-      "lang": "Soulsnatcher"
-    },
-    {
-      "key": "monster.soulsnatcher.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a soulsnatcher",
-      "pl": "porywacz dusz",
-      "lang": "a soulsnatcher"
-    },
-    {
       "key": "monster.greedbeast.name",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -3706,168 +1901,6 @@
       "lang": "Greedbeast"
     },
     {
-      "key": "monster.greedbeast.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a greedbeast",
-      "pl": "chciwa bestia",
-      "lang": "a greedbeast"
-    },
-    {
-      "key": "monster.goshnars_greed.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Goshnar's Greed",
-      "pl": "Chciwość Goshnara",
-      "lang": "Goshnar's Greed"
-    },
-    {
-      "key": "monster.goshnars_greed.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Goshnar's Greed",
-      "pl": "Chciwość Goshnara",
-      "lang": "Goshnar's Greed"
-    },
-    {
-      "key": "monster.goshnars_malice.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Goshnar's Malice",
-      "pl": "Złośliwość Goshnara",
-      "lang": "Goshnar's Malice"
-    },
-    {
-      "key": "monster.goshnars_malice.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Goshnar's Malice",
-      "pl": "Złośliwość Goshnara",
-      "lang": "Goshnar's Malice"
-    },
-    {
-      "key": "monster.goshnars_cruelty.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Goshnar's Cruelty",
-      "pl": "Okrucieństwo Goshnara",
-      "lang": "Goshnar's Cruelty"
-    },
-    {
-      "key": "monster.goshnars_cruelty.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Goshnar's Cruelty",
-      "pl": "Okrucieństwo Goshnara",
-      "lang": "Goshnar's Cruelty"
-    },
-    {
-      "key": "monster.infernal_phantom.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ashes to ashes.",
-      "pl": "Popiół do popiół.",
-      "lang": "Ashes to ashes."
-    },
-    {
-      "key": "monster.infernal_phantom.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Burn, baby! Burn!",
-      "pl": "I., niemowlę! I.!",
-      "lang": "Burn, baby! Burn!"
-    },
-    {
-      "key": "monster.mould_phantom.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Everything decomposes.",
-      "pl": "Wszystko rozkładać się.",
-      "lang": "Everything decomposes."
-    },
-    {
-      "key": "monster.necromantic_focus.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Necromantic Focus",
-      "pl": "Nekromantyczne skupienie",
-      "lang": "Necromantic Focus"
-    },
-    {
-      "key": "monster.necromantic_focus.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a necromantic focus",
-      "pl": "nekromantyczne skupienie",
-      "lang": "a necromantic focus"
-    },
-    {
-      "key": "monster.brachiodemon.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a brachiodemon",
-      "pl": "brachiodemon",
-      "lang": "a brachiodemon"
-    },
-    {
-      "key": "monster.brachiodemon.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Feel the heat!",
-      "pl": "I. the ciepło, ciepłota!",
-      "lang": "Feel the heat!"
-    },
-    {
-      "key": "monster.brachiodemon.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hand over your life.",
-      "pl": "Hand I. twój I..",
-      "lang": "Hand over your life."
-    },
-    {
-      "key": "monster.capricious_phantom.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Troubled Water. Troubled you!",
-      "pl": "Zmartwiony, zakłopotany I.. Zmartwiony, zakłopotany ty!",
-      "lang": "Troubled Water. Troubled you!"
-    },
-    {
-      "key": "monster.capricious_phantom.voice_3",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You should shiver!",
-      "pl": "Ty a. powinien, powinna I.!",
-      "lang": "You should shiver!"
-    },
-    {
-      "key": "monster.capricious_phantom.voice_4",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You will leak blood.",
-      "pl": "Ty will I. I..",
-      "lang": "You will leak blood."
-    },
-    {
       "key": "monster.many_faces.name",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -3875,15 +1908,6 @@
       "en": "Many Faces",
       "pl": "Wiele twarzy",
       "lang": "Many Faces"
-    },
-    {
-      "key": "monster.many_faces.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a many faces",
-      "pl": "wiele twarzy",
-      "lang": "a many faces"
     },
     {
       "key": "monster.branchy_crawler.voice_2",
@@ -3904,51 +1928,6 @@
       "lang": "Hiss."
     },
     {
-      "key": "monster.cloak_of_terror.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Power up!",
-      "pl": "I. up!",
-      "lang": "Power up!"
-    },
-    {
-      "key": "monster.cloak_of_terror.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Shocked to meet you.",
-      "pl": "I. do spotykać się, spotykać ty.",
-      "lang": "Shocked to meet you."
-    },
-    {
-      "key": "monster.vibrant_phantom.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "All this beautiful lightning.",
-      "pl": "Wszystkie I. piękny I..",
-      "lang": "All this beautiful lightning."
-    },
-    {
-      "key": "monster.vibrant_phantom.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Feel the vibration!",
-      "pl": "I. the drganie, wibracja!",
-      "lang": "Feel the vibration!"
-    },
-    {
-      "key": "monster.infernal_demon.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Your soul will burn.",
-      "pl": "Twój dusza will I..",
-      "lang": "Your soul will burn."
-    },
-    {
       "key": "monster.bony_sea_devil.voice_2",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -3956,42 +1935,6 @@
       "en": "Clank.",
       "pl": "I..",
       "lang": "Clank."
-    },
-    {
-      "key": "monster.mirror_image.voice_4",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "What a lovely reflection.",
-      "pl": "I. jeden cudowny, wspaniały odbicie.",
-      "lang": "What a lovely reflection."
-    },
-    {
-      "key": "monster.spiteful_spitter.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Power up!",
-      "pl": "I. up!",
-      "lang": "Power up!"
-    },
-    {
-      "key": "monster.spiteful_spitter.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Shocked to meet you.",
-      "pl": "I. do spotykać się, spotykać ty.",
-      "lang": "Shocked to meet you."
-    },
-    {
-      "key": "monster.pinata_dragon.voice_6",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Bring it on!",
-      "pl": "Bring to na!",
-      "lang": "Bring it on!"
     },
     {
       "key": "monster.fluffy.name",
@@ -4012,87 +1955,6 @@
       "lang": "Fluffy"
     },
     {
-      "key": "monster.spectral_scum.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Booze! More booze!",
-      "pl": "I.! More I.!",
-      "lang": "Booze! More booze!"
-    },
-    {
-      "key": "monster.bones.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Keep that dog away!",
-      "pl": "Keep that I. I.!",
-      "lang": "Keep that dog away!"
-    },
-    {
-      "key": "monster.minishabaal.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Minishabaal",
-      "pl": "Miniszabaal",
-      "lang": "Minishabaal"
-    },
-    {
-      "key": "monster.minishabaal.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Minishabaal",
-      "pl": "Miniszabaal",
-      "lang": "Minishabaal"
-    },
-    {
-      "key": "monster.minishabaal.voice_4",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Get them Fluffy!",
-      "pl": "Get ich Puchaty!",
-      "lang": "Get them Fluffy!"
-    },
-    {
-      "key": "monster.minishabaal.voice_5",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "He He He",
-      "pl": "On On On",
-      "lang": "He He He"
-    },
-    {
-      "key": "monster.minishabaal.voice_11",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "WHERE'S FLUFFY?",
-      "pl": "WHERE'S PUCHATY?",
-      "lang": "WHERE'S FLUFFY?"
-    },
-    {
-      "key": "monster.minishabaal.voice_12",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "COME HERE FLUFFY",
-      "pl": "COME TUTAJ, TU PUCHATY",
-      "lang": "COME HERE FLUFFY"
-    },
-    {
-      "key": "monster.eclipse_knight.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Yes, flee from me!",
-      "pl": "Tak, uciekać z mnie, mi!",
-      "lang": "Yes, flee from me!"
-    },
-    {
       "key": "monster.primitive.name",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -4100,33 +1962,6 @@
       "en": "Primitive",
       "pl": "Prymitywny",
       "lang": "Primitive"
-    },
-    {
-      "key": "monster.primitive.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a primitive",
-      "pl": "prymitywny",
-      "lang": "a primitive"
-    },
-    {
-      "key": "monster.primitive.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "I'll rook you all!",
-      "pl": "I'll gawron ty wszystkie!",
-      "lang": "I'll rook you all!"
-    },
-    {
-      "key": "monster.primitive.voice_4",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You are history!",
-      "pl": "Jesteś historia!",
-      "lang": "You are history!"
     },
     {
       "key": "monster.primitive.voice_6",
@@ -4147,87 +1982,6 @@
       "lang": "Die noob!"
     },
     {
-      "key": "monster.primitive.voice_8",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "There are no dragons!",
-      "pl": "Nie magister nauk humanistycznych, magister smok!",
-      "lang": "There are no dragons!"
-    },
-    {
-      "key": "monster.primitive.voice_10",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You all are noobs!",
-      "pl": "Ty wszystkie są Nieobs!",
-      "lang": "You all are noobs!"
-    },
-    {
-      "key": "monster.primitive.voice_11",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Beware of the cyclops!",
-      "pl": "Strzec się z the cyclops!",
-      "lang": "Beware of the cyclops!"
-    },
-    {
-      "key": "monster.primitive.voice_12",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Just had a disconnect.",
-      "pl": "Just miał jeden rozłączać.",
-      "lang": "Just had a disconnect."
-    },
-    {
-      "key": "monster.primitive.voice_14",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "We'll be back!",
-      "pl": "We'll być I.!",
-      "lang": "We'll be back!"
-    },
-    {
-      "key": "monster.primitive.voice_15",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "I need some vitamins!",
-      "pl": "I potrzebować I. witamina!",
-      "lang": "I need some vitamins!"
-    },
-    {
-      "key": "monster.primitive.voice_18",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "This world is ours!",
-      "pl": "I. I. jest nasz!",
-      "lang": "This world is ours!"
-    },
-    {
-      "key": "monster.primitive.voice_19",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Back to the roots!",
-      "pl": "I. do the I.!",
-      "lang": "Back to the roots!"
-    },
-    {
-      "key": "monster.primitive.voice_20",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Kill all magic users!",
-      "pl": "I. wszystkie I. użytkownik!",
-      "lang": "Kill all magic users!"
-    },
-    {
       "key": "monster.hacker.name",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -4246,114 +2000,6 @@
       "lang": "a hacker"
     },
     {
-      "key": "monster.hacker.voice_3",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Gimme free gold!",
-      "pl": "Gimme I. złota!",
-      "lang": "Gimme free gold!"
-    },
-    {
-      "key": "monster.hacker.voice_4",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Me sooo smart!",
-      "pl": "Mnie, mi sooo I.!",
-      "lang": "Me sooo smart!"
-    },
-    {
-      "key": "monster.hacker.voice_6",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Me is GM!",
-      "pl": "Mnie, mi jest GM!",
-      "lang": "Me is GM!"
-    },
-    {
-      "key": "monster.hacker.voice_7",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Gimme your password!",
-      "pl": "Gimme twój hasło!",
-      "lang": "Gimme your password!"
-    },
-    {
-      "key": "monster.hacker.voice_9",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Me not stink!",
-      "pl": "Mnie, mi Niet I.!",
-      "lang": "Me not stink!"
-    },
-    {
-      "key": "monster.grynch_clan_goblin.voice_3",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Uhh! Nobody home! <chuckle>",
-      "pl": "Uch! Nikogo w domu! <chuckle>",
-      "lang": "Uhh! Nobody home! <chuckle>"
-    },
-    {
-      "key": "monster.grynch_clan_goblin.voice_4",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Me just borrowed it!",
-      "pl": "Mnie, mi just pożyczać to!",
-      "lang": "Me just borrowed it!"
-    },
-    {
-      "key": "monster.grynch_clan_goblin.voice_10",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Other Goblin stole it!",
-      "pl": "Drugi, pozostały Chochlik stole to!",
-      "lang": "Other Goblin stole it!"
-    },
-    {
-      "key": "monster.grynch_clan_goblin.voice_11",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "All presents mine!",
-      "pl": "Wszystkie presents I.!",
-      "lang": "All presents mine!"
-    },
-    {
-      "key": "monster.grynch_clan_goblin.voice_13",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Free itans plz!",
-      "pl": "I. itans plz!",
-      "lang": "Free itans plz!"
-    },
-    {
-      "key": "monster.grynch_clan_goblin.voice_14",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Not me! Not me!",
-      "pl": "Niet mnie, mi! Niet mnie, mi!",
-      "lang": "Not me! Not me!"
-    },
-    {
-      "key": "monster.grynch_clan_goblin.voice_21",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Mee? Stealing? Never!!!",
-      "pl": "Mee? Kraść? Nigdy!!!",
-      "lang": "Mee? Stealing? Never!!!"
-    },
-    {
       "key": "monster.grim_reaper.voice_1",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -4363,25 +2009,2455 @@
       "lang": "Death!"
     },
     {
-      "key": "monster.grim_reaper.voice_2",
+      "key": "monster.undead_gladiator.voice_2",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Come a little closer!",
-      "pl": "Come jeden little Zamknijr!",
-      "lang": "Come a little closer!"
+      "en": "Bring it!",
+      "pl": "Bring to!",
+      "lang": "Bring it!"
+    },
+    {
+      "key": "monster.ghost.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Huh!",
+      "pl": "He, co!",
+      "lang": "Huh!"
+    },
+    {
+      "key": "monster.vampire.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "BLOOD!",
+      "pl": "I.!",
+      "lang": "BLOOD!"
+    },
+    {
+      "key": "monster.zombie.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Zombie",
+      "pl": "Zombi",
+      "lang": "Zombie"
+    },
+    {
+      "key": "monster.zombie.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a zombie",
+      "pl": "zombie",
+      "lang": "a zombie"
+    },
+    {
+      "key": "monster.tarnished_spirit.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Huh!",
+      "pl": "He, co!",
+      "lang": "Huh!"
+    },
+    {
+      "key": "monster.souleater.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Souleater",
+      "pl": "Pożeracz dusz",
+      "lang": "Souleater"
+    },
+    {
+      "key": "monster.yakchal.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Yakchal",
+      "pl": "Jakchał",
+      "lang": "Yakchal"
+    },
+    {
+      "key": "monster.yakchal.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Yakchal",
+      "pl": "Jakchał",
+      "lang": "Yakchal"
+    },
+    {
+      "key": "monster.grorlam.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Grorlam",
+      "pl": "Grolam",
+      "lang": "Grorlam"
+    },
+    {
+      "key": "monster.grorlam.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Grorlam",
+      "pl": "Grolam",
+      "lang": "Grorlam"
+    },
+    {
+      "key": "monster.tyrn.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "GRRR",
+      "pl": "Wrr",
+      "lang": "GRRR"
+    },
+    {
+      "key": "monster.frost_servant.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Chrrr.",
+      "pl": "Chrr.",
+      "lang": "Chrrr."
+    },
+    {
+      "key": "monster.frost_servant.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Crrrrk.",
+      "pl": "Crrr.",
+      "lang": "Crrrrk."
+    },
+    {
+      "key": "monster.draptor.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "GRRR",
+      "pl": "Wrr",
+      "lang": "GRRR"
+    },
+    {
+      "key": "monster.the_welter.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "FCHHHHH",
+      "pl": "Fchhhh",
+      "lang": "FCHHHHH"
+    },
+    {
+      "key": "monster.furyosa.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Die!",
+      "pl": "UMIERAĆ!",
+      "lang": "Die!"
+    },
+    {
+      "key": "monster.fernfang.voice_4",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Grrrrrrr",
+      "pl": "Wrrrrrr",
+      "lang": "Grrrrrrr"
+    },
+    {
+      "key": "monster.evil_sheep.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Grrrr",
+      "pl": "Wrrrr",
+      "lang": "Grrrr"
+    },
+    {
+      "key": "monster.wolf.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Grrrrrrr",
+      "pl": "Wrrrrrr",
+      "lang": "Grrrrrrr"
+    },
+    {
+      "key": "monster.starving_wolf.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Gnoorrr",
+      "pl": "GNieorrr",
+      "lang": "Gnoorrr"
+    },
+    {
+      "key": "monster.cave_rat.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Meep!",
+      "pl": "Mip!",
+      "lang": "Meep!"
+    },
+    {
+      "key": "monster.war_wolf.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Grrrrrrr",
+      "pl": "Wrrrrrr",
+      "lang": "Grrrrrrr"
+    },
+    {
+      "key": "monster.mushroom_sniffer.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Oink",
+      "pl": "Chrum",
+      "lang": "Oink"
+    },
+    {
+      "key": "monster.mushroom_sniffer.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Oink oink",
+      "pl": "Chrum chrum",
+      "lang": "Oink oink"
+    },
+    {
+      "key": "monster.water_buffalo.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Gnoorr!",
+      "pl": "GNieorr!",
+      "lang": "Gnoorr!"
+    },
+    {
+      "key": "monster.water_buffalo.voice_4",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "<snort>",
+      "pl": "<sniert>",
+      "lang": "<snort>"
+    },
+    {
+      "key": "monster.cat.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Mew!",
+      "pl": "Miauczeć!",
+      "lang": "Mew!"
+    },
+    {
+      "key": "monster.hyaena.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Grrrrrr",
+      "pl": "Wrrrr",
+      "lang": "Grrrrrr"
+    },
+    {
+      "key": "monster.stone_rhino.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "SNIFF!",
+      "pl": "I.!",
+      "lang": "SNIFF!"
+    },
+    {
+      "key": "monster.fox.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Grrrrrrr",
+      "pl": "Wrrrrrr",
+      "lang": "Grrrrrrr"
+    },
+    {
+      "key": "monster.clomp.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Snort!",
+      "pl": "SNiert!",
+      "lang": "Snort!"
+    },
+    {
+      "key": "monster.clomp.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Grunt!",
+      "pl": "I.!",
+      "lang": "Grunt!"
+    },
+    {
+      "key": "monster.clomp.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Snarl!",
+      "pl": "I.!",
+      "lang": "Snarl!"
+    },
+    {
+      "key": "monster.rat.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Meep!",
+      "pl": "Mip!",
+      "lang": "Meep!"
+    },
+    {
+      "key": "monster.vampire_pig.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Oink",
+      "pl": "Chrum",
+      "lang": "Oink"
+    },
+    {
+      "key": "monster.vampire_pig.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Oink oink",
+      "pl": "Chrum chrum",
+      "lang": "Oink oink"
+    },
+    {
+      "key": "monster.sabretooth.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Sabretooth",
+      "pl": "szablozębny",
+      "lang": "Sabretooth"
+    },
+    {
+      "key": "monster.husky.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Grrrrrrr",
+      "pl": "Wrrrrrr",
+      "lang": "Grrrrrrr"
+    },
+    {
+      "key": "monster.dromedary.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Snort",
+      "pl": "SNiert",
+      "lang": "Snort"
+    },
+    {
+      "key": "monster.dromedary.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Grunt!",
+      "pl": "I.!",
+      "lang": "Grunt!"
+    },
+    {
+      "key": "monster.donkey.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Grunt!",
+      "pl": "I.!",
+      "lang": "Grunt!"
+    },
+    {
+      "key": "monster.pig.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Oink oink",
+      "pl": "Chrum chrum",
+      "lang": "Oink oink"
+    },
+    {
+      "key": "monster.pig.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Oink",
+      "pl": "Chrum",
+      "lang": "Oink"
+    },
+    {
+      "key": "monster.panda.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Groar",
+      "pl": "ryk",
+      "lang": "Groar"
+    },
+    {
+      "key": "monster.panda.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Grrrr",
+      "pl": "Wrrrr",
+      "lang": "Grrrr"
+    },
+    {
+      "key": "monster.bear.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Grrrr",
+      "pl": "Wrrrr",
+      "lang": "Grrrr"
+    },
+    {
+      "key": "monster.bear.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Groar",
+      "pl": "ryk",
+      "lang": "Groar"
+    },
+    {
+      "key": "monster.haunted_treeling.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Knorrrrrr",
+      "pl": "KNierrrrrr",
+      "lang": "Knorrrrrr"
+    },
+    {
+      "key": "monster.rootthing_amber_shaper.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RATTLE!",
+      "pl": "I.!",
+      "lang": "RATTLE!"
+    },
+    {
+      "key": "monster.werewolf.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Werewolf",
+      "pl": "Wilkołak",
+      "lang": "Werewolf"
+    },
+    {
+      "key": "monster.werewolf.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "GRRR",
+      "pl": "Wrr",
+      "lang": "GRRR"
+    },
+    {
+      "key": "monster.werehyaena.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Snarl!",
+      "pl": "I.!",
+      "lang": "Snarl!"
+    },
+    {
+      "key": "monster.werefox.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Yelp!",
+      "pl": "Zaskowytać!",
+      "lang": "Yelp!"
+    },
+    {
+      "key": "monster.werefox.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Grrrrrr",
+      "pl": "Wrrrr",
+      "lang": "Grrrrrr"
+    },
+    {
+      "key": "monster.werebear.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "GRRR",
+      "pl": "Wrr",
+      "lang": "GRRR"
+    },
+    {
+      "key": "monster.werepanther.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Grrr",
+      "pl": "Wrr",
+      "lang": "Grrr"
+    },
+    {
+      "key": "monster.cunning_werepanther.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Grrr",
+      "pl": "Wrr",
+      "lang": "Grrr"
+    },
+    {
+      "key": "monster.quara_pincher_scout.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Clap!",
+      "pl": "I.!",
+      "lang": "Clap!"
+    },
+    {
+      "key": "monster.quara_pincher.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Clap!",
+      "pl": "I.!",
+      "lang": "Clap!"
+    },
+    {
+      "key": "monster.calamary.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bubble!",
+      "pl": "I.!",
+      "lang": "Bubble!"
+    },
+    {
+      "key": "monster.quara_plunderer.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Burp!",
+      "pl": "I.!",
+      "lang": "Burp!"
+    },
+    {
+      "key": "monster.wild_warrior.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "An enemy!",
+      "pl": "Jeden wróg!",
+      "lang": "An enemy!"
+    },
+    {
+      "key": "monster.gladiator.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Fight!",
+      "pl": "I.!",
+      "lang": "Fight!"
+    },
+    {
+      "key": "monster.gladiator.voice_4",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Take this!",
+      "pl": "Take I.!",
+      "lang": "Take this!"
+    },
+    {
+      "key": "monster.pirate_buccaneer.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Give up!",
+      "pl": "Daj góra!",
+      "lang": "Give up!"
+    },
+    {
+      "key": "monster.pirate_cutthroat.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Give up!",
+      "pl": "Daj góra!",
+      "lang": "Give up!"
+    },
+    {
+      "key": "monster.pirate_marauder.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Give up!",
+      "pl": "Daj góra!",
+      "lang": "Give up!"
+    },
+    {
+      "key": "monster.renegade_knight.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Take this!",
+      "pl": "Take I.!",
+      "lang": "Take this!"
+    },
+    {
+      "key": "monster.pirate_corsair.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Give up!",
+      "pl": "Daj góra!",
+      "lang": "Give up!"
+    },
+    {
+      "key": "monster.ice_witch.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Freeze!",
+      "pl": "I.!",
+      "lang": "Freeze!"
+    },
+    {
+      "key": "monster.barbarian_bloodwalker.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "SLAUGHTER!",
+      "pl": "I.!",
+      "lang": "SLAUGHTER!"
+    },
+    {
+      "key": "monster.barbarian_bloodwalker.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "CARNAGE!",
+      "pl": "RZEŹ!",
+      "lang": "CARNAGE!"
+    },
+    {
+      "key": "monster.assassin.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Die!",
+      "pl": "UMIERAĆ!",
+      "lang": "Die!"
+    },
+    {
+      "key": "monster.askarak_lord.voice_5",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "WE RULE!",
+      "pl": "MY I.!",
+      "lang": "WE RULE!"
+    },
+    {
+      "key": "monster.askarak_prince.voice_5",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "WE RULE!",
+      "pl": "MY I.!",
+      "lang": "WE RULE!"
+    },
+    {
+      "key": "monster.fire_devil.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hot, eh?",
+      "pl": "Gorący, co?, nie??",
+      "lang": "Hot, eh?"
+    },
+    {
+      "key": "monster.shaburak_prince.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "WE RULE!",
+      "pl": "MY I.!",
+      "lang": "WE RULE!"
+    },
+    {
+      "key": "monster.shaburak_demon.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "WE RULE!",
+      "pl": "MY I.!",
+      "lang": "WE RULE!"
+    },
+    {
+      "key": "monster.shaburak_lord.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "WE RULE!",
+      "pl": "MY I.!",
+      "lang": "WE RULE!"
+    },
+    {
+      "key": "monster.duskbringer.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Death!",
+      "pl": "I.!",
+      "lang": "Death!"
+    },
+    {
+      "key": "monster.askarak_demon.voice_5",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "WE RULE!",
+      "pl": "MY I.!",
+      "lang": "WE RULE!"
+    },
+    {
+      "key": "monster.dire_penguin.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Grrrrrr",
+      "pl": "Wrrrr",
+      "lang": "Grrrrrr"
+    },
+    {
+      "key": "monster.rhindeer.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Destroy!",
+      "pl": "Niszczyć!",
+      "lang": "Destroy!"
+    },
+    {
+      "key": "monster.rhindeer.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Snort!",
+      "pl": "SNiert!",
+      "lang": "Snort!"
+    },
+    {
+      "key": "monster.harpy.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Shriek!",
+      "pl": "I.!",
+      "lang": "Shriek!"
+    },
+    {
+      "key": "monster.harpy.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Screech!",
+      "pl": "I.!",
+      "lang": "Screech!"
+    },
+    {
+      "key": "monster.liodile.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Meat!",
+      "pl": "Mięso!",
+      "lang": "Meat!"
+    },
+    {
+      "key": "monster.boar_man.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Oink!",
+      "pl": "Chrum!",
+      "lang": "Oink!"
+    },
+    {
+      "key": "monster.boar_man.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Grunt!",
+      "pl": "I.!",
+      "lang": "Grunt!"
+    },
+    {
+      "key": "monster.truffle_cook.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Delicious!",
+      "pl": "Wyborny!",
+      "lang": "Delicious!"
+    },
+    {
+      "key": "monster.wasp.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bssssss",
+      "pl": "Bsssss",
+      "lang": "Bssssss"
+    },
+    {
+      "key": "monster.earth_elemental.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Stomp.",
+      "pl": "Stąpać ciężko.",
+      "lang": "Stomp."
+    },
+    {
+      "key": "monster.cliff_strider.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Knorrrr",
+      "pl": "KNierrrr",
+      "lang": "Knorrrr"
+    },
+    {
+      "key": "monster.ironblight.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Clonk!",
+      "pl": "KLONK!",
+      "lang": "Clonk!"
+    },
+    {
+      "key": "monster.bog_raider.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Slurp!",
+      "pl": "Siorbać!",
+      "lang": "Slurp!"
+    },
+    {
+      "key": "monster.dragonling.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "FCHHHHH",
+      "pl": "Fchhhh",
+      "lang": "FCHHHHH"
+    },
+    {
+      "key": "monster.dragonling.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "SQUAWK!",
+      "pl": "I.!",
+      "lang": "SQUAWK!"
+    },
+    {
+      "key": "monster.phantasm_summon.voice_5",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Give in.",
+      "pl": "Give w.",
+      "lang": "Give in."
+    },
+    {
+      "key": "monster.midnight_panther.voice_4",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Purrrrrrr",
+      "pl": "Mrrrrrrr",
+      "lang": "Purrrrrrr"
+    },
+    {
+      "key": "monster.crypt_warden.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Sacrilege!",
+      "pl": "Świętokradztwo!",
+      "lang": "Sacrilege!"
+    },
+    {
+      "key": "monster.silencer.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Silencer",
+      "pl": "Tłumik",
+      "lang": "Silencer"
+    },
+    {
+      "key": "monster.phantasm.voice_5",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Give in.",
+      "pl": "Give w.",
+      "lang": "Give in."
+    },
+    {
+      "key": "monster.black_knight.voice_4",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "NO MERCY!",
+      "pl": "Nie LITOŚĆ, MIŁOSIERDZIE!",
+      "lang": "NO MERCY!"
+    },
+    {
+      "key": "monster.black_knight.voice_5",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "MINE!",
+      "pl": "I.!",
+      "lang": "MINE!"
+    },
+    {
+      "key": "monster.zushuka.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "zushuka",
+      "pl": "Zushuka",
+      "lang": "zushuka"
+    },
+    {
+      "key": "monster.zushuka.voice_6",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Freeze!",
+      "pl": "I.!",
+      "lang": "Freeze!"
+    },
+    {
+      "key": "monster.general_murius.voice_4",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Guards!",
+      "pl": "I.!",
+      "lang": "Guards!"
+    },
+    {
+      "key": "monster.the_abomination.voice_15",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "PAIN!",
+      "pl": "I.!",
+      "lang": "PAIN!"
+    },
+    {
+      "key": "monster.sugar_daddy.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "SUGAR!!!",
+      "pl": "I.!!!",
+      "lang": "SUGAR!!!"
+    },
+    {
+      "key": "monster.zevelon_duskbringer.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Come Here!",
+      "pl": "Come Tutaj, tu!",
+      "lang": "Come Here!"
+    },
+    {
+      "key": "monster.energized_raging_mage.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "ENERGY!!",
+      "pl": "ENERGIA!!",
+      "lang": "ENERGY!!"
+    },
+    {
+      "key": "monster.munster.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Meep!",
+      "pl": "Mip!",
+      "lang": "Meep!"
+    },
+    {
+      "key": "monster.ichgahal.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Decay!",
+      "pl": "I.!",
+      "lang": "Decay!"
+    },
+    {
+      "key": "monster.weakened_shlorg.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Slurp!",
+      "pl": "Siorbać!",
+      "lang": "Slurp!"
+    },
+    {
+      "key": "monster.sugar_mommy.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "SUGAR!!!",
+      "pl": "I.!!!",
+      "lang": "SUGAR!!!"
+    },
+    {
+      "key": "monster.warlord_ruzad.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Rahi Gosh!",
+      "pl": "Rahi Jejku, ojej!",
+      "lang": "Rahi Gosh!"
+    },
+    {
+      "key": "monster.raging_mage.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "ENERGY!!",
+      "pl": "ENERGIA!!",
+      "lang": "ENERGY!!"
+    },
+    {
+      "key": "monster.breach_brood.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hisss!",
+      "pl": "I.!",
+      "lang": "Hisss!"
+    },
+    {
+      "key": "monster.instable_breach_brood.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hisss!",
+      "pl": "I.!",
+      "lang": "Hisss!"
+    },
+    {
+      "key": "monster.ogre_savage.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You tasty!",
+      "pl": "Ty smakowity!",
+      "lang": "You tasty!"
+    },
+    {
+      "key": "monster.orclops_doomhauler.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Me mash!",
+      "pl": "Mnie, mi tłuc!",
+      "lang": "Me mash!"
+    },
+    {
+      "key": "monster.elder_wyrm.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "GRRR",
+      "pl": "Wrr",
+      "lang": "GRRR"
+    },
+    {
+      "key": "monster.hydra.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "FCHHHHH",
+      "pl": "Fchhhh",
+      "lang": "FCHHHHH"
+    },
+    {
+      "key": "monster.wyrm.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "GRRR",
+      "pl": "Wrr",
+      "lang": "GRRR"
+    },
+    {
+      "key": "monster.dragon.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "FCHHHHH",
+      "pl": "Fchhhh",
+      "lang": "FCHHHHH"
+    },
+    {
+      "key": "monster.green_frog.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ribbit!",
+      "pl": "Kum!",
+      "lang": "Ribbit!"
+    },
+    {
+      "key": "monster.salamander.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Chrrch!",
+      "pl": "Chrr!",
+      "lang": "Chrrch!"
+    },
+    {
+      "key": "monster.infernal_frog.voice_4",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ribbit!",
+      "pl": "Kum!",
+      "lang": "Ribbit!"
+    },
+    {
+      "key": "monster.orchid_frog.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ribbit!",
+      "pl": "Kum!",
+      "lang": "Ribbit!"
+    },
+    {
+      "key": "monster.azure_frog.voice_4",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ribbit!",
+      "pl": "Kum!",
+      "lang": "Ribbit!"
+    },
+    {
+      "key": "monster.bog_frog.voice_4",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ribbit!",
+      "pl": "Kum!",
+      "lang": "Ribbit!"
+    },
+    {
+      "key": "monster.crimson_frog.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ribbit!",
+      "pl": "Kum!",
+      "lang": "Ribbit!"
+    },
+    {
+      "key": "monster.toad.voice_4",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ribbit!",
+      "pl": "Kum!",
+      "lang": "Ribbit!"
+    },
+    {
+      "key": "monster.coral_frog.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ribbit!",
+      "pl": "Kum!",
+      "lang": "Ribbit!"
+    },
+    {
+      "key": "monster.frost_troll.voice_4",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Broar!",
+      "pl": "Bracie!",
+      "lang": "Broar!"
+    },
+    {
+      "key": "monster.troll.voice_6",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Grrr",
+      "pl": "Wrr",
+      "lang": "Grrr"
+    },
+    {
+      "key": "monster.troll.voice_7",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Groar",
+      "pl": "ryk",
+      "lang": "Groar"
+    },
+    {
+      "key": "monster.troll.voice_9",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hmmm, bugs",
+      "pl": "Hmmm, błędy",
+      "lang": "Hmmm, bugs"
+    },
+    {
+      "key": "monster.island_troll.voice_9",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Groar",
+      "pl": "ryk",
+      "lang": "Groar"
+    },
+    {
+      "key": "monster.wolf.voice_4",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Grrrrrrr",
+      "pl": "Wrrrrrr",
+      "lang": "Grrrrrrr"
+    },
+    {
+      "key": "monster.cave_rat.voice_4",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Meep!",
+      "pl": "Mip!",
+      "lang": "Meep!"
+    },
+    {
+      "key": "monster.bat.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Flap!Flap!",
+      "pl": "I.!I.!",
+      "lang": "Flap!Flap!"
+    },
+    {
+      "key": "monster.assassin.voice_4",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Die!",
+      "pl": "UMIERAĆ!",
+      "lang": "Die!"
+    },
+    {
+      "key": "monster.wasp.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bssssss",
+      "pl": "Bsssss",
+      "lang": "Bssssss"
+    },
+    {
+      "key": "monster.black_knight.voice_6",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "MINE!",
+      "pl": "I.!",
+      "lang": "MINE!"
+    },
+    {
+      "key": "monster.black_knight.voice_8",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "NO MERCY!",
+      "pl": "Nie LITOŚĆ, MIŁOSIERDZIE!",
+      "lang": "NO MERCY!"
+    },
+    {
+      "key": "monster.hydra.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "FCHHHHH",
+      "pl": "Fchhhh",
+      "lang": "FCHHHHH"
+    },
+    {
+      "key": "monster.wyrm.voice_4",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "GRRR",
+      "pl": "Wrr",
+      "lang": "GRRR"
+    },
+    {
+      "key": "monster.dragon.voice_4",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "FCHHHHH",
+      "pl": "Fchhhh",
+      "lang": "FCHHHHH"
+    },
+    {
+      "key": "npc.a_dragon_mother.greet_msg_2",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Grrr.",
+      "pl": "Grrr...",
+      "lang": "Grrr."
+    },
+    {
+      "key": "npc.a_dragon_mother.multi_3",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Grrr.",
+      "pl": "Grrr...",
+      "lang": "Grrr."
+    },
+    {
+      "key": "npc.a_fading_memory.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Oh...",
+      "pl": "O...",
+      "lang": "Oh..."
+    },
+    {
+      "key": "npc.a_fluffy_squirrel.farewell_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Chh...",
+      "pl": "Cii...",
+      "lang": "Chh..."
+    },
+    {
+      "key": "npc.a_fluffy_squirrel.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Chhchh?",
+      "pl": "Chhchh...",
+      "lang": "Chhchh?"
+    },
+    {
+      "key": "npc.a_fluffy_squirrel.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Chh...",
+      "pl": "Cii...",
+      "lang": "Chh..."
+    },
+    {
+      "key": "npc.a_restless_soul.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Uhhhh...",
+      "pl": "Uuuuhhh...",
+      "lang": "Uhhhh..."
+    },
+    {
+      "key": "npc.a_sleeping_dragon.multi_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "SAETHELON TORILUN GARNUM. ...",
+      "pl": "SAETHELON TORILUN GARNUM....",
+      "lang": "SAETHELON TORILUN GARNUM. ..."
+    },
+    {
+      "key": "npc.a_starving_dog.greet_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "<sniff>",
+      "pl": "<węszy>",
+      "lang": "<sniff>"
+    },
+    {
+      "key": "npc.a_starving_dog.say_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "<munch>",
+      "pl": "<przeżuwać>",
+      "lang": "<munch>"
+    },
+    {
+      "key": "npc.a_weakened_forest_fury.say_4",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Take care, guardian.",
+      "pl": "Take care, opiekun.",
+      "lang": "Take care, guardian."
+    },
+    {
+      "key": "npc.al_dee.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bye, bye.",
+      "pl": "Pa, cześć, pa, cześć.",
+      "lang": "Bye, bye."
+    },
+    {
+      "key": "npc.albinius.say_10",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "As you wish.",
+      "pl": "Jak sobie życzysz.",
+      "lang": "As you wish."
+    },
+    {
+      "key": "npc.alesar.farewell_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Finally.",
+      "pl": "W końcu, ostatecznie.",
+      "lang": "Finally."
+    },
+    {
+      "key": "npc.alesar.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Finally.",
+      "pl": "W końcu, ostatecznie.",
+      "lang": "Finally."
+    },
+    {
+      "key": "npc.altar.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bye.",
+      "pl": "Pa, cześć.",
+      "lang": "Bye."
+    },
+    {
+      "key": "npc.alwin.say_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Take this!",
+      "pl": "Weź to!",
+      "lang": "Take this!"
+    },
+    {
+      "key": "npc.andrew_lyze.greet_msg_4",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Greetings.",
+      "pl": "Witaj.",
+      "lang": "Greetings."
+    },
+    {
+      "key": "npc.andrew_lyze.say_14",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Don't waste my time.",
+      "pl": "Nie marnuj mojego czasu.",
+      "lang": "Don't waste my time."
+    },
+    {
+      "key": "npc.appaloosa.say_5",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Have a nice trip!",
+      "pl": "Miłej podróży!",
+      "lang": "Have a nice trip!"
+    },
+    {
+      "key": "npc.ariella.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hi there.",
+      "pl": "Cześć.",
+      "lang": "Hi there."
+    },
+    {
+      "key": "npc.ariella.say_15",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I see.",
+      "pl": "Rozumiem.",
+      "lang": "I see."
+    },
+    {
+      "key": "npc.arkulius.stdmod_3",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "<mumbles>",
+      "pl": "<mamrota>",
+      "lang": "<mumbles>"
+    },
+    {
+      "key": "npc.arkulius.voice_3",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "<mumbles>",
+      "pl": "<mamrota>",
+      "lang": "<mumbles>"
+    },
+    {
+      "key": "npc.arnold.say_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Take this!",
+      "pl": "Weź to!",
+      "lang": "Take this!"
+    },
+    {
+      "key": "npc.ashari.farewell_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bye!",
+      "pl": "Pa!",
+      "lang": "Bye!"
+    },
+    {
+      "key": "npc.ashari.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bye!",
+      "pl": "Pa!",
+      "lang": "Bye!"
+    },
+    {
+      "key": "npc.atrad.say_3",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You don't have it...",
+      "pl": "Nie masz tego...",
+      "lang": "You don't have it..."
+    },
+    {
+      "key": "npc.avar_tar.say_5",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I see.",
+      "pl": "Rozumiem.",
+      "lang": "I see."
+    },
+    {
+      "key": "npc.bambi_bonecrusher.say_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Take this!",
+      "pl": "Weź to!",
+      "lang": "Take this!"
+    },
+    {
+      "key": "npc.barbara.say_3",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Take this!",
+      "pl": "Masz to!",
+      "lang": "Take this!"
+    },
+    {
+      "key": "npc.billy.farewell_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bye.",
+      "pl": "Pa, cześć.",
+      "lang": "Bye."
+    },
+    {
+      "key": "npc.billy.sendtrade_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Sure.",
+      "pl": "Jasne.",
+      "lang": "Sure."
+    },
+    {
+      "key": "npc.billy.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "HOW RUDE!",
+      "pl": "JAK NIEGRZECZNY, OPRYSKLIWY!",
+      "lang": "HOW RUDE!"
+    },
+    {
+      "key": "npc.blind_orc.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Futchi.",
+      "pl": "Futchi!",
+      "lang": "Futchi."
+    },
+    {
+      "key": "npc.bloodshade_rotten.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bye.",
+      "pl": "Pa, cześć.",
+      "lang": "Bye."
+    },
+    {
+      "key": "npc.bloodshade_sacrifice.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bye.",
+      "pl": "Pa, cześć.",
+      "lang": "Bye."
+    },
+    {
+      "key": "npc.blossom_bonecrusher.say_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Take this!",
+      "pl": "Weź to!",
+      "lang": "Take this!"
+    },
+    {
+      "key": "npc.brodrosch.say_5",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "No then.",
+      "pl": "Nie wtedy.",
+      "lang": "No then."
+    },
+    {
+      "key": "npc.bron.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Take care!",
+      "pl": "Trzymaj się!",
+      "lang": "Take care!"
+    },
+    {
+      "key": "npc.budrik.farewell_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bye, bye.",
+      "pl": "Pa, cześć, pa, cześć.",
+      "lang": "Bye, bye."
+    },
+    {
+      "key": "npc.budrik.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bye, bye.",
+      "pl": "Pa, cześć, pa, cześć.",
+      "lang": "Bye, bye."
+    },
+    {
+      "key": "npc.busty_bonecrusher.say_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Take this!",
+      "pl": "Weź to!",
+      "lang": "Take this!"
+    },
+    {
+      "key": "npc.captain_haba.farewell_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bye.",
+      "pl": "Pa, cześć.",
+      "lang": "Bye."
+    },
+    {
+      "key": "npc.captain_haba.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bye.",
+      "pl": "Pa, cześć.",
+      "lang": "Bye."
+    },
+    {
+      "key": "npc.captain_max.keyword_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hold on!",
+      "pl": "Hold na!",
+      "lang": "Hold on!"
+    },
+    {
+      "key": "npc.captain_max.stdmod_4",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hold on!",
+      "pl": "Hold na!",
+      "lang": "Hold on!"
+    },
+    {
+      "key": "npc.captain_waverider.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Oh well.",
+      "pl": "O well.",
+      "lang": "Oh well."
+    },
+    {
+      "key": "npc.captain_waverider_island.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Oh well.",
+      "pl": "O well.",
+      "lang": "Oh well."
+    },
+    {
+      "key": "npc.charles.farewell_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bye.",
+      "pl": "Pa, cześć.",
+      "lang": "Bye."
+    },
+    {
+      "key": "npc.charles.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bye.",
+      "pl": "Pa, cześć.",
+      "lang": "Bye."
+    },
+    {
+      "key": "npc.charlotta.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Oh well.",
+      "pl": "O well.",
+      "lang": "Oh well."
+    },
+    {
+      "key": "npc.chemar.keyword_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hold on!",
+      "pl": "Hold na!",
+      "lang": "Hold on!"
+    },
+    {
+      "key": "npc.christoph.say_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Take this!",
+      "pl": "Weź to!",
+      "lang": "Take this!"
+    },
+    {
+      "key": "npc.dallheim.stdmod_14",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Fine.",
+      "pl": "Dobrze.",
+      "lang": "Fine."
+    },
+    {
+      "key": "npc.demonguard.say_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Take this!",
+      "pl": "Weź to!",
+      "lang": "Take this!"
+    },
+    {
+      "key": "npc.denominator.greet_msg_2",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Greetings.",
+      "pl": "Witaj.",
+      "lang": "Greetings."
+    },
+    {
+      "key": "npc.dermot.stdmod_2",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Thats me.",
+      "pl": "Thats mnie, mi.",
+      "lang": "Thats me."
+    },
+    {
+      "key": "npc.dukosch.say_5",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "No then.",
+      "pl": "Nie wtedy.",
+      "lang": "No then."
+    },
+    {
+      "key": "npc.duncan.farewell_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Good bye.",
+      "pl": "Żegnaj.",
+      "lang": "Good bye."
+    },
+    {
+      "key": "npc.duria.farewell_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Goodbye.",
+      "pl": "Do widzenia.",
+      "lang": "Goodbye."
+    },
+    {
+      "key": "npc.elane.keyword_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Yes?",
+      "pl": "Tak?",
+      "lang": "Yes?"
+    },
+    {
+      "key": "npc.eleonore.farewell_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Good bye.",
+      "pl": "Żegnaj.",
+      "lang": "Good bye."
+    },
+    {
+      "key": "npc.eleonore.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Oh well.",
+      "pl": "O well.",
+      "lang": "Oh well."
+    },
+    {
+      "key": "npc.elliott.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "<nods>",
+      "pl": "<kiwa głową>",
+      "lang": "<nods>"
+    },
+    {
+      "key": "npc.eruaran.farewell_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Good bye!",
+      "pl": "Robić widzenia!",
+      "lang": "Good bye!"
+    },
+    {
+      "key": "npc.esrik.farewell_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bye.",
+      "pl": "Pa, cześć.",
+      "lang": "Bye."
+    },
+    {
+      "key": "npc.falonzo.farewell_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Good bye!",
+      "pl": "Robić widzenia!",
+      "lang": "Good bye!"
+    },
+    {
+      "key": "npc.faluae.farewell_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Good bye!",
+      "pl": "Robić widzenia!",
+      "lang": "Good bye!"
+    },
+    {
+      "key": "npc.fenbala.say_3",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Take this!",
+      "pl": "Weź to!",
+      "lang": "Take this!"
+    },
+    {
+      "key": "npc.frans.farewell_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bye.",
+      "pl": "Pa, cześć.",
+      "lang": "Bye."
+    },
+    {
+      "key": "npc.frans.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bye.",
+      "pl": "Pa, cześć.",
+      "lang": "Bye."
+    },
+    {
+      "key": "npc.frederik.farewell_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Yeah, bye.",
+      "pl": "Aha, no, pa, cześć.",
+      "lang": "Yeah, bye."
+    },
+    {
+      "key": "npc.frederik.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Yeah, bye.",
+      "pl": "Aha, no, pa, cześć.",
+      "lang": "Yeah, bye."
+    },
+    {
+      "key": "npc.galuna.farewell_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Good bye.",
+      "pl": "Żegnaj.",
+      "lang": "Good bye."
+    },
+    {
+      "key": "npc.galuna.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Good bye.",
+      "pl": "Żegnaj.",
+      "lang": "Good bye."
+    },
+    {
+      "key": "npc.gamon.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Good bye.",
+      "pl": "Żegnaj.",
+      "lang": "Good bye."
+    },
+    {
+      "key": "npc.gelagos.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hehehe.",
+      "pl": "Hehe.",
+      "lang": "Hehehe."
+    },
+    {
+      "key": "npc.gelagos.stdmod_4",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "That's me.",
+      "pl": "That's mnie, mi.",
+      "lang": "That's me."
+    },
+    {
+      "key": "npc.gewen.farewell_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Good bye!",
+      "pl": "Robić widzenia!",
+      "lang": "Good bye!"
+    },
+    {
+      "key": "npc.gewen.keyword_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hold on!",
+      "pl": "Hold na!",
+      "lang": "Hold on!"
+    },
+    {
+      "key": "npc.gewen.say_5",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "No then.",
+      "pl": "Nie wtedy.",
+      "lang": "No then."
+    },
+    {
+      "key": "npc.gewen.stdmod_4",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hold on!",
+      "pl": "Hold na!",
+      "lang": "Hold on!"
+    },
+    {
+      "key": "npc.gewen.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Good bye!",
+      "pl": "Robić widzenia!",
+      "lang": "Good bye!"
+    },
+    {
+      "key": "npc.ghost_of_a_priest.farewell_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bye.",
+      "pl": "Pa, cześć.",
+      "lang": "Bye."
+    },
+    {
+      "key": "npc.gnomargery.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hi!",
+      "pl": "Cześć, siemasz!",
+      "lang": "Hi!"
+    },
+    {
+      "key": "npc.gnombold.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hi!",
+      "pl": "Cześć, siemasz!",
+      "lang": "Hi!"
+    },
+    {
+      "key": "npc.gnomilly.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hi!",
+      "pl": "Cześć, siemasz!",
+      "lang": "Hi!"
+    },
+    {
+      "key": "npc.gorn.farewell_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Good bye.",
+      "pl": "Żegnaj.",
+      "lang": "Good bye."
+    },
+    {
+      "key": "npc.gorn.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Good bye.",
+      "pl": "Żegnaj.",
+      "lang": "Good bye."
+    },
+    {
+      "key": "npc.guide_alexena.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Good bye.",
+      "pl": "Żegnaj.",
+      "lang": "Good bye."
+    },
+    {
+      "key": "npc.guide_behil.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Good bye.",
+      "pl": "Żegnaj.",
+      "lang": "Good bye."
+    },
+    {
+      "key": "npc.guide_davina.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Good bye.",
+      "pl": "Żegnaj.",
+      "lang": "Good bye."
+    },
+    {
+      "key": "npc.guide_edna.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Good bye.",
+      "pl": "Żegnaj.",
+      "lang": "Good bye."
+    },
+    {
+      "key": "npc.guide_elena.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Good bye.",
+      "pl": "Żegnaj.",
+      "lang": "Good bye."
+    },
+    {
+      "key": "npc.guide_kunibert.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Good bye.",
+      "pl": "Żegnaj.",
+      "lang": "Good bye."
+    },
+    {
+      "key": "npc.guide_luke.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Good bye.",
+      "pl": "Żegnaj.",
+      "lang": "Good bye."
+    },
+    {
+      "key": "npc.guide_rahlkora.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Good bye.",
+      "pl": "Żegnaj.",
+      "lang": "Good bye."
+    },
+    {
+      "key": "npc.guide_thelandil.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Good bye.",
+      "pl": "Żegnaj.",
+      "lang": "Good bye."
+    },
+    {
+      "key": "npc.guide_tiko.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Good bye.",
+      "pl": "Żegnaj.",
+      "lang": "Good bye."
+    },
+    {
+      "key": "npc.gurbasch.stdmod_12",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Then not.",
+      "pl": "W takim razie nie.",
+      "lang": "Then not."
+    },
+    {
+      "key": "npc.gurbasch.stdmod_5",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hold on!",
+      "pl": "Hold na!",
+      "lang": "Hold on!"
+    },
+    {
+      "key": "npc.gurbasch.stdmod_9",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Then not.",
+      "pl": "W takim razie nie.",
+      "lang": "Then not."
+    },
+    {
+      "key": "npc.hairycles.say_66",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I see.",
+      "pl": "Rozumiem.",
+      "lang": "I see."
+    },
+    {
+      "key": "npc.hanna.farewell_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Good bye.",
+      "pl": "Żegnaj.",
+      "lang": "Good bye."
+    },
+    {
+      "key": "npc.hanna.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Good bye.",
+      "pl": "Żegnaj.",
+      "lang": "Good bye."
+    },
+    {
+      "key": "npc.harlow.farewell_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Good bye.",
+      "pl": "Żegnaj.",
+      "lang": "Good bye."
+    },
+    {
+      "key": "npc.harlow.stdmod_2",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Oh well.",
+      "pl": "O well.",
+      "lang": "Oh well."
+    },
+    {
+      "key": "npc.harlow.stdmod_5",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Oh well.",
+      "pl": "O well.",
+      "lang": "Oh well."
+    },
+    {
+      "key": "npc.harlow.stdmod_8",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Oh well.",
+      "pl": "O well.",
+      "lang": "Oh well."
+    },
+    {
+      "key": "npc.harlow_vengoth.farewell_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Good bye.",
+      "pl": "Żegnaj.",
+      "lang": "Good bye."
+    },
+    {
+      "key": "npc.harlow_vengoth.stdmod_2",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Oh well.",
+      "pl": "O well.",
+      "lang": "Oh well."
+    },
+    {
+      "key": "npc.harsky.say_3",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Take this!",
+      "pl": "Weź to!",
+      "lang": "Take this!"
+    },
+    {
+      "key": "npc.hawkhurst.farewell_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Good bye.",
+      "pl": "Żegnaj.",
+      "lang": "Good bye."
+    },
+    {
+      "key": "npc.hawkhurst.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Good bye.",
+      "pl": "Żegnaj.",
+      "lang": "Good bye."
+    },
+    {
+      "key": "npc.hawkhurst_ingol.farewell_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Good bye.",
+      "pl": "Żegnaj.",
+      "lang": "Good bye."
+    },
+    {
+      "key": "npc.hawkhurst_ingol.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Good bye.",
+      "pl": "Żegnaj.",
+      "lang": "Good bye."
+    },
+    {
+      "key": "npc.hjaern.say_15",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I see.",
+      "pl": "Rozumiem.",
+      "lang": "I see."
+    },
+    {
+      "key": "npc.hoggle.farewell_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Good bye.",
+      "pl": "Żegnaj.",
+      "lang": "Good bye."
+    },
+    {
+      "key": "npc.hoggle.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Good bye.",
+      "pl": "Żegnaj.",
+      "lang": "Good bye."
+    },
+    {
+      "key": "npc.irea.farewell_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Good bye!",
+      "pl": "Robić widzenia!",
+      "lang": "Good bye!"
+    },
+    {
+      "key": "npc.iwan.farewell_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bye, bye.",
+      "pl": "Pa, cześć, pa, cześć.",
+      "lang": "Bye, bye."
     }
   ],
   "length_ratio_issues": [
-    {
-      "key": "achievement.25.name",
-      "category": "achievements",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 12,
-      "lang_ratio": 1.167,
-      "pl_ratio": 3.0
-    },
     {
       "key": "achievement.68.name",
       "category": "achievements",
@@ -4390,24 +4466,6 @@
       "en_len": 12,
       "lang_ratio": 1.583,
       "pl_ratio": 3.417
-    },
-    {
-      "key": "achievement.77.name",
-      "category": "achievements",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 4,
-      "lang_ratio": 1.0,
-      "pl_ratio": 3.75
-    },
-    {
-      "key": "achievement.97.name",
-      "category": "achievements",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 17,
-      "lang_ratio": 0.941,
-      "pl_ratio": 3.529
     },
     {
       "key": "achievement.128.name",
@@ -4482,33 +4540,6 @@
       "pl_ratio": 2.875
     },
     {
-      "key": "item.20237.desc",
-      "category": "items",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 24,
-      "lang_ratio": 0.833,
-      "pl_ratio": 2.667
-    },
-    {
-      "key": "item.34026.desc",
-      "category": "items",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 17,
-      "lang_ratio": 0.706,
-      "pl_ratio": 3.059
-    },
-    {
-      "key": "item.390.desc",
-      "category": "items",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 24,
-      "lang_ratio": 0.833,
-      "pl_ratio": 2.667
-    },
-    {
       "key": "item.6092.desc",
       "category": "items",
       "type": "crossref_length_ratio_diff",
@@ -4516,15 +4547,6 @@
       "en_len": 35,
       "lang_ratio": 0.971,
       "pl_ratio": 3.057
-    },
-    {
-      "key": "item.8781.desc",
-      "category": "items",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 27,
-      "lang_ratio": 0.852,
-      "pl_ratio": 2.667
     },
     {
       "key": "monster.ghoul.name",
@@ -4642,30 +4664,12 @@
       "en_len": 8,
       "lang_ratio": 3.375,
       "pl_ratio": 1.0
-    },
-    {
-      "key": "quests.actions_coral.msg_1",
-      "category": "quests",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 1.667,
-      "pl_ratio": 4.0
-    },
-    {
-      "key": "quests.actions_crystal.msg_1",
-      "category": "quests",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 1.667,
-      "pl_ratio": 4.0
     }
   ],
   "auto_fix": {
-    "attempted": 80,
-    "applied": 28,
-    "skipped": 52,
+    "attempted": 0,
+    "applied": 0,
+    "skipped": 0,
     "errors": 0
   }
 }

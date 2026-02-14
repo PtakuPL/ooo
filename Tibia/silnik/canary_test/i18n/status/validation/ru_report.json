@@ -2,24 +2,24 @@
   "lang": "ru",
   "script_group": "cyrillic",
   "total_keys": 53586,
-  "translated": 19746,
-  "identical_to_en": 4203,
-  "placeholder_keys": 33666,
-  "coverage_pct": 36.8,
-  "issues_total": 8477,
+  "translated": 18686,
+  "identical_to_en": 4133,
+  "placeholder_keys": 34900,
+  "coverage_pct": 34.9,
+  "issues_total": 7248,
   "issues_by_type": {
-    "script_cyrillic_latin_mix": 8110,
-    "V1_placeholder_mismatch": 357,
+    "script_cyrillic_latin_mix": 7055,
+    "V1_placeholder_mismatch": 183,
     "V6_newline_mismatch": 8,
     "V4_artifact": 2
   },
   "issues_by_severity": {
-    "CRITICAL": 357,
-    "HIGH": 8112,
+    "CRITICAL": 183,
+    "HIGH": 7057,
     "MEDIUM": 8,
     "LOW": 0
   },
-  "score": 32.9,
+  "score": 40.4,
   "worst_keys": [
     {
       "key": "html.statistics.html.text2",
@@ -29,18 +29,6 @@
     },
     {
       "key": "html.statistics.html.text3",
-      "category": "html",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "html.forum.add_board.html.text2",
-      "category": "html",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "html.admin.news.form.html.text2",
       "category": "html",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
@@ -58,12 +46,6 @@
       "severity": "CRITICAL"
     },
     {
-      "key": "html.highscores.html.text1",
-      "category": "html",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
       "key": "html.highscores.html.text3",
       "category": "html",
       "type": "V1_placeholder_mismatch",
@@ -71,12 +53,6 @@
     },
     {
       "key": "html.highscores.html.text4",
-      "category": "html",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "html.highscores.html.text5",
       "category": "html",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
@@ -100,12 +76,6 @@
       "severity": "CRITICAL"
     },
     {
-      "key": "html.monster.html.text5",
-      "category": "html",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
       "key": "html.account.characters.change_sex.html.text1",
       "category": "html",
       "type": "V1_placeholder_mismatch",
@@ -113,18 +83,6 @@
     },
     {
       "key": "html.account.characters.change_sex.html.text2",
-      "category": "html",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "html.commands.form.html.text2",
-      "category": "html",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "html.monsters.html.text1",
       "category": "html",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
@@ -140,15 +98,57 @@
       "category": "html",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
+    },
+    {
+      "key": "html.monsters.html.text4",
+      "category": "html",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "html.monsters.html.text5",
+      "category": "html",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "html.account.characters.change_name.html.text1",
+      "category": "html",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "html.account.characters.change_name.html.text2",
+      "category": "html",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "html.admin.news.table.html.text2",
+      "category": "html",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "html.faq.html.text1",
+      "category": "html",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "html.online.html.text5",
+      "category": "html",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
     }
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 466,
-    "consistency": 49,
+    "issues_total": 460,
+    "consistency": 46,
     "pl_reference": 400,
-    "length_ratio": 17,
-    "auto_fix_applied": 79
+    "length_ratio": 14,
+    "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-14T11:45:41.594664Z"
+  "validated_at": "2026-02-14T12:00:45.246657Z"
 }

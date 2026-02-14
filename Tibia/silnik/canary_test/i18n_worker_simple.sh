@@ -9387,6 +9387,8 @@ repaired_empty = 0
 repaired_identical = 0
 repaired_partial_mix = 0
 repaired_latin_cyrillic = 0
+repaired_i_dot = 0
+repaired_word_salad = 0
 
 for key, en_value in en_data.items():
     if key not in lang_data:
@@ -9434,13 +9436,39 @@ for key, en_value in en_data.items():
             repaired_latin_cyrillic += 1
             continue
 
-total_repaired = repaired_empty + repaired_identical + repaired_partial_mix + repaired_latin_cyrillic
+    # (R5) I. artifact — angielskie "I" pozostawione z kropką (artefakt ChatGPT)
+    if re.search(r'\bI\.(?:\s|$)', value):
+        lang_data[key] = f"{UNTRANSLATED_PREFIX}{en_value}"
+        repaired_i_dot += 1
+        continue
+
+    # (R6) Word salad — mix angielskich słów funkcyjnych + częściowe tłumaczenie
+    _EN_FUNC = {'the','a','an','of','in','is','it','its','he','she','his','her',
+        'has','had','was','were','to','by','on','at','for','with','from','that',
+        'this','which','some','they','their','them','you','your','we','our','who',
+        'what','but','or','not','if','as','so','be','do','did','does','will',
+        'would','could','should','can','may','might','shall','been','being',
+        'have','than','more','very','just','only','also','into','then','those','these'}
+    _tr_words = value.lower().split()
+    if len(_tr_words) >= 4:
+        _en_func_count = sum(1 for w in _tr_words if w.rstrip('.,!?;:') in _EN_FUNC)
+        _en_content_src = set(w.lower() for w in re.findall(r'[a-zA-Z]{4,}', str(en_value)))
+        _en_content_tr = set(w.lower() for w in re.findall(r'[a-zA-Z]{4,}', value))
+        _content_overlap = len(_en_content_src & _en_content_tr) / len(_en_content_src) if _en_content_src else 0
+        if (_en_func_count >= 2 and (_en_func_count / len(_tr_words) > 0.2 or _content_overlap > 0.5)):
+            lang_data[key] = f"{UNTRANSLATED_PREFIX}{en_value}"
+            repaired_word_salad += 1
+            continue
+
+total_repaired = repaired_empty + repaired_identical + repaired_partial_mix + repaired_latin_cyrillic + repaired_i_dot + repaired_word_salad
 if total_repaired > 0:
     parts = []
     if repaired_empty: parts.append(f"empty={repaired_empty}")
     if repaired_identical: parts.append(f"identical={repaired_identical}")
     if repaired_partial_mix: parts.append(f"partial_mix={repaired_partial_mix}")
     if repaired_latin_cyrillic: parts.append(f"latin_cyrillic={repaired_latin_cyrillic}")
+    if repaired_i_dot: parts.append(f"i_dot={repaired_i_dot}")
+    if repaired_word_salad: parts.append(f"word_salad={repaired_word_salad}")
     print(f"   🔧 Auto-repair: {total_repaired} ({', '.join(parts)})")
 
 # Znajdź brakujące klucze
@@ -10278,7 +10306,7 @@ def _protect_placeholders(text):
         r"|''[^']*''"             # ''trade'', ''job''
         r"|(?<!['\w])'([^']{1,200}?)'(?!')"   # 'task', 'keyword', 'long game command' — single-quoted commands
         r"|'\/[a-zA-Z]+'"         # '/heal', '/cast'
-        r"|<[a-zA-Z/][^>]*>"     # <b>, </b>, <br>, <font color='red'>
+        r"|<(?:b|i|u|s|em|strong|br|hr|p|div|span|font|img|a|li|ul|ol|table|tr|td|th|h[1-6]|pre|code|sub|sup|/[a-zA-Z]+)[\s>/]?[^>]*>"  # Tylko prawdziwe HTML tagi (nie narracyjne <gives you...>)
         r"|\\[ntr]"               # \n, \t, \r
         r"|&[a-zA-Z]+;"          # &amp;, &lt;, &gt;
         r"|&#[0-9]+;"            # &#123;
@@ -12976,6 +13004,20 @@ def validate_candidate(en_text: str, candidate: str):
     if not _candidate_shape_ok(en_text, candidate, target_lang):
         return False, "quality"
 
+    # Hard gate: I. artifact
+    if re.search(r'\bI\.(?:\s|$)', candidate) and not re.search(r'\bI\.(?:\s|$)', en_text):
+        return False, "i_dot_artifact"
+
+    # Hard gate: word salad (EN function words >25% of translation)
+    _vc_func = {'the','a','an','of','in','is','it','its','he','she','his','her',
+        'has','had','was','were','to','by','on','at','for','with','from','that',
+        'this','which','some','they','their','them','you','your','we','our'}
+    _vc_words = candidate.lower().split()
+    if len(_vc_words) >= 4:
+        _vc_fc = sum(1 for w in _vc_words if w.rstrip('.,!?;:') in _vc_func)
+        if _vc_fc >= 2 and _vc_fc / len(_vc_words) > 0.25:
+            return False, "word_salad"
+
     return True, "ok"
 
 def _append_jsonl(path: str, entry: dict):
@@ -13455,6 +13497,32 @@ def detect_suspicious(en_text: str, translated_text: str, lang: str, key: str = 
                 "type": "latin_only_cyrillic",
                 "severity": "CRITICAL",
                 "message": f"Język cyrylicki ({lang}) ma tłumaczenie wyłącznie łacinką: '{tr[:50]}'",
+            })
+
+    # S23: word_salad — tłumaczenie to mix EN function words + częściowe tłumaczenie
+    if tr != en and not tr.startswith("[") and tr_len > 15:
+        _ws_func = {'the','a','an','of','in','is','it','its','he','she','his','her',
+            'has','had','was','were','to','by','on','at','for','with','from','that',
+            'this','which','some','they','their','them','you','your','we','our'}
+        _ws_words = tr.lower().split()
+        if len(_ws_words) >= 4:
+            _ws_func_count = sum(1 for w in _ws_words if w.rstrip('.,!?;:') in _ws_func)
+            _ws_ratio = _ws_func_count / len(_ws_words)
+            if _ws_func_count >= 2 and _ws_ratio > 0.2:
+                issues.append({
+                    "type": "word_salad",
+                    "severity": "CRITICAL",
+                    "message": f"Mix EN function words + partial translation ({_ws_func_count}/{len(_ws_words)} = {_ws_ratio:.0%}): '{tr[:50]}'",
+                })
+
+    # S24: i_dot_artifact — artefakt 'I.' z ChatGPT (angielskie 'I' z kropką)
+    if tr != en and not tr.startswith("[") and re.search(r'\bI\.(?:\s|$)', tr):
+        # Sprawdź czy EN też ma 'I.' (np. "I. love" w oryginalnym kontekście)
+        if not re.search(r'\bI\.(?:\s|$)', en):
+            issues.append({
+                "type": "i_dot_artifact",
+                "severity": "HIGH",
+                "message": f"Artefakt 'I.' w tłumaczeniu: '{tr[:50]}'",
             })
 
     return issues

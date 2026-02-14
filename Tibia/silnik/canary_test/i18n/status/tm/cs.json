@@ -4550,5 +4550,165 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-14T07:51:50.402130Z"
+  },
+  "quests.actions_chests.msg_1": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Je to prázdné.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T11:52:43.922522Z"
+  },
+  "quests.actions_coral.msg_1": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Sorry.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:52:43.923023Z"
+  },
+  "quests.actions_crystal.msg_1": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Sorry.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:52:43.923460Z"
+  },
+  "quests.actions_portal_minis_feaster.msg_1": {
+    "src_hash": "d7675b7b6e4edadcaa460bfa24c70b35",
+    "text": "All the players need to be level",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T11:52:43.924658Z"
+  },
+  "quests.actions_portal_minis_feaster.msg_2": {
+    "src_hash": "b97f99b956df2fe9bb7b47e1908f0684",
+    "text": "You have to wait",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T11:52:43.925241Z"
+  },
+  "quests.actions_rewards.msg_1": {
+    "src_hash": "2dba8779b7220248332287566af0d980",
+    "text": "You found",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T11:52:43.925559Z"
+  },
+  "quests.actions_rewards.msg_2": {
+    "src_hash": "2dba8779b7220248332287566af0d980",
+    "text": "You found",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T11:52:43.925839Z"
+  },
+  "quests.bigfoot_burden.chest_empty": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "You found.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:52:43.926792Z"
+  },
+  "quests.bigfoot_burden.mouthpiece_empty": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Je to prázdné.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T11:52:43.927494Z"
+  },
+  "quests.movements_arena_enter.say_1": {
+    "src_hash": "3bb3470755c465f042163233b672a4fb",
+    "text": "Fight!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:52:43.931417Z"
+  },
+  "quests.movements_arena_pit.say_1": {
+    "src_hash": "477fb3950c49773dfcb06d6a48db93db",
+    "text": "Fight!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:52:43.931697Z"
+  },
+  "quests.movements_stepin.msg_1": {
+    "src_hash": "f5187cf0efffe78314c7a7093a4e53dc",
+    "text": "You must wait. Someone is challenging",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T11:52:43.932643Z"
+  },
+  "quests.threatened_dreams.it_is_empty": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Je to prázdné.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T11:52:43.936667Z"
+  },
+  "quests.2_ambassadors_treason.msg_1": {
+    "src_hash": "8464bf58b6d5fa7bbe7ed698b810582e",
+    "text": "V Ambasadorově domě nic nenajdete. Pokud je ve skutečnosti zrádce, zbavil se všech důkazů, které by ho mohly usvědčovat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:52:47.338988Z"
+  },
+  "quests.2_ambassadors_treason.msg_2": {
+    "src_hash": "dd483e9a16530ce89de99a1dc0f9f197",
+    "text": "Už jste to zkoumali.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:52:47.339484Z"
+  },
+  "quests.2_ambassadors_treason.msg_3": {
+    "src_hash": "92080f0ef8fde073cd9d9b26347d601b",
+    "text": "Pečlivě prozkoumáte svitky. To jsou příkazy od Rathleton pro velvyslance. Žádné známky zrady.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:52:47.340431Z"
+  },
+  "quests.2_ambassadors_treason.msg_4": {
+    "src_hash": "dd483e9a16530ce89de99a1dc0f9f197",
+    "text": "Už jste to zkoumali.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:52:47.340872Z"
+  },
+  "quests.2_ambassadors_treason.msg_5": {
+    "src_hash": "f0502f434837f12f681eb194dd73e2d4",
+    "text": "Útržky papíru leží rozházené na podlaze. Dávat je zase dohromady nějakou dobu trvá. Ale je to jen špatně napsaná báseň.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:52:47.341544Z"
+  },
+  "quests.2_ambassadors_treason.msg_6": {
+    "src_hash": "dd483e9a16530ce89de99a1dc0f9f197",
+    "text": "Už jste to zkoumali.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:52:49.709261Z"
+  },
+  "quests.2_ambassadors_treason.msg_7": {
+    "src_hash": "14dfffed3e8aaff6aa4f4509ee470001",
+    "text": "Nedávno zde byly spáleny dokumenty. Pouze část jednoho svitku stále leží před komínem, ale je příliš zašpiněná na čtení.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:52:49.711388Z"
   }
 }

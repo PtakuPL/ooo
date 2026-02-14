@@ -788,3 +788,28 @@ Funkcje:
 - Guardian zarządza workerem na podstawie zdrowia, nie tylko PID,
 - 3rd daemon dostarcza telemetry i świeże statusy,
 - dokumentacja operacyjna pokrywa uruchamianie, debug, recovery i rollback.
+
+---
+
+## 11) Aktualizacja operacyjna (2026-02-14 11:55 UTC) — command latency i lock recovery
+
+### 11.1 Potwierdzone na runtime
+- `.worker_command` jest konsumowany tylko na początku cyklu, więc wymuszenia mogą czekać zbyt długo przy długim cyklu.
+- Po ręcznych restartach czasem zostaje aktywny lock `.worker_simple.start.lock` (owner `sleep`), a nowy worker widzi `Inny worker już działa (lock startup)`.
+- Przy szybkim testowaniu języków powoduje to fałszywe timeouty i długi czas roundtrip komend operatorskich.
+
+### 11.2 Decyzje do wdrożenia
+1. Dodać metrykę `forced_command_roundtrip_s` (czas od zapisu komendy do wpisu w `translation_recent_report.jsonl`).
+2. Dodać metrykę `worker_command_pending_age_s` i alarm:
+   - WARN > 30s,
+   - CRIT > 90s.
+3. Dodać lock self-heal:
+   - jeśli PID owner locka nie żyje, guardian/statusd czyści lock automatycznie,
+   - zapisuje event `STALE_START_LOCK_CLEARED`.
+4. Dodać policy `forced_command_recovery`:
+   - gdy `worker_command_pending_age_s` przekracza CRIT, soft-restart worker + recheck po 20s.
+
+### 11.3 DoD dla poprawki
+- 95p roundtrip dla `AUTO:<lang>:<json>:20` <= 45s,
+- brak fałszywego `lock startup` po restartach ręcznych,
+- statusd doctor raportuje command-latency i lock-health jako osobne kontrakty.

@@ -3,13 +3,13 @@
   "coverage_pct": 8.9,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
-  "auto_fix_limit": 80,
-  "checked_at": "2026-02-14T11:45:13.738621Z",
-  "issues_total": 407,
+  "auto_fix_limit": 30,
+  "checked_at": "2026-02-14T12:00:44.040230Z",
+  "issues_total": 404,
   "issues_by_type": {
     "consistency_in_language": 0,
     "pl_reference_missing_translation": 400,
-    "length_ratio_crosscheck": 7
+    "length_ratio_crosscheck": 4
   },
   "consistency_issues": [],
   "pl_reference_issues": [
@@ -30,15 +30,6 @@
       "en": "Minstrel",
       "pl": "Bard",
       "lang": "Minstrel"
-    },
-    {
-      "key": "achievement.77.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Jinx",
-      "pl": "Be a jinx on sb",
-      "lang": "Jinx"
     },
     {
       "key": "achievement.123.name",
@@ -66,15 +57,6 @@
       "en": "Arachnoise",
       "pl": "ArachNieise",
       "lang": "Arachnoise"
-    },
-    {
-      "key": "achievement.251.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Dog Sitter",
-      "pl": "I. Sitter",
-      "lang": "Dog Sitter"
     },
     {
       "key": "achievement.261.name",
@@ -149,15 +131,6 @@
       "lang": "Manic"
     },
     {
-      "key": "achievement.279.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Death Song",
-      "pl": "I. Pieśń, piosenka",
-      "lang": "Death Song"
-    },
-    {
       "key": "achievement.281.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -183,15 +156,6 @@
       "en": "Repenter",
       "pl": "Żałować",
       "lang": "Repenter"
-    },
-    {
-      "key": "achievement.363.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Robo Chop",
-      "pl": "Robo I.",
-      "lang": "Robo Chop"
     },
     {
       "key": "achievement.366.name",
@@ -221,24 +185,6 @@
       "lang": "Lion King"
     },
     {
-      "key": "achievement.388.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Pig-Headed",
-      "pl": "Świnia-I.",
-      "lang": "Pig-Headed"
-    },
-    {
-      "key": "achievement.398.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Gear Up",
-      "pl": "I. Up",
-      "lang": "Gear Up"
-    },
-    {
       "key": "achievement.402.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -246,15 +192,6 @@
       "en": "Spin-Off",
       "pl": "I.-Off",
       "lang": "Spin-Off"
-    },
-    {
-      "key": "achievement.403.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Icy Glare",
-      "pl": "Lodowaty I.",
-      "lang": "Icy Glare"
     },
     {
       "key": "achievement.410.name",
@@ -320,15 +257,6 @@
       "lang": "Snake Pit"
     },
     {
-      "key": "ui.house.rent_period_daily",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "daily",
-      "pl": "I.",
-      "lang": "daily"
-    },
-    {
       "key": "ui.house.rent_period_monthly",
       "category": "books",
       "type": "pl_reference_missing_translation",
@@ -336,24 +264,6 @@
       "en": "monthly",
       "pl": "miesięczny",
       "lang": "monthly"
-    },
-    {
-      "key": "ui.house.rent_period_weekly",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "weekly",
-      "pl": "I.",
-      "lang": "weekly"
-    },
-    {
-      "key": "ui.house.rent_period_yearly",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "annual",
-      "pl": "I.",
-      "lang": "annual"
     },
     {
       "key": "ui.readable.wrote",
@@ -716,15 +626,6 @@
       "lang": "damage"
     },
     {
-      "key": "cpp.bestiary.charm_category_major",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Major",
-      "pl": "I.",
-      "lang": "Major"
-    },
-    {
       "key": "cpp.bestiary.charm_category_minor",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -741,15 +642,6 @@
       "en": "agony",
       "pl": "cierpienie",
       "lang": "agony"
-    },
-    {
-      "key": "cpp.combat.death",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "death",
-      "pl": "I.",
-      "lang": "death"
     },
     {
       "key": "cpp.combat.drown",
@@ -878,24 +770,6 @@
       "lang": "{0} cores"
     },
     {
-      "key": "cpp.forge.dust_one",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "{0} dust",
-      "pl": "{0} I.",
-      "lang": "{0} dust"
-    },
-    {
-      "key": "cpp.forge.dust_other",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "{0} dust",
-      "pl": "{0} I.",
-      "lang": "{0} dust"
-    },
-    {
       "key": "cpp.forge.successful",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -932,15 +806,6 @@
       "lang": " (Hazard)"
     },
     {
-      "key": "cpp.game.no_loot",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "No loot",
-      "pl": "Nie I.",
-      "lang": "No loot"
-    },
-    {
       "key": "cpp.game.offline_training_button_cancel",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -950,15 +815,6 @@
       "lang": "Cancel"
     },
     {
-      "key": "cpp.game.offline_training_button_ok",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Okay",
-      "pl": "I.",
-      "lang": "Okay"
-    },
-    {
       "key": "cpp.game.tentugly_name",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -966,15 +822,6 @@
       "en": "Tentugly",
       "pl": "Delikatnie",
       "lang": "Tentugly"
-    },
-    {
-      "key": "cpp.game.you_looted",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You looted ",
-      "pl": "Ty I.",
-      "lang": "You looted "
     },
     {
       "key": "cpp.inspect.and_connector",
@@ -993,15 +840,6 @@
       "en": "Armor",
       "pl": "Zbroja",
       "lang": "Armor"
-    },
-    {
-      "key": "cpp.inspect.at_range",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " at range ",
-      "pl": "w I.",
-      "lang": " at range "
     },
     {
       "key": "cpp.inspect.attack",
@@ -1047,15 +885,6 @@
       "en": "container",
       "pl": "pojemnik",
       "lang": "container"
-    },
-    {
-      "key": "cpp.inspect.body_extra_slot",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "extra slot",
-      "pl": "I. I.",
-      "lang": "extra slot"
     },
     {
       "key": "cpp.inspect.body_feet",
@@ -1193,24 +1022,6 @@
       "lang": "HitChance"
     },
     {
-      "key": "cpp.inspect.key",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Key",
-      "pl": "I.",
-      "lang": "Key"
-    },
-    {
-      "key": "cpp.inspect.n_fields",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "{0} fields",
-      "pl": "{0} I.",
-      "lang": "{0} fields"
-    },
-    {
       "key": "cpp.inspect.nothing",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -1254,24 +1065,6 @@
       "en": "Required",
       "pl": "wymagany",
       "lang": "Required"
-    },
-    {
-      "key": "cpp.inspect.speed",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Speed",
-      "pl": "I.",
-      "lang": "Speed"
-    },
-    {
-      "key": "cpp.inspect.speed_value",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "speed {0}",
-      "pl": "I. {0}",
-      "lang": "speed {0}"
     },
     {
       "key": "cpp.inspect.tier",
@@ -1346,15 +1139,6 @@
       "lang": "Arm:"
     },
     {
-      "key": "cpp.look.at_range",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "at range",
-      "pl": "w I.",
-      "lang": "at range"
-    },
-    {
       "key": "cpp.look.atk",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -1416,24 +1200,6 @@
       "en": "Def:",
       "pl": "def:",
       "lang": "Def:"
-    },
-    {
-      "key": "cpp.look.empty_slot",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Empty Slot",
-      "pl": "puste I.",
-      "lang": "Empty Slot"
-    },
-    {
-      "key": "cpp.look.field",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " field",
-      "pl": "I.",
-      "lang": " field"
     },
     {
       "key": "cpp.look.hit_pct",
@@ -1517,15 +1283,6 @@
       "lang": " on "
     },
     {
-      "key": "cpp.look.or_higher",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " or higher",
-      "pl": "lub I.",
-      "lang": " or higher"
-    },
-    {
       "key": "cpp.look.physical_plus",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -1580,15 +1337,6 @@
       "lang": "{0} second"
     },
     {
-      "key": "cpp.look.speed_label",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "speed",
-      "pl": "I.",
-      "lang": "speed"
-    },
-    {
       "key": "cpp.look.tier_ruse",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -1641,15 +1389,6 @@
       "en": "You read: ",
       "pl": "Ty czytać, przeczytać:",
       "lang": "You read: "
-    },
-    {
-      "key": "cpp.look.you_see",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You see ",
-      "pl": "Ty I.",
-      "lang": "You see "
     },
     {
       "key": "cpp.player.corpse_and",
@@ -1832,15 +1571,6 @@
       "lang": "level"
     },
     {
-      "key": "cpp.skill.life_leech",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "life leech",
-      "pl": "I. pijawka",
-      "lang": "life leech"
-    },
-    {
       "key": "cpp.skill.mana_leech",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -1958,15 +1688,6 @@
       "lang": "Manhunter"
     },
     {
-      "key": "cpp.title.name_49",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ooze Blues",
-      "pl": "I. I.",
-      "lang": "Ooze Blues"
-    },
-    {
       "key": "cpp.title.name_50",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -2064,15 +1785,6 @@
       "en": "a paladin",
       "pl": "jeden paladin",
       "lang": "a paladin"
-    },
-    {
-      "key": "cpp.vocation.desc_id_4",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a knight",
-      "pl": "jeden I.",
-      "lang": "a knight"
     },
     {
       "key": "cpp.vocation.id_0",
@@ -3612,6 +3324,294 @@
       "en": "Name",
       "pl": "Nazwa",
       "lang": "Name"
+    },
+    {
+      "key": "web.tpl.admin.plugins.th_3",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Version",
+      "pl": "Wersja",
+      "lang": "Version"
+    },
+    {
+      "key": "web.tpl.admin.plugins.th_4",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Author",
+      "pl": "Autor",
+      "lang": "Author"
+    },
+    {
+      "key": "web.tpl.admin.plugins.th_5",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Filename",
+      "pl": "Nazwa pliku",
+      "lang": "Filename"
+    },
+    {
+      "key": "web.tpl.forum.boards.b_1",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Boards",
+      "pl": "Deski",
+      "lang": "Boards"
+    },
+    {
+      "key": "web.tpl.forum.boards.b_2",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Board",
+      "pl": "Tablica",
+      "lang": "Board"
+    },
+    {
+      "key": "web.tpl.forum.boards.b_3",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Posts",
+      "pl": "Posty",
+      "lang": "Posts"
+    },
+    {
+      "key": "web.tpl.forum.boards.b_4",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Threads",
+      "pl": "Wątki",
+      "lang": "Threads"
+    },
+    {
+      "key": "web.tpl.forum.boards.b_5",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Last Post",
+      "pl": "Ostatni post",
+      "lang": "Last Post"
+    },
+    {
+      "key": "web.tpl.forum.boards.b_6",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Options",
+      "pl": "Opcje",
+      "lang": "Options"
+    },
+    {
+      "key": "web.tpl.news.back_button.set_1",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Back",
+      "pl": "Z powrotem",
+      "lang": "Back"
+    },
+    {
+      "key": "web.tpl.forum.show_thread.b_1",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Author",
+      "pl": "Autor",
+      "lang": "Author"
+    },
+    {
+      "key": "web.tpl.admin.pages.th_1",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Name",
+      "pl": "Nazwa",
+      "lang": "Name"
+    },
+    {
+      "key": "web.tpl.admin.pages.th_2",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Title",
+      "pl": "Tytuł",
+      "lang": "Title"
+    },
+    {
+      "key": "web.tpl.forum.edit_post.b_1",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Edit Post",
+      "pl": "Edytuj post",
+      "lang": "Edit Post"
+    },
+    {
+      "key": "web.tpl.forum.edit_post.b_2",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Character:",
+      "pl": "Charakter:",
+      "lang": "Character:"
+    },
+    {
+      "key": "web.tpl.forum.edit_post.b_3",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Topic:",
+      "pl": "Temat:",
+      "lang": "Topic:"
+    },
+    {
+      "key": "web.tpl.forum.edit_post.b_4",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Message:",
+      "pl": "Wiadomość:",
+      "lang": "Message:"
+    },
+    {
+      "key": "web.tpl.forum.edit_post.b_5",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Text",
+      "pl": "Tekst",
+      "lang": "Text"
+    },
+    {
+      "key": "web.tpl.experience_table.b_2",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Level",
+      "pl": "poziom",
+      "lang": "Level"
+    },
+    {
+      "key": "web.tpl.experience_table.b_3",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Experience",
+      "pl": "Doświadczenie",
+      "lang": "Experience"
+    },
+    {
+      "key": "web.tpl.guilds.create.b_1",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Leader:",
+      "pl": "Lider:",
+      "lang": "Leader:"
+    },
+    {
+      "key": "web.tpl.gallery.form.td_1",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Comment:",
+      "pl": "Komentarz:",
+      "lang": "Comment:"
+    },
+    {
+      "key": "web.tpl.gallery.form.td_2",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Image URL:",
+      "pl": "Adres URL obrazu:",
+      "lang": "Image URL:"
+    },
+    {
+      "key": "web.tpl.gallery.form.td_3",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Author:",
+      "pl": "Autor:",
+      "lang": "Author:"
+    },
+    {
+      "key": "web.tpl.account.characters.create.span_1",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Name",
+      "pl": "Nazwa",
+      "lang": "Name"
+    },
+    {
+      "key": "web.tpl.account.characters.create.span_2",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Sex",
+      "pl": "Seks",
+      "lang": "Sex"
+    },
+    {
+      "key": "web.tpl.buttons.cancel.set_1",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Cancel",
+      "pl": "Anuluj",
+      "lang": "Cancel"
+    },
+    {
+      "key": "web.tpl.lastkills.set_1",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Last Kills",
+      "pl": "Ostatnie zabójstwa",
+      "lang": "Last Kills"
+    },
+    {
+      "key": "web.tpl.account.generate_recovery_key.span_1",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Password:",
+      "pl": "Hasło:",
+      "lang": "Password:"
+    },
+    {
+      "key": "web.tpl.commands.b_1",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Words",
+      "pl": "słowa",
+      "lang": "Words"
+    },
+    {
+      "key": "web.tpl.commands.b_3",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Options",
+      "pl": "Opcje",
+      "lang": "Options"
+    },
+    {
+      "key": "web.tpl.created.th_2",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Account",
+      "pl": "Twojego",
+      "lang": "Account"
     }
   ],
   "length_ratio_issues": [
@@ -3634,15 +3634,6 @@
       "pl_ratio": 3.154
     },
     {
-      "key": "achievement.25.name",
-      "category": "achievements",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 12,
-      "lang_ratio": 0.917,
-      "pl_ratio": 3.0
-    },
-    {
       "key": "achievement.68.name",
       "category": "achievements",
       "type": "crossref_length_ratio_diff",
@@ -3652,15 +3643,6 @@
       "pl_ratio": 3.417
     },
     {
-      "key": "achievement.97.name",
-      "category": "achievements",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 17,
-      "lang_ratio": 1.0,
-      "pl_ratio": 3.529
-    },
-    {
       "key": "achievement.128.name",
       "category": "achievements",
       "type": "crossref_length_ratio_diff",
@@ -3668,15 +3650,6 @@
       "en_len": 10,
       "lang_ratio": 1.0,
       "pl_ratio": 4.5
-    },
-    {
-      "key": "achievement.207.name",
-      "category": "achievements",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 2.333,
-      "pl_ratio": 0.333
     }
   ],
   "auto_fix": {

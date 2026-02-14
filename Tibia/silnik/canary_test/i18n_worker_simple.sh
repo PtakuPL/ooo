@@ -9378,11 +9378,77 @@ for key, en_value in en_data.items():
 if normalized_placeholders > 0:
     print(f"   🧹 Znormalizowano placeholdery: {normalized_placeholders}")
 
+# ── Auto-repair pass: napraw patologiczne wartości ────────────────────────
+CYRILLIC_LANGS_SET = {"ru", "uk", "bg", "sr", "mk"}
+CYRILLIC_RE = re.compile(r'[\u0400-\u04FF]')
+EN_WORD_RE = re.compile(r'[a-zA-Z]{3,}')
+
+repaired_empty = 0
+repaired_identical = 0
+repaired_partial_mix = 0
+repaired_latin_cyrillic = 0
+
+for key, en_value in en_data.items():
+    if key not in lang_data:
+        continue
+    value = lang_data[key]
+    if not isinstance(value, str):
+        continue
+    en_str = str(en_value).strip()
+    if not en_str:
+        continue
+
+    # (R1) Pusta wartość → [EN] prefix
+    if not value.strip():
+        lang_data[key] = f"{UNTRANSLATED_PREFIX}{en_value}"
+        repaired_empty += 1
+        continue
+
+    # Pomijaj już oznaczone [EN]
+    if value.startswith("[EN] "):
+        continue
+
+    # (R2) Identical-to-EN (>10 chars lub >2 słowa) → [EN] prefix
+    if value == str(en_value) and (len(en_str) > 10 or len(en_str.split()) > 2):
+        lang_data[key] = f"{UNTRANSLATED_PREFIX}{en_value}"
+        repaired_identical += 1
+        continue
+
+    # (R3) Partial translation mix: >70% słów EN w tłumaczeniu (Latin-script langs)
+    if target_lang not in CYRILLIC_LANGS_SET:
+        en_words = set(w.lower() for w in EN_WORD_RE.findall(str(en_value)))
+        if len(en_words) >= 3:
+            trans_words = set(w.lower() for w in EN_WORD_RE.findall(value))
+            if trans_words:
+                overlap = len(en_words & trans_words)
+                ratio = overlap / len(en_words)
+                if ratio > 0.7 and len(en_words & trans_words) >= 3:
+                    lang_data[key] = f"{UNTRANSLATED_PREFIX}{en_value}"
+                    repaired_partial_mix += 1
+                    continue
+
+    # (R4) Latin-only w językach cyrylickich → [EN] prefix
+    if target_lang in CYRILLIC_LANGS_SET:
+        if not CYRILLIC_RE.search(value) and EN_WORD_RE.search(value):
+            lang_data[key] = f"{UNTRANSLATED_PREFIX}{en_value}"
+            repaired_latin_cyrillic += 1
+            continue
+
+total_repaired = repaired_empty + repaired_identical + repaired_partial_mix + repaired_latin_cyrillic
+if total_repaired > 0:
+    parts = []
+    if repaired_empty: parts.append(f"empty={repaired_empty}")
+    if repaired_identical: parts.append(f"identical={repaired_identical}")
+    if repaired_partial_mix: parts.append(f"partial_mix={repaired_partial_mix}")
+    if repaired_latin_cyrillic: parts.append(f"latin_cyrillic={repaired_latin_cyrillic}")
+    print(f"   🔧 Auto-repair: {total_repaired} ({', '.join(parts)})")
+
 # Znajdź brakujące klucze
 missing_keys = [key for key in en_data if key not in lang_data]
 print(f"   🔍 Brakujących: {len(missing_keys)}")
 
-if not missing_keys and normalized_placeholders == 0:
+total_fixes = normalized_placeholders + total_repaired
+if not missing_keys and total_fixes == 0:
     print(f"   ✅ Wszystkie klucze zsynchronizowane dla {target_lang}/{json_file}")
     print("__SYNC_RESULT__ synced=0")
     sys.exit(0)
@@ -9395,7 +9461,7 @@ for key in missing_keys[:batch_size]:
     lang_data[key] = f"{UNTRANSLATED_PREFIX}{en_value}"
     synced += 1
 
-total_synced = synced + normalized_placeholders
+total_synced = synced + normalized_placeholders + total_repaired
 
 # Zapisz plik językowy (posortowany alfabetycznie)
 lang_data_sorted = dict(sorted(lang_data.items()))
@@ -13378,6 +13444,18 @@ def detect_suspicious(en_text: str, translated_text: str, lang: str, key: str = 
             "severity": "CRITICAL",
             "message": f"Pusta wartość tłumaczenia (EN: '{en[:50]}')",
         })
+
+    # S22: latin_only_cyrillic — tłumaczenie w języku cyrylickim pisane wyłącznie łacinką
+    _cyrillic_langs_s22 = {"ru", "uk", "bg", "sr", "mk"}
+    if lang_lower in _cyrillic_langs_s22 and tr != en and not tr.startswith("["):
+        _has_cyr = bool(re.search(r'[\u0400-\u04FF]', tr))
+        _has_lat_words = bool(re.search(r'[a-zA-Z]{3,}', tr))
+        if not _has_cyr and _has_lat_words and tr_len > 5:
+            issues.append({
+                "type": "latin_only_cyrillic",
+                "severity": "CRITICAL",
+                "message": f"Język cyrylicki ({lang}) ma tłumaczenie wyłącznie łacinką: '{tr[:50]}'",
+            })
 
     return issues
 

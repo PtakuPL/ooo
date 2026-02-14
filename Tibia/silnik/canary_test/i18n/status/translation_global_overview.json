@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-02-14T11:46:09.909797Z",
+  "timestamp": "2026-02-14T11:51:30.880585Z",
   "global": {
     "total_reference_keys": 2786472,
-    "translated_keys": 300074,
-    "english_copy_keys": 195212,
+    "translated_keys": 300286,
+    "english_copy_keys": 195228,
     "missing_keys": 2155,
     "missing_files": 0,
-    "completion_pct": 10.77
+    "completion_pct": 10.78
   },
   "migration": {
     "files_total": 2299,
     "files_completed": 2297,
     "scanned_files_history": 6443,
     "scanned_files_live": 2299,
-    "scanned_files_history_pct": 68.3,
-    "scanned_files_live_pct": 24.4,
-    "files_not_scanned_history": 2993,
-    "files_not_scanned_live": 7137,
+    "scanned_files_history_pct": 68.7,
+    "scanned_files_live_pct": 24.5,
+    "files_not_scanned_history": 2937,
+    "files_not_scanned_live": 7081,
     "scanned_files_history_minus_live": 4144,
     "files_migrated": 1897,
     "files_in_progress": 2,
@@ -49,55 +49,56 @@
     ]
   },
   "reports": {
-    "guard_reports_total": 2054,
-    "guard_reports_blocked": 2004,
+    "guard_reports_total": 2056,
+    "guard_reports_blocked": 2006,
     "blockers_reports_total": 0,
-    "cannot_translate_reports_visible": 2004
+    "cannot_translate_reports_visible": 2006
   },
   "cache": {
-    "lang_stats_hits": 1,
-    "lang_stats_misses": 51,
-    "lang_stats_hit_pct": 1.9,
-    "lang_stats_mode": "mixed",
-    "lang_file_hits": 838,
-    "lang_file_misses": 1138,
-    "lang_file_hit_pct": 42.4,
+    "lang_stats_hits": 52,
+    "lang_stats_misses": 0,
+    "lang_stats_hit_pct": 100.0,
+    "lang_stats_mode": "warm-cache",
+    "lang_file_hits": 1976,
+    "lang_file_misses": 0,
+    "lang_file_hit_pct": 100.0,
     "lang_stats_cache_file": "i18n/status/translation_lang_stats_cache.json"
   },
   "profiler_latest": {
-    "timestamp": "2026-02-14T11:45:54.019984Z",
+    "timestamp": "2026-02-14T11:51:25.802697Z",
     "cycle": 1,
     "mode": "AUTO_TRANSLATE",
-    "category": "es",
+    "category": "lt",
     "events": {
-      "dispatch": 1303
+      "dispatch": 137,
+      "mode_run": 90768
     }
   },
   "strict_hourly_window": {
-    "window_start_utc": "2026-02-14T10:46:09.473906Z",
-    "window_end_utc": "2026-02-14T11:46:09.473906Z",
+    "window_start_utc": "2026-02-14T10:51:30.551318Z",
+    "window_end_utc": "2026-02-14T11:51:30.551318Z",
     "window_hours": 1.0,
     "sources": [
       "i18n/status/worker_cycle_perf.jsonl",
       "i18n/status/translation_guard_report.jsonl",
       "i18n/status/suspicious_log.jsonl"
     ],
-    "total_cycles": 10,
+    "total_cycles": 14,
     "mode_distribution": {
-      "AUTO_TRANSLATE": 10
+      "AUTO_TRANSLATE": 14
     },
-    "auto_translate_cycles": 10,
+    "auto_translate_cycles": 14,
     "migration_cycles": 0,
     "pending_skip_count": 0,
     "pending_skip_share_pct": 0.0,
     "pending_skip_share_migration_pct": 0.0,
-    "translated": 385,
-    "guard_fail": 104,
-    "guard_fail_rate_pct": 21.3,
+    "translated": 412,
+    "guard_fail": 103,
+    "guard_fail_rate_pct": 20.0,
     "no_progress_entries": 1,
-    "no_progress_rate_pct": 10.0,
-    "throughput_keys_per_h": 196623.6,
-    "suspicious_total": 503,
+    "no_progress_rate_pct": 9.1,
+    "throughput_keys_per_h": 15031.2,
+    "suspicious_total": 583,
     "top_guard_fail_targets": [
       {
         "target": "es/npc.json",
@@ -124,14 +125,14 @@
         "guard_command": 0
       },
       {
-        "target": "pl/talkactions.json",
-        "translated": 2,
-        "guard_fail": 4,
+        "target": "pl/otclient_data.json",
+        "translated": 0,
+        "guard_fail": 3,
         "guard_command": 0
       },
       {
-        "target": "pl/otclient_data.json",
-        "translated": 0,
+        "target": "pl/quests.json",
+        "translated": 9,
         "guard_fail": 3,
         "guard_command": 0
       },
@@ -151,142 +152,298 @@
   },
   "quality": {
     "audit_latest": {
-      "timestamp": "2026-02-14T11:36:08.017265Z",
+      "timestamp": "2026-02-14T11:51:26.095327Z",
       "checked_entries": 100,
-      "issues_found": 18,
+      "issues_found": 40,
       "issues_by_type": {
-        "identical_to_en": 18,
-        "identical_to_en_exempt": 3,
-        "suspicious_log_critical": 132,
-        "suspicious_log_low": 68,
+        "identical_to_en": 40,
+        "identical_to_en_exempt": 9,
+        "suspicious_log_low": 134,
+        "suspicious_log_critical": 1,
+        "suspicious_log_high": 57,
+        "suspicious_log_medium": 8,
         "suspicious_rejected_critical": 200
       },
       "issues": [
         {
-          "key": "data.otservbr.global.npc.yasir.L830.924",
-          "lang": "pl",
+          "key": "spell.hideous_fungus_summon.name",
+          "lang": "es",
           "type": "identical_to_en",
-          "en": "Si, jema ze harun. <waves>",
-          "translated": "Si, jema ze harun. <waves>"
+          "en": "Hideous Fungus Summon",
+          "translated": "Hideous Fungus Summon"
         },
         {
-          "key": "spell.morik_the_gladiator_summon.name",
-          "lang": "pl",
+          "key": "spell.death_priest_shargon_curse.name",
+          "lang": "es",
           "type": "identical_to_en",
-          "en": "morik the gladiator summon",
-          "translated": "morik the gladiator summon"
+          "en": "Death Priest Shargon Curse",
+          "translated": "Death Priest Shargon Curse"
         },
         {
-          "key": "spell.hells_core.words",
-          "lang": "pl",
+          "key": "spell.magma_crawler_soulfire.name",
+          "lang": "es",
           "type": "identical_to_en",
-          "en": "exevo gran mas flam",
-          "translated": "exevo gran mas flam"
+          "en": "Magma Crawler Soulfire",
+          "translated": "Magma Crawler Soulfire"
         },
         {
-          "key": "spell.great_fire_wave.words",
-          "lang": "pl",
+          "key": "spell.devovorga_curse.name",
+          "lang": "es",
           "type": "identical_to_en",
-          "en": "exevo gran flam hur",
-          "translated": "exevo gran flam hur"
+          "en": "Devovorga Curse",
+          "translated": "Devovorga Curse"
         },
         {
-          "key": "spell.strong_ice_wave.words",
-          "lang": "pl",
+          "key": "spell.cults_of_tibia_armor_buff.name",
+          "lang": "es",
           "type": "identical_to_en",
-          "en": "exevo gran frigo hur",
-          "translated": "exevo gran frigo hur"
+          "en": "Cults Of Tibia Armor Buff",
+          "translated": "Cults Of Tibia Armor Buff"
         },
         {
-          "key": "spell.executioners_throw.name",
-          "lang": "pl",
+          "key": "spell.white_shade_paralyze.name",
+          "lang": "es",
           "type": "identical_to_en",
-          "en": "Executioner's Throw",
-          "translated": "Executioner's Throw"
+          "en": "White Shade Paralyze",
+          "translated": "White Shade Paralyze"
         },
         {
-          "key": "spell.rage_of_the_skies.words",
-          "lang": "pl",
+          "key": "spell.plant_abomination_wave.name",
+          "lang": "es",
           "type": "identical_to_en",
-          "en": "exevo gran mas vis",
-          "translated": "exevo gran mas vis"
+          "en": "Plant Abomination Wave",
+          "translated": "Plant Abomination Wave"
         },
         {
-          "key": "spell.lightning.name",
-          "lang": "pl",
+          "key": "spell.large_ice_ring.name",
+          "lang": "es",
           "type": "identical_to_en",
-          "en": "Lightning",
-          "translated": "Lightning"
+          "en": "Large Ice Ring",
+          "translated": "Large Ice Ring"
         },
         {
-          "key": "spell.wrath_of_nature.words",
-          "lang": "pl",
+          "key": "spell.teleport_strike.name",
+          "lang": "es",
           "type": "identical_to_en",
-          "en": "exevo gran mas tera",
-          "translated": "exevo gran mas tera"
+          "en": "Teleport Strike",
+          "translated": "Teleport Strike"
         },
         {
-          "key": "spell.great_energy_beam.words",
-          "lang": "pl",
+          "key": "spell.quara_constrictor_freeze.name",
+          "lang": "es",
           "type": "identical_to_en",
-          "en": "exevo gran vis lux",
-          "translated": "exevo gran vis lux"
+          "en": "Quara Constrictor Freeze",
+          "translated": "Quara Constrictor Freeze"
         },
         {
-          "key": "spell.eternal_winter.words",
-          "lang": "pl",
+          "key": "spell.lersatio_summon.name",
+          "lang": "es",
           "type": "identical_to_en",
-          "en": "exevo gran mas frigo",
-          "translated": "exevo gran mas frigo"
+          "en": "Lersatio Summon",
+          "translated": "Lersatio Summon"
         },
         {
-          "key": "spell.mass_healing.words",
-          "lang": "pl",
+          "key": "spell.elder_bonelord_paralyze.name",
+          "lang": "es",
           "type": "identical_to_en",
-          "en": "exura gran mas res",
-          "translated": "exura gran mas res"
+          "en": "elder bonelord paralyze",
+          "translated": "elder bonelord paralyze"
         },
         {
-          "key": "spell.sorcerer_familiar.words",
-          "lang": "pl",
+          "key": "spell.physical_barrage.name",
+          "lang": "es",
           "type": "identical_to_en",
-          "en": "utevo gran res ven",
-          "translated": "utevo gran res ven"
+          "en": "Physical Barrage",
+          "translated": "Physical Barrage"
         },
         {
-          "key": "spell.knight_familiar.words",
-          "lang": "pl",
+          "key": "spell.explosion_wave.name",
+          "lang": "es",
           "type": "identical_to_en",
-          "en": "utevo gran res eq",
-          "translated": "utevo gran res eq"
+          "en": "Explosion Wave",
+          "translated": "Explosion Wave"
         },
         {
-          "key": "spell.paladin_familiar.words",
-          "lang": "pl",
+          "key": "spell.incineron_soulfire.name",
+          "lang": "es",
           "type": "identical_to_en",
-          "en": "utevo gran res sac",
-          "translated": "utevo gran res sac"
+          "en": "Incineron Soulfire",
+          "translated": "Incineron Soulfire"
         },
         {
-          "key": "spell.druid_familiar.words",
-          "lang": "pl",
+          "key": "spell.plaguesmith_wave.name",
+          "lang": "es",
           "type": "identical_to_en",
-          "en": "utevo gran res dru",
-          "translated": "utevo gran res dru"
+          "en": "Plaguesmith Wave",
+          "translated": "Plaguesmith Wave"
         },
         {
-          "key": "spell.charge.name",
-          "lang": "pl",
+          "key": "spell.lich_paralyze.name",
+          "lang": "es",
           "type": "identical_to_en",
-          "en": "Charge",
-          "translated": "Charge"
+          "en": "Lich Paralyze",
+          "translated": "Lich Paralyze"
         },
         {
-          "key": "spell.challenge.name",
-          "lang": "pl",
+          "key": "item.3051.name",
+          "lang": "lt",
           "type": "identical_to_en",
-          "en": "Challenge",
-          "translated": "Challenge"
+          "en": "energy ring",
+          "translated": "energy ring"
+        },
+        {
+          "key": "item.3088.name",
+          "lang": "lt",
+          "type": "identical_to_en",
+          "en": "energy ring",
+          "translated": "energy ring"
+        },
+        {
+          "key": "item.36786.name",
+          "lang": "lt",
+          "type": "identical_to_en",
+          "en": "lavafungus ring",
+          "translated": "lavafungus ring"
+        },
+        {
+          "key": "npc.a_fluffy_squirrel.sendtrade_msg_1",
+          "lang": "lt",
+          "type": "identical_to_en",
+          "en": "Chchch. Chh! <you're not sure, but it seems that squirrel wants to trade your valuable acorns for useless stones that it found and considered uneatable>",
+          "translated": "Chchch. Chh! <you're not sure, but it seems that squirrel wants to trade your valuable acorns for useless stones that it found and considered uneatable>"
+        },
+        {
+          "key": "npc.a_fluffy_squirrel.stdmod_1",
+          "lang": "lt",
+          "type": "identical_to_en",
+          "en": "Chh? Chhh?? <though you don't understand squirrelish, that one seems really excited>",
+          "translated": "Chh? Chhh?? <though you don't understand squirrelish, that one seems really excited>"
+        },
+        {
+          "key": "npc.a_weakened_forest_fury.say_4",
+          "lang": "lt",
+          "type": "identical_to_en",
+          "en": "Take care, guardian.",
+          "translated": "Take care, guardian."
+        },
+        {
+          "key": "npc.albinius.say_10",
+          "lang": "lt",
+          "type": "identical_to_en",
+          "en": "As you wish.",
+          "translated": "As you wish."
+        },
+        {
+          "key": "npc.andrew_lyze.say_14",
+          "lang": "lt",
+          "type": "identical_to_en",
+          "en": "Don't waste my time.",
+          "translated": "Don't waste my time."
+        },
+        {
+          "key": "npc.appaloosa.say_5",
+          "lang": "lt",
+          "type": "identical_to_en",
+          "en": "Have a nice trip!",
+          "translated": "Have a nice trip!"
+        },
+        {
+          "key": "npc.atrad.say_3",
+          "lang": "lt",
+          "type": "identical_to_en",
+          "en": "You don't have it...",
+          "translated": "You don't have it..."
+        },
+        {
+          "key": "npc.brodrosch.walkaway_msg_1",
+          "lang": "lt",
+          "type": "identical_to_en",
+          "en": "Good bye then.",
+          "translated": "Good bye then."
+        },
+        {
+          "key": "npc.captain_seahorse.walkaway_msg_1",
+          "lang": "lt",
+          "type": "identical_to_en",
+          "en": "Good bye then.",
+          "translated": "Good bye then."
+        },
+        {
+          "key": "npc.chester_kahs.say_23",
+          "lang": "lt",
+          "type": "identical_to_en",
+          "en": "As you wish.",
+          "translated": "As you wish."
+        },
+        {
+          "key": "npc.chondur.say_18",
+          "lang": "lt",
+          "type": "identical_to_en",
+          "en": "You don't have it...",
+          "translated": "You don't have it..."
+        },
+        {
+          "key": "npc.dedoras.walkaway_msg_1",
+          "lang": "lt",
+          "type": "identical_to_en",
+          "en": "Well, bye then.",
+          "translated": "Well, bye then."
+        },
+        {
+          "key": "npc.duncan.say_12",
+          "lang": "lt",
+          "type": "identical_to_en",
+          "en": "You don't have it...",
+          "translated": "You don't have it..."
+        },
+        {
+          "key": "npc.duncan.say_14",
+          "lang": "lt",
+          "type": "identical_to_en",
+          "en": "You don't have it...",
+          "translated": "You don't have it..."
+        },
+        {
+          "key": "npc.duncan.say_15",
+          "lang": "lt",
+          "type": "identical_to_en",
+          "en": "You don't have it...",
+          "translated": "You don't have it..."
+        },
+        {
+          "key": "npc.duncan.say_17",
+          "lang": "lt",
+          "type": "identical_to_en",
+          "en": "You don't have it...",
+          "translated": "You don't have it..."
+        },
+        {
+          "key": "npc.duncan.say_19",
+          "lang": "lt",
+          "type": "identical_to_en",
+          "en": "You don't have it...",
+          "translated": "You don't have it..."
+        },
+        {
+          "key": "npc.elane.say_11",
+          "lang": "lt",
+          "type": "identical_to_en",
+          "en": "You don't have it...",
+          "translated": "You don't have it..."
+        },
+        {
+          "key": "npc.elane.say_13",
+          "lang": "lt",
+          "type": "identical_to_en",
+          "en": "You don't have it...",
+          "translated": "You don't have it..."
+        },
+        {
+          "key": "npc.elane.say_15",
+          "lang": "lt",
+          "type": "identical_to_en",
+          "en": "You don't have it...",
+          "translated": "You don't have it..."
         }
       ],
       "threshold": 10,
@@ -305,15 +462,15 @@
         "quality_score": 77.5
       },
       "pl": {
-        "last_cycle": "2026-02-14T11:31:03.221296Z",
-        "last_translated": 36,
+        "last_cycle": "2026-02-14T11:46:52.266886Z",
+        "last_translated": 9,
         "total_suspicious": 9115,
         "total_rejected": 851,
         "total_gt_guard_fail": 2048,
-        "cycles": 746,
-        "quality_score": 60.2,
-        "last_audit": "2026-02-14T11:36:08.017265Z",
-        "issues_count": 111295
+        "cycles": 747,
+        "quality_score": 60.1,
+        "last_audit": "2026-02-14T11:51:26.095327Z",
+        "issues_count": 111424
       },
       "az": {
         "last_cycle": "2026-02-14T07:54:23.029928Z",
@@ -327,15 +484,15 @@
         "issues_count": 1417
       },
       "es": {
-        "last_cycle": "2026-02-14T11:36:02.665412Z",
-        "last_translated": 92,
+        "last_cycle": "2026-02-14T11:48:22.438501Z",
+        "last_translated": 2,
         "total_suspicious": 12351,
         "total_rejected": 617,
         "total_gt_guard_fail": 10868,
-        "cycles": 828,
+        "cycles": 830,
         "quality_score": 60.1,
-        "last_audit": "2026-02-14T11:36:08.017265Z",
-        "issues_count": 142803
+        "last_audit": "2026-02-14T11:51:26.095327Z",
+        "issues_count": 143010
       },
       "pt": {
         "last_cycle": "2026-02-14T07:37:33.911849Z",
@@ -360,15 +517,15 @@
         "issues_count": 2470
       },
       "it": {
-        "last_cycle": "2026-02-14T07:40:05.306196Z",
+        "last_cycle": "2026-02-14T11:46:21.185572Z",
         "last_translated": 80,
-        "total_suspicious": 162,
+        "total_suspicious": 169,
         "total_rejected": 0,
         "total_gt_guard_fail": 4,
-        "cycles": 23,
-        "quality_score": 70.0,
-        "last_audit": "2026-02-14T07:43:29.491373Z",
-        "issues_count": 2734
+        "cycles": 24,
+        "quality_score": 74.7,
+        "last_audit": "2026-02-14T11:51:26.095327Z",
+        "issues_count": 2744
       },
       "ru": {
         "last_cycle": "2026-02-14T07:41:26.173164Z",
@@ -646,15 +803,15 @@
         "issues_count": 105
       },
       "lt": {
-        "last_cycle": "2026-02-14T11:43:28.995657Z",
-        "last_translated": 80,
-        "total_suspicious": 85,
+        "last_cycle": "2026-02-14T11:49:56.196306Z",
+        "last_translated": 20,
+        "total_suspicious": 87,
         "total_rejected": 0,
         "total_gt_guard_fail": 0,
-        "cycles": 10,
-        "quality_score": 87.0,
-        "last_audit": "2026-02-14T06:50:33.339457Z",
-        "issues_count": 123
+        "cycles": 12,
+        "quality_score": 77.3,
+        "last_audit": "2026-02-14T11:51:26.095327Z",
+        "issues_count": 217
       },
       "lv": {
         "last_cycle": "2026-02-14T06:49:12.289959Z",
@@ -866,7 +1023,7 @@
         "issues_count": 80
       }
     },
-    "summary": "SLOW_MODE | 18 issue(s) / 100 entries | 2026-02-14T11:36:08.017265Z"
+    "summary": "SLOW_MODE | 40 issue(s) / 100 entries | 2026-02-14T11:51:26.095327Z"
   },
   "languages": [
     {
@@ -874,14 +1031,14 @@
       "language_name": "Hiszpański",
       "scope": "global",
       "total_reference_keys": 53586,
-      "translated_keys": 41693,
-      "english_copy_keys": 2798,
+      "translated_keys": 41773,
+      "english_copy_keys": 2825,
       "missing_keys": 0,
       "missing_files": 0,
-      "completion_pct": 77.81,
+      "completion_pct": 77.96,
       "server_keys": 49731,
-      "server_translated": 39197,
-      "server_pct": 78.82,
+      "server_translated": 39277,
+      "server_pct": 78.98,
       "client_keys": 3855,
       "client_translated": 2496,
       "client_pct": 64.75
@@ -891,13 +1048,13 @@
       "language_name": "Polski",
       "scope": "global",
       "total_reference_keys": 53586,
-      "translated_keys": 39068,
+      "translated_keys": 39071,
       "english_copy_keys": 1642,
       "missing_keys": 0,
       "missing_files": 0,
       "completion_pct": 72.91,
       "server_keys": 49731,
-      "server_translated": 36407,
+      "server_translated": 36410,
       "server_pct": 73.21,
       "client_keys": 3855,
       "client_translated": 2661,
@@ -942,14 +1099,14 @@
       "language_name": "ZH_TW",
       "scope": "global",
       "total_reference_keys": 53586,
-      "translated_keys": 12147,
-      "english_copy_keys": 34992,
+      "translated_keys": 12169,
+      "english_copy_keys": 34952,
       "missing_keys": 2155,
       "missing_files": 0,
-      "completion_pct": 22.67,
+      "completion_pct": 22.71,
       "server_keys": 49731,
-      "server_translated": 12134,
-      "server_pct": 24.4,
+      "server_translated": 12156,
+      "server_pct": 24.44,
       "client_keys": 3855,
       "client_translated": 13,
       "client_pct": 0.34
@@ -1227,6 +1384,23 @@
       "client_pct": 0.1
     },
     {
+      "lang": "it",
+      "language_name": "Włoski",
+      "scope": "global",
+      "total_reference_keys": 53586,
+      "translated_keys": 3779,
+      "english_copy_keys": 2672,
+      "missing_keys": 0,
+      "missing_files": 0,
+      "completion_pct": 7.05,
+      "server_keys": 49731,
+      "server_translated": 3779,
+      "server_pct": 7.6,
+      "client_keys": 3855,
+      "client_translated": 0,
+      "client_pct": 0.0
+    },
+    {
       "lang": "te",
       "language_name": "TE",
       "scope": "global",
@@ -1259,23 +1433,6 @@
       "client_keys": 3855,
       "client_translated": 4,
       "client_pct": 0.1
-    },
-    {
-      "lang": "it",
-      "language_name": "Włoski",
-      "scope": "global",
-      "total_reference_keys": 53586,
-      "translated_keys": 3710,
-      "english_copy_keys": 2666,
-      "missing_keys": 0,
-      "missing_files": 0,
-      "completion_pct": 6.92,
-      "server_keys": 49731,
-      "server_translated": 3710,
-      "server_pct": 7.46,
-      "client_keys": 3855,
-      "client_translated": 0,
-      "client_pct": 0.0
     },
     {
       "lang": "sw",
@@ -1384,14 +1541,14 @@
       "language_name": "LT",
       "scope": "global",
       "total_reference_keys": 53586,
-      "translated_keys": 3281,
-      "english_copy_keys": 2664,
+      "translated_keys": 3319,
+      "english_copy_keys": 2687,
       "missing_keys": 0,
       "missing_files": 0,
-      "completion_pct": 6.12,
+      "completion_pct": 6.19,
       "server_keys": 49731,
-      "server_translated": 3281,
-      "server_pct": 6.6,
+      "server_translated": 3319,
+      "server_pct": 6.67,
       "client_keys": 3855,
       "client_translated": 0,
       "client_pct": 0.0

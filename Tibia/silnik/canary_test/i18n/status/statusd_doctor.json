@@ -1,26 +1,26 @@
 {
-  "timestamp": "2026-02-14T11:47:04.488019Z",
+  "timestamp": "2026-02-14T11:51:11.682927Z",
   "first_run_ts": "2026-02-14T08:41:12.251776Z",
   "overall": "CRITICAL",
   "issues_count": 1,
   "warnings_count": 1,
   "ok_count": 10,
   "issues": [
-    "SUSPICIOUS_HIGH_SPIKE: suspicious_high=2349 rate=20.751% window=6.0h top_lang=es:796 per_lang=[es:796(19.51%/warning),pl:480(63.492%/critical),bg:105(65.625%/critical),el:96(60.0%/critical),lt:78(24.375%/critical)] per_domain=[npc.json:1017(17.064%/warning),server.json:438(75.779%/critical),monsters.json:299(12.189%/warning),scripts.json:140(26.82%/critical),otclient_modules.json:138(117.949%/critical)]"
+    "SUSPICIOUS_HIGH_SPIKE: suspicious_high=2267 rate=20.236% window=6.0h top_lang=es:770 per_lang=[es:770(19.279%/warning),pl:424(61.898%/critical),bg:105(65.625%/critical),el:96(60.0%/critical),lt:78(21.667%/critical)] per_domain=[npc.json:1013(17.149%/warning),server.json:438(75.779%/critical),monsters.json:299(12.189%/warning),scripts.json:118(23.183%/critical),otclient_modules.json:110(98.214%/critical)]"
   ],
   "warnings": [
-    "GUARD_REPORT_STALE: guard_report nie aktualizowany od 894s"
+    "GUARDIAN_DEGRADED: guardian raportuje degraded"
   ],
   "ok": [
-    "heartbeat_fresh (70s, aging/stale/stuck=150/240/420s)",
-    "status_md_fresh (54s)",
-    "dispatch_fresh (19s)",
-    "worker_pid_alive (2074306)",
-    "worker_process_topology_ok (main=2074306 matching=1 extras=0 desc=0 foreign=0 oldest_desc=0s oldest_foreign=0s status=clean)",
-    "guardian_healthy",
-    "queue_freshness_ok (57s, WARN>900s CRIT>1800s)",
+    "heartbeat_fresh (77s, aging/stale/stuck=150/240/420s)",
+    "status_md_fresh (38s)",
+    "guard_report_fresh (175s)",
+    "dispatch_fresh (174s)",
+    "worker_pid_alive (2078629)",
+    "worker_process_topology_ok (main=2078629 matching=1 extras=0 desc=0 foreign=0 oldest_desc=0s oldest_foreign=0s status=clean)",
+    "queue_freshness_ok (305s, WARN>900s CRIT>1800s)",
     "metrics_drift_ok (outside=0 (0.00%) live=53586 registry=53586)",
-    "priority_gate_tracking (pending=[es,pl] active_minutes=106.3 cycle_delta=21 best_quality_drop=0.897%)",
+    "priority_gate_tracking (pending=[es,pl] active_minutes=110.4 cycle_delta=22 best_quality_drop=0.897%)",
     "repair_tuning_active (samples_2h=7)"
   ],
   "metrics_drift": {
@@ -51,8 +51,8 @@
       "es",
       "pl"
     ],
-    "active_minutes": 106.252,
-    "cycle_delta": 21,
+    "active_minutes": 110.374,
+    "cycle_delta": 22,
     "best_quality_drop_pct": 0.897,
     "thresholds": {
       "max_active_minutes": 180.0,
@@ -65,9 +65,9 @@
     "severity": "ok",
     "status": "clean",
     "reason": "single_worker_process",
-    "main_pid": 2074306,
+    "main_pid": 2078629,
     "matched_pids": [
-      2074306
+      2078629
     ],
     "extra_pids": [],
     "descendant_extra_pids": [],

@@ -1,0 +1,13 @@
+lang	json	timestamp	translated	first_key	first_source
+lt	items.json	2026-02-14T11:49:24.821494Z	20	item.11925.name	simple
+lt	npc.json	2026-02-14T11:49:56.197507Z	20	npc.a_fluffy_squirrel.sendtrade_msg_1	tm
+lt	quests.json	2026-02-14T11:51:50.895514Z	20	quests.actions_chests.msg_1	simple
+cs	items.json	2026-02-14T04:53:31.636584Z	80	item.10307.name	google_translate
+cs	npc.json	2026-02-14T06:17:58.708362Z	80	npc.a_frog.walkaway_msg_1	google_translate
+cs	quests.json	-	0	-	-
+el	items.json	2026-02-14T05:02:46.845347Z	80	item.10307.name	google_translate
+el	npc.json	2026-02-14T06:26:35.624671Z	80	npc.a_frog.stdmod_2	google_translate
+el	quests.json	-	0	-	-
+it	items.json	2026-02-14T04:27:04.192155Z	80	item.10299.name	google_translate
+it	npc.json	2026-02-14T04:37:59.576304Z	80	npc.a_dragon_mother.multi_1	google_translate
+it	quests.json	2026-02-14T11:46:21.188261Z	80	quests.cults_of_tibia.tar_fire.msg_2	google_translate

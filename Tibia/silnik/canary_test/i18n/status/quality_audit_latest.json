@@ -1,140 +1,296 @@
 {
-  "timestamp": "2026-02-14T11:36:08.017265Z",
+  "timestamp": "2026-02-14T11:51:26.095327Z",
   "checked_entries": 100,
-  "issues_found": 18,
+  "issues_found": 40,
   "issues_by_type": {
-    "identical_to_en": 18,
-    "identical_to_en_exempt": 3,
-    "suspicious_log_critical": 132,
-    "suspicious_log_low": 68,
+    "identical_to_en": 40,
+    "identical_to_en_exempt": 9,
+    "suspicious_log_low": 134,
+    "suspicious_log_critical": 1,
+    "suspicious_log_high": 57,
+    "suspicious_log_medium": 8,
     "suspicious_rejected_critical": 200
   },
   "issues": [
     {
-      "key": "data.otservbr.global.npc.yasir.L830.924",
-      "lang": "pl",
+      "key": "spell.hideous_fungus_summon.name",
+      "lang": "es",
       "type": "identical_to_en",
-      "en": "Si, jema ze harun. <waves>",
-      "translated": "Si, jema ze harun. <waves>"
+      "en": "Hideous Fungus Summon",
+      "translated": "Hideous Fungus Summon"
     },
     {
-      "key": "spell.morik_the_gladiator_summon.name",
-      "lang": "pl",
+      "key": "spell.death_priest_shargon_curse.name",
+      "lang": "es",
       "type": "identical_to_en",
-      "en": "morik the gladiator summon",
-      "translated": "morik the gladiator summon"
+      "en": "Death Priest Shargon Curse",
+      "translated": "Death Priest Shargon Curse"
     },
     {
-      "key": "spell.hells_core.words",
-      "lang": "pl",
+      "key": "spell.magma_crawler_soulfire.name",
+      "lang": "es",
       "type": "identical_to_en",
-      "en": "exevo gran mas flam",
-      "translated": "exevo gran mas flam"
+      "en": "Magma Crawler Soulfire",
+      "translated": "Magma Crawler Soulfire"
     },
     {
-      "key": "spell.great_fire_wave.words",
-      "lang": "pl",
+      "key": "spell.devovorga_curse.name",
+      "lang": "es",
       "type": "identical_to_en",
-      "en": "exevo gran flam hur",
-      "translated": "exevo gran flam hur"
+      "en": "Devovorga Curse",
+      "translated": "Devovorga Curse"
     },
     {
-      "key": "spell.strong_ice_wave.words",
-      "lang": "pl",
+      "key": "spell.cults_of_tibia_armor_buff.name",
+      "lang": "es",
       "type": "identical_to_en",
-      "en": "exevo gran frigo hur",
-      "translated": "exevo gran frigo hur"
+      "en": "Cults Of Tibia Armor Buff",
+      "translated": "Cults Of Tibia Armor Buff"
     },
     {
-      "key": "spell.executioners_throw.name",
-      "lang": "pl",
+      "key": "spell.white_shade_paralyze.name",
+      "lang": "es",
       "type": "identical_to_en",
-      "en": "Executioner's Throw",
-      "translated": "Executioner's Throw"
+      "en": "White Shade Paralyze",
+      "translated": "White Shade Paralyze"
     },
     {
-      "key": "spell.rage_of_the_skies.words",
-      "lang": "pl",
+      "key": "spell.plant_abomination_wave.name",
+      "lang": "es",
       "type": "identical_to_en",
-      "en": "exevo gran mas vis",
-      "translated": "exevo gran mas vis"
+      "en": "Plant Abomination Wave",
+      "translated": "Plant Abomination Wave"
     },
     {
-      "key": "spell.lightning.name",
-      "lang": "pl",
+      "key": "spell.large_ice_ring.name",
+      "lang": "es",
       "type": "identical_to_en",
-      "en": "Lightning",
-      "translated": "Lightning"
+      "en": "Large Ice Ring",
+      "translated": "Large Ice Ring"
     },
     {
-      "key": "spell.wrath_of_nature.words",
-      "lang": "pl",
+      "key": "spell.teleport_strike.name",
+      "lang": "es",
       "type": "identical_to_en",
-      "en": "exevo gran mas tera",
-      "translated": "exevo gran mas tera"
+      "en": "Teleport Strike",
+      "translated": "Teleport Strike"
     },
     {
-      "key": "spell.great_energy_beam.words",
-      "lang": "pl",
+      "key": "spell.quara_constrictor_freeze.name",
+      "lang": "es",
       "type": "identical_to_en",
-      "en": "exevo gran vis lux",
-      "translated": "exevo gran vis lux"
+      "en": "Quara Constrictor Freeze",
+      "translated": "Quara Constrictor Freeze"
     },
     {
-      "key": "spell.eternal_winter.words",
-      "lang": "pl",
+      "key": "spell.lersatio_summon.name",
+      "lang": "es",
       "type": "identical_to_en",
-      "en": "exevo gran mas frigo",
-      "translated": "exevo gran mas frigo"
+      "en": "Lersatio Summon",
+      "translated": "Lersatio Summon"
     },
     {
-      "key": "spell.mass_healing.words",
-      "lang": "pl",
+      "key": "spell.elder_bonelord_paralyze.name",
+      "lang": "es",
       "type": "identical_to_en",
-      "en": "exura gran mas res",
-      "translated": "exura gran mas res"
+      "en": "elder bonelord paralyze",
+      "translated": "elder bonelord paralyze"
     },
     {
-      "key": "spell.sorcerer_familiar.words",
-      "lang": "pl",
+      "key": "spell.physical_barrage.name",
+      "lang": "es",
       "type": "identical_to_en",
-      "en": "utevo gran res ven",
-      "translated": "utevo gran res ven"
+      "en": "Physical Barrage",
+      "translated": "Physical Barrage"
     },
     {
-      "key": "spell.knight_familiar.words",
-      "lang": "pl",
+      "key": "spell.explosion_wave.name",
+      "lang": "es",
       "type": "identical_to_en",
-      "en": "utevo gran res eq",
-      "translated": "utevo gran res eq"
+      "en": "Explosion Wave",
+      "translated": "Explosion Wave"
     },
     {
-      "key": "spell.paladin_familiar.words",
-      "lang": "pl",
+      "key": "spell.incineron_soulfire.name",
+      "lang": "es",
       "type": "identical_to_en",
-      "en": "utevo gran res sac",
-      "translated": "utevo gran res sac"
+      "en": "Incineron Soulfire",
+      "translated": "Incineron Soulfire"
     },
     {
-      "key": "spell.druid_familiar.words",
-      "lang": "pl",
+      "key": "spell.plaguesmith_wave.name",
+      "lang": "es",
       "type": "identical_to_en",
-      "en": "utevo gran res dru",
-      "translated": "utevo gran res dru"
+      "en": "Plaguesmith Wave",
+      "translated": "Plaguesmith Wave"
     },
     {
-      "key": "spell.charge.name",
-      "lang": "pl",
+      "key": "spell.lich_paralyze.name",
+      "lang": "es",
       "type": "identical_to_en",
-      "en": "Charge",
-      "translated": "Charge"
+      "en": "Lich Paralyze",
+      "translated": "Lich Paralyze"
     },
     {
-      "key": "spell.challenge.name",
-      "lang": "pl",
+      "key": "item.3051.name",
+      "lang": "lt",
       "type": "identical_to_en",
-      "en": "Challenge",
-      "translated": "Challenge"
+      "en": "energy ring",
+      "translated": "energy ring"
+    },
+    {
+      "key": "item.3088.name",
+      "lang": "lt",
+      "type": "identical_to_en",
+      "en": "energy ring",
+      "translated": "energy ring"
+    },
+    {
+      "key": "item.36786.name",
+      "lang": "lt",
+      "type": "identical_to_en",
+      "en": "lavafungus ring",
+      "translated": "lavafungus ring"
+    },
+    {
+      "key": "npc.a_fluffy_squirrel.sendtrade_msg_1",
+      "lang": "lt",
+      "type": "identical_to_en",
+      "en": "Chchch. Chh! <you're not sure, but it seems that squirrel wants to trade your valuable acorns for useless stones that it found and considered uneatable>",
+      "translated": "Chchch. Chh! <you're not sure, but it seems that squirrel wants to trade your valuable acorns for useless stones that it found and considered uneatable>"
+    },
+    {
+      "key": "npc.a_fluffy_squirrel.stdmod_1",
+      "lang": "lt",
+      "type": "identical_to_en",
+      "en": "Chh? Chhh?? <though you don't understand squirrelish, that one seems really excited>",
+      "translated": "Chh? Chhh?? <though you don't understand squirrelish, that one seems really excited>"
+    },
+    {
+      "key": "npc.a_weakened_forest_fury.say_4",
+      "lang": "lt",
+      "type": "identical_to_en",
+      "en": "Take care, guardian.",
+      "translated": "Take care, guardian."
+    },
+    {
+      "key": "npc.albinius.say_10",
+      "lang": "lt",
+      "type": "identical_to_en",
+      "en": "As you wish.",
+      "translated": "As you wish."
+    },
+    {
+      "key": "npc.andrew_lyze.say_14",
+      "lang": "lt",
+      "type": "identical_to_en",
+      "en": "Don't waste my time.",
+      "translated": "Don't waste my time."
+    },
+    {
+      "key": "npc.appaloosa.say_5",
+      "lang": "lt",
+      "type": "identical_to_en",
+      "en": "Have a nice trip!",
+      "translated": "Have a nice trip!"
+    },
+    {
+      "key": "npc.atrad.say_3",
+      "lang": "lt",
+      "type": "identical_to_en",
+      "en": "You don't have it...",
+      "translated": "You don't have it..."
+    },
+    {
+      "key": "npc.brodrosch.walkaway_msg_1",
+      "lang": "lt",
+      "type": "identical_to_en",
+      "en": "Good bye then.",
+      "translated": "Good bye then."
+    },
+    {
+      "key": "npc.captain_seahorse.walkaway_msg_1",
+      "lang": "lt",
+      "type": "identical_to_en",
+      "en": "Good bye then.",
+      "translated": "Good bye then."
+    },
+    {
+      "key": "npc.chester_kahs.say_23",
+      "lang": "lt",
+      "type": "identical_to_en",
+      "en": "As you wish.",
+      "translated": "As you wish."
+    },
+    {
+      "key": "npc.chondur.say_18",
+      "lang": "lt",
+      "type": "identical_to_en",
+      "en": "You don't have it...",
+      "translated": "You don't have it..."
+    },
+    {
+      "key": "npc.dedoras.walkaway_msg_1",
+      "lang": "lt",
+      "type": "identical_to_en",
+      "en": "Well, bye then.",
+      "translated": "Well, bye then."
+    },
+    {
+      "key": "npc.duncan.say_12",
+      "lang": "lt",
+      "type": "identical_to_en",
+      "en": "You don't have it...",
+      "translated": "You don't have it..."
+    },
+    {
+      "key": "npc.duncan.say_14",
+      "lang": "lt",
+      "type": "identical_to_en",
+      "en": "You don't have it...",
+      "translated": "You don't have it..."
+    },
+    {
+      "key": "npc.duncan.say_15",
+      "lang": "lt",
+      "type": "identical_to_en",
+      "en": "You don't have it...",
+      "translated": "You don't have it..."
+    },
+    {
+      "key": "npc.duncan.say_17",
+      "lang": "lt",
+      "type": "identical_to_en",
+      "en": "You don't have it...",
+      "translated": "You don't have it..."
+    },
+    {
+      "key": "npc.duncan.say_19",
+      "lang": "lt",
+      "type": "identical_to_en",
+      "en": "You don't have it...",
+      "translated": "You don't have it..."
+    },
+    {
+      "key": "npc.elane.say_11",
+      "lang": "lt",
+      "type": "identical_to_en",
+      "en": "You don't have it...",
+      "translated": "You don't have it..."
+    },
+    {
+      "key": "npc.elane.say_13",
+      "lang": "lt",
+      "type": "identical_to_en",
+      "en": "You don't have it...",
+      "translated": "You don't have it..."
+    },
+    {
+      "key": "npc.elane.say_15",
+      "lang": "lt",
+      "type": "identical_to_en",
+      "en": "You don't have it...",
+      "translated": "You don't have it..."
     }
   ],
   "threshold": 10,

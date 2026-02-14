@@ -1,5 +1,5 @@
 {
-  "file": "npc.json",
+  "file": "quests.json",
   "lang": "lt",
   "conditions": {
     "no_critical_token_errors": {
@@ -15,8 +15,8 @@
     "coverage_above_95pct": {
       "ok": true,
       "coverage_pct": 100.0,
-      "total_keys": 13769,
-      "real_translations": 13769
+      "total_keys": 610,
+      "real_translations": 610
     },
     "quality_entry_present": {
       "ok": true,
@@ -24,5 +24,5 @@
     }
   },
   "is_done": true,
-  "timestamp": "2026-02-14T11:49:56.206219Z"
+  "timestamp": "2026-02-14T11:51:50.896553Z"
 }

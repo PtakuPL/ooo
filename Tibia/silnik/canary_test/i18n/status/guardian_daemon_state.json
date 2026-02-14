@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-02-14T11:47:28.385486Z",
+  "timestamp": "2026-02-14T11:52:00.376413Z",
   "state": "blocked",
   "source": "manual",
-  "pid": 2075374,
+  "pid": 2081522,
   "reason": "manual_rate_limit",
   "owner_pid": 0,
   "owner_source": "",

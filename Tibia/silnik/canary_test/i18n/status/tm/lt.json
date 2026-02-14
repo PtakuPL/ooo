@@ -5326,5 +5326,301 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-14T11:43:28.897273Z"
+  },
+  "item.11925.name": {
+    "src_hash": "88336b5bb2a1cc21bac7cf33fd451270",
+    "text": "smėlio",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:49:20.440513Z"
+  },
+  "item.11942.name": {
+    "src_hash": "88336b5bb2a1cc21bac7cf33fd451270",
+    "text": "smėlio",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:49:20.440845Z"
+  },
+  "item.12516.name": {
+    "src_hash": "88336b5bb2a1cc21bac7cf33fd451270",
+    "text": "smėlio",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:49:20.443510Z"
+  },
+  "item.19099.name": {
+    "src_hash": "88336b5bb2a1cc21bac7cf33fd451270",
+    "text": "smėlio",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:49:20.465287Z"
+  },
+  "item.198.desc": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Tuščia.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T11:49:20.468422Z"
+  },
+  "item.21799.desc": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Tuščia.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T11:49:20.478339Z"
+  },
+  "item.231.name": {
+    "src_hash": "88336b5bb2a1cc21bac7cf33fd451270",
+    "text": "smėlio",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:49:20.485857Z"
+  },
+  "item.24437.name": {
+    "src_hash": "88336b5bb2a1cc21bac7cf33fd451270",
+    "text": "smėlio",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:49:20.491285Z"
+  },
+  "item.28654.name": {
+    "src_hash": "88336b5bb2a1cc21bac7cf33fd451270",
+    "text": "smėlio",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:49:20.507626Z"
+  },
+  "item.5730.name": {
+    "src_hash": "88336b5bb2a1cc21bac7cf33fd451270",
+    "text": "smėlio",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:49:20.592059Z"
+  },
+  "item.614.name": {
+    "src_hash": "88336b5bb2a1cc21bac7cf33fd451270",
+    "text": "smėlio",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:49:20.595882Z"
+  },
+  "item.7738.name": {
+    "src_hash": "88336b5bb2a1cc21bac7cf33fd451270",
+    "text": "smėlio",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:49:20.606063Z"
+  },
+  "item.8770.name": {
+    "src_hash": "88336b5bb2a1cc21bac7cf33fd451270",
+    "text": "smėlio",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:49:20.612219Z"
+  },
+  "item.9174.name": {
+    "src_hash": "88336b5bb2a1cc21bac7cf33fd451270",
+    "text": "smėlio",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:49:20.615883Z"
+  },
+  "item.10009.desc": {
+    "src_hash": "d6e8d0836a63a26392d689c7e7f1cd35",
+    "text": "Idealiai tinka karūnoms poliruoti",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:49:24.771989Z"
+  },
+  "item.10011.desc": {
+    "src_hash": "0c89d4a7562be561508dcd41a4be52fb",
+    "text": "Tiek nuotykių ieškotojų, tiek tyrinėtojų vertinamas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:49:24.772574Z"
+  },
+  "item.10025.desc": {
+    "src_hash": "3c12c5e5ba3c1bb82f1566b16ee17538",
+    "text": "Neįkainojama visiems magijos tyrimams",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:49:24.773012Z"
+  },
+  "quests.actions_chests.msg_1": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Tuščia.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T11:51:36.845817Z"
+  },
+  "quests.actions_coral.msg_1": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Sorry.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:51:36.846140Z"
+  },
+  "quests.actions_crystal.msg_1": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Sorry.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:51:36.846535Z"
+  },
+  "quests.bigfoot_burden.chest_empty": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "You found.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:51:36.847674Z"
+  },
+  "quests.bigfoot_burden.mouthpiece_empty": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Tuščia.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T11:51:36.848231Z"
+  },
+  "quests.movements_arena_enter.say_1": {
+    "src_hash": "3bb3470755c465f042163233b672a4fb",
+    "text": "Fight!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:51:36.852229Z"
+  },
+  "quests.movements_arena_pit.say_1": {
+    "src_hash": "477fb3950c49773dfcb06d6a48db93db",
+    "text": "Fight!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:51:36.852659Z"
+  },
+  "quests.threatened_dreams.it_is_empty": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Tuščia.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T11:51:36.857323Z"
+  },
+  "quests.2_ambassadors_treason.msg_1": {
+    "src_hash": "8464bf58b6d5fa7bbe7ed698b810582e",
+    "text": "Ambasadoriaus namuose nieko nerandate. Jei jis iš tikrųjų yra išdavikas, jis atsikratė jokių įrodymų, galinčių jį apkaltinti.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:51:42.751126Z"
+  },
+  "quests.2_ambassadors_treason.msg_2": {
+    "src_hash": "dd483e9a16530ce89de99a1dc0f9f197",
+    "text": "Jūs tai jau ištyrėte.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:51:42.751520Z"
+  },
+  "quests.2_ambassadors_treason.msg_3": {
+    "src_hash": "92080f0ef8fde073cd9d9b26347d601b",
+    "text": "Jūs atidžiai išnagrinėjate ritinius. Tai yra Rathleton įsakymai ambasadoriui. Čia nėra išdavystės ženklų.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:51:42.752257Z"
+  },
+  "quests.2_ambassadors_treason.msg_4": {
+    "src_hash": "dd483e9a16530ce89de99a1dc0f9f197",
+    "text": "Jūs tai jau ištyrėte.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:51:42.752644Z"
+  },
+  "quests.2_ambassadors_treason.msg_5": {
+    "src_hash": "f0502f434837f12f681eb194dd73e2d4",
+    "text": "Popieriaus likučiai guli išmėtyti ant grindų. Prireiks šiek tiek laiko, kol juos vėl sujungsite. Bet tai tik blogai parašytas eilėraštis.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:51:42.753297Z"
+  },
+  "quests.2_ambassadors_treason.msg_6": {
+    "src_hash": "dd483e9a16530ce89de99a1dc0f9f197",
+    "text": "Jūs tai jau ištyrėte.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:51:47.617700Z"
+  },
+  "quests.2_ambassadors_treason.msg_7": {
+    "src_hash": "14dfffed3e8aaff6aa4f4509ee470001",
+    "text": "Neseniai čia buvo sudeginti dokumentai. Tik vieno ritinio dalis vis dar guli prieš kaminą, bet ji per daug suodinta, kad būtų galima perskaityti.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:51:47.618464Z"
+  },
+  "quests.6_mind_travel.msg_1": {
+    "src_hash": "98da952f701d6358d74f1d9a180990fa",
+    "text": "Jūs buvote perkeltas į kairę smegenų pusę",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:51:47.618947Z"
+  },
+  "quests.6_mind_travel.msg_2": {
+    "src_hash": "1e57dd425d49fa37eefdeb9faa01a4f2",
+    "text": "Jūs buvote perkeltas į dešinę smegenų pusę",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:51:47.619351Z"
+  },
+  "quests.6_mind_travel.msg_3": {
+    "src_hash": "39c4cd386bc515db3ca13ad71ea9a439",
+    "text": "Jaučiatės drebulys ir svaigsta galva, pasaulis aplink jus tamsėja. Tada tavo regėjimas vėl praskaidrėja – ir tu esi kažkur kitur.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:51:47.620022Z"
+  },
+  "quests.8_blessing_the_statues.msg_1": {
+    "src_hash": "4a64e6aeefc9b8c9f1fd15709a257e2d",
+    "text": "Jūs jau palaiminote šią statulą.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:51:50.874578Z"
+  },
+  "quests.8_blessing_the_statues.msg_2": {
+    "src_hash": "414cb5c464ec2b74b4431b6931757db9",
+    "text": "Jūs laiminate statulą.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:51:50.875391Z"
   }
 }

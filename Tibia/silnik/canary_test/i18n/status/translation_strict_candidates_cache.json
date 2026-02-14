@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-14T11:45:53.787537Z",
+  "timestamp": "2026-02-14T11:48:17.478957Z",
   "built_cycle": 1,
   "cache_ttl_cycles": 5,
   "targets": [
@@ -48,7 +48,7 @@
   ],
   "missing_lang_files_count": 0,
   "missing_lang_file_examples": [],
-  "missing_keys_total": 2083,
+  "missing_keys_total": 0,
   "candidates": [
     {
       "lang": "pl",
@@ -78,9 +78,9 @@
       "lang": "pl",
       "json_file": "cpp.json",
       "pending_total": 51,
-      "todo": 49,
-      "simple_todo": 27,
-      "missing_in_lang": 2
+      "todo": 51,
+      "simple_todo": 28,
+      "missing_in_lang": 0
     },
     {
       "lang": "pl",
@@ -102,9 +102,9 @@
       "lang": "pl",
       "json_file": "items.json",
       "pending_total": 8825,
-      "todo": 8662,
-      "simple_todo": 8623,
-      "missing_in_lang": 163
+      "todo": 8825,
+      "simple_todo": 8786,
+      "missing_in_lang": 0
     },
     {
       "lang": "pl",
@@ -157,17 +157,17 @@
     {
       "lang": "pl",
       "json_file": "questlog.json",
-      "pending_total": 1918,
-      "todo": 0,
-      "simple_todo": 0,
-      "missing_in_lang": 1918
+      "pending_total": 1909,
+      "todo": 1909,
+      "simple_todo": 669,
+      "missing_in_lang": 0
     },
     {
       "lang": "pl",
       "json_file": "quests.json",
-      "pending_total": 10,
-      "todo": 10,
-      "simple_todo": 6,
+      "pending_total": 7,
+      "todo": 7,
+      "simple_todo": 4,
       "missing_in_lang": 0
     },
     {
@@ -373,9 +373,9 @@
     {
       "lang": "es",
       "json_file": "spells.json",
-      "pending_total": 831,
-      "todo": 831,
-      "simple_todo": 831,
+      "pending_total": 751,
+      "todo": 751,
+      "simple_todo": 751,
       "missing_in_lang": 0
     },
     {

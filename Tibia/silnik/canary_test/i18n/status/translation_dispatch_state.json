@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-02-14T11:46:45.579695Z",
-  "cycle_counter": 520,
-  "last_target_key": "pl:quests.json",
-  "last_pending_total": 10,
+  "timestamp": "2026-02-14T11:48:17.485722Z",
+  "cycle_counter": 521,
+  "last_target_key": "es:quests.json",
+  "last_pending_total": 2,
   "last_tier": 1,
   "last_cat_priority": 5,
   "candidates_count": 43,
@@ -32,7 +32,7 @@
     "w2": 3,
     "w3": 1
   },
-  "cache_hit": true,
+  "cache_hit": false,
   "cache_ttl_cycles": 5,
   "cache_cycle": 1,
   "no_progress_counts": {

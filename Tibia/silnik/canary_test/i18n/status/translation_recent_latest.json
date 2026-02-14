@@ -1,61 +1,127 @@
 {
-  "timestamp": "2026-02-14T11:46:52.269421Z",
-  "language": "pl",
+  "timestamp": "2026-02-14T11:51:50.895514Z",
+  "language": "lt",
   "json_file": "quests.json",
-  "translated": 9,
+  "translated": 20,
   "entries": [
+    {
+      "key": "quests.actions_chests.msg_1",
+      "en": "It is empty.",
+      "translated": "Tuščia.",
+      "source": "simple"
+    },
     {
       "key": "quests.actions_coral.msg_1",
       "en": "Sorry.",
-      "translated": "Przepraszam.",
+      "translated": "Sorry.",
       "source": "simple"
     },
     {
       "key": "quests.actions_crystal.msg_1",
       "en": "Sorry.",
-      "translated": "Przepraszam.",
+      "translated": "Sorry.",
       "source": "simple"
     },
     {
-      "key": "quests.actions_using_crystals.say_2",
-      "en": "BOOOOM!",
-      "translated": "BOOOOM!",
-      "source": "tm"
+      "key": "quests.bigfoot_burden.chest_empty",
+      "en": "The chest is empty.",
+      "translated": "You found.",
+      "source": "simple"
     },
     {
-      "key": "quests.bigfoot_burden.gasp",
-      "en": "<gasp>",
-      "translated": "<gasp>",
-      "source": "tm"
+      "key": "quests.bigfoot_burden.mouthpiece_empty",
+      "en": "It is empty.",
+      "translated": "Tuščia.",
+      "source": "simple"
     },
     {
-      "key": "quests.mission09_rock_troll.say_1",
-      "en": "<crack>",
-      "translated": "<crack>",
-      "source": "tm"
+      "key": "quests.movements_arena_enter.say_1",
+      "en": "FIGHT!",
+      "translated": "Fight!",
+      "source": "simple"
     },
     {
-      "key": "quests.mission12_into_fortress.say_1",
-      "en": "<click>",
-      "translated": "<click>",
-      "source": "tm"
+      "key": "quests.movements_arena_pit.say_1",
+      "en": "Fight!",
+      "translated": "Fight!",
+      "source": "simple"
     },
     {
-      "key": "quests.bigfoot_burden.crystals_charging",
-      "en": "The crystals are charging!",
-      "translated": "Kryształy się ładują!",
+      "key": "quests.threatened_dreams.it_is_empty",
+      "en": "It is empty.",
+      "translated": "Tuščia.",
+      "source": "simple"
+    },
+    {
+      "key": "quests.2_ambassadors_treason.msg_1",
+      "en": "You find nothing in the Ambassador's house. If he's in fact a traitor he got rid of any evidence that could incriminate him.",
+      "translated": "Ambasadoriaus namuose nieko nerandate. Jei jis iš tikrųjų yra išdavikas, jis atsikratė jokių įrodymų, galinčių jį apkaltinti.",
       "source": "google_translate"
     },
     {
-      "key": "quests.demon_oak.sound_3",
-      "en": "RISE, MINIONS, RISE FROM THE DEAD!!!!",
-      "translated": "Powstańcie, sługi, powstańcie z martwych!!!!",
+      "key": "quests.2_ambassadors_treason.msg_2",
+      "en": "You already investigated this.",
+      "translated": "Jūs tai jau ištyrėte.",
       "source": "google_translate"
     },
     {
-      "key": "quests.demon_oak.sound_6",
-      "en": "GET THERE WHERE I CAN REACH YOU!!!",
-      "translated": "DOJDŹ TAM, GDZIE MOGĘ DO CIĘ DOJŚĆ!!!",
+      "key": "quests.2_ambassadors_treason.msg_3",
+      "en": "You examine the scrolls carefully. Those are orders from Rathleton for the Ambassador. No sign of treason here.",
+      "translated": "Jūs atidžiai išnagrinėjate ritinius. Tai yra Rathleton įsakymai ambasadoriui. Čia nėra išdavystės ženklų.",
+      "source": "google_translate"
+    },
+    {
+      "key": "quests.2_ambassadors_treason.msg_4",
+      "en": "You already investigated this.",
+      "translated": "Jūs tai jau ištyrėte.",
+      "source": "google_translate"
+    },
+    {
+      "key": "quests.2_ambassadors_treason.msg_5",
+      "en": "Paper scraps lie scattered on the floor. It takes some time to put them back together. But it's only a badly written poem.",
+      "translated": "Popieriaus likučiai guli išmėtyti ant grindų. Prireiks šiek tiek laiko, kol juos vėl sujungsite. Bet tai tik blogai parašytas eilėraštis.",
+      "source": "google_translate"
+    },
+    {
+      "key": "quests.2_ambassadors_treason.msg_6",
+      "en": "You already investigated this.",
+      "translated": "Jūs tai jau ištyrėte.",
+      "source": "google_translate"
+    },
+    {
+      "key": "quests.2_ambassadors_treason.msg_7",
+      "en": "Documents were burnt here recently. Only the part of one scroll still lies in front of the chimney but it's too sooted to read.",
+      "translated": "Neseniai čia buvo sudeginti dokumentai. Tik vieno ritinio dalis vis dar guli prieš kaminą, bet ji per daug suodinta, kad būtų galima perskaityti.",
+      "source": "google_translate"
+    },
+    {
+      "key": "quests.6_mind_travel.msg_1",
+      "en": "You were moved to the left brain side",
+      "translated": "Jūs buvote perkeltas į kairę smegenų pusę",
+      "source": "google_translate"
+    },
+    {
+      "key": "quests.6_mind_travel.msg_2",
+      "en": "You were moved to the right brain side",
+      "translated": "Jūs buvote perkeltas į dešinę smegenų pusę",
+      "source": "google_translate"
+    },
+    {
+      "key": "quests.6_mind_travel.msg_3",
+      "en": "You feel shaky and dizzy, the world turns dark around you. Then your sight clears again - and you are somewhere else.",
+      "translated": "Jaučiatės drebulys ir svaigsta galva, pasaulis aplink jus tamsėja. Tada tavo regėjimas vėl praskaidrėja – ir tu esi kažkur kitur.",
+      "source": "google_translate"
+    },
+    {
+      "key": "quests.8_blessing_the_statues.msg_1",
+      "en": "You already blessed this statue.",
+      "translated": "Jūs jau palaiminote šią statulą.",
+      "source": "google_translate"
+    },
+    {
+      "key": "quests.8_blessing_the_statues.msg_2",
+      "en": "You bless the statue.",
+      "translated": "Jūs laiminate statulą.",
       "source": "google_translate"
     }
   ]

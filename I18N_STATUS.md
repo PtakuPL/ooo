@@ -5,23 +5,23 @@
 ## 🧭 META
 
 > **[META]** 🟢 ACTIVE  
-> Świeżość: teraz | Źródło: `update_github_status()` | Ostatnia aktualizacja: 2026-02-14 07:22:41
+> Świeżość: teraz | Źródło: `update_github_status()` | Ostatnia aktualizacja: 2026-02-14 07:24:58
 
-> **Aktualizacja:** 2026-02-14 07:22:41 UTC  
+> **Aktualizacja:** 2026-02-14 07:24:58 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 53586  
-> **LIVE:** Cykl #1 | Status: 🟢 RUNNING | Faza: AUTO_TRANSLATE | Etap: auto_done | Kategoria: pl | Plik: startup.json | ETA: 0 | Heartbeat: 2026-02-14T07:22:38Z  
-> **Strict hourly (JSONL-only):** okno=1.0h | cycles=41 | pending_skip=0.0% | guard_fail=7.5% | throughput=2635.0/h  
+> **LIVE:** Cykl #1 | Status: 🟢 RUNNING | Faza: AUTO_TRANSLATE | Etap: auto_start | Kategoria: pt | Plik: quests.json | ETA: 0 | Heartbeat: 2026-02-14T07:24:18Z  
+> **Strict hourly (JSONL-only):** okno=1.0h | cycles=38 | pending_skip=0.0% | guard_fail=8.0% | throughput=2665.3/h  
 > **Net effective translated:** 63,264
 
 ### 🧩 Status sekcji (P0.1)
 | Sekcja | Stan | Świeżość | Powód | Źródło | Ostatnia aktualizacja |
 |--------|------|----------|-------|--------|-----------------------|
-| META | 🟢 ACTIVE | teraz | - | `update_github_status()` | 2026-02-14 07:22:41 |
-| LIVE | 🟢 ACTIVE | 4s temu | - | `activity.json / worker_state.json` | 2026-02-14T07:22:38Z |
-| MIGRATION | 🔒 INACTIVE | 12h temu | worker w trybie AUTO_TRANSLATE | `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | 2026-02-14 07:22:41 |
-| TRANSLATION | 🟢 ACTIVE | 4s temu | - | `translation_guard_latest.json / translation_recent_latest.json` | 2026-02-14T07:22:38.371524Z |
-| QUALITY | 🔒 INACTIVE | 2min temu | worker w trybie AUTO_TRANSLATE | `quality_audit_latest.json` | 2026-02-14T07:20:29.263958Z |
-| HISTORY | 🟢 ACTIVE | teraz | - | `daily/*.json / ops.jsonl` | 2026-02-14 07:22:41 |
+| META | 🟢 ACTIVE | teraz | - | `update_github_status()` | 2026-02-14 07:24:58 |
+| LIVE | 🟢 ACTIVE | 41s temu | - | `activity.json / worker_state.json` | 2026-02-14T07:24:18Z |
+| MIGRATION | 🔒 INACTIVE | 12h temu | worker w trybie AUTO_TRANSLATE | `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | 2026-02-14 07:24:58 |
+| TRANSLATION | 🟢 ACTIVE | 2min temu | - | `translation_guard_latest.json / translation_recent_latest.json` | 2026-02-14T07:22:38.371524Z |
+| QUALITY | 🔒 INACTIVE | 4min temu | worker w trybie AUTO_TRANSLATE | `quality_audit_latest.json` | 2026-02-14T07:20:29.263958Z |
+| HISTORY | 🟢 ACTIVE | teraz | - | `daily/*.json / ops.jsonl` | 2026-02-14 07:24:58 |
 
 > Artefakt machine-readable: `i18n/status/status_sections_latest.json`
 
@@ -30,14 +30,14 @@
 ## 🔴 LIVE
 
 > **[LIVE]** 🟢 ACTIVE  
-> Świeżość: 4s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T07:22:38Z
+> Świeżość: 41s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T07:24:18Z
 
 - **Faza:** `AUTO_TRANSLATE`
-- **Etap:** `auto_done`
-- **Kategoria:** `pl`
-- **Plik:** `startup.json`
+- **Etap:** `auto_start`
+- **Kategoria:** `pt`
+- **Plik:** `quests.json`
 - **Status:** 🟢 RUNNING
-- **Heartbeat:** `2026-02-14T07:22:38Z`
+- **Heartbeat:** `2026-02-14T07:24:18Z`
 
 ---
 
@@ -92,15 +92,17 @@
 ## 🛠️ MIGRATION
 
 > **[MIGRATION]** 🔒 INACTIVE (worker w trybie AUTO_TRANSLATE)  
-> Świeżość: 12h temu | Źródło: `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | Ostatnia aktualizacja: 2026-02-14 07:22:41
+> Świeżość: 12h temu | Źródło: `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | Ostatnia aktualizacja: 2026-02-14 07:24:58
 
 ### 📁 Pliki Projektu (pełny skan)
 | Metryka | Wartość | Procent | Info |
 |---------|---------|---------|------|
 | 📂 **Wszystkie pliki** | **20,268** | 100% | cały projekt |
 | 📜 Do skanowania (kod) | **9,397** | 46.4% | pliki z kodem/tekstami |
-| 🔍 **Przeskanowane** | **6,443** | **68.6%** | historia workera |
-| ⏳ Nie przeskanowane | **2,954** | 31.4% | czekają na skan |
+| 🔍 **Przeskanowane (historia)** | **6,443** | **68.6%** | `i18n_processed_files.txt` |
+| 🧭 Przeskanowane (LIVE) | **2,299** | **24.5%** | `i18n_file_status.json` |
+| ⏳ Nie przeskanowane (historia) | **2,954** | 31.4% | wg historii workera |
+| ⏳ Nie przeskanowane (LIVE) | **7,098** | 75.5% | wg rejestru LIVE |
 
 ### 📊 Podział plików do skanowania
 | Typ | Ilość | Info |
@@ -137,7 +139,7 @@
 ## 🌍 TRANSLATION
 
 > **[TRANSLATION]** 🟢 ACTIVE  
-> Świeżość: 4s temu | Źródło: `translation_guard_latest.json / translation_recent_latest.json` | Ostatnia aktualizacja: 2026-02-14T07:22:38.371524Z
+> Świeżość: 2min temu | Źródło: `translation_guard_latest.json / translation_recent_latest.json` | Ostatnia aktualizacja: 2026-02-14T07:22:38.371524Z
 
 | Metryka | Wartość | Procent | Info |
 |---------|---------|---------|------|
@@ -173,17 +175,29 @@
 ### 🧭 Aktywny folder tłumaczeń
 - **Folder:** PL - Polski - Klient
 - **Plik JSON:** client.json
-- **Ostatnie klucze (10-20):** 8
+- **Ostatnie klucze (10-20):** 20
 
 ### 📝 Ostatnie 10-20 przetłumaczonych kluczy
-- /startup/tables/load.lua → /startup/tables/load.lua (startup.startup.msg1)
-- /startup/others/load.lua → /startup/others/load.lua (startup.startup.msg2)
-- [loadLuaMapAction] - Wrong item id {} found → [loadLuaMapAction] — Znaleziono błędny identyfikator elementu {} (startup.functions.msg4)
-- /startup/tables/chest.lua → /startup/tables/chest.lua (startup.load.msg1)
-- /startup/tables/corpse.lua → /startup/tables/corpse.lua (startup.load.msg2)
-- /startup/tables/create_item.lua → /startup/tables/create_item.lua (startup.load.msg3)
-- /startup/tables/door_key.lua → /startup/tables/door_key.lua (startup.load.msg4)
-- /startup/tables/door_level.lua → /startup/tables/door_level.lua (startup.load.msg5)
+- Grimvale drowns in werecreatures as the full moon reaches its apex and ancient e → Grimvale ertrinkt in Werwesen, während der Vollmond seinen Höhepunkt erreicht un (quests.globalevents_grimvale_feroxa.broadcast_1)
+- This grave is already defiled and the lich knight has left! There is nothing you → Dieses Grab ist bereits geschändet und der Lich-Ritter ist gegangen! Hier kann m (quests.grave_danger.defiled)
+- This grave now been sanctified and is safe! → Dieses Grab wurde nun geweiht und ist sicher! (quests.grave_danger.sanctified)
+- You need to wait %s before trying to challenge %s again! → Sie müssen %s warten, bevor Sie erneut versuchen, %s herauszufordern! (quests.grave_danger.wait_challenge)
+- The blood in the vial is of a deep, ruby red. → Das Blut im Fläschchen ist von tiefem Rubinrot. (quests.gravedigger.blood_msg_1)
+- The blood in the vial is of a strange colour, as if tainted. → Das Blut in der Phiole hat eine seltsame Farbe, als wäre es verunreinigt. (quests.gravedigger.blood_msg_2)
+- Shadows rise and engulf the candle. The statue flickers in an unearthly light. → Schatten steigen auf und verschlingen die Kerze. Die Statue flackert in einem un (quests.gravedigger.monks_msg_1)
+- The shadows of the statue swallow the candle hungrily. → Die Schatten der Statue verschlucken gierig die Kerze. (quests.gravedigger.monks_msg_2)
+- A shade emerges and snatches the candle from your hands. → Ein Schatten taucht auf und reißt dir die Kerze aus den Händen. (quests.gravedigger.monks_msg_3)
+- Entering Ushuriel's ward. → Betreten von Ushuriels Mündel. (quests.inquisition.teleport_say_1)
+- Entering the Blood Halls. → Betreten der Bluthallen. (quests.inquisition.teleport_say_10)
+- Entering the Foundry. → Betreten der Gießerei. (quests.inquisition.teleport_say_11)
+- Entering Madareth's ward. → Betreten von Madareths Mündel. (quests.inquisition.teleport_say_12)
+- Entering the Vats. → Betreten der Bottiche. (quests.inquisition.teleport_say_13)
+- Escaping back to the Retreat. → Flucht zurück zum Retreat. (quests.inquisition.teleport_say_14)
+- Entering the Vats. → Betreten der Bottiche. (quests.inquisition.teleport_say_15)
+- Entering the Battlefield. → Betreten des Schlachtfeldes. (quests.inquisition.teleport_say_16)
+- Entering the Vats. → Betreten der Bottiche. (quests.inquisition.teleport_say_17)
+- Entering the Demon Forge. → Betreten der Dämonenschmiede. (quests.inquisition.teleport_say_18)
+- Entering the Arcanum. → Betreten des Arkanums. (quests.inquisition.teleport_say_19)
 
 ### 🚫 Raporty "nie mogę przetłumaczyć"
 - Guard reports: **1980**  
@@ -191,12 +205,12 @@
 - Widoczne raporty 'nie mogę tłumaczyć': **1930**
 
 ### 🌐 Globalne info wszystkich języków
-- **Global completion:** **21.02%** (585,753/2,786,472)
-- **EN-copy łącznie:** **1,333,634**
+- **Global completion:** **21.02%** (585,823/2,786,472)
+- **EN-copy łącznie:** **1,333,564**
 - **Braki kluczy łącznie:** **110,060**
 - **Brakujące pliki językowe:** **0**
-- **Cache STATUSPY (per-lang):** **mixed** | hit **50**, miss **2**, hit-rate **96.2%**
-- **Cache STATUSPY (per-file):** hit **1972**, miss **4**, hit-rate **99.8%**
+- **Cache STATUSPY (per-lang):** **mixed** | hit **51**, miss **1**, hit-rate **98.1%**
+- **Cache STATUSPY (per-file):** hit **1975**, miss **1**, hit-rate **99.9%**
 - **Profiler cyklu (ostatni):** -
 - **Osobny raport:** `i18n/status/translation_global_overview.json`
 
@@ -224,13 +238,13 @@
 ### ⏱️ Strict Hourly Window (JSONL-only)
 | Metryka | Wartość |
 |---------|---------|
-| Okno | **1.0h** (2026-02-14T06:22:41.902477Z → 2026-02-14T07:22:41.902477Z) |
-| Cykle | **41** (AUTO=41, MIGRATION=0) |
+| Okno | **1.0h** (2026-02-14T06:24:58.900038Z → 2026-02-14T07:24:58.900038Z) |
+| Cykle | **38** (AUTO=38, MIGRATION=0) |
 | Pending skip | **0** (all=0.0%, migration=0.0%) |
-| Guard fail rate | **7.5%** |
+| Guard fail rate | **8.0%** |
 | No progress rate | **0.0%** |
-| Throughput | **2635.0 kluczy/h** |
-| Suspicious | **808** |
+| Throughput | **2665.3 kluczy/h** |
+| Suspicious | **752** |
 | Top guard_fail targets | zh_tw/npc.json (gf=53), ja/npc.json (gf=50), zh/npc.json (gf=29), es/otclient_modules.json (gf=19), pl/client.json (gf=10) |
 | Źródła | `i18n/status/worker_cycle_perf.jsonl`, `i18n/status/translation_guard_report.jsonl`, `i18n/status/suspicious_log.jsonl` |
 | Plik | `i18n/status/strict_hourly_window_latest.json` |
@@ -238,7 +252,7 @@
 ## 🔬 QUALITY
 
 > **[QUALITY]** 🔒 INACTIVE (worker w trybie AUTO_TRANSLATE)  
-> Świeżość: 2min temu | Źródło: `quality_audit_latest.json` | Ostatnia aktualizacja: 2026-02-14T07:20:29.263958Z
+> Świeżość: 4min temu | Źródło: `quality_audit_latest.json` | Ostatnia aktualizacja: 2026-02-14T07:20:29.263958Z
 
 - **Ostatni audyt:** SLOW_MODE | 13 issue(s) / 100 entries | 2026-02-14T07:20:29.263958Z
 - **Top 5 typów problemów:** suspicious_rejected_critical=200, suspicious_log_high=102, suspicious_log_medium=46, suspicious_log_low=29, suspicious_log_critical=23
@@ -282,7 +296,7 @@
 ## ✅ CHECKLIST - Plan Pracy
 
 > **Aktualna faza:** AUTO_TRANSLATE  
-> **Aktualna kategoria:** pl
+> **Aktualna kategoria:** pt
 
 
 ### 🔄 Faza 1: 🎮 Canary Server
@@ -350,33 +364,33 @@
 ## 🔴 LIVE: Szczegóły wykonania
 
 > **[LIVE]** 🟢 ACTIVE  
-> Świeżość: 4s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T07:22:38Z
+> Świeżość: 41s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T07:24:18Z
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │ 🔴 LIVE: Worker v2.0                          Cykl #     1 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
-│ Tryb:      🤖 AUTO_TRANSLATE (auto_done)             │
-│ Kategoria: 📁 PL                                     │
+│ Tryb:      🤖 AUTO_TRANSLATE (auto_start)            │
+│ Kategoria: 📁 PT                                     │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status: running                                               │
-│ Plik: startup.json                                            │
-│ Postęp: 8/8 keys                                              │
-│ …d=8 guard_fail=1 strict_missing_key=0 strict_skipped_done=15 │
+│ Plik: quests.json                                             │
+│ Postęp: 0/0 keys                                              │
+│ Info: auto translate                                          │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2026-02-14T07:22:38Z           │
+│ ❤️ Heartbeat: 2026-02-14T07:24:18Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 🧾 Ostatnie akcje (dla czytelności)
 
+- 2026-02-14 07:24:18 | AUTO_TRANSLATE:auto_start | pt | ok | quests.json
+- 2026-02-14 07:23:25 | AUTO_TRANSLATE:parallel_start | de | ok | quests.json
 - 2026-02-14 07:22:38 | AUTO_TRANSLATE:auto_done | pl | ok | startup.json
 - 2026-02-14 07:22:34 | AUTO_TRANSLATE:auto_start | pl | ok | startup.json
 - 2026-02-14 07:21:25 | AUTO_TRANSLATE:auto_done | pl | ok | php.json
 - 2026-02-14 07:21:22 | AUTO_TRANSLATE:auto_start | pl | ok | php.json
-- 2026-02-14 07:21:19 | AUTO_TRANSLATE:auto_start | es | ok | client.json
-- 2026-02-14 07:17:41 | AUTO_TRANSLATE:parallel_start | es | ok | otclient_modules.json
 
 ---
 
@@ -390,7 +404,7 @@
 | KPI | Wartość | Target | Status |
 |-----|---------|--------|--------|
 | Net effective translated | **63,264** | — | 📊 |
-| Adaptive batch | batch=50, gf_rate=17.21%, reason=stable_fail_rate=17.2% | gf <5% → increase | 📊 |
+| Adaptive batch | batch=50, gf_rate=19.51%, reason=stable_fail_rate=19.5% | gf <5% → increase | 📊 |
 | Throughput (last window) | 1,272 keys / 41 entries | >50/h | 📊 |
 
 ---
@@ -398,7 +412,7 @@
 ## 📜 HISTORY
 
 > **[HISTORY]** 🟢 ACTIVE  
-> Świeżość: teraz | Źródło: `daily/*.json / ops.jsonl` | Ostatnia aktualizacja: 2026-02-14 07:22:41
+> Świeżość: teraz | Źródło: `daily/*.json / ops.jsonl` | Ostatnia aktualizacja: 2026-02-14 07:24:58
 
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+8, skipped+0) — lang=pl file=startup.json strict_skipped_done=15 guard_fail=1 placeholder=0 command=0 pipe=0
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+2, skipped+0) — lang=pl file=php.json strict_skipped_done=57
@@ -419,7 +433,7 @@
 - Cykle: **49**
 - MIGRATION: **+0** kluczy, **0** plików `.lua`
 - Kategorie dotknięte: -
-- Błędy: **254**
+- Błędy: **256**
 
 
 ---
@@ -428,9 +442,11 @@
 
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
-| 📁 Plików przeskanowanych | **2299** | w tej sesji |
+| 📁 Plików przeskanowanych (LIVE registry) | **2,299** | z `i18n_file_status.json` |
+| 📚 Plików przeskanowanych (historia) | **6,443** | z `i18n_processed_files.txt` |
+| ↕️ Historia minus LIVE | **+4,144** | dodatnie = historia > LIVE |
 | ✅ Plików z kluczami | **1897** | zawierały hardcoded strings |
-| ⬜ Plików bez kluczy | **402** | czyste (brak hardcoded) |
+| ⬜ Plików bez kluczy | **400** | czyste (brak hardcoded) |
 | 🔑 Kluczy wyciągniętych (LIVE) | **53,586** | realny stan `i18n/en/*.json` |
 | 🤖 Kluczy wyciągniętych przez workera | **6,248** | z `i18n_file_status.json` |
 | ➕ Kluczy poza rejestrem workera | **47,338** | ręczne/Codex/Claude/starsze |
@@ -732,7 +748,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2026-02-14 07:22:41  
+📅 Auto-updated by Worker v1.1 | Last: 2026-02-14 07:24:58  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

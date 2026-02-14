@@ -945,7 +945,8 @@ elseif(ANDROID)
           $<$<BOOL:${TOGGLE_FRAMEWORK_SOUND}>:${VORBISFILE_LIBRARY}>
           $<$<BOOL:${OTC_ENABLE_GMP}>:${GMP_LIBRARY}>
           $<$<BOOL:${TOGGLE_FRAMEWORK_SOUND}>:${OpenAL_LIBRARY}>
-          $<$<BOOL:${OTC_ENABLE_OPENSSL}>:${OPENSSL_LIBRARIES}>
+          $<$<BOOL:${OTC_ENABLE_OPENSSL}>:OpenSSL::SSL>
+          $<$<BOOL:${OTC_ENABLE_OPENSSL}>:OpenSSL::Crypto>
           ${STDUUID}
           ${MINIZIP_LIBRARY}
 

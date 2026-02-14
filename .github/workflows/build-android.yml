@@ -206,7 +206,7 @@ jobs:
               echo "==== ${f} (around line 422) ===="
               nl -ba "$f" | sed -n '410,440p' || true
               echo "==== ${f} suspicious '$' tokens ===="
-              rg -n '\$[^ $:]' "$f" | head -n 80 || true
+              grep -nE '\$[^ $:]' "$f" | head -n 80 || true
             done
             exit 1
           fi

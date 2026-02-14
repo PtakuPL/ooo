@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2010-2025 OTClient <https://github.com/edubart/otclient>
+ * Copyright (c) 2010-2026 OTClient <https://github.com/edubart/otclient>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -20,21 +20,8 @@
  * THE SOFTWARE.
  */
 
-#include "otmlparser.h"
 #include "otmldocument.h"
-#include "otmlexception.h"
-
-namespace {
-bool hasPrefix(const std::string& text, const char* prefix)
-{
-    return text.rfind(prefix, 0) == 0;
-}
-
-bool isBracketList(const std::string& text)
-{
-    return text.size() >= 2 && text.front() == '[' && text.back() == ']';
-}
-}
+#include "otmlparser.h"
 
 OTMLParser::OTMLParser(const OTMLDocumentPtr& doc, std::istream& in) :
     currentDepth(0), currentLine(0),
@@ -106,7 +93,7 @@ void OTMLParser::parseLine(std::string line)
         return;
 
     // skip comments
-    if (hasPrefix(line, "//") || hasPrefix(line, "#"))
+    if (line.starts_with("//") || line.starts_with("#"))
         return;
 
     // a depth above, change current parent to the previous added node
@@ -132,21 +119,52 @@ void OTMLParser::parseNode(const std::string_view data)
 {
     std::string tag;
     std::string value;
-    const std::size_t dotsPos = data.find_first_of(':');
+    std::size_t dotsPos = std::string::npos;
     const int nodeLine = currentLine;
 
-    // node that has no tag and may have a value
-    if (!data.empty() && data[0] == '-') {
-        value = data.substr(1);
-        stdext::trim(value);
-        // node that has tag and possible a value
-    } else if (dotsPos != std::string::npos) {
-        tag = data.substr(0, dotsPos);
-        if (data.size() > dotsPos + 1)
-            value = data.substr(dotsPos + 1);
-        // node that has only a tag
+    // Perform right-trim to avoid issues with spaces/tabs
+    std::string line = std::string(data);
+    while (!line.empty() && (line.back() == ' ' || line.back() == '\t' || line.back() == '\r'))
+        line.pop_back();
+
+    const bool isUrlWithColon = (line.starts_with("http://") || line.starts_with("https://")) && line.back() == ':';
+    const bool isUrlKey = line.starts_with("http://") || line.starts_with("https://");
+
+    if (isUrlWithColon) {
+        // URL ending in ':' → treat as a key without ':' and no value on the same line
+        tag = line.substr(0, line.size() - 1);
+        // Value remains empty
     } else {
-        tag = data;
+        // Normal processing (list item, key-value, or just key)
+        if (isUrlKey) {
+            // For URLs, prefer a separator colon followed by whitespace (avoids port/path colons)
+            const size_t schemeEnd = line.find("://");
+            const size_t searchFrom = (schemeEnd != std::string::npos) ? schemeEnd + 3 : 0;
+            const size_t sepPosSpace = line.find(": ", searchFrom);
+            const size_t sepPosTab = line.find(":\t", searchFrom);
+            if (sepPosSpace != std::string::npos)
+                dotsPos = sepPosSpace;
+            else if (sepPosTab != std::string::npos)
+                dotsPos = sepPosTab;
+            else
+                dotsPos = std::string::npos;
+        } else {
+            dotsPos = line.find(':');
+        }
+
+        if (!line.empty() && line.front() == '-') {
+            // "- item"
+            value = line.substr(1);
+            stdext::trim(value);
+        } else if (dotsPos != std::string::npos) {
+            // "key: value"
+            tag = line.substr(0, dotsPos);
+            if (dotsPos + 1 < line.size())
+                value = line.substr(dotsPos + 1);
+        } else {
+            // "key"
+            tag = line;
+        }
     }
 
     stdext::trim(tag);
@@ -185,8 +203,9 @@ void OTMLParser::parseNode(const std::string_view data)
          */
         if (value == "|" || value == "|-") {
             // remove all new lines at the end
-            while (!multiLineData.empty() && multiLineData.back() == '\n')
-                multiLineData.pop_back();
+            int lastPos = multiLineData.length();
+            while (multiLineData[--lastPos] == '\n')
+                multiLineData.erase(lastPos, 1);
 
             if (value == "|")
                 multiLineData.append("\n");
@@ -198,7 +217,7 @@ void OTMLParser::parseNode(const std::string_view data)
     // create the node
     const auto& node = OTMLNode::create(tag);
 
-    node->setUnique(dotsPos != std::string::npos);
+    node->setUnique(isUrlWithColon || dotsPos != std::string::npos);
     node->setTag(tag);
     node->setSource(doc->source() + ":" + stdext::unsafe_cast<std::string>(nodeLine));
 
@@ -206,9 +225,9 @@ void OTMLParser::parseNode(const std::string_view data)
     if (value == "~")
         node->setNull(true);
     else {
-        if (isBracketList(value)) {
+        if (value.starts_with("[") && value.ends_with("]")) {
             const auto& tmp = value.substr(1, value.length() - 2);
-            const std::vector<std::string> tokens = stdext::split(tmp, ",");
+            const std::vector tokens = stdext::split(tmp, ",");
             for (std::string v : tokens) {
                 stdext::trim(v);
                 node->writeIn(v);

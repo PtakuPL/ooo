@@ -112,6 +112,8 @@ TRANSLATIONS_STRICT=false   # Tryb strict: zero nowych kluczy, tylko istniejące
 USE_GOOGLE_TRANSLATE=false  # --use-gt: używaj Google Translate jako fallback po słownikach
 GT_BATCH_SIZE=50            # ile kluczy tłumaczyć w jednym batchu GT
 GT_DELAY=1.5                # sekundy przerwy między batchami GT (anty rate-limit)
+GT_BATCH_TIMEOUT=18         # timeout (s) na pojedynczy request translate_batch
+GT_SINGLE_TIMEOUT=7         # timeout (s) na pojedynczy request translate
 CROSSREF_AUTO_FIX=false     # --auto-fix-crossref: faza 4.5 (Tryb 2), domyślnie OFF
 CROSSREF_AUTO_FIX_LIMIT=30  # maksymalna liczba auto-fix na język / przebieg walidacji
 PINNED_AUTO_LANG=""        # SWITCH:<lang> - przypięty język AUTO_TRANSLATE między cyklami
@@ -659,8 +661,8 @@ if os.path.exists(raid_file):
 # ============================================================================
 all_terms = set(CORE_TERMS)
 all_terms.update(spell_words)  # Always protect incantations
-# Add top spell names (common ones)
-all_terms.update(spell_names)
+# NOTE: spell display names (spell_names) are NOT added — they should be translated.
+# Only incantation words (exura, exori, adana mort...) are protected.
 all_terms.update(quest_names)
 all_terms.update(raid_names)
 
@@ -9397,6 +9399,7 @@ repaired_latin_cyrillic = 0
 repaired_i_dot = 0
 repaired_word_salad = 0
 repaired_wrong_script = 0
+repaired_trailing_space = 0
 
 for key, en_value in en_data.items():
     if key not in lang_data:
@@ -9492,7 +9495,17 @@ for key, en_value in en_data.items():
                 repaired_wrong_script += 1
                 continue
 
-total_repaired = repaired_empty + repaired_identical + repaired_partial_mix + repaired_latin_cyrillic + repaired_i_dot + repaired_word_salad + repaired_wrong_script
+    # (R8) Trailing space contract — EN kończy się spacją a tłumaczenie nie
+    _en_raw = str(en_value)
+    if _en_raw.endswith(" "):
+        _en_trail = len(_en_raw) - len(_en_raw.rstrip(" "))
+        _tr_trail = len(value) - len(value.rstrip(" "))
+        if _en_trail > _tr_trail:
+            lang_data[key] = value + (" " * (_en_trail - _tr_trail))
+            repaired_trailing_space += 1
+            # Nie robimy continue — to fix-in-place, nie reset do [EN]
+
+total_repaired = repaired_empty + repaired_identical + repaired_partial_mix + repaired_latin_cyrillic + repaired_i_dot + repaired_word_salad + repaired_wrong_script + repaired_trailing_space
 if total_repaired > 0:
     parts = []
     if repaired_empty: parts.append(f"empty={repaired_empty}")
@@ -9502,6 +9515,7 @@ if total_repaired > 0:
     if repaired_i_dot: parts.append(f"i_dot={repaired_i_dot}")
     if repaired_word_salad: parts.append(f"word_salad={repaired_word_salad}")
     if repaired_wrong_script: parts.append(f"wrong_script={repaired_wrong_script}")
+    if repaired_trailing_space: parts.append(f"trailing_space={repaired_trailing_space}")
     print(f"   🔧 Auto-repair: {total_repaired} ({', '.join(parts)})")
 
 # Znajdź brakujące klucze
@@ -10211,6 +10225,7 @@ PYREPAIRTUNING
 #===============================================================================
 AUTO_TRANSLATE_MID_CYCLE_HEARTBEAT_ENABLED="${AUTO_TRANSLATE_MID_CYCLE_HEARTBEAT_ENABLED:-true}"
 AUTO_TRANSLATE_MID_CYCLE_HEARTBEAT_INTERVAL_SEC="${AUTO_TRANSLATE_MID_CYCLE_HEARTBEAT_INTERVAL_SEC:-90}"
+AUTO_TRANSLATE_MID_BATCH_CMD_CHECK_EVERY="${AUTO_TRANSLATE_MID_BATCH_CMD_CHECK_EVERY:-8}"
 
 auto_translate_keys() {
     local target_lang="$1"
@@ -10270,12 +10285,13 @@ auto_translate_keys() {
     fi
 
     local _at_out _at_rc _translated _placeholders
-    _at_out=$(USE_GOOGLE_TRANSLATE="$USE_GOOGLE_TRANSLATE" GT_BATCH_SIZE="$GT_BATCH_SIZE" GT_DELAY="$GT_DELAY" python3 - "$target_lang" "$json_file" "$translate_limit" "$strict_mode" << 'AUTOTRANSPY'
+    _at_out=$(USE_GOOGLE_TRANSLATE="$USE_GOOGLE_TRANSLATE" GT_BATCH_SIZE="$GT_BATCH_SIZE" GT_DELAY="$GT_DELAY" GT_BATCH_TIMEOUT="$GT_BATCH_TIMEOUT" GT_SINGLE_TIMEOUT="$GT_SINGLE_TIMEOUT" AUTO_TRANSLATE_COMMAND_FILE="${COMMAND_FILE:-.worker_command}" AUTO_TRANSLATE_MID_BATCH_CMD_CHECK_EVERY="${AUTO_TRANSLATE_MID_BATCH_CMD_CHECK_EVERY:-8}" python3 - "$target_lang" "$json_file" "$translate_limit" "$strict_mode" << 'AUTOTRANSPY'
 import json
 import os
 import re
 import hashlib
 import sys
+import signal
 from datetime import datetime, timezone
 
 I18N_DIR = "i18n"
@@ -10285,6 +10301,13 @@ translate_limit = int(sys.argv[3] or "0")
 strict_mode = sys.argv[4] == "true"
 status_dir = os.environ.get("STATUS_DIR", os.path.join(I18N_DIR, "status"))
 proper_nouns_path = os.path.join(status_dir, "tibia_proper_nouns.json")
+command_file = os.environ.get("AUTO_TRANSLATE_COMMAND_FILE", ".worker_command")
+try:
+    mid_batch_cmd_check_every = int(os.environ.get("AUTO_TRANSLATE_MID_BATCH_CMD_CHECK_EVERY", "8") or "8")
+except Exception:
+    mid_batch_cmd_check_every = 8
+if mid_batch_cmd_check_every < 1:
+    mid_batch_cmd_check_every = 1
 
 try:
     with open(proper_nouns_path, "r", encoding="utf-8") as f:
@@ -10296,7 +10319,20 @@ except Exception:
 # Google Translate config (from env)
 use_google_translate = os.environ.get("USE_GOOGLE_TRANSLATE", "false") == "true"
 gt_batch_size = int(os.environ.get("GT_BATCH_SIZE", "50"))
-gt_delay = float(os.environ.get("GT_DELAY", "1.5"))
+def _env_float(name, default):
+    try:
+        return float(os.environ.get(name, str(default)) or default)
+    except Exception:
+        return float(default)
+gt_delay = _env_float("GT_DELAY", 1.5)
+gt_batch_timeout = _env_float("GT_BATCH_TIMEOUT", 18.0)
+gt_single_timeout = _env_float("GT_SINGLE_TIMEOUT", 7.0)
+if gt_delay < 0:
+    gt_delay = 0.0
+if gt_batch_timeout < 1:
+    gt_batch_timeout = 18.0
+if gt_single_timeout < 1:
+    gt_single_timeout = 7.0
 
 # Mapowanie kodów języków i18n -> kody Google Translate
 GT_LANG_MAP = {
@@ -10310,6 +10346,29 @@ def _gt_lang_code(lang):
     low = raw.lower()
     normalized = low.replace("_", "-")
     return GT_LANG_MAP.get(raw) or GT_LANG_MAP.get(low) or GT_LANG_MAP.get(normalized) or raw
+
+class _GTTimeout(Exception):
+    pass
+
+def _call_with_timeout(seconds, fn, *args, **kwargs):
+    timeout_s = float(seconds or 0)
+    if timeout_s <= 0:
+        return fn(*args, **kwargs)
+    if os.name == "nt":
+        # Fallback dla platform bez SIGALRM (np. Windows) — brak twardego timeoutu.
+        return fn(*args, **kwargs)
+
+    def _handler(signum, frame):
+        raise _GTTimeout(f"timeout after {timeout_s}s")
+
+    prev_handler = signal.getsignal(signal.SIGALRM)
+    try:
+        signal.signal(signal.SIGALRM, _handler)
+        signal.setitimer(signal.ITIMER_REAL, timeout_s)
+        return fn(*args, **kwargs)
+    finally:
+        signal.setitimer(signal.ITIMER_REAL, 0)
+        signal.signal(signal.SIGALRM, prev_handler)
 
 def _protect_placeholders(text):
     """Zamień placeholdery, HTML tagi, escape sequences i nazwy własne na tokeny ochronne przed GT."""
@@ -11140,12 +11199,18 @@ SIMPLE_TRANSLATIONS = {
         "Welcome!": "Benvenuto!",
         "Goodbye": "Arrivederci",
         "Good bye.": "Arrivederci.",
+        "Good bye!": "Arrivederci!",
+        "Good bye then.": "Allora arrivederci.",
         "Bye.": "Ciao.",
         "Farewell.": "Addio.",
         "Thank you": "Grazie",
         "Yes": "Sì",
         "No": "No",
         "Ok": "Ok",
+        "Ok then.": "Va bene allora.",
+        "Then not.": "Allora no.",
+        "Take this!": "Prendi questo!",
+        "Greetings, |PLAYERNAME|.": "Saluti, |PLAYERNAME|.",
         "Cancel": "Annulla",
         "Buy": "Comprare",
         "Sell": "Vendere",
@@ -11163,6 +11228,10 @@ SIMPLE_TRANSLATIONS = {
         "Helmet": "Elmo",
         "Left Hand": "Mano sinistra",
         "Right Hand": "Mano destra",
+        "You found ": "Hai trovato ",
+        "You acquired ": "Hai ottenuto ",
+        "You flipped the ": "Hai girato il ",
+        "You slayed ": "Hai ucciso ",
         "north": "nord",
         "south": "sud",
         "east": "est",
@@ -11213,6 +11282,7 @@ SIMPLE_TRANSLATIONS = {
         "Goodbye": "Sbohem",
         "Good bye.": "Sbohem.",
         "Good bye!": "Sbohem!",
+        "Good bye then.": "Tak tedy sbohem.",
         "Bye.": "Čau.",
         "Farewell.": "Sbohem.",
         "Thank you": "Děkuji",
@@ -11221,6 +11291,10 @@ SIMPLE_TRANSLATIONS = {
         "No": "Ne",
         "No!": "Ne!",
         "Ok": "Ok",
+        "Ok then.": "Dobře tedy.",
+        "Then not.": "Tak tedy ne.",
+        "Take this!": "Vezmi si to!",
+        "Greetings, |PLAYERNAME|.": "Zdravím tě, |PLAYERNAME|.",
         "Cancel": "Zrušit",
         "Buy": "Koupit",
         "Sell": "Prodat",
@@ -11561,11 +11635,17 @@ SIMPLE_TRANSLATIONS = {
         "Welcome": "Καλώς ήρθατε",
         "Goodbye": "Αντίο",
         "Good bye.": "Αντίο.",
+        "Good bye!": "Αντίο!",
+        "Good bye then.": "Τότε αντίο.",
         "Bye.": "Γεια.",
         "Thank you": "Ευχαριστώ",
         "Yes": "Ναι",
         "No": "Όχι",
         "Ok": "Εντάξει",
+        "Ok then.": "Εντάξει τότε.",
+        "Then not.": "Τότε όχι.",
+        "Take this!": "Πάρε αυτό!",
+        "Greetings, |PLAYERNAME|.": "Χαιρετισμούς, |PLAYERNAME|.",
         "Cancel": "Ακύρωση",
         "Buy": "Αγορά",
         "Sell": "Πώληση",
@@ -11619,11 +11699,17 @@ SIMPLE_TRANSLATIONS = {
         "Welcome": "Sveiki atvykę",
         "Goodbye": "Viso gero",
         "Good bye.": "Viso gero.",
+        "Good bye!": "Viso gero!",
+        "Good bye then.": "Na, sudie.",
         "Bye.": "Iki.",
         "Thank you": "Ačiū",
         "Yes": "Taip",
         "No": "Ne",
         "Ok": "Gerai",
+        "Ok then.": "Gerai tada.",
+        "Then not.": "Tuomet ne.",
+        "Take this!": "Imk tai!",
+        "Greetings, |PLAYERNAME|.": "Sveikinimai, |PLAYERNAME|.",
         "Cancel": "Atšaukti",
         "Buy": "Pirkti",
         "Sell": "Parduoti",
@@ -12566,8 +12652,8 @@ def _is_proper_noun_key(key, en_value):
     # Game-specific nontranslatable content (fictional languages, animal sounds)
     if _is_game_nontranslatable(key, en_stripped):
         return True
-    # Krótka fraza TitleCase pod kluczem nazwy (ale bez masowego exemp-tu dla items/monsters).
-    name_like_prefixes = ("npc.", "monster.", "mount.", "spell.", "book.otbm.")
+    # Krótka fraza TitleCase pod kluczem nazwy NPC/book (ale NIE monster/mount/spell — te tłumaczymy).
+    name_like_prefixes = ("npc.", "book.otbm.")
     if any(key.startswith(p) for p in name_like_prefixes) and key.endswith((".name", ".title", ".desc")):
         words = [w for w in re.findall(r"[A-Za-zÀ-ÿ]+", en_stripped)]
         if 1 <= len(words) <= 3 and all(w[:1].isupper() for w in words):
@@ -12581,6 +12667,45 @@ def _normalize_semantic_text(text: str) -> str:
     t = str(text or "")
     t = re.sub(r"\s+", " ", t).strip().lower()
     return t
+
+_FORCED_NPC_SHORT_DIALOG_LANGS = {"lt", "cs", "el", "it"}
+_FORCED_NPC_SHORT_DIALOG_PHRASES = {
+    "good bye.",
+    "good bye!",
+    "good bye then.",
+    "then not.",
+    "ok then.",
+    "take this!",
+    "greetings, |playername|.",
+}
+_FORCED_QUEST_RUNTIME_FRAGMENTS = {
+    "you found",
+    "you acquired",
+    "you flipped the",
+    "you slayed",
+}
+
+def _is_forced_short_npc_dialogue(key: str, en_text: str, lang: str) -> bool:
+    if str(lang or "").lower() not in _FORCED_NPC_SHORT_DIALOG_LANGS:
+        return False
+    if not str(key or "").startswith("npc."):
+        return False
+    return _normalize_semantic_text(en_text) in _FORCED_NPC_SHORT_DIALOG_PHRASES
+
+def _is_forced_quest_runtime_fragment(key: str, en_text: str, json_file: str = "") -> bool:
+    k = str(key or "")
+    jf = str(json_file or "").lower()
+    if jf != "quests.json" and not k.startswith("quests."):
+        return False
+    normalized = _normalize_semantic_text(en_text).rstrip(".!?:;")
+    return normalized in _FORCED_QUEST_RUNTIME_FRAGMENTS
+
+def _should_force_en_copy_retranslate(key: str, en_text: str, lang: str, json_file: str = "") -> bool:
+    if _is_forced_short_npc_dialogue(key, en_text, lang):
+        return True
+    if _is_forced_quest_runtime_fragment(key, en_text, json_file):
+        return True
+    return False
 
 _SEMANTIC_MISMATCH_DENYLIST = {
     "the chest is empty.": {
@@ -13310,7 +13435,8 @@ def detect_suspicious(en_text: str, translated_text: str, lang: str, key: str = 
 
     # S3: Identical to EN (z wykluczeniem nazw własnych i treści technicznych)
     if tr == en and not _is_proper_noun_key(key, en) and (en not in TIBIA_PROPER_NOUNS):
-        if not _is_probably_nontranslatable_text(en):
+        forced_retranslate = _should_force_en_copy_retranslate(key, en, lang)
+        if forced_retranslate or not _is_probably_nontranslatable_text(en):
             issues.append({
                 "type": "identical_to_en",
                 "severity": "CRITICAL",
@@ -13828,7 +13954,76 @@ recent_translations = []
 gt_pending = []  # Klucze do tłumaczenia przez Google Translate
 suspicious_log_path = os.path.join(status_dir, "suspicious_log.jsonl")
 suspicious_rejected_path = os.path.join(status_dir, "suspicious_rejected.jsonl")
+
+# WQ-NPC-SHORT-1: dedykowany repair pass dla krótkich dialogów NPC (LT/CS/EL/IT)
+# niezależnie od limitu, aby szybko usunąć EN-copy na kluczowych frazach.
+forced_npc_short_repairs = 0
+if str(target_lang or "").lower() in _FORCED_NPC_SHORT_DIALOG_LANGS and str(json_file or "").lower() == "npc.json":
+    for _ns_key, _ns_en in en_data.items():
+        if not _is_forced_short_npc_dialogue(_ns_key, _ns_en, target_lang):
+            continue
+        _cur = str(lang_data.get(_ns_key, ""))
+        _cand = _cur
+        if (not _cur) or _cur.startswith("[") or _cur.strip() == str(_ns_en).strip():
+            _simple = simple_translate(_ns_en, target_lang)
+            if _simple:
+                _cand = _simple
+        _cand, _ = _auto_fix_translation(_ns_en, _cand, target_lang)
+        if _cand and _cand != _cur:
+            lang_data[_ns_key] = _cand
+            tm_upsert(_ns_key, src_hash(_ns_en), _cand, "forced_npc_short", 0.996)
+            tm_updates += 1
+            translated += 1
+            forced_npc_short_repairs += 1
+            recent_translations.append({
+                "key": _ns_key,
+                "en": _ns_en,
+                "translated": _cand,
+                "source": "forced_npc_short",
+            })
+
+if forced_npc_short_repairs > 0:
+    print(f"🗣️ NPC short-dialog repair: {forced_npc_short_repairs} naprawionych")
+
+# WQ-QUEST-IT-1: deterministyczna naprawa fragmentów quest runtime (concat contract)
+# niezależnie od limitu, aby nie zostawiać EN-copy bez końcowej spacji.
+forced_it_quest_fragment_repairs = 0
+if str(target_lang or "").lower() == "it" and str(json_file or "").lower() == "quests.json":
+    for _fq_key, _fq_en in en_data.items():
+        if not _is_forced_quest_runtime_fragment(_fq_key, _fq_en, json_file):
+            continue
+        _cur = str(lang_data.get(_fq_key, ""))
+        _cand = _cur
+        if (not _cur) or _cur.startswith("[") or _cur.strip() == str(_fq_en).strip():
+            _simple = simple_translate(_fq_en, target_lang)
+            if _simple:
+                _cand = _simple
+        _cand, _ = _auto_fix_translation(_fq_en, _cand, target_lang)
+        if _cand and _cand != _cur:
+            lang_data[_fq_key] = _cand
+            tm_upsert(_fq_key, src_hash(_fq_en), _cand, "forced_quest_fragment", 0.995)
+            tm_updates += 1
+            translated += 1
+            forced_it_quest_fragment_repairs += 1
+            recent_translations.append({
+                "key": _fq_key,
+                "en": _fq_en,
+                "translated": _cand,
+                "source": "forced_quest_fragment",
+            })
+
+if forced_it_quest_fragment_repairs > 0:
+    print(f"🧩 IT quest fragment repair: {forced_it_quest_fragment_repairs} naprawionych")
+
+processed_keys = 0
+mid_batch_preempt = False
 for key, en_text in en_data.items():
+    processed_keys += 1
+    if command_file and (processed_keys % mid_batch_cmd_check_every == 0) and os.path.exists(command_file):
+        mid_batch_preempt = True
+        print(f"⚡ MID-BATCH PREEMPT: wykryto pending command po {processed_keys} kluczach ({command_file})")
+        break
+
     # Sprawdź limit tłumaczeń
     if translate_limit > 0 and translated >= translate_limit:
         print(f"⚠️ Osiągnięto limit {translate_limit} tłumaczeń")
@@ -13842,6 +14037,20 @@ for key, en_text in en_data.items():
 
     if key in lang_data:
         current_value = str(lang_data.get(key, ""))
+        # Napraw kontrakt trailing-space dla fragmentów runtime nawet poza strict-mode.
+        if _requires_trailing_space_contract(key, en_text):
+            en_ts = len(str(en_text)) - len(str(en_text).rstrip(" "))
+            cur_ts = len(current_value) - len(current_value.rstrip(" "))
+            if en_ts > cur_ts:
+                current_value = current_value + (" " * (en_ts - cur_ts))
+                lang_data[key] = current_value
+
+        force_en_copy_retranslate = (
+            current_value == str(en_text)
+            and not _is_proper_noun_key(key, str(en_text))
+            and _should_force_en_copy_retranslate(key, str(en_text), target_lang, json_file)
+        )
+
         # W strict tłumaczymy tylko placeholdery / TODO / wartości równe EN
         if strict_mode:
             if current_value == en_text and _is_proper_noun_key(key, en_text):
@@ -13874,7 +14083,7 @@ for key, en_text in en_data.items():
                         "translated": str(current_value),
                     })
         else:
-            if not current_value.startswith("["):
+            if not current_value.startswith("[") and not force_en_copy_retranslate:
                 continue  # Już przetłumaczone
     
     # TM lookup: użyj zapamiętanego tłumaczenia jeśli hash źródła pasuje
@@ -13907,6 +14116,22 @@ for key, en_text in en_data.items():
                     "translated": str(candidate),
                 }
                 if len(issues) > 3:
+                    # TM has many quality issues — try GT instead
+                    if use_google_translate:
+                        gt_pending.append((key, en_text, h, suspicious_existing_current))
+                        _append_jsonl(suspicious_log_path, {
+                            "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+                            "lang": target_lang,
+                            "category": json_file,
+                            "key": key,
+                            "source": "tm",
+                            "severity": max_sev,
+                            "issues": issues,
+                            "action": "fallback_to_google_translate_multi_issues",
+                            "en": str(en_text),
+                            "translated": str(candidate),
+                        })
+                        continue
                     suspicious_rejected += 1
                     _append_jsonl(suspicious_rejected_path, log_entry)
                     _enqueue_manual_review(status_dir, {
@@ -13933,8 +14158,8 @@ for key, en_text in en_data.items():
                         placeholders += 1
                     continue
                 if max_sev == "CRITICAL":
-                    if _has_issue_type(issues, "identical_to_en") and use_google_translate:
-                        # TM dał EN-copy dla PL/ES — spróbuj realnego tłumaczenia przez GT.
+                    if use_google_translate:
+                        # TM CRITICAL (identical_to_en, semantic_mismatch, etc.) — try GT.
                         gt_pending.append((key, en_text, h, suspicious_existing_current))
                         _append_jsonl(suspicious_log_path, {
                             "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
@@ -14001,24 +14226,27 @@ for key, en_text in en_data.items():
                 "source": "tm",
             })
             continue
-        guard_fail += 1
-        if reason == "placeholder":
-            guard_placeholder += 1
-        elif reason == "command":
-            guard_command += 1
-        elif reason == "pipe":
-            guard_pipe += 1
-        else:
-            guard_quality += 1
-        if strict_mode:
-            if suspicious_existing_current:
-                lang_data[key] = str(en_text)
-                sanitized_existing += 1
-            skipped_not_placeholder += 1
-        else:
-            lang_data[key] = f"[{target_lang.upper()}] {en_text}"
-            placeholders += 1
-        continue
+        # TM candidate failed validate_candidate — don't give up!
+        # Fall through to simple/GT instead of blocking with placeholder.
+        # Only hard-fail on placeholder/command/pipe token mismatch (structural).
+        if reason in ("placeholder", "command", "pipe"):
+            guard_fail += 1
+            if reason == "placeholder":
+                guard_placeholder += 1
+            elif reason == "command":
+                guard_command += 1
+            else:
+                guard_pipe += 1
+            if strict_mode:
+                if suspicious_existing_current:
+                    lang_data[key] = str(en_text)
+                    sanitized_existing += 1
+                skipped_not_placeholder += 1
+            else:
+                lang_data[key] = f"[{target_lang.upper()}] {en_text}"
+                placeholders += 1
+            continue
+        # Quality/shape/word_salad/wrong_script from TM — fall through to simple/GT
 
     # Spróbuj prostego tłumaczenia
     simple = simple_translate(en_text, target_lang)
@@ -14198,7 +14426,10 @@ for key, en_text in en_data.items():
 gt_translated = 0
 gt_guard_fail = 0
 
-if use_google_translate and gt_pending:
+if mid_batch_preempt and gt_pending:
+    print(f"⚡ MID-BATCH PREEMPT: pomijam GT fallback (pozostało {len(gt_pending)} kluczy) aby przyjąć pending command")
+
+if use_google_translate and gt_pending and not mid_batch_preempt:
     import time
     gt_lang = _gt_lang_code(target_lang)
     try:
@@ -14217,6 +14448,10 @@ if use_google_translate and gt_pending:
                 gt_todo = gt_pending[:remaining]
 
         for batch_start in range(0, len(gt_todo), gt_batch_size):
+            if command_file and os.path.exists(command_file):
+                mid_batch_preempt = True
+                print(f"⚡ MID-BATCH PREEMPT: wykryto pending command podczas GT batch (batch_start={batch_start})")
+                break
             batch = gt_todo[batch_start:batch_start + gt_batch_size]
             # Przygotuj teksty z ochroną placeholderów
             protected_texts = []
@@ -14229,14 +14464,29 @@ if use_google_translate and gt_pending:
             # Batch translate
             try:
                 if len(protected_texts) == 1:
-                    gt_results = [translator.translate(protected_texts[0])]
+                    gt_results = [_call_with_timeout(gt_single_timeout, translator.translate, protected_texts[0])]
                 else:
-                    gt_results = translator.translate_batch(protected_texts)
+                    gt_results = _call_with_timeout(gt_batch_timeout, translator.translate_batch, protected_texts)
                 if gt_results is None:
                     gt_results = protected_texts  # fallback — użyj oryginału
             except Exception as e:
-                print(f"⚠️ GT batch error: {e}")
-                gt_results = protected_texts  # fallback
+                print(f"⚠️ GT batch error/timeout: {e}")
+                # Fallback: single requests z krótkim timeoutem (lepsza responsywność)
+                gt_results = []
+                for protected_text in protected_texts:
+                    if command_file and os.path.exists(command_file):
+                        mid_batch_preempt = True
+                        print("⚡ MID-BATCH PREEMPT: pending command podczas GT single fallback")
+                        break
+                    try:
+                        translated_single = _call_with_timeout(gt_single_timeout, translator.translate, protected_text)
+                    except Exception:
+                        translated_single = protected_text
+                    if translated_single is None:
+                        translated_single = protected_text
+                    gt_results.append(translated_single)
+                if len(gt_results) < len(protected_texts):
+                    gt_results.extend(protected_texts[len(gt_results):])
 
             # Zastosuj wyniki
             for i, (key, en_text, h, suspicious, replacements) in enumerate(meta):
@@ -14438,11 +14688,14 @@ if all_recent:
     identical_to_en_translatable = 0
     identical_to_en_exempt = 0
     for e in all_recent:
+        key_text = str(e.get("key", "") or "")
         en_text = str(e.get("en", "")).strip()
         tr_text = str(e.get("translated", "")).strip()
         if tr_text != en_text:
             continue
-        if _is_probably_nontranslatable_text(en_text):
+        if _should_force_en_copy_retranslate(key_text, en_text, target_lang, json_file):
+            identical_to_en_translatable += 1
+        elif _is_probably_nontranslatable_text(en_text):
             identical_to_en_exempt += 1
         else:
             identical_to_en_translatable += 1
@@ -14624,6 +14877,7 @@ else:
 
 print(f"__DONE_CONTRACT__ is_done={'1' if done_contract['is_done'] else '0'} coverage={coverage_pct} guard_placeholder={guard_placeholder} guard_pipe={guard_pipe} guard_command={guard_command}")
 
+print(f"__AUTO_PREEMPT__ active={'1' if mid_batch_preempt else '0'} processed_keys={processed_keys} check_every={mid_batch_cmd_check_every}")
 print(f"__AUTO_RESULT__ translated={translated} placeholders={placeholders} guard_fail={guard_fail} guard_placeholder={guard_placeholder} guard_command={guard_command} guard_pipe={guard_pipe} guard_quality={guard_quality} skipped_missing_file={skipped_missing_file} skipped_missing_key={skipped_missing_key} skipped_not_placeholder={skipped_not_placeholder} suspicious_existing={suspicious_existing} suspicious_detected={suspicious_detected} suspicious_high={suspicious_high} suspicious_rejected={suspicious_rejected} sanitized_existing={sanitized_existing} gt_translated={gt_translated} gt_guard_fail={gt_guard_fail}")
 print(f"__QUALITY__ {json.dumps(quality_data, ensure_ascii=False)}")
 AUTOTRANSPY
@@ -14687,6 +14941,17 @@ AUTOTRANSPY
             log "${GREEN}🏁 Done Contract: SPEŁNIONY (coverage=${_coverage}%)${NC}"
         else
             log "${YELLOW}📋 Done Contract: NIESPEŁNIONY (coverage=${_coverage}%)${NC}"
+        fi
+    fi
+
+    local _preempt_line _preempt_active _preempt_keys
+    _preempt_line=$(printf '%s\n' "$_at_out" | grep '__AUTO_PREEMPT__' | tail -n 1)
+    if [ -n "$_preempt_line" ]; then
+        _preempt_active=$(printf '%s\n' "$_preempt_line" | grep -oE 'active=[01]' | cut -d= -f2)
+        _preempt_keys=$(printf '%s\n' "$_preempt_line" | grep -oE 'processed_keys=[0-9]+' | cut -d= -f2)
+        if [ "${_preempt_active:-0}" = "1" ]; then
+            PREEMPT_PENDING_FORCED_CMD="true"
+            log "${YELLOW}⚡ Auto-translate preempt mid-batch po ${_preempt_keys:-0} kluczach (pending command)${NC}"
         fi
     fi
 
@@ -19460,6 +19725,36 @@ issues = []
 issue_counter = Counter()
 lang_issue_counter = Counter()
 
+_FORCED_NPC_SHORT_DIALOG_LANGS_AUDIT = {"lt", "cs", "el", "it"}
+_FORCED_NPC_SHORT_DIALOG_PHRASES_AUDIT = {
+    "good bye.",
+    "good bye!",
+    "good bye then.",
+    "then not.",
+    "ok then.",
+    "take this!",
+    "greetings, |playername|.",
+}
+_FORCED_QUEST_RUNTIME_FRAGMENTS_AUDIT = {
+    "you found",
+    "you acquired",
+    "you flipped the",
+    "you slayed",
+}
+
+def _normalize_audit_text(text: str) -> str:
+    return re.sub(r"\s+", " ", str(text or "")).strip().lower()
+
+def _should_force_en_copy_retranslate_audit(key: str, en_text: str, lang: str) -> bool:
+    normalized = _normalize_audit_text(en_text)
+    if str(lang or "").lower() in _FORCED_NPC_SHORT_DIALOG_LANGS_AUDIT and str(key or "").startswith("npc."):
+        if normalized in _FORCED_NPC_SHORT_DIALOG_PHRASES_AUDIT:
+            return True
+    if str(key or "").startswith("quests."):
+        if normalized.rstrip(".!?:;") in _FORCED_QUEST_RUNTIME_FRAGMENTS_AUDIT:
+            return True
+    return False
+
 def _is_probably_nontranslatable_text(text: str) -> bool:
     t = str(text or "").strip()
     if not t:
@@ -19509,7 +19804,11 @@ for e in entries:
         lang_issue_counter[lang] += 1
 
     if tr == en:
-        if _is_probably_nontranslatable_text(en):
+        if _should_force_en_copy_retranslate_audit(key, en, lang):
+            issues.append({"key": key, "lang": lang, "type": "identical_to_en", "en": en, "translated": tr})
+            issue_counter["identical_to_en"] += 1
+            lang_issue_counter[lang] += 1
+        elif _is_probably_nontranslatable_text(en):
             issue_counter["identical_to_en_exempt"] += 1
         else:
             issues.append({"key": key, "lang": lang, "type": "identical_to_en", "en": en, "translated": tr})
@@ -20432,6 +20731,27 @@ os.replace(tmp, latest_path)
 PYFORCEDMETRIC
         }
 
+        emit_forced_command_completed_metric() {
+            if [ -z "${FORCED_CMD_RAW:-}" ]; then
+                return 0
+            fi
+            if [ "${FORCED_CMD_COMPLETED_RECORDED:-false}" = "true" ]; then
+                return 0
+            fi
+
+            local _forced_roundtrip_s=0
+            local _forced_now_epoch
+            _forced_now_epoch=$(date +%s)
+            if [[ "${FORCED_CMD_FILE_MTIME:-0}" =~ ^[0-9]+$ ]] && [ "${FORCED_CMD_FILE_MTIME:-0}" -gt 0 ] 2>/dev/null; then
+                if [ "$_forced_now_epoch" -gt "$FORCED_CMD_FILE_MTIME" ] 2>/dev/null; then
+                    _forced_roundtrip_s=$((_forced_now_epoch - FORCED_CMD_FILE_MTIME))
+                fi
+            fi
+
+            append_forced_command_metric "completed" "$FORCED_CMD_RAW" "${FORCED_CMD_PENDING_AGE_S:-0}" "$_forced_roundtrip_s" "${MODE_TYPE:-}" "${MODE_CAT:-}" "${MODE_COUNT:-}"
+            FORCED_CMD_COMPLETED_RECORDED=true
+        }
+
         clear_stale_start_lock_if_needed() {
             # Stale lock pattern: lock file held by orphan "sleep", while pid file owner nie żyje.
             local pid_owner=""
@@ -20544,6 +20864,14 @@ PYFORCEDMETRIC
                     GT_DELAY="${2:-1.5}"
                     shift 2
                     ;;
+                --gt-timeout)
+                    GT_BATCH_TIMEOUT="${2:-18}"
+                    shift 2
+                    ;;
+                --gt-single-timeout)
+                    GT_SINGLE_TIMEOUT="${2:-7}"
+                    shift 2
+                    ;;
                 --auto-fix-crossref)
                     CROSSREF_AUTO_FIX=true
                     shift
@@ -20589,6 +20917,8 @@ PYFORCEDMETRIC
             export USE_GOOGLE_TRANSLATE
             export GT_BATCH_SIZE
             export GT_DELAY
+            export GT_BATCH_TIMEOUT
+            export GT_SINGLE_TIMEOUT
             export CROSSREF_AUTO_FIX
             export CROSSREF_AUTO_FIX_LIMIT
             export GLOBAL_QUALITY_MODE
@@ -20649,6 +20979,7 @@ PYFORCEDMETRIC
             FORCED_CMD_RAW=""
             FORCED_CMD_FILE_MTIME=0
             FORCED_CMD_PENDING_AGE_S=0
+            FORCED_CMD_COMPLETED_RECORDED=false
             PREEMPT_PENDING_FORCED_CMD=false
 
             # === 8.3: Reset translate_limit na początku cyklu (dla adaptive batch recalc) ===
@@ -21812,6 +22143,10 @@ PY
                     # LIVE: zakończ etap auto dla czytelnego dashboardu
                     status_update_activity "running" "$CYCLE" "AUTO_TRANSLATE" "auto_done" "$MODE_CAT" "$MODE_COUNT" "translated=$AT_TRANSLATED guard_fail=$AT_GUARD_FAIL strict_missing_key=$AT_SKIPPED_MISSING_KEY strict_skipped_done=$AT_SKIPPED_NOT_PLACEHOLDER" "$AT_TRANSLATED" "$AT_TRANSLATED" "keys" 0
 
+                    # Zapisz completed metric jak najbliżej końca realnej pracy AUTO,
+                    # by nie tracić roundtrip przy restartach guardiana w post-processingu.
+                    emit_forced_command_completed_metric
+
                     # Jeśli w trakcie długiego cyklu pojawiła się nowa komenda wymuszona,
                     # skracamy ten cykl, aby szybciej przejść do następnego dispatchu.
                     if [ -f "$COMMAND_FILE" ] && [ "$AUTO_COMMAND_FAST_MODE" != "true" ]; then
@@ -21948,16 +22283,7 @@ PY
             MODE_T1=$(now_ms)
             status_log_cycle_perf "$CYCLE" "${MODE_TYPE:-IDLE}" "${MODE_CAT:--}" "mode_run" "$((MODE_T1 - MODE_T0))" "mode=${MODE_TYPE:-IDLE}"
 
-            if [ -n "$FORCED_CMD_RAW" ]; then
-                _forced_roundtrip_s=0
-                _forced_now_epoch=$(date +%s)
-                if [[ "${FORCED_CMD_FILE_MTIME:-0}" =~ ^[0-9]+$ ]] && [ "${FORCED_CMD_FILE_MTIME:-0}" -gt 0 ] 2>/dev/null; then
-                    if [ "$_forced_now_epoch" -gt "$FORCED_CMD_FILE_MTIME" ] 2>/dev/null; then
-                        _forced_roundtrip_s=$((_forced_now_epoch - FORCED_CMD_FILE_MTIME))
-                    fi
-                fi
-                append_forced_command_metric "completed" "$FORCED_CMD_RAW" "${FORCED_CMD_PENDING_AGE_S:-0}" "$_forced_roundtrip_s" "${MODE_TYPE:-}" "${MODE_CAT:-}" "${MODE_COUNT:-}"
-            fi
+            emit_forced_command_completed_metric
 
             if [ "$PREEMPT_PENDING_FORCED_CMD" != "true" ] && [ -f "$COMMAND_FILE" ]; then
                 PREEMPT_PENDING_FORCED_CMD=true
@@ -22427,6 +22753,8 @@ print(total)
         echo "  --use-gt                Używaj Google Translate jako fallback po słownikach"
         echo "  --gt-batch N            Rozmiar batcha GT (domyślnie 50)"
         echo "  --gt-delay N            Sekundy przerwy między batchami GT (domyślnie 1.5)"
+        echo "  --gt-timeout N          Timeout requestu GT batch (sekundy, domyślnie 18)"
+        echo "  --gt-single-timeout N   Timeout requestu GT single (sekundy, domyślnie 7)"
         echo "  --auto-fix-crossref     Włącz auto-fix cross-reference (Faza 4.5, OFF domyślnie)"
         echo "  --auto-fix-crossref-limit N  Max poprawek crossref na język (domyślnie 30)"
         echo "  --no-adaptive-batch     Wyłącz adaptive batch tuning (8.3)"

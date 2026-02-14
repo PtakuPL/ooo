@@ -6,6 +6,26 @@
 
 ---
 
+## Update wykonania (2026-02-14 17:10 UTC) — C9 quality gate exempt + H12 external dicts
+
+Zrealizowane pełne zadania:
+
+- ✅ **C9: Quality gate proper nouns (`identical_to_en_exempt`)**
+  - Dodano `_is_nontranslatable_tier()` do `validate_tier_quality()`.
+  - Exempt entries (URLs, identyfikatory, markup, proper nouns) liczone jako „effectively translated".
+  - Nowe pola w `tier_quality_gate.json`: `coverage_genuine`, `identical_to_en_exempt`, `exempt` per lang.
+  - Tier gate używa `coverage` (z exempt) zamiast czystego genuine — nie penalizuje za nietłumaczalne wpisy.
+
+- ✅ **H12: External SIMPLE_TRANSLATIONS i WORD_TRANSLATIONS do JSON**
+  - Wyeksportowano inline `SIMPLE_TRANSLATIONS` (26 langs, 1289 entries) → `i18n/status/simple_translations_base.json`.
+  - Wyeksportowano inline `WORD_TRANSLATIONS` (2 langs, 676 entries) → `i18n/status/word_translations_base.json`.
+  - 3-warstwowy merge: `base JSON` → `inline fallback` → `external override`.
+  - PL/ES protection zachowane (inline dict ma priorytet nad external).
+  - Inline dicts nadal obecne jako fallback; base JSON jest kanonicznym źródłem do edycji.
+
+Nowe TODO:
+- ⬜ Usunąć inline SIMPLE_TRANSLATIONS z worker-a (po weryfikacji stabilności ładowania z JSON).
+
 ## Update wykonania (2026-02-14 16:50 UTC) — C3/C4/C5/C6/C7 + SLA verification + PYEPOCH fix
 
 Zrealizowane pełne zadania:

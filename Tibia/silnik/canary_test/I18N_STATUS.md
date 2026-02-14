@@ -5,9 +5,9 @@
 ## 🧭 META
 
 > **[META]** 🟢 ACTIVE  
-> Świeżość: teraz | Źródło: `update_github_status()` | Ostatnia aktualizacja: 2026-02-14 13:39:29
+> Świeżość: teraz | Źródło: `update_github_status()` | Ostatnia aktualizacja: 2026-02-14 13:39:38
 
-> **Aktualizacja:** 2026-02-14 13:39:29 UTC  
+> **Aktualizacja:** 2026-02-14 13:39:38 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 53586  
 > **LIVE:** Cykl #1 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: mini_batch | Kategoria: libs | Plik: - | ETA: 0 | Heartbeat: 2026-02-14T13:39:33Z  
 > **Strict hourly (JSONL-only):** okno=1.0h | cycles=61 | pending_skip=0.0% | guard_fail=0.4% | throughput=1198.9/h  
@@ -16,12 +16,12 @@
 ### 🧩 Status sekcji (P0.1)
 | Sekcja | Stan | Świeżość | Powód | Źródło | Ostatnia aktualizacja |
 |--------|------|----------|-------|--------|-----------------------|
-| META | 🟢 ACTIVE | teraz | - | `update_github_status()` | 2026-02-14 13:39:29 |
-| LIVE | 🟢 ACTIVE | 1s temu | - | `activity.json / worker_state.json` | 2026-02-14T13:39:33Z |
-| MIGRATION | 🟢 ACTIVE | 12s temu | - | `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | 2026-02-14 13:39:29 |
+| META | 🟢 ACTIVE | teraz | - | `update_github_status()` | 2026-02-14 13:39:38 |
+| LIVE | 🟢 ACTIVE | 6s temu | - | `activity.json / worker_state.json` | 2026-02-14T13:39:33Z |
+| MIGRATION | 🟢 ACTIVE | 4s temu | - | `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | 2026-02-14 13:39:38 |
 | TRANSLATION | 🔒 INACTIVE | 6min temu | worker w trybie MIGRATION | `translation_guard_latest.json / translation_recent_latest.json` | 2026-02-14T13:33:10.917826Z |
 | QUALITY | 🔒 INACTIVE | 6min temu | worker w trybie MIGRATION | `quality_audit_latest.json` | 2026-02-14T13:33:12.242872Z |
-| HISTORY | 🟢 ACTIVE | teraz | - | `daily/*.json / ops.jsonl` | 2026-02-14 13:39:29 |
+| HISTORY | 🟢 ACTIVE | teraz | - | `daily/*.json / ops.jsonl` | 2026-02-14 13:39:38 |
 
 > Artefakt machine-readable: `i18n/status/status_sections_latest.json`
 
@@ -30,7 +30,7 @@
 ## 🔴 LIVE
 
 > **[LIVE]** 🟢 ACTIVE  
-> Świeżość: 1s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T13:39:33Z
+> Świeżość: 6s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T13:39:33Z
 
 - **Faza:** `MIGRATION`
 - **Etap:** `mini_batch`
@@ -92,7 +92,7 @@
 ## 🛠️ MIGRATION
 
 > **[MIGRATION]** 🟢 ACTIVE  
-> Świeżość: 12s temu | Źródło: `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | Ostatnia aktualizacja: 2026-02-14 13:39:29
+> Świeżość: 4s temu | Źródło: `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | Ostatnia aktualizacja: 2026-02-14 13:39:38
 
 ### 📁 Pliki Projektu (pełny skan)
 | Metryka | Wartość | Procent | Info |
@@ -211,8 +211,8 @@
 - **EN-copy łącznie:** **168,532**
 - **Braki kluczy łącznie:** **2,155**
 - **Brakujące pliki językowe:** **0**
-- **Cache STATUSPY (per-lang):** **cold-cache** | hit **0**, miss **52**, hit-rate **0.0%**
-- **Cache STATUSPY (per-file):** hit **0**, miss **1976**, hit-rate **0.0%**
+- **Cache STATUSPY (per-lang):** **warm-cache** | hit **52**, miss **0**, hit-rate **100.0%**
+- **Cache STATUSPY (per-file):** hit **1976**, miss **0**, hit-rate **100.0%**
 - **Profiler cyklu (ostatni):** -
 - **Osobny raport:** `i18n/status/translation_global_overview.json`
 
@@ -240,7 +240,7 @@
 ### ⏱️ Strict Hourly Window (JSONL-only)
 | Metryka | Wartość |
 |---------|---------|
-| Okno | **1.0h** (2026-02-14T12:39:34.728021Z → 2026-02-14T13:39:34.728021Z) |
+| Okno | **1.0h** (2026-02-14T12:39:39.069196Z → 2026-02-14T13:39:39.069196Z) |
 | Cykle | **61** (AUTO=32, MIGRATION=29) |
 | Pending skip | **0** (all=0.0%, migration=0.0%) |
 | Guard fail rate | **0.4%** |
@@ -367,7 +367,7 @@
 ## 🔴 LIVE: Szczegóły wykonania
 
 > **[LIVE]** 🟢 ACTIVE  
-> Świeżość: 1s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T13:39:33Z
+> Świeżość: 6s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T13:39:33Z
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
@@ -415,7 +415,7 @@
 ## 📜 HISTORY
 
 > **[HISTORY]** 🟢 ACTIVE  
-> Świeżość: teraz | Źródło: `daily/*.json / ops.jsonl` | Ostatnia aktualizacja: 2026-02-14 13:39:29
+> Świeżość: teraz | Źródło: `daily/*.json / ops.jsonl` | Ostatnia aktualizacja: 2026-02-14 13:39:38
 
 - 🔧 MIGRATION: zakończono kategorię [actions] → ok (keys+0, files+0) — migration finished
 - 🔧 MIGRATION: mini-batch stop [actions] → ok (keys+0) — no new data
@@ -435,7 +435,7 @@
 
 - Cykle: **49**
 - MIGRATION: **+0** kluczy, **0** plików `.lua`
-- Kategorie dotknięte: actions, creaturescripts, quests, scripts, spells, talkactions
+- Kategorie dotknięte: actions, creaturescripts, mounts, quests, scripts, spells, talkactions
 - Błędy: **363**
 
 
@@ -753,13 +753,14 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2026-02-14 13:39:29  
+📅 Auto-updated by Worker v1.1 | Last: 2026-02-14 13:39:38  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
 
 ## Ostatnio zmigrowane NPC
 
+- ✅ `global_storage` - ukończono 2026-02-14 14:39
 - ✅ `account_repository_db.hpp` - ukończono 2026-02-13 18:50
 - ✅ `account.hpp` - ukończono 2026-02-13 18:50
 - ✅ `pch.cpp` - ukończono 2026-02-13 18:50
@@ -769,7 +770,6 @@
 - ✅ `modules` - ukończono 2026-02-13 18:49
 - ✅ `bank_system` - ukończono 2026-02-13 18:49
 - ✅ `keyword_handler` - ukończono 2026-02-13 18:49
-- ✅ `custom_modules` - ukończono 2026-02-13 18:49
 
 ---
 

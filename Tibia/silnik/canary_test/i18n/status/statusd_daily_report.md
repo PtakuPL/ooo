@@ -1,34 +1,34 @@
 # I18N Daily Executive Report (24h)
 
-- Generated: `2026-02-14T08:40:23.028788Z`
-- Window: `2026-02-13T08:40:23.028788Z` -> `2026-02-14T08:40:23.028788Z`
+- Generated: `2026-02-14T09:13:34.934408Z`
+- Window: `2026-02-13T09:13:34.934408Z` -> `2026-02-14T09:13:34.934408Z`
 
 ## KPI 24h
 
 | KPI | Value |
 |---|---:|
-| translated | 45260 |
-| guard_fail | 2466 |
-| guard_fail_rate | 5.17% |
-| no_progress_entries | 23 |
-| no_progress_rate | 2.58% |
+| translated | 45422 |
+| guard_fail | 2538 |
+| guard_fail_rate | 5.29% |
+| no_progress_entries | 24 |
+| no_progress_rate | 2.66% |
 | pending_skip_count | 0 |
 | pending_skip_share | 0.00% |
 | pending_skip_source | pending_skip_24h_latest.json |
-| throughput_keys_per_h_window | 1885.8 |
-| throughput_keys_per_h_active | 3478.1 |
+| throughput_keys_per_h_window | 1892.6 |
+| throughput_keys_per_h_active | 3346.0 |
 
 ## Quality 24h
 
 | Metric | Value |
 |---|---:|
-| suspicious_count | 11713 |
-| suspicious_high_count | 8690 |
-| suspicious_high_rate | 15.48% |
-| suspicious_high_top_lang | es:2513 |
-| identical_to_en_count | 17403 |
-| gt_guard_fails_count | 9240 |
-| latest_audit_issues_found | 23 |
+| suspicious_count | 11805 |
+| suspicious_high_count | 8782 |
+| suspicious_high_rate | 15.60% |
+| suspicious_high_top_lang | es:2563 |
+| identical_to_en_count | 17414 |
+| gt_guard_fails_count | 9295 |
+| latest_audit_issues_found | 25 |
 
 ## Repair Queue 24h
 
@@ -97,27 +97,27 @@
 | severity | ok |
 | reason | tracking |
 | pending_langs | es,pl |
-| active_minutes | 1.38 |
-| cycle_delta | 1 |
+| active_minutes | 34.542 |
+| cycle_delta | 10 |
 | best_quality_drop_pct | 0.00% |
 
 ## Coverage Snapshot
 
 | Lang | Completion | Missing Keys | EN Copy Keys | Serwer | Instalka |
 |---|---:|---:|---:|---:|---:|
-| PL | 75.14% | 2083 | 2837 | 75.4% | 71.4% |
-| ES | 86.70% | 232 | 10858 | 88.2% | 66.7% |
-| DE | 16.40% | 174 | 18319 | 17.4% | 3.1% |
-| PT | 19.49% | 2155 | 24106 | 20.5% | 6.4% |
-| FR | 54.05% | 174 | 24565 | 51.8% | 83.7% |
-| RU | 54.88% | 174 | 32175 | 52.2% | 89.7% |
+| PL | 75.14% | 2083 | 2838 | 75.4% | 71.4% |
+| ES | 86.78% | 232 | 10483 | 88.2% | 67.8% |
+| DE | 16.71% | 174 | 17854 | 17.8% | 3.1% |
+| PT | 19.66% | 2155 | 23948 | 20.7% | 6.4% |
+| FR | 54.15% | 174 | 24187 | 51.9% | 83.7% |
+| RU | 54.96% | 174 | 32095 | 52.3% | 89.7% |
 
 ## Top Languages (by translated)
 
 | Lang | Translated | Guard Fail | GF Rate | No Progress |
 |---|---:|---:|---:|---:|
-| es | 9722 | 719 | 6.89% | 5.19% |
-| pl | 7224 | 1283 | 15.08% | 3.49% |
+| es | 9853 | 759 | 7.15% | 5.45% |
+| pl | 7255 | 1315 | 15.34% | 3.42% |
 | pt | 1447 | 0 | 0.00% | 0.00% |
 | de | 1360 | 0 | 0.00% | 0.00% |
 | fr | 1287 | 0 | 0.00% | 0.00% |
@@ -135,14 +135,14 @@
 | npc.json | 12619 | 675 | 5.08% | 0.00% |
 | monsters.json | 6269 | 176 | 2.73% | 0.00% |
 | server.json | 3040 | 0 | 0.00% | 0.00% |
-| html.json | 2559 | 198 | 7.18% | 0.00% |
-| otclient_modules.json | 1659 | 468 | 22.00% | 0.00% |
+| html.json | 2634 | 203 | 7.16% | 0.00% |
+| otclient_modules.json | 1709 | 491 | 22.32% | 0.00% |
 | scripts.json | 1495 | 191 | 11.33% | 0.00% |
 | questlog.json | 1440 | 0 | 0.00% | 14.29% |
 | quests.json | 1080 | 67 | 5.84% | 0.00% |
-| books.json | 634 | 44 | 6.49% | 7.14% |
-| cpp.json | 391 | 208 | 34.72% | 0.00% |
-| talkactions.json | 375 | 42 | 10.07% | 0.00% |
+| books.json | 639 | 48 | 6.99% | 6.90% |
+| cpp.json | 408 | 225 | 35.55% | 0.00% |
+| talkactions.json | 377 | 46 | 10.87% | 0.00% |
 
 ## Notes
 

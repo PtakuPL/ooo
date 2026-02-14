@@ -2,9 +2,9 @@
   "lang": "zh",
   "coverage_pct": 66.4,
   "crossref_enabled": true,
-  "auto_fix_enabled": false,
-  "auto_fix_limit": 30,
-  "checked_at": "2026-02-14T07:59:47.633036Z",
+  "auto_fix_enabled": true,
+  "auto_fix_limit": 80,
+  "checked_at": "2026-02-14T09:32:11.546508Z",
   "issues_total": 460,
   "issues_by_type": {
     "consistency_in_language": 1,
@@ -4167,6 +4167,6 @@
     "attempted": 0,
     "applied": 0,
     "skipped": 0,
-    "errors": 0
+    "errors": 80
   }
 }

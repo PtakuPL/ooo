@@ -1,128 +1,62 @@
 {
-  "timestamp": "2026-02-14T08:40:38.994722Z",
-  "language": "es",
-  "json_file": "html.json",
-  "translated": 75,
+  "timestamp": "2026-02-14T09:55:28.157325Z",
+  "language": "pl",
+  "json_file": "cpp.json",
+  "translated": 9,
   "entries": [
     {
-      "key": "html.monsters.html.text1",
-      "en": "{{ getMonsterLink(monster.name, true)|raw }}",
-      "translated": "{{ getMonsterLink(monster.name, true)|raw }}",
+      "key": "cpp.augment.augments_inspect",
+      "en": "{0}.",
+      "translated": "{0}.",
       "source": "tm"
     },
     {
-      "key": "html.monsters.html.text2",
-      "en": "{{ (monster.rewardboss) ? 'Yes' : '---' }}",
-      "translated": "{{ (monster.rewardboss) ? 'Yes' : '---' }}",
+      "key": "cpp.augment.format_base",
+      "en": "{0} -> {1:+}% {2} {3}",
+      "translated": "{0} -> {1:+}% {2} {3}",
       "source": "tm"
     },
     {
-      "key": "html.monsters.html.text3",
-      "en": "{{ monster.health|number_format(0, '.', ',') }}",
-      "translated": "{{ monster.health|number_format(0, '.', ',') }}",
+      "key": "cpp.augment.format_no_value",
+      "en": "{0} -> {1}",
+      "translated": "{0} -> {1}",
       "source": "tm"
     },
     {
-      "key": "html.monsters.html.text4",
-      "en": "{{ monster.exp|number_format(0, '.', ',') }}",
-      "translated": "{{ monster.exp|number_format(0, '.', ',') }}",
+      "key": "cpp.augment.format_with_value",
+      "en": "{0} -> {1:+}% {2}",
+      "translated": "{0} -> {1:+}% {2}",
       "source": "tm"
     },
     {
-      "key": "html.account.management.html.text2",
-      "en": "{{ email_new_time|date(\"j F Y, G:i:s\") }}",
-      "translated": "{{ email_new_time|date(\"j F Y, G:i:s\") }}",
+      "key": "cpp.inspect.invisibility",
+      "en": "Invisibility",
+      "translated": "Invisibility",
       "source": "tm"
     },
     {
-      "key": "html.account.management.html.text4",
-      "en": "{{ account_created|date(\"j F Y, G:i:s\") }}",
-      "translated": "{{ account_created|date(\"j F Y, G:i:s\") }}",
+      "key": "cpp.player.look.guild_nick",
+      "en": "({0})",
+      "translated": "({0})",
       "source": "tm"
     },
     {
-      "key": "html.account.management.html.text5",
-      "en": "{{ \"now\"|date(\"j F Y, G:i:s\") }}",
-      "translated": "{{ \"now\"|date(\"j F Y, G:i:s\") }}",
+      "key": "cpp.player.look.verb_loyalty",
+      "en": "{0} {1} {2}.",
+      "translated": "{0} {1} {2}.",
       "source": "tm"
     },
     {
-      "key": "html.account.characters.change_name.html.text2",
-      "en": "{{ player.getName() }}",
-      "translated": "{{ player.getName() }}",
+      "key": "cpp.player.look.verb_role",
+      "en": "{0} {1}.",
+      "translated": "{0} {1}.",
       "source": "tm"
     },
     {
-      "key": "html.admin.menus.form.html.text2",
-      "en": "{{ template.template }}",
-      "translated": "{{ template.template }}",
+      "key": "cpp.vocation.id_2",
+      "en": "Druid",
+      "translated": "Druid",
       "source": "tm"
-    },
-    {
-      "key": "html.guilds.change_logo.html.text2",
-      "en": "{{ setting('core.guild_image_size_kb') }} KB",
-      "translated": "{{ setting('core.guild_image_size_kb') }} KB",
-      "source": "tm"
-    },
-    {
-      "key": "html.forum.new_thread.html.text2",
-      "en": "[url]http://address.com/[/url]",
-      "translated": "[url]http://address.com/[/url]",
-      "source": "tm"
-    },
-    {
-      "key": "html.houses.view.html.text1",
-      "en": "{{ houseSize }} square meters",
-      "translated": "{{ houseSize }} square meters",
-      "source": "tm"
-    },
-    {
-      "key": "html.houses.view.html.text4",
-      "en": "{{ config.lua.serverName }}",
-      "translated": "{{ config.lua.serverName }}",
-      "source": "tm"
-    },
-    {
-      "key": "html.admin.news.table.html.text1",
-      "en": "{{ news.date|date(setting('core.news_date_format')) }}",
-      "translated": "{{ news.date|date(setting('core.news_date_format')) }}",
-      "source": "tm"
-    },
-    {
-      "key": "html.admin.news.table.html.text2",
-      "en": "{{ news.player_name }}",
-      "translated": "{{ news.player_name }}",
-      "source": "tm"
-    },
-    {
-      "key": "html.exception.html.text2",
-      "en": "Whoops something went wrong...",
-      "translated": "Vaya, algo salió mal...",
-      "source": "google_translate"
-    },
-    {
-      "key": "html.admin.plugins.outdated.html.text1",
-      "en": "{{ plugin.yourVersion }}",
-      "translated": "{{ plugin.yourVersion }}",
-      "source": "google_translate"
-    },
-    {
-      "key": "html.admin.plugins.outdated.html.text2",
-      "en": "{{ plugin.latestVersion }}",
-      "translated": "{{ plugin.latestVersion }}",
-      "source": "google_translate"
-    },
-    {
-      "key": "html.admin.plugins.outdated.html.text3",
-      "en": "{{ plugin.download_link }}",
-      "translated": "{{ plugin.download_link }}",
-      "source": "google_translate"
-    },
-    {
-      "key": "html.team.html.text1",
-      "en": "{{ group.group_name|capitalize }}",
-      "translated": "{{ group.group_name|capitalize }}",
-      "source": "google_translate"
     }
   ]
 }

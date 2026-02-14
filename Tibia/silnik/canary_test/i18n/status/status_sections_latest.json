@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-02-14T08:40:22.280847Z",
+  "generated_at_utc": "2026-02-14T09:56:01.087485Z",
   "current_phase": "AUTO_TRANSLATE",
   "sections": {
     "META": {
@@ -9,39 +9,39 @@
       "reason": "",
       "freshness": "teraz",
       "source": "update_github_status()",
-      "last_update": "2026-02-14 08:40:20"
+      "last_update": "2026-02-14 09:56:00"
     },
     "LIVE": {
       "state": "active",
       "state_label": "🟢 ACTIVE",
       "reason": "",
-      "freshness": "12s temu",
+      "freshness": "6s temu",
       "source": "activity.json / worker_state.json",
-      "last_update": "2026-02-14T08:40:10Z"
+      "last_update": "2026-02-14T09:55:55Z"
     },
     "MIGRATION": {
       "state": "inactive",
       "state_label": "🔒 INACTIVE",
       "reason": "worker w trybie AUTO_TRANSLATE",
-      "freshness": "13h temu",
+      "freshness": "14h temu",
       "source": "i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt",
-      "last_update": "2026-02-14 08:40:20"
+      "last_update": "2026-02-14 09:56:00"
     },
     "TRANSLATION": {
       "state": "active",
       "state_label": "🟢 ACTIVE",
       "reason": "",
-      "freshness": "2min temu",
+      "freshness": "10s temu",
       "source": "translation_guard_latest.json / translation_recent_latest.json",
-      "last_update": "2026-02-14T08:38:20.889691Z"
+      "last_update": "2026-02-14T09:55:51.049910Z"
     },
     "QUALITY": {
       "state": "inactive",
       "state_label": "🔒 INACTIVE",
       "reason": "worker w trybie AUTO_TRANSLATE",
-      "freshness": "2min temu",
+      "freshness": "26min temu",
       "source": "quality_audit_latest.json",
-      "last_update": "2026-02-14T08:38:21.594876Z"
+      "last_update": "2026-02-14T09:29:42.881259Z"
     },
     "HISTORY": {
       "state": "active",
@@ -49,7 +49,7 @@
       "reason": "",
       "freshness": "teraz",
       "source": "daily/*.json / ops.jsonl",
-      "last_update": "2026-02-14 08:40:20"
+      "last_update": "2026-02-14 09:56:00"
     }
   }
 }

@@ -6,6 +6,54 @@
 
 ---
 
+## 0h) Aktualizacja koordynacyjna (2026-02-14 09:56 UTC)
+
+Zmiany runtime/status istotne dla planu C++/H:
+- ✅ Worker runtime ma potwierdzony `heartbeat_tick` w `activity.json.recent[]` podczas AUTO_TRANSLATE (mid-cycle heartbeat).
+- ✅ Snapshot `identical_to_en_repair_queue.json` odświeża się już także przez ścieżkę `queue_only` (niezależnie od pełnej rundy repair).
+- ✅ Guardian lock owner jest walidowany po `cmdline` (`i18n_guardian.sh --daemon`), co ogranicza false-positive blokady locka przez reuse PID.
+- ✅ `i18n_start_all.sh` ma twardszy check startu (`wait_for_stable_process`) dla guardian/statusd.
+
+Nowe wymagania dla pipeline semantycznego C++/H:
+- ⬜ Dodać sygnał `startup_stability_hint` (`stable|short_lived|background_killed`) dla modułów orkiestracyjnych, aby korelować zmiany semantyczne z realnym utrzymaniem procesów.
+- ⬜ Dodać pole `repair_queue_freshness_hint` (`fresh|aging|stale`) kompatybilne z nowym kontraktem `queue_only`, żeby łatwo mapować wpływ zmian kodu na stale queue alerty.
+- ⬜ Rozszerzyć `process_evidence` o `cmdline_verified` (bool), spójnie z nową walidacją lock owner PID w guardianie.
+
+## 0g) Aktualizacja koordynacyjna (2026-02-14 09:12 UTC)
+
+Zmiany runtime/status istotne dla planu C++/H:
+- ✅ `statusd_doctor` ma dynamiczny kontrakt heartbeat:
+  - progi `aging/stale/stuck` są pobierane z `guardian_health.json`,
+  - klasyfikacja uwzględnia aktywność procesu/logów (`STALE_HEARTBEAT_BUT_ACTIVE`).
+- ✅ `statusd_doctor` publikuje `worker_process_watch`:
+  - topologia procesów workera (`main`, `descendant extra`, `foreign extra`),
+  - wiek extra procesów i severity pod kątem realnej duplikacji.
+- ✅ `statusd_report.worker` ma poprawione pola procesu:
+  - `pid` (jawny),
+  - `pid_alive` (potwierdzone przez `/proc/<pid>`).
+
+Nowe wymagania dla pipeline semantycznego C++/H:
+- ⬜ Dodać pole `runtime_topology_hint` (`single_process|single_descendant|multi_descendant|foreign_duplicate`) kompatybilne z `worker_process_watch.status`.
+- ⬜ Dodać pole `heartbeat_pressure_hint` (`fresh|aging|stale_active|stale`) kompatybilne z nowym kontraktem doctora.
+- ⬜ Dodać `process_evidence` (`pid`, `ppid`, `cmdline_match`) w artefaktach semantycznych używanych do korelacji zmian runtime.
+
+## 0f) Aktualizacja koordynacyjna (2026-02-14 08:40 UTC)
+
+Zmiany runtime/status istotne dla planu C++/H:
+- ✅ `statusd` ma workflow `registry_reconcile` (auto + ręczny), a metryki driftu są rozdzielone na `raw` i `effective`.
+- ✅ `translation_global_overview.migration` i `i18n_global_stats.migration` mają nowe pola:
+  - `total_keys_extracted_worker_registry_raw`,
+  - `registry_reconcile_adjustment`,
+  - `keys_extracted_outside_worker_registry_raw`.
+- ✅ `statusd_report`/`statusd_doctor`/`statusd_daily_report` mają blok `priority_gate_watch` (aktywny gate ES/PL, cykle, quality-drop).
+- ✅ `statusd --auto-action` ma wykonawczą akcję `SWITCH_PROFILE_QUALITY_REPAIR_ON_PRIORITY_GATE_STUCK` (feature-flag), więc sygnał watchdoga może wywoływać realną zmianę profilu runtime.
+- ✅ Guardian ma source-priority arbitration locka, co stabilizuje źródło uruchamiania daemona.
+
+Nowe wymagania dla pipeline semantycznego C++/H:
+- ⬜ Dodać sygnał `registry_view` (`raw|effective`) dla raportów semantycznych, aby korelacja z KPI driftu była jednoznaczna.
+- ⬜ Dodać sygnał `priority_gate_impact` (czy zmiana modułu wiąże się z falą `priority_gate` i jej stuck/no-stuck).
+- ⬜ Dodać `reconcile_granularity_hint` (`global_adjustment|per_file_backfill_needed`) pod planowany etap 2 reconcile.
+
 ## 0e) Aktualizacja koordynacyjna (2026-02-14 08:18 UTC)
 
 Zmiany runtime/status istotne dla planu C++/H:

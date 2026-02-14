@@ -1,191 +1,30 @@
 {
-  "timestamp": "2026-02-14T08:40:40.410879Z",
+  "timestamp": "2026-02-14T09:29:42.881259Z",
   "checked_entries": 100,
-  "issues_found": 25,
+  "issues_found": 2,
   "issues_by_type": {
-    "identical_to_en_exempt": 64,
-    "identical_to_en": 25,
-    "suspicious_log_critical": 107,
-    "suspicious_log_low": 93,
+    "identical_to_en_exempt": 36,
+    "identical_to_en": 2,
+    "suspicious_log_critical": 93,
+    "suspicious_log_low": 107,
     "suspicious_rejected_critical": 200
   },
   "issues": [
     {
-      "key": "otclient_modules.charms.tr_64",
+      "key": "client.spells.text1",
       "lang": "pl",
       "type": "identical_to_en",
-      "en": "Curse",
-      "translated": "Curse"
+      "en": "Apprentice's Strike",
+      "translated": "Apprentice's Strike"
     },
     {
-      "key": "otclient_modules.game_cyclopedia.tr_6",
+      "key": "client.spells.text4",
       "lang": "pl",
       "type": "identical_to_en",
-      "en": "Cyclopedia",
-      "translated": "Cyclopedia"
-    },
-    {
-      "key": "otclient_modules.game_cyclopedia_otui.tr_8",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Cyclopedia",
-      "translated": "Cyclopedia"
-    },
-    {
-      "key": "otclient_modules.player.tr_6",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Druid",
-      "translated": "Druid"
-    },
-    {
-      "key": "otclient_modules.spelllist_otui.tr_12",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Druid",
-      "translated": "Druid"
-    },
-    {
-      "key": "questlog.quest_11.mission_46.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Destroyers",
-      "translated": "Paw and Fur: Destroyers"
-    },
-    {
-      "key": "questlog.quest_11.mission_47.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Undead Dragons",
-      "translated": "Paw and Fur: Undead Dragons"
-    },
-    {
-      "key": "questlog.quest_11.mission_48.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Demons",
-      "translated": "Paw and Fur: Demons"
-    },
-    {
-      "key": "questlog.quest_11.mission_50.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Hide",
-      "translated": "Paw and Fur: Hide"
-    },
-    {
-      "key": "questlog.quest_11.mission_51.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Deathbine",
-      "translated": "Paw and Fur: Deathbine"
-    },
-    {
-      "key": "questlog.quest_11.mission_52.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: The Bloodtusk",
-      "translated": "Paw and Fur: The Bloodtusk"
-    },
-    {
-      "key": "questlog.quest_11.mission_53.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Shardhead",
-      "translated": "Paw and Fur: Shardhead"
-    },
-    {
-      "key": "questlog.quest_11.mission_54.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Esmerelda",
-      "translated": "Paw and Fur: Esmerelda"
-    },
-    {
-      "key": "questlog.quest_11.mission_55.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Fleshcrawler",
-      "translated": "Paw and Fur: Fleshcrawler"
-    },
-    {
-      "key": "questlog.quest_11.mission_56.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Ribstride",
-      "translated": "Paw and Fur: Ribstride"
-    },
-    {
-      "key": "questlog.quest_11.mission_57.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Bloodweb",
-      "translated": "Paw and Fur: Bloodweb"
-    },
-    {
-      "key": "questlog.quest_11.mission_58.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Thul",
-      "translated": "Paw and Fur: Thul"
-    },
-    {
-      "key": "questlog.quest_11.mission_59.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: The Old Widow",
-      "translated": "Paw and Fur: The Old Widow"
-    },
-    {
-      "key": "questlog.quest_11.mission_60.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Hemming",
-      "translated": "Paw and Fur: Hemming"
-    },
-    {
-      "key": "questlog.quest_11.mission_61.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Tormentor",
-      "translated": "Paw and Fur: Tormentor"
-    },
-    {
-      "key": "questlog.quest_11.mission_62.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Flameborn",
-      "translated": "Paw and Fur: Flameborn"
-    },
-    {
-      "key": "questlog.quest_11.mission_63.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Fazzrah",
-      "translated": "Paw and Fur: Fazzrah"
-    },
-    {
-      "key": "questlog.quest_11.mission_64.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Tromphonyte",
-      "translated": "Paw and Fur: Tromphonyte"
-    },
-    {
-      "key": "cpp.inspect.invisibility",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Invisibility",
-      "translated": "Invisibility"
-    },
-    {
-      "key": "cpp.vocation.id_2",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Druid",
-      "translated": "Druid"
+      "en": "Nature's Embrace",
+      "translated": "Nature's Embrace"
     }
   ],
   "threshold": 10,
-  "slow_mode": true
+  "slow_mode": false
 }

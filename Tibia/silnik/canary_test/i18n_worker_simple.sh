@@ -9511,9 +9511,11 @@ REPAIR_T2_LIMIT="${REPAIR_T2_LIMIT:-50}"
 REPAIR_T3_LIMIT="${REPAIR_T3_LIMIT:-20}"
 REPAIR_T2_ENABLED="${REPAIR_T2_ENABLED:-true}"
 REPAIR_T3_ENABLED="${REPAIR_T3_ENABLED:-true}"
+REPAIR_QUEUE_REFRESH_MIN_INTERVAL_SEC="${REPAIR_QUEUE_REFRESH_MIN_INTERVAL_SEC:-600}"
 
 repair_identical_bonus_round() {
     local cycle="$1"
+    local run_mode="${2:-normal}"
 
     # Sprawdź interwał — preferuj globalny licznik cykli dispatchera (nie resetuje się po restarcie workera),
     # aby runda repair nie była głodzona przez częste restarty i reset lokalnego CYCLE=1.
@@ -9541,17 +9543,70 @@ PYREPAIRCYCLE
             ;;
     esac
 
-    if (( interval_cycle % REPAIR_IDENTICAL_INTERVAL != 0 )); then
-        return 0
+    local interval_due="false"
+    if (( interval_cycle % REPAIR_IDENTICAL_INTERVAL == 0 )); then
+        interval_due="true"
     fi
-    
-    echo "🔧 REPAIR: identical_to_en bonus round (cykl $cycle, interval_key=$interval_cycle)"
-    
+    if [ "$run_mode" = "queue_only" ]; then
+        interval_due="false"
+    fi
+
+    local queue_refresh_interval_sec="${REPAIR_QUEUE_REFRESH_MIN_INTERVAL_SEC:-600}"
+    case "${queue_refresh_interval_sec:-}" in
+        ''|*[!0-9]*)
+            queue_refresh_interval_sec=600
+            ;;
+    esac
+    if [ "${queue_refresh_interval_sec:-0}" -lt 120 ] 2>/dev/null; then
+        queue_refresh_interval_sec=120
+    fi
+
+    local queue_age_sec
+    queue_age_sec=$(python3 - "$STATUS_DIR/identical_to_en_repair_queue.json" <<'PYREPAIRAGE'
+import json, os, sys
+from datetime import datetime, timezone
+
+path = sys.argv[1]
+if not os.path.exists(path):
+    print("MISSING")
+    raise SystemExit(0)
+
+try:
+    with open(path, encoding="utf-8") as f:
+        data = json.load(f)
+    ts = str(data.get("timestamp", "") or "")
+    if not ts:
+        print("UNKNOWN")
+        raise SystemExit(0)
+    dt = datetime.fromisoformat(ts.replace("Z", "+00:00"))
+    age = (datetime.now(timezone.utc) - dt).total_seconds()
+    print(max(0, int(age)))
+except Exception:
+    print("UNKNOWN")
+PYREPAIRAGE
+)
+
+    local queue_refresh_needed="false"
+    if [ "$interval_due" = "true" ]; then
+        queue_refresh_needed="true"
+    elif [ "$queue_age_sec" = "MISSING" ] || [ "$queue_age_sec" = "UNKNOWN" ]; then
+        queue_refresh_needed="true"
+    elif [ "${queue_age_sec:-0}" -ge "$queue_refresh_interval_sec" ] 2>/dev/null; then
+        queue_refresh_needed="true"
+    fi
+
     # Zbuduj kolejkę naprawczą i wybierz target wg priorytetu
     local repair_target
-    export REPAIR_PRIORITY_LANGS
-    export REPAIR_T2_ENABLED REPAIR_T3_ENABLED
-    repair_target=$(python3 << 'REPAIR_SELECT_PY'
+    if [ "$queue_refresh_needed" = "true" ]; then
+        if [ "$interval_due" = "true" ]; then
+            echo "🔧 REPAIR: identical_to_en bonus round (cykl $cycle, interval_key=$interval_cycle)"
+        else
+            echo "🧭 REPAIR QUEUE refresh: cykl=$cycle age=${queue_age_sec}s (min_interval=${queue_refresh_interval_sec}s)"
+        fi
+
+        export REPAIR_PRIORITY_LANGS
+        export REPAIR_T2_ENABLED REPAIR_T3_ENABLED
+        repair_target=$(python3 << 'REPAIR_SELECT_PY'
 import json, os, re
 from collections import Counter
 from datetime import datetime, timezone
@@ -9738,7 +9793,31 @@ if selected:
 else:
     print("NONE:0:0")
 REPAIR_SELECT_PY
-    )
+        )
+    else
+        repair_target=$(python3 - "$STATUS_DIR/identical_to_en_repair_queue.json" <<'PYREPAIRSELECTLATEST'
+import json, sys
+path = sys.argv[1]
+try:
+    with open(path, encoding="utf-8") as f:
+        data = json.load(f)
+    sel = data.get("selected", {}) if isinstance(data.get("selected", {}), dict) else {}
+    lang = str(sel.get("lang", "") or "")
+    json_file = str(sel.get("json_file", "") or "")
+    count = int(float(sel.get("identical_to_en", 0) or 0))
+    if lang and json_file and count > 0:
+        print(f"{lang}:{json_file}:{count}")
+    else:
+        print("NONE:0:0")
+except Exception:
+    print("NONE:0:0")
+PYREPAIRSELECTLATEST
+)
+    fi
+
+    if [ "$interval_due" != "true" ]; then
+        return 0
+    fi
 
     local R_LANG R_FILE R_COUNT
     R_LANG=$(echo "$repair_target" | cut -d: -f1)
@@ -10003,6 +10082,9 @@ PYREPAIRTUNING
 # Kopiuje klucze EN do innych języków z prefiksem [LANG] lub używa prostych
 # tłumaczeń dla popularnych fraz.
 #===============================================================================
+AUTO_TRANSLATE_MID_CYCLE_HEARTBEAT_ENABLED="${AUTO_TRANSLATE_MID_CYCLE_HEARTBEAT_ENABLED:-true}"
+AUTO_TRANSLATE_MID_CYCLE_HEARTBEAT_INTERVAL_SEC="${AUTO_TRANSLATE_MID_CYCLE_HEARTBEAT_INTERVAL_SEC:-90}"
+
 auto_translate_keys() {
     local target_lang="$1"
     local json_file="$2"
@@ -10022,7 +10104,32 @@ auto_translate_keys() {
     fi
 
     log "${CYAN}🌍 AUTO TRANSLATE: $target_lang <- $json_file (limit: $translate_limit, strict: $strict_mode, GT: $USE_GOOGLE_TRANSLATE)${NC}"
-    
+
+    local _hb_enabled _hb_interval _hb_pid
+    _hb_enabled="$(echo "${AUTO_TRANSLATE_MID_CYCLE_HEARTBEAT_ENABLED:-true}" | tr '[:upper:]' '[:lower:]')"
+    _hb_interval="${AUTO_TRANSLATE_MID_CYCLE_HEARTBEAT_INTERVAL_SEC:-90}"
+    case "${_hb_interval:-}" in
+        ''|*[!0-9]*)
+            _hb_interval=90
+            ;;
+    esac
+    if [ "${_hb_interval:-0}" -lt 30 ] 2>/dev/null; then
+        _hb_interval=30
+    fi
+    _hb_pid=""
+    repair_identical_bonus_round "${CYCLE:-0}" "queue_only" >/dev/null 2>&1 || true
+    if [ "$_hb_enabled" = "1" ] || [ "$_hb_enabled" = "true" ] || [ "$_hb_enabled" = "yes" ] || [ "$_hb_enabled" = "on" ]; then
+        status_update_activity "running" "${CYCLE:-0}" "AUTO_TRANSLATE" "heartbeat_tick" "$target_lang" "$json_file" "auto translate in progress" 0 0 "keys" 0
+        (
+            while true; do
+                sleep "$_hb_interval" || break
+                status_update_activity "running" "${CYCLE:-0}" "AUTO_TRANSLATE" "heartbeat_tick" "$target_lang" "$json_file" "auto translate in progress" 0 0 "keys" 0
+                repair_identical_bonus_round "${CYCLE:-0}" "queue_only" >/dev/null 2>&1 || true
+            done
+        ) &
+        _hb_pid="$!"
+    fi
+
     local _at_out _at_rc _translated _placeholders
     _at_out=$(USE_GOOGLE_TRANSLATE="$USE_GOOGLE_TRANSLATE" GT_BATCH_SIZE="$GT_BATCH_SIZE" GT_DELAY="$GT_DELAY" python3 - "$target_lang" "$json_file" "$translate_limit" "$strict_mode" << 'AUTOTRANSPY'
 import json
@@ -13097,6 +13204,39 @@ def detect_suspicious(en_text: str, translated_text: str, lang: str, key: str = 
                 "message": f"Tekst >{tr_len} znaków bez oczekiwanych diakrytyków dla {lang_lower}",
             })
 
+    # S13: German noun capitalization — DE wymaga wielkich liter w rzeczownikach
+    # Heurystyka: jeśli EN ma „the X" a DE ma „der/die/das x" (mała litera po artykule)
+    if lang_lower == "de" and tr_len > 10 and tr != en:
+        de_article_pattern = re.findall(r'\b(?:[Dd]er|[Dd]ie|[Dd]as|[Dd]en|[Dd]em|[Dd]es|[Ee]in|[Ee]ine|[Ee]inem|[Ee]inen|[Ee]ines|[Ee]iner)\s+([a-zäöüß]\w*)', tr)
+        if de_article_pattern:
+            # Rzeczowniki po artykule powinny zaczynać się wielką literą
+            # Wyjątki: krótkie słowa (2 znaki), przyimki, spójniki
+            de_exceptions = {"zu", "am", "im", "um", "ab", "an", "in", "so", "da", "ob", "ja"}
+            bad_nouns = [w for w in de_article_pattern if len(w) > 2 and w.lower() not in de_exceptions]
+            if bad_nouns:
+                issues.append({
+                    "type": "de_noun_lowercase",
+                    "severity": "MEDIUM",
+                    "message": f"DE: Rzeczownik po artykule małą literą: {', '.join(bad_nouns[:3])}",
+                    "examples": bad_nouns[:3],
+                })
+
+    # S14: French punctuation spacing — FR wymaga spacji przed ; : ! ? »
+    if lang_lower == "fr" and tr_len > 10 and tr != en:
+        # Brakująca spacja przed dwuznakową interpunkcją (;:!?)
+        fr_bad_punct = re.findall(r'[^\s]([;:!?»])', tr)
+        if fr_bad_punct:
+            # Filtruj: pozwól na http:// i inne URL-e
+            clean_tr = re.sub(r'https?://\S+', '', tr)
+            fr_bad_real = re.findall(r'[a-zA-ZÀ-ÿ]([;:!?])', clean_tr)
+            if len(fr_bad_real) >= 2:  # Tylko jeśli 2+ wystąpienia (pojedyncze mogą być intencjonalne)
+                issues.append({
+                    "type": "fr_punctuation_spacing",
+                    "severity": "LOW",
+                    "message": f"FR: Brak spacji przed interpunkcją ({len(fr_bad_real)} przypadków)",
+                    "count": len(fr_bad_real),
+                })
+
     return issues
 
 # ==========================================================================
@@ -13948,6 +14088,12 @@ print(f"__QUALITY__ {json.dumps(quality_data, ensure_ascii=False)}")
 AUTOTRANSPY
     2>&1)
     _at_rc=$?
+
+    if [ -n "${_hb_pid:-}" ]; then
+        kill "$_hb_pid" 2>/dev/null || true
+        wait "$_hb_pid" 2>/dev/null || true
+    fi
+    repair_identical_bonus_round "${CYCLE:-0}" "queue_only" >/dev/null 2>&1 || true
 
     echo "$_at_out" >&2
 

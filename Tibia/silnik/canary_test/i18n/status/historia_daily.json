@@ -1,0 +1,80 @@
+[
+  {
+    "date": "2026-02-14",
+    "hours_covered": 5,
+    "threshold": 5,
+    "is_final": false,
+    "ts_first": "2026-02-14T08:00:00Z",
+    "ts_last": "2026-02-14T09:54:45Z",
+    "translated": 904,
+    "guard_fail": 716,
+    "suspicious_high": 589,
+    "identical_to_en": 278,
+    "repair_start": 4800,
+    "repair_end": 4752,
+    "cycles": 9,
+    "coverage_start": 22.5,
+    "coverage_end": 23.08,
+    "guard_fail_pct": 44.2,
+    "throughput_per_h": 180.8,
+    "per_lang": {
+      "pl": {
+        "t": 664,
+        "gf": 386,
+        "cov": 75.31
+      },
+      "es": {
+        "t": 160,
+        "gf": 330,
+        "cov": 86.78
+      }
+    },
+    "per_cat": {
+      "items.json": {
+        "t": 420,
+        "gf": 27
+      },
+      "npc.json": {
+        "t": 312,
+        "gf": 469
+      },
+      "startup.json": {
+        "t": 32,
+        "gf": 4
+      },
+      "books.json": {
+        "t": 20,
+        "gf": 16
+      },
+      "otclient_modules.json": {
+        "t": 20,
+        "gf": 144
+      },
+      "php.json": {
+        "t": 8,
+        "gf": 0
+      },
+      "talkactions.json": {
+        "t": 8,
+        "gf": 16
+      },
+      "modules.json": {
+        "t": 4,
+        "gf": 8
+      },
+      "client.json": {
+        "t": 0,
+        "gf": 24
+      },
+      "otclient_data.json": {
+        "t": 0,
+        "gf": 8
+      }
+    },
+    "mode_distribution": {
+      "AUTO_TRANSLATE": 67
+    },
+    "migration_completed": 2297,
+    "migration_total": 2299
+  }
+]

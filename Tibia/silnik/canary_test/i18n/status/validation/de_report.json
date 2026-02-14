@@ -3,19 +3,19 @@
   "script_group": "latin",
   "total_keys": 53586,
   "translated": 23987,
-  "identical_to_en": 18394,
+  "identical_to_en": 17790,
   "placeholder_keys": 29425,
   "coverage_pct": 44.8,
-  "issues_total": 4307,
+  "issues_total": 4310,
   "issues_by_type": {
     "V3_empty": 4301,
+    "V4_artifact": 4,
     "V1_placeholder_mismatch": 4,
-    "V4_artifact": 1,
     "V5_pipe_mismatch": 1
   },
   "issues_by_severity": {
     "CRITICAL": 5,
-    "HIGH": 1,
+    "HIGH": 4,
     "MEDIUM": 0,
     "LOW": 4301
   },
@@ -50,6 +50,24 @@
       "category": "talkactions",
       "type": "V5_pipe_mismatch",
       "severity": "CRITICAL"
+    },
+    {
+      "key": "book.otbm.battletactics_for_mages_ii",
+      "category": "books",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "book.otbm.battletactics_for_mages_iii",
+      "category": "books",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "book.otbm.battletactics_for_mages_iv",
+      "category": "books",
+      "type": "V4_artifact",
+      "severity": "HIGH"
     },
     {
       "key": "quests.bigfoot_burden.gnomedix_msg4",
@@ -122,33 +140,15 @@
       "category": "npc",
       "type": "V3_empty",
       "severity": "LOW"
-    },
-    {
-      "key": "npc.ezebeth.say_4",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.ezebeth.say_5",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.ezebeth.say_6",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
     }
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 430,
+    "issues_total": 440,
     "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 30,
-    "auto_fix_applied": 75
+    "length_ratio": 40,
+    "auto_fix_applied": 64
   },
-  "validated_at": "2026-02-14T08:33:52.416869Z"
+  "validated_at": "2026-02-14T09:27:41.890441Z"
 }

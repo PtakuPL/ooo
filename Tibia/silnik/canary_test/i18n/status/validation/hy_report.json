@@ -2,20 +2,20 @@
   "lang": "hy",
   "script_group": "exotic",
   "total_keys": 53586,
-  "translated": 35699,
-  "identical_to_en": 29231,
-  "placeholder_keys": 15732,
-  "coverage_pct": 66.6,
-  "issues_total": 6247,
+  "translated": 35778,
+  "identical_to_en": 28798,
+  "placeholder_keys": 15653,
+  "coverage_pct": 66.8,
+  "issues_total": 6250,
   "issues_by_type": {
     "V3_empty": 6113,
-    "script_wrong_script": 126,
+    "script_wrong_script": 129,
     "V1_placeholder_mismatch": 7,
     "V5_pipe_mismatch": 1
   },
   "issues_by_severity": {
     "CRITICAL": 8,
-    "HIGH": 126,
+    "HIGH": 129,
     "MEDIUM": 0,
     "LOW": 6113
   },
@@ -70,6 +70,24 @@
       "severity": "CRITICAL"
     },
     {
+      "key": "achievement.72.name",
+      "category": "achievements",
+      "type": "script_wrong_script",
+      "severity": "HIGH"
+    },
+    {
+      "key": "achievement.206.name",
+      "category": "achievements",
+      "type": "script_wrong_script",
+      "severity": "HIGH"
+    },
+    {
+      "key": "achievement.270.name",
+      "category": "achievements",
+      "type": "script_wrong_script",
+      "severity": "HIGH"
+    },
+    {
       "key": "event.player.msg1",
       "category": "events",
       "type": "script_wrong_script",
@@ -122,33 +140,15 @@
       "category": "items",
       "type": "script_wrong_script",
       "severity": "HIGH"
-    },
-    {
-      "key": "item.11047.name",
-      "category": "items",
-      "type": "script_wrong_script",
-      "severity": "HIGH"
-    },
-    {
-      "key": "item.11053.name",
-      "category": "items",
-      "type": "script_wrong_script",
-      "severity": "HIGH"
-    },
-    {
-      "key": "item.11057.name",
-      "category": "items",
-      "type": "script_wrong_script",
-      "severity": "HIGH"
     }
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 457,
+    "issues_total": 463,
     "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 57,
-    "auto_fix_applied": 0
+    "length_ratio": 63,
+    "auto_fix_applied": 49
   },
-  "validated_at": "2026-02-14T07:59:37.123207Z"
+  "validated_at": "2026-02-14T09:29:25.139054Z"
 }

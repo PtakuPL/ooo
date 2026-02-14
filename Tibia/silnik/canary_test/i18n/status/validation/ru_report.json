@@ -2,25 +2,26 @@
   "lang": "ru",
   "script_group": "cyrillic",
   "total_keys": 53586,
-  "translated": 32208,
-  "identical_to_en": 24251,
-  "placeholder_keys": 19223,
-  "coverage_pct": 60.1,
-  "issues_total": 7355,
+  "translated": 53400,
+  "identical_to_en": 31769,
+  "placeholder_keys": 12,
+  "coverage_pct": 99.7,
+  "issues_total": 15051,
   "issues_by_type": {
+    "script_cyrillic_latin_mix": 8577,
     "V3_empty": 6100,
-    "script_cyrillic_latin_mix": 1169,
-    "V1_placeholder_mismatch": 84,
+    "V1_placeholder_mismatch": 364,
+    "V6_newline_mismatch": 8,
     "V4_artifact": 1,
     "V5_pipe_mismatch": 1
   },
   "issues_by_severity": {
-    "CRITICAL": 85,
-    "HIGH": 1170,
-    "MEDIUM": 0,
+    "CRITICAL": 365,
+    "HIGH": 8578,
+    "MEDIUM": 8,
     "LOW": 6100
   },
-  "score": 92.8,
+  "score": 73.3,
   "worst_keys": [
     {
       "key": "html.statistics.html.text2",
@@ -107,6 +108,12 @@
       "severity": "CRITICAL"
     },
     {
+      "key": "html.account.characters.change_sex.html.text1",
+      "category": "html",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
       "key": "html.account.characters.change_sex.html.text2",
       "category": "html",
       "type": "V1_placeholder_mismatch",
@@ -135,21 +142,15 @@
       "category": "html",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
-    },
-    {
-      "key": "html.monsters.html.text4",
-      "category": "html",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
     }
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 463,
-    "consistency": 3,
+    "issues_total": 533,
+    "consistency": 66,
     "pl_reference": 400,
-    "length_ratio": 60,
-    "auto_fix_applied": 0
+    "length_ratio": 67,
+    "auto_fix_applied": 80
   },
-  "validated_at": "2026-02-14T07:59:43.128101Z"
+  "validated_at": "2026-02-14T09:32:21.434995Z"
 }

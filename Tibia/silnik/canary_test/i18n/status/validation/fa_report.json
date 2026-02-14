@@ -1,24 +1,26 @@
 {
   "lang": "fa",
   "script_group": "latin",
-  "total_keys": 53586,
-  "translated": 35779,
-  "identical_to_en": 29241,
+  "total_keys": 52538,
+  "translated": 34731,
+  "identical_to_en": 27798,
   "placeholder_keys": 15652,
-  "coverage_pct": 66.8,
-  "issues_total": 6121,
+  "coverage_pct": 66.1,
+  "issues_total": 6125,
   "issues_by_type": {
     "V3_empty": 6113,
     "V1_placeholder_mismatch": 7,
+    "V4_artifact": 3,
+    "V6_newline_mismatch": 1,
     "V5_pipe_mismatch": 1
   },
   "issues_by_severity": {
     "CRITICAL": 8,
-    "HIGH": 0,
-    "MEDIUM": 0,
+    "HIGH": 3,
+    "MEDIUM": 1,
     "LOW": 6113
   },
-  "score": 99.1,
+  "score": 99.0,
   "worst_keys": [
     {
       "key": "scripts.actions_rewards.msg_1",
@@ -69,6 +71,30 @@
       "severity": "CRITICAL"
     },
     {
+      "key": "book.otbm.battletactics_for_mages_ii",
+      "category": "books",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "book.otbm.battletactics_for_mages_iii",
+      "category": "books",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "book.otbm.battletactics_for_mages_iv",
+      "category": "books",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "book.otbm.diary_of_hengis_wulfsonnni_can",
+      "category": "books",
+      "type": "V6_newline_mismatch",
+      "severity": "MEDIUM"
+    },
+    {
       "key": "npc.a_majestic_warwolf.say_1",
       "category": "npc",
       "type": "V3_empty",
@@ -115,30 +141,6 @@
       "category": "npc",
       "type": "V3_empty",
       "severity": "LOW"
-    },
-    {
-      "key": "npc.a_prisoner.say_8",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_prisoner.say_9",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_restless_soul.multi_1",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_restless_soul.multi_2",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
     }
   ],
   "crossref": {
@@ -149,5 +151,5 @@
     "length_ratio": 57,
     "auto_fix_applied": 79
   },
-  "validated_at": "2026-02-14T08:36:14.985144Z"
+  "validated_at": "2026-02-14T09:30:52.260731Z"
 }

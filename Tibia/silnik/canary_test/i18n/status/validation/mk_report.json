@@ -1,25 +1,26 @@
 {
   "lang": "mk",
   "script_group": "cyrillic",
-  "total_keys": 53586,
-  "translated": 30832,
-  "identical_to_en": 24354,
+  "total_keys": 52538,
+  "translated": 29784,
+  "identical_to_en": 23068,
   "placeholder_keys": 20599,
-  "coverage_pct": 57.5,
-  "issues_total": 6210,
+  "coverage_pct": 56.7,
+  "issues_total": 6218,
   "issues_by_type": {
     "V3_empty": 6113,
-    "script_cyrillic_latin_mix": 89,
+    "script_cyrillic_latin_mix": 94,
     "V1_placeholder_mismatch": 7,
+    "V4_artifact": 3,
     "V5_pipe_mismatch": 1
   },
   "issues_by_severity": {
     "CRITICAL": 8,
-    "HIGH": 89,
+    "HIGH": 97,
     "MEDIUM": 0,
     "LOW": 6113
   },
-  "score": 98.5,
+  "score": 98.4,
   "worst_keys": [
     {
       "key": "scripts.actions_rewards.msg_1",
@@ -70,6 +71,54 @@
       "severity": "CRITICAL"
     },
     {
+      "key": "book.otbm.1st_floor_magic_emporium",
+      "category": "books",
+      "type": "script_cyrillic_latin_mix",
+      "severity": "HIGH"
+    },
+    {
+      "key": "book.otbm.1st_floor_the_archers_grounds",
+      "category": "books",
+      "type": "script_cyrillic_latin_mix",
+      "severity": "HIGH"
+    },
+    {
+      "key": "book.otbm.abdendriel_furniture_store",
+      "category": "books",
+      "type": "script_cyrillic_latin_mix",
+      "severity": "HIGH"
+    },
+    {
+      "key": "book.otbm.battle_tactics_for_demona_mazeforces",
+      "category": "books",
+      "type": "script_cyrillic_latin_mix",
+      "severity": "HIGH"
+    },
+    {
+      "key": "book.otbm.battletactics_for_mages_ii",
+      "category": "books",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "book.otbm.battletactics_for_mages_ii",
+      "category": "books",
+      "type": "script_cyrillic_latin_mix",
+      "severity": "HIGH"
+    },
+    {
+      "key": "book.otbm.battletactics_for_mages_iii",
+      "category": "books",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "book.otbm.battletactics_for_mages_iv",
+      "category": "books",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
       "key": "event.player.msg1",
       "category": "events",
       "type": "script_cyrillic_latin_mix",
@@ -92,54 +141,6 @@
       "category": "items",
       "type": "script_cyrillic_latin_mix",
       "severity": "HIGH"
-    },
-    {
-      "key": "item.21432.name",
-      "category": "items",
-      "type": "script_cyrillic_latin_mix",
-      "severity": "HIGH"
-    },
-    {
-      "key": "item.21434.name",
-      "category": "items",
-      "type": "script_cyrillic_latin_mix",
-      "severity": "HIGH"
-    },
-    {
-      "key": "item.24966.name",
-      "category": "items",
-      "type": "script_cyrillic_latin_mix",
-      "severity": "HIGH"
-    },
-    {
-      "key": "item.29276.name",
-      "category": "items",
-      "type": "script_cyrillic_latin_mix",
-      "severity": "HIGH"
-    },
-    {
-      "key": "item.3147.name",
-      "category": "items",
-      "type": "script_cyrillic_latin_mix",
-      "severity": "HIGH"
-    },
-    {
-      "key": "item.3148.name",
-      "category": "items",
-      "type": "script_cyrillic_latin_mix",
-      "severity": "HIGH"
-    },
-    {
-      "key": "item.3149.name",
-      "category": "items",
-      "type": "script_cyrillic_latin_mix",
-      "severity": "HIGH"
-    },
-    {
-      "key": "item.3152.name",
-      "category": "items",
-      "type": "script_cyrillic_latin_mix",
-      "severity": "HIGH"
     }
   ],
   "crossref": {
@@ -148,7 +149,7 @@
     "consistency": 0,
     "pl_reference": 400,
     "length_ratio": 57,
-    "auto_fix_applied": 0
+    "auto_fix_applied": 80
   },
-  "validated_at": "2026-02-14T07:59:39.804190Z"
+  "validated_at": "2026-02-14T09:32:32.218612Z"
 }

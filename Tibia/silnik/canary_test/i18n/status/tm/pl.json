@@ -81390,5 +81390,925 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-14T08:40:24.029952Z"
+  },
+  "item.15345.name": {
+    "src_hash": "b5a61ffa400b95ea98495f07d310b8cf",
+    "text": "bazaltowa ściana",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T09:20:15.093387Z"
+  },
+  "item.15466.name": {
+    "src_hash": "ed5ededbfd2be117598eb3e53417fc04",
+    "text": "kryształy",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T09:20:15.094797Z"
+  },
+  "item.16168.name": {
+    "src_hash": "6e028c9160e12a579678f2f9b1759791",
+    "text": "stalagmit z zielonego kryształu",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T09:20:15.132547Z"
+  },
+  "item.22676.name": {
+    "src_hash": "435c3d3165f056f4ca8a53bda34fb8ad",
+    "text": "gniazdo smoka",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T09:20:15.557485Z"
+  },
+  "item.25077.name": {
+    "src_hash": "0e9312087f58f367d001ec9bae8f325a",
+    "text": "Jajko",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T09:20:15.710815Z"
+  },
+  "item.25087.name": {
+    "src_hash": "0e9312087f58f367d001ec9bae8f325a",
+    "text": "Jajko",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T09:20:15.713111Z"
+  },
+  "item.32227.name": {
+    "src_hash": "25b1331a71dad1d01977134b8c6b524f",
+    "text": "Zagubiona dusza",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T09:20:16.284789Z"
+  },
+  "item.34085.name": {
+    "src_hash": "944f2c83436c2d6aa6af34c9cfd36347",
+    "text": "Pożeracz dusz",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T09:20:16.457194Z"
+  },
+  "item.3606.name": {
+    "src_hash": "0e9312087f58f367d001ec9bae8f325a",
+    "text": "Jajko",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T09:20:16.569230Z"
+  },
+  "item.8737.name": {
+    "src_hash": "e40a11578769485d190e51230f5967de",
+    "text": "Token CM",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T09:20:17.503790Z"
+  },
+  "item.15133.name": {
+    "src_hash": "85106cb5a86ffe8057f528ff37ebdf53",
+    "text": "duży lepki grzyb",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:20:21.735866Z"
+  },
+  "item.15134.name": {
+    "src_hash": "859fab00eb0298f9baff37942bec022e",
+    "text": "duży trzon grzyba",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:20:21.736242Z"
+  },
+  "item.15135.name": {
+    "src_hash": "85106cb5a86ffe8057f528ff37ebdf53",
+    "text": "duży lepki grzyb",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:20:21.736575Z"
+  },
+  "item.15136.name": {
+    "src_hash": "0efc1eeb46ec58fff2af0219bcd35f53",
+    "text": "duży gąbczasty grzyb",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:20:21.736896Z"
+  },
+  "item.15141.name": {
+    "src_hash": "66f546381bf812cbd76d9e540c73dd04",
+    "text": "grzyby rosnące na filarze",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:20:21.737278Z"
+  },
+  "item.15143.name": {
+    "src_hash": "c91ec46447c1e698aae4701d667ca1cc",
+    "text": "stalagmity",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:20:27.634159Z"
+  },
+  "item.15144.name": {
+    "src_hash": "195a9bcf6eeb01122594d58a3ceafa93",
+    "text": "grzybowe schody korkociągowe",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:20:27.634598Z"
+  },
+  "item.15151.name": {
+    "src_hash": "1c59c2222035fa4fb5449b35b549804c",
+    "text": "stołek ropuchy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:20:27.634876Z"
+  },
+  "item.15152.name": {
+    "src_hash": "1c59c2222035fa4fb5449b35b549804c",
+    "text": "stołek ropuchy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:20:27.635113Z"
+  },
+  "item.15153.name": {
+    "src_hash": "1c59c2222035fa4fb5449b35b549804c",
+    "text": "stołek ropuchy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:20:27.635340Z"
+  },
+  "item.15154.name": {
+    "src_hash": "1c59c2222035fa4fb5449b35b549804c",
+    "text": "stołek ropuchy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:20:33.273656Z"
+  },
+  "item.15276.name": {
+    "src_hash": "87cace3a4cba9177e68ea3fc9c90fafa",
+    "text": "miniaturowy dom",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:20:33.273941Z"
+  },
+  "item.15319.name": {
+    "src_hash": "874b68eee6786760ceb104933263e2b1",
+    "text": "duży niebieski kryształ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:20:33.274244Z"
+  },
+  "item.15320.name": {
+    "src_hash": "4f535e0b6892108cc8575c7f3d79515b",
+    "text": "duży kryształowy teleport",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:20:33.274630Z"
+  },
+  "item.1538.name": {
+    "src_hash": "6fc769a9033d616dc5665e5eeda7f1b8",
+    "text": "bambusowe okno ścienne",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:20:33.274932Z"
+  },
+  "item.1541.name": {
+    "src_hash": "6fc769a9033d616dc5665e5eeda7f1b8",
+    "text": "bambusowe okno ścienne",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:20:37.124356Z"
+  },
+  "item.1542.name": {
+    "src_hash": "3355422c34ac82ed950028cf2dd3fac5",
+    "text": "palisada bambusowa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:20:37.124653Z"
+  },
+  "item.15467.name": {
+    "src_hash": "874b68eee6786760ceb104933263e2b1",
+    "text": "duży niebieski kryształ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:20:37.124962Z"
+  },
+  "item.1557.name": {
+    "src_hash": "29ce6182fed9103279c2ee7a9594dd3d",
+    "text": "brama",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:20:37.125324Z"
+  },
+  "item.1561.name": {
+    "src_hash": "29ce6182fed9103279c2ee7a9594dd3d",
+    "text": "brama",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:20:37.125545Z"
+  },
+  "item.15632.name": {
+    "src_hash": "1f8184690356a50b3c8130f4c826c430",
+    "text": "gigantyczna marchewka",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:20:41.279247Z"
+  },
+  "item.15633.name": {
+    "src_hash": "a5d834f7e633e328da861cee2ddbfcb6",
+    "text": "posąg demonicznego króliczka",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:20:41.279592Z"
+  },
+  "item.15634.name": {
+    "src_hash": "005d05de29487ec44cd07bd9d757d4e1",
+    "text": "marchew",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:20:41.279845Z"
+  },
+  "item.15635.name": {
+    "src_hash": "186a8b72fe696268c330f725f52be9ff",
+    "text": "marchewki",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:20:41.280066Z"
+  },
+  "item.1565.name": {
+    "src_hash": "29ce6182fed9103279c2ee7a9594dd3d",
+    "text": "brama",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:20:41.280319Z"
+  },
+  "item.1566.name": {
+    "src_hash": "cbfc07583f13c79dac2907489a8a169e",
+    "text": "kamienny łuk",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:20:47.051540Z"
+  },
+  "item.15699.name": {
+    "src_hash": "64e21a1e9f3d56203337730f1ab24547",
+    "text": "jakiś nawóz grzybowy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:20:47.051990Z"
+  },
+  "item.15701.name": {
+    "src_hash": "ed7f885de22edd0d9bf3d821244328e9",
+    "text": "ubita ziemia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:20:47.052253Z"
+  },
+  "item.15704.name": {
+    "src_hash": "7147460ddf3fc4e8e5b7f8e9df2d80c0",
+    "text": "grzyb purchawkowy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:20:47.052530Z"
+  },
+  "item.15705.name": {
+    "src_hash": "8461d4ebc64c9921a879b323fcfd8e92",
+    "text": "czerwone zarodniki",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:20:47.052895Z"
+  },
+  "item.15706.name": {
+    "src_hash": "07fc824f12af1db1b52d7bcc951f4aed",
+    "text": "zielone zarodniki",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:20:52.157935Z"
+  },
+  "item.15707.name": {
+    "src_hash": "1ce54b9ebb958ef485dd5bd0c5c84642",
+    "text": "niebieskie zarodniki",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:20:52.158206Z"
+  },
+  "item.15708.name": {
+    "src_hash": "0827862b245c05d0ddbcb94e066d5687",
+    "text": "żółte zarodniki",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:20:52.158546Z"
+  },
+  "item.15710.name": {
+    "src_hash": "3ea6629fe7530a0300ef9db43bd70e1a",
+    "text": "docelowy manekin",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:20:52.158791Z"
+  },
+  "item.15712.name": {
+    "src_hash": "3dd1f69b5ac017c876b7c9e00fd61b12",
+    "text": "uszkodzony kryształ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:20:52.159060Z"
+  },
+  "item.15717.name": {
+    "src_hash": "092c2ecef3d0ae300fd3065f86c9c25c",
+    "text": "bazaltowa podłoga",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:20:57.857773Z"
+  },
+  "item.15758.name": {
+    "src_hash": "31c431698a52248592e4368acccc3fee",
+    "text": "lodowa ściana",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:20:57.858130Z"
+  },
+  "item.15793.name": {
+    "src_hash": "235b1fdcac7423f90fbfdc45a5882410",
+    "text": "krystaliczna strzała",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:20:57.858632Z"
+  },
+  "item.15795.name": {
+    "src_hash": "6b9d3992fa87f7a36122c262f1efde03",
+    "text": "nieświeże piwo grzybowe",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:20:57.858989Z"
+  },
+  "item.15796.name": {
+    "src_hash": "3dd1f69b5ac017c876b7c9e00fd61b12",
+    "text": "uszkodzony kryształ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:20:57.859289Z"
+  },
+  "item.15801.name": {
+    "src_hash": "d7a3f255ca2719f48ee4a2cc5a76b249",
+    "text": "samotny kryształ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:21:01.829041Z"
+  },
+  "item.15816.name": {
+    "src_hash": "7147460ddf3fc4e8e5b7f8e9df2d80c0",
+    "text": "grzyb purchawkowy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:21:01.829354Z"
+  },
+  "item.15826.name": {
+    "src_hash": "5a4896e73339f096616d967d3fcb9cee",
+    "text": "osełka",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:21:01.829586Z"
+  },
+  "item.15829.name": {
+    "src_hash": "7f8f42ac05def7a47a0cfebed611f607",
+    "text": "podłoga formy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:21:01.829820Z"
+  },
+  "item.15830.name": {
+    "src_hash": "8016e89133a342515a69ebb5cfd5d607",
+    "text": "trochę trufli",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:21:01.830064Z"
+  },
+  "item.15832.name": {
+    "src_hash": "8d45c85b51b27a04ad7fdfc3f126f9f8",
+    "text": "dzwonek",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:21:05.854995Z"
+  },
+  "item.15868.name": {
+    "src_hash": "5d954844f1287b2e113c150d4b908b00",
+    "text": "martwy pancernik",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:21:05.855290Z"
+  },
+  "item.15869.name": {
+    "src_hash": "5d954844f1287b2e113c150d4b908b00",
+    "text": "martwy pancernik",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:21:05.855569Z"
+  },
+  "item.15870.name": {
+    "src_hash": "5d954844f1287b2e113c150d4b908b00",
+    "text": "martwy pancernik",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:21:05.855820Z"
+  },
+  "item.15871.name": {
+    "src_hash": "5d954844f1287b2e113c150d4b908b00",
+    "text": "martwy pancernik",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:21:05.856059Z"
+  },
+  "item.15872.name": {
+    "src_hash": "799ab33e9881c299c4ab7bcb8d5ebc5d",
+    "text": "martwy, olbrzymi grzyb",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:21:09.981858Z"
+  },
+  "item.15873.name": {
+    "src_hash": "799ab33e9881c299c4ab7bcb8d5ebc5d",
+    "text": "martwy, olbrzymi grzyb",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:21:09.982548Z"
+  },
+  "item.15874.name": {
+    "src_hash": "799ab33e9881c299c4ab7bcb8d5ebc5d",
+    "text": "martwy, olbrzymi grzyb",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:21:09.982889Z"
+  },
+  "item.15875.name": {
+    "src_hash": "799ab33e9881c299c4ab7bcb8d5ebc5d",
+    "text": "martwy, olbrzymi grzyb",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:21:09.983256Z"
+  },
+  "item.15894.name": {
+    "src_hash": "2eaa316f6b07b80b4f5f7d2d9fe9ec7c",
+    "text": "dziwny idol",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:21:09.983589Z"
+  },
+  "item.15897.name": {
+    "src_hash": "2eaa316f6b07b80b4f5f7d2d9fe9ec7c",
+    "text": "dziwny idol",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:21:13.539091Z"
+  },
+  "item.15910.name": {
+    "src_hash": "22d8e87c45b07c7dbe793044f80b32ab",
+    "text": "martwy wędrowiec",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:21:13.539732Z"
+  },
+  "item.15911.name": {
+    "src_hash": "22d8e87c45b07c7dbe793044f80b32ab",
+    "text": "martwy wędrowiec",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:21:13.540341Z"
+  },
+  "item.15912.name": {
+    "src_hash": "22d8e87c45b07c7dbe793044f80b32ab",
+    "text": "martwy wędrowiec",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:21:13.540922Z"
+  },
+  "item.15913.name": {
+    "src_hash": "22d8e87c45b07c7dbe793044f80b32ab",
+    "text": "martwy wędrowiec",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:21:13.541533Z"
+  },
+  "item.15987.name": {
+    "src_hash": "487d6209317b55d3794a0521da6ec6db",
+    "text": "martwy golem lawowy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:21:18.513826Z"
+  },
+  "item.15988.name": {
+    "src_hash": "487d6209317b55d3794a0521da6ec6db",
+    "text": "martwy golem lawowy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:21:18.514194Z"
+  },
+  "item.15989.name": {
+    "src_hash": "487d6209317b55d3794a0521da6ec6db",
+    "text": "martwy golem lawowy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:21:18.514516Z"
+  },
+  "item.15990.name": {
+    "src_hash": "487d6209317b55d3794a0521da6ec6db",
+    "text": "martwy golem lawowy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:21:18.514784Z"
+  },
+  "item.15991.name": {
+    "src_hash": "2db4c368a3ecbba8092b8fc0023504f9",
+    "text": "martwy pełzacz magmy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:21:18.515090Z"
+  },
+  "item.15992.name": {
+    "src_hash": "2db4c368a3ecbba8092b8fc0023504f9",
+    "text": "martwy pełzacz magmy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:21:21.787316Z"
+  },
+  "item.15993.name": {
+    "src_hash": "2db4c368a3ecbba8092b8fc0023504f9",
+    "text": "martwy pełzacz magmy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:21:21.787674Z"
+  },
+  "item.15994.name": {
+    "src_hash": "2db4c368a3ecbba8092b8fc0023504f9",
+    "text": "martwy pełzacz magmy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:21:21.788111Z"
+  },
+  "item.16.name": {
+    "src_hash": "16d85aee1fae462033260e26406049e0",
+    "text": "miód",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:21:21.788330Z"
+  },
+  "item.16062.name": {
+    "src_hash": "34b53976d64250783495c04cd5a5dc6d",
+    "text": "martwy zniewolony krasnolud",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:21:21.788624Z"
+  },
+  "npc.alyxo.say_12": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Przepraszam.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T09:28:12.422404Z"
+  },
+  "npc.alyxo.say_15": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Przepraszam.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T09:28:12.423014Z"
+  },
+  "npc.alyxo.say_18": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Przepraszam.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T09:28:12.423568Z"
+  },
+  "npc.alyxo.say_21": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Przepraszam.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T09:28:12.424184Z"
+  },
+  "npc.alyxo.say_24": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Przepraszam.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T09:28:12.424727Z"
+  },
+  "npc.alyxo.say_6": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Przepraszam.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T09:28:12.425310Z"
+  },
+  "npc.alyxo.say_9": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Przepraszam.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T09:28:12.425945Z"
+  },
+  "npc.kallimae.say_3": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Przepraszam.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T09:28:14.058594Z"
+  },
+  "npc.kallimae.say_6": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Przepraszam.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T09:28:14.059334Z"
+  },
+  "npc.kallimae.say_9": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Przepraszam.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T09:28:14.059989Z"
+  },
+  "npc.narsai.say_3": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Przepraszam.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T09:28:14.492158Z"
+  },
+  "npc.narsai.say_6": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Przepraszam.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T09:28:14.492846Z"
+  },
+  "npc.saideh.say_3": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Przepraszam.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T09:28:14.819511Z"
+  },
+  "npc.shimun.say_3": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Przepraszam.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T09:28:14.883676Z"
+  },
+  "npc.shimun.say_6": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Przepraszam.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T09:28:14.884401Z"
+  },
+  "npc.tefrit.say_3": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Przepraszam.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T09:28:14.988732Z"
+  },
+  "npc.tefrit.say_6": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Przepraszam.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T09:28:14.991231Z"
+  },
+  "npc.yonan.say_3": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Przepraszam.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T09:28:15.256121Z"
+  },
+  "npc.yonan.say_6": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Przepraszam.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T09:28:15.257633Z"
+  },
+  "npc.jean_pierre.multi_88": {
+    "src_hash": "dc57ea3ec5d7c20d8323e061ae82267c",
+    "text": "Nie martw się, nie czeka Cię żadna wycieczka do świątyni. Przynieś mi tylko: jeden kawałek szynki, pięć śliwek, jedną cebulę, dwa buraki, jedną dynię i dwie papryczki jalapeño.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:28:41.020989Z"
+  },
+  "npc.jean_pierre.multi_89": {
+    "src_hash": "dc57ea3ec5d7c20d8323e061ae82267c",
+    "text": "Nie martw się, nie czeka Cię żadna wycieczka do świątyni. Przynieś mi tylko: jeden kawałek szynki, pięć śliwek, jedną cebulę, dwa buraki, jedną dynię i dwie papryczki jalapeño.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:28:41.021651Z"
+  },
+  "npc.jean_pierre.multi_90": {
+    "src_hash": "ca8f7f2223e0a8760211f17cd51c2091",
+    "text": "Przynieś mi następujące składniki, a pokażę ci, jak to się robi: dziesięć papryczek jalapeño, dwa kawałki sera, jedna troll green, jedno cieniste zioło, jedna fiolka miodu pitnego i dwa jajka.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:28:41.022623Z"
+  },
+  "npc.jean_pierre.multi_91": {
+    "src_hash": "ca8f7f2223e0a8760211f17cd51c2091",
+    "text": "Przynieś mi następujące składniki, a pokażę ci, jak to się robi: dziesięć papryczek jalapeño, dwa kawałki sera, jedna troll green, jedno cieniste zioło, jedna fiolka miodu pitnego i dwa jajka.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:28:41.023633Z"
+  },
+  "npc.jean_pierre.multi_92": {
+    "src_hash": "5e093dd1d180d270f7ddbd8a2b015675",
+    "text": "To także całkiem zdrowe! - No cóż, ciągle mi to powtarzam, zjadając trzecią porcję, hehehe. Przynieś mi następujące składniki, a pokażę ci, jak to się robi. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:28:47.255809Z"
+  },
+  "npc.jean_pierre.multi_99": {
+    "src_hash": "16535c8f480ad9ce69d71889c9edd406",
+    "text": "Część 'dragon' pochodzi z ognistego dopalacza tego posiłku, ale skrzydełka, których używamy, są znacznie mniejsze, choć mają podobny kształt. Przynieś mi następujące składniki, a pokażę ci, jak to się robi. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:28:47.256815Z"
+  },
+  "npc.jean_pierre.say_2": {
+    "src_hash": "7403afe5417483c23c11d58bdd50b82d",
+    "text": "Zainteresowały Cię moje przepisy? Dobrze. Nie są na sprzedaż, ale jeśli chcesz zostać moim {apprentice}, podzielę się z Tobą moją wiedzą.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:28:47.257544Z"
+  },
+  "npc.jerom.stdmod_12": {
+    "src_hash": "c6b473208184859ec2c0dfd7869db4df",
+    "text": "Oszalałbym, słuchając tego przez cały czas 'ribbit'. Ale każdy według własnego uznania!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:28:47.258064Z"
+  },
+  "npc.jerom.stdmod_13": {
+    "src_hash": "69795b86f290fe3193b2ecbcf0643dba",
+    "text": "Jestem tu nowy w Edron. Chciałem otworzyć sklep zoologiczny. Ale teraz jestem zrujnowany, uahahahaha <sniffs>.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:28:47.258791Z"
+  },
+  "npc.jerom.stdmod_14": {
+    "src_hash": "abf815d1fa04bac8c469b074f44a1b9b",
+    "text": "Muszę napisać list do króla. Nie jestem pewien, czy te 2 miliony złotych monet, których zażądał ode mnie Daniel Steelsoul, to nie było za dużo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:28:54.515843Z"
+  },
+  "npc.jerom.stdmod_17": {
+    "src_hash": "58cb87180693a7443d367b5f00a45dd3",
+    "text": "Raymond Striker zaproponował mi kontrakt na eksport papug z Meriany, ale nie będę ich już potrzebować, bo jestem zrujnowany.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:28:54.516508Z"
+  },
+  "npc.jerom.stdmod_20": {
+    "src_hash": "fe8c4dacb4cb5e331c1da295b66a21fe",
+    "text": "To prawda, dlaczego nie trzymać szczura jako zwierzęcia domowego! Mogą zjeść twoje śmieci, zamieszkać w twoich ścianach i nie musisz się martwić, jeśli ktoś umrze! Mógłbym odnieść ogromny sukces… gdybym nie został zrujnowany!!!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:28:54.517353Z"
+  },
+  "npc.jerom.stdmod_23": {
+    "src_hash": "384937f0bfad5dfc3b260272e5b7c1d0",
+    "text": "Dobry pomysł! Łatwo go złapać, a gdy właściciel zostanie ugryziony, nie może mnie już pozwać, hehehe!!....ale czekaj...zapomniałem....jestem zrujnowany, uahahahaha <sniffs>.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:28:54.518092Z"
+  },
+  "npc.jeronimo.say_4": {
+    "src_hash": "89eecd9a5574fef5a3e949d0b00ec25c",
+    "text": "Nie masz wystarczającej liczby barów.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:28:54.518525Z"
+  },
+  "npc.julius.multi_10": {
+    "src_hash": "45b928b07d4297a5851accebd7b5c12a",
+    "text": "Wiesz, doszedłem do wniosku, że zaklęcie nie zadziałało, bo za tym wszystkim kryje się inna, większa siła. Obawiam się, że jeśli nie znajdziemy źródła zagrożenia ze strony wampirów, nie uda nam się ich pokonać. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:28:57.330530Z"
+  },
+  "html.guilds.change_logo.html.text1": {
+    "src_hash": "5f962ac2f2e5857c0d862b1ef6efc399",
+    "text": "kino. Maks. rozmiar:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T09:49:46.085302Z"
   }
 }

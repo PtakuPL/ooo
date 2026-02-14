@@ -2,20 +2,22 @@
   "lang": "ja",
   "script_group": "cjk",
   "total_keys": 53586,
-  "translated": 35665,
-  "identical_to_en": 29280,
-  "placeholder_keys": 15766,
-  "coverage_pct": 66.6,
-  "issues_total": 6151,
+  "translated": 35740,
+  "identical_to_en": 28731,
+  "placeholder_keys": 15691,
+  "coverage_pct": 66.7,
+  "issues_total": 6157,
   "issues_by_type": {
     "V3_empty": 6143,
     "V1_placeholder_mismatch": 7,
+    "V2_length_ratio": 5,
+    "script_cjk_ratio": 1,
     "V5_pipe_mismatch": 1
   },
   "issues_by_severity": {
     "CRITICAL": 8,
     "HIGH": 0,
-    "MEDIUM": 0,
+    "MEDIUM": 6,
     "LOW": 6143
   },
   "score": 99.1,
@@ -69,6 +71,42 @@
       "severity": "CRITICAL"
     },
     {
+      "key": "achievement.30.name",
+      "category": "achievements",
+      "type": "V2_length_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "achievement.137.name",
+      "category": "achievements",
+      "type": "V2_length_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "achievement.146.name",
+      "category": "achievements",
+      "type": "V2_length_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "achievement.159.name",
+      "category": "achievements",
+      "type": "V2_length_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "achievement.159.name",
+      "category": "achievements",
+      "type": "script_cjk_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "achievement.235.name",
+      "category": "achievements",
+      "type": "V2_length_ratio",
+      "severity": "MEDIUM"
+    },
+    {
       "key": "npc.a_dead_bureaucrat1.say_2",
       "category": "npc",
       "type": "V3_empty",
@@ -103,51 +141,15 @@
       "category": "npc",
       "type": "V3_empty",
       "severity": "LOW"
-    },
-    {
-      "key": "npc.a_dead_bureaucrat4.say_3",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_dead_bureaucrat4.say_4",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_dragon_mother.multi_1",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_dragon_mother.multi_2",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_dragon_mother.multi_4",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_dragon_mother.multi_5",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
     }
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 458,
+    "issues_total": 475,
     "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 58,
-    "auto_fix_applied": 0
+    "length_ratio": 75,
+    "auto_fix_applied": 80
   },
-  "validated_at": "2026-02-14T07:59:38.001327Z"
+  "validated_at": "2026-02-14T09:33:43.399704Z"
 }

@@ -4,7 +4,7 @@
   "conditions": {
     "no_critical_token_errors": {
       "ok": false,
-      "guard_placeholder": 48,
+      "guard_placeholder": 63,
       "guard_pipe": 0
     },
     "guard_command_below_threshold": {
@@ -24,5 +24,5 @@
     }
   },
   "is_done": false,
-  "timestamp": "2026-02-14T08:22:11.063267Z"
+  "timestamp": "2026-02-14T09:29:42.052157Z"
 }

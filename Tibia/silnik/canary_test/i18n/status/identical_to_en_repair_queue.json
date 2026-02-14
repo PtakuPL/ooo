@@ -1,8 +1,58 @@
 {
-  "timestamp": "2026-02-14T08:19:19.921132Z",
+  "timestamp": "2026-02-14T09:55:20.868028Z",
   "priority_langs": [
     "es",
-    "pl"
+    "pl",
+    "cs",
+    "de",
+    "fr",
+    "hu",
+    "it",
+    "nl",
+    "pt",
+    "ru",
+    "sk",
+    "tr",
+    "ar",
+    "az",
+    "bg",
+    "bn",
+    "bs",
+    "da",
+    "el",
+    "et",
+    "fa",
+    "fi",
+    "he",
+    "hi",
+    "hr",
+    "hy",
+    "id",
+    "ja",
+    "ka",
+    "kk",
+    "ko",
+    "lt",
+    "lv",
+    "mk",
+    "ml",
+    "ms",
+    "no",
+    "ro",
+    "sl",
+    "sq",
+    "sr",
+    "sv",
+    "sw",
+    "ta",
+    "te",
+    "th",
+    "tl",
+    "uk",
+    "uz",
+    "vi",
+    "zh",
+    "zh_TW"
   ],
   "domain_priority": [
     "npc.json",
@@ -15,22 +65,72 @@
     "items.json",
     "monsters.json"
   ],
-  "entries_total": 31,
+  "entries_total": 1245,
   "entries_by_lang": {
-    "es": 4235,
-    "pl": 517
+    "es": 4176,
+    "pl": 479,
+    "cs": 15470,
+    "de": 10459,
+    "fr": 10136,
+    "hu": 15558,
+    "it": 15283,
+    "nl": 10817,
+    "pt": 15256,
+    "ru": 17358,
+    "sk": 15627,
+    "tr": 15069,
+    "ar": 18584,
+    "az": 15444,
+    "bg": 17358,
+    "bn": 16906,
+    "bs": 15645,
+    "da": 15558,
+    "el": 15534,
+    "et": 15508,
+    "fa": 16562,
+    "fi": 15540,
+    "he": 17184,
+    "hi": 17155,
+    "hr": 15533,
+    "hy": 17214,
+    "id": 17150,
+    "ja": 17204,
+    "ka": 17187,
+    "kk": 15577,
+    "ko": 17196,
+    "lt": 15570,
+    "lv": 15577,
+    "mk": 15055,
+    "ml": 17200,
+    "ms": 16753,
+    "no": 15634,
+    "ro": 10829,
+    "sl": 15683,
+    "sq": 15608,
+    "sr": 15694,
+    "sv": 15710,
+    "sw": 17291,
+    "ta": 17329,
+    "te": 17325,
+    "th": 17335,
+    "tl": 17411,
+    "uk": 15732,
+    "uz": 15687,
+    "vi": 17416,
+    "zh": 17578,
+    "zh_TW": 17433
   },
   "top_entries": [
     {
       "lang": "es",
       "json_file": "npc.json",
-      "identical_to_en": 1268,
+      "identical_to_en": 1266,
       "domain_priority": 0
     },
     {
       "lang": "es",
       "json_file": "server.json",
-      "identical_to_en": 2004,
+      "identical_to_en": 1942,
       "domain_priority": 1
     },
     {
@@ -66,7 +166,7 @@
     {
       "lang": "es",
       "json_file": "html.json",
-      "identical_to_en": 110,
+      "identical_to_en": 113,
       "domain_priority": 9
     },
     {
@@ -78,7 +178,7 @@
     {
       "lang": "es",
       "json_file": "otclient_modules.json",
-      "identical_to_en": 17,
+      "identical_to_en": 19,
       "domain_priority": 9
     },
     {
@@ -120,7 +220,7 @@
     {
       "lang": "pl",
       "json_file": "npc.json",
-      "identical_to_en": 212,
+      "identical_to_en": 163,
       "domain_priority": 0
     },
     {
@@ -144,19 +244,19 @@
     {
       "lang": "pl",
       "json_file": "monsters.json",
-      "identical_to_en": 42,
+      "identical_to_en": 40,
       "domain_priority": 8
     },
     {
       "lang": "pl",
       "json_file": "html.json",
-      "identical_to_en": 136,
+      "identical_to_en": 141,
       "domain_priority": 9
     },
     {
       "lang": "pl",
       "json_file": "otclient_modules.json",
-      "identical_to_en": 31,
+      "identical_to_en": 38,
       "domain_priority": 9
     },
     {
@@ -168,7 +268,7 @@
     {
       "lang": "pl",
       "json_file": "cpp.json",
-      "identical_to_en": 24,
+      "identical_to_en": 25,
       "domain_priority": 9
     },
     {
@@ -206,12 +306,1026 @@
       "json_file": "otclient_data.json",
       "identical_to_en": 1,
       "domain_priority": 9
+    },
+    {
+      "lang": "cs",
+      "json_file": "npc.json",
+      "identical_to_en": 6352,
+      "domain_priority": 0
+    },
+    {
+      "lang": "cs",
+      "json_file": "server.json",
+      "identical_to_en": 2505,
+      "domain_priority": 1
+    },
+    {
+      "lang": "cs",
+      "json_file": "talkactions.json",
+      "identical_to_en": 195,
+      "domain_priority": 2
+    },
+    {
+      "lang": "cs",
+      "json_file": "quests.json",
+      "identical_to_en": 603,
+      "domain_priority": 3
+    },
+    {
+      "lang": "cs",
+      "json_file": "actions.json",
+      "identical_to_en": 35,
+      "domain_priority": 4
+    },
+    {
+      "lang": "cs",
+      "json_file": "modules.json",
+      "identical_to_en": 19,
+      "domain_priority": 5
+    },
+    {
+      "lang": "cs",
+      "json_file": "messages.json",
+      "identical_to_en": 11,
+      "domain_priority": 6
+    },
+    {
+      "lang": "cs",
+      "json_file": "monsters.json",
+      "identical_to_en": 1041,
+      "domain_priority": 8
+    },
+    {
+      "lang": "cs",
+      "json_file": "scripts.json",
+      "identical_to_en": 2091,
+      "domain_priority": 9
+    },
+    {
+      "lang": "cs",
+      "json_file": "books.json",
+      "identical_to_en": 1266,
+      "domain_priority": 9
+    },
+    {
+      "lang": "cs",
+      "json_file": "cpp.json",
+      "identical_to_en": 849,
+      "domain_priority": 9
+    },
+    {
+      "lang": "cs",
+      "json_file": "achievements.json",
+      "identical_to_en": 131,
+      "domain_priority": 9
+    },
+    {
+      "lang": "cs",
+      "json_file": "raids.json",
+      "identical_to_en": 126,
+      "domain_priority": 9
+    },
+    {
+      "lang": "cs",
+      "json_file": "libs.json",
+      "identical_to_en": 82,
+      "domain_priority": 9
+    },
+    {
+      "lang": "cs",
+      "json_file": "npclib.json",
+      "identical_to_en": 80,
+      "domain_priority": 9
+    },
+    {
+      "lang": "cs",
+      "json_file": "php.json",
+      "identical_to_en": 22,
+      "domain_priority": 9
+    },
+    {
+      "lang": "cs",
+      "json_file": "chatchannels.json",
+      "identical_to_en": 16,
+      "domain_priority": 9
+    },
+    {
+      "lang": "cs",
+      "json_file": "example_merchant.json",
+      "identical_to_en": 13,
+      "domain_priority": 9
+    },
+    {
+      "lang": "cs",
+      "json_file": "events.json",
+      "identical_to_en": 9,
+      "domain_priority": 9
+    },
+    {
+      "lang": "cs",
+      "json_file": "spells.json",
+      "identical_to_en": 7,
+      "domain_priority": 9
+    },
+    {
+      "lang": "cs",
+      "json_file": "client.json",
+      "identical_to_en": 6,
+      "domain_priority": 9
+    },
+    {
+      "lang": "cs",
+      "json_file": "globalevents.json",
+      "identical_to_en": 5,
+      "domain_priority": 9
+    },
+    {
+      "lang": "cs",
+      "json_file": "creaturescripts.json",
+      "identical_to_en": 4,
+      "domain_priority": 9
+    },
+    {
+      "lang": "cs",
+      "json_file": "movements.json",
+      "identical_to_en": 2,
+      "domain_priority": 9
+    },
+    {
+      "lang": "de",
+      "json_file": "npc.json",
+      "identical_to_en": 3141,
+      "domain_priority": 0
+    },
+    {
+      "lang": "de",
+      "json_file": "server.json",
+      "identical_to_en": 1868,
+      "domain_priority": 1
+    },
+    {
+      "lang": "de",
+      "json_file": "talkactions.json",
+      "identical_to_en": 178,
+      "domain_priority": 2
+    },
+    {
+      "lang": "de",
+      "json_file": "quests.json",
+      "identical_to_en": 190,
+      "domain_priority": 3
+    },
+    {
+      "lang": "de",
+      "json_file": "modules.json",
+      "identical_to_en": 17,
+      "domain_priority": 5
+    },
+    {
+      "lang": "de",
+      "json_file": "messages.json",
+      "identical_to_en": 10,
+      "domain_priority": 6
+    },
+    {
+      "lang": "de",
+      "json_file": "monsters.json",
+      "identical_to_en": 872,
+      "domain_priority": 8
+    },
+    {
+      "lang": "de",
+      "json_file": "scripts.json",
+      "identical_to_en": 1404,
+      "domain_priority": 9
+    },
+    {
+      "lang": "de",
+      "json_file": "questlog.json",
+      "identical_to_en": 1264,
+      "domain_priority": 9
+    },
+    {
+      "lang": "de",
+      "json_file": "cpp.json",
+      "identical_to_en": 794,
+      "domain_priority": 9
+    },
+    {
+      "lang": "de",
+      "json_file": "books.json",
+      "identical_to_en": 382,
+      "domain_priority": 9
+    },
+    {
+      "lang": "de",
+      "json_file": "raids.json",
+      "identical_to_en": 101,
+      "domain_priority": 9
+    },
+    {
+      "lang": "de",
+      "json_file": "npclib.json",
+      "identical_to_en": 93,
+      "domain_priority": 9
+    },
+    {
+      "lang": "de",
+      "json_file": "libs.json",
+      "identical_to_en": 66,
+      "domain_priority": 9
+    },
+    {
+      "lang": "de",
+      "json_file": "php.json",
+      "identical_to_en": 20,
+      "domain_priority": 9
+    },
+    {
+      "lang": "de",
+      "json_file": "chatchannels.json",
+      "identical_to_en": 15,
+      "domain_priority": 9
+    },
+    {
+      "lang": "de",
+      "json_file": "html.json",
+      "identical_to_en": 13,
+      "domain_priority": 9
+    },
+    {
+      "lang": "de",
+      "json_file": "example_merchant.json",
+      "identical_to_en": 11,
+      "domain_priority": 9
+    },
+    {
+      "lang": "de",
+      "json_file": "otclient_modules.json",
+      "identical_to_en": 5,
+      "domain_priority": 9
+    },
+    {
+      "lang": "de",
+      "json_file": "client.json",
+      "identical_to_en": 4,
+      "domain_priority": 9
+    },
+    {
+      "lang": "de",
+      "json_file": "events.json",
+      "identical_to_en": 4,
+      "domain_priority": 9
+    },
+    {
+      "lang": "de",
+      "json_file": "globalevents.json",
+      "identical_to_en": 4,
+      "domain_priority": 9
+    },
+    {
+      "lang": "de",
+      "json_file": "creaturescripts.json",
+      "identical_to_en": 2,
+      "domain_priority": 9
+    },
+    {
+      "lang": "de",
+      "json_file": "movements.json",
+      "identical_to_en": 1,
+      "domain_priority": 9
+    },
+    {
+      "lang": "fr",
+      "json_file": "npc.json",
+      "identical_to_en": 2978,
+      "domain_priority": 0
+    },
+    {
+      "lang": "fr",
+      "json_file": "server.json",
+      "identical_to_en": 1869,
+      "domain_priority": 1
+    },
+    {
+      "lang": "fr",
+      "json_file": "talkactions.json",
+      "identical_to_en": 56,
+      "domain_priority": 2
+    },
+    {
+      "lang": "fr",
+      "json_file": "quests.json",
+      "identical_to_en": 265,
+      "domain_priority": 3
+    },
+    {
+      "lang": "fr",
+      "json_file": "modules.json",
+      "identical_to_en": 14,
+      "domain_priority": 5
+    },
+    {
+      "lang": "fr",
+      "json_file": "messages.json",
+      "identical_to_en": 3,
+      "domain_priority": 6
+    },
+    {
+      "lang": "fr",
+      "json_file": "monsters.json",
+      "identical_to_en": 891,
+      "domain_priority": 8
+    },
+    {
+      "lang": "fr",
+      "json_file": "scripts.json",
+      "identical_to_en": 1275,
+      "domain_priority": 9
+    },
+    {
+      "lang": "fr",
+      "json_file": "questlog.json",
+      "identical_to_en": 1263,
+      "domain_priority": 9
+    },
+    {
+      "lang": "fr",
+      "json_file": "books.json",
+      "identical_to_en": 451,
+      "domain_priority": 9
+    },
+    {
+      "lang": "fr",
+      "json_file": "cpp.json",
+      "identical_to_en": 401,
+      "domain_priority": 9
+    },
+    {
+      "lang": "fr",
+      "json_file": "html.json",
+      "identical_to_en": 359,
+      "domain_priority": 9
+    },
+    {
+      "lang": "fr",
+      "json_file": "raids.json",
+      "identical_to_en": 101,
+      "domain_priority": 9
+    },
+    {
+      "lang": "fr",
+      "json_file": "otclient_modules.json",
+      "identical_to_en": 68,
+      "domain_priority": 9
+    },
+    {
+      "lang": "fr",
+      "json_file": "client.json",
+      "identical_to_en": 52,
+      "domain_priority": 9
+    },
+    {
+      "lang": "fr",
+      "json_file": "libs.json",
+      "identical_to_en": 26,
+      "domain_priority": 9
+    },
+    {
+      "lang": "fr",
+      "json_file": "npclib.json",
+      "identical_to_en": 18,
+      "domain_priority": 9
+    },
+    {
+      "lang": "fr",
+      "json_file": "php.json",
+      "identical_to_en": 16,
+      "domain_priority": 9
+    },
+    {
+      "lang": "fr",
+      "json_file": "startup.json",
+      "identical_to_en": 11,
+      "domain_priority": 9
+    },
+    {
+      "lang": "fr",
+      "json_file": "otclient_data.json",
+      "identical_to_en": 7,
+      "domain_priority": 9
+    },
+    {
+      "lang": "fr",
+      "json_file": "chatchannels.json",
+      "identical_to_en": 6,
+      "domain_priority": 9
+    },
+    {
+      "lang": "fr",
+      "json_file": "example_merchant.json",
+      "identical_to_en": 4,
+      "domain_priority": 9
+    },
+    {
+      "lang": "fr",
+      "json_file": "creaturescripts.json",
+      "identical_to_en": 2,
+      "domain_priority": 9
+    },
+    {
+      "lang": "hu",
+      "json_file": "npc.json",
+      "identical_to_en": 6355,
+      "domain_priority": 0
+    },
+    {
+      "lang": "hu",
+      "json_file": "server.json",
+      "identical_to_en": 2505,
+      "domain_priority": 1
+    },
+    {
+      "lang": "hu",
+      "json_file": "talkactions.json",
+      "identical_to_en": 195,
+      "domain_priority": 2
+    },
+    {
+      "lang": "hu",
+      "json_file": "quests.json",
+      "identical_to_en": 603,
+      "domain_priority": 3
+    },
+    {
+      "lang": "hu",
+      "json_file": "actions.json",
+      "identical_to_en": 35,
+      "domain_priority": 4
+    },
+    {
+      "lang": "hu",
+      "json_file": "modules.json",
+      "identical_to_en": 19,
+      "domain_priority": 5
+    },
+    {
+      "lang": "hu",
+      "json_file": "messages.json",
+      "identical_to_en": 11,
+      "domain_priority": 6
+    },
+    {
+      "lang": "hu",
+      "json_file": "monsters.json",
+      "identical_to_en": 1041,
+      "domain_priority": 8
+    },
+    {
+      "lang": "hu",
+      "json_file": "scripts.json",
+      "identical_to_en": 2091,
+      "domain_priority": 9
+    },
+    {
+      "lang": "hu",
+      "json_file": "books.json",
+      "identical_to_en": 1266,
+      "domain_priority": 9
+    },
+    {
+      "lang": "hu",
+      "json_file": "cpp.json",
+      "identical_to_en": 849,
+      "domain_priority": 9
+    },
+    {
+      "lang": "hu",
+      "json_file": "achievements.json",
+      "identical_to_en": 220,
+      "domain_priority": 9
+    },
+    {
+      "lang": "hu",
+      "json_file": "raids.json",
+      "identical_to_en": 126,
+      "domain_priority": 9
+    },
+    {
+      "lang": "hu",
+      "json_file": "libs.json",
+      "identical_to_en": 82,
+      "domain_priority": 9
+    },
+    {
+      "lang": "hu",
+      "json_file": "npclib.json",
+      "identical_to_en": 80,
+      "domain_priority": 9
+    },
+    {
+      "lang": "hu",
+      "json_file": "php.json",
+      "identical_to_en": 22,
+      "domain_priority": 9
+    },
+    {
+      "lang": "hu",
+      "json_file": "chatchannels.json",
+      "identical_to_en": 16,
+      "domain_priority": 9
+    },
+    {
+      "lang": "hu",
+      "json_file": "example_merchant.json",
+      "identical_to_en": 13,
+      "domain_priority": 9
+    },
+    {
+      "lang": "hu",
+      "json_file": "events.json",
+      "identical_to_en": 9,
+      "domain_priority": 9
+    },
+    {
+      "lang": "hu",
+      "json_file": "client.json",
+      "identical_to_en": 6,
+      "domain_priority": 9
+    },
+    {
+      "lang": "hu",
+      "json_file": "globalevents.json",
+      "identical_to_en": 5,
+      "domain_priority": 9
+    },
+    {
+      "lang": "hu",
+      "json_file": "creaturescripts.json",
+      "identical_to_en": 4,
+      "domain_priority": 9
+    },
+    {
+      "lang": "hu",
+      "json_file": "spells.json",
+      "identical_to_en": 3,
+      "domain_priority": 9
+    },
+    {
+      "lang": "hu",
+      "json_file": "movements.json",
+      "identical_to_en": 2,
+      "domain_priority": 9
+    },
+    {
+      "lang": "it",
+      "json_file": "npc.json",
+      "identical_to_en": 6362,
+      "domain_priority": 0
+    },
+    {
+      "lang": "it",
+      "json_file": "server.json",
+      "identical_to_en": 2462,
+      "domain_priority": 1
+    },
+    {
+      "lang": "it",
+      "json_file": "talkactions.json",
+      "identical_to_en": 195,
+      "domain_priority": 2
+    },
+    {
+      "lang": "it",
+      "json_file": "quests.json",
+      "identical_to_en": 463,
+      "domain_priority": 3
+    },
+    {
+      "lang": "it",
+      "json_file": "actions.json",
+      "identical_to_en": 35,
+      "domain_priority": 4
+    },
+    {
+      "lang": "it",
+      "json_file": "modules.json",
+      "identical_to_en": 19,
+      "domain_priority": 5
+    },
+    {
+      "lang": "it",
+      "json_file": "messages.json",
+      "identical_to_en": 11,
+      "domain_priority": 6
+    },
+    {
+      "lang": "it",
+      "json_file": "monsters.json",
+      "identical_to_en": 1030,
+      "domain_priority": 8
+    },
+    {
+      "lang": "it",
+      "json_file": "scripts.json",
+      "identical_to_en": 2033,
+      "domain_priority": 9
+    },
+    {
+      "lang": "it",
+      "json_file": "books.json",
+      "identical_to_en": 1266,
+      "domain_priority": 9
+    },
+    {
+      "lang": "it",
+      "json_file": "cpp.json",
+      "identical_to_en": 849,
+      "domain_priority": 9
+    },
+    {
+      "lang": "it",
+      "json_file": "achievements.json",
+      "identical_to_en": 193,
+      "domain_priority": 9
+    },
+    {
+      "lang": "it",
+      "json_file": "raids.json",
+      "identical_to_en": 126,
+      "domain_priority": 9
+    },
+    {
+      "lang": "it",
+      "json_file": "libs.json",
+      "identical_to_en": 82,
+      "domain_priority": 9
+    },
+    {
+      "lang": "it",
+      "json_file": "npclib.json",
+      "identical_to_en": 80,
+      "domain_priority": 9
+    },
+    {
+      "lang": "it",
+      "json_file": "php.json",
+      "identical_to_en": 22,
+      "domain_priority": 9
+    },
+    {
+      "lang": "it",
+      "json_file": "chatchannels.json",
+      "identical_to_en": 16,
+      "domain_priority": 9
+    },
+    {
+      "lang": "it",
+      "json_file": "example_merchant.json",
+      "identical_to_en": 13,
+      "domain_priority": 9
+    },
+    {
+      "lang": "it",
+      "json_file": "events.json",
+      "identical_to_en": 9,
+      "domain_priority": 9
+    },
+    {
+      "lang": "it",
+      "json_file": "client.json",
+      "identical_to_en": 6,
+      "domain_priority": 9
+    },
+    {
+      "lang": "it",
+      "json_file": "globalevents.json",
+      "identical_to_en": 5,
+      "domain_priority": 9
+    },
+    {
+      "lang": "it",
+      "json_file": "creaturescripts.json",
+      "identical_to_en": 4,
+      "domain_priority": 9
+    },
+    {
+      "lang": "it",
+      "json_file": "movements.json",
+      "identical_to_en": 2,
+      "domain_priority": 9
+    },
+    {
+      "lang": "nl",
+      "json_file": "npc.json",
+      "identical_to_en": 2998,
+      "domain_priority": 0
+    },
+    {
+      "lang": "nl",
+      "json_file": "server.json",
+      "identical_to_en": 1886,
+      "domain_priority": 1
+    },
+    {
+      "lang": "nl",
+      "json_file": "talkactions.json",
+      "identical_to_en": 178,
+      "domain_priority": 2
+    },
+    {
+      "lang": "nl",
+      "json_file": "quests.json",
+      "identical_to_en": 347,
+      "domain_priority": 3
+    },
+    {
+      "lang": "nl",
+      "json_file": "actions.json",
+      "identical_to_en": 30,
+      "domain_priority": 4
+    },
+    {
+      "lang": "nl",
+      "json_file": "modules.json",
+      "identical_to_en": 17,
+      "domain_priority": 5
+    },
+    {
+      "lang": "nl",
+      "json_file": "messages.json",
+      "identical_to_en": 10,
+      "domain_priority": 6
+    },
+    {
+      "lang": "nl",
+      "json_file": "monsters.json",
+      "identical_to_en": 903,
+      "domain_priority": 8
+    },
+    {
+      "lang": "nl",
+      "json_file": "scripts.json",
+      "identical_to_en": 1455,
+      "domain_priority": 9
+    },
+    {
+      "lang": "nl",
+      "json_file": "questlog.json",
+      "identical_to_en": 1264,
+      "domain_priority": 9
+    },
+    {
+      "lang": "nl",
+      "json_file": "cpp.json",
+      "identical_to_en": 794,
+      "domain_priority": 9
+    },
+    {
+      "lang": "nl",
+      "json_file": "books.json",
+      "identical_to_en": 600,
+      "domain_priority": 9
+    },
+    {
+      "lang": "nl",
+      "json_file": "raids.json",
+      "identical_to_en": 101,
+      "domain_priority": 9
+    },
+    {
+      "lang": "nl",
+      "json_file": "npclib.json",
+      "identical_to_en": 93,
+      "domain_priority": 9
+    },
+    {
+      "lang": "nl",
+      "json_file": "libs.json",
+      "identical_to_en": 66,
+      "domain_priority": 9
+    },
+    {
+      "lang": "nl",
+      "json_file": "php.json",
+      "identical_to_en": 20,
+      "domain_priority": 9
+    },
+    {
+      "lang": "nl",
+      "json_file": "chatchannels.json",
+      "identical_to_en": 15,
+      "domain_priority": 9
+    },
+    {
+      "lang": "nl",
+      "json_file": "example_merchant.json",
+      "identical_to_en": 11,
+      "domain_priority": 9
+    },
+    {
+      "lang": "nl",
+      "json_file": "achievements.json",
+      "identical_to_en": 7,
+      "domain_priority": 9
+    },
+    {
+      "lang": "nl",
+      "json_file": "spells.json",
+      "identical_to_en": 7,
+      "domain_priority": 9
+    },
+    {
+      "lang": "nl",
+      "json_file": "client.json",
+      "identical_to_en": 4,
+      "domain_priority": 9
+    },
+    {
+      "lang": "nl",
+      "json_file": "events.json",
+      "identical_to_en": 4,
+      "domain_priority": 9
+    },
+    {
+      "lang": "nl",
+      "json_file": "globalevents.json",
+      "identical_to_en": 4,
+      "domain_priority": 9
+    },
+    {
+      "lang": "nl",
+      "json_file": "creaturescripts.json",
+      "identical_to_en": 2,
+      "domain_priority": 9
+    },
+    {
+      "lang": "nl",
+      "json_file": "movements.json",
+      "identical_to_en": 1,
+      "domain_priority": 9
+    },
+    {
+      "lang": "pt",
+      "json_file": "npc.json",
+      "identical_to_en": 6369,
+      "domain_priority": 0
+    },
+    {
+      "lang": "pt",
+      "json_file": "server.json",
+      "identical_to_en": 2453,
+      "domain_priority": 1
+    },
+    {
+      "lang": "pt",
+      "json_file": "talkactions.json",
+      "identical_to_en": 195,
+      "domain_priority": 2
+    },
+    {
+      "lang": "pt",
+      "json_file": "quests.json",
+      "identical_to_en": 391,
+      "domain_priority": 3
+    },
+    {
+      "lang": "pt",
+      "json_file": "actions.json",
+      "identical_to_en": 35,
+      "domain_priority": 4
+    },
+    {
+      "lang": "pt",
+      "json_file": "modules.json",
+      "identical_to_en": 19,
+      "domain_priority": 5
+    },
+    {
+      "lang": "pt",
+      "json_file": "messages.json",
+      "identical_to_en": 11,
+      "domain_priority": 6
+    },
+    {
+      "lang": "pt",
+      "json_file": "monsters.json",
+      "identical_to_en": 1026,
+      "domain_priority": 8
+    },
+    {
+      "lang": "pt",
+      "json_file": "scripts.json",
+      "identical_to_en": 2029,
+      "domain_priority": 9
+    },
+    {
+      "lang": "pt",
+      "json_file": "books.json",
+      "identical_to_en": 1266,
+      "domain_priority": 9
+    },
+    {
+      "lang": "pt",
+      "json_file": "cpp.json",
+      "identical_to_en": 849,
+      "domain_priority": 9
+    },
+    {
+      "lang": "pt",
+      "json_file": "achievements.json",
+      "identical_to_en": 255,
+      "domain_priority": 9
+    },
+    {
+      "lang": "pt",
+      "json_file": "raids.json",
+      "identical_to_en": 126,
+      "domain_priority": 9
+    },
+    {
+      "lang": "pt",
+      "json_file": "libs.json",
+      "identical_to_en": 82,
+      "domain_priority": 9
+    },
+    {
+      "lang": "pt",
+      "json_file": "npclib.json",
+      "identical_to_en": 80,
+      "domain_priority": 9
+    },
+    {
+      "lang": "pt",
+      "json_file": "chatchannels.json",
+      "identical_to_en": 16,
+      "domain_priority": 9
+    },
+    {
+      "lang": "pt",
+      "json_file": "php.json",
+      "identical_to_en": 15,
+      "domain_priority": 9
+    },
+    {
+      "lang": "pt",
+      "json_file": "example_merchant.json",
+      "identical_to_en": 13,
+      "domain_priority": 9
+    },
+    {
+      "lang": "pt",
+      "json_file": "events.json",
+      "identical_to_en": 9,
+      "domain_priority": 9
+    },
+    {
+      "lang": "pt",
+      "json_file": "client.json",
+      "identical_to_en": 6,
+      "domain_priority": 9
+    },
+    {
+      "lang": "pt",
+      "json_file": "globalevents.json",
+      "identical_to_en": 5,
+      "domain_priority": 9
+    },
+    {
+      "lang": "pt",
+      "json_file": "creaturescripts.json",
+      "identical_to_en": 4,
+      "domain_priority": 9
+    },
+    {
+      "lang": "pt",
+      "json_file": "movements.json",
+      "identical_to_en": 2,
+      "domain_priority": 9
+    },
+    {
+      "lang": "ru",
+      "json_file": "npc.json",
+      "identical_to_en": 6361,
+      "domain_priority": 0
+    },
+    {
+      "lang": "ru",
+      "json_file": "server.json",
+      "identical_to_en": 2500,
+      "domain_priority": 1
+    },
+    {
+      "lang": "ru",
+      "json_file": "talkactions.json",
+      "identical_to_en": 173,
+      "domain_priority": 2
     }
   ],
   "selected": {
     "lang": "es",
     "json_file": "npc.json",
-    "identical_to_en": 1268,
+    "identical_to_en": 1266,
     "domain_priority": 0
   }
 }

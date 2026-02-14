@@ -2,23 +2,23 @@
   "lang": "nl",
   "script_group": "latin",
   "total_keys": 53586,
-  "translated": 30927,
-  "identical_to_en": 24491,
-  "placeholder_keys": 20504,
-  "coverage_pct": 57.7,
-  "issues_total": 6152,
+  "translated": 24807,
+  "identical_to_en": 17996,
+  "placeholder_keys": 28605,
+  "coverage_pct": 46.3,
+  "issues_total": 6149,
   "issues_by_type": {
     "V3_empty": 6144,
-    "V1_placeholder_mismatch": 7,
+    "V1_placeholder_mismatch": 4,
     "V5_pipe_mismatch": 1
   },
   "issues_by_severity": {
-    "CRITICAL": 8,
+    "CRITICAL": 5,
     "HIGH": 0,
     "MEDIUM": 0,
     "LOW": 6144
   },
-  "score": 98.9,
+  "score": 98.7,
   "worst_keys": [
     {
       "key": "scripts.actions_rewards.msg_1",
@@ -35,24 +35,6 @@
     {
       "key": "scripts.manage_tutor.msg_2",
       "category": "scripts",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "server.game.msg_32",
-      "category": "server",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "server.player.msg_11",
-      "category": "server",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "server.spells.msg_3",
-      "category": "server",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
     },
@@ -139,15 +121,33 @@
       "category": "npc",
       "type": "V3_empty",
       "severity": "LOW"
+    },
+    {
+      "key": "npc.a_dragon_mother.multi_5",
+      "category": "npc",
+      "type": "V3_empty",
+      "severity": "LOW"
+    },
+    {
+      "key": "npc.a_dragon_mother.multi_6",
+      "category": "npc",
+      "type": "V3_empty",
+      "severity": "LOW"
+    },
+    {
+      "key": "npc.a_dragon_mother.multi_7",
+      "category": "npc",
+      "type": "V3_empty",
+      "severity": "LOW"
     }
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 459,
+    "issues_total": 473,
     "consistency": 1,
     "pl_reference": 400,
-    "length_ratio": 58,
-    "auto_fix_applied": 0
+    "length_ratio": 72,
+    "auto_fix_applied": 71
   },
-  "validated_at": "2026-02-14T07:59:40.684979Z"
+  "validated_at": "2026-02-14T09:27:54.695144Z"
 }

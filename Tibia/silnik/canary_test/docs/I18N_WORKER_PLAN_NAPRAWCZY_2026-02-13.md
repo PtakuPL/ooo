@@ -11,6 +11,123 @@
 
 ---
 
+## 🛠️ Aktualizacja wykonania (2026-02-14 09:56 UTC — full task: heartbeat mid-cycle + refresh repair queue + guardian/start reliability)
+
+Wybrane do realizacji pełne zadania:
+- **Domknięcie worker heartbeat mid-cycle podczas AUTO_TRANSLATE**
+- **Domknięcie odświeżania `identical_to_en_repair_queue.json` niezależnie od pełnej rundy repair**
+- **Domknięcie stabilności locków guardian/start (`start_all` + source arbitration)**
+
+Wykonane:
+- ✅ `i18n_worker_simple.sh`:
+  - dodano mid-cycle heartbeat loop z env:
+    - `AUTO_TRANSLATE_MID_CYCLE_HEARTBEAT_ENABLED`,
+    - `AUTO_TRANSLATE_MID_CYCLE_HEARTBEAT_INTERVAL_SEC`,
+  - heartbeat emituje `status_update_activity(... stage=heartbeat_tick ...)` podczas długich tłumaczeń,
+  - dodano tryb `queue_only` w `repair_identical_bonus_round()` i refresh policy:
+    - `REPAIR_QUEUE_REFRESH_MIN_INTERVAL_SEC`,
+  - refresh repair queue jest wykonywany:
+    - przed `auto_translate`,
+    - okresowo w heartbeat loop,
+    - po zakończeniu `auto_translate`.
+- ✅ `i18n_guardian.sh`:
+  - lock owner PID jest walidowany po `cmdline` (`i18n_guardian.sh --daemon`), nie tylko po samym `ps -p`,
+  - korekta reguł preempt locka:
+    - blokada tylko dla niższego priorytetu,
+    - restart z tego samego źródła (`start_all`) nie czeka bez sensu na pełny `stale_sec`.
+- ✅ `i18n_start_all.sh`:
+  - dodano `wait_for_stable_process()` (wielokrotna walidacja PID po starcie),
+  - start guardian/statusd nie opiera się już na pojedynczym, chwilowym odczycie PID.
+
+Walidacja runtime (foreground test, 2026-02-14 09:56 UTC):
+- ✅ `activity.json` zawiera `heartbeat_tick` w `recent[]`.
+- ✅ `identical_to_en_repair_queue.json` odświeżony:
+  - mtime: `2026-02-14T09:55:20Z`,
+  - age po teście: ~`49s`.
+- ✅ Worker wykonał tłumaczenia strict (`pl/cpp.json`, `pl/otclient_modules.json`, `es/questlog.json`) bez regresji składni.
+
+Nowe rzeczy do zrobienia ujawnione podczas realizacji:
+- ⬜ Dodać dodatkowy check „process still alive after N=30s” do `i18n_start_all.sh`, aby odsiać środowiska, gdzie procesy tła są ubijane zaraz po starcie.
+- ⬜ Zidentyfikować i opisać zewnętrzne źródło częstych wywołań `i18n_guardian.sh --daemon` (`source=manual`, co ~5s), bo zaśmieca log i utrudnia diagnostykę locków.
+- ⬜ Po stabilnym uruchomieniu 3 daemonów wykonać min. 20 min obserwacji `statusd_doctor` i potwierdzić brak `REPAIR_QUEUE_STALE` w ruchu produkcyjnym.
+
+## 🛠️ Aktualizacja wykonania (2026-02-14 09:12 UTC — heartbeat contract + subprocess watchdog + status PID accuracy)
+
+Wybrane do realizacji pełne zadania:
+- **Domknięcie heartbeat contract statusd pod długie cykle tłumaczeń**
+- **Domknięcie checka runtime dla subprocessów workera**
+- **Domknięcie wiarygodności `worker.pid_alive` w statusd_report**
+
+Wykonane:
+- ✅ `i18n-statusd.sh` (doctor):
+  - heartbeat check czyta dynamiczne progi z `guardian_health.json` (`heartbeat_aging/stale/stuck`) zamiast stałych `180/300`,
+  - przy aktywnym PID i świeżych sygnałach logowych stary heartbeat nie eskaluje od razu do CRITICAL (`STALE_HEARTBEAT_BUT_ACTIVE`).
+- ✅ `i18n-statusd.sh` (doctor):
+  - dodano `worker_process_watch` (main pid, extra pid, descendant/foreign, age), co odróżnia normalny pojedynczy subprocess od realnej duplikacji instancji.
+- ✅ `i18n-statusd.sh` (aggregate):
+  - `statusd_report.worker.pid_alive` bazuje na realnym `/proc/<pid>`,
+  - `statusd_report.worker.pid` jest publikowany jawnie.
+
+Walidacja runtime (2026-02-14 09:12 UTC):
+- ✅ `bash i18n-statusd.sh --aggregate && --doctor` -> działa.
+- ✅ `statusd_doctor`: brak fałszywego `STALE_HEARTBEAT` CRITICAL przy aktywnym PID.
+- ✅ `statusd_doctor.worker_process_watch`: poprawna klasyfikacja topologii (`single_descendant_observed` jako stan nominalny, bez duplikacji foreign).
+
+Nowe rzeczy do zrobienia ujawnione podczas realizacji:
+- ⬜ Rozważyć heartbeat mid-cycle emit po stronie workera, aby ograniczyć ostrzeżenia `AGING/STALE` przy bardzo długich batchach.
+- ⬜ Dodać częstsze odświeżanie `identical_to_en_repair_queue.json` (obecnie okresowo `REPAIR_QUEUE_STALE`).
+- ⬜ Skonfigurować `STATUSD_WEBHOOK_URL`.
+
+## 🛠️ Aktualizacja wykonania (2026-02-14 08:40 UTC — registry_reconcile + priority_gate watchdog + guardian source arbitration)
+
+Wybrane do realizacji pełne zadania:
+- **Domknięcie reconcile rejestru pod zmiany manualne/agentowe EN**
+- **Domknięcie watchdoga stuck dla fali priorytetowej ES/PL**
+- **Domknięcie arbitrażu źródła startu guardiana (start_all vs manual)**
+
+Wykonane:
+- ✅ `i18n-statusd.sh`:
+  - dodano pełny workflow `registry_reconcile`:
+    - tryby: daemon cycle, `--once`, `--reconcile-registry`,
+    - artefakty: `i18n/status/registry_reconcile_latest.json` + `i18n/status/registry_reconcile_state.json`,
+    - zapis korekty: `i18n_file_status.json -> global_stats.reconciled_external_keys`.
+  - metryki driftu publikują teraz oba widoki:
+    - `worker_registry_keys` / `outside_worker_registry_keys` (effective),
+    - `worker_registry_keys_raw` / `outside_worker_registry_keys_raw` (history/raw),
+    - `registry_reconcile_adjustment`.
+- ✅ `i18n_worker_simple.sh`:
+  - status i telemetria workerowa uwzględniają `reconciled_external_keys`,
+  - `translation_global_overview.json` i `i18n_global_stats.json` mają pola `*_raw` + `registry_reconcile_adjustment`,
+  - `I18N_STATUS.md` pokazuje teraz registry `efektywne` i `raw` + korektę reconcile.
+- ✅ `i18n-statusd.sh` (watchdog ES/PL):
+  - dodano `priority_gate_watch` (state file: `i18n/status/priority_gate_watch_state.json`),
+  - doctor zgłasza `PRIORITY_GATE_STUCK*` gdy gate aktywny zbyt długo bez poprawy quality rate,
+  - webhook alerting wspiera `reason_code=priority_gate_stuck`,
+  - daily report ma sekcję `Priority Gate Watch`,
+  - rekomendacje runtime zawierają `SWITCH_PROFILE quality_repair (short)` przy stuck.
+- ✅ `i18n_guardian.sh`:
+  - dodano source-priority arbitration locka (`start_all > service > scheduler > manual`),
+  - świeży lock wyższego priorytetu nie jest przejmowany przez późny `manual`,
+  - dodano `GUARDIAN_DAEMON_LOCK_PREEMPT_MIN_SEC`.
+- ✅ `statusd_thresholds.json`:
+  - nowe sekcje: `priority_gate_stuck`, `registry_reconcile`.
+
+Walidacja runtime (2026-02-14 08:40 UTC):
+- ✅ `bash i18n-statusd.sh --reconcile-registry`:
+  - pierwszy run: `RECONCILE_APPLIED target_adjust=47338`,
+  - kolejne runy: `RECONCILE_SKIPPED_THRESHOLD reason=no_sync_needed`.
+- ✅ `statusd_report.json`:
+  - `metrics_drift.severity=ok`, `outside_worker_registry_keys=0`,
+  - zachowany sygnał historyczny `outside_worker_registry_keys_raw=47338`.
+- ✅ `statusd_doctor.json`:
+  - `metrics_drift_ok`, brak `METRICS_DRIFT_HIGH` po reconcile.
+
+Nowe rzeczy do zrobienia ujawnione podczas realizacji:
+- ✅ Dodać automatyczne wykonanie krótkiego przełączenia na `quality_repair` przy `priority_gate_stuck`. → DONE 2026-02-14 08:45: auto-action `SWITCH_PROFILE_QUALITY_REPAIR_ON_PRIORITY_GATE_STUCK` (aktywny po włączeniu `.statusd_auto_actions`).
+- ⬜ Dodać etap 2 reconcile: per-file backfill, nie tylko globalny licznik korekty.
+- ✅ Dopracować heartbeat workera pod długie cykle (`STALE_HEARTBEAT` przy aktywnym PID): dynamiczny próg. → DONE 2026-02-14 09:12 (`statusd_doctor` czyta progi guardiana + sygnały aktywności PID/logów).
+- ⬜ Skonfigurować `STATUSD_WEBHOOK_URL`.
+
 ## 🛠️ Aktualizacja wykonania (2026-02-14 08:18 UTC — GLOBAL_QUALITY_MODE 100% + guardian env wiring + statusd live merge)
 
 Wybrane do realizacji pełne zadania:
@@ -39,10 +156,11 @@ Wykonane:
   - progi `metrics_drift` obniżone (wcześniejsze były zbyt luźne i maskowały realny problem driftu LIVE vs registry).
 
 Nowe rzeczy do zrobienia ujawnione podczas realizacji:
-- ⬜ Dodać dedykowaną procedurę „registry reconciliation”, która aktualizuje/uzupełnia `i18n_file_status.json` dla zmian wykonanych poza workerem, aby trwale redukować `keys_extracted_outside_worker_registry`.
+- ✅ Dodać dedykowaną procedurę „registry reconciliation”, która aktualizuje/uzupełnia `i18n_file_status.json` dla zmian wykonanych poza workerem, aby trwale redukować `keys_extracted_outside_worker_registry`. → DONE 2026-02-14 08:40 (`run_registry_reconcile`, korekta global_stats, pola raw/effective).
 - ⬜ Domknąć politykę jakości dla przypadków „poprawnie identycznych z EN” (nazwy własne) tak, aby gate 100% nie blokował rolloutu przez false-positive.
-- ⬜ Dodać watchdog na `priority_gate active` (max czas/ilość cykli), żeby automatycznie wykryć utknięcie ES/PL przy stabilnym `100% coverage` i niskim postępie jakości.
-- ⬜ Domknąć arbitration źródeł startu guardiana: po restarcie 2026-02-14 09:20 UTC zaobserwowano wtórny start `source=manual` po aktywnym starcie `start_all`.
+- ✅ Dodać watchdog na `priority_gate active` (max czas/ilość cykli), żeby automatycznie wykryć utknięcie ES/PL przy stabilnym `100% coverage` i niskim postępie jakości.
+  - status 2026-02-14 08:45: detekcja + alerting + daily/report + rekomendacja + auto-switch action (`SWITCH_PROFILE_QUALITY_REPAIR_ON_PRIORITY_GATE_STUCK`).
+- ✅ Domknąć arbitration źródeł startu guardiana: po restarcie 2026-02-14 09:20 UTC zaobserwowano wtórny start `source=manual` po aktywnym starcie `start_all`. → DONE 2026-02-14 08:40.
 
 ## 🛠️ Aktualizacja wykonania (2026-02-14 07:52 UTC — kanoniczne progi statusd + hardening `i18n_start_all.sh`)
 
@@ -76,7 +194,7 @@ Walidacja runtime (2026-02-14 07:52 UTC):
 
 Nowe rzeczy do zrobienia ujawnione podczas realizacji:
 - ✅ Poprawić detekcję procesu w `i18n_start_all.sh:is_running()` (fallback `pgrep`), bo w niektórych restartach zwraca false-positive dla `statusd`. → DONE 2026-02-14.
-- ⬜ Dodać osobny check runtime dla `worker subprocessy` (czy są krótkie i normalne, czy długie i oznaczają realne dublowanie instancji).
+- ✅ Dodać osobny check runtime dla `worker subprocessy` (czy są krótkie i normalne, czy długie i oznaczają realne dublowanie instancji). → DONE 2026-02-14 09:12 (`worker_process_watch` w `statusd_doctor`).
 
 ## 🛠️ Aktualizacja wykonania (2026-02-14 07:28 UTC — scanned_files_live + statusd drift + global_stats)
 

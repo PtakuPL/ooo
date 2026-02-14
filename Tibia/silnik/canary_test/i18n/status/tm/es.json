@@ -132366,5 +132366,349 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-14T08:40:38.630599Z"
+  },
+  "otclient_modules.player.tr_29": {
+    "src_hash": "aab7aea4a6b1f87d821273f8a7aa95fe",
+    "text": "Estas maldito",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:48:30.500633Z"
+  },
+  "otclient_modules.player.tr_30": {
+    "src_hash": "86e6e70d4f07fc657c0db673a9320f67",
+    "text": "Estas deslumbrado",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:48:30.501232Z"
+  },
+  "otclient_modules.player.tr_31": {
+    "src_hash": "b74457338d55cceddde44ffb8fc74147",
+    "text": "Te estas congelando",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:48:42.052590Z"
+  },
+  "otclient_modules.player.tr_32": {
+    "src_hash": "8c8bf89461b7bbf8ef62c9a5293eb23c",
+    "text": "Te estas ahogando",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:48:42.053103Z"
+  },
+  "otclient_modules.player.tr_33": {
+    "src_hash": "5b35fc7a429ca7c0222f4bed2e594bac",
+    "text": "No puedes cerrar sesión durante una pelea.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:48:42.053647Z"
+  },
+  "otclient_modules.player.tr_34": {
+    "src_hash": "0a6fadc9d3faad4be4c72f539d46d13f",
+    "text": "Estas apresurado",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:48:42.054061Z"
+  },
+  "otclient_modules.player.tr_35": {
+    "src_hash": "c2e04d177b488ea7dd7a4da967ecc0d3",
+    "text": "Estas paralizado",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:48:42.054499Z"
+  },
+  "otclient_modules.player.tr_36": {
+    "src_hash": "796ea0db7e76a1c3dfe4a939b4c4ac41",
+    "text": "Estás protegido por un escudo mágico.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:48:42.055072Z"
+  },
+  "otclient_modules.player.tr_37": {
+    "src_hash": "9a13327382fd83a590a2090d44f145d5",
+    "text": "Estas borracho",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:48:42.055438Z"
+  },
+  "otclient_modules.player.tr_38": {
+    "src_hash": "fce8f4e6ade96d9eebcaaae69f1e4cc0",
+    "text": "Estas electrizado",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:48:42.055843Z"
+  },
+  "otclient_modules.player.tr_39": {
+    "src_hash": "9ac787ee977da07d739421f144c5db02",
+    "text": "Estas ardiendo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:48:42.056391Z"
+  },
+  "otclient_modules.player.tr_40": {
+    "src_hash": "68867276439a7e969303a3898ca45f36",
+    "text": "Estas envenenado",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:48:42.056781Z"
+  },
+  "otclient_modules.playerdeath.tr_1": {
+    "src_hash": "c146a7a0111bb1882a378b49d0126587",
+    "text": "Estás muerto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:48:42.057196Z"
+  },
+  "otclient_modules.prey.tr_1": {
+    "src_hash": "7247332363148895c53cb47b531aca25",
+    "text": "Selecciona el monstruo para continuar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:48:42.057675Z"
+  },
+  "otclient_modules.prey.tr_11": {
+    "src_hash": "801312107a6e387c37482275a6e8d3b3",
+    "text": "Presa inactiva.\n\nHaga clic en esta ventana para abrir el cuadro de diálogo de presa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:48:42.058591Z"
+  },
+  "otclient_modules.prey.tr_15": {
+    "src_hash": "25ef7bd039f82444a4d36664283502aa",
+    "text": "Rastreador de presas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:48:42.059008Z"
+  },
+  "otclient_modules.prey.tr_18": {
+    "src_hash": "d8c4a156c098a09c3614202c232ab0ec",
+    "text": "bono infinito",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:48:42.059535Z"
+  },
+  "otclient_modules.prey.tr_21": {
+    "src_hash": "5300860e6e6a49f034b364bd02da2f47",
+    "text": "Bonificación de botín",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:48:51.854713Z"
+  },
+  "otclient_modules.prey.tr_22": {
+    "src_hash": "086817c4be29e63ef8e6750f60a92526",
+    "text": "Bonificación de experiencia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:48:51.855171Z"
+  },
+  "otclient_modules.prey.tr_23": {
+    "src_hash": "3234849d4682884ba94c726f43783a1f",
+    "text": "Bonificación de reducción de daños",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:48:51.855686Z"
+  },
+  "otclient_modules.prey.tr_24": {
+    "src_hash": "18ab554d9c70e2cccc3e768631489867",
+    "text": "Bonificación de daño",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:48:51.856060Z"
+  },
+  "otclient_modules.prey.tr_3": {
+    "src_hash": "bc71a9227b031ccf80eb4214b187e3b4",
+    "text": "Seleccionar monstruo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:48:51.856420Z"
+  },
+  "otclient_modules.prey.tr_4": {
+    "src_hash": "801312107a6e387c37482275a6e8d3b3",
+    "text": "Presa inactiva.\n\nHaga clic en esta ventana para abrir el cuadro de diálogo de presa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:48:51.857018Z"
+  },
+  "otclient_modules.prey.tr_6": {
+    "src_hash": "7247332363148895c53cb47b531aca25",
+    "text": "Selecciona el monstruo para continuar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:48:51.857553Z"
+  },
+  "otclient_modules.prey.tr_8": {
+    "src_hash": "bc71a9227b031ccf80eb4214b187e3b4",
+    "text": "Seleccionar monstruo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:48:51.858593Z"
+  },
+  "otclient_modules.prey.tr_9": {
+    "src_hash": "801312107a6e387c37482275a6e8d3b3",
+    "text": "Presa inactiva.\n\nHaga clic en esta ventana para abrir el cuadro de diálogo de presa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:48:51.859129Z"
+  },
+  "otclient_modules.prey_otui.tr_1": {
+    "src_hash": "4bb081d4b5261a302dbb6d2e27959554",
+    "text": "Criaturas de presa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:48:51.859506Z"
+  },
+  "otclient_modules.prey_otui.tr_10": {
+    "src_hash": "0351b315769014535a487ddc194dc94b",
+    "text": "Retiro de bonificación automático...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:48:51.859996Z"
+  },
+  "otclient_modules.prey_otui.tr_2": {
+    "src_hash": "d6724ceea5c60360d1751b9b78fcd3e0",
+    "text": "Presas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:48:51.860322Z"
+  },
+  "otclient_modules.prey_otui.tr_4": {
+    "src_hash": "5b41332ac49610b7fe11a126313a1fac",
+    "text": "¡Ve a la Tienda para conseguir más comodines de Prey!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:48:51.860840Z"
+  },
+  "otclient_modules.prey_otui.tr_6": {
+    "src_hash": "d6724ceea5c60360d1751b9b78fcd3e0",
+    "text": "Presas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:49:02.449751Z"
+  },
+  "otclient_modules.prey_otui.tr_7": {
+    "src_hash": "673722e49f6904cea7636bb8e1a03eae",
+    "text": "Monedas de oro",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:49:02.450237Z"
+  },
+  "otclient_modules.prey_otui.tr_8": {
+    "src_hash": "8e54529dc2ca0ec21d5779650122643d",
+    "text": "Comodines de presa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:49:02.450747Z"
+  },
+  "otclient_modules.prey_otui.tr_9": {
+    "src_hash": "2483e2ca3ffa0664f77407e20df03d34",
+    "text": "Bloquear presa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:49:02.451313Z"
+  },
+  "otclient_modules.protocollogin.tr_1": {
+    "src_hash": "0e1b7648262cc4f1f7be2c7b8c9549df",
+    "text": "Token de autenticación no válido.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:49:02.451944Z"
+  },
+  "otclient_modules.protocollogin.tr_2": {
+    "src_hash": "5c6c58593ef7db75ddb51983595d092a",
+    "text": "El cliente necesita actualización.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:49:02.452581Z"
+  },
+  "otclient_modules.protocollogin.tr_3": {
+    "src_hash": "1c89f874c130a5acba552fc703c0aec4",
+    "text": "Debe ingresar una dirección de servidor y un puerto válidos.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:49:02.453349Z"
+  },
+  "otclient_modules.quickloot.tr_2": {
+    "src_hash": "55fb64f21b51c7109e12641a2ee6839a",
+    "text": "Solo puedes seleccionar contenedores que lleves en tu inventario.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:49:02.454187Z"
+  },
+  "otclient_modules.quickloot.tr_3": {
+    "src_hash": "3c231ac7ec2fb03fe4125e3fdfa8f66d",
+    "text": "Contenedor de botín no válido",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:49:02.454870Z"
+  },
+  "otclient_modules.quickloot.tr_5": {
+    "src_hash": "55fb64f21b51c7109e12641a2ee6839a",
+    "text": "Solo puedes seleccionar contenedores que lleves en tu inventario.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:49:02.455716Z"
+  },
+  "otclient_modules.quickloot.tr_6": {
+    "src_hash": "3c231ac7ec2fb03fe4125e3fdfa8f66d",
+    "text": "Contenedor de botín no válido",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:49:02.456313Z"
+  },
+  "otclient_modules.quickloot_otui.tr_11": {
+    "src_hash": "8837c91b4f636c587071baeb1f9ead75",
+    "text": "Marca esta casilla de verificación para saquear tu contenedor principal si no puedes\nbotín en el contenedor para la categoría de botín particular y\nbotín no asignado. Tenga en cuenta que \"Ordenar automáticamente\n\"Compras\" y \"Ordenar automáticamente el alijo en contenedores\" no se ven afectados por esta opción.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:49:02.458369Z"
+  },
+  "otclient_modules.quickloot_otui.tr_12": {
+    "src_hash": "e09b2193234a052f2df3f52b1f00bc97",
+    "text": "Utilice el contenedor principal como respaldo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:49:02.459058Z"
   }
 }

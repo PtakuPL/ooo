@@ -74,6 +74,27 @@ is_running() {
     return 1
 }
 
+wait_for_stable_process() {
+    local pidfile="$1" name="$2"
+    local min_consecutive="${3:-3}" max_wait_sec="${4:-12}"
+    local stable_hits=0 waited=0 pid
+    while (( waited < max_wait_sec )); do
+        pid=$(is_running "$pidfile" "$name") || pid=""
+        if [[ -n "$pid" ]]; then
+            stable_hits=$((stable_hits + 1))
+            if (( stable_hits >= min_consecutive )); then
+                echo "$pid"
+                return 0
+            fi
+        else
+            stable_hits=0
+        fi
+        sleep 1
+        waited=$((waited + 1))
+    done
+    return 1
+}
+
 start_guardian() {
     local pid
     pid=$(is_running "$GUARDIAN_PID_FILE" "i18n_guardian.sh --daemon") || true
@@ -83,12 +104,15 @@ start_guardian() {
     fi
     log "▶️  Startuję Guardian daemon..."
     GUARDIAN_START_SOURCE=start_all nohup bash "$GUARDIAN_SCRIPT" --daemon >> "$WORK_DIR/i18n/logs/guardian.log" 2>&1 &
-    sleep 2
-    pid=$(is_running "$GUARDIAN_PID_FILE" "i18n_guardian.sh --daemon") || true
+    pid=$(wait_for_stable_process "$GUARDIAN_PID_FILE" "i18n_guardian.sh --daemon" 3 12) || true
     if [[ -n "$pid" ]]; then
         log "✅  Guardian uruchomiony (pid=$pid, source=start_all)"
     else
         log "❌  Guardian nie potwierdził startu"
+        if [[ -f "$WORK_DIR/guardian.log" ]]; then
+            log "↳ Ostatnie logi guardian:"
+            tail -n 20 "$WORK_DIR/guardian.log" | sed 's/^/[guardian] /' | tee -a "$LOGFILE" >/dev/null || true
+        fi
         return 1
     fi
 }
@@ -102,12 +126,15 @@ start_statusd() {
     fi
     log "▶️  Startuję Statusd daemon..."
     nohup bash "$STATUSD_SCRIPT" --daemon >> "$WORK_DIR/i18n/logs/statusd.log" 2>&1 &
-    sleep 2
-    pid=$(is_running "$STATUSD_PID_FILE" "i18n-statusd.sh --daemon") || true
+    pid=$(wait_for_stable_process "$STATUSD_PID_FILE" "i18n-statusd.sh --daemon" 3 12) || true
     if [[ -n "$pid" ]]; then
         log "✅  Statusd uruchomiony (pid=$pid)"
     else
         log "❌  Statusd nie potwierdził startu"
+        if [[ -f "$WORK_DIR/statusd.log" ]]; then
+            log "↳ Ostatnie logi statusd:"
+            tail -n 20 "$WORK_DIR/statusd.log" | sed 's/^/[statusd] /' | tee -a "$LOGFILE" >/dev/null || true
+        fi
         return 1
     fi
 }

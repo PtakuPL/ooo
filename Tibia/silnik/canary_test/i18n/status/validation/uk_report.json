@@ -3,19 +3,19 @@
   "script_group": "cyrillic",
   "total_keys": 53586,
   "translated": 30832,
-  "identical_to_en": 24404,
+  "identical_to_en": 24174,
   "placeholder_keys": 20599,
   "coverage_pct": 57.5,
-  "issues_total": 6220,
+  "issues_total": 6223,
   "issues_by_type": {
     "V3_empty": 6144,
-    "script_cyrillic_latin_mix": 68,
+    "script_cyrillic_latin_mix": 71,
     "V1_placeholder_mismatch": 7,
     "V5_pipe_mismatch": 1
   },
   "issues_by_severity": {
     "CRITICAL": 8,
-    "HIGH": 68,
+    "HIGH": 71,
     "MEDIUM": 0,
     "LOW": 6144
   },
@@ -70,6 +70,24 @@
       "severity": "CRITICAL"
     },
     {
+      "key": "achievement.22.name",
+      "category": "achievements",
+      "type": "script_cyrillic_latin_mix",
+      "severity": "HIGH"
+    },
+    {
+      "key": "achievement.26.name",
+      "category": "achievements",
+      "type": "script_cyrillic_latin_mix",
+      "severity": "HIGH"
+    },
+    {
+      "key": "achievement.36.name",
+      "category": "achievements",
+      "type": "script_cyrillic_latin_mix",
+      "severity": "HIGH"
+    },
+    {
       "key": "event.player.msg1",
       "category": "events",
       "type": "script_cyrillic_latin_mix",
@@ -122,33 +140,15 @@
       "category": "items",
       "type": "script_cyrillic_latin_mix",
       "severity": "HIGH"
-    },
-    {
-      "key": "item.21351.name",
-      "category": "items",
-      "type": "script_cyrillic_latin_mix",
-      "severity": "HIGH"
-    },
-    {
-      "key": "item.21352.name",
-      "category": "items",
-      "type": "script_cyrillic_latin_mix",
-      "severity": "HIGH"
-    },
-    {
-      "key": "item.21432.name",
-      "category": "items",
-      "type": "script_cyrillic_latin_mix",
-      "severity": "HIGH"
     }
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 459,
+    "issues_total": 465,
     "consistency": 1,
     "pl_reference": 400,
-    "length_ratio": 58,
-    "auto_fix_applied": 0
+    "length_ratio": 64,
+    "auto_fix_applied": 75
   },
-  "validated_at": "2026-02-14T07:59:46.755112Z"
+  "validated_at": "2026-02-14T09:32:12.385625Z"
 }

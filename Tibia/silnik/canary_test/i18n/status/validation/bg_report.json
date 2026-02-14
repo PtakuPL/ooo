@@ -3,23 +3,24 @@
   "script_group": "cyrillic",
   "total_keys": 53586,
   "translated": 32896,
-  "identical_to_en": 26111,
+  "identical_to_en": 25639,
   "placeholder_keys": 20516,
   "coverage_pct": 61.4,
-  "issues_total": 6226,
+  "issues_total": 6242,
   "issues_by_type": {
     "V3_empty": 6113,
-    "script_cyrillic_latin_mix": 105,
+    "script_cyrillic_latin_mix": 120,
     "V1_placeholder_mismatch": 7,
+    "V4_artifact": 1,
     "V5_pipe_mismatch": 1
   },
   "issues_by_severity": {
     "CRITICAL": 8,
-    "HIGH": 105,
+    "HIGH": 121,
     "MEDIUM": 0,
     "LOW": 6113
   },
-  "score": 98.5,
+  "score": 98.4,
   "worst_keys": [
     {
       "key": "scripts.actions_rewards.msg_1",
@@ -94,61 +95,61 @@
       "severity": "HIGH"
     },
     {
-      "key": "event.player.msg1",
-      "category": "events",
+      "key": "achievement.192.name",
+      "category": "achievements",
       "type": "script_cyrillic_latin_mix",
       "severity": "HIGH"
     },
     {
-      "key": "item.10190.name",
-      "category": "items",
+      "key": "achievement.206.name",
+      "category": "achievements",
       "type": "script_cyrillic_latin_mix",
       "severity": "HIGH"
     },
     {
-      "key": "item.10191.name",
-      "category": "items",
+      "key": "achievement.278.name",
+      "category": "achievements",
       "type": "script_cyrillic_latin_mix",
       "severity": "HIGH"
     },
     {
-      "key": "item.10192.name",
-      "category": "items",
+      "key": "achievement.289.description",
+      "category": "achievements",
       "type": "script_cyrillic_latin_mix",
       "severity": "HIGH"
     },
     {
-      "key": "item.10193.name",
-      "category": "items",
+      "key": "achievement.292.name",
+      "category": "achievements",
       "type": "script_cyrillic_latin_mix",
       "severity": "HIGH"
     },
     {
-      "key": "item.10217.name",
-      "category": "items",
+      "key": "achievement.299.name",
+      "category": "achievements",
       "type": "script_cyrillic_latin_mix",
       "severity": "HIGH"
     },
     {
-      "key": "item.10276.name",
-      "category": "items",
+      "key": "achievement.311.name",
+      "category": "achievements",
       "type": "script_cyrillic_latin_mix",
       "severity": "HIGH"
     },
     {
-      "key": "item.10304.name",
-      "category": "items",
+      "key": "achievement.317.name",
+      "category": "achievements",
       "type": "script_cyrillic_latin_mix",
       "severity": "HIGH"
     }
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 466,
+    "issues_total": 471,
     "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 66,
-    "auto_fix_applied": 69
+    "length_ratio": 71,
+    "auto_fix_applied": 50
   },
-  "validated_at": "2026-02-14T08:40:39.420647Z"
+  "validated_at": "2026-02-14T09:32:40.862524Z"
 }

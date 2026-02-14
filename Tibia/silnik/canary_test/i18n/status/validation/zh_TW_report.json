@@ -3,19 +3,20 @@
   "script_group": "cjk",
   "total_keys": 53586,
   "translated": 35607,
-  "identical_to_en": 29278,
+  "identical_to_en": 29138,
   "placeholder_keys": 15824,
   "coverage_pct": 66.4,
-  "issues_total": 6153,
+  "issues_total": 6157,
   "issues_by_type": {
     "V3_empty": 6145,
     "V1_placeholder_mismatch": 7,
+    "V2_length_ratio": 4,
     "V5_pipe_mismatch": 1
   },
   "issues_by_severity": {
     "CRITICAL": 8,
     "HIGH": 0,
-    "MEDIUM": 0,
+    "MEDIUM": 4,
     "LOW": 6145
   },
   "score": 99.1,
@@ -69,6 +70,30 @@
       "severity": "CRITICAL"
     },
     {
+      "key": "achievement.25.name",
+      "category": "achievements",
+      "type": "V2_length_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "achievement.30.name",
+      "category": "achievements",
+      "type": "V2_length_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "achievement.51.name",
+      "category": "achievements",
+      "type": "V2_length_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "achievement.87.name",
+      "category": "achievements",
+      "type": "V2_length_ratio",
+      "severity": "MEDIUM"
+    },
+    {
       "key": "npc.a_dead_bureaucrat1.say_2",
       "category": "npc",
       "type": "V3_empty",
@@ -115,39 +140,15 @@
       "category": "npc",
       "type": "V3_empty",
       "severity": "LOW"
-    },
-    {
-      "key": "npc.a_dead_bureaucrat4.say_3",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_dead_bureaucrat4.say_4",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_dragon_mother.multi_1",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_dragon_mother.multi_2",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
     }
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 459,
+    "issues_total": 468,
     "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 59,
-    "auto_fix_applied": 0
+    "length_ratio": 68,
+    "auto_fix_applied": 80
   },
-  "validated_at": "2026-02-14T07:59:47.942786Z"
+  "validated_at": "2026-02-14T09:34:28.340617Z"
 }

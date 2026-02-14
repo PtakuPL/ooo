@@ -1,26 +1,27 @@
 {
-  "timestamp": "2026-02-14T08:41:12.251776Z",
+  "timestamp": "2026-02-14T09:56:46.609356Z",
   "first_run_ts": "2026-02-14T08:41:12.251776Z",
   "overall": "CRITICAL",
   "issues_count": 1,
-  "warnings_count": 1,
-  "ok_count": 9,
+  "warnings_count": 3,
+  "ok_count": 8,
   "issues": [
-    "SUSPICIOUS_HIGH_SPIKE: suspicious_high=2576 rate=12.847% window=6.0h top_lang=es:670 per_lang=[es:670(13.866%/warning),pl:445(71.086%/critical),ru:161(28.75%/critical),ar:145(45.455%/critical),bg:112(35.0%/critical)] per_domain=[npc.json:1067(13.816%/warning),server.json:376(67.143%/critical),monsters.json:268(11.181%/warning),scripts.json:206(36.332%/critical),otclient_modules.json:135(112.5%/critical)]"
+    "SUSPICIOUS_HIGH_SPIKE: suspicious_high=2355 rate=15.152% window=6.0h top_lang=es:641 per_lang=[es:641(16.224%/warning),pl:518(69.717%/critical),ru:113(23.542%/critical),bg:107(44.583%/critical),el:98(40.833%/critical)] per_domain=[npc.json:1062(16.361%/warning),server.json:376(67.143%/critical),monsters.json:268(11.181%/warning),scripts.json:162(30.112%/critical),otclient_modules.json:138(117.949%/critical)]"
   ],
   "warnings": [
+    "NO_PID_FILE: brak .worker_simple.pid",
+    "WORKER_PROCESS_WATCH_UNAVAILABLE: status=no_pid_file reason=worker_pid_file_missing",
     "GUARDIAN_DEGRADED: guardian raportuje degraded"
   ],
   "ok": [
-    "heartbeat_fresh (62s)",
-    "status_md_fresh (50s)",
-    "guard_report_fresh (33s)",
-    "dispatch_fresh (46s)",
-    "worker_pid_alive (1908568)",
-    "repair_queue_fresh (1312s)",
+    "heartbeat_fresh (52s, aging/stale/stuck=150/240/420s)",
+    "status_md_fresh (46s)",
+    "guard_report_fresh (56s)",
+    "dispatch_fresh (131s)",
+    "repair_queue_fresh (86s)",
     "metrics_drift_ok (outside=0 (0.00%) live=53586 registry=53586)",
-    "priority_gate_tracking (pending=[es,pl] active_minutes=2.2 cycle_delta=2 best_quality_drop=0.000%)",
-    "repair_tuning_active (samples_2h=7)"
+    "priority_gate_inactive",
+    "repair_tuning_active (samples_2h=3)"
   ],
   "metrics_drift": {
     "available": true,
@@ -42,22 +43,38 @@
   "priority_gate_watch": {
     "available": true,
     "enabled": true,
-    "active": true,
+    "active": false,
     "detected": false,
     "severity": "ok",
-    "reason": "tracking",
-    "pending_langs": [
-      "es",
-      "pl"
-    ],
-    "active_minutes": 2.206,
-    "cycle_delta": 2,
+    "reason": "priority_gate_inactive",
+    "pending_langs": [],
+    "active_minutes": 0.0,
+    "cycle_delta": 0,
     "best_quality_drop_pct": 0.0,
     "thresholds": {
       "max_active_minutes": 180.0,
       "max_cycles": 240,
       "min_quality_drop_pct": 1.0
     }
+  },
+  "worker_process_watch": {
+    "available": false,
+    "severity": "info",
+    "status": "no_pid_file",
+    "reason": "worker_pid_file_missing",
+    "main_pid": 0,
+    "matched_pids": [],
+    "extra_pids": [],
+    "descendant_extra_pids": [],
+    "foreign_extra_pids": [],
+    "total_matching": 0,
+    "extra_count": 0,
+    "descendant_extra_count": 0,
+    "foreign_extra_count": 0,
+    "oldest_descendant_age_s": 0,
+    "oldest_foreign_age_s": 0,
+    "warn_persist_seconds": 900,
+    "critical_persist_seconds": 1800
   },
   "thresholds_snapshot": {
     "source_of_truth": "statusd_thresholds_file",

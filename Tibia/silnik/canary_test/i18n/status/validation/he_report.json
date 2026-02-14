@@ -3,19 +3,20 @@
   "script_group": "rtl",
   "total_keys": 53586,
   "translated": 35775,
-  "identical_to_en": 29293,
+  "identical_to_en": 28696,
   "placeholder_keys": 15656,
   "coverage_pct": 66.8,
-  "issues_total": 6245,
+  "issues_total": 6250,
   "issues_by_type": {
     "V3_empty": 6143,
-    "script_rtl_insufficient": 94,
+    "script_rtl_insufficient": 98,
     "V1_placeholder_mismatch": 7,
+    "V4_artifact": 1,
     "V5_pipe_mismatch": 1
   },
   "issues_by_severity": {
     "CRITICAL": 8,
-    "HIGH": 94,
+    "HIGH": 99,
     "MEDIUM": 0,
     "LOW": 6143
   },
@@ -70,6 +71,36 @@
       "severity": "CRITICAL"
     },
     {
+      "key": "achievement.67.name",
+      "category": "achievements",
+      "type": "script_rtl_insufficient",
+      "severity": "HIGH"
+    },
+    {
+      "key": "achievement.137.description",
+      "category": "achievements",
+      "type": "script_rtl_insufficient",
+      "severity": "HIGH"
+    },
+    {
+      "key": "achievement.206.name",
+      "category": "achievements",
+      "type": "script_rtl_insufficient",
+      "severity": "HIGH"
+    },
+    {
+      "key": "achievement.317.name",
+      "category": "achievements",
+      "type": "script_rtl_insufficient",
+      "severity": "HIGH"
+    },
+    {
+      "key": "achievement.317.description",
+      "category": "achievements",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
       "key": "event.player.msg1",
       "category": "events",
       "type": "script_rtl_insufficient",
@@ -110,45 +141,15 @@
       "category": "items",
       "type": "script_rtl_insufficient",
       "severity": "HIGH"
-    },
-    {
-      "key": "item.14064.name",
-      "category": "items",
-      "type": "script_rtl_insufficient",
-      "severity": "HIGH"
-    },
-    {
-      "key": "item.14171.name",
-      "category": "items",
-      "type": "script_rtl_insufficient",
-      "severity": "HIGH"
-    },
-    {
-      "key": "item.15700.name",
-      "category": "items",
-      "type": "script_rtl_insufficient",
-      "severity": "HIGH"
-    },
-    {
-      "key": "item.20052.name",
-      "category": "items",
-      "type": "script_rtl_insufficient",
-      "severity": "HIGH"
-    },
-    {
-      "key": "item.21351.name",
-      "category": "items",
-      "type": "script_rtl_insufficient",
-      "severity": "HIGH"
     }
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 459,
+    "issues_total": 474,
     "consistency": 1,
     "pl_reference": 400,
-    "length_ratio": 58,
-    "auto_fix_applied": 79
+    "length_ratio": 73,
+    "auto_fix_applied": 70
   },
-  "validated_at": "2026-02-14T08:40:31.431152Z"
+  "validated_at": "2026-02-14T09:34:20.620958Z"
 }

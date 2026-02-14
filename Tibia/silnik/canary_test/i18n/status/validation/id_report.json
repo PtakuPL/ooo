@@ -2,19 +2,20 @@
   "lang": "id",
   "script_group": "latin",
   "total_keys": 53586,
-  "translated": 35699,
-  "identical_to_en": 29227,
-  "placeholder_keys": 15732,
-  "coverage_pct": 66.6,
-  "issues_total": 6119,
+  "translated": 35779,
+  "identical_to_en": 28684,
+  "placeholder_keys": 15652,
+  "coverage_pct": 66.8,
+  "issues_total": 6120,
   "issues_by_type": {
     "V3_empty": 6111,
     "V1_placeholder_mismatch": 7,
+    "V4_artifact": 1,
     "V5_pipe_mismatch": 1
   },
   "issues_by_severity": {
     "CRITICAL": 8,
-    "HIGH": 0,
+    "HIGH": 1,
     "MEDIUM": 0,
     "LOW": 6111
   },
@@ -67,6 +68,12 @@
       "category": "talkactions",
       "type": "V5_pipe_mismatch",
       "severity": "CRITICAL"
+    },
+    {
+      "key": "achievement.317.description",
+      "category": "achievements",
+      "type": "V4_artifact",
+      "severity": "HIGH"
     },
     {
       "key": "npc.a_prisoner.say_12",
@@ -133,21 +140,15 @@
       "category": "npc",
       "type": "V3_empty",
       "severity": "LOW"
-    },
-    {
-      "key": "npc.a_sleeping_dragon.multi_1",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
     }
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 457,
+    "issues_total": 468,
     "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 57,
-    "auto_fix_applied": 0
+    "length_ratio": 68,
+    "auto_fix_applied": 79
   },
-  "validated_at": "2026-02-14T07:59:37.409165Z"
+  "validated_at": "2026-02-14T09:30:50.034452Z"
 }

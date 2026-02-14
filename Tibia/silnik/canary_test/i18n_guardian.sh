@@ -65,6 +65,26 @@ daemon_source_priority() {
     esac
 }
 
+guardian_pid_matches_cmdline() {
+    local pid="${1:-}"
+    local required_fragment="${2:-i18n_guardian.sh}"
+    [[ "$pid" =~ ^[0-9]+$ ]] || return 1
+    [ -r "/proc/$pid/cmdline" ] || return 1
+    local cmdline
+    cmdline=$(tr '\0' ' ' < "/proc/$pid/cmdline" 2>/dev/null || true)
+    [ -n "$cmdline" ] || return 1
+    [[ "$cmdline" == *"$required_fragment"* ]] || return 1
+    return 0
+}
+
+guardian_run_lock_owner_alive() {
+    guardian_pid_matches_cmdline "${1:-}" "i18n_guardian.sh"
+}
+
+guardian_daemon_owner_alive() {
+    guardian_pid_matches_cmdline "${1:-}" "i18n_guardian.sh --daemon"
+}
+
 acquire_run_lock() {
     local now_ts lock_ts owner_pid lock_age
     if mkdir "$RUN_LOCK_DIR" 2>/dev/null; then
@@ -78,7 +98,7 @@ acquire_run_lock() {
     now_ts=$(date +%s)
     lock_age=$(( now_ts - ${lock_ts:-0} ))
 
-    if [ -n "$owner_pid" ] && ps -p "$owner_pid" >/dev/null 2>&1 && [ "$lock_age" -lt "$RUN_LOCK_STALE_SEC" ]; then
+    if [ -n "$owner_pid" ] && guardian_run_lock_owner_alive "$owner_pid" && [ "$lock_age" -lt "$RUN_LOCK_STALE_SEC" ]; then
         log_guardian "⏭️ Pomijam run_once: aktywny lock (pid=$owner_pid, age=${lock_age}s)"
         return 1
     fi
@@ -169,7 +189,7 @@ acquire_daemon_lock() {
     source_prio=$(daemon_source_priority "$source")
     owner_prio=$(daemon_source_priority "$owner_source")
 
-    if [ -n "$owner_pid" ] && ps -p "$owner_pid" >/dev/null 2>&1; then
+    if [ -n "$owner_pid" ] && guardian_daemon_owner_alive "$owner_pid"; then
         log_guardian "⏭️ Guardian daemon już działa (pid=$owner_pid, source=$owner_source, age=${lock_age}s)"
         write_daemon_state "blocked" "$source" "$$" "active_daemon_lock" "$owner_pid" "$owner_source" "$lock_age"
         return 1
@@ -178,12 +198,14 @@ acquire_daemon_lock() {
     # Świeży lock po padniętym ownerze: źródła o niższym priorytecie nie mogą
     # przejąć daemona (chroni przed późnym/manualnym przejęciem po start_all).
     if [ "$lock_age" -lt "$DAEMON_LOCK_STALE_SEC" ]; then
-        if [ "$source_prio" -le "$owner_prio" ]; then
+        # Lower-priority source cannot overtake fresh lock from higher-priority owner.
+        if [ "$source_prio" -lt "$owner_prio" ]; then
             log_guardian "⏭️ Pomijam start daemona: świeży lock owner_source=$owner_source(prio=$owner_prio) > source=$source(prio=$source_prio), age=${lock_age}s"
             write_daemon_state "blocked" "$source" "$$" "fresh_lock_source_priority" "$owner_pid" "$owner_source" "$lock_age"
             return 1
         fi
-        if [ "$lock_age" -lt "$DAEMON_LOCK_PREEMPT_MIN_SEC" ]; then
+        # Same-source restart after crash should be immediate; other preemptions obey cooldown.
+        if [ "$source" != "$owner_source" ] && [ "$lock_age" -lt "$DAEMON_LOCK_PREEMPT_MIN_SEC" ]; then
             log_guardian "⏭️ Pomijam start daemona: preempt cooldown (${lock_age}s < ${DAEMON_LOCK_PREEMPT_MIN_SEC}s) source=$source owner_source=$owner_source"
             write_daemon_state "blocked" "$source" "$$" "fresh_lock_preempt_cooldown" "$owner_pid" "$owner_source" "$lock_age"
             return 1

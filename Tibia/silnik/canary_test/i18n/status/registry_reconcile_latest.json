@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-14T08:41:11.473493Z",
+  "timestamp": "2026-02-14T09:56:46.119861Z",
   "status": "ok",
   "action": "skipped_threshold",
   "reason": "no_sync_needed",
@@ -18,7 +18,7 @@
   "outside_pct_raw": 88.34,
   "outside_keys_effective_before": 0,
   "outside_keys_effective_after": 0,
-  "cooldown_ok": false,
+  "cooldown_ok": true,
   "last_applied_at": "2026-02-14T08:38:59.028481Z",
   "should_reconcile": false,
   "target_adjustment": 47338

@@ -738,22 +738,37 @@ except Exception:
 
 heartbeat_at = ""
 heartbeat_age_s = -1
+worker_pid = 0
+worker_pid_alive = False
 try:
     w = worker_state.get("worker", {})
     heartbeat_at = w.get("heartbeat_at_utc", "")
     if heartbeat_at:
         hb_dt = datetime.fromisoformat(heartbeat_at.replace("Z", "+00:00"))
         heartbeat_age_s = (now - hb_dt).total_seconds()
+    worker_pid = _safe_int(w.get("pid", 0), 0)
 except Exception:
     pass
 
+try:
+    pid_path = os.path.join(work_dir, ".worker_simple.pid")
+    if os.path.exists(pid_path):
+        with open(pid_path, encoding="utf-8") as f:
+            pid_from_file = _safe_int(str(f.read()).strip(), 0)
+        if pid_from_file > 0:
+            worker_pid = pid_from_file
+except Exception:
+    pass
+worker_pid_alive = bool(worker_pid > 0 and os.path.exists(f"/proc/{worker_pid}"))
+
 report["worker"] = {
+    "pid": int(worker_pid),
     "heartbeat_at": heartbeat_at,
     "heartbeat_age_s": round(heartbeat_age_s, 1),
     "cycle": worker_state.get("worker", {}).get("cycle", -1),
     "mode": worker_state.get("worker", {}).get("mode", "?"),
     "category": worker_state.get("worker", {}).get("category", "?"),
-    "pid_alive": os.path.exists(os.path.join(work_dir, ".worker_simple.pid")),
+    "pid_alive": worker_pid_alive,
 }
 
 # ── Guardian health ──────────────────────────────────────────────────────
@@ -1152,7 +1167,7 @@ PYAGG
 
 run_status_doctor() {
     python3 - "$WORK_DIR" "$STATUS_DIR" "$STATUSD_DOCTOR_FILE" "$REPAIR_QUEUE_STAGNATION_HOURS" "$REPAIR_QUEUE_STAGNATION_MIN_SAMPLES" "$REPAIR_QUEUE_STAGNATION_MIN_DROP" "$SUSPICIOUS_HIGH_WINDOW_HOURS" "$SUSPICIOUS_HIGH_WARN_COUNT" "$SUSPICIOUS_HIGH_CRIT_COUNT" "$METRICS_DRIFT_WARN_KEYS" "$METRICS_DRIFT_CRIT_KEYS" "$METRICS_DRIFT_WARN_PCT" "$METRICS_DRIFT_CRIT_PCT" "$SUSPICIOUS_HIGH_RATE_WARN_PCT" "$SUSPICIOUS_HIGH_RATE_CRIT_PCT" "$STATUSD_THRESHOLDS_FILE" "$STATUSD_USE_ENV_OVERRIDES" "$PRIORITY_GATE_STUCK_MAX_ACTIVE_MINUTES" "$PRIORITY_GATE_STUCK_MAX_CYCLES" "$PRIORITY_GATE_STUCK_MIN_QUALITY_DROP_PCT" "$REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS" "$REGISTRY_RECONCILE_MIN_OUTSIDE_PCT" "$REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS" <<'PYDOCTOR'
-import json, sys, os
+import json, sys, os, subprocess
 from datetime import datetime, timezone, timedelta
 from collections import Counter
 
@@ -1198,6 +1213,183 @@ def _parse_ts(ts):
         return datetime.fromisoformat(str(ts).replace("Z", "+00:00"))
     except Exception:
         return None
+
+def _read_worker_process_health():
+    data = {
+        "available": False,
+        "severity": "info",
+        "status": "unknown",
+        "reason": "not_checked",
+        "main_pid": 0,
+        "matched_pids": [],
+        "extra_pids": [],
+        "descendant_extra_pids": [],
+        "foreign_extra_pids": [],
+        "total_matching": 0,
+        "extra_count": 0,
+        "descendant_extra_count": 0,
+        "foreign_extra_count": 0,
+        "oldest_descendant_age_s": 0,
+        "oldest_foreign_age_s": 0,
+        "warn_persist_seconds": 900,
+        "critical_persist_seconds": 1800,
+    }
+    pid_file = os.path.join(work_dir, ".worker_simple.pid")
+    if not os.path.exists(pid_file):
+        data["status"] = "no_pid_file"
+        data["reason"] = "worker_pid_file_missing"
+        return data
+
+    try:
+        with open(pid_file, encoding="utf-8") as f:
+            main_pid = int(str(f.read()).strip() or "0")
+    except Exception:
+        main_pid = 0
+    if main_pid <= 0:
+        data["status"] = "invalid_pid_file"
+        data["reason"] = "worker_pid_file_invalid"
+        return data
+    data["main_pid"] = int(main_pid)
+    data["available"] = True
+    if not os.path.exists(f"/proc/{main_pid}"):
+        data["severity"] = "critical"
+        data["status"] = "main_pid_not_alive"
+        data["reason"] = "worker_pid_file_points_to_dead_process"
+        return data
+
+    pattern = "i18n_worker_simple.sh --continuous"
+    matched = set()
+    try:
+        raw = subprocess.check_output(
+            ["pgrep", "-f", pattern],
+            stderr=subprocess.DEVNULL,
+            text=True,
+        )
+        for line in raw.splitlines():
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                pid = int(line)
+            except Exception:
+                continue
+            if pid > 0 and os.path.exists(f"/proc/{pid}"):
+                matched.add(pid)
+    except Exception:
+        pass
+
+    if not matched:
+        try:
+            for entry in os.listdir("/proc"):
+                if not entry.isdigit():
+                    continue
+                pid = int(entry)
+                cmdline_path = os.path.join("/proc", entry, "cmdline")
+                if not os.path.exists(cmdline_path):
+                    continue
+                try:
+                    with open(cmdline_path, "rb") as f:
+                        cmd = f.read().decode("utf-8", errors="ignore").replace("\x00", " ")
+                except Exception:
+                    continue
+                if pattern in cmd:
+                    matched.add(pid)
+        except Exception:
+            pass
+
+    matched.add(main_pid)
+    matched = sorted([pid for pid in matched if os.path.exists(f"/proc/{pid}")])
+
+    ppid_map = {}
+    etimes_map = {}
+    if matched:
+        try:
+            raw = subprocess.check_output(
+                ["ps", "-o", "pid=,ppid=,etimes=", "-p", ",".join(str(pid) for pid in matched)],
+                stderr=subprocess.DEVNULL,
+                text=True,
+            )
+            for line in raw.splitlines():
+                parts = line.split()
+                if len(parts) < 3:
+                    continue
+                try:
+                    pid = int(parts[0])
+                    ppid = int(parts[1])
+                    etimes = int(parts[2])
+                except Exception:
+                    continue
+                ppid_map[pid] = ppid
+                etimes_map[pid] = max(0, etimes)
+        except Exception:
+            pass
+
+    def _is_descendant(pid, root):
+        seen = set()
+        cur = int(pid)
+        while cur > 1 and cur not in seen:
+            seen.add(cur)
+            parent = ppid_map.get(cur)
+            if parent is None:
+                return False
+            if parent == root:
+                return True
+            cur = parent
+        return False
+
+    extra = [pid for pid in matched if pid != main_pid]
+    descendant_extra = [pid for pid in extra if _is_descendant(pid, main_pid)]
+    foreign_extra = [pid for pid in extra if pid not in descendant_extra]
+    oldest_desc = max([etimes_map.get(pid, 0) for pid in descendant_extra], default=0)
+    oldest_foreign = max([etimes_map.get(pid, 0) for pid in foreign_extra], default=0)
+
+    data.update({
+        "matched_pids": matched,
+        "extra_pids": extra,
+        "descendant_extra_pids": descendant_extra,
+        "foreign_extra_pids": foreign_extra,
+        "total_matching": len(matched),
+        "extra_count": len(extra),
+        "descendant_extra_count": len(descendant_extra),
+        "foreign_extra_count": len(foreign_extra),
+        "oldest_descendant_age_s": int(oldest_desc),
+        "oldest_foreign_age_s": int(oldest_foreign),
+    })
+
+    warn_persist_s = int(data["warn_persist_seconds"])
+    crit_persist_s = int(data["critical_persist_seconds"])
+
+    if foreign_extra:
+        data["status"] = "foreign_processes_detected"
+        data["reason"] = "non_descendant_worker_process_present"
+        if len(foreign_extra) >= 2 or oldest_foreign >= crit_persist_s:
+            data["severity"] = "critical"
+        else:
+            data["severity"] = "warning"
+    elif len(descendant_extra) >= 2:
+        data["status"] = "extra_descendants_detected"
+        data["reason"] = "multiple_descendant_worker_processes"
+        if oldest_desc >= crit_persist_s:
+            data["severity"] = "critical"
+        elif oldest_desc >= warn_persist_s:
+            data["severity"] = "warning"
+        else:
+            data["severity"] = "info"
+    elif len(descendant_extra) == 1:
+        data["status"] = "single_descendant_observed"
+        data["reason"] = "single_descendant_worker_subprocess"
+        if oldest_desc >= crit_persist_s:
+            data["severity"] = "warning"
+        elif oldest_desc >= warn_persist_s:
+            data["severity"] = "info"
+        else:
+            data["severity"] = "ok"
+    else:
+        data["severity"] = "ok"
+        data["status"] = "clean"
+        data["reason"] = "single_worker_process"
+
+    return data
 
 def _read_repair_queue_health():
     queue_latest_path = os.path.join(status_dir, "identical_to_en_repair_queue.json")
@@ -1569,22 +1761,89 @@ def _read_priority_gate_watch():
     })
     return data
 
-# ── 1. Freshness: heartbeat nie starszy niż 3 min ───────────────────────
+# ── 1. Freshness: heartbeat (dynamiczny kontrakt pod długie cykle) ─────
 try:
+    ws = {}
     with open(os.path.join(status_dir, "worker_state.json"), encoding="utf-8") as f:
         ws = json.load(f)
-    hb = ws.get("worker", {}).get("heartbeat_at_utc", "")
+    hb = str(ws.get("worker", {}).get("heartbeat_at_utc", "") or "")
+    if not hb:
+        try:
+            with open(os.path.join(status_dir, "activity.json"), encoding="utf-8") as af:
+                activity = json.load(af)
+            hb = str(activity.get("generated_at_utc", "") or "")
+        except Exception:
+            hb = ""
+
+    heartbeat_aging_s = 180.0
+    heartbeat_stale_s = 240.0
+    heartbeat_stuck_s = 420.0
+    active_grace_s = 150.0
+    pid_alive_hint = False
+    worker_log_age_s = -1.0
+    guard_last_entry_age_s = -1.0
+    try:
+        with open(os.path.join(status_dir, "guardian_health.json"), encoding="utf-8") as gf:
+            gh = json.load(gf)
+        heartbeat_aging_s = max(30.0, float(gh.get("heartbeat_aging_seconds", heartbeat_aging_s) or heartbeat_aging_s))
+        heartbeat_stale_s = max(heartbeat_aging_s + 1.0, float(gh.get("heartbeat_stale_seconds", heartbeat_stale_s) or heartbeat_stale_s))
+        heartbeat_stuck_s = max(heartbeat_stale_s + 1.0, float(gh.get("heartbeat_stuck_seconds", heartbeat_stuck_s) or heartbeat_stuck_s))
+        active_grace_s = max(30.0, float(gh.get("active_log_grace_seconds", active_grace_s) or active_grace_s))
+        pid_alive_hint = bool(gh.get("pid_alive", False))
+        worker_log_age_s = float(gh.get("worker_log_age_s", -1) or -1)
+        guard_last_entry_age_s = float(gh.get("guard_last_entry_age_s", -1) or -1)
+    except Exception:
+        pass
+
+    if not pid_alive_hint:
+        try:
+            pid_path = os.path.join(work_dir, ".worker_simple.pid")
+            if os.path.exists(pid_path):
+                with open(pid_path, encoding="utf-8") as pf:
+                    pid = int(str(pf.read()).strip() or "0")
+                pid_alive_hint = bool(pid > 0 and os.path.exists(f"/proc/{pid}"))
+        except Exception:
+            pid_alive_hint = False
+
     if hb:
         hb_dt = datetime.fromisoformat(hb.replace("Z", "+00:00"))
         age_s = (now - hb_dt).total_seconds()
-        if age_s > 300:
-            issues.append(f"STALE_HEARTBEAT: heartbeat sprzed {age_s:.0f}s (>300s)")
-        elif age_s > 180:
-            warnings.append(f"AGING_HEARTBEAT: heartbeat sprzed {age_s:.0f}s (>180s)")
+        active_reasons = []
+        if pid_alive_hint:
+            active_reasons.append("pid_alive")
+        if 0 <= worker_log_age_s <= (active_grace_s + 60):
+            active_reasons.append(f"log_age={worker_log_age_s:.0f}s")
+        if 0 <= guard_last_entry_age_s <= (active_grace_s + 60):
+            active_reasons.append(f"guard_age={guard_last_entry_age_s:.0f}s")
+
+        if age_s > heartbeat_stuck_s:
+            if active_reasons:
+                warnings.append(
+                    f"STALE_HEARTBEAT_BUT_ACTIVE: heartbeat sprzed {age_s:.0f}s "
+                    f"(stuck>{heartbeat_stuck_s:.0f}s), active=[{','.join(active_reasons)}]"
+                )
+            else:
+                issues.append(
+                    f"STALE_HEARTBEAT: heartbeat sprzed {age_s:.0f}s "
+                    f"(stuck>{heartbeat_stuck_s:.0f}s, stale>{heartbeat_stale_s:.0f}s)"
+                )
+        elif age_s > heartbeat_stale_s:
+            warnings.append(
+                f"STALE_HEARTBEAT_WARNING: heartbeat sprzed {age_s:.0f}s "
+                f"(stale>{heartbeat_stale_s:.0f}s)"
+            )
+        elif age_s > heartbeat_aging_s:
+            warnings.append(
+                f"AGING_HEARTBEAT: heartbeat sprzed {age_s:.0f}s "
+                f"(aging>{heartbeat_aging_s:.0f}s)"
+            )
         else:
-            ok_checks.append(f"heartbeat_fresh ({age_s:.0f}s)")
+            ok_checks.append(
+                f"heartbeat_fresh ({age_s:.0f}s, aging/stale/stuck="
+                f"{heartbeat_aging_s:.0f}/{heartbeat_stale_s:.0f}/{heartbeat_stuck_s:.0f}s)"
+            )
     else:
-        issues.append("NO_HEARTBEAT: brak heartbeat w worker_state.json")
+        issues.append("NO_HEARTBEAT: brak heartbeat w worker_state/activity")
 except Exception as e:
     issues.append(f"HEARTBEAT_READ_ERROR: {e}")
 
@@ -1652,6 +1911,38 @@ try:
         warnings.append("NO_PID_FILE: brak .worker_simple.pid")
 except Exception:
     pass
+
+# ── 5b. Worker process topology (subprocessy / dublowanie instancji) ───
+worker_process_watch_info = {}
+try:
+    worker_process_watch_info = _read_worker_process_health()
+    if not worker_process_watch_info.get("available", False):
+        warnings.append(
+            f"WORKER_PROCESS_WATCH_UNAVAILABLE: status={worker_process_watch_info.get('status', 'unknown')} "
+            f"reason={worker_process_watch_info.get('reason', 'unknown')}"
+        )
+    else:
+        desc = (
+            f"main={worker_process_watch_info.get('main_pid', 0)} "
+            f"matching={worker_process_watch_info.get('total_matching', 0)} "
+            f"extras={worker_process_watch_info.get('extra_count', 0)} "
+            f"desc={worker_process_watch_info.get('descendant_extra_count', 0)} "
+            f"foreign={worker_process_watch_info.get('foreign_extra_count', 0)} "
+            f"oldest_desc={worker_process_watch_info.get('oldest_descendant_age_s', 0)}s "
+            f"oldest_foreign={worker_process_watch_info.get('oldest_foreign_age_s', 0)}s "
+            f"status={worker_process_watch_info.get('status', 'unknown')}"
+        )
+        sev = str(worker_process_watch_info.get("severity", "ok") or "ok").lower()
+        if sev == "critical":
+            issues.append(f"WORKER_PROCESS_DUPLICATION: {desc}")
+        elif sev == "warning":
+            warnings.append(f"WORKER_PROCESS_DUPLICATION_WARNING: {desc}")
+        elif sev == "info":
+            ok_checks.append(f"worker_subprocess_observed ({desc})")
+        else:
+            ok_checks.append(f"worker_process_topology_ok ({desc})")
+except Exception as e:
+    warnings.append(f"WORKER_PROCESS_WATCH_ERROR: {e}")
 
 # ── 6. Guardian health spójny ──────────────────────────────────────────
 try:
@@ -1928,6 +2219,7 @@ doctor_report = {
     "ok": ok_checks,
     "metrics_drift": metrics_drift_info if isinstance(metrics_drift_info, dict) else {},
     "priority_gate_watch": priority_gate_watch_info if isinstance(priority_gate_watch_info, dict) else {},
+    "worker_process_watch": worker_process_watch_info if isinstance(worker_process_watch_info, dict) else {},
     "thresholds_snapshot": {
         "source_of_truth": "statusd_thresholds_file",
         "config_file": thresholds_file,
@@ -2323,6 +2615,10 @@ AUTO_ACTION_DEFS = {
         "cooldown_minutes": 15,
         "description": "Pauza workera gdy status doctor = CRITICAL",
     },
+    "SWITCH_PROFILE_QUALITY_REPAIR_ON_PRIORITY_GATE_STUCK": {
+        "cooldown_minutes": 90,
+        "description": "Przełącz profil guardiana na quality_repair przy stuck fali ES/PL",
+    },
 }
 
 # ── Załaduj historię audytu (ostatnie 50 wpisów) ────────────────────────
@@ -2426,6 +2722,14 @@ try:
 except Exception:
     pass
 
+priority_gate_watch = {}
+try:
+    with open(os.path.join(status_dir, "statusd_report.json"), encoding="utf-8") as f:
+        rep = json.load(f)
+    priority_gate_watch = rep.get("priority_gate_watch", {}) if isinstance(rep.get("priority_gate_watch", {}), dict) else {}
+except Exception:
+    priority_gate_watch = {}
+
 executed = []
 
 # ── Akcja 1: REDUCE_BATCH_ON_HIGH_GF ────────────────────────────────────
@@ -2526,6 +2830,63 @@ if doctor_overall == "CRITICAL":
                 executed.append(f"🔴 {action}: {result}")
             else:
                 _audit_log(action, trigger, precheck, "SKIPPED (already paused)", "", status="skipped")
+        except Exception as e:
+            _audit_log(action, trigger, precheck, f"ERROR: {e}", "", status="failed")
+
+# ── Akcja 5: SWITCH_PROFILE_QUALITY_REPAIR_ON_PRIORITY_GATE_STUCK ──────
+action = "SWITCH_PROFILE_QUALITY_REPAIR_ON_PRIORITY_GATE_STUCK"
+pg_detected = bool(priority_gate_watch.get("detected", False))
+pg_sev = str(priority_gate_watch.get("severity", "ok") or "ok").lower()
+if pg_detected and pg_sev in ("warning", "critical"):
+    pg_pending = ",".join([str(x) for x in (priority_gate_watch.get("pending_langs", []) if isinstance(priority_gate_watch.get("pending_langs", []), list) else [])]) or "-"
+    pg_minutes = float(priority_gate_watch.get("active_minutes", 0) or 0.0)
+    pg_cycles = int(priority_gate_watch.get("cycle_delta", 0) or 0)
+    trigger = f"severity={pg_sev} pending={pg_pending} active_minutes={pg_minutes:.1f} cycles={pg_cycles}"
+    fingerprint = f"{action}:{pg_sev}:{pg_pending}:{int(pg_cycles//20)}"
+    precheck = f"priority_gate_stuck detected, severity={pg_sev}"
+    if _cooldown_ok(action) and _idempotent_check(action, fingerprint):
+        try:
+            guardian_profile_path = os.path.join(work_dir, "guardian_profile.json")
+            quality_profile_path = os.path.join(work_dir, "guardian_profiles", "quality_repair.json")
+            if not os.path.exists(quality_profile_path):
+                _audit_log(action, trigger, precheck, "SKIPPED (missing quality_repair profile)", "", status="skipped")
+            else:
+                with open(guardian_profile_path, encoding="utf-8") as f:
+                    current_profile = json.load(f)
+                with open(quality_profile_path, encoding="utf-8") as f:
+                    quality_profile = json.load(f)
+
+                old_mode = str(current_profile.get("mode", "") or "")
+                if old_mode == "quality_repair":
+                    _audit_log(action, trigger, precheck, "SKIPPED (already quality_repair)", "", status="skipped")
+                else:
+                    merged_profile = dict(current_profile)
+                    for k, v in quality_profile.items():
+                        if str(k).startswith("_"):
+                            continue
+                        merged_profile[k] = v
+                    with open(guardian_profile_path, "w", encoding="utf-8") as f:
+                        json.dump(merged_profile, f, indent=2, ensure_ascii=False)
+
+                    restarted = False
+                    pid_path = os.path.join(work_dir, ".worker_simple.pid")
+                    if os.path.exists(pid_path):
+                        try:
+                            with open(pid_path, encoding="utf-8") as f:
+                                pid = int(str(f.read()).strip() or "0")
+                            if pid > 0 and os.path.exists(f"/proc/{pid}"):
+                                os.kill(pid, 15)
+                                restarted = True
+                        except Exception:
+                            restarted = False
+
+                    result = (
+                        f"guardian_profile mode: {old_mode or '-'} -> quality_repair, "
+                        f"worker_restart={'sent_sigterm' if restarted else 'no_pid_or_not_running'}"
+                    )
+                    postcheck = "guardian_profile zapisany, guardian zastosuje profil quality_repair"
+                    _audit_log(action, trigger, precheck, result, postcheck)
+                    executed.append(f"🛠️ {action}: {result}")
         except Exception as e:
             _audit_log(action, trigger, precheck, f"ERROR: {e}", "", status="failed")
 
@@ -4265,6 +4626,705 @@ PYRECON
 }
 
 # ═══════════════════════════════════════════════════════════════════════════════
+# MODUŁ 9: Historia postępu (i18n_status_historia.md)
+# ═══════════════════════════════════════════════════════════════════════════════
+
+HISTORIA_ENABLED="${HISTORIA_ENABLED:-true}"
+HISTORIA_INTERVAL="${HISTORIA_INTERVAL:-3600}"
+HISTORIA_MAX_HOURLY_SNAPSHOTS="${HISTORIA_MAX_HOURLY_SNAPSHOTS:-168}"
+HISTORIA_MAX_DAILY_SUMMARIES="${HISTORIA_MAX_DAILY_SUMMARIES:-30}"
+HISTORIA_MAX_WEEKLY_SUMMARIES="${HISTORIA_MAX_WEEKLY_SUMMARIES:-12}"
+HISTORIA_MD_PATH="${HISTORIA_MD_PATH:-docs/i18n/i18n_status_historia.md}"
+HISTORIA_SNAPSHOTS_FILE="${HISTORIA_SNAPSHOTS_FILE:-i18n/status/historia_snapshots.jsonl}"
+HISTORIA_DAILY_FILE="${HISTORIA_DAILY_FILE:-i18n/status/historia_daily.json}"
+HISTORIA_WEEKLY_FILE="${HISTORIA_WEEKLY_FILE:-i18n/status/historia_weekly.json}"
+HISTORIA_DAILY_FIRST_THRESHOLD="${HISTORIA_DAILY_FIRST_THRESHOLD:-5}"
+HISTORIA_DAILY_STEP="${HISTORIA_DAILY_STEP:-5}"
+HISTORIA_CLEANUP_HOURLY_AFTER_DAILY="${HISTORIA_CLEANUP_HOURLY_AFTER_DAILY:-true}"
+HISTORIA_TIER_TARGETS="${HISTORIA_TIER_TARGETS:-{\"T1\":90,\"T2\":50,\"T3\":30}}"
+HISTORIA_LAST_RUN_FILE="${HISTORIA_LAST_RUN_FILE:-$STATUS_DIR/.historia_last_run}"
+
+maybe_run_historia() {
+    [ "$HISTORIA_ENABLED" = "true" ] || return 0
+
+    local now_epoch last_epoch
+    now_epoch=$(date +%s)
+    last_epoch=0
+    if [ -f "$HISTORIA_LAST_RUN_FILE" ]; then
+        last_epoch=$(cat "$HISTORIA_LAST_RUN_FILE" 2>/dev/null || echo 0)
+    fi
+
+    local elapsed=$(( now_epoch - last_epoch ))
+    if [ "$elapsed" -lt "$HISTORIA_INTERVAL" ]; then
+        return 0
+    fi
+
+    log_statusd "📜 Historia: uruchamiam snapshot (elapsed=${elapsed}s)"
+    run_historia_snapshot
+    echo "$now_epoch" > "$HISTORIA_LAST_RUN_FILE"
+}
+
+run_historia_snapshot() {
+    python3 - "$WORK_DIR" "$STATUS_DIR" \
+        "$HISTORIA_SNAPSHOTS_FILE" "$HISTORIA_DAILY_FILE" "$HISTORIA_WEEKLY_FILE" \
+        "$HISTORIA_MD_PATH" \
+        "$HISTORIA_MAX_HOURLY_SNAPSHOTS" "$HISTORIA_MAX_DAILY_SUMMARIES" "$HISTORIA_MAX_WEEKLY_SUMMARIES" \
+        "$HISTORIA_DAILY_FIRST_THRESHOLD" "$HISTORIA_DAILY_STEP" \
+        "$HISTORIA_CLEANUP_HOURLY_AFTER_DAILY" "$HISTORIA_TIER_TARGETS" <<'PYHISTORIA'
+import json, sys, os, re
+from datetime import datetime, timezone, timedelta
+from pathlib import Path
+from collections import defaultdict
+
+# ── args ──
+WORK = sys.argv[1]
+STATUS = sys.argv[2]
+SNAPSHOTS_PATH  = os.path.join(WORK, sys.argv[3])
+DAILY_PATH      = os.path.join(WORK, sys.argv[4])
+WEEKLY_PATH     = os.path.join(WORK, sys.argv[5])
+MD_PATH         = os.path.join(WORK, sys.argv[6])
+MAX_HOURLY      = int(sys.argv[7])
+MAX_DAILY       = int(sys.argv[8])
+MAX_WEEKLY      = int(sys.argv[9])
+DAILY_FIRST_H   = int(sys.argv[10])
+DAILY_STEP       = int(sys.argv[11])
+CLEANUP_HOURLY   = sys.argv[12].lower() == "true"
+try:
+    TIER_TARGETS = json.loads(sys.argv[13])
+except Exception:
+    TIER_TARGETS = {"T1": 90, "T2": 50, "T3": 30}
+
+NOW = datetime.now(timezone.utc)
+NOW_Z = NOW.isoformat(timespec="seconds").replace("+00:00", "Z")
+TODAY = NOW.strftime("%Y-%m-%d")
+HOUR = NOW.hour
+
+# ── tier mapping ──
+T1 = {"pl", "es"}
+T2 = {"de", "pt", "ru", "tr", "fr", "it", "nl", "cs", "sk", "hu"}
+
+def tier_of(lang):
+    if lang in T1: return "T1"
+    if lang in T2: return "T2"
+    return "T3"
+
+def _read_json(path):
+    try:
+        with open(path, encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return {}
+
+def _read_jsonl_window(path, hours=1):
+    """Read JSONL entries from last N hours."""
+    cutoff = NOW - timedelta(hours=hours)
+    entries = []
+    try:
+        with open(path, encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if not line:
+                    continue
+                try:
+                    d = json.loads(line)
+                    ts_str = d.get("timestamp", "")
+                    if ts_str:
+                        ts = datetime.fromisoformat(ts_str.replace("Z", "+00:00"))
+                        if ts >= cutoff:
+                            entries.append(d)
+                except Exception:
+                    continue
+    except FileNotFoundError:
+        pass
+    return entries
+
+def _write_json_atomic(path, data):
+    tmp = path + ".tmp"
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+    os.replace(tmp, path)
+
+def _append_jsonl(path, record):
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "a", encoding="utf-8") as f:
+        f.write(json.dumps(record, ensure_ascii=False) + "\n")
+
+def _trim_jsonl(path, max_lines):
+    """Keep only last max_lines."""
+    try:
+        with open(path, encoding="utf-8") as f:
+            lines = f.readlines()
+    except FileNotFoundError:
+        return
+    if len(lines) <= max_lines:
+        return
+    with open(path, "w", encoding="utf-8") as f:
+        f.writelines(lines[-max_lines:])
+
+# ════════════════════════════════════════════
+# 1) Collect hourly snapshot data
+# ════════════════════════════════════════════
+
+# 1a) Guard report → translated, guard_fail, per-lang
+guard_entries = _read_jsonl_window(
+    os.path.join(STATUS, "translation_guard_report.jsonl"), 1
+)
+total_translated = 0
+total_guard_fail = 0
+per_lang = defaultdict(lambda: {"t": 0, "gf": 0})
+per_cat = defaultdict(lambda: {"t": 0, "gf": 0})
+for e in guard_entries:
+    t = e.get("translated", 0)
+    gf = e.get("guard_fail", 0)
+    total_translated += t
+    total_guard_fail += gf
+    lang = e.get("language", "?")
+    per_lang[lang]["t"] += t
+    per_lang[lang]["gf"] += gf
+    cat = e.get("json_file", "?")
+    per_cat[cat]["t"] += t
+    per_cat[cat]["gf"] += gf
+
+# 1b) Quality report → suspicious_high, identical_to_en
+quality_entries = _read_jsonl_window(
+    os.path.join(STATUS, "quality_report.jsonl"), 1
+)
+total_suspicious_high = 0
+total_identical_to_en = 0
+for e in quality_entries:
+    q = e.get("quality", {})
+    total_suspicious_high += q.get("suspicious_count", 0)
+    total_identical_to_en += q.get("identical_to_en", 0)
+
+# 1c) Worker cycle perf → cycles count, mode distribution
+perf_entries = _read_jsonl_window(
+    os.path.join(STATUS, "worker_cycle_perf.jsonl"), 1
+)
+total_cycles = 0
+mode_dist = defaultdict(int)
+seen_cycles = set()
+for e in perf_entries:
+    cid = e.get("cycle", 0)
+    if cid not in seen_cycles:
+        seen_cycles.add(cid)
+        total_cycles += 1
+    mode = e.get("mode", "UNKNOWN")
+    mode_dist[mode] += 1
+
+# 1d) Coverage from global_overview
+overview = _read_json(os.path.join(STATUS, "translation_global_overview.json"))
+coverage_global = overview.get("global", {}).get("completion_pct", 0)
+lang_coverage = {}
+for ld in overview.get("languages", []):
+    lang_coverage[ld["lang"]] = ld.get("completion_pct", 0)
+
+# 1e) Repair backlog from daily report
+daily_report = _read_json(os.path.join(STATUS, "statusd_daily_report.json"))
+repair_backlog = daily_report.get("repair_backlog", {})
+repair_total = repair_backlog.get("current_total", 0)
+
+# Previous snapshot for delta
+prev_repair = 0
+try:
+    with open(SNAPSHOTS_PATH, encoding="utf-8") as f:
+        lines = f.readlines()
+        if lines:
+            prev = json.loads(lines[-1])
+            prev_repair = prev.get("repair_total", 0)
+except Exception:
+    pass
+repair_delta = repair_total - prev_repair
+
+# 1f) Migration info
+migration = overview.get("migration", {})
+
+# Merge per_lang with coverage
+for lang in per_lang:
+    per_lang[lang]["cov"] = round(lang_coverage.get(lang, 0), 2)
+
+# Guard fail pct
+gf_pct = round(100.0 * total_guard_fail / max(1, total_translated + total_guard_fail), 2)
+
+# Average batch
+avg_batch = round(total_translated / max(1, total_cycles), 1)
+
+# Build snapshot
+window_start = (NOW - timedelta(hours=1)).strftime("%H:%M")
+window_end = NOW.strftime("%H:%M")
+
+snapshot = {
+    "ts": NOW_Z,
+    "date": TODAY,
+    "hour": HOUR,
+    "window": f"{window_start}-{window_end}",
+    "translated": total_translated,
+    "guard_fail": total_guard_fail,
+    "guard_fail_pct": gf_pct,
+    "suspicious_high": total_suspicious_high,
+    "identical_to_en": total_identical_to_en,
+    "repair_total": repair_total,
+    "repair_delta": repair_delta,
+    "cycles": total_cycles,
+    "avg_batch": avg_batch,
+    "coverage_global": coverage_global,
+    "mode_distribution": dict(mode_dist),
+    "migration_completed": migration.get("files_completed", 0),
+    "migration_total": migration.get("files_total", 0),
+    "per_lang": {k: dict(v) for k, v in sorted(per_lang.items())},
+    "per_cat": {k: dict(v) for k, v in sorted(per_cat.items(), key=lambda x: -x[1]["t"])[:10]},
+}
+
+# ════════════════════════════════════════════
+# 2) Append snapshot to JSONL
+# ════════════════════════════════════════════
+_append_jsonl(SNAPSHOTS_PATH, snapshot)
+_trim_jsonl(SNAPSHOTS_PATH, MAX_HOURLY)
+
+print(f"SNAPSHOT saved: translated={total_translated} gf={total_guard_fail} cycles={total_cycles}")
+
+# ════════════════════════════════════════════
+# 3) Progressive daily aggregation
+# ════════════════════════════════════════════
+
+def load_all_snapshots():
+    """Load all snapshots from JSONL."""
+    result = []
+    try:
+        with open(SNAPSHOTS_PATH, encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if line:
+                    try:
+                        result.append(json.loads(line))
+                    except Exception:
+                        pass
+    except FileNotFoundError:
+        pass
+    return result
+
+def aggregate_daily_progressive():
+    """
+    Progressive daily: create/update summary after DAILY_FIRST_H hours,
+    then update every DAILY_STEP hours (5→10→15→20→24).
+    """
+    all_snaps = load_all_snapshots()
+    today_snaps = [s for s in all_snaps if s.get("date") == TODAY]
+
+    if not today_snaps:
+        return None
+
+    hours_covered = len(today_snaps)  # ~1 per hour
+    # Check if we've passed a threshold
+    thresholds = list(range(DAILY_FIRST_H, 25, DAILY_STEP))
+    if 24 not in thresholds:
+        thresholds.append(24)
+
+    # Find current applicable threshold
+    current_threshold = None
+    for th in thresholds:
+        if hours_covered >= th:
+            current_threshold = th
+
+    if current_threshold is None:
+        return None  # Not enough hours yet
+
+    # Load existing daily
+    daily_data = []
+    try:
+        with open(DAILY_PATH, encoding="utf-8") as f:
+            daily_data = json.load(f)
+    except Exception:
+        daily_data = []
+
+    # Check if we already have this day+threshold
+    existing_idx = None
+    for i, dd in enumerate(daily_data):
+        if dd.get("date") == TODAY:
+            existing_idx = i
+            break
+
+    # Aggregate today's snapshots
+    summary = {
+        "date": TODAY,
+        "hours_covered": hours_covered,
+        "threshold": current_threshold,
+        "is_final": current_threshold >= 24 or hours_covered >= 24,
+        "ts_first": today_snaps[0].get("ts", ""),
+        "ts_last": today_snaps[-1].get("ts", ""),
+        "translated": sum(s.get("translated", 0) for s in today_snaps),
+        "guard_fail": sum(s.get("guard_fail", 0) for s in today_snaps),
+        "suspicious_high": sum(s.get("suspicious_high", 0) for s in today_snaps),
+        "identical_to_en": sum(s.get("identical_to_en", 0) for s in today_snaps),
+        "repair_start": today_snaps[0].get("repair_total", 0),
+        "repair_end": today_snaps[-1].get("repair_total", 0),
+        "cycles": sum(s.get("cycles", 0) for s in today_snaps),
+        "coverage_start": today_snaps[0].get("coverage_global", 0),
+        "coverage_end": today_snaps[-1].get("coverage_global", 0),
+    }
+
+    # Guard fail rate
+    total_attempts = summary["translated"] + summary["guard_fail"]
+    summary["guard_fail_pct"] = round(100.0 * summary["guard_fail"] / max(1, total_attempts), 2)
+
+    # Throughput
+    summary["throughput_per_h"] = round(summary["translated"] / max(1, hours_covered), 1)
+
+    # Per-lang aggregation
+    lang_agg = defaultdict(lambda: {"t": 0, "gf": 0})
+    for s in today_snaps:
+        for lang, ld in s.get("per_lang", {}).items():
+            lang_agg[lang]["t"] += ld.get("t", 0)
+            lang_agg[lang]["gf"] += ld.get("gf", 0)
+    # Add latest coverage
+    for lang in lang_agg:
+        lang_agg[lang]["cov"] = lang_coverage.get(lang, 0)
+    summary["per_lang"] = {k: dict(v) for k, v in sorted(lang_agg.items(), key=lambda x: -x[1]["t"])[:15]}
+
+    # Per-cat aggregation
+    cat_agg = defaultdict(lambda: {"t": 0, "gf": 0})
+    for s in today_snaps:
+        for cat, cd in s.get("per_cat", {}).items():
+            cat_agg[cat]["t"] += cd.get("t", 0)
+            cat_agg[cat]["gf"] += cd.get("gf", 0)
+    summary["per_cat"] = {k: dict(v) for k, v in sorted(cat_agg.items(), key=lambda x: -x[1]["t"])[:10]}
+
+    # Mode distribution
+    mode_agg = defaultdict(int)
+    for s in today_snaps:
+        for m, c in s.get("mode_distribution", {}).items():
+            mode_agg[m] += c
+    summary["mode_distribution"] = dict(mode_agg)
+
+    # Migration
+    summary["migration_completed"] = today_snaps[-1].get("migration_completed", 0)
+    summary["migration_total"] = today_snaps[-1].get("migration_total", 0)
+
+    if existing_idx is not None:
+        daily_data[existing_idx] = summary
+    else:
+        daily_data.append(summary)
+
+    # Trim
+    daily_data = daily_data[-MAX_DAILY:]
+    _write_json_atomic(DAILY_PATH, daily_data)
+
+    return summary
+
+daily_summary = aggregate_daily_progressive()
+if daily_summary:
+    print(f"DAILY progressive: hours={daily_summary['hours_covered']} threshold={daily_summary['threshold']} translated={daily_summary['translated']}")
+
+# ════════════════════════════════════════════
+# 4) Weekly aggregation (on Sunday or when 7 daily finals exist)
+# ════════════════════════════════════════════
+
+def aggregate_weekly():
+    """Aggregate completed daily summaries into weekly."""
+    try:
+        with open(DAILY_PATH, encoding="utf-8") as f:
+            daily_data = json.load(f)
+    except Exception:
+        return None
+
+    # Find final dailies (is_final=true)
+    finals = [d for d in daily_data if d.get("is_final")]
+    if len(finals) < 7:
+        return None
+
+    # Check last weekly
+    weekly_data = []
+    try:
+        with open(WEEKLY_PATH, encoding="utf-8") as f:
+            weekly_data = json.load(f)
+    except Exception:
+        weekly_data = []
+
+    # Find dates covered by existing weeklies
+    covered_dates = set()
+    for w in weekly_data:
+        for d in w.get("dates", []):
+            covered_dates.add(d)
+
+    # Find 7 consecutive finals not yet covered
+    uncovered = [d for d in finals if d.get("date") not in covered_dates]
+    if len(uncovered) < 7:
+        return None
+
+    week_batch = uncovered[:7]
+    week_dates = [d["date"] for d in week_batch]
+
+    weekly = {
+        "week_start": week_dates[0],
+        "week_end": week_dates[-1],
+        "dates": week_dates,
+        "ts": NOW_Z,
+        "translated": sum(d.get("translated", 0) for d in week_batch),
+        "guard_fail": sum(d.get("guard_fail", 0) for d in week_batch),
+        "cycles": sum(d.get("cycles", 0) for d in week_batch),
+        "coverage_start": week_batch[0].get("coverage_start", 0),
+        "coverage_end": week_batch[-1].get("coverage_end", 0),
+        "coverage_delta": round(week_batch[-1].get("coverage_end", 0) - week_batch[0].get("coverage_start", 0), 2),
+        "repair_start": week_batch[0].get("repair_start", 0),
+        "repair_end": week_batch[-1].get("repair_end", 0),
+        "throughput_per_h": round(sum(d.get("translated", 0) for d in week_batch) / max(1, sum(d.get("hours_covered", 24) for d in week_batch)), 1),
+    }
+
+    # ETA per tier
+    eta = {}
+    week_translated = weekly["translated"]
+    if week_translated > 0:
+        glo = overview.get("global", {})
+        total_ref = glo.get("total_reference_keys", 0)
+        translated_now = glo.get("translated_keys", 0)
+        missing_now = total_ref - translated_now
+        if missing_now > 0:
+            weeks_to_done = missing_now / max(1, week_translated)
+            eta["global"] = f"{weeks_to_done:.1f} tygodni"
+
+    # Per-lang coverage in week end
+    per_lang_weekly = {}
+    for d in week_batch:
+        for lang, ld in d.get("per_lang", {}).items():
+            if lang not in per_lang_weekly:
+                per_lang_weekly[lang] = {"t": 0, "gf": 0, "cov": 0}
+            per_lang_weekly[lang]["t"] += ld.get("t", 0)
+            per_lang_weekly[lang]["gf"] += ld.get("gf", 0)
+    # Latest coverage
+    for lang in per_lang_weekly:
+        per_lang_weekly[lang]["cov"] = lang_coverage.get(lang, 0)
+
+    weekly["per_lang"] = {k: v for k, v in sorted(per_lang_weekly.items(), key=lambda x: -x[1]["t"])[:15]}
+    weekly["eta"] = eta
+
+    # Migration
+    weekly["migration_completed"] = week_batch[-1].get("migration_completed", 0)
+    weekly["migration_total"] = week_batch[-1].get("migration_total", 0)
+
+    weekly_data.append(weekly)
+    weekly_data = weekly_data[-MAX_WEEKLY:]
+    _write_json_atomic(WEEKLY_PATH, weekly_data)
+
+    print(f"WEEKLY aggregated: {week_dates[0]}..{week_dates[-1]} translated={weekly['translated']}")
+    return weekly
+
+weekly_summary = aggregate_weekly()
+
+# ════════════════════════════════════════════
+# 5) Render Markdown
+# ════════════════════════════════════════════
+
+def render_historia_md():
+    """
+    Generate or update i18n_status_historia.md.
+    - Only current day hourly snapshots in .md
+    - Progressive daily (5h→10h→15h→20h→24h)
+    - After 24h daily close: hourly removed from .md
+    - Weekly summary at top
+    """
+    all_snaps = load_all_snapshots()
+    today_snaps = [s for s in all_snaps if s.get("date") == TODAY]
+
+    # Load daily
+    daily_data = []
+    try:
+        with open(DAILY_PATH, encoding="utf-8") as f:
+            daily_data = json.load(f)
+    except Exception:
+        pass
+
+    # Load weekly
+    weekly_data = []
+    try:
+        with open(WEEKLY_PATH, encoding="utf-8") as f:
+            weekly_data = json.load(f)
+    except Exception:
+        pass
+
+    # Get today's daily
+    today_daily = None
+    for d in daily_data:
+        if d.get("date") == TODAY:
+            today_daily = d
+            break
+
+    lines = []
+    lines.append("# i18n — Historia postępu\n")
+    lines.append(f"> Ostatnia aktualizacja: {NOW_Z}  ")
+    lines.append(f"> Globalny coverage: **{coverage_global}%**  ")
+    lines.append(f"> Repair backlog: **{repair_total}** kluczy\n")
+    lines.append("---\n")
+
+    # ── Weekly summary ──
+    if weekly_data:
+        w = weekly_data[-1]
+        lines.append("## 📊 Ostatni tydzień\n")
+        lines.append(f"**{w.get('week_start','')} — {w.get('week_end','')}**\n")
+        lines.append("| Metryka | Wartość |")
+        lines.append("|---------|---------|")
+        lines.append(f"| Kluczy przetłumaczonych | **{w.get('translated',0):,}** |")
+        lines.append(f"| Throughput | {w.get('throughput_per_h',0):,} kluczy/h |")
+        lines.append(f"| Guard fail | {w.get('guard_fail',0):,} |")
+        lines.append(f"| Cykli workera | {w.get('cycles',0):,} |")
+        cd = w.get('coverage_delta', 0)
+        sign = "+" if cd >= 0 else ""
+        lines.append(f"| Coverage Δ | {sign}{cd}% ({w.get('coverage_start',0)}% → {w.get('coverage_end',0)}%) |")
+        lines.append(f"| Repair queue | {w.get('repair_start',0):,} → {w.get('repair_end',0):,} |")
+        lines.append(f"| Migracja | {w.get('migration_completed',0)}/{w.get('migration_total',0)} plików |")
+        if w.get("eta"):
+            lines.append(f"\n**ETA do 100%:** {w['eta'].get('global', 'brak danych')}\n")
+        # Per-lang top5 weekly
+        pl = w.get("per_lang", {})
+        if pl:
+            top5 = sorted(pl.items(), key=lambda x: -x[1].get("t", 0))[:5]
+            lines.append("\n**Top 5 języków (tydzień):**\n")
+            lines.append("| Język | Przetłum. | Guard fail | Coverage |")
+            lines.append("|-------|-----------|------------|----------|")
+            for lang, ld in top5:
+                lines.append(f"| {lang} | {ld.get('t',0):,} | {ld.get('gf',0)} | {ld.get('cov',0)}% |")
+        lines.append("\n---\n")
+
+    # ── Daily summary (progressive) ──
+    if today_daily:
+        th = today_daily.get("threshold", "?")
+        hrs = today_daily.get("hours_covered", 0)
+        is_final = today_daily.get("is_final", False)
+        label = "FINALNE" if is_final else f"progresywne ({hrs}h / {th}h)"
+        lines.append(f"## 📅 Dzisiaj: {TODAY} — {label}\n")
+        lines.append("| Metryka | Wartość |")
+        lines.append("|---------|---------|")
+        lines.append(f"| Kluczy przetłumaczonych | **{today_daily.get('translated',0):,}** |")
+        lines.append(f"| Throughput | {today_daily.get('throughput_per_h',0):,} kluczy/h |")
+        lines.append(f"| Guard fail rate | {today_daily.get('guard_fail_pct',0)}% ({today_daily.get('guard_fail',0):,} / {today_daily.get('translated',0) + today_daily.get('guard_fail',0):,}) |")
+        lines.append(f"| Cykli workera | {today_daily.get('cycles',0):,} |")
+        lines.append(f"| Coverage | {today_daily.get('coverage_start',0)}% → {today_daily.get('coverage_end',0)}% |")
+        rs = today_daily.get("repair_start", 0)
+        re_ = today_daily.get("repair_end", 0)
+        rd = re_ - rs
+        sign = "+" if rd >= 0 else ""
+        lines.append(f"| Repair queue | {rs:,} → {re_:,} ({sign}{rd}) |")
+
+        # Mode distribution
+        md = today_daily.get("mode_distribution", {})
+        if md:
+            lines.append(f"\n**Tryby workera:** {', '.join(f'{m}: {c}' for m, c in sorted(md.items()))}\n")
+
+        # Migration
+        mc = today_daily.get("migration_completed", 0)
+        mt = today_daily.get("migration_total", 0)
+        if mt > 0:
+            mpct = round(100.0 * mc / mt, 1)
+            lines.append(f"**Migracja:** {mc}/{mt} plików ({mpct}%)\n")
+
+        # Top languages today
+        pl = today_daily.get("per_lang", {})
+        if pl:
+            top = sorted(pl.items(), key=lambda x: -x[1].get("t", 0))[:8]
+            lines.append("\n<details><summary>Top języki dzisiaj</summary>\n")
+            lines.append("| Język | Przetłum. | Guard fail | Coverage |")
+            lines.append("|-------|-----------|------------|----------|")
+            for lang, ld in top:
+                lines.append(f"| {lang} | {ld.get('t',0):,} | {ld.get('gf',0)} | {ld.get('cov',0)}% |")
+            lines.append("\n</details>\n")
+
+        # Top categories today
+        pc = today_daily.get("per_cat", {})
+        if pc:
+            topc = sorted(pc.items(), key=lambda x: -x[1].get("t", 0))[:5]
+            lines.append("\n<details><summary>Top kategorie dzisiaj</summary>\n")
+            lines.append("| Kategoria | Przetłum. | Guard fail |")
+            lines.append("|-----------|-----------|------------|")
+            for cat, cd in topc:
+                lines.append(f"| {cat} | {cd.get('t',0):,} | {cd.get('gf',0)} |")
+            lines.append("\n</details>\n")
+        lines.append("\n---\n")
+
+    # ── Hourly snapshots (today only) ──
+    # If today's daily is final (24h), skip hourly section per config
+    show_hourly = True
+    if today_daily and today_daily.get("is_final") and CLEANUP_HOURLY:
+        show_hourly = False
+
+    if show_hourly and today_snaps:
+        # Sort chronologically
+        today_snaps.sort(key=lambda s: s.get("ts", ""))
+        lines.append(f"## ⏱️ Snapshoty godzinowe: {TODAY}\n")
+        lines.append("| Okno | Przetłum. | Guard fail | GF% | Suspicious | Repair Δ | Cykli |")
+        lines.append("|------|-----------|------------|-----|------------|----------|-------|")
+        for s in today_snaps:
+            lines.append(
+                f"| {s.get('window','-')} "
+                f"| {s.get('translated',0):,} "
+                f"| {s.get('guard_fail',0)} "
+                f"| {s.get('guard_fail_pct',0)}% "
+                f"| {s.get('suspicious_high',0)} "
+                f"| {'+' if s.get('repair_delta',0) >= 0 else ''}{s.get('repair_delta',0)} "
+                f"| {s.get('cycles',0)} |"
+            )
+        lines.append("")
+
+        # Per-lang detail from latest snapshot
+        if today_snaps:
+            latest = today_snaps[-1]
+            pl = latest.get("per_lang", {})
+            if pl:
+                lines.append("\n<details><summary>Szczegóły per język (ostatnia godzina)</summary>\n")
+                lines.append("| Język | Przetłum. | Guard fail | Coverage |")
+                lines.append("|-------|-----------|------------|----------|")
+                for lang, ld in sorted(pl.items(), key=lambda x: -x[1].get("t", 0)):
+                    if ld.get("t", 0) > 0 or ld.get("gf", 0) > 0:
+                        lines.append(f"| {lang} | {ld.get('t',0)} | {ld.get('gf',0)} | {ld.get('cov',0)}% |")
+                lines.append("\n</details>\n")
+        lines.append("\n---\n")
+
+    # ── Previous daily summaries (archiwum) ──
+    prev_dailies = [d for d in daily_data if d.get("date") != TODAY]
+    if prev_dailies:
+        lines.append("## 📂 Poprzednie dni\n")
+        lines.append("| Data | Przetłum. | GF% | Throughput | Coverage | Repair |")
+        lines.append("|------|-----------|-----|-----------|----------|--------|")
+        for d in reversed(prev_dailies[-14:]):
+            lines.append(
+                f"| {d.get('date','-')} "
+                f"| {d.get('translated',0):,} "
+                f"| {d.get('guard_fail_pct',0)}% "
+                f"| {d.get('throughput_per_h',0):,}/h "
+                f"| {d.get('coverage_end',0)}% "
+                f"| {d.get('repair_end',0):,} |"
+            )
+        lines.append("\n---\n")
+
+    # ── Previous weekly summaries ──
+    prev_weeklies = weekly_data[:-1] if len(weekly_data) > 1 else []
+    if prev_weeklies:
+        lines.append("## 📅 Poprzednie tygodnie\n")
+        lines.append("| Tydzień | Przetłum. | Throughput | Coverage Δ |")
+        lines.append("|---------|-----------|-----------|-----------|")
+        for w in reversed(prev_weeklies[-8:]):
+            cd = w.get('coverage_delta', 0)
+            sign = "+" if cd >= 0 else ""
+            lines.append(
+                f"| {w.get('week_start','-')}..{w.get('week_end','-')} "
+                f"| {w.get('translated',0):,} "
+                f"| {w.get('throughput_per_h',0):,}/h "
+                f"| {sign}{cd}% |"
+            )
+        lines.append("")
+
+    # Write MD
+    os.makedirs(os.path.dirname(MD_PATH), exist_ok=True)
+    with open(MD_PATH, "w", encoding="utf-8") as f:
+        f.write("\n".join(lines) + "\n")
+
+    print(f"MD rendered: {MD_PATH} ({len(lines)} lines)")
+
+render_historia_md()
+
+print("HISTORIA_OK")
+PYHISTORIA
+}
+
+# ═══════════════════════════════════════════════════════════════════════════════
 # MODUŁ 8: Daemon loop
 # ═══════════════════════════════════════════════════════════════════════════════
 
@@ -4296,6 +5356,13 @@ run_statusd_cycle() {
     # Auto-akcje z guardrailami (jeśli włączone)
     if auto_actions_enabled; then
         run_auto_actions >> "$STATUSD_LOG" 2>&1 || true
+    fi
+
+    # Historia postępu (MODUŁ 9 — co 1h)
+    local historia_result
+    historia_result=$(maybe_run_historia 2>/dev/null || true)
+    if [ -n "$historia_result" ]; then
+        log_statusd "📜 Historia: $historia_result"
     fi
 
     # Zapisz stan daemona
@@ -4341,6 +5408,9 @@ case "${1:-}" in
         generate_recommendations
         echo ""
         generate_daily_report
+        echo ""
+        echo "═══ Historia snapshot ═══"
+        run_historia_snapshot
         ;;
     --daemon)
         daemon_loop
@@ -4359,6 +5429,11 @@ case "${1:-}" in
         ;;
     --reconcile-registry)
         run_registry_reconcile
+        ;;
+    --historia)
+        HISTORIA_ENABLED=true
+        echo "═══ Historia snapshot (ręczne uruchomienie) ═══"
+        run_historia_snapshot
         ;;
     --daily-report)
         generate_daily_report
@@ -4403,6 +5478,7 @@ for line in sys.stdin:
         echo "  --recommend  Rekomendacje profilu/akcji"
         echo "  --aggregate  Agregacja telemetrii do JSON"
         echo "  --reconcile-registry Uzgodnij registry keys z LIVE (zapis korekty w i18n_file_status.json)"
+        echo "  --historia   Ręczny snapshot historii postępu → i18n_status_historia.md"
         echo "  --daily-report Wygeneruj raport zarządczy 24h (JSON + MD)"
         echo "  --alert-check Jednorazowa ewaluacja i ewentualny webhook alert"
         echo "  --auto-action Wykonaj auto-akcje z guardrailami"

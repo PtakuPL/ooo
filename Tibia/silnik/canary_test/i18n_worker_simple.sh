@@ -3,7 +3,8 @@
 # I18N WORKER v2.0 - Multi-Mode Worker z trybami pracy
 #===============================================================================
 # TRYBY:
-#   1. MIGRATION   - Migracja kodu NPC (8 etapów) - domyślny
+#   1. PRE_MIGRATION - Skan plików źródłowych (bez modyfikacji) - domyślny
+#      (MIGRATION zablokowana na stałe → MIGRATION_ENABLED=false)
 #   2. TRANSLATION - Tłumaczenia kluczy EN → inne języki (6 etapów + składnie)
 #   3. VALIDATION  - Walidacja tłumaczeń (4 etapy)
 #
@@ -13,12 +14,10 @@
 # ── UNIFIED STAGE / EVENT NAMES ──────────────────────────────────
 # Phase            Stage                  Opis
 # ─────────────    ─────────────────────  ─────────────────────────
-# MIGRATION        migration_start        Początek cyklu migracji
-#                  file                   Przetwarzanie pliku
+# PRE_MIGRATION    pre_migration_scan     Skan plików (bez modyfikacji)
 #                  pending_skip           Pomijanie pending_skip
-#                  mini_batch             Mini-batch w toku
-#                  mini_batch_start/done  Granice mini-batch
-#                  migration_done         Koniec migracji
+#                  pre_migration_done     Koniec skanu
+# (MIGRATION zablokowana — MIGRATION_ENABLED=false)
 # TRANSLATION_SYNC sync_start             Synchronizacja EN→lang
 #                  sync_file_done         Plik zsynchronizowany
 #                  sync_done              Koniec synchronizacji
@@ -56,6 +55,7 @@ BACKUP_DIR="backups"
 PROCESSED_FILE="i18n_processed_files.txt"
 
 # Konfiguracja trybów
+MIGRATION_ENABLED=false      # ZABLOKOWANE: migracja kodu wyłączona na stałe; PRE_MIGRATION (skan) nadal działa
 MIGRATION_BATCH=50          # Ile plików na cykl migracji (total)
 MINI_BATCH=10               # Ile plików w mini-batch
 MINI_PAUSE=3                # Pauza między mini-batch (sekundy)
@@ -2604,6 +2604,7 @@ if activity_present:
     status_txt = str(activity.get("status") or "running")
 
     icon = {
+        "PRE_MIGRATION": "🔍",
         "MIGRATION": "🔧",
         "TRANSLATION_SYNC": "🌍",
         "AUTO_TRANSLATE": "🤖",
@@ -2630,8 +2631,8 @@ if activity_present:
     summary_file = file_path
     summary_eta = int(activity.get("eta_seconds") or 0) if str(activity.get("eta_seconds") or "").isdigit() else activity.get("eta_seconds")
 
-elif last_mode == "MIGRATION":
-    mode_display = "🔧 MIGRATION (skanowanie plików)"
+elif last_mode in ("MIGRATION", "PRE_MIGRATION"):
+    mode_display = "🔍 PRE_MIGRATION (skan plików, bez modyfikacji)"
     category_display = f"📁 {last_category.upper()}"
     
     # Statystyki migracji - RZECZYWISTE DANE z plików JSON
@@ -2653,7 +2654,7 @@ elif last_mode == "MIGRATION":
 │    ├─ Kategoria {last_category.upper():>6}: {current_cat_keys:>6} kluczy EN                    │
 │    └─ Total kluczy EN: {total_keys:>6}                                 │"""
 
-    summary_phase = "MIGRATION"
+    summary_phase = "PRE_MIGRATION"
     summary_stage = "-"
     summary_category = last_category
     summary_file = "-"
@@ -2841,6 +2842,7 @@ try:
         def _icon(phase_name: str) -> str:
             phase_name = str(phase_name or "").upper()
             return {
+                "PRE_MIGRATION": "🔍",
                 "MIGRATION": "🔧",
                 "COMPACT_KEYS": "🔑",
                 "TRANSLATION_SYNC": "🌍",
@@ -2949,11 +2951,11 @@ _current_phase = str(summary_phase if 'summary_phase' in dir() else last_mode or
 # Section states
 sec_meta_state, sec_meta_reason = "🟢 ACTIVE", ""
 sec_live_state, sec_live_reason = _section_state(
-    ["MIGRATION", "TRANSLATION_SYNC", "AUTO_TRANSLATE", "COMPACT_KEYS", "VALIDATION", "IDLE"],
+    ["PRE_MIGRATION", "MIGRATION", "TRANSLATION_SYNC", "AUTO_TRANSLATE", "COMPACT_KEYS", "VALIDATION", "IDLE"],
     _current_phase
 )
 sec_migration_state, sec_migration_reason = _section_state(
-    ["MIGRATION", "COMPACT_KEYS"], _current_phase
+    ["PRE_MIGRATION", "MIGRATION", "COMPACT_KEYS"], _current_phase
 )
 sec_translation_state, sec_translation_reason = _section_state(
     ["AUTO_TRANSLATE", "TRANSLATION_SYNC"], _current_phase
@@ -3246,7 +3248,7 @@ md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 
 ---
 
-## 🛠️ MIGRATION
+## � PRE_MIGRATION (skan)
 
 {migration_section_hdr}
 
@@ -10257,7 +10259,7 @@ PYREPAIRTUNING
 #===============================================================================
 AUTO_TRANSLATE_MID_CYCLE_HEARTBEAT_ENABLED="${AUTO_TRANSLATE_MID_CYCLE_HEARTBEAT_ENABLED:-true}"
 AUTO_TRANSLATE_MID_CYCLE_HEARTBEAT_INTERVAL_SEC="${AUTO_TRANSLATE_MID_CYCLE_HEARTBEAT_INTERVAL_SEC:-90}"
-AUTO_TRANSLATE_MID_BATCH_CMD_CHECK_EVERY="${AUTO_TRANSLATE_MID_BATCH_CMD_CHECK_EVERY:-8}"
+AUTO_TRANSLATE_MID_BATCH_CMD_CHECK_EVERY="${AUTO_TRANSLATE_MID_BATCH_CMD_CHECK_EVERY:-4}"
 
 auto_translate_keys() {
     local target_lang="$1"
@@ -10326,7 +10328,7 @@ auto_translate_keys() {
     fi
 
     local _at_out _at_rc _translated _placeholders
-    _at_out=$(USE_GOOGLE_TRANSLATE="$USE_GOOGLE_TRANSLATE" GT_BATCH_SIZE="$GT_BATCH_SIZE" GT_DELAY="$GT_DELAY" GT_BATCH_TIMEOUT="$GT_BATCH_TIMEOUT" GT_SINGLE_TIMEOUT="$GT_SINGLE_TIMEOUT" AUTO_TRANSLATE_COMMAND_FILE="${COMMAND_FILE:-.worker_command}" AUTO_TRANSLATE_MID_BATCH_CMD_CHECK_EVERY="${AUTO_TRANSLATE_MID_BATCH_CMD_CHECK_EVERY:-8}" AUTO_TRANSLATE_OPERATOR_FAST_MODE="${_operator_fast_mode:-false}" AUTO_TRANSLATE_OPERATOR_FAST_LIMIT_MAX="${FORCED_AUTO_FAST_LANE_MAX_LIMIT:-30}" python3 - "$target_lang" "$json_file" "$translate_limit" "$strict_mode" << 'AUTOTRANSPY'
+    _at_out=$(USE_GOOGLE_TRANSLATE="$USE_GOOGLE_TRANSLATE" GT_BATCH_SIZE="$GT_BATCH_SIZE" GT_DELAY="$GT_DELAY" GT_BATCH_TIMEOUT="$GT_BATCH_TIMEOUT" GT_SINGLE_TIMEOUT="$GT_SINGLE_TIMEOUT" AUTO_TRANSLATE_COMMAND_FILE="${COMMAND_FILE:-.worker_command}" AUTO_TRANSLATE_MID_BATCH_CMD_CHECK_EVERY="${AUTO_TRANSLATE_MID_BATCH_CMD_CHECK_EVERY:-4}" AUTO_TRANSLATE_OPERATOR_FAST_MODE="${_operator_fast_mode:-false}" AUTO_TRANSLATE_OPERATOR_FAST_LIMIT_MAX="${FORCED_AUTO_FAST_LANE_MAX_LIMIT:-30}" python3 - "$target_lang" "$json_file" "$translate_limit" "$strict_mode" << 'AUTOTRANSPY'
 import json
 import os
 import re
@@ -10344,7 +10346,7 @@ status_dir = os.environ.get("STATUS_DIR", os.path.join(I18N_DIR, "status"))
 proper_nouns_path = os.path.join(status_dir, "tibia_proper_nouns.json")
 command_file = os.environ.get("AUTO_TRANSLATE_COMMAND_FILE", ".worker_command")
 try:
-    mid_batch_cmd_check_every = int(os.environ.get("AUTO_TRANSLATE_MID_BATCH_CMD_CHECK_EVERY", "8") or "8")
+    mid_batch_cmd_check_every = int(os.environ.get("AUTO_TRANSLATE_MID_BATCH_CMD_CHECK_EVERY", "4") or "4")
 except Exception:
     mid_batch_cmd_check_every = 8
 if mid_batch_cmd_check_every < 1:
@@ -18335,7 +18337,7 @@ def transition_gate(target_phase, cat_state, force=False):
     If force=True, logs as 'forced' and always allows.
     """
     target = str(target_phase or "").upper()
-    last_phase = _load_last_phase() or "MIGRATION"
+    last_phase = _load_last_phase() or "PRE_MIGRATION"
     last_rank = _phase_rank(last_phase)
     target_rank = _phase_rank(target)
 
@@ -18420,7 +18422,7 @@ if cmd:
         
         if forced_cat in CATEGORIES:
             needs = count_files_needing_work(forced_cat)
-            print(f"MIGRATION:{forced_cat}:{needs}:FORCED")
+            print(f"PRE_MIGRATION:{forced_cat}:{needs}:FORCED")
             exit(0)
         elif forced_cat == "random":
             # Losowa kategoria
@@ -18429,7 +18431,7 @@ if cmd:
             cats_with_work = [(c, n) for c, n in cats_with_work if n > 0]
             if cats_with_work:
                 cat, needs = random.choice(cats_with_work)
-                print(f"MIGRATION:{cat}:{needs}:RANDOM")
+                print(f"PRE_MIGRATION:{cat}:{needs}:RANDOM")
                 exit(0)
     elif cmd == "SKIP":
         # Pomiń aktualną kategorię
@@ -18452,7 +18454,7 @@ sorted_cats = sorted(CATEGORIES.items(), key=lambda x: x[1].get("priority", 99))
 for cat_name, config in sorted_cats:
     if cat_name not in last_processed:
         needs_work = count_files_needing_work(cat_name)
-        print(f"MIGRATION:{cat_name}:{needs_work}:BOOTSTRAP")
+        print(f"PRE_MIGRATION:{cat_name}:{needs_work}:BOOTSTRAP")
         exit(0)
 
 # Standardowy przebieg
@@ -18473,8 +18475,8 @@ for cat_name, config in sorted_cats:
     if needs_work > 0:
         cat_state["migrations_done"] = False
         write_category_state(cat_state)
-        _commit_phase("MIGRATION")
-        print(f"MIGRATION:{cat_name}:{needs_work}")
+        _commit_phase("PRE_MIGRATION")
+        print(f"PRE_MIGRATION:{cat_name}:{needs_work}")
         exit(0)
 
 # Jeśli są kategorie na skip/backoff, nie przechodź do TRANSLATION_SYNC
@@ -18482,8 +18484,8 @@ if pending_skip:
     cat_state["migrations_done"] = False
     write_category_state(cat_state)
     if skip_has_work or total_needs > 0:
-        _commit_phase("MIGRATION")
-        print(f"MIGRATION:pending_skip:{total_needs}:WAIT")
+        _commit_phase("PRE_MIGRATION")
+        print(f"PRE_MIGRATION:pending_skip:{total_needs}:WAIT")
         exit(0)
     # jeśli nie ma realnej pracy, pozwól przejść dalej
 
@@ -18539,8 +18541,8 @@ missing_langs = compact_locales_missing()
 if km_total < en_total or missing_langs:
     allowed, gate_reason = transition_gate("COMPACT_KEYS", cat_state)
     if not allowed:
-        # Gate blocked — fall back to MIGRATION
-        print(f"MIGRATION:gate_blocked:0:{gate_reason}")
+        # Gate blocked — fall back to PRE_MIGRATION
+        print(f"PRE_MIGRATION:gate_blocked:0:{gate_reason}")
         exit(0)
     _commit_phase("COMPACT_KEYS")
     reason = []
@@ -18554,7 +18556,7 @@ if km_total < en_total or missing_langs:
 # 2. Migracja zakończona - sprawdź TRANSLATION_SYNC (Etap 1)
 # Jeśli migracje nie są oficjalnie zakończone, zatrzymaj się tutaj
 if not cat_state.get("migrations_done", False):
-    print("MIGRATION:pending:0:WAIT")
+    print("PRE_MIGRATION:pending:0:WAIT")
     exit(0)
 # Funkcja synchronizacji kluczy EN → LANG
 def get_sync_state():
@@ -21113,7 +21115,28 @@ PYFORCEDMETRIC
         
         # Obsługa Ctrl+C
         trap 'echo ""; echo "⛔ Zatrzymuję worker..."; status_update_activity "interrupted" "${CYCLE:-0}" "${MODE_TYPE:-IDLE}" "signal" "${MODE_CAT:-}" "-" "stopping" 0 0 "units" 0; if should_force_status_update_on_metrics_delta; then echo "📊 Smart force status update (signal)"; if should_update_github_status force; then update_github_status; fi; elif should_update_github_status; then update_github_status; else echo "⏭️ Smart force: brak istotnych zmian metryk (signal), pomijam full status"; fi; cleanup_pid_files_if_owner; exit 0' SIGINT SIGTERM
-        
+
+        # Sleep przerywalny: jeśli w trakcie oczekiwania pojawi się komenda wymuszona,
+        # kończymy sen wcześniej, aby skrócić pending_age_s.
+        sleep_with_forced_command_wakeup() {
+            local total_s="${1:-0}"
+            local command_path="${2:-.worker_command}"
+            local left
+            if [[ "$total_s" =~ ^[0-9]+$ ]]; then
+                left="$total_s"
+                while [ "$left" -gt 0 ]; do
+                    if [ -f "$command_path" ]; then
+                        echo "   ⚡ FAST WAKE: wykryto pending $command_path"
+                        return 0
+                    fi
+                    sleep 1
+                    left=$((left - 1))
+                done
+                return 0
+            fi
+            sleep "$total_s"
+        }
+
         while true; do
             ACTIVE_PID=$(cat "$PID_FILE" 2>/dev/null || echo "")
             if [[ "$ACTIVE_PID" =~ ^[0-9]+$ ]] && [ "$ACTIVE_PID" != "$$" ] && kill -0 "$ACTIVE_PID" 2>/dev/null; then
@@ -21146,7 +21169,7 @@ PYFORCEDMETRIC
             # Jeśli worker jest wstrzymany (paused), czekaj
             if [ "${RUNTIME_PAUSED:-false}" = "true" ]; then
                 echo "⏸️ Worker PAUSED (ustaw paused=false w worker_config.json aby wznowić)"
-                sleep 10
+                sleep_with_forced_command_wakeup 10 ".worker_command"
                 continue
             fi
 
@@ -21280,8 +21303,8 @@ BEGIN { done=0 }
                 case "$CMD" in
                     FORCE:*)
                         FORCED_CAT=$(echo "$CMD" | cut -d: -f2)
-                        echo "🎯 Wymuszam kategorię: $FORCED_CAT"
-                        MODE_TYPE="MIGRATION"
+                        echo "🎯 Wymuszam kategorię: $FORCED_CAT (PRE_MIGRATION — skan only)"
+                        MODE_TYPE="PRE_MIGRATION"
                         MODE_CAT="$FORCED_CAT"
                         MODE_COUNT="forced"
                         MODE_EXTRA="FORCED"
@@ -21317,8 +21340,8 @@ BEGIN { done=0 }
                         echo "🎲 Losowanie kategorii..."
                         ALL_CATS="npc scripts monsters raids world spells items libs events chatchannels modules startup npclib"
                         RANDOM_CAT=$(echo "$ALL_CATS" | tr ' ' '\n' | shuf | head -1)
-                        echo "🎯 Wylosowano: $RANDOM_CAT"
-                        MODE_TYPE="MIGRATION"
+                        echo "🎯 Wylosowano: $RANDOM_CAT (PRE_MIGRATION — skan only)"
+                        MODE_TYPE="PRE_MIGRATION"
                         MODE_CAT="$RANDOM_CAT"
                         MODE_COUNT="random"
                         MODE_EXTRA="RANDOM"
@@ -21880,307 +21903,101 @@ REPORTPY
             
             case "$MODE_TYPE" in
                 MIGRATION)
-                    echo "🔧 TRYB: MIGRACJA kategorii '$MODE_CAT' ($MODE_COUNT plików do zrobienia)"
+                    # === MIGRATION ZABLOKOWANA NA STAŁE ===
+                    echo "🚫 MIGRATION zablokowana (MIGRATION_ENABLED=false)"
+                    echo "   Kategoria: $MODE_CAT | Plików do migracji: ${MODE_COUNT:-0}"
+                    echo "   Migracja kodu źródłowego jest wyłączona. Używaj PRE_MIGRATION do skanowania."
+                    status_log_op "$CYCLE" "MIGRATION" "blocked" "$MODE_CAT" "-" "skip" "migration disabled" "0" "0"
+                    update_category_state "$MODE_CAT" "0"
+                    ;;
 
-                    status_update_activity "running" "$CYCLE" "MIGRATION" "migration_start" "$MODE_CAT" "-" "migration" 0 "${MODE_COUNT:-0}" "files" 0
+                PRE_MIGRATION)
+                    # === PRE-MIGRACJA: tylko skan i statystyki, BEZ modyfikacji plików ===
+                    echo "🔍 TRYB: PRE_MIGRATION (skan) kategorii '$MODE_CAT' ($MODE_COUNT plików wymaga migracji)"
 
-                    # Zapisz stan diff przed kategorią (żeby liczyć tylko zmiany z tego przebiegu).
-                    TMP_DIFF_BEFORE="$(mktemp)"
-                    TMP_DIFF_AFTER="$(mktemp)"
-                    git diff --name-only 2>/dev/null >"$TMP_DIFF_BEFORE" || true
-                    
-                    # Specjalny przypadek: wszystkie kategorie są na skip
-                    if [ "$MODE_CAT" = "pending_skip" ]; then
-                        echo "   ⏳ Wszystkie kategorie są tymczasowo pominięte (skip), czekam..."
-                        status_update_activity "running" "$CYCLE" "MIGRATION" "pending_skip" "$MODE_CAT" "-" "all categories skipped" 0 0 "files" 0
-                        log_pending_skip_event "$CYCLE" "${MODE_COUNT:-0}" "backoff"
-                        sleep 30
+                    status_update_activity "running" "$CYCLE" "PRE_MIGRATION" "scan_start" "$MODE_CAT" "-" "scanning" 0 "${MODE_COUNT:-0}" "files" 0
+
+                    if [ "$MODE_CAT" = "pending_skip" ] || [ "$MODE_CAT" = "gate_blocked" ] || [ "$MODE_CAT" = "pending" ]; then
+                        echo "   ⏳ Kategorie na skip/wait — pomijam"
+                        status_update_activity "running" "$CYCLE" "PRE_MIGRATION" "pending_skip" "$MODE_CAT" "-" "scan skip" 0 0 "files" 0
+                        log_pending_skip_event "$CYCLE" "${MODE_COUNT:-0}" "pre_migration_skip"
+                        # Oznacz migracje jako "done" — pozwól przejść do tłumaczeń
+                        python3 -c "
+import json, os
+state_path = '.i18n_category_state.json'
+if os.path.exists(state_path):
+    with open(state_path, 'r') as f:
+        state = json.load(f)
+else:
+    state = {}
+state['migrations_done'] = True
+with open(state_path, 'w') as f:
+    json.dump(state, f, indent=2, ensure_ascii=False)
+" 2>/dev/null || true
                         continue
                     fi
-                    
-                    # Wywołaj odpowiednią funkcję migracji dla kategorii
-                    case "$MODE_CAT" in
-                        npc)
-                            echo "   🧙 Przetwarzam NPC..."
-                            COUNT=0
-                            # Wczytaj completed files raz na początku
-                            COMPLETED_LIST=$(python3 -c "import json; d=json.load(open('$STATUS_FILE')); print(' '.join([f for f,v in d.get('files',{}).items() if v.get('overall_status')=='completed']))" 2>/dev/null)
-                            NEEDS_ANALYSIS_DOC_FILE="$(mktemp)"
-                            python3 - "$STATUS_FILE" << 'PY' > "$NEEDS_ANALYSIS_DOC_FILE"
-import json
-import os
-import sys
 
-status_file = sys.argv[1]
-try:
-    with open(status_file, "r", encoding="utf-8") as f:
-        data = json.load(f)
-except Exception:
-    data = {}
+                    # Skan: zlicz pliki wymagające migracji per kategoria (bez modyfikacji!)
+                    echo "   📊 Skan statystyk PRE_MIGRATION..."
+                    PRE_MIG_STATS=$(python3 << 'PREMIGPY'
+import json, os, sys
 
-files = data.get("files", {})
-npc_dirs = ["data-otservbr-global/npc", "data-canary/npc"]
+I18N_DIR = "i18n"
+status_dir = os.path.join(I18N_DIR, "status")
+os.makedirs(status_dir, exist_ok=True)
 
-for npc_dir in npc_dirs:
-    if not os.path.isdir(npc_dir):
-        continue
-    for fname in os.listdir(npc_dir):
-        if not fname.endswith(".lua"):
-            continue
-        path = os.path.join(npc_dir, fname)
-        info = files.get(path)
-        if not info:
-            print(path)
-            continue
-        stages = info.get("stages", {})
-        if "2_analysis" not in stages or "3_documentation" not in stages:
-            print(path)
-            continue
-        doc_file = stages.get("3_documentation", {}).get("doc_file")
-        if doc_file:
-            if not os.path.exists(doc_file):
-                print(path)
-            continue
-        base = os.path.splitext(os.path.basename(path))[0]
-        safe = base.lower().replace(" ", "_").replace("-", "_")
-        if not os.path.exists(os.path.join("docs", "i18n", "npc", f"{safe}.md")):
-            print(path)
-PY
-                            
-                            # Przetwórz oba katalogi NPC
-                            for npc_dir in data-otservbr-global/npc data-canary/npc; do
-                                [ -d "$npc_dir" ] || continue
-                                for f in "$npc_dir"/*.lua; do
-                                    [ -f "$f" ] || continue
-                                    
-                                    NEEDS_ANALYSIS_DOC=false
-                                    if grep -qF "$f" "$NEEDS_ANALYSIS_DOC_FILE" 2>/dev/null; then
-                                        NEEDS_ANALYSIS_DOC=true
-                                    fi
+# Załaduj category state
+state_path = ".i18n_category_state.json"
+if os.path.exists(state_path):
+    with open(state_path, "r") as f:
+        state = json.load(f)
+else:
+    state = {}
 
-                                    if [ "$NEEDS_ANALYSIS_DOC" != "true" ]; then
-                                        # NAPRAWIONE: Pomiń już przetworzone pliki!
-                                        echo "$COMPLETED_LIST" | grep -qF "$f" && continue
-                                        grep -qF "$f" "$PROCESSED_FILE" 2>/dev/null && continue
-                                    fi
-                                    
-                                    NEEDS_WORK=false
-                                    
-                                    if grep -q "StdModule\.say" "$f" 2>/dev/null; then
-                                        if ! grep -q "i18nKey" "$f" 2>/dev/null; then
-                                            if grep -q 'text = "' "$f" 2>/dev/null; then
-                                                NEEDS_WORK=true
-                                            fi
-                                        fi
-                                    fi
-                                    
-                                    # Prostszy pattern - npcHandler:say( bez wymuszania " zaraz po
-                                    if grep -q 'npcHandler:say(' "$f" 2>/dev/null; then
-                                        if ! grep -q "NPC_LIB.i18n.npcSay" "$f" 2>/dev/null; then
-                                            NEEDS_WORK=true
-                                        fi
-                                    fi
-                                    
-                                    # npcConfig.voices z text = "..." bez i18nKey
-                                    if grep -q "npcConfig.voices" "$f" 2>/dev/null; then
-                                        if grep -q 'text = "' "$f" 2>/dev/null; then
-                                            if ! grep -q "i18nKey" "$f" 2>/dev/null; then
-                                                NEEDS_WORK=true
-                                            fi
-                                        fi
-                                    fi
-                                    
-                                    if [ "$NEEDS_WORK" = "true" ] || [ "$NEEDS_ANALYSIS_DOC" = "true" ]; then
-                                        status_update_activity "running" "$CYCLE" "MIGRATION" "file" "npc" "$f" "processing" "$COUNT" "${MODE_COUNT:-0}" "files" 0
-                                        if ! process_file "$f"; then
-                                            status_log_error "$CYCLE" "MIGRATION" "file" "npc" "$f" "process_file failed" "continue"
-                                        fi
-                                        COUNT=$((COUNT + 1))
-                                        [ "$COUNT" -ge "$BATCH" ] && break 2
-                                    fi
-                                done
-                            done
-                            rm -f "$NEEDS_ANALYSIS_DOC_FILE" 2>/dev/null || true
-                            echo "   📊 NPC: Zmigrowano $COUNT plików"
-                            ;;
-                        scripts)
-                            echo "   📜 Przetwarzam SCRIPTS..."
-                            COUNT=0
-                            # Wczytaj completed files
-                            COMPLETED_LIST=$(python3 -c "import json; d=json.load(open('$STATUS_FILE')); print(' '.join([f for f,v in d.get('files',{}).items() if v.get('overall_status')=='completed']))" 2>/dev/null)
-                            
-                            # Przeszukaj wszystkie pliki scripts (bez limitu)
-                            while IFS= read -r f; do
-                                [ -f "$f" ] || continue
-                                
-                                # Pomiń już przetworzone w JSON (relatywna ścieżka)
-                                echo "$COMPLETED_LIST" | grep -qF "$f" && continue
-                                
-                                # Pomiń już przetworzone w starym pliku (absolutna lub relatywna)
-                                grep -qF "$f" "$PROCESSED_FILE" 2>/dev/null && continue
-                                grep -qF "$(pwd)/$f" "$PROCESSED_FILE" 2>/dev/null && continue
-                                
-                                # Szukaj sendTextMessage i/lub :say (fizyczne migracje)
-                                # Nie pomijaj plików tylko dlatego, że mają już gdzieś sendLocalizedTextMessage
-                                # (mogą być częściowo zmigrowane).
-                                if grep -qE '([:.])sendTextMessage\s*\(|\bsendTextMessage\s*\(|:say\s*\(|npcHandler:say\s*\(' "$f" 2>/dev/null; then
-                                    status_update_activity "running" "$CYCLE" "MIGRATION" "file" "scripts" "$f" "processing" "$COUNT" "${MODE_COUNT:-0}" "files" 0
-                                    if ! process_scripts_file "$f"; then
-                                        status_log_error "$CYCLE" "MIGRATION" "file" "scripts" "$f" "process_scripts_file failed" "continue"
-                                    fi
-                                    COUNT=$((COUNT + 1))
-                                    [ "$COUNT" -ge "$BATCH" ] && break
-                                fi
-                            done < <(find data-otservbr-global/scripts data-canary/scripts data/scripts -name "*.lua" 2>/dev/null)
-                            echo "   📊 Scripts: Przetworzono $COUNT plików"
-                            ;;
-                        monsters)
-                            echo "   👹 Przetwarzam MONSTERS z mini-batch..."
-                            COUNT=$(run_with_mini_batch "monsters" "process_monsters_category" "$BATCH")
-                            ;;
-                        spells)
-                            echo "   ✨ Przetwarzam SPELLS z mini-batch..."
-                            COUNT=$(run_with_mini_batch "spells" "process_spells_category" "$BATCH")
-                            ;;
-                        items)
-                            echo "   🎒 Przetwarzam ITEMS z mini-batch..."
-                            COUNT=$(run_with_mini_batch "items" "process_items_category" "$BATCH")
-                            ;;
-                        raids)
-                            echo "   ⚔️ Przetwarzam RAIDS z mini-batch..."
-                            COUNT=$(run_with_mini_batch "raids" "process_raids_category" "$BATCH")
-                            ;;
-                        world)
-                            echo "   🗺️ Przetwarzam WORLD z mini-batch..."
-                            COUNT=$(run_with_mini_batch "world" "process_world_category" "$BATCH")
-                            ;;
-                        libs)
-                            echo "   📚 Przetwarzam LIBS z mini-batch..."
-                            COUNT=$(run_with_mini_batch "libs" "process_libs_category" "$BATCH")
-                            ;;
-                        events)
-                            echo "   🎉 Przetwarzam EVENTS z mini-batch..."
-                            COUNT=$(run_with_mini_batch "events" "process_events_category" "$BATCH")
-                            ;;
-                        chatchannels)
-                            echo "   💬 Przetwarzam CHATCHANNELS z mini-batch..."
-                            COUNT=$(run_with_mini_batch "chatchannels" "process_chatchannels_category" "$BATCH")
-                            ;;
-                        modules)
-                            echo "   📦 Przetwarzam MODULES z mini-batch..."
-                            COUNT=$(run_with_mini_batch "modules" "process_modules_category" "$BATCH")
-                            ;;
-                        startup)
-                            echo "   🚀 Przetwarzam STARTUP z mini-batch..."
-                            COUNT=$(run_with_mini_batch "startup" "process_startup_category" "$BATCH")
-                            ;;
-                        npclib)
-                            echo "   📖 Przetwarzam NPCLIB z mini-batch..."
-                            COUNT=$(run_with_mini_batch "npclib" "process_npclib_category" "$BATCH")
-                            ;;
-                        php)
-                            echo "   🐘 Przetwarzam PHP z mini-batch..."
-                            COUNT=$(run_with_mini_batch "php" "process_php_category" "$BATCH")
-                            ;;
-                        html)
-                            echo "   📄 Przetwarzam HTML/Twig z mini-batch..."
-                            COUNT=$(run_with_mini_batch "html" "process_html_category" "$BATCH")
-                            ;;
-                        cpp)
-                            echo "   ⚙️ Przetwarzam C++ z mini-batch..."
-                            COUNT=$(run_with_mini_batch "cpp" "process_cpp_category" "$BATCH")
-                            ;;
-                        client)
-                            echo "   🎮 Przetwarzam OTClient z mini-batch..."
-                            COUNT=$(run_with_mini_batch "client" "process_client_category" "$BATCH")
-                            ;;
-                        actions)
-                            echo "   🎯 Przetwarzam ACTIONS z mini-batch..."
-                            COUNT=$(run_with_mini_batch "actions" "process_generic_category" "$BATCH")
-                            ;;
-                        quests)
-                            echo "   🏆 Przetwarzam QUESTS z mini-batch..."
-                            COUNT=$(run_with_mini_batch "quests" "process_generic_category" "$BATCH")
-                            ;;
-                        talkactions)
-                            echo "   💬 Przetwarzam TALKACTIONS z mini-batch..."
-                            COUNT=$(run_with_mini_batch "talkactions" "process_generic_category" "$BATCH")
-                            ;;
-                        movements)
-                            echo "   🚶 Przetwarzam MOVEMENTS z mini-batch..."
-                            COUNT=$(run_with_mini_batch "movements" "process_generic_category" "$BATCH")
-                            ;;
-                        creaturescripts)
-                            echo "   👹 Przetwarzam CREATURESCRIPTS z mini-batch..."
-                            COUNT=$(run_with_mini_batch "creaturescripts" "process_generic_category" "$BATCH")
-                            ;;
-                        globalevents)
-                            echo "   🌍 Przetwarzam GLOBALEVENTS z mini-batch..."
-                            COUNT=$(run_with_mini_batch "globalevents" "process_generic_category" "$BATCH")
-                            ;;
-                        mounts)
-                            echo "   🐴 Przetwarzam MOUNTS z mini-batch..."
-                            COUNT=$(run_with_mini_batch "mounts" "process_generic_category" "$BATCH")
-                            ;;
-                        dataroot)
-                            echo "   📁 Przetwarzam DATA ROOT z mini-batch..."
-                            COUNT=$(run_with_mini_batch "dataroot" "process_generic_category" "$BATCH")
-                            ;;
-                        server)
-                            echo "   🖥️ Przetwarzam SERVER z mini-batch..."
-                            COUNT=$(run_with_mini_batch "server" "process_generic_category" "$BATCH")
-                            ;;
-                        otclient_modules)
-                            echo "   🎮 Przetwarzam OTCLIENT MODULES z mini-batch..."
-                            COUNT=$(run_with_mini_batch "otclient_modules" "process_generic_category" "$BATCH")
-                            ;;
-                        otclient_data)
-                            echo "   📦 Przetwarzam OTCLIENT DATA z mini-batch..."
-                            COUNT=$(run_with_mini_batch "otclient_data" "process_generic_category" "$BATCH")
-                            ;;
-                        otclient_src)
-                            echo "   ⚙️ Przetwarzam OTCLIENT SRC (C++) z mini-batch..."
-                            COUNT=$(run_with_mini_batch "otclient_src" "process_generic_category" "$BATCH")
-                            ;;
-                        otclient_mods)
-                            echo "   🔧 Przetwarzam OTCLIENT MODS z mini-batch..."
-                            COUNT=$(run_with_mini_batch "otclient_mods" "process_generic_category" "$BATCH")
-                            ;;
-                        otclient_tools)
-                            echo "   🛠️ Przetwarzam OTCLIENT TOOLS z mini-batch..."
-                            COUNT=$(run_with_mini_batch "otclient_tools" "process_generic_category" "$BATCH")
-                            ;;
-                        errors)
-                            echo "   🐛 Przetwarzam ERRORS z mini-batch..."
-                            COUNT=$(run_with_mini_batch "errors" "process_generic_category" "$BATCH")
-                            ;;
-                        *)
-                            echo "   ⚠️ Nieznana kategoria: $MODE_CAT - próbuję generyczną obsługę..."
-                            COUNT=$(run_with_mini_batch "$MODE_CAT" "process_generic_category" "$BATCH")
-                            ;;
-                    esac
-                    
-                    # === ŚLEDZENIE WYNIKU KATEGORII ===
-                    # Zlicz klucze PO przetwarzaniu
-                    KEYS_AFTER=$(python3 -c "import json,os; print(sum(len(json.load(open(f'i18n/en/{f}'))) for f in os.listdir('i18n/en') if f.endswith('.json')))" 2>/dev/null || echo "0")
-                    KEYS_ADDED=$((KEYS_AFTER - KEYS_BEFORE))
-                    
-                    # Sprawdź zmiany w git wprowadzone TYLKO przez tę kategorię (delta).
-                    git diff --name-only 2>/dev/null >"$TMP_DIFF_AFTER" || true
-                    FILES_CHANGED=$(comm -13 <(sort "$TMP_DIFF_BEFORE") <(sort "$TMP_DIFF_AFTER") | grep -E '\.(lua|otui|otmod|xml|cpp|hpp)$' | wc -l)
-                    FILES_CHANGED=${FILES_CHANGED:-0}
-                    rm -f "$TMP_DIFF_BEFORE" "$TMP_DIFF_AFTER" 2>/dev/null || true
-                    
-                    # Za "realną pracę" uznajemy tylko zmiany: dodane klucze + zmodyfikowane pliki .lua.
-                    # COUNT bywa niespójny między kategoriami (czasem to pliki, czasem klucze z mini-batch),
-                    # więc nie używamy go do backoff/skip.
-                    COUNT=${COUNT:-0}
-                    EFFECTIVE_COUNT=$((KEYS_ADDED + FILES_CHANGED))
-                    echo "   📈 Wynik: +$KEYS_ADDED kluczy, $FILES_CHANGED plików źródłowych, COUNT=$COUNT"
-                    update_category_state "$MODE_CAT" "$EFFECTIVE_COUNT"
+cat_name = os.environ.get("MODE_CAT", "unknown")
+needs_count = int(os.environ.get("MODE_COUNT", "0") or "0")
 
-                    status_log_op "$CYCLE" "MIGRATION" "category_done" "$MODE_CAT" "-" "ok" "migration finished" "$KEYS_ADDED" "$FILES_CHANGED"
-                    status_update_activity "running" "$CYCLE" "MIGRATION" "migration_done" "$MODE_CAT" "-" "+$KEYS_ADDED keys, $FILES_CHANGED files" "$EFFECTIVE_COUNT" "$EFFECTIVE_COUNT" "items" 0
+# Zapisz wynik skanu do pre_migration_scan.json
+scan_path = os.path.join(status_dir, "pre_migration_scan.json")
+scan_data = {}
+if os.path.exists(scan_path):
+    try:
+        with open(scan_path, "r") as f:
+            scan_data = json.load(f)
+    except:
+        scan_data = {}
+
+from datetime import datetime, timezone
+scan_data[cat_name] = {
+    "needs_migration": needs_count,
+    "scanned_at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+}
+
+with open(scan_path, "w") as f:
+    json.dump(scan_data, f, indent=2, ensure_ascii=False)
+
+# Oznacz kategorię jako "przetworzoną" (skan zakończony) i migrations_done=True
+state["migrations_done"] = True
+if "last_processed" not in state:
+    state["last_processed"] = {}
+state["last_processed"][cat_name] = {
+    "count": 0,
+    "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+    "mode": "pre_migration_scan",
+}
+
+with open(state_path, "w") as f:
+    json.dump(state, f, indent=2, ensure_ascii=False)
+
+print(f"scan_done:{cat_name}:{needs_count}")
+PREMIGPY
+                    )
+                    echo "   ✅ PRE_MIGRATION skan: $PRE_MIG_STATS"
+                    echo "   📈 Wynik: skan zakończony (0 plików zmodyfikowanych, 0 kluczy dodanych)"
+                    update_category_state "$MODE_CAT" "0"
+
+                    status_log_op "$CYCLE" "PRE_MIGRATION" "scan_done" "$MODE_CAT" "-" "ok" "scan only, needs=${MODE_COUNT:-0}" "0" "0"
+                    status_update_activity "running" "$CYCLE" "PRE_MIGRATION" "scan_done" "$MODE_CAT" "-" "scan: ${MODE_COUNT:-0} files need migration" 0 0 "files" 0
                     ;;
 
                 COMPACT_KEYS)
@@ -22322,6 +22139,11 @@ PY
                             echo "   ⚡ FAST AUTO: pomijam parallel langs dla komendy wymuszonej z limitem"
                         fi
                         while [ "$PARALLEL_DONE" -lt "${PARALLEL_LANGS_PER_CYCLE:-3}" ]; do
+                            if [ -f "$COMMAND_FILE" ]; then
+                                PREEMPT_PENDING_FORCED_CMD=true
+                                echo "   ⚡ PREEMPT: pending .worker_command — przerywam parallel langs"
+                                break
+                            fi
                             # Wyczyść cache strict selector aby wybrał nowy target
                             rm -f "$STATUS_DIR/translation_strict_candidates_cache.json" 2>/dev/null || true
                             PARALLEL_TARGET=$(select_auto_translate_target_strict)
@@ -22358,23 +22180,32 @@ PY
                         echo "   ⚡ PREEMPT: pomijam parallel langs (pending forced command)"
                     fi
 
+                    if [ "$PREEMPT_PENDING_FORCED_CMD" != "true" ] && [ -f "$COMMAND_FILE" ]; then
+                        PREEMPT_PENDING_FORCED_CMD=true
+                        echo "   ⚡ PREEMPT: wykryto pending .worker_command — pomijam heavy repair/validation"
+                    fi
+
                     # === Sekcja 12.5: Repair identical_to_en bonus round ===
                     if [ "$AUTO_COMMAND_FAST_MODE" = "true" ] || [ "$PREEMPT_PENDING_FORCED_CMD" = "true" ]; then
                         echo "   ⚡ FAST AUTO: pomijam repair/audit/tier-validation/lang-validation w tym cyklu"
                     else
                         repair_identical_bonus_round "$CYCLE"
-
-                        # Cykliczny audyt jakości (co QUALITY_AUDIT_INTERVAL cykli)
-                        run_quality_audit "$CYCLE"
-
-                        # === Faza 6: Formalna walidacja tierów ===
-                        validate_tier_quality "$CYCLE"
-
-                        # Pełna walidacja per-język (co LANG_VALIDATION_INTERVAL cykli)
-                        if [ -n "$FORCE_LANG_VALIDATION" ] && [ "$FORCE_LANG_VALIDATION" != "all" ]; then
-                            run_full_lang_validation "$CYCLE" "$FORCE_LANG_VALIDATION"
+                        if [ -f "$COMMAND_FILE" ]; then
+                            PREEMPT_PENDING_FORCED_CMD=true
+                            echo "   ⚡ PREEMPT: pending .worker_command po repair — pomijam quality/tier/lang-validation"
                         else
-                            run_full_lang_validation "$CYCLE"
+                            # Cykliczny audyt jakości (co QUALITY_AUDIT_INTERVAL cykli)
+                            run_quality_audit "$CYCLE"
+
+                            # === Faza 6: Formalna walidacja tierów ===
+                            validate_tier_quality "$CYCLE"
+
+                            # Pełna walidacja per-język (co LANG_VALIDATION_INTERVAL cykli)
+                            if [ -n "$FORCE_LANG_VALIDATION" ] && [ "$FORCE_LANG_VALIDATION" != "all" ]; then
+                                run_full_lang_validation "$CYCLE" "$FORCE_LANG_VALIDATION"
+                            else
+                                run_full_lang_validation "$CYCLE"
+                            fi
                         fi
                     fi
                     ;;
@@ -22397,7 +22228,7 @@ PY
                         if [ "${STOP_AFTER_CYCLE:-false}" = "true" ]; then
                             echo "🛑 ONCE: kończę po cyklu translation-only"
                         else
-                            sleep 30
+                            sleep_with_forced_command_wakeup 30 "$COMMAND_FILE"
                         fi
                         continue
                     fi
@@ -22425,7 +22256,7 @@ PY
                     else
                         # Aktualizuj heartbeat przed sleep, żeby dashboard nie pokazywał STALE
                         status_update_activity "running" "$CYCLE" "IDLE" "sleeping" "-" "-" "idle sleep 300s" 0 0 "units" 0
-                        sleep 300
+                        sleep_with_forced_command_wakeup 300 "$COMMAND_FILE"
                     fi
                     ;;
                 SELFTEST)
@@ -22522,7 +22353,7 @@ data['mode'] = mode_type
 data['category'] = mode_cat
 
 # === DANE SPECYFICZNE DLA TRYBU ===
-if mode_type == 'MIGRATION':
+if mode_type in ('MIGRATION', 'PRE_MIGRATION'):
     # Statystyki migracji plików
     status_file = 'i18n_file_status.json'
     processed_file = 'i18n_processed_files.txt'
@@ -22873,7 +22704,7 @@ print(total)
             MODE_CAT=""
             MODE_COUNT=""
             
-            sleep "$CYCLE_DELAY_SEC"
+            sleep_with_forced_command_wakeup "$CYCLE_DELAY_SEC" "$COMMAND_FILE"
         done
         ;;
     *)
@@ -22881,7 +22712,7 @@ print(total)
         echo "I18N Worker v2.0 - Multi-Mode Worker"
         echo ""
         echo "TRYBY PRACY:"
-        echo "  1. MIGRATION   - Migracja kodu NPC (text= → i18nKey=)"
+        echo "  1. PRE_MIGRATION - Skan plików źródłowych (bez modyfikacji)"
         echo "  2. TRANSLATION - Interaktywne tłumaczenia (agent wpisuje)"
         echo ""
         echo "TRYB TRANSLATION - INTERAKTYWNY:"
@@ -22893,7 +22724,7 @@ print(total)
         echo "  - Zmienne w {nawiasach} (np. {player}) → BEZ ZMIAN"
         echo ""
         echo "Użycie:"
-        echo "  $0 --file <path>        Przetwórz jeden plik (MIGRATION)"
+        echo "  $0 --file <path>        Skanuj jeden plik (PRE_MIGRATION)"
         echo "  $0 --translate [lang]   Interaktywne tłumaczenia (domyślnie: pl)"
         echo "  $0 --self-check         Szybki sanity check"
         echo "  $0 --status             Pokaż dashboard statusu"

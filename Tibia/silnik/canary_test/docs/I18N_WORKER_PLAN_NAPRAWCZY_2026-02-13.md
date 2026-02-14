@@ -11,6 +11,49 @@
 
 ---
 
+## 🛠️ Aktualizacja wykonania (2026-02-14 07:28 UTC — scanned_files_live + statusd drift + global_stats)
+
+Wybrane do realizacji pełne zadania:
+- **Domknięcie metryki `scanned_files_live` w dashboardzie**
+- **Alerting driftu metryk LIVE vs registry w statusd**
+- **Ujednolicenie metryk migracji w `i18n_global_stats.json`**
+
+Wykonane:
+- ✅ `i18n_worker_simple.sh`:
+  - dodano `scanned_files_live` (z `i18n_file_status.json`) obok historycznego `scanned_files` (z `i18n_processed_files.txt`),
+  - `I18N_STATUS.md` pokazuje teraz oba liczniki skanu (`historia` i `LIVE`) oraz różnicę `Historia minus LIVE`,
+  - `translation_global_overview.json` (blok `migration`) zawiera:
+    - `scanned_files_history`,
+    - `scanned_files_live`,
+    - `scanned_files_history_minus_live`.
+- ✅ `i18n-statusd.sh`:
+  - dodano blok `metrics_drift` do `statusd_report.json`,
+  - `statusd_doctor.json` ocenia drift po nowych progach (`keys` + `%`) i publikuje obiekt `metrics_drift`,
+  - webhook alerting obsługuje reason codes:
+    - `metrics_drift_high`,
+    - `metrics_drift_elevated`,
+  - `statusd_daily_report.json/md` ma sekcję `Metrics Drift (LIVE vs Registry)` oraz rozszerzone metryki migracji LIVE/history/registry.
+- ✅ `i18n_global_stats.json` (ścieżka `mode=MIGRATION`) zapisuje teraz:
+  - `keys_extracted_live`,
+  - `keys_extracted_worker_registry`,
+  - `keys_extracted_outside_worker_registry`,
+  - `files_scanned_live`,
+  - `files_scanned_history`,
+  - `files_scanned_history_minus_live`.
+
+Walidacja runtime (2026-02-14 07:28 UTC):
+- ✅ `I18N_STATUS.md`:
+  - `Przeskanowane (LIVE)=2,299`,
+  - `Przeskanowane (historia)=6,443`,
+  - `Historia minus LIVE=+4,144`.
+- ✅ `statusd_report.json`: ma `metrics_drift` + nowe pola `migration.scanned_files_*`.
+- ✅ `statusd_doctor.json`: zawiera `metrics_drift` i używa nowego kontraktu.
+- ✅ Worker/guardian/statusd działają równolegle po wdrożeniu.
+
+Nowe rzeczy do zrobienia ujawnione podczas realizacji:
+- ⬜ Ujednolicić **jedno kanoniczne źródło progów** `metrics_drift` dla daemon/manual (obecnie możliwe różnice środowiskowe; daily już dziedziczy progi z `statusd_report.json`).
+- ⬜ Dodać jawny config progów driftu do stałego artefaktu (`statusd_thresholds.json` lub `worker_config.json`), żeby wyeliminować rozjazdy env.
+
 ## 🛠️ Aktualizacja wykonania (2026-02-14 07:07 UTC — korekta metryk LIVE vs rejestr workera)
 
 Wybrane do realizacji pełne zadanie:
@@ -24,6 +67,7 @@ Wykonane:
   - klucze LIVE,
   - klucze z rejestru workera,
   - drift „poza rejestrem workera”.
+- ✅ `should_force_status_update_on_metrics_delta()` wykrywa teraz zmiany w `i18n/*.json` przez sygnaturę plików (`i18n_live_signature`) i wymusza refresh statusu po zmianach ręcznych/agentowych.
 - ✅ Sekcja `MIGRATION` ma poprawione źródło danych:
   - `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt`.
 - ✅ `i18n/status/translation_global_overview.json` (blok `migration`) publikuje dodatkowo:
@@ -36,9 +80,9 @@ Walidacja po wdrożeniu (2026-02-14 07:07 UTC):
 - ✅ Potwierdzono zgodność LIVE z bieżącą sumą kluczy EN.
 
 Nowe rzeczy do zrobienia ujawnione podczas realizacji:
-- ⬜ Dodać `scanned_files_live` (licznik skanu niezależny od historii `i18n_processed_files.txt`), aby ręczne migracje nie wyglądały jak „nieskanowane”.
-- ⬜ Dodać alert driftu metryk (np. gdy `keys_extracted_outside_worker_registry` przekracza próg), żeby operator szybciej widział rozjazd rejestru.
-- ⬜ Ujednolicić analogiczne pola w `i18n_global_stats.json` (tam nadal jest tylko metryka registry w gałęzi `mode=MIGRATION`).
+- ✅ Dodać `scanned_files_live` (licznik skanu niezależny od historii `i18n_processed_files.txt`). → DONE 2026-02-14: wdrożony w dashboardzie + telemetrii.
+- ✅ Dodać alert driftu metryk (np. gdy `keys_extracted_outside_worker_registry` przekracza próg). → DONE 2026-02-14: statusd_doctor check #10 + webhook `metrics_drift_high/critical`.
+- ✅ Ujednolicić analogiczne pola w `i18n_global_stats.json` (tam nadal jest tylko metryka registry w gałęzi `mode=MIGRATION`). → DONE 2026-02-14: migration LIVE/registry w każdym trybie (AUTO_TRANSLATE/IDLE).
 
 ## 🛠️ Aktualizacja wykonania (2026-02-14 06:56 UTC — stabilność guardiana + quality watch)
 

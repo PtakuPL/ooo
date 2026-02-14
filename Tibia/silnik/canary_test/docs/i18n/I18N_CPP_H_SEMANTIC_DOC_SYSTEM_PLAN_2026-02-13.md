@@ -6,6 +6,32 @@
 
 ---
 
+## 0c) Aktualizacja koordynacyjna (2026-02-14 07:28 UTC)
+
+Zmiany runtime/status istotne dla planu C++/H:
+- ✅ `I18N_STATUS.md` ma dwa niezależne liczniki skanu (`history` vs `live`) + różnicę.
+- ✅ `statusd` ma pełny kontrakt `metrics_drift` (report + doctor + daily + webhook reason code).
+- ✅ `statusd_daily_report` został spięty z aktywnymi progami driftu z `statusd_report.json`, żeby ograniczyć niespójności między raportami.
+
+Nowe wymagania dla pipeline semantycznego C++/H:
+- ⬜ Emitować sygnał kompatybilny z `scanned_files_live/history` (`scan_source_hint`), aby łatwo mapować zmiany semantyczne na realny coverage skanowania.
+- ⬜ Dodać `drift_explainer` (np. które moduły mogły zwiększyć `outside_worker_registry_keys`) do lepszej diagnostyki source-of-truth driftu.
+
+## 0b) Aktualizacja koordynacyjna (2026-02-14 07:07 UTC)
+
+Zmiany runtime/status istotne dla planu C++/H:
+- ✅ Dashboard `I18N_STATUS.md` rozdziela metryki kluczy na:
+  - LIVE (`i18n/en/*.json`),
+  - registry (`i18n_file_status.json`),
+  - drift (`outside_worker_registry`).
+- ✅ Worker wymusza teraz refresh statusu po zmianie sygnatury `i18n/*.json` (`i18n_live_signature`), więc ręczne zmiany są szybciej widoczne w dashboardzie.
+- ✅ Ujawniony został duży drift metryk (`53,586` LIVE vs `6,248` registry), co potwierdza potrzebę korelacji zmian semantycznych poza standardową ścieżką workera.
+
+Nowe wymagania dla pipeline semantycznego C++/H:
+- ⬜ Emitować znacznik `change_origin` (`worker|manual|agent|unknown`) tam, gdzie da się go wiarygodnie wywnioskować z artefaktów.
+- ⬜ Dodać sygnał `metrics_drift_impact` (czy zmiana w module mogła zwiększyć drift LIVE vs registry), by statusd mógł priorytetyzować audyt.
+- ⬜ Powiązać delta modułów C++/H z `scanned_files_live` (po wdrożeniu tej metryki), nie tylko z historią `processed_files`.
+
 ## 0a) Aktualizacja koordynacyjna (2026-02-14 06:56 UTC)
 
 Domknięte zmiany po stronie runtime i ich wpływ na plan C++/H:

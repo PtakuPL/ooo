@@ -5,6 +5,51 @@
 > `docs/I18N_UNIFIED_EXECUTION_PLAN_2026-02-13.md`.
 > W przypadku konfliktu zapisów, obowiązuje plan kanoniczny.
 
+## 🛠️ Aktualizacja wykonania (2026-02-14 07:28 UTC — statusd drift + live scan counters)
+
+Wykonane:
+- ✅ `I18N_STATUS.md` ma teraz dwa liczniki skanu:
+  - `Przeskanowane (historia)` (`i18n_processed_files.txt`),
+  - `Przeskanowane (LIVE)` (`i18n_file_status.json`),
+  - oraz różnicę `Historia minus LIVE`.
+- ✅ `statusd_report.json` ma nowy blok `metrics_drift`:
+  - `live_keys`,
+  - `worker_registry_keys`,
+  - `outside_worker_registry_keys`,
+  - `% drift` + severity + progi.
+- ✅ `statusd_doctor.json` używa nowego kontraktu driftu (liczbowo, nie tylko po tekstowych heurystykach).
+- ✅ Alerting webhook ma reason codes:
+  - `metrics_drift_high`,
+  - `metrics_drift_elevated`.
+- ✅ `statusd_daily_report.json/md` pokazuje sekcję `Metrics Drift (LIVE vs Registry)` + migration metrics LIVE/history/registry.
+
+Walidacja:
+- ✅ Runtime potwierdzony po wdrożeniu: worker/guardian/statusd aktywne, a nowe pola obecne w report/doctor/daily.
+
+Nowe TODO:
+- ⬜ Ujednolicić źródło progów `metrics_drift` dla wszystkich ścieżek uruchamiania statusd (daemon/manual), bo różne środowiska mogą dać inne severity.
+- ⬜ Dodać artefakt `statusd_thresholds_snapshot` do łatwego audytu, jakie progi były aktywne przy danej agregacji/alarcie.
+
+## 🛠️ Aktualizacja wykonania (2026-02-14 07:07 UTC — naprawa spójności key metrics)
+
+Wykonane:
+- ✅ `I18N_STATUS.md` pokazuje teraz oddzielnie:
+  - metrykę LIVE (stan `i18n/en/*.json`),
+  - metrykę registry (historia workera z `i18n_file_status.json`),
+  - drift (klucze poza rejestrem workera).
+- ✅ Sekcja `MIGRATION` dostała jawny, mieszany `source`:
+  - `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt`.
+- ✅ Rozszerzono payload telemetryczny o pola LIVE/registry/drift dla kluczy.
+- ✅ Mechanizm force-update statusu wykrywa teraz zmianę sygnatury `i18n/*.json` (`i18n_live_signature`), więc ręczne zmiany poza workerem wyzwalają odświeżenie dashboardu.
+
+Walidacja:
+- ✅ Snapshot po wdrożeniu: LIVE `53,586`, registry `6,248`, drift `47,338`.
+
+Nowe TODO dla status+guard+statusd:
+- ✅ Dodać `metric_drift` check do `statusd_doctor`. → DONE 2026-02-14: check #10 `_read_metrics_drift()` z progami WARN/CRIT (keys + %).
+- ✅ Dodać do sekcji `MIGRATION` równoległy licznik `scanned_files_live`. → DONE 2026-02-14: dashboard pokazuje historia + LIVE.
+- ✅ Dodać reason code webhooka dla driftu (`metrics_drift_high`). → DONE 2026-02-14: reason codes `metrics_drift_critical/high/moderate`.
+
 ## 🛠️ Aktualizacja wykonania (2026-02-14 06:56 UTC — guardian/start-source + statusd quality watch)
 
 Wykonane:
@@ -33,7 +78,7 @@ Nowe problemy wykryte runtime:
 
 Nowe TODO do planu:
 - ⬜ Wprowadzić progi `suspicious_high` per domena/per-język (co najmniej `npc.json` + PL/ES), zamiast tylko globalnego count.
-- ⬜ Dodać check operacyjny: jeśli `repair_queue.entries_total` maleje, ale `repair_tuning_24h.samples_24h=0` przez >2h, zgłoś warning `REPAIR_TUNING_NO_SAMPLES`.
+- ✅ Dodać check operacyjny: jeśli `repair_queue.entries_total` maleje, ale `repair_tuning_24h.samples_24h=0` przez >2h, zgłoś warning `REPAIR_TUNING_NO_SAMPLES`. → DONE 2026-02-14: doctor check #11 + webhook signal.
 - ✅ Nadal domknąć organizacyjnie pojedyncze źródło uruchamiania guardiana (`service` vs `scheduler` vs `manual`) mimo locka kodowego. → DONE 2026-02-14: `i18n_start_all.sh` — kanoniczny start/stop/restart/status wszystkich demonów.
 
 ## 🚨 ANEKS DECYZYJNY (2026-02-13, FINAL)

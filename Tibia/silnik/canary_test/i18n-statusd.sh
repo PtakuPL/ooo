@@ -42,6 +42,10 @@ REPAIR_QUEUE_STAGNATION_MIN_DROP="${STATUSD_REPAIR_QUEUE_STAGNATION_MIN_DROP:-1}
 SUSPICIOUS_HIGH_WINDOW_HOURS="${STATUSD_SUSPICIOUS_HIGH_WINDOW_HOURS:-6}"
 SUSPICIOUS_HIGH_WARN_COUNT="${STATUSD_SUSPICIOUS_HIGH_WARN_COUNT:-120}"
 SUSPICIOUS_HIGH_CRIT_COUNT="${STATUSD_SUSPICIOUS_HIGH_CRIT_COUNT:-240}"
+METRICS_DRIFT_WARN_KEYS="${STATUSD_METRICS_DRIFT_WARN_KEYS:-50000}"
+METRICS_DRIFT_CRIT_KEYS="${STATUSD_METRICS_DRIFT_CRIT_KEYS:-100000}"
+METRICS_DRIFT_WARN_PCT="${STATUSD_METRICS_DRIFT_WARN_PCT:-95}"
+METRICS_DRIFT_CRIT_PCT="${STATUSD_METRICS_DRIFT_CRIT_PCT:-99}"
 DAEMON_INTERVAL_SECONDS=60
 
 export HOME="/home/ptaku"
@@ -58,8 +62,8 @@ log_statusd() {
 # ═══════════════════════════════════════════════════════════════════════════════
 
 aggregate_telemetry() {
-    python3 - "$WORK_DIR" "$STATUS_DIR" "$STATUSD_REPORT_FILE" "$REPAIR_QUEUE_STAGNATION_HOURS" "$REPAIR_QUEUE_STAGNATION_MIN_SAMPLES" "$REPAIR_QUEUE_STAGNATION_MIN_DROP" "$SUSPICIOUS_HIGH_WINDOW_HOURS" "$SUSPICIOUS_HIGH_WARN_COUNT" "$SUSPICIOUS_HIGH_CRIT_COUNT" <<'PYAGG'
-import json, sys, os
+    python3 - "$WORK_DIR" "$STATUS_DIR" "$STATUSD_REPORT_FILE" "$REPAIR_QUEUE_STAGNATION_HOURS" "$REPAIR_QUEUE_STAGNATION_MIN_SAMPLES" "$REPAIR_QUEUE_STAGNATION_MIN_DROP" "$SUSPICIOUS_HIGH_WINDOW_HOURS" "$SUSPICIOUS_HIGH_WARN_COUNT" "$SUSPICIOUS_HIGH_CRIT_COUNT" "$METRICS_DRIFT_WARN_KEYS" "$METRICS_DRIFT_CRIT_KEYS" "$METRICS_DRIFT_WARN_PCT" "$METRICS_DRIFT_CRIT_PCT" <<'PYAGG'
+import json, sys, os, time
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from collections import Counter
@@ -73,6 +77,10 @@ repair_min_drop = int(float(sys.argv[6] or "1"))
 suspicious_window_h = float(sys.argv[7] or "6")
 suspicious_warn_count = int(float(sys.argv[8] or "120"))
 suspicious_crit_count = int(float(sys.argv[9] or "240"))
+metrics_drift_warn_keys = int(float(sys.argv[10] or "5000"))
+metrics_drift_crit_keys = int(float(sys.argv[11] or "20000"))
+metrics_drift_warn_pct = float(sys.argv[12] or "10")
+metrics_drift_crit_pct = float(sys.argv[13] or "25")
 
 now = datetime.now(timezone.utc)
 report = {
@@ -93,6 +101,17 @@ def _parse_ts(ts):
         return datetime.fromisoformat(str(ts).replace("Z", "+00:00"))
     except Exception:
         return None
+
+def _read_json_retry(path, retries=3, delay_s=0.05):
+    for idx in range(max(1, retries)):
+        try:
+            with open(path, encoding="utf-8") as f:
+                payload = json.load(f)
+            return payload if isinstance(payload, dict) else {}
+        except Exception:
+            if idx + 1 < retries:
+                time.sleep(delay_s)
+    return {}
 
 def _analyze_repair_queue(status_dir, now, window_h, min_samples, min_drop):
     queue_latest_path = os.path.join(status_dir, "identical_to_en_repair_queue.json")
@@ -461,11 +480,7 @@ report["dispatch"] = {
 
 # ── Coverage (z translation_global_overview) ────────────────────────────
 overview = {}
-try:
-    with open(os.path.join(status_dir, "translation_global_overview.json"), encoding="utf-8") as f:
-        overview = json.load(f)
-except Exception:
-    pass
+overview = _read_json_retry(os.path.join(status_dir, "translation_global_overview.json"))
 
 coverage = {}
 languages = overview.get("languages", [])
@@ -499,6 +514,8 @@ report["coverage"] = {k: coverage[k] for k in sorted(coverage.keys())}
 
 # ── Migration stats (z file_status + overview) ─────────────────────────
 migration = overview.get("migration", {})
+if not isinstance(migration, dict):
+    migration = {}
 if not migration:
     # Fallback: czytaj z i18n_file_status.json
     try:
@@ -508,16 +525,64 @@ if not migration:
         fs_files = fs.get("files", {})
         fs_completed = sum(1 for info in fs_files.values()
                           if info.get("stages", {}).get("8_sync", {}).get("status") == "completed")
-        fs_keys = sum(info.get("stages", {}).get("5_extraction_en", {}).get("keys_added", 0)
+        fs_keys_registry = sum(info.get("stages", {}).get("5_extraction_en", {}).get("keys_added", 0)
                       for info in fs_files.values())
+        fs_keys_live = 0
+        en_dir = os.path.join(work_dir, "i18n", "en")
+        if os.path.isdir(en_dir):
+            for name in os.listdir(en_dir):
+                if not name.endswith(".json"):
+                    continue
+                try:
+                    with open(os.path.join(en_dir, name), encoding="utf-8") as ef:
+                        payload = json.load(ef)
+                    if isinstance(payload, dict):
+                        fs_keys_live += len(payload)
+                except Exception:
+                    continue
         migration = {
             "files_total": len(fs_files),
             "files_completed": fs_completed,
-            "total_keys_extracted": fs_keys,
+            "scanned_files_live": len(fs_files),
+            "total_keys_extracted": fs_keys_live,
+            "total_keys_extracted_live": fs_keys_live,
+            "total_keys_extracted_worker_registry": fs_keys_registry,
+            "keys_extracted_outside_worker_registry": max(0, fs_keys_live - fs_keys_registry),
         }
     except Exception:
         migration = {}
 report["migration"] = migration
+
+# ── Metrics drift (LIVE vs worker registry) ──────────────────────────────
+live_keys = _safe_int(migration.get("total_keys_extracted_live", migration.get("total_keys_extracted", 0)))
+registry_keys = _safe_int(migration.get("total_keys_extracted_worker_registry", migration.get("keys_extracted", 0)))
+outside_registry = _safe_int(
+    migration.get("keys_extracted_outside_worker_registry", max(0, live_keys - registry_keys))
+)
+outside_registry = max(0, outside_registry)
+drift_pct = round((outside_registry / live_keys * 100.0), 3) if live_keys > 0 else 0.0
+if outside_registry >= metrics_drift_crit_keys or drift_pct >= metrics_drift_crit_pct:
+    drift_severity = "critical"
+    drift_status = "high"
+elif outside_registry >= metrics_drift_warn_keys or drift_pct >= metrics_drift_warn_pct:
+    drift_severity = "warning"
+    drift_status = "elevated"
+else:
+    drift_severity = "ok"
+    drift_status = "stable"
+report["metrics_drift"] = {
+    "available": bool(migration),
+    "status": drift_status,
+    "severity": drift_severity,
+    "live_keys": int(live_keys),
+    "worker_registry_keys": int(registry_keys),
+    "outside_worker_registry_keys": int(outside_registry),
+    "outside_worker_registry_pct": drift_pct,
+    "warn_threshold_keys": int(metrics_drift_warn_keys),
+    "critical_threshold_keys": int(metrics_drift_crit_keys),
+    "warn_threshold_pct": float(metrics_drift_warn_pct),
+    "critical_threshold_pct": float(metrics_drift_crit_pct),
+}
 
 # ── Coverage by scope (serwer vs instalka) ──────────────────────────────
 scope_totals = overview.get("scope_totals", {})
@@ -598,7 +663,7 @@ PYAGG
 # ═══════════════════════════════════════════════════════════════════════════════
 
 run_status_doctor() {
-    python3 - "$WORK_DIR" "$STATUS_DIR" "$STATUSD_DOCTOR_FILE" "$REPAIR_QUEUE_STAGNATION_HOURS" "$REPAIR_QUEUE_STAGNATION_MIN_SAMPLES" "$REPAIR_QUEUE_STAGNATION_MIN_DROP" "$SUSPICIOUS_HIGH_WINDOW_HOURS" "$SUSPICIOUS_HIGH_WARN_COUNT" "$SUSPICIOUS_HIGH_CRIT_COUNT" <<'PYDOCTOR'
+    python3 - "$WORK_DIR" "$STATUS_DIR" "$STATUSD_DOCTOR_FILE" "$REPAIR_QUEUE_STAGNATION_HOURS" "$REPAIR_QUEUE_STAGNATION_MIN_SAMPLES" "$REPAIR_QUEUE_STAGNATION_MIN_DROP" "$SUSPICIOUS_HIGH_WINDOW_HOURS" "$SUSPICIOUS_HIGH_WARN_COUNT" "$SUSPICIOUS_HIGH_CRIT_COUNT" "$METRICS_DRIFT_WARN_KEYS" "$METRICS_DRIFT_CRIT_KEYS" "$METRICS_DRIFT_WARN_PCT" "$METRICS_DRIFT_CRIT_PCT" <<'PYDOCTOR'
 import json, sys, os
 from datetime import datetime, timezone, timedelta
 from collections import Counter
@@ -612,6 +677,10 @@ repair_min_drop = int(float(sys.argv[6] or "1"))
 suspicious_window_h = float(sys.argv[7] or "6")
 suspicious_warn_count = int(float(sys.argv[8] or "120"))
 suspicious_crit_count = int(float(sys.argv[9] or "240"))
+metrics_drift_warn_keys = int(float(sys.argv[10] or "5000"))
+metrics_drift_crit_keys = int(float(sys.argv[11] or "20000"))
+metrics_drift_warn_pct = float(sys.argv[12] or "10")
+metrics_drift_crit_pct = float(sys.argv[13] or "25")
 
 now = datetime.now(timezone.utc)
 issues = []
@@ -833,6 +902,62 @@ def _read_suspicious_high_health():
     })
     return data
 
+def _read_metrics_drift():
+    data = {
+        "available": False,
+        "status": "missing",
+        "severity": "info",
+        "live_keys": 0,
+        "worker_registry_keys": 0,
+        "outside_worker_registry_keys": 0,
+        "outside_worker_registry_pct": 0.0,
+        "warn_threshold_keys": int(metrics_drift_warn_keys),
+        "critical_threshold_keys": int(metrics_drift_crit_keys),
+        "warn_threshold_pct": float(metrics_drift_warn_pct),
+        "critical_threshold_pct": float(metrics_drift_crit_pct),
+    }
+    overview_path = os.path.join(status_dir, "translation_global_overview.json")
+    if not os.path.exists(overview_path):
+        return data
+    try:
+        with open(overview_path, encoding="utf-8") as f:
+            overview = json.load(f)
+    except Exception:
+        return data
+    migration = overview.get("migration", {}) if isinstance(overview.get("migration", {}), dict) else {}
+    if not migration:
+        return data
+
+    live_keys = _safe_int(migration.get("total_keys_extracted_live", migration.get("total_keys_extracted", 0)))
+    worker_registry_keys = _safe_int(
+        migration.get("total_keys_extracted_worker_registry", migration.get("keys_extracted", 0))
+    )
+    outside_worker_registry_keys = _safe_int(
+        migration.get("keys_extracted_outside_worker_registry", max(0, live_keys - worker_registry_keys))
+    )
+    outside_worker_registry_keys = max(0, outside_worker_registry_keys)
+    outside_pct = round((outside_worker_registry_keys / float(max(live_keys, 1))) * 100.0, 3) if live_keys > 0 else 0.0
+
+    severity = "ok"
+    status = "stable"
+    if outside_worker_registry_keys >= metrics_drift_crit_keys or outside_pct >= metrics_drift_crit_pct:
+        severity = "critical"
+        status = "high"
+    elif outside_worker_registry_keys >= metrics_drift_warn_keys or outside_pct >= metrics_drift_warn_pct:
+        severity = "warning"
+        status = "elevated"
+
+    data.update({
+        "available": True,
+        "status": status,
+        "severity": severity,
+        "live_keys": int(live_keys),
+        "worker_registry_keys": int(worker_registry_keys),
+        "outside_worker_registry_keys": int(outside_worker_registry_keys),
+        "outside_worker_registry_pct": float(outside_pct),
+    })
+    return data
+
 # ── 1. Freshness: heartbeat nie starszy niż 3 min ───────────────────────
 try:
     with open(os.path.join(status_dir, "worker_state.json"), encoding="utf-8") as f:
@@ -993,6 +1118,72 @@ try:
 except Exception as e:
     warnings.append(f"SUSPICIOUS_HIGH_CHECK_ERROR: {e}")
 
+# ── 10. Drift metryk LIVE vs worker-registry ──────────────────────────────
+metrics_drift_info = {}
+try:
+    metrics_drift_info = _read_metrics_drift()
+    if not metrics_drift_info.get("available", False):
+        warnings.append("METRICS_DRIFT_UNAVAILABLE: brak danych migracji LIVE/registry")
+    else:
+        desc = (
+            f"outside={metrics_drift_info.get('outside_worker_registry_keys', 0)} "
+            f"({metrics_drift_info.get('outside_worker_registry_pct', 0):.2f}%) "
+            f"live={metrics_drift_info.get('live_keys', 0)} "
+            f"registry={metrics_drift_info.get('worker_registry_keys', 0)}"
+        )
+        sev = str(metrics_drift_info.get("severity", "ok"))
+        if sev == "critical":
+            issues.append(f"METRICS_DRIFT_HIGH: {desc}")
+        elif sev == "warning":
+            warnings.append(f"METRICS_DRIFT_ELEVATED: {desc}")
+        else:
+            ok_checks.append(f"metrics_drift_ok ({desc})")
+except Exception as e:
+    warnings.append(f"METRICS_DRIFT_CHECK_ERROR: {e}")
+
+# ── 11. Repair tuning samples check ────────────────────────────────────
+try:
+    rq_available = False
+    rq_entries_total = 0
+    try:
+        rq_path = os.path.join(status_dir, "identical_to_en_repair_queue.json")
+        if os.path.exists(rq_path):
+            with open(rq_path, encoding="utf-8") as f:
+                rq_data = json.load(f)
+            rq_available = True
+            rq_entries_total = _safe_int(rq_data.get("entries_total", 0))
+    except Exception:
+        pass
+
+    tuning_path = os.path.join(status_dir, "identical_to_en_repair_tuning.jsonl")
+    if rq_available and rq_entries_total > 0:
+        tuning_samples_2h = 0
+        window_2h = now - timedelta(hours=2)
+        if os.path.exists(tuning_path):
+            with open(tuning_path, encoding="utf-8") as f:
+                for line in f:
+                    line = line.strip()
+                    if not line:
+                        continue
+                    try:
+                        row = json.loads(line)
+                        ts = _parse_ts(row.get("timestamp"))
+                        if ts and ts >= window_2h:
+                            tuning_samples_2h += 1
+                    except Exception:
+                        continue
+        if tuning_samples_2h == 0:
+            warnings.append(
+                f"REPAIR_TUNING_NO_SAMPLES: backlog={rq_entries_total} ale samples_2h=0 "
+                f"(repair tuning nie generuje próbek mimo aktywnej kolejki)"
+            )
+        else:
+            ok_checks.append(f"repair_tuning_active (samples_2h={tuning_samples_2h})")
+    elif rq_available and rq_entries_total == 0:
+        ok_checks.append("repair_tuning_not_needed (entries_total=0)")
+except Exception as e:
+    warnings.append(f"REPAIR_TUNING_CHECK_ERROR: {e}")
+
 # ── Ocena ogólna ───────────────────────────────────────────────────────
 if issues:
     overall = "CRITICAL"
@@ -1010,6 +1201,7 @@ doctor_report = {
     "issues": issues,
     "warnings": warnings,
     "ok": ok_checks,
+    "metrics_drift": metrics_drift_info if isinstance(metrics_drift_info, dict) else {},
 }
 
 try:
@@ -1575,6 +1767,12 @@ quality_watch_severity = str(quality_watch.get("severity", "ok") or "ok").lower(
 quality_watch_total = int(quality_watch.get("suspicious_high_total", 0) or 0)
 quality_watch_rate_pct = float(quality_watch.get("suspicious_high_rate_pct", 0) or 0.0)
 quality_watch_window_h = float(quality_watch.get("window_hours", 0) or 0.0)
+metrics_drift = report.get("metrics_drift", {}) if isinstance(report.get("metrics_drift", {}), dict) else {}
+metrics_drift_severity = str(metrics_drift.get("severity", "info") or "info").lower()
+metrics_drift_outside = int(metrics_drift.get("outside_worker_registry_keys", 0) or 0)
+metrics_drift_pct = float(metrics_drift.get("outside_worker_registry_pct", 0) or 0.0)
+metrics_drift_live = int(metrics_drift.get("live_keys", 0) or 0)
+metrics_drift_registry = int(metrics_drift.get("worker_registry_keys", 0) or 0)
 quality_watch_top_lang = ""
 try:
     top_langs = quality_watch.get("top_langs", [])
@@ -1610,17 +1808,60 @@ elif quality_watch_severity == "warning":
         f"suspicious_high elevated count={quality_watch_total} rate={quality_watch_rate_pct:.2f}% in {quality_watch_window_h:.1f}h",
     ))
 
+# ── Signal: metric drift LIVE vs registry ──────────────────────────────
+doctor_warnings = [str(x) for x in doctor.get("warnings", [])]
+drift_warnings = [w for w in doctor_warnings if "METRICS_DRIFT" in w]
+drift_issues = [i for i in doctor_issues if "METRICS_DRIFT" in i]
+if metrics_drift_severity == "critical":
+    signals.append((
+        "CRITICAL",
+        "metrics_drift_high",
+        f"metric drift LIVE vs registry: outside={metrics_drift_outside} ({metrics_drift_pct:.2f}%) "
+        f"live={metrics_drift_live} registry={metrics_drift_registry}",
+    ))
+elif metrics_drift_severity == "warning":
+    signals.append((
+        "WARNING",
+        "metrics_drift_elevated",
+        f"metric drift LIVE vs registry: outside={metrics_drift_outside} ({metrics_drift_pct:.2f}%) "
+        f"live={metrics_drift_live} registry={metrics_drift_registry}",
+    ))
+elif drift_issues:
+    signals.append((
+        "CRITICAL",
+        "metrics_drift_high",
+        f"metric drift LIVE vs registry: {drift_issues[0]}",
+    ))
+elif drift_warnings:
+    signals.append((
+        "WARNING",
+        "metrics_drift_elevated",
+        f"metric drift LIVE vs registry: {drift_warnings[0]}",
+    ))
+
+# ── Signal: repair tuning no samples ──────────────────────────────────
+tuning_warnings = [w for w in doctor_warnings if "REPAIR_TUNING_NO_SAMPLES" in w]
+if tuning_warnings:
+    signals.append((
+        "WARNING",
+        "repair_tuning_no_samples",
+        f"{tuning_warnings[0]}",
+    ))
+
 if not signals:
     print("NO_ALERT_CONDITION")
     raise SystemExit(0)
 
 severity_rank = {"CRITICAL": 3, "WARNING": 2, "INFO": 1}
 reason_rank = {
-    "guardian_stuck": 6,
-    "doctor_critical": 5,
-    "suspicious_high_spike": 4,
-    "repair_queue_stagnation": 3,
-    "suspicious_high_elevated": 2,
+    "guardian_stuck": 8,
+    "doctor_critical": 7,
+    "metrics_drift_high": 6,
+    "suspicious_high_spike": 5,
+    "repair_queue_stagnation": 4,
+    "metrics_drift_elevated": 3,
+    "suspicious_high_elevated": 3,
+    "repair_tuning_no_samples": 2,
     "no_progress": 1,
 }
 signals.sort(key=lambda x: (severity_rank.get(x[0], 0), reason_rank.get(x[1], 0)), reverse=True)
@@ -1681,11 +1922,18 @@ payload = {
         "suspicious_high_rate_pct": round(quality_watch_rate_pct, 3),
         "top_lang": quality_watch_top_lang,
     },
+    "metrics_drift": {
+        "severity": metrics_drift_severity,
+        "outside_worker_registry_keys": metrics_drift_outside,
+        "outside_worker_registry_pct": round(metrics_drift_pct, 3),
+        "live_keys": metrics_drift_live,
+        "worker_registry_keys": metrics_drift_registry,
+    },
     "content": (
         f"[i18n-statusd][{severity}] {reason_text} | "
         f"doctor={doctor_overall} guardian={guardian_state} hb_age={worker.get('heartbeat_age_s', -1)}s "
         f"repair_stagnation={'yes' if repair_stagnation_detected else 'no'} "
-        f"suspicious_high={quality_watch_total}"
+        f"suspicious_high={quality_watch_total} metrics_drift={metrics_drift_outside}"
     ),
 }
 
@@ -1749,7 +1997,7 @@ PYALERT
 # ═══════════════════════════════════════════════════════════════════════════════
 
 generate_daily_report() {
-    python3 - "$STATUS_DIR" "$STATUSD_DAILY_REPORT_JSON" "$STATUSD_DAILY_REPORT_MD" "$REPAIR_QUEUE_STAGNATION_HOURS" "$REPAIR_QUEUE_STAGNATION_MIN_SAMPLES" "$REPAIR_QUEUE_STAGNATION_MIN_DROP" <<'PYDAILY'
+    python3 - "$STATUS_DIR" "$STATUSD_DAILY_REPORT_JSON" "$STATUSD_DAILY_REPORT_MD" "$REPAIR_QUEUE_STAGNATION_HOURS" "$REPAIR_QUEUE_STAGNATION_MIN_SAMPLES" "$REPAIR_QUEUE_STAGNATION_MIN_DROP" "$METRICS_DRIFT_WARN_KEYS" "$METRICS_DRIFT_CRIT_KEYS" "$METRICS_DRIFT_WARN_PCT" "$METRICS_DRIFT_CRIT_PCT" <<'PYDAILY'
 import json, sys, os, re
 from collections import defaultdict, Counter
 from datetime import datetime, timezone, timedelta
@@ -1760,6 +2008,10 @@ report_md_path = sys.argv[3]
 repair_window_h = float(sys.argv[4] or "6")
 repair_min_samples = int(float(sys.argv[5] or "6"))
 repair_min_drop = int(float(sys.argv[6] or "1"))
+metrics_drift_warn_keys = int(float(sys.argv[7] or "5000"))
+metrics_drift_crit_keys = int(float(sys.argv[8] or "20000"))
+metrics_drift_warn_pct = float(sys.argv[9] or "10")
+metrics_drift_crit_pct = float(sys.argv[10] or "25")
 
 now = datetime.now(timezone.utc)
 window_start = now - timedelta(hours=24)
@@ -2220,6 +2472,20 @@ if os.path.exists(ov_path):
             overview = json.load(f)
     except Exception:
         overview = {}
+statusd_latest_report = {}
+statusd_latest_report_path = os.path.join(status_dir, "statusd_report.json")
+if os.path.exists(statusd_latest_report_path):
+    try:
+        with open(statusd_latest_report_path, encoding="utf-8") as f:
+            statusd_latest_report = json.load(f)
+    except Exception:
+        statusd_latest_report = {}
+md_cfg = statusd_latest_report.get("metrics_drift", {}) if isinstance(statusd_latest_report.get("metrics_drift", {}), dict) else {}
+if md_cfg:
+    metrics_drift_warn_keys = _safe_int(md_cfg.get("warn_threshold_keys", metrics_drift_warn_keys), metrics_drift_warn_keys)
+    metrics_drift_crit_keys = _safe_int(md_cfg.get("critical_threshold_keys", metrics_drift_crit_keys), metrics_drift_crit_keys)
+    metrics_drift_warn_pct = _safe_float(md_cfg.get("warn_threshold_pct", metrics_drift_warn_pct), metrics_drift_warn_pct)
+    metrics_drift_crit_pct = _safe_float(md_cfg.get("critical_threshold_pct", metrics_drift_crit_pct), metrics_drift_crit_pct)
 strict_hourly = overview.get("strict_hourly_window", {})
 coverage_map = {}
 for row in overview.get("languages", []):
@@ -2237,6 +2503,41 @@ for row in overview.get("languages", []):
         "client_translated": _safe_int(row.get("client_translated", 0)),
         "client_pct": _safe_float(row.get("client_pct", 0)),
     }
+
+migration_snapshot = overview.get("migration", {})
+if not isinstance(migration_snapshot, dict):
+    migration_snapshot = {}
+md_live = _safe_int(migration_snapshot.get("total_keys_extracted_live", migration_snapshot.get("total_keys_extracted", 0)))
+md_registry = _safe_int(
+    migration_snapshot.get("total_keys_extracted_worker_registry", migration_snapshot.get("keys_extracted", 0))
+)
+md_outside = _safe_int(
+    migration_snapshot.get("keys_extracted_outside_worker_registry", max(0, md_live - md_registry))
+)
+md_outside = max(0, md_outside)
+md_pct = round((md_outside / max(md_live, 1)) * 100.0, 3) if md_live > 0 else 0.0
+if md_outside >= metrics_drift_crit_keys or md_pct >= metrics_drift_crit_pct:
+    md_severity = "critical"
+    md_status = "high"
+elif md_outside >= metrics_drift_warn_keys or md_pct >= metrics_drift_warn_pct:
+    md_severity = "warning"
+    md_status = "elevated"
+else:
+    md_severity = "ok"
+    md_status = "stable"
+metrics_drift_snapshot = {
+    "available": bool(migration_snapshot),
+    "severity": md_severity,
+    "status": md_status,
+    "live_keys": int(md_live),
+    "worker_registry_keys": int(md_registry),
+    "outside_worker_registry_keys": int(md_outside),
+    "outside_worker_registry_pct": float(md_pct),
+    "warn_threshold_keys": int(metrics_drift_warn_keys),
+    "critical_threshold_keys": int(metrics_drift_crit_keys),
+    "warn_threshold_pct": float(metrics_drift_warn_pct),
+    "critical_threshold_pct": float(metrics_drift_crit_pct),
+}
 
 repair_queue_24h = _analyze_repair_queue(
     now=now,
@@ -2313,7 +2614,8 @@ report = {
         lang: coverage_map.get(lang, {})
         for lang in ("pl", "es", "de", "pt", "fr", "ru")
     },
-    "migration": overview.get("migration", {}),
+    "migration": migration_snapshot,
+    "metrics_drift": metrics_drift_snapshot,
     "scope_totals": overview.get("scope_totals", {}),
     "trend_per_language": lang_stats_final,
     "trend_per_category": category_stats_final,
@@ -2475,6 +2777,18 @@ if isinstance(top_risky, list) and top_risky:
             f"{row.get('tier', '')} | {row.get('limit', 0)} |"
         )
 lines.append("")
+lines.append("## Metrics Drift (LIVE vs Registry)")
+lines.append("")
+lines.append("| Metric | Value |")
+lines.append("|---|---:|")
+md = report.get("metrics_drift", {}) or {}
+lines.append(f"| status | {md.get('status', '-')} |")
+lines.append(f"| severity | {md.get('severity', '-')} |")
+lines.append(f"| live_keys | {md.get('live_keys', 0)} |")
+lines.append(f"| worker_registry_keys | {md.get('worker_registry_keys', 0)} |")
+lines.append(f"| outside_worker_registry_keys | {md.get('outside_worker_registry_keys', 0)} |")
+lines.append(f"| outside_worker_registry_pct | {_fmt_pct(md.get('outside_worker_registry_pct', 0))} |")
+lines.append("")
 lines.append("## Coverage Snapshot")
 lines.append("")
 lines.append("| Lang | Completion | Missing Keys | EN Copy Keys | Serwer | Instalka |")
@@ -2523,7 +2837,19 @@ if mig:
     lines.append(f"| files_total | {mig.get('files_total', '?')} |")
     lines.append(f"| files_completed | {mig.get('files_completed', '?')} |")
     lines.append(f"| files_migrated | {mig.get('files_migrated', '?')} |")
+    if "scanned_files_live" in mig:
+        lines.append(f"| scanned_files_live | {mig.get('scanned_files_live', '?')} |")
+    if "scanned_files_history" in mig:
+        lines.append(f"| scanned_files_history | {mig.get('scanned_files_history', '?')} |")
+    if "scanned_files_history_minus_live" in mig:
+        lines.append(f"| scanned_files_history_minus_live | {mig.get('scanned_files_history_minus_live', '?')} |")
     lines.append(f"| total_keys_extracted | {mig.get('total_keys_extracted', '?')} |")
+    if "total_keys_extracted_live" in mig:
+        lines.append(f"| total_keys_extracted_live | {mig.get('total_keys_extracted_live', '?')} |")
+    if "total_keys_extracted_worker_registry" in mig:
+        lines.append(f"| total_keys_extracted_worker_registry | {mig.get('total_keys_extracted_worker_registry', '?')} |")
+    if "keys_extracted_outside_worker_registry" in mig:
+        lines.append(f"| keys_extracted_outside_worker_registry | {mig.get('keys_extracted_outside_worker_registry', '?')} |")
     npc_total = mig.get("npc_total", 0)
     npc_migrated = mig.get("npc_migrated", 0)
     npc_needs = mig.get("npc_needs_migration", 0)

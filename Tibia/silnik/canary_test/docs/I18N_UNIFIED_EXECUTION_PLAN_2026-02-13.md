@@ -6,6 +6,59 @@
 
 ---
 
+## Update wykonania (2026-02-14 07:28 UTC) — scanned_files_live + metrics_drift + global_stats
+
+Zrealizowane pełne zadania:
+- ✅ **`scanned_files_live` w statusie migracji**
+  - `I18N_STATUS.md` pokazuje równolegle:
+    - `Przeskanowane (historia)` z `i18n_processed_files.txt`,
+    - `Przeskanowane (LIVE)` z `i18n_file_status.json`,
+    - różnicę `Historia minus LIVE`.
+  - `translation_global_overview.json` publikuje `scanned_files_history/live` i delta.
+- ✅ **Statusd: drift metryk LIVE vs registry (end-to-end)**
+  - agregator publikuje `metrics_drift` w `statusd_report.json`,
+  - doctor ocenia drift po progach (`keys` + `%`) i zwraca to w `statusd_doctor.json`,
+  - alert-check ma reason codes: `metrics_drift_high`, `metrics_drift_elevated`,
+  - daily report (`statusd_daily_report.json/md`) ma sekcję `Metrics Drift (LIVE vs Registry)` + pola migration LIVE/history.
+- ✅ **`i18n_global_stats.json` (MIGRATION) ujednolicony**
+  - zapisuje teraz równolegle metryki:
+    - `keys_extracted_live`,
+    - `keys_extracted_worker_registry`,
+    - `keys_extracted_outside_worker_registry`,
+    - `files_scanned_live/history` i delta.
+
+Walidacja runtime (2026-02-14 07:28 UTC):
+- `I18N_STATUS.md`: `LIVE=2,299`, `historia=6,443`, `delta=+4,144`.
+- `statusd_report.json`: `metrics_drift` obecny, migration ma nowe pola `scanned_files_*`.
+- `statusd_doctor.json`: nowy kontrakt driftu aktywny (bez legacy string-only parsera).
+
+Nowe problemy/TODO wykryte podczas realizacji:
+- ⬜ Ustalić jedno, kanoniczne źródło progów `metrics_drift` dla wszystkich uruchomień statusd (daemon/manual), aby nie było rozjazdów severity między artefaktami.
+- ⬜ Przenieść progi driftu do stabilnego pliku konfiguracyjnego i logować snapshot aktywnych progów przy każdej agregacji.
+
+## Update wykonania (2026-02-14 07:07 UTC) — status key-metrics hardening
+
+Zrealizowane pełne zadanie:
+- ✅ **Rozdzielenie metryk LIVE vs worker-registry w `I18N_STATUS.md`**
+  - `Klucze wyekstrahowane (LIVE)` liczone bezpośrednio z `i18n/en/*.json`,
+  - osobna metryka `Klucze z rejestru workera` z `i18n_file_status.json`,
+  - dodana metryka driftu `Klucze poza rejestrem workera`.
+- ✅ **Kontrakt źródeł sekcji MIGRATION doprecyzowany**
+  - źródło sekcji: `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt`.
+- ✅ **Telemetry payload rozszerzony**
+  - blok `migration` publikuje `total_keys_extracted_live`, `total_keys_extracted_worker_registry`, `keys_extracted_outside_worker_registry`.
+- ✅ **Auto-refresh po zmianach poza workerem**
+  - `should_force_status_update_on_metrics_delta()` liczy sygnaturę `i18n/*.json` (`i18n_live_signature`) i wymusza aktualizację statusu po ręcznych zmianach.
+
+Walidacja runtime (2026-02-14 07:07 UTC):
+- `I18N_STATUS.md`: LIVE `53,586`, registry `6,248`, drift `47,338`.
+- Potwierdzono, że ręczne zmiany (poza workerem) są widoczne w dashboardzie jako LIVE.
+
+Nowe problemy/TODO wykryte podczas realizacji:
+- ✅ Dodać `scanned_files_live`. → DONE 2026-02-14.
+- ✅ Dodać alarm driftu metryk LIVE vs registry (`statusd_doctor` / webhook). → DONE 2026-02-14: check #10 + reason codes `metrics_drift_*`.
+- ✅ Ujednolicić metryki LIVE/registry także w `i18n_global_stats.json` dla trybu `MIGRATION`. → DONE 2026-02-14: sekcja migration LIVE/registry w każdym trybie.
+
 ## Update wykonania (2026-02-14 06:56 UTC) — guardian health + suspicious_high + repair cadence
 
 Zrealizowane pełne zadania:

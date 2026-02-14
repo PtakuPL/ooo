@@ -1398,6 +1398,12 @@ try:
 except:
     pass
 
+# 3b. PRZESKANOWANE LIVE (z i18n_file_status.json, niezależnie od processed_files.txt)
+# To lepiej odzwierciedla stan po ręcznych zmianach w repo.
+scanned_files_live_raw = len(files)
+scanned_files_live = min(scannable_files, scanned_files_live_raw) if scannable_files > 0 else scanned_files_live_raw
+scanned_files_live = max(0, scanned_files_live)
+
 # 4. ANALIZA STATUSÓW PLIKÓW
 files_migrated = 0       # Mają klucze i18n
 files_needs_migration = 0  # Trzeba dodać i18n
@@ -1430,6 +1436,7 @@ total_keys_extracted = total_keys_extracted_registry
 
 # 5. DO ZROBIENIA
 files_not_scanned = scannable_files - scanned_files
+files_not_scanned_live = max(0, scannable_files - scanned_files_live)
 files_to_migrate = files_needs_migration
 
 # 6. JĘZYKI - szczegółowa analiza
@@ -1474,8 +1481,10 @@ for lang_dir in ALL_LANGUAGES:
 
 # 7. PROCENTY
 scanned_pct = round(scanned_files / scannable_files * 100, 1) if scannable_files > 0 else 0
+scanned_live_pct = round(scanned_files_live / scannable_files * 100, 1) if scannable_files > 0 else 0
 migrated_pct = round(files_migrated / scanned_files * 100, 1) if scanned_files > 0 else 0
 translated_pct = round(translated_langs / langs_count * 100, 1) if langs_count > 0 else 0
+scan_history_minus_live = scanned_files - scanned_files_live
 
 # Ostatnio ukończone NPC
 recent_completed = []
@@ -2261,6 +2270,13 @@ overview_payload = {
     "migration": {
         "files_total": len(files),
         "files_completed": completed,
+        "scanned_files_history": scanned_files,
+        "scanned_files_live": scanned_files_live,
+        "scanned_files_history_pct": scanned_pct,
+        "scanned_files_live_pct": scanned_live_pct,
+        "files_not_scanned_history": files_not_scanned,
+        "files_not_scanned_live": files_not_scanned_live,
+        "scanned_files_history_minus_live": scan_history_minus_live,
         "files_migrated": files_migrated,
         "files_in_progress": files_in_progress,
         "files_needs_migration": files_needs_migration,
@@ -3107,8 +3123,10 @@ md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 |---------|---------|---------|------|
 | 📂 **Wszystkie pliki** | **{all_project_files:,}** | 100% | cały projekt |
 | 📜 Do skanowania (kod) | **{scannable_files:,}** | {round(scannable_files/all_project_files*100, 1)}% | pliki z kodem/tekstami |
-| 🔍 **Przeskanowane** | **{scanned_files:,}** | **{scanned_pct}%** | historia workera |
-| ⏳ Nie przeskanowane | **{files_not_scanned:,}** | {round(files_not_scanned/scannable_files*100, 1) if scannable_files else 0}% | czekają na skan |
+| 🔍 **Przeskanowane (historia)** | **{scanned_files:,}** | **{scanned_pct}%** | `i18n_processed_files.txt` |
+| 🧭 Przeskanowane (LIVE) | **{scanned_files_live:,}** | **{scanned_live_pct}%** | `i18n_file_status.json` |
+| ⏳ Nie przeskanowane (historia) | **{files_not_scanned:,}** | {round(files_not_scanned/scannable_files*100, 1) if scannable_files else 0}% | wg historii workera |
+| ⏳ Nie przeskanowane (LIVE) | **{files_not_scanned_live:,}** | {round(files_not_scanned_live/scannable_files*100, 1) if scannable_files else 0}% | wg rejestru LIVE |
 
 ### 📊 Podział plików do skanowania
 | Typ | Ilość | Info |
@@ -3349,9 +3367,11 @@ md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
-| 📁 Plików przeskanowanych | **{len(files)}** | w tej sesji |
+| 📁 Plików przeskanowanych (LIVE registry) | **{scanned_files_live:,}** | z `i18n_file_status.json` |
+| 📚 Plików przeskanowanych (historia) | **{scanned_files:,}** | z `i18n_processed_files.txt` |
+| ↕️ Historia minus LIVE | **{scan_history_minus_live:+,}** | dodatnie = historia > LIVE |
 | ✅ Plików z kluczami | **{files_migrated}** | zawierały hardcoded strings |
-| ⬜ Plików bez kluczy | **{len(files) - files_migrated}** | czyste (brak hardcoded) |
+| ⬜ Plików bez kluczy | **{files_clean}** | czyste (brak hardcoded) |
 | 🔑 Kluczy wyciągniętych (LIVE) | **{total_keys_extracted_live:,}** | realny stan `i18n/en/*.json` |
 | 🤖 Kluczy wyciągniętych przez workera | **{total_keys_extracted_registry:,}** | z `i18n_file_status.json` |
 | ➕ Kluczy poza rejestrem workera | **{keys_extracted_outside_worker:,}** | ręczne/Codex/Claude/starsze |
@@ -17449,10 +17469,12 @@ should_force_status_update_on_metrics_delta() {
     local guard_file="$STATUS_DIR/translation_guard_latest.json"
     local blockers_file="$STATUS_DIR/translation_blockers_latest.json"
     local recent_file="$STATUS_DIR/translation_recent_latest.json"
+    local i18n_root="$I18N_DIR"
 
     local decision
-    decision=$(python3 - "$state_file" "$cycle_now" "$overview_file" "$guard_file" "$blockers_file" "$recent_file" << 'PY'
+    decision=$(python3 - "$state_file" "$cycle_now" "$overview_file" "$guard_file" "$blockers_file" "$recent_file" "$i18n_root" << 'PY'
 import json
+import hashlib
 import os
 import sys
 from datetime import datetime, timezone
@@ -17463,6 +17485,7 @@ overview_file = sys.argv[3] if len(sys.argv) > 3 else ""
 guard_file = sys.argv[4] if len(sys.argv) > 4 else ""
 blockers_file = sys.argv[5] if len(sys.argv) > 5 else ""
 recent_file = sys.argv[6] if len(sys.argv) > 6 else ""
+i18n_root = sys.argv[7] if len(sys.argv) > 7 else "i18n"
 
 def _load_json(path):
     if not path or not os.path.exists(path):
@@ -17474,15 +17497,51 @@ def _load_json(path):
     except Exception:
         return {}
 
+def _compute_i18n_signature(root_dir):
+    parts = []
+    json_files = 0
+    try:
+        lang_dirs = sorted(os.listdir(root_dir))
+    except Exception:
+        return "missing", 0
+
+    for lang in lang_dirs:
+        if lang == "status":
+            continue
+        lang_path = os.path.join(root_dir, lang)
+        if not os.path.isdir(lang_path):
+            continue
+        try:
+            names = sorted(os.listdir(lang_path))
+        except Exception:
+            continue
+
+        for name in names:
+            if not name.endswith(".json"):
+                continue
+            path = os.path.join(lang_path, name)
+            try:
+                st = os.stat(path)
+                parts.append(f"{lang}/{name}:{int(st.st_mtime_ns)}:{int(st.st_size)}")
+                json_files += 1
+            except Exception:
+                continue
+
+    payload = "\n".join(parts).encode("utf-8")
+    digest = hashlib.sha1(payload).hexdigest() if parts else "empty"
+    return digest, json_files
+
 overview = _load_json(overview_file)
 guard = _load_json(guard_file)
 blockers = _load_json(blockers_file)
 recent = _load_json(recent_file)
+i18n_sig, i18n_json_files = _compute_i18n_signature(i18n_root)
 
 global_data = overview.get("global", {}) if isinstance(overview.get("global", {}), dict) else {}
 
 current = {
     "translated_keys": int(global_data.get("translated_keys", 0) or 0),
+    "total_reference_keys": int(global_data.get("total_reference_keys", 0) or 0),
     "missing_keys": int(global_data.get("missing_keys", 0) or 0),
     "missing_files": int(global_data.get("missing_files", 0) or 0),
     "guard_fail": int(guard.get("guard_fail", 0) or 0),
@@ -17492,6 +17551,8 @@ current = {
     "blockers_missing_keys_total": int(blockers.get("missing_keys_total", 0) or 0),
     "blockers_missing_lang_files": int(blockers.get("missing_lang_files", 0) or 0),
     "recent_translated": int(recent.get("translated", 0) or 0),
+    "i18n_live_json_files": int(i18n_json_files),
+    "i18n_live_signature": str(i18n_sig),
 }
 
 previous = {}
@@ -17512,6 +17573,7 @@ if not previous:
 else:
     tracked = [
         "translated_keys",
+        "total_reference_keys",
         "missing_keys",
         "missing_files",
         "guard_fail",
@@ -17520,12 +17582,20 @@ else:
         "strict_skipped_done",
         "blockers_missing_keys_total",
         "blockers_missing_lang_files",
+        "i18n_live_json_files",
     ]
     for key in tracked:
         if int(previous.get(key, 0) or 0) != int(current.get(key, 0) or 0):
             force = True
             reason = f"delta:{key}:{int(previous.get(key, 0) or 0)}->{int(current.get(key, 0) or 0)}"
             break
+
+    if not force:
+        prev_sig = str(previous.get("i18n_live_signature", "") or "")
+        curr_sig = str(current.get("i18n_live_signature", "") or "")
+        if prev_sig != curr_sig:
+            force = True
+            reason = f"delta:i18n_live_signature:{prev_sig[:8]}->{curr_sig[:8]}"
 
     if not force and int(current.get("recent_translated", 0) or 0) > 0:
         force = True
@@ -19968,30 +20038,66 @@ data['category'] = mode_cat
 if mode_type == 'MIGRATION':
     # Statystyki migracji plików
     status_file = 'i18n_file_status.json'
+    processed_file = 'i18n_processed_files.txt'
     try:
         with open(status_file) as f:
             status_data = json.load(f)
         files = status_data.get('files', {})
 
-        # Zlicz pliki
+        # Zlicz pliki (registry/live)
         completed = [f for f, info in files.items() if info.get('overall_status') == 'completed']
+        scanned_files_live = len(files)
+        scanned_files_history = 0
+        try:
+            with open(processed_file) as pf:
+                scanned_files_history = len([l for l in pf if l.strip()])
+        except Exception:
+            scanned_files_history = 0
+
+        # Zlicz klucze z rejestru workera
         files_with_keys = 0
         files_without_keys = 0
-        total_keys_extracted = 0
+        total_keys_extracted_registry = 0
 
         for fpath in completed:
             keys = files[fpath].get('stages', {}).get('5_extraction_en', {}).get('keys_added', 0)
             if keys > 0:
                 files_with_keys += 1
-                total_keys_extracted += keys
+                total_keys_extracted_registry += keys
             else:
                 files_without_keys += 1
 
+        # LIVE liczba kluczy bezpośrednio z i18n/en/*.json
+        total_keys_extracted_live = 0
+        try:
+            en_dir = os.path.join('i18n', 'en')
+            for name in os.listdir(en_dir):
+                if not name.endswith('.json'):
+                    continue
+                fpath = os.path.join(en_dir, name)
+                try:
+                    with open(fpath, encoding='utf-8') as f:
+                        payload = json.load(f)
+                    if isinstance(payload, dict):
+                        total_keys_extracted_live += len(payload)
+                except Exception:
+                    continue
+        except Exception:
+            total_keys_extracted_live = 0
+
+        keys_extracted_outside_worker_registry = max(0, total_keys_extracted_live - total_keys_extracted_registry)
+
         data['migration'] = {
             'files_scanned': len(completed),
+            'files_scanned_live': scanned_files_live,
+            'files_scanned_history': scanned_files_history,
+            'files_scanned_history_minus_live': int(scanned_files_history - scanned_files_live),
             'files_with_keys': files_with_keys,
             'files_without_keys': files_without_keys,
-            'keys_extracted': total_keys_extracted,
+            'keys_extracted': total_keys_extracted_live,
+            'keys_extracted_live': total_keys_extracted_live,
+            'keys_extracted_worker_registry': total_keys_extracted_registry,
+            'keys_extracted_outside_worker_registry': keys_extracted_outside_worker_registry,
             'current_category': mode_cat,
             'batch_size': to_int(mode_count)
         }
@@ -20073,6 +20179,66 @@ elif mode_type == 'IDLE':
         'quality_issues': quality_issues,
         'last_scan': datetime.now().isoformat()
     }
+
+# ── Niezależna sekcja migration (LIVE/registry) w każdym trybie ────────
+# Dzięki temu migration.keys_extracted_live jest zawsze aktualne.
+if 'migration' not in data or not isinstance(data.get('migration'), dict) or 'keys_extracted_live' not in data.get('migration', {}):
+    try:
+        status_file = 'i18n_file_status.json'
+        processed_file = 'i18n_processed_files.txt'
+        with open(status_file) as f:
+            _fs = json.load(f)
+        _files = _fs.get('files', {})
+        _completed = [f for f, info in _files.items() if info.get('overall_status') == 'completed']
+        _scanned_live = len(_files)
+        _scanned_history = 0
+        try:
+            with open(processed_file) as pf:
+                _scanned_history = len([l for l in pf if l.strip()])
+        except Exception:
+            _scanned_history = 0
+        _keys_registry = 0
+        _files_with = 0
+        _files_without = 0
+        for fp in _completed:
+            k = _files[fp].get('stages', {}).get('5_extraction_en', {}).get('keys_added', 0)
+            if k > 0:
+                _files_with += 1
+                _keys_registry += k
+            else:
+                _files_without += 1
+        _keys_live = 0
+        try:
+            en_dir = os.path.join('i18n', 'en')
+            for name in os.listdir(en_dir):
+                if not name.endswith('.json'):
+                    continue
+                try:
+                    with open(os.path.join(en_dir, name), encoding='utf-8') as f:
+                        payload = json.load(f)
+                    if isinstance(payload, dict):
+                        _keys_live += len(payload)
+                except Exception:
+                    continue
+        except Exception:
+            pass
+        _drift = max(0, _keys_live - _keys_registry)
+        data['migration'] = {
+            'files_scanned': len(_completed),
+            'files_scanned_live': _scanned_live,
+            'files_scanned_history': _scanned_history,
+            'files_scanned_history_minus_live': int(_scanned_history - _scanned_live),
+            'files_with_keys': _files_with,
+            'files_without_keys': _files_without,
+            'keys_extracted': _keys_live,
+            'keys_extracted_live': _keys_live,
+            'keys_extracted_worker_registry': _keys_registry,
+            'keys_extracted_outside_worker_registry': _drift,
+            'current_category': data.get('category', ''),
+            'batch_size': 0
+        }
+    except Exception:
+        pass
 
 # Zapisz atomowo
 output_file = 'i18n_global_stats.json'

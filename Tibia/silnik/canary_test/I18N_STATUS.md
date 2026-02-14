@@ -5,23 +5,23 @@
 ## 🧭 META
 
 > **[META]** 🟢 ACTIVE  
-> Świeżość: teraz | Źródło: `update_github_status()` | Ostatnia aktualizacja: 2026-02-14 12:05:50
+> Świeżość: teraz | Źródło: `update_github_status()` | Ostatnia aktualizacja: 2026-02-14 12:08:04
 
-> **Aktualizacja:** 2026-02-14 12:05:50 UTC  
+> **Aktualizacja:** 2026-02-14 12:08:04 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 53586  
-> **LIVE:** Cykl #1 | Status: 🟢 RUNNING | Faza: AUTO_TRANSLATE | Etap: heartbeat_tick | Kategoria: lt | Plik: npc.json | ETA: 0 | Heartbeat: 2026-02-14T12:05:37Z  
-> **Strict hourly (JSONL-only):** okno=1.0h | cycles=30 | pending_skip=0.0% | guard_fail=17.9% | throughput=1834.1/h  
+> **LIVE:** Cykl #1 | Status: 🟢 RUNNING | Faza: AUTO_TRANSLATE | Etap: heartbeat_tick | Kategoria: el | Plik: quests.json | ETA: 0 | Heartbeat: 2026-02-14T12:07:56Z  
+> **Strict hourly (JSONL-only):** okno=1.0h | cycles=34 | pending_skip=0.0% | guard_fail=20.2% | throughput=1566.6/h  
 > **Net effective translated:** 66,643
 
 ### 🧩 Status sekcji (P0.1)
 | Sekcja | Stan | Świeżość | Powód | Źródło | Ostatnia aktualizacja |
 |--------|------|----------|-------|--------|-----------------------|
-| META | 🟢 ACTIVE | teraz | - | `update_github_status()` | 2026-02-14 12:05:50 |
-| LIVE | 🟢 ACTIVE | 14s temu | - | `activity.json / worker_state.json` | 2026-02-14T12:05:37Z |
-| MIGRATION | 🔒 INACTIVE | 17h temu | worker w trybie AUTO_TRANSLATE | `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | 2026-02-14 12:05:50 |
-| TRANSLATION | 🟢 ACTIVE | 2min temu | - | `translation_guard_latest.json / translation_recent_latest.json` | 2026-02-14T12:03:30.563678Z |
-| QUALITY | 🔒 INACTIVE | 2min temu | worker w trybie AUTO_TRANSLATE | `quality_audit_latest.json` | 2026-02-14T12:03:32.370517Z |
-| HISTORY | 🟢 ACTIVE | teraz | - | `daily/*.json / ops.jsonl` | 2026-02-14 12:05:50 |
+| META | 🟢 ACTIVE | teraz | - | `update_github_status()` | 2026-02-14 12:08:04 |
+| LIVE | 🟢 ACTIVE | 8s temu | - | `activity.json / worker_state.json` | 2026-02-14T12:07:56Z |
+| MIGRATION | 🔒 INACTIVE | 17h temu | worker w trybie AUTO_TRANSLATE | `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | 2026-02-14 12:08:04 |
+| TRANSLATION | 🟢 ACTIVE | 4min temu | - | `translation_guard_latest.json / translation_recent_latest.json` | 2026-02-14T12:03:30.563678Z |
+| QUALITY | 🔒 INACTIVE | 4min temu | worker w trybie AUTO_TRANSLATE | `quality_audit_latest.json` | 2026-02-14T12:03:32.370517Z |
+| HISTORY | 🟢 ACTIVE | teraz | - | `daily/*.json / ops.jsonl` | 2026-02-14 12:08:04 |
 
 > Artefakt machine-readable: `i18n/status/status_sections_latest.json`
 
@@ -30,14 +30,14 @@
 ## 🔴 LIVE
 
 > **[LIVE]** 🟢 ACTIVE  
-> Świeżość: 14s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T12:05:37Z
+> Świeżość: 8s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T12:07:56Z
 
 - **Faza:** `AUTO_TRANSLATE`
 - **Etap:** `heartbeat_tick`
-- **Kategoria:** `lt`
-- **Plik:** `npc.json`
+- **Kategoria:** `el`
+- **Plik:** `quests.json`
 - **Status:** 🟢 RUNNING
-- **Heartbeat:** `2026-02-14T12:05:37Z`
+- **Heartbeat:** `2026-02-14T12:07:56Z`
 
 ---
 
@@ -92,7 +92,7 @@
 ## 🛠️ MIGRATION
 
 > **[MIGRATION]** 🔒 INACTIVE (worker w trybie AUTO_TRANSLATE)  
-> Świeżość: 17h temu | Źródło: `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | Ostatnia aktualizacja: 2026-02-14 12:05:50
+> Świeżość: 17h temu | Źródło: `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | Ostatnia aktualizacja: 2026-02-14 12:08:04
 
 ### 📁 Pliki Projektu (pełny skan)
 | Metryka | Wartość | Procent | Info |
@@ -141,7 +141,7 @@
 ## 🌍 TRANSLATION
 
 > **[TRANSLATION]** 🟢 ACTIVE  
-> Świeżość: 2min temu | Źródło: `translation_guard_latest.json / translation_recent_latest.json` | Ostatnia aktualizacja: 2026-02-14T12:03:30.563678Z
+> Świeżość: 4min temu | Źródło: `translation_guard_latest.json / translation_recent_latest.json` | Ostatnia aktualizacja: 2026-02-14T12:03:30.563678Z
 
 | Metryka | Wartość | Procent | Info |
 |---------|---------|---------|------|
@@ -154,10 +154,10 @@
 | Język | Przetłumaczone | % poprawnie przetłumaczonych | EN-copy | Braki kluczy |
 |-------|----------------|-------------------------------|---------|--------------|
 | ES (Hiszpański) | 41,130/53,586 | 76.76% | 2,807 | 0 |
-| PL (Polski) | 24,151/53,586 | 45.07% | 1,672 | 0 |
+| PL (Polski) | 24,224/53,586 | 45.21% | 1,746 | 0 |
 | FR (Francuski) | 18,593/53,586 | 34.70% | 4,306 | 0 |
 | RU (Rosyjski) | 18,151/53,586 | 33.87% | 4,056 | 0 |
-| ZH_TW (ZH_TW) | 12,130/53,586 | 22.64% | 34,952 | 2,155 |
+| ZH_TW (ZH_TW) | 12,132/53,586 | 22.64% | 34,892 | 2,155 |
 | RO (Rumuński) | 8,649/53,586 | 16.14% | 2,710 | 0 |
 | BN (BN) | 4,647/53,586 | 8.67% | 3,713 | 0 |
 | AR (Arabski) | 4,593/53,586 | 8.57% | 3,757 | 0 |
@@ -180,26 +180,26 @@
 - **Ostatnie klucze (10-20):** 20
 
 ### 📝 Ostatnie 10-20 przetłumaczonych kluczy
-- A hermit near Carlin might be able to tell you more about it → Pustelnik koło Carlin może ci o tym więcej opowiedzieć (item.20355.desc)
-- A hermit near Carlin might be able to tell you more about it → Pustelnik koło Carlin może ci o tym więcej opowiedzieć (item.21186.desc)
-- light stone shower rune → I. Stone I. Rune (item.21351.name)
-- It shows your spells and can also shield against attacks when worn → To I. twój zaklęCentalna Agencja Wywiadowcza i może także I. o I. when wytarty (item.21400.desc)
-- light stone shower rune → I. Stone I. Rune (item.21434.name)
-- There is a hole in the ceiling. → Dowcip jeden I. w the sufit. (item.21501.desc)
-- Lights and sounds seem to shift inside of it each time you look away → I. i I. a. wydawać się być, wydawać się, zdawać się do I. inside z to I. czas ty (item.21804.desc)
-- Lights and sounds seem to shift inside of it each time you look away → I. i I. a. wydawać się być, wydawać się, zdawać się do I. inside z to I. czas ty (item.21805.desc)
-- Lights and sounds seem to shift inside of it each time you look away → I. i I. a. wydawać się być, wydawać się, zdawać się do I. inside z to I. czas ty (item.21812.desc)
-- There is a hole in the ceiling. → Dowcip jeden I. w the sufit. (item.21965.desc)
-- There is a hole in the ceiling. → Dowcip jeden I. w the sufit. (item.21966.desc)
-- There is a hole in the ceiling. → Dowcip jeden I. w the sufit. (item.21967.desc)
-- There is a hole in the ceiling. → Dowcip jeden I. w the sufit. (item.21968.desc)
-- It is made of platinum and emeralds and topped by a large F made of gold → To jest zrobiony z I. i I. i topped by jeden large F zrobiony z złota (item.22764.desc)
-- It is made of platinum and emeralds and topped by a large F made of gold → To jest zrobiony z I. i I. i topped by jeden large F zrobiony z złota (item.22765.desc)
-- It is made of platinum and emeralds and topped by a large F made of gold → To jest zrobiony z I. i I. i topped by jeden large F zrobiony z złota (item.22766.desc)
-- There is a hole in the ceiling. → Dowcip jeden I. w the sufit. (item.23363.desc)
-- ultimate mana potion → ostateczny mana mikstura (item.23373.name)
-- Royal Tibia Mail → I. Tibia I. (item.23399.desc)
-- Royal Tibia Mail → I. Tibia I. (item.23400.desc)
+- Sorry. → Sorry. (quests.actions_coral.msg_1)
+- Sorry. → Sorry. (quests.actions_crystal.msg_1)
+- You were moved to the left brain side → Byl jsi přesunut na levou stranu mozku (quests.6_mind_travel.msg_1)
+- You were moved to the right brain side → Byl jsi přesunut na pravou stranu mozku (quests.6_mind_travel.msg_2)
+- You feel shaky and dizzy, the world turns dark around you. Then your sight clear → Cítíte se roztřesení a závratě, svět kolem vás ztmavne. Pak se vám zrak zase vyč (quests.6_mind_travel.msg_3)
+- You already blessed this statue. → Už jsi požehnal této soše. (quests.8_blessing_the_statues.msg_1)
+- You bless the statue. → Požehnej sochu. (quests.8_blessing_the_statues.msg_2)
+- Your time is over. → Váš čas skončil. (quests.action_drume.msg_1)
+- There is someone in the room. → V místnosti je někdo. (quests.actions.there_is_someone_in_the_room)
+- You already used your knife on the corpse. → Už jsi použil nůž na mrtvolu. (quests.actions.you_already_used_your_knife_on)
+- You can't use this when you're in a fight. → Nemůžete to použít, když jste v boji. (quests.actions.you_cant_use_this_when_youre)
+- The bait is already set. Go up to the lookout and check the telescope! → Návnada je již nastavena. Jděte nahoru na vyhlídku a zkontrolujte dalekohled! (quests.actions_bait.say_1)
+- Sorry → Promiň (quests.actions_basin.msg_1)
+- You are playing the bone fiddle. → Hrajete na kostní housle. (quests.actions_bonefiddle.msg_1)
+- You are playing the Peacock Ballad and the portal opens. → Hrajete Paví baladu a otevře se portál. (quests.actions_bonefiddle.msg_2)
+- *There was once a maiden fair, with dark eyes and silken hair. Far away from hom → *Byla jednou jedna krásná dívka s tmavýma očima a hedvábnými vlasy. Daleko od do (quests.actions_bonefiddle.msg_3)
+- You tack the hair to the ebony fingerboard. The strands should be adquate to ser → Vlasy připnete na ebenový hmatník. Prameny by měly být dostatečné, aby sloužily  (quests.actions_bonefiddle.msg_4)
+- You attach the ebony wood to the skull. This should meet the requirements of a f → Ebenové dřevo připevníte k lebce. To by mělo splňovat požadavky na hmatník. (quests.actions_bonefiddle.msg_5)
+- The pieces are shining! → Dílky září! (quests.actions_boss_timira_fight.say_1)
+- The water has formed into a shape! → Voda se zformovala do tvaru! (quests.actions_boss_timira_fight.say_2)
 
 ### 🚫 Raporty "nie mogę przetłumaczyć"
 - Guard reports: **2060**  
@@ -207,11 +207,11 @@
 - Widoczne raporty 'nie mogę tłumaczyć': **2010**
 
 ### 🌐 Globalne info wszystkich języków
-- **Global completion:** **10.15%** (282,838/2,786,472)
-- **EN-copy łącznie:** **195,094**
+- **Global completion:** **10.15%** (282,948/2,786,472)
+- **EN-copy łącznie:** **195,082**
 - **Braki kluczy łącznie:** **2,155**
 - **Brakujące pliki językowe:** **0**
-- **Cache STATUSPY (per-lang):** **mixed** | hit **49**, miss **3**, hit-rate **94.2%**
+- **Cache STATUSPY (per-lang):** **mixed** | hit **48**, miss **4**, hit-rate **92.3%**
 - **Cache STATUSPY (per-file):** hit **1971**, miss **5**, hit-rate **99.7%**
 - **Profiler cyklu (ostatni):** -
 - **Osobny raport:** `i18n/status/translation_global_overview.json`
@@ -225,10 +225,10 @@
 | Język | Serwer | Serwer % | Instalka | Instalka % |
 |-------|--------|----------|----------|------------|
 | ES | 38,637/49,731 | 77.7% | 2,493/3,855 | 64.7% |
-| PL | 21,513/49,731 | 43.3% | 2,638/3,855 | 68.4% |
+| PL | 21,586/49,731 | 43.4% | 2,638/3,855 | 68.4% |
 | FR | 15,892/49,731 | 32.0% | 2,701/3,855 | 70.1% |
 | RU | 15,265/49,731 | 30.7% | 2,886/3,855 | 74.9% |
-| ZH_TW | 12,117/49,731 | 24.4% | 13/3,855 | 0.3% |
+| ZH_TW | 12,119/49,731 | 24.4% | 13/3,855 | 0.3% |
 | RO | 8,649/49,731 | 17.4% | 0/3,855 | 0.0% |
 | BN | 4,643/49,731 | 9.3% | 4/3,855 | 0.1% |
 | AR | 4,589/49,731 | 9.2% | 4/3,855 | 0.1% |
@@ -240,25 +240,25 @@
 ### ⏱️ Strict Hourly Window (JSONL-only)
 | Metryka | Wartość |
 |---------|---------|
-| Okno | **1.0h** (2026-02-14T11:05:51.005096Z → 2026-02-14T12:05:51.005096Z) |
-| Cykle | **30** (AUTO=30, MIGRATION=0) |
+| Okno | **1.0h** (2026-02-14T11:08:04.358069Z → 2026-02-14T12:08:04.358069Z) |
+| Cykle | **34** (AUTO=34, MIGRATION=0) |
 | Pending skip | **0** (all=0.0%, migration=0.0%) |
-| Guard fail rate | **17.9%** |
+| Guard fail rate | **20.2%** |
 | No progress rate | **0.0%** |
-| Throughput | **1834.1 kluczy/h** |
-| Suspicious | **746** |
-| Top guard_fail targets | es/npc.json (gf=65), pl/server.json (gf=15), pl/items.json (gf=12), es/scripts.json (gf=11), pl/monsters.json (gf=8) |
+| Throughput | **1566.6 kluczy/h** |
+| Suspicious | **820** |
+| Top guard_fail targets | es/npc.json (gf=65), pl/server.json (gf=15), es/scripts.json (gf=11), pl/items.json (gf=11), pl/monsters.json (gf=8) |
 | Źródła | `i18n/status/worker_cycle_perf.jsonl`, `i18n/status/translation_guard_report.jsonl`, `i18n/status/suspicious_log.jsonl` |
 | Plik | `i18n/status/strict_hourly_window_latest.json` |
 
 ## 🔬 QUALITY
 
 > **[QUALITY]** 🔒 INACTIVE (worker w trybie AUTO_TRANSLATE)  
-> Świeżość: 2min temu | Źródło: `quality_audit_latest.json` | Ostatnia aktualizacja: 2026-02-14T12:03:32.370517Z
+> Świeżość: 4min temu | Źródło: `quality_audit_latest.json` | Ostatnia aktualizacja: 2026-02-14T12:03:32.370517Z
 
 - **Ostatni audyt:** SLOW_MODE | 32 issue(s) / 100 entries | 2026-02-14T12:03:32.370517Z
 - **Top 5 typów problemów:** suspicious_rejected_critical=200, suspicious_log_low=109, suspicious_log_high=65, identical_to_en=32, identical_to_en_exempt=27
-- **Języki o najsłabszej jakości:** es(60.1, issues=143371), pl(60.1, issues=111843), tl(64.2, issues=466), zh_TW(64.8, issues=337), fr(65.2, issues=2470)
+- **Języki o najsłabszej jakości:** es(60.1, issues=143371), pl(60.2, issues=111843), tl(64.2, issues=466), zh_TW(64.8, issues=337), fr(65.2, issues=2470)
 - **Pliki:** `i18n/status/quality_audit_latest.json`, `i18n/status/quality_dashboard.json`, `i18n/status/quality_report.jsonl`
 
 ### 📈 Statystyki Pracy
@@ -299,7 +299,7 @@
 ## ✅ CHECKLIST - Plan Pracy
 
 > **Aktualna faza:** AUTO_TRANSLATE  
-> **Aktualna kategoria:** lt
+> **Aktualna kategoria:** el
 
 
 ### 🔄 Faza 1: 🎮 Canary Server
@@ -367,7 +367,7 @@
 ## 🔴 LIVE: Szczegóły wykonania
 
 > **[LIVE]** 🟢 ACTIVE  
-> Świeżość: 14s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T12:05:37Z
+> Świeżość: 8s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T12:07:56Z
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
@@ -375,25 +375,25 @@
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      🤖 AUTO_TRANSLATE (heartbeat_tick)        │
-│ Kategoria: 📁 LT                                     │
+│ Kategoria: 📁 EL                                     │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status: running                                               │
-│ Plik: npc.json                                                │
+│ Plik: quests.json                                             │
 │ Postęp: 0/0 keys                                              │
 │ Info: auto translate in progress                              │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2026-02-14T12:05:37Z           │
+│ ❤️ Heartbeat: 2026-02-14T12:07:56Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 🧾 Ostatnie akcje (dla czytelności)
 
-- 2026-02-14 12:05:37 | AUTO_TRANSLATE:heartbeat_tick | lt | ok | npc.json
-- 2026-02-14 12:05:37 | AUTO_TRANSLATE:auto_start | lt | ok | npc.json
-- 2026-02-14 12:04:13 | AUTO_TRANSLATE:heartbeat_tick | es | ok | npc.json
-- 2026-02-14 12:04:13 | AUTO_TRANSLATE:auto_start | es | ok | npc.json
-- 2026-02-14 12:03:31 | AUTO_TRANSLATE:auto_done | pl | ok | items.json
-- 2026-02-14 12:02:00 | AUTO_TRANSLATE:heartbeat_tick | pl | ok | items.json
+- 2026-02-14 12:07:56 | AUTO_TRANSLATE:heartbeat_tick | el | ok | quests.json
+- 2026-02-14 12:07:56 | AUTO_TRANSLATE:auto_start | el | ok | quests.json
+- 2026-02-14 12:07:36 | AUTO_TRANSLATE:heartbeat_tick | cs | ok | quests.json
+- 2026-02-14 12:07:36 | AUTO_TRANSLATE:auto_start | cs | ok | quests.json
+- 2026-02-14 12:07:07 | AUTO_TRANSLATE:heartbeat_tick | lt | ok | quests.json
+- 2026-02-14 12:07:07 | AUTO_TRANSLATE:auto_start | lt | ok | quests.json
 
 ---
 
@@ -401,7 +401,7 @@
 
 | Język | Coverage | Brakujące | EN-copy | Translated(200) | Guard fail | Entries |
 |-------|----------|-----------|---------|-----------------|------------|---------|
-| 🔴 PL | 45.1% | 0 | 1,672 | 1,008 | 440 (30.4%) | 38 |
+| 🔴 PL | 45.2% | 0 | 1,746 | 1,008 | 440 (30.4%) | 38 |
 | 🟡 ES | 76.8% | 0 | 2,807 | 969 | 400 (29.2%) | 29 |
 
 | KPI | Wartość | Target | Status |
@@ -415,7 +415,7 @@
 ## 📜 HISTORY
 
 > **[HISTORY]** 🟢 ACTIVE  
-> Świeżość: teraz | Źródło: `daily/*.json / ops.jsonl` | Ostatnia aktualizacja: 2026-02-14 12:05:50
+> Świeżość: teraz | Źródło: `daily/*.json / ops.jsonl` | Ostatnia aktualizacja: 2026-02-14 12:08:04
 
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+80, skipped+0) — lang=pl file=items.json strict_skipped_done=2479 guard_fail=11 placeholder=0 command=0 pipe=0
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [el] → warn (files+1, translated+20, skipped+0) — lang=el file=quests.json strict_skipped_done=3
@@ -753,7 +753,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2026-02-14 12:05:50  
+📅 Auto-updated by Worker v1.1 | Last: 2026-02-14 12:08:04  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

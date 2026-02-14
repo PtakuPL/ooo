@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-02-14T10:47:02.517604Z",
+  "timestamp": "2026-02-14T11:00:07.701274Z",
   "cycle": 1,
   "language": "pl",
-  "json_file": "talkactions.json",
-  "translated": 2,
+  "json_file": "otclient_data.json",
+  "translated": 0,
   "placeholders": 0,
-  "guard_fail": 4,
+  "guard_fail": 3,
   "guard": {
     "placeholder": 0,
     "command": 0,
-    "pipe": 1
+    "pipe": 0
   },
   "strict_missing_file": 0,
   "strict_missing_key": 0,
-  "strict_skipped_done": 197
+  "strict_skipped_done": 72
 }

@@ -4,7 +4,7 @@
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-14T09:31:32.207946Z",
+  "checked_at": "2026-02-14T10:57:29.463774Z",
   "issues_total": 468,
   "issues_by_type": {
     "consistency_in_language": 2,
@@ -297,204 +297,6 @@
       "lang": "Lost Palace Raider"
     },
     {
-      "key": "achievement.406.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "It's dangerous to go alone... Take ten friends.",
-      "pl": "To groźny, niebezpieczny do go I.... Take I. przyjaciel, dobry kolega, kolega.",
-      "lang": "It's dangerous to go alone... Take ten friends."
-    },
-    {
-      "key": "achievement.408.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Rift Warrior",
-      "pl": "Szczelina Wojownik",
-      "lang": "Rift Warrior"
-    },
-    {
-      "key": "achievement.408.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You went through hell. Seven times. You defeated the demons. Countless times. You put an end to Ferumbras claims to ascendancy. Once and for all.",
-      "pl": "Ty went through piekło. Siedem czas. Ty I. the demon. Countless czas. Ty put jeden I. do Ferumbras I. do przewaga. Raz i dla wszystkie.",
-      "lang": "You went through hell. Seven times. You defeated the demons. Countless times. You put an end to Ferumbras claims to ascendancy. Once and for all."
-    },
-    {
-      "key": "achievement.410.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hat Hunter",
-      "pl": "Kapelusz Myśliwy",
-      "lang": "Hat Hunter"
-    },
-    {
-      "key": "achievement.411.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ogre Chef",
-      "pl": "Ogr, potwór Szef kuchni, kucharz",
-      "lang": "Ogre Chef"
-    },
-    {
-      "key": "achievement.412.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Call of the Wild",
-      "pl": "The Call z the I.",
-      "lang": "The Call of the Wild"
-    },
-    {
-      "key": "achievement.413.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ender of the End",
-      "pl": "I. z the I.",
-      "lang": "Ender of the End"
-    },
-    {
-      "key": "achievement.414.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Vortex Tamer",
-      "pl": "Wir Tamer",
-      "lang": "Vortex Tamer"
-    },
-    {
-      "key": "achievement.415.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Rhino Rider",
-      "pl": "RhiNie Jeździec",
-      "lang": "Rhino Rider"
-    },
-    {
-      "key": "achievement.416.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Forbidden Fruit",
-      "pl": "Zakazany I.",
-      "lang": "Forbidden Fruit"
-    },
-    {
-      "key": "achievement.417.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Forbidden Knowledge",
-      "pl": "Zakazany KNiewledge",
-      "lang": "Forbidden Knowledge"
-    },
-    {
-      "key": "achievement.418.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Treasure Hunter",
-      "pl": "I. Myśliwy",
-      "lang": "Treasure Hunter"
-    },
-    {
-      "key": "achievement.419.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Reason to Celebrate",
-      "pl": "I. do Świętować",
-      "lang": "Reason to Celebrate"
-    },
-    {
-      "key": "achievement.419.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You met the legendary First Dragon and survived. That's a reason to celebrate for sure.",
-      "pl": "Ty met the legendarny I. Smok i survived. That's jeden I. do świętować dla sure.",
-      "lang": "You met the legendary First Dragon and survived. That's a reason to celebrate for sure."
-    },
-    {
-      "key": "achievement.420.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Toothfairy Assistant",
-      "pl": "Toothfairy A. wice-",
-      "lang": "Toothfairy Assistant"
-    },
-    {
-      "key": "achievement.421.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Fairy Teasing",
-      "pl": "I. Teasing",
-      "lang": "Fairy Teasing"
-    },
-    {
-      "key": "achievement.422.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Corruption Contained",
-      "pl": "Corruption Zawierać",
-      "lang": "Corruption Contained"
-    },
-    {
-      "key": "achievement.430.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Little Adventure",
-      "pl": "Little Przygoda",
-      "lang": "Little Adventure"
-    },
-    {
-      "key": "achievement.431.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Little Big Adventure",
-      "pl": "Little Duży, wielki Przygoda",
-      "lang": "Little Big Adventure"
-    },
-    {
-      "key": "achievement.432.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Contender",
-      "pl": "Pretendent",
-      "lang": "Contender"
-    },
-    {
-      "key": "achievement.433.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Serious Contender",
-      "pl": "Poważny Pretendent",
-      "lang": "Serious Contender"
-    },
-    {
-      "key": "achievement.434.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Skilled Hunter",
-      "pl": "Wykwalifikowany, wyszkolony Myśliwy",
-      "lang": "Skilled Hunter"
-    },
-    {
       "key": "achievement.435.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -504,159 +306,6 @@
       "lang": "Master Hunter"
     },
     {
-      "key": "achievement.436.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hunting Permit",
-      "pl": "I. Permit",
-      "lang": "Hunting Permit"
-    },
-    {
-      "key": "achievement.437.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Over the Moon",
-      "pl": "I. the Księżyc",
-      "lang": "Over the Moon"
-    },
-    {
-      "key": "achievement.437.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Curse of the Full Moon transforms harmless citizens into feral beasts. But with your help, Edron and Cormaya are safe - fairly.",
-      "pl": "The Curse z the I. Księżyc przekształcać, transformować nieszkodliwy obywatel a. do feral zwierzę. I. z twój help, Edron i Cormaya są I. - dość.",
-      "lang": "The Curse of the Full Moon transforms harmless citizens into feral beasts. But with your help, Edron and Cormaya are safe - fairly."
-    },
-    {
-      "key": "achievement.438.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "His Days are Counted",
-      "pl": "Jego Dni są Liczba",
-      "lang": "His Days are Counted"
-    },
-    {
-      "key": "achievement.438.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You defeated the Count of the Core and destroyed his lava pump!",
-      "pl": "Ty I. the Liczba z the Core i niszczyć jego lawa I.!",
-      "lang": "You defeated the Count of the Core and destroyed his lava pump!"
-    },
-    {
-      "key": "achievement.439.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Duked It Out",
-      "pl": "Duked To Out",
-      "lang": "Duked It Out"
-    },
-    {
-      "key": "achievement.439.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You defeated the Duke of the Depths and destroyed his lava pump!",
-      "pl": "Ty I. the Książę z the Głębokość i niszczyć jego lawa I.!",
-      "lang": "You defeated the Duke of the Depths and destroyed his lava pump!"
-    },
-    {
-      "key": "achievement.440.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You defeated the Baron from Below and destroyed his lava pump!",
-      "pl": "Ty I. the Baron z Poniżej, niżej i niszczyć jego lawa I.!",
-      "lang": "You defeated the Baron from Below and destroyed his lava pump!"
-    },
-    {
-      "key": "achievement.441.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Death in the Depths",
-      "pl": "I. w the Głębokość",
-      "lang": "Death in the Depths"
-    },
-    {
-      "key": "achievement.441.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Baron from Below, Duke of the Depths and the Count of the Core are no more!",
-      "pl": "The Baron z Poniżej, niżej, Książę z the Głębokość i the Liczba z the Core są Nie more!",
-      "lang": "The Baron from Below, Duke of the Depths and the Count of the Core are no more!"
-    },
-    {
-      "key": "achievement.442.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Scourge of Scarabs",
-      "pl": "Plaga, bicz Boży z Scarabs",
-      "lang": "Scourge of Scarabs"
-    },
-    {
-      "key": "achievement.442.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You took the heat and defeated the Ancient Spawn of Morgathla!",
-      "pl": "Ty took the ciepło, ciepłota i I. the Starożytny I. z Morgathla!",
-      "lang": "You took the heat and defeated the Ancient Spawn of Morgathla!"
-    },
-    {
-      "key": "achievement.443.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Cobbled and Patched",
-      "pl": "Cobbled i I.",
-      "lang": "Cobbled and Patched"
-    },
-    {
-      "key": "achievement.444.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Up the Molehill",
-      "pl": "Up the Kretowisko",
-      "lang": "Up the Molehill"
-    },
-    {
-      "key": "achievement.445.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Master Debater",
-      "pl": "I. Debater",
-      "lang": "Master Debater"
-    },
-    {
-      "key": "achievement.446.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "High and Dry",
-      "pl": "I. i I.",
-      "lang": "High and Dry"
-    },
-    {
-      "key": "achievement.446.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You asked Captain Charles to take a shortcut quite a few times. Now you are all too familiar with desert islands all over Tibia.",
-      "pl": "Ty I. I. Charles do take jeden shortcut całkiem, dość jeden few czas. Niew Jesteś wszystkie też, także znajomy z desert wyspa wszystkie I. Tibia.",
-      "lang": "You asked Captain Charles to take a shortcut quite a few times. Now you are all too familiar with desert islands all over Tibia."
-    },
-    {
       "key": "achievement.447.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -664,105 +313,6 @@
       "en": "Elven Woods",
       "pl": "Elven Drewno",
       "lang": "Elven Woods"
-    },
-    {
-      "key": "achievement.448.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Long Live the Queen",
-      "pl": "Long Live the Królowa",
-      "lang": "Long Live the Queen"
-    },
-    {
-      "key": "achievement.448.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ancient battlefields, amazons and the glory of Carlin - you really know every corner of Queen Eloise's realm now.",
-      "pl": "Starożytny pole bitwy, Amazonka i the I. z Carlin - ty I. kNiew I. corner z Królowa Eloise's dziedzina, sfera Niew.",
-      "lang": "Ancient battlefields, amazons and the glory of Carlin - you really know every corner of Queen Eloise's realm now."
-    },
-    {
-      "key": "achievement.449.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Stronghold of Edron",
-      "pl": "Forteca z Edron",
-      "lang": "Stronghold of Edron"
-    },
-    {
-      "key": "achievement.450.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Dwarven Mines",
-      "pl": "Dwarven I.",
-      "lang": "Dwarven Mines"
-    },
-    {
-      "key": "achievement.450.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Vast mines, an orc fortress and the magnificence of Kazordoon - you really know every corner of North-Eastern Mainland now.",
-      "pl": "Ogromny I., jeden orc forteca i the magnificence z Kazordoon - ty I. kNiew I. corner z Nierth-Wschodni I. Niew.",
-      "lang": "Vast mines, an orc fortress and the magnificence of Kazordoon - you really know every corner of North-Eastern Mainland now."
-    },
-    {
-      "key": "achievement.451.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "All Hail the King",
-      "pl": "Wszystkie I. the Król",
-      "lang": "All Hail the King"
-    },
-    {
-      "key": "achievement.451.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Old temples, a meadowy countryside and the splendour of Thais - you really know every corner of King Tibianus' realm now.",
-      "pl": "I. świątynia, jeden meadowy countryside i the splendour z Thais - ty I. kNiew I. corner z Król Tibianus' dziedzina, sfera Niew.",
-      "lang": "Old temples, a meadowy countryside and the splendour of Thais - you really know every corner of King Tibianus' realm now."
-    },
-    {
-      "key": "achievement.452.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Jewel in the Swamp",
-      "pl": "Klejnot w the I.",
-      "lang": "Jewel in the Swamp"
-    },
-    {
-      "key": "achievement.452.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Damp swamps, a dry desert and the opulence of Venore - you really know every corner of Eastern Mainland now.",
-      "pl": "I. I., jeden I. desert i the opulence z VeNiere - ty I. kNiew I. corner z Wschodni I. Niew.",
-      "lang": "Damp swamps, a dry desert and the opulence of Venore - you really know every corner of Eastern Mainland now."
-    },
-    {
-      "key": "achievement.453.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Ogre Steppe",
-      "pl": "The Ogr, potwór Step",
-      "lang": "The Ogre Steppe"
-    },
-    {
-      "key": "achievement.454.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Realms of Dreams",
-      "pl": "Dziedzina, sfera z I.",
-      "lang": "Realms of Dreams"
     },
     {
       "key": "achievement.455.name",
@@ -3643,6 +3193,456 @@
       "en": "For Armors and Shields, please go upstairs!",
       "pl": "Dla Armors i I., Proszę go I.!",
       "lang": "For Armors and Shields, please go upstairs!"
+    },
+    {
+      "key": "book.otbm.for_sorcerers_and_other_magicians",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "for sorcerers and other magicians",
+      "pl": "dla sorcerers i drugi, pozostały iluzjonista, prestidigitator",
+      "lang": "for sorcerers and other magicians"
+    },
+    {
+      "key": "book.otbm.forbidden_secrets_of_magic",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Forbidden Secrets of Magic!",
+      "pl": "Zakazany I. z I.!",
+      "lang": "Forbidden Secrets of Magic!"
+    },
+    {
+      "key": "book.otbm.fort_o_th_nare_igh",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Fort... o. th. N.....are ..igh..",
+      "pl": "Fort... o. th. N.....są..igh..",
+      "lang": "Fort... o. th. N.....are ..igh.."
+    },
+    {
+      "key": "book.otbm.galunas_fletcher_workshop",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Galuna's Fletcher Workshop",
+      "pl": "Galuna's Fletcher Warsztat",
+      "lang": "Galuna's Fletcher Workshop"
+    },
+    {
+      "key": "book.otbm.getting_up_was_never_his",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Getting up was never his strength.",
+      "pl": "Getting up był nigdy jego siła.",
+      "lang": "Getting up was never his strength."
+    },
+    {
+      "key": "book.otbm.glorious_knights_guild_of_carlin",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Glorious Knights Guild of Carlin",
+      "pl": "Wspaniały I. Gildia z Carlin",
+      "lang": "Glorious Knights Guild of Carlin"
+    },
+    {
+      "key": "book.otbm.gnomish_authorized_persons_only",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Gnomish Authorized Persons Only!",
+      "pl": "GNiemish Authorized Osoba Tylko!",
+      "lang": "Gnomish Authorized Persons Only!"
+    },
+    {
+      "key": "book.otbm.go_ahead_and_follow_the",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Go ahead and follow the path of light",
+      "pl": "Go w przód i I. the ścieżka z I.",
+      "lang": "Go ahead and follow the path of light"
+    },
+    {
+      "key": "book.otbm.go_to_the_left_brother",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "GO TO THE LEFT BROTHER AND JOIN US IN DARKNESS",
+      "pl": "GO DO THE I. BRAT I I. NAS W CIEMNOŚĆ",
+      "lang": "GO TO THE LEFT BROTHER AND JOIN US IN DARKNESS"
+    },
+    {
+      "key": "book.otbm.golden_lines_are_embedded_in",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Golden lines are embedded in the amulet and show mysterious symbols. It was awarded by TibiaHoF.",
+      "pl": "złotaen lines są uwięzły w the amulet i I. tajemniczy symbol. To był I. by TibiaHoF.",
+      "lang": "Golden lines are embedded in the amulet and show mysterious symbols. It was awarded by TibiaHoF."
+    },
+    {
+      "key": "book.otbm.got_it_the_sorcerer_screamed",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "\"Got it!\" the sorcerer screamed. \"Let",
+      "pl": "\"Got to!\" the sorcerer I.. \"Let",
+      "lang": "\"Got it!\" the sorcerer screamed. \"Let"
+    },
+    {
+      "key": "book.otbm.granted_by_radiotibiacombr_to_hear",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Granted by RadioTibia.com.br to hear the sounds of Tibia.",
+      "pl": "I. by RadioTibia.com.Koleje Brytyjskie do I. the I. z Tibia.",
+      "lang": "Granted by RadioTibia.com.br to hear the sounds of Tibia."
+    },
+    {
+      "key": "book.otbm.graveyard_of_the_red_legion",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Graveyard of the Red Legion and all the workers who fell in the fight against the orcish hordes",
+      "pl": "Cmentarz z the I. Legion i wszystkie the pracownik kto zwalać w the I. o the orcish zgraja, horda",
+      "lang": "Graveyard of the Red Legion and all the workers who fell in the fight against the orcish hordes"
+    },
+    {
+      "key": "book.otbm.great_mountains_of_folda_island",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Great Mountains of Folda Island",
+      "pl": "I. Góra z Folda Wyspa",
+      "lang": "Great Mountains of Folda Island"
+    },
+    {
+      "key": "book.otbm.greenhorn_rank_rewards_choose_wisely",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Greenhorn Rank Rewards - Choose wisely!",
+      "pl": "Greenhorn I. nagrodas - Wybierać I.!",
+      "lang": "Greenhorn Rank Rewards - Choose wisely!"
+    },
+    {
+      "key": "book.otbm.greetings_brothers_and_sisters",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Greetings brothers and sisters!",
+      "pl": "Witaj brat i I.!",
+      "lang": "Greetings brothers and sisters!"
+    },
+    {
+      "key": "book.otbm.greetings_by_darruk_the_redscarred",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "- Greetings by Darruk the Redscarred.",
+      "pl": "- Witaj by Darruk the Redscarred.",
+      "lang": "- Greetings by Darruk the Redscarred."
+    },
+    {
+      "key": "book.otbm.greetings_fellow_brother",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Greetings fellow brother!",
+      "pl": "Witaj facet, gość brat!",
+      "lang": "Greetings fellow brother!"
+    },
+    {
+      "key": "book.otbm.ground_floor_flints_finest_melee",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ground floor: Flint's Finest - Melee Weapons and Armor",
+      "pl": "Ziemia I.: Krzemień Finest - Melee Broń i Armor",
+      "lang": "Ground floor: Flint's Finest - Melee Weapons and Armor"
+    },
+    {
+      "key": "book.otbm.ground_floor_rathleton_post_office",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ground floor: Rathleton Post Office",
+      "pl": "Ziemia I.: Rathleton Post Biuro",
+      "lang": "Ground floor: Rathleton Post Office"
+    },
+    {
+      "key": "book.otbm.guild_of_the_dexterous_paladins",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Guild of the dexterous Paladins",
+      "pl": "Gildia z the sprawny Paladins",
+      "lang": "Guild of the dexterous Paladins"
+    },
+    {
+      "key": "book.otbm.guild_of_the_dexterous_paladins_4a67ff69",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Guild of the dexterous Paladins",
+      "pl": "Gildia z the sprawny Paladins",
+      "lang": "Guild of the dexterous Paladins"
+    },
+    {
+      "key": "book.otbm.guildhall_of_the_red_rose",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Guildhall of the Red Rose",
+      "pl": "Guildhall z the I. I.",
+      "lang": "Guildhall of the Red Rose"
+    },
+    {
+      "key": "book.otbm.haha_we_caught_one_of",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Haha, we caught one of our enemys",
+      "pl": "Haha, my caught I. z nasz wróg",
+      "lang": "Haha, we caught one of our enemys"
+    },
+    {
+      "key": "book.otbm.hail_to_marianos_pall_the",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hail to Marianos Pall, the current hero of the Scrapper difficulty!",
+      "pl": "I. do MariaNies I., the aktualny bohater z the Scrapper trudność!",
+      "lang": "Hail to Marianos Pall, the current hero of the Scrapper difficulty!"
+    },
+    {
+      "key": "book.otbm.has_stoped_i_know_they",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "has stoped. I KNOW they are coming after me now. I can see the flickering of the shadows as they aproach. THEY ARE COMING",
+      "pl": "ma stop. I KNieW oni są nadchodzący after mnie, mi Niew. I może I. the I. z the cień as oni aproach. ONI SĄ NADCHODZĄCY",
+      "lang": "has stoped. I KNOW they are coming after me now. I can see the flickering of the shadows as they aproach. THEY ARE COMING"
+    },
+    {
+      "key": "book.otbm.have_faith_wanderer_for_you",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Have faith wanderer, for you do not fight alone.",
+      "pl": "Masz wiara wędrować, dla ty robić Niet I. I..",
+      "lang": "Have faith wanderer, for you do not fight alone."
+    },
+    {
+      "key": "book.otbm.have_to_spend_to_much",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "have to spend to much time in fighting the",
+      "pl": "masz do wydawać do dużo, bardzo czas w I. the",
+      "lang": "have to spend to much time in fighting the"
+    },
+    {
+      "key": "book.otbm.head_of_the_palace_guards",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Head of the palace guards",
+      "pl": "I. z the pałac I.",
+      "lang": "Head of the palace guards"
+    },
+    {
+      "key": "book.otbm.hellgate_restricted_area",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hellgate! Restricted Area!",
+      "pl": "Hellgate! Ograniczony Obszar, region!",
+      "lang": "Hellgate! Restricted Area!"
+    },
+    {
+      "key": "book.otbm.her_hairs_snakes_are_still",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Her hair's snakes are still alive. Awarded only on TibiaPic.com.",
+      "pl": "Her włos wąż są I. żywy. I. tylko na TibiaPic.com.",
+      "lang": "Her hair's snakes are still alive. Awarded only on TibiaPic.com."
+    },
+    {
+      "key": "book.otbm.herbs_and_plants_of_the",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Herbs and Plants of the Swamp, Volume I",
+      "pl": "I. i I. z the I., Książka I",
+      "lang": "Herbs and Plants of the Swamp, Volume I"
+    },
+    {
+      "key": "book.otbm.herbs_and_plants_of_the_e1ae45aa",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Herbs and Plants of the Swamp, Volume II",
+      "pl": "I. i I. z the I., Książka II",
+      "lang": "Herbs and Plants of the Swamp, Volume II"
+    },
+    {
+      "key": "book.otbm.here_lies_the_body_of",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Here lies the body of Arkanor, Rookgaard's first teleportation scientist.",
+      "pl": "Tutaj, tu lies the ciało z ArkaNier, Rookgaard's I. teleportowaćation naukowiec.",
+      "lang": "Here lies the body of Arkanor, Rookgaard's first teleportation scientist."
+    },
+    {
+      "key": "book.otbm.here_on_the_haunted_plains",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Here on the haunted Plains of Havoc the order of the Nightmare Knights defeated the armies of Goshnar, the king of necromancy.",
+      "pl": "Tutaj, tu na the I. I. z Chaos, zamieszanie the order z the Zły sen I. I. the wojsko, armia z Goshnar, the król z necromancy.",
+      "lang": "Here on the haunted Plains of Havoc the order of the Nightmare Knights defeated the armies of Goshnar, the king of necromancy."
+    },
+    {
+      "key": "book.otbm.here_you_dont_lost_anything",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Here you dont lost anything, dnt lost Level and dont lost Itens.",
+      "pl": "Tutaj, tu ty dont I. cokolwiek, dnt I. poziom i dont I. Itens.",
+      "lang": "Here you dont lost anything, dnt lost Level and dont lost Itens."
+    },
+    {
+      "key": "book.otbm.here_you_will_find_the",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Here you will find the entrance of the MOTA Extension. Still under contruction.",
+      "pl": "Tutaj, tu ty will I. the entrance z the MOTA Dobudówka, powiększenie. I. under contruction.",
+      "lang": "Here you will find the entrance of the MOTA Extension. Still under contruction."
+    },
+    {
+      "key": "book.otbm.high_end_spells_for_your",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "High end spells for your ultimate enemies.",
+      "pl": "I. I. zaklęCentalna Agencja Wywiadowcza dla twój ostateczny wróg.",
+      "lang": "High end spells for your ultimate enemies."
+    },
+    {
+      "key": "book.otbm.highranking_necromancers_only",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "High-ranking necromancers only.",
+      "pl": "I.-I. necromancers tylko.",
+      "lang": "High-ranking necromancers only."
+    },
+    {
+      "key": "book.otbm.history_of_the_augur_part",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "History of the Augur, Part II",
+      "pl": "Historia z the Wróżyć, Part II",
+      "lang": "History of the Augur, Part II"
+    },
+    {
+      "key": "book.otbm.history_of_the_augur_part_5eb84e6d",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "History of the Augur, Part I",
+      "pl": "Historia z the Wróżyć, Part I",
+      "lang": "History of the Augur, Part I"
+    },
+    {
+      "key": "book.otbm.home_of_eclesius_the_very",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Home of Eclesius, the Very Wise and also Noble Sorcerer.",
+      "pl": "Home z Eclesius, the I. I. i także Nieble Sorcerer.",
+      "lang": "Home of Eclesius, the Very Wise and also Noble Sorcerer."
+    },
+    {
+      "key": "book.otbm.home_of_the_ruthless_seven",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Home of the ruthless seven!!!!!!!",
+      "pl": "Home z the bezlitosny siedem!!!!!!!",
+      "lang": "Home of the ruthless seven!!!!!!!"
+    },
+    {
+      "key": "book.otbm.honour_and_glory_to_death",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Honour and glory to Death Rose, the mighty Warlord!",
+      "pl": "HoNieur i I. do I. I., the I. Warlord!",
+      "lang": "Honour and glory to Death Rose, the mighty Warlord!"
+    },
+    {
+      "key": "book.otbm.honour_to_whom_honour_is",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Honour to whom honour is due",
+      "pl": "HoNieur do whom hoNieur jest due",
+      "lang": "Honour to whom honour is due"
+    },
+    {
+      "key": "book.otbm.house_of_dermot_the_local",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "House of Dermot, the Local Chief",
+      "pl": "dom z Dermot, the Lokalny I.",
+      "lang": "House of Dermot, the Local Chief"
+    },
+    {
+      "key": "book.otbm.house_of_wealth_bank_jewels",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "House of Wealth - Bank, Jewels, Depot",
+      "pl": "dom z Bogactwo - Bank, Klejnot, Skład",
+      "lang": "House of Wealth - Bank, Jewels, Depot"
+    },
+    {
+      "key": "book.otbm.house_of_wealth_bank_jewels_59d3083c",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "House of Wealth - Bank, Jewels, Depot",
+      "pl": "dom z Bogactwo - Bank, Klejnot, Skład",
+      "lang": "House of Wealth - Bank, Jewels, Depot"
+    },
+    {
+      "key": "book.otbm.houses_ascendants_phases_of_the",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Houses, Ascendants, Phases of the Moon in the different Dark Orders. A comparative Chart Analysis by Antaly of Drefia",
+      "pl": "doms, Ascendants, I. z the Księżyc w the różny I. Orders. JEDEN porównawczy I. Analiza by Antaly z Drefia",
+      "lang": "Houses, Ascendants, Phases of the Moon in the different Dark Orders. A comparative Chart Analysis by Antaly of Drefia"
+    },
+    {
+      "key": "book.otbm.how_to_create_spellbooks_by",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "How to create spellbooks by Muriel.",
+      "pl": "Jak do create zaklęciebooks by Muriel.",
+      "lang": "How to create spellbooks by Muriel."
     }
   ],
   "length_ratio_issues": [
@@ -3734,7 +3734,7 @@
       "severity": "MEDIUM",
       "en_len": 6,
       "lang_ratio": 0.0,
-      "pl_ratio": 4.0
+      "pl_ratio": 2.0
     },
     {
       "key": "npc.alyxo.say_15",
@@ -3743,7 +3743,7 @@
       "severity": "MEDIUM",
       "en_len": 6,
       "lang_ratio": 0.0,
-      "pl_ratio": 4.0
+      "pl_ratio": 2.0
     },
     {
       "key": "npc.alyxo.say_18",
@@ -3752,7 +3752,7 @@
       "severity": "MEDIUM",
       "en_len": 6,
       "lang_ratio": 0.0,
-      "pl_ratio": 4.0
+      "pl_ratio": 2.0
     },
     {
       "key": "npc.alyxo.say_21",
@@ -3761,7 +3761,7 @@
       "severity": "MEDIUM",
       "en_len": 6,
       "lang_ratio": 0.0,
-      "pl_ratio": 4.0
+      "pl_ratio": 2.0
     },
     {
       "key": "npc.alyxo.say_24",
@@ -3770,7 +3770,7 @@
       "severity": "MEDIUM",
       "en_len": 6,
       "lang_ratio": 0.0,
-      "pl_ratio": 4.0
+      "pl_ratio": 2.0
     },
     {
       "key": "npc.alyxo.say_6",
@@ -3779,7 +3779,7 @@
       "severity": "MEDIUM",
       "en_len": 6,
       "lang_ratio": 0.0,
-      "pl_ratio": 4.0
+      "pl_ratio": 2.0
     },
     {
       "key": "npc.alyxo.say_9",
@@ -3788,7 +3788,7 @@
       "severity": "MEDIUM",
       "en_len": 6,
       "lang_ratio": 0.0,
-      "pl_ratio": 4.0
+      "pl_ratio": 2.0
     },
     {
       "key": "npc.bo_ques.say_6",
@@ -4013,7 +4013,7 @@
       "severity": "MEDIUM",
       "en_len": 6,
       "lang_ratio": 0.0,
-      "pl_ratio": 4.0
+      "pl_ratio": 2.0
     },
     {
       "key": "npc.kallimae.say_6",
@@ -4022,7 +4022,7 @@
       "severity": "MEDIUM",
       "en_len": 6,
       "lang_ratio": 0.0,
-      "pl_ratio": 4.0
+      "pl_ratio": 2.0
     },
     {
       "key": "npc.kallimae.say_9",
@@ -4031,7 +4031,7 @@
       "severity": "MEDIUM",
       "en_len": 6,
       "lang_ratio": 0.0,
-      "pl_ratio": 4.0
+      "pl_ratio": 2.0
     },
     {
       "key": "npc.karith.say_6",
@@ -4067,7 +4067,7 @@
       "severity": "MEDIUM",
       "en_len": 6,
       "lang_ratio": 0.0,
-      "pl_ratio": 4.0
+      "pl_ratio": 2.0
     },
     {
       "key": "npc.narsai.say_6",
@@ -4076,7 +4076,7 @@
       "severity": "MEDIUM",
       "en_len": 6,
       "lang_ratio": 0.0,
-      "pl_ratio": 4.0
+      "pl_ratio": 2.0
     },
     {
       "key": "npc.pig.say_2",
@@ -4094,7 +4094,7 @@
       "severity": "MEDIUM",
       "en_len": 6,
       "lang_ratio": 0.0,
-      "pl_ratio": 4.0
+      "pl_ratio": 2.0
     },
     {
       "key": "npc.sandomo.greet_msg_1",
@@ -4121,7 +4121,7 @@
       "severity": "MEDIUM",
       "en_len": 6,
       "lang_ratio": 0.0,
-      "pl_ratio": 4.0
+      "pl_ratio": 2.0
     },
     {
       "key": "npc.shimun.say_6",
@@ -4130,7 +4130,7 @@
       "severity": "MEDIUM",
       "en_len": 6,
       "lang_ratio": 0.0,
-      "pl_ratio": 4.0
+      "pl_ratio": 2.0
     },
     {
       "key": "npc.simon_the_beggar.say_27",
@@ -4166,7 +4166,7 @@
       "severity": "MEDIUM",
       "en_len": 6,
       "lang_ratio": 0.0,
-      "pl_ratio": 4.0
+      "pl_ratio": 2.0
     },
     {
       "key": "npc.tefrit.say_6",
@@ -4175,7 +4175,7 @@
       "severity": "MEDIUM",
       "en_len": 6,
       "lang_ratio": 0.0,
-      "pl_ratio": 4.0
+      "pl_ratio": 2.0
     },
     {
       "key": "npc.tomruk_the_ruddy.say_3",
@@ -4220,7 +4220,7 @@
       "severity": "MEDIUM",
       "en_len": 6,
       "lang_ratio": 0.0,
-      "pl_ratio": 4.0
+      "pl_ratio": 2.0
     },
     {
       "key": "npc.yonan.say_6",
@@ -4229,7 +4229,7 @@
       "severity": "MEDIUM",
       "en_len": 6,
       "lang_ratio": 0.0,
-      "pl_ratio": 4.0
+      "pl_ratio": 2.0
     },
     {
       "key": "npc.yonan.say_9",
@@ -4243,8 +4243,8 @@
   ],
   "auto_fix": {
     "attempted": 80,
-    "applied": 50,
-    "skipped": 30,
+    "applied": 46,
+    "skipped": 34,
     "errors": 0
   }
 }

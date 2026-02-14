@@ -4,7 +4,7 @@
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-14T10:53:44.038764Z",
+  "checked_at": "2026-02-14T11:05:51.271855Z",
   "issues_total": 467,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -356,123 +356,6 @@
       "lang": "Umbral Master"
     },
     {
-      "key": "achievement.340.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You managed to transform, improve and sacrify all kinds of weapons into a master state and have proven yourself worthy in a nightmarish world. Respect!",
-      "pl": "Ty managed do przekształcać, transformować, poprawiać się, poprawiać, polepszać się, polepszać i sacrify wszystkie I. z broń a. do jeden I. I. i masz proven siebie godny, znakomity w jeden koszmarny I.. Respect!",
-      "lang": "You managed to transform, improve and sacrify all kinds of weapons into a master state and have proven yourself worthy in a nightmarish world. Respect!"
-    },
-    {
-      "key": "achievement.341.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You collected all of the mysterious bottle messages around the island of Roshamuul and located the remains of the first mate. Time will tell if his tale of mending an evil ring holds true.",
-      "pl": "Ty skupiony, opanowany wszystkie z the tajemniczy I. wiadomość around the wyspa z Roshamuul i located the I. z the I. I.. Czas will I. if jego opowieść, opowiadanie z naprawiać się, naprawiać jeden I. ring holds prawdziwy.",
-      "lang": "You collected all of the mysterious bottle messages around the island of Roshamuul and located the remains of the first mate. Time will tell if his tale of mending an evil ring holds true."
-    },
-    {
-      "key": "achievement.342.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Luring Silence",
-      "pl": "Luring I.",
-      "lang": "Luring Silence"
-    },
-    {
-      "key": "achievement.342.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "What a scientific discovery - they really DO communicate! Using their own communication habits against them, you lured a large pack of silencers away from the walls of Roshamuul.",
-      "pl": "I. jeden naukowy odkrycie - oni I. ROBIĆ komunikować się, przesyłać wiadomości! Using ich I. komunikacja przyzwyczajenie, zwyczaj o ich, ty lured jeden large I. z tłumik I. z the ściana, mur z Roshamuul.",
-      "lang": "What a scientific discovery - they really DO communicate! Using their own communication habits against them, you lured a large pack of silencers away from the walls of Roshamuul."
-    },
-    {
-      "key": "achievement.343.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Never Surrender",
-      "pl": "Nigdy I.",
-      "lang": "Never Surrender"
-    },
-    {
-      "key": "achievement.343.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You did not show any signs of surrender to any sight of... you get the picture. Even a hundred of them did not pose a threat to you.",
-      "pl": "Ty zrobił Niet I. dowolny I. z I. do dowolny I. z... ty get the I.. I. jeden sto z ich zrobił Niet I. jeden groźba do ty.",
-      "lang": "You did not show any signs of surrender to any sight of... you get the picture. Even a hundred of them did not pose a threat to you."
-    },
-    {
-      "key": "achievement.344.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Dream Wright",
-      "pl": "I. Wright",
-      "lang": "Dream Wright"
-    },
-    {
-      "key": "achievement.344.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You have mended many a broken dream and so, the dream of Roshamuul is safely being told over and over again.",
-      "pl": "Masz naprawiać się, naprawiać wiele, dużo jeden rozbity, złamany I. i I., the I. z Roshamuul jest I. istota told I. i I. ponownie.",
-      "lang": "You have mended many a broken dream and so, the dream of Roshamuul is safely being told over and over again."
-    },
-    {
-      "key": "achievement.345.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ending the Horror",
-      "pl": "Zakończenie the Przerażenie, zgroza",
-      "lang": "Ending the Horror"
-    },
-    {
-      "key": "achievement.345.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You have cleansed the lands of many retching horrors. You sure know how to end a bad dream: forcefully, that's how!",
-      "pl": "Masz cleansed the lands z wiele, dużo he retches przerażenie, zgroza. Ty sure kNiew jak do I. jeden zły, niedobry I.: stanowczy, that's jak!",
-      "lang": "You have cleansed the lands of many retching horrors. You sure know how to end a bad dream: forcefully, that's how!"
-    },
-    {
-      "key": "achievement.346.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You know your way, in dream and waking. And how to make tea that transcends the boundaries of conscience.",
-      "pl": "Ty kNiew twój way, w I. i waking. I jak do make I. that przekraczać the granica z conscience.",
-      "lang": "You know your way, in dream and waking. And how to make tea that transcends the boundaries of conscience."
-    },
-    {
-      "key": "achievement.347.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Dream Warden",
-      "pl": "I. I.",
-      "lang": "Dream Warden"
-    },
-    {
-      "key": "achievement.347.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "It doesn't matter what noise you would hear... dream, nightmare, illusion - there is nothing you can't vanquish. You are a true Dream Warden.",
-      "pl": "To doesn't I. I. Nieise ty would I.... I., zły sen, złudzenie, iluzja - Nie matma Lekarz rejonowyżesz't pokonywać doszczętnie, pokonywać. Jesteś jeden prawdziwy I. I..",
-      "lang": "It doesn't matter what noise you would hear... dream, nightmare, illusion - there is nothing you can't vanquish. You are a true Dream Warden."
-    },
-    {
       "key": "achievement.348.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -480,132 +363,6 @@
       "en": "Prison Break",
       "pl": "Więzienie I.",
       "lang": "Prison Break"
-    },
-    {
-      "key": "achievement.348.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Gaz'haragoth... a day to remember! Your world accomplished something really big - and you have been part of it!",
-      "pl": "Gaz'haragoth... jeden dzień do pamiętać, przypominać sobie, przypominać! Twój I. znakomity coś I. duży, wielki - i Zostałeś part z to!",
-      "lang": "Gaz'haragoth... a day to remember! Your world accomplished something really big - and you have been part of it!"
-    },
-    {
-      "key": "achievement.349.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Noblesse Obliterated",
-      "pl": "Nieblesse Obliterated",
-      "lang": "Noblesse Obliterated"
-    },
-    {
-      "key": "achievement.349.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "After a battle like this you know who your friends are.",
-      "pl": "After jeden I. like I. ty kNiew kto twój przyjaciel, dobry kolega, kolega są.",
-      "lang": "After a battle like this you know who your friends are."
-    },
-    {
-      "key": "achievement.350.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Elementary, My Dear",
-      "pl": "Elementarny, Mój I.",
-      "lang": "Elementary, My Dear"
-    },
-    {
-      "key": "achievement.350.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Through the spirit of science and exploration, you have discovered how to enter the secret hideout of the renowned Dr Merlay.",
-      "pl": "Through the I. z nauka i exploration, Masz odkrywać jak do I. the I. hideout z the reNiewned Dr Merlay.",
-      "lang": "Through the spirit of science and exploration, you have discovered how to enter the secret hideout of the renowned Dr Merlay."
-    },
-    {
-      "key": "achievement.351.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "By having rendered numerous services to the city of Rathleton you have been promoted to the rank of Commoner.",
-      "pl": "By having a. czynić, sprawiać liczny I. do the miasto z Rathleton Zostałeś promoted do the I. z Commoner.",
-      "lang": "By having rendered numerous services to the city of Rathleton you have been promoted to the rank of Commoner."
-    },
-    {
-      "key": "achievement.352.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Rathleton Inhabitant",
-      "pl": "Rathleton Mieszkaniec",
-      "lang": "Rathleton Inhabitant"
-    },
-    {
-      "key": "achievement.352.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "By having rendered numerous services to the city of Rathleton you have been promoted to the rank of Inhabitant.",
-      "pl": "By having a. czynić, sprawiać liczny I. do the miasto z Rathleton Zostałeś promoted do the I. z Mieszkaniec.",
-      "lang": "By having rendered numerous services to the city of Rathleton you have been promoted to the rank of Inhabitant."
-    },
-    {
-      "key": "achievement.353.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Rathleton Citizen",
-      "pl": "Rathleton Obywatel",
-      "lang": "Rathleton Citizen"
-    },
-    {
-      "key": "achievement.353.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "By having rendered numerous services to the city of Rathleton you have been promoted to the rank of Citizen.",
-      "pl": "By having a. czynić, sprawiać liczny I. do the miasto z Rathleton Zostałeś promoted do the I. z Obywatel.",
-      "lang": "By having rendered numerous services to the city of Rathleton you have been promoted to the rank of Citizen."
-    },
-    {
-      "key": "achievement.354.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Combo Master",
-      "pl": "Combo I.",
-      "lang": "Combo Master"
-    },
-    {
-      "key": "achievement.354.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You accomplished 10 or more consecutive chains in a row! That's killing at least 39 creatures in the correct order - now that's combinatorics!",
-      "pl": "Ty znakomity 10 lub more kolejny I. w jeden row! That's I. w najmniej 39 stwory w the correct order - Niew that's combinatorics!",
-      "lang": "You accomplished 10 or more consecutive chains in a row! That's killing at least 39 creatures in the correct order - now that's combinatorics!"
-    },
-    {
-      "key": "achievement.355.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Glooth Engineer",
-      "pl": "Glooth Silnik",
-      "lang": "Glooth Engineer"
-    },
-    {
-      "key": "achievement.355.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Though you might have averted a dire threat for Rathleton, this relative peace may only hold for a while. At least you've scavenged an outfit from some of the poor fellows that have fallen prey to death priest Shagron.",
-      "pl": "I. ty might masz zapobiegać jeden skrajny, straszny groźba dla Rathleton, I. I. peace a. móc tylko hold dla jeden I.. W najmniej you've scavenged jeden strój z I. z the biedny facet, gość that masz fallen I. do I. ksiądz Shagron.",
-      "lang": "Though you might have averted a dire threat for Rathleton, this relative peace may only hold for a while. At least you've scavenged an outfit from some of the poor fellows that have fallen prey to death priest Shagron."
     },
     {
       "key": "achievement.356.name",
@@ -617,42 +374,6 @@
       "lang": "Lion's Den Explorer"
     },
     {
-      "key": "achievement.356.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You discovered the Lion's Rock, passed the tests to enter the inner sanctum and finally revealed the secrets of the buried temple. You literally put your head in the lion's mouth and survived.",
-      "pl": "Ty odkrywać the Lew Rock, I. the I. do I. the wewnętrzny sanctum i w końcu, ostatecznie odsłaniać, odkrywać the I. z the buried świątynia. Ty dosłowny put twój I. w the lew I. i survived.",
-      "lang": "You discovered the Lion's Rock, passed the tests to enter the inner sanctum and finally revealed the secrets of the buried temple. You literally put your head in the lion's mouth and survived."
-    },
-    {
-      "key": "achievement.357.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Seasoned Adventurer",
-      "pl": "Doświadczony, zaprawiony Awanturnik",
-      "lang": "Seasoned Adventurer"
-    },
-    {
-      "key": "achievement.357.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Adventure is your middle name. You spent much time in dangerous lands and have seen things others only dream of. You know your way around in Tibia - you are a seasoned adventurer now. And your journey has only just begun!",
-      "pl": "Przygoda jest twój I. nazwa. Ty zużyty dużo, bardzo czas w groźny, niebezpieczny lands i masz seen rzecz drugi, pozostały tylko I. z. Ty kNiew twój way around w Tibia - Jesteś jeden doświadczony, zaprawiony awanturnik Niew. I twój I. ma tylko just begun!",
-      "lang": "Adventure is your middle name. You spent much time in dangerous lands and have seen things others only dream of. You know your way around in Tibia - you are a seasoned adventurer now. And your journey has only just begun!"
-    },
-    {
-      "key": "achievement.358.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You've got a mind ready to draw strange conclusions that defy the laws of logic and sidestep reality. Or maybe it's just a lucky guess - or adventurous recklessness?",
-      "pl": "You've got jeden mind I. do draw dziwny wniosek that defy the I. z logika i omijać rzeczywistość. Lub być może, może to just jeden szczęśliwy I. - lub rzutki recklessness?",
-      "lang": "You've got a mind ready to draw strange conclusions that defy the laws of logic and sidestep reality. Or maybe it's just a lucky guess - or adventurous recklessness?"
-    },
-    {
       "key": "achievement.359.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -662,33 +383,6 @@
       "lang": "Rathleton Squire"
     },
     {
-      "key": "achievement.359.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "By having rendered numerous services to the city of Rathleton you have been promoted to the rank of Squire.",
-      "pl": "By having a. czynić, sprawiać liczny I. do the miasto z Rathleton Zostałeś promoted do the I. z Dziedzic, pan.",
-      "lang": "By having rendered numerous services to the city of Rathleton you have been promoted to the rank of Squire."
-    },
-    {
-      "key": "achievement.360.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Professor's Nut",
-      "pl": "The Profesor Orzech",
-      "lang": "The Professor's Nut"
-    },
-    {
-      "key": "achievement.360.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "He seriously stored away a wallnut? That was a nutty professor indeed.",
-      "pl": "On poważnie stored I. jeden wallnut? That był jeden orzechowy profesor faktycznie, naprawdę.",
-      "lang": "He seriously stored away a wallnut? That was a nutty professor indeed."
-    },
-    {
       "key": "achievement.361.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -696,33 +390,6 @@
       "en": "Plant vs. Minos",
       "pl": "I. vs. Mini",
       "lang": "Plant vs. Minos"
-    },
-    {
-      "key": "achievement.361.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You have defeated the wallbreaker and saved the glooth plant.",
-      "pl": "Masz I. the wallbreaker i saved the glooth I..",
-      "lang": "You have defeated the wallbreaker and saved the glooth plant."
-    },
-    {
-      "key": "achievement.362.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Rumble in the Plant",
-      "pl": "I. w the I.",
-      "lang": "Rumble in the Plant"
-    },
-    {
-      "key": "achievement.362.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You have defeated the tremor worm - and wonder what kind of fish you'd be able to catch with such a bait.",
-      "pl": "Masz I. the drżenie worm - i I. I. I. z I. you'd być zdolny do I. z taki jeden I..",
-      "lang": "You have defeated the tremor worm - and wonder what kind of fish you'd be able to catch with such a bait."
     },
     {
       "key": "achievement.363.name",
@@ -3612,6 +3279,339 @@
       "en": "You need 10 players for enter in the arena.",
       "pl": "Potrzebujesz 10 graczy, aby wejść na arenę.",
       "lang": "You need 10 players for enter in the arena."
+    },
+    {
+      "key": "actions.arena_10x10.say_4",
+      "category": "actions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You need 10 players for enter in the arena.",
+      "pl": "Potrzebujesz 10 graczy, aby wejść na arenę.",
+      "lang": "You need 10 players for enter in the arena."
+    },
+    {
+      "key": "actions.arena_10x10.say_5",
+      "category": "actions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You need 10 players for enter in the arena.",
+      "pl": "Potrzebujesz 10 graczy, aby wejść na arenę.",
+      "lang": "You need 10 players for enter in the arena."
+    },
+    {
+      "key": "actions.arena_10x10.say_6",
+      "category": "actions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Please wait for the fighters come out of the arena.",
+      "pl": "Poczekaj, aż wojownicy wyjdą z areny.",
+      "lang": "Please wait for the fighters come out of the arena."
+    },
+    {
+      "key": "actions.arena_2x2.say_1",
+      "category": "actions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Please wait for the fighters come out of the arena.",
+      "pl": "Poczekaj, aż wojownicy wyjdą z areny.",
+      "lang": "Please wait for the fighters come out of the arena."
+    },
+    {
+      "key": "actions.arena_2x2.say_2",
+      "category": "actions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You need 2 players for enter in the arena.",
+      "pl": "Potrzebujesz 2 graczy, aby wejść na arenę.",
+      "lang": "You need 2 players for enter in the arena."
+    },
+    {
+      "key": "actions.arena_2x2.say_3",
+      "category": "actions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You need 2 players for enter in the arena.",
+      "pl": "Potrzebujesz 2 graczy, aby wejść na arenę.",
+      "lang": "You need 2 players for enter in the arena."
+    },
+    {
+      "key": "actions.arena_2x2.say_4",
+      "category": "actions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You need 2 players for enter in the arena.",
+      "pl": "Potrzebujesz 2 graczy, aby wejść na arenę.",
+      "lang": "You need 2 players for enter in the arena."
+    },
+    {
+      "key": "actions.arena_2x2.say_5",
+      "category": "actions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You need 2 players for enter in the arena.",
+      "pl": "Potrzebujesz 2 graczy, aby wejść na arenę.",
+      "lang": "You need 2 players for enter in the arena."
+    },
+    {
+      "key": "actions.arena_2x2.say_6",
+      "category": "actions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Please wait for the fighters come out of the arena.",
+      "pl": "Poczekaj, aż wojownicy wyjdą z areny.",
+      "lang": "Please wait for the fighters come out of the arena."
+    },
+    {
+      "key": "actions.construction_kits.msg_1",
+      "category": "actions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You may construct this only inside a house.",
+      "pl": "Możesz to zbudować tylko wewnątrz domu.",
+      "lang": "You may construct this only inside a house."
+    },
+    {
+      "key": "actions.construction_kits.msg_2",
+      "category": "actions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Put the construction kit on the floor first.",
+      "pl": "Najpierw połóż zestaw konstrukcyjny na podłodze.",
+      "lang": "Put the construction kit on the floor first."
+    },
+    {
+      "key": "actions.fishing.msg_1",
+      "category": "actions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You are not the owner.",
+      "pl": "Nie jesteś właścicielem.",
+      "lang": "You are not the owner."
+    },
+    {
+      "key": "actions.fluids.msg_1",
+      "category": "actions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "It is empty.",
+      "pl": "To jest puste.",
+      "lang": "It is empty."
+    },
+    {
+      "key": "actions.fluids.msg_2",
+      "category": "actions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "It is empty.",
+      "pl": "To jest puste.",
+      "lang": "It is empty."
+    },
+    {
+      "key": "actions.golden.msg_1",
+      "category": "actions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Someone is fighting against the boss! You need wait awhile.",
+      "pl": "Ktoś już walczy z tym bossem! Musisz chwilę poczekać.",
+      "lang": "Someone is fighting against the boss! You need wait awhile."
+    },
+    {
+      "key": "actions.golden.msg_2",
+      "category": "actions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You need 5 players to fight with this boss.",
+      "pl": "Potrzebujesz 5 graczy, aby walczyć z tym bossem.",
+      "lang": "You need 5 players to fight with this boss."
+    },
+    {
+      "key": "actions.imbuement_shrine.msg_1",
+      "category": "actions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You can only use the shrine on an valid item.",
+      "pl": "Możesz użyć świątyni tylko na prawidłowym przedmiocie.",
+      "lang": "You can only use the shrine on an valid item."
+    },
+    {
+      "key": "actions.imbuement_shrine.msg_2",
+      "category": "actions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You did not collect enough knowledge from the ancient Shapers. Visit the Shaper temple in Montag for help.",
+      "pl": "Nie zebrałeś wystarczającej wiedzy od starożytnych Shaperów. Odwiedź świątynię Shaperów w Montag, aby uzyskać pomoc.",
+      "lang": "You did not collect enough knowledge from the ancient Shapers. Visit the Shaper temple in Montag for help."
+    },
+    {
+      "key": "actions.keys.msg_1",
+      "category": "actions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You have fifteen minutes to kill and loot this boss, else you will lose that chance.",
+      "pl": "Masz piętnaście minut, aby zabić i splądrować tego bossa, w przeciwnym razie stracisz tę szansę.",
+      "lang": "You have fifteen minutes to kill and loot this boss, else you will lose that chance."
+    },
+    {
+      "key": "actions.keys.msg_2",
+      "category": "actions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You have entered an ancient demon prison cell!",
+      "pl": "Wkroczyłeś do starożytnej celi więziennej demonów!",
+      "lang": "You have entered an ancient demon prison cell!"
+    },
+    {
+      "key": "actions.quests.msg_1",
+      "category": "actions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "It is empty.",
+      "pl": "To jest puste.",
+      "lang": "It is empty."
+    },
+    {
+      "key": "actions.quests.msg_2",
+      "category": "actions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "It is empty.",
+      "pl": "To jest puste.",
+      "lang": "It is empty."
+    },
+    {
+      "key": "actions.random_items.say_1",
+      "category": "actions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You found ",
+      "pl": "Znalazłeś ",
+      "lang": "You found "
+    },
+    {
+      "key": "actions.random_items.say_2",
+      "category": "actions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You found nothing useful.",
+      "pl": "Nie znalazłeś nic użytecznego.",
+      "lang": "You found nothing useful."
+    },
+    {
+      "key": "actions.random_items.say_3",
+      "category": "actions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You found nothing useful.",
+      "pl": "Nie znalazłeś nic użytecznego.",
+      "lang": "You found nothing useful."
+    },
+    {
+      "key": "actions.premium_scroll.msg_max_days",
+      "category": "actions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You can not buy more than {max} days of premium account.",
+      "pl": "Nie możesz kupić więcej niż {max} dni konta premium.",
+      "lang": "You can not buy more than {max} days of premium account."
+    },
+    {
+      "key": "actions.hireling_foods.msg_too_full",
+      "category": "actions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You're still too full to eat any gourmet dishes for a while.",
+      "pl": "Nadal jesteś zbyt najedzony, aby przez jakiś czas jeść wykwintne dania.",
+      "lang": "You're still too full to eat any gourmet dishes for a while."
+    },
+    {
+      "key": "actions.outfit_items.msg_need_outfit",
+      "category": "actions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You need the outfit for this part.",
+      "pl": "Potrzebujesz stroju, aby odblokować tę część.",
+      "lang": "You need the outfit for this part."
+    },
+    {
+      "key": "actions.outfit_items.msg_already_own",
+      "category": "actions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You already own this outfit part.",
+      "pl": "Masz już tę część stroju.",
+      "lang": "You already own this outfit part."
+    },
+    {
+      "key": "actions.key_door.msg_wrong_key",
+      "category": "actions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "The key does not match.",
+      "pl": "Klucz nie pasuje.",
+      "lang": "The key does not match."
+    },
+    {
+      "key": "actions.gamestore.msg_no_rookgaard",
+      "category": "actions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Store don't have offers for rookgaard citizen.",
+      "pl": "Sklep nie ma ofert dla mieszkańców Rookgaardu.",
+      "lang": "Store don't have offers for rookgaard citizen."
+    },
+    {
+      "key": "actions.gamestore.msg_exhausted",
+      "category": "actions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You are exhausted.",
+      "pl": "Jesteś wyczerpany.",
+      "lang": "You are exhausted."
+    },
+    {
+      "key": "book.cursed_crystal.crystal_gardens_diary",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I did it! I reached the crystal gardens! What beauty and splendor I have seen down there. Even more: I discovered a small subterranean lake - but Harry was there before me. And he did something strange: He ringed a small, transparent looking bell and immediately a big whirl appeared in the water. I suppose this is the mysterious way deeper into the caves we sought after for so long. But Harry, the coward, didn't dare to dive into the water. Instead he left the caverns and headed back to the surface. I must have this bell!",
+      "pl": "I zrobił to! I reached the crystal I.! I. I. i splendor I masz seen I. there. I. more: I odkrywać jeden I. podziemny jezioro - I. Harry był there I. mnie, mi. I on zrobił coś dziwny: On ringed jeden I., przezroczysty looking dzwonek, dzwon i natychmiast jeden duży, wielki I. pojawiać się w the I.. I przypuszczać I. jest the tajemniczy way I. a. do the I. my sought after dla I. long. I. Harry, the coward, didn't dare do I. a. do the I.. Instead on I. the pieczara i I. I. do the I.. I musi masz I. dzwonek, dzwon!",
+      "lang": "I did it! I reached the crystal gardens! What beauty and splendor I have seen down there. Even more: I discovered a small subterranean lake - but Harry was there before me. And he did something strange: He ringed a small, transparent looking bell and immediately a big whirl appeared in the water. I suppose this is the mysterious way deeper into the caves we sought after for so long. But Harry, the coward, didn't dare to dive into the water. Instead he left the caverns and headed back to the surface. I must have this bell!"
+    },
+    {
+      "key": "book.dawnport.adventurers_guild_letter",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Brave adventurer,\n\nthe Adventurers' Guild bids you welcome as a new hero of the land.\n\nTake this adventurer's stone and use it in any city temple to instantly travel to our guild hall. If you should ever lose your adventurer's stone, you can replace it by talking to a priest in the temple.\nI hope you will be visiting us soon.\n\nKind regards,\nRotem, Head of the Adventurers' Guild",
+      "pl": "I. awanturnik, the Awanturnik' Gildia bids ty I. as jeden new bohater z the land. Take I. awanturnik stone i use to w dowolny miasto świątynia do instantly podróż do nasz gildia korytarz, przedpokój, hall. If ty a. powinien, powinna kiedykolwiek lose twój awanturnik stone, Lekarz rejonowyżesz zastępować to by I. do jeden ksiądz w the świątynia.\nI I. ty will być I. nas wkrótce, szybko. I. regards,\nRotem, I. z the Awanturnik' Gildia",
+      "lang": "Brave adventurer,\n\nthe Adventurers' Guild bids you welcome as a new hero of the land.\n\nTake this adventurer's stone and use it in any city temple to instantly travel to our guild hall. If you should ever lose your adventurer's stone, you can replace it by talking to a priest in the temple.\nI hope you will be visiting us soon.\n\nKind regards,\nRotem, Head of the Adventurers' Guild"
+    },
+    {
+      "key": "book.koshei.famous_inhabitants_page_2",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "PAGE 2\nLord Koshei the Curious\n-_-_-_-_-_-_-_-_-_-_-_-\nDate of birth: unknown\nAge: unknown\nHometown: unknown\nDate of death: unknown\nThere are not many things known about this man. He appeared out of nowhere and lived here for nearly ten years. Even though he was communicative, he never told anything about his profession or what he did for a living. First he lived in Darashia 2, Flat 11 for about two years. During that time he was roaming around, travelling the lands of Darama and often visiting the Bath of Dreams and the minotaur pyramid in the North.\nThen it was discovered that he had built a tower south of the mountains. It is unexplained how he managed to do that because no one has been seen to help him. Anyway, the remains of his tower are still there. ...",
+      "pl": "I. 2\nLord Koshei the Curious\n-_-_-_-_-_-_-_-_-_-_-_-\nI. z I.: nieznany\nI.: nieznany\nHometown: nieznany\nI. z I.: nieznany\nNie mata, podkładka wiele, dużo rzecz kNiewn o I. man. On pojawiać się out z Niewhere i lived tutaj, tu dla prawie I. a. rok. I. I. on był komunikatywny, rozmowny, on nigdy told cokolwiek o jego profesja, zawód lub I. on zrobił dla jeden I.. I. on lived w Darashia 2, I. 11 dla o dwa a. rok. Podczas, w czasie that czas on był włóczyć się, wędrować around, podróżling the lands z Darama i często I. the I. z I. i the miNietaur piramida w the Nierth.\nWtedy to był odkrywać that on miał zbudowany jeden I. I. z the góra. To jest unexplained jak on managed do robić that ponieważ, bo Nie I. ma był seen do help him. W każdym razie, the I. z jego I. są I. there....",
+      "lang": "PAGE 2\nLord Koshei the Curious\n-_-_-_-_-_-_-_-_-_-_-_-\nDate of birth: unknown\nAge: unknown\nHometown: unknown\nDate of death: unknown\nThere are not many things known about this man. He appeared out of nowhere and lived here for nearly ten years. Even though he was communicative, he never told anything about his profession or what he did for a living. First he lived in Darashia 2, Flat 11 for about two years. During that time he was roaming around, travelling the lands of Darama and often visiting the Bath of Dreams and the minotaur pyramid in the North.\nThen it was discovered that he had built a tower south of the mountains. It is unexplained how he managed to do that because no one has been seen to help him. Anyway, the remains of his tower are still there. ..."
+    },
+    {
+      "key": "book.new_frontier.hidden_note",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Go to the secret door to the north",
+      "pl": "Go do the I. drzwi do the Nierth",
+      "lang": "Go to the secret door to the north"
+    },
+    {
+      "key": "book.otbm.1000_alchemical_uses_of_urine",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "1000 Alchemical Uses of Urine",
+      "pl": "1000 Alchemical Nas z Mocz",
+      "lang": "1000 Alchemical Uses of Urine"
     }
   ],
   "length_ratio_issues": [
@@ -4221,8 +4221,8 @@
   ],
   "auto_fix": {
     "attempted": 80,
-    "applied": 37,
-    "skipped": 43,
+    "applied": 35,
+    "skipped": 45,
     "errors": 0
   }
 }

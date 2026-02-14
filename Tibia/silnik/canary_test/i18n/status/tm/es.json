@@ -135342,5 +135342,645 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-14T10:50:48.440831Z"
+  },
+  "npc.rottin_wood.multi_9": {
+    "src_hash": "b3b13531f035f86209071d4fc30dffa6",
+    "text": "Cuando entren en dicha zona que se encuentra cerca de nuestro campamento oculto, quedarán atrapados y podrás... aligerar su pesada carga de bienes valiosos. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:02:30.560937Z"
+  },
+  "npc.rottin_wood.say_1": {
+    "src_hash": "66da251fc0f31080e0f236118d571334",
+    "text": "Oh, ¿quieres algo de trabajo? Puedes ayudarnos, está bien. ¿Sabías que la gente de la ciudad cree que esas patas de conejo son en realidad amuletos de la suerte?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:02:30.561665Z"
+  },
+  "npc.rottin_wood.say_10": {
+    "src_hash": "efb4ecd99e321c6a0158130f6c6a9430",
+    "text": "Bien, porque eso es exactamente con lo que nos ayudarás: conseguir más 'lucky charms'. Si no conseguimos nuevos amuletos a tiempo, seguramente tendremos que pasar hambre... durante el otoño. Sería un momento difícil para todos nosotros. Entonces... ¿estás dentro?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:02:30.562675Z"
+  },
+  "npc.rottin_wood.say_11": {
+    "src_hash": "d4a059314787b88b425e53cd662e0603",
+    "text": "Buena caza. Eso será suficiente para ayudarnos... a pasar el invierno, sí. Ahora bien, si quieres ayudarnos a conseguir aún más amuletos de la suerte, siempre puedes pedírnoslo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:02:30.563412Z"
+  },
+  "npc.rottin_wood.say_12": {
+    "src_hash": "91d89959e4f7d275ce5eef9ecce2c35f",
+    "text": "No tienes suficiente pata de conejo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:02:30.563792Z"
+  },
+  "npc.rottin_wood.say_13": {
+    "src_hash": "4d624574ffb68c4d42e21e35f6a1ff5a",
+    "text": "Bien, bien. ¿Recuerdas el viejo dicho? Si no está roto, no lo hemos hecho nosotros. ¡Ahora vete!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:02:34.956182Z"
+  },
+  "npc.rottin_wood.say_2": {
+    "src_hash": "73749fb0da880630f7eb5b1f7bb0a52c",
+    "text": "Debes esperar algunas horas para volver a realizar otra misión o todavía estás en una misión.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:02:34.956784Z"
+  },
+  "npc.rottin_wood.say_3": {
+    "src_hash": "452c37b006bbb8139f826f597a29dfe7",
+    "text": "Qué bueno verte de regreso. Ahora, ¿nos trajiste los amuletos de la suerte?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:02:34.957249Z"
+  },
+  "npc.rottin_wood.say_4": {
+    "src_hash": "73749fb0da880630f7eb5b1f7bb0a52c",
+    "text": "Debes esperar algunas horas para volver a realizar otra misión o todavía estás en una misión.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:02:34.957805Z"
+  },
+  "npc.rottin_wood.say_5": {
+    "src_hash": "65b703e161bf71bef0e6478b3abf45ea",
+    "text": "Ah ahí estás. Entonces, ¿reparaste todas las estructuras rotas?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:02:34.958293Z"
+  },
+  "npc.rottin_wood.say_6": {
+    "src_hash": "73749fb0da880630f7eb5b1f7bb0a52c",
+    "text": "Debes esperar algunas horas para volver a realizar otra misión o todavía estás en una misión.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:02:39.027138Z"
+  },
+  "npc.rottin_wood.say_7": {
+    "src_hash": "73749fb0da880630f7eb5b1f7bb0a52c",
+    "text": "Debes esperar algunas horas para volver a realizar otra misión o todavía estás en una misión.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:02:39.027776Z"
+  },
+  "npc.rottin_wood.say_8": {
+    "src_hash": "cc6607c74e51b5681e351839b3223736",
+    "text": "¡¡Lo hiciste!! ¿Y supongo que solo tomaste lo que necesitabas? Je. No, lo sé. Porque mis hombres se llevaron el resto. Gracias por ayudarnos, hiciste un muy buen trabajo. De hecho, tengo un pequeño 'extra' para ti aquí, gracias de nuevo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:02:39.028701Z"
+  },
+  "npc.rottin_wood.say_9": {
+    "src_hash": "73749fb0da880630f7eb5b1f7bb0a52c",
+    "text": "Debes esperar algunas horas para volver a realizar otra misión o todavía estás en una misión.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:02:39.029263Z"
+  },
+  "npc.rowenna.greet_msg_1": {
+    "src_hash": "06e7e0e734a6941cb8dd6ef7f83f96e6",
+    "text": "¡Bienvenido a la mejor tienda de armas del país, |PLAYERNAME|! Dime si buscas un buen {trade}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:02:39.029835Z"
+  },
+  "npc.rowenna.voice_1": {
+    "src_hash": "6316eca2fed794f925baf42505c02998",
+    "text": "¡Vendiendo y comprando armas finas!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:02:44.877118Z"
+  },
+  "npc.rudolph.greet_msg_1": {
+    "src_hash": "f486c5e757b5c2b5d1f9b583745973e4",
+    "text": "Ah, un cliente. Hola |PLAYERNAME|. Si quieres ver mi maravillosa ropa hecha a medida, pídeme un {trade}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:02:44.877715Z"
+  },
+  "npc.ruprecht.multi_1": {
+    "src_hash": "4181636c231385d56a17b383249bb2e2",
+    "text": "Bueno, a él realmente no le gusta que alguien cuente su historia... ¡pero a mí sí! Hace mucho, mucho tiempo, Santa no era más que un enanito codicioso. Un auténtico avaro, ya os lo digo...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:02:44.878526Z"
+  },
+  "npc.ruprecht.multi_10": {
+    "src_hash": "ca3ec7073c0f7b171620246258a97c6f",
+    "text": "Con el paso de los años lo convirtió en un juego. Se escondió en algún lugar para recompensar a quienes lo encontraran...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:02:44.879096Z"
+  },
+  "npc.ruprecht.multi_11": {
+    "src_hash": "d756ecd59566832d3285d844f08a9b67",
+    "text": "Pero una vez al año, en un día muy especial que resulta ser el aniversario de su maldición, sale y trae regalos a la gente, y especialmente a los niños...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:02:44.879803Z"
+  },
+  "npc.ruprecht.multi_12": {
+    "src_hash": "0c4f7dcb8c38f1da64c1dabbefaf5f33",
+    "text": "Bueno, esa es su historia... No, eso no es una lágrima en mis ojos. Es sólo el viento, ¿sabes?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:02:49.963837Z"
+  },
+  "npc.ruprecht.multi_2": {
+    "src_hash": "457d44b06ba137ef6d566919121f56f0",
+    "text": "Era codicioso incluso para los estándares enanos. Nunca compartiría nada ni regalaría lo más barato que tuviera...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:02:49.964479Z"
+  },
+  "npc.ruprecht.multi_3": {
+    "src_hash": "addec0a1f97ded0c6d08687babcaac53",
+    "text": "Un día una mujer llegó a su casa y le pidió un vaso de agua...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:02:49.964977Z"
+  },
+  "npc.ruprecht.multi_4": {
+    "src_hash": "32c8307c2898fe3cabdb5c73ea0247ee",
+    "text": "Por supuesto que se negó. Incluso se burló de ella por ser tan ingenua. Pero lo que no sabía era que esta mujer era una especie de hada poderosa o tal vez una diosa disfrazada...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:02:49.965740Z"
+  },
+  "npc.ruprecht.multi_5": {
+    "src_hash": "fe44fa25830abf9c6319849dd8163e01",
+    "text": "Sea como fuere, la mujer maldijo al viejo Santa, obligándolo a compartir su fortuna con todos los que conocía...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:02:49.966383Z"
+  },
+  "npc.ruprecht.multi_6": {
+    "src_hash": "80fb473fb840494517d8e58518f3e041",
+    "text": "Papá Noel estaba horrorizado. Por supuesto, no podía soportar la idea de compartir nada en absoluto. Entonces se escondió...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:02:56.017334Z"
+  },
+  "npc.ruprecht.multi_7": {
+    "src_hash": "73a5aea03cc3799ce5e4ba4570657586",
+    "text": "Se escondió en los lugares más recónditos del mundo, pero una y otra vez alguien lo descubría, y la maldición le hacía compartir su riqueza...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:02:56.018083Z"
+  },
+  "npc.ruprecht.multi_8": {
+    "src_hash": "1d7b17edee3d6965a2e4aebe504f6e85",
+    "text": "¿Y sabes algo? ¡Al viejo Santa realmente le llegó a gustar! Vio la alegría que le traían sus regalos, y esto abrió su viejo corazón de piedra...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:02:56.018844Z"
+  },
+  "npc.ruprecht.multi_9": {
+    "src_hash": "6852b6c0426334eb2b4fc2fc2370626b",
+    "text": "Y aprendió que de esta manera su fortuna le proporcionaba más alegría y placer que cuando la guardaba bajo llave. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:02:56.019477Z"
+  },
+  "npc.ruprecht.say_1": {
+    "src_hash": "262f27db0c3fc6fd24fd34605b930808",
+    "text": "Entonces, ¿quieres intercambiar {} por {} tokens navideños?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:02:56.019982Z"
+  },
+  "npc.ruprecht.say_2": {
+    "src_hash": "8b6c9229d252e3060a52923c5ed3f1e5",
+    "text": "Entonces, ¿quieres intercambiar {} por {} token(s) navideño(s)?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:03:04.470482Z"
+  },
+  "npc.ruprecht.say_3": {
+    "src_hash": "31a84662f059c213ed9bd611994d44ab",
+    "text": "Gracias, aquí está tu {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:03:04.470896Z"
+  },
+  "npc.ruprecht.say_5": {
+    "src_hash": "ad12398feb890fbf2369f11bed232501",
+    "text": "No tienes suficientes tokens.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:03:04.471274Z"
+  },
+  "npc.ruprecht.say_6": {
+    "src_hash": "8eb7c26ed76cc4c44d5d1268b2cc7580",
+    "text": "¡Vuelve cuando estés listo para intercambiar algunas fichas!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:03:04.471771Z"
+  },
+  "npc.ruprecht.say_offers": {
+    "src_hash": "d310bac103c0ab5993b42d3bcc2f1316",
+    "text": "Tengo estas ofertas: {0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:03:04.472125Z"
+  },
+  "npc.saideh.greet_msg_1": {
+    "src_hash": "1af4d187bb7412f9bc48c84d996d4cf1",
+    "text": "Hola, mi nombre es Saideh. Una vez esta fue la entrada a la cripta de nuestros héroes. Una de las tumbas pertenece a nuestro querido héroe Dayyan. Hoy en día no es buena idea visitar este lugar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:03:10.090628Z"
+  },
+  "npc.saideh.say_1": {
+    "src_hash": "a90778dc7a34b468b196679c14f841d5",
+    "text": "Me gustaría que visitaras la tumba de nuestro querido héroe Dayyan. Sus restos deben ser enterrados de nuevo, porque una horda de ogros controla este lugar. ¿Quieres iniciar esta santa misión?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:03:10.091632Z"
+  },
+  "npc.saideh.say_2": {
+    "src_hash": "573155a114059bdf579b8778c0d43316",
+    "text": "Bueno, lo aprecio. ¡Buena suerte!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:03:10.092372Z"
+  },
+  "npc.sam.farewell_msg_1": {
+    "src_hash": "34e41ae88517470783bb147be142a687",
+    "text": "Adiós y vuelve otra vez, |PLAYERNAME|.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:03:10.093137Z"
+  },
+  "npc.sam.greet_msg_1": {
+    "src_hash": "e08339bc7e7f978152786837f670061e",
+    "text": "¡Bienvenido a mi tienda, aventurero |PLAYERNAME|! Yo {trade} con armas y armaduras.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:03:10.094575Z"
+  },
+  "npc.sam.multi_1": {
+    "src_hash": "7dcee62f70cb43ac29b323dd1b97cfd4",
+    "text": "¡Muchas gracias! ¡Esto me trae buenos viejos recuerdos! Por favor, como recompensa, viaja a Kazordoon y pídele a mi viejo amigo Kroox que te proporcione una armadura enana especial. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:03:14.651911Z"
+  },
+  "npc.sam.multi_2": {
+    "src_hash": "154688d60ed3e65b001917ab43f54ad6",
+    "text": "Le enviaré un correo sobre usted inmediatamente. Sólo dile que su viejo amigo Sam te envía.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:03:14.652538Z"
+  },
+  "npc.sam.say_1": {
+    "src_hash": "ca3e0e7106d1ab740ba8a7be04691ade",
+    "text": "Oh, ¿Gregorio te envió? Veo. Será un placer adornar tu casco. Por favor dame algo de tiempo para terminarlo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:03:14.653169Z"
+  },
+  "npc.sam.say_11": {
+    "src_hash": "9a32fb8431c7dc9aff9c6bb745f48026",
+    "text": "No puedo creerlo. ¡Por fin seré rico! ¡Podría mudarme a Edron y disfrutar de mi jubilación! Pero... ¡espera un minuto! ¡No empezaré a trabajar sin contrato! ¿Estás dispuesto a firmar uno?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:03:14.653853Z"
+  },
+  "npc.sam.say_12": {
+    "src_hash": "438da7872117018fe39d6b178d899ab8",
+    "text": "¡Bien! Aquí está el contrato. Por favor fírmalo. Hablame de ello otra vez cuando hayas terminado.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:03:14.654502Z"
+  },
+  "npc.sam.say_13": {
+    "src_hash": "53bcabbe63e1bcd5fb3a3f1c9ec02330",
+    "text": "No tienes un contrato firmado.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:03:19.645030Z"
+  },
+  "npc.sam.say_14": {
+    "src_hash": "6005a2935f6c33d3b18630c671523bcd",
+    "text": "¡Excelente! ¡Comenzaré a trabajar de inmediato! ¡Ahora que voy a ser rico, aprovecharé la oportunidad para decirle a algunas personas lo que REALMENTE pienso de ellas!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:03:19.646414Z"
+  },
+  "npc.sam.say_16": {
+    "src_hash": "133306ee513e1693e8f20d560f7b8137",
+    "text": "De todos modos, este acuerdo parecía demasiado bueno para ser verdad.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:03:19.647264Z"
+  },
+  "npc.sam.say_2": {
+    "src_hash": "98af2807a0bb543ab036e6fb33b9ec18",
+    "text": "Justo a tiempo, |PLAYERNAME|. Tu casco está terminado, espero que te guste.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:03:19.648166Z"
+  },
+  "npc.sam.say_3": {
+    "src_hash": "f249851250faf12891b21f7eb84aeb92",
+    "text": "Por favor tenga un poco de paciencia, |PLAYERNAME|. ¡Forjar es un trabajo duro!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:03:19.649065Z"
+  },
+  "npc.sam.say_4": {
+    "src_hash": "86826e49926a6962cc9f0f0992df0ab7",
+    "text": "Creo que es una de mis obras maestras.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:03:24.591094Z"
+  },
+  "npc.sam.say_5": {
+    "src_hash": "c8106c86b0f402083a1020f17a129978",
+    "text": "Lo siento, pero sin el permiso de Gregor no puedo ayudarte con este asunto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:03:24.591628Z"
+  },
+  "npc.sam.say_6": {
+    "src_hash": "32e7d9d2ae8c1ae101350619564ba4b3",
+    "text": "¿Qué? ¿Me estás diciendo que encontraste mi vieja mochila de aventurero que perdí hace años?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:03:24.592165Z"
+  },
+  "npc.sam.say_7": {
+    "src_hash": "b688b2e96fb92bcd450a5d6172830b6f",
+    "text": "Mis ofertas son armas, armaduras, cascos, piernas y escudos. Si quieres ver mis ofertas pídeme un {trade}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:03:24.592755Z"
+  },
+  "npc.sam.say_8": {
+    "src_hash": "e2afc035e1b5db42b82b1195b15f3334",
+    "text": "¿Qué? ¿Quieres comprar 2000 escudos de acero?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:03:24.593190Z"
+  },
+  "npc.sam.say_9": {
+    "src_hash": "4901486a2454260054d53bd77097232d",
+    "text": "¿Has firmado el contrato?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:03:28.612818Z"
+  },
+  "npc.sam.stdmod_1": {
+    "src_hash": "d34cf2de0136c1f62136d9d90323a1b1",
+    "text": "¡Hola, aventurero! ¿Necesitas un trato en armas o armaduras? ¡Soy tu hombre!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:03:28.613320Z"
+  },
+  "npc.sam.voice_1": {
+    "src_hash": "d34cf2de0136c1f62136d9d90323a1b1",
+    "text": "¡Hola, aventurero! ¿Necesitas un trato en armas o armaduras? ¡Soy tu hombre!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:03:28.613802Z"
+  },
+  "npc.sandomo.farewell_msg_1": {
+    "src_hash": "ab1e4a2bdc56f67fe1427aedebb8429e",
+    "text": "Alabado sea los dioses, me despido de vosotros.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:03:28.614183Z"
+  },
+  "npc.sandomo.greet_msg_1": {
+    "src_hash": "e29fdb55eb04b7fe8d18d812d481b668",
+    "text": "Mmm. Saludos.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:03:28.614623Z"
+  },
+  "npc.sandomo.multi_1": {
+    "src_hash": "b904e2c9cd9ad938721316941f8107b9",
+    "text": "Bien. Registrado como...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:03:33.837995Z"
+  },
+  "npc.sandomo.multi_10": {
+    "src_hash": "3726a41864c40b4794ea68bfdd24765d",
+    "text": "mortero y...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:03:33.838337Z"
+  },
+  "npc.sandomo.multi_11": {
+    "src_hash": "d61de25e6188a287cec9e97d76afac83",
+    "text": "Tu mataste",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:03:33.838585Z"
+  },
+  "npc.sandomo.multi_12": {
+    "src_hash": "39e217b7206787e3ff0f3a7b329f6a93",
+    "text": "frazzlemaws y...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:03:33.838877Z"
+  },
+  "npc.sandomo.multi_13": {
+    "src_hash": "990425be2f79941805486b41a86a2c67",
+    "text": "Tu tambien cazaste",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:03:33.839144Z"
+  },
+  "npc.sandomo.multi_14": {
+    "src_hash": "a15018809b3be82ade959a5e96af77c4",
+    "text": "silenciadores. Eso sería igual",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:03:40.972574Z"
+  },
+  "npc.sandomo.multi_15": {
+    "src_hash": "97711d6e33674da439219fe8d62d0bca",
+    "text": "de oro de la Inquisición, PERO actualmente nos falta este valioso metal, así que... ¿quieres que agregue esta cantidad a mi {books} por ahora o {trade} para otra cosa?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:03:40.973333Z"
+  },
+  "npc.sandomo.multi_16": {
+    "src_hash": "6b5a819334bcf59acb9851155046d5c0",
+    "text": "Exploramos algunas cuevas debajo de la isla que contienen mucha tiza para mezclar un buen mortero. De hecho, las entradas no están muy lejos de aquí. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:03:40.974010Z"
+  },
+  "npc.sandomo.multi_17": {
+    "src_hash": "326334dd2359bec33ff8d49d86a66cfa",
+    "text": "Sin embargo, las entradas están algo... retorcidas. La entrada que habíamos mapeado a cierta cueva un día, conduciría a una cueva completamente diferente al día siguiente. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:03:40.974874Z"
+  },
+  "npc.sandomo.multi_18": {
+    "src_hash": "3f2039f70713934bb6b4aa382a05bf57",
+    "text": "E incluso al salir de una de las cuevas nunca sabes dónde estás ya que sus salidas son igual de engañosas. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:03:40.975500Z"
+  },
+  "npc.sandomo.multi_19": {
+    "src_hash": "2e7c22ecb4f4fed984bb48d9ec79f4c6",
+    "text": "Una vez que hayas reunido algo de tiza, también deberías encontrar grava en la isla. Si tienes un pico y un balde, deberías poder recolectar suficiente grava fina para mezclar un poco de mortero. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:03:45.789996Z"
+  },
+  "npc.sandomo.multi_2": {
+    "src_hash": "ec589ae96cc8bf88b8578ffd2f2d6da4",
+    "text": "... con... sobre",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:03:45.790637Z"
+  },
+  "npc.sandomo.multi_20": {
+    "src_hash": "e0e2b583aa15c93c1c8c8a2985aacebf",
+    "text": "No olvides traer algunos cubos; si te faltan, el hermano Maun te los entregará (por supuesto, pagando una tarifa).",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:03:45.791780Z"
+  },
+  "npc.sandomo.multi_21": {
+    "src_hash": "7830d66bee244be4ca9738d18bbfaa0c",
+    "text": "Nuestro hermano Mortis trabaja constantemente para mantener el puente intacto. Primero probamos con algunos tablones de madera simples, pero no funcionó... bueno. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:03:45.793016Z"
+  },
+  "npc.sandomo.multi_22": {
+    "src_hash": "bc332dff5261e04a00d9618d2ed02fc7",
+    "text": "Lo que necesitamos es suficiente {mortar} para construir una travesía duradera. Y necesitaremos aún más mortero para mantenerlo, ya que constantemente es atacado por viles bichos.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:03:45.794385Z"
+  },
+  "npc.sandomo.multi_23": {
+    "src_hash": "e5a165bb3e28809f1fdb430f41606d1b",
+    "text": "Luego está este enorme muro en la distancia. Una vez cruzado el puente, tendremos que atravesar este monumento. Según tengo entendido, ahora estás trabajando para Inquisition, no escucharé ninguna objeción. Incluso puedes ganarte nuestra gratitud.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:03:50.151980Z"
+  },
+  "npc.sandomo.multi_24": {
+    "src_hash": "e5a165bb3e28809f1fdb430f41606d1b",
+    "text": "Luego está este enorme muro en la distancia. Una vez cruzado el puente, tendremos que atravesar este monumento. Según tengo entendido, ahora estás trabajando para Inquisition, no escucharé ninguna objeción. Incluso puedes ganarte nuestra gratitud.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:03:50.153144Z"
+  },
+  "npc.sandomo.multi_3": {
+    "src_hash": "15b82f1d7dfddc8bb5b28ed33d258f69",
+    "text": "de oro de la Inquisición, justamente ganado, añadido. Allá. ¡Gracias por tu ayuda! ..",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:03:50.153753Z"
+  },
+  "npc.sandomo.multi_4": {
+    "src_hash": "23b5b5cebd194ca8b044ba958adcc897",
+    "text": "Bien. Pregúntame en cualquier momento en caso de que quieras saber tu {record} actual. Si tiene tiempo, recuerde que también puede {trade} sus ganancias en algunas de estas... probablemente mucho más valiosas, ejem... agrupar... cosas, sí.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:03:50.154689Z"
+  },
+  "npc.sandomo.multi_5": {
+    "src_hash": "2dfe4bbaa4ec6ffac319fd9ec31bb0c3",
+    "text": "Por supuesto, veamos. Hm, tus esfuerzos recientes te harían ganar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:03:50.155186Z"
   }
 }

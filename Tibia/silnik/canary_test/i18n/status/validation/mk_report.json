@@ -1,15 +1,15 @@
 {
   "lang": "mk",
   "script_group": "cyrillic",
-  "total_keys": 52538,
-  "translated": 29784,
-  "identical_to_en": 22988,
+  "total_keys": 53586,
+  "translated": 30832,
+  "identical_to_en": 23717,
   "placeholder_keys": 20599,
-  "coverage_pct": 56.7,
-  "issues_total": 6221,
+  "coverage_pct": 57.5,
+  "issues_total": 6225,
   "issues_by_type": {
     "V3_empty": 6113,
-    "script_cyrillic_latin_mix": 96,
+    "script_cyrillic_latin_mix": 100,
     "V1_placeholder_mismatch": 7,
     "V4_artifact": 3,
     "V6_newline_mismatch": 1,
@@ -17,7 +17,7 @@
   },
   "issues_by_severity": {
     "CRITICAL": 8,
-    "HIGH": 99,
+    "HIGH": 103,
     "MEDIUM": 1,
     "LOW": 6113
   },
@@ -72,6 +72,30 @@
       "severity": "CRITICAL"
     },
     {
+      "key": "achievement.26.name",
+      "category": "achievements",
+      "type": "script_cyrillic_latin_mix",
+      "severity": "HIGH"
+    },
+    {
+      "key": "achievement.36.name",
+      "category": "achievements",
+      "type": "script_cyrillic_latin_mix",
+      "severity": "HIGH"
+    },
+    {
+      "key": "achievement.72.name",
+      "category": "achievements",
+      "type": "script_cyrillic_latin_mix",
+      "severity": "HIGH"
+    },
+    {
+      "key": "achievement.95.name",
+      "category": "achievements",
+      "type": "script_cyrillic_latin_mix",
+      "severity": "HIGH"
+    },
+    {
       "key": "book.otbm.1st_floor_magic_emporium",
       "category": "books",
       "type": "script_cyrillic_latin_mix",
@@ -118,39 +142,15 @@
       "category": "books",
       "type": "V4_artifact",
       "severity": "HIGH"
-    },
-    {
-      "key": "book.otbm.crunors_finest_fruit_and_vegetable",
-      "category": "books",
-      "type": "script_cyrillic_latin_mix",
-      "severity": "HIGH"
-    },
-    {
-      "key": "book.otbm.crunors_finest_fruit_and_vegetable_1ed839d6",
-      "category": "books",
-      "type": "script_cyrillic_latin_mix",
-      "severity": "HIGH"
-    },
-    {
-      "key": "event.player.msg1",
-      "category": "events",
-      "type": "script_cyrillic_latin_mix",
-      "severity": "HIGH"
-    },
-    {
-      "key": "item.10217.name",
-      "category": "items",
-      "type": "script_cyrillic_latin_mix",
-      "severity": "HIGH"
     }
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 457,
+    "issues_total": 462,
     "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 57,
-    "auto_fix_applied": 80
+    "length_ratio": 62,
+    "auto_fix_applied": 79
   },
-  "validated_at": "2026-02-14T10:52:06.167971Z"
+  "validated_at": "2026-02-14T11:04:47.970855Z"
 }

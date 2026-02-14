@@ -1067,7 +1067,7 @@
   "scripts.find_fiend.level_harmless": "Harmless",
   "scripts.find_fiend.level_medium": "Medium",
   "scripts.find_fiend.level_trivial": "Trivial",
-  "scripts.find_fiend.level_unknown": "UnkNãown",
+  "scripts.find_fiend.level_unknown": "[EN] Unknown",
   "scripts.find_fiend.monster_msg": "The monster %s. Be prepared to find a creature of difficulty level \"%s\".",
   "scripts.find_person.beside_higher": "is above you",
   "scripts.find_person.beside_lower": "is below you",

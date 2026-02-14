@@ -3,7 +3,7 @@
   "script_group": "rtl",
   "total_keys": 53586,
   "translated": 35775,
-  "identical_to_en": 28558,
+  "identical_to_en": 28492,
   "placeholder_keys": 15656,
   "coverage_pct": 66.8,
   "issues_total": 6252,
@@ -149,7 +149,7 @@
     "consistency": 1,
     "pl_reference": 400,
     "length_ratio": 74,
-    "auto_fix_applied": 66
+    "auto_fix_applied": 64
   },
-  "validated_at": "2026-02-14T10:50:52.165673Z"
+  "validated_at": "2026-02-14T11:03:14.297806Z"
 }

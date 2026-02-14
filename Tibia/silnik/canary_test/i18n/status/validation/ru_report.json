@@ -3,7 +3,7 @@
   "script_group": "cyrillic",
   "total_keys": 53586,
   "translated": 53400,
-  "identical_to_en": 31769,
+  "identical_to_en": 31689,
   "placeholder_keys": 12,
   "coverage_pct": 99.7,
   "issues_total": 15051,
@@ -146,11 +146,11 @@
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 533,
+    "issues_total": 514,
     "consistency": 66,
     "pl_reference": 400,
-    "length_ratio": 67,
+    "length_ratio": 48,
     "auto_fix_applied": 80
   },
-  "validated_at": "2026-02-14T09:32:21.434995Z"
+  "validated_at": "2026-02-14T10:58:19.465517Z"
 }

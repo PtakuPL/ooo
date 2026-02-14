@@ -44,7 +44,7 @@
   "php.server_status.text4": "[EN] card-header border-bottom-0",
   "php.server_status.text5": "[EN] font-weight-bold m-0",
   "php.settings.text1": "Plugin $plugin does Nãot exist or does Nãot have settings defined.",
-  "php.settings.text2": "CanNãot load settings file for plugin $plugin",
+  "php.settings.text2": "[EN] Cannot load settings file for plugin $plugin",
   "php.settings.text3": "[EN] input-group-append input-group-text",
   "php.settings.text4": "[EN] fas fa-eye-slash",
   "php.settings.text5": "[EN] well setting-default",

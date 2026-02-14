@@ -4,7 +4,7 @@
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-14T10:44:44.134642Z",
+  "checked_at": "2026-02-14T10:57:42.784710Z",
   "issues_total": 440,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -185,168 +185,6 @@
       "lang": "Mission Teleporter Truffels Garden"
     },
     {
-      "key": "book.otbm.much_youve_already_deposited",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "much you've already deposited.",
-      "pl": "dużo, bardzo you've już przetwarzanie tekstułjedenćed.",
-      "lang": "much you've already deposited."
-    },
-    {
-      "key": "book.otbm.mumification_a_case_study",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Mumification, a case study",
-      "pl": "Mumification, jeden przypadek I.",
-      "lang": "Mumification, a case study"
-    },
-    {
-      "key": "book.otbm.mushroom_fields_downstairs",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Mushroom Fields Downstairs",
-      "pl": "Mushmiejsce I. I.",
-      "lang": "Mushroom Fields Downstairs"
-    },
-    {
-      "key": "book.otbm.name_or_ask_about_their",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "name or ask about their job. Just try it out!",
-      "pl": "nazwa lub I. o ich job. Just I. to out!",
-      "lang": "name or ask about their job. Just try it out!"
-    },
-    {
-      "key": "book.otbm.natural_toxins_and_venoms_in",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Natural toxins and venoms in the Darashian desert. Revised version, by Dark Priestess Hyllissa Wolfsbane.",
-      "pl": "I. toxins i veNiems w the Darashian desert. Revised wersja, by I. Kapłanka Hyllissa Wolfsbane.",
-      "lang": "Natural toxins and venoms in the Darashian desert. Revised version, by Dark Priestess Hyllissa Wolfsbane."
-    },
-    {
-      "key": "book.otbm.necromancer_halls_directions",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Necromancer Halls - Directions:",
-      "pl": "Necromancer Korytarz, przedpokój, hall - Kierunek:",
-      "lang": "Necromancer Halls - Directions:"
-    },
-    {
-      "key": "book.otbm.necromancy_a_philosophical_essay_by",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Necromancy, a Philosophical Essay, by the Dark Brother Alonso de Iverra",
-      "pl": "Necromancy, jeden Philosophical Wypracowanie, by the I. Brat Alonso de Iverra",
-      "lang": "Necromancy, a Philosophical Essay, by the Dark Brother Alonso de Iverra"
-    },
-    {
-      "key": "book.otbm.necromants_nectar_is_crucial_to",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "'necromants nectar' is crucial to",
-      "pl": "'necromants nektar' jest crucial do",
-      "lang": "'necromants nectar' is crucial to"
-    },
-    {
-      "key": "book.otbm.new_we_are_now_exchanging",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "NEW - we are now exchanging coins!",
-      "pl": "NEW - my są Niew exchanging monety!",
-      "lang": "NEW - we are now exchanging coins!"
-    },
-    {
-      "key": "book.otbm.no_blood_priest_and_especially",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "No blood priest, and especially Tomruk The Ruddy is not to be let in, under any pretenses, again!",
-      "pl": "Nie I. ksiądz, i w szczególności Tomruk The Czerstwy jest Niet do być let w, under dowolny pretenses, ponownie!",
-      "lang": "No blood priest, and especially Tomruk The Ruddy is not to be let in, under any pretenses, again!"
-    },
-    {
-      "key": "book.otbm.no_entrance_room_under_investigation",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "No entrance! Room under investigation.",
-      "pl": "Nie entrance! miejsce under dochodzenie.",
-      "lang": "No entrance! Room under investigation."
-    },
-    {
-      "key": "book.otbm.no_more_business_only_show",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "No more business, only show business!",
-      "pl": "Nie more interes, biznes, tylko I. interes, biznes!",
-      "lang": "No more business, only show business!"
-    },
-    {
-      "key": "book.otbm.no_reading_under_your_blanket",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "No reading under your blanket",
-      "pl": "Nie czytanie under twój I.",
-      "lang": "No reading under your blanket"
-    },
-    {
-      "key": "book.otbm.no_tainted_blood_samples",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "No tainted blood samples.",
-      "pl": "Nie I. I. I..",
-      "lang": "No tainted blood samples."
-    },
-    {
-      "key": "book.otbm.no_teleport_crystal_required",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "No Teleport Crystal Required!",
-      "pl": "Nie teleportować Crystal wymagany!",
-      "lang": "No Teleport Crystal Required!"
-    },
-    {
-      "key": "book.otbm.no_teleport_crystals_required",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "No Teleport Crystals Required!",
-      "pl": "Nie teleportować Crystals wymagany!",
-      "lang": "No Teleport Crystals Required!"
-    },
-    {
-      "key": "book.otbm.no_teleport_crystals_required_4c85ac16",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "No Teleport Crystals Required!",
-      "pl": "Nie teleportować Crystals wymagany!",
-      "lang": "No Teleport Crystals Required!"
-    },
-    {
-      "key": "book.otbm.nonetheless_two_of_them_were",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Nonetheless two of them were given to the torturers.",
-      "pl": "Nienetheless dwa z ich były I. do the torturers.",
-      "lang": "Nonetheless two of them were given to the torturers."
-    },
-    {
       "key": "book.otbm.noodles_academy_of_modern_magic",
       "category": "books",
       "type": "pl_reference_missing_translation",
@@ -354,24 +192,6 @@
       "en": "Noodles Academy of Modern Magic",
       "pl": "Nieodles Akademia z Współczesny I.",
       "lang": "Noodles Academy of Modern Magic"
-    },
-    {
-      "key": "book.otbm.north_to_the_openair_theatre",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "North - To the Open-Air Theatre of Thais",
-      "pl": "Nierth - Do the Otwórz-I. Theatre z Thais",
-      "lang": "North - To the Open-Air Theatre of Thais"
-    },
-    {
-      "key": "book.otbm.northern_production_site_use_ladder",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Northern production site - use ladder to enter. // Caution: Orc camp nearby. Protective gear required.",
-      "pl": "Nierthern produkcja I. - use drabina do I.. // I.: Orc I. pobliski. Ochronny I. wymagany.",
-      "lang": "Northern production site - use ladder to enter. // Caution: Orc camp nearby. Protective gear required."
     },
     {
       "key": "book.otbm.obujos_domingo_18h_01h",
@@ -392,168 +212,6 @@
       "lang": "Obujos: Domingo (18h - 01h)"
     },
     {
-      "key": "book.otbm.obujos_sunday_3_pm_10",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Obujos: Sunday (3 PM - 10 PM)",
-      "pl": "Obujos: I. (3 PREMIER - 10 PREMIER)",
-      "lang": "Obujos: Sunday (3 PM - 10 PM)"
-    },
-    {
-      "key": "book.otbm.obujos_sunday_3_pm_10_8b659036",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Obujos: Sunday (3 PM - 10 PM)",
-      "pl": "Obujos: I. (3 PREMIER - 10 PREMIER)",
-      "lang": "Obujos: Sunday (3 PM - 10 PM)"
-    },
-    {
-      "key": "book.otbm.of_a_place_called_the",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "of a place called the Pits",
-      "pl": "z jeden I. called the Dół, jama",
-      "lang": "of a place called the Pits"
-    },
-    {
-      "key": "book.otbm.of_despair_in_which_our",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "of despair in which our enemies are numerous and our",
-      "pl": "z I. w I. nasz wróg są liczny i nasz",
-      "lang": "of despair in which our enemies are numerous and our"
-    },
-    {
-      "key": "book.otbm.of_inferno_and_what_is",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "of Inferno. And what is the meaning of",
-      "pl": "z InferNie. I I. jest the znaczenie z",
-      "lang": "of Inferno. And what is the meaning of"
-    },
-    {
-      "key": "book.otbm.of_your_own_in_which",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "of your own in which you can spend the night.",
-      "pl": "z twój I. w I. Lekarz rejonowyżesz wydawać the night.",
-      "lang": "of your own in which you can spend the night."
-    },
-    {
-      "key": "book.otbm.oh_how_i_long_to",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Oh, how I long to see humans again!",
-      "pl": "O, jak I long do I. I. ponownie!",
-      "lang": "Oh, how I long to see humans again!"
-    },
-    {
-      "key": "book.otbm.on_those_who_try_the",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "on those who try the ascension.",
-      "pl": "na those kto I. the ascension.",
-      "lang": "on those who try the ascension."
-    },
-    {
-      "key": "book.otbm.on_those_who_try_the_2a6b8e93",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "on those who try the ascension.",
-      "pl": "na those kto I. the ascension.",
-      "lang": "on those who try the ascension."
-    },
-    {
-      "key": "book.otbm.once_upon_a_time_there",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Once upon a time there was a little gnome.",
-      "pl": "Raz na jeden czas there był jeden little gNieme.",
-      "lang": "Once upon a time there was a little gnome."
-    },
-    {
-      "key": "book.otbm.only_experienced_adventurers_should_proceed",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Only experienced adventurers should proceed!",
-      "pl": "Tylko doświadczony awanturnik a. powinien, powinna zabierać się!",
-      "lang": "Only experienced adventurers should proceed!"
-    },
-    {
-      "key": "book.otbm.only_honorary_barbarians_may_become",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Only honorary barbarians may become inhabitants of Svargrond!",
-      "pl": "Tylko hoNierary barbarzyńca a. móc stawać się mieszkaniec z Svargrond!",
-      "lang": "Only honorary barbarians may become inhabitants of Svargrond!"
-    },
-    {
-      "key": "book.otbm.only_premium_citizens_may_pass",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Only premium citizens may pass.",
-      "pl": "Tylko premium obywatel a. móc I..",
-      "lang": "Only premium citizens may pass."
-    },
-    {
-      "key": "book.otbm.only_premium_citizens_may_pass_31b94383",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Only premium citizens may pass.",
-      "pl": "Tylko premium obywatel a. móc I..",
-      "lang": "Only premium citizens may pass."
-    },
-    {
-      "key": "book.otbm.only_the_humble_may_touch",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Only the humble may touch the Sword of Fury",
-      "pl": "Tylko the skromny, pokorny a. móc I. the Miecz z Wściekłość, furia",
-      "lang": "Only the humble may touch the Sword of Fury"
-    },
-    {
-      "key": "book.otbm.only_those_skilled_in_magic",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Only those skilled in magic can put it to proper use.",
-      "pl": "Tylko those wykwalifikowany, wyszkolony w I. może put to do I. use.",
-      "lang": "Only those skilled in magic can put it to proper use."
-    },
-    {
-      "key": "book.otbm.only_true_believers_may_enter",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Only true believers may enter",
-      "pl": "Tylko prawdziwy I. a. móc I.",
-      "lang": "Only true believers may enter"
-    },
-    {
-      "key": "book.otbm.orange_star_stella_flava",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Orange Star (stella flava)",
-      "pl": "I. I. (stella flava)",
-      "lang": "Orange Star (stella flava)"
-    },
-    {
       "key": "book.otbm.orruk_ahtanri_anvi_ra_shuk",
       "category": "books",
       "type": "pl_reference_missing_translation",
@@ -561,177 +219,6 @@
       "en": "Orruk ah'tanri, anvi ra shuk ta",
       "pl": "Orruk ah'tanri, anvi Akademia Królewska shuk dzięki, dziękuję",
       "lang": "Orruk ah'tanri, anvi ra shuk ta"
-    },
-    {
-      "key": "book.otbm.ottokars_hospital_for_the_poor",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ottokar's Hospital for the Poor and Afflicted. All donations welcome!",
-      "pl": "Ottokar's Szpital dla the Biedny i A. udręczyć. Wszystkie donacja, dar I.!",
-      "lang": "Ottokar's Hospital for the Poor and Afflicted. All donations welcome!"
-    },
-    {
-      "key": "book.otbm.our_army_is_nott_sleeping",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Our army is nott sleeping",
-      "pl": "Nasz wojsko, armia jest Niett I.",
-      "lang": "Our army is nott sleeping"
-    },
-    {
-      "key": "book.otbm.our_wise_and_noble_leader",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Our wise and noble leader",
-      "pl": "Nasz I. i Nieble lider, przywódca",
-      "lang": "Our wise and noble leader"
-    },
-    {
-      "key": "book.otbm.out_by_the_hand_of",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "out by the hand of time soon.",
-      "pl": "out by the hand z czas wkrótce, szybko.",
-      "lang": "out by the hand of time soon."
-    },
-    {
-      "key": "book.otbm.path_to_the_gardens_of",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Path to the Gardens Of Night. Tread with care, pilgrim. The Dark One listens for you.",
-      "pl": "Ścieżka do the I. Z Night. I. z care, pielgrzym. The I. I. I. dla ty.",
-      "lang": "Path to the Gardens Of Night. Tread with care, pilgrim. The Dark One listens for you."
-    },
-    {
-      "key": "book.otbm.pentagramdrawing_a_beginners_guide",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Pentagram-drawing, a beginner's guide",
-      "pl": "Pentagram-I., jeden początkujący I.",
-      "lang": "Pentagram-drawing, a beginner's guide"
-    },
-    {
-      "key": "book.otbm.places_of_gathering_of_the",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Places of gathering of the diverse undead. A practical map through Drefia, by Imdi Joons",
-      "pl": "I. z I. z the odmienny, różnoraki undead. JEDEN I. mapa through Drefia, by Imdi Joons",
-      "lang": "Places of gathering of the diverse undead. A practical map through Drefia, by Imdi Joons"
-    },
-    {
-      "key": "book.otbm.plank_and_treasurechest_market_furniture",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Plank and Treasurechest Market - Furniture",
-      "pl": "I. i Treasurechest I. - Meble",
-      "lang": "Plank and Treasurechest Market - Furniture"
-    },
-    {
-      "key": "book.otbm.plank_and_treasurechest_market_furniture_9f3d917c",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Plank and Treasurechest Market - Furniture",
-      "pl": "I. i Treasurechest I. - Meble",
-      "lang": "Plank and Treasurechest Market - Furniture"
-    },
-    {
-      "key": "book.otbm.please_dont_touch_we_try",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Please don't touch, we try to revive Magister Alverus.",
-      "pl": "Proszę don't I., my I. do ożywiać się, ożywiać Magister Alverus.",
-      "lang": "Please don't touch, we try to revive Magister Alverus."
-    },
-    {
-      "key": "book.otbm.please_keep_the_rooms_clean",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Please keep the rooms clean!",
-      "pl": "Proszę keep the miejsces I.!",
-      "lang": "Please keep the rooms clean!"
-    },
-    {
-      "key": "book.otbm.please_put_the_mugs_back",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Please put the mugs back in the drawer!",
-      "pl": "Proszę put the I. I. w the szuflada!",
-      "lang": "Please put the mugs back in the drawer!"
-    },
-    {
-      "key": "book.otbm.please_put_the_mugs_back_5dfaf5a6",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Please put the mugs back in the drawer!",
-      "pl": "Proszę put the I. I. w the szuflada!",
-      "lang": "Please put the mugs back in the drawer!"
-    },
-    {
-      "key": "book.otbm.please_throw_rubbish_into_the",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Please throw rubbish into the dustbin!",
-      "pl": "Proszę I. odpadki, śmiecie a. do the kosz na śmieci!",
-      "lang": "Please throw rubbish into the dustbin!"
-    },
-    {
-      "key": "book.otbm.poison_fields_runes_100gp",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Poison Fields Runes (100gp)",
-      "pl": "I. I. Runes (100internista)",
-      "lang": "Poison Fields Runes (100gp)"
-    },
-    {
-      "key": "book.otbm.poisons_and_acids_research_lab",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Poisons and Acids Research Lab",
-      "pl": "I. i I. I. Laboratorium",
-      "lang": "Poisons and Acids Research Lab"
-    },
-    {
-      "key": "book.otbm.potions_can_be_handed_out",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Potions can be handed out. There have been no reported cases of overdosing.",
-      "pl": "Napój może być handed out. There masz był Nie I. przypadek z overdosing.",
-      "lang": "Potions can be handed out. There have been no reported cases of overdosing."
-    },
-    {
-      "key": "book.otbm.praise_fairy_mystical_current_hero",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Praise Fairy Mystical, current hero of the Greenhorn difficulty!",
-      "pl": "I. I. Mystical, aktualny bohater z the Greenhorn trudność!",
-      "lang": "Praise Fairy Mystical, current hero of the Greenhorn difficulty!"
-    },
-    {
-      "key": "book.otbm.praise_the_gods_and_our",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Praise the gods and our King.",
-      "pl": "I. the gods i nasz Król.",
-      "lang": "Praise the gods and our King."
     },
     {
       "key": "book.otbm.presumably_the_last_of_its",
@@ -3612,6 +3099,519 @@
       "en": "You read: ",
       "pl": "Ty czytać, przeczytać:",
       "lang": "You read: "
+    },
+    {
+      "key": "channel.english_chat.name",
+      "category": "chatchannels",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "English Chat",
+      "pl": "Angielski czat",
+      "lang": "English Chat"
+    },
+    {
+      "key": "channel.tutor.name",
+      "category": "chatchannels",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Tutor",
+      "pl": "Korepetytor",
+      "lang": "Tutor"
+    },
+    {
+      "key": "channel.guild_leaders.name",
+      "category": "chatchannels",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Guild Leaders",
+      "pl": "Liderzy gildii",
+      "lang": "Guild Leaders"
+    },
+    {
+      "key": "channel.help.name",
+      "category": "chatchannels",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Help",
+      "pl": "Pomoc",
+      "lang": "Help"
+    },
+    {
+      "key": "channel.advertising_rook.name",
+      "category": "chatchannels",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Advertising-Rook",
+      "pl": "Ogłoszenia-Rookgaard",
+      "lang": "Advertising-Rook"
+    },
+    {
+      "key": "channel.gamemaster.name",
+      "category": "chatchannels",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Gamemaster",
+      "pl": "Mistrz Gry",
+      "lang": "Gamemaster"
+    },
+    {
+      "key": "channel.advertising.name",
+      "category": "chatchannels",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Advertising",
+      "pl": "Ogłoszenia",
+      "lang": "Advertising"
+    },
+    {
+      "key": "channel.world_chat.name",
+      "category": "chatchannels",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "World Chat",
+      "pl": "Czat światowy",
+      "lang": "World Chat"
+    },
+    {
+      "key": "channel.msg_level1_mute",
+      "category": "chatchannels",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You may not speak into channels as long as you are on level 1.",
+      "pl": "Nie możesz pisać na kanałach, dopóki masz 1 poziom.",
+      "lang": "You may not speak into channels as long as you are on level 1."
+    },
+    {
+      "key": "channel.msg_offer_cooldown",
+      "category": "chatchannels",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You may only place one offer in two minutes.",
+      "pl": "Możesz umieścić tylko jedną ofertę w ciągu dwóch minut.",
+      "lang": "You may only place one offer in two minutes."
+    },
+    {
+      "key": "channel.help.msg_muted",
+      "category": "chatchannels",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You are muted from the Help channel for using it inappropriately.",
+      "pl": "Zostałeś wyciszony na kanale Help za niewłaściwe korzystanie z niego.",
+      "lang": "You are muted from the Help channel for using it inappropriately."
+    },
+    {
+      "key": "channel.help.msg_already_muted",
+      "category": "chatchannels",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "That player is already muted.",
+      "pl": "Ten gracz jest już wyciszony.",
+      "lang": "That player is already muted."
+    },
+    {
+      "key": "channel.help.msg_not_authorized_mute",
+      "category": "chatchannels",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You are not authorized to mute that player.",
+      "pl": "Nie masz uprawnień, aby wyciszyć tego gracza.",
+      "lang": "You are not authorized to mute that player."
+    },
+    {
+      "key": "channel.help.msg_not_muted",
+      "category": "chatchannels",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "That player is not muted.",
+      "pl": "Ten gracz nie jest wyciszony.",
+      "lang": "That player is not muted."
+    },
+    {
+      "key": "channel.help.msg_not_authorized_unmute",
+      "category": "chatchannels",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You are not authorized to unmute that player.",
+      "pl": "Nie masz uprawnień, aby odciszyć tego gracza.",
+      "lang": "You are not authorized to unmute that player."
+    },
+    {
+      "key": "client.game_store.text1",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "HomePanel",
+      "pl": "Panel główny",
+      "lang": "HomePanel"
+    },
+    {
+      "key": "client.game_store.text2",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "HTTP error:",
+      "pl": "HTTP błąd:",
+      "lang": "HTTP error:"
+    },
+    {
+      "key": "client.blessing.text1",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Record of Blessings",
+      "pl": "Zapis błogosławieństw",
+      "lang": "Record of Blessings"
+    },
+    {
+      "key": "client.blessing.text2",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": ".. entry.store ..",
+      "pl": "..wejście.sklepu ..",
+      "lang": ".. entry.store .."
+    },
+    {
+      "key": "cpp.augment.augments_label",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "\nAugments: ({0}).",
+      "pl": "Zwiększać: ({0}).",
+      "lang": "\nAugments: ({0})."
+    },
+    {
+      "key": "cpp.augment.damage",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "damage",
+      "pl": "szkoda",
+      "lang": "damage"
+    },
+    {
+      "key": "cpp.badge.name_1",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Fledegeling Hero",
+      "pl": "Fledegeling Bohater",
+      "lang": "Fledegeling Hero"
+    },
+    {
+      "key": "cpp.badge.name_10",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Global Player (Grade 2)",
+      "pl": "Globalny gracz (I. 2)",
+      "lang": "Global Player (Grade 2)"
+    },
+    {
+      "key": "cpp.badge.name_11",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Global Player (Grade 3)",
+      "pl": "Globalny gracz (I. 3)",
+      "lang": "Global Player (Grade 3)"
+    },
+    {
+      "key": "cpp.badge.name_12",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Master Class (Grade 1)",
+      "pl": "I. I. (I. 1)",
+      "lang": "Master Class (Grade 1)"
+    },
+    {
+      "key": "cpp.badge.name_13",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Master Class (Grade 2)",
+      "pl": "I. I. (I. 2)",
+      "lang": "Master Class (Grade 2)"
+    },
+    {
+      "key": "cpp.badge.name_14",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Master Class (Grade 3)",
+      "pl": "I. I. (I. 3)",
+      "lang": "Master Class (Grade 3)"
+    },
+    {
+      "key": "cpp.badge.name_15",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Freshman of the Tournament",
+      "pl": "Nowy student, nowy z the Turniej",
+      "lang": "Freshman of the Tournament"
+    },
+    {
+      "key": "cpp.badge.name_16",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Regular of the Tournament",
+      "pl": "I. z the Turniej",
+      "lang": "Regular of the Tournament"
+    },
+    {
+      "key": "cpp.badge.name_17",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hero of the Tournament",
+      "pl": "Bohater z the Turniej",
+      "lang": "Hero of the Tournament"
+    },
+    {
+      "key": "cpp.badge.name_18",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Tournament Competitor",
+      "pl": "Turniej Konkurent",
+      "lang": "Tournament Competitor"
+    },
+    {
+      "key": "cpp.badge.name_19",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Tournament Challenger",
+      "pl": "Turniej Rywal",
+      "lang": "Tournament Challenger"
+    },
+    {
+      "key": "cpp.badge.name_2",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Veteran Hero",
+      "pl": "Weteran Bohater",
+      "lang": "Veteran Hero"
+    },
+    {
+      "key": "cpp.badge.name_20",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Tournament Master",
+      "pl": "Turniej I.",
+      "lang": "Tournament Master"
+    },
+    {
+      "key": "cpp.badge.name_21",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Tournament Champion",
+      "pl": "Turniej I.",
+      "lang": "Tournament Champion"
+    },
+    {
+      "key": "cpp.badge.name_3",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Senior Hero",
+      "pl": "I. Bohater",
+      "lang": "Senior Hero"
+    },
+    {
+      "key": "cpp.badge.name_4",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ancient Hero",
+      "pl": "Starożytny Bohater",
+      "lang": "Ancient Hero"
+    },
+    {
+      "key": "cpp.badge.name_5",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Exalted Hero",
+      "pl": "Wysoki Bohater",
+      "lang": "Exalted Hero"
+    },
+    {
+      "key": "cpp.badge.name_6",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Tibia Loyalist (Grade 1)",
+      "pl": "Tibia Loyalist (I. 1)",
+      "lang": "Tibia Loyalist (Grade 1)"
+    },
+    {
+      "key": "cpp.badge.name_7",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Tibia Loyalist (Grade 2)",
+      "pl": "Tibia Loyalist (I. 2)",
+      "lang": "Tibia Loyalist (Grade 2)"
+    },
+    {
+      "key": "cpp.badge.name_8",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Tibia Loyalist (Grade 3)",
+      "pl": "Tibia Loyalist (I. 3)",
+      "lang": "Tibia Loyalist (Grade 3)"
+    },
+    {
+      "key": "cpp.badge.name_9",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Global Player (Grade 1)",
+      "pl": "Globalny gracz (I. 1)",
+      "lang": "Global Player (Grade 1)"
+    },
+    {
+      "key": "cpp.bed.nobody_sleeping",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Nobody is sleeping there.",
+      "pl": "Nikt tam nie śpi.",
+      "lang": "Nobody is sleeping there."
+    },
+    {
+      "key": "cpp.bed.sleeping",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} is sleeping there.",
+      "pl": "{0} tam śpi.",
+      "lang": "{0} is sleeping there."
+    },
+    {
+      "key": "cpp.bestiary.already_set_charm",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You already have this monster set on another {0} Charm!",
+      "pl": "Ty już masz I. potwór ustaw na aNiether {0} I.!",
+      "lang": "You already have this monster set on another {0} Charm!"
+    },
+    {
+      "key": "cpp.bestiary.charm_category_major",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Major",
+      "pl": "I.",
+      "lang": "Major"
+    },
+    {
+      "key": "cpp.bestiary.charm_category_minor",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Minor",
+      "pl": "Mini",
+      "lang": "Minor"
+    },
+    {
+      "key": "cpp.bestiary.charm_max_level",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Charm at max level.",
+      "pl": "I. w max poziom.",
+      "lang": "Charm at max level."
+    },
+    {
+      "key": "cpp.bestiary.no_charm_slots",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You don't have any charm slots available.",
+      "pl": "Nie masz dowolny I. I. dostępny, osiągalny.",
+      "lang": "You don't have any charm slots available."
+    },
+    {
+      "key": "cpp.bestiary.not_enough_gold",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You don't have enough gold.",
+      "pl": "Nie masz wystarczajądowódca złota.",
+      "lang": "You don't have enough gold."
+    },
+    {
+      "key": "cpp.bestiary.unlocked_details",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You unlocked details for the creature '{0}'",
+      "pl": "Ty otwierać I. dla the stwór '{0}'",
+      "lang": "You unlocked details for the creature '{0}'"
+    },
+    {
+      "key": "cpp.cancel.cannot_move_house",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You cannot move this item out of this house.",
+      "pl": "Nie lekarz rejonowyżesz I. I. przedmiot out z I. dom.",
+      "lang": "You cannot move this item out of this house."
+    },
+    {
+      "key": "cpp.cancel.cannot_stow_containers",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You cannot stow containers.",
+      "pl": "Nie lekarz rejonowyżesz stow away I..",
+      "lang": "You cannot stow containers."
+    },
+    {
+      "key": "cpp.cancel.cannot_stow_here",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "This item cannot be stowed here.",
+      "pl": "I. przedmiot canNiet być stow away tutaj, tu.",
+      "lang": "This item cannot be stowed here."
+    },
+    {
+      "key": "cpp.cancel.construct_inside_house",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You may construct this only inside a house.",
+      "pl": "Ty a. móc construct I. tylko inside jeden dom.",
+      "lang": "You may construct this only inside a house."
+    },
+    {
+      "key": "cpp.cancel.hold_container_loot",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You must be holding the container to set it as a loot container.",
+      "pl": "Ty musi być I. the I. do ustaw to as jeden I. I..",
+      "lang": "You must be holding the container to set it as a loot container."
+    },
+    {
+      "key": "cpp.cancel.max_beds",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You reached the maximum beds in this house",
+      "pl": "Ty reached the I. I. w I. dom",
+      "lang": "You reached the maximum beds in this house"
     }
   ],
   "length_ratio_issues": [
@@ -3978,8 +3978,8 @@
   ],
   "auto_fix": {
     "attempted": 80,
-    "applied": 57,
-    "skipped": 23,
+    "applied": 54,
+    "skipped": 26,
     "errors": 0
   }
 }

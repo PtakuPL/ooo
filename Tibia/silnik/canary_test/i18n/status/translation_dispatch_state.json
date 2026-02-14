@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-02-14T10:56:21.922807Z",
-  "cycle_counter": 509,
-  "last_target_key": "es:cpp.json",
-  "last_pending_total": 11,
+  "timestamp": "2026-02-14T11:06:00.679006Z",
+  "cycle_counter": 511,
+  "last_target_key": "pl:items.json",
+  "last_pending_total": 8739,
   "last_tier": 1,
-  "last_cat_priority": 9,
+  "last_cat_priority": 0,
   "candidates_count": 37,
-  "active_candidates_count": 32,
-  "skipped_backoff": 5,
+  "active_candidates_count": 31,
+  "skipped_backoff": 6,
   "skipped_guard_fail": 0,
   "guard_fail_blacklist": {},
   "tier_config": {
@@ -128,7 +128,7 @@
     "es:otclient_modules.json": 0,
     "pl:cpp.json": 0,
     "es:questlog.json": 0,
-    "pl:otclient_data.json": 2,
+    "pl:otclient_data.json": 3,
     "es:talkactions.json": 0,
     "pl:startup.json": 0,
     "es:modules.json": 0,
@@ -298,8 +298,8 @@
       "pl"
     ],
     "lang_completion": {
-      "es": 87.39,
-      "pl": 75.31
+      "es": 87.54,
+      "pl": 75.3
     }
   }
 }

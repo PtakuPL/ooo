@@ -1,11 +1,11 @@
 {
   "lang": "fa",
   "script_group": "latin",
-  "total_keys": 52538,
-  "translated": 34731,
-  "identical_to_en": 27640,
+  "total_keys": 53586,
+  "translated": 35779,
+  "identical_to_en": 28370,
   "placeholder_keys": 15652,
-  "coverage_pct": 66.1,
+  "coverage_pct": 66.8,
   "issues_total": 6125,
   "issues_by_type": {
     "V3_empty": 6113,
@@ -20,7 +20,7 @@
     "MEDIUM": 1,
     "LOW": 6113
   },
-  "score": 99.0,
+  "score": 99.1,
   "worst_keys": [
     {
       "key": "scripts.actions_rewards.msg_1",
@@ -145,11 +145,11 @@
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 457,
+    "issues_total": 466,
     "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 57,
+    "length_ratio": 66,
     "auto_fix_applied": 79
   },
-  "validated_at": "2026-02-14T10:47:41.531074Z"
+  "validated_at": "2026-02-14T11:00:22.753599Z"
 }

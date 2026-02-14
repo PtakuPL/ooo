@@ -13330,6 +13330,43 @@ def detect_suspicious(en_text: str, translated_text: str, lang: str, key: str = 
                         "message": f"Tłumaczenie to EN z usuniętymi słowami: '{tr[:50]}' (EN: '{en[:50]}')",
                     })
 
+    # S19: broken_diacritics_insertion — PT "unkNãown", "sNãowman", "miNãotaur"
+    # Wykrywa wstawienie Nã/Nõ w środek angielskiego słowa zamiast tłumaczenia
+    if tr != en and not tr.startswith("[") and tr_len > 3:
+        import re as _re
+        if _re.search(r'[a-z]N[ãõ][a-z]', tr):
+            issues.append({
+                "type": "broken_diacritics_insertion",
+                "severity": "HIGH",
+                "message": f"Wstawiono Nã/Nõ w środek EN słowa: '{tr[:50]}' (EN: '{en[:50]}')",
+            })
+
+    # S20: partial_translation_mix — FR/RO "pile de bones", "livre de necromantic rituals"
+    # Wykrywa genuine, gdzie >70% słów pochodzi z EN (częściowe tłumaczenie word-by-word)
+    if tr != en and not tr.startswith("[") and tr_len > 10:
+        en_words_s20 = en.lower().split()
+        tr_words_s20 = tr.lower().split()
+        if len(en_words_s20) >= 3 and len(tr_words_s20) >= 3:
+            common_s20 = sum(1 for w in tr_words_s20 if w in en_words_s20)
+            ratio_s20 = common_s20 / len(tr_words_s20) if tr_words_s20 else 0
+            if ratio_s20 > 0.7 and common_s20 >= 3:
+                # Wyjątek: nazwy własne (Proper Nouns) — jeśli wszystkie wspólne słowa zaczynają się wielką
+                proper_nouns = sum(1 for w in tr_words_s20 if w in en_words_s20 and w[0].isupper())
+                if proper_nouns < common_s20 * 0.8:
+                    issues.append({
+                        "type": "partial_translation_mix",
+                        "severity": "HIGH",
+                        "message": f"Tłumaczenie to mix EN/lang (>70% EN): '{tr[:50]}' (EN: '{en[:50]}')",
+                    })
+
+    # S21: empty_value — pusta wartość gdy EN ma treść (game-breaking)
+    if tr.strip() == "" and en.strip() != "":
+        issues.append({
+            "type": "empty_value",
+            "severity": "CRITICAL",
+            "message": f"Pusta wartość tłumaczenia (EN: '{en[:50]}')",
+        })
+
     return issues
 
 # ==========================================================================

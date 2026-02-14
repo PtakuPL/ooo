@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-14T10:56:21.916009Z",
+  "timestamp": "2026-02-14T11:06:00.668110Z",
   "built_cycle": 1,
   "cache_ttl_cycles": 5,
   "targets": [
@@ -133,9 +133,9 @@
     {
       "lang": "pl",
       "json_file": "otclient_data.json",
-      "pending_total": 1,
-      "todo": 1,
-      "simple_todo": 1,
+      "pending_total": 3,
+      "todo": 3,
+      "simple_todo": 3,
       "missing_in_lang": 0
     },
     {
@@ -261,9 +261,9 @@
     {
       "lang": "es",
       "json_file": "npc.json",
-      "pending_total": 2422,
-      "todo": 2422,
-      "simple_todo": 167,
+      "pending_total": 2306,
+      "todo": 2306,
+      "simple_todo": 123,
       "missing_in_lang": 0
     },
     {

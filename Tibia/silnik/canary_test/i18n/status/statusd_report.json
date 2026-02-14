@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-02-14T10:56:35.820401Z",
+  "timestamp": "2026-02-14T11:06:43.757826Z",
   "version": "statusd-mvp-1.0",
   "worker": {
-    "pid": 2025282,
-    "heartbeat_at": "2026-02-14T10:50:46Z",
-    "heartbeat_age_s": 349.8,
+    "pid": 2034035,
+    "heartbeat_at": "2026-02-14T11:06:01Z",
+    "heartbeat_age_s": 42.8,
     "cycle": 1,
     "mode": "continuous",
     "category": "?",
@@ -13,27 +13,18 @@
   "guardian": {
     "state": "degraded",
     "throughput_per_h": 0.0,
-    "guard_fail_rate_pct": 0.0,
+    "guard_fail_rate_pct": 41.7,
     "issues": [
-      "heartbeat_stale_warning (339s > 240s)"
+      "heartbeat_aging (163s)",
+      "high_guard_fail_rate (41.7% > 15%)"
     ]
   },
   "translation_kpi": {
     "window_entries": 200,
-    "total_translated": 12005,
-    "total_guard_fail": 1199,
-    "guard_fail_rate_pct": 9.08,
+    "total_translated": 11890,
+    "total_guard_fail": 1166,
+    "guard_fail_rate_pct": 8.93,
     "per_lang": {
-      "vi": {
-        "translated": 160,
-        "guard_fail": 0,
-        "cycles": 2
-      },
-      "zh": {
-        "translated": 122,
-        "guard_fail": 118,
-        "cycles": 3
-      },
       "zh_TW": {
         "translated": 98,
         "guard_fail": 142,
@@ -41,13 +32,13 @@
       },
       "pl": {
         "translated": 787,
-        "guard_fail": 472,
-        "cycles": 35
+        "guard_fail": 475,
+        "cycles": 36
       },
       "es": {
-        "translated": 926,
-        "guard_fail": 357,
-        "cycles": 31
+        "translated": 933,
+        "guard_fail": 359,
+        "cycles": 32
       },
       "de": {
         "translated": 480,
@@ -278,20 +269,30 @@
         "translated": 160,
         "guard_fail": 0,
         "cycles": 2
+      },
+      "vi": {
+        "translated": 80,
+        "guard_fail": 0,
+        "cycles": 1
+      },
+      "zh": {
+        "translated": 80,
+        "guard_fail": 80,
+        "cycles": 2
       }
     }
   },
   "adaptive_batch": {
     "batch_size": 5,
-    "guard_fail_rate": 54.1,
-    "reason": "decrease_high_fail_rate=54.1%"
+    "guard_fail_rate": 30.19,
+    "reason": "decrease_high_fail_rate=30.2%"
   },
   "dispatch": {
-    "last_target": "es:cpp.json",
-    "cycle_counter": 509,
-    "pending_total": 11,
-    "candidates": 32,
-    "skipped_backoff": 5,
+    "last_target": "pl:items.json",
+    "cycle_counter": 511,
+    "pending_total": 8739,
+    "candidates": 31,
+    "skipped_backoff": 6,
     "skipped_guard_fail": 0,
     "priority_gate": {
       "enabled": true,
@@ -306,271 +307,271 @@
         "pl"
       ],
       "lang_completion": {
-        "es": 87.39,
-        "pl": 75.31
+        "es": 87.54,
+        "pl": 75.3
       }
     }
   },
   "coverage": {
     "ar": {
-      "coverage_pct": 24.01,
+      "coverage_pct": 24.33,
       "missing": 2150,
-      "en_copy": 29905
+      "en_copy": 34128
     },
     "az": {
-      "coverage_pct": 17.38,
+      "coverage_pct": 17.99,
       "missing": 2155,
-      "en_copy": 23543
+      "en_copy": 29585
     },
     "bg": {
-      "coverage_pct": 17.4,
+      "coverage_pct": 18.05,
       "missing": 174,
-      "en_copy": 25429
+      "en_copy": 31498
     },
     "bn": {
-      "coverage_pct": 23.64,
+      "coverage_pct": 24.2,
       "missing": 2155,
-      "en_copy": 27982
+      "en_copy": 34095
     },
     "bs": {
-      "coverage_pct": 16.7,
+      "coverage_pct": 17.27,
       "missing": 2155,
-      "en_copy": 24149
+      "en_copy": 30259
     },
     "cs": {
-      "coverage_pct": 17.07,
+      "coverage_pct": 17.66,
       "missing": 2155,
-      "en_copy": 23798
+      "en_copy": 29887
     },
     "da": {
-      "coverage_pct": 16.87,
+      "coverage_pct": 17.48,
       "missing": 2155,
-      "en_copy": 23826
+      "en_copy": 29939
     },
     "de": {
-      "coverage_pct": 17.11,
+      "coverage_pct": 17.39,
       "missing": 174,
-      "en_copy": 17607
+      "en_copy": 21854
     },
     "el": {
-      "coverage_pct": 16.95,
+      "coverage_pct": 17.53,
       "missing": 2155,
-      "en_copy": 23858
+      "en_copy": 29955
     },
     "es": {
-      "coverage_pct": 87.39,
+      "coverage_pct": 87.6,
       "missing": 232,
-      "en_copy": 10180
+      "en_copy": 11367
     },
     "et": {
-      "coverage_pct": 17.07,
+      "coverage_pct": 17.68,
       "missing": 2155,
-      "en_copy": 23720
+      "en_copy": 29785
     },
     "fa": {
-      "coverage_pct": 23.47,
+      "coverage_pct": 24.11,
       "missing": 2155,
-      "en_copy": 28379
+      "en_copy": 34413
     },
     "fi": {
-      "coverage_pct": 16.97,
+      "coverage_pct": 17.56,
       "missing": 2155,
-      "en_copy": 23836
+      "en_copy": 29922
     },
     "fr": {
-      "coverage_pct": 54.69,
+      "coverage_pct": 55.33,
       "missing": 174,
-      "en_copy": 23812
+      "en_copy": 29834
     },
     "he": {
-      "coverage_pct": 22.8,
+      "coverage_pct": 23.44,
       "missing": 2155,
-      "en_copy": 28501
+      "en_copy": 34580
     },
     "hi": {
-      "coverage_pct": 22.93,
+      "coverage_pct": 23.58,
       "missing": 2155,
-      "en_copy": 28453
+      "en_copy": 34486
     },
     "hr": {
-      "coverage_pct": 17.03,
+      "coverage_pct": 17.65,
       "missing": 2155,
-      "en_copy": 23752
+      "en_copy": 29810
     },
     "hu": {
-      "coverage_pct": 16.81,
+      "coverage_pct": 17.41,
       "missing": 2155,
-      "en_copy": 23769
+      "en_copy": 29845
     },
     "hy": {
-      "coverage_pct": 22.76,
+      "coverage_pct": 23.36,
       "missing": 2155,
-      "en_copy": 28677
+      "en_copy": 34756
     },
     "id": {
-      "coverage_pct": 22.87,
+      "coverage_pct": 23.51,
       "missing": 2155,
-      "en_copy": 28535
+      "en_copy": 34567
     },
     "it": {
-      "coverage_pct": 17.92,
+      "coverage_pct": 18.53,
       "missing": 2155,
-      "en_copy": 23542
+      "en_copy": 29565
     },
     "ja": {
-      "coverage_pct": 22.64,
+      "coverage_pct": 23.28,
       "missing": 2155,
-      "en_copy": 28580
+      "en_copy": 34643
     },
     "ka": {
-      "coverage_pct": 22.63,
+      "coverage_pct": 23.25,
       "missing": 2155,
-      "en_copy": 28630
+      "en_copy": 34691
     },
     "kk": {
-      "coverage_pct": 16.88,
+      "coverage_pct": 17.51,
       "missing": 2155,
-      "en_copy": 23869
+      "en_copy": 29923
     },
     "ko": {
-      "coverage_pct": 22.74,
+      "coverage_pct": 23.39,
       "missing": 2155,
-      "en_copy": 28606
+      "en_copy": 34639
     },
     "lt": {
-      "coverage_pct": 16.75,
+      "coverage_pct": 17.38,
       "missing": 2155,
-      "en_copy": 23786
+      "en_copy": 29841
     },
     "lv": {
-      "coverage_pct": 16.73,
+      "coverage_pct": 17.36,
       "missing": 2155,
-      "en_copy": 23803
+      "en_copy": 29860
     },
     "mk": {
-      "coverage_pct": 17.08,
+      "coverage_pct": 17.73,
       "missing": 2155,
-      "en_copy": 23717
+      "en_copy": 29751
     },
     "ml": {
-      "coverage_pct": 22.62,
+      "coverage_pct": 23.27,
       "missing": 2155,
-      "en_copy": 28599
+      "en_copy": 34633
     },
     "ms": {
-      "coverage_pct": 22.67,
+      "coverage_pct": 23.24,
       "missing": 2155,
-      "en_copy": 28740
+      "en_copy": 34884
     },
     "nl": {
-      "coverage_pct": 14.4,
+      "coverage_pct": 14.98,
       "missing": 174,
-      "en_copy": 17854
+      "en_copy": 23998
     },
     "no": {
-      "coverage_pct": 16.76,
+      "coverage_pct": 17.33,
       "missing": 2155,
-      "en_copy": 24018
+      "en_copy": 30129
     },
     "pl": {
-      "coverage_pct": 75.31,
+      "coverage_pct": 75.3,
       "missing": 2083,
-      "en_copy": 2839
+      "en_copy": 2841
     },
     "pt": {
-      "coverage_pct": 19.98,
+      "coverage_pct": 19.59,
       "missing": 2155,
-      "en_copy": 23636
+      "en_copy": 29652
     },
     "ro": {
-      "coverage_pct": 25.49,
+      "coverage_pct": 26.08,
       "missing": 174,
-      "en_copy": 17945
+      "en_copy": 24043
     },
     "ru": {
-      "coverage_pct": 55.37,
+      "coverage_pct": 55.99,
       "missing": 174,
-      "en_copy": 31695
+      "en_copy": 37715
     },
     "sk": {
-      "coverage_pct": 16.57,
+      "coverage_pct": 17.19,
       "missing": 2155,
-      "en_copy": 23974
+      "en_copy": 30039
     },
     "sl": {
-      "coverage_pct": 16.41,
+      "coverage_pct": 17.04,
       "missing": 2155,
-      "en_copy": 24029
+      "en_copy": 30117
     },
     "sq": {
-      "coverage_pct": 16.61,
+      "coverage_pct": 17.25,
       "missing": 2155,
-      "en_copy": 23913
+      "en_copy": 29958
     },
     "sr": {
-      "coverage_pct": 16.24,
+      "coverage_pct": 16.87,
       "missing": 2155,
-      "en_copy": 24017
+      "en_copy": 30102
     },
     "sv": {
-      "coverage_pct": 16.54,
+      "coverage_pct": 17.17,
       "missing": 2155,
-      "en_copy": 24199
+      "en_copy": 30289
     },
     "sw": {
-      "coverage_pct": 22.37,
+      "coverage_pct": 23.0,
       "missing": 2155,
-      "en_copy": 28866
+      "en_copy": 34913
     },
     "ta": {
-      "coverage_pct": 22.09,
+      "coverage_pct": 22.74,
       "missing": 2155,
-      "en_copy": 28882
+      "en_copy": 34946
     },
     "te": {
-      "coverage_pct": 22.3,
+      "coverage_pct": 22.95,
       "missing": 2155,
-      "en_copy": 28913
+      "en_copy": 34946
     },
     "th": {
-      "coverage_pct": 22.28,
+      "coverage_pct": 22.85,
       "missing": 2155,
-      "en_copy": 28933
+      "en_copy": 35046
     },
     "tl": {
-      "coverage_pct": 22.14,
+      "coverage_pct": 22.71,
       "missing": 2155,
-      "en_copy": 29090
+      "en_copy": 35203
     },
     "tr": {
-      "coverage_pct": 18.55,
+      "coverage_pct": 19.28,
       "missing": 2155,
-      "en_copy": 23421
+      "en_copy": 29638
     },
     "uk": {
-      "coverage_pct": 16.32,
+      "coverage_pct": 16.89,
       "missing": 2155,
-      "en_copy": 24099
+      "en_copy": 30243
     },
     "uz": {
-      "coverage_pct": 16.46,
+      "coverage_pct": 17.03,
       "missing": 2155,
-      "en_copy": 24067
+      "en_copy": 30180
     },
     "vi": {
-      "coverage_pct": 22.07,
+      "coverage_pct": 22.65,
       "missing": 2155,
-      "en_copy": 29042
+      "en_copy": 35186
     },
     "zh": {
-      "coverage_pct": 21.59,
+      "coverage_pct": 22.16,
       "missing": 2155,
-      "en_copy": 29313
+      "en_copy": 35461
     },
     "zh_tw": {
-      "coverage_pct": 21.87,
+      "coverage_pct": 22.44,
       "missing": 2155,
-      "en_copy": 29067
+      "en_copy": 35212
     }
   },
   "migration": {
@@ -597,7 +598,7 @@
     "npc_total": 1027,
     "npc_migrated": 699,
     "npc_needs_migration": 0,
-    "statusd_live_snapshot_at_utc": "2026-02-14T10:56:35.902409Z",
+    "statusd_live_snapshot_at_utc": "2026-02-14T11:06:43.843515Z",
     "statusd_live_snapshot_source": "i18n_file_status+en_json"
   },
   "metrics_drift": {
@@ -636,256 +637,256 @@
     "per_lang": {
       "ar": {
         "server_keys": 49731,
-        "server_translated": 12852,
-        "server_pct": 25.84,
+        "server_translated": 13026,
+        "server_pct": 26.19,
         "client_keys": 3855,
         "client_translated": 13,
         "client_pct": 0.34
       },
       "az": {
         "server_keys": 49731,
-        "server_translated": 9310,
-        "server_pct": 18.72,
+        "server_translated": 9640,
+        "server_pct": 19.38,
         "client_keys": 3855,
         "client_translated": 2,
         "client_pct": 0.05
       },
       "bg": {
         "server_keys": 49731,
-        "server_translated": 9324,
-        "server_pct": 18.75,
+        "server_translated": 9670,
+        "server_pct": 19.44,
         "client_keys": 3855,
         "client_translated": 2,
         "client_pct": 0.05
       },
       "bn": {
         "server_keys": 49731,
-        "server_translated": 12653,
-        "server_pct": 25.44,
+        "server_translated": 12957,
+        "server_pct": 26.05,
         "client_keys": 3855,
         "client_translated": 13,
         "client_pct": 0.34
       },
       "bs": {
         "server_keys": 49731,
-        "server_translated": 8949,
-        "server_pct": 17.99,
+        "server_translated": 9253,
+        "server_pct": 18.61,
         "client_keys": 3855,
         "client_translated": 2,
         "client_pct": 0.05
       },
       "cs": {
         "server_keys": 49731,
-        "server_translated": 9147,
-        "server_pct": 18.39,
+        "server_translated": 9463,
+        "server_pct": 19.03,
         "client_keys": 3855,
         "client_translated": 2,
         "client_pct": 0.05
       },
       "da": {
         "server_keys": 49731,
-        "server_translated": 9040,
-        "server_pct": 18.18,
+        "server_translated": 9364,
+        "server_pct": 18.83,
         "client_keys": 3855,
         "client_translated": 2,
         "client_pct": 0.05
       },
       "de": {
         "server_keys": 49731,
-        "server_translated": 9050,
-        "server_pct": 18.2,
+        "server_translated": 9198,
+        "server_pct": 18.5,
         "client_keys": 3855,
         "client_translated": 118,
         "client_pct": 3.06
       },
       "el": {
         "server_keys": 49731,
-        "server_translated": 9082,
-        "server_pct": 18.26,
+        "server_translated": 9394,
+        "server_pct": 18.89,
         "client_keys": 3855,
         "client_translated": 2,
         "client_pct": 0.05
       },
       "es": {
         "server_keys": 49731,
-        "server_translated": 44213,
-        "server_pct": 88.9,
+        "server_translated": 44328,
+        "server_pct": 89.14,
         "client_keys": 3855,
         "client_translated": 2615,
         "client_pct": 67.83
       },
       "et": {
         "server_keys": 49731,
-        "server_translated": 9143,
-        "server_pct": 18.38,
+        "server_translated": 9470,
+        "server_pct": 19.04,
         "client_keys": 3855,
         "client_translated": 2,
         "client_pct": 0.05
       },
       "fa": {
         "server_keys": 49731,
-        "server_translated": 12561,
-        "server_pct": 25.26,
+        "server_translated": 12909,
+        "server_pct": 25.96,
         "client_keys": 3855,
         "client_translated": 13,
         "client_pct": 0.34
       },
       "fi": {
         "server_keys": 49731,
-        "server_translated": 9089,
-        "server_pct": 18.28,
+        "server_translated": 9407,
+        "server_pct": 18.92,
         "client_keys": 3855,
         "client_translated": 2,
         "client_pct": 0.05
       },
       "fr": {
         "server_keys": 49731,
-        "server_translated": 26082,
-        "server_pct": 52.45,
+        "server_translated": 26426,
+        "server_pct": 53.14,
         "client_keys": 3855,
         "client_translated": 3225,
         "client_pct": 83.66
       },
       "he": {
         "server_keys": 49731,
-        "server_translated": 12202,
-        "server_pct": 24.54,
+        "server_translated": 12545,
+        "server_pct": 25.23,
         "client_keys": 3855,
         "client_translated": 13,
         "client_pct": 0.34
       },
       "hi": {
         "server_keys": 49731,
-        "server_translated": 12276,
-        "server_pct": 24.68,
+        "server_translated": 12623,
+        "server_pct": 25.38,
         "client_keys": 3855,
         "client_translated": 13,
         "client_pct": 0.34
       },
       "hr": {
         "server_keys": 49731,
-        "server_translated": 9123,
-        "server_pct": 18.34,
+        "server_translated": 9456,
+        "server_pct": 19.01,
         "client_keys": 3855,
         "client_translated": 2,
         "client_pct": 0.05
       },
       "hu": {
         "server_keys": 49731,
-        "server_translated": 9004,
-        "server_pct": 18.11,
+        "server_translated": 9327,
+        "server_pct": 18.75,
         "client_keys": 3855,
         "client_translated": 2,
         "client_pct": 0.05
       },
       "hy": {
         "server_keys": 49731,
-        "server_translated": 12184,
-        "server_pct": 24.5,
+        "server_translated": 12507,
+        "server_pct": 25.15,
         "client_keys": 3855,
         "client_translated": 13,
         "client_pct": 0.34
       },
       "id": {
         "server_keys": 49731,
-        "server_translated": 12243,
-        "server_pct": 24.62,
+        "server_translated": 12586,
+        "server_pct": 25.31,
         "client_keys": 3855,
         "client_translated": 13,
         "client_pct": 0.34
       },
       "it": {
         "server_keys": 49731,
-        "server_translated": 9600,
-        "server_pct": 19.3,
+        "server_translated": 9928,
+        "server_pct": 19.96,
         "client_keys": 3855,
         "client_translated": 2,
         "client_pct": 0.05
       },
       "ja": {
         "server_keys": 49731,
-        "server_translated": 12118,
-        "server_pct": 24.37,
+        "server_translated": 12464,
+        "server_pct": 25.06,
         "client_keys": 3855,
         "client_translated": 13,
         "client_pct": 0.34
       },
       "ka": {
         "server_keys": 49731,
-        "server_translated": 12112,
-        "server_pct": 24.36,
+        "server_translated": 12445,
+        "server_pct": 25.02,
         "client_keys": 3855,
         "client_translated": 13,
         "client_pct": 0.34
       },
       "kk": {
         "server_keys": 49731,
-        "server_translated": 9044,
-        "server_pct": 18.19,
+        "server_translated": 9382,
+        "server_pct": 18.87,
         "client_keys": 3855,
         "client_translated": 2,
         "client_pct": 0.05
       },
       "ko": {
         "server_keys": 49731,
-        "server_translated": 12173,
-        "server_pct": 24.48,
+        "server_translated": 12521,
+        "server_pct": 25.18,
         "client_keys": 3855,
         "client_translated": 13,
         "client_pct": 0.34
       },
       "lt": {
         "server_keys": 49731,
-        "server_translated": 8973,
-        "server_pct": 18.04,
+        "server_translated": 9309,
+        "server_pct": 18.72,
         "client_keys": 3855,
         "client_translated": 2,
         "client_pct": 0.05
       },
       "lv": {
         "server_keys": 49731,
-        "server_translated": 8964,
-        "server_pct": 18.02,
+        "server_translated": 9301,
+        "server_pct": 18.7,
         "client_keys": 3855,
         "client_translated": 2,
         "client_pct": 0.05
       },
       "mk": {
         "server_keys": 49731,
-        "server_translated": 9151,
-        "server_pct": 18.4,
+        "server_translated": 9499,
+        "server_pct": 19.1,
         "client_keys": 3855,
         "client_translated": 2,
         "client_pct": 0.05
       },
       "ml": {
         "server_keys": 49731,
-        "server_translated": 12108,
-        "server_pct": 24.35,
+        "server_translated": 12456,
+        "server_pct": 25.05,
         "client_keys": 3855,
         "client_translated": 13,
         "client_pct": 0.34
       },
       "ms": {
         "server_keys": 49731,
-        "server_translated": 12133,
-        "server_pct": 24.4,
+        "server_translated": 12440,
+        "server_pct": 25.01,
         "client_keys": 3855,
         "client_translated": 13,
         "client_pct": 0.34
       },
       "nl": {
         "server_keys": 49731,
-        "server_translated": 7717,
-        "server_pct": 15.52,
+        "server_translated": 8024,
+        "server_pct": 16.13,
         "client_keys": 3855,
         "client_translated": 2,
         "client_pct": 0.05
       },
       "no": {
         "server_keys": 49731,
-        "server_translated": 8979,
-        "server_pct": 18.06,
+        "server_translated": 9282,
+        "server_pct": 18.66,
         "client_keys": 3855,
         "client_translated": 2,
         "client_pct": 0.05
@@ -895,157 +896,157 @@
         "server_translated": 37604,
         "server_pct": 75.61,
         "client_keys": 3855,
-        "client_translated": 2750,
-        "client_pct": 71.34
+        "client_translated": 2748,
+        "client_pct": 71.28
       },
       "pt": {
         "server_keys": 49731,
-        "server_translated": 10459,
-        "server_pct": 21.03,
+        "server_translated": 10267,
+        "server_pct": 20.65,
         "client_keys": 3855,
-        "client_translated": 248,
-        "client_pct": 6.43
+        "client_translated": 231,
+        "client_pct": 5.99
       },
       "ro": {
         "server_keys": 49731,
-        "server_translated": 13656,
-        "server_pct": 27.46,
+        "server_translated": 13973,
+        "server_pct": 28.1,
         "client_keys": 3855,
         "client_translated": 2,
         "client_pct": 0.05
       },
       "ru": {
         "server_keys": 49731,
-        "server_translated": 26217,
-        "server_pct": 52.72,
+        "server_translated": 26545,
+        "server_pct": 53.38,
         "client_keys": 3855,
         "client_translated": 3456,
         "client_pct": 89.65
       },
       "sk": {
         "server_keys": 49731,
-        "server_translated": 8878,
-        "server_pct": 17.85,
+        "server_translated": 9209,
+        "server_pct": 18.52,
         "client_keys": 3855,
         "client_translated": 2,
         "client_pct": 0.05
       },
       "sl": {
         "server_keys": 49731,
-        "server_translated": 8791,
-        "server_pct": 17.68,
+        "server_translated": 9129,
+        "server_pct": 18.36,
         "client_keys": 3855,
         "client_translated": 2,
         "client_pct": 0.05
       },
       "sq": {
         "server_keys": 49731,
-        "server_translated": 8897,
-        "server_pct": 17.89,
+        "server_translated": 9241,
+        "server_pct": 18.58,
         "client_keys": 3855,
         "client_translated": 2,
         "client_pct": 0.05
       },
       "sr": {
         "server_keys": 49731,
-        "server_translated": 8699,
-        "server_pct": 17.49,
+        "server_translated": 9039,
+        "server_pct": 18.18,
         "client_keys": 3855,
         "client_translated": 2,
         "client_pct": 0.05
       },
       "sv": {
         "server_keys": 49731,
-        "server_translated": 8860,
-        "server_pct": 17.82,
+        "server_translated": 9198,
+        "server_pct": 18.5,
         "client_keys": 3855,
         "client_translated": 2,
         "client_pct": 0.05
       },
       "sw": {
         "server_keys": 49731,
-        "server_translated": 11972,
-        "server_pct": 24.07,
+        "server_translated": 12311,
+        "server_pct": 24.76,
         "client_keys": 3855,
         "client_translated": 13,
         "client_pct": 0.34
       },
       "ta": {
         "server_keys": 49731,
-        "server_translated": 11823,
-        "server_pct": 23.77,
+        "server_translated": 12173,
+        "server_pct": 24.48,
         "client_keys": 3855,
         "client_translated": 13,
         "client_pct": 0.34
       },
       "te": {
         "server_keys": 49731,
-        "server_translated": 11938,
-        "server_pct": 24.01,
+        "server_translated": 12287,
+        "server_pct": 24.71,
         "client_keys": 3855,
         "client_translated": 13,
         "client_pct": 0.34
       },
       "th": {
         "server_keys": 49731,
-        "server_translated": 11928,
-        "server_pct": 23.99,
+        "server_translated": 12232,
+        "server_pct": 24.6,
         "client_keys": 3855,
         "client_translated": 13,
         "client_pct": 0.34
       },
       "tl": {
         "server_keys": 49731,
-        "server_translated": 11851,
-        "server_pct": 23.83,
+        "server_translated": 12155,
+        "server_pct": 24.44,
         "client_keys": 3855,
         "client_translated": 13,
         "client_pct": 0.34
       },
       "tr": {
         "server_keys": 49731,
-        "server_translated": 9787,
-        "server_pct": 19.68,
+        "server_translated": 10179,
+        "server_pct": 20.47,
         "client_keys": 3855,
         "client_translated": 154,
         "client_pct": 3.99
       },
       "uk": {
         "server_keys": 49731,
-        "server_translated": 8742,
-        "server_pct": 17.58,
+        "server_translated": 9049,
+        "server_pct": 18.2,
         "client_keys": 3855,
         "client_translated": 2,
         "client_pct": 0.05
       },
       "uz": {
         "server_keys": 49731,
-        "server_translated": 8818,
-        "server_pct": 17.73,
+        "server_translated": 9122,
+        "server_pct": 18.34,
         "client_keys": 3855,
         "client_translated": 2,
         "client_pct": 0.05
       },
       "vi": {
         "server_keys": 49731,
-        "server_translated": 11815,
-        "server_pct": 23.76,
+        "server_translated": 12122,
+        "server_pct": 24.38,
         "client_keys": 3855,
         "client_translated": 13,
         "client_pct": 0.34
       },
       "zh": {
         "server_keys": 49731,
-        "server_translated": 11557,
-        "server_pct": 23.24,
+        "server_translated": 11864,
+        "server_pct": 23.86,
         "client_keys": 3855,
         "client_translated": 13,
         "client_pct": 0.34
       },
       "zh_tw": {
         "server_keys": 49731,
-        "server_translated": 11708,
-        "server_pct": 23.54,
+        "server_translated": 12013,
+        "server_pct": 24.16,
         "client_keys": 3855,
         "client_translated": 13,
         "client_pct": 0.34
@@ -1054,48 +1055,48 @@
   },
   "repair_queue": {
     "available": true,
-    "latest_timestamp": "2026-02-14T10:47:46.113815Z",
-    "entries_total": 1244,
+    "latest_timestamp": "2026-02-14T11:00:49.921204Z",
+    "entries_total": 1243,
     "entries_by_lang": {
-      "es": 4067,
-      "pl": 479,
-      "cs": 15443,
-      "de": 10364,
-      "fr": 10072,
-      "hu": 15530,
-      "it": 15241,
-      "nl": 10817,
-      "pt": 15256,
-      "ru": 17358,
-      "sk": 15627,
+      "es": 4033,
+      "pl": 481,
+      "cs": 15430,
+      "de": 10322,
+      "fr": 10014,
+      "hu": 15507,
+      "it": 15200,
+      "nl": 10778,
+      "pt": 15216,
+      "ru": 17317,
+      "sk": 15600,
       "tr": 15069,
-      "ar": 18379,
-      "az": 15382,
-      "bg": 17279,
-      "bn": 16771,
-      "bs": 15641,
-      "da": 15520,
-      "el": 15507,
-      "et": 15449,
-      "fa": 16487,
-      "fi": 15518,
-      "he": 17147,
-      "hi": 17112,
-      "hr": 15500,
-      "hy": 17187,
-      "id": 17107,
-      "ja": 17161,
-      "ka": 17155,
+      "ar": 18308,
+      "az": 15352,
+      "bg": 17236,
+      "bn": 16704,
+      "bs": 15640,
+      "da": 15503,
+      "el": 15499,
+      "et": 15425,
+      "fa": 16755,
+      "fi": 15500,
+      "he": 17112,
+      "hi": 17071,
+      "hr": 15469,
+      "hy": 17162,
+      "id": 17067,
+      "ja": 17120,
+      "ka": 17127,
       "kk": 15542,
-      "ko": 17196,
-      "lt": 15570,
-      "lv": 15577,
-      "mk": 15055,
-      "ml": 17200,
-      "ms": 16753,
-      "no": 15634,
-      "ro": 10829,
-      "sl": 15683,
+      "ko": 17151,
+      "lt": 15533,
+      "lv": 15542,
+      "mk": 15363,
+      "ml": 17156,
+      "ms": 17106,
+      "no": 15609,
+      "ro": 10819,
+      "sl": 15652,
       "sq": 15608,
       "sr": 15694,
       "sv": 15710,
@@ -1114,10 +1115,10 @@
       "lang": "es",
       "json_file": "npc.json",
       "key": "es:npc.json",
-      "identical_to_en": 1156
+      "identical_to_en": 1122
     },
-    "history_samples_total": 82,
-    "history_latest_timestamp": "2026-02-14T10:47:46.113815Z",
+    "history_samples_total": 84,
+    "history_latest_timestamp": "2026-02-14T11:00:49.921204Z",
     "stagnation": {
       "window_hours": 6.0,
       "min_samples": 6,
@@ -1126,15 +1127,15 @@
       "reason": "window_too_short",
       "top_key": "es:npc.json",
       "sample_count": 33,
-      "span_hours": 5.988,
+      "span_hours": 5.907,
       "top_locked_in_window": true,
-      "baseline_count": 2498,
-      "latest_count": 1156,
-      "min_count_seen": 1156,
-      "best_drop": 1342,
-      "latest_drop": 1342,
-      "window_start": "2026-02-14T04:48:29.043119Z",
-      "window_end": "2026-02-14T10:47:46.113815Z"
+      "baseline_count": 2461,
+      "latest_count": 1122,
+      "min_count_seen": 1122,
+      "best_drop": 1339,
+      "latest_drop": 1339,
+      "window_start": "2026-02-14T05:06:23.789663Z",
+      "window_end": "2026-02-14T11:00:49.921204Z"
     }
   },
   "quality_watch": {
@@ -1143,17 +1144,17 @@
     "critical_count": 240,
     "rate_warn_pct": 8.0,
     "rate_crit_pct": 20.0,
-    "entries": 195,
-    "translated_total": 13310,
-    "suspicious_high_total": 1999,
-    "suspicious_high_rate_pct": 15.019,
+    "entries": 188,
+    "translated_total": 12687,
+    "suspicious_high_total": 1992,
+    "suspicious_high_rate_pct": 15.701,
     "status": "spike",
     "severity": "critical",
     "worst_severity": "critical",
     "top_langs": [
       {
         "lang": "es",
-        "suspicious_high": 482
+        "suspicious_high": 485
       },
       {
         "lang": "pl",
@@ -1161,11 +1162,11 @@
       },
       {
         "lang": "bg",
-        "suspicious_high": 107
+        "suspicious_high": 105
       },
       {
         "lang": "el",
-        "suspicious_high": 98
+        "suspicious_high": 96
       },
       {
         "lang": "ru",
@@ -1176,18 +1177,18 @@
         "suspicious_high": 44
       },
       {
-        "lang": "bn",
-        "suspicious_high": 41
+        "lang": "ar",
+        "suspicious_high": 38
       },
       {
-        "lang": "ar",
+        "lang": "bn",
         "suspicious_high": 38
       }
     ],
     "top_categories": [
       {
         "category": "npc.json",
-        "suspicious_high": 922
+        "suspicious_high": 925
       },
       {
         "category": "monsters.json",
@@ -1218,20 +1219,20 @@
         "suspicious_high": 46
       },
       {
-        "category": "items.json",
-        "suspicious_high": 28
-      },
-      {
         "category": "quests.json",
         "suspicious_high": 23
+      },
+      {
+        "category": "items.json",
+        "suspicious_high": 18
       }
     ],
     "per_lang": [
       {
         "lang": "es",
-        "suspicious_high": 482,
-        "translated": 3913,
-        "rate_pct": 12.318,
+        "suspicious_high": 485,
+        "translated": 3930,
+        "rate_pct": 12.341,
         "severity": "warning"
       },
       {
@@ -1243,16 +1244,16 @@
       },
       {
         "lang": "bg",
-        "suspicious_high": 107,
-        "translated": 240,
-        "rate_pct": 44.583,
+        "suspicious_high": 105,
+        "translated": 160,
+        "rate_pct": 65.625,
         "severity": "critical"
       },
       {
         "lang": "el",
-        "suspicious_high": 98,
-        "translated": 240,
-        "rate_pct": 40.833,
+        "suspicious_high": 96,
+        "translated": 160,
+        "rate_pct": 60.0,
         "severity": "critical"
       },
       {
@@ -1270,26 +1271,26 @@
         "severity": "warning"
       },
       {
-        "lang": "bn",
-        "suspicious_high": 41,
-        "translated": 240,
-        "rate_pct": 17.083,
-        "severity": "warning"
-      },
-      {
         "lang": "ar",
         "suspicious_high": 38,
         "translated": 159,
         "rate_pct": 23.899,
+        "severity": "critical"
+      },
+      {
+        "lang": "bn",
+        "suspicious_high": 38,
+        "translated": 160,
+        "rate_pct": 23.75,
         "severity": "critical"
       }
     ],
     "per_domain": [
       {
         "domain": "npc.json",
-        "suspicious_high": 922,
-        "translated": 5947,
-        "rate_pct": 15.504,
+        "suspicious_high": 925,
+        "translated": 5964,
+        "rate_pct": 15.51,
         "severity": "warning"
       },
       {
@@ -1342,21 +1343,21 @@
         "severity": "critical"
       },
       {
-        "domain": "items.json",
-        "suspicious_high": 28,
-        "translated": 2757,
-        "rate_pct": 1.016,
-        "severity": "info"
-      },
-      {
         "domain": "quests.json",
         "suspicious_high": 23,
         "translated": 409,
         "rate_pct": 5.623,
         "severity": "info"
+      },
+      {
+        "domain": "items.json",
+        "suspicious_high": 18,
+        "translated": 2117,
+        "rate_pct": 0.85,
+        "severity": "info"
       }
     ],
-    "latest_timestamp": "2026-02-14T10:56:26.591421Z"
+    "latest_timestamp": "2026-02-14T11:03:50.458502Z"
   },
   "priority_gate_watch": {
     "available": true,
@@ -1367,19 +1368,19 @@
       "pl"
     ],
     "pending_key": "es,pl",
-    "cycle_counter": 509,
+    "cycle_counter": 511,
     "start_cycle": 499,
-    "cycle_delta": 10,
+    "cycle_delta": 12,
     "started_at": "2026-02-14T10:00:49.059053Z",
-    "active_minutes": 55.779,
+    "active_minutes": 65.912,
     "baseline_quality_rate_pct": 15.083,
-    "current_quality_rate_pct": 15.019,
+    "current_quality_rate_pct": 15.701,
     "best_quality_rate_pct": 14.186,
-    "quality_drop_pct": 0.064,
+    "quality_drop_pct": -0.618,
     "best_quality_drop_pct": 0.897,
     "lang_completion": {
-      "es": 87.39,
-      "pl": 75.31
+      "es": 87.54,
+      "pl": 75.3
     },
     "detected": false,
     "severity": "ok",
@@ -1393,37 +1394,37 @@
   "recent_transitions": [],
   "recent_errors": [
     {
-      "action": "placeholder=0 command=0 pipe=0",
-      "category": "pl",
+      "action": "skipped_not_placeholder=870",
+      "category": "es",
       "cycle": 1,
       "domain": "AUTO",
-      "error": "guard_fail=1",
-      "file": "startup.json",
+      "error": "strict_skip missing_file=0 missing_key=2",
+      "file": "cpp.json",
       "phase": "AUTO_TRANSLATE",
-      "stage": "AUTO_TRANSLATE_GUARD",
-      "t": "2026-02-14T10:33:05Z"
+      "stage": "AUTO_TRANSLATE_STRICT_SKIP",
+      "t": "2026-02-14T10:57:52Z"
     },
     {
       "action": "review placeholder/en-copy backlog",
-      "category": "pl",
+      "category": "es",
       "cycle": 1,
       "domain": "AUTO",
-      "error": "strict_skipped_done=197 translated=2",
-      "file": "talkactions.json",
+      "error": "strict_skipped_done=870 translated=7",
+      "file": "cpp.json",
       "phase": "AUTO_TRANSLATE",
       "stage": "AUTO_TRANSLATE_NO_PROGRESS",
-      "t": "2026-02-14T10:47:02Z"
+      "t": "2026-02-14T10:57:52Z"
     },
     {
-      "action": "placeholder=0 command=0 pipe=1",
-      "category": "pl",
+      "action": "placeholder=0 command=0 pipe=0",
+      "category": "es",
       "cycle": 1,
       "domain": "AUTO",
-      "error": "guard_fail=4",
-      "file": "talkactions.json",
+      "error": "guard_fail=2",
+      "file": "cpp.json",
       "phase": "AUTO_TRANSLATE",
       "stage": "AUTO_TRANSLATE_GUARD",
-      "t": "2026-02-14T10:47:02Z"
+      "t": "2026-02-14T10:57:52Z"
     }
   ],
   "thresholds_snapshot": {

@@ -3,18 +3,19 @@
   "script_group": "latin",
   "total_keys": 53586,
   "translated": 30912,
-  "identical_to_en": 23932,
+  "identical_to_en": 23869,
   "placeholder_keys": 20519,
   "coverage_pct": 57.7,
-  "issues_total": 6121,
+  "issues_total": 6122,
   "issues_by_type": {
     "V3_empty": 6113,
     "V1_placeholder_mismatch": 7,
+    "V4_artifact": 1,
     "V5_pipe_mismatch": 1
   },
   "issues_by_severity": {
     "CRITICAL": 8,
-    "HIGH": 0,
+    "HIGH": 1,
     "MEDIUM": 0,
     "LOW": 6113
   },
@@ -67,6 +68,12 @@
       "category": "talkactions",
       "type": "V5_pipe_mismatch",
       "severity": "CRITICAL"
+    },
+    {
+      "key": "achievement.317.description",
+      "category": "achievements",
+      "type": "V4_artifact",
+      "severity": "HIGH"
     },
     {
       "key": "npc.a_majestic_warwolf.say_1",
@@ -133,21 +140,15 @@
       "category": "npc",
       "type": "V3_empty",
       "severity": "LOW"
-    },
-    {
-      "key": "npc.a_restless_soul.multi_2",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
     }
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 465,
+    "issues_total": 467,
     "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 65,
-    "auto_fix_applied": 63
+    "length_ratio": 67,
+    "auto_fix_applied": 59
   },
-  "validated_at": "2026-02-14T10:47:18.917173Z"
+  "validated_at": "2026-02-14T11:00:35.855006Z"
 }

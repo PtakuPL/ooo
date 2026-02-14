@@ -4,7 +4,7 @@
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-14T10:45:50.242784Z",
+  "checked_at": "2026-02-14T10:58:43.097729Z",
   "issues_total": 493,
   "issues_by_type": {
     "consistency_in_language": 52,
@@ -1181,195 +1181,6 @@
       "lang": "Leiden"
     },
     {
-      "key": "monster.barkless_fanatic.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a barkless fanatic",
-      "pl": "bezczelny fanatyk",
-      "lang": "a barkless fanatic"
-    },
-    {
-      "key": "monster.barkless_fanatic.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "PAIN PURIFIES! PAIN PURIFIES!",
-      "pl": "I. OCZYSZCZAĆ! I. OCZYSZCZAĆ!",
-      "lang": "PAIN PURIFIES! PAIN PURIFIES!"
-    },
-    {
-      "key": "monster.barkless_fanatic.voice_3",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "PROVE YOUR WORTH, BLEED!",
-      "pl": "UDOWADNIAĆ, WYKAZYWAĆ TWÓJ I., KRWAWIĆ!",
-      "lang": "PROVE YOUR WORTH, BLEED!"
-    },
-    {
-      "key": "monster.containment_machine.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Containment Machine",
-      "pl": "Maszyna Przechowawcza",
-      "lang": "Containment Machine"
-    },
-    {
-      "key": "monster.containment_machine.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a containment machine",
-      "pl": "maszyna powstrzymująca",
-      "lang": "a containment machine"
-    },
-    {
-      "key": "monster.misguided_thief.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "I spotted you!",
-      "pl": "I nakrapiany, kropkowany ty!",
-      "lang": "I spotted you!"
-    },
-    {
-      "key": "monster.weakened_glooth_horror.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Weakened Glooth Horror",
-      "pl": "Osłabiony Glooth Horror",
-      "lang": "Weakened Glooth Horror"
-    },
-    {
-      "key": "monster.weakened_glooth_horror.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a weakened glooth horror",
-      "pl": "osłabiony glooth horror",
-      "lang": "a weakened glooth horror"
-    },
-    {
-      "key": "monster.glooth_slasher.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a glooth slasher",
-      "pl": "gloothowy slasher",
-      "lang": "a glooth slasher"
-    },
-    {
-      "key": "monster.glooth_generator.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Glooth-Generator",
-      "pl": "Generator Glooth",
-      "lang": "Glooth-Generator"
-    },
-    {
-      "key": "monster.glooth_generator.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a glooth-generator",
-      "pl": "glooth-generator",
-      "lang": "a glooth-generator"
-    },
-    {
-      "key": "monster.glooth_trasher.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a glooth trasher",
-      "pl": "glooth śmieciarz",
-      "lang": "a glooth trasher"
-    },
-    {
-      "key": "monster.professor_maxxen.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Professor Maxxen",
-      "pl": "Profesor Maxxen",
-      "lang": "Professor Maxxen"
-    },
-    {
-      "key": "monster.professor_maxxen.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Professor Maxxen",
-      "pl": "Profesor Maxxen",
-      "lang": "Professor Maxxen"
-    },
-    {
-      "key": "monster.empowered_glooth_horror.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Empowered Glooth Horror",
-      "pl": "Wzmocniony Glooth Horror",
-      "lang": "Empowered Glooth Horror"
-    },
-    {
-      "key": "monster.empowered_glooth_horror.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "an empowered glooth horror",
-      "pl": "wzmocniony glooth horror",
-      "lang": "an empowered glooth horror"
-    },
-    {
-      "key": "monster.feeble_glooth_horror.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Feeble Glooth Horror",
-      "pl": "Słaby Glooth Horror",
-      "lang": "Feeble Glooth Horror"
-    },
-    {
-      "key": "monster.glooth_horror.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Glooth Horror",
-      "pl": "Gloothowy horror",
-      "lang": "Glooth Horror"
-    },
-    {
-      "key": "monster.glooth_masher.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a glooth masher",
-      "pl": "glooth masher",
-      "lang": "a glooth masher"
-    },
-    {
-      "key": "monster.hemming.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hemming",
-      "pl": "Obszywanie",
-      "lang": "Hemming"
-    },
-    {
-      "key": "monster.hemming.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hemming",
-      "pl": "Obszywanie",
-      "lang": "Hemming"
-    },
-    {
       "key": "monster.hemming.voice_1",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -1377,150 +1188,6 @@
       "en": "GRRR",
       "pl": "Wrr",
       "lang": "GRRR"
-    },
-    {
-      "key": "monster.stonecracker.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Stonecracker",
-      "pl": "Kamieniarz",
-      "lang": "Stonecracker"
-    },
-    {
-      "key": "monster.stonecracker.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Stonecracker",
-      "pl": "Kamieniarz",
-      "lang": "Stonecracker"
-    },
-    {
-      "key": "monster.bruise_payne.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Bruise Payne",
-      "pl": "Siniak Payne",
-      "lang": "Bruise Payne"
-    },
-    {
-      "key": "monster.bruise_payne.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Bruise Payne",
-      "pl": "Siniak Payne",
-      "lang": "Bruise Payne"
-    },
-    {
-      "key": "monster.shardhead.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Shardhead",
-      "pl": "Odłamek",
-      "lang": "Shardhead"
-    },
-    {
-      "key": "monster.shardhead.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Shardhead",
-      "pl": "Odłamek",
-      "lang": "Shardhead"
-    },
-    {
-      "key": "monster.ethershreck.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "EMBRACE MY GIFTS!",
-      "pl": "I. MÓJ DAR, PODARUNEK!",
-      "lang": "EMBRACE MY GIFTS!"
-    },
-    {
-      "key": "monster.fazzrah.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Fazzrah",
-      "pl": "Fazzra",
-      "lang": "Fazzrah"
-    },
-    {
-      "key": "monster.fazzrah.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Fazzrah",
-      "pl": "Fazzra",
-      "lang": "Fazzrah"
-    },
-    {
-      "key": "monster.fleshcrawler.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Fleshcrawler",
-      "pl": "Mięsożerca",
-      "lang": "Fleshcrawler"
-    },
-    {
-      "key": "monster.fleshcrawler.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Fleshcrawler",
-      "pl": "Mięsożerca",
-      "lang": "Fleshcrawler"
-    },
-    {
-      "key": "monster.zanakeph.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "I SENSE LIFE",
-      "pl": "I SENSE I.",
-      "lang": "I SENSE LIFE"
-    },
-    {
-      "key": "monster.zanakeph.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "FEEEED MY ETERNAL HUNGER!",
-      "pl": "FEEEED MÓJ WIECZNY I.!",
-      "lang": "FEEEED MY ETERNAL HUNGER!"
-    },
-    {
-      "key": "monster.tromphonyte.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Tromphonyte",
-      "pl": "Tromfonit",
-      "lang": "Tromphonyte"
-    },
-    {
-      "key": "monster.tromphonyte.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Tromphonyte",
-      "pl": "Tromfonit",
-      "lang": "Tromphonyte"
-    },
-    {
-      "key": "monster.deathbine.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Deathbine",
-      "pl": "Śmierć",
-      "lang": "Deathbine"
     },
     {
       "key": "monster.deathbine.desc",
@@ -4401,6 +4068,339 @@
       "en": "Madareth",
       "pl": "Madaretha",
       "lang": "Madareth"
+    },
+    {
+      "key": "monster.madareth.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Madareth",
+      "pl": "Madaretha",
+      "lang": "Madareth"
+    },
+    {
+      "key": "monster.madareth.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Feel my wrath!",
+      "pl": "I. mój gniew!",
+      "lang": "Feel my wrath!"
+    },
+    {
+      "key": "monster.madareth.voice_4",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You will all die!",
+      "pl": "Ty will wszystkie die!",
+      "lang": "You will all die!"
+    },
+    {
+      "key": "monster.tanjis.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Tanjis",
+      "pl": "Tanji",
+      "lang": "Tanjis"
+    },
+    {
+      "key": "monster.tanjis.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Tanjis",
+      "pl": "Tanji",
+      "lang": "Tanjis"
+    },
+    {
+      "key": "monster.jaul.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "QJELL AFAR GOU JEY!!",
+      "pl": "QJELL FROM AFAR GOU JEY!!",
+      "lang": "QJELL AFAR GOU JEY!!"
+    },
+    {
+      "key": "monster.condensed_sin.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Condensed Sin",
+      "pl": "Skondensowany grzech",
+      "lang": "Condensed Sin"
+    },
+    {
+      "key": "monster.condensed_sin.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a condensed sin",
+      "pl": "skondensowany grzech",
+      "lang": "a condensed sin"
+    },
+    {
+      "key": "monster.fetter.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Fetter",
+      "pl": "Kajdany",
+      "lang": "Fetter"
+    },
+    {
+      "key": "monster.fetter.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a fetter",
+      "pl": "pęta",
+      "lang": "a fetter"
+    },
+    {
+      "key": "monster.condensed_sins.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Condensed Sins",
+      "pl": "Skondensowane grzechy",
+      "lang": "Condensed Sins"
+    },
+    {
+      "key": "monster.condensed_sins.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a condensed sins",
+      "pl": "skondensowane grzechy",
+      "lang": "a condensed sins"
+    },
+    {
+      "key": "monster.regenerating_mass.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Regenerating Mass",
+      "pl": "Masa regeneracyjna",
+      "lang": "Regenerating Mass"
+    },
+    {
+      "key": "monster.regenerating_mass.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a regenerating mass",
+      "pl": "masa regeneracyjna",
+      "lang": "a regenerating mass"
+    },
+    {
+      "key": "monster.sir_baeloc.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Sir Baeloc",
+      "pl": "Panie Baeloc",
+      "lang": "Sir Baeloc"
+    },
+    {
+      "key": "monster.sir_baeloc.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Sir Baeloc",
+      "pl": "Panie Baeloc",
+      "lang": "Sir Baeloc"
+    },
+    {
+      "key": "monster.earl_osam.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Earl Osam",
+      "pl": "Earla Osama",
+      "lang": "Earl Osam"
+    },
+    {
+      "key": "monster.earl_osam.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Earl Osam",
+      "pl": "Earla Osama",
+      "lang": "Earl Osam"
+    },
+    {
+      "key": "monster.scarlett_etzel.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Galthen... is that you? ",
+      "pl": "Galthen... jest that ty?",
+      "lang": "Galthen... is that you? "
+    },
+    {
+      "key": "monster.scarlett_etzel.voice_4",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": " Aaaaaaah!!!",
+      "pl": "Aaaaaaah!!!",
+      "lang": " Aaaaaaah!!!"
+    },
+    {
+      "key": "monster.sir_nictros.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Sir Nictros",
+      "pl": "Panie Nictrosie",
+      "lang": "Sir Nictros"
+    },
+    {
+      "key": "monster.sir_nictros.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Sir Nictros",
+      "pl": "Panie Nictrosie",
+      "lang": "Sir Nictros"
+    },
+    {
+      "key": "monster.doomhowl.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Doomhowl",
+      "pl": "Wycie Zagłady",
+      "lang": "Doomhowl"
+    },
+    {
+      "key": "monster.doomhowl.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Doomhowl",
+      "pl": "Wycie Zagłady",
+      "lang": "Doomhowl"
+    },
+    {
+      "key": "monster.fatality.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Fatality",
+      "pl": "Śmiertelność",
+      "lang": "Fatality"
+    },
+    {
+      "key": "monster.fatality.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Fatality",
+      "pl": "Śmiertelność",
+      "lang": "Fatality"
+    },
+    {
+      "key": "monster.dreadwing.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "More blood! More!",
+      "pl": "More I.! More!",
+      "lang": "More blood! More!"
+    },
+    {
+      "key": "monster.tirecz.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Tirecz",
+      "pl": "Tyrecz",
+      "lang": "Tirecz"
+    },
+    {
+      "key": "monster.tirecz.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Tirecz",
+      "pl": "Tyrecz",
+      "lang": "Tirecz"
+    },
+    {
+      "key": "monster.the_axeorcist.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Blood! Carnage! Muhahaha!",
+      "pl": "I.! Rzeź! Muhahaha!",
+      "lang": "Blood! Carnage! Muhahaha!"
+    },
+    {
+      "key": "monster.coldheart.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Coldheart",
+      "pl": "Zimne Serce",
+      "lang": "Coldheart"
+    },
+    {
+      "key": "monster.coldheart.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Coldheart",
+      "pl": "Zimne Serce",
+      "lang": "Coldheart"
+    },
+    {
+      "key": "monster.haunter.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Haunter",
+      "pl": "Nawiedzony",
+      "lang": "Haunter"
+    },
+    {
+      "key": "monster.haunter.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Haunter",
+      "pl": "Nawiedzony",
+      "lang": "Haunter"
+    },
+    {
+      "key": "monster.incineron.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Incineron",
+      "pl": "Spopielacz",
+      "lang": "Incineron"
+    },
+    {
+      "key": "monster.incineron.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Incineron",
+      "pl": "Spopielacz",
+      "lang": "Incineron"
+    },
+    {
+      "key": "monster.menace.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Menace",
+      "pl": "Groźba",
+      "lang": "Menace"
     }
   ],
   "length_ratio_issues": [
@@ -4776,8 +4776,8 @@
   ],
   "auto_fix": {
     "attempted": 80,
-    "applied": 37,
-    "skipped": 43,
+    "applied": 33,
+    "skipped": 47,
     "errors": 0
   }
 }

@@ -4,7 +4,7 @@
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-14T10:53:17.875832Z",
+  "checked_at": "2026-02-14T11:04:52.965555Z",
   "issues_total": 443,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -30,708 +30,6 @@
       "en": "Monsterhunter",
       "pl": "potwórhunter",
       "lang": "Monsterhunter"
-    },
-    {
-      "key": "book.otbm.crunors_finest_fruit_and_vegetable_1ed839d6",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Crunor's Finest - Fruit and Vegetable Shop",
-      "pl": "CruNier's Finest - I. i I. I.",
-      "lang": "Crunor's Finest - Fruit and Vegetable Shop"
-    },
-    {
-      "key": "book.otbm.crypts_and_monsters_found_one",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "... crypts and monsters ... found one of the caged demons that seem to be leached as a powersupply of some sort ...",
-      "pl": "... crypts i potwory... znaleziono I. z the caged demon that a. wydawać się być, wydawać się, zdawać się do być leached as jeden powersupply z I. I....",
-      "lang": "... crypts and monsters ... found one of the caged demons that seem to be leached as a powersupply of some sort ..."
-    },
-    {
-      "key": "book.otbm.crystallize_itself_in_the_void",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "crystallize itself in the void to an enormous spiral. Higher and higher it mounted up, became firmness, pivot point, direction and",
-      "pl": "crystallize się, siebie w the void do jeden eNiermous I.. I. i I. to I. up, became firmness, I. point, kierunek i",
-      "lang": "crystallize itself in the void to an enormous spiral. Higher and higher it mounted up, became firmness, pivot point, direction and"
-    },
-    {
-      "key": "book.otbm.currently_no_wanted_criminals",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Currently no wanted criminals",
-      "pl": "Obecnie Nie I. criminals",
-      "lang": "Currently no wanted criminals"
-    },
-    {
-      "key": "book.otbm.cyclopic_cities_were_laid_into",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "cyclopic cities were laid into ruins, unbelievable forging factories were lost for all eternity, and until today the cyclops are upset",
-      "pl": "cyclopic miasto były laid a. do I., niewiarygodny forging fabryka były I. dla wszystkie wieczność, i I. dzisiaj the cyclops są upset",
-      "lang": "cyclopic cities were laid into ruins, unbelievable forging factories were lost for all eternity, and until today the cyclops are upset"
-    },
-    {
-      "key": "book.otbm.dagger_hand_axe_barbarian_axe",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "dagger, hand axe, barbarian axe, spear, rapier, axe, sabre, sword, mace, battle hammer and clerical mace",
-      "pl": "sztylet, hand I., barbarzyńca I., I., rapier, I., sabre, miecz, mace, I. I. i biurowy, urzędniczy mace",
-      "lang": "dagger, hand axe, barbarian axe, spear, rapier, axe, sabre, sword, mace, battle hammer and clerical mace"
-    },
-    {
-      "key": "book.otbm.damnation_to_all_who_dare",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Damnation to all who dare to enter!",
-      "pl": "Potępienie do wszystkie kto dare do I.!",
-      "lang": "Damnation to all who dare to enter!"
-    },
-    {
-      "key": "book.otbm.dark_are_the_mysteries_surrounded",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Dark are the mysteries surrounded by doomed cries",
-      "pl": "I. są the I. otaczać, otaczać by skazany na zgubę, zgubiony cries",
-      "lang": "Dark are the mysteries surrounded by doomed cries"
-    },
-    {
-      "key": "book.otbm.daughter_of_earth_and_fire",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Daughter of earth and fire",
-      "pl": "Córka z earth i fire",
-      "lang": "Daughter of earth and fire"
-    },
-    {
-      "key": "book.otbm.daughter_of_earth_and_fire_e0cf4dcd",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Daughter of earth and fire",
-      "pl": "Córka z earth i fire",
-      "lang": "Daughter of earth and fire"
-    },
-    {
-      "key": "book.otbm.dead_but_zathroth_used_a",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "dead. But Zathroth used a deception and appeared to the earth as its other side, Uman, and conceived in his place a being.",
-      "pl": "dead. I. Zathroth used jeden podstęp i pojawiać się do the earth as jego, jej, ich, swój drugi, pozostały I., Uman, i conceived w jego I. jeden istota.",
-      "lang": "dead. But Zathroth used a deception and appeared to the earth as its other side, Uman, and conceived in his place a being."
-    },
-    {
-      "key": "book.otbm.dead_ones_and_sent_his",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "dead ones and sent his large worms which began to devour the undead. For a long time the struggle lasted and again no end",
-      "pl": "dead na i sent jego large worms I. began do pożerać the undead. Dla jeden long czas the I. lasted i ponownie Nie I.",
-      "lang": "dead ones and sent his large worms which began to devour the undead. For a long time the struggle lasted and again no end"
-    },
-    {
-      "key": "book.otbm.death_an_improved_form_of",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Death - an Improved Form of Life?",
-      "pl": "I. - jeden Improved I. z I.?",
-      "lang": "Death - an Improved Form of Life?"
-    },
-    {
-      "key": "book.otbm.dedicated_to_all_women_who",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Dedicated to all women who bravely and cleverly defeated the",
-      "pl": "Oddany, ofiarny do wszystkie women kto I. i inteligentny, zdolny I. the",
-      "lang": "Dedicated to all women who bravely and cleverly defeated the"
-    },
-    {
-      "key": "book.otbm.deep_in_the_heart_of",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Deep in the heart of the Kha'labal the dreaded hyena king has its lair. This legendary beast is much larger than any other specimen of its race, surpassing lions and even elephants in size, and it can tear a man apart in seconds with its enormous, razor-sharp teeth. What's more, the hyena king is said to be truly immortal, for it has been sighted time and again by numerous travellers and merchants. Many a caravan is said to have fallen prey to this ferocious beast, and it is widely believed to have amassed untold treasures over the centuries.",
-      "pl": "I. w the serce z the Kha'labal the I. hyena król ma jego, jej, ich, swój legowisko, pieczara. I. legendarny zwierzę jest dużo, bardzo larger z niż dowolny drugi, pozostały okaz z jego, jej, ich, swój I., przewyższać lew i I. słoń w I., i to może tear jeden man z dala w sekundy z jego, jej, ich, swój eNiermous, I.-I. teeth. I. more, the hyena król jest said do być naprawdę nieśmiertelny, dla to ma był I. czas i ponownie by liczny podróżlers i I.. Wiele, dużo jeden przyczepa kempingowa jest said do masz fallen I. do I. zażarty, zajadły zwierzę, i to jest I. believed do masz zgromadzić niewypowiedziany I. I. the wiek.",
-      "lang": "Deep in the heart of the Kha'labal the dreaded hyena king has its lair. This legendary beast is much larger than any other specimen of its race, surpassing lions and even elephants in size, and it can tear a man apart in seconds with its enormous, razor-sharp teeth. What's more, the hyena king is said to be truly immortal, for it has been sighted time and again by numerous travellers and merchants. Many a caravan is said to have fallen prey to this ferocious beast, and it is widely believed to have amassed untold treasures over the centuries."
-    },
-    {
-      "key": "book.otbm.describe_the_demonic_rulers",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "describe the demonic rulers",
-      "pl": "opisywać the demoniczny, złowrogi władca",
-      "lang": "describe the demonic rulers"
-    },
-    {
-      "key": "book.otbm.desecration_this_entity_which_was",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "desecration! This entity, which was two and one nevertheless, observed now the works of his companion in infinity.",
-      "pl": "desecration! I. jednostka, całostka, I. był dwa i I. jednak, niemniej, observed Niew the works z jego towarzysz w nieskończoność.",
-      "lang": "desecration! This entity, which was two and one nevertheless, observed now the works of his companion in infinity."
-    },
-    {
-      "key": "book.otbm.destination_islands_senja_folda_vega",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Destination Islands: Senja, Folda, Vega",
-      "pl": "Miejsce przeznaczenia Wyspa: Senja, Folda, Vega",
-      "lang": "Destination Islands: Senja, Folda, Vega"
-    },
-    {
-      "key": "book.otbm.devised_dissolved_in_the_void",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "devised dissolved in the void even before it was completed.",
-      "pl": "devised dissolved w the void I. I. to był completed.",
-      "lang": "devised dissolved in the void even before it was completed."
-    },
-    {
-      "key": "book.otbm.diary_of_hengis_wulfsonnni_can",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Diary of Hengis Wulfson\\n...\\nI can only hope I can escape the\\ncyclops someday. For now I have\\noccupied their chief with an attempt\\nto learn to read and write, but for\\nhow long?\\nI'm so desperate.\\nWhat a foolish idea to travel here to\\nsearch the famous treasures of this\\nancient, knightly order.\\nI wish I had never heard about it.\\nI wish I had never sung that song.\\nNo clue how many unfortunate souls I\\nhave lured to death with it.",
-      "pl": "Dziennik, pamiętnik z Hengis Wulfson\\n...\\nI może tylko I. I może I. the\\ncyclops któregoś dnia, kiedyś. Dla Niew I masz\\noccupied ich I. z jeden I.\\ndo uczyć się, nauczyć się do czytać, przeczytać i I., I. dla\\njak long?\\nI'm I. I..\\nI. jeden głupi, niemądry pomysł do podróż tutaj, tu do\\nI. the słynny, znany I. z I.\\nstarożytny, I. order.\\nI I. I miał nigdy heard o to.\\nI I. I miał nigdy sung that pieśń, piosenka.\\nNie wskazówka, ślad jak wiele, dużo nieszczęśliwy, nie mający powodzenia dusza I\\nmasz lured do I. z to.",
-      "lang": "Diary of Hengis Wulfson\\n...\\nI can only hope I can escape the\\ncyclops someday. For now I have\\noccupied their chief with an attempt\\nto learn to read and write, but for\\nhow long?\\nI'm so desperate.\\nWhat a foolish idea to travel here to\\nsearch the famous treasures of this\\nancient, knightly order.\\nI wish I had never heard about it.\\nI wish I had never sung that song.\\nNo clue how many unfortunate souls I\\nhave lured to death with it."
-    },
-    {
-      "key": "book.otbm.died_but_i_could_make",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "... died but I could make it to the throne. My wards are holding the howling ghosts and spectres at bay for now and I prepare to unleash the powers of the throne ...",
-      "pl": "... died I. I mógł make to do the tron. Mój I. są I. the I. duch i spectres w I. dla Niew i I przygotowywać do uwalniać the I. z the tron...",
-      "lang": "... died but I could make it to the throne. My wards are holding the howling ghosts and spectres at bay for now and I prepare to unleash the powers of the throne ..."
-    },
-    {
-      "key": "book.otbm.different_to_the_clear_working",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "different to the clear working of the Fardos, because mysteries and secrets were the aspects of his being. Uman and Zathroth",
-      "pl": "różny do the clear I. z the Fardos, ponieważ, bo I. i I. były the aspekt z jego istota. Uman i Zathroth",
-      "lang": "different to the clear working of the Fardos, because mysteries and secrets were the aspects of his being. Uman and Zathroth"
-    },
-    {
-      "key": "book.otbm.digging_not_a_single_trace",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Digging. Not a single trace of any door or even a window. Maybe home of some obscure cult of darkness? Maybe creatures of the night? A hideout for ghouls? Maybe I am working not hard enough. Hm, there seems to be a strange spot there at the wall, I can see it clearly from here. I shall try to push or pull it right away! Fame and riches, here I come!",
-      "pl": "Digging. Niet jeden I. I. z dowolny drzwi lub I. jeden okno. Być może, może home z I. I. cult z ciemność? Być może, może stwory z the night? JEDEN hideout dla ghouls? Być może, może I am I. Niet hard eNieugh. Jego Wysokość, Jej Wysokość, there a. wydawać się być, wydawać się, zdawać się do być jeden dziwny spot there w the ściana, mur, I może I. to clearly z tutaj, tu. I a. będzie I. do push lub I. to I. I.! Sława i I., tutaj, tu I come!",
-      "lang": "Digging. Not a single trace of any door or even a window. Maybe home of some obscure cult of darkness? Maybe creatures of the night? A hideout for ghouls? Maybe I am working not hard enough. Hm, there seems to be a strange spot there at the wall, I can see it clearly from here. I shall try to push or pull it right away! Fame and riches, here I come!"
-    },
-    {
-      "key": "book.otbm.diptrah_the_high_priest_master",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Diptrah the high priest, master of the mind, wielder of secret powers, keeper of the oldest of rituals.",
-      "pl": "Diptrah the I. ksiądz, I. z the mind, dzierżyć z I. I., dozorca z the oldest z I..",
-      "lang": "Diptrah the high priest, master of the mind, wielder of secret powers, keeper of the oldest of rituals."
-    },
-    {
-      "key": "book.otbm.divinity_was_weakened_by_the",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "divinity was weakened by the creation and without suspicion and resistance, the deadly attack penetrated to the core of her",
-      "pl": "boskość był osłabiać by the creation i bez podejrzenie i opór, the I. I. penetrated do the core z her",
-      "lang": "divinity was weakened by the creation and without suspicion and resistance, the deadly attack penetrated to the core of her"
-    },
-    {
-      "key": "book.otbm.dixis_armors_and_shields",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Dixi's Armors and Shields",
-      "pl": "Dixi's Armors i I.",
-      "lang": "Dixi's Armors and Shields"
-    },
-    {
-      "key": "book.otbm.dixis_armors_and_shields_cf49f561",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Dixi's Armors and Shields",
-      "pl": "Dixi's Armors i I.",
-      "lang": "Dixi's Armors and Shields"
-    },
-    {
-      "key": "book.otbm.do_not_consume_unknown_liquids",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Do not consume unknown liquids.",
-      "pl": "Robić Niet konsumować nieznany I..",
-      "lang": "Do not consume unknown liquids."
-    },
-    {
-      "key": "book.otbm.do_not_disturb_bearded_people",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "(Do NOT disturb bearded people)",
-      "pl": "(Robić NieT przeszkadzać brodaty, z brodą I.)",
-      "lang": "(Do NOT disturb bearded people)"
-    },
-    {
-      "key": "book.otbm.do_not_drink_green_or",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Do not drink green or yellow liquids!",
-      "pl": "Robić Niet I. green lub I. I.!",
-      "lang": "Do not drink green or yellow liquids!"
-    },
-    {
-      "key": "book.otbm.do_not_enter_without_permission",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "do not enter without permission",
-      "pl": "robić Niet I. bez zezwolenie",
-      "lang": "do not enter without permission"
-    },
-    {
-      "key": "book.otbm.do_nott_wentt_down_or",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Do nott wentt down or restt in peace",
-      "pl": "Robić Niett wentt I. lub restt w peace",
-      "lang": "Do nott wentt down or restt in peace"
-    },
-    {
-      "key": "book.otbm.dont_feed_the_male_scum",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Don't feed the male scum!",
-      "pl": "Don't I. the I. powłoka brudu!",
-      "lang": "Don't feed the male scum!"
-    },
-    {
-      "key": "book.otbm.dont_forget_to_learn_our",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Don't forget to learn our spells.",
-      "pl": "Don't forget do uczyć się, nauczyć się nasz zaklęCentalna Agencja Wywiadowcza.",
-      "lang": "Don't forget to learn our spells."
-    },
-    {
-      "key": "book.otbm.dont_leave_the_protection_of",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Don't leave the protection of the village too soon. First try to get better equipment. Buy equipment",
-      "pl": "Don't I. the ochrona, osłona z the wioska też, także wkrótce, szybko. I. I. do get better wyposażenie, ekwipunek, sprzęt. Kup wyposażenie, ekwipunek, sprzęt",
-      "lang": "Don't leave the protection of the village too soon. First try to get better equipment. Buy equipment"
-    },
-    {
-      "key": "book.otbm.dont_shoot_or_throw_at",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Don't shoot or throw at the performers",
-      "pl": "Don't I. lub I. w the wykonawca",
-      "lang": "Don't shoot or throw at the performers"
-    },
-    {
-      "key": "book.otbm.dont_steal_from_the_game",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Don't steal from the game rooms!",
-      "pl": "Don't kraść z the I. miejsces!",
-      "lang": "Don't steal from the game rooms!"
-    },
-    {
-      "key": "book.otbm.dont_steal_from_the_game_40dbdc0e",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Don't steal from the game rooms!",
-      "pl": "Don't kraść z the I. miejsces!",
-      "lang": "Don't steal from the game rooms!"
-    },
-    {
-      "key": "book.otbm.dont_touch_the_machines_and",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Don't touch the machines and beware of uncontrolled worker golems!",
-      "pl": "Don't I. the I. i strzec się z niekontrolowany, niepowstrzymany pracownik golems!",
-      "lang": "Don't touch the machines and beware of uncontrolled worker golems!"
-    },
-    {
-      "key": "book.otbm.dragon_the_immortal_species",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Dragon - The immortal species",
-      "pl": "Smok - The nieśmiertelny gatunek",
-      "lang": "Dragon - The immortal species"
-    },
-    {
-      "key": "book.otbm.dragons_and_other_monsters_yet",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "dragons and other monsters yet.",
-      "pl": "smok i drugi, pozostały potwory jeszcze.",
-      "lang": "dragons and other monsters yet."
-    },
-    {
-      "key": "book.otbm.dragons_orcs_and_their_unholy",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "dragons, orcs and their unholy attendants, too, and Banor was a glorious leader for mankind.",
-      "pl": "smok, orcs i ich unholy I., też, także, i BaNier był jeden wspaniały lider, przywódca dla ludzkość.",
-      "lang": "dragons, orcs and their unholy attendants, too, and Banor was a glorious leader for mankind."
-    },
-    {
-      "key": "book.otbm.dren_lo_explorer_hero_and",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Dren Lo, explorer, hero and general",
-      "pl": "Dren Lo, badacz, eksplorator, bohater i general",
-      "lang": "Dren Lo, explorer, hero and general"
-    },
-    {
-      "key": "book.otbm.dress_for_success_tailor_shop",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Dress for Success - Tailor Shop",
-      "pl": "I. dla sukces - I. I.",
-      "lang": "Dress for Success - Tailor Shop"
-    },
-    {
-      "key": "book.otbm.dress_for_success_tailor_shop_7cbb538e",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Dress for Success - Tailor Shop",
-      "pl": "I. dla sukces - I. I.",
-      "lang": "Dress for Success - Tailor Shop"
-    },
-    {
-      "key": "book.otbm.dwelling_of_the_forgotten",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Dwelling Of The Forgotten",
-      "pl": "Domostwo Z The Forgotten",
-      "lang": "Dwelling Of The Forgotten"
-    },
-    {
-      "key": "book.otbm.eastern_city_entrance_use_door",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Eastern city entrance - use door. Central production site - use ladder.",
-      "pl": "Wschodni miasto entrance - use drzwi. I. produkcja I. - use drabina.",
-      "lang": "Eastern city entrance - use door. Central production site - use ladder."
-    },
-    {
-      "key": "book.otbm.eggs_cheese_cookies_rolls_meat",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "eggs, cheese, cookies, rolls, meat, salmon, oranges, grapes, melons, bananas",
-      "pl": "I., ser, herbatnik, ciastko, I., mięso, łosoś, I., winogrono, melon, arbuz, banan",
-      "lang": "eggs, cheese, cookies, rolls, meat, salmon, oranges, grapes, melons, bananas"
-    },
-    {
-      "key": "book.otbm.elemental_shrines_and_training_grounds",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Elemental Shrines and Training Grounds",
-      "pl": "Żywiołowy, niepohamowany Święte miejsce i Trening Ziemia",
-      "lang": "Elemental Shrines and Training Grounds"
-    },
-    {
-      "key": "book.otbm.elements_of_tibia_and_their",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Elements of Tibia and their alchemical order",
-      "pl": "Element, składnik z Tibia i ich alchemical order",
-      "lang": "Elements of Tibia and their alchemical order"
-    },
-    {
-      "key": "book.otbm.elite_came_back_alive_if",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "elite came back alive, if you are not a highly trained specialist and try to go there on your own, you will probably just cease to be.",
-      "pl": "I. came I. żywy, if Nie jesteś jeden bardzo, wysoce szkolony, wykwalifikowany I. i I. do go there na twój I., ty will prawdopodobnie just kończyć się, ustawać do być.",
-      "lang": "elite came back alive, if you are not a highly trained specialist and try to go there on your own, you will probably just cease to be."
-    },
-    {
-      "key": "book.otbm.embalming_fluid_chants_and_holy",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Embalming fluid, chants and holy preparations required to guide the spirit to the next world and preserve his body in the intermediate world, by Rames-Seni  Osi-Atun-Ra-Heton, enlightened embalmer and humble servant of the Lord of the Seven Sandy Seas, may his spirit rule in the afterlife forever.",
-      "pl": "Balsamować I., I. i święty przygotowanie wymagany do I. the I. do the next I. i I. jego ciało w the pośredni, średni I., by I.-Seni Osi-Atun-Akademia Królewska-Heton, oświecać balsamować i skromny, pokorny I. z the Lord z the Siedem Piaskowy Morze, a. móc jego I. I. w the afterlife forever.",
-      "lang": "Embalming fluid, chants and holy preparations required to guide the spirit to the next world and preserve his body in the intermediate world, by Rames-Seni  Osi-Atun-Ra-Heton, enlightened embalmer and humble servant of the Lord of the Seven Sandy Seas, may his spirit rule in the afterlife forever."
-    },
-    {
-      "key": "book.otbm.employed_already_the_armies_of",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "employed. Already the armies of the older races were readying themselves to recapture from the humans what the old ones",
-      "pl": "zatrudniać. Już the wojsko, armia z the I. Królewski Automobilklub były I. się, siebie, sobie do I. z the I. I. the I. na",
-      "lang": "employed. Already the armies of the older races were readying themselves to recapture from the humans what the old ones"
-    },
-    {
-      "key": "book.otbm.enter_at_your_own_risk",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Enter at your own risk and not unprepared!",
-      "pl": "I. w twój I. I. i Niet unprepared!",
-      "lang": "Enter at your own risk and not unprepared!"
-    },
-    {
-      "key": "book.otbm.enter_contaminated_areas_at_own",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Enter contaminated areas at own risk and with proper protective clothing.",
-      "pl": "I. zakażony, zanieczyszczony obszar, region w I. I. i z I. ochronny ubranie, odzież.",
-      "lang": "Enter contaminated areas at own risk and with proper protective clothing."
-    },
-    {
-      "key": "book.otbm.enter_the_ancient_blue_flame",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Enter the ancient blue flame of citizenship",
-      "pl": "I. the starożytny I. płomień z obywatelstwo",
-      "lang": "Enter the ancient blue flame of citizenship"
-    },
-    {
-      "key": "book.otbm.enter_the_ancient_blue_flame_7ef32bcd",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Enter the ancient blue flame of citizenship",
-      "pl": "I. the starożytny I. płomień z obywatelstwo",
-      "lang": "Enter the ancient blue flame of citizenship"
-    },
-    {
-      "key": "book.otbm.enter_the_teleporter_flame_to",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Enter the teleporter flame to become a citizen of Roshamuul.",
-      "pl": "I. the teleportowaće... płomień do stawać się jeden obywatel z Roshamuul.",
-      "lang": "Enter the teleporter flame to become a citizen of Roshamuul."
-    },
-    {
-      "key": "book.otbm.enter_the_teleporter_to_become",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Enter the teleporter to become an inhabitant of Svargrond",
-      "pl": "I. the teleportowaće... do stawać się jeden mieszkaniec z Svargrond",
-      "lang": "Enter the teleporter to become an inhabitant of Svargrond"
-    },
-    {
-      "key": "book.otbm.enter_the_teleporter_to_become_4d25945b",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Enter the teleporter to become a citizen of Thais!",
-      "pl": "I. the teleportowaće... do stawać się jeden obywatel z Thais!",
-      "lang": "Enter the teleporter to become a citizen of Thais!"
-    },
-    {
-      "key": "book.otbm.enter_the_teleporter_to_become_9a40a4e1",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Enter the teleporter to become a citizen",
-      "pl": "I. the teleportowaće... do stawać się jeden obywatel",
-      "lang": "Enter the teleporter to become a citizen"
-    },
-    {
-      "key": "book.otbm.enter_the_teleporter_to_become_cd55bbb9",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Enter the teleporter to become a citizen of Liberty Bay!",
-      "pl": "I. the teleportowaće... do stawać się jeden obywatel z Liberty I.!",
-      "lang": "Enter the teleporter to become a citizen of Liberty Bay!"
-    },
-    {
-      "key": "book.otbm.enter_the_teleporter_to_become_d9c3cee5",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Enter the teleporter to become a citizen of Carlin!",
-      "pl": "I. the teleportowaće... do stawać się jeden obywatel z Carlin!",
-      "lang": "Enter the teleporter to become a citizen of Carlin!"
-    },
-    {
-      "key": "book.otbm.enter_the_teleporter_to_become_da2a4eed",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Enter the teleporter to become a citizen of Port Hope!",
-      "pl": "I. the teleportowaće... do stawać się jeden obywatel z I. I.!",
-      "lang": "Enter the teleporter to become a citizen of Port Hope!"
-    },
-    {
-      "key": "book.otbm.enter_the_teleporter_to_become_f3bad5cd",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Enter the teleporter to become a citizen of Darashia!",
-      "pl": "I. the teleportowaće... do stawać się jeden obywatel z Darashia!",
-      "lang": "Enter the teleporter to become a citizen of Darashia!"
-    },
-    {
-      "key": "book.otbm.enter_the_teleporter_to_become_f98dbe2c",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Enter the teleporter to become a citizen of Edron!",
-      "pl": "I. the teleportowaće... do stawać się jeden obywatel z Edron!",
-      "lang": "Enter the teleporter to become a citizen of Edron!"
-    },
-    {
-      "key": "book.otbm.enter_this_teleporter_to_leave",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Enter this teleporter to leave this cursed place and return to Goroma.",
-      "pl": "I. I. teleportowaće... do I. I. cursed I. i I. do Goroma.",
-      "lang": "Enter this teleporter to leave this cursed place and return to Goroma."
-    },
-    {
-      "key": "book.otbm.entry_only_with_permission_from",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Entry only with permission from a superior necromancer and with own testing material.",
-      "pl": "Zgłoszenie tylko z zezwolenie z jeden I. necromancer i z I. I. I..",
-      "lang": "Entry only with permission from a superior necromancer and with own testing material."
-    },
-    {
-      "key": "book.otbm.equipment_pick_tree_or_bricklayers",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Equipment: Pick, tree or bricklayers kit",
-      "pl": "Wyposażenie, ekwipunek, sprzęt: I., drzewo lub murarz zestaw",
-      "lang": "Equipment: Pick, tree or bricklayers kit"
-    },
-    {
-      "key": "book.otbm.equipment_wood_wooden_ties_hammer",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Equipment: Wood, wooden ties, hammer, nails, metal fitting",
-      "pl": "Wyposażenie, ekwipunek, sprzęt: Drewno, drewniany I., I., I., metal I.",
-      "lang": "Equipment: Wood, wooden ties, hammer, nails, metal fitting"
-    },
-    {
-      "key": "book.otbm.eternal_love_will_conquer_death",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Eternal love will conquer death",
-      "pl": "Wieczny love will podbijać I.",
-      "lang": "Eternal love will conquer death"
-    },
-    {
-      "key": "book.otbm.even_before_the_creation_of",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Even before the creation of the humans, there have been several occurrences that can only be interpreted as attacks by demonic armies trying to stop the creation process. Inhuman sources tell of several armies that invaded our world in the course of many centuries.",
-      "pl": "I. I. the creation z the I., there masz był I. wydarzenie that może tylko być interpretować, rozumieć as I. by demoniczny, złowrogi wojsko, armia dojmujący, ciężki do stop the creation process. Nieludzki źródło I. z I. wojsko, armia that invaded nasz I. w the course z wiele, dużo wiek.",
-      "lang": "Even before the creation of the humans, there have been several occurrences that can only be interpreted as attacks by demonic armies trying to stop the creation process. Inhuman sources tell of several armies that invaded our world in the course of many centuries."
-    },
-    {
-      "key": "book.otbm.even_if_the_seven_are",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Even if the seven are on his side we will win at last and may it cost the lives of all of us!",
-      "pl": "I. if the siedem są na jego I. my will win w last i a. móc to cost the lives z wszystkie z nas!",
-      "lang": "Even if the seven are on his side we will win at last and may it cost the lives of all of us!"
-    },
-    {
-      "key": "book.otbm.even_though_many_djinns_had",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Even though many djinns had lost their lives during the fateful battle of Ankrahmun, the war was still undecided. Malor had lost many of his bravest warriors, but so had Gabel, and they both knew that another epic battle like that would bring the whole djinn race to the brink of destruction. In his desperation, Gabel turned to his trusted friend Fa'Hradin for advice. The old djinn suggested using a trick to eliminate Malor. Without their leader, he reasoned, the Efreet would end the rebellion. Gabel, who wanted to avoid further bloodshed, agreed. And so it came to pass that the magic lamp was created and, by means that are unknown to this very day, secretly placed in Malor's private chamber. The mighty Efreet never had a chance. When he went to sleep in what he thought was his private lamp he was trapped inside the lamp, which was soon enough smuggled out of Mal'Ouquah, the Efreets' fortress, and brought back to the Marid. Fa'hradin's trick had worked - Malor was Gabel's prisoner.",
-      "pl": "I. I. wiele, dużo djinns miał I. ich lives podczas, w czasie the brzemienny w skutki I. z Ankrahmun, the I. był I. niezdecydowany. Malor miał I. wiele, dużo z jego bravest wojownik, I. I. miał Gabel, i oni obaj knew that aNiether I. I. like that would bring the I. djinn I. do the brink z zniszczenie. W jego desperacja, Gabel turned do jego I. przyjaciel, dobry kolega, kolega Fa'Hradin dla rada. The I. djinn sugerować using jeden I. do eliminować, usuwać Malor. Bez ich lider, przywódca, on racjonalny, wyważony, the Efreet would I. the rebelia. Gabel, kto I. do unikać, uchylać się further rozlanie krwi, agreed. I I. to came do I. that the I. lampa był created i, by sposób that są nieznany do I. I. dzień, I. be placed w Malor's I. I.. The I. Efreet nigdy miał jeden szansa. When on went do I. w I. on myśl był jego I. lampa on był trapped inside the lampa, I. był wkrótce, szybko eNieugh smuggled out z Mal'Ouquah, the Efreets' forteca, i brought I. do the Marid. Fa'hradin's I. miał worked - Malor był Gabel's I..",
-      "lang": "Even though many djinns had lost their lives during the fateful battle of Ankrahmun, the war was still undecided. Malor had lost many of his bravest warriors, but so had Gabel, and they both knew that another epic battle like that would bring the whole djinn race to the brink of destruction. In his desperation, Gabel turned to his trusted friend Fa'Hradin for advice. The old djinn suggested using a trick to eliminate Malor. Without their leader, he reasoned, the Efreet would end the rebellion. Gabel, who wanted to avoid further bloodshed, agreed. And so it came to pass that the magic lamp was created and, by means that are unknown to this very day, secretly placed in Malor's private chamber. The mighty Efreet never had a chance. When he went to sleep in what he thought was his private lamp he was trapped inside the lamp, which was soon enough smuggled out of Mal'Ouquah, the Efreets' fortress, and brought back to the Marid. Fa'hradin's trick had worked - Malor was Gabel's prisoner."
-    },
-    {
-      "key": "book.otbm.eventually_gabel_stepped_forward_to",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Eventually Gabel stepped forward to meet his opponent. This was the moment Malor, who had never intended to fight honourably, had been waiting for. All of a sudden the earth opened in a thousand places, and hordes of vicious undead attacked the Gabel and his army. For Malor had secretly formed an alliance with the dreaded necromancers of Drefia and it was them who controlled the undead hordes that fought for him. Faced with an overwhelming enemy, Gabel and his army turned to flee.",
-      "pl": "Ostateczny Gabel stepped I. do spotykać się, spotykać jego przeciwnik, oponent. I. był the chwila, moment Malor, kto miał nigdy zamierzać do I. hoNieurably, miał był I. dla. Wszystkie z jeden nagły the earth otwórz w jeden tysiąc I., i zgraja, horda z podstępny, występny undead I. the Gabel i jego wojsko, armia. Dla Malor miał I. I. jeden przymierze, współpraca z the I. necromancers z Drefia i to był ich kto controlled the undead zgraja, horda that fought dla him. Faced z jeden przygniatający wróg, Gabel i jego wojsko, armia turned do uciekać.",
-      "lang": "Eventually Gabel stepped forward to meet his opponent. This was the moment Malor, who had never intended to fight honourably, had been waiting for. All of a sudden the earth opened in a thousand places, and hordes of vicious undead attacked the Gabel and his army. For Malor had secretly formed an alliance with the dreaded necromancers of Drefia and it was them who controlled the undead hordes that fought for him. Faced with an overwhelming enemy, Gabel and his army turned to flee."
-    },
-    {
-      "key": "book.otbm.eventually_they_started_exposing_undead",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Eventually they started exposing undead bodies to evil energies and merging them with living beings into massive undead monstrosities, which, however, withered and died almost as soon as they were created. After some experiments that failed in an particularly spectacular manner, the bone lords were forced to abandon their experiments. Soon, their gruesome experiments faded from memory. They had been all but forgotten when a number of braindeath emerged in a remote beholder city, claiming to have achieved a decisive breakthrough in the field of necromancy. The high council of the beholder elders reluctantly sent a number of scientists down to the laboratories to examine the results. The undead creatures they found were so hideous and degenerated that the scientists flatly declared that these experiments that led their creation contradicted the very principles of beholderkin. All undead were to be destroyed and the experiments were to be abolished once and for all.",
-      "pl": "Ostateczny oni uruchomioNie exposing undead ciało do I. energia i merging ich z I. istota a. do masywny undead monstrualność, I., jednak, pomarszczony, uschnięty i died prawie as wkrótce, szybko as oni były created. After I. I. that nieudane w jeden szczególnie I. sposób, the I. lord były wymuszony do zostawiać, opuszczać ich I.. Wkrótce, szybko, ich makabryczny I. przelotna moda z pamięć. Oni miał był wszystkie I. forgotten when jeden numer z braindeath emerged w jeden I. obserwator miasto, I. do masz achieved jeden decydujący przełom w the I. z necromancy. The I. council z the obserwator I. be reluctant to do sth sent jeden numer z naukowiec I. do the laboratorium do oglądać the I.. The undead stwory oni znaleziono były I. ohydny, obrzydliwy i degenerated that the naukowiec I. declared that these I. that led ich creation zaprzeczać the I. zasada z beholderkin. Wszystkie undead były do być niszczyć i the I. były do być obalić raz i dla wszystkie.",
-      "lang": "Eventually they started exposing undead bodies to evil energies and merging them with living beings into massive undead monstrosities, which, however, withered and died almost as soon as they were created. After some experiments that failed in an particularly spectacular manner, the bone lords were forced to abandon their experiments. Soon, their gruesome experiments faded from memory. They had been all but forgotten when a number of braindeath emerged in a remote beholder city, claiming to have achieved a decisive breakthrough in the field of necromancy. The high council of the beholder elders reluctantly sent a number of scientists down to the laboratories to examine the results. The undead creatures they found were so hideous and degenerated that the scientists flatly declared that these experiments that led their creation contradicted the very principles of beholderkin. All undead were to be destroyed and the experiments were to be abolished once and for all."
-    },
-    {
-      "key": "book.otbm.ever_may_those_who_will",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "ever. May those who will come not fall prey to the same evil as we did.",
-      "pl": "kiedykolwiek. A. móc those kto will come Niet I. I. do the I. I. as my zrobił.",
-      "lang": "ever. May those who will come not fall prey to the same evil as we did."
-    },
-    {
-      "key": "book.otbm.every_child_knows_the_sad",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Every child knows the sad fate of the Kha'labal. Once it was brimming with life, a verdant paradise filled with lush forests and countless freshwater springs. The gods created this paradise and gave it to their newly-made race, the humans, as a present. Protected on all sides by the sea or by insurpassable mountains, the Kha'labal was the perfect environment for the young, vulnerable race to flourish. And flourish and thrive it did. Guided by their leader Banor and endowed with amazing technical skills and knowledge by their creators, the humans managed to settle the whole Kha'labal within few generations, and beautiful buildings rose to the sky, the mightiest of which were to be found in the majestic city of Ankrahmun. These early humans, who today are called the Founders, were a friendly race who lived in peace and harmony with each other, ignorant of the horrors lurking in the outside world. And the gods, who watched them from their thrones in the Kha'zeel, smiled on them.",
-      "pl": "I. dziecko kNiews the smutny los, przeznaczenie z the Kha'labal. Raz to był brimming z I., jeden verdant raj I. z bujny, wybujały las i countless I. I.. The gods created I. raj i gave to do ich nowo-zrobiony I., the I., as jeden present. Chronić na wszystkie I. by the morze lub by insurpassable góra, the Kha'labal był the perfect otoczenie, środowisko dla the I., wrażliwy, podatny na zranienie, podatny I. do I.. I I. i prosperować, rozkwitać to zrobił. Guided by ich lider, przywódca BaNier i obdarzać, obdarowywać z zdumiewający I. umiejętności i kNiewledge by ich creators, the I. managed do I. the I. Kha'labal wewnątrz few pokolenie, generacja, i piękny I. I. do the niebo, the mightiest z I. były do być znaleziono w the majestatyczny miasto z Ankrahmun. These ucho I., kto dzisiaj są called the I., były jeden I. I. kto lived w peace i harmonia z I. drugi, pozostały, igNierant z the przerażenie, zgroza czaić się w the I. I.. I the gods, kto watched ich z ich tron w the Kha'zeel, smiled na ich.",
-      "lang": "Every child knows the sad fate of the Kha'labal. Once it was brimming with life, a verdant paradise filled with lush forests and countless freshwater springs. The gods created this paradise and gave it to their newly-made race, the humans, as a present. Protected on all sides by the sea or by insurpassable mountains, the Kha'labal was the perfect environment for the young, vulnerable race to flourish. And flourish and thrive it did. Guided by their leader Banor and endowed with amazing technical skills and knowledge by their creators, the humans managed to settle the whole Kha'labal within few generations, and beautiful buildings rose to the sky, the mightiest of which were to be found in the majestic city of Ankrahmun. These early humans, who today are called the Founders, were a friendly race who lived in peace and harmony with each other, ignorant of the horrors lurking in the outside world. And the gods, who watched them from their thrones in the Kha'zeel, smiled on them."
     },
     {
       "key": "book.otbm.everyone_of_the_old_races",
@@ -3612,6 +2910,708 @@
       "en": "Noncompliance with library rules will have you sent away as a vivisection subject.",
       "pl": "Niencompliance z biblioteka I. will masz ty sent I. as jeden vivisection subject.",
       "lang": "Noncompliance with library rules will have you sent away as a vivisection subject."
+    },
+    {
+      "key": "book.otbm.none_of_the_old_peoples",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "none of the old peoples has recovered from the great war. Tibia was completely scattered with the corpses of the great battle,",
+      "pl": "Niene z the I. I. ma wyzdrowieć, odzyskiwać siły z the I. I.. Tibia był I. rozrzucony z the corpses z the I. I.,",
+      "lang": "none of the old peoples has recovered from the great war. Tibia was completely scattered with the corpses of the great battle,"
+    },
+    {
+      "key": "book.otbm.nonetheless_two_of_them_were",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Nonetheless two of them were given to the torturers.",
+      "pl": "Nienetheless dwa z ich były I. do the torturers.",
+      "lang": "Nonetheless two of them were given to the torturers."
+    },
+    {
+      "key": "book.otbm.noodles_academy_of_modern_magic",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Noodles Academy of Modern Magic",
+      "pl": "Nieodles Akademia z Współczesny I.",
+      "lang": "Noodles Academy of Modern Magic"
+    },
+    {
+      "key": "book.otbm.north_to_the_openair_theatre",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "North - To the Open-Air Theatre of Thais",
+      "pl": "Nierth - Do the Otwórz-I. Theatre z Thais",
+      "lang": "North - To the Open-Air Theatre of Thais"
+    },
+    {
+      "key": "book.otbm.northern_production_site_use_ladder",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Northern production site - use ladder to enter. // Caution: Orc camp nearby. Protective gear required.",
+      "pl": "Nierthern produkcja I. - use drabina do I.. // I.: Orc I. pobliski. Ochronny I. wymagany.",
+      "lang": "Northern production site - use ladder to enter. // Caution: Orc camp nearby. Protective gear required."
+    },
+    {
+      "key": "book.otbm.not_turn_the_tables_some",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "not turn the tables. Some of them turned thereupon away from Uman and called Crunor their lord, in order to serve from then",
+      "pl": "Niet turn the I.. I. z ich turned thereupon I. z Uman i called CruNier ich lord, w order do serve z wtedy",
+      "lang": "not turn the tables. Some of them turned thereupon away from Uman and called Crunor their lord, in order to serve from then"
+    },
+    {
+      "key": "book.otbm.note_these_strange_mushrooms_are",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Note: these strange mushrooms are slowly gaining the upper hand. We have to do something about the leaks in the lower levels and fast.",
+      "pl": "Niete: these dziwny mushmiejsces są I. I. the I. hand. My masz do robić coś o the I. w the I. pozioms i I..",
+      "lang": "Note: these strange mushrooms are slowly gaining the upper hand. We have to do something about the leaks in the lower levels and fast."
+    },
+    {
+      "key": "book.otbm.now_read_on_if_you",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Now read on. If you stop the chant for longer than a breath, horrible shadows will stalk you and whisper foul dreams in your ears while you wake, the undead lord will raise his putrid hand to squash you, and the demons shall feast on your intestines while you still live to see it. now sing the following:",
+      "pl": "Niew czytać, przeczytać na. If ty stop the I. dla longer z niż jeden a. oddech, okropny, straszliwy cień will I. ty i I. I. I. w twój ucho I. ty I., the undead lord will I. jego zgniły hand do I. ty, i the demon a. będzie I. na twój jelito I. ty I. live do I. to. Niew śpiewać the I.:",
+      "lang": "Now read on. If you stop the chant for longer than a breath, horrible shadows will stalk you and whisper foul dreams in your ears while you wake, the undead lord will raise his putrid hand to squash you, and the demons shall feast on your intestines while you still live to see it. now sing the following:"
+    },
+    {
+      "key": "book.otbm.now_there_is_no_truning",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Now there is no truning back. We will fight and there is just death or victory. Surrender or truce is no option!",
+      "pl": "Niew Nie magister nauk humanistycznych, magister truning I.. My will I. i Dowcip just I. lub zwycięstwo. I. lub rozejm jest Nie możliwość, opcja!",
+      "lang": "Now there is no truning back. We will fight and there is just death or victory. Surrender or truce is no option!"
+    },
+    {
+      "key": "book.otbm.now_you_only_step_in",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Now you only step in the teleporter, that is located near the resting rooms and you will be teleported on the surface.",
+      "pl": "Niew ty tylko step w the teleportowaće..., that jest located I. the resting miejsces i ty will być przeteleportowaćowany na the I..",
+      "lang": "Now you only step in the teleporter, that is located near the resting rooms and you will be teleported on the surface."
+    },
+    {
+      "key": "book.otbm.obujos_domingo_18h_01h",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Obujos: Domingo (18h - 01h)",
+      "pl": "Obujos: Domingo (18:00 - 01:00)",
+      "lang": "Obujos: Domingo (18h - 01h)"
+    },
+    {
+      "key": "book.otbm.obujos_domingo_18h_01h_867ad284",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Obujos: Domingo (18h - 01h)",
+      "pl": "Obujos: Domingo (18:00 - 01:00)",
+      "lang": "Obujos: Domingo (18h - 01h)"
+    },
+    {
+      "key": "book.otbm.obujos_sunday_3_pm_10",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Obujos: Sunday (3 PM - 10 PM)",
+      "pl": "Obujos: I. (3 PREMIER - 10 PREMIER)",
+      "lang": "Obujos: Sunday (3 PM - 10 PM)"
+    },
+    {
+      "key": "book.otbm.obujos_sunday_3_pm_10_8b659036",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Obujos: Sunday (3 PM - 10 PM)",
+      "pl": "Obujos: I. (3 PREMIER - 10 PREMIER)",
+      "lang": "Obujos: Sunday (3 PM - 10 PM)"
+    },
+    {
+      "key": "book.otbm.of_a_place_called_the",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "of a place called the Pits",
+      "pl": "z jeden I. called the Dół, jama",
+      "lang": "of a place called the Pits"
+    },
+    {
+      "key": "book.otbm.of_change_what_today_is",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "of change. What today is still natural, may as soon as tomorrow be only a legend, what today is still fantasy, may already",
+      "pl": "z change. I. dzisiaj jest I. I., a. móc as wkrótce, szybko as jutro być tylko jeden legenda, I. dzisiaj jest I. fantazjowanie, a. móc już",
+      "lang": "of change. What today is still natural, may as soon as tomorrow be only a legend, what today is still fantasy, may already"
+    },
+    {
+      "key": "book.otbm.of_course_we_cant_risk",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Of course we cant risk to build a teleporter on the surface because of our enemies. So you have to walk the way back through the maze. But since you know the right way it shouldnt take very long.",
+      "pl": "Z course my cant I. do I. jeden teleportowaće... na the I. ponieważ, bo z nasz wróg. I. Masz do I. the way I. through the labirynt. I. I. ty kNiew the I. way to shouldnt take I. long.",
+      "lang": "Of course we cant risk to build a teleporter on the surface because of our enemies. So you have to walk the way back through the maze. But since you know the right way it shouldnt take very long."
+    },
+    {
+      "key": "book.otbm.of_despair_in_which_our",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "of despair in which our enemies are numerous and our",
+      "pl": "z I. w I. nasz wróg są liczny i nasz",
+      "lang": "of despair in which our enemies are numerous and our"
+    },
+    {
+      "key": "book.otbm.of_inferno_and_what_is",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "of Inferno. And what is the meaning of",
+      "pl": "z InferNie. I I. jest the znaczenie z",
+      "lang": "of Inferno. And what is the meaning of"
+    },
+    {
+      "key": "book.otbm.of_kirok_which_one_would",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "of Kirok, which one would call the crazy one. Kirok was from precipitous, scizophrenic nature. On the one hand he was",
+      "pl": "z Kirok, I. I. would call the crazy I.. Kirok był z stromy, przepastny, scizophrenic natura. Na the I. hand on był",
+      "lang": "of Kirok, which one would call the crazy one. Kirok was from precipitous, scizophrenic nature. On the one hand he was"
+    },
+    {
+      "key": "book.otbm.of_your_own_in_which",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "of your own in which you can spend the night.",
+      "pl": "z twój I. w I. Lekarz rejonowyżesz wydawać the night.",
+      "lang": "of your own in which you can spend the night."
+    },
+    {
+      "key": "book.otbm.official_city_affairs_only_for",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Official city affairs only. For personal banking, please apply at counter upstairs. Depot downstairs in the treasury.",
+      "pl": "I. miasto sprawa tylko. Dla osobisty bankowość, Proszę zgłaszać swoją kandydaturę, zgłaszać kandydaturę w liczba I.. Skład I. w the skarbnica.",
+      "lang": "Official city affairs only. For personal banking, please apply at counter upstairs. Depot downstairs in the treasury."
+    },
+    {
+      "key": "book.otbm.oh_how_i_long_to",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Oh, how I long to see humans again!",
+      "pl": "O, jak I long do I. I. ponownie!",
+      "lang": "Oh, how I long to see humans again!"
+    },
+    {
+      "key": "book.otbm.on_a_remote_isle_in",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "On a remote isle in the South there is a grotto where all witches come together to celebrate some demonic festivity once a year. They teach each other new malicious",
+      "pl": "Na jeden I. wyspa, ostrów w the I. Dowcip jeden grota where wszystkie I. come razem do świętować I. demoniczny, złowrogi uroczystość raz jeden a. rok. Oni uczyć I. drugi, pozostały new złośliwy",
+      "lang": "On a remote isle in the South there is a grotto where all witches come together to celebrate some demonic festivity once a year. They teach each other new malicious"
+    },
+    {
+      "key": "book.otbm.on_a_remote_isle_in_1075895d",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "On a remote isle in the South there is a grotto where all witches come together to celebrate some demonic festivity once a year. They teach each other new malicious",
+      "pl": "Na jeden I. wyspa, ostrów w the I. Dowcip jeden grota where wszystkie I. come razem do świętować I. demoniczny, złowrogi uroczystość raz jeden a. rok. Oni uczyć I. drugi, pozostały new złośliwy",
+      "lang": "On a remote isle in the South there is a grotto where all witches come together to celebrate some demonic festivity once a year. They teach each other new malicious"
+    },
+    {
+      "key": "book.otbm.on_as_druids_for_the",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "on as druids for the forces of the life. Together with the godly world tree Crunor they created many of the creatures, that",
+      "pl": "na as druids dla the I. z the I.. Razem z the pobożny I. drzewo CruNier oni created wiele, dużo z the stwory, that",
+      "lang": "on as druids for the forces of the life. Together with the godly world tree Crunor they created many of the creatures, that"
+    },
+    {
+      "key": "book.otbm.on_my_own_i_will",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "on my own. I will never share my secrets and the success with the brotherhood, but now",
+      "pl": "na mój I.. I will nigdy I. mój I. i the sukces z the braterstwo, I. Niew",
+      "lang": "on my own. I will never share my secrets and the success with the brotherhood, but now"
+    },
+    {
+      "key": "book.otbm.on_one_of_the_isles",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "On one of the isles I witnessed an utmost unusual occurrence.",
+      "pl": "Na I. z the wyspa, ostrów I I. jeden najwyższy niezwykły wydarzenie.",
+      "lang": "On one of the isles I witnessed an utmost unusual occurrence."
+    },
+    {
+      "key": "book.otbm.on_one_of_the_isles_c4f4d602",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "On one of the isles I witnessed an utmost unusual occurrence.",
+      "pl": "Na I. z the wyspa, ostrów I I. jeden najwyższy niezwykły wydarzenie.",
+      "lang": "On one of the isles I witnessed an utmost unusual occurrence."
+    },
+    {
+      "key": "book.otbm.on_the_mainland_is_the",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "On the mainland is the city of Thais, ruled by the wise and just King Tibianus. His explorers found the new soulvortex on this isle and build this base to protect and train the incoming heroes.",
+      "pl": "Na the I. jest the miasto z Thais, ruled by the I. i just Król Tibianus. Jego badacz, eksplorator znaleziono the new soulvortex na I. wyspa, ostrów i I. I. I. do chronić i I. the I. bohater.",
+      "lang": "On the mainland is the city of Thais, ruled by the wise and just King Tibianus. His explorers found the new soulvortex on this isle and build this base to protect and train the incoming heroes."
+    },
+    {
+      "key": "book.otbm.on_the_request_of_our",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "On the request of our beloved pharaoh we have stopped the research on the XXXXXX spell. All research was destroyed, and although we had met with considerable success in XXXXX the XXXXX and even seemed to have a solution for the problem of the plasma leak the project has been discarded. Even the side reports were destroyed. An apology has been issued to the pharaoh for thoughtlessly researching in that field.",
+      "pl": "Na the rezadanie z nasz ukochany pharaoh my masz zatrzymaNie the I. na the XXXXXX zaklęcie. Wszystkie I. był niszczyć, i chociaż my miał met z znaczny sukces w XXXXX the XXXXX i I. a. wydawać się być, wydawać się, zdawać się do masz jeden rozwiązanie dla the I. z the osocze I. the project ma był pozbywać się, wyrzucać. I. the I. I. były niszczyć. Jeden prośba o wybaczenie, przeprosiny ma był issued do the pharaoh dla bezmyślny I. w that I..",
+      "lang": "On the request of our beloved pharaoh we have stopped the research on the XXXXXX spell. All research was destroyed, and although we had met with considerable success in XXXXX the XXXXX and even seemed to have a solution for the problem of the plasma leak the project has been discarded. Even the side reports were destroyed. An apology has been issued to the pharaoh for thoughtlessly researching in that field."
+    },
+    {
+      "key": "book.otbm.on_those_who_try_the",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "on those who try the ascension.",
+      "pl": "na those kto I. the ascension.",
+      "lang": "on those who try the ascension."
+    },
+    {
+      "key": "book.otbm.on_those_who_try_the_2a6b8e93",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "on those who try the ascension.",
+      "pl": "na those kto I. the ascension.",
+      "lang": "on those who try the ascension."
+    },
+    {
+      "key": "book.otbm.once_again_battle_the_forces",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "once again battle the forces of evil; and a new",
+      "pl": "raz ponownie I. the I. z I.; i jeden new",
+      "lang": "once again battle the forces of evil; and a new"
+    },
+    {
+      "key": "book.otbm.once_in_the_olden_days",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Once in the olden days, the beholderkin numbered among the most powerful races of the world. Their mighty cities, which characteristically contained ominous dark pyramids, could be found all over the world. The beholders erected them using the same innate form of telekinesis which lets their bodies float in the air. However, they could not do completely without hands and arms that did their bidding. For this reason they relied on another innate power of their race - the dark power of necromancy. Thanks to the magical abilities of their eye stalks, which are capable of producing various powerful kinds of magic to an extent that is denied to other races unless they study for many decades, the beholders also knew how to command the dead. As a result, they used a monstrous strategy: Whenever they conquered an area they turned their unfortunate victims into undead slaves. Using these undead legions as their shock troops, the beholders went from victory to victory. They built a huge fortress that served as their power base, and from there they went to conquer the world.",
+      "pl": "Raz w the olden dni, the beholderkin numer among the most potężny Królewski Automobilklub z the I.. Ich I. miasto, I. characteristically zawierać omiNieus I. piramida, mógł być znaleziono wszystkie I. the I.. The obserwator I. ich using the I. wrodzony I. z telekinesis I. lets ich ciało I. w the I.. Jednak, oni mógł Niet robić I. bez hands i ramię, ręka that zrobił ich bidding. Dla I. I. oni relied na aNiether wrodzony I. z ich I. - the I. I. z necromancy. I. do the czarodziejski, magiczny zdolność, możliwość z ich I. I., I. są zdolny z producing różnorodny, rozmaity potężny I. z I. do jeden rozmiar that jest denied do drugi, pozostały Królewski Automobilklub jeżeli nie, o ile nie oni I. dla wiele, dużo dekada, the obserwator także knew jak do I. the dead. As jeden I., oni used jeden monstrualny, potworny strategia: Kiedykolwiek oni podbijać jeden obszar, region oni turned ich nieszczęśliwy, nie mający powodzenia ofiara a. do undead Słowianin. Using these undead legion as ich I. I., the obserwator went z zwycięstwo do zwycięstwo. Oni zbudowany jeden ogromny forteca that served as ich I. I., i z there oni went do podbijać the I..",
+      "lang": "Once in the olden days, the beholderkin numbered among the most powerful races of the world. Their mighty cities, which characteristically contained ominous dark pyramids, could be found all over the world. The beholders erected them using the same innate form of telekinesis which lets their bodies float in the air. However, they could not do completely without hands and arms that did their bidding. For this reason they relied on another innate power of their race - the dark power of necromancy. Thanks to the magical abilities of their eye stalks, which are capable of producing various powerful kinds of magic to an extent that is denied to other races unless they study for many decades, the beholders also knew how to command the dead. As a result, they used a monstrous strategy: Whenever they conquered an area they turned their unfortunate victims into undead slaves. Using these undead legions as their shock troops, the beholders went from victory to victory. They built a huge fortress that served as their power base, and from there they went to conquer the world."
+    },
+    {
+      "key": "book.otbm.once_the_gate_is_open",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Once the gate is open, demonic minions appear and boost the negative energy of the place by their sheer presence. Later, the demonic master is following. His appearance causes a drop of the negative energy as the demon lord is feeding on it to sustain his existence in our realm.",
+      "pl": "Raz the brama jest otwórz, demoniczny, złowrogi minions pojawiać się i I. the I. energia z the I. by ich czysty, niezachwiany I.. Later, the demoniczny, złowrogi I. jest I.. Jego pojawienie się I. jeden I. z the I. energia as the demon lord jest I. na to do sustain jego istnienie w nasz dziedzina, sfera.",
+      "lang": "Once the gate is open, demonic minions appear and boost the negative energy of the place by their sheer presence. Later, the demonic master is following. His appearance causes a drop of the negative energy as the demon lord is feeding on it to sustain his existence in our realm."
+    },
+    {
+      "key": "book.otbm.once_they_are_slain_they",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "* Once they are slain, they can be looted for a vital ingredient which should be given to one of the bakers at the cake extractor machines.",
+      "pl": "* Raz oni są slain, oni może być I. dla jeden I. składnik I. a. powinien, powinna być I. do I. z the piekarz w the ciasto, ciastko wentylator okienny, wentylator I..",
+      "lang": "* Once they are slain, they can be looted for a vital ingredient which should be given to one of the bakers at the cake extractor machines."
+    },
+    {
+      "key": "book.otbm.once_they_are_slain_they_cd08c61b",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "* Once they are slain, they can be looted for a vital ingredient which should be given to one of the bakers at the cake extractor machines.",
+      "pl": "* Raz oni są slain, oni może być I. dla jeden I. składnik I. a. powinien, powinna być I. do I. z the piekarz w the ciasto, ciastko wentylator okienny, wentylator I..",
+      "lang": "* Once they are slain, they can be looted for a vital ingredient which should be given to one of the bakers at the cake extractor machines."
+    },
+    {
+      "key": "book.otbm.once_upon_a_time_there",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Once upon a time there was a little gnome.",
+      "pl": "Raz na jeden czas there był jeden little gNieme.",
+      "lang": "Once upon a time there was a little gnome."
+    },
+    {
+      "key": "book.otbm.once_upon_a_time_there_39f27220",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Once upon a time, there have been a knight, a druid, a paladin and a sorcerer that survived the great battle upon the fields of glory. Some of them were wounded, some not. All were deadly tired. They had to escape from a hord of orcs, a whole tribe with more then 35 fighters. Late in the night, they came to a huge bridge, or at least the rest of a once mighty bridge. It was small and seemed to be not very save. The sorcerer screamed some loud and mighty words and for a second the bridge glew in a blue light.",
+      "pl": "Raz na jeden czas, there masz był jeden I., jeden druid, jeden paladin i jeden sorcerer that survived the I. I. na the I. z I.. I. z ich były I., I. Niet. Wszystkie były I. zmęczony. Oni miał do I. z jeden hord z orcs, jeden I. plemię, szczep z more wtedy 35 bojownik, wojownik, uczestnik walki. I. w the night, oni came do jeden ogromny most, lub w najmniej the rest z jeden raz I. most. To był I. i a. wydawać się być, wydawać się, zdawać się do być Niet I. I.. The sorcerer I. I. I. i I. I. i dla jeden sekunda the most glew w jeden I. I..",
+      "lang": "Once upon a time, there have been a knight, a druid, a paladin and a sorcerer that survived the great battle upon the fields of glory. Some of them were wounded, some not. All were deadly tired. They had to escape from a hord of orcs, a whole tribe with more then 35 fighters. Late in the night, they came to a huge bridge, or at least the rest of a once mighty bridge. It was small and seemed to be not very save. The sorcerer screamed some loud and mighty words and for a second the bridge glew in a blue light."
+    },
+    {
+      "key": "book.otbm.one_specimen_was_lost_in",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "One specimen was lost in that experiment. The others were salvaged in different states of sunburn and began to regenerate.",
+      "pl": "I. okaz był I. w that I.. The drugi, pozostały były salvaged w różny I. z oparzenie słoneczne i began do odradzać się.",
+      "lang": "One specimen was lost in that experiment. The others were salvaged in different states of sunburn and began to regenerate."
+    },
+    {
+      "key": "book.otbm.only_enter_with_adequately_warm",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Only enter with adequately warm clothing!",
+      "pl": "Tylko I. z wystarczający warm ubranie, odzież!",
+      "lang": "Only enter with adequately warm clothing!"
+    },
+    {
+      "key": "book.otbm.only_experienced_adventurers_are_allowed",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Only experienced adventurers are allowed to leave the village.",
+      "pl": "Tylko doświadczony awanturnik są I. do I. the wioska.",
+      "lang": "Only experienced adventurers are allowed to leave the village."
+    },
+    {
+      "key": "book.otbm.only_experienced_adventurers_should_proceed",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Only experienced adventurers should proceed!",
+      "pl": "Tylko doświadczony awanturnik a. powinien, powinna zabierać się!",
+      "lang": "Only experienced adventurers should proceed!"
+    },
+    {
+      "key": "book.otbm.only_experienced_adventurers_should_proceed_c92839da",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Only experienced adventurers should proceed from here.",
+      "pl": "Tylko doświadczony awanturnik a. powinien, powinna zabierać się z tutaj, tu.",
+      "lang": "Only experienced adventurers should proceed from here."
+    },
+    {
+      "key": "book.otbm.only_honorary_barbarians_may_become",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Only honorary barbarians may become inhabitants of Svargrond!",
+      "pl": "Tylko hoNierary barbarzyńca a. móc stawać się mieszkaniec z Svargrond!",
+      "lang": "Only honorary barbarians may become inhabitants of Svargrond!"
+    },
+    {
+      "key": "book.otbm.only_premium_citizens_may_pass",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Only premium citizens may pass.",
+      "pl": "Tylko premium obywatel a. móc I..",
+      "lang": "Only premium citizens may pass."
+    },
+    {
+      "key": "book.otbm.only_premium_citizens_may_pass_31b94383",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Only premium citizens may pass.",
+      "pl": "Tylko premium obywatel a. móc I..",
+      "lang": "Only premium citizens may pass."
+    },
+    {
+      "key": "book.otbm.only_the_humble_may_touch",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Only the humble may touch the Sword of Fury",
+      "pl": "Tylko the skromny, pokorny a. móc I. the Miecz z Wściekłość, furia",
+      "lang": "Only the humble may touch the Sword of Fury"
+    },
+    {
+      "key": "book.otbm.only_those_adept_at_targeting",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Only those adept at targeting and aiming can put it to proper use.",
+      "pl": "Tylko those zręczny, biegły w cel i I. może put to do I. use.",
+      "lang": "Only those adept at targeting and aiming can put it to proper use."
+    },
+    {
+      "key": "book.otbm.only_those_skilled_in_magic",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Only those skilled in magic can put it to proper use.",
+      "pl": "Tylko those wykwalifikowany, wyszkolony w I. może put to do I. use.",
+      "lang": "Only those skilled in magic can put it to proper use."
+    },
+    {
+      "key": "book.otbm.only_those_standing_strong_and",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Only those standing strong and fighting powerfully can put it to proper use.",
+      "pl": "Tylko those I. silny, mocny i I. potężny może put to do I. use.",
+      "lang": "Only those standing strong and fighting powerfully can put it to proper use."
+    },
+    {
+      "key": "book.otbm.only_true_believers_may_enter",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Only true believers may enter",
+      "pl": "Tylko prawdziwy I. a. móc I.",
+      "lang": "Only true believers may enter"
+    },
+    {
+      "key": "book.otbm.only_with_drastic_decisions_and",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Only with drastic decisions and changes, this great goal can be achieved. We will have to get through hard times and prepare for them as good as we can. Most importantly, a good city needs a solid base. For this reason we have to start at the bottom to clean things up. We have to be precise and consequent in our decisions and actions. This way we will be able to create a solid base for the city.",
+      "pl": "Tylko z drastyczny I. i changes, I. I. bramka może być achieved. My will masz do get through hard czas i przygotowywać dla ich as I. as my może. Most ważny, znaczący, jeden I. miasto potrzebować jeden I. I.. Dla I. I. my masz do start w the I. do I. rzecz up. My masz do być dokładny, precyzyjny i późniejszy, następujący w nasz I. i działanie. I. way my will być zdolny do create jeden I. I. dla the miasto.",
+      "lang": "Only with drastic decisions and changes, this great goal can be achieved. We will have to get through hard times and prepare for them as good as we can. Most importantly, a good city needs a solid base. For this reason we have to start at the bottom to clean things up. We have to be precise and consequent in our decisions and actions. This way we will be able to create a solid base for the city."
+    },
+    {
+      "key": "book.otbm.orange_star_stella_flava",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Orange Star (stella flava)",
+      "pl": "I. I. (stella flava)",
+      "lang": "Orange Star (stella flava)"
+    },
+    {
+      "key": "book.otbm.orcish_hordes_and_saved_carlin",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "orcish hordes and saved Carlin from destruction.",
+      "pl": "orcish zgraja, horda i saved Carlin z zniszczenie.",
+      "lang": "orcish hordes and saved Carlin from destruction."
+    },
+    {
+      "key": "book.otbm.orcs_are_intelligent_though_some",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Orcs ARE intelligent. Though some dwarfes mumble about a shared hivemind of the greenskins, there is no evidence for that. Orcs have speech and are capable to learn other humanoids language quite well ... if they want, what almost never is the case. They lack a written language though. Some of the more educated orcs use human letters to write down orcish texts. It's rumored that the orcs we encounter now and then are just barbarians of their own kind and that there is a more 'civilized' orcish culture somewhere. There are some clues that the orcs indeed had a written language, but the modern orcs are unable to read it as we are.",
+      "pl": "Orcs SĄ inteligentny. I. I. I. mamrotać o jeden shared hivemind z the greenskins, Nie magister nauk humanistycznych, magister dowód, dowody dla that. Orcs masz I. i są zdolny do uczyć się, nauczyć się drugi, pozostały humaNieids język całkiem, dość well... if oni I., I. prawie nigdy jest the przypadek. Oni brak, niedostatek jeden pisemny język I.. I. z the more educated orcs use I. I. do I. I. orcish tekst. To rumored that the orcs my I. Niew i wtedy są just barbarzyńca z ich I. I. i that Dowcip jeden more 'cywilizowany' orcish culture gdzieś. Są I. wskazówka, ślad that the orcs faktycznie, naprawdę miał jeden pisemny język, I. the współczesny orcs są be unable to do sth do czytać, przeczytać to as my są.",
+      "lang": "Orcs ARE intelligent. Though some dwarfes mumble about a shared hivemind of the greenskins, there is no evidence for that. Orcs have speech and are capable to learn other humanoids language quite well ... if they want, what almost never is the case. They lack a written language though. Some of the more educated orcs use human letters to write down orcish texts. It's rumored that the orcs we encounter now and then are just barbarians of their own kind and that there is a more 'civilized' orcish culture somewhere. There are some clues that the orcs indeed had a written language, but the modern orcs are unable to read it as we are."
+    },
+    {
+      "key": "book.otbm.orruk_ahtanri_anvi_ra_shuk",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Orruk ah'tanri, anvi ra shuk ta",
+      "pl": "Orruk ah'tanri, anvi Akademia Królewska shuk dzięki, dziękuję",
+      "lang": "Orruk ah'tanri, anvi ra shuk ta"
+    },
+    {
+      "key": "book.otbm.other_creatures_brog_was_fascinated",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "other creatures. Brog was fascinated by this created being and its terrible children, although they showed him neither loyalty nor",
+      "pl": "drugi, pozostały stwory. Brog był fascinated by I. created istota i jego, jej, ich, swój straszny, okropny children, chociaż oni I. him I. lojalność Nier",
+      "lang": "other creatures. Brog was fascinated by this created being and its terrible children, although they showed him neither loyalty nor"
+    },
+    {
+      "key": "book.otbm.ottokars_hospital_for_the_poor",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ottokar's Hospital for the Poor and Afflicted. All donations welcome!",
+      "pl": "Ottokar's Szpital dla the Biedny i A. udręczyć. Wszystkie donacja, dar I.!",
+      "lang": "Ottokar's Hospital for the Poor and Afflicted. All donations welcome!"
+    },
+    {
+      "key": "book.otbm.our_ancients_got_somehow_some",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Our ancients got somehow some might rings.",
+      "pl": "Nasz starożytny got w jakiś sposób, jakoś I. might rings.",
+      "lang": "Our ancients got somehow some might rings."
+    },
+    {
+      "key": "book.otbm.our_ancients_used_their_mighty",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Our ancients used their mighty magical power to control the lava down here. With the help of our loyal trolls, they somehow build this city.",
+      "pl": "Nasz starożytny used ich I. czarodziejski, magiczny I. do control the lawa I. tutaj, tu. Z the help z nasz lojalny trolls, oni w jakiś sposób, jakoś I. I. miasto.",
+      "lang": "Our ancients used their mighty magical power to control the lava down here. With the help of our loyal trolls, they somehow build this city."
+    },
+    {
+      "key": "book.otbm.our_army_is_nott_sleeping",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Our army is nott sleeping",
+      "pl": "Nasz wojsko, armia jest Niett I.",
+      "lang": "Our army is nott sleeping"
+    },
+    {
+      "key": "book.otbm.our_goal_is_to_research",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Our goal is to research into the magic web of our world and to control it, so we can finally reach our purpose: the immortality.",
+      "pl": "Nasz bramka jest do I. a. do the I. pajęczyna z nasz I. i do control to, I. my może w końcu, ostatecznie reach nasz cel: the immortality.",
+      "lang": "Our goal is to research into the magic web of our world and to control it, so we can finally reach our purpose: the immortality."
+    },
+    {
+      "key": "book.otbm.our_main_task_is_to",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Our main task is to find this secret place of the Ruthless Seven and to kill the lieutenants there. Finally, the doomsday device has to be destroyed.",
+      "pl": "Nasz main zadanie, zajęcie jest do I. I. I. I. z the Bezlitosny Siedem i do I. the porucznik there. W końcu, ostatecznie, the doomsday urządzenie ma do być niszczyć.",
+      "lang": "Our main task is to find this secret place of the Ruthless Seven and to kill the lieutenants there. Finally, the doomsday device has to be destroyed."
+    },
+    {
+      "key": "book.otbm.our_progress_is_very_good",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Our progress is very good! If we continue like that and without any problems then we will be able to close the investigations on the wand of might within 1 year!",
+      "pl": "Nasz progress jest I. I.! If my kontynuować like that i bez dowolny I. wtedy my will być zdolny do Zamknij the dochodzenie na the czarodziejska różdżka, różdżka z might wewnątrz 1 a. rok!",
+      "lang": "Our progress is very good! If we continue like that and without any problems then we will be able to close the investigations on the wand of might within 1 year!"
+    },
+    {
+      "key": "book.otbm.our_sources_are_highly_reliable",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Our sources are highly reliable. The Ruthless Seven have deployed some of their most powerful lieutenants to ensure the success of their mission. Strangely, the things we read in the minds of these lieutenants did not point to the Plains of Havoc as expected but to the remote isle of Edron.",
+      "pl": "Nasz źródło są bardzo, wysoce pewny, niezawodny. The Bezlitosny Siedem masz rozmieszczać w gotowości, rozmieszczać I. z ich most potężny porucznik do ensure the sukces z ich misja. Dziwnie, the rzecz my czytać, przeczytać w the minds z these porucznik zrobił Niet point do the I. z Chaos, zamieszanie as spodziewać się I. do the I. wyspa, ostrów z Edron.",
+      "lang": "Our sources are highly reliable. The Ruthless Seven have deployed some of their most powerful lieutenants to ensure the success of their mission. Strangely, the things we read in the minds of these lieutenants did not point to the Plains of Havoc as expected but to the remote isle of Edron."
+    },
+    {
+      "key": "book.otbm.our_studies_on_the_source",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Our studies on the source of our dreams are not conclusive. The elves are no help in this matter. I doubt they even understand what we are asking them about because their dreams are so different from ours that there are almost no similarities.",
+      "pl": "Nasz I. na the źródło z nasz I. są Niet rozstrzygający, decydujący, ostateczny. The elves są Nie help w I. I.. I I. oni I. rozumieć, pojmować I. my są I. ich o ponieważ, bo ich I. są I. różny z nasz that Są prawie Nie podobieństwo.",
+      "lang": "Our studies on the source of our dreams are not conclusive. The elves are no help in this matter. I doubt they even understand what we are asking them about because their dreams are so different from ours that there are almost no similarities."
+    },
+    {
+      "key": "book.otbm.our_wise_and_noble_leader",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Our wise and noble leader",
+      "pl": "Nasz I. i Nieble lider, przywódca",
+      "lang": "Our wise and noble leader"
+    },
+    {
+      "key": "book.otbm.our_world_of_tibia_is",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Our world of Tibia is filled with various kinds of magic. Until now, we dont know much about this magic. Only a small part of the whole magic power is under our control.",
+      "pl": "Nasz I. z Tibia jest I. z różnorodny, rozmaity I. z I.. I. Niew, my dont kNiew dużo, bardzo o I. I.. Tylko jeden I. part z the I. I. I. jest under nasz control.",
+      "lang": "Our world of Tibia is filled with various kinds of magic. Until now, we dont know much about this magic. Only a small part of the whole magic power is under our control."
+    },
+    {
+      "key": "book.otbm.out_by_the_hand_of",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "out by the hand of time soon.",
+      "pl": "out by the hand z czas wkrótce, szybko.",
+      "lang": "out by the hand of time soon."
+    },
+    {
+      "key": "book.otbm.path_to_the_gardens_of",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Path to the Gardens Of Night. Tread with care, pilgrim. The Dark One listens for you.",
+      "pl": "Ścieżka do the I. Z Night. I. z care, pielgrzym. The I. I. I. dla ty.",
+      "lang": "Path to the Gardens Of Night. Tread with care, pilgrim. The Dark One listens for you."
+    },
+    {
+      "key": "book.otbm.pentagramdrawing_a_beginners_guide",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Pentagram-drawing, a beginner's guide",
+      "pl": "Pentagram-I., jeden początkujący I.",
+      "lang": "Pentagram-drawing, a beginner's guide"
+    },
+    {
+      "key": "book.otbm.places_of_gathering_of_the",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Places of gathering of the diverse undead. A practical map through Drefia, by Imdi Joons",
+      "pl": "I. z I. z the odmienny, różnoraki undead. JEDEN I. mapa through Drefia, by Imdi Joons",
+      "lang": "Places of gathering of the diverse undead. A practical map through Drefia, by Imdi Joons"
+    },
+    {
+      "key": "book.otbm.plank_and_treasurechest_market_furniture",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Plank and Treasurechest Market - Furniture",
+      "pl": "I. i Treasurechest I. - Meble",
+      "lang": "Plank and Treasurechest Market - Furniture"
+    },
+    {
+      "key": "book.otbm.plank_and_treasurechest_market_furniture_9f3d917c",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Plank and Treasurechest Market - Furniture",
+      "pl": "I. i Treasurechest I. - Meble",
+      "lang": "Plank and Treasurechest Market - Furniture"
+    },
+    {
+      "key": "book.otbm.please_dont_touch_we_try",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Please don't touch, we try to revive Magister Alverus.",
+      "pl": "Proszę don't I., my I. do ożywiać się, ożywiać Magister Alverus.",
+      "lang": "Please don't touch, we try to revive Magister Alverus."
+    },
+    {
+      "key": "book.otbm.please_keep_the_rooms_clean",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Please keep the rooms clean!",
+      "pl": "Proszę keep the miejsces I.!",
+      "lang": "Please keep the rooms clean!"
     }
   ],
   "length_ratio_issues": [

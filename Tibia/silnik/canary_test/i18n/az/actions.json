@@ -25,13 +25,13 @@
   "actions.quests.msg_1": "Boşdur.",
   "actions.quests.msg_2": "Boşdur.",
   "actions.random_items.say_1": "tapdın",
-  "actions.random_items.say_2": "You found nothing useful.",
-  "actions.random_items.say_3": "You found nothing useful.",
-  "actions.premium_scroll.msg_max_days": "You can not buy more than {max} days of premium account.",
-  "actions.hireling_foods.msg_too_full": "You're still too full to eat any gourmet dishes for a while.",
-  "actions.outfit_items.msg_need_outfit": "You need the outfit for this part.",
-  "actions.outfit_items.msg_already_own": "You already own this outfit part.",
-  "actions.key_door.msg_wrong_key": "The key does not match.",
-  "actions.gamestore.msg_no_rookgaard": "Store don't have offers for rookgaard citizen.",
-  "actions.gamestore.msg_exhausted": "You are exhausted."
+  "actions.random_items.say_2": "Faydalı heç nə tapmadınız.",
+  "actions.random_items.say_3": "Faydalı heç nə tapmadınız.",
+  "actions.premium_scroll.msg_max_days": "Siz {max} gündən artıq premium hesabı ala bilməzsiniz.",
+  "actions.hireling_foods.msg_too_full": "Hələ bir müddət hər hansı gurme yeməkləri yemək üçün çox doymusunuz.",
+  "actions.outfit_items.msg_need_outfit": "Bu hissə üçün sizə paltar lazımdır.",
+  "actions.outfit_items.msg_already_own": "Artıq bu geyim hissəsinə sahibsiniz.",
+  "actions.key_door.msg_wrong_key": "Açar uyğun gəlmir.",
+  "actions.gamestore.msg_no_rookgaard": "Mağazanın rookgaard vətəndaşı üçün təklifləri yoxdur.",
+  "actions.gamestore.msg_exhausted": "Siz yoruldunuz."
 }

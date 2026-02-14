@@ -378,10 +378,10 @@
       "status": "idle"
     }
   },
-  "generated_at_utc": "2026-02-14T10:55:40Z",
+  "generated_at_utc": "2026-02-14T11:06:33Z",
   "global": {
     "en_keys_total": 53586,
-    "errors_total": 1527,
+    "errors_total": 1530,
     "files_processed_total": 6443,
     "languages_total": 54
   },
@@ -437,10 +437,10 @@
   "schema_version": "3.0",
   "worker": {
     "current": {
-      "category": "es",
+      "category": "pl",
       "detail": "auto translate in progress",
       "eta_seconds": 0,
-      "file": "npc.json",
+      "file": "items.json",
       "phase": "AUTO_TRANSLATE",
       "progress": {
         "done": 0,
@@ -450,11 +450,11 @@
       "stage": "heartbeat_tick"
     },
     "cycle": 1,
-    "heartbeat_at_utc": "2026-02-14T10:50:46Z",
+    "heartbeat_at_utc": "2026-02-14T11:06:01Z",
     "host": "DESKTOP-338A5OQ",
     "mode": "continuous",
     "name": "i18n_worker_simple.sh",
-    "pid": 2015481,
+    "pid": 2034035,
     "status": "running",
     "version": "unknown"
   }

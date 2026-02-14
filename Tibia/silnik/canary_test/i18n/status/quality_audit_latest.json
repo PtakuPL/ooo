@@ -1,31 +1,16 @@
 {
-  "timestamp": "2026-02-14T10:52:17.395235Z",
+  "timestamp": "2026-02-14T11:03:51.219396Z",
   "checked_entries": 100,
-  "issues_found": 5,
+  "issues_found": 3,
   "issues_by_type": {
-    "identical_to_en": 2,
-    "identical_to_en_exempt": 17,
+    "identical_to_en_exempt": 19,
     "artifact_token": 3,
-    "suspicious_log_low": 145,
-    "suspicious_log_critical": 52,
+    "suspicious_log_low": 141,
+    "suspicious_log_critical": 56,
     "suspicious_log_high": 3,
     "suspicious_rejected_critical": 200
   },
   "issues": [
-    {
-      "key": "client.spells.text1",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Apprentice's Strike",
-      "translated": "Apprentice's Strike"
-    },
-    {
-      "key": "client.spells.text4",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Nature's Embrace",
-      "translated": "Nature's Embrace"
-    },
     {
       "key": "npc.raymond_striker.multi_21",
       "lang": "es",

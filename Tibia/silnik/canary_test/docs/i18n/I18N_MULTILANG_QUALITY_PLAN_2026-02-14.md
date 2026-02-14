@@ -97,6 +97,90 @@
 | Broken JSON fix | fa/mk/ms `achievements.json` | 3 pliki |
 | S18 `trimmed_en_copy` rule | `detect_suspicious()` | nowa reguła |
 
+## 0d. Głęboki audyt jakości — placeholdery, formatowanie, treść (2026-02-14 12:30 UTC)
+
+### ✅ Placeholdery — WYNIK POZYTYWNY
+
+| Typ | EN kluczy | RU BAD | PT BAD | FR BAD | RO BAD |
+|-----|-----------|--------|--------|--------|--------|
+| `{keyword}` NPC | 2 309 | 0 | 0 | 0 | 0 |
+| `\|PLAYERNAME\|` NPC | 678 | 0 | 0 | 0 | 0 |
+| `{0}` / `%s` quests | 68 | 0 | 0 | 0 | 0 |
+| `%s` questlog | 22 | 0 | 0 | 0 | 0 |
+| `(Key:XXXX)` items | 25 | 0 | 0 | 1* | 0 |
+
+> *FR `item.21392.name`: `silver key (Key:0010)` → `clé clé argentée` (usunięto nawiasy + duplikacja słowa)
+
+**Wniosek**: Worker poprawnie zachowuje placeholdery `{...}`, `|PLAYERNAME|`, `%s` — 0 błędów w genuine tłumaczeniach.
+
+### 🔴 Nowe problemy znalezione w treści tłumaczeń
+
+#### P8-CRIT: PT items — broken diacritics insertion (429 przypadków)
+- **Wzorzec**: EN `unknown` → PT `unkNãown`, EN `snowman` → PT `sNãowman`, EN `minotaur` → PT `miNãotaur`
+- **Przyczyna**: Worker/GT wstawia `Nã` w środek angielskich słów zamiast tłumaczyć — prawdopodobnie artefakt Google Translate lub SIMPLE_TRANSLATIONS
+- **Klasyfikacja**: Tekst jest niezdatny do użycia w grze
+- **Akcja**: ⬜ S19 `broken_diacritics_insertion` — wykryj `[a-z]N[ãõ][a-z]` w tłumaczeniach
+- **Naprawa**: Te klucze powinny zostać zresetowane do `[EN]` prefix i ponownie przetłumaczone
+
+#### P9-CRIT: FR items — partial word-by-word mix EN/FR (3 018 przypadków)
+- **Wzorzec**: EN `pile of bones` → FR `pile de bones`, EN `book of necromantic rituals` → FR `livre de necromantic rituals`
+- **Przyczyna**: Worker tłumaczy tylko przyimki/artykuły, zostawiając nazwy angielskie
+- **Klasyfikacja**: 2 513 items z >50% słów angielskich; 6 606 w pełni przetłumaczonych
+- **Akcja**: ⬜ S20 `partial_translation_mix` — wykryj genuine z >50% słów EN w tłumaczeniu Latin-script
+- **Naprawa**: Klucze z >70% EN → reset do `[EN]` i retranslate
+
+#### P10-CRIT: RU items — 384 latin-only "tłumaczenia" (brak cyrylicy)
+- **Wzorzec**: EN `bunch of ripe rice` → RU `bunch ripe rice` (100% łacińskie słowa zamiast cyrylicy)
+- **Pokrywa się z**: P1 (trimmed_en_copy), ale 384 > 346 bo obejmuje też inne wzorce
+- **Akcja**: ✅ S18 `trimmed_en_copy` już wykrywa większość; reszta to identical-like
+
+#### P11-HIGH: RO items — wzorzec "mort" (2 678 przypadków)
+- **Wzorzec**: EN `dead gnarlhound` → RO `gnarlhound mort`; EN `dead frost giant` → RO `frost giant mort`
+- **Przyczyna**: GT tłumaczy "dead" → "mort" i odwraca kolejność, ale nie tłumaczy nazwy potwora
+- **Klasyfikacja**: Technicznie poprawne gramatycznie (RO adjective-after-noun), ale nazwy potworów powinny być w RO
+- **Proporcja**: 2 678 z 6 261 genuine (43%) — prawie połowa genuine RO items to ten wzorzec
+
+#### P12-HIGH: NPC empty translations — 6 100+ kluczy puste we WSZYSTKICH językach
+- **Zakres**: RU=6 100, PT=6 094, FR=6 094, RO=6 144 pustych wartości (`""`) w `npc.json`
+- **Przyczyna**: Worker wpisał `""` zamiast skopiować EN lub oznaczyć `[EN]` — te klucze "zniknęły"
+- **Klasyfikacja**: Game-breaking — NPC nie wyświetli żadnego tekstu gracze
+- **Akcja**: ⬜ S21 `empty_value` — wykryj klucze z pustą wartością gdy EN ma treść
+- **Naprawa natychmiastowa**: Przywrócić EN tekst dla pustych kluczy NPC (fill empty → copy EN)
+
+#### P13-MED: FR items — duplikacja słów (3 przypadki)
+- **Wzorzec**: `clé clé argentée` (duplikacja "clé")
+- **Proporcja**: Niski priorytet — 3 przypadki
+
+### Podsumowanie pokrycia po audycie
+
+| Język | Domena | Total | Genuine | Genuine% | Placeholder OK | Główny problem |
+|-------|--------|-------|---------|----------|----------------|----------------|
+| RU | items | 16 894 | 10 705 | 63% | ✅ | 384 latin-only |
+| RU | npc | 13 769 | 125 | 0.9% | ✅ | 6 100 empty + 7 544 identical |
+| RU | otclient_modules | 1 987 | 1 935 | 97% | ✅ | ✅ najlepsza domena |
+| RU | achievements | 1 048 | 562 | 54% | ✅ | OK |
+| PT | items | 16 894 | 973 | 5.8% | ✅ | 429 broken diacritics + 12 765 [EN] |
+| PT | npc | 13 769 | 125 | 0.9% | ✅ | 6 094 empty |
+| PT | achievements | 1 048 | 550 | 52% | ✅ | OK |
+| FR | items | 16 894 | 10 020 | 59% | 1 bracket | 3 018 partial mix |
+| FR | npc | 13 769 | 106 | 0.8% | ✅ | 3 425 [EN] + 6 094 empty |
+| FR | books | 1 403 | 331 | 24% | ✅ | 686 [EN] |
+| FR | otclient_modules | 1 987 | 1 854 | 93% | ✅ | OK |
+| RO | items | 16 894 | 6 261 | 37% | ✅ | 2 678 "mort" pattern + 8 494 [EN] |
+| RO | npc | 13 769 | 32 | 0.2% | ✅ | 3 427 [EN] + 6 144 empty |
+| RO | otclient_modules | 1 987 | 3 | 0.2% | ✅ | 1 984 [EN] |
+| RO | achievements | 1 048 | 422 | 40% | ✅ | 450 [EN] |
+
+### Priorytet napraw — Fala 2
+
+| # | Naprawa | Krit. | Klucze | Akcja |
+|---|---------|-------|--------|-------|
+| 1 | P12: NPC empty → fill EN | CRIT | ~24 400 | Przywróć EN tekst dla pustych NPC |
+| 2 | P8: PT broken diacritics `Nã` | CRIT | 429 | Reset → `[EN]` + retranslate |
+| 3 | P9: FR partial mix >70% EN | HIGH | ~1 500 | Reset → `[EN]` + retranslate |
+| 4 | S19-S21: nowe reguły detekcji | HIGH | — | Dodać w `detect_suspicious()` |
+| 5 | P11: RO "mort" pattern | MED | 2 678 | Rozważyć — gramatycznie poprawne |
+
 ## 0b. Update wykonania (2026-02-14 11:20 UTC) — per-lang spelling S15-S17 + per-file reconcile
 
 Wykonane:

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-14T10:47:46.113815Z",
+  "timestamp": "2026-02-14T11:00:49.921204Z",
   "priority_langs": [
     "es",
     "pl",
@@ -65,47 +65,47 @@
     "items.json",
     "monsters.json"
   ],
-  "entries_total": 1244,
+  "entries_total": 1243,
   "entries_by_lang": {
-    "es": 4067,
-    "pl": 479,
-    "cs": 15443,
-    "de": 10364,
-    "fr": 10072,
-    "hu": 15530,
-    "it": 15241,
-    "nl": 10817,
-    "pt": 15256,
-    "ru": 17358,
-    "sk": 15627,
+    "es": 4033,
+    "pl": 481,
+    "cs": 15430,
+    "de": 10322,
+    "fr": 10014,
+    "hu": 15507,
+    "it": 15200,
+    "nl": 10778,
+    "pt": 15216,
+    "ru": 17317,
+    "sk": 15600,
     "tr": 15069,
-    "ar": 18379,
-    "az": 15382,
-    "bg": 17279,
-    "bn": 16771,
-    "bs": 15641,
-    "da": 15520,
-    "el": 15507,
-    "et": 15449,
-    "fa": 16487,
-    "fi": 15518,
-    "he": 17147,
-    "hi": 17112,
-    "hr": 15500,
-    "hy": 17187,
-    "id": 17107,
-    "ja": 17161,
-    "ka": 17155,
+    "ar": 18308,
+    "az": 15352,
+    "bg": 17236,
+    "bn": 16704,
+    "bs": 15640,
+    "da": 15503,
+    "el": 15499,
+    "et": 15425,
+    "fa": 16755,
+    "fi": 15500,
+    "he": 17112,
+    "hi": 17071,
+    "hr": 15469,
+    "hy": 17162,
+    "id": 17067,
+    "ja": 17120,
+    "ka": 17127,
     "kk": 15542,
-    "ko": 17196,
-    "lt": 15570,
-    "lv": 15577,
-    "mk": 15055,
-    "ml": 17200,
-    "ms": 16753,
-    "no": 15634,
-    "ro": 10829,
-    "sl": 15683,
+    "ko": 17151,
+    "lt": 15533,
+    "lv": 15542,
+    "mk": 15363,
+    "ml": 17156,
+    "ms": 17106,
+    "no": 15609,
+    "ro": 10819,
+    "sl": 15652,
     "sq": 15608,
     "sr": 15694,
     "sv": 15710,
@@ -124,7 +124,7 @@
     {
       "lang": "es",
       "json_file": "npc.json",
-      "identical_to_en": 1156,
+      "identical_to_en": 1122,
       "domain_priority": 0
     },
     {
@@ -291,6 +291,12 @@
     },
     {
       "lang": "pl",
+      "json_file": "otclient_data.json",
+      "identical_to_en": 3,
+      "domain_priority": 9
+    },
+    {
+      "lang": "pl",
       "json_file": "php.json",
       "identical_to_en": 2,
       "domain_priority": 9
@@ -298,12 +304,6 @@
     {
       "lang": "pl",
       "json_file": "example_merchant.json",
-      "identical_to_en": 1,
-      "domain_priority": 9
-    },
-    {
-      "lang": "pl",
-      "json_file": "otclient_data.json",
       "identical_to_en": 1,
       "domain_priority": 9
     },
@@ -382,7 +382,7 @@
     {
       "lang": "cs",
       "json_file": "achievements.json",
-      "identical_to_en": 104,
+      "identical_to_en": 91,
       "domain_priority": 9
     },
     {
@@ -514,7 +514,7 @@
     {
       "lang": "de",
       "json_file": "books.json",
-      "identical_to_en": 287,
+      "identical_to_en": 245,
       "domain_priority": 9
     },
     {
@@ -657,14 +657,14 @@
     },
     {
       "lang": "fr",
-      "json_file": "books.json",
-      "identical_to_en": 387,
+      "json_file": "html.json",
+      "identical_to_en": 359,
       "domain_priority": 9
     },
     {
       "lang": "fr",
-      "json_file": "html.json",
-      "identical_to_en": 359,
+      "json_file": "books.json",
+      "identical_to_en": 329,
       "domain_priority": 9
     },
     {
@@ -802,7 +802,7 @@
     {
       "lang": "hu",
       "json_file": "achievements.json",
-      "identical_to_en": 192,
+      "identical_to_en": 169,
       "domain_priority": 9
     },
     {
@@ -945,14 +945,14 @@
     },
     {
       "lang": "it",
-      "json_file": "achievements.json",
-      "identical_to_en": 151,
+      "json_file": "raids.json",
+      "identical_to_en": 126,
       "domain_priority": 9
     },
     {
       "lang": "it",
-      "json_file": "raids.json",
-      "identical_to_en": 126,
+      "json_file": "achievements.json",
+      "identical_to_en": 110,
       "domain_priority": 9
     },
     {
@@ -1041,12 +1041,6 @@
     },
     {
       "lang": "nl",
-      "json_file": "actions.json",
-      "identical_to_en": 30,
-      "domain_priority": 4
-    },
-    {
-      "lang": "nl",
       "json_file": "modules.json",
       "identical_to_en": 17,
       "domain_priority": 5
@@ -1084,7 +1078,7 @@
     {
       "lang": "nl",
       "json_file": "books.json",
-      "identical_to_en": 600,
+      "identical_to_en": 598,
       "domain_priority": 9
     },
     {
@@ -1121,12 +1115,6 @@
       "lang": "nl",
       "json_file": "example_merchant.json",
       "identical_to_en": 11,
-      "domain_priority": 9
-    },
-    {
-      "lang": "nl",
-      "json_file": "achievements.json",
-      "identical_to_en": 7,
       "domain_priority": 9
     },
     {
@@ -1234,7 +1222,7 @@
     {
       "lang": "pt",
       "json_file": "achievements.json",
-      "identical_to_en": 255,
+      "identical_to_en": 215,
       "domain_priority": 9
     },
     {
@@ -1320,12 +1308,24 @@
       "json_file": "talkactions.json",
       "identical_to_en": 173,
       "domain_priority": 2
+    },
+    {
+      "lang": "ru",
+      "json_file": "quests.json",
+      "identical_to_en": 488,
+      "domain_priority": 3
+    },
+    {
+      "lang": "ru",
+      "json_file": "actions.json",
+      "identical_to_en": 34,
+      "domain_priority": 4
     }
   ],
   "selected": {
     "lang": "es",
     "json_file": "npc.json",
-    "identical_to_en": 1156,
+    "identical_to_en": 1122,
     "domain_priority": 0
   }
 }

@@ -618,7 +618,7 @@
   "cpp.returnvalue.you_are_already_trading": "[EN] You are already trading. Finish this trade first.",
   "cpp.returnvalue.you_are_exhausted": "Jesteś I..",
   "cpp.returnvalue.you_are_not_the_owner": "Nie jesteś the właściciel.",
-  "cpp.returnvalue.you_can_only_use_it_on_creatures": "Lekarz rejonowyżesz tylko use to na stwory.",
+  "cpp.returnvalue.you_can_only_use_it_on_creatures": "[PL] You can only use it on creatures.",
   "cpp.returnvalue.you_cannot_logout_here": "Nie lekarz rejonowyżesz logout tutaj, tu.",
   "cpp.returnvalue.you_cannot_trade_this_house": "[EN] You can not trade this house.",
   "cpp.returnvalue.you_cant_open_corpse_admin": "[EN] You can't open this corpse, because you are an Admin.",

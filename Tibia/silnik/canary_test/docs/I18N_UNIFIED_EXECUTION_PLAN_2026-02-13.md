@@ -843,3 +843,28 @@ Prace startowe koncentrujemy najpierw na trybie tłumaczeń. Etap uznajemy za op
   - `WQ-LOCK-1` (auto-clear stale lock owner),
   - `WQ-QUEST-1/2` (naprawa map quest + zachowanie trailing-space),
   - `WQ-TM-1` (hard gate EN-copy z TM).
+
+### 13.9 Aktualizacja runtime (2026-02-14 12:35 UTC) — domknięcie telemetry + częściowe preemption
+
+Zrealizowane:
+- ✅ `WQ-FAST-1`: telemetry komend wymuszonych rozszerzone o:
+  - `forced_command_roundtrip_s`,
+  - `forced_command_pending_age_s`,
+  - `sla_target_s` (dla `AUTO N<=30` = `45s`),
+  - `sla_met`.
+- ✅ Spójność statusu: `I18N_STATUS.md` sekcja `MIGRATION` używa teraz świeżości z live rejestru (`i18n_file_status.json` mtime), więc nie pokazuje już sztucznie starych wartości przy aktualnych danych.
+- ✅ `WQ-FAST-2` (część): dodane preemption między fazą wykonania i ciężką końcówką cyklu:
+  - skip `validation/audit/pending_skip`,
+  - skip `full status update`,
+  - skip `git add/commit/push`,
+  - `delay` skracany do `1s`.
+
+Pomiar po wdrożeniu:
+- `AUTO:lt:npc.json:20:ONCE` → `pending_age_s=61`, `roundtrip_s=153`, `sla_target_s=45`, `sla_met=false`.
+- Wniosek: telemetry jest kompletne, ale nadal potrzeba głębszego pollingu komend podczas długiego batcha tłumaczeń.
+
+Nowe TODO:
+- [ ] `WQ-FAST-3`: mid-batch poll `.worker_command` w `auto_translate_keys` (checkpoint co N kluczy).
+- [ ] `WQ-FAST-4`: osobna ścieżka „operator fast lane” dla krótkich wymuszeń (`N<=30`) z minimalnym post-processingiem.
+- [ ] `WQ-QUEST-IT-1`: naprawa trailing-space contract w `it/quests.json` (`You acquired `, `You flipped the `, `You found `, `You slayed `).
+- [ ] `WQ-NPC-SHORT-1`: dedykowana naprawa EN-copy dla krótkich dialogów NPC (LT/CS/EL/IT), aby nie zostawiać `Good bye.`, `Then not.`, `Take this!` jako EN.

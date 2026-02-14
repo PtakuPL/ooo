@@ -19,7 +19,7 @@
   "npc.a_beggar.greet_msg_1": "[EN] Hi! What is it, what d'ye {want}?",
   "npc.a_beggar.say_1": "Myslel som si to. Budete sa však musieť porozprávať s kráľom. Teda žobrácky kráľ. Kráľ neudeľuje audienciu len tak každému. Viete, akí sú títo králi, však? ...",
   "npc.a_beggar.say_2": "Ak však chcete získať audienciu u kráľa, budete musieť trochu pomôcť jeho poddaným. ...",
-  "npc.a_beggar.say_3": "Jeho poddanými by sme boli my, chudobní, viete? ...",
+  "npc.a_beggar.say_3": "[SK] His subjects that would be us, the poor, you know? ...",
   "npc.a_beggar.say_4": "Tak prečo neukážeš svoju oddanosť chudobným? Choďte a pomôžte Chavisovi v chudobinci. Zbiera jedlo pre ľudí ako sme my. ...",
   "npc.a_beggar.say_5": "Ak si priniesol dostatok vecí, uvidíš, že kráľ ti povolí vstup vo svojom {palace}.",
   "npc.a_behemoth.greet_msg_1": "[EN] Pssst! Keep it down! <gives you an elaborate report on monster activity>",

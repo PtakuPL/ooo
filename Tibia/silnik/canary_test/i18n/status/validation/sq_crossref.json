@@ -1,10 +1,10 @@
 {
   "lang": "sq",
-  "coverage_pct": 7.4,
+  "coverage_pct": 7.1,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-14T12:05:19.393765Z",
+  "checked_at": "2026-02-14T12:28:28.701892Z",
   "issues_total": 407,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -221,15 +221,6 @@
       "lang": "Daraman's Footsteps"
     },
     {
-      "key": "achievement.457.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "King of the Jungle",
-      "pl": "Król z the Dżungla",
-      "lang": "King of the Jungle"
-    },
-    {
       "key": "achievement.458.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -264,15 +255,6 @@
       "en": "Millennial Falcon",
       "pl": "Millennial Sokół",
       "lang": "Millennial Falcon"
-    },
-    {
-      "key": "achievement.469.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Wielding dangerous knowledge as well as the sword is your expertise. You have proven yourself versatile in all manner of situations.",
-      "pl": "Dzierżyć groźny, niebezpieczny kNiewledge as well as the miecz jest twój wiedza specjalistyczne, umiejętności specjalistyczne. Masz proven siebie wszechstronny w wszystkie sposób z sytuacja.",
-      "lang": "Wielding dangerous knowledge as well as the sword is your expertise. You have proven yourself versatile in all manner of situations."
     },
     {
       "key": "achievement.475.name",
@@ -347,15 +329,6 @@
       "lang": "Mainstreet Nightmare"
     },
     {
-      "key": "achievement.505.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Now you are able to wander around Tibia wearing an angst-inducing vestment.",
-      "pl": "Niew Jesteś zdolny do wędrować around Tibia wyczerpujący jeden angst-inducing vestment.",
-      "lang": "Now you are able to wander around Tibia wearing an angst-inducing vestment."
-    },
-    {
       "key": "achievement.506.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -383,15 +356,6 @@
       "lang": "Drama in Darama"
     },
     {
-      "key": "achievement.511.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Made acquaintance with three brothers Fitz.",
-      "pl": "Zrobiony znajomy z trzy brat Fitz.",
-      "lang": "Made acquaintance with three brothers Fitz."
-    },
-    {
       "key": "achievement.513.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -408,15 +372,6 @@
       "en": "Unleash the Beast",
       "pl": "Uwalniać the Zwierzę",
       "lang": "Unleash the Beast"
-    },
-    {
-      "key": "achievement.516.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Well Roared, Lion!",
-      "pl": "Well I., Lew!",
-      "lang": "Well Roared, Lion!"
     },
     {
       "key": "achievement.518.name",
@@ -453,15 +408,6 @@
       "en": "Knowledge Raider",
       "pl": "KNiewledge Raider",
       "lang": "Knowledge Raider"
-    },
-    {
-      "key": "achievement.524.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Your thirst for knowledge is insatiable. In the task of helping your gnomish friends, flawless execution is just the icing on the cake.",
-      "pl": "Twój pragnienie dla kNiewledge jest nieposkromiony, nienasycony. W the zadanie, zajęcie z porcja twój gNiemish przyjaciel, dobry kolega, kolega, nieskazitelny egzekucja jest just the polewa, lukier na the ciasto, ciastko.",
-      "lang": "Your thirst for knowledge is insatiable. In the task of helping your gnomish friends, flawless execution is just the icing on the cake."
     },
     {
       "key": "achievement.525.name",
@@ -516,15 +462,6 @@
       "en": "Warrior of the Iks",
       "pl": "Wojownik z the Iks",
       "lang": "Warrior of the Iks"
-    },
-    {
-      "key": "achievement.542.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You accomplished the impossible and created 16 mutagens of corresponding colours.",
-      "pl": "Ty znakomity the niemożliwy i created 16 mutagens z corresponding colours.",
-      "lang": "You accomplished the impossible and created 16 mutagens of corresponding colours."
     },
     {
       "key": "achievement.543.name",
@@ -644,6 +581,15 @@
       "lang": "damage"
     },
     {
+      "key": "cpp.bestiary.charm_category_major",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Major",
+      "pl": "Główny",
+      "lang": "Major"
+    },
+    {
       "key": "cpp.bestiary.charm_category_minor",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -660,6 +606,15 @@
       "en": "agony",
       "pl": "cierpienie",
       "lang": "agony"
+    },
+    {
+      "key": "cpp.combat.death",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "death",
+      "pl": "śmierć",
+      "lang": "death"
     },
     {
       "key": "cpp.combat.drown",
@@ -831,6 +786,15 @@
       "en": "Cancel",
       "pl": "Anuluj",
       "lang": "Cancel"
+    },
+    {
+      "key": "cpp.game.offline_training_button_ok",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Okay",
+      "pl": "Dobrze",
+      "lang": "Okay"
     },
     {
       "key": "cpp.game.tentugly_name",
@@ -1040,6 +1004,15 @@
       "lang": "HitChance"
     },
     {
+      "key": "cpp.inspect.key",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Key",
+      "pl": "Klucz",
+      "lang": "Key"
+    },
+    {
       "key": "cpp.inspect.nothing",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -1083,6 +1056,15 @@
       "en": "Required",
       "pl": "wymagany",
       "lang": "Required"
+    },
+    {
+      "key": "cpp.inspect.speed",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Speed",
+      "pl": "Szybkość",
+      "lang": "Speed"
     },
     {
       "key": "cpp.inspect.tier",
@@ -1220,6 +1202,15 @@
       "lang": "Def:"
     },
     {
+      "key": "cpp.look.field",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": " field",
+      "pl": " ognia",
+      "lang": " field"
+    },
+    {
       "key": "cpp.look.hit_pct",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -1306,7 +1297,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": " physical + ",
-      "pl": "physical +",
+      "pl": " fizyczny + ",
       "lang": " physical + "
     },
     {
@@ -1353,6 +1344,15 @@
       "en": "{0} second",
       "pl": "{0} sekunda",
       "lang": "{0} second"
+    },
+    {
+      "key": "cpp.look.speed_label",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "speed",
+      "pl": "szybkość",
+      "lang": "speed"
     },
     {
       "key": "cpp.look.tier_ruse",
@@ -2111,15 +2111,6 @@
       "lang": "Zzrrkrrch!"
     },
     {
-      "key": "monster.stone_devourer.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Rumble!",
-      "pl": "I.!",
-      "lang": "Rumble!"
-    },
-    {
       "key": "monster.war_golem.voice_10",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -2244,15 +2235,6 @@
       "en": "Moooaaan",
       "pl": "Muuuuuu",
       "lang": "Moooaaan"
-    },
-    {
-      "key": "monster.goggle_cake.voice_3",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hunger!",
-      "pl": "I.!",
-      "lang": "Hunger!"
     },
     {
       "key": "monster.lava_golem.voice_1",
@@ -2417,24 +2399,6 @@
       "lang": "Ommm!"
     },
     {
-      "key": "monster.enslaved_dwarf.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Bark!",
-      "pl": "I.!",
-      "lang": "Bark!"
-    },
-    {
-      "key": "monster.enslaved_dwarf.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Blood!",
-      "pl": "I.!",
-      "lang": "Blood!"
-    },
-    {
       "key": "monster.troll.voice_1",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -2478,15 +2442,6 @@
       "en": "FIRE!",
       "pl": "OGIEŃ!",
       "lang": "FIRE!"
-    },
-    {
-      "key": "monster.firestarter.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "BURN!",
-      "pl": "I.!",
-      "lang": "BURN!"
     },
     {
       "key": "monster.swamp_troll.voice_2",
@@ -2534,15 +2489,6 @@
       "lang": "Grrrrrrr"
     },
     {
-      "key": "monster.troll_legionnaire.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Attack!",
-      "pl": "I.!",
-      "lang": "Attack!"
-    },
-    {
       "key": "monster.minotaur.voice_2",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -2568,51 +2514,6 @@
       "en": "Groar",
       "pl": "ryk",
       "lang": "Groar"
-    },
-    {
-      "key": "monster.goblin_scavenger.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You mean!",
-      "pl": "Ty I.!",
-      "lang": "You mean!"
-    },
-    {
-      "key": "monster.goblin_scavenger.voice_3",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "All mine!",
-      "pl": "Wszystkie I.!",
-      "lang": "All mine!"
-    },
-    {
-      "key": "monster.misguided_bully.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Found one!",
-      "pl": "Znaleziono I.!",
-      "lang": "Found one!"
-    },
-    {
-      "key": "monster.animated_rhino.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Snarl!",
-      "pl": "I.!",
-      "lang": "Snarl!"
-    },
-    {
-      "key": "monster.animated_rhino.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "SNIFF!",
-      "pl": "I.!",
-      "lang": "SNIFF!"
     },
     {
       "key": "monster.hemming.voice_1",
@@ -2822,42 +2723,6 @@
       "lang": "Delicious!"
     },
     {
-      "key": "monster.mean_maw.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Clank.",
-      "pl": "I..",
-      "lang": "Clank."
-    },
-    {
-      "key": "monster.branchy_crawler.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Decay!",
-      "pl": "I.!",
-      "lang": "Decay!"
-    },
-    {
-      "key": "monster.courage_leech.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hiss.",
-      "pl": "I..",
-      "lang": "Hiss."
-    },
-    {
-      "key": "monster.bony_sea_devil.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Clank.",
-      "pl": "I..",
-      "lang": "Clank."
-    },
-    {
       "key": "monster.primitive.voice_6",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -2876,15 +2741,6 @@
       "lang": "Die noob!"
     },
     {
-      "key": "monster.grim_reaper.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Death!",
-      "pl": "I.!",
-      "lang": "Death!"
-    },
-    {
       "key": "monster.undead_gladiator.voice_2",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -2901,15 +2757,6 @@
       "en": "Huh!",
       "pl": "He, co!",
       "lang": "Huh!"
-    },
-    {
-      "key": "monster.vampire.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "BLOOD!",
-      "pl": "I.!",
-      "lang": "BLOOD!"
     },
     {
       "key": "monster.tarnished_spirit.voice_1",
@@ -3200,15 +3047,6 @@
       "lang": "Grrrrrr"
     },
     {
-      "key": "monster.stone_rhino.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "SNIFF!",
-      "pl": "I.!",
-      "lang": "SNIFF!"
-    },
-    {
       "key": "monster.fox.voice_2",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -3225,24 +3063,6 @@
       "en": "Snort!",
       "pl": "SNiert!",
       "lang": "Snort!"
-    },
-    {
-      "key": "monster.clomp.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Grunt!",
-      "pl": "I.!",
-      "lang": "Grunt!"
-    },
-    {
-      "key": "monster.clomp.voice_3",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Snarl!",
-      "pl": "I.!",
-      "lang": "Snarl!"
     },
     {
       "key": "monster.rat.voice_1",
@@ -3288,24 +3108,6 @@
       "en": "Snort",
       "pl": "SNiert",
       "lang": "Snort"
-    },
-    {
-      "key": "monster.dromedary.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Grunt!",
-      "pl": "I.!",
-      "lang": "Grunt!"
-    },
-    {
-      "key": "monster.donkey.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Grunt!",
-      "pl": "I.!",
-      "lang": "Grunt!"
     },
     {
       "key": "monster.white_deer.voice_1",
@@ -3398,15 +3200,6 @@
       "lang": "Knorrrrrr"
     },
     {
-      "key": "monster.rootthing_amber_shaper.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "RATTLE!",
-      "pl": "I.!",
-      "lang": "RATTLE!"
-    },
-    {
       "key": "monster.werewolf.voice_1",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -3414,15 +3207,6 @@
       "en": "GRRR",
       "pl": "Wrr",
       "lang": "GRRR"
-    },
-    {
-      "key": "monster.werehyaena.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Snarl!",
-      "pl": "I.!",
-      "lang": "Snarl!"
     },
     {
       "key": "monster.werefox.voice_1",
@@ -3470,42 +3254,6 @@
       "lang": "Grrr"
     },
     {
-      "key": "monster.quara_pincher_scout.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Clap!",
-      "pl": "I.!",
-      "lang": "Clap!"
-    },
-    {
-      "key": "monster.quara_pincher.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Clap!",
-      "pl": "I.!",
-      "lang": "Clap!"
-    },
-    {
-      "key": "monster.calamary.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Bubble!",
-      "pl": "I.!",
-      "lang": "Bubble!"
-    },
-    {
-      "key": "monster.quara_plunderer.voice_3",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Burp!",
-      "pl": "I.!",
-      "lang": "Burp!"
-    },
-    {
       "key": "monster.wild_warrior.voice_2",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -3513,24 +3261,6 @@
       "en": "An enemy!",
       "pl": "Jeden wróg!",
       "lang": "An enemy!"
-    },
-    {
-      "key": "monster.gladiator.voice_3",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Fight!",
-      "pl": "I.!",
-      "lang": "Fight!"
-    },
-    {
-      "key": "monster.gladiator.voice_4",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Take this!",
-      "pl": "Take I.!",
-      "lang": "Take this!"
     },
     {
       "key": "monster.pirate_buccaneer.voice_1",
@@ -3560,15 +3290,6 @@
       "lang": "Give up!"
     },
     {
-      "key": "monster.renegade_knight.voice_3",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Take this!",
-      "pl": "Take I.!",
-      "lang": "Take this!"
-    },
-    {
       "key": "monster.pirate_corsair.voice_2",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -3576,24 +3297,6 @@
       "en": "Give up!",
       "pl": "Daj góra!",
       "lang": "Give up!"
-    },
-    {
-      "key": "monster.ice_witch.voice_3",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Freeze!",
-      "pl": "I.!",
-      "lang": "Freeze!"
-    },
-    {
-      "key": "monster.barbarian_bloodwalker.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "SLAUGHTER!",
-      "pl": "I.!",
-      "lang": "SLAUGHTER!"
     },
     {
       "key": "monster.barbarian_bloodwalker.voice_3",
@@ -3612,6 +3315,303 @@
       "en": "Die!",
       "pl": "UMIERAĆ!",
       "lang": "Die!"
+    },
+    {
+      "key": "monster.fire_devil.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hot, eh?",
+      "pl": "Gorący, co?, nie??",
+      "lang": "Hot, eh?"
+    },
+    {
+      "key": "monster.dire_penguin.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Grrrrrr",
+      "pl": "Wrrrr",
+      "lang": "Grrrrrr"
+    },
+    {
+      "key": "monster.stonerefiner.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "nomnomnom",
+      "pl": "NiemNiemNiem",
+      "lang": "nomnomnom"
+    },
+    {
+      "key": "monster.rhindeer.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Destroy!",
+      "pl": "Niszczyć!",
+      "lang": "Destroy!"
+    },
+    {
+      "key": "monster.rhindeer.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Snort!",
+      "pl": "SNiert!",
+      "lang": "Snort!"
+    },
+    {
+      "key": "monster.liodile.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Meat!",
+      "pl": "Mięso!",
+      "lang": "Meat!"
+    },
+    {
+      "key": "monster.boar_man.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Oink!",
+      "pl": "Chrum!",
+      "lang": "Oink!"
+    },
+    {
+      "key": "monster.tainted_soul.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "*Sizzle*",
+      "pl": "*Skwierczeć*",
+      "lang": "*Sizzle*"
+    },
+    {
+      "key": "monster.truffle_cook.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Delicious!",
+      "pl": "Wyborny!",
+      "lang": "Delicious!"
+    },
+    {
+      "key": "monster.wasp.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bssssss",
+      "pl": "Bsssss",
+      "lang": "Bssssss"
+    },
+    {
+      "key": "monster.earth_elemental.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Stomp.",
+      "pl": "Stąpać ciężko.",
+      "lang": "Stomp."
+    },
+    {
+      "key": "monster.cliff_strider.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Knorrrr",
+      "pl": "KNierrrr",
+      "lang": "Knorrrr"
+    },
+    {
+      "key": "monster.honey_elemental.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "**Slurp**",
+      "pl": "**Siorbać**",
+      "lang": "**Slurp**"
+    },
+    {
+      "key": "monster.ironblight.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Clonk!",
+      "pl": "KLONK!",
+      "lang": "Clonk!"
+    },
+    {
+      "key": "monster.bog_raider.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Slurp!",
+      "pl": "Siorbać!",
+      "lang": "Slurp!"
+    },
+    {
+      "key": "monster.dragonling.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "FCHHHHH",
+      "pl": "Fchhhh",
+      "lang": "FCHHHHH"
+    },
+    {
+      "key": "monster.phantasm_summon.voice_5",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Give in.",
+      "pl": "Give w.",
+      "lang": "Give in."
+    },
+    {
+      "key": "monster.midnight_panther.voice_4",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Purrrrrrr",
+      "pl": "Mrrrrrrr",
+      "lang": "Purrrrrrr"
+    },
+    {
+      "key": "monster.crypt_warden.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Sacrilege!",
+      "pl": "Świętokradztwo!",
+      "lang": "Sacrilege!"
+    },
+    {
+      "key": "monster.nibblemaw.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "*gurgle*",
+      "pl": "*I.*",
+      "lang": "*gurgle*"
+    },
+    {
+      "key": "monster.phantasm.voice_5",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Give in.",
+      "pl": "Give w.",
+      "lang": "Give in."
+    },
+    {
+      "key": "monster.black_knight.voice_4",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "NO MERCY!",
+      "pl": "Nie LITOŚĆ, MIŁOSIERDZIE!",
+      "lang": "NO MERCY!"
+    },
+    {
+      "key": "monster.zevelon_duskbringer.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Come Here!",
+      "pl": "Come Tutaj, tu!",
+      "lang": "Come Here!"
+    },
+    {
+      "key": "monster.energized_raging_mage.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "ENERGY!!",
+      "pl": "ENERGIA!!",
+      "lang": "ENERGY!!"
+    },
+    {
+      "key": "monster.munster.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Meep!",
+      "pl": "Mip!",
+      "lang": "Meep!"
+    },
+    {
+      "key": "monster.weakened_shlorg.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Slurp!",
+      "pl": "Siorbać!",
+      "lang": "Slurp!"
+    },
+    {
+      "key": "monster.warlord_ruzad.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Rahi Gosh!",
+      "pl": "Rahi Jejku, ojej!",
+      "lang": "Rahi Gosh!"
+    },
+    {
+      "key": "monster.raging_mage.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "ENERGY!!",
+      "pl": "ENERGIA!!",
+      "lang": "ENERGY!!"
+    },
+    {
+      "key": "monster.ogre_savage.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You tasty!",
+      "pl": "Ty smakowity!",
+      "lang": "You tasty!"
+    },
+    {
+      "key": "monster.orclops_doomhauler.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Me mash!",
+      "pl": "Mnie, mi tłuc!",
+      "lang": "Me mash!"
+    },
+    {
+      "key": "monster.elder_wyrm.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "GRRR",
+      "pl": "Wrr",
+      "lang": "GRRR"
+    },
+    {
+      "key": "monster.hydra.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "FCHHHHH",
+      "pl": "Fchhhh",
+      "lang": "FCHHHHH"
+    },
+    {
+      "key": "monster.wyrm.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "GRRR",
+      "pl": "Wrr",
+      "lang": "GRRR"
     }
   ],
   "length_ratio_issues": [

@@ -2,23 +2,23 @@
   "lang": "mk",
   "script_group": "cyrillic",
   "total_keys": 53586,
-  "translated": 3895,
+  "translated": 3889,
   "identical_to_en": 2662,
-  "placeholder_keys": 49691,
+  "placeholder_keys": 49697,
   "coverage_pct": 7.3,
-  "issues_total": 23,
+  "issues_total": 19,
   "issues_by_type": {
-    "script_cyrillic_latin_mix": 19,
+    "script_cyrillic_latin_mix": 15,
     "V4_artifact": 3,
     "V6_newline_mismatch": 1
   },
   "issues_by_severity": {
     "CRITICAL": 0,
-    "HIGH": 22,
+    "HIGH": 18,
     "MEDIUM": 1,
     "LOW": 0
   },
-  "score": 99.1,
+  "score": 99.3,
   "worst_keys": [
     {
       "key": "achievement.26.name",
@@ -63,12 +63,6 @@
       "severity": "HIGH"
     },
     {
-      "key": "book.otbm.1st_floor_magic_emporium",
-      "category": "books",
-      "type": "script_cyrillic_latin_mix",
-      "severity": "HIGH"
-    },
-    {
       "key": "book.otbm.1st_floor_the_archers_grounds",
       "category": "books",
       "type": "script_cyrillic_latin_mix",
@@ -76,12 +70,6 @@
     },
     {
       "key": "book.otbm.abdendriel_furniture_store",
-      "category": "books",
-      "type": "script_cyrillic_latin_mix",
-      "severity": "HIGH"
-    },
-    {
-      "key": "book.otbm.battle_tactics_for_demona_mazeforces",
       "category": "books",
       "type": "script_cyrillic_latin_mix",
       "severity": "HIGH"
@@ -111,18 +99,6 @@
       "severity": "HIGH"
     },
     {
-      "key": "book.otbm.crunors_finest_fruit_and_vegetable",
-      "category": "books",
-      "type": "script_cyrillic_latin_mix",
-      "severity": "HIGH"
-    },
-    {
-      "key": "book.otbm.crunors_finest_fruit_and_vegetable_1ed839d6",
-      "category": "books",
-      "type": "script_cyrillic_latin_mix",
-      "severity": "HIGH"
-    },
-    {
       "key": "item.10217.name",
       "category": "items",
       "type": "script_cyrillic_latin_mix",
@@ -139,6 +115,24 @@
       "category": "npc",
       "type": "script_cyrillic_latin_mix",
       "severity": "HIGH"
+    },
+    {
+      "key": "npc.a_dead_bureaucrat4.say_2",
+      "category": "npc",
+      "type": "script_cyrillic_latin_mix",
+      "severity": "HIGH"
+    },
+    {
+      "key": "npc.a_ghostly_sage.stdmod_3",
+      "category": "npc",
+      "type": "script_cyrillic_latin_mix",
+      "severity": "HIGH"
+    },
+    {
+      "key": "book.otbm.diary_of_hengis_wulfsonnni_can",
+      "category": "books",
+      "type": "V6_newline_mismatch",
+      "severity": "MEDIUM"
     }
   ],
   "crossref": {
@@ -149,5 +143,5 @@
     "length_ratio": 6,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-14T12:04:48.635266Z"
+  "validated_at": "2026-02-14T12:27:55.099526Z"
 }

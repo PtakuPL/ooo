@@ -7,7 +7,7 @@
   "system.experience.gained": "[ZH_TW] You gained {1} experience points.",
   "system.mission.points": "[ZH_TW] You earned {1} point(s) on the {2} mission.",
   "system.mount.received": "[ZH_TW] Congratulations you received the {1} mount.",
-  "system.item.received": "You gained a {1}.",
+  "system.item.received": "[ZH_TW] You gained a {1}.",
   "system.stash.count": "[ZH_TW] Your supply stash contains {1} items.",
   "system.venture.decay": "[ZH_TW] Venture the path of decay!"
 }

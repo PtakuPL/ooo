@@ -1,8 +1,8 @@
 {
   "total_cycles": 1,
   "mode": "AUTO_TRANSLATE",
-  "category": "cs",
-  "last_update": "2026-02-14T13:17:46.162944",
+  "category": "lt",
+  "last_update": "2026-02-14T13:30:33.349129",
   "migration": {
     "files_scanned": 2297,
     "files_scanned_live": 2299,
@@ -23,133 +23,133 @@
     "keys_to_sync": 0
   },
   "auto_translate": {
-    "language": "cs",
-    "json_file": "quests.json",
-    "keys_to_translate": 80,
-    "guard_fail": 5,
+    "language": "lt",
+    "json_file": "npc.json",
+    "keys_to_translate": 20,
+    "guard_fail": 47,
     "strict_missing_key": 0,
     "strict_blocker": "",
-    "recent_translated": 79,
+    "recent_translated": 20,
     "recent_examples": [
       {
-        "key": "quests.bigfoot_burden.gnomedix_msg7",
-        "en": "Gnomedix: Take this, you evil ... whatever you are!",
-        "translated": "Gnomedix: Vezmi si tohle, ty zlo... a\u0165 jsi cokoli!",
-        "source": "google_translate"
+        "key": "npc.alyxo.say_12",
+        "en": "Sorry.",
+        "translated": "Atsipra\u0161au.",
+        "source": "simple"
       },
       {
-        "key": "quests.bigfoot_burden.gnomedix_msg8",
-        "en": "Gnomedix: I got it! Yikes! What was that? Uhm, well ... you passed the ear examination. Talk to Gnomaticus for your next test.",
-        "translated": "Gnomedix: M\u00e1m to! Fuj! co to bylo? Uhm, dob\u0159e... pro\u0161el jsi u\u0161n\u00edm vy\u0161et\u0159en\u00edm. Promluvte si s Gnomaticus pro dal\u0161\u00ed test.",
-        "source": "google_translate"
+        "key": "npc.alyxo.say_15",
+        "en": "Sorry.",
+        "translated": "Atsipra\u0161au.",
+        "source": "simple"
       },
       {
-        "key": "quests.bigfoot_burden.golden_fruits_found",
-        "en": "You have found some golden fruits.",
-        "translated": "Na\u0161li jste zlat\u00e9 plody.",
-        "source": "google_translate"
+        "key": "npc.alyxo.say_18",
+        "en": "Sorry.",
+        "translated": "Atsipra\u0161au.",
+        "source": "simple"
       },
       {
-        "key": "quests.bigfoot_burden.golem_returned",
-        "en": "The golem has been returned to the gnomish workshop.",
-        "translated": "Golem byl vr\u00e1cen do gn\u00f3msk\u00e9 d\u00edlny.",
-        "source": "google_translate"
+        "key": "npc.alyxo.say_21",
+        "en": "Sorry.",
+        "translated": "Atsipra\u0161au.",
+        "source": "simple"
       },
       {
-        "key": "quests.bigfoot_burden.golems_enough",
-        "en": "You have returned enough golems for now. Give the gnomes some time for their repairs. Report back now.",
-        "translated": "Zat\u00edm jsi vr\u00e1til dost golem\u016f. Dejte trpasl\u00edk\u016fm \u010das na jejich opravy. Ohlaste se nyn\u00ed.",
-        "source": "google_translate"
+        "key": "npc.alyxo.say_24",
+        "en": "Sorry.",
+        "translated": "Atsipra\u0161au.",
+        "source": "simple"
       },
       {
-        "key": "quests.bigfoot_burden.grayed_success",
-        "en": "You have been succesfully g-rayed. Now let Doctor Gnomedix inspect your ears!",
-        "translated": "Byli jste \u00fasp\u011b\u0161n\u011b g-rayed. Nyn\u00ed nechte doktora Gnomedixe prohl\u00e9dnout va\u0161e u\u0161i!",
-        "source": "google_translate"
+        "key": "npc.alyxo.say_6",
+        "en": "Sorry.",
+        "translated": "Atsipra\u0161au.",
+        "source": "simple"
       },
       {
-        "key": "quests.bigfoot_burden.loot_warning",
-        "en": "You have one minute to loot the boss and leave the room.",
-        "translated": "M\u00e1te jednu minutu na to, abyste uko\u0159istili \u0161\u00e9fa a opustili m\u00edstnost.",
-        "source": "google_translate"
+        "key": "npc.alyxo.say_9",
+        "en": "Sorry.",
+        "translated": "Atsipra\u0161au.",
+        "source": "simple"
       },
       {
-        "key": "quests.bigfoot_burden.matchmaker_complete",
-        "en": "Congratulations! The crystals seem to have fallen in love and your mission is done!",
-        "translated": "Gratuluji! Zd\u00e1 se, \u017ee se krystaly zamilovaly a va\u0161e mise je hotov\u00e1!",
-        "source": "google_translate"
+        "key": "npc.gnomus.say_11",
+        "en": "Done.",
+        "translated": "Done.",
+        "source": "tm"
       },
       {
-        "key": "quests.bigfoot_burden.melody_complete",
-        "en": "That was the correct note! Now you know your soul melody!",
-        "translated": "To byla spr\u00e1vn\u00e1 pozn\u00e1mka! Nyn\u00ed zn\u00e1te melodii sv\u00e9 du\u0161e!",
-        "source": "google_translate"
+        "key": "npc.gnomus.say_13",
+        "en": "Done.",
+        "translated": "Done.",
+        "source": "tm"
       },
       {
-        "key": "quests.bigfoot_burden.mind_refreshed",
-        "en": "Your mind feels refreshed!",
-        "translated": "Va\u0161e mysl se c\u00edt\u00ed sv\u011b\u017e\u00ed!",
-        "source": "google_translate"
+        "key": "npc.gnomus.say_15",
+        "en": "Done.",
+        "translated": "Done.",
+        "source": "tm"
       },
       {
-        "key": "quests.bigfoot_burden.mushroom_wait",
-        "en": "You have to wait to extract spores from this mushroom.",
-        "translated": "Na extrakci spor z t\u00e9to houby mus\u00edte po\u010dkat.",
-        "source": "google_translate"
+        "key": "npc.guide_davina.walkaway_msg_1",
+        "en": "Good bye.",
+        "translated": "Viso gero.",
+        "source": "simple"
       },
       {
-        "key": "quests.bigfoot_burden.need_mission_crystal",
-        "en": "You need a mission crystal or a job done with Gnomission to enter.",
-        "translated": "Ke vstupu pot\u0159ebujete krystal mise nebo pr\u00e1ci vykonanou s Gnomission.",
-        "source": "google_translate"
+        "key": "npc.guide_edna.walkaway_msg_1",
+        "en": "Good bye.",
+        "translated": "Viso gero.",
+        "source": "simple"
       },
       {
-        "key": "quests.bigfoot_burden.need_teleport_crystal",
-        "en": "You need a teleport crystal in order to use this device.",
-        "translated": "K pou\u017eit\u00ed tohoto za\u0159\u00edzen\u00ed pot\u0159ebujete teleporta\u010dn\u00ed krystal.",
-        "source": "google_translate"
+        "key": "npc.guide_elena.walkaway_msg_1",
+        "en": "Good bye.",
+        "translated": "Viso gero.",
+        "source": "simple"
       },
       {
-        "key": "quests.bigfoot_burden.no_endurance_test",
-        "en": "Luckily you do not have to take the endurance at this time.",
-        "translated": "Na\u0161t\u011bst\u00ed v tuto chv\u00edli nemus\u00edte br\u00e1t v\u00fddr\u017e.",
-        "source": "google_translate"
+        "key": "npc.guide_kunibert.walkaway_msg_1",
+        "en": "Good bye.",
+        "translated": "Viso gero.",
+        "source": "simple"
       },
       {
-        "key": "quests.bigfoot_burden.not_permitted",
-        "en": "You are not permitted to enter.",
-        "translated": "Nem\u00e1te povolen vstup.",
-        "source": "google_translate"
+        "key": "npc.guide_luke.walkaway_msg_1",
+        "en": "Good bye.",
+        "translated": "Viso gero.",
+        "source": "simple"
       },
       {
-        "key": "quests.bigfoot_burden.pig_eating",
-        "en": "The little pig happily eats the truffles.",
-        "translated": "Pras\u00e1tko s radost\u00ed j\u00ed lan\u00fd\u017ee.",
-        "source": "google_translate"
+        "key": "npc.guide_rahlkora.walkaway_msg_1",
+        "en": "Good bye.",
+        "translated": "Viso gero.",
+        "source": "simple"
       },
       {
-        "key": "quests.bigfoot_burden.pig_stuffed",
-        "en": "The little pig is stuffed and you better return it home.",
-        "translated": "Pras\u00e1tko je vycpan\u00e9 a rad\u011bji ho vra\u0165te dom\u016f.",
-        "source": "google_translate"
+        "key": "npc.guide_thelandil.walkaway_msg_1",
+        "en": "Good bye.",
+        "translated": "Viso gero.",
+        "source": "simple"
       },
       {
-        "key": "quests.bigfoot_burden.rank_too_low",
-        "en": "Your rank among the Gnomes is too low.",
-        "translated": "Va\u0161e hodnost mezi Gn\u00f3my je p\u0159\u00edli\u0161 n\u00edzk\u00e1.",
-        "source": "google_translate"
+        "key": "npc.guide_tiko.walkaway_msg_1",
+        "en": "Good bye.",
+        "translated": "Viso gero.",
+        "source": "simple"
       },
       {
-        "key": "quests.bigfoot_burden.room_wait",
-        "en": "Please, wait until the room is cleared. This happens 30 minutes after the last team entered.",
-        "translated": "Pros\u00edm, po\u010dkejte, dokud se m\u00edstnost neuvoln\u00ed. To se stane 30 minut pot\u00e9, co vstoupil posledn\u00ed t\u00fdm.",
-        "source": "google_translate"
+        "key": "npc.hanna.farewell_msg_1",
+        "en": "Good bye.",
+        "translated": "Viso gero.",
+        "source": "simple"
       },
       {
-        "key": "quests.bigfoot_burden.shooting_complete",
-        "en": "You have hit enough targets. Report back!",
-        "translated": "Zas\u00e1hli jste dost c\u00edl\u016f. Podat zpr\u00e1vu!",
-        "source": "google_translate"
+        "key": "npc.hanna.walkaway_msg_1",
+        "en": "Good bye.",
+        "translated": "Viso gero.",
+        "source": "simple"
       }
     ]
   },

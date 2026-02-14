@@ -2,43 +2,23 @@
   "lang": "hi",
   "script_group": "exotic",
   "total_keys": 53586,
-  "translated": 5134,
+  "translated": 5130,
   "identical_to_en": 3714,
-  "placeholder_keys": 48452,
+  "placeholder_keys": 48456,
   "coverage_pct": 9.6,
-  "issues_total": 84,
+  "issues_total": 77,
   "issues_by_type": {
-    "script_wrong_script": 80,
-    "V1_placeholder_mismatch": 2,
-    "V4_artifact": 1,
-    "V5_pipe_mismatch": 1
+    "script_wrong_script": 76,
+    "V4_artifact": 1
   },
   "issues_by_severity": {
-    "CRITICAL": 3,
-    "HIGH": 81,
+    "CRITICAL": 0,
+    "HIGH": 77,
     "MEDIUM": 0,
     "LOW": 0
   },
-  "score": 97.5,
+  "score": 97.7,
   "worst_keys": [
-    {
-      "key": "scripts.actions_rewards.msg_1",
-      "category": "scripts",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "talkaction.online.msg_summary",
-      "category": "talkactions",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "talkaction.online.msg_summary",
-      "category": "talkactions",
-      "type": "V5_pipe_mismatch",
-      "severity": "CRITICAL"
-    },
     {
       "key": "achievement.317.description",
       "category": "achievements",
@@ -140,15 +120,33 @@
       "category": "items",
       "type": "script_wrong_script",
       "severity": "HIGH"
+    },
+    {
+      "key": "item.24227.name",
+      "category": "items",
+      "type": "script_wrong_script",
+      "severity": "HIGH"
+    },
+    {
+      "key": "item.24966.name",
+      "category": "items",
+      "type": "script_wrong_script",
+      "severity": "HIGH"
+    },
+    {
+      "key": "item.2521.name",
+      "category": "items",
+      "type": "script_wrong_script",
+      "severity": "HIGH"
     }
   ],
   "crossref": {
     "enabled": false,
-    "issues_total": 411,
+    "issues_total": 410,
     "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 11,
+    "length_ratio": 10,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-14T12:04:46.841239Z"
+  "validated_at": "2026-02-14T12:27:53.129196Z"
 }

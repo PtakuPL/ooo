@@ -6541,7 +6541,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T01:49:38.999379Z"
+    "updated_at": "2026-02-14T12:31:04.297085Z"
   },
   "module.daily_reward.text3": {
     "src_hash": "f7d0eb24bd5b533e125f76d919521d0e",
@@ -6890,10 +6890,10 @@
   "php.accounts.text4": {
     "src_hash": "1080f71ac0a5aa7505c4274d20a0ffa0",
     "text": "btn btn-sukces btn-sm",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T01:55:47.426633Z"
+    "updated_at": "2026-02-14T12:31:04.297641Z"
   },
   "php.template.text1": {
     "src_hash": "c0fda951c2d5c4c92bb0fc32f64de7f4",

@@ -2,36 +2,22 @@
   "lang": "tr",
   "script_group": "latin",
   "total_keys": 53586,
-  "translated": 5110,
-  "identical_to_en": 2959,
-  "placeholder_keys": 48476,
-  "coverage_pct": 9.5,
-  "issues_total": 3,
+  "translated": 4897,
+  "identical_to_en": 2769,
+  "placeholder_keys": 48689,
+  "coverage_pct": 9.1,
+  "issues_total": 1,
   "issues_by_type": {
-    "V4_artifact": 1,
-    "V1_placeholder_mismatch": 1,
-    "V5_pipe_mismatch": 1
+    "V4_artifact": 1
   },
   "issues_by_severity": {
-    "CRITICAL": 2,
+    "CRITICAL": 0,
     "HIGH": 1,
     "MEDIUM": 0,
     "LOW": 0
   },
-  "score": 99.9,
+  "score": 100.0,
   "worst_keys": [
-    {
-      "key": "talkaction.online.msg_summary",
-      "category": "talkactions",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "talkaction.online.msg_summary",
-      "category": "talkactions",
-      "type": "V5_pipe_mismatch",
-      "severity": "CRITICAL"
-    },
     {
       "key": "achievement.317.description",
       "category": "achievements",
@@ -47,5 +33,5 @@
     "length_ratio": 15,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-14T12:05:20.734102Z"
+  "validated_at": "2026-02-14T12:28:29.865566Z"
 }

@@ -69,7 +69,7 @@
   "npclib.modules.travel_no_money": "[ZH_TW] You don't have enough money.",
   "npclib.modules.travel_exhaustion": "[ZH_TW] Sorry, but you need to wait three seconds before travel again.",
   "npclib.modules.travel_depart": "Set the sails!",
-  "npclib.modules.travel_destinations": "I can bring you to {0}.",
+  "npclib.modules.travel_destinations": "[ZH_TW] I can bring you to {0}.",
   "npclib.modules.confirm_no_money": "[ZH_TW] You do not have enough money!",
   "npclib.modules.confirm_pz_locked": "[ZH_TW] Get out of there with this blood.",
   "npclib.modules.confirm_success": "[ZH_TW] It was a pleasure doing business with you.",

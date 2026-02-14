@@ -2,20 +2,20 @@
   "lang": "pl",
   "script_group": "latin",
   "total_keys": 53586,
-  "translated": 24296,
-  "identical_to_en": 1672,
-  "placeholder_keys": 29290,
-  "coverage_pct": 45.3,
-  "issues_total": 44,
+  "translated": 22737,
+  "identical_to_en": 1786,
+  "placeholder_keys": 30849,
+  "coverage_pct": 42.4,
+  "issues_total": 40,
   "issues_by_type": {
-    "V6_newline_mismatch": 39,
+    "V6_newline_mismatch": 35,
     "V4_artifact": 4,
     "V1_placeholder_mismatch": 1
   },
   "issues_by_severity": {
     "CRITICAL": 1,
     "HIGH": 4,
-    "MEDIUM": 39,
+    "MEDIUM": 35,
     "LOW": 0
   },
   "score": 99.9,
@@ -33,12 +33,6 @@
       "severity": "HIGH"
     },
     {
-      "key": "npc.carina.say_2",
-      "category": "npc",
-      "type": "V4_artifact",
-      "severity": "HIGH"
-    },
-    {
       "key": "npc.markwin.say_3",
       "category": "npc",
       "type": "V4_artifact",
@@ -51,10 +45,10 @@
       "severity": "HIGH"
     },
     {
-      "key": "cpp.augment.augments_label",
-      "category": "cpp",
-      "type": "V6_newline_mismatch",
-      "severity": "MEDIUM"
+      "key": "quests.bigfoot_burden.gnomedix_msg4",
+      "category": "quests",
+      "type": "V4_artifact",
+      "severity": "HIGH"
     },
     {
       "key": "npc.a_bearded_woman.stdmod_1",
@@ -139,6 +133,12 @@
       "category": "npc",
       "type": "V6_newline_mismatch",
       "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.isimov.stdmod_32",
+      "category": "npc",
+      "type": "V6_newline_mismatch",
+      "severity": "MEDIUM"
     }
   ],
   "crossref": {
@@ -149,5 +149,5 @@
     "length_ratio": 0,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-14T12:04:49.552351Z"
+  "validated_at": "2026-02-14T12:27:55.988064Z"
 }

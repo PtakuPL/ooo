@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-02-14T12:27:29.064472Z",
-  "cycle_counter": 540,
-  "last_target_key": "pl:client.json",
-  "last_pending_total": 37,
+  "timestamp": "2026-02-14T12:32:30.158823Z",
+  "cycle_counter": 542,
+  "last_target_key": "pl:talkactions.json",
+  "last_pending_total": 59,
   "last_tier": 1,
   "last_cat_priority": 9,
   "candidates_count": 46,
@@ -32,7 +32,7 @@
     "w2": 3,
     "w3": 1
   },
-  "cache_hit": true,
+  "cache_hit": false,
   "cache_ttl_cycles": 5,
   "cache_cycle": 1,
   "no_progress_counts": {
@@ -301,7 +301,7 @@
     ],
     "lang_completion": {
       "es": 73.07,
-      "pl": 41.88
+      "pl": 42.15
     }
   }
 }

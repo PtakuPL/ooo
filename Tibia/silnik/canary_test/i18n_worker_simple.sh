@@ -9456,7 +9456,11 @@ for key, en_value in en_data.items():
         'this','which','some','they','their','them','you','your','we','our','who',
         'what','but','or','not','if','as','so','be','do','did','does','will',
         'would','could','should','can','may','might','shall','been','being',
-        'have','than','more','very','just','only','also','into','then','those','these'}
+        'have','than','more','very','just','only','also','into','then','those','these',
+        'my','me','him','up','out','get','got','no','yes','here','there','about',
+        'down','off','all','any','each','when','how','now','too','still','back',
+        'over','such','use','way','own','make','take','go','come','see','know',
+        'give','tell','say','let','keep','put','set','try','ask','turn','must'}
     _tr_words = value.lower().split()
     if len(_tr_words) >= 4:
         _en_func_count = sum(1 for w in _tr_words if w.rstrip('.,!?;:') in _EN_FUNC)
@@ -13128,7 +13132,10 @@ def validate_candidate(en_text: str, candidate: str):
     # Hard gate: word salad (EN function words >25% of translation)
     _vc_func = {'the','a','an','of','in','is','it','its','he','she','his','her',
         'has','had','was','were','to','by','on','at','for','with','from','that',
-        'this','which','some','they','their','them','you','your','we','our'}
+        'this','which','some','they','their','them','you','your','we','our',
+        'my','me','him','up','out','get','got','no','yes','here','there','about',
+        'if','as','so','be','do','but','or','not','will','can','may','all','any',
+        'how','now','too','back','off','down','must','let','go','come','see','make','take'}
     _vc_words = candidate.lower().split()
     if len(_vc_words) >= 4:
         _vc_fc = sum(1 for w in _vc_words if w.rstrip('.,!?;:') in _vc_func)

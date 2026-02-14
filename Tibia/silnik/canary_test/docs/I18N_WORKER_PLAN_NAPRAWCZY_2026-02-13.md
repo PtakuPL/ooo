@@ -1027,3 +1027,31 @@ NICE TO HAVE (optymalizacja):
 - [ ] WQ-QUEST-1 (P0): naprawić `simple` mapowania questowe (usunąć/zakazać mappingu `The chest is empty.` -> `You found.`).
 - [ ] WQ-QUEST-2 (P0): zachowanie końcowych spacji dla fragmentów konkatenowanych (kontrakt placeholder/concat).
 - [ ] WQ-TM-1 (P0): twardy gate TM dla EN-copy (translatable key: `translated==en` -> reject + kolejka repair).
+
+### 9.4 Aktualizacja wykonania (2026-02-14 12:35 UTC) — SLA/preemption/status freshness + audyt LT/CS/EL/IT
+
+Zrealizowane:
+- [x] `WQ-FAST-1` (metryka + SLA): `forced_command_metrics*.json` zapisuje teraz pola
+  `forced_command_roundtrip_s`, `forced_command_pending_age_s`, `sla_target_s`, `sla_met`.
+- [x] Poprawka spójności `I18N_STATUS.md`: świeżość sekcji `MIGRATION` liczona z `i18n_file_status.json` mtime (nie tylko z `last_processed` migracji), więc zniknął artefakt typu `17h temu` przy świeżych danych.
+- `WQ-FAST-2` częściowo: dodano preemption końcówki cyklu:
+  - wykrycie pending `.worker_command` po wykonaniu trybu,
+  - pomijanie ciężkich etapów końcówki (`validation/audit/pending_skip`),
+  - pomijanie `full status update` i `git add/commit/push` w cyklu preempt,
+  - skrócenie opóźnienia cyklu do `1s` przy preempt.
+
+Nowe pomiary runtime (po wdrożeniu):
+- `RESTART`: `pending_age_s=30`, `roundtrip_s=122`.
+- `AUTO:lt:npc.json:20:ONCE`: `pending_age_s=61`, `roundtrip_s=153`, `sla_target_s=45`, `sla_met=false`.
+- Wniosek: telemetry i preemption działają, ale nadal brakuje twardego „mid-cycle poll” wewnątrz długiego tłumaczenia.
+
+Nowe problemy wykryte:
+1. Nadal wysoki `pending_age` dla krótkich komend operatorskich (czas oczekiwania przed podjęciem przez worker).
+2. `it/quests.json`: naruszenia kontraktu trailing-space (np. `You acquired ` -> `Hai acquisito` bez końcowej spacji).
+3. LT/CS/EL/IT: niski coverage `items/npc` i wysoki udział EN-copy w krótkich dialogach NPC.
+
+Nowe zadania dopisane:
+- [ ] `WQ-FAST-3` (P1): high-priority poll `.worker_command` wewnątrz `auto_translate_keys` co X kluczy (mid-batch interrupt point).
+- [ ] `WQ-FAST-4` (P1): osobna „fast lane” dla komend operatorskich (`AUTO N<=30`) z natychmiastowym przejściem przez dispatcher.
+- [ ] `WQ-QUEST-IT-1` (P0): naprawa trailing-space contract dla `it/quests.json` + test regresji concat fragmentów.
+- [ ] `WQ-NPC-SHORT-1` (P0): dedykowany słownik krótkich dialogów NPC (bye/ok/then not/greetings) dla LT/CS/EL/IT, z hard reject EN-copy.

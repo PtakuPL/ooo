@@ -813,3 +813,26 @@ Funkcje:
 - 95p roundtrip dla `AUTO:<lang>:<json>:20` <= 45s,
 - brak fałszywego `lock startup` po restartach ręcznych,
 - statusd doctor raportuje command-latency i lock-health jako osobne kontrakty.
+
+### 11.4 Aktualizacja wykonania (2026-02-14 12:35 UTC)
+
+Zrobione:
+- ✅ Worker zapisuje rozszerzone metryki komend wymuszonych:
+  - `forced_command_roundtrip_s`,
+  - `forced_command_pending_age_s`,
+  - `sla_target_s` + `sla_met` dla `AUTO N<=30`.
+- ✅ Potwierdzone na runtime, że guardian/worker consumuje i loguje `RESTART` oraz komendy `AUTO` z nowym payloadem metryk.
+- ✅ Sekcja `MIGRATION` w `I18N_STATUS.md` ma poprawioną świeżość (oparta o live mtime statusu, nie stare `last_processed`).
+
+Stan po pomiarze:
+- `RESTART`: `pending_age_s=30`, `roundtrip_s=122`.
+- `AUTO:lt:npc.json:20:ONCE`: `pending_age_s=61`, `roundtrip_s=153`, `sla_target_s=45`, `sla_met=false`.
+
+Wniosek:
+- telemetry i kontrakt statusu są już czytelne operatorsko,
+- ale SLA nadal nie jest osiągane przy długim cyklu, bo brakuje pollingu komendy wewnątrz długiego tłumaczenia.
+
+Nowe TODO dla status+guard+statusd:
+- [ ] `SGD-CMD-FAST-1`: statusd doctor ma raportować `p95/p99 forced_command_roundtrip_s` per 24h.
+- [ ] `SGD-CMD-FAST-2`: alert CRIT gdy `sla_met=false` dla >=3 kolejnych komend `AUTO N<=30`.
+- [ ] `SGD-CMD-FAST-3`: dodać osobny kontrakt `mid_cycle_command_pickup` (czas od `received` do wejścia w `AUTO_TRANSLATE`).

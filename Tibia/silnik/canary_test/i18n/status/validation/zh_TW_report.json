@@ -2,40 +2,28 @@
   "lang": "zh_TW",
   "script_group": "cjk",
   "total_keys": 53586,
-  "translated": 35568,
-  "identical_to_en": 34943,
-  "placeholder_keys": 15863,
-  "coverage_pct": 66.4,
-  "issues_total": 12,
+  "translated": 10735,
+  "identical_to_en": 10051,
+  "placeholder_keys": 40696,
+  "coverage_pct": 20.0,
+  "issues_total": 14,
   "issues_by_type": {
-    "V2_length_ratio": 9,
-    "V1_placeholder_mismatch": 2,
-    "V5_pipe_mismatch": 1
+    "V2_length_ratio": 11,
+    "script_cjk_ratio": 2,
+    "V1_placeholder_mismatch": 1
   },
   "issues_by_severity": {
-    "CRITICAL": 3,
+    "CRITICAL": 1,
     "HIGH": 0,
-    "MEDIUM": 9,
+    "MEDIUM": 13,
     "LOW": 0
   },
-  "score": 100.0,
+  "score": 99.9,
   "worst_keys": [
     {
       "key": "scripts.actions_rewards.msg_1",
       "category": "scripts",
       "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "talkaction.online.msg_summary",
-      "category": "talkactions",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "talkaction.online.msg_summary",
-      "category": "talkactions",
-      "type": "V5_pipe_mismatch",
       "severity": "CRITICAL"
     },
     {
@@ -91,15 +79,39 @@
       "category": "achievements",
       "type": "V2_length_ratio",
       "severity": "MEDIUM"
+    },
+    {
+      "key": "achievement.293.name",
+      "category": "achievements",
+      "type": "V2_length_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "achievement.293.name",
+      "category": "achievements",
+      "type": "script_cjk_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "achievement.384.name",
+      "category": "achievements",
+      "type": "V2_length_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "achievement.384.name",
+      "category": "achievements",
+      "type": "script_cjk_ratio",
+      "severity": "MEDIUM"
     }
   ],
   "crossref": {
-    "enabled": true,
-    "issues_total": 413,
+    "enabled": false,
+    "issues_total": 422,
     "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 13,
-    "auto_fix_applied": 60
+    "length_ratio": 22,
+    "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-14T12:06:57.775434Z"
+  "validated_at": "2026-02-14T12:28:30.506505Z"
 }

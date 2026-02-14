@@ -464,3 +464,22 @@ Minimalne progi jakości:
   - sygnał `placeholder_concat_contract_violation`,
   - sygnał `semantic_map_mismatch`,
   - trigger podniesienia priorytetu `VALIDATION_QUALITY` dla dotkniętych event-path.
+
+### 13.7 Aktualizacja runtime (2026-02-14 12:35 UTC) — kontrakt świeżości i szybkie komendy
+
+Wdrożone operacyjnie:
+- ✅ `I18N_STATUS.md` (sekcja `MIGRATION`) korzysta ze świeżości live snapshot (`i18n_file_status.json` mtime), co usuwa fałszywie stare wskazania przy aktywnym systemie.
+- ✅ Artefakty komend wymuszonych mają teraz pola SLA:
+  - `forced_command_roundtrip_s`,
+  - `forced_command_pending_age_s`,
+  - `sla_target_s`,
+  - `sla_met`.
+
+Nowy sygnał semantyczno-operacyjny:
+- Pomimo preemption końcówki cyklu, test `AUTO:lt:npc.json:20:ONCE` dał `pending_age_s=61`, `roundtrip_s=153` (`sla_met=false`).
+- To znaczy, że semantycznie brakuje checkpointu „poll command” wewnątrz długiej fazy tłumaczenia (nie tylko między fazami high-level).
+
+Dopisane zadania do warstwy semantycznej:
+- [ ] `SEM-CMD-1`: sygnał `mid_cycle_pickup_delay_s` (czas od `received` do wejścia w wykonanie w obrębie aktywnego cyklu).
+- [ ] `SEM-CMD-2`: oznaczenie etapów przerywalnych (`interruptible=true`) dla `AUTO_TRANSLATE` i `VALIDATION`.
+- [ ] `SEM-CONCAT-1`: rozszerzyć klasyfikację `fragment_concat_required` o krótkie questowe komunikaty runtime (`msg_*/say_*`) dla LT/CS/EL/IT.

@@ -13,7 +13,7 @@
   "actions.arena_2x2.say_6": "[ZH_TW] Please wait for the fighters come out of the arena.",
   "actions.construction_kits.msg_1": "[ZH_TW] You may construct this only inside a house.",
   "actions.construction_kits.msg_2": "[ZH_TW] Put the construction kit on the floor first.",
-  "actions.fishing.msg_1": "You are not the owner.",
+  "actions.fishing.msg_1": "[ZH_TW] You are not the owner.",
   "actions.fluids.msg_1": "It is empty.",
   "actions.fluids.msg_2": "It is empty.",
   "actions.golden.msg_1": "[ZH_TW] Someone is fighting against the boss! You need wait awhile.",

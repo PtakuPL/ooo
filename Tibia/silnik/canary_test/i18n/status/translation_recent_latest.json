@@ -1,128 +1,92 @@
 {
-  "timestamp": "2026-02-14T12:27:50.111197Z",
-  "language": "pl",
-  "json_file": "client.json",
-  "translated": 28,
+  "timestamp": "2026-02-14T12:32:42.417183Z",
+  "language": "es",
+  "json_file": "npc.json",
+  "translated": 14,
   "entries": [
     {
-      "key": "client.spells.text4",
-      "en": "Nature's Embrace",
-      "translated": "Nature's Embrace",
+      "key": "npc.a_beautiful_girl.greet_msg_1",
+      "en": "So you have come, |PLAYERNAME|. I hoped you would not...",
+      "translated": "Entonces has venido, |PLAYERNAME|. Esperaba que no lo hicieras...",
       "source": "tm"
     },
     {
-      "key": "client.tasks.text1",
-      "en": "Please select monster from monster list.",
-      "translated": "Please select Potwór from Potwór list.",
-      "source": "simple"
-    },
-    {
-      "key": "client.tasks.text2",
-      "en": "Please select monster from monster list.",
-      "translated": "Please select Potwór from Potwór list.",
-      "source": "simple"
-    },
-    {
-      "key": "client.tasks.text3",
-      "en": "Please select monster from monster list.",
-      "translated": "Please select Potwór from Potwór list.",
-      "source": "simple"
-    },
-    {
-      "key": "client.uimessagebox.text1",
-      "en": "0 0 108 20",
-      "translated": "0 0 108 20",
+      "key": "npc.a_dead_bureaucrat1.farewell_msg_1",
+      "en": "Good bye and don't forget me!",
+      "translated": "¡Adiós y no me olvides!",
       "source": "tm"
     },
     {
-      "key": "client.neededtranslations.text2",
-      "en": "If you shut down the program, your character might stay in the game.\nClick on 'Logout' to ensure that you character leaves the game properly.\nClick on 'Exit' if you want to exit the program without ",
-      "translated": "Jeśli zamkniesz program, Twoja postać może pozostać w grze.\nKliknij 'Logout', aby upewnić się, że Twoja postać prawidłowo opuści grę.\nKliknij 'Exit', jeśli chcesz wyjść z programu bez ",
+      "key": "npc.a_dead_bureaucrat1.walkaway_msg_1",
+      "en": "Good bye and don't forget me!",
+      "translated": "¡Adiós y no me olvides!",
       "source": "tm"
     },
     {
-      "key": "client.topmenu.text2",
-      "en": "Ctrl+Shift+T",
-      "translated": "Ctrl+Shift+T",
+      "key": "npc.a_dead_bureaucrat2.farewell_msg_1",
+      "en": "Good bye and don't forget me!",
+      "translated": "¡Adiós y no me olvides!",
       "source": "tm"
     },
     {
-      "key": "client.elementnode.text3",
-      "en": ".. -- e = the optional",
-      "translated": ".. -- e = opcja",
+      "key": "npc.a_dead_bureaucrat2.walkaway_msg_1",
+      "en": "Good bye and don't forget me!",
+      "translated": "¡Adiós y no me olvides!",
       "source": "tm"
     },
     {
-      "key": "client.npctrade.text1",
-      "en": "List of items that you're able to buy",
-      "translated": "Lista przedmiotów, które możesz kupić",
-      "source": "google_translate"
+      "key": "npc.a_dead_bureaucrat3.farewell_msg_1",
+      "en": "Good bye and don't forget me!",
+      "translated": "¡Adiós y no me olvides!",
+      "source": "tm"
     },
     {
-      "key": "client.npctrade.text2",
-      "en": "List of items that you're able to sell",
-      "translated": "Lista przedmiotów, które możesz sprzedać",
-      "source": "google_translate"
+      "key": "npc.a_dead_bureaucrat3.walkaway_msg_1",
+      "en": "Good bye and don't forget me!",
+      "translated": "¡Adiós y no me olvides!",
+      "source": "tm"
     },
     {
-      "key": "client.charms1410.text1",
-      "en": "Minor Charm echoes\nEarned by unlocking or upgrading major charm and promotion your character",
-      "translated": "Pomniejsze Urok odbija się echem\nZdobyte poprzez odblokowanie lub ulepszenie głównego uroku i awansowanie swojej postaci",
-      "source": "google_translate"
+      "key": "npc.a_dead_bureaucrat4.farewell_msg_1",
+      "en": "Good bye and don't forget me!",
+      "translated": "¡Adiós y no me olvides!",
+      "source": "tm"
     },
     {
-      "key": "client.charms.text3",
-      "en": "Dodges an attack with a chance, avoiding all damage.",
-      "translated": "Z szansą unika ataku, unikając wszelkich obrażeń.",
-      "source": "google_translate"
+      "key": "npc.a_dead_bureaucrat4.walkaway_msg_1",
+      "en": "Good bye and don't forget me!",
+      "translated": "¡Adiós y no me olvides!",
+      "source": "tm"
     },
     {
-      "key": "client.bottommenu.text5",
-      "en": "images/icon-questionmark",
-      "translated": "obrazy/ikona-znak zapytania",
-      "source": "google_translate"
+      "key": "npc.a_ghostly_sage.stdmod_4",
+      "en": "Dont mind me.",
+      "translated": "No me hagas caso.",
+      "source": "tm"
     },
     {
-      "key": "client.http.text3",
-      "en": "HTTP.getJSON is not supported",
-      "translated": "HTTP.getJSON nie jest obsługiwany",
-      "source": "google_translate"
+      "key": "npc.a_starving_dog.greet_1",
+      "en": "<sniff>",
+      "translated": "<sniff>",
+      "source": "tm"
     },
     {
-      "key": "client.http.text4",
-      "en": "HTTP.post is not supported",
-      "translated": "HTTP.post nie jest obsługiwany",
-      "source": "google_translate"
+      "key": "npc.a_starving_dog.say_1",
+      "en": "<munch>",
+      "translated": "<munch>",
+      "source": "tm"
     },
     {
-      "key": "client.http.text5",
-      "en": "HTTP.postJSON is not supported",
-      "translated": "HTTP.postJSON nie jest obsługiwany",
-      "source": "google_translate"
+      "key": "npc.a_sweaty_cyclops.stdmod_25",
+      "en": "Me not fight them, they not fight me.",
+      "translated": "Yo no peleo con ellos, ellos no pelean conmigo.",
+      "source": "tm"
     },
     {
-      "key": "client.neededtranslations.text3",
-      "en": "List of items that you're able to buy",
-      "translated": "Lista przedmiotów, które możesz kupić",
-      "source": "google_translate"
-    },
-    {
-      "key": "client.neededtranslations.text4",
-      "en": "List of items that you're able to sell",
-      "translated": "Lista przedmiotów, które możesz sprzedać",
-      "source": "google_translate"
-    },
-    {
-      "key": "client.imbuing.text4",
-      "en": "Click here to carry out the selected imbuement. This will consume the required astral sources and gold.",
-      "translated": "Kliknij tutaj aby przeprowadzić wybrane nasycenie. To pochłonie wymagane źródła astralne i złoto.",
-      "source": "google_translate"
-    },
-    {
-      "key": "client.game_questlog.text1",
-      "en": "Remove completed quests // Automatically track new quests // Automatically untrack completed quests",
-      "translated": "Usuń ukończone zadania // Automatycznie śledź nowe zadania // Automatycznie usuwaj ukończone zadania",
-      "source": "google_translate"
+      "key": "npc.a_weakened_forest_fury.multi_1",
+      "en": "Crafted generations ago to rob a creature of its freedom for that it may earn it again truthfully. You will need them if you plan on returning the birds to their rightful home in the glade. ... ",
+      "translated": "Creado hace generaciones para robarle a una criatura su libertad para que pueda volver a ganarla con sinceridad. Los necesitarás si planeas devolver los pájaros al hogar que les corresponde en el claro. ... ",
+      "source": "tm"
     }
   ]
 }

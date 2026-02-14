@@ -1,31 +1,31 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-02-14T12:27:32Z",
+  "generated_at_utc": "2026-02-14T12:32:10Z",
   "config": {
     "mtime_restart_min_interval_sec": 90,
     "restart_failure_backoff_base_sec": 20,
     "restart_failure_backoff_max_sec": 300
   },
   "last_restart": {
-    "timestamp": "2026-02-14T12:27:32Z",
-    "cause": "mtime",
+    "timestamp": "2026-02-14T12:31:01Z",
+    "cause": "worker_missing",
     "success": true,
-    "pid": "2124120"
+    "pid": "2128592"
   },
   "failure_streak": 0,
   "cooldown_active": false,
   "cooldown_remaining_sec": 0,
   "next_allowed_utc": "",
   "totals": {
-    "attempts": 103,
-    "successes": 103,
+    "attempts": 104,
+    "successes": 104,
     "failures": 0,
-    "blocked": 35
+    "blocked": 37
   },
   "causes": {
     "worker_missing": {
-      "attempts": 19,
-      "successes": 19,
+      "attempts": 20,
+      "successes": 20,
       "failures": 0,
       "blocked": 0
     },
@@ -33,7 +33,7 @@
       "attempts": 53,
       "successes": 53,
       "failures": 0,
-      "blocked": 35
+      "blocked": 37
     },
     "health_stuck": {
       "attempts": 31,
@@ -43,29 +43,6 @@
     }
   },
   "recent_events": [
-    {
-      "timestamp": "2026-02-14T12:04:46Z",
-      "type": "blocked",
-      "cause": "mtime",
-      "reason": "mtime_debounce",
-      "wait_sec": 60
-    },
-    {
-      "timestamp": "2026-02-14T12:05:16Z",
-      "type": "blocked",
-      "cause": "mtime",
-      "reason": "mtime_debounce",
-      "wait_sec": 30
-    },
-    {
-      "timestamp": "2026-02-14T12:06:59Z",
-      "type": "result",
-      "cause": "mtime",
-      "success": true,
-      "pid": "2098676",
-      "reason": "pid_file",
-      "backoff_sec": 0
-    },
     {
       "timestamp": "2026-02-14T12:10:51Z",
       "type": "result",
@@ -200,6 +177,29 @@
       "pid": "2124120",
       "reason": "pid_file",
       "backoff_sec": 0
+    },
+    {
+      "timestamp": "2026-02-14T12:28:02Z",
+      "type": "blocked",
+      "cause": "mtime",
+      "reason": "mtime_debounce",
+      "wait_sec": 60
+    },
+    {
+      "timestamp": "2026-02-14T12:31:01Z",
+      "type": "result",
+      "cause": "worker_missing",
+      "success": true,
+      "pid": "2128592",
+      "reason": "pid_file",
+      "backoff_sec": 0
+    },
+    {
+      "timestamp": "2026-02-14T12:32:10Z",
+      "type": "blocked",
+      "cause": "mtime",
+      "reason": "mtime_debounce",
+      "wait_sec": 21
     }
   ]
 }

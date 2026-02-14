@@ -26,7 +26,7 @@
   "npc.a_behemoth.greet_msg_2": "[EN] Pssst! Keep it down! <gives you an elaborate report on monster activity>",
   "npc.a_behemoth.greet_msg_3": "[EN] Pssst! Keep it down! <gives you an elaborate report on monster activity>",
   "npc.a_dead_bureaucrat.greet_msg_1": "Pozdravljeni {}, dobrodošli v atriju Puminove domene. Od vas potrebujemo nekaj podatkov, preden vas lahko spustimo mimo. Kam želiš iti?",
-  "npc.a_dead_bureaucrat1.farewell_msg_1": "Zbogom in ne pozabi me!",
+  "npc.a_dead_bureaucrat1.farewell_msg_1": "[SL] Good bye and don't forget me!",
   "npc.a_dead_bureaucrat1.say_1": "Huhu, prosim, ne poškoduj me s svojim {}! Razlog vašega obiska?",
   "npc.a_dead_bureaucrat1.say_2": "Kako zelo zanimivo. To moram takoj povedati svojemu gospodarju. Prosim, pojdite do mojih kolegov in prosite za obrazec 356. Potrebovali ga boste, če želite nadaljevati.",
   "npc.a_dead_bureaucrat1.say_3": "V redu |PLAYERNAME|. poklicanost?",

@@ -1,10 +1,10 @@
 {
   "lang": "fr",
-  "coverage_pct": 35.9,
+  "coverage_pct": 34.2,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-14T12:04:46.513091Z",
+  "checked_at": "2026-02-14T12:27:52.785635Z",
   "issues_total": 460,
   "issues_by_type": {
     "consistency_in_language": 50,
@@ -301,6 +301,23 @@
     {
       "type": "crossref_inconsistent_translation",
       "severity": "MEDIUM",
+      "en": "Outfit",
+      "variants": [
+        "Apparence",
+        "Tenue"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "cpp:cpp.protocol.outfit_label",
+        "html:web.tpl.highscores.b_3",
+        "html:web.tpl.team.b_2",
+        "html:web.tpl.team.b_9",
+        "html:web.tpl.online.b_7"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
       "en": "You do not have enough level.",
       "variants": [
         "Vous n'avez pas assez de niveau.",
@@ -312,20 +329,6 @@
         "quests:quests.actions_doors.msg_6",
         "quests:quests.the_secret_library_quest.you_do_not_have_enough_level",
         "scripts:scripts.actions_doors.msg_1"
-      ]
-    },
-    {
-      "type": "crossref_inconsistent_translation",
-      "severity": "MEDIUM",
-      "en": "Account {% if constant('USE_ACCOUNT_NAME') %}Name{% else %}Number{% endif %}:",
-      "variants": [
-        "Compte {% if constant('USE_ACCOUNT_NAME') %}Nom{% else %}Numéro{% endif %} :",
-        "Compte {% if constant('USE_ACCOUNT_NAME') %}Nom{% else %}Numéro{% endif %}:"
-      ],
-      "variants_count": 2,
-      "examples": [
-        "html:html.account.create.html.text1",
-        "html:html.account.management.html.text3"
       ]
     },
     {
@@ -868,175 +871,22 @@
       "lang": "Protection"
     },
     {
-      "key": "cpp.inspect.tier",
+      "key": "cpp.inspect.speed",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Tier",
-      "pl": "Rząd",
-      "lang": "Tier"
+      "en": "Speed",
+      "pl": "Szybkość",
+      "lang": "Speed"
     },
     {
-      "key": "cpp.inspect.two_handed",
+      "key": "cpp.look.field",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "two-handed",
-      "pl": "dwa-handed",
-      "lang": "two-handed"
-    },
-    {
-      "key": "cpp.inspect.weight",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Weight",
-      "pl": "Waga",
-      "lang": "Weight"
-    },
-    {
-      "key": "cpp.inspect.yes",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "yes",
-      "pl": "Tak",
-      "lang": "yes"
-    },
-    {
-      "key": "cpp.look.and_connector",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " and ",
-      "pl": "i",
-      "lang": " and "
-    },
-    {
-      "key": "cpp.look.and_short",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " and",
-      "pl": "i",
-      "lang": " and"
-    },
-    {
-      "key": "cpp.look.arm",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Arm:",
-      "pl": "Ramię, ręka:",
-      "lang": "Arm:"
-    },
-    {
-      "key": "cpp.look.atk",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Atk:",
-      "pl": "Atak:",
-      "lang": "Atk:"
-    },
-    {
-      "key": "cpp.look.cleave_lower",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "cleave",
-      "pl": "rozszczepiać",
-      "lang": "cleave"
-    },
-    {
-      "key": "cpp.look.cleave_upper",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Cleave",
-      "pl": "Rozszczepiać",
-      "lang": "Cleave"
-    },
-    {
-      "key": "cpp.look.damage",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "damage",
-      "pl": "szkoda",
-      "lang": "damage"
-    },
-    {
-      "key": "cpp.look.day_many",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "{0} days",
-      "pl": "{0} dni",
-      "lang": "{0} days"
-    },
-    {
-      "key": "cpp.look.day_one",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "{0} day",
-      "pl": "{0} dzień",
-      "lang": "{0} day"
-    },
-    {
-      "key": "cpp.look.def",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Def:",
-      "pl": "def:",
-      "lang": "Def:"
-    },
-    {
-      "key": "cpp.look.hit_pct",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hit%",
-      "pl": "Uderzyć%",
-      "lang": "Hit%"
-    },
-    {
-      "key": "cpp.look.hour_many",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "{0} hours",
-      "pl": "{0} godziny",
-      "lang": "{0} hours"
-    },
-    {
-      "key": "cpp.look.hour_one",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "{0} hour",
-      "pl": "{0} godzina",
-      "lang": "{0} hour"
-    },
-    {
-      "key": "cpp.look.key_fmt",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Key:{0}",
-      "pl": "I.:{0}",
-      "lang": "Key:{0}"
-    },
-    {
-      "key": "cpp.look.level_n",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " level {0}",
-      "pl": "poziom {0}",
-      "lang": " level {0}"
+      "en": " field",
+      "pl": " ognia",
+      "lang": " field"
     },
     {
       "key": "cpp.look.minute_one",
@@ -1048,60 +898,6 @@
       "lang": "{0} minute"
     },
     {
-      "key": "cpp.look.of",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " of ",
-      "pl": "z",
-      "lang": " of "
-    },
-    {
-      "key": "cpp.look.of_connector",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " of",
-      "pl": "z",
-      "lang": " of"
-    },
-    {
-      "key": "cpp.look.on_date",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " on ",
-      "pl": "na",
-      "lang": " on "
-    },
-    {
-      "key": "cpp.look.physical_plus",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " physical + ",
-      "pl": "physical +",
-      "lang": " physical + "
-    },
-    {
-      "key": "cpp.look.players",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "players",
-      "pl": "gracze",
-      "lang": "players"
-    },
-    {
-      "key": "cpp.look.premium",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "premium ",
-      "pl": "premium",
-      "lang": "premium "
-    },
-    {
       "key": "cpp.look.protection",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -1111,22 +907,13 @@
       "lang": "protection "
     },
     {
-      "key": "cpp.look.range",
+      "key": "cpp.look.speed_label",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Range:",
-      "pl": "I.:",
-      "lang": "Range:"
-    },
-    {
-      "key": "cpp.look.second_one",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "{0} second",
-      "pl": "{0} sekunda",
-      "lang": "{0} second"
+      "en": "speed",
+      "pl": "szybkość",
+      "lang": "speed"
     },
     {
       "key": "cpp.look.tier_ruse",
@@ -1138,69 +925,6 @@
       "lang": "{0}% Ruse"
     },
     {
-      "key": "cpp.look.unknown",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "unknown",
-      "pl": "unkNiewn",
-      "lang": "unknown"
-    },
-    {
-      "key": "cpp.look.vol",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Vol:",
-      "pl": "Tom:",
-      "lang": "Vol:"
-    },
-    {
-      "key": "cpp.look.with",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " with",
-      "pl": "z",
-      "lang": " with"
-    },
-    {
-      "key": "cpp.look.wrote",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " wrote",
-      "pl": "wrote",
-      "lang": " wrote"
-    },
-    {
-      "key": "cpp.player.corpse_and",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " and {0}",
-      "pl": "i {0}",
-      "lang": " and {0}"
-    },
-    {
-      "key": "cpp.player.corpse_and_others",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " and others",
-      "pl": "i drugi, pozostały",
-      "lang": " and others"
-    },
-    {
-      "key": "cpp.player.list_and",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "and ",
-      "pl": "i",
-      "lang": "and "
-    },
-    {
       "key": "cpp.player.list_delimiter",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -1208,51 +932,6 @@
       "en": ", ",
       "pl": ",",
       "lang": ", "
-    },
-    {
-      "key": "cpp.player.look.article_a",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a",
-      "pl": "jeden",
-      "lang": "a"
-    },
-    {
-      "key": "cpp.player.look.article_an",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "an",
-      "pl": "jeden",
-      "lang": "an"
-    },
-    {
-      "key": "cpp.player.look.guild_prefix_self",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You are",
-      "pl": "Jesteś",
-      "lang": "You are"
-    },
-    {
-      "key": "cpp.player.look.level_fmt",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Level {0}",
-      "pl": "poziom {0}",
-      "lang": "Level {0}"
-    },
-    {
-      "key": "cpp.player.look.self",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "yourself",
-      "pl": "siebie",
-      "lang": "yourself"
     },
     {
       "key": "cpp.player.look.verb_vip",
@@ -1264,60 +943,6 @@
       "lang": "{0} VIP."
     },
     {
-      "key": "cpp.protocol.level_label",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Level",
-      "pl": "Poziom",
-      "lang": "Level"
-    },
-    {
-      "key": "cpp.protocol.married_to_label",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Married to",
-      "pl": "Żonaty, zamężna do",
-      "lang": "Married to"
-    },
-    {
-      "key": "cpp.protocol.outfit_label",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Outfit",
-      "pl": "Strój",
-      "lang": "Outfit"
-    },
-    {
-      "key": "cpp.protocol.tentugly_name",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Tentugly",
-      "pl": "Delikatnie",
-      "lang": "Tentugly"
-    },
-    {
-      "key": "cpp.protocol.unknown_label",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "unknown",
-      "pl": "unkNiewn",
-      "lang": "unknown"
-    },
-    {
-      "key": "cpp.protocol.vocation_all",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "(all)",
-      "pl": "(wszystkie)",
-      "lang": "(all)"
-    },
-    {
       "key": "cpp.protocol.vocation_label",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -1327,159 +952,6 @@
       "lang": "Vocation"
     },
     {
-      "key": "cpp.skill.level",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "level",
-      "pl": "poziom",
-      "lang": "level"
-    },
-    {
-      "key": "cpp.skill.mana_leech",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "mana leech",
-      "pl": "mana pijawka",
-      "lang": "mana leech"
-    },
-    {
-      "key": "cpp.skill.unknown",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "unknown",
-      "pl": "unkNiewn",
-      "lang": "unknown"
-    },
-    {
-      "key": "cpp.title.name_19",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Silencer",
-      "pl": "Tłumik",
-      "lang": "Silencer"
-    },
-    {
-      "key": "cpp.title.name_20",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Exalted",
-      "pl": "Wysoki",
-      "lang": "Exalted"
-    },
-    {
-      "key": "cpp.title.name_34",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Bipedantic",
-      "pl": "Dwunożny",
-      "lang": "Bipedantic"
-    },
-    {
-      "key": "cpp.title.name_45",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Huntsman",
-      "pl": "Myśliwy",
-      "lang": "Huntsman"
-    },
-    {
-      "key": "cpp.title.name_52",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Tumbler",
-      "pl": "Szklanka",
-      "lang": "Tumbler"
-    },
-    {
-      "key": "cpp.title.name_53",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Weedkiller",
-      "pl": "Środek chwastobójczy",
-      "lang": "Weedkiller"
-    },
-    {
-      "key": "cpp.title.name_81",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Aeternal",
-      "pl": "Wieczny",
-      "lang": "Aeternal"
-    },
-    {
-      "key": "cpp.title.name_85",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Beastly",
-      "pl": "Paskudny",
-      "lang": "Beastly"
-    },
-    {
-      "key": "cpp.vocation.desc_id_0",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "none",
-      "pl": "Niene",
-      "lang": "none"
-    },
-    {
-      "key": "cpp.vocation.desc_id_1",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a sorcerer",
-      "pl": "jeden sorcerer",
-      "lang": "a sorcerer"
-    },
-    {
-      "key": "cpp.vocation.desc_id_2",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a druid",
-      "pl": "jeden druid",
-      "lang": "a druid"
-    },
-    {
-      "key": "cpp.vocation.desc_id_3",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a paladin",
-      "pl": "jeden paladin",
-      "lang": "a paladin"
-    },
-    {
-      "key": "cpp.vocation.id_0",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "None",
-      "pl": "Niene",
-      "lang": "None"
-    },
-    {
-      "key": "cpp.vocation.id_1",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Sorcerer",
-      "pl": "Czarnoksiężnik",
-      "lang": "Sorcerer"
-    },
-    {
       "key": "cpp.vocation.id_3",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -1487,24 +959,6 @@
       "en": "Paladin",
       "pl": "Paladyn",
       "lang": "Paladin"
-    },
-    {
-      "key": "cpp.vocation.id_4",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Knight",
-      "pl": "Rycerz",
-      "lang": "Knight"
-    },
-    {
-      "key": "cpp.weapon.ammunition",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "ammunition",
-      "pl": "amunicja",
-      "lang": "ammunition"
     },
     {
       "key": "cpp.weapon.axe",
@@ -4385,6 +3839,555 @@
       "en": "Oink oink",
       "pl": "Chrum chrum",
       "lang": "Oink oink"
+    },
+    {
+      "key": "monster.old_pig.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Oink",
+      "pl": "Chrum",
+      "lang": "Oink"
+    },
+    {
+      "key": "monster.old_wolf.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Grrrrrrr",
+      "pl": "Wrrrrrr",
+      "lang": "Grrrrrrr"
+    },
+    {
+      "key": "monster.old_bear.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Grrrr",
+      "pl": "Wrrrr",
+      "lang": "Grrrr"
+    },
+    {
+      "key": "monster.old_bear.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Groar",
+      "pl": "ryk",
+      "lang": "Groar"
+    },
+    {
+      "key": "monster.weeper.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Moooaaan",
+      "pl": "Muuuuuu",
+      "lang": "Moooaaan"
+    },
+    {
+      "key": "monster.eternal_guardian.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Zzrrkrrch!",
+      "pl": "Zrrrkrrch!",
+      "lang": "Zzrrkrrch!"
+    },
+    {
+      "key": "monster.war_golem.voice_10",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Eliminated",
+      "pl": "Wyłączony",
+      "lang": "Eliminated"
+    },
+    {
+      "key": "monster.glooth_golem.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "*clank*",
+      "pl": "*I.*",
+      "lang": "*clank*"
+    },
+    {
+      "key": "monster.orewalker.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "CLONK!",
+      "pl": "KLONK!",
+      "lang": "CLONK!"
+    },
+    {
+      "key": "monster.rustheap_golem.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "*frzzp*",
+      "pl": "*frzz*",
+      "lang": "*frzzp*"
+    },
+    {
+      "key": "monster.magma_crawler.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Crrroak!",
+      "pl": "Crrrroak!",
+      "lang": "Crrroak!"
+    },
+    {
+      "key": "monster.ice_golem.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Chrrr.",
+      "pl": "Chrr.",
+      "lang": "Chrrr."
+    },
+    {
+      "key": "monster.ice_golem.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Crrrrk.",
+      "pl": "Crrr.",
+      "lang": "Crrrrk."
+    },
+    {
+      "key": "monster.infected_weeper.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Moooaaan",
+      "pl": "Muuuuuu",
+      "lang": "Moooaaan"
+    },
+    {
+      "key": "monster.lava_golem.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Grrrrunt",
+      "pl": "Wrrrr",
+      "lang": "Grrrrunt"
+    },
+    {
+      "key": "monster.green_frog.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Green Frog",
+      "pl": "Zielona Żaba",
+      "lang": "Green Frog"
+    },
+    {
+      "key": "monster.green_frog.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ribbit!",
+      "pl": "Kum!",
+      "lang": "Ribbit!"
+    },
+    {
+      "key": "monster.salamander.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Chrrch!",
+      "pl": "Chrr!",
+      "lang": "Chrrch!"
+    },
+    {
+      "key": "monster.infernal_frog.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ribbit!",
+      "pl": "Kum!",
+      "lang": "Ribbit!"
+    },
+    {
+      "key": "monster.orchid_frog.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ribbit!",
+      "pl": "Kum!",
+      "lang": "Ribbit!"
+    },
+    {
+      "key": "monster.azure_frog.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ribbit!",
+      "pl": "Kum!",
+      "lang": "Ribbit!"
+    },
+    {
+      "key": "monster.bog_frog.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ribbit!",
+      "pl": "Kum!",
+      "lang": "Ribbit!"
+    },
+    {
+      "key": "monster.makara.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a makara",
+      "pl": "makara",
+      "lang": "a makara"
+    },
+    {
+      "key": "monster.crimson_frog.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ribbit!",
+      "pl": "Kum!",
+      "lang": "Ribbit!"
+    },
+    {
+      "key": "monster.toad.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ribbit!",
+      "pl": "Kum!",
+      "lang": "Ribbit!"
+    },
+    {
+      "key": "monster.coral_frog.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ribbit!",
+      "pl": "Kum!",
+      "lang": "Ribbit!"
+    },
+    {
+      "key": "monster.acid_blob.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Acid Blob",
+      "pl": "Kwasowa plama",
+      "lang": "Acid Blob"
+    },
+    {
+      "key": "monster.devourer.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Devourer",
+      "pl": "Pożerać",
+      "lang": "Devourer"
+    },
+    {
+      "key": "monster.devourer.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a devourer",
+      "pl": "pożeracz",
+      "lang": "a devourer"
+    },
+    {
+      "key": "monster.devourer.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "*gulp*",
+      "pl": "*I.*",
+      "lang": "*gulp*"
+    },
+    {
+      "key": "monster.mercury_blob.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Crackle",
+      "pl": "Trzask",
+      "lang": "Crackle"
+    },
+    {
+      "key": "monster.death_blob.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Death Blob",
+      "pl": "Blob Śmierci",
+      "lang": "Death Blob"
+    },
+    {
+      "key": "monster.death_blob.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Shlorz",
+      "pl": "Szlorz",
+      "lang": "Shlorz"
+    },
+    {
+      "key": "monster.chocolate_blob.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "*Splotch*",
+      "pl": "*Plama*",
+      "lang": "*Splotch*"
+    },
+    {
+      "key": "monster.chocolate_blob.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Smudge",
+      "pl": "Plama",
+      "lang": "Smudge"
+    },
+    {
+      "key": "monster.ink_blob.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ink Blob",
+      "pl": "Kropla atramentu",
+      "lang": "Ink Blob"
+    },
+    {
+      "key": "monster.frost_troll.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Broar!",
+      "pl": "Bracie!",
+      "lang": "Broar!"
+    },
+    {
+      "key": "monster.lost_basher.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Yhouuuu!",
+      "pl": "Uuuuu!",
+      "lang": "Yhouuuu!"
+    },
+    {
+      "key": "monster.mooh'tah_warrior.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ommm!",
+      "pl": "Omm!",
+      "lang": "Ommm!"
+    },
+    {
+      "key": "monster.lost_exile.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Lost Exile",
+      "pl": "Utracone wygnanie",
+      "lang": "Lost Exile"
+    },
+    {
+      "key": "monster.pirat_mate.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Pirat Mate",
+      "pl": "Towarzysz Pirata",
+      "lang": "Pirat Mate"
+    },
+    {
+      "key": "monster.elf_scout.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Elf Scout",
+      "pl": "Elficki zwiadowca",
+      "lang": "Elf Scout"
+    },
+    {
+      "key": "monster.troll.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hmmm, bugs",
+      "pl": "Hmmm, błędy",
+      "lang": "Hmmm, bugs"
+    },
+    {
+      "key": "monster.troll.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Grrr",
+      "pl": "Wrr",
+      "lang": "Grrr"
+    },
+    {
+      "key": "monster.troll.voice_4",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Groar",
+      "pl": "ryk",
+      "lang": "Groar"
+    },
+    {
+      "key": "monster.island_troll.voice_4",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Groar",
+      "pl": "ryk",
+      "lang": "Groar"
+    },
+    {
+      "key": "monster.firestarter.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "FIRE!",
+      "pl": "OGIEŃ!",
+      "lang": "FIRE!"
+    },
+    {
+      "key": "monster.swamp_troll.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Groar!",
+      "pl": "Ryk!",
+      "lang": "Groar!"
+    },
+    {
+      "key": "monster.swamp_troll.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Grrrr",
+      "pl": "Wrrrr",
+      "lang": "Grrrr"
+    },
+    {
+      "key": "monster.orc_marauder.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Grrrrrr",
+      "pl": "Wrrrr",
+      "lang": "Grrrrrr"
+    },
+    {
+      "key": "monster.orc_spearman.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ugaar!",
+      "pl": "Ugar!",
+      "lang": "Ugaar!"
+    },
+    {
+      "key": "monster.orc_rider.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Orc Rider",
+      "pl": "Ork Jeździec",
+      "lang": "Orc Rider"
+    },
+    {
+      "key": "monster.orc_rider.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Grrrrrrr",
+      "pl": "Wrrrrrr",
+      "lang": "Grrrrrrr"
+    },
+    {
+      "key": "monster.minotaur.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Minotaur",
+      "pl": "MiNietaur",
+      "lang": "Minotaur"
+    },
+    {
+      "key": "monster.minotaur.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a minotaur",
+      "pl": "a miNietaur",
+      "lang": "a minotaur"
+    },
+    {
+      "key": "monster.minotaur.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hurr",
+      "pl": "Hurra",
+      "lang": "Hurr"
+    },
+    {
+      "key": "monster.orc_leader.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Orc Leader",
+      "pl": "Przywódca Orków",
+      "lang": "Orc Leader"
+    },
+    {
+      "key": "monster.elf.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "an elf",
+      "pl": "elf",
+      "lang": "an elf"
+    },
+    {
+      "key": "monster.troll_champion.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Grrrr",
+      "pl": "Wrrrr",
+      "lang": "Grrrr"
+    },
+    {
+      "key": "monster.troll_champion.voice_5",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Groar",
+      "pl": "ryk",
+      "lang": "Groar"
+    },
+    {
+      "key": "monster.moohtant.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a moohtant",
+      "pl": "moohtant",
+      "lang": "a moohtant"
     }
   ],
   "length_ratio_issues": [
@@ -4481,8 +4484,8 @@
   ],
   "auto_fix": {
     "attempted": 80,
-    "applied": 64,
-    "skipped": 16,
+    "applied": 42,
+    "skipped": 38,
     "errors": 0
   }
 }

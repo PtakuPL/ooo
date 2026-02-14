@@ -6934,5 +6934,141 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-14T12:15:14.656022Z"
+  },
+  "npc.alyxo.say_12": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Atsiprašau.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:29:03.386158Z"
+  },
+  "npc.alyxo.say_15": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Atsiprašau.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:29:03.386582Z"
+  },
+  "npc.alyxo.say_18": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Atsiprašau.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:29:03.386914Z"
+  },
+  "npc.alyxo.say_21": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Atsiprašau.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:29:03.387248Z"
+  },
+  "npc.alyxo.say_24": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Atsiprašau.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:29:03.387624Z"
+  },
+  "npc.alyxo.say_6": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Atsiprašau.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:29:03.387967Z"
+  },
+  "npc.alyxo.say_9": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Atsiprašau.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:29:03.388312Z"
+  },
+  "npc.guide_davina.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Viso gero.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:29:03.558472Z"
+  },
+  "npc.guide_edna.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Viso gero.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:29:03.560060Z"
+  },
+  "npc.guide_elena.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Viso gero.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:29:03.561398Z"
+  },
+  "npc.guide_kunibert.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Viso gero.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:29:03.563405Z"
+  },
+  "npc.guide_luke.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Viso gero.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:29:03.564805Z"
+  },
+  "npc.guide_rahlkora.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Viso gero.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:29:03.566203Z"
+  },
+  "npc.guide_thelandil.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Viso gero.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:29:03.567686Z"
+  },
+  "npc.guide_tiko.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Viso gero.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:29:03.568973Z"
+  },
+  "npc.hanna.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Viso gero.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:29:03.573548Z"
+  },
+  "npc.hanna.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Viso gero.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:29:03.574735Z"
   }
 }

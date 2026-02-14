@@ -2,63 +2,26 @@
   "lang": "fr",
   "script_group": "latin",
   "total_keys": 53586,
-  "translated": 19244,
-  "identical_to_en": 4370,
-  "placeholder_keys": 34342,
-  "coverage_pct": 35.9,
-  "issues_total": 154,
+  "translated": 18345,
+  "identical_to_en": 4306,
+  "placeholder_keys": 35241,
+  "coverage_pct": 34.2,
+  "issues_total": 111,
   "issues_by_type": {
-    "V1_placeholder_mismatch": 141,
+    "V1_placeholder_mismatch": 99,
     "V6_newline_mismatch": 8,
-    "V4_artifact": 4,
-    "V5_pipe_mismatch": 1
+    "V4_artifact": 4
   },
   "issues_by_severity": {
-    "CRITICAL": 142,
+    "CRITICAL": 99,
     "HIGH": 4,
     "MEDIUM": 8,
     "LOW": 0
   },
-  "score": 97.7,
+  "score": 98.3,
   "worst_keys": [
     {
       "key": "html.admin.changelog.form.html.text5",
-      "category": "html",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "html.logout.html.text1",
-      "category": "html",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "html.changeemail.html.text4",
-      "category": "html",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "html.changeemail.html.text5",
-      "category": "html",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "html.changepassword.html.text1",
-      "category": "html",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "html.changepassword.html.text2",
-      "category": "html",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "html.changepassword.html.text3",
       "category": "html",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
@@ -88,18 +51,6 @@
       "severity": "CRITICAL"
     },
     {
-      "key": "html.column_attributes.text1",
-      "category": "html",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "html.column_definitions_form.text1",
-      "category": "html",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
       "key": "html.column_definitions_form.text2",
       "category": "html",
       "type": "V1_placeholder_mismatch",
@@ -107,12 +58,6 @@
     },
     {
       "key": "html.partitions.text1",
-      "category": "html",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "html.partitions.text2",
       "category": "html",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
@@ -140,6 +85,60 @@
       "category": "html",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
+    },
+    {
+      "key": "html.template_options.text1",
+      "category": "html",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "html.unhide_nav_item.text1",
+      "category": "html",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "html.create_view.text1",
+      "category": "html",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "html.table.text2",
+      "category": "html",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "html.table.text3",
+      "category": "html",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "html.table.text5",
+      "category": "html",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "html.view_create.text2",
+      "category": "html",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "html.tables.text4",
+      "category": "html",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "html.page_selector.text1",
+      "category": "html",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
     }
   ],
   "crossref": {
@@ -148,7 +147,7 @@
     "consistency": 50,
     "pl_reference": 400,
     "length_ratio": 10,
-    "auto_fix_applied": 64
+    "auto_fix_applied": 42
   },
-  "validated_at": "2026-02-14T12:04:46.521858Z"
+  "validated_at": "2026-02-14T12:27:52.793363Z"
 }

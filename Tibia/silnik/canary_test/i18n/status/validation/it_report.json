@@ -2,40 +2,27 @@
   "lang": "it",
   "script_group": "latin",
   "total_keys": 53586,
-  "translated": 4444,
-  "identical_to_en": 2672,
-  "placeholder_keys": 49142,
+  "translated": 4434,
+  "identical_to_en": 2668,
+  "placeholder_keys": 49152,
   "coverage_pct": 8.3,
-  "issues_total": 5,
+  "issues_total": 3,
   "issues_by_type": {
     "V4_artifact": 2,
-    "V1_placeholder_mismatch": 2,
-    "V5_pipe_mismatch": 1
+    "V1_placeholder_mismatch": 1
   },
   "issues_by_severity": {
-    "CRITICAL": 3,
+    "CRITICAL": 1,
     "HIGH": 2,
     "MEDIUM": 0,
     "LOW": 0
   },
-  "score": 99.7,
+  "score": 99.9,
   "worst_keys": [
     {
       "key": "scripts.actions_rewards.msg_1",
       "category": "scripts",
       "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "talkaction.online.msg_summary",
-      "category": "talkactions",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "talkaction.online.msg_summary",
-      "category": "talkactions",
-      "type": "V5_pipe_mismatch",
       "severity": "CRITICAL"
     },
     {
@@ -59,5 +46,5 @@
     "length_ratio": 5,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-14T12:04:47.538143Z"
+  "validated_at": "2026-02-14T12:27:54.051587Z"
 }

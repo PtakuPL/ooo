@@ -2,17 +2,17 @@
   "lang": "uk",
   "script_group": "cyrillic",
   "total_keys": 53586,
-  "translated": 3410,
+  "translated": 3409,
   "identical_to_en": 2667,
-  "placeholder_keys": 50176,
+  "placeholder_keys": 50177,
   "coverage_pct": 6.4,
-  "issues_total": 17,
+  "issues_total": 16,
   "issues_by_type": {
-    "script_cyrillic_latin_mix": 17
+    "script_cyrillic_latin_mix": 16
   },
   "issues_by_severity": {
     "CRITICAL": 0,
-    "HIGH": 17,
+    "HIGH": 16,
     "MEDIUM": 0,
     "LOW": 0
   },
@@ -44,12 +44,6 @@
     },
     {
       "key": "achievement.206.name",
-      "category": "achievements",
-      "type": "script_cyrillic_latin_mix",
-      "severity": "HIGH"
-    },
-    {
-      "key": "achievement.278.name",
       "category": "achievements",
       "type": "script_cyrillic_latin_mix",
       "severity": "HIGH"
@@ -123,11 +117,11 @@
   ],
   "crossref": {
     "enabled": false,
-    "issues_total": 406,
+    "issues_total": 405,
     "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 6,
+    "length_ratio": 5,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-14T12:05:20.894641Z"
+  "validated_at": "2026-02-14T12:28:30.011939Z"
 }

@@ -2,49 +2,23 @@
   "lang": "ka",
   "script_group": "exotic",
   "total_keys": 53586,
-  "translated": 4820,
+  "translated": 4812,
   "identical_to_en": 3713,
-  "placeholder_keys": 48766,
+  "placeholder_keys": 48774,
   "coverage_pct": 9.0,
-  "issues_total": 86,
+  "issues_total": 78,
   "issues_by_type": {
-    "script_wrong_script": 82,
-    "V1_placeholder_mismatch": 2,
-    "V4_artifact": 1,
-    "V5_pipe_mismatch": 1
+    "script_wrong_script": 77,
+    "V4_artifact": 1
   },
   "issues_by_severity": {
-    "CRITICAL": 3,
-    "HIGH": 83,
+    "CRITICAL": 0,
+    "HIGH": 78,
     "MEDIUM": 0,
     "LOW": 0
   },
-  "score": 97.2,
+  "score": 97.6,
   "worst_keys": [
-    {
-      "key": "scripts.actions_rewards.msg_1",
-      "category": "scripts",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "talkaction.online.msg_summary",
-      "category": "talkactions",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "talkaction.online.msg_summary",
-      "category": "talkactions",
-      "type": "V5_pipe_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "achievement.26.name",
-      "category": "achievements",
-      "type": "script_wrong_script",
-      "severity": "HIGH"
-    },
     {
       "key": "achievement.72.name",
       "category": "achievements",
@@ -140,15 +114,39 @@
       "category": "items",
       "type": "script_wrong_script",
       "severity": "HIGH"
+    },
+    {
+      "key": "item.23442.name",
+      "category": "items",
+      "type": "script_wrong_script",
+      "severity": "HIGH"
+    },
+    {
+      "key": "item.23443.name",
+      "category": "items",
+      "type": "script_wrong_script",
+      "severity": "HIGH"
+    },
+    {
+      "key": "item.24227.name",
+      "category": "items",
+      "type": "script_wrong_script",
+      "severity": "HIGH"
+    },
+    {
+      "key": "item.24966.name",
+      "category": "items",
+      "type": "script_wrong_script",
+      "severity": "HIGH"
     }
   ],
   "crossref": {
     "enabled": false,
-    "issues_total": 409,
+    "issues_total": 408,
     "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 9,
+    "length_ratio": 8,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-14T12:04:47.856545Z"
+  "validated_at": "2026-02-14T12:27:54.358843Z"
 }

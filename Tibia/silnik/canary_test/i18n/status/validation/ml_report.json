@@ -2,43 +2,23 @@
   "lang": "ml",
   "script_group": "exotic",
   "total_keys": 53586,
-  "translated": 4972,
+  "translated": 4967,
   "identical_to_en": 3704,
-  "placeholder_keys": 48614,
+  "placeholder_keys": 48619,
   "coverage_pct": 9.3,
-  "issues_total": 87,
+  "issues_total": 80,
   "issues_by_type": {
-    "script_wrong_script": 83,
-    "V1_placeholder_mismatch": 2,
-    "V4_artifact": 1,
-    "V5_pipe_mismatch": 1
+    "script_wrong_script": 79,
+    "V4_artifact": 1
   },
   "issues_by_severity": {
-    "CRITICAL": 3,
-    "HIGH": 84,
+    "CRITICAL": 0,
+    "HIGH": 80,
     "MEDIUM": 0,
     "LOW": 0
   },
-  "score": 97.3,
+  "score": 97.6,
   "worst_keys": [
-    {
-      "key": "scripts.actions_rewards.msg_1",
-      "category": "scripts",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "talkaction.online.msg_summary",
-      "category": "talkactions",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "talkaction.online.msg_summary",
-      "category": "talkactions",
-      "type": "V5_pipe_mismatch",
-      "severity": "CRITICAL"
-    },
     {
       "key": "achievement.317.description",
       "category": "achievements",
@@ -140,6 +120,24 @@
       "category": "items",
       "type": "script_wrong_script",
       "severity": "HIGH"
+    },
+    {
+      "key": "item.24227.name",
+      "category": "items",
+      "type": "script_wrong_script",
+      "severity": "HIGH"
+    },
+    {
+      "key": "item.24966.name",
+      "category": "items",
+      "type": "script_wrong_script",
+      "severity": "HIGH"
+    },
+    {
+      "key": "item.2521.name",
+      "category": "items",
+      "type": "script_wrong_script",
+      "severity": "HIGH"
     }
   ],
   "crossref": {
@@ -150,5 +148,5 @@
     "length_ratio": 11,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-14T12:04:48.840839Z"
+  "validated_at": "2026-02-14T12:27:55.310632Z"
 }

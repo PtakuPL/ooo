@@ -9,6 +9,33 @@
 #
 # Worker automatycznie przełącza się między trybami w trybie --continuous
 #===============================================================================
+#
+# ── UNIFIED STAGE / EVENT NAMES ──────────────────────────────────
+# Phase            Stage                  Opis
+# ─────────────    ─────────────────────  ─────────────────────────
+# MIGRATION        migration_start        Początek cyklu migracji
+#                  file                   Przetwarzanie pliku
+#                  pending_skip           Pomijanie pending_skip
+#                  mini_batch             Mini-batch w toku
+#                  mini_batch_start/done  Granice mini-batch
+#                  migration_done         Koniec migracji
+# TRANSLATION_SYNC sync_start             Synchronizacja EN→lang
+#                  sync_file_done         Plik zsynchronizowany
+#                  sync_done              Koniec synchronizacji
+# AUTO_TRANSLATE   auto_start             Tłumaczenie GT/dict
+#                  parallel_start         Parallel langs start
+#                  auto_done              Koniec auto-translate
+# COMPACT_KEYS     keymap_sync            Sync keymap
+#                  keymap_verify          Weryfikacja keymap
+#                  export                 Export compact keys
+#                  done                   Koniec compact
+# VALIDATION       validation_start       Początek walidacji
+#                  validation_done        Koniec walidacji
+# IDLE             idle_cycle / sleeping  Oczekiwanie
+# (lifecycle)      cycle_start/end        Granice cyklu
+#                  dispatch               Dispatch trybu pracy
+#                  signal / restart       Sygnały systemowe
+# ─────────────────────────────────────────────────────────────────
 
 # Zachowaj oryginalne argumenty (do RESTART)
 WORKER_ORIGINAL_ARGS=("$@")
@@ -1376,7 +1403,7 @@ files_migrated = 0       # Mają klucze i18n
 files_needs_migration = 0  # Trzeba dodać i18n
 files_clean = 0          # Czyste (bez tekstów do tłumaczenia)
 files_in_progress = 0    # W trakcie przetwarzania
-total_keys_extracted = 0
+total_keys_extracted_registry = 0
 
 for fpath, info in files.items():
     status = info.get('overall_status', '')
@@ -1389,7 +1416,7 @@ for fpath, info in files.items():
         keys = extraction.get('keys_added', 0)
         if keys > 0:
             files_migrated += 1
-            total_keys_extracted += keys
+            total_keys_extracted_registry += keys
         else:
             # Sprawdź czy plik miał teksty do migracji
             analysis = stages.get('2_analysis', {})
@@ -1397,6 +1424,9 @@ for fpath, info in files.items():
                 files_needs_migration += 1
             else:
                 files_clean += 1
+
+# Backward-compat dla starszych odwołań w skrypcie.
+total_keys_extracted = total_keys_extracted_registry
 
 # 5. DO ZROBIENIA
 files_not_scanned = scannable_files - scanned_files
@@ -1655,6 +1685,8 @@ for jf in en_json_files:
 
 # Jedno źródło prawdy dla licznika kluczy EN używanego w dashboardzie.
 total_keys = int(sum(en_file_key_count.values()))
+total_keys_extracted_live = int(total_keys)
+keys_extracted_outside_worker = max(0, total_keys_extracted_live - total_keys_extracted_registry)
 
 # Preload EN dane raz na przebieg STATUSPY (P3 cold-path optimization)
 en_data_cache = {}
@@ -1788,6 +1820,11 @@ for lang in [l for l in ALL_LANGUAGES if l != "en"]:
     english_copy = 0
     missing_keys = 0
     missing_files = 0
+    # Scope breakdown: serwer vs instalka (klient)
+    server_reference = 0
+    server_translated = 0
+    client_reference = 0
+    client_translated = 0
 
     lang_all_files_from_cache = cache_valid and bool(cached_files)
 
@@ -1810,13 +1847,26 @@ for lang in [l for l in ALL_LANGUAGES if l != "en"]:
             "row": file_row,
         }
 
-        total_reference += int(file_row.get("total_reference_keys", 0) or 0)
-        translated_ok += int(file_row.get("translated_keys", 0) or 0)
+        fr_ref = int(file_row.get("total_reference_keys", 0) or 0)
+        fr_tr = int(file_row.get("translated_keys", 0) or 0)
+        total_reference += fr_ref
+        translated_ok += fr_tr
         english_copy += int(file_row.get("english_copy_keys", 0) or 0)
         missing_keys += int(file_row.get("missing_keys", 0) or 0)
         missing_files += int(file_row.get("missing_files", 0) or 0)
 
+        # Scope breakdown
+        jf_cat = os.path.splitext(jf)[0].lower()
+        if jf_cat in CLIENT_CATEGORIES:
+            client_reference += fr_ref
+            client_translated += fr_tr
+        else:
+            server_reference += fr_ref
+            server_translated += fr_tr
+
     completion = round((translated_ok / total_reference) * 100, 2) if total_reference else 0.0
+    server_pct = round((server_translated / server_reference) * 100, 2) if server_reference else 0.0
+    client_pct = round((client_translated / client_reference) * 100, 2) if client_reference else 0.0
     row = {
         "lang": lang,
         "language_name": _lang_name(lang),
@@ -1827,6 +1877,12 @@ for lang in [l for l in ALL_LANGUAGES if l != "en"]:
         "missing_keys": int(missing_keys),
         "missing_files": int(missing_files),
         "completion_pct": completion,
+        "server_keys": int(server_reference),
+        "server_translated": int(server_translated),
+        "server_pct": server_pct,
+        "client_keys": int(client_reference),
+        "client_translated": int(client_translated),
+        "client_pct": client_pct,
     }
 
     if lang_all_files_from_cache:
@@ -2201,6 +2257,26 @@ overview_payload = {
     "global": {
         **translation_global,
         "completion_pct": global_completion_pct,
+    },
+    "migration": {
+        "files_total": len(files),
+        "files_completed": completed,
+        "files_migrated": files_migrated,
+        "files_in_progress": files_in_progress,
+        "files_needs_migration": files_needs_migration,
+        "files_clean": files_clean,
+        "total_keys_extracted": total_keys_extracted_live,
+        "total_keys_extracted_live": total_keys_extracted_live,
+        "total_keys_extracted_worker_registry": total_keys_extracted_registry,
+        "keys_extracted_outside_worker_registry": keys_extracted_outside_worker,
+        "npc_total": total_npc,
+        "npc_migrated": migrated_npc,
+        "npc_needs_migration": needs_migration_npc,
+    },
+    "scope_totals": {
+        "server_keys": int(sum(en_file_key_count.get(f, 0) for f in en_json_files if os.path.splitext(f)[0].lower() not in CLIENT_CATEGORIES)),
+        "client_keys": int(sum(en_file_key_count.get(f, 0) for f in en_json_files if os.path.splitext(f)[0].lower() in CLIENT_CATEGORIES)),
+        "client_categories": sorted(list(CLIENT_CATEGORIES)),
     },
     "reports": {
         "guard_reports_total": guard_total,
@@ -2743,7 +2819,7 @@ meta_source = "update_github_status()"
 meta_last_update = timestamp
 live_source = "activity.json / worker_state.json"
 live_last_update = str(heartbeat_iso or "-")
-migration_source = "i18n_file_status.json"
+migration_source = "i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt"
 migration_last_update = timestamp
 translation_source = "translation_guard_latest.json / translation_recent_latest.json"
 translation_last_update = next(
@@ -2922,6 +2998,21 @@ for _kl in kpi_pilot_langs:
     )
 kpi_table = chr(10).join(kpi_rows)
 
+# Scope breakdown table (serwer vs instalka)
+_scope_server_keys = int(sum(en_file_key_count.get(f, 0) for f in en_json_files if os.path.splitext(f)[0].lower() not in CLIENT_CATEGORIES))
+_scope_client_keys = int(sum(en_file_key_count.get(f, 0) for f in en_json_files if os.path.splitext(f)[0].lower() in CLIENT_CATEGORIES))
+scope_rows = []
+for row in translation_lang_overview:
+    lang = row.get("lang", "")
+    s_pct = row.get("server_pct", 0)
+    c_pct = row.get("client_pct", 0)
+    s_tr = row.get("server_translated", 0)
+    c_tr = row.get("client_translated", 0)
+    scope_rows.append(
+        f"| {lang.upper()} | {s_tr:,}/{_scope_server_keys:,} | {s_pct:.1f}% | {c_tr:,}/{_scope_client_keys:,} | {c_pct:.1f}% |"
+    )
+scope_table = chr(10).join(scope_rows[:12])  # top 12 języków
+
 # ==================== GENERUJ PEŁNY I18N_STATUS.md ====================
 md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 
@@ -3042,6 +3133,9 @@ md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 | Metryka | Wartość | Info |
 |---------|---------|------|
 | 🔑 **Klucze EN (źródłowe)** | **{total_keys:,}** | wszystkie kategorie |
+| 🧮 **Klucze wyekstrahowane (LIVE)** | **{total_keys_extracted_live:,}** | realny stan `i18n/en/*.json` |
+| 🤖 Klucze z rejestru workera | **{total_keys_extracted_registry:,}** | suma `5_extraction_en.keys_added` |
+| ➕ Klucze poza rejestrem workera | **{keys_extracted_outside_worker:,}** | ręczne zmiany / starsze migracje |
 | 📊 NPC | {npc_keys:,} | dialogi NPC |
 | 📊 Items | {items_keys:,} | przedmioty |
 | 📊 Monsters | {monsters_keys:,} | potwory |
@@ -3085,6 +3179,16 @@ md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 - **Profiler cyklu (ostatni):** {perf_summary_md}
 - **Osobny raport:** `i18n/status/translation_global_overview.json`
 
+### 🖥️ Serwer vs 📦 Instalka (OTClient)
+| Zakres | EN kluczy |
+|--------|-----------|
+| 🖥️ **Serwer** | **{_scope_server_keys:,}** |
+| 📦 **Instalka** (klient/OTClient) | **{_scope_client_keys:,}** |
+
+| Język | Serwer | Serwer % | Instalka | Instalka % |
+|-------|--------|----------|----------|------------|
+{scope_table}
+
 ### ⏱️ Strict Hourly Window (JSONL-only)
 | Metryka | Wartość |
 |---------|---------|
@@ -3112,7 +3216,8 @@ md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 | Metryka | Wartość | Info |
 |---------|---------|------|
 | 🔄 Cykl aktualny | **#{cycle_count}** | od uruchomienia |
-| 🔑 Kluczy wyekstrahowanych | **{total_keys_extracted:,}** | w tej sesji |
+| 🔑 Kluczy wyekstrahowanych (LIVE) | **{total_keys_extracted_live:,}** | realny stan EN |
+| 🤖 Kluczy z rejestru workera | **{total_keys_extracted_registry:,}** | historia runów workera |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
 ---
@@ -3247,7 +3352,9 @@ md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 | 📁 Plików przeskanowanych | **{len(files)}** | w tej sesji |
 | ✅ Plików z kluczami | **{files_migrated}** | zawierały hardcoded strings |
 | ⬜ Plików bez kluczy | **{len(files) - files_migrated}** | czyste (brak hardcoded) |
-| 🔑 Kluczy wyciągniętych | **{total_keys_extracted}** | przez workera w tej sesji |
+| 🔑 Kluczy wyciągniętych (LIVE) | **{total_keys_extracted_live:,}** | realny stan `i18n/en/*.json` |
+| 🤖 Kluczy wyciągniętych przez workera | **{total_keys_extracted_registry:,}** | z `i18n_file_status.json` |
+| ➕ Kluczy poza rejestrem workera | **{keys_extracted_outside_worker:,}** | ręczne/Codex/Claude/starsze |
 | 🌍 Języków | **{langs_count}** | EN + tłumaczenia |
 | 🔄 Cykli wykonanych | **#{cycle_count}** | continuous mode |
 
@@ -9242,16 +9349,51 @@ REPAIR_IDENTICAL_LIMIT_LOW="${REPAIR_IDENTICAL_LIMIT_LOW:-180}"
 REPAIR_IDENTICAL_HIGH_BACKLOG="${REPAIR_IDENTICAL_HIGH_BACKLOG:-1500}"
 REPAIR_IDENTICAL_LOW_BACKLOG="${REPAIR_IDENTICAL_LOW_BACKLOG:-350}"
 REPAIR_IDENTICAL_FORCE_GT="${REPAIR_IDENTICAL_FORCE_GT:-true}"
+REPAIR_IDENTICAL_DOMAIN_LIMIT_NPC="${REPAIR_IDENTICAL_DOMAIN_LIMIT_NPC:-260}"
+REPAIR_IDENTICAL_DOMAIN_LIMIT_SERVER="${REPAIR_IDENTICAL_DOMAIN_LIMIT_SERVER:-240}"
+REPAIR_IDENTICAL_DOMAIN_LIMIT_TALKACTIONS="${REPAIR_IDENTICAL_DOMAIN_LIMIT_TALKACTIONS:-200}"
+REPAIR_IDENTICAL_DOMAIN_LIMIT_QUESTS="${REPAIR_IDENTICAL_DOMAIN_LIMIT_QUESTS:-180}"
+REPAIR_IDENTICAL_DOMAIN_LIMIT_ACTIONS="${REPAIR_IDENTICAL_DOMAIN_LIMIT_ACTIONS:-180}"
+REPAIR_IDENTICAL_DOMAIN_LIMIT_DEFAULT="${REPAIR_IDENTICAL_DOMAIN_LIMIT_DEFAULT:-220}"
+REPAIR_SUSPICIOUS_WINDOW_ENTRIES="${REPAIR_SUSPICIOUS_WINDOW_ENTRIES:-30}"
+REPAIR_SUSPICIOUS_HIGH_THRESHOLD_PCT="${REPAIR_SUSPICIOUS_HIGH_THRESHOLD_PCT:-12}"
+REPAIR_SUSPICIOUS_MIN_TRANSLATED="${REPAIR_SUSPICIOUS_MIN_TRANSLATED:-80}"
+REPAIR_SUSPICIOUS_LIMIT_FACTOR="${REPAIR_SUSPICIOUS_LIMIT_FACTOR:-0.60}"
 
 repair_identical_bonus_round() {
     local cycle="$1"
-    
-    # Sprawdź interwał — uruchamiaj tylko co REPAIR_IDENTICAL_INTERVAL cykli
-    if (( cycle % REPAIR_IDENTICAL_INTERVAL != 0 )); then
+
+    # Sprawdź interwał — preferuj globalny licznik cykli dispatchera (nie resetuje się po restarcie workera),
+    # aby runda repair nie była głodzona przez częste restarty i reset lokalnego CYCLE=1.
+    local interval_cycle="$cycle"
+    local global_cycle
+    global_cycle=$(python3 - "$STATUS_DIR/translation_dispatch_state.json" <<'PYREPAIRCYCLE'
+import json, sys
+path = sys.argv[1]
+try:
+    with open(path, encoding="utf-8") as f:
+        d = json.load(f)
+    v = d.get("cycle_counter", "")
+    print(int(float(v)))
+except Exception:
+    print("")
+PYREPAIRCYCLE
+)
+    case "${global_cycle:-}" in
+        ''|*[!0-9]*)
+            ;;
+        *)
+            if [ "$global_cycle" -gt 0 ] 2>/dev/null; then
+                interval_cycle="$global_cycle"
+            fi
+            ;;
+    esac
+
+    if (( interval_cycle % REPAIR_IDENTICAL_INTERVAL != 0 )); then
         return 0
     fi
     
-    echo "🔧 REPAIR: identical_to_en bonus round (cykl $cycle)"
+    echo "🔧 REPAIR: identical_to_en bonus round (cykl $cycle, interval_key=$interval_cycle)"
     
     # Zbuduj kolejkę naprawczą i wybierz target wg priorytetu
     local repair_target
@@ -9462,6 +9604,110 @@ REPAIR_SELECT_PY
         repair_limit_tier="${repair_limit_tier}_fallback_hard"
     fi
 
+    # Per-domena cap limitu repair (kontrola quality dla ryzykownych domen).
+    local domain_limit="$REPAIR_IDENTICAL_DOMAIN_LIMIT_DEFAULT"
+    case "$R_FILE" in
+        npc.json) domain_limit="${REPAIR_IDENTICAL_DOMAIN_LIMIT_NPC:-260}" ;;
+        server.json) domain_limit="${REPAIR_IDENTICAL_DOMAIN_LIMIT_SERVER:-240}" ;;
+        talkactions.json) domain_limit="${REPAIR_IDENTICAL_DOMAIN_LIMIT_TALKACTIONS:-200}" ;;
+        quests.json) domain_limit="${REPAIR_IDENTICAL_DOMAIN_LIMIT_QUESTS:-180}" ;;
+        actions.json) domain_limit="${REPAIR_IDENTICAL_DOMAIN_LIMIT_ACTIONS:-180}" ;;
+        *) domain_limit="${REPAIR_IDENTICAL_DOMAIN_LIMIT_DEFAULT:-220}" ;;
+    esac
+    case "${domain_limit:-}" in
+        ''|*[!0-9]*)
+            domain_limit="$repair_limit"
+            ;;
+    esac
+    if [ "${domain_limit:-0}" -gt 0 ] 2>/dev/null && [ "${domain_limit:-0}" -lt "${repair_limit:-0}" ] 2>/dev/null; then
+        repair_limit="$domain_limit"
+        repair_limit_tier="${repair_limit_tier}+domain_cap"
+    fi
+
+    # Guard jakości: jeśli suspicious_high dla tego lang/file jest wysoki,
+    # obniż limit rundy repair, by zmniejszyć ryzyko dalszej degradacji.
+    local repair_suspicious_pct="0.00"
+    local repair_suspicious_high="0"
+    local repair_suspicious_translated="0"
+    local suspicious_stats
+    suspicious_stats=$(python3 - "$STATUS_DIR" "$R_LANG" "$R_FILE" "$REPAIR_SUSPICIOUS_WINDOW_ENTRIES" <<'PYREPAIRRISK'
+import json, os, sys
+
+status_dir = sys.argv[1]
+lang = str(sys.argv[2]).strip().lower()
+json_file = str(sys.argv[3]).strip().lower()
+try:
+    limit = max(1, int(float(sys.argv[4])))
+except Exception:
+    limit = 30
+
+quality_path = os.path.join(status_dir, "quality_report.jsonl")
+rows = []
+if os.path.exists(quality_path):
+    with open(quality_path, encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                row = json.loads(line)
+            except Exception:
+                continue
+            r_lang = str(row.get("language", "")).strip().lower()
+            r_file = str(row.get("json_file", "")).strip().lower()
+            if r_lang == lang and r_file == json_file:
+                rows.append(row)
+
+if not rows:
+    print("0.00:0:0")
+    raise SystemExit(0)
+
+rows = rows[-limit:]
+translated = 0
+susp_high = 0
+for row in rows:
+    try:
+        translated += int(row.get("translated", 0) or 0)
+    except Exception:
+        pass
+    q = row.get("quality", {}) if isinstance(row.get("quality", {}), dict) else {}
+    try:
+        susp_high += int(q.get("suspicious_high", 0) or 0)
+    except Exception:
+        pass
+
+pct = (float(susp_high) / float(max(translated, 1))) * 100.0
+print(f"{pct:.2f}:{susp_high}:{translated}")
+PYREPAIRRISK
+)
+    repair_suspicious_pct=$(echo "$suspicious_stats" | cut -d: -f1)
+    repair_suspicious_high=$(echo "$suspicious_stats" | cut -d: -f2)
+    repair_suspicious_translated=$(echo "$suspicious_stats" | cut -d: -f3)
+    repair_suspicious_pct=${repair_suspicious_pct:-0.00}
+    repair_suspicious_high=${repair_suspicious_high:-0}
+    repair_suspicious_translated=${repair_suspicious_translated:-0}
+
+    local repair_limit_pre_risk="$repair_limit"
+    local reduce_for_suspicious="false"
+    if [ "${repair_suspicious_translated:-0}" -ge "${REPAIR_SUSPICIOUS_MIN_TRANSLATED:-80}" ] 2>/dev/null; then
+        if awk -v pct="${repair_suspicious_pct:-0}" -v thr="${REPAIR_SUSPICIOUS_HIGH_THRESHOLD_PCT:-12}" 'BEGIN{exit !(pct>=thr)}'; then
+            reduce_for_suspicious="true"
+        fi
+    fi
+    if [ "$reduce_for_suspicious" = "true" ]; then
+        local risk_limit
+        risk_limit=$(awk -v lim="${repair_limit:-0}" -v fac="${REPAIR_SUSPICIOUS_LIMIT_FACTOR:-0.60}" 'BEGIN{v=int(lim*fac); if(v<80)v=80; print v}')
+        case "${risk_limit:-}" in
+            ''|*[!0-9]*)
+                risk_limit="$repair_limit_pre_risk"
+                ;;
+        esac
+        if [ "${risk_limit:-0}" -lt "${repair_limit_pre_risk:-0}" ] 2>/dev/null; then
+            repair_limit="$risk_limit"
+            repair_limit_tier="${repair_limit_tier}+suspicious_guard"
+        fi
+    fi
+
     # W rundzie repair dla PL/ES można wymusić GT, żeby szybciej zbijać EN-copy.
     local orig_use_gt="${USE_GOOGLE_TRANSLATE:-false}"
     local repair_gt_mode="$orig_use_gt"
@@ -9476,7 +9722,7 @@ REPAIR_SELECT_PY
             ;;
     esac
 
-    echo "   🎚️ REPAIR tuning: tier=$repair_limit_tier limit=$repair_limit gt=$repair_gt_mode"
+    echo "   🎚️ REPAIR tuning: tier=$repair_limit_tier limit=$repair_limit domain_cap=$domain_limit gt=$repair_gt_mode suspicious_high=${repair_suspicious_high}/${repair_suspicious_translated} (${repair_suspicious_pct}%)"
 
     # Zapisz obecny limit i ustaw limit rundy repair
     local orig_limit="${TRANSLATE_LIMIT:-80}"
@@ -9494,10 +9740,54 @@ REPAIR_SELECT_PY
         export USE_GOOGLE_TRANSLATE="$orig_use_gt"
     fi
     
-    echo "   📊 REPAIR result: translated=$R_TRANSLATED guard_fail=$R_GUARD_FAIL (limit=$repair_limit tier=$repair_limit_tier gt=$repair_gt_mode)"
+    echo "   📊 REPAIR result: translated=$R_TRANSLATED guard_fail=$R_GUARD_FAIL (limit=$repair_limit tier=$repair_limit_tier gt=$repair_gt_mode suspicious_pct=${repair_suspicious_pct}%)"
     
     # Loguj operację repair
-    status_log_op "$cycle" "AUTO_TRANSLATE" "REPAIR_IDENTICAL_DONE" "$R_LANG" "$R_FILE" "ok" "repair_identical lang=${R_LANG} file=${R_FILE} target_identical=${R_COUNT} limit=${repair_limit} tier=${repair_limit_tier} gt=${repair_gt_mode}" "" "" "" "$R_TRANSLATED" ""
+    status_log_op "$cycle" "AUTO_TRANSLATE" "REPAIR_IDENTICAL_DONE" "$R_LANG" "$R_FILE" "ok" "repair_identical lang=${R_LANG} file=${R_FILE} target_identical=${R_COUNT} limit=${repair_limit} tier=${repair_limit_tier} domain_cap=${domain_limit} gt=${repair_gt_mode} suspicious_pct=${repair_suspicious_pct}" "" "" "" "$R_TRANSLATED" ""
+
+    # Artefakt tuningu repair (do obserwacji trendu suspicious_high per domena).
+    python3 - "$STATUS_DIR/identical_to_en_repair_tuning.jsonl" "$cycle" "$R_LANG" "$R_FILE" "$R_COUNT" "$repair_limit" "$repair_limit_tier" "$domain_limit" "$repair_suspicious_pct" "$repair_suspicious_high" "$repair_suspicious_translated" "$repair_gt_mode" "$R_TRANSLATED" "$R_GUARD_FAIL" <<'PYREPAIRTUNING'
+import json, os, sys
+from datetime import datetime, timezone
+
+path = sys.argv[1]
+cycle = int(float(sys.argv[2])) if str(sys.argv[2]).strip() else 0
+lang = sys.argv[3]
+json_file = sys.argv[4]
+target_identical = int(float(sys.argv[5])) if str(sys.argv[5]).strip() else 0
+limit = int(float(sys.argv[6])) if str(sys.argv[6]).strip() else 0
+tier = sys.argv[7]
+domain_cap = int(float(sys.argv[8])) if str(sys.argv[8]).strip() else 0
+try:
+    suspicious_pct = float(sys.argv[9])
+except Exception:
+    suspicious_pct = 0.0
+suspicious_high = int(float(sys.argv[10])) if str(sys.argv[10]).strip() else 0
+suspicious_translated = int(float(sys.argv[11])) if str(sys.argv[11]).strip() else 0
+gt_mode = str(sys.argv[12])
+translated = int(float(sys.argv[13])) if str(sys.argv[13]).strip() else 0
+guard_fail = int(float(sys.argv[14])) if str(sys.argv[14]).strip() else 0
+
+os.makedirs(os.path.dirname(path), exist_ok=True)
+entry = {
+    "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+    "cycle": cycle,
+    "lang": lang,
+    "json_file": json_file,
+    "target_identical": target_identical,
+    "limit": limit,
+    "tier": tier,
+    "domain_cap": domain_cap,
+    "suspicious_high_pct": round(float(suspicious_pct), 3),
+    "suspicious_high_count": suspicious_high,
+    "suspicious_translated_total": suspicious_translated,
+    "gt_mode": gt_mode,
+    "translated": translated,
+    "guard_fail": guard_fail,
+}
+with open(path, "a", encoding="utf-8") as f:
+    f.write(json.dumps(entry, ensure_ascii=False) + "\n")
+PYREPAIRTUNING
     
     # Wyczyść cache selektora (repair zmienił dane)
     rm -f "$STATUS_DIR/translation_strict_candidates_cache.json" 2>/dev/null || true
@@ -14722,7 +15012,9 @@ idle_full_cycle() {
     scan_new_files
     
     # 2. Walidacja jakości
+    status_update_activity "running" "${CYCLE:-0}" "VALIDATION" "validation_start" "-" "-" "quality validation" 0 0 "steps" 0
     validate_translation_quality
+    status_update_activity "running" "${CYCLE:-0}" "VALIDATION" "validation_done" "-" "-" "validation complete" 0 0 "steps" 0
     
     # 3. Generuj dokumentację NPC
     generate_npc_documentation
@@ -19552,9 +19844,10 @@ PY
 
                     if [ "$TRANSLATIONS_ONLY" = "true" ]; then
                         echo "🌐 TRANSLATIONS_ONLY: pomijam skany migracji, wykonuję tylko walidację tłumaczeń"
-                        status_update_activity "running" "$CYCLE" "IDLE" "translation_only_validation" "-" "-" "translation-only validation" 0 0 "steps" 0
+                        status_update_activity "running" "$CYCLE" "VALIDATION" "validation_start" "-" "-" "translation-only validation" 0 0 "steps" 0
                         validate_translation_quality
-                        status_log_op "$CYCLE" "IDLE" "TRANSLATION_ONLY_IDLE_DONE" "-" "-" "ok" "validation only"
+                        status_update_activity "running" "$CYCLE" "VALIDATION" "validation_done" "-" "-" "validation complete" 0 0 "steps" 0
+                        status_log_op "$CYCLE" "VALIDATION" "TRANSLATION_ONLY_IDLE_DONE" "-" "-" "ok" "validation only"
                         if [ "${STOP_AFTER_CYCLE:-false}" = "true" ]; then
                             echo "🛑 ONCE: kończę po cyklu translation-only"
                         else

@@ -1,0 +1,2 @@
+{"timestamp": "2026-02-14T06:15:46.758786Z", "total": 5701, "decrease_pct": 30.21, "hours_elapsed": 5.915, "status": "warming_up", "alert": false, "top_key": "es:npc.json", "top_count": 2217, "reason": "window_too_short", "es_total": 5184, "es_delta": 2398, "pl_total": 517, "pl_delta": 70}
+{"timestamp": "2026-02-14T06:52:32.772801Z", "total": 5354, "decrease_pct": 31.36, "hours_elapsed": 5.941, "status": "warming_up", "alert": false, "top_key": "es:npc.json", "top_count": 1870, "reason": "window_too_short", "es_total": 4837, "es_delta": 2376, "pl_total": 517, "pl_delta": 70}

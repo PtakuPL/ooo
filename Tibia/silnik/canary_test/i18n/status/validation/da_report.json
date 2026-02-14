@@ -3,12 +3,12 @@
   "script_group": "latin",
   "total_keys": 53586,
   "translated": 30833,
-  "identical_to_en": 24390,
+  "identical_to_en": 24406,
   "placeholder_keys": 20598,
   "coverage_pct": 57.5,
-  "issues_total": 6202,
+  "issues_total": 6149,
   "issues_by_type": {
-    "V3_empty": 6194,
+    "V3_empty": 6141,
     "V1_placeholder_mismatch": 7,
     "V5_pipe_mismatch": 1
   },
@@ -16,7 +16,7 @@
     "CRITICAL": 8,
     "HIGH": 0,
     "MEDIUM": 0,
-    "LOW": 6194
+    "LOW": 6141
   },
   "score": 98.9,
   "worst_keys": [
@@ -69,54 +69,6 @@
       "severity": "CRITICAL"
     },
     {
-      "key": "npc.a_dead_bureaucrat1.say_2",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_dead_bureaucrat1.say_3",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_dead_bureaucrat1.say_5",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_dead_bureaucrat1.say_6",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_dead_bureaucrat1.say_7",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_dead_bureaucrat1.say_8",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_dead_bureaucrat1.say_9",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_dead_bureaucrat2.say_1",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
       "key": "npc.a_dead_bureaucrat3.say_2",
       "category": "npc",
       "type": "V3_empty",
@@ -139,15 +91,63 @@
       "category": "npc",
       "type": "V3_empty",
       "severity": "LOW"
+    },
+    {
+      "key": "npc.a_dead_bureaucrat4.say_3",
+      "category": "npc",
+      "type": "V3_empty",
+      "severity": "LOW"
+    },
+    {
+      "key": "npc.a_dead_bureaucrat4.say_4",
+      "category": "npc",
+      "type": "V3_empty",
+      "severity": "LOW"
+    },
+    {
+      "key": "npc.a_dragon_mother.multi_1",
+      "category": "npc",
+      "type": "V3_empty",
+      "severity": "LOW"
+    },
+    {
+      "key": "npc.a_dragon_mother.multi_2",
+      "category": "npc",
+      "type": "V3_empty",
+      "severity": "LOW"
+    },
+    {
+      "key": "npc.a_dragon_mother.multi_4",
+      "category": "npc",
+      "type": "V3_empty",
+      "severity": "LOW"
+    },
+    {
+      "key": "npc.a_dragon_mother.multi_5",
+      "category": "npc",
+      "type": "V3_empty",
+      "severity": "LOW"
+    },
+    {
+      "key": "npc.a_dragon_mother.multi_6",
+      "category": "npc",
+      "type": "V3_empty",
+      "severity": "LOW"
+    },
+    {
+      "key": "npc.a_dragon_mother.multi_7",
+      "category": "npc",
+      "type": "V3_empty",
+      "severity": "LOW"
     }
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 468,
+    "issues_total": 459,
     "consistency": 1,
     "pl_reference": 400,
-    "length_ratio": 67,
+    "length_ratio": 58,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-14T06:04:10.118020Z"
+  "validated_at": "2026-02-14T06:50:35.419254Z"
 }

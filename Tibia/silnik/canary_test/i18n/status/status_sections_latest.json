@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-02-14T06:10:26.986583Z",
-  "current_phase": "IDLE",
+  "generated_at_utc": "2026-02-14T07:06:14.158725Z",
+  "current_phase": "AUTO_TRANSLATE",
   "sections": {
     "META": {
       "state": "active",
@@ -9,39 +9,39 @@
       "reason": "",
       "freshness": "teraz",
       "source": "update_github_status()",
-      "last_update": "2026-02-14 06:10:24"
+      "last_update": "2026-02-14 07:06:13"
     },
     "LIVE": {
       "state": "active",
       "state_label": "🟢 ACTIVE",
       "reason": "",
-      "freshness": "17s temu",
+      "freshness": "54s temu",
       "source": "activity.json / worker_state.json",
-      "last_update": "2026-02-14T06:10:09Z"
+      "last_update": "2026-02-14T07:05:20Z"
     },
     "MIGRATION": {
       "state": "inactive",
       "state_label": "🔒 INACTIVE",
-      "reason": "worker w trybie IDLE",
-      "freshness": "11h temu",
+      "reason": "worker w trybie AUTO_TRANSLATE",
+      "freshness": "12h temu",
       "source": "i18n_file_status.json",
-      "last_update": "2026-02-14 06:10:24"
+      "last_update": "2026-02-14 07:06:13"
     },
     "TRANSLATION": {
-      "state": "inactive",
-      "state_label": "🔒 INACTIVE",
-      "reason": "worker w trybie IDLE",
-      "freshness": "1min temu",
+      "state": "active",
+      "state_label": "🟢 ACTIVE",
+      "reason": "",
+      "freshness": "4s temu",
       "source": "translation_guard_latest.json / translation_recent_latest.json",
-      "last_update": "2026-02-14T06:09:16.898555Z"
+      "last_update": "2026-02-14T07:06:09.539633Z"
     },
     "QUALITY": {
       "state": "inactive",
       "state_label": "🔒 INACTIVE",
-      "reason": "worker w trybie IDLE",
-      "freshness": "2min temu",
+      "reason": "worker w trybie AUTO_TRANSLATE",
+      "freshness": "15min temu",
       "source": "quality_audit_latest.json",
-      "last_update": "2026-02-14T06:07:46.216900Z"
+      "last_update": "2026-02-14T06:50:33.339457Z"
     },
     "HISTORY": {
       "state": "active",
@@ -49,7 +49,7 @@
       "reason": "",
       "freshness": "teraz",
       "source": "daily/*.json / ops.jsonl",
-      "last_update": "2026-02-14 06:10:24"
+      "last_update": "2026-02-14 07:06:13"
     }
   }
 }

@@ -39,6 +39,9 @@ DAILY_REPORT_MIN_INTERVAL_SECONDS="${STATUSD_DAILY_REPORT_MIN_INTERVAL_SECONDS:-
 REPAIR_QUEUE_STAGNATION_HOURS="${STATUSD_REPAIR_QUEUE_STAGNATION_HOURS:-6}"
 REPAIR_QUEUE_STAGNATION_MIN_SAMPLES="${STATUSD_REPAIR_QUEUE_STAGNATION_MIN_SAMPLES:-6}"
 REPAIR_QUEUE_STAGNATION_MIN_DROP="${STATUSD_REPAIR_QUEUE_STAGNATION_MIN_DROP:-1}"
+SUSPICIOUS_HIGH_WINDOW_HOURS="${STATUSD_SUSPICIOUS_HIGH_WINDOW_HOURS:-6}"
+SUSPICIOUS_HIGH_WARN_COUNT="${STATUSD_SUSPICIOUS_HIGH_WARN_COUNT:-120}"
+SUSPICIOUS_HIGH_CRIT_COUNT="${STATUSD_SUSPICIOUS_HIGH_CRIT_COUNT:-240}"
 DAEMON_INTERVAL_SECONDS=60
 
 export HOME="/home/ptaku"
@@ -55,10 +58,11 @@ log_statusd() {
 # ═══════════════════════════════════════════════════════════════════════════════
 
 aggregate_telemetry() {
-    python3 - "$WORK_DIR" "$STATUS_DIR" "$STATUSD_REPORT_FILE" "$REPAIR_QUEUE_STAGNATION_HOURS" "$REPAIR_QUEUE_STAGNATION_MIN_SAMPLES" "$REPAIR_QUEUE_STAGNATION_MIN_DROP" <<'PYAGG'
+    python3 - "$WORK_DIR" "$STATUS_DIR" "$STATUSD_REPORT_FILE" "$REPAIR_QUEUE_STAGNATION_HOURS" "$REPAIR_QUEUE_STAGNATION_MIN_SAMPLES" "$REPAIR_QUEUE_STAGNATION_MIN_DROP" "$SUSPICIOUS_HIGH_WINDOW_HOURS" "$SUSPICIOUS_HIGH_WARN_COUNT" "$SUSPICIOUS_HIGH_CRIT_COUNT" <<'PYAGG'
 import json, sys, os
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
+from collections import Counter
 
 work_dir = sys.argv[1]
 status_dir = sys.argv[2]
@@ -66,6 +70,9 @@ report_file = sys.argv[3]
 repair_window_h = float(sys.argv[4] or "6")
 repair_min_samples = int(float(sys.argv[5] or "6"))
 repair_min_drop = int(float(sys.argv[6] or "1"))
+suspicious_window_h = float(sys.argv[7] or "6")
+suspicious_warn_count = int(float(sys.argv[8] or "120"))
+suspicious_crit_count = int(float(sys.argv[9] or "240"))
 
 now = datetime.now(timezone.utc)
 report = {
@@ -262,6 +269,87 @@ def _analyze_repair_queue(status_dir, now, window_h, min_samples, min_drop):
 
     return result
 
+def _analyze_suspicious_high(status_dir, now, window_h, warn_count, crit_count):
+    quality_path = os.path.join(status_dir, "quality_report.jsonl")
+    window_h = max(float(window_h), 0.1)
+    warn_count = max(int(warn_count), 1)
+    crit_count = max(int(crit_count), warn_count + 1)
+    window_start = now - timedelta(hours=window_h)
+
+    rows = []
+    latest_ts = None
+    latest_ts = None
+    if os.path.exists(quality_path):
+        with open(quality_path, encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if not line:
+                    continue
+                try:
+                    row = json.loads(line)
+                except Exception:
+                    continue
+                dt = _parse_ts(row.get("timestamp"))
+                if dt is None or dt < window_start:
+                    continue
+                lang = str(row.get("language", "") or "").lower()
+                category = str(row.get("json_file", "") or "").lower()
+                translated = _safe_int(row.get("translated", 0))
+                q = row.get("quality", {}) if isinstance(row.get("quality", {}), dict) else {}
+                suspicious_high = _safe_int(q.get("suspicious_high", 0))
+                rows.append({
+                    "timestamp": dt.isoformat().replace("+00:00", "Z"),
+                    "lang": lang,
+                    "category": category,
+                    "translated": translated,
+                    "suspicious_high": suspicious_high,
+                })
+
+    rows.sort(key=lambda x: x["timestamp"])
+    translated_total = sum(int(r.get("translated", 0)) for r in rows)
+    suspicious_high_total = sum(int(r.get("suspicious_high", 0)) for r in rows)
+    by_lang = Counter()
+    by_category = Counter()
+    for r in rows:
+        sh = int(r.get("suspicious_high", 0))
+        if sh <= 0:
+            continue
+        lang = str(r.get("lang", "") or "")
+        category = str(r.get("category", "") or "")
+        if lang:
+            by_lang[lang] += sh
+        if category:
+            by_category[category] += sh
+
+    rate_pct = (float(suspicious_high_total) / float(max(translated_total, 1))) * 100.0
+    if suspicious_high_total >= crit_count:
+        severity = "critical"
+        status = "spike"
+    elif suspicious_high_total >= warn_count:
+        severity = "warning"
+        status = "elevated"
+    elif suspicious_high_total > 0:
+        severity = "info"
+        status = "observed"
+    else:
+        severity = "ok"
+        status = "clean"
+
+    return {
+        "window_hours": float(window_h),
+        "warn_count": int(warn_count),
+        "critical_count": int(crit_count),
+        "entries": len(rows),
+        "translated_total": int(translated_total),
+        "suspicious_high_total": int(suspicious_high_total),
+        "suspicious_high_rate_pct": round(rate_pct, 3),
+        "status": status,
+        "severity": severity,
+        "top_langs": [{"lang": k, "suspicious_high": int(v)} for k, v in by_lang.most_common(8)],
+        "top_categories": [{"category": k, "suspicious_high": int(v)} for k, v in by_category.most_common(10)],
+        "latest_timestamp": rows[-1]["timestamp"] if rows else "",
+    }
+
 # ── Heartbeat / worker state ─────────────────────────────────────────────
 worker_state = {}
 try:
@@ -409,6 +497,48 @@ for lang in ["pl", "es", "de", "fr", "pt", "it", "ru"]:
 
 report["coverage"] = {k: coverage[k] for k in sorted(coverage.keys())}
 
+# ── Migration stats (z file_status + overview) ─────────────────────────
+migration = overview.get("migration", {})
+if not migration:
+    # Fallback: czytaj z i18n_file_status.json
+    try:
+        fs_path = os.path.join(work_dir, "i18n_file_status.json")
+        with open(fs_path, encoding="utf-8") as f:
+            fs = json.load(f)
+        fs_files = fs.get("files", {})
+        fs_completed = sum(1 for info in fs_files.values()
+                          if info.get("stages", {}).get("8_sync", {}).get("status") == "completed")
+        fs_keys = sum(info.get("stages", {}).get("5_extraction_en", {}).get("keys_added", 0)
+                      for info in fs_files.values())
+        migration = {
+            "files_total": len(fs_files),
+            "files_completed": fs_completed,
+            "total_keys_extracted": fs_keys,
+        }
+    except Exception:
+        migration = {}
+report["migration"] = migration
+
+# ── Coverage by scope (serwer vs instalka) ──────────────────────────────
+scope_totals = overview.get("scope_totals", {})
+coverage_by_scope = {}
+for row in languages if isinstance(languages, list) else []:
+    lang = str(row.get("lang", "")).lower()
+    if not lang:
+        continue
+    coverage_by_scope[lang] = {
+        "server_keys": int(row.get("server_keys", 0) or 0),
+        "server_translated": int(row.get("server_translated", 0) or 0),
+        "server_pct": float(row.get("server_pct", 0) or 0),
+        "client_keys": int(row.get("client_keys", 0) or 0),
+        "client_translated": int(row.get("client_translated", 0) or 0),
+        "client_pct": float(row.get("client_pct", 0) or 0),
+    }
+report["coverage_by_scope"] = {
+    "scope_totals": scope_totals,
+    "per_lang": {k: coverage_by_scope[k] for k in sorted(coverage_by_scope.keys())},
+}
+
 # ── Repair queue health (identical_to_en backlog) ────────────────────────
 report["repair_queue"] = _analyze_repair_queue(
     status_dir=status_dir,
@@ -416,6 +546,13 @@ report["repair_queue"] = _analyze_repair_queue(
     window_h=repair_window_h,
     min_samples=repair_min_samples,
     min_drop=repair_min_drop,
+)
+report["quality_watch"] = _analyze_suspicious_high(
+    status_dir=status_dir,
+    now=now,
+    window_h=suspicious_window_h,
+    warn_count=suspicious_warn_count,
+    crit_count=suspicious_crit_count,
 )
 
 # ── Transition log (ostatnie 5 przejść) ─────────────────────────────────
@@ -461,9 +598,10 @@ PYAGG
 # ═══════════════════════════════════════════════════════════════════════════════
 
 run_status_doctor() {
-    python3 - "$WORK_DIR" "$STATUS_DIR" "$STATUSD_DOCTOR_FILE" "$REPAIR_QUEUE_STAGNATION_HOURS" "$REPAIR_QUEUE_STAGNATION_MIN_SAMPLES" "$REPAIR_QUEUE_STAGNATION_MIN_DROP" <<'PYDOCTOR'
+    python3 - "$WORK_DIR" "$STATUS_DIR" "$STATUSD_DOCTOR_FILE" "$REPAIR_QUEUE_STAGNATION_HOURS" "$REPAIR_QUEUE_STAGNATION_MIN_SAMPLES" "$REPAIR_QUEUE_STAGNATION_MIN_DROP" "$SUSPICIOUS_HIGH_WINDOW_HOURS" "$SUSPICIOUS_HIGH_WARN_COUNT" "$SUSPICIOUS_HIGH_CRIT_COUNT" <<'PYDOCTOR'
 import json, sys, os
 from datetime import datetime, timezone, timedelta
+from collections import Counter
 
 work_dir = sys.argv[1]
 status_dir = sys.argv[2]
@@ -471,6 +609,9 @@ doctor_file = sys.argv[3]
 repair_window_h = float(sys.argv[4] or "6")
 repair_min_samples = int(float(sys.argv[5] or "6"))
 repair_min_drop = int(float(sys.argv[6] or "1"))
+suspicious_window_h = float(sys.argv[7] or "6")
+suspicious_warn_count = int(float(sys.argv[8] or "120"))
+suspicious_crit_count = int(float(sys.argv[9] or "240"))
 
 now = datetime.now(timezone.utc)
 issues = []
@@ -616,6 +757,82 @@ def _read_repair_queue_health():
         data["top_count"] = int(latest_count)
     return data
 
+def _read_suspicious_high_health():
+    quality_path = os.path.join(status_dir, "quality_report.jsonl")
+    data = {
+        "window_hours": float(max(suspicious_window_h, 0.1)),
+        "warn_count": int(max(suspicious_warn_count, 1)),
+        "critical_count": int(max(suspicious_crit_count, suspicious_warn_count + 1)),
+        "entries": 0,
+        "translated_total": 0,
+        "suspicious_high_total": 0,
+        "suspicious_high_rate_pct": 0.0,
+        "top_lang": "",
+        "top_lang_count": 0,
+        "severity": "ok",
+        "status": "clean",
+    }
+    if not os.path.exists(quality_path):
+        data["status"] = "missing_quality_report"
+        return data
+
+    window_start = now - timedelta(hours=data["window_hours"])
+    by_lang = Counter()
+    rows = 0
+    translated_total = 0
+    suspicious_high_total = 0
+    with open(quality_path, encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                row = json.loads(line)
+            except Exception:
+                continue
+            ts = _parse_ts(row.get("timestamp"))
+            if ts is None or ts < window_start:
+                continue
+            rows += 1
+            translated = _safe_int(row.get("translated", 0))
+            q = row.get("quality", {}) if isinstance(row.get("quality", {}), dict) else {}
+            sh = _safe_int(q.get("suspicious_high", 0))
+            translated_total += translated
+            suspicious_high_total += sh
+            lang = str(row.get("language", "") or "").lower()
+            if lang and sh > 0:
+                by_lang[lang] += sh
+
+    rate_pct = (float(suspicious_high_total) / float(max(translated_total, 1))) * 100.0
+    top_lang = ""
+    top_lang_count = 0
+    if by_lang:
+        top_lang, top_lang_count = by_lang.most_common(1)[0]
+
+    severity = "ok"
+    status = "clean"
+    if suspicious_high_total >= data["critical_count"]:
+        severity = "critical"
+        status = "spike"
+    elif suspicious_high_total >= data["warn_count"]:
+        severity = "warning"
+        status = "elevated"
+    elif suspicious_high_total > 0:
+        severity = "info"
+        status = "observed"
+
+    data.update({
+        "entries": rows,
+        "translated_total": int(translated_total),
+        "suspicious_high_total": int(suspicious_high_total),
+        "suspicious_high_rate_pct": round(rate_pct, 3),
+        "top_lang": str(top_lang),
+        "top_lang_count": int(top_lang_count),
+        "severity": severity,
+        "status": status,
+    })
+    return data
+
 # ── 1. Freshness: heartbeat nie starszy niż 3 min ───────────────────────
 try:
     with open(os.path.join(status_dir, "worker_state.json"), encoding="utf-8") as f:
@@ -753,6 +970,28 @@ try:
             )
 except Exception as e:
     warnings.append(f"REPAIR_QUEUE_CHECK_ERROR: {e}")
+
+# ── 9. suspicious_high trend (quality regression early signal) ───────────
+try:
+    sh = _read_suspicious_high_health()
+    if sh.get("status") == "missing_quality_report":
+        warnings.append("NO_QUALITY_REPORT: brak quality_report.jsonl")
+    else:
+        sev = str(sh.get("severity", "ok"))
+        desc = (
+            f"suspicious_high={sh.get('suspicious_high_total', 0)} "
+            f"rate={sh.get('suspicious_high_rate_pct', 0)}% "
+            f"window={sh.get('window_hours', 0)}h "
+            f"top_lang={sh.get('top_lang','-')}:{sh.get('top_lang_count', 0)}"
+        )
+        if sev == "critical":
+            issues.append(f"SUSPICIOUS_HIGH_SPIKE: {desc}")
+        elif sev == "warning":
+            warnings.append(f"SUSPICIOUS_HIGH_ELEVATED: {desc}")
+        else:
+            ok_checks.append(f"suspicious_high_ok ({desc})")
+except Exception as e:
+    warnings.append(f"SUSPICIOUS_HIGH_CHECK_ERROR: {e}")
 
 # ── Ocena ogólna ───────────────────────────────────────────────────────
 if issues:
@@ -1331,6 +1570,18 @@ repair_top_backlog = int(repair_top.get("identical_to_en", 0) or 0)
 repair_span_h = float(repair_stagnation.get("span_hours", 0) or 0.0)
 repair_baseline = int(repair_stagnation.get("baseline_count", 0) or 0)
 repair_latest = int(repair_stagnation.get("latest_count", repair_top_backlog) or repair_top_backlog)
+quality_watch = report.get("quality_watch", {}) if isinstance(report.get("quality_watch", {}), dict) else {}
+quality_watch_severity = str(quality_watch.get("severity", "ok") or "ok").lower()
+quality_watch_total = int(quality_watch.get("suspicious_high_total", 0) or 0)
+quality_watch_rate_pct = float(quality_watch.get("suspicious_high_rate_pct", 0) or 0.0)
+quality_watch_window_h = float(quality_watch.get("window_hours", 0) or 0.0)
+quality_watch_top_lang = ""
+try:
+    top_langs = quality_watch.get("top_langs", [])
+    if isinstance(top_langs, list) and top_langs:
+        quality_watch_top_lang = str(top_langs[0].get("lang", "") or "")
+except Exception:
+    quality_watch_top_lang = ""
 
 signals = []
 if guardian_state == "stuck":
@@ -1346,13 +1597,32 @@ if repair_stagnation_detected:
         "repair_queue_stagnation",
         f"repair_queue stagnation {top_label} ({repair_baseline}->{repair_latest}, span={repair_span_h:.1f}h)",
     ))
+if quality_watch_severity == "critical":
+    signals.append((
+        "CRITICAL",
+        "suspicious_high_spike",
+        f"suspicious_high spike count={quality_watch_total} rate={quality_watch_rate_pct:.2f}% in {quality_watch_window_h:.1f}h",
+    ))
+elif quality_watch_severity == "warning":
+    signals.append((
+        "WARNING",
+        "suspicious_high_elevated",
+        f"suspicious_high elevated count={quality_watch_total} rate={quality_watch_rate_pct:.2f}% in {quality_watch_window_h:.1f}h",
+    ))
 
 if not signals:
     print("NO_ALERT_CONDITION")
     raise SystemExit(0)
 
 severity_rank = {"CRITICAL": 3, "WARNING": 2, "INFO": 1}
-reason_rank = {"guardian_stuck": 4, "doctor_critical": 3, "repair_queue_stagnation": 2, "no_progress": 1}
+reason_rank = {
+    "guardian_stuck": 6,
+    "doctor_critical": 5,
+    "suspicious_high_spike": 4,
+    "repair_queue_stagnation": 3,
+    "suspicious_high_elevated": 2,
+    "no_progress": 1,
+}
 signals.sort(key=lambda x: (severity_rank.get(x[0], 0), reason_rank.get(x[1], 0)), reverse=True)
 severity, reason_code, reason_text = signals[0]
 alert_key = f"{reason_code}:{severity}"
@@ -1404,10 +1674,18 @@ payload = {
         "sample_count": int(repair_stagnation.get("sample_count", 0) or 0),
         "reason": str(repair_stagnation.get("reason", "") or ""),
     },
+    "quality_watch": {
+        "severity": quality_watch_severity,
+        "window_hours": round(quality_watch_window_h, 3),
+        "suspicious_high_total": quality_watch_total,
+        "suspicious_high_rate_pct": round(quality_watch_rate_pct, 3),
+        "top_lang": quality_watch_top_lang,
+    },
     "content": (
         f"[i18n-statusd][{severity}] {reason_text} | "
         f"doctor={doctor_overall} guardian={guardian_state} hb_age={worker.get('heartbeat_age_s', -1)}s "
-        f"repair_stagnation={'yes' if repair_stagnation_detected else 'no'}"
+        f"repair_stagnation={'yes' if repair_stagnation_detected else 'no'} "
+        f"suspicious_high={quality_watch_total}"
     ),
 }
 
@@ -1473,7 +1751,7 @@ PYALERT
 generate_daily_report() {
     python3 - "$STATUS_DIR" "$STATUSD_DAILY_REPORT_JSON" "$STATUSD_DAILY_REPORT_MD" "$REPAIR_QUEUE_STAGNATION_HOURS" "$REPAIR_QUEUE_STAGNATION_MIN_SAMPLES" "$REPAIR_QUEUE_STAGNATION_MIN_DROP" <<'PYDAILY'
 import json, sys, os, re
-from collections import defaultdict
+from collections import defaultdict, Counter
 from datetime import datetime, timezone, timedelta
 
 status_dir = sys.argv[1]
@@ -1693,6 +1971,106 @@ def _analyze_repair_queue(now, window_start, status_dir, stagnation_window_h, st
     })
     return out
 
+def _analyze_repair_tuning(now, window_start, status_dir):
+    tuning_path = os.path.join(status_dir, "identical_to_en_repair_tuning.jsonl")
+    out = {
+        "samples_24h": 0,
+        "translated_total": 0,
+        "guard_fail_total": 0,
+        "guard_fail_rate_pct": 0.0,
+        "avg_limit": 0.0,
+        "avg_suspicious_high_pct": 0.0,
+        "gt_mode_true_samples": 0,
+        "latest_timestamp": "",
+        "top_langs_by_samples": [],
+        "tier_distribution": {},
+        "top_risky_targets": [],
+    }
+    if not os.path.exists(tuning_path):
+        return out
+
+    rows = []
+    latest_ts = None
+    with open(tuning_path, encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                row = json.loads(line)
+            except Exception:
+                continue
+            ts = _parse_ts(row.get("timestamp"))
+            if ts is None or ts < window_start:
+                continue
+            rows.append(row)
+            if latest_ts is None or ts > latest_ts:
+                latest_ts = ts
+
+    if not rows:
+        return out
+
+    by_lang = Counter()
+    by_tier = Counter()
+    translated_total = 0
+    guard_fail_total = 0
+    limit_sum = 0.0
+    suspicious_pct_sum = 0.0
+    gt_mode_true_samples = 0
+    risk_rows = []
+
+    for row in rows:
+        lang = str(row.get("lang", "") or "").lower()
+        tier = str(row.get("tier", "") or "unknown")
+        translated = _safe_int(row.get("translated", 0))
+        guard_fail = _safe_int(row.get("guard_fail", 0))
+        limit = _safe_float(row.get("limit", 0))
+        suspicious_pct = _safe_float(row.get("suspicious_high_pct", 0.0))
+        suspicious_count = _safe_int(row.get("suspicious_high_count", 0))
+        json_file = str(row.get("json_file", "") or "")
+        gt_mode = str(row.get("gt_mode", "") or "").strip().lower()
+
+        translated_total += translated
+        guard_fail_total += guard_fail
+        limit_sum += limit
+        suspicious_pct_sum += suspicious_pct
+        if gt_mode in ("1", "true", "yes", "on"):
+            gt_mode_true_samples += 1
+        if lang:
+            by_lang[lang] += 1
+        by_tier[tier] += 1
+        risk_rows.append({
+            "lang": lang,
+            "json_file": json_file,
+            "suspicious_high_pct": round(suspicious_pct, 3),
+            "suspicious_high_count": suspicious_count,
+            "translated": translated,
+            "guard_fail": guard_fail,
+            "tier": tier,
+            "limit": int(limit),
+        })
+
+    rows_sorted = sorted(
+        risk_rows,
+        key=lambda r: (r["suspicious_high_pct"], r["suspicious_high_count"], r["translated"]),
+        reverse=True,
+    )[:6]
+
+    out.update({
+        "samples_24h": len(rows),
+        "translated_total": int(translated_total),
+        "guard_fail_total": int(guard_fail_total),
+        "guard_fail_rate_pct": round((guard_fail_total / max(translated_total + guard_fail_total, 1)) * 100.0, 3),
+        "avg_limit": round(limit_sum / max(len(rows), 1), 2),
+        "avg_suspicious_high_pct": round(suspicious_pct_sum / max(len(rows), 1), 3),
+        "gt_mode_true_samples": int(gt_mode_true_samples),
+        "latest_timestamp": latest_ts.isoformat().replace("+00:00", "Z") if latest_ts is not None else "",
+        "top_langs_by_samples": [{"lang": k, "samples": int(v)} for k, v in by_lang.most_common(8)],
+        "tier_distribution": {str(k): int(v) for k, v in by_tier.items()},
+        "top_risky_targets": rows_sorted,
+    })
+    return out
+
 guard_file = os.path.join(status_dir, "translation_guard_report.jsonl")
 lang_stats = defaultdict(lambda: {"entries": 0, "translated": 0, "guard_fail": 0, "no_progress_entries": 0})
 category_stats = defaultdict(lambda: {"entries": 0, "translated": 0, "guard_fail": 0, "no_progress_entries": 0})
@@ -1752,6 +2130,7 @@ cycle_perf_file = os.path.join(status_dir, "worker_cycle_perf.jsonl")
 pending_skip_count = 0
 cycle_total_entries = 0
 pending_skip_hits = 0
+pending_skip_source = "worker_cycle_perf.detail"
 pending_skip_regex = re.compile(r"pending_skip(?:_count)?[=: ](\\d+)", re.IGNORECASE)
 if os.path.exists(cycle_perf_file):
     with open(cycle_perf_file, encoding="utf-8") as f:
@@ -1775,11 +2154,27 @@ if os.path.exists(cycle_perf_file):
                 pending_skip_hits += 1
 pending_skip_share_pct = pending_skip_count / max(cycle_total_entries, 1) * 100
 
+# Prefer dedykowany artefakt 24h (dokładniejsze źródło), fallback: worker_cycle_perf.detail
+pending_skip_24h_path = os.path.join(status_dir, "pending_skip_24h_latest.json")
+if os.path.exists(pending_skip_24h_path):
+    try:
+        with open(pending_skip_24h_path, encoding="utf-8") as f:
+            ps = json.load(f)
+        pending_skip_count = _safe_int(ps.get("pending_skip_count", pending_skip_count))
+        cycle_total_entries = _safe_int(ps.get("total_cycles_24h", cycle_total_entries))
+        pending_skip_share_pct = _safe_float(ps.get("pending_skip_share_pct", pending_skip_share_pct))
+        pending_skip_source = "pending_skip_24h_latest.json"
+    except Exception:
+        pass
+
 quality_report_file = os.path.join(status_dir, "quality_report.jsonl")
 quality_entries = 0
 quality_suspicious = 0
+quality_suspicious_high = 0
 quality_identical_to_en = 0
 quality_gt_guard_fails = 0
+quality_translated_total = 0
+quality_suspicious_high_by_lang = Counter()
 if os.path.exists(quality_report_file):
     with open(quality_report_file, encoding="utf-8") as f:
         for line in f:
@@ -1791,10 +2186,22 @@ if os.path.exists(quality_report_file):
             if ts is None or ts < window_start:
                 continue
             quality_entries += 1
+            quality_translated_total += _safe_int(row.get("translated", 0))
+            lang = str(row.get("language", "") or "").lower()
             q = row.get("quality", {}) or {}
             quality_suspicious += _safe_int(q.get("suspicious_count", 0))
+            sh = _safe_int(q.get("suspicious_high", 0))
+            quality_suspicious_high += sh
             quality_identical_to_en += _safe_int(q.get("identical_to_en", 0))
             quality_gt_guard_fails += _safe_int(q.get("gt_guard_fails", 0))
+            if lang and sh > 0:
+                quality_suspicious_high_by_lang[lang] += sh
+
+quality_suspicious_high_rate_pct = (quality_suspicious_high / max(quality_translated_total, 1)) * 100.0
+quality_suspicious_high_top_lang = ""
+quality_suspicious_high_top_lang_count = 0
+if quality_suspicious_high_by_lang:
+    quality_suspicious_high_top_lang, quality_suspicious_high_top_lang_count = quality_suspicious_high_by_lang.most_common(1)[0]
 
 quality_audit_latest = {}
 qa_path = os.path.join(status_dir, "quality_audit_latest.json")
@@ -1823,6 +2230,12 @@ for row in overview.get("languages", []):
         "completion_pct": _safe_float(row.get("completion_pct", 0)),
         "missing_keys": _safe_int(row.get("missing_keys", 0)),
         "english_copy_keys": _safe_int(row.get("english_copy_keys", 0)),
+        "server_keys": _safe_int(row.get("server_keys", 0)),
+        "server_translated": _safe_int(row.get("server_translated", 0)),
+        "server_pct": _safe_float(row.get("server_pct", 0)),
+        "client_keys": _safe_int(row.get("client_keys", 0)),
+        "client_translated": _safe_int(row.get("client_translated", 0)),
+        "client_pct": _safe_float(row.get("client_pct", 0)),
     }
 
 repair_queue_24h = _analyze_repair_queue(
@@ -1832,6 +2245,11 @@ repair_queue_24h = _analyze_repair_queue(
     stagnation_window_h=repair_window_h,
     stagnation_min_samples=repair_min_samples,
     stagnation_min_drop=repair_min_drop,
+)
+repair_tuning_24h = _analyze_repair_tuning(
+    now=now,
+    window_start=window_start,
+    status_dir=status_dir,
 )
 
 def _materialize_stats(src):
@@ -1873,6 +2291,7 @@ report = {
         "pending_skip_share_pct": round(pending_skip_share_pct, 2),
         "pending_skip_signal_hits": pending_skip_hits,
         "cycle_total_entries": cycle_total_entries,
+        "pending_skip_source": pending_skip_source,
         "throughput_keys_per_h_window": round(throughput_keys_per_h_window, 1),
         "throughput_keys_per_h_active": round(throughput_keys_per_h_active, 1),
         "guard_entries": guard_entries,
@@ -1880,6 +2299,10 @@ report = {
     "quality_24h": {
         "quality_entries": quality_entries,
         "suspicious_count": quality_suspicious,
+        "suspicious_high_count": quality_suspicious_high,
+        "suspicious_high_rate_pct": round(quality_suspicious_high_rate_pct, 3),
+        "suspicious_high_top_lang": quality_suspicious_high_top_lang,
+        "suspicious_high_top_lang_count": int(quality_suspicious_high_top_lang_count),
         "identical_to_en_count": quality_identical_to_en,
         "gt_guard_fails_count": quality_gt_guard_fails,
         "latest_audit_timestamp": quality_audit_latest.get("timestamp", ""),
@@ -1887,9 +2310,11 @@ report = {
         "latest_audit_issues_by_type": quality_audit_latest.get("issues_by_type", {}),
     },
     "coverage_snapshot": {
-        "pl": coverage_map.get("pl", {}),
-        "es": coverage_map.get("es", {}),
+        lang: coverage_map.get(lang, {})
+        for lang in ("pl", "es", "de", "pt", "fr", "ru")
     },
+    "migration": overview.get("migration", {}),
+    "scope_totals": overview.get("scope_totals", {}),
     "trend_per_language": lang_stats_final,
     "trend_per_category": category_stats_final,
     "top": {
@@ -1898,10 +2323,12 @@ report = {
     },
     "strict_hourly_snapshot": strict_hourly,
     "repair_queue_24h": repair_queue_24h,
+    "repair_tuning_24h": repair_tuning_24h,
     "notes": [
-        "pending_skip_share bazuje na worker_cycle_perf.detail (sygnały pending_skip=*).",
+        "pending_skip_share preferuje pending_skip_24h_latest.json; fallback: worker_cycle_perf.detail.",
         "no_progress_rate bazuje na translation_guard_report (translated<=0).",
         "repair_queue_24h bazuje na identical_to_en_repair_queue_report.jsonl.",
+        "repair_tuning_24h bazuje na identical_to_en_repair_tuning.jsonl.",
     ],
 }
 
@@ -1983,6 +2410,7 @@ lines.append(f"| no_progress_entries | {report['kpi_24h']['no_progress_entries']
 lines.append(f"| no_progress_rate | {_fmt_pct(report['kpi_24h']['no_progress_rate_pct'])} |")
 lines.append(f"| pending_skip_count | {report['kpi_24h']['pending_skip_count']} |")
 lines.append(f"| pending_skip_share | {_fmt_pct(report['kpi_24h']['pending_skip_share_pct'])} |")
+lines.append(f"| pending_skip_source | {report['kpi_24h'].get('pending_skip_source', '-') or '-'} |")
 lines.append(f"| throughput_keys_per_h_window | {report['kpi_24h']['throughput_keys_per_h_window']} |")
 lines.append(f"| throughput_keys_per_h_active | {report['kpi_24h']['throughput_keys_per_h_active']} |")
 lines.append("")
@@ -1991,6 +2419,12 @@ lines.append("")
 lines.append("| Metric | Value |")
 lines.append("|---|---:|")
 lines.append(f"| suspicious_count | {report['quality_24h']['suspicious_count']} |")
+lines.append(f"| suspicious_high_count | {report['quality_24h'].get('suspicious_high_count', 0)} |")
+lines.append(f"| suspicious_high_rate | {_fmt_pct(report['quality_24h'].get('suspicious_high_rate_pct', 0))} |")
+lines.append(
+    f"| suspicious_high_top_lang | "
+    f"{(report['quality_24h'].get('suspicious_high_top_lang', '') or '-')}:{report['quality_24h'].get('suspicious_high_top_lang_count', 0)} |"
+)
 lines.append(f"| identical_to_en_count | {report['quality_24h']['identical_to_en_count']} |")
 lines.append(f"| gt_guard_fails_count | {report['quality_24h']['gt_guard_fails_count']} |")
 lines.append(f"| latest_audit_issues_found | {report['quality_24h']['latest_audit_issues_found']} |")
@@ -2016,14 +2450,43 @@ lines.append(f"| stagnation_detected | {'yes' if rq_st.get('detected', False) el
 lines.append(f"| stagnation_span_h | {rq_st.get('span_hours', 0)} |")
 lines.append(f"| stagnation_reason | {rq_st.get('reason', '')} |")
 lines.append("")
+lines.append("## Repair Tuning 24h")
+lines.append("")
+lines.append("| Metric | Value |")
+lines.append("|---|---:|")
+rt = report.get("repair_tuning_24h", {}) or {}
+lines.append(f"| samples_24h | {rt.get('samples_24h', 0)} |")
+lines.append(f"| avg_limit | {rt.get('avg_limit', 0)} |")
+lines.append(f"| avg_suspicious_high_pct | {_fmt_pct(rt.get('avg_suspicious_high_pct', 0))} |")
+lines.append(f"| translated_total | {rt.get('translated_total', 0)} |")
+lines.append(f"| guard_fail_total | {rt.get('guard_fail_total', 0)} |")
+lines.append(f"| guard_fail_rate_pct | {_fmt_pct(rt.get('guard_fail_rate_pct', 0))} |")
+lines.append(f"| gt_mode_true_samples | {rt.get('gt_mode_true_samples', 0)} |")
+lines.append(f"| latest_timestamp | {rt.get('latest_timestamp', '') or '-'} |")
+top_risky = rt.get("top_risky_targets", [])
+if isinstance(top_risky, list) and top_risky:
+    lines.append("")
+    lines.append("| Risky Target | Suspicious High % | Suspicious High Count | Tier | Limit |")
+    lines.append("|---|---:|---:|---|---:|")
+    for row in top_risky[:5]:
+        target = f"{row.get('lang','?')}:{row.get('json_file','?')}"
+        lines.append(
+            f"| {target} | {_fmt_pct(row.get('suspicious_high_pct', 0))} | {row.get('suspicious_high_count', 0)} | "
+            f"{row.get('tier', '')} | {row.get('limit', 0)} |"
+        )
+lines.append("")
 lines.append("## Coverage Snapshot")
 lines.append("")
-lines.append("| Lang | Completion | Missing Keys | EN Copy Keys |")
-lines.append("|---|---:|---:|---:|")
-for lang in ("pl", "es"):
+lines.append("| Lang | Completion | Missing Keys | EN Copy Keys | Serwer | Instalka |")
+lines.append("|---|---:|---:|---:|---:|---:|")
+for lang in ("pl", "es", "de", "pt", "fr", "ru"):
     row = report["coverage_snapshot"].get(lang, {}) or {}
+    s_pct = row.get("server_pct", 0)
+    c_pct = row.get("client_pct", 0)
+    s_str = f"{s_pct:.1f}%" if s_pct else "-"
+    c_str = f"{c_pct:.1f}%" if c_pct else "-"
     lines.append(
-        f"| {lang.upper()} | {row.get('completion_pct', 0):.2f}% | {row.get('missing_keys', 0)} | {row.get('english_copy_keys', 0)} |"
+        f"| {lang.upper()} | {row.get('completion_pct', 0):.2f}% | {row.get('missing_keys', 0)} | {row.get('english_copy_keys', 0)} | {s_str} | {c_str} |"
     )
 lines.append("")
 lines.append("## Top Languages (by translated)")
@@ -2048,6 +2511,35 @@ lines.append("## Notes")
 lines.append("")
 for n in report["notes"]:
     lines.append(f"- {n}")
+
+# Migration section
+mig = report.get("migration", {})
+if mig:
+    lines.append("")
+    lines.append("## Migration (tworzenie kluczy EN)")
+    lines.append("")
+    lines.append("| Metric | Value |")
+    lines.append("|---|---:|")
+    lines.append(f"| files_total | {mig.get('files_total', '?')} |")
+    lines.append(f"| files_completed | {mig.get('files_completed', '?')} |")
+    lines.append(f"| files_migrated | {mig.get('files_migrated', '?')} |")
+    lines.append(f"| total_keys_extracted | {mig.get('total_keys_extracted', '?')} |")
+    npc_total = mig.get("npc_total", 0)
+    npc_migrated = mig.get("npc_migrated", 0)
+    npc_needs = mig.get("npc_needs_migration", 0)
+    if npc_total:
+        lines.append(f"| npc_total | {npc_total} |")
+        lines.append(f"| npc_migrated | {npc_migrated} |")
+        lines.append(f"| npc_needs_migration | {npc_needs} |")
+
+# Scope totals section
+st = report.get("scope_totals", {})
+if st:
+    lines.append("")
+    lines.append("## Scope (Serwer vs Instalka)")
+    lines.append("")
+    lines.append(f"- Serwer EN keys: **{st.get('server_keys', '?')}**")
+    lines.append(f"- Instalka EN keys: **{st.get('client_keys', '?')}**")
 
 # Repair backlog section
 rb = report.get("repair_backlog", {})
@@ -2092,47 +2584,71 @@ maybe_refresh_daily_report() {
 # MODUŁ 7b: Stagnation alert — repair queue backlog monitoring
 # ═══════════════════════════════════════════════════════════════════════════════
 #
-# Czyta identical_to_en_repair_queue_report.jsonl i sprawdza czy top backlog
-# (suma per-lang) spada w oknie 6h. Jeśli nie — generuje alert.
-# Artefakty: repair_stagnation_alert.json, repair_backlog_trend.jsonl
+# Legacy artefakty stagnacji (`repair_stagnation_alert.json` + trend JSONL).
+# Źródło decyzji o stagnacji: `statusd_report.json -> repair_queue.stagnation`
+# (wspólna logika z doctor/webhook/daily report).
 #
 
-STAGNATION_WINDOW_HOURS="${STATUSD_STAGNATION_WINDOW_HOURS:-6}"
-STAGNATION_MIN_DECREASE_PCT="${STATUSD_STAGNATION_MIN_DECREASE_PCT:-2}"
+STAGNATION_WINDOW_HOURS="${STATUSD_STAGNATION_WINDOW_HOURS:-$REPAIR_QUEUE_STAGNATION_HOURS}"
 STAGNATION_CHECK_INTERVAL="${STATUSD_STAGNATION_CHECK_INTERVAL:-1800}"
 STAGNATION_ALERT_FILE="$STATUS_DIR/repair_stagnation_alert.json"
 BACKLOG_TREND_FILE="$STATUS_DIR/repair_backlog_trend.jsonl"
 
 run_repair_stagnation_check() {
-    python3 - "$STATUS_DIR" "$STAGNATION_WINDOW_HOURS" "$STAGNATION_MIN_DECREASE_PCT" "$STAGNATION_ALERT_FILE" "$BACKLOG_TREND_FILE" <<'PYSTAGNATION'
+    python3 - "$STATUS_DIR" "$STATUSD_REPORT_FILE" "$STAGNATION_WINDOW_HOURS" "$REPAIR_QUEUE_STAGNATION_MIN_SAMPLES" "$REPAIR_QUEUE_STAGNATION_MIN_DROP" "$STAGNATION_ALERT_FILE" "$BACKLOG_TREND_FILE" <<'PYSTAGNATION'
 import sys, json, os
 from datetime import datetime, timezone, timedelta
 
 status_dir = sys.argv[1]
-window_hours = float(sys.argv[2])
-min_decrease_pct = float(sys.argv[3])
-alert_file = sys.argv[4]
-trend_file = sys.argv[5]
+statusd_report_path = sys.argv[2]
+window_hours = float(sys.argv[3] or "6")
+min_samples = int(float(sys.argv[4] or "6"))
+min_drop_required = int(float(sys.argv[5] or "1"))
+alert_file = sys.argv[6]
+trend_file = sys.argv[7]
 
 report_jsonl = os.path.join(status_dir, "identical_to_en_repair_queue_report.jsonl")
-queue_json = os.path.join(status_dir, "identical_to_en_repair_queue.json")
 
 def _read_json(path, default=None):
     try:
         with open(path, encoding="utf-8") as f:
             return json.load(f)
-    except:
+    except Exception:
         return default if default is not None else {}
+
+def _safe_int(v, default=0):
+    try:
+        return int(v)
+    except Exception:
+        return default
+
+def _safe_float(v, default=0.0):
+    try:
+        return float(v)
+    except Exception:
+        return default
 
 def _parse_ts(s):
     try:
-        s = s.replace("Z", "+00:00")
-        return datetime.fromisoformat(s)
-    except:
+        return datetime.fromisoformat(str(s).replace("Z", "+00:00"))
+    except Exception:
         return None
 
-# --- Zbierz historię z JSONL ---
-entries = []
+now = datetime.now(timezone.utc)
+now_z = now.isoformat().replace("+00:00", "Z")
+statusd_report = _read_json(statusd_report_path, {})
+rq = statusd_report.get("repair_queue", {}) if isinstance(statusd_report.get("repair_queue", {}), dict) else {}
+st = rq.get("stagnation", {}) if isinstance(rq.get("stagnation", {}), dict) else {}
+
+top_target = rq.get("top_target", {}) if isinstance(rq.get("top_target", {}), dict) else {}
+top_key = str(top_target.get("key", "") or "")
+top_count = _safe_int(top_target.get("identical_to_en", 0))
+entries_by_lang = rq.get("entries_by_lang", {}) if isinstance(rq.get("entries_by_lang", {}), dict) else {}
+new_total = sum(_safe_int(v) for v in entries_by_lang.values()) if entries_by_lang else _safe_int(rq.get("entries_total", 0))
+
+# Trend per-lang i total liczymy z queue_report JSONL, ale status stagnacji
+# bierzemy z jednego źródła prawdy: statusd_report.repair_queue.stagnation.
+samples = []
 if os.path.exists(report_jsonl):
     with open(report_jsonl, encoding="utf-8") as f:
         for line in f:
@@ -2141,122 +2657,140 @@ if os.path.exists(report_jsonl):
                 continue
             try:
                 rec = json.loads(line)
-                ts = _parse_ts(rec.get("timestamp", ""))
-                if ts:
-                    by_lang = rec.get("entries_by_lang", {})
-                    total = sum(int(v) for v in by_lang.values())
-                    entries.append({"ts": ts, "total": total, "by_lang": by_lang})
-            except:
+            except Exception:
                 continue
+            ts = _parse_ts(rec.get("timestamp", ""))
+            if ts is None:
+                continue
+            by_lang = rec.get("entries_by_lang", {})
+            if not isinstance(by_lang, dict):
+                by_lang = {}
+            total = sum(_safe_int(v) for v in by_lang.values())
+            samples.append({"ts": ts, "total": total, "by_lang": by_lang})
 
-now = datetime.now(timezone.utc)
+samples.sort(key=lambda x: x["ts"])
+old_total = 0
+hours_elapsed = _safe_float(st.get("span_hours", 0.0))
+per_lang_trend = {}
+old_ts = ""
+new_ts = now_z
+
+if samples:
+    newest = samples[-1]
+    new_ts = newest["ts"].isoformat().replace("+00:00", "Z")
+    cutoff = newest["ts"] - timedelta(hours=max(window_hours, 0.1))
+    old_candidates = [e for e in samples if e["ts"] <= cutoff]
+    oldest = old_candidates[-1] if old_candidates else samples[0]
+    old_ts = oldest["ts"].isoformat().replace("+00:00", "Z")
+    old_total = _safe_int(oldest.get("total", 0))
+    if new_total <= 0:
+        new_total = _safe_int(newest.get("total", 0))
+    if hours_elapsed <= 0:
+        hours_elapsed = (newest["ts"] - oldest["ts"]).total_seconds() / 3600.0
+    langs = set(list(oldest.get("by_lang", {}).keys()) + list(newest.get("by_lang", {}).keys()))
+    for lang in sorted(langs):
+        old_v = _safe_int(oldest.get("by_lang", {}).get(lang, 0))
+        new_v = _safe_int(newest.get("by_lang", {}).get(lang, 0))
+        delta = old_v - new_v
+        pct = (delta / old_v * 100.0) if old_v > 0 else 0.0
+        per_lang_trend[lang] = {
+            "old": old_v,
+            "new": new_v,
+            "delta": delta,
+            "decrease_pct": round(pct, 2),
+        }
+else:
+    old_total = _safe_int(st.get("baseline_count", 0))
+    if new_total <= 0:
+        new_total = _safe_int(st.get("latest_count", 0))
+
+decrease_pct = ((old_total - new_total) / old_total * 100.0) if old_total > 0 else 0.0
+detected = bool(st.get("detected", False))
+reason = str(st.get("reason", "") or "")
+sample_count = _safe_int(st.get("sample_count", 0))
+
+if detected:
+    status = "stagnation"
+    alert = True
+    message = (
+        f"Repair queue stagnation ({top_key or 'unknown'}): "
+        f"no effective drop in {hours_elapsed:.2f}h "
+        f"(baseline={_safe_int(st.get('baseline_count', old_total))}, latest={_safe_int(st.get('latest_count', top_count))})."
+    )
+elif reason in {"window_too_short", "insufficient_samples", "empty_window", "no_report_samples", "focus_key_missing_in_history"}:
+    status = "warming_up"
+    alert = False
+    message = f"Stagnation window not ready ({reason}), span={hours_elapsed:.2f}h samples={sample_count}"
+elif not rq.get("available", False):
+    status = "no_data"
+    alert = False
+    message = "Repair queue artifact unavailable"
+else:
+    status = "ok"
+    alert = False
+    message = f"Repair queue healthy ({reason or 'drop_detected'})"
+
 result = {
-    "timestamp": now.isoformat().replace("+00:00", "Z"),
+    "timestamp": now_z,
     "window_hours": window_hours,
-    "min_decrease_pct": min_decrease_pct,
-    "status": "ok",
-    "alert": False,
-    "message": "",
+    "min_samples": min_samples,
+    "min_drop_required": min_drop_required,
+    "status": status,
+    "alert": alert,
+    "message": message,
+    "reason": reason,
+    "top_key": top_key,
+    "top_count": top_count,
+    "old_total": old_total,
+    "new_total": new_total,
+    "decrease_pct": round(decrease_pct, 2),
+    "old_ts": old_ts,
+    "new_ts": new_ts,
+    "hours_elapsed": round(hours_elapsed, 3),
+    "sample_count": sample_count,
+    "per_lang_trend": per_lang_trend,
 }
 
-if len(entries) < 2:
-    result["status"] = "insufficient_data"
-    result["message"] = f"Only {len(entries)} data points, need ≥2"
-    with open(alert_file, "w", encoding="utf-8") as f:
-        json.dump(result, f, indent=2)
-    print(f"STAGNATION_CHECK insufficient_data entries={len(entries)}")
-    sys.exit(0)
-
-# --- Oblicz trend ---
-cutoff = now - timedelta(hours=window_hours)
-old_entries = [e for e in entries if e["ts"] <= cutoff]
-new_entries = [e for e in entries if e["ts"] > cutoff]
-
-if not old_entries:
-    # Brak danych sprzed window — użyj najstarszego wpisu
-    oldest = entries[0]
-    newest = entries[-1]
-else:
-    oldest = old_entries[-1]  # ostatni wpis bez tego okna
-    newest = entries[-1]
-
-old_total = oldest["total"]
-new_total = newest["total"]
-
-if old_total == 0:
-    decrease_pct = 100.0
-else:
-    decrease_pct = ((old_total - new_total) / old_total) * 100.0
-
-result["old_total"] = old_total
-result["new_total"] = new_total
-result["decrease_pct"] = round(decrease_pct, 2)
-result["old_ts"] = oldest["ts"].isoformat().replace("+00:00", "Z")
-result["new_ts"] = newest["ts"].isoformat().replace("+00:00", "Z")
-
-# Per-lang breakdown
-per_lang_trend = {}
-for lang in set(list(oldest.get("by_lang", {}).keys()) + list(newest.get("by_lang", {}).keys())):
-    old_v = int(oldest.get("by_lang", {}).get(lang, 0))
-    new_v = int(newest.get("by_lang", {}).get(lang, 0))
-    delta = old_v - new_v
-    pct = (delta / old_v * 100.0) if old_v > 0 else 0.0
-    per_lang_trend[lang] = {
-        "old": old_v, "new": new_v, "delta": delta,
-        "decrease_pct": round(pct, 2)
-    }
-result["per_lang_trend"] = per_lang_trend
-
-# --- Sprawdź stagnację ---
-hours_elapsed = (newest["ts"] - oldest["ts"]).total_seconds() / 3600.0
-result["hours_elapsed"] = round(hours_elapsed, 2)
-
-if hours_elapsed >= window_hours and decrease_pct < min_decrease_pct:
-    result["status"] = "stagnation"
-    result["alert"] = True
-    result["message"] = (
-        f"Repair queue stagnation: backlog decreased only {decrease_pct:.1f}% "
-        f"(threshold: {min_decrease_pct}%) over {hours_elapsed:.1f}h. "
-        f"Old={old_total}, New={new_total}."
-    )
-    print(f"STAGNATION_ALERT decrease={decrease_pct:.1f}% hours={hours_elapsed:.1f} old={old_total} new={new_total}")
-elif hours_elapsed < window_hours:
-    result["status"] = "warming_up"
-    result["message"] = f"Only {hours_elapsed:.1f}h of data, need {window_hours}h window"
-    print(f"STAGNATION_CHECK warming_up hours={hours_elapsed:.1f}")
-else:
-    result["status"] = "ok"
-    result["message"] = f"Backlog decreasing: {decrease_pct:.1f}% over {hours_elapsed:.1f}h"
-    print(f"STAGNATION_OK decrease={decrease_pct:.1f}% hours={hours_elapsed:.1f} old={old_total} new={new_total}")
-
-# --- Zapisz alert ---
 with open(alert_file, "w", encoding="utf-8") as f:
-    json.dump(result, f, indent=2)
+    json.dump(result, f, indent=2, ensure_ascii=False)
 
-# --- Dopisz do trendu JSONL ---
 trend_entry = {
-    "timestamp": result["timestamp"],
+    "timestamp": now_z,
     "total": new_total,
     "decrease_pct": result["decrease_pct"],
     "hours_elapsed": result["hours_elapsed"],
-    "status": result["status"],
+    "status": status,
+    "alert": alert,
+    "top_key": top_key,
+    "top_count": top_count,
+    "reason": reason,
 }
 for lang, info in per_lang_trend.items():
     trend_entry[f"{lang}_total"] = info["new"]
     trend_entry[f"{lang}_delta"] = info["delta"]
 
 with open(trend_file, "a", encoding="utf-8") as f:
-    f.write(json.dumps(trend_entry) + "\n")
-# Trim do 500 wpisów
+    f.write(json.dumps(trend_entry, ensure_ascii=False) + "\n")
+
 try:
     with open(trend_file, "r", encoding="utf-8") as f:
         lines = f.readlines()
     if len(lines) > 500:
         with open(trend_file, "w", encoding="utf-8") as f:
             f.writelines(lines[-500:])
-except:
+except Exception:
     pass
 
+if alert:
+    print(
+        f"STAGNATION_ALERT top={top_key or '?'} old_total={old_total} new_total={new_total} "
+        f"span_h={result['hours_elapsed']} reason={reason}"
+    )
+else:
+    print(
+        f"STAGNATION_{status.upper()} top={top_key or '?'} old_total={old_total} new_total={new_total} "
+        f"span_h={result['hours_elapsed']} reason={reason}"
+    )
 PYSTAGNATION
 }
 

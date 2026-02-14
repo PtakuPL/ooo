@@ -1,19 +1,21 @@
 {
-  "timestamp": "2026-02-14T06:10:17.596437Z",
+  "timestamp": "2026-02-14T07:05:42.588465Z",
   "overall": "CRITICAL",
   "issues_count": 1,
-  "warnings_count": 0,
+  "warnings_count": 1,
   "ok_count": 6,
   "issues": [
-    "GUARDIAN_STUCK: guardian raportuje stuck"
+    "SUSPICIOUS_HIGH_SPIKE: suspicious_high=2788 rate=12.828% window=6.0h top_lang=es:535"
   ],
-  "warnings": [],
+  "warnings": [
+    "GUARDIAN_DEGRADED: guardian raportuje degraded"
+  ],
   "ok": [
-    "heartbeat_fresh (9s)",
-    "status_md_fresh (146s)",
-    "guard_report_fresh (61s)",
-    "dispatch_fresh (64s)",
-    "worker_pid_alive (1795173)",
-    "repair_queue_fresh (237s)"
+    "heartbeat_fresh (124s)",
+    "status_md_fresh (99s)",
+    "guard_report_fresh (93s)",
+    "dispatch_fresh (22s)",
+    "worker_pid_alive (1830626)",
+    "repair_queue_fresh (770s)"
   ]
 }

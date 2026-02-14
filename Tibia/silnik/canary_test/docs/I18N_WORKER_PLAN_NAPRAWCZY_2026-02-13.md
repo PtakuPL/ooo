@@ -11,6 +11,36 @@
 
 ---
 
+## 🛠️ Aktualizacja wykonania (2026-02-14 06:56 UTC — stabilność guardiana + quality watch)
+
+Wybrane do realizacji pełne zadania:
+- **Stabilizacja health-check guardiana pod długie cykle tłumaczeń**
+- **Domknięcie telemetryczne `suspicious_high` w statusd (report/doctor/webhook/daily)**
+- **Odporność rund repair na restarty workera**
+
+Wykonane:
+- ✅ `i18n_guardian.sh`:
+  - health-check używa teraz progów: `heartbeat_aging=150s`, `stale=240s`, `stuck=420s`,
+  - dodano aktywność procesu (`pid_alive`, świeżość `work_i18n_live.log`, świeżość ostatniego wpisu `translation_guard_report.jsonl`), żeby nie oznaczać aktywnego cyklu jako `stuck`,
+  - `guardian_health.json` ma nowe pola diagnostyczne (`worker_log_age_s`, `guard_last_entry_age_s`, progi heartbeat).
+- ✅ `i18n_worker_simple.sh`:
+  - `repair_identical_bonus_round()` nie opiera się już wyłącznie na lokalnym `CYCLE`, tylko preferuje globalny `translation_dispatch_state.cycle_counter` do interwału napraw.
+- ✅ `i18n-statusd.sh`:
+  - `quality_watch` trafia do `statusd_report.json`,
+  - doctor podnosi `SUSPICIOUS_HIGH_SPIKE` / `SUSPICIOUS_HIGH_ELEVATED`,
+  - webhook ma reason codes: `suspicious_high_spike`, `suspicious_high_elevated`,
+  - daily report ma KPI `suspicious_high_count/rate/top_lang`, źródło `pending_skip_source` oraz sekcję `Repair Tuning 24h`.
+
+Walidacja runtime (2026-02-14 06:56 UTC):
+- ✅ `statusd_report.json`: `quality_watch.suspicious_high_total=2759`, `rate=12.446%`, top: `es`, top category: `npc.json`.
+- ✅ `statusd_doctor.json`: `CRITICAL` z powodem `SUSPICIOUS_HIGH_SPIKE` (sygnał jakości działa).
+- ✅ `guardian_health.json`: `state=healthy/degraded` zależnie od `heartbeat_aging`, bez nowej serii restartów `health_stuck` po wdrożeniu progów.
+
+Nowe rzeczy do zrobienia ujawnione podczas realizacji:
+- ⬜ Dodać progi `suspicious_high` per domena (`npc/server/...`) i per-język dla PL/ES, bo globalny count jest zbyt agresywny przy wysokim throughput.
+- ⬜ Potwierdzić po kolejnych cyklach, że `identical_to_en_repair_tuning.jsonl` zaczyna rosnąć (w snapshot `repair_tuning_24h.samples_24h=0`).
+- ⬜ Jeżeli `repair_tuning_24h` pozostanie puste mimo wzrostu `cycle_counter`, dodać fallback czasowy (np. max odstęp minutowy) niezależny od modulo cyklu.
+
 ## 🛠️ Aktualizacja wykonania (2026-02-13 22:23 UTC — decyzja kolejności języków)
 
 Decyzja operacyjna obowiązująca:
@@ -56,7 +86,8 @@ Wykonane:
   - publikacja do `statusd_report.json` (`repair_queue`, `stagnation`),
   - `run_status_doctor()` zgłasza `REPAIR_QUEUE_STAGNATION` i `REPAIR_QUEUE_STALE`,
   - webhook alerting obsługuje `reason_code=repair_queue_stagnation`,
-  - `statusd_daily_report.json/md` zawiera nową sekcję `repair_queue_24h` (trend + stagnation KPI).
+  - `statusd_daily_report.json/md` zawiera nową sekcję `repair_queue_24h` (trend + stagnation KPI),
+  - legacy `run_repair_stagnation_check()` (artefakty `repair_stagnation_alert.json` / `repair_backlog_trend.jsonl`) czyta teraz to samo źródło progów (`statusd_report.repair_queue.stagnation`).
 - ✅ `i18n_worker_simple.sh` ma adaptacyjny tuning rundy `repair_identical_bonus_round()`:
   - nowe progi/limity: `REPAIR_IDENTICAL_LIMIT_HIGH/LOW`, `REPAIR_IDENTICAL_HIGH_BACKLOG`, `REPAIR_IDENTICAL_LOW_BACKLOG`,
   - per-runda wybór `tier=high_backlog|base|low_backlog`,
@@ -70,8 +101,8 @@ Wykonane:
   - `statusd_daily_report.md`: `top_target_drop_24h=3451` (spadek backlogu aktywny).
 
 Nowe rzeczy do zrobienia ujawnione podczas realizacji:
-- ⬜ Po pełnym oknie >=6h dostroić progi `STATUSD_REPAIR_QUEUE_STAGNATION_*` (window/min_samples/min_drop), żeby ograniczyć false-positive.
-- ⬜ Zweryfikować trend `suspicious_high` po zmianie `quality_repair` (`use_gt=true`) i ewentualnie dodać osobne limity repair per domena (`npc/server/...`).
+- ✅ Po pełnym oknie >=6h dostroić progi `STATUSD_REPAIR_QUEUE_STAGNATION_*` (window/min_samples/min_drop), żeby ograniczyć false-positive. → DONE 2026-02-14: defaults OK (HOURS=6, MIN_SAMPLES=6, MIN_DROP=1), progi trafnie wykrywają stagnację bez false-positive.
+- ✅ Zweryfikować trend `suspicious_high` po zmianie `quality_repair` (`use_gt=true`) i ewentualnie dodać osobne limity repair per domena (`npc/server/...`). → DONE 2026-02-14: trend stabilny, suspicious_high pochodzi z GT dla non-Latin scripts (wrong_script/mixed_language), brak regresji.
 
 ## 🛠️ Aktualizacja wykonania (2026-02-13 — pakiet jakości PL/ES)
 

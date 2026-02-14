@@ -1,8 +1,8 @@
 {
-  "total_cycles": 3,
+  "total_cycles": 1,
   "mode": "AUTO_TRANSLATE",
-  "category": "fr",
-  "last_update": "2026-02-14T07:07:46.398641",
+  "category": "lv",
+  "last_update": "2026-02-14T07:50:46.553093",
   "migration": {
     "files_scanned": 2297,
     "files_with_keys": 1897,
@@ -17,9 +17,9 @@
     "keys_to_sync": 0
   },
   "auto_translate": {
-    "language": "fr",
-    "json_file": "server.json",
-    "keys_to_translate": 2504,
+    "language": "lv",
+    "json_file": "npc.json",
+    "keys_to_translate": 12549,
     "guard_fail": 0,
     "strict_missing_key": 0,
     "strict_blocker": "",

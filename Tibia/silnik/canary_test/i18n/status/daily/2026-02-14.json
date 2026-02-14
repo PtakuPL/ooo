@@ -2,9 +2,9 @@
   "cycles": 49,
   "date": "2026-02-14",
   "errors": {
-    "count": 232
+    "count": 247
   },
-  "generated_at_utc": "2026-02-14T06:10:13Z",
+  "generated_at_utc": "2026-02-14T07:06:06Z",
   "work": {
     "auto_translate": {
       "langs": {
@@ -22,23 +22,23 @@
         },
         "BG": {
           "skipped": 0,
-          "translated": 320
+          "translated": 400
         },
         "BN": {
           "skipped": 0,
-          "translated": 320
+          "translated": 400
         },
         "BS": {
           "skipped": 0,
-          "translated": 320
+          "translated": 400
         },
         "CS": {
           "skipped": 0,
-          "translated": 320
+          "translated": 400
         },
         "DA": {
           "skipped": 0,
-          "translated": 240
+          "translated": 320
         },
         "DE": {
           "skipped": 0,
@@ -46,7 +46,7 @@
         },
         "EL": {
           "skipped": 0,
-          "translated": 320
+          "translated": 400
         },
         "ES": {
           "skipped": 0,
@@ -58,11 +58,11 @@
         },
         "FA": {
           "skipped": 0,
-          "translated": 320
+          "translated": 400
         },
         "FI": {
           "skipped": 0,
-          "translated": 320
+          "translated": 400
         },
         "FR": {
           "skipped": 0,
@@ -74,23 +74,23 @@
         },
         "HI": {
           "skipped": 0,
-          "translated": 320
+          "translated": 400
         },
         "HR": {
           "skipped": 0,
-          "translated": 320
+          "translated": 400
         },
         "HU": {
           "skipped": 0,
-          "translated": 320
+          "translated": 400
         },
         "HY": {
           "skipped": 0,
-          "translated": 240
+          "translated": 320
         },
         "ID": {
           "skipped": 0,
-          "translated": 240
+          "translated": 320
         },
         "IT": {
           "skipped": 0,
@@ -98,15 +98,15 @@
         },
         "JA": {
           "skipped": 0,
-          "translated": 257
+          "translated": 287
         },
         "KA": {
           "skipped": 0,
-          "translated": 320
+          "translated": 400
         },
         "KK": {
           "skipped": 0,
-          "translated": 320
+          "translated": 400
         },
         "KO": {
           "skipped": 0,
@@ -118,19 +118,19 @@
         },
         "LV": {
           "skipped": 0,
-          "translated": 320
+          "translated": 400
         },
         "MK": {
           "skipped": 0,
-          "translated": 320
+          "translated": 400
         },
         "ML": {
           "skipped": 0,
-          "translated": 320
+          "translated": 400
         },
         "MS": {
           "skipped": 0,
-          "translated": 240
+          "translated": 320
         },
         "NL": {
           "skipped": 0,
@@ -138,7 +138,7 @@
         },
         "NO": {
           "skipped": 0,
-          "translated": 320
+          "translated": 400
         },
         "PL": {
           "skipped": 0,
@@ -158,7 +158,7 @@
         },
         "SK": {
           "skipped": 0,
-          "translated": 320
+          "translated": 400
         },
         "SL": {
           "skipped": 0,
@@ -166,7 +166,7 @@
         },
         "SQ": {
           "skipped": 0,
-          "translated": 320
+          "translated": 400
         },
         "SR": {
           "skipped": 0,
@@ -178,7 +178,7 @@
         },
         "SW": {
           "skipped": 0,
-          "translated": 320
+          "translated": 400
         },
         "TA": {
           "skipped": 0,
@@ -186,7 +186,7 @@
         },
         "TE": {
           "skipped": 0,
-          "translated": 320
+          "translated": 400
         },
         "TH": {
           "skipped": 0,

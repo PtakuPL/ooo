@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-02-14T06:11:43.529018Z",
-  "cycle_counter": 377,
-  "last_target_key": "da:npc.json",
-  "last_pending_total": 12621,
+  "timestamp": "2026-02-14T07:05:20.376168Z",
+  "cycle_counter": 412,
+  "last_target_key": "th:npc.json",
+  "last_pending_total": 12549,
   "last_tier": 3,
   "last_cat_priority": 1,
   "candidates_count": 1580,

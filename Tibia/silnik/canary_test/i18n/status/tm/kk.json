@@ -3198,5 +3198,645 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-14T05:17:34.421548Z"
+  },
+  "npc.a_dead_bureaucrat1.walkaway_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Қош бол және мені ұмытпа!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:02.707223Z"
+  },
+  "npc.a_dead_bureaucrat2.farewell_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Қош бол және мені ұмытпа!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:02.707701Z"
+  },
+  "npc.a_dead_bureaucrat2.walkaway_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Қош бол және мені ұмытпа!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:02.708213Z"
+  },
+  "npc.a_dead_bureaucrat3.farewell_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Қош бол және мені ұмытпа!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:02.708603Z"
+  },
+  "npc.a_dead_bureaucrat3.say_2": {
+    "src_hash": "7c9a6b9ee4bce0d9b7654294cdfe405e",
+    "text": "Жарайды |PLAYERNAME|. Мамандығы?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:02.709008Z"
+  },
+  "npc.a_dead_bureaucrat3.walkaway_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Қош бол және мені ұмытпа!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:02.709547Z"
+  },
+  "npc.a_dead_bureaucrat4.farewell_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Қош бол және мені ұмытпа!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:02.709920Z"
+  },
+  "npc.a_dead_bureaucrat4.say_2": {
+    "src_hash": "7c9a6b9ee4bce0d9b7654294cdfe405e",
+    "text": "Жарайды |PLAYERNAME|. Мамандығы?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:02.710383Z"
+  },
+  "npc.a_dead_bureaucrat4.walkaway_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Қош бол және мені ұмытпа!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:02.710853Z"
+  },
+  "npc.a_dragon_lord.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссст! Төмен ұстаңыз! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:02.711392Z"
+  },
+  "npc.a_dragon_lord.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссст! Төмен ұстаңыз! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:02.711945Z"
+  },
+  "npc.a_dragon_lord.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссст! Төмен ұстаңыз! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:02.712498Z"
+  },
+  "npc.a_drillworm.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссст! Төмен ұстаңыз! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:02.713214Z"
+  },
+  "npc.a_drillworm.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссст! Төмен ұстаңыз! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:02.713727Z"
+  },
+  "npc.a_drillworm.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссст! Төмен ұстаңыз! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:02.714260Z"
+  },
+  "npc.a_lost_basher.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссст! Төмен ұстаңыз! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:02.715389Z"
+  },
+  "npc.a_lost_basher.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссст! Төмен ұстаңыз! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:02.715903Z"
+  },
+  "npc.a_lost_basher.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссст! Төмен ұстаңыз! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:02.716470Z"
+  },
+  "npc.a_lost_husher.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссст! Төмен ұстаңыз! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:02.716977Z"
+  },
+  "npc.a_lost_husher.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссст! Төмен ұстаңыз! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:02.717608Z"
+  },
+  "npc.a_lost_husher.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссст! Төмен ұстаңыз! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:02.718157Z"
+  },
+  "npc.a_lost_thrower.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссст! Төмен ұстаңыз! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:02.718701Z"
+  },
+  "npc.a_lost_thrower.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссст! Төмен ұстаңыз! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:02.719238Z"
+  },
+  "npc.a_lost_thrower.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссст! Төмен ұстаңыз! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:02.719750Z"
+  },
+  "npc.a_nightmare_scion.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссст! Төмен ұстаңыз! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:02.720543Z"
+  },
+  "npc.a_nightmare_scion.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссст! Төмен ұстаңыз! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:02.721052Z"
+  },
+  "npc.a_nightmare_scion.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссст! Төмен ұстаңыз! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:02.721594Z"
+  },
+  "npc.a_vulcongra.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссст! Төмен ұстаңыз! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:02.725500Z"
+  },
+  "npc.a_vulcongra.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссст! Төмен ұстаңыз! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:02.726115Z"
+  },
+  "npc.a_vulcongra.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссст! Төмен ұстаңыз! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:02.726677Z"
+  },
+  "npc.a_wyrm.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссст! Төмен ұстаңыз! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:02.728455Z"
+  },
+  "npc.a_wyrm.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссст! Төмен ұстаңыз! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:02.729008Z"
+  },
+  "npc.a_wyrm.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссст! Төмен ұстаңыз! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:02.729662Z"
+  },
+  "npc.graubart.farewell_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Қош бол және мені ұмытпа!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:02.888488Z"
+  },
+  "npc.a_dead_bureaucrat1.say_8": {
+    "src_hash": "68c9f9ee9212c1c305a253d3d1aebeb0",
+    "text": "Тамаша. Міне, ұстаңыз. 411-форма. Сөйлескіңіз келген уақытта қайтып келіңіз. Сау болыңыз.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:52.862375Z"
+  },
+  "npc.a_dead_bureaucrat1.say_9": {
+    "src_hash": "6c558828065bb071d2bead0fc23aef37",
+    "text": "КЕРЕМЕТ, сен мұны істедің!! Пумин доменінде көңіл көтеріңіз!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:52.862852Z"
+  },
+  "npc.a_dead_bureaucrat1.voice_1": {
+    "src_hash": "cdcea1350c387fbbeec64fa8f0b8ddea",
+    "text": "Енді мен бұл пішінді қайда қойдым?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:52.863206Z"
+  },
+  "npc.a_dead_bureaucrat2.say_1": {
+    "src_hash": "14fd31f81c485fd102c189615f61a284",
+    "text": "Әрине, сіз оны менен аласыз. Міне, ұстаңыз. Сау болыңыз",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:52.863599Z"
+  },
+  "npc.a_dead_bureaucrat2.voice_1": {
+    "src_hash": "cdcea1350c387fbbeec64fa8f0b8ddea",
+    "text": "Енді мен бұл пішінді қайда қойдым?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:52.864032Z"
+  },
+  "npc.a_dead_bureaucrat3.say_1": {
+    "src_hash": "015bef68461eea886ca860eae9b35852",
+    "text": "Өлер алдында мен де {} болдым!! Саған менен не керек?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:52.864468Z"
+  },
+  "npc.a_dead_bureaucrat3.say_3": {
+    "src_hash": "42b8982fe2885887a8bed5a3e2fc0184",
+    "text": "Дұрыс, меннен 145 формасын ала аласыз. Дегенмен, маған алдымен 411 формасы қажет. Қолыңызда бар кезде қайтыңыз.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:52.865025Z"
+  },
+  "npc.a_dead_bureaucrat3.say_4": {
+    "src_hash": "4338fd8c8c7f05bf1780ecc3a5c6f70f",
+    "text": "Жарайсың! Сізде 411 формасы бар! Міне, 145-форма. Онымен көңіл көтеріңіз.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:52.865464Z"
+  },
+  "npc.a_dead_bureaucrat3.voice_1": {
+    "src_hash": "cdcea1350c387fbbeec64fa8f0b8ddea",
+    "text": "Енді мен бұл пішінді қайда қойдым?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:52.865918Z"
+  },
+  "npc.a_dead_bureaucrat4.say_1": {
+    "src_hash": "607d8b9a0101890da602c6e0916a8755",
+    "text": "{}, солай ма?! Саған менен не керек?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:52.866330Z"
+  },
+  "npc.a_dead_bureaucrat4.say_3": {
+    "src_hash": "3633424b018ff3b8100d839f33e33641",
+    "text": "Кешіріңіз, 356 пішінін алу үшін сізге 145-пішін қажет. Қолыңызда болған кезде оралыңыз",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:52.866816Z"
+  },
+  "npc.a_dead_bureaucrat4.say_4": {
+    "src_hash": "24f586b8d7515e7a84049f7c33e2cf15",
+    "text": "Сіз мен ойлағаннан да жақсысыз! Құттықтаймыз, міне, сіз: 356 нысаны!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:52.867268Z"
+  },
+  "npc.a_dead_bureaucrat4.voice_1": {
+    "src_hash": "cdcea1350c387fbbeec64fa8f0b8ddea",
+    "text": "Енді мен бұл пішінді қайда қойдым?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:52.867598Z"
+  },
+  "npc.a_dragon_mother.greet_msg_1": {
+    "src_hash": "1dce3066f0e7cf3054a32cbec80df4a6",
+    "text": "Сәлем адамдар! Өзіңізді бақыттымын деп есептеңіз, маған {help} керек.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:52.868079Z"
+  },
+  "npc.a_dragon_mother.greet_msg_3": {
+    "src_hash": "07b8c041b3b06732ebb031be4229bb98",
+    "text": "Сіз маған жақсылық жасадыңыз және сіз іздеген білім сіздікі болады. Мен саған мұзды еріттім, енді өте аласың.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:52.868637Z"
+  },
+  "npc.a_dragon_mother.multi_1": {
+    "src_hash": "1ca96232d26ea181d5ac0bab5436446b",
+    "text": "Сізге айтқанымдай, жауыз мұз жәндіктер менің жұмыртқамды төменгі үңгірлерге сүйреп апарды. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:52.869337Z"
+  },
+  "npc.a_dragon_mother.multi_2": {
+    "src_hash": "4c97970717def7c721c5c834b12248aa",
+    "text": "Жеткілікті жылу болмаса, жұмыртқа жақын арада өледі. Сол жерге барыңыз және менің балапанымды құтқарыңыз және сіз іздеген білім сіздікі болады!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:52.870425Z"
+  },
+  "npc.a_dragon_mother.multi_4": {
+    "src_hash": "7d9fd43a4df4010c414a7c4fb168728d",
+    "text": "Сонымен, табынушылар мен мұз големалары тұратын жоғарғы туннельдерге оралыңыз. Бұл туннельдердің бір жерінде сіз елес аңдыған шағын түрме таба аласыз. Бұл түрме камерасының оңтүстігінде сізді шығысқа апаратын туннель бар. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:52.871864Z"
+  },
+  "npc.a_dragon_mother.multi_5": {
+    "src_hash": "25a8d05bc20acf4eafd92b04b2a6be02",
+    "text": "Кішкентай үңгірге жеткенше туннельді жүріңіз. Көк энергетикалық өрісті көргенше төмен және төмен басыңыз. Ол сені менің жұмыртқама апарады. Ол әркім бөлмеге кіре алмайтындай етіп жабылған. Бірақ қазір рұқсатыңыз бар.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:52.872828Z"
+  },
+  "npc.a_dragon_mother.multi_6": {
+    "src_hash": "0bacb649bf75531ac333b0f8389626f8",
+    "text": "Мұздың бейшара жәндіктері жұмыртқадан шығуға жақын жұмыртқамды ұрлап кетті. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:52.873367Z"
+  },
+  "npc.a_dragon_mother.multi_7": {
+    "src_hash": "c195e0b190022cbb45a80e24310b442e",
+    "text": "Мен сол төменгі туннельдерге кіру үшін үлкен болғандықтан, мен сізден менің {egg} күтімін сұрауым керек. Сіз мұны істейсіз бе?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:52.873960Z"
+  },
+  "npc.a_dragon_mother.say_1": {
+    "src_hash": "013b42b6166cd483b196ac9ea64cacd5",
+    "text": "Мен сенің не іздеп жатқаныңды білемін. Әдетте мен сені жегім келеді, бірақ сәтсіз жағдайларға байланысты маған сіздің {assistance} қажет.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:52.874779Z"
+  },
+  "npc.a_fluffy_squirrel.sendtrade_msg_1": {
+    "src_hash": "03c8f51bfe7975b94ce3c76ec9647116",
+    "text": "Chchch. Чх! <you're not sure, but it seems that squirrel wants to trade your valuable acorns for useless stones that it found and considered uneatable>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:52.875942Z"
+  },
+  "npc.a_fluffy_squirrel.stdmod_1": {
+    "src_hash": "ac2f68634467394485198b5db1d3f7a3",
+    "text": "Чх? Чхх?? <though you don't understand squirrelish, that one seems really excited>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:52.876566Z"
+  },
+  "npc.a_frog.farewell_msg_1": {
+    "src_hash": "588e73837fba9553ffca81df889548ec",
+    "text": "Иә, сау бол, енді келме!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:52.876970Z"
+  },
+  "npc.a_frog.greet_msg_1": {
+    "src_hash": "19d469ee4ec05732827bda56d63f820e",
+    "text": "*күрсіну* Тағы бір мылқау авантюрист.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:52.877333Z"
+  },
+  "npc.a_frog.stdmod_1": {
+    "src_hash": "2fe4c5f00ebc051b41cbe0861487a7fd",
+    "text": "Егер басқа ханзада мені сүйуге келсе, мен оның есегін қатты теуіп жіберемін, сондықтан оған седан креслосы керек болады.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:52.877879Z"
+  },
+  "npc.a_frog.stdmod_2": {
+    "src_hash": "2fe4c5f00ebc051b41cbe0861487a7fd",
+    "text": "Егер басқа ханзада мені сүйуге келсе, мен оның есегін қатты теуіп жіберемін, сондықтан оған седан креслосы керек болады.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:52.878511Z"
+  },
+  "npc.a_frog.stdmod_3": {
+    "src_hash": "dc201119d7983ae5369b8ae0430bd6c0",
+    "text": "Мені сүйуге де тырыспа, әйтпесе мен сені рондхаус тепемін!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:52.878966Z"
+  },
+  "npc.a_frog.stdmod_4": {
+    "src_hash": "9591358ce6836f77a35e4131f2c80af4",
+    "text": "Сөйлейтін бақалар жоқ, ақымақ. Бұл сізді алдайтын қиялыңыз. Ал енді сіздің қиялыңыз сізге кетуді бұйырады.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:52.879527Z"
+  },
+  "npc.a_frog.stdmod_5": {
+    "src_hash": "e3de281a1b7dfde28d2b68c9a47961cf",
+    "text": "Ақыры біреу менің БАҚА екенімді байқады. Құттықтаймын, сіз өте байқағышсыз... *күрсініп*",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:52.880046Z"
+  },
+  "npc.a_frog.stdmod_6": {
+    "src_hash": "e867f2c18c9b934d43561a2624855b32",
+    "text": "Квест? Иә, менде квест бар! Барып, Тибиан патшаға оның ұлы мені тағы сүймек болғанын айт!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:52.880727Z"
+  },
+  "npc.a_frog.stdmod_7": {
+    "src_hash": "9c790a4ba6e7e6271ce4454c084a6cda",
+    "text": "Пирал? Сол ақымақ мені бір рет адамға айналдырды. Бірақ әйелім келіп сүйді, сондықтан мен тағы да бақамын.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:52.881377Z"
+  },
+  "npc.a_frog.stdmod_8": {
+    "src_hash": "9c790a4ba6e7e6271ce4454c084a6cda",
+    "text": "Пирал? Сол ақымақ мені бір рет адамға айналдырды. Бірақ әйелім келіп сүйді, сондықтан мен тағы да бақамын.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:52.881932Z"
+  },
+  "npc.a_frog.walkaway_msg_1": {
+    "src_hash": "c1db0d50cc6abf047516570bd8944bb7",
+    "text": "Ха! Сол ақымақ ақыры кетіп қалды.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:52.882301Z"
+  },
+  "npc.a_ghostly_sage.greet_msg_1": {
+    "src_hash": "487a95714b8152233a000a8ee2c338f3",
+    "text": "Әй, мен осы көне залдарда тағы да бір ажалдың жүргенін сеземін. Кешіріңіз, мен сізді әрең байқаймын. Мен ойларымнан адасып кеттім.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:52.882930Z"
+  },
+  "npc.a_ghostly_sage.stdmod_1": {
+    "src_hash": "341df3ac9ed72719a92e5ae18e2970e3",
+    "text": "Енді сізді осы жерден шығарып салады. Сіз бұл телепортқа тап болғыңыз келетініне сенімдісіз бе?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:52.883511Z"
+  },
+  "npc.a_ghostly_sage.stdmod_2": {
+    "src_hash": "43c699821452d6bba26f7dcb5d25af20",
+    "text": "Олай болса мына елес залдарда тұра бер.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:52.883882Z"
+  },
+  "npc.a_ghostly_sage.stdmod_3": {
+    "src_hash": "42dca8416a8f3f78f6c3bd6fa28ae624",
+    "text": "Мен сізге {teleport} ұсына аламын.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:52.884261Z"
+  },
+  "npc.a_ghostly_sage.stdmod_4": {
+    "src_hash": "9abbfa8fc9b94c4b2488d9216c452f9b",
+    "text": "Маған қарсы болма.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:52.884513Z"
+  },
+  "npc.a_ghostly_woman.farewell_msg_1": {
+    "src_hash": "f3d7e0a95a7c7f12c2b3bca6c13f4011",
+    "text": "Жалғыз... жалғыз. Сондай суық.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:52.884833Z"
+  },
+  "npc.a_ghostly_woman.greet_msg_1": {
+    "src_hash": "7ad732c0d7d64881c08e036c6ef0f80f",
+    "text": "Мен сені сеземін. Мен сіздің ойларыңызды естимін. Сіз ... тірісіз.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:52.885284Z"
+  },
+  "npc.a_ghostly_woman.stdmod_1": {
+    "src_hash": "36d1da8b2a5f237bf2156b3f2aaa9853",
+    "text": "Бірде мен түнгі рыцарьлар орденінің мүшесі болдым. Енді мен мына суық залдарды аралап жүрген көлеңкемін.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:52.885843Z"
+  },
+  "npc.a_ghostly_woman.stdmod_2": {
+    "src_hash": "282f2d4fa7ecca103ffa973758ca3af0",
+    "text": "Солтүстікте аяқтау үшін басқатырғыш бар.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:52.886233Z"
+  },
+  "npc.a_ghostly_woman.voice_1": {
+    "src_hash": "f3d7e0a95a7c7f12c2b3bca6c13f4011",
+    "text": "Жалғыз... жалғыз. Сондай суық.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:52.886610Z"
+  },
+  "npc.a_ghostly_woman.walkaway_msg_1": {
+    "src_hash": "f3d7e0a95a7c7f12c2b3bca6c13f4011",
+    "text": "Жалғыз... жалғыз. Сондай суық.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:43:52.886930Z"
   }
 }

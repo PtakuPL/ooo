@@ -3230,5 +3230,645 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-14T04:56:57.088151Z"
+  },
+  "npc.a_dead_bureaucrat1.walkaway_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Довиждане и не ме забравяйте!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:16.576391Z"
+  },
+  "npc.a_dead_bureaucrat2.farewell_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Довиждане и не ме забравяйте!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:16.576951Z"
+  },
+  "npc.a_dead_bureaucrat2.walkaway_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Довиждане и не ме забравяйте!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:16.577479Z"
+  },
+  "npc.a_dead_bureaucrat3.farewell_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Довиждане и не ме забравяйте!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:16.577894Z"
+  },
+  "npc.a_dead_bureaucrat3.say_2": {
+    "src_hash": "7c9a6b9ee4bce0d9b7654294cdfe405e",
+    "text": "Добре |PLAYERNAME|. призвание?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:16.578661Z"
+  },
+  "npc.a_dead_bureaucrat3.walkaway_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Довиждане и не ме забравяйте!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:16.579234Z"
+  },
+  "npc.a_dead_bureaucrat4.farewell_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Довиждане и не ме забравяйте!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:16.579654Z"
+  },
+  "npc.a_dead_bureaucrat4.say_2": {
+    "src_hash": "7c9a6b9ee4bce0d9b7654294cdfe405e",
+    "text": "Добре |PLAYERNAME|. призвание?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:16.580269Z"
+  },
+  "npc.a_dead_bureaucrat4.walkaway_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Довиждане и не ме забравяйте!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:16.580843Z"
+  },
+  "npc.a_dragon_lord.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссст! По-тихо! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:16.581577Z"
+  },
+  "npc.a_dragon_lord.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссст! По-тихо! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:16.582334Z"
+  },
+  "npc.a_dragon_lord.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссст! По-тихо! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:16.583079Z"
+  },
+  "npc.a_drillworm.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссст! По-тихо! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:16.584019Z"
+  },
+  "npc.a_drillworm.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссст! По-тихо! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:16.584728Z"
+  },
+  "npc.a_drillworm.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссст! По-тихо! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:16.585447Z"
+  },
+  "npc.a_lost_basher.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссст! По-тихо! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:16.587153Z"
+  },
+  "npc.a_lost_basher.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссст! По-тихо! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:16.587914Z"
+  },
+  "npc.a_lost_basher.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссст! По-тихо! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:16.588655Z"
+  },
+  "npc.a_lost_husher.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссст! По-тихо! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:16.589411Z"
+  },
+  "npc.a_lost_husher.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссст! По-тихо! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:16.590172Z"
+  },
+  "npc.a_lost_husher.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссст! По-тихо! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:16.590941Z"
+  },
+  "npc.a_lost_thrower.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссст! По-тихо! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:16.591651Z"
+  },
+  "npc.a_lost_thrower.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссст! По-тихо! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:16.592418Z"
+  },
+  "npc.a_lost_thrower.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссст! По-тихо! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:16.593156Z"
+  },
+  "npc.a_nightmare_scion.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссст! По-тихо! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:16.594126Z"
+  },
+  "npc.a_nightmare_scion.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссст! По-тихо! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:16.594869Z"
+  },
+  "npc.a_nightmare_scion.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссст! По-тихо! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:16.595587Z"
+  },
+  "npc.a_vulcongra.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссст! По-тихо! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:16.599118Z"
+  },
+  "npc.a_vulcongra.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссст! По-тихо! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:16.599845Z"
+  },
+  "npc.a_vulcongra.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссст! По-тихо! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:16.600586Z"
+  },
+  "npc.a_wyrm.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссст! По-тихо! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:16.602964Z"
+  },
+  "npc.a_wyrm.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссст! По-тихо! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:16.603672Z"
+  },
+  "npc.a_wyrm.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Пссст! По-тихо! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:16.604409Z"
+  },
+  "npc.graubart.farewell_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Довиждане и не ме забравяйте!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:16.764041Z"
+  },
+  "npc.a_dead_bureaucrat1.say_9": {
+    "src_hash": "6c558828065bb071d2bead0fc23aef37",
+    "text": "НЕВЕРОЯТНО, успяхте!! Забавлявайте се в Pumin's Domain!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:55.696431Z"
+  },
+  "npc.a_dead_bureaucrat1.voice_1": {
+    "src_hash": "cdcea1350c387fbbeec64fa8f0b8ddea",
+    "text": "Сега къде сложих тази форма?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:55.696848Z"
+  },
+  "npc.a_dead_bureaucrat2.say_1": {
+    "src_hash": "14fd31f81c485fd102c189615f61a284",
+    "text": "Разбира се, можете да го получите от мен. Ето ви. чао",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:55.697281Z"
+  },
+  "npc.a_dead_bureaucrat2.voice_1": {
+    "src_hash": "cdcea1350c387fbbeec64fa8f0b8ddea",
+    "text": "Сега къде сложих тази форма?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:55.697637Z"
+  },
+  "npc.a_dead_bureaucrat3.say_1": {
+    "src_hash": "015bef68461eea886ca860eae9b35852",
+    "text": "И аз бях {}, преди да умра!! какво искаш от мен?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:55.698122Z"
+  },
+  "npc.a_dead_bureaucrat3.say_3": {
+    "src_hash": "42b8982fe2885887a8bed5a3e2fc0184",
+    "text": "Точно така, можете да получите формуляр 145 от мен. Първо обаче ми трябва формуляр 411. Върни се, когато го имаш.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:55.698791Z"
+  },
+  "npc.a_dead_bureaucrat3.say_4": {
+    "src_hash": "4338fd8c8c7f05bf1780ecc3a5c6f70f",
+    "text": "Браво! Имате формуляр 411!! Ето формуляр 145. Забавлявайте се с него.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:55.699270Z"
+  },
+  "npc.a_dead_bureaucrat3.voice_1": {
+    "src_hash": "cdcea1350c387fbbeec64fa8f0b8ddea",
+    "text": "Сега къде сложих тази форма?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:55.699627Z"
+  },
+  "npc.a_dead_bureaucrat4.say_1": {
+    "src_hash": "607d8b9a0101890da602c6e0916a8755",
+    "text": "{}, така ли?! какво искаш от мен?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:55.700068Z"
+  },
+  "npc.a_dead_bureaucrat4.say_3": {
+    "src_hash": "3633424b018ff3b8100d839f33e33641",
+    "text": "За съжаление имате нужда от формуляр 145, за да получите формуляр 356. Върнете се, когато го получите",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:55.700583Z"
+  },
+  "npc.a_dead_bureaucrat4.say_4": {
+    "src_hash": "24f586b8d7515e7a84049f7c33e2cf15",
+    "text": "Ти си по-добър, отколкото си мислех! Поздравления, ето ви: формуляр 356!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:55.701109Z"
+  },
+  "npc.a_dead_bureaucrat4.voice_1": {
+    "src_hash": "cdcea1350c387fbbeec64fa8f0b8ddea",
+    "text": "Сега къде сложих тази форма?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:55.701469Z"
+  },
+  "npc.a_dragon_mother.greet_msg_1": {
+    "src_hash": "1dce3066f0e7cf3054a32cbec80df4a6",
+    "text": "Поздрави хора! Считайте се за късметлия, имам нужда от {help}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:55.702118Z"
+  },
+  "npc.a_dragon_mother.greet_msg_3": {
+    "src_hash": "07b8c041b3b06732ebb031be4229bb98",
+    "text": "Ти ми направи услуга и знанието, което търсиш, ще бъде твое. Разтопих леда за теб, сега можеш да минеш.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:55.702834Z"
+  },
+  "npc.a_dragon_mother.multi_1": {
+    "src_hash": "1ca96232d26ea181d5ac0bab5436446b",
+    "text": "Както ти казах, дяволски ледени създания завлякоха яйцето ми в долните пещери. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:55.703358Z"
+  },
+  "npc.a_dragon_mother.multi_2": {
+    "src_hash": "4c97970717def7c721c5c834b12248aa",
+    "text": "Без достатъчно топлина яйцето ще умре скоро. Отиди там и спаси излюпеното ми дете и знанието, което търсиш, ще бъде твое!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:55.704007Z"
+  },
+  "npc.a_dragon_mother.multi_4": {
+    "src_hash": "7d9fd43a4df4010c414a7c4fb168728d",
+    "text": "Затова се върнете в горните тунели, където живеят култисти и ледени големи. Някъде в тези тунели ще намерите малък затвор, обитаван от призрак. Южно от тази затворническа килия има тунел, който ще ви отведе на изток. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:55.704917Z"
+  },
+  "npc.a_dragon_mother.multi_5": {
+    "src_hash": "25a8d05bc20acf4eafd92b04b2a6be02",
+    "text": "Следвайте тунела, докато стигнете до малка пещера. Слизайте надолу и надолу, докато видите синьо енергийно поле. Ще те отведе до моето яйце. Запечатано е, за да не може всеки да влезе в помещението. Но вече имате разрешението.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:55.705859Z"
+  },
+  "npc.a_dragon_mother.multi_6": {
+    "src_hash": "0bacb649bf75531ac333b0f8389626f8",
+    "text": "Нещастни същества от лед откраднаха яйцето ми, което беше близо до излюпване. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:55.706391Z"
+  },
+  "npc.a_dragon_mother.multi_7": {
+    "src_hash": "c195e0b190022cbb45a80e24310b442e",
+    "text": "Тъй като съм твърде голям, за да влизам в тези долни тунели, трябва да ви помоля да се погрижите за моя {egg}. ще направиш ли това?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:55.707234Z"
+  },
+  "npc.a_dragon_mother.say_1": {
+    "src_hash": "013b42b6166cd483b196ac9ea64cacd5",
+    "text": "Наясно съм какво търсите. Обикновено бих предпочел да те погълна, но поради нещастни обстоятелства имам нужда от твоя {assistance}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:55.708069Z"
+  },
+  "npc.a_fluffy_squirrel.sendtrade_msg_1": {
+    "src_hash": "03c8f51bfe7975b94ce3c76ec9647116",
+    "text": "Ччч. Чх! <you're not sure, but it seems that squirrel wants to trade your valuable acorns for useless stones that it found and considered uneatable>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:55.708954Z"
+  },
+  "npc.a_fluffy_squirrel.stdmod_1": {
+    "src_hash": "ac2f68634467394485198b5db1d3f7a3",
+    "text": "Чх? чхх?? <though you don't understand squirrelish, that one seems really excited>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:55.709652Z"
+  },
+  "npc.a_frog.farewell_msg_1": {
+    "src_hash": "588e73837fba9553ffca81df889548ec",
+    "text": "Да, довиждане и не идвай повече!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:55.710096Z"
+  },
+  "npc.a_frog.greet_msg_1": {
+    "src_hash": "19d469ee4ec05732827bda56d63f820e",
+    "text": "*въздишка* Още един тъп авантюрист.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:55.710508Z"
+  },
+  "npc.a_frog.stdmod_1": {
+    "src_hash": "2fe4c5f00ebc051b41cbe0861487a7fd",
+    "text": "Ако друг принц дойде да ме целуне, ще го сритам толкова зле, че ще му трябва седан, за да се измъкне.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:55.711153Z"
+  },
+  "npc.a_frog.stdmod_2": {
+    "src_hash": "2fe4c5f00ebc051b41cbe0861487a7fd",
+    "text": "Ако друг принц дойде да ме целуне, ще го сритам толкова зле, че ще му трябва седан, за да се измъкне.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:55.711765Z"
+  },
+  "npc.a_frog.stdmod_3": {
+    "src_hash": "dc201119d7983ae5369b8ae0430bd6c0",
+    "text": "Дори не се опитвай да ме целунеш или Рондхаус ще те изритам!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:55.712216Z"
+  },
+  "npc.a_frog.stdmod_4": {
+    "src_hash": "9591358ce6836f77a35e4131f2c80af4",
+    "text": "Говорещите жаби не съществуват, идиот. Шибаното ти въображение те мами. И сега вашето въображение ви заповядва да си тръгнете.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:55.712842Z"
+  },
+  "npc.a_frog.stdmod_5": {
+    "src_hash": "e3de281a1b7dfde28d2b68c9a47961cf",
+    "text": "Най-накрая някой забеляза, че съм ЖАБА. Поздравления, МНОГО сте наблюдателни... *въздишка*",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:55.713359Z"
+  },
+  "npc.a_frog.stdmod_6": {
+    "src_hash": "e867f2c18c9b934d43561a2624855b32",
+    "text": "Мисия? Да, имам мисия! Иди и кажи на крал Тибиан, че синът му отново се опита да ме целуне!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:55.714138Z"
+  },
+  "npc.a_frog.stdmod_7": {
+    "src_hash": "9c790a4ba6e7e6271ce4454c084a6cda",
+    "text": "Pyrale? Този идиот веднъж ме превърна в човек. Но жена ми дойде и ме целуна, така че пак съм жаба.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:55.714986Z"
+  },
+  "npc.a_frog.stdmod_8": {
+    "src_hash": "9c790a4ba6e7e6271ce4454c084a6cda",
+    "text": "Pyrale? Този идиот веднъж ме превърна в човек. Но жена ми дойде и ме целуна, така че пак съм жаба.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:55.715714Z"
+  },
+  "npc.a_frog.walkaway_msg_1": {
+    "src_hash": "c1db0d50cc6abf047516570bd8944bb7",
+    "text": "Хах! Този идиот най-накрая си тръгна.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:55.716110Z"
+  },
+  "npc.a_ghostly_sage.greet_msg_1": {
+    "src_hash": "487a95714b8152233a000a8ee2c338f3",
+    "text": "Ах, чувствам, че смъртен отново обикаля тези древни зали. Извинете, едва ви забелязвам. Толкова съм потънал в мислите си.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:55.716776Z"
+  },
+  "npc.a_ghostly_sage.stdmod_1": {
+    "src_hash": "341df3ac9ed72719a92e5ae18e2970e3",
+    "text": "Сега ще бъдете изведен от тук. Сигурни ли сте, че искате да се изправите срещу този телепорт?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:55.717350Z"
+  },
+  "npc.a_ghostly_sage.stdmod_2": {
+    "src_hash": "43c699821452d6bba26f7dcb5d25af20",
+    "text": "Тогава останете тук в тези призрачни зали.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:55.717766Z"
+  },
+  "npc.a_ghostly_sage.stdmod_3": {
+    "src_hash": "42dca8416a8f3f78f6c3bd6fa28ae624",
+    "text": "Мога да ви предложа {teleport}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:55.718444Z"
+  },
+  "npc.a_ghostly_sage.stdmod_4": {
+    "src_hash": "9abbfa8fc9b94c4b2488d9216c452f9b",
+    "text": "Не ми обръщай внимание.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:55.718771Z"
+  },
+  "npc.a_ghostly_woman.farewell_msg_1": {
+    "src_hash": "f3d7e0a95a7c7f12c2b3bca6c13f4011",
+    "text": "Сам... толкова сам. Толкова студено.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:55.719153Z"
+  },
+  "npc.a_ghostly_woman.greet_msg_1": {
+    "src_hash": "7ad732c0d7d64881c08e036c6ef0f80f",
+    "text": "Чувствам те. Чувам твоите мисли. Ти си... жив.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:55.719602Z"
+  },
+  "npc.a_ghostly_woman.stdmod_1": {
+    "src_hash": "36d1da8b2a5f237bf2156b3f2aaa9853",
+    "text": "Някога бях член на ордена на кошмарните рицари. Сега съм само сянка, която се разхожда из тези студени зали.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:55.720202Z"
+  },
+  "npc.a_ghostly_woman.stdmod_2": {
+    "src_hash": "282f2d4fa7ecca103ffa973758ca3af0",
+    "text": "Северът трябва да завърши пъзел.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:55.720592Z"
+  },
+  "npc.a_ghostly_woman.voice_1": {
+    "src_hash": "f3d7e0a95a7c7f12c2b3bca6c13f4011",
+    "text": "Сам... толкова сам. Толкова студено.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:55.720965Z"
+  },
+  "npc.a_ghostly_woman.walkaway_msg_1": {
+    "src_hash": "f3d7e0a95a7c7f12c2b3bca6c13f4011",
+    "text": "Сам... толкова сам. Толкова студено.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:55.721314Z"
+  },
+  "npc.a_majestic_warwolf.greet_msg_1": {
+    "src_hash": "160a760ec699bf89e2f96e9d88ffd79d",
+    "text": "Интересно Човек, който може да говори езика на вълците.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:55.721749Z"
   }
 }

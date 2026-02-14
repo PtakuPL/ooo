@@ -4,12 +4,12 @@
   "crossref_enabled": true,
   "auto_fix_enabled": false,
   "auto_fix_limit": 30,
-  "checked_at": "2026-02-14T06:04:08.632748Z",
-  "issues_total": 427,
+  "checked_at": "2026-02-14T06:50:33.840046Z",
+  "issues_total": 425,
   "issues_by_type": {
     "consistency_in_language": 0,
     "pl_reference_missing_translation": 400,
-    "length_ratio_crosscheck": 27
+    "length_ratio_crosscheck": 25
   },
   "consistency_issues": [],
   "pl_reference_issues": [
@@ -3830,24 +3830,6 @@
       "en_len": 24,
       "lang_ratio": 0.0,
       "pl_ratio": 1.875
-    },
-    {
-      "key": "npc.yonan.say_3",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 4.0
-    },
-    {
-      "key": "npc.yonan.say_6",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 4.0
     },
     {
       "key": "npc.yonan.say_9",

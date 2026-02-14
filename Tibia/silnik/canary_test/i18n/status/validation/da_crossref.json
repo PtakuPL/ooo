@@ -4,27 +4,27 @@
   "crossref_enabled": true,
   "auto_fix_enabled": false,
   "auto_fix_limit": 30,
-  "checked_at": "2026-02-14T06:04:10.107939Z",
-  "issues_total": 468,
+  "checked_at": "2026-02-14T06:50:35.408486Z",
+  "issues_total": 459,
   "issues_by_type": {
     "consistency_in_language": 1,
     "pl_reference_missing_translation": 400,
-    "length_ratio_crosscheck": 67
+    "length_ratio_crosscheck": 58
   },
   "consistency_issues": [
     {
       "type": "crossref_inconsistent_translation",
       "severity": "MEDIUM",
-      "en": "So be it!",
+      "en": "Alright |PLAYERNAME|. Vocation?",
       "variants": [
         "",
-        "SO BE IT!"
+        "Okay |PLAYERNAME|. Kald?"
       ],
       "variants_count": 2,
       "examples": [
-        "npc:npc.awarness_of_the_emperor.say_1",
-        "npc:npc.tamerin.say_4",
-        "npc:npc.tamerin.say_5"
+        "npc:npc.a_dead_bureaucrat1.say_3",
+        "npc:npc.a_dead_bureaucrat3.say_2",
+        "npc:npc.a_dead_bureaucrat4.say_2"
       ]
     }
   ],
@@ -3956,33 +3956,6 @@
       "pl_ratio": 1.844
     },
     {
-      "key": "npc.lardoc_bashsmite.say_10",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 5,
-      "lang_ratio": 0.0,
-      "pl_ratio": 3.8
-    },
-    {
-      "key": "npc.lardoc_bashsmite.say_12",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 5,
-      "lang_ratio": 0.0,
-      "pl_ratio": 3.8
-    },
-    {
-      "key": "npc.lardoc_bashsmite.say_14",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 5,
-      "lang_ratio": 0.0,
-      "pl_ratio": 3.8
-    },
-    {
       "key": "npc.lurik.say_2",
       "category": "npc",
       "type": "crossref_length_ratio_diff",
@@ -3990,15 +3963,6 @@
       "en_len": 22,
       "lang_ratio": 0.0,
       "pl_ratio": 1.864
-    },
-    {
-      "key": "npc.maelyrra.say_18",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 9,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
     },
     {
       "key": "npc.markwin.say_7",
@@ -4028,15 +3992,6 @@
       "pl_ratio": 4.0
     },
     {
-      "key": "npc.palomino.say_9",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 9,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
       "key": "npc.pig.say_2",
       "category": "npc",
       "type": "crossref_length_ratio_diff",
@@ -4044,15 +3999,6 @@
       "en_len": 78,
       "lang_ratio": 0.0,
       "pl_ratio": 2.128
-    },
-    {
-      "key": "npc.rose.say_4",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 9,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
     },
     {
       "key": "npc.saideh.say_3",
@@ -4125,33 +4071,6 @@
       "en_len": 27,
       "lang_ratio": 0.0,
       "pl_ratio": 1.963
-    },
-    {
-      "key": "npc.suzy.farewell_msg_1",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 16,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.312
-    },
-    {
-      "key": "npc.suzy.walkaway_msg_1",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 16,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.312
-    },
-    {
-      "key": "npc.taegen.say_1",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 9,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
     },
     {
       "key": "npc.tefrit.say_3",

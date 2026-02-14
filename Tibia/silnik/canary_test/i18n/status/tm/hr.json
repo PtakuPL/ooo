@@ -3302,5 +3302,645 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-14T05:09:33.714857Z"
+  },
+  "npc.a_dead_bureaucrat2.voice_1": {
+    "src_hash": "cdcea1350c387fbbeec64fa8f0b8ddea",
+    "text": "Gdje sam stavio taj obrazac?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:32:57.922573Z"
+  },
+  "npc.a_dead_bureaucrat2.walkaway_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Zbogom i ne zaboravi me!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:32:57.923065Z"
+  },
+  "npc.a_dead_bureaucrat3.farewell_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Zbogom i ne zaboravi me!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:32:57.923499Z"
+  },
+  "npc.a_dead_bureaucrat3.say_2": {
+    "src_hash": "7c9a6b9ee4bce0d9b7654294cdfe405e",
+    "text": "U redu |PLAYERNAME|. Zvanje?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:32:57.923922Z"
+  },
+  "npc.a_dead_bureaucrat3.voice_1": {
+    "src_hash": "cdcea1350c387fbbeec64fa8f0b8ddea",
+    "text": "Gdje sam stavio taj obrazac?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:32:57.924346Z"
+  },
+  "npc.a_dead_bureaucrat3.walkaway_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Zbogom i ne zaboravi me!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:32:57.924754Z"
+  },
+  "npc.a_dead_bureaucrat4.farewell_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Zbogom i ne zaboravi me!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:32:57.925115Z"
+  },
+  "npc.a_dead_bureaucrat4.say_2": {
+    "src_hash": "7c9a6b9ee4bce0d9b7654294cdfe405e",
+    "text": "U redu |PLAYERNAME|. Zvanje?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:32:57.925628Z"
+  },
+  "npc.a_dead_bureaucrat4.voice_1": {
+    "src_hash": "cdcea1350c387fbbeec64fa8f0b8ddea",
+    "text": "Gdje sam stavio taj obrazac?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:32:57.926032Z"
+  },
+  "npc.a_dead_bureaucrat4.walkaway_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Zbogom i ne zaboravi me!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:32:57.926571Z"
+  },
+  "npc.a_dragon_lord.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Samo tiše! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:32:57.927623Z"
+  },
+  "npc.a_dragon_lord.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Samo tiše! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:32:57.928543Z"
+  },
+  "npc.a_dragon_lord.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Samo tiše! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:32:57.929201Z"
+  },
+  "npc.a_drillworm.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Samo tiše! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:32:57.930072Z"
+  },
+  "npc.a_drillworm.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Samo tiše! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:32:57.930752Z"
+  },
+  "npc.a_drillworm.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Samo tiše! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:32:57.931428Z"
+  },
+  "npc.a_lost_basher.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Samo tiše! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:32:57.932887Z"
+  },
+  "npc.a_lost_basher.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Samo tiše! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:32:57.933579Z"
+  },
+  "npc.a_lost_basher.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Samo tiše! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:32:57.934297Z"
+  },
+  "npc.a_lost_husher.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Samo tiše! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:32:57.935065Z"
+  },
+  "npc.a_lost_husher.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Samo tiše! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:32:57.935931Z"
+  },
+  "npc.a_lost_husher.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Samo tiše! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:32:57.936814Z"
+  },
+  "npc.a_lost_thrower.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Samo tiše! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:32:57.937615Z"
+  },
+  "npc.a_lost_thrower.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Samo tiše! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:32:57.938263Z"
+  },
+  "npc.a_lost_thrower.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Samo tiše! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:32:57.938946Z"
+  },
+  "npc.a_nightmare_scion.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Samo tiše! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:32:57.939813Z"
+  },
+  "npc.a_nightmare_scion.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Samo tiše! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:32:57.940449Z"
+  },
+  "npc.a_nightmare_scion.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Samo tiše! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:32:57.941098Z"
+  },
+  "npc.a_vulcongra.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Samo tiše! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:32:57.944525Z"
+  },
+  "npc.a_vulcongra.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Samo tiše! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:32:57.945172Z"
+  },
+  "npc.a_vulcongra.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Samo tiše! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:32:57.945804Z"
+  },
+  "npc.a_wyrm.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Samo tiše! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:32:57.948869Z"
+  },
+  "npc.a_wyrm.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Samo tiše! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:32:57.949691Z"
+  },
+  "npc.a_wyrm.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Samo tiše! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:32:57.950462Z"
+  },
+  "npc.graubart.farewell_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Zbogom i ne zaboravi me!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:32:58.084975Z"
+  },
+  "npc.a_dead_bureaucrat2.say_1": {
+    "src_hash": "14fd31f81c485fd102c189615f61a284",
+    "text": "Naravno, možete ga dobiti od mene. evo ti Bok",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:33:42.573436Z"
+  },
+  "npc.a_dead_bureaucrat3.say_1": {
+    "src_hash": "015bef68461eea886ca860eae9b35852",
+    "text": "I ja sam bio {}, prije nego što sam umro!! Što hoćeš od mene?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:33:42.573904Z"
+  },
+  "npc.a_dead_bureaucrat3.say_3": {
+    "src_hash": "42b8982fe2885887a8bed5a3e2fc0184",
+    "text": "Tako je, obrazac 145 možete dobiti od mene. Međutim, prvo mi treba obrazac 411. Vrati se kad ga budeš imao.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:33:42.574697Z"
+  },
+  "npc.a_dead_bureaucrat3.say_4": {
+    "src_hash": "4338fd8c8c7f05bf1780ecc3a5c6f70f",
+    "text": "Bravo! Imate obrazac 411!! Ovdje je obrazac 145. Zabavite se s njim.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:33:42.575165Z"
+  },
+  "npc.a_dead_bureaucrat4.say_1": {
+    "src_hash": "607d8b9a0101890da602c6e0916a8755",
+    "text": "{}, je li tako?! Što hoćeš od mene?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:33:42.575923Z"
+  },
+  "npc.a_dead_bureaucrat4.say_3": {
+    "src_hash": "3633424b018ff3b8100d839f33e33641",
+    "text": "Žao nam je, potreban vam je obrazac 145 da biste dobili obrazac 356. Vratite se kada ga budete imali",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:33:42.576900Z"
+  },
+  "npc.a_dead_bureaucrat4.say_4": {
+    "src_hash": "24f586b8d7515e7a84049f7c33e2cf15",
+    "text": "Bolji si nego što sam mislio! Čestitamo, evo vas: obrazac 356!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:33:42.577505Z"
+  },
+  "npc.a_dragon_mother.greet_msg_1": {
+    "src_hash": "1dce3066f0e7cf3054a32cbec80df4a6",
+    "text": "Pozdrav ljudi! Smatraj se sretnikom, trebam {help}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:33:42.577988Z"
+  },
+  "npc.a_dragon_mother.greet_msg_3": {
+    "src_hash": "07b8c041b3b06732ebb031be4229bb98",
+    "text": "Učinio si mi uslugu i znanje koje tražiš bit će tvoje. Otopio sam ti led, sad možeš proći.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:33:42.578607Z"
+  },
+  "npc.a_dragon_mother.multi_1": {
+    "src_hash": "1ca96232d26ea181d5ac0bab5436446b",
+    "text": "Kao što sam ti rekao, đavolska ledena stvorenja odvukla su moje jaje u donje pećine. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:33:42.579108Z"
+  },
+  "npc.a_dragon_mother.multi_2": {
+    "src_hash": "4c97970717def7c721c5c834b12248aa",
+    "text": "Bez dovoljno topline jaje će uskoro uginuti. Odvažite se tamo i spasite moje mladunče i znanje koje tražite bit će vaše!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:33:42.579697Z"
+  },
+  "npc.a_dragon_mother.multi_4": {
+    "src_hash": "7d9fd43a4df4010c414a7c4fb168728d",
+    "text": "Dakle, vratite se u gornje tunele gdje obitavaju kultisti i ledeni golemi. Negdje u tim tunelima pronaći ćete mali zatvor kojeg proganja duh. Južno od ove zatvorske ćelije nalazi se tunel koji će vas odvesti prema istoku. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:33:42.580551Z"
+  },
+  "npc.a_dragon_mother.multi_5": {
+    "src_hash": "25a8d05bc20acf4eafd92b04b2a6be02",
+    "text": "Pratite tunel dok ne dođete do male špilje. Koračite dolje i dolje dok ne vidite plavo energetsko polje. Odvest će te do mog jajeta. Zapečaćena je tako da ne mogu svi ući u sobu. Ali sada imate dozvolu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:33:42.581384Z"
+  },
+  "npc.a_dragon_mother.multi_6": {
+    "src_hash": "0bacb649bf75531ac333b0f8389626f8",
+    "text": "Jadna stvorenja od leda ukrala su moje jaje koje je bilo blizu izleganja. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:33:42.581836Z"
+  },
+  "npc.a_dragon_mother.multi_7": {
+    "src_hash": "c195e0b190022cbb45a80e24310b442e",
+    "text": "Budući da sam prevelik da bih ulazio u te donje tunele, moram vas zamoliti da se brinete za moj {egg}. Hoćeš li to učiniti?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:33:42.582492Z"
+  },
+  "npc.a_dragon_mother.say_1": {
+    "src_hash": "013b42b6166cd483b196ac9ea64cacd5",
+    "text": "Svjestan sam što tražite. Obično bih te radije prožderao, ali zbog nesretnih okolnosti, trebam tvoj {assistance}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:33:42.583222Z"
+  },
+  "npc.a_fluffy_squirrel.sendtrade_msg_1": {
+    "src_hash": "03c8f51bfe7975b94ce3c76ec9647116",
+    "text": "Chchch. Chh! <you're not sure, but it seems that squirrel wants to trade your valuable acorns for useless stones that it found and considered uneatable>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:33:42.584498Z"
+  },
+  "npc.a_fluffy_squirrel.stdmod_1": {
+    "src_hash": "ac2f68634467394485198b5db1d3f7a3",
+    "text": "Chh? čhh?? <though you don't understand squirrelish, that one seems really excited>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:33:42.585260Z"
+  },
+  "npc.a_frog.farewell_msg_1": {
+    "src_hash": "588e73837fba9553ffca81df889548ec",
+    "text": "Da, doviđenja i nemoj više dolaziti!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:33:42.585651Z"
+  },
+  "npc.a_frog.greet_msg_1": {
+    "src_hash": "19d469ee4ec05732827bda56d63f820e",
+    "text": "*uzdah* Još jedan glupi avanturist.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:33:42.586012Z"
+  },
+  "npc.a_frog.stdmod_1": {
+    "src_hash": "2fe4c5f00ebc051b41cbe0861487a7fd",
+    "text": "Ako me drugi princ dođe poljubiti, toliko ću ga isprašiti da će mu trebati sedan stolac da pobjegne.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:33:42.586573Z"
+  },
+  "npc.a_frog.stdmod_2": {
+    "src_hash": "2fe4c5f00ebc051b41cbe0861487a7fd",
+    "text": "Ako me drugi princ dođe poljubiti, toliko ću ga isprašiti da će mu trebati sedan stolac da pobjegne.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:33:42.587112Z"
+  },
+  "npc.a_frog.stdmod_3": {
+    "src_hash": "dc201119d7983ae5369b8ae0430bd6c0",
+    "text": "Nemoj me ni pokušati poljubiti ili ću te Rondhouse šutnuti!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:33:42.587524Z"
+  },
+  "npc.a_frog.stdmod_4": {
+    "src_hash": "9591358ce6836f77a35e4131f2c80af4",
+    "text": "Žabe koje govore ne postoje, idiote. Tvoja jebena mašta te vara. A sada vam vaša mašta naređuje da odete.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:33:42.588094Z"
+  },
+  "npc.a_frog.stdmod_5": {
+    "src_hash": "e3de281a1b7dfde28d2b68c9a47961cf",
+    "text": "Napokon netko primijeti da sam ŽABA. Čestitam, JAKO si pažljiv... *uzdah*",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:33:42.588596Z"
+  },
+  "npc.a_frog.stdmod_6": {
+    "src_hash": "e867f2c18c9b934d43561a2624855b32",
+    "text": "Potraga? Da, imam zadatak! Idi i reci kralju Tibijanu da me njegov sin ponovno pokušao poljubiti!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:33:42.589015Z"
+  },
+  "npc.a_frog.stdmod_7": {
+    "src_hash": "9c790a4ba6e7e6271ce4454c084a6cda",
+    "text": "Pyrale? Taj me idiot jednom pretvorio u čovjeka. Ali žena je došla i poljubila me, pa sam opet žaba.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:33:42.589583Z"
+  },
+  "npc.a_frog.stdmod_8": {
+    "src_hash": "9c790a4ba6e7e6271ce4454c084a6cda",
+    "text": "Pyrale? Taj me idiot jednom pretvorio u čovjeka. Ali žena je došla i poljubila me, pa sam opet žaba.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:33:42.590127Z"
+  },
+  "npc.a_frog.walkaway_msg_1": {
+    "src_hash": "c1db0d50cc6abf047516570bd8944bb7",
+    "text": "Haha! Taj idiot je konačno otišao.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:33:42.590497Z"
+  },
+  "npc.a_ghostly_sage.greet_msg_1": {
+    "src_hash": "487a95714b8152233a000a8ee2c338f3",
+    "text": "Ah, osjećam da smrtnik opet hoda ovim drevnim dvoranama. Oprosti, jedva te primjećujem. Tako sam izgubljena u svojim mislima.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:33:42.591069Z"
+  },
+  "npc.a_ghostly_sage.stdmod_1": {
+    "src_hash": "341df3ac9ed72719a92e5ae18e2970e3",
+    "text": "Sada ćete biti otputovani odavde. Jeste li sigurni da se želite suočiti s tim teleportom?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:33:42.591571Z"
+  },
+  "npc.a_ghostly_sage.stdmod_2": {
+    "src_hash": "43c699821452d6bba26f7dcb5d25af20",
+    "text": "Onda ostani ovdje u ovim sablasnim dvoranama.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:33:42.591923Z"
+  },
+  "npc.a_ghostly_sage.stdmod_3": {
+    "src_hash": "42dca8416a8f3f78f6c3bd6fa28ae624",
+    "text": "Mogu vam ponuditi {teleport}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:33:42.592245Z"
+  },
+  "npc.a_ghostly_sage.stdmod_4": {
+    "src_hash": "9abbfa8fc9b94c4b2488d9216c452f9b",
+    "text": "Ne obaziri se na mene.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:33:42.592592Z"
+  },
+  "npc.a_ghostly_woman.farewell_msg_1": {
+    "src_hash": "f3d7e0a95a7c7f12c2b3bca6c13f4011",
+    "text": "Sama... tako sama. Tako hladno.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:33:42.593018Z"
+  },
+  "npc.a_ghostly_woman.greet_msg_1": {
+    "src_hash": "7ad732c0d7d64881c08e036c6ef0f80f",
+    "text": "Osjećam te. Čujem tvoje misli. Vi ste ... živi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:33:42.593477Z"
+  },
+  "npc.a_ghostly_woman.stdmod_1": {
+    "src_hash": "36d1da8b2a5f237bf2156b3f2aaa9853",
+    "text": "Jednom sam bio član reda vitezova iz noćne more. Sada sam samo sjena koja hoda ovim hladnim hodnicima.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:33:42.594030Z"
+  },
+  "npc.a_ghostly_woman.stdmod_2": {
+    "src_hash": "282f2d4fa7ecca103ffa973758ca3af0",
+    "text": "Sjever mora dovršiti zagonetku.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:33:42.594411Z"
+  },
+  "npc.a_ghostly_woman.voice_1": {
+    "src_hash": "f3d7e0a95a7c7f12c2b3bca6c13f4011",
+    "text": "Sama... tako sama. Tako hladno.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:33:42.594731Z"
+  },
+  "npc.a_ghostly_woman.walkaway_msg_1": {
+    "src_hash": "f3d7e0a95a7c7f12c2b3bca6c13f4011",
+    "text": "Sama... tako sama. Tako hladno.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:33:42.595067Z"
+  },
+  "npc.a_majestic_warwolf.greet_msg_1": {
+    "src_hash": "160a760ec699bf89e2f96e9d88ffd79d",
+    "text": "Zanimljiv. Čovjek koji govori jezikom vukova.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:33:42.595480Z"
+  },
+  "npc.a_majestic_warwolf.say_1": {
+    "src_hash": "03505a67a6a5e2c2c6f1f27b32d98a5f",
+    "text": "GRRRRRRRRRRRRRR",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:33:42.595704Z"
+  },
+  "npc.a_majestic_warwolf.say_2": {
+    "src_hash": "54c2abbaf72a16f3d61ec9bd34db18a9",
+    "text": "Vidim u tvojim očima da si poštena i prijateljski raspoložena osoba, |PLAYERNAME|. Bio si dovoljno strpljiv da naučiš naš jezik i dat ću ti poseban dar. Hoćeš li to prihvatiti?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:33:42.596475Z"
+  },
+  "npc.a_majestic_warwolf.say_female": {
+    "src_hash": "7928f8ebb02a6a5db452e977f072e83e",
+    "text": "Od sada ćeš biti poznata kao |PLAYERNAME|, vučica. Bit ćeš brz i pametan kao Morgrar, veliki bijeli vuk. On će voditi vaš put.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:33:42.597141Z"
+  },
+  "npc.a_majestic_warwolf.say_male": {
+    "src_hash": "5470632dca3f8c21e5d8e4a36fcb615f",
+    "text": "Od sada ćeš biti poznat kao |PLAYERNAME|, medvjeđi ratnik. Bit ćeš jak i ponosan kao Angros, veliki tamni medvjed. On će voditi vaš put.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:33:42.597797Z"
   }
 }

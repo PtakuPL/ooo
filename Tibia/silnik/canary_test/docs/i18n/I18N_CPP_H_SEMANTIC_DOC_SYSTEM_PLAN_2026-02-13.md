@@ -6,6 +6,26 @@
 
 ---
 
+## 0a) Aktualizacja koordynacyjna (2026-02-14 06:56 UTC)
+
+Domknięte zmiany po stronie runtime i ich wpływ na plan C++/H:
+- ✅ `statusd_report.json` ma nowy blok `quality_watch` (agregacja `suspicious_high` w oknie 6h, top lang, top category).
+- ✅ `statusd_daily_report.json/md` ma:
+  - KPI `suspicious_high_count/rate/top_lang`,
+  - sekcję `Repair Tuning 24h` (źródło: `identical_to_en_repair_tuning.jsonl`),
+  - jawne `pending_skip_source` (preferowane `pending_skip_24h_latest.json`).
+- ✅ Guardian health-check został doprecyzowany (aging/stale/stuck + sygnały aktywności procesu), co zmniejsza restarty zakłócające obserwację trendów jakości.
+- ✅ Worker repair interwał korzysta z globalnego `translation_dispatch_state.cycle_counter`, a nie tylko lokalnego licznika po restarcie.
+
+Nowe wymagania dla pipeline semantycznego C++/H (dopisane po wykrytych problemach):
+- ⬜ Emitować sygnał `quality_watch_key = <lang>:<domain>` kompatybilny z `statusd_report.quality_watch.top_langs/top_categories`, żeby można było mapować wzrost `suspicious_high` do zmian semantycznych modułów.
+- ⬜ Rozszerzyć kontrakt o `risk_scope` (`global|domain|lang|lang_domain`) — obecne alerty runtime pokazały, że globalny próg jest zbyt mało precyzyjny dla `npc.json`.
+- ⬜ Dodać relację do artefaktu `identical_to_en_repair_tuning.jsonl`:
+  - `repair_tuning_key` (`lang:json_file`),
+  - `repair_tier`,
+  - `suspicious_high_pct`,
+  aby korelować zmianę C++/H z efektywnością realnej naprawy tłumaczeń.
+
 ## 0) Aktualizacja koordynacyjna (2026-02-13 22:14 UTC)
 
 W tej iteracji wykonano Fazę 0 z planu workera (baseline 24h):
@@ -23,7 +43,7 @@ Aktualizacja uzupełniająca (2026-02-13 21:47 UTC):
 - ✅ Domknięto operacyjnie `P2.1`: webhook alerting w `statusd` (`doctor_critical`, `guardian_stuck`, `no_progress`) z cooldown/deduplikacją (`statusd_alert_state.json`).
 - ✅ Domknięto operacyjnie `P2.2`: raport 24h (`statusd_daily_report.json` + `statusd_daily_report.md`) z trendami per język/per kategoria.
 - ✅ Naprawiono zgodność kontraktu coverage w `statusd` pod `translation_global_overview.json` (`languages[]`).
-- ⬜ Nowe TODO kontraktowe: dodać dedykowany artefakt `pending_skip` dla okna 24h (obecnie raport 24h bazuje na sygnałach z `worker_cycle_perf.detail`).
+- ✅ Nowe TODO kontraktowe: dodać dedykowany artefakt `pending_skip` dla okna 24h (obecnie raport 24h bazuje na sygnałach z `worker_cycle_perf.detail`). → DONE 2026-02-14: `pending_skip_events.jsonl` + `pending_skip_24h_latest.json`.
 
 Aktualizacja uzupełniająca (2026-02-13 — quality hardening PL/ES):
 - ✅ Domknięto po stronie workera rozróżnienie `identical_to_en`:
@@ -50,6 +70,18 @@ Aktualizacja uzupełniająca (2026-02-13 22:38 UTC):
   - priorytet domen queue: `npc -> server -> talkactions`.
 - ⬜ Nowe wymaganie dla planu C++/H:
   - pipeline semantyczny powinien emitować tag domeny kompatybilny z queue repair (`npc/server/talkactions/...`), żeby statusd mógł korelować źródło zmian C++/H z realnym backlogiem tłumaczeń.
+
+Aktualizacja uzupełniająca (2026-02-14 06:10 UTC):
+- ✅ Statusd ma już pełny kontrakt telemetryczny repair queue:
+  - `statusd_report.json` publikuje `repair_queue.stagnation`,
+  - `statusd_daily_report.json/md` publikuje trend `Repair Queue 24h`,
+  - webhook używa `reason_code=repair_queue_stagnation`.
+- ✅ Worker/guardian tuning dla PL/ES:
+  - adaptacyjne limity `REPAIR_IDENTICAL_LIMIT_*`,
+  - profil `quality_repair` pracuje z `use_gt=true`, `translate_limit=60`.
+- ⬜ Nowe wymaganie dla pipeline C++/H:
+  - oprócz `domain` dodać mapowanie `repair_queue_key` (`lang:json_file`) i znacznik `repair_priority_tier`,
+  - cel: korelacja zmian semantycznych C++/H z tym, czy backlog repair realnie maleje w `statusd_report`.
 
 Wpływ na plan C++/H:
 - semantyczny pipeline powinien emitować sygnały czasowe kompatybilne z `strict_hourly_window`, żeby statusd mógł łączyć dane C++/H i i18n bez mieszania metryk godzinowych z dobowymi.

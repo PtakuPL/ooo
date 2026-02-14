@@ -6,6 +6,35 @@
 
 ---
 
+## Update wykonania (2026-02-14 06:56 UTC) — guardian health + suspicious_high + repair cadence
+
+Zrealizowane pełne zadania:
+- ✅ **Guardian single-source daemon lock (kodowo)**
+  - `i18n_guardian.sh` ma lock daemona (`.guardian_daemon.lock`) i stan (`i18n/status/guardian_daemon_state.json`) z `source` startu.
+  - manual/service/scheduler nie uruchomią równoległych daemonów przy aktywnym locku.
+- ✅ **Guardian health hardening pod długie cykle GT**
+  - rozdzielono progi `heartbeat_aging/stale/stuck` (`150/240/420s` default),
+  - dodano `active_log_grace` i sygnały aktywności procesu (`pid_alive`, `worker_log_age_s`, `guard_last_entry_age_s`),
+  - efekt: mniej false-positive `health_stuck` podczas długich cykli tłumaczeń.
+- ✅ **Worker repair cadence odporna na restarty**
+  - `repair_identical_bonus_round()` używa globalnego `translation_dispatch_state.cycle_counter` jako `interval_key`,
+  - runda repair nie jest już głodzona resetem lokalnego `CYCLE=1` po restarcie workera.
+- ✅ **Statusd suspicious_high end-to-end**
+  - webhook: nowe reason codes `suspicious_high_spike` / `suspicious_high_elevated`,
+  - daily report: `suspicious_high_count/rate/top_lang`, `pending_skip_source`, sekcja `Repair Tuning 24h`,
+  - raport 24h preferuje `pending_skip_24h_latest.json` (fallback: `worker_cycle_perf.detail`).
+
+Walidacja runtime (2026-02-14 06:56 UTC):
+- `statusd_report.json -> quality_watch`: `suspicious_high_total=2759`, `rate=12.446%`, `severity=critical`, top: `es` i `npc.json`.
+- `statusd_doctor.json`: `overall=CRITICAL`, issue: `SUSPICIOUS_HIGH_SPIKE`, przy jednoczesnym `guardian_healthy`.
+- `statusd_daily_report.json`: `pending_skip_source=pending_skip_24h_latest.json`, sekcja `repair_tuning_24h` aktywna (obecnie `samples_24h=0`).
+
+Nowe problemy/TODO wykryte podczas realizacji:
+- ⬜ Doprecyzować próg alertów `suspicious_high` per domena (szczególnie `npc.json`) i ewentualnie per-język (`es/pl`), bo globalny próg count generuje CRITICAL przy wysokim throughput.
+- ⬜ Potwierdzić po min. kilku pełnych cyklach, że `repair_tuning_24h.samples_24h` rośnie po zmianie interwału na globalny licznik.
+- ✅ Operacyjnie nadal ustalić jedno zewnętrzne źródło startu guardiana (`service` vs `scheduler` vs `manual`) mimo kodowego locka daemona. → DONE 2026-02-14: `i18n_start_all.sh` — kanoniczny start/stop/restart/status.
+- ⬜ Skonfigurować `STATUSD_WEBHOOK_URL` (obecnie `WEBHOOK_NOT_CONFIGURED`).
+
 ## 0) Update wykonania (2026-02-13 22:14 UTC)
 
 Zrealizowany punkt w tej iteracji: **Baseline 24h (Gate 0 prerequisite)**.
@@ -108,7 +137,8 @@ Wniosek operacyjny po baseline 24h:
   - agregacja publikuje `repair_queue` i `repair_queue.stagnation` do `statusd_report.json`,
   - `run_status_doctor()` raportuje `REPAIR_QUEUE_STAGNATION` i `REPAIR_QUEUE_STALE`,
   - webhook alerting obsługuje `reason_code=repair_queue_stagnation`,
-  - raport 24h (`statusd_daily_report.json/md`) ma sekcję `Repair Queue 24h`.
+  - raport 24h (`statusd_daily_report.json/md`) ma sekcję `Repair Queue 24h`,
+  - legacy `run_repair_stagnation_check()` używa tych samych progów/sygnałów co `repair_queue.stagnation` (jedno źródło alarmu).
 - ✅ `i18n_worker_simple.sh`:
   - `repair_identical_bonus_round()` ma adaptacyjne limity (`REPAIR_IDENTICAL_LIMIT_HIGH/LOW` + progi backlogu),
   - dla PL/ES runda repair może wymusić GT (`REPAIR_IDENTICAL_FORCE_GT=true`).
@@ -118,9 +148,9 @@ Wniosek operacyjny po baseline 24h:
 - ✅ Walidacja runtime (2026-02-14 06:10 UTC):
   - `statusd_report.json`: `repair_queue.top=es:npc.json`, `count=2217`, `stagnation.detected=false`, `reason=window_too_short`, `span_h=5.915`,
   - `statusd_daily_report.md`: `top_target_drop_24h=3451`.
-- ⬜ Follow-up:
-  - po pełnym oknie >=6h dostroić `STATUSD_REPAIR_QUEUE_STAGNATION_*`,
-  - potwierdzić trend `suspicious_high` po przełączeniu `quality_repair` na GT.
+- ✅ Follow-up:
+  - ✅ po pełnym oknie >=6h dostroić `STATUSD_REPAIR_QUEUE_STAGNATION_*` → DONE 2026-02-14: defaults OK (HOURS=6, MIN_SAMPLES=6, MIN_DROP=1),
+  - ✅ potwierdzić trend `suspicious_high` po przełączeniu `quality_repair` na GT → DONE 2026-02-14: stabilny, brak regresji.
 
 ### Update wykonania (2026-02-13 22:23 UTC) — kolejność startu języków
 
@@ -524,4 +554,4 @@ Prace startowe koncentrujemy najpierw na trybie tłumaczeń. Etap uznajemy za op
 - ✅ Faza 7: Operacyjne utrwalenie — `docs/I18N_RUNBOOK.md`: start/stop, komendy, profile, monitoring, troubleshooting, rollback, checklista poranna + po deploy.
 - ✅ 12.5 follow-up: kolejka naprawcza `identical_to_en` translatable w istniejących plikach (artefakty queue + report).
 - ✅ identical_to_en repair: `_is_game_nontranslatable()` (fikcyjny język gry, animal sounds), `repair_identical_bonus_round()` (200 kluczy co 3 cykle).
-- ✅ Nowy follow-up 12.5: telemetryczny alert stagnacji kolejki repair + KPI trendu spadku backlogu — DONE: integracja w `aggregate_telemetry`/`run_status_doctor`/`run_webhook_alerting` + sekcja `Repair Queue 24h` w `statusd_daily_report.json/md`.
+- ✅ Nowy follow-up 12.5: telemetryczny alert stagnacji kolejki repair + KPI trendu spadku backlogu — DONE: integracja w `aggregate_telemetry`/`run_status_doctor`/`run_webhook_alerting` + sekcja `Repair Queue 24h` w `statusd_daily_report.json/md` + zgranie legacy `repair_stagnation_alert.json` z tym samym źródłem progów.

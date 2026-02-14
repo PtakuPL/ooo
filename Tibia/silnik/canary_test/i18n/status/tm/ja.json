@@ -2718,5 +2718,245 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-14T05:13:15.703139Z"
+  },
+  "npc.a_dead_bureaucrat3.say_2": {
+    "src_hash": "7c9a6b9ee4bce0d9b7654294cdfe405e",
+    "text": "わかりました、|PLAYERNAME|。天職？?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:40:59.664000Z"
+  },
+  "npc.a_dead_bureaucrat4.say_2": {
+    "src_hash": "7c9a6b9ee4bce0d9b7654294cdfe405e",
+    "text": "わかりました、|PLAYERNAME|。天職？?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:40:59.665565Z"
+  },
+  "npc.a_dragon_lord.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "くっそー！抑えてください！ <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:40:59.667347Z"
+  },
+  "npc.a_dragon_lord.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "くっそー！抑えてください！ <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:40:59.668568Z"
+  },
+  "npc.a_dragon_lord.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "くっそー！抑えてください！ <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:40:59.669646Z"
+  },
+  "npc.a_drillworm.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "くっそー！抑えてください！ <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:40:59.670580Z"
+  },
+  "npc.a_drillworm.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "くっそー！抑えてください！ <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:40:59.671286Z"
+  },
+  "npc.a_drillworm.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "くっそー！抑えてください！ <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:40:59.671962Z"
+  },
+  "npc.a_lost_basher.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "くっそー！抑えてください！ <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:40:59.673306Z"
+  },
+  "npc.a_lost_basher.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "くっそー！抑えてください！ <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:40:59.673971Z"
+  },
+  "npc.a_lost_basher.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "くっそー！抑えてください！ <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:40:59.674660Z"
+  },
+  "npc.a_lost_husher.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "くっそー！抑えてください！ <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:40:59.675323Z"
+  },
+  "npc.a_lost_husher.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "くっそー！抑えてください！ <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:40:59.675980Z"
+  },
+  "npc.a_lost_husher.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "くっそー！抑えてください！ <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:40:59.676636Z"
+  },
+  "npc.a_lost_thrower.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "くっそー！抑えてください！ <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:40:59.677289Z"
+  },
+  "npc.a_lost_thrower.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "くっそー！抑えてください！ <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:40:59.677964Z"
+  },
+  "npc.a_lost_thrower.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "くっそー！抑えてください！ <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:40:59.678680Z"
+  },
+  "npc.a_nightmare_scion.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "くっそー！抑えてください！ <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:40:59.679567Z"
+  },
+  "npc.a_nightmare_scion.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "くっそー！抑えてください！ <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:40:59.680432Z"
+  },
+  "npc.a_nightmare_scion.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "くっそー！抑えてください！ <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:40:59.681702Z"
+  },
+  "npc.a_vulcongra.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "くっそー！抑えてください！ <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:40:59.687723Z"
+  },
+  "npc.a_vulcongra.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "くっそー！抑えてください！ <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:40:59.688856Z"
+  },
+  "npc.a_vulcongra.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "くっそー！抑えてください！ <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:40:59.689993Z"
+  },
+  "npc.a_wyrm.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "くっそー！抑えてください！ <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:40:59.693641Z"
+  },
+  "npc.a_wyrm.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "くっそー！抑えてください！ <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:40:59.694805Z"
+  },
+  "npc.a_wyrm.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "くっそー！抑えてください！ <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:40:59.695932Z"
+  },
+  "npc.a_dead_bureaucrat1.say_8": {
+    "src_hash": "68c9f9ee9212c1c305a253d3d1aebeb0",
+    "text": "素晴らしい。はい、どうぞ。 Form 411。話したいときはいつでも戻ってきてください。さよなら。.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:41:23.616157Z"
+  },
+  "npc.a_dead_bureaucrat2.say_1": {
+    "src_hash": "14fd31f81c485fd102c189615f61a284",
+    "text": "もちろん、私からもらえますよ。はい、どうぞ。さよなら",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:41:23.616850Z"
+  },
+  "npc.a_dead_bureaucrat3.say_4": {
+    "src_hash": "4338fd8c8c7f05bf1780ecc3a5c6f70f",
+    "text": "よくやった！フォーム411を持っています!!これが Form 145 です。楽しんでください。.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:41:23.617956Z"
+  },
+  "npc.a_dragon_mother.greet_msg_1": {
+    "src_hash": "1dce3066f0e7cf3054a32cbec80df4a6",
+    "text": "人類の皆さん、こんにちは！幸運だと思ってください。{help} が必要なのです。.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:41:23.619287Z"
   }
 }

@@ -2630,5 +2630,645 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-14T04:46:39.908926Z"
+  },
+  "npc.karith.say_22": {
+    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
+    "text": "Set the sails!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:11:47.085122Z"
+  },
+  "npc.karith.say_24": {
+    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
+    "text": "Set the sails!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:11:47.086503Z"
+  },
+  "npc.karith.say_26": {
+    "src_hash": "69ce05199222d304e8f82cb747eed8ab",
+    "text": "Don't waste my time.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:11:47.087457Z"
+  },
+  "npc.kevin.say_46": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:11:47.095439Z"
+  },
+  "npc.lardoc_bashsmite.say_10": {
+    "src_hash": "f5940523060652e3a7d9c269ce48de50",
+    "text": "Done.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:11:47.107187Z"
+  },
+  "npc.lardoc_bashsmite.say_12": {
+    "src_hash": "f5940523060652e3a7d9c269ce48de50",
+    "text": "Done.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:11:47.108000Z"
+  },
+  "npc.lardoc_bashsmite.say_14": {
+    "src_hash": "f5940523060652e3a7d9c269ce48de50",
+    "text": "Done.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:11:47.108719Z"
+  },
+  "npc.lardoc_bashsmite.say_9": {
+    "src_hash": "69ce05199222d304e8f82cb747eed8ab",
+    "text": "Don't waste my time.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:11:47.110034Z"
+  },
+  "npc.lokur.say_5": {
+    "src_hash": "12d673409d71f1fc127ebad108378378",
+    "text": "No then.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:11:47.124913Z"
+  },
+  "npc.lorbas.say_4": {
+    "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
+    "text": "I see.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:11:47.125487Z"
+  },
+  "npc.lugri.say_13": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:11:47.135751Z"
+  },
+  "npc.lugri.say_15": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:11:47.136296Z"
+  },
+  "npc.lugri.say_17": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:11:47.136889Z"
+  },
+  "npc.lugri.say_19": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:11:47.137471Z"
+  },
+  "npc.lukosch.say_5": {
+    "src_hash": "12d673409d71f1fc127ebad108378378",
+    "text": "No then.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:11:47.138137Z"
+  },
+  "npc.maelyrra.say_18": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:11:47.144229Z"
+  },
+  "npc.melfar.say_3": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Here you go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:11:47.150011Z"
+  },
+  "npc.nah_bob.say_6": {
+    "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
+    "text": "I see.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:11:47.165448Z"
+  },
+  "npc.norma.say_9": {
+    "src_hash": "ebaeda37e982b71a905f5f1995285a85",
+    "text": "Maybe another time.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:11:47.177318Z"
+  },
+  "npc.ocelus.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Good bye.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:11:47.186501Z"
+  },
+  "npc.ocelus.walkaway_msg_1": {
+    "src_hash": "cbca1e780ae7e44aa43debe068beb490",
+    "text": "Oh well.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:11:47.186994Z"
+  },
+  "npc.palomino.say_5": {
+    "src_hash": "cc67edbe5929572b201f9b2aa0f478f9",
+    "text": "Have a nice trip!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:11:47.206719Z"
+  },
+  "npc.palomino.say_9": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:11:47.207136Z"
+  },
+  "npc.pukosch.say_5": {
+    "src_hash": "12d673409d71f1fc127ebad108378378",
+    "text": "No then.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:11:47.221994Z"
+  },
+  "npc.robson.say_4": {
+    "src_hash": "b5010567e209726a125c9ed59162eca5",
+    "text": "Fine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:11:47.252774Z"
+  },
+  "npc.robson.say_6": {
+    "src_hash": "b5010567e209726a125c9ed59162eca5",
+    "text": "Fine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:11:47.253194Z"
+  },
+  "npc.rose.say_4": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:11:47.257961Z"
+  },
+  "npc.sam.say_10": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "You don't have it...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:11:47.260580Z"
+  },
+  "npc.sebastian.say_2": {
+    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
+    "text": "Set the sails!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:11:47.265087Z"
+  },
+  "npc.shirtalis_of_the_summer_court.say_3": {
+    "src_hash": "8ebe07d7adacdd880130a981ebf53704",
+    "text": "As you wish.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:11:47.283118Z"
+  },
+  "npc.siflind.say_31": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Here you go.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:11:47.285068Z"
+  },
+  "npc.stutch.say_3": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Take this!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:11:47.293420Z"
+  },
+  "npc.suzy.farewell_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Have a nice day.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:11:47.294453Z"
+  },
+  "npc.suzy.walkaway_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Have a nice day.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:11:47.295073Z"
+  },
+  "npc.taegen.say_1": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Then not.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:11:47.297135Z"
+  },
+  "npc.tamerin.say_4": {
+    "src_hash": "706b1a009354e93f05beff4ba2e0a628",
+    "text": "SO BE IT!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:11:47.298461Z"
+  },
+  "npc.tamerin.say_5": {
+    "src_hash": "706b1a009354e93f05beff4ba2e0a628",
+    "text": "SO BE IT!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:11:47.298786Z"
+  },
+  "npc.tarun.say_3": {
+    "src_hash": "8ebe07d7adacdd880130a981ebf53704",
+    "text": "As you wish.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:11:47.300859Z"
+  },
+  "npc.the_blind_prophet.say_14": {
+    "src_hash": "80daa793e7bea0f5da969ee940135c1a",
+    "text": "Take care!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:11:47.306857Z"
+  },
+  "npc.the_orc_king.say_8": {
+    "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
+    "text": "I see.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:11:47.312228Z"
+  },
+  "npc.tom.stdmod_31": {
+    "src_hash": "aafa4696d9102bda2dc5250066f65b13",
+    "text": "He's an apple polisher.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:11:47.322935Z"
+  },
+  "npc.uncle.say_11": {
+    "src_hash": "8ebe07d7adacdd880130a981ebf53704",
+    "text": "As you wish.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:11:47.335285Z"
+  },
+  "npc.warbert.say_1": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Take this!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:11:47.360653Z"
+  },
+  "npc.wyda.say_8": {
+    "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
+    "text": "I see.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:11:47.367072Z"
+  },
+  "npc.yaman.say_14": {
+    "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
+    "text": "I see.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T06:11:47.369461Z"
+  },
+  "npc.a_bearded_woman.stdmod_4": {
+    "src_hash": "2d38ace4459f0ec00320789d297c3501",
+    "text": "Det hele var kaptajn Kids idé. Ser du, han hadede sit navn og planlagde at blive kendt under navnet kaptajn Kidnap. ... \\z\n\tDet eneste, han havde brug for, var en berømt person til at kidnappe. ... \\z\n\tI betragtning af hans mænds dystre mangel på talent og intelligens ville det have været noget af en bedrift. ... \\z\n\tVi kendte hinanden fra et par svindelnumre, vi tidligere lavede sammen, så han kontaktede mig. ... \\z\n\tJeg skulle efterligne den berømte prinsesse Lumelia. Du ved, den alle ledte efter. ... \\z\n\tDet ville vise hans mænd og de andre pirater, hvilken stor kidnapper han var. ... \\z\n\tHan lovede mig, at jeg ville blive hans næstkommanderende og føre et vidunderligt liv med plyndring, røveri og plyndring. ... \\z\n\tSå jeg gik med til at efterligne prinsessen i et stykke tid, og det fungerede fint i starten. ... \\z\n\tHan vendte tilbage med mig klædt ud som prinsessen fra et razzia på egen hånd og var øjeblikkeligt dagens helt for sine mænd. ... \\z\n\tDet gik dårligt, da de besluttede at holde en sejrsfest. ... \\z\n\tSå vidt jeg kunne se ud fra piraternes mumlen, mistede Kid nøglen til min celle, mens han lettede i den underjordiske flod. ... \\z\n\tNarren besluttede sig for at dykke efter det .. for aldrig at blive set igen. ... \\z\n\tDa jeg fandt ud af Kids død, forsøgte jeg at overbevise piraterne om, at det var en fup, men de vil bare ikke tro mig!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:12:21.467968Z"
+  },
+  "npc.a_bearded_woman.stdmod_5": {
+    "src_hash": "d02c0ffb00f9c85e39e5609e3ffcfc53",
+    "text": "Ah kidnapning er så sjovt. Det vil sige, hvis du ikke er i den modtagende ende. ... \\z\n\tDet er nemme penge, og du har en chance for at skræmme og torturere nogen, der ikke kan kæmpe tilbage!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:12:21.469189Z"
+  },
+  "npc.a_bearded_woman.stdmod_7": {
+    "src_hash": "a07eb0740959112055b5524599e7a7e2",
+    "text": "Nøglen blev tabt i den underjordiske flod og er sandsynligvis skyllet ind i de syv have nu! ... \\z\n\tHvis den dumme knægt ikke havde været så besat af kidnapning, havde han ikke solgt sit skib for at købe de dyreste og mest komplicerede låse til hans celler!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:12:21.470666Z"
+  },
+  "npc.a_bearded_woman.stdmod_8": {
+    "src_hash": "611cca91ceb08fc3c7143e9b26284ef9",
+    "text": "Så længe vi holder os til uforsvarede kystbyer, kan vi tjene en let formue. Har Har! ... \\z\n\tSå snart jeg kommer ud herfra, bliver jeg endelig piratkaptajn alene. Jeg har ikke brug for Captain Kid!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:12:21.471946Z"
+  },
+  "npc.a_bearded_woman.voice_3": {
+    "src_hash": "c28763b34d8b1e303d10487a3c6bdda4",
+    "text": "Få mig ud! Det var alt sammen en del af planen, dine idioter!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:12:21.472586Z"
+  },
+  "npc.a_bearded_woman.voice_4": {
+    "src_hash": "f6e4d063bc0eade947ac0001b744445e",
+    "text": "Hvis jeg nogensinde kommer ud herfra, dræber jeg jer alle sammen! Alle jer!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:12:21.473280Z"
+  },
+  "npc.a_bearded_woman.voice_5": {
+    "src_hash": "610ef2c5395758ac8169140d09ad737a",
+    "text": "Jeg er IKKE prinsesse Lumelia, dine idioter!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:12:21.473855Z"
+  },
+  "npc.a_bearded_woman.voice_6": {
+    "src_hash": "53c4ab6007ae6d3e10ea4ddf7dce9bf1",
+    "text": "Få en låsesmed og befri mig, ellers vil du fortryde det, dine tåbelige pirater!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:12:21.474590Z"
+  },
+  "npc.a_bearded_woman.voice_7": {
+    "src_hash": "6ad2054bb73e4f51e22543c42ffc5d5b",
+    "text": "Jeg er ikke en prinsesse, jeg er en skuespiller!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:12:21.475310Z"
+  },
+  "npc.a_beautiful_girl.greet_msg_1": {
+    "src_hash": "12c56c6555b96d78e471b6866d61e5dc",
+    "text": "Så du er kommet, |PLAYERNAME|. Jeg håbede du ikke ville...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:12:21.476473Z"
+  },
+  "npc.a_beggar.greet_msg_1": {
+    "src_hash": "fb67985b03b0041bfb5a827c66ff748c",
+    "text": "Hej! Hvad er det, hvad skal du {want}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:12:21.477262Z"
+  },
+  "npc.a_beggar.say_1": {
+    "src_hash": "dfa16f2971d25fe56e1c023824c93b08",
+    "text": "Troede det. Du bliver dog nødt til at tale med kongen. Tiggerkongen altså. Kongen giver ikke kun audiens til alle. Du ved, hvordan de konger er, ikke? ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:12:21.478525Z"
+  },
+  "npc.a_beggar.say_2": {
+    "src_hash": "7f8292b9eb7566b64edd089a2459de83",
+    "text": "Men for at få audiens hos kongen, bliver du nødt til at hjælpe hans undersåtter lidt. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:12:21.479426Z"
+  },
+  "npc.a_beggar.say_3": {
+    "src_hash": "c00ef85e3c706aa4e1feb0023c862a5e",
+    "text": "Hans undersåtter, som ville være os, de fattige, ved du? ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:12:21.480059Z"
+  },
+  "npc.a_beggar.say_4": {
+    "src_hash": "4083b6eb97ef1d492dafe67ced5e1d1b",
+    "text": "Så hvorfor viser du ikke din dedikation til de fattige? Gå hen og hjælp Chavis i det fattige hus. Han samler mad ind til folk som os. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:12:21.481102Z"
+  },
+  "npc.a_beggar.say_5": {
+    "src_hash": "8bb1bd6a0ab3fe83a4488aa718b941f9",
+    "text": "Hvis du medbringer nok af tingene, vil du se, at kongen vil give dig adgang i sin {palace}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:12:21.481855Z"
+  },
+  "npc.a_behemoth.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Hold det nede! <gives you an elaborate report on monster activity>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:12:21.482547Z"
+  },
+  "npc.a_behemoth.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Hold det nede! <gives you an elaborate report on monster activity>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:12:21.483330Z"
+  },
+  "npc.a_behemoth.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Hold det nede! <gives you an elaborate report on monster activity>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:12:21.484014Z"
+  },
+  "npc.a_dead_bureaucrat.greet_msg_1": {
+    "src_hash": "1fb51950fc35d0b9f7979cbb0fff81b2",
+    "text": "Hej {}, velkommen til atriumet på Pumin's Domain. Vi kræver nogle oplysninger fra dig, før vi kan lade dig passere. Hvor vil du hen?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:12:21.485098Z"
+  },
+  "npc.a_dead_bureaucrat1.farewell_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Farvel og glem mig ikke!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:12:21.485599Z"
+  },
+  "npc.a_dead_bureaucrat1.say_1": {
+    "src_hash": "f4195eed0570aee7a7882eadb5b85979",
+    "text": "Huhu, lad være med at såre mig med din {}! Årsagen til dit besøg?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:12:21.486251Z"
+  },
+  "npc.a_dead_bureaucrat1.say_2": {
+    "src_hash": "6c80ac504f39e09fc288756acfd7a105",
+    "text": "Hvor meget interessant. Det skal jeg fortælle min herre med det samme. Gå til mine kolleger og bede om formular 356. Du skal bruge den for at fortsætte.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:12:21.487267Z"
+  },
+  "npc.a_dead_bureaucrat1.say_3": {
+    "src_hash": "7c9a6b9ee4bce0d9b7654294cdfe405e",
+    "text": "Okay |PLAYERNAME|. Kald?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:12:21.487755Z"
+  },
+  "npc.a_dead_bureaucrat1.say_5": {
+    "src_hash": "7025be9c3a92e5d4e7965480ef624e3a",
+    "text": "Formular 411? Du skal bruge formular 287 for at få det! Har du det?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:12:21.488463Z"
+  },
+  "npc.a_dead_bureaucrat1.say_6": {
+    "src_hash": "7025be9c3a92e5d4e7965480ef624e3a",
+    "text": "Formular 411? Du skal bruge formular 287 for at få det! Har du det?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:12:21.489100Z"
+  },
+  "npc.a_dead_bureaucrat1.say_7": {
+    "src_hash": "22849ba6a7644915a8cb4de5b2a8e521",
+    "text": "Åh, hvor er det synd. Gå til en af ​​mine kollegaer. Jeg giver dig tilladelse til at få formular 287. Farvel!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:12:21.489896Z"
+  },
+  "npc.a_dead_bureaucrat1.say_8": {
+    "src_hash": "68c9f9ee9212c1c305a253d3d1aebeb0",
+    "text": "Stor. Her er du. Form 411. Kom tilbage når som helst du vil tale. Farvel.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:12:21.490635Z"
+  },
+  "npc.a_dead_bureaucrat1.say_9": {
+    "src_hash": "6c558828065bb071d2bead0fc23aef37",
+    "text": "UTROLIGT, du gjorde det!! God fornøjelse på Pumin's Domain!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:12:21.491236Z"
+  },
+  "npc.a_dead_bureaucrat1.voice_1": {
+    "src_hash": "cdcea1350c387fbbeec64fa8f0b8ddea",
+    "text": "Hvor har jeg lagt den formular?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:12:21.491715Z"
+  },
+  "npc.a_dead_bureaucrat1.walkaway_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Farvel og glem mig ikke!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:12:21.492179Z"
+  },
+  "npc.a_dead_bureaucrat2.farewell_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Farvel og glem mig ikke!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:12:21.492637Z"
+  },
+  "npc.a_dead_bureaucrat2.say_1": {
+    "src_hash": "14fd31f81c485fd102c189615f61a284",
+    "text": "Selvfølgelig kan du få det fra mig. Her er du. Farvel",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:12:21.493207Z"
+  },
+  "npc.a_dead_bureaucrat2.voice_1": {
+    "src_hash": "cdcea1350c387fbbeec64fa8f0b8ddea",
+    "text": "Hvor har jeg lagt den formular?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:12:21.493675Z"
+  },
+  "npc.a_dead_bureaucrat2.walkaway_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "Farvel og glem mig ikke!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:12:21.494134Z"
   }
 }

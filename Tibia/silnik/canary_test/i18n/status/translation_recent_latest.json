@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-14T06:09:16.678296Z",
-  "language": "tr",
-  "json_file": "server.json",
+  "timestamp": "2026-02-14T07:06:09.181382Z",
+  "language": "th",
+  "json_file": "npc.json",
   "translated": 80,
   "entries": [
     {
-      "key": "data.otservbr.global.npc.captain.seagull.L107.1471",
-      "en": "Good bye.",
-      "translated": "Hoşça kal.",
-      "source": "simple"
+      "key": "npc.a_frog.stdmod_1",
+      "en": "If another prince comes to kiss me, I'll kick his ass so bad that he'll need a sedan chair to get away.",
+      "translated": "ถ้าเจ้าชายอีกคนมาจูบฉัน ฉันจะเตะตูดเขาจนต้องนั่งเกวียนหนีไป.",
+      "source": "google_translate"
     },
     {
-      "key": "data.otservbr.global.npc.captain.seahorse.L87.1620",
-      "en": "Good bye. Recommend us if you were satisfied with our service.",
-      "translated": "Hoşça kal. Hizmetimizden memnun kaldıysan bizi tavsiye et.",
-      "source": "simple"
+      "key": "npc.a_frog.stdmod_2",
+      "en": "If another prince comes to kiss me, I'll kick his ass so bad that he'll need a sedan chair to get away.",
+      "translated": "ถ้าเจ้าชายอีกคนมาจูบฉัน ฉันจะเตะตูดเขาจนต้องนั่งเกวียนหนีไป.",
+      "source": "google_translate"
     },
     {
-      "key": "data.otservbr.global.npc.captain.seahorse.L88.1621",
-      "en": "Good bye then.",
-      "translated": "O zaman hoşça kal.",
-      "source": "simple"
+      "key": "npc.a_frog.stdmod_3",
+      "en": "Don't even try to kiss me or I'll rondhouse kick you!",
+      "translated": "อย่าแม้แต่จะจูบฉัน ไม่งั้นฉันจะเตะคุณ!",
+      "source": "google_translate"
     },
     {
-      "key": "data.otservbr.global.npc.captain.sinbeard.L100.751",
-      "en": "Good bye then.",
-      "translated": "O zaman hoşça kal.",
-      "source": "simple"
+      "key": "npc.a_frog.stdmod_4",
+      "en": "Talking frogs don't exist, idiot. It's your fucking imagination tricking you. And now your imagination commands you to walk away.",
+      "translated": "กบพูดได้ไม่มีอยู่จริง ไอ้โง่ มันเป็นจินตนาการร่วมเพศของคุณที่หลอกคุณ และตอนนี้จินตนาการของคุณสั่งให้คุณเดินจากไป.",
+      "source": "google_translate"
     },
     {
-      "key": "data.otservbr.global.npc.captain.sinbeard.L99.750",
-      "en": "Good bye. Recommend us if you were satisfied with our service.",
-      "translated": "Hoşça kal. Hizmetimizden memnun kaldıysan bizi tavsiye et.",
-      "source": "simple"
+      "key": "npc.a_frog.stdmod_5",
+      "en": "Finally someone notices I'm a FROG. Congratulations, you're VERY observant... *sigh*",
+      "translated": "ในที่สุดก็มีคนสังเกตเห็นว่าฉันเป็นกบ ยินดีด้วย คุณช่างสังเกตมาก... *ถอนหายใจ*",
+      "source": "google_translate"
     },
     {
-      "key": "data.otservbr.global.npc.captain.waverider.L98.708",
-      "en": "Good bye.",
-      "translated": "Hoşça kal.",
-      "source": "simple"
+      "key": "npc.a_frog.stdmod_6",
+      "en": "A quest? Yeah I got a quest! Go and tell King Tibianus his son tried to kiss me again!",
+      "translated": "ภารกิจ? ใช่แล้ว ฉันมีภารกิจ! ไปบอกกษัตริย์ Tibianus ลูกชายของเขาว่าพยายามจะจูบฉันอีกครั้ง!",
+      "source": "google_translate"
     },
     {
-      "key": "data.otservbr.global.npc.captain.waverider.L99.709",
-      "en": "Oh well.",
-      "translated": "Neyse.",
-      "source": "simple"
+      "key": "npc.a_frog.stdmod_7",
+      "en": "Pyrale? That idiot transformed me into an human once. But my wife came and kissed me, so I'm a frog again.",
+      "translated": "ไพเรล? ไอ้โง่นั่นทำให้ฉันกลายเป็นมนุษย์ครั้งหนึ่ง แต่เมียมาจูบฉัน ฉันก็กลายเป็นกบอีกแล้ว.",
+      "source": "google_translate"
     },
     {
-      "key": "data.otservbr.global.npc.captain.waverider.island.L62.1026",
-      "en": "Good bye.",
-      "translated": "Hoşça kal.",
-      "source": "simple"
+      "key": "npc.a_frog.stdmod_8",
+      "en": "Pyrale? That idiot transformed me into an human once. But my wife came and kissed me, so I'm a frog again.",
+      "translated": "ไพเรล? ไอ้โง่นั่นทำให้ฉันกลายเป็นมนุษย์ครั้งหนึ่ง แต่เมียมาจูบฉัน ฉันก็กลายเป็นกบอีกแล้ว.",
+      "source": "google_translate"
     },
     {
-      "key": "data.otservbr.global.npc.captain.waverider.island.L63.1027",
-      "en": "Oh well.",
-      "translated": "Neyse.",
-      "source": "simple"
+      "key": "npc.a_frog.walkaway_msg_1",
+      "en": "Hah! That idiot finally left.",
+      "translated": "ฮ่า! ในที่สุดคนโง่คนนั้นก็จากไป.",
+      "source": "google_translate"
     },
     {
-      "key": "data.otservbr.global.npc.carlos.L242.1100",
-      "en": "Good bye |PLAYERNAME|!.",
-      "translated": "Good bye |PLAYERNAME|!.",
-      "source": "simple"
+      "key": "npc.a_ghostly_sage.greet_msg_1",
+      "en": "Ah, I feel a mortal walks these ancient halls again. Pardon me, I barely notice you. I am so lost in my thoughts.",
+      "translated": "อา ฉันรู้สึกว่ามนุษย์กำลังเดินอยู่ในห้องโถงโบราณเหล่านี้อีกครั้ง ขอโทษที ฉันแทบจะไม่สังเกตเห็นคุณเลย ฉันหลงทางในความคิดของฉัน.",
+      "source": "google_translate"
     },
     {
-      "key": "data.otservbr.global.npc.cassino.L251.350",
-      "en": "Good bye.",
-      "translated": "Hoşça kal.",
-      "source": "simple"
+      "key": "npc.a_ghostly_sage.stdmod_1",
+      "en": "You will now be travelled out of here. Are you sure that you want to face that teleport?",
+      "translated": "ตอนนี้คุณจะถูกเดินทางออกจากที่นี่ คุณแน่ใจหรือว่าต้องการเผชิญกับเทเลพอร์ตนั้น?",
+      "source": "google_translate"
     },
     {
-      "key": "data.otservbr.global.npc.cassino.L252.351",
-      "en": "Good bye.",
-      "translated": "Hoşça kal.",
-      "source": "simple"
+      "key": "npc.a_ghostly_sage.stdmod_2",
+      "en": "Then stay here in these ghostly halls.",
+      "translated": "ถ้าอย่างนั้นก็อยู่ที่นี่ในห้องโถงผีสิงเหล่านี้.",
+      "source": "google_translate"
     },
     {
-      "key": "data.otservbr.global.npc.cedrik.L148.1392",
-      "en": "Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal} you for free.",
-      "translated": "Hoş geldin, genç |PLAYERNAME|! Ağır yaralı veya zehirlenmişsen seni ücretsiz {heal} edebilirim.",
-      "source": "simple"
+      "key": "npc.a_ghostly_sage.stdmod_3",
+      "en": "I can offer you a {teleport}.",
+      "translated": "ฉันสามารถเสนอ {teleport} ให้คุณได้.",
+      "source": "google_translate"
     },
     {
-      "key": "data.otservbr.global.npc.cedrik.L149.1393",
-      "en": "Remember: If you are heavily wounded or poisoned, I can heal you for free.",
-      "translated": "Unutma: Ağır yaralı veya zehirlenmişsen seni ücretsiz iyileştirebilirim.",
-      "source": "simple"
+      "key": "npc.a_ghostly_sage.stdmod_4",
+      "en": "Dont mind me.",
+      "translated": "อย่ารังเกียจฉันเลย.",
+      "source": "google_translate"
     },
     {
-      "key": "data.otservbr.global.npc.cedrik.L150.1394",
-      "en": "May the gods bless you, |PLAYERNAME|!",
-      "translated": "Tanrılar seni korusun, |PLAYERNAME|!",
-      "source": "simple"
+      "key": "npc.a_ghostly_woman.farewell_msg_1",
+      "en": "Alone ... so alone. So cold.",
+      "translated": "คนเดียว...เดียวดาย.. หนาวจังเลย.",
+      "source": "google_translate"
     },
     {
-      "key": "data.otservbr.global.npc.cerdras.L85.657",
-      "en": "Greetings my friend!",
-      "translated": "Greetings my friend!",
-      "source": "simple"
+      "key": "npc.a_ghostly_woman.greet_msg_1",
+      "en": "I feel you. I hear your thoughts. You are ... alive.",
+      "translated": "ฉันรู้สึกถึงคุณ ฉันได้ยินความคิดของคุณ คุณ...มีชีวิตอยู่.",
+      "source": "google_translate"
     },
     {
-      "key": "data.otservbr.global.npc.charles.L143.1491",
-      "en": "Bye.",
-      "translated": "Güle güle.",
-      "source": "simple"
+      "key": "npc.a_ghostly_woman.stdmod_1",
+      "en": "Once I was a member of the order of the nightmare knights. Now I am but a shadow who walks these cold halls.",
+      "translated": "ครั้งหนึ่งฉันเคยเป็นสมาชิกลำดับอัศวินฝันร้าย ตอนนี้ฉันเป็นเพียงเงาที่เดินอยู่ในห้องโถงอันหนาวเย็นเหล่านี้.",
+      "source": "google_translate"
     },
     {
-      "key": "data.otservbr.global.npc.charles.L144.1492",
-      "en": "Bye.",
-      "translated": "Güle güle.",
-      "source": "simple"
+      "key": "npc.a_ghostly_woman.stdmod_2",
+      "en": "The north has a puzzle to complete.",
+      "translated": "ภาคเหนือมีปริศนาให้แก้.",
+      "source": "google_translate"
     },
     {
-      "key": "data.otservbr.global.npc.charlotta.L86.902",
-      "en": "Good bye.",
-      "translated": "Hoşça kal.",
-      "source": "simple"
+      "key": "npc.a_ghostly_woman.voice_1",
+      "en": "Alone ... so alone. So cold.",
+      "translated": "คนเดียว...เดียวดาย.. หนาวจังเลย.",
+      "source": "google_translate"
     },
     {
-      "key": "data.otservbr.global.npc.charlotta.L87.903",
-      "en": "Oh well.",
-      "translated": "Neyse.",
-      "source": "simple"
+      "key": "npc.a_ghostly_woman.walkaway_msg_1",
+      "en": "Alone ... so alone. So cold.",
+      "translated": "คนเดียว...เดียวดาย.. หนาวจังเลย.",
+      "source": "google_translate"
     }
   ]
 }

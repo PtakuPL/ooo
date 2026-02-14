@@ -3622,5 +3622,645 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-14T04:55:47.438006Z"
+  },
+  "npc.a_dragon_mother.greet_msg_3": {
+    "src_hash": "07b8c041b3b06732ebb031be4229bb98",
+    "text": "You have done me a favour and the knowledge you are seeking shall be yours. I melted the ice for you, you can pass now.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:21:59.523777Z"
+  },
+  "npc.a_dragon_mother.multi_1": {
+    "src_hash": "1ca96232d26ea181d5ac0bab5436446b",
+    "text": "As I told you, fiendish ice creatures dragged my egg into the lower caves. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:21:59.524811Z"
+  },
+  "npc.a_dragon_mother.multi_2": {
+    "src_hash": "4c97970717def7c721c5c834b12248aa",
+    "text": " Without enough heat the egg will die soon. Venture there and save my hatchling and the knowledge you seeek shall be yours!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:21:59.525644Z"
+  },
+  "npc.a_dragon_mother.multi_4": {
+    "src_hash": "7d9fd43a4df4010c414a7c4fb168728d",
+    "text": "So return to the upper tunnels where cultists and ice golems dwell. Somewhere in these tunnels you will find a small prison haunted by a ghost. South of this prison cell there is a tunnel that will lead you eastwards. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:21:59.526751Z"
+  },
+  "npc.a_dragon_mother.multi_5": {
+    "src_hash": "25a8d05bc20acf4eafd92b04b2a6be02",
+    "text": "Follow the tunnel until you reach a small cave. Step down and down until you see a blue energy field. It will lead you to my egg. It is sealed so that not everyone may enter the room. But you have the permission now.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:21:59.527781Z"
+  },
+  "npc.a_dragon_mother.multi_6": {
+    "src_hash": "0bacb649bf75531ac333b0f8389626f8",
+    "text": "Wretched creatures of ice have stolen my egg that was close to hatching. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:21:59.528525Z"
+  },
+  "npc.a_dragon_mother.multi_7": {
+    "src_hash": "c195e0b190022cbb45a80e24310b442e",
+    "text": " Since I'm to huge to enter those lower Tunnels I have to ask you to take care of my {egg}. Will you do this?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:21:59.529376Z"
+  },
+  "npc.a_dragon_mother.say_1": {
+    "src_hash": "013b42b6166cd483b196ac9ea64cacd5",
+    "text": "I'm aware what you are looking for. Usually I would rather devour you, but due to unfortunate circumstances, I need your {assistance}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:21:59.530344Z"
+  },
+  "npc.a_fluffy_squirrel.sendtrade_msg_1": {
+    "src_hash": "03c8f51bfe7975b94ce3c76ec9647116",
+    "text": "Chchch. Chh! <you're not sure, but it seems that squirrel wants to trade your valuable acorns for useless stones that it found and considered uneatable>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:21:59.531302Z"
+  },
+  "npc.a_fluffy_squirrel.stdmod_1": {
+    "src_hash": "ac2f68634467394485198b5db1d3f7a3",
+    "text": "Chh? Chhh?? <though you don't understand squirrelish, that one seems really excited>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:21:59.532058Z"
+  },
+  "npc.a_frog.farewell_msg_1": {
+    "src_hash": "588e73837fba9553ffca81df889548ec",
+    "text": "Yeah, good bye and don't come again!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:21:59.532686Z"
+  },
+  "npc.a_frog.greet_msg_1": {
+    "src_hash": "19d469ee4ec05732827bda56d63f820e",
+    "text": "*sigh* Yet another dumb adventurer.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:21:59.533260Z"
+  },
+  "npc.a_frog.stdmod_1": {
+    "src_hash": "2fe4c5f00ebc051b41cbe0861487a7fd",
+    "text": "If another prince comes to kiss me, I'll kick his ass so bad that he'll need a sedan chair to get away.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:21:59.534018Z"
+  },
+  "npc.a_frog.stdmod_2": {
+    "src_hash": "2fe4c5f00ebc051b41cbe0861487a7fd",
+    "text": "If another prince comes to kiss me, I'll kick his ass so bad that he'll need a sedan chair to get away.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:21:59.534797Z"
+  },
+  "npc.a_frog.stdmod_3": {
+    "src_hash": "dc201119d7983ae5369b8ae0430bd6c0",
+    "text": "Don't even try to kiss me or I'll rondhouse kick you!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:21:59.535410Z"
+  },
+  "npc.a_frog.stdmod_4": {
+    "src_hash": "9591358ce6836f77a35e4131f2c80af4",
+    "text": "Talking frogs don't exist, idiot. It's your fucking imagination tricking you. And now your imagination commands you to walk away.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:21:59.536239Z"
+  },
+  "npc.a_frog.stdmod_5": {
+    "src_hash": "e3de281a1b7dfde28d2b68c9a47961cf",
+    "text": "Finally someone notices I'm a FROG. Congratulations, you're VERY observant... *sigh*",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:21:59.536920Z"
+  },
+  "npc.a_frog.stdmod_6": {
+    "src_hash": "e867f2c18c9b934d43561a2624855b32",
+    "text": "A quest? Yeah I got a quest! Go and tell King Tibianus his son tried to kiss me again!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:21:59.537430Z"
+  },
+  "npc.a_frog.stdmod_7": {
+    "src_hash": "9c790a4ba6e7e6271ce4454c084a6cda",
+    "text": "Pyrale? That idiot transformed me into an human once. But my wife came and kissed me, so I'm a frog again.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:21:59.538184Z"
+  },
+  "npc.a_frog.stdmod_8": {
+    "src_hash": "9c790a4ba6e7e6271ce4454c084a6cda",
+    "text": "Pyrale? That idiot transformed me into an human once. But my wife came and kissed me, so I'm a frog again.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:21:59.539030Z"
+  },
+  "npc.a_frog.walkaway_msg_1": {
+    "src_hash": "c1db0d50cc6abf047516570bd8944bb7",
+    "text": "Hah! That idiot finally left.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:21:59.539567Z"
+  },
+  "npc.a_ghostly_sage.greet_msg_1": {
+    "src_hash": "487a95714b8152233a000a8ee2c338f3",
+    "text": "Ah, I feel a mortal walks these ancient halls again. Pardon me, I barely notice you. I am so lost in my thoughts.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:21:59.540336Z"
+  },
+  "npc.a_ghostly_sage.stdmod_1": {
+    "src_hash": "341df3ac9ed72719a92e5ae18e2970e3",
+    "text": "You will now be travelled out of here. Are you sure that you want to face that teleport?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:21:59.541041Z"
+  },
+  "npc.a_ghostly_sage.stdmod_2": {
+    "src_hash": "43c699821452d6bba26f7dcb5d25af20",
+    "text": "Then stay here in these ghostly halls.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:21:59.541604Z"
+  },
+  "npc.a_ghostly_sage.stdmod_3": {
+    "src_hash": "42dca8416a8f3f78f6c3bd6fa28ae624",
+    "text": "I can offer you a {teleport}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:21:59.542154Z"
+  },
+  "npc.a_ghostly_sage.stdmod_4": {
+    "src_hash": "9abbfa8fc9b94c4b2488d9216c452f9b",
+    "text": "Dont mind me.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:21:59.542520Z"
+  },
+  "npc.a_ghostly_woman.farewell_msg_1": {
+    "src_hash": "f3d7e0a95a7c7f12c2b3bca6c13f4011",
+    "text": "Alone ... so alone. So cold.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:21:59.543044Z"
+  },
+  "npc.a_ghostly_woman.greet_msg_1": {
+    "src_hash": "7ad732c0d7d64881c08e036c6ef0f80f",
+    "text": "I feel you. I hear your thoughts. You are ... alive.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:21:59.543684Z"
+  },
+  "npc.a_ghostly_woman.stdmod_1": {
+    "src_hash": "36d1da8b2a5f237bf2156b3f2aaa9853",
+    "text": "Once I was a member of the order of the nightmare knights. Now I am but a shadow who walks these cold halls.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:21:59.544556Z"
+  },
+  "npc.a_ghostly_woman.stdmod_2": {
+    "src_hash": "282f2d4fa7ecca103ffa973758ca3af0",
+    "text": "The north has a puzzle to complete.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:21:59.545199Z"
+  },
+  "npc.a_ghostly_woman.voice_1": {
+    "src_hash": "f3d7e0a95a7c7f12c2b3bca6c13f4011",
+    "text": "Alone ... so alone. So cold.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:21:59.545726Z"
+  },
+  "npc.a_ghostly_woman.walkaway_msg_1": {
+    "src_hash": "f3d7e0a95a7c7f12c2b3bca6c13f4011",
+    "text": "Alone ... so alone. So cold.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:21:59.546327Z"
+  },
+  "npc.a_majestic_warwolf.greet_msg_1": {
+    "src_hash": "160a760ec699bf89e2f96e9d88ffd79d",
+    "text": "Interesting. A human who can speak the language of wolves.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:21:59.546950Z"
+  },
+  "npc.a_majestic_warwolf.say_1": {
+    "src_hash": "03505a67a6a5e2c2c6f1f27b32d98a5f",
+    "text": "GRRRRRRRRRRRRR",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:21:59.547230Z"
+  },
+  "npc.a_majestic_warwolf.say_2": {
+    "src_hash": "54c2abbaf72a16f3d61ec9bd34db18a9",
+    "text": "I can see in your eyes that you are a honest and friendly person, |PLAYERNAME|. You were patient enough to learn our language and I will grant you a special gift. Will you accept it?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:21:59.548170Z"
+  },
+  "npc.a_majestic_warwolf.say_female": {
+    "src_hash": "7928f8ebb02a6a5db452e977f072e83e",
+    "text": "From now on, you shall be known as |PLAYERNAME|, the wolf girl. You shall be fast and smart as Morgrar, the great white wolf. He shall guide your path.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:21:59.549052Z"
+  },
+  "npc.a_majestic_warwolf.say_male": {
+    "src_hash": "5470632dca3f8c21e5d8e4a36fcb615f",
+    "text": "From now on, you shall be known as |PLAYERNAME|, the bear warrior. You shall be strong and proud as Angros, the great dark bear. He shall guide your path.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:21:59.549942Z"
+  },
+  "npc.a_prisoner.farewell_msg_1": {
+    "src_hash": "8557dbd5d85d1392ab6058414b7f54db",
+    "text": "Good bye! Don't forget about the secrets of mathemagics.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:21:59.550611Z"
+  },
+  "npc.a_prisoner.greet_msg_1": {
+    "src_hash": "c2302e70e1540e3337142630f2b38aaf",
+    "text": "Huh? What? I can see! Wow! A non-mino. Did they {capture} you as well?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:21:59.551306Z"
+  },
+  "npc.a_prisoner.say_1": {
+    "src_hash": "23469a671f164a026ef690d3d04bfa01",
+    "text": "Great riddle, isn't it? If you can tell me the correct answer, \\z I will give you something. Hehehe!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:21:59.552056Z"
+  },
+  "npc.a_prisoner.say_10": {
+    "src_hash": "47bc194e64dd30781fd50c51644e8b18",
+    "text": "Great riddle, isn't it? If you can tell me the correct answer, I will give you something. Hehehe!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:21:59.552777Z"
+  },
+  "npc.a_prisoner.say_11": {
+    "src_hash": "86b05ee12a2b0288b0178cd30e0137d1",
+    "text": "My surreal numbers are based on astonishing facts. Are you interested in learning the secret of mathemagics?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:21:59.553541Z"
+  },
+  "npc.a_prisoner.say_12": {
+    "src_hash": "e9c7840af52dabe70fe6cdd2a222b32b",
+    "text": " I think you are not in touch with yourself, come back if you have tuned in on your own feelings.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:21:59.554310Z"
+  },
+  "npc.a_prisoner.say_2": {
+    "src_hash": "c6ac9cb997c9abda82981ec24a71ed9b",
+    "text": "My surreal numbers are based on astonishing facts. \\z Are you interested in learning the secret of mathemagics?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:21:59.555086Z"
+  },
+  "npc.a_prisoner.say_3": {
+    "src_hash": "2e3980dced5c07d3219b1b4334ce365a",
+    "text": "Get some more apples first!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:21:59.555648Z"
+  },
+  "npc.a_prisoner.say_4": {
+    "src_hash": "4e2887c83421bff167ddfa1aa50e300f",
+    "text": "Really, really?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:21:59.555939Z"
+  },
+  "npc.a_prisoner.say_5": {
+    "src_hash": "b0af262d4f710adfe2bb566735b3a655",
+    "text": "Really, really, really, really?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:21:59.556338Z"
+  },
+  "npc.a_prisoner.say_6": {
+    "src_hash": "52b2c5109081a476251c1a3b2f5bd850",
+    "text": "Then take it and get happy - or die, hehe.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:21:59.556905Z"
+  },
+  "npc.a_prisoner.say_7": {
+    "src_hash": "3ea1288522b9438035597ffc35114271",
+    "text": "Then go away!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:21:59.557239Z"
+  },
+  "npc.a_prisoner.say_8": {
+    "src_hash": "71d8c06c321e1233443f60f93a0ecad7",
+    "text": "You already know the secrets of mathemagics! Now go and use them to learn.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:21:59.557887Z"
+  },
+  "npc.a_prisoner.say_9": {
+    "src_hash": "6a4d34e26971ff7d28374419885b5b34",
+    "text": "Amma əvvəlcə mənə ən sevdiyiniz rəngi deyin.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:47.313332Z"
+  },
+  "npc.a_prisoner.walkaway_msg_1": {
+    "src_hash": "2fa775fa3e12e21fdac806c25de27c10",
+    "text": "Gözləyin! tərk etmə! Mən sizə sürreal nömrələrim haqqında danışmaq istəyirəm.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:47.313904Z"
+  },
+  "npc.a_restless_soul.multi_1": {
+    "src_hash": "7183503f26b3b2bf8b53a8f27ed6d9d0",
+    "text": "Məni burada dindarlar əsir götürüb işgəncə ilə öldürdülər. Ghazbaran adlandırdıqları bir varlığa sitayiş edirlər ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:47.314514Z"
+  },
+  "npc.a_restless_soul.multi_2": {
+    "src_hash": "7dc0f9270cd35b18938f8271d065463e",
+    "text": "Onun adına minalara sahib çıxdılar və əsrlər boyu burada donmuş rəzil iblislər ordusunu azad etmək üçün buzları əritməyə başladılar ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:47.315267Z"
+  },
+  "npc.a_restless_soul.multi_3": {
+    "src_hash": "315b9533341ab66433fdb84a63ece0c6",
+    "text": "Onların planı ağalarının dünyanı fəth etməsi üçün yeni iblis ordusu yaratmaqdır. Hjaern və digər şamanlar bunu öyrənməlidirlər! Çox gec olmadan tələsin.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:47.315979Z"
+  },
+  "npc.a_sleeping_dragon.multi_1": {
+    "src_hash": "d1144744bf5b053dfa241e2e60ca97a4",
+    "text": "SAETHELON TORILUN GARNUM. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:47.316312Z"
+  },
+  "npc.a_sleeping_dragon.multi_10": {
+    "src_hash": "453ecafa7dcd6d7d87059b98f4e05841",
+    "text": "Gözlərinizi bağlayaraq və şüaları birbaşa görmədən güzgünü stendə qoyursunuz. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:47.316967Z"
+  },
+  "npc.a_sleeping_dragon.multi_11": {
+    "src_hash": "5a956e6ac76f84dcdc80c4d58d117682",
+    "text": "Siz instinktiv olaraq sığınacaq tapmaq üçün yüksəlişin yaxınlığında daha böyük zümrüd blöfünə qaçırsınız. Möhkəm sığınacağa sahib olduğunuzu iddia etdikdən bir neçə saniyə sonra havada dərin bir qaranlıq uğultu fırlanmağa başlayır. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:47.317808Z"
+  },
+  "npc.a_sleeping_dragon.multi_12": {
+    "src_hash": "f3784cdd21646d6b4c0ddd0b9a891a06",
+    "text": "Zümzümə daha da gücləndikcə saniyələr keçir. Səs çılğındır, ətrafınızdakı bütün digər səsləri boğur. Qulaqlarınızı ağrıdan örtdüyünüz zaman uğultu eşidilən uğultuya çevrilir. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:47.318596Z"
+  },
+  "npc.a_sleeping_dragon.multi_13": {
+    "src_hash": "a253f114923de282cccfb718ce2651da",
+    "text": "Baş verənlərə nəzər salmaq üçün başınızı zümrüdün kənarından yuxarı qaldırırsınız. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:47.319108Z"
+  },
+  "npc.a_sleeping_dragon.multi_14": {
+    "src_hash": "70f67a45c979e8dc3e56fc964a026220",
+    "text": "Əl, deyəsən, yumruğa çevrilib. Məsafədə indi başını daha kəskin şəkildə görmək üçün gözləriniz üçün çox böyük bir məxluqun bulanıq sxemini görə bilərsiniz. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:47.319797Z"
+  },
+  "npc.a_sleeping_dragon.multi_15": {
+    "src_hash": "6a5a491a85f56f55adbd26786c63a7ce",
+    "text": "Şüaları qarışdıraraq, güzgü təmiz ağ işığı birbaşa məxluqun üzünü qəbul etdiyiniz hissəyə yönəldir. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:47.320372Z"
+  },
+  "npc.a_sleeping_dragon.multi_16": {
+    "src_hash": "cc21d713d013605296b8dcd0b284011a",
+    "text": "Nərilti qışqırığa çevrilir, ətrafınızdakı hər şey sıxılır. Özünüzü blefə möhkəm basdığınız zaman hər şey susur və bir saniyə içində qaranlıq varlıq qaranlığın partlamalarına çevrilir. sən oyan.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:47.321174Z"
+  },
+  "npc.a_sleeping_dragon.multi_17": {
+    "src_hash": "7573058a6400d2fbf46d662914656cf4",
+    "text": "Siz çölə atırsınız və modeli suya atırsınız. Heç bir şey olmadıqda, sən okeana üz tutursan. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:47.321719Z"
+  },
+  "npc.a_sleeping_dragon.multi_18": {
+    "src_hash": "0d804d95a3a157aec49c516db3b9aff8",
+    "text": "Cənuba qayıtmaq üçün təpədən endiyiniz anda işıq şüaları sizi təpənin qalan hissəsində yıxılmağa məcbur edən şok dalğası ilə başınızın üstündən keçdi. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:47.322596Z"
+  },
+  "npc.a_sleeping_dragon.multi_19": {
+    "src_hash": "791b4b36f3b71d7c38493b3e30b76237",
+    "text": "Gözləriniz parlaqlığın qəfil azalmasına uyğunlaşdıqca siz yan tərəfə keçməzdən əvvəl darvazanın nəhəng qanadlarını görürsünüz. Yerdə parlaq bir şey də çıxara bilərsiniz.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:47.323387Z"
+  },
+  "npc.a_sleeping_dragon.multi_2": {
+    "src_hash": "93a48f09ee56a48efba85aa39cda7ae9",
+    "text": "YUXU. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:47.323625Z"
+  },
+  "npc.a_sleeping_dragon.multi_20": {
+    "src_hash": "2f2109a72068de305a9443412ff32999",
+    "text": "Güzgünü yerdən seçirsən.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:47.323995Z"
+  },
+  "npc.a_sleeping_dragon.multi_21": {
+    "src_hash": "4c26b218f329957ec066a35cf4c9405d",
+    "text": "Əjdaha xəyalları qızıldır. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:47.324356Z"
+  },
+  "npc.a_sleeping_dragon.multi_22": {
+    "src_hash": "34250643c73b08b49a6fab210c7bc0c4",
+    "text": "Geniş bir qaranlıq səni əhatə edir, sanki gözlərinin önündə ağır bir pərdə bağlanır. Boşluqda üzən dəqiqələr kimi görünəndən sonra, sanki qarşınızda qaranlıqda bir dəlik açılırmış kimi hiss edirsiniz. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:47.325248Z"
+  },
+  "npc.a_sleeping_dragon.multi_23": {
+    "src_hash": "92a1fcad690cb48948dcf8d8defc5129",
+    "text": "Çuxur böyüyür, gözlərinizi bağlaya bilməzsiniz. Ağlasığmaz qara. Təsəvvür edə biləcəyiniz hər hansı bir yoxluqdan daha dərin və qaranlıq sizi onun içinə sürükləyir. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:47.325967Z"
+  },
+  "npc.a_sleeping_dragon.multi_24": {
+    "src_hash": "f2cf7d86540c1405ea910ab146d852e6",
+    "text": "Artıq nəfəs ala bilməyəcəkmiş kimi hiss edirsən. Şüurunuzu itirdiyiniz anda ətrafınızdakı bütün ağırlığın qalxdığını hiss edirsiniz. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:47.326663Z"
+  },
+  "npc.a_sleeping_dragon.multi_25": {
+    "src_hash": "fb3eb01906a6037673dafee918fc8213",
+    "text": "Zümrüd işığı okeanına dalırsınız. Ətrafınızdakı rəngin yenidən doğulduğunu hiss etmək, demək olar ki, böyükdür. İstənilən forma və ölçüdə saysız-hesabsız obyektlər yanınızdan qaçır. Bir-birinə qarşı yarışan milyonlarla insan uzaqlarda toqquşur. ..",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:47.327549Z"
+  },
+  "npc.a_sleeping_dragon.multi_26": {
+    "src_hash": "78364ddf49f6d5722ee53c7a25348d26",
+    "text": "Ətrafınızdakı nəhəng tamaşanın səsi eşitmə qabiliyyətinizi partlasa da, ətrafınızdakı bütün səsləri udursunuz. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:47.328114Z"
+  },
+  "npc.a_sleeping_dragon.multi_27": {
+    "src_hash": "c42d69935dea4179e66969ccdb3aed5e",
+    "text": "Bir neçə böyük maneə birbaşa qarşınızda kənara çəkildikdə, sizin görünüşünüzə sıx bir parlaq mərkəz sıçrayır. Nə qədər sürətli olduğunuzu dərk edə bilməsəniz də, sürətiniz çox yavaş görünür. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:47.328854Z"
+  },
+  "npc.a_sleeping_dragon.multi_28": {
+    "src_hash": "a70857cffa61d3635e2308ed40fdc91d",
+    "text": "Həmişə yavaşlayan, siz yaşıl tonların bu xaosunun ortasına yaxınlaşırsınız. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:47.329342Z"
+  },
+  "npc.a_sleeping_dragon.multi_29": {
+    "src_hash": "405803fd9a90b647e0df17a586553f6b",
+    "text": "Ona yaxınlaşdıqca sarımtıl narıncı çalarları sizi qucaqlayır, daha yumşaq formalar yaranır və siz əvvəlki qarmaqarışıqlığı az qala unudursunuz. İsti rahatlıq içində bütün bunların ürəyində nə olduğunu görürsən. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:47.330104Z"
+  },
+  "npc.a_sleeping_dragon.multi_3": {
+    "src_hash": "5e43f6bf7239504ad5b8b5d9579a1396",
+    "text": "QAZAN. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:47.330331Z"
+  },
+  "npc.a_sleeping_dragon.multi_30": {
+    "src_hash": "561aa27c3ac58b8b86feed5ae68f3dfb",
+    "text": "Yuxusunda əzəmətli bir əjdaha min günəşin istiliyi və enerjisi ilə əhatə olunmuşdur. Görünüşünün sakitliyi sizi yumşaq bir şəkildə gülümsəməyə vadar edir. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:47.330997Z"
+  },
+  "npc.a_sleeping_dragon.multi_31": {
+    "src_hash": "71d47ef87b2021f0289ea4b660a86a9b",
+    "text": "Siz sevinc, şəfqət və qəfil sülhün mükəmməl qarışığını hiss edirsiniz. Səyahətinizin son nöqtəsində topaz, narıncı və ağın parlaq xanthous təəssüratları sizi qarşılayır. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T06:22:47.331695Z"
   }
 }

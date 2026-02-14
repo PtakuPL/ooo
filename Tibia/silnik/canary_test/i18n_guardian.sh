@@ -30,6 +30,9 @@ RESTART_FAILURE_BACKOFF_BASE_SEC="${RESTART_FAILURE_BACKOFF_BASE_SEC:-20}"
 RESTART_FAILURE_BACKOFF_MAX_SEC="${RESTART_FAILURE_BACKOFF_MAX_SEC:-300}"
 RUN_LOCK_DIR="$WORK_DIR/.guardian_run.lock"
 RUN_LOCK_STALE_SEC="${RUN_LOCK_STALE_SEC:-600}"
+DAEMON_LOCK_DIR="$WORK_DIR/.guardian_daemon.lock"
+DAEMON_LOCK_STALE_SEC="${GUARDIAN_DAEMON_LOCK_STALE_SEC:-600}"
+DAEMON_STATE_FILE="$WORK_DIR/i18n/status/guardian_daemon_state.json"
 
 export HOME="/home/ptaku"
 export PATH="/usr/local/bin:/usr/bin:/bin:$PATH"
@@ -87,6 +90,107 @@ release_run_lock() {
     owner_pid=$(cat "$RUN_LOCK_DIR/pid" 2>/dev/null || echo "")
     if [ "$owner_pid" = "$$" ]; then
         rm -rf "$RUN_LOCK_DIR" 2>/dev/null || true
+    fi
+}
+
+write_daemon_state() {
+    local state="${1:-unknown}"
+    local source="${2:-unknown}"
+    local pid="${3:-0}"
+    local reason="${4:-}"
+    local owner_pid="${5:-}"
+    local owner_source="${6:-}"
+    local lock_age="${7:-0}"
+    python3 - "$DAEMON_STATE_FILE" "$state" "$source" "$pid" "$reason" "$owner_pid" "$owner_source" "$lock_age" <<'PYDSTATE'
+import json, os, sys
+from datetime import datetime, timezone
+
+path = sys.argv[1]
+state = sys.argv[2]
+source = sys.argv[3]
+pid = sys.argv[4]
+reason = sys.argv[5]
+owner_pid = sys.argv[6]
+owner_source = sys.argv[7]
+lock_age = sys.argv[8]
+
+def _to_int(v, default=0):
+    try:
+        return int(float(v))
+    except Exception:
+        return int(default)
+
+payload = {
+    "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+    "state": str(state or "unknown"),
+    "source": str(source or "unknown"),
+    "pid": _to_int(pid, 0),
+    "reason": str(reason or ""),
+    "owner_pid": _to_int(owner_pid, 0),
+    "owner_source": str(owner_source or ""),
+    "lock_age_sec": _to_int(lock_age, 0),
+}
+
+os.makedirs(os.path.dirname(path), exist_ok=True)
+with open(path, "w", encoding="utf-8") as f:
+    json.dump(payload, f, indent=2, ensure_ascii=False)
+PYDSTATE
+}
+
+acquire_daemon_lock() {
+    local source="${1:-manual}"
+    local now_ts lock_ts owner_pid owner_source lock_age
+
+    if mkdir "$DAEMON_LOCK_DIR" 2>/dev/null; then
+        echo "$$" > "$DAEMON_LOCK_DIR/pid"
+        date +%s > "$DAEMON_LOCK_DIR/ts"
+        echo "$source" > "$DAEMON_LOCK_DIR/source"
+        write_daemon_state "running" "$source" "$$" "lock_acquired" "" "" "0"
+        return 0
+    fi
+
+    owner_pid=$(cat "$DAEMON_LOCK_DIR/pid" 2>/dev/null || echo "")
+    owner_source=$(cat "$DAEMON_LOCK_DIR/source" 2>/dev/null || echo "unknown")
+    lock_ts=$(cat "$DAEMON_LOCK_DIR/ts" 2>/dev/null || echo "0")
+    now_ts=$(date +%s)
+    lock_age=$(( now_ts - ${lock_ts:-0} ))
+
+    if [ -n "$owner_pid" ] && ps -p "$owner_pid" >/dev/null 2>&1; then
+        log_guardian "⏭️ Guardian daemon już działa (pid=$owner_pid, source=$owner_source, age=${lock_age}s)"
+        write_daemon_state "blocked" "$source" "$$" "active_daemon_lock" "$owner_pid" "$owner_source" "$lock_age"
+        return 1
+    fi
+
+    if [ -z "$owner_pid" ] && [ "$lock_age" -lt "$DAEMON_LOCK_STALE_SEC" ]; then
+        log_guardian "⏭️ Pomijam start daemona: lock bez PID, ale świeży (age=${lock_age}s < ${DAEMON_LOCK_STALE_SEC}s)"
+        write_daemon_state "blocked" "$source" "$$" "fresh_lock_without_pid" "" "$owner_source" "$lock_age"
+        return 1
+    fi
+
+    rm -rf "$DAEMON_LOCK_DIR" 2>/dev/null || true
+    if mkdir "$DAEMON_LOCK_DIR" 2>/dev/null; then
+        echo "$$" > "$DAEMON_LOCK_DIR/pid"
+        date +%s > "$DAEMON_LOCK_DIR/ts"
+        echo "$source" > "$DAEMON_LOCK_DIR/source"
+        log_guardian "🧹 Przejęto stale daemon-lock guardiana (old_pid=${owner_pid:-?}, source=${owner_source:-?}, age=${lock_age}s)"
+        write_daemon_state "running" "$source" "$$" "stale_lock_recovered" "$owner_pid" "$owner_source" "$lock_age"
+        return 0
+    fi
+
+    log_guardian "⏭️ Pomijam start daemona: nie udało się przejąć daemon-lock"
+    write_daemon_state "blocked" "$source" "$$" "daemon_lock_unavailable" "$owner_pid" "$owner_source" "$lock_age"
+    return 1
+}
+
+release_daemon_lock() {
+    local source="${1:-manual}"
+    local owner_pid owner_source
+    [ -d "$DAEMON_LOCK_DIR" ] || return 0
+    owner_pid=$(cat "$DAEMON_LOCK_DIR/pid" 2>/dev/null || echo "")
+    owner_source=$(cat "$DAEMON_LOCK_DIR/source" 2>/dev/null || echo "")
+    if [ "$owner_pid" = "$$" ]; then
+        rm -rf "$DAEMON_LOCK_DIR" 2>/dev/null || true
+        write_daemon_state "stopped" "$source" "$$" "daemon_exit" "$owner_pid" "$owner_source" "0"
     fi
 }
 
@@ -750,28 +854,89 @@ worker_running() {
 # Zwraca: healthy | degraded | stuck
 # Zapisuje metryki do guardian_health.json
 HEALTH_STATE_FILE="$WORK_DIR/.guardian_health_state"
-HEARTBEAT_STALE_SECONDS=180
-STUCK_WINDOW_MINUTES=15
-GUARD_FAIL_RATE_ALERT=15
+HEARTBEAT_AGING_SECONDS="${GUARDIAN_HEARTBEAT_AGING_SECONDS:-150}"
+HEARTBEAT_STALE_SECONDS="${GUARDIAN_HEARTBEAT_STALE_SECONDS:-240}"
+HEARTBEAT_STUCK_SECONDS="${GUARDIAN_HEARTBEAT_STUCK_SECONDS:-420}"
+HEARTBEAT_ACTIVE_LOG_GRACE_SECONDS="${GUARDIAN_HEARTBEAT_ACTIVE_LOG_GRACE_SECONDS:-150}"
+STUCK_WINDOW_MINUTES="${GUARDIAN_STUCK_WINDOW_MINUTES:-15}"
+GUARD_FAIL_RATE_ALERT="${GUARDIAN_GUARD_FAIL_RATE_ALERT:-15}"
 
 check_worker_health() {
     local health
-    health=$(python3 - "$WORK_DIR" "$HEARTBEAT_STALE_SECONDS" "$STUCK_WINDOW_MINUTES" "$GUARD_FAIL_RATE_ALERT" <<'PYHEALTH'
+    health=$(python3 - "$WORK_DIR" "$HEARTBEAT_AGING_SECONDS" "$HEARTBEAT_STALE_SECONDS" "$HEARTBEAT_STUCK_SECONDS" "$HEARTBEAT_ACTIVE_LOG_GRACE_SECONDS" "$STUCK_WINDOW_MINUTES" "$GUARD_FAIL_RATE_ALERT" "$PID_FILE" "$LOG_FILE" <<'PYHEALTH'
 import json, sys, os
+from collections import deque
 from datetime import datetime, timezone, timedelta
 
 work_dir = sys.argv[1]
-heartbeat_stale_s = int(sys.argv[2])
-stuck_window_min = int(sys.argv[3])
-gf_rate_alert = int(sys.argv[4])
+heartbeat_aging_s = int(sys.argv[2])
+heartbeat_stale_s = int(sys.argv[3])
+heartbeat_stuck_s = int(sys.argv[4])
+active_log_grace_s = int(sys.argv[5])
+stuck_window_min = int(sys.argv[6])
+gf_rate_alert = int(sys.argv[7])
+pid_file = sys.argv[8]
+worker_log_file = sys.argv[9]
 
 state_file = os.path.join(work_dir, "i18n/status/worker_state.json")
 guard_file = os.path.join(work_dir, "i18n/status/translation_guard_report.jsonl")
 health_file = os.path.join(work_dir, "i18n/status/guardian_health.json")
 
+def _to_float(v, default=-1.0):
+    try:
+        return float(v)
+    except Exception:
+        return float(default)
+
+def _get_tail_lines(path, n=200):
+    try:
+        with open(path, encoding="utf-8") as f:
+            return list(deque(f, maxlen=max(int(n), 1)))
+    except Exception:
+        return []
+
 now = datetime.now(timezone.utc)
 issues = []
 state = "healthy"
+worker_pid = ""
+pid_alive = False
+worker_log_age_s = -1.0
+guard_last_entry_age_s = -1.0
+recent_activity_reasons = []
+guard_tail_lines = _get_tail_lines(guard_file, 200)
+
+try:
+    with open(pid_file, encoding="utf-8") as f:
+        worker_pid = f.read().strip()
+    if worker_pid.isdigit() and os.path.exists(f"/proc/{worker_pid}"):
+        pid_alive = True
+except Exception:
+    worker_pid = ""
+
+try:
+    if os.path.exists(worker_log_file):
+        mtime = datetime.fromtimestamp(os.path.getmtime(worker_log_file), tz=timezone.utc)
+        worker_log_age_s = (now - mtime).total_seconds()
+except Exception:
+    worker_log_age_s = -1.0
+
+try:
+    last_guard_dt = None
+    for line in guard_tail_lines:
+        try:
+            entry = json.loads(line)
+            ts_str = entry.get("timestamp", "")
+            if not ts_str:
+                continue
+            ts = datetime.fromisoformat(ts_str.replace("Z", "+00:00"))
+            if last_guard_dt is None or ts > last_guard_dt:
+                last_guard_dt = ts
+        except Exception:
+            continue
+    if last_guard_dt is not None:
+        guard_last_entry_age_s = (now - last_guard_dt).total_seconds()
+except Exception:
+    guard_last_entry_age_s = -1.0
 
 # ── 1. Heartbeat age ────────────────────────────────────────────────────────
 heartbeat_age_s = -1
@@ -782,10 +947,27 @@ try:
     if hb_str:
         hb_dt = datetime.fromisoformat(hb_str.replace("Z", "+00:00"))
         heartbeat_age_s = (now - hb_dt).total_seconds()
-        if heartbeat_age_s > heartbeat_stale_s:
-            issues.append(f"heartbeat_stale ({heartbeat_age_s:.0f}s > {heartbeat_stale_s}s)")
-            state = "stuck"
-        elif heartbeat_age_s > heartbeat_stale_s * 0.6:
+        if heartbeat_age_s > heartbeat_stuck_s:
+            if worker_log_age_s >= 0 and worker_log_age_s <= active_log_grace_s:
+                recent_activity_reasons.append(f"log_age={worker_log_age_s:.0f}s")
+            if guard_last_entry_age_s >= 0 and guard_last_entry_age_s <= active_log_grace_s:
+                recent_activity_reasons.append(f"guard_age={guard_last_entry_age_s:.0f}s")
+            if pid_alive and recent_activity_reasons:
+                issues.append(
+                    f"heartbeat_stale_but_active ({heartbeat_age_s:.0f}s > {heartbeat_stuck_s}s; "
+                    + ", ".join(recent_activity_reasons)
+                    + ")"
+                )
+                if state == "healthy":
+                    state = "degraded"
+            else:
+                issues.append(f"heartbeat_stale ({heartbeat_age_s:.0f}s > {heartbeat_stuck_s}s)")
+                state = "stuck"
+        elif heartbeat_age_s > heartbeat_stale_s:
+            issues.append(f"heartbeat_stale_warning ({heartbeat_age_s:.0f}s > {heartbeat_stale_s}s)")
+            if state == "healthy":
+                state = "degraded"
+        elif heartbeat_age_s > heartbeat_aging_s:
             issues.append(f"heartbeat_aging ({heartbeat_age_s:.0f}s)")
             if state == "healthy":
                 state = "degraded"
@@ -799,12 +981,7 @@ guard_fail_window = 0
 entries_in_window = 0
 try:
     cutoff = now - timedelta(minutes=stuck_window_min)
-    lines = []
-    with open(guard_file, encoding="utf-8") as f:
-        for line in f:
-            lines.append(line)
-    # Read from tail (last 200 lines max)
-    for line in lines[-200:]:
+    for line in guard_tail_lines:
         try:
             entry = json.loads(line)
             ts_str = entry.get("timestamp", "")
@@ -866,6 +1043,14 @@ report = {
     "timestamp": now.isoformat().replace("+00:00", "Z"),
     "state": state,
     "heartbeat_age_s": round(heartbeat_age_s, 1),
+    "heartbeat_aging_seconds": int(heartbeat_aging_s),
+    "heartbeat_stale_seconds": int(heartbeat_stale_s),
+    "heartbeat_stuck_seconds": int(heartbeat_stuck_s),
+    "active_log_grace_seconds": int(active_log_grace_s),
+    "worker_pid": worker_pid,
+    "pid_alive": bool(pid_alive),
+    "worker_log_age_s": round(_to_float(worker_log_age_s, -1.0), 1),
+    "guard_last_entry_age_s": round(_to_float(guard_last_entry_age_s, -1.0), 1),
     "translated_window": translated_window,
     "guard_fail_window": guard_fail_window,
     "guard_fail_rate_pct": round(gf_rate_pct, 1),
@@ -995,16 +1180,13 @@ fi
 # - --daemon: działa non-stop i sam pilnuje interwału
 case "${1:-}" in
     --daemon)
-        if [ -f "$GUARDIAN_PID_FILE" ]; then
-            existing_pid=$(cat "$GUARDIAN_PID_FILE" 2>/dev/null || echo "")
-            if [[ "$existing_pid" =~ ^[0-9]+$ ]] && [ "$existing_pid" != "$$" ] && ps -p "$existing_pid" >/dev/null 2>&1; then
-                log_guardian "⏭️ Guardian daemon już działa (pid=$existing_pid) — pomijam nowy start"
-                exit 0
-            fi
+        daemon_source="${GUARDIAN_START_SOURCE:-manual}"
+        if ! acquire_daemon_lock "$daemon_source"; then
+            exit 0
         fi
         echo $$ > "$GUARDIAN_PID_FILE"
-        log_guardian "▶️ Guardian daemon start (pid=$$)"
-        trap 'rm -f "$GUARDIAN_PID_FILE"; exit 0' SIGINT SIGTERM EXIT
+        log_guardian "▶️ Guardian daemon start (pid=$$, source=$daemon_source)"
+        trap 'rm -f "$GUARDIAN_PID_FILE"; release_daemon_lock "$daemon_source"; exit 0' SIGINT SIGTERM EXIT
         while true; do
             run_once
             sleep 30

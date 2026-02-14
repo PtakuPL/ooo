@@ -4,12 +4,12 @@
   "crossref_enabled": true,
   "auto_fix_enabled": false,
   "auto_fix_limit": 30,
-  "checked_at": "2026-02-14T06:04:11.163565Z",
-  "issues_total": 510,
+  "checked_at": "2026-02-14T06:50:36.431542Z",
+  "issues_total": 515,
   "issues_by_type": {
-    "consistency_in_language": 51,
+    "consistency_in_language": 57,
     "pl_reference_missing_translation": 400,
-    "length_ratio_crosscheck": 59
+    "length_ratio_crosscheck": 58
   },
   "consistency_issues": [
     {
@@ -630,6 +630,94 @@
       "examples": [
         "monsters:monster.spidris_elite.name",
         "monsters:monster.spidris_elitesumom.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "You brought cookies! How nice of you! Can I have one?",
+      "variants": [
+        "",
+        "¡Trajiste galletas! ¡Qué amable de tu parte! ¿Puedo tener uno?"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.nah_bob.say_3",
+        "npc:npc.yaman.say_8"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "You see, good deeds like this will ... YOU ... YOU SPAWN OF EVIL! I WILL MAKE SURE THE MASTER LEARNS ABOUT THIS!",
+      "variants": [
+        "",
+        "Verás, buenas acciones como ésta... ¡TÚ... TÚ ENgendro del MAL! ¡ME ASEGURARÉ DE QUE EL MAESTRO APRENDA SOBRE ESTO!"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.nah_bob.say_5",
+        "npc:npc.yaman.say_12"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Could you help me do a ritual?",
+      "variants": [
+        "",
+        "¿Podrías ayudarme a hacer un ritual?"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.narsai.say_1",
+        "npc:npc.shimun.say_1",
+        "npc:npc.tefrit.say_1",
+        "npc:npc.yonan.say_1"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Did you bring all the materials I informed you about?",
+      "variants": [
+        "",
+        "¿Trajiste todos los materiales de los que te informé?"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.narsai.say_4",
+        "npc:npc.tefrit.say_4"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Thank you this stage of the ritual is complete.",
+      "variants": [
+        "",
+        "Gracias esta etapa del ritual está completa."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.narsai.say_5",
+        "npc:npc.shimun.say_5",
+        "npc:npc.tefrit.say_5",
+        "npc:npc.yonan.say_5"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Are you willing to help me?",
+      "variants": [
+        "",
+        "¿Estás dispuesto a ayudarme?"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.nilsor.multi_10",
+        "npc:npc.spectulus.multi_8"
       ]
     },
     {
@@ -4686,21 +4774,12 @@
       "pl_ratio": 4.0
     },
     {
-      "key": "npc.lurik.say_2",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 22,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.864
-    },
-    {
       "key": "npc.markwin.say_7",
       "category": "npc",
       "type": "crossref_length_ratio_diff",
       "severity": "MEDIUM",
       "en_len": 16,
-      "lang_ratio": 0.0,
+      "lang_ratio": 0.812,
       "pl_ratio": 2.875
     },
     {

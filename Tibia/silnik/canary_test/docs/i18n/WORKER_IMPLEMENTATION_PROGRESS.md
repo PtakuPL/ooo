@@ -65,6 +65,6 @@ Legenda: ✅ done | 🟡 partial | ⏳ todo
 
 ## 5) Następne kroki (proponowane)
 
-- ⏳ Ujednolicić nazwy `stage` dokładnie pod plan (np. `SYNC_START`, `SYNC_FILE_DONE`, `SYNC_LANG_DONE`, `AUTO_TRANSLATE_START`, `AUTO_TRANSLATE_KEY_OK/SKIP`, `AUTO_TRANSLATE_DONE`).
+- ✅ Ujednolicić nazwy `stage` dokładnie pod plan (np. `SYNC_START`, `SYNC_FILE_DONE`, `SYNC_LANG_DONE`, `AUTO_TRANSLATE_START`, `AUTO_TRANSLATE_KEY_OK/SKIP`, `AUTO_TRANSLATE_DONE`). → DONE 2026-02-14: tabela referencji stage/event w nagłówku workera.
 - ⏳ Dopiąć dodatkowe delty dla `COMPACT_KEYS` (np. `exported_langs`) jeśli chcesz widzieć je w daily.
-- ⏳ Rozszerzyć `VALIDATION` (jeśli ma być realną fazą, nie tylko fallback/placeholder w UI) – emitowanie eventów + daily agregacja.
+- ✅ Rozszerzyć `VALIDATION` (jeśli ma być realną fazą, nie tylko fallback/placeholder w UI) – emitowanie eventów + daily agregacja. → DONE 2026-02-14: VALIDATION_START/VALIDATION_DONE eventy w obu ścieżkach (translations_only + idle_full_cycle).

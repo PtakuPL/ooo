@@ -4,30 +4,14 @@
   "crossref_enabled": true,
   "auto_fix_enabled": false,
   "auto_fix_limit": 30,
-  "checked_at": "2026-02-14T06:04:13.066525Z",
-  "issues_total": 459,
+  "checked_at": "2026-02-14T06:50:38.332337Z",
+  "issues_total": 457,
   "issues_by_type": {
-    "consistency_in_language": 1,
+    "consistency_in_language": 0,
     "pl_reference_missing_translation": 400,
-    "length_ratio_crosscheck": 58
+    "length_ratio_crosscheck": 57
   },
-  "consistency_issues": [
-    {
-      "type": "crossref_inconsistent_translation",
-      "severity": "MEDIUM",
-      "en": "Alright |PLAYERNAME|. Vocation?",
-      "variants": [
-        "",
-        "Rendben |PLAYERNAME|. Hivatás?"
-      ],
-      "variants_count": 2,
-      "examples": [
-        "npc:npc.a_dead_bureaucrat1.say_3",
-        "npc:npc.a_dead_bureaucrat3.say_2",
-        "npc:npc.a_dead_bureaucrat4.say_2"
-      ]
-    }
-  ],
+  "consistency_issues": [],
   "pl_reference_issues": [
     {
       "key": "achievement.1.description",
@@ -3631,15 +3615,6 @@
     }
   ],
   "length_ratio_issues": [
-    {
-      "key": "npc.a_ghostly_sage.stdmod_4",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 13,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
     {
       "key": "npc.alyxo.say_12",
       "category": "npc",

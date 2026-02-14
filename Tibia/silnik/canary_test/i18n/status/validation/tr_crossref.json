@@ -4,10 +4,10 @@
   "crossref_enabled": true,
   "auto_fix_enabled": false,
   "auto_fix_limit": 30,
-  "checked_at": "2026-02-14T06:04:21.046638Z",
-  "issues_total": 495,
+  "checked_at": "2026-02-14T06:50:45.217505Z",
+  "issues_total": 496,
   "issues_by_type": {
-    "consistency_in_language": 15,
+    "consistency_in_language": 16,
     "pl_reference_missing_translation": 400,
     "length_ratio_crosscheck": 80
   },
@@ -245,6 +245,22 @@
         "npc:npc.suzy.farewell_msg_1",
         "npc:npc.suzy.walkaway_msg_1",
         "server:data.otservbr.global.npc.atur.L77.728"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Oh well.",
+      "variants": [
+        "",
+        "Neyse."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.ocelus.walkaway_msg_1",
+        "server:data.otservbr.global.npc.captain.waverider.L99.709",
+        "server:data.otservbr.global.npc.captain.waverider.island.L63.1027",
+        "server:data.otservbr.global.npc.charlotta.L87.903"
       ]
     },
     {

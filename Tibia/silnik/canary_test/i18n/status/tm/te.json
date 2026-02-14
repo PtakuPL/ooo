@@ -3238,5 +3238,645 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-14T05:36:37.332666Z"
+  },
+  "npc.a_dead_bureaucrat1.walkaway_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "వీడ్కోలు మరియు నన్ను మర్చిపోవద్దు!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:03:43.201033Z"
+  },
+  "npc.a_dead_bureaucrat2.farewell_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "వీడ్కోలు మరియు నన్ను మర్చిపోవద్దు!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:03:43.201939Z"
+  },
+  "npc.a_dead_bureaucrat2.walkaway_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "వీడ్కోలు మరియు నన్ను మర్చిపోవద్దు!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:03:43.202793Z"
+  },
+  "npc.a_dead_bureaucrat3.farewell_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "వీడ్కోలు మరియు నన్ను మర్చిపోవద్దు!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:03:43.203411Z"
+  },
+  "npc.a_dead_bureaucrat3.say_2": {
+    "src_hash": "7c9a6b9ee4bce0d9b7654294cdfe405e",
+    "text": "సరే |PLAYERNAME|. వృత్తి?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:03:43.204658Z"
+  },
+  "npc.a_dead_bureaucrat3.walkaway_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "వీడ్కోలు మరియు నన్ను మర్చిపోవద్దు!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:03:43.205452Z"
+  },
+  "npc.a_dead_bureaucrat4.farewell_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "వీడ్కోలు మరియు నన్ను మర్చిపోవద్దు!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:03:43.206047Z"
+  },
+  "npc.a_dead_bureaucrat4.say_2": {
+    "src_hash": "7c9a6b9ee4bce0d9b7654294cdfe405e",
+    "text": "సరే |PLAYERNAME|. వృత్తి?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:03:43.206906Z"
+  },
+  "npc.a_dead_bureaucrat4.walkaway_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "వీడ్కోలు మరియు నన్ను మర్చిపోవద్దు!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:03:43.207739Z"
+  },
+  "npc.a_dragon_lord.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! కింద ఉంచండి! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:03:43.209091Z"
+  },
+  "npc.a_dragon_lord.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! కింద ఉంచండి! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:03:43.210536Z"
+  },
+  "npc.a_dragon_lord.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! కింద ఉంచండి! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:03:43.211967Z"
+  },
+  "npc.a_drillworm.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! కింద ఉంచండి! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:03:43.214429Z"
+  },
+  "npc.a_drillworm.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! కింద ఉంచండి! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:03:43.217136Z"
+  },
+  "npc.a_drillworm.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! కింద ఉంచండి! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:03:43.219612Z"
+  },
+  "npc.a_lost_basher.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! కింద ఉంచండి! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:03:43.223517Z"
+  },
+  "npc.a_lost_basher.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! కింద ఉంచండి! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:03:43.225488Z"
+  },
+  "npc.a_lost_basher.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! కింద ఉంచండి! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:03:43.227451Z"
+  },
+  "npc.a_lost_husher.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! కింద ఉంచండి! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:03:43.229363Z"
+  },
+  "npc.a_lost_husher.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! కింద ఉంచండి! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:03:43.231366Z"
+  },
+  "npc.a_lost_husher.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! కింద ఉంచండి! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:03:43.233272Z"
+  },
+  "npc.a_lost_thrower.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! కింద ఉంచండి! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:03:43.235324Z"
+  },
+  "npc.a_lost_thrower.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! కింద ఉంచండి! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:03:43.237438Z"
+  },
+  "npc.a_lost_thrower.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! కింద ఉంచండి! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:03:43.239467Z"
+  },
+  "npc.a_nightmare_scion.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! కింద ఉంచండి! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:03:43.242358Z"
+  },
+  "npc.a_nightmare_scion.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! కింద ఉంచండి! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:03:43.244901Z"
+  },
+  "npc.a_nightmare_scion.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! కింద ఉంచండి! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:03:43.247415Z"
+  },
+  "npc.a_vulcongra.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! కింద ఉంచండి! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:03:43.256026Z"
+  },
+  "npc.a_vulcongra.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! కింద ఉంచండి! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:03:43.258183Z"
+  },
+  "npc.a_vulcongra.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! కింద ఉంచండి! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:03:43.259957Z"
+  },
+  "npc.a_wyrm.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! కింద ఉంచండి! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:03:43.264795Z"
+  },
+  "npc.a_wyrm.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! కింద ఉంచండి! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:03:43.266881Z"
+  },
+  "npc.a_wyrm.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! కింద ఉంచండి! <gives you an elaborate report on monster activity>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:03:43.268640Z"
+  },
+  "npc.graubart.farewell_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "వీడ్కోలు మరియు నన్ను మర్చిపోవద్దు!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:03:43.541263Z"
+  },
+  "npc.a_dead_bureaucrat1.say_8": {
+    "src_hash": "68c9f9ee9212c1c305a253d3d1aebeb0",
+    "text": "గొప్ప. ఇక్కడ మీరు ఉన్నారు. ఫారమ్ 411. మీరు ఎప్పుడైనా మాట్లాడాలనుకున్నప్పుడు తిరిగి రండి. బై.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:04:09.609036Z"
+  },
+  "npc.a_dead_bureaucrat1.say_9": {
+    "src_hash": "6c558828065bb071d2bead0fc23aef37",
+    "text": "నమ్మశక్యం కానిది, మీరు చేసారు!! పుమిన్స్ డొమైన్‌లో ఆనందించండి!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:04:09.609715Z"
+  },
+  "npc.a_dead_bureaucrat1.voice_1": {
+    "src_hash": "cdcea1350c387fbbeec64fa8f0b8ddea",
+    "text": "ఇప్పుడు ఆ ఫారమ్ ఎక్కడ పెట్టాను?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:04:09.610492Z"
+  },
+  "npc.a_dead_bureaucrat2.say_1": {
+    "src_hash": "14fd31f81c485fd102c189615f61a284",
+    "text": "ఖచ్చితంగా, మీరు దానిని నా నుండి పొందవచ్చు. ఇక్కడ మీరు ఉన్నారు. బై",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:04:09.612074Z"
+  },
+  "npc.a_dead_bureaucrat2.voice_1": {
+    "src_hash": "cdcea1350c387fbbeec64fa8f0b8ddea",
+    "text": "ఇప్పుడు ఆ ఫారమ్ ఎక్కడ పెట్టాను?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:04:09.613195Z"
+  },
+  "npc.a_dead_bureaucrat3.say_1": {
+    "src_hash": "015bef68461eea886ca860eae9b35852",
+    "text": "నేను చనిపోయే ముందు కూడా {}నే!! నా నుండి నీకు ఏమి కావాలి?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:04:09.614084Z"
+  },
+  "npc.a_dead_bureaucrat3.say_3": {
+    "src_hash": "42b8982fe2885887a8bed5a3e2fc0184",
+    "text": "అది నిజం, మీరు నా నుండి ఫారమ్ 145 పొందవచ్చు. అయితే, నాకు ముందుగా ఫారం 411 కావాలి. మీ వద్ద ఉన్నప్పుడు తిరిగి రండి.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:04:09.615025Z"
+  },
+  "npc.a_dead_bureaucrat3.say_4": {
+    "src_hash": "4338fd8c8c7f05bf1780ecc3a5c6f70f",
+    "text": "బాగా చేసారు! మీకు ఫారమ్ 411 ఉంది!! ఇక్కడ ఫారమ్ 145 ఉంది. దానితో ఆనందించండి.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:04:09.615751Z"
+  },
+  "npc.a_dead_bureaucrat3.voice_1": {
+    "src_hash": "cdcea1350c387fbbeec64fa8f0b8ddea",
+    "text": "ఇప్పుడు ఆ ఫారమ్ ఎక్కడ పెట్టాను?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:04:09.616320Z"
+  },
+  "npc.a_dead_bureaucrat4.say_1": {
+    "src_hash": "607d8b9a0101890da602c6e0916a8755",
+    "text": "{}, అది సరైనదేనా?! నా నుండి నీకు ఏమి కావాలి?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:04:09.616948Z"
+  },
+  "npc.a_dead_bureaucrat4.say_3": {
+    "src_hash": "3633424b018ff3b8100d839f33e33641",
+    "text": "క్షమించండి, ఫారమ్ 356ని పొందడానికి మీకు ఫారమ్ 145 అవసరం. అది మీ వద్ద ఉన్నప్పుడు తిరిగి రండి.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:04:09.617678Z"
+  },
+  "npc.a_dead_bureaucrat4.say_4": {
+    "src_hash": "24f586b8d7515e7a84049f7c33e2cf15",
+    "text": "మీరు నేను అనుకున్నదానికంటే గొప్పవారు! అభినందనలు, ఇక్కడ మీరు ఉన్నారు: ఫారమ్ 356!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:04:09.618481Z"
+  },
+  "npc.a_dead_bureaucrat4.voice_1": {
+    "src_hash": "cdcea1350c387fbbeec64fa8f0b8ddea",
+    "text": "ఇప్పుడు ఆ ఫారమ్ ఎక్కడ పెట్టాను?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:04:09.619037Z"
+  },
+  "npc.a_dragon_mother.greet_msg_1": {
+    "src_hash": "1dce3066f0e7cf3054a32cbec80df4a6",
+    "text": "మానవులారా! మిమ్మల్ని మీరు అదృష్టవంతులుగా భావించండి, నాకు {help} అవసరం.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:04:09.619738Z"
+  },
+  "npc.a_dragon_mother.greet_msg_3": {
+    "src_hash": "07b8c041b3b06732ebb031be4229bb98",
+    "text": "మీరు నాకు ఒక ఉపకారం చేసారు మరియు మీరు కోరుకునే జ్ఞానం మీ స్వంతం అవుతుంది. నేను మీ కోసం మంచును కరిగించాను, మీరు ఇప్పుడు పాస్ చేయవచ్చు.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:04:09.620709Z"
+  },
+  "npc.a_dragon_mother.multi_1": {
+    "src_hash": "1ca96232d26ea181d5ac0bab5436446b",
+    "text": "నేను మీకు చెప్పినట్లుగా, క్రూరమైన మంచు జీవులు నా గుడ్డును దిగువ గుహలలోకి లాగాయి. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:04:09.621531Z"
+  },
+  "npc.a_dragon_mother.multi_2": {
+    "src_hash": "4c97970717def7c721c5c834b12248aa",
+    "text": "తగినంత వేడి లేకుండా గుడ్డు త్వరగా చనిపోతుంది. అక్కడ వెంచర్ చేసి, నా బిడ్డను రక్షించండి మరియు మీరు కోరుకునే జ్ఞానం మీదే అవుతుంది!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:04:09.622525Z"
+  },
+  "npc.a_dragon_mother.multi_4": {
+    "src_hash": "7d9fd43a4df4010c414a7c4fb168728d",
+    "text": "కాబట్టి కల్టిస్టులు మరియు మంచు గోలెమ్‌లు నివసించే ఎగువ సొరంగాలకు తిరిగి వెళ్లండి. ఈ సొరంగాల్లో ఎక్కడో ఒక దెయ్యం వెంటాడే చిన్న జైలు కనిపిస్తుంది. ఈ జైలు గదికి దక్షిణంగా తూర్పు వైపు మిమ్మల్ని నడిపించే సొరంగం ఉంది. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:04:09.623897Z"
+  },
+  "npc.a_dragon_mother.multi_5": {
+    "src_hash": "25a8d05bc20acf4eafd92b04b2a6be02",
+    "text": "మీరు ఒక చిన్న గుహకు చేరుకునే వరకు సొరంగం అనుసరించండి. మీరు బ్లూ ఎనర్జీ ఫీల్డ్‌ను చూసే వరకు క్రిందికి మరియు క్రిందికి అడుగు వేయండి. అది నిన్ను నా అండకు దారి తీస్తుంది. అందరూ గదిలోకి ప్రవేశించకుండా సీలు వేయబడింది. కానీ ఇప్పుడు మీకు అనుమతి ఉంది.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:04:09.625270Z"
+  },
+  "npc.a_dragon_mother.multi_6": {
+    "src_hash": "0bacb649bf75531ac333b0f8389626f8",
+    "text": "మంచుతో నిండిన దౌర్భాగ్య జీవులు పొదుగడానికి దగ్గరగా ఉన్న నా గుడ్డును దొంగిలించాయి. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:04:09.626053Z"
+  },
+  "npc.a_dragon_mother.multi_7": {
+    "src_hash": "c195e0b190022cbb45a80e24310b442e",
+    "text": "దిగువ టన్నెల్స్‌లోకి ప్రవేశించడానికి నేను చాలా పెద్దవాడిని కాబట్టి, నా {egg}ని జాగ్రత్తగా చూసుకోమని నేను మిమ్మల్ని అడగాలి. ఇలా చేస్తారా?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:04:09.627054Z"
+  },
+  "npc.a_dragon_mother.say_1": {
+    "src_hash": "013b42b6166cd483b196ac9ea64cacd5",
+    "text": "మీరు దేని కోసం వెతుకుతున్నారో నాకు తెలుసు. సాధారణంగా నేను నిన్ను మ్రింగివేస్తాను, కానీ దురదృష్టకర పరిస్థితుల కారణంగా, నాకు మీ {assistance} అవసరం.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:04:09.628112Z"
+  },
+  "npc.a_fluffy_squirrel.sendtrade_msg_1": {
+    "src_hash": "03c8f51bfe7975b94ce3c76ec9647116",
+    "text": "చ్ఛ్చ్. ఛ! <you're not sure, but it seems that squirrel wants to trade your valuable acorns for useless stones that it found and considered uneatable>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:04:09.629476Z"
+  },
+  "npc.a_fluffy_squirrel.stdmod_1": {
+    "src_hash": "ac2f68634467394485198b5db1d3f7a3",
+    "text": "ఛ? ఛ ?? <though you don't understand squirrelish, that one seems really excited>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:04:09.630731Z"
+  },
+  "npc.a_frog.farewell_msg_1": {
+    "src_hash": "588e73837fba9553ffca81df889548ec",
+    "text": "అవును, వీడ్కోలు మరియు మళ్లీ రావద్దు!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:04:09.631672Z"
+  },
+  "npc.a_frog.greet_msg_1": {
+    "src_hash": "19d469ee4ec05732827bda56d63f820e",
+    "text": "*నిట్టూర్పు* మరో మూగ సాహసి.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:04:09.632249Z"
+  },
+  "npc.a_frog.stdmod_1": {
+    "src_hash": "2fe4c5f00ebc051b41cbe0861487a7fd",
+    "text": "మరొక యువరాజు నన్ను ముద్దుపెట్టుకోవడానికి వస్తే, నేను అతని గాడిదను చాలా దారుణంగా తన్నుతాను, అతను తప్పించుకోవడానికి ఒక సెడాన్ కుర్చీ కావాలి.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:04:09.633198Z"
+  },
+  "npc.a_frog.stdmod_2": {
+    "src_hash": "2fe4c5f00ebc051b41cbe0861487a7fd",
+    "text": "మరొక యువరాజు నన్ను ముద్దుపెట్టుకోవడానికి వస్తే, నేను అతని గాడిదను చాలా దారుణంగా తన్నుతాను, అతను తప్పించుకోవడానికి ఒక సెడాన్ కుర్చీ కావాలి.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:04:09.634176Z"
+  },
+  "npc.a_frog.stdmod_3": {
+    "src_hash": "dc201119d7983ae5369b8ae0430bd6c0",
+    "text": "నన్ను ముద్దు పెట్టుకోవడానికి కూడా ప్రయత్నించవద్దు, లేకపోతే నేను నిన్ను తన్నుతాను!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:04:09.634901Z"
+  },
+  "npc.a_frog.stdmod_4": {
+    "src_hash": "9591358ce6836f77a35e4131f2c80af4",
+    "text": "మాట్లాడే కప్పలు లేవు, మూర్ఖుడు. ఇది మీ ఫకింగ్ ఊహ మిమ్మల్ని మోసగిస్తోంది. మరియు ఇప్పుడు మీ ఊహ మీకు దూరంగా నడవమని ఆదేశించింది.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:04:09.635801Z"
+  },
+  "npc.a_frog.stdmod_5": {
+    "src_hash": "e3de281a1b7dfde28d2b68c9a47961cf",
+    "text": "చివరగా ఎవరో నేను కప్ప అని గమనించారు. అభినందనలు, మీరు చాలా గమనిస్తున్నారు... *నిట్టూర్పు*",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:04:09.636540Z"
+  },
+  "npc.a_frog.stdmod_6": {
+    "src_hash": "e867f2c18c9b934d43561a2624855b32",
+    "text": "ఒక తపన? అవును నాకు అన్వేషణ వచ్చింది! వెళ్లి రాజు టిబియానస్‌కి అతని కొడుకు నన్ను మళ్లీ ముద్దు పెట్టుకోవడానికి ప్రయత్నించాడని చెప్పు!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:04:09.637887Z"
+  },
+  "npc.a_frog.stdmod_7": {
+    "src_hash": "9c790a4ba6e7e6271ce4454c084a6cda",
+    "text": "పైరలే? ఆ మూర్ఖుడు నన్ను ఒక్కసారి మనిషిగా మార్చాడు. కానీ నా భార్య వచ్చి నన్ను ముద్దుపెట్టుకుంది, కాబట్టి నేను మళ్ళీ కప్పను.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:04:09.638966Z"
+  },
+  "npc.a_frog.stdmod_8": {
+    "src_hash": "9c790a4ba6e7e6271ce4454c084a6cda",
+    "text": "పైరలే? ఆ మూర్ఖుడు నన్ను ఒక్కసారి మనిషిగా మార్చాడు. కానీ నా భార్య వచ్చి నన్ను ముద్దుపెట్టుకుంది, కాబట్టి నేను మళ్ళీ కప్పను.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:04:09.639872Z"
+  },
+  "npc.a_frog.walkaway_msg_1": {
+    "src_hash": "c1db0d50cc6abf047516570bd8944bb7",
+    "text": "హా! ఆ మూర్ఖుడు చివరకు వెళ్లిపోయాడు.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:04:09.640402Z"
+  },
+  "npc.a_ghostly_sage.greet_msg_1": {
+    "src_hash": "487a95714b8152233a000a8ee2c338f3",
+    "text": "ఆహ్, నేను ఈ పురాతన మందిరాలను మళ్లీ ఒక మర్త్యుడు నడుస్తున్నట్లు భావిస్తున్నాను. నన్ను క్షమించు, నేను నిన్ను గమనించడం లేదు. నేను నా ఆలోచనలలో చాలా కోల్పోయాను.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:04:09.641459Z"
+  },
+  "npc.a_ghostly_sage.stdmod_1": {
+    "src_hash": "341df3ac9ed72719a92e5ae18e2970e3",
+    "text": "మీరు ఇప్పుడు ఇక్కడ నుండి ప్రయాణం చేయబడతారు. మీరు ఖచ్చితంగా ఆ టెలిపోర్ట్‌ను ఎదుర్కోవాలనుకుంటున్నారా?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:04:09.642408Z"
+  },
+  "npc.a_ghostly_sage.stdmod_2": {
+    "src_hash": "43c699821452d6bba26f7dcb5d25af20",
+    "text": "అప్పుడు ఈ దయ్యాల మందిరాల్లో ఇక్కడే ఉండండి.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:04:09.643051Z"
+  },
+  "npc.a_ghostly_sage.stdmod_3": {
+    "src_hash": "42dca8416a8f3f78f6c3bd6fa28ae624",
+    "text": "నేను మీకు {teleport}ని అందించగలను.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:04:09.643651Z"
+  },
+  "npc.a_ghostly_sage.stdmod_4": {
+    "src_hash": "9abbfa8fc9b94c4b2488d9216c452f9b",
+    "text": "నన్ను పట్టించుకోవద్దు.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:04:09.644046Z"
+  },
+  "npc.a_ghostly_woman.farewell_msg_1": {
+    "src_hash": "f3d7e0a95a7c7f12c2b3bca6c13f4011",
+    "text": "ఒంటరిగా... ఒంటరిగా. అంత చలి.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:04:09.644532Z"
+  },
+  "npc.a_ghostly_woman.greet_msg_1": {
+    "src_hash": "7ad732c0d7d64881c08e036c6ef0f80f",
+    "text": "నేను నిన్ను భావిస్తున్నాను. నేను మీ ఆలోచనలను వింటాను. మీరు ... సజీవంగా ఉన్నారు.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:04:09.645184Z"
+  },
+  "npc.a_ghostly_woman.stdmod_1": {
+    "src_hash": "36d1da8b2a5f237bf2156b3f2aaa9853",
+    "text": "ఒకసారి నేను నైట్‌మేర్ నైట్స్ ఆర్డర్‌లో సభ్యుడిని. ఇప్పుడు నేను ఈ చల్లని హాల్లో నడిచే నీడ మాత్రమే.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:04:09.646003Z"
+  },
+  "npc.a_ghostly_woman.stdmod_2": {
+    "src_hash": "282f2d4fa7ecca103ffa973758ca3af0",
+    "text": "ఉత్తరం పూర్తి చేయడానికి ఒక పజిల్ ఉంది.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:04:09.646618Z"
+  },
+  "npc.a_ghostly_woman.voice_1": {
+    "src_hash": "f3d7e0a95a7c7f12c2b3bca6c13f4011",
+    "text": "ఒంటరిగా... ఒంటరిగా. అంత చలి.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:04:09.647114Z"
+  },
+  "npc.a_ghostly_woman.walkaway_msg_1": {
+    "src_hash": "f3d7e0a95a7c7f12c2b3bca6c13f4011",
+    "text": "ఒంటరిగా... ఒంటరిగా. అంత చలి.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:04:09.647592Z"
   }
 }

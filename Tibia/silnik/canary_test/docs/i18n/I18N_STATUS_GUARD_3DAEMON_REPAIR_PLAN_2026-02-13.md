@@ -5,6 +5,37 @@
 > `docs/I18N_UNIFIED_EXECUTION_PLAN_2026-02-13.md`.
 > W przypadku konfliktu zapisów, obowiązuje plan kanoniczny.
 
+## 🛠️ Aktualizacja wykonania (2026-02-14 06:56 UTC — guardian/start-source + statusd quality watch)
+
+Wykonane:
+- ✅ **Guardian daemon single-source guard (kodowy)**
+  - dodano lock `.guardian_daemon.lock` i stan `i18n/status/guardian_daemon_state.json`,
+  - start daemona jest blokowany przy aktywnym locku (manual/scheduler/service nie dublują daemona).
+- ✅ **Guardian health hardening**
+  - nowe progi heartbeat (`aging/stale/stuck`) i detekcja aktywności procesu (`pid_alive`, `worker_log_age_s`, `guard_last_entry_age_s`),
+  - ograniczono false-positive restarty `health_stuck` podczas długich cykli tłumaczeń.
+- ✅ **Statusd quality watch (suspicious_high) end-to-end**
+  - `statusd_report.json` publikuje `quality_watch`,
+  - `statusd_doctor.json` podnosi `SUSPICIOUS_HIGH_SPIKE/ELEVATED`,
+  - webhook wspiera `suspicious_high_spike` / `suspicious_high_elevated`,
+  - `statusd_daily_report.json/md` ma KPI `suspicious_high_*` i `Repair Tuning 24h`,
+  - raport 24h preferuje dedykowane źródło `pending_skip_24h_latest.json`.
+- ✅ **Worker repair cadence odporna na restart**
+  - runda `repair_identical_bonus_round()` używa globalnego `translation_dispatch_state.cycle_counter` do interwału.
+
+Nowe problemy wykryte runtime:
+- ⚠️ `statusd_doctor` przechodzi na `CRITICAL` przez `SUSPICIOUS_HIGH_SPIKE`:
+  - snapshot: `suspicious_high_total=2759` / `translated_total=22167` w oknie 6h (`12.446%`),
+  - top: `es`, kategoria `npc.json`.
+- ⚠️ `repair_tuning_24h.samples_24h=0` mimo aktywnej kolejki backlogu `identical_to_en`:
+  - wymaga potwierdzenia po kilku cyklach, że nowy interwał oparty o `cycle_counter` generuje próbki.
+- ⚠️ Alerting webhook nadal nieskonfigurowany (`WEBHOOK_NOT_CONFIGURED`), więc sygnały CRITICAL nie wychodzą poza host.
+
+Nowe TODO do planu:
+- ⬜ Wprowadzić progi `suspicious_high` per domena/per-język (co najmniej `npc.json` + PL/ES), zamiast tylko globalnego count.
+- ⬜ Dodać check operacyjny: jeśli `repair_queue.entries_total` maleje, ale `repair_tuning_24h.samples_24h=0` przez >2h, zgłoś warning `REPAIR_TUNING_NO_SAMPLES`.
+- ✅ Nadal domknąć organizacyjnie pojedyncze źródło uruchamiania guardiana (`service` vs `scheduler` vs `manual`) mimo locka kodowego. → DONE 2026-02-14: `i18n_start_all.sh` — kanoniczny start/stop/restart/status wszystkich demonów.
+
 ## 🚨 ANEKS DECYZYJNY (2026-02-13, FINAL)
 
 ### Decyzja właściciela projektu
@@ -81,13 +112,19 @@ Na dzień 2026-02-13 wdrożono krytyczne punkty z planu:
 11. ✅ **Repair queue dla `identical_to_en (translatable)`** (2026-02-13 22:38 UTC):
    - artefakty: `i18n/status/identical_to_en_repair_queue.json` + `i18n/status/identical_to_en_repair_queue_report.jsonl`,
    - priorytet napraw: `es -> pl`, domeny `npc -> server -> talkactions -> ...`.
+12. ✅ **Statusd repair stagnation + daily KPI** (2026-02-14 06:10 UTC):
+   - `statusd_report.json` publikuje `repair_queue` + `stagnation`,
+   - `run_status_doctor()` sygnalizuje `REPAIR_QUEUE_STAGNATION` / `REPAIR_QUEUE_STALE`,
+   - webhook alerting obsługuje `reason_code=repair_queue_stagnation`,
+   - `statusd_daily_report.json/md` ma sekcję `Repair Queue 24h` (trend + flaga stagnacji),
+   - legacy `repair_stagnation_alert.json`/`repair_backlog_trend.jsonl` korzystają z tego samego sygnału progowego.
 
 Cel tych kroków: skierować pracę workera na tłumaczenia wszystkich języków, z priorytetem startowym `es`/`pl`, i wyeliminować fałszywe blokady guard_command.
 
 Kolejne kroki (do realizacji):
 - ✅ health-based policy w guardianie: heartbeat age + progress delta + guard_fail trend + policy states (DONE 2026-02-13),
 - ✅ dopracowanie sekcji dynamicznych w pojedynczym `I18N_STATUS.md` (DONE 2026-02-13: META/LIVE/MIGRATION/TRANSLATION/QUALITY/HISTORY z freshness/active|inactive),
-- ⬜ plan i wdrożenie 3. daemona wspierającego telemetry/status — ✅ DONE (2026-02-13: i18n-statusd.sh MVP, obecnie 8 modułów),
+- ✅ plan i wdrożenie 3. daemona wspierającego telemetry/status — ✅ DONE (2026-02-13: i18n-statusd.sh MVP, obecnie 8 modułów),
 - ✅ guardian restart debounce/backoff dla ścieżki `mtime` (DONE 2026-02-13; `.guardian_restart_state.json` + `i18n/status/guardian_restart_metrics.json` + `.guardian_run.lock`),
 - ✅ przy wydzielonym `statusd` utrzymać zgodność kontraktu `strict_hourly_window` (LIVE/KPI + alarmy) (DONE 2026-02-13),
 - ✅ webhook alerting `stuck/no_progress/doctor_critical` + cooldown/deduplikacja (`statusd_alert_state.json`) (DONE 2026-02-13),
@@ -95,8 +132,10 @@ Kolejne kroki (do realizacji):
 - ✅ dodać jawny artefakt `pending_skip` dla okna 24h (DONE 2026-02-14: `pending_skip_events.jsonl` + `pending_skip_24h_latest.json`).
 - ✅ dodano jawny gate rolloutu języków: `identical_to_en (translatable)` dla PL/ES musi być poniżej progu przez stabilne okno czasu (auto-policy guardiana).
 - ✅ dodano dedykowany repair queue backlogu `identical_to_en` dla PL/ES (DONE 2026-02-13: `identical_to_en_repair_queue.json` + report JSONL).
-- ⬜ operacyjnie ustalić jedno źródło startu guardiana (service/scheduler/manual), aby nie powstawały konkurencyjne starty daemona.
-- ⬜ dodać alert stagnacji repair queue (`identical_to_en`) przy braku spadku top backlogu przez >= 6h.
+- ✅ dodano alert stagnacji repair queue (`identical_to_en`) dla braku spadku top backlogu przez >=6h (DONE 2026-02-14: statusd report/doctor/webhook/daily report).
+- ✅ ujednolicono semantykę nowego `repair_queue.stagnation` z legacy `repair_stagnation_alert.json` (DONE 2026-02-14: jedno źródło progów i reason/status).
+- ✅ operacyjnie ustalić jedno źródło startu guardiana (service/scheduler/manual), aby nie powstawały konkurencyjne starty daemona. → DONE 2026-02-14: `i18n_start_all.sh` — kanoniczny skrypt start/stop/restart/status.
+- ✅ po 24h obserwacji dostroić progi `STATUSD_REPAIR_QUEUE_STAGNATION_*` (window/min_samples/min_drop) do realnego tempa spadku backlogu. → DONE 2026-02-14: defaults OK (HOURS=6, MIN_SAMPLES=6, MIN_DROP=1).
 
 ## 🧭 ANEKS ORKIESTRACJI TRYBÓW (wszystkie funkcje workera)
 

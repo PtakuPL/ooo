@@ -120,8 +120,13 @@ TRANSLATE_LIMIT=0           # --translate-limit N: max kluczy do przetłumaczeni
 TRANSLATIONS_ONLY=false     # --translations-only: tylko tłumaczenia, bez migracji kodu
 TRANSLATIONS_STRICT=false   # Tryb strict: zero nowych kluczy, tylko istniejące wpisy do tłumaczenia
 USE_GOOGLE_TRANSLATE=false  # --use-gt: używaj Google Translate jako fallback po słownikach
+USE_GOOGLE_CLOUD_TRANSLATE=false  # --use-cloud-gt: Google Cloud Translation API (płatne, lepsza jakość)
+GOOGLE_CLOUD_PROJECT="${GOOGLE_CLOUD_PROJECT:-}"  # GCP project ID
+GOOGLE_CLOUD_GLOSSARY="${GOOGLE_CLOUD_GLOSSARY:-}"  # opcjonalny glossary ID
 GT_BATCH_SIZE=50            # ile kluczy tłumaczyć w jednym batchu GT
+GT_CLOUD_BATCH_SIZE=128     # batch size dla Cloud API (większy bo szybsze)
 GT_DELAY=1.5                # sekundy przerwy między batchami GT (anty rate-limit)
+GT_CLOUD_DELAY=0.3          # delay dla Cloud API (mniejszy — oficjalne API)
 GT_BATCH_TIMEOUT=18         # timeout (s) na pojedynczy request translate_batch
 GT_SINGLE_TIMEOUT=7         # timeout (s) na pojedynczy request translate
 FORCED_AUTO_FAST_LANE_MAX_LIMIT="${FORCED_AUTO_FAST_LANE_MAX_LIMIT:-30}"  # AUTO N<=X używa operator fast-lane
@@ -228,6 +233,10 @@ apply_global_quality_mode() {
     QUALITY_AUDIT_EVERY_CYCLES="$audit_every"
 
     USE_GOOGLE_TRANSLATE=true
+    # Jeśli Cloud API skonfigurowane — włącz automatycznie w global quality mode
+    if [ -n "${GOOGLE_CLOUD_PROJECT:-}" ] && [ -n "${GOOGLE_APPLICATION_CREDENTIALS:-}" ]; then
+        USE_GOOGLE_CLOUD_TRANSLATE=true
+    fi
     CROSSREF_AUTO_FIX=true
     if [ "${CROSSREF_AUTO_FIX_LIMIT:-0}" -lt "$crossref_limit" ] 2>/dev/null; then
         CROSSREF_AUTO_FIX_LIMIT="$crossref_limit"
@@ -248,6 +257,9 @@ apply_global_quality_mode() {
     export LANG_VALIDATION_INTERVAL
     export QUALITY_AUDIT_EVERY_CYCLES
     export USE_GOOGLE_TRANSLATE
+    export USE_GOOGLE_CLOUD_TRANSLATE
+    export GOOGLE_CLOUD_PROJECT
+    export GOOGLE_CLOUD_GLOSSARY
     export CROSSREF_AUTO_FIX
     export CROSSREF_AUTO_FIX_LIMIT
 }
@@ -2589,6 +2601,7 @@ migration_data = global_stats.get("migration", {})
 translation_sync_data_gs = global_stats.get("translation_sync", {})
 auto_translate_data = global_stats.get("auto_translate", {})
 idle_data = global_stats.get("idle", {})
+pre_migration_data = global_stats.get("pre_migration", {}) if isinstance(global_stats.get("pre_migration", {}), dict) else {}
 translations_only_mode = (os.environ.get("TRANSLATIONS_ONLY", "false") or "false").lower() == "true"
 
 # ============ GENERUJ LIVE DISPLAY W ZALEŻNOŚCI OD TRYBU ============
@@ -2659,8 +2672,17 @@ elif last_mode in ("MIGRATION", "PRE_MIGRATION"):
         "spells": spells_keys
     }
     current_cat_keys = category_keys.get(last_category.lower(), 0)
-    
+
+    pm_hits = int(pre_migration_data.get("hits", 0) or 0)
+    pm_files_with_hits = int(pre_migration_data.get("files_with_hits", 0) or 0)
+    pm_total_scanned = int(pre_migration_data.get("total_files_scanned", 0) or 0)
+    pm_req_cat = str(pre_migration_data.get("requested_category", last_category) or last_category)
+    if pm_total_scanned <= 0:
+        pm_total_scanned = files_scanned
+
     live_details = f"""│ 📊 Pliki przeskanowane: {files_scanned:>6} (wszystkie kategorie)          │
+│    ├─ PRE_MIGRATION backlog: hits={pm_hits:>5} files={pm_files_with_hits:>5}/{pm_total_scanned:<5} │
+│    ├─ Ostatni skan kategorii: {pm_req_cat[:20]:>20}                      │
 │    ├─ Kategoria {last_category.upper():>6}: {current_cat_keys:>6} kluczy EN                    │
 │    └─ Total kluczy EN: {total_keys:>6}                                 │"""
 
@@ -3742,6 +3764,7 @@ md = f'''# 🌍 System Tłumaczeń I18N — Dashboard na żywo
 | `RESTART` | Restart workera (git pull + exec) |
 | `CONFIG` | Wyświetl aktualną konfigurację |
 | `REPORT` / `LANGS` | Raport coverage / lista języków |
+| `PREMIG:<cat\|all>` | Wymuś szczegółowy skan PRE_MIGRATION (plik/linia/treść) |
 | `SKIP` / `PAUSE:<N>` / `IDLE` | Kontrola cyklu |
 
 ---
@@ -10909,7 +10932,7 @@ auto_translate_keys() {
     fi
 
     local _at_out _at_rc _translated _placeholders
-    _at_out=$(USE_GOOGLE_TRANSLATE="$USE_GOOGLE_TRANSLATE" GT_BATCH_SIZE="$GT_BATCH_SIZE" GT_DELAY="$GT_DELAY" GT_BATCH_TIMEOUT="$GT_BATCH_TIMEOUT" GT_SINGLE_TIMEOUT="$GT_SINGLE_TIMEOUT" AUTO_TRANSLATE_COMMAND_FILE="${COMMAND_FILE:-.worker_command}" AUTO_TRANSLATE_MID_BATCH_CMD_CHECK_EVERY="${AUTO_TRANSLATE_MID_BATCH_CMD_CHECK_EVERY:-4}" AUTO_TRANSLATE_OPERATOR_FAST_MODE="${_operator_fast_mode:-false}" AUTO_TRANSLATE_OPERATOR_FAST_LIMIT_MAX="${FORCED_AUTO_FAST_LANE_MAX_LIMIT:-30}" python3 - "$target_lang" "$json_file" "$translate_limit" "$strict_mode" << 'AUTOTRANSPY'
+    _at_out=$(USE_GOOGLE_TRANSLATE="$USE_GOOGLE_TRANSLATE" USE_GOOGLE_CLOUD_TRANSLATE="${USE_GOOGLE_CLOUD_TRANSLATE:-false}" GOOGLE_CLOUD_PROJECT="${GOOGLE_CLOUD_PROJECT:-}" GOOGLE_CLOUD_GLOSSARY="${GOOGLE_CLOUD_GLOSSARY:-}" GOOGLE_APPLICATION_CREDENTIALS="${GOOGLE_APPLICATION_CREDENTIALS:-}" GT_BATCH_SIZE="$GT_BATCH_SIZE" GT_CLOUD_BATCH_SIZE="${GT_CLOUD_BATCH_SIZE:-128}" GT_DELAY="$GT_DELAY" GT_CLOUD_DELAY="${GT_CLOUD_DELAY:-0.3}" GT_BATCH_TIMEOUT="$GT_BATCH_TIMEOUT" GT_SINGLE_TIMEOUT="$GT_SINGLE_TIMEOUT" AUTO_TRANSLATE_COMMAND_FILE="${COMMAND_FILE:-.worker_command}" AUTO_TRANSLATE_MID_BATCH_CMD_CHECK_EVERY="${AUTO_TRANSLATE_MID_BATCH_CMD_CHECK_EVERY:-4}" AUTO_TRANSLATE_OPERATOR_FAST_MODE="${_operator_fast_mode:-false}" AUTO_TRANSLATE_OPERATOR_FAST_LIMIT_MAX="${FORCED_AUTO_FAST_LANE_MAX_LIMIT:-30}" python3 - "$target_lang" "$json_file" "$translate_limit" "$strict_mode" << 'AUTOTRANSPY'
 import json
 import os
 import re
@@ -10953,13 +10976,19 @@ except Exception:
 
 # Google Translate config (from env)
 use_google_translate = os.environ.get("USE_GOOGLE_TRANSLATE", "false") == "true"
+use_google_cloud = os.environ.get("USE_GOOGLE_CLOUD_TRANSLATE", "false") == "true"
+gcloud_project = os.environ.get("GOOGLE_CLOUD_PROJECT", "").strip()
+gcloud_glossary = os.environ.get("GOOGLE_CLOUD_GLOSSARY", "").strip()
+gcloud_credentials = os.environ.get("GOOGLE_APPLICATION_CREDENTIALS", "").strip()
 gt_batch_size = int(os.environ.get("GT_BATCH_SIZE", "50"))
+gt_cloud_batch_size = int(os.environ.get("GT_CLOUD_BATCH_SIZE", "128"))
 def _env_float(name, default):
     try:
         return float(os.environ.get(name, str(default)) or default)
     except Exception:
         return float(default)
 gt_delay = _env_float("GT_DELAY", 1.5)
+gt_cloud_delay = _env_float("GT_CLOUD_DELAY", 0.3)
 gt_batch_timeout = _env_float("GT_BATCH_TIMEOUT", 18.0)
 gt_single_timeout = _env_float("GT_SINGLE_TIMEOUT", 7.0)
 if gt_delay < 0:
@@ -10968,6 +10997,58 @@ if gt_batch_timeout < 1:
     gt_batch_timeout = 18.0
 if gt_single_timeout < 1:
     gt_single_timeout = 7.0
+
+# ── Google Cloud Translation API v3 ─────────────────────────────────────────
+_cloud_client = None
+_cloud_parent = None
+_cloud_glossary_config = None
+_cloud_available = False
+
+if use_google_cloud and gcloud_project:
+    try:
+        from google.cloud import translate_v3 as translate
+        _cloud_client = translate.TranslationServiceClient()
+        _cloud_parent = f"projects/{gcloud_project}/locations/global"
+        if gcloud_glossary:
+            _cloud_glossary_config = translate.TranslateTextGlossaryConfig(
+                glossary=f"projects/{gcloud_project}/locations/global/glossaries/{gcloud_glossary}"
+            )
+        _cloud_available = True
+        print(f"☁️  Google Cloud Translation API: AKTYWNE (project={gcloud_project}, glossary={gcloud_glossary or 'brak'})")
+    except ImportError:
+        print("⚠️ google-cloud-translate nie zainstalowany: pip install google-cloud-translate")
+        print("   Fallback → darmowy deep_translator")
+    except Exception as e:
+        print(f"⚠️ Cloud Translation init error: {e}")
+        print("   Fallback → darmowy deep_translator")
+
+def _cloud_translate_batch(texts: list, target_lang_code: str) -> list:
+    """Tłumacz batch tekstów przez Google Cloud Translation API v3.
+    Zwraca listę przetłumaczonych tekstów (lub None dla błędów)."""
+    if not _cloud_available or not _cloud_client:
+        return [None] * len(texts)
+    try:
+        # Cloud API v3 obsługuje batch do 1024 segmentów
+        response = _cloud_client.translate_text(
+            contents=texts,
+            target_language_code=target_lang_code,
+            source_language_code="en",
+            parent=_cloud_parent,
+            glossary_config=_cloud_glossary_config,
+            mime_type="text/plain",
+        )
+        results = []
+        for translation in response.translations:
+            results.append(translation.translated_text)
+        # Jeśli użyto glosariusza, wyniki mogą być w glossary_translations
+        if response.glossary_translations:
+            for i, gt in enumerate(response.glossary_translations):
+                if gt.translated_text:
+                    results[i] = gt.translated_text
+        return results
+    except Exception as e:
+        print(f"⚠️ Cloud API batch error: {e}")
+        return [None] * len(texts)
 
 # Mapowanie kodów języków i18n -> kody Google Translate
 GT_LANG_MAP = {
@@ -13184,10 +13265,12 @@ for key, en_text in iter_items:
             placeholders += 1
 
 # ============================================================================
-# GOOGLE TRANSLATE — batch fallback
+# GOOGLE TRANSLATE — batch fallback (Cloud API first → free GT fallback)
 # ============================================================================
 gt_translated = 0
 gt_guard_fail = 0
+cloud_translated = 0
+free_gt_translated = 0
 
 if mid_batch_preempt and gt_pending:
     print(f"⚡ MID-BATCH PREEMPT: pomijam GT fallback (pozostało {len(gt_pending)} kluczy) aby przyjąć pending command")
@@ -13195,61 +13278,151 @@ if mid_batch_preempt and gt_pending:
 if use_google_translate and gt_pending and not mid_batch_preempt:
     import time
     gt_lang = _gt_lang_code(target_lang)
-    try:
-        from deep_translator import GoogleTranslator
-        translator = GoogleTranslator(source='en', target=gt_lang)
-        print(f"🌍 GT: {len(gt_pending)} kluczy do tłumaczenia via Google Translate ({gt_lang})")
 
-        # Limit GT do translate_limit (jeśli ustawiony)
-        gt_todo = gt_pending
-        if translate_limit > 0:
-            remaining = translate_limit - translated
-            if remaining <= 0:
-                gt_todo = []
-                print(f"⚠️ GT: limit tłumaczeń osiągnięty ({translate_limit}), pomijam GT")
-            else:
-                gt_todo = gt_pending[:remaining]
+    # Limit GT do translate_limit (jeśli ustawiony)
+    gt_todo = gt_pending
+    if translate_limit > 0:
+        remaining = translate_limit - translated
+        if remaining <= 0:
+            gt_todo = []
+            print(f"⚠️ GT: limit tłumaczeń osiągnięty ({translate_limit}), pomijam GT")
+        else:
+            gt_todo = gt_pending[:remaining]
 
-        for batch_start in range(0, len(gt_todo), gt_batch_size):
+    # ── FAZA 1: Google Cloud Translation API (jeśli dostępne) ────────────
+    cloud_failed_keys = []  # klucze które Cloud API nie przetłumaczył → fallback do free GT
+
+    if _cloud_available and gt_todo:
+        _cloud_batch_sz = gt_cloud_batch_size
+        print(f"☁️  Cloud API: {len(gt_todo)} kluczy do tłumaczenia ({gt_lang}, batch={_cloud_batch_sz})")
+
+        for batch_start in range(0, len(gt_todo), _cloud_batch_sz):
             if command_file and os.path.exists(command_file):
                 mid_batch_preempt = True
-                print(f"⚡ MID-BATCH PREEMPT: wykryto pending command podczas GT batch (batch_start={batch_start})")
+                print(f"⚡ MID-BATCH PREEMPT: pending command podczas Cloud batch (batch_start={batch_start})")
+                # Remaining keys → cloud_failed_keys for potential free GT
+                for remaining_item in gt_todo[batch_start:]:
+                    cloud_failed_keys.append(remaining_item)
                 break
-            batch = gt_todo[batch_start:batch_start + gt_batch_size]
-            # Przygotuj teksty z ochroną placeholderów
+            batch = gt_todo[batch_start:batch_start + _cloud_batch_sz]
             protected_texts = []
-            meta = []  # (key, en_text, hash, suspicious, replacements)
+            meta = []
             for key, en_text, h, suspicious in batch:
                 protected, replacements = _protect_placeholders(str(en_text))
                 protected_texts.append(protected)
                 meta.append((key, en_text, h, suspicious, replacements))
 
-            # Batch translate
-            try:
-                if len(protected_texts) == 1:
-                    gt_results = [_call_with_timeout(gt_single_timeout, translator.translate, protected_texts[0])]
+            cloud_results = _cloud_translate_batch(protected_texts, gt_lang)
+
+            for i, (key, en_text, h, suspicious, replacements) in enumerate(meta):
+                if i >= len(cloud_results) or cloud_results[i] is None:
+                    # Cloud API nie przetłumaczył → zapisz do fallback free GT
+                    cloud_failed_keys.append((key, en_text, h, suspicious))
+                    continue
+
+                candidate = _restore_placeholders(cloud_results[i], replacements)
+                candidate, _af_fixes = _auto_fix_translation(en_text, candidate, target_lang)
+
+                ok, reason = validate_candidate(en_text, candidate)
+                if ok:
+                    issues = detect_suspicious(en_text, candidate, target_lang, key)
+                    issues.extend(validate_per_lang(en_text, candidate, target_lang, key))
+                    max_sev = _max_severity(issues)
+                    if max_sev in ("CRITICAL",) or (issues and len(issues) > 3):
+                        # Cloud API dał złe tłumaczenie → próbuj free GT
+                        cloud_failed_keys.append((key, en_text, h, suspicious))
+                        _append_jsonl(suspicious_log_path, {
+                            "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+                            "lang": target_lang, "category": json_file, "key": key,
+                            "source": "google_cloud", "severity": max_sev,
+                            "issues": issues, "action": "fallback_to_free_gt",
+                            "en": str(en_text), "translated": str(candidate),
+                        })
+                        continue
+                    if issues:
+                        if max_sev != "LOW":
+                            suspicious_detected += 1
+                        if max_sev in ("HIGH", "CRITICAL"):
+                            suspicious_high += 1
+                        _append_jsonl(suspicious_log_path, {
+                            "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+                            "lang": target_lang, "category": json_file, "key": key,
+                            "source": "google_cloud", "severity": max_sev,
+                            "issues": issues, "en": str(en_text), "translated": str(candidate),
+                        })
+                    lang_data[key] = candidate
+                    gt_translated += 1
+                    cloud_translated += 1
+                    translated += 1
+                    tm_upsert(key, h, candidate, "google_cloud", 0.95)
+                    tm_updates += 1
+                    recent_translations.append({
+                        "key": key, "en": en_text,
+                        "translated": candidate, "source": "google_cloud",
+                    })
                 else:
-                    gt_results = _call_with_timeout(gt_batch_timeout, translator.translate_batch, protected_texts)
-                if gt_results is None:
-                    gt_results = protected_texts  # fallback — użyj oryginału
-            except Exception as e:
-                print(f"⚠️ GT batch error/timeout: {e}")
-                # Fallback: single requests z krótkim timeoutem (lepsza responsywność)
-                gt_results = []
-                for protected_text in protected_texts:
-                    if command_file and os.path.exists(command_file):
-                        mid_batch_preempt = True
-                        print("⚡ MID-BATCH PREEMPT: pending command podczas GT single fallback")
-                        break
-                    try:
-                        translated_single = _call_with_timeout(gt_single_timeout, translator.translate, protected_text)
-                    except Exception:
-                        translated_single = protected_text
-                    if translated_single is None:
-                        translated_single = protected_text
-                    gt_results.append(translated_single)
-                if len(gt_results) < len(protected_texts):
-                    gt_results.extend(protected_texts[len(gt_results):])
+                    # Walidacja strukturalna nie przeszła → fallback do free GT
+                    cloud_failed_keys.append((key, en_text, h, suspicious))
+
+            if batch_start + _cloud_batch_sz < len(gt_todo):
+                time.sleep(gt_cloud_delay)
+
+        if cloud_translated > 0:
+            print(f"☁️  Cloud API: {cloud_translated} przetłumaczonych")
+        if cloud_failed_keys:
+            print(f"☁️  Cloud API: {len(cloud_failed_keys)} kluczy → fallback do free GT")
+
+        # Podmień gt_todo na klucze które Cloud nie obsłużył
+        gt_todo = cloud_failed_keys
+
+    # ── FAZA 2: Free Google Translate (deep_translator) — fallback ────────
+    if gt_todo and not mid_batch_preempt:
+        try:
+            from deep_translator import GoogleTranslator
+            translator = GoogleTranslator(source='en', target=gt_lang)
+            _gt_source_label = "free GT" if _cloud_available else "GT"
+            print(f"🌍 {_gt_source_label}: {len(gt_todo)} kluczy do tłumaczenia via Google Translate ({gt_lang})")
+
+            for batch_start in range(0, len(gt_todo), gt_batch_size):
+                if command_file and os.path.exists(command_file):
+                    mid_batch_preempt = True
+                    print(f"⚡ MID-BATCH PREEMPT: wykryto pending command podczas GT batch (batch_start={batch_start})")
+                    break
+                batch = gt_todo[batch_start:batch_start + gt_batch_size]
+                # Przygotuj teksty z ochroną placeholderów
+                protected_texts = []
+                meta = []  # (key, en_text, hash, suspicious, replacements)
+                for key, en_text, h, suspicious in batch:
+                    protected, replacements = _protect_placeholders(str(en_text))
+                    protected_texts.append(protected)
+                    meta.append((key, en_text, h, suspicious, replacements))
+
+                # Batch translate
+                try:
+                    if len(protected_texts) == 1:
+                        gt_results = [_call_with_timeout(gt_single_timeout, translator.translate, protected_texts[0])]
+                    else:
+                        gt_results = _call_with_timeout(gt_batch_timeout, translator.translate_batch, protected_texts)
+                    if gt_results is None:
+                        gt_results = protected_texts  # fallback — użyj oryginału
+                except Exception as e:
+                    print(f"⚠️ GT batch error/timeout: {e}")
+                    # Fallback: single requests z krótkim timeoutem (lepsza responsywność)
+                    gt_results = []
+                    for protected_text in protected_texts:
+                        if command_file and os.path.exists(command_file):
+                            mid_batch_preempt = True
+                            print("⚡ MID-BATCH PREEMPT: pending command podczas GT single fallback")
+                            break
+                        try:
+                            translated_single = _call_with_timeout(gt_single_timeout, translator.translate, protected_text)
+                        except Exception:
+                            translated_single = protected_text
+                        if translated_single is None:
+                            translated_single = protected_text
+                        gt_results.append(translated_single)
+                    if len(gt_results) < len(protected_texts):
+                        gt_results.extend(protected_texts[len(gt_results):])
 
             # Zastosuj wyniki
             for i, (key, en_text, h, suspicious, replacements) in enumerate(meta):
@@ -13348,6 +13521,7 @@ if use_google_translate and gt_pending and not mid_batch_preempt:
                         _append_jsonl(suspicious_log_path, log_entry)
                     lang_data[key] = candidate
                     gt_translated += 1
+                    free_gt_translated += 1
                     translated += 1
                     tm_upsert(key, h, candidate, "google_translate", 0.90)
                     tm_updates += 1
@@ -13379,26 +13553,30 @@ if use_google_translate and gt_pending and not mid_batch_preempt:
             if batch_start + gt_batch_size < len(gt_todo):
                 time.sleep(gt_delay)
 
-        print(f"✅ GT: {gt_translated} przetłumaczonych, {gt_guard_fail} odrzuconych przez guard")
+            print(f"✅ Free GT: {free_gt_translated} przetłumaczonych, {gt_guard_fail} odrzuconych przez guard")
 
-    except ImportError:
-        print("⚠️ GT: deep-translator nie zainstalowany (pip install deep-translator)")
-        for key, en_text, h, suspicious in gt_pending:
-            _enqueue_deferred_translation(status_dir, target_lang, json_file, key, en_text, "gt_import_error")
-            if not strict_mode:
-                lang_data[key] = f"[{target_lang.upper()}] {en_text}"
-                placeholders += 1
-            else:
-                skipped_not_placeholder += 1
-    except Exception as e:
-        print(f"⚠️ GT: błąd inicjalizacji: {e}")
-        for key, en_text, h, suspicious in gt_pending:
-            _enqueue_deferred_translation(status_dir, target_lang, json_file, key, en_text, f"gt_init_error_{type(e).__name__}")
-            if not strict_mode:
-                lang_data[key] = f"[{target_lang.upper()}] {en_text}"
-                placeholders += 1
-            else:
-                skipped_not_placeholder += 1
+        except ImportError:
+            print("⚠️ GT: deep-translator nie zainstalowany (pip install deep-translator)")
+            for key, en_text, h, suspicious in gt_todo:
+                _enqueue_deferred_translation(status_dir, target_lang, json_file, key, en_text, "gt_import_error")
+                if not strict_mode:
+                    lang_data[key] = f"[{target_lang.upper()}] {en_text}"
+                    placeholders += 1
+                else:
+                    skipped_not_placeholder += 1
+        except Exception as e:
+            print(f"⚠️ GT: błąd inicjalizacji: {e}")
+            for key, en_text, h, suspicious in gt_todo:
+                _enqueue_deferred_translation(status_dir, target_lang, json_file, key, en_text, f"gt_init_error_{type(e).__name__}")
+                if not strict_mode:
+                    lang_data[key] = f"[{target_lang.upper()}] {en_text}"
+                    placeholders += 1
+                else:
+                    skipped_not_placeholder += 1
+
+    # Podsumowanie GT (Cloud + Free łącznie)
+    if cloud_translated > 0 or free_gt_translated > 0:
+        print(f"📊 GT łącznie: cloud={cloud_translated} + free={free_gt_translated} = {gt_translated} przetłumaczonych")
 
 # ── Guard: zapobiegaj pustym wartościom (defense-in-depth) ─────────────────
 _empty_guard_fixed = 0
@@ -14264,6 +14442,11 @@ run_pre_migration_scan() {
     echo "$out" | grep '^PREMIG\[' >&2 || true
 
     premig_line=$(echo "$out" | grep '__PREMIG__' | tail -n 1)
+    if [ -z "$premig_line" ]; then
+        echo "Brak linii __PREMIG__ w odpowiedzi skanera" >&2
+        echo "$out" >&2
+        return 4
+    fi
     hits=$(echo "$premig_line" | grep -oE 'hits=[0-9]+' | cut -d= -f2)
     files_with_hits=$(echo "$premig_line" | grep -oE 'files_with_hits=[0-9]+' | cut -d= -f2)
     files_scanned=$(echo "$premig_line" | grep -oE 'files_scanned=[0-9]+' | cut -d= -f2)
@@ -19822,6 +20005,19 @@ PYFORCEDMETRIC
                     USE_GOOGLE_TRANSLATE=true
                     shift
                     ;;
+                --use-cloud-gt)
+                    USE_GOOGLE_CLOUD_TRANSLATE=true
+                    USE_GOOGLE_TRANSLATE=true  # Cloud API włącza też GT pipeline
+                    shift
+                    ;;
+                --cloud-project)
+                    GOOGLE_CLOUD_PROJECT="${2:-}"
+                    shift 2
+                    ;;
+                --cloud-glossary)
+                    GOOGLE_CLOUD_GLOSSARY="${2:-}"
+                    shift 2
+                    ;;
                 --gt-batch)
                     GT_BATCH_SIZE="${2:-50}"
                     shift 2
@@ -20734,13 +20930,17 @@ REPORTPY
                 PRE_MIGRATION)
                     # === PRE-MIGRACJA: tylko skan i statystyki, BEZ modyfikacji plików ===
                     echo "🔍 TRYB: PRE_MIGRATION (skan) kategorii '$MODE_CAT' ($MODE_COUNT plików wymaga migracji)"
+                    MODE_COUNT_NUM="${MODE_COUNT:-0}"
+                    if ! [[ "$MODE_COUNT_NUM" =~ ^[0-9]+$ ]]; then
+                        MODE_COUNT_NUM=0
+                    fi
 
-                    status_update_activity "running" "$CYCLE" "PRE_MIGRATION" "scan_start" "$MODE_CAT" "-" "scanning" 0 "${MODE_COUNT:-0}" "files" 0
+                    status_update_activity "running" "$CYCLE" "PRE_MIGRATION" "scan_start" "$MODE_CAT" "-" "scanning" 0 "$MODE_COUNT_NUM" "files" 0
 
                     if [ "$MODE_CAT" = "pending_skip" ] || [ "$MODE_CAT" = "gate_blocked" ] || [ "$MODE_CAT" = "pending" ]; then
                         echo "   ⏳ Kategorie na skip/wait — pomijam"
                         status_update_activity "running" "$CYCLE" "PRE_MIGRATION" "pending_skip" "$MODE_CAT" "-" "scan skip" 0 0 "files" 0
-                        log_pending_skip_event "$CYCLE" "${MODE_COUNT:-0}" "pre_migration_skip"
+                        log_pending_skip_event "$CYCLE" "$MODE_COUNT_NUM" "pre_migration_skip"
                         # Oznacz migracje jako "done" — pozwól przejść do tłumaczeń
                         python3 -c "
 import json, os
@@ -20757,67 +20957,42 @@ with open(state_path, 'w') as f:
                         continue
                     fi
 
-                    # Skan: zlicz pliki wymagające migracji per kategoria (bez modyfikacji!)
-                    echo "   📊 Skan statystyk PRE_MIGRATION..."
-                    PRE_MIG_STATS=$(python3 << 'PREMIGPY'
-import json, os, sys
+                    # Skan: szczegolowy backlog PRE_MIGRATION (plik/linia/tresc)
+                    echo "   📊 Skan szczegolowy PRE_MIGRATION..."
+                    PREMIG_OUT=$(run_pre_migration_scan "$MODE_CAT" "$I18N_SCOPE")
+                    PREMIG_RC=$?
+                    if [ "$PREMIG_RC" -ne 0 ]; then
+                        echo "   ❌ PRE_MIGRATION scan failed (category=$MODE_CAT)"
+                        status_log_error "$CYCLE" "PRE_MIGRATION" "scan_error" "$MODE_CAT" "-" "pre_migration scanner failed" "rc=$PREMIG_RC"
+                        break
+                    fi
+                    read -r PREMIG_HITS PREMIG_FILES_WITH_HITS PREMIG_FILES_SCANNED <<< "$PREMIG_OUT"
 
-I18N_DIR = "i18n"
-status_dir = os.path.join(I18N_DIR, "status")
-os.makedirs(status_dir, exist_ok=True)
+                    PREMIG_HITS=${PREMIG_HITS:-0}
+                    PREMIG_FILES_WITH_HITS=${PREMIG_FILES_WITH_HITS:-0}
+                    PREMIG_FILES_SCANNED=${PREMIG_FILES_SCANNED:-0}
+                    echo "   ✅ PRE_MIGRATION: files_scanned=$PREMIG_FILES_SCANNED files_with_hits=$PREMIG_FILES_WITH_HITS hits=$PREMIG_HITS"
+                    echo "   📈 Wynik: skan zakonczony (0 plikow zmodyfikowanych)"
 
-# Załaduj category state
-state_path = ".i18n_category_state.json"
+                    # Oznacz migracje jako done (migration code path jest stale zablokowany)
+                    python3 -c "
+import json, os
+state_path = '.i18n_category_state.json'
 if os.path.exists(state_path):
-    with open(state_path, "r") as f:
+    with open(state_path, 'r') as f:
         state = json.load(f)
 else:
     state = {}
-
-cat_name = os.environ.get("MODE_CAT", "unknown")
-needs_count = int(os.environ.get("MODE_COUNT", "0") or "0")
-
-# Zapisz wynik skanu do pre_migration_scan.json
-scan_path = os.path.join(status_dir, "pre_migration_scan.json")
-scan_data = {}
-if os.path.exists(scan_path):
-    try:
-        with open(scan_path, "r") as f:
-            scan_data = json.load(f)
-    except:
-        scan_data = {}
-
-from datetime import datetime, timezone
-scan_data[cat_name] = {
-    "needs_migration": needs_count,
-    "scanned_at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
-}
-
-with open(scan_path, "w") as f:
-    json.dump(scan_data, f, indent=2, ensure_ascii=False)
-
-# Oznacz kategorię jako "przetworzoną" (skan zakończony) i migrations_done=True
-state["migrations_done"] = True
-if "last_processed" not in state:
-    state["last_processed"] = {}
-state["last_processed"][cat_name] = {
-    "count": 0,
-    "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
-    "mode": "pre_migration_scan",
-}
-
-with open(state_path, "w") as f:
+state['migrations_done'] = True
+with open(state_path, 'w') as f:
     json.dump(state, f, indent=2, ensure_ascii=False)
+" 2>/dev/null || true
 
-print(f"scan_done:{cat_name}:{needs_count}")
-PREMIGPY
-                    )
-                    echo "   ✅ PRE_MIGRATION skan: $PRE_MIG_STATS"
-                    echo "   📈 Wynik: skan zakończony (0 plików zmodyfikowanych, 0 kluczy dodanych)"
+                    # Zachowaj dotychczasowy backoff behavior dla dispatcher fallback
                     update_category_state "$MODE_CAT" "0"
 
-                    status_log_op "$CYCLE" "PRE_MIGRATION" "scan_done" "$MODE_CAT" "-" "ok" "scan only, needs=${MODE_COUNT:-0}" "0" "0"
-                    status_update_activity "running" "$CYCLE" "PRE_MIGRATION" "scan_done" "$MODE_CAT" "-" "scan: ${MODE_COUNT:-0} files need migration" 0 0 "files" 0
+                    status_log_op "$CYCLE" "PRE_MIGRATION" "scan_done" "$MODE_CAT" "-" "ok" "scan backlog files_scanned=$PREMIG_FILES_SCANNED files_with_hits=$PREMIG_FILES_WITH_HITS hits=$PREMIG_HITS"
+                    status_update_activity "running" "$CYCLE" "PRE_MIGRATION" "scan_done" "$MODE_CAT" "-" "scan backlog hits=$PREMIG_HITS files_with_hits=$PREMIG_FILES_WITH_HITS" "$PREMIG_HITS" "$PREMIG_FILES_SCANNED" "hits" 0
                     ;;
 
                 COMPACT_KEYS)
@@ -21326,6 +21501,28 @@ elif mode_type == 'IDLE':
         'last_scan': datetime.now().isoformat()
     }
 
+# Metryki szczegolowego backlogu PRE_MIGRATION (plik/linia/tresc)
+try:
+    premig_latest = os.path.join('i18n', 'status', 'pre_migration_todo', 'pre_migration_todo_latest.json')
+    if os.path.exists(premig_latest):
+        with open(premig_latest, encoding='utf-8') as f:
+            pm = json.load(f)
+        categories = pm.get('categories_scanned', [])
+        if not isinstance(categories, list):
+            categories = []
+        data['pre_migration'] = {
+            'hits': to_int(pm.get('hits', 0)),
+            'files_with_hits': to_int(pm.get('files_with_hits', 0)),
+            'total_files_scanned': to_int(pm.get('total_files_scanned', 0)),
+            'requested_category': str(pm.get('requested_category', '') or ''),
+            'categories_scanned': categories,
+            'categories_scanned_count': len(categories),
+            'generated_at_utc': str(pm.get('generated_at_utc', '') or ''),
+            'latest_file': premig_latest,
+        }
+except Exception:
+    pass
+
 # ── Niezależna sekcja migration (LIVE/registry) w każdym trybie ────────
 # Dzięki temu migration.keys_extracted_live jest zawsze aktualne.
 if 'migration' not in data or not isinstance(data.get('migration'), dict) or 'keys_extracted_live' not in data.get('migration', {}):
@@ -21597,6 +21794,7 @@ print(total)
         echo "  CONFIG                    Wyświetl aktualną konfigurację"
         echo "  REPORT                    Raport coverage wszystkich języków"
         echo "  LANGS                     Lista dostępnych języków"
+        echo "  PREMIG:<cat|all>          Wymuś szczegółowy skan PRE_MIGRATION (plik/linia/tresc)"
         echo "  SKIP / PAUSE:<N> / IDLE   Kontrola cyklu"
         echo ""
         echo "  === Plik worker_config.json (edytuj ręcznie, worker wczyta co cykl) ==="

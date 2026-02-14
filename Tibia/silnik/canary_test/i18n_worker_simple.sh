@@ -13363,22 +13363,13 @@ if use_google_translate and gt_pending and not mid_batch_preempt:
     import time
     gt_lang = _gt_lang_code(target_lang)
 
-    # GT ma gwarantowany minimalny budżet — TM nie może go zablokować.
-    # GT dostaje min(len(gt_pending), max(gt_min_budget, remaining)).
-    # gt_min_budget = 50% translate_limit lub 40 kluczy (cokolwiek jest większe).
+    # GT przetwarza WSZYSTKO z gt_pending — brak sztucznego limitu.
+    # Jeśli GT sam narzuci rate-limit (429), worker czeka 5-10 min i retryuje.
     gt_todo = gt_pending
-    if translate_limit > 0:
-        remaining = translate_limit - translated
-        gt_min_budget = max(int(translate_limit * 0.5), 40)
-        gt_effective_limit = max(remaining, gt_min_budget)
-        if gt_effective_limit <= 0:
-            gt_effective_limit = gt_min_budget
-        if len(gt_pending) > gt_effective_limit:
-            gt_todo = gt_pending[:gt_effective_limit]
-            _gt_overflow_to_deferred = gt_pending[gt_effective_limit:]
-            print(f"🔄 GT: {len(gt_pending)} kluczy w kolejce, limit={gt_effective_limit} (min_budget={gt_min_budget}), overflow={len(_gt_overflow_to_deferred)} → deferred queue")
-        else:
-            gt_todo = gt_pending
+    _GT_RATE_LIMIT_COOLDOWN = 300  # 5 minut cooldown przy 429
+    _GT_RATE_LIMIT_MAX_RETRIES = 3  # max 3 retry (5+7+10 = 22 min total)
+    _gt_rate_limited = False
+    _gt_rate_limit_retry = 0
 
     # ── FAZA 1: Google Cloud Translation API (jeśli dostępne) ────────────
     cloud_failed_keys = []  # klucze które Cloud API nie przetłumaczył → fallback do free GT
@@ -13474,7 +13465,9 @@ if use_google_translate and gt_pending and not mid_batch_preempt:
             _gt_source_label = "free GT" if _cloud_available else "GT"
             print(f"🌍 {_gt_source_label}: {len(gt_todo)} kluczy do tłumaczenia via Google Translate ({gt_lang})")
 
-            for batch_start in range(0, len(gt_todo), gt_batch_size):
+            _gt_batch_idx = 0
+            while _gt_batch_idx < len(gt_todo):
+                batch_start = _gt_batch_idx
                 if command_file and os.path.exists(command_file):
                     mid_batch_preempt = True
                     print(f"⚡ MID-BATCH PREEMPT: wykryto pending command podczas GT batch (batch_start={batch_start})")
@@ -13488,7 +13481,8 @@ if use_google_translate and gt_pending and not mid_batch_preempt:
                     protected_texts.append(protected)
                     meta.append((key, en_text, h, suspicious, replacements))
 
-                # Batch translate
+                # Batch translate z detekcją rate-limit
+                _gt_rate_hit_this_batch = False
                 try:
                     if len(protected_texts) == 1:
                         gt_results = [_call_with_timeout(gt_single_timeout, translator.translate, protected_texts[0])]
@@ -13497,9 +13491,34 @@ if use_google_translate and gt_pending and not mid_batch_preempt:
                     if gt_results is None:
                         gt_results = protected_texts  # fallback — użyj oryginału
                 except Exception as e:
-                    print(f"⚠️ GT batch error/timeout: {e}")
+                    _err_str = str(e).lower()
+                    # Detekcja rate-limit (HTTP 429, TooManyRequests, quota exceeded)
+                    if '429' in _err_str or 'too many' in _err_str or 'rate' in _err_str or 'quota' in _err_str:
+                        _gt_rate_limit_retry += 1
+                        if _gt_rate_limit_retry <= _GT_RATE_LIMIT_MAX_RETRIES:
+                            _cooldown = _GT_RATE_LIMIT_COOLDOWN + (_gt_rate_limit_retry - 1) * 120  # 5min, 7min, 9min
+                            _remaining_keys = len(gt_todo) - batch_start
+                            print(f"⏳ GT RATE LIMIT (429): retry {_gt_rate_limit_retry}/{_GT_RATE_LIMIT_MAX_RETRIES}, czekam {_cooldown}s ({_cooldown//60} min), zostało {_remaining_keys} kluczy")
+                            sys.stdout.flush()
+                            time.sleep(_cooldown)
+                            # Re-init translator po cooldown
+                            try:
+                                translator = GoogleTranslator(source='en', target=gt_lang)
+                            except Exception:
+                                pass
+                            continue  # retry ten sam batch_start (nie inkrementuj _gt_batch_idx)
+                        else:
+                            print(f"⛔ GT RATE LIMIT: wyczerpano {_GT_RATE_LIMIT_MAX_RETRIES} retries, zapisuję resztę do deferred")
+                            for remaining_item in gt_todo[batch_start:]:
+                                _enqueue_deferred_translation(status_dir, target_lang, json_file,
+                                    remaining_item[0], remaining_item[1], "gt_rate_limit_exhausted")
+                            _gt_rate_limited = True
+                            break
+                    else:
+                        print(f"⚠️ GT batch error/timeout: {e}")
                     # Fallback: single requests z krótkim timeoutem (lepsza responsywność)
                     gt_results = []
+                    _single_rate_hit = False
                     for protected_text in protected_texts:
                         if command_file and os.path.exists(command_file):
                             mid_batch_preempt = True
@@ -13507,13 +13526,21 @@ if use_google_translate and gt_pending and not mid_batch_preempt:
                             break
                         try:
                             translated_single = _call_with_timeout(gt_single_timeout, translator.translate, protected_text)
-                        except Exception:
+                        except Exception as se:
+                            _se_str = str(se).lower()
+                            if '429' in _se_str or 'too many' in _se_str or 'rate' in _se_str or 'quota' in _se_str:
+                                _single_rate_hit = True
+                                translated_single = protected_text
+                                break  # nie próbuj więcej — rate limited
                             translated_single = protected_text
                         if translated_single is None:
                             translated_single = protected_text
                         gt_results.append(translated_single)
                     if len(gt_results) < len(protected_texts):
                         gt_results.extend(protected_texts[len(gt_results):])
+                    # Jeśli single fallback też dostał rate-limit → cooldown+retry
+                    if _single_rate_hit:
+                        _gt_rate_hit_this_batch = True
 
             # Zastosuj wyniki
             for i, (key, en_text, h, suspicious, replacements) in enumerate(meta):
@@ -13640,11 +13667,37 @@ if use_google_translate and gt_pending and not mid_batch_preempt:
                     else:
                         skipped_not_placeholder += 1
 
-            # Rate limit delay między batchami
-            if batch_start + gt_batch_size < len(gt_todo):
-                time.sleep(gt_delay)
+                # Rate limit delay między batchami + rate-limit retry
+                if _gt_rate_hit_this_batch:
+                    _gt_rate_limit_retry += 1
+                    if _gt_rate_limit_retry <= _GT_RATE_LIMIT_MAX_RETRIES:
+                        _cooldown = _GT_RATE_LIMIT_COOLDOWN + (_gt_rate_limit_retry - 1) * 120
+                        _remaining_keys = len(gt_todo) - (batch_start + gt_batch_size)
+                        print(f"⏳ GT RATE LIMIT (single fallback): retry {_gt_rate_limit_retry}/{_GT_RATE_LIMIT_MAX_RETRIES}, czekam {_cooldown}s ({_cooldown//60} min), zostało {max(0, _remaining_keys)} kluczy")
+                        sys.stdout.flush()
+                        time.sleep(_cooldown)
+                        try:
+                            translator = GoogleTranslator(source='en', target=gt_lang)
+                        except Exception:
+                            pass
+                    else:
+                        print(f"⛔ GT RATE LIMIT: wyczerpano retries, zapisuję resztę do deferred")
+                        for remaining_item in gt_todo[batch_start + gt_batch_size:]:
+                            _enqueue_deferred_translation(status_dir, target_lang, json_file,
+                                remaining_item[0], remaining_item[1], "gt_rate_limit_exhausted")
+                        _gt_rate_limited = True
+                        _gt_batch_idx = len(gt_todo)  # break loop
+                        break
 
-            print(f"✅ Free GT: {free_gt_translated} przetłumaczonych, {gt_guard_fail} odrzuconych przez guard")
+                _gt_batch_idx += gt_batch_size
+                if _gt_batch_idx < len(gt_todo):
+                    time.sleep(gt_delay)
+                # Reset rate-limit retry counter po udanym batchu
+                if not _gt_rate_hit_this_batch:
+                    _gt_rate_limit_retry = 0
+
+            print(f"✅ Free GT: {free_gt_translated} przetłumaczonych, {gt_guard_fail} odrzuconych przez guard"
+                  + (f", rate_limited={_gt_rate_limited}" if _gt_rate_limited else ""))
 
         except ImportError:
             print("⚠️ GT: deep-translator nie zainstalowany (pip install deep-translator)")
@@ -13668,12 +13721,6 @@ if use_google_translate and gt_pending and not mid_batch_preempt:
     # Podsumowanie GT (Cloud + Free łącznie)
     if cloud_translated > 0 or free_gt_translated > 0:
         print(f"📊 GT łącznie: cloud={cloud_translated} + free={free_gt_translated} = {gt_translated} przetłumaczonych")
-
-# ── Overflow GT → deferred queue (klucze które nie zmieściły się w limicie) ──
-if _gt_overflow_to_deferred:
-    for key, en_text, h, suspicious in _gt_overflow_to_deferred:
-        _enqueue_deferred_translation(status_dir, target_lang, json_file, key, en_text, "gt_overflow_limit")
-    print(f"📋 Overflow: {len(_gt_overflow_to_deferred)} kluczy zapisanych do deferred queue")
 
 # ── Guard: zapobiegaj pustym wartościom (defense-in-depth) ─────────────────
 _empty_guard_fixed = 0

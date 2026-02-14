@@ -5,23 +5,23 @@
 ## 🧭 META
 
 > **[META]** 🟢 ACTIVE  
-> Świeżość: teraz | Źródło: `update_github_status()` | Ostatnia aktualizacja: 2026-02-14 01:12:14
+> Świeżość: teraz | Źródło: `update_github_status()` | Ostatnia aktualizacja: 2026-02-14 01:14:22
 
-> **Aktualizacja:** 2026-02-14 01:12:14 UTC  
+> **Aktualizacja:** 2026-02-14 01:14:22 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 53586  
-> **LIVE:** Cykl #1 | Status: ✅ IDLE | Faza: IDLE | Etap: cycle_start | Kategoria: - | Plik: - | ETA: 0 | Heartbeat: 2026-02-14T01:12:07Z  
-> **Strict hourly (JSONL-only):** okno=1.0h | cycles=112 | pending_skip=0.0% | guard_fail=2.4% | throughput=2065.2/h  
-> **Net effective translated:** 47,273
+> **LIVE:** Cykl #1 | Status: 🟢 RUNNING | Faza: AUTO_TRANSLATE | Etap: parallel_start | Kategoria: fi | Plik: npc.json | ETA: 0 | Heartbeat: 2026-02-14T01:14:03Z  
+> **Strict hourly (JSONL-only):** okno=1.0h | cycles=109 | pending_skip=0.0% | guard_fail=2.4% | throughput=2175.7/h  
+> **Net effective translated:** 47,353
 
 ### 🧩 Status sekcji (P0.1)
 | Sekcja | Stan | Świeżość | Powód | Źródło | Ostatnia aktualizacja |
 |--------|------|----------|-------|--------|-----------------------|
-| META | 🟢 ACTIVE | teraz | - | `update_github_status()` | 2026-02-14 01:12:14 |
-| LIVE | 🟢 ACTIVE | 8s temu | - | `activity.json / worker_state.json` | 2026-02-14T01:12:07Z |
-| MIGRATION | 🔒 INACTIVE | 6h temu | worker w trybie IDLE | `i18n_file_status.json` | 2026-02-14 01:12:14 |
-| TRANSLATION | 🔒 INACTIVE | 47s temu | worker w trybie IDLE | `translation_guard_latest.json / translation_recent_latest.json` | 2026-02-14T01:11:28.507338Z |
-| QUALITY | 🔒 INACTIVE | 2min temu | worker w trybie IDLE | `quality_audit_latest.json` | 2026-02-14T01:10:04.491128Z |
-| HISTORY | 🟢 ACTIVE | teraz | - | `daily/*.json / ops.jsonl` | 2026-02-14 01:12:14 |
+| META | 🟢 ACTIVE | teraz | - | `update_github_status()` | 2026-02-14 01:14:22 |
+| LIVE | 🟢 ACTIVE | 19s temu | - | `activity.json / worker_state.json` | 2026-02-14T01:14:03Z |
+| MIGRATION | 🔒 INACTIVE | 6h temu | worker w trybie AUTO_TRANSLATE | `i18n_file_status.json` | 2026-02-14 01:14:22 |
+| TRANSLATION | 🟢 ACTIVE | 1min temu | - | `translation_guard_latest.json / translation_recent_latest.json` | 2026-02-14T01:13:21.706413Z |
+| QUALITY | 🔒 INACTIVE | 4min temu | worker w trybie AUTO_TRANSLATE | `quality_audit_latest.json` | 2026-02-14T01:10:04.491128Z |
+| HISTORY | 🟢 ACTIVE | teraz | - | `daily/*.json / ops.jsonl` | 2026-02-14 01:14:22 |
 
 > Artefakt machine-readable: `i18n/status/status_sections_latest.json`
 
@@ -30,14 +30,14 @@
 ## 🔴 LIVE
 
 > **[LIVE]** 🟢 ACTIVE  
-> Świeżość: 8s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T01:12:07Z
+> Świeżość: 19s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T01:14:03Z
 
-- **Faza:** `IDLE`
-- **Etap:** `cycle_start`
-- **Kategoria:** `-`
-- **Plik:** `-`
-- **Status:** ✅ IDLE
-- **Heartbeat:** `2026-02-14T01:12:07Z`
+- **Faza:** `AUTO_TRANSLATE`
+- **Etap:** `parallel_start`
+- **Kategoria:** `fi`
+- **Plik:** `npc.json`
+- **Status:** 🟢 RUNNING
+- **Heartbeat:** `2026-02-14T01:14:03Z`
 
 ---
 
@@ -91,8 +91,8 @@
 
 ## 🛠️ MIGRATION
 
-> **[MIGRATION]** 🔒 INACTIVE (worker w trybie IDLE)  
-> Świeżość: 6h temu | Źródło: `i18n_file_status.json` | Ostatnia aktualizacja: 2026-02-14 01:12:14
+> **[MIGRATION]** 🔒 INACTIVE (worker w trybie AUTO_TRANSLATE)  
+> Świeżość: 6h temu | Źródło: `i18n_file_status.json` | Ostatnia aktualizacja: 2026-02-14 01:14:22
 
 ### 📁 Pliki Projektu (pełny skan)
 | Metryka | Wartość | Procent | Info |
@@ -133,8 +133,8 @@
 
 ## 🌍 TRANSLATION
 
-> **[TRANSLATION]** 🔒 INACTIVE (worker w trybie IDLE)  
-> Świeżość: 47s temu | Źródło: `translation_guard_latest.json / translation_recent_latest.json` | Ostatnia aktualizacja: 2026-02-14T01:11:28.507338Z
+> **[TRANSLATION]** 🟢 ACTIVE  
+> Świeżość: 1min temu | Źródło: `translation_guard_latest.json / translation_recent_latest.json` | Ostatnia aktualizacja: 2026-02-14T01:13:21.706413Z
 
 | Metryka | Wartość | Procent | Info |
 |---------|---------|---------|------|
@@ -173,60 +173,60 @@
 - **Ostatnie klucze (10-20):** 20
 
 ### 📝 Ostatnie 10-20 przetłumaczonych kluczy
-- If you brought enough of the stuff you'll see that the king will grant you entra → Om du tog med dig tillräckligt med prylar kommer du att se att kungen kommer att (npc.a_beggar.say_5)
-- Pssst! Keep it down! <gives you an elaborate report on monster activity> → Pssst! Håll det nere! <gives you an elaborate report on monster activity> (npc.a_behemoth.greet_msg_1)
-- Pssst! Keep it down! <gives you an elaborate report on monster activity> → Pssst! Håll det nere! <gives you an elaborate report on monster activity> (npc.a_behemoth.greet_msg_2)
-- Pssst! Keep it down! <gives you an elaborate report on monster activity> → Pssst! Håll det nere! <gives you an elaborate report on monster activity> (npc.a_behemoth.greet_msg_3)
-- Hello {}, welcome to the atrium of Pumin's Domain. We require some information f → Hej {}, välkommen till atriumet på Pumin's Domain. Vi kräver lite information fr (npc.a_dead_bureaucrat.greet_msg_1)
-- Good bye and don't forget me! → Hejdå och glöm mig inte! (npc.a_dead_bureaucrat1.farewell_msg_1)
-- Huhu, please don't hurt me with your {}! Reason of your visit? → Huhu, snälla skada mig inte med din {}! Anledning till ditt besök? (npc.a_dead_bureaucrat1.say_1)
-- How very interesting. I need to tell that to my master immediately. Please go to → Vad mycket intressant. Jag måste berätta det för min herre omedelbart. Gå till m (npc.a_dead_bureaucrat1.say_2)
-- Alright |PLAYERNAME|. Vocation? → Okej |PLAYERNAME|. Kallelse? (npc.a_dead_bureaucrat1.say_3)
-- Form 411? You need Form 287 to get that! Do you have it? → Blankett 411? Du behöver formulär 287 för att få det! Har du det? (npc.a_dead_bureaucrat1.say_5)
-- Form 411? You need Form 287 to get that! Do you have it? → Blankett 411? Du behöver formulär 287 för att få det! Har du det? (npc.a_dead_bureaucrat1.say_6)
-- Oh, what a pity. Go see one of my colleagues. I give you the permission to get F → Åh, vad synd. Gå och träffa en av mina kollegor. Jag ger dig tillåtelse att få b (npc.a_dead_bureaucrat1.say_7)
-- Great. Here you are. Form 411. Come back anytime you want to talk. Bye. → Stor. Här är du. Blankett 411. Kom tillbaka när du vill prata. Hejdå. (npc.a_dead_bureaucrat1.say_8)
-- INCREDIBLE, you did it!! Have fun at Pumin's Domain! → OTROLIGT, du gjorde det!! Ha kul på Pumin's Domain! (npc.a_dead_bureaucrat1.say_9)
-- Now where did I put that form? → Var lade jag den blanketten nu? (npc.a_dead_bureaucrat1.voice_1)
-- Good bye and don't forget me! → Hejdå och glöm mig inte! (npc.a_dead_bureaucrat1.walkaway_msg_1)
-- Good bye and don't forget me! → Hejdå och glöm mig inte! (npc.a_dead_bureaucrat2.farewell_msg_1)
-- Sure, you can get it from me. Here you are. Bye → Visst, du kan få det av mig. Här är du. Hejdå (npc.a_dead_bureaucrat2.say_1)
-- Now where did I put that form? → Var lade jag den blanketten nu? (npc.a_dead_bureaucrat2.voice_1)
-- Good bye and don't forget me! → Hejdå och glöm mig inte! (npc.a_dead_bureaucrat2.walkaway_msg_1)
+- If you brought enough of the stuff you'll see that the king will grant you entra → Hvis du tok med nok av tingene, vil du se at kongen vil gi deg inngang i sin {pa (npc.a_beggar.say_5)
+- Pssst! Keep it down! <gives you an elaborate report on monster activity> → Pssst! Hold det nede! <gives you an elaborate report on monster activity> (npc.a_behemoth.greet_msg_1)
+- Pssst! Keep it down! <gives you an elaborate report on monster activity> → Pssst! Hold det nede! <gives you an elaborate report on monster activity> (npc.a_behemoth.greet_msg_2)
+- Pssst! Keep it down! <gives you an elaborate report on monster activity> → Pssst! Hold det nede! <gives you an elaborate report on monster activity> (npc.a_behemoth.greet_msg_3)
+- Hello {}, welcome to the atrium of Pumin's Domain. We require some information f → Hei {}, velkommen til atriumet til Pumin's Domain. Vi krever litt informasjon fr (npc.a_dead_bureaucrat.greet_msg_1)
+- Good bye and don't forget me! → Farvel og ikke glem meg! (npc.a_dead_bureaucrat1.farewell_msg_1)
+- Huhu, please don't hurt me with your {}! Reason of your visit? → Huhu, vær så snill, ikke gjør meg vondt med {}! Årsaken til besøket ditt? (npc.a_dead_bureaucrat1.say_1)
+- How very interesting. I need to tell that to my master immediately. Please go to → Hvor veldig interessant. Jeg må fortelle det til min herre umiddelbart. Vennligs (npc.a_dead_bureaucrat1.say_2)
+- Alright |PLAYERNAME|. Vocation? → Greit |PLAYERNAME|. Kall? (npc.a_dead_bureaucrat1.say_3)
+- Form 411? You need Form 287 to get that! Do you have it? → Skjema 411? Du trenger skjema 287 for å få det! Har du det? (npc.a_dead_bureaucrat1.say_5)
+- Form 411? You need Form 287 to get that! Do you have it? → Skjema 411? Du trenger skjema 287 for å få det! Har du det? (npc.a_dead_bureaucrat1.say_6)
+- Oh, what a pity. Go see one of my colleagues. I give you the permission to get F → Å, så synd. Gå til en av mine kolleger. Jeg gir deg tillatelse til å få skjema 2 (npc.a_dead_bureaucrat1.say_7)
+- Great. Here you are. Form 411. Come back anytime you want to talk. Bye. → Stor. Her er du. Skjema 411. Kom tilbake når du vil snakke. Ha det. (npc.a_dead_bureaucrat1.say_8)
+- INCREDIBLE, you did it!! Have fun at Pumin's Domain! → UTROLIG, du klarte det!! Ha det gøy på Pumin's Domain! (npc.a_dead_bureaucrat1.say_9)
+- Now where did I put that form? → Hvor la jeg det skjemaet? (npc.a_dead_bureaucrat1.voice_1)
+- Good bye and don't forget me! → Farvel og ikke glem meg! (npc.a_dead_bureaucrat1.walkaway_msg_1)
+- Good bye and don't forget me! → Farvel og ikke glem meg! (npc.a_dead_bureaucrat2.farewell_msg_1)
+- Sure, you can get it from me. Here you are. Bye → Jada, du kan få det fra meg. Her er du. Ha det (npc.a_dead_bureaucrat2.say_1)
+- Now where did I put that form? → Hvor la jeg det skjemaet? (npc.a_dead_bureaucrat2.voice_1)
+- Good bye and don't forget me! → Farvel og ikke glem meg! (npc.a_dead_bureaucrat2.walkaway_msg_1)
 
 ### 🚫 Raporty "nie mogę przetłumaczyć"
-- Guard reports: **1735**  
+- Guard reports: **1736**  
 - Blocker reports: **0**  
-- Widoczne raporty 'nie mogę tłumaczyć': **1685**
+- Widoczne raporty 'nie mogę tłumaczyć': **1686**
 
 ### 🌐 Globalne info wszystkich języków
-- **Global completion:** **20.29%** (565,397/2,786,472)
-- **EN-copy łącznie:** **1,337,177**
+- **Global completion:** **20.29%** (565,477/2,786,472)
+- **EN-copy łącznie:** **1,337,193**
 - **Braki kluczy łącznie:** **110,060**
 - **Brakujące pliki językowe:** **0**
-- **Cache STATUSPY (per-lang):** **mixed** | hit **50**, miss **2**, hit-rate **96.2%**
-- **Cache STATUSPY (per-file):** hit **1974**, miss **2**, hit-rate **99.9%**
+- **Cache STATUSPY (per-lang):** **mixed** | hit **51**, miss **1**, hit-rate **98.1%**
+- **Cache STATUSPY (per-file):** hit **1975**, miss **1**, hit-rate **99.9%**
 - **Profiler cyklu (ostatni):** -
 - **Osobny raport:** `i18n/status/translation_global_overview.json`
 
 ### ⏱️ Strict Hourly Window (JSONL-only)
 | Metryka | Wartość |
 |---------|---------|
-| Okno | **1.0h** (2026-02-14T00:12:15.192867Z → 2026-02-14T01:12:15.192867Z) |
-| Cykle | **112** (AUTO=112, MIGRATION=0) |
+| Okno | **1.0h** (2026-02-14T00:14:22.496738Z → 2026-02-14T01:14:22.496738Z) |
+| Cykle | **109** (AUTO=109, MIGRATION=0) |
 | Pending skip | **0** (all=0.0%, migration=0.0%) |
 | Guard fail rate | **2.4%** |
 | No progress rate | **0.0%** |
-| Throughput | **2065.2 kluczy/h** |
-| Suspicious | **1355** |
+| Throughput | **2175.7 kluczy/h** |
+| Suspicious | **1304** |
 | Top guard_fail targets | pl/otclient_modules.json (gf=29), pl/html.json (gf=16), pl/cpp.json (gf=16), es/otclient_modules.json (gf=15), pl/scripts.json (gf=12) |
 | Źródła | `i18n/status/worker_cycle_perf.jsonl`, `i18n/status/translation_guard_report.jsonl`, `i18n/status/suspicious_log.jsonl` |
 | Plik | `i18n/status/strict_hourly_window_latest.json` |
 
 ## 🔬 QUALITY
 
-> **[QUALITY]** 🔒 INACTIVE (worker w trybie IDLE)  
-> Świeżość: 2min temu | Źródło: `quality_audit_latest.json` | Ostatnia aktualizacja: 2026-02-14T01:10:04.491128Z
+> **[QUALITY]** 🔒 INACTIVE (worker w trybie AUTO_TRANSLATE)  
+> Świeżość: 4min temu | Źródło: `quality_audit_latest.json` | Ostatnia aktualizacja: 2026-02-14T01:10:04.491128Z
 
 - **Ostatni audyt:** SLOW_MODE | 35 issue(s) / 100 entries | 2026-02-14T01:10:04.491128Z
 - **Top 5 typów problemów:** suspicious_rejected_critical=200, suspicious_log_medium=105, suspicious_log_high=71, identical_to_en=35, suspicious_log_low=22
@@ -268,8 +268,8 @@
 
 ## ✅ CHECKLIST - Plan Pracy
 
-> **Aktualna faza:** IDLE  
-> **Aktualna kategoria:** -
+> **Aktualna faza:** AUTO_TRANSLATE  
+> **Aktualna kategoria:** fi
 
 
 ### 🔄 Faza 1: 🎮 Canary Server
@@ -337,33 +337,33 @@
 ## 🔴 LIVE: Szczegóły wykonania
 
 > **[LIVE]** 🟢 ACTIVE  
-> Świeżość: 8s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T01:12:07Z
+> Świeżość: 19s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T01:14:03Z
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │ 🔴 LIVE: Worker v2.0                          Cykl #     1 │
 ├─────────────────────────────────────────────────────────────────┤
-│ Status:    ✅ IDLE                                   │
-│ Tryb:      ✅ IDLE (cycle_start)                     │
-│ Kategoria: -                                        │
+│ Status:    🟢 RUNNING                                │
+│ Tryb:      🤖 AUTO_TRANSLATE (parallel_start)        │
+│ Kategoria: 📁 FI                                     │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status: running                                               │
-│ Plik: -                                                       │
-│ Postęp: 0/0 units                                             │
-│ Info: cycle start                                             │
+│ Plik: npc.json                                                │
+│ Postęp: 0/0 keys                                              │
+│ Info: parallel auto translate                                 │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2026-02-14T01:12:07Z           │
+│ ❤️ Heartbeat: 2026-02-14T01:14:03Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 🧾 Ostatnie akcje (dla czytelności)
 
+- 2026-02-14 01:14:03 | AUTO_TRANSLATE:parallel_start | fi | ok | npc.json
+- 2026-02-14 01:13:21 | AUTO_TRANSLATE:auto_done | no | ok | npc.json
+- 2026-02-14 01:12:49 | AUTO_TRANSLATE:auto_start | no | ok | npc.json
 - 2026-02-14 01:11:28 | AUTO_TRANSLATE:auto_done | sv | ok | npc.json
 - 2026-02-14 01:10:51 | AUTO_TRANSLATE:auto_start | sv | ok | npc.json
 - 2026-02-14 01:08:12 | AUTO_TRANSLATE:parallel_start | nl | ok | npc.json
-- 2026-02-14 01:07:31 | AUTO_TRANSLATE:auto_done | tr | ok | server.json
-- 2026-02-14 01:07:29 | AUTO_TRANSLATE:auto_start | tr | ok | server.json
-- 2026-02-14 01:07:16 | AUTO_TRANSLATE:parallel_start | ru | ok | server.json
 
 ---
 
@@ -372,21 +372,22 @@
 | Język | Coverage | Brakujące | EN-copy | Translated(200) | Guard fail | Entries |
 |-------|----------|-----------|---------|-----------------|------------|---------|
 | 🟡 PL | 74.1% | 2,083 | 2,917 | 845 | 364 (30.1%) | 35 |
-| 🟡 ES | 77.2% | 232 | 13,724 | 1,316 | 251 (16.0%) | 38 |
+| 🟡 ES | 77.2% | 232 | 13,724 | 1,301 | 236 (15.4%) | 37 |
 
 | KPI | Wartość | Target | Status |
 |-----|---------|--------|--------|
-| Net effective translated | **47,273** | — | 📊 |
+| Net effective translated | **47,353** | — | 📊 |
 | Adaptive batch | batch=50, gf_rate=0.0%, reason=increase_low_fail_rate=0.0% | gf <5% → increase | 📊 |
-| Throughput (last window) | 2,161 keys / 73 entries | >50/h | 📊 |
+| Throughput (last window) | 2,146 keys / 72 entries | >50/h | 📊 |
 
 ---
 
 ## 📜 HISTORY
 
 > **[HISTORY]** 🟢 ACTIVE  
-> Świeżość: teraz | Źródło: `daily/*.json / ops.jsonl` | Ostatnia aktualizacja: 2026-02-14 01:12:14
+> Świeżość: teraz | Źródło: `daily/*.json / ops.jsonl` | Ostatnia aktualizacja: 2026-02-14 01:14:22
 
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [no] → warn (files+1, translated+80, skipped+0) — lang=no file=npc.json strict_skipped_done=1148
 - 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [pl] → ok (translated+2, skipped+0) — parallel lang=pl file=client.json
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [zh_TW] → warn (files+1, translated+80, skipped+0) — lang=zh_TW file=npc.json strict_skipped_done=574
 - 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [ru] → ok (translated+80, skipped+0) — parallel lang=ru file=monsters.json
@@ -396,17 +397,16 @@
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [es] → warn (files+1, translated+56, skipped+0) — lang=es file=otclient_modules.json strict_skipped_done=1562 guard_fail=15 placeholder=0 command=0 pipe=0
 - 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [pl] → ok (translated+66, skipped+0) — parallel lang=pl file=html.json
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [es] → warn (files+1, translated+2, skipped+0) — lang=es file=quests.json strict_skipped_done=608
-- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [pl] → ok (translated+4, skipped+0) — parallel lang=pl file=quests.json
 
 
 
 
 ## 📅 Dziś (UTC)
 
-- Cykle: **34**
+- Cykle: **35**
 - MIGRATION: **+0** kluczy, **0** plików `.lua`
 - Kategorie dotknięte: -
-- Błędy: **46**
+- Błędy: **47**
 
 
 ---
@@ -717,7 +717,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2026-02-14 01:12:14  
+📅 Auto-updated by Worker v1.1 | Last: 2026-02-14 01:14:22  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

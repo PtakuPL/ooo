@@ -17,7 +17,7 @@
   "actions.fluids.msg_1": "Het is leeg.",
   "actions.fluids.msg_2": "Het is leeg.",
   "actions.gamestore.msg_exhausted": "Je bent uitgeput.",
-  "actions.gamestore.msg_no_rookgaard": "Winkel heeft geen aanbiedingen voor Rookgaard Citizen.",
+  "actions.gamestore.msg_no_rookgaard": "[NL] Store don't have offers for rookgaard citizen.",
   "actions.golden.msg_1": "[EN] Someone is fighting against the boss! You need wait awhile.",
   "actions.golden.msg_2": "[EN] You need 5 players to fight with this boss.",
   "actions.hireling_foods.msg_too_full": "[EN] You're still too full to eat any gourmet dishes for a while.",

@@ -32,6 +32,6 @@
   "actions.outfit_items.msg_need_outfit": "אתה צריך את התלבושת עבור החלק הזה.",
   "actions.outfit_items.msg_already_own": "אתה כבר הבעלים של חלק התלבושת הזה.",
   "actions.key_door.msg_wrong_key": "המפתח אינו תואם.",
-  "actions.gamestore.msg_no_rookgaard": "לחנות אין הצעות ל-Rookgaard Citizen.",
+  "actions.gamestore.msg_no_rookgaard": "[HE] Store don't have offers for rookgaard citizen.",
   "actions.gamestore.msg_exhausted": "אתה מותש."
 }

@@ -32,6 +32,6 @@
   "actions.outfit_items.msg_need_outfit": "Имате нужда от облекло за тази част.",
   "actions.outfit_items.msg_already_own": "Вече притежавате тази част от облеклото.",
   "actions.key_door.msg_wrong_key": "Ключът не съвпада.",
-  "actions.gamestore.msg_no_rookgaard": "Магазинът няма оферти за rookgaard citizen.",
+  "actions.gamestore.msg_no_rookgaard": "[BG] Store don't have offers for rookgaard citizen.",
   "actions.gamestore.msg_exhausted": "Вие сте изтощени."
 }

@@ -12,5 +12,5 @@
   "event.player.msg_move_fast": "Vous ne pouvez pas déplacer cet objet aussi vite.",
   "event.player.msg_report_sent": "Votre signalement a été envoyé à {server}.",
   "event.player.say_1": "Vous nourrissez la tortue, vous pouvez maintenant passer.",
-  "event.player.stamina_pz_recharge": "En zone de protection. Recharge de {0} d'endurance toutes les {1} minutes."
+  "event.player.stamina_pz_recharge": "[FR] In protection zone. Recharging {0} stamina every {1} minutes."
 }

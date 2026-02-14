@@ -8,7 +8,7 @@
   "startup.functions.msg2": "[EN] create_item.lua",
   "startup.functions.msg3": "Tous les objets ont été créés sur la carte.",
   "startup.functions.msg4": "[loadLuaMapAction] - Identifiant d’objet incorrect {} trouvé",
-  "startup.functions.msg5": "ID d’action : {}, position {}",
+  "startup.functions.msg5": "[FR] Action id: {}, position {}",
   "startup.load.msg1": "[EN] /startup/tables/chest.lua",
   "startup.load.msg2": "[EN] /startup/tables/corpse.lua",
   "startup.load.msg3": "[EN] /startup/tables/create_item.lua",

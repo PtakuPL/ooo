@@ -1,10 +1,10 @@
 {
   "lang": "fa",
-  "coverage_pct": 10.7,
+  "coverage_pct": 10.2,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-14T12:04:06.694959Z",
+  "checked_at": "2026-02-14T12:27:19.823967Z",
   "issues_total": 410,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -21,15 +21,6 @@
       "en": "Vive la Resistance",
       "pl": "Vive la Opór",
       "lang": "Vive la Resistance"
-    },
-    {
-      "key": "achievement.283.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Bane of the Hive",
-      "pl": "Bane z the Ul",
-      "lang": "Bane of the Hive"
     },
     {
       "key": "achievement.295.name",
@@ -266,15 +257,6 @@
       "lang": "Fabled Construction"
     },
     {
-      "key": "achievement.378.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Mind the Dog!",
-      "pl": "Mind the I.!",
-      "lang": "Mind the Dog!"
-    },
-    {
       "key": "achievement.381.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -491,33 +473,6 @@
       "lang": "Skilled Hunter"
     },
     {
-      "key": "achievement.434.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You have fully unlocked 10 hard monsters in the cyclopedia.",
-      "pl": "Masz w pełni otwierać 10 hard potwory w the cyclopedia.",
-      "lang": "You have fully unlocked 10 hard monsters in the cyclopedia."
-    },
-    {
-      "key": "achievement.435.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You have fully unlocked 100 hard monsters in the cyclopedia.",
-      "pl": "Masz w pełni otwierać 100 hard potwory w the cyclopedia.",
-      "lang": "You have fully unlocked 100 hard monsters in the cyclopedia."
-    },
-    {
-      "key": "achievement.438.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "His Days are Counted",
-      "pl": "Jego Dni są Liczba",
-      "lang": "His Days are Counted"
-    },
-    {
       "key": "achievement.439.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -590,15 +545,6 @@
       "lang": "Daraman's Footsteps"
     },
     {
-      "key": "achievement.457.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "King of the Jungle",
-      "pl": "Król z the Dżungla",
-      "lang": "King of the Jungle"
-    },
-    {
       "key": "achievement.458.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -633,15 +579,6 @@
       "en": "Millennial Falcon",
       "pl": "Millennial Sokół",
       "lang": "Millennial Falcon"
-    },
-    {
-      "key": "achievement.469.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Wielding dangerous knowledge as well as the sword is your expertise. You have proven yourself versatile in all manner of situations.",
-      "pl": "Dzierżyć groźny, niebezpieczny kNiewledge as well as the miecz jest twój wiedza specjalistyczne, umiejętności specjalistyczne. Masz proven siebie wszechstronny w wszystkie sposób z sytuacja.",
-      "lang": "Wielding dangerous knowledge as well as the sword is your expertise. You have proven yourself versatile in all manner of situations."
     },
     {
       "key": "achievement.475.name",
@@ -716,15 +653,6 @@
       "lang": "Mainstreet Nightmare"
     },
     {
-      "key": "achievement.505.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Now you are able to wander around Tibia wearing an angst-inducing vestment.",
-      "pl": "Niew Jesteś zdolny do wędrować around Tibia wyczerpujący jeden angst-inducing vestment.",
-      "lang": "Now you are able to wander around Tibia wearing an angst-inducing vestment."
-    },
-    {
       "key": "achievement.506.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -752,15 +680,6 @@
       "lang": "Drama in Darama"
     },
     {
-      "key": "achievement.511.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Made acquaintance with three brothers Fitz.",
-      "pl": "Zrobiony znajomy z trzy brat Fitz.",
-      "lang": "Made acquaintance with three brothers Fitz."
-    },
-    {
       "key": "achievement.513.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -777,15 +696,6 @@
       "en": "Unleash the Beast",
       "pl": "Uwalniać the Zwierzę",
       "lang": "Unleash the Beast"
-    },
-    {
-      "key": "achievement.516.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Well Roared, Lion!",
-      "pl": "Well I., Lew!",
-      "lang": "Well Roared, Lion!"
     },
     {
       "key": "achievement.518.name",
@@ -822,15 +732,6 @@
       "en": "Knowledge Raider",
       "pl": "KNiewledge Raider",
       "lang": "Knowledge Raider"
-    },
-    {
-      "key": "achievement.524.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Your thirst for knowledge is insatiable. In the task of helping your gnomish friends, flawless execution is just the icing on the cake.",
-      "pl": "Twój pragnienie dla kNiewledge jest nieposkromiony, nienasycony. W the zadanie, zajęcie z porcja twój gNiemish przyjaciel, dobry kolega, kolega, nieskazitelny egzekucja jest just the polewa, lukier na the ciasto, ciastko.",
-      "lang": "Your thirst for knowledge is insatiable. In the task of helping your gnomish friends, flawless execution is just the icing on the cake."
     },
     {
       "key": "achievement.525.name",
@@ -885,15 +786,6 @@
       "en": "Warrior of the Iks",
       "pl": "Wojownik z the Iks",
       "lang": "Warrior of the Iks"
-    },
-    {
-      "key": "achievement.542.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You accomplished the impossible and created 16 mutagens of corresponding colours.",
-      "pl": "Ty znakomity the niemożliwy i created 16 mutagens z corresponding colours.",
-      "lang": "You accomplished the impossible and created 16 mutagens of corresponding colours."
     },
     {
       "key": "achievement.543.name",
@@ -1283,6 +1175,15 @@
       "lang": "damage"
     },
     {
+      "key": "cpp.bestiary.charm_category_major",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Major",
+      "pl": "Główny",
+      "lang": "Major"
+    },
+    {
       "key": "cpp.bestiary.charm_category_minor",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -1299,6 +1200,15 @@
       "en": "agony",
       "pl": "cierpienie",
       "lang": "agony"
+    },
+    {
+      "key": "cpp.combat.death",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "death",
+      "pl": "śmierć",
+      "lang": "death"
     },
     {
       "key": "cpp.combat.drown",
@@ -1470,6 +1380,15 @@
       "en": "Cancel",
       "pl": "Anuluj",
       "lang": "Cancel"
+    },
+    {
+      "key": "cpp.game.offline_training_button_ok",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Okay",
+      "pl": "Dobrze",
+      "lang": "Okay"
     },
     {
       "key": "cpp.game.tentugly_name",
@@ -1679,6 +1598,15 @@
       "lang": "HitChance"
     },
     {
+      "key": "cpp.inspect.key",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Key",
+      "pl": "Klucz",
+      "lang": "Key"
+    },
+    {
       "key": "cpp.inspect.nothing",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -1722,6 +1650,15 @@
       "en": "Required",
       "pl": "wymagany",
       "lang": "Required"
+    },
+    {
+      "key": "cpp.inspect.speed",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Speed",
+      "pl": "Szybkość",
+      "lang": "Speed"
     },
     {
       "key": "cpp.inspect.tier",
@@ -1859,6 +1796,15 @@
       "lang": "Def:"
     },
     {
+      "key": "cpp.look.field",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": " field",
+      "pl": " ognia",
+      "lang": " field"
+    },
+    {
       "key": "cpp.look.hit_pct",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -1945,7 +1891,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": " physical + ",
-      "pl": "physical +",
+      "pl": " fizyczny + ",
       "lang": " physical + "
     },
     {
@@ -1992,6 +1938,15 @@
       "en": "{0} second",
       "pl": "{0} sekunda",
       "lang": "{0} second"
+    },
+    {
+      "key": "cpp.look.speed_label",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "speed",
+      "pl": "szybkość",
+      "lang": "speed"
     },
     {
       "key": "cpp.look.tier_ruse",
@@ -3612,6 +3567,51 @@
       "en": "Message:",
       "pl": "Wiadomość:",
       "lang": "Message:"
+    },
+    {
+      "key": "web.tpl.forum.new_post.b_5",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Text",
+      "pl": "Tekst",
+      "lang": "Text"
+    },
+    {
+      "key": "web.tpl.admin.visitors.th_2",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Last visit",
+      "pl": "Ostatnia wizyta",
+      "lang": "Last visit"
+    },
+    {
+      "key": "web.tpl.admin.visitors.th_3",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Page",
+      "pl": "Strona",
+      "lang": "Page"
+    },
+    {
+      "key": "web.tpl.admin.visitors.th_4",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Browser",
+      "pl": "Przeglądarka",
+      "lang": "Browser"
+    },
+    {
+      "key": "web.tpl.admin.menus.js.label_1",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Name:",
+      "pl": "Nazwa:",
+      "lang": "Name:"
     }
   ],
   "length_ratio_issues": [

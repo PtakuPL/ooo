@@ -10,7 +10,7 @@
   "php.forum.text1": "[EN] . FORUM_TABLE_PREFIX .",
   "php.index.text1": "[EN]  . BASE_URL . install",
   "php.mailer.text1": "<strong>$mail_to</strong> başarıyla gönderildi",
-  "php.mailer.text2": "<strong>$mail_to</strong> adresine posta gönderilirken hata oluştu. Daha fazla bilgiyi system/logs/mailer-error.log adresinde bulabilirsiniz.",
+  "php.mailer.text2": "[TR] Error while sending mail to <strong>$mail_to</strong>. More info can be found in system/logs/mailer-error.log",
   "php.mailer.text3": "$başarı e-postaları teslim edildi.",
   "php.mailer.text4": "$failed e-postalar başarısız oldu.",
   "php.menus.text1": "Bu şablon menülerin yeniden yüklenmesini desteklemez.",

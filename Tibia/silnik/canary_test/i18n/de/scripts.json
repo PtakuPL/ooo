@@ -870,7 +870,7 @@
   "scripts.creaturescripts_middle_spike_kill.msg_1": "[EN] You have killed {} out of 7 Crystalcrushers.",
   "scripts.creaturescripts_middle_spike_kill.msg_2": "[EN] Middle Spike task complete.",
   "scripts.creaturescripts_overcharge_death.say_1": "[EN] You have reached enough charges to pass further into the destruction!",
-  "scripts.creaturescripts_pale_worm_death.msg_1": "Herzlichen Glückwunsch, dass Sie das Poltergeist-Outfit erhalten haben.",
+  "scripts.creaturescripts_pale_worm_death.msg_1": "[DE] Congratulations you received the Poltergeist Outfit.",
   "scripts.creaturescripts_parasite.say_1": "[EN] It seems that someone has already destroyed the walls in the last 30 minutes.",
   "scripts.creaturescripts_pythius_the_rotten_kill.say_1": "[EN] NICE FIGHTING LITTLE WORM, YOUR VICTORY SHALL BE REWARDED!",
   "scripts.creaturescripts_raging_mage_1.say_1": "[EN] You have not proven worthy in the dimensional struggle against the yielothax.",

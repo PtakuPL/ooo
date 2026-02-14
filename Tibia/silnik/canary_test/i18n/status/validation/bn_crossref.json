@@ -1,10 +1,10 @@
 {
   "lang": "bn",
-  "coverage_pct": 10.5,
+  "coverage_pct": 10.4,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-14T12:03:33.361856Z",
+  "checked_at": "2026-02-14T12:26:47.701397Z",
   "issues_total": 411,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -383,6 +383,15 @@
       "lang": "damage"
     },
     {
+      "key": "cpp.bestiary.charm_category_major",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Major",
+      "pl": "Główny",
+      "lang": "Major"
+    },
+    {
       "key": "cpp.bestiary.charm_category_minor",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -399,6 +408,15 @@
       "en": "agony",
       "pl": "cierpienie",
       "lang": "agony"
+    },
+    {
+      "key": "cpp.combat.death",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "death",
+      "pl": "śmierć",
+      "lang": "death"
     },
     {
       "key": "cpp.combat.drown",
@@ -570,6 +588,15 @@
       "en": "Cancel",
       "pl": "Anuluj",
       "lang": "Cancel"
+    },
+    {
+      "key": "cpp.game.offline_training_button_ok",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Okay",
+      "pl": "Dobrze",
+      "lang": "Okay"
     },
     {
       "key": "cpp.game.tentugly_name",
@@ -779,6 +806,15 @@
       "lang": "HitChance"
     },
     {
+      "key": "cpp.inspect.key",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Key",
+      "pl": "Klucz",
+      "lang": "Key"
+    },
+    {
       "key": "cpp.inspect.nothing",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -822,6 +858,15 @@
       "en": "Required",
       "pl": "wymagany",
       "lang": "Required"
+    },
+    {
+      "key": "cpp.inspect.speed",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Speed",
+      "pl": "Szybkość",
+      "lang": "Speed"
     },
     {
       "key": "cpp.inspect.tier",
@@ -959,6 +1004,15 @@
       "lang": "Def:"
     },
     {
+      "key": "cpp.look.field",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": " field",
+      "pl": " ognia",
+      "lang": " field"
+    },
+    {
       "key": "cpp.look.hit_pct",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -1045,7 +1099,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": " physical + ",
-      "pl": "physical +",
+      "pl": " fizyczny + ",
       "lang": " physical + "
     },
     {
@@ -1092,6 +1146,15 @@
       "en": "{0} second",
       "pl": "{0} sekunda",
       "lang": "{0} second"
+    },
+    {
+      "key": "cpp.look.speed_label",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "speed",
+      "pl": "szybkość",
+      "lang": "speed"
     },
     {
       "key": "cpp.look.tier_ruse",
@@ -3549,69 +3612,6 @@
       "en": "Close",
       "pl": "Zamknij",
       "lang": "Close"
-    },
-    {
-      "key": "lib.player.modal_button_no",
-      "category": "libs",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "No",
-      "pl": "Nie",
-      "lang": "No"
-    },
-    {
-      "key": "lib.player.modal_button_yes",
-      "category": "libs",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Yes",
-      "pl": "Tak",
-      "lang": "Yes"
-    },
-    {
-      "key": "module.init.text4",
-      "category": "modules",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "\tVersion = ",
-      "pl": "Wersja =",
-      "lang": "\tVersion = "
-    },
-    {
-      "key": "module.daily_reward.text5",
-      "category": "modules",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "\tToDo = ",
-      "pl": "Do zrobienia =",
-      "lang": "\tToDo = "
-    },
-    {
-      "key": "module.hireling_module.text2",
-      "category": "modules",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "\tVersion = ",
-      "pl": "Wersja =",
-      "lang": "\tVersion = "
-    },
-    {
-      "key": "module.hireling_module.text4",
-      "category": "modules",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "\tDate =",
-      "pl": "Data =",
-      "lang": "\tDate ="
-    },
-    {
-      "key": "monster.wolf.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Wolf",
-      "pl": "Wilk",
-      "lang": "Wolf"
     }
   ],
   "length_ratio_issues": [

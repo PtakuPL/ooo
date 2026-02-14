@@ -2,8 +2,8 @@
   "category": "pl",
   "cycle": 1,
   "eta_seconds": 0,
-  "file": "raids.json",
-  "generated_at_utc": "2026-02-14T12:20:46Z",
+  "file": "client.json",
+  "generated_at_utc": "2026-02-14T12:27:29Z",
   "message": "auto translate in progress",
   "phase": "AUTO_TRANSLATE",
   "progress": {
@@ -16,101 +16,101 @@
       "action": "update",
       "category": "pl",
       "cycle": 1,
+      "file": "client.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-02-14T12:27:29Z"
+    },
+    {
+      "action": "update",
+      "category": "pl",
+      "cycle": 1,
+      "file": "client.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "auto_start",
+      "t": "2026-02-14T12:27:29Z"
+    },
+    {
+      "action": "update",
+      "category": "pl",
+      "cycle": 1,
+      "file": "cpp.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "auto_done",
+      "t": "2026-02-14T12:26:45Z"
+    },
+    {
+      "action": "update",
+      "category": "pl",
+      "cycle": 1,
+      "file": "cpp.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-02-14T12:25:14Z"
+    },
+    {
+      "action": "update",
+      "category": "pl",
+      "cycle": 1,
+      "file": "cpp.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "auto_start",
+      "t": "2026-02-14T12:25:14Z"
+    },
+    {
+      "action": "update",
+      "category": "pl",
+      "cycle": 1,
+      "file": "books.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-02-14T12:23:59Z"
+    },
+    {
+      "action": "update",
+      "category": "pl",
+      "cycle": 1,
+      "file": "books.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-02-14T12:22:29Z"
+    },
+    {
+      "action": "update",
+      "category": "pl",
+      "cycle": 1,
+      "file": "books.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "auto_start",
+      "t": "2026-02-14T12:22:29Z"
+    },
+    {
+      "action": "update",
+      "category": "pl",
+      "cycle": 1,
+      "file": "raids.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "auto_done",
+      "t": "2026-02-14T12:22:17Z"
+    },
+    {
+      "action": "update",
+      "category": "pl",
+      "cycle": 1,
       "file": "raids.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "heartbeat_tick",
       "t": "2026-02-14T12:20:46Z"
-    },
-    {
-      "action": "update",
-      "category": "pl",
-      "cycle": 1,
-      "file": "raids.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "auto_start",
-      "t": "2026-02-14T12:20:46Z"
-    },
-    {
-      "action": "update",
-      "category": "es",
-      "cycle": 1,
-      "file": "npc.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-02-14T12:20:40Z"
-    },
-    {
-      "action": "update",
-      "category": "pl",
-      "cycle": 1,
-      "file": "quests.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "auto_done",
-      "t": "2026-02-14T12:20:29Z"
-    },
-    {
-      "action": "update",
-      "category": "pl",
-      "cycle": 1,
-      "file": "quests.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-02-14T12:18:58Z"
-    },
-    {
-      "action": "update",
-      "category": "pl",
-      "cycle": 1,
-      "file": "quests.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "auto_start",
-      "t": "2026-02-14T12:18:58Z"
-    },
-    {
-      "action": "update",
-      "category": "pl",
-      "cycle": 2,
-      "file": "spells.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-02-14T12:17:57Z"
-    },
-    {
-      "action": "update",
-      "category": "pl",
-      "cycle": 2,
-      "file": "spells.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "auto_start",
-      "t": "2026-02-14T12:17:57Z"
-    },
-    {
-      "action": "update",
-      "category": "cs",
-      "cycle": 1,
-      "file": "quests.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "auto_done",
-      "t": "2026-02-14T12:17:45Z"
-    },
-    {
-      "action": "update",
-      "category": "cs",
-      "cycle": 1,
-      "file": "quests.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-02-14T12:16:15Z"
     }
   ],
   "stage": "heartbeat_tick",

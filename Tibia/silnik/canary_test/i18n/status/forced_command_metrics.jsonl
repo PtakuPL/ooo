@@ -13,3 +13,4 @@
 {"timestamp": "2026-02-14T12:13:39.685601Z", "stage": "received", "command": "AUTO:lt:quests.json:80", "pending_age_s": 1, "roundtrip_s": 0, "mode_type": "-", "mode_cat": "-", "mode_count": "-"}
 {"timestamp": "2026-02-14T12:16:14.885654Z", "stage": "received", "command": "AUTO:cs:quests.json:80", "pending_age_s": 57, "roundtrip_s": 0, "mode_type": "-", "mode_cat": "-", "mode_count": "-"}
 {"timestamp": "2026-02-14T12:17:46.073229Z", "stage": "completed", "command": "AUTO:cs:quests.json:80", "pending_age_s": 57, "roundtrip_s": 149, "mode_type": "AUTO_TRANSLATE", "mode_cat": "cs", "mode_count": "quests.json"}
+{"timestamp": "2026-02-14T12:27:28.509188Z", "stage": "received", "command": "RESTART", "pending_age_s": 30, "roundtrip_s": 0, "forced_command_pending_age_s": 30, "forced_command_roundtrip_s": 0, "mode_type": "-", "mode_cat": "-", "mode_count": "-"}

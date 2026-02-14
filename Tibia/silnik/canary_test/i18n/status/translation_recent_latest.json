@@ -1,92 +1,128 @@
 {
-  "timestamp": "2026-02-14T12:20:44.638514Z",
-  "language": "es",
-  "json_file": "npc.json",
-  "translated": 14,
+  "timestamp": "2026-02-14T12:27:50.111197Z",
+  "language": "pl",
+  "json_file": "client.json",
+  "translated": 28,
   "entries": [
     {
-      "key": "npc.a_beautiful_girl.greet_msg_1",
-      "en": "So you have come, |PLAYERNAME|. I hoped you would not...",
-      "translated": "Entonces has venido, |PLAYERNAME|. Esperaba que no lo hicieras...",
+      "key": "client.spells.text4",
+      "en": "Nature's Embrace",
+      "translated": "Nature's Embrace",
       "source": "tm"
     },
     {
-      "key": "npc.a_sleeping_dragon.say_10",
-      "en": "You return through the semi-translucent gate to the west. ",
-      "translated": "Regresas por la puerta semitranslúcida hacia el oeste. ",
+      "key": "client.tasks.text1",
+      "en": "Please select monster from monster list.",
+      "translated": "Please select Potwór from Potwór list.",
+      "source": "simple"
+    },
+    {
+      "key": "client.tasks.text2",
+      "en": "Please select monster from monster list.",
+      "translated": "Please select Potwór from Potwór list.",
+      "source": "simple"
+    },
+    {
+      "key": "client.tasks.text3",
+      "en": "Please select monster from monster list.",
+      "translated": "Please select Potwór from Potwór list.",
+      "source": "simple"
+    },
+    {
+      "key": "client.uimessagebox.text1",
+      "en": "0 0 108 20",
+      "translated": "0 0 108 20",
       "source": "tm"
     },
     {
-      "key": "npc.a_sleeping_dragon.say_11",
-      "en": "You head back north to the plateau. ",
-      "translated": "Regresas al norte hasta la meseta. ",
+      "key": "client.neededtranslations.text2",
+      "en": "If you shut down the program, your character might stay in the game.\nClick on 'Logout' to ensure that you character leaves the game properly.\nClick on 'Exit' if you want to exit the program without ",
+      "translated": "Jeśli zamkniesz program, Twoja postać może pozostać w grze.\nKliknij 'Logout', aby upewnić się, że Twoja postać prawidłowo opuści grę.\nKliknij 'Exit', jeśli chcesz wyjść z programu bez ",
       "source": "tm"
     },
     {
-      "key": "npc.a_sleeping_dragon.say_12",
-      "en": "You travel east across several large emerald bluffs and edges. All sorts of gems are scattered alongside your path. ",
-      "translated": "Viaja hacia el este a través de varios grandes acantilados y bordes esmeralda. Todo tipo de gemas se encuentran esparcidas a lo largo de tu camino. ",
+      "key": "client.topmenu.text2",
+      "en": "Ctrl+Shift+T",
+      "translated": "Ctrl+Shift+T",
       "source": "tm"
     },
     {
-      "key": "npc.a_sleeping_dragon.say_13",
-      "en": "You take a rather large ruby out of a pile before you. ",
-      "translated": "Sacas un rubí bastante grande de una pila que tienes delante. ",
+      "key": "client.elementnode.text3",
+      "en": ".. -- e = the optional",
+      "translated": ".. -- e = opcja",
       "source": "tm"
     },
     {
-      "key": "npc.a_sleeping_dragon.say_17",
-      "en": "You travel all the way back down the dune and through the gate to the south. ",
-      "translated": "Recorres todo el camino de regreso por la duna y atraviesas la puerta hacia el sur. ",
-      "source": "tm"
+      "key": "client.npctrade.text1",
+      "en": "List of items that you're able to buy",
+      "translated": "Lista przedmiotów, które możesz kupić",
+      "source": "google_translate"
     },
     {
-      "key": "npc.a_sleeping_dragon.say_18",
-      "en": "You return to the crimson sea of rubies in the south. ",
-      "translated": "Regresas al mar carmesí de rubíes en el sur. ",
-      "source": "tm"
+      "key": "client.npctrade.text2",
+      "en": "List of items that you're able to sell",
+      "translated": "Lista przedmiotów, które możesz sprzedać",
+      "source": "google_translate"
     },
     {
-      "key": "npc.a_sleeping_dragon.say_19",
-      "en": "You travel back to the plateau in the west. ",
-      "translated": "Viajas de regreso a la meseta en el oeste. ",
-      "source": "tm"
+      "key": "client.charms1410.text1",
+      "en": "Minor Charm echoes\nEarned by unlocking or upgrading major charm and promotion your character",
+      "translated": "Pomniejsze Urok odbija się echem\nZdobyte poprzez odblokowanie lub ulepszenie głównego uroku i awansowanie swojej postaci",
+      "source": "google_translate"
     },
     {
-      "key": "npc.a_sleeping_dragon.say_20",
-      "en": "Advancing to the west, you recognise an increase of onyx on the ground. ",
-      "translated": "Avanzando hacia el oeste, se reconoce un aumento de ónix en el suelo. ",
-      "source": "tm"
+      "key": "client.charms.text3",
+      "en": "Dodges an attack with a chance, avoiding all damage.",
+      "translated": "Z szansą unika ataku, unikając wszelkich obrażeń.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.a_sleeping_dragon.say_21",
-      "en": "You continue travelling the barren sea of gemstones to the north. ",
-      "translated": "Continúas viajando por el árido mar de piedras preciosas hacia el norte. ",
-      "source": "tm"
+      "key": "client.bottommenu.text5",
+      "en": "images/icon-questionmark",
+      "translated": "obrazy/ikona-znak zapytania",
+      "source": "google_translate"
     },
     {
-      "key": "npc.a_sleeping_dragon.say_22",
-      "en": "You leave the massive open gate behind you and go to the west. ",
-      "translated": "Dejas la enorme puerta abierta detrás de ti y te diriges hacia el oeste. ",
-      "source": "tm"
+      "key": "client.http.text3",
+      "en": "HTTP.getJSON is not supported",
+      "translated": "HTTP.getJSON nie jest obsługiwany",
+      "source": "google_translate"
     },
     {
-      "key": "npc.a_sleeping_dragon.say_5",
-      "en": "You wander to the south, passing large obelisks of emerald to your left and sprawling trees of topaz to your right. ",
-      "translated": "Pasearás hacia el sur, pasando grandes obeliscos de esmeralda a tu izquierda y extensos árboles de topacio a tu derecha. ",
-      "source": "tm"
+      "key": "client.http.text4",
+      "en": "HTTP.post is not supported",
+      "translated": "HTTP.post nie jest obsługiwany",
+      "source": "google_translate"
     },
     {
-      "key": "npc.a_sleeping_dragon.say_6",
-      "en": "As you rip the solid stand out of its socket and take it with you, the large gate opens with a deafening rumble. ",
-      "translated": "Cuando arrancas el sólido soporte de su soporte y te lo llevas, la gran puerta se abre con un estruendo ensordecedor. ",
-      "source": "tm"
+      "key": "client.http.text5",
+      "en": "HTTP.postJSON is not supported",
+      "translated": "HTTP.postJSON nie jest obsługiwany",
+      "source": "google_translate"
     },
     {
-      "key": "npc.a_sleeping_dragon.say_9",
-      "en": "You take an emerald from the pile. ",
-      "translated": "Sacas una esmeralda del montón. ",
-      "source": "tm"
+      "key": "client.neededtranslations.text3",
+      "en": "List of items that you're able to buy",
+      "translated": "Lista przedmiotów, które możesz kupić",
+      "source": "google_translate"
+    },
+    {
+      "key": "client.neededtranslations.text4",
+      "en": "List of items that you're able to sell",
+      "translated": "Lista przedmiotów, które możesz sprzedać",
+      "source": "google_translate"
+    },
+    {
+      "key": "client.imbuing.text4",
+      "en": "Click here to carry out the selected imbuement. This will consume the required astral sources and gold.",
+      "translated": "Kliknij tutaj aby przeprowadzić wybrane nasycenie. To pochłonie wymagane źródła astralne i złoto.",
+      "source": "google_translate"
+    },
+    {
+      "key": "client.game_questlog.text1",
+      "en": "Remove completed quests // Automatically track new quests // Automatically untrack completed quests",
+      "translated": "Usuń ukończone zadania // Automatycznie śledź nowe zadania // Automatycznie usuwaj ukończone zadania",
+      "source": "google_translate"
     }
   ]
 }

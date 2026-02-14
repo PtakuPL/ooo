@@ -2,44 +2,24 @@
   "lang": "bn",
   "script_group": "exotic",
   "total_keys": 53586,
-  "translated": 5601,
+  "translated": 5595,
   "identical_to_en": 3713,
-  "placeholder_keys": 47985,
-  "coverage_pct": 10.5,
-  "issues_total": 108,
+  "placeholder_keys": 47991,
+  "coverage_pct": 10.4,
+  "issues_total": 100,
   "issues_by_type": {
-    "script_wrong_script": 100,
+    "script_wrong_script": 95,
     "V4_artifact": 4,
-    "V1_placeholder_mismatch": 2,
-    "V6_newline_mismatch": 1,
-    "V5_pipe_mismatch": 1
+    "V6_newline_mismatch": 1
   },
   "issues_by_severity": {
-    "CRITICAL": 3,
-    "HIGH": 104,
+    "CRITICAL": 0,
+    "HIGH": 99,
     "MEDIUM": 1,
     "LOW": 0
   },
-  "score": 97.0,
+  "score": 97.3,
   "worst_keys": [
-    {
-      "key": "scripts.actions_rewards.msg_1",
-      "category": "scripts",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "talkaction.online.msg_summary",
-      "category": "talkactions",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "talkaction.online.msg_summary",
-      "category": "talkactions",
-      "type": "V5_pipe_mismatch",
-      "severity": "CRITICAL"
-    },
     {
       "key": "achievement.235.name",
       "category": "achievements",
@@ -113,12 +93,6 @@
       "severity": "HIGH"
     },
     {
-      "key": "book.otbm.huv_stollan_match_stuf_from",
-      "category": "books",
-      "type": "script_wrong_script",
-      "severity": "HIGH"
-    },
-    {
       "key": "item.10010.name",
       "category": "items",
       "type": "script_wrong_script",
@@ -141,6 +115,30 @@
       "category": "items",
       "type": "script_wrong_script",
       "severity": "HIGH"
+    },
+    {
+      "key": "item.10192.name",
+      "category": "items",
+      "type": "script_wrong_script",
+      "severity": "HIGH"
+    },
+    {
+      "key": "item.10193.name",
+      "category": "items",
+      "type": "script_wrong_script",
+      "severity": "HIGH"
+    },
+    {
+      "key": "item.10217.name",
+      "category": "items",
+      "type": "script_wrong_script",
+      "severity": "HIGH"
+    },
+    {
+      "key": "item.10272.name",
+      "category": "items",
+      "type": "script_wrong_script",
+      "severity": "HIGH"
     }
   ],
   "crossref": {
@@ -151,5 +149,5 @@
     "length_ratio": 11,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-14T12:03:33.368147Z"
+  "validated_at": "2026-02-14T12:26:47.716211Z"
 }

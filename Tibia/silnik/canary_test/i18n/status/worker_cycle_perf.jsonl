@@ -5896,3 +5896,6 @@
 {"timestamp": "2026-02-14T12:17:57.106654Z", "cycle": 2, "mode": "AUTO_TRANSLATE", "category": "pl", "phase": "dispatch", "duration_ms": 504, "detail": "count=spells.json"}
 {"timestamp": "2026-02-14T12:18:58.383176Z", "cycle": 1, "mode": "AUTO_TRANSLATE", "category": "pl", "phase": "dispatch", "duration_ms": 657, "detail": "count=quests.json"}
 {"timestamp": "2026-02-14T12:20:45.959708Z", "cycle": 1, "mode": "AUTO_TRANSLATE", "category": "pl", "phase": "dispatch", "duration_ms": 1131, "detail": "count=raids.json"}
+{"timestamp": "2026-02-14T12:22:28.896867Z", "cycle": 1, "mode": "AUTO_TRANSLATE", "category": "pl", "phase": "dispatch", "duration_ms": 542, "detail": "count=books.json"}
+{"timestamp": "2026-02-14T12:25:13.823091Z", "cycle": 1, "mode": "AUTO_TRANSLATE", "category": "pl", "phase": "dispatch", "duration_ms": 816, "detail": "count=cpp.json"}
+{"timestamp": "2026-02-14T12:27:29.300863Z", "cycle": 1, "mode": "AUTO_TRANSLATE", "category": "pl", "phase": "dispatch", "duration_ms": 834, "detail": "count=client.json"}

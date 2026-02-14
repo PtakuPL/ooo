@@ -2,38 +2,24 @@
   "lang": "es",
   "script_group": "latin",
   "total_keys": 53586,
-  "translated": 41374,
-  "identical_to_en": 2850,
-  "placeholder_keys": 12212,
-  "coverage_pct": 77.2,
-  "issues_total": 42,
+  "translated": 39399,
+  "identical_to_en": 2800,
+  "placeholder_keys": 14187,
+  "coverage_pct": 73.5,
+  "issues_total": 40,
   "issues_by_type": {
     "V4_artifact": 37,
     "V2_length_ratio": 2,
-    "V6_newline_mismatch": 1,
-    "V1_placeholder_mismatch": 1,
-    "V5_pipe_mismatch": 1
+    "V6_newline_mismatch": 1
   },
   "issues_by_severity": {
-    "CRITICAL": 2,
+    "CRITICAL": 0,
     "HIGH": 37,
     "MEDIUM": 3,
     "LOW": 0
   },
-  "score": 99.8,
+  "score": 99.9,
   "worst_keys": [
-    {
-      "key": "talkaction.online.msg_summary",
-      "category": "talkactions",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "talkaction.online.msg_summary",
-      "category": "talkactions",
-      "type": "V5_pipe_mismatch",
-      "severity": "CRITICAL"
-    },
     {
       "key": "achievement.317.description",
       "category": "achievements",
@@ -141,15 +127,27 @@
       "category": "npc",
       "type": "V4_artifact",
       "severity": "HIGH"
+    },
+    {
+      "key": "npc.carina.say_2",
+      "category": "npc",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "npc.lardoc_bashsmite.multi_3",
+      "category": "npc",
+      "type": "V4_artifact",
+      "severity": "HIGH"
     }
   ],
   "crossref": {
     "enabled": true,
     "issues_total": 486,
-    "consistency": 63,
+    "consistency": 64,
     "pl_reference": 400,
-    "length_ratio": 23,
-    "auto_fix_applied": 43
+    "length_ratio": 22,
+    "auto_fix_applied": 35
   },
-  "validated_at": "2026-02-14T12:04:06.387555Z"
+  "validated_at": "2026-02-14T12:27:19.455328Z"
 }

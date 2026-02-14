@@ -2,22 +2,22 @@
   "lang": "bg",
   "script_group": "cyrillic",
   "total_keys": 53586,
-  "translated": 4109,
+  "translated": 4096,
   "identical_to_en": 2736,
-  "placeholder_keys": 49477,
-  "coverage_pct": 7.7,
-  "issues_total": 42,
+  "placeholder_keys": 49490,
+  "coverage_pct": 7.6,
+  "issues_total": 31,
   "issues_by_type": {
-    "script_cyrillic_latin_mix": 41,
+    "script_cyrillic_latin_mix": 30,
     "V4_artifact": 1
   },
   "issues_by_severity": {
     "CRITICAL": 0,
-    "HIGH": 42,
+    "HIGH": 31,
     "MEDIUM": 0,
     "LOW": 0
   },
-  "score": 98.5,
+  "score": 98.9,
   "worst_keys": [
     {
       "key": "achievement.22.name",
@@ -104,12 +104,6 @@
       "severity": "HIGH"
     },
     {
-      "key": "achievement.364.name",
-      "category": "achievements",
-      "type": "script_cyrillic_latin_mix",
-      "severity": "HIGH"
-    },
-    {
       "key": "achievement.405.name",
       "category": "achievements",
       "type": "script_cyrillic_latin_mix",
@@ -117,12 +111,6 @@
     },
     {
       "key": "achievement.459.name",
-      "category": "achievements",
-      "type": "script_cyrillic_latin_mix",
-      "severity": "HIGH"
-    },
-    {
-      "key": "achievement.461.description",
       "category": "achievements",
       "type": "script_cyrillic_latin_mix",
       "severity": "HIGH"
@@ -138,15 +126,27 @@
       "category": "achievements",
       "type": "script_cyrillic_latin_mix",
       "severity": "HIGH"
+    },
+    {
+      "key": "achievement.549.name",
+      "category": "achievements",
+      "type": "script_cyrillic_latin_mix",
+      "severity": "HIGH"
+    },
+    {
+      "key": "book.otbm.abdendriel_furniture_store",
+      "category": "books",
+      "type": "script_cyrillic_latin_mix",
+      "severity": "HIGH"
     }
   ],
   "crossref": {
     "enabled": false,
-    "issues_total": 411,
+    "issues_total": 410,
     "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 11,
+    "length_ratio": 10,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-14T12:03:33.141830Z"
+  "validated_at": "2026-02-14T12:26:46.985520Z"
 }

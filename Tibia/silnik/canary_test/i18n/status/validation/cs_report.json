@@ -2,23 +2,22 @@
   "lang": "cs",
   "script_group": "latin",
   "total_keys": 53586,
-  "translated": 3780,
-  "identical_to_en": 2753,
-  "placeholder_keys": 49806,
-  "coverage_pct": 7.1,
-  "issues_total": 4,
+  "translated": 3861,
+  "identical_to_en": 2734,
+  "placeholder_keys": 49725,
+  "coverage_pct": 7.2,
+  "issues_total": 3,
   "issues_by_type": {
-    "V1_placeholder_mismatch": 2,
-    "V4_artifact": 1,
-    "V5_pipe_mismatch": 1
+    "V4_artifact": 2,
+    "V1_placeholder_mismatch": 1
   },
   "issues_by_severity": {
-    "CRITICAL": 3,
-    "HIGH": 1,
+    "CRITICAL": 1,
+    "HIGH": 2,
     "MEDIUM": 0,
     "LOW": 0
   },
-  "score": 99.7,
+  "score": 99.8,
   "worst_keys": [
     {
       "key": "scripts.actions_rewards.msg_1",
@@ -27,20 +26,14 @@
       "severity": "CRITICAL"
     },
     {
-      "key": "talkaction.online.msg_summary",
-      "category": "talkactions",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "talkaction.online.msg_summary",
-      "category": "talkactions",
-      "type": "V5_pipe_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
       "key": "achievement.317.description",
       "category": "achievements",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "quests.bigfoot_burden.gnomedix_msg4",
+      "category": "quests",
       "type": "V4_artifact",
       "severity": "HIGH"
     }
@@ -53,5 +46,5 @@
     "length_ratio": 10,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-14T12:03:33.683563Z"
+  "validated_at": "2026-02-14T12:26:48.038992Z"
 }

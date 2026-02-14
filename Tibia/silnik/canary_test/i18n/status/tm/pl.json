@@ -86286,5 +86286,1493 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-14T12:19:38.854618Z"
+  },
+  "raid.bone_beast.name": {
+    "src_hash": "15b8ea869922dcd524b178ec843fc6ba",
+    "text": "Kość Bestia",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:20:48.657579Z"
+  },
+  "raid.undead.name": {
+    "src_hash": "a51041f7f7a1eb0546fbacdd6291b2fe",
+    "text": "Nieumarły",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:20:48.665583Z"
+  },
+  "raid.arachir_the_ancient_one.name": {
+    "src_hash": "0a30cc23ffefbf66b30e5409951d05dc",
+    "text": "Arachir The Ancient One",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:20:50.133131Z"
+  },
+  "raid.raids.name": {
+    "src_hash": "650d0052540bb7fa10d8ec5e7c7d8542",
+    "text": "Raids",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:20:50.133520Z"
+  },
+  "raid.barba_svar.name": {
+    "src_hash": "c7b6a31e7221a8f7beaa745a0d779579",
+    "text": "Barba Svar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:20:50.133896Z"
+  },
+  "raid.ice_golems.name": {
+    "src_hash": "724107539796c10b6ed076eeb39ffb6f",
+    "text": "Ice Golems",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:20:50.134209Z"
+  },
+  "raid.warwolf.name": {
+    "src_hash": "a852632fa1f53203a9feee08f0d95119",
+    "text": "Warwolf",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:20:50.134634Z"
+  },
+  "raid.midnight_panther_3.name": {
+    "src_hash": "da72c589dd7fc87a49ed0ad968ab908c",
+    "text": "Midnight Panther 3",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:20:52.813904Z"
+  },
+  "raid.midnight_panther_1.name": {
+    "src_hash": "4dec404364fe3c69ff2b5b22e166ad04",
+    "text": "Midnight Panther 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:20:52.814397Z"
+  },
+  "raid.kongras.name": {
+    "src_hash": "976ec410cd5bb5d6d2596ee246716b91",
+    "text": "Kongras",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:20:52.814755Z"
+  },
+  "raid.midnight_panther_2.name": {
+    "src_hash": "6e3040074dacf7fed85d0910a2cb9154",
+    "text": "Midnight Panther 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:20:52.815113Z"
+  },
+  "raid.orcs.name": {
+    "src_hash": "b94646381d8b39f166f84024e5fc54fc",
+    "text": "Orki",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:20:52.815450Z"
+  },
+  "raid.wild_horses.name": {
+    "src_hash": "b7e3bb5561419e11e0638d054c1f6e13",
+    "text": "Wild Horses",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:20:55.432203Z"
+  },
+  "raid.sheng.name": {
+    "src_hash": "cdadd32b1ffa1e7b55859da2f4b3e628",
+    "text": "Sheng",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:20:55.432553Z"
+  },
+  "raid.rottie1.name": {
+    "src_hash": "2434c72f6d31d3e067482645bae5c9df",
+    "text": "Rottie1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:20:55.432855Z"
+  },
+  "raid.rottie2.name": {
+    "src_hash": "33583cf2a19f1577097d56ad05d0a5d2",
+    "text": "Rottie2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:20:55.433370Z"
+  },
+  "raid.quaras.name": {
+    "src_hash": "e24f5a43fb7623f47e1b5e9cc1fd57be",
+    "text": "Quaras",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:20:55.433763Z"
+  },
+  "raid.elves.name": {
+    "src_hash": "72bdaa02bee1d4bc91086a209615387f",
+    "text": "Elves",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:21:00.335008Z"
+  },
+  "raids.abdendriel.warwolf.msg_1": {
+    "src_hash": "ccae6dca7eb1e0f323fe2b3b4f4f8e38",
+    "text": "Wiele agresywnych bestii wędruje na południe od Ab'Dendriel! Dbać o siebie!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:21:00.335503Z"
+  },
+  "raids.abdendriel.wasp_bear.msg_1": {
+    "src_hash": "d06b3c51a656c3531a94a1c1cff8712f",
+    "text": "Zwierzęta leśne rozsiane blisko Ab'Dendriel!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:21:00.335938Z"
+  },
+  "raids.ankrahmun.bone_beast.msg_1": {
+    "src_hash": "2beff82cf069e109e0d20c4f4cbfe4a6",
+    "text": "Kościane bestie grzechotają w grobowcach Ankrahmun Dipthrah.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:21:00.336420Z"
+  },
+  "raids.ankrahmun.cobra.msg_1": {
+    "src_hash": "83fd6063106fcf7ca0d7ba7a96052f19",
+    "text": "W grobowcach Ankrahmun Dipthrah jest coś skwierczącego.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:21:00.336922Z"
+  },
+  "raids.ankrahmun.cobra.msg_2": {
+    "src_hash": "c477a7dea2175afffe305dabe19df56c",
+    "text": "Jeszcze bardziej skwierczący w grobowcach Ankrahmun Dipthrah.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:21:05.645478Z"
+  },
+  "raids.ankrahmun.cobra.msg_3": {
+    "src_hash": "fc75958341d730257214b0fc1d55ccb5",
+    "text": "Przepełnienie trucizną w grobowcach Ankrahmun Dipthrah!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:21:05.645980Z"
+  },
+  "raids.ankrahmun.gargoyle.msg_1": {
+    "src_hash": "62326a836472f3c5495e5c8f329117f3",
+    "text": "W grobowcach Ankrahmun Rahemos coś kamiennego się porusza.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:21:05.646560Z"
+  },
+  "raids.ankrahmun.gargoyle.msg_2": {
+    "src_hash": "b1323bcc9025d9c3cb49e90ae366f0e1",
+    "text": "Gargoyle atak na grobowce Ankrahmun Rahemos!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:21:05.646908Z"
+  },
+  "raids.ankrahmun.nomad.msg_1": {
+    "src_hash": "1fe19992cd945f003263ffed19b655b8",
+    "text": "W pobliżu bram do Ankrahmun widziano zwiadowców Nomad.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:21:05.647408Z"
+  },
+  "raids.ankrahmun.nomad.msg_2": {
+    "src_hash": "b22c31504dc2a562a1823871bd8a96ec",
+    "text": "Pustynni koczownicy rozpoczynają atak na pełną skalę na Ankrahmun.\n\t\tNiektórzy mogli nawet prześliznąć się przez obronę!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:21:10.781883Z"
+  },
+  "raids.ankrahmun.scarab.msg_2": {
+    "src_hash": "9931bab5120915dbc226892fcc980599",
+    "text": "Starożytne skarabeusze prowadzą atak na Ankrahmun.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:21:10.782407Z"
+  },
+  "raids.ankrahmun.terramite.msg_1": {
+    "src_hash": "2eebce75c9479977ea6897407f0477b9",
+    "text": "Coś porusza się pod powierzchnią piasku na północ od Ankrahmun!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:21:10.782905Z"
+  },
+  "book.cursed_crystal.crystal_gardens_diary": {
+    "src_hash": "212d4188b1eaafdc59d2337c69c84d21",
+    "text": "Zrobiłem to! Dotarłem do kryształowych ogrodów! Jakie piękno i splendor widziałem tam na dole. Co więcej: odkryłem małe podziemne jezioro – ale Harry był tam przede mną. I zrobił coś dziwnego: zadzwonił małym, przezroczystym dzwonkiem i natychmiast w wodzie pojawił się wielki wir. Przypuszczam, że to tajemnicza droga w głąb jaskiń, której tak długo szukaliśmy. Ale Harry, tchórz, nie odważył się zanurkować w wodzie. Zamiast tego opuścił jaskinie i wrócił na powierzchnię. Muszę mieć ten dzwonek!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:22:39.993259Z"
+  },
+  "book.dawnport.adventurers_guild_letter": {
+    "src_hash": "2b955455df5e1d1d0539717d3f21490c",
+    "text": "Odważny poszukiwaczu przygód,\n\nGuild Poszukiwaczy Przygód wita Cię jako nowego bohatera tej krainy.\n\nWeź ten kamień poszukiwacza przygód i użyj go w dowolnej świątyni w mieście, aby natychmiast udać się do naszej sali gildii. Jeśli kiedykolwiek zgubisz kamień poszukiwacza przygód, możesz go zastąpić, rozmawiając z kapłanem w świątyni.\nMam nadzieję, że wkrótce nas odwiedzisz.\n\nPozdrawiam,\nRotem, Przywódca Poszukiwaczy Przygód Guild",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:22:39.994959Z"
+  },
+  "book.koshei.famous_inhabitants_page_2": {
+    "src_hash": "a5eab44d23fe57eb0fcd7dfe64a33079",
+    "text": "STRONA 2\nLord Koshei Ciekawski\n-_-_-_-_-_-_-_-_-_-_-_-\nData urodzenia: nieznana\nWiek: nieznany\nMiasto rodzinne: nieznane\nData śmierci: nieznana\nNiewiele wiadomo o tym człowieku. Pojawił się znikąd i mieszkał tu przez prawie dziesięć lat. Mimo że był komunikatywny, nigdy nie opowiadał o swoim zawodzie ani o tym, czym się zajmuje. Najpierw przez około dwa lata mieszkał w Darashia 2, mieszkanie 11. W tym czasie włóczył się po krainach Daramy i często odwiedzał Łaźnię Snów i piramidę minotaurów na północy.\nPotem odkryto, że zbudował wieżę na południe od gór. Nie wiadomo, jak mu się to udało, bo nie widziano nikogo, kto by mu pomógł. W każdym razie pozostałości jego wieży nadal tam są. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:22:39.997926Z"
+  },
+  "book.new_frontier.hidden_note": {
+    "src_hash": "9ceb31d90dfc2bd835acf14d81f53a52",
+    "text": "Idź do sekretnych drzwi na północy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:22:39.998915Z"
+  },
+  "book.otbm.1000_gold_10_fire_bugs": {
+    "src_hash": "ea67da6d7646ef0efd5615dd8e19730a",
+    "text": "1000 sztuk złota 10 ognistych robali dla Snu Challenge",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:22:39.999749Z"
+  },
+  "book.otbm.1001_ways_to_use_energy": {
+    "src_hash": "5bd2f82c9a64857c3866a03b4062b621",
+    "text": "1001 sposobów wykorzystania wiązek energii.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:22:44.220214Z"
+  },
+  "book.otbm.100_gold_coins_equal_1": {
+    "src_hash": "39c18279510fdb3a51a69ee816e0238d",
+    "text": "100 złotych monet to 1 platynowa moneta",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:22:44.220750Z"
+  },
+  "book.otbm.100_gold_coins_equal_1_39c18279": {
+    "src_hash": "39c18279510fdb3a51a69ee816e0238d",
+    "text": "100 złotych monet to 1 platynowa moneta",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:22:44.221255Z"
+  },
+  "book.otbm.100_platinum_coins_equal_1": {
+    "src_hash": "648a8349f24f155bf3be3e9bd80c104d",
+    "text": "100 platynowych monet to 1 kryształowa moneta",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:22:44.221821Z"
+  },
+  "book.otbm.100_platinum_coins_equal_1_648a8349": {
+    "src_hash": "648a8349f24f155bf3be3e9bd80c104d",
+    "text": "100 platynowych monet to 1 kryształowa moneta",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:22:44.222410Z"
+  },
+  "book.otbm.1_discover_secret_of_necromants": {
+    "src_hash": "b262931a57ba6ca52d750f20308ade82",
+    "text": "1. Odkryj sekret nektaru nekromantów",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:22:50.454358Z"
+  },
+  "book.otbm.1_put_a_bunch_of": {
+    "src_hash": "e306ee2cd6f63b0540ec88912bf7026c",
+    "text": "1. Włóż do maszyny pęczek trzciny cukrowej",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:22:50.454850Z"
+  },
+  "book.otbm.1st_floor_bel_etage_grand": {
+    "src_hash": "f29cc66b29afa145b3a9858568976985",
+    "text": "I piętro (bel etage): Grand Opera Caf",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:23:09.483556Z"
+  },
+  "book.otbm.1st_floor_interior_design_take": {
+    "src_hash": "9fb4f14b9389b9a4981c5b9bd7cbb8a0",
+    "text": "I piętro: Projekt wnętrz (wejdź windą)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:23:09.484719Z"
+  },
+  "book.otbm.1st_floor_magic_emporium": {
+    "src_hash": "3bc17306f6a2a84ed45125c1b8697891",
+    "text": "I piętro: Magiczne Emporium",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:23:09.485574Z"
+  },
+  "book.otbm.1st_floor_the_archers_grounds": {
+    "src_hash": "766fedafb986dcfc1155671e1bb154fb",
+    "text": "Pierwsze piętro: Teren Łucznika - Broń dystansowa i Zaklęcia Paladin",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:23:15.792386Z"
+  },
+  "book.otbm.20_tricks_to_get_peoples": {
+    "src_hash": "30aa0d5bee0e41253afba1e1fedcd836",
+    "text": "20 sztuczek, jak zdobyć ludzkie pieniądze",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:23:15.792892Z"
+  },
+  "book.otbm.2_dont_be_late_for": {
+    "src_hash": "ad76df038f1054198aa4a295d40dc2b4",
+    "text": "2. Nie spóźniaj się na lekcje i szkolenia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:23:15.793374Z"
+  },
+  "book.otbm.2_floor_the_room_of": {
+    "src_hash": "2b9486c0596c58b4f7addc9ea8b7a6d1",
+    "text": "2. Piętro - Pokój Wyroczni",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:23:15.793863Z"
+  },
+  "book.otbm.2_molasses_will_be_automatically": {
+    "src_hash": "3e983380c3460c89b75e08bf3fcd4e7e",
+    "text": "2. Melasa zostanie automatycznie ekstrahowana i destylowana do rumu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:23:15.794445Z"
+  },
+  "book.otbm.2nd_floor_madame_faylas_music": {
+    "src_hash": "6fb6296d9b6d9246f8e9f5d9e5a10ff7",
+    "text": "II piętro: Sala Muzyczna Madame Fayla",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:23:21.717907Z"
+  },
+  "book.otbm.3789_gold_weapons_and_repairs": {
+    "src_hash": "09d42ec9bd3a03229363e3dd475e0f61",
+    "text": "3789 złotych broni i napraw",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:23:21.718577Z"
+  },
+  "book.otbm.3_discover_secret_entrance_to": {
+    "src_hash": "4e11b68dea1a42f22925d7964699f36e",
+    "text": "3. Odkryj sekretne wejście do Koszmarów",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:23:21.719096Z"
+  },
+  "book.otbm.3_maintain_your_training_gear": {
+    "src_hash": "cc0e65a42ae00b0f7e26ec4fef3ac429",
+    "text": "3. Utrzymuj swój sprzęt treningowy w dobrym stanie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:23:21.719613Z"
+  },
+  "book.otbm.3_when_the_distilling_process": {
+    "src_hash": "13420961d8397919f1276d7098d986fa",
+    "text": "3. Po zakończeniu procesu destylacji z urządzenia zacznie się wylewać rum",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:23:21.720380Z"
+  },
+  "book.otbm.4000_gold_books_and_paper": {
+    "src_hash": "12aa92830e0d674b22e3b80f5e520546",
+    "text": "Książki i papier za 4000 złotych",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:23:28.378845Z"
+  },
+  "book.otbm.4_exterminiate_the_ghouls_in": {
+    "src_hash": "b2ab977dc2790947663a26a210f9efbb",
+    "text": "4. Wytęp ghule w ogrodzie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:23:28.379289Z"
+  },
+  "book.otbm.4_no_running_in_the": {
+    "src_hash": "19a98caa510a0b8ad6eb41e9f99f9695",
+    "text": "4. Zakaz biegania po korytarzu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:23:28.379682Z"
+  },
+  "book.otbm.4_quickly_use_any_bottle": {
+    "src_hash": "5c1d55c8995e791da43817d448226c29",
+    "text": "4. Szybko użyj dowolnej butelki lub kubka, aby zebrać rum",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:23:28.380172Z"
+  },
+  "book.otbm.5000_gold_runes_and_fluids": {
+    "src_hash": "0672360e8e6dcc8e6dc116b3ab6e3b58",
+    "text": "5000 złotych run i płynów",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:23:28.380560Z"
+  },
+  "book.otbm.5_no_eating_and_drinking": {
+    "src_hash": "84d1f2d9ae1c7c4891ff643961d03882",
+    "text": "5. Zakaz jedzenia i picia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:23:35.427123Z"
+  },
+  "book.otbm.5_no_sigildrawing_on_the": {
+    "src_hash": "e829268d40ae27166494352f4d8d9e70",
+    "text": "5. Żadnego rysowania pieczęci na podłodze",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:23:35.427584Z"
+  },
+  "book.otbm.6_return_borrowed_equipment_to": {
+    "src_hash": "e5c921bc1ac72b5edfbc9914930b8b48",
+    "text": "6. Zwrócić wypożyczony sprzęt do magazynu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:23:35.428098Z"
+  },
+  "book.otbm.7_no_scribbling_in_libraryowned": {
+    "src_hash": "f52764d2c16bdaa528ceeabad7968199",
+    "text": "7. Zakaz pisania w dokumentach będących własnością biblioteki",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:23:35.428569Z"
+  },
+  "book.otbm.800_razoredge_matt_vs_bambam": {
+    "src_hash": "58492dfbcaefa6f71ae115846db25ab4",
+    "text": "8.00 Razoredge Matt kontra Bambam Brutus",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:23:35.429274Z"
+  },
+  "book.otbm.8_books_and_scrolls_must": {
+    "src_hash": "8d0d902de3d94969d44bfb69da9b4b2d",
+    "text": "8. Księgi i zwoje należy zwrócić dokładnie tam, skąd zostały zabrane",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:23:40.536866Z"
+  },
+  "book.otbm.9_no_library_document_to": {
+    "src_hash": "1c6c8d65024c711ee5524305c145989b",
+    "text": "9. Zabrania się wynoszenia dokumentów bibliotecznych poza teren biblioteki",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:23:40.538532Z"
+  },
+  "book.otbm.a_city_only_for_serving": {
+    "src_hash": "ac1636229dbf36e9d335628c0577b42a",
+    "text": "Miasto służące tylko jednemu celowi: badaniu magii w naszym świecie Tibia!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:23:40.539917Z"
+  },
+  "book.otbm.a_goblet_forged_by_the": {
+    "src_hash": "8b6673d0d466516b9a27d6990a52bff6",
+    "text": "Czara wykuta przez smoka Khaxa, która reprezentuje całą wiedzę i mądrość Tibii-Wenezueli.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:23:40.540884Z"
+  },
+  "book.otbm.a_low_nearly_always_fourleaved": {
+    "src_hash": "1e9a3bb8579f1329314bfa4cdf473e1f",
+    "text": "Niska, prawie zawsze czterolistna roślina o żółtych kwiatach, rosnąca w ciepłym klimacie. Niegdyś było to główne źródło pożywienia dla kóz na kontynencie. Jednak później odkryto, że ma on całkowicie nieznany, długoterminowy, trujący wpływ na zwierzęta i wszystkie kozy zdechły w ciągu dwóch miesięcy.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:23:40.543457Z"
+  },
+  "book.otbm.a_map_of_several_known": {
+    "src_hash": "39f7c4fba141d7e1fb3b442da6b0da9e",
+    "text": "Mapa kilku znanych, jak i zupełnie egzotycznych lokacji.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:23:47.479725Z"
+  },
+  "book.otbm.a_number_of_marid_was": {
+    "src_hash": "b83daa8d7274930553d5baee01b558d1",
+    "text": "Kilku Maridów zostało schwytanych i zamordowanych na miejscu, ale ku wielkiemu rozczarowaniu Malora, większości żołnierzy Gabela udało się uciec na południe w ramach czegoś, co wydawało się być dobrze zaplanowanym strategicznym wycofaniem. O ileż większe było jego zdziwienie, gdy odkrył, że Maridowie uciekli do miasta Ankrahmun, gdzie się ich spodziewano! Wtedy zdał sobie sprawę, że Gabel przez cały czas podejrzewał podstęp i przygotował kontrstrategię. Malor natychmiast nakazał swoim żołnierzom zaprzestanie pościgu, ale było już za późno. Nieumarli maszerowali przeciwko Ankrahmun z całą determinacją bezmyślnej maszyny do zabijania, a Efreet, zaślepiony wściekłością, nie pozostawał w tyle, tylko po to, by spotkać się z nieustannym gradem strzał i kamieni katapultowych. Rozpoczęła się kataklizmiczna bitwa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:23:47.482708Z"
+  },
+  "book.otbm.a_plant_with_large_dark": {
+    "src_hash": "0d7fad55a7eefdcb74ce4e52dce55bef",
+    "text": "Roślina o dużych, ciemnoczerwonych kwiatach.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:23:47.483323Z"
+  },
+  "book.otbm.a_rarely_found_starshaped_orangecolored": {
+    "src_hash": "e0368988bab5d2ed6a4c3630b6564d2c",
+    "text": "Rzadko spotykany kwiat w kształcie gwiazdy w kolorze pomarańczowym o niesamowitej urodzie. Powszechnie postrzegany jako symbol miłości.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:23:47.484085Z"
+  },
+  "book.otbm.a_spreadsheet_densely_covered_with": {
+    "src_hash": "eee808aef3ccd8af8d6f24c30f980598",
+    "text": "(Arkusz kalkulacyjny gęsto pokryty dziwnymi symbolami, liczbami i znakami, które nie mają dla Ciebie żadnego sensu)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:23:47.484769Z"
+  },
+  "book.otbm.a_teleportation_through_the_magic": {
+    "src_hash": "6a9d8ef923ce3fa1ec907aa46e4c5a16",
+    "text": "Teleportacja przez magiczną sieć",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:23:52.947467Z"
+  },
+  "book.otbm.a_true_knight_always_trusts": {
+    "src_hash": "c49af81275b68f428dd804fdba7930d3",
+    "text": "Prawdziwy Knight zawsze ufa swojemu mieczowi, nawet jeśli jest on prosty.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:23:52.948070Z"
+  },
+  "book.otbm.abandoned_production_sites_caution_swamp": {
+    "src_hash": "b59798afd05dfaa9330b492d7bd5334c",
+    "text": "Opuszczone miejsca produkcyjne. Uwaga: inwazja trolli bagiennych. Wchodzisz na własne ryzyko.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:23:52.948795Z"
+  },
+  "book.otbm.abbot_still_clueless_abour_my": {
+    "src_hash": "4cb3835d413b67b4360f9c26b709dd1c",
+    "text": "... opat wciąż nie ma pojęcia o moim...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:23:52.949343Z"
+  },
+  "book.otbm.abdendriel_furniture_store": {
+    "src_hash": "490e3004b667e42e0b8f0c9dddb65971",
+    "text": "Ab'Dendriel Sklep meblowy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:23:52.950113Z"
+  },
+  "book.otbm.about_the_orcs_because_of": {
+    "src_hash": "8a7eaae5cf6688fde35d549b9764acd3",
+    "text": "o orkach z powodu tych strat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:24:00.160743Z"
+  },
+  "book.otbm.accidentally_stabbed_by_al_dee": {
+    "src_hash": "779db8132eb0644070734465c43a46a0",
+    "text": "Przypadkowo dźgnięty nożem przez Ala Dee.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:24:00.161195Z"
+  },
+  "book.otbm.according_to_our_knowledge_only": {
+    "src_hash": "6b2eab3622e80e1581eaf6bfdad70499",
+    "text": "Według naszej wiedzy jedynie delikatne elfy w swoich miastach głęboko w lasach i krasnoludy w swoich fortecach głęboko w",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:24:00.161929Z"
+  },
+  "book.otbm.advanced_spells_for_less_gold": {
+    "src_hash": "92f5071423def3b53a4129f659f9a6ca",
+    "text": "Zaawansowane zaklęcia za mniej złota.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:24:00.162442Z"
+  },
+  "book.otbm.adventurers_administration_quests_and_tasks": {
+    "src_hash": "a362984b21ac36c0e85a8930374b5232",
+    "text": "Administracja Poszukiwacza Przygód - Misje i Zadania otwarte; skontaktuj się z panem Morrisem.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:24:00.163009Z"
+  },
+  "book.otbm.adventurers_dormitory_door_key_lost": {
+    "src_hash": "a209723332abf2cfb79fe15e3d3db4f1",
+    "text": "Dormitorium Poszukiwaczy Przygód (zgubiony klucz do drzwi, jeśli go znalazłeś, zgłoś się do pana Morrisa.)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:24:05.217159Z"
+  },
+  "book.otbm.adventurers_outpost_bank_safely_hoarding": {
+    "src_hash": "29e63a2b4f96fc97ac7a134c0a428a01",
+    "text": "Bank Poszukiwaczy Przygód – bezpiecznie przechowuj zrabowane złoto, abyś mógł wrócić w dzicz po więcej.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:24:05.218105Z"
+  },
+  "book.otbm.after_a_painful_and_long": {
+    "src_hash": "64842cd3139ca0574392647ba8e386de",
+    "text": "Po bolesnym i długim polowaniu nasi magowie zajmowali Hugo kilkoma przywołanymi smokami, które rozpraszały go na tyle długo, aby przygotować pułapkę. Kiedy Hugo podążył za 'track', który dla niego przygotowaliśmy, nasi druidzi uwięzili go barierami roślinnymi, a następnie poruszyli wokół niego ziemię. Teraz bestia jest uwięziona. Niech Fardos, Uman i Banor zapewnią mu uczucie sytości i spokoju, stosując sztuczkę wymyśloną przez druidów. Naszym aspirantom będzie trudno zdać test, który został stworzony wokół tej bestii.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:24:05.220064Z"
+  },
+  "book.otbm.after_a_week_had_passed": {
+    "src_hash": "98184dfa62bd0f7b10ea2a6bbf71f6bd",
+    "text": "Po tygodniu matematyk wrócił. Jego rada była następująca: faraon powinien zarządzić wielką uroczystość, a wszystkie piramidy ozdobić kwiatami i flagami. Faraon, ufając mądrości swojego doradcy, nakazał swojemu ludowi przygotować się do uroczystości. Podczas gdy ludzie wykonywali polecenie faraona, Athem zaczął budować ogromną drewnianą maszynę na szczycie królewskiej piramidy. Nikt nie zwrócił na to większej uwagi ze względu na trwające przygotowania. Czwartego dnia, kiedy zaplanowano rozpoczęcie uroczystości, faraon wysłał zaproszenie do swego wezyra i poprosił go, aby przyłączył się do uroczystości. Tak jak Athem przewidział, wezyr odmówił, ponieważ podejrzewał, że kryje się w nim pułapka. Zamiast tego siedział w obserwatorium na szczycie swojej wieży i obserwował miasto, ponieważ chciał dowiedzieć się, co porabia faraon. Za późno zrozumiał, że konstrukt na szczycie piramidy był w rzeczywistości ogromną katapultą. Nagle w jego stronę rzucono ogromny głaz. Strzał był doskonale wyliczony i trafił w cel z zadziwiającą precyzją. Szczyt ciemnej wieży został rozbity, a zły wezyr został zmiażdżony pod tonami bazaltu. Jego śmierć spowodowała zniknięcie mrocznej magii, a wieża zatonęła w oceanie na zawsze.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:24:05.224489Z"
+  },
+  "book.otbm.after_all_those_perils_and": {
+    "src_hash": "ef33715f939b368d27054b61cd7844b8",
+    "text": "Po tych wszystkich niebezpieczeństwach i zagadkach w końcu zlokalizowałem tron ​​​​ciemności. poprowadzę...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:24:05.225362Z"
+  },
+  "book.otbm.after_reading_the_whole_book": {
+    "src_hash": "682475be3676ff8d723d477e922408b4",
+    "text": "*Po przeczytaniu całej książki (co zajmuje prawie godzinę) pojawia się ból głowy. Pamiętasz tylko jedną rzecz i musisz się śmiać, gdy wspomnienie powraca. To 647. sposób wykorzystania promienia energii: czcigodny czarodziej, który grilluje mięso swoim śmiercionośnym zaklęciem.*",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:24:13.013807Z"
+  },
+  "book.otbm.after_the_disastrous_battle_of": {
+    "src_hash": "f82674368ccb00008614822d8ccad7d4",
+    "text": "Po katastrofalnej bitwie Ankrahmun Drefia nekromanci wiedzieli, że koniec jest bliski. Maridowie nigdy nie wybaczyliby im zdrady i byłaby to bitwa, której nekromanci nie mogliby wygrać - w końcu wielu z nich zginęło już w bitwie pod Ankrahmun, a ich sojusznicy z Efreetów nie mogli udzielić pomocy. Zatem nekromanci przygotowywali się na nieuniknione z wyzywającym cynizmem tych, którzy przez całe życie zaznajomili się ze śmiercią, odprawiając złe rytuały i oddając się chorobliwym orgiom.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:24:13.015425Z"
+  },
+  "book.otbm.after_the_female_reign_of": {
+    "src_hash": "1e06fe804daa716ae7a348fb78d3ef4d",
+    "text": "Po ustanowieniu żeńskich rządów Carlin i próbie rozszerzenia swoich wpływów przez niezależne miasto wysłano tam osadników, aby zajęli pobliskie tereny.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:24:13.016500Z"
+  },
+  "book.otbm.after_thorough_examination_the_rathal": {
+    "src_hash": "ec443059e1d20f48556aa84f34dd14a6",
+    "text": "Po dokładnym zbadaniu Piramida Rathal I została oficjalnie uznana za wolną od zjawisk okultystycznych. Powodzenie rytuału oczyszczenia przeprowadzonego przez odpowiedzialnych kapłanów przekroczyło wszelkie oczekiwania, a raczej uparta obecność zła, która była najwyraźniej dziełem osoby oficjalnie zidentyfikowanej przez władze jako wiedźma Ushu, została rozpędzona. Podejrzana została odnaleziona w górach, gdzie skutecznie ukryła się przed agentami wydziału polowań na czarownice. Obecnie mówi się, że produkuje niskiej jakości eliksiry miłosne w nieznanej kryjówce gdzieś w zachodnich dżunglach.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:24:13.018677Z"
+  },
+  "book.otbm.after_we_reached_the_site": {
+    "src_hash": "f7305c420111178eb6df216031a53b77",
+    "text": "... Po dotarciu na miejsce rozbiliśmy obóz. Następnego dnia rozpoczęliśmy wykopaliska. To była ciężka praca. Piasek był zdradliwy i uparty, a za każde wiadro, które zabraliśmy, zdawało się, że jego miejsce zajmują dwa kolejne. Czasami trafiamy na coś cennego przez czysty przypadek, ale zwykle znalezienie jakiegoś lukratywnego miejsca zajmowało wiele godzin, ponieważ bez uprzedniego przeprowadzenia szeroko zakrojonych wykopalisk nigdy nie można było stwierdzić, czy dane miejsce jest obiecujące. A jednak to, co prawdziwe, wciąż nam umykało. Pozostałości legendarnych miast zdawały się zagubione na pustyni. Ale my pracowaliśmy dalej dzień i noc, wciąż kopiąc w tym samym miejscu. Postęp był boleśnie powolny, ale w końcu coś trafiło. To, co znaleźliśmy, okazało się odpowiednią nagrodą za nasze trudy.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:24:13.021692Z"
+  },
+  "book.otbm.afterwards_life_returned_to_the": {
+    "src_hash": "d27c4af4234b6a62fa319dced58eebbc",
+    "text": "potem życie wróciło do świata.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:24:18.926756Z"
+  },
+  "book.otbm.aim_of_existence_and_in": {
+    "src_hash": "4e53fa3e3007cfd0706c2a0642138856",
+    "text": "cel istnienia! I w ten sposób kryształowa kolumna czasu urosła w górę i odtąd znajdowała się w nieruchomym centrum",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:24:18.927488Z"
+  },
+  "book.otbm.al_dees_shop_come_to": {
+    "src_hash": "ef77e29986d0a1bc77c29be8fb0a21bc",
+    "text": "Sklep Al Dee - przyjdź tam, gdzie są liny!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:24:18.927957Z"
+  },
+  "book.otbm.al_dees_shop_come_to_af3d4866": {
+    "src_hash": "af3d4866fda6f641067c2d7ffe87cf2a",
+    "text": "Sklep Al Dee - przyjdź tam, gdzie są pochodnie!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:24:18.928424Z"
+  },
+  "book.otbm.al_dees_shop_come_to_ef77e299": {
+    "src_hash": "ef77e29986d0a1bc77c29be8fb0a21bc",
+    "text": "Sklep Al Dee - przyjdź tam, gdzie są liny!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:24:18.928892Z"
+  },
+  "book.otbm.all_others_made_the_same": {
+    "src_hash": "b11d8d1c1fcdb2f3827b377e909e66f9",
+    "text": "Wszyscy inni mieli takie same doświadczenia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:24:21.951565Z"
+  },
+  "book.otbm.all_seem_to_work_well": {
+    "src_hash": "30144924d85add65bcb5f764142fe8bb",
+    "text": "Wszystko wydaje się działać dobrze. Jednak po kilku latach pojawiły się nowe problemy.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:24:21.952207Z"
+  },
+  "cpp.augment.augments_label": {
+    "src_hash": "3bf857eb851edbb5d0122a2f56c2c08e",
+    "text": "\nZwiększać: ({0}).",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:18.189365Z"
+  },
+  "cpp.cancel.construct_inside_house": {
+    "src_hash": "388bc879bb1a6a973ed7816de1cd6c8c",
+    "text": "Możesz to zbudować tylko wewnątrz domu.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:18.206977Z"
+  },
+  "cpp.cancel.hold_container_loot": {
+    "src_hash": "9dc7b7ad844f372874fc3cafe8d3723e",
+    "text": "Aby ustawić kontener jako loot container, musisz trzymać go w ręku.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:18.208634Z"
+  },
+  "cpp.cancel.player_not_exist": {
+    "src_hash": "69cb9491cb55d979028bd27aee6bf4b3",
+    "text": "Gracz o tej nazwie nie istnieje.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:18.211878Z"
+  },
+  "cpp.combat.death": {
+    "src_hash": "2e8d6dbf9112a879d4ceb15403d10a78",
+    "text": "śmierć",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:18.217511Z"
+  },
+  "cpp.game.highscore_category_experience": {
+    "src_hash": "f2de47c8fa46b27bff9339920d329cb5",
+    "text": "Doświadczenie Charm",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:18.262141Z"
+  },
+  "cpp.game.loot_container_full": {
+    "src_hash": "d9a05140336166fe4ded4f2d3ae12124",
+    "text": "Uwaga! Kontener przypisany do kategorii {0} jest pełny.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:18.266154Z"
+  },
+  "cpp.game.loot_too_heavy": {
+    "src_hash": "ef62a2757e6121e0163e029d5bf57c3a",
+    "text": "Uwaga! Łup, który próbujesz podnieść, jest dla ciebie za ciężki.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:18.267653Z"
+  },
+  "cpp.game.looted_corpses": {
+    "src_hash": "c8ffb993bcd8f9102301e196a3528588",
+    "text": "Ograbiłeś {0} ciał.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:18.270165Z"
+  },
+  "cpp.game.offline_training_button_ok": {
+    "src_hash": "26b63f278101527e06a5547719568bb5",
+    "text": "Dobrze",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:18.274887Z"
+  },
+  "cpp.game.quick_loot_fail_gold": {
+    "src_hash": "93a6656cc3090870a08d5ffcad3c3905",
+    "text": "Nie udało się podnieść {0} szt. złota.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:18.279063Z"
+  },
+  "cpp.game.quick_loot_success_gold": {
+    "src_hash": "2c22a4501935a4fb2c046cd63c0ebfcf",
+    "text": "Złupiłeś {0} szt. złota.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:18.280988Z"
+  },
+  "cpp.game.quick_loot_success_one_item": {
+    "src_hash": "f9403206ab5ac258754cb9072c00414b",
+    "text": "Złupiłeś 1 przedmiot.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:18.282195Z"
+  },
+  "cpp.game.trade_move_closer": {
+    "src_hash": "910611242014d7a3145935b2e8bcf298",
+    "text": "{0} mówi ci, żeby podejść bliżej.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:18.288114Z"
+  },
+  "cpp.game.trade_wants_to_trade": {
+    "src_hash": "380692fda7642077d27100074334b012",
+    "text": "{0} chce z tobą handlować.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:18.289423Z"
+  },
+  "cpp.inspect.body_position": {
+    "src_hash": "cd9a417af3ad9e295cdee793faae5996",
+    "text": "Ciało Pozycja",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:18.299775Z"
+  },
+  "cpp.inspect.key": {
+    "src_hash": "897356954c2cd3d41b221e3f24f99bba",
+    "text": "Klucz",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:18.308614Z"
+  },
+  "cpp.inspect.mana_shield": {
+    "src_hash": "f249800c7cf9b009f48674253a64721d",
+    "text": "Mana Tarcza",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:18.310720Z"
+  },
+  "cpp.inspect.required_magic_level": {
+    "src_hash": "6821616c8a63532178ae7438bea1c633",
+    "text": "Wymagany Magia Poziom",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:18.314831Z"
+  },
+  "cpp.inspect.speed": {
+    "src_hash": "44877c6aa8e93fa5a91c9361211464fb",
+    "text": "Szybkość",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:18.316431Z"
+  },
+  "cpp.look.field": {
+    "src_hash": "4a5fa533e75ff67489d6d460bfe0e275",
+    "text": " ognia",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:18.330173Z"
+  },
+  "cpp.look.magic_level_label": {
+    "src_hash": "35e304d91aea4e7e22e337bf6da2a949",
+    "text": "Poziom Magii",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:18.334318Z"
+  },
+  "cpp.look.magic_shield_capacity": {
+    "src_hash": "6d9ec240fe3d70164f1ca05641d8962d",
+    "text": "magia tarcza udźperuka",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:18.335980Z"
+  },
+  "cpp.look.mana_shield": {
+    "src_hash": "475e549fe594c71ffa9ca2e3b939c548",
+    "text": "mana tarcza",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:18.337177Z"
+  },
+  "cpp.look.physical_plus": {
+    "src_hash": "3ecd10fa398143a7349ecddd35453c78",
+    "text": " fizyczny + ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:18.343268Z"
+  },
+  "cpp.look.speed_label": {
+    "src_hash": "ce4ef3ec98443ed10da505114b58f153",
+    "text": "szybkość",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:18.350147Z"
+  },
+  "cpp.returnvalue.player_is_pz_locked": {
+    "src_hash": "b80258e64c995bdd22f7504047329a5e",
+    "text": "Nie możesz wejść do strefy ochronnej po zaatakowaniu innego gracza.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:18.448535Z"
+  },
+  "cpp.returnvalue.player_with_this_name_is_not_online": {
+    "src_hash": "3566f9386618d40bd33f776cbfdcda14",
+    "text": "Gracz o tej nazwie nie jest online.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:18.449827Z"
+  },
+  "cpp.skill.magic_level": {
+    "src_hash": "35e304d91aea4e7e22e337bf6da2a949",
+    "text": "Poziom Magii",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:18.481060Z"
+  },
+  "cpp.title.name_35": {
+    "src_hash": "c832ebedcda0735c04f463f5db9e14d0",
+    "text": "Krew Księżyc Myśliwy",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:18.555384Z"
+  },
+  "cpp.badge.name_10": {
+    "src_hash": "3bcf13a179ce88693b131c2a06cee98f",
+    "text": "Gracz globalny (klasa 2)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:23.056296Z"
+  },
+  "cpp.badge.name_11": {
+    "src_hash": "f3f20eb4a38b586035729259f702f3b2",
+    "text": "Gracz globalny (klasa 3)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:23.056753Z"
+  },
+  "cpp.badge.name_12": {
+    "src_hash": "1b0513efec3233c9461fbdd02a9b968f",
+    "text": "Klasa mistrzowska (klasa 1)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:23.057161Z"
+  },
+  "cpp.badge.name_13": {
+    "src_hash": "09f5b58aae7e9076d5d870715b2c878a",
+    "text": "Klasa mistrzowska (klasa 2)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:23.057528Z"
+  },
+  "cpp.badge.name_14": {
+    "src_hash": "64447327a9736d0a4dbcd779f65b412b",
+    "text": "Klasa mistrzowska (klasa 3)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:27.743339Z"
+  },
+  "cpp.badge.name_16": {
+    "src_hash": "9474f91d37ea76ea708fd516780c6c0d",
+    "text": "Regularny turniej",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:27.744897Z"
+  },
+  "cpp.badge.name_20": {
+    "src_hash": "d4675c48c7763eb2ec58da3658f0c697",
+    "text": "Mistrz turnieju",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:27.745613Z"
+  },
+  "cpp.badge.name_21": {
+    "src_hash": "5d7a24925d90015a268de468703d7d2e",
+    "text": "Mistrz turnieju",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:27.746255Z"
+  },
+  "cpp.badge.name_3": {
+    "src_hash": "6776c826266920e800560c621811745c",
+    "text": "Starszy bohater",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:27.751230Z"
+  },
+  "cpp.badge.name_6": {
+    "src_hash": "36dd65f81f731b09330b25557dead495",
+    "text": "Tibia Lojalista (stopień 1)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:32.570437Z"
+  },
+  "cpp.badge.name_7": {
+    "src_hash": "bb5f7090a7a1fa38a66dd425d225b79e",
+    "text": "Tibia Lojalista (stopień 2)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:32.570924Z"
+  },
+  "cpp.badge.name_8": {
+    "src_hash": "a128a1dbc2cafd8e1c443c674aaacb8d",
+    "text": "Tibia Lojalista (klasa 3)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:32.571370Z"
+  },
+  "cpp.badge.name_9": {
+    "src_hash": "574951c030bb79855ca9d28cbd1f0292",
+    "text": "Gracz globalny (klasa 1)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:32.571742Z"
+  },
+  "cpp.bestiary.already_set_charm": {
+    "src_hash": "91bb37a3a8ee779633c104fdfbc8f9db",
+    "text": "Masz już tego potwora na innym uroku {0}!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:32.572236Z"
+  },
+  "cpp.bestiary.charm_category_major": {
+    "src_hash": "3b329734e45b57e60f3df64c2cf412a9",
+    "text": "Główny",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:37.238696Z"
+  },
+  "cpp.bestiary.charm_max_level": {
+    "src_hash": "e08dde16fbfb0e0e40d64cc911254381",
+    "text": "Urok na maksymalnym poziomie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:37.239118Z"
+  },
+  "cpp.bestiary.creature_set_free": {
+    "src_hash": "1b9e7783d24bd32fa31f59b6ca3bfd0e",
+    "text": "Stworzenie zostało ustawione! Jesteś darmowym graczem, więc możesz zyskać aż 2 runy! Gracze premium korzystają z 6, a rozszerzenie uroku pozwala na ustawienie stworzeń na wszystkich runach jednocześnie!.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:37.240087Z"
+  },
+  "cpp.bestiary.creature_set_premium": {
+    "src_hash": "173486a4f560ffdc367d58a170fb2e53",
+    "text": "Stworzenie zostało ustawione! Jesteś graczem premium, więc możesz korzystać z aż 6 run! Rozszerzenie Uroku pozwala na ustawienie stworzeń na wszystkich runach na raz!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:37.241035Z"
+  },
+  "cpp.bestiary.no_charm_slots": {
+    "src_hash": "5c76d66c8b5fb599ec149edb99a3f723",
+    "text": "Nie masz dostępnych żadnych miejsc na uroki.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:37.241514Z"
+  },
+  "cpp.bestiary.not_enough_charm_echoes": {
+    "src_hash": "78facaef7b222fb285ab287741ea4281",
+    "text": "Nie masz wystarczającej liczby mniejszych ech uroku, aby odblokować tę runę.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:42.361148Z"
+  },
+  "cpp.bestiary.not_enough_charm_points": {
+    "src_hash": "6f005a14f6e03de08a54dc633fda2ac4",
+    "text": "Nie masz wystarczającej liczby punktów uroku, aby odblokować tę runę.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:42.362161Z"
+  },
+  "cpp.bestiary.unlocked_details": {
+    "src_hash": "d6bce59d49bccbecbd69fb68018c68ad",
+    "text": "Odblokowałeś szczegóły stworzenia '{0}'",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:42.363075Z"
+  },
+  "cpp.bosstiary.podium_reward": {
+    "src_hash": "6afd22e748b46b86cb19f4a617b02fea",
+    "text": "Gratulacje! Osiągnąłeś poziom Ekspertyzy dla swojego pierwszego szefa. W nagrodę na skrzynkę odbiorczą Twojego Sklepu zostało wysłane bezpłatne Podium Wigoru. Możesz umieścić to podium w dowolnym domu, który posiadasz tą postacią. Użyj go, aby wyświetlić bossów, dla których osiągnąłeś co najmniej poziom Ekspertyzy.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:42.365110Z"
+  },
+  "cpp.cancel.cannot_move_house": {
+    "src_hash": "4bbefef324ff5501d56413ed2e1d7788",
+    "text": "Nie możesz przenieść tego przedmiotu z tego domu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:42.365845Z"
+  },
+  "cpp.cancel.cannot_stow_here": {
+    "src_hash": "7dda5876a5bbf91b1226ed3e79e7d2ed",
+    "text": "Tego przedmiotu nie można tutaj przechowywać.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:46.959466Z"
+  },
+  "cpp.cancel.group_name_exists": {
+    "src_hash": "66f16f5c3444e6abfb5b0da3d73c6d62",
+    "text": "Grupa o tej nazwie już istnieje. Proszę wybrać inną nazwę.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:46.960568Z"
+  },
+  "cpp.cancel.max_beds": {
+    "src_hash": "a5bb3ffc8f9a977aa8c81e701e098227",
+    "text": "Osiągnąłeś maksymalną liczbę łóżek w tym domu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:46.961522Z"
+  },
+  "cpp.cancel.no_pm_self": {
+    "src_hash": "238517cb7c01341c1748dea6a4ce66ec",
+    "text": "Nie możesz skonfigurować prywatnego kanału wiadomości dla siebie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:46.962471Z"
+  },
+  "cpp.cancel.no_stowable_items": {
+    "src_hash": "74946aee5588f5c90c64011260dfbbbd",
+    "text": "W tym kontenerze nie ma żadnych przedmiotów, które można schować.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:46.963030Z"
+  },
+  "cpp.cancel.not_allowed_construct": {
+    "src_hash": "321d6b9b0ef4d981cc03781bfe997882",
+    "text": "Nie wolno ci tutaj tego konstruować.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:52.592407Z"
+  },
+  "cpp.cancel.stash_wait": {
+    "src_hash": "8e97cd473570086184609edf89e64947",
+    "text": "Nie możesz teraz używać skrytki.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:52.593672Z"
+  },
+  "cpp.cancel.wait_again": {
+    "src_hash": "7743ede2fb52bb2f7a2f239b890194a0",
+    "text": "Aby zrobić to ponownie, musisz poczekać.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:52.594705Z"
+  },
+  "cpp.chat.private_invite_received": {
+    "src_hash": "1283d1f0bed25a89fdba76bc3a0eaccb",
+    "text": "{0} zaprasza Cię na prywatny kanał czatu {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:52.595733Z"
+  },
+  "cpp.combat.charm_savage_blow": {
+    "src_hash": "20827ecb1eb699c4e44204dc4e91221f",
+    "text": "(amulet dzikiego ciosu)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:52.596321Z"
+  },
+  "cpp.combat.condition_healed_one": {
+    "src_hash": "0bf121421a3a381451a59e1c85aeda73",
+    "text": "Zostałeś wyleczony za {0} punktów życia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:58.710940Z"
+  },
+  "cpp.combat.condition_healed_other": {
+    "src_hash": "9e6bedd1c5b4f37f6b98fa8d89b531b6",
+    "text": "Zostałeś wyleczony za {0} punktów życia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:58.711847Z"
+  },
+  "cpp.combat.condition_healed_spectator_one": {
+    "src_hash": "563946f2da69fc4d5e67fe5fbbabd7a3",
+    "text": "{0} został wyleczony za {1} punktów życia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:58.712711Z"
+  },
+  "cpp.combat.condition_healed_spectator_other": {
+    "src_hash": "a038c6c62c0d42fcd3a8fe3616466458",
+    "text": "{0} został wyleczony za {1} punktów życia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:58.713625Z"
+  },
+  "cpp.combat.dmg_attacker_crit_one": {
+    "src_hash": "65cc48920b09ac5e937e44b2ccb79160",
+    "text": "{0} traci {1} punktów życia z powodu twojego ataku krytycznego.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:25:58.714651Z"
+  },
+  "client.tasks.text1": {
+    "src_hash": "1728c9ab0153ff21b281886f41288cae",
+    "text": "Please select Potwór from Potwór list.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:27:32.220327Z"
+  },
+  "client.tasks.text2": {
+    "src_hash": "1728c9ab0153ff21b281886f41288cae",
+    "text": "Please select Potwór from Potwór list.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:27:32.221356Z"
+  },
+  "client.tasks.text3": {
+    "src_hash": "1728c9ab0153ff21b281886f41288cae",
+    "text": "Please select Potwór from Potwór list.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:27:32.222379Z"
+  },
+  "client.npctrade.text1": {
+    "src_hash": "090951e6353119d15cea658bfd978777",
+    "text": "Lista przedmiotów, które możesz kupić",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:27:34.931974Z"
+  },
+  "client.npctrade.text2": {
+    "src_hash": "7d277e244c9a49fba327e245d6e2d4f1",
+    "text": "Lista przedmiotów, które możesz sprzedać",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:27:34.932416Z"
+  },
+  "client.charms1410.text1": {
+    "src_hash": "31597b577bc92187dd76bf8b78ad89ce",
+    "text": "Pomniejsze Urok odbija się echem\nZdobyte poprzez odblokowanie lub ulepszenie głównego uroku i awansowanie swojej postaci",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:27:38.750589Z"
+  },
+  "client.charms.text3": {
+    "src_hash": "a62a1589932af73bb8e34027c44d27d3",
+    "text": "Z szansą unika ataku, unikając wszelkich obrażeń.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:27:38.751450Z"
+  },
+  "client.bottommenu.text5": {
+    "src_hash": "57cac65371fa5e2db2a82019609b5c08",
+    "text": "obrazy/ikona-znak zapytania",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:27:44.067315Z"
+  },
+  "client.http.text3": {
+    "src_hash": "5c70b6b7209678f29d7c2ff3a4c72ebe",
+    "text": "HTTP.getJSON nie jest obsługiwany",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:27:44.114859Z"
+  },
+  "client.http.text4": {
+    "src_hash": "7c6b05f8b2ef308c238f8a1161059748",
+    "text": "HTTP.post nie jest obsługiwany",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:27:44.115957Z"
+  },
+  "client.http.text5": {
+    "src_hash": "ba1e4388c5ade43ebba74328a75b792e",
+    "text": "HTTP.postJSON nie jest obsługiwany",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:27:44.117012Z"
+  },
+  "client.neededtranslations.text3": {
+    "src_hash": "090951e6353119d15cea658bfd978777",
+    "text": "Lista przedmiotów, które możesz kupić",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:27:48.074633Z"
+  },
+  "client.neededtranslations.text4": {
+    "src_hash": "7d277e244c9a49fba327e245d6e2d4f1",
+    "text": "Lista przedmiotów, które możesz sprzedać",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:27:48.075110Z"
+  },
+  "client.imbuing.text4": {
+    "src_hash": "fd9c5ad613abbde3df710701444e0f75",
+    "text": "Kliknij tutaj aby przeprowadzić wybrane nasycenie. To pochłonie wymagane źródła astralne i złoto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:27:48.075748Z"
+  },
+  "client.game_questlog.text1": {
+    "src_hash": "910d89aefb3a5449196b4604a900bd5f",
+    "text": "Usuń ukończone zadania // Automatycznie śledź nowe zadania // Automatycznie usuwaj ukończone zadania",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:27:48.076387Z"
   }
 }

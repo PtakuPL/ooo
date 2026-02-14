@@ -2,44 +2,24 @@
   "lang": "ar",
   "script_group": "rtl",
   "total_keys": 53586,
-  "translated": 5547,
+  "translated": 5533,
   "identical_to_en": 3757,
-  "placeholder_keys": 48039,
-  "coverage_pct": 10.4,
-  "issues_total": 83,
+  "placeholder_keys": 48053,
+  "coverage_pct": 10.3,
+  "issues_total": 75,
   "issues_by_type": {
-    "script_rtl_insufficient": 77,
+    "script_rtl_insufficient": 72,
     "V4_artifact": 2,
-    "V1_placeholder_mismatch": 2,
-    "V6_newline_mismatch": 1,
-    "V5_pipe_mismatch": 1
+    "V6_newline_mismatch": 1
   },
   "issues_by_severity": {
-    "CRITICAL": 3,
-    "HIGH": 79,
+    "CRITICAL": 0,
+    "HIGH": 74,
     "MEDIUM": 1,
     "LOW": 0
   },
-  "score": 97.7,
+  "score": 98.0,
   "worst_keys": [
-    {
-      "key": "scripts.actions_rewards.msg_1",
-      "category": "scripts",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "talkaction.online.msg_summary",
-      "category": "talkactions",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "talkaction.online.msg_summary",
-      "category": "talkactions",
-      "type": "V5_pipe_mismatch",
-      "severity": "CRITICAL"
-    },
     {
       "key": "book.otbm.battletactics_for_mages_ii",
       "category": "books",
@@ -50,12 +30,6 @@
       "key": "book.otbm.battletactics_for_mages_iii",
       "category": "books",
       "type": "V4_artifact",
-      "severity": "HIGH"
-    },
-    {
-      "key": "book.otbm.huv_stollan_match_stuf_from",
-      "category": "books",
-      "type": "script_rtl_insufficient",
       "severity": "HIGH"
     },
     {
@@ -141,15 +115,39 @@
       "category": "items",
       "type": "script_rtl_insufficient",
       "severity": "HIGH"
+    },
+    {
+      "key": "item.23443.name",
+      "category": "items",
+      "type": "script_rtl_insufficient",
+      "severity": "HIGH"
+    },
+    {
+      "key": "item.24227.name",
+      "category": "items",
+      "type": "script_rtl_insufficient",
+      "severity": "HIGH"
+    },
+    {
+      "key": "item.24966.name",
+      "category": "items",
+      "type": "script_rtl_insufficient",
+      "severity": "HIGH"
+    },
+    {
+      "key": "item.2521.name",
+      "category": "items",
+      "type": "script_rtl_insufficient",
+      "severity": "HIGH"
     }
   ],
   "crossref": {
     "enabled": false,
-    "issues_total": 415,
+    "issues_total": 414,
     "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 15,
+    "length_ratio": 14,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-14T12:03:32.807382Z"
+  "validated_at": "2026-02-14T12:26:46.554137Z"
 }

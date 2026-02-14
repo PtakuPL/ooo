@@ -3,7 +3,7 @@
   "system.blessing.received": "Vous avez reçu les {1} bénédictions restantes.",
   "system.experience.gained": "Vous avez gagné {1} points d'expérience.",
   "system.item.received": "Vous avez obtenu {1}.",
-  "system.mission.points": "Vous avez gagné {1} point(s) pour la mission {2}.",
+  "system.mission.points": "[FR] You earned {1} point(s) on the {2} mission.",
   "system.mount.received": "Félicitations, vous avez reçu la monture {1}.",
   "system.stash.count": "Votre réserve contient {1} objets.",
   "system.store.check_inbox": "Veuillez vérifier que vous avez des emplacements libres dans votre boîte de réception de la boutique.",

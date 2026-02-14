@@ -735,7 +735,7 @@
   "html.news.tickers.html.text1": "[EN] {{ ticker.date|date(\"j M Y\") }}",
   "html.news.tickers.html.text2": "[EN] {{ ticker.body|raw }}",
   "html.no_results_returned.text1": "[EN] {% trans 'Query results operations' %}",
-  "html.node.text1": "{{ get_image(Nãode.icon['image'], Nãode.icon['title']) }}",
+  "html.node.text1": "[PT] {{ get_image(node.icon['image'], node.icon['title']) }}",
   "html.notificationsasync.text1": "[EN] Export to PDF test 1.",
   "html.notificationsasync.text2": "[EN] Export to PDF test 2.",
   "html.online.html.text1": "[EN] *Note: Online List is updated every {{ onlineTTL  1 ? ' ' ~ onlineTTL : '' }} minute{{ onlineTTL  1 ? 's' : '' }}.",

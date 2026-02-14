@@ -2,48 +2,22 @@
   "lang": "el",
   "script_group": "exotic",
   "total_keys": 53586,
-  "translated": 3693,
-  "identical_to_en": 2717,
-  "placeholder_keys": 49893,
+  "translated": 3701,
+  "identical_to_en": 2702,
+  "placeholder_keys": 49885,
   "coverage_pct": 6.9,
-  "issues_total": 64,
+  "issues_total": 54,
   "issues_by_type": {
-    "script_wrong_script": 61,
-    "V1_placeholder_mismatch": 2,
-    "V5_pipe_mismatch": 1
+    "script_wrong_script": 54
   },
   "issues_by_severity": {
-    "CRITICAL": 3,
-    "HIGH": 61,
+    "CRITICAL": 0,
+    "HIGH": 54,
     "MEDIUM": 0,
     "LOW": 0
   },
-  "score": 97.3,
+  "score": 97.8,
   "worst_keys": [
-    {
-      "key": "scripts.actions_rewards.msg_1",
-      "category": "scripts",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "talkaction.online.msg_summary",
-      "category": "talkactions",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "talkaction.online.msg_summary",
-      "category": "talkactions",
-      "type": "V5_pipe_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "achievement.26.name",
-      "category": "achievements",
-      "type": "script_wrong_script",
-      "severity": "HIGH"
-    },
     {
       "key": "achievement.72.name",
       "category": "achievements",
@@ -64,12 +38,6 @@
     },
     {
       "key": "achievement.311.name",
-      "category": "achievements",
-      "type": "script_wrong_script",
-      "severity": "HIGH"
-    },
-    {
-      "key": "achievement.317.name",
       "category": "achievements",
       "type": "script_wrong_script",
       "severity": "HIGH"
@@ -139,6 +107,36 @@
       "category": "items",
       "type": "script_wrong_script",
       "severity": "HIGH"
+    },
+    {
+      "key": "item.3147.name",
+      "category": "items",
+      "type": "script_wrong_script",
+      "severity": "HIGH"
+    },
+    {
+      "key": "item.3148.name",
+      "category": "items",
+      "type": "script_wrong_script",
+      "severity": "HIGH"
+    },
+    {
+      "key": "item.3149.name",
+      "category": "items",
+      "type": "script_wrong_script",
+      "severity": "HIGH"
+    },
+    {
+      "key": "item.3152.name",
+      "category": "items",
+      "type": "script_wrong_script",
+      "severity": "HIGH"
+    },
+    {
+      "key": "item.3153.name",
+      "category": "items",
+      "type": "script_wrong_script",
+      "severity": "HIGH"
     }
   ],
   "crossref": {
@@ -149,5 +147,5 @@
     "length_ratio": 5,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-14T12:03:34.221311Z"
+  "validated_at": "2026-02-14T12:26:48.969581Z"
 }

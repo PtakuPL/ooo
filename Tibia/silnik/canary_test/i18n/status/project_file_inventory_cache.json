@@ -1,7 +1,7 @@
 {
-  "timestamp": 1771071009,
+  "timestamp": 1771071679,
   "ttl_sec": 600,
-  "all_project_files": 20299,
+  "all_project_files": 20301,
   "files_by_type": {
     ".yml": 19,
     ".txt": 83,
@@ -37,6 +37,8 @@
     ".bak_20251211_1719": 1,
     ".jsonl": 18,
     ".tsv": 3,
+    ".20260214_132041": 1,
+    ".20260214_132040": 1,
     ".corrupted": 1,
     ".corrupted_backup": 2,
     ".cpp": 370,

@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-02-14T12:20:45.622008Z",
-  "cycle_counter": 535,
-  "last_target_key": "pl:raids.json",
-  "last_pending_total": 108,
+  "timestamp": "2026-02-14T12:27:29.064472Z",
+  "cycle_counter": 540,
+  "last_target_key": "pl:client.json",
+  "last_pending_total": 37,
   "last_tier": 1,
-  "last_cat_priority": 8,
-  "candidates_count": 43,
-  "active_candidates_count": 37,
+  "last_cat_priority": 9,
+  "candidates_count": 46,
+  "active_candidates_count": 40,
   "skipped_backoff": 6,
   "skipped_guard_fail": 0,
   "guard_fail_blacklist": {},
@@ -300,8 +300,8 @@
       "pl"
     ],
     "lang_completion": {
-      "es": 76.76,
-      "pl": 45.47
+      "es": 73.07,
+      "pl": 41.88
     }
   }
 }

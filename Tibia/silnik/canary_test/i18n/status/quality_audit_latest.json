@@ -1,242 +1,75 @@
 {
-  "timestamp": "2026-02-14T12:03:32.370517Z",
+  "timestamp": "2026-02-14T12:26:46.189324Z",
   "checked_entries": 100,
-  "issues_found": 32,
+  "issues_found": 8,
   "issues_by_type": {
-    "identical_to_en_exempt": 27,
-    "identical_to_en": 32,
-    "suspicious_log_low": 109,
-    "suspicious_log_medium": 3,
-    "suspicious_log_critical": 23,
-    "suspicious_log_high": 65,
-    "suspicious_rejected_critical": 200
+    "identical_to_en": 7,
+    "artifact_token": 1,
+    "identical_to_en_exempt": 3,
+    "suspicious_log_high": 28,
+    "suspicious_log_critical": 38,
+    "suspicious_log_low": 100,
+    "suspicious_log_medium": 1,
+    "suspicious_rejected_critical": 1
   },
   "issues": [
     {
-      "key": "scripts.actions_pyramids2.msg_1",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "<screeeech> <squeak> <squeaaaaal>",
-      "translated": "<screeeech> <squeak> <squeaaaaal>"
-    },
-    {
-      "key": "scripts.music_box.sound_magma_crawler",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "ZzzZzzZzzzZz",
-      "translated": "ZzzZzzZzzzZz"
-    },
-    {
-      "key": "scripts.on_look.admin_ip",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "%s\nIP: %s",
-      "translated": "%s\nIP: %s"
-    },
-    {
-      "key": "raid.undead_cavebear.name",
+      "key": "spell.apprentice's_strike.name",
       "lang": "pl",
       "type": "identical_to_en",
-      "en": "Undead Cavebear",
-      "translated": "Undead Cavebear"
+      "en": "Apprentice's Strike",
+      "translated": "Apprentice's Strike"
     },
     {
-      "key": "raid.diblis_the_fair.name",
+      "key": "spell.nature's_embrace.name",
       "lang": "pl",
       "type": "identical_to_en",
-      "en": "Diblis The Fair",
-      "translated": "Diblis The Fair"
+      "en": "Nature's Embrace",
+      "translated": "Nature's Embrace"
     },
     {
-      "key": "raid.the_old_widow.name",
+      "key": "spell.annihilon_paralyze.name",
       "lang": "pl",
       "type": "identical_to_en",
-      "en": "The Old Widow",
-      "translated": "The Old Widow"
+      "en": "Annihilon Paralyze",
+      "translated": "Annihilon Paralyze"
     },
     {
-      "key": "raid.feverish_citizen.name",
+      "key": "quests.bigfoot_burden.gnomedix_msg4",
       "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Feverish Citizen",
-      "translated": "Feverish Citizen"
-    },
-    {
-      "key": "raid.water_buffalo.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Water Buffalo",
-      "translated": "Water Buffalo"
-    },
-    {
-      "key": "raid.sir_valorcrest.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Sir Valorcrest",
-      "translated": "Sir Valorcrest"
-    },
-    {
-      "key": "raid.weakened_shlorg.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Weakened Shlorg",
-      "translated": "Weakened Shlorg"
-    },
-    {
-      "key": "raid.zevelon_duskbringer.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Zevelon Duskbringer",
-      "translated": "Zevelon Duskbringer"
-    },
-    {
-      "key": "raid.zulazza_the_corruptor.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Zulazza The Corruptor",
-      "translated": "Zulazza The Corruptor"
-    },
-    {
-      "key": "raid.undead_darashia.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Undead Darashia",
-      "translated": "Undead Darashia"
-    },
-    {
-      "key": "raid.barba_bittermor.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Barba Bittermor",
-      "translated": "Barba Bittermor"
-    },
-    {
-      "key": "raid.terrorbirds.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Terrorbirds",
-      "translated": "Terrorbirds"
-    },
-    {
-      "key": "raid.gaz_haragoth.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Gaz Haragoth",
-      "translated": "Gaz Haragoth"
-    },
-    {
-      "key": "raid.gnarlhounds.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Gnarlhounds",
-      "translated": "Gnarlhounds"
-    },
-    {
-      "key": "npc.a_sleeping_dragon.multi_1",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "SAETHELON TORILUN GARNUM. ...",
-      "translated": "SAETHELON TORILUN GARNUM. ..."
-    },
-    {
-      "key": "npc.a_weakened_forest_fury.say_4",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Take care, guardian.",
-      "translated": "Take care, guardian."
-    },
-    {
-      "key": "npc.albinius.say_10",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "As you wish.",
-      "translated": "As you wish."
-    },
-    {
-      "key": "npc.andrew_lyze.say_14",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Don't waste my time.",
-      "translated": "Don't waste my time."
-    },
-    {
-      "key": "npc.appaloosa.say_5",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Have a nice trip!",
-      "translated": "Have a nice trip!"
-    },
-    {
-      "key": "npc.atrad.say_3",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "You don't have it...",
-      "translated": "You don't have it..."
-    },
-    {
-      "key": "raid.undead_darashia.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Undead Darashia",
-      "translated": "Undead Darashia"
-    },
-    {
-      "key": "raid.priestesses.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Priestesses",
-      "translated": "Priestesses"
-    },
-    {
-      "key": "raid.barba_bittermor.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Barba Bittermor",
-      "translated": "Barba Bittermor"
-    },
-    {
-      "key": "raid.terrorbirds.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Terrorbirds",
-      "translated": "Terrorbirds"
+      "type": "artifact_token",
+      "en": "Gnomedix: We're almost don... holy gnome! What's THIS???",
+      "translated": "Gnomedix: Prawie skończyliśmy... święty gnom! CO TO JEST???"
     },
     {
       "key": "raid.wild_horses.name",
-      "lang": "es",
+      "lang": "pl",
       "type": "identical_to_en",
       "en": "Wild Horses",
       "translated": "Wild Horses"
     },
     {
-      "key": "raid.orc_backpack.name",
-      "lang": "es",
+      "key": "raid.sheng.name",
+      "lang": "pl",
       "type": "identical_to_en",
-      "en": "Orc Backpack",
-      "translated": "Orc Backpack"
+      "en": "Sheng",
+      "translated": "Sheng"
     },
     {
-      "key": "raid.sir_valorcrest.name",
-      "lang": "es",
+      "key": "raid.quaras.name",
+      "lang": "pl",
       "type": "identical_to_en",
-      "en": "Sir Valorcrest",
-      "translated": "Sir Valorcrest"
+      "en": "Quaras",
+      "translated": "Quaras"
     },
     {
-      "key": "raid.gnarlhounds.name",
-      "lang": "es",
+      "key": "raid.elves.name",
+      "lang": "pl",
       "type": "identical_to_en",
-      "en": "Gnarlhounds",
-      "translated": "Gnarlhounds"
-    },
-    {
-      "key": "raid.zevelon_duskbringer.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Zevelon Duskbringer",
-      "translated": "Zevelon Duskbringer"
+      "en": "Elves",
+      "translated": "Elves"
     }
   ],
   "threshold": 10,
-  "slow_mode": true
+  "slow_mode": false
 }

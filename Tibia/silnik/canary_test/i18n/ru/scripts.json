@@ -285,7 +285,7 @@
   "scripts.actions_bonefiddle.msg_1": "Вы прикрепляете черное дерево к черепу. Это должно соответствовать требованиям, предъявляемым к грифу.",
   "scripts.actions_bonefiddle.msg_2": "Вы прикрепляете волосы к накладке грифа из черного дерева. Пряди должны быть подходящими для использования в качестве веревок.",
   "scripts.actions_bonefiddle.msg_3": "*Жила-была красавица-девица с темными глазами и шелковистыми волосами. Вдали от дома она умерла. Ни могилы, ни поминок, ни траура.*",
-  "scripts.actions_bonefiddle.msg_4": "Вы играете в Peacock Ballad, и портал открывается.",
+  "scripts.actions_bonefiddle.msg_4": "[RU] You are playing the Peacock Ballad and the portal opens.",
   "scripts.actions_bonefiddle.msg_5": "Вы играете на костяной скрипке.",
   "scripts.actions_bony_rod.say_1": "[EN] Recharging...",
   "scripts.actions_bookOnTable.msg_1": "[EN] This book tells you about a spell that draws its wielder towards the most energetic being next to him.",

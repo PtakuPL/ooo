@@ -1186,6 +1186,12 @@ try:
 except:
     data = {"files": {}}
 
+status_file_mtime = 0.0
+try:
+    status_file_mtime = float(os.path.getmtime(STATUS_FILE))
+except Exception:
+    status_file_mtime = 0.0
+
 files = data.get("files", {})
 completed = len([f for f, info in files.items() if info.get("overall_status") == "completed"])
 in_progress = len([f for f, info in files.items() if info.get("overall_status") == "in_progress"])
@@ -2980,7 +2986,8 @@ history_last_update = timestamp
 # Section freshness
 meta_freshness = "teraz"
 live_freshness = _freshness_label(heartbeat_iso) if heartbeat_iso else "brak heartbeat"
-migration_freshness = _freshness_label(last_activity_time) if last_activity_time > 0 else "brak aktywności migracji"
+_migration_anchor = max(float(last_activity_time or 0), float(status_file_mtime or 0))
+migration_freshness = _freshness_label(_migration_anchor) if _migration_anchor > 0 else "brak aktywności migracji"
 translation_freshness = _freshness_label(translation_last_update) if translation_last_update != "-" else "brak"
 quality_freshness = _freshness_label(quality_last_update) if quality_last_update != "-" else "brak"
 history_freshness = "teraz"
@@ -9438,7 +9445,7 @@ for key, en_value in en_data.items():
             continue
 
     # (R5) I. artifact — angielskie "I" pozostawione z kropką (artefakt ChatGPT)
-    if re.search(r'\bI\.(?:\s|$)', value):
+    if re.search(r'\bI\.(?:\s|[.!?,;:]|$)', value) and not re.search(r'\bI\.(?:\s|[.!?,;:]|$)', en_value):
         lang_data[key] = f"{UNTRANSLATED_PREFIX}{en_value}"
         repaired_i_dot += 1
         continue
@@ -9456,10 +9463,18 @@ for key, en_value in en_data.items():
         _en_content_src = set(w.lower() for w in re.findall(r'[a-zA-Z]{4,}', str(en_value)))
         _en_content_tr = set(w.lower() for w in re.findall(r'[a-zA-Z]{4,}', value))
         _content_overlap = len(_en_content_src & _en_content_tr) / len(_en_content_src) if _en_content_src else 0
+        # R6a: Function words mix (original check)
         if (_en_func_count >= 2 and (_en_func_count / len(_tr_words) > 0.2 or _content_overlap > 0.5)):
             lang_data[key] = f"{UNTRANSLATED_PREFIX}{en_value}"
             repaired_word_salad += 1
             continue
+        # R6b: High EN content word overlap (translation keeps many EN words)
+        if _content_overlap > 0.3 and len(_en_content_src & _en_content_tr) >= 2:
+            _overlap_by_tr_words = len(_en_content_src & _en_content_tr) / len(_tr_words) if _tr_words else 0
+            if _overlap_by_tr_words > 0.2:
+                lang_data[key] = f"{UNTRANSLATED_PREFIX}{en_value}"
+                repaired_word_salad += 1
+                continue
 
     # (R7) Wrong script — non-Latin lang has all-Latin translation (garbage from TM/import)
     _r7_non_latin = {'bg','mk','ru','sr','uk','ja','ko','zh','zh-cn','zh-tw','zh_tw',
@@ -13107,7 +13122,7 @@ def validate_candidate(en_text: str, candidate: str):
         return False, "quality"
 
     # Hard gate: I. artifact
-    if re.search(r'\bI\.(?:\s|$)', candidate) and not re.search(r'\bI\.(?:\s|$)', en_text):
+    if re.search(r'\bI\.(?:\s|[.!?,;:]|$)', candidate) and not re.search(r'\bI\.(?:\s|[.!?,;:]|$)', en_text):
         return False, "i_dot_artifact"
 
     # Hard gate: word salad (EN function words >25% of translation)
@@ -13119,6 +13134,15 @@ def validate_candidate(en_text: str, candidate: str):
         _vc_fc = sum(1 for w in _vc_words if w.rstrip('.,!?;:') in _vc_func)
         if _vc_fc >= 2 and _vc_fc / len(_vc_words) > 0.25:
             return False, "word_salad"
+        # Also block high EN content word overlap (keeps many EN words unchanged)
+        _vc_en_content = set(w.lower() for w in re.findall(r'[a-zA-Z]{4,}', en_text))
+        _vc_tr_content = set(w.lower() for w in re.findall(r'[a-zA-Z]{4,}', candidate))
+        if _vc_en_content:
+            _vc_overlap = _vc_en_content & _vc_tr_content
+            _vc_overlap_ratio = len(_vc_overlap) / len(_vc_en_content)
+            _vc_overlap_by_words = len(_vc_overlap) / len(_vc_words)
+            if len(_vc_overlap) >= 2 and _vc_overlap_ratio > 0.3 and _vc_overlap_by_words > 0.2:
+                return False, "word_salad"
 
     # Hard gate: Wrong script — non-Latin language with all-Latin translation
     _vc_lang = target_lang.lower().replace("_", "-")
@@ -13628,9 +13652,9 @@ def detect_suspicious(en_text: str, translated_text: str, lang: str, key: str = 
                 })
 
     # S24: i_dot_artifact — artefakt 'I.' z ChatGPT (angielskie 'I' z kropką)
-    if tr != en and not tr.startswith("[") and re.search(r'\bI\.(?:\s|$)', tr):
+    if tr != en and not tr.startswith("[") and re.search(r'\bI\.(?:\s|[.!?,;:]|$)', tr):
         # Sprawdź czy EN też ma 'I.' (np. "I. love" w oryginalnym kontekście)
-        if not re.search(r'\bI\.(?:\s|$)', en):
+        if not re.search(r'\bI\.(?:\s|[.!?,;:]|$)', en):
             issues.append({
                 "type": "i_dot_artifact",
                 "severity": "HIGH",
@@ -20363,10 +20387,34 @@ entry = {
     "command": cmd,
     "pending_age_s": pending_age_s,
     "roundtrip_s": roundtrip_s,
+    "forced_command_pending_age_s": pending_age_s,
+    "forced_command_roundtrip_s": roundtrip_s,
     "mode_type": mode_type,
     "mode_cat": mode_cat,
     "mode_count": mode_count,
 }
+
+def _parse_auto_limit(raw_cmd: str) -> int:
+    c = str(raw_cmd or "").strip()
+    if not c:
+        return 0
+    c = c.replace(":ONCE", "")
+    if not c.startswith("AUTO:"):
+        return 0
+    parts = c.split(":")
+    if len(parts) < 4:
+        return 0
+    try:
+        lim = int(parts[3])
+        return lim if lim > 0 else 0
+    except Exception:
+        return 0
+
+auto_limit = _parse_auto_limit(cmd)
+if auto_limit > 0 and auto_limit <= 30:
+    entry["sla_target_s"] = 45
+    if stage == "completed":
+        entry["sla_met"] = bool(roundtrip_s <= 45)
 os.makedirs(os.path.dirname(jsonl_path), exist_ok=True)
 with open(jsonl_path, "a", encoding="utf-8") as f:
     f.write(json.dumps(entry, ensure_ascii=False) + "\n")
@@ -21904,37 +21952,46 @@ PY
                 append_forced_command_metric "completed" "$FORCED_CMD_RAW" "${FORCED_CMD_PENDING_AGE_S:-0}" "$_forced_roundtrip_s" "${MODE_TYPE:-}" "${MODE_CAT:-}" "${MODE_COUNT:-}"
             fi
 
-            # Wymuszona walidacja po cyklu także dla trybów innych niż AUTO_TRANSLATE
-            if [ -n "$FORCE_LANG_VALIDATION" ] && [ "${MODE_TYPE:-}" != "AUTO_TRANSLATE" ]; then
-                if [ "$FORCE_LANG_VALIDATION" = "all" ]; then
-                    run_full_lang_validation "$CYCLE"
-                else
-                    run_full_lang_validation "$CYCLE" "$FORCE_LANG_VALIDATION"
-                fi
+            if [ "$PREEMPT_PENDING_FORCED_CMD" != "true" ] && [ -f "$COMMAND_FILE" ]; then
+                PREEMPT_PENDING_FORCED_CMD=true
+                echo "   ⚡ PREEMPT: wykryto pending .worker_command — skracam końcówkę cyklu"
             fi
 
-            if should_run_quality_audit; then
-                QA_OUT=$(run_quality_audit 2>/dev/null || true)
-                QA_LINE=$(printf '%s\n' "$QA_OUT" | grep '__QUALITY_AUDIT__' | tail -n 1)
-                if [ -n "$QA_LINE" ]; then
-                    echo "📊 QUALITY AUDIT: ${QA_LINE#__QUALITY_AUDIT__ }"
-                    QA_ISSUES=$(printf '%s\n' "$QA_LINE" | grep -oE 'issues=[0-9]+' | cut -d= -f2)
-                    QA_SLOW=$(printf '%s\n' "$QA_LINE" | grep -oE 'slow=[01]' | cut -d= -f2)
-                    QA_ISSUES=${QA_ISSUES:-0}
-                    QA_SLOW=${QA_SLOW:-0}
-                    if [ "$QA_SLOW" = "1" ] && [ "$BATCH" -gt 5 ] 2>/dev/null; then
-                        echo "⚠️ QUALITY AUDIT: issues=$QA_ISSUES > threshold=${QUALITY_AUDIT_THRESHOLD}, zmniejszam batch do 5"
-                        BATCH=5
+            if [ "$PREEMPT_PENDING_FORCED_CMD" = "true" ]; then
+                echo "   ⚡ PREEMPT: pomijam validation/audit/pending_skip w końcówce cyklu"
+            else
+                # Wymuszona walidacja po cyklu także dla trybów innych niż AUTO_TRANSLATE
+                if [ -n "$FORCE_LANG_VALIDATION" ] && [ "${MODE_TYPE:-}" != "AUTO_TRANSLATE" ]; then
+                    if [ "$FORCE_LANG_VALIDATION" = "all" ]; then
+                        run_full_lang_validation "$CYCLE"
+                    else
+                        run_full_lang_validation "$CYCLE" "$FORCE_LANG_VALIDATION"
                     fi
                 fi
-            fi
 
-            # ── pending_skip 24h artifact (#14) — co 10 cykli przelicz metryki ──
-            if (( CYCLE % 10 == 0 )); then
-                PS24_OUT=$(compute_pending_skip_24h 2>/dev/null || true)
-                PS24_LINE=$(printf '%s\n' "$PS24_OUT" | grep '__PENDING_SKIP_24H__' | tail -n 1)
-                if [ -n "$PS24_LINE" ]; then
-                    echo "📊 PENDING_SKIP_24H: ${PS24_LINE#__PENDING_SKIP_24H__ }"
+                if should_run_quality_audit; then
+                    QA_OUT=$(run_quality_audit 2>/dev/null || true)
+                    QA_LINE=$(printf '%s\n' "$QA_OUT" | grep '__QUALITY_AUDIT__' | tail -n 1)
+                    if [ -n "$QA_LINE" ]; then
+                        echo "📊 QUALITY AUDIT: ${QA_LINE#__QUALITY_AUDIT__ }"
+                        QA_ISSUES=$(printf '%s\n' "$QA_LINE" | grep -oE 'issues=[0-9]+' | cut -d= -f2)
+                        QA_SLOW=$(printf '%s\n' "$QA_LINE" | grep -oE 'slow=[01]' | cut -d= -f2)
+                        QA_ISSUES=${QA_ISSUES:-0}
+                        QA_SLOW=${QA_SLOW:-0}
+                        if [ "$QA_SLOW" = "1" ] && [ "$BATCH" -gt 5 ] 2>/dev/null; then
+                            echo "⚠️ QUALITY AUDIT: issues=$QA_ISSUES > threshold=${QUALITY_AUDIT_THRESHOLD}, zmniejszam batch do 5"
+                            BATCH=5
+                        fi
+                    fi
+                fi
+
+                # ── pending_skip 24h artifact (#14) — co 10 cykli przelicz metryki ──
+                if (( CYCLE % 10 == 0 )); then
+                    PS24_OUT=$(compute_pending_skip_24h 2>/dev/null || true)
+                    PS24_LINE=$(printf '%s\n' "$PS24_OUT" | grep '__PENDING_SKIP_24H__' | tail -n 1)
+                    if [ -n "$PS24_LINE" ]; then
+                        echo "📊 PENDING_SKIP_24H: ${PS24_LINE#__PENDING_SKIP_24H__ }"
+                    fi
                 fi
             fi
             
@@ -22211,16 +22268,22 @@ SAVEPY
             
             # Aktualizuj pełny status z throttlingiem (P0: ograniczenie ciężkiego STATUSPY)
             STATUS_T0=$(now_ms)
-            if should_update_github_status; then
-                update_github_status
+            if [ "$PREEMPT_PENDING_FORCED_CMD" = "true" ]; then
+                echo "⚡ PREEMPT: pomijam pełny status update (przechodzę szybciej do kolejnej komendy)"
             else
-                echo "⏭️ Pomijam pełny status (throttle: co ${STATUS_UPDATE_EVERY_CYCLES} cykli lub ${STATUS_UPDATE_MIN_INTERVAL_SEC}s)"
+                if should_update_github_status; then
+                    update_github_status
+                else
+                    echo "⏭️ Pomijam pełny status (throttle: co ${STATUS_UPDATE_EVERY_CYCLES} cykli lub ${STATUS_UPDATE_MIN_INTERVAL_SEC}s)"
+                fi
             fi
             STATUS_T1=$(now_ms)
             status_log_cycle_perf "$CYCLE" "${MODE_TYPE:-IDLE}" "${MODE_CAT:--}" "status_update" "$((STATUS_T1 - STATUS_T0))" "throttle_every=${STATUS_UPDATE_EVERY_CYCLES}"
             
             # Git commit co cykl
-            if [ -n "$(git status --porcelain 2>/dev/null)" ]; then
+            if [ "$PREEMPT_PENDING_FORCED_CMD" = "true" ]; then
+                echo "⚡ PREEMPT: pomijam git add/commit/push w tym cyklu"
+            elif [ -n "$(git status --porcelain 2>/dev/null)" ]; then
                 if [ "$NO_GIT" = "true" ]; then
                     echo "🚫 --no-git: pomijam git add/commit/push"
                 else
@@ -22277,10 +22340,14 @@ print(total)
             fi
             
             echo ""
-            echo "💤 Przerwa ${DELAY}s przed następnym cyklem..."
+            CYCLE_DELAY_SEC="$DELAY"
+            if [ "$PREEMPT_PENDING_FORCED_CMD" = "true" ] && [ "${CYCLE_DELAY_SEC:-0}" -gt 1 ] 2>/dev/null; then
+                CYCLE_DELAY_SEC=1
+            fi
+            echo "💤 Przerwa ${CYCLE_DELAY_SEC}s przed następnym cyklem..."
 
             CYCLE_T1=$(now_ms)
-            status_log_cycle_perf "$CYCLE" "${MODE_TYPE:-IDLE}" "${MODE_CAT:--}" "cycle_total" "$((CYCLE_T1 - CYCLE_T0))" "delay=${DELAY}"
+            status_log_cycle_perf "$CYCLE" "${MODE_TYPE:-IDLE}" "${MODE_CAT:--}" "cycle_total" "$((CYCLE_T1 - CYCLE_T0))" "delay=${CYCLE_DELAY_SEC}"
 
             if [ "$STOP_AFTER_CYCLE" = "true" ]; then
                 # === RESTART ===
@@ -22315,7 +22382,7 @@ print(total)
             MODE_CAT=""
             MODE_COUNT=""
             
-            sleep "$DELAY"
+            sleep "$CYCLE_DELAY_SEC"
         done
         ;;
     *)

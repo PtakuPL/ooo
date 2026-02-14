@@ -1,15 +1,15 @@
 {
   "lang": "ar",
-  "coverage_pct": 10.4,
+  "coverage_pct": 10.3,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-14T12:03:32.800146Z",
-  "issues_total": 415,
+  "checked_at": "2026-02-14T12:26:46.547654Z",
+  "issues_total": 414,
   "issues_by_type": {
     "consistency_in_language": 0,
     "pl_reference_missing_translation": 400,
-    "length_ratio_crosscheck": 15
+    "length_ratio_crosscheck": 14
   },
   "consistency_issues": [],
   "pl_reference_issues": [
@@ -392,6 +392,15 @@
       "lang": "damage"
     },
     {
+      "key": "cpp.bestiary.charm_category_major",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Major",
+      "pl": "Główny",
+      "lang": "Major"
+    },
+    {
       "key": "cpp.bestiary.charm_category_minor",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -408,6 +417,15 @@
       "en": "agony",
       "pl": "cierpienie",
       "lang": "agony"
+    },
+    {
+      "key": "cpp.combat.death",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "death",
+      "pl": "śmierć",
+      "lang": "death"
     },
     {
       "key": "cpp.combat.drown",
@@ -579,6 +597,15 @@
       "en": "Cancel",
       "pl": "Anuluj",
       "lang": "Cancel"
+    },
+    {
+      "key": "cpp.game.offline_training_button_ok",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Okay",
+      "pl": "Dobrze",
+      "lang": "Okay"
     },
     {
       "key": "cpp.game.tentugly_name",
@@ -788,6 +815,15 @@
       "lang": "HitChance"
     },
     {
+      "key": "cpp.inspect.key",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Key",
+      "pl": "Klucz",
+      "lang": "Key"
+    },
+    {
       "key": "cpp.inspect.nothing",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -831,6 +867,15 @@
       "en": "Required",
       "pl": "wymagany",
       "lang": "Required"
+    },
+    {
+      "key": "cpp.inspect.speed",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Speed",
+      "pl": "Szybkość",
+      "lang": "Speed"
     },
     {
       "key": "cpp.inspect.tier",
@@ -968,6 +1013,15 @@
       "lang": "Def:"
     },
     {
+      "key": "cpp.look.field",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": " field",
+      "pl": " ognia",
+      "lang": " field"
+    },
+    {
       "key": "cpp.look.hit_pct",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -1054,7 +1108,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": " physical + ",
-      "pl": "physical +",
+      "pl": " fizyczny + ",
       "lang": " physical + "
     },
     {
@@ -1101,6 +1155,15 @@
       "en": "{0} second",
       "pl": "{0} sekunda",
       "lang": "{0} second"
+    },
+    {
+      "key": "cpp.look.speed_label",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "speed",
+      "pl": "szybkość",
+      "lang": "speed"
     },
     {
       "key": "cpp.look.tier_ruse",
@@ -3549,81 +3612,9 @@
       "en": "groud",
       "pl": "grunt",
       "lang": "groud"
-    },
-    {
-      "key": "item.10181.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "magic wall",
-      "pl": "magia ściana",
-      "lang": "magic wall"
-    },
-    {
-      "key": "item.10182.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "rush wood",
-      "pl": "śpieszne drewno",
-      "lang": "rush wood"
-    },
-    {
-      "key": "item.10185.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "swich",
-      "pl": "przełącznik",
-      "lang": "swich"
-    },
-    {
-      "key": "item.10195.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "leaves",
-      "pl": "liście",
-      "lang": "leaves"
-    },
-    {
-      "key": "item.10196.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "orc tooth",
-      "pl": "ząb orka",
-      "lang": "orc tooth"
-    },
-    {
-      "key": "item.10203.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "skull pile",
-      "pl": "stos czaszek",
-      "lang": "skull pile"
-    },
-    {
-      "key": "item.1053.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "earth",
-      "pl": "ziemia",
-      "lang": "earth"
     }
   ],
   "length_ratio_issues": [
-    {
-      "key": "achievement.22.name",
-      "category": "achievements",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 14,
-      "lang_ratio": 1.0,
-      "pl_ratio": 3.0
-    },
     {
       "key": "achievement.23.name",
       "category": "achievements",

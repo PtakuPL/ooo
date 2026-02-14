@@ -17,7 +17,7 @@
   "actions.fluids.msg_1": "Es ist leer.",
   "actions.fluids.msg_2": "Es ist leer.",
   "actions.gamestore.msg_exhausted": "Du bist erschöpft.",
-  "actions.gamestore.msg_no_rookgaard": "Der Store hat keine Angebote für Rookgaard Citizen.",
+  "actions.gamestore.msg_no_rookgaard": "[DE] Store don't have offers for rookgaard citizen.",
   "actions.golden.msg_1": "Jemand kämpft gegen den Boss! Sie müssen eine Weile warten.",
   "actions.golden.msg_2": "Sie benötigen 5 Spieler, um gegen diesen Boss zu kämpfen.",
   "actions.hireling_foods.msg_too_full": "Du bist für eine Weile immer noch zu satt, um irgendwelche Gourmetgerichte zu essen.",

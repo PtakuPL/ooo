@@ -18,7 +18,7 @@
   "actions.fluids.msg_2": "Itu kosong.",
   "actions.golden.msg_1": "Seseorang sedang bertarung melawan bos! Anda perlu menunggu beberapa saat.",
   "actions.golden.msg_2": "Anda membutuhkan 5 pemain untuk bertarung dengan bos ini.",
-  "actions.imbuement_shrine.msg_1": "Anda hanya dapat menggunakan kuil pada item yang valid.",
+  "actions.imbuement_shrine.msg_1": "[ID] You can only use the shrine on an valid item.",
   "actions.imbuement_shrine.msg_2": "Anda tidak mengumpulkan cukup pengetahuan dari para Pembentuk kuno. Kunjungi kuil Pembentuk di Montag untuk mendapatkan bantuan.",
   "actions.keys.msg_1": "Anda punya waktu lima belas menit untuk membunuh dan menjarah bos ini, jika tidak, Anda akan kehilangan kesempatan itu.",
   "actions.keys.msg_2": "Anda telah memasuki sel penjara iblis kuno!",

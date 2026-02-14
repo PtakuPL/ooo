@@ -34,7 +34,7 @@
   "npc.a_dead_bureaucrat1.say_6": "Formulari 411? Ju duhet Formulari 287 për ta marrë atë! A e keni atë?",
   "npc.a_dead_bureaucrat1.say_7": "Oh, sa keq. Shkoni të shihni një nga kolegët e mi. Unë ju jap lejen për të marrë Formularin 287. Mirupafshim!",
   "npc.a_dead_bureaucrat1.say_8": "E madhe. Këtu jeni ju. Formulari 411. Kthehu sa herë që dëshiron të flasësh. Mirupafshim.",
-  "npc.a_dead_bureaucrat1.say_9": "E pabesueshme, e bëre!! Argëtohuni në Pumin's Domain!",
+  "npc.a_dead_bureaucrat1.say_9": "[SQ] INCREDIBLE, you did it!! Have fun at Pumin's Domain!",
   "npc.a_dead_bureaucrat1.voice_1": "Tani ku e vendosa atë formular?",
   "npc.a_dead_bureaucrat1.voice_2": "[EN] Hail Pumin. Yes, hail.",
   "npc.a_dead_bureaucrat1.walkaway_msg_1": "Mirupafshim dhe mos më harro!",

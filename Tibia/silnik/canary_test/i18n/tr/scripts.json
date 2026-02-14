@@ -285,7 +285,7 @@
   "scripts.actions_bonefiddle.msg_1": "Abanoz ağacını kafatasına yapıştırıyorsunuz. Bu bir klavyenin gereksinimlerini karşılamalıdır.",
   "scripts.actions_bonefiddle.msg_2": "Saçı abanoz klavyeye tutturuyorsunuz. Tellerin ip görevi görecek kadar yeterli olması gerekir.",
   "scripts.actions_bonefiddle.msg_3": "*Bir zamanlar kara gözlü, ipeksi saçlı bir kız panayırı varmış. Evinden uzakta öldü. Mezar yok, cenaze yok, yas yok.*",
-  "scripts.actions_bonefiddle.msg_4": "Peacock Ballad'ı oynuyorsunuz ve portal açılıyor.",
+  "scripts.actions_bonefiddle.msg_4": "[TR] You are playing the Peacock Ballad and the portal opens.",
   "scripts.actions_bonefiddle.msg_5": "Kemik kemanını çalıyorsun.",
   "scripts.actions_bony_rod.say_1": "[EN] Recharging...",
   "scripts.actions_bookOnTable.msg_1": "[EN] This book tells you about a spell that draws its wielder towards the most energetic being next to him.",

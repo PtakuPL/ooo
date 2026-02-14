@@ -127,7 +127,7 @@
   "npc.a_nightmare_scion.greet_msg_2": "[EN] Pssst! Keep it down! <gives you an elaborate report on monster activity>",
   "npc.a_nightmare_scion.greet_msg_3": "[EN] Pssst! Keep it down! <gives you an elaborate report on monster activity>",
   "npc.a_prisoner.farewell_msg_1": "Sbohem! Nezapomeňte na tajemství matematiky.",
-  "npc.a_prisoner.greet_msg_1": "Co? Co? Vidím! Páni! A non-mino. {capture} vás také?",
+  "npc.a_prisoner.greet_msg_1": "[CS] Huh? What? I can see! Wow! A non-mino. Did they {capture} you as well?",
   "npc.a_prisoner.say_1": "Skvělá hádanka, že? Pokud mi můžete říct správnou odpověď, \\z něco vám dám. Hehehe!",
   "npc.a_prisoner.say_10": "[EN] Great riddle, isn't it? If you can tell me the correct answer, I will give you something. Hehehe!",
   "npc.a_prisoner.say_11": "[EN] My surreal numbers are based on astonishing facts. Are you interested in learning the secret of mathemagics?",

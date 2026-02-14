@@ -51,8 +51,9 @@ Walidacja runtime (2026-02-14 07:28 UTC):
 - ✅ Worker/guardian/statusd działają równolegle po wdrożeniu.
 
 Nowe rzeczy do zrobienia ujawnione podczas realizacji:
-- ⬜ Ujednolicić **jedno kanoniczne źródło progów** `metrics_drift` dla daemon/manual (obecnie możliwe różnice środowiskowe; daily już dziedziczy progi z `statusd_report.json`).
-- ⬜ Dodać jawny config progów driftu do stałego artefaktu (`statusd_thresholds.json` lub `worker_config.json`), żeby wyeliminować rozjazdy env.
+- ✅ Ujednolicić **jedno kanoniczne źródło progów** `metrics_drift` dla daemon/manual (obecnie możliwe różnice środowiskowe; daily już dziedziczy progi z `statusd_report.json`). → DONE 2026-02-14: env z defaults + `statusd_thresholds_snapshot.json` artefakt.
+- ✅ Dodać jawny config progów driftu do stałego artefaktu (`statusd_thresholds.json` lub `worker_config.json`), żeby wyeliminować rozjazdy env. → DONE 2026-02-14: `statusd_thresholds_snapshot.json` + `thresholds_snapshot` w raporcie.
+- ⬜ Poprawić detekcję procesu w `i18n_start_all.sh:is_running()` (fallback `pgrep`), bo w niektórych restartach zwraca false-positive dla `statusd`.
 
 ## 🛠️ Aktualizacja wykonania (2026-02-14 07:07 UTC — korekta metryk LIVE vs rejestr workera)
 
@@ -110,9 +111,9 @@ Walidacja runtime (2026-02-14 06:56 UTC):
 - ✅ `guardian_health.json`: `state=healthy/degraded` zależnie od `heartbeat_aging`, bez nowej serii restartów `health_stuck` po wdrożeniu progów.
 
 Nowe rzeczy do zrobienia ujawnione podczas realizacji:
-- ⬜ Dodać progi `suspicious_high` per domena (`npc/server/...`) i per-język dla PL/ES, bo globalny count jest zbyt agresywny przy wysokim throughput.
-- ⬜ Potwierdzić po kolejnych cyklach, że `identical_to_en_repair_tuning.jsonl` zaczyna rosnąć (w snapshot `repair_tuning_24h.samples_24h=0`).
-- ⬜ Jeżeli `repair_tuning_24h` pozostanie puste mimo wzrostu `cycle_counter`, dodać fallback czasowy (np. max odstęp minutowy) niezależny od modulo cyklu.
+- ✅ Dodać progi `suspicious_high` per domena (`npc/server/...`) i per-język dla PL/ES, bo globalny count jest zbyt agresywny przy wysokim throughput. → DONE 2026-02-14: rate-based thresholds (RATE_WARN_PCT=8%, CRIT_PCT=20%) per-lang/per-domain w quality_watch + doctor.
+- ✅ Potwierdzić po kolejnych cyklach, że `identical_to_en_repair_tuning.jsonl` zaczyna rosnąć (w snapshot `repair_tuning_24h.samples_24h=0`). → DONE 2026-02-14: potwierdzone 3 sample, doctor: `repair_tuning_active (samples_2h=3)`.
+- ✅ Jeżeli `repair_tuning_24h` pozostanie puste mimo wzrostu `cycle_counter`, dodać fallback czasowy (np. max odstęp minutowy) niezależny od modulo cyklu. → DONE 2026-02-14: nie potrzebny — tuning generuje próbki, samples rosnąc normalnie.
 
 ## 🛠️ Aktualizacja wykonania (2026-02-13 22:23 UTC — decyzja kolejności języków)
 

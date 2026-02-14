@@ -42,6 +42,8 @@ REPAIR_QUEUE_STAGNATION_MIN_DROP="${STATUSD_REPAIR_QUEUE_STAGNATION_MIN_DROP:-1}
 SUSPICIOUS_HIGH_WINDOW_HOURS="${STATUSD_SUSPICIOUS_HIGH_WINDOW_HOURS:-6}"
 SUSPICIOUS_HIGH_WARN_COUNT="${STATUSD_SUSPICIOUS_HIGH_WARN_COUNT:-120}"
 SUSPICIOUS_HIGH_CRIT_COUNT="${STATUSD_SUSPICIOUS_HIGH_CRIT_COUNT:-240}"
+SUSPICIOUS_HIGH_RATE_WARN_PCT="${STATUSD_SUSPICIOUS_HIGH_RATE_WARN_PCT:-8}"
+SUSPICIOUS_HIGH_RATE_CRIT_PCT="${STATUSD_SUSPICIOUS_HIGH_RATE_CRIT_PCT:-20}"
 METRICS_DRIFT_WARN_KEYS="${STATUSD_METRICS_DRIFT_WARN_KEYS:-50000}"
 METRICS_DRIFT_CRIT_KEYS="${STATUSD_METRICS_DRIFT_CRIT_KEYS:-100000}"
 METRICS_DRIFT_WARN_PCT="${STATUSD_METRICS_DRIFT_WARN_PCT:-95}"
@@ -62,7 +64,7 @@ log_statusd() {
 # ═══════════════════════════════════════════════════════════════════════════════
 
 aggregate_telemetry() {
-    python3 - "$WORK_DIR" "$STATUS_DIR" "$STATUSD_REPORT_FILE" "$REPAIR_QUEUE_STAGNATION_HOURS" "$REPAIR_QUEUE_STAGNATION_MIN_SAMPLES" "$REPAIR_QUEUE_STAGNATION_MIN_DROP" "$SUSPICIOUS_HIGH_WINDOW_HOURS" "$SUSPICIOUS_HIGH_WARN_COUNT" "$SUSPICIOUS_HIGH_CRIT_COUNT" "$METRICS_DRIFT_WARN_KEYS" "$METRICS_DRIFT_CRIT_KEYS" "$METRICS_DRIFT_WARN_PCT" "$METRICS_DRIFT_CRIT_PCT" <<'PYAGG'
+    python3 - "$WORK_DIR" "$STATUS_DIR" "$STATUSD_REPORT_FILE" "$REPAIR_QUEUE_STAGNATION_HOURS" "$REPAIR_QUEUE_STAGNATION_MIN_SAMPLES" "$REPAIR_QUEUE_STAGNATION_MIN_DROP" "$SUSPICIOUS_HIGH_WINDOW_HOURS" "$SUSPICIOUS_HIGH_WARN_COUNT" "$SUSPICIOUS_HIGH_CRIT_COUNT" "$METRICS_DRIFT_WARN_KEYS" "$METRICS_DRIFT_CRIT_KEYS" "$METRICS_DRIFT_WARN_PCT" "$METRICS_DRIFT_CRIT_PCT" "$SUSPICIOUS_HIGH_RATE_WARN_PCT" "$SUSPICIOUS_HIGH_RATE_CRIT_PCT" <<'PYAGG'
 import json, sys, os, time
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
@@ -81,6 +83,8 @@ metrics_drift_warn_keys = int(float(sys.argv[10] or "5000"))
 metrics_drift_crit_keys = int(float(sys.argv[11] or "20000"))
 metrics_drift_warn_pct = float(sys.argv[12] or "10")
 metrics_drift_crit_pct = float(sys.argv[13] or "25")
+suspicious_rate_warn_pct = float(sys.argv[14] if len(sys.argv) > 14 and sys.argv[14] else "8")
+suspicious_rate_crit_pct = float(sys.argv[15] if len(sys.argv) > 15 and sys.argv[15] else "20")
 
 now = datetime.now(timezone.utc)
 report = {
@@ -288,7 +292,7 @@ def _analyze_repair_queue(status_dir, now, window_h, min_samples, min_drop):
 
     return result
 
-def _analyze_suspicious_high(status_dir, now, window_h, warn_count, crit_count):
+def _analyze_suspicious_high(status_dir, now, window_h, warn_count, crit_count, rate_warn_pct=8.0, rate_crit_pct=20.0):
     quality_path = os.path.join(status_dir, "quality_report.jsonl")
     window_h = max(float(window_h), 0.1)
     warn_count = max(int(warn_count), 1)
@@ -354,18 +358,61 @@ def _analyze_suspicious_high(status_dir, now, window_h, warn_count, crit_count):
         severity = "ok"
         status = "clean"
 
+    # ── Per-lang / per-domain breakdown z rate-based severity ──────────────
+    translated_by_lang = Counter()
+    translated_by_cat = Counter()
+    for r in rows:
+        lang = str(r.get("lang", "") or "")
+        cat = str(r.get("category", "") or "")
+        tr = int(r.get("translated", 0))
+        if lang:
+            translated_by_lang[lang] += tr
+        if cat:
+            translated_by_cat[cat] += tr
+
+    def _per_item_severity(sh_count, tr_count, rw=rate_warn_pct, rc=rate_crit_pct):
+        r = (float(sh_count) / float(max(tr_count, 1))) * 100.0
+        if r >= rc:
+            return "critical", round(r, 3)
+        elif r >= rw:
+            return "warning", round(r, 3)
+        elif sh_count > 0:
+            return "info", round(r, 3)
+        return "ok", 0.0
+
+    per_lang = []
+    for lang, sh_cnt in by_lang.most_common(8):
+        sev, r = _per_item_severity(sh_cnt, translated_by_lang.get(lang, 0))
+        per_lang.append({"lang": lang, "suspicious_high": int(sh_cnt), "translated": int(translated_by_lang.get(lang, 0)), "rate_pct": r, "severity": sev})
+    per_domain = []
+    for cat, sh_cnt in by_category.most_common(10):
+        sev, r = _per_item_severity(sh_cnt, translated_by_cat.get(cat, 0))
+        per_domain.append({"domain": cat, "suspicious_high": int(sh_cnt), "translated": int(translated_by_cat.get(cat, 0)), "rate_pct": r, "severity": sev})
+
+    # Najgorszy severity z per-lang/per-domain
+    all_sevs = [severity]  # global
+    all_sevs += [x["severity"] for x in per_lang]
+    all_sevs += [x["severity"] for x in per_domain]
+    sev_rank = {"critical": 3, "warning": 2, "info": 1, "ok": 0}
+    worst_sev = max(all_sevs, key=lambda s: sev_rank.get(s, 0))
+
     return {
         "window_hours": float(window_h),
         "warn_count": int(warn_count),
         "critical_count": int(crit_count),
+        "rate_warn_pct": float(rate_warn_pct),
+        "rate_crit_pct": float(rate_crit_pct),
         "entries": len(rows),
         "translated_total": int(translated_total),
         "suspicious_high_total": int(suspicious_high_total),
         "suspicious_high_rate_pct": round(rate_pct, 3),
         "status": status,
         "severity": severity,
+        "worst_severity": worst_sev,
         "top_langs": [{"lang": k, "suspicious_high": int(v)} for k, v in by_lang.most_common(8)],
         "top_categories": [{"category": k, "suspicious_high": int(v)} for k, v in by_category.most_common(10)],
+        "per_lang": per_lang,
+        "per_domain": per_domain,
         "latest_timestamp": rows[-1]["timestamp"] if rows else "",
     }
 
@@ -618,6 +665,8 @@ report["quality_watch"] = _analyze_suspicious_high(
     window_h=suspicious_window_h,
     warn_count=suspicious_warn_count,
     crit_count=suspicious_crit_count,
+    rate_warn_pct=suspicious_rate_warn_pct,
+    rate_crit_pct=suspicious_rate_crit_pct,
 )
 
 # ── Transition log (ostatnie 5 przejść) ─────────────────────────────────
@@ -648,6 +697,39 @@ try:
 except Exception:
     report["recent_errors"] = []
 
+# ── Thresholds snapshot (kanoniczne źródło aktywnych progów) ─────────────
+report["thresholds_snapshot"] = {
+    "repair_queue_stagnation": {
+        "window_hours": float(repair_window_h),
+        "min_samples": int(repair_min_samples),
+        "min_drop": int(repair_min_drop),
+    },
+    "suspicious_high": {
+        "window_hours": float(suspicious_window_h),
+        "warn_count": int(suspicious_warn_count),
+        "crit_count": int(suspicious_crit_count),
+        "rate_warn_pct": float(suspicious_rate_warn_pct),
+        "rate_crit_pct": float(suspicious_rate_crit_pct),
+    },
+    "metrics_drift": {
+        "warn_keys": int(metrics_drift_warn_keys),
+        "crit_keys": int(metrics_drift_crit_keys),
+        "warn_pct": float(metrics_drift_warn_pct),
+        "crit_pct": float(metrics_drift_crit_pct),
+    },
+}
+
+# Zapisz snapshot progów jako osobny artefakt audytowy
+try:
+    thresholds_path = os.path.join(status_dir, "statusd_thresholds_snapshot.json")
+    with open(thresholds_path, "w", encoding="utf-8") as f:
+        json.dump({
+            "timestamp": report["timestamp"],
+            **report["thresholds_snapshot"],
+        }, f, indent=2, ensure_ascii=False)
+except Exception:
+    pass
+
 # ── Zapis raportu ───────────────────────────────────────────────────────
 try:
     with open(report_file, "w", encoding="utf-8") as f:
@@ -663,7 +745,7 @@ PYAGG
 # ═══════════════════════════════════════════════════════════════════════════════
 
 run_status_doctor() {
-    python3 - "$WORK_DIR" "$STATUS_DIR" "$STATUSD_DOCTOR_FILE" "$REPAIR_QUEUE_STAGNATION_HOURS" "$REPAIR_QUEUE_STAGNATION_MIN_SAMPLES" "$REPAIR_QUEUE_STAGNATION_MIN_DROP" "$SUSPICIOUS_HIGH_WINDOW_HOURS" "$SUSPICIOUS_HIGH_WARN_COUNT" "$SUSPICIOUS_HIGH_CRIT_COUNT" "$METRICS_DRIFT_WARN_KEYS" "$METRICS_DRIFT_CRIT_KEYS" "$METRICS_DRIFT_WARN_PCT" "$METRICS_DRIFT_CRIT_PCT" <<'PYDOCTOR'
+    python3 - "$WORK_DIR" "$STATUS_DIR" "$STATUSD_DOCTOR_FILE" "$REPAIR_QUEUE_STAGNATION_HOURS" "$REPAIR_QUEUE_STAGNATION_MIN_SAMPLES" "$REPAIR_QUEUE_STAGNATION_MIN_DROP" "$SUSPICIOUS_HIGH_WINDOW_HOURS" "$SUSPICIOUS_HIGH_WARN_COUNT" "$SUSPICIOUS_HIGH_CRIT_COUNT" "$METRICS_DRIFT_WARN_KEYS" "$METRICS_DRIFT_CRIT_KEYS" "$METRICS_DRIFT_WARN_PCT" "$METRICS_DRIFT_CRIT_PCT" "$SUSPICIOUS_HIGH_RATE_WARN_PCT" "$SUSPICIOUS_HIGH_RATE_CRIT_PCT" <<'PYDOCTOR'
 import json, sys, os
 from datetime import datetime, timezone, timedelta
 from collections import Counter
@@ -681,6 +763,8 @@ metrics_drift_warn_keys = int(float(sys.argv[10] or "5000"))
 metrics_drift_crit_keys = int(float(sys.argv[11] or "20000"))
 metrics_drift_warn_pct = float(sys.argv[12] or "10")
 metrics_drift_crit_pct = float(sys.argv[13] or "25")
+suspicious_rate_warn_pct = float(sys.argv[14] if len(sys.argv) > 14 and sys.argv[14] else "8")
+suspicious_rate_crit_pct = float(sys.argv[15] if len(sys.argv) > 15 and sys.argv[15] else "20")
 
 now = datetime.now(timezone.utc)
 issues = []
@@ -832,6 +916,8 @@ def _read_suspicious_high_health():
         "window_hours": float(max(suspicious_window_h, 0.1)),
         "warn_count": int(max(suspicious_warn_count, 1)),
         "critical_count": int(max(suspicious_crit_count, suspicious_warn_count + 1)),
+        "rate_warn_pct": float(suspicious_rate_warn_pct),
+        "rate_crit_pct": float(suspicious_rate_crit_pct),
         "entries": 0,
         "translated_total": 0,
         "suspicious_high_total": 0,
@@ -840,6 +926,9 @@ def _read_suspicious_high_health():
         "top_lang_count": 0,
         "severity": "ok",
         "status": "clean",
+        "per_lang": [],
+        "per_domain": [],
+        "worst_severity": "ok",
     }
     if not os.path.exists(quality_path):
         data["status"] = "missing_quality_report"
@@ -847,6 +936,9 @@ def _read_suspicious_high_health():
 
     window_start = now - timedelta(hours=data["window_hours"])
     by_lang = Counter()
+    by_domain = Counter()
+    translated_by_lang = Counter()
+    translated_by_domain = Counter()
     rows = 0
     translated_total = 0
     suspicious_high_total = 0
@@ -869,8 +961,15 @@ def _read_suspicious_high_health():
             translated_total += translated
             suspicious_high_total += sh
             lang = str(row.get("language", "") or "").lower()
-            if lang and sh > 0:
-                by_lang[lang] += sh
+            domain = str(row.get("json_file", "") or "").lower()
+            if lang:
+                translated_by_lang[lang] += translated
+                if sh > 0:
+                    by_lang[lang] += sh
+            if domain:
+                translated_by_domain[domain] += translated
+                if sh > 0:
+                    by_domain[domain] += sh
 
     rate_pct = (float(suspicious_high_total) / float(max(translated_total, 1))) * 100.0
     top_lang = ""
@@ -890,6 +989,33 @@ def _read_suspicious_high_health():
         severity = "info"
         status = "observed"
 
+    # ── Per-lang / per-domain rate-based severity ────────────────────────
+    rw = data["rate_warn_pct"]
+    rc = data["rate_crit_pct"]
+
+    def _item_sev(sh_count, tr_count):
+        r = (float(sh_count) / float(max(tr_count, 1))) * 100.0
+        if r >= rc:
+            return "critical", round(r, 3)
+        elif r >= rw:
+            return "warning", round(r, 3)
+        elif sh_count > 0:
+            return "info", round(r, 3)
+        return "ok", 0.0
+
+    per_lang = []
+    for lang, cnt in by_lang.most_common(8):
+        sev, r = _item_sev(cnt, translated_by_lang.get(lang, 0))
+        per_lang.append({"lang": lang, "suspicious_high": int(cnt), "translated": int(translated_by_lang.get(lang, 0)), "rate_pct": r, "severity": sev})
+    per_domain = []
+    for dom, cnt in by_domain.most_common(10):
+        sev, r = _item_sev(cnt, translated_by_domain.get(dom, 0))
+        per_domain.append({"domain": dom, "suspicious_high": int(cnt), "translated": int(translated_by_domain.get(dom, 0)), "rate_pct": r, "severity": sev})
+
+    sev_rank = {"critical": 3, "warning": 2, "info": 1, "ok": 0}
+    all_sevs = [severity] + [x["severity"] for x in per_lang] + [x["severity"] for x in per_domain]
+    worst_sev = max(all_sevs, key=lambda s: sev_rank.get(s, 0))
+
     data.update({
         "entries": rows,
         "translated_total": int(translated_total),
@@ -898,7 +1024,10 @@ def _read_suspicious_high_health():
         "top_lang": str(top_lang),
         "top_lang_count": int(top_lang_count),
         "severity": severity,
+        "worst_severity": worst_sev,
         "status": status,
+        "per_lang": per_lang,
+        "per_domain": per_domain,
     })
     return data
 
@@ -1102,16 +1231,31 @@ try:
     if sh.get("status") == "missing_quality_report":
         warnings.append("NO_QUALITY_REPORT: brak quality_report.jsonl")
     else:
-        sev = str(sh.get("severity", "ok"))
+        worst = str(sh.get("worst_severity", sh.get("severity", "ok")))
         desc = (
             f"suspicious_high={sh.get('suspicious_high_total', 0)} "
             f"rate={sh.get('suspicious_high_rate_pct', 0)}% "
             f"window={sh.get('window_hours', 0)}h "
             f"top_lang={sh.get('top_lang','-')}:{sh.get('top_lang_count', 0)}"
         )
-        if sev == "critical":
+        # Per-lang/per-domain breakdowns
+        per_lang_issues = []
+        for pl in sh.get("per_lang", []):
+            if pl.get("severity") in ("critical", "warning"):
+                per_lang_issues.append(f"{pl['lang']}:{pl['suspicious_high']}({pl['rate_pct']}%/{pl['severity']})")
+        per_domain_issues = []
+        for pd in sh.get("per_domain", []):
+            if pd.get("severity") in ("critical", "warning"):
+                per_domain_issues.append(f"{pd['domain']}:{pd['suspicious_high']}({pd['rate_pct']}%/{pd['severity']})")
+
+        if per_lang_issues:
+            desc += f" per_lang=[{','.join(per_lang_issues[:5])}]"
+        if per_domain_issues:
+            desc += f" per_domain=[{','.join(per_domain_issues[:5])}]"
+
+        if worst == "critical":
             issues.append(f"SUSPICIOUS_HIGH_SPIKE: {desc}")
-        elif sev == "warning":
+        elif worst == "warning":
             warnings.append(f"SUSPICIOUS_HIGH_ELEVATED: {desc}")
         else:
             ok_checks.append(f"suspicious_high_ok ({desc})")

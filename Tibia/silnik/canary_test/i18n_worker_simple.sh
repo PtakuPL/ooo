@@ -19762,12 +19762,17 @@ PY
                     fi
 
                     status_update_activity "running" "$CYCLE" "COMPACT_KEYS" "export" "-" "-" "export compact locales" 0 0 "langs" 0
-                    if ! python3 tools/json_to_lua_locales.py --all --server-dir i18n --client-dir testyy/data/locales --compact-keys --i18n-dir i18n >/dev/null 2>&1; then
+                    EXPORT_OUT=$(python3 tools/json_to_lua_locales.py --all --server-dir i18n --client-dir testyy/data/locales --compact-keys --i18n-dir i18n 2>&1)
+                    EXPORT_RC=$?
+                    if [ "$EXPORT_RC" -ne 0 ]; then
                         status_log_error "$CYCLE" "COMPACT_KEYS" "export" "-" "-" "json_to_lua_locales.py compact export failed" "check tool"
                         break
                     fi
-                    status_log_op "$CYCLE" "COMPACT_KEYS" "export_done" "-" "-" "ok" "export compact locales" "" "" "0"
-                    status_update_activity "running" "$CYCLE" "COMPACT_KEYS" "done" "-" "-" "compact keys ready" "$MAPPED_NEW" "$MAPPED_NEW" "mapped" 0
+                    # Policz wyeksportowane języki (compact lua pliki)
+                    EXPORTED_LANGS=$(ls -1 testyy/data/locales/game_i18n_*_compact.lua 2>/dev/null | sed 's/.*game_i18n_//;s/_compact\.lua//' | sort | tr '\n' ',' | sed 's/,$//')
+                    EXPORTED_LANGS_COUNT=$(echo "$EXPORTED_LANGS" | tr ',' '\n' | grep -c . 2>/dev/null || echo 0)
+                    status_log_op "$CYCLE" "COMPACT_KEYS" "export_done" "-" "-" "ok" "exported_langs=${EXPORTED_LANGS} count=${EXPORTED_LANGS_COUNT}" "" "" "0"
+                    status_update_activity "running" "$CYCLE" "COMPACT_KEYS" "done" "-" "-" "compact keys ready (${EXPORTED_LANGS_COUNT} langs)" "$MAPPED_NEW" "$MAPPED_NEW" "mapped" 0
                     ;;
 
                 TRANSLATION_SYNC)

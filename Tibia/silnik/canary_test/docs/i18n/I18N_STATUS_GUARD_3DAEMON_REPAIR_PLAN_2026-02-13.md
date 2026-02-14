@@ -27,8 +27,9 @@ Walidacja:
 - ✅ Runtime potwierdzony po wdrożeniu: worker/guardian/statusd aktywne, a nowe pola obecne w report/doctor/daily.
 
 Nowe TODO:
-- ⬜ Ujednolicić źródło progów `metrics_drift` dla wszystkich ścieżek uruchamiania statusd (daemon/manual), bo różne środowiska mogą dać inne severity.
-- ⬜ Dodać artefakt `statusd_thresholds_snapshot` do łatwego audytu, jakie progi były aktywne przy danej agregacji/alarcie.
+- ✅ Ujednolicić źródło progów `metrics_drift` dla wszystkich ścieżek uruchamiania statusd (daemon/manual), bo różne środowiska mogą dać inne severity. → DONE 2026-02-14: progi w env z fallback defaults, snapshot artefakt `statusd_thresholds_snapshot.json` przy każdej agregacji.
+- ✅ Dodać artefakt `statusd_thresholds_snapshot` do łatwego audytu, jakie progi były aktywne przy danej agregacji/alarcie. → DONE 2026-02-14: `statusd_thresholds_snapshot.json` + sekcja `thresholds_snapshot` w raporcie.
+- ⬜ Naprawić `i18n_start_all.sh:is_running()` (fallback `pgrep`) pod self-match, bo potrafi pokazać daemon jako RUNNING mimo braku procesu.
 
 ## 🛠️ Aktualizacja wykonania (2026-02-14 07:07 UTC — naprawa spójności key metrics)
 
@@ -48,7 +49,7 @@ Walidacja:
 Nowe TODO dla status+guard+statusd:
 - ✅ Dodać `metric_drift` check do `statusd_doctor`. → DONE 2026-02-14: check #10 `_read_metrics_drift()` z progami WARN/CRIT (keys + %).
 - ✅ Dodać do sekcji `MIGRATION` równoległy licznik `scanned_files_live`. → DONE 2026-02-14: dashboard pokazuje historia + LIVE.
-- ✅ Dodać reason code webhooka dla driftu (`metrics_drift_high`). → DONE 2026-02-14: reason codes `metrics_drift_critical/high/moderate`.
+- ✅ Dodać reason code webhooka dla driftu (`metrics_drift_high`). → DONE 2026-02-14: reason codes `metrics_drift_high` / `metrics_drift_elevated`.
 
 ## 🛠️ Aktualizacja wykonania (2026-02-14 06:56 UTC — guardian/start-source + statusd quality watch)
 
@@ -77,7 +78,7 @@ Nowe problemy wykryte runtime:
 - ⚠️ Alerting webhook nadal nieskonfigurowany (`WEBHOOK_NOT_CONFIGURED`), więc sygnały CRITICAL nie wychodzą poza host.
 
 Nowe TODO do planu:
-- ⬜ Wprowadzić progi `suspicious_high` per domena/per-język (co najmniej `npc.json` + PL/ES), zamiast tylko globalnego count.
+- ✅ Wprowadzić progi `suspicious_high` per domena/per-język (co najmniej `npc.json` + PL/ES), zamiast tylko globalnego count. → DONE 2026-02-14: rate-based threshold (RATE_WARN_PCT=8%, RATE_CRIT_PCT=20%) per lang + per domain w `quality_watch` + doctor.
 - ✅ Dodać check operacyjny: jeśli `repair_queue.entries_total` maleje, ale `repair_tuning_24h.samples_24h=0` przez >2h, zgłoś warning `REPAIR_TUNING_NO_SAMPLES`. → DONE 2026-02-14: doctor check #11 + webhook signal.
 - ✅ Nadal domknąć organizacyjnie pojedyncze źródło uruchamiania guardiana (`service` vs `scheduler` vs `manual`) mimo locka kodowego. → DONE 2026-02-14: `i18n_start_all.sh` — kanoniczny start/stop/restart/status wszystkich demonów.
 

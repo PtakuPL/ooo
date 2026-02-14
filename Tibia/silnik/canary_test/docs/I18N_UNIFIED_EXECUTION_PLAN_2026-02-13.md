@@ -33,8 +33,9 @@ Walidacja runtime (2026-02-14 07:28 UTC):
 - `statusd_doctor.json`: nowy kontrakt driftu aktywny (bez legacy string-only parsera).
 
 Nowe problemy/TODO wykryte podczas realizacji:
-- ⬜ Ustalić jedno, kanoniczne źródło progów `metrics_drift` dla wszystkich uruchomień statusd (daemon/manual), aby nie było rozjazdów severity między artefaktami.
-- ⬜ Przenieść progi driftu do stabilnego pliku konfiguracyjnego i logować snapshot aktywnych progów przy każdej agregacji.
+- ✅ Ustalić jedno, kanoniczne źródło progów `metrics_drift` dla wszystkich uruchomień statusd (daemon/manual), aby nie było rozjazdów severity między artefaktami. → DONE 2026-02-14: kanoniczne env z defaults + `statusd_thresholds_snapshot.json`.
+- ✅ Przenieść progi driftu do stabilnego pliku konfiguracyjnego i logować snapshot aktywnych progów przy każdej agregacji. → DONE 2026-02-14: `statusd_thresholds_snapshot.json` (osobny artefakt) + sekcja `thresholds_snapshot` w raporcie.
+- ⬜ Naprawić `i18n_start_all.sh:is_running()` (fallback `pgrep`) pod kątem self-match/fake-positive statusu daemona przy restartach.
 
 ## Update wykonania (2026-02-14 07:07 UTC) — status key-metrics hardening
 
@@ -83,8 +84,8 @@ Walidacja runtime (2026-02-14 06:56 UTC):
 - `statusd_daily_report.json`: `pending_skip_source=pending_skip_24h_latest.json`, sekcja `repair_tuning_24h` aktywna (obecnie `samples_24h=0`).
 
 Nowe problemy/TODO wykryte podczas realizacji:
-- ⬜ Doprecyzować próg alertów `suspicious_high` per domena (szczególnie `npc.json`) i ewentualnie per-język (`es/pl`), bo globalny próg count generuje CRITICAL przy wysokim throughput.
-- ⬜ Potwierdzić po min. kilku pełnych cyklach, że `repair_tuning_24h.samples_24h` rośnie po zmianie interwału na globalny licznik.
+- ✅ Doprecyzować próg alertów `suspicious_high` per domena (szczególnie `npc.json`) i ewentualnie per-język (`es/pl`), bo globalny próg count generuje CRITICAL przy wysokim throughput. → DONE 2026-02-14: rate-based thresholds (WARN=8%, CRIT=20%) per-lang i per-domain w `quality_watch.per_lang[]`/`per_domain[]` + doctor.
+- ✅ Potwierdzić po min. kilku pełnych cyklach, że `repair_tuning_24h.samples_24h` rośnie po zmianie interwału na globalny licznik. → DONE 2026-02-14: potwierdzone — 3 sample w `identical_to_en_repair_tuning.jsonl`, doctor: `repair_tuning_active (samples_2h=3)`.
 - ✅ Operacyjnie nadal ustalić jedno zewnętrzne źródło startu guardiana (`service` vs `scheduler` vs `manual`) mimo kodowego locka daemona. → DONE 2026-02-14: `i18n_start_all.sh` — kanoniczny start/stop/restart/status.
 - ⬜ Skonfigurować `STATUSD_WEBHOOK_URL` (obecnie `WEBHOOK_NOT_CONFIGURED`).
 

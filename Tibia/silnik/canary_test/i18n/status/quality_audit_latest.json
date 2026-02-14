@@ -1,15 +1,379 @@
 {
-  "timestamp": "2026-02-14T06:50:33.339457Z",
+  "timestamp": "2026-02-14T07:56:25.689247Z",
   "checked_entries": 100,
-  "issues_found": 0,
+  "issues_found": 52,
   "issues_by_type": {
-    "suspicious_log_high": 160,
-    "suspicious_log_low": 33,
-    "suspicious_log_medium": 6,
-    "suspicious_log_critical": 1,
+    "identical_to_en": 52,
+    "suspicious_log_low": 110,
+    "suspicious_log_high": 90,
     "suspicious_rejected_critical": 200
   },
-  "issues": [],
+  "issues": [
+    {
+      "key": "monster.furyosa.name",
+      "lang": "cs",
+      "type": "identical_to_en",
+      "en": "Furyosa",
+      "translated": "Furyosa"
+    },
+    {
+      "key": "monster.furyosa.desc",
+      "lang": "cs",
+      "type": "identical_to_en",
+      "en": "Furyosa",
+      "translated": "Furyosa"
+    },
+    {
+      "key": "monster.fernfang.name",
+      "lang": "cs",
+      "type": "identical_to_en",
+      "en": "Fernfang",
+      "translated": "Fernfang"
+    },
+    {
+      "key": "monster.fernfang.desc",
+      "lang": "cs",
+      "type": "identical_to_en",
+      "en": "Fernfang",
+      "translated": "Fernfang"
+    },
+    {
+      "key": "monster.badger.name",
+      "lang": "cs",
+      "type": "identical_to_en",
+      "en": "Badger",
+      "translated": "Badger"
+    },
+    {
+      "key": "monster.water_buffalo.name",
+      "lang": "cs",
+      "type": "identical_to_en",
+      "en": "Water Buffalo",
+      "translated": "Water Buffalo"
+    },
+    {
+      "key": "monster.yeti.name",
+      "lang": "cs",
+      "type": "identical_to_en",
+      "en": "Yeti",
+      "translated": "Yeti"
+    },
+    {
+      "key": "monster.wild_warrior.name",
+      "lang": "cs",
+      "type": "identical_to_en",
+      "en": "Wild Warrior",
+      "translated": "Wild Warrior"
+    },
+    {
+      "key": "monster.warlock.name",
+      "lang": "cs",
+      "type": "identical_to_en",
+      "en": "Warlock",
+      "translated": "Warlock"
+    },
+    {
+      "key": "monster.nomad.name",
+      "lang": "cs",
+      "type": "identical_to_en",
+      "en": "Nomad",
+      "translated": "Nomad"
+    },
+    {
+      "key": "monster.nomad_blue.name",
+      "lang": "cs",
+      "type": "identical_to_en",
+      "en": "Nomad",
+      "translated": "Nomad"
+    },
+    {
+      "key": "monster.feverish_citizen.name",
+      "lang": "cs",
+      "type": "identical_to_en",
+      "en": "Feverish Citizen",
+      "translated": "Feverish Citizen"
+    },
+    {
+      "key": "monster.nomad_female.name",
+      "lang": "cs",
+      "type": "identical_to_en",
+      "en": "Nomad",
+      "translated": "Nomad"
+    },
+    {
+      "key": "monster.fire_devil.name",
+      "lang": "cs",
+      "type": "identical_to_en",
+      "en": "Fire Devil",
+      "translated": "Fire Devil"
+    },
+    {
+      "key": "monster.serpent_spawn.name",
+      "lang": "cs",
+      "type": "identical_to_en",
+      "en": "Serpent Spawn",
+      "translated": "Serpent Spawn"
+    },
+    {
+      "key": "monster.cobra.name",
+      "lang": "cs",
+      "type": "identical_to_en",
+      "en": "Cobra",
+      "translated": "Cobra"
+    },
+    {
+      "key": "monster.scarab.name",
+      "lang": "cs",
+      "type": "identical_to_en",
+      "en": "Scarab",
+      "translated": "Scarab"
+    },
+    {
+      "key": "monster.feverish_citizen.name",
+      "lang": "az",
+      "type": "identical_to_en",
+      "en": "Feverish Citizen",
+      "translated": "Feverish Citizen"
+    },
+    {
+      "key": "monster.nomad_female.name",
+      "lang": "az",
+      "type": "identical_to_en",
+      "en": "Nomad",
+      "translated": "Nomad"
+    },
+    {
+      "key": "monster.fire_devil.name",
+      "lang": "az",
+      "type": "identical_to_en",
+      "en": "Fire Devil",
+      "translated": "Fire Devil"
+    },
+    {
+      "key": "monster.serpent_spawn.name",
+      "lang": "az",
+      "type": "identical_to_en",
+      "en": "Serpent Spawn",
+      "translated": "Serpent Spawn"
+    },
+    {
+      "key": "monster.cobra.name",
+      "lang": "az",
+      "type": "identical_to_en",
+      "en": "Cobra",
+      "translated": "Cobra"
+    },
+    {
+      "key": "monster.scarab.name",
+      "lang": "az",
+      "type": "identical_to_en",
+      "en": "Scarab",
+      "translated": "Scarab"
+    },
+    {
+      "key": "monster.terramite.name",
+      "lang": "az",
+      "type": "identical_to_en",
+      "en": "Terramite",
+      "translated": "Terramite"
+    },
+    {
+      "key": "monster.gargoyle.name",
+      "lang": "az",
+      "type": "identical_to_en",
+      "en": "Gargoyle",
+      "translated": "Gargoyle"
+    },
+    {
+      "key": "monster.zushuka.name",
+      "lang": "az",
+      "type": "identical_to_en",
+      "en": "Zushuka",
+      "translated": "Zushuka"
+    },
+    {
+      "key": "monster.mad_mage.name",
+      "lang": "az",
+      "type": "identical_to_en",
+      "en": "Mad Mage",
+      "translated": "Mad Mage"
+    },
+    {
+      "key": "monster.zevelon_duskbringer.name",
+      "lang": "az",
+      "type": "identical_to_en",
+      "en": "Zevelon Duskbringer",
+      "translated": "Zevelon Duskbringer"
+    },
+    {
+      "key": "monster.zevelon_duskbringer.desc",
+      "lang": "az",
+      "type": "identical_to_en",
+      "en": "Zevelon Duskbringer",
+      "translated": "Zevelon Duskbringer"
+    },
+    {
+      "key": "monster.munster.name",
+      "lang": "az",
+      "type": "identical_to_en",
+      "en": "Munster",
+      "translated": "Munster"
+    },
+    {
+      "key": "monster.munster.desc",
+      "lang": "az",
+      "type": "identical_to_en",
+      "en": "Munster",
+      "translated": "Munster"
+    },
+    {
+      "key": "monster.weakened_shlorg.name",
+      "lang": "az",
+      "type": "identical_to_en",
+      "en": "Weakened Shlorg",
+      "translated": "Weakened Shlorg"
+    },
+    {
+      "key": "monster.weakened_shlorg.desc",
+      "lang": "az",
+      "type": "identical_to_en",
+      "en": "Weakened Shlorg",
+      "translated": "Weakened Shlorg"
+    },
+    {
+      "key": "monster.fernfang.name",
+      "lang": "bg",
+      "type": "identical_to_en",
+      "en": "Fernfang",
+      "translated": "Fernfang"
+    },
+    {
+      "key": "monster.fernfang.desc",
+      "lang": "bg",
+      "type": "identical_to_en",
+      "en": "Fernfang",
+      "translated": "Fernfang"
+    },
+    {
+      "key": "monster.badger.name",
+      "lang": "bg",
+      "type": "identical_to_en",
+      "en": "Badger",
+      "translated": "Badger"
+    },
+    {
+      "key": "monster.water_buffalo.name",
+      "lang": "bg",
+      "type": "identical_to_en",
+      "en": "Water Buffalo",
+      "translated": "Water Buffalo"
+    },
+    {
+      "key": "monster.yeti.name",
+      "lang": "bg",
+      "type": "identical_to_en",
+      "en": "Yeti",
+      "translated": "Yeti"
+    },
+    {
+      "key": "monster.wild_warrior.name",
+      "lang": "bg",
+      "type": "identical_to_en",
+      "en": "Wild Warrior",
+      "translated": "Wild Warrior"
+    },
+    {
+      "key": "monster.warlock.name",
+      "lang": "bg",
+      "type": "identical_to_en",
+      "en": "Warlock",
+      "translated": "Warlock"
+    },
+    {
+      "key": "monster.nomad.name",
+      "lang": "bg",
+      "type": "identical_to_en",
+      "en": "Nomad",
+      "translated": "Nomad"
+    },
+    {
+      "key": "monster.nomad_blue.name",
+      "lang": "bg",
+      "type": "identical_to_en",
+      "en": "Nomad",
+      "translated": "Nomad"
+    },
+    {
+      "key": "monster.feverish_citizen.name",
+      "lang": "bg",
+      "type": "identical_to_en",
+      "en": "Feverish Citizen",
+      "translated": "Feverish Citizen"
+    },
+    {
+      "key": "monster.nomad_female.name",
+      "lang": "bg",
+      "type": "identical_to_en",
+      "en": "Nomad",
+      "translated": "Nomad"
+    },
+    {
+      "key": "monster.fire_devil.name",
+      "lang": "bg",
+      "type": "identical_to_en",
+      "en": "Fire Devil",
+      "translated": "Fire Devil"
+    },
+    {
+      "key": "monster.serpent_spawn.name",
+      "lang": "bg",
+      "type": "identical_to_en",
+      "en": "Serpent Spawn",
+      "translated": "Serpent Spawn"
+    },
+    {
+      "key": "monster.cobra.name",
+      "lang": "bg",
+      "type": "identical_to_en",
+      "en": "Cobra",
+      "translated": "Cobra"
+    },
+    {
+      "key": "monster.scarab.name",
+      "lang": "bg",
+      "type": "identical_to_en",
+      "en": "Scarab",
+      "translated": "Scarab"
+    },
+    {
+      "key": "monster.terramite.name",
+      "lang": "bg",
+      "type": "identical_to_en",
+      "en": "Terramite",
+      "translated": "Terramite"
+    },
+    {
+      "key": "monster.gargoyle.name",
+      "lang": "bg",
+      "type": "identical_to_en",
+      "en": "Gargoyle",
+      "translated": "Gargoyle"
+    },
+    {
+      "key": "monster.juggernaut.desc",
+      "lang": "bn",
+      "type": "identical_to_en",
+      "en": "a juggernaut",
+      "translated": "a juggernaut"
+    },
+    {
+      "key": "monster.hellspawn.name",
+      "lang": "bn",
+      "type": "identical_to_en",
+      "en": "Hellspawn",
+      "translated": "Hellspawn"
+    }
+  ],
   "threshold": 10,
-  "slow_mode": false
+  "slow_mode": true
 }

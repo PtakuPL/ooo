@@ -4,7 +4,7 @@
   "crossref_enabled": true,
   "auto_fix_enabled": false,
   "auto_fix_limit": 30,
-  "checked_at": "2026-02-14T06:50:39.112776Z",
+  "checked_at": "2026-02-14T07:48:45.528895Z",
   "issues_total": 461,
   "issues_by_type": {
     "consistency_in_language": 1,
@@ -23,7 +23,10 @@
       "variants_count": 2,
       "examples": [
         "quests:quests.bigfoot_burden.chest_empty",
-        "scripts:scripts.actions_rewards.msg_2"
+        "scripts:scripts.actions_boss_timira_fight.msg_3",
+        "scripts:scripts.actions_mission3_chest.msg_2",
+        "scripts:scripts.actions_reward.msg_4",
+        "scripts:scripts.actions_reward.msg_6"
       ]
     }
   ],

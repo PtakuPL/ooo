@@ -8950,5 +8950,645 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-14T06:05:30.588068Z"
+  },
+  "lib.hireling.as_you_wish": {
+    "src_hash": "dd4bc9876390c6c2e60f02e875dd2d33",
+    "text": "As you wish!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.160256Z"
+  },
+  "scripts.2_ambassadors_treason.msg_1": {
+    "src_hash": "14dfffed3e8aaff6aa4f4509ee470001",
+    "text": "Des documents ont été brûlés ici récemment. Seule une partie d'un parchemin se trouve encore devant la cheminée, mais elle est trop recouverte de suie pour être lue.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.166334Z"
+  },
+  "scripts.2_ambassadors_treason.msg_2": {
+    "src_hash": "dd483e9a16530ce89de99a1dc0f9f197",
+    "text": "Vous avez déjà enquêté sur ce sujet.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.167246Z"
+  },
+  "scripts.2_ambassadors_treason.msg_3": {
+    "src_hash": "f0502f434837f12f681eb194dd73e2d4",
+    "text": "Des bouts de papier sont éparpillés sur le sol. Il faut du temps pour les remettre ensemble. Mais ce n'est qu'un poème mal écrit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.168791Z"
+  },
+  "scripts.2_ambassadors_treason.msg_4": {
+    "src_hash": "dd483e9a16530ce89de99a1dc0f9f197",
+    "text": "Vous avez déjà enquêté sur ce sujet.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.169793Z"
+  },
+  "scripts.2_ambassadors_treason.msg_5": {
+    "src_hash": "92080f0ef8fde073cd9d9b26347d601b",
+    "text": "Vous examinez attentivement les parchemins. Ce sont des ordres de Rathleton pour l'ambassadeur. Aucun signe de trahison ici.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.171235Z"
+  },
+  "scripts.2_ambassadors_treason.msg_6": {
+    "src_hash": "dd483e9a16530ce89de99a1dc0f9f197",
+    "text": "Vous avez déjà enquêté sur ce sujet.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.172197Z"
+  },
+  "scripts.2_ambassadors_treason.msg_7": {
+    "src_hash": "8464bf58b6d5fa7bbe7ed698b810582e",
+    "text": "Vous ne trouvez rien dans la maison de l'ambassadeur. S'il s'agit en fait d'un traître, il s'est débarrassé de toute preuve pouvant l'incriminer.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.173801Z"
+  },
+  "scripts.6_mind_travel.msg_1": {
+    "src_hash": "39c4cd386bc515db3ca13ad71ea9a439",
+    "text": "Vous vous sentez tremblant et étourdi, le monde s’assombrit autour de vous. Ensuite, votre vue s'éclaircit à nouveau - et vous êtes ailleurs.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.175169Z"
+  },
+  "scripts.6_mind_travel.msg_2": {
+    "src_hash": "1e57dd425d49fa37eefdeb9faa01a4f2",
+    "text": "Vous avez été déplacé du côté droit du cerveau",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.175872Z"
+  },
+  "scripts.6_mind_travel.msg_3": {
+    "src_hash": "98da952f701d6358d74f1d9a180990fa",
+    "text": "Vous avez été déplacé du côté gauche du cerveau",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.176504Z"
+  },
+  "scripts.8_blessing_the_statues.msg_1": {
+    "src_hash": "414cb5c464ec2b74b4431b6931757db9",
+    "text": "Vous bénissez la statue.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.177019Z"
+  },
+  "scripts.8_blessing_the_statues.msg_2": {
+    "src_hash": "4a64e6aeefc9b8c9f1fd15709a257e2d",
+    "text": "Vous avez déjà béni cette statue.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.177645Z"
+  },
+  "scripts.action_cat_basket.say_1": {
+    "src_hash": "2640241ef563e67c405bc0dbe5b18ed4",
+    "text": "FCHHHHH",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.179143Z"
+  },
+  "scripts.action_drume.msg_1": {
+    "src_hash": "5a37b3d700f88246b6e36e3077df916b",
+    "text": "Votre temps est écoulé.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.180033Z"
+  },
+  "scripts.action_tortoise_egg_nargor.msg_1": {
+    "src_hash": "2dba8779b7220248332287566af0d980",
+    "text": "You found",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.181596Z"
+  },
+  "scripts.actions_bonefiddle.msg_1": {
+    "src_hash": "1d91d803c170748ff4f101712cf1c262",
+    "text": "Vous attachez le bois d'ébène au crâne. Cela devrait répondre aux exigences d’une touche.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.185703Z"
+  },
+  "scripts.actions_bonefiddle.msg_2": {
+    "src_hash": "e8a3f87ef1f8ea48f276ed48a8524749",
+    "text": "Vous attachez les cheveux à la touche en ébène. Les brins doivent être suffisants pour servir de ficelles.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.186613Z"
+  },
+  "scripts.actions_bonefiddle.msg_3": {
+    "src_hash": "60b384a0aa95079616923d65a09d92fc",
+    "text": "*Il y avait autrefois une foire aux jeunes filles, aux yeux sombres et aux cheveux soyeux. Loin de chez elle, elle est décédée. Pas de tombe, pas de veillée, pas de deuil.*",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.187637Z"
+  },
+  "scripts.actions_bonefiddle.msg_4": {
+    "src_hash": "5199ba776a4a3a24d69420d0eb2e685b",
+    "text": "Vous jouez la Ballade du Paon et le portail s'ouvre.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.188338Z"
+  },
+  "scripts.actions_bonefiddle.msg_5": {
+    "src_hash": "fa77689cf9736ba9d5773f0e3b7b2683",
+    "text": "Vous jouez du violon en os.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.188910Z"
+  },
+  "scripts.actions_boss_timira_fight.msg_3": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "You found.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.190154Z"
+  },
+  "scripts.actions_calassa_comb_door.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "The door seems to be sealed against unwanted intruders.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.191616Z"
+  },
+  "scripts.actions_chests.msg_1": {
+    "src_hash": "bed7df9c948642d0d52b4756ddf83ded",
+    "text": "You have found a",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.193627Z"
+  },
+  "scripts.actions_chests.msg_2": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "It is empty.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.194635Z"
+  },
+  "scripts.actions_containerRewards.msg_2": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "It is empty.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.195727Z"
+  },
+  "scripts.actions_doors.msg_1": {
+    "src_hash": "97292b2d9c656199befd6d213f4e5194",
+    "text": "Vous n'avez pas assez de niveau.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.198726Z"
+  },
+  "scripts.actions_doors.msg_2": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "The door seems to be sealed against unwanted intruders.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.199789Z"
+  },
+  "scripts.actions_dreamcatcher_curse.msg_1": {
+    "src_hash": "eb5a28c1cc7d964dd2cbb2fc6553795f",
+    "text": "Vous avez un sentiment d'effroi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.200368Z"
+  },
+  "scripts.actions_entrance.msg_1": {
+    "src_hash": "3bf818c8ff9e1fb2d25ccd26775d7cd5",
+    "text": "Une fois de plus vous mélangez la craie avec une goutte de votre sang et un peu d'eau et renouvelez le symbole au sol...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.201482Z"
+  },
+  "scripts.actions_entrance.msg_2": {
+    "src_hash": "b33b6be9b885ba871d5ec857ce3fd539",
+    "text": "Vous ne pouvez utiliser cette entrée que la nuit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.202198Z"
+  },
+  "scripts.actions_fragrance.msg_1": {
+    "src_hash": "88589a6c42c6ad348e20ed9f1aaef6af",
+    "text": "Hmmmm, quel parfum envoûtant !",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.204132Z"
+  },
+  "scripts.actions_gnome_items.msg_4": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "It is empty.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.206006Z"
+  },
+  "scripts.actions_gnomish_chest.msg_2": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "It is empty.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.206853Z"
+  },
+  "scripts.actions_mission3_chest.msg_2": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "You found.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.214157Z"
+  },
+  "scripts.actions_mono_detector_strange_probing_device.msg_1": {
+    "src_hash": "7302b053c0f22e53182c9674c7530e39",
+    "text": "La sonde a été ajustée.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.215253Z"
+  },
+  "scripts.actions_mono_detector_strange_probing_device.msg_3": {
+    "src_hash": "9d0ce14678d498a52e1d256ff430a7ca",
+    "text": "Hm... l'appareil indique : 0,0,zéro,0,zéro, ce qui peut se traduire approximativement par : RIEN D'INTÉRÊT ICI",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.216145Z"
+  },
+  "scripts.actions_mono_detector_strange_probing_device.msg_4": {
+    "src_hash": "cbbd701a227c41b3a89cdf0f3dde1174",
+    "text": "Vous avez réussi à collecter les données.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.216769Z"
+  },
+  "scripts.actions_outlaw_camp_door.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "The door seems to be sealed against unwanted intruders.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.219111Z"
+  },
+  "scripts.actions_portal_minis_ancient_feud.msg_1": {
+    "src_hash": "d7675b7b6e4edadcaa460bfa24c70b35",
+    "text": "All the players need to be level",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.221072Z"
+  },
+  "scripts.actions_portal_minis_ancient_feud.msg_2": {
+    "src_hash": "b97f99b956df2fe9bb7b47e1908f0684",
+    "text": "You have to wait",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.221775Z"
+  },
+  "scripts.actions_portal_minis_feaster.msg_1": {
+    "src_hash": "d7675b7b6e4edadcaa460bfa24c70b35",
+    "text": "All the players need to be level",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.222693Z"
+  },
+  "scripts.actions_portal_minis_feaster.msg_2": {
+    "src_hash": "b97f99b956df2fe9bb7b47e1908f0684",
+    "text": "You have to wait",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.223438Z"
+  },
+  "scripts.actions_portal_minis_grimvale.msg_1": {
+    "src_hash": "b97f99b956df2fe9bb7b47e1908f0684",
+    "text": "You have to wait",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.224234Z"
+  },
+  "scripts.actions_portal_minis_kilmaresh.msg_1": {
+    "src_hash": "d7675b7b6e4edadcaa460bfa24c70b35",
+    "text": "All the players need to be level",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.225036Z"
+  },
+  "scripts.actions_portal_minis_kilmaresh.msg_2": {
+    "src_hash": "b97f99b956df2fe9bb7b47e1908f0684",
+    "text": "You have to wait",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.225775Z"
+  },
+  "scripts.actions_questDoors.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "The door seems to be sealed against unwanted intruders.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.227204Z"
+  },
+  "scripts.actions_questDoors.msg_4": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "The door seems to be sealed against unwanted intruders.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.228927Z"
+  },
+  "scripts.actions_resonance_chamber.say_1": {
+    "src_hash": "adc5fb51a0700429d5586beda62c4f6e",
+    "text": "PRRRROOOOOAAAAAHHHH!!!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.229972Z"
+  },
+  "scripts.actions_reward.msg_4": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "You found.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.230963Z"
+  },
+  "scripts.actions_reward.msg_6": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "You found.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.231695Z"
+  },
+  "scripts.actions_rewards.msg_3": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "You found.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.232514Z"
+  },
+  "scripts.actions_scarlett.msg_1": {
+    "src_hash": "5316cfe06e390d51d9a5ed89b00755ca",
+    "text": "Vous n'êtes pas encore autorisé à l'utiliser.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.236293Z"
+  },
+  "scripts.actions_scarlett.msg_2": {
+    "src_hash": "7c285fed0553b05349a0985cdd855e24",
+    "text": "Vous tenez devant vous le vieux plastron de Galthein. Il ne rentre pas et est bien trop vieux pour résister à une quelconque attaque.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.237444Z"
+  },
+  "scripts.actions_telescope.msg_1": {
+    "src_hash": "cd38aa8899c916fb75dd44e9e5292eda",
+    "text": "Le télescope offre une vue parfaite sur l'océan sans fin - aucune terre en vue",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.240989Z"
+  },
+  "scripts.actions_to_take_roots.msg_1": {
+    "src_hash": "0bbc4c04869af7016a8c329b16c09414",
+    "text": "Vous avez réussi à récolter des racines juteuses.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.243457Z"
+  },
+  "scripts.actions_to_take_roots.msg_2": {
+    "src_hash": "9155c1b0f463d08b46559717336b3f6b",
+    "text": "Votre tentative de récolte a détruit plus de racines juteuses que vous ne pouviez en récupérer.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.244577Z"
+  },
+  "scripts.actions_to_take_roots.msg_3": {
+    "src_hash": "0bbc4c04869af7016a8c329b16c09414",
+    "text": "Vous avez réussi à récolter des racines juteuses.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.245463Z"
+  },
+  "scripts.actions_to_take_roots.msg_4": {
+    "src_hash": "9155c1b0f463d08b46559717336b3f6b",
+    "text": "Votre tentative de récolte a détruit plus de racines juteuses que vous ne pouviez en récupérer.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.246505Z"
+  },
+  "scripts.actions_to_take_roots.msg_5": {
+    "src_hash": "092cbfa5e145ba8cdcd95cb397121daf",
+    "text": "Cette racine a déjà été récoltée, rien à gagner ici.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.247545Z"
+  },
+  "scripts.actions_treasure_chest.msg_1": {
+    "src_hash": "2dba8779b7220248332287566af0d980",
+    "text": "You found",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.248416Z"
+  },
+  "scripts.actions_treasure_chest.msg_2": {
+    "src_hash": "2dba8779b7220248332287566af0d980",
+    "text": "You found",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.248796Z"
+  },
+  "scripts.actions_ungreez_door.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "The door seems to be sealed against unwanted intruders.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.250017Z"
+  },
+  "scripts.actions_using_crystals.msg_1": {
+    "src_hash": "4ece41ce875a4c261bd613cdc1472980",
+    "text": "Cette géode de cristal tremble à cause d'une bataille à proximité.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.251284Z"
+  },
+  "scripts.actions_using_crystals.msg_2": {
+    "src_hash": "4ece41ce875a4c261bd613cdc1472980",
+    "text": "Cette géode de cristal tremble à cause d'une bataille à proximité.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.252059Z"
+  },
+  "scripts.actions_using_crystals.msg_3": {
+    "src_hash": "4ece41ce875a4c261bd613cdc1472980",
+    "text": "Cette géode de cristal tremble à cause d'une bataille à proximité.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.252817Z"
+  },
+  "scripts.actions_wooden_trash.msg_1": {
+    "src_hash": "ff4835c520d079c29c29fafb7687a7d2",
+    "text": "Vous avez lancé une escorte, amenez votre prisonnier à l'avant-poste nain !",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.254046Z"
+  },
+  "scripts.actions_wooden_trash.msg_2": {
+    "src_hash": "464917965b3891096e423e2362e7f69c",
+    "text": "Vous ne trouvez rien d’intéressant sous les décombres.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.255050Z"
+  },
+  "scripts.actions_yalahar_machine_war_golems.say_1": {
+    "src_hash": "98112328c358c3f5235e66814405aade",
+    "text": "*cliquez*",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.256525Z"
+  },
+  "scripts.actions_zalamon_door.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "The door seems to be sealed against unwanted intruders.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.258001Z"
+  },
+  "scripts.chest.msg_1": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "You found.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.262931Z"
+  },
+  "scripts.closing_door.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "The door seems to be sealed against unwanted intruders.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.264732Z"
+  },
+  "scripts.dolls.12904_4": {
+    "src_hash": "136833af11abf3e1e761704915043ea3",
+    "text": "Have fun!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.273214Z"
+  },
+  "scripts.door.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "The door seems to be sealed against unwanted intruders.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.278082Z"
+  },
+  "scripts.fluids.msg_1": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "It is empty.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.282231Z"
+  },
+  "scripts.fluids.msg_2": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "It is empty.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.282931Z"
+  },
+  "scripts.furyosa_deathball.say_1": {
+    "src_hash": "f38030a6453c6462e147c7da5c9995d8",
+    "text": "Back in black!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.284289Z"
+  },
+  "scripts.gaz'haragoth_iceball.say_1": {
+    "src_hash": "d431ea8d68d1e7772b998f5f1cd084aa",
+    "text": "Chill out!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.284917Z"
+  },
+  "scripts.key_door.msg_1": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "It is locked.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.291254Z"
+  },
+  "scripts.malofur_explosion.say_3": {
+    "src_hash": "1ee05904751682de1be927c32b1849ac",
+    "text": "BOUM !",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:38:57.293694Z"
   }
 }

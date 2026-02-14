@@ -2,10 +2,10 @@
   "lang": "nl",
   "script_group": "latin",
   "total_keys": 53586,
-  "translated": 30847,
-  "identical_to_en": 24420,
-  "placeholder_keys": 20584,
-  "coverage_pct": 57.6,
+  "translated": 30927,
+  "identical_to_en": 24491,
+  "placeholder_keys": 20504,
+  "coverage_pct": 57.7,
   "issues_total": 6152,
   "issues_by_type": {
     "V3_empty": 6144,
@@ -149,5 +149,5 @@
     "length_ratio": 58,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-14T06:50:41.307353Z"
+  "validated_at": "2026-02-14T07:48:49.267412Z"
 }

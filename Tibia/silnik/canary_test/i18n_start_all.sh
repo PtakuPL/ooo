@@ -28,18 +28,49 @@ mkdir -p "$WORK_DIR/i18n/logs"
 log() { echo "[$(date '+%Y-%m-%d %H:%M:%S')] $*" | tee -a "$LOGFILE"; }
 
 # ── Helpers ──────────────────────────────────────────────────────
+pid_matches_name() {
+    local pid="$1" name="$2"
+    [[ "$pid" =~ ^[0-9]+$ ]] || return 1
+    ps -p "$pid" >/dev/null 2>&1 || return 1
+    [ -r "/proc/$pid/cmdline" ] || return 1
+    local cmdline
+    cmdline=$(tr '\0' ' ' < "/proc/$pid/cmdline" 2>/dev/null || echo "")
+    [ -n "$cmdline" ] || return 1
+    [[ "$cmdline" == *"$name"* ]] || return 1
+    [[ "$cmdline" == *"pgrep "* ]] && return 1
+    [[ "$cmdline" == *"i18n_start_all.sh"* ]] && return 1
+    return 0
+}
+
 is_running() {
     local pidfile="$1" name="$2"
     if [[ -f "$pidfile" ]]; then
         local pid
         pid=$(cat "$pidfile" 2>/dev/null || echo "")
-        if [[ -n "$pid" ]] && ps -p "$pid" >/dev/null 2>&1; then
+        if pid_matches_name "$pid" "$name"; then
             echo "$pid"
             return 0
         fi
+        rm -f "$pidfile" 2>/dev/null || true
     fi
-    # Fallback: szukamy procesu po nazwie
-    pgrep -f "$name" -u "$(whoami)" 2>/dev/null | head -1 || true
+
+    # Fallback: szukamy procesu po cmdline i dodatkowo walidujemy /proc/<pid>/cmdline
+    # Unikamy self-match: $$ (ten shell), $PPID, $BASHPID, oraz procesy grep/pgrep
+    local candidate self_pids
+    self_pids=("$$" "$PPID" "${BASHPID:-}")
+    while read -r candidate; do
+        [[ -n "${candidate:-}" ]] || continue
+        local skip=0
+        for sp in "${self_pids[@]}"; do
+            [[ "$candidate" = "$sp" ]] && skip=1 && break
+        done
+        [[ "$skip" = "1" ]] && continue
+        if pid_matches_name "$candidate" "$name"; then
+            echo "$candidate"
+            return 0
+        fi
+    done < <(pgrep -f "$name" -u "$(whoami)" 2>/dev/null | grep -v "^$$\$" || true)
+
     return 1
 }
 
@@ -52,9 +83,14 @@ start_guardian() {
     fi
     log "▶️  Startuję Guardian daemon..."
     GUARDIAN_START_SOURCE=start_all nohup bash "$GUARDIAN_SCRIPT" --daemon >> "$WORK_DIR/i18n/logs/guardian.log" 2>&1 &
-    sleep 1
-    pid=$(cat "$GUARDIAN_PID_FILE" 2>/dev/null || pgrep -f "i18n_guardian.sh --daemon" -u "$(whoami)" | head -1 || echo "?")
-    log "✅  Guardian uruchomiony (pid=$pid, source=start_all)"
+    sleep 2
+    pid=$(is_running "$GUARDIAN_PID_FILE" "i18n_guardian.sh --daemon") || true
+    if [[ -n "$pid" ]]; then
+        log "✅  Guardian uruchomiony (pid=$pid, source=start_all)"
+    else
+        log "❌  Guardian nie potwierdził startu"
+        return 1
+    fi
 }
 
 start_statusd() {
@@ -66,9 +102,14 @@ start_statusd() {
     fi
     log "▶️  Startuję Statusd daemon..."
     nohup bash "$STATUSD_SCRIPT" --daemon >> "$WORK_DIR/i18n/logs/statusd.log" 2>&1 &
-    sleep 1
-    pid=$(cat "$STATUSD_PID_FILE" 2>/dev/null || pgrep -f "i18n-statusd.sh --daemon" -u "$(whoami)" | head -1 || echo "?")
-    log "✅  Statusd uruchomiony (pid=$pid)"
+    sleep 2
+    pid=$(is_running "$STATUSD_PID_FILE" "i18n-statusd.sh --daemon") || true
+    if [[ -n "$pid" ]]; then
+        log "✅  Statusd uruchomiony (pid=$pid)"
+    else
+        log "❌  Statusd nie potwierdził startu"
+        return 1
+    fi
 }
 
 stop_daemon() {
@@ -84,7 +125,7 @@ stop_daemon() {
     local waited=0
     while ps -p "$pid" >/dev/null 2>&1 && (( waited < 10 )); do
         sleep 1
-        (( waited++ ))
+        waited=$((waited + 1))
     done
     if ps -p "$pid" >/dev/null 2>&1; then
         kill -9 "$pid" 2>/dev/null || true
@@ -100,10 +141,17 @@ show_status() {
     echo "  i18n Pipeline — Status daemonów"
     echo "═══════════════════════════════════════════════════"
 
-    local g_pid s_pid w_count
+    local g_pid s_pid w_count w_pid w_child_count
     g_pid=$(is_running "$GUARDIAN_PID_FILE" "i18n_guardian.sh --daemon") || true
     s_pid=$(is_running "$STATUSD_PID_FILE" "i18n-statusd.sh --daemon") || true
-    w_count=$(pgrep -f "i18n_worker_simple.sh" -u "$(whoami)" 2>/dev/null | wc -l || echo 0)
+    w_pid=$(cat "$WORK_DIR/.worker_simple.pid" 2>/dev/null || echo "")
+    if [[ "$w_pid" =~ ^[0-9]+$ ]] && ps -p "$w_pid" >/dev/null 2>&1; then
+        w_child_count=$( { pgrep -P "$w_pid" -f "i18n_worker_simple.sh --continuous" -u "$(whoami)" 2>/dev/null || true; } | wc -l )
+    else
+        w_pid=""
+        w_child_count=0
+        w_count=$( { pgrep -f "(^|/)i18n_worker_simple.sh --continuous" -u "$(whoami)" 2>/dev/null || true; } | wc -l )
+    fi
 
     if [[ -n "$g_pid" ]]; then
         echo "  Guardian:  ✅ RUNNING  (pid=$g_pid)"
@@ -117,7 +165,11 @@ show_status() {
         echo "  Statusd:   ❌ STOPPED"
     fi
 
-    echo "  Workers:   $w_count instancja(-e)"
+    if [[ -n "$w_pid" ]]; then
+        echo "  Worker:    ✅ RUNNING  (main pid=$w_pid, subprocessy=$w_child_count)"
+    else
+        echo "  Worker:    ❌ STOPPED  (detected=$w_count)"
+    fi
 
     # Coverage snapshot
     if [[ -f "i18n/status/coverage.json" ]]; then
@@ -149,7 +201,7 @@ case "${1:-start}" in
         stop_daemon "$STATUSD_PID_FILE" "i18n-statusd.sh --daemon" "Statusd"
         stop_daemon "$GUARDIAN_PID_FILE" "i18n_guardian.sh --daemon" "Guardian"
         # Workers zostaną zatrzymane przez guardian trap lub osobno
-        w_pids=$(pgrep -f "i18n_worker_simple.sh" -u "$(whoami)" 2>/dev/null || true)
+        w_pids=$(pgrep -f "(^|/)i18n_worker_simple.sh --continuous" -u "$(whoami)" 2>/dev/null || true)
         if [[ -n "$w_pids" ]]; then
             log "⛔  Zatrzymuję workery..."
             echo "$w_pids" | xargs kill 2>/dev/null || true
@@ -161,9 +213,9 @@ case "${1:-start}" in
         ;;
     --restart|restart)
         log "═══ i18n_start_all: RESTART ═══"
-        "$0" --stop
+        bash "$WORK_DIR/i18n_start_all.sh" --stop
         sleep 2
-        "$0" start
+        bash "$WORK_DIR/i18n_start_all.sh" start
         ;;
     --status|status)
         show_status

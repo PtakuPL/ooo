@@ -3,12 +3,12 @@
   "script_group": "cjk",
   "total_keys": 53586,
   "translated": 35607,
-  "identical_to_en": 29264,
+  "identical_to_en": 29304,
   "placeholder_keys": 15824,
   "coverage_pct": 66.4,
-  "issues_total": 6203,
+  "issues_total": 6156,
   "issues_by_type": {
-    "V3_empty": 6195,
+    "V3_empty": 6148,
     "V1_placeholder_mismatch": 7,
     "V5_pipe_mismatch": 1
   },
@@ -16,7 +16,7 @@
     "CRITICAL": 8,
     "HIGH": 0,
     "MEDIUM": 0,
-    "LOW": 6195
+    "LOW": 6148
   },
   "score": 99.1,
   "worst_keys": [
@@ -70,12 +70,6 @@
     },
     {
       "key": "npc.a_dead_bureaucrat1.say_2",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_dead_bureaucrat1.say_3",
       "category": "npc",
       "type": "V3_empty",
       "severity": "LOW"
@@ -139,15 +133,21 @@
       "category": "npc",
       "type": "V3_empty",
       "severity": "LOW"
+    },
+    {
+      "key": "npc.a_dead_bureaucrat4.say_3",
+      "category": "npc",
+      "type": "V3_empty",
+      "severity": "LOW"
     }
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 469,
+    "issues_total": 460,
     "consistency": 1,
     "pl_reference": 400,
-    "length_ratio": 68,
+    "length_ratio": 59,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-14T06:50:46.101398Z"
+  "validated_at": "2026-02-14T07:48:57.105056Z"
 }

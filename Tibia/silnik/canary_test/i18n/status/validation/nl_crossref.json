@@ -1,10 +1,10 @@
 {
   "lang": "nl",
-  "coverage_pct": 57.6,
+  "coverage_pct": 57.7,
   "crossref_enabled": true,
   "auto_fix_enabled": false,
   "auto_fix_limit": 30,
-  "checked_at": "2026-02-14T06:50:41.297125Z",
+  "checked_at": "2026-02-14T07:48:49.246707Z",
   "issues_total": 459,
   "issues_by_type": {
     "consistency_in_language": 1,

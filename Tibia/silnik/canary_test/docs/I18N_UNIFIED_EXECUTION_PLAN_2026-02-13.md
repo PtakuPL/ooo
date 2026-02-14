@@ -6,6 +6,40 @@
 
 ---
 
+## Update wykonania (2026-02-14 07:52 UTC) — kanoniczne progi statusd + hardening start_all
+
+Zrealizowane pełne zadania:
+- ✅ **Statusd: jedno kanoniczne źródło progów (daemon/manual)**
+  - dodano plik konfiguracyjny: `canary_test/statusd_thresholds.json`,
+  - `i18n-statusd.sh` ładuje progi z tego pliku jako source-of-truth,
+  - domyślnie wyłączono env overrides (`STATUSD_USE_ENV_OVERRIDES=0`), żeby daemon/manual czytały te same wartości.
+- ✅ **Statusd: snapshot progów rozszerzony i audytowalny**
+  - `statusd_report.json`, `statusd_doctor.json`, `statusd_daily_report.json` publikują `thresholds_snapshot` z:
+    - `source_of_truth`,
+    - `config_file`,
+    - `env_overrides_enabled`,
+    - pełnym zestawem progów.
+  - artefakt `i18n/status/statusd_thresholds_snapshot.json` zawiera ten sam snapshot.
+- ✅ **`i18n_start_all.sh`: naprawa false-positive statusu daemonów**
+  - `is_running()` waliduje teraz PID przez `/proc/<pid>/cmdline` (zamiast ślepego fallback `pgrep`),
+  - stale PID file jest czyszczony automatycznie,
+  - odfiltrowano self-match (`pgrep`, `i18n_start_all.sh`) powodujący fałszywe `RUNNING`.
+- ✅ **`i18n_start_all.sh`: stabilizacja restartu**
+  - naprawiono `--restart` (wywołanie przez `bash "$WORK_DIR/i18n_start_all.sh"` zamiast zależnego od `$0`),
+  - naprawiono pętlę oczekiwania w `stop_daemon()` pod `set -e` (`waited=$((waited + 1))`),
+  - status workera pokazuje teraz `main pid` + liczbę subprocessów.
+
+Walidacja runtime (2026-02-14 07:52 UTC):
+- ✅ `bash i18n-statusd.sh --aggregate --doctor --daily-report` działa poprawnie po zmianach.
+- ✅ `statusd_report.json`/`statusd_doctor.json`/`statusd_daily_report.json` mają spójny `thresholds_snapshot` wskazujący `statusd_thresholds.json`.
+- ✅ `bash i18n_start_all.sh --restart` działa end-to-end (stop + start + poprawna detekcja PID).
+- ✅ `bash i18n_start_all.sh --status` nie raportuje już fałszywego `Statusd RUNNING`, gdy procesu brak.
+
+Nowe problemy/TODO wykryte podczas realizacji:
+- ✅ Naprawić `i18n_start_all.sh:is_running()` (fallback `pgrep`) pod self-match/fake-positive statusu daemona przy restartach. → DONE 2026-02-14.
+- ⬜ Dodać diagnostykę, czy `worker subprocessy>0` utrzymuje się długotrwale (odróżnić normalny subshell od realnego dublowania instancji workera).
+- ⬜ Skonfigurować `STATUSD_WEBHOOK_URL` (obecnie `WEBHOOK_NOT_CONFIGURED`).
+
 ## Update wykonania (2026-02-14 07:28 UTC) — scanned_files_live + metrics_drift + global_stats
 
 Zrealizowane pełne zadania:
@@ -35,7 +69,7 @@ Walidacja runtime (2026-02-14 07:28 UTC):
 Nowe problemy/TODO wykryte podczas realizacji:
 - ✅ Ustalić jedno, kanoniczne źródło progów `metrics_drift` dla wszystkich uruchomień statusd (daemon/manual), aby nie było rozjazdów severity między artefaktami. → DONE 2026-02-14: kanoniczne env z defaults + `statusd_thresholds_snapshot.json`.
 - ✅ Przenieść progi driftu do stabilnego pliku konfiguracyjnego i logować snapshot aktywnych progów przy każdej agregacji. → DONE 2026-02-14: `statusd_thresholds_snapshot.json` (osobny artefakt) + sekcja `thresholds_snapshot` w raporcie.
-- ⬜ Naprawić `i18n_start_all.sh:is_running()` (fallback `pgrep`) pod kątem self-match/fake-positive statusu daemona przy restartach.
+- ✅ Naprawić `i18n_start_all.sh:is_running()` (fallback `pgrep`) pod kątem self-match/fake-positive statusu daemona przy restartach. → DONE 2026-02-14: walidacja `/proc/<pid>/cmdline`, filtr self-match, czyszczenie stale PID.
 
 ## Update wykonania (2026-02-14 07:07 UTC) — status key-metrics hardening
 

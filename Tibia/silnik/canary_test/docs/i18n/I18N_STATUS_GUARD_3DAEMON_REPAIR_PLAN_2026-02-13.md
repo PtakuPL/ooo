@@ -5,6 +5,38 @@
 > `docs/I18N_UNIFIED_EXECUTION_PLAN_2026-02-13.md`.
 > W przypadku konfliktu zapisów, obowiązuje plan kanoniczny.
 
+## 🛠️ Aktualizacja wykonania (2026-02-14 07:52 UTC — statusd thresholds source-of-truth + naprawa `start_all`)
+
+Wykonane:
+- ✅ **Kanoniczne progi statusd (daemon/manual)**
+  - dodano plik `canary_test/statusd_thresholds.json` jako source-of-truth dla progów:
+    - `repair_queue_stagnation`,
+    - `suspicious_high`,
+    - `metrics_drift`.
+  - `i18n-statusd.sh` ładuje progi z pliku i domyślnie ignoruje env overrides (`STATUSD_USE_ENV_OVERRIDES=0`).
+- ✅ **Snapshot aktywnych progów domknięty end-to-end**
+  - `statusd_report.json`, `statusd_doctor.json`, `statusd_daily_report.json` mają `thresholds_snapshot`,
+  - snapshot zawiera `source_of_truth`, `config_file`, `env_overrides_enabled`,
+  - artefakt `i18n/status/statusd_thresholds_snapshot.json` jest aktualizowany przy agregacji.
+- ✅ **Naprawa false-positive daemon status w `i18n_start_all.sh`**
+  - `is_running()` waliduje PID przez `/proc/<pid>/cmdline`,
+  - stale PID file jest czyszczony automatycznie,
+  - odfiltrowano self-match (`pgrep`/`i18n_start_all.sh`).
+- ✅ **Naprawa restart path `i18n_start_all.sh`**
+  - `--restart` używa jawnego wywołania `bash "$WORK_DIR/i18n_start_all.sh"`,
+  - pętla `stop_daemon()` poprawiona pod `set -e` (`waited=$((waited + 1))`),
+  - status workera pokazuje `main pid` + `subprocessy`.
+
+Walidacja:
+- ✅ `bash i18n-statusd.sh --aggregate --doctor --daily-report` działa po zmianach.
+- ✅ `bash i18n_start_all.sh --restart` działa end-to-end bez wcześniejszego błędu `command not found`.
+- ✅ `bash i18n_start_all.sh --status` nie pokazuje już fikcyjnego `Statusd RUNNING`.
+
+Nowe TODO:
+- ✅ Naprawić `i18n_start_all.sh:is_running()` (fallback `pgrep`) pod self-match, bo potrafi pokazać daemon jako RUNNING mimo braku procesu. → DONE 2026-02-14.
+- ⬜ Dodać watchdog diagnostyczny dla `worker subprocessy>0` (odróżnić normalny subshell od faktycznej duplikacji instancji).
+- ⬜ Skonfigurować `STATUSD_WEBHOOK_URL` (obecnie `WEBHOOK_NOT_CONFIGURED`).
+
 ## 🛠️ Aktualizacja wykonania (2026-02-14 07:28 UTC — statusd drift + live scan counters)
 
 Wykonane:
@@ -29,7 +61,7 @@ Walidacja:
 Nowe TODO:
 - ✅ Ujednolicić źródło progów `metrics_drift` dla wszystkich ścieżek uruchamiania statusd (daemon/manual), bo różne środowiska mogą dać inne severity. → DONE 2026-02-14: progi w env z fallback defaults, snapshot artefakt `statusd_thresholds_snapshot.json` przy każdej agregacji.
 - ✅ Dodać artefakt `statusd_thresholds_snapshot` do łatwego audytu, jakie progi były aktywne przy danej agregacji/alarcie. → DONE 2026-02-14: `statusd_thresholds_snapshot.json` + sekcja `thresholds_snapshot` w raporcie.
-- ⬜ Naprawić `i18n_start_all.sh:is_running()` (fallback `pgrep`) pod self-match, bo potrafi pokazać daemon jako RUNNING mimo braku procesu.
+- ✅ Naprawić `i18n_start_all.sh:is_running()` (fallback `pgrep`) pod self-match, bo potrafi pokazać daemon jako RUNNING mimo braku procesu. → DONE 2026-02-14: walidacja cmdline + filtr self-match + stale PID cleanup.
 
 ## 🛠️ Aktualizacja wykonania (2026-02-14 07:07 UTC — naprawa spójności key metrics)
 

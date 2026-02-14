@@ -2,9 +2,9 @@
   "cycles": 49,
   "date": "2026-02-14",
   "errors": {
-    "count": 247
+    "count": 270
   },
-  "generated_at_utc": "2026-02-14T07:06:06Z",
+  "generated_at_utc": "2026-02-14T07:55:52Z",
   "work": {
     "auto_translate": {
       "langs": {
@@ -14,15 +14,15 @@
         },
         "AR": {
           "skipped": 0,
-          "translated": 320
+          "translated": 399
         },
         "AZ": {
           "skipped": 0,
-          "translated": 320
+          "translated": 400
         },
         "BG": {
           "skipped": 0,
-          "translated": 400
+          "translated": 480
         },
         "BN": {
           "skipped": 0,
@@ -34,15 +34,15 @@
         },
         "CS": {
           "skipped": 0,
-          "translated": 400
+          "translated": 480
         },
         "DA": {
           "skipped": 0,
-          "translated": 320
+          "translated": 400
         },
         "DE": {
           "skipped": 0,
-          "translated": 800
+          "translated": 880
         },
         "EL": {
           "skipped": 0,
@@ -50,7 +50,7 @@
         },
         "ES": {
           "skipped": 0,
-          "translated": 5210
+          "translated": 5689
         },
         "ET": {
           "skipped": 0,
@@ -62,11 +62,11 @@
         },
         "FI": {
           "skipped": 0,
-          "translated": 400
+          "translated": 480
         },
         "FR": {
           "skipped": 0,
-          "translated": 800
+          "translated": 880
         },
         "HE": {
           "skipped": 0,
@@ -94,7 +94,7 @@
         },
         "IT": {
           "skipped": 0,
-          "translated": 647
+          "translated": 807
         },
         "JA": {
           "skipped": 0,
@@ -134,19 +134,19 @@
         },
         "NL": {
           "skipped": 0,
-          "translated": 320
+          "translated": 400
         },
         "NO": {
           "skipped": 0,
-          "translated": 400
+          "translated": 480
         },
         "PL": {
           "skipped": 0,
-          "translated": 782
+          "translated": 794
         },
         "PT": {
           "skipped": 0,
-          "translated": 800
+          "translated": 960
         },
         "RO": {
           "skipped": 0,
@@ -154,7 +154,7 @@
         },
         "RU": {
           "skipped": 0,
-          "translated": 647
+          "translated": 727
         },
         "SK": {
           "skipped": 0,
@@ -174,7 +174,7 @@
         },
         "SV": {
           "skipped": 0,
-          "translated": 320
+          "translated": 400
         },
         "SW": {
           "skipped": 0,
@@ -190,15 +190,15 @@
         },
         "TH": {
           "skipped": 0,
-          "translated": 320
+          "translated": 400
         },
         "TL": {
           "skipped": 0,
-          "translated": 320
+          "translated": 400
         },
         "TR": {
           "skipped": 0,
-          "translated": 647
+          "translated": 806
         },
         "UK": {
           "skipped": 0,
@@ -206,7 +206,7 @@
         },
         "UZ": {
           "skipped": 0,
-          "translated": 320
+          "translated": 400
         },
         "VI": {
           "skipped": 0,
@@ -214,11 +214,11 @@
         },
         "ZH": {
           "skipped": 0,
-          "translated": 231
+          "translated": 282
         },
         "ZH_TW": {
           "skipped": 0,
-          "translated": 202
+          "translated": 229
         }
       }
     },

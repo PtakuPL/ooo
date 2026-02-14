@@ -12678,5 +12678,1229 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-14T06:09:16.325959Z"
+  },
+  "quests.actions_basin.msg_1": {
+    "src_hash": "140208bb60fc3f70eabd068701030425",
+    "text": "Üzgünüm",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:09.364724Z"
+  },
+  "quests.actions_cagekey.msg_1": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Boş.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:09.367057Z"
+  },
+  "quests.actions_chairteleport.msg_1": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Boş.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:09.367804Z"
+  },
+  "quests.actions_coral.msg_1": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Özür dilerim.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:09.368860Z"
+  },
+  "quests.actions_coruja.msg_1": {
+    "src_hash": "140208bb60fc3f70eabd068701030425",
+    "text": "Üzgünüm",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:09.369810Z"
+  },
+  "quests.actions_crystal.msg_1": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Özür dilerim.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:09.370186Z"
+  },
+  "quests.actions_doors.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Kapı istenmeyen davetsiz misafirlere karşı mühürlenmiş görünüyor.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:09.371244Z"
+  },
+  "quests.actions_doors.msg_3": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Kapı istenmeyen davetsiz misafirlere karşı mühürlenmiş görünüyor.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:09.372229Z"
+  },
+  "quests.actions_doors.msg_4": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Kapı istenmeyen davetsiz misafirlere karşı mühürlenmiş görünüyor.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:09.373190Z"
+  },
+  "quests.actions_doors.msg_5": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Kapı istenmeyen davetsiz misafirlere karşı mühürlenmiş görünüyor.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:09.374015Z"
+  },
+  "quests.actions_notescoordinates.msg_1": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Boş.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:09.377126Z"
+  },
+  "quests.actions_peeler.msg_1": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Boş.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:09.377648Z"
+  },
+  "quests.actions_portal_minis_feaster.msg_1": {
+    "src_hash": "d7675b7b6e4edadcaa460bfa24c70b35",
+    "text": "All the players need to be level",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:09.379055Z"
+  },
+  "quests.actions_portal_minis_feaster.msg_2": {
+    "src_hash": "b97f99b956df2fe9bb7b47e1908f0684",
+    "text": "You have to wait",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:09.380310Z"
+  },
+  "quests.actions_rewards.msg_1": {
+    "src_hash": "2dba8779b7220248332287566af0d980",
+    "text": "You found",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:09.380949Z"
+  },
+  "quests.actions_rewards.msg_2": {
+    "src_hash": "2dba8779b7220248332287566af0d980",
+    "text": "You found",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:09.381723Z"
+  },
+  "quests.actions_sangra.msg_1": {
+    "src_hash": "140208bb60fc3f70eabd068701030425",
+    "text": "Üzgünüm",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:09.382502Z"
+  },
+  "quests.actions_scissors.msg_1": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Boş.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:09.383502Z"
+  },
+  "quests.actions_tumulo.msg_1": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Boş.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:09.385991Z"
+  },
+  "quests.actions_tumuloerro.msg_1": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Boş.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:09.386715Z"
+  },
+  "quests.adventures_of_galthen.empty": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Boş.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:09.388472Z"
+  },
+  "quests.bigfoot_burden.chest_empty": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "You found.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:09.389720Z"
+  },
+  "quests.ferumbras_ascension.sorry_not_possible": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Üzgünüm, mümkün değil.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:09.421426Z"
+  },
+  "quests.movements_arena_enter.say_1": {
+    "src_hash": "3bb3470755c465f042163233b672a4fb",
+    "text": "Fight!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:09.442505Z"
+  },
+  "quests.movements_arena_pit.say_1": {
+    "src_hash": "477fb3950c49773dfcb06d6a48db93db",
+    "text": "Fight!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:09.443495Z"
+  },
+  "quests.movements_stepin.msg_1": {
+    "src_hash": "f5187cf0efffe78314c7a7093a4e53dc",
+    "text": "You must wait. Someone is challenging",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:09.451491Z"
+  },
+  "quests.2_ambassadors_treason.msg_1": {
+    "src_hash": "8464bf58b6d5fa7bbe7ed698b810582e",
+    "text": "Büyükelçinin evinde hiçbir şey bulamazsınız. Eğer gerçekten hain ise onu suçlayabilecek her türlü delilden kurtulmuştur.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:44.365325Z"
+  },
+  "quests.2_ambassadors_treason.msg_2": {
+    "src_hash": "dd483e9a16530ce89de99a1dc0f9f197",
+    "text": "Bunu zaten araştırmıştınız.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:44.365939Z"
+  },
+  "quests.2_ambassadors_treason.msg_3": {
+    "src_hash": "92080f0ef8fde073cd9d9b26347d601b",
+    "text": "Parşömenleri dikkatlice inceliyorsunuz. Bunlar Büyükelçi için Rathleton'dan gelen emirler. Burada ihanete dair bir işaret yok.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:44.366791Z"
+  },
+  "quests.2_ambassadors_treason.msg_4": {
+    "src_hash": "dd483e9a16530ce89de99a1dc0f9f197",
+    "text": "Bunu zaten araştırmıştınız.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:44.367323Z"
+  },
+  "quests.2_ambassadors_treason.msg_5": {
+    "src_hash": "f0502f434837f12f681eb194dd73e2d4",
+    "text": "Kağıt parçaları yere dağılmış durumda. Bunları tekrar bir araya getirmek biraz zaman alır. Ama bu sadece kötü yazılmış bir şiir.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:44.368305Z"
+  },
+  "quests.2_ambassadors_treason.msg_6": {
+    "src_hash": "dd483e9a16530ce89de99a1dc0f9f197",
+    "text": "Bunu zaten araştırmıştınız.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:44.368863Z"
+  },
+  "quests.2_ambassadors_treason.msg_7": {
+    "src_hash": "14dfffed3e8aaff6aa4f4509ee470001",
+    "text": "Geçtiğimiz günlerde burada belgeler yakıldı. Parşömenlerden birinin yalnızca bir kısmı hâlâ bacanın önünde duruyor ama okunamayacak kadar isli.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:44.369804Z"
+  },
+  "quests.6_mind_travel.msg_1": {
+    "src_hash": "98da952f701d6358d74f1d9a180990fa",
+    "text": "Beynin sol tarafına taşındınız",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:44.370422Z"
+  },
+  "quests.6_mind_travel.msg_2": {
+    "src_hash": "1e57dd425d49fa37eefdeb9faa01a4f2",
+    "text": "Beynin sağ tarafına taşındınız",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:44.370997Z"
+  },
+  "quests.6_mind_travel.msg_3": {
+    "src_hash": "39c4cd386bc515db3ca13ad71ea9a439",
+    "text": "Titrek ve başınız dönüyor gibi hissedersiniz, etrafınızdaki dünya kararır. Sonra görüşünüz yeniden netleşir ve başka bir yerde olursunuz.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:44.371948Z"
+  },
+  "quests.8_blessing_the_statues.msg_1": {
+    "src_hash": "4a64e6aeefc9b8c9f1fd15709a257e2d",
+    "text": "Bu heykeli zaten kutsadınız.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:44.372560Z"
+  },
+  "quests.8_blessing_the_statues.msg_2": {
+    "src_hash": "414cb5c464ec2b74b4431b6931757db9",
+    "text": "Heykeli kutsasın.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:44.373004Z"
+  },
+  "quests.action_drume.msg_1": {
+    "src_hash": "5a37b3d700f88246b6e36e3077df916b",
+    "text": "Zamanın bitti.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:44.373412Z"
+  },
+  "quests.actions.there_is_someone_in_the_room": {
+    "src_hash": "52dddc0701dbfce052c07b68d596db35",
+    "text": "Odada birisi var.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:44.373975Z"
+  },
+  "quests.actions.you_already_used_your_knife_on": {
+    "src_hash": "663cc82c187e025c63062760739dc4e5",
+    "text": "Bıçağını zaten cesede kullandın.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:44.374623Z"
+  },
+  "quests.actions_bait.say_1": {
+    "src_hash": "9cdc566e522df381db3d0dcad05af784",
+    "text": "Yem zaten hazır. Gözcüye gidin ve teleskopu kontrol edin!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:44.375387Z"
+  },
+  "quests.actions_bonefiddle.msg_1": {
+    "src_hash": "fa77689cf9736ba9d5773f0e3b7b2683",
+    "text": "Kemik kemanını çalıyorsun.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:44.376017Z"
+  },
+  "quests.actions_bonefiddle.msg_2": {
+    "src_hash": "5199ba776a4a3a24d69420d0eb2e685b",
+    "text": "Peacock Ballad'ı oynuyorsunuz ve portal açılıyor.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:44.376625Z"
+  },
+  "quests.actions_bonefiddle.msg_3": {
+    "src_hash": "60b384a0aa95079616923d65a09d92fc",
+    "text": "*Bir zamanlar kara gözlü, ipeksi saçlı bir kız panayırı varmış. Evinden uzakta öldü. Mezar yok, cenaze yok, yas yok.*",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:44.377550Z"
+  },
+  "quests.actions_bonefiddle.msg_4": {
+    "src_hash": "e8a3f87ef1f8ea48f276ed48a8524749",
+    "text": "Saçı abanoz klavyeye tutturuyorsunuz. Tellerin ip görevi görecek kadar yeterli olması gerekir.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:44.378440Z"
+  },
+  "quests.actions_bonefiddle.msg_5": {
+    "src_hash": "1d91d803c170748ff4f101712cf1c262",
+    "text": "Abanoz ağacını kafatasına yapıştırıyorsunuz. Bu bir klavyenin gereksinimlerini karşılamalıdır.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:44.379244Z"
+  },
+  "quests.actions_boss_timira_fight.say_1": {
+    "src_hash": "2d0952a71b064faaa2eb619011b63524",
+    "text": "Parçalar parlıyor!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:44.379748Z"
+  },
+  "quests.actions_boss_timira_fight.say_2": {
+    "src_hash": "c4a01b00c90bdabd21cc5e30c2bc1f3e",
+    "text": "Su bir şekle dönüştü!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:44.380258Z"
+  },
+  "quests.actions_boxramp.msg_1": {
+    "src_hash": "5bca0ac5063448c84fdbf68693d08cc8",
+    "text": "Clonk.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:44.380603Z"
+  },
+  "quests.actions_brain.msg_1": {
+    "src_hash": "76b9ee74c4dea36035865e57903f9629",
+    "text": "Beyin yok",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:44.380909Z"
+  },
+  "quests.actions_chairteleport.msg_2": {
+    "src_hash": "cdd043562d5e12afa9a015cd8797a89d",
+    "text": "Işınlan.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:44.381213Z"
+  },
+  "quests.actions_coral.msg_2": {
+    "src_hash": "3eea7b0deb17fa866731cca6043b23c8",
+    "text": "Evet.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:44.381489Z"
+  },
+  "quests.actions_coral.msg_3": {
+    "src_hash": "1aaa11069b945c47461c309c68d03c03",
+    "text": "Hata.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:44.381763Z"
+  },
+  "quests.actions_corpse.say_1": {
+    "src_hash": "5ea3fbe005f5aac860cc806b3226cbc4",
+    "text": "Sen satın aldın",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:44.382128Z"
+  },
+  "quests.actions_doors.msg_2": {
+    "src_hash": "62b19b138adec8ae1e6bba38c72981df",
+    "text": "Bu tekneyi henüz kullanamazsınız.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:44.382898Z"
+  },
+  "quests.actions_doors.msg_6": {
+    "src_hash": "97292b2d9c656199befd6d213f4e5194",
+    "text": "Yeterli seviyeniz yok.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:44.383500Z"
+  },
+  "quests.actions_dreamcatcher_curse.msg_1": {
+    "src_hash": "eb5a28c1cc7d964dd2cbb2fc6553795f",
+    "text": "Bir korku duygusu yaşıyorsunuz.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:44.384034Z"
+  },
+  "quests.actions_entrance.msg_1": {
+    "src_hash": "b33b6be9b885ba871d5ec857ce3fd539",
+    "text": "Bu girişi yalnızca geceleri kullanabilirsiniz.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:44.384635Z"
+  },
+  "quests.actions_entrance.msg_2": {
+    "src_hash": "3bf818c8ff9e1fb2d25ccd26775d7cd5",
+    "text": "Bir kez daha tebeşiri bir damla kan ve bir miktar suyla karıştırıp yerdeki sembolü yeniliyorsunuz...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:44.385577Z"
+  },
+  "quests.actions_fragrance.msg_1": {
+    "src_hash": "88589a6c42c6ad348e20ed9f1aaef6af",
+    "text": "Hmmmm, ne kadar büyüleyici bir koku!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:44.386164Z"
+  },
+  "quests.actions_last_fight.say_1": {
+    "src_hash": "d3f224c083f6f61bc1d5608b1d2738fb",
+    "text": "Bu kürenin şarj olması için biraz beklemeniz gerekiyor.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:44.387091Z"
+  },
+  "quests.actions_last_fight.say_2": {
+    "src_hash": "216c0b5cc7d485662716a63d434347b5",
+    "text": "HAYIR! Enerjimi kaybediyorum!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:44.387587Z"
+  },
+  "quests.actions_levers.say_1": {
+    "src_hash": "74d6f44cc339cc1af575eabf9d29f26d",
+    "text": "Sen çevirdin",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:44.387961Z"
+  },
+  "quests.actions_mono_detector_strange_probing_device.msg_1": {
+    "src_hash": "cbbd701a227c41b3a89cdf0f3dde1174",
+    "text": "Verileri başarıyla topladınız.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:44.388486Z"
+  },
+  "quests.actions_mono_detector_strange_probing_device.msg_2": {
+    "src_hash": "9d0ce14678d498a52e1d256ff430a7ca",
+    "text": "Hm... cihaz şunu okuyor: 0,0,zero,0,zero, bu da kabaca şu anlama gelebilir: BURADA İLGİLİ HİÇBİR ŞEY",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:44.389226Z"
+  },
+  "quests.actions_mono_detector_strange_probing_device.msg_3": {
+    "src_hash": "5ddadd6ad0c06716b93e59f10d11de37",
+    "text": "Cihaz şunu okuyor: 'abnormal glooth structure detected, possible probing location'",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:44.390251Z"
+  },
+  "quests.actions_mono_detector_strange_probing_device.msg_4": {
+    "src_hash": "7302b053c0f22e53182c9674c7530e39",
+    "text": "Prob ayarlandı.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:44.390781Z"
+  },
+  "quests.actions_scarlett.msg_1": {
+    "src_hash": "7c285fed0553b05349a0985cdd855e24",
+    "text": "Galthein'in eski göğüs zırhını önünüzde tutuyorsunuz. Uygun değil ve herhangi bir saldırıya dayanamayacak kadar eski.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:44.391653Z"
+  },
+  "quests.actions_scarlett.msg_2": {
+    "src_hash": "5316cfe06e390d51d9a5ed89b00755ca",
+    "text": "Henüz bunu kullanmanıza izin verilmiyor.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:44.392200Z"
+  },
+  "quests.actions_servants_mechanism.say_1": {
+    "src_hash": "f5cd2b34be49cf1b2c392d8c1715ee13",
+    "text": "*tıklamak*",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:44.392502Z"
+  },
+  "quests.actions_servants_mechanism.say_2": {
+    "src_hash": "715460f6fbd13bd6d1757d939fb9b258",
+    "text": "mekanizmanın hala aktif olduğu görülüyor.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:44.393023Z"
+  },
+  "quests.actions_telescope.msg_1": {
+    "src_hash": "cd38aa8899c916fb75dd44e9e5292eda",
+    "text": "Teleskop sonsuz okyanus üzerinde mükemmel bir görüş sağlar; görünürde kara yoktur",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:44.393708Z"
+  },
+  "quests.actions_to_take_roots.msg_1": {
+    "src_hash": "092cbfa5e145ba8cdcd95cb397121daf",
+    "text": "Bu kök zaten hasat edildi, burada kazanılacak bir şey yok.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:44.394347Z"
+  },
+  "quests.actions_to_take_roots.msg_2": {
+    "src_hash": "9155c1b0f463d08b46559717336b3f6b",
+    "text": "Hasat girişiminiz kurtarabileceğinizden daha fazla sulu kökü yok etti.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:44.395177Z"
+  },
+  "quests.actions_to_take_roots.msg_3": {
+    "src_hash": "0bbc4c04869af7016a8c329b16c09414",
+    "text": "Başarılı bir şekilde sulu kökleri hasat ediyorsunuz.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:47.228496Z"
+  },
+  "quests.actions_to_take_roots.msg_4": {
+    "src_hash": "9155c1b0f463d08b46559717336b3f6b",
+    "text": "Hasat girişiminiz kurtarabileceğinizden daha fazla sulu kökü yok etti.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:47.229205Z"
+  },
+  "quests.actions_to_take_roots.msg_5": {
+    "src_hash": "0bbc4c04869af7016a8c329b16c09414",
+    "text": "Başarılı bir şekilde sulu kökleri hasat ediyorsunuz.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:47.229787Z"
+  },
+  "quests.actions_tortoise.msg_1": {
+    "src_hash": "0c1801ce0701d967a387328550672b5e",
+    "text": "Kaplumbağa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:31:47.230512Z"
+  },
+  "gamestore.desc.outfit_2": {
+    "src_hash": "517a573bb2eebb6a9c51b2d586663a28",
+    "text": "Size uyacak şekilde yaratılmış bir kıyafet. Beğeneceğinize eminiz.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.720223Z"
+  },
+  "lib.hireling.as_you_wish": {
+    "src_hash": "dd4bc9876390c6c2e60f02e875dd2d33",
+    "text": "As you wish!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.735332Z"
+  },
+  "scripts.2_ambassadors_treason.msg_1": {
+    "src_hash": "14dfffed3e8aaff6aa4f4509ee470001",
+    "text": "Geçtiğimiz günlerde burada belgeler yakıldı. Parşömenlerden birinin yalnızca bir kısmı hâlâ bacanın önünde duruyor ama okunamayacak kadar isli.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.750794Z"
+  },
+  "scripts.2_ambassadors_treason.msg_2": {
+    "src_hash": "dd483e9a16530ce89de99a1dc0f9f197",
+    "text": "Bunu zaten araştırmıştınız.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.751638Z"
+  },
+  "scripts.2_ambassadors_treason.msg_3": {
+    "src_hash": "f0502f434837f12f681eb194dd73e2d4",
+    "text": "Kağıt parçaları yere dağılmış durumda. Bunları tekrar bir araya getirmek biraz zaman alır. Ama bu sadece kötü yazılmış bir şiir.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.752890Z"
+  },
+  "scripts.2_ambassadors_treason.msg_4": {
+    "src_hash": "dd483e9a16530ce89de99a1dc0f9f197",
+    "text": "Bunu zaten araştırmıştınız.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.753670Z"
+  },
+  "scripts.2_ambassadors_treason.msg_5": {
+    "src_hash": "92080f0ef8fde073cd9d9b26347d601b",
+    "text": "Parşömenleri dikkatlice inceliyorsunuz. Bunlar Büyükelçi için Rathleton'dan gelen emirler. Burada ihanete dair bir işaret yok.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.755059Z"
+  },
+  "scripts.2_ambassadors_treason.msg_6": {
+    "src_hash": "dd483e9a16530ce89de99a1dc0f9f197",
+    "text": "Bunu zaten araştırmıştınız.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.755902Z"
+  },
+  "scripts.2_ambassadors_treason.msg_7": {
+    "src_hash": "8464bf58b6d5fa7bbe7ed698b810582e",
+    "text": "Büyükelçinin evinde hiçbir şey bulamazsınız. Eğer gerçekten hain ise onu suçlayabilecek her türlü delilden kurtulmuştur.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.757145Z"
+  },
+  "scripts.6_mind_travel.msg_1": {
+    "src_hash": "39c4cd386bc515db3ca13ad71ea9a439",
+    "text": "Titrek ve başınız dönüyor gibi hissedersiniz, etrafınızdaki dünya kararır. Sonra görüşünüz yeniden netleşir ve başka bir yerde olursunuz.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.758542Z"
+  },
+  "scripts.6_mind_travel.msg_2": {
+    "src_hash": "1e57dd425d49fa37eefdeb9faa01a4f2",
+    "text": "Beynin sağ tarafına taşındınız",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.759384Z"
+  },
+  "scripts.6_mind_travel.msg_3": {
+    "src_hash": "98da952f701d6358d74f1d9a180990fa",
+    "text": "Beynin sol tarafına taşındınız",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.760210Z"
+  },
+  "scripts.8_blessing_the_statues.msg_1": {
+    "src_hash": "414cb5c464ec2b74b4431b6931757db9",
+    "text": "Heykeli kutsasın.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.760920Z"
+  },
+  "scripts.8_blessing_the_statues.msg_2": {
+    "src_hash": "4a64e6aeefc9b8c9f1fd15709a257e2d",
+    "text": "Bu heykeli zaten kutsadınız.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.761706Z"
+  },
+  "scripts.action_cat_basket.say_1": {
+    "src_hash": "2640241ef563e67c405bc0dbe5b18ed4",
+    "text": "FCHHHHH",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.765144Z"
+  },
+  "scripts.action_drume.msg_1": {
+    "src_hash": "5a37b3d700f88246b6e36e3077df916b",
+    "text": "Zamanın bitti.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.766781Z"
+  },
+  "scripts.action_tortoise_egg_nargor.msg_1": {
+    "src_hash": "2dba8779b7220248332287566af0d980",
+    "text": "You found",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.770887Z"
+  },
+  "scripts.actions_bonefiddle.msg_1": {
+    "src_hash": "1d91d803c170748ff4f101712cf1c262",
+    "text": "Abanoz ağacını kafatasına yapıştırıyorsunuz. Bu bir klavyenin gereksinimlerini karşılamalıdır.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.780912Z"
+  },
+  "scripts.actions_bonefiddle.msg_2": {
+    "src_hash": "e8a3f87ef1f8ea48f276ed48a8524749",
+    "text": "Saçı abanoz klavyeye tutturuyorsunuz. Tellerin ip görevi görecek kadar yeterli olması gerekir.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.782045Z"
+  },
+  "scripts.actions_bonefiddle.msg_3": {
+    "src_hash": "60b384a0aa95079616923d65a09d92fc",
+    "text": "*Bir zamanlar kara gözlü, ipeksi saçlı bir kız panayırı varmış. Evinden uzakta öldü. Mezar yok, cenaze yok, yas yok.*",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.783342Z"
+  },
+  "scripts.actions_bonefiddle.msg_4": {
+    "src_hash": "5199ba776a4a3a24d69420d0eb2e685b",
+    "text": "Peacock Ballad'ı oynuyorsunuz ve portal açılıyor.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.784351Z"
+  },
+  "scripts.actions_bonefiddle.msg_5": {
+    "src_hash": "fa77689cf9736ba9d5773f0e3b7b2683",
+    "text": "Kemik kemanını çalıyorsun.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.785114Z"
+  },
+  "scripts.actions_chests.msg_1": {
+    "src_hash": "bed7df9c948642d0d52b4756ddf83ded",
+    "text": "You have found a",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.792381Z"
+  },
+  "scripts.actions_doors.msg_1": {
+    "src_hash": "97292b2d9c656199befd6d213f4e5194",
+    "text": "Yeterli seviyeniz yok.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.803842Z"
+  },
+  "scripts.actions_dreamcatcher_curse.msg_1": {
+    "src_hash": "eb5a28c1cc7d964dd2cbb2fc6553795f",
+    "text": "Bir korku duygusu yaşıyorsunuz.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.804877Z"
+  },
+  "scripts.actions_entrance.msg_1": {
+    "src_hash": "3bf818c8ff9e1fb2d25ccd26775d7cd5",
+    "text": "Bir kez daha tebeşiri bir damla kan ve bir miktar suyla karıştırıp yerdeki sembolü yeniliyorsunuz...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.806394Z"
+  },
+  "scripts.actions_entrance.msg_2": {
+    "src_hash": "b33b6be9b885ba871d5ec857ce3fd539",
+    "text": "Bu girişi yalnızca geceleri kullanabilirsiniz.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.807329Z"
+  },
+  "scripts.actions_fragrance.msg_1": {
+    "src_hash": "88589a6c42c6ad348e20ed9f1aaef6af",
+    "text": "Hmmmm, ne kadar büyüleyici bir koku!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.812036Z"
+  },
+  "scripts.actions_mono_detector_strange_probing_device.msg_1": {
+    "src_hash": "7302b053c0f22e53182c9674c7530e39",
+    "text": "Prob ayarlandı.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.838832Z"
+  },
+  "scripts.actions_mono_detector_strange_probing_device.msg_3": {
+    "src_hash": "9d0ce14678d498a52e1d256ff430a7ca",
+    "text": "Hm... cihaz şunu okuyor: 0,0,zero,0,zero, bu da kabaca şu anlama gelebilir: BURADA İLGİLİ HİÇBİR ŞEY",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.839923Z"
+  },
+  "scripts.actions_mono_detector_strange_probing_device.msg_4": {
+    "src_hash": "cbbd701a227c41b3a89cdf0f3dde1174",
+    "text": "Verileri başarıyla topladınız.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.840721Z"
+  },
+  "scripts.actions_portal_minis_ancient_feud.msg_1": {
+    "src_hash": "d7675b7b6e4edadcaa460bfa24c70b35",
+    "text": "All the players need to be level",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.851193Z"
+  },
+  "scripts.actions_portal_minis_ancient_feud.msg_2": {
+    "src_hash": "b97f99b956df2fe9bb7b47e1908f0684",
+    "text": "You have to wait",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.852841Z"
+  },
+  "scripts.actions_portal_minis_feaster.msg_1": {
+    "src_hash": "d7675b7b6e4edadcaa460bfa24c70b35",
+    "text": "All the players need to be level",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.854414Z"
+  },
+  "scripts.actions_portal_minis_feaster.msg_2": {
+    "src_hash": "b97f99b956df2fe9bb7b47e1908f0684",
+    "text": "You have to wait",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.855403Z"
+  },
+  "scripts.actions_portal_minis_grimvale.msg_1": {
+    "src_hash": "b97f99b956df2fe9bb7b47e1908f0684",
+    "text": "You have to wait",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.856318Z"
+  },
+  "scripts.actions_portal_minis_kilmaresh.msg_1": {
+    "src_hash": "d7675b7b6e4edadcaa460bfa24c70b35",
+    "text": "All the players need to be level",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.857324Z"
+  },
+  "scripts.actions_portal_minis_kilmaresh.msg_2": {
+    "src_hash": "b97f99b956df2fe9bb7b47e1908f0684",
+    "text": "You have to wait",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.858216Z"
+  },
+  "scripts.actions_resonance_chamber.say_1": {
+    "src_hash": "adc5fb51a0700429d5586beda62c4f6e",
+    "text": "PRRRROOOOOAAAAAHHHH!!!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.860893Z"
+  },
+  "scripts.actions_scarlett.msg_1": {
+    "src_hash": "5316cfe06e390d51d9a5ed89b00755ca",
+    "text": "Henüz bunu kullanmanıza izin verilmiyor.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.868518Z"
+  },
+  "scripts.actions_scarlett.msg_2": {
+    "src_hash": "7c285fed0553b05349a0985cdd855e24",
+    "text": "Galthein'in eski göğüs zırhını önünüzde tutuyorsunuz. Uygun değil ve herhangi bir saldırıya dayanamayacak kadar eski.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.869776Z"
+  },
+  "scripts.actions_telescope.msg_1": {
+    "src_hash": "cd38aa8899c916fb75dd44e9e5292eda",
+    "text": "Teleskop sonsuz okyanus üzerinde mükemmel bir görüş sağlar; görünürde kara yoktur",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.875303Z"
+  },
+  "scripts.actions_to_take_roots.msg_1": {
+    "src_hash": "0bbc4c04869af7016a8c329b16c09414",
+    "text": "Başarılı bir şekilde sulu kökleri hasat ediyorsunuz.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.878027Z"
+  },
+  "scripts.actions_to_take_roots.msg_2": {
+    "src_hash": "9155c1b0f463d08b46559717336b3f6b",
+    "text": "Hasat girişiminiz kurtarabileceğinizden daha fazla sulu kökü yok etti.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.879187Z"
+  },
+  "scripts.actions_to_take_roots.msg_3": {
+    "src_hash": "0bbc4c04869af7016a8c329b16c09414",
+    "text": "Başarılı bir şekilde sulu kökleri hasat ediyorsunuz.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.880131Z"
+  },
+  "scripts.actions_to_take_roots.msg_4": {
+    "src_hash": "9155c1b0f463d08b46559717336b3f6b",
+    "text": "Hasat girişiminiz kurtarabileceğinizden daha fazla sulu kökü yok etti.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.881176Z"
+  },
+  "scripts.actions_to_take_roots.msg_5": {
+    "src_hash": "092cbfa5e145ba8cdcd95cb397121daf",
+    "text": "Bu kök zaten hasat edildi, burada kazanılacak bir şey yok.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.882144Z"
+  },
+  "scripts.actions_treasure_chest.msg_1": {
+    "src_hash": "2dba8779b7220248332287566af0d980",
+    "text": "You found",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.884310Z"
+  },
+  "scripts.actions_treasure_chest.msg_2": {
+    "src_hash": "2dba8779b7220248332287566af0d980",
+    "text": "You found",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.884937Z"
+  },
+  "scripts.actions_yalahar_machine_war_golems.say_1": {
+    "src_hash": "98112328c358c3f5235e66814405aade",
+    "text": "*tıklamak*",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.890612Z"
+  },
+  "scripts.dolls.12904_4": {
+    "src_hash": "136833af11abf3e1e761704915043ea3",
+    "text": "Have fun!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.930656Z"
+  },
+  "scripts.find_person.dir_southwest": {
+    "src_hash": "1fcea8ec9cf46675ca64801b06c160ef",
+    "text": "güney-batı",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.948839Z"
+  },
+  "scripts.find_person.dir_west": {
+    "src_hash": "da4f0053a5c13882268852ae2da2e466",
+    "text": "batı",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.949474Z"
+  },
+  "scripts.furyosa_deathball.say_1": {
+    "src_hash": "f38030a6453c6462e147c7da5c9995d8",
+    "text": "Back in black!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.955439Z"
+  },
+  "scripts.gaz'haragoth_iceball.say_1": {
+    "src_hash": "d431ea8d68d1e7772b998f5f1cd084aa",
+    "text": "Chill out!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.956542Z"
+  },
+  "scripts.hydra_tongue_salad.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "Tekrar kullanmadan önce beklemelisin.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.970836Z"
+  },
+  "scripts.info.name": {
+    "src_hash": "ade219425cdcce278c9c6f52dcb942d6",
+    "text": "Isim: ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.973799Z"
+  },
+  "scripts.info.position": {
+    "src_hash": "8670a5e2c6b581ae3b59d95702d494dc",
+    "text": "Konum: ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.974421Z"
+  },
+  "scripts.key_door.msg_1": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Kilitli.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.976992Z"
+  },
+  "scripts.lemon_cupcake.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "Tekrar kullanmadan önce beklemelisin.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.979201Z"
+  },
+  "scripts.malofur_explosion.say_4": {
+    "src_hash": "f8f4cf4ccd62891b2cf6fd00d84689ee",
+    "text": "BOOOM!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.984592Z"
+  },
+  "scripts.mawhawk_summon.say_1": {
+    "src_hash": "01c1dce1ac2a8ef267b612b2442c3c77",
+    "text": "Watch my maws!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:29.988885Z"
+  },
+  "scripts.movements_exit.say_1": {
+    "src_hash": "e3cad585110341bb3b2380313a9f3874",
+    "text": "Slurp!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:30.032479Z"
+  },
+  "scripts.movements_stepin.msg_1": {
+    "src_hash": "f5187cf0efffe78314c7a7093a4e53dc",
+    "text": "You must wait. Someone is challenging",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:30.048407Z"
+  },
+  "scripts.music_box.sound_midnight_panther": {
+    "src_hash": "0b813abc491f06e00ac5006b13eba71e",
+    "text": "Purrrrrrr",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:30.059128Z"
+  },
+  "scripts.northern_fishburger.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "Tekrar kullanmadan önce beklemelisin.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:30.062204Z"
+  },
+  "scripts.omrafir_beam.say_2": {
+    "src_hash": "35fbee7bd7790d362d667f90a8d536f1",
+    "text": "OMRAFIR INHALES DEEPLY!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:30.065078Z"
+  },
+  "scripts.pot_of_blackjack.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "Tekrar kullanmadan önce beklemelisin.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:30.075514Z"
+  },
+  "scripts.prince_drazzak_druid.say_2": {
+    "src_hash": "b5177f2c9bd0b08b4c849b94cff7264b",
+    "text": "DIE!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:30.080119Z"
+  },
+  "scripts.prince_drazzak_knight.say_2": {
+    "src_hash": "b5177f2c9bd0b08b4c849b94cff7264b",
+    "text": "DIE!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:30.080866Z"
+  },
+  "scripts.prince_drazzak_paladin.say_2": {
+    "src_hash": "b5177f2c9bd0b08b4c849b94cff7264b",
+    "text": "DIE!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:30.081553Z"
+  },
+  "scripts.prince_drazzak_sorcerer.say_2": {
+    "src_hash": "b5177f2c9bd0b08b4c849b94cff7264b",
+    "text": "DIE!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:30.082253Z"
+  },
+  "scripts.prince_drazzak_summon.say_1": {
+    "src_hash": "dfaa579f53bc94c724932f2a88f3dc3d",
+    "text": "CRUSH THEM ALL!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:30.083179Z"
+  },
+  "scripts.prince_drazzak_tp.say_1": {
+    "src_hash": "23f59b92cf05664159a37caf710cb192",
+    "text": "GET OVER HERE!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:45:30.083837Z"
   }
 }

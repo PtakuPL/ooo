@@ -1,0 +1,28 @@
+{
+  "lang": "logs",
+  "script_group": "latin",
+  "total_keys": 0,
+  "translated": 0,
+  "identical_to_en": 0,
+  "placeholder_keys": 0,
+  "coverage_pct": 0.0,
+  "issues_total": 0,
+  "issues_by_type": {},
+  "issues_by_severity": {
+    "CRITICAL": 0,
+    "HIGH": 0,
+    "MEDIUM": 0,
+    "LOW": 0
+  },
+  "score": 100,
+  "worst_keys": [],
+  "crossref": {
+    "enabled": false,
+    "issues_total": 0,
+    "consistency": 0,
+    "pl_reference": 0,
+    "length_ratio": 0,
+    "auto_fix_applied": 0
+  },
+  "validated_at": "2026-02-14T07:48:47.052402Z"
+}

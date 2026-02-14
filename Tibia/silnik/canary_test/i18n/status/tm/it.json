@@ -8350,5 +8350,1213 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-14T06:06:19.424036Z"
+  },
+  "quests.actions_tumuloerro.msg_1": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Vuoto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:27:56.387672Z"
+  },
+  "quests.adventures_of_galthen.empty": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Vuoto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:27:56.388446Z"
+  },
+  "quests.the_secret_library_quest.you_do_not_have_enough_level": {
+    "src_hash": "97292b2d9c656199befd6d213f4e5194",
+    "text": "Non hai abbastanza livello.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:27:56.422586Z"
+  },
+  "quests.actions_using_crystals.msg_1": {
+    "src_hash": "4ece41ce875a4c261bd613cdc1472980",
+    "text": "Questo geode di cristallo sta tremando a causa di una battaglia nelle vicinanze.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:28:48.846826Z"
+  },
+  "quests.actions_using_crystals.msg_2": {
+    "src_hash": "4ece41ce875a4c261bd613cdc1472980",
+    "text": "Questo geode di cristallo sta tremando a causa di una battaglia nelle vicinanze.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:28:48.847518Z"
+  },
+  "quests.actions_using_crystals.msg_3": {
+    "src_hash": "4ece41ce875a4c261bd613cdc1472980",
+    "text": "Questo geode di cristallo sta tremando a causa di una battaglia nelle vicinanze.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:28:48.848124Z"
+  },
+  "quests.actions_using_crystals.say_1": {
+    "src_hash": "f508d9962727da8d65a970bd812689e3",
+    "text": "Il conte assorbe il potere della bestia e diventa più forte.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:28:48.848808Z"
+  },
+  "quests.actions_using_crystals.say_2": {
+    "src_hash": "1ee05904751682de1be927c32b1849ac",
+    "text": "BOOOOM!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:28:48.849164Z"
+  },
+  "quests.actions_wooden_trash.msg_1": {
+    "src_hash": "464917965b3891096e423e2362e7f69c",
+    "text": "Non trovi nulla di interessante sotto le macerie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:28:48.849792Z"
+  },
+  "quests.actions_wooden_trash.msg_2": {
+    "src_hash": "ff4835c520d079c29c29fafb7687a7d2",
+    "text": "Hai avviato una scorta, porta il tuo prigioniero all'avamposto dei nani!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:28:48.850483Z"
+  },
+  "quests.adventures_of_galthen.found_satchel": {
+    "src_hash": "056ad4a699bbd35e150c2bfdb74c0716",
+    "text": "Hai trovato una borsa di Galthens.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:28:48.850995Z"
+  },
+  "quests.adventures_of_galthen.you_have_already_obtained_this_outfit": {
+    "src_hash": "2a375adc8dad69731ea3478119cb6da5",
+    "text": "Hai già ottenuto questo vestito!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:28:48.851555Z"
+  },
+  "quests.bigfoot_burden.body_not_ready": {
+    "src_hash": "650762968728d439e3ac2a042c3eabea",
+    "text": "Questo corpo non è ancora pronto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:28:48.852051Z"
+  },
+  "quests.bigfoot_burden.boss_challenge": {
+    "src_hash": "7e6ede303d5139cd8026a3b23a8469a1",
+    "text": "Hai mezz'ora per sconfiggere eroicamente il {0}. Altrimenti verrai teletrasportato e dovrai ricominciare tutto da capo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:28:48.853164Z"
+  },
+  "quests.bigfoot_burden.chest_guarded": {
+    "src_hash": "660c525e8617590d046aaef15a99886a",
+    "text": "{0} difende i suoi averi e non ti permetterà di aprire questo baule.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:28:48.854242Z"
+  },
+  "quests.bigfoot_burden.chest_requirements": {
+    "src_hash": "072bb87e3c4717189d1d3a4f4fe1d283",
+    "text": "Assicurati di avere almeno 5 slot di inventario liberi e di poter trasportare altre 100 once.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:28:48.855410Z"
+  },
+  "quests.bigfoot_burden.crystal_not_damaged": {
+    "src_hash": "fe3ff614cedaa49219f13e67f00cab9d",
+    "text": "Questo non è un cristallo danneggiato!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:28:48.856015Z"
+  },
+  "quests.bigfoot_burden.crystal_repaired": {
+    "src_hash": "60d5612333b384516cb59343aa68a514",
+    "text": "Hai riparato un cristallo danneggiato!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:28:48.856604Z"
+  },
+  "quests.bigfoot_burden.crystals_charging": {
+    "src_hash": "e8e09ff0c5db42c8b3a95b1100d0c2b4",
+    "text": "I cristalli si stanno caricando!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:28:48.857330Z"
+  },
+  "quests.bigfoot_burden.device_unknown": {
+    "src_hash": "4e98f8923a32f5e88ac8299aa52fe8af",
+    "text": "Non hai idea di come utilizzare questo dispositivo. Xelvar in Kazordoon potrebbe dirti di più a riguardo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:28:48.859523Z"
+  },
+  "quests.bigfoot_burden.enough_renown": {
+    "src_hash": "8e829f523946407b7b24b62b49bbd917",
+    "text": "Finalmente hai abbastanza fama tra gli gnomi, chiedi a Gnomission una missione per ricevere il tuo cristallo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:28:48.860641Z"
+  },
+  "quests.bigfoot_burden.gasp": {
+    "src_hash": "4758f628434ece29bf84223f42a476a1",
+    "text": "<gasp>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:28:48.860995Z"
+  },
+  "quests.bigfoot_burden.gnomedix_msg1": {
+    "src_hash": "480e35ad14db7f1efdf3f9e00ed78a58",
+    "text": "Gnomedix: Allora che l'esame abbia inizio! Adesso non muoverti. Non aver paura. Il buon gnomo dottore non ti farà del male, si spera!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:28:48.861844Z"
+  },
+  "quests.bigfoot_burden.gnomedix_msg2": {
+    "src_hash": "e2ab9a67cf5112ed29716b20320600c2",
+    "text": "Gnomedix: Adesso! Ora! Niente panico! Tutto finirà presto!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:28:48.862547Z"
+  },
+  "quests.bigfoot_burden.gnomedix_msg3": {
+    "src_hash": "503b77337aa47368fbf6324836cb7837",
+    "text": "Gnomedix: Fammi provare uno scalpello più grande!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:28:48.863177Z"
+  },
+  "quests.bigfoot_burden.gnomedix_msg4": {
+    "src_hash": "d6a9f750fe55398ca30eefbf148c3c9f",
+    "text": "Gnomedix: Abbiamo quasi finito... santo gnomo! Che cos'è questo???",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:28:48.864854Z"
+  },
+  "quests.bigfoot_burden.gnomedix_msg5": {
+    "src_hash": "f0beac42b125618212c32af54f84907e",
+    "text": "Gnomedix: Mi serve un trapano! Gnomenursey, presto!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:28:48.865663Z"
+  },
+  "quests.bigfoot_burden.gnomedix_msg6": {
+    "src_hash": "abfd48c5fc8121209d0666adcf6c99fa",
+    "text": "Gnomedix: Stai fermo adesso! Questo potrebbe solleticare un po'..",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:28:48.866489Z"
+  },
+  "quests.bigfoot_burden.gnomedix_msg7": {
+    "src_hash": "2fccc4bbff73ea03fdd55ecf188ceb8c",
+    "text": "Gnomedix: Prendi questo, malvagio... qualunque cosa tu sia!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:28:48.867116Z"
+  },
+  "quests.bigfoot_burden.gnomedix_msg8": {
+    "src_hash": "cd6d2693244661936990d9aa89bd4492",
+    "text": "Gnomedix: Ho capito! Cavolo! Che cos 'era questo? Uhm, beh... hai superato l'esame dell'orecchio. Parla con Gnomaticus per il tuo prossimo test.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:28:48.867952Z"
+  },
+  "quests.bigfoot_burden.golden_fruits_found": {
+    "src_hash": "d74cfab59a5109eb785c4a0529c86d06",
+    "text": "Hai trovato dei frutti d'oro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:28:48.868462Z"
+  },
+  "quests.bigfoot_burden.golem_returned": {
+    "src_hash": "9b62f0a69b86d144ca3e1576a14a58c0",
+    "text": "Il golem è stato restituito al laboratorio degli gnomi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:28:48.869135Z"
+  },
+  "quests.bigfoot_burden.golems_enough": {
+    "src_hash": "09f9e9d1e34832d2001a9dad6ec10799",
+    "text": "Hai restituito abbastanza golem per ora. Concedi agli gnomi un po' di tempo per le riparazioni. Riportalo adesso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:28:48.869861Z"
+  },
+  "quests.bigfoot_burden.grayed_success": {
+    "src_hash": "008ee9986ebce5c395cc4c1b16eb61ed",
+    "text": "Sei stato radiografato con successo. Ora lascia che il Dottor Gnomedix controlli le tue orecchie!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:28:48.870540Z"
+  },
+  "quests.bigfoot_burden.loot_warning": {
+    "src_hash": "0ae78e5ea93c887a30cc25c8b7f38626",
+    "text": "Hai un minuto per saccheggiare il boss e lasciare la stanza.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:28:48.871122Z"
+  },
+  "quests.bigfoot_burden.matchmaker_complete": {
+    "src_hash": "b984ec9660da868ecc69c9a2c01639ec",
+    "text": "Congratulazioni! I cristalli sembrano essersi innamorati e la tua missione è compiuta!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:28:48.871819Z"
+  },
+  "quests.bigfoot_burden.melody_complete": {
+    "src_hash": "2a218e761bb906e1d5e72c8e4ffaad90",
+    "text": "Quella era la nota giusta! Ora conosci la melodia della tua anima!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:28:48.872381Z"
+  },
+  "quests.bigfoot_burden.mind_refreshed": {
+    "src_hash": "d8af034712525ba4e9c7c6f91fc42164",
+    "text": "La tua mente si sente rinfrescata!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:28:48.872830Z"
+  },
+  "quests.bigfoot_burden.mushroom_wait": {
+    "src_hash": "bc4e0249920d6057542c82785457005a",
+    "text": "Devi aspettare per estrarre le spore da questo fungo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:28:48.873379Z"
+  },
+  "quests.bigfoot_burden.need_mission_crystal": {
+    "src_hash": "d2b109377df37ef2965d1bba9a69cfaf",
+    "text": "Per entrare hai bisogno di un cristallo di missione o di un lavoro svolto con Gnomission.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:28:48.873983Z"
+  },
+  "quests.bigfoot_burden.need_teleport_crystal": {
+    "src_hash": "26c4744888f98b7829aa86e24ea0aab3",
+    "text": "Hai bisogno di un cristallo di teletrasporto per utilizzare questo dispositivo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:28:48.874882Z"
+  },
+  "quests.bigfoot_burden.no_endurance_test": {
+    "src_hash": "d24aac0def4b8f7ae074a9da3619a273",
+    "text": "Fortunatamente non devi prendere la resistenza in questo momento.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:28:48.876470Z"
+  },
+  "quests.bigfoot_burden.not_permitted": {
+    "src_hash": "722a8c1a978dbdef3eee391d6d8304a9",
+    "text": "Non ti è consentito entrare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:28:48.878103Z"
+  },
+  "quests.bigfoot_burden.pig_eating": {
+    "src_hash": "82aeede3e6b7b325ed4ea821f13b0756",
+    "text": "Il maialino mangia felicemente i tartufi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:28:48.880114Z"
+  },
+  "quests.bigfoot_burden.pig_stuffed": {
+    "src_hash": "90b1df4f5cbf78315c5e1c7d65fdcd02",
+    "text": "Il maialino è ripieno ed è meglio che lo riporti a casa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:28:48.881982Z"
+  },
+  "quests.bigfoot_burden.rank_too_low": {
+    "src_hash": "582ca49ea8f77df099515acb0c43ff6b",
+    "text": "Il tuo grado tra gli Gnomi è troppo basso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:28:48.883117Z"
+  },
+  "quests.bigfoot_burden.room_wait": {
+    "src_hash": "1ccc70eac63b4b35bbbe04c64197ce03",
+    "text": "Per favore, aspetti finché la stanza non viene liberata. Ciò avviene 30 minuti dopo l'ingresso dell'ultima squadra.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:28:48.884812Z"
+  },
+  "quests.bigfoot_burden.shooting_complete": {
+    "src_hash": "199f93db257e69b9ac55cee85d09d2f4",
+    "text": "Hai colpito abbastanza bersagli. Riportalo!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:28:48.885940Z"
+  },
+  "quests.bigfoot_burden.shooting_hit": {
+    "src_hash": "1ec47fa3f005f5e253a4276eb0a85264",
+    "text": "Colpo!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:28:48.886843Z"
+  },
+  "quests.bigfoot_burden.shooting_wrong_target": {
+    "src_hash": "f1e02a4ba46f414753f21ad13d243d0c",
+    "text": "Hai centrato l'obiettivo sbagliato e devi ricominciare tutto da capo!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:28:48.888054Z"
+  },
+  "quests.bigfoot_burden.spark_gathered": {
+    "src_hash": "e2a9304e949d85c0ccd4fae3821c82fb",
+    "text": "Hai raccolto una scintilla.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:28:48.888909Z"
+  },
+  "quests.bigfoot_burden.spores_correct": {
+    "src_hash": "ba701d044d1c89b3a2220e990dfada15",
+    "text": "Hai raccolto le spore corrette.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:28:48.889884Z"
+  },
+  "quests.bigfoot_burden.spores_wrong": {
+    "src_hash": "3fe3a2d03e98d90dc8e4a0efacad3bb6",
+    "text": "Hai raccolto le spore sbagliate. Hai rovinato la tua collezione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:28:48.891017Z"
+  },
+  "quests.bigfoot_burden.stone_no_luck": {
+    "src_hash": "5755825d293ed93332adc4d7ffe268b4",
+    "text": "Non hai avuto fortuna questa volta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:29:04.943003Z"
+  },
+  "quests.bigfoot_burden.stone_success": {
+    "src_hash": "e21551f482607850807335b406abc608",
+    "text": "La tua abilità ti ha permesso di afferrare una pietra per affilare prima che sprofondasse nella lava.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:29:04.943846Z"
+  },
+  "quests.bigfoot_burden.teleported_out": {
+    "src_hash": "46c15d2ef0b6c08e61ff947b33b4fa6d",
+    "text": "Sei stato teletrasportato fuori.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:29:04.944396Z"
+  },
+  "quests.bigfoot_burden.wait_cooldown": {
+    "src_hash": "81cd907c01596f21e11a5fda9b70707f",
+    "text": "Attendi 30 minuti per ricominciare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:29:04.944905Z"
+  },
+  "quests.bigfoot_burden.warzone_cleared": {
+    "src_hash": "c7ad2edb9f91714ac566e858cc656831",
+    "text": "Hai già ripulito questa zona di guerra nelle ultime 20 ore. Devi attendere altre {0} ore.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:29:04.945720Z"
+  },
+  "quests.bigfoot_burden.warzone_crystal_required": {
+    "src_hash": "d2b109377df37ef2965d1bba9a69cfaf",
+    "text": "Per entrare hai bisogno di un cristallo di missione o di un lavoro svolto con Gnomission.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:29:04.946493Z"
+  },
+  "quests.bigfoot_burden.warzone_entry_denied": {
+    "src_hash": "722a8c1a978dbdef3eee391d6d8304a9",
+    "text": "Non ti è consentito entrare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:29:04.947023Z"
+  },
+  "quests.bigfoot_burden.warzone_mission_required": {
+    "src_hash": "8e829f523946407b7b24b62b49bbd917",
+    "text": "Finalmente hai abbastanza fama tra gli gnomi, chiedi a Gnomission una missione per ricevere il tuo cristallo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:29:04.947806Z"
+  },
+  "quests.bigfoot_burden.wrong_crystal": {
+    "src_hash": "d9d9c8a0a86d368cf9c2a03ddac0526a",
+    "text": "Questo non è il cristallo che stai cercando!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:29:04.948426Z"
+  },
+  "quests.children_revolution.spy_say_1": {
+    "src_hash": "80d42548a963923a14b1070fe6f4358b",
+    "text": "Qui viene conservata una quantità impressionante di pesce.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:29:04.949018Z"
+  },
+  "quests.children_revolution.spy_say_2": {
+    "src_hash": "9800f80914a0d764ef4c84491bd82ce6",
+    "text": "Una serie apparentemente infinita di armi si estende davanti a te nell'oscurità.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:29:04.949759Z"
+  },
+  "quests.children_revolution.spy_say_3": {
+    "src_hash": "9b282e921bff701f86b3dff1f078ab25",
+    "text": "Sembra che queste baracche siano la casa di molti soldati.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:29:04.950460Z"
+  },
+  "quests.common.all_players_level": {
+    "src_hash": "a77e38d9c627d9ef2ab6207042d02378",
+    "text": "Tutti i giocatori devono essere di livello {0} o superiore.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:29:04.951043Z"
+  },
+  "quests.common.arena_complete": {
+    "src_hash": "e98243884db06a20900513b9389da879",
+    "text": "Congratulazioni! Hai completato l'arena %s, dovresti ritirare la tua ricompensa adesso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:29:04.951744Z"
+  },
+  "quests.common.arena_wait": {
+    "src_hash": "0863986a4431a5f1f317cc9f85225b75",
+    "text": "%s è attualmente nella prossima arena. Attendi finché %s non ha finito di combattere.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:29:04.952526Z"
+  },
+  "quests.common.found_container": {
+    "src_hash": "1fca7612c0f0cdb0eb808ebe7083ea56",
+    "text": "Hai trovato {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:29:04.953053Z"
+  },
+  "quests.common.found_item": {
+    "src_hash": "1fca7612c0f0cdb0eb808ebe7083ea56",
+    "text": "Hai trovato {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:29:04.953532Z"
+  },
+  "quests.common.found_item_no_room": {
+    "src_hash": "c0841c81e48cef8d7ab3473164677ccc",
+    "text": "Hai trovato {0}, ma non hai spazio per prenderlo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:29:04.954131Z"
+  },
+  "lib.hireling.as_you_wish": {
+    "src_hash": "dd4bc9876390c6c2e60f02e875dd2d33",
+    "text": "As you wish!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.816032Z"
+  },
+  "scripts.2_ambassadors_treason.msg_1": {
+    "src_hash": "14dfffed3e8aaff6aa4f4509ee470001",
+    "text": "Di recente sono stati bruciati dei documenti qui. Solo la parte di una pergamena si trova ancora davanti al camino, ma è troppo fuligginosa per poterla leggere.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.822363Z"
+  },
+  "scripts.2_ambassadors_treason.msg_2": {
+    "src_hash": "dd483e9a16530ce89de99a1dc0f9f197",
+    "text": "Hai già indagato su questo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.822986Z"
+  },
+  "scripts.2_ambassadors_treason.msg_3": {
+    "src_hash": "f0502f434837f12f681eb194dd73e2d4",
+    "text": "Pezzi di carta sono sparsi sul pavimento. Ci vuole del tempo per rimetterli insieme. Ma è solo una poesia scritta male.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.823978Z"
+  },
+  "scripts.2_ambassadors_treason.msg_4": {
+    "src_hash": "dd483e9a16530ce89de99a1dc0f9f197",
+    "text": "Hai già indagato su questo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.824571Z"
+  },
+  "scripts.2_ambassadors_treason.msg_5": {
+    "src_hash": "92080f0ef8fde073cd9d9b26347d601b",
+    "text": "Esamini attentamente le pergamene. Questi sono ordini da Rathleton per l'Ambasciatore. Nessun segno di tradimento qui.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.825977Z"
+  },
+  "scripts.2_ambassadors_treason.msg_6": {
+    "src_hash": "dd483e9a16530ce89de99a1dc0f9f197",
+    "text": "Hai già indagato su questo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.826675Z"
+  },
+  "scripts.2_ambassadors_treason.msg_7": {
+    "src_hash": "8464bf58b6d5fa7bbe7ed698b810582e",
+    "text": "Non trovi niente nella casa dell'Ambasciatore. Se è effettivamente un traditore si è sbarazzato di ogni prova che potesse incriminarlo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.827675Z"
+  },
+  "scripts.6_mind_travel.msg_1": {
+    "src_hash": "39c4cd386bc515db3ca13ad71ea9a439",
+    "text": "Ti senti tremante e stordito, il mondo diventa buio intorno a te. Poi la tua vista si schiarisce di nuovo e sei da qualche altra parte.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.828567Z"
+  },
+  "scripts.6_mind_travel.msg_2": {
+    "src_hash": "1e57dd425d49fa37eefdeb9faa01a4f2",
+    "text": "Sei stato spostato nella parte destra del cervello",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.829223Z"
+  },
+  "scripts.6_mind_travel.msg_3": {
+    "src_hash": "98da952f701d6358d74f1d9a180990fa",
+    "text": "Sei stato spostato nella parte sinistra del cervello",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.829816Z"
+  },
+  "scripts.8_blessing_the_statues.msg_1": {
+    "src_hash": "414cb5c464ec2b74b4431b6931757db9",
+    "text": "Benedici la statua.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.830331Z"
+  },
+  "scripts.8_blessing_the_statues.msg_2": {
+    "src_hash": "4a64e6aeefc9b8c9f1fd15709a257e2d",
+    "text": "Hai già benedetto questa statua.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.830938Z"
+  },
+  "scripts.action_cat_basket.say_1": {
+    "src_hash": "2640241ef563e67c405bc0dbe5b18ed4",
+    "text": "FCHHHHH",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.832302Z"
+  },
+  "scripts.action_drume.msg_1": {
+    "src_hash": "5a37b3d700f88246b6e36e3077df916b",
+    "text": "Il tuo tempo è finito.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.833073Z"
+  },
+  "scripts.action_tortoise_egg_nargor.msg_1": {
+    "src_hash": "2dba8779b7220248332287566af0d980",
+    "text": "You found",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.834507Z"
+  },
+  "scripts.actions_bonefiddle.msg_1": {
+    "src_hash": "1d91d803c170748ff4f101712cf1c262",
+    "text": "Attacchi il legno di ebano al teschio. Questo dovrebbe soddisfare i requisiti di una tastiera.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.837989Z"
+  },
+  "scripts.actions_bonefiddle.msg_2": {
+    "src_hash": "e8a3f87ef1f8ea48f276ed48a8524749",
+    "text": "Attacchi i capelli alla tastiera in ebano. I fili dovrebbero essere adeguati per fungere da corde.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.839352Z"
+  },
+  "scripts.actions_bonefiddle.msg_3": {
+    "src_hash": "60b384a0aa95079616923d65a09d92fc",
+    "text": "*C'era una volta una fanciulla bella, con gli occhi scuri e i capelli di seta. Lontano da casa morì. Nessuna tomba, nessuna veglia funebre, nessun lutto.*",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.841667Z"
+  },
+  "scripts.actions_bonefiddle.msg_4": {
+    "src_hash": "5199ba776a4a3a24d69420d0eb2e685b",
+    "text": "Stai suonando la Ballata del Pavone e il portale si apre.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.842449Z"
+  },
+  "scripts.actions_bonefiddle.msg_5": {
+    "src_hash": "fa77689cf9736ba9d5773f0e3b7b2683",
+    "text": "Stai suonando il violino d'osso.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.843017Z"
+  },
+  "scripts.actions_boss_timira_fight.msg_3": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "You found.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.844343Z"
+  },
+  "scripts.actions_calassa_comb_door.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "The door seems to be sealed against unwanted intruders.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.845790Z"
+  },
+  "scripts.actions_chests.msg_1": {
+    "src_hash": "bed7df9c948642d0d52b4756ddf83ded",
+    "text": "You have found a",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.847297Z"
+  },
+  "scripts.actions_chests.msg_2": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "It is empty.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.847816Z"
+  },
+  "scripts.actions_containerRewards.msg_2": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "It is empty.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.848820Z"
+  },
+  "scripts.actions_doors.msg_1": {
+    "src_hash": "97292b2d9c656199befd6d213f4e5194",
+    "text": "Non hai abbastanza livello.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.851686Z"
+  },
+  "scripts.actions_doors.msg_2": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "The door seems to be sealed against unwanted intruders.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.852687Z"
+  },
+  "scripts.actions_dreamcatcher_curse.msg_1": {
+    "src_hash": "eb5a28c1cc7d964dd2cbb2fc6553795f",
+    "text": "Hai una sensazione di terrore.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.853284Z"
+  },
+  "scripts.actions_entrance.msg_1": {
+    "src_hash": "3bf818c8ff9e1fb2d25ccd26775d7cd5",
+    "text": "Mescola ancora una volta il gesso con una goccia del tuo sangue e un po' d'acqua e rinnova il simbolo sul pavimento...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.854194Z"
+  },
+  "scripts.actions_entrance.msg_2": {
+    "src_hash": "b33b6be9b885ba871d5ec857ce3fd539",
+    "text": "Puoi utilizzare questo ingresso solo durante la notte.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.855014Z"
+  },
+  "scripts.actions_fragrance.msg_1": {
+    "src_hash": "88589a6c42c6ad348e20ed9f1aaef6af",
+    "text": "Hmmmm, che profumo infatuante!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.856895Z"
+  },
+  "scripts.actions_gnome_items.msg_4": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "It is empty.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.858673Z"
+  },
+  "scripts.actions_gnomish_chest.msg_2": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "It is empty.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.859771Z"
+  },
+  "scripts.actions_mission3_chest.msg_2": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "You found.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.866814Z"
+  },
+  "scripts.actions_mono_detector_strange_probing_device.msg_1": {
+    "src_hash": "7302b053c0f22e53182c9674c7530e39",
+    "text": "La sonda è stata regolata.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.867955Z"
+  },
+  "scripts.actions_mono_detector_strange_probing_device.msg_3": {
+    "src_hash": "9d0ce14678d498a52e1d256ff430a7ca",
+    "text": "Hm... il dispositivo legge: 0,0,zero,0,zero che può tradursi approssimativamente in: NIENTE DI INTERESSE QUI",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.868851Z"
+  },
+  "scripts.actions_mono_detector_strange_probing_device.msg_4": {
+    "src_hash": "cbbd701a227c41b3a89cdf0f3dde1174",
+    "text": "Hai raccolto i dati con successo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.869448Z"
+  },
+  "scripts.actions_outlaw_camp_door.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "The door seems to be sealed against unwanted intruders.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.871858Z"
+  },
+  "scripts.actions_portal_minis_ancient_feud.msg_1": {
+    "src_hash": "d7675b7b6e4edadcaa460bfa24c70b35",
+    "text": "All the players need to be level",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.873796Z"
+  },
+  "scripts.actions_portal_minis_ancient_feud.msg_2": {
+    "src_hash": "b97f99b956df2fe9bb7b47e1908f0684",
+    "text": "You have to wait",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.874654Z"
+  },
+  "scripts.actions_portal_minis_feaster.msg_1": {
+    "src_hash": "d7675b7b6e4edadcaa460bfa24c70b35",
+    "text": "All the players need to be level",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.875517Z"
+  },
+  "scripts.actions_portal_minis_feaster.msg_2": {
+    "src_hash": "b97f99b956df2fe9bb7b47e1908f0684",
+    "text": "You have to wait",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.876220Z"
+  },
+  "scripts.actions_portal_minis_grimvale.msg_1": {
+    "src_hash": "b97f99b956df2fe9bb7b47e1908f0684",
+    "text": "You have to wait",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.877065Z"
+  },
+  "scripts.actions_portal_minis_kilmaresh.msg_1": {
+    "src_hash": "d7675b7b6e4edadcaa460bfa24c70b35",
+    "text": "All the players need to be level",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.877965Z"
+  },
+  "scripts.actions_portal_minis_kilmaresh.msg_2": {
+    "src_hash": "b97f99b956df2fe9bb7b47e1908f0684",
+    "text": "You have to wait",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.878783Z"
+  },
+  "scripts.actions_questDoors.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "The door seems to be sealed against unwanted intruders.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.880242Z"
+  },
+  "scripts.actions_questDoors.msg_4": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "The door seems to be sealed against unwanted intruders.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.881669Z"
+  },
+  "scripts.actions_resonance_chamber.say_1": {
+    "src_hash": "adc5fb51a0700429d5586beda62c4f6e",
+    "text": "PRRRROOOOOAAAAAHHHH!!!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.883423Z"
+  },
+  "scripts.actions_reward.msg_4": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "You found.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.885088Z"
+  },
+  "scripts.actions_reward.msg_6": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "You found.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.886492Z"
+  },
+  "scripts.actions_rewards.msg_3": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "You found.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.887221Z"
+  },
+  "scripts.actions_scarlett.msg_1": {
+    "src_hash": "5316cfe06e390d51d9a5ed89b00755ca",
+    "text": "Non ti è ancora consentito utilizzarlo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.889568Z"
+  },
+  "scripts.actions_scarlett.msg_2": {
+    "src_hash": "7c285fed0553b05349a0985cdd855e24",
+    "text": "Tieni di fronte a te la vecchia corazza di Galthein. Non si adatta ed è troppo vecchio per resistere a qualsiasi attacco.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.890818Z"
+  },
+  "scripts.actions_telescope.msg_1": {
+    "src_hash": "cd38aa8899c916fb75dd44e9e5292eda",
+    "text": "Il telescopio offre una vista perfetta sull'oceano infinito, senza terra in vista",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.894911Z"
+  },
+  "scripts.actions_to_take_roots.msg_1": {
+    "src_hash": "0bbc4c04869af7016a8c329b16c09414",
+    "text": "Hai raccolto con successo alcune radici succose.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.896334Z"
+  },
+  "scripts.actions_to_take_roots.msg_2": {
+    "src_hash": "9155c1b0f463d08b46559717336b3f6b",
+    "text": "Il tuo tentativo di raccolta ha distrutto più radici succose di quelle che potresti recuperare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.897126Z"
+  },
+  "scripts.actions_to_take_roots.msg_3": {
+    "src_hash": "0bbc4c04869af7016a8c329b16c09414",
+    "text": "Hai raccolto con successo alcune radici succose.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.897758Z"
+  },
+  "scripts.actions_to_take_roots.msg_4": {
+    "src_hash": "9155c1b0f463d08b46559717336b3f6b",
+    "text": "Il tuo tentativo di raccolta ha distrutto più radici succose di quelle che potresti recuperare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.898538Z"
+  },
+  "scripts.actions_to_take_roots.msg_5": {
+    "src_hash": "092cbfa5e145ba8cdcd95cb397121daf",
+    "text": "Questa radice è già stata raccolta, non c'è niente da guadagnare qui.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.899218Z"
+  },
+  "scripts.actions_treasure_chest.msg_1": {
+    "src_hash": "2dba8779b7220248332287566af0d980",
+    "text": "You found",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.900019Z"
+  },
+  "scripts.actions_treasure_chest.msg_2": {
+    "src_hash": "2dba8779b7220248332287566af0d980",
+    "text": "You found",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.900366Z"
+  },
+  "scripts.actions_ungreez_door.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "The door seems to be sealed against unwanted intruders.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.902191Z"
+  },
+  "scripts.actions_using_crystals.msg_1": {
+    "src_hash": "4ece41ce875a4c261bd613cdc1472980",
+    "text": "Questo geode di cristallo sta tremando a causa di una battaglia nelle vicinanze.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.904808Z"
+  },
+  "scripts.actions_using_crystals.msg_2": {
+    "src_hash": "4ece41ce875a4c261bd613cdc1472980",
+    "text": "Questo geode di cristallo sta tremando a causa di una battaglia nelle vicinanze.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.905543Z"
+  },
+  "scripts.actions_using_crystals.msg_3": {
+    "src_hash": "4ece41ce875a4c261bd613cdc1472980",
+    "text": "Questo geode di cristallo sta tremando a causa di una battaglia nelle vicinanze.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.906195Z"
+  },
+  "scripts.actions_wooden_trash.msg_1": {
+    "src_hash": "ff4835c520d079c29c29fafb7687a7d2",
+    "text": "Hai avviato una scorta, porta il tuo prigioniero all'avamposto dei nani!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.907622Z"
+  },
+  "scripts.actions_wooden_trash.msg_2": {
+    "src_hash": "464917965b3891096e423e2362e7f69c",
+    "text": "Non trovi nulla di interessante sotto le macerie.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.908311Z"
+  },
+  "scripts.actions_yalahar_machine_war_golems.say_1": {
+    "src_hash": "98112328c358c3f5235e66814405aade",
+    "text": "*clic*",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.909047Z"
+  },
+  "scripts.actions_zalamon_door.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "The door seems to be sealed against unwanted intruders.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.910421Z"
+  },
+  "scripts.chest.msg_1": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "You found.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.914569Z"
+  },
+  "scripts.closing_door.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "The door seems to be sealed against unwanted intruders.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.916572Z"
+  },
+  "scripts.dolls.12904_4": {
+    "src_hash": "136833af11abf3e1e761704915043ea3",
+    "text": "Have fun!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.930965Z"
+  },
+  "scripts.door.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "The door seems to be sealed against unwanted intruders.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.936415Z"
+  },
+  "scripts.fluids.msg_1": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "It is empty.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.940066Z"
+  },
+  "scripts.fluids.msg_2": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "It is empty.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.940530Z"
+  },
+  "scripts.furyosa_deathball.say_1": {
+    "src_hash": "f38030a6453c6462e147c7da5c9995d8",
+    "text": "Back in black!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.941735Z"
+  },
+  "scripts.gaz'haragoth_iceball.say_1": {
+    "src_hash": "d431ea8d68d1e7772b998f5f1cd084aa",
+    "text": "Chill out!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.942329Z"
+  },
+  "scripts.key_door.msg_1": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "It is locked.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.949275Z"
+  },
+  "scripts.malofur_explosion.say_4": {
+    "src_hash": "f8f4cf4ccd62891b2cf6fd00d84689ee",
+    "text": "BOOOM!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:40:04.951911Z"
   }
 }

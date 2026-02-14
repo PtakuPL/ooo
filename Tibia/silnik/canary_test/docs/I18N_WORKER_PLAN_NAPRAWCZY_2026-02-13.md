@@ -11,6 +11,40 @@
 
 ---
 
+## 🛠️ Aktualizacja wykonania (2026-02-14 07:52 UTC — kanoniczne progi statusd + hardening `i18n_start_all.sh`)
+
+Wybrane do realizacji pełne zadania:
+- **Domknięcie kanonicznego źródła progów statusd (`metrics_drift` + pozostałe)**
+- **Naprawa false-positive detekcji daemonów w `i18n_start_all.sh`**
+
+Wykonane:
+- ✅ `i18n-statusd.sh`:
+  - dodano kanoniczny plik progów: `canary_test/statusd_thresholds.json`,
+  - loader progów działa teraz w trybie: defaults -> config file -> (opcjonalnie) env override (`STATUSD_USE_ENV_OVERRIDES=1`),
+  - domyślnie env override wyłączone (`STATUSD_USE_ENV_OVERRIDES=0`), więc daemon/manual używają tych samych progów.
+- ✅ Snapshot progów został ujednolicony i rozszerzony:
+  - `statusd_report.json`, `statusd_doctor.json`, `statusd_daily_report.json` zawierają `thresholds_snapshot`,
+  - snapshot ma `source_of_truth`, `config_file`, `env_overrides_enabled`,
+  - artefakt audytowy `i18n/status/statusd_thresholds_snapshot.json` jest emitowany przy agregacji.
+- ✅ `i18n_start_all.sh`:
+  - `is_running()` waliduje proces po `/proc/<pid>/cmdline` i czyści stale PID file,
+  - fallback `pgrep` ma filtr self-match (`pgrep`, `i18n_start_all.sh`), więc nie zawyża statusu daemonów,
+  - naprawiono `--restart` (jawne `bash "$WORK_DIR/i18n_start_all.sh"`),
+  - naprawiono pętlę `stop_daemon()` pod `set -e` (`waited=$((waited + 1))`).
+- ✅ `i18n_start_all.sh --status`:
+  - worker raportowany jako `main pid` + `subprocessy`, zamiast surowego, mylącego licznika `pgrep`.
+
+Walidacja runtime (2026-02-14 07:52 UTC):
+- ✅ `bash i18n-statusd.sh --aggregate` -> `OK`.
+- ✅ `bash i18n-statusd.sh --doctor` -> działa (CRITICAL z powodu `SUSPICIOUS_HIGH_SPIKE`, bez regresji kontraktu).
+- ✅ `bash i18n-statusd.sh --daily-report` -> `OK`.
+- ✅ `bash i18n_start_all.sh --restart` -> poprawny stop/start wszystkich demonów.
+- ✅ `bash i18n_start_all.sh --status` -> poprawna detekcja `Guardian/Statusd/Worker` bez false-positive.
+
+Nowe rzeczy do zrobienia ujawnione podczas realizacji:
+- ✅ Poprawić detekcję procesu w `i18n_start_all.sh:is_running()` (fallback `pgrep`), bo w niektórych restartach zwraca false-positive dla `statusd`. → DONE 2026-02-14.
+- ⬜ Dodać osobny check runtime dla `worker subprocessy` (czy są krótkie i normalne, czy długie i oznaczają realne dublowanie instancji).
+
 ## 🛠️ Aktualizacja wykonania (2026-02-14 07:28 UTC — scanned_files_live + statusd drift + global_stats)
 
 Wybrane do realizacji pełne zadania:
@@ -53,7 +87,7 @@ Walidacja runtime (2026-02-14 07:28 UTC):
 Nowe rzeczy do zrobienia ujawnione podczas realizacji:
 - ✅ Ujednolicić **jedno kanoniczne źródło progów** `metrics_drift` dla daemon/manual (obecnie możliwe różnice środowiskowe; daily już dziedziczy progi z `statusd_report.json`). → DONE 2026-02-14: env z defaults + `statusd_thresholds_snapshot.json` artefakt.
 - ✅ Dodać jawny config progów driftu do stałego artefaktu (`statusd_thresholds.json` lub `worker_config.json`), żeby wyeliminować rozjazdy env. → DONE 2026-02-14: `statusd_thresholds_snapshot.json` + `thresholds_snapshot` w raporcie.
-- ⬜ Poprawić detekcję procesu w `i18n_start_all.sh:is_running()` (fallback `pgrep`), bo w niektórych restartach zwraca false-positive dla `statusd`.
+- ✅ Poprawić detekcję procesu w `i18n_start_all.sh:is_running()` (fallback `pgrep`), bo w niektórych restartach zwraca false-positive dla `statusd`. → DONE 2026-02-14: walidacja cmdline + filtr self-match + czyszczenie stale PID.
 
 ## 🛠️ Aktualizacja wykonania (2026-02-14 07:07 UTC — korekta metryk LIVE vs rejestr workera)
 

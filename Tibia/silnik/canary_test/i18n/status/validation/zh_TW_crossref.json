@@ -4,30 +4,14 @@
   "crossref_enabled": true,
   "auto_fix_enabled": false,
   "auto_fix_limit": 30,
-  "checked_at": "2026-02-14T06:50:46.328617Z",
-  "issues_total": 460,
+  "checked_at": "2026-02-14T07:48:57.385901Z",
+  "issues_total": 459,
   "issues_by_type": {
-    "consistency_in_language": 1,
+    "consistency_in_language": 0,
     "pl_reference_missing_translation": 400,
     "length_ratio_crosscheck": 59
   },
-  "consistency_issues": [
-    {
-      "type": "crossref_inconsistent_translation",
-      "severity": "MEDIUM",
-      "en": "Alright |PLAYERNAME|. Vocation?",
-      "variants": [
-        "",
-        "好的|PLAYERNAME|。職業？?"
-      ],
-      "variants_count": 2,
-      "examples": [
-        "npc:npc.a_dead_bureaucrat1.say_3",
-        "npc:npc.a_dead_bureaucrat3.say_2",
-        "npc:npc.a_dead_bureaucrat4.say_2"
-      ]
-    }
-  ],
+  "consistency_issues": [],
   "pl_reference_issues": [
     {
       "key": "achievement.1.description",

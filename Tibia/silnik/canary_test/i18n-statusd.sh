@@ -36,18 +36,35 @@ AUTO_ACTIONS_ENABLED_FILE="$WORK_DIR/.statusd_auto_actions"
 ALERT_WEBHOOK_URL_FILE="$WORK_DIR/.statusd_webhook_url"
 ALERT_COOLDOWN_SECONDS="${STATUSD_ALERT_COOLDOWN_SECONDS:-900}"
 DAILY_REPORT_MIN_INTERVAL_SECONDS="${STATUSD_DAILY_REPORT_MIN_INTERVAL_SECONDS:-3600}"
-REPAIR_QUEUE_STAGNATION_HOURS="${STATUSD_REPAIR_QUEUE_STAGNATION_HOURS:-6}"
-REPAIR_QUEUE_STAGNATION_MIN_SAMPLES="${STATUSD_REPAIR_QUEUE_STAGNATION_MIN_SAMPLES:-6}"
-REPAIR_QUEUE_STAGNATION_MIN_DROP="${STATUSD_REPAIR_QUEUE_STAGNATION_MIN_DROP:-1}"
-SUSPICIOUS_HIGH_WINDOW_HOURS="${STATUSD_SUSPICIOUS_HIGH_WINDOW_HOURS:-6}"
-SUSPICIOUS_HIGH_WARN_COUNT="${STATUSD_SUSPICIOUS_HIGH_WARN_COUNT:-120}"
-SUSPICIOUS_HIGH_CRIT_COUNT="${STATUSD_SUSPICIOUS_HIGH_CRIT_COUNT:-240}"
-SUSPICIOUS_HIGH_RATE_WARN_PCT="${STATUSD_SUSPICIOUS_HIGH_RATE_WARN_PCT:-8}"
-SUSPICIOUS_HIGH_RATE_CRIT_PCT="${STATUSD_SUSPICIOUS_HIGH_RATE_CRIT_PCT:-20}"
-METRICS_DRIFT_WARN_KEYS="${STATUSD_METRICS_DRIFT_WARN_KEYS:-50000}"
-METRICS_DRIFT_CRIT_KEYS="${STATUSD_METRICS_DRIFT_CRIT_KEYS:-100000}"
-METRICS_DRIFT_WARN_PCT="${STATUSD_METRICS_DRIFT_WARN_PCT:-95}"
-METRICS_DRIFT_CRIT_PCT="${STATUSD_METRICS_DRIFT_CRIT_PCT:-99}"
+STATUSD_THRESHOLDS_FILE="${STATUSD_THRESHOLDS_FILE:-$WORK_DIR/statusd_thresholds.json}"
+# Domyślnie ignorujemy env overrides, żeby daemon/manual czytały ten sam config file.
+STATUSD_USE_ENV_OVERRIDES="${STATUSD_USE_ENV_OVERRIDES:-0}"
+
+DEFAULT_REPAIR_QUEUE_STAGNATION_HOURS=6
+DEFAULT_REPAIR_QUEUE_STAGNATION_MIN_SAMPLES=6
+DEFAULT_REPAIR_QUEUE_STAGNATION_MIN_DROP=1
+DEFAULT_SUSPICIOUS_HIGH_WINDOW_HOURS=6
+DEFAULT_SUSPICIOUS_HIGH_WARN_COUNT=120
+DEFAULT_SUSPICIOUS_HIGH_CRIT_COUNT=240
+DEFAULT_SUSPICIOUS_HIGH_RATE_WARN_PCT=8
+DEFAULT_SUSPICIOUS_HIGH_RATE_CRIT_PCT=20
+DEFAULT_METRICS_DRIFT_WARN_KEYS=50000
+DEFAULT_METRICS_DRIFT_CRIT_KEYS=100000
+DEFAULT_METRICS_DRIFT_WARN_PCT=95
+DEFAULT_METRICS_DRIFT_CRIT_PCT=99
+
+REPAIR_QUEUE_STAGNATION_HOURS="$DEFAULT_REPAIR_QUEUE_STAGNATION_HOURS"
+REPAIR_QUEUE_STAGNATION_MIN_SAMPLES="$DEFAULT_REPAIR_QUEUE_STAGNATION_MIN_SAMPLES"
+REPAIR_QUEUE_STAGNATION_MIN_DROP="$DEFAULT_REPAIR_QUEUE_STAGNATION_MIN_DROP"
+SUSPICIOUS_HIGH_WINDOW_HOURS="$DEFAULT_SUSPICIOUS_HIGH_WINDOW_HOURS"
+SUSPICIOUS_HIGH_WARN_COUNT="$DEFAULT_SUSPICIOUS_HIGH_WARN_COUNT"
+SUSPICIOUS_HIGH_CRIT_COUNT="$DEFAULT_SUSPICIOUS_HIGH_CRIT_COUNT"
+SUSPICIOUS_HIGH_RATE_WARN_PCT="$DEFAULT_SUSPICIOUS_HIGH_RATE_WARN_PCT"
+SUSPICIOUS_HIGH_RATE_CRIT_PCT="$DEFAULT_SUSPICIOUS_HIGH_RATE_CRIT_PCT"
+METRICS_DRIFT_WARN_KEYS="$DEFAULT_METRICS_DRIFT_WARN_KEYS"
+METRICS_DRIFT_CRIT_KEYS="$DEFAULT_METRICS_DRIFT_CRIT_KEYS"
+METRICS_DRIFT_WARN_PCT="$DEFAULT_METRICS_DRIFT_WARN_PCT"
+METRICS_DRIFT_CRIT_PCT="$DEFAULT_METRICS_DRIFT_CRIT_PCT"
 DAEMON_INTERVAL_SECONDS=60
 
 export HOME="/home/ptaku"
@@ -59,12 +76,121 @@ log_statusd() {
     echo "[$(date '+%Y-%m-%d %H:%M:%S')] $1" >> "$STATUSD_LOG"
 }
 
+ensure_statusd_thresholds_file() {
+    if [ -f "$STATUSD_THRESHOLDS_FILE" ]; then
+        return 0
+    fi
+    cat > "$STATUSD_THRESHOLDS_FILE" <<EOF
+{
+  "schema_version": "1.0",
+  "source_of_truth": "statusd_thresholds",
+  "generated_by": "i18n-statusd.sh",
+  "updated_at_utc": "$(date -u '+%Y-%m-%dT%H:%M:%SZ')",
+  "repair_queue_stagnation": {
+    "window_hours": $DEFAULT_REPAIR_QUEUE_STAGNATION_HOURS,
+    "min_samples": $DEFAULT_REPAIR_QUEUE_STAGNATION_MIN_SAMPLES,
+    "min_drop": $DEFAULT_REPAIR_QUEUE_STAGNATION_MIN_DROP
+  },
+  "suspicious_high": {
+    "window_hours": $DEFAULT_SUSPICIOUS_HIGH_WINDOW_HOURS,
+    "warn_count": $DEFAULT_SUSPICIOUS_HIGH_WARN_COUNT,
+    "crit_count": $DEFAULT_SUSPICIOUS_HIGH_CRIT_COUNT,
+    "rate_warn_pct": $DEFAULT_SUSPICIOUS_HIGH_RATE_WARN_PCT,
+    "rate_crit_pct": $DEFAULT_SUSPICIOUS_HIGH_RATE_CRIT_PCT
+  },
+  "metrics_drift": {
+    "warn_keys": $DEFAULT_METRICS_DRIFT_WARN_KEYS,
+    "crit_keys": $DEFAULT_METRICS_DRIFT_CRIT_KEYS,
+    "warn_pct": $DEFAULT_METRICS_DRIFT_WARN_PCT,
+    "crit_pct": $DEFAULT_METRICS_DRIFT_CRIT_PCT
+  }
+}
+EOF
+}
+
+load_statusd_thresholds_from_file() {
+    [ -f "$STATUSD_THRESHOLDS_FILE" ] || return 0
+    local parsed
+    parsed=$(python3 - "$STATUSD_THRESHOLDS_FILE" <<'PY'
+import json, sys
+path = sys.argv[1]
+try:
+    with open(path, encoding="utf-8") as f:
+        cfg = json.load(f)
+except Exception:
+    cfg = {}
+
+def out(k, v):
+    if v is None:
+        return
+    print(f"{k}={v}")
+
+rq = cfg.get("repair_queue_stagnation", {}) if isinstance(cfg.get("repair_queue_stagnation", {}), dict) else {}
+sh = cfg.get("suspicious_high", {}) if isinstance(cfg.get("suspicious_high", {}), dict) else {}
+md = cfg.get("metrics_drift", {}) if isinstance(cfg.get("metrics_drift", {}), dict) else {}
+
+out("REPAIR_QUEUE_STAGNATION_HOURS", rq.get("window_hours"))
+out("REPAIR_QUEUE_STAGNATION_MIN_SAMPLES", rq.get("min_samples"))
+out("REPAIR_QUEUE_STAGNATION_MIN_DROP", rq.get("min_drop"))
+
+out("SUSPICIOUS_HIGH_WINDOW_HOURS", sh.get("window_hours"))
+out("SUSPICIOUS_HIGH_WARN_COUNT", sh.get("warn_count"))
+out("SUSPICIOUS_HIGH_CRIT_COUNT", sh.get("crit_count"))
+out("SUSPICIOUS_HIGH_RATE_WARN_PCT", sh.get("rate_warn_pct"))
+out("SUSPICIOUS_HIGH_RATE_CRIT_PCT", sh.get("rate_crit_pct"))
+
+out("METRICS_DRIFT_WARN_KEYS", md.get("warn_keys"))
+out("METRICS_DRIFT_CRIT_KEYS", md.get("crit_keys"))
+out("METRICS_DRIFT_WARN_PCT", md.get("warn_pct"))
+out("METRICS_DRIFT_CRIT_PCT", md.get("crit_pct"))
+PY
+)
+
+    while IFS='=' read -r key value; do
+        [ -z "${key:-}" ] && continue
+        case "$key" in
+            REPAIR_QUEUE_STAGNATION_HOURS) REPAIR_QUEUE_STAGNATION_HOURS="$value" ;;
+            REPAIR_QUEUE_STAGNATION_MIN_SAMPLES) REPAIR_QUEUE_STAGNATION_MIN_SAMPLES="$value" ;;
+            REPAIR_QUEUE_STAGNATION_MIN_DROP) REPAIR_QUEUE_STAGNATION_MIN_DROP="$value" ;;
+            SUSPICIOUS_HIGH_WINDOW_HOURS) SUSPICIOUS_HIGH_WINDOW_HOURS="$value" ;;
+            SUSPICIOUS_HIGH_WARN_COUNT) SUSPICIOUS_HIGH_WARN_COUNT="$value" ;;
+            SUSPICIOUS_HIGH_CRIT_COUNT) SUSPICIOUS_HIGH_CRIT_COUNT="$value" ;;
+            SUSPICIOUS_HIGH_RATE_WARN_PCT) SUSPICIOUS_HIGH_RATE_WARN_PCT="$value" ;;
+            SUSPICIOUS_HIGH_RATE_CRIT_PCT) SUSPICIOUS_HIGH_RATE_CRIT_PCT="$value" ;;
+            METRICS_DRIFT_WARN_KEYS) METRICS_DRIFT_WARN_KEYS="$value" ;;
+            METRICS_DRIFT_CRIT_KEYS) METRICS_DRIFT_CRIT_KEYS="$value" ;;
+            METRICS_DRIFT_WARN_PCT) METRICS_DRIFT_WARN_PCT="$value" ;;
+            METRICS_DRIFT_CRIT_PCT) METRICS_DRIFT_CRIT_PCT="$value" ;;
+        esac
+    done <<< "$parsed"
+}
+
+apply_statusd_env_overrides() {
+    [ "$STATUSD_USE_ENV_OVERRIDES" = "1" ] || return 0
+    REPAIR_QUEUE_STAGNATION_HOURS="${STATUSD_REPAIR_QUEUE_STAGNATION_HOURS:-$REPAIR_QUEUE_STAGNATION_HOURS}"
+    REPAIR_QUEUE_STAGNATION_MIN_SAMPLES="${STATUSD_REPAIR_QUEUE_STAGNATION_MIN_SAMPLES:-$REPAIR_QUEUE_STAGNATION_MIN_SAMPLES}"
+    REPAIR_QUEUE_STAGNATION_MIN_DROP="${STATUSD_REPAIR_QUEUE_STAGNATION_MIN_DROP:-$REPAIR_QUEUE_STAGNATION_MIN_DROP}"
+    SUSPICIOUS_HIGH_WINDOW_HOURS="${STATUSD_SUSPICIOUS_HIGH_WINDOW_HOURS:-$SUSPICIOUS_HIGH_WINDOW_HOURS}"
+    SUSPICIOUS_HIGH_WARN_COUNT="${STATUSD_SUSPICIOUS_HIGH_WARN_COUNT:-$SUSPICIOUS_HIGH_WARN_COUNT}"
+    SUSPICIOUS_HIGH_CRIT_COUNT="${STATUSD_SUSPICIOUS_HIGH_CRIT_COUNT:-$SUSPICIOUS_HIGH_CRIT_COUNT}"
+    SUSPICIOUS_HIGH_RATE_WARN_PCT="${STATUSD_SUSPICIOUS_HIGH_RATE_WARN_PCT:-$SUSPICIOUS_HIGH_RATE_WARN_PCT}"
+    SUSPICIOUS_HIGH_RATE_CRIT_PCT="${STATUSD_SUSPICIOUS_HIGH_RATE_CRIT_PCT:-$SUSPICIOUS_HIGH_RATE_CRIT_PCT}"
+    METRICS_DRIFT_WARN_KEYS="${STATUSD_METRICS_DRIFT_WARN_KEYS:-$METRICS_DRIFT_WARN_KEYS}"
+    METRICS_DRIFT_CRIT_KEYS="${STATUSD_METRICS_DRIFT_CRIT_KEYS:-$METRICS_DRIFT_CRIT_KEYS}"
+    METRICS_DRIFT_WARN_PCT="${STATUSD_METRICS_DRIFT_WARN_PCT:-$METRICS_DRIFT_WARN_PCT}"
+    METRICS_DRIFT_CRIT_PCT="${STATUSD_METRICS_DRIFT_CRIT_PCT:-$METRICS_DRIFT_CRIT_PCT}"
+}
+
+ensure_statusd_thresholds_file
+load_statusd_thresholds_from_file
+apply_statusd_env_overrides
+
 # ═══════════════════════════════════════════════════════════════════════════════
 # MODUŁ 1: Agregacja telemetrii
 # ═══════════════════════════════════════════════════════════════════════════════
 
 aggregate_telemetry() {
-    python3 - "$WORK_DIR" "$STATUS_DIR" "$STATUSD_REPORT_FILE" "$REPAIR_QUEUE_STAGNATION_HOURS" "$REPAIR_QUEUE_STAGNATION_MIN_SAMPLES" "$REPAIR_QUEUE_STAGNATION_MIN_DROP" "$SUSPICIOUS_HIGH_WINDOW_HOURS" "$SUSPICIOUS_HIGH_WARN_COUNT" "$SUSPICIOUS_HIGH_CRIT_COUNT" "$METRICS_DRIFT_WARN_KEYS" "$METRICS_DRIFT_CRIT_KEYS" "$METRICS_DRIFT_WARN_PCT" "$METRICS_DRIFT_CRIT_PCT" "$SUSPICIOUS_HIGH_RATE_WARN_PCT" "$SUSPICIOUS_HIGH_RATE_CRIT_PCT" <<'PYAGG'
+    python3 - "$WORK_DIR" "$STATUS_DIR" "$STATUSD_REPORT_FILE" "$REPAIR_QUEUE_STAGNATION_HOURS" "$REPAIR_QUEUE_STAGNATION_MIN_SAMPLES" "$REPAIR_QUEUE_STAGNATION_MIN_DROP" "$SUSPICIOUS_HIGH_WINDOW_HOURS" "$SUSPICIOUS_HIGH_WARN_COUNT" "$SUSPICIOUS_HIGH_CRIT_COUNT" "$METRICS_DRIFT_WARN_KEYS" "$METRICS_DRIFT_CRIT_KEYS" "$METRICS_DRIFT_WARN_PCT" "$METRICS_DRIFT_CRIT_PCT" "$SUSPICIOUS_HIGH_RATE_WARN_PCT" "$SUSPICIOUS_HIGH_RATE_CRIT_PCT" "$STATUSD_THRESHOLDS_FILE" "$STATUSD_USE_ENV_OVERRIDES" <<'PYAGG'
 import json, sys, os, time
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
@@ -79,12 +205,14 @@ repair_min_drop = int(float(sys.argv[6] or "1"))
 suspicious_window_h = float(sys.argv[7] or "6")
 suspicious_warn_count = int(float(sys.argv[8] or "120"))
 suspicious_crit_count = int(float(sys.argv[9] or "240"))
-metrics_drift_warn_keys = int(float(sys.argv[10] or "5000"))
-metrics_drift_crit_keys = int(float(sys.argv[11] or "20000"))
-metrics_drift_warn_pct = float(sys.argv[12] or "10")
-metrics_drift_crit_pct = float(sys.argv[13] or "25")
+metrics_drift_warn_keys = int(float(sys.argv[10] or "50000"))
+metrics_drift_crit_keys = int(float(sys.argv[11] or "100000"))
+metrics_drift_warn_pct = float(sys.argv[12] or "95")
+metrics_drift_crit_pct = float(sys.argv[13] or "99")
 suspicious_rate_warn_pct = float(sys.argv[14] if len(sys.argv) > 14 and sys.argv[14] else "8")
 suspicious_rate_crit_pct = float(sys.argv[15] if len(sys.argv) > 15 and sys.argv[15] else "20")
+thresholds_file = str(sys.argv[16]) if len(sys.argv) > 16 else ""
+thresholds_env_override = bool(str(sys.argv[17]).strip() == "1") if len(sys.argv) > 17 else False
 
 now = datetime.now(timezone.utc)
 report = {
@@ -699,6 +827,9 @@ except Exception:
 
 # ── Thresholds snapshot (kanoniczne źródło aktywnych progów) ─────────────
 report["thresholds_snapshot"] = {
+    "source_of_truth": "statusd_thresholds_file",
+    "config_file": thresholds_file,
+    "env_overrides_enabled": bool(thresholds_env_override),
     "repair_queue_stagnation": {
         "window_hours": float(repair_window_h),
         "min_samples": int(repair_min_samples),
@@ -745,7 +876,7 @@ PYAGG
 # ═══════════════════════════════════════════════════════════════════════════════
 
 run_status_doctor() {
-    python3 - "$WORK_DIR" "$STATUS_DIR" "$STATUSD_DOCTOR_FILE" "$REPAIR_QUEUE_STAGNATION_HOURS" "$REPAIR_QUEUE_STAGNATION_MIN_SAMPLES" "$REPAIR_QUEUE_STAGNATION_MIN_DROP" "$SUSPICIOUS_HIGH_WINDOW_HOURS" "$SUSPICIOUS_HIGH_WARN_COUNT" "$SUSPICIOUS_HIGH_CRIT_COUNT" "$METRICS_DRIFT_WARN_KEYS" "$METRICS_DRIFT_CRIT_KEYS" "$METRICS_DRIFT_WARN_PCT" "$METRICS_DRIFT_CRIT_PCT" "$SUSPICIOUS_HIGH_RATE_WARN_PCT" "$SUSPICIOUS_HIGH_RATE_CRIT_PCT" <<'PYDOCTOR'
+    python3 - "$WORK_DIR" "$STATUS_DIR" "$STATUSD_DOCTOR_FILE" "$REPAIR_QUEUE_STAGNATION_HOURS" "$REPAIR_QUEUE_STAGNATION_MIN_SAMPLES" "$REPAIR_QUEUE_STAGNATION_MIN_DROP" "$SUSPICIOUS_HIGH_WINDOW_HOURS" "$SUSPICIOUS_HIGH_WARN_COUNT" "$SUSPICIOUS_HIGH_CRIT_COUNT" "$METRICS_DRIFT_WARN_KEYS" "$METRICS_DRIFT_CRIT_KEYS" "$METRICS_DRIFT_WARN_PCT" "$METRICS_DRIFT_CRIT_PCT" "$SUSPICIOUS_HIGH_RATE_WARN_PCT" "$SUSPICIOUS_HIGH_RATE_CRIT_PCT" "$STATUSD_THRESHOLDS_FILE" "$STATUSD_USE_ENV_OVERRIDES" <<'PYDOCTOR'
 import json, sys, os
 from datetime import datetime, timezone, timedelta
 from collections import Counter
@@ -759,12 +890,14 @@ repair_min_drop = int(float(sys.argv[6] or "1"))
 suspicious_window_h = float(sys.argv[7] or "6")
 suspicious_warn_count = int(float(sys.argv[8] or "120"))
 suspicious_crit_count = int(float(sys.argv[9] or "240"))
-metrics_drift_warn_keys = int(float(sys.argv[10] or "5000"))
-metrics_drift_crit_keys = int(float(sys.argv[11] or "20000"))
-metrics_drift_warn_pct = float(sys.argv[12] or "10")
-metrics_drift_crit_pct = float(sys.argv[13] or "25")
+metrics_drift_warn_keys = int(float(sys.argv[10] or "50000"))
+metrics_drift_crit_keys = int(float(sys.argv[11] or "100000"))
+metrics_drift_warn_pct = float(sys.argv[12] or "95")
+metrics_drift_crit_pct = float(sys.argv[13] or "99")
 suspicious_rate_warn_pct = float(sys.argv[14] if len(sys.argv) > 14 and sys.argv[14] else "8")
 suspicious_rate_crit_pct = float(sys.argv[15] if len(sys.argv) > 15 and sys.argv[15] else "20")
+thresholds_file = str(sys.argv[16]) if len(sys.argv) > 16 else ""
+thresholds_env_override = bool(str(sys.argv[17]).strip() == "1") if len(sys.argv) > 17 else False
 
 now = datetime.now(timezone.utc)
 issues = []
@@ -1346,6 +1479,29 @@ doctor_report = {
     "warnings": warnings,
     "ok": ok_checks,
     "metrics_drift": metrics_drift_info if isinstance(metrics_drift_info, dict) else {},
+    "thresholds_snapshot": {
+        "source_of_truth": "statusd_thresholds_file",
+        "config_file": thresholds_file,
+        "env_overrides_enabled": bool(thresholds_env_override),
+        "repair_queue_stagnation": {
+            "window_hours": float(max(repair_window_h, 0.1)),
+            "min_samples": int(max(repair_min_samples, 1)),
+            "min_drop": int(max(repair_min_drop, 0)),
+        },
+        "suspicious_high": {
+            "window_hours": float(max(suspicious_window_h, 0.1)),
+            "warn_count": int(max(suspicious_warn_count, 1)),
+            "crit_count": int(max(suspicious_crit_count, suspicious_warn_count + 1)),
+            "rate_warn_pct": float(suspicious_rate_warn_pct),
+            "rate_crit_pct": float(suspicious_rate_crit_pct),
+        },
+        "metrics_drift": {
+            "warn_keys": int(metrics_drift_warn_keys),
+            "crit_keys": int(metrics_drift_crit_keys),
+            "warn_pct": float(metrics_drift_warn_pct),
+            "crit_pct": float(metrics_drift_crit_pct),
+        },
+    },
 }
 
 try:
@@ -2141,7 +2297,7 @@ PYALERT
 # ═══════════════════════════════════════════════════════════════════════════════
 
 generate_daily_report() {
-    python3 - "$STATUS_DIR" "$STATUSD_DAILY_REPORT_JSON" "$STATUSD_DAILY_REPORT_MD" "$REPAIR_QUEUE_STAGNATION_HOURS" "$REPAIR_QUEUE_STAGNATION_MIN_SAMPLES" "$REPAIR_QUEUE_STAGNATION_MIN_DROP" "$METRICS_DRIFT_WARN_KEYS" "$METRICS_DRIFT_CRIT_KEYS" "$METRICS_DRIFT_WARN_PCT" "$METRICS_DRIFT_CRIT_PCT" <<'PYDAILY'
+    python3 - "$STATUS_DIR" "$STATUSD_DAILY_REPORT_JSON" "$STATUSD_DAILY_REPORT_MD" "$REPAIR_QUEUE_STAGNATION_HOURS" "$REPAIR_QUEUE_STAGNATION_MIN_SAMPLES" "$REPAIR_QUEUE_STAGNATION_MIN_DROP" "$METRICS_DRIFT_WARN_KEYS" "$METRICS_DRIFT_CRIT_KEYS" "$METRICS_DRIFT_WARN_PCT" "$METRICS_DRIFT_CRIT_PCT" "$STATUSD_THRESHOLDS_FILE" "$STATUSD_USE_ENV_OVERRIDES" <<'PYDAILY'
 import json, sys, os, re
 from collections import defaultdict, Counter
 from datetime import datetime, timezone, timedelta
@@ -2152,10 +2308,12 @@ report_md_path = sys.argv[3]
 repair_window_h = float(sys.argv[4] or "6")
 repair_min_samples = int(float(sys.argv[5] or "6"))
 repair_min_drop = int(float(sys.argv[6] or "1"))
-metrics_drift_warn_keys = int(float(sys.argv[7] or "5000"))
-metrics_drift_crit_keys = int(float(sys.argv[8] or "20000"))
-metrics_drift_warn_pct = float(sys.argv[9] or "10")
-metrics_drift_crit_pct = float(sys.argv[10] or "25")
+metrics_drift_warn_keys = int(float(sys.argv[7] or "50000"))
+metrics_drift_crit_keys = int(float(sys.argv[8] or "100000"))
+metrics_drift_warn_pct = float(sys.argv[9] or "95")
+metrics_drift_crit_pct = float(sys.argv[10] or "99")
+thresholds_file = str(sys.argv[11]) if len(sys.argv) > 11 else ""
+thresholds_env_override = bool(str(sys.argv[12]).strip() == "1") if len(sys.argv) > 12 else False
 
 now = datetime.now(timezone.utc)
 window_start = now - timedelta(hours=24)
@@ -2760,6 +2918,22 @@ report = {
     },
     "migration": migration_snapshot,
     "metrics_drift": metrics_drift_snapshot,
+    "thresholds_snapshot": {
+        "source_of_truth": "statusd_thresholds_file",
+        "config_file": thresholds_file,
+        "env_overrides_enabled": bool(thresholds_env_override),
+        "repair_queue_stagnation": {
+            "window_hours": float(max(repair_window_h, 0.1)),
+            "min_samples": int(max(repair_min_samples, 1)),
+            "min_drop": int(max(repair_min_drop, 0)),
+        },
+        "metrics_drift": {
+            "warn_keys": int(metrics_drift_warn_keys),
+            "crit_keys": int(metrics_drift_crit_keys),
+            "warn_pct": float(metrics_drift_warn_pct),
+            "crit_pct": float(metrics_drift_crit_pct),
+        },
+    },
     "scope_totals": overview.get("scope_totals", {}),
     "trend_per_language": lang_stats_final,
     "trend_per_category": category_stats_final,
@@ -2932,6 +3106,14 @@ lines.append(f"| live_keys | {md.get('live_keys', 0)} |")
 lines.append(f"| worker_registry_keys | {md.get('worker_registry_keys', 0)} |")
 lines.append(f"| outside_worker_registry_keys | {md.get('outside_worker_registry_keys', 0)} |")
 lines.append(f"| outside_worker_registry_pct | {_fmt_pct(md.get('outside_worker_registry_pct', 0))} |")
+lines.append(f"| warn_threshold_keys | {md.get('warn_threshold_keys', 0)} |")
+lines.append(f"| critical_threshold_keys | {md.get('critical_threshold_keys', 0)} |")
+lines.append(f"| warn_threshold_pct | {_fmt_pct(md.get('warn_threshold_pct', 0))} |")
+lines.append(f"| critical_threshold_pct | {_fmt_pct(md.get('critical_threshold_pct', 0))} |")
+th = report.get("thresholds_snapshot", {}) if isinstance(report.get("thresholds_snapshot", {}), dict) else {}
+lines.append(f"| threshold_source | {th.get('source_of_truth', '-') or '-'} |")
+lines.append(f"| threshold_config_file | {th.get('config_file', '-') or '-'} |")
+lines.append(f"| env_overrides_enabled | {'yes' if bool(th.get('env_overrides_enabled', False)) else 'no'} |")
 lines.append("")
 lines.append("## Coverage Snapshot")
 lines.append("")

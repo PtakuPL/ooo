@@ -4,14 +4,32 @@
   "crossref_enabled": true,
   "auto_fix_enabled": false,
   "auto_fix_limit": 30,
-  "checked_at": "2026-02-14T06:50:45.217505Z",
-  "issues_total": 496,
+  "checked_at": "2026-02-14T07:48:55.790885Z",
+  "issues_total": 498,
   "issues_by_type": {
     "consistency_in_language": 16,
     "pl_reference_missing_translation": 400,
-    "length_ratio_crosscheck": 80
+    "length_ratio_crosscheck": 82
   },
   "consistency_issues": [
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "The chest is empty.",
+      "variants": [
+        "Sandık boş.",
+        "You found ",
+        "You found."
+      ],
+      "variants_count": 3,
+      "examples": [
+        "quests:quests.bigfoot_burden.chest_empty",
+        "scripts:scripts.actions_boss_timira_fight.msg_3",
+        "scripts:scripts.actions_mission3_chest.msg_2",
+        "scripts:scripts.actions_reward.msg_4",
+        "scripts:scripts.actions_reward.msg_6"
+      ]
+    },
     {
       "type": "crossref_inconsistent_translation",
       "severity": "MEDIUM",
@@ -261,23 +279,6 @@
         "server:data.otservbr.global.npc.captain.waverider.L99.709",
         "server:data.otservbr.global.npc.captain.waverider.island.L63.1027",
         "server:data.otservbr.global.npc.charlotta.L87.903"
-      ]
-    },
-    {
-      "type": "crossref_inconsistent_translation",
-      "severity": "MEDIUM",
-      "en": "The chest is empty.",
-      "variants": [
-        "Sandık boş.",
-        "You found "
-      ],
-      "variants_count": 2,
-      "examples": [
-        "scripts:scripts.actions_rewards.msg_2",
-        "server:data.otservbr.global.scripts.actions.rookgaard.chest.L5.2374",
-        "server:data.otservbr.global.scripts.quests.children.of.the.revolution.actions.mission3.chest.L9.2156",
-        "server:data.otservbr.global.scripts.quests.heart.of.destruction.actions.reward.L16.1867",
-        "server:data.otservbr.global.scripts.quests.hero.of.rathleton.actions.reward.L13.2162"
       ]
     }
   ],
@@ -4603,6 +4604,24 @@
       "en_len": 41,
       "lang_ratio": 0.0,
       "pl_ratio": 1.805
+    },
+    {
+      "key": "quests.actions_coral.msg_1",
+      "category": "quests",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 6,
+      "lang_ratio": 2.167,
+      "pl_ratio": 4.0
+    },
+    {
+      "key": "quests.actions_crystal.msg_1",
+      "category": "quests",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 6,
+      "lang_ratio": 2.167,
+      "pl_ratio": 4.0
     }
   ],
   "auto_fix": {

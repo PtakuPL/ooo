@@ -6,6 +6,23 @@
 
 ---
 
+## 0d) Aktualizacja koordynacyjna (2026-02-14 07:52 UTC)
+
+Zmiany runtime/status istotne dla planu C++/H:
+- ✅ `statusd` ma kanoniczne źródło progów w pliku `canary_test/statusd_thresholds.json` (daemon/manual używają tego samego kontraktu).
+- ✅ `statusd_report.json` / `statusd_doctor.json` / `statusd_daily_report.json` publikują `thresholds_snapshot` z:
+  - `source_of_truth`,
+  - `config_file`,
+  - `env_overrides_enabled`.
+- ✅ `i18n_start_all.sh` raportuje realny stan daemonów po walidacji `/proc/<pid>/cmdline` (bez self-match fallback `pgrep`).
+
+Nowe wymagania dla pipeline semantycznego C++/H:
+- ⬜ Dodać mapowanie `threshold_impact_hint`:
+  - które moduły semantyczne mogą wpływać na przekroczenia progów `suspicious_high` i `metrics_drift`.
+- ⬜ Emitować `runtime_process_confidence` dla sygnałów automatyzacji:
+  - czy sygnał pochodzi z potwierdzonego procesu (`pid+cmdline`) czy z fallback heurystycznego.
+- ⬜ Dodać kompatybilność z `thresholds_snapshot.config_file`, żeby raport semantyczny mógł wskazać, pod jakim profilem progowym liczony był wpływ zmian.
+
 ## 0c) Aktualizacja koordynacyjna (2026-02-14 07:28 UTC)
 
 Zmiany runtime/status istotne dla planu C++/H:

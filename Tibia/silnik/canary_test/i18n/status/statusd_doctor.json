@@ -1,21 +1,58 @@
 {
-  "timestamp": "2026-02-14T07:05:42.588465Z",
+  "timestamp": "2026-02-14T07:57:15.801116Z",
   "overall": "CRITICAL",
   "issues_count": 1,
-  "warnings_count": 1,
-  "ok_count": 6,
+  "warnings_count": 0,
+  "ok_count": 9,
   "issues": [
-    "SUSPICIOUS_HIGH_SPIKE: suspicious_high=2788 rate=12.828% window=6.0h top_lang=es:535"
+    "SUSPICIOUS_HIGH_SPIKE: suspicious_high=2499 rate=11.994% window=6.0h top_lang=es:582 per_lang=[es:582(11.694%/warning),pl:374(53.582%/critical),ru:163(25.193%/critical),ar:145(45.455%/critical),bg:112(35.0%/critical)] per_domain=[npc.json:1178(13.742%/warning),server.json:291(51.964%/critical),monsters.json:232(14.312%/warning),scripts.json:162(30.112%/critical),otclient_modules.json:107(93.043%/critical)]"
   ],
-  "warnings": [
-    "GUARDIAN_DEGRADED: guardian raportuje degraded"
-  ],
+  "warnings": [],
   "ok": [
-    "heartbeat_fresh (124s)",
-    "status_md_fresh (99s)",
-    "guard_report_fresh (93s)",
-    "dispatch_fresh (22s)",
-    "worker_pid_alive (1830626)",
-    "repair_queue_fresh (770s)"
-  ]
+    "heartbeat_fresh (87s)",
+    "status_md_fresh (75s)",
+    "guard_report_fresh (35s)",
+    "dispatch_fresh (39s)",
+    "worker_pid_alive (1876374)",
+    "guardian_healthy",
+    "repair_queue_fresh (948s)",
+    "metrics_drift_ok (outside=47338 (88.34%) live=53586 registry=6248)",
+    "repair_tuning_active (samples_2h=4)"
+  ],
+  "metrics_drift": {
+    "available": true,
+    "status": "stable",
+    "severity": "ok",
+    "live_keys": 53586,
+    "worker_registry_keys": 6248,
+    "outside_worker_registry_keys": 47338,
+    "outside_worker_registry_pct": 88.34,
+    "warn_threshold_keys": 50000,
+    "critical_threshold_keys": 100000,
+    "warn_threshold_pct": 95.0,
+    "critical_threshold_pct": 99.0
+  },
+  "thresholds_snapshot": {
+    "source_of_truth": "statusd_thresholds_file",
+    "config_file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/statusd_thresholds.json",
+    "env_overrides_enabled": false,
+    "repair_queue_stagnation": {
+      "window_hours": 6.0,
+      "min_samples": 6,
+      "min_drop": 1
+    },
+    "suspicious_high": {
+      "window_hours": 6.0,
+      "warn_count": 120,
+      "crit_count": 240,
+      "rate_warn_pct": 8.0,
+      "rate_crit_pct": 20.0
+    },
+    "metrics_drift": {
+      "warn_keys": 50000,
+      "crit_keys": 100000,
+      "warn_pct": 95.0,
+      "crit_pct": 99.0
+    }
+  }
 }

@@ -12774,5 +12774,1205 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-14T06:04:35.433031Z"
+  },
+  "quests.demon_oak.sound_8": {
+    "src_hash": "00f928cfbade0ee4a515a461c14fbd4a",
+    "text": "SIE WERDEN FÜR JEDEN TREFFER MIT JAHRZEHNTEN VON FOLTER BEZAHLEN!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:12.401542Z"
+  },
+  "quests.demon_oak.sound_9": {
+    "src_hash": "b056e7487d9090618cf485296fb9aab9",
+    "text": "ARGG! FOLTER ES!! TÖTE ES LANGSAM, MEIN DIENER!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:12.404766Z"
+  },
+  "quests.demon_oak.voice_1": {
+    "src_hash": "55291c81c1a9e4f6db2be58b19fdca6d",
+    "text": "Lass mich los und du wirst reich belohnt!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:12.405849Z"
+  },
+  "quests.demon_oak.voice_2": {
+    "src_hash": "f1e4a54071183dca782a4f6d40b483d1",
+    "text": "Was ist das? Liegen hier Dämonenbeine? Jemand könnte sie verloren haben!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:12.407136Z"
+  },
+  "quests.demon_oak.voice_3": {
+    "src_hash": "bafe7978fb43a9dcd20b1fa0f7ad5fd7",
+    "text": "Ich bin gefangen, komm her und befreie mich schnell!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:12.408232Z"
+  },
+  "quests.demon_oak.voice_4": {
+    "src_hash": "b0dc6c4c7e38d8c4b07e2c6958a59050",
+    "text": "Ich kann deine Geliebte von den Toten zurückholen, lass mich einfach los!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:12.409469Z"
+  },
+  "quests.demon_oak.voice_5": {
+    "src_hash": "6cb99eaeebe4ef40cb850ecc56acf667",
+    "text": "Was für eine schöne glänzende goldene Rüstung. Komm zu mir und du kannst es haben!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:12.411137Z"
+  },
+  "quests.demon_oak.voice_6": {
+    "src_hash": "d16954fa91fadcf0361a4964a38060b7",
+    "text": "Finden Sie einen Weg hierher und lassen Sie mich frei! Bitte beeilen Sie sich!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:12.412326Z"
+  },
+  "quests.demon_oak.voice_7": {
+    "src_hash": "f4a11c0915086be4d30e919fecb2f2d8",
+    "text": "Du kannst meinen Dämon loswerden, wenn du mir hilfst, hier rauszukommen!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:12.413546Z"
+  },
+  "quests.desert_dungeon.missing_sacrifice": {
+    "src_hash": "cf6fd7640294feedf4b956372a8c65f3",
+    "text": "{0} fehlt {1} Opfer auf dem Altar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:12.417631Z"
+  },
+  "quests.desert_dungeon.need_all_vocations": {
+    "src_hash": "db04834b8fe3b0ed529ae584808ccc5c",
+    "text": "Für diese Quest benötigst du einen Spieler jedes Berufs.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:12.419314Z"
+  },
+  "quests.desert_dungeon.need_each_vocation": {
+    "src_hash": "db04834b8fe3b0ed529ae584808ccc5c",
+    "text": "Für diese Quest benötigst du einen Spieler jedes Berufs.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:12.420820Z"
+  },
+  "quests.dream_courts.barrel_word": {
+    "src_hash": "ab1981f1b79d1b8ff80c419c6ce3d434",
+    "text": "Auf der Innenseite des Deckels dieses Fasses ist das Wort „'O'kteth“ geschrieben.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:12.422843Z"
+  },
+  "quests.dream_courts.bed_notes": {
+    "src_hash": "d23a6ac34261a80639136e4e3d78e47b",
+    "text": "Unter diesem Ende des Bettes ist ein Stapel Notizen versteckt. Auf allen steht nur ein Wort: 'T'sough‘.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:12.424901Z"
+  },
+  "quests.dream_courts.book_kmuuh": {
+    "src_hash": "18d37c53b39eb7f66f14c307f08d2c0e",
+    "text": "Die Gesänge in diesem Buch enthalten oft das Wort „'K'muuh“.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:12.426531Z"
+  },
+  "quests.dream_courts.book_nogalu": {
+    "src_hash": "1714f5db5c755452491181ec675d63ac",
+    "text": "Die Gesänge in diesem Buch enthalten oft das Wort 'N'ogalu'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:12.427805Z"
+  },
+  "quests.dream_courts.book_okteth": {
+    "src_hash": "3a67a1d27c430fa5ba1fd9edaffc15d7",
+    "text": "Die Gesänge in diesem Buch enthalten oft das Wort „'O'kteth.“.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:12.429097Z"
+  },
+  "quests.dream_courts.book_worthy": {
+    "src_hash": "c1acd9180910a5b1467431f3c6b1e67d",
+    "text": "Alle Gesänge wurden in der richtigen Reihenfolge gesungen, Sie gelten als würdig. Du wirst wegtransportiert...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:12.430738Z"
+  },
+  "quests.dream_courts.got_blue_crystal": {
+    "src_hash": "be404605aece8334d7dec85049557214",
+    "text": "Du hast einen blauen Kristall!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:12.431720Z"
+  },
+  "quests.dream_courts.got_green_crystal": {
+    "src_hash": "95d63fd876e5455d0288a8fe8bbad93f",
+    "text": "Du hast einen grünen Kristall!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:12.432762Z"
+  },
+  "quests.dream_courts.got_purple_crystal": {
+    "src_hash": "15ef9900355aaed476317b32066987c5",
+    "text": "Du hast einen lila Kristall!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:12.433678Z"
+  },
+  "quests.dream_courts.nexus_blocked": {
+    "src_hash": "c2d3b0717c0f57ebab89bc4984f3c53c",
+    "text": "Verbinden Sie alle drei Tore, um den Energiekreislauf wiederherzustellen, der diesen Zusammenhang aufrechterhält.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:12.443933Z"
+  },
+  "quests.dream_courts.rubble_path": {
+    "src_hash": "887ce17f9b9499fbe9a3430282790e46",
+    "text": "Du überquerst das Geröll mit Leichtigkeit, aber immer mehr davon fällt hinter dir herab und versperrt dir im Grunde erneut den Weg.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:12.446038Z"
+  },
+  "quests.dream_courts.sarcophagus_say_1": {
+    "src_hash": "861b66b6dbd2ef3cb4d76cc8b1455006",
+    "text": "Du hast ein",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:12.446745Z"
+  },
+  "quests.dream_courts.skull_minotaur": {
+    "src_hash": "0f19967c78d4c4bf877ae903c07b710f",
+    "text": "Sie legen den Minotaurus-Schädel in den Sarg innerhalb des Minotaurus-Skeletts. Eines der Türschlösser klickt.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:12.448199Z"
+  },
+  "quests.dream_courts.skull_orc": {
+    "src_hash": "bbc9ebaea7038e7842785e65ec127259",
+    "text": "Du legst den Ork-Schädel in den Sarg innerhalb des Ork-Skeletts. Eines der Türschlösser klickt.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:12.449604Z"
+  },
+  "quests.dream_courts.statue_word": {
+    "src_hash": "e69449650a233f36e687a06c05ff3580",
+    "text": "Auf der Hand dieser Statue steht das Wort: 'N'ogalu'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:12.457604Z"
+  },
+  "quests.dream_courts.summer_ward": {
+    "src_hash": "3c3de5f54674528ed8325cebed7655d8",
+    "text": "Du lädst den Sommerschutzstein auf und der gravierte Sonnenkristall erstrahlt in goldenem Licht.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:12.459638Z"
+  },
+  "quests.dream_courts.winter_ward": {
+    "src_hash": "6d2a5aa45e9e8b2ef75fcee7816d0955",
+    "text": "Sie laden den Winterschutzstein auf und der gravierte Eiskristall leuchtet in blauem Licht.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:12.462652Z"
+  },
+  "quests.dreamers_challenge.clock_word_1": {
+    "src_hash": "c223d5e93e61322ac1aceefd8ef3ff0b",
+    "text": "DU TRÄUMST!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:12.463679Z"
+  },
+  "quests.dreamers_challenge.clock_word_2": {
+    "src_hash": "6d62b16ea1c4e60517f9383de308543d",
+    "text": "AUFWACHEN!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:12.464355Z"
+  },
+  "quests.dreamers_challenge_quest.you_have_already_obtained_this_addon": {
+    "src_hash": "de6fa97474d57de84714ed5405bda75d",
+    "text": "Sie haben dieses Addon bereits erhalten!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:12.465355Z"
+  },
+  "quests.dreamers_challenge_quest.you_have_already_used_this_lever": {
+    "src_hash": "1be82c3c9ff13fda4cdb4bc6e5e5cd4c",
+    "text": "Sie haben diesen Hebel bereits benutzt!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:12.473409Z"
+  },
+  "quests.dreamers_challenge_quest.you_need_to_offer_a_small": {
+    "src_hash": "31fec8dd082b43587b7f8586b6e78b93",
+    "text": "Sie müssen einen kleinen Diamanten anbieten.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:12.474615Z"
+  },
+  "quests.dreamers_challenge_quest.you_still_dont_have_permission": {
+    "src_hash": "94c3a4f539049247659ee395664bc4e6",
+    "text": "Sie haben immer noch keine Erlaubnis.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:12.479193Z"
+  },
+  "quests.fathers_burden.acquired": {
+    "src_hash": "fd3b0b305643be834fe2cba68666263c",
+    "text": "Sie haben {0} erworben",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:12.480172Z"
+  },
+  "quests.fathers_burden.corpse_say_1": {
+    "src_hash": "2afb5076cad1b4a7685de513c392b177",
+    "text": "Die Skala von Glitterscale.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:12.481248Z"
+  },
+  "quests.ferumbras_ascension.sorry_not_possible": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Leider nicht möglich.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:12.482522Z"
+  },
+  "quests.ferumbras_ascension.you_cannot_use_this_lever_again": {
+    "src_hash": "e9cc8cc8a90ff0e0d86a9099d4d547e1",
+    "text": "Sie können diesen Hebel nicht erneut verwenden.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:12.483995Z"
+  },
+  "quests.ferumbras_ascension.you_have_found_a_bag_but": {
+    "src_hash": "4b9980d4ca695198be91b754c6456724",
+    "text": "Sie haben eine Tasche gefunden, aber Sie haben keinen Platz dafür.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:12.485522Z"
+  },
+  "quests.first_dragon.circle_trees": {
+    "src_hash": "21fde76d216da6a6580a184dc6654f83",
+    "text": "Sie betreten den Kreis der Bäume und Blumen. Wenn Sie diese heilige Stätte besuchen, werden Sie von der Kraft der Natur und der Pflanzen durchdrungen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:12.487845Z"
+  },
+  "quests.first_dragon.found_items": {
+    "src_hash": "88361719333f8df3bdb48985134c1c90",
+    "text": "Du hast {0} {1} gefunden.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:12.488726Z"
+  },
+  "quests.first_dragon.oasis": {
+    "src_hash": "fdc609328c42192493089239ebaeef98",
+    "text": "Sie betreten die wunderschöne Oase. Wenn Sie diese heilige Stätte besuchen, werden Sie von der Kraft des Wassers erfüllt, das der Wüste Leben einhaucht.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:12.500405Z"
+  },
+  "quests.first_dragon.suntower": {
+    "src_hash": "8ddfbb42d82b5fb668796bec61969f55",
+    "text": "Du hast den Sonnenturm von Ab'dendriel betreten. Wenn Sie diese heilige Stätte besuchen, werden Sie von der Kraft der lebensspendenden Sonne erfüllt.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:12.502122Z"
+  },
+  "quests.forgotten_knowledge.diamond_entities": {
+    "src_hash": "03a761850a7fd9fcd58c8fa2724f8dc0",
+    "text": "5 Diamantwesen verbrauchen zu viel Rohenergie, als dass die kosmische Kammer erwachen könnte. Sie wird in 10 Minuten wieder zur Ruhe gebracht.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:12.504036Z"
+  },
+  "quests.forgotten_knowledge.golden_entities": {
+    "src_hash": "283b3f9291af327714771b625dd51c2b",
+    "text": "5 goldene Wesen verbrauchen zu viel Rohenergie, als dass die kosmische Kammer erwachen könnte. Sie wird in 10 Minuten wieder zur Ruhe gebracht.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:12.505681Z"
+  },
+  "quests.forgotten_knowledge.lantern_glow": {
+    "src_hash": "139f7a4e3b342775d96589e84d10d51b",
+    "text": "Wenn Sie mit dem Polieren der Laterne beginnen, beginnt sie in einem jenseitigen Licht zu leuchten.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:12.506836Z"
+  },
+  "quests.forgotten_knowledge.lantern_has_key": {
+    "src_hash": "6feb464965de17dfa29795637465ef84",
+    "text": "Im Licht der Geistersilberlaterne entdecken Sie eine sonst unsichtbare Tür. Da Sie den passenden Schlüssel haben, können Sie passieren.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:12.516062Z"
+  },
+  "quests.forgotten_knowledge.lantern_no_key": {
+    "src_hash": "3ff192e8c3b476ec20fcd8afd0a221b5",
+    "text": "Im Licht der Geistersilberlaterne entdecken Sie eine sonst unsichtbare Tür. Aber Ihnen fehlt der Schlüssel, um es zu öffnen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:12.519864Z"
+  },
+  "quests.forgotten_knowledge.tree_destruction": {
+    "src_hash": "205b8fa5e3fee791d97de1989d846b4b",
+    "text": "Die Zerstörung des Baumes setzt den {0} frei!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:12.521206Z"
+  },
+  "quests.globalevents_grimvale_feroxa.broadcast_1": {
+    "src_hash": "bdc7c1a2cc03b08531c0d717935d084e",
+    "text": "Grimvale ertrinkt in Werwesen, während der Vollmond seinen Höhepunkt erreicht und das uralte Böse zurückkehrt.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:30.046740Z"
+  },
+  "quests.grave_danger.defiled": {
+    "src_hash": "20009c822cba900133cfc82c5ba6d30a",
+    "text": "Dieses Grab ist bereits geschändet und der Lich-Ritter ist gegangen! Hier kann man nichts machen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:30.049775Z"
+  },
+  "quests.grave_danger.sanctified": {
+    "src_hash": "6ecef847b37c47541664c96ed4ca5806",
+    "text": "Dieses Grab wurde nun geweiht und ist sicher!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:30.051558Z"
+  },
+  "quests.grave_danger.wait_challenge": {
+    "src_hash": "8f220e1370f7c9572644115a7ec58676",
+    "text": "Sie müssen %s warten, bevor Sie erneut versuchen, %s herauszufordern!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:30.052988Z"
+  },
+  "quests.gravedigger.blood_msg_1": {
+    "src_hash": "1dbdb527d858d195b09b6758127751a0",
+    "text": "Das Blut im Fläschchen ist von tiefem Rubinrot.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:30.054105Z"
+  },
+  "quests.gravedigger.blood_msg_2": {
+    "src_hash": "1a63106ebda448891f13f09e95b1749c",
+    "text": "Das Blut in der Phiole hat eine seltsame Farbe, als wäre es verunreinigt.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:30.055845Z"
+  },
+  "quests.gravedigger.monks_msg_1": {
+    "src_hash": "ec359d287bea175c97b8d64cd6b01622",
+    "text": "Schatten steigen auf und verschlingen die Kerze. Die Statue flackert in einem unheimlichen Licht.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:30.057154Z"
+  },
+  "quests.gravedigger.monks_msg_2": {
+    "src_hash": "7513b7643dba66657586111a073e8765",
+    "text": "Die Schatten der Statue verschlucken gierig die Kerze.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:30.058387Z"
+  },
+  "quests.gravedigger.monks_msg_3": {
+    "src_hash": "c45750588bd577c7f5626b86b6a4108a",
+    "text": "Ein Schatten taucht auf und reißt dir die Kerze aus den Händen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:30.059815Z"
+  },
+  "quests.inquisition.teleport_say_1": {
+    "src_hash": "8ef32cb681fd34e8b4c5898bea7c5641",
+    "text": "Betreten von Ushuriels Mündel.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:30.060910Z"
+  },
+  "quests.inquisition.teleport_say_10": {
+    "src_hash": "8bd887aa5b7595bf54b03e0d8351cc73",
+    "text": "Betreten der Bluthallen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:30.061922Z"
+  },
+  "quests.inquisition.teleport_say_11": {
+    "src_hash": "f714a602d2801dd4b089bcee8d5070aa",
+    "text": "Betreten der Gießerei.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:30.063047Z"
+  },
+  "quests.inquisition.teleport_say_12": {
+    "src_hash": "77f23e15c82945321e29dfb451c9a6d6",
+    "text": "Betreten von Madareths Mündel.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:30.064047Z"
+  },
+  "quests.inquisition.teleport_say_13": {
+    "src_hash": "917831072ff2684c35754f1ea4a1690f",
+    "text": "Betreten der Bottiche.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:30.064939Z"
+  },
+  "quests.inquisition.teleport_say_14": {
+    "src_hash": "3683da160778e47b65380e79858563bf",
+    "text": "Flucht zurück zum Retreat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:30.073572Z"
+  },
+  "quests.inquisition.teleport_say_15": {
+    "src_hash": "917831072ff2684c35754f1ea4a1690f",
+    "text": "Betreten der Bottiche.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:30.074638Z"
+  },
+  "quests.inquisition.teleport_say_16": {
+    "src_hash": "8a9b8ad11f7f6477078c9057fa71a4f8",
+    "text": "Betreten des Schlachtfeldes.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:30.075668Z"
+  },
+  "quests.inquisition.teleport_say_17": {
+    "src_hash": "917831072ff2684c35754f1ea4a1690f",
+    "text": "Betreten der Bottiche.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:30.076593Z"
+  },
+  "quests.inquisition.teleport_say_18": {
+    "src_hash": "9d6e489a953c92b65b2e4155ef092be7",
+    "text": "Betreten der Dämonenschmiede.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:30.077591Z"
+  },
+  "quests.inquisition.teleport_say_19": {
+    "src_hash": "be619abc6f0f2d1bcf76ad3d90a56919",
+    "text": "Betreten des Arkanums.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:30.078561Z"
+  },
+  "gamestore.modal.error": {
+    "src_hash": "902b0d55fddef6f8d651fe1035b7d4bd",
+    "text": "Fehler",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.899606Z"
+  },
+  "lib.hireling.as_you_wish": {
+    "src_hash": "dd4bc9876390c6c2e60f02e875dd2d33",
+    "text": "As you wish!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.904450Z"
+  },
+  "scripts.2_ambassadors_treason.msg_1": {
+    "src_hash": "14dfffed3e8aaff6aa4f4509ee470001",
+    "text": "Kürzlich wurden hier Dokumente verbrannt. Nur der Teil einer Schriftrolle liegt noch vor dem Schornstein, aber er ist zu verrußt, um ihn lesen zu können.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.911966Z"
+  },
+  "scripts.2_ambassadors_treason.msg_2": {
+    "src_hash": "dd483e9a16530ce89de99a1dc0f9f197",
+    "text": "Sie haben dies bereits untersucht.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.912564Z"
+  },
+  "scripts.2_ambassadors_treason.msg_3": {
+    "src_hash": "f0502f434837f12f681eb194dd73e2d4",
+    "text": "Papierfetzen liegen verstreut auf dem Boden. Es dauert einige Zeit, sie wieder zusammenzusetzen. Aber es ist nur ein schlecht geschriebenes Gedicht.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.913473Z"
+  },
+  "scripts.2_ambassadors_treason.msg_4": {
+    "src_hash": "dd483e9a16530ce89de99a1dc0f9f197",
+    "text": "Sie haben dies bereits untersucht.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.914085Z"
+  },
+  "scripts.2_ambassadors_treason.msg_5": {
+    "src_hash": "92080f0ef8fde073cd9d9b26347d601b",
+    "text": "Sie untersuchen die Schriftrollen sorgfältig. Das sind Befehle von Rathleton für den Botschafter. Hier gibt es keine Anzeichen von Verrat.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.915357Z"
+  },
+  "scripts.2_ambassadors_treason.msg_6": {
+    "src_hash": "dd483e9a16530ce89de99a1dc0f9f197",
+    "text": "Sie haben dies bereits untersucht.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.915965Z"
+  },
+  "scripts.2_ambassadors_treason.msg_7": {
+    "src_hash": "8464bf58b6d5fa7bbe7ed698b810582e",
+    "text": "Im Haus des Botschafters findet man nichts. Wenn er tatsächlich ein Verräter ist, hat er alle Beweise beseitigt, die ihn belasten könnten.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.916961Z"
+  },
+  "scripts.6_mind_travel.msg_1": {
+    "src_hash": "39c4cd386bc515db3ca13ad71ea9a439",
+    "text": "Du fühlst dich zittrig und schwindelig, die Welt um dich herum wird dunkel. Dann wird Ihr Blick wieder klar – und Sie sind woanders.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.917952Z"
+  },
+  "scripts.6_mind_travel.msg_2": {
+    "src_hash": "1e57dd425d49fa37eefdeb9faa01a4f2",
+    "text": "Du wurdest auf die rechte Gehirnseite verschoben",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.919250Z"
+  },
+  "scripts.6_mind_travel.msg_3": {
+    "src_hash": "98da952f701d6358d74f1d9a180990fa",
+    "text": "Sie wurden auf die linke Gehirnhälfte verschoben",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.920674Z"
+  },
+  "scripts.8_blessing_the_statues.msg_1": {
+    "src_hash": "414cb5c464ec2b74b4431b6931757db9",
+    "text": "Du segnest die Statue.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.921826Z"
+  },
+  "scripts.8_blessing_the_statues.msg_2": {
+    "src_hash": "4a64e6aeefc9b8c9f1fd15709a257e2d",
+    "text": "Du hast diese Statue bereits gesegnet.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.923366Z"
+  },
+  "scripts.action_cat_basket.say_1": {
+    "src_hash": "2640241ef563e67c405bc0dbe5b18ed4",
+    "text": "FCHHHHH",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.925239Z"
+  },
+  "scripts.action_drume.msg_1": {
+    "src_hash": "5a37b3d700f88246b6e36e3077df916b",
+    "text": "Deine Zeit ist vorbei.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.926120Z"
+  },
+  "scripts.actions_MedusaOil.msg_5": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Leider nicht möglich.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.928849Z"
+  },
+  "scripts.actions_augerfun.msg_2": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Leider nicht möglich.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.930854Z"
+  },
+  "scripts.actions_bonefiddle.msg_1": {
+    "src_hash": "1d91d803c170748ff4f101712cf1c262",
+    "text": "Sie befestigen das Ebenholz am Schädel. Dies sollte den Anforderungen eines Griffbretts genügen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.933312Z"
+  },
+  "scripts.actions_bonefiddle.msg_2": {
+    "src_hash": "e8a3f87ef1f8ea48f276ed48a8524749",
+    "text": "Sie heften die Haare an das Ebenholzgriffbrett. Die Stränge sollten geeignet sein, als Saiten zu dienen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.934185Z"
+  },
+  "scripts.actions_bonefiddle.msg_3": {
+    "src_hash": "60b384a0aa95079616923d65a09d92fc",
+    "text": "*Es war einmal eine schöne Jungfrau mit dunklen Augen und seidenem Haar. Weit weg von zu Hause starb sie. Kein Grab, keine Totenwache, keine Trauer.*",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.935276Z"
+  },
+  "scripts.actions_bonefiddle.msg_4": {
+    "src_hash": "5199ba776a4a3a24d69420d0eb2e685b",
+    "text": "Sie spielen die Pfauenballade und das Portal öffnet sich.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.935986Z"
+  },
+  "scripts.actions_bonefiddle.msg_5": {
+    "src_hash": "fa77689cf9736ba9d5773f0e3b7b2683",
+    "text": "Du spielst die Knochengeige.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.936551Z"
+  },
+  "scripts.actions_bookOnTable.msg_4": {
+    "src_hash": "c1acd9180910a5b1467431f3c6b1e67d",
+    "text": "Alle Gesänge wurden in der richtigen Reihenfolge gesungen, Sie gelten als würdig. Du wirst wegtransportiert...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.937752Z"
+  },
+  "scripts.actions_calassa_comb_door.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "The door seems to be sealed against unwanted intruders.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.940404Z"
+  },
+  "scripts.actions_chests.msg_2": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Es ist leer.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.942701Z"
+  },
+  "scripts.actions_containerRewards.msg_2": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Es ist leer.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.943883Z"
+  },
+  "scripts.actions_doors.msg_1": {
+    "src_hash": "97292b2d9c656199befd6d213f4e5194",
+    "text": "Du hast nicht genug Level.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.948082Z"
+  },
+  "scripts.actions_doors.msg_2": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "The door seems to be sealed against unwanted intruders.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.949588Z"
+  },
+  "scripts.actions_dreamcatcher_curse.msg_1": {
+    "src_hash": "eb5a28c1cc7d964dd2cbb2fc6553795f",
+    "text": "Du hast ein Gefühl der Angst.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.950514Z"
+  },
+  "scripts.actions_entrance.msg_1": {
+    "src_hash": "3bf818c8ff9e1fb2d25ccd26775d7cd5",
+    "text": "Noch einmal vermischen Sie die Kreide mit einem Tropfen Blut und etwas Wasser und erneuern das Symbol auf dem Boden ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.951512Z"
+  },
+  "scripts.actions_entrance.msg_2": {
+    "src_hash": "b33b6be9b885ba871d5ec857ce3fd539",
+    "text": "Sie können diesen Eingang nur nachts nutzen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.952187Z"
+  },
+  "scripts.actions_fragrance.msg_1": {
+    "src_hash": "88589a6c42c6ad348e20ed9f1aaef6af",
+    "text": "Hmmmm, was für ein betörender Duft!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.954519Z"
+  },
+  "scripts.actions_glasshoneyfun.msg_2": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Leider nicht möglich.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.955738Z"
+  },
+  "scripts.actions_gnome_items.msg_4": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Es ist leer.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.957191Z"
+  },
+  "scripts.actions_gnomish_chest.msg_2": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Es ist leer.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.958013Z"
+  },
+  "scripts.actions_mono_detector_strange_probing_device.msg_1": {
+    "src_hash": "7302b053c0f22e53182c9674c7530e39",
+    "text": "Die Sonde wurde justiert.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.968848Z"
+  },
+  "scripts.actions_mono_detector_strange_probing_device.msg_3": {
+    "src_hash": "9d0ce14678d498a52e1d256ff430a7ca",
+    "text": "Hm... das Gerät zeigt an: 0,0,Null,0,Null, was ungefähr bedeuten könnte: HIER NICHTS INTERESSANTES",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.969819Z"
+  },
+  "scripts.actions_mono_detector_strange_probing_device.msg_4": {
+    "src_hash": "cbbd701a227c41b3a89cdf0f3dde1174",
+    "text": "Sie haben die Daten erfolgreich erfasst.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.970621Z"
+  },
+  "scripts.actions_outlaw_camp_door.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "The door seems to be sealed against unwanted intruders.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.973844Z"
+  },
+  "scripts.actions_peelerfun.msg_2": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Leider nicht möglich.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.975179Z"
+  },
+  "scripts.actions_pickenchanted.msg_2": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Leider nicht möglich.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.975775Z"
+  },
+  "scripts.actions_questDoors.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "The door seems to be sealed against unwanted intruders.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.978358Z"
+  },
+  "scripts.actions_questDoors.msg_4": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "The door seems to be sealed against unwanted intruders.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.979548Z"
+  },
+  "scripts.actions_resonance_chamber.say_1": {
+    "src_hash": "adc5fb51a0700429d5586beda62c4f6e",
+    "text": "PRRRROOOOOAAAAAHHHH!!!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.980612Z"
+  },
+  "scripts.actions_scarlett.msg_1": {
+    "src_hash": "5316cfe06e390d51d9a5ed89b00755ca",
+    "text": "Sie dürfen dies noch nicht verwenden.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.984906Z"
+  },
+  "scripts.actions_scarlett.msg_2": {
+    "src_hash": "7c285fed0553b05349a0985cdd855e24",
+    "text": "Du hältst den alten Brustpanzer von Galthein vor dir. Es passt nicht und ist viel zu alt, um jedem Angriff standzuhalten.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.985923Z"
+  },
+  "scripts.actions_scissorsfun.msg_1": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Leider nicht möglich.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.986601Z"
+  },
+  "scripts.actions_telescope.msg_1": {
+    "src_hash": "cd38aa8899c916fb75dd44e9e5292eda",
+    "text": "Das Teleskop bietet einen perfekten Blick über das endlose Meer – kein Land in Sicht",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.989807Z"
+  },
+  "scripts.actions_to_take_roots.msg_1": {
+    "src_hash": "0bbc4c04869af7016a8c329b16c09414",
+    "text": "Sie haben erfolgreich einige saftige Wurzeln geerntet.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.992036Z"
+  },
+  "scripts.actions_to_take_roots.msg_2": {
+    "src_hash": "9155c1b0f463d08b46559717336b3f6b",
+    "text": "Ihr Ernteversuch hat mehr saftige Wurzeln zerstört, als Sie retten konnten.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.993162Z"
+  },
+  "scripts.actions_to_take_roots.msg_3": {
+    "src_hash": "0bbc4c04869af7016a8c329b16c09414",
+    "text": "Sie haben erfolgreich einige saftige Wurzeln geerntet.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.994125Z"
+  },
+  "scripts.actions_to_take_roots.msg_4": {
+    "src_hash": "9155c1b0f463d08b46559717336b3f6b",
+    "text": "Ihr Ernteversuch hat mehr saftige Wurzeln zerstört, als Sie retten konnten.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.995494Z"
+  },
+  "scripts.actions_to_take_roots.msg_5": {
+    "src_hash": "092cbfa5e145ba8cdcd95cb397121daf",
+    "text": "Diese Wurzel wurde bereits geerntet, hier gibt es nichts zu gewinnen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.996522Z"
+  },
+  "scripts.actions_ungreez_door.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "The door seems to be sealed against unwanted intruders.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:16.999077Z"
+  },
+  "scripts.actions_using_crystals.msg_1": {
+    "src_hash": "4ece41ce875a4c261bd613cdc1472980",
+    "text": "Diese Kristallgeode zittert aufgrund einer Schlacht in der Nähe.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:17.000414Z"
+  },
+  "scripts.actions_using_crystals.msg_2": {
+    "src_hash": "4ece41ce875a4c261bd613cdc1472980",
+    "text": "Diese Kristallgeode zittert aufgrund einer Schlacht in der Nähe.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:17.001201Z"
+  },
+  "scripts.actions_using_crystals.msg_3": {
+    "src_hash": "4ece41ce875a4c261bd613cdc1472980",
+    "text": "Diese Kristallgeode zittert aufgrund einer Schlacht in der Nähe.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:17.002812Z"
+  },
+  "scripts.actions_wooden_trash.msg_1": {
+    "src_hash": "ff4835c520d079c29c29fafb7687a7d2",
+    "text": "Du hast eine Eskorte gestartet, bring deinen Gefangenen zum Außenposten der Zwerge!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:17.005610Z"
+  },
+  "scripts.actions_wooden_trash.msg_2": {
+    "src_hash": "464917965b3891096e423e2362e7f69c",
+    "text": "Unter den Trümmern findet man nichts Interessantes.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:17.006644Z"
+  },
+  "scripts.actions_yalahar_machine_war_golems.say_1": {
+    "src_hash": "98112328c358c3f5235e66814405aade",
+    "text": "*klicken*",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:17.007737Z"
+  },
+  "scripts.actions_zalamon_door.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "The door seems to be sealed against unwanted intruders.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:17.009499Z"
+  },
+  "scripts.closing_door.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "The door seems to be sealed against unwanted intruders.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:17.015857Z"
+  },
+  "scripts.construction_kits.msg_1": {
+    "src_hash": "cb245eea788d1e92bb6681bbb0d18c93",
+    "text": "Legen Sie den Bausatz zunächst auf den Boden.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:17.017927Z"
+  },
+  "scripts.construction_kits.msg_2": {
+    "src_hash": "388bc879bb1a6a973ed7816de1cd6c8c",
+    "text": "Sie dürfen dies nur innerhalb eines Hauses errichten.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:17.018633Z"
+  },
+  "scripts.creatureevent_commander_kills.msg_1": {
+    "src_hash": "eb8bc17634f1e64ed7a0dc8c720537a4",
+    "text": "Du hast das Gefecht verloren.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:17.019753Z"
+  },
+  "scripts.creaturescripts_pale_worm_death.msg_1": {
+    "src_hash": "bc350b5eed194d5d0e6934ca8e642b4e",
+    "text": "Herzlichen Glückwunsch, dass Sie das Poltergeist-Outfit erhalten haben.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:17.022252Z"
+  },
+  "scripts.demon_oak.voice_1": {
+    "src_hash": "55291c81c1a9e4f6db2be58b19fdca6d",
+    "text": "Lass mich los und du wirst reich belohnt!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:17.030004Z"
+  },
+  "scripts.demon_oak.voice_2": {
+    "src_hash": "f1e4a54071183dca782a4f6d40b483d1",
+    "text": "Was ist das? Liegen hier Dämonenbeine? Jemand könnte sie verloren haben!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:17.031212Z"
+  },
+  "scripts.demon_oak.voice_3": {
+    "src_hash": "bafe7978fb43a9dcd20b1fa0f7ad5fd7",
+    "text": "Ich bin gefangen, komm her und befreie mich schnell!!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:17.032066Z"
+  },
+  "scripts.demon_oak.voice_4": {
+    "src_hash": "b0dc6c4c7e38d8c4b07e2c6958a59050",
+    "text": "Ich kann deine Geliebte von den Toten zurückholen, lass mich einfach los!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:17.032926Z"
+  },
+  "scripts.demon_oak.voice_5": {
+    "src_hash": "6cb99eaeebe4ef40cb850ecc56acf667",
+    "text": "Was für eine schöne glänzende goldene Rüstung. Komm zu mir und du kannst es haben!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:17.033728Z"
+  },
+  "scripts.demon_oak.voice_6": {
+    "src_hash": "d16954fa91fadcf0361a4964a38060b7",
+    "text": "Finden Sie einen Weg hierher und lassen Sie mich frei! Bitte beeilen Sie sich!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:17.034512Z"
+  },
+  "scripts.demon_oak.voice_7": {
+    "src_hash": "f4a11c0915086be4d30e919fecb2f2d8",
+    "text": "Du kannst meinen Dämon loswerden, wenn du mir hilfst, hier rauszukommen!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:17.035270Z"
+  },
+  "scripts.dolls.12904_4": {
+    "src_hash": "136833af11abf3e1e761704915043ea3",
+    "text": "Have fun!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:17.037111Z"
+  },
+  "scripts.door.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "The door seems to be sealed against unwanted intruders.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:17.042872Z"
+  },
+  "scripts.fishing.msg_1": {
+    "src_hash": "42beb1e402e8e22fe8564e3e54add023",
+    "text": "Sie sind nicht der Eigentümer.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:17.054125Z"
+  },
+  "scripts.fluids.msg_1": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Es ist leer.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:17.055343Z"
+  },
+  "scripts.fluids.msg_2": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Es ist leer.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:17.055785Z"
+  },
+  "scripts.furyosa_deathball.say_1": {
+    "src_hash": "f38030a6453c6462e147c7da5c9995d8",
+    "text": "Back in black!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:33:17.057432Z"
   }
 }

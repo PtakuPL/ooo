@@ -9462,5 +9462,1205 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-14T06:05:21.315232Z"
+  },
+  "quests.svargrond_arena.completed_arena": {
+    "src_hash": "e98243884db06a20900513b9389da879",
+    "text": "Parabéns! Você completou a arena %s, você deve receber sua recompensa agora.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:24:21.626382Z"
+  },
+  "quests.common.found_item_too_heavy_v2": {
+    "src_hash": "fe8ca53a473098bcdae6c1adeb0acc4f",
+    "text": "Você encontrou {0}. Pesando {1} onças, é muito pesado.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:06.295726Z"
+  },
+  "quests.common.found_items": {
+    "src_hash": "2134ca05a222d4860007f29569f29cfe",
+    "text": "Você encontrou %s %s.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:06.296372Z"
+  },
+  "quests.common.found_no_capacity": {
+    "src_hash": "24b519e4e867809893d24dfdf82229bd",
+    "text": "Você encontrou %s pesando% 0,2f onças. Você não tem capacidade.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:06.297127Z"
+  },
+  "quests.common.found_no_room": {
+    "src_hash": "e88eed3e01659b864bbf69d3ee802c80",
+    "text": "Você encontrou %s, mas não tem espaço para pegá-lo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:06.297771Z"
+  },
+  "quests.common.found_no_room_to_take": {
+    "src_hash": "4b4c7eece38d5240b1814d622cc65f95",
+    "text": "Você encontrou um {0}. Mas você não tem espaço para aceitá-lo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:06.298676Z"
+  },
+  "quests.common.found_result": {
+    "src_hash": "182396eb89f1096446cd4066f4b1fe25",
+    "text": "Você encontrou %s.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:06.299500Z"
+  },
+  "quests.common.found_too_heavy": {
+    "src_hash": "33a50637639b5118c56745e302f4741a",
+    "text": "Você encontrou %s pesando %s onças, é muito pesado para você carregar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:06.301359Z"
+  },
+  "quests.common.found_too_heavy_to_carry": {
+    "src_hash": "88ffac1afc20b6cfd9dbe9d03d38aa4a",
+    "text": "Você encontrou um {0}. Pesando {1} onças, é muito pesado para você carregar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:06.302867Z"
+  },
+  "quests.common.item_empty": {
+    "src_hash": "2227c58ef8ae16a698c15b50277e3360",
+    "text": "O %s está vazio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:06.303767Z"
+  },
+  "quests.common.item_is_empty": {
+    "src_hash": "9fedea49c5747b4d85c1c89ff2bd3d8e",
+    "text": "O {0} está vazio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:06.304395Z"
+  },
+  "quests.common.need_players": {
+    "src_hash": "a83c7d7bada7ca4b8c0d01def82e87cf",
+    "text": "Você precisa de pelo menos {0} jogadores dentro da sala de missões.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:06.305254Z"
+  },
+  "quests.common.reward_no_room": {
+    "src_hash": "a187b5bf7af68f51dab839f0b430ea7a",
+    "text": "%s Mas você não tem espaço para isso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:06.305810Z"
+  },
+  "quests.common.reward_too_heavy": {
+    "src_hash": "e1039b8f7f51c7d75ef433a41dec5258",
+    "text": "%s. Pesando %s onças, é muito pesado para você carregar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:06.306539Z"
+  },
+  "quests.common.someone_fighting": {
+    "src_hash": "97a5cce165ebe2850a044efff30ddabd",
+    "text": "Tem alguém brigando com {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:06.307357Z"
+  },
+  "quests.common.wait_to_fight": {
+    "src_hash": "fba6cdd69d31f9eb85874cf4da951b41",
+    "text": "Você tem que esperar {0} horas para enfrentar {1} novamente!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:06.308176Z"
+  },
+  "quests.common.you_slayed": {
+    "src_hash": "4b51cc3dfdcae6db0a131e3c66775ead",
+    "text": "Você matou {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:06.308644Z"
+  },
+  "quests.common.you_slayed_times": {
+    "src_hash": "d6a7a4e2b62cd945bab46197c0eed601",
+    "text": "Você matou {0} {1} vezes!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:06.309213Z"
+  },
+  "quests.creatureevent_commander_kills.msg_1": {
+    "src_hash": "eb8bc17634f1e64ed7a0dc8c720537a4",
+    "text": "Você perdeu a batalha.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:06.310232Z"
+  },
+  "quests.creaturescripts_overlord_kill.say_1": {
+    "src_hash": "46a2135b118f06e9400ca190a247f5fc",
+    "text": "Você matou",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:06.311219Z"
+  },
+  "quests.creaturescripts_pale_worm_death.msg_1": {
+    "src_hash": "bc350b5eed194d5d0e6934ca8e642b4e",
+    "text": "Parabéns, você recebeu a roupa Poltergeist.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:06.311934Z"
+  },
+  "quests.creaturescripts_raging_mage_2.broadcast_1": {
+    "src_hash": "affae003bc5ca5f7834349418f4a1188",
+    "text": "Com um grande estrondo, o portal dimensional em Zao ruiu e \\z\n\t\tcom isso, a conexão com a outra dimensão foi destruída.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:06.313543Z"
+  },
+  "quests.creaturescripts_raging_mage_2.broadcast_2": {
+    "src_hash": "c148cc49192a344bf6c7c9fa6d2e6108",
+    "text": "Os restos mortais do Raging Mage estão espalhados no chão de sua Torre. \\z\n\tO portal dimensional treme.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:06.314700Z"
+  },
+  "quests.creaturescripts_raging_mage_kill.broadcast_1": {
+    "src_hash": "3b89542279a4e97944f1e27205cc280d",
+    "text": "Com um grande estrondo, o portal dimensional em Zao ruiu e com ele a conexão com a outra dimensão foi destruída.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:06.316233Z"
+  },
+  "quests.creaturescripts_raging_mage_kill.broadcast_2": {
+    "src_hash": "a633c94a1a9bf1be37c45d8e3ee73dd6",
+    "text": "Os restos mortais do Raging Mage estão espalhados no chão de sua Torre. O portal dimensional treme.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:06.317094Z"
+  },
+  "quests.cults_of_tibia.boss_room_timeout_kick": {
+    "src_hash": "cfcbc7849dbf6f79684e0a6f2e4b5c50",
+    "text": "Você foi expulso por exceder o limite de tempo na sala do chefe.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:06.317807Z"
+  },
+  "quests.cults_of_tibia.cult_energy_1": {
+    "src_hash": "671d913cd5f5c97fbebfddd81f0a46ee",
+    "text": "Seu corpo reage a essa estranha substância verde quando você estende a mão para tocá-la. Você sente um desejo por mais dessa energia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:06.318790Z"
+  },
+  "quests.cults_of_tibia.cult_energy_2": {
+    "src_hash": "2b8cd714f9fa1a2821f9aefc76b8fcd8",
+    "text": "Você reuniu uma quantidade impressionante de poder simplesmente tocando nos estranhos símbolos verdes do Barkless. Mas como...?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:06.319817Z"
+  },
+  "quests.cults_of_tibia.ice.msg_1": {
+    "src_hash": "830fbdb1e0e86a27c31c0007c6fd07d7",
+    "text": "Ao entrar na caverna gelada, você sente uma geada anormal. O ar gelado arde em seu rosto. Sobreviva e prove ser digno.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:06.320726Z"
+  },
+  "quests.cults_of_tibia.ice.msg_2": {
+    "src_hash": "a921d92c836ae9260754bac90ddfa103",
+    "text": "A temperatura do seu corpo diminui. Você pode ver sua respiração congelando no frio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:06.321463Z"
+  },
+  "quests.cults_of_tibia.ice.msg_3": {
+    "src_hash": "c81033584f8b0cdea8fe723c500753e0",
+    "text": "O frio gelado está agarrando você. Você mal consegue mais se mover.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:06.322126Z"
+  },
+  "quests.cults_of_tibia.ice.msg_4": {
+    "src_hash": "1901b7c161bc327e87255edc111121ae",
+    "text": "Agora você está lavado e pronto para se purificar nas câmaras de purificação.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:06.322849Z"
+  },
+  "quests.cults_of_tibia.ice.msg_5": {
+    "src_hash": "49b58823d77dc676db1e310ea8a2e848",
+    "text": "Agora você está pronto para provar seu valor. Anime-se e cruze o limiar do gelo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:06.323616Z"
+  },
+  "quests.cults_of_tibia.ice.msg_6": {
+    "src_hash": "495f7351822be4b78e786373c75d6d1c",
+    "text": "Você demorou tanto. Você não está mais purificado.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:06.324240Z"
+  },
+  "quests.cults_of_tibia.it_looks_like_there_is_someone": {
+    "src_hash": "50f020159d60c2b2c9c68d92cbf36694",
+    "text": "Parece que há alguém lá dentro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:06.324805Z"
+  },
+  "quests.cults_of_tibia.tar_acid.msg_1": {
+    "src_hash": "ead78a22f859066ec9d57d10bbc3b56e",
+    "text": "Ao entrar nos poços de enxofre, você sente os vapores secos e ardentes do enxofre ao seu redor. Mostre-se digno, sobreviva ao ácido.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:06.325924Z"
+  },
+  "quests.cults_of_tibia.tar_acid.msg_2": {
+    "src_hash": "c9530d94b77a7a4e28c21db1f6d3c743",
+    "text": "O enxofre está queimando sua pele. Você quase sente seu corpo derretendo em ácido.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:06.326687Z"
+  },
+  "quests.cults_of_tibia.tar_acid.msg_3": {
+    "src_hash": "897eaafe69909eb75d56fe9d0ba70879",
+    "text": "A queimação do ácido agora é insuportável, sua pele parece uma peneira. Quase não há mais forças em você - aja rapidamente!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:06.327574Z"
+  },
+  "quests.cults_of_tibia.tar_acid.msg_4": {
+    "src_hash": "60932ae2444f0118668b2d4d9046ea50",
+    "text": "Abrace o estigma da vaidade. O enxofre não queima mais a pele. Você passou no julgamento.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:06.328348Z"
+  },
+  "quests.cults_of_tibia.tar_acid.msg_5": {
+    "src_hash": "9c251b490b88890ee578904464bb077d",
+    "text": "Agora você está pronto para provar seu valor. Anime-se e cruze o limiar do enxofre.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:06.329154Z"
+  },
+  "quests.cults_of_tibia.tar_acid.msg_6": {
+    "src_hash": "8daa12db57a5cd099b253e961edefea1",
+    "text": "O ácido que cobre você esfriou e caiu em sua maior parte. Seu corpo não está mais aquecido.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:06.330124Z"
+  },
+  "quests.cults_of_tibia.tar_fire.msg_1": {
+    "src_hash": "03670e2850561062fe9fd557c597f0c3",
+    "text": "Ao entrar nos poços de alcatrão, você sente o calor ao seu redor aumentando dramaticamente. Sobreviva ao calor o tempo suficiente para provar que é digno.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:06.331493Z"
+  },
+  "quests.cults_of_tibia.tar_fire.msg_2": {
+    "src_hash": "afe9c062fcad0dfaed371f41f325a3f1",
+    "text": "Seu corpo está esquentando, o ar ao seu redor está tremeluzindo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:06.332962Z"
+  },
+  "quests.cults_of_tibia.tar_fire.msg_3": {
+    "src_hash": "f575456ac57a1329c31dae3a89abe1a5",
+    "text": "O calor agora é insuportável, o sangue em seu corpo parece lava. Quase não há mais forças em você - aja rapidamente!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:06.334090Z"
+  },
+  "quests.cults_of_tibia.tar_fire.msg_4": {
+    "src_hash": "c5f3b89f92a7442b2e42b32aa0f24087",
+    "text": "Abrace o estigma da má sorte. O alcatrão não parece mais tão quente. Você passou no teste do alcatrão.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:06.335660Z"
+  },
+  "quests.cults_of_tibia.tar_fire.msg_5": {
+    "src_hash": "671d913cd5f5c97fbebfddd81f0a46ee",
+    "text": "Seu corpo reage a essa estranha substância verde quando você estende a mão para tocá-la. Você sente um desejo por mais dessa energia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:06.337156Z"
+  },
+  "quests.cults_of_tibia.tar_fire.msg_6": {
+    "src_hash": "69828c9b2866aff3163734b5536f688b",
+    "text": "O alcatrão que cobre você esfriou e caiu em sua maior parte. Seu corpo não está mais aquecido.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:06.338176Z"
+  },
+  "quests.cults_of_tibia.task_teleport_say_1": {
+    "src_hash": "fc959524c181fe732cea25456db9be19",
+    "text": "Você absorve os restos energéticos desta alma em decomposição. Seu poder é muito frágil e passageiro",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:06.339003Z"
+  },
+  "quests.cults_of_tibia.task_teleport_say_2": {
+    "src_hash": "2277263cd6474fa0e105ef2c24fad53d",
+    "text": "Você absorve os restos energéticos desta alma embranquecida. Seu poder é muito frágil e passageiro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:06.339757Z"
+  },
+  "quests.cults_of_tibia.the_room_is_full": {
+    "src_hash": "c392e2d4b7bc00e3f6d77bb62792a3c6",
+    "text": "A sala está cheia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:06.340264Z"
+  },
+  "quests.cults_of_tibia.you_cant_go_there_yet": {
+    "src_hash": "06f23b40933b62937c5e4dc5c1daf878",
+    "text": "Você não pode ir lá ainda.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:06.340729Z"
+  },
+  "quests.cults_of_tibia.you_need_exactly_10_players_to": {
+    "src_hash": "da4ca441dd1e0e846918a451309695ec",
+    "text": "Você precisa de exatamente 10 jogadores para iniciar este desafio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:28.116711Z"
+  },
+  "quests.cults_of_tibia.you_need_exactly_5_players_to": {
+    "src_hash": "9e4c98b791d52e8b1ac8575cea48760f",
+    "text": "Você precisa de exatamente 5 jogadores para iniciar este desafio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:28.117469Z"
+  },
+  "quests.cults_of_tibia.you_need_to_wait_for_10": {
+    "src_hash": "8ed2dcd3c613b3e563ef0235304ed160",
+    "text": "Você precisa esperar 10 horas para enfrentar esse chefe novamente.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:28.118078Z"
+  },
+  "quests.cults_of_tibia.you_need_to_wait_for_20": {
+    "src_hash": "ad5616742f0d60619c1619a192a9831c",
+    "text": "Você precisa esperar 20 horas para enfrentar esse chefe novamente.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:28.118737Z"
+  },
+  "quests.custom.couldnt_find_any_position_for_you": {
+    "src_hash": "eac8994d451c78b32788efd039fe9e3d",
+    "text": "Não foi possível encontrar nenhuma vaga para você no momento.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:28.119313Z"
+  },
+  "quests.dark_trails.you_need_4_players_to_fight": {
+    "src_hash": "f8616bd446505a250fe2dd4e0f2bb8e8",
+    "text": "Você precisa de 4 jogadores para lutar com The Ravager.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:28.119878Z"
+  },
+  "quests.dark_trails.you_need_5_players_to_fight": {
+    "src_hash": "dd66394f98cf7a92f092a64cf4b6f701",
+    "text": "Você precisa de 5 jogadores para lutar com Death Priest Shargon.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:28.120472Z"
+  },
+  "quests.dark_trails.you_need_exactly_5_players_to": {
+    "src_hash": "3b4c4eca07178defda28435c1bf2bbdd",
+    "text": "Você precisa de exatamente 5 jogadores para lutar com Death Priest Shargon.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:28.121101Z"
+  },
+  "quests.dawnport.first_time_vocation": {
+    "src_hash": "632c8e6c1a41db98f6da0017c97dfb26",
+    "text": "Como esta é sua primeira vez como %s %s",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:28.121636Z"
+  },
+  "quests.dawnport.received_weapons": {
+    "src_hash": "00b1359d03d36f78ebc8454d99a4c107",
+    "text": "Você recebeu as armas de um %s. %s",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:28.122297Z"
+  },
+  "quests.deeplings.boss_defends": {
+    "src_hash": "300ffad49f322c2ef4669acbab761d18",
+    "text": "{0} defende seus pertences e não deixa você abrir seu baú.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:28.123186Z"
+  },
+  "quests.demon_oak.master_crush": {
+    "src_hash": "f45c9ec1422dccdef3363c54309770b9",
+    "text": "COMO ISSO É POSSÍVEL?!? MEU MESTRE VAI ESMAGAR VOCÊ!! AHRRGGG!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:28.123836Z"
+  },
+  "quests.demon_oak.sound_1": {
+    "src_hash": "64858b07745250c936399f2141b9ae80",
+    "text": "MINHAS RAÍZES SÃO AFIADAS COMO UMA FOICE! SENTE?!?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:28.124368Z"
+  },
+  "quests.demon_oak.sound_2": {
+    "src_hash": "21b22bf438167c41b9754424d93ebe2e",
+    "text": "MALDIÇOTE VOCÊ!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:28.124695Z"
+  },
+  "quests.demon_oak.sound_3": {
+    "src_hash": "ad954e578749aec118f170e9cc6cddb1",
+    "text": "LEVANTEM-SE, MINIONS, LEVANTAM-SE DOS MORTOS!!!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:28.125164Z"
+  },
+  "quests.demon_oak.sound_4": {
+    "src_hash": "73a3aa812824cdc1b55c2f3eed86217c",
+    "text": "AHHHH! SEU SANGUE ME FAZ FORTE!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:28.125756Z"
+  },
+  "quests.demon_oak.sound_5": {
+    "src_hash": "32c5ccaa47af898221a429cc74e76312",
+    "text": "PEGUE OS OSSOS, HELLHOUND! PEGUE-OS!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:28.126237Z"
+  },
+  "quests.demon_oak.sound_6": {
+    "src_hash": "215518027445ceeb220fa31ef6203b35",
+    "text": "CHEGA ONDE EU POSSO TE ENCONTRAR!!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:28.126835Z"
+  },
+  "quests.demon_oak.sound_7": {
+    "src_hash": "f4bacd0a57b22b2bc63c2ba67bd432ac",
+    "text": "A DOR ETERNA ESPERA POR VOCÊ! BELA RECOMPENSA, HEIN?!?!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:25:28.127380Z"
+  },
+  "lib.hireling.as_you_wish": {
+    "src_hash": "dd4bc9876390c6c2e60f02e875dd2d33",
+    "text": "As you wish!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:32.735633Z"
+  },
+  "scripts.2_ambassadors_treason.msg_1": {
+    "src_hash": "14dfffed3e8aaff6aa4f4509ee470001",
+    "text": "Documentos foram queimados aqui recentemente. Apenas a parte de um pergaminho ainda está na frente da chaminé, mas está fuligem demais para ser lida.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:32.759724Z"
+  },
+  "scripts.2_ambassadors_treason.msg_2": {
+    "src_hash": "dd483e9a16530ce89de99a1dc0f9f197",
+    "text": "Você já investigou isso.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:32.761478Z"
+  },
+  "scripts.2_ambassadors_treason.msg_3": {
+    "src_hash": "f0502f434837f12f681eb194dd73e2d4",
+    "text": "Pedaços de papel estão espalhados pelo chão. Leva algum tempo para reuni-los novamente. Mas é apenas um poema mal escrito.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:32.772837Z"
+  },
+  "scripts.2_ambassadors_treason.msg_4": {
+    "src_hash": "dd483e9a16530ce89de99a1dc0f9f197",
+    "text": "Você já investigou isso.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:32.774773Z"
+  },
+  "scripts.2_ambassadors_treason.msg_5": {
+    "src_hash": "92080f0ef8fde073cd9d9b26347d601b",
+    "text": "Você examina os pergaminhos cuidadosamente. Essas são ordens de Rathleton para o Embaixador. Nenhum sinal de traição aqui.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:32.777219Z"
+  },
+  "scripts.2_ambassadors_treason.msg_6": {
+    "src_hash": "dd483e9a16530ce89de99a1dc0f9f197",
+    "text": "Você já investigou isso.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:32.779040Z"
+  },
+  "scripts.2_ambassadors_treason.msg_7": {
+    "src_hash": "8464bf58b6d5fa7bbe7ed698b810582e",
+    "text": "Você não encontra nada na casa do Embaixador. Se ele for de fato um traidor, livrou-se de qualquer prova que pudesse incriminá-lo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:32.781481Z"
+  },
+  "scripts.6_mind_travel.msg_1": {
+    "src_hash": "39c4cd386bc515db3ca13ad71ea9a439",
+    "text": "Você se sente trêmulo e tonto, o mundo fica escuro ao seu redor. Então sua visão clareia novamente – e você está em outro lugar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:32.794013Z"
+  },
+  "scripts.6_mind_travel.msg_2": {
+    "src_hash": "1e57dd425d49fa37eefdeb9faa01a4f2",
+    "text": "Você foi movido para o lado direito do cérebro",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:32.795501Z"
+  },
+  "scripts.6_mind_travel.msg_3": {
+    "src_hash": "98da952f701d6358d74f1d9a180990fa",
+    "text": "Você foi movido para o lado esquerdo do cérebro",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:32.797121Z"
+  },
+  "scripts.8_blessing_the_statues.msg_1": {
+    "src_hash": "414cb5c464ec2b74b4431b6931757db9",
+    "text": "Você abençoa a estátua.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:32.798725Z"
+  },
+  "scripts.8_blessing_the_statues.msg_2": {
+    "src_hash": "4a64e6aeefc9b8c9f1fd15709a257e2d",
+    "text": "Você já abençoou esta estátua.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:32.800118Z"
+  },
+  "scripts.action_cat_basket.say_1": {
+    "src_hash": "2640241ef563e67c405bc0dbe5b18ed4",
+    "text": "FCHHHHH",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:32.816146Z"
+  },
+  "scripts.action_drume.msg_1": {
+    "src_hash": "5a37b3d700f88246b6e36e3077df916b",
+    "text": "Seu tempo acabou.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:32.818750Z"
+  },
+  "scripts.action_tortoise_egg_nargor.msg_1": {
+    "src_hash": "2dba8779b7220248332287566af0d980",
+    "text": "You found",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:32.833542Z"
+  },
+  "scripts.actions_bonefiddle.msg_1": {
+    "src_hash": "1d91d803c170748ff4f101712cf1c262",
+    "text": "Você prende a madeira de ébano ao crânio. Isso deve atender aos requisitos de um braço.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:32.854257Z"
+  },
+  "scripts.actions_bonefiddle.msg_2": {
+    "src_hash": "e8a3f87ef1f8ea48f276ed48a8524749",
+    "text": "Você prende o cabelo na escala de ébano. Os fios devem ser adequados para servirem de barbante.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:32.856302Z"
+  },
+  "scripts.actions_bonefiddle.msg_3": {
+    "src_hash": "60b384a0aa95079616923d65a09d92fc",
+    "text": "*Era uma vez uma donzela bela, de olhos escuros e cabelos sedosos. Longe de casa ela morreu. Sem sepultura, sem velório, sem luto.*",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:32.858618Z"
+  },
+  "scripts.actions_bonefiddle.msg_4": {
+    "src_hash": "5199ba776a4a3a24d69420d0eb2e685b",
+    "text": "Você está tocando Peacock Ballad e o portal se abre.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:32.869492Z"
+  },
+  "scripts.actions_bonefiddle.msg_5": {
+    "src_hash": "fa77689cf9736ba9d5773f0e3b7b2683",
+    "text": "Você está tocando violino de osso.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:32.871812Z"
+  },
+  "scripts.actions_boss_timira_fight.msg_3": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "You found.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:32.875963Z"
+  },
+  "scripts.actions_calassa_comb_door.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "The door seems to be sealed against unwanted intruders.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:32.898909Z"
+  },
+  "scripts.actions_chests.msg_1": {
+    "src_hash": "bed7df9c948642d0d52b4756ddf83ded",
+    "text": "You have found a",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:32.908663Z"
+  },
+  "scripts.actions_chests.msg_2": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "It is empty.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:32.909895Z"
+  },
+  "scripts.actions_containerRewards.msg_2": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "It is empty.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:32.914621Z"
+  },
+  "scripts.actions_doors.msg_1": {
+    "src_hash": "97292b2d9c656199befd6d213f4e5194",
+    "text": "Você não tem nível suficiente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:32.946858Z"
+  },
+  "scripts.actions_doors.msg_2": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "The door seems to be sealed against unwanted intruders.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:32.956638Z"
+  },
+  "scripts.actions_dreamcatcher_curse.msg_1": {
+    "src_hash": "eb5a28c1cc7d964dd2cbb2fc6553795f",
+    "text": "Você tem uma sensação de pavor.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:32.961460Z"
+  },
+  "scripts.actions_entrance.msg_1": {
+    "src_hash": "3bf818c8ff9e1fb2d25ccd26775d7cd5",
+    "text": "Mais uma vez você mistura o giz com uma gota de seu sangue e um pouco de água e renova o símbolo no chão...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:32.964199Z"
+  },
+  "scripts.actions_entrance.msg_2": {
+    "src_hash": "b33b6be9b885ba871d5ec857ce3fd539",
+    "text": "Você só pode usar esta entrada durante a noite.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:32.974190Z"
+  },
+  "scripts.actions_fragrance.msg_1": {
+    "src_hash": "88589a6c42c6ad348e20ed9f1aaef6af",
+    "text": "Hmmmm, que fragrância apaixonante!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:32.980913Z"
+  },
+  "scripts.actions_gnome_items.msg_4": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "It is empty.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:32.992476Z"
+  },
+  "scripts.actions_gnomish_chest.msg_2": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "It is empty.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:32.996463Z"
+  },
+  "scripts.actions_mission3_chest.msg_2": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "You found.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:33.057692Z"
+  },
+  "scripts.actions_mono_detector_strange_probing_device.msg_1": {
+    "src_hash": "7302b053c0f22e53182c9674c7530e39",
+    "text": "A sonda foi ajustada.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:33.060867Z"
+  },
+  "scripts.actions_mono_detector_strange_probing_device.msg_3": {
+    "src_hash": "9d0ce14678d498a52e1d256ff430a7ca",
+    "text": "Hm... o dispositivo lê: 0,0,zero,0,zero, o que pode ser traduzido aproximadamente como: NADA DE INTERESSE AQUI",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:33.064797Z"
+  },
+  "scripts.actions_mono_detector_strange_probing_device.msg_4": {
+    "src_hash": "cbbd701a227c41b3a89cdf0f3dde1174",
+    "text": "Você coletou os dados com sucesso.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:33.066158Z"
+  },
+  "scripts.actions_outlaw_camp_door.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "The door seems to be sealed against unwanted intruders.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:33.084048Z"
+  },
+  "scripts.actions_portal_minis_ancient_feud.msg_1": {
+    "src_hash": "d7675b7b6e4edadcaa460bfa24c70b35",
+    "text": "All the players need to be level",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:33.099642Z"
+  },
+  "scripts.actions_portal_minis_ancient_feud.msg_2": {
+    "src_hash": "b97f99b956df2fe9bb7b47e1908f0684",
+    "text": "You have to wait",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:33.101519Z"
+  },
+  "scripts.actions_portal_minis_feaster.msg_1": {
+    "src_hash": "d7675b7b6e4edadcaa460bfa24c70b35",
+    "text": "All the players need to be level",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:33.109221Z"
+  },
+  "scripts.actions_portal_minis_feaster.msg_2": {
+    "src_hash": "b97f99b956df2fe9bb7b47e1908f0684",
+    "text": "You have to wait",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:33.111036Z"
+  },
+  "scripts.actions_portal_minis_grimvale.msg_1": {
+    "src_hash": "b97f99b956df2fe9bb7b47e1908f0684",
+    "text": "You have to wait",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:33.112465Z"
+  },
+  "scripts.actions_portal_minis_kilmaresh.msg_1": {
+    "src_hash": "d7675b7b6e4edadcaa460bfa24c70b35",
+    "text": "All the players need to be level",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:33.117890Z"
+  },
+  "scripts.actions_portal_minis_kilmaresh.msg_2": {
+    "src_hash": "b97f99b956df2fe9bb7b47e1908f0684",
+    "text": "You have to wait",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:33.119235Z"
+  },
+  "scripts.actions_questDoors.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "The door seems to be sealed against unwanted intruders.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:33.128905Z"
+  },
+  "scripts.actions_questDoors.msg_4": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "The door seems to be sealed against unwanted intruders.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:33.131796Z"
+  },
+  "scripts.actions_resonance_chamber.say_1": {
+    "src_hash": "adc5fb51a0700429d5586beda62c4f6e",
+    "text": "PRRRROOOOOAAAAAHHHH!!!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:33.134200Z"
+  },
+  "scripts.actions_reward.msg_4": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "You found.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:33.136018Z"
+  },
+  "scripts.actions_reward.msg_6": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "You found.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:33.145765Z"
+  },
+  "scripts.actions_rewards.msg_3": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "You found.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:33.147365Z"
+  },
+  "scripts.actions_scarlett.msg_1": {
+    "src_hash": "5316cfe06e390d51d9a5ed89b00755ca",
+    "text": "Você não tem permissão para usar isso ainda.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:33.153699Z"
+  },
+  "scripts.actions_scarlett.msg_2": {
+    "src_hash": "7c285fed0553b05349a0985cdd855e24",
+    "text": "Você segura o velho peitoral de Galthein à sua frente. Não cabe e é muito antigo para resistir a qualquer ataque.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:33.164173Z"
+  },
+  "scripts.actions_telescope.msg_1": {
+    "src_hash": "cd38aa8899c916fb75dd44e9e5292eda",
+    "text": "O telescópio oferece uma visão perfeita do oceano sem fim – nenhuma terra à vista",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:33.179635Z"
+  },
+  "scripts.actions_to_take_roots.msg_1": {
+    "src_hash": "0bbc4c04869af7016a8c329b16c09414",
+    "text": "Você colheu com sucesso algumas raízes suculentas.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:33.183993Z"
+  },
+  "scripts.actions_to_take_roots.msg_2": {
+    "src_hash": "9155c1b0f463d08b46559717336b3f6b",
+    "text": "Sua tentativa de colheita destruiu mais raízes suculentas do que você poderia salvar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:33.185747Z"
+  },
+  "scripts.actions_to_take_roots.msg_3": {
+    "src_hash": "0bbc4c04869af7016a8c329b16c09414",
+    "text": "Você colheu com sucesso algumas raízes suculentas.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:33.187330Z"
+  },
+  "scripts.actions_to_take_roots.msg_4": {
+    "src_hash": "9155c1b0f463d08b46559717336b3f6b",
+    "text": "Sua tentativa de colheita destruiu mais raízes suculentas do que você poderia salvar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:33.189035Z"
+  },
+  "scripts.actions_to_take_roots.msg_5": {
+    "src_hash": "092cbfa5e145ba8cdcd95cb397121daf",
+    "text": "Essa raiz já foi colhida, não há nada a ganhar aqui.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:33.195785Z"
+  },
+  "scripts.actions_treasure_chest.msg_1": {
+    "src_hash": "2dba8779b7220248332287566af0d980",
+    "text": "You found",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:33.200747Z"
+  },
+  "scripts.actions_treasure_chest.msg_2": {
+    "src_hash": "2dba8779b7220248332287566af0d980",
+    "text": "You found",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:33.201882Z"
+  },
+  "scripts.actions_ungreez_door.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "The door seems to be sealed against unwanted intruders.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:33.204609Z"
+  },
+  "scripts.actions_using_crystals.msg_1": {
+    "src_hash": "4ece41ce875a4c261bd613cdc1472980",
+    "text": "Este geodo de cristal está tremendo devido a uma batalha próxima.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:33.218013Z"
+  },
+  "scripts.actions_using_crystals.msg_2": {
+    "src_hash": "4ece41ce875a4c261bd613cdc1472980",
+    "text": "Este geodo de cristal está tremendo devido a uma batalha próxima.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:33.219703Z"
+  },
+  "scripts.actions_using_crystals.msg_3": {
+    "src_hash": "4ece41ce875a4c261bd613cdc1472980",
+    "text": "Este geodo de cristal está tremendo devido a uma batalha próxima.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:33.221298Z"
+  },
+  "scripts.actions_wooden_trash.msg_1": {
+    "src_hash": "ff4835c520d079c29c29fafb7687a7d2",
+    "text": "Você iniciou uma escolta, leve seu prisioneiro ao posto avançado dos anões!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:33.224407Z"
+  },
+  "scripts.actions_wooden_trash.msg_2": {
+    "src_hash": "464917965b3891096e423e2362e7f69c",
+    "text": "Você não encontra nada de interesse sob os escombros.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:33.225900Z"
+  },
+  "scripts.actions_yalahar_machine_war_golems.say_1": {
+    "src_hash": "98112328c358c3f5235e66814405aade",
+    "text": "*clique*",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:33.239870Z"
+  },
+  "scripts.actions_zalamon_door.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "The door seems to be sealed against unwanted intruders.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:33.254546Z"
+  },
+  "scripts.chest.msg_1": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "You found.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:33.289704Z"
+  },
+  "scripts.closing_door.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "The door seems to be sealed against unwanted intruders.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:33.318414Z"
+  },
+  "scripts.creatureevent_commander_kills.msg_1": {
+    "src_hash": "eb8bc17634f1e64ed7a0dc8c720537a4",
+    "text": "Você perdeu a batalha.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:33.326064Z"
+  },
+  "scripts.creaturescripts_pale_worm_death.msg_1": {
+    "src_hash": "bc350b5eed194d5d0e6934ca8e642b4e",
+    "text": "Parabéns, você recebeu a roupa Poltergeist.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:33.354802Z"
+  },
+  "scripts.dolls.12904_4": {
+    "src_hash": "136833af11abf3e1e761704915043ea3",
+    "text": "Have fun!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:33.376463Z"
+  },
+  "scripts.door.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "The door seems to be sealed against unwanted intruders.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:33.388042Z"
+  },
+  "scripts.find_fiend.level_unknown": {
+    "src_hash": "88183b946cc5f0e8c96b2e66e1c74a7e",
+    "text": "UnkNãown",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:33.392610Z"
+  },
+  "scripts.find_person.dir_north": {
+    "src_hash": "8d8d1437907bca79900ac5f0ea1f5c73",
+    "text": "nãorth",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:33.393716Z"
+  },
+  "scripts.fluids.msg_1": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "It is empty.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:33.395815Z"
+  },
+  "scripts.fluids.msg_2": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "It is empty.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:37:33.396389Z"
   }
 }

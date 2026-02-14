@@ -1,15 +1,21 @@
 {
-  "total_cycles": 1,
+  "total_cycles": 5,
   "mode": "AUTO_TRANSLATE",
-  "category": "lv",
-  "last_update": "2026-02-14T07:50:46.553093",
+  "category": "bg",
+  "last_update": "2026-02-14T08:56:25.972922",
   "migration": {
     "files_scanned": 2297,
+    "files_scanned_live": 2299,
+    "files_scanned_history": 6443,
+    "files_scanned_history_minus_live": 4144,
     "files_with_keys": 1897,
     "files_without_keys": 400,
-    "keys_extracted": 6248,
-    "current_category": "quests",
-    "batch_size": 1
+    "keys_extracted": 53586,
+    "keys_extracted_live": 53586,
+    "keys_extracted_worker_registry": 6248,
+    "keys_extracted_outside_worker_registry": 47338,
+    "current_category": "tr",
+    "batch_size": 0
   },
   "translation_sync": {
     "language": "pl",
@@ -17,9 +23,9 @@
     "keys_to_sync": 0
   },
   "auto_translate": {
-    "language": "lv",
-    "json_file": "npc.json",
-    "keys_to_translate": 12549,
+    "language": "bg",
+    "json_file": "monsters.json",
+    "keys_to_translate": 4281,
     "guard_fail": 0,
     "strict_missing_key": 0,
     "strict_blocker": "",

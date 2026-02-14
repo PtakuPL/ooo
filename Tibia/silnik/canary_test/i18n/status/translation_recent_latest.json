@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-14T07:06:09.181382Z",
-  "language": "th",
-  "json_file": "npc.json",
+  "timestamp": "2026-02-14T07:56:40.928671Z",
+  "language": "el",
+  "json_file": "monsters.json",
   "translated": 80,
   "entries": [
     {
-      "key": "npc.a_frog.stdmod_1",
-      "en": "If another prince comes to kiss me, I'll kick his ass so bad that he'll need a sedan chair to get away.",
-      "translated": "ถ้าเจ้าชายอีกคนมาจูบฉัน ฉันจะเตะตูดเขาจนต้องนั่งเกวียนหนีไป.",
-      "source": "google_translate"
+      "key": "monster.fernfang.name",
+      "en": "Fernfang",
+      "translated": "Fernfang",
+      "source": "simple"
     },
     {
-      "key": "npc.a_frog.stdmod_2",
-      "en": "If another prince comes to kiss me, I'll kick his ass so bad that he'll need a sedan chair to get away.",
-      "translated": "ถ้าเจ้าชายอีกคนมาจูบฉัน ฉันจะเตะตูดเขาจนต้องนั่งเกวียนหนีไป.",
-      "source": "google_translate"
+      "key": "monster.fernfang.desc",
+      "en": "Fernfang",
+      "translated": "Fernfang",
+      "source": "simple"
     },
     {
-      "key": "npc.a_frog.stdmod_3",
-      "en": "Don't even try to kiss me or I'll rondhouse kick you!",
-      "translated": "อย่าแม้แต่จะจูบฉัน ไม่งั้นฉันจะเตะคุณ!",
-      "source": "google_translate"
+      "key": "monster.badger.name",
+      "en": "Badger",
+      "translated": "Badger",
+      "source": "simple"
     },
     {
-      "key": "npc.a_frog.stdmod_4",
-      "en": "Talking frogs don't exist, idiot. It's your fucking imagination tricking you. And now your imagination commands you to walk away.",
-      "translated": "กบพูดได้ไม่มีอยู่จริง ไอ้โง่ มันเป็นจินตนาการร่วมเพศของคุณที่หลอกคุณ และตอนนี้จินตนาการของคุณสั่งให้คุณเดินจากไป.",
-      "source": "google_translate"
+      "key": "monster.water_buffalo.name",
+      "en": "Water Buffalo",
+      "translated": "Water Buffalo",
+      "source": "simple"
     },
     {
-      "key": "npc.a_frog.stdmod_5",
-      "en": "Finally someone notices I'm a FROG. Congratulations, you're VERY observant... *sigh*",
-      "translated": "ในที่สุดก็มีคนสังเกตเห็นว่าฉันเป็นกบ ยินดีด้วย คุณช่างสังเกตมาก... *ถอนหายใจ*",
-      "source": "google_translate"
+      "key": "monster.sabretooth.name",
+      "en": "Sabretooth",
+      "translated": "Σαμπρέδοντο",
+      "source": "simple"
     },
     {
-      "key": "npc.a_frog.stdmod_6",
-      "en": "A quest? Yeah I got a quest! Go and tell King Tibianus his son tried to kiss me again!",
-      "translated": "ภารกิจ? ใช่แล้ว ฉันมีภารกิจ! ไปบอกกษัตริย์ Tibianus ลูกชายของเขาว่าพยายามจะจูบฉันอีกครั้ง!",
-      "source": "google_translate"
+      "key": "monster.yeti.name",
+      "en": "Yeti",
+      "translated": "Yeti",
+      "source": "simple"
     },
     {
-      "key": "npc.a_frog.stdmod_7",
-      "en": "Pyrale? That idiot transformed me into an human once. But my wife came and kissed me, so I'm a frog again.",
-      "translated": "ไพเรล? ไอ้โง่นั่นทำให้ฉันกลายเป็นมนุษย์ครั้งหนึ่ง แต่เมียมาจูบฉัน ฉันก็กลายเป็นกบอีกแล้ว.",
-      "source": "google_translate"
+      "key": "monster.wild_warrior.name",
+      "en": "Wild Warrior",
+      "translated": "Wild Warrior",
+      "source": "simple"
     },
     {
-      "key": "npc.a_frog.stdmod_8",
-      "en": "Pyrale? That idiot transformed me into an human once. But my wife came and kissed me, so I'm a frog again.",
-      "translated": "ไพเรล? ไอ้โง่นั่นทำให้ฉันกลายเป็นมนุษย์ครั้งหนึ่ง แต่เมียมาจูบฉัน ฉันก็กลายเป็นกบอีกแล้ว.",
-      "source": "google_translate"
+      "key": "monster.warlock.name",
+      "en": "Warlock",
+      "translated": "Warlock",
+      "source": "simple"
     },
     {
-      "key": "npc.a_frog.walkaway_msg_1",
-      "en": "Hah! That idiot finally left.",
-      "translated": "ฮ่า! ในที่สุดคนโง่คนนั้นก็จากไป.",
-      "source": "google_translate"
+      "key": "monster.nomad.name",
+      "en": "Nomad",
+      "translated": "Nomad",
+      "source": "simple"
     },
     {
-      "key": "npc.a_ghostly_sage.greet_msg_1",
-      "en": "Ah, I feel a mortal walks these ancient halls again. Pardon me, I barely notice you. I am so lost in my thoughts.",
-      "translated": "อา ฉันรู้สึกว่ามนุษย์กำลังเดินอยู่ในห้องโถงโบราณเหล่านี้อีกครั้ง ขอโทษที ฉันแทบจะไม่สังเกตเห็นคุณเลย ฉันหลงทางในความคิดของฉัน.",
-      "source": "google_translate"
+      "key": "monster.renegade_knight.name",
+      "en": "Renegade Knight",
+      "translated": "Renegade knight",
+      "source": "simple"
     },
     {
-      "key": "npc.a_ghostly_sage.stdmod_1",
-      "en": "You will now be travelled out of here. Are you sure that you want to face that teleport?",
-      "translated": "ตอนนี้คุณจะถูกเดินทางออกจากที่นี่ คุณแน่ใจหรือว่าต้องการเผชิญกับเทเลพอร์ตนั้น?",
-      "source": "google_translate"
+      "key": "monster.nomad_blue.name",
+      "en": "Nomad",
+      "translated": "Nomad",
+      "source": "simple"
     },
     {
-      "key": "npc.a_ghostly_sage.stdmod_2",
-      "en": "Then stay here in these ghostly halls.",
-      "translated": "ถ้าอย่างนั้นก็อยู่ที่นี่ในห้องโถงผีสิงเหล่านี้.",
-      "source": "google_translate"
+      "key": "monster.feverish_citizen.name",
+      "en": "Feverish Citizen",
+      "translated": "Feverish Citizen",
+      "source": "simple"
     },
     {
-      "key": "npc.a_ghostly_sage.stdmod_3",
-      "en": "I can offer you a {teleport}.",
-      "translated": "ฉันสามารถเสนอ {teleport} ให้คุณได้.",
-      "source": "google_translate"
+      "key": "monster.nomad_female.name",
+      "en": "Nomad",
+      "translated": "Nomad",
+      "source": "simple"
     },
     {
-      "key": "npc.a_ghostly_sage.stdmod_4",
-      "en": "Dont mind me.",
-      "translated": "อย่ารังเกียจฉันเลย.",
-      "source": "google_translate"
+      "key": "monster.vile_grandmaster.name",
+      "en": "Vile Grandmaster",
+      "translated": "Vile grandmaster",
+      "source": "simple"
     },
     {
-      "key": "npc.a_ghostly_woman.farewell_msg_1",
-      "en": "Alone ... so alone. So cold.",
-      "translated": "คนเดียว...เดียวดาย.. หนาวจังเลย.",
-      "source": "google_translate"
+      "key": "monster.fire_devil.name",
+      "en": "Fire Devil",
+      "translated": "Fire Devil",
+      "source": "simple"
     },
     {
-      "key": "npc.a_ghostly_woman.greet_msg_1",
-      "en": "I feel you. I hear your thoughts. You are ... alive.",
-      "translated": "ฉันรู้สึกถึงคุณ ฉันได้ยินความคิดของคุณ คุณ...มีชีวิตอยู่.",
-      "source": "google_translate"
+      "key": "monster.serpent_spawn.name",
+      "en": "Serpent Spawn",
+      "translated": "Serpent Spawn",
+      "source": "simple"
     },
     {
-      "key": "npc.a_ghostly_woman.stdmod_1",
-      "en": "Once I was a member of the order of the nightmare knights. Now I am but a shadow who walks these cold halls.",
-      "translated": "ครั้งหนึ่งฉันเคยเป็นสมาชิกลำดับอัศวินฝันร้าย ตอนนี้ฉันเป็นเพียงเงาที่เดินอยู่ในห้องโถงอันหนาวเย็นเหล่านี้.",
-      "source": "google_translate"
+      "key": "monster.cobra.name",
+      "en": "Cobra",
+      "translated": "Cobra",
+      "source": "simple"
     },
     {
-      "key": "npc.a_ghostly_woman.stdmod_2",
-      "en": "The north has a puzzle to complete.",
-      "translated": "ภาคเหนือมีปริศนาให้แก้.",
-      "source": "google_translate"
+      "key": "monster.scarab.name",
+      "en": "Scarab",
+      "translated": "Scarab",
+      "source": "simple"
     },
     {
-      "key": "npc.a_ghostly_woman.voice_1",
-      "en": "Alone ... so alone. So cold.",
-      "translated": "คนเดียว...เดียวดาย.. หนาวจังเลย.",
-      "source": "google_translate"
+      "key": "monster.terramite.name",
+      "en": "Terramite",
+      "translated": "Terramite",
+      "source": "simple"
     },
     {
-      "key": "npc.a_ghostly_woman.walkaway_msg_1",
-      "en": "Alone ... so alone. So cold.",
-      "translated": "คนเดียว...เดียวดาย.. หนาวจังเลย.",
-      "source": "google_translate"
+      "key": "monster.gargoyle.name",
+      "en": "Gargoyle",
+      "translated": "Gargoyle",
+      "source": "simple"
     }
   ]
 }

@@ -5,23 +5,23 @@
 ## 🧭 META
 
 > **[META]** 🟢 ACTIVE  
-> Świeżość: teraz | Źródło: `update_github_status()` | Ostatnia aktualizacja: 2026-02-14 07:04:01
+> Świeżość: teraz | Źródło: `update_github_status()` | Ostatnia aktualizacja: 2026-02-14 07:06:13
 
-> **Aktualizacja:** 2026-02-14 07:04:01 UTC  
+> **Aktualizacja:** 2026-02-14 07:06:13 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 53586  
-> **LIVE:** Cykl #1 | Status: 🟢 RUNNING | Faza: AUTO_TRANSLATE | Etap: auto_start | Kategoria: te | Plik: npc.json | ETA: 0 | Heartbeat: 2026-02-14T07:03:39Z  
-> **Strict hourly (JSONL-only):** okno=1.0h | cycles=48 | pending_skip=0.0% | guard_fail=2.1% | throughput=2964.1/h  
-> **Net effective translated:** 62,880
+> **LIVE:** Cykl #1 | Status: 🟢 RUNNING | Faza: AUTO_TRANSLATE | Etap: parallel_start | Kategoria: th | Plik: npc.json | ETA: 0 | Heartbeat: 2026-02-14T07:05:20Z  
+> **Strict hourly (JSONL-only):** okno=1.0h | cycles=40 | pending_skip=0.0% | guard_fail=2.2% | throughput=3330.2/h  
+> **Net effective translated:** 63,040
 
 ### 🧩 Status sekcji (P0.1)
 | Sekcja | Stan | Świeżość | Powód | Źródło | Ostatnia aktualizacja |
 |--------|------|----------|-------|--------|-----------------------|
-| META | 🟢 ACTIVE | teraz | - | `update_github_status()` | 2026-02-14 07:04:01 |
-| LIVE | 🟢 ACTIVE | 24s temu | - | `activity.json / worker_state.json` | 2026-02-14T07:03:39Z |
-| MIGRATION | 🔒 INACTIVE | 12h temu | worker w trybie AUTO_TRANSLATE | `i18n_file_status.json` | 2026-02-14 07:04:01 |
-| TRANSLATION | 🟢 ACTIVE | 2min temu | - | `translation_guard_latest.json / translation_recent_latest.json` | 2026-02-14T07:01:40.707597Z |
-| QUALITY | 🔒 INACTIVE | 13min temu | worker w trybie AUTO_TRANSLATE | `quality_audit_latest.json` | 2026-02-14T06:50:33.339457Z |
-| HISTORY | 🟢 ACTIVE | teraz | - | `daily/*.json / ops.jsonl` | 2026-02-14 07:04:01 |
+| META | 🟢 ACTIVE | teraz | - | `update_github_status()` | 2026-02-14 07:06:13 |
+| LIVE | 🟢 ACTIVE | 54s temu | - | `activity.json / worker_state.json` | 2026-02-14T07:05:20Z |
+| MIGRATION | 🔒 INACTIVE | 12h temu | worker w trybie AUTO_TRANSLATE | `i18n_file_status.json` | 2026-02-14 07:06:13 |
+| TRANSLATION | 🟢 ACTIVE | 4s temu | - | `translation_guard_latest.json / translation_recent_latest.json` | 2026-02-14T07:06:09.539633Z |
+| QUALITY | 🔒 INACTIVE | 15min temu | worker w trybie AUTO_TRANSLATE | `quality_audit_latest.json` | 2026-02-14T06:50:33.339457Z |
+| HISTORY | 🟢 ACTIVE | teraz | - | `daily/*.json / ops.jsonl` | 2026-02-14 07:06:13 |
 
 > Artefakt machine-readable: `i18n/status/status_sections_latest.json`
 
@@ -30,14 +30,14 @@
 ## 🔴 LIVE
 
 > **[LIVE]** 🟢 ACTIVE  
-> Świeżość: 24s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T07:03:39Z
+> Świeżość: 54s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T07:05:20Z
 
 - **Faza:** `AUTO_TRANSLATE`
-- **Etap:** `auto_start`
-- **Kategoria:** `te`
+- **Etap:** `parallel_start`
+- **Kategoria:** `th`
 - **Plik:** `npc.json`
 - **Status:** 🟢 RUNNING
-- **Heartbeat:** `2026-02-14T07:03:39Z`
+- **Heartbeat:** `2026-02-14T07:05:20Z`
 
 ---
 
@@ -92,7 +92,7 @@
 ## 🛠️ MIGRATION
 
 > **[MIGRATION]** 🔒 INACTIVE (worker w trybie AUTO_TRANSLATE)  
-> Świeżość: 12h temu | Źródło: `i18n_file_status.json` | Ostatnia aktualizacja: 2026-02-14 07:04:01
+> Świeżość: 12h temu | Źródło: `i18n_file_status.json` | Ostatnia aktualizacja: 2026-02-14 07:06:13
 
 ### 📁 Pliki Projektu (pełny skan)
 | Metryka | Wartość | Procent | Info |
@@ -134,7 +134,7 @@
 ## 🌍 TRANSLATION
 
 > **[TRANSLATION]** 🟢 ACTIVE  
-> Świeżość: 2min temu | Źródło: `translation_guard_latest.json / translation_recent_latest.json` | Ostatnia aktualizacja: 2026-02-14T07:01:40.707597Z
+> Świeżość: 4s temu | Źródło: `translation_guard_latest.json / translation_recent_latest.json` | Ostatnia aktualizacja: 2026-02-14T07:06:09.539633Z
 
 | Metryka | Wartość | Procent | Info |
 |---------|---------|---------|------|
@@ -156,12 +156,12 @@
 | HY (HY) | 11,773/53,586 | 21.97% | 29,240 | 2,155 |
 | KA (KA) | 11,773/53,586 | 21.97% | 29,241 | 2,155 |
 | SW (SW) | 11,771/53,586 | 21.97% | 29,235 | 2,155 |
+| TE (TE) | 11,772/53,586 | 21.97% | 29,233 | 2,155 |
+| TH (TH) | 11,772/53,586 | 21.97% | 29,233 | 2,155 |
 | KO (Koreański) | 11,767/53,586 | 21.96% | 29,232 | 2,155 |
 | ML (ML) | 11,769/53,586 | 21.96% | 29,237 | 2,155 |
 | HE (HE) | 11,690/53,586 | 21.82% | 29,287 | 2,155 |
 | MS (MS) | 11,692/53,586 | 21.82% | 29,285 | 2,155 |
-| TE (TE) | 11,692/53,586 | 21.82% | 29,282 | 2,155 |
-| TH (TH) | 11,692/53,586 | 21.82% | 29,282 | 2,155 |
 | TL (TL) | 11,692/53,586 | 21.82% | 29,301 | 2,155 |
 | VI (VI) | 11,694/53,586 | 21.82% | 29,280 | 2,155 |
 | JA (Japoński) | 11,659/53,586 | 21.76% | 29,289 | 2,155 |
@@ -173,39 +173,39 @@
 - **Ostatnie klucze (10-20):** 20
 
 ### 📝 Ostatnie 10-20 przetłumaczonych kluczy
-- If another prince comes to kiss me, I'll kick his ass so bad that he'll need a s → Ikiwa mkuu mwingine atakuja kunibusu, nitampiga punda wake vibaya sana kwamba at (npc.a_frog.stdmod_1)
-- If another prince comes to kiss me, I'll kick his ass so bad that he'll need a s → Ikiwa mkuu mwingine atakuja kunibusu, nitampiga punda wake vibaya sana kwamba at (npc.a_frog.stdmod_2)
-- Don't even try to kiss me or I'll rondhouse kick you! → Usijaribu hata kunibusu la sivyo nitakupiga teke! (npc.a_frog.stdmod_3)
-- Talking frogs don't exist, idiot. It's your fucking imagination tricking you. An → Vyura wanaozungumza hawapo, mjinga. Ni mawazo yako jamani kukuhadaa. Na sasa maw (npc.a_frog.stdmod_4)
-- Finally someone notices I'm a FROG. Congratulations, you're VERY observant... *s → Hatimaye mtu anagundua mimi ni CHURA. Hongera, wewe ni mwangalifu SANA... *sigh* (npc.a_frog.stdmod_5)
-- A quest? Yeah I got a quest! Go and tell King Tibianus his son tried to kiss me  → Jitihada? Ndio nimepata utafutaji! Nenda ukamwambie Mfalme Tibianus mwanawe alij (npc.a_frog.stdmod_6)
-- Pyrale? That idiot transformed me into an human once. But my wife came and kisse → Pyrale? Huyo mjinga alinibadilisha kuwa binadamu mara moja. Lakini mke wangu ali (npc.a_frog.stdmod_7)
-- Pyrale? That idiot transformed me into an human once. But my wife came and kisse → Pyrale? Huyo mjinga alinibadilisha kuwa binadamu mara moja. Lakini mke wangu ali (npc.a_frog.stdmod_8)
-- Hah! That idiot finally left. → Hah! Yule mjinga hatimaye aliondoka. (npc.a_frog.walkaway_msg_1)
-- Ah, I feel a mortal walks these ancient halls again. Pardon me, I barely notice  → Ah, ninahisi mtu anayeweza kufa anatembea kwenye kumbi hizi za zamani tena. Sama (npc.a_ghostly_sage.greet_msg_1)
-- You will now be travelled out of here. Are you sure that you want to face that t → Sasa utasafirishwa kutoka hapa. Je, una uhakika kuwa ungependa kukabiliana na ki (npc.a_ghostly_sage.stdmod_1)
-- Then stay here in these ghostly halls. → Basi kaa hapa kwenye kumbi hizi za mizimu. (npc.a_ghostly_sage.stdmod_2)
-- I can offer you a {teleport}. → Ninaweza kukupa {teleport}. (npc.a_ghostly_sage.stdmod_3)
-- Dont mind me. → Usijali mimi. (npc.a_ghostly_sage.stdmod_4)
-- Alone ... so alone. So cold. → Peke yako ... peke yako. Baridi sana. (npc.a_ghostly_woman.farewell_msg_1)
-- I feel you. I hear your thoughts. You are ... alive. → Najisikia wewe. Nasikia mawazo yako. Uko ... hai. (npc.a_ghostly_woman.greet_msg_1)
-- Once I was a member of the order of the nightmare knights. Now I am but a shadow → Wakati mmoja nilikuwa mshiriki wa agizo la wapiganaji wa ndoto mbaya. Sasa mimi  (npc.a_ghostly_woman.stdmod_1)
-- The north has a puzzle to complete. → Kaskazini ina fumbo la kukamilisha. (npc.a_ghostly_woman.stdmod_2)
-- Alone ... so alone. So cold. → Peke yako ... peke yako. Baridi sana. (npc.a_ghostly_woman.voice_1)
-- Alone ... so alone. So cold. → Peke yako ... peke yako. Baridi sana. (npc.a_ghostly_woman.walkaway_msg_1)
+- If another prince comes to kiss me, I'll kick his ass so bad that he'll need a s → ถ้าเจ้าชายอีกคนมาจูบฉัน ฉันจะเตะตูดเขาจนต้องนั่งเกวียนหนีไป. (npc.a_frog.stdmod_1)
+- If another prince comes to kiss me, I'll kick his ass so bad that he'll need a s → ถ้าเจ้าชายอีกคนมาจูบฉัน ฉันจะเตะตูดเขาจนต้องนั่งเกวียนหนีไป. (npc.a_frog.stdmod_2)
+- Don't even try to kiss me or I'll rondhouse kick you! → อย่าแม้แต่จะจูบฉัน ไม่งั้นฉันจะเตะคุณ! (npc.a_frog.stdmod_3)
+- Talking frogs don't exist, idiot. It's your fucking imagination tricking you. An → กบพูดได้ไม่มีอยู่จริง ไอ้โง่ มันเป็นจินตนาการร่วมเพศของคุณที่หลอกคุณ และตอนนี้จิ (npc.a_frog.stdmod_4)
+- Finally someone notices I'm a FROG. Congratulations, you're VERY observant... *s → ในที่สุดก็มีคนสังเกตเห็นว่าฉันเป็นกบ ยินดีด้วย คุณช่างสังเกตมาก... *ถอนหายใจ* (npc.a_frog.stdmod_5)
+- A quest? Yeah I got a quest! Go and tell King Tibianus his son tried to kiss me  → ภารกิจ? ใช่แล้ว ฉันมีภารกิจ! ไปบอกกษัตริย์ Tibianus ลูกชายของเขาว่าพยายามจะจูบฉั (npc.a_frog.stdmod_6)
+- Pyrale? That idiot transformed me into an human once. But my wife came and kisse → ไพเรล? ไอ้โง่นั่นทำให้ฉันกลายเป็นมนุษย์ครั้งหนึ่ง แต่เมียมาจูบฉัน ฉันก็กลายเป็นก (npc.a_frog.stdmod_7)
+- Pyrale? That idiot transformed me into an human once. But my wife came and kisse → ไพเรล? ไอ้โง่นั่นทำให้ฉันกลายเป็นมนุษย์ครั้งหนึ่ง แต่เมียมาจูบฉัน ฉันก็กลายเป็นก (npc.a_frog.stdmod_8)
+- Hah! That idiot finally left. → ฮ่า! ในที่สุดคนโง่คนนั้นก็จากไป. (npc.a_frog.walkaway_msg_1)
+- Ah, I feel a mortal walks these ancient halls again. Pardon me, I barely notice  → อา ฉันรู้สึกว่ามนุษย์กำลังเดินอยู่ในห้องโถงโบราณเหล่านี้อีกครั้ง ขอโทษที ฉันแทบจ (npc.a_ghostly_sage.greet_msg_1)
+- You will now be travelled out of here. Are you sure that you want to face that t → ตอนนี้คุณจะถูกเดินทางออกจากที่นี่ คุณแน่ใจหรือว่าต้องการเผชิญกับเทเลพอร์ตนั้น? (npc.a_ghostly_sage.stdmod_1)
+- Then stay here in these ghostly halls. → ถ้าอย่างนั้นก็อยู่ที่นี่ในห้องโถงผีสิงเหล่านี้. (npc.a_ghostly_sage.stdmod_2)
+- I can offer you a {teleport}. → ฉันสามารถเสนอ {teleport} ให้คุณได้. (npc.a_ghostly_sage.stdmod_3)
+- Dont mind me. → อย่ารังเกียจฉันเลย. (npc.a_ghostly_sage.stdmod_4)
+- Alone ... so alone. So cold. → คนเดียว...เดียวดาย.. หนาวจังเลย. (npc.a_ghostly_woman.farewell_msg_1)
+- I feel you. I hear your thoughts. You are ... alive. → ฉันรู้สึกถึงคุณ ฉันได้ยินความคิดของคุณ คุณ...มีชีวิตอยู่. (npc.a_ghostly_woman.greet_msg_1)
+- Once I was a member of the order of the nightmare knights. Now I am but a shadow → ครั้งหนึ่งฉันเคยเป็นสมาชิกลำดับอัศวินฝันร้าย ตอนนี้ฉันเป็นเพียงเงาที่เดินอยู่ในห (npc.a_ghostly_woman.stdmod_1)
+- The north has a puzzle to complete. → ภาคเหนือมีปริศนาให้แก้. (npc.a_ghostly_woman.stdmod_2)
+- Alone ... so alone. So cold. → คนเดียว...เดียวดาย.. หนาวจังเลย. (npc.a_ghostly_woman.voice_1)
+- Alone ... so alone. So cold. → คนเดียว...เดียวดาย.. หนาวจังเลย. (npc.a_ghostly_woman.walkaway_msg_1)
 
 ### 🚫 Raporty "nie mogę przetłumaczyć"
-- Guard reports: **1970**  
+- Guard reports: **1972**  
 - Blocker reports: **0**  
-- Widoczne raporty 'nie mogę tłumaczyć': **1920**
+- Widoczne raporty 'nie mogę tłumaczyć': **1922**
 
 ### 🌐 Globalne info wszystkich języków
-- **Global completion:** **21.0%** (585,067/2,786,472)
-- **EN-copy łącznie:** **1,333,814**
+- **Global completion:** **21.0%** (585,227/2,786,472)
+- **EN-copy łącznie:** **1,333,716**
 - **Braki kluczy łącznie:** **110,060**
 - **Brakujące pliki językowe:** **0**
-- **Cache STATUSPY (per-lang):** **warm-cache** | hit **52**, miss **0**, hit-rate **100.0%**
-- **Cache STATUSPY (per-file):** hit **1976**, miss **0**, hit-rate **100.0%**
+- **Cache STATUSPY (per-lang):** **mixed** | hit **50**, miss **2**, hit-rate **96.2%**
+- **Cache STATUSPY (per-file):** hit **1974**, miss **2**, hit-rate **99.9%**
 - **Profiler cyklu (ostatni):** -
 - **Osobny raport:** `i18n/status/translation_global_overview.json`
 
@@ -227,27 +227,27 @@
 | HY | 11,760/49,731 | 23.6% | 13/3,855 | 0.3% |
 | KA | 11,760/49,731 | 23.6% | 13/3,855 | 0.3% |
 | SW | 11,758/49,731 | 23.6% | 13/3,855 | 0.3% |
-| KO | 11,754/49,731 | 23.6% | 13/3,855 | 0.3% |
-| ML | 11,756/49,731 | 23.6% | 13/3,855 | 0.3% |
+| TE | 11,759/49,731 | 23.6% | 13/3,855 | 0.3% |
+| TH | 11,759/49,731 | 23.6% | 13/3,855 | 0.3% |
 
 ### ⏱️ Strict Hourly Window (JSONL-only)
 | Metryka | Wartość |
 |---------|---------|
-| Okno | **1.0h** (2026-02-14T06:04:02.630091Z → 2026-02-14T07:04:02.630091Z) |
-| Cykle | **48** (AUTO=48, MIGRATION=0) |
+| Okno | **1.0h** (2026-02-14T06:06:13.493188Z → 2026-02-14T07:06:13.493188Z) |
+| Cykle | **40** (AUTO=40, MIGRATION=0) |
 | Pending skip | **0** (all=0.0%, migration=0.0%) |
-| Guard fail rate | **2.1%** |
+| Guard fail rate | **2.2%** |
 | No progress rate | **0.0%** |
-| Throughput | **2964.1 kluczy/h** |
-| Suspicious | **921** |
-| Top guard_fail targets | ja/npc.json (gf=50), tr/monsters.json (gf=0), de/server.json (gf=0), pt/server.json (gf=0), fr/server.json (gf=0) |
+| Throughput | **3330.2 kluczy/h** |
+| Suspicious | **902** |
+| Top guard_fail targets | ja/npc.json (gf=50), it/server.json (gf=0), tr/server.json (gf=0), da/npc.json (gf=0), no/npc.json (gf=0) |
 | Źródła | `i18n/status/worker_cycle_perf.jsonl`, `i18n/status/translation_guard_report.jsonl`, `i18n/status/suspicious_log.jsonl` |
 | Plik | `i18n/status/strict_hourly_window_latest.json` |
 
 ## 🔬 QUALITY
 
 > **[QUALITY]** 🔒 INACTIVE (worker w trybie AUTO_TRANSLATE)  
-> Świeżość: 13min temu | Źródło: `quality_audit_latest.json` | Ostatnia aktualizacja: 2026-02-14T06:50:33.339457Z
+> Świeżość: 15min temu | Źródło: `quality_audit_latest.json` | Ostatnia aktualizacja: 2026-02-14T06:50:33.339457Z
 
 - **Ostatni audyt:** OK | 0 issue(s) / 100 entries | 2026-02-14T06:50:33.339457Z
 - **Top 5 typów problemów:** suspicious_rejected_critical=200, suspicious_log_high=160, suspicious_log_low=33, suspicious_log_medium=6, suspicious_log_critical=1
@@ -290,7 +290,7 @@
 ## ✅ CHECKLIST - Plan Pracy
 
 > **Aktualna faza:** AUTO_TRANSLATE  
-> **Aktualna kategoria:** te
+> **Aktualna kategoria:** th
 
 
 ### 🔄 Faza 1: 🎮 Canary Server
@@ -358,33 +358,33 @@
 ## 🔴 LIVE: Szczegóły wykonania
 
 > **[LIVE]** 🟢 ACTIVE  
-> Świeżość: 24s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T07:03:39Z
+> Świeżość: 54s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T07:05:20Z
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │ 🔴 LIVE: Worker v2.0                          Cykl #     1 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
-│ Tryb:      🤖 AUTO_TRANSLATE (auto_start)            │
-│ Kategoria: 📁 TE                                     │
+│ Tryb:      🤖 AUTO_TRANSLATE (parallel_start)        │
+│ Kategoria: 📁 TH                                     │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status: running                                               │
 │ Plik: npc.json                                                │
 │ Postęp: 0/0 keys                                              │
-│ Info: auto translate                                          │
+│ Info: parallel auto translate                                 │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2026-02-14T07:03:39Z           │
+│ ❤️ Heartbeat: 2026-02-14T07:05:20Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 🧾 Ostatnie akcje (dla czytelności)
 
+- 2026-02-14 07:05:20 | AUTO_TRANSLATE:parallel_start | th | ok | npc.json
+- 2026-02-14 07:04:10 | AUTO_TRANSLATE:auto_done | te | ok | npc.json
 - 2026-02-14 07:03:39 | AUTO_TRANSLATE:auto_start | te | ok | npc.json
 - 2026-02-14 07:01:41 | AUTO_TRANSLATE:auto_done | sw | ok | npc.json
 - 2026-02-14 07:00:50 | AUTO_TRANSLATE:auto_start | sw | ok | npc.json
 - 2026-02-14 06:58:59 | AUTO_TRANSLATE:auto_done | sq | ok | npc.json
-- 2026-02-14 06:58:26 | AUTO_TRANSLATE:auto_start | sq | ok | npc.json
-- 2026-02-14 06:55:55 | AUTO_TRANSLATE:auto_done | sk | ok | npc.json
 
 ---
 
@@ -397,7 +397,7 @@
 
 | KPI | Wartość | Target | Status |
 |-----|---------|--------|--------|
-| Net effective translated | **62,880** | — | 📊 |
+| Net effective translated | **63,040** | — | 📊 |
 | Adaptive batch | batch=50, gf_rate=6.25%, reason=stable_fail_rate=6.2% | gf <5% → increase | 📊 |
 | Throughput (last window) | 1,298 keys / 42 entries | >50/h | 📊 |
 
@@ -406,8 +406,10 @@
 ## 📜 HISTORY
 
 > **[HISTORY]** 🟢 ACTIVE  
-> Świeżość: teraz | Źródło: `daily/*.json / ops.jsonl` | Ostatnia aktualizacja: 2026-02-14 07:04:01
+> Świeżość: teraz | Źródło: `daily/*.json / ops.jsonl` | Ostatnia aktualizacja: 2026-02-14 07:06:13
 
+- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [th] → ok (translated+80, skipped+0) — parallel lang=th file=npc.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [te] → warn (files+1, translated+80, skipped+0) — lang=te file=npc.json strict_skipped_done=1220
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [sw] → warn (files+1, translated+80, skipped+0) — lang=sw file=npc.json strict_skipped_done=1220
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [sq] → warn (files+1, translated+80, skipped+0) — lang=sq file=npc.json strict_skipped_done=1220
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [sk] → warn (files+1, translated+80, skipped+0) — lang=sk file=npc.json strict_skipped_done=1220
@@ -416,8 +418,6 @@
 - 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [ja] → ok (translated+30, skipped+0) — parallel lang=ja file=npc.json
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [id] → warn (files+1, translated+80, skipped+0) — lang=id file=npc.json strict_skipped_done=1225
 - 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [hr] → ok (translated+80, skipped+0) — parallel lang=hr file=npc.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [hi] → warn (files+1, translated+80, skipped+0) — lang=hi file=npc.json strict_skipped_done=1220
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [fa] → warn (files+1, translated+80, skipped+0) — lang=fa file=npc.json strict_skipped_done=1221
 
 
 
@@ -427,7 +427,7 @@
 - Cykle: **49**
 - MIGRATION: **+0** kluczy, **0** plików `.lua`
 - Kategorie dotknięte: -
-- Błędy: **246**
+- Błędy: **247**
 
 
 ---
@@ -738,7 +738,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2026-02-14 07:04:01  
+📅 Auto-updated by Worker v1.1 | Last: 2026-02-14 07:06:13  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

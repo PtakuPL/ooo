@@ -11,6 +11,35 @@
 
 ---
 
+## 🛠️ Aktualizacja wykonania (2026-02-14 07:07 UTC — korekta metryk LIVE vs rejestr workera)
+
+Wybrane do realizacji pełne zadanie:
+- **Naprawa wiarygodności licznika „wyekstrahowanych kluczy” w `I18N_STATUS.md`**
+
+Wykonane:
+- ✅ `i18n_worker_simple.sh` rozdziela teraz metryki:
+  - `total_keys_extracted_live` (realny stan z `i18n/en/*.json`),
+  - `total_keys_extracted_registry` (suma `5_extraction_en.keys_added` z `i18n_file_status.json`).
+- ✅ Dashboard pokazuje jawnie 3 wartości:
+  - klucze LIVE,
+  - klucze z rejestru workera,
+  - drift „poza rejestrem workera”.
+- ✅ Sekcja `MIGRATION` ma poprawione źródło danych:
+  - `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt`.
+- ✅ `i18n/status/translation_global_overview.json` (blok `migration`) publikuje dodatkowo:
+  - `total_keys_extracted_live`,
+  - `total_keys_extracted_worker_registry`,
+  - `keys_extracted_outside_worker_registry`.
+
+Walidacja po wdrożeniu (2026-02-14 07:07 UTC):
+- ✅ `I18N_STATUS.md`: LIVE = `53,586`, rejestr workera = `6,248`, poza rejestrem = `47,338`.
+- ✅ Potwierdzono zgodność LIVE z bieżącą sumą kluczy EN.
+
+Nowe rzeczy do zrobienia ujawnione podczas realizacji:
+- ⬜ Dodać `scanned_files_live` (licznik skanu niezależny od historii `i18n_processed_files.txt`), aby ręczne migracje nie wyglądały jak „nieskanowane”.
+- ⬜ Dodać alert driftu metryk (np. gdy `keys_extracted_outside_worker_registry` przekracza próg), żeby operator szybciej widział rozjazd rejestru.
+- ⬜ Ujednolicić analogiczne pola w `i18n_global_stats.json` (tam nadal jest tylko metryka registry w gałęzi `mode=MIGRATION`).
+
 ## 🛠️ Aktualizacja wykonania (2026-02-14 06:56 UTC — stabilność guardiana + quality watch)
 
 Wybrane do realizacji pełne zadania:

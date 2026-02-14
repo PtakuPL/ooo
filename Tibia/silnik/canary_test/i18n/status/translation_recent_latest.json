@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-14T11:26:22.557574Z",
+  "timestamp": "2026-02-14T11:29:14.423024Z",
   "language": "es",
-  "json_file": "monsters.json",
-  "translated": 74,
+  "json_file": "server.json",
+  "translated": 80,
   "entries": [
     {
-      "key": "monster.minotaur_hunter.desc",
-      "en": "a minotaur hunter",
-      "translated": "un cazador de minotauros",
-      "source": "google_translate"
+      "key": "data.otservbr.global.npc.gnomus.L335.1016",
+      "en": "Greetings, member of the Bigfoot Brigade. We could really use some {help} from you right now. You should prove {worthy} to our alliance.",
+      "translated": "Saludos, miembro de la Brigada Bigfoot. Realmente nos vendría bien algo de {help} de tu parte ahora mismo. Deberías demostrar {worthy} a nuestra alianza.",
+      "source": "simple"
     },
     {
-      "key": "monster.animated_rhino.name",
-      "en": "Animated Stone Rhino",
-      "translated": "Rinoceronte de piedra animado",
-      "source": "google_translate"
+      "key": "data.otservbr.global.npc.gorn.L109.58",
+      "en": "Oh, please come in, |PLAYERNAME|. What do you need?",
+      "translated": "Oh, por favor entra, |PLAYERNAME|. ¿Qué necesitas?",
+      "source": "simple"
     },
     {
-      "key": "monster.animated_rhino.desc",
-      "en": "an animated stone rhino",
-      "translated": "un rinoceronte de piedra animado",
-      "source": "google_translate"
+      "key": "data.otservbr.global.npc.gorn.L112.61",
+      "en": "Of course, just browse through my wares. {Footballs} have to be purchased separately.",
+      "translated": "Por supuesto, simplemente navega por mis productos. {Footballs} debe comprarse por separado.",
+      "source": "simple"
     },
     {
-      "key": "monster.minotaur_idol.desc",
-      "en": "a minotaur idol",
-      "translated": "un ídolo minotauro",
-      "source": "google_translate"
+      "key": "data.otservbr.global.npc.graubart.L65.179",
+      "en": "Ahoi, young man |PLAYERNAME|. Looking for work on my ship?",
+      "translated": "Ahoi, joven |PLAYERNAME|. ¿Buscas trabajo en mi barco?",
+      "source": "simple"
     },
     {
-      "key": "monster.charged_anomaly.desc",
-      "en": "a charged anomaly",
-      "translated": "una anomalía cargada",
-      "source": "google_translate"
+      "key": "data.otservbr.global.npc.gregor.L347.159",
+      "en": "Greetings, |PLAYERNAME|. What do you want?",
+      "translated": "Saludos, |PLAYERNAME|. ¿Qué deseas?",
+      "source": "simple"
     },
     {
-      "key": "monster.lost_gnome.desc",
-      "en": "a lost gnome",
-      "translated": "un gnomo perdido",
-      "source": "google_translate"
+      "key": "data.otservbr.global.npc.gregor.L348.160",
+      "en": "Be careful on your journeys.",
+      "translated": "Tenga cuidado en sus viajes.",
+      "source": "simple"
     },
     {
-      "key": "monster.gnome_pack_crawler.name",
-      "en": "Gnome Pack Crawler",
-      "translated": "Rastreador de paquete de gnomos",
-      "source": "google_translate"
+      "key": "data.otservbr.global.npc.gregor.L349.161",
+      "en": "Be careful on your journeys.",
+      "translated": "Tenga cuidado en sus viajes.",
+      "source": "simple"
     },
     {
-      "key": "monster.gnome_pack_crawler.desc",
-      "en": "a gnome pack crawler",
-      "translated": "un rastreador de paquetes de gnomos",
-      "source": "google_translate"
+      "key": "data.otservbr.global.npc.grizzly.adams.L146.91",
+      "en": "Welcome to the 'Paw and Fur - Hunting Elite' |PLAYERNAME|. Feel free to do {tasks} for us.",
+      "translated": "Bienvenido al '__PH0__' |PLAYERNAME|. Siéntete libre de hacer {tasks} por nosotros.",
+      "source": "simple"
     },
     {
-      "key": "monster.a_shielded_astral_glyph.name",
-      "en": "A Shielded Astral Glyph",
-      "translated": "Un glifo astral protegido",
-      "source": "google_translate"
+      "key": "data.otservbr.global.npc.grombur.L93.1129",
+      "en": "STOP RIGHT THERE!..... Oh, just a human. What's up big guy?",
+      "translated": "¡DETENTE AQUÍ!..... Oh, solo un humano. ¿Qué pasa, grandullón?",
+      "source": "simple"
     },
     {
-      "key": "monster.a_shielded_astral_glyph.desc",
-      "en": "a shielded astral glyph",
-      "translated": "un glifo astral protegido",
-      "source": "google_translate"
+      "key": "data.otservbr.global.npc.guard.saros.L256.315",
+      "en": "I hope to see you soon.",
+      "translated": "Espero verte pronto.",
+      "source": "simple"
     },
     {
-      "key": "monster.the_distorted_astral_source.name",
-      "en": "The Distorted Astral Source",
-      "translated": "La fuente astral distorsionada",
-      "source": "google_translate"
+      "key": "data.otservbr.global.npc.guard.saros.L257.316",
+      "en": "Good bye, |PLAYERNAME|. I really hope we'll talk again soon.",
+      "translated": "Adiós, |PLAYERNAME|. Realmente espero que volvamos a hablar pronto.",
+      "source": "simple"
     },
     {
-      "key": "monster.the_distorted_astral_source.desc",
-      "en": "The Distorted Astral Source",
-      "translated": "La fuente astral distorsionada",
-      "source": "google_translate"
+      "key": "data.otservbr.global.npc.guide.alexena.L104.1375",
+      "en": "Welcome to Carlin, |PLAYERNAME| Would you like some information and a map guide?",
+      "translated": "Bienvenido a Carlin, |PLAYERNAME| ¿Quieres información y una guía de mapas?",
+      "source": "simple"
     },
     {
-      "key": "monster.bound_astral_power.desc",
-      "en": "a bound astral power",
-      "translated": "un poder astral ligado",
-      "source": "google_translate"
+      "key": "data.otservbr.global.npc.guide.alexena.L106.1377",
+      "en": "Good bye and enjoy your stay in Carlin, |PLAYERNAME|",
+      "translated": "Adiós y disfruta de tu estancia en Carlin, |PLAYERNAME|",
+      "source": "simple"
     },
     {
-      "key": "monster.canopic_jar.desc",
-      "en": "a canopic jar",
-      "translated": "un frasco canopo",
-      "source": "google_translate"
+      "key": "data.otservbr.global.npc.guide.behil.L102.612",
+      "en": "Daraman's blessings, Black Sabbatth, welcome to Darashia! Would you like some information and a map guide?",
+      "translated": "Bendiciones de Daraman, Black Sabbatth, ¡bienvenidos a Darashia! ¿Quieres información y una guía cartográfica?",
+      "source": "simple"
     },
     {
-      "key": "monster.greater_canopic_jar.name",
-      "en": "Greater Canopic Jar",
-      "translated": "Jarra Canópica Mayor",
-      "source": "google_translate"
+      "key": "data.otservbr.global.npc.guide.behil.L104.614",
+      "en": "Daraman's blessings, enjoy your stay in Darashia, |PLAYERNAME|",
+      "translated": "Bendiciones de Daraman, disfrute su estadía en Darashia, |PLAYERNAME|",
+      "source": "simple"
     },
     {
-      "key": "monster.greater_canopic_jar.desc",
-      "en": "a greater canopic jar",
-      "translated": "una jarra canópica más grande",
-      "source": "google_translate"
+      "key": "data.otservbr.global.npc.guide.davina.L103.1064",
+      "en": "Hello there, |PLAYERNAME| and welcome to Liberty Bay! Would you like some information and a map guide?",
+      "translated": "¡Hola, |PLAYERNAME| y bienvenido a Liberty Bay! ¿Quieres información y una guía cartográfica?",
+      "source": "simple"
     },
     {
-      "key": "monster.depowered_minotaur.desc",
-      "en": "a depowered minotaur",
-      "translated": "un minotauro sin poderes",
-      "source": "google_translate"
+      "key": "data.otservbr.global.npc.guide.davina.L105.1066",
+      "en": "Good bye and enjoy your stay in Liberty Bay, |PLAYERNAME|",
+      "translated": "Adiós y disfruta de tu estancia en Liberty Bay, |PLAYERNAME|",
+      "source": "simple"
     },
     {
-      "key": "monster.ravenous_beyondling.desc",
-      "en": "a ravenous beyondling",
-      "translated": "un más allá voraz",
-      "source": "google_translate"
+      "key": "data.otservbr.global.npc.guide.edna.L100.147",
+      "en": "Meow, welcome to Yalahar |PLAYERNAME|! Even though I might not look like it, I can give you {information} and a {map} guide. Need some?",
+      "translated": "¡Miau, bienvenido a Yalahar |PLAYERNAME|! Aunque no lo parezca, puedo darte una guía de {information} y {map}. ¿Necesitas algo?",
+      "source": "simple"
     },
     {
-      "key": "monster.stolen_knowledge_of_lifesteal.name",
-      "en": "Stolen Knowledge of Lifesteal",
-      "translated": "Robado Knowledge de Lifesteal",
-      "source": "google_translate"
+      "key": "data.otservbr.global.npc.guide.edna.L102.149",
+      "en": "Enjoy your stay in Yalahar, |PLAYERNAME|. Meow.",
+      "translated": "Disfrute de su estancia en Yalahar, |PLAYERNAME|. Maullido.",
+      "source": "simple"
     },
     {
-      "key": "monster.stolen_knowledge_of_lifesteal.desc",
-      "en": "a stolen knowledge of lifesteal",
-      "translated": "un conocimiento robado de robo de vida",
-      "source": "google_translate"
+      "key": "data.otservbr.global.npc.guide.elena.L107.11",
+      "en": "Welcome to Venore, |PLAYERNAME| Would you like some information and a map guide?",
+      "translated": "Bienvenido a Venore, |PLAYERNAME| ¿Quieres información y una guía de mapas?",
+      "source": "simple"
     }
   ]
 }

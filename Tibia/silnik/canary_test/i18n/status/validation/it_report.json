@@ -2,18 +2,18 @@
   "lang": "it",
   "script_group": "latin",
   "total_keys": 53586,
-  "translated": 31152,
-  "identical_to_en": 29488,
-  "placeholder_keys": 20279,
-  "coverage_pct": 58.1,
-  "issues_total": 10,
+  "translated": 31043,
+  "identical_to_en": 29411,
+  "placeholder_keys": 20388,
+  "coverage_pct": 57.9,
+  "issues_total": 7,
   "issues_by_type": {
-    "V1_placeholder_mismatch": 7,
+    "V1_placeholder_mismatch": 4,
     "V4_artifact": 2,
     "V5_pipe_mismatch": 1
   },
   "issues_by_severity": {
-    "CRITICAL": 8,
+    "CRITICAL": 5,
     "HIGH": 2,
     "MEDIUM": 0,
     "LOW": 0
@@ -35,24 +35,6 @@
     {
       "key": "scripts.manage_tutor.msg_2",
       "category": "scripts",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "server.game.msg_32",
-      "category": "server",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "server.player.msg_11",
-      "category": "server",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "server.spells.msg_3",
-      "category": "server",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
     },
@@ -89,5 +71,5 @@
     "length_ratio": 10,
     "auto_fix_applied": 77
   },
-  "validated_at": "2026-02-14T11:20:43.897996Z"
+  "validated_at": "2026-02-14T11:28:40.117804Z"
 }

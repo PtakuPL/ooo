@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-02-14T11:26:39.600033Z",
-  "cycle_counter": 516,
-  "last_target_key": "pl:server.json",
-  "last_pending_total": 16,
+  "timestamp": "2026-02-14T11:29:08.483413Z",
+  "cycle_counter": 517,
+  "last_target_key": "es:server.json",
+  "last_pending_total": 1972,
   "last_tier": 1,
   "last_cat_priority": 3,
   "candidates_count": 40,
@@ -23,6 +23,7 @@
       "it",
       "nl",
       "pt",
+      "ro",
       "ru",
       "sk",
       "tr"
@@ -31,7 +32,7 @@
     "w2": 3,
     "w3": 1
   },
-  "cache_hit": false,
+  "cache_hit": true,
   "cache_ttl_cycles": 5,
   "cache_cycle": 1,
   "no_progress_counts": {
@@ -266,7 +267,8 @@
     "id:monsters.json": 0,
     "ja:monsters.json": 0,
     "kk:monsters.json": 0,
-    "ko:monsters.json": 0
+    "ko:monsters.json": 0,
+    "pl:server.json": 0
   },
   "bootstrap_priority": {
     "enabled": true,

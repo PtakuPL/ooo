@@ -62,7 +62,7 @@ MINI_PAUSE=3                # Pauza między mini-batch (sekundy)
 CYCLE_PAUSE=12              # Pauza po pełnym cyklu (sekundy)
 TRANSLATION_BATCH=300       # Ile kluczy na batch synchronizacji
 TRANSLATION_SUBSTAGE=4      # Ile kluczy na składnię
-LANG_PRIORITY="de pl es pt fr it ru nl sv da no fi cs"  # Priorytet języków (Europa first)
+LANG_PRIORITY="de pl es pt fr it ru ro nl sv da no fi cs"  # Priorytet języków (Europa first)
 TARGET_LANGS="${TARGET_LANGS:-}"  # --langs "pl,de,es" lub env TARGET_LANGS
 BOOTSTRAP_PRIORITY_LANGS="${BOOTSTRAP_PRIORITY_LANGS:-es pl}"  # Bootstrap dla trybu ogólnego: es -> pl
 STRICT_SELECTOR_CACHE_TTL_CYCLES="${STRICT_SELECTOR_CACHE_TTL_CYCLES:-5}"  # co ile cykli odświeżać pełny skan strict selector
@@ -79,7 +79,7 @@ QUALITY_AUDIT_THRESHOLD="${QUALITY_AUDIT_THRESHOLD:-10}"                    # po
 # Tier 3: pozostałe — cel: 30% coverage
 # Tier weight = ile razy częściej język danego tieru dostaje cykl tłumaczenia
 TIER1_LANGS="${TIER1_LANGS:-pl es}"                # Tier 1: PL i ES (już mają >50%)
-TIER2_LANGS="${TIER2_LANGS:-de pt ru tr fr it nl cs sk hu}"  # Tier 2: europejskie z istniejącą bazą + nowe EU
+TIER2_LANGS="${TIER2_LANGS:-de pt ru ro tr fr it nl cs sk hu}"  # Tier 2: europejskie z istniejącą bazą + nowe EU (dodano RO)
 TIER1_TARGET="${TIER1_TARGET:-90}"                 # Docelowe pokrycie %
 TIER2_TARGET="${TIER2_TARGET:-50}"
 TIER3_TARGET="${TIER3_TARGET:-30}"
@@ -9619,7 +9619,7 @@ queue_report_path = os.path.join(status_dir, "identical_to_en_repair_queue_repor
 
 _split = lambda raw: [p for p in re.split(r"[\s,;]+", str(raw or "").strip()) if p]
 tier1_langs = set(_split(os.environ.get("TIER1_LANGS", "pl es")))
-tier2_langs = set(_split(os.environ.get("TIER2_LANGS", "de pt ru tr fr it nl cs sk hu")))
+tier2_langs = set(_split(os.environ.get("TIER2_LANGS", "de pt ru ro tr fr it nl cs sk hu")))
 priority_langs_raw = _split(os.environ.get("REPAIR_PRIORITY_LANGS", "es pl"))
 
 # Build repair language list: T1 priority first, then T2, optionally T3
@@ -18291,7 +18291,7 @@ if candidates:
     # === Sekcja 5: TIER-AWARE SCHEDULING ===
     # Tier config from environment
     TIER1_LANGS = set(split_langs(os.environ.get("TIER1_LANGS", "pl es")))
-    TIER2_LANGS = set(split_langs(os.environ.get("TIER2_LANGS", "de pt ru tr fr it")))
+    TIER2_LANGS = set(split_langs(os.environ.get("TIER2_LANGS", "de pt ru ro tr fr it nl cs sk hu")))
     TIER1_WEIGHT = max(1, _to_int(os.environ.get("TIER1_WEIGHT", "4"), 4))
     TIER2_WEIGHT = max(1, _to_int(os.environ.get("TIER2_WEIGHT", "2"), 2))
     TIER3_WEIGHT = 1
@@ -19224,7 +19224,7 @@ STATUS_DIR = os.path.join(I18N_DIR, "status")
 
 # Konfiguracja tierów
 TIER1_LANGS = set(os.environ.get("TIER1_LANGS", "pl es").split())
-TIER2_LANGS = set(os.environ.get("TIER2_LANGS", "de pt ru tr fr it").split())
+TIER2_LANGS = set(os.environ.get("TIER2_LANGS", "de pt ru ro tr fr it nl cs sk hu").split())
 TIER1_TARGET = int(os.environ.get("TIER1_TARGET", "90"))
 TIER2_TARGET = int(os.environ.get("TIER2_TARGET", "50"))
 TIER3_TARGET = int(os.environ.get("TIER3_TARGET", "30"))
@@ -20689,7 +20689,7 @@ print(f"{'─'*60}")
 
 # Load tier config
 tier1 = set(os.environ.get("TIER1_LANGS", "pl es").split())
-tier2 = set(os.environ.get("TIER2_LANGS", "de pt ru tr fr it").split())
+tier2 = set(os.environ.get("TIER2_LANGS", "de pt ru ro tr fr it nl cs sk hu").split())
 
 for lang in langs:
     lang_total = 0

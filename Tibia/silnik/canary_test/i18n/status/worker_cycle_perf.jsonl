@@ -5840,3 +5840,4 @@
 {"timestamp": "2026-02-14T11:06:00.874875Z", "cycle": 1, "mode": "AUTO_TRANSLATE", "category": "pl", "phase": "dispatch", "duration_ms": 1286, "detail": "count=items.json"}
 {"timestamp": "2026-02-14T11:18:30.217355Z", "cycle": 1, "mode": "AUTO_TRANSLATE", "category": "es", "phase": "dispatch", "duration_ms": 989, "detail": "count=npc.json"}
 {"timestamp": "2026-02-14T11:25:07.805837Z", "cycle": 1, "mode": "AUTO_TRANSLATE", "category": "es", "phase": "dispatch", "duration_ms": 1168, "detail": "count=monsters.json"}
+{"timestamp": "2026-02-14T11:29:08.660686Z", "cycle": 1, "mode": "AUTO_TRANSLATE", "category": "es", "phase": "dispatch", "duration_ms": 702, "detail": "count=server.json"}

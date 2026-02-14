@@ -137030,5 +137030,285 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-14T11:26:21.793012Z"
+  },
+  "data.otservbr.global.npc.gnomeral.L251.1059": {
+    "src_hash": "41cc0b97a4666275845c1a1d3430ba16",
+    "text": "¡Hola recluta!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:29:13.682207Z"
+  },
+  "data.otservbr.global.npc.gnomercy.L77.968": {
+    "src_hash": "030191415e3db032c8d20aab65d070bc",
+    "text": "¡Hola! Estoy listo para informarle con {tactical} consejos.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:29:13.683382Z"
+  },
+  "data.otservbr.global.npc.gnomercy.L78.969": {
+    "src_hash": "62b703e7a17bc181a01c27654db49179",
+    "text": "¡Adiós y cuídate!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:29:13.684415Z"
+  },
+  "data.otservbr.global.npc.gnomerik.L309.871": {
+    "src_hash": "d37821eaad4cf997b81c210ffc65d5c7",
+    "text": "Hola y bienvenido a la oficina gnoma {recruitment}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:29:13.686039Z"
+  },
+  "data.otservbr.global.npc.gnomewart.L83.317": {
+    "src_hash": "520ec9389f4c5870f288a59e6684e798",
+    "text": "¡Oh! ¡Hola! ¡Supongo que estás aquí para la prueba {endurance}!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:29:13.689685Z"
+  },
+  "data.otservbr.global.npc.gnominer.L57.1605": {
+    "src_hash": "9815a80f80a64735c8915b30bbfb7c38",
+    "text": "Hola y bienvenidos a los Jardines Gnomprona.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:29:13.693801Z"
+  },
+  "data.otservbr.global.npc.gnomish.operative.cathing.L56.931": {
+    "src_hash": "9815a80f80a64735c8915b30bbfb7c38",
+    "text": "Hola y bienvenidos a los Jardines Gnomprona.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:29:13.695675Z"
+  },
+  "data.otservbr.global.npc.gnomish.operative.gt.m.01.L56.348": {
+    "src_hash": "9815a80f80a64735c8915b30bbfb7c38",
+    "text": "Hola y bienvenidos a los Jardines Gnomprona.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:29:13.696948Z"
+  },
+  "data.otservbr.global.npc.gnomish.operative.raiders.L56.246": {
+    "src_hash": "9815a80f80a64735c8915b30bbfb7c38",
+    "text": "Hola y bienvenidos a los Jardines Gnomprona.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:29:13.698118Z"
+  },
+  "data.otservbr.global.npc.gnomish.operative.resonating.L56.174": {
+    "src_hash": "9815a80f80a64735c8915b30bbfb7c38",
+    "text": "Hola y bienvenidos a los Jardines Gnomprona.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:29:13.699275Z"
+  },
+  "data.otservbr.global.npc.gnomish.operative.volcano.L56.1367": {
+    "src_hash": "9815a80f80a64735c8915b30bbfb7c38",
+    "text": "Hola y bienvenidos a los Jardines Gnomprona.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:29:13.700410Z"
+  },
+  "data.otservbr.global.npc.gnomission.L161.4": {
+    "src_hash": "406af1b405914ad476cd4b1fc2491153",
+    "text": "Hola |PLAYERNAME|. Probablemente esté ansioso por ingresar al {warzones}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:29:13.701569Z"
+  },
+  "data.otservbr.global.npc.gnommander.L174.870": {
+    "src_hash": "0d5102525432f77b580ffc1d90cf9e67",
+    "text": "¡Hola! Bienvenido al pico.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:29:13.702559Z"
+  },
+  "data.otservbr.global.npc.gnomole.L77.803": {
+    "src_hash": "030191415e3db032c8d20aab65d070bc",
+    "text": "¡Hola! Estoy listo para informarle con {tactical} consejos.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:29:13.703689Z"
+  },
+  "data.otservbr.global.npc.gnomole.L78.804": {
+    "src_hash": "62b703e7a17bc181a01c27654db49179",
+    "text": "¡Adiós y cuídate!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:29:13.704571Z"
+  },
+  "data.otservbr.global.npc.gnomus.L335.1016": {
+    "src_hash": "e69ed03192654cd9aa88eae8b3814f63",
+    "text": "Saludos, miembro de la Brigada Bigfoot. Realmente nos vendría bien algo de {help} de tu parte ahora mismo. Deberías demostrar {worthy} a nuestra alianza.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:29:13.706938Z"
+  },
+  "data.otservbr.global.npc.gorn.L109.58": {
+    "src_hash": "2c0de480c3b051be4c0d710cb7e77aef",
+    "text": "Oh, por favor entra, |PLAYERNAME|. ¿Qué necesitas?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:29:13.708876Z"
+  },
+  "data.otservbr.global.npc.gorn.L112.61": {
+    "src_hash": "89273fe355e78aabc6426673feb65476",
+    "text": "Por supuesto, simplemente navega por mis productos. {Footballs} debe comprarse por separado.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:29:13.710951Z"
+  },
+  "data.otservbr.global.npc.graubart.L65.179": {
+    "src_hash": "5e7e221f437946612439628737866a7b",
+    "text": "Ahoi, joven |PLAYERNAME|. ¿Buscas trabajo en mi barco?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:29:13.712168Z"
+  },
+  "data.otservbr.global.npc.gregor.L347.159": {
+    "src_hash": "c38b0cd1026d39fd6896d6be648916d6",
+    "text": "Saludos, |PLAYERNAME|. ¿Qué deseas?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:29:13.713263Z"
+  },
+  "data.otservbr.global.npc.gregor.L348.160": {
+    "src_hash": "b0f298573834cdb44ab5b19d8acdcb41",
+    "text": "Tenga cuidado en sus viajes.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:29:13.715235Z"
+  },
+  "data.otservbr.global.npc.gregor.L349.161": {
+    "src_hash": "b0f298573834cdb44ab5b19d8acdcb41",
+    "text": "Tenga cuidado en sus viajes.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:29:13.716489Z"
+  },
+  "data.otservbr.global.npc.grizzly.adams.L146.91": {
+    "src_hash": "b941c402448104c20b733c879acba187",
+    "text": "Bienvenido al '__PH0__' |PLAYERNAME|. Siéntete libre de hacer {tasks} por nosotros.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:29:13.719015Z"
+  },
+  "data.otservbr.global.npc.grombur.L93.1129": {
+    "src_hash": "ecf362b99c062644fd9d950aba6fcbd0",
+    "text": "¡DETENTE AQUÍ!..... Oh, solo un humano. ¿Qué pasa, grandullón?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:29:13.725483Z"
+  },
+  "data.otservbr.global.npc.guard.saros.L256.315": {
+    "src_hash": "76989cdacc70a11ce050e51834a41faf",
+    "text": "Espero verte pronto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:29:13.726408Z"
+  },
+  "data.otservbr.global.npc.guard.saros.L257.316": {
+    "src_hash": "72ac2a1a6b6e53cfa095d10e97f9d7dd",
+    "text": "Adiós, |PLAYERNAME|. Realmente espero que volvamos a hablar pronto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:29:13.727499Z"
+  },
+  "data.otservbr.global.npc.guide.alexena.L104.1375": {
+    "src_hash": "c005a222b255ab879f7deb5c9b8f6b08",
+    "text": "Bienvenido a Carlin, |PLAYERNAME| ¿Quieres información y una guía de mapas?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:29:13.729327Z"
+  },
+  "data.otservbr.global.npc.guide.alexena.L106.1377": {
+    "src_hash": "2be7cfbe66aae62868dc5cef37599b00",
+    "text": "Adiós y disfruta de tu estancia en Carlin, |PLAYERNAME|",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:29:13.730655Z"
+  },
+  "data.otservbr.global.npc.guide.behil.L102.612": {
+    "src_hash": "6b33208bc4929e52745c709840a25507",
+    "text": "Bendiciones de Daraman, Black Sabbatth, ¡bienvenidos a Darashia! ¿Quieres información y una guía cartográfica?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:29:13.732385Z"
+  },
+  "data.otservbr.global.npc.guide.behil.L104.614": {
+    "src_hash": "aa8c7078c47b73af589177fb5cd23b08",
+    "text": "Bendiciones de Daraman, disfrute su estadía en Darashia, |PLAYERNAME|",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:29:13.733753Z"
+  },
+  "data.otservbr.global.npc.guide.davina.L103.1064": {
+    "src_hash": "33356a8dad2f87f779709b47ea94f9a3",
+    "text": "¡Hola, |PLAYERNAME| y bienvenido a Liberty Bay! ¿Quieres información y una guía cartográfica?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:29:13.736441Z"
+  },
+  "data.otservbr.global.npc.guide.davina.L105.1066": {
+    "src_hash": "d0b20f9019f3fce686eb78ef1f1c5817",
+    "text": "Adiós y disfruta de tu estancia en Liberty Bay, |PLAYERNAME|",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:29:13.737913Z"
+  },
+  "data.otservbr.global.npc.guide.edna.L100.147": {
+    "src_hash": "fa4a7a5f26347998d0fba87ddf1e12fe",
+    "text": "¡Miau, bienvenido a Yalahar |PLAYERNAME|! Aunque no lo parezca, puedo darte una guía de {information} y {map}. ¿Necesitas algo?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:29:13.740019Z"
+  },
+  "data.otservbr.global.npc.guide.edna.L102.149": {
+    "src_hash": "032b310a40729184da96abd7841eb344",
+    "text": "Disfrute de su estancia en Yalahar, |PLAYERNAME|. Maullido.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:29:13.741345Z"
+  },
+  "data.otservbr.global.npc.guide.elena.L107.11": {
+    "src_hash": "7b0af3720125ebc0299a9690e721235a",
+    "text": "Bienvenido a Venore, |PLAYERNAME| ¿Quieres información y una guía de mapas?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:29:13.742687Z"
   }
 }

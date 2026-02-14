@@ -83414,5 +83414,149 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-14T11:22:00.352317Z"
+  },
+  "data.otservbr.global.npc.a.strange.chalice.L117.1623": {
+    "src_hash": "e27e31d068920dba403068afa7e28080",
+    "text": "Cześć? Co masz na myśli 'hi' - nie widzisz, że jestem... Muszę ściszyć głos. Czy przyszło Ci do głowy, że ten 'chalice' nie chce, żeby mu przeszkadzano?! Zostaw mnie w spokoju!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:26:42.834052Z"
+  },
+  "data.otservbr.global.scripts.quests.cults.of.tibia.actions.document.L11.2104": {
+    "src_hash": "9c6cec06690cf28996e1db3502afbeda",
+    "text": "I. him: Ma the kot got twój język?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:26:42.997260Z"
+  },
+  "data.otservbr.global.scripts.quests.cults.of.tibia.movements.ice.death.L63.2088": {
+    "src_hash": "b672ce7a028242c04ff678350b11c1e8",
+    "text": "Jesteś I. błogosławiony z I. z Samotność, I. z the Phoenix, Fire z the I., Duchowy I., I. z Tibia, Serce z the Góra, I. z the Góra, i I. z Los, przeznaczenie.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:26:43.004794Z"
+  },
+  "data.otservbr.global.scripts.quests.in.service.of.yalahar.actions.reward.L26.2183": {
+    "src_hash": "192cb6d64e0684a75306f923e5fa0600",
+    "text": "Masz znaleziono jeden yalahari noga I..",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:26:43.029000Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.cagekey.L5.1672": {
+    "src_hash": "e208d7eff95df4c1c09e8de5583feda8",
+    "text": "Masz znaleziono jeden drewniany I. I..",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:26:43.035751Z"
+  },
+  "data.otservbr.global.scripts.quests.oramond.actions.glooth.fairy.lever.L62.1882": {
+    "src_hash": "7520c29b5800fd0242924d7bc7a51100",
+    "text": "Musisz I. 15 minuty do use ponownie.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:26:43.046982Z"
+  },
+  "data.otservbr.global.scripts.quests.soulpit.soul.prism.L94.1995": {
+    "src_hash": "d3e43ca0e418e28d3c0bb76185d9f702",
+    "text": "Masz otrzymaNie jeden OmiNieus Dusza Core.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:26:43.062740Z"
+  },
+  "data.otservbr.global.scripts.quests.the.cursed.crystal.actions.Misc.L82.1787": {
+    "src_hash": "9f25db585c3bc299d4755213e900b2e5",
+    "text": "Masz znaleziono jeden I. z I..",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:26:43.070146Z"
+  },
+  "data.otservbr.global.scripts.quests.the.cursed.crystal.actions.Misc.L94.1789": {
+    "src_hash": "17f363d5b28d6710eee10f1f445e69ef",
+    "text": "Masz znaleziono jeden I. crystal dzwonek, dzwon.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:26:43.072447Z"
+  },
+  "data.otservbr.global.scripts.quests.the.djinn.war.quest.action.water.fountain.L10.1917": {
+    "src_hash": "0e2d063e230967a1983dd33849d7b89c",
+    "text": "Masz znaleziono jeden tear z daraman.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:26:43.075513Z"
+  },
+  "data.otservbr.global.scripts.quests.the.dream.courts.quest.actions.bookOnTable.L18.1857": {
+    "src_hash": "669b2cb2f632101a665b1e379da7c9bb",
+    "text": "Masz do I. do challange I. wróg ponownie!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:26:43.077063Z"
+  },
+  "data.otservbr.global.scripts.quests.the.new.frontier.action.hidden.note.L9.2170": {
+    "src_hash": "c19053319bbf71bc5d3b6856fae09f92",
+    "text": "Masz znaleziono jeden I. z I..",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:26:43.088110Z"
+  },
+  "data.otservbr.global.npc.yasir.L830.924": {
+    "src_hash": "8e1b3edc6a1fc6591540511b819a4557",
+    "text": "Si, jema ze harun. <waves>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:26:47.577184Z"
+  },
+  "data.otservbr.global.scripts.lib.register.actions.L484.1634": {
+    "src_hash": "5337ac9a00c1ddbf6793aef01e1f7e1f",
+    "text": "Wykopałeś A",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:26:47.577514Z"
+  },
+  "data.otservbr.global.scripts.quests.spike.tasks.actions.ghost.detector.L92.1899": {
+    "src_hash": "867a23f01ccc8da4134952420874ada6",
+    "text": "Wykryłeś obecność nowotworu, świecący detektor sygnalizuje, że nie potrzebuje dalszych danych.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:26:47.578173Z"
+  },
+  "data.otservbr.global.scripts.quests.spike.tasks.actions.ghost.detector.L97.1900": {
+    "src_hash": "09917d1cb02fd9bf9ed9204225c113f0",
+    "text": "Znalazłeś złośliwą obecność, świecący detektor sygnalizuje inną obecność w pobliżu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:26:47.578742Z"
+  },
+  "data.otservbr.global.scripts.quests.the.cursed.crystal.movements.StepIn.CursedCrystal.L42.1779": {
+    "src_hash": "216ccfdc9898d8c33e39fe0a790d4dde",
+    "text": "Tekst jest częściowo pokruszony: 'Take ... vial of emb... fl... and mix ... a medusa's bl.... Następnie.. pył... kryształu, więc... otrzyma Maść Meduzy... potężną... zdolną do nieskamienienia...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:26:47.579579Z"
+  },
+  "data.otservbr.global.scripts.quests.the.rookie.guard.mission02.defence.L100.1698": {
+    "src_hash": "cd65fd7b97394abf9724e1214499852c",
+    "text": "Musisz poczekać kilka minut, zanim będziesz mógł podnieść nowy kamień.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:26:49.344725Z"
   }
 }

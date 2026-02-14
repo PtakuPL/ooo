@@ -5,23 +5,23 @@
 ## 🧭 META
 
 > **[META]** 🟢 ACTIVE  
-> Świeżość: teraz | Źródło: `update_github_status()` | Ostatnia aktualizacja: 2026-02-14 04:42:40
+> Świeżość: teraz | Źródło: `update_github_status()` | Ostatnia aktualizacja: 2026-02-14 04:44:47
 
-> **Aktualizacja:** 2026-02-14 04:42:40 UTC  
+> **Aktualizacja:** 2026-02-14 04:44:47 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 53586  
-> **LIVE:** Cykl #14 | Status: 🟢 RUNNING | Faza: AUTO_TRANSLATE | Etap: auto_start | Kategoria: nl | Plik: items.json | ETA: 0 | Heartbeat: 2026-02-14T04:42:14Z  
-> **Strict hourly (JSONL-only):** okno=1.0h | cycles=82 | pending_skip=0.0% | guard_fail=13.2% | throughput=1117.4/h  
-> **Net effective translated:** 56,796
+> **LIVE:** Cykl #14 | Status: 🟢 RUNNING | Faza: AUTO_TRANSLATE | Etap: parallel_start | Kategoria: sv | Plik: items.json | ETA: 0 | Heartbeat: 2026-02-14T04:44:14Z  
+> **Strict hourly (JSONL-only):** okno=1.0h | cycles=81 | pending_skip=0.0% | guard_fail=13.2% | throughput=1124.2/h  
+> **Net effective translated:** 56,876
 
 ### 🧩 Status sekcji (P0.1)
 | Sekcja | Stan | Świeżość | Powód | Źródło | Ostatnia aktualizacja |
 |--------|------|----------|-------|--------|-----------------------|
-| META | 🟢 ACTIVE | teraz | - | `update_github_status()` | 2026-02-14 04:42:40 |
-| LIVE | 🟢 ACTIVE | 26s temu | - | `activity.json / worker_state.json` | 2026-02-14T04:42:14Z |
-| MIGRATION | 🔒 INACTIVE | 9h temu | worker w trybie AUTO_TRANSLATE | `i18n_file_status.json` | 2026-02-14 04:42:40 |
-| TRANSLATION | 🟢 ACTIVE | 37s temu | - | `translation_guard_latest.json / translation_recent_latest.json` | 2026-02-14T04:42:03.005591Z |
-| QUALITY | 🔒 INACTIVE | 37s temu | worker w trybie AUTO_TRANSLATE | `quality_audit_latest.json` | 2026-02-14T04:42:03.641996Z |
-| HISTORY | 🟢 ACTIVE | teraz | - | `daily/*.json / ops.jsonl` | 2026-02-14 04:42:40 |
+| META | 🟢 ACTIVE | teraz | - | `update_github_status()` | 2026-02-14 04:44:47 |
+| LIVE | 🟢 ACTIVE | 33s temu | - | `activity.json / worker_state.json` | 2026-02-14T04:44:14Z |
+| MIGRATION | 🔒 INACTIVE | 9h temu | worker w trybie AUTO_TRANSLATE | `i18n_file_status.json` | 2026-02-14 04:44:47 |
+| TRANSLATION | 🟢 ACTIVE | 1min temu | - | `translation_guard_latest.json / translation_recent_latest.json` | 2026-02-14T04:43:32.254877Z |
+| QUALITY | 🔒 INACTIVE | 2min temu | worker w trybie AUTO_TRANSLATE | `quality_audit_latest.json` | 2026-02-14T04:42:03.641996Z |
+| HISTORY | 🟢 ACTIVE | teraz | - | `daily/*.json / ops.jsonl` | 2026-02-14 04:44:47 |
 
 > Artefakt machine-readable: `i18n/status/status_sections_latest.json`
 
@@ -30,14 +30,14 @@
 ## 🔴 LIVE
 
 > **[LIVE]** 🟢 ACTIVE  
-> Świeżość: 26s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T04:42:14Z
+> Świeżość: 33s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T04:44:14Z
 
 - **Faza:** `AUTO_TRANSLATE`
-- **Etap:** `auto_start`
-- **Kategoria:** `nl`
+- **Etap:** `parallel_start`
+- **Kategoria:** `sv`
 - **Plik:** `items.json`
 - **Status:** 🟢 RUNNING
-- **Heartbeat:** `2026-02-14T04:42:14Z`
+- **Heartbeat:** `2026-02-14T04:44:14Z`
 
 ---
 
@@ -92,7 +92,7 @@
 ## 🛠️ MIGRATION
 
 > **[MIGRATION]** 🔒 INACTIVE (worker w trybie AUTO_TRANSLATE)  
-> Świeżość: 9h temu | Źródło: `i18n_file_status.json` | Ostatnia aktualizacja: 2026-02-14 04:42:40
+> Świeżość: 9h temu | Źródło: `i18n_file_status.json` | Ostatnia aktualizacja: 2026-02-14 04:44:47
 
 ### 📁 Pliki Projektu (pełny skan)
 | Metryka | Wartość | Procent | Info |
@@ -134,7 +134,7 @@
 ## 🌍 TRANSLATION
 
 > **[TRANSLATION]** 🟢 ACTIVE  
-> Świeżość: 37s temu | Źródło: `translation_guard_latest.json / translation_recent_latest.json` | Ostatnia aktualizacja: 2026-02-14T04:42:03.005591Z
+> Świeżość: 1min temu | Źródło: `translation_guard_latest.json / translation_recent_latest.json` | Ostatnia aktualizacja: 2026-02-14T04:43:32.254877Z
 
 | Metryka | Wartość | Procent | Info |
 |---------|---------|---------|------|
@@ -173,52 +173,52 @@
 - **Ostatnie klucze (10-20):** 20
 
 ### 📝 Ostatnie 10-20 przetłumaczonych kluczy
-- Sorry, you don't have enough money. → Üzgünüm, yeterli paran yok. (npc.cedrik.stdmod_9)
-- Remember: If you are heavily wounded or poisoned, I can heal you for free. → Unutma: Ağır yaralı veya zehirlenmişsen seni ücretsiz iyileştirebilirim. (npc.cedrik.walkaway_msg_1)
-- You don't have enough money. → Yeterli paran yok. (npc.charles.say_3)
-- Do you seek a passage to {0} for {1}? → {0} yolculuğu {1} karşılığında ister misin? (npc.charles.stdmod_3)
-- We would like to serve you some time. → Size bir zaman hizmet etmek isteriz. (npc.charles.stdmod_4)
-- I am the captain of this ship. → Bu geminin kaptanıyım. (npc.charles.stdmod_8)
-- It was a pleasure to help you, |PLAYERNAME|. → Sana yardım etmek bir zevkti, |PLAYERNAME|. (npc.chemar.farewell_msg_1)
-- It was a pleasure to help you, |PLAYERNAME|. → Sana yardım etmek bir zevkti, |PLAYERNAME|. (npc.chemar.walkaway_msg_1)
-- As you wish. → As you wish. (npc.chester_kahs.say_23)
-- You don't have it... → Sende yok... (npc.chondur.say_18)
-- Take this! → Take this! (npc.christoph.say_1)
-- Of course, just browse through my wares. You can also look at {}. → Tabii, mallarıma göz at. Ayrıca {} de bakabilirsin. (npc.chuckles.say_1)
-- Then not. → O zaman hayır. (npc.cillia.say_3)
-- Good bye. Come back soon. → Hoşça kal. Yakında tekrar gel. (npc.cornelia.farewell_msg_1)
-- Good bye. Recommend us if you were satisfied with our service. → Hoşça kal. Hizmetimizden memnun kaldıysan bizi tavsiye et. (npc.cornell.farewell_msg_1)
-- Do you seek a passage to {0} for {1}? → {0} yolculuğu {1} karşılığında ister misin? (npc.cornell.stdmod_2)
-- We would like to serve you some time. → Size bir zaman hizmet etmek isteriz. (npc.cornell.stdmod_3)
-- Good bye. Come back soon. → Hoşça kal. Yakında tekrar gel. (npc.costello.farewell_msg_1)
-- Good bye. → Hoşça kal. (npc.dalbrect.walkaway_msg_1)
-- May your path always be even. → Yolun hep düz olsun. (npc.dancing_fairy.farewell_msg_1)
+- wool → wol (item.10319.name)
+- book of necromantic rituals → boek met necromantische rituelen (item.10320.name)
+- mammoth tusk → mammoet slagtand (item.10321.name)
+- statue → standbeeld (item.10322.name)
+- guardian boots → beschermlaarzen (item.10323.name)
+- expedition backpack → expeditie rugzak (item.10324.name)
+- expedition bag → expeditie tas (item.10325.name)
+- dragon backpack → draken rugzak (item.10326.name)
+- minotaur backpack → minotaurus rugzak (item.10327.name)
+- bunch of ripe rice → bosje rijpe rijst (item.10328.name)
+- rice ball → rijst bal (item.10329.name)
+- dead gnarlhound → dode knoedelhond (item.10330.name)
+- dead gnarlhound → dode knoedelhond (item.10331.name)
+- dead gnarlhound → dode knoedelhond (item.10332.name)
+- dead gnarlhound → dode knoedelhond (item.10333.name)
+- dead orc marauder → dode orc-plunderaar (item.10334.name)
+- dead orc marauder → dode orc-plunderaar (item.10335.name)
+- large pile of bones → grote stapel botten (item.10336.name)
+- dead orc marauder → dode orc-plunderaar (item.10337.name)
+- santa teddy → kerstman teddy (item.10338.name)
 
 ### 🚫 Raporty "nie mogę przetłumaczyć"
-- Guard reports: **1885**  
+- Guard reports: **1886**  
 - Blocker reports: **0**  
-- Widoczne raporty 'nie mogę tłumaczyć': **1835**
+- Widoczne raporty 'nie mogę tłumaczyć': **1836**
 
 ### 🌐 Globalne info wszystkich języków
-- **Global completion:** **20.71%** (577,216/2,786,472)
+- **Global completion:** **20.72%** (577,296/2,786,472)
 - **EN-copy łącznie:** **1,335,990**
 - **Braki kluczy łącznie:** **110,060**
 - **Brakujące pliki językowe:** **0**
-- **Cache STATUSPY (per-lang):** **warm-cache** | hit **52**, miss **0**, hit-rate **100.0%**
-- **Cache STATUSPY (per-file):** hit **1976**, miss **0**, hit-rate **100.0%**
+- **Cache STATUSPY (per-lang):** **mixed** | hit **51**, miss **1**, hit-rate **98.1%**
+- **Cache STATUSPY (per-file):** hit **1975**, miss **1**, hit-rate **99.9%**
 - **Profiler cyklu (ostatni):** -
 - **Osobny raport:** `i18n/status/translation_global_overview.json`
 
 ### ⏱️ Strict Hourly Window (JSONL-only)
 | Metryka | Wartość |
 |---------|---------|
-| Okno | **1.0h** (2026-02-14T03:42:40.634686Z → 2026-02-14T04:42:40.634686Z) |
-| Cykle | **82** (AUTO=82, MIGRATION=0) |
+| Okno | **1.0h** (2026-02-14T03:44:47.581311Z → 2026-02-14T04:44:47.581311Z) |
+| Cykle | **81** (AUTO=81, MIGRATION=0) |
 | Pending skip | **0** (all=0.0%, migration=0.0%) |
 | Guard fail rate | **13.2%** |
 | No progress rate | **2.4%** |
-| Throughput | **1117.4 kluczy/h** |
-| Suspicious | **613** |
+| Throughput | **1124.2 kluczy/h** |
+| Suspicious | **612** |
 | Top guard_fail targets | es/npc.json (gf=69), pl/npc.json (gf=41), zh/items.json (gf=38), zh_tw/items.json (gf=38), pl/otclient_modules.json (gf=29) |
 | Źródła | `i18n/status/worker_cycle_perf.jsonl`, `i18n/status/translation_guard_report.jsonl`, `i18n/status/suspicious_log.jsonl` |
 | Plik | `i18n/status/strict_hourly_window_latest.json` |
@@ -226,7 +226,7 @@
 ## 🔬 QUALITY
 
 > **[QUALITY]** 🔒 INACTIVE (worker w trybie AUTO_TRANSLATE)  
-> Świeżość: 37s temu | Źródło: `quality_audit_latest.json` | Ostatnia aktualizacja: 2026-02-14T04:42:03.641996Z
+> Świeżość: 2min temu | Źródło: `quality_audit_latest.json` | Ostatnia aktualizacja: 2026-02-14T04:42:03.641996Z
 
 - **Ostatni audyt:** OK | 3 issue(s) / 100 entries | 2026-02-14T04:42:03.641996Z
 - **Top 5 typów problemów:** suspicious_rejected_critical=200, suspicious_log_critical=84, suspicious_log_high=78, suspicious_log_low=34, suspicious_log_medium=4
@@ -269,7 +269,7 @@
 ## ✅ CHECKLIST - Plan Pracy
 
 > **Aktualna faza:** AUTO_TRANSLATE  
-> **Aktualna kategoria:** nl
+> **Aktualna kategoria:** sv
 
 
 ### 🔄 Faza 1: 🎮 Canary Server
@@ -337,33 +337,33 @@
 ## 🔴 LIVE: Szczegóły wykonania
 
 > **[LIVE]** 🟢 ACTIVE  
-> Świeżość: 26s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T04:42:14Z
+> Świeżość: 33s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T04:44:14Z
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │ 🔴 LIVE: Worker v2.0                          Cykl #    14 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
-│ Tryb:      🤖 AUTO_TRANSLATE (auto_start)            │
-│ Kategoria: 📁 NL                                     │
+│ Tryb:      🤖 AUTO_TRANSLATE (parallel_start)        │
+│ Kategoria: 📁 SV                                     │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status: running                                               │
 │ Plik: items.json                                              │
 │ Postęp: 0/0 keys                                              │
-│ Info: auto translate                                          │
+│ Info: parallel auto translate                                 │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2026-02-14T04:42:14Z           │
+│ ❤️ Heartbeat: 2026-02-14T04:44:14Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 🧾 Ostatnie akcje (dla czytelności)
 
+- 2026-02-14 04:44:14 | AUTO_TRANSLATE:parallel_start | sv | ok | items.json
+- 2026-02-14 04:43:32 | AUTO_TRANSLATE:auto_done | nl | ok | items.json
 - 2026-02-14 04:42:14 | AUTO_TRANSLATE:auto_start | nl | ok | items.json
 - 2026-02-14 04:42:00 | AUTO_TRANSLATE:parallel_start | tr | ok | npc.json
 - 2026-02-14 04:41:19 | AUTO_TRANSLATE:auto_done | ru | ok | npc.json
 - 2026-02-14 04:40:51 | AUTO_TRANSLATE:auto_start | ru | ok | npc.json
-- 2026-02-14 04:37:18 | AUTO_TRANSLATE:parallel_start | it | ok | npc.json
-- 2026-02-14 04:36:37 | AUTO_TRANSLATE:auto_done | fr | ok | npc.json
 
 ---
 
@@ -376,7 +376,7 @@
 
 | KPI | Wartość | Target | Status |
 |-----|---------|--------|--------|
-| Net effective translated | **56,796** | — | 📊 |
+| Net effective translated | **56,876** | — | 📊 |
 | Adaptive batch | batch=12, gf_rate=0.74%, reason=increase_low_fail_rate=0.7% | gf <5% → increase | 📊 |
 | Throughput (last window) | 1,280 keys / 42 entries | >50/h | 📊 |
 
@@ -385,8 +385,9 @@
 ## 📜 HISTORY
 
 > **[HISTORY]** 🟢 ACTIVE  
-> Świeżość: teraz | Źródło: `daily/*.json / ops.jsonl` | Ostatnia aktualizacja: 2026-02-14 04:42:40
+> Świeżość: teraz | Źródło: `daily/*.json / ops.jsonl` | Ostatnia aktualizacja: 2026-02-14 04:44:47
 
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [nl] → warn (files+1, translated+80, skipped+0) — lang=nl file=items.json strict_skip missing_file=0 missing_key=163 skipped_done=3317 strict_skipped_done=3317
 - 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [pl] → ok (translated+80, skipped+0) — parallel lang=pl file=items.json
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [ru] → warn (files+1, translated+7, skipped+0) — lang=ru file=spells.json strict_skipped_done=1527
 - 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [fr] → ok (translated+80, skipped+0) — parallel lang=fr file=npc.json
@@ -396,7 +397,6 @@
 - 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [es] → ok (translated+5, skipped+0) — parallel lang=es file=php.json
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+5, skipped+0) — lang=pl file=books.json strict_skipped_done=1398 guard_fail=6 placeholder=0 command=0 pipe=0
 - 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [pl] → ok (translated+1, skipped+0) — parallel lang=pl file=otclient_data.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [es] → warn (files+1, translated+2, skipped+0) — lang=es file=otclient_data.json strict_skipped_done=70
 
 
 
@@ -406,7 +406,7 @@
 - Cykle: **49**
 - MIGRATION: **+0** kluczy, **0** plików `.lua`
 - Kategorie dotknięte: -
-- Błędy: **171**
+- Błędy: **173**
 
 
 ---
@@ -717,7 +717,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2026-02-14 04:42:40  
+📅 Auto-updated by Worker v1.1 | Last: 2026-02-14 04:44:47  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

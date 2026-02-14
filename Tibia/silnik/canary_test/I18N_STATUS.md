@@ -5,23 +5,23 @@
 ## 🧭 META
 
 > **[META]** 🟢 ACTIVE  
-> Świeżość: teraz | Źródło: `update_github_status()` | Ostatnia aktualizacja: 2026-02-14 12:55:16
+> Świeżość: teraz | Źródło: `update_github_status()` | Ostatnia aktualizacja: 2026-02-14 12:57:33
 
-> **Aktualizacja:** 2026-02-14 12:55:16 UTC  
+> **Aktualizacja:** 2026-02-14 12:57:33 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 53586  
-> **LIVE:** Cykl #1 | Status: 🟢 RUNNING | Faza: AUTO_TRANSLATE | Etap: heartbeat_tick | Kategoria: es | Plik: questlog.json | ETA: 0 | Heartbeat: 2026-02-14T12:54:39Z  
-> **Strict hourly (JSONL-only):** okno=1.0h | cycles=70 | pending_skip=0.0% | guard_fail=40.8% | throughput=934.5/h  
+> **LIVE:** Cykl #1 | Status: 🟢 RUNNING | Faza: AUTO_TRANSLATE | Etap: heartbeat_tick | Kategoria: cs | Plik: npc.json | ETA: 0 | Heartbeat: 2026-02-14T12:56:33Z  
+> **Strict hourly (JSONL-only):** okno=1.0h | cycles=70 | pending_skip=0.0% | guard_fail=40.9% | throughput=915.5/h  
 > **Net effective translated:** 67,030
 
 ### 🧩 Status sekcji (P0.1)
 | Sekcja | Stan | Świeżość | Powód | Źródło | Ostatnia aktualizacja |
 |--------|------|----------|-------|--------|-----------------------|
-| META | 🟢 ACTIVE | teraz | - | `update_github_status()` | 2026-02-14 12:55:16 |
-| LIVE | 🟢 ACTIVE | 37s temu | - | `activity.json / worker_state.json` | 2026-02-14T12:54:39Z |
-| MIGRATION | 🔒 INACTIVE | 7s temu | worker w trybie AUTO_TRANSLATE | `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | 2026-02-14 12:55:16 |
-| TRANSLATION | 🟢 ACTIVE | 1min temu | - | `translation_guard_latest.json / translation_recent_latest.json` | 2026-02-14T12:53:55.978110Z |
-| QUALITY | 🔒 INACTIVE | 1min temu | worker w trybie AUTO_TRANSLATE | `quality_audit_latest.json` | 2026-02-14T12:53:57.013915Z |
-| HISTORY | 🟢 ACTIVE | teraz | - | `daily/*.json / ops.jsonl` | 2026-02-14 12:55:16 |
+| META | 🟢 ACTIVE | teraz | - | `update_github_status()` | 2026-02-14 12:57:33 |
+| LIVE | 🟢 ACTIVE | 1min temu | - | `activity.json / worker_state.json` | 2026-02-14T12:56:33Z |
+| MIGRATION | 🔒 INACTIVE | 23s temu | worker w trybie AUTO_TRANSLATE | `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | 2026-02-14 12:57:33 |
+| TRANSLATION | 🟢 ACTIVE | 3min temu | - | `translation_guard_latest.json / translation_recent_latest.json` | 2026-02-14T12:53:55.978110Z |
+| QUALITY | 🔒 INACTIVE | 3min temu | worker w trybie AUTO_TRANSLATE | `quality_audit_latest.json` | 2026-02-14T12:53:57.013915Z |
+| HISTORY | 🟢 ACTIVE | teraz | - | `daily/*.json / ops.jsonl` | 2026-02-14 12:57:33 |
 
 > Artefakt machine-readable: `i18n/status/status_sections_latest.json`
 
@@ -30,14 +30,14 @@
 ## 🔴 LIVE
 
 > **[LIVE]** 🟢 ACTIVE  
-> Świeżość: 37s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T12:54:39Z
+> Świeżość: 1min temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T12:56:33Z
 
 - **Faza:** `AUTO_TRANSLATE`
 - **Etap:** `heartbeat_tick`
-- **Kategoria:** `es`
-- **Plik:** `questlog.json`
+- **Kategoria:** `cs`
+- **Plik:** `npc.json`
 - **Status:** 🟢 RUNNING
-- **Heartbeat:** `2026-02-14T12:54:39Z`
+- **Heartbeat:** `2026-02-14T12:56:33Z`
 
 ---
 
@@ -92,7 +92,7 @@
 ## 🛠️ MIGRATION
 
 > **[MIGRATION]** 🔒 INACTIVE (worker w trybie AUTO_TRANSLATE)  
-> Świeżość: 7s temu | Źródło: `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | Ostatnia aktualizacja: 2026-02-14 12:55:16
+> Świeżość: 23s temu | Źródło: `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | Ostatnia aktualizacja: 2026-02-14 12:57:33
 
 ### 📁 Pliki Projektu (pełny skan)
 | Metryka | Wartość | Procent | Info |
@@ -141,7 +141,7 @@
 ## 🌍 TRANSLATION
 
 > **[TRANSLATION]** 🟢 ACTIVE  
-> Świeżość: 1min temu | Źródło: `translation_guard_latest.json / translation_recent_latest.json` | Ostatnia aktualizacja: 2026-02-14T12:53:55.978110Z
+> Świeżość: 3min temu | Źródło: `translation_guard_latest.json / translation_recent_latest.json` | Ostatnia aktualizacja: 2026-02-14T12:53:55.978110Z
 
 | Metryka | Wartość | Procent | Info |
 |---------|---------|---------|------|
@@ -180,26 +180,26 @@
 - **Ostatnie klucze (10-20):** 20
 
 ### 📝 Ostatnie 10-20 przetłumaczonych kluczy
-- Paw and Fur: Fazzrah → Paw and Fur: Fazzrah (questlog.quest_11.mission_63.name)
-- Paw and Fur: Tromphonyte → Paw and Fur: Tromphonyte (questlog.quest_11.mission_64.name)
-- You have completed the quest! → Has completado la Quest! (questlog.quest_31.mission_1.state_4)
-- Palimuth asked you to help with some sewer malfunctions. You will need a Crowbar → Palimuth te pidió ayuda con algunos problemas de alcantarillado. Necesitarás una (questlog.quest_10.mission_1.state_1)
-- Palimuth told you that a circle of Yalahari is planning some kind of ritual. The → Palimuth te dijo que un círculo de Yalahari está planeando algún tipo de ritual. (questlog.quest_10.mission_10.state_1)
-- The entrance to their inner sanctum has been opened for you. Be prepared for a H → La entrada a su santuario interior ha sido abierta para vosotros. ¡Prepárate par (questlog.quest_10.mission_10.state_2)
-- Report back to whichever principal you have chosen to help and you will receive  → Informe al director que haya elegido para ayudar y recibirá trajes Yalaharian. (questlog.quest_10.mission_10.state_3)
-- You got the access to the reward room. Choose carefully which reward you pick as → Tienes acceso a la sala de recompensas. Elija con cuidado qué recompensa elegir, (questlog.quest_10.mission_10.state_4)
-- You have to find all 7 guards and give a report to them. You should start by For → Tienes que encontrar a los 7 guardias y darles un informe. Debes comenzar por el (questlog.quest_10.mission_2.state_1)
-- Get the notes in Palimuths room and read them. Talk to Palimuth again when you'v → Consigue las notas en la habitación de Palimuth y léelas. Habla con Palimuth nue (questlog.quest_10.mission_3.state_1)
-- Get the notes behind the Yalahari and read them. Talk to Azerus again and ask hi → Obtenga las notas detrás del Yalahari y léalas. Habla con Azerus nuevamente y pí (questlog.quest_10.mission_3.state_3)
-- First you will need to kill the three plague bearers and then get The Alchemists → Primero tendrás que matar a los tres portadores de la plaga y luego conseguir la (questlog.quest_10.mission_3.state_5)
-- For this mission you are asked to go to the Trade Quarter and negotiate or threa → Para esta misión se te pide que vayas al Barrio Comercial y negocies o amenaces  (questlog.quest_10.mission_4.state_2)
-- On this mission you are asked to find a druid by the name of Tamerin, on the Are → En esta misión, se te pide que encuentres a un druida llamado Tamerin, en Arena  (questlog.quest_10.mission_5.state_2)
-- Report back to Tamerin as he will listen to your request and you can now make yo → Informe a Tamerin, él escuchará su solicitud y ahora podrá elegir: Ganado para P (questlog.quest_10.mission_5.state_5)
-- Yalahari (Azerus) orders you to travel to the Cemetery Quarter and find the Stra → Yalahari (Azerus) te ordena que viajes al Barrio del Cementerio y encuentres la  (questlog.quest_10.mission_6.state_2)
-- Good side: Go to Palimuth, ask him about your mission, and hand in the charm. Ba → Lado bueno: ve a Palimuth, pregúntale sobre tu misión y entrega el amuleto. Lado (questlog.quest_10.mission_6.state_3)
-- Bad side: Yalahari (Azerus) will send you for a new mission to go to the Sunken  → Lado malo: Yalahari (Azerus) te enviará a una nueva misión para ir al Barrio Hun (questlog.quest_10.mission_7.state_2)
-- Bad side: For this mission the Yalahari requests you go to the Factory Quarter a → Lado malo: Para esta misión, Yalahari te pide que vayas al Factory Quarter y enc (questlog.quest_10.mission_8.state_2)
-- You now need to decide between supporting Palimuth or the Yalahari's goal. To ch → Ahora debes decidir entre apoyar a Palimuth o el objetivo de Yalahari. Para eleg (questlog.quest_10.mission_9.state_1)
+- Yeah, good bye and don't come again! → Jo, sbohem a už nechoď! (npc.canary.farewell_msg_1)
+- Good bye then. → Tak tedy sbohem. (npc.captain_bluebear.walkaway_msg_1)
+- Good bye then. → Tak tedy sbohem. (npc.captain_breezelda.walkaway_msg_1)
+- Good bye then. → Tak tedy sbohem. (npc.captain_chelop.walkaway_msg_1)
+- Good bye. → Sbohem. (npc.captain_cookie.farewell_msg_1)
+- Good bye. → Sbohem. (npc.captain_cookie.walkaway_msg_1)
+- Good bye then. → Tak tedy sbohem. (npc.captain_fearless.walkaway_msg_1)
+- Good bye then. → Tak tedy sbohem. (npc.captain_greyhound.walkaway_msg_1)
+- Bye. → Čau. (npc.captain_haba.farewell_msg_1)
+- Bye. → Čau. (npc.captain_haba.walkaway_msg_1)
+- Good bye then. → Tak tedy sbohem. (npc.captain_harava.walkaway_msg_1)
+- Good bye. → Sbohem. (npc.captain_max.farewell_msg_1)
+- Good bye. → Sbohem. (npc.captain_max.walkaway_msg_1)
+- Good bye. → Sbohem. (npc.captain_max_calassa.farewell_msg_1)
+- Good bye. → Sbohem. (npc.captain_max_calassa.walkaway_msg_1)
+- Good bye then. → Tak tedy sbohem. (npc.captain_pelagia.walkaway_msg_1)
+- Good bye. → Sbohem. (npc.captain_seagull.walkaway_msg_1)
+- Good bye then. → Tak tedy sbohem. (npc.captain_sinbeard.walkaway_msg_1)
+- Good bye. → Sbohem. (npc.captain_waverider.farewell_msg_1)
+- Good bye. → Sbohem. (npc.captain_waverider_island.farewell_msg_1)
 
 ### 🚫 Raporty "nie mogę przetłumaczyć"
 - Guard reports: **2076**  
@@ -207,13 +207,13 @@
 - Widoczne raporty 'nie mogę tłumaczyć': **2026**
 
 ### 🌐 Globalne info wszystkich języków
-- **Global completion:** **9.8%** (273,192/2,786,472)
-- **EN-copy łącznie:** **169,031**
+- **Global completion:** **9.8%** (273,201/2,786,472)
+- **EN-copy łącznie:** **169,020**
 - **Braki kluczy łącznie:** **2,155**
 - **Brakujące pliki językowe:** **0**
 - **Cache STATUSPY (per-lang):** **mixed** | hit **51**, miss **1**, hit-rate **98.1%**
 - **Cache STATUSPY (per-file):** hit **1975**, miss **1**, hit-rate **99.9%**
-- **Profiler cyklu (ostatni):** cykl #1 (AUTO_TRANSLATE): dispatch 503ms, mode 90957ms, status 4843ms, total 97600ms
+- **Profiler cyklu (ostatni):** cykl #1 (AUTO_TRANSLATE): dispatch 177ms, mode 90957ms, status 4843ms, total 97600ms
 - **Osobny raport:** `i18n/status/translation_global_overview.json`
 
 ### 🖥️ Serwer vs 📦 Instalka (OTClient)
@@ -240,21 +240,21 @@
 ### ⏱️ Strict Hourly Window (JSONL-only)
 | Metryka | Wartość |
 |---------|---------|
-| Okno | **1.0h** (2026-02-14T11:55:16.814110Z → 2026-02-14T12:55:16.814110Z) |
+| Okno | **1.0h** (2026-02-14T11:57:34.058250Z → 2026-02-14T12:57:34.058250Z) |
 | Cykle | **70** (AUTO=70, MIGRATION=0) |
 | Pending skip | **0** (all=0.0%, migration=0.0%) |
-| Guard fail rate | **40.8%** |
+| Guard fail rate | **40.9%** |
 | No progress rate | **0.0%** |
-| Throughput | **934.5 kluczy/h** |
-| Suspicious | **697** |
-| Top guard_fail targets | es/npc.json (gf=225), es/server.json (gf=106), lt/npc.json (gf=86), es/scripts.json (gf=54), pl/quests.json (gf=31) |
+| Throughput | **915.5 kluczy/h** |
+| Suspicious | **716** |
+| Top guard_fail targets | es/npc.json (gf=225), es/server.json (gf=106), lt/npc.json (gf=86), es/scripts.json (gf=43), pl/quests.json (gf=31) |
 | Źródła | `i18n/status/worker_cycle_perf.jsonl`, `i18n/status/translation_guard_report.jsonl`, `i18n/status/suspicious_log.jsonl` |
 | Plik | `i18n/status/strict_hourly_window_latest.json` |
 
 ## 🔬 QUALITY
 
 > **[QUALITY]** 🔒 INACTIVE (worker w trybie AUTO_TRANSLATE)  
-> Świeżość: 1min temu | Źródło: `quality_audit_latest.json` | Ostatnia aktualizacja: 2026-02-14T12:53:57.013915Z
+> Świeżość: 3min temu | Źródło: `quality_audit_latest.json` | Ostatnia aktualizacja: 2026-02-14T12:53:57.013915Z
 
 - **Ostatni audyt:** OK | 5 issue(s) / 100 entries | 2026-02-14T12:53:57.013915Z
 - **Top 5 typów problemów:** suspicious_log_critical=136, suspicious_log_low=38, suspicious_rejected_critical=31, suspicious_log_high=26, identical_to_en_exempt=9
@@ -299,7 +299,7 @@
 ## ✅ CHECKLIST - Plan Pracy
 
 > **Aktualna faza:** AUTO_TRANSLATE  
-> **Aktualna kategoria:** es
+> **Aktualna kategoria:** cs
 
 
 ### 🔄 Faza 1: 🎮 Canary Server
@@ -367,7 +367,7 @@
 ## 🔴 LIVE: Szczegóły wykonania
 
 > **[LIVE]** 🟢 ACTIVE  
-> Świeżość: 37s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T12:54:39Z
+> Świeżość: 1min temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T12:56:33Z
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
@@ -375,25 +375,25 @@
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      🤖 AUTO_TRANSLATE (heartbeat_tick)        │
-│ Kategoria: 📁 ES                                     │
+│ Kategoria: 📁 CS                                     │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status: running                                               │
-│ Plik: questlog.json                                           │
+│ Plik: npc.json                                                │
 │ Postęp: 0/0 keys                                              │
 │ Info: auto translate in progress                              │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2026-02-14T12:54:39Z           │
+│ ❤️ Heartbeat: 2026-02-14T12:56:33Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 🧾 Ostatnie akcje (dla czytelności)
 
+- 2026-02-14 12:56:33 | AUTO_TRANSLATE:heartbeat_tick | cs | ok | npc.json
+- 2026-02-14 12:56:26 | AUTO_TRANSLATE:auto_start | cs | ok | npc.json
 - 2026-02-14 12:54:39 | AUTO_TRANSLATE:heartbeat_tick | es | ok | questlog.json
 - 2026-02-14 12:54:38 | AUTO_TRANSLATE:auto_start | es | ok | questlog.json
 - 2026-02-14 12:53:56 | AUTO_TRANSLATE:auto_done | lt | ok | npc.json
 - 2026-02-14 12:52:25 | AUTO_TRANSLATE:heartbeat_tick | lt | ok | npc.json
-- 2026-02-14 12:52:25 | AUTO_TRANSLATE:auto_start | lt | ok | npc.json
-- 2026-02-14 12:50:43 | AUTO_TRANSLATE:heartbeat_tick | es | ok | raids.json
 
 ---
 
@@ -415,7 +415,7 @@
 ## 📜 HISTORY
 
 > **[HISTORY]** 🟢 ACTIVE  
-> Świeżość: teraz | Źródło: `daily/*.json / ops.jsonl` | Ostatnia aktualizacja: 2026-02-14 12:55:16
+> Świeżość: teraz | Źródło: `daily/*.json / ops.jsonl` | Ostatnia aktualizacja: 2026-02-14 12:57:33
 
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [lt] → warn (files+1, translated+20, skipped+0) — lang=lt file=npc.json strict_skipped_done=183
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [es] → warn (files+1, translated+32, skipped+0) — lang=es file=scripts.json strict_skipped_done=2082 guard_fail=43 placeholder=0 command=0 pipe=0
@@ -753,7 +753,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2026-02-14 12:55:16  
+📅 Auto-updated by Worker v1.1 | Last: 2026-02-14 12:57:33  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

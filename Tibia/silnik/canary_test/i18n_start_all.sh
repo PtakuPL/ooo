@@ -22,6 +22,9 @@ STATUSD_SCRIPT="$WORK_DIR/i18n-statusd.sh"
 GUARDIAN_PID_FILE="$WORK_DIR/.guardian.pid"
 STATUSD_PID_FILE="$WORK_DIR/.statusd.pid"
 LOGFILE="$WORK_DIR/i18n/logs/start_all.log"
+POST_START_HEALTH_ENABLED="${START_ALL_POST_START_HEALTH_ENABLED:-true}"
+POST_START_HEALTH_WINDOW_SEC="${START_ALL_POST_START_HEALTH_WINDOW_SEC:-30}"
+POST_START_HEALTH_SAMPLE_SEC="${START_ALL_POST_START_HEALTH_SAMPLE_SEC:-5}"
 
 mkdir -p "$WORK_DIR/i18n/logs"
 
@@ -92,6 +95,79 @@ wait_for_stable_process() {
         sleep 1
         waited=$((waited + 1))
     done
+    return 1
+}
+
+is_worker_running() {
+    local pid
+    pid=$(cat "$WORK_DIR/.worker_simple.pid" 2>/dev/null || echo "")
+    [[ "$pid" =~ ^[0-9]+$ ]] || return 1
+    ps -p "$pid" >/dev/null 2>&1 || return 1
+    [ -r "/proc/$pid/cmdline" ] || return 1
+    local cmdline
+    cmdline=$(tr '\0' ' ' < "/proc/$pid/cmdline" 2>/dev/null || echo "")
+    [ -n "$cmdline" ] || return 1
+    [[ "$cmdline" == *"i18n_worker_simple.sh --continuous"* ]] || return 1
+    echo "$pid"
+    return 0
+}
+
+post_start_health_gate() {
+    local enabled="${POST_START_HEALTH_ENABLED,,}"
+    case "$enabled" in
+        1|true|yes|on) ;;
+        *)
+            log "⏭️  Pomijam post-start health gate (enabled=$POST_START_HEALTH_ENABLED)"
+            return 0
+            ;;
+    esac
+
+    local window="${POST_START_HEALTH_WINDOW_SEC:-30}"
+    local sample="${POST_START_HEALTH_SAMPLE_SEC:-5}"
+    [[ "$window" =~ ^[0-9]+$ ]] || window=30
+    [[ "$sample" =~ ^[0-9]+$ ]] || sample=5
+    (( window < 5 )) && window=5
+    (( sample < 1 )) && sample=1
+    (( sample > window )) && sample="$window"
+
+    log "🩺 Post-start health gate: obserwacja ${window}s (sample=${sample}s)"
+
+    local started_at now deadline g_pid s_pid w_pid
+    started_at=$(date +%s)
+    deadline=$((started_at + window))
+
+    while true; do
+        now=$(date +%s)
+        (( now >= deadline )) && break
+        sleep "$sample"
+        g_pid=$(is_running "$GUARDIAN_PID_FILE" "i18n_guardian.sh --daemon") || g_pid=""
+        s_pid=$(is_running "$STATUSD_PID_FILE" "i18n-statusd.sh --daemon") || s_pid=""
+        w_pid=$(is_worker_running) || w_pid=""
+        log "🩺 Gate sample: guardian=${g_pid:-dead} statusd=${s_pid:-dead} worker=${w_pid:-dead}"
+    done
+
+    g_pid=$(is_running "$GUARDIAN_PID_FILE" "i18n_guardian.sh --daemon") || g_pid=""
+    s_pid=$(is_running "$STATUSD_PID_FILE" "i18n-statusd.sh --daemon") || s_pid=""
+    w_pid=$(is_worker_running) || w_pid=""
+
+    if [[ -n "$g_pid" && -n "$s_pid" && -n "$w_pid" ]]; then
+        log "✅ Post-start health gate OK po ${window}s (guardian=$g_pid, statusd=$s_pid, worker=$w_pid)"
+        return 0
+    fi
+
+    log "❌ Post-start health gate FAIL po ${window}s (guardian=${g_pid:-dead}, statusd=${s_pid:-dead}, worker=${w_pid:-dead})"
+    if [[ -f "$WORK_DIR/i18n/logs/guardian.log" ]]; then
+        log "↳ Ostatnie logi guardian:"
+        tail -n 20 "$WORK_DIR/i18n/logs/guardian.log" | sed 's/^/[guardian] /' | tee -a "$LOGFILE" >/dev/null || true
+    fi
+    if [[ -f "$WORK_DIR/i18n/logs/statusd.log" ]]; then
+        log "↳ Ostatnie logi statusd:"
+        tail -n 20 "$WORK_DIR/i18n/logs/statusd.log" | sed 's/^/[statusd] /' | tee -a "$LOGFILE" >/dev/null || true
+    fi
+    if [[ -f "$WORK_DIR/work_i18n_live.log" ]]; then
+        log "↳ Ostatnie logi worker:"
+        tail -n 20 "$WORK_DIR/work_i18n_live.log" | sed 's/^/[worker] /' | tee -a "$LOGFILE" >/dev/null || true
+    fi
     return 1
 }
 
@@ -221,6 +297,10 @@ case "${1:-start}" in
         log "═══ i18n_start_all: START ═══"
         start_guardian
         start_statusd
+        if ! post_start_health_gate; then
+            show_status
+            exit 1
+        fi
         show_status
         ;;
     --stop|stop)

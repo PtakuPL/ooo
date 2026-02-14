@@ -1,80 +1,48 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-02-14T10:00:49Z",
+  "generated_at_utc": "2026-02-14T10:31:37Z",
   "config": {
     "mtime_restart_min_interval_sec": 90,
     "restart_failure_backoff_base_sec": 20,
     "restart_failure_backoff_max_sec": 300
   },
   "last_restart": {
-    "timestamp": "2026-02-14T10:00:49Z",
-    "cause": "mtime",
+    "timestamp": "2026-02-14T10:31:37Z",
+    "cause": "health_stuck",
     "success": true,
-    "pid": "1974062"
+    "pid": "2003044"
   },
   "failure_streak": 0,
   "cooldown_active": false,
   "cooldown_remaining_sec": 0,
   "next_allowed_utc": "",
   "totals": {
-    "attempts": 72,
-    "successes": 72,
+    "attempts": 76,
+    "successes": 76,
     "failures": 0,
     "blocked": 22
   },
   "causes": {
     "worker_missing": {
-      "attempts": 11,
-      "successes": 11,
+      "attempts": 13,
+      "successes": 13,
       "failures": 0,
       "blocked": 0
     },
     "mtime": {
-      "attempts": 33,
-      "successes": 33,
+      "attempts": 34,
+      "successes": 34,
       "failures": 0,
       "blocked": 22
     },
     "health_stuck": {
-      "attempts": 28,
-      "successes": 28,
+      "attempts": 29,
+      "successes": 29,
       "failures": 0,
       "blocked": 0
     }
   },
   "recent_events": [
-    {
-      "timestamp": "2026-02-14T08:33:49Z",
-      "type": "blocked",
-      "cause": "mtime",
-      "reason": "mtime_debounce",
-      "wait_sec": 16
-    },
-    {
-      "timestamp": "2026-02-14T08:34:25Z",
-      "type": "result",
-      "cause": "mtime",
-      "success": true,
-      "pid": "1903388",
-      "reason": "pid_file",
-      "backoff_sec": 0
-    },
-    {
-      "timestamp": "2026-02-14T08:34:55Z",
-      "type": "blocked",
-      "cause": "mtime",
-      "reason": "mtime_debounce",
-      "wait_sec": 60
-    },
-    {
-      "timestamp": "2026-02-14T08:36:14Z",
-      "type": "result",
-      "cause": "mtime",
-      "success": true,
-      "pid": "1904892",
-      "reason": "pid_file",
-      "backoff_sec": 0
-    },
     {
       "timestamp": "2026-02-14T08:36:45Z",
       "type": "blocked",
@@ -210,6 +178,42 @@
       "cause": "mtime",
       "success": true,
       "pid": "1974062",
+      "reason": "pid_file",
+      "backoff_sec": 0
+    },
+    {
+      "timestamp": "2026-02-14T10:11:00Z",
+      "type": "result",
+      "cause": "worker_missing",
+      "success": true,
+      "pid": "1981948",
+      "reason": "pid_file",
+      "backoff_sec": 0
+    },
+    {
+      "timestamp": "2026-02-14T10:17:03Z",
+      "type": "result",
+      "cause": "worker_missing",
+      "success": true,
+      "pid": "1987270",
+      "reason": "pid_file",
+      "backoff_sec": 0
+    },
+    {
+      "timestamp": "2026-02-14T10:18:46Z",
+      "type": "result",
+      "cause": "mtime",
+      "success": true,
+      "pid": "1989436",
+      "reason": "pid_file",
+      "backoff_sec": 0
+    },
+    {
+      "timestamp": "2026-02-14T10:31:37Z",
+      "type": "result",
+      "cause": "health_stuck",
+      "success": true,
+      "pid": "2003044",
       "reason": "pid_file",
       "backoff_sec": 0
     }

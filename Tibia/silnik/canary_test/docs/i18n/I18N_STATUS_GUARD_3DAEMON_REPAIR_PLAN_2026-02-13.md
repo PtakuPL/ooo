@@ -5,6 +5,27 @@
 > `docs/I18N_UNIFIED_EXECUTION_PLAN_2026-02-13.md`.
 > W przypadku konfliktu zapisów, obowiązuje plan kanoniczny.
 
+## 🛠️ Aktualizacja wykonania (2026-02-14 10:18 UTC — post-start gate + manual source diagnosis + queue observation)
+
+Wykonane:
+- ✅ **`i18n_start_all.sh`: post-start health gate**
+  - dodano gate po starcie (domyślnie 30s) walidujący stabilność trzech procesów: guardian/statusd/worker.
+- ✅ **`i18n_guardian.sh`: diagnostyka source=manual**
+  - nowy log kontekstu startu `manual`: `ppid`, `parent cmdline`, `gppid`, `grand cmdline` (throttled),
+  - root-cause potwierdzony: parent `/usr/lib/systemd/systemd --user`.
+- ✅ **Identyfikacja zewnętrznego triggera**
+  - znaleziony unit: `~/.config/systemd/user/i18n-guardian.service`,
+  - konfiguracja unitu: `Restart=always`, `RestartSec=5` (próby co ~5s),
+  - to on wywołuje `i18n_guardian.sh --daemon` bez `GUARDIAN_START_SOURCE`, więc starty klasyfikują się jako `manual`.
+- ✅ **Obserwacja 20+ min**
+  - w `statusd.log` (okno 20 min) brak `REPAIR_QUEUE_STALE` (`stale_recent=0`),
+  - obecne wpisy: `repair_queue_fresh` / `queue_freshness_ok`.
+
+Nowe TODO:
+- ⬜ Uzgodnić jedną ścieżkę orkiestracji (user-systemd vs `i18n_start_all.sh`), żeby usunąć konkurencję źródeł startu.
+- ⬜ Jeśli zostaje user-systemd: ustawić `GUARDIAN_START_SOURCE=service` w unit.
+- ⬜ Jeśli zostaje `start_all`: wyłączyć `i18n-guardian.service` po stronie user-systemd.
+
 ## 🛠️ Aktualizacja wykonania (2026-02-14 09:56 UTC — 3-daemon lock reliability + worker heartbeat/queue)
 
 Wykonane:
@@ -27,9 +48,9 @@ Walidacja (2026-02-14 09:56 UTC, test foreground worker):
 - ✅ `status` i `I18N_STATUS.md` odświeżają się poprawnie przy sygnale stop.
 
 Nowe TODO:
-- ⬜ Dodać 30s post-start health-check w `i18n_start_all.sh` (nie tylko szybki PID stability check), bo część środowisk ubija procesy tła po kilku sekundach.
-- ⬜ Zidentyfikować zewnętrzny trigger wywołujący `i18n_guardian.sh --daemon` z `source=manual` co kilka sekund (aktualnie szum diagnostyczny i ryzyko lock contention).
-- ⬜ Wykonać pełną obserwację 3 daemonów (20+ min) i potwierdzić brak `REPAIR_QUEUE_STALE` w `statusd_doctor`.
+- ✅ Dodać 30s post-start health-check w `i18n_start_all.sh` (nie tylko szybki PID stability check), bo część środowisk ubija procesy tła po kilku sekundach.
+- ✅ Zidentyfikować zewnętrzny trigger wywołujący `i18n_guardian.sh --daemon` z `source=manual` co kilka sekund (aktualnie szum diagnostyczny i ryzyko lock contention).
+- ✅ Wykonać pełną obserwację 3 daemonów (20+ min) i potwierdzić brak `REPAIR_QUEUE_STALE` w `statusd_doctor`. → DONE 2026-02-14 10:18 UTC (`stale_recent=0`).
 
 ## 🛠️ Aktualizacja wykonania (2026-02-14 09:12 UTC — heartbeat contract + subprocess watchdog)
 
@@ -85,7 +106,7 @@ Walidacja:
 
 Nowe TODO:
 - ✅ Dodać auto-akcję przełączającą guardiana na `quality_repair` przy `priority_gate_stuck`. → DONE 2026-02-14 08:45: `statusd --auto-action` ma akcję `SWITCH_PROFILE_QUALITY_REPAIR_ON_PRIORITY_GATE_STUCK` (po włączeniu `.statusd_auto_actions`).
-- ⬜ Dodać reconcile per-file (obecnie korekta jest globalna, bez pełnego backfillu poziomu pliku).
+- ✅ Dodać reconcile per-file (obecnie korekta jest globalna, bez pełnego backfillu poziomu pliku).
 - ✅ Dostrajać heartbeat contract (`STALE_HEARTBEAT`): worker bywa `pid_alive`, ale przekracza 300s między heartbeatami podczas długich cykli. → DONE 2026-02-14 09:12 (dynamiczne progi + aktywność PID/logów w doctorze).
 - ⬜ Utrzymać TODO operacyjne: `STATUSD_WEBHOOK_URL` nadal nieustawiony.
 

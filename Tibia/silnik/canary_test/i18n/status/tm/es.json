@@ -133382,5 +133382,661 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-14T10:06:59.111584Z"
+  },
+  "npc.rashid_custom.say_2": {
+    "src_hash": "6c1c8e0fa86bdf295b34cdad346915da",
+    "text": "¿Habéis conseguido obtener un raro trofeo de ciervo para mi cliente?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T10:22:29.860718Z"
+  },
+  "npc.rashid_custom.say_21": {
+    "src_hash": "9e95a87d18a9e753fa7a02805c32c4d5",
+    "text": "Me sorprende que hayas logrado traer este jarrón sin una sola grieta. Eso era lo que necesitaba saber, gracias.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T10:22:29.864292Z"
+  },
+  "npc.rashid_custom.say_22": {
+    "src_hash": "ea4ea1bc3a95600b7827f204bb941252",
+    "text": "Bien, tengo curiosidad por saber cómo te irá con {Uzgod}. ¡Buena suerte!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T10:22:29.866656Z"
+  },
+  "npc.rashid_custom.say_23": {
+    "src_hash": "3e9e38d9270f573f762fde3c42b2a61d",
+    "text": "¡Ja! Eres realmente inteligente, ¡bien hecho! Te quitaré esto. Ven a verme mañana, creo que, después de todo, los dos podríamos hacer negocios.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T10:22:29.869509Z"
+  },
+  "npc.rashid_custom.say_24": {
+    "src_hash": "9bd4da96a33bfa57fc00e9dbada8fe4c",
+    "text": "¡Muchas gracias! Entonces estaré esperando ansiosamente tu regreso.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T10:22:29.873441Z"
+  },
+  "npc.rashid_custom.say_25": {
+    "src_hash": "4eec20db92294620ca1c310e59c8efc9",
+    "text": "¡¡Gracias!! ¡Ah, esto me alegra el día! Me tomaré el resto del día libre para conocer a este pequeño. Ven a verme mañana, si quieres.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T10:22:29.879716Z"
+  },
+  "npc.rashid_custom.say_3": {
+    "src_hash": "6c7db6e1a2c8d79f663824d05c1054a7",
+    "text": "Entonces, amigo mío, ¿estás dispuesto a pasar a la siguiente misión para convertirte en un comerciante reconocido?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T10:22:29.882692Z"
+  },
+  "npc.rashid_custom.say_4": {
+    "src_hash": "6922f524d6b57614086658bcfbf70160",
+    "text": "¿Me trajiste el paquete?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T10:22:29.884753Z"
+  },
+  "npc.rashid_custom.say_48": {
+    "src_hash": "700caa2a5913b719e19ae748febc6af1",
+    "text": "Lo siento, pero no perteneces a mis clientes exclusivos. Debo asegurarme de poder confiar en la calidad de sus productos.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T10:22:29.888226Z"
+  },
+  "npc.rashid_custom.say_5": {
+    "src_hash": "6c7db6e1a2c8d79f663824d05c1054a7",
+    "text": "Entonces, amigo mío, ¿estás dispuesto a pasar a la siguiente misión para convertirte en un comerciante reconocido?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T10:22:29.890051Z"
+  },
+  "npc.rashid_custom.say_6": {
+    "src_hash": "90fe7c9f5e89ccec36eabc3d919bcb8d",
+    "text": "¿Has traído el queso?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T10:22:29.891114Z"
+  },
+  "npc.rashid_custom.say_7": {
+    "src_hash": "6c7db6e1a2c8d79f663824d05c1054a7",
+    "text": "Entonces, amigo mío, ¿estás dispuesto a pasar a la siguiente misión para convertirte en un comerciante reconocido?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T10:22:29.892391Z"
+  },
+  "npc.rashid_custom.say_8": {
+    "src_hash": "ba7a7b62efc19d9110feb452b8e072f3",
+    "text": "¿Has traído el jarrón?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T10:22:29.893297Z"
+  },
+  "npc.rashid_custom.say_9": {
+    "src_hash": "6c7db6e1a2c8d79f663824d05c1054a7",
+    "text": "Entonces, amigo mío, ¿estás dispuesto a pasar a la siguiente misión para convertirte en un comerciante reconocido?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T10:22:29.897276Z"
+  },
+  "npc.rashid_custom.stdmod_1": {
+    "src_hash": "ad14a77ec47c54157afabb3c3806f829",
+    "text": "Soy un comerciante ambulante. Aunque no compro todo. Y no de todos, por cierto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T10:22:29.899485Z"
+  },
+  "npc.rashid_custom.stdmod_10": {
+    "src_hash": "5b8e802e97e7004542a9d17f38ab44c3",
+    "text": "Hay muy pocos clientes allí, no vale la pena el viaje.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T10:22:29.900651Z"
+  },
+  "npc.rashid_custom.stdmod_11": {
+    "src_hash": "7eea6eb3af53e06b4fe4dcaaa1219787",
+    "text": "Mmm... no lo creo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T10:22:29.901602Z"
+  },
+  "npc.rashid_custom.stdmod_12": {
+    "src_hash": "41e56d7111309f1859fb90eef6c77705",
+    "text": "No me gusta mucho estar bajo tierra. También tiendo a perderme en estos laberínticos túneles enanos, así que prefiero evitarlos.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T10:22:29.903947Z"
+  },
+  "npc.rashid_custom.stdmod_13": {
+    "src_hash": "2145828384cc55e704365eb1d27d1d7d",
+    "text": "Cuando evitas los barrios marginales, es una ciudad realmente bonita. Casi tan bonita como la hija del gobernador.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T10:22:29.907453Z"
+  },
+  "npc.rashid_custom.stdmod_14": {
+    "src_hash": "7eea6eb3af53e06b4fe4dcaaa1219787",
+    "text": "Mmm... no lo creo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T10:22:29.909529Z"
+  },
+  "npc.rashid_custom.stdmod_15": {
+    "src_hash": "e79e92188361da28ef5b1aa4700ea08a",
+    "text": "Me gusta el asentamiento en sí, pero no pongo un pie en la jungla. ¿Has visto el tamaño de estos ciempiés?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T10:22:29.912423Z"
+  },
+  "npc.rashid_custom.stdmod_16": {
+    "src_hash": "7eea6eb3af53e06b4fe4dcaaa1219787",
+    "text": "Mmm... no lo creo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T10:22:29.914210Z"
+  },
+  "npc.rashid_custom.stdmod_17": {
+    "src_hash": "bd38e73450cb982e030b0d7fe76b8ecc",
+    "text": "Ojalá hiciera un poco más de calor allí, pero con una buena taza de hidromiel bárbaro en el estómago todo se vuelve mucho más acogedor.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T10:22:29.917016Z"
+  },
+  "npc.rashid_custom.stdmod_18": {
+    "src_hash": "e9e7f9316a8f44189233966bac721a81",
+    "text": "Me siento incómodo y bastante inseguro en Thais, por eso no viajo allí.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T10:22:29.918664Z"
+  },
+  "npc.rashid_custom.stdmod_19": {
+    "src_hash": "7eea6eb3af53e06b4fe4dcaaa1219787",
+    "text": "Mmm... no lo creo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T10:22:29.919645Z"
+  },
+  "npc.rashid_custom.stdmod_2": {
+    "src_hash": "54cff4bf661df13995eded75ca906b4b",
+    "text": "Soy Rashid, hijo del desierto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T10:22:29.920845Z"
+  },
+  "npc.rashid_custom.stdmod_20": {
+    "src_hash": "d0db6fa6b2228db2caad57c77e45b7ca",
+    "text": "Aunque es el floreciente centro comercial de Tibia, no me gusta ir allí. Demasiada competencia para mi gusto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T10:22:29.922458Z"
+  },
+  "npc.rashid_custom.stdmod_21": {
+    "src_hash": "e5a1d5760303a794eeffa786c2e74e6c",
+    "text": "Ya casi es hora de continuar el viaje.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T10:22:29.923460Z"
+  },
+  "npc.rashid_custom.stdmod_22": {
+    "src_hash": "d0a8108937002e1dcd32b3253d3ce8ed",
+    "text": "Reyes, reinas, emperadores y califas... todos dicen ser diferentes y únicos, pero en realidad es lo mismo en todas partes.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T10:22:29.924932Z"
+  },
+  "npc.rashid_custom.stdmod_3": {
+    "src_hash": "f4074f95f4e3f0c17a091be5f8ab5ac6",
+    "text": "Por supuesto, viejo amigo. También puedes buscar solo armaduras, piernas, escudos, cascos, botas, armas, armas encantadas, joyas o artículos varios.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T10:22:29.926515Z"
+  },
+  "npc.rashid_custom.stdmod_4": {
+    "src_hash": "62a16cefd394cf439204446a0ac35657",
+    "text": "Elves... Realmente no confío en ellos. Toda esta charla sobre la naturaleza, las flores y abrazar los árboles... Estoy seguro de que hay algún plan perverso detrás de todo esto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T10:22:29.928710Z"
+  },
+  "npc.rashid_custom.stdmod_5": {
+    "src_hash": "48081319e51e454fd111310ce91cef8e",
+    "text": "¡Mi amada ciudad natal! Ah, el dulce aroma de las arenas del desierto, la forma perfecta de las pirámides... increíblemente hermosa.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T10:22:29.930765Z"
+  },
+  "npc.rashid_custom.stdmod_6": {
+    "src_hash": "78b3718b44ab81447327eb9e1e4a3eb0",
+    "text": "Tengo que ir a Carlin de vez en cuando, ya que la reina desea ver mis productos exclusivos en intervalos regulares.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T10:22:29.932770Z"
+  },
+  "npc.rashid_custom.stdmod_7": {
+    "src_hash": "833a499d145e3ad030b4f90993b9ca4c",
+    "text": "Cormaya? No es un buen lugar para hacer negocios, está demasiado lejos y es pequeño.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T10:22:29.935240Z"
+  },
+  "npc.rashid_custom.stdmod_8": {
+    "src_hash": "e117238fb15934af30a6358f8c4381a6",
+    "text": "No es real, pero es casi igual de bueno. Los comerciantes de allí reclaman precios ridículos, lo cual está bien para mi propio negocio.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T10:22:29.937970Z"
+  },
+  "npc.rashid_custom.stdmod_9": {
+    "src_hash": "d499d958d7a2bfbb8e75efc4aa486a7a",
+    "text": "¡Ah sí, Edron! ¡Qué isla tan encantadora y tranquila! Normalmente hago buenos negocios allí.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T10:22:29.940289Z"
+  },
+  "npc.rata_mari.greet_1": {
+    "src_hash": "42688ac614a5e89423cb1d67c882044d",
+    "text": "¿Mip? Quiero decir, ¡hola! Lo siento, |PLAYERNAME|... Ser {rat} me ha gustado mucho.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:23:59.337565Z"
+  },
+  "npc.rata_mari.greet_msg_1": {
+    "src_hash": "42688ac614a5e89423cb1d67c882044d",
+    "text": "¿Mip? Quiero decir, ¡hola! Lo siento, |PLAYERNAME|... Ser {rat} me ha gustado mucho.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:24:04.023087Z"
+  },
+  "npc.rata_mari.multi_1": {
+    "src_hash": "f7e78cb6593d60c9cc707471fd12027f",
+    "text": "¿Has venido por el informe? ¡Excelente! He estado trabajando duro en ello durante los últimos meses. Y nadie vino a recogerlo. ¡Pensé que todos se habían olvidado de mí! ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:24:04.023821Z"
+  },
+  "npc.rata_mari.multi_2": {
+    "src_hash": "453e2b272106690d97b1f88a700d9637",
+    "text": "¿Tienes idea de lo difícil que es sostener un bolígrafo cuando en lugar de manos tienes garras? ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:24:04.024351Z"
+  },
+  "npc.rata_mari.multi_3": {
+    "src_hash": "962816a58de25411f20f8193554ab814",
+    "text": "Pero, ya sabes, he trabajado tan duro en este informe que de algún modo no quiero desprenderme de él. Al menos no sin un pago decente. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:24:04.024982Z"
+  },
+  "npc.rata_mari.multi_4": {
+    "src_hash": "4ac2efe57523469cee3daabfa4d8d9fa",
+    "text": "Muy bien, escuchen, sé que Fa'hradin no aprobaría esto, pero no puedo evitarlo. ¡Necesito un poco de queso! ¡Lo necesito ahora! ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:24:04.025585Z"
+  },
+  "npc.rata_mari.multi_5": {
+    "src_hash": "f733169ff07782364306bb8c5189baae",
+    "text": "¡Y no te daré el informe hasta que me consigas alguno! ¡Miep!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:24:09.794664Z"
+  },
+  "npc.rata_mari.say_1": {
+    "src_hash": "90e99d7a25e7efd3395edb38b60ceff2",
+    "text": "Ok, ¿me has traído el queso que te pedí?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:24:09.795109Z"
+  },
+  "npc.rata_mari.say_2": {
+    "src_hash": "543a5cf760fbbbb13753e06dc5243887",
+    "text": "Ya te di el informe. ¡No voy a escribir más!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:24:09.795558Z"
+  },
+  "npc.rata_mari.say_3": {
+    "src_hash": "0835c9e254ee2932108ecd8803236a69",
+    "text": "Sin queso, sin informe.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:24:09.795869Z"
+  },
+  "npc.rata_mari.say_4": {
+    "src_hash": "9db0962c6c65dcd235ecd1f15cb1773c",
+    "text": "¡Miep! ¡Miep! ¡Excelente! ¡Aquí está el informe espía para usted!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:24:09.796313Z"
+  },
+  "npc.rata_mari.say_5": {
+    "src_hash": "0835c9e254ee2932108ecd8803236a69",
+    "text": "Sin queso, sin informe.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:24:15.388790Z"
+  },
+  "npc.rata_mari.stdmod_1": {
+    "src_hash": "a1dcbefdaddd7e183e1275ad073d7245",
+    "text": "Tu poder de observación es impresionante. Sí, soy una rata.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:24:15.389269Z"
+  },
+  "npc.raymond_striker.greet_msg_1": {
+    "src_hash": "fbe3c5eba4eaad3288ebf8e49e5f575c",
+    "text": "Sea saludado. ¿Hay algo que pueda {do for you}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:24:15.389682Z"
+  },
+  "npc.raymond_striker.multi_1": {
+    "src_hash": "0cba4a9772284dcba7b0e16b8269e3e8",
+    "text": "¿Entonces fuiste al escondite de los líderes? ¡Espero que hayas tenido éxito y hayas conseguido lo que buscabas! Gracias, amigo mío. Pirates sigue viniendo aquí, desafortunadamente. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:24:15.390632Z"
+  },
+  "npc.raymond_striker.multi_10": {
+    "src_hash": "45819ee36173856ff45552cb15737ed7",
+    "text": "No importa cuánto tiempo lleve, pero... ¿estarías dispuesto a matar a 3000 piratas por nosotros?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:24:15.391202Z"
+  },
+  "npc.raymond_striker.multi_11": {
+    "src_hash": "53aae7a7d6e4511450dcb30d55686325",
+    "text": "¡Increíble! ¡Hiciste lo que ningún otro se atrevía a pensar! De hecho, eres un verdadero héroe para nuestra causa...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:24:22.002980Z"
+  },
+  "npc.raymond_striker.multi_12": {
+    "src_hash": "2549a813bb59bd6073f9d886b1568caa",
+    "text": "Lamentablemente, no tengo ningún barco al que le falte capitán; de lo contrario, por supuesto, tú serías nuestra primera opción. Sigo siendo fiel a mi palabra lo mejor que puedo. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:24:22.003694Z"
+  },
+  "npc.raymond_striker.multi_13": {
+    "src_hash": "9813f92294b4d3592b97cebe8f889f60",
+    "text": "Así que toma esto como tu propio barco. Ah, y recuérdame alguna vez el traje de pirata.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:24:22.004210Z"
+  },
+  "npc.raymond_striker.multi_14": {
+    "src_hash": "9594a9966adf5d800d3c452b2acc3b2b",
+    "text": "Bien hecho, amigo mío. Eso nos ayudará mucho. Por supuesto, hay otras cosas por hacer. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:24:22.004774Z"
+  },
+  "npc.raymond_striker.multi_15": {
+    "src_hash": "a335d46d6b400968be16a3ecea856c93",
+    "text": "Me enteré de que Klaus, el dueño de la taberna, me quiere muerto. Le está ofreciendo a cualquiera de esos piratas la misión de matarme...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:24:22.005385Z"
+  },
+  "npc.raymond_striker.multi_16": {
+    "src_hash": "d19a703656ffaee9b2d03dc39f2c8a24",
+    "text": "Si logramos convencerlo de que cumpliste esa misión, los piratas tendrán la fiesta de sus vidas. ¡Esta sería nuestra oportunidad de realizar un ataque furtivo para dañar sus barcos y robar su botín! ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:24:26.269952Z"
+  },
+  "npc.raymond_striker.multi_17": {
+    "src_hash": "738cbe669733db51588ebc0b75c3642d",
+    "text": "Obtén esta misión de él y aprende lo que necesita como prueba. Luego regresa e infórmame sobre tu misión para que podamos formular un plan apropiado.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:24:26.270754Z"
+  },
+  "npc.raymond_striker.multi_18": {
+    "src_hash": "0bfcdd9dfa2c429696c899dbb454fe62",
+    "text": "Si logra cumplir esta misión vital, demostrará que es un miembro digno de nuestra comunidad. ¡Incluso podría regalarte tu propio barco y ropa pirata! ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:24:26.271469Z"
+  },
+  "npc.raymond_striker.multi_19": {
+    "src_hash": "ab7dde238cb1b6a9859ff2f3b3bc0c8e",
+    "text": "Así que escuche el primer paso de mi plan. Quiero que te infiltres en su base. Intenta entrar a su taberna, lo que significa que tendrás que pasar al guardia. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:24:26.272166Z"
+  },
+  "npc.raymond_striker.multi_2": {
+    "src_hash": "e624b09d0a888ce51856313b7e772fb5",
+    "text": "¿Por casualidad te gustaría volver a matar piratas por nosotros?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:24:26.272640Z"
+  },
+  "npc.raymond_striker.multi_20": {
+    "src_hash": "0503cd79daa7e41e319a3487b80ec46d",
+    "text": "Probablemente tendrás que engañarlo de alguna manera para que piense que eres uno de ellos. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:24:32.853970Z"
+  },
+  "npc.raymond_striker.multi_21": {
+    "src_hash": "84fd177d13531134e1fe89aea03155ac",
+    "text": "En la taberna, los piratas se sienten seguros y planean sus próximos ataques. Estudia TODOS sus mapas y planos que hay por ahí...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:24:32.855060Z"
+  },
+  "npc.raymond_striker.multi_22": {
+    "src_hash": "b7c2328af7e23082f449817bb6a76f2e",
+    "text": "Luego, regresa aquí e infórmame sobre tu misión.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:24:32.855584Z"
+  },
+  "npc.raymond_striker.multi_23": {
+    "src_hash": "23dc429aedab23aed5ffc3122d6c99c1",
+    "text": "La misión a la que os enviaré es vital para nuestra causa. Es una misión de sabotaje. Nargor está custodiado por varias catapultas pesadas. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:24:32.856240Z"
+  },
+  "npc.raymond_striker.multi_24": {
+    "src_hash": "2bb9c137bb096955d06614529389eb7c",
+    "text": "Necesito que sabotees la más peligrosa de esas catapultas que se pueden encontrar justo en su puerto, apuntando a los barcos que pasan por la entrada. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:24:32.856938Z"
+  },
+  "npc.raymond_striker.multi_25": {
+    "src_hash": "9aeb99a07d63edd5de25b1a29b7bc53a",
+    "text": "Consigue un insecto de fuego (puedes comprarlo en Liberty Bay) y prende fuego a esta catapulta. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:24:38.564950Z"
+  },
+  "npc.raymond_striker.multi_26": {
+    "src_hash": "94c1c5c5867ff9b4193dc31e2bc77fcb",
+    "text": "Asegúrate de usar el error en la parte izquierda de la catapulta donde está su palanca. Ahí es donde es más vulnerable. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:24:38.565615Z"
+  },
+  "npc.raymond_striker.multi_27": {
+    "src_hash": "44bb9206092e2d533b82079e00a819d6",
+    "text": "Si ve una breve explosión, sabrá que funcionó. Le diré a Sebastian que te lleve a Nargor, pero ten cuidado. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:24:38.566205Z"
+  },
+  "npc.raymond_striker.multi_28": {
+    "src_hash": "a19711f401970b0ba195baafc14ccecd",
+    "text": "Por supuesto, no puede dejarte directamente en la base pirata. Sin embargo, hemos descubierto un camino secreto hacia la Gruta de los Aullidos. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:24:38.566984Z"
+  },
+  "npc.raymond_striker.multi_29": {
+    "src_hash": "48384fd351979f5e3ce6ff2d3e78e2f0",
+    "text": "Intenta atravesar las cuevas de Nargor para llegar a su puerto. Aquí es donde encontrarás la catapulta en cuestión.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:24:38.567627Z"
+  },
+  "npc.raymond_striker.multi_3": {
+    "src_hash": "aec507b33a5a253d40136d6b44ea9fc9",
+    "text": "Esta fue probablemente la última vez que podrás ingresar a ese escondite. Bien hecho, amigo mío, nuestro agradecimiento está contigo. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:24:43.537863Z"
+  },
+  "npc.raymond_striker.multi_30": {
+    "src_hash": "18df37302e397501b0c39c904e689e9a",
+    "text": "De hecho, me vendría bien un poco de ayuda. Los malvados piratas de Nargor han convencido a un alquimista de Edron para que les suministre una sustancia llamada Fuego de Fafnar...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:24:43.538475Z"
+  },
+  "npc.raymond_striker.multi_31": {
+    "src_hash": "3b31dfd084b2a2dd96f483d6859fab8e",
+    "text": "Puede arder incluso en el agua y es una amenaza para todos nosotros. Necesito que viajes a Edron y le finjas a la alquimista Sandra que eres a quien los otros piratas enviaron a buscar el fuego...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:24:43.538951Z"
+  },
+  "npc.raymond_striker.multi_32": {
+    "src_hash": "9dc183f1741949ccc4ef061561a8ff36",
+    "text": "Cuando solicite un pago, dígale 'Your continued existence is payment enough'. Eso debería enfurecer lo suficiente a cualquier miembro de la academia Edron como para rechazar cualquier acuerdo adicional con los piratas.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:24:43.539501Z"
+  },
+  "npc.raymond_striker.multi_4": {
+    "src_hash": "7781adc008d33007f9226ae4a14d4b50",
+    "text": "Eres bienvenido a seguir matando piratas para nosotros por algo de dinero y experiencia. Si quieres hacerlo, pregúntame sobre un {task} en cualquier momento.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:24:43.540214Z"
+  },
+  "npc.raymond_striker.multi_5": {
+    "src_hash": "459eb392e8084a000ea07db7d2f3a51f",
+    "text": "Oye, genial. ¡Lo has hecho bien! Como pequeña recompensa te doy algunas monedas de nuestra caja del tesoro. Además déjame contarte un dato interesante. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:24:48.853214Z"
+  },
+  "npc.raymond_striker.multi_6": {
+    "src_hash": "23b0df4ac235b075835b3f05c983bf0d",
+    "text": "Uno de nuestros espías nos habló de un escondite secreto en algún lugar de Nargor. Supuestamente, a veces se puede encontrar allí a uno de los cuatro líderes piratas. Si te atreves a ir allí, es posible que puedas enfrentarlo en un combate uno a uno. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:24:48.854167Z"
+  },
+  "npc.raymond_striker.multi_7": {
+    "src_hash": "8b32af2f0a8aeb5a42939360e316e3e2",
+    "text": "Pero ten cuidado: prepárate bien y huye sólo si es necesario. Esta podría ser tu única oportunidad de entrar allí, ¡así que ten cuidado y no mueras!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:24:48.854922Z"
+  },
+  "npc.raymond_striker.multi_8": {
+    "src_hash": "f733056e777fed875ff6ce66364ed960",
+    "text": "Los piratas de Nargor son cada día más una amenaza para nosotros. Desearía que alguien pudiera deshacerse de ellos de una vez por todas, ¡pero desafortunadamente siguen apareciendo! ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:24:48.855669Z"
+  },
+  "npc.raymond_striker.multi_9": {
+    "src_hash": "559b29234d1a3afce98196f78682d73c",
+    "text": "Sólo un pirata muerto es un buen pirata. Creo que matar a un gran número de ellos definitivamente nos ayudaría a hacer de Sabrehaven un lugar más seguro. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:24:48.856346Z"
   }
 }

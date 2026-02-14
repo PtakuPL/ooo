@@ -59,6 +59,7 @@ DEFAULT_PRIORITY_GATE_STUCK_MIN_QUALITY_DROP_PCT=1
 DEFAULT_REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS=1000
 DEFAULT_REGISTRY_RECONCILE_MIN_OUTSIDE_PCT=2
 DEFAULT_REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS=1800
+DEFAULT_REGISTRY_RECONCILE_ALWAYS_SYNC_ANY_DRIFT=true
 DEFAULT_QUEUE_FRESHNESS_WARN_S=900
 DEFAULT_QUEUE_FRESHNESS_CRIT_S=1800
 
@@ -80,9 +81,16 @@ PRIORITY_GATE_STUCK_MIN_QUALITY_DROP_PCT="$DEFAULT_PRIORITY_GATE_STUCK_MIN_QUALI
 REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS="$DEFAULT_REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS"
 REGISTRY_RECONCILE_MIN_OUTSIDE_PCT="$DEFAULT_REGISTRY_RECONCILE_MIN_OUTSIDE_PCT"
 REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS="$DEFAULT_REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS"
+REGISTRY_RECONCILE_ALWAYS_SYNC_ANY_DRIFT="$DEFAULT_REGISTRY_RECONCILE_ALWAYS_SYNC_ANY_DRIFT"
 QUEUE_FRESHNESS_WARN_S="$DEFAULT_QUEUE_FRESHNESS_WARN_S"
 QUEUE_FRESHNESS_CRIT_S="$DEFAULT_QUEUE_FRESHNESS_CRIT_S"
 DAEMON_INTERVAL_SECONDS=60
+STATUS_MD_REFRESH_ENABLED="${STATUSD_STATUS_MD_REFRESH_ENABLED:-true}"
+STATUS_MD_REFRESH_MIN_INTERVAL_SECONDS="${STATUSD_STATUS_MD_REFRESH_MIN_INTERVAL_SECONDS:-300}"
+STATUS_MD_REFRESH_STALE_SECONDS="${STATUSD_STATUS_MD_REFRESH_STALE_SECONDS:-240}"
+STATUS_MD_REFRESH_TIMEOUT_SECONDS="${STATUSD_STATUS_MD_REFRESH_TIMEOUT_SECONDS:-180}"
+STATUS_MD_REFRESH_FORCE_ON_RECONCILE="${STATUSD_STATUS_MD_REFRESH_FORCE_ON_RECONCILE:-true}"
+STATUS_MD_REFRESH_LAST_TS_FILE="$STATUS_DIR/.statusd_status_md_refresh_last_ts"
 
 export HOME="/home/ptaku"
 export PATH="/usr/local/bin:/usr/bin:/bin:$PATH"
@@ -91,6 +99,13 @@ cd "$WORK_DIR" || exit 1
 
 log_statusd() {
     echo "[$(date '+%Y-%m-%d %H:%M:%S')] $1" >> "$STATUSD_LOG"
+}
+
+statusd_bool() {
+    case "${1:-}" in
+        1|true|TRUE|yes|YES|on|ON) return 0 ;;
+        *) return 1 ;;
+    esac
 }
 
 ensure_statusd_thresholds_file() {
@@ -129,7 +144,8 @@ ensure_statusd_thresholds_file() {
   "registry_reconcile": {
     "min_outside_keys": $DEFAULT_REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS,
     "min_outside_pct": $DEFAULT_REGISTRY_RECONCILE_MIN_OUTSIDE_PCT,
-    "min_interval_seconds": $DEFAULT_REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS
+    "min_interval_seconds": $DEFAULT_REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS,
+    "always_sync_any_drift": $DEFAULT_REGISTRY_RECONCILE_ALWAYS_SYNC_ANY_DRIFT
   }
 }
 EOF
@@ -180,6 +196,7 @@ out("PRIORITY_GATE_STUCK_MIN_QUALITY_DROP_PCT", pg.get("min_quality_drop_pct"))
 out("REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS", rr.get("min_outside_keys"))
 out("REGISTRY_RECONCILE_MIN_OUTSIDE_PCT", rr.get("min_outside_pct"))
 out("REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS", rr.get("min_interval_seconds"))
+out("REGISTRY_RECONCILE_ALWAYS_SYNC_ANY_DRIFT", str(rr.get("always_sync_any_drift")).lower() if "always_sync_any_drift" in rr else None)
 PY
 )
 
@@ -204,6 +221,7 @@ PY
             REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS) REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS="$value" ;;
             REGISTRY_RECONCILE_MIN_OUTSIDE_PCT) REGISTRY_RECONCILE_MIN_OUTSIDE_PCT="$value" ;;
             REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS) REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS="$value" ;;
+            REGISTRY_RECONCILE_ALWAYS_SYNC_ANY_DRIFT) REGISTRY_RECONCILE_ALWAYS_SYNC_ANY_DRIFT="$value" ;;
         esac
     done <<< "$parsed"
 }
@@ -228,6 +246,7 @@ apply_statusd_env_overrides() {
     REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS="${STATUSD_REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS:-$REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS}"
     REGISTRY_RECONCILE_MIN_OUTSIDE_PCT="${STATUSD_REGISTRY_RECONCILE_MIN_OUTSIDE_PCT:-$REGISTRY_RECONCILE_MIN_OUTSIDE_PCT}"
     REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS="${STATUSD_REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS:-$REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS}"
+    REGISTRY_RECONCILE_ALWAYS_SYNC_ANY_DRIFT="${STATUSD_REGISTRY_RECONCILE_ALWAYS_SYNC_ANY_DRIFT:-$REGISTRY_RECONCILE_ALWAYS_SYNC_ANY_DRIFT}"
 }
 
 ensure_statusd_thresholds_file
@@ -239,7 +258,7 @@ apply_statusd_env_overrides
 # ═══════════════════════════════════════════════════════════════════════════════
 
 aggregate_telemetry() {
-    python3 - "$WORK_DIR" "$STATUS_DIR" "$STATUSD_REPORT_FILE" "$REPAIR_QUEUE_STAGNATION_HOURS" "$REPAIR_QUEUE_STAGNATION_MIN_SAMPLES" "$REPAIR_QUEUE_STAGNATION_MIN_DROP" "$SUSPICIOUS_HIGH_WINDOW_HOURS" "$SUSPICIOUS_HIGH_WARN_COUNT" "$SUSPICIOUS_HIGH_CRIT_COUNT" "$METRICS_DRIFT_WARN_KEYS" "$METRICS_DRIFT_CRIT_KEYS" "$METRICS_DRIFT_WARN_PCT" "$METRICS_DRIFT_CRIT_PCT" "$SUSPICIOUS_HIGH_RATE_WARN_PCT" "$SUSPICIOUS_HIGH_RATE_CRIT_PCT" "$STATUSD_THRESHOLDS_FILE" "$STATUSD_USE_ENV_OVERRIDES" "$PRIORITY_GATE_STUCK_MAX_ACTIVE_MINUTES" "$PRIORITY_GATE_STUCK_MAX_CYCLES" "$PRIORITY_GATE_STUCK_MIN_QUALITY_DROP_PCT" "$REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS" "$REGISTRY_RECONCILE_MIN_OUTSIDE_PCT" "$REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS" <<'PYAGG'
+    python3 - "$WORK_DIR" "$STATUS_DIR" "$STATUSD_REPORT_FILE" "$REPAIR_QUEUE_STAGNATION_HOURS" "$REPAIR_QUEUE_STAGNATION_MIN_SAMPLES" "$REPAIR_QUEUE_STAGNATION_MIN_DROP" "$SUSPICIOUS_HIGH_WINDOW_HOURS" "$SUSPICIOUS_HIGH_WARN_COUNT" "$SUSPICIOUS_HIGH_CRIT_COUNT" "$METRICS_DRIFT_WARN_KEYS" "$METRICS_DRIFT_CRIT_KEYS" "$METRICS_DRIFT_WARN_PCT" "$METRICS_DRIFT_CRIT_PCT" "$SUSPICIOUS_HIGH_RATE_WARN_PCT" "$SUSPICIOUS_HIGH_RATE_CRIT_PCT" "$STATUSD_THRESHOLDS_FILE" "$STATUSD_USE_ENV_OVERRIDES" "$PRIORITY_GATE_STUCK_MAX_ACTIVE_MINUTES" "$PRIORITY_GATE_STUCK_MAX_CYCLES" "$PRIORITY_GATE_STUCK_MIN_QUALITY_DROP_PCT" "$REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS" "$REGISTRY_RECONCILE_MIN_OUTSIDE_PCT" "$REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS" "$REGISTRY_RECONCILE_ALWAYS_SYNC_ANY_DRIFT" <<'PYAGG'
 import json, sys, os, time
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
@@ -268,6 +287,7 @@ priority_gate_min_quality_drop_pct = float(sys.argv[20] if len(sys.argv) > 20 an
 registry_reconcile_min_outside_keys = int(float(sys.argv[21] if len(sys.argv) > 21 and sys.argv[21] else "1000"))
 registry_reconcile_min_outside_pct = float(sys.argv[22] if len(sys.argv) > 22 and sys.argv[22] else "2")
 registry_reconcile_min_interval_s = int(float(sys.argv[23] if len(sys.argv) > 23 and sys.argv[23] else "1800"))
+registry_reconcile_always_sync_any_drift = bool(str(sys.argv[24]).strip().lower() in ("1", "true", "yes", "on")) if len(sys.argv) > 24 else True
 
 now = datetime.now(timezone.utc)
 report = {
@@ -1141,6 +1161,7 @@ report["thresholds_snapshot"] = {
         "min_outside_keys": int(registry_reconcile_min_outside_keys),
         "min_outside_pct": float(registry_reconcile_min_outside_pct),
         "min_interval_seconds": int(registry_reconcile_min_interval_s),
+        "always_sync_any_drift": bool(registry_reconcile_always_sync_any_drift),
     },
 }
 
@@ -1171,7 +1192,7 @@ PYAGG
 
 run_status_doctor() {
     QUEUE_FRESHNESS_WARN_S="$QUEUE_FRESHNESS_WARN_S" QUEUE_FRESHNESS_CRIT_S="$QUEUE_FRESHNESS_CRIT_S" \
-    python3 - "$WORK_DIR" "$STATUS_DIR" "$STATUSD_DOCTOR_FILE" "$REPAIR_QUEUE_STAGNATION_HOURS" "$REPAIR_QUEUE_STAGNATION_MIN_SAMPLES" "$REPAIR_QUEUE_STAGNATION_MIN_DROP" "$SUSPICIOUS_HIGH_WINDOW_HOURS" "$SUSPICIOUS_HIGH_WARN_COUNT" "$SUSPICIOUS_HIGH_CRIT_COUNT" "$METRICS_DRIFT_WARN_KEYS" "$METRICS_DRIFT_CRIT_KEYS" "$METRICS_DRIFT_WARN_PCT" "$METRICS_DRIFT_CRIT_PCT" "$SUSPICIOUS_HIGH_RATE_WARN_PCT" "$SUSPICIOUS_HIGH_RATE_CRIT_PCT" "$STATUSD_THRESHOLDS_FILE" "$STATUSD_USE_ENV_OVERRIDES" "$PRIORITY_GATE_STUCK_MAX_ACTIVE_MINUTES" "$PRIORITY_GATE_STUCK_MAX_CYCLES" "$PRIORITY_GATE_STUCK_MIN_QUALITY_DROP_PCT" "$REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS" "$REGISTRY_RECONCILE_MIN_OUTSIDE_PCT" "$REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS" <<'PYDOCTOR'
+    python3 - "$WORK_DIR" "$STATUS_DIR" "$STATUSD_DOCTOR_FILE" "$REPAIR_QUEUE_STAGNATION_HOURS" "$REPAIR_QUEUE_STAGNATION_MIN_SAMPLES" "$REPAIR_QUEUE_STAGNATION_MIN_DROP" "$SUSPICIOUS_HIGH_WINDOW_HOURS" "$SUSPICIOUS_HIGH_WARN_COUNT" "$SUSPICIOUS_HIGH_CRIT_COUNT" "$METRICS_DRIFT_WARN_KEYS" "$METRICS_DRIFT_CRIT_KEYS" "$METRICS_DRIFT_WARN_PCT" "$METRICS_DRIFT_CRIT_PCT" "$SUSPICIOUS_HIGH_RATE_WARN_PCT" "$SUSPICIOUS_HIGH_RATE_CRIT_PCT" "$STATUSD_THRESHOLDS_FILE" "$STATUSD_USE_ENV_OVERRIDES" "$PRIORITY_GATE_STUCK_MAX_ACTIVE_MINUTES" "$PRIORITY_GATE_STUCK_MAX_CYCLES" "$PRIORITY_GATE_STUCK_MIN_QUALITY_DROP_PCT" "$REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS" "$REGISTRY_RECONCILE_MIN_OUTSIDE_PCT" "$REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS" "$REGISTRY_RECONCILE_ALWAYS_SYNC_ANY_DRIFT" <<'PYDOCTOR'
 import json, sys, os, subprocess
 from datetime import datetime, timezone, timedelta
 from collections import Counter
@@ -1199,6 +1220,7 @@ priority_gate_min_quality_drop_pct = float(sys.argv[20] if len(sys.argv) > 20 an
 registry_reconcile_min_outside_keys = int(float(sys.argv[21] if len(sys.argv) > 21 and sys.argv[21] else "1000"))
 registry_reconcile_min_outside_pct = float(sys.argv[22] if len(sys.argv) > 22 and sys.argv[22] else "2")
 registry_reconcile_min_interval_s = int(float(sys.argv[23] if len(sys.argv) > 23 and sys.argv[23] else "1800"))
+registry_reconcile_always_sync_any_drift = bool(str(sys.argv[24]).strip().lower() in ("1", "true", "yes", "on")) if len(sys.argv) > 24 else True
 
 now = datetime.now(timezone.utc)
 issues = []
@@ -1393,6 +1415,113 @@ def _read_worker_process_health():
         data["severity"] = "ok"
         data["status"] = "clean"
         data["reason"] = "single_worker_process"
+
+    return data
+
+def _read_worker_translation_contract():
+    data = {
+        "available": False,
+        "severity": "info",
+        "status": "unknown",
+        "reason": "not_checked",
+        "worker_pid": 0,
+        "worker_cmdline": "",
+        "has_translations_only": False,
+        "has_use_gt": False,
+        "has_no_git": False,
+        "dispatch_available": False,
+        "global_quality_mode": False,
+        "priority_gate_enabled": False,
+        "priority_gate_active": False,
+        "priority_langs": [],
+        "es_pl_priority_ok": False,
+        "pending_langs": [],
+    }
+
+    pid_file = os.path.join(work_dir, ".worker_simple.pid")
+    if not os.path.exists(pid_file):
+        data["status"] = "no_pid_file"
+        data["reason"] = "worker_pid_file_missing"
+        return data
+
+    try:
+        with open(pid_file, encoding="utf-8") as f:
+            worker_pid = int(str(f.read()).strip() or "0")
+    except Exception:
+        worker_pid = 0
+    if worker_pid <= 0:
+        data["status"] = "invalid_pid_file"
+        data["reason"] = "worker_pid_file_invalid"
+        return data
+
+    data["available"] = True
+    data["worker_pid"] = int(worker_pid)
+    proc_cmdline_path = os.path.join("/proc", str(worker_pid), "cmdline")
+    if not os.path.exists(proc_cmdline_path):
+        data["severity"] = "critical"
+        data["status"] = "worker_not_alive"
+        data["reason"] = "worker_pid_not_running"
+        return data
+
+    argv = []
+    try:
+        with open(proc_cmdline_path, "rb") as f:
+            raw = f.read()
+        argv = [x for x in raw.decode("utf-8", errors="ignore").split("\x00") if x]
+    except Exception:
+        argv = []
+
+    cmdline = " ".join(argv)
+    argset = set(argv)
+    has_translations_only = "--translations-only" in argset
+    has_use_gt = "--use-gt" in argset
+    has_no_git = "--no-git" in argset
+
+    data.update({
+        "worker_cmdline": cmdline,
+        "has_translations_only": bool(has_translations_only),
+        "has_use_gt": bool(has_use_gt),
+        "has_no_git": bool(has_no_git),
+    })
+
+    dispatch = {}
+    try:
+        with open(os.path.join(status_dir, "translation_dispatch_state.json"), encoding="utf-8") as f:
+            dispatch = json.load(f)
+    except Exception:
+        dispatch = {}
+
+    if isinstance(dispatch, dict) and dispatch:
+        data["dispatch_available"] = True
+        pg = dispatch.get("priority_gate", {}) if isinstance(dispatch.get("priority_gate", {}), dict) else {}
+        priority_langs = [str(x).lower().strip() for x in (pg.get("priority_langs", []) if isinstance(pg.get("priority_langs", []), list) else []) if str(x).strip()]
+        pending_langs = [str(x).lower().strip() for x in (pg.get("pending_langs", []) if isinstance(pg.get("pending_langs", []), list) else []) if str(x).strip()]
+        es_pl_priority_ok = len(priority_langs) >= 2 and priority_langs[0] == "es" and priority_langs[1] == "pl"
+        data.update({
+            "global_quality_mode": bool(dispatch.get("global_quality_mode", False)),
+            "priority_gate_enabled": bool(pg.get("enabled", False)),
+            "priority_gate_active": bool(pg.get("active", False)),
+            "priority_langs": priority_langs,
+            "pending_langs": pending_langs,
+            "es_pl_priority_ok": bool(es_pl_priority_ok),
+        })
+
+    if not has_translations_only:
+        data["severity"] = "critical"
+        data["status"] = "worker_not_in_translations_only"
+        data["reason"] = "missing_flag_translations_only"
+    elif data.get("global_quality_mode", False) and not data.get("priority_gate_enabled", False):
+        data["severity"] = "warning"
+        data["status"] = "priority_gate_disabled"
+        data["reason"] = "global_quality_without_priority_gate"
+    elif data.get("priority_gate_enabled", False) and not data.get("es_pl_priority_ok", False):
+        data["severity"] = "warning"
+        data["status"] = "priority_lang_order_mismatch"
+        data["reason"] = "priority_langs_not_es_pl"
+    else:
+        data["severity"] = "ok"
+        data["status"] = "contract_ok"
+        data["reason"] = "translations_general_runtime_contract_ok"
 
     return data
 
@@ -2260,6 +2389,7 @@ doctor_report = {
             "min_outside_keys": int(registry_reconcile_min_outside_keys),
             "min_outside_pct": float(registry_reconcile_min_outside_pct),
             "min_interval_seconds": int(registry_reconcile_min_interval_s),
+            "always_sync_any_drift": bool(registry_reconcile_always_sync_any_drift),
         },
     },
 }
@@ -3249,7 +3379,7 @@ PYALERT
 # ═══════════════════════════════════════════════════════════════════════════════
 
 generate_daily_report() {
-    python3 - "$STATUS_DIR" "$STATUSD_DAILY_REPORT_JSON" "$STATUSD_DAILY_REPORT_MD" "$REPAIR_QUEUE_STAGNATION_HOURS" "$REPAIR_QUEUE_STAGNATION_MIN_SAMPLES" "$REPAIR_QUEUE_STAGNATION_MIN_DROP" "$METRICS_DRIFT_WARN_KEYS" "$METRICS_DRIFT_CRIT_KEYS" "$METRICS_DRIFT_WARN_PCT" "$METRICS_DRIFT_CRIT_PCT" "$STATUSD_THRESHOLDS_FILE" "$STATUSD_USE_ENV_OVERRIDES" "$PRIORITY_GATE_STUCK_MAX_ACTIVE_MINUTES" "$PRIORITY_GATE_STUCK_MAX_CYCLES" "$PRIORITY_GATE_STUCK_MIN_QUALITY_DROP_PCT" "$REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS" "$REGISTRY_RECONCILE_MIN_OUTSIDE_PCT" "$REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS" <<'PYDAILY'
+    python3 - "$STATUS_DIR" "$STATUSD_DAILY_REPORT_JSON" "$STATUSD_DAILY_REPORT_MD" "$REPAIR_QUEUE_STAGNATION_HOURS" "$REPAIR_QUEUE_STAGNATION_MIN_SAMPLES" "$REPAIR_QUEUE_STAGNATION_MIN_DROP" "$METRICS_DRIFT_WARN_KEYS" "$METRICS_DRIFT_CRIT_KEYS" "$METRICS_DRIFT_WARN_PCT" "$METRICS_DRIFT_CRIT_PCT" "$STATUSD_THRESHOLDS_FILE" "$STATUSD_USE_ENV_OVERRIDES" "$PRIORITY_GATE_STUCK_MAX_ACTIVE_MINUTES" "$PRIORITY_GATE_STUCK_MAX_CYCLES" "$PRIORITY_GATE_STUCK_MIN_QUALITY_DROP_PCT" "$REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS" "$REGISTRY_RECONCILE_MIN_OUTSIDE_PCT" "$REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS" "$REGISTRY_RECONCILE_ALWAYS_SYNC_ANY_DRIFT" <<'PYDAILY'
 import json, sys, os, re
 from collections import defaultdict, Counter
 from datetime import datetime, timezone, timedelta
@@ -3272,6 +3402,7 @@ priority_gate_min_quality_drop_pct = float(sys.argv[15] if len(sys.argv) > 15 an
 registry_reconcile_min_outside_keys = int(float(sys.argv[16] if len(sys.argv) > 16 and sys.argv[16] else "1000"))
 registry_reconcile_min_outside_pct = float(sys.argv[17] if len(sys.argv) > 17 and sys.argv[17] else "2")
 registry_reconcile_min_interval_s = int(float(sys.argv[18] if len(sys.argv) > 18 and sys.argv[18] else "1800"))
+registry_reconcile_always_sync_any_drift = bool(str(sys.argv[19]).strip().lower() in ("1", "true", "yes", "on")) if len(sys.argv) > 19 else True
 
 now = datetime.now(timezone.utc)
 window_start = now - timedelta(hours=24)
@@ -3902,6 +4033,7 @@ report = {
             "min_outside_keys": int(registry_reconcile_min_outside_keys),
             "min_outside_pct": float(registry_reconcile_min_outside_pct),
             "min_interval_seconds": int(registry_reconcile_min_interval_s),
+            "always_sync_any_drift": bool(registry_reconcile_always_sync_any_drift),
         },
     },
     "scope_totals": overview.get("scope_totals", {}),
@@ -4224,6 +4356,120 @@ maybe_refresh_daily_report() {
 }
 
 # ═══════════════════════════════════════════════════════════════════════════════
+# MODUŁ 7a: Auto-refresh I18N_STATUS.md (niezależnie od pętli workera)
+# ═══════════════════════════════════════════════════════════════════════════════
+
+run_status_md_refresh() {
+    local reason="${1:-periodic}"
+    local timeout_s="${STATUS_MD_REFRESH_TIMEOUT_SECONDS:-180}"
+    [[ "$timeout_s" =~ ^[0-9]+$ ]] || timeout_s=180
+    (( timeout_s < 30 )) && timeout_s=30
+
+    local result rc now_ts
+    result=$(python3 - "$WORK_DIR" "$timeout_s" <<'PYSTATUSREFRESH'
+import os, subprocess, sys, time
+
+work_dir = sys.argv[1]
+timeout_s = int(float(sys.argv[2] or "180"))
+cmd = ["bash", os.path.join(work_dir, "i18n_worker_simple.sh"), "--update-status"]
+started = time.time()
+
+try:
+    proc = subprocess.run(
+        cmd,
+        cwd=work_dir,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.STDOUT,
+        text=True,
+        timeout=max(timeout_s, 30),
+    )
+    elapsed = time.time() - started
+    lines = [ln.strip() for ln in (proc.stdout or "").splitlines() if ln.strip()]
+    tail = " | ".join(lines[-4:])
+    tail = tail[:360]
+    if proc.returncode == 0:
+        print(f"OK elapsed_s={elapsed:.1f} rc=0 tail={tail}")
+    else:
+        print(f"ERROR elapsed_s={elapsed:.1f} rc={proc.returncode} tail={tail}")
+        raise SystemExit(proc.returncode)
+except subprocess.TimeoutExpired as e:
+    elapsed = time.time() - started
+    out = e.stdout if isinstance(e.stdout, str) else ""
+    lines = [ln.strip() for ln in out.splitlines() if ln.strip()]
+    tail = " | ".join(lines[-4:])[:360]
+    print(f"TIMEOUT elapsed_s={elapsed:.1f} timeout_s={timeout_s} tail={tail}")
+    raise SystemExit(124)
+except Exception as e:
+    print(f"ERROR exception={e}")
+    raise SystemExit(1)
+PYSTATUSREFRESH
+)
+    rc=$?
+
+    if [ "$rc" -eq 0 ]; then
+        now_ts=$(date +%s)
+        echo "$now_ts" > "$STATUS_MD_REFRESH_LAST_TS_FILE"
+        log_statusd "📝 Status MD refresh OK (reason=$reason): $result"
+    else
+        log_statusd "⚠️ Status MD refresh FAIL (reason=$reason, rc=$rc): $result"
+    fi
+    return "$rc"
+}
+
+maybe_refresh_status_md() {
+    statusd_bool "$STATUS_MD_REFRESH_ENABLED" || return 0
+
+    local stale_s min_interval_s now_ts md_mtime md_age last_ts elapsed
+    stale_s="${STATUS_MD_REFRESH_STALE_SECONDS:-240}"
+    min_interval_s="${STATUS_MD_REFRESH_MIN_INTERVAL_SECONDS:-300}"
+    [[ "$stale_s" =~ ^[0-9]+$ ]] || stale_s=240
+    [[ "$min_interval_s" =~ ^[0-9]+$ ]] || min_interval_s=300
+    (( stale_s < 60 )) && stale_s=60
+    (( min_interval_s < 30 )) && min_interval_s=30
+
+    local reconcile_result="${1:-}"
+    local reason=""
+    local force_refresh=0
+    local md_path="$WORK_DIR/I18N_STATUS.md"
+    now_ts=$(date +%s)
+
+    if [ ! -f "$md_path" ]; then
+        reason="missing_status_md"
+        force_refresh=1
+    else
+        md_mtime=$(stat -c %Y "$md_path" 2>/dev/null || echo 0)
+        md_age=$((now_ts - md_mtime))
+        if [ "$md_age" -ge "$stale_s" ]; then
+            reason="status_md_stale_${md_age}s"
+        fi
+    fi
+
+    if statusd_bool "$STATUS_MD_REFRESH_FORCE_ON_RECONCILE" && printf '%s' "$reconcile_result" | grep -q "RECONCILE_APPLIED"; then
+        if [ -n "$reason" ]; then
+            reason="${reason}+reconcile_applied"
+        else
+            reason="reconcile_applied"
+        fi
+        force_refresh=1
+    fi
+
+    [ -n "$reason" ] || return 0
+
+    last_ts=0
+    if [ -f "$STATUS_MD_REFRESH_LAST_TS_FILE" ]; then
+        last_ts=$(cat "$STATUS_MD_REFRESH_LAST_TS_FILE" 2>/dev/null || echo 0)
+    fi
+    [[ "$last_ts" =~ ^[0-9]+$ ]] || last_ts=0
+    elapsed=$((now_ts - last_ts))
+    if [ "$force_refresh" -ne 1 ] && [ "$elapsed" -lt "$min_interval_s" ]; then
+        log_statusd "⏭️ Status MD refresh skip (reason=$reason, cooldown=${elapsed}s<${min_interval_s}s)"
+        return 0
+    fi
+
+    run_status_md_refresh "$reason" || true
+}
+
+# ═══════════════════════════════════════════════════════════════════════════════
 # MODUŁ 7b: Stagnation alert — repair queue backlog monitoring
 # ═══════════════════════════════════════════════════════════════════════════════
 #
@@ -4456,7 +4702,7 @@ maybe_run_stagnation_check() {
 # ═══════════════════════════════════════════════════════════════════════════════
 
 run_registry_reconcile() {
-    python3 - "$WORK_DIR" "$STATUS_DIR" "$REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS" "$REGISTRY_RECONCILE_MIN_OUTSIDE_PCT" "$REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS" <<'PYRECON'
+    python3 - "$WORK_DIR" "$STATUS_DIR" "$REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS" "$REGISTRY_RECONCILE_MIN_OUTSIDE_PCT" "$REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS" "$REGISTRY_RECONCILE_ALWAYS_SYNC_ANY_DRIFT" <<'PYRECON'
 import json, os, sys
 from datetime import datetime, timezone
 
@@ -4465,6 +4711,7 @@ status_dir = sys.argv[2]
 min_outside_keys = int(float(sys.argv[3] or "1000"))
 min_outside_pct = float(sys.argv[4] or "2")
 min_interval_s = int(float(sys.argv[5] or "1800"))
+always_sync_any_drift = bool(str(sys.argv[6]).strip().lower() in ("1", "true", "yes", "on")) if len(sys.argv) > 6 else True
 
 now = datetime.now(timezone.utc)
 now_z = now.isoformat().replace("+00:00", "Z")
@@ -4515,6 +4762,7 @@ out = {
         "min_outside_keys": int(min_outside_keys),
         "min_outside_pct": float(min_outside_pct),
         "min_interval_seconds": int(min_interval_s),
+        "always_sync_any_drift": bool(always_sync_any_drift),
     },
     "live_keys": 0,
     "registry_keys_raw": 0,
@@ -4584,7 +4832,10 @@ target_adjust = max(0, live_keys - registry_raw)
 needs_sync = target_adjust != adjust_before
 threshold_trigger = (outside_raw >= min_outside_keys) or (outside_pct_raw >= min_outside_pct)
 force_sync = needs_sync and (target_adjust == 0 or adjust_before > 0)
-should_reconcile = bool((threshold_trigger and needs_sync) or force_sync)
+should_reconcile = bool(needs_sync and (always_sync_any_drift or threshold_trigger or force_sync))
+cooldown_bypassed = bool(always_sync_any_drift and needs_sync and not cooldown_ok)
+if cooldown_bypassed:
+    cooldown_ok = True
 
 out.update({
     "live_keys": int(live_keys),
@@ -4598,6 +4849,7 @@ out.update({
     "outside_keys_effective_before": int(outside_effective_before),
     "outside_keys_effective_after": int(outside_effective_before),
     "cooldown_ok": bool(cooldown_ok),
+    "cooldown_bypassed": bool(cooldown_bypassed),
     "should_reconcile": bool(should_reconcile),
     "target_adjustment": int(target_adjust),
     "last_applied_at": state.get("last_applied_at", ""),
@@ -4651,6 +4903,70 @@ if out["action"] in ("applied", "already_synced"):
     print(f"RECONCILE_{out['action'].upper()} target_adjust={target_adjust} outside_raw={outside_raw}")
 else:
     print(f"RECONCILE_{out['action'].upper()} reason={out['reason']} outside_raw={outside_raw}")
+
+# ── Per-file reconcile (backfill per_file_keys in registry) ──────────────
+# Uzupełnia brakujące dane per-plik: mapuje każdy i18n/en/*.json
+# do faktycznej liczby kluczy, niezależnie od registry NPC stages.
+
+per_file_keys_before = status_payload.get("per_file_keys", {})
+if not isinstance(per_file_keys_before, dict):
+    per_file_keys_before = {}
+
+per_file_keys_new = {}
+per_file_changed = 0
+per_file_added = 0
+
+if os.path.isdir(en_dir):
+    for name in sorted(os.listdir(en_dir)):
+        if not name.endswith(".json"):
+            continue
+        fpath = os.path.join(en_dir, name)
+        try:
+            with open(fpath, encoding="utf-8") as f:
+                payload = json.load(f)
+            count = len(payload) if isinstance(payload, dict) else 0
+        except Exception:
+            count = 0
+
+        old_count = per_file_keys_before.get(name, {}).get("keys", -1) if isinstance(per_file_keys_before.get(name), dict) else -1
+        per_file_keys_new[name] = {
+            "keys": count,
+            "updated_at": now_z,
+        }
+        if name not in per_file_keys_before:
+            per_file_added += 1
+        elif old_count != count:
+            per_file_changed += 1
+
+# Only write if something changed
+if per_file_added > 0 or per_file_changed > 0:
+    status_payload["per_file_keys"] = per_file_keys_new
+    _write_json_atomic(status_file, status_payload)
+    print(f"PER_FILE_RECONCILE added={per_file_added} changed={per_file_changed} total={len(per_file_keys_new)}")
+    out["per_file_reconcile"] = {
+        "added": per_file_added,
+        "changed": per_file_changed,
+        "total": len(per_file_keys_new),
+    }
+elif per_file_keys_before != per_file_keys_new and per_file_keys_new:
+    # First run — save even if no changes
+    status_payload["per_file_keys"] = per_file_keys_new
+    _write_json_atomic(status_file, status_payload)
+    print(f"PER_FILE_RECONCILE initial_backfill total={len(per_file_keys_new)}")
+    out["per_file_reconcile"] = {
+        "added": len(per_file_keys_new),
+        "changed": 0,
+        "total": len(per_file_keys_new),
+    }
+else:
+    out["per_file_reconcile"] = {
+        "added": 0,
+        "changed": 0,
+        "total": len(per_file_keys_new),
+        "status": "no_change",
+    }
+
+_write_json_atomic(latest_path, out)
 PYRECON
 }
 
@@ -5674,6 +5990,7 @@ run_statusd_cycle() {
     if [ -n "$reconcile_result" ]; then
         log_statusd "🧩 Registry reconcile: $reconcile_result"
     fi
+    maybe_refresh_status_md "$reconcile_result" >> "$STATUSD_LOG" 2>&1 || true
 
     result=$(aggregate_telemetry 2>/dev/null)
     if [ "$result" = "OK" ]; then
@@ -5744,8 +6061,13 @@ daemon_loop() {
 
 case "${1:-}" in
     --once)
+        reconcile_result=""
         echo "═══ i18n-statusd: jednorazowy raport ═══"
-        run_registry_reconcile
+        reconcile_result=$(run_registry_reconcile 2>/dev/null || true)
+        if [ -n "$reconcile_result" ]; then
+            echo "$reconcile_result"
+        fi
+        maybe_refresh_status_md "$reconcile_result"
         aggregate_telemetry
         echo ""
         run_status_doctor
@@ -5778,7 +6100,11 @@ case "${1:-}" in
         aggregate_telemetry
         ;;
     --reconcile-registry)
-        run_registry_reconcile
+        reconcile_result=$(run_registry_reconcile 2>/dev/null || true)
+        if [ -n "$reconcile_result" ]; then
+            echo "$reconcile_result"
+        fi
+        maybe_refresh_status_md "$reconcile_result"
         ;;
     --historia)
         HISTORIA_ENABLED=true

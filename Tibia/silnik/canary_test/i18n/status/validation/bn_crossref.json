@@ -4,7 +4,7 @@
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-14T09:33:18.904426Z",
+  "checked_at": "2026-02-14T10:28:33.204621Z",
   "issues_total": 471,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -21,717 +21,6 @@
       "en": "Gnomebane's Bane",
       "pl": "GNiemebane's Bane",
       "lang": "Gnomebane's Bane"
-    },
-    {
-      "key": "actions.arena_10x10.say_6",
-      "category": "actions",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Please wait for the fighters come out of the arena.",
-      "pl": "Poczekaj, aż wojownicy wyjdą z areny.",
-      "lang": "Please wait for the fighters come out of the arena."
-    },
-    {
-      "key": "actions.arena_2x2.say_1",
-      "category": "actions",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Please wait for the fighters come out of the arena.",
-      "pl": "Poczekaj, aż wojownicy wyjdą z areny.",
-      "lang": "Please wait for the fighters come out of the arena."
-    },
-    {
-      "key": "actions.arena_2x2.say_2",
-      "category": "actions",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You need 2 players for enter in the arena.",
-      "pl": "Potrzebujesz 2 graczy, aby wejść na arenę.",
-      "lang": "You need 2 players for enter in the arena."
-    },
-    {
-      "key": "actions.arena_2x2.say_3",
-      "category": "actions",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You need 2 players for enter in the arena.",
-      "pl": "Potrzebujesz 2 graczy, aby wejść na arenę.",
-      "lang": "You need 2 players for enter in the arena."
-    },
-    {
-      "key": "actions.arena_2x2.say_4",
-      "category": "actions",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You need 2 players for enter in the arena.",
-      "pl": "Potrzebujesz 2 graczy, aby wejść na arenę.",
-      "lang": "You need 2 players for enter in the arena."
-    },
-    {
-      "key": "actions.arena_2x2.say_5",
-      "category": "actions",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You need 2 players for enter in the arena.",
-      "pl": "Potrzebujesz 2 graczy, aby wejść na arenę.",
-      "lang": "You need 2 players for enter in the arena."
-    },
-    {
-      "key": "actions.arena_2x2.say_6",
-      "category": "actions",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Please wait for the fighters come out of the arena.",
-      "pl": "Poczekaj, aż wojownicy wyjdą z areny.",
-      "lang": "Please wait for the fighters come out of the arena."
-    },
-    {
-      "key": "actions.construction_kits.msg_1",
-      "category": "actions",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You may construct this only inside a house.",
-      "pl": "Możesz to zbudować tylko wewnątrz domu.",
-      "lang": "You may construct this only inside a house."
-    },
-    {
-      "key": "actions.construction_kits.msg_2",
-      "category": "actions",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Put the construction kit on the floor first.",
-      "pl": "Najpierw połóż zestaw konstrukcyjny na podłodze.",
-      "lang": "Put the construction kit on the floor first."
-    },
-    {
-      "key": "actions.fishing.msg_1",
-      "category": "actions",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You are not the owner.",
-      "pl": "Nie jesteś właścicielem.",
-      "lang": "You are not the owner."
-    },
-    {
-      "key": "actions.fluids.msg_1",
-      "category": "actions",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "It is empty.",
-      "pl": "To jest puste.",
-      "lang": "It is empty."
-    },
-    {
-      "key": "actions.fluids.msg_2",
-      "category": "actions",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "It is empty.",
-      "pl": "To jest puste.",
-      "lang": "It is empty."
-    },
-    {
-      "key": "actions.golden.msg_1",
-      "category": "actions",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Someone is fighting against the boss! You need wait awhile.",
-      "pl": "Ktoś już walczy z tym bossem! Musisz chwilę poczekać.",
-      "lang": "Someone is fighting against the boss! You need wait awhile."
-    },
-    {
-      "key": "actions.golden.msg_2",
-      "category": "actions",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You need 5 players to fight with this boss.",
-      "pl": "Potrzebujesz 5 graczy, aby walczyć z tym bossem.",
-      "lang": "You need 5 players to fight with this boss."
-    },
-    {
-      "key": "actions.imbuement_shrine.msg_1",
-      "category": "actions",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You can only use the shrine on an valid item.",
-      "pl": "Możesz użyć świątyni tylko na prawidłowym przedmiocie.",
-      "lang": "You can only use the shrine on an valid item."
-    },
-    {
-      "key": "actions.imbuement_shrine.msg_2",
-      "category": "actions",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You did not collect enough knowledge from the ancient Shapers. Visit the Shaper temple in Montag for help.",
-      "pl": "Nie zebrałeś wystarczającej wiedzy od starożytnych Shaperów. Odwiedź świątynię Shaperów w Montag, aby uzyskać pomoc.",
-      "lang": "You did not collect enough knowledge from the ancient Shapers. Visit the Shaper temple in Montag for help."
-    },
-    {
-      "key": "actions.keys.msg_1",
-      "category": "actions",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You have fifteen minutes to kill and loot this boss, else you will lose that chance.",
-      "pl": "Masz piętnaście minut, aby zabić i splądrować tego bossa, w przeciwnym razie stracisz tę szansę.",
-      "lang": "You have fifteen minutes to kill and loot this boss, else you will lose that chance."
-    },
-    {
-      "key": "actions.keys.msg_2",
-      "category": "actions",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You have entered an ancient demon prison cell!",
-      "pl": "Wkroczyłeś do starożytnej celi więziennej demonów!",
-      "lang": "You have entered an ancient demon prison cell!"
-    },
-    {
-      "key": "actions.quests.msg_1",
-      "category": "actions",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "It is empty.",
-      "pl": "To jest puste.",
-      "lang": "It is empty."
-    },
-    {
-      "key": "actions.quests.msg_2",
-      "category": "actions",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "It is empty.",
-      "pl": "To jest puste.",
-      "lang": "It is empty."
-    },
-    {
-      "key": "actions.random_items.say_1",
-      "category": "actions",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You found ",
-      "pl": "Znalazłeś ",
-      "lang": "You found "
-    },
-    {
-      "key": "actions.random_items.say_2",
-      "category": "actions",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You found nothing useful.",
-      "pl": "Nie znalazłeś nic użytecznego.",
-      "lang": "You found nothing useful."
-    },
-    {
-      "key": "actions.random_items.say_3",
-      "category": "actions",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You found nothing useful.",
-      "pl": "Nie znalazłeś nic użytecznego.",
-      "lang": "You found nothing useful."
-    },
-    {
-      "key": "actions.premium_scroll.msg_max_days",
-      "category": "actions",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You can not buy more than {max} days of premium account.",
-      "pl": "Nie możesz kupić więcej niż {max} dni konta premium.",
-      "lang": "You can not buy more than {max} days of premium account."
-    },
-    {
-      "key": "actions.hireling_foods.msg_too_full",
-      "category": "actions",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You're still too full to eat any gourmet dishes for a while.",
-      "pl": "Nadal jesteś zbyt najedzony, aby przez jakiś czas jeść wykwintne dania.",
-      "lang": "You're still too full to eat any gourmet dishes for a while."
-    },
-    {
-      "key": "actions.outfit_items.msg_need_outfit",
-      "category": "actions",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You need the outfit for this part.",
-      "pl": "Potrzebujesz stroju, aby odblokować tę część.",
-      "lang": "You need the outfit for this part."
-    },
-    {
-      "key": "actions.outfit_items.msg_already_own",
-      "category": "actions",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You already own this outfit part.",
-      "pl": "Masz już tę część stroju.",
-      "lang": "You already own this outfit part."
-    },
-    {
-      "key": "actions.key_door.msg_wrong_key",
-      "category": "actions",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The key does not match.",
-      "pl": "Klucz nie pasuje.",
-      "lang": "The key does not match."
-    },
-    {
-      "key": "actions.gamestore.msg_no_rookgaard",
-      "category": "actions",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Store don't have offers for rookgaard citizen.",
-      "pl": "Sklep nie ma ofert dla mieszkańców Rookgaardu.",
-      "lang": "Store don't have offers for rookgaard citizen."
-    },
-    {
-      "key": "actions.gamestore.msg_exhausted",
-      "category": "actions",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You are exhausted.",
-      "pl": "Jesteś wyczerpany.",
-      "lang": "You are exhausted."
-    },
-    {
-      "key": "book.cursed_crystal.crystal_gardens_diary",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "I did it! I reached the crystal gardens! What beauty and splendor I have seen down there. Even more: I discovered a small subterranean lake - but Harry was there before me. And he did something strange: He ringed a small, transparent looking bell and immediately a big whirl appeared in the water. I suppose this is the mysterious way deeper into the caves we sought after for so long. But Harry, the coward, didn't dare to dive into the water. Instead he left the caverns and headed back to the surface. I must have this bell!",
-      "pl": "I zrobił to! I reached the crystal I.! I. I. i splendor I masz seen I. there. I. more: I odkrywać jeden I. podziemny jezioro - I. Harry był there I. mnie, mi. I on zrobił coś dziwny: On ringed jeden I., przezroczysty looking dzwonek, dzwon i natychmiast jeden duży, wielki I. pojawiać się w the I.. I przypuszczać I. jest the tajemniczy way I. a. do the I. my sought after dla I. long. I. Harry, the coward, didn't dare do I. a. do the I.. Instead on I. the pieczara i I. I. do the I.. I musi masz I. dzwonek, dzwon!",
-      "lang": "I did it! I reached the crystal gardens! What beauty and splendor I have seen down there. Even more: I discovered a small subterranean lake - but Harry was there before me. And he did something strange: He ringed a small, transparent looking bell and immediately a big whirl appeared in the water. I suppose this is the mysterious way deeper into the caves we sought after for so long. But Harry, the coward, didn't dare to dive into the water. Instead he left the caverns and headed back to the surface. I must have this bell!"
-    },
-    {
-      "key": "book.dawnport.adventurers_guild_letter",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Brave adventurer,\n\nthe Adventurers' Guild bids you welcome as a new hero of the land.\n\nTake this adventurer's stone and use it in any city temple to instantly travel to our guild hall. If you should ever lose your adventurer's stone, you can replace it by talking to a priest in the temple.\nI hope you will be visiting us soon.\n\nKind regards,\nRotem, Head of the Adventurers' Guild",
-      "pl": "I. awanturnik, the Awanturnik' Gildia bids ty I. as jeden new bohater z the land. Take I. awanturnik stone i use to w dowolny miasto świątynia do instantly podróż do nasz gildia korytarz, przedpokój, hall. If ty a. powinien, powinna kiedykolwiek lose twój awanturnik stone, Lekarz rejonowyżesz zastępować to by I. do jeden ksiądz w the świątynia.\nI I. ty will być I. nas wkrótce, szybko. I. regards,\nRotem, I. z the Awanturnik' Gildia",
-      "lang": "Brave adventurer,\n\nthe Adventurers' Guild bids you welcome as a new hero of the land.\n\nTake this adventurer's stone and use it in any city temple to instantly travel to our guild hall. If you should ever lose your adventurer's stone, you can replace it by talking to a priest in the temple.\nI hope you will be visiting us soon.\n\nKind regards,\nRotem, Head of the Adventurers' Guild"
-    },
-    {
-      "key": "book.koshei.famous_inhabitants_page_2",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "PAGE 2\nLord Koshei the Curious\n-_-_-_-_-_-_-_-_-_-_-_-\nDate of birth: unknown\nAge: unknown\nHometown: unknown\nDate of death: unknown\nThere are not many things known about this man. He appeared out of nowhere and lived here for nearly ten years. Even though he was communicative, he never told anything about his profession or what he did for a living. First he lived in Darashia 2, Flat 11 for about two years. During that time he was roaming around, travelling the lands of Darama and often visiting the Bath of Dreams and the minotaur pyramid in the North.\nThen it was discovered that he had built a tower south of the mountains. It is unexplained how he managed to do that because no one has been seen to help him. Anyway, the remains of his tower are still there. ...",
-      "pl": "I. 2\nLord Koshei the Curious\n-_-_-_-_-_-_-_-_-_-_-_-\nI. z I.: nieznany\nI.: nieznany\nHometown: nieznany\nI. z I.: nieznany\nNie mata, podkładka wiele, dużo rzecz kNiewn o I. man. On pojawiać się out z Niewhere i lived tutaj, tu dla prawie I. a. rok. I. I. on był komunikatywny, rozmowny, on nigdy told cokolwiek o jego profesja, zawód lub I. on zrobił dla jeden I.. I. on lived w Darashia 2, I. 11 dla o dwa a. rok. Podczas, w czasie that czas on był włóczyć się, wędrować around, podróżling the lands z Darama i często I. the I. z I. i the miNietaur piramida w the Nierth.\nWtedy to był odkrywać that on miał zbudowany jeden I. I. z the góra. To jest unexplained jak on managed do robić that ponieważ, bo Nie I. ma był seen do help him. W każdym razie, the I. z jego I. są I. there....",
-      "lang": "PAGE 2\nLord Koshei the Curious\n-_-_-_-_-_-_-_-_-_-_-_-\nDate of birth: unknown\nAge: unknown\nHometown: unknown\nDate of death: unknown\nThere are not many things known about this man. He appeared out of nowhere and lived here for nearly ten years. Even though he was communicative, he never told anything about his profession or what he did for a living. First he lived in Darashia 2, Flat 11 for about two years. During that time he was roaming around, travelling the lands of Darama and often visiting the Bath of Dreams and the minotaur pyramid in the North.\nThen it was discovered that he had built a tower south of the mountains. It is unexplained how he managed to do that because no one has been seen to help him. Anyway, the remains of his tower are still there. ..."
-    },
-    {
-      "key": "book.new_frontier.hidden_note",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Go to the secret door to the north",
-      "pl": "Go do the I. drzwi do the Nierth",
-      "lang": "Go to the secret door to the north"
-    },
-    {
-      "key": "book.otbm.1000_alchemical_uses_of_urine",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "1000 Alchemical Uses of Urine",
-      "pl": "1000 Alchemical Nas z Mocz",
-      "lang": "1000 Alchemical Uses of Urine"
-    },
-    {
-      "key": "book.otbm.1000_gold_10_fire_bugs",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "1000 gold 10 fire bugs for Dream Challenge",
-      "pl": "1000 złota 10 fire bugs dla I. I.",
-      "lang": "1000 gold 10 fire bugs for Dream Challenge"
-    },
-    {
-      "key": "book.otbm.1001_recipes_against_sweaty_hands",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "1001 Recipes Against Sweaty Hands",
-      "pl": "1001 Przepis kulinarny, przepis O Wywołujący poty Hands",
-      "lang": "1001 Recipes Against Sweaty Hands"
-    },
-    {
-      "key": "book.otbm.1001_ways_to_use_energy",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "1001 ways to use energy beams.",
-      "pl": "1001 ways do use energia I..",
-      "lang": "1001 ways to use energy beams."
-    },
-    {
-      "key": "book.otbm.100_gold_coins_equal_1",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "100 gold coins equal 1 platinum coin",
-      "pl": "100 złotych monet I. 1 I. moneta",
-      "lang": "100 gold coins equal 1 platinum coin"
-    },
-    {
-      "key": "book.otbm.100_gold_coins_equal_1_39c18279",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "100 gold coins equal 1 platinum coin",
-      "pl": "100 złotych monet I. 1 I. moneta",
-      "lang": "100 gold coins equal 1 platinum coin"
-    },
-    {
-      "key": "book.otbm.100_platinum_coins_equal_1",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "100 platinum coins equal 1 crystal coin",
-      "pl": "100 I. monety I. 1 crystal moneta",
-      "lang": "100 platinum coins equal 1 crystal coin"
-    },
-    {
-      "key": "book.otbm.100_platinum_coins_equal_1_648a8349",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "100 platinum coins equal 1 crystal coin",
-      "pl": "100 I. monety I. 1 crystal moneta",
-      "lang": "100 platinum coins equal 1 crystal coin"
-    },
-    {
-      "key": "book.otbm.1_be_respectful_and_considerate",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "1. Be respectful and considerate towards your comrades.",
-      "pl": "1. Być pełen szacunku i pełen względów, troskliwy towards twój towarzysz.",
-      "lang": "1. Be respectful and considerate towards your comrades."
-    },
-    {
-      "key": "book.otbm.1_discover_secret_of_necromants",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "1. Discover secret of necromants nectar",
-      "pl": "1. Odkrywać I. z necromants nektar",
-      "lang": "1. Discover secret of necromants nectar"
-    },
-    {
-      "key": "book.otbm.1_put_a_bunch_of",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "1. Put a bunch of sugar cane into the machine",
-      "pl": "1. Put jeden bunch z I. I. a. do the I.",
-      "lang": "1. Put a bunch of sugar cane into the machine"
-    },
-    {
-      "key": "book.otbm.1st_floor_bel_etage_grand",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "1st floor (bel etage): Grand Opera Caf",
-      "pl": "1st I. (bel etage): I. Opera Caf",
-      "lang": "1st floor (bel etage): Grand Opera Caf"
-    },
-    {
-      "key": "book.otbm.1st_floor_interior_design_take",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "1st floor: Interior Design (take elevator)",
-      "pl": "1st I.: I. Design (take winda)",
-      "lang": "1st floor: Interior Design (take elevator)"
-    },
-    {
-      "key": "book.otbm.1st_floor_magic_emporium",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "1st floor: Magic Emporium",
-      "pl": "1st I.: I. Emporium",
-      "lang": "1st floor: Magic Emporium"
-    },
-    {
-      "key": "book.otbm.1st_floor_the_archers_grounds",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "1st floor: The Archer's Grounds - Distance Weapons and Paladin Spells",
-      "pl": "1st I.: The Łucznik Ziemia - I. Broń i Paladin zaklęCentalna Agencja Wywiadowcza",
-      "lang": "1st floor: The Archer's Grounds - Distance Weapons and Paladin Spells"
-    },
-    {
-      "key": "book.otbm.20_tricks_to_get_peoples",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "20 Tricks to Get People's Money",
-      "pl": "20 I. do Get I. Pieniądze",
-      "lang": "20 Tricks to Get People's Money"
-    },
-    {
-      "key": "book.otbm.2_dont_be_late_for",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "2. Don't be late for lessons and training sessions.",
-      "pl": "2. Don't być I. dla lekcja i Trening sesja.",
-      "lang": "2. Don't be late for lessons and training sessions."
-    },
-    {
-      "key": "book.otbm.2_floor_the_room_of",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "2. Floor - The Room of the Oracle",
-      "pl": "2. I. - The miejsce z the Wyrocznia",
-      "lang": "2. Floor - The Room of the Oracle"
-    },
-    {
-      "key": "book.otbm.2_molasses_will_be_automatically",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "2. Molasses will be automatically extracted and distilled into rum",
-      "pl": "2. Molasses will być automatically extracted i distilled a. do I.",
-      "lang": "2. Molasses will be automatically extracted and distilled into rum"
-    },
-    {
-      "key": "book.otbm.2nd_floor_barnabas_dee_astronomer",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "2nd floor: Barnabas Dee, Astronomer and Sorcerer Spells Teacher.",
-      "pl": "2nd I.: Barnabas Dee, AstroNiemer i Sorcerer zaklęCentalna Agencja Wywiadowcza Nauczyciel.",
-      "lang": "2nd floor: Barnabas Dee, Astronomer and Sorcerer Spells Teacher."
-    },
-    {
-      "key": "book.otbm.2nd_floor_exquisite_jewellery",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "2nd floor: Exquisite Jewellery",
-      "pl": "2nd I.: Przepiękny Biżuteria",
-      "lang": "2nd floor: Exquisite Jewellery"
-    },
-    {
-      "key": "book.otbm.2nd_floor_madame_faylas_music",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "2nd floor: Madame Fayla's Music Chamber",
-      "pl": "2nd I.: Madame Fayla's Muzyka I.",
-      "lang": "2nd floor: Madame Fayla's Music Chamber"
-    },
-    {
-      "key": "book.otbm.3789_gold_weapons_and_repairs",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "3789 gold weapons and repairs",
-      "pl": "3789 złota broń i I.",
-      "lang": "3789 gold weapons and repairs"
-    },
-    {
-      "key": "book.otbm.3_discover_secret_entrance_to",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "3. Discover secret entrance to Nightmare Pits",
-      "pl": "3. Odkrywać I. entrance do Zły sen Dół, jama",
-      "lang": "3. Discover secret entrance to Nightmare Pits"
-    },
-    {
-      "key": "book.otbm.3_maintain_your_training_gear",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "3. Maintain your training gear in good shape.",
-      "pl": "3. Utrzymywać twój Trening I. w I. I..",
-      "lang": "3. Maintain your training gear in good shape."
-    },
-    {
-      "key": "book.otbm.3_when_the_distilling_process",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "3. When the distilling process is finished, rum will start pouring out of the machine",
-      "pl": "3. When the distilling process jest gotowy, skończony, I. will start I. out z the I.",
-      "lang": "3. When the distilling process is finished, rum will start pouring out of the machine"
-    },
-    {
-      "key": "book.otbm.4000_gold_books_and_paper",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "4000 gold books and paper",
-      "pl": "4000 złota I. i I.",
-      "lang": "4000 gold books and paper"
-    },
-    {
-      "key": "book.otbm.4_exterminiate_the_ghouls_in",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "4. Exterminiate the ghouls in the garden",
-      "pl": "4. Exterminiate the ghouls w the I.",
-      "lang": "4. Exterminiate the ghouls in the garden"
-    },
-    {
-      "key": "book.otbm.4_no_running_in_the",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "4. No running in the corridor",
-      "pl": "4. Nie I. w the corridor",
-      "lang": "4. No running in the corridor"
-    },
-    {
-      "key": "book.otbm.4_quickly_use_any_bottle",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "4. Quickly use any bottle or cup to collect the rum",
-      "pl": "4. Szybki, prędki use dowolny I. lub cup do I. the I.",
-      "lang": "4. Quickly use any bottle or cup to collect the rum"
-    },
-    {
-      "key": "book.otbm.5000_gold_runes_and_fluids",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "5000 gold runes and fluids",
-      "pl": "5000 złota runes i I.",
-      "lang": "5000 gold runes and fluids"
-    },
-    {
-      "key": "book.otbm.5_no_eating_and_drinking",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "5. No eating and drinking.",
-      "pl": "5. Nie I. i I..",
-      "lang": "5. No eating and drinking."
-    },
-    {
-      "key": "book.otbm.5_no_sigildrawing_on_the",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "5. No sigil-drawing on the floor",
-      "pl": "5. Nie sigil-I. na the I.",
-      "lang": "5. No sigil-drawing on the floor"
-    },
-    {
-      "key": "book.otbm.6_no_food_in_the",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "6. No food in the library",
-      "pl": "6. Nie jedzenie, pożywienie w the biblioteka",
-      "lang": "6. No food in the library"
-    },
-    {
-      "key": "book.otbm.6_return_borrowed_equipment_to",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "6. Return borrowed equipment to the storage room.",
-      "pl": "6. I. pożyczać wyposażenie, ekwipunek, sprzęt do the magazynowanie, przechowywanie miejsce.",
-      "lang": "6. Return borrowed equipment to the storage room."
-    },
-    {
-      "key": "book.otbm.7_no_scribbling_in_libraryowned",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "7. No scribbling in library-owned documents",
-      "pl": "7. Nie scribbling w biblioteka-I. I.",
-      "lang": "7. No scribbling in library-owned documents"
-    },
-    {
-      "key": "book.otbm.800_razoredge_matt_vs_bambam",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "8.00   Razoredge Matt vs. Bambam Brutus",
-      "pl": "8.00 Razoredge Matowy vs. Bambam Brutus",
-      "lang": "8.00   Razoredge Matt vs. Bambam Brutus"
-    },
-    {
-      "key": "book.otbm.8_books_and_scrolls_must",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "8. Books and scrolls must be returned to the exact place they were taken from",
-      "pl": "8. I. i zwój musi być I. do the I. I. oni były taken z",
-      "lang": "8. Books and scrolls must be returned to the exact place they were taken from"
-    },
-    {
-      "key": "book.otbm.900_mad_doc_vs_harpoon",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "9.00   Mad Doc. vs. Harpoon Angus",
-      "pl": "9.00 Zwariowany, niespełna rozumu Doc. vs. Harpun Angus",
-      "lang": "9.00   Mad Doc. vs. Harpoon Angus"
-    },
-    {
-      "key": "book.otbm.9_no_library_document_to",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "9. No library document to be taken outside of the library grounds",
-      "pl": "9. Nie biblioteka I. do być taken I. z the biblioteka ziemia",
-      "lang": "9. No library document to be taken outside of the library grounds"
-    },
-    {
-      "key": "book.otbm.a_city_only_for_serving",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "A city only for serving one goal: The investigation of the magic in our world Tibia!",
-      "pl": "JEDEN miasto tylko dla serving I. bramka: The dochodzenie z the I. w nasz I. Tibia!",
-      "lang": "A city only for serving one goal: The investigation of the magic in our world Tibia!"
-    },
-    {
-      "key": "book.otbm.a_crudely_scribbled_note",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "(A crudely scribbled note)",
-      "pl": "(JEDEN crudely scribbled Niete)",
-      "lang": "(A crudely scribbled note)"
-    },
-    {
-      "key": "book.otbm.a_goblet_forged_by_the",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "A goblet forged by the dragon Khax that represents all the knowledge and wisdom of TibiaVenezuela.",
-      "pl": "JEDEN kielich forged by the smok Khax that reprezentować wszystkie the kNiewledge i I. z TibiaVenezuela.",
-      "lang": "A goblet forged by the dragon Khax that represents all the knowledge and wisdom of TibiaVenezuela."
-    },
-    {
-      "key": "book.otbm.a_low_nearly_always_fourleaved",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "A low, nearly always four-leaved plant with yellow blossoms that grows in warm climate. It used to be the main source of food for the goats of the continent. However, later it was discovered to have a previously totally unknown poisenous long-term effect on the animals, and all goats died within two months.",
-      "pl": "JEDEN low, prawie zawsze cztery-leaved I. z I. I. that I. w warm klimat. To used do być the main źródło z jedzenie, pożywienie dla the koza, kozioł z the kontynent. Jednak, later to był odkrywać do masz jeden poprzednio I. nieznany poiseNieus long-I. I. na the I., i wszystkie koza, kozioł died wewnątrz dwa miesiąc.",
-      "lang": "A low, nearly always four-leaved plant with yellow blossoms that grows in warm climate. It used to be the main source of food for the goats of the continent. However, later it was discovered to have a previously totally unknown poisenous long-term effect on the animals, and all goats died within two months."
-    },
-    {
-      "key": "book.otbm.a_map_of_several_known",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "A map of several known as well as completely exotic locations.",
-      "pl": "JEDEN mapa z I. kNiewn as well as I. egzotyczny umiejscowienie.",
-      "lang": "A map of several known as well as completely exotic locations."
     },
     {
       "key": "book.otbm.a_number_of_marid_was",
@@ -3612,6 +2901,717 @@
       "en": "For centuries we have been doing research into this magic web in our world of Tibia. And the more we try to understand how it works the more I think that we will never solve its mysteries.",
       "pl": "Dla wiek my masz był praca I. a. do I. I. pajęczyna w nasz I. z Tibia. I the more my I. do rozumieć, pojmować jak to works the more I I. that my will nigdy rozwiązywać jego, jej, ich, swój I..",
       "lang": "For centuries we have been doing research into this magic web in our world of Tibia. And the more we try to understand how it works the more I think that we will never solve its mysteries."
+    },
+    {
+      "key": "book.otbm.for_each_missing_part_on",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "For each missing part (on the basis of a standard rail) I recommend to use three pieces of wood. Lock them in position by at least 6 nails. For the rail itself use a saw on a piece of wood to build your wooden ties. Then place two metal fittings on them and you can make your first ride on your new rail. Congratulations!",
+      "pl": "Dla I. brak part (na the podstawa z jeden I. poręcz) I polecać, rekomendować do use trzy I. z drewno. I. ich w I. by w najmniej 6 I.. Dla the poręcz się, siebie use jeden saw na jeden I. z drewno do I. twój drewniany I.. Wtedy I. dwa metal I. na ich i Lekarz rejonowyżesz make twój I. I. na twój new poręcz. Gratulacje!",
+      "lang": "For each missing part (on the basis of a standard rail) I recommend to use three pieces of wood. Lock them in position by at least 6 nails. For the rail itself use a saw on a piece of wood to build your wooden ties. Then place two metal fittings on them and you can make your first ride on your new rail. Congratulations!"
+    },
+    {
+      "key": "book.otbm.for_example_only_with_its",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "For example, only with its help we could find the gates of teleportation of the magic web.",
+      "pl": "Dla przykład, tylko z jego, jej, ich, swój help my mógł I. the brama z teleportowaćation z the I. pajęczyna.",
+      "lang": "For example, only with its help we could find the gates of teleportation of the magic web."
+    },
+    {
+      "key": "book.otbm.for_now_the_merchants_seem",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "For now the merchants seem content with their station and the place Venore takes on the continent and in the kingdom. There are voices that Venore might separate one day or use it influence to wrest even mor rights and privileges from the kingdom that becomes more and more dependent on its economical power.",
+      "pl": "Dla Niew the I. a. wydawać się być, wydawać się, zdawać się content z ich I. i the I. VeNiere takes na the kontynent i w the królestwo. Są I. that VeNiere might separate I. dzień lub use to I. do wyrywać I. mor I. i przywilej z the królestwo that stawać się more i more I. na jego, jej, ich, swój ecoNiemical I..",
+      "lang": "For now the merchants seem content with their station and the place Venore takes on the continent and in the kingdom. There are voices that Venore might separate one day or use it influence to wrest even mor rights and privileges from the kingdom that becomes more and more dependent on its economical power."
+    },
+    {
+      "key": "book.otbm.for_our_deeds_for_king",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "For our deeds for king and country, the king granted our order the Eastern lands. The city under our protectorate is growing and will soon be as big and as beautiful as our capital. But there is much work to do and countless monsters to slay to bring peace to the green planes. Some days ago, Falnus vanished and we must reckon that he is dead, probably murdered by the brotherhood. Of course even a mage of his power could have been slain by a greater number of creatures as dangerous as giant spiders that still roam these plains. It's a hard blow to our researches in the arts of healing and recreations and the loss of a great man.",
+      "pl": "Dla nasz czyn, wyczyn dla król i country, the król I. nasz order the Wschodni lands. The miasto under nasz protectorate jest I. i will wkrótce, szybko być as duży, wielki i as piękny as nasz I.. I. Dowcip dużo, bardzo work do robić i countless potwory do mordować do bring peace do the green I.. I. dni a. temu, Falnus znikać i my musi I. that on jest dead, prawdopodobnie I. by the braterstwo. Z course I. jeden mage z jego I. mógł masz był slain by jeden I. numer z stwory as groźny, niebezpieczny as I. pająk that I. włóczyć się, wędrować these I.. To jeden hard blow do nasz I. w the I. z I. i rekreacja i the strata, utrata z jeden I. man.",
+      "lang": "For our deeds for king and country, the king granted our order the Eastern lands. The city under our protectorate is growing and will soon be as big and as beautiful as our capital. But there is much work to do and countless monsters to slay to bring peace to the green planes. Some days ago, Falnus vanished and we must reckon that he is dead, probably murdered by the brotherhood. Of course even a mage of his power could have been slain by a greater number of creatures as dangerous as giant spiders that still roam these plains. It's a hard blow to our researches in the arts of healing and recreations and the loss of a great man."
+    },
+    {
+      "key": "book.otbm.for_sorcerers_and_other_magicians",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "for sorcerers and other magicians",
+      "pl": "dla sorcerers i drugi, pozostały iluzjonista, prestidigitator",
+      "lang": "for sorcerers and other magicians"
+    },
+    {
+      "key": "book.otbm.forbidden_secrets_of_magic",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Forbidden Secrets of Magic!",
+      "pl": "Zakazany I. z I.!",
+      "lang": "Forbidden Secrets of Magic!"
+    },
+    {
+      "key": "book.otbm.forests_and_in_wild_herds",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "forests and in wild herds the wolves learned to defeat their bipedal opponents.",
+      "pl": "las i w I. I. the wolves uczony do I. ich bipedal przeciwnik, oponent.",
+      "lang": "forests and in wild herds the wolves learned to defeat their bipedal opponents."
+    },
+    {
+      "key": "book.otbm.former_master_before_he_hid",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "former master, before he hid them from me.",
+      "pl": "były I., I. on hid ich z mnie, mi.",
+      "lang": "former master, before he hid them from me."
+    },
+    {
+      "key": "book.otbm.fort_o_th_nare_igh",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Fort... o. th. N.....are ..igh..",
+      "pl": "Fort... o. th. N.....są..igh..",
+      "lang": "Fort... o. th. N.....are ..igh.."
+    },
+    {
+      "key": "book.otbm.from_or_whether_they_always",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "from or whether they always have existed and just awaked from the deep slumber of the infinity.",
+      "pl": "z lub a. czy oni zawsze masz istnieć i just awaked z the I. I. z the nieskończoność.",
+      "lang": "from or whether they always have existed and just awaked from the deep slumber of the infinity."
+    },
+    {
+      "key": "book.otbm.from_the_nebulas_further_natures",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "from the nebulas, further natures and miracles. But the world is still far from its former splendour and size, and we live in times",
+      "pl": "z the nebulas, further natura i I.. I. the I. jest I. far z jego, jej, ich, swój były splendour i I., i my live w czas",
+      "lang": "from the nebulas, further natures and miracles. But the world is still far from its former splendour and size, and we live in times"
+    },
+    {
+      "key": "book.otbm.from_this_day_on_the",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "From this day on the newborn heroes awakened on the holy and protected isle of rookgaard and only the stronger and better prepared souls could travel to the continent.",
+      "pl": "Z I. dzień na the nowonarodzony bohater rozbudzać na the święty i chronić wyspa, ostrów z rookgaard i tylko the silny, mocny i better przygotowany dusza mógł podróż do the kontynent.",
+      "lang": "From this day on the newborn heroes awakened on the holy and protected isle of rookgaard and only the stronger and better prepared souls could travel to the continent."
+    },
+    {
+      "key": "book.otbm.furiously_to_the_battle_and",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "furiously to the battle, and auxiliary troops from enslaved trolls were no match against the fiery anger of the dragons. Enormous",
+      "pl": "wściekły do the I., i I. I. z enslaved trolls były Nie I. o the rozogniony I. z the smok. ENiermous",
+      "lang": "furiously to the battle, and auxiliary troops from enslaved trolls were no match against the fiery anger of the dragons. Enormous"
+    },
+    {
+      "key": "book.otbm.further_to_the_north_at",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Further to the north, at the northern shores you find the elven city of Ab'Dendriel. There live the elves, masters of nature and masterhunters.",
+      "pl": "Further do the Nierth, w the Nierthern I. ty I. the elven miasto z Ab'Dendriel. There live the elves, I. z natura i masterhunters.",
+      "lang": "Further to the north, at the northern shores you find the elven city of Ab'Dendriel. There live the elves, masters of nature and masterhunters."
+    },
+    {
+      "key": "book.otbm.furthermore_we_found_out_that",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Furthermore, we found out that many Dragonlords carry this strange book (with the big T on it) with them. We dont know why,yet, but we are working on it.",
+      "pl": "Co więcej, a przy tym, my znaleziono out that wiele, dużo Dragonlords I. I. dziwny I. (z the duży, wielki T na to) z ich. My dont kNiew dlaczego, czemu,jeszcze, I. my są I. na to.",
+      "lang": "Furthermore, we found out that many Dragonlords carry this strange book (with the big T on it) with them. We dont know why,yet, but we are working on it."
+    },
+    {
+      "key": "book.otbm.gabel_had_decided_to_hide",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Gabel had decided to hide Fa'hradin's lamp and its powerful prisoner in a forlorn place far to the north because he thought it would be safer there than in Ashta'daramai, his own fortress. Little did he know that these were very the lands where many centuries later a race of goblinoid barbarians called the orcs chose to erect a mighty fortress. One fateful day the lamp was found and brought to the orc king. It did not take the king's shamans long to work out that a mighty spirit was caught in the lamp, and soon enough the reckless king released the mighty djinn that had lain dormant for so many centuries. Little is known about what happened next, but even though to this day the orcs claim their king is still alive there are no credible witnesses who confirm that they have seen the orc king ever since. Malor, however, freely roams the world again, and many scholars agree that he will try every trick in the book to rekindle the fire of the djinn war.",
+      "pl": "Gabel miał decided do I. Fa'hradin's lampa i jego, jej, ich, swój potężny I. w jeden samotny, opuszczony I. far do the Nierth ponieważ, bo on myśl to would być safer there z niż w Ashta'daramai, jego I. forteca. Little zrobił on kNiew that these były I. the lands where wiele, dużo wiek later jeden I. z gobliNieid barbarzyńca called the orcs chose do I. jeden I. forteca. I. brzemienny w skutki dzień the lampa był znaleziono i brought do the orc król. To zrobił Niet take the król shamans long do work out that jeden I. I. był caught w the lampa, i wkrótce, szybko eNieugh the lekkomyślny król released the I. djinn that miał lain uśpiony dla I. wiele, dużo wiek. Little jest kNiewn o I. zdarzać się, wydarzać się next, I. I. I. do I. dzień the orcs I. ich król jest I. żywy Nie magister nauk humanistycznych, magister credible I. kto potwierdzać that oni masz seen the orc król kiedykolwiek I.. Malor, jednak, często włóczyć się, wędrować the I. ponownie, i wiele, dużo uczony I. that on will I. I. I. w the I. do rekindle the fire z the djinn I..",
+      "lang": "Gabel had decided to hide Fa'hradin's lamp and its powerful prisoner in a forlorn place far to the north because he thought it would be safer there than in Ashta'daramai, his own fortress. Little did he know that these were very the lands where many centuries later a race of goblinoid barbarians called the orcs chose to erect a mighty fortress. One fateful day the lamp was found and brought to the orc king. It did not take the king's shamans long to work out that a mighty spirit was caught in the lamp, and soon enough the reckless king released the mighty djinn that had lain dormant for so many centuries. Little is known about what happened next, but even though to this day the orcs claim their king is still alive there are no credible witnesses who confirm that they have seen the orc king ever since. Malor, however, freely roams the world again, and many scholars agree that he will try every trick in the book to rekindle the fire of the djinn war."
+    },
+    {
+      "key": "book.otbm.gabel_told_daraman_of_the",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Gabel told Daraman of the visions and dreams that haunted him and asked Daraman for advice. So Daraman asked him to open up his soul for him to see. And Gabel opened his heart and soul to him. When Daraman had seen deep into Gabel's soul he understood the pain and the confusion that lay hidden deep inside it, and he wept bitter tears of pity for Gabel and for the whole of his race, for he saw that the djinn were a forlorn race that had been cast away by its creator. So full of divine compassion were his tears that they froze into immaculate gemstones of pure blue crystal as soon as they left his eyes. It is said that that springs of clear freshwater sprang forth from the earth wherever one of them hit the ground.",
+      "pl": "Gabel told Daraman z the obraz i I. that I. him i I. Daraman dla rada. I. Daraman I. him do otwórz up jego dusza dla him do I.. I Gabel otwórz jego serce i dusza do him. When Daraman miał seen I. a. do Gabel's dusza on understood the I. i the pomyłka that I. hidden I. inside to, i on wept I. tears z I. dla Gabel i dla the I. z jego I., dla on saw that the djinn były jeden samotny, opuszczony I. that miał był cast I. by jego, jej, ich, swój creator. I. I. z I. współczucie, litość były jego tears that oni froze a. do nieskazitelny gemstones z czysty I. crystal as wkrótce, szybko as oni I. jego eTak. To jest said that that I. z clear I. sprang na zewnątrz z the earth gdziekolwiek I. z ich hit the ziemia.",
+      "lang": "Gabel told Daraman of the visions and dreams that haunted him and asked Daraman for advice. So Daraman asked him to open up his soul for him to see. And Gabel opened his heart and soul to him. When Daraman had seen deep into Gabel's soul he understood the pain and the confusion that lay hidden deep inside it, and he wept bitter tears of pity for Gabel and for the whole of his race, for he saw that the djinn were a forlorn race that had been cast away by its creator. So full of divine compassion were his tears that they froze into immaculate gemstones of pure blue crystal as soon as they left his eyes. It is said that that springs of clear freshwater sprang forth from the earth wherever one of them hit the ground."
+    },
+    {
+      "key": "book.otbm.gabel_was_curious_about_the",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Gabel was curious about the strange human who did not seem to know pain or fear. He approached him and asked him if he did not feel any pain. Daraman answered that the pain of the body was nothing compared to the pain of the soul.  So Gabel asked Daraman if he was not afraid. And the prophet said the famous words: \"The fear of death is but a trifle compared to the fear of life.\" So Gabel, who was more and more intrigued by the human, asked him whether he did not care at all about his life? Daraman just looked into the mighty djinn king's eyes, and a brief smile shone on his lips. And after a long pause he spoke thus: \"I am an old man and I have but little to lose, mylord. But your race has much to gain, for it lives in darkness.\" When he said those words many djinns were outraged by the human's apparent lack of respect. And if Gabel had not stopped them the prophet would have been killed on spot.",
+      "pl": "Gabel był curious o the dziwny I. kto zrobił Niet a. wydawać się być, wydawać się, zdawać się do kNiew I. lub I.. On I. him i I. him if on zrobił Niet I. dowolny I.. Daraman I. that the I. z the ciało był Niething compared do the I. z the dusza. I. Gabel I. Daraman if on był Niet wystraszony. I the prorok said the słynny, znany I.: \"The I. z I. jest I. jeden drobiazg, bagatela compared do the I. z I..\" I. Gabel, kto był more i more intrigued by the I., I. him a. czy on zrobił Niet care w wszystkie o jego I.? Daraman just looked a. do the I. djinn król eTak, i jeden I. I. shone na jego warga. I after jeden long I. on szprycha toteż, dlatego: \"I am jeden I. man i I masz I. little do lose, mylord. I. twój I. ma dużo, bardzo do I., dla to lives w ciemność.\" When on said those I. wiele, dużo djinns były outraged by the I. pozorny brak, niedostatek z respect. I if Gabel miał Niet zatrzymaNie ich the prorok would masz był I. na spot.",
+      "lang": "Gabel was curious about the strange human who did not seem to know pain or fear. He approached him and asked him if he did not feel any pain. Daraman answered that the pain of the body was nothing compared to the pain of the soul.  So Gabel asked Daraman if he was not afraid. And the prophet said the famous words: \"The fear of death is but a trifle compared to the fear of life.\" So Gabel, who was more and more intrigued by the human, asked him whether he did not care at all about his life? Daraman just looked into the mighty djinn king's eyes, and a brief smile shone on his lips. And after a long pause he spoke thus: \"I am an old man and I have but little to lose, mylord. But your race has much to gain, for it lives in darkness.\" When he said those words many djinns were outraged by the human's apparent lack of respect. And if Gabel had not stopped them the prophet would have been killed on spot."
+    },
+    {
+      "key": "book.otbm.galunas_fletcher_workshop",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Galuna's Fletcher Workshop",
+      "pl": "Galuna's Fletcher Warsztat",
+      "lang": "Galuna's Fletcher Workshop"
+    },
+    {
+      "key": "book.otbm.generation_will_lead_our_order",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "generation will lead our order to greater glory than",
+      "pl": "pokolenie, generacja will lead nasz order do I. I. z niż",
+      "lang": "generation will lead our order to greater glory than"
+    },
+    {
+      "key": "book.otbm.getting_up_was_never_his",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Getting up was never his strength.",
+      "pl": "Getting up był nigdy jego siła.",
+      "lang": "Getting up was never his strength."
+    },
+    {
+      "key": "book.otbm.ghazuul_grew_up_a_simple",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Gha'Zuul grew up a simple boy among one of the northern nomad tribes. A frail and meagre child, he was frequently the target of the other childrens' jeers as well as of his despotic father's scorn. Hurt and angered by the constant humiliations, Gha'Zuul developed a bitter, unforgiving personality. He took notes of all the indignities he suffered, and he was determined to take revenge for every single one of them. One day, when his camp was attacked by an undead raiding party he decided it was time to get his revenge. Taking advantage of the general hullabaloo, Gha'Zuul sneaked up on his worst tormentor and quickly cut his throat. However, he had made a mistake when he thought that his crime would go unnoticed. One of the necromancers who was part of the raiding party sensed the evil of this deed, and since he was impressed by the young boy's obvious ruthlessness he ordered his undead troops to kidnap him. And so Gha'Zuul was brought to Drefia.",
+      "pl": "Gha'Zuul grew up jeden prosty chłopiec among I. z the Nierthern Niemad plemię, szczep. JEDEN kruchy, wątł i meagre dziecko, on był frequently the cel z the drugi, pozostały childrens' jeers as well as z jego despotyczny I. I.. I. i I. by the stały poniżenie, Gha'Zuul rozwijać się, rozwijać jeden I., unforgiving osobowość. On took Nietes z wszystkie the zniewaga, obraza on cierpieć, i on był zdecydowany do take zemsta dla I. I. I. z ich. I. dzień, when jego I. był I. by jeden undead I. drużyna on decided to był czas do get jego zemsta. Taking przewaga z the general hullabaloo, Gha'Zuul I. up na jego I. dręczyciel i szybki, prędki cut jego gardło. Jednak, on miał zrobiony jeden I. when on myśl that jego crime would go unNieticed. I. z the necromancers kto był part z the I. drużyna sensed the I. z I. czyn, wyczyn, i I. on był wywierać wrażenie by the I. chłopiec oczywisty ruthlessness on ordered jego undead I. do I. him. I I. Gha'Zuul był brought do Drefia.",
+      "lang": "Gha'Zuul grew up a simple boy among one of the northern nomad tribes. A frail and meagre child, he was frequently the target of the other childrens' jeers as well as of his despotic father's scorn. Hurt and angered by the constant humiliations, Gha'Zuul developed a bitter, unforgiving personality. He took notes of all the indignities he suffered, and he was determined to take revenge for every single one of them. One day, when his camp was attacked by an undead raiding party he decided it was time to get his revenge. Taking advantage of the general hullabaloo, Gha'Zuul sneaked up on his worst tormentor and quickly cut his throat. However, he had made a mistake when he thought that his crime would go unnoticed. One of the necromancers who was part of the raiding party sensed the evil of this deed, and since he was impressed by the young boy's obvious ruthlessness he ordered his undead troops to kidnap him. And so Gha'Zuul was brought to Drefia."
+    },
+    {
+      "key": "book.otbm.given_the_need_for_information",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Given the need for information on how to torture the creatures effectively, should a more valuable specimen fall into our hands, several new techniques were tried out. Most proved to be unsuccessful. Eventually both probands died at intended points of the experiment.",
+      "pl": "I. the potrzebować dla informacja, wiadomości na jak do I. the stwory efektywny, a. powinien, powinna jeden more I. okaz I. a. do nasz hands, I. new technika były tried out. Most proved do być unsukcesful. Ostateczny obaj probands died w zamierzać points z the I..",
+      "lang": "Given the need for information on how to torture the creatures effectively, should a more valuable specimen fall into our hands, several new techniques were tried out. Most proved to be unsuccessful. Eventually both probands died at intended points of the experiment."
+    },
+    {
+      "key": "book.otbm.glorious_knights_guild_of_carlin",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Glorious Knights Guild of Carlin",
+      "pl": "Wspaniały I. Gildia z Carlin",
+      "lang": "Glorious Knights Guild of Carlin"
+    },
+    {
+      "key": "book.otbm.glows_shades_and_hues_light",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Glows, shades and hues - light and its origins: natural and artificial",
+      "pl": "I., I. i I. - I. i jego, jej, ich, swój origins: I. i I.",
+      "lang": "Glows, shades and hues - light and its origins: natural and artificial"
+    },
+    {
+      "key": "book.otbm.gnomish_authorized_persons_only",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Gnomish Authorized Persons Only!",
+      "pl": "GNiemish Authorized Osoba Tylko!",
+      "lang": "Gnomish Authorized Persons Only!"
+    },
+    {
+      "key": "book.otbm.go_ahead_and_follow_the",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Go ahead and follow the path of light",
+      "pl": "Go w przód i I. the ścieżka z I.",
+      "lang": "Go ahead and follow the path of light"
+    },
+    {
+      "key": "book.otbm.go_to_the_left_brother",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "GO TO THE LEFT BROTHER AND JOIN US IN DARKNESS",
+      "pl": "GO DO THE I. BRAT I I. NAS W CIEMNOŚĆ",
+      "lang": "GO TO THE LEFT BROTHER AND JOIN US IN DARKNESS"
+    },
+    {
+      "key": "book.otbm.golden_lines_are_embedded_in",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Golden lines are embedded in the amulet and show mysterious symbols. It was awarded by TibiaHoF.",
+      "pl": "złotaen lines są uwięzły w the amulet i I. tajemniczy symbol. To był I. by TibiaHoF.",
+      "lang": "Golden lines are embedded in the amulet and show mysterious symbols. It was awarded by TibiaHoF."
+    },
+    {
+      "key": "book.otbm.got_it_the_sorcerer_screamed",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "\"Got it!\" the sorcerer screamed. \"Let",
+      "pl": "\"Got to!\" the sorcerer I.. \"Let",
+      "lang": "\"Got it!\" the sorcerer screamed. \"Let"
+    },
+    {
+      "key": "book.otbm.got_your_rope_and_shovel",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Got your rope and shovel? Well, have fun hunting!",
+      "pl": "Got twój I. i I.? Well, masz I. I.!",
+      "lang": "Got your rope and shovel? Well, have fun hunting!"
+    },
+    {
+      "key": "book.otbm.granted_by_radiotibiacombr_to_hear",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Granted by RadioTibia.com.br to hear the sounds of Tibia.",
+      "pl": "I. by RadioTibia.com.Koleje Brytyjskie do I. the I. z Tibia.",
+      "lang": "Granted by RadioTibia.com.br to hear the sounds of Tibia."
+    },
+    {
+      "key": "book.otbm.graveyard_of_the_red_legion",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Graveyard of the Red Legion and all the workers who fell in the fight against the orcish hordes",
+      "pl": "Cmentarz z the I. Legion i wszystkie the pracownik kto zwalać w the I. o the orcish zgraja, horda",
+      "lang": "Graveyard of the Red Legion and all the workers who fell in the fight against the orcish hordes"
+    },
+    {
+      "key": "book.otbm.great_mountains_of_folda_island",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Great Mountains of Folda Island",
+      "pl": "I. Góra z Folda Wyspa",
+      "lang": "Great Mountains of Folda Island"
+    },
+    {
+      "key": "book.otbm.greenhorn_rank_rewards_choose_wisely",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Greenhorn Rank Rewards - Choose wisely!",
+      "pl": "Greenhorn I. nagrodas - Wybierać I.!",
+      "lang": "Greenhorn Rank Rewards - Choose wisely!"
+    },
+    {
+      "key": "book.otbm.greetings_brothers_and_sisters",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Greetings brothers and sisters!",
+      "pl": "Witaj brat i I.!",
+      "lang": "Greetings brothers and sisters!"
+    },
+    {
+      "key": "book.otbm.greetings_by_darruk_the_redscarred",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "- Greetings by Darruk the Redscarred.",
+      "pl": "- Witaj by Darruk the Redscarred.",
+      "lang": "- Greetings by Darruk the Redscarred."
+    },
+    {
+      "key": "book.otbm.greetings_fellow_brother",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Greetings fellow brother!",
+      "pl": "Witaj facet, gość brat!",
+      "lang": "Greetings fellow brother!"
+    },
+    {
+      "key": "book.otbm.ground_floor_flints_finest_melee",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ground floor: Flint's Finest - Melee Weapons and Armor",
+      "pl": "Ziemia I.: Krzemień Finest - Melee Broń i Armor",
+      "lang": "Ground floor: Flint's Finest - Melee Weapons and Armor"
+    },
+    {
+      "key": "book.otbm.ground_floor_rathleton_post_office",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ground floor: Rathleton Post Office",
+      "pl": "Ziemia I.: Rathleton Post Biuro",
+      "lang": "Ground floor: Rathleton Post Office"
+    },
+    {
+      "key": "book.otbm.guided_by_omens_an_expedition",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Guided by omens an expedition of brave warriors from the thaian order of the knights of noodles traveled the perillious seas the remote isle of rookgaard and discovered the new soulvortex.",
+      "pl": "Guided by omen jeden ekspedycja z I. wojownik z the thaian order z the I. z Nieodles podróżed the perillious morze the I. wyspa, ostrów z rookgaard i odkrywać the new soulvortex.",
+      "lang": "Guided by omens an expedition of brave warriors from the thaian order of the knights of noodles traveled the perillious seas the remote isle of rookgaard and discovered the new soulvortex."
+    },
+    {
+      "key": "book.otbm.guild_of_the_dexterous_paladins",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Guild of the dexterous Paladins",
+      "pl": "Gildia z the sprawny Paladins",
+      "lang": "Guild of the dexterous Paladins"
+    },
+    {
+      "key": "book.otbm.guild_of_the_dexterous_paladins_4a67ff69",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Guild of the dexterous Paladins",
+      "pl": "Gildia z the sprawny Paladins",
+      "lang": "Guild of the dexterous Paladins"
+    },
+    {
+      "key": "book.otbm.guildhall_of_the_red_rose",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Guildhall of the Red Rose",
+      "pl": "Guildhall z the I. I.",
+      "lang": "Guildhall of the Red Rose"
+    },
+    {
+      "key": "book.otbm.haha_we_caught_one_of",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Haha, we caught one of our enemys",
+      "pl": "Haha, my caught I. z nasz wróg",
+      "lang": "Haha, we caught one of our enemys"
+    },
+    {
+      "key": "book.otbm.hail_to_marianos_pall_the",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hail to Marianos Pall, the current hero of the Scrapper difficulty!",
+      "pl": "I. do MariaNies I., the aktualny bohater z the Scrapper trudność!",
+      "lang": "Hail to Marianos Pall, the current hero of the Scrapper difficulty!"
+    },
+    {
+      "key": "book.otbm.has_stoped_i_know_they",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "has stoped. I KNOW they are coming after me now. I can see the flickering of the shadows as they aproach. THEY ARE COMING",
+      "pl": "ma stop. I KNieW oni są nadchodzący after mnie, mi Niew. I może I. the I. z the cień as oni aproach. ONI SĄ NADCHODZĄCY",
+      "lang": "has stoped. I KNOW they are coming after me now. I can see the flickering of the shadows as they aproach. THEY ARE COMING"
+    },
+    {
+      "key": "book.otbm.have_faith_wanderer_for_you",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Have faith wanderer, for you do not fight alone.",
+      "pl": "Masz wiara wędrować, dla ty robić Niet I. I..",
+      "lang": "Have faith wanderer, for you do not fight alone."
+    },
+    {
+      "key": "book.otbm.have_to_spend_to_much",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "have to spend to much time in fighting the",
+      "pl": "masz do wydawać do dużo, bardzo czas w I. the",
+      "lang": "have to spend to much time in fighting the"
+    },
+    {
+      "key": "book.otbm.head_of_the_palace_guards",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Head of the palace guards",
+      "pl": "I. z the pałac I.",
+      "lang": "Head of the palace guards"
+    },
+    {
+      "key": "book.otbm.hellgate_restricted_area",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hellgate! Restricted Area!",
+      "pl": "Hellgate! Ograniczony Obszar, region!",
+      "lang": "Hellgate! Restricted Area!"
+    },
+    {
+      "key": "book.otbm.her_hairs_snakes_are_still",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Her hair's snakes are still alive. Awarded only on TibiaPic.com.",
+      "pl": "Her włos wąż są I. żywy. I. tylko na TibiaPic.com.",
+      "lang": "Her hair's snakes are still alive. Awarded only on TibiaPic.com."
+    },
+    {
+      "key": "book.otbm.herbs_and_plants_of_the",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Herbs and Plants of the Swamp, Volume I",
+      "pl": "I. i I. z the I., Książka I",
+      "lang": "Herbs and Plants of the Swamp, Volume I"
+    },
+    {
+      "key": "book.otbm.herbs_and_plants_of_the_e1ae45aa",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Herbs and Plants of the Swamp, Volume II",
+      "pl": "I. i I. z the I., Książka II",
+      "lang": "Herbs and Plants of the Swamp, Volume II"
+    },
+    {
+      "key": "book.otbm.here_lies_the_body_of",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Here lies the body of Arkanor, Rookgaard's first teleportation scientist.",
+      "pl": "Tutaj, tu lies the ciało z ArkaNier, Rookgaard's I. teleportowaćation naukowiec.",
+      "lang": "Here lies the body of Arkanor, Rookgaard's first teleportation scientist."
+    },
+    {
+      "key": "book.otbm.here_on_the_haunted_plains",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Here on the haunted Plains of Havoc the order of the Nightmare Knights defeated the armies of Goshnar, the king of necromancy.",
+      "pl": "Tutaj, tu na the I. I. z Chaos, zamieszanie the order z the Zły sen I. I. the wojsko, armia z Goshnar, the król z necromancy.",
+      "lang": "Here on the haunted Plains of Havoc the order of the Nightmare Knights defeated the armies of Goshnar, the king of necromancy."
+    },
+    {
+      "key": "book.otbm.here_you_dont_lost_anything",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Here you dont lost anything, dnt lost Level and dont lost Itens.",
+      "pl": "Tutaj, tu ty dont I. cokolwiek, dnt I. poziom i dont I. Itens.",
+      "lang": "Here you dont lost anything, dnt lost Level and dont lost Itens."
+    },
+    {
+      "key": "book.otbm.here_you_will_find_the",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Here you will find the entrance of the MOTA Extension. Still under contruction.",
+      "pl": "Tutaj, tu ty will I. the entrance z the MOTA Dobudówka, powiększenie. I. under contruction.",
+      "lang": "Here you will find the entrance of the MOTA Extension. Still under contruction."
+    },
+    {
+      "key": "book.otbm.high_end_spells_for_your",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "High end spells for your ultimate enemies.",
+      "pl": "I. I. zaklęCentalna Agencja Wywiadowcza dla twój ostateczny wróg.",
+      "lang": "High end spells for your ultimate enemies."
+    },
+    {
+      "key": "book.otbm.highlighted_keyword_they_react_to",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "highlighted keyword they react to if you wish to begin a conversation, but sometimes, they have hidden keywords they will",
+      "pl": "I. słowo kluczowe oni reagować do if ty I. do begin jeden rozmowa, I. kiedyś, pewnego razu, oni masz hidden słowo kluczowe oni will",
+      "lang": "highlighted keyword they react to if you wish to begin a conversation, but sometimes, they have hidden keywords they will"
+    },
+    {
+      "key": "book.otbm.highranking_necromancers_only",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "High-ranking necromancers only.",
+      "pl": "I.-I. necromancers tylko.",
+      "lang": "High-ranking necromancers only."
+    },
+    {
+      "key": "book.otbm.history_of_the_augur_part",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "History of the Augur, Part II",
+      "pl": "Historia z the Wróżyć, Part II",
+      "lang": "History of the Augur, Part II"
+    },
+    {
+      "key": "book.otbm.history_of_the_augur_part_5eb84e6d",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "History of the Augur, Part I",
+      "pl": "Historia z the Wróżyć, Part I",
+      "lang": "History of the Augur, Part I"
+    },
+    {
+      "key": "book.otbm.home_of_eclesius_the_very",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Home of Eclesius, the Very Wise and also Noble Sorcerer.",
+      "pl": "Home z Eclesius, the I. I. i także Nieble Sorcerer.",
+      "lang": "Home of Eclesius, the Very Wise and also Noble Sorcerer."
+    },
+    {
+      "key": "book.otbm.home_of_the_ruthless_seven",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Home of the ruthless seven!!!!!!!",
+      "pl": "Home z the bezlitosny siedem!!!!!!!",
+      "lang": "Home of the ruthless seven!!!!!!!"
+    },
+    {
+      "key": "book.otbm.honour_and_glory_to_death",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Honour and glory to Death Rose, the mighty Warlord!",
+      "pl": "HoNieur i I. do I. I., the I. Warlord!",
+      "lang": "Honour and glory to Death Rose, the mighty Warlord!"
+    },
+    {
+      "key": "book.otbm.honour_to_whom_honour_is",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Honour to whom honour is due",
+      "pl": "HoNieur do whom hoNieur jest due",
+      "lang": "Honour to whom honour is due"
+    },
+    {
+      "key": "book.otbm.house_of_dermot_the_local",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "House of Dermot, the Local Chief",
+      "pl": "dom z Dermot, the Lokalny I.",
+      "lang": "House of Dermot, the Local Chief"
+    },
+    {
+      "key": "book.otbm.house_of_wealth_bank_jewels",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "House of Wealth - Bank, Jewels, Depot",
+      "pl": "dom z Bogactwo - Bank, Klejnot, Skład",
+      "lang": "House of Wealth - Bank, Jewels, Depot"
+    },
+    {
+      "key": "book.otbm.house_of_wealth_bank_jewels_59d3083c",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "House of Wealth - Bank, Jewels, Depot",
+      "pl": "dom z Bogactwo - Bank, Klejnot, Skład",
+      "lang": "House of Wealth - Bank, Jewels, Depot"
+    },
+    {
+      "key": "book.otbm.houses_ascendants_phases_of_the",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Houses, Ascendants, Phases of the Moon in the different Dark Orders. A comparative Chart Analysis by Antaly of Drefia",
+      "pl": "doms, Ascendants, I. z the Księżyc w the różny I. Orders. JEDEN porównawczy I. Analiza by Antaly z Drefia",
+      "lang": "Houses, Ascendants, Phases of the Moon in the different Dark Orders. A comparative Chart Analysis by Antaly of Drefia"
+    },
+    {
+      "key": "book.otbm.how_to_create_spellbooks_by",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "How to create spellbooks by Muriel.",
+      "pl": "Jak do create zaklęciebooks by Muriel.",
+      "lang": "How to create spellbooks by Muriel."
+    },
+    {
+      "key": "book.otbm.how_to_create_spellbooks_by_003d48b3",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "How to create spellbooks by Muriel.",
+      "pl": "Jak do create zaklęciebooks by Muriel.",
+      "lang": "How to create spellbooks by Muriel."
+    },
+    {
+      "key": "book.otbm.how_to_learn_magic_easy",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "How to learn Magic easy. Level 1: For Knights and non Vocation people (Part one)",
+      "pl": "Jak do uczyć się, nauczyć się I. I.. poziom 1: Dla I. i Nien Profesja I. (Part I.)",
+      "lang": "How to learn Magic easy. Level 1: For Knights and non Vocation people (Part one)"
+    },
+    {
+      "key": "book.otbm.how_to_manipulate_runes_by",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "How to manipulate Runes by Muriel.",
+      "pl": "Jak do manipulować Runes by Muriel.",
+      "lang": "How to manipulate Runes by Muriel."
+    },
+    {
+      "key": "book.otbm.however_immediately_the_first_dragon",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "however immediately the first dragon, called Garsharak, rose and he bore many further lower dragons in the course of the",
+      "pl": "jednak natychmiast the I. smok, called Garsharak, I. i on I. wiele, dużo further I. smok w the course z the",
+      "lang": "however immediately the first dragon, called Garsharak, rose and he bore many further lower dragons in the course of the"
+    },
+    {
+      "key": "book.otbm.however_we_are_very_happy",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "However, we are very happy that we own it because it helped us and it will help us to understand the magic web around Tibia.",
+      "pl": "Jednak, my są I. a. szczęśliwy that my I. to ponieważ, bo to helped nas i to will help nas do rozumieć, pojmować the I. pajęczyna around Tibia.",
+      "lang": "However, we are very happy that we own it because it helped us and it will help us to understand the magic web around Tibia."
+    },
+    {
+      "key": "book.otbm.huv_stollan_match_stuf_from",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Huv stollan match stuf from humutown.",
+      "pl": "Huv stollan I. stuf z humutown.",
+      "lang": "Huv stollan match stuf from humutown."
+    },
+    {
+      "key": "book.otbm.i_advice_not_to_try",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I advice not to try that until you have at least 20 years experience in rail construction......<Well, seems like you don't match the premises.>",
+      "pl": "I rada Niet do I. that I. Masz w najmniej 20 a. rok I. w poręcz budowa......<Well, seems like you don't match the premises.>",
+      "lang": "I advice not to try that until you have at least 20 years experience in rail construction......<Well, seems like you don't match the premises.>"
     }
   ],
   "length_ratio_issues": [

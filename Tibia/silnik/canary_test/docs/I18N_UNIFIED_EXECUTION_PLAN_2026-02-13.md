@@ -6,6 +6,28 @@
 
 ---
 
+## Update wykonania (2026-02-14 10:18 UTC) — post-start 30s gate + source=manual root-cause + 20m queue observation
+
+Zrealizowane pełne zadania:
+- ✅ **`start_all`: post-start health gate (30s)**
+  - `i18n_start_all.sh` ma nowy gate po starcie: obserwacja procesów przez konfigurowalne okno (`START_ALL_POST_START_HEALTH_*`),
+  - gate waliduje jednocześnie: guardian + statusd + worker (`i18n_worker_simple.sh --continuous`),
+  - przy fail zapisuje diagnostyczne tail logów daemonów.
+- ✅ **Identyfikacja zewnętrznego triggera `source=manual`**
+  - potwierdzono źródło: `~/.config/systemd/user/i18n-guardian.service`,
+  - unit ma `Restart=always` + `RestartSec=5`, co tłumaczy próby startu co ~5s,
+  - `i18n_guardian.sh` loguje teraz kontekst startu `manual` (`ppid`, `parent cmdline`, `gppid`, `grand cmdline`) z throttlingiem,
+  - log wskazuje parent: `/usr/lib/systemd/systemd --user`.
+- ✅ **Obserwacja 20+ min pod `REPAIR_QUEUE_STALE`**
+  - analiza `statusd.log` dla okna `2026-02-14 10:57:40` -> `2026-02-14 11:17:01` (czas lokalny hosta),
+  - wynik: `stale_recent=0`, wpisy tylko `repair_queue_fresh` / `queue_freshness_ok`,
+  - `statusd_doctor` aktualnie raportuje `queue_freshness_ok (754s, WARN>900s CRIT>1800s)`.
+
+Nowe problemy/TODO wykryte podczas realizacji:
+- ⬜ Ustalić jedną orkiestrację runtime: albo `i18n_start_all.sh`, albo user-systemd unit.
+- ⬜ Jeśli zostaje unit: dodać w nim `Environment=GUARDIAN_START_SOURCE=service` (zamiast domyślnego `manual`) i ograniczyć restart-loop.
+- ⬜ Jeśli zostaje `start_all`: wyłączyć `~/.config/systemd/user/i18n-guardian.service` (`disable --now`), aby nie generował konkurencyjnych prób startu.
+
 ## Update wykonania (2026-02-14 09:56 UTC) — worker heartbeat/queue hardening + guardian/start lock reliability
 
 Zrealizowane pełne zadania:
@@ -36,9 +58,9 @@ Walidacja runtime (foreground, 2026-02-14 09:56 UTC):
 - ✅ Worker strict translation działa z nowym kontraktem bez błędów składni bash (`bash -n` OK).
 
 Nowe problemy/TODO wykryte podczas realizacji:
-- ⬜ Dodać `start_all` post-start health gate (np. 30s), bo sama walidacja PID przez kilka sekund nie zawsze ujawnia szybki exit procesu.
-- ⬜ Ustalić i udokumentować zewnętrzny trigger częstych wywołań `i18n_guardian.sh --daemon` z `source=manual` (co ~5s) i ograniczyć go do jednego źródła orkiestracji.
-- ⬜ Po stabilnym starcie 3 daemonów zrobić 20+ min obserwacji `statusd_doctor` dla finalnego potwierdzenia braku `REPAIR_QUEUE_STALE`.
+- ✅ Dodać `start_all` post-start health gate (np. 30s), bo sama walidacja PID przez kilka sekund nie zawsze ujawnia szybki exit procesu. → DONE 2026-02-14 10:18 UTC.
+- ✅ Ustalić i udokumentować zewnętrzny trigger częstych wywołań `i18n_guardian.sh --daemon` z `source=manual` (co ~5s) i ograniczyć go do jednego źródła orkiestracji. → DONE (identyfikacja root-cause) 2026-02-14 10:18 UTC.
+- ✅ Po stabilnym starcie 3 daemonów zrobić 20+ min obserwacji `statusd_doctor` dla finalnego potwierdzenia braku `REPAIR_QUEUE_STALE`. → DONE 2026-02-14 10:18 UTC (`stale_recent=0`).
 
 ## Update wykonania (2026-02-14 09:12 UTC) — heartbeat contract + subprocess watchdog + worker PID accuracy
 

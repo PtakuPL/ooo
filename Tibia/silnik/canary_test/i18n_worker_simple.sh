@@ -13237,6 +13237,79 @@ def detect_suspicious(en_text: str, translated_text: str, lang: str, key: str = 
                     "count": len(fr_bad_real),
                 })
 
+    # S15: PL lowercase — NPC odpowiedzi nie powinny zaczynać się wielką literą
+    # gdy EN zaczyna się małą (np. "yes" → "tak", ale nie "Tak").
+    # Odwrotnie: „Nie" zamiast „nie" na początku zdania to też sygnał.
+    # Główna reguła: jeśli EN zaczyna się wielką literą, PL powinien też.
+    # Dodatkowa: „Nie →nie" w połowie zdania — czysty false positive, pomijamy.
+    # Skupiamy się na: PL tłumaczenie zaczyna WIELKĄ, a EN zaczyna MAŁĄ.
+    if lang_lower == "pl" and tr_len > 5 and tr != en:
+        en_first_c = en.lstrip()[:1] if en.strip() else ""
+        tr_first_c = tr.lstrip()[:1] if tr.strip() else ""
+        # EN lowercase start → PL uppercase start is suspicious for NPC dialogue
+        if en_first_c.islower() and tr_first_c.isupper() and tr_first_c.isalpha():
+            # Skip if it's a single proper noun or short label
+            if " " in tr.strip() or tr_len > 20:
+                issues.append({
+                    "type": "pl_unexpected_uppercase",
+                    "severity": "LOW",
+                    "message": f"PL: EN zaczyna małą '{en_first_c}', PL wielką '{tr_first_c}'",
+                })
+
+    # S16: FI agglutination — fińskie słowa mogą mieć >25 znaków (to normalne)
+    # Ale jeśli tłumaczenie ma <3 słowa dla EN >5 słów, to może być zlepek
+    if lang_lower == "fi" and tr_len > 10 and tr != en:
+        en_word_count = len(en.split())
+        tr_word_count = len(tr.split())
+        # FI jest aglutynacyjny — mniej słów to normalne, ale ekstremalnie mało to podejrzane
+        if en_word_count >= 6 and tr_word_count <= 1:
+            issues.append({
+                "type": "fi_agglutination_extreme",
+                "severity": "LOW",
+                "message": f"FI: EN ma {en_word_count} słów, FI tylko {tr_word_count} — zbyt agresywna kompresja?",
+            })
+        # Odwrotnie: jeśli FI ma WIĘCEJ słów niż EN × 1.5, to podejrzane (nie powinno być)
+        if en_word_count >= 3 and tr_word_count > en_word_count * 1.8:
+            issues.append({
+                "type": "fi_word_inflation",
+                "severity": "LOW",
+                "message": f"FI: EN ma {en_word_count} słów, FI aż {tr_word_count} — FI powinien być bardziej zwięzły",
+            })
+
+    # S17: HU vowel harmony — węgierskie przyrostki muszą pasować do harmonii samogłoskowej
+    # Heurystyka: sprawdź typowe błędy w przyrostkach: -ban/-ben, -nak/-nek, -hoz/-hez/-höz
+    if lang_lower == "hu" and tr_len > 15 and tr != en:
+        hu_words = tr.split()
+        hu_harmony_issues = []
+        HU_BACK_VOWELS = set("aáoóuú")
+        HU_FRONT_VOWELS = set("eéiíöőüű")
+        for word in hu_words:
+            wl = word.lower().rstrip(".,!?;:")
+            if len(wl) < 4:
+                continue
+            # Znajdź rdzeń (bez przyrostka) i sprawdź harmonię
+            stem_vowels = [c for c in wl[:-3] if c in HU_BACK_VOWELS | HU_FRONT_VOWELS]
+            if not stem_vowels:
+                continue
+            last_vowel_type = "back" if stem_vowels[-1] in HU_BACK_VOWELS else "front"
+            # -ban (back) vs -ben (front)
+            if wl.endswith("ban") and last_vowel_type == "front":
+                hu_harmony_issues.append(f"{wl} → -ben")
+            elif wl.endswith("ben") and last_vowel_type == "back":
+                hu_harmony_issues.append(f"{wl} → -ban")
+            # -nak (back) vs -nek (front)
+            elif wl.endswith("nak") and last_vowel_type == "front":
+                hu_harmony_issues.append(f"{wl} → -nek")
+            elif wl.endswith("nek") and last_vowel_type == "back":
+                hu_harmony_issues.append(f"{wl} → -nak")
+        if hu_harmony_issues:
+            issues.append({
+                "type": "hu_vowel_harmony",
+                "severity": "LOW",
+                "message": f"HU: Podejrzana harmonia samogłoskowa: {', '.join(hu_harmony_issues[:3])}",
+                "examples": hu_harmony_issues[:3],
+            })
+
     return issues
 
 # ==========================================================================

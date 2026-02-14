@@ -11,6 +11,32 @@
 
 ---
 
+## 🛠️ Aktualizacja wykonania (2026-02-14 10:18 UTC — full task: 30s health gate + source root-cause + 20m observation)
+
+Wybrane do realizacji pełne zadania:
+- **Dodać dodatkowy check „process still alive after N=30s” w `i18n_start_all.sh`**
+- **Zidentyfikować zewnętrzne źródło częstych wywołań `i18n_guardian.sh --daemon` (`source=manual`)**
+- **Wykonać obserwację 20+ min i potwierdzić brak `REPAIR_QUEUE_STALE`**
+
+Wykonane:
+- ✅ `i18n_start_all.sh`:
+  - dodano `post_start_health_gate()` (domyślnie 30s, konfigurowalne env),
+  - gate sprawdza, czy po starcie żyją: guardian + statusd + worker.
+- ✅ `i18n_guardian.sh`:
+  - dodano log kontekstu startu `manual` (`ppid`, parent/grand cmdline) z throttlingiem,
+  - potwierdzono źródło prób `manual`: user systemd (`/usr/lib/systemd/systemd --user`).
+- ✅ Root-cause:
+  - wykryty unit: `~/.config/systemd/user/i18n-guardian.service` (`ExecStart=...i18n_guardian.sh --daemon`),
+  - to ten unit generuje konkurencyjne próby startu `source=manual`.
+- ✅ Obserwacja queue:
+  - okno 20 minut (`10:57:40` -> `11:17:01`, czas hosta) bez `REPAIR_QUEUE_STALE`,
+  - tylko `repair_queue_fresh` / `queue_freshness_ok`.
+
+Nowe rzeczy do zrobienia ujawnione podczas realizacji:
+- ⬜ Decyzja operacyjna: zostawić user-systemd czy przejść wyłącznie na `i18n_start_all.sh` jako kanoniczne źródło.
+- ⬜ Gdy zostaje systemd: ustawić `GUARDIAN_START_SOURCE=service` w unit i ograniczyć restart policy.
+- ⬜ Gdy zostaje start_all: wyłączyć user unit guardiana, żeby usunąć lock contention i szum logów.
+
 ## 🛠️ Aktualizacja wykonania (2026-02-14 09:56 UTC — full task: heartbeat mid-cycle + refresh repair queue + guardian/start reliability)
 
 Wybrane do realizacji pełne zadania:
@@ -47,9 +73,9 @@ Walidacja runtime (foreground test, 2026-02-14 09:56 UTC):
 - ✅ Worker wykonał tłumaczenia strict (`pl/cpp.json`, `pl/otclient_modules.json`, `es/questlog.json`) bez regresji składni.
 
 Nowe rzeczy do zrobienia ujawnione podczas realizacji:
-- ⬜ Dodać dodatkowy check „process still alive after N=30s” do `i18n_start_all.sh`, aby odsiać środowiska, gdzie procesy tła są ubijane zaraz po starcie.
-- ⬜ Zidentyfikować i opisać zewnętrzne źródło częstych wywołań `i18n_guardian.sh --daemon` (`source=manual`, co ~5s), bo zaśmieca log i utrudnia diagnostykę locków.
-- ⬜ Po stabilnym uruchomieniu 3 daemonów wykonać min. 20 min obserwacji `statusd_doctor` i potwierdzić brak `REPAIR_QUEUE_STALE` w ruchu produkcyjnym.
+- ✅ Dodać dodatkowy check „process still alive after N=30s” do `i18n_start_all.sh`, aby odsiać środowiska, gdzie procesy tła są ubijane zaraz po starcie. → DONE 2026-02-14 10:18 UTC.
+- ✅ Zidentyfikować i opisać zewnętrzne źródło częstych wywołań `i18n_guardian.sh --daemon` (`source=manual`, co ~5s), bo zaśmieca log i utrudnia diagnostykę locków. → DONE 2026-02-14 10:18 UTC (`~/.config/systemd/user/i18n-guardian.service`).
+- ✅ Po stabilnym uruchomieniu 3 daemonów wykonać min. 20 min obserwacji `statusd_doctor` i potwierdzić brak `REPAIR_QUEUE_STALE` w ruchu produkcyjnym. → DONE 2026-02-14 10:18 UTC (`stale_recent=0`).
 
 ## 🛠️ Aktualizacja wykonania (2026-02-14 09:12 UTC — heartbeat contract + subprocess watchdog + status PID accuracy)
 

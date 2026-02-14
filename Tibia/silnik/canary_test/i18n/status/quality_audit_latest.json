@@ -1,36 +1,17 @@
 {
-  "timestamp": "2026-02-14T10:07:28.921924Z",
+  "timestamp": "2026-02-14T10:25:25.870897Z",
   "checked_entries": 100,
-  "issues_found": 27,
+  "issues_found": 25,
   "issues_by_type": {
-    "identical_to_en_exempt": 52,
-    "identical_to_en": 27,
-    "suspicious_log_critical": 87,
-    "suspicious_log_low": 113,
+    "identical_to_en": 24,
+    "identical_to_en_exempt": 36,
+    "artifact_token": 1,
+    "suspicious_log_critical": 66,
+    "suspicious_log_low": 133,
+    "suspicious_log_high": 1,
     "suspicious_rejected_critical": 200
   },
   "issues": [
-    {
-      "key": "otclient_modules.charms.tr_64",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Curse",
-      "translated": "Curse"
-    },
-    {
-      "key": "otclient_modules.game_cyclopedia.tr_6",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Cyclopedia",
-      "translated": "Cyclopedia"
-    },
-    {
-      "key": "otclient_modules.game_cyclopedia_otui.tr_8",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Cyclopedia",
-      "translated": "Cyclopedia"
-    },
     {
       "key": "otclient_modules.player.tr_6",
       "lang": "pl",
@@ -198,6 +179,13 @@
       "type": "identical_to_en",
       "en": "Nature's Embrace",
       "translated": "Nature's Embrace"
+    },
+    {
+      "key": "npc.raymond_striker.multi_21",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "In the tavern, the pirates feel safe and plan their next strikes. Study ALL of their maps and plans lying around ...",
+      "translated": "En la taberna, los piratas se sienten seguros y planean sus próximos ataques. Estudia TODOS sus mapas y planos que hay por ahí..."
     }
   ],
   "threshold": 10,

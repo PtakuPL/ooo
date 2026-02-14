@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-14T10:04:27.634558Z",
+  "timestamp": "2026-02-14T10:35:53.808790Z",
   "priority_langs": [
     "es",
     "pl",
@@ -67,10 +67,10 @@
   ],
   "entries_total": 1245,
   "entries_by_lang": {
-    "es": 4177,
+    "es": 4129,
     "pl": 479,
-    "cs": 15470,
-    "de": 10459,
+    "cs": 15455,
+    "de": 10409,
     "fr": 10136,
     "hu": 15558,
     "it": 15283,
@@ -79,16 +79,16 @@
     "ru": 17358,
     "sk": 15627,
     "tr": 15069,
-    "ar": 18584,
-    "az": 15444,
-    "bg": 17358,
-    "bn": 16906,
-    "bs": 15645,
-    "da": 15558,
-    "el": 15534,
-    "et": 15508,
-    "fa": 16562,
-    "fi": 15540,
+    "ar": 18447,
+    "az": 15400,
+    "bg": 17316,
+    "bn": 16832,
+    "bs": 15643,
+    "da": 15538,
+    "el": 15519,
+    "et": 15478,
+    "fa": 16487,
+    "fi": 15518,
     "he": 17184,
     "hi": 17155,
     "hr": 15533,
@@ -124,7 +124,7 @@
     {
       "lang": "es",
       "json_file": "npc.json",
-      "identical_to_en": 1266,
+      "identical_to_en": 1218,
       "domain_priority": 0
     },
     {
@@ -375,14 +375,14 @@
     },
     {
       "lang": "cs",
-      "json_file": "achievements.json",
-      "identical_to_en": 131,
+      "json_file": "raids.json",
+      "identical_to_en": 126,
       "domain_priority": 9
     },
     {
       "lang": "cs",
-      "json_file": "raids.json",
-      "identical_to_en": 126,
+      "json_file": "achievements.json",
+      "identical_to_en": 116,
       "domain_priority": 9
     },
     {
@@ -514,7 +514,7 @@
     {
       "lang": "de",
       "json_file": "books.json",
-      "identical_to_en": 382,
+      "identical_to_en": 332,
       "domain_priority": 9
     },
     {
@@ -1325,7 +1325,7 @@
   "selected": {
     "lang": "es",
     "json_file": "npc.json",
-    "identical_to_en": 1266,
+    "identical_to_en": 1218,
     "domain_priority": 0
   }
 }

@@ -37,6 +37,10 @@ DAEMON_STATE_FILE="$WORK_DIR/i18n/status/guardian_daemon_state.json"
 MANUAL_START_LIMIT_FILE="$WORK_DIR/.guardian_manual_starts"
 MANUAL_START_MAX_PER_HOUR="${GUARDIAN_MANUAL_START_MAX_PER_HOUR:-3}"
 MANUAL_START_WINDOW_SEC="${GUARDIAN_MANUAL_START_WINDOW_SEC:-3600}"
+MANUAL_START_CONTEXT_TS_FILE="$WORK_DIR/.guardian_manual_context_last_ts"
+MANUAL_START_CONTEXT_LOG_INTERVAL_SEC="${GUARDIAN_MANUAL_CONTEXT_LOG_INTERVAL_SEC:-300}"
+MANUAL_START_LIMIT_LOG_TS_FILE="$WORK_DIR/.guardian_manual_limit_last_log_ts"
+MANUAL_START_LIMIT_LOG_INTERVAL_SEC="${GUARDIAN_MANUAL_LIMIT_LOG_INTERVAL_SEC:-60}"
 
 export HOME="/home/ptaku"
 export PATH="/usr/local/bin:/usr/bin:/bin:$PATH"
@@ -181,6 +185,33 @@ check_manual_start_limit() {
         return 0  # allowed
     fi
 
+    # Rate-limit context logging, żeby nie spamować guardian.log co kilka sekund.
+    local context_now context_last context_delta
+    context_now=$(date +%s)
+    context_last=$(cat "$MANUAL_START_CONTEXT_TS_FILE" 2>/dev/null || echo "0")
+    context_delta=$((context_now - ${context_last:-0}))
+    if [ "$context_delta" -ge "$MANUAL_START_CONTEXT_LOG_INTERVAL_SEC" ]; then
+        local parent_pid parent_cmd grand_pid grand_cmd
+        parent_pid="${PPID:-0}"
+        parent_cmd=""
+        grand_pid=""
+        grand_cmd=""
+        if [ -r "/proc/$parent_pid/cmdline" ]; then
+            parent_cmd=$(tr '\0' ' ' < "/proc/$parent_pid/cmdline" 2>/dev/null || echo "")
+        fi
+        if [ -r "/proc/$parent_pid/stat" ]; then
+            grand_pid=$(awk '{print $4}' "/proc/$parent_pid/stat" 2>/dev/null || echo "")
+        fi
+        if [ -n "${grand_pid:-}" ] && [ -r "/proc/$grand_pid/cmdline" ]; then
+            grand_cmd=$(tr '\0' ' ' < "/proc/$grand_pid/cmdline" 2>/dev/null || echo "")
+        fi
+        log_guardian "🧭 Manual start context: pid=$$ ppid=$parent_pid parent='${parent_cmd:-unknown}' gppid=${grand_pid:-0} grand='${grand_cmd:-unknown}'"
+        if [[ "${parent_cmd:-}" == *"systemd"* ]] || [[ "${grand_cmd:-}" == *"systemd"* ]]; then
+            log_guardian "💡 Wykryto ślad systemd-user dla source=manual. Sprawdź ~/.config/systemd/user/i18n-guardian.service i ustaw GUARDIAN_START_SOURCE=service lub wyłącz unit przy pracy przez i18n_start_all.sh."
+        fi
+        echo "$context_now" > "$MANUAL_START_CONTEXT_TS_FILE"
+    fi
+
     local now_ts cutoff_ts count=0 new_entries="" line_ts
     now_ts=$(date +%s)
     cutoff_ts=$((now_ts - MANUAL_START_WINDOW_SEC))
@@ -196,7 +227,13 @@ check_manual_start_limit() {
     fi
 
     if [ "$count" -ge "$MANUAL_START_MAX_PER_HOUR" ]; then
-        log_guardian "⛔ Manual start rate limit: $count starts in last $((MANUAL_START_WINDOW_SEC/60))min (max=$MANUAL_START_MAX_PER_HOUR). Odmowa startu."
+        local deny_last deny_delta
+        deny_last=$(cat "$MANUAL_START_LIMIT_LOG_TS_FILE" 2>/dev/null || echo "0")
+        deny_delta=$((now_ts - ${deny_last:-0}))
+        if [ "$deny_delta" -ge "$MANUAL_START_LIMIT_LOG_INTERVAL_SEC" ]; then
+            log_guardian "⛔ Manual start rate limit: $count starts in last $((MANUAL_START_WINDOW_SEC/60))min (max=$MANUAL_START_MAX_PER_HOUR). Odmowa startu."
+            echo "$now_ts" > "$MANUAL_START_LIMIT_LOG_TS_FILE"
+        fi
         write_daemon_state "blocked" "$source" "$$" "manual_rate_limit" "" "" "0"
         return 1  # denied
     fi

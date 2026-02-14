@@ -378,10 +378,10 @@
       "status": "idle"
     }
   },
-  "generated_at_utc": "2026-02-14T10:09:23Z",
+  "generated_at_utc": "2026-02-14T10:36:23Z",
   "global": {
     "en_keys_total": 53586,
-    "errors_total": 1522,
+    "errors_total": 1525,
     "files_processed_total": 6443,
     "languages_total": 54
   },
@@ -450,11 +450,11 @@
       "stage": "heartbeat_tick"
     },
     "cycle": 1,
-    "heartbeat_at_utc": "2026-02-14T10:05:58Z",
+    "heartbeat_at_utc": "2026-02-14T10:35:54Z",
     "host": "DESKTOP-338A5OQ",
     "mode": "continuous",
     "name": "i18n_worker_simple.sh",
-    "pid": 1974062,
+    "pid": 2003044,
     "status": "running",
     "version": "unknown"
   }

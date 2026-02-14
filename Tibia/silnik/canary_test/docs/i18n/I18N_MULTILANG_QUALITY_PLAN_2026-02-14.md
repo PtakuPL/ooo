@@ -5,6 +5,29 @@
 
 ---
 
+## 0b. Update wykonania (2026-02-14 11:20 UTC) — per-lang spelling S15-S17 + per-file reconcile
+
+Wykonane:
+- ✅ **S15** (`pl_unexpected_uppercase`): PL — wykrywa sytuację, gdy EN zaczyna małą literą a PL wielką (typowy błąd NPC dialogu).
+- ✅ **S16** (`fi_agglutination_extreme` + `fi_word_inflation`): FI — kontroluje ekstremalną kompresję aglutynatywną i odwrotną inflację słów.
+- ✅ **S17** (`hu_vowel_harmony`): HU — wykrywa błędy harmonii samogłoskowej w przyrostkach `-ban/-ben`, `-nak/-nek`.
+- ✅ **Per-file reconcile**: statusd MODUŁ 7c — `per_file_keys` w `i18n_file_status.json` (38 plików EN, 53 586 kluczy).
+- ✅ **30s health-check**: potwierdzone działanie `post_start_health_gate()` w `i18n_start_all.sh`.
+- ✅ **Manual trigger**: rozwiązane — guardian ma `check_manual_start_limit()` (max 3/h) + diagnostykę systemd source.
+
+## 0a. Update wykonania (2026-02-14 10:18 UTC) — runtime orchestration quality gates
+
+Wykonane:
+- ✅ `i18n_start_all.sh` ma post-start health gate (30s) dla 3 daemonów, co poprawia wiarygodność sygnałów jakościowych runtime.
+- ✅ Zdiagnozowano źródło konfliktu startu `source=manual`:
+  - `~/.config/systemd/user/i18n-guardian.service` (parent: `systemd --user`).
+- ✅ `statusd.log` potwierdził okno 20 min bez `REPAIR_QUEUE_STALE` (`stale_recent=0`), więc queue freshness jest stabilna pod bieżącą konfiguracją.
+
+Nowe TODO jakościowe:
+- ⬜ Ustalić jedno źródło orkiestracji (user-systemd vs `i18n_start_all.sh`) i usunąć równoległy start guardiana.
+- ⬜ Jeśli zostaje user-systemd: ustawić `GUARDIAN_START_SOURCE=service`, aby metryki source były semantycznie poprawne.
+- ⬜ Utrzymać monitoring `queue_freshness_ok` i heartbeat przez kolejne okna 24h.
+
 ## 0. Update wykonania (2026-02-14 09:56 UTC) — runtime quality loop stability
 
 Zrealizowane pełne zadania wspierające jakość tłumaczeń:
@@ -219,7 +242,7 @@ Zaimplementowano per-language calibrated ratio bounds w `_candidate_shape_ok()`:
 - Arabic/Hebrew: 0.30–3.0
 - Default: 0.30–4.0
 
-#### 3b. Specyficzne reguły pisowni per język (future) ⬜ — niska priorytet, kosmetyka
+#### 3b. Specyficzne reguły pisowni per język ✅ DONE 2026-02-14 — S15(PL) S16(FI) S17(HU)
 
 | Język | Specyficzna reguła | Priorytet |
 |-------|-------------------|-----------|

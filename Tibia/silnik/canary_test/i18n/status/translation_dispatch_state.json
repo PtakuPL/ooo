@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-02-14T10:02:18.187916Z",
-  "cycle_counter": 500,
-  "last_target_key": "pl:client.json",
-  "last_pending_total": 12,
+  "timestamp": "2026-02-14T10:33:06.601982Z",
+  "cycle_counter": 506,
+  "last_target_key": "es:modules.json",
+  "last_pending_total": 3,
   "last_tier": 1,
   "last_cat_priority": 9,
   "candidates_count": 37,
@@ -298,7 +298,7 @@
       "pl"
     ],
     "lang_completion": {
-      "es": 86.78,
+      "es": 87.09,
       "pl": 75.31
     }
   }

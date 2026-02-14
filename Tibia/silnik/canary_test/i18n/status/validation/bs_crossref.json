@@ -4,7 +4,7 @@
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-14T09:33:43.697230Z",
+  "checked_at": "2026-02-14T10:28:56.544018Z",
   "issues_total": 459,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -689,24 +689,6 @@
       "lang": "Invader of the Deep"
     },
     {
-      "key": "achievement.211.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Many creatures of the deep have lost their lives by your hand. Three hundred have entered the depths of eternity. You should probably fear the revenge of the Eyes of the Deep.",
-      "pl": "Wiele, dużo stwory z the I. masz I. ich lives by twój hand. Trzy sto masz I. the głębokość z wieczność. Ty a. powinien, powinna prawdopodobnie I. the zemsta z the ETak z the I..",
-      "lang": "Many creatures of the deep have lost their lives by your hand. Three hundred have entered the depths of eternity. You should probably fear the revenge of the Eyes of the Deep."
-    },
-    {
-      "key": "achievement.212.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You extinguished 500 thornfires! You were there when the Firestarters took over Shadowthorn. You saved the day - and the home of some elves which will try to kill you nonetheless. Isn't it nice to see everything restored just as it was before..?",
-      "pl": "Ty gasić 500 thornfires! Ty były there when the Firestarters took I. Shadowthorn. Ty saved the dzień - i the home z I. elves I. will I. do I. ty Nienetheless. Isn't to delikatny, subtelny do I. wszystko restored just as to był I...?",
-      "lang": "You extinguished 500 thornfires! You were there when the Firestarters took over Shadowthorn. You saved the day - and the home of some elves which will try to kill you nonetheless. Isn't it nice to see everything restored just as it was before..?"
-    },
-    {
       "key": "achievement.213.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -714,24 +696,6 @@
       "en": "Deer Hunt",
       "pl": "Jeleń I.",
       "lang": "Deer Hunt"
-    },
-    {
-      "key": "achievement.213.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You managed to kill more than four hundred white deer - it looks like you are one of the main reasons they will soon be considered extinct, way to go!",
-      "pl": "Ty managed do I. more z niż cztery sto white jeleń - to looks like Jesteś I. z the main I. oni will wkrótce, szybko być uważać wymarły, way do go!",
-      "lang": "You managed to kill more than four hundred white deer - it looks like you are one of the main reasons they will soon be considered extinct, way to go!"
-    },
-    {
-      "key": "achievement.214.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You are now the royal archfiend of the Askarak, prince slayer.",
-      "pl": "Jesteś Niew the I. archfiend z the Askarak, książę mordować.",
-      "lang": "You are now the royal archfiend of the Askarak, prince slayer."
     },
     {
       "key": "achievement.215.description",
@@ -3612,6 +3576,42 @@
       "en": "A drop of oil and you're good to go. This unique mount will roll merrily in and out of any strange place you want to visit. If you see no exit, you probably ended up in a circus ring. Ah well, the show must go on!",
       "pl": "JEDEN I. z I. i you're I. do go. I. unikalny, unikatowy I. will I. merrily w i out z dowolny dziwny I. ty I. do I.. If ty I. Nie I., ty prawdopodobnie I. up w jeden cyrk ring. Och, ach, no, o well, the I. musi go na!",
       "lang": "A drop of oil and you're good to go. This unique mount will roll merrily in and out of any strange place you want to visit. If you see no exit, you probably ended up in a circus ring. Ah well, the show must go on!"
+    },
+    {
+      "key": "achievement.398.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Gear Up",
+      "pl": "I. Up",
+      "lang": "Gear Up"
+    },
+    {
+      "key": "achievement.398.description",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Installing that control unit was a no-brainer. Now you're in control to make it walk this way or that, or to change tack at any moment if required. Your faithful walker mount obeys your every command.",
+      "pl": "Instalować that control jednostka był jeden Nie-mózg. Niew you're w control do make to I. I. way lub that, lub do change I. w dowolny chwila, moment if wymagany. Twój wierny spacerowicz I. być posłusznym, stosować się twój I. I..",
+      "lang": "Installing that control unit was a no-brainer. Now you're in control to make it walk this way or that, or to change tack at any moment if required. Your faithful walker mount obeys your every command."
+    },
+    {
+      "key": "achievement.399.description",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hunter's greeting! Your skillful use of the slingshot actually stunned a large bear. The creature is slightly dazed, but seems susceptible to your commands. Let's declare open season on all our foes!",
+      "pl": "Myśliwy powitanie! Twój skillful use z the slingshot naprawdę stunned jeden large bear. The stwór jest I. dazed, I. a. wydawać się być, wydawać się, zdawać się podatny do twój I.. Let's oznajmiać otwórz I. na wszystkie nasz MSZ, Ministerstwo Spraw Zagranicznych!",
+      "lang": "Hunter's greeting! Your skillful use of the slingshot actually stunned a large bear. The creature is slightly dazed, but seems susceptible to your commands. Let's declare open season on all our foes!"
+    },
+    {
+      "key": "achievement.400.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Lucky Horseshoe",
+      "pl": "Szczęśliwy Podkowa",
+      "lang": "Lucky Horseshoe"
     }
   ],
   "length_ratio_issues": [

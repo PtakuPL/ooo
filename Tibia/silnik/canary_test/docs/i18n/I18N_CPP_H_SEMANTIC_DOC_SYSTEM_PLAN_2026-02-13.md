@@ -6,6 +6,18 @@
 
 ---
 
+## 0i) Aktualizacja koordynacyjna (2026-02-14 10:18 UTC)
+
+Zmiany runtime/status istotne dla planu C++/H:
+- ✅ `i18n_start_all.sh` ma post-start health gate 30s (stabilność procesu po starcie).
+- ✅ Zdiagnozowano rzeczywiste źródło startów `source=manual`: user systemd unit `~/.config/systemd/user/i18n-guardian.service`.
+- ✅ Potwierdzono 20-min okno bez `REPAIR_QUEUE_STALE` (`statusd.log`), co stabilizuje kontrakt queue freshness.
+
+Nowe wymagania dla pipeline semantycznego C++/H:
+- ⬜ Dodać `orchestration_source_hint` (`start_all|user_systemd|manual_shell|unknown`) dla korelacji runtime.
+- ⬜ Dodać `post_start_stability_hint` (`pass|fail`) kompatybilny z gate 30s w `start_all`.
+- ⬜ Rozszerzyć `process_evidence` o `parent_cmdline`/`grandparent_cmdline` (throttled snapshot), bo to realnie wykryło konflikt źródeł startu.
+
 ## 0h) Aktualizacja koordynacyjna (2026-02-14 09:56 UTC)
 
 Zmiany runtime/status istotne dla planu C++/H:

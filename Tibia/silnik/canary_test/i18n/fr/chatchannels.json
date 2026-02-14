@@ -1,18 +1,18 @@
 {
-  "channel.advertising.name": "Advertising",
+  "channel.advertising.name": "[EN] Advertising",
   "channel.advertising_rook.name": "Publicité — Rookgaard",
-  "channel.english_chat.name": "English Chat",
+  "channel.english_chat.name": "[EN] English Chat",
   "channel.gamemaster.name": "Maître du jeu",
-  "channel.guild_leaders.name": "Guild Leaders",
+  "channel.guild_leaders.name": "[EN] Guild Leaders",
   "channel.help.msg_already_muted": "Ce joueur est déjà réduit au silence.",
   "channel.help.msg_muted": "Vous avez été réduit au silence dans le canal Aide pour l'avoir utilisé de manière inappropriée.",
   "channel.help.msg_not_authorized_mute": "Vous n'êtes pas autorisé à réduire ce joueur au silence.",
   "channel.help.msg_not_authorized_unmute": "Vous n'êtes pas autorisé à rétablir ce joueur.",
   "channel.help.msg_not_muted": "Ce joueur n'est pas réduit au silence.",
-  "channel.help.name": "Help",
+  "channel.help.name": "Aide",
   "channel.msg_level1_mute": "Vous ne pouvez pas parler dans les canaux tant que vous êtes au niveau 1.",
   "channel.msg_level20_premium": "Vous ne pouvez pas parler dans ce canal sauf si vous avez atteint le niveau 20 ou si votre compte a le statut premium.",
   "channel.msg_offer_cooldown": "Vous ne pouvez publier qu'une offre toutes les deux minutes.",
-  "channel.tutor.name": "Tutor",
-  "channel.world_chat.name": "World Chat"
+  "channel.tutor.name": "Tuteur",
+  "channel.world_chat.name": "Discussion mondiale"
 }

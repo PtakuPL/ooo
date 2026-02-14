@@ -1,7 +1,7 @@
 {
   "otclient_data.30_minimap_otui.tr_1": "Annuler",
   "otclient_data.30_minimap_otui.tr_2": "OK",
-  "otclient_data.30_minimap_otui.tr_3": "Description",
+  "otclient_data.30_minimap_otui.tr_3": "[EN] Description",
   "otclient_data.30_minimap_otui.tr_4": "Position",
   "otclient_data.30_minimap_otui.tr_5": "Créer une marque sur la carte",
   "otclient_data.30_minimap_otui.tr_6": "Centrer",
@@ -21,7 +21,7 @@
   "otclient_data.40_minimap_otui.tr_1": "Maintenez le bouton gauche de la souris pour vous déplacer\nFaites défiler la molette pour zoomer\nCliquez droit pour créer des marques sur la carte\nAppuyez sur Ctrl+Shift+M pour voir toute la carte du jeu",
   "otclient_data.40_minimap_otui.tr_2": "Annuler",
   "otclient_data.40_minimap_otui.tr_3": "OK",
-  "otclient_data.40_minimap_otui.tr_4": "Description",
+  "otclient_data.40_minimap_otui.tr_4": "[EN] Description",
   "otclient_data.40_minimap_otui.tr_5": "Position",
   "otclient_data.40_minimap_otui.tr_6": "Créer une marque sur la carte",
   "otclient_data.40_minimap_otui.tr_7": "Centrer",

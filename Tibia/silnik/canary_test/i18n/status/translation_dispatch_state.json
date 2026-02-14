@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-02-14T11:29:08.483413Z",
-  "cycle_counter": 517,
-  "last_target_key": "es:server.json",
-  "last_pending_total": 1972,
+  "timestamp": "2026-02-14T11:46:45.579695Z",
+  "cycle_counter": 520,
+  "last_target_key": "pl:quests.json",
+  "last_pending_total": 10,
   "last_tier": 1,
-  "last_cat_priority": 3,
-  "candidates_count": 40,
-  "active_candidates_count": 34,
+  "last_cat_priority": 5,
+  "candidates_count": 43,
+  "active_candidates_count": 37,
   "skipped_backoff": 6,
   "skipped_guard_fail": 0,
   "guard_fail_blacklist": {},
@@ -300,8 +300,8 @@
       "pl"
     ],
     "lang_completion": {
-      "es": 83.84,
-      "pl": 74.41
+      "es": 77.81,
+      "pl": 72.91
     }
   }
 }

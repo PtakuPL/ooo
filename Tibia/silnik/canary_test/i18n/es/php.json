@@ -1,5 +1,5 @@
 {
-  "php.accounts.text1": "col-12 col-sm-12 col-lg-10",
+  "php.accounts.text1": "[EN] col-12 col-sm-12 col-lg-10",
   "php.accounts.text2": "tarjeta información-de-la-tarjeta-contorno-de-la-tarjeta",
   "php.accounts.text3": "tabla acc_datatable tabla rayada tabla bordeada tabla responsiva d-md-table",
   "php.accounts.text4": "btn btn-éxito btn-sm",
@@ -14,7 +14,7 @@
   "php.mailer.text3": "$success correos enviados.",
   "php.mailer.text4": "$failed correos fallidos.",
   "php.menus.text1": "Esta plantilla no soporta la reinstalación de menús.",
-  "php.menus.text2": "col-md-12 col-lg-6",
+  "php.menus.text2": "[EN] col-md-12 col-lg-6",
   "php.menus.text3": "tarjeta información-de-la-tarjeta-contorno-de-la-tarjeta",
   "php.menus.text4": "estado-ui-predeterminado",
   "php.menus.text5": "btn btn-peligro flotador-derecha",
@@ -25,7 +25,7 @@
   "php.monsters.text3": "si el monstruo usa hechizo de prisa",
   "php.news.text1": ". PREFIJO_TABLA.",
   "php.players.text1": "La vocación con este ID no existe.",
-  "php.players.text2": "col-12 col-sm-12 col-lg-10",
+  "php.players.text2": "[EN] col-12 col-sm-12 col-lg-10",
   "php.players.text3": "tarjeta información-de-la-tarjeta-contorno-de-la-tarjeta",
   "php.players.text4": "[EN] player_datatable table table-striped table-bordered table-responsive d-md-table",
   "php.players.text5": "btn btn-éxito btn-sm",
@@ -34,12 +34,12 @@
   "php.plugins.text3": ", y estás usando la versión",
   "php.plugins.text4": "para ser instalado.",
   "php.plugins.text5": "que exista en la base de datos.",
-  "php.rfc6238.text1": "234567QWERTYUIOPASDFGHJKLZXCVBNM",
+  "php.rfc6238.text1": "[EN] 234567QWERTYUIOPASDFGHJKLZXCVBNM",
   "php.rfc6238.text2": "desde $counter <br/>",
   "php.rfc6238.text3": "Antes del cálculo HMAC, rellenar con ceros a la izquierda hasta 8 caracteres.<br/>",
   "php.rfc6238.text4": "convirtiendo hash hexadecimal en caracteres<br/>",
   "php.server_status.text1": "fas fa-círculo-de-exclamación-texto-peligro",
-  "php.server_status.text2": "col-md-6 col-lg-6",
+  "php.server_status.text2": "[EN] col-md-6 col-lg-6",
   "php.server_status.text3": "tarjeta información-de-la-tarjeta-contorno-de-la-tarjeta",
   "php.server_status.text4": "borde-inferior-0 del encabezado de la tarjeta",
   "php.server_status.text5": "peso-fuente-negrita m-0",
@@ -57,5 +57,5 @@
   "php.validator.text2": "El nombre del personaje es demasiado largo. Longitud máxima <b>$maxLength</b> caracteres.",
   "php.validator.text3": "Formato de nombre inválido. Usa solo A-Z, espacios y .",
   "php.validator.text4": "Formato de nombre inválido. Usa solo A-Z, espacios y .",
-  "php.validator.text5": "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM0123456789-"
+  "php.validator.text5": "[EN] qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM0123456789-"
 }

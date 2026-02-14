@@ -1,11 +1,12 @@
 {
+  "cpp.account.str1": "[EN] REMOVE Coins",
   "cpp.augment.augments_inspect": "{0}.",
   "cpp.augment.augments_label": "\nAumentos: ({0}).",
   "cpp.augment.damage": "daño",
-  "cpp.augment.format_base": "{0} -> {1:+}% {2} {3}",
-  "cpp.augment.format_cooldown": "{0} -> {1}{2}s {3}",
-  "cpp.augment.format_no_value": "{0} -> {1}",
-  "cpp.augment.format_with_value": "{0} -> {1:+}% {2}",
+  "cpp.augment.format_base": "[EN] {0} -> {1:+}% {2} {3}",
+  "cpp.augment.format_cooldown": "[EN] {0} -> {1}{2}s {3}",
+  "cpp.augment.format_no_value": "[EN] {0} -> {1}",
+  "cpp.augment.format_with_value": "[EN] {0} -> {1:+}% {2}",
   "cpp.augment.healing": "curación",
   "cpp.badge.name_1": "Héroe Novato",
   "cpp.badge.name_10": "Jugador Global (Grado 2)",
@@ -469,7 +470,7 @@
   "cpp.player.look.party_prefix_other": "{0} en un grupo con",
   "cpp.player.look.party_prefix_self": "Tu grupo tiene",
   "cpp.player.look.self": "a ti mismo",
-  "cpp.player.look.verb_loyalty": "{0} {1} {2}.",
+  "cpp.player.look.verb_loyalty": "[EN] {0} {1} {2}.",
   "cpp.player.look.verb_role": "{0} {1}.",
   "cpp.player.look.verb_vip": "{0}VIP.",
   "cpp.player.look.you_are": "Eres {0}.",
@@ -875,5 +876,6 @@
   "cpp.weapon.distance": "distancia",
   "cpp.weapon.missile": "misil",
   "cpp.weapon.sword": "espada",
-  "cpp.weapon.wand": "varita"
+  "cpp.weapon.wand": "varita",
+  "cpp.zone.str1": "[EN] Area(from: {}, to: {})"
 }

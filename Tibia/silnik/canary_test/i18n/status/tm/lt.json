@@ -3878,5 +3878,1453 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-14T06:48:39.331054Z"
+  },
+  "item.194.name": {
+    "src_hash": "c90b1198f689dd950d51142e65a44c81",
+    "text": "purvas",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:37:12.387560Z"
+  },
+  "item.2025.name": {
+    "src_hash": "a643f0c67dc8358d762c267269f52f9f",
+    "text": "statula",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:37:12.390402Z"
+  },
+  "item.2026.name": {
+    "src_hash": "a643f0c67dc8358d762c267269f52f9f",
+    "text": "statula",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:37:12.390724Z"
+  },
+  "item.2059.name": {
+    "src_hash": "a643f0c67dc8358d762c267269f52f9f",
+    "text": "statula",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:37:12.391840Z"
+  },
+  "item.2060.name": {
+    "src_hash": "a643f0c67dc8358d762c267269f52f9f",
+    "text": "statula",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:37:12.392076Z"
+  },
+  "item.2061.name": {
+    "src_hash": "a643f0c67dc8358d762c267269f52f9f",
+    "text": "statula",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:37:12.392301Z"
+  },
+  "item.2595.name": {
+    "src_hash": "9269e34558de79bfe1e38796e2e9cd9e",
+    "text": "barsuko kailis",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:37:12.415749Z"
+  },
+  "item.305.name": {
+    "src_hash": "c90b1198f689dd950d51142e65a44c81",
+    "text": "purvas",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:37:12.439507Z"
+  },
+  "item.4060.name": {
+    "src_hash": "a643f0c67dc8358d762c267269f52f9f",
+    "text": "statula",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:37:12.496264Z"
+  },
+  "item.7352.name": {
+    "src_hash": "c90b1198f689dd950d51142e65a44c81",
+    "text": "purvas",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:37:12.524681Z"
+  },
+  "item.7764.name": {
+    "src_hash": "c90b1198f689dd950d51142e65a44c81",
+    "text": "purvas",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:37:12.527423Z"
+  },
+  "item.8390.name": {
+    "src_hash": "a643f0c67dc8358d762c267269f52f9f",
+    "text": "statula",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:37:12.531510Z"
+  },
+  "item.903.name": {
+    "src_hash": "9269e34558de79bfe1e38796e2e9cd9e",
+    "text": "barsuko kailis",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:37:12.533987Z"
+  },
+  "item.9258.name": {
+    "src_hash": "c90b1198f689dd950d51142e65a44c81",
+    "text": "purvas",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:37:12.536496Z"
+  },
+  "item.9442.name": {
+    "src_hash": "c90b1198f689dd950d51142e65a44c81",
+    "text": "purvas",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:37:12.537583Z"
+  },
+  "item.9445.name": {
+    "src_hash": "c90b1198f689dd950d51142e65a44c81",
+    "text": "purvas",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:37:12.537817Z"
+  },
+  "item.950.name": {
+    "src_hash": "c90b1198f689dd950d51142e65a44c81",
+    "text": "purvas",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:37:12.538124Z"
+  },
+  "item.952.name": {
+    "src_hash": "c90b1198f689dd950d51142e65a44c81",
+    "text": "purvas",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:37:12.538427Z"
+  },
+  "item.10327.name": {
+    "src_hash": "48eaac8ad0968067e11a82a3b5be2c77",
+    "text": "minotaurų kuprinė",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:37:16.783896Z"
+  },
+  "item.10328.name": {
+    "src_hash": "aeb243f8b7ef666cea312e9a74a0263d",
+    "text": "prisirpusių ryžių krūva",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:37:16.784234Z"
+  },
+  "item.10329.name": {
+    "src_hash": "22f46e83d061e0b5a2f3c98e18cbdf1f",
+    "text": "ryžių rutuliukas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:37:16.784533Z"
+  },
+  "item.10330.name": {
+    "src_hash": "e21da8d48c54f87221c2a8a7bce7fb07",
+    "text": "nugaišęs žvėris",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:37:16.784857Z"
+  },
+  "item.10331.name": {
+    "src_hash": "e21da8d48c54f87221c2a8a7bce7fb07",
+    "text": "nugaišęs žvėris",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:37:16.785130Z"
+  },
+  "item.10332.name": {
+    "src_hash": "e21da8d48c54f87221c2a8a7bce7fb07",
+    "text": "nugaišęs žvėris",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:37:20.269644Z"
+  },
+  "item.10333.name": {
+    "src_hash": "e21da8d48c54f87221c2a8a7bce7fb07",
+    "text": "nugaišęs žvėris",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:37:20.270025Z"
+  },
+  "item.10334.name": {
+    "src_hash": "959ce8c7e2a761366662cf50e48fffc8",
+    "text": "miręs orkas plėšikas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:37:20.270482Z"
+  },
+  "item.10335.name": {
+    "src_hash": "959ce8c7e2a761366662cf50e48fffc8",
+    "text": "miręs orkas plėšikas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:37:20.270844Z"
+  },
+  "item.10336.name": {
+    "src_hash": "00574753828ebd4a8328210d1a29c015",
+    "text": "didelė kaulų krūva",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:37:20.271221Z"
+  },
+  "item.10337.name": {
+    "src_hash": "959ce8c7e2a761366662cf50e48fffc8",
+    "text": "miręs orkas plėšikas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:37:27.505616Z"
+  },
+  "item.10338.name": {
+    "src_hash": "5eb2ca52dc59da581fca5b25e579ac8b",
+    "text": "Kalėdų senelio meškiukas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:37:27.505936Z"
+  },
+  "item.10339.name": {
+    "src_hash": "566623d8747d4935f19d3c8362cd3a58",
+    "text": "sniego senelis lėlė",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:37:27.506233Z"
+  },
+  "item.10340.name": {
+    "src_hash": "64917692a7bedf176cceae410ee11da9",
+    "text": "sunkus kamuolys",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:37:27.506529Z"
+  },
+  "item.10341.name": {
+    "src_hash": "fd84dd09008911525e1746d9bec49f1c",
+    "text": "fenikso žavesys",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:37:27.506804Z"
+  },
+  "item.10342.name": {
+    "src_hash": "04a9ca5419cb100469a57513e556202c",
+    "text": "vienybės žavesio",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:37:35.436276Z"
+  },
+  "item.10343.name": {
+    "src_hash": "171b741cf342af4a9f9d241e4286ccf6",
+    "text": "dvasinis žavesys",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:37:35.436570Z"
+  },
+  "item.10344.name": {
+    "src_hash": "60eb3ca3c3f46a5099b3491c38ef0c1c",
+    "text": "dvynių saulės žavesys",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:37:35.436848Z"
+  },
+  "item.10345.name": {
+    "src_hash": "742808b0c9bfa77bd5afb7854bd9941a",
+    "text": "vienatvės žavesio",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:37:35.437111Z"
+  },
+  "item.10346.name": {
+    "src_hash": "eaea1d7900d2ab6609b09851d135b4fc",
+    "text": "Kalėdų senelio kuprinė",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:37:35.437373Z"
+  },
+  "item.10347.name": {
+    "src_hash": "924bf7dd060accc008c33cd6cbe3ea15",
+    "text": "drakono gobelenas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:37:40.839055Z"
+  },
+  "item.10352.name": {
+    "src_hash": "dc444778e263446b46a238da2a40cf90",
+    "text": "miręs driežas aukštasis sargybinis",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:37:40.839421Z"
+  },
+  "item.10353.name": {
+    "src_hash": "dc444778e263446b46a238da2a40cf90",
+    "text": "miręs driežas aukštasis sargybinis",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:37:40.839757Z"
+  },
+  "item.10354.name": {
+    "src_hash": "dc444778e263446b46a238da2a40cf90",
+    "text": "miręs driežas aukštasis sargybinis",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:37:40.840091Z"
+  },
+  "item.10355.name": {
+    "src_hash": "dc444778e263446b46a238da2a40cf90",
+    "text": "miręs driežas aukštasis sargybinis",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:37:40.840418Z"
+  },
+  "item.10356.name": {
+    "src_hash": "8db55d6dd4b4d7a863f35a7bd5d2cbcf",
+    "text": "miręs driežas legionierius",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:37:46.082731Z"
+  },
+  "item.10357.name": {
+    "src_hash": "8db55d6dd4b4d7a863f35a7bd5d2cbcf",
+    "text": "miręs driežas legionierius",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:37:46.083082Z"
+  },
+  "item.10358.name": {
+    "src_hash": "8db55d6dd4b4d7a863f35a7bd5d2cbcf",
+    "text": "miręs driežas legionierius",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:37:46.083412Z"
+  },
+  "item.10359.name": {
+    "src_hash": "8db55d6dd4b4d7a863f35a7bd5d2cbcf",
+    "text": "miręs driežas legionierius",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:37:46.083739Z"
+  },
+  "item.10360.name": {
+    "src_hash": "2d83b2f886580b19e66f50544a65a252",
+    "text": "miręs driežas drakonas kunigas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:37:46.084080Z"
+  },
+  "item.10361.name": {
+    "src_hash": "2d83b2f886580b19e66f50544a65a252",
+    "text": "miręs driežas drakonas kunigas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:37:49.264953Z"
+  },
+  "item.10362.name": {
+    "src_hash": "2d83b2f886580b19e66f50544a65a252",
+    "text": "miręs driežas drakonas kunigas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:37:49.265818Z"
+  },
+  "item.10363.name": {
+    "src_hash": "2d83b2f886580b19e66f50544a65a252",
+    "text": "miręs driežas drakonas kunigas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:37:49.266661Z"
+  },
+  "item.10364.name": {
+    "src_hash": "187e6653e599128a8d956cc6115c5f7b",
+    "text": "negyvas driežas zaogun",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:37:49.267496Z"
+  },
+  "item.10365.name": {
+    "src_hash": "187e6653e599128a8d956cc6115c5f7b",
+    "text": "negyvas driežas zaogun",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:37:49.268317Z"
+  },
+  "item.10366.name": {
+    "src_hash": "187e6653e599128a8d956cc6115c5f7b",
+    "text": "negyvas driežas zaogun",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:38:56.911850Z"
+  },
+  "item.10367.name": {
+    "src_hash": "187e6653e599128a8d956cc6115c5f7b",
+    "text": "negyvas driežas zaogun",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:38:56.912230Z"
+  },
+  "item.22626.name": {
+    "src_hash": "00574753828ebd4a8328210d1a29c015",
+    "text": "didelė kaulų krūva",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:38:56.949367Z"
+  },
+  "item.10368.name": {
+    "src_hash": "e74161b5e01782304088bd60420f9d2f",
+    "text": "pasirinktas negyvas driežas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:38:59.236985Z"
+  },
+  "item.10369.name": {
+    "src_hash": "e74161b5e01782304088bd60420f9d2f",
+    "text": "pasirinktas negyvas driežas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:38:59.237327Z"
+  },
+  "item.10370.name": {
+    "src_hash": "e74161b5e01782304088bd60420f9d2f",
+    "text": "pasirinktas negyvas driežas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:38:59.237646Z"
+  },
+  "item.10371.name": {
+    "src_hash": "e74161b5e01782304088bd60420f9d2f",
+    "text": "pasirinktas negyvas driežas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:38:59.237960Z"
+  },
+  "item.10382.name": {
+    "src_hash": "1c580e01169b6923893d0655edc491ed",
+    "text": "miręs amžinas globėjas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:38:59.238429Z"
+  },
+  "item.10383.name": {
+    "src_hash": "1c580e01169b6923893d0655edc491ed",
+    "text": "miręs amžinas globėjas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:39:05.544570Z"
+  },
+  "item.10384.name": {
+    "src_hash": "816a83cc3d5fc8ccdedf8425b1ea8bff",
+    "text": "Zaoan šarvai",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:39:05.545118Z"
+  },
+  "item.10385.name": {
+    "src_hash": "8d6eab3e3370e0ac3a313988aec4e8dc",
+    "text": "Zaoan šalmas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:39:05.545612Z"
+  },
+  "item.10386.name": {
+    "src_hash": "97316cd24185e3cc363bf98c334b4988",
+    "text": "Zaoan batai",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:39:05.546069Z"
+  },
+  "item.10387.name": {
+    "src_hash": "411591a55c3dee7a454ad2f2113d03dd",
+    "text": "Zaoan kojos",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:39:05.546583Z"
+  },
+  "item.10388.name": {
+    "src_hash": "373afc213a9bc8b34a14a6cb3d1cadba",
+    "text": "drakinata",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:39:12.986067Z"
+  },
+  "item.10389.name": {
+    "src_hash": "a29bac723ca2d59ed78a2d715e17e92f",
+    "text": "sai",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:39:12.986412Z"
+  },
+  "item.10390.name": {
+    "src_hash": "4b0ec4077ef1975b9fbb4a9e27217e26",
+    "text": "Zaoan kardas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:39:12.986964Z"
+  },
+  "item.10391.name": {
+    "src_hash": "14d0ab7dd6dbb7192ef42e58e739a6e5",
+    "text": "drachaku",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:39:12.987238Z"
+  },
+  "item.10392.name": {
+    "src_hash": "72736292655d59d37b2a8280704ebe84",
+    "text": "dvigubi kabliukai",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:39:12.987572Z"
+  },
+  "item.10393.name": {
+    "src_hash": "0ce83eac10c6b8732ecd5c064e097959",
+    "text": "mirusi raudojanti našlė",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:39:17.652111Z"
+  },
+  "item.10394.name": {
+    "src_hash": "0ce83eac10c6b8732ecd5c064e097959",
+    "text": "mirusi raudojanti našlė",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:39:17.652460Z"
+  },
+  "item.10395.name": {
+    "src_hash": "0ce83eac10c6b8732ecd5c064e097959",
+    "text": "mirusi raudojanti našlė",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:39:17.652824Z"
+  },
+  "item.10396.name": {
+    "src_hash": "0ce83eac10c6b8732ecd5c064e097959",
+    "text": "mirusi raudojanti našlė",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:39:17.653135Z"
+  },
+  "item.10397.name": {
+    "src_hash": "fc303c85cdb1ddc7c475eca3a9cca889",
+    "text": "audėjo lazdelės antgalis",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:39:17.653437Z"
+  },
+  "item.10398.name": {
+    "src_hash": "2f4f05f4348d41e7ac2442e1e427d908",
+    "text": "draken trofėjus",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:39:22.682743Z"
+  },
+  "item.10399.name": {
+    "src_hash": "4c92a9cd5d52b279887263588ebad6ed",
+    "text": "miręs drakenas burtininkas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:39:22.683296Z"
+  },
+  "item.104.name": {
+    "src_hash": "88336b5bb2a1cc21bac7cf33fd451270",
+    "text": "smėlio",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:39:22.683789Z"
+  },
+  "item.10400.name": {
+    "src_hash": "4c92a9cd5d52b279887263588ebad6ed",
+    "text": "miręs drakenas burtininkas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:39:22.684327Z"
+  },
+  "item.10401.name": {
+    "src_hash": "4c92a9cd5d52b279887263588ebad6ed",
+    "text": "miręs drakenas burtininkas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:39:22.684839Z"
+  },
+  "item.10402.name": {
+    "src_hash": "4c92a9cd5d52b279887263588ebad6ed",
+    "text": "miręs drakenas burtininkas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:39:29.666390Z"
+  },
+  "item.10403.name": {
+    "src_hash": "069de0f56ab51747f5b348ac57227b3a",
+    "text": "negyvų vabzdžių būrys",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:39:29.666807Z"
+  },
+  "item.10404.name": {
+    "src_hash": "c5f29af5afa5636ffdff53d9ce3b3025",
+    "text": "kaulo pečių plokštelė",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:39:29.667152Z"
+  },
+  "item.10405.name": {
+    "src_hash": "f05755063c0050b297a00ecab83f0853",
+    "text": "šildomosios riešinės",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:39:29.667487Z"
+  },
+  "item.10406.name": {
+    "src_hash": "0739dcaab1d75cf7d17d46c0bb618068",
+    "text": "Zaoan alebarda",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:39:29.667972Z"
+  },
+  "item.10407.name": {
+    "src_hash": "80ec2c03679c49d83f14b2a5ab6774d1",
+    "text": "gauruota uodega",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:39:36.780012Z"
+  },
+  "item.10408.name": {
+    "src_hash": "3c57a801a9878a44911c510daf3c657b",
+    "text": "spygliuotas geležinis rutulys",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:39:36.780397Z"
+  },
+  "item.10409.name": {
+    "src_hash": "9b2f51f51291db08077f0e4e3138daf6",
+    "text": "sugadinta vėliava",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:39:36.780678Z"
+  },
+  "item.10410.name": {
+    "src_hash": "8b6105d39641aec65eb210146c2a9dff",
+    "text": "prakeikti pečių smaigaliai",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:39:36.781005Z"
+  },
+  "item.10411.name": {
+    "src_hash": "f70fb225acc1a2f1b3f13fd8b23e5224",
+    "text": "našlės apatiniai žandikauliai",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:39:36.781386Z"
+  },
+  "item.10412.name": {
+    "src_hash": "65fcef45c06f46acf04beb44be6183d1",
+    "text": "aimanuojantis našlės karoliai",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:39:44.565188Z"
+  },
+  "item.10413.name": {
+    "src_hash": "68421639c2314148b312f297c3d32219",
+    "text": "zaogun vėliava",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:39:44.565487Z"
+  },
+  "item.10414.name": {
+    "src_hash": "02fdab6560da7f08fbaeecf568e75999",
+    "text": "zaogun antpečių",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:39:44.565817Z"
+  },
+  "item.10415.name": {
+    "src_hash": "66996fdb9c7d5427e9341d69c8f9bc8f",
+    "text": "aukštosios sargybos vėliava",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:39:44.566166Z"
+  },
+  "item.10416.name": {
+    "src_hash": "96fd8e4cf88cda574e9cfd192388083e",
+    "text": "aukštos apsaugos antpečiai",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:39:44.566598Z"
+  },
+  "item.10417.name": {
+    "src_hash": "89b865660121329f1ee0db2a5d1976ec",
+    "text": "legionierių vėliavos",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:39:51.714551Z"
+  },
+  "item.10418.name": {
+    "src_hash": "d593d0a19615dc4c24fbc119a550baf8",
+    "text": "sulaužyta alebarda",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:39:51.714873Z"
+  },
+  "item.10419.name": {
+    "src_hash": "74f78586d6fd0d0de41866624ad9ced6",
+    "text": "driežo trofėjus",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:39:51.715172Z"
+  },
+  "item.10420.name": {
+    "src_hash": "fa14c1bb1c9e6ad59579cdc98f186817",
+    "text": "suakmenėjęs riksmas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:39:51.715465Z"
+  },
+  "item.10421.name": {
+    "src_hash": "892f066dfda2adad8d911f1f7f8e43f3",
+    "text": "šlykštus trofėjus",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:39:51.715762Z"
+  },
+  "item.10422.name": {
+    "src_hash": "2228e267716237285cc48ac484eb8226",
+    "text": "molio gumulas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:39:59.456572Z"
+  },
+  "item.10423.name": {
+    "src_hash": "77518421f3f47ddf591cc4bb148eb6d6",
+    "text": "grubaus molio statula",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:39:59.456959Z"
+  },
+  "item.10424.name": {
+    "src_hash": "cec123d837717bdd25177e3ed889c150",
+    "text": "molinė statula",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:39:59.457271Z"
+  },
+  "item.10425.name": {
+    "src_hash": "1641878a2ac639fad305524bc7cc7ad4",
+    "text": "graži molinė statula",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:39:59.457686Z"
+  },
+  "item.10426.name": {
+    "src_hash": "2148736474d255251078a24acc20d47a",
+    "text": "marmurinės uolos gabalas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:39:59.458051Z"
+  },
+  "item.10427.name": {
+    "src_hash": "18f79a0dc92b0fba95f78e3e8c79ab7d",
+    "text": "grubaus marmuro statula",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:40:06.135342Z"
+  },
+  "item.10428.name": {
+    "src_hash": "6b6254d414daf48feae7bb9a91577fd2",
+    "text": "marmuro statula",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:40:06.135650Z"
+  },
+  "item.10429.name": {
+    "src_hash": "164397552df798eb4589e1f2462d9118",
+    "text": "graži marmurinė statula",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:40:06.136139Z"
+  },
+  "item.10430.name": {
+    "src_hash": "4c748764756b140ead5b58a89ccadbc3",
+    "text": "miręs teramitas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:40:06.136425Z"
+  },
+  "item.10431.name": {
+    "src_hash": "4c748764756b140ead5b58a89ccadbc3",
+    "text": "miręs teramitas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:40:06.136689Z"
+  },
+  "item.10432.name": {
+    "src_hash": "4c748764756b140ead5b58a89ccadbc3",
+    "text": "miręs teramitas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:40:12.027193Z"
+  },
+  "item.10433.name": {
+    "src_hash": "4c748764756b140ead5b58a89ccadbc3",
+    "text": "miręs teramitas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:40:12.027611Z"
+  },
+  "item.10438.name": {
+    "src_hash": "16d1b0990d1ea1f0119381f3a4828356",
+    "text": "burtininko chalatas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:40:12.027932Z"
+  },
+  "item.10439.name": {
+    "src_hash": "d0077c229b114793d62729c673aac609",
+    "text": "Zaoan chalatas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:40:12.028381Z"
+  },
+  "item.10440.name": {
+    "src_hash": "c6990700341a365232d26373a7a2adf5",
+    "text": "negyvas smiltainis",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:40:12.028697Z"
+  },
+  "item.10441.name": {
+    "src_hash": "c6990700341a365232d26373a7a2adf5",
+    "text": "negyvas smiltainis",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:40:16.386776Z"
+  },
+  "item.10442.name": {
+    "src_hash": "c6990700341a365232d26373a7a2adf5",
+    "text": "negyvas smiltainis",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:40:16.387125Z"
+  },
+  "item.10443.name": {
+    "src_hash": "c6990700341a365232d26373a7a2adf5",
+    "text": "negyvas smiltainis",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:40:16.387432Z"
+  },
+  "item.10444.name": {
+    "src_hash": "81198ad0f1cd58f53df6b4dfe6997971",
+    "text": "drakono kunigo lazdelės antgalis",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:40:16.387986Z"
+  },
+  "item.10445.name": {
+    "src_hash": "f168c3c458b8697d525bb8f2699e8bdc",
+    "text": "užmuštas baisus drakonas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:40:16.388336Z"
+  },
+  "item.10446.name": {
+    "src_hash": "f168c3c458b8697d525bb8f2699e8bdc",
+    "text": "užmuštas baisus drakonas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:40:20.999363Z"
+  },
+  "item.10447.name": {
+    "src_hash": "f168c3c458b8697d525bb8f2699e8bdc",
+    "text": "užmuštas baisus drakonas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:40:20.999733Z"
+  },
+  "item.10448.name": {
+    "src_hash": "f168c3c458b8697d525bb8f2699e8bdc",
+    "text": "užmuštas baisus drakonas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:40:21.000061Z"
+  },
+  "item.10449.name": {
+    "src_hash": "22144a797e243675e4cc54876b6c57c2",
+    "text": "siaubinga drakono galva",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:40:21.000362Z"
+  },
+  "item.10450.name": {
+    "src_hash": "7249331cf791c331edf1f26d29b2d8c3",
+    "text": "negyva širdis",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:40:21.000651Z"
+  },
+  "item.10451.name": {
+    "src_hash": "2ddee7bbac20d21e171770ff12d78c71",
+    "text": "nefrito skrybėlę",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:40:29.051015Z"
+  },
+  "item.10452.name": {
+    "src_hash": "3489389a8b235b82417495b5502cc1f8",
+    "text": "teramito apvalkalas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:40:29.051435Z"
+  },
+  "item.10453.name": {
+    "src_hash": "bfd2d0e703686e5b847b792f3965af5f",
+    "text": "teramito kiaušiniai",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:40:29.051753Z"
+  },
+  "item.10454.name": {
+    "src_hash": "c080e1743a7cb74bcb29daa20e48a5e3",
+    "text": "teramito kojos",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:40:29.052034Z"
+  },
+  "item.10455.name": {
+    "src_hash": "05ee341836be8d907939591b79d9d7d3",
+    "text": "lance vabalo kiautas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:40:29.052366Z"
+  },
+  "item.10456.name": {
+    "src_hash": "dbfb2b19f62a7a58162f63d78fb9b1fd",
+    "text": "sandcrawler apvalkalas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:40:32.850150Z"
+  },
+  "item.10457.name": {
+    "src_hash": "426da76118cd7c279f4367519cca1254",
+    "text": "vabalų karoliai",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:40:32.850776Z"
+  },
+  "npc.canary.farewell_msg_1": {
+    "src_hash": "588e73837fba9553ffca81df889548ec",
+    "text": "Taip, atsisveikink ir daugiau nebegrįžk!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:42:20.371229Z"
+  },
+  "npc.a_majestic_warwolf.greet_msg_1": {
+    "src_hash": "160a760ec699bf89e2f96e9d88ffd79d",
+    "text": "Įdomu. Žmogus, galintis kalbėti vilkų kalba.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:42:26.808911Z"
+  },
+  "npc.a_majestic_warwolf.say_2": {
+    "src_hash": "54c2abbaf72a16f3d61ec9bd34db18a9",
+    "text": "Iš jūsų akių matau, kad esate sąžiningas ir draugiškas žmogus, |PLAYERNAME|. Buvai pakankamai kantrus, kad išmoktum mūsų kalbą, ir aš tau įteiksiu ypatingą dovaną. Ar priimsi?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:42:26.810091Z"
+  },
+  "npc.a_majestic_warwolf.say_female": {
+    "src_hash": "7928f8ebb02a6a5db452e977f072e83e",
+    "text": "Nuo šiol būsite žinoma kaip |PLAYERNAME|, vilkų mergaitė. Būsite greitas ir protingas kaip Morgraras, didysis baltas vilkas. Jis vadovaus tavo keliu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:42:26.810883Z"
+  },
+  "npc.a_majestic_warwolf.say_male": {
+    "src_hash": "5470632dca3f8c21e5d8e4a36fcb615f",
+    "text": "Nuo šiol būsite žinomas kaip |PLAYERNAME|, lokio karys. Būsite stiprus ir išdidus kaip Angros, didysis tamsusis lokys. Jis vadovaus tavo keliu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:42:26.811740Z"
+  },
+  "npc.a_prisoner.farewell_msg_1": {
+    "src_hash": "8557dbd5d85d1392ab6058414b7f54db",
+    "text": "Viso gero! Nepamirškite apie matematikos paslaptis.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:42:26.812227Z"
+  },
+  "npc.a_prisoner.greet_msg_1": {
+    "src_hash": "c2302e70e1540e3337142630f2b38aaf",
+    "text": "A? Ką? Aš matau! Oho! Ne mino. Ar jie {capture} taip pat buvo jums?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:42:34.283565Z"
+  },
+  "npc.a_prisoner.say_1": {
+    "src_hash": "23469a671f164a026ef690d3d04bfa01",
+    "text": "Puiki mįslė, ar ne? Jei gali pasakyti teisingą atsakymą, \\z aš tau kai ką duosiu. Hehehe!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:42:34.284687Z"
+  },
+  "npc.a_prisoner.say_10": {
+    "src_hash": "47bc194e64dd30781fd50c51644e8b18",
+    "text": "Puiki mįslė, ar ne? Jei gali pasakyti teisingą atsakymą, aš tau kai ką duosiu. Hehehe!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:42:34.285597Z"
+  },
+  "npc.a_prisoner.say_11": {
+    "src_hash": "86b05ee12a2b0288b0178cd30e0137d1",
+    "text": "Mano siurrealistiniai skaičiai pagrįsti stulbinančiais faktais. Ar jus domina matematikos paslaptis?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:42:34.286495Z"
+  },
+  "npc.a_prisoner.say_12": {
+    "src_hash": "e9c7840af52dabe70fe6cdd2a222b32b",
+    "text": "Manau, kad jūs nebendraujate su savimi, grįžkite, jei įsijaučiate į savo jausmus.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:42:34.287110Z"
+  },
+  "npc.a_prisoner.say_2": {
+    "src_hash": "c6ac9cb997c9abda82981ec24a71ed9b",
+    "text": "Mano siurrealistiniai skaičiai pagrįsti stulbinančiais faktais. \\z Ar jus domina matematikos paslaptis?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:42:42.048959Z"
+  },
+  "npc.a_prisoner.say_3": {
+    "src_hash": "2e3980dced5c07d3219b1b4334ce365a",
+    "text": "Pirmiausia gaukite daugiau obuolių!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:42:42.049402Z"
+  },
+  "npc.a_prisoner.say_6": {
+    "src_hash": "52b2c5109081a476251c1a3b2f5bd850",
+    "text": "Tada imk ir būk laimingas – arba mirti, hehe.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:42:42.049867Z"
+  },
+  "npc.a_prisoner.say_8": {
+    "src_hash": "71d8c06c321e1233443f60f93a0ecad7",
+    "text": "Jūs jau žinote matematikos paslaptis! Dabar eik ir naudok juos mokytis.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:42:42.050500Z"
+  },
+  "npc.a_prisoner.say_9": {
+    "src_hash": "6a4d34e26971ff7d28374419885b5b34",
+    "text": "Bet pirmiausia pasakykite man, kokia jūsų mėgstamiausia spalva!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:42:42.050978Z"
+  },
+  "npc.a_prisoner.walkaway_msg_1": {
+    "src_hash": "2fa775fa3e12e21fdac806c25de27c10",
+    "text": "Palauk! Neišeik! Noriu papasakoti apie savo siurrealistinius skaičius.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:42:49.462132Z"
+  },
+  "npc.a_restless_soul.multi_1": {
+    "src_hash": "7183503f26b3b2bf8b53a8f27ed6d9d0",
+    "text": "Mane čia sugavo ir iki mirties nukankino kultūrininkai. Jie garbina būtybę, kurią vadina Ghazbaran ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:42:49.462844Z"
+  },
+  "npc.a_restless_soul.multi_2": {
+    "src_hash": "7dc0f9270cd35b18938f8271d065463e",
+    "text": "Jo vardu jie paėmė kasyklas ir pradėjo tirpdyti ledą, kad išlaisvintų armiją niekšiškų demonų, kurie čia amžiams buvo sušalę...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:42:49.463658Z"
+  },
+  "npc.a_restless_soul.multi_3": {
+    "src_hash": "315b9533341ab66433fdb84a63ece0c6",
+    "text": "Jų planas yra sukurti naują demonų armiją, kad jų šeimininkas galėtų užkariauti pasaulį. Hjaernas ir kiti šamanai turi apie tai sužinoti! Paskubėk, kol dar ne vėlu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:42:49.464494Z"
+  },
+  "npc.a_sleeping_dragon.multi_10": {
+    "src_hash": "453ecafa7dcd6d7d87059b98f4e05841",
+    "text": "Uždengę akis ir vengdami tiesioginio spindulių žvilgsnio, įdėkite veidrodį į stovą. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:42:49.465136Z"
+  },
+  "npc.a_sleeping_dragon.multi_11": {
+    "src_hash": "5a956e6ac76f84dcdc80c4d58d117682",
+    "text": "Instinktyviai bėgate prie didesnio smaragdinio blefo, esančio šalia kėlimo, kad surastumėte priedangą. Praėjus vos sekundėms po to, kai atsiėmėte tvirtą pastogę, ore pradeda suktis gilus tamsus ūžesys. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:42:56.792776Z"
+  },
+  "npc.a_sleeping_dragon.multi_13": {
+    "src_hash": "a253f114923de282cccfb718ce2651da",
+    "text": "Jūs pakeliate galvą virš smaragdo krašto, kad pamatytumėte, kas vyksta. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:42:56.793343Z"
+  },
+  "npc.a_sleeping_dragon.multi_14": {
+    "src_hash": "70f67a45c979e8dc3e56fc964a026220",
+    "text": "Atrodo, kad ranka išaugo į kumštį. Tolumoje dabar galite pamatyti neryškią būtybės schemą, per didelę, kad jūsų akys galėtų geriau matyti jo galvą. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:42:56.794190Z"
+  },
+  "npc.a_sleeping_dragon.multi_15": {
+    "src_hash": "6a5a491a85f56f55adbd26786c63a7ce",
+    "text": "Sumaišius spindulius, veidrodis nukreipia gryną baltą šviesą tiesiai į tą dalį, kurioje jūs prisiimate būtybės veidą. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:42:56.795038Z"
+  },
+  "npc.a_sleeping_dragon.multi_17": {
+    "src_hash": "7573058a6400d2fbf46d662914656cf4",
+    "text": "Jūs išeinate ir įmetate modelį toli į vandenį. Nieko nevykstant, atsuki nugarą į vandenyną. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:42:56.795764Z"
+  },
+  "npc.a_sleeping_dragon.multi_18": {
+    "src_hash": "0d804d95a3a157aec49c516db3b9aff8",
+    "text": "Tą pačią akimirką, kai einate žemyn kopa ir grįžtate į pietus, šviesos spinduliai prasiskverbia virš jūsų galvos smūgio banga, kuri priverčia nusileisti nuo likusios kalvos. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:43:04.170448Z"
+  },
+  "npc.a_sleeping_dragon.multi_19": {
+    "src_hash": "791b4b36f3b71d7c38493b3e30b76237",
+    "text": "Kai akys prisitaiko prie staigaus ryškumo sumažėjimo, prieš pajudėdami į šoną pamatysite milžiniškus vartų sparnus. Taip pat galite pamatyti ką nors blizgančio ant žemės.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:43:04.172286Z"
+  },
+  "npc.a_sleeping_dragon.multi_20": {
+    "src_hash": "2f2109a72068de305a9443412ff32999",
+    "text": "Jūs pasirenkate veidrodį nuo žemės.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:43:04.173658Z"
+  },
+  "npc.a_sleeping_dragon.multi_21": {
+    "src_hash": "4c26b218f329957ec066a35cf4c9405d",
+    "text": "Drakono svajonės yra auksinės. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:43:04.174594Z"
+  },
+  "npc.a_sleeping_dragon.multi_22": {
+    "src_hash": "34250643c73b08b49a6fab210c7bc0c4",
+    "text": "Tave supa plati tamsa, tarsi sunki uždanga užsidarytų prieš tavo akis. Po kelių minučių plaukimo tuštuma apima jausmas, lyg prieš tave tamsoje atsivertų skylė. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:43:04.176248Z"
+  },
+  "npc.a_sleeping_dragon.multi_23": {
+    "src_hash": "92a1fcad690cb48948dcf8d8defc5129",
+    "text": "Skylė didėja, negalima užmerkti akių. Neįsivaizduojama juoda. Giliau ir tamsesnė nei bet kokia niekis, kurį galite įsivaizduoti, įtraukia jus į jį. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:43:11.879412Z"
+  },
+  "npc.a_sleeping_dragon.multi_24": {
+    "src_hash": "f2cf7d86540c1405ea910ab146d852e6",
+    "text": "Jaučiatės taip, lyg nebegalite kvėpuoti. Tą pačią sekundę, kai paleidžiate sąmonę, pajusite, kad visas sunkumas aplink jus pakyla. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:43:11.880192Z"
+  },
+  "npc.a_sleeping_dragon.multi_25": {
+    "src_hash": "fb3eb01906a6037673dafee918fc8213",
+    "text": "Jūs neriate į smaragdinės šviesos vandenyną. Jautiesi tarsi gimęs iš naujo, tave supančios spalvos beveik nepaliauja. Nesuskaičiuojama daugybė įvairiausių formų ir dydžių objektų bėga pro jus. Lenktyniaudami vienas prieš kitą, tolumoje susimuša milijonai. ..",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:43:11.881178Z"
+  },
+  "npc.a_sleeping_dragon.multi_26": {
+    "src_hash": "78364ddf49f6d5722ee53c7a25348d26",
+    "text": "Didžiulio aplinkinio reginio garsumas laužo jūsų klausą, tačiau jūs sugeriate visus aplink jus esančius garsus. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:43:11.881805Z"
+  },
+  "npc.a_sleeping_dragon.multi_27": {
+    "src_hash": "c42d69935dea4179e66969ccdb3aed5e",
+    "text": "Kai kelios didelės kliūtys pasislenka tiesiai priešais jus, į jūsų akis iškyla intensyvus šviesus centras. Nors negalite suvokti, kaip greitai esate, jūsų tempas atrodo per lėtas. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:43:11.882676Z"
+  },
+  "npc.a_sleeping_dragon.multi_28": {
+    "src_hash": "a70857cffa61d3635e2308ed40fdc91d",
+    "text": "Vis lėtėjant, galiausiai priartėsite prie vidurio šiame žalios spalvos tonų chaose. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:43:17.824777Z"
+  },
+  "npc.a_sleeping_dragon.multi_29": {
+    "src_hash": "405803fd9a90b647e0df17a586553f6b",
+    "text": "Priėjus arčiau, apkabina gelsvi oranžiniai atspalviai, išryškėja švelnesnės formos ir beveik pamirštate prieš tai buvusią chaosą. Šiltai jaukumoje matai, kas slypi viso to širdyje. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:43:17.827227Z"
+  },
+  "npc.a_sleeping_dragon.multi_30": {
+    "src_hash": "561aa27c3ac58b8b86feed5ae68f3dfb",
+    "text": "Didingą drakoną miegantį supa tarsi tūkstančio saulių šiluma ir energija. Jo žvilgsnio ramybė verčia švelniai nusišypsoti. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:43:17.829004Z"
+  },
+  "npc.a_sleeping_dragon.multi_31": {
+    "src_hash": "71d47ef87b2021f0289ea4b660a86a9b",
+    "text": "Jaučiate tobulą džiaugsmo, užuojautos ir staigaus ramybės mišinį. Ryškūs ksanto topazo, oranžinės ir baltos spalvos įspūdžiai sveikina jus paskutinėje kelionės stotelėje. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:43:17.830746Z"
+  },
+  "npc.a_sleeping_dragon.multi_32": {
+    "src_hash": "4c26b218f329957ec066a35cf4c9405d",
+    "text": "Drakono svajonės yra auksinės. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:43:17.831523Z"
+  },
+  "npc.a_sleeping_dragon.multi_33": {
+    "src_hash": "2857a39f8d648b3b1dd35100ce9f03de",
+    "text": "Atsiduriate drakono svajonės viduje. Galite {look} apvažiuoti arba {go} tam tikra kryptimi. Taip pat galite {take} arba {use} objektą. Įveskite {help}, kad bet kuriuo metu būtų rodoma ši informacija.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:43:25.561078Z"
+  },
+  "npc.a_sleeping_dragon.multi_5": {
+    "src_hash": "5413fbb342cce5e40e131c197c65f83a",
+    "text": "Perdavimas buvo sėkmingas. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:43:25.561685Z"
+  },
+  "npc.a_sleeping_dragon.multi_6": {
+    "src_hash": "9dca37c81c8fb23fca9d424d916549b3",
+    "text": "Dabar esate pasirengęs patekti į piktadarių karalystę. Esu dėkingas už pagalbą, kelytoje. Jei ieškotumėte mano tarybos, naudokitės šiuo žavesiu, kurį jums perduodu. Nes mano dvasia ves tave, kad ir kur būtum. Tegul mėgaujasi apsaugota ateitimi, tu laimėsi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:43:25.563251Z"
+  },
+  "npc.a_sleeping_dragon.multi_7": {
+    "src_hash": "671a859983328cf16cab59fc47d7480b",
+    "text": "Aaaah... pagaliau laisva. hmm. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:43:25.563827Z"
+  },
+  "npc.a_sleeping_dragon.multi_8": {
+    "src_hash": "ae1846f5fcb59591a3521d7f4d7960ef",
+    "text": "Manau, kad reikia patekti pro vartus, kad pasiektumėte piktadarį. Galiu tau padėti, jei pasitiki manimi, kelytoje. Pasidalinsiu su jumis savo minties dalimi, kuri turėtų padėti jums žengti pro vartus. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:43:25.564767Z"
+  },
+  "npc.a_sleeping_dragon.multi_9": {
+    "src_hash": "80f688fec5f39b9ff2f0df02e7b214e9",
+    "text": "Ši procedūra gali būti varginanti. Ar esate pasirengęs gauti mano raktą?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:43:28.896266Z"
+  },
+  "npc.a_sleeping_dragon.say_1": {
+    "src_hash": "2857a39f8d648b3b1dd35100ce9f03de",
+    "text": "Atsiduriate drakono svajonės viduje. Galite {look} apvažiuoti arba {go} tam tikra kryptimi. Taip pat galite {take} arba {use} objektą. Įveskite {help}, kad bet kuriuo metu būtų rodoma ši informacija.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:43:28.897273Z"
   }
 }

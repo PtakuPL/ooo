@@ -2,51 +2,27 @@
   "lang": "fr",
   "script_group": "latin",
   "total_keys": 53586,
-  "translated": 45623,
-  "identical_to_en": 29756,
-  "placeholder_keys": 7789,
-  "coverage_pct": 85.1,
-  "issues_total": 283,
+  "translated": 19327,
+  "identical_to_en": 4432,
+  "placeholder_keys": 34085,
+  "coverage_pct": 36.1,
+  "issues_total": 172,
   "issues_by_type": {
-    "V1_placeholder_mismatch": 270,
+    "V1_placeholder_mismatch": 159,
     "V6_newline_mismatch": 8,
     "V4_artifact": 4,
     "V5_pipe_mismatch": 1
   },
   "issues_by_severity": {
-    "CRITICAL": 271,
+    "CRITICAL": 160,
     "HIGH": 4,
     "MEDIUM": 8,
     "LOW": 0
   },
-  "score": 98.2,
+  "score": 97.5,
   "worst_keys": [
     {
-      "key": "html.monsters.html.text2",
-      "category": "html",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "html.admin.links.html.text1",
-      "category": "html",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "html.admin.changelog.form.html.text1",
-      "category": "html",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
       "key": "html.admin.changelog.form.html.text5",
-      "category": "html",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "html.forum.admin.links.html.text1",
       "category": "html",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
@@ -88,12 +64,6 @@
       "severity": "CRITICAL"
     },
     {
-      "key": "html.profiling_chart.text1",
-      "category": "html",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
       "key": "html.profiling_chart.text2",
       "category": "html",
       "type": "V1_placeholder_mismatch",
@@ -106,25 +76,7 @@
       "severity": "CRITICAL"
     },
     {
-      "key": "html.query.text1",
-      "category": "html",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
       "key": "html.query.text2",
-      "category": "html",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "html.query.text4",
-      "category": "html",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "html.query.text5",
       "category": "html",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
@@ -140,15 +92,63 @@
       "category": "html",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
+    },
+    {
+      "key": "html.column_definitions_form.text1",
+      "category": "html",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "html.column_definitions_form.text2",
+      "category": "html",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "html.partitions.text1",
+      "category": "html",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "html.partitions.text2",
+      "category": "html",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "html.partitions.text3",
+      "category": "html",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "html.partitions.text4",
+      "category": "html",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "html.select_all.text1",
+      "category": "html",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "html.select_all.text2",
+      "category": "html",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
     }
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 466,
-    "consistency": 52,
+    "issues_total": 463,
+    "consistency": 49,
     "pl_reference": 400,
     "length_ratio": 14,
-    "auto_fix_applied": 72
+    "auto_fix_applied": 71
   },
-  "validated_at": "2026-02-14T11:21:34.122057Z"
+  "validated_at": "2026-02-14T11:45:10.790407Z"
 }

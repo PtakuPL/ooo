@@ -137310,5 +137310,1261 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-14T11:29:13.742687Z"
+  },
+  "npc.serafin.say_1": {
+    "src_hash": "8c2342631209284efa7ab75733e4b078",
+    "text": "Oh, no, no vendo galletas. ¿O quieres decir que te gustaría regalarme uno?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:34:45.704452Z"
+  },
+  "npc.serafin.say_3": {
+    "src_hash": "89786f16bb07e2193635e5f079c11e40",
+    "text": "¡¿TOS?! ¿Qué clase de truco malo es ese? ¡Sal de mi tienda!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:34:45.705008Z"
+  },
+  "npc.serafin.stdmod_1": {
+    "src_hash": "09d3a5f9b784a8c51ebf08370e7a7b3c",
+    "text": "Hay algo en estas palabras que me hace sentir incómodo. O tal vez eres tú quien causa ese sentimiento. Será mejor que te pierdas.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:34:45.705798Z"
+  },
+  "npc.servant_sentry.greet_msg_1": {
+    "src_hash": "802b77465879102253735c6a970d6b64",
+    "text": "El. Limo. Tiene. Entró. Nuestro. Maestro. Tiene. ¡Izquierda! Nosotros. Debe. Ayuda.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:34:45.706336Z"
+  },
+  "npc.servant_sentry.say_4": {
+    "src_hash": "fc68339d1e0385bc1816be20c87c85be",
+    "text": "El. {Slime}. Tiene. Entró. Nuestro. {Master}. Tiene. ¡Izquierda! Nosotros. Debe. {Help}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:34:50.024229Z"
+  },
+  "npc.servant_sentry.say_5": {
+    "src_hash": "6eeac2b50231398c12497812ce6932b0",
+    "text": "Fracaso. {Slime}. Nosotros. Voluntad. Por qué. Hizo. Tú. Matar. ¿A nosotros? Hacer. Tú. Desear. A. Rectificar. Y. ¿Ayuda?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:34:50.024892Z"
+  },
+  "npc.servant_sentry.say_6": {
+    "src_hash": "20027b04c92f4bb61f39774f4b73ac61",
+    "text": "Entonces. Llevar. Este. Pavo macho. Siempre. Hambriento. Come. Limo. Hongo. Ir.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:34:50.025348Z"
+  },
+  "npc.servant_sentry.stdmod_1": {
+    "src_hash": "e9f00d1f0fef5a0a826ebb412892f1b5",
+    "text": "Atención. Su. Voluntad. Nosotros. Voluntad.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:34:50.025736Z"
+  },
+  "npc.servant_sentry.voice_1": {
+    "src_hash": "e9f00d1f0fef5a0a826ebb412892f1b5",
+    "text": "Atención. Su. Voluntad. Nosotros. Voluntad.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:34:50.026094Z"
+  },
+  "npc.seymour.farewell_1": {
+    "src_hash": "8906dabad09202739fba87ff4e9a7e82",
+    "text": "¡Adiós, |PLAYERNAME|! Y recuerda: ¡No correr de un lado a otro en la academia!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:34:55.565639Z"
+  },
+  "npc.seymour.greet_1": {
+    "src_hash": "aae5273239fe8197cdd0f076172ca0d5",
+    "text": "Hola, |PLAYERNAME|. Bienvenido a la Academia de Rookgaard. ¿Puedo registrarte como {student}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:34:55.566374Z"
+  },
+  "npc.seymour.say_1": {
+    "src_hash": "ba8af8a95449ed6c6a22c8718f215318",
+    "text": "¿Me has traído {0} ratas muertas para recoger tu recompensa?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:34:55.566881Z"
+  },
+  "npc.seymour.say_2": {
+    "src_hash": "c496fde74ffdac2389ed71a3c39fcb93",
+    "text": "Mmmm, déjame mirarte. Tienes ese brillo inteligente en tus ojos y te encantaría manejar un gran poder. ¡Ese debe ser un futuro hechicero!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:34:55.567591Z"
+  },
+  "npc.seymour.say_3": {
+    "src_hash": "93958bf5798df0f97c87be2637daacf3",
+    "text": "Mmmm, déjame mirarte. Tienes un aura de gran sabiduría y puedes tener manos curativas, así como un sentido de los poderes de la naturaleza. ¡Creo que eres un druida nato!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:34:55.568355Z"
+  },
+  "npc.seymour.say_4": {
+    "src_hash": "6c088d62d8c9f9d8b12f3ba07a8d2883",
+    "text": "Mmmm, déjame mirarte. Pareces tener buena vista y mano firme. ¡Apuesto a que serías un excelente paladín!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:00.075312Z"
+  },
+  "npc.seymour.say_5": {
+    "src_hash": "cf1d6c850e3f3cd7928cb7700d14bddc",
+    "text": "Mmmm, déjame mirarte. Fuerte y robusto, con una mirada determinada en tus ojos: ¡sin duda la profesión de caballero sería adecuada para ti!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:00.076027Z"
+  },
+  "npc.seymour.stdmod_1": {
+    "src_hash": "def2d3948cc0b6d4b82fd564d3127e1d",
+    "text": "Recién llegados: ¡visítenme! ¡Responderé tus preguntas!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:00.076465Z"
+  },
+  "npc.seymour.stdmod_10": {
+    "src_hash": "f7535d4c8d6838857b3cbde06d297963",
+    "text": "¡Gracias! Aquí está tu recompensa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:00.076839Z"
+  },
+  "npc.seymour.stdmod_100": {
+    "src_hash": "7d6516e666a44eb8cdce9a654588371d",
+    "text": "Dixi vende y compra {armors}, {shields}, {helmets} y {legs}. Puedes encontrar su tienda al sur de la academia, simplemente sube las escaleras en la tienda de {Obi}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:00.077794Z"
+  },
+  "npc.seymour.stdmod_101": {
+    "src_hash": "48652093ed11ffc2bee03db808423271",
+    "text": "Un druida misterioso que vive en algún lugar del desierto. Vende salud pequeña {potions} igual que {Lily}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:04.719250Z"
+  },
+  "npc.seymour.stdmod_102": {
+    "src_hash": "b2907e2aeee86df246e8b9947134bef3",
+    "text": "La tienda de Lee'Delle está en la parte occidental de la ciudad, en el lado {premium}. Ella vende todo más barato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:04.719944Z"
+  },
+  "npc.seymour.stdmod_103": {
+    "src_hash": "66138ffc2511b04cfad95b19e165b265",
+    "text": "En la parte sur de la ciudad, Lily vende {potions}, lo que puede resultar útil una vez que estés en lo profundo de una mazmorra y necesites {health}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:04.720732Z"
+  },
+  "npc.seymour.stdmod_11": {
+    "src_hash": "6029cbb5487a57cc71c1469c609762db",
+    "text": "¡EY! ¡No tienes tantos!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:04.721148Z"
+  },
+  "npc.seymour.stdmod_12": {
+    "src_hash": "57cb607eeffb8c7f5a120ad9b4d1f126",
+    "text": "¡Ve y encuentra algunas ratas para matar!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:04.721532Z"
+  },
+  "npc.seymour.stdmod_13": {
+    "src_hash": "3caa1b583e6f9ad956dad87287395ae6",
+    "text": "¿Me has traído una rata muerta para recoger tu recompensa?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:08.963683Z"
+  },
+  "npc.seymour.stdmod_14": {
+    "src_hash": "f7535d4c8d6838857b3cbde06d297963",
+    "text": "¡Gracias! Aquí está tu recompensa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:08.964354Z"
+  },
+  "npc.seymour.stdmod_15": {
+    "src_hash": "4061fcfbdd3e5726ba762335d226cfe6",
+    "text": "¡EY! ¡No tienes uno! ¡Deja de jugarme bromas o te daré trabajo extra!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:08.964893Z"
+  },
+  "npc.seymour.stdmod_16": {
+    "src_hash": "57cb607eeffb8c7f5a120ad9b4d1f126",
+    "text": "¡Ve y encuentra algunas ratas para matar!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:08.965274Z"
+  },
+  "npc.seymour.stdmod_17": {
+    "src_hash": "21f92be8525aeb8912f34e2c6ddd675d",
+    "text": "¿Tienes una caja de regalo adecuada para mí?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:08.965678Z"
+  },
+  "npc.seymour.stdmod_18": {
+    "src_hash": "0f737505312dee475ad409eb788ef37b",
+    "text": "¡GRACIAS! Aquí tienes un casco que te será de gran utilidad.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:14.599993Z"
+  },
+  "npc.seymour.stdmod_19": {
+    "src_hash": "4061fcfbdd3e5726ba762335d226cfe6",
+    "text": "¡EY! ¡No tienes uno! ¡Deja de jugarme bromas o te daré trabajo extra!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:14.600610Z"
+  },
+  "npc.seymour.stdmod_2": {
+    "src_hash": "6961b19694f25d7a5c605157698e7193",
+    "text": "¡Entrénate en la academia!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:14.601016Z"
+  },
+  "npc.seymour.stdmod_20": {
+    "src_hash": "d7ae1d70a9efb79b79936f2ae290e6de",
+    "text": "Bueno, me gustaría enviarle un regalito a nuestro rey pero no tengo una caja adecuada. Si encuentras una bonita caja, tráemela.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:14.601743Z"
+  },
+  "npc.seymour.stdmod_21": {
+    "src_hash": "bad94cf96750f211366f20690a302ede",
+    "text": "Eres bastante inexperto. Creo que matar ratas es un desafío adecuado para ti. Por cada {dead rat} nuevo te daré dos monedas de oro brillantes.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:14.603025Z"
+  },
+  "npc.seymour.stdmod_22": {
+    "src_hash": "517df2abfe75000141b454c624daa814",
+    "text": "¡Por este comentario te lavaré la boca con jabón, señorita!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:20.399967Z"
+  },
+  "npc.seymour.stdmod_23": {
+    "src_hash": "766c8a0e52a0632f7e5abb3a52253d32",
+    "text": "¡Por este comentario te lavaré la boca con jabón, jovencito!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:20.400453Z"
+  },
+  "npc.seymour.stdmod_24": {
+    "src_hash": "a09aadaafe087a6d7af0a019ddf01fba",
+    "text": "Esta es una isla con {vocation} profesores. Podrás aprender todo sobre las diferentes vocaciones allí una vez que alcances el nivel 8.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:20.401141Z"
+  },
+  "npc.seymour.stdmod_25": {
+    "src_hash": "b01e74cb377d597f62a99562d8b51acb",
+    "text": "Es |TIME|, así que llegas tarde. ¡Apurarse!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:20.401548Z"
+  },
+  "npc.seymour.stdmod_26": {
+    "src_hash": "264e2b3c748168ee8571048504b71eb9",
+    "text": "Mi nombre es Seymour, pero para ti soy 'Sir' Seymour.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:20.401995Z"
+  },
+  "npc.seymour.stdmod_27": {
+    "src_hash": "81cd1fb20efa71de5bcc3ed9a8199ddc",
+    "text": "Al menos sabes cómo dirigirte a un hombre de mi importancia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:25.692893Z"
+  },
+  "npc.seymour.stdmod_28": {
+    "src_hash": "a6a643bb1042627f954f27991bfe3182",
+    "text": "Soy el maestro de este fino {academy} y les doy {lessons} a mis alumnos.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:25.693424Z"
+  },
+  "npc.seymour.stdmod_3": {
+    "src_hash": "0f4486b1993797b05e78dd499c74c5d0",
+    "text": "¿Te sientes perdido? ¡Pídeme ayuda!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:25.693882Z"
+  },
+  "npc.seymour.stdmod_30": {
+    "src_hash": "6c22d961559f1a59ab9f0f5cb50c9cab",
+    "text": "En un banco puedes depositar las monedas de oro obtenidas de forma segura. Simplemente baja a {Paulie} y pídele que {deposit} tu dinero.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:25.694607Z"
+  },
+  "npc.seymour.stdmod_31": {
+    "src_hash": "f607c62855097abdb7efcf92079fa8fd",
+    "text": "Sí, depositar su dinero lo mantendrá seguro, por lo que es una buena idea guardarlo en el banco. Por supuesto, siempre podrás volver a retirarlo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:30.638974Z"
+  },
+  "npc.seymour.stdmod_32": {
+    "src_hash": "167746d0379964bc57bcf903a9374f10",
+    "text": "Bueno, el {king} ya no envía tropas, el {academy} tiene muy poco dinero y el fin del mundo está bastante cerca. Aparte de eso, supongo que estoy razonablemente bien.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:30.639807Z"
+  },
+  "npc.seymour.stdmod_33": {
+    "src_hash": "78bd53393fef218241f8e6d1e280ce4d",
+    "text": "La mayoría de los ciudadanos aquí son {merchants}. Puedes darme el nombre de cualquier personaje no jugador y te contaré algo sobre él o ella.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:30.640518Z"
+  },
+  "npc.seymour.stdmod_34": {
+    "src_hash": "00ce64976b3788b80b8eaa60c36c1466",
+    "text": "Los comerciantes compran y venden bienes. Simplemente pídales un {trade} para ver qué le ofrecen o le compran.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:30.641127Z"
+  },
+  "npc.seymour.stdmod_35": {
+    "src_hash": "20bbbea8075823ef963824dc928f0037",
+    "text": "Los trolls son monstruos bastante desagradables a los que no deberías enfrentarte antes del nivel 3 o 4 dependiendo de tu {equipment}. ¡Pregunte al puente {guards} por sus ubicaciones!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:30.641905Z"
+  },
+  "npc.seymour.stdmod_36": {
+    "src_hash": "37b31ffef5a4eec6ac0546edeb7b86c3",
+    "text": "Los guardias {Dallheim} y {Zerbrus} protegen nuestra aldea de {monsters} que intenta entrar. También marcan ubicaciones {dungeon} útiles en su mapa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:35.853226Z"
+  },
+  "npc.seymour.stdmod_37": {
+    "src_hash": "1df17fb2ecdbf3d6fdde3add05aa9b56",
+    "text": "Hay cuatro vocaciones: {knights}, {paladins}, {sorcerers} y {druids}. Podrás elegir tu vocación una vez que estés en el nivel 8 y hayas hablado con el {oracle}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:35.853971Z"
+  },
+  "npc.seymour.stdmod_38": {
+    "src_hash": "4ece7b5e5fafd59e0ceea68c4bd0e02e",
+    "text": "Los hechiceros son magos elementales talentosos. Aprenderás todo sobre ellos una vez que alcances el nivel 8 y llegues a la isla de {Destiny}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:35.854824Z"
+  },
+  "npc.seymour.stdmod_39": {
+    "src_hash": "8b1880259500b0dda4ef52f253d5c80b",
+    "text": "Los caballeros son fuertes luchadores cuerpo a cuerpo. Aprenderás todo sobre ellos una vez que alcances el nivel 8 y llegues a la isla de {Destiny}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:35.855346Z"
+  },
+  "npc.seymour.stdmod_4": {
+    "src_hash": "8265020d8ab41dc268153237ded89725",
+    "text": "¡Obtén algunos conocimientos en la academia!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:35.855754Z"
+  },
+  "npc.seymour.stdmod_40": {
+    "src_hash": "69b39687de0b89208d0dccea4ff9c429",
+    "text": "Los druidas son usuarios de magia de la naturaleza y grandes sanadores. Aprenderás todo sobre ellos una vez que alcances el nivel 8 y llegues a la isla de {Destiny}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:41.340218Z"
+  },
+  "npc.seymour.stdmod_41": {
+    "src_hash": "5ec564847b99956737d443a169f2e9f3",
+    "text": "Los paladines son luchadores rápidos a distancia. Aprenderás todo sobre ellos una vez que alcances el nivel 8 y llegues a la isla de {Destiny}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:41.340870Z"
+  },
+  "npc.seymour.stdmod_42": {
+    "src_hash": "3c6085be925ed83d38ca94260f180630",
+    "text": "Tenemos una tienda {weapon} y una {armor} al sur de la academia. {Equipment} como {ropes} se venden en el noroeste. {Potions} se puede comprar al sur. Y luego están los {farms}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:41.341737Z"
+  },
+  "npc.seymour.stdmod_43": {
+    "src_hash": "14d01cafb353562b28c362f52069c340",
+    "text": "El mundo de Tibia es muy grande y tiene toneladas de lugares para explorar. ¡Te esperan vastos desiertos, islas caribeñas, selvas profundas, prados verdes y montañas escarpadas!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:41.342524Z"
+  },
+  "npc.seymour.stdmod_45": {
+    "src_hash": "d8c6e7510930c591505f609aa2e89bcf",
+    "text": "Su salud actual se muestra en la barra roja en el lado derecho. {Death} te espera si baja a cero.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:46.516248Z"
+  },
+  "npc.seymour.stdmod_46": {
+    "src_hash": "fed2f1bdda97e669ca487aca8222c361",
+    "text": "Morir en Tibia es doloroso, así que trata de evitarlo. Perderás parte de tus {experience} puntos y también equipo. ¡Asegúrate de que tu {health} siempre permanezca levantado!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:46.517032Z"
+  },
+  "npc.seymour.stdmod_47": {
+    "src_hash": "66bed339724ad6abc4f5344fc4f8abe2",
+    "text": "Obtienes experiencia al luchar contra {monsters}. Puedes echar un vistazo a la ventana de tu habilidad para comprobar tu progreso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:46.517760Z"
+  },
+  "npc.seymour.stdmod_48": {
+    "src_hash": "80701f1f549f2843d033b1f19b7a011c",
+    "text": "Buenos monstruos para empezar a cazar son {rats}. Viven en el {sewers} debajo del pueblo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:46.518485Z"
+  },
+  "npc.seymour.stdmod_49": {
+    "src_hash": "c21b1a26cb1887d1c03a317ec24d31b5",
+    "text": "Una entrada a las alcantarillas está al sur de este {academy}. Busque una rejilla de alcantarillado y luego úsela para bajar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:46.519140Z"
+  },
+  "npc.seymour.stdmod_5": {
+    "src_hash": "aae5273239fe8197cdd0f076172ca0d5",
+    "text": "Hola, |PLAYERNAME|. Bienvenido a la Academia de Rookgaard. ¿Puedo registrarte como {student}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:51.607856Z"
+  },
+  "npc.seymour.stdmod_50": {
+    "src_hash": "c794d729c98e39dfe767991f3db7efa1",
+    "text": "La academia es el edificio en el que estás parado. Tenemos un {library}, un {bank} y la sala del {oracle}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:51.608551Z"
+  },
+  "npc.seymour.stdmod_51": {
+    "src_hash": "987a4bd4085699c1ad0f125c4ee01e95",
+    "text": "Hay muchos libros en las estanterías que te rodean, a menos que algunos niños traviesos los hayan vuelto a robar. Léalos para obtener información más detallada.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:51.609247Z"
+  },
+  "npc.seymour.stdmod_52": {
+    "src_hash": "312a4a5d78e6366c1aaad432a7ab044f",
+    "text": "No salgas a cazar sin el equipo adecuado. Necesita al menos un {weapon}, {armor}, {shield}, {rope} y {shovel} adecuados. Un {torch} también es bueno, así como un {legs}, un {helmet} y un {shoes}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:51.610076Z"
+  },
+  "npc.seymour.stdmod_53": {
+    "src_hash": "8bb057b1170b9ea26f1d8baeb1e963c0",
+    "text": "Gana dinero matando a {monsters} y recogiendo su {loot}. Puedes vender muchas de las cosas que llevan.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:51.610777Z"
+  },
+  "npc.seymour.stdmod_54": {
+    "src_hash": "6d5ea3679c2e34c6bde3d1dbd0fef26b",
+    "text": "Una vez que un monstruo está muerto, puedes seleccionar 'Open' en el {corpse} para comprobar qué hay dentro. A veces llevan {money} u otros artículos que puedes vender a {merchants}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:57.219555Z"
+  },
+  "npc.seymour.stdmod_55": {
+    "src_hash": "8d57c948b51ceeea4f66abe06c81a458",
+    "text": "¡Incluso puedes vender algunos cadáveres! Por ejemplo, puedes vender ratas muertas frescas a {Tom} el curtidor o a mí. También compra otras criaturas muertas, solo pídele un {trade}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:57.220407Z"
+  },
+  "npc.seymour.stdmod_56": {
+    "src_hash": "b0a06e9c1944902dc72f5515bcdaf2b9",
+    "text": "Definitivamente necesitas una cuerda para progresar en las mazmorras, de lo contrario podrías terminar atascado. Compre uno de {Al Dee} o {Lee'Delle}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:57.221069Z"
+  },
+  "npc.seymour.stdmod_57": {
+    "src_hash": "8568c0615207cbfdf839e2ad6c755144",
+    "text": "Se necesita una pala para abrir algunas entradas {dungeon}. 'Use' sobre una pila de piedras sueltas para hacer un agujero lo suficientemente grande como para entrar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:57.221942Z"
+  },
+  "npc.seymour.stdmod_58": {
+    "src_hash": "743ba5c1b3012392ea8b70e21246de31",
+    "text": "No debes descender a mazmorras sin el {equipment} adecuado. Una vez que esté todo preparado, solicite al puente {guards} el {monsters} adecuado.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:35:57.222692Z"
+  },
+  "npc.seymour.stdmod_59": {
+    "src_hash": "d801616ada7f3d93cf0d6d5ca8928bf2",
+    "text": "Una antorcha te proporcionará luz en la oscuridad {dungeons}. 'Use' para encenderlo. Puedes comprarlos desde {Al Dee} o {Lee'Delle}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:36:02.366151Z"
+  },
+  "npc.seymour.stdmod_6": {
+    "src_hash": "d9b6dfa3f0c959d6f8601e4fc1cf4837",
+    "text": "¡Brillante! ¡Necesitamos buenos aventureros como tú! Si estás listo para aprender, pídeme una lección. Siempre puedes pedir palabras de diferentes colores, como ésta, para continuar la lección.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:36:02.367102Z"
+  },
+  "npc.seymour.stdmod_60": {
+    "src_hash": "3c4ab51b4829ad7853f2928a2c8dabb6",
+    "text": "Bueno, podría darte un valioso {lessons} o algo de {hints} general sobre el juego, o un pequeño {quest} si estás interesado.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:36:02.367755Z"
+  },
+  "npc.seymour.stdmod_61": {
+    "src_hash": "26ecfc8263c7ddeff436f49341915198",
+    "text": "La armadura inicial, un abrigo, no te protege bien. En primer lugar, gana algo de dinero e intenta conseguir una armadura de cuero resistente en la tienda de {Dixi}'s  or {Lee'Delle}. Simplemente solicite un {trade}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:36:02.368754Z"
+  },
+  "npc.seymour.stdmod_62": {
+    "src_hash": "dd8bf6172d2585ffa712c85acf015f89",
+    "text": "El arma inicial, un garrote, no te llevará muy lejos. Deberías ganar algo de {money} y comprar un arma mejor, como un sable, en la tienda de {Obi}'s or {Lee'Delle}. Simplemente solicite un {trade}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:36:02.369629Z"
+  },
+  "spell.mercurial_menace_ring.name": {
+    "src_hash": "82a154dbb84686009a90982171611c11",
+    "text": "menace muerto anillo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:11.010980Z"
+  },
+  "spell.renegade_knight.name": {
+    "src_hash": "4577eafb75a4b865924c31cb99985aae",
+    "text": "caballero renegado",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:11.086153Z"
+  },
+  "spell.mantosaurus_ring.name": {
+    "src_hash": "bcc22c61835841ab70525f4cc14628d0",
+    "text": "muerto anillo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:11.096623Z"
+  },
+  "spell.lavafungus_ring.name": {
+    "src_hash": "8bac228393c7fc0a4f3ac1a0c4622505",
+    "text": "anillo de lavafungus",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:11.108141Z"
+  },
+  "spell.spectre_drown.name": {
+    "src_hash": "a63ae03e97a0027f377f0680fecfe4db",
+    "text": "espectro ahogamiento",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:11.163123Z"
+  },
+  "spell.energy_ring.name": {
+    "src_hash": "c193d863e3cfa9eb7c10c24bc406c615",
+    "text": "anillo de energía",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:11.175261Z"
+  },
+  "spell.vile_grandmaster.name": {
+    "src_hash": "bac73ba15ba676e19e2332d4cee43bf3",
+    "text": "grandmaster muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:11.177540Z"
+  },
+  "spell.ultimate_healing.name": {
+    "src_hash": "755e0c33da7e0e29db52f58958271e14",
+    "text": "Supremo Curación",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:11.211438Z"
+  },
+  "spell.enchant_party.name": {
+    "src_hash": "87066a7e8ab695d1019e7237c8768473",
+    "text": "Encantan Grupo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:11.214792Z"
+  },
+  "spell.sorcerer_familiar.name": {
+    "src_hash": "fe695fb861f4a78482830bcb8e24bee3",
+    "text": "Familiar de hechicero",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:11.217248Z"
+  },
+  "spell.knight_familiar.name": {
+    "src_hash": "59bb8dfecc548a5d097b6f0b0d0149e4",
+    "text": "Familiar de caballero",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:11.218448Z"
+  },
+  "spell.paladin_familiar.name": {
+    "src_hash": "394dc0c96d4265282f9b9e07a32e4dae",
+    "text": "Familiar de paladín",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:11.219535Z"
+  },
+  "spell.druid_familiar.name": {
+    "src_hash": "99443d0ef921af33631809b8edfb838c",
+    "text": "Familiar de druida",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:11.220636Z"
+  },
+  "spell.cancel_invisibility.name": {
+    "src_hash": "8b9561a0bbff73c8c7799a873a60431c",
+    "text": "Cancelar Invisibilidad",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:11.228067Z"
+  },
+  "spell.invisible.name": {
+    "src_hash": "70840564ed92bb0f351968dd5d47b5bb",
+    "text": "Invisibilidad",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:11.228983Z"
+  },
+  "spell.sharpshooter.name": {
+    "src_hash": "efe3d2b02b49c973f309da5a27f75f30",
+    "text": "Tirador de Élite",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:11.232072Z"
+  },
+  "spell.sudden_death_rune.name": {
+    "src_hash": "b4a8395e3e80b065f8abcfb910717b4c",
+    "text": "Runa de muerte súbita",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:11.240339Z"
+  },
+  "spell.poison_wall_rune.name": {
+    "src_hash": "5d33a1ec9e15577a76556efb8dd65a9b",
+    "text": "Runa de muro de veneno",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:11.243223Z"
+  },
+  "spell.great_fireball_rune.name": {
+    "src_hash": "d56ee1113c040a3d8eb85f8de091985b",
+    "text": "Runa de gran bola de fuego",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:11.247690Z"
+  },
+  "spell.avalanche_rune.name": {
+    "src_hash": "dcd935be2b7c1db717e7982ea7c77439",
+    "text": "Runa de avalancha",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:11.249223Z"
+  },
+  "spell.stalagmite_rune.name": {
+    "src_hash": "52fa8546e780281f489552902d938467",
+    "text": "Runa de stalagmite",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:11.251179Z"
+  },
+  "spell.ultimate_healing_rune.name": {
+    "src_hash": "c1f287cc4f2a99f1b52db933f0ca1762",
+    "text": "Runa de curación suprema",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:11.252329Z"
+  },
+  "spell.fireball_rune.name": {
+    "src_hash": "a61a86a92bf13c2a03a91a5ac28008fb",
+    "text": "Runa de bola de fuego",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:11.253460Z"
+  },
+  "spell.holy_missile_rune.name": {
+    "src_hash": "fd9e8018108599c211222b8d3c509d4c",
+    "text": "Runa de misil sagrado",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:11.254549Z"
+  },
+  "spell.wild_growth_rune.name": {
+    "src_hash": "3c7f67d04c69f51c7a8218980ead0fc8",
+    "text": "Runa de crecimiento salvaje",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:11.255459Z"
+  },
+  "spell.energy_wall_rune.name": {
+    "src_hash": "5b73eb415a3056d5bdbc26a3886775da",
+    "text": "Runa de muro de energía",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:11.256649Z"
+  },
+  "spell.cure_poison_rune.name": {
+    "src_hash": "3ff5a4ce313d165c5fa17d6b309e26af",
+    "text": "Runa de cura de veneno",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:11.257958Z"
+  },
+  "spell.icicle_rune.name": {
+    "src_hash": "e2eed91f85856d62a861462b3ee99b48",
+    "text": "Runa de carámbano",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:11.258844Z"
+  },
+  "spell.energy_bomb_rune.name": {
+    "src_hash": "45c17606088afc983836bf3e20d62b3d",
+    "text": "Runa de bomba de energía",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:11.260304Z"
+  },
+  "spell.light_stone_shower_rune.name": {
+    "src_hash": "6484c5f4f5dde8dd10d9014a312bdba6",
+    "text": "Runa de ligero piedra shower",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:11.261402Z"
+  },
+  "spell.animate_dead_rune.name": {
+    "src_hash": "accc3ea714009108a8530ed67049bb8c",
+    "text": "Runa de animar muertos",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:11.262470Z"
+  },
+  "spell.convince_creature_rune.name": {
+    "src_hash": "fad3dee565fc34b781c47bf766de5a3a",
+    "text": "Runa de convencer criatura",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:11.263323Z"
+  },
+  "spell.poison_bomb_rune.name": {
+    "src_hash": "8e4ac735e2ce1415ddf32084da98effc",
+    "text": "Runa de bomb de veneno",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:11.264419Z"
+  },
+  "spell.fire_bomb_rune.name": {
+    "src_hash": "00379b6a9cbe075b5fcdf571ca044cf9",
+    "text": "Runa de bomba de fuego",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:11.266130Z"
+  },
+  "spell.explosion_rune.name": {
+    "src_hash": "e34e67eb516f1083604364ef57de6c61",
+    "text": "Runa de explosión",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:11.267827Z"
+  },
+  "spell.fire_wall_rune.name": {
+    "src_hash": "43bf5ebe2cc612bd482d04210760521b",
+    "text": "Runa de muro de fuego",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:11.268970Z"
+  },
+  "spell.intense_healing_rune.name": {
+    "src_hash": "5550d613fabceb4889fea906c66a2df3",
+    "text": "Runa de curación intensa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:11.270152Z"
+  },
+  "spell.fire_field_rune.name": {
+    "src_hash": "46dd0c35782bd2e15960e1af4c10fb80",
+    "text": "Runa de campo de fuego",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:11.271253Z"
+  },
+  "spell.magic_wall_rune.name": {
+    "src_hash": "dc28fac219174ba4b7547e40bb77ffde",
+    "text": "Runa de muro mágico",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:11.272461Z"
+  },
+  "spell.disintegrate_rune.name": {
+    "src_hash": "0d4e46f32dddecba7427f32c940bfbab",
+    "text": "Runa de disintegrate",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:11.273699Z"
+  },
+  "spell.heavy_magic_missile_rune.name": {
+    "src_hash": "e4caffb9a4072e3c3316cac57026d2bc",
+    "text": "Runa de misil mágico pesado",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:11.274734Z"
+  },
+  "spell.soulfire_rune.name": {
+    "src_hash": "257c83cad3d15e83a4e80b2b426468ea",
+    "text": "Runa de fuego del alma",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:11.275620Z"
+  },
+  "spell.light_magic_missile_rune.name": {
+    "src_hash": "341199c9404914fea7b1003bc1d95c4a",
+    "text": "Runa de misil mágico ligero",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:11.276723Z"
+  },
+  "spell.chameleon_rune.name": {
+    "src_hash": "b5882f4850f90f038931e732b3fb4ed7",
+    "text": "Runa de camaleón",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:11.278399Z"
+  },
+  "spell.thunderstorm_rune.name": {
+    "src_hash": "768e1e368ba6c71cbd9af71542060c9f",
+    "text": "Runa de tormenta eléctrica",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:11.279709Z"
+  },
+  "spell.stone_shower_rune.name": {
+    "src_hash": "44290ba68ac25c850aa27e5523fda1f6",
+    "text": "Runa de lluvia de piedras",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:11.281266Z"
+  },
+  "spell.destroy_field_rune.name": {
+    "src_hash": "b6fe1c4fe04d9b34729bbbf491c41a40",
+    "text": "Runa de destrucción de campo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:11.282438Z"
+  },
+  "spell.energy_field_rune.name": {
+    "src_hash": "ec6d44248eb7c384389f8bf9e0ff75c4",
+    "text": "Runa de campo de energía",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:11.283986Z"
+  },
+  "spell.lightest_missile_rune.name": {
+    "src_hash": "9ee30aa4bee0d6b326c88839c6eb2709",
+    "text": "Runa de lightest misil",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:11.285225Z"
+  },
+  "spell.poison_field_rune.name": {
+    "src_hash": "f25387a94f2c77f239a2d3dc190baf3c",
+    "text": "Runa de campo de veneno",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:11.288502Z"
+  },
+  "spell.gaz'haragoth_death.name": {
+    "src_hash": "0698be1347eb83e23fabe156028b771f",
+    "text": "haragoth'muerto muerte",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:11.291837Z"
+  },
+  "spell.apprentice's_strike.name": {
+    "src_hash": "f9140cb5bf654332975e8f47bfcac5b0",
+    "text": "Golpe del Aprendiz",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:11.296657Z"
+  },
+  "spell.nature's_embrace.name": {
+    "src_hash": "c9e8e54ec0b5e93a326f8854998f312f",
+    "text": "Abrazo de la Naturaleza",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:11.297725Z"
+  },
+  "spell.annihilon_paralyze.name": {
+    "src_hash": "57aef9c16f157f4d94e74cbdb2bf0099",
+    "text": "Annihilon Paralyze",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:12.891170Z"
+  },
+  "spell.pirate_corsair_skill_reducer.name": {
+    "src_hash": "804f0f58e3748cbf75ba47ecf7ba8ebb",
+    "text": "Pirate Corsair Skill Reducer",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:12.891577Z"
+  },
+  "spell.large_black_ring.name": {
+    "src_hash": "0ae1e3c6c779ce9e932762aedae5416f",
+    "text": "Large Black Ring",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:12.892008Z"
+  },
+  "spell.dragonling_wave.name": {
+    "src_hash": "a1e2f3f2c296466fd3ba15cc1af08e92",
+    "text": "Dragonling Wave",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:12.892503Z"
+  },
+  "spell.rupture_wave.name": {
+    "src_hash": "55cc52c9e14e2340dd8f4be093f3561e",
+    "text": "Rupture Wave",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:12.892841Z"
+  },
+  "spell.rotthingholy_ulus.name": {
+    "src_hash": "6f9565ba840690d6cf32df1835403486",
+    "text": "Rotthingholy Ulus",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:15.632034Z"
+  },
+  "spell.plagirath_heal.name": {
+    "src_hash": "81f092b37ad9667038c72b62eb3b9de4",
+    "text": "Plagirath Heal",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:15.632696Z"
+  },
+  "spell.hideous_fungus_summon.name": {
+    "src_hash": "e3f3433c829dc31d1172766e6bd0b82b",
+    "text": "Hideous Fungus Summon",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:15.633058Z"
+  },
+  "spell.death_priest_shargon_curse.name": {
+    "src_hash": "6ede43d3eed7e2f13efd2ad663beba6f",
+    "text": "Death Priest Shargon Curse",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:15.633462Z"
+  },
+  "spell.defiler_paralyze_3.name": {
+    "src_hash": "9bcbe6e08c771d6bd9277df5a1e88212",
+    "text": "Defiler Paralyze 3",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:15.633934Z"
+  },
+  "spell.enslaved_dwarf_skill_reducer_2.name": {
+    "src_hash": "7729bd82caacec5faf5e4babfec7b5b6",
+    "text": "Enslaved Dwarf Skill Reducer 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:18.415337Z"
+  },
+  "spell.magma_crawler_soulfire.name": {
+    "src_hash": "5af58207044b3d5e194180367a723039",
+    "text": "Magma Crawler Soulfire",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:18.416354Z"
+  },
+  "spell.devovorga_curse.name": {
+    "src_hash": "5fed81378f355f8d43c87e10c5259174",
+    "text": "Devovorga Curse",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:18.417199Z"
+  },
+  "spell.cults_of_tibia_armor_buff.name": {
+    "src_hash": "b670299f4fea508033e349381261574b",
+    "text": "Cults Of Tibia Armor Buff",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:18.418507Z"
+  },
+  "spell.white_shade_paralyze.name": {
+    "src_hash": "e6da7492a2ad403c4b626e2ecff6b82f",
+    "text": "White Shade Paralyze",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:18.419688Z"
+  },
+  "spell.plant_abomination_wave.name": {
+    "src_hash": "b4b265d796db5c445199764c97950e61",
+    "text": "Plant Abomination Wave",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:21.197220Z"
+  },
+  "spell.large_ice_ring.name": {
+    "src_hash": "0bb80fa4099b68b690c6d1f7ff9e832e",
+    "text": "Large Ice Ring",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:21.197675Z"
+  },
+  "spell.teleport_strike.name": {
+    "src_hash": "0ba4d3fae3fac911ea039810395e5d74",
+    "text": "Teleport Strike",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:21.198103Z"
+  },
+  "spell.quara_constrictor_freeze.name": {
+    "src_hash": "12b6e90f7c167ea881781f7f0d10220f",
+    "text": "Quara Constrictor Freeze",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:21.198633Z"
+  },
+  "spell.lersatio_summon.name": {
+    "src_hash": "9f6b742ed3af674623ba4cbc33432484",
+    "text": "Lersatio Summon",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:21.199001Z"
+  },
+  "spell.elder_bonelord_paralyze.name": {
+    "src_hash": "5a03e2e536dbb6a5a8a305af73b4484e",
+    "text": "elder bonelord paralyze",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:23.939772Z"
+  },
+  "spell.physical_barrage.name": {
+    "src_hash": "f016f2d1ee6271217f8a124d87c4e3c9",
+    "text": "Physical Barrage",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:23.940387Z"
+  },
+  "spell.explosion_wave.name": {
+    "src_hash": "3d3903c328ce1ee7b08be60ab40b3f46",
+    "text": "Explosion Wave",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:23.940769Z"
+  },
+  "spell.incineron_soulfire.name": {
+    "src_hash": "fc865f1ad9d8eaa7c819e2dc3e89be1a",
+    "text": "Incineron Soulfire",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:23.941190Z"
+  },
+  "spell.plaguesmith_wave.name": {
+    "src_hash": "d9649bfbbd30a852247fef5979d725d9",
+    "text": "Plaguesmith Wave",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:23.941567Z"
+  },
+  "spell.lich_paralyze.name": {
+    "src_hash": "a7f3a0bd382bc36fdde5100f95e560fa",
+    "text": "Lich Paralyze",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:25.928797Z"
+  },
+  "spell.lizard_wave_2.name": {
+    "src_hash": "40359f42d6c401e32e7f4524cb402999",
+    "text": "Lizard Wave 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:25.929238Z"
   }
 }

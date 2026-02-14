@@ -2,24 +2,24 @@
   "lang": "ml",
   "script_group": "exotic",
   "total_keys": 53586,
-  "translated": 35696,
-  "identical_to_en": 34545,
-  "placeholder_keys": 15735,
-  "coverage_pct": 66.6,
-  "issues_total": 132,
+  "translated": 5004,
+  "identical_to_en": 3695,
+  "placeholder_keys": 46427,
+  "coverage_pct": 9.3,
+  "issues_total": 133,
   "issues_by_type": {
-    "script_wrong_script": 123,
+    "script_wrong_script": 124,
     "V1_placeholder_mismatch": 7,
     "V4_artifact": 1,
     "V5_pipe_mismatch": 1
   },
   "issues_by_severity": {
     "CRITICAL": 8,
-    "HIGH": 124,
+    "HIGH": 125,
     "MEDIUM": 0,
     "LOW": 0
   },
-  "score": 99.4,
+  "score": 95.8,
   "worst_keys": [
     {
       "key": "scripts.actions_rewards.msg_1",
@@ -73,6 +73,12 @@
       "key": "achievement.317.description",
       "category": "achievements",
       "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "achievement.499.name",
+      "category": "achievements",
+      "type": "script_wrong_script",
       "severity": "HIGH"
     },
     {
@@ -134,21 +140,15 @@
       "category": "items",
       "type": "script_wrong_script",
       "severity": "HIGH"
-    },
-    {
-      "key": "item.20052.name",
-      "category": "items",
-      "type": "script_wrong_script",
-      "severity": "HIGH"
     }
   ],
   "crossref": {
-    "enabled": true,
-    "issues_total": 413,
+    "enabled": false,
+    "issues_total": 414,
     "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 13,
-    "auto_fix_applied": 79
+    "length_ratio": 14,
+    "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-14T11:29:16.541022Z"
+  "validated_at": "2026-02-14T11:45:13.570721Z"
 }

@@ -1,128 +1,62 @@
 {
-  "timestamp": "2026-02-14T11:29:14.423024Z",
-  "language": "es",
-  "json_file": "server.json",
-  "translated": 80,
+  "timestamp": "2026-02-14T11:46:52.269421Z",
+  "language": "pl",
+  "json_file": "quests.json",
+  "translated": 9,
   "entries": [
     {
-      "key": "data.otservbr.global.npc.gnomus.L335.1016",
-      "en": "Greetings, member of the Bigfoot Brigade. We could really use some {help} from you right now. You should prove {worthy} to our alliance.",
-      "translated": "Saludos, miembro de la Brigada Bigfoot. Realmente nos vendría bien algo de {help} de tu parte ahora mismo. Deberías demostrar {worthy} a nuestra alianza.",
+      "key": "quests.actions_coral.msg_1",
+      "en": "Sorry.",
+      "translated": "Przepraszam.",
       "source": "simple"
     },
     {
-      "key": "data.otservbr.global.npc.gorn.L109.58",
-      "en": "Oh, please come in, |PLAYERNAME|. What do you need?",
-      "translated": "Oh, por favor entra, |PLAYERNAME|. ¿Qué necesitas?",
+      "key": "quests.actions_crystal.msg_1",
+      "en": "Sorry.",
+      "translated": "Przepraszam.",
       "source": "simple"
     },
     {
-      "key": "data.otservbr.global.npc.gorn.L112.61",
-      "en": "Of course, just browse through my wares. {Footballs} have to be purchased separately.",
-      "translated": "Por supuesto, simplemente navega por mis productos. {Footballs} debe comprarse por separado.",
-      "source": "simple"
+      "key": "quests.actions_using_crystals.say_2",
+      "en": "BOOOOM!",
+      "translated": "BOOOOM!",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.npc.graubart.L65.179",
-      "en": "Ahoi, young man |PLAYERNAME|. Looking for work on my ship?",
-      "translated": "Ahoi, joven |PLAYERNAME|. ¿Buscas trabajo en mi barco?",
-      "source": "simple"
+      "key": "quests.bigfoot_burden.gasp",
+      "en": "<gasp>",
+      "translated": "<gasp>",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.npc.gregor.L347.159",
-      "en": "Greetings, |PLAYERNAME|. What do you want?",
-      "translated": "Saludos, |PLAYERNAME|. ¿Qué deseas?",
-      "source": "simple"
+      "key": "quests.mission09_rock_troll.say_1",
+      "en": "<crack>",
+      "translated": "<crack>",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.npc.gregor.L348.160",
-      "en": "Be careful on your journeys.",
-      "translated": "Tenga cuidado en sus viajes.",
-      "source": "simple"
+      "key": "quests.mission12_into_fortress.say_1",
+      "en": "<click>",
+      "translated": "<click>",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.npc.gregor.L349.161",
-      "en": "Be careful on your journeys.",
-      "translated": "Tenga cuidado en sus viajes.",
-      "source": "simple"
+      "key": "quests.bigfoot_burden.crystals_charging",
+      "en": "The crystals are charging!",
+      "translated": "Kryształy się ładują!",
+      "source": "google_translate"
     },
     {
-      "key": "data.otservbr.global.npc.grizzly.adams.L146.91",
-      "en": "Welcome to the 'Paw and Fur - Hunting Elite' |PLAYERNAME|. Feel free to do {tasks} for us.",
-      "translated": "Bienvenido al '__PH0__' |PLAYERNAME|. Siéntete libre de hacer {tasks} por nosotros.",
-      "source": "simple"
+      "key": "quests.demon_oak.sound_3",
+      "en": "RISE, MINIONS, RISE FROM THE DEAD!!!!",
+      "translated": "Powstańcie, sługi, powstańcie z martwych!!!!",
+      "source": "google_translate"
     },
     {
-      "key": "data.otservbr.global.npc.grombur.L93.1129",
-      "en": "STOP RIGHT THERE!..... Oh, just a human. What's up big guy?",
-      "translated": "¡DETENTE AQUÍ!..... Oh, solo un humano. ¿Qué pasa, grandullón?",
-      "source": "simple"
-    },
-    {
-      "key": "data.otservbr.global.npc.guard.saros.L256.315",
-      "en": "I hope to see you soon.",
-      "translated": "Espero verte pronto.",
-      "source": "simple"
-    },
-    {
-      "key": "data.otservbr.global.npc.guard.saros.L257.316",
-      "en": "Good bye, |PLAYERNAME|. I really hope we'll talk again soon.",
-      "translated": "Adiós, |PLAYERNAME|. Realmente espero que volvamos a hablar pronto.",
-      "source": "simple"
-    },
-    {
-      "key": "data.otservbr.global.npc.guide.alexena.L104.1375",
-      "en": "Welcome to Carlin, |PLAYERNAME| Would you like some information and a map guide?",
-      "translated": "Bienvenido a Carlin, |PLAYERNAME| ¿Quieres información y una guía de mapas?",
-      "source": "simple"
-    },
-    {
-      "key": "data.otservbr.global.npc.guide.alexena.L106.1377",
-      "en": "Good bye and enjoy your stay in Carlin, |PLAYERNAME|",
-      "translated": "Adiós y disfruta de tu estancia en Carlin, |PLAYERNAME|",
-      "source": "simple"
-    },
-    {
-      "key": "data.otservbr.global.npc.guide.behil.L102.612",
-      "en": "Daraman's blessings, Black Sabbatth, welcome to Darashia! Would you like some information and a map guide?",
-      "translated": "Bendiciones de Daraman, Black Sabbatth, ¡bienvenidos a Darashia! ¿Quieres información y una guía cartográfica?",
-      "source": "simple"
-    },
-    {
-      "key": "data.otservbr.global.npc.guide.behil.L104.614",
-      "en": "Daraman's blessings, enjoy your stay in Darashia, |PLAYERNAME|",
-      "translated": "Bendiciones de Daraman, disfrute su estadía en Darashia, |PLAYERNAME|",
-      "source": "simple"
-    },
-    {
-      "key": "data.otservbr.global.npc.guide.davina.L103.1064",
-      "en": "Hello there, |PLAYERNAME| and welcome to Liberty Bay! Would you like some information and a map guide?",
-      "translated": "¡Hola, |PLAYERNAME| y bienvenido a Liberty Bay! ¿Quieres información y una guía cartográfica?",
-      "source": "simple"
-    },
-    {
-      "key": "data.otservbr.global.npc.guide.davina.L105.1066",
-      "en": "Good bye and enjoy your stay in Liberty Bay, |PLAYERNAME|",
-      "translated": "Adiós y disfruta de tu estancia en Liberty Bay, |PLAYERNAME|",
-      "source": "simple"
-    },
-    {
-      "key": "data.otservbr.global.npc.guide.edna.L100.147",
-      "en": "Meow, welcome to Yalahar |PLAYERNAME|! Even though I might not look like it, I can give you {information} and a {map} guide. Need some?",
-      "translated": "¡Miau, bienvenido a Yalahar |PLAYERNAME|! Aunque no lo parezca, puedo darte una guía de {information} y {map}. ¿Necesitas algo?",
-      "source": "simple"
-    },
-    {
-      "key": "data.otservbr.global.npc.guide.edna.L102.149",
-      "en": "Enjoy your stay in Yalahar, |PLAYERNAME|. Meow.",
-      "translated": "Disfrute de su estancia en Yalahar, |PLAYERNAME|. Maullido.",
-      "source": "simple"
-    },
-    {
-      "key": "data.otservbr.global.npc.guide.elena.L107.11",
-      "en": "Welcome to Venore, |PLAYERNAME| Would you like some information and a map guide?",
-      "translated": "Bienvenido a Venore, |PLAYERNAME| ¿Quieres información y una guía de mapas?",
-      "source": "simple"
+      "key": "quests.demon_oak.sound_6",
+      "en": "GET THERE WHERE I CAN REACH YOU!!!",
+      "translated": "DOJDŹ TAM, GDZIE MOGĘ DO CIĘ DOJŚĆ!!!",
+      "source": "google_translate"
     }
   ]
 }

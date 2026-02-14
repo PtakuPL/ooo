@@ -2,22 +2,23 @@
   "lang": "tr",
   "script_group": "latin",
   "total_keys": 53586,
-  "translated": 31406,
-  "identical_to_en": 29558,
-  "placeholder_keys": 20025,
-  "coverage_pct": 58.6,
-  "issues_total": 2,
+  "translated": 5102,
+  "identical_to_en": 2950,
+  "placeholder_keys": 46329,
+  "coverage_pct": 9.5,
+  "issues_total": 3,
   "issues_by_type": {
+    "V4_artifact": 1,
     "V1_placeholder_mismatch": 1,
     "V5_pipe_mismatch": 1
   },
   "issues_by_severity": {
     "CRITICAL": 2,
-    "HIGH": 0,
+    "HIGH": 1,
     "MEDIUM": 0,
     "LOW": 0
   },
-  "score": 100.0,
+  "score": 99.9,
   "worst_keys": [
     {
       "key": "talkaction.online.msg_summary",
@@ -30,15 +31,21 @@
       "category": "talkactions",
       "type": "V5_pipe_mismatch",
       "severity": "CRITICAL"
+    },
+    {
+      "key": "achievement.317.description",
+      "category": "achievements",
+      "type": "V4_artifact",
+      "severity": "HIGH"
     }
   ],
   "crossref": {
-    "enabled": true,
-    "issues_total": 414,
-    "consistency": 2,
+    "enabled": false,
+    "issues_total": 419,
+    "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 12,
-    "auto_fix_applied": 80
+    "length_ratio": 19,
+    "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-14T11:22:53.110152Z"
+  "validated_at": "2026-02-14T11:45:43.673368Z"
 }

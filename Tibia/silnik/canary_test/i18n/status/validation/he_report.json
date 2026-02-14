@@ -2,10 +2,10 @@
   "lang": "he",
   "script_group": "rtl",
   "total_keys": 53586,
-  "translated": 35775,
-  "identical_to_en": 34528,
-  "placeholder_keys": 15656,
-  "coverage_pct": 66.8,
+  "translated": 5015,
+  "identical_to_en": 3706,
+  "placeholder_keys": 46416,
+  "coverage_pct": 9.4,
   "issues_total": 109,
   "issues_by_type": {
     "script_rtl_insufficient": 100,
@@ -19,7 +19,7 @@
     "MEDIUM": 0,
     "LOW": 0
   },
-  "score": 99.5,
+  "score": 96.5,
   "worst_keys": [
     {
       "key": "scripts.actions_rewards.msg_1",
@@ -143,12 +143,12 @@
     }
   ],
   "crossref": {
-    "enabled": true,
+    "enabled": false,
     "issues_total": 417,
     "consistency": 0,
     "pl_reference": 400,
     "length_ratio": 17,
-    "auto_fix_applied": 62
+    "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-14T11:22:25.993345Z"
+  "validated_at": "2026-02-14T11:45:10.953606Z"
 }

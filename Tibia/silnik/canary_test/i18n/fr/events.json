@@ -1,9 +1,9 @@
 {
   "event.player.msg1": "Vous ne pouvez pas déplacer cet objet aussi vite.",
-  "event.player.msg2": "daily-reward-xp-boost",
-  "event.player.msg3": "daily-reward-xp-boost",
-  "event.player.msg4": "daily-reward-xp-boost",
-  "event.player.msg5": "daily-reward-xp-boost",
+  "event.player.msg2": "[EN] daily-reward-xp-boost",
+  "event.player.msg3": "[EN] daily-reward-xp-boost",
+  "event.player.msg4": "[EN] daily-reward-xp-boost",
+  "event.player.msg5": "[EN] daily-reward-xp-boost",
   "event.player.msg_1": "Vous ne rechargez plus votre endurance, car vous avez quitté une zone de régénération.",
   "event.player.msg_2": "Une erreur s'est produite lors du traitement de votre signalement, veuillez contacter un maître du jeu.",
   "event.player.msg_3": "Merci d'avoir signalé {}. Votre signalement \\z\n\tsera traité par l'équipe {} dès que possible.",

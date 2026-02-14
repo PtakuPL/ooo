@@ -3,7 +3,7 @@
   "script_group": "exotic",
   "total_keys": 53586,
   "translated": 30915,
-  "identical_to_en": 29940,
+  "identical_to_en": 29926,
   "placeholder_keys": 20516,
   "coverage_pct": 57.7,
   "issues_total": 112,
@@ -149,5 +149,5 @@
     "length_ratio": 6,
     "auto_fix_applied": 14
   },
-  "validated_at": "2026-02-14T11:17:30.560074Z"
+  "validated_at": "2026-02-14T11:42:32.364427Z"
 }

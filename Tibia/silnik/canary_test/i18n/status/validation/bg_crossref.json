@@ -1,10 +1,10 @@
 {
   "lang": "bg",
-  "coverage_pct": 61.4,
+  "coverage_pct": 61.3,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-14T11:13:57.470300Z",
+  "checked_at": "2026-02-14T11:39:01.392610Z",
   "issues_total": 414,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -518,222 +518,6 @@
       "lang": "And so the conspirators met again in secrecy to plot the pharaoh's fall."
     },
     {
-      "key": "book.otbm.and_the_lord_spake_saying",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "And the Lord spake, saying:",
-      "pl": "I the Lord spake, powiedzenie:",
-      "lang": "And the Lord spake, saying:"
-    },
-    {
-      "key": "book.otbm.and_then_suddenly_the_wand",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "And then suddenly the wand of might began to glow....",
-      "pl": "I wtedy nagle the czarodziejska różdżka, różdżka z might began do I.....",
-      "lang": "And then suddenly the wand of might began to glow...."
-    },
-    {
-      "key": "book.otbm.and_to_remedy_that_he",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "And to remedy that he invented TIME!",
-      "pl": "I do I. that on wynajdować, wymyślać CZAS!",
-      "lang": "And to remedy that he invented TIME!"
-    },
-    {
-      "key": "book.otbm.another_factor_is_the_shipping",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Another factor is the shipping dock and the woodcutting in the Venore area. Before the Edron colony was established, the Venore area was the major source for wood needed for constrution and tools. What seems odd at the first glance, given the swamp area Venore was built in becomes more understandable when considering the next factor: Until the Druids and mages drove away all those poisonous insects and creatures the area was known for its diseases and a criminal colony in the beginning. So the merchants had a steady supply of cheap workers that had to do every job appointed to.",
-      "pl": "ANiether czynnik jest the transport morski I. i the woodcutting w the VeNiere obszar, region. I. the Edron kolonia był zakładać, the VeNiere obszar, region był the I. źródło dla drewno potrzebować dla constrution i narzędzie. I. a. wydawać się być, wydawać się, zdawać się I. w the I. I., I. the I. obszar, region VeNiere był zbudowany w stawać się more zrozumiały when biorąc pod uwagę the next czynnik: I. the Druids i mages droves I. wszystkie those poisoNieus owad i stwory the obszar, region był kNiewn dla jego, jej, ich, swój choroba, schorzenie i jeden criminal kolonia w the początek. I. the I. miał jeden I. I. z tani pracownik that miał do robić I. job mianować do.",
-      "lang": "Another factor is the shipping dock and the woodcutting in the Venore area. Before the Edron colony was established, the Venore area was the major source for wood needed for constrution and tools. What seems odd at the first glance, given the swamp area Venore was built in becomes more understandable when considering the next factor: Until the Druids and mages drove away all those poisonous insects and creatures the area was known for its diseases and a criminal colony in the beginning. So the merchants had a steady supply of cheap workers that had to do every job appointed to."
-    },
-    {
-      "key": "book.otbm.apothecary_and_holy_grounds_of",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Apothecary and Holy Grounds of the Dark Priestesses.",
-      "pl": "Apothecary i Święty Ziemia z the I. Kapłanka.",
-      "lang": "Apothecary and Holy Grounds of the Dark Priestesses."
-    },
-    {
-      "key": "book.otbm.apparently_winning_uman_gave_humans",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "apparently winning. Uman gave humans the art of magic and instructed them in the magic crafts. But even the sorcerers could",
-      "pl": "pozorny I.. Uman gave I. the I. z I. i instruować ich w the I. crafts. I. I. the sorcerers mógł",
-      "lang": "apparently winning. Uman gave humans the art of magic and instructed them in the magic crafts. But even the sorcerers could"
-    },
-    {
-      "key": "book.otbm.aquatic_life_observation_tank",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Aquatic Life Observation Tank",
-      "pl": "Wodny I. Obserwacja I.",
-      "lang": "Aquatic Life Observation Tank"
-    },
-    {
-      "key": "book.otbm.armaments_chapter_two_verses_nine",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Armaments, Chapter Two, Verses Nine to Twenty-One.",
-      "pl": "Uzbrojenie, Rozdział Dwa, Wiersz Dziewięć do Dwadzieścia-I..",
-      "lang": "Armaments, Chapter Two, Verses Nine to Twenty-One."
-    },
-    {
-      "key": "book.otbm.armies_of_humans_they_triumphed",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "armies of humans, they triumphed, but on the other battlegrounds they were too often crushed by the dark crowds.",
-      "pl": "wojsko, armia z I., oni I., I. na the drugi, pozostały teren walki oni były też, także często crushed by the I. crowds.",
-      "lang": "armies of humans, they triumphed, but on the other battlegrounds they were too often crushed by the dark crowds."
-    },
-    {
-      "key": "book.otbm.armour_and_weapon_storage",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Armour and Weapon Storage",
-      "pl": "Armour i Broń Magazynowanie, przechowywanie",
-      "lang": "Armour and Weapon Storage"
-    },
-    {
-      "key": "book.otbm.as_expected_nothing_useful_could",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "As expected nothing useful could be learnt, even though the vampiric regeneration could once again be observed.",
-      "pl": "As spodziewać się Niething użyteczny mógł być learnt, I. I. the vampiric regeneration mógł raz ponownie być observed.",
-      "lang": "As expected nothing useful could be learnt, even though the vampiric regeneration could once again be observed."
-    },
-    {
-      "key": "book.otbm.as_expected_sunlight_had_an",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "As expected sunlight had an effect on the creatures though not as severe and effective as one might wish.",
-      "pl": "As spodziewać się słońce, światło słońca miał jeden I. na the stwory I. Niet as poważny, niebezpieczny i efektywny as I. might I..",
-      "lang": "As expected sunlight had an effect on the creatures though not as severe and effective as one might wish."
-    },
-    {
-      "key": "book.otbm.as_intensely_as_the_orcs",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "As intensely as the orcs hate all other races, they share a feeling of community. The orcs can sense, to some extent, the feelings of other orcs. The shamans develop this ability to such an extent, that they can sense the innermost potential of newborn orc whelps. All newborn are tested and the shamans decide a future function in orcish society. The whelps are fed differently, raised differently, and educated differently. Wise men of other races say that such behavior is similar to some insects, such as bees, and through their empathetic bond might share a kind of 'hive-mind', so they refer to orc communities as hives. The chief of a hive owns a big harem of women who have no other function than to pleasure him and give birth to new orcs. These orcish matrons are usually incredibly big and fat, almost not able to walk on their own. Where 'normal' orcwomen function as laborer and craftwomen and give birth to two to three orcs in their lives, these female orcs are only reproductive machinery, giving birth to about six whelps each half year. Orcs are usually contend with their place in orcish society and only the leaders fight each other on purpose. Rarely will an orc raise a weapon against another orc, even if they are not of the same hive. Rivalry between hives is usually dissolved through a fight of their leaders and the victorious hive absorbs the other one. Now and then, when a new strong warrior reaches maturity he challenges the old leader for a fight of supremacy. Sometimes though, when the hive becomes too big for the area it occupies, such a warrior senses somehow that its time to move on. Then he and a few other orcs leave the hive in peace to settle somewhere else. This unique culture, together with its fertility, makes the orcs the most formidable threat to all other tibian communities.",
-      "pl": "As gwałtowny, silny as the orcs I. wszystkie drugi, pozostały Królewski Automobilklub, oni I. jeden uczucie z I.. The orcs może sense, do I. rozmiar, the uczucie z drugi, pozostały orcs. The shamans rozwijać się, rozwijać I. zdolność, możliwość do taki jeden rozmiar, that oni może sense the innermost I. z nowonarodzony orc whelps. Wszystkie nowonarodzony są I. i the shamans decydować się, decydować jeden I. I. w orcish społeczeństwo. The whelps są fed różny, wyniesiony, wypukły różny, i educated różny. I. men z drugi, pozostały Królewski Automobilklub I. that taki behavior jest podobny do I. owad, taki as być, i through ich empathetic I. might I. jeden I. z 'ul-mind', I. oni wspominać do orc I. as ul. The I. z jeden ul I. jeden duży, wielki harem z women kto masz Nie drugi, pozostały I. z niż do radość, przyjemność him i give I. do new orcs. These orcish siostra przełożona są zazwyczaj incredibly duży, wielki i I., prawie Niet zdolny do I. na ich I.. Where 'Niermal' orcwomen I. as laborer i craftwomen i give I. do dwa do trzy orcs w ich lives, these I. orcs są tylko rozrodczy urządzenia mechaniczne, maszyny, giving I. do o sześć whelps I. I. a. rok. Orcs są zazwyczaj współzawodniczyć z ich I. w orcish społeczeństwo i tylko the lider, przywódca I. I. drugi, pozostały na cel. Rzadko will jeden orc I. jeden broń o aNiether orc, I. if oni są Niet z the I. ul. Rywalizacja pomiędzy, między ul jest zazwyczaj dissolved through jeden I. z ich lider, przywódca i the zwycięski ul wchłaniać the drugi, pozostały I.. Niew i wtedy, when jeden new silny, mocny wojownik reaches dojrzałość, dorosłość on I. the I. lider, przywódca dla jeden I. z przewaga, supremacja. Kiedyś, pewnego razu I., when the ul stawać się też, także duży, wielki dla the obszar, region to zajmować, taki jeden wojownik senses w jakiś sposób, jakoś that jego, jej, ich, swój czas do I. na. Wtedy on i jeden few drugi, pozostały orcs I. the ul w peace do I. gdzieś a. inny, jeszcze. I. unikalny, unikatowy culture, razem z jego, jej, ich, swój fertility, makes the orcs the most groźny, trudny groźba do wszystkie drugi, pozostały tibian I..",
-      "lang": "As intensely as the orcs hate all other races, they share a feeling of community. The orcs can sense, to some extent, the feelings of other orcs. The shamans develop this ability to such an extent, that they can sense the innermost potential of newborn orc whelps. All newborn are tested and the shamans decide a future function in orcish society. The whelps are fed differently, raised differently, and educated differently. Wise men of other races say that such behavior is similar to some insects, such as bees, and through their empathetic bond might share a kind of 'hive-mind', so they refer to orc communities as hives. The chief of a hive owns a big harem of women who have no other function than to pleasure him and give birth to new orcs. These orcish matrons are usually incredibly big and fat, almost not able to walk on their own. Where 'normal' orcwomen function as laborer and craftwomen and give birth to two to three orcs in their lives, these female orcs are only reproductive machinery, giving birth to about six whelps each half year. Orcs are usually contend with their place in orcish society and only the leaders fight each other on purpose. Rarely will an orc raise a weapon against another orc, even if they are not of the same hive. Rivalry between hives is usually dissolved through a fight of their leaders and the victorious hive absorbs the other one. Now and then, when a new strong warrior reaches maturity he challenges the old leader for a fight of supremacy. Sometimes though, when the hive becomes too big for the area it occupies, such a warrior senses somehow that its time to move on. Then he and a few other orcs leave the hive in peace to settle somewhere else. This unique culture, together with its fertility, makes the orcs the most formidable threat to all other tibian communities."
-    },
-    {
-      "key": "book.otbm.as_intensely_as_the_orcs_6bef4fc7",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "As intensely as the orcs hate all other races, they share a feeling of community. The orcs can sense, to some extent, the feelings of other orcs. The shamans develop this ability to such an extent, that they can sense the innermost potential of newborn orc whelps. All newborn are tested and the shamans decide a future function in orcish society. The whelps are fed differently, raised differently, and educated differently. Wise men of other races say that such behavior is similar to some insects, such as bees, and through their empathetic bond might share a kind of 'hive-mind', so they refer to orc communities as hives. The chief of a hive owns a big harem of women who have no other function than to pleasure him and give birth to new orcs. These orcish matrons are usually incredibly big and fat, almost not able to walk on their own. Where 'normal' orcwomen function as laborer and craftwomen and give birth to two to three orcs in their lives, these female orcs are only reproductive machinery, giving birth to about six whelps each half year. Orcs are usually contend with their place in orcish society and only the leaders fight each other on purpose. Rarely will an orc raise a weapon against another orc, even if they are not of the same hive. Rivalry between hives is usually dissolved through a fight of their leaders and the victorious hive absorbs the other one. Now and then, when a new strong warrior reaches maturity he challenges the old leader for a fight of supremacy. Sometimes though, when the hive becomes too big for the area it occupies, such a warrior senses somehow that its time to move on. Then he and a few other orcs leave the hive in peace to settle somewhere else. This unique culture, together with its fertility, makes the orcs the most formidable threat to all other tibian communities.",
-      "pl": "As gwałtowny, silny as the orcs I. wszystkie drugi, pozostały Królewski Automobilklub, oni I. jeden uczucie z I.. The orcs może sense, do I. rozmiar, the uczucie z drugi, pozostały orcs. The shamans rozwijać się, rozwijać I. zdolność, możliwość do taki jeden rozmiar, that oni może sense the innermost I. z nowonarodzony orc whelps. Wszystkie nowonarodzony są I. i the shamans decydować się, decydować jeden I. I. w orcish społeczeństwo. The whelps są fed różny, wyniesiony, wypukły różny, i educated różny. I. men z drugi, pozostały Królewski Automobilklub I. that taki behavior jest podobny do I. owad, taki as być, i through ich empathetic I. might I. jeden I. z 'ul-mind', I. oni wspominać do orc I. as ul. The I. z jeden ul I. jeden duży, wielki harem z women kto masz Nie drugi, pozostały I. z niż do radość, przyjemność him i give I. do new orcs. These orcish siostra przełożona są zazwyczaj incredibly duży, wielki i I., prawie Niet zdolny do I. na ich I.. Where 'Niermal' orcwomen I. as laborer i craftwomen i give I. do dwa do trzy orcs w ich lives, these I. orcs są tylko rozrodczy urządzenia mechaniczne, maszyny, giving I. do o sześć whelps I. I. a. rok. Orcs są zazwyczaj współzawodniczyć z ich I. w orcish społeczeństwo i tylko the lider, przywódca I. I. drugi, pozostały na cel. Rzadko will jeden orc I. jeden broń o aNiether orc, I. if oni są Niet z the I. ul. Rywalizacja pomiędzy, między ul jest zazwyczaj dissolved through jeden I. z ich lider, przywódca i the zwycięski ul wchłaniać the drugi, pozostały I.. Niew i wtedy, when jeden new silny, mocny wojownik reaches dojrzałość, dorosłość on I. the I. lider, przywódca dla jeden I. z przewaga, supremacja. Kiedyś, pewnego razu I., when the ul stawać się też, także duży, wielki dla the obszar, region to zajmować, taki jeden wojownik senses w jakiś sposób, jakoś that jego, jej, ich, swój czas do I. na. Wtedy on i jeden few drugi, pozostały orcs I. the ul w peace do I. gdzieś a. inny, jeszcze. I. unikalny, unikatowy culture, razem z jego, jej, ich, swój fertility, makes the orcs the most groźny, trudny groźba do wszystkie drugi, pozostały tibian I..",
-      "lang": "As intensely as the orcs hate all other races, they share a feeling of community. The orcs can sense, to some extent, the feelings of other orcs. The shamans develop this ability to such an extent, that they can sense the innermost potential of newborn orc whelps. All newborn are tested and the shamans decide a future function in orcish society. The whelps are fed differently, raised differently, and educated differently. Wise men of other races say that such behavior is similar to some insects, such as bees, and through their empathetic bond might share a kind of 'hive-mind', so they refer to orc communities as hives. The chief of a hive owns a big harem of women who have no other function than to pleasure him and give birth to new orcs. These orcish matrons are usually incredibly big and fat, almost not able to walk on their own. Where 'normal' orcwomen function as laborer and craftwomen and give birth to two to three orcs in their lives, these female orcs are only reproductive machinery, giving birth to about six whelps each half year. Orcs are usually contend with their place in orcish society and only the leaders fight each other on purpose. Rarely will an orc raise a weapon against another orc, even if they are not of the same hive. Rivalry between hives is usually dissolved through a fight of their leaders and the victorious hive absorbs the other one. Now and then, when a new strong warrior reaches maturity he challenges the old leader for a fight of supremacy. Sometimes though, when the hive becomes too big for the area it occupies, such a warrior senses somehow that its time to move on. Then he and a few other orcs leave the hive in peace to settle somewhere else. This unique culture, together with its fertility, makes the orcs the most formidable threat to all other tibian communities."
-    },
-    {
-      "key": "book.otbm.as_long_as_the_pits",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "As long as the pits were defended by the Nightmare Knights, who must have known previously when an eruption would occur, the demons could be fought back while they were still materialising and thus, most vulnerable. Now that the pits are lost and overrun by demonic hordes, an attack becomes more and more likely.",
-      "pl": "As long as the dół, jama były bronić by the Zły sen I., kto musi masz kNiewn poprzednio when jeden wybuch would zdarzać się, następować, the demon mógł być fought I. I. oni były I. materialising i toteż, dlatego, most wrażliwy, podatny na zranienie, podatny. Niew that the dół, jama są I. i przechwytywać by demoniczny, złowrogi zgraja, horda, jeden I. stawać się more i more możliwy.",
-      "lang": "As long as the pits were defended by the Nightmare Knights, who must have known previously when an eruption would occur, the demons could be fought back while they were still materialising and thus, most vulnerable. Now that the pits are lost and overrun by demonic hordes, an attack becomes more and more likely."
-    },
-    {
-      "key": "book.otbm.as_long_as_there_are",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "As long as there are enough minions to boost the negative energy of a place, demons can exist for a very long time in our realm. So in theory, it would also be possible that the gate between the two realms is kept open, allowing more and more demons to enter our world that can easily form a demonic army causing mayhem and havoc.",
-      "pl": "As long as Są eNieugh minions do I. the I. energia z jeden I., demon może istnieć dla jeden I. long czas w nasz dziedzina, sfera. I. w teoria, to would także być możliwy that the brama pomiędzy, między the dwa dziedzina, sfera jest kept otwórz, I. more i more demon do I. nasz I. that może łatwo I. jeden demoniczny, złowrogi wojsko, armia causing mayhem i chaos, zamieszanie.",
-      "lang": "As long as there are enough minions to boost the negative energy of a place, demons can exist for a very long time in our realm. So in theory, it would also be possible that the gate between the two realms is kept open, allowing more and more demons to enter our world that can easily form a demonic army causing mayhem and havoc."
-    },
-    {
-      "key": "book.otbm.as_the_king_became_sick",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "As the king became sick and no one was able to heal him, the traitor stepped forward with a strange medicine. Trusting in his beloved servant, the king drank the medicine which actually was the blood of some servant that had been murdered recently. The medicine seemed to restore the king's strength, so the traitor had no trouble to feed him with more blood. Soon the king's appearance started to change. His aversion to sunlight and his paleness were attributed to his illness, but also the king's temper and behaviour turned more and more violent and aggressive. Nonetheless, the people loved their king and put up with his moods.",
-      "pl": "As the król became I. i Nie I. był zdolny do I. him, the zdrajca stepped I. z jeden dziwny medycyna. Ufny w jego ukochany I., the król drank the medycyna I. naprawdę był the I. z I. I. that miał był I. niedawno. The medycyna a. wydawać się być, wydawać się, zdawać się do przywracać the król siła, I. the zdrajca miał Nie I. do I. him z more I.. Wkrótce, szybko the król pojawienie się uruchomioNie do change. Jego wstręt do słońce, światło słońca i jego bladość były attributed do jego choroba, I. także the król I. i zachowanie się, zachowanie turned more i more gwałtowny i zaczepny, agresywny. Nienetheless, the I. loved ich król i put up z jego nastrój, humor.",
-      "lang": "As the king became sick and no one was able to heal him, the traitor stepped forward with a strange medicine. Trusting in his beloved servant, the king drank the medicine which actually was the blood of some servant that had been murdered recently. The medicine seemed to restore the king's strength, so the traitor had no trouble to feed him with more blood. Soon the king's appearance started to change. His aversion to sunlight and his paleness were attributed to his illness, but also the king's temper and behaviour turned more and more violent and aggressive. Nonetheless, the people loved their king and put up with his moods."
-    },
-    {
-      "key": "book.otbm.as_the_orcs_approached_ive",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "As the orcs approached I've hidden myself in the bushes near the lake. I did hardly dare to breath as they met only some inches from my nose. I thought my wild beating heart might betray me to this murderous beasts.",
-      "pl": "As the orcs I. I've hidden się, siebie, sobie w the krzak I. the jezioro. I zrobił prawie nie dare do a. oddech as oni met tylko I. I. z mój Niese. I myśl mój I. I. serce might zdradzać mnie, mi do I. morderczy zwierzę.",
-      "lang": "As the orcs approached I've hidden myself in the bushes near the lake. I did hardly dare to breath as they met only some inches from my nose. I thought my wild beating heart might betray me to this murderous beasts."
-    },
-    {
-      "key": "book.otbm.as_we_travelled_through_the",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "As we travelled through the dungeon tunnels we came to a big cave. In the light of our torches we saw several eyes glowing in the darkness, then the trolls attacked, silently as usual. We immediately dropped our torches and raised our shields to block the first attack, then we counterattacked. Soon the floor was wet with blood, ours and theirs. They were very skilled in blocking our blows and I am sure with inferior weapons we would have hacked on these beasts for an eternity.",
-      "pl": "As my podróżled through the loch, więzienie I. my came do jeden duży, wielki I.. W the I. z nasz latarka my saw I. eTak entuzjastyczny w the ciemność, wtedy the trolls I., cichy as zwyczajny. My natychmiast dropped nasz latarka i wyniesiony, wypukły nasz I. do block the I. I., wtedy my counterattacked. Wkrótce, szybko the I. był I. z I., nasz i ich. Oni były I. wykwalifikowany, wyszkolony w blocking nasz blows i I am sure z I. broń my would masz I. na these zwierzę dla jeden wieczność.",
-      "lang": "As we travelled through the dungeon tunnels we came to a big cave. In the light of our torches we saw several eyes glowing in the darkness, then the trolls attacked, silently as usual. We immediately dropped our torches and raised our shields to block the first attack, then we counterattacked. Soon the floor was wet with blood, ours and theirs. They were very skilled in blocking our blows and I am sure with inferior weapons we would have hacked on these beasts for an eternity."
-    },
-    {
-      "key": "book.otbm.as_with_other_tests_it",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "As with other tests it could be observed that the vampires have the ability of regeneration but not of regrowth.",
-      "pl": "As z drugi, pozostały I. to mógł być observed that the wampir masz the zdolność, możliwość z regeneration I. Niet z regrowth.",
-      "lang": "As with other tests it could be observed that the vampires have the ability of regeneration but not of regrowth."
-    },
-    {
-      "key": "book.otbm.ask_for_the_different_goods",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ask for the different goods you need.",
-      "pl": "I. dla the różny I. Potrzebujesz.",
-      "lang": "Ask for the different goods you need."
-    },
-    {
-      "key": "book.otbm.ask_muriel_to_learn_spells",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ask Muriel to learn spells or to",
-      "pl": "I. Muriel do uczyć się, nauczyć się zaklęCentalna Agencja Wywiadowcza lub do",
-      "lang": "Ask Muriel to learn spells or to"
-    },
-    {
-      "key": "book.otbm.at_a_store_sell_spare",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "at a store. Sell spare food at the farm.",
-      "pl": "w jeden I.. Sprzedaj I. jedzenie, pożywienie w the I..",
-      "lang": "at a store. Sell spare food at the farm."
-    },
-    {
-      "key": "book.otbm.at_last_even_baaleal_who",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "At last even Baa'leal, who led the Efreet in battle, had to admit that the Marid and their despised human allies fought valiantly. However, despite the heavy losses he was determined to decide the war there and now. He summoned the most powerful Efreet wizards and ordered them to unleash a huge column of magic fire onto Ankrahmun in order to render the city and all those in it to cinders. The Efreet wizards' followed his orders and soon a wall of devastating fire rose up to the sky. However, when they tried to move it onto Ankrahmun they soon realised that it did not move into the desired direction. The Marid had soon seen through Baa'leals plan, and Fa'hradin and his fellow Marid mages used their own magic to turn the devastating flames against their creators. A fierce battle of wills ensued between the mages from both sides, and the whole battle came to a halt when the two armies watched in horrified fascination as the terrible pile of flames wandered seemingly undecided to and fro. But then, all of a sudden, the pile made a sudden leap to the north, and within seconds those who had summoned it from the sky were reduced to smouldering ashes. That was the turning point of the great battle.",
-      "pl": "W last I. Baa'leal, kto led the Efreet w I., miał do przyznać się that the Marid i ich despised I. allies fought bohaterski, dzielny. Jednak, pomimo, mimo the ciężki strata, utrata on był zdecydowany do decydować się, decydować the I. there i Niew. On I. the most potężny Efreet czarnoksiężnik i ordered ich do uwalniać jeden ogromny kolumna z I. fire onto Ankrahmun w order do a. czynić, sprawiać the miasto i wszystkie those w to do cinders. The Efreet czarnoksiężnik' I. jego orders i wkrótce, szybko jeden ściana, mur z devastating fire I. up do the niebo. Jednak, when oni tried do I. to onto Ankrahmun oni wkrótce, szybko realised that to zrobił Niet I. a. do the desired kierunek. The Marid miał wkrótce, szybko seen through Baa'leals I., i Fa'hradin i jego facet, gość Marid mages used ich I. I. do turn the devastating płomień o ich creators. JEDEN zajadły I. z wills ensued pomiędzy, między the mages z obaj I., i the I. I. came do jeden zatrzymywać się, zatrzymywać when the dwa wojsko, armia watched w horrified fascynacja as the straszny, okropny pile z płomień wędrować pozorny niezdecydowany do i to and fro. I. wtedy, wszystkie z jeden nagły, the pile zrobiony jeden nagły I. do the Nierth, i wewnątrz sekundy those kto miał I. to z the niebo były reduced do smouldering popiół. That był the I. point z the I. I..",
-      "lang": "At last even Baa'leal, who led the Efreet in battle, had to admit that the Marid and their despised human allies fought valiantly. However, despite the heavy losses he was determined to decide the war there and now. He summoned the most powerful Efreet wizards and ordered them to unleash a huge column of magic fire onto Ankrahmun in order to render the city and all those in it to cinders. The Efreet wizards' followed his orders and soon a wall of devastating fire rose up to the sky. However, when they tried to move it onto Ankrahmun they soon realised that it did not move into the desired direction. The Marid had soon seen through Baa'leals plan, and Fa'hradin and his fellow Marid mages used their own magic to turn the devastating flames against their creators. A fierce battle of wills ensued between the mages from both sides, and the whole battle came to a halt when the two armies watched in horrified fascination as the terrible pile of flames wandered seemingly undecided to and fro. But then, all of a sudden, the pile made a sudden leap to the north, and within seconds those who had summoned it from the sky were reduced to smouldering ashes. That was the turning point of the great battle."
-    },
-    {
       "key": "book.otbm.at_last_malor_prepared_for",
       "category": "books",
       "type": "pl_reference_missing_translation",
@@ -939,42 +723,6 @@
       "en": "Battle tactics for Demona - Mazeforces",
       "pl": "I. taktyka dla Demona - Mazeforces",
       "lang": "Battle tactics for Demona - Mazeforces"
-    },
-    {
-      "key": "book.otbm.battletactics_for_mages_i",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Battletactics for Mages [I]",
-      "pl": "Battletactics dla Mages [I]",
-      "lang": "Battletactics for Mages [I]"
-    },
-    {
-      "key": "book.otbm.battletactics_for_mages_ii",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Battletactics for Mages [II]",
-      "pl": "Battletactics dla Mages [II]",
-      "lang": "Battletactics for Mages [II]"
-    },
-    {
-      "key": "book.otbm.battletactics_for_mages_iii",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Battletactics for Mages [III]",
-      "pl": "Battletactics dla Mages [III]",
-      "lang": "Battletactics for Mages [III]"
-    },
-    {
-      "key": "book.otbm.battletactics_for_mages_iv",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Battletactics for Mages [IV]",
-      "pl": "Battletactics dla Mages [IV]",
-      "lang": "Battletactics for Mages [IV]"
     },
     {
       "key": "book.otbm.be_aware_that_our_kind",
@@ -1535,15 +1283,6 @@
       "lang": "by an unknown necromancer."
     },
     {
-      "key": "book.otbm.by_jonea_ancient_council_of",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "By Jonea, ancient council of the warlocks",
-      "pl": "By Jonea, starożytny council z the warlocks",
-      "lang": "By Jonea, ancient council of the warlocks"
-    },
-    {
       "key": "book.otbm.by_the_way_the_summoning",
       "category": "books",
       "type": "pl_reference_missing_translation",
@@ -1578,15 +1317,6 @@
       "en": "Captain Osgrain, scourge of the orcs, liberator of the coasts",
       "pl": "I. Osgrain, plaga, bicz Boży z the orcs, liberator z the brzeg, wybrzeże",
       "lang": "Captain Osgrain, scourge of the orcs, liberator of the coasts"
-    },
-    {
-      "key": "book.otbm.cast_by_rootos_sprout",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "- cast by Rootos Sprout -",
-      "pl": "- cast by Rootos I. -",
-      "lang": "- cast by Rootos Sprout -"
     },
     {
       "key": "book.otbm.castle_of_the_white_dragon",
@@ -3002,15 +2732,6 @@
       "lang": "former master, before he hid them from me."
     },
     {
-      "key": "book.otbm.fort_o_th_nare_igh",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Fort... o. th. N.....are ..igh..",
-      "pl": "Fort... o. th. N.....są..igh..",
-      "lang": "Fort... o. th. N.....are ..igh.."
-    },
-    {
       "key": "book.otbm.from_or_whether_they_always",
       "category": "books",
       "type": "pl_reference_missing_translation",
@@ -3252,15 +2973,6 @@
       "en": "Greetings brothers and sisters!",
       "pl": "Witaj brat i I.!",
       "lang": "Greetings brothers and sisters!"
-    },
-    {
-      "key": "book.otbm.greetings_by_darruk_the_redscarred",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "- Greetings by Darruk the Redscarred.",
-      "pl": "- Witaj by Darruk the Redscarred.",
-      "lang": "- Greetings by Darruk the Redscarred."
     },
     {
       "key": "book.otbm.greetings_fellow_brother",
@@ -3612,6 +3324,294 @@
       "en": "however immediately the first dragon, called Garsharak, rose and he bore many further lower dragons in the course of the",
       "pl": "jednak natychmiast the I. smok, called Garsharak, I. i on I. wiele, dużo further I. smok w the course z the",
       "lang": "however immediately the first dragon, called Garsharak, rose and he bore many further lower dragons in the course of the"
+    },
+    {
+      "key": "book.otbm.however_we_are_very_happy",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "However, we are very happy that we own it because it helped us and it will help us to understand the magic web around Tibia.",
+      "pl": "Jednak, my są I. a. szczęśliwy that my I. to ponieważ, bo to helped nas i to will help nas do rozumieć, pojmować the I. pajęczyna around Tibia.",
+      "lang": "However, we are very happy that we own it because it helped us and it will help us to understand the magic web around Tibia."
+    },
+    {
+      "key": "book.otbm.huv_stollan_match_stuf_from",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Huv stollan match stuf from humutown.",
+      "pl": "Huv stollan I. stuf z humutown.",
+      "lang": "Huv stollan match stuf from humutown."
+    },
+    {
+      "key": "book.otbm.i_advice_not_to_try",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I advice not to try that until you have at least 20 years experience in rail construction......<Well, seems like you don't match the premises.>",
+      "pl": "I rada Niet do I. that I. Masz w najmniej 20 a. rok I. w poręcz budowa......<Well, seems like you don't match the premises.>",
+      "lang": "I advice not to try that until you have at least 20 years experience in rail construction......<Well, seems like you don't match the premises.>"
+    },
+    {
+      "key": "book.otbm.i_am_glad_to_be",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I am glad to be a member already, I doubt I could pass this test myself.",
+      "pl": "I am a. szczęśliwy do być jeden I. już, I I. I mógł I. I. I. się, siebie, sobie.",
+      "lang": "I am glad to be a member already, I doubt I could pass this test myself."
+    },
+    {
+      "key": "book.otbm.i_am_selling_a_few",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I am selling a few things hopefully for your pleasure:",
+      "pl": "I am sprzedaj jeden few rzecz z nadzieją dla twój radość, przyjemność:",
+      "lang": "I am selling a few things hopefully for your pleasure:"
+    },
+    {
+      "key": "book.otbm.i_cant_figure_out_how",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I can't figure out how to reanimate",
+      "pl": "I can't I. out jak do reanimate",
+      "lang": "I can't figure out how to reanimate"
+    },
+    {
+      "key": "book.otbm.i_could_easily_open_the",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I could easily open the gate with the power of my will. But after I was in the magic web I lost control. So I came out near Carlin although I wanted to come out near the east gate of Thais.",
+      "pl": "I mógł łatwo otwórz the brama z the I. z mój will. I. after I był w the I. pajęczyna I I. control. I. I came out I. Carlin chociaż I I. do come out I. the I. brama z Thais.",
+      "lang": "I could easily open the gate with the power of my will. But after I was in the magic web I lost control. So I came out near Carlin although I wanted to come out near the east gate of Thais."
+    },
+    {
+      "key": "book.otbm.i_discovered_in_the_ancient",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I discovered in the ancient scrolls of my",
+      "pl": "I odkrywać w the starożytny zwój z mój",
+      "lang": "I discovered in the ancient scrolls of my"
+    },
+    {
+      "key": "book.otbm.i_dont_think_the_dream",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I don't think the Dream Challenge is too difficult.",
+      "pl": "I don't I. the I. I. jest też, także trudny.",
+      "lang": "I don't think the Dream Challenge is too difficult."
+    },
+    {
+      "key": "book.otbm.i_have_collected_the_few",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I have collected the few information we have from the past and tried to reconstruate the birth of this city:",
+      "pl": "I masz skupiony, opanowany the few informacja, wiadomości my masz z the I. i tried do reconstruate the I. z I. miasto:",
+      "lang": "I have collected the few information we have from the past and tried to reconstruate the birth of this city:"
+    },
+    {
+      "key": "book.otbm.i_have_no_clue_how",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I have no clue how to trick the infamous Hugo but there has to be a way! Perhaps alchemy is the key to success. I will mix these two potions I bought from the travelling dwarf. We'll see what is going to happen. Perhaps it makes me invulnerable to the deadly breath! Then the secrets of the Nightmare Knights are at my grasp.",
+      "pl": "I masz Nie wskazówka, ślad jak do I. the niesławny, o złej sławie Hugo I. there ma do być jeden way! Być może, może alchemy jest the I. do sukces. I will I. these dwa napój I bought z the podróżling I.. We'll I. I. jest going do zdarzać się, wydarzać się. Być może, może to makes mnie, mi niezniszczalny do the I. a. oddech! Wtedy the I. z the Zły sen I. są w mój I..",
+      "lang": "I have no clue how to trick the infamous Hugo but there has to be a way! Perhaps alchemy is the key to success. I will mix these two potions I bought from the travelling dwarf. We'll see what is going to happen. Perhaps it makes me invulnerable to the deadly breath! Then the secrets of the Nightmare Knights are at my grasp."
+    },
+    {
+      "key": "book.otbm.i_have_not_the_heart",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I have not the heart to tell it our remaining",
+      "pl": "I masz Niet the serce do I. to nasz I.",
+      "lang": "I have not the heart to tell it our remaining"
+    },
+    {
+      "key": "book.otbm.i_have_to_find_them",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I have to find them or figure out the secret",
+      "pl": "I masz do I. ich lub I. out the I.",
+      "lang": "I have to find them or figure out the secret"
+    },
+    {
+      "key": "book.otbm.i_know_that_hugo_lurks",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I know that Hugo lurks somewhere in the bushes in the North. I won't survive his deadly breath which would kill even the mightiest warrior!",
+      "pl": "I kNiew that Hugo czaić się gdzieś w the krzak w the Nierth. I won't przeżywać jego I. a. oddech I. would I. I. the mightiest wojownik!",
+      "lang": "I know that Hugo lurks somewhere in the bushes in the North. I won't survive his deadly breath which would kill even the mightiest warrior!"
+    },
+    {
+      "key": "book.otbm.i_lost_my_key_to",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I lost my key to the crypts below while I was fishing in the port. This is especially bad because those trolls hid my precious trumpet somewhere down there.",
+      "pl": "I I. mój I. do the crypts poniżej, niżej I. I był I. w the I.. I. jest w szczególności zły, niedobry ponieważ, bo those trolls hid mój drogocenny I. gdzieś I. there.",
+      "lang": "I lost my key to the crypts below while I was fishing in the port. This is especially bad because those trolls hid my precious trumpet somewhere down there."
+    },
+    {
+      "key": "book.otbm.i_only_buy_fresh_corpses",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I only buy fresh corpses of rats, rabbits and wolves, as well as bear paws, wolf paws and minotaur",
+      "pl": "I tylko kup nowy corpses z szczur, królik i wolves, as well as bear I., wolf I. i miNietaur",
+      "lang": "I only buy fresh corpses of rats, rabbits and wolves, as well as bear paws, wolf paws and minotaur"
+    },
+    {
+      "key": "book.otbm.i_overheared_the_greenskined_brutes",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I overheared the greenskined brutes. 'charach' (or so) one said and the other responded the same way, then they began to chat in their strange language, certainly talking about some gruesome plot against mankind. Talking they wandered away and after they vanished from my view I quickly got up and headed to Thais as fast as I could.",
+      "pl": "I podsłuchiwać the greenskined zwierzę, bydlę. 'charach' (lub I.) I. said i the drugi, pozostały odpowiadać the I. way, wtedy oni began do I. w ich dziwny język, na pewno I. o I. makabryczny I. o ludzkość. I. oni wędrować I. i after oni znikać z mój I. I szybki, prędki got up i I. do Thais as I. as I mógł.",
+      "lang": "I overheared the greenskined brutes. 'charach' (or so) one said and the other responded the same way, then they began to chat in their strange language, certainly talking about some gruesome plot against mankind. Talking they wandered away and after they vanished from my view I quickly got up and headed to Thais as fast as I could."
+    },
+    {
+      "key": "book.otbm.i_see_the_sorcerer_said",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "\"I see\" the sorcerer said, \"that this bridge will break down and fall into the water within 60 minutes. So we have to hurry up. It will only hold two of us at the same time and it is a long bridge. The wounded knight will need 25 minutes to go over the bridge, and it will take me 20. The paladin can go faster, so he will be on the other side within 10 minutes.\"",
+      "pl": "\"I I.\" the sorcerer said, \"that I. most will I. I. i I. a. do the I. wewnątrz 60 minuty. I. my masz do I. up. To will tylko hold dwa z nas w the I. czas i to jest jeden long most. The I. I. will potrzebować 25 minuty do go I. the most, i to will take mnie, mi 20. The paladin może go I., I. on will być na the drugi, pozostały I. wewnątrz 10 minuty.\"",
+      "lang": "\"I see\" the sorcerer said, \"that this bridge will break down and fall into the water within 60 minutes. So we have to hurry up. It will only hold two of us at the same time and it is a long bridge. The wounded knight will need 25 minutes to go over the bridge, and it will take me 20. The paladin can go faster, so he will be on the other side within 10 minutes.\""
+    },
+    {
+      "key": "book.otbm.i_sell_bread_cheese_ham",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I sell bread, cheese, ham, and meat.",
+      "pl": "I sprzedaj chleb, ser, szynka, i mięso.",
+      "lang": "I sell bread, cheese, ham, and meat."
+    },
+    {
+      "key": "book.otbm.i_stopped_counting_the_days",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I stopped counting the days, because I lost all feeling for time down here.",
+      "pl": "I zatrzymaNie liczba the dni, ponieważ, bo I I. wszystkie uczucie dla czas I. tutaj, tu.",
+      "lang": "I stopped counting the days, because I lost all feeling for time down here."
+    },
+    {
+      "key": "book.otbm.i_tarberi_of_house_of",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I, Tarberi of House of Winter, hereby pledge my services to the Lord of... (the rest of the document is stained and burnt)",
+      "pl": "I, Tarberi z dom z I., niniejszym I. mój I. do the Lord z... (the rest z the I. jest I. i burnt)",
+      "lang": "I, Tarberi of House of Winter, hereby pledge my services to the Lord of... (the rest of the document is stained and burnt)"
+    },
+    {
+      "key": "book.otbm.i_think_i_found_out",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I think I found out some coordinates for the Island Dianscher.",
+      "pl": "I I. I znaleziono out I. coordinates dla the Wyspa Dianscher.",
+      "lang": "I think I found out some coordinates for the Island Dianscher."
+    },
+    {
+      "key": "book.otbm.i_trade_with_gems_pearls",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I trade with gems, pearls and jewels.",
+      "pl": "I handel z kamień szlachetny, perła i klejnot.",
+      "lang": "I trade with gems, pearls and jewels."
+    },
+    {
+      "key": "book.otbm.i_was_one_of_the",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I was one of the first who was allowed to teleport through the magic web.",
+      "pl": "I był I. z the I. kto był I. do teleportować through the I. pajęczyna.",
+      "lang": "I was one of the first who was allowed to teleport through the magic web."
+    },
+    {
+      "key": "book.otbm.i_will_have_you_know",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I will have you know that those tricks you played on the more gullible of our fellow brothers have been entertaining for a while i admit. However, they severely interfere with my instructions, as the fake chant syllables distort the fabric of our songs. Continue, and we shall punish you.",
+      "pl": "I will masz ty kNiew that those I. ty I. na the more łatwowierny z nasz facet, gość brat masz był zabawiać dla jeden I. i przyznać się. Jednak, oni poważny, niebezpieczny mieszać się z mój nauka, nauczanie, as the I. I. sylaba zniekształcać się, zniekształcać the materiał, płótno z nasz pieśń, piosenka. Kontynuować, i my a. będzie karać ty.",
+      "lang": "I will have you know that those tricks you played on the more gullible of our fellow brothers have been entertaining for a while i admit. However, they severely interfere with my instructions, as the fake chant syllables distort the fabric of our songs. Continue, and we shall punish you."
+    },
+    {
+      "key": "book.otbm.i_will_honour_the_godly",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I will honour the godly spark in my soul.",
+      "pl": "I will hoNieur the pobożny I. w mój dusza.",
+      "lang": "I will honour the godly spark in my soul."
+    },
+    {
+      "key": "book.otbm.i_will_investigate_this",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I will investigate this....",
+      "pl": "I will przeprowadzać dochodzenie I.....",
+      "lang": "I will investigate this...."
+    },
+    {
+      "key": "book.otbm.i_wonder_where_this_all",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I wonder where this all might lead us ...",
+      "pl": "I I. where I. wszystkie might lead nas...",
+      "lang": "I wonder where this all might lead us ..."
+    },
+    {
+      "key": "book.otbm.i_wont_dig_any_more",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I won't dig any more stupid dungeons unless the mining company provides me better tools!",
+      "pl": "I won't I. dowolny more głupi loch, więzienie jeżeli nie, o ile nie the I. spółka, firma I. mnie, mi better narzędzie!",
+      "lang": "I won't dig any more stupid dungeons unless the mining company provides me better tools!"
+    },
+    {
+      "key": "book.otbm.if_the_first_stage_has",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "* If the first stage has been completed successfully, a bridge is built south of Cormaya after a certain amount of time.",
+      "pl": "* If the I. I. ma był completed sukcesfully, jeden most jest zbudowany I. z Cormaya after jeden pewny ilość z czas.",
+      "lang": "* If the first stage has been completed successfully, a bridge is built south of Cormaya after a certain amount of time."
+    },
+    {
+      "key": "book.otbm.if_the_first_stage_has_a944a6f8",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "* If the first stage has been completed successfully, a bridge is built south of Cormaya after a certain amount of time.",
+      "pl": "* If the I. I. ma był completed sukcesfully, jeden most jest zbudowany I. z Cormaya after jeden pewny ilość z czas.",
+      "lang": "* If the first stage has been completed successfully, a bridge is built south of Cormaya after a certain amount of time."
+    },
+    {
+      "key": "book.otbm.if_the_suspect_claims_that",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "If the suspect claims that he has no trouble at all, ask him if he thinks that the lack of trouble is explained by the FORESIGHT of the AUTHORITIES. If he denies, he is to be observed for heretical tendencies. If he agrees, ask him if he thinks that it is ALSO for the GODS' will that he has no trouble. If he disagrees, he is to be observed for heretical tendencies. If the subject does not show any suspicious b haviour at this point, ask him if he thinks that any TROUBLE will arise in the near FUTURE. If he negates, he obviously will become lax in the line of his duty and he is to be observed for heretical tendencies. If he confirms that trouble might arise, continue as in paragraph II.",
+      "pl": "If the suspect I. that on ma Nie I. w wszystkie, I. him if on I. that the brak, niedostatek z I. jest I. by the PRZEZORNOŚĆ z the AUTHORITIES. If on zaprzeczać, on jest do być observed dla heretycki tendencja. If on I., I. him if on I. that to jest TAKŻE dla the GODS' will that on ma Nie I.. If on nie zgadzać się, on jest do być observed dla heretycki tendencja. If the subject robi Niet I. dowolny podejrzliwy b haviour w I. point, I. him if on I. that dowolny I. will powstawać w the I. I.. If on negować, on oczywiście will stawać się luźny, nieścisły w the line z jego obowiązek i on jest do być observed dla heretycki tendencja. If on potwierdzać that I. might powstawać, kontynuować as w akapit II.",
+      "lang": "If the suspect claims that he has no trouble at all, ask him if he thinks that the lack of trouble is explained by the FORESIGHT of the AUTHORITIES. If he denies, he is to be observed for heretical tendencies. If he agrees, ask him if he thinks that it is ALSO for the GODS' will that he has no trouble. If he disagrees, he is to be observed for heretical tendencies. If the subject does not show any suspicious b haviour at this point, ask him if he thinks that any TROUBLE will arise in the near FUTURE. If he negates, he obviously will become lax in the line of his duty and he is to be observed for heretical tendencies. If he confirms that trouble might arise, continue as in paragraph II."
     }
   ],
   "length_ratio_issues": [
@@ -3743,9 +3743,9 @@
     }
   ],
   "auto_fix": {
-    "attempted": 60,
-    "applied": 24,
+    "attempted": 80,
+    "applied": 44,
     "skipped": 36,
-    "errors": 20
+    "errors": 0
   }
 }

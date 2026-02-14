@@ -1,16 +1,16 @@
 {
   "event.player.msg1": "Nu poți muta acel obiect atât de repede.",
-  "event.player.msg2": "daily-reward-xp-boost",
-  "event.player.msg3": "daily-reward-xp-boost",
-  "event.player.msg4": "daily-reward-xp-boost",
-  "event.player.msg5": "daily-reward-xp-boost",
+  "event.player.msg2": "[EN] daily-reward-xp-boost",
+  "event.player.msg3": "[EN] daily-reward-xp-boost",
+  "event.player.msg4": "[EN] daily-reward-xp-boost",
+  "event.player.msg5": "[EN] daily-reward-xp-boost",
   "event.player.msg_1": "[EN] You are no longer refilling stamina, since you left a regeneration zone.",
   "event.player.msg_2": "[EN] There was an error when processing your report, please contact a gamemaster.",
   "event.player.msg_3": "[EN] Thank you for reporting {}. Your report \\z\n\twill be processed by {} team as soon as possible.",
   "event.player.msg_4": "[EN] There was an error when processing your report, please contact a gamemaster.",
   "event.player.msg_5": "Raportul tău este în curs de procesare.",
   "event.player.msg_move_fast": "Nu poți muta acel obiect atât de repede.",
-  "event.player.msg_report_sent": "Your report has been sent to {server}.",
-  "event.player.say_1": "You feed the turtle, now you may pass.",
+  "event.player.msg_report_sent": "[EN] Your report has been sent to {server}.",
+  "event.player.say_1": "[EN] You feed the turtle, now you may pass.",
   "event.player.stamina_pz_recharge": "Ești în zona de protecție. Reîncarci {0} rezistență la fiecare {1} minute."
 }

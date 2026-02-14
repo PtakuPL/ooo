@@ -1,10 +1,10 @@
 {
   "lang": "cs",
-  "coverage_pct": 57.7,
+  "coverage_pct": 57.6,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-14T11:15:24.752194Z",
+  "checked_at": "2026-02-14T11:40:29.452535Z",
   "issues_total": 412,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -545,60 +545,6 @@
       "lang": "Glooth Punk"
     },
     {
-      "key": "achievement.463.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Glooth is the substance that powers a whole continent and all its weird inhabitants, workshops and factories. You travelled this strange smorgasbord of curiosities in its entirety - just in time for tea.",
-      "pl": "Glooth jest the substancja that I. jeden I. kontynent i wszystkie jego, jej, ich, swój niesamowity, dziwaczny mieszkaniec, warsztat i fabryka. Ty podróżled I. dziwny smorgasbord z curiosities w jego, jej, ich, swój in its entirety - just w czas dla I..",
-      "lang": "Glooth is the substance that powers a whole continent and all its weird inhabitants, workshops and factories. You travelled this strange smorgasbord of curiosities in its entirety - just in time for tea."
-    },
-    {
-      "key": "achievement.464.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Twisted Dreams",
-      "pl": "I. I.",
-      "lang": "Twisted Dreams"
-    },
-    {
-      "key": "achievement.464.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "A journey through a dreamscape of evil is no small feat. Yet you traversed the nightmarish lands of Roshamuul and live to tell the tale. Don't fall asleep now...",
-      "pl": "JEDEN I. through jeden dreamscape z I. jest Nie I. wyczyn, popis. Jeszcze ty traversed the koszmarny lands z Roshamuul i live do I. the opowieść, opowiadanie. Don't I. be asleep Niew...",
-      "lang": "A journey through a dreamscape of evil is no small feat. Yet you traversed the nightmarish lands of Roshamuul and live to tell the tale. Don't fall asleep now..."
-    },
-    {
-      "key": "achievement.465.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Library Liberator",
-      "pl": "Biblioteka Liberator",
-      "lang": "Library Liberator"
-    },
-    {
-      "key": "achievement.465.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Though you couldn't prevent the theft of the godbreaker knowledge, you still managed to fight off the invasion of the library and to kill the scourge of oblivion, a powerful servant of the enemy.",
-      "pl": "I. ty couldn't zapobiegać the kradzież z the godbreaker kNiewledge, ty I. managed do I. off the inwazja z the biblioteka i do I. the plaga, bicz Boży z nieświadomość, jeden potężny I. z the wróg.",
-      "lang": "Though you couldn't prevent the theft of the godbreaker knowledge, you still managed to fight off the invasion of the library and to kill the scourge of oblivion, a powerful servant of the enemy."
-    },
-    {
-      "key": "achievement.466.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You checked out a strange temple deep in the jungles of Tiquanda. Spectulus was right, it was indeed overrun by strange fish-men you now call Deathlings.",
-      "pl": "Ty checked out jeden dziwny świątynia I. w the dżungla z Tiquanda. Spectulus był I., to był faktycznie, naprawdę przechwytywać by dziwny I.-men ty Niew call Deathlings.",
-      "lang": "You checked out a strange temple deep in the jungles of Tiquanda. Spectulus was right, it was indeed overrun by strange fish-men you now call Deathlings."
-    },
-    {
       "key": "achievement.467.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -606,132 +552,6 @@
       "en": "Millennial Falcon",
       "pl": "Millennial Sokół",
       "lang": "Millennial Falcon"
-    },
-    {
-      "key": "achievement.467.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You defeated Grand Master Oberon and the remnants of the Order of the Falcon, no matter the odds.",
-      "pl": "Ty I. I. I. Oberon i the pozostałość, resztka z the Order z the Sokół, Nie I. the I..",
-      "lang": "You defeated Grand Master Oberon and the remnants of the Order of the Falcon, no matter the odds."
-    },
-    {
-      "key": "achievement.468.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You passion for reading was somewhat diminished by biting books and aggressive quills. But this flying specimen proved to be a loyal companion. Never judge a book by its cover!",
-      "pl": "Ty namiętność dla czytanie był nieco, dość zmniejszać się by przenikliwy I. i zaczepny, agresywny pióro. I. I. latający okaz proved do być jeden lojalny towarzysz. Nigdy I. jeden I. by jego, jej, ich, swój cover!",
-      "lang": "You passion for reading was somewhat diminished by biting books and aggressive quills. But this flying specimen proved to be a loyal companion. Never judge a book by its cover!"
-    },
-    {
-      "key": "achievement.469.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Battle Mage",
-      "pl": "I. Mage",
-      "lang": "Battle Mage"
-    },
-    {
-      "key": "achievement.469.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Wielding dangerous knowledge as well as the sword is your expertise. You have proven yourself versatile in all manner of situations.",
-      "pl": "Dzierżyć groźny, niebezpieczny kNiewledge as well as the miecz jest twój wiedza specjalistyczne, umiejętności specjalistyczne. Masz proven siebie wszechstronny w wszystkie sposób z sytuacja.",
-      "lang": "Wielding dangerous knowledge as well as the sword is your expertise. You have proven yourself versatile in all manner of situations."
-    },
-    {
-      "key": "achievement.470.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Widely Travelled",
-      "pl": "I. podróżled",
-      "lang": "Widely Travelled"
-    },
-    {
-      "key": "achievement.470.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "As a true globetrotter you can now show your colours proudly with this extraordinary outfit.",
-      "pl": "As jeden prawdziwy globetrotter Lekarz rejonowyżesz Niew I. twój colours dumny z I. nadzwyczajny strój.",
-      "lang": "As a true globetrotter you can now show your colours proudly with this extraordinary outfit."
-    },
-    {
-      "key": "achievement.471.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Running the Rift",
-      "pl": "I. the Szczelina",
-      "lang": "Running the Rift"
-    },
-    {
-      "key": "achievement.471.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You don't just have a permission to ride a rift runner, you literally went through hell and earned it!",
-      "pl": "Ty don't just masz jeden zezwolenie do I. jeden szczelina biegacz, ty dosłowny went through piekło i zarabiać na, zarabiać to!",
-      "lang": "You don't just have a permission to ride a rift runner, you literally went through hell and earned it!"
-    },
-    {
-      "key": "achievement.473.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Exalted Battle Mage",
-      "pl": "Wysoki I. Mage",
-      "lang": "Exalted Battle Mage"
-    },
-    {
-      "key": "achievement.473.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Not only did you master the battlefield as a mage, you were also induced to the most inner secrets of the art of magical warfare and prevailed.",
-      "pl": "Niet tylko zrobił ty I. the pole bitwy as jeden mage, ty były także induced do the most wewnętrzny I. z the I. z czarodziejski, magiczny wojna, działania wojenne i panować.",
-      "lang": "Not only did you master the battlefield as a mage, you were also induced to the most inner secrets of the art of magical warfare and prevailed."
-    },
-    {
-      "key": "achievement.474.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Areas of Effect",
-      "pl": "Obszar, region z I.",
-      "lang": "Areas of Effect"
-    },
-    {
-      "key": "achievement.474.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Wisely contributing your resources to areas, you pushed creatures to maximum effect, allowing improved respawn for everyone! Well done!",
-      "pl": "I. contributing twój resources do obszar, region, ty be pushed for sth stwory do I. I., I. improved respawn dla każdy! Well over and done with!",
-      "lang": "Wisely contributing your resources to areas, you pushed creatures to maximum effect, allowing improved respawn for everyone! Well done!"
-    },
-    {
-      "key": "achievement.475.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Tied the Knot",
-      "pl": "Tied the KNiet",
-      "lang": "Tied the Knot"
-    },
-    {
-      "key": "achievement.475.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You figured out the right order of spells in the buried cathedral, how enchanting!",
-      "pl": "Ty figured out the I. order z zaklęCentalna Agencja Wywiadowcza w the buried katedra, jak enchanting!",
-      "lang": "You figured out the right order of spells in the buried cathedral, how enchanting!"
     },
     {
       "key": "achievement.476.name",
@@ -2318,15 +2138,6 @@
       "lang": "1. Put a bunch of sugar cane into the machine"
     },
     {
-      "key": "book.otbm.1st_floor_bel_etage_grand",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "1st floor (bel etage): Grand Opera Caf",
-      "pl": "1st I. (bel etage): I. Opera Caf",
-      "lang": "1st floor (bel etage): Grand Opera Caf"
-    },
-    {
       "key": "book.otbm.1st_floor_interior_design_take",
       "category": "books",
       "type": "pl_reference_missing_translation",
@@ -2462,15 +2273,6 @@
       "lang": "4000 gold books and paper"
     },
     {
-      "key": "book.otbm.4_exterminiate_the_ghouls_in",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "4. Exterminiate the ghouls in the garden",
-      "pl": "4. Exterminiate the ghouls w the I.",
-      "lang": "4. Exterminiate the ghouls in the garden"
-    },
-    {
       "key": "book.otbm.4_no_running_in_the",
       "category": "books",
       "type": "pl_reference_missing_translation",
@@ -2541,15 +2343,6 @@
       "en": "7. No scribbling in library-owned documents",
       "pl": "7. Nie scribbling w biblioteka-I. I.",
       "lang": "7. No scribbling in library-owned documents"
-    },
-    {
-      "key": "book.otbm.800_razoredge_matt_vs_bambam",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "8.00   Razoredge Matt vs. Bambam Brutus",
-      "pl": "8.00 Razoredge Matowy vs. Bambam Brutus",
-      "lang": "8.00   Razoredge Matt vs. Bambam Brutus"
     },
     {
       "key": "book.otbm.8_books_and_scrolls_must",
@@ -2730,15 +2523,6 @@
       "en": "Academy and Training Centre",
       "pl": "Akademia i Trening Centre",
       "lang": "Academy and Training Centre"
-    },
-    {
-      "key": "book.otbm.accidentally_stabbed_by_al_dee",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Accidentally stabbed by Al Dee.",
-      "pl": "Przypadkowy stabbed by Al Dee.",
-      "lang": "Accidentally stabbed by Al Dee."
     },
     {
       "key": "book.otbm.according_to_our_knowledge_only",
@@ -3515,42 +3299,6 @@
       "lang": "Battle tactics for Demona - Mazeforces"
     },
     {
-      "key": "book.otbm.battletactics_for_mages_i",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Battletactics for Mages [I]",
-      "pl": "Battletactics dla Mages [I]",
-      "lang": "Battletactics for Mages [I]"
-    },
-    {
-      "key": "book.otbm.battletactics_for_mages_ii",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Battletactics for Mages [II]",
-      "pl": "Battletactics dla Mages [II]",
-      "lang": "Battletactics for Mages [II]"
-    },
-    {
-      "key": "book.otbm.battletactics_for_mages_iii",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Battletactics for Mages [III]",
-      "pl": "Battletactics dla Mages [III]",
-      "lang": "Battletactics for Mages [III]"
-    },
-    {
-      "key": "book.otbm.battletactics_for_mages_iv",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Battletactics for Mages [IV]",
-      "pl": "Battletactics dla Mages [IV]",
-      "lang": "Battletactics for Mages [IV]"
-    },
-    {
       "key": "book.otbm.be_aware_that_our_kind",
       "category": "books",
       "type": "pl_reference_missing_translation",
@@ -3612,6 +3360,258 @@
       "en": "because the gods wanted to heal the wounds of the world, but because this powerleak frightened them that much. They further speculate that the withdrawel of the world was more an act of panic, an attempt not to lose complete control over",
       "pl": "ponieważ, bo the gods I. do I. the I. z the I., I. ponieważ, bo I. powerleak wystraszony ich that dużo, bardzo. Oni further spekulować that the wypłjedenćel z the I. był more jeden I. z I., jeden I. Niet do lose I. control I.",
       "lang": "because the gods wanted to heal the wounds of the world, but because this powerleak frightened them that much. They further speculate that the withdrawel of the world was more an act of panic, an attempt not to lose complete control over"
+    },
+    {
+      "key": "book.otbm.because_they_all_wanted_power",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "because they all wanted power over the creation, not its complete destruction. Thus the Gods threw the charm of the new",
+      "pl": "ponieważ, bo oni wszystkie I. I. I. the creation, Niet jego, jej, ich, swój I. zniszczenie. Toteż, dlatego the Gods threw the I. z the new",
+      "lang": "because they all wanted power over the creation, not its complete destruction. Thus the Gods threw the charm of the new"
+    },
+    {
+      "key": "book.otbm.because_they_hardly_grew_in",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "because they hardly grew in numbers.",
+      "pl": "ponieważ, bo oni prawie nie grew w numer.",
+      "lang": "because they hardly grew in numbers."
+    },
+    {
+      "key": "book.otbm.become_the_new_necromant_king",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "become the new necromant king, I can't give",
+      "pl": "stawać się the new necromant król, I can't give",
+      "lang": "become the new necromant king, I can't give"
+    },
+    {
+      "key": "book.otbm.beer_wine_lemonade_and_water",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "beer, wine, lemonade and water",
+      "pl": "piwo, wino, lemoniada i I.",
+      "lang": "beer, wine, lemonade and water"
+    },
+    {
+      "key": "book.otbm.before_picking_away_the_rubble",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Before picking away the rubble you need to place a buttress otherwise the tunnel will collapse over and over again. If you don't have a matching tree at hand you could still build a brickwall to stabilize the tunnel. Good luck!",
+      "pl": "I. I. I. the gruz Musisz I. jeden I. inaczej the I. will I. I. i I. ponownie. If Nie masz jeden odpowiadający, pasujący drzewo w hand ty mógł I. I. jeden brickwall do stabilize the I.. I. good luck!",
+      "lang": "Before picking away the rubble you need to place a buttress otherwise the tunnel will collapse over and over again. If you don't have a matching tree at hand you could still build a brickwall to stabilize the tunnel. Good luck!"
+    },
+    {
+      "key": "book.otbm.beginning_over_the_world_only",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "beginning over the world! Only gradually the recovering sections of the old world started to rise from the nebulas of time,",
+      "pl": "początek I. the I.! Tylko stopniowy the wyzdrowieć, odzyskiwać siły część, sekcja z the I. I. uruchomioNie do rise z the nebulas z czas,",
+      "lang": "beginning over the world! Only gradually the recovering sections of the old world started to rise from the nebulas of time,"
+    },
+    {
+      "key": "book.otbm.beware_dangerous_monsters_down_here",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Beware! Dangerous monsters down here!",
+      "pl": "Strzec się! Groźny, niebezpieczny potwory I. tutaj, tu!",
+      "lang": "Beware! Dangerous monsters down here!"
+    },
+    {
+      "key": "book.otbm.beware_dangerous_monsters_down_here_8ae557cd",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Beware! Dangerous monsters down here!",
+      "pl": "Strzec się! Groźny, niebezpieczny potwory I. tutaj, tu!",
+      "lang": "Beware! Dangerous monsters down here!"
+    },
+    {
+      "key": "book.otbm.beware_of_drunken_dwarfs",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "BEWARE OF DRUNKEN DWARFS!",
+      "pl": "STRZEC SIĘ Z PIJACKI I.!",
+      "lang": "BEWARE OF DRUNKEN DWARFS!"
+    },
+    {
+      "key": "book.otbm.beware_of_polar_bears_and",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Beware of polar bears and winter wolves on Vega Island!",
+      "pl": "Strzec się z I. bears i I. wolves na Vega Wyspa!",
+      "lang": "Beware of polar bears and winter wolves on Vega Island!"
+    },
+    {
+      "key": "book.otbm.beware_of_the_dragon_clawer",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Beware of the dragon Clawer!",
+      "pl": "Strzec się z the smok I.!",
+      "lang": "Beware of the dragon Clawer!"
+    },
+    {
+      "key": "book.otbm.beware_of_the_enemy_lava",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "BEWARE OF THE ENEMY! Lava pumps ahead!",
+      "pl": "STRZEC SIĘ Z THE WRÓG! Lawa I. w przód!",
+      "lang": "BEWARE OF THE ENEMY! Lava pumps ahead!"
+    },
+    {
+      "key": "book.otbm.beware_of_the_enemy_lava_7d739cce",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "BEWARE OF THE ENEMY! Lava pumps ahead!",
+      "pl": "STRZEC SIĘ Z THE WRÓG! Lawa I. w przód!",
+      "lang": "BEWARE OF THE ENEMY! Lava pumps ahead!"
+    },
+    {
+      "key": "book.otbm.beware_the_tiles_inside_these",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Beware! The tiles inside these rooms will bring you to the lion's foes!",
+      "pl": "Strzec się! The płytka inside these miejsces will bring ty do the lew MSZ, Ministerstwo Spraw Zagranicznych!",
+      "lang": "Beware! The tiles inside these rooms will bring you to the lion's foes!"
+    },
+    {
+      "key": "book.otbm.bezils_and_nezils_stuff_an",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bezils And Nezils Stuff An' Pawn Shop",
+      "pl": "Bezils I Nezils Stuff Jeden' I. I.",
+      "lang": "Bezils And Nezils Stuff An' Pawn Shop"
+    },
+    {
+      "key": "book.otbm.bite_squeeze_shake_enjoy",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bite. Squeeze. Shake. Enjoy.",
+      "pl": "I.. I.. I.. Lubić.",
+      "lang": "Bite. Squeeze. Shake. Enjoy."
+    },
+    {
+      "key": "book.otbm.blood_extraction_must_be_supervised",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Blood extraction must be supervised by a trained necromancer.",
+      "pl": "I. pochodzenie musi być supervised by jeden szkolony, wykwalifikowany necromancer.",
+      "lang": "Blood extraction must be supervised by a trained necromancer."
+    },
+    {
+      "key": "book.otbm.blood_extraction_pool_and_anatomy",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Blood Extraction Pool and Anatomy Classes",
+      "pl": "I. Pochodzenie I. i Anatomia I.",
+      "lang": "Blood Extraction Pool and Anatomy Classes"
+    },
+    {
+      "key": "book.otbm.blood_herb_herba_budinia",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Blood Herb (herba budinia)",
+      "pl": "I. I. (herba budinia)",
+      "lang": "Blood Herb (herba budinia)"
+    },
+    {
+      "key": "book.otbm.blood_tincture_for_an_incantation",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "blood tincture for an incantation",
+      "pl": "I. tincture dla jeden incantation",
+      "lang": "blood tincture for an incantation"
+    },
+    {
+      "key": "book.otbm.bloodthirsty_creatures_screeching_an_unholy",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bloodthirsty creatures screeching an unholy tune",
+      "pl": "Krwiożerczy stwory I. jeden unholy tune",
+      "lang": "Bloodthirsty creatures screeching an unholy tune"
+    },
+    {
+      "key": "book.otbm.both_sides_for_this_unholy",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "both sides for this unholy war, and of which some individuals are said to still be around.",
+      "pl": "obaj I. dla I. unholy I., i z I. I. I. są said do I. być around.",
+      "lang": "both sides for this unholy war, and of which some individuals are said to still be around."
+    },
+    {
+      "key": "book.otbm.bow_and_arrows_crossbow_and",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "bow and arrows, crossbow and bolts",
+      "pl": "bow i strzała, strzałka, crossbow i I.",
+      "lang": "bow and arrows, crossbow and bolts"
+    },
+    {
+      "key": "book.otbm.bows_crossbows_and_ammunition",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bows, Crossbows, and Ammunition",
+      "pl": "Bows, Crossbows, i Amunicja",
+      "lang": "Bows, Crossbows, and Ammunition"
+    },
+    {
+      "key": "book.otbm.brain_heater_machine_facility_students",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Brain Heater Machine Facility. Students, please note:",
+      "pl": "Mózg Grzejnik I. Zdolność, łatwość. Student, Proszę Niete:",
+      "lang": "Brain Heater Machine Facility. Students, please note:"
+    },
+    {
+      "key": "book.otbm.bread_cheese_meat_and_ham",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "bread, cheese, meat and ham",
+      "pl": "chleb, ser, mięso i szynka",
+      "lang": "bread, cheese, meat and ham"
+    },
+    {
+      "key": "book.otbm.brilliant_and_creative_on_the",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "brilliant and creative, on the other hand one he was ludicrous and full of folly. Thus Kirok became the protection patron of the",
+      "pl": "błyskotliwy i creative, na the drugi, pozostały hand I. on był groteskowy, śmieszny i I. z szaleństwo. Toteż, dlatego Kirok became the ochrona, osłona I. z the",
+      "lang": "brilliant and creative, on the other hand one he was ludicrous and full of folly. Thus Kirok became the protection patron of the"
+    },
+    {
+      "key": "book.otbm.brog_however_laughed_over_the",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Brog however laughed over the dragon, which he had created, because he roamed over Tibia and was a terror to the few",
+      "pl": "Brog jednak I. I. the smok, I. on miał created, ponieważ, bo on włóczyć się, wędrować I. Tibia i był jeden przerażenie do the few",
+      "lang": "Brog however laughed over the dragon, which he had created, because he roamed over Tibia and was a terror to the few"
     }
   ],
   "length_ratio_issues": [
@@ -3726,8 +3726,8 @@
   ],
   "auto_fix": {
     "attempted": 80,
-    "applied": 20,
-    "skipped": 60,
+    "applied": 18,
+    "skipped": 62,
     "errors": 0
   }
 }

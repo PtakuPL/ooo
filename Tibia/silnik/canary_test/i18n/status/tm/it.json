@@ -9558,5 +9558,533 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-14T07:40:04.951911Z"
+  },
+  "quests.svargrond_arena.completed_arena": {
+    "src_hash": "e98243884db06a20900513b9389da879",
+    "text": "Congratulazioni! Hai completato l'arena %s, dovresti ritirare la tua ricompensa adesso.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T11:45:01.974172Z"
+  },
+  "quests.actions_lever_first.msg_1": {
+    "src_hash": "f46311a07e3e49e233fb5062c6cd146a",
+    "text": "Qualcosa è scattato e allo stesso tempo un suono rimbombante quasi ti assorda.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:45:06.186472Z"
+  },
+  "quests.actions_lever_second.msg_1": {
+    "src_hash": "f46311a07e3e49e233fb5062c6cd146a",
+    "text": "Qualcosa è scattato e allo stesso tempo un suono rimbombante quasi ti assorda.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:45:06.187000Z"
+  },
+  "quests.actions_lever_third.msg_1": {
+    "src_hash": "f46311a07e3e49e233fb5062c6cd146a",
+    "text": "Qualcosa è scattato e allo stesso tempo un suono rimbombante quasi ti assorda.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:45:06.187483Z"
+  },
+  "quests.common.found_item_too_heavy": {
+    "src_hash": "cc5dc61a0b3315ccff7b98e9c63499a5",
+    "text": "Hai trovato {0} che pesa {1} once. Non hai capacità.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:45:06.187951Z"
+  },
+  "quests.common.found_item_too_heavy_v2": {
+    "src_hash": "fe8ca53a473098bcdae6c1adeb0acc4f",
+    "text": "Hai trovato {0}. Con un peso di {1} oz, è troppo pesante.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:45:06.188394Z"
+  },
+  "quests.common.found_items": {
+    "src_hash": "2134ca05a222d4860007f29569f29cfe",
+    "text": "Hai trovato %s %s.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:45:11.347772Z"
+  },
+  "quests.common.found_no_capacity": {
+    "src_hash": "24b519e4e867809893d24dfdf82229bd",
+    "text": "Hai trovato %s del peso di %,2f oz. Non hai capacità.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:45:11.348345Z"
+  },
+  "quests.common.found_no_room": {
+    "src_hash": "e88eed3e01659b864bbf69d3ee802c80",
+    "text": "Hai trovato %s, ma non hai spazio per prenderlo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:45:11.348797Z"
+  },
+  "quests.common.found_no_room_to_take": {
+    "src_hash": "4b4c7eece38d5240b1814d622cc65f95",
+    "text": "Hai trovato un {0}. Ma non hai spazio per prenderlo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:45:11.349497Z"
+  },
+  "quests.common.found_result": {
+    "src_hash": "182396eb89f1096446cd4066f4b1fe25",
+    "text": "Hai trovato %s.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:45:11.350049Z"
+  },
+  "quests.common.found_too_heavy": {
+    "src_hash": "33a50637639b5118c56745e302f4741a",
+    "text": "Hai trovato %s che pesa %s once, è troppo pesante da trasportare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:45:17.788393Z"
+  },
+  "quests.common.found_too_heavy_to_carry": {
+    "src_hash": "88ffac1afc20b6cfd9dbe9d03d38aa4a",
+    "text": "Hai trovato un {0}. Con un peso di {1} oz, è troppo pesante da trasportare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:45:17.788935Z"
+  },
+  "quests.common.item_empty": {
+    "src_hash": "2227c58ef8ae16a698c15b50277e3360",
+    "text": "Il %s è vuoto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:45:17.789237Z"
+  },
+  "quests.common.item_is_empty": {
+    "src_hash": "9fedea49c5747b4d85c1c89ff2bd3d8e",
+    "text": "Il {0} è vuoto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:45:17.789537Z"
+  },
+  "quests.common.need_players": {
+    "src_hash": "a83c7d7bada7ca4b8c0d01def82e87cf",
+    "text": "Hai bisogno di almeno {0} giocatori nella stanza delle missioni.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:45:17.789985Z"
+  },
+  "quests.common.reward_no_room": {
+    "src_hash": "a187b5bf7af68f51dab839f0b430ea7a",
+    "text": "%s Ma non hai spazio per portarlo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:45:23.968283Z"
+  },
+  "quests.common.reward_too_heavy": {
+    "src_hash": "e1039b8f7f51c7d75ef433a41dec5258",
+    "text": "%s. Con un peso di %s oz, è troppo pesante da trasportare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:45:23.968782Z"
+  },
+  "quests.common.someone_fighting": {
+    "src_hash": "97a5cce165ebe2850a044efff30ddabd",
+    "text": "C'è qualcuno che litiga con {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:45:23.969170Z"
+  },
+  "quests.common.wait_to_fight": {
+    "src_hash": "fba6cdd69d31f9eb85874cf4da951b41",
+    "text": "Devi aspettare {0} ore per affrontare di nuovo {1}!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:45:23.969571Z"
+  },
+  "quests.common.you_slayed": {
+    "src_hash": "4b51cc3dfdcae6db0a131e3c66775ead",
+    "text": "Hai ucciso {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:45:23.969894Z"
+  },
+  "quests.common.you_slayed_times": {
+    "src_hash": "d6a7a4e2b62cd945bab46197c0eed601",
+    "text": "Hai ucciso {0} {1} volte!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:45:29.392327Z"
+  },
+  "quests.creatureevent_commander_kills.msg_1": {
+    "src_hash": "eb8bc17634f1e64ed7a0dc8c720537a4",
+    "text": "Hai perso la scaramuccia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:45:29.392711Z"
+  },
+  "quests.creaturescripts_overlord_kill.say_1": {
+    "src_hash": "46a2135b118f06e9400ca190a247f5fc",
+    "text": "Hai ucciso",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:45:29.392964Z"
+  },
+  "quests.creaturescripts_pale_worm_death.msg_1": {
+    "src_hash": "bc350b5eed194d5d0e6934ca8e642b4e",
+    "text": "Congratulazioni, hai ricevuto il costume Poltergeist.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:45:29.393515Z"
+  },
+  "quests.creaturescripts_raging_mage_2.broadcast_1": {
+    "src_hash": "affae003bc5ca5f7834349418f4a1188",
+    "text": "Con un grande botto il portale dimensionale di Zao è crollato e \\z\n\t\tcon esso il collegamento con l'altra dimensione si ruppe.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:45:29.394105Z"
+  },
+  "quests.creaturescripts_raging_mage_2.broadcast_2": {
+    "src_hash": "c148cc49192a344bf6c7c9fa6d2e6108",
+    "text": "I resti del Mago Furioso sono sparsi sul pavimento della sua Torre. \\z\n\tIl portale dimensionale trema.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:45:34.558996Z"
+  },
+  "quests.creaturescripts_raging_mage_kill.broadcast_1": {
+    "src_hash": "3b89542279a4e97944f1e27205cc280d",
+    "text": "Con un grande botto il portale dimensionale di Zao è crollato e con esso il collegamento con l'altra dimensione è andato in frantumi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:45:34.559887Z"
+  },
+  "quests.creaturescripts_raging_mage_kill.broadcast_2": {
+    "src_hash": "a633c94a1a9bf1be37c45d8e3ee73dd6",
+    "text": "I resti del Mago Furioso sono sparsi sul pavimento della sua Torre. Il portale dimensionale trema.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:45:34.560928Z"
+  },
+  "quests.cults_of_tibia.boss_room_timeout_kick": {
+    "src_hash": "cfcbc7849dbf6f79684e0a6f2e4b5c50",
+    "text": "Sei stato espulso per aver superato il limite di tempo nella stanza del boss.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:45:34.561632Z"
+  },
+  "quests.cults_of_tibia.cult_energy_1": {
+    "src_hash": "671d913cd5f5c97fbebfddd81f0a46ee",
+    "text": "Il tuo corpo reagisce a questa strana sostanza verde quando allunghi la mano per toccarla. Senti il ​​bisogno di avere più di questa energia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:45:34.562489Z"
+  },
+  "quests.cults_of_tibia.cult_energy_2": {
+    "src_hash": "2b8cd714f9fa1a2821f9aefc76b8fcd8",
+    "text": "Hai raccolto una quantità impressionante di potere semplicemente toccando gli strani simboli verdi del Barkless. Ma come...?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:45:41.862480Z"
+  },
+  "quests.cults_of_tibia.ice.msg_1": {
+    "src_hash": "830fbdb1e0e86a27c31c0007c6fd07d7",
+    "text": "Quando entri nella caverna ghiacciata, senti un gelo innaturale. L'aria gelida ti punge in faccia. Sopravvivi e dimostrati degno.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:45:41.863973Z"
+  },
+  "quests.cults_of_tibia.ice.msg_2": {
+    "src_hash": "a921d92c836ae9260754bac90ddfa103",
+    "text": "La tua temperatura corporea scende. Puoi vedere il tuo respiro congelarsi per il freddo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:45:41.864997Z"
+  },
+  "quests.cults_of_tibia.ice.msg_3": {
+    "src_hash": "c81033584f8b0cdea8fe723c500753e0",
+    "text": "Il freddo gelido ti sta attanagliando. Non riesci quasi più a muoverti.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:45:41.866060Z"
+  },
+  "quests.cults_of_tibia.ice.msg_4": {
+    "src_hash": "1901b7c161bc327e87255edc111121ae",
+    "text": "Ora sei lavato e pronto per purificarti nelle camere di purificazione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:45:41.867213Z"
+  },
+  "quests.cults_of_tibia.ice.msg_5": {
+    "src_hash": "49b58823d77dc676db1e310ea8a2e848",
+    "text": "Ora sei pronto per dimostrare il tuo valore. Fatti coraggio e varca la soglia del ghiaccio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:45:48.945222Z"
+  },
+  "quests.cults_of_tibia.ice.msg_6": {
+    "src_hash": "495f7351822be4b78e786373c75d6d1c",
+    "text": "Ci hai messo così tanto tempo. Non sei più purificato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:45:48.945673Z"
+  },
+  "quests.cults_of_tibia.it_looks_like_there_is_someone": {
+    "src_hash": "50f020159d60c2b2c9c68d92cbf36694",
+    "text": "Sembra che ci sia qualcuno dentro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:45:48.946092Z"
+  },
+  "quests.cults_of_tibia.tar_acid.msg_1": {
+    "src_hash": "ead78a22f859066ec9d57d10bbc3b56e",
+    "text": "Quando entri nelle fosse di zolfo, senti i vapori secchi e brucianti dello zolfo intorno a te. Dimostrati degno, sopravvivi all'acido.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:45:48.946734Z"
+  },
+  "quests.cults_of_tibia.tar_acid.msg_2": {
+    "src_hash": "c9530d94b77a7a4e28c21db1f6d3c743",
+    "text": "Lo zolfo ti sta bruciando la pelle. Hai quasi la sensazione che il tuo corpo si sciolga nell'acido.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:45:48.947261Z"
+  },
+  "quests.cults_of_tibia.tar_acid.msg_3": {
+    "src_hash": "897eaafe69909eb75d56fe9d0ba70879",
+    "text": "Il bruciore acido è ormai insopportabile, la pelle sembra un setaccio. Non hai quasi più la forza: agisci velocemente!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:45:56.011265Z"
+  },
+  "quests.cults_of_tibia.tar_acid.msg_4": {
+    "src_hash": "60932ae2444f0118668b2d4d9046ea50",
+    "text": "Abbraccia lo stigma della vanità. Lo zolfo non brucia più la pelle. Hai superato la prova.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:45:56.012405Z"
+  },
+  "quests.cults_of_tibia.tar_acid.msg_5": {
+    "src_hash": "9c251b490b88890ee578904464bb077d",
+    "text": "Ora sei pronto per dimostrare il tuo valore. Coraggio e varca la soglia dello zolfo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:45:56.013348Z"
+  },
+  "quests.cults_of_tibia.tar_acid.msg_6": {
+    "src_hash": "8daa12db57a5cd099b253e961edefea1",
+    "text": "L'acido che ti ricopre si è raffreddato ed è caduto per la maggior parte. Il tuo corpo non è più riscaldato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:45:56.014729Z"
+  },
+  "quests.cults_of_tibia.tar_fire.msg_1": {
+    "src_hash": "03670e2850561062fe9fd557c597f0c3",
+    "text": "Quando entri nelle fosse di catrame, senti il ​​calore intorno a te aumentare drammaticamente. Sopravvivere al caldo abbastanza a lungo per dimostrarsi degno.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:45:56.016631Z"
+  },
+  "quests.cults_of_tibia.tar_fire.msg_2": {
+    "src_hash": "afe9c062fcad0dfaed371f41f325a3f1",
+    "text": "Il tuo corpo si sta riscaldando, l'aria intorno a te tremola.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:01.664361Z"
+  },
+  "quests.cults_of_tibia.tar_fire.msg_3": {
+    "src_hash": "f575456ac57a1329c31dae3a89abe1a5",
+    "text": "Il caldo è ormai insopportabile, il sangue nel tuo corpo sembra lava. Non hai quasi più la forza: agisci velocemente!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:01.667482Z"
+  },
+  "quests.cults_of_tibia.tar_fire.msg_4": {
+    "src_hash": "c5f3b89f92a7442b2e42b32aa0f24087",
+    "text": "Abbraccia lo stigma della sfortuna. Il catrame non è più così caldo. Hai superato il processo del tar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:01.668249Z"
+  },
+  "quests.cults_of_tibia.tar_fire.msg_5": {
+    "src_hash": "671d913cd5f5c97fbebfddd81f0a46ee",
+    "text": "Il tuo corpo reagisce a questa strana sostanza verde quando allunghi la mano per toccarla. Senti il ​​bisogno di avere più di questa energia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:01.668998Z"
+  },
+  "quests.cults_of_tibia.tar_fire.msg_6": {
+    "src_hash": "69828c9b2866aff3163734b5536f688b",
+    "text": "Il catrame che ti ricopre si è raffreddato ed è caduto in gran parte. Il tuo corpo non è più riscaldato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:01.669693Z"
+  },
+  "quests.cults_of_tibia.task_teleport_say_1": {
+    "src_hash": "fc959524c181fe732cea25456db9be19",
+    "text": "Assorbi i resti energetici di quest'anima in decomposizione. Il suo potere è molto fragile e fugace",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:08.041234Z"
+  },
+  "quests.cults_of_tibia.task_teleport_say_2": {
+    "src_hash": "2277263cd6474fa0e105ef2c24fad53d",
+    "text": "Assorbi i resti energetici di quest'anima sbiancante. Il suo potere è molto fragile e fugace.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:08.041830Z"
+  },
+  "quests.cults_of_tibia.the_room_is_full": {
+    "src_hash": "c392e2d4b7bc00e3f6d77bb62792a3c6",
+    "text": "La stanza è piena.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:08.042186Z"
+  },
+  "quests.cults_of_tibia.you_cant_go_there_yet": {
+    "src_hash": "06f23b40933b62937c5e4dc5c1daf878",
+    "text": "Non puoi ancora andarci.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:08.042601Z"
+  },
+  "quests.cults_of_tibia.you_need_exactly_10_players_to": {
+    "src_hash": "da4ca441dd1e0e846918a451309695ec",
+    "text": "Hai bisogno esattamente di 10 giocatori per iniziare questa sfida.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:08.043064Z"
+  },
+  "quests.cults_of_tibia.you_need_exactly_5_players_to": {
+    "src_hash": "9e4c98b791d52e8b1ac8575cea48760f",
+    "text": "Hai bisogno esattamente di 5 giocatori per iniziare questa sfida.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:14.589263Z"
+  },
+  "quests.cults_of_tibia.you_need_to_wait_for_10": {
+    "src_hash": "8ed2dcd3c613b3e563ef0235304ed160",
+    "text": "Devi aspettare 10 ore per affrontare di nuovo questo boss.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:14.590150Z"
+  },
+  "quests.cults_of_tibia.you_need_to_wait_for_20": {
+    "src_hash": "ad5616742f0d60619c1619a192a9831c",
+    "text": "Devi aspettare 20 ore per affrontare di nuovo questo boss.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:14.591015Z"
+  },
+  "quests.custom.couldnt_find_any_position_for_you": {
+    "src_hash": "eac8994d451c78b32788efd039fe9e3d",
+    "text": "Impossibile trovare alcuna posizione per te in questo momento.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:14.591816Z"
+  },
+  "quests.dark_trails.you_need_4_players_to_fight": {
+    "src_hash": "f8616bd446505a250fe2dd4e0f2bb8e8",
+    "text": "Hai bisogno di 4 giocatori per combattere con The Ravager.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:14.592952Z"
+  },
+  "quests.dark_trails.you_need_5_players_to_fight": {
+    "src_hash": "dd66394f98cf7a92f092a64cf4b6f701",
+    "text": "Hai bisogno di 5 giocatori per combattere con il Sacerdote della Morte Shargon.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:21.134459Z"
+  },
+  "quests.dark_trails.you_need_exactly_5_players_to": {
+    "src_hash": "3b4c4eca07178defda28435c1bf2bbdd",
+    "text": "Hai bisogno esattamente di 5 giocatori per combattere con il Sacerdote della Morte Shargon.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:21.135557Z"
+  },
+  "quests.dawnport.first_time_vocation": {
+    "src_hash": "632c8e6c1a41db98f6da0017c97dfb26",
+    "text": "Poiché questa è la tua prima volta come %s %s",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:21.136317Z"
+  },
+  "quests.dawnport.received_weapons": {
+    "src_hash": "00b1359d03d36f78ebc8454d99a4c107",
+    "text": "Hai ricevuto le armi di un %s. %s",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:21.137026Z"
+  },
+  "quests.deeplings.boss_defends": {
+    "src_hash": "300ffad49f322c2ef4669acbab761d18",
+    "text": "{0} difende le sue cose e non ti permetterà di aprire il suo baule.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:21.137900Z"
   }
 }

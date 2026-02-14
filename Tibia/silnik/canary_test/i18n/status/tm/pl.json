@@ -83558,5 +83558,333 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-14T11:26:49.344725Z"
+  },
+  "spell.obujos_skill_reducer_1.name": {
+    "src_hash": "761e07a1d8338f36e05a468f8df8cdd6",
+    "text": "obujos skill reducer 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:30:45.478235Z"
+  },
+  "spell.morgaroth_skill_reducer_2.name": {
+    "src_hash": "863723246630037a2d7b72736b8178f9",
+    "text": "morgaroth skill reducer 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:30:45.479138Z"
+  },
+  "spell.zulazza_the_corruptor_skill_reducer.name": {
+    "src_hash": "546ae835b39cd2bf56630b8ebe779559",
+    "text": "zulazza the corruptor skill reducer",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:30:45.479857Z"
+  },
+  "spell.terofar_skill_reducer_2.name": {
+    "src_hash": "2e4b4ad63a6d051ec670c89a32b9cb48",
+    "text": "terofar skill reducer 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:30:45.480468Z"
+  },
+  "spell.terofar_skill_reducer_1.name": {
+    "src_hash": "e574c4bc74dcb7aa615c0616eb9e06c7",
+    "text": "terofar skill reducer 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:30:45.488678Z"
+  },
+  "spell.crystal_spider_paralyze_2.name": {
+    "src_hash": "65e000bbbca9193153934fb7e303b54a",
+    "text": "crystal spider paralyze 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:30:48.132537Z"
+  },
+  "spell.white_weretiger_ice_ring.name": {
+    "src_hash": "f1617c0fc40020f24df6b11d845af8ec",
+    "text": "white weretiger ice ring",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:30:48.133020Z"
+  },
+  "spell.azerus_skill_reducer_2.name": {
+    "src_hash": "aab7ce88a95b460ce06e14c025b13979",
+    "text": "azerus skill reducer 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:30:48.133467Z"
+  },
+  "spell.ghazbaran_skill_reducer_2.name": {
+    "src_hash": "edb6c3cd04556245eb946083c0d81691",
+    "text": "ghazbaran skill reducer 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:30:48.133939Z"
+  },
+  "spell.morgaroth_skill_reducer_1.name": {
+    "src_hash": "3611981e0ab9f12ef69a7bfdad81a978",
+    "text": "morgaroth skill reducer 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:30:48.134341Z"
+  },
+  "spell.magma_crawler_skill_reducer.name": {
+    "src_hash": "3dc5ead3c7a81bf99d2e0ca99295a8ae",
+    "text": "magma crawler skill reducer",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:30:50.724967Z"
+  },
+  "spell.obujos_skill_reducer_2.name": {
+    "src_hash": "534f2169f0c85fa6070b74fdb7312ce7",
+    "text": "obujos skill reducer 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:30:50.725345Z"
+  },
+  "spell.ghazbaran_skill_reducer_1.name": {
+    "src_hash": "fbdc5b81beb4fb8e597418d7e1b21ed1",
+    "text": "ghazbaran skill reducer 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:30:50.725672Z"
+  },
+  "spell.azerus_skill_reducer_3.name": {
+    "src_hash": "b38b1973057027ce0ac17b6655bf5684",
+    "text": "azerus skill reducer 3",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:30:50.725949Z"
+  },
+  "spell.azerus_skill_reducer_1.name": {
+    "src_hash": "031d9477c0d8ff8150202356447acf7f",
+    "text": "azerus skill reducer 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:30:50.726246Z"
+  },
+  "spell.abyssador_skill_reducer_2.name": {
+    "src_hash": "eb7e0f68fbda730b28aebfca823d07ee",
+    "text": "abyssador skill reducer 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:30:53.352995Z"
+  },
+  "spell.crystal_spider_paralyze_1.name": {
+    "src_hash": "ce4f8708f2c6d7661a5bd76a3ba19c36",
+    "text": "crystal spider paralyze 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:30:53.353367Z"
+  },
+  "spell.morik_the_gladiator_summon.name": {
+    "src_hash": "63796c1345f551d1841d3be97bea92e3",
+    "text": "morik the gladiator summon",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:30:53.353826Z"
+  },
+  "spell.orewalker_skill_reducer_1.name": {
+    "src_hash": "12df6f43766d1adaa3bee5abdabd35cf",
+    "text": "orewalker skill reducer 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:30:53.354178Z"
+  },
+  "spell.abyssador_skill_reducer_1.name": {
+    "src_hash": "9e9a4234c4bde5d881f3576f61b5c7c9",
+    "text": "abyssador skill reducer 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:30:53.354604Z"
+  },
+  "spell.hells_core.words": {
+    "src_hash": "e077afa126207cc6dc36afc6c4f68572",
+    "text": "exevo gran mas flam",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:30:55.965467Z"
+  },
+  "spell.great_fire_wave.words": {
+    "src_hash": "f565243e7b0bda1569185f2d092c93b3",
+    "text": "exevo gran flam hur",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:30:55.965886Z"
+  },
+  "spell.strong_ice_wave.words": {
+    "src_hash": "b861859e3ed441b3388f08788a5e6a3f",
+    "text": "exevo gran frigo hur",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:30:55.966190Z"
+  },
+  "spell.executioners_throw.name": {
+    "src_hash": "87bee2f42bd3eae06b694a27794d9d6c",
+    "text": "Executioner's Throw",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:30:55.966640Z"
+  },
+  "spell.rage_of_the_skies.words": {
+    "src_hash": "2887c375b9e94ea1262fcc74e7522abe",
+    "text": "exevo gran mas vis",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:30:55.966959Z"
+  },
+  "spell.lightning.name": {
+    "src_hash": "457ba641340a812b28f949a26fca3e7b",
+    "text": "Lightning",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:30:58.624584Z"
+  },
+  "spell.wrath_of_nature.words": {
+    "src_hash": "5b94f8238c60a27d0c3dc9f9fe16d57a",
+    "text": "exevo gran mas tera",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:30:58.624998Z"
+  },
+  "spell.great_energy_beam.words": {
+    "src_hash": "ff7f58852ac90df8065ffedfd642dfdb",
+    "text": "exevo gran vis lux",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:30:58.625336Z"
+  },
+  "spell.eternal_winter.words": {
+    "src_hash": "51fd40d4aa29ac9a8bf196246188c486",
+    "text": "exevo gran mas frigo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:30:58.625707Z"
+  },
+  "spell.mass_healing.words": {
+    "src_hash": "ebf9e432b58291e161bc08d57d3714ad",
+    "text": "exura gran mas res",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:30:58.625984Z"
+  },
+  "spell.sorcerer_familiar.words": {
+    "src_hash": "9c8e5fe44708a416d0316a182d795b4a",
+    "text": "utevo gran res ven",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:31:01.302967Z"
+  },
+  "spell.knight_familiar.words": {
+    "src_hash": "50de5d50e5cd69b2c0ea1b65786612b8",
+    "text": "utevo gran res eq",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:31:01.303577Z"
+  },
+  "spell.paladin_familiar.words": {
+    "src_hash": "690f4087bacb9f08e79c6e7dc641cdbe",
+    "text": "utevo gran res sac",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:31:01.304334Z"
+  },
+  "spell.druid_familiar.words": {
+    "src_hash": "acf2889a52eab730cace69e1dcd8288a",
+    "text": "utevo gran res dru",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:31:01.304878Z"
+  },
+  "spell.charge.name": {
+    "src_hash": "517349a3cdc1acf50617693e3ba33988",
+    "text": "Charge",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:31:01.305257Z"
+  },
+  "spell.challenge.name": {
+    "src_hash": "b5f5623b6137a89a1dadf079a5e92266",
+    "text": "Challenge",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:31:03.041008Z"
+  },
+  "quests.actions_coral.msg_1": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Przepraszam.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:48.884511Z"
+  },
+  "quests.actions_crystal.msg_1": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Przepraszam.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:48.885363Z"
+  },
+  "quests.bigfoot_burden.crystals_charging": {
+    "src_hash": "e8e09ff0c5db42c8b3a95b1100d0c2b4",
+    "text": "Kryształy się ładują!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:52.101718Z"
+  },
+  "quests.demon_oak.sound_3": {
+    "src_hash": "ad954e578749aec118f170e9cc6cddb1",
+    "text": "Powstańcie, sługi, powstańcie z martwych!!!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:52.102143Z"
+  },
+  "quests.demon_oak.sound_6": {
+    "src_hash": "215518027445ceeb220fa31ef6203b35",
+    "text": "DOJDŹ TAM, GDZIE MOGĘ DO CIĘ DOJŚĆ!!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:46:52.102657Z"
   }
 }

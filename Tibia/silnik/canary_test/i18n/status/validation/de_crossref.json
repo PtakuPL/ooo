@@ -1,10 +1,10 @@
 {
   "lang": "de",
-  "coverage_pct": 44.8,
+  "coverage_pct": 44.7,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-14T11:17:03.898851Z",
+  "checked_at": "2026-02-14T11:42:07.699370Z",
   "issues_total": 415,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -266,474 +266,6 @@
       "lang": "Tanjis: Sabado (15h - 21h)"
     },
     {
-      "key": "book.otbm.the_end_of_all_hope_e03b693f",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The end of all hope lies under my feet",
-      "pl": "The I. z wszystkie I. lies under mój feet",
-      "lang": "The end of all hope lies under my feet"
-    },
-    {
-      "key": "book.otbm.the_eternal_love_is_awarded",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The eternal love is awarded by TibiaTR.net.",
-      "pl": "The wieczny love jest I. by TibiaTR.I..",
-      "lang": "The eternal love is awarded by TibiaTR.net."
-    },
-    {
-      "key": "book.otbm.the_fighting_pits_viewing_balcony",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Fighting Pits - Viewing Balcony",
-      "pl": "The I. Dół, jama - I. Balkon",
-      "lang": "The Fighting Pits - Viewing Balcony"
-    },
-    {
-      "key": "book.otbm.the_first_creatures_book_one",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The First Creatures BOOK ONE",
-      "pl": "The I. Stwory I. I.",
-      "lang": "The First Creatures BOOK ONE"
-    },
-    {
-      "key": "book.otbm.the_first_creatures_book_two",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The First Creatures BOOK TWO",
-      "pl": "The I. Stwory I. DWA",
-      "lang": "The First Creatures BOOK TWO"
-    },
-    {
-      "key": "book.otbm.the_formulas_of_lexis_energyflow",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The formulas of Lexis - Energyflow of the time rings",
-      "pl": "The formuła, wzór z Lexis - Energyflow z the czas rings",
-      "lang": "The formulas of Lexis - Energyflow of the time rings"
-    },
-    {
-      "key": "book.otbm.the_formulas_of_lexis_energyflow_234522c3",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The formulas of Lexis - Energyflow of the death rings",
-      "pl": "The formuła, wzór z Lexis - Energyflow z the I. rings",
-      "lang": "The formulas of Lexis - Energyflow of the death rings"
-    },
-    {
-      "key": "book.otbm.the_formulas_of_lexis_energyflow_39244b4b",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The formulas of Lexis - Energyflow of the time rings",
-      "pl": "The formuła, wzór z Lexis - Energyflow z the czas rings",
-      "lang": "The formulas of Lexis - Energyflow of the time rings"
-    },
-    {
-      "key": "book.otbm.the_formulas_of_lexis_energyflow_5dee2930",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The formulas of Lexis - Energyflow of the life rings",
-      "pl": "The formuła, wzór z Lexis - Energyflow z the I. rings",
-      "lang": "The formulas of Lexis - Energyflow of the life rings"
-    },
-    {
-      "key": "book.otbm.the_great_book_of_firemagic",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The great book of firemagic",
-      "pl": "The I. I. z firemagic",
-      "lang": "The great book of firemagic"
-    },
-    {
-      "key": "book.otbm.the_great_creation_book_one",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Great Creation BOOK ONE",
-      "pl": "The I. Creation I. I.",
-      "lang": "The Great Creation BOOK ONE"
-    },
-    {
-      "key": "book.otbm.the_great_creation_book_two",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Great Creation BOOK TWO",
-      "pl": "The I. Creation I. DWA",
-      "lang": "The Great Creation BOOK TWO"
-    },
-    {
-      "key": "book.otbm.the_great_lava_falls_in",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The great lava falls in Hellgate",
-      "pl": "The I. lawa I. w Hellgate",
-      "lang": "The great lava falls in Hellgate"
-    },
-    {
-      "key": "book.otbm.the_great_lighthousetree_of_abdendriel",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The great lighthousetree of Ab'Dendriel",
-      "pl": "The I. lightdomtree z Ab'Dendriel",
-      "lang": "The great lighthousetree of Ab'Dendriel"
-    },
-    {
-      "key": "book.otbm.the_hierarchy_of_the_demon",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Hierarchy of the Demon Lords.",
-      "pl": "The Hierarchia z the Demon Lord.",
-      "lang": "The Hierarchy of the Demon Lords."
-    },
-    {
-      "key": "book.otbm.the_iron_house_armors_weapons",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Iron House - Armors, Weapons, Ammunition",
-      "pl": "The I. dom - Armors, Broń, Amunicja",
-      "lang": "The Iron House - Armors, Weapons, Ammunition"
-    },
-    {
-      "key": "book.otbm.the_iron_house_armors_weapons_fdbb30f6",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Iron House - Armors, Weapons, Ammunition",
-      "pl": "The I. dom - Armors, Broń, Amunicja",
-      "lang": "The Iron House - Armors, Weapons, Ammunition"
-    },
-    {
-      "key": "book.otbm.the_iron_house_armors_wepons",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Iron House - Armors, Wepons, Ammunition",
-      "pl": "The I. dom - Armors, Wepons, Amunicja",
-      "lang": "The Iron House - Armors, Wepons, Ammunition"
-    },
-    {
-      "key": "book.otbm.the_jolly_seahorse_tavern",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Jolly Seahorse Tavern",
-      "pl": "The I. Seahorse Tavern",
-      "lang": "The Jolly Seahorse Tavern"
-    },
-    {
-      "key": "book.otbm.the_jolly_seahorse_tavern_32caa05e",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Jolly Seahorse Tavern",
-      "pl": "The I. Seahorse Tavern",
-      "lang": "The Jolly Seahorse Tavern"
-    },
-    {
-      "key": "book.otbm.the_khalabal_chronicles_i_the",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Kha'labal Chronicles I - The Creation of the Kha'labal",
-      "pl": "The Kha'labal I. I - The Creation z the Kha'labal",
-      "lang": "The Kha'labal Chronicles I - The Creation of the Kha'labal"
-    },
-    {
-      "key": "book.otbm.the_khalabal_chronicles_ii_shadows",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Kha'labal Chronicles II - Shadows from the North",
-      "pl": "The Kha'labal I. II - Cień z the Nierth",
-      "lang": "The Kha'labal Chronicles II - Shadows from the North"
-    },
-    {
-      "key": "book.otbm.the_khalabal_chronicles_iii_banor",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Kha'labal Chronicles III - Banor",
-      "pl": "The Kha'labal I. III - BaNier",
-      "lang": "The Kha'labal Chronicles III - Banor"
-    },
-    {
-      "key": "book.otbm.the_khalabal_chronicles_iv_the",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Kha'labal Chronicles IV - The Exodus",
-      "pl": "The Kha'labal I. IV - The Eksodus",
-      "lang": "The Kha'labal Chronicles IV - The Exodus"
-    },
-    {
-      "key": "book.otbm.the_known_and_acknowledged_worldwonders",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The known and acknowledged world-wonders are:",
-      "pl": "The kNiewn i ackNiewledged I.-I. są:",
-      "lang": "The known and acknowledged world-wonders are:"
-    },
-    {
-      "key": "book.otbm.the_language_of_the_wolves",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Language of the Wolves",
-      "pl": "The Język z the Wolves",
-      "lang": "The Language of the Wolves"
-    },
-    {
-      "key": "book.otbm.the_lava_was_since_the",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The lava was since the beginning our friend.",
-      "pl": "The lawa był I. the początek nasz przyjaciel, dobry kolega, kolega.",
-      "lang": "The lava was since the beginning our friend."
-    },
-    {
-      "key": "book.otbm.the_legend_of_the_swimming",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Legend of the Swimming Isle",
-      "pl": "The Legenda z the I. Wyspa, ostrów",
-      "lang": "The Legend of the Swimming Isle"
-    },
-    {
-      "key": "book.otbm.the_lighthouse_in_the_middle",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Lighthouse in the Middle of Nowhere",
-      "pl": "The Lightdom w the I. z Niewhere",
-      "lang": "The Lighthouse in the Middle of Nowhere"
-    },
-    {
-      "key": "book.otbm.the_long_run_to_decay",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "the long run to decay and destruction.",
-      "pl": "the long run do I. i zniszczenie.",
-      "lang": "the long run to decay and destruction."
-    },
-    {
-      "key": "book.otbm.the_magic_bazar_potions_spells",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Magic Bazar - Potions, Spells, Runes",
-      "pl": "The I. Bazar - Napój, zaklęCentalna Agencja Wywiadowcza, Runes",
-      "lang": "The Magic Bazar - Potions, Spells, Runes"
-    },
-    {
-      "key": "book.otbm.the_magic_bazar_potions_spells_2b005715",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Magic Bazar - Potions, Spells, Runes",
-      "pl": "The I. Bazar - Napój, zaklęCentalna Agencja Wywiadowcza, Runes",
-      "lang": "The Magic Bazar - Potions, Spells, Runes"
-    },
-    {
-      "key": "book.otbm.the_magic_bazar_potions_spells_b3905a03",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Magic Bazar - Potions, Spells, Runes, Sorcerer and Druid Trainer",
-      "pl": "The I. Bazar - Napój, zaklęCentalna Agencja Wywiadowcza, Runes, Sorcerer i Druid Trener",
-      "lang": "The Magic Bazar - Potions, Spells, Runes, Sorcerer and Druid Trainer"
-    },
-    {
-      "key": "book.otbm.the_magic_power_of_those",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The magic power of those rings is incredible.",
-      "pl": "The I. I. z those rings jest niewiarygodny, niebywały.",
-      "lang": "The magic power of those rings is incredible."
-    },
-    {
-      "key": "book.otbm.the_magic_web_around_our",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The magic web around our world",
-      "pl": "The I. pajęczyna around nasz I.",
-      "lang": "The magic web around our world"
-    },
-    {
-      "key": "book.otbm.the_magic_web_maps_book",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The magic web - Maps - Book 1",
-      "pl": "The I. pajęczyna - mapas - I. 1",
-      "lang": "The magic web - Maps - Book 1"
-    },
-    {
-      "key": "book.otbm.the_magic_web_maps_book_e191ce8d",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The magic web - Maps - Book 2",
-      "pl": "The I. pajęczyna - mapas - I. 2",
-      "lang": "The magic web - Maps - Book 2"
-    },
-    {
-      "key": "book.otbm.the_man_that_was_formerly",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The man that was formerly known as my",
-      "pl": "The man that był poprzednio kNiewn as mój",
-      "lang": "The man that was formerly known as my"
-    },
-    {
-      "key": "book.otbm.the_maze_of_the_lost",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The maze of the lost souls",
-      "pl": "The labirynt z the I. dusza",
-      "lang": "The maze of the lost souls"
-    },
-    {
-      "key": "book.otbm.the_maze_of_the_lost_a689cea7",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Maze of the Lost Souls",
-      "pl": "The Labirynt z the I. Dusza",
-      "lang": "The Maze of the Lost Souls"
-    },
-    {
-      "key": "book.otbm.the_mightiest_the_only_god",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The mightiest. The only. God of all dwarfs. Awarded by Tibia Bariloche.",
-      "pl": "The mightiest. The tylko. God z wszystkie I.. I. by Tibia Bariloche.",
-      "lang": "The mightiest. The only. God of all dwarfs. Awarded by Tibia Bariloche."
-    },
-    {
-      "key": "book.otbm.the_one_and_only_armageddon",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The one and only Armageddon spell. Sorry, we're currently looking for a new teacher.",
-      "pl": "The I. i tylko Armageddon zaklęcie. Przykro wywiad wojskowy, we're obecnie looking dla jeden new nauczyciel.",
-      "lang": "The one and only Armageddon spell. Sorry, we're currently looking for a new teacher."
-    },
-    {
-      "key": "book.otbm.the_phrase_feed_those_in",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "the phrase 'feed those in need', which",
-      "pl": "the I. 'I. those w potrzebować', I.",
-      "lang": "the phrase 'feed those in need', which"
-    },
-    {
-      "key": "book.otbm.the_pyramid_city_of_ankrahmun",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The pyramid city of Ankrahmun",
-      "pl": "The piramida miasto z Ankrahmun",
-      "lang": "The pyramid city of Ankrahmun"
-    },
-    {
-      "key": "book.otbm.the_quara_curse_of_the",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Quara, Curse of the Seas",
-      "pl": "The Quara, Curse z the Morze",
-      "lang": "The Quara, Curse of the Seas"
-    },
-    {
-      "key": "book.otbm.the_quara_curse_of_the_7d417dbc",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Quara, Curse of the Seas",
-      "pl": "The Quara, Curse z the Morze",
-      "lang": "The Quara, Curse of the Seas"
-    },
-    {
-      "key": "book.otbm.the_rest_of_ratha_mission",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "the rest of ratha mission#",
-      "pl": "the rest z ratha misja#",
-      "lang": "the rest of ratha mission#"
-    },
-    {
-      "key": "book.otbm.the_rest_was_scratched_out",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "........ (the rest was scratched out)",
-      "pl": "........ (the rest był I. out)",
-      "lang": "........ (the rest was scratched out)"
-    },
-    {
-      "key": "book.otbm.the_secrets_of_death_will",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The secrets of death will be mine! MINE!",
-      "pl": "The I. z I. will być I.! I.!",
-      "lang": "The secrets of death will be mine! MINE!"
-    },
-    {
-      "key": "book.otbm.the_secrets_of_rune_magic",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Secrets of Rune Magic",
-      "pl": "The I. z Rune I.",
-      "lang": "The Secrets of Rune Magic"
-    },
-    {
-      "key": "book.otbm.the_skill_of_the_yalahari",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Skill of the Yalahari",
-      "pl": "The Umiejętność z the Yalahari",
-      "lang": "The Skill of the Yalahari"
-    },
-    {
-      "key": "book.otbm.the_story_of_old_dragons",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The story of old Dragons mountain...",
-      "pl": "The story z I. Smok góra...",
-      "lang": "The story of old Dragons mountain..."
-    },
-    {
       "key": "book.otbm.the_strength_of_the_yalahari",
       "category": "books",
       "type": "pl_reference_missing_translation",
@@ -750,15 +282,6 @@
       "en": "The teleporter to the surface",
       "pl": "The teleportowaće... do the I.",
       "lang": "The teleporter to the surface"
-    },
-    {
-      "key": "book.otbm.the_thorntower_of_shadowthorn",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The thorntower of Shadowthorn",
-      "pl": "The thorntower z Shadowthorn",
-      "lang": "The thorntower of Shadowthorn"
     },
     {
       "key": "book.otbm.the_tibian_worldwonders",
@@ -1886,15 +1409,6 @@
       "lang": "Written by Danae, historian of the warlocks"
     },
     {
-      "key": "book.otbm.written_by_hrmumundus_grofrukle",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Written by Hrmumundus Grofrukle",
-      "pl": "Pisemny by Hrmumundus Grofrukle",
-      "lang": "Written by Hrmumundus Grofrukle"
-    },
-    {
       "key": "book.otbm.written_by_tekvorian_knight_of",
       "category": "books",
       "type": "pl_reference_missing_translation",
@@ -2037,24 +1551,6 @@
       "en": "Looks like the fox is out!\nMore luck next time!\nSigned:\nthe horned fox",
       "pl": "Looks like the I. jest out!\nMore good luck next czas!\nI.:\nthe róg I.",
       "lang": "Looks like the fox is out!\nMore luck next time!\nSigned:\nthe horned fox"
-    },
-    {
-      "key": "book.quest_reward.wanted_list",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hardek *\nBozo *\nSam ****\nOswald\nPartos ***\nQuentin *\nTark ***\nHarsky ***\nStutch *\nFerumbras *\nFrodo **\nNoodles ****",
-      "pl": "Hardek *\nBozo *\nSam ****\nOswald\nPartos ***\nQuentin *\nTark ***\nHarsky ***\nStutch *\nFerumbras *\nFrodo **\nNieodles ****",
-      "lang": "Hardek *\nBozo *\nSam ****\nOswald\nPartos ***\nQuentin *\nTark ***\nHarsky ***\nStutch *\nFerumbras *\nFrodo **\nNoodles ****"
-    },
-    {
-      "key": "book.quest_system2.the_paper_is_old_and_tattered",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "<the paper is old and tattered, you can only make out a signature:> Tylaf, apprentice of Hjaern",
-      "pl": "<the paper is old and tattered, you can only make out a signature:> Tylaf, terminator, praktykant z Hjaern",
-      "lang": "<the paper is old and tattered, you can only make out a signature:> Tylaf, apprentice of Hjaern"
     },
     {
       "key": "ui.house.rent_period_daily",
@@ -2489,33 +1985,6 @@
       "lang": "Exalted Hero"
     },
     {
-      "key": "cpp.badge.name_6",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Tibia Loyalist (Grade 1)",
-      "pl": "Tibia Loyalist (I. 1)",
-      "lang": "Tibia Loyalist (Grade 1)"
-    },
-    {
-      "key": "cpp.badge.name_7",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Tibia Loyalist (Grade 2)",
-      "pl": "Tibia Loyalist (I. 2)",
-      "lang": "Tibia Loyalist (Grade 2)"
-    },
-    {
-      "key": "cpp.badge.name_8",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Tibia Loyalist (Grade 3)",
-      "pl": "Tibia Loyalist (I. 3)",
-      "lang": "Tibia Loyalist (Grade 3)"
-    },
-    {
       "key": "cpp.badge.name_9",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -2885,24 +2354,6 @@
       "lang": "{0} loses {1} hitpoints due to your attack."
     },
     {
-      "key": "cpp.combat.dmg_spectator_by_crit_one",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "{0} loses {1} hitpoint due to a critical attack by {2}.",
-      "pl": "{0} loses {1} hitpoint due do jeden critical I. by {2}.",
-      "lang": "{0} loses {1} hitpoint due to a critical attack by {2}."
-    },
-    {
-      "key": "cpp.combat.dmg_spectator_by_crit_other",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "{0} loses {1} hitpoints due to a critical attack by {2}.",
-      "pl": "{0} loses {1} hitpoints due do jeden critical I. by {2}.",
-      "lang": "{0} loses {1} hitpoints due to a critical attack by {2}."
-    },
-    {
       "key": "cpp.combat.dmg_spectator_by_one",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -3009,24 +2460,6 @@
       "en": "You lose {0} hitpoints due to an attack by {1}.",
       "pl": "Ty lose {0} hitpoints due do jeden I. by {1}.",
       "lang": "You lose {0} hitpoints due to an attack by {1}."
-    },
-    {
-      "key": "cpp.combat.dmg_target_none_one",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You lose {0} hitpoint.",
-      "pl": "Ty lose {0} hitpoint.",
-      "lang": "You lose {0} hitpoint."
-    },
-    {
-      "key": "cpp.combat.dmg_target_none_other",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You lose {0} hitpoints.",
-      "pl": "Ty lose {0} hitpoints.",
-      "lang": "You lose {0} hitpoints."
     },
     {
       "key": "cpp.combat.dmg_target_self_crit_one",
@@ -3281,15 +2714,6 @@
       "lang": "{0} loses {1} mana due to an attack by {2}."
     },
     {
-      "key": "cpp.combat.mana_spectator_by_crit",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "{0} loses {1} mana due to a critical attack by {2}.",
-      "pl": "{0} loses {1} mana due do jeden critical I. by {2}.",
-      "lang": "{0} loses {1} mana due to a critical attack by {2}."
-    },
-    {
       "key": "cpp.combat.mana_spectator_none",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -3324,15 +2748,6 @@
       "en": "You lose {0} mana due to a critical attack by {1}.",
       "pl": "Ty lose {0} mana due do jeden critical I. by {1}.",
       "lang": "You lose {0} mana due to a critical attack by {1}."
-    },
-    {
-      "key": "cpp.combat.mana_target_none",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You lose {0} mana.",
-      "pl": "Ty lose {0} mana.",
-      "lang": "You lose {0} mana."
     },
     {
       "key": "cpp.combat.mana_target_self",
@@ -3396,24 +2811,6 @@
       "en": "{0} was restored for {1} mana.",
       "pl": "{0} był restored dla {1} mana.",
       "lang": "{0} was restored for {1} mana."
-    },
-    {
-      "key": "cpp.combat.restore_spectator_other",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "{0} restored {1} for {2} mana.",
-      "pl": "{0} restored {1} dla {2} mana.",
-      "lang": "{0} restored {1} for {2} mana."
-    },
-    {
-      "key": "cpp.combat.restore_spectator_self",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "{0} restored {1} for {2} mana.",
-      "pl": "{0} restored {1} dla {2} mana.",
-      "lang": "{0} restored {1} for {2} mana."
     },
     {
       "key": "cpp.combat.restore_target_by",
@@ -3612,6 +3009,609 @@
       "en": "unchanged",
       "pl": "niezmienione",
       "lang": "unchanged"
+    },
+    {
+      "key": "cpp.forge.unknown",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "(unknown)",
+      "pl": "(nieznany)",
+      "lang": "(unknown)"
+    },
+    {
+      "key": "cpp.forge.unsuccessful",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Unsuccessful",
+      "pl": "Unsukcesful",
+      "lang": "Unsuccessful"
+    },
+    {
+      "key": "cpp.game.already_in_party",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} is already in a party.",
+      "pl": "{0} jest już w jeden drużyna.",
+      "lang": "{0} is already in a party."
+    },
+    {
+      "key": "cpp.game.and_all_dropped_items",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": " and all dropped items",
+      "pl": "i wszystkie dropped przedmioty",
+      "lang": " and all dropped items"
+    },
+    {
+      "key": "cpp.game.and_no_items",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": " and none of the items",
+      "pl": "i Niene z the przedmioty",
+      "lang": " and none of the items"
+    },
+    {
+      "key": "cpp.game.and_some_items",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": " and some of the dropped items",
+      "pl": "i I. z the dropped przedmioty",
+      "lang": " and some of the dropped items"
+    },
+    {
+      "key": "cpp.game.but_no_gold",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": " but none of the dropped gold",
+      "pl": "I. Niene z the dropped złota",
+      "lang": " but none of the dropped gold"
+    },
+    {
+      "key": "cpp.game.but_no_items",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": " but none of the dropped items",
+      "pl": "I. Niene z the dropped przedmioty",
+      "lang": " but none of the dropped items"
+    },
+    {
+      "key": "cpp.game.but_only_some_gold",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": ", but you only looted {0} of the dropped gold",
+      "pl": ", I. ty tylko I. {0} z the dropped złota",
+      "lang": ", but you only looted {0} of the dropped gold"
+    },
+    {
+      "key": "cpp.game.but_only_some_items",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": ", but you only looted some of the items",
+      "pl": ", I. ty tylko I. I. z the przedmioty",
+      "lang": ", but you only looted some of the items"
+    },
+    {
+      "key": "cpp.game.could_not_loot",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You could not loot ",
+      "pl": "Ty mógł Niet I.",
+      "lang": "You could not loot "
+    },
+    {
+      "key": "cpp.game.guild_motd_title",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Message of the Day",
+      "pl": "Wiadomość z the Dzień",
+      "lang": "Message of the Day"
+    },
+    {
+      "key": "cpp.game.hazard_dodged_by",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} has dodged an attack by {1}.",
+      "pl": "{0} ma dodged jeden I. by {1}.",
+      "lang": "{0} has dodged an attack by {1}."
+    },
+    {
+      "key": "cpp.game.hazard_dodged_your",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} has dodged your attack.",
+      "pl": "{0} ma dodged twój I..",
+      "lang": "{0} has dodged your attack."
+    },
+    {
+      "key": "cpp.game.hazard_tag",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": " (Hazard)",
+      "pl": "(I.)",
+      "lang": " (Hazard)"
+    },
+    {
+      "key": "cpp.game.highscore_category_axe",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Axe Fighting",
+      "pl": "Walka na siekiery",
+      "lang": "Axe Fighting"
+    },
+    {
+      "key": "cpp.game.highscore_category_club",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Club Fighting",
+      "pl": "Walka Klubowa",
+      "lang": "Club Fighting"
+    },
+    {
+      "key": "cpp.game.highscore_category_distance",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Distance Fighting",
+      "pl": "Walka na odległość",
+      "lang": "Distance Fighting"
+    },
+    {
+      "key": "cpp.game.highscore_category_experience",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Experience Points",
+      "pl": "I. Points",
+      "lang": "Experience Points"
+    },
+    {
+      "key": "cpp.game.highscore_category_fist",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Fist Fighting",
+      "pl": "pięść I.",
+      "lang": "Fist Fighting"
+    },
+    {
+      "key": "cpp.game.highscore_category_magic_level",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Magic Level",
+      "pl": "Poziom Magii",
+      "lang": "Magic Level"
+    },
+    {
+      "key": "cpp.game.highscore_category_sword",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Sword Fighting",
+      "pl": "miecz I.",
+      "lang": "Sword Fighting"
+    },
+    {
+      "key": "cpp.game.loot_container_for_full",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Attention! The container for {0} is full.",
+      "pl": "Uwaga! The I. dla {0} jest I..",
+      "lang": "Attention! The container for {0} is full."
+    },
+    {
+      "key": "cpp.game.loot_container_full",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Attention! The container assigned to category {0} is full.",
+      "pl": "Uwaga! The I. wyznaczać do kategoria {0} jest I..",
+      "lang": "Attention! The container assigned to category {0} is full."
+    },
+    {
+      "key": "cpp.game.loot_too_heavy",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Attention! The loot you are trying to pick up is too heavy for you to carry.",
+      "pl": "Uwaga! The I. Jesteś dojmujący, ciężki do I. up jest też, także ciężki dla ty do I..",
+      "lang": "Attention! The loot you are trying to pick up is too heavy for you to carry."
+    },
+    {
+      "key": "cpp.game.looted_all_dropped_items",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You looted all of the dropped items",
+      "pl": "Ty I. wszystkie z the dropped przedmioty",
+      "lang": "You looted all of the dropped items"
+    },
+    {
+      "key": "cpp.game.looted_all_items",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You looted all items",
+      "pl": "Ty I. wszystkie przedmioty",
+      "lang": "You looted all items"
+    },
+    {
+      "key": "cpp.game.looted_complete_gold",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You looted the complete {0} gold",
+      "pl": "Ty I. the I. {0} złota",
+      "lang": "You looted the complete {0} gold"
+    },
+    {
+      "key": "cpp.game.looted_corpses",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You looted {0} corpses.",
+      "pl": "Ty I. {0} corpses.",
+      "lang": "You looted {0} corpses."
+    },
+    {
+      "key": "cpp.game.looted_gold",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You looted {0} gold",
+      "pl": "Ty I. {0} złota",
+      "lang": "You looted {0} gold"
+    },
+    {
+      "key": "cpp.game.looted_no_gold",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You looted none of the dropped gold",
+      "pl": "Ty I. Niene z the dropped złota",
+      "lang": "You looted none of the dropped gold"
+    },
+    {
+      "key": "cpp.game.looted_no_items",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You looted none of the dropped items",
+      "pl": "Ty I. Niene z the dropped przedmioty",
+      "lang": "You looted none of the dropped items"
+    },
+    {
+      "key": "cpp.game.looted_one_item",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You looted 1 item",
+      "pl": "Ty I. 1 przedmiot",
+      "lang": "You looted 1 item"
+    },
+    {
+      "key": "cpp.game.looted_some_items",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You looted some of the dropped items",
+      "pl": "Ty I. I. z the dropped przedmioty",
+      "lang": "You looted some of the dropped items"
+    },
+    {
+      "key": "cpp.game.market_coin_transaction_purchased",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Purchased on Market",
+      "pl": "Kupiono na Rynku",
+      "lang": "Purchased on Market"
+    },
+    {
+      "key": "cpp.game.market_coin_transaction_sold",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Sold on Market",
+      "pl": "Sprzedano na Rynku",
+      "lang": "Sold on Market"
+    },
+    {
+      "key": "cpp.game.market_item_not_correct",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "The item you tried to market is not correct. Check the item again.",
+      "pl": "The przedmiot ty tried do I. jest Niet correct. Check the przedmiot ponownie.",
+      "lang": "The item you tried to market is not correct. Check the item again."
+    },
+    {
+      "key": "cpp.game.message_sent_to",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Message sent to {0}.",
+      "pl": "Wiadomość sent do {0}.",
+      "lang": "Message sent to {0}."
+    },
+    {
+      "key": "cpp.game.no_loot",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "No loot",
+      "pl": "Nie I.",
+      "lang": "No loot"
+    },
+    {
+      "key": "cpp.game.objects_picked_up",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} of {1} objects were picked up.",
+      "pl": "{0} z {1} obiekty były I. up.",
+      "lang": "{0} of {1} objects were picked up."
+    },
+    {
+      "key": "cpp.game.offline_training_button_cancel",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Cancel",
+      "pl": "Anuluj",
+      "lang": "Cancel"
+    },
+    {
+      "key": "cpp.game.offline_training_button_ok",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Okay",
+      "pl": "I.",
+      "lang": "Okay"
+    },
+    {
+      "key": "cpp.game.offline_training_choice_axe",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Axe Fighting and Shielding",
+      "pl": "Walka toporami i tarcza",
+      "lang": "Axe Fighting and Shielding"
+    },
+    {
+      "key": "cpp.game.offline_training_choice_club",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Club Fighting and Shielding",
+      "pl": "Walka klubowa i tarcza",
+      "lang": "Club Fighting and Shielding"
+    },
+    {
+      "key": "cpp.game.offline_training_choice_distance",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Distance Fighting and Shielding",
+      "pl": "Walka na dystans i osłona",
+      "lang": "Distance Fighting and Shielding"
+    },
+    {
+      "key": "cpp.game.offline_training_choice_magic",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Magic Level and Shielding",
+      "pl": "I. poziom i I.",
+      "lang": "Magic Level and Shielding"
+    },
+    {
+      "key": "cpp.game.offline_training_choice_sword",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Sword Fighting and Shielding",
+      "pl": "Miecz I. i I.",
+      "lang": "Sword Fighting and Shielding"
+    },
+    {
+      "key": "cpp.game.offline_training_message",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Please choose a skill:",
+      "pl": "Proszę wybierać jeden umiejętność:",
+      "lang": "Please choose a skill:"
+    },
+    {
+      "key": "cpp.game.offline_training_title",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Choose a Skill",
+      "pl": "Wybierać jeden Umiejętność",
+      "lang": "Choose a Skill"
+    },
+    {
+      "key": "cpp.game.only_looted_some_gold",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You only looted {0} of the dropped gold",
+      "pl": "Ty tylko I. {0} z the dropped złota",
+      "lang": "You only looted {0} of the dropped gold"
+    },
+    {
+      "key": "cpp.game.quick_loot_fail_gold",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You could not loot {0} gold.",
+      "pl": "Ty mógł Niet I. {0} złota.",
+      "lang": "You could not loot {0} gold."
+    },
+    {
+      "key": "cpp.game.quick_loot_fail_one_item",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You could not loot 1 item.",
+      "pl": "Ty mógł Niet I. 1 przedmiot.",
+      "lang": "You could not loot 1 item."
+    },
+    {
+      "key": "cpp.game.quick_loot_success_gold",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You looted {0} gold.",
+      "pl": "Ty I. {0} złota.",
+      "lang": "You looted {0} gold."
+    },
+    {
+      "key": "cpp.game.quick_loot_success_one_item",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You looted 1 item.",
+      "pl": "Ty I. 1 przedmiot.",
+      "lang": "You looted 1 item."
+    },
+    {
+      "key": "cpp.game.still_muted",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You are still muted for {0} seconds.",
+      "pl": "Jesteś I. przytłumiony dla {0} sekundy.",
+      "lang": "You are still muted for {0} seconds."
+    },
+    {
+      "key": "cpp.game.store_item_description",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You bought this item in the Store.\nUnwrap it in your own house to create a <{0}>.",
+      "pl": "Kupiłeś ten przedmiot w Sklepie.\nRozpakuj go we własnym domu, aby stworzyć <{0}>.",
+      "lang": "You bought this item in the Store.\nUnwrap it in your own house to create a <{0}>."
+    },
+    {
+      "key": "cpp.game.tentugly_name",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Tentugly",
+      "pl": "Delikatnie",
+      "lang": "Tentugly"
+    },
+    {
+      "key": "cpp.game.trade_move_closer",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} tells you to move closer.",
+      "pl": "{0} I. ty do I. Zamknijr.",
+      "lang": "{0} tells you to move closer."
+    },
+    {
+      "key": "cpp.game.trade_wants_to_trade",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} wants to trade with you.",
+      "pl": "{0} I. do handel z ty.",
+      "lang": "{0} wants to trade with you."
+    },
+    {
+      "key": "cpp.game.unwrap_house_description",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Unwrap this item in your own house to create a <{0}>.",
+      "pl": "Rozpakuj ten przedmiot we własnym domu, aby stworzyć <{0}>.",
+      "lang": "Unwrap this item in your own house to create a <{0}>."
+    },
+    {
+      "key": "cpp.game.you_looted",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You looted ",
+      "pl": "Ty I.",
+      "lang": "You looted "
+    },
+    {
+      "key": "cpp.hotkey.using_count",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Using one of {0} {1}...",
+      "pl": "Using I. z {0} {1}...",
+      "lang": "Using one of {0} {1}..."
+    },
+    {
+      "key": "cpp.hotkey.using_last",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Using the last {0}...",
+      "pl": "Używając ostatniego {0}...",
+      "lang": "Using the last {0}..."
+    },
+    {
+      "key": "cpp.hotkey.using_one",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Using one of {0}...",
+      "pl": "Using I. z {0}...",
+      "lang": "Using one of {0}..."
+    },
+    {
+      "key": "cpp.house.bought_success",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You have successfully bought the house.{0}",
+      "pl": "Masz sukcesfully bought the dom.{0}",
+      "lang": "You have successfully bought the house.{0}"
+    },
+    {
+      "key": "cpp.house.door_owned",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "It belongs to house '{0}'. {1} owns this house.",
+      "pl": "To należeć do dom '{0}'. {1} I. I. dom.",
+      "lang": "It belongs to house '{0}'. {1} owns this house."
+    },
+    {
+      "key": "cpp.house.door_price",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "It costs {0} gold coins.",
+      "pl": "To costs {0} złotych monet.",
+      "lang": "It costs {0} gold coins."
     }
   ],
   "length_ratio_issues": [

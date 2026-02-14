@@ -1,10 +1,10 @@
 {
   "lang": "et",
-  "coverage_pct": 57.7,
+  "coverage_pct": 57.6,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-14T11:19:01.572802Z",
+  "checked_at": "2026-02-14T11:43:50.551813Z",
   "issues_total": 414,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -347,87 +347,6 @@
       "lang": "Moth Whisperer"
     },
     {
-      "key": "achievement.481.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "But can you truly be one of them?",
-      "pl": "I. może ty naprawdę być I. z ich?",
-      "lang": "But can you truly be one of them?"
-    },
-    {
-      "key": "achievement.482.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Dream Catcher",
-      "pl": "I. I.",
-      "lang": "Dream Catcher"
-    },
-    {
-      "key": "achievement.482.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You are the slayer of the ancient nightmare beast and prevented the nightmare to spread its madness.",
-      "pl": "Jesteś the mordować z the starożytny zły sen zwierzę i zapobiegać the zły sen do I. jego, jej, ich, swój szaleństwo.",
-      "lang": "You are the slayer of the ancient nightmare beast and prevented the nightmare to spread its madness."
-    },
-    {
-      "key": "achievement.483.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Champion of Summer",
-      "pl": "I. z I.",
-      "lang": "Champion of Summer"
-    },
-    {
-      "key": "achievement.483.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You have vanquished numerous arena champions in the name of the Summer Court.",
-      "pl": "Masz pokonywać doszczętnie, pokonywać liczny arena I. w the nazwa z the I. Court.",
-      "lang": "You have vanquished numerous arena champions in the name of the Summer Court."
-    },
-    {
-      "key": "achievement.484.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Champion of Winter",
-      "pl": "I. z I.",
-      "lang": "Champion of Winter"
-    },
-    {
-      "key": "achievement.484.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You have vanquished numerous arena champions in the name of the Winter Court.",
-      "pl": "Masz pokonywać doszczętnie, pokonywać liczny arena I. w the nazwa z the I. Court.",
-      "lang": "You have vanquished numerous arena champions in the name of the Winter Court."
-    },
-    {
-      "key": "achievement.486.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Bewitcher",
-      "pl": "Oczarowywać",
-      "lang": "Bewitcher"
-    },
-    {
-      "key": "achievement.486.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You literally put everything in that cauldron except lilac and gooseberries.",
-      "pl": "Ty dosłowny put wszystko w that cauldron I. I. i agrest.",
-      "lang": "You literally put everything in that cauldron except lilac and gooseberries."
-    },
-    {
       "key": "achievement.487.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -435,222 +354,6 @@
       "en": "Gryphon Rider",
       "pl": "Gryphon Jeździec",
       "lang": "Gryphon Rider"
-    },
-    {
-      "key": "achievement.487.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Unmasking spies, killing demons, discovering omens, solving puzzles and fighting ogres, manticores and feral sphinxes. - Nobody said it was easy to become a gryphon rider.",
-      "pl": "Unmasking I., I. demon, odkrywać omen, solving I. i I. ogr, potwór, manticores i feral sphinxes. - Niebody said to był I. do stawać się jeden gryphon jeździec.",
-      "lang": "Unmasking spies, killing demons, discovering omens, solving puzzles and fighting ogres, manticores and feral sphinxes. - Nobody said it was easy to become a gryphon rider."
-    },
-    {
-      "key": "achievement.488.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Sculptor Apprentice",
-      "pl": "Rzeźbiarz Terminator, praktykant",
-      "lang": "Sculptor Apprentice"
-    },
-    {
-      "key": "achievement.488.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Granted, you didn't carve those lifelike animal figurines yourself. But helping a medusa to find proper objects and even watching her using her petrifying gaze is almost as rewarding.",
-      "pl": "I., ty didn't I. those jak żywy I. figurines siebie. I. porcja jeden medusa do I. I. obiekty i I. watching her using her petrifying I. jest prawie as nagrodaing.",
-      "lang": "Granted, you didn't carve those lifelike animal figurines yourself. But helping a medusa to find proper objects and even watching her using her petrifying gaze is almost as rewarding."
-    },
-    {
-      "key": "achievement.489.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Sun and Sea",
-      "pl": "I. i Morze",
-      "lang": "Sun and Sea"
-    },
-    {
-      "key": "achievement.489.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You made sure that the balance of sun and sea is preserved in Kilmaresh. The Golden City of Issavi won't forget your favour.",
-      "pl": "Ty zrobiony sure that the saldo z I. i morze jest preserved w Kilmaresh. The złotaen Miasto z Issavi won't forget twój favour.",
-      "lang": "You made sure that the balance of sun and sea is preserved in Kilmaresh. The Golden City of Issavi won't forget your favour."
-    },
-    {
-      "key": "achievement.490.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "A Study in Scarlett",
-      "pl": "JEDEN I. w Scarlett",
-      "lang": "A Study in Scarlett"
-    },
-    {
-      "key": "achievement.490.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You ended the regn of Scarlett Etzel. All-seeing yet blind, ever powerful yet ultimately helpless, she never got a second chance to truly see. Or has she...",
-      "pl": "Ty I. the regn z Scarlett Etzel. Wszystkie-zważywszy, że jeszcze I., kiedykolwiek potężny jeszcze ostatecznie bezradny, ona nigdy got jeden sekunda szansa do naprawdę I.. Lub ma ona...",
-      "lang": "You ended the regn of Scarlett Etzel. All-seeing yet blind, ever powerful yet ultimately helpless, she never got a second chance to truly see. Or has she..."
-    },
-    {
-      "key": "achievement.491.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Avid Spectral Reader",
-      "pl": "Zapalony Spectral Czytelnik",
-      "lang": "Avid Spectral Reader"
-    },
-    {
-      "key": "achievement.491.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "What draws things to other dimensions, one wonders. You read the almanac at just the right spot to end up... where, of all places? That is the problem with dimensional travel: you will never know. Or you have always known. And everything in between.",
-      "pl": "I. draws rzecz do drugi, pozostały aspekt, I. I.. Ty czytać, przeczytać the almanac w just the I. spot do I. up... where, z wszystkie I.? That jest the I. z dimensional podróż: ty will nigdy kNiew. Lub Masz zawsze kNiewn. I wszystko w pomiędzy, między.",
-      "lang": "What draws things to other dimensions, one wonders. You read the almanac at just the right spot to end up... where, of all places? That is the problem with dimensional travel: you will never know. Or you have always known. And everything in between."
-    },
-    {
-      "key": "achievement.492.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You did the hippo population of Kilmaresh a great favour. A well-fed hippo is a happy hippo.",
-      "pl": "Ty zrobił the hipcio, hipopotam ludność z Kilmaresh jeden I. favour. JEDEN well-fed hipcio, hipopotam jest jeden a. szczęśliwy hipcio, hipopotam.",
-      "lang": "You did the hippo population of Kilmaresh a great favour. A well-fed hippo is a happy hippo."
-    },
-    {
-      "key": "achievement.493.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You defeated the Lich Knights and became the hand of the Inquisition, allowed to wear their special garb.",
-      "pl": "Ty I. the Lich I. i became the hand z the Inquisition, I. do I. ich I. garb.",
-      "lang": "You defeated the Lich Knights and became the hand of the Inquisition, allowed to wear their special garb."
-    },
-    {
-      "key": "achievement.494.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Empire's Glory",
-      "pl": "The Imperium, cesarstwo I.",
-      "lang": "The Empire's Glory"
-    },
-    {
-      "key": "achievement.494.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Mythical creatures, forgotten catacombs and the Golden City - you really know every corner of Kilmaresh now.",
-      "pl": "Mythical stwory, forgotten catacombs i the złotaen Miasto - ty I. kNiew I. corner z Kilmaresh Niew.",
-      "lang": "Mythical creatures, forgotten catacombs and the Golden City - you really know every corner of Kilmaresh now."
-    },
-    {
-      "key": "achievement.495.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Inquisition's Arm",
-      "pl": "Inquisition's Ramię, ręka",
-      "lang": "Inquisition's Arm"
-    },
-    {
-      "key": "achievement.495.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Your special garb, solely awarded to a dedicated Hand of the Inquisition, is now complete.",
-      "pl": "Twój I. garb, jedynie, całkowicie I. do jeden oddany, ofiarny Hand z the Inquisition, jest Niew I..",
-      "lang": "Your special garb, solely awarded to a dedicated Hand of the Inquisition, is now complete."
-    },
-    {
-      "key": "achievement.496.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You proudly wear the traditional Orcsoberfest garb, same as it ever was and as it always will be.",
-      "pl": "Ty dumny I. the tradycyjny Orcsoberfest garb, I. as to kiedykolwiek był i as to zawsze will być.",
-      "lang": "You proudly wear the traditional Orcsoberfest garb, same as it ever was and as it always will be."
-    },
-    {
-      "key": "achievement.497.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Do a Barrel Roll!",
-      "pl": "Robić jeden I. I.!",
-      "lang": "Do a Barrel Roll!"
-    },
-    {
-      "key": "achievement.497.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Riding a traditional beer barrel from the Orcsoberfest is a once-in-a-lifetime experience. Beer sold separately.",
-      "pl": "I. jeden tradycyjny piwo I. z the Orcsoberfest jest jeden raz-w-jeden-całe życie, życie I.. Piwo sold separately.",
-      "lang": "Riding a traditional beer barrel from the Orcsoberfest is a once-in-a-lifetime experience. Beer sold separately."
-    },
-    {
-      "key": "achievement.499.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Orcsoberfest Welcome",
-      "pl": "Orcsoberfest I.",
-      "lang": "Orcsoberfest Welcome"
-    },
-    {
-      "key": "achievement.499.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Orcsoberfest is not only known for its traditional food, beer and customs but also fun events and excitement! You took part in all of that and can now truly say: \"I survived!\"",
-      "pl": "The Orcsoberfest jest Niet tylko kNiewn dla jego, jej, ich, swój tradycyjny jedzenie, pożywienie, piwo i customs I. także I. wydarzenie, zdarzenie i excprzedmiotent! Ty took part w wszystkie z that i może Niew naprawdę I.: \"I survived!\"",
-      "lang": "The Orcsoberfest is not only known for its traditional food, beer and customs but also fun events and excitement! You took part in all of that and can now truly say: \"I survived!\""
-    },
-    {
-      "key": "achievement.500.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You made acquaintance with the Thaian. A strange contemporary with a dark history. No man but a derivate of greed and obsession.",
-      "pl": "Ty zrobiony znajomy z the Thaian. JEDEN dziwny współczesny z jeden I. historia. Nie man I. jeden derivate z żądza i obsesja.",
-      "lang": "You made acquaintance with the Thaian. A strange contemporary with a dark history. No man but a derivate of greed and obsession."
-    },
-    {
-      "key": "achievement.501.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Nothing but Hot Air",
-      "pl": "Niething I. Gorący I.",
-      "lang": "Nothing but Hot Air"
-    },
-    {
-      "key": "achievement.501.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You have tamed the ghostly mists to do your bidding. For now ...",
-      "pl": "Masz tamed the nieziemski I. do robić twój bidding. Dla Niew...",
-      "lang": "You have tamed the ghostly mists to do your bidding. For now ..."
-    },
-    {
-      "key": "achievement.502.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "And so it begins!",
-      "pl": "I I. to begins!",
-      "lang": "And so it begins!"
     },
     {
       "key": "achievement.503.name",
@@ -662,24 +365,6 @@
       "lang": "Monsterhunter"
     },
     {
-      "key": "achievement.503.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Fear me, monsters! There is some more slaying to come!",
-      "pl": "I. mnie, mi, potwory! Dowcip I. more mordować do come!",
-      "lang": "Fear me, monsters! There is some more slaying to come!"
-    },
-    {
-      "key": "achievement.504.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Having hunted and bested them all, you live for the thrill of the hunt!",
-      "pl": "Having I. i I. ich wszystkie, ty live dla the I. z the I.!",
-      "lang": "Having hunted and bested them all, you live for the thrill of the hunt!"
-    },
-    {
       "key": "achievement.505.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -689,15 +374,6 @@
       "lang": "Mainstreet Nightmare"
     },
     {
-      "key": "achievement.505.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Now you are able to wander around Tibia wearing an angst-inducing vestment.",
-      "pl": "Niew Jesteś zdolny do wędrować around Tibia wyczerpujący jeden angst-inducing vestment.",
-      "lang": "Now you are able to wander around Tibia wearing an angst-inducing vestment."
-    },
-    {
       "key": "achievement.506.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -705,33 +381,6 @@
       "en": "Falconer",
       "pl": "Sokół",
       "lang": "Falconer"
-    },
-    {
-      "key": "achievement.506.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "A true beastmaster learns the language of his animal companions. Now you as well can bolster your unique bond with nature and help preserve the balance of life as a proud falconer.",
-      "pl": "JEDEN prawdziwy beastmaster uczyć się, nauczyć się the język z jego I. towarzysz. Niew ty as well może I. twój unikalny, unikatowy I. z natura i help I. the saldo z I. as jeden dumny sokół.",
-      "lang": "A true beastmaster learns the language of his animal companions. Now you as well can bolster your unique bond with nature and help preserve the balance of life as a proud falconer."
-    },
-    {
-      "key": "achievement.507.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Steppe Elegance",
-      "pl": "Step Elegance",
-      "lang": "Steppe Elegance"
-    },
-    {
-      "key": "achievement.507.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Champion of the wildlands, a swift strider among the creatures of the wild. The elegant nature of the gallop, this envoy of speed has mastered, indicates the precise understanding of its terrain and environment.",
-      "pl": "I. z the wildlands, jeden I. strider among the stwory z the I.. The elegancki natura z the I., I. wysłannik dyplomatyczny, wysłannik, poseł z I. ma I., wskazywać the dokładny, precyzyjny I. z jego, jej, ich, swój teren i otoczenie, środowisko.",
-      "lang": "Champion of the wildlands, a swift strider among the creatures of the wild. The elegant nature of the gallop, this envoy of speed has mastered, indicates the precise understanding of its terrain and environment."
     },
     {
       "key": "achievement.508.description",
@@ -1832,15 +1481,6 @@
       "lang": "1. Put a bunch of sugar cane into the machine"
     },
     {
-      "key": "book.otbm.1st_floor_bel_etage_grand",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "1st floor (bel etage): Grand Opera Caf",
-      "pl": "1st I. (bel etage): I. Opera Caf",
-      "lang": "1st floor (bel etage): Grand Opera Caf"
-    },
-    {
       "key": "book.otbm.1st_floor_interior_design_take",
       "category": "books",
       "type": "pl_reference_missing_translation",
@@ -1976,15 +1616,6 @@
       "lang": "4000 gold books and paper"
     },
     {
-      "key": "book.otbm.4_exterminiate_the_ghouls_in",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "4. Exterminiate the ghouls in the garden",
-      "pl": "4. Exterminiate the ghouls w the I.",
-      "lang": "4. Exterminiate the ghouls in the garden"
-    },
-    {
       "key": "book.otbm.4_no_running_in_the",
       "category": "books",
       "type": "pl_reference_missing_translation",
@@ -2055,15 +1686,6 @@
       "en": "7. No scribbling in library-owned documents",
       "pl": "7. Nie scribbling w biblioteka-I. I.",
       "lang": "7. No scribbling in library-owned documents"
-    },
-    {
-      "key": "book.otbm.800_razoredge_matt_vs_bambam",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "8.00   Razoredge Matt vs. Bambam Brutus",
-      "pl": "8.00 Razoredge Matowy vs. Bambam Brutus",
-      "lang": "8.00   Razoredge Matt vs. Bambam Brutus"
     },
     {
       "key": "book.otbm.8_books_and_scrolls_must",
@@ -2244,15 +1866,6 @@
       "en": "Academy and Training Centre",
       "pl": "Akademia i Trening Centre",
       "lang": "Academy and Training Centre"
-    },
-    {
-      "key": "book.otbm.accidentally_stabbed_by_al_dee",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Accidentally stabbed by Al Dee.",
-      "pl": "Przypadkowy stabbed by Al Dee.",
-      "lang": "Accidentally stabbed by Al Dee."
     },
     {
       "key": "book.otbm.according_to_our_knowledge_only",
@@ -3029,42 +2642,6 @@
       "lang": "Battle tactics for Demona - Mazeforces"
     },
     {
-      "key": "book.otbm.battletactics_for_mages_i",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Battletactics for Mages [I]",
-      "pl": "Battletactics dla Mages [I]",
-      "lang": "Battletactics for Mages [I]"
-    },
-    {
-      "key": "book.otbm.battletactics_for_mages_ii",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Battletactics for Mages [II]",
-      "pl": "Battletactics dla Mages [II]",
-      "lang": "Battletactics for Mages [II]"
-    },
-    {
-      "key": "book.otbm.battletactics_for_mages_iii",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Battletactics for Mages [III]",
-      "pl": "Battletactics dla Mages [III]",
-      "lang": "Battletactics for Mages [III]"
-    },
-    {
-      "key": "book.otbm.battletactics_for_mages_iv",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Battletactics for Mages [IV]",
-      "pl": "Battletactics dla Mages [IV]",
-      "lang": "Battletactics for Mages [IV]"
-    },
-    {
       "key": "book.otbm.be_aware_that_our_kind",
       "category": "books",
       "type": "pl_reference_missing_translation",
@@ -3612,6 +3189,429 @@
       "en": "by a victim of a bugged chameleon spell.",
       "pl": "by jeden ofiara z jeden bugged kameleon zaklęcie.",
       "lang": "by a victim of a bugged chameleon spell."
+    },
+    {
+      "key": "book.otbm.by_an_unknown_necromancer",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "by an unknown necromancer.",
+      "pl": "by jeden nieznany necromancer.",
+      "lang": "by an unknown necromancer."
+    },
+    {
+      "key": "book.otbm.by_the_way_the_summoning",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "By the way: The summoning of lesser creatures, the so-called 'reds', progressed comparatively well. Of course, these creatures are mere borderdwellers and may consequently not be considered true demons. However, it may prove that the development of summoning spells for 'reds' will prove a rewarding spin-off of demon summoning research.",
+      "pl": "By the way: The I. z mniejszy stwory, the I.-called 'I.', progressed porównawczy well. Z course, these stwory są I. borderdwellers i a. móc czyli, zgodnie z tym Niet być uważać prawdziwy demon. Jednak, to a. móc udowadniać, wykazywać that the rozwój z I. zaklęCentalna Agencja Wywiadowcza dla 'I.' will udowadniać, wykazywać jeden nagrodaing I.-off z demon I. I..",
+      "lang": "By the way: The summoning of lesser creatures, the so-called 'reds', progressed comparatively well. Of course, these creatures are mere borderdwellers and may consequently not be considered true demons. However, it may prove that the development of summoning spells for 'reds' will prove a rewarding spin-off of demon summoning research."
+    },
+    {
+      "key": "book.otbm.caliph_family_burial_vault",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Caliph family burial vault",
+      "pl": "Caliph I. pochówek, pogrzeb I.",
+      "lang": "Caliph family burial vault"
+    },
+    {
+      "key": "book.otbm.caliph_family_memorial_crypt",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Caliph family memorial crypt",
+      "pl": "Caliph I. I. crypt",
+      "lang": "Caliph family memorial crypt"
+    },
+    {
+      "key": "book.otbm.captain_osgrain_scourge_of_the",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Captain Osgrain, scourge of the orcs, liberator of the coasts",
+      "pl": "I. Osgrain, plaga, bicz Boży z the orcs, liberator z the brzeg, wybrzeże",
+      "lang": "Captain Osgrain, scourge of the orcs, liberator of the coasts"
+    },
+    {
+      "key": "book.otbm.castle_of_the_white_dragon",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Castle of the White Dragon",
+      "pl": "Zamek z the White Smok",
+      "lang": "Castle of the White Dragon"
+    },
+    {
+      "key": "book.otbm.centuries_ago_our_ancients_build",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Centuries ago, our ancients build this maze to protect our city Demona from bandits and warriors.",
+      "pl": "Wiek a. temu, nasz starożytny I. I. labirynt do chronić nasz miasto Demona z rozbójnik i wojownik.",
+      "lang": "Centuries ago, our ancients build this maze to protect our city Demona from bandits and warriors."
+    },
+    {
+      "key": "book.otbm.centuries_from_his_fire_and",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "centuries from his fire and his magic, of the like we know today.",
+      "pl": "wiek z jego fire i jego I., z the like my kNiew dzisiaj.",
+      "lang": "centuries from his fire and his magic, of the like we know today."
+    },
+    {
+      "key": "book.otbm.certain_edges_are_not_edible",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "* Certain edges are not edible and don't count for the success.",
+      "pl": "* Pewny I. są Niet jadalny i don't liczba dla the sukces.",
+      "lang": "* Certain edges are not edible and don't count for the success."
+    },
+    {
+      "key": "book.otbm.chain_armor_brass_armor_leather",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "chain armor, brass armor, leather armor, chain helmet, leather helmet, steel shield, viking shield, wooden shield, chain legs",
+      "pl": "I. armor, mosiądz armor, skóra armor, I. kask, skóra kask, I. I., viking I., drewniany I., I. noga",
+      "lang": "chain armor, brass armor, leather armor, chain helmet, leather helmet, steel shield, viking shield, wooden shield, chain legs"
+    },
+    {
+      "key": "book.otbm.cheese_5_wheels_who_needs",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Cheese - 5 wheels       *Who needs so much cheese...? -Belethor",
+      "pl": "Ser - 5 I. *Kto potrzebować I. dużo, bardzo ser...? -Belethor",
+      "lang": "Cheese - 5 wheels       *Who needs so much cheese...? -Belethor"
+    },
+    {
+      "key": "book.otbm.choose_one_reward_wisely",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Choose one reward, wisely!",
+      "pl": "Wybierać I. nagroda, I.!",
+      "lang": "Choose one reward, wisely!"
+    },
+    {
+      "key": "book.otbm.circle_of_the_creators_and",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "circle of the creators and help them with the task of the creation. Tibiasula agreed, because she also was fascinated by the idea",
+      "pl": "I. z the creators i help ich z the zadanie, zajęcie z the creation. Tibiasula agreed, ponieważ, bo ona także był fascinated by the pomysł",
+      "lang": "circle of the creators and help them with the task of the creation. Tibiasula agreed, because she also was fascinated by the idea"
+    },
+    {
+      "key": "book.otbm.circular_canon_of_eternal_darkness",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Circular canon of Eternal Darkness",
+      "pl": "I. caNien z Wieczny Ciemność",
+      "lang": "Circular canon of Eternal Darkness"
+    },
+    {
+      "key": "book.otbm.circular_canon_of_eternal_darkness_ff1dff20",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Circular canon of Eternal Darkness",
+      "pl": "I. caNien z Wieczny Ciemność",
+      "lang": "Circular canon of Eternal Darkness"
+    },
+    {
+      "key": "book.otbm.citizen_depot_downstairs",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Citizen Depot downstairs.",
+      "pl": "Obywatel Skład I..",
+      "lang": "Citizen Depot downstairs."
+    },
+    {
+      "key": "book.otbm.city_cellar_beware_of_the",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "City Cellar - Beware of the spiders",
+      "pl": "Miasto Piwnica - Strzec się z the pająk",
+      "lang": "City Cellar - Beware of the spiders"
+    },
+    {
+      "key": "book.otbm.clear_as_seldom_before_our",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "clear as seldom before: our order will be wiped",
+      "pl": "clear as rzadko I.: nasz order will być wiped",
+      "lang": "clear as seldom before: our order will be wiped"
+    },
+    {
+      "key": "book.otbm.clear_up_subjects_remains_and",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Clear up subjects' remains and blood. Borrowed equipment must be returned clean and functional.",
+      "pl": "Clear up subjects' I. i I.. Pożyczać wyposażenie, ekwipunek, sprzęt musi być I. I. i funkcjonalny.",
+      "lang": "Clear up subjects' remains and blood. Borrowed equipment must be returned clean and functional."
+    },
+    {
+      "key": "book.otbm.closed_for_archeological_survey",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "(closed for archeological survey)",
+      "pl": "(Zamknijd dla archeological survey)",
+      "lang": "(closed for archeological survey)"
+    },
+    {
+      "key": "book.otbm.codex_of_ultimate_boredom",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Codex of ultimate boredom.",
+      "pl": "Codex z ostateczny nuda.",
+      "lang": "Codex of ultimate boredom."
+    },
+    {
+      "key": "book.otbm.congratulations_you_have_passed_the",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Congratulations, you have passed the Dream Challenge. Now enjoy the fruits of your success and relax before continue the way to meet the master.",
+      "pl": "Gratulacje, Masz I. the I. I.. Niew lubić the I. z twój sukces i odprężać się, relaksować się I. kontynuować the way do spotykać się, spotykać the I..",
+      "lang": "Congratulations, you have passed the Dream Challenge. Now enjoy the fruits of your success and relax before continue the way to meet the master."
+    },
+    {
+      "key": "book.otbm.contact_berenice_in_the_local",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Contact Berenice in the local Explorer Society outpost!",
+      "pl": "I. Berenice w the lokalny Badacz, eksplorator Społeczeństwo placówka!",
+      "lang": "Contact Berenice in the local Explorer Society outpost!"
+    },
+    {
+      "key": "book.otbm.contact_henricus_in_the_inquisiton",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Contact Henricus in the Inquisiton quarters beneath the Thaian jail!",
+      "pl": "I. Henricus w the Inquisiton quarters pod the Thaian jail!",
+      "lang": "Contact Henricus in the Inquisiton quarters beneath the Thaian jail!"
+    },
+    {
+      "key": "book.otbm.contact_lady_eleonore_in_the",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Contact Lady Eleonore in the Silverhand Manor!",
+      "pl": "I. Pani EleoNiere w the Silverhand MaNier!",
+      "lang": "Contact Lady Eleonore in the Silverhand Manor!"
+    },
+    {
+      "key": "book.otbm.contact_me_in_the_trade",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Contact me in the Trade Quarter if you want to stop being helpless - and do something!",
+      "pl": "I. mnie, mi w the Handel Kwarta if ty I. do stop istota bezradny - i robić coś!",
+      "lang": "Contact me in the Trade Quarter if you want to stop being helpless - and do something!"
+    },
+    {
+      "key": "book.otbm.contact_me_in_the_trade_09ee01c7",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Contact me in the Trade Quarter if you want to stop being helpless - and do something!",
+      "pl": "I. mnie, mi w the Handel Kwarta if ty I. do stop istota bezradny - i robić coś!",
+      "lang": "Contact me in the Trade Quarter if you want to stop being helpless - and do something!"
+    },
+    {
+      "key": "book.otbm.continued_without_cessation_some_of",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "continued without cessation. Some of the other gods did not want to witness anymore, how their creation was troubled and",
+      "pl": "continued bez zaprzestanie. I. z the drugi, pozostały gods zrobił Niet I. do I. anymore, jak ich creation był zmartwiony, zakłopotany i",
+      "lang": "continued without cessation. Some of the other gods did not want to witness anymore, how their creation was troubled and"
+    },
+    {
+      "key": "book.otbm.contributed_a_tiny_proportion_of",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "contributed a tiny proportion of his strength to the effort. The wise claim that it is to be due to his working that all time strives in",
+      "pl": "contributed jeden malutki pewna część, część z jego siła do the wysiłek. The I. I. that to jest do być due do jego I. that wszystkie czas usiłować w",
+      "lang": "contributed a tiny proportion of his strength to the effort. The wise claim that it is to be due to his working that all time strives in"
+    },
+    {
+      "key": "book.otbm.coordinates_for_the_area_around",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Coordinates for the area around Dianscher",
+      "pl": "Coordinates dla the obszar, region around Dianscher",
+      "lang": "Coordinates for the area around Dianscher"
+    },
+    {
+      "key": "book.otbm.courage_and_responsibility_after_his",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "courage and responsibility. After his image and with parts of his body the Gods created him attendants, Humans.",
+      "pl": "courage i odpowiedzialność. After jego obraz i z parts z jego ciało the Gods created him I., I..",
+      "lang": "courage and responsibility. After his image and with parts of his body the Gods created him attendants, Humans."
+    },
+    {
+      "key": "book.otbm.crates_from_23_tools_and",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Crates from #23: tools and utilities.",
+      "pl": "Crates z #23: narzędzie i użyteczność.",
+      "lang": "Crates from #23: tools and utilities."
+    },
+    {
+      "key": "book.otbm.crates_from_87_supplies",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Crates from #87: Supplies",
+      "pl": "Crates z #87: I.",
+      "lang": "Crates from #87: Supplies"
+    },
+    {
+      "key": "book.otbm.creation_and_the_process_known",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "creation, and the process known as awakening is by no means the working of benevolence, but the gods losing grip of the things they tried to hide away from the intruding souls. The theory goes that as there is an ascension for the souls from beyond to achieve some form of godhood, there is a constant descent for the powers of the gods of old due to the power that is leaking away into nothingness and the power the living claim for their own. Of course this heresys is very popular in the ranks of certain ascension cults. More so since it takes care of the more common fear in those conclaves, that the jealous gods may strike back",
+      "pl": "creation, i the process kNiewn as przebudzenie, rozbudzenie jest by Nie sposób the I. z wyrozumiałość, I. the gods losing I. z the rzecz oni tried do I. I. z the intruding dusza. The teoria goes that as Dowcip jeden ascension dla the dusza z beyond do osiągać I. I. z godhood, Dowcip jeden stały zejście w dół, schodzenie dla the I. z the gods z I. due do the I. that jest I. I. a. do Niethingness i the I. the I. I. dla ich I.. Z course I. herezja jest I. popularny w the I. z pewny ascension cults. More I. I. to takes care z the more common I. w those conclaves, that the zazdrosny, zawistny gods a. móc strike I.",
+      "lang": "creation, and the process known as awakening is by no means the working of benevolence, but the gods losing grip of the things they tried to hide away from the intruding souls. The theory goes that as there is an ascension for the souls from beyond to achieve some form of godhood, there is a constant descent for the powers of the gods of old due to the power that is leaking away into nothingness and the power the living claim for their own. Of course this heresys is very popular in the ranks of certain ascension cults. More so since it takes care of the more common fear in those conclaves, that the jealous gods may strike back"
+    },
+    {
+      "key": "book.otbm.creation_and_the_process_known_6c2036f1",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "creation, and the process known as awakening is by no means the working of benevolence, but the gods losing grip of the things they tried to hide away from the intruding souls. The theory goes that as there is an ascension for the souls from beyond to achieve some form of godhood, there is a constant descent for the powers of the gods of old due to the power that is leaking away into nothingness and the power the living claim for their own. Of course this heresys is very popular in the ranks of certain ascension cults. More so since it takes care of the more common fear in those conclaves, that the jealous gods may strike back",
+      "pl": "creation, i the process kNiewn as przebudzenie, rozbudzenie jest by Nie sposób the I. z wyrozumiałość, I. the gods losing I. z the rzecz oni tried do I. I. z the intruding dusza. The teoria goes that as Dowcip jeden ascension dla the dusza z beyond do osiągać I. I. z godhood, Dowcip jeden stały zejście w dół, schodzenie dla the I. z the gods z I. due do the I. that jest I. I. a. do Niethingness i the I. the I. I. dla ich I.. Z course I. herezja jest I. popularny w the I. z pewny ascension cults. More I. I. to takes care z the more common I. w those conclaves, that the zazdrosny, zawistny gods a. móc strike I.",
+      "lang": "creation, and the process known as awakening is by no means the working of benevolence, but the gods losing grip of the things they tried to hide away from the intruding souls. The theory goes that as there is an ascension for the souls from beyond to achieve some form of godhood, there is a constant descent for the powers of the gods of old due to the power that is leaking away into nothingness and the power the living claim for their own. Of course this heresys is very popular in the ranks of certain ascension cults. More so since it takes care of the more common fear in those conclaves, that the jealous gods may strike back"
+    },
+    {
+      "key": "book.otbm.creation_because_he_was_fully",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "creation, because he was fully creative power and impatient. His godly powers emerged from him and created, formed.",
+      "pl": "creation, ponieważ, bo on był w pełni creative I. i niecierpliwy. Jego pobożny I. emerged z him i created, I..",
+      "lang": "creation, because he was fully creative power and impatient. His godly powers emerged from him and created, formed."
+    },
+    {
+      "key": "book.otbm.creation_yes_some_even_state",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "creation. Yes, some even state that the good Gods created a twin for Banor, which should embody the powers of magic,",
+      "pl": "creation. Tak, I. I. I. that the I. Gods created jeden I. dla BaNier, I. a. powinien, powinna ucieleśniać the I. z I.,",
+      "lang": "creation. Yes, some even state that the good Gods created a twin for Banor, which should embody the powers of magic,"
+    },
+    {
+      "key": "book.otbm.crunor_created_the_wolves_in",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Crunor created the wolves in order to protect his forests against the orcs, but these were too numerous! Only in the deepest",
+      "pl": "CruNier created the wolves w order do chronić jego las o the orcs, I. these były też, także liczny! Tylko w the deepest",
+      "lang": "Crunor created the wolves in order to protect his forests against the orcs, but these were too numerous! Only in the deepest"
+    },
+    {
+      "key": "book.otbm.crunors_finest_fruit_and_vegetable",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Crunor's Finest - Fruit and Vegetable Shop",
+      "pl": "CruNier's Finest - I. i I. I.",
+      "lang": "Crunor's Finest - Fruit and Vegetable Shop"
+    },
+    {
+      "key": "book.otbm.crunors_finest_fruit_and_vegetable_1ed839d6",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Crunor's Finest - Fruit and Vegetable Shop",
+      "pl": "CruNier's Finest - I. i I. I.",
+      "lang": "Crunor's Finest - Fruit and Vegetable Shop"
+    },
+    {
+      "key": "book.otbm.crypts_and_monsters_found_one",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "... crypts and monsters ... found one of the caged demons that seem to be leached as a powersupply of some sort ...",
+      "pl": "... crypts i potwory... znaleziono I. z the caged demon that a. wydawać się być, wydawać się, zdawać się do być leached as jeden powersupply z I. I....",
+      "lang": "... crypts and monsters ... found one of the caged demons that seem to be leached as a powersupply of some sort ..."
+    },
+    {
+      "key": "book.otbm.crystallize_itself_in_the_void",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "crystallize itself in the void to an enormous spiral. Higher and higher it mounted up, became firmness, pivot point, direction and",
+      "pl": "crystallize się, siebie w the void do jeden eNiermous I.. I. i I. to I. up, became firmness, I. point, kierunek i",
+      "lang": "crystallize itself in the void to an enormous spiral. Higher and higher it mounted up, became firmness, pivot point, direction and"
+    },
+    {
+      "key": "book.otbm.currently_no_wanted_criminals",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Currently no wanted criminals",
+      "pl": "Obecnie Nie I. criminals",
+      "lang": "Currently no wanted criminals"
+    },
+    {
+      "key": "book.otbm.cyclopic_cities_were_laid_into",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "cyclopic cities were laid into ruins, unbelievable forging factories were lost for all eternity, and until today the cyclops are upset",
+      "pl": "cyclopic miasto były laid a. do I., niewiarygodny forging fabryka były I. dla wszystkie wieczność, i I. dzisiaj the cyclops są upset",
+      "lang": "cyclopic cities were laid into ruins, unbelievable forging factories were lost for all eternity, and until today the cyclops are upset"
+    },
+    {
+      "key": "book.otbm.dagger_hand_axe_barbarian_axe",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "dagger, hand axe, barbarian axe, spear, rapier, axe, sabre, sword, mace, battle hammer and clerical mace",
+      "pl": "sztylet, hand I., barbarzyńca I., I., rapier, I., sabre, miecz, mace, I. I. i biurowy, urzędniczy mace",
+      "lang": "dagger, hand axe, barbarian axe, spear, rapier, axe, sabre, sword, mace, battle hammer and clerical mace"
+    },
+    {
+      "key": "book.otbm.damnation_to_all_who_dare",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Damnation to all who dare to enter!",
+      "pl": "Potępienie do wszystkie kto dare do I.!",
+      "lang": "Damnation to all who dare to enter!"
+    },
+    {
+      "key": "book.otbm.dark_are_the_mysteries_surrounded",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Dark are the mysteries surrounded by doomed cries",
+      "pl": "I. są the I. otaczać, otaczać by skazany na zgubę, zgubiony cries",
+      "lang": "Dark are the mysteries surrounded by doomed cries"
     }
   ],
   "length_ratio_issues": [
@@ -3744,8 +3744,8 @@
   ],
   "auto_fix": {
     "attempted": 80,
-    "applied": 39,
-    "skipped": 41,
+    "applied": 37,
+    "skipped": 43,
     "errors": 0
   }
 }

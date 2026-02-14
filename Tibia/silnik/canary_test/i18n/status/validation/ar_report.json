@@ -3,12 +3,12 @@
   "script_group": "rtl",
   "total_keys": 53586,
   "translated": 35776,
-  "identical_to_en": 34119,
+  "identical_to_en": 34041,
   "placeholder_keys": 15660,
   "coverage_pct": 66.8,
-  "issues_total": 110,
+  "issues_total": 111,
   "issues_by_type": {
-    "script_rtl_insufficient": 99,
+    "script_rtl_insufficient": 100,
     "V1_placeholder_mismatch": 7,
     "V4_artifact": 2,
     "V6_newline_mismatch": 1,
@@ -16,7 +16,7 @@
   },
   "issues_by_severity": {
     "CRITICAL": 8,
-    "HIGH": 101,
+    "HIGH": 102,
     "MEDIUM": 1,
     "LOW": 0
   },
@@ -89,6 +89,12 @@
       "severity": "HIGH"
     },
     {
+      "key": "book.otbm.huv_stollan_match_stuf_from",
+      "category": "books",
+      "type": "script_rtl_insufficient",
+      "severity": "HIGH"
+    },
+    {
       "key": "event.player.msg1",
       "category": "events",
       "type": "script_rtl_insufficient",
@@ -135,12 +141,6 @@
       "category": "items",
       "type": "script_rtl_insufficient",
       "severity": "HIGH"
-    },
-    {
-      "key": "item.14171.name",
-      "category": "items",
-      "type": "script_rtl_insufficient",
-      "severity": "HIGH"
     }
   ],
   "crossref": {
@@ -151,5 +151,5 @@
     "length_ratio": 18,
     "auto_fix_applied": 78
   },
-  "validated_at": "2026-02-14T11:12:27.352612Z"
+  "validated_at": "2026-02-14T11:37:14.354572Z"
 }

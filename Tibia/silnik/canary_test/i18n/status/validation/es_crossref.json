@@ -1,15 +1,15 @@
 {
   "lang": "es",
-  "coverage_pct": 97.6,
+  "coverage_pct": 93.7,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-14T11:18:06.791564Z",
-  "issues_total": 486,
+  "checked_at": "2026-02-14T11:43:00.208307Z",
+  "issues_total": 482,
   "issues_by_type": {
-    "consistency_in_language": 52,
+    "consistency_in_language": 50,
     "pl_reference_missing_translation": 400,
-    "length_ratio_crosscheck": 34
+    "length_ratio_crosscheck": 32
   },
   "consistency_issues": [
     {
@@ -131,20 +131,6 @@
       "examples": [
         "achievements:achievement.1.description",
         "client:client.utils.text2"
-      ]
-    },
-    {
-      "type": "crossref_inconsistent_translation",
-      "severity": "MEDIUM",
-      "en": "Lalalala... you now know the cult's hymn sung in Liberty Bay by heart. Not that hard, considering that it mainly consists of two notes and repetitive lyrics.",
-      "variants": [
-        "Lalalala... ya te sabes de memoria el himno del culto que se canta en Liberty Bay. No es tan difícil, considerando que se compone principalmente de dos notas y letras repetitivas.",
-        "Lalalala... you Now kNow the cult's hymn sung in Liberty Bay by heart. Not that hard, considering that it mainly consists of two Notes and repetitive lyrics."
-      ],
-      "variants_count": 2,
-      "examples": [
-        "achievements:achievement.2.description",
-        "client:client.utils.text4"
       ]
     },
     {
@@ -367,23 +353,6 @@
       "examples": [
         "items:item.25062.name",
         "monsters:monster.pinata_dragon.name"
-      ]
-    },
-    {
-      "type": "crossref_inconsistent_translation",
-      "severity": "MEDIUM",
-      "en": "The door seems to be sealed against unwanted intruders.",
-      "variants": [
-        "La puerta parece estar sellada contra intrusos no deseados.",
-        "The door parece ser sealed against unwanted intruders."
-      ],
-      "variants_count": 2,
-      "examples": [
-        "items:item.5745.desc",
-        "items:item.5746.desc",
-        "items:item.5748.desc",
-        "items:item.5749.desc",
-        "quests:quests.actions_doors.msg_1"
       ]
     },
     {
@@ -965,15 +934,6 @@
       "lang": "lava"
     },
     {
-      "key": "item.16101.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "muck remover",
-      "pl": "usuwacz brudu",
-      "lang": "muck remover"
-    },
-    {
       "key": "item.16104.name",
       "category": "items",
       "type": "pl_reference_missing_translation",
@@ -981,24 +941,6 @@
       "en": "gill gugel",
       "pl": "skrzelowy gugel",
       "lang": "gill gugel"
-    },
-    {
-      "key": "item.16105.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "gill coat",
-      "pl": "płaszcz skrzelowy",
-      "lang": "gill coat"
-    },
-    {
-      "key": "item.16133.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "pulverized ore",
-      "pl": "sproszkowana ruda",
-      "lang": "pulverized ore"
     },
     {
       "key": "item.2144.name",
@@ -1172,15 +1114,6 @@
       "lang": "Hurr"
     },
     {
-      "key": "monster.twisted_shaper.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ti Jezz Kur Tar!",
-      "pl": "Ti Jezz Kur I.!",
-      "lang": "Ti Jezz Kur Tar!"
-    },
-    {
       "key": "monster.dworc_venomsniper.voice_3",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -1280,33 +1213,6 @@
       "lang": "Axeitus Headbanger"
     },
     {
-      "key": "monster.sharptooth.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Sharptooth",
-      "pl": "Ostry ząb",
-      "lang": "Sharptooth"
-    },
-    {
-      "key": "monster.sharptooth.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Sharptooth",
-      "pl": "Ostry ząb",
-      "lang": "Sharptooth"
-    },
-    {
-      "key": "monster.usurper_commander.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "FORMATION!",
-      "pl": "TWORZENIE!",
-      "lang": "FORMATION!"
-    },
-    {
       "key": "monster.kesar.name",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -1325,132 +1231,6 @@
       "lang": "Kesar"
     },
     {
-      "key": "monster.drume.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Drume",
-      "pl": "Bęben",
-      "lang": "Drume"
-    },
-    {
-      "key": "monster.drume.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Drume",
-      "pl": "Bęben",
-      "lang": "Drume"
-    },
-    {
-      "key": "monster.baleful_bunny.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Baleful Bunny",
-      "pl": "Zły króliczek",
-      "lang": "Baleful Bunny"
-    },
-    {
-      "key": "monster.baleful_bunny.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a baleful bunny",
-      "pl": "zły króliczek",
-      "lang": "a baleful bunny"
-    },
-    {
-      "key": "monster.schiach.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a schiach",
-      "pl": "schiach",
-      "lang": "a schiach"
-    },
-    {
-      "key": "monster.bonny_bunny.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Bonny Bunny",
-      "pl": "Bonny Króliczek",
-      "lang": "Bonny Bunny"
-    },
-    {
-      "key": "monster.bonny_bunny.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a bonny bunny",
-      "pl": "śliczny króliczek",
-      "lang": "a bonny bunny"
-    },
-    {
-      "key": "monster.percht.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a percht",
-      "pl": "okoń",
-      "lang": "a percht"
-    },
-    {
-      "key": "monster.lord_of_the_elements.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "WHO DARES CALLING ME?",
-      "pl": "KTO DARES POWOŁANIE MNIE, MI?",
-      "lang": "WHO DARES CALLING ME?"
-    },
-    {
-      "key": "monster.slick_water_elemental.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "SPLISH SPLASH",
-      "pl": "SPLISH I.",
-      "lang": "SPLISH SPLASH"
-    },
-    {
-      "key": "monster.mind_wrecking_dream.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Mind-Wrecking Dream",
-      "pl": "Sen niszczący umysł",
-      "lang": "Mind-Wrecking Dream"
-    },
-    {
-      "key": "monster.mind_wrecking_dream.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a mind-wrecking dream",
-      "pl": "niszczący umysł sen",
-      "lang": "a mind-wrecking dream"
-    },
-    {
-      "key": "monster.horrible_dream.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Horrible Dream",
-      "pl": "Straszny sen",
-      "lang": "Horrible Dream"
-    },
-    {
-      "key": "monster.horrible_dream.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a horrible dream",
-      "pl": "okropny sen",
-      "lang": "a horrible dream"
-    },
-    {
       "key": "monster.lucifuga_aranea.name",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -1458,69 +1238,6 @@
       "en": "Lucifuga Aranea",
       "pl": "Lucyfuga Aranea",
       "lang": "Lucifuga Aranea"
-    },
-    {
-      "key": "monster.lucifuga_aranea.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a lucifuga aranea",
-      "pl": "lucifuga aranea",
-      "lang": "a lucifuga aranea"
-    },
-    {
-      "key": "monster.generator.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Generator",
-      "pl": "prądnica, generator",
-      "lang": "Generator"
-    },
-    {
-      "key": "monster.generator.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a generator",
-      "pl": "generator",
-      "lang": "a generator"
-    },
-    {
-      "key": "monster.nightmarish_dream.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Nightmarish Dream",
-      "pl": "Koszmarny sen",
-      "lang": "Nightmarish Dream"
-    },
-    {
-      "key": "monster.nightmarish_dream.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a nightmarish dream",
-      "pl": "koszmarny sen",
-      "lang": "a nightmarish dream"
-    },
-    {
-      "key": "monster.unpleasant_dream.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Unpleasant Dream",
-      "pl": "Nieprzyjemny sen",
-      "lang": "Unpleasant Dream"
-    },
-    {
-      "key": "monster.unpleasant_dream.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "an unpleasant dream",
-      "pl": "nieprzyjemny sen",
-      "lang": "an unpleasant dream"
     },
     {
       "key": "monster.faceless_bane.name",
@@ -3121,7 +2838,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "I am carnage incarnate!",
-      "pl": "I am rzeź incarnate!",
+      "pl": "Jestem wcieleniem rzezi!",
       "lang": "I am carnage incarnate!"
     },
     {
@@ -3580,7 +3297,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "QJELL AFAR GOU JEY!!",
-      "pl": "QJELL FROM AFAR GOU JEY!!",
+      "pl": "QJELL DALEKO GOU JEY!!",
       "lang": "QJELL AFAR GOU JEY!!"
     },
     {
@@ -4401,6 +4118,258 @@
       "en": "I'll rook you all!",
       "pl": "I'll gawron ty wszystkie!",
       "lang": "I'll rook you all!"
+    },
+    {
+      "key": "monster.primitive.voice_4",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You are history!",
+      "pl": "Jesteś historia!",
+      "lang": "You are history!"
+    },
+    {
+      "key": "monster.primitive.voice_6",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Guido who?",
+      "pl": "Guido kto?",
+      "lang": "Guido who?"
+    },
+    {
+      "key": "monster.primitive.voice_7",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Die noob!",
+      "pl": "Die Nieob!",
+      "lang": "Die noob!"
+    },
+    {
+      "key": "monster.primitive.voice_8",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "There are no dragons!",
+      "pl": "Nie magister nauk humanistycznych, magister smok!",
+      "lang": "There are no dragons!"
+    },
+    {
+      "key": "monster.primitive.voice_10",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You all are noobs!",
+      "pl": "Ty wszystkie są Nieobs!",
+      "lang": "You all are noobs!"
+    },
+    {
+      "key": "monster.primitive.voice_11",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Beware of the cyclops!",
+      "pl": "Strzec się z the cyclops!",
+      "lang": "Beware of the cyclops!"
+    },
+    {
+      "key": "monster.primitive.voice_12",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Just had a disconnect.",
+      "pl": "Just miał jeden rozłączać.",
+      "lang": "Just had a disconnect."
+    },
+    {
+      "key": "monster.primitive.voice_14",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "We'll be back!",
+      "pl": "We'll być I.!",
+      "lang": "We'll be back!"
+    },
+    {
+      "key": "monster.primitive.voice_15",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I need some vitamins!",
+      "pl": "I potrzebować I. witamina!",
+      "lang": "I need some vitamins!"
+    },
+    {
+      "key": "monster.primitive.voice_18",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "This world is ours!",
+      "pl": "I. I. jest nasz!",
+      "lang": "This world is ours!"
+    },
+    {
+      "key": "monster.primitive.voice_19",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Back to the roots!",
+      "pl": "I. do the I.!",
+      "lang": "Back to the roots!"
+    },
+    {
+      "key": "monster.primitive.voice_20",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Kill all magic users!",
+      "pl": "I. wszystkie I. użytkownik!",
+      "lang": "Kill all magic users!"
+    },
+    {
+      "key": "monster.hacker.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hacker",
+      "pl": "Haker",
+      "lang": "Hacker"
+    },
+    {
+      "key": "monster.hacker.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a hacker",
+      "pl": "haker",
+      "lang": "a hacker"
+    },
+    {
+      "key": "monster.hacker.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Gimme free gold!",
+      "pl": "Gimme I. złota!",
+      "lang": "Gimme free gold!"
+    },
+    {
+      "key": "monster.hacker.voice_4",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Me sooo smart!",
+      "pl": "Mnie, mi sooo I.!",
+      "lang": "Me sooo smart!"
+    },
+    {
+      "key": "monster.hacker.voice_6",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Me is GM!",
+      "pl": "Mnie, mi jest GM!",
+      "lang": "Me is GM!"
+    },
+    {
+      "key": "monster.hacker.voice_7",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Gimme your password!",
+      "pl": "Gimme twój hasło!",
+      "lang": "Gimme your password!"
+    },
+    {
+      "key": "monster.hacker.voice_9",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Me not stink!",
+      "pl": "Mnie, mi Niet I.!",
+      "lang": "Me not stink!"
+    },
+    {
+      "key": "monster.grynch_clan_goblin.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Uhh! Nobody home! <chuckle>",
+      "pl": "Uch! Nikogo w domu! <chuckle>",
+      "lang": "Uhh! Nobody home! <chuckle>"
+    },
+    {
+      "key": "monster.grynch_clan_goblin.voice_4",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Me just borrowed it!",
+      "pl": "Mnie, mi just pożyczać to!",
+      "lang": "Me just borrowed it!"
+    },
+    {
+      "key": "monster.grynch_clan_goblin.voice_10",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Other Goblin stole it!",
+      "pl": "Drugi, pozostały Chochlik stole to!",
+      "lang": "Other Goblin stole it!"
+    },
+    {
+      "key": "monster.grynch_clan_goblin.voice_11",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "All presents mine!",
+      "pl": "Wszystkie presents I.!",
+      "lang": "All presents mine!"
+    },
+    {
+      "key": "monster.grynch_clan_goblin.voice_13",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Free itans plz!",
+      "pl": "I. itans plz!",
+      "lang": "Free itans plz!"
+    },
+    {
+      "key": "monster.grynch_clan_goblin.voice_14",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Not me! Not me!",
+      "pl": "Niet mnie, mi! Niet mnie, mi!",
+      "lang": "Not me! Not me!"
+    },
+    {
+      "key": "monster.grynch_clan_goblin.voice_21",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Mee? Stealing? Never!!!",
+      "pl": "Mee? Kraść? Nigdy!!!",
+      "lang": "Mee? Stealing? Never!!!"
+    },
+    {
+      "key": "monster.grim_reaper.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Death!",
+      "pl": "I.!",
+      "lang": "Death!"
+    },
+    {
+      "key": "monster.grim_reaper.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Come a little closer!",
+      "pl": "Come jeden little Zamknijr!",
+      "lang": "Come a little closer!"
     }
   ],
   "length_ratio_issues": [
@@ -4520,24 +4489,6 @@
       "en_len": 24,
       "lang_ratio": 0.833,
       "pl_ratio": 2.667
-    },
-    {
-      "key": "item.29344.desc",
-      "category": "items",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 25,
-      "lang_ratio": 0.92,
-      "pl_ratio": 2.84
-    },
-    {
-      "key": "item.30085.desc",
-      "category": "items",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 25,
-      "lang_ratio": 0.92,
-      "pl_ratio": 2.84
     },
     {
       "key": "item.34026.desc",
@@ -4713,8 +4664,8 @@
   ],
   "auto_fix": {
     "attempted": 80,
-    "applied": 27,
-    "skipped": 53,
+    "applied": 28,
+    "skipped": 52,
     "errors": 0
   }
 }

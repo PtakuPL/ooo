@@ -2,27 +2,36 @@
   "lang": "sr",
   "script_group": "cyrillic",
   "total_keys": 53586,
-  "translated": 30697,
-  "identical_to_en": 30022,
-  "placeholder_keys": 20734,
-  "coverage_pct": 57.3,
-  "issues_total": 0,
-  "issues_by_type": {},
+  "translated": 3481,
+  "identical_to_en": 2646,
+  "placeholder_keys": 47950,
+  "coverage_pct": 6.5,
+  "issues_total": 1,
+  "issues_by_type": {
+    "V4_artifact": 1
+  },
   "issues_by_severity": {
     "CRITICAL": 0,
-    "HIGH": 0,
+    "HIGH": 1,
     "MEDIUM": 0,
     "LOW": 0
   },
-  "score": 100,
-  "worst_keys": [],
+  "score": 100.0,
+  "worst_keys": [
+    {
+      "key": "achievement.317.description",
+      "category": "achievements",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    }
+  ],
   "crossref": {
-    "enabled": true,
-    "issues_total": 412,
+    "enabled": false,
+    "issues_total": 414,
     "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 12,
-    "auto_fix_applied": 80
+    "length_ratio": 14,
+    "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-14T11:28:08.267550Z"
+  "validated_at": "2026-02-14T11:45:42.489144Z"
 }

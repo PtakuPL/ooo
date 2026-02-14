@@ -2,44 +2,26 @@
   "lang": "es",
   "script_group": "latin",
   "total_keys": 53586,
-  "translated": 52292,
-  "identical_to_en": 11252,
-  "placeholder_keys": 1062,
-  "coverage_pct": 97.6,
-  "issues_total": 45,
+  "translated": 50199,
+  "identical_to_en": 11093,
+  "placeholder_keys": 3155,
+  "coverage_pct": 93.7,
+  "issues_total": 42,
   "issues_by_type": {
     "V4_artifact": 37,
-    "V1_placeholder_mismatch": 4,
     "V2_length_ratio": 2,
     "V6_newline_mismatch": 1,
+    "V1_placeholder_mismatch": 1,
     "V5_pipe_mismatch": 1
   },
   "issues_by_severity": {
-    "CRITICAL": 5,
+    "CRITICAL": 2,
     "HIGH": 37,
     "MEDIUM": 3,
     "LOW": 0
   },
   "score": 99.9,
   "worst_keys": [
-    {
-      "key": "server.game.msg_32",
-      "category": "server",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "server.player.msg_11",
-      "category": "server",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "server.spells.msg_3",
-      "category": "server",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
     {
       "key": "talkaction.online.msg_summary",
       "category": "talkactions",
@@ -141,15 +123,33 @@
       "category": "npc",
       "type": "V4_artifact",
       "severity": "HIGH"
+    },
+    {
+      "key": "npc.captain_haba_open_sea.starboard_1",
+      "category": "npc",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "npc.captain_haba_open_sea.straight_3",
+      "category": "npc",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "npc.captain_haba_open_sea.straight_5",
+      "category": "npc",
+      "type": "V4_artifact",
+      "severity": "HIGH"
     }
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 486,
-    "consistency": 52,
+    "issues_total": 482,
+    "consistency": 50,
     "pl_reference": 400,
-    "length_ratio": 34,
-    "auto_fix_applied": 27
+    "length_ratio": 32,
+    "auto_fix_applied": 28
   },
-  "validated_at": "2026-02-14T11:18:06.800595Z"
+  "validated_at": "2026-02-14T11:43:00.229288Z"
 }

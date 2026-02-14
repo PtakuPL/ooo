@@ -2,10 +2,10 @@
   "lang": "ro",
   "script_group": "latin",
   "total_keys": 53586,
-  "translated": 30549,
-  "identical_to_en": 24000,
-  "placeholder_keys": 22863,
-  "coverage_pct": 57.0,
+  "translated": 9375,
+  "identical_to_en": 2701,
+  "placeholder_keys": 44037,
+  "coverage_pct": 17.5,
   "issues_total": 5,
   "issues_by_type": {
     "V1_placeholder_mismatch": 4,
@@ -17,7 +17,7 @@
     "MEDIUM": 0,
     "LOW": 0
   },
-  "score": 100.0,
+  "score": 99.8,
   "worst_keys": [
     {
       "key": "scripts.actions_rewards.msg_1",
@@ -51,12 +51,12 @@
     }
   ],
   "crossref": {
-    "enabled": true,
-    "issues_total": 409,
-    "consistency": 1,
+    "enabled": false,
+    "issues_total": 408,
+    "consistency": 0,
     "pl_reference": 400,
     "length_ratio": 8,
-    "auto_fix_applied": 43
+    "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-14T11:23:21.455278Z"
+  "validated_at": "2026-02-14T11:45:15.419950Z"
 }

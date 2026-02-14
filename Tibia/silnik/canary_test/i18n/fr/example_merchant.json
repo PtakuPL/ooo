@@ -1,7 +1,7 @@
 {
-  "_comment": "Example Merchant NPC - English translations",
-  "_file": "data-otservbr-global/npc/example_merchant_i18n.lua",
-  "npc.example_merchant.farewell": "Farewell, %s. Visit me again!",
+  "_comment": "[EN] Example Merchant NPC - English translations",
+  "_file": "[EN] data-otservbr-global/npc/example_merchant_i18n.lua",
+  "npc.example_merchant.farewell": "[EN] Farewell, %s. Visit me again!",
   "npc.example_merchant.greeting": "Bonjour %s ! Bienvenue dans ma boutique. Dites {trade} pour voir mes offres.",
   "npc.example_merchant.help": "Je peux vous vendre des potions, des armes et des armures. Dites {trade} pour parcourir mes marchandises.",
   "npc.example_merchant.job": "Je suis marchand. Je vends diverses marchandises aux aventuriers.",
@@ -11,6 +11,6 @@
   "npc.example_merchant.news_2": "Le roi cherche de courageux aventuriers.",
   "npc.example_merchant.trade": "Bien sûr ! Voici mes offres.",
   "nv.example_merchant.1": "Les meilleures potions en ville !",
-  "nv.example_merchant.2": "Quality weapons and armor!",
+  "nv.example_merchant.2": "[EN] Quality weapons and armor!",
   "nv.example_merchant.3": "OFFRES SPÉCIALES AUJOURD'HUI !"
 }

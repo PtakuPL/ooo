@@ -1,7 +1,7 @@
 {
-  "globalevents.online_record": "New record: %s players are logged in.",
-  "globalevents.save_interval.complete_plural": "Server save complete. Next save in %s %ss!",
-  "globalevents.save_interval.complete_singular": "Server save complete. Next save in %s %s!",
-  "globalevents.save_interval.warning": "The server will save all accounts within %s seconds. You might lag or freeze for 5 seconds, please find a safe place.",
-  "globalevents.server_save.warning": "Server is saving the game in %s minute(s). Please logout."
+  "globalevents.online_record": "Yeni kayıt: %s oyuncu oturum açtı.",
+  "globalevents.save_interval.complete_plural": "Sunucu kaydetme tamamlandı. Sonraki %s %ss dosyasına kaydedin!",
+  "globalevents.save_interval.complete_singular": "Sunucu kaydetme tamamlandı. Sonraki %s %s dosyasına kaydedin!",
+  "globalevents.save_interval.warning": "Sunucu tüm hesapları %s saniye içinde kaydedecek. 5 saniye gecikebilir veya donabilirsiniz, lütfen güvenli bir yer bulun.",
+  "globalevents.server_save.warning": "Sunucu oyunu %s dakika içinde kaydediyor. Lütfen oturumu kapatın."
 }

@@ -1,6 +1,6 @@
 {
   "creaturescripts.boss_defeated": "Le {name} a été vaincu. Vous avez {seconds} secondes pour quitter la salle.",
   "creaturescripts.empty_parcels_removed": "{count} colis vides ont été supprimés de votre boîte de réception de boutique !",
-  "creaturescripts.free_quest.msg_1": "Player FreeQuest in progress..",
-  "creaturescripts.free_quest.msg_2": "Player FreeQuest is complete."
+  "creaturescripts.free_quest.msg_1": "[EN] Player FreeQuest in progress..",
+  "creaturescripts.free_quest.msg_2": "[EN] Player FreeQuest is complete."
 }

@@ -1,33 +1,17 @@
 {
   "lang": "ro",
-  "coverage_pct": 57.0,
-  "crossref_enabled": true,
-  "auto_fix_enabled": true,
+  "coverage_pct": 17.5,
+  "crossref_enabled": false,
+  "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-14T11:23:21.444851Z",
-  "issues_total": 409,
+  "checked_at": "2026-02-14T11:45:15.413528Z",
+  "issues_total": 408,
   "issues_by_type": {
-    "consistency_in_language": 1,
+    "consistency_in_language": 0,
     "pl_reference_missing_translation": 400,
     "length_ratio_crosscheck": 8
   },
-  "consistency_issues": [
-    {
-      "type": "crossref_inconsistent_translation",
-      "severity": "MEDIUM",
-      "en": "badger fur",
-      "variants": [
-        "blana de bursuc",
-        "blană de bursuc"
-      ],
-      "variants_count": 2,
-      "examples": [
-        "items:item.10299.name",
-        "items:item.2595.name",
-        "items:item.903.name"
-      ]
-    }
-  ],
+  "consistency_issues": [],
   "pl_reference_issues": [
     {
       "key": "achievement.67.name",
@@ -39,15 +23,6 @@
       "lang": "High-Flyer"
     },
     {
-      "key": "achievement.70.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Deep Sea Diver",
-      "pl": "I. Morze Nurek",
-      "lang": "Deep Sea Diver"
-    },
-    {
       "key": "achievement.77.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -55,24 +30,6 @@
       "en": "Jinx",
       "pl": "Be a jinx on sb",
       "lang": "Jinx"
-    },
-    {
-      "key": "achievement.90.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Clay to Fame",
-      "pl": "Glina do Sława",
-      "lang": "Clay to Fame"
-    },
-    {
-      "key": "achievement.98.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Slayer of Anmothra",
-      "pl": "Mordować z Anmothra",
-      "lang": "Slayer of Anmothra"
     },
     {
       "key": "achievement.123.name",
@@ -84,15 +41,6 @@
       "lang": "Berserker"
     },
     {
-      "key": "achievement.134.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Undertaker",
-      "pl": "The Przedsiębiorca pogrzebowy",
-      "lang": "The Undertaker"
-    },
-    {
       "key": "achievement.157.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -100,24 +48,6 @@
       "en": "Aristocrat",
       "pl": "Arystokrata",
       "lang": "Aristocrat"
-    },
-    {
-      "key": "achievement.177.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Baby Sitter",
-      "pl": "Niemowlę Sitter",
-      "lang": "Baby Sitter"
-    },
-    {
-      "key": "achievement.194.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ashes to Dust",
-      "pl": "Popiół do I.",
-      "lang": "Ashes to Dust"
     },
     {
       "key": "achievement.207.name",
@@ -129,24 +59,6 @@
       "lang": "Slimer"
     },
     {
-      "key": "achievement.211.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Invader of the Deep",
-      "pl": "Invader z the I.",
-      "lang": "Invader of the Deep"
-    },
-    {
-      "key": "achievement.217.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Doctor! Doctor!",
-      "pl": "I.! I.!",
-      "lang": "Doctor! Doctor!"
-    },
-    {
       "key": "achievement.243.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -154,15 +66,6 @@
       "en": "Goldhunter",
       "pl": "złotahunter",
       "lang": "Goldhunter"
-    },
-    {
-      "key": "achievement.249.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Desert Fisher",
-      "pl": "Desert I.",
-      "lang": "Desert Fisher"
     },
     {
       "key": "achievement.251.name",
@@ -174,24 +77,6 @@
       "lang": "Dog Sitter"
     },
     {
-      "key": "achievement.255.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Down the Drain",
-      "pl": "I. the I.",
-      "lang": "Down the Drain"
-    },
-    {
-      "key": "achievement.259.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hive Blinder",
-      "pl": "Ul I.",
-      "lang": "Hive Blinder"
-    },
-    {
       "key": "achievement.302.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -199,69 +84,6 @@
       "en": "Gnomelike",
       "pl": "GNiemelike",
       "lang": "Gnomelike"
-    },
-    {
-      "key": "achievement.335.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Umbral Brawler",
-      "pl": "Umbral I.",
-      "lang": "Umbral Brawler"
-    },
-    {
-      "key": "achievement.336.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Umbral Berserker",
-      "pl": "Umbral To go berserk",
-      "lang": "Umbral Berserker"
-    },
-    {
-      "key": "achievement.338.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Umbral Marksman",
-      "pl": "Umbral Strzelec wyborowy",
-      "lang": "Umbral Marksman"
-    },
-    {
-      "key": "achievement.349.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Noblesse Obliterated",
-      "pl": "Nieblesse Obliterated",
-      "lang": "Noblesse Obliterated"
-    },
-    {
-      "key": "achievement.354.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Combo Master",
-      "pl": "Combo I.",
-      "lang": "Combo Master"
-    },
-    {
-      "key": "achievement.359.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Rathleton Squire",
-      "pl": "Rathleton Dziedzic, pan",
-      "lang": "Rathleton Squire"
-    },
-    {
-      "key": "achievement.361.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Plant vs. Minos",
-      "pl": "I. vs. Mini",
-      "lang": "Plant vs. Minos"
     },
     {
       "key": "achievement.363.name",
@@ -273,78 +95,6 @@
       "lang": "Robo Chop"
     },
     {
-      "key": "achievement.405.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Lost Palace Raider",
-      "pl": "I. Pałac I.",
-      "lang": "Lost Palace Raider"
-    },
-    {
-      "key": "achievement.435.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Master Hunter",
-      "pl": "I. Myśliwy",
-      "lang": "Master Hunter"
-    },
-    {
-      "key": "achievement.447.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Elven Woods",
-      "pl": "Elven Drewno",
-      "lang": "Elven Woods"
-    },
-    {
-      "key": "achievement.463.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Glooth Punk",
-      "pl": "Glooth I.",
-      "lang": "Glooth Punk"
-    },
-    {
-      "key": "achievement.487.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Gryphon Rider",
-      "pl": "Gryphon Jeździec",
-      "lang": "Gryphon Rider"
-    },
-    {
-      "key": "achievement.491.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Avid Spectral Reader",
-      "pl": "Zapalony Spectral Czytelnik",
-      "lang": "Avid Spectral Reader"
-    },
-    {
-      "key": "achievement.503.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Monsterhunter",
-      "pl": "potwórhunter",
-      "lang": "Monsterhunter"
-    },
-    {
-      "key": "achievement.513.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Soul Mender",
-      "pl": "Dusza Naprawiać się, naprawiać",
-      "lang": "Soul Mender"
-    },
-    {
       "key": "achievement.521.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -354,3280 +104,3514 @@
       "lang": "Pied Piper"
     },
     {
-      "key": "achievement.524.name",
-      "category": "achievements",
+      "key": "ui.house.rent_period_daily",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Knowledge Raider",
-      "pl": "KNiewledge Raider",
-      "lang": "Knowledge Raider"
+      "en": "daily",
+      "pl": "I.",
+      "lang": "daily"
     },
     {
-      "key": "actions.arena_10x10.say_1",
-      "category": "actions",
+      "key": "ui.house.rent_period_monthly",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Please wait for the fighters come out of the arena.",
-      "pl": "Poczekaj, aż wojownicy wyjdą z areny.",
-      "lang": "Please wait for the fighters come out of the arena."
+      "en": "monthly",
+      "pl": "miesięczny",
+      "lang": "monthly"
     },
     {
-      "key": "actions.arena_10x10.say_2",
-      "category": "actions",
+      "key": "ui.house.rent_period_weekly",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "You need 10 players for enter in the arena.",
-      "pl": "Potrzebujesz 10 graczy, aby wejść na arenę.",
-      "lang": "You need 10 players for enter in the arena."
+      "en": "weekly",
+      "pl": "I.",
+      "lang": "weekly"
     },
     {
-      "key": "actions.arena_10x10.say_3",
-      "category": "actions",
+      "key": "ui.house.rent_period_yearly",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "You need 10 players for enter in the arena.",
-      "pl": "Potrzebujesz 10 graczy, aby wejść na arenę.",
-      "lang": "You need 10 players for enter in the arena."
+      "en": "annual",
+      "pl": "I.",
+      "lang": "annual"
     },
     {
-      "key": "actions.arena_10x10.say_4",
-      "category": "actions",
+      "key": "ui.readable.wrote",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "You need 10 players for enter in the arena.",
-      "pl": "Potrzebujesz 10 graczy, aby wejść na arenę.",
-      "lang": "You need 10 players for enter in the arena."
+      "en": " wrote",
+      "pl": "wrote",
+      "lang": " wrote"
     },
     {
-      "key": "actions.arena_10x10.say_5",
-      "category": "actions",
+      "key": "ui.readable.wrote_on_date",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "You need 10 players for enter in the arena.",
-      "pl": "Potrzebujesz 10 graczy, aby wejść na arenę.",
-      "lang": "You need 10 players for enter in the arena."
+      "en": " wrote on ",
+      "pl": "wrote na",
+      "lang": " wrote on "
     },
     {
-      "key": "actions.arena_10x10.say_6",
-      "category": "actions",
+      "key": "ui.readable.you_read_prefix",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Please wait for the fighters come out of the arena.",
-      "pl": "Poczekaj, aż wojownicy wyjdą z areny.",
-      "lang": "Please wait for the fighters come out of the arena."
+      "en": "You read: ",
+      "pl": "Ty czytać, przeczytać:",
+      "lang": "You read: "
     },
     {
-      "key": "actions.arena_2x2.say_1",
-      "category": "actions",
+      "key": "channel.tutor.name",
+      "category": "chatchannels",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Please wait for the fighters come out of the arena.",
-      "pl": "Poczekaj, aż wojownicy wyjdą z areny.",
-      "lang": "Please wait for the fighters come out of the arena."
+      "en": "Tutor",
+      "pl": "Korepetytor",
+      "lang": "Tutor"
     },
     {
-      "key": "actions.arena_2x2.say_2",
-      "category": "actions",
+      "key": "channel.help.name",
+      "category": "chatchannels",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "You need 2 players for enter in the arena.",
-      "pl": "Potrzebujesz 2 graczy, aby wejść na arenę.",
-      "lang": "You need 2 players for enter in the arena."
+      "en": "Help",
+      "pl": "Pomoc",
+      "lang": "Help"
     },
     {
-      "key": "actions.arena_2x2.say_3",
-      "category": "actions",
+      "key": "channel.gamemaster.name",
+      "category": "chatchannels",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "You need 2 players for enter in the arena.",
-      "pl": "Potrzebujesz 2 graczy, aby wejść na arenę.",
-      "lang": "You need 2 players for enter in the arena."
+      "en": "Gamemaster",
+      "pl": "Mistrz Gry",
+      "lang": "Gamemaster"
     },
     {
-      "key": "actions.arena_2x2.say_4",
-      "category": "actions",
+      "key": "channel.world_chat.name",
+      "category": "chatchannels",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "You need 2 players for enter in the arena.",
-      "pl": "Potrzebujesz 2 graczy, aby wejść na arenę.",
-      "lang": "You need 2 players for enter in the arena."
+      "en": "World Chat",
+      "pl": "Czat światowy",
+      "lang": "World Chat"
     },
     {
-      "key": "actions.arena_2x2.say_5",
-      "category": "actions",
+      "key": "client.game_store.text1",
+      "category": "client",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "You need 2 players for enter in the arena.",
-      "pl": "Potrzebujesz 2 graczy, aby wejść na arenę.",
-      "lang": "You need 2 players for enter in the arena."
+      "en": "HomePanel",
+      "pl": "Panel główny",
+      "lang": "HomePanel"
     },
     {
-      "key": "actions.arena_2x2.say_6",
-      "category": "actions",
+      "key": "cpp.augment.damage",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Please wait for the fighters come out of the arena.",
-      "pl": "Poczekaj, aż wojownicy wyjdą z areny.",
-      "lang": "Please wait for the fighters come out of the arena."
+      "en": "damage",
+      "pl": "szkoda",
+      "lang": "damage"
     },
     {
-      "key": "actions.construction_kits.msg_2",
-      "category": "actions",
+      "key": "cpp.bestiary.charm_category_major",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Put the construction kit on the floor first.",
-      "pl": "Najpierw połóż zestaw konstrukcyjny na podłodze.",
-      "lang": "Put the construction kit on the floor first."
+      "en": "Major",
+      "pl": "I.",
+      "lang": "Major"
     },
     {
-      "key": "actions.fishing.msg_1",
-      "category": "actions",
+      "key": "cpp.bestiary.charm_category_minor",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "You are not the owner.",
-      "pl": "Nie jesteś właścicielem.",
-      "lang": "You are not the owner."
+      "en": "Minor",
+      "pl": "Mini",
+      "lang": "Minor"
     },
     {
-      "key": "actions.fluids.msg_1",
-      "category": "actions",
+      "key": "cpp.combat.agony",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "It is empty.",
-      "pl": "To jest puste.",
-      "lang": "It is empty."
+      "en": "agony",
+      "pl": "cierpienie",
+      "lang": "agony"
     },
     {
-      "key": "actions.fluids.msg_2",
-      "category": "actions",
+      "key": "cpp.combat.death",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "It is empty.",
-      "pl": "To jest puste.",
-      "lang": "It is empty."
+      "en": "death",
+      "pl": "I.",
+      "lang": "death"
     },
     {
-      "key": "actions.imbuement_shrine.msg_1",
-      "category": "actions",
+      "key": "cpp.combat.drown",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "You can only use the shrine on an valid item.",
-      "pl": "Możesz użyć świątyni tylko na prawidłowym przedmiocie.",
-      "lang": "You can only use the shrine on an valid item."
+      "en": "drown",
+      "pl": "topić się, tonąć",
+      "lang": "drown"
     },
     {
-      "key": "actions.imbuement_shrine.msg_2",
-      "category": "actions",
+      "key": "cpp.combat.earth",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "You did not collect enough knowledge from the ancient Shapers. Visit the Shaper temple in Montag for help.",
-      "pl": "Nie zebrałeś wystarczającej wiedzy od starożytnych Shaperów. Odwiedź świątynię Shaperów w Montag, aby uzyskać pomoc.",
-      "lang": "You did not collect enough knowledge from the ancient Shapers. Visit the Shaper temple in Montag for help."
+      "en": "earth",
+      "pl": "ziemia",
+      "lang": "earth"
     },
     {
-      "key": "actions.quests.msg_1",
-      "category": "actions",
+      "key": "cpp.combat.energy",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "It is empty.",
-      "pl": "To jest puste.",
-      "lang": "It is empty."
+      "en": "energy",
+      "pl": "energia",
+      "lang": "energy"
     },
     {
-      "key": "actions.quests.msg_2",
-      "category": "actions",
+      "key": "cpp.combat.fire",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "It is empty.",
-      "pl": "To jest puste.",
-      "lang": "It is empty."
+      "en": "fire",
+      "pl": "ogień",
+      "lang": "fire"
     },
     {
-      "key": "actions.random_items.say_1",
-      "category": "actions",
+      "key": "cpp.combat.holy",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "You found ",
-      "pl": "Znalazłeś ",
-      "lang": "You found "
+      "en": "holy",
+      "pl": "święty",
+      "lang": "holy"
     },
     {
-      "key": "actions.random_items.say_2",
-      "category": "actions",
+      "key": "cpp.combat.ice",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "You found nothing useful.",
-      "pl": "Nie znalazłeś nic użytecznego.",
-      "lang": "You found nothing useful."
+      "en": "ice",
+      "pl": "lód",
+      "lang": "ice"
     },
     {
-      "key": "actions.random_items.say_3",
-      "category": "actions",
+      "key": "cpp.combat.lifedrain",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "You found nothing useful.",
-      "pl": "Nie znalazłeś nic użytecznego.",
-      "lang": "You found nothing useful."
+      "en": "lifedrain",
+      "pl": "drenaż życia",
+      "lang": "lifedrain"
     },
     {
-      "key": "actions.premium_scroll.msg_max_days",
-      "category": "actions",
+      "key": "cpp.combat.neutral",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "You can not buy more than {max} days of premium account.",
-      "pl": "Nie możesz kupić więcej niż {max} dni konta premium.",
-      "lang": "You can not buy more than {max} days of premium account."
+      "en": "neutral",
+      "pl": "neutralny",
+      "lang": "neutral"
     },
     {
-      "key": "actions.outfit_items.msg_already_own",
-      "category": "actions",
+      "key": "cpp.combat.physical",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "You already own this outfit part.",
-      "pl": "Masz już tę część stroju.",
-      "lang": "You already own this outfit part."
+      "en": "physical",
+      "pl": "Fizyczny",
+      "lang": "physical"
     },
     {
-      "key": "actions.key_door.msg_wrong_key",
-      "category": "actions",
+      "key": "cpp.combat.undefined",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "The key does not match.",
-      "pl": "Klucz nie pasuje.",
-      "lang": "The key does not match."
+      "en": "undefined",
+      "pl": "nieokreślony",
+      "lang": "undefined"
     },
     {
-      "key": "actions.gamestore.msg_no_rookgaard",
-      "category": "actions",
+      "key": "cpp.combat.unknown",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Store don't have offers for rookgaard citizen.",
-      "pl": "Sklep nie ma ofert dla mieszkańców Rookgaardu.",
-      "lang": "Store don't have offers for rookgaard citizen."
+      "en": "unknown",
+      "pl": "unkNiewn",
+      "lang": "unknown"
     },
     {
-      "key": "actions.gamestore.msg_exhausted",
-      "category": "actions",
+      "key": "cpp.forge.consumed",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "You are exhausted.",
-      "pl": "Jesteś wyczerpany.",
-      "lang": "You are exhausted."
+      "en": "consumed",
+      "pl": "strawiony",
+      "lang": "consumed"
     },
     {
-      "key": "book.new_frontier.hidden_note",
-      "category": "books",
+      "key": "cpp.forge.cores_one",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Go to the secret door to the north",
-      "pl": "Go do the I. drzwi do the Nierth",
-      "lang": "Go to the secret door to the north"
+      "en": "{0} core",
+      "pl": "{0} rdzeń",
+      "lang": "{0} core"
     },
     {
-      "key": "book.otbm.1000_alchemical_uses_of_urine",
-      "category": "books",
+      "key": "cpp.forge.cores_other",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "1000 Alchemical Uses of Urine",
-      "pl": "1000 Alchemical Nas z Mocz",
-      "lang": "1000 Alchemical Uses of Urine"
+      "en": "{0} cores",
+      "pl": "{0} rdzeni",
+      "lang": "{0} cores"
     },
     {
-      "key": "book.otbm.1000_gold_10_fire_bugs",
-      "category": "books",
+      "key": "cpp.forge.dust_one",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "1000 gold 10 fire bugs for Dream Challenge",
-      "pl": "1000 złota 10 fire bugs dla I. I.",
-      "lang": "1000 gold 10 fire bugs for Dream Challenge"
+      "en": "{0} dust",
+      "pl": "{0} I.",
+      "lang": "{0} dust"
     },
     {
-      "key": "book.otbm.1001_recipes_against_sweaty_hands",
-      "category": "books",
+      "key": "cpp.forge.dust_other",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "1001 Recipes Against Sweaty Hands",
-      "pl": "1001 Przepis kulinarny, przepis O Wywołujący poty Hands",
-      "lang": "1001 Recipes Against Sweaty Hands"
+      "en": "{0} dust",
+      "pl": "{0} I.",
+      "lang": "{0} dust"
     },
     {
-      "key": "book.otbm.1001_ways_to_use_energy",
-      "category": "books",
+      "key": "cpp.forge.successful",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "1001 ways to use energy beams.",
-      "pl": "1001 ways do use energia I..",
-      "lang": "1001 ways to use energy beams."
+      "en": "Successful",
+      "pl": "sukcesful",
+      "lang": "Successful"
     },
     {
-      "key": "book.otbm.100_gold_coins_equal_1",
-      "category": "books",
+      "key": "cpp.forge.unchanged",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "100 gold coins equal 1 platinum coin",
-      "pl": "100 złotych monet I. 1 I. moneta",
-      "lang": "100 gold coins equal 1 platinum coin"
+      "en": "unchanged",
+      "pl": "niezmienione",
+      "lang": "unchanged"
     },
     {
-      "key": "book.otbm.100_gold_coins_equal_1_39c18279",
-      "category": "books",
+      "key": "cpp.forge.unknown",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "100 gold coins equal 1 platinum coin",
-      "pl": "100 złotych monet I. 1 I. moneta",
-      "lang": "100 gold coins equal 1 platinum coin"
+      "en": "(unknown)",
+      "pl": "(nieznany)",
+      "lang": "(unknown)"
     },
     {
-      "key": "book.otbm.100_platinum_coins_equal_1",
-      "category": "books",
+      "key": "cpp.game.hazard_tag",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "100 platinum coins equal 1 crystal coin",
-      "pl": "100 I. monety I. 1 crystal moneta",
-      "lang": "100 platinum coins equal 1 crystal coin"
+      "en": " (Hazard)",
+      "pl": "(I.)",
+      "lang": " (Hazard)"
     },
     {
-      "key": "book.otbm.100_platinum_coins_equal_1_648a8349",
-      "category": "books",
+      "key": "cpp.game.no_loot",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "100 platinum coins equal 1 crystal coin",
-      "pl": "100 I. monety I. 1 crystal moneta",
-      "lang": "100 platinum coins equal 1 crystal coin"
+      "en": "No loot",
+      "pl": "Nie I.",
+      "lang": "No loot"
     },
     {
-      "key": "book.otbm.1_discover_secret_of_necromants",
-      "category": "books",
+      "key": "cpp.game.offline_training_button_cancel",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "1. Discover secret of necromants nectar",
-      "pl": "1. Odkrywać I. z necromants nektar",
-      "lang": "1. Discover secret of necromants nectar"
+      "en": "Cancel",
+      "pl": "Anuluj",
+      "lang": "Cancel"
     },
     {
-      "key": "book.otbm.1st_floor_bel_etage_grand",
-      "category": "books",
+      "key": "cpp.game.offline_training_button_ok",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "1st floor (bel etage): Grand Opera Caf",
-      "pl": "1st I. (bel etage): I. Opera Caf",
-      "lang": "1st floor (bel etage): Grand Opera Caf"
+      "en": "Okay",
+      "pl": "I.",
+      "lang": "Okay"
     },
     {
-      "key": "book.otbm.1st_floor_interior_design_take",
-      "category": "books",
+      "key": "cpp.game.tentugly_name",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "1st floor: Interior Design (take elevator)",
-      "pl": "1st I.: I. Design (take winda)",
-      "lang": "1st floor: Interior Design (take elevator)"
+      "en": "Tentugly",
+      "pl": "Delikatnie",
+      "lang": "Tentugly"
     },
     {
-      "key": "book.otbm.1st_floor_magic_emporium",
-      "category": "books",
+      "key": "cpp.game.you_looted",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "1st floor: Magic Emporium",
-      "pl": "1st I.: I. Emporium",
-      "lang": "1st floor: Magic Emporium"
+      "en": "You looted ",
+      "pl": "Ty I.",
+      "lang": "You looted "
     },
     {
-      "key": "book.otbm.1st_floor_the_archers_grounds",
-      "category": "books",
+      "key": "cpp.inspect.and_connector",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "1st floor: The Archer's Grounds - Distance Weapons and Paladin Spells",
-      "pl": "1st I.: The Łucznik Ziemia - I. Broń i Paladin zaklęCentalna Agencja Wywiadowcza",
-      "lang": "1st floor: The Archer's Grounds - Distance Weapons and Paladin Spells"
+      "en": " and ",
+      "pl": "i",
+      "lang": " and "
     },
     {
-      "key": "book.otbm.20_tricks_to_get_peoples",
-      "category": "books",
+      "key": "cpp.inspect.armor",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "20 Tricks to Get People's Money",
-      "pl": "20 I. do Get I. Pieniądze",
-      "lang": "20 Tricks to Get People's Money"
+      "en": "Armor",
+      "pl": "Zbroja",
+      "lang": "Armor"
     },
     {
-      "key": "book.otbm.2_dont_be_late_for",
-      "category": "books",
+      "key": "cpp.inspect.at_range",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "2. Don't be late for lessons and training sessions.",
-      "pl": "2. Don't być I. dla lekcja i Trening sesja.",
-      "lang": "2. Don't be late for lessons and training sessions."
+      "en": " at range ",
+      "pl": "w I.",
+      "lang": " at range "
     },
     {
-      "key": "book.otbm.2_floor_the_room_of",
-      "category": "books",
+      "key": "cpp.inspect.attack",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "2. Floor - The Room of the Oracle",
-      "pl": "2. I. - The miejsce z the Wyrocznia",
-      "lang": "2. Floor - The Room of the Oracle"
+      "en": "Attack",
+      "pl": "Atak",
+      "lang": "Attack"
     },
     {
-      "key": "book.otbm.2nd_floor_barnabas_dee_astronomer",
-      "category": "books",
+      "key": "cpp.inspect.augments",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "2nd floor: Barnabas Dee, Astronomer and Sorcerer Spells Teacher.",
-      "pl": "2nd I.: Barnabas Dee, AstroNiemer i Sorcerer zaklęCentalna Agencja Wywiadowcza Nauczyciel.",
-      "lang": "2nd floor: Barnabas Dee, Astronomer and Sorcerer Spells Teacher."
+      "en": "Augments",
+      "pl": "Zwiększać",
+      "lang": "Augments"
     },
     {
-      "key": "book.otbm.2nd_floor_exquisite_jewellery",
-      "category": "books",
+      "key": "cpp.inspect.body_body",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "2nd floor: Exquisite Jewellery",
-      "pl": "2nd I.: Przepiękny Biżuteria",
-      "lang": "2nd floor: Exquisite Jewellery"
+      "en": "body",
+      "pl": "ciało",
+      "lang": "body"
     },
     {
-      "key": "book.otbm.2nd_floor_madame_faylas_music",
-      "category": "books",
+      "key": "cpp.inspect.body_both_hands",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "2nd floor: Madame Fayla's Music Chamber",
-      "pl": "2nd I.: Madame Fayla's Muzyka I.",
-      "lang": "2nd floor: Madame Fayla's Music Chamber"
+      "en": "both hands",
+      "pl": "obaj hands",
+      "lang": "both hands"
     },
     {
-      "key": "book.otbm.3789_gold_weapons_and_repairs",
-      "category": "books",
+      "key": "cpp.inspect.body_container",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "3789 gold weapons and repairs",
-      "pl": "3789 złota broń i I.",
-      "lang": "3789 gold weapons and repairs"
+      "en": "container",
+      "pl": "pojemnik",
+      "lang": "container"
     },
     {
-      "key": "book.otbm.3_discover_secret_entrance_to",
-      "category": "books",
+      "key": "cpp.inspect.body_extra_slot",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "3. Discover secret entrance to Nightmare Pits",
-      "pl": "3. Odkrywać I. entrance do Zły sen Dół, jama",
-      "lang": "3. Discover secret entrance to Nightmare Pits"
+      "en": "extra slot",
+      "pl": "I. I.",
+      "lang": "extra slot"
     },
     {
-      "key": "book.otbm.4000_gold_books_and_paper",
-      "category": "books",
+      "key": "cpp.inspect.body_feet",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "4000 gold books and paper",
-      "pl": "4000 złota I. i I.",
-      "lang": "4000 gold books and paper"
+      "en": "feet",
+      "pl": "stopy",
+      "lang": "feet"
     },
     {
-      "key": "book.otbm.4_exterminiate_the_ghouls_in",
-      "category": "books",
+      "key": "cpp.inspect.body_finger",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "4. Exterminiate the ghouls in the garden",
-      "pl": "4. Exterminiate the ghouls w the I.",
-      "lang": "4. Exterminiate the ghouls in the garden"
+      "en": "finger",
+      "pl": "palec",
+      "lang": "finger"
     },
     {
-      "key": "book.otbm.4_no_running_in_the",
-      "category": "books",
+      "key": "cpp.inspect.body_head",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "4. No running in the corridor",
-      "pl": "4. Nie I. w the corridor",
-      "lang": "4. No running in the corridor"
+      "en": "head",
+      "pl": "Głowa",
+      "lang": "head"
     },
     {
-      "key": "book.otbm.4_quickly_use_any_bottle",
-      "category": "books",
+      "key": "cpp.inspect.body_legs",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "4. Quickly use any bottle or cup to collect the rum",
-      "pl": "4. Szybki, prędki use dowolny I. lub cup do I. the I.",
-      "lang": "4. Quickly use any bottle or cup to collect the rum"
+      "en": "legs",
+      "pl": "noga",
+      "lang": "legs"
     },
     {
-      "key": "book.otbm.5000_gold_runes_and_fluids",
-      "category": "books",
+      "key": "cpp.inspect.body_neck",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "5000 gold runes and fluids",
-      "pl": "5000 złota runes i I.",
-      "lang": "5000 gold runes and fluids"
+      "en": "neck",
+      "pl": "szyja",
+      "lang": "neck"
     },
     {
-      "key": "book.otbm.5_no_eating_and_drinking",
-      "category": "books",
+      "key": "cpp.inspect.brand_new",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "5. No eating and drinking.",
-      "pl": "5. Nie I. i I..",
-      "lang": "5. No eating and drinking."
+      "en": "brand-new",
+      "pl": "I.-new",
+      "lang": "brand-new"
     },
     {
-      "key": "book.otbm.5_no_sigildrawing_on_the",
-      "category": "books",
+      "key": "cpp.inspect.capacity",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "5. No sigil-drawing on the floor",
-      "pl": "5. Nie sigil-I. na the I.",
-      "lang": "5. No sigil-drawing on the floor"
+      "en": "Capacity",
+      "pl": "Udźperuka",
+      "lang": "Capacity"
     },
     {
-      "key": "book.otbm.6_no_food_in_the",
-      "category": "books",
+      "key": "cpp.inspect.charges",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "6. No food in the library",
-      "pl": "6. Nie jedzenie, pożywienie w the biblioteka",
-      "lang": "6. No food in the library"
+      "en": "Charges",
+      "pl": "Ładunki",
+      "lang": "Charges"
     },
     {
-      "key": "book.otbm.6_return_borrowed_equipment_to",
-      "category": "books",
+      "key": "cpp.inspect.cleave",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "6. Return borrowed equipment to the storage room.",
-      "pl": "6. I. pożyczać wyposażenie, ekwipunek, sprzęt do the magazynowanie, przechowywanie miejsce.",
-      "lang": "6. Return borrowed equipment to the storage room."
+      "en": "Cleave",
+      "pl": "Rozszczepiać",
+      "lang": "Cleave"
     },
     {
-      "key": "book.otbm.7_no_scribbling_in_libraryowned",
-      "category": "books",
+      "key": "cpp.inspect.contain",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "7. No scribbling in library-owned documents",
-      "pl": "7. Nie scribbling w biblioteka-I. I.",
-      "lang": "7. No scribbling in library-owned documents"
+      "en": "Contain",
+      "pl": "Zawierać",
+      "lang": "Contain"
     },
     {
-      "key": "book.otbm.800_razoredge_matt_vs_bambam",
-      "category": "books",
+      "key": "cpp.inspect.defence",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "8.00   Razoredge Matt vs. Bambam Brutus",
-      "pl": "8.00 Razoredge Matowy vs. Bambam Brutus",
-      "lang": "8.00   Razoredge Matt vs. Bambam Brutus"
+      "en": "Defence",
+      "pl": "Obrona",
+      "lang": "Defence"
     },
     {
-      "key": "book.otbm.900_mad_doc_vs_harpoon",
-      "category": "books",
+      "key": "cpp.inspect.effect",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "9.00   Mad Doc. vs. Harpoon Angus",
-      "pl": "9.00 Zwariowany, niespełna rozumu Doc. vs. Harpun Angus",
-      "lang": "9.00   Mad Doc. vs. Harpoon Angus"
+      "en": "Effect",
+      "pl": "Efekt",
+      "lang": "Effect"
     },
     {
-      "key": "book.otbm.9_no_library_document_to",
-      "category": "books",
+      "key": "cpp.inspect.empty",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "9. No library document to be taken outside of the library grounds",
-      "pl": "9. Nie biblioteka I. do być taken I. z the biblioteka ziemia",
-      "lang": "9. No library document to be taken outside of the library grounds"
+      "en": "empty",
+      "pl": "puste",
+      "lang": "empty"
     },
     {
-      "key": "book.otbm.a_crudely_scribbled_note",
-      "category": "books",
+      "key": "cpp.inspect.expires",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "(A crudely scribbled note)",
-      "pl": "(JEDEN crudely scribbled Niete)",
-      "lang": "(A crudely scribbled note)"
+      "en": "Expires",
+      "pl": "Wygasa",
+      "lang": "Expires"
     },
     {
-      "key": "book.otbm.a_teleportation_through_the_magic",
-      "category": "books",
+      "key": "cpp.inspect.hitchance",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "A teleportation through the magic web",
-      "pl": "JEDEN teleportowaćation through the I. pajęczyna",
-      "lang": "A teleportation through the magic web"
+      "en": "HitChance",
+      "pl": "Szansa na trafienie",
+      "lang": "HitChance"
     },
     {
-      "key": "book.otbm.abandoned_production_sites_caution_swamp",
-      "category": "books",
+      "key": "cpp.inspect.key",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Abandoned production sites. Caution: Swamp troll infestation. Enter at your own risk.",
-      "pl": "Zostawiać, opuszczać produkcja I.. I.: I. troll infestation. I. w twój I. I..",
-      "lang": "Abandoned production sites. Caution: Swamp troll infestation. Enter at your own risk."
+      "en": "Key",
+      "pl": "I.",
+      "lang": "Key"
     },
     {
-      "key": "book.otbm.abbot_still_clueless_abour_my",
-      "category": "books",
+      "key": "cpp.inspect.n_fields",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "... abbot still clueless abour my ...",
-      "pl": "... opat I. clueless abour mój...",
-      "lang": "... abbot still clueless abour my ..."
+      "en": "{0} fields",
+      "pl": "{0} I.",
+      "lang": "{0} fields"
     },
     {
-      "key": "book.otbm.abdendriel_furniture_store",
-      "category": "books",
+      "key": "cpp.inspect.nothing",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Ab'Dendriel Furniture Store",
-      "pl": "Ab'Dendriel Meble I.",
-      "lang": "Ab'Dendriel Furniture Store"
+      "en": "Nothing",
+      "pl": "Niething",
+      "lang": "Nothing"
     },
     {
-      "key": "book.otbm.about_the_orcs_because_of",
-      "category": "books",
+      "key": "cpp.inspect.oz",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "about the orcs because of these losses.",
-      "pl": "o the orcs ponieważ, bo z these strata, utrata.",
-      "lang": "about the orcs because of these losses."
+      "en": " oz",
+      "pl": "oz",
+      "lang": " oz"
     },
     {
-      "key": "book.otbm.academy_and_training_centre",
-      "category": "books",
+      "key": "cpp.inspect.premium",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Academy and Training Centre",
-      "pl": "Akademia i Trening Centre",
-      "lang": "Academy and Training Centre"
+      "en": "Premium",
+      "pl": "Premia",
+      "lang": "Premium"
     },
     {
-      "key": "book.otbm.accidentally_stabbed_by_al_dee",
-      "category": "books",
+      "key": "cpp.inspect.protection",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Accidentally stabbed by Al Dee.",
-      "pl": "Przypadkowy stabbed by Al Dee.",
-      "lang": "Accidentally stabbed by Al Dee."
+      "en": "Protection",
+      "pl": "Ochrona, osłona",
+      "lang": "Protection"
     },
     {
-      "key": "book.otbm.advanced_spells_for_less_gold",
-      "category": "books",
+      "key": "cpp.inspect.required",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Advanced spells for less gold.",
-      "pl": "Zaawansowany zaklęCentalna Agencja Wywiadowcza dla I. złota.",
-      "lang": "Advanced spells for less gold."
+      "en": "Required",
+      "pl": "wymagany",
+      "lang": "Required"
     },
     {
-      "key": "book.otbm.adventurers_administration_quests_and_tasks",
-      "category": "books",
+      "key": "cpp.inspect.speed",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Adventurer's Administration - Quests and Tasks open; contact Mr Morris.",
-      "pl": "Awanturnik Administracja, zarządzanie - zadania i Zadanie, zajęcie otwórz; I. Mr Morris.",
-      "lang": "Adventurer's Administration - Quests and Tasks open; contact Mr Morris."
+      "en": "Speed",
+      "pl": "I.",
+      "lang": "Speed"
     },
     {
-      "key": "book.otbm.adventurers_dormitory_door_key_lost",
-      "category": "books",
+      "key": "cpp.inspect.speed_value",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Adventurer's Dormitory (door key lost, please report to Mr Morris if you found it.)",
-      "pl": "Awanturnik Sypialnia (drzwi I. I., Proszę I. do Mr Morris if ty znaleziono to.)",
-      "lang": "Adventurer's Dormitory (door key lost, please report to Mr Morris if you found it.)"
+      "en": "speed {0}",
+      "pl": "I. {0}",
+      "lang": "speed {0}"
     },
     {
-      "key": "book.otbm.adventurers_outpost_bank_safely_hoarding",
-      "category": "books",
+      "key": "cpp.inspect.tier",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Adventurer's Outpost Bank - Safely hoarding your looted gold so you can go back out into the wild for more.",
-      "pl": "Awanturnik Placówka Bank - I. parkan twój I. złota I. Lekarz rejonowyżesz go I. out a. do the I. dla more.",
-      "lang": "Adventurer's Outpost Bank - Safely hoarding your looted gold so you can go back out into the wild for more."
+      "en": "Tier",
+      "pl": "Rząd",
+      "lang": "Tier"
     },
     {
-      "key": "book.otbm.afterwards_life_returned_to_the",
-      "category": "books",
+      "key": "cpp.inspect.tradeable",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "afterwards life returned to the world.",
-      "pl": "afterwards I. I. do the I..",
-      "lang": "afterwards life returned to the world."
+      "en": "Tradeable",
+      "pl": "Możliwość handlu",
+      "lang": "Tradeable"
     },
     {
-      "key": "book.otbm.al_dees_shop_come_to",
-      "category": "books",
+      "key": "cpp.inspect.two_handed",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Al Dee's shop - come to where the ropes are!",
-      "pl": "Al Dee's I. - come do where the I. są!",
-      "lang": "Al Dee's shop - come to where the ropes are!"
+      "en": "two-handed",
+      "pl": "dwa-handed",
+      "lang": "two-handed"
     },
     {
-      "key": "book.otbm.al_dees_shop_come_to_af3d4866",
-      "category": "books",
+      "key": "cpp.inspect.weight",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Al Dee's shop - come to where the torches are!",
-      "pl": "Al Dee's I. - come do where the latarka są!",
-      "lang": "Al Dee's shop - come to where the torches are!"
+      "en": "Weight",
+      "pl": "Waga",
+      "lang": "Weight"
     },
     {
-      "key": "book.otbm.al_dees_shop_come_to_ef77e299",
-      "category": "books",
+      "key": "cpp.inspect.yes",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Al Dee's shop - come to where the ropes are!",
-      "pl": "Al Dee's I. - come do where the I. są!",
-      "lang": "Al Dee's shop - come to where the ropes are!"
+      "en": "yes",
+      "pl": "Tak",
+      "lang": "yes"
     },
     {
-      "key": "book.otbm.all_others_made_the_same",
-      "category": "books",
+      "key": "cpp.look.and_connector",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "All others made the same experience.",
-      "pl": "Wszystkie drugi, pozostały zrobiony the I. I..",
-      "lang": "All others made the same experience."
+      "en": " and ",
+      "pl": "i",
+      "lang": " and "
     },
     {
-      "key": "book.otbm.allen_richardsons_warehouse",
-      "category": "books",
+      "key": "cpp.look.and_short",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Allen Richardson's Warehouse",
-      "pl": "Allen Richardson's Waredom",
-      "lang": "Allen Richardson's Warehouse"
+      "en": " and",
+      "pl": "i",
+      "lang": " and"
     },
     {
-      "key": "book.otbm.also_via_the_portal_of",
-      "category": "books",
+      "key": "cpp.look.arm",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Also via the portal of souls old and new heroes found their way to Tibia. Gradually larger sections of the old world emerged",
-      "pl": "Także przez the portal z dusza I. i new bohater znaleziono ich way do Tibia. Stopniowy larger część, sekcja z the I. I. emerged",
-      "lang": "Also via the portal of souls old and new heroes found their way to Tibia. Gradually larger sections of the old world emerged"
+      "en": "Arm:",
+      "pl": "Ramię, ręka:",
+      "lang": "Arm:"
     },
     {
-      "key": "book.otbm.and_all_life_threatened_to",
-      "category": "books",
+      "key": "cpp.look.at_range",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "and all life threatened to be suffocated thereby.",
-      "pl": "i wszystkie I. grozić do być suffocated skutkiem tego, przez to.",
-      "lang": "and all life threatened to be suffocated thereby."
+      "en": "at range",
+      "pl": "w I.",
+      "lang": "at range"
     },
     {
-      "key": "book.otbm.and_the_lord_spake_saying",
-      "category": "books",
+      "key": "cpp.look.atk",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "And the Lord spake, saying:",
-      "pl": "I the Lord spake, powiedzenie:",
-      "lang": "And the Lord spake, saying:"
+      "en": "Atk:",
+      "pl": "Atak:",
+      "lang": "Atk:"
     },
     {
-      "key": "book.otbm.and_to_remedy_that_he",
-      "category": "books",
+      "key": "cpp.look.cleave_lower",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "And to remedy that he invented TIME!",
-      "pl": "I do I. that on wynajdować, wymyślać CZAS!",
-      "lang": "And to remedy that he invented TIME!"
+      "en": "cleave",
+      "pl": "rozszczepiać",
+      "lang": "cleave"
     },
     {
-      "key": "book.otbm.apothecary_and_holy_grounds_of",
-      "category": "books",
+      "key": "cpp.look.cleave_upper",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Apothecary and Holy Grounds of the Dark Priestesses.",
-      "pl": "Apothecary i Święty Ziemia z the I. Kapłanka.",
-      "lang": "Apothecary and Holy Grounds of the Dark Priestesses."
+      "en": "Cleave",
+      "pl": "Rozszczepiać",
+      "lang": "Cleave"
     },
     {
-      "key": "book.otbm.aquatic_life_observation_tank",
-      "category": "books",
+      "key": "cpp.look.damage",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Aquatic Life Observation Tank",
-      "pl": "Wodny I. Obserwacja I.",
-      "lang": "Aquatic Life Observation Tank"
+      "en": "damage",
+      "pl": "szkoda",
+      "lang": "damage"
     },
     {
-      "key": "book.otbm.armaments_chapter_two_verses_nine",
-      "category": "books",
+      "key": "cpp.look.day_many",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Armaments, Chapter Two, Verses Nine to Twenty-One.",
-      "pl": "Uzbrojenie, Rozdział Dwa, Wiersz Dziewięć do Dwadzieścia-I..",
-      "lang": "Armaments, Chapter Two, Verses Nine to Twenty-One."
+      "en": "{0} days",
+      "pl": "{0} dni",
+      "lang": "{0} days"
     },
     {
-      "key": "book.otbm.armour_and_weapon_storage",
-      "category": "books",
+      "key": "cpp.look.day_one",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Armour and Weapon Storage",
-      "pl": "Armour i Broń Magazynowanie, przechowywanie",
-      "lang": "Armour and Weapon Storage"
+      "en": "{0} day",
+      "pl": "{0} dzień",
+      "lang": "{0} day"
     },
     {
-      "key": "book.otbm.ask_for_the_different_goods",
-      "category": "books",
+      "key": "cpp.look.def",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Ask for the different goods you need.",
-      "pl": "I. dla the różny I. Potrzebujesz.",
-      "lang": "Ask for the different goods you need."
+      "en": "Def:",
+      "pl": "def:",
+      "lang": "Def:"
     },
     {
-      "key": "book.otbm.ask_muriel_to_learn_spells",
-      "category": "books",
+      "key": "cpp.look.empty_slot",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Ask Muriel to learn spells or to",
-      "pl": "I. Muriel do uczyć się, nauczyć się zaklęCentalna Agencja Wywiadowcza lub do",
-      "lang": "Ask Muriel to learn spells or to"
+      "en": "Empty Slot",
+      "pl": "puste I.",
+      "lang": "Empty Slot"
     },
     {
-      "key": "book.otbm.at_a_store_sell_spare",
-      "category": "books",
+      "key": "cpp.look.field",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "at a store. Sell spare food at the farm.",
-      "pl": "w jeden I.. Sprzedaj I. jedzenie, pożywienie w the I..",
-      "lang": "at a store. Sell spare food at the farm."
+      "en": " field",
+      "pl": "I.",
+      "lang": " field"
     },
     {
-      "key": "book.otbm.at_last_we_trapped_hugo",
-      "category": "books",
+      "key": "cpp.look.hit_pct",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "At last we trapped Hugo in the dungeon cellars!",
-      "pl": "W last my trapped Hugo w the loch, więzienie piwnica!",
-      "lang": "At last we trapped Hugo in the dungeon cellars!"
+      "en": "Hit%",
+      "pl": "Uderzyć%",
+      "lang": "Hit%"
     },
     {
-      "key": "book.otbm.at_last_we_will_face",
-      "category": "books",
+      "key": "cpp.look.hour_many",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "At last we will face Goshnar the evil one!",
-      "pl": "W last my will I. Goshnar the I. I.!",
-      "lang": "At last we will face Goshnar the evil one!"
+      "en": "{0} hours",
+      "pl": "{0} godziny",
+      "lang": "{0} hours"
     },
     {
-      "key": "book.otbm.at_least_a_leather_armor",
-      "category": "books",
+      "key": "cpp.look.hour_one",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "at least a leather armor and a helmet, a wooden shield, and a short sword.",
-      "pl": "w najmniej jeden skóra armor i jeden kask, jeden drewniany I., i jeden short miecz.",
-      "lang": "at least a leather armor and a helmet, a wooden shield, and a short sword."
+      "en": "{0} hour",
+      "pl": "{0} godzina",
+      "lang": "{0} hour"
     },
     {
-      "key": "book.otbm.at_the_bottom_of_those",
-      "category": "books",
+      "key": "cpp.look.key_fmt",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "at the bottom of those pages*",
-      "pl": "w the I. z those I.*",
-      "lang": "at the bottom of those pages*"
+      "en": "Key:{0}",
+      "pl": "I.:{0}",
+      "lang": "Key:{0}"
     },
     {
-      "key": "book.otbm.attempts_uman_consented_only_too",
-      "category": "books",
+      "key": "cpp.look.level_n",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "attempts. Uman consented only too readily, but Zathroth, the dark one of the twins, refused himself. Thus Fardos and Uman",
-      "pl": "I.. Uman I. tylko też, także ochoczo, skwapliwie, I. Zathroth, the I. I. z the I., refused się, siebie, sobie. Toteż, dlatego Fardos i Uman",
-      "lang": "attempts. Uman consented only too readily, but Zathroth, the dark one of the twins, refused himself. Thus Fardos and Uman"
+      "en": " level {0}",
+      "pl": "poziom {0}",
+      "lang": " level {0}"
     },
     {
-      "key": "book.otbm.attention_toad_is_spitting",
-      "category": "books",
+      "key": "cpp.look.minute_one",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "ATTENTION: TOAD IS SPITTING",
-      "pl": "UWAGA: ROPUCHA JEST SPITTING",
-      "lang": "ATTENTION: TOAD IS SPITTING"
+      "en": "{0} minute",
+      "pl": "{0} minuta",
+      "lang": "{0} minute"
     },
     {
-      "key": "book.otbm.authorised_personnel_only",
-      "category": "books",
+      "key": "cpp.look.of",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Authorised Personnel only!",
-      "pl": "Authorised Personel, obsługa tylko!",
-      "lang": "Authorised Personnel only!"
+      "en": " of ",
+      "pl": "z",
+      "lang": " of "
     },
     {
-      "key": "book.otbm.banor_i_praise_your_name",
-      "category": "books",
+      "key": "cpp.look.of_connector",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Banor I praise your name.",
-      "pl": "BaNier I I. twój nazwa.",
-      "lang": "Banor I praise your name."
+      "en": " of",
+      "pl": "z",
+      "lang": " of"
     },
     {
-      "key": "book.otbm.basement_souterrain_training_statues",
-      "category": "books",
+      "key": "cpp.look.on_date",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Basement (souterrain): Training Statues",
-      "pl": "Suterena (souterrain): Trening Posąg",
-      "lang": "Basement (souterrain): Training Statues"
+      "en": " on ",
+      "pl": "na",
+      "lang": " on "
     },
     {
-      "key": "book.otbm.basement_the_trading_room_training",
-      "category": "books",
+      "key": "cpp.look.or_higher",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Basement - The Trading Room, Training Center and Bank",
-      "pl": "Suterena - The Trading miejsce, Trening Cent i Bank",
-      "lang": "Basement - The Trading Room, Training Center and Bank"
+      "en": " or higher",
+      "pl": "lub I.",
+      "lang": " or higher"
     },
     {
-      "key": "book.otbm.basic_spells_for_apprentices",
-      "category": "books",
+      "key": "cpp.look.physical_plus",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Basic spells for apprentices.",
-      "pl": "Podstawowy zaklęCentalna Agencja Wywiadowcza dla terminator, praktykant.",
-      "lang": "Basic spells for apprentices."
+      "en": " physical + ",
+      "pl": "physical +",
+      "lang": " physical + "
     },
     {
-      "key": "book.otbm.battle_tactics_for_demona",
-      "category": "books",
+      "key": "cpp.look.players",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Battle tactics for Demona",
-      "pl": "I. taktyka dla Demona",
-      "lang": "Battle tactics for Demona"
+      "en": "players",
+      "pl": "gracze",
+      "lang": "players"
     },
     {
-      "key": "book.otbm.battle_tactics_for_demona_mazeforces",
-      "category": "books",
+      "key": "cpp.look.premium",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Battle tactics for Demona - Mazeforces",
-      "pl": "I. taktyka dla Demona - Mazeforces",
-      "lang": "Battle tactics for Demona - Mazeforces"
+      "en": "premium ",
+      "pl": "premium",
+      "lang": "premium "
     },
     {
-      "key": "book.otbm.battletactics_for_mages_i",
-      "category": "books",
+      "key": "cpp.look.protection",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Battletactics for Mages [I]",
-      "pl": "Battletactics dla Mages [I]",
-      "lang": "Battletactics for Mages [I]"
+      "en": "protection ",
+      "pl": "ochrona, osłona",
+      "lang": "protection "
     },
     {
-      "key": "book.otbm.battletactics_for_mages_ii",
-      "category": "books",
+      "key": "cpp.look.range",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Battletactics for Mages [II]",
-      "pl": "Battletactics dla Mages [II]",
-      "lang": "Battletactics for Mages [II]"
+      "en": "Range:",
+      "pl": "I.:",
+      "lang": "Range:"
     },
     {
-      "key": "book.otbm.battletactics_for_mages_iii",
-      "category": "books",
+      "key": "cpp.look.second_one",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Battletactics for Mages [III]",
-      "pl": "Battletactics dla Mages [III]",
-      "lang": "Battletactics for Mages [III]"
+      "en": "{0} second",
+      "pl": "{0} sekunda",
+      "lang": "{0} second"
     },
     {
-      "key": "book.otbm.battletactics_for_mages_iv",
-      "category": "books",
+      "key": "cpp.look.speed_label",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Battletactics for Mages [IV]",
-      "pl": "Battletactics dla Mages [IV]",
-      "lang": "Battletactics for Mages [IV]"
+      "en": "speed",
+      "pl": "I.",
+      "lang": "speed"
     },
     {
-      "key": "book.otbm.be_my_shield_let_me",
-      "category": "books",
+      "key": "cpp.look.tier_ruse",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Be my shield, let me be your sword.",
-      "pl": "Być mój I., let mnie, mi być twój miecz.",
-      "lang": "Be my shield, let me be your sword."
+      "en": "{0}% Ruse",
+      "pl": "{0}% Podstęp",
+      "lang": "{0}% Ruse"
     },
     {
-      "key": "book.otbm.be_with_me_in_the",
-      "category": "books",
+      "key": "cpp.look.unknown",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Be with me in the battle.",
-      "pl": "Być z mnie, mi w the I..",
-      "lang": "Be with me in the battle."
+      "en": "unknown",
+      "pl": "unkNiewn",
+      "lang": "unknown"
     },
     {
-      "key": "book.otbm.because_they_hardly_grew_in",
-      "category": "books",
+      "key": "cpp.look.vol",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "because they hardly grew in numbers.",
-      "pl": "ponieważ, bo oni prawie nie grew w numer.",
-      "lang": "because they hardly grew in numbers."
+      "en": "Vol:",
+      "pl": "Tom:",
+      "lang": "Vol:"
     },
     {
-      "key": "book.otbm.become_the_new_necromant_king",
-      "category": "books",
+      "key": "cpp.look.with",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "become the new necromant king, I can't give",
-      "pl": "stawać się the new necromant król, I can't give",
-      "lang": "become the new necromant king, I can't give"
+      "en": " with",
+      "pl": "z",
+      "lang": " with"
     },
     {
-      "key": "book.otbm.beer_wine_lemonade_and_water",
-      "category": "books",
+      "key": "cpp.look.wrote",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "beer, wine, lemonade and water",
-      "pl": "piwo, wino, lemoniada i I.",
-      "lang": "beer, wine, lemonade and water"
+      "en": " wrote",
+      "pl": "wrote",
+      "lang": " wrote"
     },
     {
-      "key": "book.otbm.beware_dangerous_monsters_down_here",
-      "category": "books",
+      "key": "cpp.look.you_read",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Beware! Dangerous monsters down here!",
-      "pl": "Strzec się! Groźny, niebezpieczny potwory I. tutaj, tu!",
-      "lang": "Beware! Dangerous monsters down here!"
+      "en": "You read: ",
+      "pl": "Ty czytać, przeczytać:",
+      "lang": "You read: "
     },
     {
-      "key": "book.otbm.beware_dangerous_monsters_down_here_8ae557cd",
-      "category": "books",
+      "key": "cpp.look.you_see",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Beware! Dangerous monsters down here!",
-      "pl": "Strzec się! Groźny, niebezpieczny potwory I. tutaj, tu!",
-      "lang": "Beware! Dangerous monsters down here!"
+      "en": "You see ",
+      "pl": "Ty I.",
+      "lang": "You see "
     },
     {
-      "key": "book.otbm.beware_of_drunken_dwarfs",
-      "category": "books",
+      "key": "cpp.player.corpse_and",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "BEWARE OF DRUNKEN DWARFS!",
-      "pl": "STRZEC SIĘ Z PIJACKI I.!",
-      "lang": "BEWARE OF DRUNKEN DWARFS!"
+      "en": " and {0}",
+      "pl": "i {0}",
+      "lang": " and {0}"
     },
     {
-      "key": "book.otbm.beware_of_polar_bears_and",
-      "category": "books",
+      "key": "cpp.player.corpse_and_others",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Beware of polar bears and winter wolves on Vega Island!",
-      "pl": "Strzec się z I. bears i I. wolves na Vega Wyspa!",
-      "lang": "Beware of polar bears and winter wolves on Vega Island!"
+      "en": " and others",
+      "pl": "i drugi, pozostały",
+      "lang": " and others"
     },
     {
-      "key": "book.otbm.beware_of_the_dragon_clawer",
-      "category": "books",
+      "key": "cpp.player.list_and",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Beware of the dragon Clawer!",
-      "pl": "Strzec się z the smok I.!",
-      "lang": "Beware of the dragon Clawer!"
+      "en": "and ",
+      "pl": "i",
+      "lang": "and "
     },
     {
-      "key": "book.otbm.beware_of_the_enemy_lava",
-      "category": "books",
+      "key": "cpp.player.list_delimiter",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "BEWARE OF THE ENEMY! Lava pumps ahead!",
-      "pl": "STRZEC SIĘ Z THE WRÓG! Lawa I. w przód!",
-      "lang": "BEWARE OF THE ENEMY! Lava pumps ahead!"
+      "en": ", ",
+      "pl": ",",
+      "lang": ", "
     },
     {
-      "key": "book.otbm.beware_of_the_enemy_lava_7d739cce",
-      "category": "books",
+      "key": "cpp.player.look.article_a",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "BEWARE OF THE ENEMY! Lava pumps ahead!",
-      "pl": "STRZEC SIĘ Z THE WRÓG! Lawa I. w przód!",
-      "lang": "BEWARE OF THE ENEMY! Lava pumps ahead!"
+      "en": "a",
+      "pl": "jeden",
+      "lang": "a"
     },
     {
-      "key": "book.otbm.bezils_and_nezils_stuff_an",
-      "category": "books",
+      "key": "cpp.player.look.article_an",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Bezils And Nezils Stuff An' Pawn Shop",
-      "pl": "Bezils I Nezils Stuff Jeden' I. I.",
-      "lang": "Bezils And Nezils Stuff An' Pawn Shop"
+      "en": "an",
+      "pl": "jeden",
+      "lang": "an"
     },
     {
-      "key": "book.otbm.bite_squeeze_shake_enjoy",
-      "category": "books",
+      "key": "cpp.player.look.guild_prefix_self",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Bite. Squeeze. Shake. Enjoy.",
-      "pl": "I.. I.. I.. Lubić.",
-      "lang": "Bite. Squeeze. Shake. Enjoy."
+      "en": "You are",
+      "pl": "Jesteś",
+      "lang": "You are"
     },
     {
-      "key": "book.otbm.blood_extraction_pool_and_anatomy",
-      "category": "books",
+      "key": "cpp.player.look.level_fmt",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Blood Extraction Pool and Anatomy Classes",
-      "pl": "I. Pochodzenie I. i Anatomia I.",
-      "lang": "Blood Extraction Pool and Anatomy Classes"
+      "en": "Level {0}",
+      "pl": "poziom {0}",
+      "lang": "Level {0}"
     },
     {
-      "key": "book.otbm.blood_herb_herba_budinia",
-      "category": "books",
+      "key": "cpp.player.look.self",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Blood Herb (herba budinia)",
-      "pl": "I. I. (herba budinia)",
-      "lang": "Blood Herb (herba budinia)"
+      "en": "yourself",
+      "pl": "siebie",
+      "lang": "yourself"
     },
     {
-      "key": "book.otbm.blood_tincture_for_an_incantation",
-      "category": "books",
+      "key": "cpp.player.look.verb_vip",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "blood tincture for an incantation",
-      "pl": "I. tincture dla jeden incantation",
-      "lang": "blood tincture for an incantation"
+      "en": "{0} VIP.",
+      "pl": "{0} BARDZO WAŻNA OSOBA.",
+      "lang": "{0} VIP."
     },
     {
-      "key": "book.otbm.bloodthirsty_creatures_screeching_an_unholy",
-      "category": "books",
+      "key": "cpp.protocol.level_label",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Bloodthirsty creatures screeching an unholy tune",
-      "pl": "Krwiożerczy stwory I. jeden unholy tune",
-      "lang": "Bloodthirsty creatures screeching an unholy tune"
+      "en": "Level",
+      "pl": "Poziom",
+      "lang": "Level"
     },
     {
-      "key": "book.otbm.bow_and_arrows_crossbow_and",
-      "category": "books",
+      "key": "cpp.protocol.married_to_label",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "bow and arrows, crossbow and bolts",
-      "pl": "bow i strzała, strzałka, crossbow i I.",
-      "lang": "bow and arrows, crossbow and bolts"
+      "en": "Married to",
+      "pl": "Żonaty, zamężna do",
+      "lang": "Married to"
     },
     {
-      "key": "book.otbm.bows_crossbows_and_ammunition",
-      "category": "books",
+      "key": "cpp.protocol.outfit_label",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Bows, Crossbows, and Ammunition",
-      "pl": "Bows, Crossbows, i Amunicja",
-      "lang": "Bows, Crossbows, and Ammunition"
+      "en": "Outfit",
+      "pl": "Strój",
+      "lang": "Outfit"
     },
     {
-      "key": "book.otbm.brain_heater_machine_facility_students",
-      "category": "books",
+      "key": "cpp.protocol.support_outfit_gamemaster",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Brain Heater Machine Facility. Students, please note:",
-      "pl": "Mózg Grzejnik I. Zdolność, łatwość. Student, Proszę Niete:",
-      "lang": "Brain Heater Machine Facility. Students, please note:"
+      "en": "Gamemaster",
+      "pl": "Mistrz Gry",
+      "lang": "Gamemaster"
     },
     {
-      "key": "book.otbm.bread_cheese_meat_and_ham",
-      "category": "books",
+      "key": "cpp.protocol.tentugly_name",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "bread, cheese, meat and ham",
-      "pl": "chleb, ser, mięso i szynka",
-      "lang": "bread, cheese, meat and ham"
+      "en": "Tentugly",
+      "pl": "Delikatnie",
+      "lang": "Tentugly"
     },
     {
-      "key": "book.otbm.brothers_and_sisters_but_the",
-      "category": "books",
+      "key": "cpp.protocol.unknown_label",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "brothers and sisters, but the dreams were",
-      "pl": "brat i I., I. the I. były",
-      "lang": "brothers and sisters, but the dreams were"
+      "en": "unknown",
+      "pl": "unkNiewn",
+      "lang": "unknown"
     },
     {
-      "key": "book.otbm.but_it_must_have_been",
-      "category": "books",
+      "key": "cpp.protocol.vocation_all",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "But it must have been centuries ago.",
-      "pl": "I. to musi masz był wiek a. temu.",
-      "lang": "But it must have been centuries ago."
+      "en": "(all)",
+      "pl": "(wszystkie)",
+      "lang": "(all)"
     },
     {
-      "key": "book.otbm.but_now_after_all_what",
-      "category": "books",
+      "key": "cpp.protocol.vocation_label",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "But now, after all what I did allready to",
-      "pl": "I. Niew, after wszystkie I. I zrobił allready do",
-      "lang": "But now, after all what I did allready to"
+      "en": "Vocation",
+      "pl": "Profesja",
+      "lang": "Vocation"
     },
     {
-      "key": "book.otbm.buy_quality_weapons_at_obis",
-      "category": "books",
+      "key": "cpp.returnvalue.no_error",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Buy quality weapons at Obi's!",
-      "pl": "Kup jakość broń w Obi's!",
-      "lang": "Buy quality weapons at Obi's!"
+      "en": "No error.",
+      "pl": "Nie błąd.",
+      "lang": "No error."
     },
     {
-      "key": "book.otbm.buy_ropes_at_al_dees",
-      "category": "books",
+      "key": "cpp.skill.level",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Buy ropes at Al Dee's shop.",
-      "pl": "Kup I. w Al Dee's I..",
-      "lang": "Buy ropes at Al Dee's shop."
+      "en": "level",
+      "pl": "poziom",
+      "lang": "level"
     },
     {
-      "key": "book.otbm.by_a_victim_of_a",
-      "category": "books",
+      "key": "cpp.skill.life_leech",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "by a victim of a bugged chameleon spell.",
-      "pl": "by jeden ofiara z jeden bugged kameleon zaklęcie.",
-      "lang": "by a victim of a bugged chameleon spell."
+      "en": "life leech",
+      "pl": "I. pijawka",
+      "lang": "life leech"
     },
     {
-      "key": "book.otbm.by_an_unknown_necromancer",
-      "category": "books",
+      "key": "cpp.skill.mana_leech",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "by an unknown necromancer.",
-      "pl": "by jeden nieznany necromancer.",
-      "lang": "by an unknown necromancer."
+      "en": "mana leech",
+      "pl": "mana pijawka",
+      "lang": "mana leech"
     },
     {
-      "key": "book.otbm.by_jonea_ancient_council_of",
-      "category": "books",
+      "key": "cpp.skill.unknown",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "By Jonea, ancient council of the warlocks",
-      "pl": "By Jonea, starożytny council z the warlocks",
-      "lang": "By Jonea, ancient council of the warlocks"
+      "en": "unknown",
+      "pl": "unkNiewn",
+      "lang": "unknown"
     },
     {
-      "key": "book.otbm.caliph_family_burial_vault",
-      "category": "books",
+      "key": "cpp.title.name_17",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Caliph family burial vault",
-      "pl": "Caliph I. pochówek, pogrzeb I.",
-      "lang": "Caliph family burial vault"
+      "en": "Demondoom",
+      "pl": "Demoniczna zagłada",
+      "lang": "Demondoom"
     },
     {
-      "key": "book.otbm.caliph_family_memorial_crypt",
-      "category": "books",
+      "key": "cpp.title.name_18",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Caliph family memorial crypt",
-      "pl": "Caliph I. I. crypt",
-      "lang": "Caliph family memorial crypt"
+      "en": "Drakenbane",
+      "pl": "Smocza zguba",
+      "lang": "Drakenbane"
     },
     {
-      "key": "book.otbm.captain_osgrain_scourge_of_the",
-      "category": "books",
+      "key": "cpp.title.name_19",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Captain Osgrain, scourge of the orcs, liberator of the coasts",
-      "pl": "I. Osgrain, plaga, bicz Boży z the orcs, liberator z the brzeg, wybrzeże",
-      "lang": "Captain Osgrain, scourge of the orcs, liberator of the coasts"
+      "en": "Silencer",
+      "pl": "Tłumik",
+      "lang": "Silencer"
     },
     {
-      "key": "book.otbm.cast_by_rootos_sprout",
-      "category": "books",
+      "key": "cpp.title.name_20",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "- cast by Rootos Sprout -",
-      "pl": "- cast by Rootos I. -",
-      "lang": "- cast by Rootos Sprout -"
+      "en": "Exalted",
+      "pl": "Wysoki",
+      "lang": "Exalted"
     },
     {
-      "key": "book.otbm.castle_of_the_white_dragon",
-      "category": "books",
+      "key": "cpp.title.name_22",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Castle of the White Dragon",
-      "pl": "Zamek z the White Smok",
-      "lang": "Castle of the White Dragon"
+      "en": "Big Boss",
+      "pl": "Duży, wielki Boss",
+      "lang": "Big Boss"
     },
     {
-      "key": "book.otbm.certain_edges_are_not_edible",
-      "category": "books",
+      "key": "cpp.title.name_34",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "* Certain edges are not edible and don't count for the success.",
-      "pl": "* Pewny I. są Niet jadalny i don't liczba dla the sukces.",
-      "lang": "* Certain edges are not edible and don't count for the success."
+      "en": "Bipedantic",
+      "pl": "Dwunożny",
+      "lang": "Bipedantic"
     },
     {
-      "key": "book.otbm.cheese_5_wheels_who_needs",
-      "category": "books",
+      "key": "cpp.title.name_44",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Cheese - 5 wheels       *Who needs so much cheese...? -Belethor",
-      "pl": "Ser - 5 I. *Kto potrzebować I. dużo, bardzo ser...? -Belethor",
-      "lang": "Cheese - 5 wheels       *Who needs so much cheese...? -Belethor"
+      "en": "Handyman",
+      "pl": "Złota rączka",
+      "lang": "Handyman"
     },
     {
-      "key": "book.otbm.choose_one_reward_wisely",
-      "category": "books",
+      "key": "cpp.title.name_44_female",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Choose one reward, wisely!",
-      "pl": "Wybierać I. nagroda, I.!",
-      "lang": "Choose one reward, wisely!"
+      "en": "Handywoman",
+      "pl": "Złota rączka",
+      "lang": "Handywoman"
     },
     {
-      "key": "book.otbm.circular_canon_of_eternal_darkness",
-      "category": "books",
+      "key": "cpp.title.name_45",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Circular canon of Eternal Darkness",
-      "pl": "I. caNien z Wieczny Ciemność",
-      "lang": "Circular canon of Eternal Darkness"
+      "en": "Huntsman",
+      "pl": "Myśliwy",
+      "lang": "Huntsman"
     },
     {
-      "key": "book.otbm.circular_canon_of_eternal_darkness_ff1dff20",
-      "category": "books",
+      "key": "cpp.title.name_45_female",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Circular canon of Eternal Darkness",
-      "pl": "I. caNien z Wieczny Ciemność",
-      "lang": "Circular canon of Eternal Darkness"
+      "en": "Huntress",
+      "pl": "Łowczyni",
+      "lang": "Huntress"
     },
     {
-      "key": "book.otbm.citizen_depot_downstairs",
-      "category": "books",
+      "key": "cpp.title.name_47",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Citizen Depot downstairs.",
-      "pl": "Obywatel Skład I..",
-      "lang": "Citizen Depot downstairs."
+      "en": "Manhunter",
+      "pl": "Pościg, obława",
+      "lang": "Manhunter"
     },
     {
-      "key": "book.otbm.city_cellar_beware_of_the",
-      "category": "books",
+      "key": "cpp.title.name_49",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "City Cellar - Beware of the spiders",
-      "pl": "Miasto Piwnica - Strzec się z the pająk",
-      "lang": "City Cellar - Beware of the spiders"
+      "en": "Ooze Blues",
+      "pl": "I. I.",
+      "lang": "Ooze Blues"
     },
     {
-      "key": "book.otbm.closed_for_archeological_survey",
-      "category": "books",
+      "key": "cpp.title.name_50",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "(closed for archeological survey)",
-      "pl": "(Zamknijd dla archeological survey)",
-      "lang": "(closed for archeological survey)"
+      "en": "Sea Bane",
+      "pl": "Morze Bane",
+      "lang": "Sea Bane"
     },
     {
-      "key": "book.otbm.codex_of_ultimate_boredom",
-      "category": "books",
+      "key": "cpp.title.name_52",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Codex of ultimate boredom.",
-      "pl": "Codex z ostateczny nuda.",
-      "lang": "Codex of ultimate boredom."
+      "en": "Tumbler",
+      "pl": "Szklanka",
+      "lang": "Tumbler"
     },
     {
-      "key": "book.otbm.contact_berenice_in_the_local",
-      "category": "books",
+      "key": "cpp.title.name_53",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Contact Berenice in the local Explorer Society outpost!",
-      "pl": "I. Berenice w the lokalny Badacz, eksplorator Społeczeństwo placówka!",
-      "lang": "Contact Berenice in the local Explorer Society outpost!"
+      "en": "Weedkiller",
+      "pl": "Środek chwastobójczy",
+      "lang": "Weedkiller"
     },
     {
-      "key": "book.otbm.contact_henricus_in_the_inquisiton",
-      "category": "books",
+      "key": "cpp.title.name_81",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Contact Henricus in the Inquisiton quarters beneath the Thaian jail!",
-      "pl": "I. Henricus w the Inquisiton quarters pod the Thaian jail!",
-      "lang": "Contact Henricus in the Inquisiton quarters beneath the Thaian jail!"
+      "en": "Aeternal",
+      "pl": "Wieczny",
+      "lang": "Aeternal"
     },
     {
-      "key": "book.otbm.contact_lady_eleonore_in_the",
-      "category": "books",
+      "key": "cpp.title.name_85",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Contact Lady Eleonore in the Silverhand Manor!",
-      "pl": "I. Pani EleoNiere w the Silverhand MaNier!",
-      "lang": "Contact Lady Eleonore in the Silverhand Manor!"
+      "en": "Beastly",
+      "pl": "Paskudny",
+      "lang": "Beastly"
     },
     {
-      "key": "book.otbm.contact_me_in_the_trade",
-      "category": "books",
+      "key": "cpp.title.name_91",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Contact me in the Trade Quarter if you want to stop being helpless - and do something!",
-      "pl": "I. mnie, mi w the Handel Kwarta if ty I. do stop istota bezradny - i robić coś!",
-      "lang": "Contact me in the Trade Quarter if you want to stop being helpless - and do something!"
+      "en": "Planegazer",
+      "pl": "Planetolog",
+      "lang": "Planegazer"
     },
     {
-      "key": "book.otbm.contact_me_in_the_trade_09ee01c7",
-      "category": "books",
+      "key": "cpp.title.name_93",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Contact me in the Trade Quarter if you want to stop being helpless - and do something!",
-      "pl": "I. mnie, mi w the Handel Kwarta if ty I. do stop istota bezradny - i robić coś!",
-      "lang": "Contact me in the Trade Quarter if you want to stop being helpless - and do something!"
+      "en": "Truly Boss",
+      "pl": "Naprawdę Boss",
+      "lang": "Truly Boss"
     },
     {
-      "key": "book.otbm.coordinates_for_the_area_around",
-      "category": "books",
+      "key": "cpp.vocation.desc_id_0",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Coordinates for the area around Dianscher",
-      "pl": "Coordinates dla the obszar, region around Dianscher",
-      "lang": "Coordinates for the area around Dianscher"
+      "en": "none",
+      "pl": "Niene",
+      "lang": "none"
     },
     {
-      "key": "book.otbm.courage_and_responsibility_after_his",
-      "category": "books",
+      "key": "cpp.vocation.desc_id_1",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "courage and responsibility. After his image and with parts of his body the Gods created him attendants, Humans.",
-      "pl": "courage i odpowiedzialność. After jego obraz i z parts z jego ciało the Gods created him I., I..",
-      "lang": "courage and responsibility. After his image and with parts of his body the Gods created him attendants, Humans."
+      "en": "a sorcerer",
+      "pl": "jeden sorcerer",
+      "lang": "a sorcerer"
     },
     {
-      "key": "book.otbm.crates_from_23_tools_and",
-      "category": "books",
+      "key": "cpp.vocation.desc_id_2",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Crates from #23: tools and utilities.",
-      "pl": "Crates z #23: narzędzie i użyteczność.",
-      "lang": "Crates from #23: tools and utilities."
+      "en": "a druid",
+      "pl": "jeden druid",
+      "lang": "a druid"
     },
     {
-      "key": "book.otbm.crates_from_87_supplies",
-      "category": "books",
+      "key": "cpp.vocation.desc_id_3",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Crates from #87: Supplies",
-      "pl": "Crates z #87: I.",
-      "lang": "Crates from #87: Supplies"
+      "en": "a paladin",
+      "pl": "jeden paladin",
+      "lang": "a paladin"
     },
     {
-      "key": "book.otbm.crunors_finest_fruit_and_vegetable",
-      "category": "books",
+      "key": "cpp.vocation.desc_id_4",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Crunor's Finest - Fruit and Vegetable Shop",
-      "pl": "CruNier's Finest - I. i I. I.",
-      "lang": "Crunor's Finest - Fruit and Vegetable Shop"
+      "en": "a knight",
+      "pl": "jeden I.",
+      "lang": "a knight"
     },
     {
-      "key": "book.otbm.crunors_finest_fruit_and_vegetable_1ed839d6",
-      "category": "books",
+      "key": "cpp.vocation.id_0",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Crunor's Finest - Fruit and Vegetable Shop",
-      "pl": "CruNier's Finest - I. i I. I.",
-      "lang": "Crunor's Finest - Fruit and Vegetable Shop"
+      "en": "None",
+      "pl": "Niene",
+      "lang": "None"
     },
     {
-      "key": "book.otbm.currently_no_wanted_criminals",
-      "category": "books",
+      "key": "cpp.vocation.id_1",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Currently no wanted criminals",
-      "pl": "Obecnie Nie I. criminals",
-      "lang": "Currently no wanted criminals"
+      "en": "Sorcerer",
+      "pl": "Czarnoksiężnik",
+      "lang": "Sorcerer"
     },
     {
-      "key": "book.otbm.damnation_to_all_who_dare",
-      "category": "books",
+      "key": "cpp.vocation.id_3",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Damnation to all who dare to enter!",
-      "pl": "Potępienie do wszystkie kto dare do I.!",
-      "lang": "Damnation to all who dare to enter!"
+      "en": "Paladin",
+      "pl": "Paladyn",
+      "lang": "Paladin"
     },
     {
-      "key": "book.otbm.dark_are_the_mysteries_surrounded",
-      "category": "books",
+      "key": "cpp.vocation.id_4",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Dark are the mysteries surrounded by doomed cries",
-      "pl": "I. są the I. otaczać, otaczać by skazany na zgubę, zgubiony cries",
-      "lang": "Dark are the mysteries surrounded by doomed cries"
+      "en": "Knight",
+      "pl": "Rycerz",
+      "lang": "Knight"
     },
     {
-      "key": "book.otbm.daughter_of_earth_and_fire",
-      "category": "books",
+      "key": "cpp.weapon.ammunition",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Daughter of earth and fire",
-      "pl": "Córka z earth i fire",
-      "lang": "Daughter of earth and fire"
+      "en": "ammunition",
+      "pl": "amunicja",
+      "lang": "ammunition"
     },
     {
-      "key": "book.otbm.daughter_of_earth_and_fire_e0cf4dcd",
-      "category": "books",
+      "key": "cpp.weapon.axe",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Daughter of earth and fire",
-      "pl": "Córka z earth i fire",
-      "lang": "Daughter of earth and fire"
+      "en": "axe",
+      "pl": "Topór",
+      "lang": "axe"
     },
     {
-      "key": "book.otbm.death_an_improved_form_of",
-      "category": "books",
+      "key": "cpp.weapon.club",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Death - an Improved Form of Life?",
-      "pl": "I. - jeden Improved I. z I.?",
-      "lang": "Death - an Improved Form of Life?"
+      "en": "club",
+      "pl": "Obuch",
+      "lang": "club"
     },
     {
-      "key": "book.otbm.dedicated_to_all_women_who",
-      "category": "books",
+      "key": "cpp.weapon.distance",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Dedicated to all women who bravely and cleverly defeated the",
-      "pl": "Oddany, ofiarny do wszystkie women kto I. i inteligentny, zdolny I. the",
-      "lang": "Dedicated to all women who bravely and cleverly defeated the"
+      "en": "distance",
+      "pl": "Dystans",
+      "lang": "distance"
     },
     {
-      "key": "book.otbm.describe_the_demonic_rulers",
-      "category": "books",
+      "key": "cpp.weapon.missile",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "describe the demonic rulers",
-      "pl": "opisywać the demoniczny, złowrogi władca",
-      "lang": "describe the demonic rulers"
+      "en": "missile",
+      "pl": "pocisk",
+      "lang": "missile"
     },
     {
-      "key": "book.otbm.destination_islands_senja_folda_vega",
-      "category": "books",
+      "key": "cpp.weapon.sword",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Destination Islands: Senja, Folda, Vega",
-      "pl": "Miejsce przeznaczenia Wyspa: Senja, Folda, Vega",
-      "lang": "Destination Islands: Senja, Folda, Vega"
+      "en": "sword",
+      "pl": "Miecz",
+      "lang": "sword"
     },
     {
-      "key": "book.otbm.different_to_the_clear_working",
-      "category": "books",
+      "key": "cpp.weapon.wand",
+      "category": "cpp",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "different to the clear working of the Fardos, because mysteries and secrets were the aspects of his being. Uman and Zathroth",
-      "pl": "różny do the clear I. z the Fardos, ponieważ, bo I. i I. były the aspekt z jego istota. Uman i Zathroth",
-      "lang": "different to the clear working of the Fardos, because mysteries and secrets were the aspects of his being. Uman and Zathroth"
+      "en": "wand",
+      "pl": "różdżka",
+      "lang": "wand"
     },
     {
-      "key": "book.otbm.dixis_armors_and_shields",
-      "category": "books",
+      "key": "item.10096.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Dixi's Armors and Shields",
-      "pl": "Dixi's Armors i I.",
-      "lang": "Dixi's Armors and Shields"
+      "en": "stacke",
+      "pl": "stos",
+      "lang": "stacke"
     },
     {
-      "key": "book.otbm.dixis_armors_and_shields_cf49f561",
-      "category": "books",
+      "key": "item.10180.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Dixi's Armors and Shields",
-      "pl": "Dixi's Armors i I.",
-      "lang": "Dixi's Armors and Shields"
+      "en": "groud",
+      "pl": "grunt",
+      "lang": "groud"
     },
     {
-      "key": "book.otbm.do_not_consume_unknown_liquids",
-      "category": "books",
+      "key": "item.10389.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Do not consume unknown liquids.",
-      "pl": "Robić Niet konsumować nieznany I..",
-      "lang": "Do not consume unknown liquids."
+      "en": "sai",
+      "pl": "Sai",
+      "lang": "sai"
     },
     {
-      "key": "book.otbm.do_not_disturb_bearded_people",
-      "category": "books",
+      "key": "item.11317.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "(Do NOT disturb bearded people)",
-      "pl": "(Robić NieT przeszkadzać brodaty, z brodą I.)",
-      "lang": "(Do NOT disturb bearded people)"
+      "en": "blob",
+      "pl": "kropelka",
+      "lang": "blob"
     },
     {
-      "key": "book.otbm.do_not_drink_green_or",
-      "category": "books",
+      "key": "item.11461.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Do not drink green or yellow liquids!",
-      "pl": "Robić Niet I. green lub I. I.!",
-      "lang": "Do not drink green or yellow liquids!"
+      "en": "broccoli",
+      "pl": "brokuł",
+      "lang": "broccoli"
     },
     {
-      "key": "book.otbm.do_not_enter_without_permission",
-      "category": "books",
+      "key": "item.12575.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "do not enter without permission",
-      "pl": "robić Niet I. bez zezwolenie",
-      "lang": "do not enter without permission"
+      "en": "Whinona",
+      "pl": "WhiNiena",
+      "lang": "Whinona"
     },
     {
-      "key": "book.otbm.do_nott_wentt_down_or",
-      "category": "books",
+      "key": "item.12578.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Do nott wentt down or restt in peace",
-      "pl": "Robić Niett wentt I. lub restt w peace",
-      "lang": "Do nott wentt down or restt in peace"
+      "en": "Evilina",
+      "pl": "Ewilina",
+      "lang": "Evilina"
     },
     {
-      "key": "book.otbm.dont_feed_the_male_scum",
-      "category": "books",
+      "key": "item.12579.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Don't feed the male scum!",
-      "pl": "Don't I. the I. powłoka brudu!",
-      "lang": "Don't feed the male scum!"
+      "en": "Whinona",
+      "pl": "WhiNiena",
+      "lang": "Whinona"
     },
     {
-      "key": "book.otbm.dont_forget_to_learn_our",
-      "category": "books",
+      "key": "item.12582.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Don't forget to learn our spells.",
-      "pl": "Don't forget do uczyć się, nauczyć się nasz zaklęCentalna Agencja Wywiadowcza.",
-      "lang": "Don't forget to learn our spells."
+      "en": "Evilina",
+      "pl": "Ewilina",
+      "lang": "Evilina"
     },
     {
-      "key": "book.otbm.dont_shoot_or_throw_at",
-      "category": "books",
+      "key": "item.129.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Don't shoot or throw at the performers",
-      "pl": "Don't I. lub I. w the wykonawca",
-      "lang": "Don't shoot or throw at the performers"
+      "en": "contract",
+      "pl": "umowa",
+      "lang": "contract"
     },
     {
-      "key": "book.otbm.dont_steal_from_the_game",
-      "category": "books",
+      "key": "item.27511.desc",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Don't steal from the game rooms!",
-      "pl": "Don't kraść z the I. miejsces!",
-      "lang": "Don't steal from the game rooms!"
+      "en": "It's black",
+      "pl": "To I.",
+      "lang": "It's black"
     },
     {
-      "key": "book.otbm.dont_steal_from_the_game_40dbdc0e",
-      "category": "books",
+      "key": "item.30215.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Don't steal from the game rooms!",
-      "pl": "Don't kraść z the I. miejsces!",
-      "lang": "Don't steal from the game rooms!"
+      "en": "ice",
+      "pl": "lód",
+      "lang": "ice"
     },
     {
-      "key": "book.otbm.dragon_the_immortal_species",
-      "category": "books",
+      "key": "item.30218.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Dragon - The immortal species",
-      "pl": "Smok - The nieśmiertelny gatunek",
-      "lang": "Dragon - The immortal species"
+      "en": "ice",
+      "pl": "lód",
+      "lang": "ice"
     },
     {
-      "key": "book.otbm.dragons_and_other_monsters_yet",
-      "category": "books",
+      "key": "item.30273.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "dragons and other monsters yet.",
-      "pl": "smok i drugi, pozostały potwory jeszcze.",
-      "lang": "dragons and other monsters yet."
+      "en": "ice",
+      "pl": "lód",
+      "lang": "ice"
     },
     {
-      "key": "book.otbm.dren_lo_explorer_hero_and",
-      "category": "books",
+      "key": "item.3274.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Dren Lo, explorer, hero and general",
-      "pl": "Dren Lo, badacz, eksplorator, bohater i general",
-      "lang": "Dren Lo, explorer, hero and general"
+      "en": "axe",
+      "pl": "Topór",
+      "lang": "axe"
     },
     {
-      "key": "book.otbm.dress_for_success_tailor_shop",
-      "category": "books",
+      "key": "item.7107.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Dress for Success - Tailor Shop",
-      "pl": "I. dla sukces - I. I.",
-      "lang": "Dress for Success - Tailor Shop"
+      "en": "ice",
+      "pl": "lód",
+      "lang": "ice"
     },
     {
-      "key": "book.otbm.dress_for_success_tailor_shop_7cbb538e",
-      "category": "books",
+      "key": "item.7740.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Dress for Success - Tailor Shop",
-      "pl": "I. dla sukces - I. I.",
-      "lang": "Dress for Success - Tailor Shop"
+      "en": "ice",
+      "pl": "lód",
+      "lang": "ice"
     },
     {
-      "key": "book.otbm.dwelling_of_the_forgotten",
-      "category": "books",
+      "key": "item.800.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Dwelling Of The Forgotten",
-      "pl": "Domostwo Z The Forgotten",
-      "lang": "Dwelling Of The Forgotten"
+      "en": "ice",
+      "pl": "lód",
+      "lang": "ice"
     },
     {
-      "key": "book.otbm.eastern_city_entrance_use_door",
-      "category": "books",
+      "key": "lib.player.modal_button_close",
+      "category": "libs",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Eastern city entrance - use door. Central production site - use ladder.",
-      "pl": "Wschodni miasto entrance - use drzwi. I. produkcja I. - use drabina.",
-      "lang": "Eastern city entrance - use door. Central production site - use ladder."
+      "en": "Close",
+      "pl": "Zamknij",
+      "lang": "Close"
     },
     {
-      "key": "book.otbm.elemental_shrines_and_training_grounds",
-      "category": "books",
+      "key": "lib.player.modal_button_no",
+      "category": "libs",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Elemental Shrines and Training Grounds",
-      "pl": "Żywiołowy, niepohamowany Święte miejsce i Trening Ziemia",
-      "lang": "Elemental Shrines and Training Grounds"
+      "en": "No",
+      "pl": "Nie",
+      "lang": "No"
     },
     {
-      "key": "book.otbm.elements_of_tibia_and_their",
-      "category": "books",
+      "key": "lib.player.modal_button_yes",
+      "category": "libs",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Elements of Tibia and their alchemical order",
-      "pl": "Element, składnik z Tibia i ich alchemical order",
-      "lang": "Elements of Tibia and their alchemical order"
+      "en": "Yes",
+      "pl": "Tak",
+      "lang": "Yes"
     },
     {
-      "key": "book.otbm.embalming_fluid_chants_and_holy",
-      "category": "books",
+      "key": "module.init.text4",
+      "category": "modules",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Embalming fluid, chants and holy preparations required to guide the spirit to the next world and preserve his body in the intermediate world, by Rames-Seni  Osi-Atun-Ra-Heton, enlightened embalmer and humble servant of the Lord of the Seven Sandy Seas, may his spirit rule in the afterlife forever.",
-      "pl": "Balsamować I., I. i święty przygotowanie wymagany do I. the I. do the next I. i I. jego ciało w the pośredni, średni I., by I.-Seni Osi-Atun-Akademia Królewska-Heton, oświecać balsamować i skromny, pokorny I. z the Lord z the Siedem Piaskowy Morze, a. móc jego I. I. w the afterlife forever.",
-      "lang": "Embalming fluid, chants and holy preparations required to guide the spirit to the next world and preserve his body in the intermediate world, by Rames-Seni  Osi-Atun-Ra-Heton, enlightened embalmer and humble servant of the Lord of the Seven Sandy Seas, may his spirit rule in the afterlife forever."
+      "en": "\tVersion = ",
+      "pl": "Wersja =",
+      "lang": "\tVersion = "
     },
     {
-      "key": "book.otbm.enter_at_your_own_risk",
-      "category": "books",
+      "key": "module.daily_reward.text5",
+      "category": "modules",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Enter at your own risk and not unprepared!",
-      "pl": "I. w twój I. I. i Niet unprepared!",
-      "lang": "Enter at your own risk and not unprepared!"
+      "en": "\tToDo = ",
+      "pl": "Do zrobienia =",
+      "lang": "\tToDo = "
     },
     {
-      "key": "book.otbm.enter_the_ancient_blue_flame",
-      "category": "books",
+      "key": "module.hireling_module.text2",
+      "category": "modules",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Enter the ancient blue flame of citizenship",
-      "pl": "I. the starożytny I. płomień z obywatelstwo",
-      "lang": "Enter the ancient blue flame of citizenship"
+      "en": "\tVersion = ",
+      "pl": "Wersja =",
+      "lang": "\tVersion = "
     },
     {
-      "key": "book.otbm.enter_the_ancient_blue_flame_7ef32bcd",
-      "category": "books",
+      "key": "module.hireling_module.text4",
+      "category": "modules",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Enter the ancient blue flame of citizenship",
-      "pl": "I. the starożytny I. płomień z obywatelstwo",
-      "lang": "Enter the ancient blue flame of citizenship"
+      "en": "\tDate =",
+      "pl": "Data =",
+      "lang": "\tDate ="
     },
     {
-      "key": "book.otbm.enter_the_teleporter_flame_to",
-      "category": "books",
+      "key": "monster.old_wasp.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Enter the teleporter flame to become a citizen of Roshamuul.",
-      "pl": "I. the teleportowaće... płomień do stawać się jeden obywatel z Roshamuul.",
-      "lang": "Enter the teleporter flame to become a citizen of Roshamuul."
+      "en": "Bssssss",
+      "pl": "Bsssss",
+      "lang": "Bssssss"
     },
     {
-      "key": "book.otbm.enter_the_teleporter_to_become",
-      "category": "books",
+      "key": "monster.old_pig.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Enter the teleporter to become an inhabitant of Svargrond",
-      "pl": "I. the teleportowaće... do stawać się jeden mieszkaniec z Svargrond",
-      "lang": "Enter the teleporter to become an inhabitant of Svargrond"
+      "en": "Oink oink",
+      "pl": "Chrum chrum",
+      "lang": "Oink oink"
     },
     {
-      "key": "book.otbm.enter_the_teleporter_to_become_4d25945b",
-      "category": "books",
+      "key": "monster.old_pig.voice_2",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Enter the teleporter to become a citizen of Thais!",
-      "pl": "I. the teleportowaće... do stawać się jeden obywatel z Thais!",
-      "lang": "Enter the teleporter to become a citizen of Thais!"
+      "en": "Oink",
+      "pl": "Chrum",
+      "lang": "Oink"
     },
     {
-      "key": "book.otbm.enter_the_teleporter_to_become_9a40a4e1",
-      "category": "books",
+      "key": "monster.old_wolf.voice_2",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Enter the teleporter to become a citizen",
-      "pl": "I. the teleportowaće... do stawać się jeden obywatel",
-      "lang": "Enter the teleporter to become a citizen"
+      "en": "Grrrrrrr",
+      "pl": "Wrrrrrr",
+      "lang": "Grrrrrrr"
     },
     {
-      "key": "book.otbm.enter_the_teleporter_to_become_cd55bbb9",
-      "category": "books",
+      "key": "monster.old_bear.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Enter the teleporter to become a citizen of Liberty Bay!",
-      "pl": "I. the teleportowaće... do stawać się jeden obywatel z Liberty I.!",
-      "lang": "Enter the teleporter to become a citizen of Liberty Bay!"
+      "en": "Grrrr",
+      "pl": "Wrrrr",
+      "lang": "Grrrr"
     },
     {
-      "key": "book.otbm.enter_the_teleporter_to_become_d9c3cee5",
-      "category": "books",
+      "key": "monster.old_bear.voice_2",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Enter the teleporter to become a citizen of Carlin!",
-      "pl": "I. the teleportowaće... do stawać się jeden obywatel z Carlin!",
-      "lang": "Enter the teleporter to become a citizen of Carlin!"
+      "en": "Groar",
+      "pl": "ryk",
+      "lang": "Groar"
     },
     {
-      "key": "book.otbm.enter_the_teleporter_to_become_da2a4eed",
-      "category": "books",
+      "key": "monster.weeper.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Enter the teleporter to become a citizen of Port Hope!",
-      "pl": "I. the teleportowaće... do stawać się jeden obywatel z I. I.!",
-      "lang": "Enter the teleporter to become a citizen of Port Hope!"
+      "en": "Moooaaan",
+      "pl": "Muuuuuu",
+      "lang": "Moooaaan"
     },
     {
-      "key": "book.otbm.enter_the_teleporter_to_become_f3bad5cd",
-      "category": "books",
+      "key": "monster.eternal_guardian.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Enter the teleporter to become a citizen of Darashia!",
-      "pl": "I. the teleportowaće... do stawać się jeden obywatel z Darashia!",
-      "lang": "Enter the teleporter to become a citizen of Darashia!"
+      "en": "Zzrrkrrch!",
+      "pl": "Zrrrkrrch!",
+      "lang": "Zzrrkrrch!"
     },
     {
-      "key": "book.otbm.enter_the_teleporter_to_become_f98dbe2c",
-      "category": "books",
+      "key": "monster.stone_devourer.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Enter the teleporter to become a citizen of Edron!",
-      "pl": "I. the teleportowaće... do stawać się jeden obywatel z Edron!",
-      "lang": "Enter the teleporter to become a citizen of Edron!"
+      "en": "Rumble!",
+      "pl": "I.!",
+      "lang": "Rumble!"
     },
     {
-      "key": "book.otbm.equipment_pick_tree_or_bricklayers",
-      "category": "books",
+      "key": "monster.war_golem.voice_10",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Equipment: Pick, tree or bricklayers kit",
-      "pl": "Wyposażenie, ekwipunek, sprzęt: I., drzewo lub murarz zestaw",
-      "lang": "Equipment: Pick, tree or bricklayers kit"
+      "en": "Eliminated",
+      "pl": "Wyłączony",
+      "lang": "Eliminated"
     },
     {
-      "key": "book.otbm.equipment_wood_wooden_ties_hammer",
-      "category": "books",
+      "key": "monster.glooth_golem.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Equipment: Wood, wooden ties, hammer, nails, metal fitting",
-      "pl": "Wyposażenie, ekwipunek, sprzęt: Drewno, drewniany I., I., I., metal I.",
-      "lang": "Equipment: Wood, wooden ties, hammer, nails, metal fitting"
+      "en": "*slosh*",
+      "pl": "*breja*",
+      "lang": "*slosh*"
     },
     {
-      "key": "book.otbm.eternal_love_will_conquer_death",
-      "category": "books",
+      "key": "monster.glooth_golem.voice_2",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Eternal love will conquer death",
-      "pl": "Wieczny love will podbijać I.",
-      "lang": "Eternal love will conquer death"
+      "en": "*clank*",
+      "pl": "*I.*",
+      "lang": "*clank*"
     },
     {
-      "key": "book.otbm.everything_revolves_meradetos_of_drefia",
-      "category": "books",
+      "key": "monster.metal_gargoyle.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Everything revolves. - Meradetos of Drefia",
-      "pl": "Wszystko obracać się, kręcić się. - Meradetos z Drefia",
-      "lang": "Everything revolves. - Meradetos of Drefia"
+      "en": "clonk",
+      "pl": "klonk",
+      "lang": "clonk"
     },
     {
-      "key": "book.otbm.example_how_to_talk_with",
-      "category": "books",
+      "key": "monster.metal_gargoyle.voice_2",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Example how to talk with the npc:",
-      "pl": "Przykład jak do I. z the npc:",
-      "lang": "Example how to talk with the npc:"
+      "en": "*stomp*",
+      "pl": "*stąpać ciężko*",
+      "lang": "*stomp*"
     },
     {
-      "key": "book.otbm.famous_necromants_by_muriel",
-      "category": "books",
+      "key": "monster.orewalker.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Famous Necromants by Muriel.",
-      "pl": "Słynny, znany Necromants by Muriel.",
-      "lang": "Famous Necromants by Muriel."
+      "en": "CLONK!",
+      "pl": "KLONK!",
+      "lang": "CLONK!"
     },
     {
-      "key": "book.otbm.fast_food_for_faster_heroes",
-      "category": "books",
+      "key": "monster.rustheap_golem.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Fast food for faster heroes!",
-      "pl": "I. jedzenie, pożywienie dla I. bohater!",
-      "lang": "Fast food for faster heroes!"
+      "en": "*clatter*",
+      "pl": "*I.*",
+      "lang": "*clatter*"
     },
     {
-      "key": "book.otbm.fasul_abrek_founder_of_the",
-      "category": "books",
+      "key": "monster.rustheap_golem.voice_3",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Fasul Abrek, founder of the adventurer's guild, fallen hero, slayer of kings, met his end at the hands of Elane",
-      "pl": "Fasul Abrek, I. z the awanturnik gildia, fallen bohater, mordować z król, met jego I. w the hands z Elane",
-      "lang": "Fasul Abrek, founder of the adventurer's guild, fallen hero, slayer of kings, met his end at the hands of Elane"
+      "en": "*frzzp*",
+      "pl": "*frzz*",
+      "lang": "*frzzp*"
     },
     {
-      "key": "book.otbm.feel_free_to_explore_our",
-      "category": "books",
+      "key": "monster.walker.voice_2",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Feel free to explore our research! Please do not touch exhibits.",
-      "pl": "I. I. do badać nasz I.! Proszę robić Niet I. I..",
-      "lang": "Feel free to explore our research! Please do not touch exhibits."
+      "en": "*slosh*",
+      "pl": "*breja*",
+      "lang": "*slosh*"
     },
     {
-      "key": "book.otbm.feeling_alone_in_the_dark",
-      "category": "books",
+      "key": "monster.sandstone_scorpion.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Feeling alone in the dark?",
-      "pl": "Uczucie I. w the I.?",
-      "lang": "Feeling alone in the dark?"
+      "en": "*rattle*",
+      "pl": "*I.*",
+      "lang": "*rattle*"
     },
     {
-      "key": "book.otbm.find_the_secret_entrance_to",
-      "category": "books",
+      "key": "monster.magma_crawler.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "find the secret entrance to the Pits",
-      "pl": "I. the I. entrance do the Dół, jama",
-      "lang": "find the secret entrance to the Pits"
+      "en": "Crrroak!",
+      "pl": "Crrrroak!",
+      "lang": "Crrroak!"
     },
     {
-      "key": "book.otbm.first_to_dump_his_opponent",
-      "category": "books",
+      "key": "monster.ice_golem.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "First to dump his opponent 4 times wins",
-      "pl": "I. do I. jego przeciwnik, oponent 4 czas wins",
-      "lang": "First to dump his opponent 4 times wins"
+      "en": "Chrrr.",
+      "pl": "Chrr.",
+      "lang": "Chrrr."
     },
     {
-      "key": "book.otbm.flying_carpet_passage_service",
-      "category": "books",
+      "key": "monster.ice_golem.voice_2",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Flying Carpet Passage Service",
-      "pl": "Latający I. Przejście I.",
-      "lang": "Flying Carpet Passage Service"
+      "en": "Crrrrk.",
+      "pl": "Crrr.",
+      "lang": "Crrrrk."
     },
     {
-      "key": "book.otbm.flying_carpet_passage_service_54553a20",
-      "category": "books",
+      "key": "monster.infected_weeper.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Flying Carpet Passage Service",
-      "pl": "Latający I. Przejście I.",
-      "lang": "Flying Carpet Passage Service"
+      "en": "Moooaaan",
+      "pl": "Muuuuuu",
+      "lang": "Moooaaan"
     },
     {
-      "key": "book.otbm.flying_carpet_passage_service_upstairs",
-      "category": "books",
+      "key": "monster.goggle_cake.voice_3",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Flying Carpet Passage Service upstairs",
-      "pl": "Latający I. Przejście I. I.",
-      "lang": "Flying Carpet Passage Service upstairs"
+      "en": "Hunger!",
+      "pl": "I.!",
+      "lang": "Hunger!"
     },
     {
-      "key": "book.otbm.for_armors_and_shields_please",
-      "category": "books",
+      "key": "monster.lava_golem.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "For Armors and Shields, please go upstairs!",
-      "pl": "Dla Armors i I., Proszę go I.!",
-      "lang": "For Armors and Shields, please go upstairs!"
+      "en": "Grrrrunt",
+      "pl": "Wrrrr",
+      "lang": "Grrrrunt"
     },
     {
-      "key": "book.otbm.for_sorcerers_and_other_magicians",
-      "category": "books",
+      "key": "monster.green_frog.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "for sorcerers and other magicians",
-      "pl": "dla sorcerers i drugi, pozostały iluzjonista, prestidigitator",
-      "lang": "for sorcerers and other magicians"
+      "en": "Ribbit!",
+      "pl": "Kum!",
+      "lang": "Ribbit!"
     },
     {
-      "key": "book.otbm.forbidden_secrets_of_magic",
-      "category": "books",
+      "key": "monster.salamander.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Forbidden Secrets of Magic!",
-      "pl": "Zakazany I. z I.!",
-      "lang": "Forbidden Secrets of Magic!"
+      "en": "Chrrch!",
+      "pl": "Chrr!",
+      "lang": "Chrrch!"
     },
     {
-      "key": "book.otbm.fort_o_th_nare_igh",
-      "category": "books",
+      "key": "monster.infernal_frog.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Fort... o. th. N.....are ..igh..",
-      "pl": "Fort... o. th. N.....są..igh..",
-      "lang": "Fort... o. th. N.....are ..igh.."
+      "en": "Ribbit!",
+      "pl": "Kum!",
+      "lang": "Ribbit!"
     },
     {
-      "key": "book.otbm.galunas_fletcher_workshop",
-      "category": "books",
+      "key": "monster.orchid_frog.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Galuna's Fletcher Workshop",
-      "pl": "Galuna's Fletcher Warsztat",
-      "lang": "Galuna's Fletcher Workshop"
+      "en": "Ribbit!",
+      "pl": "Kum!",
+      "lang": "Ribbit!"
     },
     {
-      "key": "book.otbm.getting_up_was_never_his",
-      "category": "books",
+      "key": "monster.azure_frog.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Getting up was never his strength.",
-      "pl": "Getting up był nigdy jego siła.",
-      "lang": "Getting up was never his strength."
+      "en": "Ribbit!",
+      "pl": "Kum!",
+      "lang": "Ribbit!"
     },
     {
-      "key": "book.otbm.glorious_knights_guild_of_carlin",
-      "category": "books",
+      "key": "monster.bog_frog.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Glorious Knights Guild of Carlin",
-      "pl": "Wspaniały I. Gildia z Carlin",
-      "lang": "Glorious Knights Guild of Carlin"
+      "en": "Ribbit!",
+      "pl": "Kum!",
+      "lang": "Ribbit!"
     },
     {
-      "key": "book.otbm.gnomish_authorized_persons_only",
-      "category": "books",
+      "key": "monster.crimson_frog.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Gnomish Authorized Persons Only!",
-      "pl": "GNiemish Authorized Osoba Tylko!",
-      "lang": "Gnomish Authorized Persons Only!"
+      "en": "Ribbit!",
+      "pl": "Kum!",
+      "lang": "Ribbit!"
     },
     {
-      "key": "book.otbm.go_ahead_and_follow_the",
-      "category": "books",
+      "key": "monster.toad.voice_2",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Go ahead and follow the path of light",
-      "pl": "Go w przód i I. the ścieżka z I.",
-      "lang": "Go ahead and follow the path of light"
+      "en": "Ribbit!",
+      "pl": "Kum!",
+      "lang": "Ribbit!"
     },
     {
-      "key": "book.otbm.go_to_the_left_brother",
-      "category": "books",
+      "key": "monster.coral_frog.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "GO TO THE LEFT BROTHER AND JOIN US IN DARKNESS",
-      "pl": "GO DO THE I. BRAT I I. NAS W CIEMNOŚĆ",
-      "lang": "GO TO THE LEFT BROTHER AND JOIN US IN DARKNESS"
+      "en": "Ribbit!",
+      "pl": "Kum!",
+      "lang": "Ribbit!"
     },
     {
-      "key": "book.otbm.golden_lines_are_embedded_in",
-      "category": "books",
+      "key": "monster.devourer.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Golden lines are embedded in the amulet and show mysterious symbols. It was awarded by TibiaHoF.",
-      "pl": "złotaen lines są uwięzły w the amulet i I. tajemniczy symbol. To był I. by TibiaHoF.",
-      "lang": "Golden lines are embedded in the amulet and show mysterious symbols. It was awarded by TibiaHoF."
+      "en": "*gulp*",
+      "pl": "*I.*",
+      "lang": "*gulp*"
     },
     {
-      "key": "book.otbm.got_it_the_sorcerer_screamed",
-      "category": "books",
+      "key": "monster.mercury_blob.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "\"Got it!\" the sorcerer screamed. \"Let",
-      "pl": "\"Got to!\" the sorcerer I.. \"Let",
-      "lang": "\"Got it!\" the sorcerer screamed. \"Let"
+      "en": "Crackle",
+      "pl": "Trzask",
+      "lang": "Crackle"
     },
     {
-      "key": "book.otbm.granted_by_radiotibiacombr_to_hear",
-      "category": "books",
+      "key": "monster.death_blob.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Granted by RadioTibia.com.br to hear the sounds of Tibia.",
-      "pl": "I. by RadioTibia.com.Koleje Brytyjskie do I. the I. z Tibia.",
-      "lang": "Granted by RadioTibia.com.br to hear the sounds of Tibia."
+      "en": "Shlorz",
+      "pl": "Szlorz",
+      "lang": "Shlorz"
     },
     {
-      "key": "book.otbm.graveyard_of_the_red_legion",
-      "category": "books",
+      "key": "monster.chocolate_blob.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Graveyard of the Red Legion and all the workers who fell in the fight against the orcish hordes",
-      "pl": "Cmentarz z the I. Legion i wszystkie the pracownik kto zwalać w the I. o the orcish zgraja, horda",
-      "lang": "Graveyard of the Red Legion and all the workers who fell in the fight against the orcish hordes"
+      "en": "*Splotch*",
+      "pl": "*Plama*",
+      "lang": "*Splotch*"
     },
     {
-      "key": "book.otbm.great_mountains_of_folda_island",
-      "category": "books",
+      "key": "monster.chocolate_blob.voice_2",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Great Mountains of Folda Island",
-      "pl": "I. Góra z Folda Wyspa",
-      "lang": "Great Mountains of Folda Island"
+      "en": "Smudge",
+      "pl": "Plama",
+      "lang": "Smudge"
     },
     {
-      "key": "book.otbm.greenhorn_rank_rewards_choose_wisely",
-      "category": "books",
+      "key": "monster.frost_troll.voice_2",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Greenhorn Rank Rewards - Choose wisely!",
-      "pl": "Greenhorn I. nagrodas - Wybierać I.!",
-      "lang": "Greenhorn Rank Rewards - Choose wisely!"
+      "en": "Broar!",
+      "pl": "Bracie!",
+      "lang": "Broar!"
     },
     {
-      "key": "book.otbm.greetings_brothers_and_sisters",
-      "category": "books",
+      "key": "monster.lost_basher.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Greetings brothers and sisters!",
-      "pl": "Witaj brat i I.!",
-      "lang": "Greetings brothers and sisters!"
+      "en": "Yhouuuu!",
+      "pl": "Uuuuu!",
+      "lang": "Yhouuuu!"
     },
     {
-      "key": "book.otbm.greetings_by_darruk_the_redscarred",
-      "category": "books",
+      "key": "monster.mooh'tah_warrior.voice_2",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "- Greetings by Darruk the Redscarred.",
-      "pl": "- Witaj by Darruk the Redscarred.",
-      "lang": "- Greetings by Darruk the Redscarred."
+      "en": "Ommm!",
+      "pl": "Omm!",
+      "lang": "Ommm!"
     },
     {
-      "key": "book.otbm.greetings_fellow_brother",
-      "category": "books",
+      "key": "monster.enslaved_dwarf.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Greetings fellow brother!",
-      "pl": "Witaj facet, gość brat!",
-      "lang": "Greetings fellow brother!"
+      "en": "Bark!",
+      "pl": "I.!",
+      "lang": "Bark!"
     },
     {
-      "key": "book.otbm.ground_floor_flints_finest_melee",
-      "category": "books",
+      "key": "monster.enslaved_dwarf.voice_2",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Ground floor: Flint's Finest - Melee Weapons and Armor",
-      "pl": "Ziemia I.: Krzemień Finest - Melee Broń i Armor",
-      "lang": "Ground floor: Flint's Finest - Melee Weapons and Armor"
+      "en": "Blood!",
+      "pl": "I.!",
+      "lang": "Blood!"
     },
     {
-      "key": "book.otbm.ground_floor_rathleton_post_office",
-      "category": "books",
+      "key": "monster.troll.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Ground floor: Rathleton Post Office",
-      "pl": "Ziemia I.: Rathleton Post Biuro",
-      "lang": "Ground floor: Rathleton Post Office"
+      "en": "Hmmm, bugs",
+      "pl": "Hmmm, błędy",
+      "lang": "Hmmm, bugs"
     },
     {
-      "key": "book.otbm.guild_of_the_dexterous_paladins",
-      "category": "books",
+      "key": "monster.troll.voice_2",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Guild of the dexterous Paladins",
-      "pl": "Gildia z the sprawny Paladins",
-      "lang": "Guild of the dexterous Paladins"
+      "en": "Hmmm, dogs",
+      "pl": "Hmmm, I.",
+      "lang": "Hmmm, dogs"
     },
     {
-      "key": "book.otbm.guild_of_the_dexterous_paladins_4a67ff69",
-      "category": "books",
+      "key": "monster.troll.voice_3",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Guild of the dexterous Paladins",
-      "pl": "Gildia z the sprawny Paladins",
-      "lang": "Guild of the dexterous Paladins"
+      "en": "Grrr",
+      "pl": "Wrr",
+      "lang": "Grrr"
     },
     {
-      "key": "book.otbm.guildhall_of_the_red_rose",
-      "category": "books",
+      "key": "monster.troll.voice_4",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Guildhall of the Red Rose",
-      "pl": "Guildhall z the I. I.",
-      "lang": "Guildhall of the Red Rose"
+      "en": "Groar",
+      "pl": "ryk",
+      "lang": "Groar"
     },
     {
-      "key": "book.otbm.haha_we_caught_one_of",
-      "category": "books",
+      "key": "monster.island_troll.voice_2",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Haha, we caught one of our enemys",
-      "pl": "Haha, my caught I. z nasz wróg",
-      "lang": "Haha, we caught one of our enemys"
+      "en": "Hmmm, dogs",
+      "pl": "Hmmm, I.",
+      "lang": "Hmmm, dogs"
     },
     {
-      "key": "book.otbm.hail_to_marianos_pall_the",
-      "category": "books",
+      "key": "monster.island_troll.voice_4",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Hail to Marianos Pall, the current hero of the Scrapper difficulty!",
-      "pl": "I. do MariaNies I., the aktualny bohater z the Scrapper trudność!",
-      "lang": "Hail to Marianos Pall, the current hero of the Scrapper difficulty!"
+      "en": "Groar",
+      "pl": "ryk",
+      "lang": "Groar"
     },
     {
-      "key": "book.otbm.has_stoped_i_know_they",
-      "category": "books",
+      "key": "monster.firestarter.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "has stoped. I KNOW they are coming after me now. I can see the flickering of the shadows as they aproach. THEY ARE COMING",
-      "pl": "ma stop. I KNieW oni są nadchodzący after mnie, mi Niew. I może I. the I. z the cień as oni aproach. ONI SĄ NADCHODZĄCY",
-      "lang": "has stoped. I KNOW they are coming after me now. I can see the flickering of the shadows as they aproach. THEY ARE COMING"
+      "en": "FIRE!",
+      "pl": "OGIEŃ!",
+      "lang": "FIRE!"
     },
     {
-      "key": "book.otbm.have_faith_wanderer_for_you",
-      "category": "books",
+      "key": "monster.firestarter.voice_2",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Have faith wanderer, for you do not fight alone.",
-      "pl": "Masz wiara wędrować, dla ty robić Niet I. I..",
-      "lang": "Have faith wanderer, for you do not fight alone."
+      "en": "BURN!",
+      "pl": "I.!",
+      "lang": "BURN!"
     },
     {
-      "key": "book.otbm.have_to_spend_to_much",
-      "category": "books",
+      "key": "monster.swamp_troll.voice_2",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "have to spend to much time in fighting the",
-      "pl": "masz do wydawać do dużo, bardzo czas w I. the",
-      "lang": "have to spend to much time in fighting the"
+      "en": "Groar!",
+      "pl": "Ryk!",
+      "lang": "Groar!"
     },
     {
-      "key": "book.otbm.head_of_the_palace_guards",
-      "category": "books",
+      "key": "monster.swamp_troll.voice_3",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Head of the palace guards",
-      "pl": "I. z the pałac I.",
-      "lang": "Head of the palace guards"
+      "en": "Grrrr",
+      "pl": "Wrrrr",
+      "lang": "Grrrr"
     },
     {
-      "key": "book.otbm.hellgate_restricted_area",
-      "category": "books",
+      "key": "monster.orc_marauder.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Hellgate! Restricted Area!",
-      "pl": "Hellgate! Ograniczony Obszar, region!",
-      "lang": "Hellgate! Restricted Area!"
+      "en": "Grrrrrr",
+      "pl": "Wrrrr",
+      "lang": "Grrrrrr"
     },
     {
-      "key": "book.otbm.her_hairs_snakes_are_still",
-      "category": "books",
+      "key": "monster.orc_spearman.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Her hair's snakes are still alive. Awarded only on TibiaPic.com.",
-      "pl": "Her włos wąż są I. żywy. I. tylko na TibiaPic.com.",
-      "lang": "Her hair's snakes are still alive. Awarded only on TibiaPic.com."
+      "en": "Ugaar!",
+      "pl": "Ugar!",
+      "lang": "Ugaar!"
     },
     {
-      "key": "book.otbm.herbs_and_plants_of_the",
-      "category": "books",
+      "key": "monster.orc_rider.voice_2",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Herbs and Plants of the Swamp, Volume I",
-      "pl": "I. i I. z the I., Książka I",
-      "lang": "Herbs and Plants of the Swamp, Volume I"
+      "en": "Grrrrrrr",
+      "pl": "Wrrrrrr",
+      "lang": "Grrrrrrr"
     },
     {
-      "key": "book.otbm.herbs_and_plants_of_the_e1ae45aa",
-      "category": "books",
+      "key": "monster.troll_legionnaire.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Herbs and Plants of the Swamp, Volume II",
-      "pl": "I. i I. z the I., Książka II",
-      "lang": "Herbs and Plants of the Swamp, Volume II"
+      "en": "Attack!",
+      "pl": "I.!",
+      "lang": "Attack!"
     },
     {
-      "key": "book.otbm.here_lies_the_body_of",
-      "category": "books",
+      "key": "monster.minotaur.voice_2",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Here lies the body of Arkanor, Rookgaard's first teleportation scientist.",
-      "pl": "Tutaj, tu lies the ciało z ArkaNier, Rookgaard's I. teleportowaćation naukowiec.",
-      "lang": "Here lies the body of Arkanor, Rookgaard's first teleportation scientist."
+      "en": "Hurr",
+      "pl": "Hurra",
+      "lang": "Hurr"
     },
     {
-      "key": "book.otbm.here_on_the_haunted_plains",
-      "category": "books",
+      "key": "monster.troll_champion.voice_2",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Here on the haunted Plains of Havoc the order of the Nightmare Knights defeated the armies of Goshnar, the king of necromancy.",
-      "pl": "Tutaj, tu na the I. I. z Chaos, zamieszanie the order z the Zły sen I. I. the wojsko, armia z Goshnar, the król z necromancy.",
-      "lang": "Here on the haunted Plains of Havoc the order of the Nightmare Knights defeated the armies of Goshnar, the king of necromancy."
+      "en": "Grrrr",
+      "pl": "Wrrrr",
+      "lang": "Grrrr"
     },
     {
-      "key": "book.otbm.here_you_dont_lost_anything",
-      "category": "books",
+      "key": "monster.troll_champion.voice_5",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Here you dont lost anything, dnt lost Level and dont lost Itens.",
-      "pl": "Tutaj, tu ty dont I. cokolwiek, dnt I. poziom i dont I. Itens.",
-      "lang": "Here you dont lost anything, dnt lost Level and dont lost Itens."
+      "en": "Groar",
+      "pl": "ryk",
+      "lang": "Groar"
     },
     {
-      "key": "book.otbm.here_you_will_find_the",
-      "category": "books",
+      "key": "monster.young_troll.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Here you will find the entrance of the MOTA Extension. Still under contruction.",
-      "pl": "Tutaj, tu ty will I. the entrance z the MOTA Dobudówka, powiększenie. I. under contruction.",
-      "lang": "Here you will find the entrance of the MOTA Extension. Still under contruction."
+      "en": "Hmmm, dogs",
+      "pl": "Hmmm, I.",
+      "lang": "Hmmm, dogs"
     },
     {
-      "key": "book.otbm.high_end_spells_for_your",
-      "category": "books",
+      "key": "monster.goblin_scavenger.voice_2",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "High end spells for your ultimate enemies.",
-      "pl": "I. I. zaklęCentalna Agencja Wywiadowcza dla twój ostateczny wróg.",
-      "lang": "High end spells for your ultimate enemies."
+      "en": "You mean!",
+      "pl": "Ty I.!",
+      "lang": "You mean!"
     },
     {
-      "key": "book.otbm.highranking_necromancers_only",
-      "category": "books",
+      "key": "monster.goblin_scavenger.voice_3",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "High-ranking necromancers only.",
-      "pl": "I.-I. necromancers tylko.",
-      "lang": "High-ranking necromancers only."
+      "en": "All mine!",
+      "pl": "Wszystkie I.!",
+      "lang": "All mine!"
     },
     {
-      "key": "book.otbm.history_of_the_augur_part",
-      "category": "books",
+      "key": "monster.misguided_bully.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "History of the Augur, Part II",
-      "pl": "Historia z the Wróżyć, Part II",
-      "lang": "History of the Augur, Part II"
+      "en": "Found one!",
+      "pl": "Znaleziono I.!",
+      "lang": "Found one!"
     },
     {
-      "key": "book.otbm.history_of_the_augur_part_5eb84e6d",
-      "category": "books",
+      "key": "monster.animated_rhino.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "History of the Augur, Part I",
-      "pl": "Historia z the Wróżyć, Part I",
-      "lang": "History of the Augur, Part I"
+      "en": "Snarl!",
+      "pl": "I.!",
+      "lang": "Snarl!"
     },
     {
-      "key": "book.otbm.home_of_eclesius_the_very",
-      "category": "books",
+      "key": "monster.animated_rhino.voice_2",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Home of Eclesius, the Very Wise and also Noble Sorcerer.",
-      "pl": "Home z Eclesius, the I. I. i także Nieble Sorcerer.",
-      "lang": "Home of Eclesius, the Very Wise and also Noble Sorcerer."
+      "en": "SNIFF!",
+      "pl": "I.!",
+      "lang": "SNIFF!"
     },
     {
-      "key": "book.otbm.home_of_the_ruthless_seven",
-      "category": "books",
+      "key": "monster.hemming.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Home of the ruthless seven!!!!!!!",
-      "pl": "Home z the bezlitosny siedem!!!!!!!",
-      "lang": "Home of the ruthless seven!!!!!!!"
+      "en": "GRRR",
+      "pl": "Wrr",
+      "lang": "GRRR"
     },
     {
-      "key": "book.otbm.honour_and_glory_to_death",
-      "category": "books",
+      "key": "monster.norgle_glacierbeard.voice_2",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Honour and glory to Death Rose, the mighty Warlord!",
-      "pl": "HoNieur i I. do I. I., the I. Warlord!",
-      "lang": "Honour and glory to Death Rose, the mighty Warlord!"
+      "en": "REVENGE!",
+      "pl": "ZEMSTA!",
+      "lang": "REVENGE!"
     },
     {
-      "key": "book.otbm.honour_to_whom_honour_is",
-      "category": "books",
+      "key": "monster.webster.voice_3",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Honour to whom honour is due",
-      "pl": "HoNieur do whom hoNieur jest due",
-      "lang": "Honour to whom honour is due"
+      "en": "So tasty!",
+      "pl": "I. smakowity!",
+      "lang": "So tasty!"
     },
     {
-      "key": "book.otbm.house_of_dermot_the_local",
-      "category": "books",
+      "key": "monster.frostfur.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "House of Dermot, the Local Chief",
-      "pl": "dom z Dermot, the Lokalny I.",
-      "lang": "House of Dermot, the Local Chief"
+      "en": "Grrr",
+      "pl": "Wrr",
+      "lang": "Grrr"
     },
     {
-      "key": "book.otbm.house_of_wealth_bank_jewels",
-      "category": "books",
+      "key": "monster.usurper_commander.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "House of Wealth - Bank, Jewels, Depot",
-      "pl": "dom z Bogactwo - Bank, Klejnot, Skład",
-      "lang": "House of Wealth - Bank, Jewels, Depot"
+      "en": "FORMATION!",
+      "pl": "TWORZENIE!",
+      "lang": "FORMATION!"
     },
     {
-      "key": "book.otbm.house_of_wealth_bank_jewels_59d3083c",
-      "category": "books",
+      "key": "monster.malofur_mangrinder.voice_2",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "House of Wealth - Bank, Jewels, Depot",
-      "pl": "dom z Bogactwo - Bank, Klejnot, Skład",
-      "lang": "House of Wealth - Bank, Jewels, Depot"
+      "en": "BOOOM!",
+      "pl": "BUM!",
+      "lang": "BOOOM!"
     },
     {
-      "key": "book.otbm.houses_ascendants_phases_of_the",
-      "category": "books",
+      "key": "monster.ferumbras_mortal_shell.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Houses, Ascendants, Phases of the Moon in the different Dark Orders. A comparative Chart Analysis by Antaly of Drefia",
-      "pl": "doms, Ascendants, I. z the Księżyc w the różny I. Orders. JEDEN porównawczy I. Analiza by Antaly z Drefia",
-      "lang": "Houses, Ascendants, Phases of the Moon in the different Dark Orders. A comparative Chart Analysis by Antaly of Drefia"
+      "en": "INSECTS!",
+      "pl": "OWAD!",
+      "lang": "INSECTS!"
     },
     {
-      "key": "book.otbm.how_to_create_spellbooks_by",
-      "category": "books",
+      "key": "monster.lovely_polar_bear.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "How to create spellbooks by Muriel.",
-      "pl": "Jak do create zaklęciebooks by Muriel.",
-      "lang": "How to create spellbooks by Muriel."
+      "en": "Grrrrrr",
+      "pl": "Wrrrr",
+      "lang": "Grrrrrr"
     },
     {
-      "key": "book.otbm.how_to_create_spellbooks_by_003d48b3",
-      "category": "books",
+      "key": "monster.darklight_matter.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "How to create spellbooks by Muriel.",
-      "pl": "Jak do create zaklęciebooks by Muriel.",
-      "lang": "How to create spellbooks by Muriel."
+      "en": "*twiggle*",
+      "pl": "*porusza się*",
+      "lang": "*twiggle*"
     },
     {
-      "key": "book.otbm.how_to_learn_magic_easy",
-      "category": "books",
+      "key": "monster.cosmic_energy_prism_a_invu.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "How to learn Magic easy. Level 1: For Knights and non Vocation people (Part one)",
-      "pl": "Jak do uczyć się, nauczyć się I. I.. poziom 1: Dla I. i Nien Profesja I. (Part I.)",
-      "lang": "How to learn Magic easy. Level 1: For Knights and non Vocation people (Part one)"
+      "en": "*Zap!*",
+      "pl": "*zastrzelić!*",
+      "lang": "*Zap!*"
     },
     {
-      "key": "book.otbm.how_to_manipulate_runes_by",
-      "category": "books",
+      "key": "monster.cosmic_energy_prism_b.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "How to manipulate Runes by Muriel.",
-      "pl": "Jak do manipulować Runes by Muriel.",
-      "lang": "How to manipulate Runes by Muriel."
+      "en": "*Zap!*",
+      "pl": "*zastrzelić!*",
+      "lang": "*Zap!*"
     },
     {
-      "key": "book.otbm.huv_stollan_match_stuf_from",
-      "category": "books",
+      "key": "monster.cosmic_energy_prism_c.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Huv stollan match stuf from humutown.",
-      "pl": "Huv stollan I. stuf z humutown.",
-      "lang": "Huv stollan match stuf from humutown."
+      "en": "*Zap!*",
+      "pl": "*zastrzelić!*",
+      "lang": "*Zap!*"
     },
     {
-      "key": "book.otbm.i_am_also_sure_that",
-      "category": "books",
+      "key": "monster.cosmic_energy_prism_d_invu.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "I am also sure that the 'thing' called",
-      "pl": "I am także sure that the 'rzecz' called",
-      "lang": "I am also sure that the 'thing' called"
+      "en": "*Zap!*",
+      "pl": "*zastrzelić!*",
+      "lang": "*Zap!*"
     },
     {
-      "key": "book.otbm.i_am_sure_the_secret",
-      "category": "books",
+      "key": "monster.cosmic_energy_prism_a.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "I am sure the secret was hidden by",
-      "pl": "I am sure the I. był hidden by",
-      "lang": "I am sure the secret was hidden by"
+      "en": "*Zap!*",
+      "pl": "*zastrzelić!*",
+      "lang": "*Zap!*"
     },
     {
-      "key": "book.otbm.i_cant_figure_out_how",
-      "category": "books",
+      "key": "monster.cosmic_energy_prism_b_invu.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "I can't figure out how to reanimate",
-      "pl": "I can't I. out jak do reanimate",
-      "lang": "I can't figure out how to reanimate"
+      "en": "*Zap!*",
+      "pl": "*zastrzelić!*",
+      "lang": "*Zap!*"
     },
     {
-      "key": "book.otbm.i_discovered_in_the_ancient",
-      "category": "books",
+      "key": "monster.cosmic_energy_prism_d.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "I discovered in the ancient scrolls of my",
-      "pl": "I odkrywać w the starożytny zwój z mój",
-      "lang": "I discovered in the ancient scrolls of my"
+      "en": "*Zap!*",
+      "pl": "*zastrzelić!*",
+      "lang": "*Zap!*"
     },
     {
-      "key": "book.otbm.i_dont_think_the_dream",
-      "category": "books",
+      "key": "monster.the_enraged_thorn_knight.voice_3",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "I don't think the Dream Challenge is too difficult.",
-      "pl": "I don't I. the I. I. jest też, także trudny.",
-      "lang": "I don't think the Dream Challenge is too difficult."
+      "en": "NOOOOO!",
+      "pl": "NieOOOO!",
+      "lang": "NOOOOO!"
     },
     {
-      "key": "book.otbm.i_have_not_the_heart",
-      "category": "books",
+      "key": "monster.lady_tenebris.voice_3",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "I have not the heart to tell it our remaining",
-      "pl": "I masz Niet the serce do I. to nasz I.",
-      "lang": "I have not the heart to tell it our remaining"
+      "en": "Blackout!",
+      "pl": "Zaciemnienie!",
+      "lang": "Blackout!"
     },
     {
-      "key": "book.otbm.i_sell_bread_cheese_ham",
-      "category": "books",
+      "key": "monster.cosmic_energy_prism_c_invu.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "I sell bread, cheese, ham, and meat.",
-      "pl": "I sprzedaj chleb, ser, szynka, i mięso.",
-      "lang": "I sell bread, cheese, ham, and meat."
+      "en": "*Zap!*",
+      "pl": "*zastrzelić!*",
+      "lang": "*Zap!*"
     },
     {
-      "key": "book.otbm.i_tarberi_of_house_of",
-      "category": "books",
+      "key": "monster.omruc.voice_4",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "I, Tarberi of House of Winter, hereby pledge my services to the Lord of... (the rest of the document is stained and burnt)",
-      "pl": "I, Tarberi z dom z I., niniejszym I. mój I. do the Lord z... (the rest z the I. jest I. i burnt)",
-      "lang": "I, Tarberi of House of Winter, hereby pledge my services to the Lord of... (the rest of the document is stained and burnt)"
+      "en": "Die!",
+      "pl": "UMIERAĆ!",
+      "lang": "Die!"
     },
     {
-      "key": "book.otbm.i_think_i_found_out",
-      "category": "books",
+      "key": "monster.prince_drazzak.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "I think I found out some coordinates for the Island Dianscher.",
-      "pl": "I I. I znaleziono out I. coordinates dla the Wyspa Dianscher.",
-      "lang": "I think I found out some coordinates for the Island Dianscher."
+      "en": "DIE!",
+      "pl": "UMIERAĆ!",
+      "lang": "DIE!"
     },
     {
-      "key": "book.otbm.i_trade_with_gems_pearls",
-      "category": "books",
+      "key": "monster.minion_of_versperoth.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "I trade with gems, pearls and jewels.",
-      "pl": "I handel z kamień szlachetny, perła i klejnot.",
-      "lang": "I trade with gems, pearls and jewels."
+      "en": "Grrrrunt",
+      "pl": "Wrrrr",
+      "lang": "Grrrrunt"
     },
     {
-      "key": "book.otbm.i_was_one_of_the",
-      "category": "books",
+      "key": "monster.humorless_fungus.voice_2",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "I was one of the first who was allowed to teleport through the magic web.",
-      "pl": "I był I. z the I. kto był I. do teleportować through the I. pajęczyna.",
-      "lang": "I was one of the first who was allowed to teleport through the magic web."
+      "en": "Chatter",
+      "pl": "Gadać",
+      "lang": "Chatter"
     },
     {
-      "key": "book.otbm.i_will_investigate_this",
-      "category": "books",
+      "key": "monster.hellgorak.voice_6",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "I will investigate this....",
-      "pl": "I will przeprowadzać dochodzenie I.....",
-      "lang": "I will investigate this...."
+      "en": "Delicious!",
+      "pl": "Wyborny!",
+      "lang": "Delicious!"
     },
     {
-      "key": "book.otbm.if_you_want_to_learn",
-      "category": "books",
+      "key": "monster.mean_maw.voice_2",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "If you want to learn something about the",
-      "pl": "If ty I. do uczyć się, nauczyć się coś o the",
-      "lang": "If you want to learn something about the"
+      "en": "Clank.",
+      "pl": "I..",
+      "lang": "Clank."
     },
     {
-      "key": "book.otbm.in_memory_of_maus_the",
-      "category": "books",
+      "key": "monster.branchy_crawler.voice_2",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "In Memory of Maus, the famous rat hunter.",
-      "pl": "W Pamięć z Maus, the słynny, znany szczur myśliwy.",
-      "lang": "In Memory of Maus, the famous rat hunter."
+      "en": "Decay!",
+      "pl": "I.!",
+      "lang": "Decay!"
     },
     {
-      "key": "book.otbm.in_order_to_create_the",
-      "category": "books",
+      "key": "monster.courage_leech.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "In order to create the time, the Gods united their powers. Even Zathroth was fascinated by the idea of his other half and",
-      "pl": "W order do create the czas, the Gods jednostka ich I.. I. Zathroth był fascinated by the pomysł z jego drugi, pozostały I. i",
-      "lang": "In order to create the time, the Gods united their powers. Even Zathroth was fascinated by the idea of his other half and"
+      "en": "Hiss.",
+      "pl": "I..",
+      "lang": "Hiss."
     },
     {
-      "key": "book.otbm.incantation_to_summon_asdphodelic_the",
-      "category": "books",
+      "key": "monster.cloak_of_terror.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Incantation to summon Asdphodelic, the lesser two-headed Hound of the Night",
-      "pl": "Incantation do I. Asdphodelic, the mniejszy dwa-I. I. z the Night",
-      "lang": "Incantation to summon Asdphodelic, the lesser two-headed Hound of the Night"
+      "en": "Power up!",
+      "pl": "I. up!",
+      "lang": "Power up!"
     },
     {
-      "key": "book.otbm.infested_by_bugs_and_spiders",
-      "category": "books",
+      "key": "monster.bony_sea_devil.voice_2",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Infested by Bugs and Spiders!",
-      "pl": "Opanowany by Bugs i Pająk!",
-      "lang": "Infested by Bugs and Spiders!"
+      "en": "Clank.",
+      "pl": "I..",
+      "lang": "Clank."
     },
     {
-      "key": "book.otbm.information_about_the_might_rings",
-      "category": "books",
+      "key": "monster.spiteful_spitter.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Information about the might rings",
-      "pl": "Informacja, wiadomości o the might rings",
-      "lang": "Information about the might rings"
+      "en": "Power up!",
+      "pl": "I. up!",
+      "lang": "Power up!"
     },
     {
-      "key": "book.otbm.instructions_for_the_distilling_machine",
-      "category": "books",
+      "key": "monster.primitive.voice_6",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Instructions for the distilling machine",
-      "pl": "Nauka, nauczanie dla the distilling I.",
-      "lang": "Instructions for the distilling machine"
+      "en": "Guido who?",
+      "pl": "Guido kto?",
+      "lang": "Guido who?"
     },
     {
-      "key": "book.otbm.into_this_desert_entered_fardos",
-      "category": "books",
+      "key": "monster.primitive.voice_7",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Into this desert entered Fardos, the creator, and Uman Zathroth, incorporating magic. Nobody knows where they came",
-      "pl": "A. do I. desert I. Fardos, the creator, i Uman Zathroth, incorporating I.. Niebody kNiews where oni came",
-      "lang": "Into this desert entered Fardos, the creator, and Uman Zathroth, incorporating magic. Nobody knows where they came"
+      "en": "Die noob!",
+      "pl": "Die Nieob!",
+      "lang": "Die noob!"
     },
     {
-      "key": "book.otbm.is_in_honors_to_her",
-      "category": "books",
+      "key": "monster.grim_reaper.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "is in honors to her a woman and assumes the honorary name Elane.",
-      "pl": "jest w hoNiers do her jeden kobieta i zakładać, przypuszczać the hoNierary nazwa Elane.",
-      "lang": "is in honors to her a woman and assumes the honorary name Elane."
+      "en": "Death!",
+      "pl": "I.!",
+      "lang": "Death!"
     },
     {
-      "key": "book.otbm.is_your_torch_running_out",
-      "category": "books",
+      "key": "monster.undead_gladiator.voice_2",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Is your torch running out?",
-      "pl": "Jest twój latarka I. out?",
-      "lang": "Is your torch running out?"
+      "en": "Bring it!",
+      "pl": "Bring to!",
+      "lang": "Bring it!"
     },
     {
-      "key": "book.otbm.it_contains_all_the_knowledge",
-      "category": "books",
+      "key": "monster.ghost.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "It contains all the knowledge of the Tibian lands gathered arduously by Tibia-Stats.com.",
-      "pl": "To zawierać wszystkie the kNiewledge z the Tibian lands gromadzić się, gromadzić nużący by Tibia-Stats.com.",
-      "lang": "It contains all the knowledge of the Tibian lands gathered arduously by Tibia-Stats.com."
+      "en": "Huh!",
+      "pl": "He, co!",
+      "lang": "Huh!"
     },
     {
-      "key": "book.otbm.it_does_not_wish_to",
-      "category": "books",
+      "key": "monster.vampire.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "It does not wish to be disturbed. Awarded by TibiaLibrary.org.",
-      "pl": "To robi Niet I. do być niezrównoważony. I. by TibiaLibrary.org.",
-      "lang": "It does not wish to be disturbed. Awarded by TibiaLibrary.org."
+      "en": "BLOOD!",
+      "pl": "I.!",
+      "lang": "BLOOD!"
     },
     {
-      "key": "book.otbm.it_is_assumed_they_lie",
-      "category": "books",
+      "key": "monster.tarnished_spirit.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "It is assumed they lie on the ocean floor.",
-      "pl": "To jest assumed oni lie na the ocean I..",
-      "lang": "It is assumed they lie on the ocean floor."
+      "en": "Huh!",
+      "pl": "He, co!",
+      "lang": "Huh!"
     },
     {
-      "key": "book.otbm.it_is_certain_now_we",
-      "category": "books",
+      "key": "monster.gravedigger.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "It is certain now! We are doomed.",
-      "pl": "To jest pewny Niew! My są skazany na zgubę, zgubiony.",
-      "lang": "It is certain now! We are doomed."
+      "en": "High Five!",
+      "pl": "I. Pięć!",
+      "lang": "High Five!"
     },
     {
-      "key": "book.otbm.it_is_given_to_the",
-      "category": "books",
+      "key": "monster.gravedigger.voice_2",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "It is given to the winners of TibiaNordic competitions.",
-      "pl": "To jest I. do the zwycięzca z TibiaNierdic rywalizacja.",
-      "lang": "It is given to the winners of TibiaNordic competitions."
+      "en": "scrabble",
+      "pl": "bazgrać",
+      "lang": "scrabble"
     },
     {
-      "key": "book.otbm.it_is_rumoured_to_bring",
-      "category": "books",
+      "key": "monster.rot_elemental.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "It is rumoured to bring you good luck! Luck sponsored by TibiaLottery.",
-      "pl": "To jest rumoured do bring ty I. good luck! Good luck I. by TibiaLottery.",
-      "lang": "It is rumoured to bring you good luck! Luck sponsored by TibiaLottery."
+      "en": "*splib*",
+      "pl": "*dzielenie*",
+      "lang": "*splib*"
     },
     {
-      "key": "book.otbm.it_knows_all_secrets_of",
-      "category": "books",
+      "key": "monster.tyrn.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "It knows all secrets of all numbers. It was rewarded by the Exhiti.com.",
-      "pl": "To kNiews wszystkie I. z wszystkie numer. To był nagrodaed by the Exhiti.com.",
-      "lang": "It knows all secrets of all numbers. It was rewarded by the Exhiti.com."
+      "en": "GRRR",
+      "pl": "Wrr",
+      "lang": "GRRR"
     },
     {
-      "key": "book.otbm.it_shines_as_beautifully_as",
-      "category": "books",
+      "key": "monster.frost_servant.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "It shines as beautifully as a good friendship.",
-      "pl": "To goleń as piękny as jeden I. przyjaźń, bliskie koleżeństwo, koleżeństwo.",
-      "lang": "It shines as beautifully as a good friendship."
+      "en": "Chrrr.",
+      "pl": "Chrr.",
+      "lang": "Chrrr."
     },
     {
-      "key": "book.otbm.it_was_awarded_by_tibiopediapl",
-      "category": "books",
+      "key": "monster.frost_servant.voice_2",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "It was awarded by Tibiopedia.pl.",
-      "pl": "To był I. by Tibiopedia.pl.",
-      "lang": "It was awarded by Tibiopedia.pl."
+      "en": "Crrrrk.",
+      "pl": "Crrr.",
+      "lang": "Crrrrk."
     },
     {
-      "key": "book.otbm.it_was_omnipresent_and_nowhere",
-      "category": "books",
+      "key": "monster.hirintror.voice_4",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "It was omnipresent and nowhere.",
-      "pl": "To był omnipresent i Niewhere.",
-      "lang": "It was omnipresent and nowhere."
+      "en": "snirr!",
+      "pl": "prychnięcie!",
+      "lang": "snirr!"
     },
     {
-      "key": "book.otbm.its_forbidden_to_turn_the",
-      "category": "books",
+      "key": "monster.draptor.voice_3",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "It's forbidden to turn the lights off!",
-      "pl": "To zakazany do turn the I. off!",
-      "lang": "It's forbidden to turn the lights off!"
+      "en": "GRRR",
+      "pl": "Wrr",
+      "lang": "GRRR"
     },
     {
-      "key": "book.otbm.jail_no_admittance_save_guards",
-      "category": "books",
+      "key": "monster.the_welter.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Jail - No admittance, save guards!",
-      "pl": "Jail - Nie zezwolenie na wejście, wejście, I. I.!",
-      "lang": "Jail - No admittance, save guards!"
+      "en": "FCHHHHH",
+      "pl": "Fchhhh",
+      "lang": "FCHHHHH"
     },
     {
-      "key": "book.otbm.jaul_friday_4_am_1",
-      "category": "books",
+      "key": "monster.furyosa.voice_3",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Jaul: Friday (4 AM - 1 PM)",
-      "pl": "Jaul: Piątek (4 AM - 1 PREMIER)",
-      "lang": "Jaul: Friday (4 AM - 1 PM)"
+      "en": "Die!",
+      "pl": "UMIERAĆ!",
+      "lang": "Die!"
     },
     {
-      "key": "book.otbm.jaul_friday_4_am_1_1b3ad4fd",
-      "category": "books",
+      "key": "monster.fernfang.voice_4",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Jaul: Friday (4 AM - 1 PM)",
-      "pl": "Jaul: Piątek (4 AM - 1 PREMIER)",
-      "lang": "Jaul: Friday (4 AM - 1 PM)"
+      "en": "Grrrrrrr",
+      "pl": "Wrrrrrr",
+      "lang": "Grrrrrrr"
     },
     {
-      "key": "book.otbm.kazordoon_thais_and_venore",
-      "category": "books",
+      "key": "monster.evil_sheep.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Kazordoon, Thais and Venore",
-      "pl": "Kazordoon, Thais i VeNiere",
-      "lang": "Kazordoon, Thais and Venore"
+      "en": "Grrrr",
+      "pl": "Wrrrr",
+      "lang": "Grrrr"
     },
     {
-      "key": "book.otbm.kingdoms_main_depot_house",
-      "category": "books",
+      "key": "monster.desperate_white_deer.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Kingdom's Main Depot House",
-      "pl": "Królestwo Main Skład dom",
-      "lang": "Kingdom's Main Depot House"
+      "en": "*bell*",
+      "pl": "*dzwonek, dzwon*",
+      "lang": "*bell*"
     },
     {
-      "key": "book.otbm.kingdoms_main_depot_house_57bef3f5",
-      "category": "books",
+      "key": "monster.desperate_white_deer.voice_3",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Kingdom's Main Depot House",
-      "pl": "Królestwo Main Skład dom",
-      "lang": "Kingdom's Main Depot House"
+      "en": "*sniff*",
+      "pl": "*I.*",
+      "lang": "*sniff*"
     },
     {
-      "key": "book.otbm.knight_and_paladin_trainer",
-      "category": "books",
+      "key": "monster.desperate_white_deer.voice_4",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Knight and Paladin Trainer",
-      "pl": "I. i Paladin Trener",
-      "lang": "Knight and Paladin Trainer"
+      "en": "*wheeze*",
+      "pl": "*I.*",
+      "lang": "*wheeze*"
     },
     {
-      "key": "book.otbm.knight_and_paladin_trainer_4f80eefa",
-      "category": "books",
+      "key": "monster.wolf.voice_2",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Knight and Paladin Trainer",
-      "pl": "I. i Paladin Trener",
-      "lang": "Knight and Paladin Trainer"
+      "en": "Grrrrrrr",
+      "pl": "Wrrrrrr",
+      "lang": "Grrrrrrr"
     },
     {
-      "key": "book.otbm.known_parts_of_the_magic",
-      "category": "books",
+      "key": "monster.starving_wolf.voice_2",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "\"known parts of the magic web in red and known gates in gold\"",
-      "pl": "\"kNiewn parts z the I. pajęczyna w I. i kNiewn brama w złota\"",
-      "lang": "\"known parts of the magic web in red and known gates in gold\""
+      "en": "Gnoorrr",
+      "pl": "GNieorrr",
+      "lang": "Gnoorrr"
     },
     {
-      "key": "book.otbm.kongra_the_king_of_the",
-      "category": "books",
+      "key": "monster.horse.voice_2",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Kongra - The king of the jungle",
-      "pl": "Kongra - The król z the dżungla",
-      "lang": "Kongra - The king of the jungle"
+      "en": "*snort*",
+      "pl": "*sNiert*",
+      "lang": "*snort*"
     },
     {
-      "key": "book.otbm.leave_dont_look_for_us",
-      "category": "books",
+      "key": "monster.cave_rat.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "LEAVE! DONT LOOK FOR US OR YOU WILL DIE!",
-      "pl": "I.! DONT LOOK DLA NAS LUB TY WILL DIE!",
-      "lang": "LEAVE! DONT LOOK FOR US OR YOU WILL DIE!"
+      "en": "Meep!",
+      "pl": "Mip!",
+      "lang": "Meep!"
     },
     {
-      "key": "book.otbm.legends_about_the_wand_of",
-      "category": "books",
+      "key": "monster.war_wolf.voice_2",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Legends about the wand of might.",
-      "pl": "Legenda o the czarodziejska różdżka, różdżka z might.",
-      "lang": "Legends about the wand of might."
+      "en": "Grrrrrrr",
+      "pl": "Wrrrrrr",
+      "lang": "Grrrrrrr"
     },
     {
-      "key": "book.otbm.legends_of_the_khalabal_i",
-      "category": "books",
+      "key": "monster.wild_horse.voice_2",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Legends of the Kha'labal I - The Hyena King",
-      "pl": "Legenda z the Kha'labal I - The Hyena Król",
-      "lang": "Legends of the Kha'labal I - The Hyena King"
+      "en": "*snort*",
+      "pl": "*sNiert*",
+      "lang": "*snort*"
     },
     {
-      "key": "book.otbm.legends_of_the_khalabal_ii",
-      "category": "books",
+      "key": "monster.grey_horse.voice_2",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Legends of the Kha'labal II - The Wailing Bride, Pt. 1",
-      "pl": "Legenda z the Kha'labal II - The I. Panna młoda, WF, wychowanie fizyczne. 1",
-      "lang": "Legends of the Kha'labal II - The Wailing Bride, Pt. 1"
+      "en": "*snort*",
+      "pl": "*sNiert*",
+      "lang": "*snort*"
     },
     {
-      "key": "book.otbm.legends_of_the_khalabal_ii_bb56f962",
-      "category": "books",
+      "key": "monster.mushroom_sniffer.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Legends of the Kha'labal II - The Wailing Bride, Pt. 2",
-      "pl": "Legenda z the Kha'labal II - The I. Panna młoda, WF, wychowanie fizyczne. 2",
-      "lang": "Legends of the Kha'labal II - The Wailing Bride, Pt. 2"
+      "en": "Sniff",
+      "pl": "I.",
+      "lang": "Sniff"
     },
     {
-      "key": "book.otbm.legends_of_the_khalabal_iii",
-      "category": "books",
+      "key": "monster.mushroom_sniffer.voice_2",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Legends of the Kha'labal III - Gha'Zuul the Necromancer",
-      "pl": "Legenda z the Kha'labal III - Gha'Zuul the Necromancer",
-      "lang": "Legends of the Kha'labal III - Gha'Zuul the Necromancer"
+      "en": "Oink",
+      "pl": "Chrum",
+      "lang": "Oink"
     },
     {
-      "key": "book.otbm.legends_of_the_khalabal_iv",
-      "category": "books",
+      "key": "monster.mushroom_sniffer.voice_3",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Legends of the Kha'labal IV - Drefia's Downfall",
-      "pl": "Legenda z the Kha'labal IV - Drefia's Upadek",
-      "lang": "Legends of the Kha'labal IV - Drefia's Downfall"
+      "en": "Oink oink",
+      "pl": "Chrum chrum",
+      "lang": "Oink oink"
     },
     {
-      "key": "book.otbm.letter_to_darruk_the_practical",
-      "category": "books",
+      "key": "monster.enraged_white_deer.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Letter to Darruk, the practical joker.",
-      "pl": "I. do Darruk, the I. dowcipniś, żartowniś.",
-      "lang": "Letter to Darruk, the practical joker."
+      "en": "*wheeze*",
+      "pl": "*I.*",
+      "lang": "*wheeze*"
     },
     {
-      "key": "book.otbm.library_and_upper_armoury",
-      "category": "books",
+      "key": "monster.enraged_white_deer.voice_3",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Library and Upper Armoury",
-      "pl": "Biblioteka i I. Armoury",
-      "lang": "Library and Upper Armoury"
+      "en": "*sniff*",
+      "pl": "*I.*",
+      "lang": "*sniff*"
     },
     {
-      "key": "book.otbm.lilys_shop_potions_for_everyone",
-      "category": "books",
+      "key": "monster.enraged_white_deer.voice_4",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Lily's shop - Potions for everyone!",
-      "pl": "Lilia I. - Napój dla każdy!",
-      "lang": "Lily's shop - Potions for everyone!"
+      "en": "*bell*",
+      "pl": "*dzwonek, dzwon*",
+      "lang": "*bell*"
     },
     {
-      "key": "book.otbm.living_quarters_and_mushroom_gardens",
-      "category": "books",
+      "key": "monster.brown_horse.voice_2",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Living Quarters And Mushroom Gardens",
-      "pl": "I. Quarters I Mushmiejsce I.",
-      "lang": "Living Quarters And Mushroom Gardens"
+      "en": "*snort*",
+      "pl": "*sNiert*",
+      "lang": "*snort*"
     },
     {
-      "key": "book.otbm.logs_and_leaks_the_daily",
-      "category": "books",
+      "key": "monster.water_buffalo.voice_2",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Logs and Leaks, the Daily Life of a Captain",
-      "pl": "Logs i I., the I. I. z jeden I.",
-      "lang": "Logs and Leaks, the Daily Life of a Captain"
+      "en": "Gnoorr!",
+      "pl": "GNieorr!",
+      "lang": "Gnoorr!"
     },
     {
-      "key": "book.otbm.look_at_the_4_and",
-      "category": "books",
+      "key": "monster.water_buffalo.voice_4",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "look at the 4 and ignore the 2",
-      "pl": "look w the 4 i igNiere the 2",
-      "lang": "look at the 4 and ignore the 2"
+      "en": "<snort>",
+      "pl": "<sniert>",
+      "lang": "<snort>"
     },
     {
-      "key": "book.otbm.lower_areas_access_denied",
-      "category": "books",
+      "key": "monster.cat.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Lower Areas - Access Denied!",
-      "pl": "I. Obszar, region - I. Denied!",
-      "lang": "Lower Areas - Access Denied!"
+      "en": "Mew!",
+      "pl": "Miauczeć!",
+      "lang": "Mew!"
     },
     {
-      "key": "book.otbm.magic_and_potion_research_lab",
-      "category": "books",
+      "key": "monster.hyaena.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Magic and Potion Research Lab",
-      "pl": "I. i Napój I. Laboratorium",
-      "lang": "Magic and Potion Research Lab"
+      "en": "Grrrrrr",
+      "pl": "Wrrrr",
+      "lang": "Grrrrrr"
     },
     {
-      "key": "book.otbm.mail_room_depot_stores_bank",
-      "category": "books",
+      "key": "monster.stone_rhino.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Mail Room, Depot, Stores, Bank",
-      "pl": "I. miejsce, Skład, I., Bank",
-      "lang": "Mail Room, Depot, Stores, Bank"
+      "en": "SNIFF!",
+      "pl": "I.!",
+      "lang": "SNIFF!"
     },
     {
-      "key": "book.otbm.man_is_a_rope_funambulating",
-      "category": "books",
+      "key": "monster.fox.voice_2",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "\"Man is a rope, funambulating between the animals and the gods.\" -  Tarrakosther Nimbos.",
-      "pl": "\"Man jest jeden I., funambulating pomiędzy, między the I. i the gods.\" - Tarrakosther Nimbos.",
-      "lang": "\"Man is a rope, funambulating between the animals and the gods.\" -  Tarrakosther Nimbos."
+      "en": "Grrrrrrr",
+      "pl": "Wrrrrrr",
+      "lang": "Grrrrrrr"
     },
     {
-      "key": "book.otbm.manifest_of_the_yalahari_part",
-      "category": "books",
+      "key": "monster.clomp.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Manifest of the Yalahari, Part I",
-      "pl": "I. z the Yalahari, Part I",
-      "lang": "Manifest of the Yalahari, Part I"
+      "en": "Snort!",
+      "pl": "SNiert!",
+      "lang": "Snort!"
     },
     {
-      "key": "book.otbm.manifest_of_the_yalahari_part_41b75d31",
-      "category": "books",
+      "key": "monster.clomp.voice_2",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Manifest of the Yalahari, Part II",
-      "pl": "I. z the Yalahari, Part II",
-      "lang": "Manifest of the Yalahari, Part II"
+      "en": "Grunt!",
+      "pl": "I.!",
+      "lang": "Grunt!"
     },
     {
-      "key": "book.otbm.many_are_the_legends_concerning",
-      "category": "books",
+      "key": "monster.clomp.voice_3",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Many are the legends concerning Gha'Zuul",
-      "pl": "Wiele, dużo są the legenda odnoszący się, tyczący się, co się tyczy Gha'Zuul",
-      "lang": "Many are the legends concerning Gha'Zuul"
+      "en": "Snarl!",
+      "pl": "I.!",
+      "lang": "Snarl!"
     },
     {
-      "key": "book.otbm.may_banor_bless_our_souls",
-      "category": "books",
+      "key": "monster.rat.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "May Banor bless our souls.",
-      "pl": "A. móc BaNier błogosławić nasz dusza.",
-      "lang": "May Banor bless our souls."
+      "en": "Meep!",
+      "pl": "Mip!",
+      "lang": "Meep!"
     },
     {
-      "key": "book.otbm.may_crunor_protect_our_health",
-      "category": "books",
+      "key": "monster.vampire_pig.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "May Crunor protect our health and essence.",
-      "pl": "A. móc CruNier chronić nasz zdrowie i istota, podstawa.",
-      "lang": "May Crunor protect our health and essence."
+      "en": "Oink",
+      "pl": "Chrum",
+      "lang": "Oink"
     },
     {
-      "key": "book.otbm.may_it_flourish_and_grow",
-      "category": "books",
+      "key": "monster.vampire_pig.voice_2",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "May it flourish and grow.",
-      "pl": "A. móc to I. i I..",
-      "lang": "May it flourish and grow."
+      "en": "Oink oink",
+      "pl": "Chrum chrum",
+      "lang": "Oink oink"
     },
     {
-      "key": "book.otbm.may_the_archangels_guide_and",
-      "category": "books",
+      "key": "monster.boar.voice_2",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "May the archangels guide and guard us.",
-      "pl": "A. móc the archangels I. i I. nas.",
-      "lang": "May the archangels guide and guard us."
+      "en": "Grunt",
+      "pl": "I.",
+      "lang": "Grunt"
     },
     {
-      "key": "book.otbm.may_the_kiss_of_kirok",
-      "category": "books",
+      "key": "monster.husky.voice_2",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "May the kiss of Kirok bring us inspiration.",
-      "pl": "A. móc the całować z Kirok bring nas inspiracja, natchnienie.",
-      "lang": "May the kiss of Kirok bring us inspiration."
+      "en": "Grrrrrrr",
+      "pl": "Wrrrrrr",
+      "lang": "Grrrrrrr"
     },
     {
-      "key": "book.otbm.may_uman_teach_us_to",
-      "category": "books",
+      "key": "monster.dromedary.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "May Uman teach us to use his gifts and to use them wisely.",
-      "pl": "A. móc Uman uczyć nas do use jego dar, podarunek i do use ich I..",
-      "lang": "May Uman teach us to use his gifts and to use them wisely."
+      "en": "Snort",
+      "pl": "SNiert",
+      "lang": "Snort"
     },
     {
-      "key": "book.otbm.meeting_every_day_at_5",
-      "category": "books",
+      "key": "monster.dromedary.voice_2",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Meeting every day at 5 pm.",
-      "pl": "Spotkanie I. dzień w 5 premier.",
-      "lang": "Meeting every day at 5 pm."
+      "en": "Grunt!",
+      "pl": "I.!",
+      "lang": "Grunt!"
     },
     {
-      "key": "book.otbm.mehrah_asram_cha_mehe_than",
-      "category": "books",
+      "key": "monster.donkey.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Mehrah asram cha mehe than. Uth a'thul at cha there. Orum tha cha elik jahara. Udhun zah fahr mal. Chamek at uthul hatradek asram. Mehrem alir iktha at uthun. Kasin tha Ur ch helim doh. Mah dah direm. Athul as hathu, athul as dofah, athul as mereth. Cha ukhtu muhn dahra. Sethor mah amin dah. At meruhm cha me dah. Chamek persim kaharah bah tufi. Moh dah rah. Moh Udhin cha uthul. Meheth Zuhl tha berah.",
-      "pl": "Mehrah asram cha mehe z niż. Uth a'thul w cha there. Orum tha cha elik jahara. Udhun zah fahr mal. Chamek w uthul hatradek asram. Mehrem alir iktha w uthun. Kasin tha Ur ch helim doh. Mah dah direm. Athul as hathu, athul as dofah, athul as mereth. Cha ukhtu muhn dahra. Sethor mah amin dah. W meruhm cha mnie, mi dah. Chamek persim kaharah bah tufi. Moh dah rah. Moh Udhin cha uthul. Meheth Zuhl tha berah.",
-      "lang": "Mehrah asram cha mehe than. Uth a'thul at cha there. Orum tha cha elik jahara. Udhun zah fahr mal. Chamek at uthul hatradek asram. Mehrem alir iktha at uthun. Kasin tha Ur ch helim doh. Mah dah direm. Athul as hathu, athul as dofah, athul as mereth. Cha ukhtu muhn dahra. Sethor mah amin dah. At meruhm cha me dah. Chamek persim kaharah bah tufi. Moh dah rah. Moh Udhin cha uthul. Meheth Zuhl tha berah."
+      "en": "Grunt!",
+      "pl": "I.!",
+      "lang": "Grunt!"
     },
     {
-      "key": "book.otbm.memorial_of_the_sunken_quarter",
-      "category": "books",
+      "key": "monster.white_deer.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Memorial of the Sunken Quarter",
-      "pl": "I. z the Zatopiony Kwarta",
-      "lang": "Memorial of the Sunken Quarter"
+      "en": "*bell*",
+      "pl": "*dzwonek, dzwon*",
+      "lang": "*bell*"
     },
     {
-      "key": "book.otbm.mission_teleporter_crystal_grounds",
-      "category": "books",
+      "key": "monster.white_deer.voice_3",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Mission Teleporter Crystal Grounds",
-      "pl": "Misja teleportowaće... Crystal Ziemia",
-      "lang": "Mission Teleporter Crystal Grounds"
+      "en": "*sniff*",
+      "pl": "*I.*",
+      "lang": "*sniff*"
     },
     {
-      "key": "book.otbm.mission_teleporter_golem_workshop",
-      "category": "books",
+      "key": "monster.white_deer.voice_4",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Mission Teleporter Golem Workshop",
-      "pl": "Misja teleportowaće... Golem Warsztat",
-      "lang": "Mission Teleporter Golem Workshop"
+      "en": "*wheeze*",
+      "pl": "*I.*",
+      "lang": "*wheeze*"
     },
     {
-      "key": "book.otbm.mission_teleporter_hot_spot",
-      "category": "books",
+      "key": "monster.pig.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Mission Teleporter Hot Spot",
-      "pl": "Misja teleportowaće... Gorący Spot",
-      "lang": "Mission Teleporter Hot Spot"
+      "en": "Oink oink",
+      "pl": "Chrum chrum",
+      "lang": "Oink oink"
     },
     {
-      "key": "book.otbm.mission_teleporter_truffels_garden",
-      "category": "books",
+      "key": "monster.pig.voice_2",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Mission Teleporter Truffels Garden",
-      "pl": "Misja teleportowaće... Truffels I.",
-      "lang": "Mission Teleporter Truffels Garden"
+      "en": "Oink",
+      "pl": "Chrum",
+      "lang": "Oink"
     },
     {
-      "key": "book.otbm.much_youve_already_deposited",
-      "category": "books",
+      "key": "monster.panda.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "much you've already deposited.",
-      "pl": "dużo, bardzo you've już przetwarzanie tekstułjedenćed.",
-      "lang": "much you've already deposited."
+      "en": "Groar",
+      "pl": "ryk",
+      "lang": "Groar"
     },
     {
-      "key": "book.otbm.mumification_a_case_study",
-      "category": "books",
+      "key": "monster.panda.voice_2",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Mumification, a case study",
-      "pl": "Mumification, jeden przypadek I.",
-      "lang": "Mumification, a case study"
+      "en": "Grrrr",
+      "pl": "Wrrrr",
+      "lang": "Grrrr"
     },
     {
-      "key": "book.otbm.mushroom_fields_downstairs",
-      "category": "books",
+      "key": "monster.bear.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Mushroom Fields Downstairs",
-      "pl": "Mushmiejsce I. I.",
-      "lang": "Mushroom Fields Downstairs"
+      "en": "Grrrr",
+      "pl": "Wrrrr",
+      "lang": "Grrrr"
     },
     {
-      "key": "book.otbm.name_or_ask_about_their",
-      "category": "books",
+      "key": "monster.bear.voice_2",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "name or ask about their job. Just try it out!",
-      "pl": "nazwa lub I. o ich job. Just I. to out!",
-      "lang": "name or ask about their job. Just try it out!"
+      "en": "Groar",
+      "pl": "ryk",
+      "lang": "Groar"
     },
     {
-      "key": "book.otbm.natural_toxins_and_venoms_in",
-      "category": "books",
+      "key": "monster.haunted_treeling.voice_3",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Natural toxins and venoms in the Darashian desert. Revised version, by Dark Priestess Hyllissa Wolfsbane.",
-      "pl": "I. toxins i veNiems w the Darashian desert. Revised wersja, by I. Kapłanka Hyllissa Wolfsbane.",
-      "lang": "Natural toxins and venoms in the Darashian desert. Revised version, by Dark Priestess Hyllissa Wolfsbane."
+      "en": "Knorrrrrr",
+      "pl": "KNierrrrrr",
+      "lang": "Knorrrrrr"
     },
     {
-      "key": "book.otbm.necromancer_halls_directions",
-      "category": "books",
+      "key": "monster.rootthing_amber_shaper.voice_2",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Necromancer Halls - Directions:",
-      "pl": "Necromancer Korytarz, przedpokój, hall - Kierunek:",
-      "lang": "Necromancer Halls - Directions:"
+      "en": "RATTLE!",
+      "pl": "I.!",
+      "lang": "RATTLE!"
     },
     {
-      "key": "book.otbm.necromancy_a_philosophical_essay_by",
-      "category": "books",
+      "key": "monster.werewolf.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Necromancy, a Philosophical Essay, by the Dark Brother Alonso de Iverra",
-      "pl": "Necromancy, jeden Philosophical Wypracowanie, by the I. Brat Alonso de Iverra",
-      "lang": "Necromancy, a Philosophical Essay, by the Dark Brother Alonso de Iverra"
+      "en": "GRRR",
+      "pl": "Wrr",
+      "lang": "GRRR"
     },
     {
-      "key": "book.otbm.necromants_nectar_is_crucial_to",
-      "category": "books",
+      "key": "monster.werehyaena.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "'necromants nectar' is crucial to",
-      "pl": "'necromants nektar' jest crucial do",
-      "lang": "'necromants nectar' is crucial to"
+      "en": "Snarl!",
+      "pl": "I.!",
+      "lang": "Snarl!"
     },
     {
-      "key": "book.otbm.new_we_are_now_exchanging",
-      "category": "books",
+      "key": "monster.wereboar.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "GRUNT",
+      "pl": "I.",
+      "lang": "GRUNT"
+    },
+    {
+      "key": "monster.werefox.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Yelp!",
+      "pl": "Zaskowytać!",
+      "lang": "Yelp!"
+    },
+    {
+      "key": "monster.werefox.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Grrrrrr",
+      "pl": "Wrrrr",
+      "lang": "Grrrrrr"
+    },
+    {
+      "key": "monster.werebear.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "GRRR",
+      "pl": "Wrr",
+      "lang": "GRRR"
+    },
+    {
+      "key": "monster.werepanther.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Grrr",
+      "pl": "Wrr",
+      "lang": "Grrr"
+    },
+    {
+      "key": "monster.cunning_werepanther.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Grrr",
+      "pl": "Wrr",
+      "lang": "Grrr"
+    },
+    {
+      "key": "monster.quara_pincher_scout.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Clap!",
+      "pl": "I.!",
+      "lang": "Clap!"
+    },
+    {
+      "key": "monster.quara_pincher.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Clap!",
+      "pl": "I.!",
+      "lang": "Clap!"
+    },
+    {
+      "key": "monster.calamary.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bubble!",
+      "pl": "I.!",
+      "lang": "Bubble!"
+    },
+    {
+      "key": "monster.quara_plunderer.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Burp!",
+      "pl": "I.!",
+      "lang": "Burp!"
+    },
+    {
+      "key": "monster.wild_warrior.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "An enemy!",
+      "pl": "Jeden wróg!",
+      "lang": "An enemy!"
+    },
+    {
+      "key": "monster.gladiator.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Fight!",
+      "pl": "I.!",
+      "lang": "Fight!"
+    },
+    {
+      "key": "monster.gladiator.voice_4",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Take this!",
+      "pl": "Take I.!",
+      "lang": "Take this!"
+    },
+    {
+      "key": "monster.pirate_buccaneer.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Give up!",
+      "pl": "Daj góra!",
+      "lang": "Give up!"
+    },
+    {
+      "key": "monster.pirate_cutthroat.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Give up!",
+      "pl": "Daj góra!",
+      "lang": "Give up!"
+    },
+    {
+      "key": "monster.valkyrie.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Head off!",
+      "pl": "I. off!",
+      "lang": "Head off!"
+    },
+    {
+      "key": "monster.pirate_marauder.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Give up!",
+      "pl": "Daj góra!",
+      "lang": "Give up!"
+    },
+    {
+      "key": "monster.renegade_knight.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Take this!",
+      "pl": "Take I.!",
+      "lang": "Take this!"
+    },
+    {
+      "key": "monster.pirate_corsair.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Give up!",
+      "pl": "Daj góra!",
+      "lang": "Give up!"
+    },
+    {
+      "key": "monster.novice_of_the_cult.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Fear us!",
+      "pl": "I. nas!",
+      "lang": "Fear us!"
+    },
+    {
+      "key": "monster.ice_witch.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Freeze!",
+      "pl": "I.!",
+      "lang": "Freeze!"
+    },
+    {
+      "key": "monster.barbarian_bloodwalker.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "SLAUGHTER!",
+      "pl": "I.!",
+      "lang": "SLAUGHTER!"
+    },
+    {
+      "key": "monster.barbarian_bloodwalker.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "CARNAGE!",
+      "pl": "RZEŹ!",
+      "lang": "CARNAGE!"
+    },
+    {
+      "key": "monster.assassin.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Die!",
+      "pl": "UMIERAĆ!",
+      "lang": "Die!"
+    },
+    {
+      "key": "monster.askarak_lord.voice_5",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "WE RULE!",
+      "pl": "MY I.!",
+      "lang": "WE RULE!"
+    },
+    {
+      "key": "monster.askarak_prince.voice_5",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "WE RULE!",
+      "pl": "MY I.!",
+      "lang": "WE RULE!"
+    },
+    {
+      "key": "monster.fire_devil.voice_1",
+      "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "NEW - we are now exchanging coins!",
-      "pl": "NEW - my są Niew exchanging monety!",
-      "lang": "NEW - we are now exchanging coins!"
+      "en": "Hot, eh?",
+      "pl": "Gorący, co?, nie??",
+      "lang": "Hot, eh?"
     }
   ],
   "length_ratio_issues": [
@@ -3705,9 +3689,9 @@
     }
   ],
   "auto_fix": {
-    "attempted": 80,
-    "applied": 43,
-    "skipped": 37,
+    "attempted": 0,
+    "applied": 0,
+    "skipped": 0,
     "errors": 0
   }
 }

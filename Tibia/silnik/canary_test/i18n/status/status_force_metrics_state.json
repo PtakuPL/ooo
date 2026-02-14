@@ -1,21 +1,21 @@
 {
-  "timestamp": "2026-02-14T10:10:52.957953Z",
+  "timestamp": "2026-02-14T11:43:48.173017Z",
   "cycle": 1,
   "force": true,
-  "reason": "delta:translated_keys:643025->643183",
+  "reason": "delta:translated_keys:662210->662255",
   "metrics": {
-    "translated_keys": 643183,
+    "translated_keys": 662255,
     "total_reference_keys": 2786472,
-    "missing_keys": 101318,
-    "missing_files": 3,
-    "guard_fail": 10,
+    "missing_keys": 98174,
+    "missing_files": 0,
+    "guard_fail": 0,
     "strict_missing_file": 0,
     "strict_missing_key": 0,
-    "strict_skipped_done": 240,
+    "strict_skipped_done": 1498,
     "blockers_missing_keys_total": 0,
     "blockers_missing_lang_files": 0,
-    "recent_translated": 97,
+    "recent_translated": 80,
     "i18n_live_json_files": 2052,
-    "i18n_live_signature": "78e9823c971462764a0998b9a7018c5c3283bb9f"
+    "i18n_live_signature": "2b4a829c12535996086662e92447a2bee3a79712"
   }
 }

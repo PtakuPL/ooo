@@ -1,5 +1,5 @@
 {
-  "system.blessing.already": "You are already blessed.",
+  "system.blessing.already": "[EN] You are already blessed.",
   "system.blessing.received": "Vous avez reçu les {1} bénédictions restantes.",
   "system.experience.gained": "Vous avez gagné {1} points d'expérience.",
   "system.item.received": "Vous avez obtenu {1}.",
@@ -7,7 +7,7 @@
   "system.mount.received": "Félicitations, vous avez reçu la monture {1}.",
   "system.stash.count": "Votre réserve contient {1} objets.",
   "system.store.check_inbox": "Veuillez vérifier que vous avez des emplacements libres dans votre boîte de réception de la boutique.",
-  "system.trade.bought": "Bought {1}x {2} for {3} gold.",
-  "system.trade.sold": "Sold {1}x {2} for {3} gold.",
+  "system.trade.bought": "[EN] Bought {1}x {2} for {3} gold.",
+  "system.trade.sold": "[EN] Sold {1}x {2} for {3} gold.",
   "system.venture.decay": "Empruntez la voie de la décomposition !"
 }

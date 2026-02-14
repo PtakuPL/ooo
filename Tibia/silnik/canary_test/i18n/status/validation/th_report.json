@@ -2,23 +2,24 @@
   "lang": "th",
   "script_group": "exotic",
   "total_keys": 53586,
-  "translated": 35696,
-  "identical_to_en": 34957,
-  "placeholder_keys": 15735,
-  "coverage_pct": 66.6,
-  "issues_total": 130,
+  "translated": 4688,
+  "identical_to_en": 3709,
+  "placeholder_keys": 46743,
+  "coverage_pct": 8.7,
+  "issues_total": 132,
   "issues_by_type": {
-    "script_wrong_script": 122,
+    "script_wrong_script": 123,
     "V1_placeholder_mismatch": 7,
+    "V4_artifact": 1,
     "V5_pipe_mismatch": 1
   },
   "issues_by_severity": {
     "CRITICAL": 8,
-    "HIGH": 122,
+    "HIGH": 124,
     "MEDIUM": 0,
     "LOW": 0
   },
-  "score": 99.4,
+  "score": 95.5,
   "worst_keys": [
     {
       "key": "scripts.actions_rewards.msg_1",
@@ -81,6 +82,18 @@
       "severity": "HIGH"
     },
     {
+      "key": "achievement.292.name",
+      "category": "achievements",
+      "type": "script_wrong_script",
+      "severity": "HIGH"
+    },
+    {
+      "key": "achievement.317.description",
+      "category": "achievements",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
       "key": "event.player.msg1",
       "category": "events",
       "type": "script_wrong_script",
@@ -127,27 +140,15 @@
       "category": "items",
       "type": "script_wrong_script",
       "severity": "HIGH"
-    },
-    {
-      "key": "item.14171.name",
-      "category": "items",
-      "type": "script_wrong_script",
-      "severity": "HIGH"
-    },
-    {
-      "key": "item.15700.name",
-      "category": "items",
-      "type": "script_wrong_script",
-      "severity": "HIGH"
     }
   ],
   "crossref": {
-    "enabled": true,
-    "issues_total": 407,
+    "enabled": false,
+    "issues_total": 413,
     "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 7,
-    "auto_fix_applied": 80
+    "length_ratio": 13,
+    "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-14T11:20:57.422560Z"
+  "validated_at": "2026-02-14T11:45:43.334189Z"
 }

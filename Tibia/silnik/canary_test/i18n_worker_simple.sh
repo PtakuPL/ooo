@@ -10089,14 +10089,26 @@ auto_translate_keys() {
     local target_lang="$1"
     local json_file="$2"
     local keys_count="$3"
-    # Jeśli TRANSLATE_LIMIT > 0, użyj go; w przeciwnym razie użyj keys_count.
-    # (TRANSLATE_LIMIT bywa ustawiony na 0, a wtedy nie powinien nadpisywać keys_count)
+    # Limit efektywny:
+    # - gdy oba limity są dodatnie, użyj mniejszego (AUTO:<...>:N nie może być rozszerzone do globalnego 80)
+    # - gdy tylko jeden jest dodatni, użyj tego dodatniego
+    # - 0 oznacza brak limitu (legacy)
     local translate_limit="0"
-    if [ "${TRANSLATE_LIMIT:-0}" -gt 0 ] 2>/dev/null; then
-        translate_limit="$TRANSLATE_LIMIT"
+    local global_limit="${TRANSLATE_LIMIT:-0}"
+    local requested_limit="${keys_count:-0}"
+    if [ "$global_limit" -gt 0 ] 2>/dev/null && [ "$requested_limit" -gt 0 ] 2>/dev/null; then
+        if [ "$requested_limit" -lt "$global_limit" ]; then
+            translate_limit="$requested_limit"
+        else
+            translate_limit="$global_limit"
+        fi
+    elif [ "$global_limit" -gt 0 ] 2>/dev/null; then
+        translate_limit="$global_limit"
+    elif [ "$requested_limit" -gt 0 ] 2>/dev/null; then
+        translate_limit="$requested_limit"
     else
-        translate_limit="${keys_count:-0}"
-    fi  # 0 = brak limitu
+        translate_limit="0"
+    fi
     
     local strict_mode="false"
     if [ "${TRANSLATIONS_STRICT:-false}" = "true" ]; then
@@ -20129,6 +20141,7 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
             STOP_AFTER_CYCLE="false"
             MODE_EXTRA2=""  # Ważne: reset na początku cyklu, aby dispatcher nie był pomijany
             FORCE_LANG_VALIDATION=""
+            AUTO_COMMAND_FAST_MODE=false
 
             # === 8.3: Reset translate_limit na początku cyklu (dla adaptive batch recalc) ===
             TRANSLATE_LIMIT="${USER_TRANSLATE_LIMIT:-0}"
@@ -20330,13 +20343,20 @@ BEGIN { done=0 }
                         # Format: AUTO:<lang>:<json_file>:<limit>
                         AUTO_LANG=$(echo "$CMD" | cut -d: -f2)
                         AUTO_JSON=$(echo "$CMD" | cut -d: -f3)
-                        AUTO_LIMIT=$(echo "$CMD" | cut -d: -f4)
+                        AUTO_LIMIT_RAW=$(echo "$CMD" | cut -d: -f4)
+                        AUTO_LIMIT=0
+                        if [[ "$AUTO_LIMIT_RAW" =~ ^[0-9]+$ ]]; then
+                            AUTO_LIMIT="$AUTO_LIMIT_RAW"
+                        fi
                         echo "🎯 Wymuszam AUTO_TRANSLATE: $AUTO_LANG / $AUTO_JSON (limit: $AUTO_LIMIT)"
                         MODE_TYPE="AUTO_TRANSLATE"
                         MODE_CAT="$AUTO_LANG"
                         MODE_COUNT="${AUTO_JSON:-npc.json}"
-                        MODE_EXTRA="${AUTO_LIMIT:-0}"
+                        MODE_EXTRA="$AUTO_LIMIT"
                         MODE_EXTRA2="AUTO"  # znacznik żeby nie nadpisywać dispatchera
+                        if [ "$AUTO_LIMIT" -gt 0 ] 2>/dev/null; then
+                            AUTO_COMMAND_FAST_MODE=true
+                        fi
                         ;;
                     SWITCH:*)
                         # Format: SWITCH:<lang>[:json_file[:limit]]
@@ -21274,6 +21294,10 @@ PY
                     if [ "${PARALLEL_LANGS_PER_CYCLE:-1}" -gt 1 ] 2>/dev/null && [ "$TRANSLATIONS_ONLY" = "true" ]; then
                         PARALLEL_DONE=1  # już przetworzony 1 język
                         PARALLEL_PRIMARY_LANG="$MODE_CAT"
+                        if [ "$AUTO_COMMAND_FAST_MODE" = "true" ]; then
+                            PARALLEL_DONE="${PARALLEL_LANGS_PER_CYCLE:-1}"
+                            echo "   ⚡ FAST AUTO: pomijam parallel langs dla komendy wymuszonej z limitem"
+                        fi
                         while [ "$PARALLEL_DONE" -lt "${PARALLEL_LANGS_PER_CYCLE:-3}" ]; do
                             # Wyczyść cache strict selector aby wybrał nowy target
                             rm -f "$STATUS_DIR/translation_strict_candidates_cache.json" 2>/dev/null || true
@@ -21310,19 +21334,23 @@ PY
                     fi
 
                     # === Sekcja 12.5: Repair identical_to_en bonus round ===
-                    repair_identical_bonus_round "$CYCLE"
-
-                    # Cykliczny audyt jakości (co QUALITY_AUDIT_INTERVAL cykli)
-                    run_quality_audit "$CYCLE"
-
-                    # === Faza 6: Formalna walidacja tierów ===
-                    validate_tier_quality "$CYCLE"
-
-                    # Pełna walidacja per-język (co LANG_VALIDATION_INTERVAL cykli)
-                    if [ -n "$FORCE_LANG_VALIDATION" ] && [ "$FORCE_LANG_VALIDATION" != "all" ]; then
-                        run_full_lang_validation "$CYCLE" "$FORCE_LANG_VALIDATION"
+                    if [ "$AUTO_COMMAND_FAST_MODE" = "true" ]; then
+                        echo "   ⚡ FAST AUTO: pomijam repair/audit/tier-validation/lang-validation w tym cyklu"
                     else
-                        run_full_lang_validation "$CYCLE"
+                        repair_identical_bonus_round "$CYCLE"
+
+                        # Cykliczny audyt jakości (co QUALITY_AUDIT_INTERVAL cykli)
+                        run_quality_audit "$CYCLE"
+
+                        # === Faza 6: Formalna walidacja tierów ===
+                        validate_tier_quality "$CYCLE"
+
+                        # Pełna walidacja per-język (co LANG_VALIDATION_INTERVAL cykli)
+                        if [ -n "$FORCE_LANG_VALIDATION" ] && [ "$FORCE_LANG_VALIDATION" != "all" ]; then
+                            run_full_lang_validation "$CYCLE" "$FORCE_LANG_VALIDATION"
+                        else
+                            run_full_lang_validation "$CYCLE"
+                        fi
                     fi
                     ;;
                 IDLE)

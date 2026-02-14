@@ -4,7 +4,7 @@
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-14T11:17:30.548106Z",
+  "checked_at": "2026-02-14T11:42:32.356674Z",
   "issues_total": 406,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -599,15 +599,6 @@
       "lang": "Golden Sands"
     },
     {
-      "key": "achievement.381.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Kingly deer mostly prefer elves as friends and familiars. This one, however, decided to favour you as a confidant and rider. Well done!",
-      "pl": "Król jeleń w większości, przede wszystkim woleć, preferować elves as przyjaciel, dobry kolega, kolega i znajomy. I. I., jednak, decided do favour ty as jeden powiernik i jeździec. Well over and done with!",
-      "lang": "Kingly deer mostly prefer elves as friends and familiars. This one, however, decided to favour you as a confidant and rider. Well done!"
-    },
-    {
       "key": "achievement.382.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -615,123 +606,6 @@
       "en": "Lovely Dots",
       "pl": "Cudowny, wspaniały I.",
       "lang": "Lovely Dots"
-    },
-    {
-      "key": "achievement.382.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Finding a four-leaved clover is always a sign of luck. And as luck would have it, you even baited a lovely dotted ladybug. Lucky you!",
-      "pl": "Rezultat, stwierdzenie jeden cztery-leaved koniczyna jest zawsze jeden I. z good luck. I as good luck would masz to, ty I. I. jeden cudowny, wspaniały kropkowany ladybug. Szczęśliwy ty!",
-      "lang": "Finding a four-leaved clover is always a sign of luck. And as luck would have it, you even baited a lovely dotted ladybug. Lucky you!"
-    },
-    {
-      "key": "achievement.383.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Way to Hell",
-      "pl": "Way do Piekło",
-      "lang": "Way to Hell"
-    },
-    {
-      "key": "achievement.383.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "This fiery beast really tried to give you hell. But not even a magma crawler can resist a mug of spicy, hot glow wine. Skol!",
-      "pl": "I. rozogniony zwierzę I. tried do give ty piekło. I. Niet I. jeden magma crawler może stawiać opór, opierać się, opierać jeden I. z dobrze przyprawiony, gorący I. wino. Skol!",
-      "lang": "This fiery beast really tried to give you hell. But not even a magma crawler can resist a mug of spicy, hot glow wine. Skol!"
-    },
-    {
-      "key": "achievement.384.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Beneath the Sea",
-      "pl": "Pod the Morze",
-      "lang": "Beneath the Sea"
-    },
-    {
-      "key": "achievement.384.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Not really twenty thousand miles, but you had to dive a fair way beneath the sea to find your personal Manta Ray.",
-      "pl": "Niet I. dwadzieścia tysiąc mila, I. ty miał do I. jeden I. way pod the morze do I. twój osobisty Manta Promień.",
-      "lang": "Not really twenty thousand miles, but you had to dive a fair way beneath the sea to find your personal Manta Ray."
-    },
-    {
-      "key": "achievement.385.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "By many it is considered a myth like the Yeti. But you came, saw and tamed it. Now you're the proud rider of a midnight panther, black as a starless night.",
-      "pl": "By wiele, dużo to jest uważać jeden mit like the Yeti. I. ty came, saw i tamed to. Niew you're the dumny jeździec z jeden I. pantera, I. as jeden starless night.",
-      "lang": "By many it is considered a myth like the Yeti. But you came, saw and tamed it. Now you're the proud rider of a midnight panther, black as a starless night."
-    },
-    {
-      "key": "achievement.386.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Lion King",
-      "pl": "Lew Król",
-      "lang": "Lion King"
-    },
-    {
-      "key": "achievement.386.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "By mastering the secrets of Lion's Rock, you proved yourself worthy to face the mighty lions there. One of them even chose to accompany you.",
-      "pl": "By I. the I. z Lew Rock, ty proved siebie godny, znakomity do I. the I. lew there. I. z ich I. chose do towarzyszyć ty.",
-      "lang": "By mastering the secrets of Lion's Rock, you proved yourself worthy to face the mighty lions there. One of them even chose to accompany you."
-    },
-    {
-      "key": "achievement.387.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Pecking Order",
-      "pl": "I. Order",
-      "lang": "Pecking Order"
-    },
-    {
-      "key": "achievement.387.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ah, the old carrot-on-a-stick trick. Well done! You've made the racing bird accept you as a rider and provider. Just don't feed it your fingers.",
-      "pl": "Och, ach, no, o, the I. marchewka-na-jeden-I. I.. Well over and done with! You've zrobiony the wyścigi I. przyjmować, uznawać ty as jeden jeździec i provider. Just don't I. to twój I..",
-      "lang": "Ah, the old carrot-on-a-stick trick. Well done! You've made the racing bird accept you as a rider and provider. Just don't feed it your fingers."
-    },
-    {
-      "key": "achievement.388.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Pig-Headed",
-      "pl": "Świnia-I.",
-      "lang": "Pig-Headed"
-    },
-    {
-      "key": "achievement.388.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Whoa, sow long! This boar is like a force of nature, breaking through the undergrowth of all the Tibian forests and all records of speed. Hang on!",
-      "pl": "Whoa, sow long! I. knur jest like jeden I. z natura, I. through the poszycie z wszystkie the Tibian las i wszystkie records z I.. Hang na!",
-      "lang": "Whoa, sow long! This boar is like a force of nature, breaking through the undergrowth of all the Tibian forests and all records of speed. Hang on!"
-    },
-    {
-      "key": "achievement.389.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Personal Nightmare",
-      "pl": "Osobisty Zły sen",
-      "lang": "Personal Nightmare"
     },
     {
       "key": "achievement.389.description",
@@ -1560,15 +1434,6 @@
       "en": "Tall trees, deep forests and and the beauty of Ab'Dendriel - you really know every corner of the elven lands now.",
       "pl": "Wysoki drzewo, I. las i i the I. z Ab'Dendriel - ty I. kNiew I. corner z the elven lands Niew.",
       "lang": "Tall trees, deep forests and and the beauty of Ab'Dendriel - you really know every corner of the elven lands now."
-    },
-    {
-      "key": "achievement.448.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Long Live the Queen",
-      "pl": "Long Live the Królowa",
-      "lang": "Long Live the Queen"
     },
     {
       "key": "achievement.448.description",
@@ -3612,6 +3477,141 @@
       "en": "1. Put a bunch of sugar cane into the machine",
       "pl": "1. Put jeden bunch z I. I. a. do the I.",
       "lang": "1. Put a bunch of sugar cane into the machine"
+    },
+    {
+      "key": "book.otbm.1st_floor_interior_design_take",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "1st floor: Interior Design (take elevator)",
+      "pl": "1st I.: I. Design (take winda)",
+      "lang": "1st floor: Interior Design (take elevator)"
+    },
+    {
+      "key": "book.otbm.1st_floor_magic_emporium",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "1st floor: Magic Emporium",
+      "pl": "1st I.: I. Emporium",
+      "lang": "1st floor: Magic Emporium"
+    },
+    {
+      "key": "book.otbm.1st_floor_the_archers_grounds",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "1st floor: The Archer's Grounds - Distance Weapons and Paladin Spells",
+      "pl": "1st I.: The Łucznik Ziemia - I. Broń i Paladin zaklęCentalna Agencja Wywiadowcza",
+      "lang": "1st floor: The Archer's Grounds - Distance Weapons and Paladin Spells"
+    },
+    {
+      "key": "book.otbm.20_tricks_to_get_peoples",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "20 Tricks to Get People's Money",
+      "pl": "20 I. do Get I. Pieniądze",
+      "lang": "20 Tricks to Get People's Money"
+    },
+    {
+      "key": "book.otbm.2_dont_be_late_for",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "2. Don't be late for lessons and training sessions.",
+      "pl": "2. Don't być I. dla lekcja i Trening sesja.",
+      "lang": "2. Don't be late for lessons and training sessions."
+    },
+    {
+      "key": "book.otbm.2_floor_the_room_of",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "2. Floor - The Room of the Oracle",
+      "pl": "2. I. - The miejsce z the Wyrocznia",
+      "lang": "2. Floor - The Room of the Oracle"
+    },
+    {
+      "key": "book.otbm.2_molasses_will_be_automatically",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "2. Molasses will be automatically extracted and distilled into rum",
+      "pl": "2. Molasses will być automatically extracted i distilled a. do I.",
+      "lang": "2. Molasses will be automatically extracted and distilled into rum"
+    },
+    {
+      "key": "book.otbm.2nd_floor_barnabas_dee_astronomer",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "2nd floor: Barnabas Dee, Astronomer and Sorcerer Spells Teacher.",
+      "pl": "2nd I.: Barnabas Dee, AstroNiemer i Sorcerer zaklęCentalna Agencja Wywiadowcza Nauczyciel.",
+      "lang": "2nd floor: Barnabas Dee, Astronomer and Sorcerer Spells Teacher."
+    },
+    {
+      "key": "book.otbm.2nd_floor_exquisite_jewellery",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "2nd floor: Exquisite Jewellery",
+      "pl": "2nd I.: Przepiękny Biżuteria",
+      "lang": "2nd floor: Exquisite Jewellery"
+    },
+    {
+      "key": "book.otbm.2nd_floor_madame_faylas_music",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "2nd floor: Madame Fayla's Music Chamber",
+      "pl": "2nd I.: Madame Fayla's Muzyka I.",
+      "lang": "2nd floor: Madame Fayla's Music Chamber"
+    },
+    {
+      "key": "book.otbm.3789_gold_weapons_and_repairs",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "3789 gold weapons and repairs",
+      "pl": "3789 złota broń i I.",
+      "lang": "3789 gold weapons and repairs"
+    },
+    {
+      "key": "book.otbm.3_discover_secret_entrance_to",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "3. Discover secret entrance to Nightmare Pits",
+      "pl": "3. Odkrywać I. entrance do Zły sen Dół, jama",
+      "lang": "3. Discover secret entrance to Nightmare Pits"
+    },
+    {
+      "key": "book.otbm.3_maintain_your_training_gear",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "3. Maintain your training gear in good shape.",
+      "pl": "3. Utrzymywać twój Trening I. w I. I..",
+      "lang": "3. Maintain your training gear in good shape."
+    },
+    {
+      "key": "book.otbm.3_when_the_distilling_process",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "3. When the distilling process is finished, rum will start pouring out of the machine",
+      "pl": "3. When the distilling process jest gotowy, skończony, I. will start I. out z the I.",
+      "lang": "3. When the distilling process is finished, rum will start pouring out of the machine"
+    },
+    {
+      "key": "book.otbm.4000_gold_books_and_paper",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "4000 gold books and paper",
+      "pl": "4000 złota I. i I.",
+      "lang": "4000 gold books and paper"
     }
   ],
   "length_ratio_issues": [

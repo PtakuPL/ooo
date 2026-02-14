@@ -149294,5 +149294,21 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-14T20:24:24.110978Z"
+  },
+  "cpp.look.mana_shield": {
+    "src_hash": "475e549fe594c71ffa9ca2e3b939c548",
+    "text": "escudo de maná",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T20:27:07.072574Z"
+  },
+  "cpp.combat.neutral": {
+    "src_hash": "5da248ea6840aca1ae2b417b17982a89",
+    "text": "neutral",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T20:27:07.870924Z"
   }
 }

@@ -378,10 +378,10 @@
       "status": "idle"
     }
   },
-  "generated_at_utc": "2026-02-14T20:22:55Z",
+  "generated_at_utc": "2026-02-14T20:27:15Z",
   "global": {
     "en_keys_total": 53586,
-    "errors_total": 2031,
+    "errors_total": 2036,
     "files_processed_total": 6443,
     "languages_total": 54
   },
@@ -453,7 +453,7 @@
   "worker": {
     "current": {
       "category": "es",
-      "detail": "cycle end",
+      "detail": "stopping",
       "eta_seconds": 0,
       "file": "-",
       "phase": "AUTO_TRANSLATE",
@@ -462,15 +462,15 @@
         "total": 0,
         "unit": "units"
       },
-      "stage": "cycle_end"
+      "stage": "signal"
     },
-    "cycle": 3,
-    "heartbeat_at_utc": "2026-02-14T20:22:50Z",
+    "cycle": 4,
+    "heartbeat_at_utc": "2026-02-14T20:27:15Z",
     "host": "DESKTOP-338A5OQ",
     "mode": "continuous",
     "name": "i18n_worker_simple.sh",
-    "pid": 2805411,
-    "status": "running",
+    "pid": 2811753,
+    "status": "interrupted",
     "version": "unknown"
   }
 }

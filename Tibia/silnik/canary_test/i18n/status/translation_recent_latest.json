@@ -1,128 +1,92 @@
 {
-  "timestamp": "2026-02-14T12:02:03.643790Z",
-  "language": "pl",
-  "json_file": "items.json",
-  "translated": 80,
+  "timestamp": "2026-02-14T12:20:44.638514Z",
+  "language": "es",
+  "json_file": "npc.json",
+  "translated": 14,
   "entries": [
     {
-      "key": "item.20355.desc",
-      "en": "A hermit near Carlin might be able to tell you more about it",
-      "translated": "Pustelnik koło Carlin może ci o tym więcej opowiedzieć",
-      "source": "simple"
-    },
-    {
-      "key": "item.21186.desc",
-      "en": "A hermit near Carlin might be able to tell you more about it",
-      "translated": "Pustelnik koło Carlin może ci o tym więcej opowiedzieć",
-      "source": "simple"
-    },
-    {
-      "key": "item.21351.name",
-      "en": "light stone shower rune",
-      "translated": "I. Stone I. Rune",
+      "key": "npc.a_beautiful_girl.greet_msg_1",
+      "en": "So you have come, |PLAYERNAME|. I hoped you would not...",
+      "translated": "Entonces has venido, |PLAYERNAME|. Esperaba que no lo hicieras...",
       "source": "tm"
     },
     {
-      "key": "item.21400.desc",
-      "en": "It shows your spells and can also shield against attacks when worn",
-      "translated": "To I. twój zaklęCentalna Agencja Wywiadowcza i może także I. o I. when wytarty",
-      "source": "simple"
-    },
-    {
-      "key": "item.21434.name",
-      "en": "light stone shower rune",
-      "translated": "I. Stone I. Rune",
+      "key": "npc.a_sleeping_dragon.say_10",
+      "en": "You return through the semi-translucent gate to the west. ",
+      "translated": "Regresas por la puerta semitranslúcida hacia el oeste. ",
       "source": "tm"
     },
     {
-      "key": "item.21501.desc",
-      "en": "There is a hole in the ceiling.",
-      "translated": "Dowcip jeden I. w the sufit.",
-      "source": "simple"
+      "key": "npc.a_sleeping_dragon.say_11",
+      "en": "You head back north to the plateau. ",
+      "translated": "Regresas al norte hasta la meseta. ",
+      "source": "tm"
     },
     {
-      "key": "item.21804.desc",
-      "en": "Lights and sounds seem to shift inside of it each time you look away",
-      "translated": "I. i I. a. wydawać się być, wydawać się, zdawać się do I. inside z to I. czas ty look I.",
-      "source": "simple"
+      "key": "npc.a_sleeping_dragon.say_12",
+      "en": "You travel east across several large emerald bluffs and edges. All sorts of gems are scattered alongside your path. ",
+      "translated": "Viaja hacia el este a través de varios grandes acantilados y bordes esmeralda. Todo tipo de gemas se encuentran esparcidas a lo largo de tu camino. ",
+      "source": "tm"
     },
     {
-      "key": "item.21805.desc",
-      "en": "Lights and sounds seem to shift inside of it each time you look away",
-      "translated": "I. i I. a. wydawać się być, wydawać się, zdawać się do I. inside z to I. czas ty look I.",
-      "source": "simple"
+      "key": "npc.a_sleeping_dragon.say_13",
+      "en": "You take a rather large ruby out of a pile before you. ",
+      "translated": "Sacas un rubí bastante grande de una pila que tienes delante. ",
+      "source": "tm"
     },
     {
-      "key": "item.21812.desc",
-      "en": "Lights and sounds seem to shift inside of it each time you look away",
-      "translated": "I. i I. a. wydawać się być, wydawać się, zdawać się do I. inside z to I. czas ty look I.",
-      "source": "simple"
+      "key": "npc.a_sleeping_dragon.say_17",
+      "en": "You travel all the way back down the dune and through the gate to the south. ",
+      "translated": "Recorres todo el camino de regreso por la duna y atraviesas la puerta hacia el sur. ",
+      "source": "tm"
     },
     {
-      "key": "item.21965.desc",
-      "en": "There is a hole in the ceiling.",
-      "translated": "Dowcip jeden I. w the sufit.",
-      "source": "simple"
+      "key": "npc.a_sleeping_dragon.say_18",
+      "en": "You return to the crimson sea of rubies in the south. ",
+      "translated": "Regresas al mar carmesí de rubíes en el sur. ",
+      "source": "tm"
     },
     {
-      "key": "item.21966.desc",
-      "en": "There is a hole in the ceiling.",
-      "translated": "Dowcip jeden I. w the sufit.",
-      "source": "simple"
+      "key": "npc.a_sleeping_dragon.say_19",
+      "en": "You travel back to the plateau in the west. ",
+      "translated": "Viajas de regreso a la meseta en el oeste. ",
+      "source": "tm"
     },
     {
-      "key": "item.21967.desc",
-      "en": "There is a hole in the ceiling.",
-      "translated": "Dowcip jeden I. w the sufit.",
-      "source": "simple"
+      "key": "npc.a_sleeping_dragon.say_20",
+      "en": "Advancing to the west, you recognise an increase of onyx on the ground. ",
+      "translated": "Avanzando hacia el oeste, se reconoce un aumento de ónix en el suelo. ",
+      "source": "tm"
     },
     {
-      "key": "item.21968.desc",
-      "en": "There is a hole in the ceiling.",
-      "translated": "Dowcip jeden I. w the sufit.",
-      "source": "simple"
+      "key": "npc.a_sleeping_dragon.say_21",
+      "en": "You continue travelling the barren sea of gemstones to the north. ",
+      "translated": "Continúas viajando por el árido mar de piedras preciosas hacia el norte. ",
+      "source": "tm"
     },
     {
-      "key": "item.22764.desc",
-      "en": "It is made of platinum and emeralds and topped by a large F made of gold",
-      "translated": "To jest zrobiony z I. i I. i topped by jeden large F zrobiony z złota",
-      "source": "simple"
+      "key": "npc.a_sleeping_dragon.say_22",
+      "en": "You leave the massive open gate behind you and go to the west. ",
+      "translated": "Dejas la enorme puerta abierta detrás de ti y te diriges hacia el oeste. ",
+      "source": "tm"
     },
     {
-      "key": "item.22765.desc",
-      "en": "It is made of platinum and emeralds and topped by a large F made of gold",
-      "translated": "To jest zrobiony z I. i I. i topped by jeden large F zrobiony z złota",
-      "source": "simple"
+      "key": "npc.a_sleeping_dragon.say_5",
+      "en": "You wander to the south, passing large obelisks of emerald to your left and sprawling trees of topaz to your right. ",
+      "translated": "Pasearás hacia el sur, pasando grandes obeliscos de esmeralda a tu izquierda y extensos árboles de topacio a tu derecha. ",
+      "source": "tm"
     },
     {
-      "key": "item.22766.desc",
-      "en": "It is made of platinum and emeralds and topped by a large F made of gold",
-      "translated": "To jest zrobiony z I. i I. i topped by jeden large F zrobiony z złota",
-      "source": "simple"
+      "key": "npc.a_sleeping_dragon.say_6",
+      "en": "As you rip the solid stand out of its socket and take it with you, the large gate opens with a deafening rumble. ",
+      "translated": "Cuando arrancas el sólido soporte de su soporte y te lo llevas, la gran puerta se abre con un estruendo ensordecedor. ",
+      "source": "tm"
     },
     {
-      "key": "item.23363.desc",
-      "en": "There is a hole in the ceiling.",
-      "translated": "Dowcip jeden I. w the sufit.",
-      "source": "simple"
-    },
-    {
-      "key": "item.23373.name",
-      "en": "ultimate mana potion",
-      "translated": "ostateczny mana mikstura",
-      "source": "simple"
-    },
-    {
-      "key": "item.23399.desc",
-      "en": "Royal Tibia Mail",
-      "translated": "I. Tibia I.",
-      "source": "simple"
-    },
-    {
-      "key": "item.23400.desc",
-      "en": "Royal Tibia Mail",
-      "translated": "I. Tibia I.",
-      "source": "simple"
+      "key": "npc.a_sleeping_dragon.say_9",
+      "en": "You take an emerald from the pile. ",
+      "translated": "Sacas una esmeralda del montón. ",
+      "source": "tm"
     }
   ]
 }

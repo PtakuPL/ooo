@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-14T12:01:59.782547Z",
+  "timestamp": "2026-02-14T12:20:30.448372Z",
   "built_cycle": 1,
   "cache_ttl_cycles": 5,
   "targets": [
@@ -101,9 +101,9 @@
     {
       "lang": "pl",
       "json_file": "items.json",
-      "pending_total": 11630,
-      "todo": 11630,
-      "simple_todo": 9218,
+      "pending_total": 11550,
+      "todo": 11550,
+      "simple_todo": 9212,
       "missing_in_lang": 0
     },
     {
@@ -117,9 +117,9 @@
     {
       "lang": "pl",
       "json_file": "monsters.json",
-      "pending_total": 2616,
-      "todo": 2616,
-      "simple_todo": 2181,
+      "pending_total": 2541,
+      "todo": 2541,
+      "simple_todo": 2106,
       "missing_in_lang": 0
     },
     {
@@ -165,9 +165,9 @@
     {
       "lang": "pl",
       "json_file": "quests.json",
-      "pending_total": 475,
-      "todo": 475,
-      "simple_todo": 95,
+      "pending_total": 404,
+      "todo": 404,
+      "simple_todo": 78,
       "missing_in_lang": 0
     },
     {
@@ -189,17 +189,17 @@
     {
       "lang": "pl",
       "json_file": "server.json",
-      "pending_total": 91,
-      "todo": 91,
-      "simple_todo": 74,
+      "pending_total": 28,
+      "todo": 28,
+      "simple_todo": 15,
       "missing_in_lang": 0
     },
     {
       "lang": "pl",
       "json_file": "spells.json",
-      "pending_total": 645,
-      "todo": 645,
-      "simple_todo": 642,
+      "pending_total": 565,
+      "todo": 565,
+      "simple_todo": 562,
       "missing_in_lang": 0
     },
     {

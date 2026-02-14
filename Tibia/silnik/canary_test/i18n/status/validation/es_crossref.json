@@ -2,12 +2,12 @@
   "lang": "es",
   "coverage_pct": 77.2,
   "crossref_enabled": true,
-  "auto_fix_enabled": false,
-  "auto_fix_limit": 30,
-  "checked_at": "2026-02-14T12:00:41.051270Z",
-  "issues_total": 479,
+  "auto_fix_enabled": true,
+  "auto_fix_limit": 80,
+  "checked_at": "2026-02-14T12:04:06.374087Z",
+  "issues_total": 486,
   "issues_by_type": {
-    "consistency_in_language": 56,
+    "consistency_in_language": 63,
     "pl_reference_missing_translation": 400,
     "length_ratio_crosscheck": 23
   },
@@ -564,6 +564,21 @@
     {
       "type": "crossref_inconsistent_translation",
       "severity": "MEDIUM",
+      "en": "The Old Widow",
+      "variants": [
+        "Viejo widow",
+        "viejo widow"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "monsters:monster.the_old_widow.name",
+        "monsters:monster.the_old_widow.desc",
+        "raids:raid.the_old_widow.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
       "en": "BOOOM!",
       "variants": [
         "¡BUM!",
@@ -691,6 +706,77 @@
     {
       "type": "crossref_inconsistent_translation",
       "severity": "MEDIUM",
+      "en": "Undead Cavebear",
+      "variants": [
+        "Cavebear no-muerto",
+        "cavebear no-muerto"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "monsters:monster.undead_cavebear.name",
+        "raids:raid.undead_cavebear.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "The Pale Count",
+      "variants": [
+        "Pale conde",
+        "pale conde"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "monsters:monster.the_pale_count.name",
+        "monsters:monster.the_pale_count.desc",
+        "raids:raid.the_pale_count.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Water Buffalo",
+      "variants": [
+        "Buffalo de agua",
+        "buffalo de agua"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "monsters:monster.water_buffalo.name",
+        "raids:raid.water_buffalo.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Feverish Citizen",
+      "variants": [
+        "Feverish ciudadano",
+        "feverish ciudadano"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "monsters:monster.feverish_citizen.name",
+        "raids:raid.feverish_citizen.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Serpent Spawn",
+      "variants": [
+        "Engendro serpiente",
+        "engendro serpiente"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "monsters:monster.serpent_spawn.name",
+        "raids:raid.serpent_spawn.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
       "en": "Spidris Elite",
       "variants": [
         "spidris élite",
@@ -700,6 +786,20 @@
       "examples": [
         "monsters:monster.spidris_elite.name",
         "monsters:monster.spidris_elitesumom.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Diblis The Fair",
+      "variants": [
+        "Diblis fair",
+        "diblis fair"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "monsters:monster.diblis_the_fair.desc",
+        "raids:raid.diblis_the_fair.name"
       ]
     },
     {
@@ -4667,9 +4767,9 @@
     }
   ],
   "auto_fix": {
-    "attempted": 0,
-    "applied": 0,
-    "skipped": 0,
+    "attempted": 80,
+    "applied": 43,
+    "skipped": 37,
     "errors": 0
   }
 }

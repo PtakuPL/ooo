@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-14T11:59:08.096218Z",
+  "timestamp": "2026-02-14T12:20:40.320409Z",
   "priority_langs": [
     "es",
     "pl",
@@ -67,17 +67,17 @@
   ],
   "entries_total": 745,
   "entries_by_lang": {
-    "es": 213,
+    "es": 214,
     "pl": 123,
-    "cs": 668,
+    "cs": 650,
     "de": 667,
-    "fr": 669,
+    "fr": 614,
     "hu": 671,
     "it": 642,
     "nl": 699,
     "pt": 628,
     "ro": 699,
-    "ru": 560,
+    "ru": 499,
     "sk": 671,
     "tr": 715,
     "ar": 920,
@@ -86,7 +86,7 @@
     "bn": 920,
     "bs": 671,
     "da": 671,
-    "el": 670,
+    "el": 656,
     "et": 671,
     "fa": 1134,
     "fi": 671,
@@ -99,7 +99,7 @@
     "ka": 921,
     "kk": 671,
     "ko": 921,
-    "lt": 672,
+    "lt": 652,
     "lv": 671,
     "mk": 670,
     "ml": 921,
@@ -118,13 +118,13 @@
     "uz": 671,
     "vi": 921,
     "zh": 921,
-    "zh_TW": 23110
+    "zh_TW": 23108
   },
   "top_entries": [
     {
       "lang": "es",
       "json_file": "npc.json",
-      "identical_to_en": 13,
+      "identical_to_en": 14,
       "domain_priority": 0
     },
     {
@@ -280,7 +280,7 @@
     {
       "lang": "cs",
       "json_file": "quests.json",
-      "identical_to_en": 31,
+      "identical_to_en": 13,
       "domain_priority": 3
     },
     {
@@ -483,12 +483,6 @@
     },
     {
       "lang": "fr",
-      "json_file": "cpp.json",
-      "identical_to_en": 84,
-      "domain_priority": 9
-    },
-    {
-      "lang": "fr",
       "json_file": "otclient_modules.json",
       "identical_to_en": 58,
       "domain_priority": 9
@@ -497,6 +491,12 @@
       "lang": "fr",
       "json_file": "html.json",
       "identical_to_en": 31,
+      "domain_priority": 9
+    },
+    {
+      "lang": "fr",
+      "json_file": "cpp.json",
+      "identical_to_en": 29,
       "domain_priority": 9
     },
     {
@@ -993,26 +993,26 @@
     },
     {
       "lang": "ru",
-      "json_file": "cpp.json",
-      "identical_to_en": 73,
-      "domain_priority": 9
-    },
-    {
-      "lang": "ru",
       "json_file": "questlog.json",
       "identical_to_en": 29,
       "domain_priority": 9
     },
     {
       "lang": "ru",
-      "json_file": "html.json",
-      "identical_to_en": 10,
+      "json_file": "cpp.json",
+      "identical_to_en": 18,
       "domain_priority": 9
     },
     {
       "lang": "ru",
       "json_file": "client.json",
       "identical_to_en": 5,
+      "domain_priority": 9
+    },
+    {
+      "lang": "ru",
+      "json_file": "html.json",
+      "identical_to_en": 4,
       "domain_priority": 9
     },
     {
@@ -1325,7 +1325,7 @@
   "selected": {
     "lang": "es",
     "json_file": "npc.json",
-    "identical_to_en": 13,
+    "identical_to_en": 14,
     "domain_priority": 0
   }
 }

@@ -84822,5 +84822,1469 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-14T12:02:03.032157Z"
+  },
+  "monster.abyssador.voice_5": {
+    "src_hash": "fb366f4c31937eea5f3cb8303f759638",
+    "text": "*** ŚMIERĆ ***",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:06:58.594638Z"
+  },
+  "data.otservbr.global.npc.alyxo.L210.798": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "No to cześć.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.237849Z"
+  },
+  "data.otservbr.global.npc.ambassador.of.rathleton.L87.344": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "No to cześć.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.241572Z"
+  },
+  "data.otservbr.global.npc.andrew.lyze.L263.518": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "No to cześć.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.247171Z"
+  },
+  "data.otservbr.global.npc.angelo.L153.1447": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "No to cześć.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.251637Z"
+  },
+  "data.otservbr.global.npc.brodrosch.L136.321": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "W takim razie do widzenia.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.301765Z"
+  },
+  "data.otservbr.global.npc.captain.bluebear.L120.101": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "W takim razie do widzenia.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.314618Z"
+  },
+  "data.otservbr.global.npc.captain.breezelda.L75.338": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "W takim razie do widzenia.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.316323Z"
+  },
+  "data.otservbr.global.npc.captain.chelop.L77.1611": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "W takim razie do widzenia.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.317910Z"
+  },
+  "data.otservbr.global.npc.captain.fearless.L113.1157": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "W takim razie do widzenia.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.321394Z"
+  },
+  "data.otservbr.global.npc.captain.greyhound.L104.1516": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "W takim razie do widzenia.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.323010Z"
+  },
+  "data.otservbr.global.npc.captain.harava.L89.951": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "W takim razie do widzenia.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.329080Z"
+  },
+  "data.otservbr.global.npc.captain.pelagia.L104.864": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "W takim razie do widzenia.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.333370Z"
+  },
+  "data.otservbr.global.npc.captain.seahorse.L88.1621": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "W takim razie do widzenia.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.336059Z"
+  },
+  "data.otservbr.global.npc.captain.sinbeard.L100.751": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "W takim razie do widzenia.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.336579Z"
+  },
+  "data.otservbr.global.npc.cipfried.L176.714": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "No to cześć.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.366536Z"
+  },
+  "data.otservbr.global.npc.cornell.L75.83": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "W takim razie do widzenia.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.372871Z"
+  },
+  "data.otservbr.global.npc.dedoras.L310.221": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "No to cześć.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.390484Z"
+  },
+  "data.otservbr.global.npc.denominator.L265.154": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "No to cześć.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.391018Z"
+  },
+  "data.otservbr.global.npc.eshaya.L134.673": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "No to cześć.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.423341Z"
+  },
+  "data.otservbr.global.npc.falonzo.L127.1063": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "No to cześć.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.428749Z"
+  },
+  "data.otservbr.global.npc.faloriel.L91.1318": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "No to cześć.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.429727Z"
+  },
+  "data.otservbr.global.npc.farhilorn.of.the.winter.court.L84.1007": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "No to cześć.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.431164Z"
+  },
+  "data.otservbr.global.npc.gail.L88.1479": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "No to cześć.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.452229Z"
+  },
+  "data.otservbr.global.npc.gareth.L170.1403": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "No to cześć.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.457107Z"
+  },
+  "data.otservbr.global.npc.gerimor.L439.369": {
+    "src_hash": "5c29836c5a2d999d43af77b014fffdaf",
+    "text": "Zyskałeś mystery box.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.464381Z"
+  },
+  "data.otservbr.global.npc.gnomus.L336.1017": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "No to cześć.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.486249Z"
+  },
+  "data.otservbr.global.npc.harlow.L80.1286": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "W takim razie do widzenia.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.518339Z"
+  },
+  "data.otservbr.global.npc.harlow.vengoth.L59.856": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "W takim razie do widzenia.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.519826Z"
+  },
+  "data.otservbr.global.npc.iwar.L85.275": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "No to cześć.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.549977Z"
+  },
+  "data.otservbr.global.npc.jack.drone.L63.506": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "W takim razie do widzenia.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.555398Z"
+  },
+  "data.otservbr.global.npc.jack.fate.L111.735": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "W takim razie do widzenia.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.556917Z"
+  },
+  "data.otservbr.global.npc.jack.fate.goroma.L118.308": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "W takim razie do widzenia.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.558161Z"
+  },
+  "data.otservbr.global.npc.jamesfrancis.L116.650": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "No to cześć.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.563798Z"
+  },
+  "data.otservbr.global.npc.kallimae.L144.297": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "No to cześć.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.579438Z"
+  },
+  "data.otservbr.global.npc.kendra.L84.1058": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "W takim razie do widzenia.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.588587Z"
+  },
+  "data.otservbr.global.npc.kendra.thais.L85.1069": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "W takim razie do widzenia.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.590088Z"
+  },
+  "data.otservbr.global.npc.klom.stonecutter.L264.325": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "No to cześć.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.596308Z"
+  },
+  "data.otservbr.global.npc.lardoc.bashsmite.L260.1203": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "No to cześć.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.601490Z"
+  },
+  "data.otservbr.global.npc.moe.L116.327": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "No to cześć.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.648832Z"
+  },
+  "data.otservbr.global.npc.myzzi.L101.66": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "No to cześć.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.658623Z"
+  },
+  "data.otservbr.global.npc.myzzi.L102.67": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "No to cześć.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.659177Z"
+  },
+  "data.otservbr.global.npc.narsai.L118.892": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "No to cześć.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.661747Z"
+  },
+  "data.otservbr.global.npc.noozer.L89.43": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "No to cześć.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.676187Z"
+  },
+  "data.otservbr.global.npc.rapanaio.boat.L72.129": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "W takim razie do widzenia.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.720971Z"
+  },
+  "data.otservbr.global.npc.rapanaio.isle.of.evil.L72.1192": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "W takim razie do widzenia.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.722627Z"
+  },
+  "data.otservbr.global.npc.saideh.L86.694": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "No to cześć.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.747825Z"
+  },
+  "data.otservbr.global.npc.shimun.L118.698": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "No to cześć.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.774367Z"
+  },
+  "data.otservbr.global.npc.shirtalis.of.the.summer.court.L84.57": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "No to cześć.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.779469Z"
+  },
+  "data.otservbr.global.npc.tamerin.L58.283": {
+    "src_hash": "c2322ef8d63ff8e793869c52f500001b",
+    "text": "Masz ty the {animal cure}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.804998Z"
+  },
+  "data.otservbr.global.npc.tanyt.L102.1189": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "W takim razie do widzenia.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.809151Z"
+  },
+  "data.otservbr.global.npc.tefrit.L119.537": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "No to cześć.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.811636Z"
+  },
+  "data.otservbr.global.npc.the.empress.L84.444": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "No to cześć.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.824219Z"
+  },
+  "data.otservbr.global.npc.the.librarian.L87.395": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "No to cześć.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.826151Z"
+  },
+  "data.otservbr.global.npc.thorgrin.L69.260": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "W takim razie do widzenia.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.833123Z"
+  },
+  "data.otservbr.global.npc.tigo.L96.858": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "No to cześć.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.838018Z"
+  },
+  "data.otservbr.global.npc.undal.L168.1467": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "No to cześć.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.897261Z"
+  },
+  "data.otservbr.global.npc.undal.L169.1468": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "No to cześć.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.897799Z"
+  },
+  "data.otservbr.global.npc.vanys.L168.532": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "No to cześć.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.907098Z"
+  },
+  "data.otservbr.global.npc.vanys.L169.533": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "No to cześć.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.907625Z"
+  },
+  "data.otservbr.global.npc.yonan.L216.687": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "No to cześć.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.944691Z"
+  },
+  "data.otservbr.global.npc.ziyad.L102.874": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "W takim razie do widzenia.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:34.957625Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.actions.gnome.items.L15.2205": {
+    "src_hash": "c640067d5fadf2d094bbc35f3dd5350f",
+    "text": "Masz znaleziono jeden gNieme trigNiemetre.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:35.043904Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.actions.gnome.items.L7.2203": {
+    "src_hash": "8f8ae0bbc960b0e7c432304a999b957d",
+    "text": "Masz znaleziono jeden gNieme I..",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:35.045855Z"
+  },
+  "data.otservbr.global.scripts.quests.heart.of.destruction.actions.reward.L14.1866": {
+    "src_hash": "b1c274299f5889fb5b2730576e820f48",
+    "text": "Znalazłeś energetic backpack.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:35.132213Z"
+  },
+  "data.otservbr.global.scripts.quests.in.service.of.yalahar.actions.reward.L17.2181": {
+    "src_hash": "9c14fa84bb1c37eee8acbefb8a8ed01b",
+    "text": "Masz znaleziono jeden yalahari I..",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:35.147562Z"
+  },
+  "data.otservbr.global.scripts.quests.in.service.of.yalahar.actions.reward.L8.2179": {
+    "src_hash": "4d6f5887de030d6e67f938b3d6aa64dc",
+    "text": "Znalazłeś yalahari armor.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:35.150576Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.peeler.L7.1658": {
+    "src_hash": "82e12715e1434699f28fe1b534e1bbab",
+    "text": "Znalazłeś bark peeler.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:35.173500Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.scissors.L7.1670": {
+    "src_hash": "9133be335f8fc7ca66d3654e78d8c9ec",
+    "text": "Znalazłeś  ritual scissors.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:35.183453Z"
+  },
+  "data.otservbr.global.scripts.quests.the.gravedigger.of.drefia.actions.brain.L8.2004": {
+    "src_hash": "72bacc4050281a64f29ce50031e58e3e",
+    "text": "<bzzzt> <frzzp> <fsssh>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:35.284151Z"
+  },
+  "data.otservbr.global.scripts.quests.the.gravedigger.of.drefia.actions.caixa.L5.2020": {
+    "src_hash": "b36f445efbda76f17aa66e520682ff27",
+    "text": "Masz znaleziono jeden incantation fragment.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:35.285873Z"
+  },
+  "data.otservbr.global.scripts.quests.tinder.box.quest.chyllfroest.actions.reward.L17.1810": {
+    "src_hash": "d764f530158231a8f74ebc278cc3babf",
+    "text": "Znalazłeś tinder box.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:35.399114Z"
+  },
+  "data.otservbr.global.npc.bolfona.L94.690": {
+    "src_hash": "cb402f1f8e204eec1e7a9a5f60134d1d",
+    "text": "Czy mówisz do mnie? Cóż, rozmawiaj dalej, ale nie oczekuj odpowiedzi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:40.061441Z"
+  },
+  "data.otservbr.global.npc.corym.footman.L62.228": {
+    "src_hash": "850a02c09cfd41688bfbb5f21dde9f31",
+    "text": "To, co jemy, jest naprawdę śmieszne.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:40.061921Z"
+  },
+  "data.otservbr.global.npc.erayo.L130.1378": {
+    "src_hash": "6e3e6967ef071f66260733538ee2808f",
+    "text": "Co do... To znaczy, oczywiście, że cię wyczułem.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:14:40.062534Z"
+  },
+  "spell.large_ice_ring.name": {
+    "src_hash": "0bb80fa4099b68b690c6d1f7ff9e832e",
+    "text": "Duży Lód Pierścień",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:17:59.708302Z"
+  },
+  "spell.ice_barrage.name": {
+    "src_hash": "1d60f3b1dde1dc296ac9c47328e769c9",
+    "text": "lód zapora",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:17:59.735193Z"
+  },
+  "spell.icicle_heal.name": {
+    "src_hash": "b15d568c4f6dcc60c39558970adda29a",
+    "text": "sopel lecz",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:17:59.799132Z"
+  },
+  "spell.emerald_tortoise_large_ring.name": {
+    "src_hash": "432e01ab819a139df39a60b40933a827",
+    "text": "szmaragd żółw duży pierścień",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:17:59.804251Z"
+  },
+  "spell.large_fire_ring.words": {
+    "src_hash": "409173720fb670fa7d5551d41f8463a8",
+    "text": "###duży_ogień_pierścień",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:17:59.813776Z"
+  },
+  "spell.death_chain.name": {
+    "src_hash": "89909507732e0ff901e6dcd695682642",
+    "text": "śmierć łańcuch",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:17:59.831813Z"
+  },
+  "spell.emerald_tortoise_small_explosion.name": {
+    "src_hash": "4eacc1d6a9cbd60afe311b07d4f6f586",
+    "text": "szmaragd żółw mały wybuch",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:17:59.834567Z"
+  },
+  "spell.death_barrage.name": {
+    "src_hash": "5c966071278517536372bf0aac55fb5d",
+    "text": "śmierć zapora",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:17:59.841540Z"
+  },
+  "spell.emerald_tortoise_small_ring.name": {
+    "src_hash": "8e19e5f1686cce2d10cfd623c66058d4",
+    "text": "szmaragd żółw mały pierścień",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:17:59.862721Z"
+  },
+  "spell.energy_chain.name": {
+    "src_hash": "2eaf27edf3ddff7855f78058de225a21",
+    "text": "energia łańcuch",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:17:59.879430Z"
+  },
+  "spell.ice_chain.name": {
+    "src_hash": "da8fe05579f770755dbdd827035d87cb",
+    "text": "lód łańcuch",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:17:59.902877Z"
+  },
+  "spell.mud_attack.name": {
+    "src_hash": "f6f1198ace1aebb65327bf8c03fed32b",
+    "text": "Błoto Atak",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:17:59.927112Z"
+  },
+  "spell.heal_friend.name": {
+    "src_hash": "e599c635ca201e1a2a77c1b026b630f3",
+    "text": "Lecz Przyjacielu",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:17:59.949633Z"
+  },
+  "spell.heal_monsters.name": {
+    "src_hash": "f0ad0bba0c6450618d0ce3eed971e0af",
+    "text": "Lecz Potwór",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:17:59.951046Z"
+  },
+  "spell.heal_malice.name": {
+    "src_hash": "09a57ab2e1e2a2c6b0206f9518cbc814",
+    "text": "Lecz Złośliwość",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:17:59.953506Z"
+  },
+  "spell.heal_party.name": {
+    "src_hash": "a03861214b516b1b1d429e85e91a02d4",
+    "text": "Lecz Drużyna",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:17:59.958511Z"
+  },
+  "spell.edit_door_list.name": {
+    "src_hash": "d42ce6738ed71ef2ef0c60f5cb01a5a7",
+    "text": "Dom Drzwi Vip",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:17:59.963384Z"
+  },
+  "spell.magic_rope.name": {
+    "src_hash": "c4643107f4429c8f8e0f7df322f8fc22",
+    "text": "Magia Lina",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:17:59.966096Z"
+  },
+  "spell.invisible.name": {
+    "src_hash": "70840564ed92bb0f351968dd5d47b5bb",
+    "text": "Invisibility",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:17:59.970620Z"
+  },
+  "spell.light.name": {
+    "src_hash": "9914a0ce04a7b7b6a8e39bec55064b82",
+    "text": "Jasny",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:17:59.972993Z"
+  },
+  "spell.ultimate_light.name": {
+    "src_hash": "ffc3a1f23b6f5055c629bad9f7f11226",
+    "text": "Ostateczny Jasny",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:17:59.976414Z"
+  },
+  "spell.cancel_magic_shield.name": {
+    "src_hash": "3580b45f3af3e7a5f12b2d4f9f4c8d6e",
+    "text": "Anuluj Magia Tarcza",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:17:59.979653Z"
+  },
+  "spell.stalagmite_rune.name": {
+    "src_hash": "52fa8546e780281f489552902d938467",
+    "text": "Stalagmite Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:17:59.985376Z"
+  },
+  "spell.fireball_rune.name": {
+    "src_hash": "a61a86a92bf13c2a03a91a5ac28008fb",
+    "text": "Fireball Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:17:59.986756Z"
+  },
+  "spell.fire_field_rune.name": {
+    "src_hash": "46dd0c35782bd2e15960e1af4c10fb80",
+    "text": "Ogień Ognia Runa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:17:59.996243Z"
+  },
+  "spell.magic_wall_rune.name": {
+    "src_hash": "dc28fac219174ba4b7547e40bb77ffde",
+    "text": "Magia Ściana Runa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:17:59.997562Z"
+  },
+  "spell.disintegrate_rune.name": {
+    "src_hash": "0d4e46f32dddecba7427f32c940bfbab",
+    "text": "Disintegrate Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:17:59.998864Z"
+  },
+  "spell.soulfire_rune.name": {
+    "src_hash": "257c83cad3d15e83a4e80b2b426468ea",
+    "text": "Soulfire Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:18:00.000200Z"
+  },
+  "spell.destroy_field_rune.name": {
+    "src_hash": "b6fe1c4fe04d9b34729bbbf491c41a40",
+    "text": "Niszczyć Ognia Runa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:18:00.005558Z"
+  },
+  "spell.energy_field_rune.name": {
+    "src_hash": "ec6d44248eb7c384389f8bf9e0ff75c4",
+    "text": "Energia Ognia Runa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:18:00.009100Z"
+  },
+  "spell.find_person.name": {
+    "src_hash": "95e8cc93b7e04f90863e3bd3be431421",
+    "text": "Znajdź Osoba",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:18:00.023045Z"
+  },
+  "spell.annihilon_paralyze.name": {
+    "src_hash": "57aef9c16f157f4d94e74cbdb2bf0099",
+    "text": "Annihilon Paralyze",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:18:00.471762Z"
+  },
+  "quests.2_ambassadors_treason.msg_3": {
+    "src_hash": "92080f0ef8fde073cd9d9b26347d601b",
+    "text": "Dokładnie oglądasz zwoje. To rozkazy z Rathleton dla Ambasadora. Nie ma tu śladu zdrady.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:00.816557Z"
+  },
+  "quests.2_ambassadors_treason.msg_5": {
+    "src_hash": "f0502f434837f12f681eb194dd73e2d4",
+    "text": "Na podłodze leżą porozrzucane skrawki papieru. Złożenie ich zajmuje chwilę. To jednak tylko kiepsko napisany wiersz.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:00.818368Z"
+  },
+  "quests.2_ambassadors_treason.msg_7": {
+    "src_hash": "14dfffed3e8aaff6aa4f4509ee470001",
+    "text": "Dokumenty spalono tu niedawno. Przed kominkiem leży jeszcze fragment jednego zwoju, ale jest zbyt osmolony, by go odczytać.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:00.820174Z"
+  },
+  "quests.6_mind_travel.msg_1": {
+    "src_hash": "98da952f701d6358d74f1d9a180990fa",
+    "text": "Zostałeś przeniesiony na lewą stronę mózgu",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:00.821251Z"
+  },
+  "quests.6_mind_travel.msg_2": {
+    "src_hash": "1e57dd425d49fa37eefdeb9faa01a4f2",
+    "text": "Zostałeś przeniesiony na prawą stronę mózgu",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:00.822375Z"
+  },
+  "quests.6_mind_travel.msg_3": {
+    "src_hash": "39c4cd386bc515db3ca13ad71ea9a439",
+    "text": "Czujesz drżenie i zawroty głowy, świat wokół ciebie ciemnieje. Potem wzrok znów się wyostrza - i jesteś gdzie indziej.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:00.823763Z"
+  },
+  "quests.8_blessing_the_statues.msg_1": {
+    "src_hash": "4a64e6aeefc9b8c9f1fd15709a257e2d",
+    "text": "Już pobłogosławiłeś ten posąg.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:00.824863Z"
+  },
+  "quests.actions_bonefiddle.msg_1": {
+    "src_hash": "fa77689cf9736ba9d5773f0e3b7b2683",
+    "text": "Grasz na kościanych skrzypcach.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:00.829904Z"
+  },
+  "quests.actions_bonefiddle.msg_2": {
+    "src_hash": "5199ba776a4a3a24d69420d0eb2e685b",
+    "text": "Grasz Balladę Pawia i portal się otwiera.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:00.831086Z"
+  },
+  "quests.actions_bonefiddle.msg_3": {
+    "src_hash": "60b384a0aa95079616923d65a09d92fc",
+    "text": "*Była raz piękna panna, o ciemnych oczach i jedwabnych włosach. Umarła daleko od domu. Bez grobu, bez czuwania, bez żałoby.*",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:00.832517Z"
+  },
+  "quests.actions_bonefiddle.msg_4": {
+    "src_hash": "e8a3f87ef1f8ea48f276ed48a8524749",
+    "text": "Przymocowujesz włosy do hebanowego gryfu. Pasma powinny nadawać się jako struny.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:00.833795Z"
+  },
+  "quests.actions_bonefiddle.msg_5": {
+    "src_hash": "1d91d803c170748ff4f101712cf1c262",
+    "text": "Mocujesz hebanowe drewno do czaszki. To powinno spełniać wymagania gryfu.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:00.835020Z"
+  },
+  "quests.actions_doors.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Drzwi wydają się być zabezpieczone przed niechcianymi intruzami.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:00.839469Z"
+  },
+  "quests.actions_doors.msg_2": {
+    "src_hash": "62b19b138adec8ae1e6bba38c72981df",
+    "text": "Nie możesz jeszcze użyć tej łodzi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:00.840666Z"
+  },
+  "quests.actions_doors.msg_3": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Drzwi wydają się być zabezpieczone przed niechcianymi intruzami.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:00.841289Z"
+  },
+  "quests.actions_doors.msg_4": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Drzwi wydają się być zabezpieczone przed niechcianymi intruzami.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:00.841894Z"
+  },
+  "quests.actions_doors.msg_5": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Drzwi wydają się być zabezpieczone przed niechcianymi intruzami.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:00.842663Z"
+  },
+  "quests.actions_entrance.msg_2": {
+    "src_hash": "3bf818c8ff9e1fb2d25ccd26775d7cd5",
+    "text": "Jeszcze raz mieszasz kredę z kroplą krwi i odrobiną wody, odnawiając symbol na podłodze...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:00.845280Z"
+  },
+  "quests.actions_fragrance.msg_1": {
+    "src_hash": "88589a6c42c6ad348e20ed9f1aaef6af",
+    "text": "Hmmmm, cóż za oszałamiający zapach!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:00.846408Z"
+  },
+  "quests.actions_mono_detector_strange_probing_device.msg_2": {
+    "src_hash": "9d0ce14678d498a52e1d256ff430a7ca",
+    "text": "Hm... urządzenie pokazuje: 0,0,zero,0,zero, co można z grubsza przetłumaczyć jako: NIC TU CIEKAWEGO.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:00.850749Z"
+  },
+  "quests.actions_mono_detector_strange_probing_device.msg_3": {
+    "src_hash": "5ddadd6ad0c06716b93e59f10d11de37",
+    "text": "Urządzenie pokazuje: 'wykryto nieprawidłową strukturę glooth, możliwa lokalizacja sondowania'.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:00.852000Z"
+  },
+  "quests.actions_mono_detector_strange_probing_device.msg_4": {
+    "src_hash": "7302b053c0f22e53182c9674c7530e39",
+    "text": "Sonda została dostrojona.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:00.853019Z"
+  },
+  "quests.actions_rewards.msg_1": {
+    "src_hash": "2dba8779b7220248332287566af0d980",
+    "text": "Znalazłeś ",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:00.855324Z"
+  },
+  "quests.actions_rewards.msg_2": {
+    "src_hash": "2dba8779b7220248332287566af0d980",
+    "text": "Znalazłeś ",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:00.856525Z"
+  },
+  "quests.actions_scarlett.msg_1": {
+    "src_hash": "7c285fed0553b05349a0985cdd855e24",
+    "text": "Trzymasz przed sobą starą napierśnicę Galtheina. Nie pasuje i jest zbyt stara, by wytrzymać jakikolwiek atak.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:00.858174Z"
+  },
+  "quests.actions_scarlett.msg_2": {
+    "src_hash": "5316cfe06e390d51d9a5ed89b00755ca",
+    "text": "Nie możesz jeszcze tego użyć.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:00.859250Z"
+  },
+  "quests.actions_telescope.msg_1": {
+    "src_hash": "cd38aa8899c916fb75dd44e9e5292eda",
+    "text": "Teleskop zapewnia doskonały widok na bezkresny ocean - nie widać lądu.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:00.861339Z"
+  },
+  "quests.actions_wooden_trash.msg_2": {
+    "src_hash": "ff4835c520d079c29c29fafb7687a7d2",
+    "text": "Rozpocząłeś eskortę, doprowadź więźnia do krasnoludzkiej placówki!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:00.868928Z"
+  },
+  "quests.creatureevent_commander_kills.msg_1": {
+    "src_hash": "eb8bc17634f1e64ed7a0dc8c720537a4",
+    "text": "Przegrałeś potyczkę.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:00.906994Z"
+  },
+  "quests.dream_courts.book_worthy": {
+    "src_hash": "c1acd9180910a5b1467431f3c6b1e67d",
+    "text": "Wszystkie pieśni zostały odśpiewane we właściwej kolejności, uznano cię za godnego. Zostajesz przeniesiony...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:00.938163Z"
+  },
+  "quests.moveevent_drume_entrance.msg_1": {
+    "src_hash": "189edafc7a6e2993bafd344758296338",
+    "text": "Brałeś udział w potyczce w ciągu ostatnich 10 godzin.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:00.978770Z"
+  },
+  "quests.movements_boat_puzzle.msg_1": {
+    "src_hash": "79d210c9061eaa6163df6f7d629fc9a6",
+    "text": "Bez punktów orientacyjnych nigdy nie znajdziesz drogi powrotnej. Spróbuj znaleźć sposób na poprawę nawigacji.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:00.982593Z"
+  },
+  "quests.movements_boat_puzzle.msg_2": {
+    "src_hash": "652ebfa490c71173522b14a875f77e01",
+    "text": "Widzisz porozrzucane części rozbitego statku. Cudem okrętowy teleskop przetrwał wrak i wygląda na nienaruszony.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:00.984300Z"
+  },
+  "quests.movements_boat_puzzle.msg_5": {
+    "src_hash": "da53a77f40f0b3c056e242b35c37fcfe",
+    "text": "Widzisz porozrzucane części rozbitego statku. Cudem okrętowy teleskop przetrwał wrak i wygląda na nienaruszony.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:00.991718Z"
+  },
+  "quests.movements_elemental_portals.msg_1": {
+    "src_hash": "890357c9dcb3ffedcadd79879c0ca67f",
+    "text": "Odkryłeś stare biurko, które zawiera starożytną mapę.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:00.997446Z"
+  },
+  "quests.movements_elemental_portals.msg_3": {
+    "src_hash": "7c99e9578953cd12d55e8c0287848c45",
+    "text": "Zajęło ci to zbyt długo, walka się zakończyła.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:00.999112Z"
+  },
+  "quests.movements_mazzinor.msg_1": {
+    "src_hash": "8e8139507d76a42e500220927d3f007a",
+    "text": "Szczątki tymczasowo cię depolaryzują.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:01.001324Z"
+  },
+  "quests.movements_quaidden.msg_1": {
+    "src_hash": "e41586fcc63c28a4b0e4c56c855dda09",
+    "text": "Dopóki działa moc mrocznego Custodiana, mgła nie pozwala ci wejść do legowiska Quaida.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:01.002718Z"
+  },
+  "quests.soul_war_mechanics.msg_5": {
+    "src_hash": "7e4984d2b35de4fa2d827123289bdf13",
+    "text": "Usuniędo poziom poziom: ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:01.072318Z"
+  },
+  "quests.soulpit_fight.msg_2": {
+    "src_hash": "c19bed913e705bda05e9c479d7403dda",
+    "text": "Ktoś walczy w Soulpit!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:01.078743Z"
+  },
+  "quests.actions.you_already_used_your_knife_on": {
+    "src_hash": "663cc82c187e025c63062760739dc4e5",
+    "text": "Użyłeś już noża na zwłokach.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:04.655797Z"
+  },
+  "quests.actions.you_cant_use_this_when_youre": {
+    "src_hash": "dd3c1a5f60f082f6ac8b1a60d942ba2a",
+    "text": "Nie możesz tego używać podczas walki.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:04.656322Z"
+  },
+  "quests.actions_bait.say_1": {
+    "src_hash": "9cdc566e522df381db3d0dcad05af784",
+    "text": "Przynęta jest już ustawiona. Idź na wieżę widokową i sprawdź teleskop!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:04.656900Z"
+  },
+  "quests.actions_boss_timira_fight.say_1": {
+    "src_hash": "2d0952a71b064faaa2eb619011b63524",
+    "text": "Kawałki błyszczą!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:04.657662Z"
+  },
+  "quests.actions_boss_timira_fight.say_2": {
+    "src_hash": "c4a01b00c90bdabd21cc5e30c2bc1f3e",
+    "text": "Woda uformowała się w kształt!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:04.658439Z"
+  },
+  "quests.actions_corpse.say_1": {
+    "src_hash": "5ea3fbe005f5aac860cc806b3226cbc4",
+    "text": "Nabyłeś ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:12.290503Z"
+  },
+  "quests.actions_last_fight.say_1": {
+    "src_hash": "d3f224c083f6f61bc1d5608b1d2738fb",
+    "text": "Musisz trochę poczekać, zanim ten globus się naładuje.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:12.291015Z"
+  },
+  "quests.actions_levers.say_1": {
+    "src_hash": "74d6f44cc339cc1af575eabf9d29f26d",
+    "text": "Przekręciłeś ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:12.291327Z"
+  },
+  "quests.actions_portal_minis_feaster.msg_1": {
+    "src_hash": "d7675b7b6e4edadcaa460bfa24c70b35",
+    "text": "Wszyscy gracze muszą być na poziomie ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:12.291783Z"
+  },
+  "quests.actions_portal_minis_feaster.msg_2": {
+    "src_hash": "b97f99b956df2fe9bb7b47e1908f0684",
+    "text": "Musisz poczekać ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:12.292112Z"
+  },
+  "quests.actions_servants_mechanism.say_2": {
+    "src_hash": "715460f6fbd13bd6d1757d939fb9b258",
+    "text": "wydaje się, że mechanizm jest nadal aktywny.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:16.509249Z"
+  },
+  "quests.actions_using_crystals.say_1": {
+    "src_hash": "f508d9962727da8d65a970bd812689e3",
+    "text": "Hrabia przejmuje moc bestii i staje się silniejszy.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:16.509761Z"
+  },
+  "quests.adventures_of_galthen.you_have_already_obtained_this_outfit": {
+    "src_hash": "2a375adc8dad69731ea3478119cb6da5",
+    "text": "Już zdobyłeś ten strój!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:16.510217Z"
+  },
+  "quests.bigfoot_burden.body_not_ready": {
+    "src_hash": "650762968728d439e3ac2a042c3eabea",
+    "text": "To ciało nie jest jeszcze gotowe.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:16.510701Z"
+  },
+  "quests.bigfoot_burden.boss_challenge": {
+    "src_hash": "7e6ede303d5139cd8026a3b23a8469a1",
+    "text": "Masz pół godziny, aby bohatersko pokonać {0}. W przeciwnym razie zostaniesz teleportowany i będziesz musiał zaczynać wszystko od nowa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:16.511509Z"
+  },
+  "quests.bigfoot_burden.chest_guarded": {
+    "src_hash": "660c525e8617590d046aaef15a99886a",
+    "text": "{0} broni swoich rzeczy i nie pozwala ci otworzyć tej skrzyni.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:21.784378Z"
+  },
+  "quests.bigfoot_burden.chest_requirements": {
+    "src_hash": "072bb87e3c4717189d1d3a4f4fe1d283",
+    "text": "Upewnij się, że masz co najmniej 5 wolnych miejsc w ekwipunku i możesz unieść dodatkowe 100 uncji.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:21.785096Z"
+  },
+  "quests.bigfoot_burden.crystal_not_damaged": {
+    "src_hash": "fe3ff614cedaa49219f13e67f00cab9d",
+    "text": "To nie jest uszkodzony kryształ!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:21.785553Z"
+  },
+  "quests.bigfoot_burden.crystal_repaired": {
+    "src_hash": "60d5612333b384516cb59343aa68a514",
+    "text": "Naprawiłeś uszkodzony kryształ!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:21.785985Z"
+  },
+  "quests.bigfoot_burden.device_unknown": {
+    "src_hash": "4e98f8923a32f5e88ac8299aa52fe8af",
+    "text": "Nie masz pojęcia, jak korzystać z tego urządzenia. Xelvar w Kazordoon może ci powiedzieć więcej na ten temat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:21.786979Z"
+  },
+  "quests.bigfoot_burden.enough_renown": {
+    "src_hash": "8e829f523946407b7b24b62b49bbd917",
+    "text": "W końcu zdobyłeś wystarczającą sławę wśród gnomów, poproś Gnomisję o misję otrzymania kryształu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:25.631444Z"
+  },
+  "quests.bigfoot_burden.gnomedix_msg1": {
+    "src_hash": "480e35ad14db7f1efdf3f9e00ed78a58",
+    "text": "Gnomedix: Zatem zacznijmy badanie! Teraz nie ruszaj się. Nie bój się. Dobry gnom doktor nie zrobi ci krzywdy – miejmy nadzieję!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:25.632250Z"
+  },
+  "quests.bigfoot_burden.gnomedix_msg2": {
+    "src_hash": "e2ab9a67cf5112ed29716b20320600c2",
+    "text": "Gnomedix: Teraz! Teraz! Nie panikować! To wszystko wkrótce się skończy!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:25.632781Z"
+  },
+  "quests.bigfoot_burden.gnomedix_msg3": {
+    "src_hash": "503b77337aa47368fbf6324836cb7837",
+    "text": "Gnomedix: Pozwól mi wypróbować większe dłuto!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:25.633351Z"
+  },
+  "quests.bigfoot_burden.gnomedix_msg4": {
+    "src_hash": "d6a9f750fe55398ca30eefbf148c3c9f",
+    "text": "Gnomedix: Prawie skończyliśmy... święty gnom! CO TO JEST???",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:25.634261Z"
+  },
+  "quests.bigfoot_burden.gnomedix_msg6": {
+    "src_hash": "abfd48c5fc8121209d0666adcf6c99fa",
+    "text": "Gnomedix: Nie ruszaj się! To może trochę łaskotać..",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:30.926825Z"
+  },
+  "quests.bigfoot_burden.gnomedix_msg8": {
+    "src_hash": "cd6d2693244661936990d9aa89bd4492",
+    "text": "Gnomedix: Mam to! Tak! Co to było? Uhm, cóż... zdałeś badanie słuchu. Porozmawiaj z Gnomaticusem w sprawie następnego testu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:30.927669Z"
+  },
+  "quests.bigfoot_burden.golden_fruits_found": {
+    "src_hash": "d74cfab59a5109eb785c4a0529c86d06",
+    "text": "Znalazłeś kilka złotych owoców.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:30.928168Z"
+  },
+  "quests.bigfoot_burden.golem_returned": {
+    "src_hash": "9b62f0a69b86d144ca3e1576a14a58c0",
+    "text": "Golem wrócił do warsztatu gnomów.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:30.928825Z"
+  },
+  "quests.bigfoot_burden.golems_enough": {
+    "src_hash": "09f9e9d1e34832d2001a9dad6ec10799",
+    "text": "Na razie zwróciłeś wystarczającą liczbę golemów. Daj gnomom trochę czasu na naprawę. Zgłoś się teraz.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:30.930022Z"
+  },
+  "quests.bigfoot_burden.grayed_success": {
+    "src_hash": "008ee9986ebce5c395cc4c1b16eb61ed",
+    "text": "Zostałeś pomyślnie prześwietlony. Teraz pozwól doktorowi Gnomedixowi sprawdzić twoje uszy!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:36.387250Z"
+  },
+  "quests.bigfoot_burden.loot_warning": {
+    "src_hash": "0ae78e5ea93c887a30cc25c8b7f38626",
+    "text": "Masz minutę na ograbienie bossa i opuszczenie pokoju.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:36.387781Z"
+  },
+  "quests.bigfoot_burden.matchmaker_complete": {
+    "src_hash": "b984ec9660da868ecc69c9a2c01639ec",
+    "text": "Gratulacje! Wygląda na to, że kryształy się zakochały i Twoja misja została wykonana!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:36.388396Z"
+  },
+  "quests.bigfoot_burden.mind_refreshed": {
+    "src_hash": "d8af034712525ba4e9c7c6f91fc42164",
+    "text": "Twój umysł jest odświeżony!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:36.388974Z"
+  },
+  "quests.bigfoot_burden.mushroom_wait": {
+    "src_hash": "bc4e0249920d6057542c82785457005a",
+    "text": "Musisz poczekać, aż wydobędziesz zarodniki z tego grzyba.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:36.389628Z"
+  },
+  "quests.bigfoot_burden.need_teleport_crystal": {
+    "src_hash": "26c4744888f98b7829aa86e24ea0aab3",
+    "text": "Aby korzystać z tego urządzenia, potrzebujesz kryształu teleportacyjnego.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:19:38.854618Z"
   }
 }

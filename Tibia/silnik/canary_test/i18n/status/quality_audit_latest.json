@@ -1,31 +1,17 @@
 {
-  "timestamp": "2026-02-14T12:00:38.863680Z",
+  "timestamp": "2026-02-14T12:03:32.370517Z",
   "checked_entries": 100,
-  "issues_found": 25,
+  "issues_found": 32,
   "issues_by_type": {
-    "identical_to_en_exempt": 28,
-    "identical_to_en": 25,
-    "suspicious_log_high": 45,
-    "suspicious_log_low": 123,
-    "suspicious_log_medium": 9,
+    "identical_to_en_exempt": 27,
+    "identical_to_en": 32,
+    "suspicious_log_low": 109,
+    "suspicious_log_medium": 3,
     "suspicious_log_critical": 23,
+    "suspicious_log_high": 65,
     "suspicious_rejected_critical": 200
   },
   "issues": [
-    {
-      "key": "quests.movements_arena_pit.say_1",
-      "lang": "cs",
-      "type": "identical_to_en",
-      "en": "Fight!",
-      "translated": "Fight!"
-    },
-    {
-      "key": "quests.movements_arena_pit.say_1",
-      "lang": "el",
-      "type": "identical_to_en",
-      "en": "Fight!",
-      "translated": "Fight!"
-    },
     {
       "key": "scripts.actions_pyramids2.msg_1",
       "lang": "es",
@@ -186,6 +172,69 @@
       "type": "identical_to_en",
       "en": "You don't have it...",
       "translated": "You don't have it..."
+    },
+    {
+      "key": "raid.undead_darashia.name",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Undead Darashia",
+      "translated": "Undead Darashia"
+    },
+    {
+      "key": "raid.priestesses.name",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Priestesses",
+      "translated": "Priestesses"
+    },
+    {
+      "key": "raid.barba_bittermor.name",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Barba Bittermor",
+      "translated": "Barba Bittermor"
+    },
+    {
+      "key": "raid.terrorbirds.name",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Terrorbirds",
+      "translated": "Terrorbirds"
+    },
+    {
+      "key": "raid.wild_horses.name",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Wild Horses",
+      "translated": "Wild Horses"
+    },
+    {
+      "key": "raid.orc_backpack.name",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Orc Backpack",
+      "translated": "Orc Backpack"
+    },
+    {
+      "key": "raid.sir_valorcrest.name",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Sir Valorcrest",
+      "translated": "Sir Valorcrest"
+    },
+    {
+      "key": "raid.gnarlhounds.name",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Gnarlhounds",
+      "translated": "Gnarlhounds"
+    },
+    {
+      "key": "raid.zevelon_duskbringer.name",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Zevelon Duskbringer",
+      "translated": "Zevelon Duskbringer"
     }
   ],
   "threshold": 10,

@@ -1,0 +1,15 @@
+{"timestamp": "2026-02-14T12:05:37.090465Z", "stage": "received", "command": "AUTO:lt:npc.json:20", "pending_age_s": 2, "roundtrip_s": 0, "mode_type": "-", "mode_cat": "-", "mode_count": "-"}
+{"timestamp": "2026-02-14T12:07:04.024348Z", "stage": "received", "command": "AUTO:lt:npc.json:20", "pending_age_s": 1, "roundtrip_s": 0, "mode_type": "-", "mode_cat": "-", "mode_count": "-"}
+{"timestamp": "2026-02-14T12:07:07.183107Z", "stage": "received", "command": "AUTO:lt:quests.json:20", "pending_age_s": 2, "roundtrip_s": 0, "mode_type": "-", "mode_cat": "-", "mode_count": "-"}
+{"timestamp": "2026-02-14T12:07:36.022620Z", "stage": "received", "command": "AUTO:cs:quests.json:20", "pending_age_s": 1, "roundtrip_s": 0, "mode_type": "-", "mode_cat": "-", "mode_count": "-"}
+{"timestamp": "2026-02-14T12:07:56.218662Z", "stage": "received", "command": "AUTO:el:quests.json:20", "pending_age_s": 2, "roundtrip_s": 0, "mode_type": "-", "mode_cat": "-", "mode_count": "-"}
+{"timestamp": "2026-02-14T12:08:41.653437Z", "stage": "received", "command": "AUTO:lt:quests.json:20:ONCE", "pending_age_s": 1, "roundtrip_s": 0, "mode_type": "-", "mode_cat": "-", "mode_count": "-"}
+{"timestamp": "2026-02-14T12:10:12.992587Z", "stage": "completed", "command": "AUTO:lt:quests.json:20:ONCE", "pending_age_s": 1, "roundtrip_s": 92, "mode_type": "AUTO_TRANSLATE", "mode_cat": "lt", "mode_count": "quests.json"}
+{"timestamp": "2026-02-14T12:10:57.142546Z", "stage": "received", "command": "AUTO:lt:quests.json:20", "pending_age_s": 2, "roundtrip_s": 0, "mode_type": "-", "mode_cat": "-", "mode_count": "-"}
+{"timestamp": "2026-02-14T12:11:28.746405Z", "stage": "received", "command": "AUTO:cs:quests.json:20", "pending_age_s": 1, "roundtrip_s": 0, "mode_type": "-", "mode_cat": "-", "mode_count": "-"}
+{"timestamp": "2026-02-14T12:11:44.937806Z", "stage": "received", "command": "AUTO:el:quests.json:20", "pending_age_s": 1, "roundtrip_s": 0, "mode_type": "-", "mode_cat": "-", "mode_count": "-"}
+{"timestamp": "2026-02-14T12:11:54.531021Z", "stage": "received", "command": "AUTO:lt:npc.json:20", "pending_age_s": 1, "roundtrip_s": 0, "mode_type": "-", "mode_cat": "-", "mode_count": "-"}
+{"timestamp": "2026-02-14T12:13:25.946215Z", "stage": "completed", "command": "AUTO:lt:npc.json:20", "pending_age_s": 1, "roundtrip_s": 92, "mode_type": "AUTO_TRANSLATE", "mode_cat": "lt", "mode_count": "npc.json"}
+{"timestamp": "2026-02-14T12:13:39.685601Z", "stage": "received", "command": "AUTO:lt:quests.json:80", "pending_age_s": 1, "roundtrip_s": 0, "mode_type": "-", "mode_cat": "-", "mode_count": "-"}
+{"timestamp": "2026-02-14T12:16:14.885654Z", "stage": "received", "command": "AUTO:cs:quests.json:80", "pending_age_s": 57, "roundtrip_s": 0, "mode_type": "-", "mode_cat": "-", "mode_count": "-"}
+{"timestamp": "2026-02-14T12:17:46.073229Z", "stage": "completed", "command": "AUTO:cs:quests.json:80", "pending_age_s": 57, "roundtrip_s": 149, "mode_type": "AUTO_TRANSLATE", "mode_cat": "cs", "mode_count": "quests.json"}

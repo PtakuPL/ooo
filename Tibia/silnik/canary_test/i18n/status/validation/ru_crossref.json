@@ -2,9 +2,9 @@
   "lang": "ru",
   "coverage_pct": 34.9,
   "crossref_enabled": true,
-  "auto_fix_enabled": false,
-  "auto_fix_limit": 30,
-  "checked_at": "2026-02-14T12:00:45.238663Z",
+  "auto_fix_enabled": true,
+  "auto_fix_limit": 80,
+  "checked_at": "2026-02-14T12:05:18.820321Z",
   "issues_total": 460,
   "issues_by_type": {
     "consistency_in_language": 46,
@@ -4451,9 +4451,9 @@
     }
   ],
   "auto_fix": {
-    "attempted": 0,
-    "applied": 0,
-    "skipped": 0,
+    "attempted": 80,
+    "applied": 77,
+    "skipped": 3,
     "errors": 0
   }
 }

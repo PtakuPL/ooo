@@ -9389,6 +9389,7 @@ repaired_partial_mix = 0
 repaired_latin_cyrillic = 0
 repaired_i_dot = 0
 repaired_word_salad = 0
+repaired_wrong_script = 0
 
 for key, en_value in en_data.items():
     if key not in lang_data:
@@ -9460,7 +9461,19 @@ for key, en_value in en_data.items():
             repaired_word_salad += 1
             continue
 
-total_repaired = repaired_empty + repaired_identical + repaired_partial_mix + repaired_latin_cyrillic + repaired_i_dot + repaired_word_salad
+    # (R7) Wrong script — non-Latin lang has all-Latin translation (garbage from TM/import)
+    _r7_non_latin = {'bg','mk','ru','sr','uk','ja','ko','zh','zh-cn','zh-tw','zh_tw',
+                     'ar','he','bn','el','hi','hy','ka','ml','ta','te','th'}
+    if target_lang.lower().replace("_", "-") in _r7_non_latin:
+        _r7_alpha = [c for c in value if c.isalpha()]
+        if len(_r7_alpha) >= 3:
+            _r7_latin = sum(1 for c in _r7_alpha if ord(c) < 0x0370)
+            if _r7_latin == len(_r7_alpha):
+                lang_data[key] = f"{UNTRANSLATED_PREFIX}{en_value}"
+                repaired_wrong_script += 1
+                continue
+
+total_repaired = repaired_empty + repaired_identical + repaired_partial_mix + repaired_latin_cyrillic + repaired_i_dot + repaired_word_salad + repaired_wrong_script
 if total_repaired > 0:
     parts = []
     if repaired_empty: parts.append(f"empty={repaired_empty}")
@@ -9469,6 +9482,7 @@ if total_repaired > 0:
     if repaired_latin_cyrillic: parts.append(f"latin_cyrillic={repaired_latin_cyrillic}")
     if repaired_i_dot: parts.append(f"i_dot={repaired_i_dot}")
     if repaired_word_salad: parts.append(f"word_salad={repaired_word_salad}")
+    if repaired_wrong_script: parts.append(f"wrong_script={repaired_wrong_script}")
     print(f"   🔧 Auto-repair: {total_repaired} ({', '.join(parts)})")
 
 # Znajdź brakujące klucze
@@ -10304,7 +10318,7 @@ def _protect_placeholders(text):
         r"|%[0-9]*[sdifuxXcp%]"    # %s, %d, %02d, %%
         r"|\|[A-Z_]+\|"           # |PLAYERNAME|, |NAME|
         r"|''[^']*''"             # ''trade'', ''job''
-        r"|(?<!['\w])'([^']{1,200}?)'(?!')"   # 'task', 'keyword', 'long game command' — single-quoted commands
+        r"|(?<!['\w])'([^']{1,40}?)'(?!')"    # 'task', 'keyword' — short single-quoted commands only (max 40 chars)
         r"|'\/[a-zA-Z]+'"         # '/heal', '/cast'
         r"|<(?:b|i|u|s|em|strong|br|hr|p|div|span|font|img|a|li|ul|ol|table|tr|td|th|h[1-6]|pre|code|sub|sup|/[a-zA-Z]+)[\s>/]?[^>]*>"  # Tylko prawdziwe HTML tagi (nie narracyjne <gives you...>)
         r"|\\[ntr]"               # \n, \t, \r
@@ -12439,13 +12453,24 @@ WORD_TRANSLATIONS_ACTIVE = {
 }
 
 def simple_translate(text, lang):
-    """Zwraca tłumaczenie TYLKO gdy całe zdanie równa się wpisowi w słowniku."""
+    """Zwraca tłumaczenie TYLKO gdy całe zdanie równa się wpisowi w słowniku.
+    Najpierw match exact (z zachowaniem trailing spaces), potem ostrożny fallback."""
     translations = SIMPLE_TRANSLATIONS_ACTIVE.get(lang)
     if not translations:
         return None
+    src = str(text or "")
+    src_lower = src.lower()
+    src_stripped_lower = src.strip().lower()
     for en, translated in translations.items():
-        if text.strip().lower() == en.lower():
+        en_src = str(en or "")
+        if src_lower == en_src.lower():
             return translated
+        # Fallback bez utraty kontraktu trailing-space.
+        if src_stripped_lower == en_src.strip().lower():
+            src_trailing = len(src) - len(src.rstrip(" "))
+            en_trailing = len(en_src) - len(en_src.rstrip(" "))
+            if src_trailing == en_trailing:
+                return translated
     return None
 
 def _is_game_nontranslatable(key, en_value):
@@ -12506,9 +12531,15 @@ def _is_game_nontranslatable(key, en_value):
 
 def _is_proper_noun_key(key, en_value):
     """Klucz z nazwą własną — identyczna wartość = poprawne tłumaczenie."""
-    pn_prefixes = ("item.", "monster.", "spell.", "mount.", "quest.", "raid.", "achievement.", "npc.", "book.otbm.")
-    pn_suffixes = (".name", ".words", ".title", ".desc", ".announce")
-    if any(key.startswith(p) for p in pn_prefixes) and any(key.endswith(s) for s in pn_suffixes):
+    # Nie traktujemy już masowo item/monster/spell name jako "proper noun":
+    # to blokowało realne tłumaczenia (EN-copy przechodził jako OK).
+    if key.startswith("npc.") and key.endswith((".name", ".title")):
+        return True
+    if key.startswith("spell.") and key.endswith(".words"):
+        return True
+    if key.startswith("book.otbm.") and key.endswith((".title", ".name")):
+        return True
+    if key.startswith(("quest.", "raid.", "achievement.")) and key.endswith(".title"):
         return True
     en_stripped = en_value.strip()
     if len(en_stripped) <= 3:
@@ -12516,15 +12547,54 @@ def _is_proper_noun_key(key, en_value):
     # Game-specific nontranslatable content (fictional languages, animal sounds)
     if _is_game_nontranslatable(key, en_stripped):
         return True
-    # Short text (1-4 words) starting with uppercase under proper-noun prefix = likely a name
-    if any(key.startswith(p) for p in pn_prefixes):
-        words = en_stripped.split()
-        if len(words) <= 4 and words[0][0:1].isupper():
+    # Krótka fraza TitleCase pod kluczem nazwy (ale bez masowego exemp-tu dla items/monsters).
+    name_like_prefixes = ("npc.", "monster.", "mount.", "spell.", "book.otbm.")
+    if any(key.startswith(p) for p in name_like_prefixes) and key.endswith((".name", ".title", ".desc")):
+        words = [w for w in re.findall(r"[A-Za-zÀ-ÿ]+", en_stripped)]
+        if 1 <= len(words) <= 3 and all(w[:1].isupper() for w in words):
             return True
     # All-uppercase/digit strings (abbreviations, codes)
     if en_stripped and all(c.isupper() or c.isdigit() or c in ".-_/ " for c in en_stripped):
         return True
     return False
+
+def _normalize_semantic_text(text: str) -> str:
+    t = str(text or "")
+    t = re.sub(r"\s+", " ", t).strip().lower()
+    return t
+
+_SEMANTIC_MISMATCH_DENYLIST = {
+    "the chest is empty.": {
+        "you found.",
+        "you found",
+    },
+    "it is empty.": {
+        "you found.",
+        "you found",
+    },
+}
+
+def _semantic_mapping_mismatch(en_text: str, candidate: str) -> bool:
+    en_n = _normalize_semantic_text(en_text)
+    tr_n = _normalize_semantic_text(candidate)
+    if not en_n or not tr_n:
+        return False
+    denied = _SEMANTIC_MISMATCH_DENYLIST.get(en_n)
+    if denied and tr_n in denied:
+        return True
+    return False
+
+def _requires_trailing_space_contract(key: str, en_text: str) -> bool:
+    src = str(en_text or "")
+    if not src.endswith(" "):
+        return False
+    k = str(key or "")
+    # Fragmenty konkatenowane runtime: muszą zachować końcową spację.
+    if k.startswith(("quests.", "npc.", "server.", "scripts.")):
+        return True
+    if any(tok in src for tok in ("{}", "%s", "{0}", "{1}", "|PLAYERNAME|")):
+        return True
+    return True
 
 def is_untranslated_value(value, en_value, key=""):
     if value is None:
@@ -12841,6 +12911,14 @@ def tm_upsert(key: str, src_hash_value: str, text: str, source: str, confidence:
         "updated_at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
     }
 
+# Early script group for text_memory loading (full LANG_SCRIPT_GROUP defined later)
+_EARLY_NON_LATIN_LANGS = {
+    "bg", "mk", "ru", "sr", "uk",  # cyrillic
+    "ja", "ko", "zh", "zh-cn", "zh-tw", "zh_tw",  # cjk
+    "ar", "he",  # rtl
+    "bn", "el", "hi", "hy", "ka", "ml", "ta", "te", "th",  # exotic
+}
+
 text_memory = {}
 text_memory_lc = {}
 text_memory_counts = {}
@@ -12871,10 +12949,27 @@ if os.path.isdir(lang_dir):
             # Quality gate: odrzuć artefakty z text_memory
             if tr_val_s in ("I.", "I..", "Nie.", "Niene", "Tak.", "Ja."):
                 continue
+            if tr_val_s == en_src_s and not _is_proper_noun_key(k, en_src_s):
+                continue
+            if _semantic_mapping_mismatch(en_src_s, tr_val_s):
+                continue
+            if _requires_trailing_space_contract(k, en_src_s):
+                _en_ts = len(en_src_s) - len(en_src_s.rstrip(" "))
+                _tr_ts = len(tr_val_s) - len(tr_val_s.rstrip(" "))
+                if _tr_ts < _en_ts:
+                    continue
             if len(en_src_s) >= 4 and len(tr_val_s) > 0:
                 _tm_ratio = len(tr_val_s) / len(en_src_s)
                 if _tm_ratio < 0.3 or _tm_ratio > 4.0:
                     continue
+            # Script filter: skip all-Latin translations for non-Latin languages
+            _tmload_lang_lc = target_lang.lower().replace("_", "-")
+            if _tmload_lang_lc in _EARLY_NON_LATIN_LANGS:
+                _tmload_alpha = [c for c in tr_val_s if c.isalpha()]
+                if len(_tmload_alpha) >= 3:
+                    _tmload_latin = sum(1 for c in _tmload_alpha if ord(c) < 0x0370)
+                    if _tmload_latin == len(_tmload_alpha):
+                        continue
             if en_src_s and tr_val_s and _candidate_shape_ok(en_src_s, tr_val_s, target_lang):
                 bucket = text_memory_counts.setdefault(en_src_s, {})
                 bucket[tr_val_s] = int(bucket.get(tr_val_s, 0) or 0) + 1
@@ -12961,6 +13056,13 @@ def _auto_fix_translation(en_text: str, candidate: str, lang: str = ""):
         text = text + '\n'
         fixes.append("trailing_newline")
 
+    # F7: Preserve trailing-space contract for concatenated runtime fragments.
+    en_trailing_spaces = len(en_text) - len(en_text.rstrip(" "))
+    tr_trailing_spaces = len(text) - len(text.rstrip(" "))
+    if en_trailing_spaces > tr_trailing_spaces:
+        text = text + (" " * (en_trailing_spaces - tr_trailing_spaces))
+        fixes.append("preserve_trailing_space_contract")
+
     return text, fixes
 
 # ── Faza 4 / Section 12.5: Post-translation validation ──────────────────────
@@ -13017,6 +13119,16 @@ def validate_candidate(en_text: str, candidate: str):
         _vc_fc = sum(1 for w in _vc_words if w.rstrip('.,!?;:') in _vc_func)
         if _vc_fc >= 2 and _vc_fc / len(_vc_words) > 0.25:
             return False, "word_salad"
+
+    # Hard gate: Wrong script — non-Latin language with all-Latin translation
+    _vc_lang = target_lang.lower().replace("_", "-")
+    _vc_group = LANG_SCRIPT_GROUP.get(_vc_lang, "latin")
+    if _vc_group != "latin":
+        _vc_alpha = [c for c in candidate if c.isalpha()]
+        if len(_vc_alpha) >= 3:
+            _vc_latin = sum(1 for c in _vc_alpha if ord(c) < 0x0370)
+            if _vc_latin == len(_vc_alpha):
+                return False, "wrong_script"
 
     return True, "ok"
 
@@ -13165,33 +13277,33 @@ def detect_suspicious(en_text: str, translated_text: str, lang: str, key: str = 
             "message": "Ekstremalna proporcja długości tłumaczenia",
         })
 
-    # S3: Identical to EN (z wykluczeniem nazw własnych)
+    # S3: Identical to EN (z wykluczeniem nazw własnych i treści technicznych)
     if tr == en and not _is_proper_noun_key(key, en) and (en not in TIBIA_PROPER_NOUNS):
-        lang_lc = str(lang or "").lower()
-        if lang_lc in {"pl", "es"}:
-            # Dla PL/ES wymuszamy realne tłumaczenie: EN-copy tylko gdy tekst
-            # jest technicznie nieprzetłumaczalny.
-            if _is_probably_nontranslatable_text(en):
-                pass
-            else:
-                issues.append({
-                    "type": "identical_to_en",
-                    "severity": "CRITICAL",
-                    "message": "Tłumaczenie identyczne z EN",
-                })
-        else:
-            # Skip short single-word/phrase texts (likely names/terms/labels that don't change)
-            en_words = [w.rstrip(":,.!?") for w in en.strip().split() if w.rstrip(":,.!?")]
-            if len(en_words) <= 3 and all(w[0:1].isupper() for w in en_words if w):
-                pass  # Short capitalized phrase — likely a proper name or label
-            elif len(en.strip()) <= 20 and not any(c.islower() for c in en.strip()[:1]):
-                pass  # Short text starting with uppercase — likely a label
-            else:
-                issues.append({
-                    "type": "identical_to_en",
-                    "severity": "MEDIUM",
-                    "message": "Tłumaczenie identyczne z EN",
-                })
+        if not _is_probably_nontranslatable_text(en):
+            issues.append({
+                "type": "identical_to_en",
+                "severity": "CRITICAL",
+                "message": "Tłumaczenie identyczne z EN",
+            })
+
+    # S3b: Semantycznie zabronione mapowanie krótkich fraz systemowych.
+    if _semantic_mapping_mismatch(en, tr):
+        issues.append({
+            "type": "semantic_map_mismatch",
+            "severity": "CRITICAL",
+            "message": "Wykryto semantycznie błędne mapowanie frazy",
+        })
+
+    # S3c: Fragment concat contract (trailing space) dla komunikatów runtime.
+    if _requires_trailing_space_contract(key, en):
+        en_ts = len(en) - len(en.rstrip(" "))
+        tr_ts = len(tr) - len(tr.rstrip(" "))
+        if tr_ts < en_ts:
+            issues.append({
+                "type": "trailing_space_contract",
+                "severity": "CRITICAL",
+                "message": "Utrata końcowej spacji dla fragmentu łączonego runtime",
+            })
 
     # Trudne termy gry: niekoniecznie błąd, ale sygnał do manual review
     if TIBIA_PROPER_NOUNS and any(term in en for term in TIBIA_PROPER_NOUNS):
@@ -13210,12 +13322,12 @@ def detect_suspicious(en_text: str, translated_text: str, lang: str, key: str = 
             "message": "Wykryto mieszane skrypty Unicode",
         })
 
-    # S6: Artifacts
-    if re.search(r"\?\?\?|\[[A-Z]{2,}(?:[-_][A-Z]{2,})?\]|TODO|FIXME", tr):
+    # S6: Artifacts (exclude roman numerals [II],[III],[IV] and ≤3 question marks)
+    if re.search(r"\?{4,}|\[(?![IVXLCDM]{1,8}\])[A-Z]{2,}(?:[-_][A-Z]{2,})?\]|TODO|FIXME", tr):
         issues.append({
             "type": "artifact_tokens",
             "severity": "HIGH",
-            "message": "Wykryto artefakty typu TODO/[LANG]/???",
+            "message": "Wykryto artefakty typu TODO/[LANG]/????",
         })
 
     # S8: Exploded translation size
@@ -13706,11 +13818,30 @@ for key, en_text in en_data.items():
                 continue
             if not (current_value.startswith("[") or current_value.startswith("[TODO]") or current_value == en_text):
                 ok_current, _ = validate_candidate(en_text, current_value)
+                current_issues = []
+                current_max_sev = "LOW"
                 if ok_current:
+                    current_issues = detect_suspicious(en_text, current_value, target_lang, key)
+                    current_issues.extend(validate_per_lang(en_text, current_value, target_lang, key))
+                    current_max_sev = _max_severity(current_issues)
+                if ok_current and current_max_sev == "LOW":
                     skipped_not_placeholder += 1
                     continue
                 suspicious_existing += 1
                 suspicious_existing_current = True
+                if current_issues:
+                    _append_jsonl(suspicious_log_path, {
+                        "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+                        "lang": target_lang,
+                        "category": json_file,
+                        "key": key,
+                        "source": "existing_value",
+                        "severity": current_max_sev,
+                        "issues": current_issues,
+                        "action": "retranslate",
+                        "en": str(en_text),
+                        "translated": str(current_value),
+                    })
         else:
             if not current_value.startswith("["):
                 continue  # Już przetłumaczone
@@ -13800,6 +13931,35 @@ for key, en_text in en_data.items():
                         lang_data[key] = f"[{target_lang.upper()}] {en_text}"
                         placeholders += 1
                     continue
+                # HIGH severity from TM — reject script/quality issues, redirect to GT
+                if max_sev == "HIGH":
+                    _tm_reject_types = {"wrong_script", "cyrillic_latin_mix", "rtl_insufficient", "i_dot_artifact", "word_salad", "mixed_language"}
+                    if any(_has_issue_type(issues, t) for t in _tm_reject_types):
+                        if use_google_translate:
+                            gt_pending.append((key, en_text, h, suspicious_existing_current))
+                            _append_jsonl(suspicious_log_path, {
+                                "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+                                "lang": target_lang,
+                                "category": json_file,
+                                "key": key,
+                                "source": "tm",
+                                "severity": "HIGH",
+                                "issues": issues,
+                                "action": "fallback_to_google_translate_high",
+                                "en": str(en_text),
+                                "translated": str(candidate),
+                            })
+                            continue
+                        suspicious_rejected += 1
+                        _append_jsonl(suspicious_rejected_path, log_entry)
+                        guard_fail += 1
+                        guard_quality += 1
+                        if strict_mode:
+                            skipped_not_placeholder += 1
+                        else:
+                            lang_data[key] = f"[{target_lang.upper()}] {en_text}"
+                            placeholders += 1
+                        continue
                 _append_jsonl(suspicious_log_path, log_entry)
             lang_data[key] = candidate
             translated += 1
@@ -13837,7 +13997,16 @@ for key, en_text in en_data.items():
         if not by_text:
             by_text = text_memory_lc.get(str(en_text).lower())
         if by_text:
-            simple = by_text
+            # Odrzuć skażony cache (EN-copy lub znane semantycznie błędne mapowanie).
+            if by_text == str(en_text) and not _is_proper_noun_key(key, str(en_text)):
+                by_text = None
+            # Case-insensitive EN-copy check (catches "Pillar" for EN "pillar")
+            elif str(by_text).lower() == str(en_text).lower() and not _is_proper_noun_key(key, str(en_text)):
+                by_text = None
+            elif _semantic_mapping_mismatch(str(en_text), str(by_text)):
+                by_text = None
+            if by_text:
+                simple = by_text
 
     if not simple:
         simple = translate_words_for_simple_text(str(en_text), target_lang)
@@ -13918,6 +14087,35 @@ for key, en_text in en_data.items():
                         lang_data[key] = f"[{target_lang.upper()}] {en_text}"
                         placeholders += 1
                     continue
+                # HIGH severity from simple — reject script/quality issues, redirect to GT
+                if max_sev == "HIGH":
+                    _sim_reject_types = {"wrong_script", "cyrillic_latin_mix", "rtl_insufficient", "i_dot_artifact", "word_salad", "mixed_language"}
+                    if any(_has_issue_type(issues, t) for t in _sim_reject_types):
+                        if use_google_translate:
+                            gt_pending.append((key, en_text, h, suspicious_existing_current))
+                            _append_jsonl(suspicious_log_path, {
+                                "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+                                "lang": target_lang,
+                                "category": json_file,
+                                "key": key,
+                                "source": "simple",
+                                "severity": "HIGH",
+                                "issues": issues,
+                                "action": "fallback_to_google_translate_high",
+                                "en": str(en_text),
+                                "translated": str(simple),
+                            })
+                            continue
+                        suspicious_rejected += 1
+                        _append_jsonl(suspicious_rejected_path, log_entry)
+                        guard_fail += 1
+                        guard_quality += 1
+                        if strict_mode:
+                            skipped_not_placeholder += 1
+                        else:
+                            lang_data[key] = f"[{target_lang.upper()}] {en_text}"
+                            placeholders += 1
+                        continue
                 _append_jsonl(suspicious_log_path, log_entry)
             lang_data[key] = simple
             translated += 1
@@ -14084,6 +14282,21 @@ if use_google_translate and gt_pending:
                             else:
                                 skipped_not_placeholder += 1
                             continue
+                        # HIGH severity from GT — reject script/quality issues (last resort)
+                        if max_sev == "HIGH":
+                            _gt_reject_types = {"wrong_script", "cyrillic_latin_mix", "rtl_insufficient", "i_dot_artifact", "word_salad"}
+                            if any(_has_issue_type(issues, t) for t in _gt_reject_types):
+                                suspicious_rejected += 1
+                                _append_jsonl(suspicious_rejected_path, log_entry)
+                                gt_guard_fail += 1
+                                guard_fail += 1
+                                guard_quality += 1
+                                if not strict_mode:
+                                    lang_data[key] = f"[{target_lang.upper()}] {en_text}"
+                                    placeholders += 1
+                                else:
+                                    skipped_not_placeholder += 1
+                                continue
                         _append_jsonl(suspicious_log_path, log_entry)
                     lang_data[key] = candidate
                     gt_translated += 1
@@ -20120,16 +20333,106 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
             done
         }
 
+        append_forced_command_metric() {
+            local stage="${1:-unknown}"              # received|completed|failed
+            local cmd="${2:-}"
+            local pending_age_s="${3:-0}"           # age from file mtime until worker pickup
+            local roundtrip_s="${4:-0}"             # age from file mtime until cycle completion
+            local mode_type="${5:-}"
+            local mode_cat="${6:-}"
+            local mode_count="${7:-}"
+            python3 - "$STATUS_DIR/forced_command_metrics.jsonl" "$STATUS_DIR/forced_command_metrics_latest.json" "$stage" "$cmd" "$pending_age_s" "$roundtrip_s" "$mode_type" "$mode_cat" "$mode_count" <<'PYFORCEDMETRIC'
+import json
+import os
+import sys
+from datetime import datetime, timezone
+
+jsonl_path = sys.argv[1]
+latest_path = sys.argv[2]
+stage = sys.argv[3]
+cmd = sys.argv[4]
+pending_age_s = int(float(sys.argv[5] or 0))
+roundtrip_s = int(float(sys.argv[6] or 0))
+mode_type = sys.argv[7]
+mode_cat = sys.argv[8]
+mode_count = sys.argv[9]
+
+entry = {
+    "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+    "stage": stage,
+    "command": cmd,
+    "pending_age_s": pending_age_s,
+    "roundtrip_s": roundtrip_s,
+    "mode_type": mode_type,
+    "mode_cat": mode_cat,
+    "mode_count": mode_count,
+}
+os.makedirs(os.path.dirname(jsonl_path), exist_ok=True)
+with open(jsonl_path, "a", encoding="utf-8") as f:
+    f.write(json.dumps(entry, ensure_ascii=False) + "\n")
+tmp = latest_path + ".tmp"
+with open(tmp, "w", encoding="utf-8") as f:
+    json.dump(entry, f, indent=2, ensure_ascii=False)
+os.replace(tmp, latest_path)
+PYFORCEDMETRIC
+        }
+
+        clear_stale_start_lock_if_needed() {
+            # Stale lock pattern: lock file held by orphan "sleep", while pid file owner nie żyje.
+            local pid_owner=""
+            local lock_holders=""
+            local cleared=0
+            pid_owner=$(cat "$PID_FILE" 2>/dev/null || echo "")
+            if [[ "$pid_owner" =~ ^[0-9]+$ ]] && kill -0 "$pid_owner" 2>/dev/null; then
+                return 1
+            fi
+            lock_holders=$(lsof -t "$START_LOCK_FILE" 2>/dev/null | sort -u || true)
+            [ -z "$lock_holders" ] && return 1
+
+            for hp in $lock_holders; do
+                [ -z "$hp" ] && continue
+                hp_cmd=$(ps -p "$hp" -o cmd= 2>/dev/null || true)
+                # Nie zabijaj aktywnego worker script.
+                if echo "$hp_cmd" | grep -q "i18n_worker_simple.sh --continuous"; then
+                    continue
+                fi
+                kill "$hp" >/dev/null 2>&1 || true
+                sleep 0.1
+                kill -9 "$hp" >/dev/null 2>&1 || true
+                cleared=1
+            done
+
+            if [ "$cleared" -eq 1 ]; then
+                echo "🛠️ Wykryto stale start lock — wyczyszczono orphan holder(s)"
+                status_log_op "${CYCLE:-0}" "WATCHDOG" "STALE_START_LOCK_CLEARED" "-" "-" "ok" "cleared_orphan_lock_holders"
+                return 0
+            fi
+            return 1
+        }
+
         if command -v flock >/dev/null 2>&1; then
             exec 7>"$START_LOCK_FILE"
             if ! flock -n 7; then
-                existing_pid=$(cat "$PID_FILE" 2>/dev/null || echo "")
-                if [[ "$existing_pid" =~ ^[0-9]+$ ]]; then
-                    echo "Inny worker już działa (PID: $existing_pid). Zatrzymuję uruchomienie."
+                if clear_stale_start_lock_if_needed; then
+                    sleep 1
+                    if ! flock -n 7; then
+                        existing_pid=$(cat "$PID_FILE" 2>/dev/null || echo "")
+                        if [[ "$existing_pid" =~ ^[0-9]+$ ]]; then
+                            echo "Inny worker już działa (PID: $existing_pid). Zatrzymuję uruchomienie."
+                        else
+                            echo "Inny worker już działa (lock startup). Zatrzymuję uruchomienie."
+                        fi
+                        exit 1
+                    fi
                 else
-                    echo "Inny worker już działa (lock startup). Zatrzymuję uruchomienie."
+                    existing_pid=$(cat "$PID_FILE" 2>/dev/null || echo "")
+                    if [[ "$existing_pid" =~ ^[0-9]+$ ]]; then
+                        echo "Inny worker już działa (PID: $existing_pid). Zatrzymuję uruchomienie."
+                    else
+                        echo "Inny worker już działa (lock startup). Zatrzymuję uruchomienie."
+                    fi
+                    exit 1
                 fi
-                exit 1
             fi
         fi
 
@@ -20288,6 +20591,10 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
             MODE_EXTRA2=""  # Ważne: reset na początku cyklu, aby dispatcher nie był pomijany
             FORCE_LANG_VALIDATION=""
             AUTO_COMMAND_FAST_MODE=false
+            FORCED_CMD_RAW=""
+            FORCED_CMD_FILE_MTIME=0
+            FORCED_CMD_PENDING_AGE_S=0
+            PREEMPT_PENDING_FORCED_CMD=false
 
             # === 8.3: Reset translate_limit na początku cyklu (dla adaptive batch recalc) ===
             TRANSLATE_LIMIT="${USER_TRANSLATE_LIMIT:-0}"
@@ -20401,13 +20708,28 @@ BEGIN { done=0 }
             
             # 2. Sprawdź .worker_command (szybsze, lokalne)
             if [ -z "$CMD" ] && [ -f "$COMMAND_FILE" ]; then
+                _cmd_mtime=$(stat -c %Y "$COMMAND_FILE" 2>/dev/null || echo 0)
+                _now_epoch=$(date +%s)
                 CMD=$(cat "$COMMAND_FILE" 2>/dev/null)
                 rm -f "$COMMAND_FILE"
-                [ -n "$CMD" ] && echo "📨 Odebrano z .worker_command: $CMD"
+                if [ -n "$CMD" ]; then
+                    FORCED_CMD_RAW="$CMD"
+                    if [[ "$_cmd_mtime" =~ ^[0-9]+$ ]] && [ "$_cmd_mtime" -gt 0 ] 2>/dev/null; then
+                        FORCED_CMD_FILE_MTIME="$_cmd_mtime"
+                        if [ "$_now_epoch" -gt "$_cmd_mtime" ] 2>/dev/null; then
+                            FORCED_CMD_PENDING_AGE_S=$((_now_epoch - _cmd_mtime))
+                        fi
+                    fi
+                    echo "📨 Odebrano z .worker_command: $CMD (pending_age=${FORCED_CMD_PENDING_AGE_S}s)"
+                fi
             fi
             
             # 3. Wykonaj komendę jeśli jest
             if [ -n "$CMD" ]; then
+                [ -z "$FORCED_CMD_RAW" ] && FORCED_CMD_RAW="$CMD"
+                if [ -n "$FORCED_CMD_RAW" ]; then
+                    append_forced_command_metric "received" "$FORCED_CMD_RAW" "${FORCED_CMD_PENDING_AGE_S:-0}" "0" "-" "-" "-"
+                fi
                 # Opcja: zakończ po tym cyklu (dla testów faz i weryfikacji dashboardu)
                 if [[ "$CMD" == *":ONCE" ]]; then
                     STOP_AFTER_CYCLE="true"
@@ -21435,9 +21757,16 @@ PY
                     # LIVE: zakończ etap auto dla czytelnego dashboardu
                     status_update_activity "running" "$CYCLE" "AUTO_TRANSLATE" "auto_done" "$MODE_CAT" "$MODE_COUNT" "translated=$AT_TRANSLATED guard_fail=$AT_GUARD_FAIL strict_missing_key=$AT_SKIPPED_MISSING_KEY strict_skipped_done=$AT_SKIPPED_NOT_PLACEHOLDER" "$AT_TRANSLATED" "$AT_TRANSLATED" "keys" 0
 
+                    # Jeśli w trakcie długiego cyklu pojawiła się nowa komenda wymuszona,
+                    # skracamy ten cykl, aby szybciej przejść do następnego dispatchu.
+                    if [ -f "$COMMAND_FILE" ] && [ "$AUTO_COMMAND_FAST_MODE" != "true" ]; then
+                        PREEMPT_PENDING_FORCED_CMD=true
+                        echo "   ⚡ PREEMPT: wykryto pending .worker_command — skracam post-processing tego cyklu"
+                    fi
+
                     # === 8.4: Parallel language processing ===
                     # Po przetworzeniu głównego targetu, przetłumacz dodatkowe języki w tym samym cyklu
-                    if [ "${PARALLEL_LANGS_PER_CYCLE:-1}" -gt 1 ] 2>/dev/null && [ "$TRANSLATIONS_ONLY" = "true" ]; then
+                    if [ "${PARALLEL_LANGS_PER_CYCLE:-1}" -gt 1 ] 2>/dev/null && [ "$TRANSLATIONS_ONLY" = "true" ] && [ "$PREEMPT_PENDING_FORCED_CMD" != "true" ]; then
                         PARALLEL_DONE=1  # już przetworzony 1 język
                         PARALLEL_PRIMARY_LANG="$MODE_CAT"
                         if [ "$AUTO_COMMAND_FAST_MODE" = "true" ]; then
@@ -21477,10 +21806,12 @@ PY
                             PARALLEL_DONE=$((PARALLEL_DONE + 1))
                         done
                         echo "   📊 Parallel: przetworzono $PARALLEL_DONE język(ów) w cyklu $CYCLE"
+                    elif [ "$PREEMPT_PENDING_FORCED_CMD" = "true" ]; then
+                        echo "   ⚡ PREEMPT: pomijam parallel langs (pending forced command)"
                     fi
 
                     # === Sekcja 12.5: Repair identical_to_en bonus round ===
-                    if [ "$AUTO_COMMAND_FAST_MODE" = "true" ]; then
+                    if [ "$AUTO_COMMAND_FAST_MODE" = "true" ] || [ "$PREEMPT_PENDING_FORCED_CMD" = "true" ]; then
                         echo "   ⚡ FAST AUTO: pomijam repair/audit/tier-validation/lang-validation w tym cyklu"
                     else
                         repair_identical_bonus_round "$CYCLE"
@@ -21561,6 +21892,17 @@ PY
             esac
             MODE_T1=$(now_ms)
             status_log_cycle_perf "$CYCLE" "${MODE_TYPE:-IDLE}" "${MODE_CAT:--}" "mode_run" "$((MODE_T1 - MODE_T0))" "mode=${MODE_TYPE:-IDLE}"
+
+            if [ -n "$FORCED_CMD_RAW" ]; then
+                _forced_roundtrip_s=0
+                _forced_now_epoch=$(date +%s)
+                if [[ "${FORCED_CMD_FILE_MTIME:-0}" =~ ^[0-9]+$ ]] && [ "${FORCED_CMD_FILE_MTIME:-0}" -gt 0 ] 2>/dev/null; then
+                    if [ "$_forced_now_epoch" -gt "$FORCED_CMD_FILE_MTIME" ] 2>/dev/null; then
+                        _forced_roundtrip_s=$((_forced_now_epoch - FORCED_CMD_FILE_MTIME))
+                    fi
+                fi
+                append_forced_command_metric "completed" "$FORCED_CMD_RAW" "${FORCED_CMD_PENDING_AGE_S:-0}" "$_forced_roundtrip_s" "${MODE_TYPE:-}" "${MODE_CAT:-}" "${MODE_COUNT:-}"
+            fi
 
             # Wymuszona walidacja po cyklu także dla trybów innych niż AUTO_TRANSLATE
             if [ -n "$FORCE_LANG_VALIDATION" ] && [ "${MODE_TYPE:-}" != "AUTO_TRANSLATE" ]; then

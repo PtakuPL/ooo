@@ -4593,19 +4593,19 @@
   },
   "quests.actions_rewards.msg_1": {
     "src_hash": "2dba8779b7220248332287566af0d980",
-    "text": "You found",
-    "source": "simple_dict",
-    "confidence": 0.98,
+    "text": "Našli jste ",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:52:43.925559Z"
+    "updated_at": "2026-02-14T12:16:26.527438Z"
   },
   "quests.actions_rewards.msg_2": {
     "src_hash": "2dba8779b7220248332287566af0d980",
-    "text": "You found",
-    "source": "simple_dict",
-    "confidence": 0.98,
+    "text": "Našli jste ",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:52:43.925839Z"
+    "updated_at": "2026-02-14T12:16:26.527951Z"
   },
   "quests.bigfoot_burden.chest_empty": {
     "src_hash": "a96509dffb06f1f5933de18be57bb03e",
@@ -4710,5 +4710,893 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-14T11:52:49.711388Z"
+  },
+  "quests.6_mind_travel.msg_1": {
+    "src_hash": "98da952f701d6358d74f1d9a180990fa",
+    "text": "Byl jsi přesunut na levou stranu mozku",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:07:41.704795Z"
+  },
+  "quests.6_mind_travel.msg_2": {
+    "src_hash": "1e57dd425d49fa37eefdeb9faa01a4f2",
+    "text": "Byl jsi přesunut na pravou stranu mozku",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:07:41.705300Z"
+  },
+  "quests.6_mind_travel.msg_3": {
+    "src_hash": "39c4cd386bc515db3ca13ad71ea9a439",
+    "text": "Cítíte se roztřesení a závratě, svět kolem vás ztmavne. Pak se vám zrak zase vyčistí – a jste někde jinde.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:07:41.706359Z"
+  },
+  "quests.8_blessing_the_statues.msg_1": {
+    "src_hash": "4a64e6aeefc9b8c9f1fd15709a257e2d",
+    "text": "Už jsi požehnal této soše.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:07:41.706786Z"
+  },
+  "quests.8_blessing_the_statues.msg_2": {
+    "src_hash": "414cb5c464ec2b74b4431b6931757db9",
+    "text": "Požehnej sochu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:07:41.707162Z"
+  },
+  "quests.action_drume.msg_1": {
+    "src_hash": "5a37b3d700f88246b6e36e3077df916b",
+    "text": "Váš čas skončil.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:07:47.552225Z"
+  },
+  "quests.actions.there_is_someone_in_the_room": {
+    "src_hash": "52dddc0701dbfce052c07b68d596db35",
+    "text": "V místnosti je někdo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:07:47.552639Z"
+  },
+  "quests.actions.you_already_used_your_knife_on": {
+    "src_hash": "663cc82c187e025c63062760739dc4e5",
+    "text": "Už jsi použil nůž na mrtvolu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:07:47.553093Z"
+  },
+  "quests.actions.you_cant_use_this_when_youre": {
+    "src_hash": "dd3c1a5f60f082f6ac8b1a60d942ba2a",
+    "text": "Nemůžete to použít, když jste v boji.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:07:47.553548Z"
+  },
+  "quests.actions_bait.say_1": {
+    "src_hash": "9cdc566e522df381db3d0dcad05af784",
+    "text": "Návnada je již nastavena. Jděte nahoru na vyhlídku a zkontrolujte dalekohled!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:07:47.554115Z"
+  },
+  "quests.actions_basin.msg_1": {
+    "src_hash": "140208bb60fc3f70eabd068701030425",
+    "text": "Promiň",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:07:51.248933Z"
+  },
+  "quests.actions_bonefiddle.msg_1": {
+    "src_hash": "fa77689cf9736ba9d5773f0e3b7b2683",
+    "text": "Hrajete na kostní housle.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:07:51.249352Z"
+  },
+  "quests.actions_bonefiddle.msg_2": {
+    "src_hash": "5199ba776a4a3a24d69420d0eb2e685b",
+    "text": "Hrajete Paví baladu a otevře se portál.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:07:51.249874Z"
+  },
+  "quests.actions_bonefiddle.msg_3": {
+    "src_hash": "60b384a0aa95079616923d65a09d92fc",
+    "text": "*Byla jednou jedna krásná dívka s tmavýma očima a hedvábnými vlasy. Daleko od domova zemřela. Žádný hrob, žádné probuzení, žádný smutek.*",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:07:51.250675Z"
+  },
+  "quests.actions_bonefiddle.msg_4": {
+    "src_hash": "e8a3f87ef1f8ea48f276ed48a8524749",
+    "text": "Vlasy připnete na ebenový hmatník. Prameny by měly být dostatečné, aby sloužily jako struny.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:07:51.251294Z"
+  },
+  "quests.actions_bonefiddle.msg_5": {
+    "src_hash": "1d91d803c170748ff4f101712cf1c262",
+    "text": "Ebenové dřevo připevníte k lebce. To by mělo splňovat požadavky na hmatník.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:07:54.085676Z"
+  },
+  "quests.actions_boss_timira_fight.say_1": {
+    "src_hash": "2d0952a71b064faaa2eb619011b63524",
+    "text": "Dílky září!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:07:54.086193Z"
+  },
+  "quests.actions_boss_timira_fight.say_2": {
+    "src_hash": "c4a01b00c90bdabd21cc5e30c2bc1f3e",
+    "text": "Voda se zformovala do tvaru!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:07:54.086691Z"
+  },
+  "quests.actions_coruja.msg_1": {
+    "src_hash": "140208bb60fc3f70eabd068701030425",
+    "text": "Promiň",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:11:30.009235Z"
+  },
+  "quests.actions_sangra.msg_1": {
+    "src_hash": "140208bb60fc3f70eabd068701030425",
+    "text": "Promiň",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:11:30.015682Z"
+  },
+  "quests.actions_boxramp.msg_1": {
+    "src_hash": "5bca0ac5063448c84fdbf68693d08cc8",
+    "text": "Cunk.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:11:32.983162Z"
+  },
+  "quests.actions_brain.msg_1": {
+    "src_hash": "76b9ee74c4dea36035865e57903f9629",
+    "text": "Žádné mozky",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:11:32.983475Z"
+  },
+  "quests.actions_cagekey.msg_1": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Prázdný.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:11:32.983719Z"
+  },
+  "quests.actions_chairteleport.msg_1": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Prázdný.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:11:32.983949Z"
+  },
+  "quests.actions_chairteleport.msg_2": {
+    "src_hash": "cdd043562d5e12afa9a015cd8797a89d",
+    "text": "Teleportovat se.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:11:32.984214Z"
+  },
+  "quests.actions_coral.msg_2": {
+    "src_hash": "3eea7b0deb17fa866731cca6043b23c8",
+    "text": "Jo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:11:36.369198Z"
+  },
+  "quests.actions_coral.msg_3": {
+    "src_hash": "1aaa11069b945c47461c309c68d03c03",
+    "text": "Selhat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:11:36.369615Z"
+  },
+  "quests.actions_corpse.say_1": {
+    "src_hash": "5ea3fbe005f5aac860cc806b3226cbc4",
+    "text": "Získali jste ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:11:36.370154Z"
+  },
+  "quests.actions_doors.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Zdá se, že dveře jsou utěsněny proti nežádoucím vetřelcům.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:11:36.371597Z"
+  },
+  "quests.actions_doors.msg_2": {
+    "src_hash": "62b19b138adec8ae1e6bba38c72981df",
+    "text": "Tuto loď zatím nemůžete použít.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:11:36.372478Z"
+  },
+  "quests.actions_doors.msg_3": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Zdá se, že dveře jsou utěsněny proti nežádoucím vetřelcům.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:11:39.548397Z"
+  },
+  "quests.actions_doors.msg_4": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Zdá se, že dveře jsou utěsněny proti nežádoucím vetřelcům.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:11:39.549469Z"
+  },
+  "quests.actions_doors.msg_5": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Zdá se, že dveře jsou utěsněny proti nežádoucím vetřelcům.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:11:39.550759Z"
+  },
+  "quests.actions_doors.msg_6": {
+    "src_hash": "97292b2d9c656199befd6d213f4e5194",
+    "text": "Nemáte dostatečnou úroveň.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:11:39.551937Z"
+  },
+  "quests.actions_dreamcatcher_curse.msg_1": {
+    "src_hash": "eb5a28c1cc7d964dd2cbb2fc6553795f",
+    "text": "Máte pocit děsu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:11:39.552958Z"
+  },
+  "quests.actions_entrance.msg_1": {
+    "src_hash": "b33b6be9b885ba871d5ec857ce3fd539",
+    "text": "Tento vchod můžete používat pouze v noci.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:11:41.595248Z"
+  },
+  "quests.actions_notescoordinates.msg_1": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Prázdný.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:16.219133Z"
+  },
+  "quests.actions_peeler.msg_1": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Prázdný.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:16.219742Z"
+  },
+  "quests.actions_scissors.msg_1": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Prázdný.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:16.225784Z"
+  },
+  "quests.actions_tumulo.msg_1": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Prázdný.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:16.226890Z"
+  },
+  "quests.actions_tumuloerro.msg_1": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Prázdný.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:16.227473Z"
+  },
+  "quests.adventures_of_galthen.empty": {
+    "src_hash": "473f81670bcdd9d92624698f43d6a517",
+    "text": "Prázdný.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:16.228392Z"
+  },
+  "quests.the_secret_library_quest.you_do_not_have_enough_level": {
+    "src_hash": "97292b2d9c656199befd6d213f4e5194",
+    "text": "Nemáte dostatečnou úroveň.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:16.251759Z"
+  },
+  "quests.actions_entrance.msg_2": {
+    "src_hash": "3bf818c8ff9e1fb2d25ccd26775d7cd5",
+    "text": "Ještě jednou smícháte křídu s kapkou své krve a trochou vody a obnovíte symbol na podlaze...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:19.608433Z"
+  },
+  "quests.actions_fragrance.msg_1": {
+    "src_hash": "88589a6c42c6ad348e20ed9f1aaef6af",
+    "text": "Hmmmm, jak okouzlující vůně!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:19.608877Z"
+  },
+  "quests.actions_last_fight.say_1": {
+    "src_hash": "d3f224c083f6f61bc1d5608b1d2738fb",
+    "text": "Než se tento glóbus nabije, musíte chvíli počkat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:19.609355Z"
+  },
+  "quests.actions_last_fight.say_2": {
+    "src_hash": "216c0b5cc7d485662716a63d434347b5",
+    "text": "Žádný! Ztrácím energii!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:19.609734Z"
+  },
+  "quests.actions_lever_first.msg_1": {
+    "src_hash": "f46311a07e3e49e233fb5062c6cd146a",
+    "text": "Něco cvaklo a dunivý zvuk vás téměř ohluší.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:19.610227Z"
+  },
+  "quests.actions_lever_second.msg_1": {
+    "src_hash": "f46311a07e3e49e233fb5062c6cd146a",
+    "text": "Něco cvaklo a dunivý zvuk vás téměř ohluší.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:23.130180Z"
+  },
+  "quests.actions_lever_third.msg_1": {
+    "src_hash": "f46311a07e3e49e233fb5062c6cd146a",
+    "text": "Něco cvaklo a dunivý zvuk vás téměř ohluší.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:23.130828Z"
+  },
+  "quests.actions_levers.say_1": {
+    "src_hash": "74d6f44cc339cc1af575eabf9d29f26d",
+    "text": "Přehodil jsi ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:23.131149Z"
+  },
+  "quests.actions_mono_detector_strange_probing_device.msg_1": {
+    "src_hash": "cbbd701a227c41b3a89cdf0f3dde1174",
+    "text": "Úspěšně jste shromáždili data.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:23.131573Z"
+  },
+  "quests.actions_mono_detector_strange_probing_device.msg_2": {
+    "src_hash": "9d0ce14678d498a52e1d256ff430a7ca",
+    "text": "Hm... zařízení čte: 0,0,nula,0,nula, což může zhruba přeložit jako: ZDE NIC ZAJÍMAVÉHO",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:23.132157Z"
+  },
+  "quests.actions_mono_detector_strange_probing_device.msg_3": {
+    "src_hash": "5ddadd6ad0c06716b93e59f10d11de37",
+    "text": "Zařízení čte: 'abnormal glooth structure detected, possible probing location'",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:26.525771Z"
+  },
+  "quests.actions_mono_detector_strange_probing_device.msg_4": {
+    "src_hash": "7302b053c0f22e53182c9674c7530e39",
+    "text": "Sonda byla upravena.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:26.526808Z"
+  },
+  "quests.actions_scarlett.msg_1": {
+    "src_hash": "7c285fed0553b05349a0985cdd855e24",
+    "text": "Držíš před sebou starý Galtheinův hrudní plát. Nehodí se a je příliš starý, aby vydržel jakýkoli útok.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:26.538466Z"
+  },
+  "quests.actions_scarlett.msg_2": {
+    "src_hash": "5316cfe06e390d51d9a5ed89b00755ca",
+    "text": "Toto zatím nemáte povoleno používat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:31.354485Z"
+  },
+  "quests.actions_servants_mechanism.say_1": {
+    "src_hash": "f5cd2b34be49cf1b2c392d8c1715ee13",
+    "text": "*klikni*",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:31.354770Z"
+  },
+  "quests.actions_servants_mechanism.say_2": {
+    "src_hash": "715460f6fbd13bd6d1757d939fb9b258",
+    "text": "Zdá se, že mechanismus je stále aktivní.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:31.355222Z"
+  },
+  "quests.actions_telescope.msg_1": {
+    "src_hash": "cd38aa8899c916fb75dd44e9e5292eda",
+    "text": "Dalekohled poskytuje dokonalý výhled na nekonečný oceán - žádná země v dohledu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:31.356101Z"
+  },
+  "quests.actions_to_take_roots.msg_1": {
+    "src_hash": "092cbfa5e145ba8cdcd95cb397121daf",
+    "text": "Tento kořen je již sklizen, zde není co získat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:31.356987Z"
+  },
+  "quests.actions_to_take_roots.msg_2": {
+    "src_hash": "9155c1b0f463d08b46559717336b3f6b",
+    "text": "Váš pokus o sklizeň zničil více šťavnatých kořenů, než jste mohli zachránit.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:34.969472Z"
+  },
+  "quests.actions_to_take_roots.msg_3": {
+    "src_hash": "0bbc4c04869af7016a8c329b16c09414",
+    "text": "Úspěšně sklidíte nějaké šťavnaté kořeny.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:34.970125Z"
+  },
+  "quests.actions_to_take_roots.msg_4": {
+    "src_hash": "9155c1b0f463d08b46559717336b3f6b",
+    "text": "Váš pokus o sklizeň zničil více šťavnatých kořenů, než jste mohli zachránit.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:34.970817Z"
+  },
+  "quests.actions_to_take_roots.msg_5": {
+    "src_hash": "0bbc4c04869af7016a8c329b16c09414",
+    "text": "Úspěšně sklidíte nějaké šťavnaté kořeny.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:34.971306Z"
+  },
+  "quests.actions_tortoise.msg_1": {
+    "src_hash": "0c1801ce0701d967a387328550672b5e",
+    "text": "Želva.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:34.971610Z"
+  },
+  "quests.actions_using_crystals.msg_1": {
+    "src_hash": "4ece41ce875a4c261bd613cdc1472980",
+    "text": "Tato krystalová geoda se třese z bitvy poblíž.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:38.515904Z"
+  },
+  "quests.actions_using_crystals.msg_2": {
+    "src_hash": "4ece41ce875a4c261bd613cdc1472980",
+    "text": "Tato krystalová geoda se třese z bitvy poblíž.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:38.516507Z"
+  },
+  "quests.actions_using_crystals.msg_3": {
+    "src_hash": "4ece41ce875a4c261bd613cdc1472980",
+    "text": "Tato krystalová geoda se třese z bitvy poblíž.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:38.517010Z"
+  },
+  "quests.actions_using_crystals.say_1": {
+    "src_hash": "f508d9962727da8d65a970bd812689e3",
+    "text": "Hrabě absorbuje sílu šelmy a stává se silnějším.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:38.517510Z"
+  },
+  "quests.actions_using_crystals.say_2": {
+    "src_hash": "1ee05904751682de1be927c32b1849ac",
+    "text": "BOOOOM!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:38.517781Z"
+  },
+  "quests.actions_wooden_trash.msg_1": {
+    "src_hash": "464917965b3891096e423e2362e7f69c",
+    "text": "Pod troskami nenajdete nic zajímavého.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:42.796588Z"
+  },
+  "quests.actions_wooden_trash.msg_2": {
+    "src_hash": "ff4835c520d079c29c29fafb7687a7d2",
+    "text": "Zahájili jste eskortu, dostaňte svého vězně na trpasličí základnu!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:42.797649Z"
+  },
+  "quests.adventures_of_galthen.found_satchel": {
+    "src_hash": "056ad4a699bbd35e150c2bfdb74c0716",
+    "text": "Našli jste galtenskou brašnu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:42.798514Z"
+  },
+  "quests.adventures_of_galthen.you_have_already_obtained_this_outfit": {
+    "src_hash": "2a375adc8dad69731ea3478119cb6da5",
+    "text": "Tento outfit jste již získali!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:42.808674Z"
+  },
+  "quests.bigfoot_burden.body_not_ready": {
+    "src_hash": "650762968728d439e3ac2a042c3eabea",
+    "text": "Toto tělo ještě není připraveno.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:42.809766Z"
+  },
+  "quests.bigfoot_burden.boss_challenge": {
+    "src_hash": "7e6ede303d5139cd8026a3b23a8469a1",
+    "text": "Máte půl hodiny na to, abyste hrdinně porazili {0}. Jinak budete teleportováni a budete muset začít znovu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:46.507236Z"
+  },
+  "quests.bigfoot_burden.chest_guarded": {
+    "src_hash": "660c525e8617590d046aaef15a99886a",
+    "text": "{0} brání své věci a nedovolí vám otevřít tuto truhlu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:46.507829Z"
+  },
+  "quests.bigfoot_burden.chest_requirements": {
+    "src_hash": "072bb87e3c4717189d1d3a4f4fe1d283",
+    "text": "Ujistěte se prosím, že máte alespoň 5 volných inventárních slotů a můžete nést dalších 100 oz.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:46.508529Z"
+  },
+  "quests.bigfoot_burden.crystal_not_damaged": {
+    "src_hash": "fe3ff614cedaa49219f13e67f00cab9d",
+    "text": "Nejedná se o poškozený krystal!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:46.508938Z"
+  },
+  "quests.bigfoot_burden.crystal_repaired": {
+    "src_hash": "60d5612333b384516cb59343aa68a514",
+    "text": "Opravili jste poškozený krystal!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:46.509357Z"
+  },
+  "quests.bigfoot_burden.crystals_charging": {
+    "src_hash": "e8e09ff0c5db42c8b3a95b1100d0c2b4",
+    "text": "Krystaly se nabíjejí!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:50.494873Z"
+  },
+  "quests.bigfoot_burden.device_unknown": {
+    "src_hash": "4e98f8923a32f5e88ac8299aa52fe8af",
+    "text": "Nemáte ponětí, jak toto zařízení používat. Xelvar v Kazordoon vám o tom možná řekne víc.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:50.496279Z"
+  },
+  "quests.bigfoot_burden.enough_renown": {
+    "src_hash": "8e829f523946407b7b24b62b49bbd917",
+    "text": "Konečně máte mezi gnómy dostatek renomé, požádejte Gnomission o misi, abyste získali svůj krystal.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:50.497520Z"
+  },
+  "quests.bigfoot_burden.gasp": {
+    "src_hash": "4758f628434ece29bf84223f42a476a1",
+    "text": "<lapání po dechu>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:50.498055Z"
+  },
+  "quests.bigfoot_burden.gnomedix_msg1": {
+    "src_hash": "480e35ad14db7f1efdf3f9e00ed78a58",
+    "text": "Gnomedix: Tak ať začne vyšetření! Teď se nehýbej. neboj se. Dobrý doktorský trpaslík vám neublíží - doufejme!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:50.499528Z"
+  },
+  "quests.bigfoot_burden.gnomedix_msg2": {
+    "src_hash": "e2ab9a67cf5112ed29716b20320600c2",
+    "text": "Gnomedix: Teď! Teď! Nepanikařte! Brzy je po všem!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:55.065320Z"
+  },
+  "quests.bigfoot_burden.gnomedix_msg3": {
+    "src_hash": "503b77337aa47368fbf6324836cb7837",
+    "text": "Gnomedix: Nech mě zkusit větší sekáč!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:55.075293Z"
+  },
+  "quests.bigfoot_burden.gnomedix_msg4": {
+    "src_hash": "d6a9f750fe55398ca30eefbf148c3c9f",
+    "text": "Gnomedix: Už jsme skoro don... svatý skřítci! CO JE TO???",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:55.076762Z"
+  },
+  "quests.bigfoot_burden.gnomedix_msg5": {
+    "src_hash": "f0beac42b125618212c32af54f84907e",
+    "text": "Gnomedix: Potřebuji cvičení! Gnomenursey, rychle!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:55.077673Z"
+  },
+  "quests.bigfoot_burden.gnomedix_msg6": {
+    "src_hash": "abfd48c5fc8121209d0666adcf6c99fa",
+    "text": "Gnomedix: Teď zůstaň v klidu! Tohle by mohlo trochu lechtat..",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:55.084505Z"
+  },
+  "quests.bigfoot_burden.gnomedix_msg7": {
+    "src_hash": "2fccc4bbff73ea03fdd55ecf188ceb8c",
+    "text": "Gnomedix: Vezmi si tohle, ty zlo... ať jsi cokoli!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:59.853250Z"
+  },
+  "quests.bigfoot_burden.gnomedix_msg8": {
+    "src_hash": "cd6d2693244661936990d9aa89bd4492",
+    "text": "Gnomedix: Mám to! Fuj! co to bylo? Uhm, dobře... prošel jsi ušním vyšetřením. Promluvte si s Gnomaticus pro další test.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:59.853977Z"
+  },
+  "quests.bigfoot_burden.golden_fruits_found": {
+    "src_hash": "d74cfab59a5109eb785c4a0529c86d06",
+    "text": "Našli jste zlaté plody.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:59.854434Z"
+  },
+  "quests.bigfoot_burden.golem_returned": {
+    "src_hash": "9b62f0a69b86d144ca3e1576a14a58c0",
+    "text": "Golem byl vrácen do gnómské dílny.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:59.854911Z"
+  },
+  "quests.bigfoot_burden.golems_enough": {
+    "src_hash": "09f9e9d1e34832d2001a9dad6ec10799",
+    "text": "Zatím jsi vrátil dost golemů. Dejte trpaslíkům čas na jejich opravy. Ohlaste se nyní.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:16:59.855551Z"
+  },
+  "quests.bigfoot_burden.grayed_success": {
+    "src_hash": "008ee9986ebce5c395cc4c1b16eb61ed",
+    "text": "Byli jste úspěšně g-rayed. Nyní nechte doktora Gnomedixe prohlédnout vaše uši!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:17:03.472737Z"
+  },
+  "quests.bigfoot_burden.loot_warning": {
+    "src_hash": "0ae78e5ea93c887a30cc25c8b7f38626",
+    "text": "Máte jednu minutu na to, abyste ukořistili šéfa a opustili místnost.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:17:03.473304Z"
+  },
+  "quests.bigfoot_burden.matchmaker_complete": {
+    "src_hash": "b984ec9660da868ecc69c9a2c01639ec",
+    "text": "Gratuluji! Zdá se, že se krystaly zamilovaly a vaše mise je hotová!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:17:03.473874Z"
+  },
+  "quests.bigfoot_burden.melody_complete": {
+    "src_hash": "2a218e761bb906e1d5e72c8e4ffaad90",
+    "text": "To byla správná poznámka! Nyní znáte melodii své duše!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:17:03.474512Z"
+  },
+  "quests.bigfoot_burden.mind_refreshed": {
+    "src_hash": "d8af034712525ba4e9c7c6f91fc42164",
+    "text": "Vaše mysl se cítí svěží!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:17:03.474922Z"
+  },
+  "quests.bigfoot_burden.mushroom_wait": {
+    "src_hash": "bc4e0249920d6057542c82785457005a",
+    "text": "Na extrakci spor z této houby musíte počkat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:17:07.485363Z"
+  },
+  "quests.bigfoot_burden.need_mission_crystal": {
+    "src_hash": "d2b109377df37ef2965d1bba9a69cfaf",
+    "text": "Ke vstupu potřebujete krystal mise nebo práci vykonanou s Gnomission.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:17:07.485953Z"
+  },
+  "quests.bigfoot_burden.need_teleport_crystal": {
+    "src_hash": "26c4744888f98b7829aa86e24ea0aab3",
+    "text": "K použití tohoto zařízení potřebujete teleportační krystal.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:17:07.486530Z"
+  },
+  "quests.bigfoot_burden.no_endurance_test": {
+    "src_hash": "d24aac0def4b8f7ae074a9da3619a273",
+    "text": "Naštěstí v tuto chvíli nemusíte brát výdrž.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:17:07.487013Z"
+  },
+  "quests.bigfoot_burden.not_permitted": {
+    "src_hash": "722a8c1a978dbdef3eee391d6d8304a9",
+    "text": "Nemáte povolen vstup.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:17:07.487390Z"
+  },
+  "quests.bigfoot_burden.pig_eating": {
+    "src_hash": "82aeede3e6b7b325ed4ea821f13b0756",
+    "text": "Prasátko s radostí jí lanýže.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:17:11.551509Z"
+  },
+  "quests.bigfoot_burden.pig_stuffed": {
+    "src_hash": "90b1df4f5cbf78315c5e1c7d65fdcd02",
+    "text": "Prasátko je vycpané a raději ho vraťte domů.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:17:11.552262Z"
+  },
+  "quests.bigfoot_burden.rank_too_low": {
+    "src_hash": "582ca49ea8f77df099515acb0c43ff6b",
+    "text": "Vaše hodnost mezi Gnómy je příliš nízká.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:17:11.552718Z"
+  },
+  "quests.bigfoot_burden.room_wait": {
+    "src_hash": "1ccc70eac63b4b35bbbe04c64197ce03",
+    "text": "Prosím, počkejte, dokud se místnost neuvolní. To se stane 30 minut poté, co vstoupil poslední tým.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:17:11.553376Z"
+  },
+  "quests.bigfoot_burden.shooting_complete": {
+    "src_hash": "199f93db257e69b9ac55cee85d09d2f4",
+    "text": "Zasáhli jste dost cílů. Podat zprávu!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T12:17:11.553846Z"
   }
 }

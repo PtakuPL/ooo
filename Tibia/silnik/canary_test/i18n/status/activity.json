@@ -2,8 +2,8 @@
   "category": "pl",
   "cycle": 1,
   "eta_seconds": 0,
-  "file": "items.json",
-  "generated_at_utc": "2026-02-14T12:02:00Z",
+  "file": "raids.json",
+  "generated_at_utc": "2026-02-14T12:20:46Z",
   "message": "auto translate in progress",
   "phase": "AUTO_TRANSLATE",
   "progress": {
@@ -16,101 +16,101 @@
       "action": "update",
       "category": "pl",
       "cycle": 1,
-      "file": "items.json",
+      "file": "raids.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "heartbeat_tick",
-      "t": "2026-02-14T12:02:00Z"
+      "t": "2026-02-14T12:20:46Z"
     },
     {
       "action": "update",
       "category": "pl",
       "cycle": 1,
-      "file": "items.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "auto_start",
-      "t": "2026-02-14T12:02:00Z"
-    },
-    {
-      "action": "update",
-      "category": "es",
-      "cycle": 3,
-      "file": "raids.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-02-14T12:01:16Z"
-    },
-    {
-      "action": "update",
-      "category": "es",
-      "cycle": 3,
       "file": "raids.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "auto_start",
-      "t": "2026-02-14T12:01:16Z"
+      "t": "2026-02-14T12:20:46Z"
     },
     {
       "action": "update",
       "category": "es",
-      "cycle": 2,
+      "cycle": 1,
       "file": "npc.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "heartbeat_tick",
-      "t": "2026-02-14T11:59:08Z"
+      "t": "2026-02-14T12:20:40Z"
     },
     {
       "action": "update",
       "category": "pl",
-      "cycle": 2,
-      "file": "raids.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-02-14T11:57:29Z"
-    },
-    {
-      "action": "update",
-      "category": "pl",
-      "cycle": 2,
-      "file": "raids.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "parallel_start",
-      "t": "2026-02-14T11:57:21Z"
-    },
-    {
-      "action": "update",
-      "category": "es",
-      "cycle": 2,
-      "file": "scripts.json",
+      "cycle": 1,
+      "file": "quests.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "auto_done",
-      "t": "2026-02-14T11:57:03Z"
+      "t": "2026-02-14T12:20:29Z"
     },
     {
       "action": "update",
-      "category": "es",
-      "cycle": 2,
-      "file": "scripts.json",
+      "category": "pl",
+      "cycle": 1,
+      "file": "quests.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "heartbeat_tick",
-      "t": "2026-02-14T11:55:33Z"
+      "t": "2026-02-14T12:18:58Z"
     },
     {
       "action": "update",
-      "category": "es",
-      "cycle": 2,
-      "file": "scripts.json",
+      "category": "pl",
+      "cycle": 1,
+      "file": "quests.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "auto_start",
-      "t": "2026-02-14T11:55:32Z"
+      "t": "2026-02-14T12:18:58Z"
+    },
+    {
+      "action": "update",
+      "category": "pl",
+      "cycle": 2,
+      "file": "spells.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-02-14T12:17:57Z"
+    },
+    {
+      "action": "update",
+      "category": "pl",
+      "cycle": 2,
+      "file": "spells.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "auto_start",
+      "t": "2026-02-14T12:17:57Z"
+    },
+    {
+      "action": "update",
+      "category": "cs",
+      "cycle": 1,
+      "file": "quests.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "auto_done",
+      "t": "2026-02-14T12:17:45Z"
+    },
+    {
+      "action": "update",
+      "category": "cs",
+      "cycle": 1,
+      "file": "quests.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-02-14T12:16:15Z"
     }
   ],
   "stage": "heartbeat_tick",

@@ -2310,6 +2310,36 @@
     "You must wait. Someone is challenging": "You must wait. Someone is challenging",
     "All the players need to be level": "All the players need to be level",
     "You have to wait": "You have to wait",
-    "You have found a": "You have found a"
+    "You have found a": "Našel jsi ",
+    "The chest is empty.": "Truhla je prázdná.",
+    "It is empty.": "Je to prázdné.",
+    "Sorry.": "Promiň.",
+    "Fight!": "Bojuj!",
+    "You found ": "Našel jsi ",
+    "You must wait. Someone is challenging ": "Musíš počkat. Někdo vyzývá ",
+    "All the players need to be level ": "Všichni hráči musí mít úroveň ",
+    "You have to wait ": "Musíš počkat "
+  },
+  "lt": {
+    "The chest is empty.": "Skrynia tuščia.",
+    "It is empty.": "Tuščia.",
+    "Sorry.": "Atsiprašau.",
+    "Fight!": "Kovok!",
+    "You found ": "Radai ",
+    "You must wait. Someone is challenging ": "Turi palaukti. Kažkas meta iššūkį ",
+    "All the players need to be level ": "Visi žaidėjai turi būti lygio ",
+    "You have to wait ": "Turi palaukti ",
+    "You have found a": "Radai "
+  },
+  "el": {
+    "The chest is empty.": "Το σεντούκι είναι άδειο.",
+    "It is empty.": "Είναι άδειο.",
+    "Sorry.": "Συγγνώμη.",
+    "Fight!": "Πολέμα!",
+    "You found ": "Βρήκες ",
+    "You must wait. Someone is challenging ": "Πρέπει να περιμένεις. Κάποιος προκαλεί ",
+    "All the players need to be level ": "Όλοι οι παίκτες πρέπει να είναι επίπεδο ",
+    "You have to wait ": "Πρέπει να περιμένεις ",
+    "You have found a": "Βρήκες "
   }
 }

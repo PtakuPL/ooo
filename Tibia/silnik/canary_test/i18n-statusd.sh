@@ -5939,6 +5939,445 @@ PYDOMAINAUDIT
 }
 
 # ═══════════════════════════════════════════════════════════════════════════════
+# MODUŁ 7b-ter: Grammar/Style audit (WQ-QUALITY-55-1)
+# Automatyczny audyt gramatyczno-stylistyczny dla wszystkich języków per domena.
+# Heurystyki language-agnostic: placeholder, formatowanie, długość, interpunkcja,
+# numery, nawiasy, HTML/markup, powtórzenia, artefakty GT.
+# Artefakt: translation_grammar_audit_latest.json
+# ═══════════════════════════════════════════════════════════════════════════════
+
+GRAMMAR_AUDIT_MIN_INTERVAL_SEC="${GRAMMAR_AUDIT_MIN_INTERVAL_SEC:-3600}"
+GRAMMAR_AUDIT_MAX_ISSUES_PER_LANG="${GRAMMAR_AUDIT_MAX_ISSUES_PER_LANG:-50}"
+
+run_grammar_audit() {
+    python3 - "$WORK_DIR" "$STATUS_DIR" "$GRAMMAR_AUDIT_MAX_ISSUES_PER_LANG" <<'PYGRAMMARAUDIT'
+import json, os, sys, re
+from collections import Counter, defaultdict
+from datetime import datetime, timezone
+
+work_dir = sys.argv[1]
+status_dir = sys.argv[2]
+max_issues_per_lang = int(sys.argv[3]) if len(sys.argv) > 3 else 50
+
+i18n_dir = os.path.join(work_dir, "i18n")
+en_dir = os.path.join(i18n_dir, "en")
+
+# ── Załaduj EN data ──
+en_data_by_file = {}
+if os.path.isdir(en_dir):
+    for fn in sorted(os.listdir(en_dir)):
+        if not fn.endswith(".json"):
+            continue
+        try:
+            with open(os.path.join(en_dir, fn), encoding="utf-8") as f:
+                data = json.load(f)
+            if isinstance(data, dict):
+                en_data_by_file[fn] = data
+        except Exception:
+            continue
+
+if not en_data_by_file:
+    print("GRAMMAR_AUDIT_SKIP: no EN data")
+    sys.exit(0)
+
+# ── Lista języków ──
+lang_dirs = []
+if os.path.isdir(i18n_dir):
+    for name in sorted(os.listdir(i18n_dir)):
+        if name == "en":
+            continue
+        p = os.path.join(i18n_dir, name)
+        if os.path.isdir(p) and re.fullmatch(r"[a-z]{2}(?:_[A-Z]{2})?", name):
+            lang_dirs.append(name)
+
+# ── Priorytetowe domeny (items, npc, quests — reszta w tle) ──
+PRIORITY_DOMAINS = {"items.json", "npc.json", "quests.json", "achievements.json",
+                    "server.json", "client.json", "monsters.json", "spells.json"}
+
+# ── Heurystyki ──
+
+def _is_nontranslatable(text):
+    """Tekst techniczny, którego nie trzeba tłumaczyć."""
+    t = str(text or "").strip()
+    if not t:
+        return True
+    if re.search(r"https?://|www\.", t, re.I):
+        return True
+    if "{{" in t or "}}" in t or "{%" in t or "%}" in t:
+        return True
+    if re.fullmatch(r"<[^<>]+>", t):
+        return True
+    cleaned = re.sub(r'[{}\[\]|%$0-9\s_\-:;.,!?/\\()<>\"\'`~+=*&^#@]', '', t)
+    if not cleaned:
+        return True
+    return False
+
+def _extract_placeholders(text):
+    """Wyciaga placeholdery: {name}, %s, %d, |name|, __PHN__."""
+    return set(re.findall(r'\{[^}]+\}|%[sd]|\|[A-Za-z_]+\||__PH\d+__', str(text or "")))
+
+def _extract_format_tokens(text):
+    """Wyciąga tokeny formatowania: \\z, \\n, \\t."""
+    return set(re.findall(r'\\[znt]', str(text or "")))
+
+def _extract_html_tags(text):
+    """Wyciąga tagi HTML/markup: <b>, </b>, <br/>, etc."""
+    return sorted(re.findall(r'</?[A-Za-z][A-Za-z0-9]*[^>]*/?>',  str(text or "")))
+
+def _extract_numbers(text):
+    """Wyciąga liczby z tekstu (pomijając placeholdery)."""
+    cleaned = re.sub(r'\{[^}]+\}|__PH\d+__|%[sd]', '', str(text or ""))
+    return set(re.findall(r'\b\d+(?:\.\d+)?\b', cleaned))
+
+def _count_brackets(text):
+    """Zlicza pary nawiasów."""
+    t = str(text or "")
+    return {"(": t.count("("), ")": t.count(")"), "[": t.count("["), "]": t.count("]")}
+
+def _trailing_punct(text):
+    """Ostatni znak interpunkcji (lub None)."""
+    t = str(text or "").rstrip()
+    if t and t[-1] in ".!?;:":
+        return t[-1]
+    return None
+
+def _has_repeated_words(text):
+    """Wykrywa powtórzenie tego samego słowa 3+ razy z rzędu (artefakt GT)."""
+    words = re.findall(r'[A-Za-zÀ-ÖØ-öø-ÿ]+', str(text or "").lower())
+    if len(words) < 3:
+        return False
+    for i in range(len(words) - 2):
+        if words[i] == words[i+1] == words[i+2] and len(words[i]) >= 3:
+            return True
+    return False
+
+def _detect_truncation(en_text, tr_text):
+    """Wykrywa obcięcie tłumaczenia (zaczyna się tak samo, ale obcina)."""
+    e = str(en_text or "").strip()
+    t = str(tr_text or "").strip()
+    if len(e) < 20 or len(t) < 10:
+        return False
+    # Jeśli tłumaczenie jest krótsze niż 30% EN i kończy się nagle (brak interpunkcji),
+    # a EN miał interpunkcję — prawdopodobnie obcięte
+    if len(t) < len(e) * 0.3 and e[-1] in ".!?" and t[-1] not in ".!?":
+        return True
+    return False
+
+def _detect_mixed_language(en_text, tr_text):
+    """Wykrywa fragmenty EN wewnątrz tłumaczenia (>= 4 słowa EN z rzędu)."""
+    # Pomijamy krótkie teksby
+    e = str(en_text or "").strip()
+    t = str(tr_text or "").strip()
+    if len(t) < 30 or len(e) < 20:
+        return False
+    # Wyciąg słów EN (bez placeholderów, nazw własnych)
+    en_words = set(w.lower() for w in re.findall(r'\b[a-z]{4,}\b', e))
+    if not en_words:
+        return False
+    tr_words = re.findall(r'\b[A-Za-z]{4,}\b', t)
+    if len(tr_words) < 4:
+        return False
+    # Szukaj sekwencji 4+ słów TR, które są w EN
+    consecutive = 0
+    max_consecutive = 0
+    for w in tr_words:
+        if w.lower() in en_words:
+            consecutive += 1
+            max_consecutive = max(max_consecutive, consecutive)
+        else:
+            consecutive = 0
+    return max_consecutive >= 4
+
+def _check_double_spaces(text):
+    """Wykrywa podwójne spacje wewnątrz tekstu."""
+    # Pomijamy \z i \n — mogą mieć legalne wielokrotne spacje
+    t = re.sub(r'\\[znt]', '', str(text or ""))
+    return bool(re.search(r'[^ ]  +[^ ]', t))
+
+# ── Główna pętla audytu ──
+all_issues = []
+lang_issue_counts = Counter()
+domain_issue_counts = Counter()
+issue_type_counts = Counter()
+lang_domain_summary = defaultdict(lambda: defaultdict(int))
+total_checked = 0
+total_genuine = 0
+
+for lang in lang_dirs:
+    lang_issues_this = 0
+    for json_file, en_data in en_data_by_file.items():
+        lang_path = os.path.join(i18n_dir, lang, json_file)
+        if not os.path.exists(lang_path):
+            continue
+        try:
+            with open(lang_path, encoding="utf-8") as f:
+                lang_data = json.load(f)
+        except Exception:
+            continue
+        if not isinstance(lang_data, dict):
+            continue
+
+        domain_issues_this = 0
+        for key, en_val in en_data.items():
+            tr_val = lang_data.get(key)
+            if tr_val is None:
+                continue
+            s_en = str(en_val)
+            s_tr = str(tr_val)
+
+            # Skip: nie-genuine (EN copy, [EN] prefix, nontranslatable)
+            if s_tr == s_en or s_tr.startswith("[EN]") or s_tr.startswith("["):
+                continue
+            if _is_nontranslatable(s_en):
+                continue
+
+            total_genuine += 1
+            total_checked += 1
+
+            # Ogranicz issues per lang aby nie generować ogromnych artefaktów
+            if lang_issues_this >= max_issues_per_lang:
+                continue
+
+            issues_for_key = []
+
+            # (G1) Placeholder mismatch
+            en_ph = _extract_placeholders(s_en)
+            tr_ph = _extract_placeholders(s_tr)
+            if en_ph != tr_ph:
+                missing_ph = en_ph - tr_ph
+                extra_ph = tr_ph - en_ph
+                issues_for_key.append({
+                    "type": "placeholder_mismatch",
+                    "severity": "critical",
+                    "detail": f"missing={sorted(missing_ph)} extra={sorted(extra_ph)}",
+                })
+
+            # (G2) Format token mismatch (\\z, \\n, \\t)
+            en_ft = _extract_format_tokens(s_en)
+            tr_ft = _extract_format_tokens(s_tr)
+            if en_ft != tr_ft:
+                issues_for_key.append({
+                    "type": "format_token_mismatch",
+                    "severity": "warning",
+                    "detail": f"en={sorted(en_ft)} tr={sorted(tr_ft)}",
+                })
+
+            # (G3) HTML/markup tag mismatch
+            en_html = _extract_html_tags(s_en)
+            tr_html = _extract_html_tags(s_tr)
+            if en_html != tr_html:
+                issues_for_key.append({
+                    "type": "html_tag_mismatch",
+                    "severity": "warning",
+                    "detail": f"en_tags={en_html[:5]} tr_tags={tr_html[:5]}",
+                })
+
+            # (G4) Numeric value drift
+            en_nums = _extract_numbers(s_en)
+            tr_nums = _extract_numbers(s_tr)
+            if en_nums and en_nums != tr_nums:
+                missing_nums = en_nums - tr_nums
+                if missing_nums:
+                    issues_for_key.append({
+                        "type": "number_drift",
+                        "severity": "warning",
+                        "detail": f"missing={sorted(missing_nums)}",
+                    })
+
+            # (G5) Length anomaly (ratio < 0.25 or > 5.0 for non-short texts)
+            if len(s_en) >= 10:
+                ratio = len(s_tr) / max(len(s_en), 1)
+                if ratio < 0.25 or ratio > 5.0:
+                    issues_for_key.append({
+                        "type": "length_anomaly",
+                        "severity": "info",
+                        "detail": f"ratio={round(ratio, 3)} en_len={len(s_en)} tr_len={len(s_tr)}",
+                    })
+
+            # (G6) Trailing punctuation mismatch
+            en_tp = _trailing_punct(s_en)
+            tr_tp = _trailing_punct(s_tr)
+            if en_tp and not tr_tp and len(s_tr) > 5:
+                issues_for_key.append({
+                    "type": "punctuation_missing",
+                    "severity": "info",
+                    "detail": f"en_ends='{en_tp}' tr_ends='{s_tr[-1] if s_tr else ''}'",
+                })
+
+            # (G7) Bracket mismatch
+            en_br = _count_brackets(s_en)
+            tr_br = _count_brackets(s_tr)
+            for ch in ("(", ")", "[", "]"):
+                if en_br[ch] != tr_br[ch]:
+                    issues_for_key.append({
+                        "type": "bracket_mismatch",
+                        "severity": "warning",
+                        "detail": f"'{ch}': en={en_br[ch]} tr={tr_br[ch]}",
+                    })
+                    break  # Jeden issue per key
+
+            # (G8) Repeated words (GT stutter artifact)
+            # Pomijaj jeśli EN też ma powtórzenia (np. "Six. Six. Six.")
+            if _has_repeated_words(s_tr) and not _has_repeated_words(s_en):
+                issues_for_key.append({
+                    "type": "repeated_words",
+                    "severity": "warning",
+                    "detail": "3+ consecutive identical words detected",
+                })
+
+            # (G9) Truncated translation
+            if _detect_truncation(s_en, s_tr):
+                issues_for_key.append({
+                    "type": "truncated",
+                    "severity": "warning",
+                    "detail": f"en_len={len(s_en)} tr_len={len(s_tr)}",
+                })
+
+            # (G10) Mixed language fragments
+            if _detect_mixed_language(s_en, s_tr):
+                issues_for_key.append({
+                    "type": "mixed_language",
+                    "severity": "info",
+                    "detail": ">=4 consecutive EN words found in translation",
+                })
+
+            # (G11) Double spaces
+            if _check_double_spaces(s_tr):
+                issues_for_key.append({
+                    "type": "double_spaces",
+                    "severity": "info",
+                    "detail": "double or multiple spaces detected",
+                })
+
+            # (G12) Artifact tokens (???, TODO, FIXME, [XX])
+            if re.search(r'\?\?\?|\bTODO\b|\bFIXME\b', s_tr):
+                issues_for_key.append({
+                    "type": "artifact_token",
+                    "severity": "critical",
+                    "detail": "artifact token found in translation",
+                })
+
+            # Rejestruj issues
+            for iss in issues_for_key:
+                iss["lang"] = lang
+                iss["domain"] = json_file
+                iss["key"] = key
+                # Sample text (truncated for JSON size)
+                iss["en_sample"] = s_en[:120]
+                iss["tr_sample"] = s_tr[:120]
+                all_issues.append(iss)
+                lang_issue_counts[lang] += 1
+                domain_issue_counts[json_file] += 1
+                issue_type_counts[iss["type"]] += 1
+                lang_domain_summary[lang][json_file] += 1
+                lang_issues_this += 1
+                domain_issues_this += 1
+
+# ── Podsumowanie per lang ──
+lang_summary = []
+for lang in lang_dirs:
+    total_lang_issues = lang_issue_counts.get(lang, 0)
+    domains_affected = len(lang_domain_summary.get(lang, {}))
+    severity_breakdown = Counter()
+    for iss in all_issues:
+        if iss["lang"] == lang:
+            severity_breakdown[iss["severity"]] += 1
+    lang_summary.append({
+        "lang": lang,
+        "total_issues": total_lang_issues,
+        "domains_affected": domains_affected,
+        "critical": severity_breakdown.get("critical", 0),
+        "warning": severity_breakdown.get("warning", 0),
+        "info": severity_breakdown.get("info", 0),
+        "top_domains": dict(sorted(lang_domain_summary.get(lang, {}).items(), key=lambda x: -x[1])[:5]),
+    })
+
+# Sort: worst langs first
+lang_summary.sort(key=lambda x: (-x["critical"], -x["warning"], -x["total_issues"]))
+
+# ── Podsumowanie per severity ──
+severity_totals = {
+    "critical": sum(1 for i in all_issues if i["severity"] == "critical"),
+    "warning": sum(1 for i in all_issues if i["severity"] == "warning"),
+    "info": sum(1 for i in all_issues if i["severity"] == "info"),
+}
+
+# ── Payload ──
+ts = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+payload = {
+    "timestamp": ts,
+    "schema_version": "1.0",
+    "total_langs": len(lang_dirs),
+    "total_domains": len(en_data_by_file),
+    "total_genuine_checked": total_genuine,
+    "total_issues": len(all_issues),
+    "severity_totals": severity_totals,
+    "issue_type_breakdown": dict(issue_type_counts.most_common()),
+    "lang_summary": lang_summary,
+    "domain_breakdown": dict(domain_issue_counts.most_common()),
+    "issues": all_issues[:5000],  # Cap at 5000 for file size
+}
+
+output_path = os.path.join(status_dir, "translation_grammar_audit_latest.json")
+os.makedirs(status_dir, exist_ok=True)
+tmp = output_path + ".tmp"
+with open(tmp, "w", encoding="utf-8") as f:
+    json.dump(payload, f, indent=2, ensure_ascii=False)
+os.replace(tmp, output_path)
+
+# ── JSONL history ──
+history_path = os.path.join(status_dir, "translation_grammar_audit_history.jsonl")
+history_entry = {
+    "timestamp": ts,
+    "total_issues": len(all_issues),
+    "severity_totals": severity_totals,
+    "top_types": dict(issue_type_counts.most_common(5)),
+    "top_langs": [{"lang": ls["lang"], "issues": ls["total_issues"], "critical": ls["critical"]} for ls in lang_summary[:10]],
+}
+with open(history_path, "a", encoding="utf-8") as f:
+    f.write(json.dumps(history_entry, ensure_ascii=False) + "\n")
+
+crit = severity_totals["critical"]
+warn = severity_totals["warning"]
+info = severity_totals["info"]
+print(f"GRAMMAR_AUDIT_OK: {len(all_issues)} issues ({crit} critical, {warn} warning, {info} info) in {total_genuine} genuine entries across {len(lang_dirs)} langs")
+PYGRAMMARAUDIT
+}
+
+should_run_grammar_audit() {
+    local min_interval="${GRAMMAR_AUDIT_MIN_INTERVAL_SEC:-3600}"
+    local state_file="$STATUS_DIR/grammar_audit_state.json"
+
+    python3 - "$state_file" "$min_interval" <<'PYGRAMMARDECISION'
+import json, os, sys, time
+
+state_file = sys.argv[1]
+min_interval = int(sys.argv[2]) if len(sys.argv) > 2 else 3600
+now_ts = int(time.time())
+
+last_ts = 0
+try:
+    if os.path.exists(state_file):
+        with open(state_file, "r", encoding="utf-8") as f:
+            d = json.load(f)
+        last_ts = int(d.get("last_ts", 0) or 0)
+except Exception:
+    pass
+
+if (now_ts - last_ts) >= min_interval:
+    payload = {"last_ts": now_ts}
+    os.makedirs(os.path.dirname(state_file) or ".", exist_ok=True)
+    tmp = state_file + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(payload, f)
+    os.replace(tmp, state_file)
+    print("1")
+else:
+    print("0")
+PYGRAMMARDECISION
+}
+
+# ═══════════════════════════════════════════════════════════════════════════════
 # MODUŁ 7c: Registry reconcile (LIVE vs worker registry)
 # ═══════════════════════════════════════════════════════════════════════════════
 
@@ -6147,11 +6586,25 @@ else:
 
 # ── Per-file reconcile (backfill per_file_keys in registry) ──────────────
 # Uzupełnia brakujące dane per-plik: mapuje każdy i18n/en/*.json
-# do faktycznej liczby kluczy, niezależnie od registry NPC stages.
+# do faktycznej liczby kluczy + drift LIVE vs registry per plik.
 
 per_file_keys_before = status_payload.get("per_file_keys", {})
 if not isinstance(per_file_keys_before, dict):
     per_file_keys_before = {}
+
+# Oblicz per-file registry keys z stages
+per_file_registry = {}
+for rel_path, finfo in files.items():
+    if not isinstance(finfo, dict):
+        continue
+    stages = finfo.get("stages", {}) if isinstance(finfo.get("stages", {}), dict) else {}
+    ext_stage = stages.get("5_extraction_en", {}) if isinstance(stages.get("5_extraction_en", {}), dict) else {}
+    keys_added = _safe_int(ext_stage.get("keys_added", 0))
+    # Mapuj na nazwę JSON pliku EN
+    target = str(finfo.get("target_json", "") or "")
+    if target and target.endswith(".json"):
+        base = os.path.basename(target)
+        per_file_registry[base] = per_file_registry.get(base, 0) + keys_added
 
 per_file_keys_new = {}
 per_file_changed = 0
@@ -6170,8 +6623,13 @@ if os.path.isdir(en_dir):
             count = 0
 
         old_count = per_file_keys_before.get(name, {}).get("keys", -1) if isinstance(per_file_keys_before.get(name), dict) else -1
+        reg_keys = per_file_registry.get(name, 0)
+        drift = max(0, count - reg_keys)
         per_file_keys_new[name] = {
             "keys": count,
+            "registry_keys": reg_keys,
+            "drift": drift,
+            "drift_pct": round(drift / max(count, 1) * 100, 2) if count > 0 else 0.0,
             "updated_at": now_z,
         }
         if name not in per_file_keys_before:
@@ -6206,6 +6664,19 @@ else:
         "total": len(per_file_keys_new),
         "status": "no_change",
     }
+
+# ── Per-file drift summary (top drifters → łatwa identyfikacja plików z luką) ──
+drift_list = []
+for fn, info in per_file_keys_new.items():
+    d = info.get("drift", 0)
+    if d > 0:
+        drift_list.append({"file": fn, "live": info["keys"], "registry": info["registry_keys"], "drift": d, "drift_pct": info["drift_pct"]})
+drift_list.sort(key=lambda x: -x["drift"])
+out["per_file_drift_summary"] = {
+    "files_with_drift": len(drift_list),
+    "total_drift_keys": sum(x["drift"] for x in drift_list),
+    "top_drifters": drift_list[:15],
+}
 
 _write_json_atomic(latest_path, out)
 PYRECON
@@ -7246,6 +7717,15 @@ run_statusd_cycle() {
     # Domain audit (per-lang/per-domain quality artifact)
     run_domain_audit >> "$STATUSD_LOG" 2>&1 || true
 
+    # Grammar/Style audit (WQ-QUALITY-55-1) — co GRAMMAR_AUDIT_MIN_INTERVAL_SEC
+    local grammar_decision
+    grammar_decision=$(should_run_grammar_audit 2>/dev/null || echo "0")
+    if [ "$grammar_decision" = "1" ]; then
+        log_statusd "📝 Grammar audit start"
+        run_grammar_audit >> "$STATUSD_LOG" 2>&1 || true
+        log_statusd "📝 Grammar audit done"
+    fi
+
     # Alerting webhook (P2.1)
     run_webhook_alerting >> "$STATUSD_LOG" 2>&1 || true
 
@@ -7355,6 +7835,10 @@ case "${1:-}" in
         echo "═══ Domain audit (ręczne uruchomienie) ═══"
         run_domain_audit
         ;;
+    --grammar-audit)
+        echo "═══ Grammar/Style audit (WQ-QUALITY-55-1) ═══"
+        run_grammar_audit
+        ;;
     --historia)
         HISTORIA_ENABLED=true
         echo "═══ Historia snapshot (ręczne uruchomienie) ═══"
@@ -7399,7 +7883,7 @@ for line in sys.stdin:
 " || echo "  (brak wpisów)"
         ;;
     *)
-        echo "Użycie: $0 {--once|--daemon|--doctor|--kpi|--recommend|--aggregate|--reconcile-registry|--daily-report|--alert-check|--auto-action|--enable-auto|--disable-auto|--audit|--weekly-multilang}"
+        echo "Użycie: $0 {--once|--daemon|--doctor|--kpi|--recommend|--aggregate|--reconcile-registry|--daily-report|--alert-check|--auto-action|--enable-auto|--disable-auto|--audit|--weekly-multilang|--grammar-audit}"
         echo ""
         echo "  --once       Jednorazowy pełny raport (telemetria + doctor + KPI + rekomendacje + raport 24h)"
         echo "  --daemon     Ciągła pętla co ${DAEMON_INTERVAL_SECONDS}s"
@@ -7410,6 +7894,7 @@ for line in sys.stdin:
         echo "  --reconcile-registry Uzgodnij registry keys z LIVE (zapis korekty w i18n_file_status.json)"
         echo "  --historia   Ręczny snapshot historii postępu → i18n_status_historia.md"
         echo "  --weekly-multilang  Ręczny raport tygodniowy wielojęzyczny → i18n_weekly_multilang_report.md"
+        echo "  --grammar-audit Audyt gramatyczno-stylistyczny 55 języków per domena (WQ-QUALITY-55-1)"
         echo "  --daily-report Wygeneruj raport zarządczy 24h (JSON + MD)"
         echo "  --alert-check Jednorazowa ewaluacja i ewentualny webhook alert"
         echo "  --auto-action Wykonaj auto-akcje z guardrailami"

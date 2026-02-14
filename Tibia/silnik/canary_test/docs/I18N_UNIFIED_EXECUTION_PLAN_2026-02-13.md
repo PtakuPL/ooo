@@ -6,6 +6,37 @@
 
 ---
 
+## Update wykonania (2026-02-14 18:30 UTC) — grammar audit + per-file drift + inline dict removal + GT heuristics S25-S26
+
+### WQ-QUALITY-55-1: Grammar/style audit (DONE)
+- Zaimplementowano `run_grammar_audit()` w statusd — 12 heurystyk agnostycznych językowo (G1-G12):
+  - G1: placeholder_mismatch (critical), G2: format_token_mismatch (warning), G3: html_tag_mismatch (warning),
+    G4: number_drift (warning), G5: length_anomaly (info), G6: punctuation_missing (info),
+    G7: bracket_mismatch (warning), G8: repeated_words (warning), G9: truncated (warning),
+    G10: mixed_language (info), G11: double_spaces (info), G12: artifact_token (critical)
+- Integracja z daemonem (interval gate 3600s), CLI `--grammar-audit`, artefakty JSON/JSONL.
+- Wynik: **886 issues (42 critical, 324 warning, 520 info)** w 148 895 genuine entries (52 langs).
+- Naprawiono false positive G8 `repeated_words`: teraz pomija jeśli EN ma ten sam wzorzec (np. "Six. Six. Six.").
+
+### H5: Per-file reconcile backfill (DONE)
+- Rozszerzono `run_registry_reconcile()` o per-file drift: `registry_keys`, `drift`, `drift_pct` per plik.
+- Dodano `per_file_drift_summary`: `files_with_drift`, `total_drift_keys`, `top_drifters[:15]`.
+- Wynik: 31 plików z driftem, 53 586 kluczy drift łącznie.
+
+### Inline dict removal (DONE)
+- Usunięto inline `SIMPLE_TRANSLATIONS` (1 404 linie) i `WORD_TRANSLATIONS` (704 linie) z workera.
+- Kanoniczne źródło: `simple_translations_base.json` + `word_translations_base.json` (git-tracked).
+- Naprawiono pre-existing bug w `WORD_TRANSLATIONS_ACTIVE` (zepsuta dict comprehension).
+- Worker zmniejszony: 23 535 → 21 432 linii (−2 103 linii).
+
+### GT lexical heuristics S25-S26 (DONE)
+- S25: `code_css_translated` — wykrywa przetłumaczony CSS/kod (`{display: none}` → `{display: aucun}`). CRITICAL.
+- S26: `game_term_preservation` — wykrywa usunięcie kluczowych terminów gry (mana, hp, exp, npc, etc.) w kontekście technicznym. MEDIUM.
+- Istniejące S1-S24 + nowe S25-S26 = **26 heurystyk** w `detect_suspicious()`.
+
+### Deferred
+- WQ-FAST-7: SLA 24h — 0 samples post-baseline, potrzebna akumulacja forced commands.
+
 ## Update wykonania (2026-02-14 17:10 UTC) — C9 quality gate exempt + H12 external dicts
 
 Zrealizowane pełne zadania:

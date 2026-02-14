@@ -9975,6 +9975,15 @@ for key, en_value in en_data.items():
     if not en_str:
         continue
 
+    # ── IMMUTABLE KEY PROTECTION ──────────────────────────────────────
+    # Klucze spell.*.words (inkantacje) NIGDY nie mogą być tłumaczone.
+    # Jeśli zostały uszkodzone — przywróć wartość EN.
+    if _is_immutable_key(key):
+        if value != str(en_value):
+            lang_data[key] = str(en_value)
+            repaired_identical += 1
+        continue
+
     # (R1) Pusta wartość → [EN] prefix
     if not value.strip():
         lang_data[key] = f"{UNTRANSLATED_PREFIX}{en_value}"
@@ -10096,8 +10105,12 @@ if not missing_keys and total_fixes == 0:
 synced = 0
 for key in missing_keys[:batch_size]:
     en_value = en_data[key]
-    # Dodaj prefix [EN] do wartości
-    lang_data[key] = f"{UNTRANSLATED_PREFIX}{en_value}"
+    # Immutable keys (spell incantations) → surowa wartość EN (bez prefixu)
+    if _is_immutable_key(key):
+        lang_data[key] = str(en_value)
+    else:
+        # Dodaj prefix [EN] do wartości
+        lang_data[key] = f"{UNTRANSLATED_PREFIX}{en_value}"
     synced += 1
 
 total_synced = synced + normalized_placeholders + total_repaired
@@ -11202,13 +11215,21 @@ def _is_game_nontranslatable(key, en_value):
         return True
     return False
 
+def _is_immutable_key(key: str) -> bool:
+    """Klucz który NIGDY nie może być tłumaczony — musi pozostać identyczny z EN.
+    Dotyczy inkantacji zaklęć (exura, exori, utani, ###NNN kody).
+    Nazwy zaklęć (.name) SĄ tłumaczone, ale komendy (.words) NIE."""
+    if key.startswith("spell.") and key.endswith(".words"):
+        return True
+    return False
+
 def _is_proper_noun_key(key, en_value):
     """Klucz z nazwą własną — identyczna wartość = poprawne tłumaczenie."""
     # Nie traktujemy już masowo item/monster/spell name jako "proper noun":
     # to blokowało realne tłumaczenia (EN-copy przechodził jako OK).
-    if key.startswith("npc.") and key.endswith((".name", ".title")):
+    if _is_immutable_key(key):
         return True
-    if key.startswith("spell.") and key.endswith(".words"):
+    if key.startswith("npc.") and key.endswith((".name", ".title")):
         return True
     if key.startswith("book.otbm.") and key.endswith((".title", ".name")):
         return True
@@ -11908,6 +11929,26 @@ def _enqueue_manual_review(status_dir: str, item: dict):
         with open(tmp, "w", encoding="utf-8") as f:
             json.dump(payload, f, indent=2, ensure_ascii=False)
         os.replace(tmp, queue_path)
+    except Exception:
+        pass
+
+def _enqueue_deferred_translation(status_dir: str, lang: str, json_file: str, key: str,
+                                   en_text: str, reason: str):
+    """Zapisz klucz do kolejki odroczonych tłumaczeń — do dokończenia później.
+    Powody: GT timeout, GT error, rate limit, GT returned identical, etc."""
+    queue_path = os.path.join(status_dir, "deferred_translation_queue.jsonl")
+    entry = {
+        "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+        "lang": lang,
+        "json_file": json_file,
+        "key": key,
+        "en_text": str(en_text),
+        "reason": reason,
+        "status": "pending",
+    }
+    try:
+        with open(queue_path, "a", encoding="utf-8") as f:
+            f.write(json.dumps(entry, ensure_ascii=False) + "\n")
     except Exception:
         pass
 
@@ -12719,6 +12760,20 @@ for key, en_text in iter_items:
         skipped_missing_key += 1
         continue
 
+    # ── IMMUTABLE KEY HARD SKIP ───────────────────────────────────────
+    # Klucze spell.*.words (inkantacje zaklęć) NIGDY nie są tłumaczone.
+    # Przywróć wartość EN jeśli uszkodzona, potem pomiń.
+    if _is_immutable_key(key):
+        if key in lang_data:
+            current = str(lang_data.get(key, ""))
+            if current != str(en_text):
+                lang_data[key] = str(en_text)
+                translated += 1  # count as fixed
+        else:
+            lang_data[key] = str(en_text)  # add raw EN value
+        skipped_not_placeholder += 1
+        continue
+
     suspicious_existing_current = False
 
     if key in lang_data:
@@ -13199,7 +13254,8 @@ if use_google_translate and gt_pending and not mid_batch_preempt:
             # Zastosuj wyniki
             for i, (key, en_text, h, suspicious, replacements) in enumerate(meta):
                 if i >= len(gt_results) or gt_results[i] is None:
-                    # GT nie dał wyniku
+                    # GT nie dał wyniku — zapisz do kolejki odroczonych
+                    _enqueue_deferred_translation(status_dir, target_lang, json_file, key, en_text, "gt_no_result")
                     if not strict_mode:
                         lang_data[key] = f"[{target_lang.upper()}] {en_text}"
                         placeholders += 1
@@ -13250,6 +13306,7 @@ if use_google_translate and gt_pending and not mid_batch_preempt:
                                 "issues": issues,
                                 "source": "google_translate",
                             })
+                            _enqueue_deferred_translation(status_dir, target_lang, json_file, key, en_text, "gt_rejected_multi_issues")
                             gt_guard_fail += 1
                             guard_fail += 1
                             guard_quality += 1
@@ -13262,6 +13319,7 @@ if use_google_translate and gt_pending and not mid_batch_preempt:
                         if max_sev == "CRITICAL":
                             suspicious_rejected += 1
                             _append_jsonl(suspicious_rejected_path, log_entry)
+                            _enqueue_deferred_translation(status_dir, target_lang, json_file, key, en_text, "gt_rejected_critical")
                             gt_guard_fail += 1
                             guard_fail += 1
                             guard_quality += 1
@@ -13277,6 +13335,7 @@ if use_google_translate and gt_pending and not mid_batch_preempt:
                             if any(_has_issue_type(issues, t) for t in _gt_reject_types):
                                 suspicious_rejected += 1
                                 _append_jsonl(suspicious_rejected_path, log_entry)
+                                _enqueue_deferred_translation(status_dir, target_lang, json_file, key, en_text, f"gt_rejected_high_{[t for t in _gt_reject_types if _has_issue_type(issues, t)][0]}")
                                 gt_guard_fail += 1
                                 guard_fail += 1
                                 guard_quality += 1
@@ -13299,6 +13358,7 @@ if use_google_translate and gt_pending and not mid_batch_preempt:
                         "source": "google_translate",
                     })
                 else:
+                    _enqueue_deferred_translation(status_dir, target_lang, json_file, key, en_text, f"gt_validate_fail_{reason}")
                     gt_guard_fail += 1
                     guard_fail += 1
                     if reason == "placeholder":
@@ -13324,6 +13384,7 @@ if use_google_translate and gt_pending and not mid_batch_preempt:
     except ImportError:
         print("⚠️ GT: deep-translator nie zainstalowany (pip install deep-translator)")
         for key, en_text, h, suspicious in gt_pending:
+            _enqueue_deferred_translation(status_dir, target_lang, json_file, key, en_text, "gt_import_error")
             if not strict_mode:
                 lang_data[key] = f"[{target_lang.upper()}] {en_text}"
                 placeholders += 1
@@ -13332,6 +13393,7 @@ if use_google_translate and gt_pending and not mid_batch_preempt:
     except Exception as e:
         print(f"⚠️ GT: błąd inicjalizacji: {e}")
         for key, en_text, h, suspicious in gt_pending:
+            _enqueue_deferred_translation(status_dir, target_lang, json_file, key, en_text, f"gt_init_error_{type(e).__name__}")
             if not strict_mode:
                 lang_data[key] = f"[{target_lang.upper()}] {en_text}"
                 placeholders += 1
@@ -14174,6 +14236,42 @@ apply_turbo_batch() {
         fi
         log "${GREEN}🚀 Turbo batch: $lang backlog=$backlog → limit=$turbo_size (was $current_limit)${NC}"
     fi
+}
+
+#===============================================================================
+# PRE_MIGRATION: szczegolowy skan runtime-text bez i18n (plik/linia/tresc)
+#===============================================================================
+run_pre_migration_scan() {
+    local category="${1:-all}"
+    local scope="${2:-$I18N_SCOPE}"
+    local out rc
+    local premig_line
+    local hits files_with_hits files_scanned
+
+    out=$(python3 tools/i18n_pre_migration_scan.py \
+        --project-root "$WORK_DIR" \
+        --status-dir "$STATUS_DIR" \
+        --category "$category" \
+        --scope "$scope" \
+        2>&1)
+    rc=$?
+    if [ "$rc" -ne 0 ]; then
+        echo "$out" >&2
+        return "$rc"
+    fi
+
+    # Ludzkie linie raportu przepusc na stderr (stdout zarezerwowany na wynik machine-friendly)
+    echo "$out" | grep '^PREMIG\[' >&2 || true
+
+    premig_line=$(echo "$out" | grep '__PREMIG__' | tail -n 1)
+    hits=$(echo "$premig_line" | grep -oE 'hits=[0-9]+' | cut -d= -f2)
+    files_with_hits=$(echo "$premig_line" | grep -oE 'files_with_hits=[0-9]+' | cut -d= -f2)
+    files_scanned=$(echo "$premig_line" | grep -oE 'files_scanned=[0-9]+' | cut -d= -f2)
+    hits=${hits:-0}
+    files_with_hits=${files_with_hits:-0}
+    files_scanned=${files_scanned:-0}
+
+    echo "${hits} ${files_with_hits} ${files_scanned}"
 }
 
 #===============================================================================
@@ -19934,7 +20032,7 @@ PYFORCEDMETRIC
             if [ -n "$REPO_ROOT" ]; then
                 REMOTE_CMDS=$(git -C "$REPO_ROOT" show "origin/$GIT_TRACK_BRANCH:Tibia/silnik/canary_test/.github/worker_commands.txt" 2>/dev/null || true)
                 if [ -n "$REMOTE_CMDS" ]; then
-                    CMD=$(echo "$REMOTE_CMDS" | grep -v '^#' | grep -v '^$' | grep -E '^(FORCE:|AUTO:|SYNC:|SWITCH:|UNSWITCH|LANGVAL:|SPOTCHECK:|GRAMMARFIX:|RESTART|COMPACT_KEYS|IDLE|RANDOM|STATUS|SELFTEST|SELF_CHECK|SKIP|PAUSE:|NOTE:|SET:|TEST:|TEST_ALL|GT:|BATCH:|REPORT|LANGS|CONFIG|FOCUS:|UNFOCUS|LANG:)' | head -1)
+                    CMD=$(echo "$REMOTE_CMDS" | grep -v '^#' | grep -v '^$' | grep -E '^(FORCE:|PREMIG:|AUTO:|SYNC:|SWITCH:|UNSWITCH|LANGVAL:|SPOTCHECK:|GRAMMARFIX:|RESTART|COMPACT_KEYS|IDLE|RANDOM|STATUS|SELFTEST|SELF_CHECK|SKIP|PAUSE:|NOTE:|SET:|TEST:|TEST_ALL|GT:|BATCH:|REPORT|LANGS|CONFIG|FOCUS:|UNFOCUS|LANG:)' | head -1)
                     if [ -n "$CMD" ]; then
                         CMD_SOURCE="github"
                         echo "📨 Odebrano z GitHub (.github/worker_commands.txt): $CMD"
@@ -19949,7 +20047,7 @@ BEGIN { done=0 }
         print line
         next
     }
-    if (!done && line ~ /^(FORCE:|AUTO:|SYNC:|SWITCH:|UNSWITCH|LANGVAL:|SPOTCHECK:|GRAMMARFIX:|RESTART|COMPACT_KEYS|IDLE|RANDOM|STATUS|SKIP|PAUSE:|NOTE:|SET:|TEST:|TEST_ALL|GT:|BATCH:|REPORT|LANGS|CONFIG|FOCUS:|UNFOCUS|LANG:)/) {
+    if (!done && line ~ /^(FORCE:|PREMIG:|AUTO:|SYNC:|SWITCH:|UNSWITCH|LANGVAL:|SPOTCHECK:|GRAMMARFIX:|RESTART|COMPACT_KEYS|IDLE|RANDOM|STATUS|SKIP|PAUSE:|NOTE:|SET:|TEST:|TEST_ALL|GT:|BATCH:|REPORT|LANGS|CONFIG|FOCUS:|UNFOCUS|LANG:)/) {
         print "#" line "  # Wykonano " ts
         done=1
         next
@@ -19970,7 +20068,7 @@ BEGIN { done=0 }
                 for COMMANDS_TXT in "$COMMANDS_TXT_PRIMARY" "$COMMANDS_TXT_FALLBACK"; do
                     [ -n "$CMD" ] && break
                     if [ -f "$COMMANDS_TXT" ]; then
-                        CMD=$(grep -v '^#' "$COMMANDS_TXT" | grep -v '^$' | grep -E '^(FORCE:|AUTO:|SYNC:|SWITCH:|UNSWITCH|LANGVAL:|SPOTCHECK:|GRAMMARFIX:|RESTART|COMPACT_KEYS|IDLE|RANDOM|STATUS|SELFTEST|SELF_CHECK|SKIP|PAUSE:|NOTE:|SET:|TEST:|TEST_ALL|GT:|BATCH:|REPORT|LANGS|CONFIG|FOCUS:|UNFOCUS|LANG:)' | head -1)
+                        CMD=$(grep -v '^#' "$COMMANDS_TXT" | grep -v '^$' | grep -E '^(FORCE:|PREMIG:|AUTO:|SYNC:|SWITCH:|UNSWITCH|LANGVAL:|SPOTCHECK:|GRAMMARFIX:|RESTART|COMPACT_KEYS|IDLE|RANDOM|STATUS|SELFTEST|SELF_CHECK|SKIP|PAUSE:|NOTE:|SET:|TEST:|TEST_ALL|GT:|BATCH:|REPORT|LANGS|CONFIG|FOCUS:|UNFOCUS|LANG:)' | head -1)
                         if [ -n "$CMD" ]; then
                             echo "📨 Odebrano z $COMMANDS_TXT: $CMD"
                             TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
@@ -20019,6 +20117,15 @@ BEGIN { done=0 }
                         echo "🎯 Wymuszam kategorię: $FORCED_CAT (PRE_MIGRATION — skan only)"
                         MODE_TYPE="PRE_MIGRATION"
                         MODE_CAT="$FORCED_CAT"
+                        MODE_COUNT="forced"
+                        MODE_EXTRA="FORCED"
+                        ;;
+                    PREMIG:*)
+                        PREMIG_CAT=$(echo "$CMD" | cut -d: -f2)
+                        PREMIG_CAT=${PREMIG_CAT:-all}
+                        echo "🔎 Wymuszam PRE_MIGRATION backlog scan: $PREMIG_CAT"
+                        MODE_TYPE="PRE_MIGRATION"
+                        MODE_CAT="$PREMIG_CAT"
                         MODE_COUNT="forced"
                         MODE_EXTRA="FORCED"
                         ;;

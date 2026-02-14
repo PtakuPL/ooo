@@ -5,23 +5,23 @@
 ## 🧭 META
 
 > **[META]** 🟢 ACTIVE  
-> Świeżość: teraz | Źródło: `update_github_status()` | Ostatnia aktualizacja: 2026-02-14 07:33:56
+> Świeżość: teraz | Źródło: `update_github_status()` | Ostatnia aktualizacja: 2026-02-14 07:36:09
 
-> **Aktualizacja:** 2026-02-14 07:33:56 UTC  
+> **Aktualizacja:** 2026-02-14 07:36:09 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 53586  
-> **LIVE:** Cykl #1 | Status: 🟢 RUNNING | Faza: AUTO_TRANSLATE | Etap: parallel_start | Kategoria: de | Plik: scripts.json | ETA: 0 | Heartbeat: 2026-02-14T07:33:14Z  
-> **Strict hourly (JSONL-only):** okno=1.0h | cycles=36 | pending_skip=0.0% | guard_fail=8.6% | throughput=2652.0/h  
+> **LIVE:** Cykl #1 | Status: 🟢 RUNNING | Faza: AUTO_TRANSLATE | Etap: cycle_end | Kategoria: tr | Plik: - | ETA: 0 | Heartbeat: 2026-02-14T07:35:59Z  
+> **Strict hourly (JSONL-only):** okno=1.0h | cycles=35 | pending_skip=0.0% | guard_fail=8.9% | throughput=2415.0/h  
 > **Net effective translated:** 63,579
 
 ### 🧩 Status sekcji (P0.1)
 | Sekcja | Stan | Świeżość | Powód | Źródło | Ostatnia aktualizacja |
 |--------|------|----------|-------|--------|-----------------------|
-| META | 🟢 ACTIVE | teraz | - | `update_github_status()` | 2026-02-14 07:33:56 |
-| LIVE | 🟢 ACTIVE | 43s temu | - | `activity.json / worker_state.json` | 2026-02-14T07:33:14Z |
-| MIGRATION | 🔒 INACTIVE | 12h temu | worker w trybie AUTO_TRANSLATE | `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | 2026-02-14 07:33:56 |
-| TRANSLATION | 🟢 ACTIVE | 39s temu | - | `translation_guard_latest.json / translation_recent_latest.json` | 2026-02-14T07:33:17.847397Z |
-| QUALITY | 🔒 INACTIVE | 13min temu | worker w trybie AUTO_TRANSLATE | `quality_audit_latest.json` | 2026-02-14T07:20:29.263958Z |
-| HISTORY | 🟢 ACTIVE | teraz | - | `daily/*.json / ops.jsonl` | 2026-02-14 07:33:56 |
+| META | 🟢 ACTIVE | teraz | - | `update_github_status()` | 2026-02-14 07:36:09 |
+| LIVE | 🟢 ACTIVE | 11s temu | - | `activity.json / worker_state.json` | 2026-02-14T07:35:59Z |
+| MIGRATION | 🔒 INACTIVE | 12h temu | worker w trybie AUTO_TRANSLATE | `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | 2026-02-14 07:36:09 |
+| TRANSLATION | 🟢 ACTIVE | 2min temu | - | `translation_guard_latest.json / translation_recent_latest.json` | 2026-02-14T07:33:17.847397Z |
+| QUALITY | 🔒 INACTIVE | 36s temu | worker w trybie AUTO_TRANSLATE | `quality_audit_latest.json` | 2026-02-14T07:35:34.336892Z |
+| HISTORY | 🟢 ACTIVE | teraz | - | `daily/*.json / ops.jsonl` | 2026-02-14 07:36:09 |
 
 > Artefakt machine-readable: `i18n/status/status_sections_latest.json`
 
@@ -30,14 +30,14 @@
 ## 🔴 LIVE
 
 > **[LIVE]** 🟢 ACTIVE  
-> Świeżość: 43s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T07:33:14Z
+> Świeżość: 11s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T07:35:59Z
 
 - **Faza:** `AUTO_TRANSLATE`
-- **Etap:** `parallel_start`
-- **Kategoria:** `de`
-- **Plik:** `scripts.json`
+- **Etap:** `cycle_end`
+- **Kategoria:** `tr`
+- **Plik:** `-`
 - **Status:** 🟢 RUNNING
-- **Heartbeat:** `2026-02-14T07:33:14Z`
+- **Heartbeat:** `2026-02-14T07:35:59Z`
 
 ---
 
@@ -92,7 +92,7 @@
 ## 🛠️ MIGRATION
 
 > **[MIGRATION]** 🔒 INACTIVE (worker w trybie AUTO_TRANSLATE)  
-> Świeżość: 12h temu | Źródło: `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | Ostatnia aktualizacja: 2026-02-14 07:33:56
+> Świeżość: 12h temu | Źródło: `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | Ostatnia aktualizacja: 2026-02-14 07:36:09
 
 ### 📁 Pliki Projektu (pełny skan)
 | Metryka | Wartość | Procent | Info |
@@ -139,7 +139,7 @@
 ## 🌍 TRANSLATION
 
 > **[TRANSLATION]** 🟢 ACTIVE  
-> Świeżość: 39s temu | Źródło: `translation_guard_latest.json / translation_recent_latest.json` | Ostatnia aktualizacja: 2026-02-14T07:33:17.847397Z
+> Świeżość: 2min temu | Źródło: `translation_guard_latest.json / translation_recent_latest.json` | Ostatnia aktualizacja: 2026-02-14T07:33:17.847397Z
 
 | Metryka | Wartość | Procent | Info |
 |---------|---------|---------|------|
@@ -151,7 +151,7 @@
 ### 🎯 Pokrycie tłumaczeń per język (EN → LANG)
 | Język | Przetłumaczone | % poprawnie przetłumaczonych | EN-copy | Braki kluczy |
 |-------|----------------|-------------------------------|---------|--------------|
-| ES (Hiszpański) | 45,767/53,586 | 85.41% | 11,413 | 232 |
+| ES (Hiszpański) | 45,858/53,586 | 85.58% | 11,334 | 232 |
 | PL (Polski) | 40,166/53,586 | 74.96% | 2,857 | 2,083 |
 | AR (Arabski) | 11,927/53,586 | 22.26% | 31,209 | 2,150 |
 | ID (ID) | 11,779/53,586 | 21.98% | 29,236 | 2,155 |
@@ -173,31 +173,31 @@
 | TA (TA) | 11,612/53,586 | 21.67% | 29,282 | 2,155 |
 
 ### 🧭 Aktywny folder tłumaczeń
-- **Folder:** PL - Polski - Klient
-- **Plik JSON:** client.json
+- **Folder:** TR - Turecki - Serwer
+- **Plik JSON:** quests.json
 - **Ostatnie klucze (10-20):** 20
 
 ### 📝 Ostatnie 10-20 przetłumaczonych kluczy
-- *CLICK* → *klicken* (scripts.actions_yalahar_machine_war_golems.say_1)
-- The door seems to be sealed against unwanted intruders. → The door seems to be sealed against unwanted intruders. (scripts.actions_zalamon_door.msg_1)
-- The door seems to be sealed against unwanted intruders. → The door seems to be sealed against unwanted intruders. (scripts.closing_door.msg_1)
-- Put the construction kit on the floor first. → Legen Sie den Bausatz zunächst auf den Boden. (scripts.construction_kits.msg_1)
-- You may construct this only inside a house. → Sie dürfen dies nur innerhalb eines Hauses errichten. (scripts.construction_kits.msg_2)
-- You lost the skirmish. → Du hast das Gefecht verloren. (scripts.creatureevent_commander_kills.msg_1)
-- Congratulations you received the Poltergeist Outfit. → Herzlichen Glückwunsch, dass Sie das Poltergeist-Outfit erhalten haben. (scripts.creaturescripts_pale_worm_death.msg_1)
-- Release me and you will be rewarded greatefully! → Lass mich los und du wirst reich belohnt! (scripts.demon_oak.voice_1)
-- What is this? Demon Legs lying here? Someone might have lost them! → Was ist das? Liegen hier Dämonenbeine? Jemand könnte sie verloren haben! (scripts.demon_oak.voice_2)
-- I'm trapped, come here and free me fast!! → Ich bin gefangen, komm her und befreie mich schnell!! (scripts.demon_oak.voice_3)
-- I can bring your beloved back from the dead, just release me! → Ich kann deine Geliebte von den Toten zurückholen, lass mich einfach los! (scripts.demon_oak.voice_4)
-- What a nice shiny golden armor. Come to me and you can have it! → Was für eine schöne glänzende goldene Rüstung. Komm zu mir und du kannst es habe (scripts.demon_oak.voice_5)
-- Find a way in here and release me! Pleeeease hurry! → Finden Sie einen Weg hierher und lassen Sie mich frei! Bitte beeilen Sie sich! (scripts.demon_oak.voice_6)
-- You can have my demon set, if you help me get out of here! → Du kannst meinen Dämon loswerden, wenn du mir hilfst, hier rauszukommen! (scripts.demon_oak.voice_7)
-- Have fun! → Have fun! (scripts.dolls.12904_4)
-- The door seems to be sealed against unwanted intruders. → The door seems to be sealed against unwanted intruders. (scripts.door.msg_1)
-- You are not the owner. → Sie sind nicht der Eigentümer. (scripts.fishing.msg_1)
-- It is empty. → Es ist leer. (scripts.fluids.msg_1)
-- It is empty. → Es ist leer. (scripts.fluids.msg_2)
-- Back in black! → Back in black! (scripts.furyosa_deathball.say_1)
+- I can teach you {healing spells}, {attack spells} and {support spells}. What kin → Puedo enseñarte {healing spells}, {attack spells} y {support spells}. ¿Qué tipo  (npc.ormuhn.stdmod_3)
+- You can help in the fight against the hive. There are several missions available → Tú puedes ayudar en la lucha contra la colmena. Hay varias misiones disponibles  (npc.orockle.say_1)
+- You could try to blind the hive, you might disrupt its digestion, you could gath → Podrías intentar cegar la colmena, podrías alterar su digestión, podrías acumula (npc.orockle.say_2)
+- So be it. Now you are a member of the inquisition. You might ask me for a missio → Que así sea. Ahora eres miembro de la inquisición. Podrías pedirme una misión pa (npc.orockle.say_3)
+- What's your business here with the {magicians}, |PLAYERNAME|? → ¿Cuál es tu negocio aquí con {magicians}, |PLAYERNAME|? (npc.ortheus.greet_msg_1)
+- A cookie? Well... I have to admit I haven't had one for ages. Can I have it? → ¿Una galleta? Bueno... tengo que admitir que hace mucho que no tengo uno. ¿Puedo (npc.ortheus.say_1)
+- Well thanks, it looks tasty, I'll just take a bi - COUGH! Are you trying to pois → Bueno, gracias, se ve delicioso, solo tomaré un bi - ¡TOS! ¿Estás tratando de en (npc.ortheus.say_3)
+- Wow. These polite young adventurers nowadays. Thank you. → Guau. Estos jóvenes y educados aventureros de hoy en día. Gracias. (npc.ortheus.say_4)
+- Hmmm, you don't have tea with you. → Hmmm, no llevas té contigo. (npc.ortheus.say_5)
+- Have you actually brought me a mug of tea?? → ¿De verdad me has traído una taza de té? (npc.ortheus.say_6)
+- I can't imagine a better place to live. → No puedo imaginar un lugar mejor para vivir. (npc.ortheus.stdmod_1)
+- He used to visit me for a chat, but ever since that new tavern opened I haven't  → Solía ​​visitarme para charlar, pero desde que abrió esa nueva taberna ya no lo  (npc.ortheus.stdmod_10)
+- He sometimes delivers fruit and vegetables to this quarter. → A veces entrega frutas y verduras a este barrio. (npc.ortheus.stdmod_11)
+- Though the city has seen better days, the quality of life is still much better t → Aunque la ciudad ha tenido mejores días, la calidad de vida sigue siendo mucho m (npc.ortheus.stdmod_12)
+- I can't imagine a better place to live → No puedo imaginar un lugar mejor para vivir (npc.ortheus.stdmod_13)
+- Whatever that's supposed to mean. → Lo que sea que se supone que eso significa. (npc.ortheus.stdmod_14)
+- I don't have anything that I could give you as a reward. Guess you aren't so sel → No tengo nada que pueda darte como recompensa. Supongo que no eres tan desintere (npc.ortheus.stdmod_15)
+- They try to protect the city and do a decent job. Well - no, a poor job, I mean  → Intentan proteger la ciudad y hacer un trabajo decente. Bueno... no, un mal trab (npc.ortheus.stdmod_16)
+- You can bring me a mug of tea if you want to. → Puedes traerme una taza de té si quieres. (npc.ortheus.stdmod_17)
+- Though the city has seen better days, the quality of life is still much better t → Aunque la ciudad ha tenido mejores días, la calidad de vida sigue siendo mucho m (npc.ortheus.stdmod_2)
 
 ### 🚫 Raporty "nie mogę przetłumaczyć"
 - Guard reports: **1984**  
@@ -205,12 +205,12 @@
 - Widoczne raporty 'nie mogę tłumaczyć': **1934**
 
 ### 🌐 Globalne info wszystkich języków
-- **Global completion:** **21.04%** (586,177/2,786,472)
-- **EN-copy łącznie:** **1,333,210**
+- **Global completion:** **21.04%** (586,268/2,786,472)
+- **EN-copy łącznie:** **1,333,131**
 - **Braki kluczy łącznie:** **110,060**
 - **Brakujące pliki językowe:** **0**
-- **Cache STATUSPY (per-lang):** **mixed** | hit **50**, miss **2**, hit-rate **96.2%**
-- **Cache STATUSPY (per-file):** hit **1974**, miss **2**, hit-rate **99.9%**
+- **Cache STATUSPY (per-lang):** **warm-cache** | hit **52**, miss **0**, hit-rate **100.0%**
+- **Cache STATUSPY (per-file):** hit **1976**, miss **0**, hit-rate **100.0%**
 - **Profiler cyklu (ostatni):** -
 - **Osobny raport:** `i18n/status/translation_global_overview.json`
 
@@ -222,7 +222,7 @@
 
 | Język | Serwer | Serwer % | Instalka | Instalka % |
 |-------|--------|----------|----------|------------|
-| ES | 43,195/49,731 | 86.9% | 2,572/3,855 | 66.7% |
+| ES | 43,286/49,731 | 87.0% | 2,572/3,855 | 66.7% |
 | PL | 37,406/49,731 | 75.2% | 2,760/3,855 | 71.6% |
 | AR | 11,914/49,731 | 24.0% | 13/3,855 | 0.3% |
 | ID | 11,766/49,731 | 23.7% | 13/3,855 | 0.3% |
@@ -238,13 +238,13 @@
 ### ⏱️ Strict Hourly Window (JSONL-only)
 | Metryka | Wartość |
 |---------|---------|
-| Okno | **1.0h** (2026-02-14T06:33:56.569273Z → 2026-02-14T07:33:56.569273Z) |
-| Cykle | **36** (AUTO=36, MIGRATION=0) |
+| Okno | **1.0h** (2026-02-14T06:36:10.004245Z → 2026-02-14T07:36:10.004245Z) |
+| Cykle | **35** (AUTO=35, MIGRATION=0) |
 | Pending skip | **0** (all=0.0%, migration=0.0%) |
-| Guard fail rate | **8.6%** |
+| Guard fail rate | **8.9%** |
 | No progress rate | **0.0%** |
-| Throughput | **2652.0 kluczy/h** |
-| Suspicious | **693** |
+| Throughput | **2415.0 kluczy/h** |
+| Suspicious | **664** |
 | Top guard_fail targets | zh_tw/npc.json (gf=53), ja/npc.json (gf=50), zh/npc.json (gf=29), es/otclient_modules.json (gf=19), pl/client.json (gf=10) |
 | Źródła | `i18n/status/worker_cycle_perf.jsonl`, `i18n/status/translation_guard_report.jsonl`, `i18n/status/suspicious_log.jsonl` |
 | Plik | `i18n/status/strict_hourly_window_latest.json` |
@@ -252,11 +252,11 @@
 ## 🔬 QUALITY
 
 > **[QUALITY]** 🔒 INACTIVE (worker w trybie AUTO_TRANSLATE)  
-> Świeżość: 13min temu | Źródło: `quality_audit_latest.json` | Ostatnia aktualizacja: 2026-02-14T07:20:29.263958Z
+> Świeżość: 36s temu | Źródło: `quality_audit_latest.json` | Ostatnia aktualizacja: 2026-02-14T07:35:34.336892Z
 
-- **Ostatni audyt:** SLOW_MODE | 13 issue(s) / 100 entries | 2026-02-14T07:20:29.263958Z
-- **Top 5 typów problemów:** suspicious_rejected_critical=200, suspicious_log_high=102, suspicious_log_medium=46, suspicious_log_low=29, suspicious_log_critical=23
-- **Języki o najsłabszej jakości:** es(60.1, issues=136529), pl(60.2, issues=107287), ar(62.5, issues=2666), tl(67.0, issues=441), fr(67.3, issues=2437)
+- **Ostatni audyt:** OK | 5 issue(s) / 100 entries | 2026-02-14T07:35:34.336892Z
+- **Top 5 typów problemów:** suspicious_rejected_critical=200, suspicious_log_low=66, suspicious_log_high=57, suspicious_log_medium=47, suspicious_log_critical=30
+- **Języki o najsłabszej jakości:** es(60.1, issues=136705), pl(60.1, issues=107392), ar(62.5, issues=2666), tl(64.2, issues=466), zh_TW(64.8, issues=337)
 - **Pliki:** `i18n/status/quality_audit_latest.json`, `i18n/status/quality_dashboard.json`, `i18n/status/quality_report.jsonl`
 
 ### 📈 Statystyki Pracy
@@ -296,7 +296,7 @@
 ## ✅ CHECKLIST - Plan Pracy
 
 > **Aktualna faza:** AUTO_TRANSLATE  
-> **Aktualna kategoria:** de
+> **Aktualna kategoria:** tr
 
 
 ### 🔄 Faza 1: 🎮 Canary Server
@@ -364,22 +364,22 @@
 ## 🔴 LIVE: Szczegóły wykonania
 
 > **[LIVE]** 🟢 ACTIVE  
-> Świeżość: 43s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T07:33:14Z
+> Świeżość: 11s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T07:35:59Z
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │ 🔴 LIVE: Worker v2.0                          Cykl #     1 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
-│ Tryb:      🤖 AUTO_TRANSLATE (parallel_start)        │
-│ Kategoria: 📁 DE                                     │
+│ Tryb:      🤖 AUTO_TRANSLATE (cycle_end)             │
+│ Kategoria: 📁 TR                                     │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status: running                                               │
-│ Plik: scripts.json                                            │
-│ Postęp: 0/0 keys                                              │
-│ Info: parallel auto translate                                 │
+│ Plik: -                                                       │
+│ Postęp: 0/0 units                                             │
+│ Info: cycle end                                               │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2026-02-14T07:33:14Z           │
+│ ❤️ Heartbeat: 2026-02-14T07:35:59Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -399,7 +399,7 @@
 | Język | Coverage | Brakujące | EN-copy | Translated(200) | Guard fail | Entries |
 |-------|----------|-----------|---------|-----------------|------------|---------|
 | 🟡 PL | 75.0% | 2,083 | 2,857 | 686 | 254 (27.0%) | 21 |
-| 🟡 ES | 85.4% | 232 | 11,413 | 585 | 247 (29.7%) | 19 |
+| 🟡 ES | 85.6% | 232 | 11,334 | 585 | 247 (29.7%) | 19 |
 
 | KPI | Wartość | Target | Status |
 |-----|---------|--------|--------|
@@ -412,8 +412,9 @@
 ## 📜 HISTORY
 
 > **[HISTORY]** 🟢 ACTIVE  
-> Świeżość: teraz | Źródło: `daily/*.json / ops.jsonl` | Ostatnia aktualizacja: 2026-02-14 07:33:56
+> Świeżość: teraz | Źródło: `daily/*.json / ops.jsonl` | Ostatnia aktualizacja: 2026-02-14 07:36:09
 
+- 🤖 AUTO_TRANSLATE: REPAIR_IDENTICAL_DONE [es] → ok (translated+105) — repair_identical lang=es file=npc.json target_identical=1634 limit=260 tier=high_backlog+domain_cap domain_cap=260 gt=true suspicious_pct=3.02
 - 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [de] → ok (translated+80, skipped+0) — parallel lang=de file=scripts.json
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [tr] → warn (files+1, translated+79, skipped+0) — lang=tr file=quests.json strict_skipped_done=11 guard_fail=4 placeholder=0 command=0 pipe=0
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [it] → warn (files+1, translated+80, skipped+0) — lang=it file=quests.json strict_skipped_done=78
@@ -423,7 +424,6 @@
 - 🤖 AUTO_TRANSLATE: REPAIR_IDENTICAL_DONE [es] → ok (translated+110) — repair_identical lang=es file=npc.json target_identical=1648 limit=260 tier=high_backlog+domain_cap domain_cap=260 gt=true suspicious_pct=2.80
 - 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [zh_TW] → ok (translated+27, skipped+0) — parallel lang=zh_TW file=npc.json
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [zh] → warn (files+1, translated+51, skipped+0) — lang=zh file=npc.json strict_skipped_done=1169 guard_fail=29 placeholder=0 command=0 pipe=0
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [uz] → warn (files+1, translated+80, skipped+0) — lang=uz file=npc.json strict_skipped_done=1220
 
 
 
@@ -748,7 +748,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2026-02-14 07:33:56  
+📅 Auto-updated by Worker v1.1 | Last: 2026-02-14 07:36:09  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

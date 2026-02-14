@@ -2,73 +2,22 @@
   "lang": "uk",
   "script_group": "cyrillic",
   "total_keys": 53586,
-  "translated": 30832,
-  "identical_to_en": 24174,
-  "placeholder_keys": 20599,
-  "coverage_pct": 57.5,
-  "issues_total": 6223,
+  "translated": 30777,
+  "identical_to_en": 30171,
+  "placeholder_keys": 20654,
+  "coverage_pct": 57.4,
+  "issues_total": 18,
   "issues_by_type": {
-    "V3_empty": 6144,
-    "script_cyrillic_latin_mix": 71,
-    "V1_placeholder_mismatch": 7,
-    "V5_pipe_mismatch": 1
+    "script_cyrillic_latin_mix": 18
   },
   "issues_by_severity": {
-    "CRITICAL": 8,
-    "HIGH": 71,
+    "CRITICAL": 0,
+    "HIGH": 18,
     "MEDIUM": 0,
-    "LOW": 6144
+    "LOW": 0
   },
-  "score": 98.6,
+  "score": 99.9,
   "worst_keys": [
-    {
-      "key": "scripts.actions_rewards.msg_1",
-      "category": "scripts",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "scripts.manage_tutor.msg_1",
-      "category": "scripts",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "scripts.manage_tutor.msg_2",
-      "category": "scripts",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "server.game.msg_32",
-      "category": "server",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "server.player.msg_11",
-      "category": "server",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "server.spells.msg_3",
-      "category": "server",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "talkaction.online.msg_summary",
-      "category": "talkactions",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "talkaction.online.msg_summary",
-      "category": "talkactions",
-      "type": "V5_pipe_mismatch",
-      "severity": "CRITICAL"
-    },
     {
       "key": "achievement.22.name",
       "category": "achievements",
@@ -88,8 +37,14 @@
       "severity": "HIGH"
     },
     {
-      "key": "event.player.msg1",
-      "category": "events",
+      "key": "achievement.184.name",
+      "category": "achievements",
+      "type": "script_cyrillic_latin_mix",
+      "severity": "HIGH"
+    },
+    {
+      "key": "achievement.206.name",
+      "category": "achievements",
       "type": "script_cyrillic_latin_mix",
       "severity": "HIGH"
     },
@@ -140,15 +95,45 @@
       "category": "items",
       "type": "script_cyrillic_latin_mix",
       "severity": "HIGH"
+    },
+    {
+      "key": "item.9804.name",
+      "category": "items",
+      "type": "script_cyrillic_latin_mix",
+      "severity": "HIGH"
+    },
+    {
+      "key": "npc.a_behemoth.greet_msg_1",
+      "category": "npc",
+      "type": "script_cyrillic_latin_mix",
+      "severity": "HIGH"
+    },
+    {
+      "key": "npc.a_behemoth.greet_msg_2",
+      "category": "npc",
+      "type": "script_cyrillic_latin_mix",
+      "severity": "HIGH"
+    },
+    {
+      "key": "npc.a_behemoth.greet_msg_3",
+      "category": "npc",
+      "type": "script_cyrillic_latin_mix",
+      "severity": "HIGH"
+    },
+    {
+      "key": "npc.a_dead_bureaucrat1.say_3",
+      "category": "npc",
+      "type": "script_cyrillic_latin_mix",
+      "severity": "HIGH"
     }
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 465,
-    "consistency": 1,
+    "issues_total": 406,
+    "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 64,
-    "auto_fix_applied": 75
+    "length_ratio": 6,
+    "auto_fix_applied": 70
   },
-  "validated_at": "2026-02-14T09:32:12.385625Z"
+  "validated_at": "2026-02-14T11:24:01.676937Z"
 }

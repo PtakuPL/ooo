@@ -11,6 +11,43 @@
 
 ---
 
+## 🛠️ Aktualizacja wykonania (2026-02-14 11:22 UTC — full task: audyt LT/CS/EL/IT + status refresh + translation contract)
+
+Wybrane do realizacji pełne zadania:
+- **Zweryfikować jakość tłumaczeń LT/CS/EL/IT z podziałem na typy: item names/desc, NPC dialogue, quest descriptions**
+- **Domknąć odświeżanie `I18N_STATUS.md` także dla zmian poza workerem**
+- **Dodać check kontraktu runtime: guardian uruchamia worker w trybie tłumaczeń ogólnych (ES/PL gate)**
+
+Wykonane:
+- ✅ `i18n-statusd.sh`:
+  - dodano `maybe_refresh_status_md()` / `run_status_md_refresh()` (autonomiczne odświeżanie `I18N_STATUS.md`),
+  - refresh jest wyzwalany przy starym statusie i po `RECONCILE_APPLIED`.
+- ✅ `i18n-statusd.sh`:
+  - `registry_reconcile` rozszerzono o `always_sync_any_drift=true` (kanoniczny próg),
+  - przy delcie możliwy bypass cooldown (`cooldown_bypassed`), żeby ręczne zmiany EN nie „czekały” na odświeżenie.
+- ✅ `i18n-statusd.sh` (doctor):
+  - nowy blok `translation_contract`:
+    - `has_translations_only`,
+    - `priority_gate_enabled`,
+    - kolejność `priority_langs`,
+    - wynik `worker_translation_contract_ok` publikowany do `statusd_doctor.json`.
+- ✅ Audyt jakości LT/CS/EL/IT (domeny `items.json` / `npc.json` / `quests.json`):
+  - placeholdery `{}`: mismatch `0`,
+  - placeholdery `%`: mismatch `0`,
+  - tokeny komend `'keyword'`: mismatch `0`.
+- ✅ Coverage genuine (bez EN-copy i `[EN]`) po typach:
+  - `lt`: `item_name=1.66%`, `item_desc=0.03%`, `npc_dialogue=2.98%`, `quest_desc=1.97%`,
+  - `cs`: `item_name=1.17%`, `item_desc=0.03%`, `npc_dialogue=3.03%`, `quest_desc=1.97%`,
+  - `el`: `item_name=1.67%`, `item_desc=0.03%`, `npc_dialogue=3.00%`, `quest_desc=1.97%`,
+  - `it`: `item_name=1.73%`, `item_desc=0.03%`, `npc_dialogue=3.04%`, `quest_desc=23.77%`.
+
+Nowe rzeczy do zrobienia ujawnione podczas realizacji:
+- ⬜ Dodać osobny dispatch wave dla `lt/cs/el/it` z kolejnością domen:
+  - `items.desc` -> `npc` -> `quests`,
+  - osobne limity batch per domena (bo `item_desc` jest krytycznie nisko).
+- ⬜ Dodać auto-metrykę jakości domenowej do `i18n/status/` (nie tylko ad-hoc skrypt), żeby worker i statusd mieli stale ten sam kontrakt.
+- ⬜ Wprowadzić shortlistę ręcznego review idiomów GT dla LT/CS/EL/IT (placeholdery są poprawne, ale semantyka/idiomy miejscami wymagają korekty).
+
 ## 🛠️ Aktualizacja wykonania (2026-02-14 10:18 UTC — full task: 30s health gate + source root-cause + 20m observation)
 
 Wybrane do realizacji pełne zadania:

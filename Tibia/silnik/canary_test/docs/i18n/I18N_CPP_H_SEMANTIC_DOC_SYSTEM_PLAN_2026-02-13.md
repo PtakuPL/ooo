@@ -6,6 +6,19 @@
 
 ---
 
+## 0j) Aktualizacja koordynacyjna (2026-02-14 11:22 UTC)
+
+Zmiany runtime/status istotne dla planu C++/H:
+- ✅ `statusd` odświeża `I18N_STATUS.md` autonomicznie (nie tylko przez cykl workera).
+- ✅ `statusd` ma rozszerzony kontrakt reconcile (`always_sync_any_drift=true` + `cooldown_bypassed` telemetry).
+- ✅ `statusd_doctor` publikuje nowy blok `translation_contract` (translations-only + ES/PL gate order).
+- ✅ Audyt LT/CS/EL/IT potwierdził brak naruszeń placeholderów `{}` / `%` / `'keyword'` w `items/npc/quests`.
+
+Nowe wymagania dla pipeline semantycznego C++/H:
+- ⬜ Dodać pole `translation_contract_hint` (`ok|warning|broken`) do korelacji zmian kodu z runtime kontraktem tłumaczeń.
+- ⬜ Dodać pole `status_projection_freshness_hint` (`fresh|stale`) zależne od nowego auto-refresh `I18N_STATUS.md`.
+- ⬜ Rozszerzyć parsery semantyczne stringów o jawny marker `placeholder_integrity=true/false` dla przypadków `{}` i `%` (zgodny z metrykami statusd).
+
 ## 0i) Aktualizacja koordynacyjna (2026-02-14 10:18 UTC)
 
 Zmiany runtime/status istotne dla planu C++/H:

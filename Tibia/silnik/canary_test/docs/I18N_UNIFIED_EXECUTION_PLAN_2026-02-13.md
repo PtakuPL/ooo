@@ -6,6 +6,38 @@
 
 ---
 
+## Update wykonania (2026-02-14 11:22 UTC) — status auto-refresh + kontrakt tłumaczeń + audyt LT/CS/EL/IT
+
+Zrealizowane pełne zadania:
+- ✅ **Statusd: automatyczny refresh `I18N_STATUS.md` niezależnie od cyklu workera**
+  - dodano moduł `maybe_refresh_status_md()` + `run_status_md_refresh()` w `i18n-statusd.sh`,
+  - refresh uruchamia się gdy status jest stary (`STATUSD_STATUS_MD_REFRESH_STALE_SECONDS`) lub po `RECONCILE_APPLIED`,
+  - walidacja runtime: wymuszone postarzenie pliku `I18N_STATUS.md` i uruchomienie `--reconcile-registry` odświeża plik (mtime zaktualizowany).
+- ✅ **Statusd: reconcile registry pod małe i częste zmiany manualne**
+  - rozszerzono próg o `registry_reconcile.always_sync_any_drift` (kanonicznie `true`),
+  - przy aktywnej delcie reconcile może pominąć cooldown (`cooldown_bypassed`), żeby szybciej synchronizować ręczne zmiany EN.
+- ✅ **Statusd doctor: kontrakt runtime tłumaczeń**
+  - nowy check `translation_contract` w `statusd_doctor.json`,
+  - monitoruje: `--translations-only`, `priority_gate.enabled`, kolejność `priority_langs=[es,pl]`,
+  - aktualny runtime: `worker_translation_contract_ok`.
+- ✅ **Audyt jakości tłumaczeń LT/CS/EL/IT (podział domenowy)**
+  - domeny: `items.json` (nazwy/opisy), `npc.json` (dialogi), `quests.json` (opisy questów),
+  - placeholdery i formatowanie:
+    - `{...}` mismatch: `0` we wszystkich 4 językach,
+    - `%` mismatch: `0`,
+    - tokeny komend w apostrofach `'trade'`-like: mismatch `0`.
+  - coverage (genuine, bez EN-copy i `[EN]`):
+    - `lt`: items name `1.66%`, items desc `0.03%`, npc `2.98%`, quests `1.97%`,
+    - `cs`: items name `1.17%`, items desc `0.03%`, npc `3.03%`, quests `1.97%`,
+    - `el`: items name `1.67%`, items desc `0.03%`, npc `3.00%`, quests `1.97%`,
+    - `it`: items name `1.73%`, items desc `0.03%`, npc `3.04%`, quests `23.77%`.
+
+Nowe problemy/TODO wykryte podczas realizacji:
+- ⬜ Dodać dedykowany etap `multilang_wave_lt_cs_el_it` (po ES/PL) z osobnym dispatch budget per domena (`items_desc`, `npc`, `quests`).
+- ⬜ Dodać twardy floor jakości dla `items.desc` (obecnie ~`0.03%` genuine we wszystkich 4 językach) przed rozszerzaniem na kolejne języki.
+- ⬜ Dodać report operacyjny `translation_domain_audit_latest.json` (per-lang/per-domain: genuine/en_copy/[EN]/placeholder_mismatch), żeby ten audyt był stałą telemetrią, nie jednorazowym skryptem.
+- ⬜ Wzmocnić heurystyki leksykalne pod tłumaczenia GT (np. słabe kalki/idiomy), bo placeholdery są poprawne, ale nadal występują frazy wymagające ręcznego review.
+
 ## Update wykonania (2026-02-14 10:18 UTC) — post-start 30s gate + source=manual root-cause + 20m queue observation
 
 Zrealizowane pełne zadania:

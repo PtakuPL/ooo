@@ -5,6 +5,38 @@
 
 ---
 
+## 0e. Audyt jakości LT/CS/EL/IT per typ tłumaczenia (2026-02-14 11:22 UTC)
+
+### Podsumowanie (items nazwy/opisy, NPC dialogi, quest descriptions)
+
+| Język | Item names | Item desc | NPC dialogue | Quest descriptions |
+|------|------------|-----------|--------------|--------------------|
+| **LT** | 1.66% | 0.03% | 2.98% | 1.97% |
+| **CS** | 1.17% | 0.03% | 3.03% | 1.97% |
+| **EL** | 1.67% | 0.03% | 3.00% | 1.97% |
+| **IT** | 1.73% | 0.03% | 3.04% | 23.77% |
+
+Wnioski:
+- 🔴 `items.desc` jest krytycznie niedowożone we wszystkich 4 językach (praktycznie brak genuine translation).
+- 🔴 LT/CS/EL mają bardzo niski realny postęp w `npc` i `quests`.
+- 🟡 IT ma wyraźnie lepszy postęp tylko w `quests`, reszta domen nadal niska.
+
+### Placeholdery i formatowanie dynamiczne
+
+Wynik testów integralności dla LT/CS/EL/IT (`items/npc/quests`):
+- ✅ `{...}` placeholder mismatch: `0`
+- ✅ `%s/%d/...` mismatch: `0`
+- ✅ Komendy w apostrofach `'keyword'` mismatch: `0`
+
+Interpretacja:
+- mechanika runtime (zmienne `{}`, liczby `%`, tokeny komend) jest zachowana poprawnie,
+- główny problem nie dotyczy formatu, tylko **pokrycia i jakości semantycznej**.
+
+Nowe TODO jakościowe:
+- ⬜ Dodać wave `lt_cs_el_it_domain_boost` z kolejnością: `items.desc` -> `npc` -> `quests`.
+- ⬜ Dodać twardy próg rolloutowy: dla LT/CS/EL/IT `items.desc >= 25%` przed przejściem na kolejne domeny.
+- ⬜ Dodać stały artefakt `translation_domain_audit_latest.json` (per-lang/per-domain: total/genuine/en_copy/[EN]/placeholder mismatches).
+
 ## 0c. Audyt jakości RU/PT/FR/RO per domena (2026-02-14 11:45 UTC)
 
 ### Podsumowanie audytu
@@ -88,7 +120,7 @@
 5. ⬜ **RU priorytetyzacja**: Dodać RU do batch priorytetowy na domeny: npc, questlog, books, monsters
 6. ⬜ **RO priorytetyzacja**: RO ma 0 genuine w 4/6 domen — pilne
 
-### Statystyki napraw (2026-02-14)
+### Statystyki napraw — Fala 1 (2026-02-14)
 
 | Naprawa | Zakres | Ilość |
 |---------|--------|-------|
@@ -119,20 +151,20 @@
 - **Wzorzec**: EN `unknown` → PT `unkNãown`, EN `snowman` → PT `sNãowman`, EN `minotaur` → PT `miNãotaur`
 - **Przyczyna**: Worker/GT wstawia `Nã` w środek angielskich słów zamiast tłumaczyć — prawdopodobnie artefakt Google Translate lub SIMPLE_TRANSLATIONS
 - **Klasyfikacja**: Tekst jest niezdatny do użycia w grze
-- **Akcja**: ⬜ S19 `broken_diacritics_insertion` — wykryj `[a-z]N[ãõ][a-z]` w tłumaczeniach
-- **Naprawa**: Te klucze powinny zostać zresetowane do `[EN]` prefix i ponownie przetłumaczone
+- **Akcja**: ✅ S19 `broken_diacritics_insertion` — wykrywa `[a-z]N[ãõ][a-z]` w tłumaczeniach — WDROŻONA
+- **Naprawa**: ✅ 535 kluczy PT zresetowanych do `[EN]` prefix (2026-02-14 12:45 UTC)
 
 #### P9-CRIT: FR items — partial word-by-word mix EN/FR (3 018 przypadków)
 - **Wzorzec**: EN `pile of bones` → FR `pile de bones`, EN `book of necromantic rituals` → FR `livre de necromantic rituals`
 - **Przyczyna**: Worker tłumaczy tylko przyimki/artykuły, zostawiając nazwy angielskie
 - **Klasyfikacja**: 2 513 items z >50% słów angielskich; 6 606 w pełni przetłumaczonych
-- **Akcja**: ⬜ S20 `partial_translation_mix` — wykryj genuine z >50% słów EN w tłumaczeniu Latin-script
-- **Naprawa**: Klucze z >70% EN → reset do `[EN]` i retranslate
+- **Akcja**: ✅ S20 `partial_translation_mix` — wykrywa genuine z >70% słów EN w tłumaczeniu Latin-script — WDROŻONA
+- **Naprawa**: ✅ 5 889 kluczy z >70% EN → reset do `[EN]` across 30 Latin-script langs (2026-02-14 15:00 UTC). Top: es/items(1314), es/questlog(612), fr/items(549), fr/html(295)
 
 #### P10-CRIT: RU items — 384 latin-only "tłumaczenia" (brak cyrylicy)
 - **Wzorzec**: EN `bunch of ripe rice` → RU `bunch ripe rice` (100% łacińskie słowa zamiast cyrylicy)
 - **Pokrywa się z**: P1 (trimmed_en_copy), ale 384 > 346 bo obejmuje też inne wzorce
-- **Akcja**: ✅ S18 `trimmed_en_copy` już wykrywa większość; reszta to identical-like
+- **Akcja**: ✅ S18 `trimmed_en_copy` już wykrywa. Dodatkowa naprawa: reset 697 latin-only kluczy w 5 Cyrillic langs → `[EN]` (2026-02-14 15:00 UTC). Top: ru/items(384), ru/monsters(45)
 
 #### P11-HIGH: RO items — wzorzec "mort" (2 678 przypadków)
 - **Wzorzec**: EN `dead gnarlhound` → RO `gnarlhound mort`; EN `dead frost giant` → RO `frost giant mort`
@@ -142,10 +174,11 @@
 
 #### P12-HIGH: NPC empty translations — 6 100+ kluczy puste we WSZYSTKICH językach
 - **Zakres**: RU=6 100, PT=6 094, FR=6 094, RO=6 144 pustych wartości (`""`) w `npc.json`
-- **Przyczyna**: Worker wpisał `""` zamiast skopiować EN lub oznaczyć `[EN]` — te klucze "zniknęły"
-- **Klasyfikacja**: Game-breaking — NPC nie wyświetli żadnego tekstu gracze
-- **Akcja**: ⬜ S21 `empty_value` — wykryj klucze z pustą wartością gdy EN ma treść
-- **Naprawa natychmiastowa**: Przywrócić EN tekst dla pustych kluczy NPC (fill empty → copy EN)
+- **Przyczyna**: Import ChatGPT ZIP (nie worker — worker nigdy nie zapisuje pustego `""`)
+- **Klasyfikacja**: Game-breaking — NPC nie wyświetli żadnego tekstu graczowi
+- **Akcja**: ✅ S21 `empty_value` — WDROŻONA w `detect_suspicious()`
+- **Naprawa natychmiastowa**: ✅ 316 226 pustych kluczy przywróconych do EN tekst (2026-02-14 12:45 UTC)
+- **Prewencja**: ✅ Empty-guard w `auto_translate_keys()` — defense-in-depth przed JSON save (2026-02-14 15:30 UTC)
 
 #### P13-MED: FR items — duplikacja słów (3 przypadki)
 - **Wzorzec**: `clé clé argentée` (duplikacja "clé")
@@ -173,13 +206,28 @@
 
 ### Priorytet napraw — Fala 2
 
-| # | Naprawa | Krit. | Klucze | Akcja |
-|---|---------|-------|--------|-------|
-| 1 | P12: NPC empty → fill EN | CRIT | ~24 400 | Przywróć EN tekst dla pustych NPC |
-| 2 | P8: PT broken diacritics `Nã` | CRIT | 429 | Reset → `[EN]` + retranslate |
-| 3 | P9: FR partial mix >70% EN | HIGH | ~1 500 | Reset → `[EN]` + retranslate |
-| 4 | S19-S21: nowe reguły detekcji | HIGH | — | Dodać w `detect_suspicious()` |
-| 5 | P11: RO "mort" pattern | MED | 2 678 | Rozważyć — gramatycznie poprawne |
+| # | Naprawa | Krit. | Klucze | Status |
+|---|---------|-------|--------|--------|
+| 1 | P12: NPC empty → fill EN | CRIT | 316 226 | ✅ Done (2026-02-14 12:45) |
+| 2 | P8: PT broken diacritics `Nã` | CRIT | 535 | ✅ Done (2026-02-14 12:45) |
+| 3 | P9: partial mix >70% EN (30 langs) | HIGH | 5 889 | ✅ Done (2026-02-14 15:00) |
+| 4 | P10: latin-only Cyrillic (5 langs) | CRIT | 697 | ✅ Done (2026-02-14 15:00) |
+| 5 | S19-S21: nowe reguły detekcji | HIGH | — | ✅ Done (2026-02-14 12:45) |
+| 6 | Empty-guard defense-in-depth | HIGH | — | ✅ Done (2026-02-14 15:30) |
+| 7 | P11: RO "mort" pattern | MED | 2 678 | ⬜ Gramatycznie poprawne — rozważyć |
+
+### Statystyki napraw — Fala 2 (2026-02-14)
+
+| Naprawa | Zakres | Ilość |
+|---------|--------|-------|
+| NPC empty → EN text | 51 języków × 8 plików | 316 226 |
+| PT broken diacritics → `[EN]` | PT × `items.json` | 535 |
+| Partial mix >70% EN → `[EN]` | 30 Latin-script langs | 5 889 |
+| Latin-only Cyrillic → `[EN]` | 5 Cyrillic langs | 697 |
+| S19 `broken_diacritics_insertion` | `detect_suspicious()` | nowa reguła |
+| S20 `partial_translation_mix` | `detect_suspicious()` | nowa reguła |
+| S21 `empty_value` | `detect_suspicious()` | nowa reguła |
+| Empty-guard before JSON save | `auto_translate_keys()` | defense-in-depth |
 
 ## 0b. Update wykonania (2026-02-14 11:20 UTC) — per-lang spelling S15-S17 + per-file reconcile
 

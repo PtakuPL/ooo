@@ -3,12 +3,11 @@
   "script_group": "latin",
   "total_keys": 53586,
   "translated": 30912,
-  "identical_to_en": 23869,
+  "identical_to_en": 29864,
   "placeholder_keys": 20519,
   "coverage_pct": 57.7,
-  "issues_total": 6122,
+  "issues_total": 9,
   "issues_by_type": {
-    "V3_empty": 6113,
     "V1_placeholder_mismatch": 7,
     "V4_artifact": 1,
     "V5_pipe_mismatch": 1
@@ -17,9 +16,9 @@
     "CRITICAL": 8,
     "HIGH": 1,
     "MEDIUM": 0,
-    "LOW": 6113
+    "LOW": 0
   },
-  "score": 98.9,
+  "score": 99.9,
   "worst_keys": [
     {
       "key": "scripts.actions_rewards.msg_1",
@@ -74,81 +73,15 @@
       "category": "achievements",
       "type": "V4_artifact",
       "severity": "HIGH"
-    },
-    {
-      "key": "npc.a_majestic_warwolf.say_1",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_majestic_warwolf.say_2",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_prisoner.say_12",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_prisoner.say_3",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_prisoner.say_4",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_prisoner.say_5",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_prisoner.say_6",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_prisoner.say_7",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_prisoner.say_8",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_prisoner.say_9",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_restless_soul.multi_1",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
     }
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 467,
+    "issues_total": 410,
     "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 67,
-    "auto_fix_applied": 59
+    "length_ratio": 10,
+    "auto_fix_applied": 57
   },
-  "validated_at": "2026-02-14T11:00:35.855006Z"
+  "validated_at": "2026-02-14T11:23:54.921624Z"
 }

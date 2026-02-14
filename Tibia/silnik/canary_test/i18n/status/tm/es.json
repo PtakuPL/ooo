@@ -135982,5 +135982,1053 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-14T11:03:50.155186Z"
+  },
+  "npc.sandomo.multi_6": {
+    "src_hash": "ceebc56fa41bbb405e4205477acd23ef",
+    "text": "del oro de la justa inquisición. te has ganado",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:01.433646Z"
+  },
+  "npc.sandomo.multi_7": {
+    "src_hash": "007e35be3a8786ffd6e3d3ff1d9acafe",
+    "text": "de oro en total. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:06.688355Z"
+  },
+  "npc.sandomo.multi_8": {
+    "src_hash": "962d70240980a55a49f6a92abbd4971e",
+    "text": "¿Quieres que agregue esta cantidad a mis libros? Sin embargo, esto también restablecerá sus registros actuales, ¿y?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:06.689219Z"
+  },
+  "npc.sandomo.multi_9": {
+    "src_hash": "4af37fd8a452021520b88319d3b06511",
+    "text": "Muy bien, entonces mezclaste y entregaste",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:06.689636Z"
+  },
+  "npc.sandomo.say_1": {
+    "src_hash": "1cfebb8d02012ce5ff2a2d508523146f",
+    "text": "Tienes {} oro de la inquisición registrado en mi libro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:06.690100Z"
+  },
+  "npc.sandomo.say_10": {
+    "src_hash": "0824c3097ae5640f9d227b952d373204",
+    "text": "El hermano Maun es un miembro valioso de Inquisition. Él te ayudará con los suministros. Siempre que puedas compensarlo, por supuesto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:06.691040Z"
+  },
+  "npc.sandomo.say_2": {
+    "src_hash": "ec3d48580e807a6afc3dcda0664b91a1",
+    "text": "Ah, sí, actualmente tienes {} de oro de la Inquisición ganado con justicia en mi libro. 100 de oro de la Inquisición equivalen a un racimo. ¿Cuántos clusters quieres a cambio?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:12.321226Z"
+  },
+  "npc.sandomo.say_3": {
+    "src_hash": "6b1349b7b968695225abadf4fc67060c",
+    "text": "No tienes suficiente oro de la Inquisición para eso, hasta ahora puedes pedir hasta {} grupos.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:12.329536Z"
+  },
+  "npc.sandomo.say_4": {
+    "src_hash": "30a73a5a17cd2a7b6a67de2633247be2",
+    "text": "Ahí estás. Ahora registro {} oro de la inquisición tuyo en mi libro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:12.333315Z"
+  },
+  "npc.sandomo.say_6": {
+    "src_hash": "ea87714bafa2d8ffac5152ef80625ca0",
+    "text": "Parece que todavía no tienes suficiente oro de la Inquisición para intercambiar por racimos, como está registrado en mi libro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:12.334591Z"
+  },
+  "npc.sandomo.say_7": {
+    "src_hash": "3e8d844a2d6863e4fc20a0de7f6d5491",
+    "text": "Deberías decirme un número real.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:12.335281Z"
+  },
+  "npc.sandomo.say_9": {
+    "src_hash": "9f6647a4786d27647ee9f3be04466736",
+    "text": "Dirígete con el hermano Maun si necesitas suministros básicos. Él le ayudará, por una pequeña tarifa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:17.692343Z"
+  },
+  "npc.sandra.farewell_msg_1": {
+    "src_hash": "28303017283c4570ab44b346b5acad09",
+    "text": "Adiós, |PLAYERNAME|, vuelve pronto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:17.692790Z"
+  },
+  "npc.sandra.greet_msg_1": {
+    "src_hash": "e2cbefebb7df7ded756fc5f75b0f26f5",
+    "text": "Hola |PLAYERNAME|, bienvenido al fluido y poción {shop} de Edron.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:17.693295Z"
+  },
+  "npc.sandra.multi_1": {
+    "src_hash": "0c9d48a589ac8401c917bc3070561380",
+    "text": "La academia Edron ha introducido un sistema de bonificación. Cada vez que deposites 100 viales sin reclamar el dinero, recibirás un billete de lotería. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:17.693891Z"
+  },
+  "npc.sandra.multi_2": {
+    "src_hash": "65a79ecb9ac91c43f04170bc08383111",
+    "text": "Algunos de estos billetes de lotería te otorgarán un accesorio de cinturón de poción especial, si me lo traes. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:17.694562Z"
+  },
+  "npc.sandra.multi_3": {
+    "src_hash": "5d384249a97e0ba9b0e93be79ebe1a73",
+    "text": "Si te unes al sistema de bonificación ahora, cada vez que me traigas 100 o más viales te preguntaré si reclamas tu depósito o si quieres un billete de lotería. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:23.379074Z"
+  },
+  "npc.sandra.multi_4": {
+    "src_hash": "f5dd17ad5adcd058571f1ecf8f7f0011",
+    "text": "Por supuesto, puedes abandonar o unirte al sistema de bonificación en cualquier momento con solo pedirme el 'bonus'. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:23.379769Z"
+  },
+  "npc.sandra.multi_5": {
+    "src_hash": "da4862f63fe2f0416f52ec74dc556dd8",
+    "text": "¿Le gustaría unirse al sistema de bonificación ahora?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:23.380228Z"
+  },
+  "npc.sandra.say_1": {
+    "src_hash": "ab64ddb1567cc95cc784bbddc8d505a7",
+    "text": "Tenemos ahora mismo una oferta especial para depositar viales. ¿Estás interesado en escucharlo?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:23.380788Z"
+  },
+  "npc.sandra.say_10": {
+    "src_hash": "3a8587250126a0aeef4e4f10ab426d8c",
+    "text": "Lo sentimos, pero no tienes tu billete de lotería contigo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:23.381226Z"
+  },
+  "npc.sandra.say_11": {
+    "src_hash": "e2c9cc2f6385b5e5cad2e933aa655762",
+    "text": "Finalmente. No sabes lo difícil que es mantener algo en secreto aquí. ¿Y me trajiste todas las monedas de cristal que pedí?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:28.517451Z"
+  },
+  "npc.sandra.say_2": {
+    "src_hash": "dd25f0fc1fd0fed8987d0f2bc0bf3587",
+    "text": "¿Le gustaría obtener un billete de lotería en lugar del depósito de sus viales?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:28.518014Z"
+  },
+  "npc.sandra.say_3": {
+    "src_hash": "503bcb8b05e8631125e122cb8633c94a",
+    "text": "¿Estás aquí para reclamar un premio?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:28.518475Z"
+  },
+  "npc.sandra.say_4": {
+    "src_hash": "90df225394b8c89ee5bc931ad103c003",
+    "text": "Pssht, no tan fuerte. ¿Así que te han enviado a buscar... las cosas?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:28.518984Z"
+  },
+  "npc.sandra.say_5": {
+    "src_hash": "e048aa02bc29f84bd3b1d9d071d7de97",
+    "text": "¿¿Qué?? ¡¿Cómo te atreves?! Soy un hechicero de la academia más reconocida sobre la faz de este mundo. ¿Crees que unos piojos piratas podrían asustarme? ¡Piérdase! ¡Ahora! ¡No tendré más tratos con gente como tú!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:28.519855Z"
+  },
+  "npc.sandra.say_6": {
+    "src_hash": "39407dfc02e1f1ddb596a29c2f608a0d",
+    "text": "¡Excelente! Te he registrado en nuestro sistema de bonificación. ¡A partir de ahora, tendrás la oportunidad de ganar el complemento del cinturón de pociones!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:33.525652Z"
+  },
+  "npc.sandra.say_7": {
+    "src_hash": "4ee37fb5987b62bdef651363dfa8da28",
+    "text": "¡Muy bien, muchas gracias! Aquí tienes tu billete de lotería, buena suerte. ¿Le gustaría depositar más viales de esa manera?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:33.526335Z"
+  },
+  "npc.sandra.say_8": {
+    "src_hash": "67b20c282fb437348a3c88af529a7de6",
+    "text": "Lo sentimos, pero no tienes 100 frascos o viales vacíos del MISMO tipo y, por lo tanto, no calificas para la lotería. ¿Te gustaría depositar los viales que tienes como de costumbre y recibir 5 de oro por vial?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:33.527207Z"
+  },
+  "npc.sandra.say_9": {
+    "src_hash": "fdcec32893c0afb4291eaf6317446ee2",
+    "text": "¡Felicidades! Aquí, a partir de ahora podrás usar nuestro precioso cinturón de pociones como accesorio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:33.527793Z"
+  },
+  "npc.sandra.sendtrade_msg_1": {
+    "src_hash": "f7debf1ec097943365748af6313ee4c9",
+    "text": "Por supuesto, simplemente navega por mis productos. Por cierto, si quieres unirte a nuestro sistema de bonificación por depósito de matraces y viales, tienes que contarme sobre eso {deposit}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:33.528589Z"
+  },
+  "npc.sandra.stdmod_1": {
+    "src_hash": "9e101e4dcfc292e6af40f1f04dc189dc",
+    "text": "¡Excelentes pociones espirituales, así como pociones de salud y maná en diferentes tamaños!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:37.264289Z"
+  },
+  "npc.sandra.voice_1": {
+    "src_hash": "9e101e4dcfc292e6af40f1f04dc189dc",
+    "text": "¡Excelentes pociones espirituales, así como pociones de salud y maná en diferentes tamaños!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:37.264818Z"
+  },
+  "npc.sandra.voice_2": {
+    "src_hash": "ab3bdc15c40ef32eaff540bd4cf0c1e9",
+    "text": "Si necesita fluidos alquímicos como limo y sangre, consígalos aquí.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:37.265323Z"
+  },
+  "npc.sandra.walkaway_msg_1": {
+    "src_hash": "28303017283c4570ab44b346b5acad09",
+    "text": "Adiós, |PLAYERNAME|, vuelve pronto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:37.265792Z"
+  },
+  "npc.sane_mage.greet_msg_1": {
+    "src_hash": "2fb3ec7c1227a092ce335829da77716c",
+    "text": "...eh... ¿hola? Sí...? Bueno, si... si tienes alguna pregunta... ni siquiera estoy aquí.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:37.266515Z"
+  },
+  "npc.sane_mage.multi_1": {
+    "src_hash": "b60e46811407d2c47327ffd9a7707e98",
+    "text": "Mis experimentos, mi trabajo, pero no por el momento. Estoy de vacaciones. Tratar de alejarse de ello... no está del todo bien. ¿Por qué... por qué estoy haciendo esto de todos modos?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:42.823561Z"
+  },
+  "npc.sane_mage.multi_2": {
+    "src_hash": "22566b07cd56f25406cbf99aaa6cf209",
+    "text": "¡NO! No debería hablar así, simplemente... no debería. Ese ni siquiera soy YO. Yo... yo solía estar ENOJADO. ¡UN CIENTÍFICO LOCO! ¡EL MEJOR! EL... el... ¡PEOR! ¡UN SUPERLATIVO! Ah, no importa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:42.824379Z"
+  },
+  "npc.sane_mage.multi_3": {
+    "src_hash": "a6794a243456a43d15f48e12300de0be",
+    "text": "No... aunque ahora mismo. Actualmente estoy... en {vacation}. {Vacation}, sí. Todos mis experimentos salieron mal. EQUIVOCADO. Todo. Lo intenté todo pero aún así.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:42.825128Z"
+  },
+  "npc.sane_mage.multi_4": {
+    "src_hash": "1af19904d9ccbba831f81f97efab4d3f",
+    "text": "Siempre es igual, el {fungus} crece, estoy EMOCIONADA y… bueno… ¡QUAAAAAM! ¡Simplemente EXPLOTA! Se esparce, lo cubre todo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:42.826041Z"
+  },
+  "npc.sane_mage.multi_5": {
+    "src_hash": "b68e7434375f67f4478b631fbe592559",
+    "text": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:42.827076Z"
+  },
+  "npc.sane_mage.multi_6": {
+    "src_hash": "95aa32734f37c04dd88a488895e0813c",
+    "text": "Sin embargo, a veces la gente viene y simplemente... ¡DESTRUYELOS! ¡¡Destruye mi trabajo!! ¿Por qué? ¿Esas personas me ayudan a quitar la baba? ¡NO! De nada.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:47.522597Z"
+  },
+  "npc.sane_mage.multi_7": {
+    "src_hash": "c7c5dd08755081e653b4d3b5c6b69c36",
+    "text": "Lo único que hacen es arruinar mis experimentos, mis perfectas condiciones de prueba. ¡Me pone simplemente FURIOSO! Y vaya que me pongo FURIOSO, te lo digo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:47.524127Z"
+  },
+  "npc.sane_mage.multi_8": {
+    "src_hash": "c7c5dd08755081e653b4d3b5c6b69c36",
+    "text": "Lo único que hacen es arruinar mis experimentos, mis perfectas condiciones de prueba. ¡Me pone simplemente FURIOSO! Y vaya que me pongo FURIOSO, te lo digo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:47.525383Z"
+  },
+  "npc.sane_mage.stdmod_1": {
+    "src_hash": "b717ccd3bcf9aaf784d4ef84d72feea2",
+    "text": "¿Mmm? ¿Cuál es el significado de todo esto?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:47.526105Z"
+  },
+  "npc.sane_mage.stdmod_2": {
+    "src_hash": "12f7d5fc81a96229af960c47c9b5237e",
+    "text": "¿En qué me he convertido? ¿Qué es el slime si no es para todos?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:47.527020Z"
+  },
+  "npc.sane_mage.stdmod_3": {
+    "src_hash": "289ce5322a2ba3f5866b03195a51bef5",
+    "text": "¡Limo! ¡En todos lados! ¡TIEMPO DE BABA! ¿O no?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:52.285758Z"
+  },
+  "npc.sane_mage.stdmod_4": {
+    "src_hash": "ed51f1479305e11f744f8b75c29f8811",
+    "text": "YO SOY EL... Quiero decir... Yo soy - ¿Qué es un mago, si no es {mad}? Si no está... ¿furioso? Estoy... simplemente estoy cuerdo. Un mago cuerdo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:52.286589Z"
+  },
+  "npc.sane_mage.stdmod_5": {
+    "src_hash": "5dd1b0ba453dd9254438ac68743981ae",
+    "text": "No estoy enojado... YO- SÍ, ese es todo el problema, ¿no? ¿Qué está pasando, qué me está pasando? Ya ni siquiera lo sé.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:52.287297Z"
+  },
+  "npc.sane_mage.stdmod_6": {
+    "src_hash": "5c5327e2a98d6604da42dcbb9f7a428e",
+    "text": "Sí, bueno... me estoy tomando un descanso. Tomará algún tiempo. No sé por cuánto tiempo solo... quiero alejarme de todo esto por un tiempo, eso es todo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:52.288113Z"
+  },
+  "npc.sane_mage.voice_1": {
+    "src_hash": "b717ccd3bcf9aaf784d4ef84d72feea2",
+    "text": "¿Mmm? ¿Cuál es el significado de todo esto?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:52.288645Z"
+  },
+  "npc.sane_mage.voice_2": {
+    "src_hash": "12f7d5fc81a96229af960c47c9b5237e",
+    "text": "¿En qué me he convertido? ¿Qué es el slime si no es para todos?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:57.206488Z"
+  },
+  "npc.sane_mage.voice_3": {
+    "src_hash": "289ce5322a2ba3f5866b03195a51bef5",
+    "text": "¡Limo! ¡En todos lados! ¡TIEMPO DE BABA! ¿O no?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:57.206966Z"
+  },
+  "npc.santa_claus.say_1": {
+    "src_hash": "d77398c9afede12aae08503378eecac8",
+    "text": "No puedes conseguir otro regalo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:57.207334Z"
+  },
+  "npc.santiago.greet_msg_1": {
+    "src_hash": "4e542a5b6e0edb17644fe079328fc802",
+    "text": "Hola |PLAYERNAME|, ¡encantado de verte en Rookgaard! Te vi pasar y me pregunté si podrías ayudarme. ¿Podrías? ¡Por favor, diga {yes}!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:57.208125Z"
+  },
+  "npc.santiago.greet_msg_2": {
+    "src_hash": "108915dcf6b068759c6b9022677fcfaf",
+    "text": "¡Oh, |PLAYERNAME|, eres tú otra vez! Probablemente sea de mala educación molestar a un aventurero ocupado como tú, pero realmente necesito ayuda. ¡Por favor, diga {yes}!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:10:57.208893Z"
+  },
+  "npc.santiago.greet_msg_3": {
+    "src_hash": "e48d26dc86da3f386957a0ff15e948c1",
+    "text": "¡Bienvenido de nuevo, |PLAYERNAME|! Ahh, encontraste mi cofre. Déjame echarte un vistazo. ¿Te pusiste ese abrigo, {yes}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:11:02.634374Z"
+  },
+  "npc.santiago.greet_msg_4": {
+    "src_hash": "26a59fa720c3556000424984dc4c436a",
+    "text": "¡Oye, quiero darte un arma gratis! ¡No deberías negarte a eso, de hecho deberías decir '{yes}'!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:11:02.635042Z"
+  },
+  "npc.santiago.greet_msg_5": {
+    "src_hash": "62b533ad76e574d9d617dd8c0c907fed",
+    "text": "¡Buen trabajo! ¡Por eso te otorgaré 100 puntos de experiencia! Ah, ¿qué fue eso? Creo que avanzaste un nivel, {right}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:11:02.635683Z"
+  },
+  "npc.santiago.greet_msg_6": {
+    "src_hash": "43394973219b47c2fbda827c8695008e",
+    "text": "¡Bienvenido de nuevo! ¿Dónde estábamos...? Ah, claro, ¡te pregunté si viste tu 'level up'! ¿Lo hiciste, {right}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:11:02.636315Z"
+  },
+  "npc.santiago.multi_1": {
+    "src_hash": "f972b4721e239d73900fcbd03306ade0",
+    "text": "Toma, toma este pez que yo mismo pesqué. Encuéntralo en tu inventario, luego 'Use' para comértelo. Esto poco a poco recuperará su salud. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:11:02.637034Z"
+  },
+  "npc.santiago.multi_2": {
+    "src_hash": "3478a771de442f90381fb4e5c2bf14ce",
+    "text": "Por cierto: si tus puntos de vida están por debajo de 150, te regenerarás a 150 puntos de vida después de unos segundos, siempre y cuando no tengas hambre, estés fuera de una zona de protección y no tengas una señal de batalla. {Easy}, ¿sí?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:11:07.983372Z"
+  },
+  "npc.santiago.say_1": {
+    "src_hash": "7d9f038b68ac1fa31e3eb4753cb5d5df",
+    "text": "Ah, ¿qué pasa? Como dije, simplemente ve a mi casa al sur de aquí y sube las escaleras. Luego regresa y continuaremos nuestra charla.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:11:07.984059Z"
+  },
+  "npc.santiago.say_10": {
+    "src_hash": "2e74e394efc6102bf2b568505f70f3a9",
+    "text": "¡Eso es simplemente genial! Ahora tienes más puntos de salud, puedes cargar más cosas y caminar más rápido. Hablando de salud, ¿te consiguieron {hurt} esas cucarachas?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:11:07.984819Z"
+  },
+  "npc.santiago.say_11": {
+    "src_hash": "355a29f4c9010b1fee72c35195520a9b",
+    "text": "¿En realidad? Te ves bien para mí, debe haber sido sólo un rasguño. Bueno, hay monstruos mucho más peligrosos que las cucarachas. Echa un vistazo a tu barra de estado. Tienes 155 de salud en este momento. ¿Te mostraré algo, {yes}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:11:07.985780Z"
+  },
+  "npc.santiago.say_12": {
+    "src_hash": "7c20a3d84fe92dcd66afca39449278be",
+    "text": "Esta es una lección importante para mí, un luchador veterano y experimentado. ¡Toma esto! Mire su barra de estado nuevamente. Como puedes ver, has perdido salud. Ahora te diré cómo curar eso, ¿{yes}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:11:07.986670Z"
+  },
+  "npc.santiago.say_13": {
+    "src_hash": "360ca4c33a56f11b676ba4d3353e6d81",
+    "text": "Sabía que lo entenderías de inmediato. Puedes saquear comida de muchas criaturas, como ciervos y conejos. Puedes encontrarlos en el bosque cercano. Por cierto… ¿has visto {Zirella}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:11:12.496087Z"
+  },
+  "npc.santiago.say_14": {
+    "src_hash": "ca36ce67256fb474fb1019e0c7a2c938",
+    "text": "¿¿En realidad?? Estaba buscando a alguien que la ayudara. Tal vez podrías ir a verla. Vive justo al este y montaña abajo. Entonces, ¡gracias de nuevo y {bye} por ahora!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:11:12.497132Z"
+  },
+  "npc.santiago.say_15": {
+    "src_hash": "7c20a3d84fe92dcd66afca39449278be",
+    "text": "Esta es una lección importante para mí, un luchador veterano y experimentado. ¡Toma esto! Mire su barra de estado nuevamente. Como puedes ver, has perdido salud. Ahora te diré cómo curar eso, ¿{yes}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:11:12.498007Z"
+  },
+  "npc.santiago.say_16": {
+    "src_hash": "260cabe7328bed10ec6b50bbba2763e3",
+    "text": "Sabía que podía contar contigo. Toma, toma esta buena y resistente arma en tu mano. Luego regresa a mi casa y baja la escalera. ¡Buena suerte y {bye} por ahora!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:11:12.498785Z"
+  },
+  "npc.santiago.say_17": {
+    "src_hash": "360ca4c33a56f11b676ba4d3353e6d81",
+    "text": "Sabía que lo entenderías de inmediato. Puedes saquear comida de muchas criaturas, como ciervos y conejos. Puedes encontrarlos en el bosque cercano. Por cierto… ¿has visto {Zirella}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:11:12.499593Z"
+  },
+  "npc.santiago.say_2": {
+    "src_hash": "d11ce37474c99a404e4d73e719a748c1",
+    "text": "Se me olvidó decirte algo. Por supuesto que necesito pruebas de que mataste cucarachas. Por favor tráeme al menos 3 de sus piernas. ¡Buena suerte!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:11:16.631234Z"
+  },
+  "npc.santiago.say_3": {
+    "src_hash": "d11ce37474c99a404e4d73e719a748c1",
+    "text": "Se me olvidó decirte algo. Por supuesto que necesito pruebas de que mataste cucarachas. Por favor tráeme al menos 3 de sus piernas. ¡Buena suerte!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:11:16.631982Z"
+  },
+  "npc.santiago.say_4": {
+    "src_hash": "a37385f458cd83c4b75d6ef1d9a8af7c",
+    "text": "Genial, por favor ve a mi casa, solo unos pasos al sur de aquí. Arriba, en mi habitación, encontrarás un cofre. ¡Puedes guardar lo que encuentres dentro! Vuelve después de recibirlo y salúdame para hablar conmigo nuevamente. {Yes}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:11:16.632916Z"
+  },
+  "npc.santiago.say_5": {
+    "src_hash": "e46ed8b32c2cc3e9e34895672b5aa2dd",
+    "text": "¡Está bien! ¿Ves el botón llamado 'Quest Log'? Allí podrás comprobar el estado de misiones, como ésta. {Bye} ¡por ahora!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:11:16.633599Z"
+  },
+  "npc.santiago.say_6": {
+    "src_hash": "0ae51328a809ca1c535e1c53468c29f4",
+    "text": "Ah, no hace falta que digas nada, veo que te queda perfecto. Ahora llegamos a la parte divertida, ¡vamos a armarte! ¿Estás listo para un poco de {action}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:11:16.634384Z"
+  },
+  "npc.santiago.say_7": {
+    "src_hash": "80a7631b9db789a144aa4c0e5fafa3e0",
+    "text": "Oh, aún no lo usas apropiadamente. Debes arrastrarlo y soltarlo desde tu bolso a la ranura de tu armadura. Aquí, déjame mostrártelo de nuevo. ¿Es un poco {clearer} ahora?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:11:22.832335Z"
+  },
+  "npc.santiago.say_8": {
+    "src_hash": "607fec834efe35c5e9f1b2513c20643d",
+    "text": "Oh no, ¿perdiste mi abrigo? Bueno, qué suerte tienes, tengo uno de repuesto aquí. ¡No lo vuelvas a perder! Ahora llegamos a la parte divertida, ¡vamos a armarte! ¿Estás listo para un poco de {action}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:11:22.833240Z"
+  },
+  "npc.santiago.say_9": {
+    "src_hash": "260cabe7328bed10ec6b50bbba2763e3",
+    "text": "Sabía que podía contar contigo. Toma, toma esta buena y resistente arma en tu mano. Luego regresa a mi casa y baja la escalera. ¡Buena suerte y {bye} por ahora!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:11:22.834005Z"
+  },
+  "npc.santiago.voice_1": {
+    "src_hash": "b1e342f3631ae91e8d16ec795cc2dd09",
+    "text": "Pequeñas bestias malvadas... Espero que alguien me ayude a luchar contra ellas.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:11:22.834614Z"
+  },
+  "npc.santiago.voice_3": {
+    "src_hash": "561874fad9b518664503bc8266e19f8d",
+    "text": "¡Ey! Tú estás ahí, ¿podrías ayudarme con una pequeña búsqueda? ¡Solo di 'hi' o 'hello' para hablar conmigo!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:11:22.835257Z"
+  },
+  "monster.spyrat_facing_west.desc": {
+    "src_hash": "a9dced31dacd6129a040df285f7e18e7",
+    "text": "You see spyrat",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T11:25:12.680003Z"
+  },
+  "monster.spyrat_facing_east.desc": {
+    "src_hash": "a9dced31dacd6129a040df285f7e18e7",
+    "text": "You see spyrat",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T11:25:12.689568Z"
+  },
+  "monster.spyrat_facing_north.desc": {
+    "src_hash": "a9dced31dacd6129a040df285f7e18e7",
+    "text": "You see spyrat",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T11:25:12.696596Z"
+  },
+  "monster.spyrat_facing_south.desc": {
+    "src_hash": "a9dced31dacd6129a040df285f7e18e7",
+    "text": "You see spyrat",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T11:25:12.703874Z"
+  },
+  "monster.old_bonelord.voice_2": {
+    "src_hash": "85f4505809d2b430e687c099ac4c0817",
+    "text": "¡Estou olhando para voce!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:25:14.402228Z"
+  },
+  "monster.old_bonelord.voice_4": {
+    "src_hash": "d00ceafd1f97838bc3fc3c6e60877889",
+    "text": "¡Voce tem o olhar!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:25:14.403224Z"
+  },
+  "monster.golden_servant_replica.desc": {
+    "src_hash": "d9541eddc1334370fd725415e38a9940",
+    "text": "una réplica de sirviente dorado",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:25:18.717557Z"
+  },
+  "monster.animated_snowman.desc": {
+    "src_hash": "98f6ff90b2ad9cfc4c835363fdcc09b9",
+    "text": "un muñeco de nieve animado",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:25:18.719169Z"
+  },
+  "monster.son_of_verminor.name": {
+    "src_hash": "a4b3604c5a94ecf44596273fccf95d45",
+    "text": "Hijo de Verminor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:25:23.719966Z"
+  },
+  "monster.son_of_verminor.desc": {
+    "src_hash": "780fe635adc3673196447f10e12c529d",
+    "text": "un hijo de alimañas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:25:23.720741Z"
+  },
+  "monster.shaper_matriarch.voice_1": {
+    "src_hash": "bcdd53fbe7ac81a842a75e3ed4445edf",
+    "text": "¡Tar Marra Zik Tazz!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:25:23.732947Z"
+  },
+  "monster.minotaur_bruiser.desc": {
+    "src_hash": "0d1f326db3467763972fa1fe6cb2fad0",
+    "text": "un matón minotauro",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:25:23.733895Z"
+  },
+  "monster.minotaur_guard.desc": {
+    "src_hash": "20aec1cd1af8cd17c4cb7d5490d47e42",
+    "text": "un guardia minotauro",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:25:23.744613Z"
+  },
+  "monster.minotaur_amazon.desc": {
+    "src_hash": "55da6d9f62f81077729eee088cbdb13b",
+    "text": "un minotauro amazona",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:25:28.504257Z"
+  },
+  "monster.minotaur_totem.desc": {
+    "src_hash": "8f55a055caee6015422ed955ced25d45",
+    "text": "un tótem de minotauro",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:25:28.504971Z"
+  },
+  "monster.minotaur_mage.desc": {
+    "src_hash": "ba76ac24dfb3df665258f580af755cec",
+    "text": "un mago minotauro",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:25:28.505662Z"
+  },
+  "monster.minotaur_poacher.desc": {
+    "src_hash": "ae4106527ccea544821e119ce4bc40bb",
+    "text": "un cazador furtivo de minotauros",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:25:28.510532Z"
+  },
+  "monster.chakoya_windcaller.voice_3": {
+    "src_hash": "d82851cc19d48d910be13928c33fdff9",
+    "text": "¡Mupí! Si siyoqua jinuma!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:25:28.512021Z"
+  },
+  "monster.minotaur_occultist.desc": {
+    "src_hash": "f4f4fbfa60682535e6d90f8205b4ded0",
+    "text": "un ocultista minotauro",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:25:33.272674Z"
+  },
+  "monster.minotaur_cult_zealot.name": {
+    "src_hash": "c6d0cc07c1a6c394cb8e76803a18ba57",
+    "text": "Fanático del culto del Minotauro",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:25:33.273047Z"
+  },
+  "monster.minotaur_cult_zealot.desc": {
+    "src_hash": "362726fc10e55f43348b2ec4fe84afc4",
+    "text": "un fanático del culto al minotauro",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:25:33.273399Z"
+  },
+  "monster.minotaur_cult_follower.name": {
+    "src_hash": "2c407009b19b2f0ef0d46c2a4e2e3174",
+    "text": "Seguidor del culto al Minotauro",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:25:33.273858Z"
+  },
+  "monster.minotaur_cult_follower.desc": {
+    "src_hash": "d67f9b74182c9a5f4f0f1529ab828f2d",
+    "text": "un seguidor del culto al minotauro",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:25:33.274554Z"
+  },
+  "monster.minotaur_archer.desc": {
+    "src_hash": "670825f085ad5d8a599f2ff3a805d139",
+    "text": "un arquero minotauro",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:25:37.146327Z"
+  },
+  "monster.minotaur_cult_prophet.name": {
+    "src_hash": "da244c536134aaf40fbd866b14e4ad9d",
+    "text": "Profeta del culto al Minotauro",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:25:37.146714Z"
+  },
+  "monster.minotaur_cult_prophet.desc": {
+    "src_hash": "1ce144ff60bdc01898e80194ec46ccb6",
+    "text": "un profeta del culto al minotauro",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:25:37.147104Z"
+  },
+  "monster.dworc_venomsniper.desc": {
+    "src_hash": "63ed456cd5df5e5cfcf5de4fb54f98bf",
+    "text": "un francotirador venenoso dworc",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:25:37.147431Z"
+  },
+  "monster.minotaur_invader.desc": {
+    "src_hash": "2fcc1540851bb69c5971b7da1b941172",
+    "text": "un minotauro invasor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:25:37.147753Z"
+  },
+  "monster.glooth_powered_minotaur.name": {
+    "src_hash": "dc2d82364c11d204f9cba07a3dbfa67c",
+    "text": "Minotauro propulsado por Glooth",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:25:41.908633Z"
+  },
+  "monster.glooth_powered_minotaur.desc": {
+    "src_hash": "33be1baea16ae2f39d4851e34eb97f22",
+    "text": "un minotauro impulsado por la oscuridad",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:25:41.909125Z"
+  },
+  "monster.minotaur_hunter.desc": {
+    "src_hash": "de511ca2769aa2b40e5946150f299c1f",
+    "text": "un cazador de minotauros",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:25:41.909422Z"
+  },
+  "monster.animated_rhino.name": {
+    "src_hash": "056e94112c574ef9c8fa6cd89849ec27",
+    "text": "Rinoceronte de piedra animado",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:25:41.909727Z"
+  },
+  "monster.animated_rhino.desc": {
+    "src_hash": "a2d878a60ed937fd934515ebe9f62d7f",
+    "text": "un rinoceronte de piedra animado",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:25:41.910043Z"
+  },
+  "monster.minotaur_idol.desc": {
+    "src_hash": "b12cee673418af3b5595f0417820247d",
+    "text": "un ídolo minotauro",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:25:45.849630Z"
+  },
+  "monster.charged_anomaly.desc": {
+    "src_hash": "ee6e4a652c42d34397704c52abb7f13b",
+    "text": "una anomalía cargada",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:25:45.849952Z"
+  },
+  "monster.lost_gnome.desc": {
+    "src_hash": "db4c898a666cc45bfbed6099c549a81f",
+    "text": "un gnomo perdido",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:25:45.850204Z"
+  },
+  "monster.gnome_pack_crawler.name": {
+    "src_hash": "b0f1fa858642799eaf8fb9a3edf56448",
+    "text": "Rastreador de paquete de gnomos",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:25:45.850593Z"
+  },
+  "monster.gnome_pack_crawler.desc": {
+    "src_hash": "8ef03da401b3e7da5beb1aca98ed1f04",
+    "text": "un rastreador de paquetes de gnomos",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:25:45.850936Z"
+  },
+  "monster.a_shielded_astral_glyph.name": {
+    "src_hash": "605d55083843cd977d72465571dbf1d2",
+    "text": "Un glifo astral protegido",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:25:51.153023Z"
+  },
+  "monster.a_shielded_astral_glyph.desc": {
+    "src_hash": "e7d6e59305a13aa9ee176353199e06a6",
+    "text": "un glifo astral protegido",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:25:51.153462Z"
+  },
+  "monster.the_distorted_astral_source.name": {
+    "src_hash": "5d5c1d2e90e421590b28e6d1559228c0",
+    "text": "La fuente astral distorsionada",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:25:51.154090Z"
+  },
+  "monster.the_distorted_astral_source.desc": {
+    "src_hash": "5d5c1d2e90e421590b28e6d1559228c0",
+    "text": "La fuente astral distorsionada",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:25:51.158995Z"
+  },
+  "monster.bound_astral_power.desc": {
+    "src_hash": "2f01614ff470c9ec0669b4bf4527a9b2",
+    "text": "un poder astral ligado",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:25:51.159715Z"
+  },
+  "monster.canopic_jar.desc": {
+    "src_hash": "2f971bcdb8390b6eba3a03ce3e3ec1c2",
+    "text": "un frasco canopo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:25:57.812953Z"
+  },
+  "monster.greater_canopic_jar.name": {
+    "src_hash": "37b0b50f7005876af8412fd365166166",
+    "text": "Jarra Canópica Mayor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:25:57.813390Z"
+  },
+  "monster.greater_canopic_jar.desc": {
+    "src_hash": "35a5f8a1abecc147ca114caa155999cd",
+    "text": "una jarra canópica más grande",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:25:57.813791Z"
+  },
+  "monster.depowered_minotaur.desc": {
+    "src_hash": "3800c44ff0dfc89616853877a54d3cf9",
+    "text": "un minotauro sin poderes",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:25:57.814133Z"
+  },
+  "monster.ravenous_beyondling.desc": {
+    "src_hash": "3a4e57e2f4a5626bc75bdfec59612f65",
+    "text": "un más allá voraz",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:25:57.814508Z"
+  },
+  "monster.stolen_knowledge_of_lifesteal.name": {
+    "src_hash": "97f68f24daae84ba86b33807b8840609",
+    "text": "Robado Knowledge de Lifesteal",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:26:21.791816Z"
+  },
+  "monster.stolen_knowledge_of_lifesteal.desc": {
+    "src_hash": "d4b2acf87ab30a34d1f1cc6376069484",
+    "text": "un conocimiento robado de robo de vida",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T11:26:21.793012Z"
   }
 }

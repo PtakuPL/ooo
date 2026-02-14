@@ -3,12 +3,11 @@
   "script_group": "latin",
   "total_keys": 53586,
   "translated": 23987,
-  "identical_to_en": 17607,
+  "identical_to_en": 21802,
   "placeholder_keys": 29425,
   "coverage_pct": 44.8,
-  "issues_total": 4310,
+  "issues_total": 9,
   "issues_by_type": {
-    "V3_empty": 4301,
     "V4_artifact": 4,
     "V1_placeholder_mismatch": 4,
     "V5_pipe_mismatch": 1
@@ -17,9 +16,9 @@
     "CRITICAL": 5,
     "HIGH": 4,
     "MEDIUM": 0,
-    "LOW": 4301
+    "LOW": 0
   },
-  "score": 99.0,
+  "score": 99.9,
   "worst_keys": [
     {
       "key": "scripts.actions_rewards.msg_1",
@@ -74,81 +73,15 @@
       "category": "quests",
       "type": "V4_artifact",
       "severity": "HIGH"
-    },
-    {
-      "key": "npc.example_merchant.news_1",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.example_merchant.news_2",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.example_merchant.special",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.example_merchant.trade",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.example_merchant_i18n.voice_2",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.example_merchant_i18n.voice_3",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.ezebeth.multi_1",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.ezebeth.multi_2",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.ezebeth.say_1",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.ezebeth.say_2",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.ezebeth.say_3",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
     }
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 440,
+    "issues_total": 415,
     "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 40,
-    "auto_fix_applied": 54
+    "length_ratio": 15,
+    "auto_fix_applied": 52
   },
-  "validated_at": "2026-02-14T10:57:42.793330Z"
+  "validated_at": "2026-02-14T11:17:03.907526Z"
 }

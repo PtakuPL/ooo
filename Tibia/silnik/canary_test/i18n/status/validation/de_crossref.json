@@ -4,12 +4,12 @@
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-14T10:57:42.784710Z",
-  "issues_total": 440,
+  "checked_at": "2026-02-14T11:17:03.898851Z",
+  "issues_total": 415,
   "issues_by_type": {
     "consistency_in_language": 0,
     "pl_reference_missing_translation": 400,
-    "length_ratio_crosscheck": 40
+    "length_ratio_crosscheck": 15
   },
   "consistency_issues": [],
   "pl_reference_issues": [
@@ -221,168 +221,6 @@
       "lang": "Orruk ah'tanri, anvi ra shuk ta"
     },
     {
-      "key": "book.otbm.presumably_the_last_of_its",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Presumably the last of its kind in Tibia.",
-      "pl": "Przypuszczalnie the last z jego, jej, ich, swój I. w Tibia.",
-      "lang": "Presumably the last of its kind in Tibia."
-    },
-    {
-      "key": "book.otbm.prison_isle_dont_enter_without",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Prison isle - don't enter without key!",
-      "pl": "Więzienie wyspa, ostrów - don't I. bez I.!",
-      "lang": "Prison isle - don't enter without key!"
-    },
-    {
-      "key": "book.otbm.private_forest_strictly_no_unauthorized",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Private forest - strictly no unauthorized hunting",
-      "pl": "I. las - wyłącznie Nie nieupoważniony, bez upoważnienia I.",
-      "lang": "Private forest - strictly no unauthorized hunting"
-    },
-    {
-      "key": "book.otbm.protected_area_dont_enter",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Protected Area! Don't Enter!",
-      "pl": "Chronić Obszar, region! Don't I.!",
-      "lang": "Protected Area! Don't Enter!"
-    },
-    {
-      "key": "book.otbm.puldraks_wisdom_about_elves_pt",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Puldraks wisdom about elves Pt. 5",
-      "pl": "Puldraks I. o elves WF, wychowanie fizyczne. 5",
-      "lang": "Puldraks wisdom about elves Pt. 5"
-    },
-    {
-      "key": "book.otbm.puldraks_wisdom_about_elves_pt_61744ff4",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Puldraks wisdom about elves Pt. 2",
-      "pl": "Puldraks I. o elves WF, wychowanie fizyczne. 2",
-      "lang": "Puldraks wisdom about elves Pt. 2"
-    },
-    {
-      "key": "book.otbm.puldraks_wisdom_about_elves_pt_627ae3c5",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Puldraks wisdom about elves Pt. 1",
-      "pl": "Puldraks I. o elves WF, wychowanie fizyczne. 1",
-      "lang": "Puldraks wisdom about elves Pt. 1"
-    },
-    {
-      "key": "book.otbm.puldraks_wisdom_about_elves_pt_d898bfe3",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Puldraks wisdom about elves Pt. 4",
-      "pl": "Puldraks I. o elves WF, wychowanie fizyczne. 4",
-      "lang": "Puldraks wisdom about elves Pt. 4"
-    },
-    {
-      "key": "book.otbm.puldraks_wisdom_about_elves_pt_ed852998",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Puldraks wisdom about elves Pt. 3",
-      "pl": "Puldraks I. o elves WF, wychowanie fizyczne. 3",
-      "lang": "Puldraks wisdom about elves Pt. 3"
-    },
-    {
-      "key": "book.otbm.puldraks_wisdom_about_minotaurs_pt",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Puldraks wisdom about minotaurs Pt. 3",
-      "pl": "Puldraks I. o miNietaurs WF, wychowanie fizyczne. 3",
-      "lang": "Puldraks wisdom about minotaurs Pt. 3"
-    },
-    {
-      "key": "book.otbm.puldraks_wisdom_about_orcs",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Puldraks wisdom about orcs",
-      "pl": "Puldraks I. o orcs",
-      "lang": "Puldraks wisdom about orcs"
-    },
-    {
-      "key": "book.otbm.puldraks_wisdom_about_orcs_393d2690",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Puldraks wisdom about orcs",
-      "pl": "Puldraks I. o orcs",
-      "lang": "Puldraks wisdom about orcs"
-    },
-    {
-      "key": "book.otbm.pure_blood_chamber_research_area",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Pure blood chamber. Research area.",
-      "pl": "Czysty I. I.. I. obszar, region.",
-      "lang": "Pure blood chamber. Research area."
-    },
-    {
-      "key": "book.otbm.push_your_opponent_in_the",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Push your opponent in the pitfalls",
-      "pl": "Push twój przeciwnik, oponent w the niebezpieczeństwo, pułapka",
-      "lang": "Push your opponent in the pitfalls"
-    },
-    {
-      "key": "book.otbm.put_the_opposite",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Put the ...........opposite....",
-      "pl": "Put the...........I.....",
-      "lang": "Put the ...........opposite...."
-    },
-    {
-      "key": "book.otbm.rahemos_hall_of_illusions",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Rahemos' Hall of Illusions",
-      "pl": "Rahemos' Korytarz, przedpokój, hall z Złudzenie, iluzja",
-      "lang": "Rahemos' Hall of Illusions"
-    },
-    {
-      "key": "book.otbm.rahmen_tah_and_the_vizier",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Rahmen Tah and the Vizier, Part I",
-      "pl": "Rahmen Tah i the Vizier, Part I",
-      "lang": "Rahmen Tah and the Vizier, Part I"
-    },
-    {
-      "key": "book.otbm.rahmen_tah_and_the_vizier_3c26ab75",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Rahmen Tah and the Vizier, Part II",
-      "pl": "Rahmen Tah i the Vizier, Part II",
-      "lang": "Rahmen Tah and the Vizier, Part II"
-    },
-    {
       "key": "book.otbm.raiders_of_the_lost_barge",
       "category": "books",
       "type": "pl_reference_missing_translation",
@@ -390,123 +228,6 @@
       "en": "Raiders of the Lost Barge",
       "pl": "Raiders z the I. I.",
       "lang": "Raiders of the Lost Barge"
-    },
-    {
-      "key": "book.otbm.ranks_are_thinned_out_we",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "ranks are thinned out! We...",
-      "pl": "I. są thinned out! My...",
-      "lang": "ranks are thinned out! We..."
-    },
-    {
-      "key": "book.otbm.recipe_of_the_day_virgin",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Recipe of the Day: Virgin Colada",
-      "pl": "Przepis kulinarny, przepis z the Dzień: I. Colada",
-      "lang": "Recipe of the Day: Virgin Colada"
-    },
-    {
-      "key": "book.otbm.remember_you_will_not_get",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "* Remember you will not get hungry while logged out.",
-      "pl": "* Pamiętać, przypominać sobie, przypominać ty will Niet get głodny I. logged out.",
-      "lang": "* Remember you will not get hungry while logged out."
-    },
-    {
-      "key": "book.otbm.repairing_collapsed_tunnels",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Repairing collapsed tunnels:",
-      "pl": "I. collapsed I.:",
-      "lang": "Repairing collapsed tunnels:"
-    },
-    {
-      "key": "book.otbm.report_from_magister_gilbert",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Report from Magister Gilbert",
-      "pl": "I. z Magister Gilbert",
-      "lang": "Report from Magister Gilbert"
-    },
-    {
-      "key": "book.otbm.reward_find_out_about_the",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "REWARD: Find out about the whereabouts of our fellow member Ratha. REWARD: Retrieve a genuine giant smith hammer.",
-      "pl": "nagroda: I. out o the I. z nasz facet, gość I. Ratha. nagroda: Odzyskiwać jeden prawdziwy, autentyczny I. kowal I..",
-      "lang": "REWARD: Find out about the whereabouts of our fellow member Ratha. REWARD: Retrieve a genuine giant smith hammer."
-    },
-    {
-      "key": "book.otbm.reward_find_out_about_the_bcd47062",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "REWARD: Find out about the whereabouts of our fellow member Ratha. REWARD: Retrieve a genuine giant smith hammer.",
-      "pl": "nagroda: I. out o the I. z nasz facet, gość I. Ratha. nagroda: Odzyskiwać jeden prawdziwy, autentyczny I. kowal I..",
-      "lang": "REWARD: Find out about the whereabouts of our fellow member Ratha. REWARD: Retrieve a genuine giant smith hammer."
-    },
-    {
-      "key": "book.otbm.roberts_armor_and_weapons",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Robert's Armor and Weapons",
-      "pl": "Robert's Armor i Broń",
-      "lang": "Robert's Armor and Weapons"
-    },
-    {
-      "key": "book.otbm.roundtrip_to_any_island_is",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Roundtrip to any island is 20 gold.",
-      "pl": "Roundtrip do dowolny wyspa jest 20 złota.",
-      "lang": "Roundtrip to any island is 20 gold."
-    },
-    {
-      "key": "book.otbm.route_to_shadowthorn_proceed_at",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Route To Shadowthorn. Proceed at your own risk.",
-      "pl": "I. Do Shadowthorn. Zabierać się w twój I. I..",
-      "lang": "Route To Shadowthorn. Proceed at your own risk."
-    },
-    {
-      "key": "book.otbm.royal_tibia_mail_post_office",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Royal Tibia Mail Post Office and",
-      "pl": "I. Tibia I. Post Biuro i",
-      "lang": "Royal Tibia Mail Post Office and"
-    },
-    {
-      "key": "book.otbm.royal_tibia_mail_post_office_c5be0dd3",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Royal Tibia Mail Post Office and",
-      "pl": "I. Tibia I. Post Biuro i",
-      "lang": "Royal Tibia Mail Post Office and"
-    },
-    {
-      "key": "book.otbm.royal_tibia_mail_post_office_ce1003e0",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Royal Tibia Mail Post Office",
-      "pl": "I. Tibia I. Post Biuro",
-      "lang": "Royal Tibia Mail Post Office"
     },
     {
       "key": "book.otbm.royal_tibian_adventurers_academy",
@@ -518,132 +239,6 @@
       "lang": "Royal Tibian Adventurers Academy"
     },
     {
-      "key": "book.otbm.rules_of_the_training_hall",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Rules of the training hall",
-      "pl": "I. z the Trening korytarz, przedpokój, hall",
-      "lang": "Rules of the training hall"
-    },
-    {
-      "key": "book.otbm.runes_and_sigils_in_the",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Runes and sigils in the necromantic arts, by His Dark Excellency Grurion Nighthound.",
-      "pl": "Runes i sigils w the necromantic I., by Jego I. A. Ekscelencja Grurion Nighthound.",
-      "lang": "Runes and sigils in the necromantic arts, by His Dark Excellency Grurion Nighthound."
-    },
-    {
-      "key": "book.otbm.running_through_the_field",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "running through the field!",
-      "pl": "I. through the I.!",
-      "lang": "running through the field!"
-    },
-    {
-      "key": "book.otbm.safe_trade_rooms_safely_trade",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Safe Trade Rooms - safely trade and sort through your inventory here.",
-      "pl": "I. Handel miejsces - I. handel i I. through twój inwentarz, spis tutaj, tu.",
-      "lang": "Safe Trade Rooms - safely trade and sort through your inventory here."
-    },
-    {
-      "key": "book.otbm.sams_smithy_armors_and_weapons",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Sam's Smithy - Armors and Weapons",
-      "pl": "Sam's Kuźnia - Armors i Broń",
-      "lang": "Sam's Smithy - Armors and Weapons"
-    },
-    {
-      "key": "book.otbm.sams_smithy_armors_and_weapons_930b4755",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Sam's Smithy - Armors and Weapons",
-      "pl": "Sam's Kuźnia - Armors i Broń",
-      "lang": "Sam's Smithy - Armors and Weapons"
-    },
-    {
-      "key": "book.otbm.sams_smithy_weapons_and_armor",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Sam's Smithy - weapons and armor",
-      "pl": "Sam's Kuźnia - broń i armor",
-      "lang": "Sam's Smithy - weapons and armor"
-    },
-    {
-      "key": "book.otbm.sams_smithy_weapons_and_armor_adbecfc5",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Sam's Smithy - Weapons and Armor",
-      "pl": "Sam's Kuźnia - Broń i Armor",
-      "lang": "Sam's Smithy - Weapons and Armor"
-    },
-    {
-      "key": "book.otbm.scrapper_rank_rewards_choose_wisely",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Scrapper Rank Rewards - Choose wisely!",
-      "pl": "Scrapper I. nagrodas - Wybierać I.!",
-      "lang": "Scrapper Rank Rewards - Choose wisely!"
-    },
-    {
-      "key": "book.otbm.scribbled_below_followers_of_crunor",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "<scribbled below>: Followers of Crunor or other Tibian wannabe deities are NOT welcome.",
-      "pl": "<scribbled below>: Zwolennik, uczeń z CruNier lub drugi, pozostały Tibian wannabe bóstwo są NieT I..",
-      "lang": "<scribbled below>: Followers of Crunor or other Tibian wannabe deities are NOT welcome."
-    },
-    {
-      "key": "book.otbm.seasickness_or_why_the_gods",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Seasickness or Why the Gods Don't Want Us to Travel the Oceans",
-      "pl": "Seasickness lub Dlaczego, czemu the Gods Don't I. Nas do podróż the Ocean",
-      "lang": "Seasickness or Why the Gods Don't Want Us to Travel the Oceans"
-    },
-    {
-      "key": "book.otbm.see_also_my_offers_at",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "See also my offers at the other board.",
-      "pl": "I. także mój offers w the drugi, pozostały I..",
-      "lang": "See also my offers at the other board."
-    },
-    {
-      "key": "book.otbm.serafins_heavenly_fruits",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Serafin's heavenly fruits",
-      "pl": "Serafin's niebiański I.",
-      "lang": "Serafin's heavenly fruits"
-    },
-    {
-      "key": "book.otbm.sewer_access_lower_drainage_area",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "SEWER ACCESS (Lower Drainage Area, Level B)",
-      "pl": "KANAŁ, ŚCIEK I. (I. Kanalizacja Obszar, region, poziom B)",
-      "lang": "SEWER ACCESS (Lower Drainage Area, Level B)"
-    },
-    {
       "key": "book.otbm.shadow_ashes_voices_bones_hunger",
       "category": "books",
       "type": "pl_reference_missing_translation",
@@ -651,186 +246,6 @@
       "en": "Shadow Ashes Voices Bones Hunger Door Smoke...",
       "pl": "Cień Popiół I. I. I. Drzwi I....",
       "lang": "Shadow Ashes Voices Bones Hunger Door Smoke..."
-    },
-    {
-      "key": "book.otbm.shouldnt_be_that_dangerous_hahaha",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Shouldn't be that dangerous, hahaha!",
-      "pl": "Shouldn't być that groźny, niebezpieczny, hahaha!",
-      "lang": "Shouldn't be that dangerous, hahaha!"
-    },
-    {
-      "key": "book.otbm.singing_instructions_for_novices",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Singing instructions for novices.",
-      "pl": "I. nauka, nauczanie dla Nievices.",
-      "lang": "Singing instructions for novices."
-    },
-    {
-      "key": "book.otbm.slowly_but_inexorably_overwhelmed",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "slowly but inexorably overwhelmed.",
-      "pl": "I. I. inexorably przytłaczać, miażdżyć.",
-      "lang": "slowly but inexorably overwhelmed."
-    },
-    {
-      "key": "book.otbm.somehow_the_teleporter_got_damaged",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Somehow the teleporter got damaged.",
-      "pl": "W jakiś sposób, jakoś the teleportowaće... got damaged.",
-      "lang": "Somehow the teleporter got damaged."
-    },
-    {
-      "key": "book.otbm.sovereign_territory_of_thais",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Sovereign Territory of Thais",
-      "pl": "I. Terytorium z Thais",
-      "lang": "Sovereign Territory of Thais"
-    },
-    {
-      "key": "book.otbm.spell_trainers_tryout_spells_for",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Spell Trainers - Tryout Spells for all vocations from level 8 to 19.",
-      "pl": "zaklęcie Trener - Tryout zaklęCentalna Agencja Wywiadowcza dla wszystkie profesja z poziom 8 do 19.",
-      "lang": "Spell Trainers - Tryout Spells for all vocations from level 8 to 19."
-    },
-    {
-      "key": "book.otbm.standing_on_one_of_the",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "standing on one of the orange floor",
-      "pl": "I. na I. z the I. I.",
-      "lang": "standing on one of the orange floor"
-    },
-    {
-      "key": "book.otbm.star_constellations_over_the_centuries",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Star Constellations over the Centuries",
-      "pl": "I. Konstelacja I. the Wiek",
-      "lang": "Star Constellations over the Centuries"
-    },
-    {
-      "key": "book.otbm.steamship_daily_transfers_to_kazordoon",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Steamship - Daily transfers to Kazordoon",
-      "pl": "Steamship - I. przelejs do Kazordoon",
-      "lang": "Steamship - Daily transfers to Kazordoon"
-    },
-    {
-      "key": "book.otbm.step_through_the_teleporter_to",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Step through the teleporter to become a citizen of Gray Beach.",
-      "pl": "Step through the teleportowaće... do stawać się jeden obywatel z Gray Plaża.",
-      "lang": "Step through the teleporter to become a citizen of Gray Beach."
-    },
-    {
-      "key": "book.otbm.stone_herb_star_herb_and",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "stone herb, star herb and fern",
-      "pl": "stone I., I. I. i paproć",
-      "lang": "stone herb, star herb and fern"
-    },
-    {
-      "key": "book.otbm.strange_creatures_from_around_the",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Strange Creatures from around the World.",
-      "pl": "Dziwny Stwory z around the I..",
-      "lang": "Strange Creatures from around the World."
-    },
-    {
-      "key": "book.otbm.strange_things_can_happen",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Strange Things Can Happen",
-      "pl": "Dziwny Rzecz Może Zdarzać się, wydarzać się",
-      "lang": "Strange Things Can Happen"
-    },
-    {
-      "key": "book.otbm.switches_on_the_end_of",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "... switches on the end of the scorpion path and the lair of the wicked web ...",
-      "pl": "... I. na the I. z the skorpion ścieżka i the legowisko, pieczara z the zły, niegodziwy pajęczyna...",
-      "lang": "... switches on the end of the scorpion path and the lair of the wicked web ..."
-    },
-    {
-      "key": "book.otbm.sword_sabre_rapier_dagger",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "sword, sabre, rapier, dagger,",
-      "pl": "miecz, sabre, rapier, sztylet,",
-      "lang": "sword, sabre, rapier, dagger,"
-    },
-    {
-      "key": "book.otbm.taka_arash_ouk_karak_minotaur",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "taka arash ouk karak minotaur",
-      "pl": "taka arash ouk karak miNietaur",
-      "lang": "taka arash ouk karak minotaur"
-    },
-    {
-      "key": "book.otbm.tales_of_a_stranger_part",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Tales of a Stranger, Part I",
-      "pl": "Opowieść, opowiadanie z jeden Obcy, Part I",
-      "lang": "Tales of a Stranger, Part I"
-    },
-    {
-      "key": "book.otbm.tales_of_a_stranger_part_738a328c",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Tales of a Stranger, Part II",
-      "pl": "Opowieść, opowiadanie z jeden Obcy, Part II",
-      "lang": "Tales of a Stranger, Part II"
-    },
-    {
-      "key": "book.otbm.tanjis_sabado_10_am_4",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Tanjis: Sabado (10 AM - 4 PM) Obujos: Domingo (1 PM - 8 PM) Jaul: Viernes (2 PM - 11 AM)",
-      "pl": "Tanjis: Sabado (10 AM - 4 PREMIER) Obujos: Domingo (1 PREMIER - 8 PREMIER) Jaul: Viernes (2 PREMIER - 11 AM)",
-      "lang": "Tanjis: Sabado (10 AM - 4 PM) Obujos: Domingo (1 PM - 8 PM) Jaul: Viernes (2 PM - 11 AM)"
-    },
-    {
-      "key": "book.otbm.tanjis_sabado_10_am_4_2a8ce7bf",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Tanjis: Sabado (10 AM - 4 PM) Obujos: Domingo (1 PM - 8 PM) Jaul: Viernes (2 PM - 11 AM)",
-      "pl": "Tanjis: Sabado (10 AM - 4 PREMIER) Obujos: Domingo (1 PREMIER - 8 PREMIER) Jaul: Viernes (2 PREMIER - 11 AM)",
-      "lang": "Tanjis: Sabado (10 AM - 4 PM) Obujos: Domingo (1 PM - 8 PM) Jaul: Viernes (2 PM - 11 AM)"
     },
     {
       "key": "book.otbm.tanjis_sabado_15h_21h",
@@ -849,375 +264,6 @@
       "en": "Tanjis: Sabado (15h - 21h)",
       "pl": "Tanji: Sabado (15:00 - 21:00)",
       "lang": "Tanjis: Sabado (15h - 21h)"
-    },
-    {
-      "key": "book.otbm.tanjis_saturday_12_am_6",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Tanjis: Saturday (12 AM - 6 PM)",
-      "pl": "Tanjis: Sobota (12 AM - 6 PREMIER)",
-      "lang": "Tanjis: Saturday (12 AM - 6 PM)"
-    },
-    {
-      "key": "book.otbm.tanjis_saturday_12_am_6_9b944c8c",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Tanjis: Saturday (12 AM - 6 PM)",
-      "pl": "Tanjis: Sobota (12 AM - 6 PREMIER)",
-      "lang": "Tanjis: Saturday (12 AM - 6 PM)"
-    },
-    {
-      "key": "book.otbm.taster_of_the_caliph_family",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Taster of the caliph family",
-      "pl": "Taster z the caliph I.",
-      "lang": "Taster of the caliph family"
-    },
-    {
-      "key": "book.otbm.teams_so_try_to_find",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "teams, so try to find some companions.",
-      "pl": "zespół, I. I. do I. I. towarzysz.",
-      "lang": "teams, so try to find some companions."
-    },
-    {
-      "key": "book.otbm.teleport_to_gnomebase_alpha",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Teleport To Gnomebase Alpha!",
-      "pl": "teleportować Do GNiemebase Alpha!",
-      "lang": "Teleport To Gnomebase Alpha!"
-    },
-    {
-      "key": "book.otbm.teleportation_research_lab",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Teleportation Research Lab",
-      "pl": "teleportowaćation I. Laboratorium",
-      "lang": "Teleportation Research Lab"
-    },
-    {
-      "key": "book.otbm.temple_of_the_allconsuming_cheese",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Temple of the all-consuming Cheese",
-      "pl": "Świątynia z the wszystkie-consuming Ser",
-      "lang": "Temple of the all-consuming Cheese"
-    },
-    {
-      "key": "book.otbm.temples_and_gardens_of_night",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Temples and Gardens Of Night",
-      "pl": "Świątynia i I. Z Night",
-      "lang": "Temples and Gardens Of Night"
-    },
-    {
-      "key": "book.otbm.tha_he_ever_ret",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": ".. tha. HE ... .ever ret...",
-      "pl": ".. tha. ON....kiedykolwiek ret...",
-      "lang": ".. tha. HE ... .ever ret..."
-    },
-    {
-      "key": "book.otbm.thais_king_hero_and_saviour",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Thais, king, hero and saviour of humankind",
-      "pl": "Thais, król, bohater i zbawca, wybawca z humankind",
-      "lang": "Thais, king, hero and saviour of humankind"
-    },
-    {
-      "key": "book.otbm.that_the_summoning_of_urgith",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "that the summoning of Urgith went wrong I",
-      "pl": "that the I. z Urgith went wrong I",
-      "lang": "that the summoning of Urgith went wrong I"
-    },
-    {
-      "key": "book.otbm.the_art_of_war_by",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The art of war by Brianna Bonecrusher",
-      "pl": "The I. z I. by Brianna Bonecrusher",
-      "lang": "The art of war by Brianna Bonecrusher"
-    },
-    {
-      "key": "book.otbm.the_awaking_of_the_gods",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Awaking of the Gods BOOK ONE",
-      "pl": "The Awaking z the Gods I. I.",
-      "lang": "The Awaking of the Gods BOOK ONE"
-    },
-    {
-      "key": "book.otbm.the_awaking_of_the_gods_c2b0e870",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Awaking of the Gods BOOK TWO",
-      "pl": "The Awaking z the Gods I. DWA",
-      "lang": "The Awaking of the Gods BOOK TWO"
-    },
-    {
-      "key": "book.otbm.the_barbican_knight_spells_teacher",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Barbican. Knight Spells Teacher.",
-      "pl": "The Barbican. I. zaklęCentalna Agencja Wywiadowcza Nauczyciel.",
-      "lang": "The Barbican. Knight Spells Teacher."
-    },
-    {
-      "key": "book.otbm.the_black_city_of_skulls",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The black city of skulls in Hellgate",
-      "pl": "The I. miasto z czaszka w Hellgate",
-      "lang": "The black city of skulls in Hellgate"
-    },
-    {
-      "key": "book.otbm.the_black_pyramid_of_draconia",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The black pyramid of Draconia",
-      "pl": "The I. piramida z Draconia",
-      "lang": "The black pyramid of Draconia"
-    },
-    {
-      "key": "book.otbm.the_chronicles_of_daraman_i",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Chronicles of Daraman I",
-      "pl": "The I. z Daraman I",
-      "lang": "The Chronicles of Daraman I"
-    },
-    {
-      "key": "book.otbm.the_chronicles_of_daraman_ii",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Chronicles of Daraman II",
-      "pl": "The I. z Daraman II",
-      "lang": "The Chronicles of Daraman II"
-    },
-    {
-      "key": "book.otbm.the_chronicles_of_daraman_iii",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Chronicles of Daraman III",
-      "pl": "The I. z Daraman III",
-      "lang": "The Chronicles of Daraman III"
-    },
-    {
-      "key": "book.otbm.the_chronicles_of_daraman_iv",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Chronicles of Daraman IV",
-      "pl": "The I. z Daraman IV",
-      "lang": "The Chronicles of Daraman IV"
-    },
-    {
-      "key": "book.otbm.the_chronicles_of_daraman_v",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Chronicles of Daraman V",
-      "pl": "The I. z Daraman V",
-      "lang": "The Chronicles of Daraman V"
-    },
-    {
-      "key": "book.otbm.the_cistern_beware_of_rats",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Cistern. Beware of rats!",
-      "pl": "The Rezerwuar. Strzec się z szczur!",
-      "lang": "The Cistern. Beware of rats!"
-    },
-    {
-      "key": "book.otbm.the_cities_of_the_continent",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The cities of the continent:",
-      "pl": "The miasto z the kontynent:",
-      "lang": "The cities of the continent:"
-    },
-    {
-      "key": "book.otbm.the_colossus_of_kazordoon",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The colossus of Kazordoon",
-      "pl": "The colossus z Kazordoon",
-      "lang": "The colossus of Kazordoon"
-    },
-    {
-      "key": "book.otbm.the_creation_of_humans_book",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Creation of Humans BOOK ONE",
-      "pl": "The Creation z I. I. I.",
-      "lang": "The Creation of Humans BOOK ONE"
-    },
-    {
-      "key": "book.otbm.the_creation_of_humans_book_4f0bc559",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Creation of Humans BOOK TWO",
-      "pl": "The Creation z I. I. DWA",
-      "lang": "The Creation of Humans BOOK TWO"
-    },
-    {
-      "key": "book.otbm.the_creation_of_humans_book_d9f7bb38",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Creation of Humans BOOK THREE",
-      "pl": "The Creation z I. I. TRZY",
-      "lang": "The Creation of Humans BOOK THREE"
-    },
-    {
-      "key": "book.otbm.the_djinn_wars_i_the",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Djinn Wars I - The Insurrection",
-      "pl": "The Djinn I. I - The Powstanie",
-      "lang": "The Djinn Wars I - The Insurrection"
-    },
-    {
-      "key": "book.otbm.the_djinn_wars_ii_the",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Djinn Wars II - The First Years",
-      "pl": "The Djinn I. II - The I. A. rok",
-      "lang": "The Djinn Wars II - The First Years"
-    },
-    {
-      "key": "book.otbm.the_djinn_wars_iii_the",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Djinn Wars III - The Great Battle, Pt. 3",
-      "pl": "The Djinn I. III - The I. I., WF, wychowanie fizyczne. 3",
-      "lang": "The Djinn Wars III - The Great Battle, Pt. 3"
-    },
-    {
-      "key": "book.otbm.the_djinn_wars_iii_the_7407e11d",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Djinn Wars III - The Great Battle, Pt. 2",
-      "pl": "The Djinn I. III - The I. I., WF, wychowanie fizyczne. 2",
-      "lang": "The Djinn Wars III - The Great Battle, Pt. 2"
-    },
-    {
-      "key": "book.otbm.the_djinn_wars_iii_the_d0a7ac52",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Djinn Wars III - The Great Battle, Pt. 4",
-      "pl": "The Djinn I. III - The I. I., WF, wychowanie fizyczne. 4",
-      "lang": "The Djinn Wars III - The Great Battle, Pt. 4"
-    },
-    {
-      "key": "book.otbm.the_djinn_wars_v_fahradins",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Djinn Wars V - Fa'hradin's Trick",
-      "pl": "The Djinn I. V - Fa'hradin's I.",
-      "lang": "The Djinn Wars V - Fa'hradin's Trick"
-    },
-    {
-      "key": "book.otbm.the_djinn_wars_vi_a",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Djinn Wars VI - A War in Suspension",
-      "pl": "The Djinn I. VI - JEDEN I. w I.",
-      "lang": "The Djinn Wars VI - A War in Suspension"
-    },
-    {
-      "key": "book.otbm.the_djinn_wars_vii_malors",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Djinn Wars VII - Malor's Liberation",
-      "pl": "The Djinn I. VII - Malor's Wyzwolenie",
-      "lang": "The Djinn Wars VII - Malor's Liberation"
-    },
-    {
-      "key": "book.otbm.the_djnn_wars_iii_the",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Djnn Wars III - The Great Battle, Pt. 1",
-      "pl": "The Djnn I. III - The I. I., WF, wychowanie fizyczne. 1",
-      "lang": "The Djnn Wars III - The Great Battle, Pt. 1"
-    },
-    {
-      "key": "book.otbm.the_djnn_wars_iv_drefias",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Djnn Wars IV - Drefia's Fall",
-      "pl": "The Djnn I. IV - Drefia's I.",
-      "lang": "The Djnn Wars IV - Drefia's Fall"
-    },
-    {
-      "key": "book.otbm.the_dream_challenge_is_completed",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Dream Challenge is completed now.",
-      "pl": "The I. I. jest completed Niew.",
-      "lang": "The Dream Challenge is completed now."
-    },
-    {
-      "key": "book.otbm.the_druid_guild_trainer_downstairs",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Druid Guild. Trainer downstairs.",
-      "pl": "The Druid Gildia. Trener I..",
-      "lang": "The Druid Guild. Trainer downstairs."
-    },
-    {
-      "key": "book.otbm.the_end_of_all_hope",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The end of all hope lies under my feet",
-      "pl": "The I. z wszystkie I. lies under mój feet",
-      "lang": "The end of all hope lies under my feet"
     },
     {
       "key": "book.otbm.the_end_of_all_hope_e03b693f",
@@ -3612,6 +2658,960 @@
       "en": "You reached the maximum beds in this house",
       "pl": "Ty reached the I. I. w I. dom",
       "lang": "You reached the maximum beds in this house"
+    },
+    {
+      "key": "cpp.cancel.must_be_premium",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You must be premium.",
+      "pl": "Ty musi być premium.",
+      "lang": "You must be premium."
+    },
+    {
+      "key": "cpp.cancel.no_pm_self",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You cannot set up a private message channel with yourself.",
+      "pl": "Nie lekarz rejonowyżesz ustaw up jeden I. wiadomość I. z siebie.",
+      "lang": "You cannot set up a private message channel with yourself."
+    },
+    {
+      "key": "cpp.cancel.no_stowable_items",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "There are no stowable items in this container.",
+      "pl": "Nie magister nauk humanistycznych, magister stowable przedmioty w I. I..",
+      "lang": "There are no stowable items in this container."
+    },
+    {
+      "key": "cpp.cancel.not_allowed_construct",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You are not allowed to construct this here.",
+      "pl": "Nie jesteś I. do construct I. tutaj, tu.",
+      "lang": "You are not allowed to construct this here."
+    },
+    {
+      "key": "cpp.cancel.not_possible",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Sorry, not possible.",
+      "pl": "Przykro mi, to niemożliwe.",
+      "lang": "Sorry, not possible."
+    },
+    {
+      "key": "cpp.cancel.player_not_exist",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "A player with this name does not exist.",
+      "pl": "JEDEN gracz z I. nazwa robi Niet istnieć.",
+      "lang": "A player with this name does not exist."
+    },
+    {
+      "key": "cpp.cancel.stash_wait",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You can't use stash right now.",
+      "pl": "Lekarz rejonowyżesz't use stash I. Niew.",
+      "lang": "You can't use stash right now."
+    },
+    {
+      "key": "cpp.cancel.wait_again",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You need to wait to do this again.",
+      "pl": "Musisz I. do robić I. ponownie.",
+      "lang": "You need to wait to do this again."
+    },
+    {
+      "key": "cpp.cancel.wrap_on_floor",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You can only wrap/unwrap on the floor.",
+      "pl": "Lekarz rejonowyżesz tylko I./rozpakowywać na the I..",
+      "lang": "You can only wrap/unwrap on the floor."
+    },
+    {
+      "key": "cpp.chat.private_excluded_confirm",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} has been excluded.",
+      "pl": "{0} ma był excluded.",
+      "lang": "{0} has been excluded."
+    },
+    {
+      "key": "cpp.chat.private_invite_received",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} invites you to {1} private chat channel.",
+      "pl": "{0} zapraszać ty do {1} I. I. I..",
+      "lang": "{0} invites you to {1} private chat channel."
+    },
+    {
+      "key": "cpp.chat.private_invited_confirm",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} has been invited.",
+      "pl": "{0} ma był invited.",
+      "lang": "{0} has been invited."
+    },
+    {
+      "key": "cpp.combat.agony",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "agony",
+      "pl": "cierpienie",
+      "lang": "agony"
+    },
+    {
+      "key": "cpp.combat.amplified_onslaught",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": " (Amplified Onslaught)",
+      "pl": "(Amplified Atak)",
+      "lang": " (Amplified Onslaught)"
+    },
+    {
+      "key": "cpp.combat.charm_low_blow",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": " (low blow charm)",
+      "pl": "(low blow I.)",
+      "lang": " (low blow charm)"
+    },
+    {
+      "key": "cpp.combat.charm_savage_blow",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": " (savage blow charm)",
+      "pl": "(I. blow I.)",
+      "lang": " (savage blow charm)"
+    },
+    {
+      "key": "cpp.combat.condition_healed_one",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You were healed for {0} hitpoint.",
+      "pl": "Ty były I. dla {0} hitpoint.",
+      "lang": "You were healed for {0} hitpoint."
+    },
+    {
+      "key": "cpp.combat.condition_healed_other",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You were healed for {0} hitpoints.",
+      "pl": "Ty były I. dla {0} hitpoints.",
+      "lang": "You were healed for {0} hitpoints."
+    },
+    {
+      "key": "cpp.combat.condition_healed_spectator_one",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} was healed for {1} hitpoint.",
+      "pl": "{0} był I. dla {1} hitpoint.",
+      "lang": "{0} was healed for {1} hitpoint."
+    },
+    {
+      "key": "cpp.combat.condition_healed_spectator_other",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} was healed for {1} hitpoints.",
+      "pl": "{0} był I. dla {1} hitpoints.",
+      "lang": "{0} was healed for {1} hitpoints."
+    },
+    {
+      "key": "cpp.combat.death",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "death",
+      "pl": "I.",
+      "lang": "death"
+    },
+    {
+      "key": "cpp.combat.dmg_attacker_crit_one",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} loses {1} hitpoint due to your critical attack.",
+      "pl": "{0} loses {1} hitpoint due do twój critical I..",
+      "lang": "{0} loses {1} hitpoint due to your critical attack."
+    },
+    {
+      "key": "cpp.combat.dmg_attacker_crit_other",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} loses {1} hitpoints due to your critical attack.",
+      "pl": "{0} loses {1} hitpoints due do twój critical I..",
+      "lang": "{0} loses {1} hitpoints due to your critical attack."
+    },
+    {
+      "key": "cpp.combat.dmg_attacker_one",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} loses {1} hitpoint due to your attack.",
+      "pl": "{0} loses {1} hitpoint due do twój I..",
+      "lang": "{0} loses {1} hitpoint due to your attack."
+    },
+    {
+      "key": "cpp.combat.dmg_attacker_other",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} loses {1} hitpoints due to your attack.",
+      "pl": "{0} loses {1} hitpoints due do twój I..",
+      "lang": "{0} loses {1} hitpoints due to your attack."
+    },
+    {
+      "key": "cpp.combat.dmg_spectator_by_crit_one",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} loses {1} hitpoint due to a critical attack by {2}.",
+      "pl": "{0} loses {1} hitpoint due do jeden critical I. by {2}.",
+      "lang": "{0} loses {1} hitpoint due to a critical attack by {2}."
+    },
+    {
+      "key": "cpp.combat.dmg_spectator_by_crit_other",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} loses {1} hitpoints due to a critical attack by {2}.",
+      "pl": "{0} loses {1} hitpoints due do jeden critical I. by {2}.",
+      "lang": "{0} loses {1} hitpoints due to a critical attack by {2}."
+    },
+    {
+      "key": "cpp.combat.dmg_spectator_by_one",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} loses {1} hitpoint due to an attack by {2}.",
+      "pl": "{0} loses {1} hitpoint due do jeden I. by {2}.",
+      "lang": "{0} loses {1} hitpoint due to an attack by {2}."
+    },
+    {
+      "key": "cpp.combat.dmg_spectator_by_other",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} loses {1} hitpoints due to an attack by {2}.",
+      "pl": "{0} loses {1} hitpoints due do jeden I. by {2}.",
+      "lang": "{0} loses {1} hitpoints due to an attack by {2}."
+    },
+    {
+      "key": "cpp.combat.dmg_spectator_none_one",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} loses {1} hitpoint.",
+      "pl": "{0} traci {1} punkt życia.",
+      "lang": "{0} loses {1} hitpoint."
+    },
+    {
+      "key": "cpp.combat.dmg_spectator_none_other",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} loses {1} hitpoints.",
+      "pl": "{0} traci {1} punktów życia.",
+      "lang": "{0} loses {1} hitpoints."
+    },
+    {
+      "key": "cpp.combat.dmg_spectator_self_crit_one",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} loses {1} hitpoint due to {2} own critical attack.",
+      "pl": "{0} loses {1} hitpoint due do {2} I. critical I..",
+      "lang": "{0} loses {1} hitpoint due to {2} own critical attack."
+    },
+    {
+      "key": "cpp.combat.dmg_spectator_self_crit_other",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} loses {1} hitpoints due to {2} own critical attack.",
+      "pl": "{0} loses {1} hitpoints due do {2} I. critical I..",
+      "lang": "{0} loses {1} hitpoints due to {2} own critical attack."
+    },
+    {
+      "key": "cpp.combat.dmg_spectator_self_one",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} loses {1} hitpoint due to {2} own attack.",
+      "pl": "{0} loses {1} hitpoint due do {2} I. I..",
+      "lang": "{0} loses {1} hitpoint due to {2} own attack."
+    },
+    {
+      "key": "cpp.combat.dmg_spectator_self_other",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} loses {1} hitpoints due to {2} own attack.",
+      "pl": "{0} loses {1} hitpoints due do {2} I. I..",
+      "lang": "{0} loses {1} hitpoints due to {2} own attack."
+    },
+    {
+      "key": "cpp.combat.dmg_target_by_crit_one",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You lose {0} hitpoint due to a critical attack by {1}.",
+      "pl": "Ty lose {0} hitpoint due do jeden critical I. by {1}.",
+      "lang": "You lose {0} hitpoint due to a critical attack by {1}."
+    },
+    {
+      "key": "cpp.combat.dmg_target_by_crit_other",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You lose {0} hitpoints due to a critical attack by {1}.",
+      "pl": "Ty lose {0} hitpoints due do jeden critical I. by {1}.",
+      "lang": "You lose {0} hitpoints due to a critical attack by {1}."
+    },
+    {
+      "key": "cpp.combat.dmg_target_by_one",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You lose {0} hitpoint due to an attack by {1}.",
+      "pl": "Ty lose {0} hitpoint due do jeden I. by {1}.",
+      "lang": "You lose {0} hitpoint due to an attack by {1}."
+    },
+    {
+      "key": "cpp.combat.dmg_target_by_other",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You lose {0} hitpoints due to an attack by {1}.",
+      "pl": "Ty lose {0} hitpoints due do jeden I. by {1}.",
+      "lang": "You lose {0} hitpoints due to an attack by {1}."
+    },
+    {
+      "key": "cpp.combat.dmg_target_none_one",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You lose {0} hitpoint.",
+      "pl": "Ty lose {0} hitpoint.",
+      "lang": "You lose {0} hitpoint."
+    },
+    {
+      "key": "cpp.combat.dmg_target_none_other",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You lose {0} hitpoints.",
+      "pl": "Ty lose {0} hitpoints.",
+      "lang": "You lose {0} hitpoints."
+    },
+    {
+      "key": "cpp.combat.dmg_target_self_crit_one",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You lose {0} hitpoint due to your own critical attack.",
+      "pl": "Ty lose {0} hitpoint due do twój I. critical I..",
+      "lang": "You lose {0} hitpoint due to your own critical attack."
+    },
+    {
+      "key": "cpp.combat.dmg_target_self_crit_other",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You lose {0} hitpoints due to your own critical attack.",
+      "pl": "Ty lose {0} hitpoints due do twój I. critical I..",
+      "lang": "You lose {0} hitpoints due to your own critical attack."
+    },
+    {
+      "key": "cpp.combat.dmg_target_self_one",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You lose {0} hitpoint due to your own attack.",
+      "pl": "Ty lose {0} hitpoint due do twój I. I..",
+      "lang": "You lose {0} hitpoint due to your own attack."
+    },
+    {
+      "key": "cpp.combat.dmg_target_self_other",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You lose {0} hitpoints due to your own attack.",
+      "pl": "Ty lose {0} hitpoints due do twój I. I..",
+      "lang": "You lose {0} hitpoints due to your own attack."
+    },
+    {
+      "key": "cpp.combat.drown",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "drown",
+      "pl": "topić się, tonąć",
+      "lang": "drown"
+    },
+    {
+      "key": "cpp.combat.earth",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "earth",
+      "pl": "ziemia",
+      "lang": "earth"
+    },
+    {
+      "key": "cpp.combat.energy",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "energy",
+      "pl": "energia",
+      "lang": "energy"
+    },
+    {
+      "key": "cpp.combat.fire",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "fire",
+      "pl": "ogień",
+      "lang": "fire"
+    },
+    {
+      "key": "cpp.combat.heal_attacker_one",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You heal {0} for {1} hitpoint.",
+      "pl": "Ty I. {0} dla {1} hitpoint.",
+      "lang": "You heal {0} for {1} hitpoint."
+    },
+    {
+      "key": "cpp.combat.heal_attacker_other",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You heal {0} for {1} hitpoints.",
+      "pl": "Ty I. {0} dla {1} hitpoints.",
+      "lang": "You heal {0} for {1} hitpoints."
+    },
+    {
+      "key": "cpp.combat.heal_spectator_none_one",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} was healed for {1} hitpoint.",
+      "pl": "{0} był I. dla {1} hitpoint.",
+      "lang": "{0} was healed for {1} hitpoint."
+    },
+    {
+      "key": "cpp.combat.heal_spectator_none_other",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} was healed for {1} hitpoints.",
+      "pl": "{0} był I. dla {1} hitpoints.",
+      "lang": "{0} was healed for {1} hitpoints."
+    },
+    {
+      "key": "cpp.combat.heal_spectator_other_one",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} healed {1} for {2} hitpoint.",
+      "pl": "{0} I. {1} dla {2} hitpoint.",
+      "lang": "{0} healed {1} for {2} hitpoint."
+    },
+    {
+      "key": "cpp.combat.heal_spectator_other_other",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} healed {1} for {2} hitpoints.",
+      "pl": "{0} I. {1} dla {2} hitpoints.",
+      "lang": "{0} healed {1} for {2} hitpoints."
+    },
+    {
+      "key": "cpp.combat.heal_spectator_self_one",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} healed {1} for {2} hitpoint.",
+      "pl": "{0} I. {1} dla {2} hitpoint.",
+      "lang": "{0} healed {1} for {2} hitpoint."
+    },
+    {
+      "key": "cpp.combat.heal_spectator_self_other",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} healed {1} for {2} hitpoints.",
+      "pl": "{0} I. {1} dla {2} hitpoints.",
+      "lang": "{0} healed {1} for {2} hitpoints."
+    },
+    {
+      "key": "cpp.combat.heal_target_by_one",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You were healed by {0} for {1} hitpoint.",
+      "pl": "Ty były I. by {0} dla {1} hitpoint.",
+      "lang": "You were healed by {0} for {1} hitpoint."
+    },
+    {
+      "key": "cpp.combat.heal_target_by_other",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You were healed by {0} for {1} hitpoints.",
+      "pl": "Ty były I. by {0} dla {1} hitpoints.",
+      "lang": "You were healed by {0} for {1} hitpoints."
+    },
+    {
+      "key": "cpp.combat.heal_target_none_one",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You were healed for {0} hitpoint.",
+      "pl": "Ty były I. dla {0} hitpoint.",
+      "lang": "You were healed for {0} hitpoint."
+    },
+    {
+      "key": "cpp.combat.heal_target_none_other",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You were healed for {0} hitpoints.",
+      "pl": "Ty były I. dla {0} hitpoints.",
+      "lang": "You were healed for {0} hitpoints."
+    },
+    {
+      "key": "cpp.combat.heal_target_self_one",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You heal yourself for {0} hitpoint.",
+      "pl": "Ty I. siebie dla {0} hitpoint.",
+      "lang": "You heal yourself for {0} hitpoint."
+    },
+    {
+      "key": "cpp.combat.heal_target_self_other",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You heal yourself for {0} hitpoints.",
+      "pl": "Ty I. siebie dla {0} hitpoints.",
+      "lang": "You heal yourself for {0} hitpoints."
+    },
+    {
+      "key": "cpp.combat.holy",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "holy",
+      "pl": "święty",
+      "lang": "holy"
+    },
+    {
+      "key": "cpp.combat.ice",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "ice",
+      "pl": "lód",
+      "lang": "ice"
+    },
+    {
+      "key": "cpp.combat.lifedrain",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "lifedrain",
+      "pl": "drenaż życia",
+      "lang": "lifedrain"
+    },
+    {
+      "key": "cpp.combat.mana_attacker",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} loses {1} mana due to your attack.",
+      "pl": "{0} loses {1} mana due do twój I..",
+      "lang": "{0} loses {1} mana due to your attack."
+    },
+    {
+      "key": "cpp.combat.mana_attacker_crit",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} loses {1} mana due to your critical attack.",
+      "pl": "{0} loses {1} mana due do twój critical I..",
+      "lang": "{0} loses {1} mana due to your critical attack."
+    },
+    {
+      "key": "cpp.combat.mana_spectator_by",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} loses {1} mana due to an attack by {2}.",
+      "pl": "{0} loses {1} mana due do jeden I. by {2}.",
+      "lang": "{0} loses {1} mana due to an attack by {2}."
+    },
+    {
+      "key": "cpp.combat.mana_spectator_by_crit",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} loses {1} mana due to a critical attack by {2}.",
+      "pl": "{0} loses {1} mana due do jeden critical I. by {2}.",
+      "lang": "{0} loses {1} mana due to a critical attack by {2}."
+    },
+    {
+      "key": "cpp.combat.mana_spectator_none",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} loses {1} mana.",
+      "pl": "{0} traci {1} manę.",
+      "lang": "{0} loses {1} mana."
+    },
+    {
+      "key": "cpp.combat.mana_spectator_self",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} loses {1} mana due to {2} own attack.",
+      "pl": "{0} loses {1} mana due do {2} I. I..",
+      "lang": "{0} loses {1} mana due to {2} own attack."
+    },
+    {
+      "key": "cpp.combat.mana_target_by",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You lose {0} mana due to an attack by {1}.",
+      "pl": "Ty lose {0} mana due do jeden I. by {1}.",
+      "lang": "You lose {0} mana due to an attack by {1}."
+    },
+    {
+      "key": "cpp.combat.mana_target_by_crit",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You lose {0} mana due to a critical attack by {1}.",
+      "pl": "Ty lose {0} mana due do jeden critical I. by {1}.",
+      "lang": "You lose {0} mana due to a critical attack by {1}."
+    },
+    {
+      "key": "cpp.combat.mana_target_none",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You lose {0} mana.",
+      "pl": "Ty lose {0} mana.",
+      "lang": "You lose {0} mana."
+    },
+    {
+      "key": "cpp.combat.mana_target_self",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You lose {0} mana due to your own attack.",
+      "pl": "Ty lose {0} mana due do twój I. I..",
+      "lang": "You lose {0} mana due to your own attack."
+    },
+    {
+      "key": "cpp.combat.mana_target_self_crit",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You lose {0} mana due to your own critical attack.",
+      "pl": "Ty lose {0} mana due do twój I. critical I..",
+      "lang": "You lose {0} mana due to your own critical attack."
+    },
+    {
+      "key": "cpp.combat.neutral",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "neutral",
+      "pl": "neutralny",
+      "lang": "neutral"
+    },
+    {
+      "key": "cpp.combat.onslaught",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": " (Onslaught)",
+      "pl": "(Atak)",
+      "lang": " (Onslaught)"
+    },
+    {
+      "key": "cpp.combat.physical",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "physical",
+      "pl": "Fizyczny",
+      "lang": "physical"
+    },
+    {
+      "key": "cpp.combat.restore_attacker",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You restored {0} for {1} mana.",
+      "pl": "Ty restored {0} dla {1} mana.",
+      "lang": "You restored {0} for {1} mana."
+    },
+    {
+      "key": "cpp.combat.restore_spectator_none",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} was restored for {1} mana.",
+      "pl": "{0} był restored dla {1} mana.",
+      "lang": "{0} was restored for {1} mana."
+    },
+    {
+      "key": "cpp.combat.restore_spectator_other",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} restored {1} for {2} mana.",
+      "pl": "{0} restored {1} dla {2} mana.",
+      "lang": "{0} restored {1} for {2} mana."
+    },
+    {
+      "key": "cpp.combat.restore_spectator_self",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} restored {1} for {2} mana.",
+      "pl": "{0} restored {1} dla {2} mana.",
+      "lang": "{0} restored {1} for {2} mana."
+    },
+    {
+      "key": "cpp.combat.restore_target_by",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You were restored by {0} for {1} mana.",
+      "pl": "Ty były restored by {0} dla {1} mana.",
+      "lang": "You were restored by {0} for {1} mana."
+    },
+    {
+      "key": "cpp.combat.restore_target_none",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You were restored for {0} mana.",
+      "pl": "Ty były restored dla {0} mana.",
+      "lang": "You were restored for {0} mana."
+    },
+    {
+      "key": "cpp.combat.restore_target_self",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You restore yourself for {0} mana.",
+      "pl": "Ty przywracać siebie dla {0} mana.",
+      "lang": "You restore yourself for {0} mana."
+    },
+    {
+      "key": "cpp.combat.soulpit_crit",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": " (Soulpit Crit)",
+      "pl": "(Soulpit Crit)",
+      "lang": " (Soulpit Crit)"
+    },
+    {
+      "key": "cpp.combat.undefined",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "undefined",
+      "pl": "nieokreślony",
+      "lang": "undefined"
+    },
+    {
+      "key": "cpp.combat.unknown",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "unknown",
+      "pl": "unkNiewn",
+      "lang": "unknown"
+    },
+    {
+      "key": "cpp.creature.loot_of",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Loot of {0}: {1}",
+      "pl": "I. z {0}: {1}",
+      "lang": "Loot of {0}: {1}"
+    },
+    {
+      "key": "cpp.forge.consumed",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "consumed",
+      "pl": "strawiony",
+      "lang": "consumed"
+    },
+    {
+      "key": "cpp.forge.convergence_suffix",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": " (convergence)",
+      "pl": "(convergence)",
+      "lang": " (convergence)"
+    },
+    {
+      "key": "cpp.forge.cores_one",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} core",
+      "pl": "{0} rdzeń",
+      "lang": "{0} core"
+    },
+    {
+      "key": "cpp.forge.cores_other",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} cores",
+      "pl": "{0} rdzeni",
+      "lang": "{0} cores"
+    },
+    {
+      "key": "cpp.forge.dust_one",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} dust",
+      "pl": "{0} I.",
+      "lang": "{0} dust"
+    },
+    {
+      "key": "cpp.forge.dust_other",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} dust",
+      "pl": "{0} I.",
+      "lang": "{0} dust"
+    },
+    {
+      "key": "cpp.forge.dust_to_slivers",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Converted {0} dust to {1} slivers.",
+      "pl": "Converted {0} I. do {1} odprysk, drzazga.",
+      "lang": "Converted {0} dust to {1} slivers."
+    },
+    {
+      "key": "cpp.forge.history_fusion",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0}{1} <br><br>Fusion partners:<ul><li>First item: {2} {3}, tier {4}</li><li>Second item: {5} {6}, tier {7}</li></ul><br>Result:<ul><li>First item: {8}</li><li>Second item: {9}</li></ul><br>Invested:<ul><li>{10}</li><li>{11}</li><li>{12} gold</li></ul>",
+      "pl": "{0}{1} <br><br>Zespolenie, połączenie I.:<ul><li>I. przedmiot: {2} {3}, rząd {4}</li><li>Sekunda przedmiot: {5} {6}, rząd {7}</li></ul><br>I.:<ul><li>I. przedmiot: {8}</li><li>Sekunda przedmiot: {9}</li></ul><br>Inwestować:<ul><li>{10}</li><li>{11}</li><li>{12} złota</li></ul>",
+      "lang": "{0}{1} <br><br>Fusion partners:<ul><li>First item: {2} {3}, tier {4}</li><li>Second item: {5} {6}, tier {7}</li></ul><br>Result:<ul><li>First item: {8}</li><li>Second item: {9}</li></ul><br>Invested:<ul><li>{10}</li><li>{11}</li><li>{12} gold</li></ul>"
+    },
+    {
+      "key": "cpp.forge.history_transfer",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0}{1} <br><br>Transfer partners:<ul><li>First item: {2} {3}, tier {4}</li><li>Second item: {5} {6}, tier {7}</li></ul><br>Result:<ul><li>First item: {8} {9}, tier {10}</li><li>Second item: {11} {12}, {13}</li></ul><br>Invested:<ul><li>{14}</li><li>{15}</li><li>{16} gold</li></ul>",
+      "pl": "{0}{1} <br><br>przelej I.:<ul><li>I. przedmiot: {2} {3}, rząd {4}</li><li>Sekunda przedmiot: {5} {6}, rząd {7}</li></ul><br>I.:<ul><li>I. przedmiot: {8} {9}, rząd {10}</li><li>Sekunda przedmiot: {11} {12}, {13}</li></ul><br>Inwestować:<ul><li>{14}</li><li>{15}</li><li>{16} złota</li></ul>",
+      "lang": "{0}{1} <br><br>Transfer partners:<ul><li>First item: {2} {3}, tier {4}</li><li>Second item: {5} {6}, tier {7}</li></ul><br>Result:<ul><li>First item: {8} {9}, tier {10}</li><li>Second item: {11} {12}, {13}</li></ul><br>Invested:<ul><li>{14}</li><li>{15}</li><li>{16} gold</li></ul>"
+    },
+    {
+      "key": "cpp.forge.increase_dust_limit",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Spent {0} dust to increase the dust limit to {1}.",
+      "pl": "Zużyty {0} I. do increase the I. limit do {1}.",
+      "lang": "Spent {0} dust to increase the dust limit to {1}."
+    },
+    {
+      "key": "cpp.forge.slivers_to_cores",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Converted {0} slivers to {1} exalted core.",
+      "pl": "Converted {0} odprysk, drzazga do {1} wysoki core.",
+      "lang": "Converted {0} slivers to {1} exalted core."
+    },
+    {
+      "key": "cpp.forge.successful",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Successful",
+      "pl": "sukcesful",
+      "lang": "Successful"
+    },
+    {
+      "key": "cpp.forge.tier_minus_one",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "tier - 1",
+      "pl": "rząd - 1",
+      "lang": "tier - 1"
+    },
+    {
+      "key": "cpp.forge.tier_plus_one",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "tier + 1",
+      "pl": "rząd + 1",
+      "lang": "tier + 1"
+    },
+    {
+      "key": "cpp.forge.unchanged",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "unchanged",
+      "pl": "niezmienione",
+      "lang": "unchanged"
     }
   ],
   "length_ratio_issues": [
@@ -3749,237 +3749,12 @@
       "en_len": 9,
       "lang_ratio": 1.0,
       "pl_ratio": 3.556
-    },
-    {
-      "key": "npc.gnomaticus.say_3",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 27,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.296
-    },
-    {
-      "key": "npc.gnomeral.say_11",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 21,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.81
-    },
-    {
-      "key": "npc.gnomeral.say_16",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 21,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.81
-    },
-    {
-      "key": "npc.gnomeral.say_21",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 21,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.81
-    },
-    {
-      "key": "npc.gnomeral.say_5",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 21,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.81
-    },
-    {
-      "key": "npc.gregor.say_23",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 32,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.469
-    },
-    {
-      "key": "npc.gregor.say_26",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 32,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.469
-    },
-    {
-      "key": "npc.gregor.say_29",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 32,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.469
-    },
-    {
-      "key": "npc.gregor.say_32",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 32,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.469
-    },
-    {
-      "key": "npc.guard_saros.say_3",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 55,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.018
-    },
-    {
-      "key": "npc.hairycles.say_42",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 65,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.908
-    },
-    {
-      "key": "npc.hairycles.say_54",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 26,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.962
-    },
-    {
-      "key": "npc.hairycles.say_56",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 26,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.962
-    },
-    {
-      "key": "npc.hairycles.say_61",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 26,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.962
-    },
-    {
-      "key": "npc.karith.say_6",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 45,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.844
-    },
-    {
-      "key": "npc.lurik.say_2",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 22,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.864
-    },
-    {
-      "key": "npc.markwin.say_7",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 16,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.875
-    },
-    {
-      "key": "npc.pig.say_2",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 78,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.128
-    },
-    {
-      "key": "npc.sandomo.greet_msg_1",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 14,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.5
-    },
-    {
-      "key": "npc.santa_claus.say_1",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 28,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.821
-    },
-    {
-      "key": "npc.simon_the_beggar.say_27",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 25,
-      "lang_ratio": 0.0,
-      "pl_ratio": 3.08
-    },
-    {
-      "key": "npc.stricken_soul.multi_1",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 12,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.083
-    },
-    {
-      "key": "npc.tomruk_the_ruddy.say_3",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 81,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.827
-    },
-    {
-      "key": "npc.wyda.say_1",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 24,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.875
-    },
-    {
-      "key": "npc.yonan.say_9",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 41,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.805
     }
   ],
   "auto_fix": {
     "attempted": 80,
-    "applied": 54,
-    "skipped": 26,
+    "applied": 52,
+    "skipped": 28,
     "errors": 0
   }
 }

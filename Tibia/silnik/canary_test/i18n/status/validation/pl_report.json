@@ -2,22 +2,22 @@
   "lang": "pl",
   "script_group": "latin",
   "total_keys": 53586,
-  "translated": 40894,
-  "identical_to_en": 2839,
-  "placeholder_keys": 10609,
-  "coverage_pct": 76.3,
-  "issues_total": 251,
+  "translated": 40346,
+  "identical_to_en": 2841,
+  "placeholder_keys": 11157,
+  "coverage_pct": 75.3,
+  "issues_total": 237,
   "issues_by_type": {
-    "V6_newline_mismatch": 234,
-    "V4_artifact": 13,
+    "V6_newline_mismatch": 223,
+    "V4_artifact": 10,
     "V7_command_mismatch": 2,
     "V1_placeholder_mismatch": 1,
     "V5_pipe_mismatch": 1
   },
   "issues_by_severity": {
     "CRITICAL": 2,
-    "HIGH": 13,
-    "MEDIUM": 236,
+    "HIGH": 10,
+    "MEDIUM": 225,
     "LOW": 0
   },
   "score": 99.8,
@@ -37,24 +37,6 @@
     {
       "key": "achievement.317.description",
       "category": "achievements",
-      "type": "V4_artifact",
-      "severity": "HIGH"
-    },
-    {
-      "key": "book.otbm.battletactics_for_mages_ii",
-      "category": "books",
-      "type": "V4_artifact",
-      "severity": "HIGH"
-    },
-    {
-      "key": "book.otbm.battletactics_for_mages_iii",
-      "category": "books",
-      "type": "V4_artifact",
-      "severity": "HIGH"
-    },
-    {
-      "key": "book.otbm.battletactics_for_mages_iv",
-      "category": "books",
       "type": "V4_artifact",
       "severity": "HIGH"
     },
@@ -141,6 +123,24 @@
       "category": "books",
       "type": "V6_newline_mismatch",
       "severity": "MEDIUM"
+    },
+    {
+      "key": "book.quest_system2.the_map_shows_the_original_floor",
+      "category": "books",
+      "type": "V6_newline_mismatch",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "book.quest_system2.this_page_seems_to_be_part",
+      "category": "books",
+      "type": "V6_newline_mismatch",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "book.quest_system2.tunnelling_guide",
+      "category": "books",
+      "type": "V6_newline_mismatch",
+      "severity": "MEDIUM"
     }
   ],
   "crossref": {
@@ -151,5 +151,5 @@
     "length_ratio": 0,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-14T10:55:18.688531Z"
+  "validated_at": "2026-02-14T11:21:22.265668Z"
 }

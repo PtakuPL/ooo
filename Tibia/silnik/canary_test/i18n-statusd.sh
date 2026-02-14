@@ -2078,6 +2078,37 @@ try:
 except Exception as e:
     warnings.append(f"WORKER_PROCESS_WATCH_ERROR: {e}")
 
+# ── 5c. Kontrakt runtime tłumaczeń (translations-only + ES/PL gate) ────
+translation_contract_info = {}
+try:
+    translation_contract_info = _read_worker_translation_contract()
+    if not translation_contract_info.get("available", False):
+        warnings.append(
+            f"WORKER_TRANSLATION_CONTRACT_UNAVAILABLE: status={translation_contract_info.get('status', 'unknown')} "
+            f"reason={translation_contract_info.get('reason', 'unknown')}"
+        )
+    else:
+        priority_langs = ",".join(translation_contract_info.get("priority_langs", [])) or "-"
+        pending_langs = ",".join(translation_contract_info.get("pending_langs", [])) or "-"
+        desc = (
+            f"pid={translation_contract_info.get('worker_pid', 0)} "
+            f"translations_only={int(bool(translation_contract_info.get('has_translations_only', False)))} "
+            f"use_gt={int(bool(translation_contract_info.get('has_use_gt', False)))} "
+            f"no_git={int(bool(translation_contract_info.get('has_no_git', False)))} "
+            f"priority_gate={int(bool(translation_contract_info.get('priority_gate_enabled', False)))} "
+            f"priority_langs=[{priority_langs}] pending=[{pending_langs}]"
+        )
+        sev = str(translation_contract_info.get("severity", "ok") or "ok").lower()
+        reason = str(translation_contract_info.get("reason", "unknown") or "unknown")
+        if sev == "critical":
+            issues.append(f"WORKER_TRANSLATION_CONTRACT_BROKEN: {desc} reason={reason}")
+        elif sev == "warning":
+            warnings.append(f"WORKER_TRANSLATION_CONTRACT_WARNING: {desc} reason={reason}")
+        else:
+            ok_checks.append(f"worker_translation_contract_ok ({desc})")
+except Exception as e:
+    warnings.append(f"WORKER_TRANSLATION_CONTRACT_CHECK_ERROR: {e}")
+
 # ── 6. Guardian health spójny ──────────────────────────────────────────
 try:
     with open(os.path.join(status_dir, "guardian_health.json"), encoding="utf-8") as f:
@@ -2358,6 +2389,7 @@ doctor_report = {
     "metrics_drift": metrics_drift_info if isinstance(metrics_drift_info, dict) else {},
     "priority_gate_watch": priority_gate_watch_info if isinstance(priority_gate_watch_info, dict) else {},
     "worker_process_watch": worker_process_watch_info if isinstance(worker_process_watch_info, dict) else {},
+    "translation_contract": translation_contract_info if isinstance(translation_contract_info, dict) else {},
     "thresholds_snapshot": {
         "source_of_truth": "statusd_thresholds_file",
         "config_file": thresholds_file,

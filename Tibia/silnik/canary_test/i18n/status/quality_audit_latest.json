@@ -1,23 +1,16 @@
 {
-  "timestamp": "2026-02-14T11:03:51.219396Z",
+  "timestamp": "2026-02-14T11:11:27.785819Z",
   "checked_entries": 100,
-  "issues_found": 3,
+  "issues_found": 2,
   "issues_by_type": {
-    "identical_to_en_exempt": 19,
-    "artifact_token": 3,
-    "suspicious_log_low": 141,
-    "suspicious_log_critical": 56,
-    "suspicious_log_high": 3,
+    "artifact_token": 2,
+    "identical_to_en_exempt": 9,
+    "suspicious_log_low": 139,
+    "suspicious_log_critical": 57,
+    "suspicious_log_high": 4,
     "suspicious_rejected_critical": 200
   },
   "issues": [
-    {
-      "key": "npc.raymond_striker.multi_21",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "In the tavern, the pirates feel safe and plan their next strikes. Study ALL of their maps and plans lying around ...",
-      "translated": "En la taberna, los piratas se sienten seguros y planean sus próximos ataques. Estudia TODOS sus mapas y planos que hay por ahí..."
-    },
     {
       "key": "npc.riddler.say_12",
       "lang": "es",

@@ -2,23 +2,22 @@
   "lang": "sk",
   "script_group": "latin",
   "total_keys": 53586,
-  "translated": 30832,
-  "identical_to_en": 23974,
-  "placeholder_keys": 20599,
-  "coverage_pct": 57.5,
-  "issues_total": 6121,
+  "translated": 30769,
+  "identical_to_en": 29995,
+  "placeholder_keys": 20662,
+  "coverage_pct": 57.4,
+  "issues_total": 5,
   "issues_by_type": {
-    "V3_empty": 6113,
-    "V1_placeholder_mismatch": 7,
+    "V1_placeholder_mismatch": 4,
     "V5_pipe_mismatch": 1
   },
   "issues_by_severity": {
-    "CRITICAL": 8,
+    "CRITICAL": 5,
     "HIGH": 0,
     "MEDIUM": 0,
-    "LOW": 6113
+    "LOW": 0
   },
-  "score": 98.9,
+  "score": 100.0,
   "worst_keys": [
     {
       "key": "scripts.actions_rewards.msg_1",
@@ -39,24 +38,6 @@
       "severity": "CRITICAL"
     },
     {
-      "key": "server.game.msg_32",
-      "category": "server",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "server.player.msg_11",
-      "category": "server",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "server.spells.msg_3",
-      "category": "server",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
       "key": "talkaction.online.msg_summary",
       "category": "talkactions",
       "type": "V1_placeholder_mismatch",
@@ -67,87 +48,15 @@
       "category": "talkactions",
       "type": "V5_pipe_mismatch",
       "severity": "CRITICAL"
-    },
-    {
-      "key": "npc.a_majestic_warwolf.say_1",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_majestic_warwolf.say_2",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_prisoner.say_12",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_prisoner.say_3",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_prisoner.say_4",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_prisoner.say_5",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_prisoner.say_6",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_prisoner.say_7",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_prisoner.say_8",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_prisoner.say_9",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_restless_soul.multi_1",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_restless_soul.multi_2",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
     }
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 461,
+    "issues_total": 406,
     "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 61,
-    "auto_fix_applied": 48
+    "length_ratio": 6,
+    "auto_fix_applied": 40
   },
-  "validated_at": "2026-02-14T10:58:54.730671Z"
+  "validated_at": "2026-02-14T11:24:52.203005Z"
 }

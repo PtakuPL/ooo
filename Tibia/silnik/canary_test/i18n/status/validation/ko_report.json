@@ -3,12 +3,11 @@
   "script_group": "cjk",
   "total_keys": 53586,
   "translated": 35756,
-  "identical_to_en": 28597,
+  "identical_to_en": 34550,
   "placeholder_keys": 15675,
   "coverage_pct": 66.7,
-  "issues_total": 6126,
+  "issues_total": 13,
   "issues_by_type": {
-    "V3_empty": 6113,
     "V1_placeholder_mismatch": 7,
     "V2_length_ratio": 3,
     "script_cjk_ratio": 1,
@@ -19,9 +18,9 @@
     "CRITICAL": 8,
     "HIGH": 1,
     "MEDIUM": 4,
-    "LOW": 6113
+    "LOW": 0
   },
-  "score": 99.1,
+  "score": 99.9,
   "worst_keys": [
     {
       "key": "scripts.actions_rewards.msg_1",
@@ -100,57 +99,15 @@
       "category": "achievements",
       "type": "V2_length_ratio",
       "severity": "MEDIUM"
-    },
-    {
-      "key": "npc.a_majestic_warwolf.say_1",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_majestic_warwolf.say_2",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_prisoner.say_12",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_prisoner.say_3",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_prisoner.say_4",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_prisoner.say_5",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_prisoner.say_6",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
     }
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 477,
+    "issues_total": 424,
     "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 77,
+    "length_ratio": 24,
     "auto_fix_applied": 80
   },
-  "validated_at": "2026-02-14T11:02:01.230147Z"
+  "validated_at": "2026-02-14T11:25:22.393053Z"
 }

@@ -1,14 +1,13 @@
 {
   "lang": "ms",
   "script_group": "latin",
-  "total_keys": 52538,
-  "translated": 34648,
-  "identical_to_en": 27912,
+  "total_keys": 53586,
+  "translated": 35696,
+  "identical_to_en": 34801,
   "placeholder_keys": 15735,
-  "coverage_pct": 65.9,
-  "issues_total": 6155,
+  "coverage_pct": 66.6,
+  "issues_total": 11,
   "issues_by_type": {
-    "V3_empty": 6144,
     "V1_placeholder_mismatch": 7,
     "V4_artifact": 2,
     "V6_newline_mismatch": 1,
@@ -18,9 +17,9 @@
     "CRITICAL": 8,
     "HIGH": 2,
     "MEDIUM": 1,
-    "LOW": 6144
+    "LOW": 0
   },
-  "score": 99.0,
+  "score": 99.9,
   "worst_keys": [
     {
       "key": "scripts.actions_rewards.msg_1",
@@ -87,69 +86,15 @@
       "category": "books",
       "type": "V6_newline_mismatch",
       "severity": "MEDIUM"
-    },
-    {
-      "key": "npc.a_dead_bureaucrat1.say_8",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_dead_bureaucrat1.say_9",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_dead_bureaucrat2.say_1",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_dead_bureaucrat3.say_2",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_dead_bureaucrat3.say_3",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_dead_bureaucrat3.say_4",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_dead_bureaucrat4.say_2",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_dead_bureaucrat4.say_3",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_dead_bureaucrat4.say_4",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
     }
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 459,
-    "consistency": 1,
+    "issues_total": 406,
+    "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 58,
-    "auto_fix_applied": 78
+    "length_ratio": 6,
+    "auto_fix_applied": 69
   },
-  "validated_at": "2026-02-14T10:53:13.599133Z"
+  "validated_at": "2026-02-14T11:19:15.480590Z"
 }

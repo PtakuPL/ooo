@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-02-14T11:00:07.701274Z",
+  "timestamp": "2026-02-14T11:26:38.513866Z",
   "cycle": 1,
-  "language": "pl",
-  "json_file": "otclient_data.json",
-  "translated": 0,
+  "language": "es",
+  "json_file": "monsters.json",
+  "translated": 74,
   "placeholders": 0,
-  "guard_fail": 3,
+  "guard_fail": 6,
   "guard": {
     "placeholder": 0,
     "command": 0,
@@ -13,5 +13,5 @@
   },
   "strict_missing_file": 0,
   "strict_missing_key": 0,
-  "strict_skipped_done": 72
+  "strict_skipped_done": 5798
 }

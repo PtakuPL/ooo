@@ -3,12 +3,11 @@
   "script_group": "latin",
   "total_keys": 53586,
   "translated": 45623,
-  "identical_to_en": 23806,
+  "identical_to_en": 29756,
   "placeholder_keys": 7789,
   "coverage_pct": 85.1,
-  "issues_total": 6377,
+  "issues_total": 283,
   "issues_by_type": {
-    "V3_empty": 6094,
     "V1_placeholder_mismatch": 270,
     "V6_newline_mismatch": 8,
     "V4_artifact": 4,
@@ -18,9 +17,9 @@
     "CRITICAL": 271,
     "HIGH": 4,
     "MEDIUM": 8,
-    "LOW": 6094
+    "LOW": 0
   },
-  "score": 97.5,
+  "score": 98.2,
   "worst_keys": [
     {
       "key": "html.monsters.html.text2",
@@ -145,11 +144,11 @@
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 522,
-    "consistency": 70,
+    "issues_total": 466,
+    "consistency": 52,
     "pl_reference": 400,
-    "length_ratio": 52,
+    "length_ratio": 14,
     "auto_fix_applied": 72
   },
-  "validated_at": "2026-02-14T11:02:05.141951Z"
+  "validated_at": "2026-02-14T11:21:34.122057Z"
 }

@@ -3,12 +3,11 @@
   "script_group": "latin",
   "total_keys": 53586,
   "translated": 35779,
-  "identical_to_en": 28370,
+  "identical_to_en": 34325,
   "placeholder_keys": 15652,
   "coverage_pct": 66.8,
-  "issues_total": 6125,
+  "issues_total": 12,
   "issues_by_type": {
-    "V3_empty": 6113,
     "V1_placeholder_mismatch": 7,
     "V4_artifact": 3,
     "V6_newline_mismatch": 1,
@@ -18,9 +17,9 @@
     "CRITICAL": 8,
     "HIGH": 3,
     "MEDIUM": 1,
-    "LOW": 6113
+    "LOW": 0
   },
-  "score": 99.1,
+  "score": 99.9,
   "worst_keys": [
     {
       "key": "scripts.actions_rewards.msg_1",
@@ -93,63 +92,15 @@
       "category": "books",
       "type": "V6_newline_mismatch",
       "severity": "MEDIUM"
-    },
-    {
-      "key": "npc.a_majestic_warwolf.say_1",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_majestic_warwolf.say_2",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_prisoner.say_12",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_prisoner.say_3",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_prisoner.say_4",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_prisoner.say_5",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_prisoner.say_6",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_prisoner.say_7",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
     }
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 466,
+    "issues_total": 409,
     "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 66,
-    "auto_fix_applied": 79
+    "length_ratio": 9,
+    "auto_fix_applied": 78
   },
-  "validated_at": "2026-02-14T11:00:22.753599Z"
+  "validated_at": "2026-02-14T11:19:46.703402Z"
 }

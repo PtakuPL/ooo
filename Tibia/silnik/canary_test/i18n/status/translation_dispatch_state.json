@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-02-14T11:06:00.679006Z",
-  "cycle_counter": 511,
-  "last_target_key": "pl:items.json",
-  "last_pending_total": 8739,
+  "timestamp": "2026-02-14T11:26:39.600033Z",
+  "cycle_counter": 516,
+  "last_target_key": "pl:server.json",
+  "last_pending_total": 16,
   "last_tier": 1,
-  "last_cat_priority": 0,
-  "candidates_count": 37,
-  "active_candidates_count": 31,
+  "last_cat_priority": 3,
+  "candidates_count": 40,
+  "active_candidates_count": 34,
   "skipped_backoff": 6,
   "skipped_guard_fail": 0,
   "guard_fail_blacklist": {},
@@ -298,8 +298,8 @@
       "pl"
     ],
     "lang_completion": {
-      "es": 87.54,
-      "pl": 75.3
+      "es": 83.84,
+      "pl": 74.41
     }
   }
 }

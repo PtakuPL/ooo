@@ -3,12 +3,11 @@
   "script_group": "latin",
   "total_keys": 53586,
   "translated": 30949,
-  "identical_to_en": 23543,
+  "identical_to_en": 29585,
   "placeholder_keys": 20482,
   "coverage_pct": 57.8,
-  "issues_total": 6084,
+  "issues_total": 9,
   "issues_by_type": {
-    "V3_empty": 6075,
     "V1_placeholder_mismatch": 7,
     "V4_artifact": 1,
     "V5_pipe_mismatch": 1
@@ -17,9 +16,9 @@
     "CRITICAL": 8,
     "HIGH": 1,
     "MEDIUM": 0,
-    "LOW": 6075
+    "LOW": 0
   },
-  "score": 98.9,
+  "score": 99.9,
   "worst_keys": [
     {
       "key": "scripts.actions_rewards.msg_1",
@@ -74,81 +73,15 @@
       "category": "achievements",
       "type": "V4_artifact",
       "severity": "HIGH"
-    },
-    {
-      "key": "npc.a_sleeping_dragon.multi_32",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_sleeping_dragon.multi_33",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_sleeping_dragon.multi_4",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_sleeping_dragon.multi_5",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_sleeping_dragon.multi_6",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_sleeping_dragon.multi_7",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_sleeping_dragon.multi_8",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_sleeping_dragon.multi_9",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_sleeping_dragon.say_1",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_sleeping_dragon.say_10",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_sleeping_dragon.say_11",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
     }
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 467,
-    "consistency": 1,
+    "issues_total": 409,
+    "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 66,
+    "length_ratio": 9,
     "auto_fix_applied": 33
   },
-  "validated_at": "2026-02-14T11:05:40.147537Z"
+  "validated_at": "2026-02-14T11:13:20.628887Z"
 }

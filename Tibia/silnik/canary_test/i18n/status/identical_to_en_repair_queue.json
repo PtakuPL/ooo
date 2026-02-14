@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-14T11:00:49.921204Z",
+  "timestamp": "2026-02-14T11:23:30.658729Z",
   "priority_langs": [
     "es",
     "pl",
@@ -65,66 +65,66 @@
     "items.json",
     "monsters.json"
   ],
-  "entries_total": 1243,
+  "entries_total": 1234,
   "entries_by_lang": {
-    "es": 4033,
-    "pl": 481,
-    "cs": 15430,
-    "de": 10322,
-    "fr": 10014,
-    "hu": 15507,
-    "it": 15200,
-    "nl": 10778,
-    "pt": 15216,
-    "ru": 17317,
-    "sk": 15600,
-    "tr": 15069,
-    "ar": 18308,
-    "az": 15352,
-    "bg": 17236,
-    "bn": 16704,
-    "bs": 15640,
-    "da": 15503,
-    "el": 15499,
-    "et": 15425,
-    "fa": 16755,
-    "fi": 15500,
-    "he": 17112,
-    "hi": 17071,
-    "hr": 15469,
-    "hy": 17162,
-    "id": 17067,
-    "ja": 17120,
-    "ka": 17127,
-    "kk": 15542,
-    "ko": 17151,
-    "lt": 15533,
-    "lv": 15542,
-    "mk": 15363,
-    "ml": 17156,
-    "ms": 17106,
-    "no": 15609,
-    "ro": 10819,
-    "sl": 15652,
-    "sq": 15608,
-    "sr": 15694,
-    "sv": 15710,
-    "sw": 17291,
-    "ta": 17329,
-    "te": 17325,
-    "th": 17335,
-    "tl": 17411,
-    "uk": 15732,
-    "uz": 15687,
-    "vi": 17416,
-    "zh": 17578,
-    "zh_TW": 17433
+    "es": 5136,
+    "pl": 480,
+    "cs": 21194,
+    "de": 14406,
+    "fr": 15619,
+    "hu": 21255,
+    "it": 20911,
+    "nl": 16480,
+    "pt": 20918,
+    "ru": 23065,
+    "sk": 21363,
+    "tr": 20828,
+    "ar": 22347,
+    "az": 21046,
+    "bg": 22960,
+    "bn": 22347,
+    "bs": 21426,
+    "da": 21288,
+    "el": 21270,
+    "et": 21164,
+    "fa": 22457,
+    "fi": 21246,
+    "he": 22816,
+    "hi": 22743,
+    "hr": 21199,
+    "hy": 22913,
+    "id": 22766,
+    "ja": 22846,
+    "ka": 22863,
+    "kk": 21264,
+    "ko": 22855,
+    "lt": 21256,
+    "lv": 21268,
+    "mk": 21064,
+    "ml": 22861,
+    "ms": 22843,
+    "no": 21349,
+    "ro": 16597,
+    "sl": 21438,
+    "sq": 21320,
+    "sr": 21437,
+    "sv": 21465,
+    "sw": 23009,
+    "ta": 23062,
+    "te": 23025,
+    "th": 23037,
+    "tl": 23153,
+    "uk": 21506,
+    "uz": 21438,
+    "vi": 23189,
+    "zh": 23398,
+    "zh_TW": 23208
   },
   "top_entries": [
     {
       "lang": "es",
       "json_file": "npc.json",
-      "identical_to_en": 1122,
+      "identical_to_en": 2225,
       "domain_priority": 0
     },
     {
@@ -244,7 +244,7 @@
     {
       "lang": "pl",
       "json_file": "monsters.json",
-      "identical_to_en": 40,
+      "identical_to_en": 39,
       "domain_priority": 8
     },
     {
@@ -310,7 +310,7 @@
     {
       "lang": "cs",
       "json_file": "npc.json",
-      "identical_to_en": 6352,
+      "identical_to_en": 12139,
       "domain_priority": 0
     },
     {
@@ -381,12 +381,6 @@
     },
     {
       "lang": "cs",
-      "json_file": "achievements.json",
-      "identical_to_en": 91,
-      "domain_priority": 9
-    },
-    {
-      "lang": "cs",
       "json_file": "libs.json",
       "identical_to_en": 82,
       "domain_priority": 9
@@ -395,6 +389,12 @@
       "lang": "cs",
       "json_file": "npclib.json",
       "identical_to_en": 80,
+      "domain_priority": 9
+    },
+    {
+      "lang": "cs",
+      "json_file": "achievements.json",
+      "identical_to_en": 68,
       "domain_priority": 9
     },
     {
@@ -454,7 +454,7 @@
     {
       "lang": "de",
       "json_file": "npc.json",
-      "identical_to_en": 3141,
+      "identical_to_en": 7322,
       "domain_priority": 0
     },
     {
@@ -514,7 +514,7 @@
     {
       "lang": "de",
       "json_file": "books.json",
-      "identical_to_en": 245,
+      "identical_to_en": 148,
       "domain_priority": 9
     },
     {
@@ -598,7 +598,7 @@
     {
       "lang": "fr",
       "json_file": "npc.json",
-      "identical_to_en": 2978,
+      "identical_to_en": 8766,
       "domain_priority": 0
     },
     {
@@ -664,7 +664,7 @@
     {
       "lang": "fr",
       "json_file": "books.json",
-      "identical_to_en": 329,
+      "identical_to_en": 146,
       "domain_priority": 9
     },
     {
@@ -736,7 +736,7 @@
     {
       "lang": "hu",
       "json_file": "npc.json",
-      "identical_to_en": 6355,
+      "identical_to_en": 12142,
       "domain_priority": 0
     },
     {
@@ -802,7 +802,7 @@
     {
       "lang": "hu",
       "json_file": "achievements.json",
-      "identical_to_en": 169,
+      "identical_to_en": 130,
       "domain_priority": 9
     },
     {
@@ -880,7 +880,7 @@
     {
       "lang": "it",
       "json_file": "npc.json",
-      "identical_to_en": 6362,
+      "identical_to_en": 12155,
       "domain_priority": 0
     },
     {
@@ -951,12 +951,6 @@
     },
     {
       "lang": "it",
-      "json_file": "achievements.json",
-      "identical_to_en": 110,
-      "domain_priority": 9
-    },
-    {
-      "lang": "it",
       "json_file": "libs.json",
       "identical_to_en": 82,
       "domain_priority": 9
@@ -965,6 +959,12 @@
       "lang": "it",
       "json_file": "npclib.json",
       "identical_to_en": 80,
+      "domain_priority": 9
+    },
+    {
+      "lang": "it",
+      "json_file": "achievements.json",
+      "identical_to_en": 28,
       "domain_priority": 9
     },
     {
@@ -1018,7 +1018,7 @@
     {
       "lang": "nl",
       "json_file": "npc.json",
-      "identical_to_en": 2998,
+      "identical_to_en": 8814,
       "domain_priority": 0
     },
     {
@@ -1078,7 +1078,7 @@
     {
       "lang": "nl",
       "json_file": "books.json",
-      "identical_to_en": 598,
+      "identical_to_en": 484,
       "domain_priority": 9
     },
     {
@@ -1156,7 +1156,7 @@
     {
       "lang": "pt",
       "json_file": "npc.json",
-      "identical_to_en": 6369,
+      "identical_to_en": 12157,
       "domain_priority": 0
     },
     {
@@ -1222,7 +1222,7 @@
     {
       "lang": "pt",
       "json_file": "achievements.json",
-      "identical_to_en": 215,
+      "identical_to_en": 129,
       "domain_priority": 9
     },
     {
@@ -1294,7 +1294,7 @@
     {
       "lang": "ru",
       "json_file": "npc.json",
-      "identical_to_en": 6361,
+      "identical_to_en": 12154,
       "domain_priority": 0
     },
     {
@@ -1325,7 +1325,7 @@
   "selected": {
     "lang": "es",
     "json_file": "npc.json",
-    "identical_to_en": 1122,
+    "identical_to_en": 2225,
     "domain_priority": 0
   }
 }

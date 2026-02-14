@@ -111,7 +111,7 @@
   "client.htmlparser.text1": "ElementНетde",
   "client.htmlparser.text2": "voidelements",
   "client.htmlparser.text3": "Невозможно найти хотя бы два неиспользуемых байт-кода в этом HTML-коде. Они нужны, чтобы экранировать плейсхолдеры в квадратных скобках внутри тегов.",
-  "client.htmlparser.text4": ".. -- Match",
+  "client.htmlparser.text4": "[EN] ..                  -- Match",
   "client.htmlparser.text5": ".. -- непойманное начало",
   "client.http.text1": "Mozilla/5.0",
   "client.http.text2": "HTTP.get is Нетt supported",

@@ -4,12 +4,12 @@
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-14T10:58:08.588376Z",
-  "issues_total": 463,
+  "checked_at": "2026-02-14T11:17:30.548106Z",
+  "issues_total": 406,
   "issues_by_type": {
     "consistency_in_language": 0,
     "pl_reference_missing_translation": 400,
-    "length_ratio_crosscheck": 63
+    "length_ratio_crosscheck": 6
   },
   "consistency_issues": [],
   "pl_reference_issues": [
@@ -590,267 +590,6 @@
       "lang": "Robo Chop"
     },
     {
-      "key": "achievement.363.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You have defeated the glooth bomb and chopped down a lot of metal monsters on your way.",
-      "pl": "Masz I. the glooth I. i chopped I. jeden lot z metal potwory na twój way.",
-      "lang": "You have defeated the glooth bomb and chopped down a lot of metal monsters on your way."
-    },
-    {
-      "key": "achievement.364.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Go with da Lava Flow",
-      "pl": "Go z da Lawa I.",
-      "lang": "Go with da Lava Flow"
-    },
-    {
-      "key": "achievement.364.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You escaped the glowing hot lava death trap, Professor Maxxen has set for you - Captain Caveworm is indeed proud!",
-      "pl": "Ty escaped the entuzjastyczny gorący lawa I. I., Profesor Maxxen ma ustaw dla ty - I. Caveworm jest faktycznie, naprawdę dumny!",
-      "lang": "You escaped the glowing hot lava death trap, Professor Maxxen has set for you - Captain Caveworm is indeed proud!"
-    },
-    {
-      "key": "achievement.365.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Wail of the Banshee",
-      "pl": "I. z the Banshee",
-      "lang": "Wail of the Banshee"
-    },
-    {
-      "key": "achievement.365.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You saw the Crystal Gardens with all their stunning beauty and survived the equally impressive monsters there. In the end you discovered a great evil and destroyed it with the help of a banshee who was not even aware of her support.",
-      "pl": "Ty saw the Crystal I. z wszystkie ich stunning I. i survived the równo robiący wrażenie potwory there. W the I. ty odkrywać jeden I. I. i niszczyć to z the help z jeden banshee kto był Niet I. aware z her I..",
-      "lang": "You saw the Crystal Gardens with all their stunning beauty and survived the equally impressive monsters there. In the end you discovered a great evil and destroyed it with the help of a banshee who was not even aware of her support."
-    },
-    {
-      "key": "achievement.366.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Publicity",
-      "pl": "Reklama",
-      "lang": "Publicity"
-    },
-    {
-      "key": "achievement.366.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You are a man of the public. Or of good publicity at least. Through your efforts in advertising the airtight cloth, Zeronex might yet be redeemed - and Rathleton might yet see its first working Gloud Ship.",
-      "pl": "Jesteś jeden man z the I.. Lub z I. reklama w najmniej. Through twój wysiłek w reklama, ogłoszenia the szczelny materiał, Zeronex might jeszcze być ratować, okupywać - i Rathleton might jeszcze I. jego, jej, ich, swój I. I. Gloud I..",
-      "lang": "You are a man of the public. Or of good publicity at least. Through your efforts in advertising the airtight cloth, Zeronex might yet be redeemed - and Rathleton might yet see its first working Gloud Ship."
-    },
-    {
-      "key": "achievement.367.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Snake Charmer",
-      "pl": "Wąż I.",
-      "lang": "Snake Charmer"
-    },
-    {
-      "key": "achievement.367.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "By restoring the Everhungry Altar, you charmed the Fire-Feathered Sea Serpent back into its fitful sleep, twenty miles beneath the sea.",
-      "pl": "By restoring the Everhungry Ołtarz, ty I. the Fire-Pióro Morze Wąż I. a. do jego, jej, ich, swój niespokojny I., dwadzieścia mila pod the morze.",
-      "lang": "By restoring the Everhungry Altar, you charmed the Fire-Feathered Sea Serpent back into its fitful sleep, twenty miles beneath the sea."
-    },
-    {
-      "key": "achievement.368.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hoard of the Dragon",
-      "pl": "I. z the Smok",
-      "lang": "Hoard of the Dragon"
-    },
-    {
-      "key": "achievement.368.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Your adventurous way through countless dragon lairs earned you a pretty treasure - and surely the enmity of many a dragon.",
-      "pl": "Twój rzutki way through countless smok legowisko, pieczara zarabiać na, zarabiać ty jeden I. I. - i na pewno, z pewnością the wrogość z wiele, dużo jeden smok.",
-      "lang": "Your adventurous way through countless dragon lairs earned you a pretty treasure - and surely the enmity of many a dragon."
-    },
-    {
-      "key": "achievement.370.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Little Ball of Wool",
-      "pl": "Little I. z Wełna",
-      "lang": "Little Ball of Wool"
-    },
-    {
-      "key": "achievement.370.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You found a lost sheep and thus a steady source of black wool. But careful: don't get entangled.",
-      "pl": "Ty znaleziono jeden I. owca i toteż, dlatego jeden I. źródło z I. wełna. I. ostrożny: don't get entangled.",
-      "lang": "You found a lost sheep and thus a steady source of black wool. But careful: don't get entangled."
-    },
-    {
-      "key": "achievement.371.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Luminous Kitty",
-      "pl": "LumiNieus Pula, wspólne pieniądze",
-      "lang": "Luminous Kitty"
-    },
-    {
-      "key": "achievement.371.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You made some efforts to bring a little more light into the world. And what a nice present you got in return!",
-      "pl": "Ty zrobiony I. wysiłek do bring jeden little more I. a. do the I.. I I. jeden delikatny, subtelny present ty got w I.!",
-      "lang": "You made some efforts to bring a little more light into the world. And what a nice present you got in return!"
-    },
-    {
-      "key": "achievement.372.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Right Tone",
-      "pl": "The I. I.",
-      "lang": "The Right Tone"
-    },
-    {
-      "key": "achievement.372.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "By setting the right tone you convinced a crystal wolf to accompany you. Remember it is made of crystal, though, so be careful in a banshee's presence.",
-      "pl": "By oprawa the I. I. ty convinced jeden crystal wolf do towarzyszyć ty. Pamiętać, przypominać sobie, przypominać to jest zrobiony z crystal, I., I. być ostrożny w jeden banshee's I..",
-      "lang": "By setting the right tone you convinced a crystal wolf to accompany you. Remember it is made of crystal, though, so be careful in a banshee's presence."
-    },
-    {
-      "key": "achievement.373.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Loyal Lad",
-      "pl": "Lojalny Młodzieniec",
-      "lang": "Loyal Lad"
-    },
-    {
-      "key": "achievement.373.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Having a loyal friend alongside is comforting to every adventurer. If only this lad was not so stubborn...",
-      "pl": "Having jeden lojalny przyjaciel, dobry kolega, kolega obok jest I. do I. awanturnik. If tylko I. młodzieniec był Niet I. uparty...",
-      "lang": "Having a loyal friend alongside is comforting to every adventurer. If only this lad was not so stubborn..."
-    },
-    {
-      "key": "achievement.374.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Dragon Mimicry",
-      "pl": "Smok Naśladownictwo",
-      "lang": "Dragon Mimicry"
-    },
-    {
-      "key": "achievement.374.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "It's not really a dragon, but rather a kind of chimera. Nonetheless a decent mount to impress any passer-by.",
-      "pl": "To Niet I. jeden smok, I. raczej jeden I. z chimera. Nienetheless jeden przyzwoity I. do wywierać wrażenie dowolny I.-by.",
-      "lang": "It's not really a dragon, but rather a kind of chimera. Nonetheless a decent mount to impress any passer-by."
-    },
-    {
-      "key": "achievement.375.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Scales and Tail",
-      "pl": "I. i I.",
-      "lang": "Scales and Tail"
-    },
-    {
-      "key": "achievement.375.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Muggy Plains are a dangerous place, often raided by dragons. But that was your luck: thus you found this scaly little guy.",
-      "pl": "The Duszny, wilgotny I. są jeden groźny, niebezpieczny I., często I. by smok. I. that był twój good luck: toteż, dlatego ty znaleziono I. łuskowaty little facet.",
-      "lang": "The Muggy Plains are a dangerous place, often raided by dragons. But that was your luck: thus you found this scaly little guy."
-    },
-    {
-      "key": "achievement.376.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "There are many delusions and phantasms in the desert. You saw a false oasis with fruit-bearing palm trees. Instead of water and refreshment, however, you found a dromedary in the end. What a useful Fata Morgana!",
-      "pl": "Są wiele, dużo złudzenie i phantasms w the desert. Ty saw jeden I. oaza z I.-postawa, obejście I. drzewo. Instead z I. i orzeźwienie się, jednak, ty znaleziono jeden dromader w the I.. I. jeden użyteczny Fata Morgana!",
-      "lang": "There are many delusions and phantasms in the desert. You saw a false oasis with fruit-bearing palm trees. Instead of water and refreshment, however, you found a dromedary in the end. What a useful Fata Morgana!"
-    },
-    {
-      "key": "achievement.377.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Fabled Construction",
-      "pl": "Fabled Budowa",
-      "lang": "Fabled Construction"
-    },
-    {
-      "key": "achievement.377.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Finding all the pieces to this complicated vehicle was one kind of a challenge. However, what you built in the end is rather a fabled than a feeble construction.",
-      "pl": "Rezultat, stwierdzenie wszystkie the I. do I. skomplikowany pojazd był I. I. z jeden I.. Jednak, I. ty zbudowany w the I. jest raczej jeden fabled z niż jeden słaby, wątły budowa.",
-      "lang": "Finding all the pieces to this complicated vehicle was one kind of a challenge. However, what you built in the end is rather a fabled than a feeble construction."
-    },
-    {
-      "key": "achievement.378.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Mind the Dog!",
-      "pl": "Mind the I.!",
-      "lang": "Mind the Dog!"
-    },
-    {
-      "key": "achievement.378.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Barking dogs never bite, as the saying goes. But this one clearly tried. In the end, however, you were able to walk the dog - ahem, gnarlhound.",
-      "pl": "I. I. nigdy I., as the powiedzenie goes. I. I. I. clearly tried. W the I., jednak, ty były zdolny do I. the I. - ahem, gnarlhound.",
-      "lang": "Barking dogs never bite, as the saying goes. But this one clearly tried. In the end, however, you were able to walk the dog - ahem, gnarlhound."
-    },
-    {
-      "key": "achievement.379.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "This magnetic beast attracted you in a very literal way. Or was it attracted by your metal equipment? Anyway, you seem to be stuck together now.",
-      "pl": "I. magnetyczny zwierzę przyciągać ty w jeden I. dosłowny way. Lub był to przyciągać by twój metal wyposażenie, ekwipunek, sprzęt? W każdym razie, ty a. wydawać się być, wydawać się, zdawać się do być be stuck razem Niew.",
-      "lang": "This magnetic beast attracted you in a very literal way. Or was it attracted by your metal equipment? Anyway, you seem to be stuck together now."
-    },
-    {
       "key": "achievement.380.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -858,24 +597,6 @@
       "en": "Golden Sands",
       "pl": "złotaen I.",
       "lang": "Golden Sands"
-    },
-    {
-      "key": "achievement.380.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Counting ten thousand grains of sand could not have been harder than gaining this impressive mount.",
-      "pl": "Liczba I. tysiąc ziarno z I. mógł Niet masz był harder z niż I. I. robiący wrażenie I..",
-      "lang": "Counting ten thousand grains of sand could not have been harder than gaining this impressive mount."
-    },
-    {
-      "key": "achievement.381.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Friend of Elves",
-      "pl": "Przyjaciel, dobry kolega, kolega z Elves",
-      "lang": "Friend of Elves"
     },
     {
       "key": "achievement.381.description",
@@ -3612,6 +3333,285 @@
       "en": "You need 5 players to fight with this boss.",
       "pl": "Potrzebujesz 5 graczy, aby walczyć z tym bossem.",
       "lang": "You need 5 players to fight with this boss."
+    },
+    {
+      "key": "actions.imbuement_shrine.msg_1",
+      "category": "actions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You can only use the shrine on an valid item.",
+      "pl": "Możesz użyć świątyni tylko na prawidłowym przedmiocie.",
+      "lang": "You can only use the shrine on an valid item."
+    },
+    {
+      "key": "actions.imbuement_shrine.msg_2",
+      "category": "actions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You did not collect enough knowledge from the ancient Shapers. Visit the Shaper temple in Montag for help.",
+      "pl": "Nie zebrałeś wystarczającej wiedzy od starożytnych Shaperów. Odwiedź świątynię Shaperów w Montag, aby uzyskać pomoc.",
+      "lang": "You did not collect enough knowledge from the ancient Shapers. Visit the Shaper temple in Montag for help."
+    },
+    {
+      "key": "actions.keys.msg_1",
+      "category": "actions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You have fifteen minutes to kill and loot this boss, else you will lose that chance.",
+      "pl": "Masz piętnaście minut, aby zabić i splądrować tego bossa, w przeciwnym razie stracisz tę szansę.",
+      "lang": "You have fifteen minutes to kill and loot this boss, else you will lose that chance."
+    },
+    {
+      "key": "actions.keys.msg_2",
+      "category": "actions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You have entered an ancient demon prison cell!",
+      "pl": "Wkroczyłeś do starożytnej celi więziennej demonów!",
+      "lang": "You have entered an ancient demon prison cell!"
+    },
+    {
+      "key": "actions.quests.msg_1",
+      "category": "actions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "It is empty.",
+      "pl": "To jest puste.",
+      "lang": "It is empty."
+    },
+    {
+      "key": "actions.quests.msg_2",
+      "category": "actions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "It is empty.",
+      "pl": "To jest puste.",
+      "lang": "It is empty."
+    },
+    {
+      "key": "actions.random_items.say_1",
+      "category": "actions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You found ",
+      "pl": "Znalazłeś ",
+      "lang": "You found "
+    },
+    {
+      "key": "actions.random_items.say_2",
+      "category": "actions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You found nothing useful.",
+      "pl": "Nie znalazłeś nic użytecznego.",
+      "lang": "You found nothing useful."
+    },
+    {
+      "key": "actions.random_items.say_3",
+      "category": "actions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You found nothing useful.",
+      "pl": "Nie znalazłeś nic użytecznego.",
+      "lang": "You found nothing useful."
+    },
+    {
+      "key": "actions.premium_scroll.msg_max_days",
+      "category": "actions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You can not buy more than {max} days of premium account.",
+      "pl": "Nie możesz kupić więcej niż {max} dni konta premium.",
+      "lang": "You can not buy more than {max} days of premium account."
+    },
+    {
+      "key": "actions.hireling_foods.msg_too_full",
+      "category": "actions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You're still too full to eat any gourmet dishes for a while.",
+      "pl": "Nadal jesteś zbyt najedzony, aby przez jakiś czas jeść wykwintne dania.",
+      "lang": "You're still too full to eat any gourmet dishes for a while."
+    },
+    {
+      "key": "actions.outfit_items.msg_need_outfit",
+      "category": "actions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You need the outfit for this part.",
+      "pl": "Potrzebujesz stroju, aby odblokować tę część.",
+      "lang": "You need the outfit for this part."
+    },
+    {
+      "key": "actions.outfit_items.msg_already_own",
+      "category": "actions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You already own this outfit part.",
+      "pl": "Masz już tę część stroju.",
+      "lang": "You already own this outfit part."
+    },
+    {
+      "key": "actions.key_door.msg_wrong_key",
+      "category": "actions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "The key does not match.",
+      "pl": "Klucz nie pasuje.",
+      "lang": "The key does not match."
+    },
+    {
+      "key": "actions.gamestore.msg_no_rookgaard",
+      "category": "actions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Store don't have offers for rookgaard citizen.",
+      "pl": "Sklep nie ma ofert dla mieszkańców Rookgaardu.",
+      "lang": "Store don't have offers for rookgaard citizen."
+    },
+    {
+      "key": "actions.gamestore.msg_exhausted",
+      "category": "actions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You are exhausted.",
+      "pl": "Jesteś wyczerpany.",
+      "lang": "You are exhausted."
+    },
+    {
+      "key": "book.cursed_crystal.crystal_gardens_diary",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I did it! I reached the crystal gardens! What beauty and splendor I have seen down there. Even more: I discovered a small subterranean lake - but Harry was there before me. And he did something strange: He ringed a small, transparent looking bell and immediately a big whirl appeared in the water. I suppose this is the mysterious way deeper into the caves we sought after for so long. But Harry, the coward, didn't dare to dive into the water. Instead he left the caverns and headed back to the surface. I must have this bell!",
+      "pl": "I zrobił to! I reached the crystal I.! I. I. i splendor I masz seen I. there. I. more: I odkrywać jeden I. podziemny jezioro - I. Harry był there I. mnie, mi. I on zrobił coś dziwny: On ringed jeden I., przezroczysty looking dzwonek, dzwon i natychmiast jeden duży, wielki I. pojawiać się w the I.. I przypuszczać I. jest the tajemniczy way I. a. do the I. my sought after dla I. long. I. Harry, the coward, didn't dare do I. a. do the I.. Instead on I. the pieczara i I. I. do the I.. I musi masz I. dzwonek, dzwon!",
+      "lang": "I did it! I reached the crystal gardens! What beauty and splendor I have seen down there. Even more: I discovered a small subterranean lake - but Harry was there before me. And he did something strange: He ringed a small, transparent looking bell and immediately a big whirl appeared in the water. I suppose this is the mysterious way deeper into the caves we sought after for so long. But Harry, the coward, didn't dare to dive into the water. Instead he left the caverns and headed back to the surface. I must have this bell!"
+    },
+    {
+      "key": "book.dawnport.adventurers_guild_letter",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Brave adventurer,\n\nthe Adventurers' Guild bids you welcome as a new hero of the land.\n\nTake this adventurer's stone and use it in any city temple to instantly travel to our guild hall. If you should ever lose your adventurer's stone, you can replace it by talking to a priest in the temple.\nI hope you will be visiting us soon.\n\nKind regards,\nRotem, Head of the Adventurers' Guild",
+      "pl": "I. awanturnik, the Awanturnik' Gildia bids ty I. as jeden new bohater z the land. Take I. awanturnik stone i use to w dowolny miasto świątynia do instantly podróż do nasz gildia korytarz, przedpokój, hall. If ty a. powinien, powinna kiedykolwiek lose twój awanturnik stone, Lekarz rejonowyżesz zastępować to by I. do jeden ksiądz w the świątynia.\nI I. ty will być I. nas wkrótce, szybko. I. regards,\nRotem, I. z the Awanturnik' Gildia",
+      "lang": "Brave adventurer,\n\nthe Adventurers' Guild bids you welcome as a new hero of the land.\n\nTake this adventurer's stone and use it in any city temple to instantly travel to our guild hall. If you should ever lose your adventurer's stone, you can replace it by talking to a priest in the temple.\nI hope you will be visiting us soon.\n\nKind regards,\nRotem, Head of the Adventurers' Guild"
+    },
+    {
+      "key": "book.koshei.famous_inhabitants_page_2",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "PAGE 2\nLord Koshei the Curious\n-_-_-_-_-_-_-_-_-_-_-_-\nDate of birth: unknown\nAge: unknown\nHometown: unknown\nDate of death: unknown\nThere are not many things known about this man. He appeared out of nowhere and lived here for nearly ten years. Even though he was communicative, he never told anything about his profession or what he did for a living. First he lived in Darashia 2, Flat 11 for about two years. During that time he was roaming around, travelling the lands of Darama and often visiting the Bath of Dreams and the minotaur pyramid in the North.\nThen it was discovered that he had built a tower south of the mountains. It is unexplained how he managed to do that because no one has been seen to help him. Anyway, the remains of his tower are still there. ...",
+      "pl": "I. 2\nLord Koshei the Curious\n-_-_-_-_-_-_-_-_-_-_-_-\nI. z I.: nieznany\nI.: nieznany\nHometown: nieznany\nI. z I.: nieznany\nNie mata, podkładka wiele, dużo rzecz kNiewn o I. man. On pojawiać się out z Niewhere i lived tutaj, tu dla prawie I. a. rok. I. I. on był komunikatywny, rozmowny, on nigdy told cokolwiek o jego profesja, zawód lub I. on zrobił dla jeden I.. I. on lived w Darashia 2, I. 11 dla o dwa a. rok. Podczas, w czasie that czas on był włóczyć się, wędrować around, podróżling the lands z Darama i często I. the I. z I. i the miNietaur piramida w the Nierth.\nWtedy to był odkrywać that on miał zbudowany jeden I. I. z the góra. To jest unexplained jak on managed do robić that ponieważ, bo Nie I. ma był seen do help him. W każdym razie, the I. z jego I. są I. there....",
+      "lang": "PAGE 2\nLord Koshei the Curious\n-_-_-_-_-_-_-_-_-_-_-_-\nDate of birth: unknown\nAge: unknown\nHometown: unknown\nDate of death: unknown\nThere are not many things known about this man. He appeared out of nowhere and lived here for nearly ten years. Even though he was communicative, he never told anything about his profession or what he did for a living. First he lived in Darashia 2, Flat 11 for about two years. During that time he was roaming around, travelling the lands of Darama and often visiting the Bath of Dreams and the minotaur pyramid in the North.\nThen it was discovered that he had built a tower south of the mountains. It is unexplained how he managed to do that because no one has been seen to help him. Anyway, the remains of his tower are still there. ..."
+    },
+    {
+      "key": "book.new_frontier.hidden_note",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Go to the secret door to the north",
+      "pl": "Go do the I. drzwi do the Nierth",
+      "lang": "Go to the secret door to the north"
+    },
+    {
+      "key": "book.otbm.1000_alchemical_uses_of_urine",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "1000 Alchemical Uses of Urine",
+      "pl": "1000 Alchemical Nas z Mocz",
+      "lang": "1000 Alchemical Uses of Urine"
+    },
+    {
+      "key": "book.otbm.1000_gold_10_fire_bugs",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "1000 gold 10 fire bugs for Dream Challenge",
+      "pl": "1000 złota 10 fire bugs dla I. I.",
+      "lang": "1000 gold 10 fire bugs for Dream Challenge"
+    },
+    {
+      "key": "book.otbm.1001_recipes_against_sweaty_hands",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "1001 Recipes Against Sweaty Hands",
+      "pl": "1001 Przepis kulinarny, przepis O Wywołujący poty Hands",
+      "lang": "1001 Recipes Against Sweaty Hands"
+    },
+    {
+      "key": "book.otbm.1001_ways_to_use_energy",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "1001 ways to use energy beams.",
+      "pl": "1001 ways do use energia I..",
+      "lang": "1001 ways to use energy beams."
+    },
+    {
+      "key": "book.otbm.100_gold_coins_equal_1",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "100 gold coins equal 1 platinum coin",
+      "pl": "100 złotych monet I. 1 I. moneta",
+      "lang": "100 gold coins equal 1 platinum coin"
+    },
+    {
+      "key": "book.otbm.100_gold_coins_equal_1_39c18279",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "100 gold coins equal 1 platinum coin",
+      "pl": "100 złotych monet I. 1 I. moneta",
+      "lang": "100 gold coins equal 1 platinum coin"
+    },
+    {
+      "key": "book.otbm.100_platinum_coins_equal_1",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "100 platinum coins equal 1 crystal coin",
+      "pl": "100 I. monety I. 1 crystal moneta",
+      "lang": "100 platinum coins equal 1 crystal coin"
+    },
+    {
+      "key": "book.otbm.100_platinum_coins_equal_1_648a8349",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "100 platinum coins equal 1 crystal coin",
+      "pl": "100 I. monety I. 1 crystal moneta",
+      "lang": "100 platinum coins equal 1 crystal coin"
+    },
+    {
+      "key": "book.otbm.1_be_respectful_and_considerate",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "1. Be respectful and considerate towards your comrades.",
+      "pl": "1. Być pełen szacunku i pełen względów, troskliwy towards twój towarzysz.",
+      "lang": "1. Be respectful and considerate towards your comrades."
+    },
+    {
+      "key": "book.otbm.1_discover_secret_of_necromants",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "1. Discover secret of necromants nectar",
+      "pl": "1. Odkrywać I. z necromants nektar",
+      "lang": "1. Discover secret of necromants nectar"
+    },
+    {
+      "key": "book.otbm.1_put_a_bunch_of",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "1. Put a bunch of sugar cane into the machine",
+      "pl": "1. Put jeden bunch z I. I. a. do the I.",
+      "lang": "1. Put a bunch of sugar cane into the machine"
     }
   ],
   "length_ratio_issues": [
@@ -3668,525 +3668,12 @@
       "en_len": 15,
       "lang_ratio": 1.067,
       "pl_ratio": 3.267
-    },
-    {
-      "key": "npc.alyxo.say_12",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.alyxo.say_15",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.alyxo.say_18",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.alyxo.say_21",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.alyxo.say_24",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.alyxo.say_6",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.alyxo.say_9",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.bo_ques.say_6",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 14,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.214
-    },
-    {
-      "key": "npc.broken_servant_sentry.say_5",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 119,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.286
-    },
-    {
-      "key": "npc.broken_servant_sentry.say_7",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 119,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.286
-    },
-    {
-      "key": "npc.chartan.multi_10",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 21,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.143
-    },
-    {
-      "key": "npc.chester_kahs.say_19",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 112,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.839
-    },
-    {
-      "key": "npc.chester_kahs.say_6",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 26,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.038
-    },
-    {
-      "key": "npc.commander_stone.say_18",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 21,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.81
-    },
-    {
-      "key": "npc.commander_stone.say_23",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 21,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.81
-    },
-    {
-      "key": "npc.commander_stone.say_6",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 21,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.81
-    },
-    {
-      "key": "npc.gnomaticus.say_3",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 27,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.296
-    },
-    {
-      "key": "npc.gnomeral.say_11",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 21,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.81
-    },
-    {
-      "key": "npc.gnomeral.say_16",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 21,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.81
-    },
-    {
-      "key": "npc.gnomeral.say_21",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 21,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.81
-    },
-    {
-      "key": "npc.gnomeral.say_5",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 21,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.81
-    },
-    {
-      "key": "npc.gregor.say_23",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 32,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.469
-    },
-    {
-      "key": "npc.gregor.say_26",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 32,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.469
-    },
-    {
-      "key": "npc.gregor.say_29",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 32,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.469
-    },
-    {
-      "key": "npc.gregor.say_32",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 32,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.469
-    },
-    {
-      "key": "npc.guard_saros.say_3",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 55,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.018
-    },
-    {
-      "key": "npc.hairycles.say_42",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 65,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.908
-    },
-    {
-      "key": "npc.hairycles.say_54",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 26,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.962
-    },
-    {
-      "key": "npc.hairycles.say_56",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 26,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.962
-    },
-    {
-      "key": "npc.hairycles.say_61",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 26,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.962
-    },
-    {
-      "key": "npc.henricus.say_28",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 8,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.25
-    },
-    {
-      "key": "npc.kallimae.say_3",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.kallimae.say_6",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.kallimae.say_9",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.karith.say_6",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 45,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.844
-    },
-    {
-      "key": "npc.lurik.say_2",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 22,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.864
-    },
-    {
-      "key": "npc.markwin.say_7",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 16,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.875
-    },
-    {
-      "key": "npc.narsai.say_3",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.narsai.say_6",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.pig.say_2",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 78,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.128
-    },
-    {
-      "key": "npc.saideh.say_3",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.sandomo.greet_msg_1",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 14,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.5
-    },
-    {
-      "key": "npc.santa_claus.say_1",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 28,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.821
-    },
-    {
-      "key": "npc.shimun.say_3",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.shimun.say_6",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.simon_the_beggar.say_27",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 25,
-      "lang_ratio": 0.0,
-      "pl_ratio": 3.08
-    },
-    {
-      "key": "npc.stricken_soul.multi_1",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 12,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.083
-    },
-    {
-      "key": "npc.stricken_soul.say_3",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 27,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.963
-    },
-    {
-      "key": "npc.tefrit.say_3",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.tefrit.say_6",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.tomruk_the_ruddy.say_3",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 81,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.827
-    },
-    {
-      "key": "npc.undal.say_14",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 27,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.963
-    },
-    {
-      "key": "npc.vanys.say_14",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 27,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.963
-    },
-    {
-      "key": "npc.wyda.say_1",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 24,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.875
-    },
-    {
-      "key": "npc.yonan.say_3",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.yonan.say_6",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.yonan.say_9",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 41,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.805
     }
   ],
   "auto_fix": {
     "attempted": 80,
-    "applied": 16,
-    "skipped": 64,
+    "applied": 14,
+    "skipped": 66,
     "errors": 0
   }
 }

@@ -3,12 +3,11 @@
   "script_group": "latin",
   "total_keys": 53586,
   "translated": 31152,
-  "identical_to_en": 23542,
+  "identical_to_en": 29488,
   "placeholder_keys": 20279,
   "coverage_pct": 58.1,
-  "issues_total": 6110,
+  "issues_total": 10,
   "issues_by_type": {
-    "V3_empty": 6100,
     "V1_placeholder_mismatch": 7,
     "V4_artifact": 2,
     "V5_pipe_mismatch": 1
@@ -17,9 +16,9 @@
     "CRITICAL": 8,
     "HIGH": 2,
     "MEDIUM": 0,
-    "LOW": 6100
+    "LOW": 0
   },
-  "score": 98.9,
+  "score": 99.9,
   "worst_keys": [
     {
       "key": "scripts.actions_rewards.msg_1",
@@ -80,75 +79,15 @@
       "category": "quests",
       "type": "V4_artifact",
       "severity": "HIGH"
-    },
-    {
-      "key": "npc.a_ghostly_sage.stdmod_1",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_ghostly_sage.stdmod_2",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_ghostly_sage.stdmod_3",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_ghostly_sage.stdmod_4",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_ghostly_woman.stdmod_1",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_ghostly_woman.stdmod_2",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_majestic_warwolf.say_1",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_majestic_warwolf.say_2",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_prisoner.say_12",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_prisoner.say_3",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
     }
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 449,
+    "issues_total": 411,
     "consistency": 1,
     "pl_reference": 400,
-    "length_ratio": 48,
+    "length_ratio": 10,
     "auto_fix_applied": 77
   },
-  "validated_at": "2026-02-14T10:57:08.012549Z"
+  "validated_at": "2026-02-14T11:20:43.897996Z"
 }

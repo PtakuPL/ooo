@@ -3,12 +3,11 @@
   "script_group": "cjk",
   "total_keys": 53586,
   "translated": 35740,
-  "identical_to_en": 28571,
+  "identical_to_en": 34554,
   "placeholder_keys": 15691,
   "coverage_pct": 66.7,
-  "issues_total": 6159,
+  "issues_total": 16,
   "issues_by_type": {
-    "V3_empty": 6143,
     "V2_length_ratio": 7,
     "V1_placeholder_mismatch": 7,
     "script_cjk_ratio": 1,
@@ -18,9 +17,9 @@
     "CRITICAL": 8,
     "HIGH": 0,
     "MEDIUM": 8,
-    "LOW": 6143
+    "LOW": 0
   },
-  "score": 99.1,
+  "score": 99.9,
   "worst_keys": [
     {
       "key": "scripts.actions_rewards.msg_1",
@@ -117,39 +116,15 @@
       "category": "achievements",
       "type": "V2_length_ratio",
       "severity": "MEDIUM"
-    },
-    {
-      "key": "npc.a_dead_bureaucrat1.say_2",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_dead_bureaucrat1.say_5",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_dead_bureaucrat1.say_6",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_dead_bureaucrat1.say_7",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
     }
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 480,
+    "issues_total": 423,
     "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 80,
+    "length_ratio": 23,
     "auto_fix_applied": 80
   },
-  "validated_at": "2026-02-14T10:58:35.716839Z"
+  "validated_at": "2026-02-14T11:22:07.387918Z"
 }

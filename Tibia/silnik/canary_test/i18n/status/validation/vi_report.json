@@ -2,23 +2,22 @@
   "lang": "vi",
   "script_group": "latin",
   "total_keys": 53586,
-  "translated": 35696,
-  "identical_to_en": 29112,
-  "placeholder_keys": 15735,
-  "coverage_pct": 66.6,
-  "issues_total": 6152,
+  "translated": 35658,
+  "identical_to_en": 35098,
+  "placeholder_keys": 15773,
+  "coverage_pct": 66.5,
+  "issues_total": 5,
   "issues_by_type": {
-    "V3_empty": 6144,
-    "V1_placeholder_mismatch": 7,
+    "V1_placeholder_mismatch": 4,
     "V5_pipe_mismatch": 1
   },
   "issues_by_severity": {
-    "CRITICAL": 8,
+    "CRITICAL": 5,
     "HIGH": 0,
     "MEDIUM": 0,
-    "LOW": 6144
+    "LOW": 0
   },
-  "score": 99.1,
+  "score": 100.0,
   "worst_keys": [
     {
       "key": "scripts.actions_rewards.msg_1",
@@ -39,24 +38,6 @@
       "severity": "CRITICAL"
     },
     {
-      "key": "server.game.msg_32",
-      "category": "server",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "server.player.msg_11",
-      "category": "server",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "server.spells.msg_3",
-      "category": "server",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
       "key": "talkaction.online.msg_summary",
       "category": "talkactions",
       "type": "V1_placeholder_mismatch",
@@ -67,87 +48,15 @@
       "category": "talkactions",
       "type": "V5_pipe_mismatch",
       "severity": "CRITICAL"
-    },
-    {
-      "key": "npc.a_dead_bureaucrat1.say_8",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_dead_bureaucrat1.say_9",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_dead_bureaucrat2.say_1",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_dead_bureaucrat3.say_2",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_dead_bureaucrat3.say_3",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_dead_bureaucrat3.say_4",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_dead_bureaucrat4.say_2",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_dead_bureaucrat4.say_3",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_dead_bureaucrat4.say_4",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_dragon_mother.multi_1",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_dragon_mother.multi_2",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
-    },
-    {
-      "key": "npc.a_dragon_mother.multi_4",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
     }
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 461,
-    "consistency": 1,
+    "issues_total": 404,
+    "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 60,
+    "length_ratio": 4,
     "auto_fix_applied": 79
   },
-  "validated_at": "2026-02-14T09:32:11.295832Z"
+  "validated_at": "2026-02-14T11:26:35.598662Z"
 }

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-02-14T11:06:43.051742Z",
+  "generated_at_utc": "2026-02-14T11:26:29.562892Z",
   "current_phase": "AUTO_TRANSLATE",
   "sections": {
     "META": {
@@ -9,15 +9,15 @@
       "reason": "",
       "freshness": "teraz",
       "source": "update_github_status()",
-      "last_update": "2026-02-14 11:06:37"
+      "last_update": "2026-02-14 11:26:28"
     },
     "LIVE": {
       "state": "active",
       "state_label": "🟢 ACTIVE",
       "reason": "",
-      "freshness": "42s temu",
+      "freshness": "1min temu",
       "source": "activity.json / worker_state.json",
-      "last_update": "2026-02-14T11:06:01Z"
+      "last_update": "2026-02-14T11:25:08Z"
     },
     "MIGRATION": {
       "state": "inactive",
@@ -25,23 +25,23 @@
       "reason": "worker w trybie AUTO_TRANSLATE",
       "freshness": "16h temu",
       "source": "i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt",
-      "last_update": "2026-02-14 11:06:37"
+      "last_update": "2026-02-14 11:26:28"
     },
     "TRANSLATION": {
       "state": "active",
       "state_label": "🟢 ACTIVE",
       "reason": "",
-      "freshness": "6min temu",
+      "freshness": "3min temu",
       "source": "translation_guard_latest.json / translation_recent_latest.json",
-      "last_update": "2026-02-14T11:00:07.701274Z"
+      "last_update": "2026-02-14T11:22:32.387651Z"
     },
     "QUALITY": {
       "state": "inactive",
       "state_label": "🔒 INACTIVE",
       "reason": "worker w trybie AUTO_TRANSLATE",
-      "freshness": "2min temu",
+      "freshness": "15min temu",
       "source": "quality_audit_latest.json",
-      "last_update": "2026-02-14T11:03:51.219396Z"
+      "last_update": "2026-02-14T11:11:27.785819Z"
     },
     "HISTORY": {
       "state": "active",
@@ -49,7 +49,7 @@
       "reason": "",
       "freshness": "teraz",
       "source": "daily/*.json / ops.jsonl",
-      "last_update": "2026-02-14 11:06:37"
+      "last_update": "2026-02-14 11:26:28"
     }
   }
 }

@@ -4,12 +4,12 @@
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-14T11:06:29.381258Z",
-  "issues_total": 471,
+  "checked_at": "2026-02-14T11:13:57.470300Z",
+  "issues_total": 414,
   "issues_by_type": {
     "consistency_in_language": 0,
     "pl_reference_missing_translation": 400,
-    "length_ratio_crosscheck": 71
+    "length_ratio_crosscheck": 14
   },
   "consistency_issues": [],
   "pl_reference_issues": [
@@ -336,402 +336,6 @@
       "en": "Beaver Away",
       "pl": "I. I.",
       "lang": "Beaver Away"
-    },
-    {
-      "key": "book.otbm.6_no_food_in_the",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "6. No food in the library",
-      "pl": "6. Nie jedzenie, pożywienie w the biblioteka",
-      "lang": "6. No food in the library"
-    },
-    {
-      "key": "book.otbm.6_return_borrowed_equipment_to",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "6. Return borrowed equipment to the storage room.",
-      "pl": "6. I. pożyczać wyposażenie, ekwipunek, sprzęt do the magazynowanie, przechowywanie miejsce.",
-      "lang": "6. Return borrowed equipment to the storage room."
-    },
-    {
-      "key": "book.otbm.7_no_scribbling_in_libraryowned",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "7. No scribbling in library-owned documents",
-      "pl": "7. Nie scribbling w biblioteka-I. I.",
-      "lang": "7. No scribbling in library-owned documents"
-    },
-    {
-      "key": "book.otbm.800_razoredge_matt_vs_bambam",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "8.00   Razoredge Matt vs. Bambam Brutus",
-      "pl": "8.00 Razoredge Matowy vs. Bambam Brutus",
-      "lang": "8.00   Razoredge Matt vs. Bambam Brutus"
-    },
-    {
-      "key": "book.otbm.8_books_and_scrolls_must",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "8. Books and scrolls must be returned to the exact place they were taken from",
-      "pl": "8. I. i zwój musi być I. do the I. I. oni były taken z",
-      "lang": "8. Books and scrolls must be returned to the exact place they were taken from"
-    },
-    {
-      "key": "book.otbm.900_mad_doc_vs_harpoon",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "9.00   Mad Doc. vs. Harpoon Angus",
-      "pl": "9.00 Zwariowany, niespełna rozumu Doc. vs. Harpun Angus",
-      "lang": "9.00   Mad Doc. vs. Harpoon Angus"
-    },
-    {
-      "key": "book.otbm.9_no_library_document_to",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "9. No library document to be taken outside of the library grounds",
-      "pl": "9. Nie biblioteka I. do być taken I. z the biblioteka ziemia",
-      "lang": "9. No library document to be taken outside of the library grounds"
-    },
-    {
-      "key": "book.otbm.a_city_only_for_serving",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "A city only for serving one goal: The investigation of the magic in our world Tibia!",
-      "pl": "JEDEN miasto tylko dla serving I. bramka: The dochodzenie z the I. w nasz I. Tibia!",
-      "lang": "A city only for serving one goal: The investigation of the magic in our world Tibia!"
-    },
-    {
-      "key": "book.otbm.a_crudely_scribbled_note",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "(A crudely scribbled note)",
-      "pl": "(JEDEN crudely scribbled Niete)",
-      "lang": "(A crudely scribbled note)"
-    },
-    {
-      "key": "book.otbm.a_goblet_forged_by_the",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "A goblet forged by the dragon Khax that represents all the knowledge and wisdom of TibiaVenezuela.",
-      "pl": "JEDEN kielich forged by the smok Khax that reprezentować wszystkie the kNiewledge i I. z TibiaVenezuela.",
-      "lang": "A goblet forged by the dragon Khax that represents all the knowledge and wisdom of TibiaVenezuela."
-    },
-    {
-      "key": "book.otbm.a_low_nearly_always_fourleaved",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "A low, nearly always four-leaved plant with yellow blossoms that grows in warm climate. It used to be the main source of food for the goats of the continent. However, later it was discovered to have a previously totally unknown poisenous long-term effect on the animals, and all goats died within two months.",
-      "pl": "JEDEN low, prawie zawsze cztery-leaved I. z I. I. that I. w warm klimat. To used do być the main źródło z jedzenie, pożywienie dla the koza, kozioł z the kontynent. Jednak, later to był odkrywać do masz jeden poprzednio I. nieznany poiseNieus long-I. I. na the I., i wszystkie koza, kozioł died wewnątrz dwa miesiąc.",
-      "lang": "A low, nearly always four-leaved plant with yellow blossoms that grows in warm climate. It used to be the main source of food for the goats of the continent. However, later it was discovered to have a previously totally unknown poisenous long-term effect on the animals, and all goats died within two months."
-    },
-    {
-      "key": "book.otbm.a_map_of_several_known",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "A map of several known as well as completely exotic locations.",
-      "pl": "JEDEN mapa z I. kNiewn as well as I. egzotyczny umiejscowienie.",
-      "lang": "A map of several known as well as completely exotic locations."
-    },
-    {
-      "key": "book.otbm.a_number_of_marid_was",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "A number of Marid was caught and slaughtered on the spot, but much to Malor's disappointment the majority of Gabel's troops managed to escape southwards in what appeared to be a well-planned strategic withdrawal. And how much greater was his surprise to find that the Marid fled to the city of Ankrahmun where they appeared were expected! It was then that he realised that Gabel had suspected a ruse all along, and that he had prepared a counterstrategy. Malor immediately ordered his troops to abandon pursuit, but it was too late. The undead marched against Ankrahmun with all the determination of a mindless killing machine, and the Efreet, blinded by rage, did not lag behind, only to be met by ceaseless barrages of arrows and catapult stones. A cataclysmic battle ensued.",
-      "pl": "JEDEN numer z Marid był caught i I. na the spot, I. dużo, bardzo do Malor's rozczarowanie the większość z Gabel's I. managed do I. southwards w I. pojawiać się do być jeden well-planned strategiczny wypłjedenćal. I jak dużo, bardzo I. był jego I. do I. that the Marid fled do the miasto z Ankrahmun where oni pojawiać się były spodziewać się! To był wtedy that on realised that Gabel miał suspected jeden podstęp wszystkie wzdłuż, i that on miał przygotowany jeden counterstrategy. Malor natychmiast ordered jego I. do zostawiać, opuszczać pogoń, I. to był też, także I.. The undead I. o Ankrahmun z wszystkie the determinacja, zdecydowanie z jeden bezsensowny I. I., i the Efreet, I. by I., zrobił Niet lag za, z tyłu, tylko do być met by bezustanny zapora z strzała, strzałka i catapult stones. JEDEN cataclysmic I. ensued.",
-      "lang": "A number of Marid was caught and slaughtered on the spot, but much to Malor's disappointment the majority of Gabel's troops managed to escape southwards in what appeared to be a well-planned strategic withdrawal. And how much greater was his surprise to find that the Marid fled to the city of Ankrahmun where they appeared were expected! It was then that he realised that Gabel had suspected a ruse all along, and that he had prepared a counterstrategy. Malor immediately ordered his troops to abandon pursuit, but it was too late. The undead marched against Ankrahmun with all the determination of a mindless killing machine, and the Efreet, blinded by rage, did not lag behind, only to be met by ceaseless barrages of arrows and catapult stones. A cataclysmic battle ensued."
-    },
-    {
-      "key": "book.otbm.a_plant_with_large_dark",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "A plant with large, dark red-colored blossoms.",
-      "pl": "JEDEN I. z large, I. I.-colored I..",
-      "lang": "A plant with large, dark red-colored blossoms."
-    },
-    {
-      "key": "book.otbm.a_rarely_found_starshaped_orangecolored",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "A rarely found star-shaped orange-colored flower of amazing beauty. Commonly seen as a symbol of love.",
-      "pl": "JEDEN rzadko znaleziono I.-ukształtowany I.-colored I. z zdumiewający I.. Commonly seen as jeden symbol z love.",
-      "lang": "A rarely found star-shaped orange-colored flower of amazing beauty. Commonly seen as a symbol of love."
-    },
-    {
-      "key": "book.otbm.a_spreadsheet_densely_covered_with",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "(A  spreadsheet densely covered with strange symbols, numbers and signs that do not make any sense to you)",
-      "pl": "(JEDEN arkusz elektroniczny, arkusz kalkulacyjny gęsty covered z dziwny symbol, numer i I. that robić Niet make dowolny sense do ty)",
-      "lang": "(A  spreadsheet densely covered with strange symbols, numbers and signs that do not make any sense to you)"
-    },
-    {
-      "key": "book.otbm.a_teleportation_through_the_magic",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "A teleportation through the magic web",
-      "pl": "JEDEN teleportowaćation through the I. pajęczyna",
-      "lang": "A teleportation through the magic web"
-    },
-    {
-      "key": "book.otbm.a_true_knight_always_trusts",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "A true Knight always trusts his sword, even if it's simple.",
-      "pl": "JEDEN prawdziwy I. zawsze I. jego miecz, I. if to prosty.",
-      "lang": "A true Knight always trusts his sword, even if it's simple."
-    },
-    {
-      "key": "book.otbm.abandoned_production_sites_caution_swamp",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Abandoned production sites. Caution: Swamp troll infestation. Enter at your own risk.",
-      "pl": "Zostawiać, opuszczać produkcja I.. I.: I. troll infestation. I. w twój I. I..",
-      "lang": "Abandoned production sites. Caution: Swamp troll infestation. Enter at your own risk."
-    },
-    {
-      "key": "book.otbm.abbot_still_clueless_abour_my",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "... abbot still clueless abour my ...",
-      "pl": "... opat I. clueless abour mój...",
-      "lang": "... abbot still clueless abour my ..."
-    },
-    {
-      "key": "book.otbm.abdendriel_furniture_store",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ab'Dendriel Furniture Store",
-      "pl": "Ab'Dendriel Meble I.",
-      "lang": "Ab'Dendriel Furniture Store"
-    },
-    {
-      "key": "book.otbm.about_the_orcs_because_of",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "about the orcs because of these losses.",
-      "pl": "o the orcs ponieważ, bo z these strata, utrata.",
-      "lang": "about the orcs because of these losses."
-    },
-    {
-      "key": "book.otbm.about_your_destiny_you_can",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "about your destiny. You can then travel to the Isle of Destiny and choose a vocation.",
-      "pl": "o twój przeznaczenie. Lekarz rejonowyżesz wtedy podróż do the Wyspa, ostrów z Przeznaczenie i wybierać jeden profesja.",
-      "lang": "about your destiny. You can then travel to the Isle of Destiny and choose a vocation."
-    },
-    {
-      "key": "book.otbm.academy_and_training_centre",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Academy and Training Centre",
-      "pl": "Akademia i Trening Centre",
-      "lang": "Academy and Training Centre"
-    },
-    {
-      "key": "book.otbm.accidentally_stabbed_by_al_dee",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Accidentally stabbed by Al Dee.",
-      "pl": "Przypadkowy stabbed by Al Dee.",
-      "lang": "Accidentally stabbed by Al Dee."
-    },
-    {
-      "key": "book.otbm.according_to_our_knowledge_only",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "According to our knowledge, only the delicate elves in their cities deep in the forests and the dwarves in their fortresses deep",
-      "pl": "Dawać do nasz kNiewledge, tylko the delikatny elves w ich miasto I. w the las i the dwarves w ich forteca I.",
-      "lang": "According to our knowledge, only the delicate elves in their cities deep in the forests and the dwarves in their fortresses deep"
-    },
-    {
-      "key": "book.otbm.advanced_spells_for_less_gold",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Advanced spells for less gold.",
-      "pl": "Zaawansowany zaklęCentalna Agencja Wywiadowcza dla I. złota.",
-      "lang": "Advanced spells for less gold."
-    },
-    {
-      "key": "book.otbm.adventurers_administration_quests_and_tasks",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Adventurer's Administration - Quests and Tasks open; contact Mr Morris.",
-      "pl": "Awanturnik Administracja, zarządzanie - zadania i Zadanie, zajęcie otwórz; I. Mr Morris.",
-      "lang": "Adventurer's Administration - Quests and Tasks open; contact Mr Morris."
-    },
-    {
-      "key": "book.otbm.adventurers_dormitory_door_key_lost",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Adventurer's Dormitory (door key lost, please report to Mr Morris if you found it.)",
-      "pl": "Awanturnik Sypialnia (drzwi I. I., Proszę I. do Mr Morris if ty znaleziono to.)",
-      "lang": "Adventurer's Dormitory (door key lost, please report to Mr Morris if you found it.)"
-    },
-    {
-      "key": "book.otbm.adventurers_outpost_bank_safely_hoarding",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Adventurer's Outpost Bank - Safely hoarding your looted gold so you can go back out into the wild for more.",
-      "pl": "Awanturnik Placówka Bank - I. parkan twój I. złota I. Lekarz rejonowyżesz go I. out a. do the I. dla more.",
-      "lang": "Adventurer's Outpost Bank - Safely hoarding your looted gold so you can go back out into the wild for more."
-    },
-    {
-      "key": "book.otbm.after_a_painful_and_long",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "After a painful and long hunt, our mages kept Hugo occupied with some summoned dragons that distracted him long enough to prepare the trap. When Hugo followed the 'track' we laid for him, our druids trapped him with plant barriers and then moved earth around him. Now the beast is trapped. May Fardos, Uman and Banor give that we can keep him satiated and calm by using the trick the druids figured out. Our aspirants will have a hard time to pass the test that was created around this beast.",
-      "pl": "After jeden obolały, bolący i long I., nasz mages kept Hugo occupied z I. I. smok that rozproszony him long eNieugh do przygotowywać the I.. When Hugo I. the 'I.' my laid dla him, nasz druids trapped him z I. bariera, barierka i wtedy moved earth around him. Niew the zwierzę jest trapped. A. móc Fardos, Uman i BaNier give that my może keep him satiated i I. by using the I. the druids figured out. Nasz be an aspirant to/after/for will masz jeden hard czas do I. the I. that był created around I. zwierzę.",
-      "lang": "After a painful and long hunt, our mages kept Hugo occupied with some summoned dragons that distracted him long enough to prepare the trap. When Hugo followed the 'track' we laid for him, our druids trapped him with plant barriers and then moved earth around him. Now the beast is trapped. May Fardos, Uman and Banor give that we can keep him satiated and calm by using the trick the druids figured out. Our aspirants will have a hard time to pass the test that was created around this beast."
-    },
-    {
-      "key": "book.otbm.after_a_week_had_passed",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "After a week had passed the mathematician returned. His advice was this: The pharaoh should order a huge celebration to be held, and all pyramids should be adorned with flowers and flags. The pharaoh who trusted in the wisdom of his advisor ordered his people to prepare for the celebration. While the people did as their pharaoh had ordered them to do Athem began to build a huge wooden machine on top of the royal pyramid. No one took much notice of it because of the preparations that were going on. On the fourth day when the celebration was scheduled to start the pharaoh sent an invitation to his vizier and asked him to join in their festivity. As Athem had foreseen the vizier declined because he suspected that there was a trap. Instead he sat in the observatory at the top of his tower and watched the city because he wanted to find out what the pharaoh was up to. Too late did he understand that the construct on top of the pyramid was in fact an enormous catapult. Suddenly a huge boulder was hurled in his direction. The shot had been perfectly calculated, and it hit its mark with amazing precision. The top of the dark tower shattered and the evil vizier was crushed underneath tons of basalt. His death caused the dark magic to disappear, and the tower sank into the ocean forever.",
-      "pl": "After jeden tydzień miał I. the matematyk I.. Jego rada był I.: The pharaoh a. powinien, powinna order jeden ogromny obchód do być held, i wszystkie piramida a. powinien, powinna być przyozdabiać z I. i I.. The pharaoh kto I. w the I. z jego advisor ordered jego I. do przygotowywać dla the obchód. I. the I. zrobił as ich pharaoh miał ordered ich do robić Athem began do I. jeden ogromny drewniany I. na top z the I. piramida. Nie I. took dużo, bardzo Nietice z to ponieważ, bo z the przygotowanie that były going na. Na the czwarty dzień when the obchód był scheduled do start the pharaoh sent jeden zaproszenie do jego vizier i I. him do I. w ich uroczystość. As Athem miał foreseen the vizier declined ponieważ, bo on suspected that there był jeden I.. Instead on sat w the obserwatorium w the top z jego I. i watched the miasto ponieważ, bo on I. do I. out I. the pharaoh był up do. Też, także I. zrobił on rozumieć, pojmować that the construct na top z the piramida był w fakt, sprawa jeden eNiermous catapult. Nagle jeden ogromny skała, głaz był rzucać w jego kierunek. The shot miał był całkowicie, zupełnie calculated, i to hit jego, jej, ich, swój I. z zdumiewający precyzja, dokładność. The top z the I. I. roztrzaskiwać się, roztrzaskiwać i the I. vizier był crushed I. tona z basalt. Jego I. caused the I. I. do znikać, i the I. sank a. do the ocean forever.",
-      "lang": "After a week had passed the mathematician returned. His advice was this: The pharaoh should order a huge celebration to be held, and all pyramids should be adorned with flowers and flags. The pharaoh who trusted in the wisdom of his advisor ordered his people to prepare for the celebration. While the people did as their pharaoh had ordered them to do Athem began to build a huge wooden machine on top of the royal pyramid. No one took much notice of it because of the preparations that were going on. On the fourth day when the celebration was scheduled to start the pharaoh sent an invitation to his vizier and asked him to join in their festivity. As Athem had foreseen the vizier declined because he suspected that there was a trap. Instead he sat in the observatory at the top of his tower and watched the city because he wanted to find out what the pharaoh was up to. Too late did he understand that the construct on top of the pyramid was in fact an enormous catapult. Suddenly a huge boulder was hurled in his direction. The shot had been perfectly calculated, and it hit its mark with amazing precision. The top of the dark tower shattered and the evil vizier was crushed underneath tons of basalt. His death caused the dark magic to disappear, and the tower sank into the ocean forever."
-    },
-    {
-      "key": "book.otbm.after_all_those_perils_and",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "After all those perils and puzzels I have located the throne of darkness at last. I will lead ...",
-      "pl": "After wszystkie those niebezpieczeństwo i puzzels I masz located the tron z ciemność w last. I will lead...",
-      "lang": "After all those perils and puzzels I have located the throne of darkness at last. I will lead ..."
-    },
-    {
-      "key": "book.otbm.after_reading_the_whole_book",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "*After reading the whole book (which takes you almost an hour) you suffer from headaches. You remember only one thing and have to laugh as the memory returns. It's the 647th. way to use an energy beam: a venerable wizard who grills meat with his deadly spell.*",
-      "pl": "*After czytanie the I. I. (I. takes ty prawie jeden godzina) ty cierpieć z ból głowy. Ty pamiętać, przypominać sobie, przypominać tylko I. rzecz i masz do I. as the pamięć I.. To the 647th. way do use jeden energia I.: jeden czcigodny czarnoksiężnik kto I. mięso z jego I. zaklęcie.*",
-      "lang": "*After reading the whole book (which takes you almost an hour) you suffer from headaches. You remember only one thing and have to laugh as the memory returns. It's the 647th. way to use an energy beam: a venerable wizard who grills meat with his deadly spell.*"
-    },
-    {
-      "key": "book.otbm.after_the_disastrous_battle_of",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "After the disastrous battle of Ankrahmun Drefia's necromancers knew the end was near. The Marid would never forgive them their treachery, and this would be a battle the necromancers could not win - after all, many of them had already perished in the battle of Ankrahmun, and their Efreet allies could provide no assistance. So the necromancers prepared for the inevitable with the defiant cynicism of those who have been familiar with death all their lives, performing evil rituals and indulging in morbid orgies.",
-      "pl": "After the katastrofalny I. z Ankrahmun Drefia's necromancers knew the I. był I.. The Marid would nigdy wybaczać ich ich zdrada, i I. would być jeden I. the necromancers mógł Niet win - after wszystkie, wiele, dużo z ich miał już ginąć w the I. z Ankrahmun, i ich Efreet allies mógł I. Nie pomoc. I. the necromancers przygotowany dla the nieuchronny, nie do uniknięcia z the wyzywający, buntowniczy cynicism z those kto masz był znajomy z I. wszystkie ich lives, wykonywać I. I. i indulging w chorobliwy orgia.",
-      "lang": "After the disastrous battle of Ankrahmun Drefia's necromancers knew the end was near. The Marid would never forgive them their treachery, and this would be a battle the necromancers could not win - after all, many of them had already perished in the battle of Ankrahmun, and their Efreet allies could provide no assistance. So the necromancers prepared for the inevitable with the defiant cynicism of those who have been familiar with death all their lives, performing evil rituals and indulging in morbid orgies."
-    },
-    {
-      "key": "book.otbm.after_the_female_reign_of",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "After the female reign of Carlin was established and the independent city tried to expand its influence settlers were sent there to claim the nearby area.",
-      "pl": "After the I. I. z Carlin był zakładać i the niezależny miasto tried do expand jego, jej, ich, swój I. osiedleniec, kolonista były sent there do I. the pobliski obszar, region.",
-      "lang": "After the female reign of Carlin was established and the independent city tried to expand its influence settlers were sent there to claim the nearby area."
-    },
-    {
-      "key": "book.otbm.after_thorough_examination_the_rathal",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "After thorough examination the Rathal I Pyramid was officially declared to be free of occult phenomena. The success of the ritual of purification performed by the responsible priests surpassed everybody's expectations, and the rather obstinate evil presence that was clearly the work of a person officially identified as one Ushu the witch by the authorities was dispelled. The suspect was traced to the mountains where she sucessfully hid from the agents of the witchhunting department. She is presently said to produce low-quality love potions in an unknown hideout somewhere in the western jungles.",
-      "pl": "After drobiazgowy egzamin the Rathal I Piramida był I. declared do być I. z sekretny, magiczny pheNiemena. The sukces z the I. z purification wykonywać by the odpowiedzialny ksiądz przewyższać każdy oczekiwanie, i the raczej uparty I. I. that był clearly the work z jeden osoba I. identified as I. Ushu the I. by the authorities był dizaklęcieed. The suspect był traced do the góra where ona sucessfully hid z the przedstawiciel, agent, impresario z the witchhunting I.. Ona jest wkrótce said do produce low-jakość love napój w jeden nieznany hideout gdzieś w the I. dżungla.",
-      "lang": "After thorough examination the Rathal I Pyramid was officially declared to be free of occult phenomena. The success of the ritual of purification performed by the responsible priests surpassed everybody's expectations, and the rather obstinate evil presence that was clearly the work of a person officially identified as one Ushu the witch by the authorities was dispelled. The suspect was traced to the mountains where she sucessfully hid from the agents of the witchhunting department. She is presently said to produce low-quality love potions in an unknown hideout somewhere in the western jungles."
-    },
-    {
-      "key": "book.otbm.after_we_reached_the_site",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "... After we reached the site we pitched camp. The next day we started the excavations. It was hard work. The sand was treacherous and obstinate, and for every bucket we took away two more seemed to take its place. Sometimes we hit upon something valuable by pure chance, but usually it took hours to find some lucrative spot because you could never tell if a site was promising without having performing extensive excavations first. And still the real thing eluded us. The remnants of the legendary cities of old seemed lost to the desert. But we carried on, working day and night, digging at the same spot over and over again. Progress was painfully slow, but in the end hit on something. What we found proved to be an adequate reward for our hardships.",
-      "pl": "... After my reached the I. my I. I.. The next dzień my uruchomioNie the wykopaliska. To był hard work. The I. był zdradliwy i uparty, i dla I. wiadro my took I. dwa more a. wydawać się być, wydawać się, zdawać się do take jego, jej, ich, swój I.. Kiedyś, pewnego razu my hit na coś I. by czysty szansa, I. zazwyczaj to took godziny do I. I. lukratywny spot ponieważ, bo ty mógł nigdy I. if jeden I. był dobrze się zapowiadający, obiecujący bez having wykonywać rozległy wykopaliska I.. I I. the I. rzecz eluded nas. The pozostałość, resztka z the legendarny miasto z I. a. wydawać się być, wydawać się, zdawać się I. do the desert. I. my carried na, I. dzień i night, digging w the I. spot I. i I. ponownie. Progress był obolały, bolący I., I. w the I. hit na coś. I. my znaleziono proved do być jeden wystarczający nagroda dla nasz problem, ciężar.",
-      "lang": "... After we reached the site we pitched camp. The next day we started the excavations. It was hard work. The sand was treacherous and obstinate, and for every bucket we took away two more seemed to take its place. Sometimes we hit upon something valuable by pure chance, but usually it took hours to find some lucrative spot because you could never tell if a site was promising without having performing extensive excavations first. And still the real thing eluded us. The remnants of the legendary cities of old seemed lost to the desert. But we carried on, working day and night, digging at the same spot over and over again. Progress was painfully slow, but in the end hit on something. What we found proved to be an adequate reward for our hardships."
-    },
-    {
-      "key": "book.otbm.afterwards_life_returned_to_the",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "afterwards life returned to the world.",
-      "pl": "afterwards I. I. do the I..",
-      "lang": "afterwards life returned to the world."
-    },
-    {
-      "key": "book.otbm.aim_of_existence_and_in",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "aim of existence! And in such a way the crystal column of time grew upwards and was from then on the unmovable center of",
-      "pl": "I. z istnienie! I w taki jeden way the crystal kolumna z czas grew do góry, w górę i był z wtedy na the unmovable cent z",
-      "lang": "aim of existence! And in such a way the crystal column of time grew upwards and was from then on the unmovable center of"
-    },
-    {
-      "key": "book.otbm.al_dees_shop_come_to",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Al Dee's shop - come to where the ropes are!",
-      "pl": "Al Dee's I. - come do where the I. są!",
-      "lang": "Al Dee's shop - come to where the ropes are!"
-    },
-    {
-      "key": "book.otbm.al_dees_shop_come_to_af3d4866",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Al Dee's shop - come to where the torches are!",
-      "pl": "Al Dee's I. - come do where the latarka są!",
-      "lang": "Al Dee's shop - come to where the torches are!"
-    },
-    {
-      "key": "book.otbm.al_dees_shop_come_to_ef77e299",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Al Dee's shop - come to where the ropes are!",
-      "pl": "Al Dee's I. - come do where the I. są!",
-      "lang": "Al Dee's shop - come to where the ropes are!"
-    },
-    {
-      "key": "book.otbm.all_others_made_the_same",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "All others made the same experience.",
-      "pl": "Wszystkie drugi, pozostały zrobiony the I. I..",
-      "lang": "All others made the same experience."
     },
     {
       "key": "book.otbm.all_seem_to_work_well",
@@ -3612,6 +3216,402 @@
       "en": "Granted by RadioTibia.com.br to hear the sounds of Tibia.",
       "pl": "I. by RadioTibia.com.Koleje Brytyjskie do I. the I. z Tibia.",
       "lang": "Granted by RadioTibia.com.br to hear the sounds of Tibia."
+    },
+    {
+      "key": "book.otbm.graveyard_of_the_red_legion",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Graveyard of the Red Legion and all the workers who fell in the fight against the orcish hordes",
+      "pl": "Cmentarz z the I. Legion i wszystkie the pracownik kto zwalać w the I. o the orcish zgraja, horda",
+      "lang": "Graveyard of the Red Legion and all the workers who fell in the fight against the orcish hordes"
+    },
+    {
+      "key": "book.otbm.great_mountains_of_folda_island",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Great Mountains of Folda Island",
+      "pl": "I. Góra z Folda Wyspa",
+      "lang": "Great Mountains of Folda Island"
+    },
+    {
+      "key": "book.otbm.greenhorn_rank_rewards_choose_wisely",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Greenhorn Rank Rewards - Choose wisely!",
+      "pl": "Greenhorn I. nagrodas - Wybierać I.!",
+      "lang": "Greenhorn Rank Rewards - Choose wisely!"
+    },
+    {
+      "key": "book.otbm.greetings_brothers_and_sisters",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Greetings brothers and sisters!",
+      "pl": "Witaj brat i I.!",
+      "lang": "Greetings brothers and sisters!"
+    },
+    {
+      "key": "book.otbm.greetings_by_darruk_the_redscarred",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "- Greetings by Darruk the Redscarred.",
+      "pl": "- Witaj by Darruk the Redscarred.",
+      "lang": "- Greetings by Darruk the Redscarred."
+    },
+    {
+      "key": "book.otbm.greetings_fellow_brother",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Greetings fellow brother!",
+      "pl": "Witaj facet, gość brat!",
+      "lang": "Greetings fellow brother!"
+    },
+    {
+      "key": "book.otbm.ground_floor_flints_finest_melee",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ground floor: Flint's Finest - Melee Weapons and Armor",
+      "pl": "Ziemia I.: Krzemień Finest - Melee Broń i Armor",
+      "lang": "Ground floor: Flint's Finest - Melee Weapons and Armor"
+    },
+    {
+      "key": "book.otbm.ground_floor_rathleton_post_office",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ground floor: Rathleton Post Office",
+      "pl": "Ziemia I.: Rathleton Post Biuro",
+      "lang": "Ground floor: Rathleton Post Office"
+    },
+    {
+      "key": "book.otbm.guided_by_omens_an_expedition",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Guided by omens an expedition of brave warriors from the thaian order of the knights of noodles traveled the perillious seas the remote isle of rookgaard and discovered the new soulvortex.",
+      "pl": "Guided by omen jeden ekspedycja z I. wojownik z the thaian order z the I. z Nieodles podróżed the perillious morze the I. wyspa, ostrów z rookgaard i odkrywać the new soulvortex.",
+      "lang": "Guided by omens an expedition of brave warriors from the thaian order of the knights of noodles traveled the perillious seas the remote isle of rookgaard and discovered the new soulvortex."
+    },
+    {
+      "key": "book.otbm.guild_of_the_dexterous_paladins",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Guild of the dexterous Paladins",
+      "pl": "Gildia z the sprawny Paladins",
+      "lang": "Guild of the dexterous Paladins"
+    },
+    {
+      "key": "book.otbm.guild_of_the_dexterous_paladins_4a67ff69",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Guild of the dexterous Paladins",
+      "pl": "Gildia z the sprawny Paladins",
+      "lang": "Guild of the dexterous Paladins"
+    },
+    {
+      "key": "book.otbm.guildhall_of_the_red_rose",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Guildhall of the Red Rose",
+      "pl": "Guildhall z the I. I.",
+      "lang": "Guildhall of the Red Rose"
+    },
+    {
+      "key": "book.otbm.haha_we_caught_one_of",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Haha, we caught one of our enemys",
+      "pl": "Haha, my caught I. z nasz wróg",
+      "lang": "Haha, we caught one of our enemys"
+    },
+    {
+      "key": "book.otbm.hail_to_marianos_pall_the",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hail to Marianos Pall, the current hero of the Scrapper difficulty!",
+      "pl": "I. do MariaNies I., the aktualny bohater z the Scrapper trudność!",
+      "lang": "Hail to Marianos Pall, the current hero of the Scrapper difficulty!"
+    },
+    {
+      "key": "book.otbm.has_stoped_i_know_they",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "has stoped. I KNOW they are coming after me now. I can see the flickering of the shadows as they aproach. THEY ARE COMING",
+      "pl": "ma stop. I KNieW oni są nadchodzący after mnie, mi Niew. I może I. the I. z the cień as oni aproach. ONI SĄ NADCHODZĄCY",
+      "lang": "has stoped. I KNOW they are coming after me now. I can see the flickering of the shadows as they aproach. THEY ARE COMING"
+    },
+    {
+      "key": "book.otbm.have_faith_wanderer_for_you",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Have faith wanderer, for you do not fight alone.",
+      "pl": "Masz wiara wędrować, dla ty robić Niet I. I..",
+      "lang": "Have faith wanderer, for you do not fight alone."
+    },
+    {
+      "key": "book.otbm.have_to_spend_to_much",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "have to spend to much time in fighting the",
+      "pl": "masz do wydawać do dużo, bardzo czas w I. the",
+      "lang": "have to spend to much time in fighting the"
+    },
+    {
+      "key": "book.otbm.head_of_the_palace_guards",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Head of the palace guards",
+      "pl": "I. z the pałac I.",
+      "lang": "Head of the palace guards"
+    },
+    {
+      "key": "book.otbm.hellgate_restricted_area",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hellgate! Restricted Area!",
+      "pl": "Hellgate! Ograniczony Obszar, region!",
+      "lang": "Hellgate! Restricted Area!"
+    },
+    {
+      "key": "book.otbm.her_hairs_snakes_are_still",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Her hair's snakes are still alive. Awarded only on TibiaPic.com.",
+      "pl": "Her włos wąż są I. żywy. I. tylko na TibiaPic.com.",
+      "lang": "Her hair's snakes are still alive. Awarded only on TibiaPic.com."
+    },
+    {
+      "key": "book.otbm.herbs_and_plants_of_the",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Herbs and Plants of the Swamp, Volume I",
+      "pl": "I. i I. z the I., Książka I",
+      "lang": "Herbs and Plants of the Swamp, Volume I"
+    },
+    {
+      "key": "book.otbm.herbs_and_plants_of_the_e1ae45aa",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Herbs and Plants of the Swamp, Volume II",
+      "pl": "I. i I. z the I., Książka II",
+      "lang": "Herbs and Plants of the Swamp, Volume II"
+    },
+    {
+      "key": "book.otbm.here_lies_the_body_of",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Here lies the body of Arkanor, Rookgaard's first teleportation scientist.",
+      "pl": "Tutaj, tu lies the ciało z ArkaNier, Rookgaard's I. teleportowaćation naukowiec.",
+      "lang": "Here lies the body of Arkanor, Rookgaard's first teleportation scientist."
+    },
+    {
+      "key": "book.otbm.here_on_the_haunted_plains",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Here on the haunted Plains of Havoc the order of the Nightmare Knights defeated the armies of Goshnar, the king of necromancy.",
+      "pl": "Tutaj, tu na the I. I. z Chaos, zamieszanie the order z the Zły sen I. I. the wojsko, armia z Goshnar, the król z necromancy.",
+      "lang": "Here on the haunted Plains of Havoc the order of the Nightmare Knights defeated the armies of Goshnar, the king of necromancy."
+    },
+    {
+      "key": "book.otbm.here_you_dont_lost_anything",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Here you dont lost anything, dnt lost Level and dont lost Itens.",
+      "pl": "Tutaj, tu ty dont I. cokolwiek, dnt I. poziom i dont I. Itens.",
+      "lang": "Here you dont lost anything, dnt lost Level and dont lost Itens."
+    },
+    {
+      "key": "book.otbm.here_you_will_find_the",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Here you will find the entrance of the MOTA Extension. Still under contruction.",
+      "pl": "Tutaj, tu ty will I. the entrance z the MOTA Dobudówka, powiększenie. I. under contruction.",
+      "lang": "Here you will find the entrance of the MOTA Extension. Still under contruction."
+    },
+    {
+      "key": "book.otbm.high_end_spells_for_your",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "High end spells for your ultimate enemies.",
+      "pl": "I. I. zaklęCentalna Agencja Wywiadowcza dla twój ostateczny wróg.",
+      "lang": "High end spells for your ultimate enemies."
+    },
+    {
+      "key": "book.otbm.highlighted_keyword_they_react_to",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "highlighted keyword they react to if you wish to begin a conversation, but sometimes, they have hidden keywords they will",
+      "pl": "I. słowo kluczowe oni reagować do if ty I. do begin jeden rozmowa, I. kiedyś, pewnego razu, oni masz hidden słowo kluczowe oni will",
+      "lang": "highlighted keyword they react to if you wish to begin a conversation, but sometimes, they have hidden keywords they will"
+    },
+    {
+      "key": "book.otbm.highranking_necromancers_only",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "High-ranking necromancers only.",
+      "pl": "I.-I. necromancers tylko.",
+      "lang": "High-ranking necromancers only."
+    },
+    {
+      "key": "book.otbm.history_of_the_augur_part",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "History of the Augur, Part II",
+      "pl": "Historia z the Wróżyć, Part II",
+      "lang": "History of the Augur, Part II"
+    },
+    {
+      "key": "book.otbm.history_of_the_augur_part_5eb84e6d",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "History of the Augur, Part I",
+      "pl": "Historia z the Wróżyć, Part I",
+      "lang": "History of the Augur, Part I"
+    },
+    {
+      "key": "book.otbm.home_of_eclesius_the_very",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Home of Eclesius, the Very Wise and also Noble Sorcerer.",
+      "pl": "Home z Eclesius, the I. I. i także Nieble Sorcerer.",
+      "lang": "Home of Eclesius, the Very Wise and also Noble Sorcerer."
+    },
+    {
+      "key": "book.otbm.home_of_the_ruthless_seven",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Home of the ruthless seven!!!!!!!",
+      "pl": "Home z the bezlitosny siedem!!!!!!!",
+      "lang": "Home of the ruthless seven!!!!!!!"
+    },
+    {
+      "key": "book.otbm.honour_and_glory_to_death",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Honour and glory to Death Rose, the mighty Warlord!",
+      "pl": "HoNieur i I. do I. I., the I. Warlord!",
+      "lang": "Honour and glory to Death Rose, the mighty Warlord!"
+    },
+    {
+      "key": "book.otbm.honour_to_whom_honour_is",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Honour to whom honour is due",
+      "pl": "HoNieur do whom hoNieur jest due",
+      "lang": "Honour to whom honour is due"
+    },
+    {
+      "key": "book.otbm.house_of_dermot_the_local",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "House of Dermot, the Local Chief",
+      "pl": "dom z Dermot, the Lokalny I.",
+      "lang": "House of Dermot, the Local Chief"
+    },
+    {
+      "key": "book.otbm.house_of_wealth_bank_jewels",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "House of Wealth - Bank, Jewels, Depot",
+      "pl": "dom z Bogactwo - Bank, Klejnot, Skład",
+      "lang": "House of Wealth - Bank, Jewels, Depot"
+    },
+    {
+      "key": "book.otbm.house_of_wealth_bank_jewels_59d3083c",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "House of Wealth - Bank, Jewels, Depot",
+      "pl": "dom z Bogactwo - Bank, Klejnot, Skład",
+      "lang": "House of Wealth - Bank, Jewels, Depot"
+    },
+    {
+      "key": "book.otbm.houses_ascendants_phases_of_the",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Houses, Ascendants, Phases of the Moon in the different Dark Orders. A comparative Chart Analysis by Antaly of Drefia",
+      "pl": "doms, Ascendants, I. z the Księżyc w the różny I. Orders. JEDEN porównawczy I. Analiza by Antaly z Drefia",
+      "lang": "Houses, Ascendants, Phases of the Moon in the different Dark Orders. A comparative Chart Analysis by Antaly of Drefia"
+    },
+    {
+      "key": "book.otbm.how_to_create_spellbooks_by",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "How to create spellbooks by Muriel.",
+      "pl": "Jak do create zaklęciebooks by Muriel.",
+      "lang": "How to create spellbooks by Muriel."
+    },
+    {
+      "key": "book.otbm.how_to_create_spellbooks_by_003d48b3",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "How to create spellbooks by Muriel.",
+      "pl": "Jak do create zaklęciebooks by Muriel.",
+      "lang": "How to create spellbooks by Muriel."
+    },
+    {
+      "key": "book.otbm.how_to_learn_magic_easy",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "How to learn Magic easy. Level 1: For Knights and non Vocation people (Part one)",
+      "pl": "Jak do uczyć się, nauczyć się I. I.. poziom 1: Dla I. i Nien Profesja I. (Part I.)",
+      "lang": "How to learn Magic easy. Level 1: For Knights and non Vocation people (Part one)"
+    },
+    {
+      "key": "book.otbm.how_to_manipulate_runes_by",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "How to manipulate Runes by Muriel.",
+      "pl": "Jak do manipulować Runes by Muriel.",
+      "lang": "How to manipulate Runes by Muriel."
+    },
+    {
+      "key": "book.otbm.however_immediately_the_first_dragon",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "however immediately the first dragon, called Garsharak, rose and he bore many further lower dragons in the course of the",
+      "pl": "jednak natychmiast the I. smok, called Garsharak, I. i on I. wiele, dużo further I. smok w the course z the",
+      "lang": "however immediately the first dragon, called Garsharak, rose and he bore many further lower dragons in the course of the"
     }
   ],
   "length_ratio_issues": [
@@ -3740,525 +3740,12 @@
       "en_len": 9,
       "lang_ratio": 1.111,
       "pl_ratio": 3.556
-    },
-    {
-      "key": "npc.alyxo.say_12",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.alyxo.say_15",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.alyxo.say_18",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.alyxo.say_21",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.alyxo.say_24",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.alyxo.say_6",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.alyxo.say_9",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.bo_ques.say_6",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 14,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.214
-    },
-    {
-      "key": "npc.broken_servant_sentry.say_5",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 119,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.286
-    },
-    {
-      "key": "npc.broken_servant_sentry.say_7",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 119,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.286
-    },
-    {
-      "key": "npc.chartan.multi_10",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 21,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.143
-    },
-    {
-      "key": "npc.chester_kahs.say_19",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 112,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.839
-    },
-    {
-      "key": "npc.chester_kahs.say_6",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 26,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.038
-    },
-    {
-      "key": "npc.commander_stone.say_18",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 21,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.81
-    },
-    {
-      "key": "npc.commander_stone.say_23",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 21,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.81
-    },
-    {
-      "key": "npc.commander_stone.say_6",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 21,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.81
-    },
-    {
-      "key": "npc.gnomaticus.say_3",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 27,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.296
-    },
-    {
-      "key": "npc.gnomeral.say_11",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 21,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.81
-    },
-    {
-      "key": "npc.gnomeral.say_16",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 21,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.81
-    },
-    {
-      "key": "npc.gnomeral.say_21",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 21,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.81
-    },
-    {
-      "key": "npc.gnomeral.say_5",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 21,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.81
-    },
-    {
-      "key": "npc.gregor.say_23",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 32,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.469
-    },
-    {
-      "key": "npc.gregor.say_26",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 32,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.469
-    },
-    {
-      "key": "npc.gregor.say_29",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 32,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.469
-    },
-    {
-      "key": "npc.gregor.say_32",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 32,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.469
-    },
-    {
-      "key": "npc.guard_saros.say_3",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 55,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.018
-    },
-    {
-      "key": "npc.hairycles.say_42",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 65,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.908
-    },
-    {
-      "key": "npc.hairycles.say_54",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 26,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.962
-    },
-    {
-      "key": "npc.hairycles.say_56",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 26,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.962
-    },
-    {
-      "key": "npc.hairycles.say_61",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 26,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.962
-    },
-    {
-      "key": "npc.henricus.say_28",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 8,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.25
-    },
-    {
-      "key": "npc.kallimae.say_3",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.kallimae.say_6",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.kallimae.say_9",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.karith.say_6",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 45,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.844
-    },
-    {
-      "key": "npc.lurik.say_2",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 22,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.864
-    },
-    {
-      "key": "npc.markwin.say_7",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 16,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.875
-    },
-    {
-      "key": "npc.narsai.say_3",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.narsai.say_6",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.pig.say_2",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 78,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.128
-    },
-    {
-      "key": "npc.saideh.say_3",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.sandomo.greet_msg_1",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 14,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.5
-    },
-    {
-      "key": "npc.santa_claus.say_1",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 28,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.821
-    },
-    {
-      "key": "npc.shimun.say_3",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.shimun.say_6",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.simon_the_beggar.say_27",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 25,
-      "lang_ratio": 0.0,
-      "pl_ratio": 3.08
-    },
-    {
-      "key": "npc.stricken_soul.multi_1",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 12,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.083
-    },
-    {
-      "key": "npc.stricken_soul.say_3",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 27,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.963
-    },
-    {
-      "key": "npc.tefrit.say_3",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.tefrit.say_6",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.tomruk_the_ruddy.say_3",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 81,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.827
-    },
-    {
-      "key": "npc.undal.say_14",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 27,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.963
-    },
-    {
-      "key": "npc.vanys.say_14",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 27,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.963
-    },
-    {
-      "key": "npc.wyda.say_1",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 24,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.875
-    },
-    {
-      "key": "npc.yonan.say_3",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.yonan.say_6",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.yonan.say_9",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 41,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.805
     }
   ],
   "auto_fix": {
-    "attempted": 80,
-    "applied": 44,
+    "attempted": 60,
+    "applied": 24,
     "skipped": 36,
-    "errors": 0
+    "errors": 20
   }
 }

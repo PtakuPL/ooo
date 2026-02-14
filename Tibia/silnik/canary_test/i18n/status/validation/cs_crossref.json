@@ -4,12 +4,12 @@
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-14T10:56:17.227477Z",
-  "issues_total": 469,
+  "checked_at": "2026-02-14T11:15:24.752194Z",
+  "issues_total": 412,
   "issues_by_type": {
     "consistency_in_language": 0,
     "pl_reference_missing_translation": 400,
-    "length_ratio_crosscheck": 69
+    "length_ratio_crosscheck": 12
   },
   "consistency_issues": [],
   "pl_reference_issues": [
@@ -518,42 +518,6 @@
       "lang": "Toothfairy Assistant"
     },
     {
-      "key": "achievement.439.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You defeated the Duke of the Depths and destroyed his lava pump!",
-      "pl": "Ty I. the Książę z the Głębokość i niszczyć jego lawa I.!",
-      "lang": "You defeated the Duke of the Depths and destroyed his lava pump!"
-    },
-    {
-      "key": "achievement.440.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You defeated the Baron from Below and destroyed his lava pump!",
-      "pl": "Ty I. the Baron z Poniżej, niżej i niszczyć jego lawa I.!",
-      "lang": "You defeated the Baron from Below and destroyed his lava pump!"
-    },
-    {
-      "key": "achievement.441.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Death in the Depths",
-      "pl": "I. w the Głębokość",
-      "lang": "Death in the Depths"
-    },
-    {
-      "key": "achievement.441.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Baron from Below, Duke of the Depths and the Count of the Core are no more!",
-      "pl": "The Baron z Poniżej, niżej, Książę z the Głębokość i the Liczba z the Core są Nie more!",
-      "lang": "The Baron from Below, Duke of the Depths and the Count of the Core are no more!"
-    },
-    {
       "key": "achievement.442.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -563,87 +527,6 @@
       "lang": "Scourge of Scarabs"
     },
     {
-      "key": "achievement.442.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You took the heat and defeated the Ancient Spawn of Morgathla!",
-      "pl": "Ty took the ciepło, ciepłota i I. the Starożytny I. z Morgathla!",
-      "lang": "You took the heat and defeated the Ancient Spawn of Morgathla!"
-    },
-    {
-      "key": "achievement.443.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Cobbled and Patched",
-      "pl": "Cobbled i I.",
-      "lang": "Cobbled and Patched"
-    },
-    {
-      "key": "achievement.443.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Exploring the depths of Tibia can be a dangerous task. Surprisingly, some crude wood planks, rusty nails and a tinged pot can offer a sufficient protection against the creatures lurking in the deep.",
-      "pl": "Exploring the głębokość z Tibia może być jeden groźny, niebezpieczny zadanie, zajęcie. Zaskakujący, I. crude drewno I., zardzewiały I. i jeden zabarwiony I. może offer jeden wystarczający ochrona, osłona o the stwory czaić się w the I..",
-      "lang": "Exploring the depths of Tibia can be a dangerous task. Surprisingly, some crude wood planks, rusty nails and a tinged pot can offer a sufficient protection against the creatures lurking in the deep."
-    },
-    {
-      "key": "achievement.444.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Up the Molehill",
-      "pl": "Up the Kretowisko",
-      "lang": "Up the Molehill"
-    },
-    {
-      "key": "achievement.444.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Putting this candle stump on your new mount was kind of a waiting game. You're even tempted to call it whack-a-mole. But in the end you found a loyal companion for your journeys into the depths.",
-      "pl": "Putting I. świeca I. na twój new I. był I. z jeden I. I.. You're I. kusić do call to I.-jeden-pieprzyk. I. w the I. ty znaleziono jeden lojalny towarzysz dla twój I. a. do the głębokość.",
-      "lang": "Putting this candle stump on your new mount was kind of a waiting game. You're even tempted to call it whack-a-mole. But in the end you found a loyal companion for your journeys into the depths."
-    },
-    {
-      "key": "achievement.445.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Master Debater",
-      "pl": "I. Debater",
-      "lang": "Master Debater"
-    },
-    {
-      "key": "achievement.445.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You truly are the grand master of verbal debate! Now going forth and putting this wisdom to good use in everyday life... is probably debatable.",
-      "pl": "Ty naprawdę są the I. I. z werbalny, słowny debate! Niew going na zewnątrz i putting I. I. do I. use w codzienny, zwykły I.... jest prawdopodobnie dyskusyjny.",
-      "lang": "You truly are the grand master of verbal debate! Now going forth and putting this wisdom to good use in everyday life... is probably debatable."
-    },
-    {
-      "key": "achievement.446.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "High and Dry",
-      "pl": "I. i I.",
-      "lang": "High and Dry"
-    },
-    {
-      "key": "achievement.446.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You asked Captain Charles to take a shortcut quite a few times. Now you are all too familiar with desert islands all over Tibia.",
-      "pl": "Ty I. I. Charles do take jeden shortcut całkiem, dość jeden few czas. Niew Jesteś wszystkie też, także znajomy z desert wyspa wszystkie I. Tibia.",
-      "lang": "You asked Captain Charles to take a shortcut quite a few times. Now you are all too familiar with desert islands all over Tibia."
-    },
-    {
       "key": "achievement.447.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -651,285 +534,6 @@
       "en": "Elven Woods",
       "pl": "Elven Drewno",
       "lang": "Elven Woods"
-    },
-    {
-      "key": "achievement.447.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Tall trees, deep forests and and the beauty of Ab'Dendriel - you really know every corner of the elven lands now.",
-      "pl": "Wysoki drzewo, I. las i i the I. z Ab'Dendriel - ty I. kNiew I. corner z the elven lands Niew.",
-      "lang": "Tall trees, deep forests and and the beauty of Ab'Dendriel - you really know every corner of the elven lands now."
-    },
-    {
-      "key": "achievement.448.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Long Live the Queen",
-      "pl": "Long Live the Królowa",
-      "lang": "Long Live the Queen"
-    },
-    {
-      "key": "achievement.448.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ancient battlefields, amazons and the glory of Carlin - you really know every corner of Queen Eloise's realm now.",
-      "pl": "Starożytny pole bitwy, Amazonka i the I. z Carlin - ty I. kNiew I. corner z Królowa Eloise's dziedzina, sfera Niew.",
-      "lang": "Ancient battlefields, amazons and the glory of Carlin - you really know every corner of Queen Eloise's realm now."
-    },
-    {
-      "key": "achievement.449.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Stronghold of Edron",
-      "pl": "Forteca z Edron",
-      "lang": "Stronghold of Edron"
-    },
-    {
-      "key": "achievement.449.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Strong fortresses, sprawling woods and ivory towers - you really know every corner of Edron now.",
-      "pl": "Silny, mocny forteca, I. drewno i kość słoniowa I. - ty I. kNiew I. corner z Edron Niew.",
-      "lang": "Strong fortresses, sprawling woods and ivory towers - you really know every corner of Edron now."
-    },
-    {
-      "key": "achievement.450.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Dwarven Mines",
-      "pl": "Dwarven I.",
-      "lang": "Dwarven Mines"
-    },
-    {
-      "key": "achievement.450.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Vast mines, an orc fortress and the magnificence of Kazordoon - you really know every corner of North-Eastern Mainland now.",
-      "pl": "Ogromny I., jeden orc forteca i the magnificence z Kazordoon - ty I. kNiew I. corner z Nierth-Wschodni I. Niew.",
-      "lang": "Vast mines, an orc fortress and the magnificence of Kazordoon - you really know every corner of North-Eastern Mainland now."
-    },
-    {
-      "key": "achievement.451.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "All Hail the King",
-      "pl": "Wszystkie I. the Król",
-      "lang": "All Hail the King"
-    },
-    {
-      "key": "achievement.451.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Old temples, a meadowy countryside and the splendour of Thais - you really know every corner of King Tibianus' realm now.",
-      "pl": "I. świątynia, jeden meadowy countryside i the splendour z Thais - ty I. kNiew I. corner z Król Tibianus' dziedzina, sfera Niew.",
-      "lang": "Old temples, a meadowy countryside and the splendour of Thais - you really know every corner of King Tibianus' realm now."
-    },
-    {
-      "key": "achievement.452.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Jewel in the Swamp",
-      "pl": "Klejnot w the I.",
-      "lang": "Jewel in the Swamp"
-    },
-    {
-      "key": "achievement.452.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Damp swamps, a dry desert and the opulence of Venore - you really know every corner of Eastern Mainland now.",
-      "pl": "I. I., jeden I. desert i the opulence z VeNiere - ty I. kNiew I. corner z Wschodni I. Niew.",
-      "lang": "Damp swamps, a dry desert and the opulence of Venore - you really know every corner of Eastern Mainland now."
-    },
-    {
-      "key": "achievement.453.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Ogre Steppe",
-      "pl": "The Ogr, potwór Step",
-      "lang": "The Ogre Steppe"
-    },
-    {
-      "key": "achievement.453.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "A vast steppe, voracious ogres and dried out salt seas - you really know every corner of Krailos now.",
-      "pl": "JEDEN ogromny step, żarłoczny ogr, potwór i suszony out I. morze - ty I. kNiew I. corner z Krailos Niew.",
-      "lang": "A vast steppe, voracious ogres and dried out salt seas - you really know every corner of Krailos now."
-    },
-    {
-      "key": "achievement.454.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Realms of Dreams",
-      "pl": "Dziedzina, sfera z I.",
-      "lang": "Realms of Dreams"
-    },
-    {
-      "key": "achievement.454.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Lush meadows, colourful fairies and sentient stones - you really know every corner of Feyrist now.",
-      "pl": "Bujny, wybujały łąka, colourful I. i sentient stones - ty I. kNiew I. corner z Feyrist Niew.",
-      "lang": "Lush meadows, colourful fairies and sentient stones - you really know every corner of Feyrist now."
-    },
-    {
-      "key": "achievement.455.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Mummy's Dearest",
-      "pl": "Mamusia, mamuśka Dearest",
-      "lang": "Mummy's Dearest"
-    },
-    {
-      "key": "achievement.455.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You have combed the desert and searched the pyramid city of Ankrahmun.",
-      "pl": "Masz I. the desert i I. the piramida miasto z Ankrahmun.",
-      "lang": "You have combed the desert and searched the pyramid city of Ankrahmun."
-    },
-    {
-      "key": "achievement.456.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Daraman's Footsteps",
-      "pl": "Daraman's Krok",
-      "lang": "Daraman's Footsteps"
-    },
-    {
-      "key": "achievement.456.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You journeyed through Darashia and the sea of sand around it, while fighting the perils of the desert.",
-      "pl": "Ty I. through Darashia i the morze z I. around to, I. I. the niebezpieczeństwo z the desert.",
-      "lang": "You journeyed through Darashia and the sea of sand around it, while fighting the perils of the desert."
-    },
-    {
-      "key": "achievement.457.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "King of the Jungle",
-      "pl": "Król z the Dżungla",
-      "lang": "King of the Jungle"
-    },
-    {
-      "key": "achievement.457.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You have searched Port Hope and the jungle that thoroughly, that you are up to adoption by a friendly ape family.",
-      "pl": "Masz I. I. I. i the dżungla that drobiazgowy, that Jesteś up do adopcja by jeden I. I. I..",
-      "lang": "You have searched Port Hope and the jungle that thoroughly, that you are up to adoption by a friendly ape family."
-    },
-    {
-      "key": "achievement.458.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ancient Splendor",
-      "pl": "Starożytny Splendor",
-      "lang": "Ancient Splendor"
-    },
-    {
-      "key": "achievement.458.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You've braved the perils of Yalahar and learned of its gloomy shadows of long gone greatness.",
-      "pl": "You've braved the niebezpieczeństwo z Yalahar i uczony z jego, jej, ich, swój mroczny cień z long sb is gone greatness.",
-      "lang": "You've braved the perils of Yalahar and learned of its gloomy shadows of long gone greatness."
-    },
-    {
-      "key": "achievement.459.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Liberty Bay Watch",
-      "pl": "Liberty I. Watch",
-      "lang": "Liberty Bay Watch"
-    },
-    {
-      "key": "achievement.459.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "A pirate's haven and a burglar's hideout. You found your way around Liberty Bay and its surroundings - land, ho!",
-      "pl": "JEDEN I. przystań, schronienie i jeden I. hideout. Ty znaleziono twój way around Liberty I. i jego, jej, ich, swój I. - land, ho!",
-      "lang": "A pirate's haven and a burglar's hideout. You found your way around Liberty Bay and its surroundings - land, ho!"
-    },
-    {
-      "key": "achievement.460.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Race to the Pole",
-      "pl": "I. do the I.",
-      "lang": "Race to the Pole"
-    },
-    {
-      "key": "achievement.460.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You have expelled the fog of the unknown from the islands of Svargrond. Maybe not as first, but that's not what matters in the end.",
-      "pl": "Masz expelled the mgła z the nieznany z the wyspa z Svargrond. Być może, może Niet as I., I. that's Niet I. I. w the I..",
-      "lang": "You have expelled the fog of the unknown from the islands of Svargrond. Maybe not as first, but that's not what matters in the end."
-    },
-    {
-      "key": "achievement.461.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Lizard Kingdom",
-      "pl": "Jaszczurka Królestwo",
-      "lang": "Lizard Kingdom"
-    },
-    {
-      "key": "achievement.461.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "From the southern steppe through the Dragonblaze Mountains and the Muggy Plains to the forbidden city of Razachai - you really know every corner of Zao now.",
-      "pl": "Z the południowy step through the Dragonblaze Góra i the Duszny, wilgotny I. do the zakazany miasto z Razachai - ty I. kNiew I. corner z Zao Niew.",
-      "lang": "From the southern steppe through the Dragonblaze Mountains and the Muggy Plains to the forbidden city of Razachai - you really know every corner of Zao now."
-    },
-    {
-      "key": "achievement.462.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Trip to the Beach",
-      "pl": "I. do the Plaża",
-      "lang": "Trip to the Beach"
-    },
-    {
-      "key": "achievement.462.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Braving a hive full of unimaginable proportions and its grotesque creatures on the surface is only one side of Gray Beach. Your full trip of the island also included a dive into the black nothingness of the deep sea, facing the wrath of the Njey.",
-      "pl": "Braving jeden ul I. z unimaginable pewna część, część i jego, jej, ich, swój I. stwory na the I. jest tylko I. I. z Gray Plaża. Twój I. I. z the wyspa także a. włączając, włącznie jeden I. a. do the I. Niethingness z the I. morze, facing the gniew z the Njey.",
-      "lang": "Braving a hive full of unimaginable proportions and its grotesque creatures on the surface is only one side of Gray Beach. Your full trip of the island also included a dive into the black nothingness of the deep sea, facing the wrath of the Njey."
     },
     {
       "key": "achievement.463.name",
@@ -3612,6 +3216,402 @@
       "en": "As intensely as the orcs hate all other races, they share a feeling of community. The orcs can sense, to some extent, the feelings of other orcs. The shamans develop this ability to such an extent, that they can sense the innermost potential of newborn orc whelps. All newborn are tested and the shamans decide a future function in orcish society. The whelps are fed differently, raised differently, and educated differently. Wise men of other races say that such behavior is similar to some insects, such as bees, and through their empathetic bond might share a kind of 'hive-mind', so they refer to orc communities as hives. The chief of a hive owns a big harem of women who have no other function than to pleasure him and give birth to new orcs. These orcish matrons are usually incredibly big and fat, almost not able to walk on their own. Where 'normal' orcwomen function as laborer and craftwomen and give birth to two to three orcs in their lives, these female orcs are only reproductive machinery, giving birth to about six whelps each half year. Orcs are usually contend with their place in orcish society and only the leaders fight each other on purpose. Rarely will an orc raise a weapon against another orc, even if they are not of the same hive. Rivalry between hives is usually dissolved through a fight of their leaders and the victorious hive absorbs the other one. Now and then, when a new strong warrior reaches maturity he challenges the old leader for a fight of supremacy. Sometimes though, when the hive becomes too big for the area it occupies, such a warrior senses somehow that its time to move on. Then he and a few other orcs leave the hive in peace to settle somewhere else. This unique culture, together with its fertility, makes the orcs the most formidable threat to all other tibian communities.",
       "pl": "As gwałtowny, silny as the orcs I. wszystkie drugi, pozostały Królewski Automobilklub, oni I. jeden uczucie z I.. The orcs może sense, do I. rozmiar, the uczucie z drugi, pozostały orcs. The shamans rozwijać się, rozwijać I. zdolność, możliwość do taki jeden rozmiar, that oni może sense the innermost I. z nowonarodzony orc whelps. Wszystkie nowonarodzony są I. i the shamans decydować się, decydować jeden I. I. w orcish społeczeństwo. The whelps są fed różny, wyniesiony, wypukły różny, i educated różny. I. men z drugi, pozostały Królewski Automobilklub I. that taki behavior jest podobny do I. owad, taki as być, i through ich empathetic I. might I. jeden I. z 'ul-mind', I. oni wspominać do orc I. as ul. The I. z jeden ul I. jeden duży, wielki harem z women kto masz Nie drugi, pozostały I. z niż do radość, przyjemność him i give I. do new orcs. These orcish siostra przełożona są zazwyczaj incredibly duży, wielki i I., prawie Niet zdolny do I. na ich I.. Where 'Niermal' orcwomen I. as laborer i craftwomen i give I. do dwa do trzy orcs w ich lives, these I. orcs są tylko rozrodczy urządzenia mechaniczne, maszyny, giving I. do o sześć whelps I. I. a. rok. Orcs są zazwyczaj współzawodniczyć z ich I. w orcish społeczeństwo i tylko the lider, przywódca I. I. drugi, pozostały na cel. Rzadko will jeden orc I. jeden broń o aNiether orc, I. if oni są Niet z the I. ul. Rywalizacja pomiędzy, między ul jest zazwyczaj dissolved through jeden I. z ich lider, przywódca i the zwycięski ul wchłaniać the drugi, pozostały I.. Niew i wtedy, when jeden new silny, mocny wojownik reaches dojrzałość, dorosłość on I. the I. lider, przywódca dla jeden I. z przewaga, supremacja. Kiedyś, pewnego razu I., when the ul stawać się też, także duży, wielki dla the obszar, region to zajmować, taki jeden wojownik senses w jakiś sposób, jakoś that jego, jej, ich, swój czas do I. na. Wtedy on i jeden few drugi, pozostały orcs I. the ul w peace do I. gdzieś a. inny, jeszcze. I. unikalny, unikatowy culture, razem z jego, jej, ich, swój fertility, makes the orcs the most groźny, trudny groźba do wszystkie drugi, pozostały tibian I..",
       "lang": "As intensely as the orcs hate all other races, they share a feeling of community. The orcs can sense, to some extent, the feelings of other orcs. The shamans develop this ability to such an extent, that they can sense the innermost potential of newborn orc whelps. All newborn are tested and the shamans decide a future function in orcish society. The whelps are fed differently, raised differently, and educated differently. Wise men of other races say that such behavior is similar to some insects, such as bees, and through their empathetic bond might share a kind of 'hive-mind', so they refer to orc communities as hives. The chief of a hive owns a big harem of women who have no other function than to pleasure him and give birth to new orcs. These orcish matrons are usually incredibly big and fat, almost not able to walk on their own. Where 'normal' orcwomen function as laborer and craftwomen and give birth to two to three orcs in their lives, these female orcs are only reproductive machinery, giving birth to about six whelps each half year. Orcs are usually contend with their place in orcish society and only the leaders fight each other on purpose. Rarely will an orc raise a weapon against another orc, even if they are not of the same hive. Rivalry between hives is usually dissolved through a fight of their leaders and the victorious hive absorbs the other one. Now and then, when a new strong warrior reaches maturity he challenges the old leader for a fight of supremacy. Sometimes though, when the hive becomes too big for the area it occupies, such a warrior senses somehow that its time to move on. Then he and a few other orcs leave the hive in peace to settle somewhere else. This unique culture, together with its fertility, makes the orcs the most formidable threat to all other tibian communities."
+    },
+    {
+      "key": "book.otbm.as_long_as_the_pits",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "As long as the pits were defended by the Nightmare Knights, who must have known previously when an eruption would occur, the demons could be fought back while they were still materialising and thus, most vulnerable. Now that the pits are lost and overrun by demonic hordes, an attack becomes more and more likely.",
+      "pl": "As long as the dół, jama były bronić by the Zły sen I., kto musi masz kNiewn poprzednio when jeden wybuch would zdarzać się, następować, the demon mógł być fought I. I. oni były I. materialising i toteż, dlatego, most wrażliwy, podatny na zranienie, podatny. Niew that the dół, jama są I. i przechwytywać by demoniczny, złowrogi zgraja, horda, jeden I. stawać się more i more możliwy.",
+      "lang": "As long as the pits were defended by the Nightmare Knights, who must have known previously when an eruption would occur, the demons could be fought back while they were still materialising and thus, most vulnerable. Now that the pits are lost and overrun by demonic hordes, an attack becomes more and more likely."
+    },
+    {
+      "key": "book.otbm.as_long_as_there_are",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "As long as there are enough minions to boost the negative energy of a place, demons can exist for a very long time in our realm. So in theory, it would also be possible that the gate between the two realms is kept open, allowing more and more demons to enter our world that can easily form a demonic army causing mayhem and havoc.",
+      "pl": "As long as Są eNieugh minions do I. the I. energia z jeden I., demon może istnieć dla jeden I. long czas w nasz dziedzina, sfera. I. w teoria, to would także być możliwy that the brama pomiędzy, między the dwa dziedzina, sfera jest kept otwórz, I. more i more demon do I. nasz I. that może łatwo I. jeden demoniczny, złowrogi wojsko, armia causing mayhem i chaos, zamieszanie.",
+      "lang": "As long as there are enough minions to boost the negative energy of a place, demons can exist for a very long time in our realm. So in theory, it would also be possible that the gate between the two realms is kept open, allowing more and more demons to enter our world that can easily form a demonic army causing mayhem and havoc."
+    },
+    {
+      "key": "book.otbm.as_the_king_became_sick",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "As the king became sick and no one was able to heal him, the traitor stepped forward with a strange medicine. Trusting in his beloved servant, the king drank the medicine which actually was the blood of some servant that had been murdered recently. The medicine seemed to restore the king's strength, so the traitor had no trouble to feed him with more blood. Soon the king's appearance started to change. His aversion to sunlight and his paleness were attributed to his illness, but also the king's temper and behaviour turned more and more violent and aggressive. Nonetheless, the people loved their king and put up with his moods.",
+      "pl": "As the król became I. i Nie I. był zdolny do I. him, the zdrajca stepped I. z jeden dziwny medycyna. Ufny w jego ukochany I., the król drank the medycyna I. naprawdę był the I. z I. I. that miał był I. niedawno. The medycyna a. wydawać się być, wydawać się, zdawać się do przywracać the król siła, I. the zdrajca miał Nie I. do I. him z more I.. Wkrótce, szybko the król pojawienie się uruchomioNie do change. Jego wstręt do słońce, światło słońca i jego bladość były attributed do jego choroba, I. także the król I. i zachowanie się, zachowanie turned more i more gwałtowny i zaczepny, agresywny. Nienetheless, the I. loved ich król i put up z jego nastrój, humor.",
+      "lang": "As the king became sick and no one was able to heal him, the traitor stepped forward with a strange medicine. Trusting in his beloved servant, the king drank the medicine which actually was the blood of some servant that had been murdered recently. The medicine seemed to restore the king's strength, so the traitor had no trouble to feed him with more blood. Soon the king's appearance started to change. His aversion to sunlight and his paleness were attributed to his illness, but also the king's temper and behaviour turned more and more violent and aggressive. Nonetheless, the people loved their king and put up with his moods."
+    },
+    {
+      "key": "book.otbm.as_the_orcs_approached_ive",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "As the orcs approached I've hidden myself in the bushes near the lake. I did hardly dare to breath as they met only some inches from my nose. I thought my wild beating heart might betray me to this murderous beasts.",
+      "pl": "As the orcs I. I've hidden się, siebie, sobie w the krzak I. the jezioro. I zrobił prawie nie dare do a. oddech as oni met tylko I. I. z mój Niese. I myśl mój I. I. serce might zdradzać mnie, mi do I. morderczy zwierzę.",
+      "lang": "As the orcs approached I've hidden myself in the bushes near the lake. I did hardly dare to breath as they met only some inches from my nose. I thought my wild beating heart might betray me to this murderous beasts."
+    },
+    {
+      "key": "book.otbm.as_we_travelled_through_the",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "As we travelled through the dungeon tunnels we came to a big cave. In the light of our torches we saw several eyes glowing in the darkness, then the trolls attacked, silently as usual. We immediately dropped our torches and raised our shields to block the first attack, then we counterattacked. Soon the floor was wet with blood, ours and theirs. They were very skilled in blocking our blows and I am sure with inferior weapons we would have hacked on these beasts for an eternity.",
+      "pl": "As my podróżled through the loch, więzienie I. my came do jeden duży, wielki I.. W the I. z nasz latarka my saw I. eTak entuzjastyczny w the ciemność, wtedy the trolls I., cichy as zwyczajny. My natychmiast dropped nasz latarka i wyniesiony, wypukły nasz I. do block the I. I., wtedy my counterattacked. Wkrótce, szybko the I. był I. z I., nasz i ich. Oni były I. wykwalifikowany, wyszkolony w blocking nasz blows i I am sure z I. broń my would masz I. na these zwierzę dla jeden wieczność.",
+      "lang": "As we travelled through the dungeon tunnels we came to a big cave. In the light of our torches we saw several eyes glowing in the darkness, then the trolls attacked, silently as usual. We immediately dropped our torches and raised our shields to block the first attack, then we counterattacked. Soon the floor was wet with blood, ours and theirs. They were very skilled in blocking our blows and I am sure with inferior weapons we would have hacked on these beasts for an eternity."
+    },
+    {
+      "key": "book.otbm.as_with_other_tests_it",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "As with other tests it could be observed that the vampires have the ability of regeneration but not of regrowth.",
+      "pl": "As z drugi, pozostały I. to mógł być observed that the wampir masz the zdolność, możliwość z regeneration I. Niet z regrowth.",
+      "lang": "As with other tests it could be observed that the vampires have the ability of regeneration but not of regrowth."
+    },
+    {
+      "key": "book.otbm.ask_for_the_different_goods",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ask for the different goods you need.",
+      "pl": "I. dla the różny I. Potrzebujesz.",
+      "lang": "Ask for the different goods you need."
+    },
+    {
+      "key": "book.otbm.ask_muriel_to_learn_spells",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ask Muriel to learn spells or to",
+      "pl": "I. Muriel do uczyć się, nauczyć się zaklęCentalna Agencja Wywiadowcza lub do",
+      "lang": "Ask Muriel to learn spells or to"
+    },
+    {
+      "key": "book.otbm.at_a_store_sell_spare",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "at a store. Sell spare food at the farm.",
+      "pl": "w jeden I.. Sprzedaj I. jedzenie, pożywienie w the I..",
+      "lang": "at a store. Sell spare food at the farm."
+    },
+    {
+      "key": "book.otbm.at_last_even_baaleal_who",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "At last even Baa'leal, who led the Efreet in battle, had to admit that the Marid and their despised human allies fought valiantly. However, despite the heavy losses he was determined to decide the war there and now. He summoned the most powerful Efreet wizards and ordered them to unleash a huge column of magic fire onto Ankrahmun in order to render the city and all those in it to cinders. The Efreet wizards' followed his orders and soon a wall of devastating fire rose up to the sky. However, when they tried to move it onto Ankrahmun they soon realised that it did not move into the desired direction. The Marid had soon seen through Baa'leals plan, and Fa'hradin and his fellow Marid mages used their own magic to turn the devastating flames against their creators. A fierce battle of wills ensued between the mages from both sides, and the whole battle came to a halt when the two armies watched in horrified fascination as the terrible pile of flames wandered seemingly undecided to and fro. But then, all of a sudden, the pile made a sudden leap to the north, and within seconds those who had summoned it from the sky were reduced to smouldering ashes. That was the turning point of the great battle.",
+      "pl": "W last I. Baa'leal, kto led the Efreet w I., miał do przyznać się that the Marid i ich despised I. allies fought bohaterski, dzielny. Jednak, pomimo, mimo the ciężki strata, utrata on był zdecydowany do decydować się, decydować the I. there i Niew. On I. the most potężny Efreet czarnoksiężnik i ordered ich do uwalniać jeden ogromny kolumna z I. fire onto Ankrahmun w order do a. czynić, sprawiać the miasto i wszystkie those w to do cinders. The Efreet czarnoksiężnik' I. jego orders i wkrótce, szybko jeden ściana, mur z devastating fire I. up do the niebo. Jednak, when oni tried do I. to onto Ankrahmun oni wkrótce, szybko realised that to zrobił Niet I. a. do the desired kierunek. The Marid miał wkrótce, szybko seen through Baa'leals I., i Fa'hradin i jego facet, gość Marid mages used ich I. I. do turn the devastating płomień o ich creators. JEDEN zajadły I. z wills ensued pomiędzy, między the mages z obaj I., i the I. I. came do jeden zatrzymywać się, zatrzymywać when the dwa wojsko, armia watched w horrified fascynacja as the straszny, okropny pile z płomień wędrować pozorny niezdecydowany do i to and fro. I. wtedy, wszystkie z jeden nagły, the pile zrobiony jeden nagły I. do the Nierth, i wewnątrz sekundy those kto miał I. to z the niebo były reduced do smouldering popiół. That był the I. point z the I. I..",
+      "lang": "At last even Baa'leal, who led the Efreet in battle, had to admit that the Marid and their despised human allies fought valiantly. However, despite the heavy losses he was determined to decide the war there and now. He summoned the most powerful Efreet wizards and ordered them to unleash a huge column of magic fire onto Ankrahmun in order to render the city and all those in it to cinders. The Efreet wizards' followed his orders and soon a wall of devastating fire rose up to the sky. However, when they tried to move it onto Ankrahmun they soon realised that it did not move into the desired direction. The Marid had soon seen through Baa'leals plan, and Fa'hradin and his fellow Marid mages used their own magic to turn the devastating flames against their creators. A fierce battle of wills ensued between the mages from both sides, and the whole battle came to a halt when the two armies watched in horrified fascination as the terrible pile of flames wandered seemingly undecided to and fro. But then, all of a sudden, the pile made a sudden leap to the north, and within seconds those who had summoned it from the sky were reduced to smouldering ashes. That was the turning point of the great battle."
+    },
+    {
+      "key": "book.otbm.at_last_malor_prepared_for",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "At last, Malor prepared for a decisive strike. He sent a messenger to Gabel and challenged him to a personal duel. Gabel, who was prepared to do anything to stop the fratricidal war, accepted the challenge. The enemies agreed to meet in the fertile plains of Kha'labal. There they stood, face to face, the old king and the usurper, and so did their armies, because neither of two was gullible or foolish enough to come on his own. It was the greatest gathering of djinns in recorded history.",
+      "pl": "W last, Malor przygotowany dla jeden decydujący strike. On sent jeden posłaniec do Gabel i challenged him do jeden osobisty pojedynek. Gabel, kto był przygotowany do robić cokolwiek do stop the fratricidal I., przyjmować, uznawać the I.. The wróg agreed do spotykać się, spotykać w the żyzny I. z Kha'labal. There oni stood, I. do I., the I. król i the uzurpować, i I. zrobił ich wojsko, armia, ponieważ, bo I. z dwa był łatwowierny lub głupi, niemądry eNieugh do come na jego I.. To był the greatest I. z djinns w recorded historia.",
+      "lang": "At last, Malor prepared for a decisive strike. He sent a messenger to Gabel and challenged him to a personal duel. Gabel, who was prepared to do anything to stop the fratricidal war, accepted the challenge. The enemies agreed to meet in the fertile plains of Kha'labal. There they stood, face to face, the old king and the usurper, and so did their armies, because neither of two was gullible or foolish enough to come on his own. It was the greatest gathering of djinns in recorded history."
+    },
+    {
+      "key": "book.otbm.at_last_we_trapped_hugo",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "At last we trapped Hugo in the dungeon cellars!",
+      "pl": "W last my trapped Hugo w the loch, więzienie piwnica!",
+      "lang": "At last we trapped Hugo in the dungeon cellars!"
+    },
+    {
+      "key": "book.otbm.at_last_we_will_face",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "At last we will face Goshnar the evil one!",
+      "pl": "W last my will I. Goshnar the I. I.!",
+      "lang": "At last we will face Goshnar the evil one!"
+    },
+    {
+      "key": "book.otbm.at_least_a_leather_armor",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "at least a leather armor and a helmet, a wooden shield, and a short sword.",
+      "pl": "w najmniej jeden skóra armor i jeden kask, jeden drewniany I., i jeden short miecz.",
+      "lang": "at least a leather armor and a helmet, a wooden shield, and a short sword."
+    },
+    {
+      "key": "book.otbm.at_one_faraway_point_in",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "At one far-away point in history, the Yalahari seemingly vanished. Certain clues that our ancestors gathered, hint that they locked themselves in the city's centre and cut off all contact to their helpers. When the Augur sometime later dared to enter the inner city, the Yalahari were all gone - vanished without a trace. After getting over the initial shock, the Augur assumed the role of the Yalahari themselves. For a while they tried to get familiar with some of the secrets of their lost masters, but they were only able to understand the most basic concepts of the Yalahari's knowledge. They stuck to their usual tasks to keep the city running. Still, they were too few to keep the enormous city, of which they understood so little, in shape.",
+      "pl": "W I. far-I. point w historia, the Yalahari pozorny znikać. Pewny wskazówka, ślad that nasz przodek gromadzić się, gromadzić, I. that oni I. się, siebie, sobie w the miasto centre i cut off wszystkie I. do ich pomocnik. When the Wróżyć kiedyś, pewnego razu later dared do I. the wewnętrzny miasto, the Yalahari były wszystkie sb is gone - znikać bez jeden I.. After getting I. the I. I., the Wróżyć assumed the rola z the Yalahari się, siebie, sobie. Dla jeden I. oni tried do get znajomy z I. z the I. z ich I. I., I. oni były tylko zdolny do rozumieć, pojmować the most podstawowy pojęcie z the Yalahari's kNiewledge. Oni be stuck do ich zwyczajny zadanie, zajęcie do keep the miasto I.. I., oni były też, także few do keep the eNiermous miasto, z I. oni understood I. little, w I..",
+      "lang": "At one far-away point in history, the Yalahari seemingly vanished. Certain clues that our ancestors gathered, hint that they locked themselves in the city's centre and cut off all contact to their helpers. When the Augur sometime later dared to enter the inner city, the Yalahari were all gone - vanished without a trace. After getting over the initial shock, the Augur assumed the role of the Yalahari themselves. For a while they tried to get familiar with some of the secrets of their lost masters, but they were only able to understand the most basic concepts of the Yalahari's knowledge. They stuck to their usual tasks to keep the city running. Still, they were too few to keep the enormous city, of which they understood so little, in shape."
+    },
+    {
+      "key": "book.otbm.at_the_bottom_of_those",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "at the bottom of those pages*",
+      "pl": "w the I. z those I.*",
+      "lang": "at the bottom of those pages*"
+    },
+    {
+      "key": "book.otbm.at_the_great_bay_east",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "At the great bay, east of Thais lies a rotten town of criminals. Little is known about it and only the most ruthles people even think about travelling there.",
+      "pl": "W the I. I., I. z Thais lies jeden zepsuty, zgniły miasto z criminals. Little jest kNiewn o to i tylko the most ruthles I. I. I. o podróżling there.",
+      "lang": "At the great bay, east of Thais lies a rotten town of criminals. Little is known about it and only the most ruthles people even think about travelling there."
+    },
+    {
+      "key": "book.otbm.attempts_uman_consented_only_too",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "attempts. Uman consented only too readily, but Zathroth, the dark one of the twins, refused himself. Thus Fardos and Uman",
+      "pl": "I.. Uman I. tylko też, także ochoczo, skwapliwie, I. Zathroth, the I. I. z the I., refused się, siebie, sobie. Toteż, dlatego Fardos i Uman",
+      "lang": "attempts. Uman consented only too readily, but Zathroth, the dark one of the twins, refused himself. Thus Fardos and Uman"
+    },
+    {
+      "key": "book.otbm.attention_this_area_is_considered",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "ATTENTION: This area is considered evil and deemed restricted by direct decree of the inquisition. We cannot spare any men to guard this passage to keep outsiders from venturing deeper into the island but, know this: next to none of our own",
+      "pl": "UWAGA: I. obszar, region jest uważać I. i sądzić, domniemywać ograniczony by I. I. z the inquisition. My canNiet I. dowolny men do I. I. przejście do keep człowiek niezależny, człowiek nie związany z grupą z venturing I. a. do the wyspa I., kNiew I.: next do Niene z nasz I.",
+      "lang": "ATTENTION: This area is considered evil and deemed restricted by direct decree of the inquisition. We cannot spare any men to guard this passage to keep outsiders from venturing deeper into the island but, know this: next to none of our own"
+    },
+    {
+      "key": "book.otbm.attention_toad_is_spitting",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "ATTENTION: TOAD IS SPITTING",
+      "pl": "UWAGA: ROPUCHA JEST SPITTING",
+      "lang": "ATTENTION: TOAD IS SPITTING"
+    },
+    {
+      "key": "book.otbm.authorised_personnel_only",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Authorised Personnel only!",
+      "pl": "Authorised Personel, obsługa tylko!",
+      "lang": "Authorised Personnel only!"
+    },
+    {
+      "key": "book.otbm.awakened_the_old_races_and",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "awakened the old races and old frights back to life. It is said that the city of Tibia was the first to rise again, barren of almost all",
+      "pl": "rozbudzać the I. Królewski Automobilklub i I. strach, przestrach I. do I.. To jest said that the miasto z Tibia był the I. do rise ponownie, jałowy, bezpłodny z prawie wszystkie",
+      "lang": "awakened the old races and old frights back to life. It is said that the city of Tibia was the first to rise again, barren of almost all"
+    },
+    {
+      "key": "book.otbm.bad_side_for_a_long",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "bad side. For a long time they manipulated and pulled on the essence of Uman-Zathroth, but only to detect that this unitity was",
+      "pl": "zły, niedobry I.. Dla jeden long czas oni manipulated i I. na the istota, podstawa z Uman-Zathroth, I. tylko do wyczuwać that I. unitity był",
+      "lang": "bad side. For a long time they manipulated and pulled on the essence of Uman-Zathroth, but only to detect that this unitity was"
+    },
+    {
+      "key": "book.otbm.banana_cherry_grapes_melon_carrot",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "banana, cherry, grapes, melon, carrot, cookie, roll, brown bread, egg, cheese",
+      "pl": "banan, I., winogrono, melon, arbuz, marchewka, herbatnik, ciastko, I., I. chleb, I., ser",
+      "lang": "banana, cherry, grapes, melon, carrot, cookie, roll, brown bread, egg, cheese"
+    },
+    {
+      "key": "book.otbm.banor_however_chose_the_noblest",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Banor however chose the noblest of the mortal ones, Kirana, as its wife, and she bore him Elane, which possessed as much",
+      "pl": "BaNier jednak chose the Nieblest z the I. na, Kirana, as jego, jej, ich, swój żona, i ona I. him Elane, I. posiadać as dużo, bardzo",
+      "lang": "Banor however chose the noblest of the mortal ones, Kirana, as its wife, and she bore him Elane, which possessed as much"
+    },
+    {
+      "key": "book.otbm.banor_i_praise_your_name",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Banor I praise your name.",
+      "pl": "BaNier I I. twój nazwa.",
+      "lang": "Banor I praise your name."
+    },
+    {
+      "key": "book.otbm.basement_souterrain_training_statues",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Basement (souterrain): Training Statues",
+      "pl": "Suterena (souterrain): Trening Posąg",
+      "lang": "Basement (souterrain): Training Statues"
+    },
+    {
+      "key": "book.otbm.basement_the_trading_room_training",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Basement - The Trading Room, Training Center and Bank",
+      "pl": "Suterena - The Trading miejsce, Trening Cent i Bank",
+      "lang": "Basement - The Trading Room, Training Center and Bank"
+    },
+    {
+      "key": "book.otbm.basic_spells_for_apprentices",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Basic spells for apprentices.",
+      "pl": "Podstawowy zaklęCentalna Agencja Wywiadowcza dla terminator, praktykant.",
+      "lang": "Basic spells for apprentices."
+    },
+    {
+      "key": "book.otbm.bastesh_allowed_him_to_enter",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bastesh allowed him to enter her realm in his early years",
+      "pl": "Bastesh I. him do I. her dziedzina, sfera w jego ucho a. rok",
+      "lang": "Bastesh allowed him to enter her realm in his early years"
+    },
+    {
+      "key": "book.otbm.basteth_wanted_to_come_to",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Basteth wanted to come to aid her cousin, but her creatures, large and dreadful as they were simply could not walk ashore.",
+      "pl": "Basteth I. do come do I. her cousin, I. her stwory, large i okropny as oni były po prostu mógł Niet I. na brzeg, do brzegu.",
+      "lang": "Basteth wanted to come to aid her cousin, but her creatures, large and dreadful as they were simply could not walk ashore."
+    },
+    {
+      "key": "book.otbm.battle_tactics_for_demona",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Battle tactics for Demona",
+      "pl": "I. taktyka dla Demona",
+      "lang": "Battle tactics for Demona"
+    },
+    {
+      "key": "book.otbm.battle_tactics_for_demona_mazeforces",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Battle tactics for Demona - Mazeforces",
+      "pl": "I. taktyka dla Demona - Mazeforces",
+      "lang": "Battle tactics for Demona - Mazeforces"
+    },
+    {
+      "key": "book.otbm.battletactics_for_mages_i",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Battletactics for Mages [I]",
+      "pl": "Battletactics dla Mages [I]",
+      "lang": "Battletactics for Mages [I]"
+    },
+    {
+      "key": "book.otbm.battletactics_for_mages_ii",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Battletactics for Mages [II]",
+      "pl": "Battletactics dla Mages [II]",
+      "lang": "Battletactics for Mages [II]"
+    },
+    {
+      "key": "book.otbm.battletactics_for_mages_iii",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Battletactics for Mages [III]",
+      "pl": "Battletactics dla Mages [III]",
+      "lang": "Battletactics for Mages [III]"
+    },
+    {
+      "key": "book.otbm.battletactics_for_mages_iv",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Battletactics for Mages [IV]",
+      "pl": "Battletactics dla Mages [IV]",
+      "lang": "Battletactics for Mages [IV]"
+    },
+    {
+      "key": "book.otbm.be_aware_that_our_kind",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Be aware that our kind mastered the art of tunnelling. It may take you a whole life to understand the techniques that are used and it takes generations to know all the tunnels of a mine and all their exits. You even may find an exit that you never expected to.",
+      "pl": "Być aware that nasz I. I. the I. z tunnelling. To a. móc take ty jeden I. I. do rozumieć, pojmować the technika that są used i to takes pokolenie, generacja do kNiew wszystkie the I. z jeden I. i wszystkie ich I.. Ty I. a. móc I. jeden I. that ty nigdy spodziewać się do.",
+      "lang": "Be aware that our kind mastered the art of tunnelling. It may take you a whole life to understand the techniques that are used and it takes generations to know all the tunnels of a mine and all their exits. You even may find an exit that you never expected to."
+    },
+    {
+      "key": "book.otbm.be_careful_you_are_about",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Be careful! You are about to enter the 'Hall of the lost doors'. Enter only alone!",
+      "pl": "Być ostrożny! Jesteś o do I. the 'Korytarz, przedpokój, hall z the I. drzwi'. I. tylko I.!",
+      "lang": "Be careful! You are about to enter the 'Hall of the lost doors'. Enter only alone!"
+    },
+    {
+      "key": "book.otbm.be_my_shield_let_me",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Be my shield, let me be your sword.",
+      "pl": "Być mój I., let mnie, mi być twój miecz.",
+      "lang": "Be my shield, let me be your sword."
+    },
+    {
+      "key": "book.otbm.be_polite_and_respectful_to",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Be polite and respectful to other people you meet. Most dangers are far easier to overcome for",
+      "pl": "Być uprzejmy i pełen szacunku do drugi, pozostały I. ty spotykać się, spotykać. Most niebezpieczeństwo są far easier do pokonywać dla",
+      "lang": "Be polite and respectful to other people you meet. Most dangers are far easier to overcome for"
+    },
+    {
+      "key": "book.otbm.be_with_me_in_the",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Be with me in the battle.",
+      "pl": "Być z mnie, mi w the I..",
+      "lang": "Be with me in the battle."
+    },
+    {
+      "key": "book.otbm.because_the_gods_wanted_to",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "because the gods wanted to heal the wounds of the world, but because this powerleak frightened them that much. They further speculate that the withdrawel of the world was more an act of panic, an attempt not to lose complete control over",
+      "pl": "ponieważ, bo the gods I. do I. the I. z the I., I. ponieważ, bo I. powerleak wystraszony ich that dużo, bardzo. Oni further spekulować that the wypłjedenćel z the I. był more jeden I. z I., jeden I. Niet do lose I. control I.",
+      "lang": "because the gods wanted to heal the wounds of the world, but because this powerleak frightened them that much. They further speculate that the withdrawel of the world was more an act of panic, an attempt not to lose complete control over"
+    },
+    {
+      "key": "book.otbm.because_the_gods_wanted_to_f5c45b0e",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "because the gods wanted to heal the wounds of the world, but because this powerleak frightened them that much. They further speculate that the withdrawel of the world was more an act of panic, an attempt not to lose complete control over",
+      "pl": "ponieważ, bo the gods I. do I. the I. z the I., I. ponieważ, bo I. powerleak wystraszony ich that dużo, bardzo. Oni further spekulować that the wypłjedenćel z the I. był more jeden I. z I., jeden I. Niet do lose I. control I.",
+      "lang": "because the gods wanted to heal the wounds of the world, but because this powerleak frightened them that much. They further speculate that the withdrawel of the world was more an act of panic, an attempt not to lose complete control over"
     }
   ],
   "length_ratio_issues": [
@@ -3722,525 +3722,12 @@
       "en_len": 9,
       "lang_ratio": 1.556,
       "pl_ratio": 3.556
-    },
-    {
-      "key": "npc.alyxo.say_12",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.alyxo.say_15",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.alyxo.say_18",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.alyxo.say_21",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.alyxo.say_24",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.alyxo.say_6",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.alyxo.say_9",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.bo_ques.say_6",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 14,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.214
-    },
-    {
-      "key": "npc.broken_servant_sentry.say_5",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 119,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.286
-    },
-    {
-      "key": "npc.broken_servant_sentry.say_7",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 119,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.286
-    },
-    {
-      "key": "npc.chartan.multi_10",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 21,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.143
-    },
-    {
-      "key": "npc.chester_kahs.say_19",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 112,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.839
-    },
-    {
-      "key": "npc.chester_kahs.say_6",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 26,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.038
-    },
-    {
-      "key": "npc.commander_stone.say_18",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 21,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.81
-    },
-    {
-      "key": "npc.commander_stone.say_23",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 21,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.81
-    },
-    {
-      "key": "npc.commander_stone.say_6",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 21,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.81
-    },
-    {
-      "key": "npc.gnomaticus.say_3",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 27,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.296
-    },
-    {
-      "key": "npc.gnomeral.say_11",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 21,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.81
-    },
-    {
-      "key": "npc.gnomeral.say_16",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 21,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.81
-    },
-    {
-      "key": "npc.gnomeral.say_21",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 21,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.81
-    },
-    {
-      "key": "npc.gnomeral.say_5",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 21,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.81
-    },
-    {
-      "key": "npc.gregor.say_23",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 32,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.469
-    },
-    {
-      "key": "npc.gregor.say_26",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 32,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.469
-    },
-    {
-      "key": "npc.gregor.say_29",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 32,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.469
-    },
-    {
-      "key": "npc.gregor.say_32",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 32,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.469
-    },
-    {
-      "key": "npc.guard_saros.say_3",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 55,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.018
-    },
-    {
-      "key": "npc.hairycles.say_42",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 65,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.908
-    },
-    {
-      "key": "npc.hairycles.say_54",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 26,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.962
-    },
-    {
-      "key": "npc.hairycles.say_56",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 26,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.962
-    },
-    {
-      "key": "npc.hairycles.say_61",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 26,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.962
-    },
-    {
-      "key": "npc.henricus.say_28",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 8,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.25
-    },
-    {
-      "key": "npc.kallimae.say_3",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.kallimae.say_6",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.kallimae.say_9",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.karith.say_6",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 45,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.844
-    },
-    {
-      "key": "npc.lurik.say_2",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 22,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.864
-    },
-    {
-      "key": "npc.markwin.say_7",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 16,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.875
-    },
-    {
-      "key": "npc.narsai.say_3",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.narsai.say_6",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.pig.say_2",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 78,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.128
-    },
-    {
-      "key": "npc.saideh.say_3",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.sandomo.greet_msg_1",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 14,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.5
-    },
-    {
-      "key": "npc.santa_claus.say_1",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 28,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.821
-    },
-    {
-      "key": "npc.shimun.say_3",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.shimun.say_6",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.simon_the_beggar.say_27",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 25,
-      "lang_ratio": 0.0,
-      "pl_ratio": 3.08
-    },
-    {
-      "key": "npc.stricken_soul.multi_1",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 12,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.083
-    },
-    {
-      "key": "npc.stricken_soul.say_3",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 27,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.963
-    },
-    {
-      "key": "npc.tefrit.say_3",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.tefrit.say_6",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.tomruk_the_ruddy.say_3",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 81,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.827
-    },
-    {
-      "key": "npc.undal.say_14",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 27,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.963
-    },
-    {
-      "key": "npc.vanys.say_14",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 27,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.963
-    },
-    {
-      "key": "npc.wyda.say_1",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 24,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.875
-    },
-    {
-      "key": "npc.yonan.say_3",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.yonan.say_6",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 6,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.0
-    },
-    {
-      "key": "npc.yonan.say_9",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 41,
-      "lang_ratio": 0.0,
-      "pl_ratio": 1.805
     }
   ],
   "auto_fix": {
     "attempted": 80,
-    "applied": 22,
-    "skipped": 58,
+    "applied": 20,
+    "skipped": 60,
     "errors": 0
   }
 }

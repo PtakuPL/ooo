@@ -5,6 +5,26 @@
 > `docs/I18N_UNIFIED_EXECUTION_PLAN_2026-02-13.md`.
 > W przypadku konfliktu zapisów, obowiązuje plan kanoniczny.
 
+## 🛠️ Aktualizacja wykonania (2026-02-14 11:22 UTC — status refresh autonomy + reconcile any-drift + translation contract check)
+
+Wykonane:
+- ✅ **Statusd: autonomiczne odświeżanie `I18N_STATUS.md`**
+  - wdrożono moduł `maybe_refresh_status_md()` + `run_status_md_refresh()` w `i18n-statusd.sh`,
+  - status odświeża się gdy jest stary lub po aplikacji reconcile,
+  - smoke test: wymuszone postarzenie `I18N_STATUS.md` + `--reconcile-registry` skutkuje odświeżeniem mtime.
+- ✅ **Statusd: reconcile pod mały drift i szybkie zmiany manualne**
+  - nowe pole progów: `registry_reconcile.always_sync_any_drift=true`,
+  - `registry_reconcile_latest.json` publikuje dodatkowo `cooldown_bypassed`,
+  - cel: ograniczyć przypadki „status nie widzi zmian zrobionych poza workerem”.
+- ✅ **Statusd doctor: check kontraktu uruchomienia tłumaczeń**
+  - nowy blok `translation_contract` w `statusd_doctor.json`,
+  - checkuje `--translations-only` + aktywność gate ES/PL (`priority_langs=[es,pl]`),
+  - bieżący wynik runtime: `contract_ok`.
+
+Nowe TODO:
+- ⬜ Dodać do alertingu webhook reason code dla `WORKER_TRANSLATION_CONTRACT_BROKEN`, żeby złamanie kontraktu tłumaczeń nie ginęło w logach.
+- ⬜ Dodać dedykowaną telemetrię domenową LT/CS/EL/IT do `statusd_report` (items_name/items_desc/npc/quests), bo obecny report nie pokazuje tego rozbicia.
+
 ## 🛠️ Aktualizacja wykonania (2026-02-14 10:18 UTC — post-start gate + manual source diagnosis + queue observation)
 
 Wykonane:

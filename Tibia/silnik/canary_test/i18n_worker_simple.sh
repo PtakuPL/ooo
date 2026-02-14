@@ -13978,6 +13978,15 @@ if use_google_translate and gt_pending:
             else:
                 skipped_not_placeholder += 1
 
+# ── Guard: zapobiegaj pustym wartościom (defense-in-depth) ─────────────────
+_empty_guard_fixed = 0
+for _eg_key, _eg_val in lang_data.items():
+    if isinstance(_eg_val, str) and _eg_val.strip() == "" and _eg_key in en_data and str(en_data[_eg_key]).strip():
+        lang_data[_eg_key] = f"[EN] {en_data[_eg_key]}"
+        _empty_guard_fixed += 1
+if _empty_guard_fixed > 0:
+    print(f"🛡️ Empty-guard: naprawiono {_empty_guard_fixed} pustych wartości → [EN] prefix")
+
 # Zapisz (atomic)
 import tempfile
 lang_data = dict(sorted(lang_data.items()))

@@ -1,127 +1,127 @@
 {
-  "timestamp": "2026-02-14T11:03:50.460438Z",
+  "timestamp": "2026-02-14T11:26:22.557574Z",
   "language": "es",
-  "json_file": "npc.json",
-  "translated": 95,
+  "json_file": "monsters.json",
+  "translated": 74,
   "entries": [
     {
-      "key": "npc.sandomo.multi_1",
-      "en": "Good. Registered as... ",
-      "translated": "Bien. Registrado como...",
+      "key": "monster.minotaur_hunter.desc",
+      "en": "a minotaur hunter",
+      "translated": "un cazador de minotauros",
       "source": "google_translate"
     },
     {
-      "key": "npc.sandomo.multi_10",
-      "en": " mortar and ...",
-      "translated": "mortero y...",
+      "key": "monster.animated_rhino.name",
+      "en": "Animated Stone Rhino",
+      "translated": "Rinoceronte de piedra animado",
       "source": "google_translate"
     },
     {
-      "key": "npc.sandomo.multi_11",
-      "en": "You killed ",
-      "translated": "Tu mataste",
+      "key": "monster.animated_rhino.desc",
+      "en": "an animated stone rhino",
+      "translated": "un rinoceronte de piedra animado",
       "source": "google_translate"
     },
     {
-      "key": "npc.sandomo.multi_12",
-      "en": " frazzlemaws and ...",
-      "translated": "frazzlemaws y...",
+      "key": "monster.minotaur_idol.desc",
+      "en": "a minotaur idol",
+      "translated": "un ídolo minotauro",
       "source": "google_translate"
     },
     {
-      "key": "npc.sandomo.multi_13",
-      "en": "You also hunted ",
-      "translated": "Tu tambien cazaste",
+      "key": "monster.charged_anomaly.desc",
+      "en": "a charged anomaly",
+      "translated": "una anomalía cargada",
       "source": "google_translate"
     },
     {
-      "key": "npc.sandomo.multi_14",
-      "en": " silencers. That would equal ",
-      "translated": "silenciadores. Eso sería igual",
+      "key": "monster.lost_gnome.desc",
+      "en": "a lost gnome",
+      "translated": "un gnomo perdido",
       "source": "google_translate"
     },
     {
-      "key": "npc.sandomo.multi_15",
-      "en": " of inquisition gold - BUT we are currently short of this valuable metal so... do you want me to add this amount to my {books} for now or {trade} it for something else.",
-      "translated": "de oro de la Inquisición, PERO actualmente nos falta este valioso metal, así que... ¿quieres que agregue esta cantidad a mi {books} por ahora o {trade} para otra cosa?",
+      "key": "monster.gnome_pack_crawler.name",
+      "en": "Gnome Pack Crawler",
+      "translated": "Rastreador de paquete de gnomos",
       "source": "google_translate"
     },
     {
-      "key": "npc.sandomo.multi_16",
-      "en": "We scouted some caves beneath the island which hold plenty of chalk to mix some good mortar. The entrances are not very far from here in fact. ...",
-      "translated": "Exploramos algunas cuevas debajo de la isla que contienen mucha tiza para mezclar un buen mortero. De hecho, las entradas no están muy lejos de aquí. ...",
+      "key": "monster.gnome_pack_crawler.desc",
+      "en": "a gnome pack crawler",
+      "translated": "un rastreador de paquetes de gnomos",
       "source": "google_translate"
     },
     {
-      "key": "npc.sandomo.multi_17",
-      "en": "However, the entrances are somewhat... twisted. The entrance we had mapped to a certain cave one day, would lead to a completely different cave on the next. ...",
-      "translated": "Sin embargo, las entradas están algo... retorcidas. La entrada que habíamos mapeado a cierta cueva un día, conduciría a una cueva completamente diferente al día siguiente. ...",
+      "key": "monster.a_shielded_astral_glyph.name",
+      "en": "A Shielded Astral Glyph",
+      "translated": "Un glifo astral protegido",
       "source": "google_translate"
     },
     {
-      "key": "npc.sandomo.multi_18",
-      "en": "And even when emerging from one of the caves you never know where you are since its exits are just as deceptive. ...",
-      "translated": "E incluso al salir de una de las cuevas nunca sabes dónde estás ya que sus salidas son igual de engañosas. ...",
+      "key": "monster.a_shielded_astral_glyph.desc",
+      "en": "a shielded astral glyph",
+      "translated": "un glifo astral protegido",
       "source": "google_translate"
     },
     {
-      "key": "npc.sandomo.multi_19",
-      "en": "Once you gathered some chalk, you should also find gravel on the island. If you have a pick and a bucket, you should be able to collect enough fine gravel to mix some mortar. ...",
-      "translated": "Una vez que hayas reunido algo de tiza, también deberías encontrar grava en la isla. Si tienes un pico y un balde, deberías poder recolectar suficiente grava fina para mezclar un poco de mortero. ...",
+      "key": "monster.the_distorted_astral_source.name",
+      "en": "The Distorted Astral Source",
+      "translated": "La fuente astral distorsionada",
       "source": "google_translate"
     },
     {
-      "key": "npc.sandomo.multi_2",
-      "en": "... with... about ",
-      "translated": "... con... sobre",
+      "key": "monster.the_distorted_astral_source.desc",
+      "en": "The Distorted Astral Source",
+      "translated": "La fuente astral distorsionada",
       "source": "google_translate"
     },
     {
-      "key": "npc.sandomo.multi_20",
-      "en": "Do not forget to bring some buckets, if you are in short supply, brother Maun will hand some out to you - for a fee of course.",
-      "translated": "No olvides traer algunos cubos; si te faltan, el hermano Maun te los entregará (por supuesto, pagando una tarifa).",
+      "key": "monster.bound_astral_power.desc",
+      "en": "a bound astral power",
+      "translated": "un poder astral ligado",
       "source": "google_translate"
     },
     {
-      "key": "npc.sandomo.multi_21",
-      "en": "Our brother Mortis is constantly working on keeping the bridge intact. We tried some simple wood planks first but it didn't work out that... well. ...",
-      "translated": "Nuestro hermano Mortis trabaja constantemente para mantener el puente intacto. Primero probamos con algunos tablones de madera simples, pero no funcionó... bueno. ...",
+      "key": "monster.canopic_jar.desc",
+      "en": "a canopic jar",
+      "translated": "un frasco canopo",
       "source": "google_translate"
     },
     {
-      "key": "npc.sandomo.multi_22",
-      "en": "What we need is enough {mortar} to actually build a durable traverse. And we will need even more mortar to maintain it as it constantly gets attacked by vile critters.",
-      "translated": "Lo que necesitamos es suficiente {mortar} para construir una travesía duradera. Y necesitaremos aún más mortero para mantenerlo, ya que constantemente es atacado por viles bichos.",
+      "key": "monster.greater_canopic_jar.name",
+      "en": "Greater Canopic Jar",
+      "translated": "Jarra Canópica Mayor",
       "source": "google_translate"
     },
     {
-      "key": "npc.sandomo.multi_23",
-      "en": "Then there is this enormous wall in the distance. Once we crossed the bridge, we will have to breach this monument. As I see it, you are working for the Inquisition now, I will hear no objection. You may even earn our gratitude.",
-      "translated": "Luego está este enorme muro en la distancia. Una vez cruzado el puente, tendremos que atravesar este monumento. Según tengo entendido, ahora estás trabajando para Inquisition, no escucharé ninguna objeción. Incluso puedes ganarte nuestra gratitud.",
+      "key": "monster.greater_canopic_jar.desc",
+      "en": "a greater canopic jar",
+      "translated": "una jarra canópica más grande",
       "source": "google_translate"
     },
     {
-      "key": "npc.sandomo.multi_24",
-      "en": "Then there is this enormous wall in the distance. Once we crossed the bridge, we will have to breach this monument. As I see it, you are working for the Inquisition now, I will hear no objection. You may even earn our gratitude.",
-      "translated": "Luego está este enorme muro en la distancia. Una vez cruzado el puente, tendremos que atravesar este monumento. Según tengo entendido, ahora estás trabajando para Inquisition, no escucharé ninguna objeción. Incluso puedes ganarte nuestra gratitud.",
+      "key": "monster.depowered_minotaur.desc",
+      "en": "a depowered minotaur",
+      "translated": "un minotauro sin poderes",
       "source": "google_translate"
     },
     {
-      "key": "npc.sandomo.multi_3",
-      "en": " of righteously earned inquisition gold added. There. Thanks for your help! ..",
-      "translated": "de oro de la Inquisición, justamente ganado, añadido. Allá. ¡Gracias por tu ayuda! ..",
+      "key": "monster.ravenous_beyondling.desc",
+      "en": "a ravenous beyondling",
+      "translated": "un más allá voraz",
       "source": "google_translate"
     },
     {
-      "key": "npc.sandomo.multi_4",
-      "en": "Good. Ask me any time in case you want to know your current {record}. If you have time, Remember you can also {trade} your earnings into some of these... probably far more valuable, ahem... cluster... things, yes.",
-      "translated": "Bien. Pregúntame en cualquier momento en caso de que quieras saber tu {record} actual. Si tiene tiempo, recuerde que también puede {trade} sus ganancias en algunas de estas... probablemente mucho más valiosas, ejem... agrupar... cosas, sí.",
+      "key": "monster.stolen_knowledge_of_lifesteal.name",
+      "en": "Stolen Knowledge of Lifesteal",
+      "translated": "Robado Knowledge de Lifesteal",
       "source": "google_translate"
     },
     {
-      "key": "npc.sandomo.multi_5",
-      "en": "Of course, let's see. Hm, your recent endeavours would earn you ",
-      "translated": "Por supuesto, veamos. Hm, tus esfuerzos recientes te harían ganar",
+      "key": "monster.stolen_knowledge_of_lifesteal.desc",
+      "en": "a stolen knowledge of lifesteal",
+      "translated": "un conocimiento robado de robo de vida",
       "source": "google_translate"
     }
   ]

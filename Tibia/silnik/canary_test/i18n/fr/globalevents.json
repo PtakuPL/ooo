@@ -1,7 +1,7 @@
 {
-  "globalevents.online_record": "New record: %s players are logged in.",
-  "globalevents.save_interval.complete_plural": "Server save complete. Next save in %s %ss!",
-  "globalevents.save_interval.complete_singular": "Server save complete. Next save in %s %s!",
-  "globalevents.save_interval.warning": "The server will save all accounts within %s seconds. You might lag or freeze for 5 seconds, please find a safe place.",
-  "globalevents.server_save.warning": "Server is saving the game in %s minute(s). Please logout."
+  "globalevents.online_record": "Nouveau record : %s joueurs sont connectés.",
+  "globalevents.save_interval.complete_plural": "Sauvegarde du serveur terminée. Prochaine sauvegarde dans %s %ss !",
+  "globalevents.save_interval.complete_singular": "Sauvegarde du serveur terminée. Prochaine sauvegarde dans %s %s !",
+  "globalevents.save_interval.warning": "Le serveur va sauvegarder tous les comptes dans %s secondes. Vous pourriez laguer ou geler pendant 5 secondes ; trouvez un endroit sûr.",
+  "globalevents.server_save.warning": "Le serveur sauvegarde le jeu dans %s minute(s). Veuillez vous déconnecter."
 }

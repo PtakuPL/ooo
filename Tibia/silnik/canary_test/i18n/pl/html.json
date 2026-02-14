@@ -80,7 +80,7 @@
   "html.admin.changelog.html.text4": "[PL]  {{ log.where|capitalize }}",
   "html.admin.changelog.html.text5": "Brak changelogów na ten moment.",
   "html.admin.data.html.text1": "Clicking the button will reload server data (Przedmiots, Potwórs, npcs, Zaklęcies, towns, weapons).",
-  "html.admin.data.html.text2": "[PL] It may take up to few minutes.",
+  "html.admin.data.html.text2": "Może to potrwać do kilku minut.",
   "html.admin.links.html.text1": "[PL] {{ hide != 1 ? 'Hide' : 'Show' }}",
   "html.admin.logs.html.text1": "{{ file.mtime|date('Y-m-d H:i:s') }}",
   "html.admin.mailer.html.text1": "[PL] Sending mails may take some time if there are many users in db.",

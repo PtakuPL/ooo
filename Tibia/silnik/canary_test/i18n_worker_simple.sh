@@ -78,17 +78,30 @@ QUALITY_AUDIT_THRESHOLD="${QUALITY_AUDIT_THRESHOLD:-10}"                    # po
 # Tier 2: języki "bliskie" — cel: 50% coverage
 # Tier 3: pozostałe — cel: 30% coverage
 # Tier weight = ile razy częściej język danego tieru dostaje cykl tłumaczenia
-TIER1_LANGS="pl es"                # Tier 1: PL i ES (już mają >50%)
-TIER2_LANGS="de pt ru tr fr it nl cs sk hu"  # Tier 2: europejskie z istniejącą bazą + nowe EU
-TIER1_TARGET=90                    # Docelowe pokrycie %
-TIER2_TARGET=50
-TIER3_TARGET=30
-TIER1_WEIGHT=4                     # Tier 1 dostaje 4x więcej cykli
-TIER2_WEIGHT=3                     # Tier 2 dostaje 3x więcej (było 2 — boost dla nadrobienia backlogu)
-TIER3_WEIGHT=1                     # Tier 3 = baseline
+TIER1_LANGS="${TIER1_LANGS:-pl es}"                # Tier 1: PL i ES (już mają >50%)
+TIER2_LANGS="${TIER2_LANGS:-de pt ru tr fr it nl cs sk hu}"  # Tier 2: europejskie z istniejącą bazą + nowe EU
+TIER1_TARGET="${TIER1_TARGET:-90}"                 # Docelowe pokrycie %
+TIER2_TARGET="${TIER2_TARGET:-50}"
+TIER3_TARGET="${TIER3_TARGET:-30}"
+TIER1_WEIGHT="${TIER1_WEIGHT:-4}"                  # Tier 1 dostaje 4x więcej cykli
+TIER2_WEIGHT="${TIER2_WEIGHT:-3}"                  # Tier 2 dostaje 3x więcej (było 2 — boost dla nadrobienia backlogu)
+TIER3_WEIGHT="${TIER3_WEIGHT:-1}"                  # Tier 3 = baseline
 # Priorytet kategorii plików JSON dla tłumaczenia (niższy = ważniejszy)
 # items (16894), npc (13769), monsters (5915), server (2574), spells, quests...
 CATEGORY_TRANSLATE_PRIORITY="items.json npc.json monsters.json server.json spells.json quests.json scripts.json actions.json raids.json"
+
+# Tryb globalnego dowożenia jakości 100% (coverage + jakość)
+GLOBAL_QUALITY_MODE="${GLOBAL_QUALITY_MODE:-false}"
+GLOBAL_QUALITY_COVERAGE_TARGET="${GLOBAL_QUALITY_COVERAGE_TARGET:-100}"
+GLOBAL_QUALITY_SCORE_TARGET="${GLOBAL_QUALITY_SCORE_TARGET:-100}"
+GLOBAL_QUALITY_MAX_CRITICAL="${GLOBAL_QUALITY_MAX_CRITICAL:-0}"
+GLOBAL_QUALITY_PRIORITY_LANGS="${GLOBAL_QUALITY_PRIORITY_LANGS:-es pl}"
+GLOBAL_QUALITY_PRIORITY_GATE_ENABLED="${GLOBAL_QUALITY_PRIORITY_GATE_ENABLED:-true}"
+GLOBAL_QUALITY_STATUS_UPDATE_EVERY_CYCLES="${GLOBAL_QUALITY_STATUS_UPDATE_EVERY_CYCLES:-1}"
+GLOBAL_QUALITY_STATUS_UPDATE_MIN_INTERVAL_SEC="${GLOBAL_QUALITY_STATUS_UPDATE_MIN_INTERVAL_SEC:-60}"
+GLOBAL_QUALITY_LANG_VALIDATION_INTERVAL="${GLOBAL_QUALITY_LANG_VALIDATION_INTERVAL:-15}"
+GLOBAL_QUALITY_AUDIT_EVERY_CYCLES="${GLOBAL_QUALITY_AUDIT_EVERY_CYCLES:-5}"
+GLOBAL_QUALITY_CROSSREF_AUTO_FIX_LIMIT="${GLOBAL_QUALITY_CROSSREF_AUTO_FIX_LIMIT:-80}"
 
 
 # Nowe opcje (Agent 2)
@@ -116,6 +129,16 @@ ADAPTIVE_BATCH_WINDOW=10        # ile ostatnich cykli brać pod uwagę
 ADAPTIVE_BATCH_HIGH_THRESHOLD=20  # guard_fail_rate% powyżej → zmniejsz batch
 ADAPTIVE_BATCH_LOW_THRESHOLD=5    # guard_fail_rate% poniżej → zwiększ batch
 
+# === Sekcja 8.3b: Turbo batch mode ===
+# Jeśli język ma duży backlog [EN]-prefixów, zwiększ batch ponad adaptive limit.
+# Działa TYLKO dla T2/T3 (T1 używa standardowego adaptive batch).
+TURBO_BATCH_ENABLED=true           # włącz turbo batch mode
+TURBO_BATCH_THRESHOLD_HIGH=8000    # [EN] backlog > tego → turbo batch 30
+TURBO_BATCH_THRESHOLD_MED=3000     # [EN] backlog > tego → turbo batch 20
+TURBO_BATCH_SIZE_HIGH=30           # batch size dla dużego backlogu
+TURBO_BATCH_SIZE_MED=20            # batch size dla średniego backlogu
+TURBO_BATCH_SIZE_LOW=10            # batch size dla małego backlogu (domyślny)
+
 # === Sekcja 8 P1: Parallel language processing (8.4) ===
 PARALLEL_LANGS_PER_CYCLE=3     # ile języków tłumaczyć w jednym cyklu (8.4.1)
 PARALLEL_GT_MAX_RPM=100        # max GT requests/min (8.4.3)
@@ -129,6 +152,92 @@ export I18N_SCOPE
 
 # Statusy (LIVE + zdarzenia + daily) - docelowo źródło prawdy dla I18N_STATUS.md
 STATUS_DIR="$I18N_DIR/status"
+
+is_enabled() {
+    local v="${1:-}"
+    case "${v,,}" in
+        1|true|yes|on) return 0 ;;
+        *) return 1 ;;
+    esac
+}
+
+apply_global_quality_mode() {
+    if ! is_enabled "${GLOBAL_QUALITY_MODE:-false}"; then
+        return 0
+    fi
+
+    local coverage_target="${GLOBAL_QUALITY_COVERAGE_TARGET:-100}"
+    local score_target="${GLOBAL_QUALITY_SCORE_TARGET:-100}"
+    local max_critical="${GLOBAL_QUALITY_MAX_CRITICAL:-0}"
+    local status_every="${GLOBAL_QUALITY_STATUS_UPDATE_EVERY_CYCLES:-1}"
+    local status_min_interval="${GLOBAL_QUALITY_STATUS_UPDATE_MIN_INTERVAL_SEC:-60}"
+    local validation_interval="${GLOBAL_QUALITY_LANG_VALIDATION_INTERVAL:-15}"
+    local audit_every="${GLOBAL_QUALITY_AUDIT_EVERY_CYCLES:-5}"
+    local crossref_limit="${GLOBAL_QUALITY_CROSSREF_AUTO_FIX_LIMIT:-80}"
+
+    case "$coverage_target" in ''|*[!0-9]*) coverage_target=100 ;; esac
+    case "$score_target" in ''|*[!0-9]*) score_target=100 ;; esac
+    case "$max_critical" in ''|*[!0-9]*) max_critical=0 ;; esac
+    case "$status_every" in ''|*[!0-9]*) status_every=1 ;; esac
+    case "$status_min_interval" in ''|*[!0-9]*) status_min_interval=60 ;; esac
+    case "$validation_interval" in ''|*[!0-9]*) validation_interval=15 ;; esac
+    case "$audit_every" in ''|*[!0-9]*) audit_every=5 ;; esac
+    case "$crossref_limit" in ''|*[!0-9]*) crossref_limit=80 ;; esac
+
+    if [ "$status_every" -lt 1 ]; then
+        status_every=1
+    fi
+    if [ "$status_min_interval" -lt 5 ]; then
+        status_min_interval=5
+    fi
+    if [ "$validation_interval" -lt 1 ]; then
+        validation_interval=1
+    fi
+    if [ "$audit_every" -lt 1 ]; then
+        audit_every=1
+    fi
+    if [ "$crossref_limit" -lt 1 ]; then
+        crossref_limit=1
+    fi
+
+    TIER1_TARGET="$coverage_target"
+    TIER2_TARGET="$coverage_target"
+    TIER3_TARGET="$coverage_target"
+
+    GLOBAL_QUALITY_COVERAGE_TARGET="$coverage_target"
+    GLOBAL_QUALITY_SCORE_TARGET="$score_target"
+    GLOBAL_QUALITY_MAX_CRITICAL="$max_critical"
+
+    BOOTSTRAP_PRIORITY_LANGS="${GLOBAL_QUALITY_PRIORITY_LANGS:-$BOOTSTRAP_PRIORITY_LANGS}"
+    STATUS_UPDATE_EVERY_CYCLES="$status_every"
+    STATUS_UPDATE_MIN_INTERVAL_SEC="$status_min_interval"
+    LANG_VALIDATION_INTERVAL="$validation_interval"
+    QUALITY_AUDIT_EVERY_CYCLES="$audit_every"
+
+    USE_GOOGLE_TRANSLATE=true
+    CROSSREF_AUTO_FIX=true
+    if [ "${CROSSREF_AUTO_FIX_LIMIT:-0}" -lt "$crossref_limit" ] 2>/dev/null; then
+        CROSSREF_AUTO_FIX_LIMIT="$crossref_limit"
+    fi
+
+    export GLOBAL_QUALITY_MODE
+    export GLOBAL_QUALITY_COVERAGE_TARGET
+    export GLOBAL_QUALITY_SCORE_TARGET
+    export GLOBAL_QUALITY_MAX_CRITICAL
+    export GLOBAL_QUALITY_PRIORITY_LANGS
+    export GLOBAL_QUALITY_PRIORITY_GATE_ENABLED
+    export BOOTSTRAP_PRIORITY_LANGS
+    export TIER1_TARGET
+    export TIER2_TARGET
+    export TIER3_TARGET
+    export STATUS_UPDATE_EVERY_CYCLES
+    export STATUS_UPDATE_MIN_INTERVAL_SEC
+    export LANG_VALIDATION_INTERVAL
+    export QUALITY_AUDIT_EVERY_CYCLES
+    export USE_GOOGLE_TRANSLATE
+    export CROSSREF_AUTO_FIX
+    export CROSSREF_AUTO_FIX_LIMIT
+}
 
 status_update_activity() {
     # Użycie:
@@ -762,7 +871,7 @@ except:
 if "files" not in status:
     status["files"] = {}
 if "global_stats" not in status:
-    status["global_stats"] = {"files_completed": 0, "total_keys": 0}
+    status["global_stats"] = {"files_completed": 0, "total_keys": 0, "reconciled_external_keys": 0}
 
 file_info = status["files"].get(file_path, {})
 stages = file_info.get("stages", {})
@@ -1409,7 +1518,8 @@ files_migrated = 0       # Mają klucze i18n
 files_needs_migration = 0  # Trzeba dodać i18n
 files_clean = 0          # Czyste (bez tekstów do tłumaczenia)
 files_in_progress = 0    # W trakcie przetwarzania
-total_keys_extracted_registry = 0
+total_keys_extracted_registry_raw = 0
+registry_reconcile_adjustment = 0
 
 for fpath, info in files.items():
     status = info.get('overall_status', '')
@@ -1422,7 +1532,7 @@ for fpath, info in files.items():
         keys = extraction.get('keys_added', 0)
         if keys > 0:
             files_migrated += 1
-            total_keys_extracted_registry += keys
+            total_keys_extracted_registry_raw += keys
         else:
             # Sprawdź czy plik miał teksty do migracji
             analysis = stages.get('2_analysis', {})
@@ -1430,6 +1540,14 @@ for fpath, info in files.items():
                 files_needs_migration += 1
             else:
                 files_clean += 1
+
+try:
+    gs = data.get("global_stats", {}) if isinstance(data.get("global_stats", {}), dict) else {}
+    registry_reconcile_adjustment = int(gs.get("reconciled_external_keys", 0) or 0)
+except Exception:
+    registry_reconcile_adjustment = 0
+registry_reconcile_adjustment = max(0, registry_reconcile_adjustment)
+total_keys_extracted_registry = int(total_keys_extracted_registry_raw + registry_reconcile_adjustment)
 
 # Backward-compat dla starszych odwołań w skrypcie.
 total_keys_extracted = total_keys_extracted_registry
@@ -1696,6 +1814,7 @@ for jf in en_json_files:
 total_keys = int(sum(en_file_key_count.values()))
 total_keys_extracted_live = int(total_keys)
 keys_extracted_outside_worker = max(0, total_keys_extracted_live - total_keys_extracted_registry)
+keys_extracted_outside_worker_raw = max(0, total_keys_extracted_live - total_keys_extracted_registry_raw)
 
 # Preload EN dane raz na przebieg STATUSPY (P3 cold-path optimization)
 en_data_cache = {}
@@ -2284,7 +2403,10 @@ overview_payload = {
         "total_keys_extracted": total_keys_extracted_live,
         "total_keys_extracted_live": total_keys_extracted_live,
         "total_keys_extracted_worker_registry": total_keys_extracted_registry,
+        "total_keys_extracted_worker_registry_raw": total_keys_extracted_registry_raw,
+        "registry_reconcile_adjustment": registry_reconcile_adjustment,
         "keys_extracted_outside_worker_registry": keys_extracted_outside_worker,
+        "keys_extracted_outside_worker_registry_raw": keys_extracted_outside_worker_raw,
         "npc_total": total_npc,
         "npc_migrated": migrated_npc,
         "npc_needs_migration": needs_migration_npc,
@@ -3152,7 +3274,9 @@ md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 |---------|---------|------|
 | 🔑 **Klucze EN (źródłowe)** | **{total_keys:,}** | wszystkie kategorie |
 | 🧮 **Klucze wyekstrahowane (LIVE)** | **{total_keys_extracted_live:,}** | realny stan `i18n/en/*.json` |
-| 🤖 Klucze z rejestru workera | **{total_keys_extracted_registry:,}** | suma `5_extraction_en.keys_added` |
+| 🤖 Klucze z rejestru workera (efektywne) | **{total_keys_extracted_registry:,}** | `5_extraction_en.keys_added` + reconcile |
+| 🧾 Klucze z rejestru workera (raw) | **{total_keys_extracted_registry_raw:,}** | suma `5_extraction_en.keys_added` |
+| 🧩 Reconcile korekta rejestru | **{registry_reconcile_adjustment:,}** | zmiany EN poza workerem |
 | ➕ Klucze poza rejestrem workera | **{keys_extracted_outside_worker:,}** | ręczne zmiany / starsze migracje |
 | 📊 NPC | {npc_keys:,} | dialogi NPC |
 | 📊 Items | {items_keys:,} | przedmioty |
@@ -3235,7 +3359,8 @@ md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 |---------|---------|------|
 | 🔄 Cykl aktualny | **#{cycle_count}** | od uruchomienia |
 | 🔑 Kluczy wyekstrahowanych (LIVE) | **{total_keys_extracted_live:,}** | realny stan EN |
-| 🤖 Kluczy z rejestru workera | **{total_keys_extracted_registry:,}** | historia runów workera |
+| 🤖 Kluczy z rejestru workera (efektywne) | **{total_keys_extracted_registry:,}** | raw + reconcile |
+| 🧾 Kluczy z rejestru workera (raw) | **{total_keys_extracted_registry_raw:,}** | historia runów workera |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
 ---
@@ -3373,7 +3498,9 @@ md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 | ✅ Plików z kluczami | **{files_migrated}** | zawierały hardcoded strings |
 | ⬜ Plików bez kluczy | **{files_clean}** | czyste (brak hardcoded) |
 | 🔑 Kluczy wyciągniętych (LIVE) | **{total_keys_extracted_live:,}** | realny stan `i18n/en/*.json` |
-| 🤖 Kluczy wyciągniętych przez workera | **{total_keys_extracted_registry:,}** | z `i18n_file_status.json` |
+| 🤖 Kluczy wyciągniętych przez workera (efektywne) | **{total_keys_extracted_registry:,}** | raw + reconcile |
+| 🧾 Kluczy wyciągniętych przez workera (raw) | **{total_keys_extracted_registry_raw:,}** | z `i18n_file_status.json` |
+| 🧩 Reconcile korekta rejestru | **{registry_reconcile_adjustment:,}** | zmiany EN poza workerem |
 | ➕ Kluczy poza rejestrem workera | **{keys_extracted_outside_worker:,}** | ręczne/Codex/Claude/starsze |
 | 🌍 Języków | **{langs_count}** | EN + tłumaczenia |
 | 🔄 Cykli wykonanych | **#{cycle_count}** | continuous mode |
@@ -5974,7 +6101,7 @@ status["files"][file_path] = file_info
 
 # Statystyki globalne
 if "global_stats" not in status:
-    status["global_stats"] = {"files_completed": 0, "total_keys": 0}
+    status["global_stats"] = {"files_completed": 0, "total_keys": 0, "reconciled_external_keys": 0}
 
 status["global_stats"]["files_completed"] = len([
     f for f, info in status["files"].items() 
@@ -9379,6 +9506,11 @@ REPAIR_SUSPICIOUS_WINDOW_ENTRIES="${REPAIR_SUSPICIOUS_WINDOW_ENTRIES:-30}"
 REPAIR_SUSPICIOUS_HIGH_THRESHOLD_PCT="${REPAIR_SUSPICIOUS_HIGH_THRESHOLD_PCT:-12}"
 REPAIR_SUSPICIOUS_MIN_TRANSLATED="${REPAIR_SUSPICIOUS_MIN_TRANSLATED:-80}"
 REPAIR_SUSPICIOUS_LIMIT_FACTOR="${REPAIR_SUSPICIOUS_LIMIT_FACTOR:-0.60}"
+# === Repair queue T2/T3: per-tier max repair limits ===
+REPAIR_T2_LIMIT="${REPAIR_T2_LIMIT:-50}"
+REPAIR_T3_LIMIT="${REPAIR_T3_LIMIT:-20}"
+REPAIR_T2_ENABLED="${REPAIR_T2_ENABLED:-true}"
+REPAIR_T3_ENABLED="${REPAIR_T3_ENABLED:-true}"
 
 repair_identical_bonus_round() {
     local cycle="$1"
@@ -9418,6 +9550,7 @@ PYREPAIRCYCLE
     # Zbuduj kolejkę naprawczą i wybierz target wg priorytetu
     local repair_target
     export REPAIR_PRIORITY_LANGS
+    export REPAIR_T2_ENABLED REPAIR_T3_ENABLED
     repair_target=$(python3 << 'REPAIR_SELECT_PY'
 import json, os, re
 from collections import Counter
@@ -9430,11 +9563,31 @@ queue_latest_path = os.path.join(status_dir, "identical_to_en_repair_queue.json"
 queue_report_path = os.path.join(status_dir, "identical_to_en_repair_queue_report.jsonl")
 
 _split = lambda raw: [p for p in re.split(r"[\s,;]+", str(raw or "").strip()) if p]
-tier1_langs = _split(os.environ.get("TIER1_LANGS", "pl es"))
-priority_langs = _split(os.environ.get("REPAIR_PRIORITY_LANGS", "es pl"))
+tier1_langs = set(_split(os.environ.get("TIER1_LANGS", "pl es")))
+tier2_langs = set(_split(os.environ.get("TIER2_LANGS", "de pt ru tr fr it nl cs sk hu")))
+priority_langs_raw = _split(os.environ.get("REPAIR_PRIORITY_LANGS", "es pl"))
 
-langs = [l for l in priority_langs if l in tier1_langs]
+# Build repair language list: T1 priority first, then T2, optionally T3
+repair_t2_enabled = os.environ.get("REPAIR_T2_ENABLED", "true").lower() in ("1", "true", "yes", "on")
+repair_t3_enabled = os.environ.get("REPAIR_T3_ENABLED", "true").lower() in ("1", "true", "yes", "on")
+
+langs = [l for l in priority_langs_raw if l in tier1_langs]
 langs += [l for l in tier1_langs if l not in langs]
+
+if repair_t2_enabled:
+    t2_list = sorted(tier2_langs)
+    langs += [l for l in t2_list if l not in langs]
+
+if repair_t3_enabled:
+    # T3 = all lang dirs minus T1/T2/EN
+    all_langs = []
+    if os.path.isdir(I18N_DIR):
+        for name in sorted(os.listdir(I18N_DIR)):
+            if os.path.isdir(os.path.join(I18N_DIR, name)) and name != "en" and re.fullmatch(r"[a-z]{2}(?:_[A-Z]{2})?", name):
+                if name not in tier1_langs and name not in tier2_langs and name not in langs:
+                    all_langs.append(name)
+    langs += all_langs
+
 if not langs:
     langs = ["es", "pl"]
 
@@ -9599,15 +9752,40 @@ REPAIR_SELECT_PY
     
     echo "   🎯 REPAIR target: $R_LANG/$R_FILE ($R_COUNT identical_to_en translatable)"
     
-    # Adaptacyjne strojenie limitu naprawy na podstawie wielkości backlogu.
+    # Adaptacyjne strojenie limitu naprawy na podstawie wielkości backlogu i tier języka.
     local repair_limit="$REPAIR_IDENTICAL_LIMIT"
     local repair_limit_tier="base"
-    if [ "${R_COUNT:-0}" -ge "${REPAIR_IDENTICAL_HIGH_BACKLOG:-1500}" ] 2>/dev/null; then
-        repair_limit="$REPAIR_IDENTICAL_LIMIT_HIGH"
-        repair_limit_tier="high_backlog"
-    elif [ "${R_COUNT:-0}" -le "${REPAIR_IDENTICAL_LOW_BACKLOG:-350}" ] 2>/dev/null; then
-        repair_limit="$REPAIR_IDENTICAL_LIMIT_LOW"
-        repair_limit_tier="low_backlog"
+
+    # Per-tier repair limits: T2/T3 mają niższe limity niż T1
+    local is_t2=false is_t3=false
+    for t2l in $TIER2_LANGS; do
+        if [ "$R_LANG" = "$t2l" ]; then is_t2=true; break; fi
+    done
+    local is_t1=false
+    for t1l in $TIER1_LANGS; do
+        if [ "$R_LANG" = "$t1l" ]; then is_t1=true; break; fi
+    done
+    if [ "$is_t1" != "true" ] && [ "$is_t2" != "true" ]; then
+        is_t3=true
+    fi
+
+    if [ "$is_t2" = "true" ]; then
+        repair_limit="${REPAIR_T2_LIMIT:-50}"
+        repair_limit_tier="t2_base"
+    elif [ "$is_t3" = "true" ]; then
+        repair_limit="${REPAIR_T3_LIMIT:-20}"
+        repair_limit_tier="t3_base"
+    fi
+
+    # Backlog-based adjustment (only for T1, T2/T3 keep fixed per-tier limit)
+    if [ "$is_t1" = "true" ]; then
+        if [ "${R_COUNT:-0}" -ge "${REPAIR_IDENTICAL_HIGH_BACKLOG:-1500}" ] 2>/dev/null; then
+            repair_limit="$REPAIR_IDENTICAL_LIMIT_HIGH"
+            repair_limit_tier="high_backlog"
+        elif [ "${R_COUNT:-0}" -le "${REPAIR_IDENTICAL_LOW_BACKLOG:-350}" ] 2>/dev/null; then
+            repair_limit="$REPAIR_IDENTICAL_LIMIT_LOW"
+            repair_limit_tier="low_backlog"
+        fi
     fi
     case "${repair_limit:-}" in
         ''|*[!0-9]*)
@@ -9728,16 +9906,20 @@ PYREPAIRRISK
         fi
     fi
 
-    # W rundzie repair dla PL/ES można wymusić GT, żeby szybciej zbijać EN-copy.
+    # W rundzie repair wymuszamy GT, żeby szybciej zbijać EN-copy.
+    # Dla T1 (PL/ES) i T2 — GT jest kluczowy do naprawy identical_to_en.
     local orig_use_gt="${USE_GOOGLE_TRANSLATE:-false}"
     local repair_gt_mode="$orig_use_gt"
     local repair_gt_forced="false"
     case "$(echo "${REPAIR_IDENTICAL_FORCE_GT:-true}" | tr '[:upper:]' '[:lower:]')" in
         1|true|yes|on)
-            if [ "$orig_use_gt" != "true" ] && { [ "$R_LANG" = "es" ] || [ "$R_LANG" = "pl" ]; }; then
-                export USE_GOOGLE_TRANSLATE=true
-                repair_gt_mode="true"
-                repair_gt_forced="true"
+            if [ "$orig_use_gt" != "true" ]; then
+                # Force GT for T1 and T2 (T3 too if enabled)
+                if [ "$is_t1" = "true" ] || [ "$is_t2" = "true" ] || [ "$is_t3" = "true" ]; then
+                    export USE_GOOGLE_TRANSLATE=true
+                    repair_gt_mode="true"
+                    repair_gt_forced="true"
+                fi
             fi
             ;;
     esac
@@ -12210,7 +12392,7 @@ def _token_sets_fast(text: str):
     pipes = set(re.findall(r'\|[^|]+\|', text or ""))
     return placeholders, commands, pipes
 
-def _candidate_shape_ok(en_text: str, candidate: str):
+def _candidate_shape_ok(en_text: str, candidate: str, lang: str = ""):
     src = str(en_text or "").strip()
     dst = str(candidate or "").strip()
     if not dst:
@@ -12232,13 +12414,65 @@ def _candidate_shape_ok(en_text: str, candidate: str):
         if len(tr_words) < min_words:
             return False
 
-    # Ochrona przed skróconymi tłumaczeniami jak "distance" → "I."
-    # Ratio długości: tłumaczenie nie powinno być <30% ani >400% oryginału
+    # Per-language calibrated length ratio bounds
+    # Kalibrowane wartości na podstawie analizy 21 języków EU
+    _LANG_RATIO_BOUNDS = {
+        # Germanic
+        "de": (0.40, 3.5),   # DE is 20-35% longer than EN
+        "nl": (0.40, 3.5),
+        "sv": (0.40, 3.5),
+        "da": (0.40, 3.5),
+        "no": (0.40, 3.5),
+        # Romance
+        "fr": (0.40, 3.5),   # FR is 15-30% longer
+        "es": (0.40, 3.5),
+        "pt": (0.40, 3.5),
+        "it": (0.40, 3.5),
+        "ro": (0.40, 3.5),
+        # Slavic (Latin)
+        "pl": (0.40, 3.5),
+        "cs": (0.40, 3.5),
+        "sk": (0.40, 3.5),
+        "hr": (0.40, 3.5),
+        "sl": (0.40, 3.5),
+        # Slavic (Cyrillic) — slightly shorter than EN
+        "bg": (0.40, 3.5),
+        "ru": (0.40, 3.5),
+        "uk": (0.40, 3.5),
+        # Uralic — agglutinative, longer words
+        "fi": (0.40, 4.0),   # FI is 20-45% longer
+        "hu": (0.40, 4.0),   # HU is 25-50% longer
+        "et": (0.40, 4.0),
+        # Baltic
+        "lv": (0.40, 3.5),
+        "lt": (0.40, 3.5),
+        # Greek
+        "el": (0.40, 3.5),
+        # Turkish — agglutinative
+        "tr": (0.40, 3.5),
+        # Albanian
+        "sq": (0.40, 3.5),
+        # CJK — much shorter
+        "zh": (0.20, 2.0),
+        "ja": (0.20, 2.0),
+        "ko": (0.20, 2.0),
+        # Arabic/Hebrew — RTL
+        "ar": (0.30, 3.0),
+        "he": (0.30, 3.0),
+    }
+    # Default ratio bounds
+    ratio_min = 0.3
+    ratio_max = 4.0
+    if lang:
+        lang_key = lang.lower().split("_")[0]
+        if lang_key in _LANG_RATIO_BOUNDS:
+            ratio_min, ratio_max = _LANG_RATIO_BOUNDS[lang_key]
+
     src_len = len(src)
     dst_len = len(dst)
     if src_len >= 4 and dst_len > 0:
         ratio = dst_len / src_len
-        if ratio < 0.3 or ratio > 4.0:
+        if ratio < ratio_min or ratio > ratio_max:
             return False
 
     if len(src) >= 12:
@@ -12428,7 +12662,7 @@ if os.path.isdir(lang_dir):
                 _tm_ratio = len(tr_val_s) / len(en_src_s)
                 if _tm_ratio < 0.3 or _tm_ratio > 4.0:
                     continue
-            if en_src_s and tr_val_s and _candidate_shape_ok(en_src_s, tr_val_s):
+            if en_src_s and tr_val_s and _candidate_shape_ok(en_src_s, tr_val_s, target_lang):
                 bucket = text_memory_counts.setdefault(en_src_s, {})
                 bucket[tr_val_s] = int(bucket.get(tr_val_s, 0) or 0) + 1
 
@@ -12554,7 +12788,7 @@ def validate_candidate(en_text: str, candidate: str):
     if en_pipe != tr_pipe:
         return False, "pipe"
 
-    if not _candidate_shape_ok(en_text, candidate):
+    if not _candidate_shape_ok(en_text, candidate, target_lang):
         return False, "quality"
 
     return True, "ok"
@@ -14228,6 +14462,55 @@ ADAPTIVEPY
             TRANSLATE_LIMIT="$ADAPTIVE_BATCH_CURRENT"
         fi
         log "${YELLOW}⚠ Adaptive batch: fallback to default=$ADAPTIVE_BATCH_CURRENT${NC}"
+    fi
+}
+
+# === Sekcja 8.3b: Turbo batch mode ===
+# Po compute_adaptive_batch(), sprawdza tier wybranego języka i [EN] backlog.
+# Jeśli tier T2/T3 i duży backlog → zwiększa TRANSLATE_LIMIT ponad adaptive limit.
+# Argumenty: $1 = język, $2 = pending_total (backlog kluczy)
+apply_turbo_batch() {
+    if [ "${TURBO_BATCH_ENABLED:-true}" != "true" ]; then
+        return 0
+    fi
+
+    local lang="${1:-}"
+    local pending_total="${2:-0}"
+
+    # Nie stosuj turbo dla T1 — T1 ma swój bootstrap priority + balance enforcer
+    local is_t1=false
+    for t1l in $TIER1_LANGS; do
+        if [ "$lang" = "$t1l" ]; then
+            is_t1=true
+            break
+        fi
+    done
+    if [ "$is_t1" = "true" ]; then
+        return 0
+    fi
+
+    # Policz [EN]-backlog w pliku dispatcha lub użyj pending_total
+    local backlog="${pending_total:-0}"
+
+    # Oblicz turbo batch size na podstawie backlogu
+    local turbo_size=0
+    if [ "$backlog" -ge "${TURBO_BATCH_THRESHOLD_HIGH:-8000}" ] 2>/dev/null; then
+        turbo_size="${TURBO_BATCH_SIZE_HIGH:-30}"
+    elif [ "$backlog" -ge "${TURBO_BATCH_THRESHOLD_MED:-3000}" ] 2>/dev/null; then
+        turbo_size="${TURBO_BATCH_SIZE_MED:-20}"
+    else
+        turbo_size="${TURBO_BATCH_SIZE_LOW:-10}"
+    fi
+
+    # Zastosuj turbo tylko jeśli jest większy niż obecny adaptive limit
+    local current_limit="${TRANSLATE_LIMIT:-0}"
+    if [ "$turbo_size" -gt "$current_limit" ] 2>/dev/null; then
+        TRANSLATE_LIMIT="$turbo_size"
+        # Dostosuj GT_BATCH_SIZE — powinien pokryć turbo batch
+        if [ "$GT_BATCH_SIZE" -lt "$turbo_size" ] 2>/dev/null; then
+            GT_BATCH_SIZE="$turbo_size"
+        fi
+        log "${GREEN}🚀 Turbo batch: $lang backlog=$backlog → limit=$turbo_size (was $current_limit)${NC}"
     fi
 }
 
@@ -17369,6 +17652,10 @@ select_auto_translate_target_strict() {
     export TARGET_LANGS
     export LANG_PRIORITY
     export BOOTSTRAP_PRIORITY_LANGS
+    export GLOBAL_QUALITY_MODE
+    export GLOBAL_QUALITY_COVERAGE_TARGET
+    export GLOBAL_QUALITY_PRIORITY_LANGS
+    export GLOBAL_QUALITY_PRIORITY_GATE_ENABLED
     export STATUS_DIR
     export CURRENT_CYCLE
     export STRICT_SELECTOR_CACHE_TTL_CYCLES
@@ -17391,6 +17678,12 @@ def _to_int(value, default=0):
         return int(value)
     except Exception:
         return default
+
+def _to_float(value, default=0.0):
+    try:
+        return float(value)
+    except Exception:
+        return float(default)
 
 current_cycle = _to_int(os.environ.get("CURRENT_CYCLE", "0"), 0)
 cache_ttl_cycles = max(1, _to_int(os.environ.get("STRICT_SELECTOR_CACHE_TTL_CYCLES", "5"), 5))
@@ -17551,6 +17844,43 @@ if not targets:
 if not targets:
     targets = ["pl"]
 
+global_quality_mode = str(os.environ.get("GLOBAL_QUALITY_MODE", "false")).strip().lower() in {"1", "true", "yes", "on"}
+priority_gate_enabled = str(os.environ.get("GLOBAL_QUALITY_PRIORITY_GATE_ENABLED", "true")).strip().lower() in {"1", "true", "yes", "on"}
+priority_gate_cov_target = _to_float(os.environ.get("GLOBAL_QUALITY_COVERAGE_TARGET", "100"), 100.0)
+priority_langs = [l for l in split_langs(os.environ.get("GLOBAL_QUALITY_PRIORITY_LANGS", "es pl")) if l in targets]
+priority_gate_pending_langs = []
+priority_gate_lang_completion = {}
+priority_gate_active = False
+
+if global_quality_mode and priority_gate_enabled and not explicit_target_langs and priority_langs:
+    overview_path = os.path.join(status_dir, "translation_global_overview.json")
+    completion_by_lang = {}
+    try:
+        if os.path.exists(overview_path):
+            with open(overview_path, "r", encoding="utf-8") as f:
+                overview = json.load(f)
+            lang_rows = overview.get("languages", [])
+            if isinstance(lang_rows, list):
+                for row in lang_rows:
+                    if not isinstance(row, dict):
+                        continue
+                    code = str(row.get("lang", "")).strip().lower()
+                    if not code:
+                        continue
+                    completion_by_lang[code] = _to_float(row.get("completion_pct", 0.0), 0.0)
+    except Exception:
+        completion_by_lang = {}
+
+    for p_lang in priority_langs:
+        comp = _to_float(completion_by_lang.get(p_lang, 0.0), 0.0)
+        priority_gate_lang_completion[p_lang] = round(comp, 2)
+        if comp + 1e-9 < priority_gate_cov_target:
+            priority_gate_pending_langs.append(p_lang)
+
+    if priority_gate_pending_langs:
+        targets = [l for l in targets if l in priority_gate_pending_langs]
+        priority_gate_active = bool(targets)
+
 en_dir = os.path.join(I18N_DIR, "en")
 json_files = sorted([f for f in os.listdir(en_dir) if f.endswith(".json")]) if os.path.isdir(en_dir) else []
 if not json_files:
@@ -17682,6 +18012,23 @@ if candidates:
     TIER3_WEIGHT = 1
 
     # Category translation priority (lower index = higher priority)
+    # Per-tier category priority: T1=items first, T2=npc first (krótkie), T3=npc→server
+    CATEGORY_PRIO_T1_RAW = os.environ.get("CATEGORY_PRIO_T1",
+        "items.json npc.json monsters.json server.json spells.json quests.json scripts.json actions.json raids.json")
+    CATEGORY_PRIO_T2_RAW = os.environ.get("CATEGORY_PRIO_T2",
+        "npc.json items.json monsters.json server.json spells.json quests.json scripts.json actions.json raids.json")
+    CATEGORY_PRIO_T3_RAW = os.environ.get("CATEGORY_PRIO_T3",
+        "npc.json server.json monsters.json items.json spells.json quests.json scripts.json actions.json raids.json")
+
+    def _build_cat_map(raw):
+        plist = [c.strip() for c in raw.split() if c.strip()]
+        return {cat: idx for idx, cat in enumerate(plist)}, len(plist)
+
+    CATEGORY_PRIO_MAP_T1, DEFAULT_CAT_PRIO_T1 = _build_cat_map(CATEGORY_PRIO_T1_RAW)
+    CATEGORY_PRIO_MAP_T2, DEFAULT_CAT_PRIO_T2 = _build_cat_map(CATEGORY_PRIO_T2_RAW)
+    CATEGORY_PRIO_MAP_T3, DEFAULT_CAT_PRIO_T3 = _build_cat_map(CATEGORY_PRIO_T3_RAW)
+
+    # Fallback: ogólny CATEGORY_TRANSLATE_PRIORITY (legacy)
     CATEGORY_PRIO_RAW = os.environ.get("CATEGORY_TRANSLATE_PRIORITY",
         "items.json npc.json monsters.json server.json spells.json quests.json scripts.json actions.json raids.json")
     CATEGORY_PRIO_LIST = [c.strip() for c in CATEGORY_PRIO_RAW.split() if c.strip()]
@@ -17703,7 +18050,15 @@ if candidates:
             return TIER2_WEIGHT
         return TIER3_WEIGHT
 
-    def get_cat_priority(json_file):
+    def get_cat_priority(json_file, lang=None):
+        """Priorytet kategorii — zależy od tier języka."""
+        tier = get_tier(lang) if lang else 0
+        if tier == 1:
+            return CATEGORY_PRIO_MAP_T1.get(json_file, DEFAULT_CAT_PRIO_T1)
+        elif tier == 2:
+            return CATEGORY_PRIO_MAP_T2.get(json_file, DEFAULT_CAT_PRIO_T2)
+        elif tier == 3:
+            return CATEGORY_PRIO_MAP_T3.get(json_file, DEFAULT_CAT_PRIO_T3)
         return CATEGORY_PRIO_MAP.get(json_file, DEFAULT_CAT_PRIO)
 
     # Interleave: group by language, sort within language by category priority
@@ -17712,9 +18067,10 @@ if candidates:
         per_lang.setdefault(cand.get("lang"), []).append(cand)
 
     for lang in list(per_lang.keys()):
+        _sort_lang = lang  # capture for lambda
         per_lang[lang].sort(
-            key=lambda c: (
-                get_cat_priority(c.get("json_file", "")),
+            key=lambda c, _l=_sort_lang: (
+                get_cat_priority(c.get("json_file", ""), _l),
                 -int(c.get("simple_todo", 0) or 0),
                 -int(c.get("pending_total", 0) or 0),
                 str(c.get("json_file", "")),
@@ -17998,7 +18354,7 @@ if candidates:
         "last_target_key": f"{selected['lang']}:{selected['json_file']}",
         "last_pending_total": int(selected.get("pending_total", 0) or 0),
         "last_tier": get_tier(selected['lang']),
-        "last_cat_priority": get_cat_priority(selected['json_file']),
+        "last_cat_priority": get_cat_priority(selected['json_file'], selected['lang']),
         "candidates_count": len(candidates),
         "active_candidates_count": len(active_candidates),
         "skipped_backoff": skipped_backoff,
@@ -18020,6 +18376,15 @@ if candidates:
         "bootstrap_forced": bool(bootstrap_forced),
         "bootstrap_forced_lang": bootstrap_forced_lang,
         "balance_forced": bool(balance_forced),
+        "global_quality_mode": bool(global_quality_mode),
+        "priority_gate": {
+            "enabled": bool(priority_gate_enabled),
+            "active": bool(priority_gate_active),
+            "coverage_target": round(priority_gate_cov_target, 2),
+            "priority_langs": priority_langs,
+            "pending_langs": priority_gate_pending_langs,
+            "lang_completion": priority_gate_lang_completion,
+        },
     }
     try:
         with open(dispatch_state_path, "w", encoding="utf-8") as f:
@@ -18042,6 +18407,15 @@ entry = {
     "cache_hit": bool(cache_hit),
     "cache_ttl_cycles": int(cache_ttl_cycles),
     "cache_cycle": int(current_cycle),
+    "global_quality_mode": bool(global_quality_mode),
+    "priority_gate": {
+        "enabled": bool(priority_gate_enabled),
+        "active": bool(priority_gate_active),
+        "coverage_target": round(priority_gate_cov_target, 2),
+        "priority_langs": priority_langs,
+        "pending_langs": priority_gate_pending_langs,
+        "lang_completion": priority_gate_lang_completion,
+    },
 }
 with open(os.path.join(status_dir, "translation_blockers_latest.json"), "w", encoding="utf-8") as f:
     json.dump(entry, f, indent=2, ensure_ascii=False)
@@ -18569,6 +18943,9 @@ TIER2_LANGS = set(os.environ.get("TIER2_LANGS", "de pt ru tr fr it").split())
 TIER1_TARGET = int(os.environ.get("TIER1_TARGET", "90"))
 TIER2_TARGET = int(os.environ.get("TIER2_TARGET", "50"))
 TIER3_TARGET = int(os.environ.get("TIER3_TARGET", "30"))
+GLOBAL_QUALITY_MODE = str(os.environ.get("GLOBAL_QUALITY_MODE", "false")).strip().lower() in {"1", "true", "yes", "on"}
+GLOBAL_QUALITY_SCORE_TARGET = float(os.environ.get("GLOBAL_QUALITY_SCORE_TARGET", "100") or "100")
+GLOBAL_QUALITY_MAX_CRITICAL = int(os.environ.get("GLOBAL_QUALITY_MAX_CRITICAL", "0") or "0")
 
 en_dir = os.path.join(I18N_DIR, "en")
 json_files = [f for f in os.listdir(en_dir) if f.endswith(".json")] if os.path.isdir(en_dir) else []
@@ -18630,6 +19007,29 @@ try:
 except Exception:
     pass
 
+# Jakość per język (validation reports)
+quality_per_lang = {}
+for lang in lang_dirs:
+    report_path = os.path.join(STATUS_DIR, "validation", f"{lang}_report.json")
+    q_score = 0.0
+    q_critical = 999999
+    quality_available = False
+    try:
+        if os.path.exists(report_path):
+            with open(report_path, "r", encoding="utf-8") as f:
+                rep = json.load(f)
+            q_score = float(rep.get("score", 0.0) or 0.0)
+            sev = rep.get("issues_by_severity", {}) if isinstance(rep.get("issues_by_severity", {}), dict) else {}
+            q_critical = int(sev.get("CRITICAL", 0) or 0)
+            quality_available = True
+    except Exception:
+        pass
+    quality_per_lang[lang] = {
+        "available": bool(quality_available),
+        "score": round(q_score, 2),
+        "critical": int(q_critical if quality_available else 0),
+    }
+
 # Walidacja per tier
 tier_results = {}
 for tier_name, tier_langs, target in [
@@ -18643,6 +19043,8 @@ for tier_name, tier_langs, target in [
     
     tier_coverages = []
     tier_gate_pass = True
+    tier_cov_pass = 0
+    tier_quality_pass = 0
     lang_details = {}
     
     for lang in langs_in_tier:
@@ -18653,14 +19055,35 @@ for tier_name, tier_langs, target in [
         gf = guard_fail_per_lang.get(lang, {"translated": 0, "guard_fail": 0})
         total_attempts = gf["translated"] + gf["guard_fail"]
         gf_rate = round(gf["guard_fail"] / total_attempts * 100, 1) if total_attempts > 0 else 0.0
-        
-        gate_ok = cov >= target
+
+        q = quality_per_lang.get(lang, {"available": False, "score": 0.0, "critical": 0})
+        q_available = bool(q.get("available", False))
+        q_score = float(q.get("score", 0.0) or 0.0)
+        q_critical = int(q.get("critical", 0) or 0)
+
+        coverage_pass = bool(cov >= target)
+        quality_pass = True
+        if GLOBAL_QUALITY_MODE:
+            quality_pass = q_available and q_score >= GLOBAL_QUALITY_SCORE_TARGET and q_critical <= GLOBAL_QUALITY_MAX_CRITICAL
+
+        gate_ok = bool(coverage_pass and quality_pass)
         lang_details[lang] = {
             "coverage": cov,
             "target": target,
             "gate_pass": gate_ok,
+            "coverage_pass": coverage_pass,
             "guard_fail_rate": gf_rate,
+            "quality_available": q_available,
+            "quality_score": q_score,
+            "quality_score_target": GLOBAL_QUALITY_SCORE_TARGET,
+            "critical_issues": q_critical,
+            "critical_target_max": GLOBAL_QUALITY_MAX_CRITICAL,
+            "quality_gate_pass": quality_pass,
         }
+        if coverage_pass:
+            tier_cov_pass += 1
+        if quality_pass:
+            tier_quality_pass += 1
         if not gate_ok:
             tier_gate_pass = False
     
@@ -18671,7 +19094,12 @@ for tier_name, tier_langs, target in [
         "target": target,
         "gate_pass": tier_gate_pass,
         "langs_passing": sum(1 for d in lang_details.values() if d["gate_pass"]),
+        "langs_coverage_passing": int(tier_cov_pass),
+        "langs_quality_passing": int(tier_quality_pass),
         "langs_total": len(langs_in_tier),
+        "global_quality_mode": bool(GLOBAL_QUALITY_MODE),
+        "quality_score_target": GLOBAL_QUALITY_SCORE_TARGET,
+        "critical_target_max": GLOBAL_QUALITY_MAX_CRITICAL,
         "lang_details": lang_details,
     }
 
@@ -18679,6 +19107,9 @@ for tier_name, tier_langs, target in [
 result = {
     "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
     "en_total_keys": en_total_keys,
+    "global_quality_mode": bool(GLOBAL_QUALITY_MODE),
+    "quality_score_target": GLOBAL_QUALITY_SCORE_TARGET,
+    "critical_target_max": GLOBAL_QUALITY_MAX_CRITICAL,
     "tier_results": tier_results,
     "recommendation": "",
 }
@@ -18689,6 +19120,8 @@ if tier_results.get("tier1", {}).get("gate_pass"):
         result["recommendation"] = "ALL_TIERS_PASS: można przejść do Tier 3 rollout"
     else:
         result["recommendation"] = "TIER1_PASS: kontynuuj Tier 2 z priorytetem"
+elif GLOBAL_QUALITY_MODE and tier_results.get("tier1", {}).get("langs_coverage_passing", 0) >= tier_results.get("tier1", {}).get("langs_total", 0):
+    result["recommendation"] = "TIER1_COVERAGE_PASS_QUALITY_PENDING: uruchom quality_repair/grammarfix"
 else:
     result["recommendation"] = "TIER1_INCOMPLETE: priorytet na PL/ES"
 
@@ -18707,8 +19140,11 @@ log_entry = {
     "t": result["timestamp"],
     "tier1_avg": tier_results.get("tier1", {}).get("avg_coverage", 0),
     "tier1_pass": tier_results.get("tier1", {}).get("gate_pass", False),
+    "tier1_quality_pass": tier_results.get("tier1", {}).get("langs_quality_passing", 0),
     "tier2_avg": tier_results.get("tier2", {}).get("avg_coverage", 0),
     "tier2_pass": tier_results.get("tier2", {}).get("gate_pass", False),
+    "tier2_quality_pass": tier_results.get("tier2", {}).get("langs_quality_passing", 0),
+    "global_quality_mode": bool(GLOBAL_QUALITY_MODE),
     "recommendation": result["recommendation"],
 }
 try:
@@ -19323,11 +19759,21 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
                     PARALLEL_LANGS_PER_CYCLE="${2:-3}"
                     shift 2
                     ;;
+                --global-quality-mode)
+                    GLOBAL_QUALITY_MODE=true
+                    shift
+                    ;;
+                --no-global-quality-mode)
+                    GLOBAL_QUALITY_MODE=false
+                    shift
+                    ;;
                 *)
                     shift
                     ;;
             esac
         done
+
+            apply_global_quality_mode
 
             export TRANSLATIONS_ONLY
             export TRANSLATIONS_STRICT
@@ -19344,6 +19790,12 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
             export GT_DELAY
             export CROSSREF_AUTO_FIX
             export CROSSREF_AUTO_FIX_LIMIT
+            export GLOBAL_QUALITY_MODE
+            export GLOBAL_QUALITY_COVERAGE_TARGET
+            export GLOBAL_QUALITY_SCORE_TARGET
+            export GLOBAL_QUALITY_MAX_CRITICAL
+            export GLOBAL_QUALITY_PRIORITY_LANGS
+            export GLOBAL_QUALITY_PRIORITY_GATE_ENABLED
 
         # 8.3: Zapamiętaj user-specified translate limit (0 = nie ustawiony → adaptive)
         USER_TRANSLATE_LIMIT="${TRANSLATE_LIMIT:-0}"
@@ -19366,6 +19818,7 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
         [ "$CROSSREF_AUTO_FIX" = "true" ] && echo "║   🛠️ --auto-fix-crossref: ON (limit=$CROSSREF_AUTO_FIX_LIMIT / język)            ║"
         [ "$ADAPTIVE_BATCH_ENABLED" = "true" ] && echo "║   📈 Adaptive batch: ON (default=$ADAPTIVE_BATCH_DEFAULT, range=$ADAPTIVE_BATCH_MIN-$ADAPTIVE_BATCH_MAX) ║"
         [ "$PARALLEL_LANGS_PER_CYCLE" -gt 1 ] 2>/dev/null && echo "║   🔀 Parallel langs: $PARALLEL_LANGS_PER_CYCLE języki/cykl                                    ║"
+        is_enabled "$GLOBAL_QUALITY_MODE" && echo "║   🎯 GLOBAL_QUALITY_MODE: ON (cov=$GLOBAL_QUALITY_COVERAGE_TARGET, score=$GLOBAL_QUALITY_SCORE_TARGET, crit<=${GLOBAL_QUALITY_MAX_CRITICAL}) ║"
         echo "║   Tryby: NPC → SCRIPTS → MONSTERS → ITEMS → AUTO_TRANSLATE        ║"
         echo "╚════════════════════════════════════════════════════════════════════╝"
         echo ""
@@ -19397,6 +19850,7 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
 
             # === Runtime config: wczytaj worker_config.json co cykl ===
             load_worker_config
+            apply_global_quality_mode
 
             # Jeśli worker jest wstrzymany (paused), czekaj
             if [ "${RUNTIME_PAUSED:-false}" = "true" ]; then
@@ -20478,6 +20932,9 @@ PY
                     # === 8.3: Adaptive batch tuning ===
                     compute_adaptive_batch
 
+                    # === 8.3b: Turbo batch mode for T2/T3 with large backlog ===
+                    apply_turbo_batch "$MODE_CAT" "$MODE_EXTRA"
+
                     if [[ "$MODE_COUNT" =~ ^(client|php|html|ui|otclient_modules|otclient_data|otclient_src|otclient_mods|otclient_tools)\.json$ ]]; then
                         echo "   📁 Folder: ${MODE_CAT^^} - Klient"
                     else
@@ -20738,15 +21195,19 @@ if mode_type == 'MIGRATION':
         # Zlicz klucze z rejestru workera
         files_with_keys = 0
         files_without_keys = 0
-        total_keys_extracted_registry = 0
+        total_keys_extracted_registry_raw = 0
 
         for fpath in completed:
             keys = files[fpath].get('stages', {}).get('5_extraction_en', {}).get('keys_added', 0)
             if keys > 0:
                 files_with_keys += 1
-                total_keys_extracted_registry += keys
+                total_keys_extracted_registry_raw += keys
             else:
                 files_without_keys += 1
+
+        global_stats = status_data.get('global_stats', {}) if isinstance(status_data.get('global_stats', {}), dict) else {}
+        registry_reconcile_adjustment = max(0, to_int(global_stats.get('reconciled_external_keys', 0)))
+        total_keys_extracted_registry = int(total_keys_extracted_registry_raw + registry_reconcile_adjustment)
 
         # LIVE liczba kluczy bezpośrednio z i18n/en/*.json
         total_keys_extracted_live = 0
@@ -20767,6 +21228,7 @@ if mode_type == 'MIGRATION':
             total_keys_extracted_live = 0
 
         keys_extracted_outside_worker_registry = max(0, total_keys_extracted_live - total_keys_extracted_registry)
+        keys_extracted_outside_worker_registry_raw = max(0, total_keys_extracted_live - total_keys_extracted_registry_raw)
 
         data['migration'] = {
             'files_scanned': len(completed),
@@ -20778,7 +21240,10 @@ if mode_type == 'MIGRATION':
             'keys_extracted': total_keys_extracted_live,
             'keys_extracted_live': total_keys_extracted_live,
             'keys_extracted_worker_registry': total_keys_extracted_registry,
+            'keys_extracted_worker_registry_raw': total_keys_extracted_registry_raw,
+            'registry_reconcile_adjustment': registry_reconcile_adjustment,
             'keys_extracted_outside_worker_registry': keys_extracted_outside_worker_registry,
+            'keys_extracted_outside_worker_registry_raw': keys_extracted_outside_worker_registry_raw,
             'current_category': mode_cat,
             'batch_size': to_int(mode_count)
         }
@@ -20878,16 +21343,19 @@ if 'migration' not in data or not isinstance(data.get('migration'), dict) or 'ke
                 _scanned_history = len([l for l in pf if l.strip()])
         except Exception:
             _scanned_history = 0
-        _keys_registry = 0
+        _keys_registry_raw = 0
         _files_with = 0
         _files_without = 0
         for fp in _completed:
             k = _files[fp].get('stages', {}).get('5_extraction_en', {}).get('keys_added', 0)
             if k > 0:
                 _files_with += 1
-                _keys_registry += k
+                _keys_registry_raw += k
             else:
                 _files_without += 1
+        _gs = _fs.get('global_stats', {}) if isinstance(_fs.get('global_stats', {}), dict) else {}
+        _registry_adjust = max(0, to_int(_gs.get('reconciled_external_keys', 0)))
+        _keys_registry = int(_keys_registry_raw + _registry_adjust)
         _keys_live = 0
         try:
             en_dir = os.path.join('i18n', 'en')
@@ -20904,6 +21372,7 @@ if 'migration' not in data or not isinstance(data.get('migration'), dict) or 'ke
         except Exception:
             pass
         _drift = max(0, _keys_live - _keys_registry)
+        _drift_raw = max(0, _keys_live - _keys_registry_raw)
         data['migration'] = {
             'files_scanned': len(_completed),
             'files_scanned_live': _scanned_live,
@@ -20914,7 +21383,10 @@ if 'migration' not in data or not isinstance(data.get('migration'), dict) or 'ke
             'keys_extracted': _keys_live,
             'keys_extracted_live': _keys_live,
             'keys_extracted_worker_registry': _keys_registry,
+            'keys_extracted_worker_registry_raw': _keys_registry_raw,
+            'registry_reconcile_adjustment': _registry_adjust,
             'keys_extracted_outside_worker_registry': _drift,
+            'keys_extracted_outside_worker_registry_raw': _drift_raw,
             'current_category': data.get('category', ''),
             'batch_size': 0
         }
@@ -21084,6 +21556,8 @@ print(total)
         echo "  --auto-fix-crossref-limit N  Max poprawek crossref na język (domyślnie 30)"
         echo "  --no-adaptive-batch     Wyłącz adaptive batch tuning (8.3)"
         echo "  --parallel-langs N      Tłumacz N języków na cykl (domyślnie 3, sekcja 8.4)"
+        echo "  --global-quality-mode   Wymuś cele 100% (coverage), agresywny quality loop i priorytet ES/PL"
+        echo "  --no-global-quality-mode Wyłącz tryb global quality"
         echo ""
         echo "Komendy runtime (.worker_command / worker_commands.txt / worker_config.json):"
         echo ""

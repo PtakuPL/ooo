@@ -1,0 +1,25 @@
+{
+  "timestamp": "2026-02-14T08:41:11.473493Z",
+  "status": "ok",
+  "action": "skipped_threshold",
+  "reason": "no_sync_needed",
+  "thresholds": {
+    "min_outside_keys": 1000,
+    "min_outside_pct": 2.0,
+    "min_interval_seconds": 1800
+  },
+  "live_keys": 53586,
+  "registry_keys_raw": 6248,
+  "registry_adjustment_before": 47338,
+  "registry_adjustment_after": 47338,
+  "registry_keys_effective_before": 53586,
+  "registry_keys_effective_after": 53586,
+  "outside_keys_raw": 47338,
+  "outside_pct_raw": 88.34,
+  "outside_keys_effective_before": 0,
+  "outside_keys_effective_after": 0,
+  "cooldown_ok": false,
+  "last_applied_at": "2026-02-14T08:38:59.028481Z",
+  "should_reconcile": false,
+  "target_adjustment": 47338
+}

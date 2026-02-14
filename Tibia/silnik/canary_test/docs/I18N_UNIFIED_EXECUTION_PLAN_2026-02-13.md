@@ -6,6 +6,74 @@
 
 ---
 
+## Update wykonania (2026-02-14 08:40 UTC) — registry_reconcile + priority_gate watchdog + guardian source arbitration
+
+Zrealizowane pełne zadania:
+- ✅ **Statusd: workflow `registry_reconcile` (end-to-end)**
+  - dodano moduł `run_registry_reconcile` w `i18n-statusd.sh` (daemon + `--once` + `--reconcile-registry`),
+  - reconciler zapisuje korektę w `i18n_file_status.json -> global_stats.reconciled_external_keys`,
+  - publikowane artefakty: `i18n/status/registry_reconcile_latest.json` i `i18n/status/registry_reconcile_state.json`,
+  - metryki driftu mają teraz rozdział `raw` vs `effective` (po reconcile), bez ukrywania długu historycznego.
+- ✅ **Worker: spójność statusu z reconcile**
+  - `i18n_worker_simple.sh` uwzględnia `reconciled_external_keys` przy liczeniu registry dla `I18N_STATUS.md`, `translation_global_overview.json` i `i18n_global_stats.json`,
+  - migration payload publikuje: `total_keys_extracted_worker_registry_raw`, `registry_reconcile_adjustment`, `keys_extracted_outside_worker_registry_raw`.
+- ✅ **Statusd: watchdog `priority_gate_stuck` (ES/PL)**
+  - `statusd_report.json` publikuje `priority_gate_watch` (czas aktywności, cykle, quality drop),
+  - `statusd_doctor.json` ma check stuck (`PRIORITY_GATE_STUCK*`),
+  - webhook obsługuje reason code `priority_gate_stuck`,
+  - daily report ma sekcję `Priority Gate Watch`,
+  - recommendation engine dodaje akcję `SWITCH_PROFILE quality_repair (short)` przy wykrytym stuck.
+- ✅ **Guardian: source arbitration hardening**
+  - `i18n_guardian.sh` ma priorytety źródeł startu (`start_all > service > scheduler > manual`),
+  - świeży lock po wyższym priorytecie nie jest już przejmowany przez `manual`,
+  - dodano `GUARDIAN_DAEMON_LOCK_PREEMPT_MIN_SEC` (cooldown preemptu).
+- ✅ **Kanoniczne progi rozszerzone**
+  - `statusd_thresholds.json` ma nowe sekcje: `priority_gate_stuck` i `registry_reconcile`,
+  - snapshot progów w report/doctor/daily obejmuje nowe bloki.
+
+Walidacja runtime (2026-02-14 08:40 UTC):
+- ✅ `bash i18n-statusd.sh --reconcile-registry` -> `RECONCILE_APPLIED` (pierwszy sync), potem `RECONCILE_SKIPPED_THRESHOLD reason=no_sync_needed`.
+- ✅ `statusd_report.json`:
+  - `metrics_drift`: `outside_worker_registry_keys=0` (effective), przy zachowaniu `outside_worker_registry_keys_raw=47338`,
+  - `priority_gate_watch`: aktywny tracking ES/PL.
+- ✅ `statusd_doctor.json`: zniknął issue `METRICS_DRIFT_HIGH`; krytyczność pozostaje z `SUSPICIOUS_HIGH_SPIKE`.
+
+Nowe problemy/TODO wykryte podczas realizacji:
+- ⬜ Domknąć auto-przełączenie guardiana na `quality_repair` przy `priority_gate_stuck` (obecnie: detekcja + alert + rekomendacja, bez wykonania auto-switch).
+- ⬜ Rozważyć etap 2 reconcile: backfill per-file (korekta nie tylko globalna), aby audyt kluczy był dokładny również na poziomie plików.
+- ⬜ Skonfigurować `STATUSD_WEBHOOK_URL` (nadal `WEBHOOK_NOT_CONFIGURED`).
+
+## Update wykonania (2026-02-14 08:18 UTC) — global quality 100 + guardian bootstrap ES/PL + statusd live migration
+
+Zrealizowane pełne zadania:
+- ✅ **Worker: `GLOBAL_QUALITY_MODE` (100%)**
+  - dodano tryb globalny wymuszający coverage target `100%` dla tierów,
+  - worker w tym trybie wymusza GT + `crossref_auto_fix`, szybszą pętlę walidacji i częstszy refresh statusu,
+  - selector strict ma gate priorytetu `GLOBAL_QUALITY_PRIORITY_LANGS` (domyślnie `es`, `pl`) zanim puści pełną rotację wszystkich języków,
+  - `translation_dispatch_state.json` publikuje nowe pole `priority_gate` (enabled/active/pending/lang_completion).
+- ✅ **Worker: rozszerzenie `tier_quality_gate` o jakość**
+  - gate tierów uwzględnia nie tylko coverage, ale też `validation score` i `critical issues` (w trybie global quality),
+  - raport `tier_quality_gate.json/jsonl` ma pola jakości per język i rekomendację pod `quality_pending`.
+- ✅ **Guardian: start workera z env global quality**
+  - `i18n_guardian.sh` odczytuje i przekazuje `global_quality_*` z profilu,
+  - profile `translations_general` oraz aktywny `guardian_profile.json` mają teraz parametry:
+    - `global_quality_mode=true`,
+    - priorytet `es pl`,
+    - targety jakości/coverage pod 100%.
+- ✅ **Auto policy: zaostrzenie warunków rolloutu**
+  - `guardian_profiles/auto.json` ma podniesione gate do rolloutu (`pilot_coverage_above_pct=100`, ostrzejsze warunki quality/no-progress).
+- ✅ **Statusd: live merge metryk migracji**
+  - `i18n-statusd.sh` liczy zawsze live snapshot (`i18n_file_status.json + i18n/en/*.json`) i zasila nim blok `migration`,
+  - metryki kluczy są teraz aktualne także dla zmian wykonanych poza workerem.
+- ✅ **Statusd: czułość driftu**
+  - `statusd_thresholds.json` ma obniżone progi `metrics_drift`, żeby problem registry-vs-live nie był maskowany.
+
+Nowe problemy/TODO wykryte podczas realizacji:
+- ⬜ Dodać workflow „reconcile registry”, który synchronizuje historię workera z rzeczywistym stanem `i18n/en/*.json` po zmianach manualnych/agentowych.
+- ⬜ Dodać finalny gate jakości dla nazw własnych (`identical_to_en_exempt`) jako osobny licznik rolloutu, aby nie mieszać ich z realnymi regresjami tłumaczeń.
+- ⬜ Dodać policy watchdog: jeśli `priority_gate` (ES/PL) aktywny zbyt długo bez spadku issue rate, guardian ma automatycznie przełączyć krótką rundę `quality_repair`.
+- ⬜ Domknąć source arbitration guardiana: po restarcie 2026-02-14 09:20 UTC wykryto dodatkowy start `source=manual` przejmujący lock po starcie `start_all`.
+
 ## Update wykonania (2026-02-14 07:52 UTC) — kanoniczne progi statusd + hardening start_all
 
 Zrealizowane pełne zadania:

@@ -6,6 +6,20 @@
 
 ---
 
+## 0e) Aktualizacja koordynacyjna (2026-02-14 08:18 UTC)
+
+Zmiany runtime/status istotne dla planu C++/H:
+- ✅ Worker ma nowy tryb `GLOBAL_QUALITY_MODE` (coverage target 100 + quality gate).
+- ✅ Guardian przekazuje do workera `global_quality_*` i utrzymuje priorytet fali `es -> pl` przed pełnym rolloutem języków.
+- ✅ `translation_dispatch_state.json` publikuje `priority_gate` (pending języki i completion), co daje nowy sygnał orkiestracyjny dla status/telemetrii.
+- ✅ `statusd` zawsze scala metryki migracji z live snapshotem (`i18n_file_status.json + i18n/en/*.json`), więc metryki kluczy lepiej odzwierciedlają zmiany spoza workera.
+- ✅ Zaostrzono progi `metrics_drift`, przez co rozjazd LIVE vs registry jest widoczny wcześniej.
+
+Nowe wymagania dla pipeline semantycznego C++/H:
+- ⬜ Dodać pole `priority_wave` (`pilot_es_pl|global_rollout`) kompatybilne z `translation_dispatch_state.priority_gate`, aby korelować zmiany kodu z fazą rolloutu językowego.
+- ⬜ Dodać pole `registry_reconcile_hint` (czy zmiana C++/H może wymagać uzupełnienia `i18n_file_status.json`), bo drift LIVE vs registry jest teraz sygnałem krytycznym.
+- ⬜ Emitować `quality_gate_impact` (wpływ zmian modułu na score/critical dla języków priorytetowych), aby statusd mógł lepiej sterować `quality_repair`.
+
 ## 0d) Aktualizacja koordynacyjna (2026-02-14 07:52 UTC)
 
 Zmiany runtime/status istotne dla planu C++/H:

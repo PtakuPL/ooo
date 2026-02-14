@@ -1,13 +1,13 @@
 {
-  "system.trade.sold": "Sold {1}x {2} for {3} gold.",
-  "system.trade.bought": "Bought {1}x {2} for {3} gold.",
-  "system.blessing.received": "You received the remaining {1} blesses.",
   "system.blessing.already": "You are already blessed.",
-  "system.store.check_inbox": "Please make sure you have free slots in your store inbox.",
+  "system.blessing.received": "You received the remaining {1} blesses.",
   "system.experience.gained": "You gained {1} experience points.",
+  "system.item.received": "You gained a {1}.",
   "system.mission.points": "You earned {1} point(s) on the {2} mission.",
   "system.mount.received": "Congratulations you received the {1} mount.",
-  "system.item.received": "You gained a {1}.",
   "system.stash.count": "Your supply stash contains {1} items.",
+  "system.store.check_inbox": "Пожалуйста, убедитесь, что в вашем ящике магазина есть свободные слоты.",
+  "system.trade.bought": "Bought {1}x {2} for {3} gold.",
+  "system.trade.sold": "Sold {1}x {2} for {3} gold.",
   "system.venture.decay": "Venture the path of decay!"
 }

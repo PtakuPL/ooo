@@ -2,20 +2,20 @@
   "lang": "bg",
   "script_group": "cyrillic",
   "total_keys": 53586,
-  "translated": 30835,
-  "identical_to_en": 24361,
-  "placeholder_keys": 20596,
-  "coverage_pct": 57.5,
-  "issues_total": 6216,
+  "translated": 32896,
+  "identical_to_en": 26111,
+  "placeholder_keys": 20516,
+  "coverage_pct": 61.4,
+  "issues_total": 6226,
   "issues_by_type": {
     "V3_empty": 6113,
-    "script_cyrillic_latin_mix": 95,
+    "script_cyrillic_latin_mix": 105,
     "V1_placeholder_mismatch": 7,
     "V5_pipe_mismatch": 1
   },
   "issues_by_severity": {
     "CRITICAL": 8,
-    "HIGH": 95,
+    "HIGH": 105,
     "MEDIUM": 0,
     "LOW": 6113
   },
@@ -70,6 +70,30 @@
       "severity": "CRITICAL"
     },
     {
+      "key": "achievement.22.name",
+      "category": "achievements",
+      "type": "script_cyrillic_latin_mix",
+      "severity": "HIGH"
+    },
+    {
+      "key": "achievement.26.name",
+      "category": "achievements",
+      "type": "script_cyrillic_latin_mix",
+      "severity": "HIGH"
+    },
+    {
+      "key": "achievement.36.name",
+      "category": "achievements",
+      "type": "script_cyrillic_latin_mix",
+      "severity": "HIGH"
+    },
+    {
+      "key": "achievement.72.name",
+      "category": "achievements",
+      "type": "script_cyrillic_latin_mix",
+      "severity": "HIGH"
+    },
+    {
       "key": "event.player.msg1",
       "category": "events",
       "type": "script_cyrillic_latin_mix",
@@ -116,39 +140,15 @@
       "category": "items",
       "type": "script_cyrillic_latin_mix",
       "severity": "HIGH"
-    },
-    {
-      "key": "item.21351.name",
-      "category": "items",
-      "type": "script_cyrillic_latin_mix",
-      "severity": "HIGH"
-    },
-    {
-      "key": "item.21352.name",
-      "category": "items",
-      "type": "script_cyrillic_latin_mix",
-      "severity": "HIGH"
-    },
-    {
-      "key": "item.21432.name",
-      "category": "items",
-      "type": "script_cyrillic_latin_mix",
-      "severity": "HIGH"
-    },
-    {
-      "key": "item.21434.name",
-      "category": "items",
-      "type": "script_cyrillic_latin_mix",
-      "severity": "HIGH"
     }
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 457,
+    "issues_total": 466,
     "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 57,
-    "auto_fix_applied": 0
+    "length_ratio": 66,
+    "auto_fix_applied": 69
   },
-  "validated_at": "2026-02-14T07:48:38.581953Z"
+  "validated_at": "2026-02-14T08:40:39.420647Z"
 }

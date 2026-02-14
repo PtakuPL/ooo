@@ -1,8 +1,8 @@
 {
-  "total_cycles": 5,
+  "total_cycles": 3,
   "mode": "AUTO_TRANSLATE",
-  "category": "bg",
-  "last_update": "2026-02-14T08:56:25.972922",
+  "category": "hi",
+  "last_update": "2026-02-14T09:10:03.911368",
   "migration": {
     "files_scanned": 2297,
     "files_scanned_live": 2299,
@@ -23,9 +23,9 @@
     "keys_to_sync": 0
   },
   "auto_translate": {
-    "language": "bg",
+    "language": "hi",
     "json_file": "monsters.json",
-    "keys_to_translate": 4281,
+    "keys_to_translate": 1170,
     "guard_fail": 0,
     "strict_missing_key": 0,
     "strict_blocker": "",

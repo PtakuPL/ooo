@@ -32,6 +32,7 @@ RUN_LOCK_DIR="$WORK_DIR/.guardian_run.lock"
 RUN_LOCK_STALE_SEC="${RUN_LOCK_STALE_SEC:-600}"
 DAEMON_LOCK_DIR="$WORK_DIR/.guardian_daemon.lock"
 DAEMON_LOCK_STALE_SEC="${GUARDIAN_DAEMON_LOCK_STALE_SEC:-600}"
+DAEMON_LOCK_PREEMPT_MIN_SEC="${GUARDIAN_DAEMON_LOCK_PREEMPT_MIN_SEC:-30}"
 DAEMON_STATE_FILE="$WORK_DIR/i18n/status/guardian_daemon_state.json"
 
 export HOME="/home/ptaku"
@@ -51,6 +52,16 @@ truthy() {
     case "${v,,}" in
         1|true|yes|on) return 0 ;;
         *) return 1 ;;
+    esac
+}
+
+daemon_source_priority() {
+    case "${1:-unknown}" in
+        start_all) echo "400" ;;
+        service|systemd) echo "350" ;;
+        scheduler|cron) echo "300" ;;
+        manual) echo "100" ;;
+        *) echo "50" ;;
     esac
 }
 
@@ -140,6 +151,7 @@ PYDSTATE
 acquire_daemon_lock() {
     local source="${1:-manual}"
     local now_ts lock_ts owner_pid owner_source lock_age
+    local source_prio owner_prio
 
     if mkdir "$DAEMON_LOCK_DIR" 2>/dev/null; then
         echo "$$" > "$DAEMON_LOCK_DIR/pid"
@@ -154,6 +166,8 @@ acquire_daemon_lock() {
     lock_ts=$(cat "$DAEMON_LOCK_DIR/ts" 2>/dev/null || echo "0")
     now_ts=$(date +%s)
     lock_age=$(( now_ts - ${lock_ts:-0} ))
+    source_prio=$(daemon_source_priority "$source")
+    owner_prio=$(daemon_source_priority "$owner_source")
 
     if [ -n "$owner_pid" ] && ps -p "$owner_pid" >/dev/null 2>&1; then
         log_guardian "⏭️ Guardian daemon już działa (pid=$owner_pid, source=$owner_source, age=${lock_age}s)"
@@ -161,10 +175,19 @@ acquire_daemon_lock() {
         return 1
     fi
 
-    if [ -z "$owner_pid" ] && [ "$lock_age" -lt "$DAEMON_LOCK_STALE_SEC" ]; then
-        log_guardian "⏭️ Pomijam start daemona: lock bez PID, ale świeży (age=${lock_age}s < ${DAEMON_LOCK_STALE_SEC}s)"
-        write_daemon_state "blocked" "$source" "$$" "fresh_lock_without_pid" "" "$owner_source" "$lock_age"
-        return 1
+    # Świeży lock po padniętym ownerze: źródła o niższym priorytecie nie mogą
+    # przejąć daemona (chroni przed późnym/manualnym przejęciem po start_all).
+    if [ "$lock_age" -lt "$DAEMON_LOCK_STALE_SEC" ]; then
+        if [ "$source_prio" -le "$owner_prio" ]; then
+            log_guardian "⏭️ Pomijam start daemona: świeży lock owner_source=$owner_source(prio=$owner_prio) > source=$source(prio=$source_prio), age=${lock_age}s"
+            write_daemon_state "blocked" "$source" "$$" "fresh_lock_source_priority" "$owner_pid" "$owner_source" "$lock_age"
+            return 1
+        fi
+        if [ "$lock_age" -lt "$DAEMON_LOCK_PREEMPT_MIN_SEC" ]; then
+            log_guardian "⏭️ Pomijam start daemona: preempt cooldown (${lock_age}s < ${DAEMON_LOCK_PREEMPT_MIN_SEC}s) source=$source owner_source=$owner_source"
+            write_daemon_state "blocked" "$source" "$$" "fresh_lock_preempt_cooldown" "$owner_pid" "$owner_source" "$lock_age"
+            return 1
+        fi
     fi
 
     rm -rf "$DAEMON_LOCK_DIR" 2>/dev/null || true
@@ -205,6 +228,14 @@ load_guardian_profile() {
     RUN_TRANSLATE_LIMIT="80"
     RUN_PARALLEL_LANGS="2"
     RUN_AUTO_MODE_ON_MIGRATION_PENDING="true"
+    RUN_GLOBAL_QUALITY_MODE="true"
+    RUN_GLOBAL_QUALITY_COVERAGE_TARGET="100"
+    RUN_GLOBAL_QUALITY_SCORE_TARGET="100"
+    RUN_GLOBAL_QUALITY_MAX_CRITICAL="0"
+    RUN_GLOBAL_QUALITY_PRIORITY_LANGS="es pl"
+    RUN_GLOBAL_QUALITY_PRIORITY_GATE_ENABLED="true"
+    RUN_GLOBAL_QUALITY_LANG_VALIDATION_INTERVAL="15"
+    RUN_GLOBAL_QUALITY_CROSSREF_AUTO_FIX_LIMIT="80"
 
     [ ! -f "$PROFILE_FILE" ] && return 0
 
@@ -233,6 +264,14 @@ out('RUN_LANGS', d.get('langs'))
 out('RUN_TRANSLATE_LIMIT', d.get('translate_limit'))
 out('RUN_PARALLEL_LANGS', d.get('parallel_langs'))
 out('RUN_AUTO_MODE_ON_MIGRATION_PENDING', str(d.get('auto_mode_on_migration_pending')).lower() if 'auto_mode_on_migration_pending' in d else None)
+out('RUN_GLOBAL_QUALITY_MODE', str(d.get('global_quality_mode')).lower() if 'global_quality_mode' in d else None)
+out('RUN_GLOBAL_QUALITY_COVERAGE_TARGET', d.get('global_quality_coverage_target'))
+out('RUN_GLOBAL_QUALITY_SCORE_TARGET', d.get('global_quality_score_target'))
+out('RUN_GLOBAL_QUALITY_MAX_CRITICAL', d.get('global_quality_max_critical'))
+out('RUN_GLOBAL_QUALITY_PRIORITY_LANGS', d.get('global_quality_priority_langs'))
+out('RUN_GLOBAL_QUALITY_PRIORITY_GATE_ENABLED', str(d.get('global_quality_priority_gate_enabled')).lower() if 'global_quality_priority_gate_enabled' in d else None)
+out('RUN_GLOBAL_QUALITY_LANG_VALIDATION_INTERVAL', d.get('global_quality_lang_validation_interval'))
+out('RUN_GLOBAL_QUALITY_CROSSREF_AUTO_FIX_LIMIT', d.get('global_quality_crossref_auto_fix_limit'))
 PY
 )
 
@@ -249,6 +288,14 @@ PY
             RUN_TRANSLATE_LIMIT) RUN_TRANSLATE_LIMIT="$value" ;;
             RUN_PARALLEL_LANGS) RUN_PARALLEL_LANGS="$value" ;;
             RUN_AUTO_MODE_ON_MIGRATION_PENDING) RUN_AUTO_MODE_ON_MIGRATION_PENDING="$value" ;;
+            RUN_GLOBAL_QUALITY_MODE) RUN_GLOBAL_QUALITY_MODE="$value" ;;
+            RUN_GLOBAL_QUALITY_COVERAGE_TARGET) RUN_GLOBAL_QUALITY_COVERAGE_TARGET="$value" ;;
+            RUN_GLOBAL_QUALITY_SCORE_TARGET) RUN_GLOBAL_QUALITY_SCORE_TARGET="$value" ;;
+            RUN_GLOBAL_QUALITY_MAX_CRITICAL) RUN_GLOBAL_QUALITY_MAX_CRITICAL="$value" ;;
+            RUN_GLOBAL_QUALITY_PRIORITY_LANGS) RUN_GLOBAL_QUALITY_PRIORITY_LANGS="$value" ;;
+            RUN_GLOBAL_QUALITY_PRIORITY_GATE_ENABLED) RUN_GLOBAL_QUALITY_PRIORITY_GATE_ENABLED="$value" ;;
+            RUN_GLOBAL_QUALITY_LANG_VALIDATION_INTERVAL) RUN_GLOBAL_QUALITY_LANG_VALIDATION_INTERVAL="$value" ;;
+            RUN_GLOBAL_QUALITY_CROSSREF_AUTO_FIX_LIMIT) RUN_GLOBAL_QUALITY_CROSSREF_AUTO_FIX_LIMIT="$value" ;;
         esac
     done <<< "$parsed"
 }
@@ -560,7 +607,26 @@ build_worker_args() {
         WORKER_ARGS+=(--parallel-langs "$RUN_PARALLEL_LANGS")
     fi
 
-    log_guardian "🧭 Profile mode=$selected_mode batch=$RUN_BATCH delay=$RUN_DELAY langs=${RUN_LANGS:-auto} gt=$RUN_USE_GT no_git=$RUN_NO_GIT"
+    WORKER_ENV_OVERRIDES=()
+    if truthy "$RUN_GLOBAL_QUALITY_MODE"; then
+        WORKER_ENV_OVERRIDES+=("GLOBAL_QUALITY_MODE=true")
+    else
+        WORKER_ENV_OVERRIDES+=("GLOBAL_QUALITY_MODE=false")
+    fi
+    [ -n "$RUN_GLOBAL_QUALITY_COVERAGE_TARGET" ] && WORKER_ENV_OVERRIDES+=("GLOBAL_QUALITY_COVERAGE_TARGET=$RUN_GLOBAL_QUALITY_COVERAGE_TARGET")
+    [ -n "$RUN_GLOBAL_QUALITY_SCORE_TARGET" ] && WORKER_ENV_OVERRIDES+=("GLOBAL_QUALITY_SCORE_TARGET=$RUN_GLOBAL_QUALITY_SCORE_TARGET")
+    [ -n "$RUN_GLOBAL_QUALITY_MAX_CRITICAL" ] && WORKER_ENV_OVERRIDES+=("GLOBAL_QUALITY_MAX_CRITICAL=$RUN_GLOBAL_QUALITY_MAX_CRITICAL")
+    [ -n "$RUN_GLOBAL_QUALITY_PRIORITY_LANGS" ] && WORKER_ENV_OVERRIDES+=("GLOBAL_QUALITY_PRIORITY_LANGS=$RUN_GLOBAL_QUALITY_PRIORITY_LANGS")
+    if truthy "$RUN_GLOBAL_QUALITY_PRIORITY_GATE_ENABLED"; then
+        WORKER_ENV_OVERRIDES+=("GLOBAL_QUALITY_PRIORITY_GATE_ENABLED=true")
+    else
+        WORKER_ENV_OVERRIDES+=("GLOBAL_QUALITY_PRIORITY_GATE_ENABLED=false")
+    fi
+    [ -n "$RUN_GLOBAL_QUALITY_LANG_VALIDATION_INTERVAL" ] && WORKER_ENV_OVERRIDES+=("GLOBAL_QUALITY_LANG_VALIDATION_INTERVAL=$RUN_GLOBAL_QUALITY_LANG_VALIDATION_INTERVAL")
+    [ -n "$RUN_GLOBAL_QUALITY_CROSSREF_AUTO_FIX_LIMIT" ] && WORKER_ENV_OVERRIDES+=("GLOBAL_QUALITY_CROSSREF_AUTO_FIX_LIMIT=$RUN_GLOBAL_QUALITY_CROSSREF_AUTO_FIX_LIMIT")
+    [ -n "$RUN_GLOBAL_QUALITY_PRIORITY_LANGS" ] && WORKER_ENV_OVERRIDES+=("BOOTSTRAP_PRIORITY_LANGS=$RUN_GLOBAL_QUALITY_PRIORITY_LANGS")
+
+    log_guardian "🧭 Profile mode=$selected_mode batch=$RUN_BATCH delay=$RUN_DELAY langs=${RUN_LANGS:-auto} gt=$RUN_USE_GT no_git=$RUN_NO_GIT global_quality=$RUN_GLOBAL_QUALITY_MODE priority_langs=${RUN_GLOBAL_QUALITY_PRIORITY_LANGS:-es pl}"
 }
 
 run_once() {
@@ -811,7 +877,7 @@ restart_worker() {
     # Czyść locki workera — inaczej nowy worker odmówi startu ("Inny worker już działa")
     rm -f "$PID_FILE" "$WORK_DIR/.worker_simple.start.lock" "$WORK_DIR/i18n_worker_continuous.pid"
     build_worker_args
-    nohup bash "$WORK_DIR/$WORKER_SCRIPT" "${WORKER_ARGS[@]}" >> "$LOG_FILE" 2>&1 &
+    nohup env "${WORKER_ENV_OVERRIDES[@]}" bash "$WORK_DIR/$WORKER_SCRIPT" "${WORKER_ARGS[@]}" >> "$LOG_FILE" 2>&1 &
     sleep 4
     if [ -f "$PID_FILE" ]; then
         local pid

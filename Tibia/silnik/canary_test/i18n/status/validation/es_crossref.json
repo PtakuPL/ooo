@@ -2,14 +2,14 @@
   "lang": "es",
   "coverage_pct": 97.5,
   "crossref_enabled": true,
-  "auto_fix_enabled": false,
-  "auto_fix_limit": 30,
-  "checked_at": "2026-02-14T07:48:41.425579Z",
-  "issues_total": 519,
+  "auto_fix_enabled": true,
+  "auto_fix_limit": 80,
+  "checked_at": "2026-02-14T08:35:18.715687Z",
+  "issues_total": 508,
   "issues_by_type": {
-    "consistency_in_language": 61,
+    "consistency_in_language": 51,
     "pl_reference_missing_translation": 400,
-    "length_ratio_crosscheck": 58
+    "length_ratio_crosscheck": 57
   },
   "consistency_issues": [
     {
@@ -635,166 +635,6 @@
     {
       "type": "crossref_inconsistent_translation",
       "severity": "MEDIUM",
-      "en": "Come back when you do.",
-      "variants": [
-        "",
-        "Vuelve cuando lo hagas."
-      ],
-      "variants_count": 2,
-      "examples": [
-        "npc:npc.palimuth.say_12",
-        "npc:npc.palimuth.say_15",
-        "npc:npc.siflind.say_20",
-        "npc:npc.siflind.say_22",
-        "npc:npc.siflind.say_24"
-      ]
-    },
-    {
-      "type": "crossref_inconsistent_translation",
-      "severity": "MEDIUM",
-      "en": "How many platinum coins would you like to get?",
-      "variants": [
-        "",
-        "¿Cuántas monedas de platino te gustaría conseguir?"
-      ],
-      "variants_count": 2,
-      "examples": [
-        "npc:npc.paulie.say_18",
-        "npc:npc.plunderpurse.say_19",
-        "npc:npc.wentworth.say_20"
-      ]
-    },
-    {
-      "type": "crossref_inconsistent_translation",
-      "severity": "MEDIUM",
-      "en": "Sorry, you do not have enough gold coins.",
-      "variants": [
-        "",
-        "Lo sentimos, no tienes suficientes monedas de oro."
-      ],
-      "variants_count": 2,
-      "examples": [
-        "npc:npc.paulie.say_19",
-        "npc:npc.paulie.say_21",
-        "npc:npc.plunderpurse.say_20",
-        "npc:npc.plunderpurse.say_22",
-        "npc:npc.wentworth.say_21"
-      ]
-    },
-    {
-      "type": "crossref_inconsistent_translation",
-      "severity": "MEDIUM",
-      "en": "Well, can I help you with something else?",
-      "variants": [
-        "",
-        "Bueno, ¿puedo ayudarte con algo más?"
-      ],
-      "variants_count": 2,
-      "examples": [
-        "npc:npc.paulie.say_22",
-        "npc:npc.paulie.say_26",
-        "npc:npc.paulie.say_30",
-        "npc:npc.paulie.say_34",
-        "npc:npc.paulie.say_39"
-      ]
-    },
-    {
-      "type": "crossref_inconsistent_translation",
-      "severity": "MEDIUM",
-      "en": "Would you like to change your platinum coins into gold or crystal?",
-      "variants": [
-        "",
-        "¿Le gustaría cambiar sus monedas de platino por oro o cristal?"
-      ],
-      "variants_count": 2,
-      "examples": [
-        "npc:npc.paulie.say_23",
-        "npc:npc.plunderpurse.say_24",
-        "npc:npc.wentworth.say_25"
-      ]
-    },
-    {
-      "type": "crossref_inconsistent_translation",
-      "severity": "MEDIUM",
-      "en": "How many platinum coins would you like to change into gold?",
-      "variants": [
-        "",
-        "¿Cuántas monedas de platino te gustaría cambiar por oro?"
-      ],
-      "variants_count": 2,
-      "examples": [
-        "npc:npc.paulie.say_24",
-        "npc:npc.plunderpurse.say_25",
-        "npc:npc.wentworth.say_26"
-      ]
-    },
-    {
-      "type": "crossref_inconsistent_translation",
-      "severity": "MEDIUM",
-      "en": "How many crystal coins would you like to get?",
-      "variants": [
-        "",
-        "¿Cuántas monedas de cristal te gustaría conseguir?"
-      ],
-      "variants_count": 2,
-      "examples": [
-        "npc:npc.paulie.say_25",
-        "npc:npc.plunderpurse.say_26",
-        "npc:npc.wentworth.say_27"
-      ]
-    },
-    {
-      "type": "crossref_inconsistent_translation",
-      "severity": "MEDIUM",
-      "en": "Sorry, you do not have enough platinum coins.",
-      "variants": [
-        "",
-        "Lo sentimos, no tienes suficientes monedas de platino."
-      ],
-      "variants_count": 2,
-      "examples": [
-        "npc:npc.paulie.say_27",
-        "npc:npc.paulie.say_29",
-        "npc:npc.paulie.say_31",
-        "npc:npc.paulie.say_33",
-        "npc:npc.plunderpurse.say_28"
-      ]
-    },
-    {
-      "type": "crossref_inconsistent_translation",
-      "severity": "MEDIUM",
-      "en": "How many crystal coins would you like to change into platinum?",
-      "variants": [
-        "",
-        "¿Cuántas monedas de cristal te gustaría cambiar por platino?"
-      ],
-      "variants_count": 2,
-      "examples": [
-        "npc:npc.paulie.say_35",
-        "npc:npc.plunderpurse.say_36",
-        "npc:npc.wentworth.say_37"
-      ]
-    },
-    {
-      "type": "crossref_inconsistent_translation",
-      "severity": "MEDIUM",
-      "en": "Sorry, you do not have enough crystal coins.",
-      "variants": [
-        "",
-        "Lo sentimos, no tienes suficientes monedas de cristal."
-      ],
-      "variants_count": 2,
-      "examples": [
-        "npc:npc.paulie.say_36",
-        "npc:npc.paulie.say_38",
-        "npc:npc.plunderpurse.say_37",
-        "npc:npc.plunderpurse.say_39",
-        "npc:npc.wentworth.say_38"
-      ]
-    },
-    {
-      "type": "crossref_inconsistent_translation",
-      "severity": "MEDIUM",
       "en": "Unknown",
       "variants": [
         "Desconocido",
@@ -956,15 +796,6 @@
       "lang": "Territorial"
     },
     {
-      "key": "achievement.123.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Berserker",
-      "pl": "To go berserk",
-      "lang": "Berserker"
-    },
-    {
       "key": "achievement.363.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -972,15 +803,6 @@
       "en": "Robo Chop",
       "pl": "Robo I.",
       "lang": "Robo Chop"
-    },
-    {
-      "key": "achievement.463.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Glooth Punk",
-      "pl": "Glooth I.",
-      "lang": "Glooth Punk"
     },
     {
       "key": "book.otbm.obujos_domingo_18h_01h",
@@ -1008,132 +830,6 @@
       "en": "Orruk ah'tanri, anvi ra shuk ta",
       "pl": "Orruk ah'tanri, anvi Akademia Królewska shuk dzięki, dziękuję",
       "lang": "Orruk ah'tanri, anvi ra shuk ta"
-    },
-    {
-      "key": "book.otbm.the_thorntower_of_shadowthorn",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The thorntower of Shadowthorn",
-      "pl": "The thorntower z Shadowthorn",
-      "lang": "The thorntower of Shadowthorn"
-    },
-    {
-      "key": "book.otbm.the_tibian_worldwonders",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The tibian world-wonders!",
-      "pl": "The tibian I.-I.!",
-      "lang": "The tibian world-wonders!"
-    },
-    {
-      "key": "book.otbm.treasure_of_captain_iglue",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Treasure of Captain Iglue",
-      "pl": "I. z I. Iglue",
-      "lang": "Treasure of Captain Iglue"
-    },
-    {
-      "key": "book.otbm.vashresamuns_chorus_lane",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Vashresamun's Chorus Lane",
-      "pl": "Vashresamun's I. Alejka, dróżka",
-      "lang": "Vashresamun's Chorus Lane"
-    },
-    {
-      "key": "book.otbm.warehouse_of_abran_ironeye",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Warehouse of Abran Ironeye",
-      "pl": "Waredom z Abran Ironeye",
-      "lang": "Warehouse of Abran Ironeye"
-    },
-    {
-      "key": "book.otbm.warehouse_of_abran_ironeye_4c3c466b",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Warehouse of Abran Ironeye",
-      "pl": "Waredom z Abran Ironeye",
-      "lang": "Warehouse of Abran Ironeye"
-    },
-    {
-      "key": "book.otbm.warehouse_of_leeland_slim",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Warehouse of Leeland Slim",
-      "pl": "Waredom z Leeland I.",
-      "lang": "Warehouse of Leeland Slim"
-    },
-    {
-      "key": "book.otbm.warehouse_of_leeland_slim_e1870d40",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Warehouse of Leeland Slim",
-      "pl": "Waredom z Leeland I.",
-      "lang": "Warehouse of Leeland Slim"
-    },
-    {
-      "key": "book.otbm.warehouse_of_talesia_demir",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Warehouse of Talesia De'Mir",
-      "pl": "Waredom z Talesia De'Mir",
-      "lang": "Warehouse of Talesia De'Mir"
-    },
-    {
-      "key": "book.otbm.warehouse_of_talesia_demir_0513d8f4",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Warehouse of Talesia De'Mir",
-      "pl": "Waredom z Talesia De'Mir",
-      "lang": "Warehouse of Talesia De'Mir"
-    },
-    {
-      "key": "book.otbm.warentrosa_base_de_edron",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "War-Entrosa base de Edron",
-      "pl": "I.-Entrosa I. de Edron",
-      "lang": "War-Entrosa base de Edron"
-    },
-    {
-      "key": "book.otbm.warentrosa_base_de_edron_52a0d1fb",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "War-Entrosa base de Edron",
-      "pl": "I.-Entrosa I. de Edron",
-      "lang": "War-Entrosa base de Edron"
-    },
-    {
-      "key": "book.otbm.welcome_to_village_fibula",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Welcome to Village Fibula!",
-      "pl": "I. do Wioska Fibula!",
-      "lang": "Welcome to Village Fibula!"
-    },
-    {
-      "key": "book.otbm.written_by_hrmumundus_grofrukle",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Written by Hrmumundus Grofrukle",
-      "pl": "Pisemny by Hrmumundus Grofrukle",
-      "lang": "Written by Hrmumundus Grofrukle"
     },
     {
       "key": "channel.tutor.name",
@@ -1181,15 +877,6 @@
       "lang": "neutral"
     },
     {
-      "key": "cpp.inspect.oz",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " oz",
-      "pl": "oz",
-      "lang": " oz"
-    },
-    {
       "key": "cpp.player.list_delimiter",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -1197,24 +884,6 @@
       "en": ", ",
       "pl": ",",
       "lang": ", "
-    },
-    {
-      "key": "npc.example_merchant.name",
-      "category": "example_merchant",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "My name is Marcus. I run this shop.",
-      "pl": "Mam na imię Marcus. Prowadzę ten sklep.",
-      "lang": "My name is Marcus. I run this shop."
-    },
-    {
-      "key": "web.tpl.forum.add_board.td_4",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Guild:",
-      "pl": "Gildia:",
-      "lang": "Guild:"
     },
     {
       "key": "web.tpl.guilds.view.set_6",
@@ -1269,402 +938,6 @@
       "en": "_sbutton_deletecharacter",
       "pl": "_sbutton_deleteznak",
       "lang": "_sbutton_deletecharacter"
-    },
-    {
-      "key": "item.10096.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "stacke",
-      "pl": "stos",
-      "lang": "stacke"
-    },
-    {
-      "key": "item.10180.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "groud",
-      "pl": "grunt",
-      "lang": "groud"
-    },
-    {
-      "key": "item.10185.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "swich",
-      "pl": "przełącznik",
-      "lang": "swich"
-    },
-    {
-      "key": "item.10186.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "scrying ball",
-      "pl": "wróżąca kula",
-      "lang": "scrying ball"
-    },
-    {
-      "key": "item.10273.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "terrorbird beak",
-      "pl": "dziób terrorysty",
-      "lang": "terrorbird beak"
-    },
-    {
-      "key": "item.10297.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "antlers",
-      "pl": "poroże",
-      "lang": "antlers"
-    },
-    {
-      "key": "item.10308.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "mutated flesh",
-      "pl": "zmutowane mięso",
-      "lang": "mutated flesh"
-    },
-    {
-      "key": "item.10311.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "sabretooth",
-      "pl": "szablozębny",
-      "lang": "sabretooth"
-    },
-    {
-      "key": "item.10386.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Zaoan shoes",
-      "pl": "Buty Zaoańskie",
-      "lang": "Zaoan shoes"
-    },
-    {
-      "key": "item.10389.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "sai",
-      "pl": "Sai",
-      "lang": "sai"
-    },
-    {
-      "key": "item.10414.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "zaogun shoulderplates",
-      "pl": "naramienniki zaogun",
-      "lang": "zaogun shoulderplates"
-    },
-    {
-      "key": "item.10417.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "legionnaire flags",
-      "pl": "flagi legionistów",
-      "lang": "legionnaire flags"
-    },
-    {
-      "key": "item.10592.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "sulphur",
-      "pl": "siarka",
-      "lang": "sulphur"
-    },
-    {
-      "key": "item.1067.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "pitfall",
-      "pl": "pułapka",
-      "lang": "pitfall"
-    },
-    {
-      "key": "item.1069.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "bug tral",
-      "pl": "błąd tral",
-      "lang": "bug tral"
-    },
-    {
-      "key": "item.10748.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "insectoid pore",
-      "pl": "pory insektoidalne",
-      "lang": "insectoid pore"
-    },
-    {
-      "key": "item.1079.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "ant-hill",
-      "pl": "mrowisko",
-      "lang": "ant-hill"
-    },
-    {
-      "key": "item.1080.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "pitfall",
-      "pl": "pułapka",
-      "lang": "pitfall"
-    },
-    {
-      "key": "item.10840.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "dimensional portal",
-      "pl": "portal wymiarowy",
-      "lang": "dimensional portal"
-    },
-    {
-      "key": "item.10842.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "dimensional portal",
-      "pl": "portal wymiarowy",
-      "lang": "dimensional portal"
-    },
-    {
-      "key": "item.10864.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "leechbloom",
-      "pl": "kwiat pijawki",
-      "lang": "leechbloom"
-    },
-    {
-      "key": "item.1099.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "RESERVED SPRITE",
-      "pl": "ZAREZERWOWANY SPRITE",
-      "lang": "RESERVED SPRITE"
-    },
-    {
-      "key": "item.11068.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "timbers",
-      "pl": "drewno",
-      "lang": "timbers"
-    },
-    {
-      "key": "item.11157.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "timbers",
-      "pl": "drewno",
-      "lang": "timbers"
-    },
-    {
-      "key": "item.11318.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "watchguard",
-      "pl": "strażnik",
-      "lang": "watchguard"
-    },
-    {
-      "key": "item.11455.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "cultish symbol",
-      "pl": "kultowy symbol",
-      "lang": "cultish symbol"
-    },
-    {
-      "key": "item.11459.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "pineapple",
-      "pl": "ananas",
-      "lang": "pineapple"
-    },
-    {
-      "key": "item.11460.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "aubergine",
-      "pl": "bakłażan",
-      "lang": "aubergine"
-    },
-    {
-      "key": "item.11461.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "broccoli",
-      "pl": "brokuł",
-      "lang": "broccoli"
-    },
-    {
-      "key": "item.11462.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "cauliflower",
-      "pl": "kalafior",
-      "lang": "cauliflower"
-    },
-    {
-      "key": "item.11465.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "elven astral observer",
-      "pl": "elficki obserwator astralny",
-      "lang": "elven astral observer"
-    },
-    {
-      "key": "item.11468.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "ornamented brooch",
-      "pl": "zdobiona broszka",
-      "lang": "ornamented brooch"
-    },
-    {
-      "key": "item.11474.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "miraculum",
-      "pl": "cud",
-      "lang": "miraculum"
-    },
-    {
-      "key": "item.11477.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "orcish gear",
-      "pl": "orkowy sprzęt",
-      "lang": "orcish gear"
-    },
-    {
-      "key": "item.11478.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "shamanic hood",
-      "pl": "szamański kaptur",
-      "lang": "shamanic hood"
-    },
-    {
-      "key": "item.11657.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "twiceslicer",
-      "pl": "krajalnica dwukrotna",
-      "lang": "twiceslicer"
-    },
-    {
-      "key": "item.11658.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "draken sulphur",
-      "pl": "wyssana siarka",
-      "lang": "draken sulphur"
-    },
-    {
-      "key": "item.11659.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "draken wristbands",
-      "pl": "drapiące opaski",
-      "lang": "draken wristbands"
-    },
-    {
-      "key": "item.11675.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "dissolved souleater",
-      "pl": "rozpuszczony pożeracz dusz",
-      "lang": "dissolved souleater"
-    },
-    {
-      "key": "item.11676.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "dissolved souleater",
-      "pl": "rozpuszczony pożeracz dusz",
-      "lang": "dissolved souleater"
-    },
-    {
-      "key": "item.11677.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "dissolved souleater",
-      "pl": "rozpuszczony pożeracz dusz",
-      "lang": "dissolved souleater"
-    },
-    {
-      "key": "item.11678.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "dissolved souleater",
-      "pl": "rozpuszczony pożeracz dusz",
-      "lang": "dissolved souleater"
-    },
-    {
-      "key": "item.11681.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "ectoplasmic sushi",
-      "pl": "ektoplazmatyczne sushi",
-      "lang": "ectoplasmic sushi"
-    },
-    {
-      "key": "item.11682.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "dragonfruit",
-      "pl": "smoczy owoc",
-      "lang": "dragonfruit"
     },
     {
       "key": "item.11683.name",
@@ -4545,6 +3818,573 @@
       "en": "rope-ladder",
       "pl": "lina-drabina",
       "lang": "rope-ladder"
+    },
+    {
+      "key": "item.616.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "DEPRECATED item",
+      "pl": "DEPRECATED Przedmiot",
+      "lang": "DEPRECATED item"
+    },
+    {
+      "key": "item.617.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "DEPRECATED item",
+      "pl": "DEPRECATED Przedmiot",
+      "lang": "DEPRECATED item"
+    },
+    {
+      "key": "item.651.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "spellwand",
+      "pl": "Zaklęciewand",
+      "lang": "spellwand"
+    },
+    {
+      "key": "item.7403.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "berserker",
+      "pl": "To go berserk",
+      "lang": "berserker"
+    },
+    {
+      "key": "item.7536.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.7933.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "invitation",
+      "pl": "zaproszenie",
+      "lang": "invitation"
+    },
+    {
+      "key": "item.8217.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.894.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "jester hat",
+      "pl": "dowcip kapelusz",
+      "lang": "jester hat"
+    },
+    {
+      "key": "item.8969.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "lava",
+      "pl": "lawa",
+      "lang": "lava"
+    },
+    {
+      "key": "item.9044.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.9118.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.922.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "item.9245.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RESERVED SPRITE",
+      "pl": "ZAREZERWOWANY SPRITE",
+      "lang": "RESERVED SPRITE"
+    },
+    {
+      "key": "lib.player.modal_button_no",
+      "category": "libs",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "No",
+      "pl": "Nie",
+      "lang": "No"
+    },
+    {
+      "key": "module.hireling_module.text1",
+      "category": "modules",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Pereira (jlcvp)',",
+      "pl": "Pereira (jlcvp)”,",
+      "lang": "Pereira (jlcvp)',"
+    },
+    {
+      "key": "monster.salamander.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Salamander",
+      "pl": "Salamandra",
+      "lang": "Salamander"
+    },
+    {
+      "key": "monster.salamander.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a salamander",
+      "pl": "salamandra",
+      "lang": "a salamander"
+    },
+    {
+      "key": "monster.deathspawn.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Deathspawn",
+      "pl": "Pomiot Śmierci",
+      "lang": "Deathspawn"
+    },
+    {
+      "key": "monster.deathspawn.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a deathspawn",
+      "pl": "pomiot śmierci",
+      "lang": "a deathspawn"
+    },
+    {
+      "key": "monster.defiler.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Defiler",
+      "pl": "Defilator",
+      "lang": "Defiler"
+    },
+    {
+      "key": "monster.defiler.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a defiler",
+      "pl": "profanator",
+      "lang": "a defiler"
+    },
+    {
+      "key": "monster.ghoul.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ghoul",
+      "pl": "Wampir",
+      "lang": "Ghoul"
+    },
+    {
+      "key": "monster.training_machine.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Training Machine",
+      "pl": "Maszyna treningowa",
+      "lang": "Training Machine"
+    },
+    {
+      "key": "monster.training_machine.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a training machine",
+      "pl": "maszyna treningowa",
+      "lang": "a training machine"
+    },
+    {
+      "key": "monster.tortoise.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Tortoise",
+      "pl": "Żółw",
+      "lang": "Tortoise"
+    },
+    {
+      "key": "monster.tortoise.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a tortoise",
+      "pl": "żółw",
+      "lang": "a tortoise"
+    },
+    {
+      "key": "monster.sandcrawler.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Sandcrawler",
+      "pl": "Piaskownik",
+      "lang": "Sandcrawler"
+    },
+    {
+      "key": "monster.sandcrawler.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a sandcrawler",
+      "pl": "piaskowiec",
+      "lang": "a sandcrawler"
+    },
+    {
+      "key": "monster.frazzlemaw.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a frazzlemaw",
+      "pl": "frazzlemaw",
+      "lang": "a frazzlemaw"
+    },
+    {
+      "key": "monster.guzzlemaw.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a guzzlemaw",
+      "pl": "żarłok",
+      "lang": "a guzzlemaw"
+    },
+    {
+      "key": "monster.shadowpelt.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Shadowpelt",
+      "pl": "Skórka Cienia",
+      "lang": "Shadowpelt"
+    },
+    {
+      "key": "monster.shadowpelt.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a shadowpelt",
+      "pl": "skórka cienia",
+      "lang": "a shadowpelt"
+    },
+    {
+      "key": "monster.custodian.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Custodian",
+      "pl": "Kustosz",
+      "lang": "Custodian"
+    },
+    {
+      "key": "monster.custodian.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a custodian",
+      "pl": "opiekun",
+      "lang": "a custodian"
+    },
+    {
+      "key": "monster.bullwark.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bullwark",
+      "pl": "Byk",
+      "lang": "Bullwark"
+    },
+    {
+      "key": "monster.bullwark.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bullwark",
+      "pl": "Byk",
+      "lang": "Bullwark"
+    },
+    {
+      "key": "monster.behemoth.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Behemoth",
+      "pl": "Potwór",
+      "lang": "Behemoth"
+    },
+    {
+      "key": "monster.old_bonelord.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Beholder",
+      "pl": "Widzący",
+      "lang": "Beholder"
+    },
+    {
+      "key": "monster.old_bonelord.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a beholder",
+      "pl": "obserwator",
+      "lang": "a beholder"
+    },
+    {
+      "key": "monster.old_bonelord.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Olho por Olho!",
+      "pl": "Olho na Olho!",
+      "lang": "Olho por Olho!"
+    },
+    {
+      "key": "monster.old_bonelord.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Estou olhando para voce!",
+      "pl": "Możesz to zrobić para voce!",
+      "lang": "Estou olhando para voce!"
+    },
+    {
+      "key": "monster.old_bonelord.voice_4",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Voce tem o olhar!",
+      "pl": "Głosuj na ten temat!",
+      "lang": "Voce tem o olhar!"
+    },
+    {
+      "key": "monster.old_wasp.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bssssss",
+      "pl": "Bsssss",
+      "lang": "Bssssss"
+    },
+    {
+      "key": "monster.old_pig.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Oink oink",
+      "pl": "Chrum chrum",
+      "lang": "Oink oink"
+    },
+    {
+      "key": "monster.old_pig.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Oink",
+      "pl": "Chrum",
+      "lang": "Oink"
+    },
+    {
+      "key": "monster.old_wolf.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Grrrrrrr",
+      "pl": "Wrrrrrr",
+      "lang": "Grrrrrrr"
+    },
+    {
+      "key": "monster.old_bear.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Grrrr",
+      "pl": "Wrrrr",
+      "lang": "Grrrr"
+    },
+    {
+      "key": "monster.old_bear.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Groar",
+      "pl": "ryk",
+      "lang": "Groar"
+    },
+    {
+      "key": "monster.weeper.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a weeper",
+      "pl": "płaczący",
+      "lang": "a weeper"
+    },
+    {
+      "key": "monster.weeper.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Moooaaan",
+      "pl": "Muuuuuu",
+      "lang": "Moooaaan"
+    },
+    {
+      "key": "monster.eternal_guardian.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Zzrrkrrch!",
+      "pl": "Zrrrkrrch!",
+      "lang": "Zzrrkrrch!"
+    },
+    {
+      "key": "monster.stone_devourer.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Rumble!",
+      "pl": "I.!",
+      "lang": "Rumble!"
+    },
+    {
+      "key": "monster.worker_golem.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "INTRUDER ALARM!",
+      "pl": "INTRUZ, NATRĘT I.!",
+      "lang": "INTRUDER ALARM!"
+    },
+    {
+      "key": "monster.worker_golem.voice_4",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Awaiting orders.",
+      "pl": "Oczekiwać orders.",
+      "lang": "Awaiting orders."
+    },
+    {
+      "key": "monster.worker_golem.voice_5",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Secret objective complete.",
+      "pl": "I. I. I..",
+      "lang": "Secret objective complete."
+    },
+    {
+      "key": "monster.war_golem.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Klonk klonk klonk",
+      "pl": "klon, klon, klon",
+      "lang": "Klonk klonk klonk"
+    },
+    {
+      "key": "monster.war_golem.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Engaging Enemy!",
+      "pl": "Engaging Wróg!",
+      "lang": "Engaging Enemy!"
+    },
+    {
+      "key": "monster.war_golem.voice_4",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Threat level processed.",
+      "pl": "Groźba poziom processed.",
+      "lang": "Threat level processed."
+    },
+    {
+      "key": "monster.war_golem.voice_5",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Charging weapon systems!",
+      "pl": "Charging broń system!",
+      "lang": "Charging weapon systems!"
+    },
+    {
+      "key": "monster.war_golem.voice_6",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Auto repair in progress.",
+      "pl": "Samochód I. w progress.",
+      "lang": "Auto repair in progress."
+    },
+    {
+      "key": "monster.war_golem.voice_7",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "The battle is joined!",
+      "pl": "The I. jest I.!",
+      "lang": "The battle is joined!"
+    },
+    {
+      "key": "monster.war_golem.voice_8",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Termination initialized!",
+      "pl": "Zainicjowano zakończenie!",
+      "lang": "Termination initialized!"
+    },
+    {
+      "key": "monster.war_golem.voice_10",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Eliminated",
+      "pl": "Wyłączony",
+      "lang": "Eliminated"
     }
   ],
   "length_ratio_issues": [
@@ -4873,15 +4713,6 @@
       "pl_ratio": 4.0
     },
     {
-      "key": "npc.pig.say_2",
-      "category": "npc",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 78,
-      "lang_ratio": 0.0,
-      "pl_ratio": 2.128
-    },
-    {
       "key": "npc.pompan.greet_msg_1",
       "category": "npc",
       "type": "crossref_length_ratio_diff",
@@ -5072,9 +4903,9 @@
     }
   ],
   "auto_fix": {
-    "attempted": 0,
-    "applied": 0,
-    "skipped": 0,
+    "attempted": 80,
+    "applied": 62,
+    "skipped": 18,
     "errors": 0
   }
 }

@@ -5,6 +5,31 @@
 > `docs/I18N_UNIFIED_EXECUTION_PLAN_2026-02-13.md`.
 > W przypadku konfliktu zapisów, obowiązuje plan kanoniczny.
 
+## 🛠️ Aktualizacja wykonania (2026-02-14 08:18 UTC — guardian global-quality start + statusd live merge)
+
+Wykonane:
+- ✅ **Guardian uruchamia worker w trybie global quality (100%)**
+  - `i18n_guardian.sh` obsługuje nowe pola profilu `global_quality_*`,
+  - env-y (`GLOBAL_QUALITY_MODE`, target coverage/score, priorytet języków, limity crossref) są przekazywane przy każdym restarcie workera,
+  - aktywny profil `translations_general` utrzymuje kolejność bootstrap `es -> pl`, a potem przechodzi na resztę języków.
+- ✅ **Worker publikuje stan gate priorytetu ES/PL**
+  - `translation_dispatch_state.json` ma sekcję `priority_gate` z:
+    - `active/pending_langs`,
+    - `coverage_target`,
+    - `lang_completion`.
+  - dzięki temu guardian/statusd mają czytelny sygnał, czy nadal trwa fala priorytetowa ES/PL.
+- ✅ **Statusd ma stabilniejsze źródło metryk migracji LIVE**
+  - agregator zawsze liczy live snapshot (`i18n_file_status.json + i18n/en/*.json`) i używa go do kluczowych pól `migration`,
+  - eliminuje to efekt „status nie widzi zmian poza workerem” dla metryk kluczy.
+- ✅ **Zaostrzono czułość driftu LIVE vs registry**
+  - `statusd_thresholds.json` ma niższe progi `metrics_drift`, co szybciej sygnalizuje rozjazd danych.
+
+Nowe TODO:
+- ⬜ Dodać automatyczne zadanie `registry_reconcile` (statusd/worker), które redukuje dług techniczny w `i18n_file_status.json` po manualnych zmianach EN.
+- ⬜ Dodać alarm „priority_gate_stuck” (np. >N cykli aktywny bez poprawy quality score), żeby guardian mógł wymusić rundę naprawczą.
+- ⬜ Ustalić kontrakt dla `identical_to_en_exempt` w gate jakości 100%, żeby nie blokować rolloutu przez poprawne nazwy własne.
+- ⬜ Dokończyć hardening source-lock guardiana: po restarcie (2026-02-14 09:20 UTC) odnotowano wtórny start `source=manual`, który przejął lock po kilku sekundach mimo aktywnego startu `start_all`.
+
 ## 🛠️ Aktualizacja wykonania (2026-02-14 07:52 UTC — statusd thresholds source-of-truth + naprawa `start_all`)
 
 Wykonane:

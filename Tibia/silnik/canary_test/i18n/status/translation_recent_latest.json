@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-14T07:56:40.928671Z",
-  "language": "el",
-  "json_file": "monsters.json",
-  "translated": 80,
+  "timestamp": "2026-02-14T08:40:38.994722Z",
+  "language": "es",
+  "json_file": "html.json",
+  "translated": 75,
   "entries": [
     {
-      "key": "monster.fernfang.name",
-      "en": "Fernfang",
-      "translated": "Fernfang",
-      "source": "simple"
+      "key": "html.monsters.html.text1",
+      "en": "{{ getMonsterLink(monster.name, true)|raw }}",
+      "translated": "{{ getMonsterLink(monster.name, true)|raw }}",
+      "source": "tm"
     },
     {
-      "key": "monster.fernfang.desc",
-      "en": "Fernfang",
-      "translated": "Fernfang",
-      "source": "simple"
+      "key": "html.monsters.html.text2",
+      "en": "{{ (monster.rewardboss) ? 'Yes' : '---' }}",
+      "translated": "{{ (monster.rewardboss) ? 'Yes' : '---' }}",
+      "source": "tm"
     },
     {
-      "key": "monster.badger.name",
-      "en": "Badger",
-      "translated": "Badger",
-      "source": "simple"
+      "key": "html.monsters.html.text3",
+      "en": "{{ monster.health|number_format(0, '.', ',') }}",
+      "translated": "{{ monster.health|number_format(0, '.', ',') }}",
+      "source": "tm"
     },
     {
-      "key": "monster.water_buffalo.name",
-      "en": "Water Buffalo",
-      "translated": "Water Buffalo",
-      "source": "simple"
+      "key": "html.monsters.html.text4",
+      "en": "{{ monster.exp|number_format(0, '.', ',') }}",
+      "translated": "{{ monster.exp|number_format(0, '.', ',') }}",
+      "source": "tm"
     },
     {
-      "key": "monster.sabretooth.name",
-      "en": "Sabretooth",
-      "translated": "Σαμπρέδοντο",
-      "source": "simple"
+      "key": "html.account.management.html.text2",
+      "en": "{{ email_new_time|date(\"j F Y, G:i:s\") }}",
+      "translated": "{{ email_new_time|date(\"j F Y, G:i:s\") }}",
+      "source": "tm"
     },
     {
-      "key": "monster.yeti.name",
-      "en": "Yeti",
-      "translated": "Yeti",
-      "source": "simple"
+      "key": "html.account.management.html.text4",
+      "en": "{{ account_created|date(\"j F Y, G:i:s\") }}",
+      "translated": "{{ account_created|date(\"j F Y, G:i:s\") }}",
+      "source": "tm"
     },
     {
-      "key": "monster.wild_warrior.name",
-      "en": "Wild Warrior",
-      "translated": "Wild Warrior",
-      "source": "simple"
+      "key": "html.account.management.html.text5",
+      "en": "{{ \"now\"|date(\"j F Y, G:i:s\") }}",
+      "translated": "{{ \"now\"|date(\"j F Y, G:i:s\") }}",
+      "source": "tm"
     },
     {
-      "key": "monster.warlock.name",
-      "en": "Warlock",
-      "translated": "Warlock",
-      "source": "simple"
+      "key": "html.account.characters.change_name.html.text2",
+      "en": "{{ player.getName() }}",
+      "translated": "{{ player.getName() }}",
+      "source": "tm"
     },
     {
-      "key": "monster.nomad.name",
-      "en": "Nomad",
-      "translated": "Nomad",
-      "source": "simple"
+      "key": "html.admin.menus.form.html.text2",
+      "en": "{{ template.template }}",
+      "translated": "{{ template.template }}",
+      "source": "tm"
     },
     {
-      "key": "monster.renegade_knight.name",
-      "en": "Renegade Knight",
-      "translated": "Renegade knight",
-      "source": "simple"
+      "key": "html.guilds.change_logo.html.text2",
+      "en": "{{ setting('core.guild_image_size_kb') }} KB",
+      "translated": "{{ setting('core.guild_image_size_kb') }} KB",
+      "source": "tm"
     },
     {
-      "key": "monster.nomad_blue.name",
-      "en": "Nomad",
-      "translated": "Nomad",
-      "source": "simple"
+      "key": "html.forum.new_thread.html.text2",
+      "en": "[url]http://address.com/[/url]",
+      "translated": "[url]http://address.com/[/url]",
+      "source": "tm"
     },
     {
-      "key": "monster.feverish_citizen.name",
-      "en": "Feverish Citizen",
-      "translated": "Feverish Citizen",
-      "source": "simple"
+      "key": "html.houses.view.html.text1",
+      "en": "{{ houseSize }} square meters",
+      "translated": "{{ houseSize }} square meters",
+      "source": "tm"
     },
     {
-      "key": "monster.nomad_female.name",
-      "en": "Nomad",
-      "translated": "Nomad",
-      "source": "simple"
+      "key": "html.houses.view.html.text4",
+      "en": "{{ config.lua.serverName }}",
+      "translated": "{{ config.lua.serverName }}",
+      "source": "tm"
     },
     {
-      "key": "monster.vile_grandmaster.name",
-      "en": "Vile Grandmaster",
-      "translated": "Vile grandmaster",
-      "source": "simple"
+      "key": "html.admin.news.table.html.text1",
+      "en": "{{ news.date|date(setting('core.news_date_format')) }}",
+      "translated": "{{ news.date|date(setting('core.news_date_format')) }}",
+      "source": "tm"
     },
     {
-      "key": "monster.fire_devil.name",
-      "en": "Fire Devil",
-      "translated": "Fire Devil",
-      "source": "simple"
+      "key": "html.admin.news.table.html.text2",
+      "en": "{{ news.player_name }}",
+      "translated": "{{ news.player_name }}",
+      "source": "tm"
     },
     {
-      "key": "monster.serpent_spawn.name",
-      "en": "Serpent Spawn",
-      "translated": "Serpent Spawn",
-      "source": "simple"
+      "key": "html.exception.html.text2",
+      "en": "Whoops something went wrong...",
+      "translated": "Vaya, algo salió mal...",
+      "source": "google_translate"
     },
     {
-      "key": "monster.cobra.name",
-      "en": "Cobra",
-      "translated": "Cobra",
-      "source": "simple"
+      "key": "html.admin.plugins.outdated.html.text1",
+      "en": "{{ plugin.yourVersion }}",
+      "translated": "{{ plugin.yourVersion }}",
+      "source": "google_translate"
     },
     {
-      "key": "monster.scarab.name",
-      "en": "Scarab",
-      "translated": "Scarab",
-      "source": "simple"
+      "key": "html.admin.plugins.outdated.html.text2",
+      "en": "{{ plugin.latestVersion }}",
+      "translated": "{{ plugin.latestVersion }}",
+      "source": "google_translate"
     },
     {
-      "key": "monster.terramite.name",
-      "en": "Terramite",
-      "translated": "Terramite",
-      "source": "simple"
+      "key": "html.admin.plugins.outdated.html.text3",
+      "en": "{{ plugin.download_link }}",
+      "translated": "{{ plugin.download_link }}",
+      "source": "google_translate"
     },
     {
-      "key": "monster.gargoyle.name",
-      "en": "Gargoyle",
-      "translated": "Gargoyle",
-      "source": "simple"
+      "key": "html.team.html.text1",
+      "en": "{{ group.group_name|capitalize }}",
+      "translated": "{{ group.group_name|capitalize }}",
+      "source": "google_translate"
     }
   ]
 }

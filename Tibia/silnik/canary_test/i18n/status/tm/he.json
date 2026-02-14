@@ -3206,5 +3206,637 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-14T05:05:29.490777Z"
+  },
+  "monster.wolf.name": {
+    "src_hash": "279ede0c6bdbd7d26309becd159053d8",
+    "text": "Wolf",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:02:50.016841Z"
+  },
+  "monster.wolf.desc": {
+    "src_hash": "cffc94c08fa39be49cf4626dcf016ba4",
+    "text": "a wolf",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:02:50.017225Z"
+  },
+  "monster.hunter.name": {
+    "src_hash": "5e409e09f43d85c6e61301149e4f803b",
+    "text": "Hunter",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:02:50.017913Z"
+  },
+  "monster.sorcerer_familiar.name": {
+    "src_hash": "fe695fb861f4a78482830bcb8e24bee3",
+    "text": "Sorcerer familiar",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:02:50.018694Z"
+  },
+  "monster.knight_familiar.name": {
+    "src_hash": "59bb8dfecc548a5d097b6f0b0d0149e4",
+    "text": "Knight familiar",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:02:50.019338Z"
+  },
+  "monster.paladin_familiar.name": {
+    "src_hash": "394dc0c96d4265282f9b9e07a32e4dae",
+    "text": "Paladin familiar",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:02:50.019875Z"
+  },
+  "monster.druid_familiar.name": {
+    "src_hash": "99443d0ef921af33631809b8edfb838c",
+    "text": "Druid familiar",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:02:50.020424Z"
+  },
+  "monster.spider.name": {
+    "src_hash": "b4d68660c4a56181cd886fe5ecc08f71",
+    "text": "Spider",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:02:50.020998Z"
+  },
+  "monster.spider.desc": {
+    "src_hash": "e290d18d76cb96332184d7f6628df7d9",
+    "text": "a spider",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:02:50.021596Z"
+  },
+  "monster.wasp.name": {
+    "src_hash": "5a2121f3548dc88faf3db43db327f7c7",
+    "text": "Wasp",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:02:50.021927Z"
+  },
+  "monster.wasp.desc": {
+    "src_hash": "3a2ed3c44c06b17d283195af2999c2e6",
+    "text": "a wasp",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:02:50.022344Z"
+  },
+  "monster.dharalion.name": {
+    "src_hash": "f4b02a0be06c383d37eaf02f4359402b",
+    "text": "Dharalion",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:02:50.022854Z"
+  },
+  "monster.dharalion.desc": {
+    "src_hash": "f4b02a0be06c383d37eaf02f4359402b",
+    "text": "Dharalion",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:02:50.023259Z"
+  },
+  "monster.cyclops.name": {
+    "src_hash": "1a1ea04451ed996376aac96e92f38324",
+    "text": "Cyclops",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:02:50.023856Z"
+  },
+  "monster.salamander.name": {
+    "src_hash": "5617d73c694ad8f8004009e0f6b2e3d6",
+    "text": "סַלָמַנדְרָה",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:37.220200Z"
+  },
+  "monster.salamander.desc": {
+    "src_hash": "f79786cf7753cb0656165f2cb5237d63",
+    "text": "סלמנדרה",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:37.220471Z"
+  },
+  "monster.infernal_frog.name": {
+    "src_hash": "ac73dcaa6d477dee2e13e907726e1e89",
+    "text": "צפרדע תופת",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:37.220731Z"
+  },
+  "monster.infernal_frog.desc": {
+    "src_hash": "65c26bf28c30f488e6cbb62e337ba835",
+    "text": "צפרדע תופת",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:37.221009Z"
+  },
+  "monster.orchid_frog.name": {
+    "src_hash": "ab152f791a1d3a232d015f8bd893ff2b",
+    "text": "סחלב צפרדע",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:37.221463Z"
+  },
+  "monster.orchid_frog.desc": {
+    "src_hash": "b4d22881650e417cdd0baffa0cd12910",
+    "text": "צפרדע סחלב",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:37.221754Z"
+  },
+  "monster.azure_frog.name": {
+    "src_hash": "23313f7df02a26b437807139f8cf6d4f",
+    "text": "צפרדע תכלת",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:37.222067Z"
+  },
+  "monster.azure_frog.desc": {
+    "src_hash": "59c7ca9b9c073c8a79119373da76f121",
+    "text": "צפרדע תכלת",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:37.222389Z"
+  },
+  "monster.deathspawn.name": {
+    "src_hash": "a5093d8d030e55f6d31522da7b0f1e1b",
+    "text": "מוות",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:37.222620Z"
+  },
+  "monster.deathspawn.desc": {
+    "src_hash": "3b37cb8ee83d1f764a407bb07147deea",
+    "text": "שרצת מוות",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:37.222865Z"
+  },
+  "monster.bog_frog.name": {
+    "src_hash": "1f841ce43d9c5934a55a06814d04ec0e",
+    "text": "בוג צפרדע",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:37.223087Z"
+  },
+  "monster.bog_frog.desc": {
+    "src_hash": "02ad7cd0462e724edd3d32c70c1eb405",
+    "text": "צפרדע ביצה",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:37.223318Z"
+  },
+  "monster.crimson_frog.name": {
+    "src_hash": "edc908c3340929cbb2675b53727ea188",
+    "text": "צפרדע ארגמן",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:37.223561Z"
+  },
+  "monster.crimson_frog.desc": {
+    "src_hash": "a1b755cebdaccdd7eb15db6e325c79eb",
+    "text": "צפרדע ארגמן",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:37.223812Z"
+  },
+  "monster.toad.name": {
+    "src_hash": "c7ccfc161889ed90a90ff22c92369226",
+    "text": "קַרפָּדָה",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:37.224025Z"
+  },
+  "monster.toad.desc": {
+    "src_hash": "7b68fb78bf1d528baf8a3812a21beec6",
+    "text": "קרפדה",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:37.224231Z"
+  },
+  "monster.coral_frog.name": {
+    "src_hash": "a69001bef54b57da0deed8c4d5699a02",
+    "text": "צפרדע אלמוגים",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:37.224462Z"
+  },
+  "monster.coral_frog.desc": {
+    "src_hash": "76fc47947c1b7b703d3d45874d9477ca",
+    "text": "צפרדע אלמוגים",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:37.224701Z"
+  },
+  "monster.filth_toad.name": {
+    "src_hash": "1abf448c003eff773e3609cee7ec2bae",
+    "text": "קרפדת זוהמה",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:37.224930Z"
+  },
+  "monster.filth_toad.desc": {
+    "src_hash": "7519555a25e45c1da4ef3f91cd4969a9",
+    "text": "קרפדת זוהמה",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:37.225169Z"
+  },
+  "monster.slime.name": {
+    "src_hash": "a537a3d7d5ede5718f2b597568233925",
+    "text": "רֶפֶשׁ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:37.225425Z"
+  },
+  "monster.slime.desc": {
+    "src_hash": "e624599b6a9e4f1bbde107cb39944595",
+    "text": "סליים",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:37.225643Z"
+  },
+  "monster.defiler.name": {
+    "src_hash": "06432eefe619b19aa24a54c7b96244d8",
+    "text": "מטמא",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:37.225847Z"
+  },
+  "monster.defiler.desc": {
+    "src_hash": "a6afa6db875a5227cc954200b26df79c",
+    "text": "מטמא",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:37.226057Z"
+  },
+  "monster.frost_troll.name": {
+    "src_hash": "c6ab0f735ce887708ab91bfe1d63bf8c",
+    "text": "טרול פרוסט",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:37.226379Z"
+  },
+  "monster.frost_troll.desc": {
+    "src_hash": "db1f835d583a0a795b50f91297add7fd",
+    "text": "טרול כפור",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:37.226742Z"
+  },
+  "monster.troll.name": {
+    "src_hash": "922a511f02d148e4c9390526d85ca519",
+    "text": "גַמָד",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:37.226979Z"
+  },
+  "monster.troll.desc": {
+    "src_hash": "40ffb882a54ee403b27433962b5c1448",
+    "text": "טרול",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:37.227204Z"
+  },
+  "monster.island_troll.name": {
+    "src_hash": "b1a2aa325c39c830d83db485ab126a26",
+    "text": "טרול האי",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:37.227455Z"
+  },
+  "monster.island_troll.desc": {
+    "src_hash": "400a5e1ff35499497afc5127d0ac8cb5",
+    "text": "טרול אי",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:37.227750Z"
+  },
+  "monster.goblin.name": {
+    "src_hash": "8e81e2940511f7152ba4462fe53e35b8",
+    "text": "שֵׁדוֹן",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:37.227974Z"
+  },
+  "monster.goblin.desc": {
+    "src_hash": "a7f3ac990652166f157dcf42a1ee0be5",
+    "text": "גובלין",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:37.228190Z"
+  },
+  "monster.ghoul.name": {
+    "src_hash": "a8515fffc5e27c8c977bec3adc1d06e6",
+    "text": "שֵׁד",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:37.228390Z"
+  },
+  "monster.ghoul.desc": {
+    "src_hash": "cf870f1b9483da668f96ed26cc50b576",
+    "text": "גועל",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:37.228594Z"
+  },
+  "monster.skeleton.name": {
+    "src_hash": "6ab48f7ed56efc362f41853c5616bf75",
+    "text": "שֶׁלֶד",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:37.228841Z"
+  },
+  "monster.skeleton.desc": {
+    "src_hash": "3671d9838dcee79307f4c8b4ddb33743",
+    "text": "שלד",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:37.229060Z"
+  },
+  "monster.mummy.name": {
+    "src_hash": "4af8989a64edc6f13a0b59ec047d1db5",
+    "text": "אִמָא",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:37.229266Z"
+  },
+  "monster.mummy.desc": {
+    "src_hash": "a2ffedde2f493213a2258da350bd2f23",
+    "text": "מומיה",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:37.229470Z"
+  },
+  "monster.winter_wolf.name": {
+    "src_hash": "f75e559b1871eca0fb6acb16a4fbb99c",
+    "text": "זאב חורף",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:37.229729Z"
+  },
+  "monster.winter_wolf.desc": {
+    "src_hash": "f1500141149d2e865dc7088814fd17bc",
+    "text": "זאב חורפי",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:37.229982Z"
+  },
+  "monster.cave_rat.name": {
+    "src_hash": "4c2c32bad4494a18938eccaf6235937e",
+    "text": "חולדת מערות",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:37.230208Z"
+  },
+  "monster.cave_rat.desc": {
+    "src_hash": "b4b535fbc0886e031208addd8e1c8984",
+    "text": "חולדת מערות",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:37.230487Z"
+  },
+  "monster.bat.name": {
+    "src_hash": "2d5b3d62e7bd3a1d79494bd85e69b5ba",
+    "text": "בַּת",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:37.230721Z"
+  },
+  "monster.bat.desc": {
+    "src_hash": "3195b1e1ca5adc3efa2213047e4ffb7f",
+    "text": "עטלף",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:37.230937Z"
+  },
+  "monster.amazon.name": {
+    "src_hash": "b3b3a6ac74ecbd56bcdbefa4799fb9df",
+    "text": "אֲמָזוֹנָה",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:37.231152Z"
+  },
+  "monster.amazon.desc": {
+    "src_hash": "9966c9483db020755b9b332ccda0e0c8",
+    "text": "אמזון",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:37.231361Z"
+  },
+  "monster.monk.name": {
+    "src_hash": "844a2b0ce474227509eb629bc56c1359",
+    "text": "נָזִיר",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:37.231564Z"
+  },
+  "monster.monk.desc": {
+    "src_hash": "d56e8d3e6c358414f7afa788ed492be1",
+    "text": "נזיר",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:37.231790Z"
+  },
+  "monster.hunter.desc": {
+    "src_hash": "246604b043bfc8edbea78331c080f2ca",
+    "text": "צייד",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:37.232027Z"
+  },
+  "monster.bandit.name": {
+    "src_hash": "7534759ceb94c0e91b13a22fe6e16980",
+    "text": "שׁוֹדֵד",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:37.232243Z"
+  },
+  "monster.bandit.desc": {
+    "src_hash": "45dc92ef8b428687c725448a9692d5d4",
+    "text": "שודד",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:53.845403Z"
+  },
+  "monster.valkyrie.name": {
+    "src_hash": "0af3f80a54716414f24a166e5c1b6c26",
+    "text": "ולקירי",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:53.845645Z"
+  },
+  "monster.valkyrie.desc": {
+    "src_hash": "182de564b1fe25142e78b2a977a2b514",
+    "text": "ולקיריה",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:53.845913Z"
+  },
+  "monster.assassin.name": {
+    "src_hash": "9b2dd2ace4fae2ba85df02e3ebf3f89e",
+    "text": "מִתנַקֵשׁ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:53.846137Z"
+  },
+  "monster.assassin.desc": {
+    "src_hash": "fdfb1e58c7b72c5ca5d0ceeb2779a82f",
+    "text": "מתנקש",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:53.846435Z"
+  },
+  "monster.training_machine.name": {
+    "src_hash": "239f8d0ccb4342a21943b1bcc65edf0f",
+    "text": "מכונת אימון",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:53.846740Z"
+  },
+  "monster.training_machine.desc": {
+    "src_hash": "1922aa2f9cedffc2998eba7853975355",
+    "text": "מכונת אימון",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:53.847022Z"
+  },
+  "monster.juggernaut.name": {
+    "src_hash": "024fc70d51074c9f42ee7f917c37b4ed",
+    "text": "Juggernaut",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:53.847487Z"
+  },
+  "monster.juggernaut.desc": {
+    "src_hash": "c92f93987179e5a10d26cae3f0029ad4",
+    "text": "ג'ורג'נאוט",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:53.847786Z"
+  },
+  "monster.demon.name": {
+    "src_hash": "300d4af0950c89b847cf6f7500e6060c",
+    "text": "שֵׁד",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:53.848002Z"
+  },
+  "monster.hellhound.name": {
+    "src_hash": "7f67cc83cb82576db750ab2ba9cbfb17",
+    "text": "כלב גיהנום",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:53.848267Z"
+  },
+  "monster.hellhound.desc": {
+    "src_hash": "b92ee8bbd39544c02e135bd24c80f5ed",
+    "text": "כלב גיהנום",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:53.848498Z"
+  },
+  "monster.destroyer.name": {
+    "src_hash": "f90034e6810bf57cdb3d99a298221fc9",
+    "text": "מַשׁחֶתֶת",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:53.848745Z"
+  },
+  "monster.destroyer.desc": {
+    "src_hash": "5248d6bb81a85e4c7366a96625430cec",
+    "text": "משחתת",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:53.848973Z"
+  },
+  "monster.hellspawn.name": {
+    "src_hash": "6f4596e4b6567420115ceb0704e9d14d",
+    "text": "גיהנום",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:53.849183Z"
   }
 }

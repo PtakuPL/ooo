@@ -11,6 +11,39 @@
 
 ---
 
+## 🛠️ Aktualizacja wykonania (2026-02-14 08:18 UTC — GLOBAL_QUALITY_MODE 100% + guardian env wiring + statusd live merge)
+
+Wybrane do realizacji pełne zadania:
+- **Wdrożenie twardego trybu `GLOBAL_QUALITY_MODE` dla tłumaczeń 100%**
+- **Spięcie guardiana z trybem global quality i priorytetem `es -> pl`**
+- **Naprawa agregacji statusu pod zmiany poza workerem (`statusd` live snapshot)**
+
+Wykonane:
+- ✅ `i18n_worker_simple.sh`:
+  - dodano tryb `GLOBAL_QUALITY_MODE` (env/CLI), który wymusza cele coverage `100%` dla tierów,
+  - tryb global quality podnosi częstotliwość walidacji i refresh statusu, wymusza GT + `crossref_auto_fix` (z limitem minimalnym),
+  - `select_auto_translate_target_strict()` ma nowy **priority gate**: w trybie ogólnym i global quality tłumaczy najpierw języki z `GLOBAL_QUALITY_PRIORITY_LANGS` (domyślnie `es`, `pl`) do `100%` coverage, dopiero potem rotuje pozostałe,
+  - `translation_dispatch_state.json` publikuje diagnostykę gate (`priority_gate.enabled/active/pending_langs/lang_completion`),
+  - `validate_tier_quality()` rozszerzono o quality gate (`score`, `critical`) i kontrakt pod global quality.
+- ✅ `i18n_guardian.sh`:
+  - profile mogą teraz przekazywać parametry global quality (`global_quality_*`),
+  - guardian przekazuje env-y do startu workera (`GLOBAL_QUALITY_MODE`, targety, priorytet języków, limity crossref),
+  - start log guardiana pokazuje aktywny tryb global quality i priorytet języków.
+- ✅ Profile:
+  - `guardian_profiles/translations_general.json` i `guardian_profile.json` dostały pełny zestaw `global_quality_*`,
+  - `guardian_profiles/auto.json` zaostrzono rollout gate (`pilot_coverage_above_pct=100`, ostrzejsze progi jakości/no-progress).
+- ✅ `i18n-statusd.sh`:
+  - agregator zawsze liczy **LIVE snapshot** z `i18n_file_status.json + i18n/en/*.json` i nadpisuje nim kluczowe pola migracji (`total_keys_extracted_live`, registry, drift),
+  - dzięki temu `statusd_report.json` odzwierciedla zmiany kluczy EN także poza ścieżką workera.
+- ✅ `statusd_thresholds.json`:
+  - progi `metrics_drift` obniżone (wcześniejsze były zbyt luźne i maskowały realny problem driftu LIVE vs registry).
+
+Nowe rzeczy do zrobienia ujawnione podczas realizacji:
+- ⬜ Dodać dedykowaną procedurę „registry reconciliation”, która aktualizuje/uzupełnia `i18n_file_status.json` dla zmian wykonanych poza workerem, aby trwale redukować `keys_extracted_outside_worker_registry`.
+- ⬜ Domknąć politykę jakości dla przypadków „poprawnie identycznych z EN” (nazwy własne) tak, aby gate 100% nie blokował rolloutu przez false-positive.
+- ⬜ Dodać watchdog na `priority_gate active` (max czas/ilość cykli), żeby automatycznie wykryć utknięcie ES/PL przy stabilnym `100% coverage` i niskim postępie jakości.
+- ⬜ Domknąć arbitration źródeł startu guardiana: po restarcie 2026-02-14 09:20 UTC zaobserwowano wtórny start `source=manual` po aktywnym starcie `start_all`.
+
 ## 🛠️ Aktualizacja wykonania (2026-02-14 07:52 UTC — kanoniczne progi statusd + hardening `i18n_start_all.sh`)
 
 Wybrane do realizacji pełne zadania:

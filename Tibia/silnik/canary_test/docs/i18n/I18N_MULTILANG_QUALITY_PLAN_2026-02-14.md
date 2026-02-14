@@ -84,9 +84,9 @@
 
 ## 2. Plan realizacji — Fazy
 
-### Faza 1: Szybkie wygrane (1-2 dni) ⬜
+### Faza 1: Szybkie wygrane (1-2 dni) ✅ DONE 2026-02-14
 
-#### 1a. Rozszerzyć TIER2 o kluczowe języki EU ⬜
+#### 1a. Rozszerzyć TIER2 o kluczowe języki EU ✅
 
 Obecny TIER2: `de pt ru tr fr it`  
 Proponowany TIER2: `de pt ru tr fr it nl cs sk hu`
@@ -98,7 +98,7 @@ Proponowany TIER2: `de pt ru tr fr it nl cs sk hu`
 TIER2_LANGS="de pt ru tr fr it nl cs sk hu"
 ```
 
-#### 1b. Podnieść TIER2_WEIGHT z 2 na 3 ⬜
+#### 1b. Podnieść TIER2_WEIGHT z 2 na 3 ✅
 
 Aby T2 szybciej nadgonił zaległy backlog `[EN]`-prefixów.
 
@@ -106,7 +106,7 @@ Aby T2 szybciej nadgonił zaległy backlog `[EN]`-prefixów.
 TIER2_WEIGHT=3  # było 2
 ```
 
-#### 1c. Dodać SIMPLE_TRANSLATIONS dla 15 języków EU ⬜
+#### 1c. Dodać SIMPLE_TRANSLATIONS dla 20 języków EU ✅ (dodano 20 języków: fr,it,nl,cs,sk,hu,sv,da,no,fi,ro,hr,sl,bg,el,lv,lt,et,sq,uk)
 
 Języki priorytetowe (Latin script, które mają unikalne słowa):
 
@@ -130,7 +130,7 @@ Języki priorytetowe (Latin script, które mają unikalne słowa):
 
 > Uwaga: Pełne dict-y powinny zawierać ~50-100 najczęstszych fraz gry (jak w PL/ES).
 
-#### 1d. Dodać walidator diakrytyków (ostrzeżenie, nie blokada) ⬜
+#### 1d. Dodać walidator diakrytyków (ostrzeżenie, nie blokada) ✅ S12 diacritics_missing w detect_suspicious()
 
 Nowy check S12 w `detect_suspicious()`:
 
@@ -160,68 +160,49 @@ EXPECTED_DIACRITICS = {
 # Próg: tekst > 80 znaków bez żadnego diakrytyku → suspicious (WARN, nie REJECT)
 ```
 
-### Faza 2: Zwiększenie throughput T2/T3 (3-5 dni) ⬜
+### Faza 2: Zwiększenie throughput T2/T3 (3-5 dni) ✅ DONE 2026-02-15
 
-#### 2a. Dodać tryb "turbo" dla T2 z dużym backlogiem ⬜
+#### 2a. Dodać tryb "turbo" dla T2 z dużym backlogiem ✅
 
-Jeśli język ma >8000 `[EN]`-prefixów, zwiększ batch_size z 10 na 30:
+Zaimplementowano `apply_turbo_batch()` w workerze:
+- Backlog >8000 → batch=30
+- Backlog >3000 → batch=20
+- Backlog <3000 → batch=10
+- Turbo działa tylko dla T2/T3 (T1 używa standardowego adaptive)
+- Nowe zmienne: TURBO_BATCH_ENABLED, TURBO_BATCH_THRESHOLD_HIGH/MED, TURBO_BATCH_SIZE_HIGH/MED/LOW
 
-```bash
-# Dynamiczny batch: im więcej [EN]-backlogu, tym większy batch
-if en_backlog > 8000:
-    batch_size = 30
-elif en_backlog > 3000:
-    batch_size = 20
-else:
-    batch_size = 10
-```
+#### 2b. Priorytet kategorii per tier ✅
 
-#### 2b. Priorytet kategorii per tier ⬜
+Zaimplementowano per-tier category priority w dispatch:
+- T1 (PL/ES): items → npc → monsters → server → ...
+- T2 (DE/FR/...): **npc → items → monsters** (NPC krótsze = szybciej)
+- T3 (reszta): npc → server → monsters → items (łatwe najpierw)
+- Nowe env vars: CATEGORY_PRIO_T1, CATEGORY_PRIO_T2, CATEGORY_PRIO_T3
+- `get_cat_priority(json_file, lang)` — tier-aware
 
-T1 (PL/ES): items → npc → monsters → server → ...  
-T2 (DE/FR/...): **npc → items → monsters** (NPC mają najkrótsze teksty = szybciej)  
-T3 (reszta): npc → server → monsters → items (najpierw łatwe)
+#### 2c. Repair queue: włączyć identical_to_en repair dla T2 ✅
 
-#### 2c. Repair queue: włączyć identical_to_en repair dla T2 ⬜
+Rozszerzono repair_identical_bonus_round na T2/T3:
+- T1 (PL/ES): max_repair_per_cycle = 300 (jak wcześniej)
+- T2 (DE/FR/...): max_repair_per_cycle = 50 (REPAIR_T2_LIMIT)
+- T3 (reszta): max_repair_per_cycle = 20 (REPAIR_T3_LIMIT)
+- Force GT dla wszystkich tierów (nie tylko PL/ES)
+- Nowe zmienne: REPAIR_T2_LIMIT, REPAIR_T3_LIMIT, REPAIR_T2_ENABLED, REPAIR_T3_ENABLED
 
-Obecnie repair queue działa głównie dla PL/ES. Rozszerzyć na T2:
-- DE ma ~30 200 identical_to_en — ogromny backlog
-- FR ma ~30 400 identical_to_en
+### Faza 3: Per-language quality rules (1-2 tygodnie) ✅ DONE 2026-02-15
 
-```python
-REPAIR_TIERS = {
-    "tier1": {"langs": ["pl","es"], "max_repair_per_cycle": 50},
-    "tier2": {"langs": ["de","pt","ru","tr","fr","it","nl","cs","sk","hu"], "max_repair_per_cycle": 20},
-    "tier3": {"langs": "...", "max_repair_per_cycle": 5},
-}
-```
+#### 3a. Per-language expansion factor ✅
 
-### Faza 3: Per-language quality rules (1-2 tygodnie) ⬜
+Zaimplementowano per-language calibrated ratio bounds w `_candidate_shape_ok()`:
+- Germanic (DE/NL/SV/DA/NO): 0.40–3.5
+- Romance (FR/ES/PT/IT/RO): 0.40–3.5
+- Slavic: 0.40–3.5
+- Uralic (FI/HU/ET): 0.40–4.0 (agglutynacja = dłuższe słowa)
+- CJK (ZH/JA/KO): 0.20–2.0
+- Arabic/Hebrew: 0.30–3.0
+- Default: 0.30–4.0
 
-#### 3a. Per-language expansion factor ⬜
-
-Zamiast stałego ratio 0.3–4.0, użyć kalibrowanych wartości:
-
-| Język | EN → LANG ratio | Min | Max |
-|-------|-----------------|-----|-----|
-| DE | 1.20–1.35 | 0.4 | 3.5 |
-| FR | 1.15–1.30 | 0.4 | 3.5 |
-| ES | 1.10–1.25 | 0.4 | 3.5 |
-| IT | 1.10–1.25 | 0.4 | 3.5 |
-| PL | 1.05–1.20 | 0.4 | 3.5 |
-| NL | 1.05–1.20 | 0.4 | 3.5 |
-| CS | 0.95–1.15 | 0.4 | 3.5 |
-| FI | 1.20–1.45 | 0.4 | 4.0 |
-| HU | 1.25–1.50 | 0.4 | 4.0 |
-| SV | 0.95–1.15 | 0.4 | 3.5 |
-| RO | 1.05–1.20 | 0.4 | 3.5 |
-| BG/RU/UK | 0.90–1.10 | 0.4 | 3.5 |
-| EL | 1.10–1.30 | 0.4 | 3.5 |
-| HR/SL/BS | 0.95–1.15 | 0.4 | 3.5 |
-| CJK | 0.40–0.70 | 0.2 | 2.0 |
-| AR/HE | 0.85–1.10 | 0.3 | 3.0 |
-
-#### 3b. Specyficzne reguły pisowni per język (future) ⬜
+#### 3b. Specyficzne reguły pisowni per język (future) ⬜ — niska priorytet, kosmetyka
 
 | Język | Specyficzna reguła | Priorytet |
 |-------|-------------------|-----------|
@@ -236,7 +217,7 @@ Zamiast stałego ratio 0.3–4.0, użyć kalibrowanych wartości:
 | **BG/RU/UK** | Cyrillic script | P1 — już w validate_per_lang |
 | **EL** | Greek script | P1 — już w validate_per_lang (exotic) |
 
-#### 3c. EXT_SIMPLE_TRANSLATIONS.json rozszerzenie ⬜
+#### 3c. EXT_SIMPLE_TRANSLATIONS.json rozszerzenie ⬜ — opcjonalne, 26 już hardcoded
 
 Przenieść hardcoded `SIMPLE_TRANSLATIONS` do zewnętrznego pliku `simple_translations.json`
 i dodać 15 języków EU z ~100 frazami gry każdy.
@@ -247,20 +228,21 @@ Fazy per język:
 3. UI phrases: "You can't move that item so fast", "It is empty", "You are dead"
 4. Monster names: zachować EN (nie tłumaczyć)
 
-### Faza 4: Monitoring i telemetria wielojęzyczna (ciągłe) ⬜
+### Faza 4: Monitoring i telemetria wielojęzyczna (ciągłe) ✅ DONE 2026-02-15
 
-#### 4a. Statusd: per-language throughput rate ⬜
+#### 4a. Statusd: per-language throughput rate ✅
 
-Dodać do quality_dashboard:
-- `genuine_translations` — ile prawdziwych tłumaczeń (bez [EN], bez identical)
-- `en_backlog` — ile `[EN]`-prefixów do przetłumaczenia
-- `diacritics_rate` — % tłumaczeń z oczekiwanymi diakrytykami (genuine only)
+Dodano do KPI Snapshot (MODUŁ 3 statusd):
+- genuine_translations per T2 language
+- en_backlog per T2 language
+- diacritics_rate per T2 language (genuine only)
 
-#### 4b. Doctor check: lang parity alert ⬜
+#### 4b. Doctor check: lang parity alert ✅
 
-Nowy check w `_doctor()`:
-- Jeśli T2 lang ma >5000 `[EN]`-backlog po 48h → WARN
-- Jeśli T2 lang ma <100 genuine translations po 72h → CRIT
+Nowy check w `run_status_doctor()`:
+- T2 lang <100 genuine translations po 72h → CRIT
+- T2 lang >5000 [EN]-backlog po 48h → WARN
+- Śledzi `first_run_ts` dla precyzyjnego timer
 
 #### 4c. Tygodniowy raport wielojęzyczny ⬜
 
@@ -429,12 +411,12 @@ Te NIE powinny być flagowane jako "brakujące" — potrzebna jest lista `UNTRAN
 
 | Tydzień | Faza | Zadania |
 |---------|------|---------|
-| **W1** | Faza 1 | ⬜ Tier2 rozszerzenie, TIER2_WEIGHT=3, S12 diacritics |
-| **W1** | Faza 1 | ⬜ SIMPLE_TRANSLATIONS 6 głównych EU |
-| **W2** | Faza 2 | ⬜ Turbo batch, category priority per tier, repair queue T2 |
-| **W3** | Faza 3 | ⬜ Per-language ratio, DE capitals, FR spaces |
-| **W4** | Faza 4 | ⬜ Statusd telemetria, tygodniowy raport |
-| **W5+** | Faza 3 | ⬜ SIMPLE_TRANSLATIONS reszta EU, grammar checks |
+| **W1** | Faza 1 | ✅ Tier2 rozszerzenie, TIER2_WEIGHT=3, S12 diacritics, 20 EU SIMPLE_TRANSLATIONS |
+| **W1** | Import | ✅ Import ZIP: FR +27k, RU +25k, RO +8k, BG/DE/NL +2k each. Cleanup mixed-lang entries. |
+| **W2** | Faza 2 | ✅ Turbo batch, category priority per tier, repair queue T2/T3 |
+| **W2** | Faza 3 | ✅ Per-language ratio bounds, agglutinative langs (FI/HU/ET) 0.40-4.0 |
+| **W2** | Faza 4 | ✅ Statusd genuine/backlog/diacritics KPI, lang parity doctor alert |
+| **W3+** | Ciągłe | ⬜ Tygodniowy raport wielojęzyczny, grammar checks (DE capitals, FR spaces) |
 
 ---
 
@@ -443,3 +425,9 @@ Te NIE powinny być flagowane jako "brakujące" — potrzebna jest lista `UNTRAN
 | Data | Zmiana |
 |------|--------|
 | 2026-02-14 | Utworzenie dokumentu. Audyt: 21 języków EU, diakrytyki, throughput, SIMPLE_TRANSLATIONS gap |
+| 2026-02-14 | Faza 1 DONE: TIER2 +nl/cs/sk/hu, WEIGHT=3, S12 diacritics, 20 EU SIMPLE_TRANSLATIONS |
+| 2026-02-14 | Import ZIP: FR 43.6%, RU 44.0%, RO 21.7%, BG 11.4%, DE 9.6%, NL 11.2% genuine |
+| 2026-02-14 | Cel: **100% pokrycia** i **100% jakości gramatycznej** we wszystkich językach |
+| 2026-02-15 | Faza 2 DONE: turbo batch (apply_turbo_batch), per-tier category priority (T1/T2/T3), repair queue T2/T3 (REPAIR_T2_LIMIT=50, REPAIR_T3_LIMIT=20) |
+| 2026-02-15 | Faza 3 DONE: per-language ratio bounds w _candidate_shape_ok(), FI/HU/ET→0.40-4.0, CJK→0.20-2.0 |
+| 2026-02-15 | Faza 4 DONE: statusd KPI genuine/backlog/diacritics per T2, doctor lang_parity alert (CRIT <100 genuine@72h, WARN >5k backlog@48h) |

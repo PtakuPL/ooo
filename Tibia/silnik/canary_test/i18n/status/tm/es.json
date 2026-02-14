@@ -128958,5 +128958,3413 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-14T07:43:28.192003Z"
+  },
+  "npc.plunderpurse.say_1": {
+    "src_hash": "403ef899ba952b5b0d89233f916c20c4",
+    "text": "Cada aventurero tiene uno. ¡La gran ventaja es que puedes acceder a tu dinero en todas las sucursales del Banco Mundial! ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:18.851748Z"
+  },
+  "npc.plunderpurse.say_12": {
+    "src_hash": "47017ef62b5d90b34100d20af0038cec",
+    "text": "Aquí tienes, {} oro. \\z Por favor, avíseme si hay algo más que pueda hacer por usted.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:18.854115Z"
+  },
+  "npc.plunderpurse.say_13": {
+    "src_hash": "5d66370e9ed4ed6d7a64f89604fda5c3",
+    "text": "Entonces, ¿te gustaría que cambiara {} de tus \\z monedas de oro por {} monedas de platino?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:18.856020Z"
+  },
+  "npc.plunderpurse.say_14": {
+    "src_hash": "6cc524207d90d10a73fdaf445dc8e62a",
+    "text": "Entonces, ¿le gustaría que cambiara {} de sus \\z monedas de platino por {} monedas de oro?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:18.857969Z"
+  },
+  "npc.plunderpurse.say_15": {
+    "src_hash": "b930ada55d3991030a4b706284b2e113",
+    "text": "Entonces, ¿te gustaría que cambiara {} de tus monedas de platino \\z por {} monedas de cristal?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:18.860012Z"
+  },
+  "npc.plunderpurse.say_16": {
+    "src_hash": "1f6df3d3549ef5f3a6e47422f3a50797",
+    "text": "Entonces, ¿te gustaría que cambiara {} de tus monedas de cristal \\z por {} monedas de platino?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:18.861861Z"
+  },
+  "npc.plunderpurse.say_19": {
+    "src_hash": "93dd2b6294a6e03a0a33654fc2251a7e",
+    "text": "¿Cuántas monedas de platino te gustaría conseguir?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:18.864445Z"
+  },
+  "npc.plunderpurse.say_2": {
+    "src_hash": "57749c8aa8811cf344559cd2ab78c8b7",
+    "text": "¿Te gustaría saber más sobre las funciones {basic} de tu cuenta bancaria, las funciones {advanced}, o quizás ya estás aburrido?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:18.866649Z"
+  },
+  "npc.plunderpurse.say_20": {
+    "src_hash": "adfb4adffb543c857e3b2b781c94b58f",
+    "text": "Lo sentimos, no tienes suficientes monedas de oro.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:18.868017Z"
+  },
+  "npc.plunderpurse.say_22": {
+    "src_hash": "adfb4adffb543c857e3b2b781c94b58f",
+    "text": "Lo sentimos, no tienes suficientes monedas de oro.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:18.870422Z"
+  },
+  "npc.plunderpurse.say_23": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Bueno, ¿puedo ayudarte con algo más?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:18.873884Z"
+  },
+  "npc.plunderpurse.say_24": {
+    "src_hash": "34eb31513e78d941f0b3f6e5e9e790b1",
+    "text": "¿Le gustaría cambiar sus monedas de platino por oro o cristal?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:18.876852Z"
+  },
+  "npc.plunderpurse.say_25": {
+    "src_hash": "5c83ef5aa40ba09b5456fa4843e70274",
+    "text": "¿Cuántas monedas de platino te gustaría cambiar por oro?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:18.880159Z"
+  },
+  "npc.plunderpurse.say_26": {
+    "src_hash": "ea6e5fcf7192e299cafe0e828c31f227",
+    "text": "¿Cuántas monedas de cristal te gustaría conseguir?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:18.882681Z"
+  },
+  "npc.plunderpurse.say_27": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Bueno, ¿puedo ayudarte con algo más?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:18.884317Z"
+  },
+  "npc.plunderpurse.say_28": {
+    "src_hash": "2d26ba0631a4a1101e8acff9425597ea",
+    "text": "Lo sentimos, no tienes suficientes monedas de platino.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:18.886066Z"
+  },
+  "npc.plunderpurse.say_3": {
+    "src_hash": "fb4f74b8792c66d37e0520c3f29be12e",
+    "text": "¡¡¡Has alcanzado el número mágico de un millón de po!!! \\z ¡El saldo de su cuenta es {} oro!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:18.888663Z"
+  },
+  "npc.plunderpurse.say_30": {
+    "src_hash": "2d26ba0631a4a1101e8acff9425597ea",
+    "text": "Lo sentimos, no tienes suficientes monedas de platino.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:18.891032Z"
+  },
+  "npc.plunderpurse.say_31": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Bueno, ¿puedo ayudarte con algo más?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:18.894211Z"
+  },
+  "npc.plunderpurse.say_32": {
+    "src_hash": "2d26ba0631a4a1101e8acff9425597ea",
+    "text": "Lo sentimos, no tienes suficientes monedas de platino.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:18.896511Z"
+  },
+  "npc.plunderpurse.say_34": {
+    "src_hash": "2d26ba0631a4a1101e8acff9425597ea",
+    "text": "Lo sentimos, no tienes suficientes monedas de platino.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:18.899088Z"
+  },
+  "npc.plunderpurse.say_35": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Bueno, ¿puedo ayudarte con algo más?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:18.900749Z"
+  },
+  "npc.plunderpurse.say_36": {
+    "src_hash": "f4e70f4d6ed7ed96d565567af2f6e52a",
+    "text": "¿Cuántas monedas de cristal te gustaría cambiar por platino?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:18.902510Z"
+  },
+  "npc.plunderpurse.say_37": {
+    "src_hash": "bbdf5368cc845aaad5696132ea000b29",
+    "text": "Lo sentimos, no tienes suficientes monedas de cristal.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:18.904005Z"
+  },
+  "npc.plunderpurse.say_39": {
+    "src_hash": "bbdf5368cc845aaad5696132ea000b29",
+    "text": "Lo sentimos, no tienes suficientes monedas de cristal.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:18.905507Z"
+  },
+  "npc.plunderpurse.say_4": {
+    "src_hash": "1f8452d354e62e09f7eb07679cd11620",
+    "text": "Seguro que has ganado bastante dinero. El saldo de su cuenta es \\z {} oro.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:18.907480Z"
+  },
+  "npc.plunderpurse.say_40": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Bueno, ¿puedo ayudarte con algo más?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:18.908882Z"
+  },
+  "npc.plunderpurse.say_9": {
+    "src_hash": "47649ac684e87427a9bc383eca46d980",
+    "text": "Muy bien, hemos agregado la cantidad de {} oro a tu {balance}. \\z Puedes {withdraw} tu dinero cuando quieras.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:18.913774Z"
+  },
+  "npc.siflind.say_20": {
+    "src_hash": "33cffbbe43af9844d6c928640f68132c",
+    "text": "Vuelve cuando lo hagas.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:19.983921Z"
+  },
+  "npc.siflind.say_22": {
+    "src_hash": "33cffbbe43af9844d6c928640f68132c",
+    "text": "Vuelve cuando lo hagas.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:19.985573Z"
+  },
+  "npc.siflind.say_24": {
+    "src_hash": "33cffbbe43af9844d6c928640f68132c",
+    "text": "Vuelve cuando lo hagas.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:19.987312Z"
+  },
+  "npc.siflind.say_26": {
+    "src_hash": "33cffbbe43af9844d6c928640f68132c",
+    "text": "Vuelve cuando lo hagas.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:19.988942Z"
+  },
+  "npc.siflind.say_28": {
+    "src_hash": "33cffbbe43af9844d6c928640f68132c",
+    "text": "Vuelve cuando lo hagas.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:19.990875Z"
+  },
+  "npc.wentworth.say_1": {
+    "src_hash": "403ef899ba952b5b0d89233f916c20c4",
+    "text": "Cada aventurero tiene uno. ¡La gran ventaja es que puedes acceder a tu dinero en todas las sucursales del Banco Mundial! ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:21.335341Z"
+  },
+  "npc.wentworth.say_12": {
+    "src_hash": "47017ef62b5d90b34100d20af0038cec",
+    "text": "Aquí tienes, {} oro. \\z Por favor, avíseme si hay algo más que pueda hacer por usted.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:21.341549Z"
+  },
+  "npc.wentworth.say_13": {
+    "src_hash": "5d66370e9ed4ed6d7a64f89604fda5c3",
+    "text": "Entonces, ¿te gustaría que cambiara {} de tus \\z monedas de oro por {} monedas de platino?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:21.345317Z"
+  },
+  "npc.wentworth.say_14": {
+    "src_hash": "6cc524207d90d10a73fdaf445dc8e62a",
+    "text": "Entonces, ¿le gustaría que cambiara {} de sus \\z monedas de platino por {} monedas de oro?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:21.349147Z"
+  },
+  "npc.wentworth.say_15": {
+    "src_hash": "b930ada55d3991030a4b706284b2e113",
+    "text": "Entonces, ¿te gustaría que cambiara {} de tus monedas de platino \\z por {} monedas de cristal?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:21.353492Z"
+  },
+  "npc.wentworth.say_16": {
+    "src_hash": "1f6df3d3549ef5f3a6e47422f3a50797",
+    "text": "Entonces, ¿te gustaría que cambiara {} de tus monedas de cristal \\z por {} monedas de platino?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:21.358045Z"
+  },
+  "npc.wentworth.say_2": {
+    "src_hash": "57749c8aa8811cf344559cd2ab78c8b7",
+    "text": "¿Te gustaría saber más sobre las funciones {basic} de tu cuenta bancaria, las funciones {advanced}, o quizás ya estás aburrido?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:21.366575Z"
+  },
+  "npc.wentworth.say_20": {
+    "src_hash": "93dd2b6294a6e03a0a33654fc2251a7e",
+    "text": "¿Cuántas monedas de platino te gustaría conseguir?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:21.369789Z"
+  },
+  "npc.wentworth.say_21": {
+    "src_hash": "adfb4adffb543c857e3b2b781c94b58f",
+    "text": "Lo sentimos, no tienes suficientes monedas de oro.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:21.372605Z"
+  },
+  "npc.wentworth.say_23": {
+    "src_hash": "adfb4adffb543c857e3b2b781c94b58f",
+    "text": "Lo sentimos, no tienes suficientes monedas de oro.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:21.375497Z"
+  },
+  "npc.wentworth.say_24": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Bueno, ¿puedo ayudarte con algo más?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:21.377181Z"
+  },
+  "npc.wentworth.say_25": {
+    "src_hash": "34eb31513e78d941f0b3f6e5e9e790b1",
+    "text": "¿Le gustaría cambiar sus monedas de platino por oro o cristal?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:21.378753Z"
+  },
+  "npc.wentworth.say_26": {
+    "src_hash": "5c83ef5aa40ba09b5456fa4843e70274",
+    "text": "¿Cuántas monedas de platino te gustaría cambiar por oro?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:21.380324Z"
+  },
+  "npc.wentworth.say_27": {
+    "src_hash": "ea6e5fcf7192e299cafe0e828c31f227",
+    "text": "¿Cuántas monedas de cristal te gustaría conseguir?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:21.381810Z"
+  },
+  "npc.wentworth.say_28": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Bueno, ¿puedo ayudarte con algo más?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:21.383496Z"
+  },
+  "npc.wentworth.say_29": {
+    "src_hash": "2d26ba0631a4a1101e8acff9425597ea",
+    "text": "Lo sentimos, no tienes suficientes monedas de platino.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:21.384916Z"
+  },
+  "npc.wentworth.say_3": {
+    "src_hash": "fb4f74b8792c66d37e0520c3f29be12e",
+    "text": "¡¡¡Has alcanzado el número mágico de un millón de po!!! \\z ¡El saldo de su cuenta es {} oro!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:21.386790Z"
+  },
+  "npc.wentworth.say_31": {
+    "src_hash": "2d26ba0631a4a1101e8acff9425597ea",
+    "text": "Lo sentimos, no tienes suficientes monedas de platino.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:21.388379Z"
+  },
+  "npc.wentworth.say_32": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Bueno, ¿puedo ayudarte con algo más?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:21.389723Z"
+  },
+  "npc.wentworth.say_33": {
+    "src_hash": "2d26ba0631a4a1101e8acff9425597ea",
+    "text": "Lo sentimos, no tienes suficientes monedas de platino.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:21.392431Z"
+  },
+  "npc.wentworth.say_35": {
+    "src_hash": "2d26ba0631a4a1101e8acff9425597ea",
+    "text": "Lo sentimos, no tienes suficientes monedas de platino.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:21.393991Z"
+  },
+  "npc.wentworth.say_36": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Bueno, ¿puedo ayudarte con algo más?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:21.395383Z"
+  },
+  "npc.wentworth.say_37": {
+    "src_hash": "f4e70f4d6ed7ed96d565567af2f6e52a",
+    "text": "¿Cuántas monedas de cristal te gustaría cambiar por platino?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:21.396900Z"
+  },
+  "npc.wentworth.say_38": {
+    "src_hash": "bbdf5368cc845aaad5696132ea000b29",
+    "text": "Lo sentimos, no tienes suficientes monedas de cristal.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:21.398258Z"
+  },
+  "npc.wentworth.say_4": {
+    "src_hash": "1f8452d354e62e09f7eb07679cd11620",
+    "text": "Seguro que has ganado bastante dinero. El saldo de su cuenta es \\z {} oro.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:21.401142Z"
+  },
+  "npc.wentworth.say_40": {
+    "src_hash": "bbdf5368cc845aaad5696132ea000b29",
+    "text": "Lo sentimos, no tienes suficientes monedas de cristal.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:21.402663Z"
+  },
+  "npc.wentworth.say_41": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Bueno, ¿puedo ayudarte con algo más?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:21.403964Z"
+  },
+  "npc.wentworth.say_9": {
+    "src_hash": "47649ac684e87427a9bc383eca46d980",
+    "text": "Muy bien, hemos agregado la cantidad de {} oro a tu {balance}. \\z Puedes {withdraw} tu dinero cuando quieras.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T07:58:21.406918Z"
+  },
+  "npc.paulie.say_9": {
+    "src_hash": "ae941463f01db1e3c9f5c5aa9735e8c7",
+    "text": "Muy bien, hemos agregado la cantidad de {} +50 de oro a tu {balance}; ese es el dinero que depositaste más un bono de 50 de oro. \\z ¡Gracias! Puedes retirar tu dinero en cualquier momento.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:59:29.703220Z"
+  },
+  "npc.pemaret.greet_msg_1": {
+    "src_hash": "2d5515795cf8857d41eaed43f1ae74e2",
+    "text": "Saludos, joven. ¿Buscas un pasaje o algún pez, |PLAYERNAME|?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:59:29.704065Z"
+  },
+  "npc.pemaret.say_1": {
+    "src_hash": "2736582e3b04535aa6412b4b65761d19",
+    "text": "¡GUAU! Tienes un marlin!! Podría hacer una bonita decoración para tu pared con él. ¿Puedo tenerlo?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:59:29.704949Z"
+  },
+  "npc.pemaret.say_2": {
+    "src_hash": "0fa2379f3a18f9074d098ebf78de295b",
+    "text": "¡Sí! Ahora veamos... <fumble fumble> Ahí lo tienes, ¡espero que te guste!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:59:29.705628Z"
+  },
+  "npc.pemaret.say_3": {
+    "src_hash": "4fc5ebb792da224ae1b1334ce3af64d2",
+    "text": "No tienes el pescado.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:59:29.706113Z"
+  },
+  "npc.pemaret.stdmod_3": {
+    "src_hash": "06e3fd38c3eb699623e849d10dd831a3",
+    "text": "Soy pescador y llevo gente a Edron. También puedes comprar algo de pescado fresco.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:59:29.706933Z"
+  },
+  "npc.pemaret.stdmod_4": {
+    "src_hash": "06e3fd38c3eb699623e849d10dd831a3",
+    "text": "Soy pescador y llevo gente a Edron. También puedes comprar algo de pescado fresco.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:59:29.707589Z"
+  },
+  "npc.pemaret.stdmod_5": {
+    "src_hash": "359b491afc488d2afb6d7d4cd14e81fa",
+    "text": "Mi pescado es de la mejor calidad que puedas encontrar. Pídeme un intercambio para comprobarlo tú mismo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:59:29.708392Z"
+  },
+  "npc.pemaret.stdmod_6": {
+    "src_hash": "69859cc789beaeafb185641edae2d1d8",
+    "text": "Es una isla encantadora y tranquila. ¿Ya visitaste la bonita playa de arena?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:59:29.709113Z"
+  },
+  "npc.pemaret.stdmod_7": {
+    "src_hash": "a2616e707cfe50519858f81f5102d4f6",
+    "text": "Mi nombre es Pemaret, el pescador.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:59:29.709636Z"
+  },
+  "npc.penny.farewell_msg_1": {
+    "src_hash": "fd278a9d48efa118f8e7d9585a25708b",
+    "text": "¡Adiós y que la Justicia os acompañe!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:59:29.710218Z"
+  },
+  "npc.penny.stdmod_1": {
+    "src_hash": "f996de137109f4c72b4252f9409e1862",
+    "text": "Soy la señorita Penny, su secretaria.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:59:29.710767Z"
+  },
+  "npc.penny.stdmod_2": {
+    "src_hash": "b51a354a1f470917de050faa5156023d",
+    "text": "Sí, Penny es mi nombre. Pareces tan inteligente como hablador.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:59:29.711449Z"
+  },
+  "npc.penny.stdmod_3": {
+    "src_hash": "c42ccb98a35c9e6ad9bf23e4a5718715",
+    "text": "Soy secretaria. Estoy organizando todos esos papeles y tu correo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:59:29.712082Z"
+  },
+  "npc.penny.stdmod_4": {
+    "src_hash": "f9c38c7279f54424832a3763f37f30f4",
+    "text": "<Sigh> Es un mundo malvado, ¿no?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:59:29.712612Z"
+  },
+  "npc.penny.stdmod_5": {
+    "src_hash": "f9c38c7279f54424832a3763f37f30f4",
+    "text": "<Sigh> Es un mundo malvado, ¿no?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:59:29.713189Z"
+  },
+  "npc.penny.stdmod_6": {
+    "src_hash": "f9c38c7279f54424832a3763f37f30f4",
+    "text": "<Sigh> Es un mundo malvado, ¿no?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:59:29.713713Z"
+  },
+  "npc.penny.stdmod_7": {
+    "src_hash": "71f077bec45af3cf1f2a48fd46279ac5",
+    "text": "Puedes recibir una carta mía.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:59:29.714251Z"
+  },
+  "npc.penny.walkaway_msg_1": {
+    "src_hash": "22c0909336bf40742220e5fb5e8235bf",
+    "text": "Espera... ¿me llevarás un diamante cuando vuelvas?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:59:29.714954Z"
+  },
+  "npc.percybald.multi_1": {
+    "src_hash": "e5a039422b1a1288ccefe3f0e0c58d5b",
+    "text": "¡Excelente! Para aclarar, donar 30.000 fichas de plata y 25.000 fichas de oro te dará derecho a un atuendo único. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:59:29.715837Z"
+  },
+  "npc.percybald.multi_2": {
+    "src_hash": "2690b79e848333a7493d829c4870e42c",
+    "text": "¿Qué elegirás?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:59:29.716273Z"
+  },
+  "npc.percybald.multi_3": {
+    "src_hash": "2690b79e848333a7493d829c4870e42c",
+    "text": "¿Qué elegirás?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:59:29.716686Z"
+  },
+  "npc.percybald.multi_4": {
+    "src_hash": "34e94561e38b3f25b77bc3f154bc5bfe",
+    "text": "Hmpf. ¿Por qué debería perder el tiempo ayudando a un aficionado? Me temo que sólo puedo ofrecer mi ayuda a actores tan buenos como yo. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:59:29.717633Z"
+  },
+  "npc.percybald.multi_5": {
+    "src_hash": "fdcbfb099e32226da4f8186c25c3fd54",
+    "text": "Sin embargo, su inútil intento de demostrar su valía podría resultar divertido. Consigue una copia de un guión de la sala de utilería del sótano del teatro. ¡Entonces hablame otra vez sobre tu prueba!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:59:29.718766Z"
+  },
+  "npc.percybald.say_1": {
+    "src_hash": "45be2fa5fe39904bf3992a3526ecaa42",
+    "text": "¡Espero que hayas aprendido tu papel! ¡Te diré una línea del guión y tendrás que responder con la línea correspondiente! ¿Listo?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:59:29.719707Z"
+  },
+  "npc.percybald.say_10": {
+    "src_hash": "2f2a18d74f5f1ef943967e1a67cf8ae8",
+    "text": "¡No, no, no! ¡Eso no es correcto!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:59:29.720254Z"
+  },
+  "npc.percybald.say_11": {
+    "src_hash": "a585af91a32fcbf7eabc6e7826992f61",
+    "text": "Vale, vale. ¡Tienes razón en este! ¿Listo para el próximo?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:59:29.720909Z"
+  },
+  "npc.percybald.say_12": {
+    "src_hash": "2f2a18d74f5f1ef943967e1a67cf8ae8",
+    "text": "¡No, no, no! ¡Eso no es correcto!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T07:59:29.721408Z"
+  },
+  "npc.percybald.say_13": {
+    "src_hash": "a585af91a32fcbf7eabc6e7826992f61",
+    "text": "Vale, vale. ¡Tienes razón en este! ¿Listo para el próximo?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:59.521102Z"
+  },
+  "npc.percybald.say_14": {
+    "src_hash": "2f2a18d74f5f1ef943967e1a67cf8ae8",
+    "text": "¡No, no, no! ¡Eso no es correcto!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:59.522052Z"
+  },
+  "npc.percybald.say_15": {
+    "src_hash": "a585af91a32fcbf7eabc6e7826992f61",
+    "text": "Vale, vale. ¡Tienes razón en este! ¿Listo para el próximo?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:59.523130Z"
+  },
+  "npc.percybald.say_16": {
+    "src_hash": "2f2a18d74f5f1ef943967e1a67cf8ae8",
+    "text": "¡No, no, no! ¡Eso no es correcto!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:59.524110Z"
+  },
+  "npc.percybald.say_17": {
+    "src_hash": "a585af91a32fcbf7eabc6e7826992f61",
+    "text": "Vale, vale. ¡Tienes razón en este! ¿Listo para el próximo?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:59.525244Z"
+  },
+  "npc.percybald.say_18": {
+    "src_hash": "2f2a18d74f5f1ef943967e1a67cf8ae8",
+    "text": "¡No, no, no! ¡Eso no es correcto!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:59.526210Z"
+  },
+  "npc.percybald.say_19": {
+    "src_hash": "a585af91a32fcbf7eabc6e7826992f61",
+    "text": "Vale, vale. ¡Tienes razón en este! ¿Listo para el próximo?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:59.527444Z"
+  },
+  "npc.percybald.say_20": {
+    "src_hash": "2f2a18d74f5f1ef943967e1a67cf8ae8",
+    "text": "¡No, no, no! ¡Eso no es correcto!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:59.528862Z"
+  },
+  "npc.percybald.say_9": {
+    "src_hash": "a585af91a32fcbf7eabc6e7826992f61",
+    "text": "Vale, vale. ¡Tienes razón en este! ¿Listo para el próximo?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:03:59.535622Z"
+  },
+  "npc.percybald.say_2": {
+    "src_hash": "56fd767d8022856665c23434faf267af",
+    "text": "¿Cómo te atreves? ¿Estás loco? Mantengo a la princesa como rehén y tú sueltas tus armas. ¡Estáis todos perdidos!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:16.625576Z"
+  },
+  "npc.percybald.say_21": {
+    "src_hash": "ed239999596a97c1a87fc82fe5d38bfc",
+    "text": "A cambio de una generosa donación de fichas de oro y plata, puedo ofrecerte un conjunto especial. ¿Quieres donar?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:16.626178Z"
+  },
+  "npc.percybald.say_22": {
+    "src_hash": "1be63677177ab9a0d38bea0fc29209aa",
+    "text": "Si no ha tomado una decisión, regrese cuando esté listo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:16.626747Z"
+  },
+  "npc.percybald.say_24": {
+    "src_hash": "1f7229ee9b04c15e56833e83447c77f9",
+    "text": "No tienes suficientes tokens para donar esa cantidad.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:16.627143Z"
+  },
+  "npc.percybald.say_26": {
+    "src_hash": "d7870c27e363544f4b228faa37a2aa08",
+    "text": "Toma este escudo como muestra de gran gratitud. Recordemos por siempre este día, amigo mío.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:16.627682Z"
+  },
+  "npc.percybald.say_27": {
+    "src_hash": "1f7229ee9b04c15e56833e83447c77f9",
+    "text": "No tienes suficientes tokens para donar esa cantidad.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:16.628071Z"
+  },
+  "npc.percybald.say_29": {
+    "src_hash": "cb13701798756e66d1e2cce5c9745078",
+    "text": "Primero debes donar el conjunto {armor}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:16.628440Z"
+  },
+  "npc.percybald.say_3": {
+    "src_hash": "e8f0607dc93ff4d51555b4ce8c9bdef5",
+    "text": "Demasiado tarde caballero insignificante. ¡Ya no puedes detener mi plan maestro!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:16.628919Z"
+  },
+  "npc.percybald.say_30": {
+    "src_hash": "0bef16975dfcfd71e05040b50af82eb4",
+    "text": "Toma esta corona como muestra de gran gratitud. Recordemos por siempre este día, amigo mío.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:16.629430Z"
+  },
+  "npc.percybald.say_31": {
+    "src_hash": "1f7229ee9b04c15e56833e83447c77f9",
+    "text": "No tienes suficientes tokens para donar esa cantidad.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:16.629848Z"
+  },
+  "npc.percybald.say_33": {
+    "src_hash": "70a834b843873805822a7ff6aa5ae367",
+    "text": "Primero debes donar el complemento {shield}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:16.630280Z"
+  },
+  "npc.percybald.say_34": {
+    "src_hash": "4c2de4abb94586a9969157dba2bf8aa0",
+    "text": "¿Te gustaría donar 15.000 fichas de plata y 12.500 fichas de oro por una armadura roja única?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:16.630832Z"
+  },
+  "npc.percybald.say_35": {
+    "src_hash": "61b659d307c22dc39b4addedf526f2d0",
+    "text": "¿Te gustaría donar 7500 fichas de plata y 6250 fichas de oro para un escudo único?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:16.631328Z"
+  },
+  "npc.percybald.say_36": {
+    "src_hash": "ec3870ba73c47501bea87b906bee3263",
+    "text": "¿Le gustaría donar 7500 fichas de plata y 6250 fichas de oro para obtener una corona única?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:16.631852Z"
+  },
+  "npc.percybald.say_4": {
+    "src_hash": "108be908221b23e9d543967dd6feca4b",
+    "text": "¿Qué es esto? ¿Detrás del médico?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:16.632202Z"
+  },
+  "npc.percybald.say_5": {
+    "src_hash": "9eb8bc5c78214a1fc1fa90162ff5cd4d",
+    "text": "¡Ja ja! Puede que no temas por tu propia vida, pero ¿¡qué hay de la de ella!?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:16.632893Z"
+  },
+  "npc.percybald.say_6": {
+    "src_hash": "a49d5ae2e8b7617f28e088fd314ede98",
+    "text": "¡Grrr!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:16.633123Z"
+  },
+  "npc.percybald.say_7": {
+    "src_hash": "34457813191b34c2a7546405dcfdeb31",
+    "text": "¡Eres un monstruo!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:16.633427Z"
+  },
+  "npc.percybald.say_8": {
+    "src_hash": "bc3bb71b6417e07288da6cd390de5d7d",
+    "text": "Ah bueno, creo que pasaste la prueba! ¡Aquí está tu kit de disfraz! ¡Ahora piérdete, el destino me espera!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:16.633998Z"
+  },
+  "npc.perod.voice_1": {
+    "src_hash": "3f1e06bc5667886b3170e7f7e9b4c305",
+    "text": "¡Pasa por aquí antes de embarcarte en tu gran aventura! ¡Armas a distancia y equipo general a la venta hoy!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:16.634614Z"
+  },
+  "npc.peter.greet_msg_1": {
+    "src_hash": "4ddd26c1219e232c7c58912ba4fa1092",
+    "text": "Hola. A menos que tenga asuntos oficiales aquí o quiera pasar la puerta, continúe.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:16.635124Z"
+  },
+  "npc.peter.say_1": {
+    "src_hash": "90f7aaa97b9d085bb3cc97d09718f434",
+    "text": "¿Un informe? ¿Qué creen que está pasando aquí? <gives an angry and bitter report>.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:16.635646Z"
+  },
+  "npc.peter.say_2": {
+    "src_hash": "61668f639b50fd9ca6aedec8f5f3003f",
+    "text": "¿Pasar la puerta? Si debe serlo. ¿Te diriges al {factory} o al antiguo {trade quarter}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:16.636318Z"
+  },
+  "npc.peter.say_3": {
+    "src_hash": "1cbd18ee50bce75b6857738056a50206",
+    "text": "Escuche, no me pagan lo suficiente por charlar con los ciudadanos. Siga adelante.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:16.636953Z"
+  },
+  "npc.peter.say_4": {
+    "src_hash": "d531fb55be8eff99cc9981aea3072ebf",
+    "text": "Esté en guardia. Algunas personas son amables, otras... no lo son.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:16.637427Z"
+  },
+  "npc.peter.stdmod_1": {
+    "src_hash": "d0c4761f09db7b2a4ba60bb2a3dd7a01",
+    "text": "Allí huele aún más que en el barrio de las fábricas. Huele un poco a huevos podridos.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:16.637972Z"
+  },
+  "npc.peter.stdmod_11": {
+    "src_hash": "0abc4c9a6571bf7e3e914ac12ac7b2fe",
+    "text": "Esa cría de quara debería extinguirse.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:16.638369Z"
+  },
+  "npc.peter.stdmod_12": {
+    "src_hash": "777f43c00c4ca3d192bbd331d213b6be",
+    "text": "El líder de su manada es el mayor criminal de todos ellos.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:16.638834Z"
+  },
+  "npc.peter.stdmod_2": {
+    "src_hash": "5c7608c3b074d0735efb6485654bc825",
+    "text": "No parece que vayas a durar ni un segundo allí.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:16.639245Z"
+  },
+  "npc.peter.stdmod_3": {
+    "src_hash": "bf0f2ce85520e94be06865b86994576a",
+    "text": "Un día entraré en la oficina de mi superior y anunciaré mi dimisión. Probablemente dentro de poco.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:16.639810Z"
+  },
+  "npc.peter.stdmod_4": {
+    "src_hash": "bf3be8a7acc11aa4ae1863dcef2abd01",
+    "text": "Buena idea. Sal a caminar por allí. Preferiblemente a dos metros de profundidad.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:16.640251Z"
+  },
+  "npc.peter.stdmod_5": {
+    "src_hash": "9ccf2cd926ac285d31cd143d1d8fc46c",
+    "text": "Es demasiado ruidoso y huele mal.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:16.640599Z"
+  },
+  "npc.peter.stdmod_6": {
+    "src_hash": "827296f1e9326c2fb21e0f6b9271ccd1",
+    "text": "Ve allí si quieres que te den una paliza.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:16.640971Z"
+  },
+  "npc.peter.stdmod_7": {
+    "src_hash": "6fd5fa981d641cfe0f402bfbb261cf6f",
+    "text": "Sargento de primera clase de la Fuerza de la Guardia Yalahariana. Pero no me importan los rangos y los títulos.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:16.641475Z"
+  },
+  "npc.peter.stdmod_8": {
+    "src_hash": "2fe445c60f3f549137adbaf5a1389dd2",
+    "text": "No soporto a esos tontos arrogantes.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:16.641875Z"
+  },
+  "npc.peter.stdmod_9": {
+    "src_hash": "7660027ff80eea31e870a72d748f1890",
+    "text": "Déjame en paz con tu 'mission' a menos que tengas órdenes precisas de mis superiores.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:16.642400Z"
+  },
+  "npc.phillip.farewell_msg_1": {
+    "src_hash": "f02b4950683b1b9111a02fe786e592f3",
+    "text": "Ve y ten cuidado. ¡Recuerda lo que has aprendido!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:16.643008Z"
+  },
+  "npc.phillip.greet_msg_1": {
+    "src_hash": "601eef31e462acfca9f72445d3cdacf6",
+    "text": "Hola, poderoso aventurero |PLAYERNAME|. ¿Puedo enseñarte algo que no sabes?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:16.643512Z"
+  },
+  "npc.phillip.stdmod_1": {
+    "src_hash": "91bb2f7bab1e41ed4cddd5331e779e50",
+    "text": "Estoy bien, muchas gracias.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:16.643881Z"
+  },
+  "npc.phillip.stdmod_10": {
+    "src_hash": "327d9770eee920f9c178695bd75a174a",
+    "text": "Las mazmorras son lugares de peligro y acertijos. En algunos de ellos, una mente brillante te será más útil que una espada.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:16.644471Z"
+  },
+  "npc.phillip.stdmod_11": {
+    "src_hash": "e271eb0d6703def10072df99ead822a8",
+    "text": "Un lugar interesante que deberías considerar visitar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:16.644945Z"
+  },
+  "npc.phillip.stdmod_12": {
+    "src_hash": "233da6e34291d0489a749dbe9ca7164d",
+    "text": "No tienes que agradecerme, es sólo mi deber.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:48.322048Z"
+  },
+  "npc.phillip.stdmod_13": {
+    "src_hash": "405db7b69ea68d1b8548862dd754294a",
+    "text": "Para aprender sobre los dioses, visita los templos y habla con los sacerdotes.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:48.322550Z"
+  },
+  "npc.phillip.stdmod_14": {
+    "src_hash": "d8e65ad8d723c26168be47e98872ef0b",
+    "text": "El rey del sur se llama Tibianus. Él y nuestra reina Eloise están en una lucha constante.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:48.323081Z"
+  },
+  "npc.phillip.stdmod_15": {
+    "src_hash": "d8e65ad8d723c26168be47e98872ef0b",
+    "text": "El rey del sur se llama Tibianus. Él y nuestra reina Eloise están en una lucha constante.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:48.323544Z"
+  },
+  "npc.phillip.stdmod_19": {
+    "src_hash": "549fef2a8079262b4b07e44d1c8870c3",
+    "text": "Para aprender sobre armas, lea libros apropiados o hable con los herreros.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:48.323986Z"
+  },
+  "npc.phillip.stdmod_2": {
+    "src_hash": "3a021aea63591f849987ae5528d09cec",
+    "text": "Mi negocio es conocimiento y es gratis.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:48.324437Z"
+  },
+  "npc.phillip.stdmod_20": {
+    "src_hash": "57595f01571dd3cd921641c004b43de6",
+    "text": "Para aprender sobre magia habla con los líderes del gremio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:48.324848Z"
+  },
+  "npc.phillip.stdmod_21": {
+    "src_hash": "d019a0768889498b0de95183d2f4231c",
+    "text": "¿Rebelión? ¿Para qué? Estamos contentos con nuestra situación.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:48.325298Z"
+  },
+  "npc.phillip.stdmod_22": {
+    "src_hash": "4114351e911dbf8189da5409b21977ff",
+    "text": "Tod vendrá y nos salvará a todos. Traerá libertad y cerveza a los hombres de Carlin.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:48.325925Z"
+  },
+  "npc.phillip.stdmod_23": {
+    "src_hash": "3eaa7d75e4db6c9249eb96a00029eda4",
+    "text": "Este sirviente del mal está protegido por los dioses oscuros y no puede sufrir daño.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:48.326469Z"
+  },
+  "npc.phillip.stdmod_24": {
+    "src_hash": "9c0ccc16c3aee0d0906fb98a91e4cd8b",
+    "text": "Es un seguidor del mal. Sus poderes fueron impulsados ​​por una fuerza siniestra y ahora está más allá de las restricciones humanas.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:48.327092Z"
+  },
+  "npc.phillip.stdmod_25": {
+    "src_hash": "5122c402e204e63e7cd164fff46eb3d0",
+    "text": "Se dice que esta arma es muy poderosa y única. Estuvo escondido en la antigüedad y ahora se cree que está perdido.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:48.327660Z"
+  },
+  "npc.phillip.stdmod_3": {
+    "src_hash": "2ce6a5c5e5b8f6b98a77f55717faf086",
+    "text": "Me siento honrado de ser profesor en esta escuela.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:48.328060Z"
+  },
+  "npc.phillip.stdmod_4": {
+    "src_hash": "21e9343bf4e931e3e55206de19534aa4",
+    "text": "Dirijo esta escuela, hay otros profesores itinerantes a los que llamamos Loremasters.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:48.328662Z"
+  },
+  "npc.phillip.stdmod_5": {
+    "src_hash": "d7c0fe4da0a7d7f115026976775f5df3",
+    "text": "Si tienes suerte, encontrarás uno en tus viajes.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:48.329106Z"
+  },
+  "npc.phillip.stdmod_8": {
+    "src_hash": "f0d4aad3fc10d63489e10a0f632aa424",
+    "text": "Te proporcionaré todos los conocimientos que tengo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:48.329494Z"
+  },
+  "npc.phillip.stdmod_9": {
+    "src_hash": "9cd5181b7d22c76338ed48977422133d",
+    "text": "Los monstruos tienen diferentes formas y poderes. Se dice que hay un zoológico en el pueblo de los enanos.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:48.330042Z"
+  },
+  "npc.pig.say_1": {
+    "src_hash": "d1852702b60a72badabc49855f3a84af",
+    "text": "¿Quieres intentar liberarme con un beso?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:48.330451Z"
+  },
+  "npc.pig.say_2": {
+    "src_hash": "6d3d9675bcc244bf5e96abde990da227",
+    "text": "Mmm Uhhh. ¡Nada mal, nada mal! Pero aún puedes mejorar MUCHO tu habilidad.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:48.330918Z"
+  },
+  "npc.plunderpurse.greet_msg_1": {
+    "src_hash": "d44886339f26790ee7baad8c87d04182",
+    "text": "¡Bienvenido, joven aventurero! ¡Ay! {Deposit} tu oro o {withdraw} \\z tu dinero de tu cuenta bancaria. También puedo explicarte las funciones de tu cuenta {bank}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:48.331768Z"
+  },
+  "npc.plunderpurse.say_17": {
+    "src_hash": "2dd1c8bc6a1cf4797d74f6efeb2f2429",
+    "text": "No hay suficiente oro en tu cuenta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:48.332178Z"
+  },
+  "npc.plunderpurse.say_18": {
+    "src_hash": "d7abe0eeef508371909784d9060571e5",
+    "text": "¡El cliente es el rey! Vuelve cuando quieras si deseas {withdraw} tu dinero.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:48.332687Z"
+  },
+  "npc.plunderpurse.stdmod_10": {
+    "src_hash": "1da44100a18a63d2988156567990446d",
+    "text": "Arrr. No es un lugar muy rentable.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:48.333065Z"
+  },
+  "npc.plunderpurse.stdmod_11": {
+    "src_hash": "cf9117166858c58ccbd53359144ec0b0",
+    "text": "¡Arriba! Soy un pirata... er, quiero decir <cough> <cough>... empleado. Empleado bancario. \\z\n\t\t\tEso es lo que soy. ¿Necesitas algo? Negocios bancarios, ¿tal vez?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:48.333958Z"
+  },
+  "npc.plunderpurse.stdmod_12": {
+    "src_hash": "cb13aa74d8b215d54c2bfadff805a8dd",
+    "text": "Puedes elegir entre cuatro: caballero, hechicero, paladín o druida.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:48.334482Z"
+  },
+  "npc.plunderpurse.stdmod_13": {
+    "src_hash": "41726974eda3086476a49721c66efae3",
+    "text": "Me temo que este servicio no estará disponible para usted hasta que llegue al continente.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:48.334979Z"
+  },
+  "npc.plunderpurse.stdmod_14": {
+    "src_hash": "21564fd23d9aa9fef4789e554639ecdb",
+    "text": "Es un viejo trampero y sabe lo que hace en Tibia, sí. \\z\n\t\t\tPregúntele cómo funciona algo y seguramente tendrá una respuesta. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:48.335507Z"
+  },
+  "npc.plunderpurse.stdmod_15": {
+    "src_hash": "693c51e4ef9a6671dbac3d06d9af518f",
+    "text": "Tipo sombrío. Sigue mirándome por alguna razón. O tal vez sin motivo, Harr. \\z\n\t\t\tFormidable herrero, de todos modos. La espada más afilada que he visto en mucho tiempo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:48.336240Z"
+  },
+  "npc.plunderpurse.stdmod_16": {
+    "src_hash": "8f09f96254235f440c239936fceb402d",
+    "text": "Tener una barba blanca, espero dejarme una a su debido tiempo, ¡impresionaría muchísimo a los más jóvenes! \\z\n\t\t\tConocer algunos hechizos de hechicero y druida como él tampoco estaría de más. \\z\n\t\t\tAcude a él si necesitas hechizos de mago.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:48.337102Z"
+  },
+  "npc.plunderpurse.stdmod_17": {
+    "src_hash": "d7ac703663c9ef3ddfa516c641539743",
+    "text": "Podría haber usado su talento para crear más runas explosivas en la lucha marina contra... \\z\n\t\t\tAh, bueno, de todos modos no sabrías el nombre. Debo admitir que sus pociones son buenas.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:48.337838Z"
+  },
+  "npc.plunderpurse.stdmod_18": {
+    "src_hash": "448beed5e0b1100ef4ef722d286161c9",
+    "text": "<shifts uneasily> Bueno, tal vez me encontré con su barco alguna vez. Con mal tiempo. \\z\n\t\t\tY no pude hacer nada por esas pobres almas. Y de todos modos, nadó hasta aquí. \\z\n\t\t\tAsí que al final todo salió bien.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:48.338684Z"
+  },
+  "npc.plunderpurse.stdmod_19": {
+    "src_hash": "e2de0f65fe58f8ec00260a487725f614",
+    "text": "Para ti, ese es el Sr. Morris, amigo. \\z\n\t\t\tVe a buscar algo útil que hacer y pregúntale sobre una misión, ¿quieres?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:48.339282Z"
+  },
+  "npc.plunderpurse.stdmod_2": {
+    "src_hash": "6909a1ff08bf4a051e8928d5634fa5f8",
+    "text": "No se cargue con demasiado dinero en efectivo: ¡guárdelo aquí!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:48.339720Z"
+  },
+  "npc.plunderpurse.stdmod_20": {
+    "src_hash": "fb482cb7fef8b618bb1832505f29c583",
+    "text": "Harrr, ¡qué dama! Me gustaría invitarla a una pinta algún día. \\z\n\t\t\t<leers> A menos que ella me mate primero con una de sus miradas gélidas. De todos modos, un sanador decente. \\z\n\t\t\tPuede ayudarte a elegir una vocación.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:48.340552Z"
+  },
+  "npc.plunderpurse.stdmod_21": {
+    "src_hash": "122a11a2ea3221f83083cba61ce94ad6",
+    "text": "Sí, ¿qué pasa con mi nombre? ¿No te gusta? Bueno, ¡no tienes que usarlo! \\z\n\t\t\t¡Y estoy muy feliz con eso!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:48.341129Z"
+  },
+  "npc.plunderpurse.stdmod_25": {
+    "src_hash": "99f408e3f005b1c689379944814f8f6a",
+    "text": "Una vez que hayas alcanzado el nivel 8 aquí en esta isla, podrás elegir tu vocación definitiva e partir hacia el continente.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:48.341705Z"
+  },
+  "npc.plunderpurse.stdmod_3": {
+    "src_hash": "9c40cfeaf77bd5182429493dfc63078b",
+    "text": "No tomes el dinero y corras: ¡deposítalo y camina!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:05:48.342149Z"
+  },
+  "npc.plunderpurse.voice_2": {
+    "src_hash": "6909a1ff08bf4a051e8928d5634fa5f8",
+    "text": "No se cargue con demasiado dinero en efectivo: ¡guárdelo aquí!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:08:18.500300Z"
+  },
+  "npc.plunderpurse.voice_3": {
+    "src_hash": "9c40cfeaf77bd5182429493dfc63078b",
+    "text": "No tomes el dinero y corras: ¡deposítalo y camina!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:08:18.501628Z"
+  },
+  "npc.wentworth.say_17": {
+    "src_hash": "2dd1c8bc6a1cf4797d74f6efeb2f2429",
+    "text": "No hay suficiente oro en tu cuenta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:08:19.427004Z"
+  },
+  "npc.wentworth.say_18": {
+    "src_hash": "2dd1c8bc6a1cf4797d74f6efeb2f2429",
+    "text": "No hay suficiente oro en tu cuenta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:08:19.427980Z"
+  },
+  "npc.wentworth.say_19": {
+    "src_hash": "d7abe0eeef508371909784d9060571e5",
+    "text": "¡El cliente es el rey! Vuelve cuando quieras si deseas {withdraw} tu dinero.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:08:19.429088Z"
+  },
+  "npc.wentworth.stdmod_2": {
+    "src_hash": "6909a1ff08bf4a051e8928d5634fa5f8",
+    "text": "No se cargue con demasiado dinero en efectivo: ¡guárdelo aquí!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:08:19.432340Z"
+  },
+  "npc.wentworth.stdmod_3": {
+    "src_hash": "9c40cfeaf77bd5182429493dfc63078b",
+    "text": "No tomes el dinero y corras: ¡deposítalo y camina!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:08:19.433473Z"
+  },
+  "npc.wentworth.voice_2": {
+    "src_hash": "6909a1ff08bf4a051e8928d5634fa5f8",
+    "text": "No se cargue con demasiado dinero en efectivo: ¡guárdelo aquí!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:08:19.437640Z"
+  },
+  "npc.wentworth.voice_3": {
+    "src_hash": "9c40cfeaf77bd5182429493dfc63078b",
+    "text": "No tomes el dinero y corras: ¡deposítalo y camina!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:08:19.438839Z"
+  },
+  "npc.plunderpurse.stdmod_4": {
+    "src_hash": "435dc72be325fb281f8476792ec62b29",
+    "text": "Sí, bueno, hay algún romántico trabajando allí. \\z\n\t\t\tSe llegaba a la isla al amanecer, llegaban nuevos héroes y aventureros y cosas así.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:09:33.356321Z"
+  },
+  "npc.plunderpurse.stdmod_5": {
+    "src_hash": "821e93735eff8fc67ebd76c8b63b1295",
+    "text": "¡Ah, cosas maravillosas! ¡Eso y una botella de ron, por supuesto! Harrharr. \\z\n\t\t\tTienes algo de oro que quieres depositar o retirar, solo dímelo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:09:33.357032Z"
+  },
+  "npc.plunderpurse.stdmod_6": {
+    "src_hash": "cd72d5d3df76c633db0dc1ed730e1a6d",
+    "text": "Puede depositar y retirar dinero de su cuenta bancaria aquí.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:09:33.357473Z"
+  },
+  "npc.plunderpurse.stdmod_7": {
+    "src_hash": "89da4ebe2430410a22d70387e36a0c25",
+    "text": "Una vez que esté en el continente Tibiano, podrá acceder a nuevas funciones de su cuenta bancaria, \\z\n\t\t\tcomo cambiar dinero, transferir dinero a otros jugadores de forma segura o participar en subastas de casas.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:09:33.358456Z"
+  },
+  "npc.plunderpurse.stdmod_8": {
+    "src_hash": "74827fb0fd01dc6d36f0aceeb3cbc509",
+    "text": "Abram Plunderpurse, a su servicio. <bows>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:09:33.358868Z"
+  },
+  "npc.plunderpurse.stdmod_9": {
+    "src_hash": "9a127d518aa07db164073d850dbbf5ea",
+    "text": "Aquí en Dawnport, administro el banco. Mantengo seguro el oro que depositas, \\z\n\t\t\tAsí que no puedes perderlo cuando estás peleando o muriendo, je. \\z\n\t\t\tPídeme tu saldo para saber cuánto dinero ya has ahorrado",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:09:33.359572Z"
+  },
+  "npc.prisoner.voice_6": {
+    "src_hash": "d939625533d3bfb8529a60aad79de4a9",
+    "text": "¡Por favor! ¡Te ruego que pares!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:09:33.359989Z"
+  },
+  "npc.puffels.greet_msg_1": {
+    "src_hash": "a13ff91d8ddfb0680922cd814ebba1ef",
+    "text": "Sí, otro tonto {disturbing} de mí, que alegría.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:09:33.360424Z"
+  },
+  "npc.puffels.stdmod_3": {
+    "src_hash": "990f29e6c803eaea0a39626a6268c80b",
+    "text": "Puedo enseñarte {healing spells}, {attack spells} y {support spells}. \\z\n\t\t¿Qué tipo de hechizo deseas aprender? \\z\n\t\tTambién puedes decirme para qué nivel te gustaría aprender un hechizo, si así lo prefieres.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:09:33.361448Z"
+  },
+  "npc.pydar.farewell_msg_1": {
+    "src_hash": "ec1e56286beab7710e4a3446b5ab789a",
+    "text": "¡Que el fuego de tu corazón nunca se apague, |PLAYERNAME|!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:09:33.361992Z"
+  },
+  "npc.pydar.greet_msg_1": {
+    "src_hash": "3778695abd72ca6d50cb10eea6c816f8",
+    "text": "¡Sea saludado |PLAYERNAME|! ¡Puedo oler el aroma de un fénix en ti!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:09:33.362504Z"
+  },
+  "npc.pydar.keyword_1": {
+    "src_hash": "36bea9a9a6304a1344aa7b8c3ad98567",
+    "text": "Recibe así la chispa del fénix, peregrino.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:09:33.362924Z"
+  },
+  "npc.pydar.stdmod_1": {
+    "src_hash": "ba4036d072c4d365377a84925540134e",
+    "text": "La Chispa del Fénix la damos yo y el gran geomante del templo terrestre local. ¿Quieres recibir mi parte de la Chispa del Fénix por |BLESSCOST| oro?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:09:33.363628Z"
+  },
+  "npc.pydar.stdmod_10": {
+    "src_hash": "42a0a363803a810cb9ffb2a7f22fe9e1",
+    "text": "¡Que la gran llama los devore a todos!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:09:33.364014Z"
+  },
+  "npc.pydar.stdmod_11": {
+    "src_hash": "08a156dfd26a624688defe1459ca3583",
+    "text": "La vida se alimenta del fuego y al final el fuego se alimentará de la vida.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:09:33.364694Z"
+  },
+  "npc.pydar.stdmod_12": {
+    "src_hash": "f084bcb360bfb0d5a0973612ddd4f519",
+    "text": "Un arma demasiado poderosa para ser empuñada por mortales. Hay que devolverlo al fuego que lo engendró.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:09:33.365265Z"
+  },
+  "npc.pydar.stdmod_13": {
+    "src_hash": "b7aaa1c2f56ea0b6bb93eea69482b4a9",
+    "text": "Si alguna vez se atreve a entrar en Kazordoon, con mucho gusto lo arrojaré a la lava. La llama sagrada traerá justicia sobre él.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:09:33.365908Z"
+  },
+  "npc.pydar.stdmod_14": {
+    "src_hash": "5e6322f586ccfe7b7dbb2222fbd49d59",
+    "text": "Nuestra ciudad fue fundada en la antigüedad. Abandonados por los dioses por los que una vez luchamos, creamos un refugio seguro para nuestro pueblo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:09:33.366554Z"
+  },
+  "npc.pydar.stdmod_15": {
+    "src_hash": "e251f65c42abdc96a1c2501c27867654",
+    "text": "Se dice que esta montaña es la más antigua del mundo. Es el lugar donde el fuego y la tierra se encuentran y se separan al mismo tiempo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:09:33.367238Z"
+  },
+  "npc.pydar.stdmod_16": {
+    "src_hash": "c98aaee2291fab638924e7607c1e3244",
+    "text": "Bezil y Nezil compran y venden equipos de todo tipo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:09:33.367648Z"
+  },
+  "npc.pydar.stdmod_17": {
+    "src_hash": "c98aaee2291fab638924e7607c1e3244",
+    "text": "Bezil y Nezil compran y venden equipos de todo tipo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:09:33.368049Z"
+  },
+  "npc.pydar.stdmod_18": {
+    "src_hash": "57a7bf53584a1b9de4cc5f3dd647feb4",
+    "text": "Ella es el primer caballero de Kazordoon. Ella es la responsable de enseñar a nuestros jóvenes guerreros a manejar un hacha.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:09:33.368673Z"
+  },
+  "npc.pydar.stdmod_19": {
+    "src_hash": "c0b0c902e32261591a2e9c638b9e891d",
+    "text": "Etzel es un verdadero maestro de los elementos. Es un modelo a seguir para nuestros jóvenes, jawoll.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:09:33.369210Z"
+  },
+  "npc.pydar.stdmod_2": {
+    "src_hash": "36bea9a9a6304a1344aa7b8c3ad98567",
+    "text": "Recibe así la chispa del fénix, peregrino.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:09:33.369594Z"
+  },
+  "npc.pydar.stdmod_20": {
+    "src_hash": "1de8b3a410c82376fc6b5b4e88b62001",
+    "text": "Él y su esposa dirigen la taberna Jolly Axeman.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:09:33.369996Z"
+  },
+  "npc.pydar.stdmod_21": {
+    "src_hash": "bbeb247c6520ab1ddd1174804b029d8f",
+    "text": "Él es un herrero. Si buscas armas y armaduras exquisitas, habla con él.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:09:33.370486Z"
+  },
+  "npc.pydar.stdmod_22": {
+    "src_hash": "833ab9e05a88d6299f427df31500ae48",
+    "text": "Ella y su marido dirigen la taberna Jolly Axeman.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:09:33.370885Z"
+  },
+  "npc.pydar.stdmod_23": {
+    "src_hash": "122b29b997521235aa949ecccc02574c",
+    "text": "Uzgod es un armero como los de las antiguas leyendas.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:09:33.371305Z"
+  },
+  "npc.pydar.stdmod_24": {
+    "src_hash": "9a52819802104e69d4082be8a08e663d",
+    "text": "Aunque hemos terminado con los llamados dioses, Durin, el primer enano en adquirir poderes divinos propios, es considerado un protector de nuestra raza.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:09:33.371855Z"
+  },
+  "npc.pydar.stdmod_25": {
+    "src_hash": "ff3175bcd0356587352e0633a69e0dd6",
+    "text": "A diferencia de los dioses, los elementos no utilizan a los mortales como juguetes. Una mente experta puede comprenderlos e incluso controlarlos hasta cierto punto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:09:33.372569Z"
+  },
+  "npc.pydar.stdmod_26": {
+    "src_hash": "3f3f39ca7c98878fb99f821f4f254947",
+    "text": "Los caminos de los dioses son incomprensibles para los mortales. Por otro lado, los elementos son fuerzas en bruto y pueden ser comprendidos y domesticados.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:09:33.373285Z"
+  },
+  "npc.pydar.stdmod_27": {
+    "src_hash": "66bce0059a2812871ffc48c18c67b979",
+    "text": "Puedes recibir el Escudo Espiritual en el Templo de Flor Blanca al sur de Thais.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:09:33.373769Z"
+  },
+  "npc.pydar.stdmod_28": {
+    "src_hash": "6d8f439f9eabfb85b08ab3470481fa7f",
+    "text": "Pregunta por el Fuego de los Soles en Suntower cerca de Ab'Dendriel.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:09:33.374294Z"
+  },
+  "npc.pydar.stdmod_29": {
+    "src_hash": "b6996e2048f8f38197dbf1adabf3eace",
+    "text": "Los druidas al norte de Carlin pueden brindarte el Abrazo de Tibia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:09:33.374738Z"
+  },
+  "npc.pydar.stdmod_31": {
+    "src_hash": "7de24ac3b74deabb7d0d9a9c8a7559f9",
+    "text": "No te ves tan mal. Lo siento, no puedo ayudarte. Pero si buscas protección adicional debes optar por el {pilgrimage} de las cenizas.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:09:33.375436Z"
+  },
+  "npc.pydar.stdmod_32": {
+    "src_hash": "740b2681d1559ae7b63d93916a3da604",
+    "text": "Soy el piromante principal de Kazordoon. Supongo que estás aquí para curarte o buscar una bendición.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:09:33.376220Z"
+  },
+  "npc.pydar.stdmod_33": {
+    "src_hash": "a5c42b3b24abbb54cad8dfec3ab59534",
+    "text": "Hay cinco bendiciones diferentes disponibles en cinco lugares sagrados. Estas bendiciones son: el blindaje de {spiritual}, la chispa del {phoenix}, el {embrace} de Tibia, el fuego del {suns} y la sabiduría de {solitude}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:09:33.377193Z"
+  },
+  "npc.pydar.stdmod_4": {
+    "src_hash": "3f3f39ca7c98878fb99f821f4f254947",
+    "text": "Los caminos de los dioses son incomprensibles para los mortales. Por otro lado, los elementos son fuerzas en bruto y pueden ser comprendidos y domesticados.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:09:33.378047Z"
+  },
+  "npc.pydar.stdmod_5": {
+    "src_hash": "122d409921ebc1968f3d00c0ed0366f6",
+    "text": "Soy el piromante principal de Kazordoon.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:10:02.946492Z"
+  },
+  "npc.pydar.stdmod_6": {
+    "src_hash": "1e7097f5f344a2f12ece906e7b7bf547",
+    "text": "Mi nombre es Pydar Firefist, Hijo del Fuego, de Savage Axes.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:10:02.946950Z"
+  },
+  "npc.pydar.stdmod_7": {
+    "src_hash": "7b99d516cdc6811d052d31d45095b0bf",
+    "text": "Pregunta por ahí. Hay mucho que hacer, jawoll.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:10:02.947345Z"
+  },
+  "npc.pydar.stdmod_9": {
+    "src_hash": "a41580bc11c741489e5273362787e491",
+    "text": "Es la cuarta edad de la llama amarilla.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:10:02.947701Z"
+  },
+  "npc.pydar.walkaway_msg_1": {
+    "src_hash": "56043323b6d3ccbbcb1b917776895412",
+    "text": "Que el fuego de tu corazón nunca se apague.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:10:02.948104Z"
+  },
+  "npc.pythius_the_rotten.stdmod_1": {
+    "src_hash": "2518fc6eff4483d6302f30aca7a7c5f1",
+    "text": "¿COMO MI TESORO? ¿QUIERES ELEGIR ALGO DE ÉL?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:10:02.948476Z"
+  },
+  "npc.pythius_the_rotten.stdmod_11": {
+    "src_hash": "3cffc8153c46c41643ea00462bd76ed0",
+    "text": "TENGO UNA MISIÓN PARA TI PERO NECESITAS MORIR PRIMERO Y REGRESAR COMO UNA CRIATURA {UNDEAD}. VUELVE A MÍ CUANDO LOGRASTE ESTA META.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:10:02.949015Z"
+  },
+  "npc.pythius_the_rotten.stdmod_12": {
+    "src_hash": "a4ae9c934670794148aef3c668f3fbb6",
+    "text": "TODO LO QUE LLEVAS CONTIGO TAMBIÉN LO PUEDES ENCONTRAR EN MI {TREASURE}. ¡¡¡TRAEME ALGO QUE NO TENGO!!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:10:02.949665Z"
+  },
+  "npc.pythius_the_rotten.stdmod_13": {
+    "src_hash": "3cffc8153c46c41643ea00462bd76ed0",
+    "text": "TENGO UNA MISIÓN PARA TI PERO NECESITAS MORIR PRIMERO Y REGRESAR COMO UNA CRIATURA {UNDEAD}. VUELVE A MÍ CUANDO LOGRASTE ESTA META.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:10:02.950204Z"
+  },
+  "npc.pythius_the_rotten.stdmod_14": {
+    "src_hash": "b09d447aed7ec6aa71ca5cd3b40171ab",
+    "text": "BENDICIÓN Y PERDIDA. HE ELEGIDO ESTA VIDA VOLUNTARIAMENTE Y NUNCA ME ARREPIENTO. MI {TREASURE} CRECE CADA DÍA.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:10:02.950693Z"
+  },
+  "npc.pythius_the_rotten.stdmod_2": {
+    "src_hash": "87a2efe200c7a992594838118a82dbc1",
+    "text": "ESTÁ BIEN. PERO PRIMERO QUE NADA QUIERO QUE ME TRAIGAS ALGO A CAMBIO. SORPRENDEME....Y SI ME GUSTA, PUEDES OBTENER LO QUE MERECES.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:10:02.951220Z"
+  },
+  "npc.pythius_the_rotten.stdmod_3": {
+    "src_hash": "88edb787e3df0394811741f5a4290e17",
+    "text": "¿HAS VISTO ESTOS ARTÍCULOS LEGENDARIOS ALLÍ? ¿¡¿QUIÉN PODRÍA NEGAR LA OPORTUNIDAD DE OBTENER UNO?!? ¿CUÁL ES TU RESPUESTA?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:10:02.951692Z"
+  },
+  "npc.pythius_the_rotten.stdmod_4": {
+    "src_hash": "4521738b62d62d1cbbfb7ac951bbf7fe",
+    "text": "TE CONCEDO ACCESO A LA MAZMORRA DEL NORTE. ALLÍ ENCONTRARÁS A ALGUNOS DE MIS HERMANOS VIVOS....PERO....CADA VEZ QUE QUIERAS ENTRAR TIENES QUE DARME ALGO PRECIOSO. ¿ESTÁ BIEN?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:10:02.952289Z"
+  },
+  "npc.pythius_the_rotten.stdmod_5": {
+    "src_hash": "4ef4631b0ce1997aaa797dc18dcea715",
+    "text": "COMO DESÉES. ¿QUÉ TIENES PARA OFRECER?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:10:02.952634Z"
+  },
+  "npc.pythius_the_rotten.stdmod_7": {
+    "src_hash": "8f7455a7edb7c5896d318ef9c45a3dbc",
+    "text": "¡ESTO NO VALE SER PARTE DE MI TESORO! TRÁEME ALGO MÁS.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:10:02.953036Z"
+  },
+  "npc.pythius_the_rotten.stdmod_8": {
+    "src_hash": "e845693156846f75fd6b5ffb87adbc18",
+    "text": "¡ESTO NO VALE SER PARTE DE MI TESORO! TRÁEME ALGO MÁS",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:10:02.953408Z"
+  },
+  "npc.quandons_ghost.greet_msg_2": {
+    "src_hash": "c1842b8adf2c3c30da0afd5d288d4cd0",
+    "text": "Él me asesinó. ¡No debería haber confiado en él! ¡El dinero! ¡Todo ese dinero me cegó! Al este traje sus cosas. En la noche y la oscuridad, cubierto por algún tipo de magia suya. Los minotauros no nos molestaron, como prometió. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:10:02.954302Z"
+  },
+  "npc.quandons_ghost.greet_msg_3": {
+    "src_hash": "19fd99a2bc04ca410cdcb2c5f70800fb",
+    "text": "Su... su verdadero nombre es Shargon y es algún tipo de sacerdote. Pertenece a una poderosa sociedad secreta y busca algo en su nombre. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:10:02.954983Z"
+  },
+  "npc.quandons_ghost.greet_msg_4": {
+    "src_hash": "cd3cbc8ead80092392d4333f6b83235f",
+    "text": "Llevamos sus cosas a un escondite, ¡lo marcaré en tu mapa! ¡Las cosas que he visto allí! ¡Cosas horribles, horribles! Huí, pero él me encontró y me mató. ¡Él me asesinó!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:10:02.955680Z"
+  },
+  "npc.queen_eloise.greet_1": {
+    "src_hash": "4434cc68ab79786c6ab35cafe93f0576",
+    "text": "Te saludo, mi leal {subject}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:10:02.956042Z"
+  },
+  "npc.queen_eloise.greet_2": {
+    "src_hash": "4434cc68ab79786c6ab35cafe93f0576",
+    "text": "Te saludo, mi leal {subject}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:10:02.956375Z"
+  },
+  "npc.queen_eloise.stdmod_10": {
+    "src_hash": "c24a965b2378318d1e91e55160c01ef6",
+    "text": "Soy la reina Eloise. Para ti es 'My Queen' o 'Your Majesty', por supuesto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:10:02.956828Z"
+  },
+  "npc.queen_eloise.stdmod_11": {
+    "src_hash": "38283eddfeb679ab61ddf9b5e71cc958",
+    "text": "No me importan los chismes como lo haría un hombre ingenuo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:10:02.957281Z"
+  },
+  "npc.queen_eloise.stdmod_12": {
+    "src_hash": "a9754d98d6893191012246dc5a384770",
+    "text": "¡Pronto todo el país será finalmente gobernado por mujeres!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:10:02.957686Z"
+  },
+  "npc.queen_eloise.stdmod_15": {
+    "src_hash": "9a71c335728cf04ddfc93a51ab948ead",
+    "text": "¿Vender? ¡Tu pregunta muestra que eres un miembro típico de tu género!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:10:02.958158Z"
+  },
+  "npc.queen_eloise.stdmod_16": {
+    "src_hash": "91f49979a4c8fbb0808ff02a5df48a0f",
+    "text": "Honramos a los dioses del bien en nuestra hermosa ciudad, especialmente a Crunor, por supuesto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:10:02.958761Z"
+  },
+  "npc.queen_eloise.stdmod_17": {
+    "src_hash": "353e5ab9feabaa57b8ad08da1872fe7e",
+    "text": "Todos los ciudadanos de Carlin son mis súbditos. Sin embargo, los veo más como mis hijos, especialmente la población masculina.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:10:02.959537Z"
+  },
+  "npc.queen_eloise.stdmod_18": {
+    "src_hash": "e3a3c4d8f129ad46a9e5feeff27859d8",
+    "text": "Esta bestia asustó a mi gato en mi última misión diplomática en esta ciudad asquerosa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:10:02.960318Z"
+  },
+  "npc.queen_eloise.stdmod_19": {
+    "src_hash": "324c5e59ce1323381f12cb9522c0a32b",
+    "text": "¡Él es el azote de todo el continente!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:10:02.960728Z"
+  },
+  "npc.queen_eloise.stdmod_20": {
+    "src_hash": "5066e0d3166e32b12a747a51527195be",
+    "text": "El tesoro real está escondido fuera del alcance de cualquier ladrón por medios mágicos.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:10:02.961206Z"
+  },
+  "npc.queen_eloise.stdmod_21": {
+    "src_hash": "770b541178a13bf84ed2a016421304bf",
+    "text": "¡Ve a cazarlos! ¡Para la reina y el país!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:10:02.961582Z"
+  },
+  "npc.queen_eloise.stdmod_22": {
+    "src_hash": "c6782c07bea8a36dbe69071527e602e4",
+    "text": "Visita la iglesia o los guardias de la ciudad en busca de ayuda.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:10:02.961948Z"
+  },
+  "npc.queen_eloise.stdmod_23": {
+    "src_hash": "cd1b56e15fd53b7ba4c1437db955180d",
+    "text": "Llamaré a héroes tan pronto como vuelva a surgir la necesidad.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:10:02.962425Z"
+  },
+  "npc.queen_eloise.stdmod_24": {
+    "src_hash": "b8c1a84f8f26e9f58422cd176d00b215",
+    "text": "Nuestra ciudad es rica y próspera.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:10:02.962776Z"
+  },
+  "npc.queen_eloise.stdmod_25": {
+    "src_hash": "4a0ba261fd25f267f3bc9ed438e28a88",
+    "text": "No quiero hablar de 'sewers'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:10:02.963128Z"
+  },
+  "npc.queen_eloise.stdmod_26": {
+    "src_hash": "d70dacf65e7025434b93097362da9534",
+    "text": "Las mazmorras son lugares donde los hombres se arrastran y buscan problemas.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:10:02.963545Z"
+  },
+  "npc.queen_eloise.stdmod_27": {
+    "src_hash": "49e37b1ca6d0875ed03b787ee62b5e5b",
+    "text": "No dudes en visitar las magníficas tiendas de nuestra localidad.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:10:02.963953Z"
+  },
+  "npc.queen_eloise.stdmod_5": {
+    "src_hash": "4434cc68ab79786c6ab35cafe93f0576",
+    "text": "Te saludo, mi leal {subject}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:13:27.480859Z"
+  },
+  "npc.queen_eloise.stdmod_6": {
+    "src_hash": "4434cc68ab79786c6ab35cafe93f0576",
+    "text": "Te saludo, mi leal {subject}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:13:27.481892Z"
+  },
+  "npc.thorwulf.stdmod_3": {
+    "src_hash": "990f29e6c803eaea0a39626a6268c80b",
+    "text": "Puedo enseñarte {healing spells}, {attack spells} y {support spells}. \\z\n\t\t¿Qué tipo de hechizo deseas aprender? \\z\n\t\tTambién puedes decirme para qué nivel te gustaría aprender un hechizo, si así lo prefieres.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:13:28.135382Z"
+  },
+  "npc.queen_eloise.stdmod_28": {
+    "src_hash": "84f661b926371624bb10821ab3606353",
+    "text": "No te preocupes por el tiempo en presencia de tu Reina.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:14:55.377769Z"
+  },
+  "npc.queen_eloise.stdmod_29": {
+    "src_hash": "dfadd040140eb927e6e7cd045e812e99",
+    "text": "Necesitamos la ayuda de héroes de vez en cuando. Incluso los machos resultan útiles de vez en cuando.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:14:55.378421Z"
+  },
+  "npc.queen_eloise.stdmod_30": {
+    "src_hash": "afae5f0a30bedb303bdbb8c769f7b358",
+    "text": "Los impuestos en Carlin no son altos, más un símbolo que un sacrificio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:14:55.379022Z"
+  },
+  "npc.queen_eloise.stdmod_31": {
+    "src_hash": "8d8083382cb524e100591e42d0ede130",
+    "text": "¡Soy la Reina, la única gobernante legítima del continente!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:14:55.379686Z"
+  },
+  "npc.queen_eloise.stdmod_32": {
+    "src_hash": "58155315f8b20542f4c9bac0c8c9c8a2",
+    "text": "Pregúntale a uno de los soldados sobre eso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:14:55.380088Z"
+  },
+  "npc.queen_eloise.stdmod_33": {
+    "src_hash": "4776cfebf59725844fba464be0623925",
+    "text": "Nuestros enemigos son numerosos. Tenemos que luchar contra monstruos viles y vigilar atentamente a este tonto rey del sur.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:14:55.380850Z"
+  },
+  "npc.queen_eloise.stdmod_34": {
+    "src_hash": "67edb7a93e64f6d94b9c8eea3dc7ea13",
+    "text": "¡Se atreven a rechazar mi reinado sobre ellos!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:14:55.381280Z"
+  },
+  "npc.queen_eloise.stdmod_35": {
+    "src_hash": "e1dbe0440f93bcf91d11894b80a74f73",
+    "text": "¿No es maravillosa nuestra ciudad? ¿Has notado los hermosos jardines en los tejados?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:14:55.381898Z"
+  },
+  "npc.queen_eloise.stdmod_36": {
+    "src_hash": "6aac21a5047561d0bca9220d9dfc2b3d",
+    "text": "Mis súbditos mantienen muchas tiendas excelentes. Ve y echa un vistazo a sus productos.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:14:55.382488Z"
+  },
+  "npc.queen_eloise.stdmod_39": {
+    "src_hash": "c66f0c7ca9ea310e6cf0e31852fa05a0",
+    "text": "No han preocupado a nuestra ciudad últimamente. Supongo que temen la ira de nuestros druidas.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:14:55.383105Z"
+  },
+  "npc.queen_eloise.stdmod_4": {
+    "src_hash": "cb08504357ab9f1858721fb27eca4c49",
+    "text": "Recuerdo esos uniformes, tenían una incrustación de camuflaje para que también se pudieran usar del revés. Enviaré algunas muestras de colores por correo al Sr. Postner.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:14:55.383832Z"
+  },
+  "npc.queen_eloise.stdmod_40": {
+    "src_hash": "c242c1efeac3c74998ef69d213f80814",
+    "text": "Los paladines son grandes cazadores.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:14:55.384201Z"
+  },
+  "npc.queen_eloise.stdmod_41": {
+    "src_hash": "75f2a243a087308034ac90ade3ed5010",
+    "text": "Es una pena que el Alto Paladin no resida en Carlin.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:14:55.384520Z"
+  },
+  "npc.queen_eloise.stdmod_42": {
+    "src_hash": "867db6ba10b40d2c40651a4df7808598",
+    "text": "Los caballeros de Carlin son los más valientes.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:14:55.384839Z"
+  },
+  "npc.queen_eloise.stdmod_43": {
+    "src_hash": "4b77c1dfeb6429edefaba571e2e572ad",
+    "text": "Los hechiceros tienen una pequeña isla para su gremio. Entonces, si explotan algo, no quemará toda la ciudad hasta convertirla en ruinas.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:14:55.385469Z"
+  },
+  "npc.queen_eloise.stdmod_44": {
+    "src_hash": "d30517e87e7430029fdd91946ef703a5",
+    "text": "Los druidas de Carlin son nuestros protectores y asesores. Sus poderes nos proporcionan riqueza y comida.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:14:55.385822Z"
+  },
+  "npc.queen_eloise.stdmod_45": {
+    "src_hash": "81128f5685319fb36b9d881f2dd61f6b",
+    "text": "Carlin es un centro de las fuerzas del bien, por supuesto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:14:55.386134Z"
+  },
+  "npc.queen_eloise.stdmod_46": {
+    "src_hash": "bab30677319a128958801c8add1cc722",
+    "text": "Las fuerzas del mal tienen un firme control sobre esta insignificante ciudad del sur.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:14:55.386809Z"
+  },
+  "npc.queen_eloise.stdmod_47": {
+    "src_hash": "e11c97087be60b98a7b629c92d253eb2",
+    "text": "El orden que Crunor le da al mundo es esencial para la supervivencia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:14:55.387262Z"
+  },
+  "npc.queen_eloise.stdmod_48": {
+    "src_hash": "ac6f75a323f8fe0428803f1a9b4f7eb2",
+    "text": "El caos es común en las regiones del sur, donde permiten que un hombre reine sobre un reino.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:14:55.387777Z"
+  },
+  "npc.queen_eloise.stdmod_49": {
+    "src_hash": "a961d65321a5de4cc59a628a5485a84d",
+    "text": "Un cuento de hombres... eso significa 'nonsense', por supuesto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:14:55.388197Z"
+  },
+  "npc.queen_eloise.stdmod_7": {
+    "src_hash": "4998d9763d0d739e3e25cea8624f6ee0",
+    "text": "Por supuesto, los uniformes de nuestros guardias y soldados son de una calidad incomparable.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:14:55.388801Z"
+  },
+  "npc.queen_eloise.stdmod_8": {
+    "src_hash": "b5f0766a8dd47f5eae046fbb24cf28c7",
+    "text": "Soy {Queen} Eloise. Es mi deber reinar sobre este maravilloso {city} y el {lands} del norte.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:14:55.389476Z"
+  },
+  "npc.queen_eloise.stdmod_9": {
+    "src_hash": "738d20effb55d8e9a752b59f61a33c21",
+    "text": "Las mujeres intentamos llevar justicia y sabiduría a todos, incluso a los hombres.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:14:55.389975Z"
+  },
+  "npc.quentin.stdmod_3": {
+    "src_hash": "b2ba666a039c1435d9307769c23de943",
+    "text": "Ah, veo que trajiste una estaca contigo. ¿Estás listo para recibir mi línea de oración entonces?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:14:55.390566Z"
+  },
+  "npc.rabaz.greet_msg_1": {
+    "src_hash": "8337e6f4e5bb940c6eb437da998a3403",
+    "text": "¡Ah, un cliente! No dude en explorar mis productos, |PLAYERNAME|.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:14:55.391013Z"
+  },
+  "npc.rabaz.multi_1": {
+    "src_hash": "d7a717f011e26982a0646a27c7b492d0",
+    "text": "Ah, gracias. Ahora mira esa textura y ese fino color, simplemente maravilloso. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:14:55.391626Z"
+  },
+  "npc.rabaz.multi_10": {
+    "src_hash": "5bc6fa70fa0edec94278164146a4991b",
+    "text": "Si lo pierdes tendré que escribir uno nuevo y volver a colocarlo allí, lo que sin duda me llevará un tiempo. Así que mantente atento en tus viajes. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:14:55.392329Z"
+  },
+  "npc.rabaz.multi_11": {
+    "src_hash": "5e31d5e543211b7b3725e81d346f2679",
+    "text": "Una vez que encuentre lo que necesito, lo mejor es utilizar un cuchillo para cortar y recoger con cuidado una hoja o un trozo de su tegumento y presionarlo directamente debajo de la entrada correspondiente en mi almanaque botánico. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:14:55.393120Z"
+  },
+  "npc.rabaz.multi_12": {
+    "src_hash": "b02df918f2d9315e2477d44b2b76aa48",
+    "text": "Simplemente regresa conmigo después de haberlo hecho y discutiremos tu recompensa. ¿Qué dices, te apuntas?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:14:55.393696Z"
+  },
+  "npc.rabaz.multi_2": {
+    "src_hash": "84f2ade2e4774d19598a5858296c47e1",
+    "text": "Espero que el sol en la estepa no te haya agotado demasiado. Neurosis de guerra. Un enemigo peligroso en el mundo de la ciencia y la exploración de campo. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:14:55.394376Z"
+  },
+  "npc.rabaz.multi_3": {
+    "src_hash": "74ee807a708f198fdf15160e49c90560",
+    "text": "Aquí siempre llevo este cómodo sombrero cuando viajo, llévatelo. Quizás le resulte útil en futuros reconocimientos en Zao. Nuevamente tienes mi agradecimiento, amigo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:14:55.395092Z"
+  },
+  "npc.rabaz.multi_4": {
+    "src_hash": "0f08b497028add57910b4fb66daca50f",
+    "text": "Sí, de hecho hay un problema menor con el que podría necesitar tu ayuda. Siempre fui amiga de la naturaleza y no fue hace poco que descubrí los placeres de las plantas, de los crecimientos, de toda la flora que nos rodea. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:14:55.395931Z"
+  },
+  "npc.rabaz.multi_5": {
+    "src_hash": "8844881b45c3a4b0d0d069acc9e185d9",
+    "text": "Botánica mi amigo. El estudio de las plantas es de gran importancia para nuestro futuro. Muchas de las pociones de las que dependemos a menudo están hechas de plantas, ¿sabes? Las plantas pueden ayudarnos a curar nuestras heridas, curarnos de enfermedades o lesiones. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:14:55.396860Z"
+  },
+  "npc.rabaz.multi_6": {
+    "src_hash": "84c82f4ef1620b05a318b351d448a891",
+    "text": "Actualmente estoy escribiendo una recopilación excesiva de todo el conocimiento que he reunido durante mi estancia aquí en Farmine y espero publicarlo pronto como 'Rabaz' Almanaque íntegro de botánica'. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:14:55.397433Z"
+  },
+  "npc.rabaz.multi_7": {
+    "src_hash": "0cf0ae00bda560325d8cf16d90c03f49",
+    "text": "Sin embargo, para completar mi epítome botánico sobre Zao, necesitaría que alguien entrara en estas peligrosas tierras. Alguien capaz de acercarse a los especímenes que yo. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:14:55.398204Z"
+  },
+  "npc.rabaz.multi_8": {
+    "src_hash": "77c0bb92ff3e7f869fa7d0817d61f9e8",
+    "text": "Y aquí es donde entras tú. Hay dos especies extremadamente raras de las que necesito muestras. Por lo general, no es fácil de encontrar, pero no debería ser necesario aventurarse demasiado en Zao para encontrarlos. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:14:55.399059Z"
+  },
+  "npc.rabaz.multi_9": {
+    "src_hash": "a8c89ee8e016d738d63b20df5b94e99f",
+    "text": "Explora las afueras anteriores de Zao, usa mi almanaque y encuentra los dos especímenes a los que les faltan muestras en sus páginas. El almanaque se puede encontrar en un cofre en mi almacén, al lado de mi tienda. Es la puerta de allí. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:14:55.400212Z"
+  },
+  "npc.rabaz.say_2": {
+    "src_hash": "acc93827a372299e5f208d19423946bf",
+    "text": "¿Sí? ¡Sí! ¡Ese es el entusiasmo que necesito! Recuerde traer un cuchillo afilado para recolectar las muestras, las plantas, incluso las plantas deformadas y mutadas, son muy sensibles, ¿sabe? Vete y ten cuidado, Zao no es lugar para los débiles de corazón.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:15:31.634927Z"
+  },
+  "npc.rabaz.say_3": {
+    "src_hash": "936808920c076eb72b6635b0e100b70a",
+    "text": "Oh, no tienes mi libro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:15:31.635411Z"
+  },
+  "npc.rachel.greet_msg_1": {
+    "src_hash": "bacf2cb62beee7c4863d2324c958a97b",
+    "text": "¡Bienvenido |PLAYERNAME|! ¿Cuál es tu necesidad?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:15:31.636217Z"
+  },
+  "npc.rachel.stdmod_1": {
+    "src_hash": "6e037fa401541c305d45d3d6134d6a2e",
+    "text": "Bien, entonces navega por todos mis productos.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:15:31.636728Z"
+  },
+  "npc.rafzan.stdmod_1": {
+    "src_hash": "251720d72a07592c0fa0b98d2235ade6",
+    "text": "¿Estás aquí para realizar una tarea o para informar que has terminado la tarea?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:15:31.637213Z"
+  },
+  "npc.rafzan.stdmod_10": {
+    "src_hash": "d3644dc71d70d158ea713728628fcdfe",
+    "text": "Son malos y crueles. El humilde duende rara vez comercia con ellos. Preferirían matarme, pobrecito, si no son demasiado codiciosos por cosas que sólo yo puedo conseguir. Aún así, me lo roban por unas cuantas monedas de repuesto y no hay ninguna ganancia para el pobre duende.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:15:31.638182Z"
+  },
+  "npc.rafzan.stdmod_11": {
+    "src_hash": "14606cf4f67ac7f12e6990e3dc23946e",
+    "text": "Mi trabajo de comerciante es. Yo comercio con todo tipo de cosas. Sin embargo, no soy un buen comerciante, ¡así que obtienes todo increíblemente barato! Podrías pensar que estoy loco, pero por favor no estafen demasiado al pobre duende. ¡Tengo cuatro o cinco esposas y docenas de hijos que alimentar!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:15:31.639212Z"
+  },
+  "npc.rafzan.stdmod_12": {
+    "src_hash": "aa9a9bf5bfe444630262168c53d99bd0",
+    "text": "Los humanos son tan inteligentes. Mucho, mucho más inteligente que el pobre y estúpido duende. Tienen una gran ciudad rica. Duende vive aquí pobre y hambriento. Estoy tan impresionado por ustedes, humanos fuertes e inteligentes. Hay mucho que aprender de ti. El pobre duende sólo ve la bonita ciudad desde lejos. El pobre duende tiene demasiado miedo para ir allí.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:15:31.640378Z"
+  },
+  "npc.rafzan.stdmod_13": {
+    "src_hash": "d23379cfa714b3546e277f72f281cc7a",
+    "text": "He visto una moneda de oro una o dos veces. Tan brillante y reluciente que me duelen los pobres ojos. ¡Seguramente eres un humano increíblemente rico que tiene incluso tres o cuatro monedas a la vez! ¿Quizás quieras cambiarlos por algunas cosas que te ofrezco? Simplemente no me robes demasiado, pequeño duende estúpido, no tienes idea de lo que valen las cosas... pareces honesto, seguramente pagas un precio justo como te pido y dices si es demasiado barato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:15:31.641704Z"
+  },
+  "npc.rafzan.stdmod_14": {
+    "src_hash": "d215a3885a4a17177dec9ad51e39560a",
+    "text": "Los peludos son tipos extraños. Siempre coleccionando cosas y esas cosas. No es fácil hacerlos compartir, oh no hay ganancia por poco, pobre de mí. Construyen guaridas subterráneas que pueden extenderse bastante. Se rumorea que los corym tienen extraños túneles que conectan sus diferentes redes en todo el mundo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:15:31.642811Z"
+  },
+  "npc.rafzan.stdmod_2": {
+    "src_hash": "fb9ded7a3b2ee555df2e2dd9e5b9b818",
+    "text": "Mi humilde nombre es Rafzan. Buen nombre de duende que significa persona honesta, generosa y amable, ¡lo juro!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:15:31.643611Z"
+  },
+  "npc.rafzan.stdmod_3": {
+    "src_hash": "7f930c26646fd6c49a2942a3ae72e61b",
+    "text": "La mayoría de los duendes tienen tanto miedo de todo que luchan contra todo. Yo diferente. Yo solo quiero intercambio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:15:31.644259Z"
+  },
+  "npc.rafzan.stdmod_4": {
+    "src_hash": "a7f3e289ae7deb40571d69630b185978",
+    "text": "Ustedes los humanos son tan grandes, fuertes, inteligentes y hermosos. Realmente me siento pequeña y verde a tu lado. Debe ser muy divertido ser humano. ¡Seguramente siempre obtendrás ganancias!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:15:31.644969Z"
+  },
+  "npc.rafzan.stdmod_5": {
+    "src_hash": "11153c75f1e2ae0d029621d8b2a03cba",
+    "text": "Para ser honesto, amigo humano, solo escuché sobre eso, nunca vi uno. Me imagino que es algo lindo y tierno.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:15:31.645574Z"
+  },
+  "npc.rafzan.stdmod_6": {
+    "src_hash": "68c3c8e8f6b5a55ab3f6963bb68e67cc",
+    "text": "El pantano es horrible. Poco a poco está devorando la salud del pobre duende. No hay ningún beneficio aquí en absoluto. Moriré pobre y desesperada, probablemente devorada por mosquitos gigantes.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:15:31.646328Z"
+  },
+  "npc.rafzan.stdmod_7": {
+    "src_hash": "a76f1eef7a62b64a04471e1a28dbd25f",
+    "text": "Los barbudos son desagradables. Siempre quiero matar al pequeño duende. Ningún comercio en absoluto. No es bueno, no es bueno.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:15:31.646867Z"
+  },
+  "npc.rafzan.stdmod_8": {
+    "src_hash": "9b81f7b611bece77d4e1c001770cb61e",
+    "text": "Hay tanto que hacer y tan poca ayuda. Mi pobre duende necesita ayuda desesperadamente. Tengo algunas tareas que debo hacer. Puedo ofrecerte todo el dinero que gané si solo me ayudas un poco con cosas que son fáciles para un ser humano fuerte e inteligente pero imposibles para mi pobre y pequeño yo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:15:31.648156Z"
+  },
+  "npc.rafzan.stdmod_9": {
+    "src_hash": "e28d61958c84c56df0e3652c46e9b794",
+    "text": "¡Escuché que Thais es una gran ciudad con rey! Debe ser fuerte e inteligente para convertirse en el jefe de todos los humanos. No puedo imaginar a cuántas personas tienes que derrotar para convertirte en el rey de todos los humanos. Seguramente obtiene muchas ganancias en su bonita ciudad.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:15:31.649181Z"
+  },
+  "npc.rahkem.stdmod_1": {
+    "src_hash": "25fcd9c3e748332bd0dff5b0f6671af7",
+    "text": "Por favor, no tan fuerte, no tan fuerte. Algunos de nosotros estamos tratando de descansar en paz aquí.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:15:31.650231Z"
+  },
+  "npc.rahkem.stdmod_16": {
+    "src_hash": "58f31fd90ca631a2a8ccf259b7bbf8dd",
+    "text": "Así que recibe mi oración: 'Let there be power and compassion'. Ahora, lleva tu apuesta a Brewster en Port Hope para la siguiente línea de la oración. Le informaré qué hacer.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:15:31.651372Z"
+  },
+  "npc.rahkem.stdmod_18": {
+    "src_hash": "ef0d8eb3bc9d4806cf7874455616b286",
+    "text": "Deberías visitar Brewster en Port Hope ahora.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:15:31.651955Z"
+  },
+  "npc.rahkem.voice_1": {
+    "src_hash": "25fcd9c3e748332bd0dff5b0f6671af7",
+    "text": "Por favor, no tan fuerte, no tan fuerte. Algunos de nosotros estamos tratando de descansar en paz aquí.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:15:31.652703Z"
+  },
+  "npc.rapanaio.stdmod_1": {
+    "src_hash": "526f991888a3a8cc608bc584b2733a6a",
+    "text": "¡Ahora que hemos llegado, no debes perder el tiempo y abrirte camino hasta la guarida del mal y destruir a su amo antes de que sea demasiado tarde!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:15:31.653682Z"
+  },
+  "npc.rapanaio.stdmod_2": {
+    "src_hash": "e17c3c4db70defd980af0789fd34b047",
+    "text": "Mi humilde nombre es Rapanaio. Buen nombre de duende que significa persona honesta, generosa y amable, ¡lo juro!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:15:31.654457Z"
+  },
+  "npc.rapanaio_boat.greet_msg_1": {
+    "src_hash": "f7d4061eb3bdfbee4008f67d0f7633d0",
+    "text": "Bienvenido a bordo, |PLAYERNAME|. Puedo viajar contigo a {evil isle}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:15:31.654925Z"
+  },
+  "npc.rapanaio_boat.stdmod_4": {
+    "src_hash": "598006f250d2c2ac5b6a5c075a95dcd7",
+    "text": "Mi nombre es Rapanaio de la Línea Royal Tibia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:15:31.655259Z"
+  },
+  "npc.rapanaio_isle_of_evil.greet_msg_1": {
+    "src_hash": "9cab5a180a172e3d504af33823b5f37f",
+    "text": "Bienvenido a bordo, |PLAYERNAME|. Puedo viajar contigo a {kazordoon}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:15:31.655687Z"
+  },
+  "npc.rapanaio_isle_of_evil.stdmod_4": {
+    "src_hash": "598006f250d2c2ac5b6a5c075a95dcd7",
+    "text": "Mi nombre es Rapanaio de la Línea Royal Tibia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:15:31.656082Z"
+  },
+  "npc.rashid.farewell_msg_1": {
+    "src_hash": "b5d7b3da558b7544621617c86c1611d7",
+    "text": "Adiós, |PLAYERNAME|, que los vientos guíen tu camino.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:15:31.656496Z"
+  },
+  "npc.rashid.greet_msg_1": {
+    "src_hash": "dd6d3e1439b14785d2e8d63021ae836c",
+    "text": "¡Ah, un cliente! ¡Sea saludado, |PLAYERNAME|!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:15:31.656905Z"
+  },
+  "npc.rashid.multi_1": {
+    "src_hash": "2bcebfb07ac8fc2c034802e9f8d6bc15",
+    "text": "Amigo mío, parece que ya has aprendido mucho sobre el arte del trading. Creo que eres más que digno de convertirte en un comerciante reconocido. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:15:31.657557Z"
+  },
+  "npc.rashid.multi_10": {
+    "src_hash": "4277fcbe3bd84803aa5ec76f06dafee4",
+    "text": "Bueno, es bueno escuchar eso. De usted, como mi comerciante y repartidor, espero algo más que traerme queso apestoso. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:15:31.658153Z"
+  },
+  "npc.rashid.multi_11": {
+    "src_hash": "8d3e86ff0a0bdfa0d448f885cd5f9c0a",
+    "text": "Me pregunto si son capaces de entregar productos tan frágiles que casi se rompen al mirarlos. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:15:31.658692Z"
+  },
+  "npc.rashid.multi_12": {
+    "src_hash": "9709c47cf8e2864c40d2a13ce19a84cf",
+    "text": "He encargado un jarrón élfico especial de Briasol en Ab'Dendriel. Consíguelo de él y ni siquiera lo toques, solo tráemelo mientras estoy en Ankrahmun. ¿Todo claro y entendido?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:15:31.659343Z"
+  },
+  "npc.rashid.multi_13": {
+    "src_hash": "6978beef481f1f40a9cce841e36c04e5",
+    "text": "Bueno, es bueno escuchar eso. De usted, como mi comerciante y repartidor, espero algo más que llevar paquetes pesados. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:15:31.659957Z"
+  },
+  "npc.rashid.multi_14": {
+    "src_hash": "c08951c6b2e6da77eca87456c9587496",
+    "text": "También es necesario ser rápido y entregar los productos a tiempo. He pedido una rueda de queso muy especial hecha con leche Darashian. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:15:31.660517Z"
+  },
+  "npc.rashid.multi_15": {
+    "src_hash": "5eb409d967f4b2ad5b2ed17f5928b807",
+    "text": "Desgraciadamente, las altas temperaturas del desierto hacen que se pudra muy rápido, por lo que no debe permanecer demasiado tiempo al sol. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:15:31.661196Z"
+  },
+  "npc.rashid.multi_16": {
+    "src_hash": "3991d2a5104756edb5f0d3970cc2127a",
+    "text": "También me temo que no podréis utilizar los barcos por el olor del queso. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:15:31.661700Z"
+  },
+  "npc.rashid.multi_17": {
+    "src_hash": "b4d33c15835b8fae697e25f36d8f30c5",
+    "text": "Por favor, consigue el queso de Miraia y tráemelo mientras estoy en Port Hope. ¿Todo claro y entendido?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:15:31.662459Z"
+  },
+  "npc.rashid.multi_18": {
+    "src_hash": "935fd26590d5f18781ca035ee355aa3c",
+    "text": "Muy bien, es bueno escucharlo. De usted, como mi comerciante y repartidor, espero más que encontrar artículos raros. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:15:31.663074Z"
+  },
+  "npc.rashid.multi_19": {
+    "src_hash": "bdd15f42bc27fedc998b0121f44eae41",
+    "text": "También necesitas poder transportar mercancías pesadas, los débiles no llegarán muy lejos aquí. He pedido un paquete especial de Edron. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:15:31.663631Z"
+  },
+  "npc.rashid.multi_2": {
+    "src_hash": "77c4e4bf3c40f979221f885289c28680",
+    "text": "Sólo hay un pequeño favor que te pediría... algo personal, en realidad, perdona mi atrevimiento. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:15:31.664229Z"
+  },
+  "npc.rashid.multi_20": {
+    "src_hash": "42c707aa394a1ef889f64f0e732cb801",
+    "text": "Recógelo de Willard y tráemelo mientras estoy en Liberty Bay. ¿Todo claro y entendido?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:15:31.664702Z"
+  },
+  "npc.rashid_custom.farewell_msg_1": {
+    "src_hash": "b5d7b3da558b7544621617c86c1611d7",
+    "text": "Adiós, |PLAYERNAME|, que los vientos guíen tu camino.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:21:55.286693Z"
+  },
+  "npc.rashid_custom.greet_msg_1": {
+    "src_hash": "dd6d3e1439b14785d2e8d63021ae836c",
+    "text": "¡Ah, un cliente! ¡Sea saludado, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:21:55.287740Z"
+  },
+  "npc.rashid_custom.multi_1": {
+    "src_hash": "2bcebfb07ac8fc2c034802e9f8d6bc15",
+    "text": "Amigo mío, parece que ya has aprendido mucho sobre el arte del trading. Creo que eres más que digno de convertirte en un comerciante reconocido. ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:21:55.289239Z"
+  },
+  "npc.rashid_custom.multi_11": {
+    "src_hash": "4277fcbe3bd84803aa5ec76f06dafee4",
+    "text": "Bueno, es bueno escuchar eso. De usted, como mi comerciante y repartidor, espero algo más que traerme queso apestoso. ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:21:55.290952Z"
+  },
+  "npc.rashid_custom.multi_12": {
+    "src_hash": "8d3e86ff0a0bdfa0d448f885cd5f9c0a",
+    "text": "Me pregunto si son capaces de entregar productos tan frágiles que casi se rompen al mirarlos. ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:21:55.292131Z"
+  },
+  "npc.rashid_custom.multi_13": {
+    "src_hash": "9709c47cf8e2864c40d2a13ce19a84cf",
+    "text": "He encargado un jarrón élfico especial de Briasol en Ab'Dendriel. Consíguelo de él y ni siquiera lo toques, solo tráemelo mientras estoy en Ankrahmun. ¿Todo claro y entendido?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:21:55.293700Z"
+  },
+  "npc.rashid_custom.multi_14": {
+    "src_hash": "6978beef481f1f40a9cce841e36c04e5",
+    "text": "Bueno, es bueno escuchar eso. De usted, como mi comerciante y repartidor, espero algo más que llevar paquetes pesados. ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:21:55.295049Z"
+  },
+  "npc.rashid_custom.multi_15": {
+    "src_hash": "c08951c6b2e6da77eca87456c9587496",
+    "text": "También es necesario ser rápido y entregar los productos a tiempo. He pedido una rueda de queso muy especial hecha con leche Darashian. ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:21:55.296589Z"
+  },
+  "npc.rashid_custom.multi_16": {
+    "src_hash": "5eb409d967f4b2ad5b2ed17f5928b807",
+    "text": "Desgraciadamente, las altas temperaturas del desierto hacen que se pudra muy rápido, por lo que no debe permanecer demasiado tiempo al sol. ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:21:55.297919Z"
+  },
+  "npc.rashid_custom.multi_17": {
+    "src_hash": "3991d2a5104756edb5f0d3970cc2127a",
+    "text": "También me temo que no podréis utilizar los barcos por el olor del queso. ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:21:55.299207Z"
+  },
+  "npc.rashid_custom.multi_18": {
+    "src_hash": "b4d33c15835b8fae697e25f36d8f30c5",
+    "text": "Por favor, consigue el queso de Miraia y tráemelo mientras estoy en Port Hope. ¿Todo claro y entendido?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:21:55.300350Z"
+  },
+  "npc.rashid_custom.multi_19": {
+    "src_hash": "935fd26590d5f18781ca035ee355aa3c",
+    "text": "Muy bien, es bueno escucharlo. De usted, como mi comerciante y repartidor, espero más que encontrar artículos raros. ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:21:55.301671Z"
+  },
+  "npc.rashid_custom.multi_2": {
+    "src_hash": "77c4e4bf3c40f979221f885289c28680",
+    "text": "Sólo hay un pequeño favor que te pediría... algo personal, en realidad, perdona mi atrevimiento. ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:21:55.302935Z"
+  },
+  "npc.rashid_custom.multi_20": {
+    "src_hash": "bdd15f42bc27fedc998b0121f44eae41",
+    "text": "También necesitas poder transportar mercancías pesadas, los débiles no llegarán muy lejos aquí. He pedido un paquete especial de Edron. ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:21:55.304110Z"
+  },
+  "npc.rashid_custom.multi_21": {
+    "src_hash": "42c707aa394a1ef889f64f0e732cb801",
+    "text": "Recógelo de Willard y tráemelo mientras estoy en Liberty Bay. ¿Todo claro y entendido?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:21:55.305375Z"
+  },
+  "data.otservbr.global.npc.esrik.L172.1134": {
+    "src_hash": "ff95be6fc5bad950efcdd88276866ceb",
+    "text": "Hola |PLAYERNAME| y bienvenido a mi pequeña fragua.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.612225Z"
+  },
+  "data.otservbr.global.npc.eustacio.L61.180": {
+    "src_hash": "98f3c34590e4f06e26ada187b435d360",
+    "text": "Hola mi amigo. Qué placer verte, incluso en un día ajetreado. Puedes comprobar tu estado o preguntarme sobre la ubicación de las redadas en curso.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.616388Z"
+  },
+  "data.otservbr.global.npc.ezebeth.L118.93": {
+    "src_hash": "c670a71dc9166a3109f2ba824b9b5fc1",
+    "text": "¡Hola! Supongo que estás aquí por un {mission}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.621565Z"
+  },
+  "data.otservbr.global.npc.fa.hradin.L138.1293": {
+    "src_hash": "54125fbcb905788a203c25152ce56f1b",
+    "text": "Adiós, humano. Siempre te recordaré. A menos que te olvide, claro.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.623280Z"
+  },
+  "data.otservbr.global.npc.fa.hradin.L139.1294": {
+    "src_hash": "54125fbcb905788a203c25152ce56f1b",
+    "text": "Adiós, humano. Siempre te recordaré. A menos que te olvide, claro.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.625116Z"
+  },
+  "data.otservbr.global.npc.faloriel.L90.1317": {
+    "src_hash": "ff27ed07c1861e5d20958b05901228dd",
+    "text": "Saludos, querido invitado y bienvenido a mi tienda {potion}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.629851Z"
+  },
+  "data.otservbr.global.npc.farhilorn.of.the.winter.court.L83.1006": {
+    "src_hash": "1d4aed09bf4b360d0fe917e2de3b88d4",
+    "text": "Hola luchador. Supongo que estás aquí para {fight} por nuestro noble {cause}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.633073Z"
+  },
+  "data.otservbr.global.npc.feizuhl.L59.360": {
+    "src_hash": "fd3d0ca55545e2ddeaee117f819e7179",
+    "text": "Llorado peregrino en carne y hueso y bienvenido a la mueblería.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.636881Z"
+  },
+  "data.otservbr.global.npc.feizuhl.L60.361": {
+    "src_hash": "43a2e4f95e5ae7de6833153915380c4e",
+    "text": "Échale un vistazo. La mayoría de los muebles vienen en prácticos kits. Utilízalos en tu casa para montar los muebles. ¿Quieres ver sólo un determinado tipo de mueble?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.640876Z"
+  },
+  "data.otservbr.global.npc.fenbala.L85.521": {
+    "src_hash": "751dae74b8bd3077f153231056399027",
+    "text": "¡VIVA LA REINA! ¡Puedes irte ahora!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.644444Z"
+  },
+  "data.otservbr.global.npc.fenech.L169.1388": {
+    "src_hash": "3db673da51407607f7374e85fb546aed",
+    "text": "Llorado peregrino en carne y hueso y bienvenido a la tienda de magia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.646141Z"
+  },
+  "data.otservbr.global.npc.fenech.L170.1389": {
+    "src_hash": "58aaadd7d4edadde7c609e944ce2f906",
+    "text": "Que la iluminación sea tu camino.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.647629Z"
+  },
+  "data.otservbr.global.npc.fenech.L171.1390": {
+    "src_hash": "58aaadd7d4edadde7c609e944ce2f906",
+    "text": "Que la iluminación sea tu camino.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.649014Z"
+  },
+  "data.otservbr.global.npc.fiona.L61.819": {
+    "src_hash": "017c8092c4c729f7890542abb95d5426",
+    "text": "Buenos días, |PLAYERNAME|. Espero que traigas mucho {magical ingredients} contigo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.657413Z"
+  },
+  "data.otservbr.global.npc.fiona.L62.820": {
+    "src_hash": "d22d25583f0b1de590010f2d40b39f92",
+    "text": "Adiós y por favor vuelve pronto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.659102Z"
+  },
+  "data.otservbr.global.npc.fiona.L63.821": {
+    "src_hash": "d22d25583f0b1de590010f2d40b39f92",
+    "text": "Adiós y por favor vuelve pronto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.660625Z"
+  },
+  "data.otservbr.global.npc.fiona.L64.822": {
+    "src_hash": "002e4dfefafb258208d6c4b110f2099e",
+    "text": "Claro, echa un vistazo. Aparte de eso, también compro algunas de las posesiones de jefes y señores demonios famosos. Pregúntame si encuentras algo interesante.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.663100Z"
+  },
+  "data.otservbr.global.npc.florentine.L59.579": {
+    "src_hash": "184ef8a0a9052ac443338e263263ea49",
+    "text": "Bienvenido, |PLAYERNAME|. ¿Qué puedo hacer por ti?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.667922Z"
+  },
+  "data.otservbr.global.npc.frafnar.L92.107": {
+    "src_hash": "a7dc2110e3ccad0287415232d7550f4c",
+    "text": "¿No ves que estoy intentando escribir un poema? <sighs> Entonces, ¿cuál es el problema?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.672807Z"
+  },
+  "data.otservbr.global.npc.frans.L130.252": {
+    "src_hash": "0544ac07624071c0d88d821ab0a1f9f7",
+    "text": "¡Saludo, Simula! ¿Cuál es tu necesidad?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.674353Z"
+  },
+  "data.otservbr.global.npc.frederik.L153.759": {
+    "src_hash": "de9745115201ef028dffb3bf12fdd602",
+    "text": "Hola y bienvenidos a mi pequeña tienda de magia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.676418Z"
+  },
+  "data.otservbr.global.npc.freezhild.L80.1296": {
+    "src_hash": "2421dcbda78ddbe68998b2c69cedfd15",
+    "text": "Espero que tengas un día frío, amigo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.682458Z"
+  },
+  "data.otservbr.global.npc.freezhild.L81.1297": {
+    "src_hash": "2421dcbda78ddbe68998b2c69cedfd15",
+    "text": "Espero que tengas un día frío, amigo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.685338Z"
+  },
+  "data.otservbr.global.npc.freezhild.L82.1298": {
+    "src_hash": "f0c3959750f0568d0e1a58f680a3726a",
+    "text": "Bienvenido a mi genial hogar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.687975Z"
+  },
+  "data.otservbr.global.npc.frodo.L107.970": {
+    "src_hash": "9de521411dc9efd33e894a0f848a5e01",
+    "text": "Bienvenido a la cabaña de Frodo. ¿Has oído hablar del {news}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.691120Z"
+  },
+  "data.otservbr.global.npc.frodo.L108.971": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Por favor regresa de vez en cuando.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.693806Z"
+  },
+  "data.otservbr.global.npc.frodo.L109.972": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Por favor regresa de vez en cuando.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.696814Z"
+  },
+  "data.otservbr.global.npc.frosty.L148.1121": {
+    "src_hash": "4ecf3c813ae77e18f6bc627b684b07ce",
+    "text": "¡No, no puedes quedarte con mi nariz! Si necesita un {carrot}, ¡vaya al mercado o simplemente consiga uno! ¿O viniste a traerme un {percht skull}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.699833Z"
+  },
+  "data.otservbr.global.npc.gabel.L182.1216": {
+    "src_hash": "1ea1cceeb0403110ed0c10a168ef3913",
+    "text": "Adiós, extraño. ¡Que Uman abra vuestras mentes y vuestros corazones a la sabiduría de Daraman!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.701906Z"
+  },
+  "data.otservbr.global.npc.gabel.L183.1217": {
+    "src_hash": "1ea1cceeb0403110ed0c10a168ef3913",
+    "text": "Adiós, extraño. ¡Que Uman abra vuestras mentes y vuestros corazones a la sabiduría de Daraman!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.703971Z"
+  },
+  "data.otservbr.global.npc.gail.L58.1476": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "¿Cómo podría ayudarte?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.705655Z"
+  },
+  "data.otservbr.global.npc.gail.L61.1477": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "¿Cómo podría ayudarte?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.707130Z"
+  },
+  "data.otservbr.global.npc.gail.L64.1478": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "¿Cómo podría ayudarte?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.708657Z"
+  },
+  "data.otservbr.global.npc.galuna.L59.1204": {
+    "src_hash": "17e44e52564b6c011e931eddf5c008cd",
+    "text": "Oh, por favor entra, |PLAYERNAME|. ¿Qué necesitas? ¿Armas a distancia? Vendo muchos de ellos.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.711862Z"
+  },
+  "data.otservbr.global.npc.gamel.L103.431": {
+    "src_hash": "2c06b22f948013cb7c9cc96ca316478c",
+    "text": "Adiós. Cuéntale a otros sobre... mi pequeña tienda aquí.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.713523Z"
+  },
+  "data.otservbr.global.npc.gamel.L104.432": {
+    "src_hash": "2c06b22f948013cb7c9cc96ca316478c",
+    "text": "Adiós. Cuéntale a otros sobre... mi pequeña tienda aquí.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.715103Z"
+  },
+  "data.otservbr.global.npc.gamel.L71.430": {
+    "src_hash": "85a7df9a3b20746ffa8c96a1c8edebd4",
+    "text": "¡Pssst! Guarda silencio. ¿Quieres {buy} algo?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.716648Z"
+  },
+  "data.otservbr.global.npc.gamon.L75.376": {
+    "src_hash": "3380dac1fb5dd4320d19d854113a9f5a",
+    "text": "¡Encantado de conocerle, señor |PLAYERNAME|! ¿Buscas muebles? ¡Has venido al lugar correcto!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.718524Z"
+  },
+  "data.otservbr.global.npc.gamon.L76.377": {
+    "src_hash": "4e73f4b084d53ec679e0a62d8efaaa16",
+    "text": "Volverás. Todos lo hacen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.719840Z"
+  },
+  "data.otservbr.global.npc.gamon.L78.379": {
+    "src_hash": "43a2e4f95e5ae7de6833153915380c4e",
+    "text": "Échale un vistazo. La mayoría de los muebles vienen en prácticos kits. Utilízalos en tu casa para montar los muebles. ¿Quieres ver sólo un determinado tipo de mueble?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.722101Z"
+  },
+  "data.otservbr.global.npc.gareth.L59.1399": {
+    "src_hash": "d4a74b09413ac14b6808e25e31c96fa4",
+    "text": "¡Bienvenido al maravilloso y recientemente inaugurado Museo de Artes Tibias! Entrada gratuita para todos, pero se busca y favorece a los mecenas de las artes.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.725367Z"
+  },
+  "data.otservbr.global.npc.gareth.L61.1400": {
+    "src_hash": "2f266aed5a3292e96ab3f29915dfa20d",
+    "text": "¿El Druid de Crunor te ha enviado? Parece saber que este nuevo museo brilla como un diamante. ¡Disfruta de tu estancia! Si te gusta {support} este lugar, habla conmigo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.727601Z"
+  },
+  "data.otservbr.global.npc.gareth.L63.1401": {
+    "src_hash": "a8d18e5d69db7a2d10b7bff9e9442b49",
+    "text": "¿Cómo va tu {mission}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.728875Z"
+  },
+  "data.otservbr.global.npc.gareth.L65.1402": {
+    "src_hash": "41d1ae4731e2260597d822dd0f0d05f5",
+    "text": "¿Tú otra vez? ¿Cómo pudiste huir del último piso? ¡Los cultistas deberían tener 'dealt' contigo! Eso me puede. Tienes que abandonar este lugar ahora mismo. No hay nada más que decir.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.731233Z"
+  },
+  "data.otservbr.global.npc.gate.guardian.L75.1275": {
+    "src_hash": "716f2c74dc95c2c80ed625ec37878d7e",
+    "text": "Chhhhzzz. ¡Feo humano! ¡Será mejor que te diviertas mucho para estar aquí!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.732901Z"
+  },
+  "data.otservbr.global.npc.gelagos.L62.303": {
+    "src_hash": "be2f7f5e179e50adc279f491ac58a681",
+    "text": "Espero que mueras y lo pierdas.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.734598Z"
+  },
+  "data.otservbr.global.npc.gelidrazahs.thirst.L83.286": {
+    "src_hash": "4ff16a7f17b7c7f22cf480bcd0060d48",
+    "text": "¿Has venido a responder las preguntas de Gelidrazah?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.736150Z"
+  },
+  "data.otservbr.global.npc.gerimor.L58.366": {
+    "src_hash": "3c780c4126efe612c9dab5df4895ab7e",
+    "text": "Saludo, |PLAYERNAME|! Te doy la bienvenida a este sagrado {place}. Si está interesado en {missions}, simplemente pregunte.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.745000Z"
+  },
+  "data.otservbr.global.npc.gewen.L120.1496": {
+    "src_hash": "14b3e81ec8e2ff2c2783c71d1f831c03",
+    "text": "Saludos viajero |PLAYERNAME|. ¿Dónde quieres que te {fly}? ¿O necesita un billete semanal para el transporte público de camiones Kazordoon?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.747281Z"
+  },
+  "data.otservbr.global.npc.ghorza.L138.1511": {
+    "src_hash": "f21779bf8c308ffdca4bad84d7587194",
+    "text": "Cuídate de los espíritus malignos.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.750020Z"
+  },
+  "data.otservbr.global.npc.ghorza.L139.1512": {
+    "src_hash": "f21779bf8c308ffdca4bad84d7587194",
+    "text": "Cuídate de los espíritus malignos.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.751389Z"
+  },
+  "data.otservbr.global.npc.ghostly.wolf.L101.460": {
+    "src_hash": "ae4f7a73512ed0ce588afc8b02b07cbd",
+    "text": "¿Estás hablando el lenguaje de los animales? Estoy sorprendido. Pero no estoy de humor para charlar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.755119Z"
+  },
+  "data.otservbr.global.npc.gnomad.L86.976": {
+    "src_hash": "030191415e3db032c8d20aab65d070bc",
+    "text": "¡Hola! Estoy listo para informarle con {tactical} consejos.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.756930Z"
+  },
+  "data.otservbr.global.npc.gnomad.L87.977": {
+    "src_hash": "62b703e7a17bc181a01c27654db49179",
+    "text": "¡Adiós y cuídate!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.758452Z"
+  },
+  "data.otservbr.global.npc.gnomadness.L105.257": {
+    "src_hash": "9815a80f80a64735c8915b30bbfb7c38",
+    "text": "Hola y bienvenidos a los Jardines Gnomprona.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.760226Z"
+  },
+  "data.otservbr.global.npc.gnomally.L201.1371": {
+    "src_hash": "9ff401ef405038ea1958e078e11cee8a",
+    "text": "¡Hola! Soy el asistente de relaciones gnomo-humano. ¡Estoy aquí para que intercambies tus tokens por {equipment}, te reabastezcas con la misión {items} y te hablemos sobre tu {relations} para nosotros, los gnomos! ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.763475Z"
+  },
+  "data.otservbr.global.npc.gnomaticus.L86.449": {
+    "src_hash": "f313a27e873e04c1c2537e0c6df2ee03",
+    "text": "¡Hola! ¿Estás aquí para la prueba {shooting} o para {report} tu éxito?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.765338Z"
+  },
+  "data.otservbr.global.npc.gnome.trooper.L79.595": {
+    "src_hash": "315cec7b15984b34b0413b34e095bd15",
+    "text": "¿Tienes algo que entregar?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.766841Z"
+  },
+  "data.otservbr.global.npc.gnomegica.L150.920": {
+    "src_hash": "915ae94f54558ea1ceb317b85b9f19b0",
+    "text": "¡Saludos! Viniste al gnomo correcto para comprar {potions}, {runes} o {wands}. Entonces hablemos de un {trade}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.769068Z"
+  },
+  "data.otservbr.global.npc.gnomegica.L151.921": {
+    "src_hash": "3ba74396d1216f13feae7e612c8bdfa5",
+    "text": "Adiós y vuelve otra vez.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.770598Z"
+  },
+  "data.otservbr.global.npc.gnomegica.L152.922": {
+    "src_hash": "3ba74396d1216f13feae7e612c8bdfa5",
+    "text": "Adiós y vuelve otra vez.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.772029Z"
+  },
+  "data.otservbr.global.npc.gnomelvis.L99.1340": {
+    "src_hash": "83d31689ea16e8c391e21d5bf865f983",
+    "text": "Hola. ¿Es para mí por quien eres {looking}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:32:43.774103Z"
+  },
+  "html.exception.html.text2": {
+    "src_hash": "0d0ca4c3c8e8e1791bcd959a04f110e5",
+    "text": "Vaya, algo salió mal...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:40:38.628257Z"
+  },
+  "html.admin.plugins.outdated.html.text1": {
+    "src_hash": "0b849dfdaccf532880dedd7669a0d4b3",
+    "text": "{{ plugin.yourVersion }}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:40:38.628814Z"
+  },
+  "html.admin.plugins.outdated.html.text2": {
+    "src_hash": "39af77d101036c0639dcc836e6c32f12",
+    "text": "{{ plugin.latestVersion }}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:40:38.629342Z"
+  },
+  "html.admin.plugins.outdated.html.text3": {
+    "src_hash": "32ea1fcc9a9cedc98ef9f8e1051832ef",
+    "text": "{{ plugin.download_link }}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:40:38.629906Z"
+  },
+  "html.team.html.text1": {
+    "src_hash": "c94449192c051c0c096a2bb726a32e7f",
+    "text": "{{ group.group_name|capitalize }}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:40:38.630599Z"
   }
 }

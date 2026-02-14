@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-14T07:56:00.216681Z",
+  "timestamp": "2026-02-14T08:40:21.178102Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -233,18 +233,18 @@
       0
     ]
   ],
-  "cache_hits": 50,
-  "cache_misses": 2,
-  "file_cache_hits": 1974,
-  "file_cache_misses": 2,
+  "cache_hits": 52,
+  "cache_misses": 0,
+  "file_cache_hits": 1976,
+  "file_cache_misses": 0,
   "langs": {
     "ar": {
       "sig": [
         [
           "achievements.json",
           1,
-          1770565137695014638,
-          120274
+          1771058367238322569,
+          143331
         ],
         [
           "actions.json",
@@ -474,14 +474,14 @@
         "language_name": "Arabski",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 12006,
-        "english_copy_keys": 31222,
+        "translated_keys": 12269,
+        "english_copy_keys": 30748,
         "missing_keys": 2150,
         "missing_files": 0,
-        "completion_pct": 22.41,
+        "completion_pct": 22.9,
         "server_keys": 49731,
-        "server_translated": 11993,
-        "server_pct": 24.12,
+        "server_translated": 12256,
+        "server_pct": 24.64,
         "client_keys": 3855,
         "client_translated": 13,
         "client_pct": 0.34
@@ -490,13 +490,13 @@
         "achievements.json": {
           "sig": [
             1,
-            1770565137695014638,
-            120274
+            1771058367238322569,
+            143331
           ],
           "row": {
             "total_reference_keys": 1048,
-            "translated_keys": 528,
-            "english_copy_keys": 1048,
+            "translated_keys": 791,
+            "english_copy_keys": 574,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -1026,8 +1026,8 @@
         [
           "achievements.json",
           1,
-          1770936545487190432,
-          120313
+          1771058363994315241,
+          127649
         ],
         [
           "actions.json",
@@ -1257,14 +1257,14 @@
         "language_name": "AZ",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 8767,
-        "english_copy_keys": 24472,
+        "translated_keys": 8977,
+        "english_copy_keys": 24111,
         "missing_keys": 2155,
         "missing_files": 0,
-        "completion_pct": 16.36,
+        "completion_pct": 16.75,
         "server_keys": 49731,
-        "server_translated": 8765,
-        "server_pct": 17.62,
+        "server_translated": 8975,
+        "server_pct": 18.05,
         "client_keys": 3855,
         "client_translated": 2,
         "client_pct": 0.05
@@ -1273,13 +1273,13 @@
         "achievements.json": {
           "sig": [
             1,
-            1770936545487190432,
-            120313
+            1771058363994315241,
+            127649
           ],
           "row": {
             "total_reference_keys": 1048,
-            "translated_keys": 529,
-            "english_copy_keys": 1046,
+            "translated_keys": 739,
+            "english_copy_keys": 685,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -1809,8 +1809,8 @@
         [
           "achievements.json",
           1,
-          1770936546319190667,
-          120408
+          1771058316030209627,
+          149128
         ],
         [
           "actions.json",
@@ -1893,8 +1893,8 @@
         [
           "libs.json",
           1,
-          1770560203208877134,
-          6176
+          1771057481852464432,
+          6521
         ],
         [
           "messages.json",
@@ -1929,14 +1929,14 @@
         [
           "npc.json",
           1,
-          1771050175746908174,
-          1087944
+          1771057482028464819,
+          1087913
         ],
         [
           "npclib.json",
           1,
-          1770420313259583308,
-          7888
+          1771057482040464846,
+          13169
         ],
         [
           "otclient_data.json",
@@ -1977,8 +1977,8 @@
         [
           "questlog.json",
           1,
-          1770934433401849666,
-          3
+          1771057482064464898,
+          234422
         ],
         [
           "quests.json",
@@ -2040,14 +2040,14 @@
         "language_name": "BG",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 8731,
-        "english_copy_keys": 24432,
-        "missing_keys": 2155,
+        "translated_keys": 8909,
+        "english_copy_keys": 26111,
+        "missing_keys": 174,
         "missing_files": 0,
-        "completion_pct": 16.29,
+        "completion_pct": 16.63,
         "server_keys": 49731,
-        "server_translated": 8729,
-        "server_pct": 17.55,
+        "server_translated": 8907,
+        "server_pct": 17.91,
         "client_keys": 3855,
         "client_translated": 2,
         "client_pct": 0.05
@@ -2056,13 +2056,13 @@
         "achievements.json": {
           "sig": [
             1,
-            1770936546319190667,
-            120408
+            1771058316030209627,
+            149128
           ],
           "row": {
             "total_reference_keys": 1048,
-            "translated_keys": 529,
-            "english_copy_keys": 1046,
+            "translated_keys": 703,
+            "english_copy_keys": 742,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -2252,14 +2252,14 @@
         "libs.json": {
           "sig": [
             1,
-            1770560203208877134,
-            6176
+            1771057481852464432,
+            6521
           ],
           "row": {
             "total_reference_keys": 89,
             "translated_keys": 2,
-            "english_copy_keys": 84,
-            "missing_keys": 5,
+            "english_copy_keys": 89,
+            "missing_keys": 0,
             "missing_files": 0
           }
         },
@@ -2336,13 +2336,13 @@
         "npc.json": {
           "sig": [
             1,
-            1771050175746908174,
-            1087944
+            1771057482028464819,
+            1087913
           ],
           "row": {
             "total_reference_keys": 13769,
-            "translated_keys": 1270,
-            "english_copy_keys": 7538,
+            "translated_keys": 1268,
+            "english_copy_keys": 7540,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -2350,14 +2350,14 @@
         "npclib.json": {
           "sig": [
             1,
-            1770420313259583308,
-            7888
+            1771057482040464846,
+            13169
           ],
           "row": {
             "total_reference_keys": 147,
             "translated_keys": 0,
-            "english_copy_keys": 80,
-            "missing_keys": 67,
+            "english_copy_keys": 147,
+            "missing_keys": 0,
             "missing_files": 0
           }
         },
@@ -2448,14 +2448,14 @@
         "questlog.json": {
           "sig": [
             1,
-            1770934433401849666,
-            3
+            1771057482064464898,
+            234422
           ],
           "row": {
             "total_reference_keys": 1918,
-            "translated_keys": 0,
-            "english_copy_keys": 0,
-            "missing_keys": 1918,
+            "translated_keys": 6,
+            "english_copy_keys": 1909,
+            "missing_keys": 9,
             "missing_files": 0
           }
         },
@@ -2592,8 +2592,8 @@
         [
           "achievements.json",
           1,
-          1770936547335190993,
-          120563
+          1771058363538314211,
+          178443
         ],
         [
           "actions.json",
@@ -2694,8 +2694,8 @@
         [
           "monsters.json",
           1,
-          1770935010670276058,
-          323518
+          1771055784520893740,
+          324514
         ],
         [
           "mounts.json",
@@ -2823,14 +2823,14 @@
         "language_name": "BN",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 11773,
-        "english_copy_keys": 29239,
+        "translated_keys": 12032,
+        "english_copy_keys": 28932,
         "missing_keys": 2155,
         "missing_files": 0,
-        "completion_pct": 21.97,
+        "completion_pct": 22.45,
         "server_keys": 49731,
-        "server_translated": 11760,
-        "server_pct": 23.65,
+        "server_translated": 12019,
+        "server_pct": 24.17,
         "client_keys": 3855,
         "client_translated": 13,
         "client_pct": 0.34
@@ -2839,13 +2839,13 @@
         "achievements.json": {
           "sig": [
             1,
-            1770936547335190993,
-            120563
+            1771058363538314211,
+            178443
           ],
           "row": {
             "total_reference_keys": 1048,
-            "translated_keys": 529,
-            "english_copy_keys": 1046,
+            "translated_keys": 708,
+            "english_copy_keys": 726,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -3077,13 +3077,13 @@
         "monsters.json": {
           "sig": [
             1,
-            1770935010670276058,
-            323518
+            1771055784520893740,
+            324514
           ],
           "row": {
             "total_reference_keys": 5915,
-            "translated_keys": 4724,
-            "english_copy_keys": 5786,
+            "translated_keys": 4804,
+            "english_copy_keys": 5799,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -3375,8 +3375,8 @@
         [
           "achievements.json",
           1,
-          1770565137710599527,
-          120274
+          1771058326290230769,
+          120223
         ],
         [
           "actions.json",
@@ -3477,8 +3477,8 @@
         [
           "monsters.json",
           1,
-          1770935027250245112,
-          660867
+          1771055796924921619,
+          660439
         ],
         [
           "mounts.json",
@@ -3606,14 +3606,14 @@
         "language_name": "BS",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 8656,
-        "english_copy_keys": 24381,
+        "translated_keys": 8836,
+        "english_copy_keys": 24316,
         "missing_keys": 2155,
         "missing_files": 0,
-        "completion_pct": 16.15,
+        "completion_pct": 16.49,
         "server_keys": 49731,
-        "server_translated": 8654,
-        "server_pct": 17.4,
+        "server_translated": 8834,
+        "server_pct": 17.76,
         "client_keys": 3855,
         "client_translated": 2,
         "client_pct": 0.05
@@ -3622,13 +3622,13 @@
         "achievements.json": {
           "sig": [
             1,
-            1770565137710599527,
-            120274
+            1771058326290230769,
+            120223
           ],
           "row": {
             "total_reference_keys": 1048,
-            "translated_keys": 528,
-            "english_copy_keys": 1048,
+            "translated_keys": 628,
+            "english_copy_keys": 909,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -3860,13 +3860,13 @@
         "monsters.json": {
           "sig": [
             1,
-            1770935027250245112,
-            660867
+            1771055796924921619,
+            660439
           ],
           "row": {
             "total_reference_keys": 5915,
-            "translated_keys": 1613,
-            "english_copy_keys": 2675,
+            "translated_keys": 1693,
+            "english_copy_keys": 2749,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -4158,8 +4158,8 @@
         [
           "achievements.json",
           1,
-          1770936549239191589,
-          120291
+          1771058375514338717,
+          121836
         ],
         [
           "actions.json",
@@ -4389,14 +4389,14 @@
         "language_name": "Czeski",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 8734,
-        "english_copy_keys": 24498,
+        "translated_keys": 8863,
+        "english_copy_keys": 24282,
         "missing_keys": 2155,
         "missing_files": 0,
-        "completion_pct": 16.3,
+        "completion_pct": 16.54,
         "server_keys": 49731,
-        "server_translated": 8732,
-        "server_pct": 17.56,
+        "server_translated": 8861,
+        "server_pct": 17.82,
         "client_keys": 3855,
         "client_translated": 2,
         "client_pct": 0.05
@@ -4405,13 +4405,13 @@
         "achievements.json": {
           "sig": [
             1,
-            1770936549239191589,
-            120291
+            1771058375514338717,
+            121836
           ],
           "row": {
             "total_reference_keys": 1048,
-            "translated_keys": 529,
-            "english_copy_keys": 1046,
+            "translated_keys": 658,
+            "english_copy_keys": 830,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -4941,8 +4941,8 @@
         [
           "achievements.json",
           1,
-          1770936550235191893,
-          120276
+          1771057964909474064,
+          120627
         ],
         [
           "actions.json",
@@ -5172,14 +5172,14 @@
         "language_name": "DA",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 8656,
-        "english_copy_keys": 24477,
+        "translated_keys": 8743,
+        "english_copy_keys": 24338,
         "missing_keys": 2155,
         "missing_files": 0,
-        "completion_pct": 16.15,
+        "completion_pct": 16.32,
         "server_keys": 49731,
-        "server_translated": 8654,
-        "server_pct": 17.4,
+        "server_translated": 8741,
+        "server_pct": 17.58,
         "client_keys": 3855,
         "client_translated": 2,
         "client_pct": 0.05
@@ -5188,13 +5188,13 @@
         "achievements.json": {
           "sig": [
             1,
-            1770936550235191893,
-            120276
+            1771057964909474064,
+            120627
           ],
           "row": {
             "total_reference_keys": 1048,
-            "translated_keys": 529,
-            "english_copy_keys": 1046,
+            "translated_keys": 616,
+            "english_copy_keys": 907,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -5724,8 +5724,8 @@
         [
           "achievements.json",
           1,
-          1770936551507192273,
-          120324
+          1771058032397614878,
+          123272
         ],
         [
           "actions.json",
@@ -5736,37 +5736,37 @@
         [
           "books.json",
           1,
-          1770327373365577359,
-          295232
+          1771057619224749346,
+          298662
         ],
         [
           "chatchannels.json",
           1,
-          1770407609741228862,
-          1071
+          1771057619228749354,
+          1076
         ],
         [
           "client.json",
           1,
-          1770409731212418123,
-          14946
+          1771057619228749354,
+          14927
         ],
         [
           "cpp.json",
           1,
-          1770565116920950155,
-          55451
+          1771057619236749370,
+          55725
         ],
         [
           "creaturescripts.json",
           1,
-          1770332671662765856,
-          363
+          1771057619236749370,
+          373
         ],
         [
           "dataroot.json",
           1,
-          1765962528484664442,
+          1771057564344634439,
           319
         ],
         [
@@ -5778,56 +5778,56 @@
         [
           "events.json",
           1,
-          1770409731351789695,
-          1060
+          1771057619240749379,
+          1084
         ],
         [
           "example_merchant.json",
           1,
-          1770409731379667803,
-          1071
+          1771057619240749379,
+          1080
         ],
         [
           "globalevents.json",
           1,
-          1770334276821828831,
-          524
+          1771057619240749379,
+          529
         ],
         [
           "html.json",
           1,
-          1770952800069281618,
-          106598
+          1771057564372634500,
+          106613
         ],
         [
           "items.json",
           1,
-          1771042947868736761,
-          884866
+          1771057619396749700,
+          890076
         ],
         [
           "libs.json",
           1,
-          1770560203208877134,
-          6176
+          1771057619400749709,
+          6626
         ],
         [
           "messages.json",
           1,
-          1765390372414911985,
-          719
+          1771057619404749717,
+          723
         ],
         [
           "modules.json",
           1,
-          1770332671671127925,
-          1065
+          1771057619404749717,
+          1075
         ],
         [
           "monsters.json",
           1,
-          1771048424156079624,
-          659932
+          1771057619480749874,
+          660607
         ],
         [
           "mounts.json",
@@ -5838,25 +5838,25 @@
         [
           "movements.json",
           1,
-          1770332671666946890,
-          168
+          1771057619480749874,
+          173
         ],
         [
           "npc.json",
           1,
-          1771043590162017942,
-          1265602
+          1771057619760750451,
+          1289979
         ],
         [
           "npclib.json",
           1,
-          1770420313272077699,
-          7888
+          1771057619768750467,
+          13439
         ],
         [
           "otclient_data.json",
           1,
-          1765962603336816649,
+          1771057564904635646,
           4627
         ],
         [
@@ -5868,7 +5868,7 @@
         [
           "otclient_modules.json",
           1,
-          1770948565152647883,
+          1771057564920635681,
           138839
         ],
         [
@@ -5886,56 +5886,56 @@
         [
           "php.json",
           1,
-          1770409737552738606,
-          4018
+          1771057619776750484,
+          4027
         ],
         [
           "questlog.json",
           1,
-          1770934433397849664,
-          3
+          1771057619824750583,
+          237562
         ],
         [
           "quests.json",
           1,
-          1771053870080722402,
-          65909
+          1771057619836750607,
+          66652
         ],
         [
           "raids.json",
           1,
-          1770950407227475408,
-          17829
+          1771057619844750624,
+          17954
         ],
         [
           "scripts.json",
           1,
-          1771054397449990779,
-          191145
+          1771057619884750706,
+          194303
         ],
         [
           "server.json",
           1,
-          1771049075734614167,
-          289871
+          1771057619932750805,
+          292812
         ],
         [
           "spells.json",
           1,
-          1770948146448641063,
+          1771057589028680824,
           80391
         ],
         [
           "startup.json",
           1,
-          1765962677936966589,
+          1771057565076636017,
           1639
         ],
         [
           "talkactions.json",
           1,
-          1770564304606390671,
-          16802
+          1771057619940750822,
+          16886
         ],
         [
           "ui.json",
@@ -5955,14 +5955,14 @@
         "language_name": "Niemiecki",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 9871,
-        "english_copy_keys": 25847,
-        "missing_keys": 2155,
+        "translated_keys": 8790,
+        "english_copy_keys": 18319,
+        "missing_keys": 174,
         "missing_files": 0,
-        "completion_pct": 18.42,
+        "completion_pct": 16.4,
         "server_keys": 49731,
-        "server_translated": 9753,
-        "server_pct": 19.61,
+        "server_translated": 8672,
+        "server_pct": 17.44,
         "client_keys": 3855,
         "client_translated": 118,
         "client_pct": 3.06
@@ -5971,13 +5971,13 @@
         "achievements.json": {
           "sig": [
             1,
-            1770936551507192273,
-            120324
+            1771058032397614878,
+            123272
           ],
           "row": {
             "total_reference_keys": 1048,
-            "translated_keys": 529,
-            "english_copy_keys": 1046,
+            "translated_keys": 543,
+            "english_copy_keys": 444,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -5999,13 +5999,13 @@
         "books.json": {
           "sig": [
             1,
-            1770327373365577359,
-            295232
+            1771057619224749346,
+            298662
           ],
           "row": {
             "total_reference_keys": 1403,
             "translated_keys": 92,
-            "english_copy_keys": 1403,
+            "english_copy_keys": 717,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -6013,13 +6013,13 @@
         "chatchannels.json": {
           "sig": [
             1,
-            1770407609741228862,
-            1071
+            1771057619228749354,
+            1076
           ],
           "row": {
             "total_reference_keys": 16,
             "translated_keys": 0,
-            "english_copy_keys": 16,
+            "english_copy_keys": 15,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -6027,13 +6027,13 @@
         "client.json": {
           "sig": [
             1,
-            1770409731212418123,
-            14946
+            1771057619228749354,
+            14927
           ],
           "row": {
             "total_reference_keys": 242,
             "translated_keys": 0,
-            "english_copy_keys": 6,
+            "english_copy_keys": 4,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -6041,13 +6041,13 @@
         "cpp.json": {
           "sig": [
             1,
-            1770565116920950155,
-            55451
+            1771057619236749370,
+            55725
           ],
           "row": {
             "total_reference_keys": 879,
             "translated_keys": 18,
-            "english_copy_keys": 877,
+            "english_copy_keys": 822,
             "missing_keys": 2,
             "missing_files": 0
           }
@@ -6055,13 +6055,13 @@
         "creaturescripts.json": {
           "sig": [
             1,
-            1770332671662765856,
-            363
+            1771057619236749370,
+            373
           ],
           "row": {
             "total_reference_keys": 4,
             "translated_keys": 0,
-            "english_copy_keys": 4,
+            "english_copy_keys": 2,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -6069,7 +6069,7 @@
         "dataroot.json": {
           "sig": [
             1,
-            1765962528484664442,
+            1771057564344634439,
             319
           ],
           "row": {
@@ -6097,13 +6097,13 @@
         "events.json": {
           "sig": [
             1,
-            1770409731351789695,
-            1060
+            1771057619240749379,
+            1084
           ],
           "row": {
             "total_reference_keys": 14,
             "translated_keys": 1,
-            "english_copy_keys": 13,
+            "english_copy_keys": 8,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -6111,13 +6111,13 @@
         "example_merchant.json": {
           "sig": [
             1,
-            1770409731379667803,
-            1071
+            1771057619240749379,
+            1080
           ],
           "row": {
             "total_reference_keys": 14,
             "translated_keys": 1,
-            "english_copy_keys": 14,
+            "english_copy_keys": 12,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -6125,13 +6125,13 @@
         "globalevents.json": {
           "sig": [
             1,
-            1770334276821828831,
-            524
+            1771057619240749379,
+            529
           ],
           "row": {
             "total_reference_keys": 5,
             "translated_keys": 0,
-            "english_copy_keys": 5,
+            "english_copy_keys": 4,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -6139,13 +6139,13 @@
         "html.json": {
           "sig": [
             1,
-            1770952800069281618,
-            106598
+            1771057564372634500,
+            106613
           ],
           "row": {
             "total_reference_keys": 1495,
             "translated_keys": 41,
-            "english_copy_keys": 16,
+            "english_copy_keys": 13,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -6153,13 +6153,13 @@
         "items.json": {
           "sig": [
             1,
-            1771042947868736761,
-            884866
+            1771057619396749700,
+            890076
           ],
           "row": {
             "total_reference_keys": 17057,
-            "translated_keys": 3445,
-            "english_copy_keys": 3147,
+            "translated_keys": 2403,
+            "english_copy_keys": 2105,
             "missing_keys": 163,
             "missing_files": 0
           }
@@ -6167,27 +6167,27 @@
         "libs.json": {
           "sig": [
             1,
-            1770560203208877134,
-            6176
+            1771057619400749709,
+            6626
           ],
           "row": {
             "total_reference_keys": 89,
             "translated_keys": 2,
-            "english_copy_keys": 84,
-            "missing_keys": 5,
+            "english_copy_keys": 68,
+            "missing_keys": 0,
             "missing_files": 0
           }
         },
         "messages.json": {
           "sig": [
             1,
-            1765390372414911985,
-            719
+            1771057619404749717,
+            723
           ],
           "row": {
             "total_reference_keys": 11,
             "translated_keys": 0,
-            "english_copy_keys": 11,
+            "english_copy_keys": 10,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -6195,13 +6195,13 @@
         "modules.json": {
           "sig": [
             1,
-            1770332671671127925,
-            1065
+            1771057619404749717,
+            1075
           ],
           "row": {
             "total_reference_keys": 19,
             "translated_keys": 0,
-            "english_copy_keys": 19,
+            "english_copy_keys": 17,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -6209,13 +6209,13 @@
         "monsters.json": {
           "sig": [
             1,
-            1771048424156079624,
-            659932
+            1771057619480749874,
+            660607
           ],
           "row": {
             "total_reference_keys": 5915,
             "translated_keys": 2039,
-            "english_copy_keys": 2740,
+            "english_copy_keys": 2605,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -6237,13 +6237,13 @@
         "movements.json": {
           "sig": [
             1,
-            1770332671666946890,
-            168
+            1771057619480749874,
+            173
           ],
           "row": {
             "total_reference_keys": 2,
             "translated_keys": 0,
-            "english_copy_keys": 2,
+            "english_copy_keys": 1,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -6251,13 +6251,13 @@
         "npc.json": {
           "sig": [
             1,
-            1771043590162017942,
-            1265602
+            1771057619760750451,
+            1289979
           ],
           "row": {
             "total_reference_keys": 13769,
-            "translated_keys": 1433,
-            "english_copy_keys": 9393,
+            "translated_keys": 1422,
+            "english_copy_keys": 4514,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -6265,21 +6265,21 @@
         "npclib.json": {
           "sig": [
             1,
-            1770420313272077699,
-            7888
+            1771057619768750467,
+            13439
           ],
           "row": {
             "total_reference_keys": 147,
             "translated_keys": 0,
-            "english_copy_keys": 80,
-            "missing_keys": 67,
+            "english_copy_keys": 93,
+            "missing_keys": 0,
             "missing_files": 0
           }
         },
         "otclient_data.json": {
           "sig": [
             1,
-            1765962603336816649,
+            1771057564904635646,
             4627
           ],
           "row": {
@@ -6307,7 +6307,7 @@
         "otclient_modules.json": {
           "sig": [
             1,
-            1770948565152647883,
+            1771057564920635681,
             138839
           ],
           "row": {
@@ -6349,13 +6349,13 @@
         "php.json": {
           "sig": [
             1,
-            1770409737552738606,
-            4018
+            1771057619776750484,
+            4027
           ],
           "row": {
             "total_reference_keys": 59,
             "translated_keys": 2,
-            "english_copy_keys": 28,
+            "english_copy_keys": 26,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -6363,27 +6363,27 @@
         "questlog.json": {
           "sig": [
             1,
-            1770934433397849664,
-            3
+            1771057619824750583,
+            237562
           ],
           "row": {
             "total_reference_keys": 1918,
-            "translated_keys": 0,
-            "english_copy_keys": 0,
-            "missing_keys": 1918,
+            "translated_keys": 6,
+            "english_copy_keys": 1281,
+            "missing_keys": 9,
             "missing_files": 0
           }
         },
         "quests.json": {
           "sig": [
             1,
-            1771053870080722402,
-            65909
+            1771057619836750607,
+            66652
           ],
           "row": {
             "total_reference_keys": 610,
-            "translated_keys": 285,
-            "english_copy_keys": 328,
+            "translated_keys": 277,
+            "english_copy_keys": 194,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -6391,13 +6391,13 @@
         "raids.json": {
           "sig": [
             1,
-            1770950407227475408,
-            17829
+            1771057619844750624,
+            17954
           ],
           "row": {
             "total_reference_keys": 273,
             "translated_keys": 147,
-            "english_copy_keys": 273,
+            "english_copy_keys": 248,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -6405,13 +6405,13 @@
         "scripts.json": {
           "sig": [
             1,
-            1771054397449990779,
-            191145
+            1771057619884750706,
+            194303
           ],
           "row": {
             "total_reference_keys": 2170,
-            "translated_keys": 105,
-            "english_copy_keys": 2079,
+            "translated_keys": 95,
+            "english_copy_keys": 1469,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -6419,13 +6419,13 @@
         "server.json": {
           "sig": [
             1,
-            1771049075734614167,
-            289871
+            1771057619932750805,
+            292812
           ],
           "row": {
             "total_reference_keys": 2574,
-            "translated_keys": 84,
-            "english_copy_keys": 2525,
+            "translated_keys": 54,
+            "english_copy_keys": 1926,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -6433,7 +6433,7 @@
         "spells.json": {
           "sig": [
             1,
-            1770948146448641063,
+            1771057589028680824,
             80391
           ],
           "row": {
@@ -6447,7 +6447,7 @@
         "startup.json": {
           "sig": [
             1,
-            1765962677936966589,
+            1771057565076636017,
             1639
           ],
           "row": {
@@ -6461,13 +6461,13 @@
         "talkactions.json": {
           "sig": [
             1,
-            1770564304606390671,
-            16802
+            1771057619940750822,
+            16886
           ],
           "row": {
             "total_reference_keys": 199,
             "translated_keys": 3,
-            "english_copy_keys": 197,
+            "english_copy_keys": 180,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -6507,8 +6507,8 @@
         [
           "achievements.json",
           1,
-          1770936552127192455,
-          120468
+          1771058083009719308,
+          137244
         ],
         [
           "actions.json",
@@ -6609,8 +6609,8 @@
         [
           "monsters.json",
           1,
-          1770935047050268083,
-          660867
+          1771055800904930035,
+          660463
         ],
         [
           "mounts.json",
@@ -6738,14 +6738,14 @@
         "language_name": "EL",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 8655,
-        "english_copy_keys": 24356,
+        "translated_keys": 8822,
+        "english_copy_keys": 24289,
         "missing_keys": 2155,
         "missing_files": 0,
-        "completion_pct": 16.15,
+        "completion_pct": 16.46,
         "server_keys": 49731,
-        "server_translated": 8653,
-        "server_pct": 17.4,
+        "server_translated": 8820,
+        "server_pct": 17.74,
         "client_keys": 3855,
         "client_translated": 2,
         "client_pct": 0.05
@@ -6754,13 +6754,13 @@
         "achievements.json": {
           "sig": [
             1,
-            1770936552127192455,
-            120468
+            1771058083009719308,
+            137244
           ],
           "row": {
             "total_reference_keys": 1048,
-            "translated_keys": 529,
-            "english_copy_keys": 1046,
+            "translated_keys": 616,
+            "english_copy_keys": 908,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -6992,13 +6992,13 @@
         "monsters.json": {
           "sig": [
             1,
-            1770935047050268083,
-            660867
+            1771055800904930035,
+            660463
           ],
           "row": {
             "total_reference_keys": 5915,
-            "translated_keys": 1613,
-            "english_copy_keys": 2675,
+            "translated_keys": 1693,
+            "english_copy_keys": 2746,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -7290,8 +7290,8 @@
         [
           "achievements.json",
           1,
-          1770936553871192959,
-          126171
+          1771057992025534822,
+          126174
         ],
         [
           "actions.json",
@@ -7302,8 +7302,8 @@
         [
           "books.json",
           1,
-          1771041471377779999,
-          320255
+          1771058001621554956,
+          320293
         ],
         [
           "chatchannels.json",
@@ -7320,7 +7320,7 @@
         [
           "cpp.json",
           1,
-          1771021628669092320,
+          1771058003493558844,
           58860
         ],
         [
@@ -7350,8 +7350,8 @@
         [
           "example_merchant.json",
           1,
-          1770952250102845215,
-          1136
+          1771058004369560662,
+          1140
         ],
         [
           "globalevents.json",
@@ -7362,14 +7362,14 @@
         [
           "html.json",
           1,
-          1771048337747738049,
-          105083
+          1771058007585567334,
+          105084
         ],
         [
           "items.json",
           1,
-          1771035627678090298,
-          873667
+          1771058118709794171,
+          873918
         ],
         [
           "libs.json",
@@ -7392,7 +7392,7 @@
         [
           "monsters.json",
           1,
-          1771042644096127947,
+          1771057487916477735,
           331739
         ],
         [
@@ -7410,8 +7410,8 @@
         [
           "npc.json",
           1,
-          1771055008251262252,
-          1639823
+          1771057330620148793,
+          1652649
         ],
         [
           "npclib.json",
@@ -7458,13 +7458,13 @@
         [
           "questlog.json",
           1,
-          1771048278975511954,
+          1771058300590178048,
           234998
         ],
         [
           "quests.json",
           1,
-          1771048032326899013,
+          1771058080161713207,
           66609
         ],
         [
@@ -7476,14 +7476,14 @@
         [
           "scripts.json",
           1,
-          1771048093395022770,
+          1771058194525955871,
           200642
         ],
         [
           "server.json",
           1,
-          1771042854320549467,
-          291303
+          1771057964165472521,
+          291629
         ],
         [
           "spells.json",
@@ -7521,29 +7521,29 @@
         "language_name": "Hiszpański",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 46036,
-        "english_copy_keys": 11272,
+        "translated_keys": 46458,
+        "english_copy_keys": 10858,
         "missing_keys": 232,
         "missing_files": 0,
-        "completion_pct": 85.91,
+        "completion_pct": 86.7,
         "server_keys": 49731,
-        "server_translated": 43464,
-        "server_pct": 87.4,
+        "server_translated": 43885,
+        "server_pct": 88.24,
         "client_keys": 3855,
-        "client_translated": 2572,
-        "client_pct": 66.72
+        "client_translated": 2573,
+        "client_pct": 66.74
       },
       "files": {
         "achievements.json": {
           "sig": [
             1,
-            1770936553871192959,
-            126171
+            1771057992025534822,
+            126174
           ],
           "row": {
             "total_reference_keys": 1048,
             "translated_keys": 1048,
-            "english_copy_keys": 16,
+            "english_copy_keys": 14,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -7565,13 +7565,13 @@
         "books.json": {
           "sig": [
             1,
-            1771041471377779999,
-            320255
+            1771058001621554956,
+            320293
           ],
           "row": {
             "total_reference_keys": 1403,
             "translated_keys": 1389,
-            "english_copy_keys": 28,
+            "english_copy_keys": 14,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -7607,13 +7607,13 @@
         "cpp.json": {
           "sig": [
             1,
-            1771021628669092320,
+            1771058003493558844,
             58860
           ],
           "row": {
             "total_reference_keys": 879,
             "translated_keys": 868,
-            "english_copy_keys": 13,
+            "english_copy_keys": 12,
             "missing_keys": 2,
             "missing_files": 0
           }
@@ -7677,13 +7677,13 @@
         "example_merchant.json": {
           "sig": [
             1,
-            1770952250102845215,
-            1136
+            1771058004369560662,
+            1140
           ],
           "row": {
             "total_reference_keys": 14,
             "translated_keys": 14,
-            "english_copy_keys": 1,
+            "english_copy_keys": 0,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -7705,13 +7705,13 @@
         "html.json": {
           "sig": [
             1,
-            1771048337747738049,
-            105083
+            1771058007585567334,
+            105084
           ],
           "row": {
             "total_reference_keys": 1495,
-            "translated_keys": 492,
-            "english_copy_keys": 138,
+            "translated_keys": 493,
+            "english_copy_keys": 137,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -7719,13 +7719,13 @@
         "items.json": {
           "sig": [
             1,
-            1771035627678090298,
-            873667
+            1771058118709794171,
+            873918
           ],
           "row": {
             "total_reference_keys": 17057,
             "translated_keys": 16894,
-            "english_copy_keys": 1133,
+            "english_copy_keys": 1027,
             "missing_keys": 163,
             "missing_files": 0
           }
@@ -7775,7 +7775,7 @@
         "monsters.json": {
           "sig": [
             1,
-            1771042644096127947,
+            1771057487916477735,
             331739
           ],
           "row": {
@@ -7817,13 +7817,13 @@
         "npc.json": {
           "sig": [
             1,
-            1771055008251262252,
-            1639823
+            1771057330620148793,
+            1652649
           ],
           "row": {
             "total_reference_keys": 13769,
-            "translated_keys": 10629,
-            "english_copy_keys": 2632,
+            "translated_keys": 10988,
+            "english_copy_keys": 2405,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -7929,7 +7929,7 @@
         "questlog.json": {
           "sig": [
             1,
-            1771048278975511954,
+            1771058300590178048,
             234998
           ],
           "row": {
@@ -7943,7 +7943,7 @@
         "quests.json": {
           "sig": [
             1,
-            1771048032326899013,
+            1771058080161713207,
             66609
           ],
           "row": {
@@ -7971,7 +7971,7 @@
         "scripts.json": {
           "sig": [
             1,
-            1771048093395022770,
+            1771058194525955871,
             200642
           ],
           "row": {
@@ -7985,13 +7985,13 @@
         "server.json": {
           "sig": [
             1,
-            1771042854320549467,
-            291303
+            1771057964165472521,
+            291629
           ],
           "row": {
             "total_reference_keys": 2574,
-            "translated_keys": 542,
-            "english_copy_keys": 2067,
+            "translated_keys": 604,
+            "english_copy_keys": 2005,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -8073,8 +8073,8 @@
         [
           "achievements.json",
           1,
-          1770936554403193148,
-          120284
+          1771058143577845529,
+          120344
         ],
         [
           "actions.json",
@@ -8175,8 +8175,8 @@
         [
           "monsters.json",
           1,
-          1770935067762321452,
-          660867
+          1771055888041109578,
+          660447
         ],
         [
           "mounts.json",
@@ -8304,14 +8304,14 @@
         "language_name": "ET",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 8657,
-        "english_copy_keys": 24358,
+        "translated_keys": 8781,
+        "english_copy_keys": 24353,
         "missing_keys": 2155,
         "missing_files": 0,
-        "completion_pct": 16.16,
+        "completion_pct": 16.39,
         "server_keys": 49731,
-        "server_translated": 8655,
-        "server_pct": 17.4,
+        "server_translated": 8779,
+        "server_pct": 17.65,
         "client_keys": 3855,
         "client_translated": 2,
         "client_pct": 0.05
@@ -8320,13 +8320,13 @@
         "achievements.json": {
           "sig": [
             1,
-            1770936554403193148,
-            120284
+            1771058143577845529,
+            120344
           ],
           "row": {
             "total_reference_keys": 1048,
-            "translated_keys": 529,
-            "english_copy_keys": 1046,
+            "translated_keys": 573,
+            "english_copy_keys": 970,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -8558,13 +8558,13 @@
         "monsters.json": {
           "sig": [
             1,
-            1770935067762321452,
-            660867
+            1771055888041109578,
+            660447
           ],
           "row": {
             "total_reference_keys": 5915,
-            "translated_keys": 1613,
-            "english_copy_keys": 2675,
+            "translated_keys": 1693,
+            "english_copy_keys": 2746,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -8856,8 +8856,8 @@
         [
           "achievements.json",
           1,
-          1770936555067193383,
-          120413
+          1771058174961915339,
+          126741
         ],
         [
           "actions.json",
@@ -8958,8 +8958,8 @@
         [
           "monsters.json",
           1,
-          1770935126294351334,
-          323518
+          1771056102773563485,
+          323677
         ],
         [
           "mounts.json",
@@ -9087,14 +9087,14 @@
         "language_name": "FA",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 11773,
-        "english_copy_keys": 29239,
+        "translated_keys": 11897,
+        "english_copy_keys": 29171,
         "missing_keys": 2155,
         "missing_files": 0,
-        "completion_pct": 21.97,
+        "completion_pct": 22.2,
         "server_keys": 49731,
-        "server_translated": 11760,
-        "server_pct": 23.65,
+        "server_translated": 11884,
+        "server_pct": 23.9,
         "client_keys": 3855,
         "client_translated": 13,
         "client_pct": 0.34
@@ -9103,13 +9103,13 @@
         "achievements.json": {
           "sig": [
             1,
-            1770936555067193383,
-            120413
+            1771058174961915339,
+            126741
           ],
           "row": {
             "total_reference_keys": 1048,
-            "translated_keys": 529,
-            "english_copy_keys": 1046,
+            "translated_keys": 573,
+            "english_copy_keys": 967,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -9341,13 +9341,13 @@
         "monsters.json": {
           "sig": [
             1,
-            1770935126294351334,
-            323518
+            1771056102773563485,
+            323677
           ],
           "row": {
             "total_reference_keys": 5915,
-            "translated_keys": 4724,
-            "english_copy_keys": 5786,
+            "translated_keys": 4804,
+            "english_copy_keys": 5797,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -9639,8 +9639,8 @@
         [
           "achievements.json",
           1,
-          1770936555939193687,
-          120298
+          1771058266190107999,
+          120933
         ],
         [
           "actions.json",
@@ -9870,14 +9870,14 @@
         "language_name": "FI",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 8734,
-        "english_copy_keys": 24431,
+        "translated_keys": 8778,
+        "english_copy_keys": 24357,
         "missing_keys": 2155,
         "missing_files": 0,
-        "completion_pct": 16.3,
+        "completion_pct": 16.38,
         "server_keys": 49731,
-        "server_translated": 8732,
-        "server_pct": 17.56,
+        "server_translated": 8776,
+        "server_pct": 17.65,
         "client_keys": 3855,
         "client_translated": 2,
         "client_pct": 0.05
@@ -9886,13 +9886,13 @@
         "achievements.json": {
           "sig": [
             1,
-            1770936555939193687,
-            120298
+            1771058266190107999,
+            120933
           ],
           "row": {
             "total_reference_keys": 1048,
-            "translated_keys": 529,
-            "english_copy_keys": 1046,
+            "translated_keys": 573,
+            "english_copy_keys": 972,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -10422,50 +10422,50 @@
         [
           "achievements.json",
           1,
-          1770936556847194000,
-          120327
+          1771058343490266774,
+          123031
         ],
         [
           "actions.json",
           1,
-          1770332671834188271,
-          2669
+          1771057589044680863,
+          2973
         ],
         [
           "books.json",
           1,
-          1770327373399159029,
-          295232
+          1771057618360747563,
+          298662
         ],
         [
           "chatchannels.json",
           1,
-          1770407609804877031,
-          1071
+          1771057589060680901,
+          1211
         ],
         [
           "client.json",
           1,
-          1770409731232324670,
-          14946
+          1771057618364747572,
+          15653
         ],
         [
           "cpp.json",
           1,
-          1770565117520822961,
-          55451
+          1771057618376747597,
+          60277
         ],
         [
           "creaturescripts.json",
           1,
-          1770332671825826202,
-          363
+          1771057589072680930,
+          392
         ],
         [
           "dataroot.json",
           1,
-          1765963301654212826,
-          319
+          1771057482496465849,
+          323
         ],
         [
           "errors.json",
@@ -10476,56 +10476,56 @@
         [
           "events.json",
           1,
-          1770409731359754869,
-          1060
+          1771057589072680930,
+          1225
         ],
         [
           "example_merchant.json",
           1,
-          1770409731379667803,
-          1071
+          1771057589072680930,
+          1194
         ],
         [
           "globalevents.json",
           1,
-          1770334276888961494,
-          524
+          1771057589072680930,
+          618
         ],
         [
           "html.json",
           1,
-          1765411496199675013,
-          106771
+          1771057618404747654,
+          104024
         ],
         [
           "items.json",
           1,
-          1771043120369081650,
-          885160
+          1771057618580748017,
+          837598
         ],
         [
           "libs.json",
           1,
-          1770560203197112917,
-          6176
+          1771057589232681313,
+          7162
         ],
         [
           "messages.json",
           1,
-          1765390372454661521,
-          719
+          1771057589232681313,
+          811
         ],
         [
           "modules.json",
           1,
-          1770332671830007236,
-          1065
+          1771057589232681313,
+          1116
         ],
         [
           "monsters.json",
           1,
-          1771048757753380691,
-          660106
+          1771057618664748191,
+          625649
         ],
         [
           "mounts.json",
@@ -10536,26 +10536,26 @@
         [
           "movements.json",
           1,
-          1770332671830007236,
-          168
+          1771057589304681486,
+          189
         ],
         [
           "npc.json",
           1,
-          1771043797018434470,
-          1083094
+          1771057618928748735,
+          1100165
         ],
         [
           "npclib.json",
           1,
-          1770420313276242496,
-          7888
+          1771057589412681745,
+          13773
         ],
         [
           "otclient_data.json",
           1,
-          1765963375782366118,
-          4627
+          1771057482980466914,
+          4589
         ],
         [
           "otclient_mods.json",
@@ -10566,8 +10566,8 @@
         [
           "otclient_modules.json",
           1,
-          1765963386734386890,
-          139128
+          1771057618952748785,
+          136893
         ],
         [
           "otclient_src.json",
@@ -10584,56 +10584,56 @@
         [
           "php.json",
           1,
-          1770409737552738606,
-          4018
+          1771057618960748801,
+          4326
         ],
         [
           "questlog.json",
           1,
-          1770934433329849635,
-          3
+          1771057619008748900,
+          237561
         ],
         [
           "quests.json",
           1,
-          1771041891826624189,
-          64574
+          1771057619024748933,
+          65638
         ],
         [
           "raids.json",
           1,
-          1770406928460001137,
-          17829
+          1771057619028748942,
+          17954
         ],
         [
           "scripts.json",
           1,
-          1771054737622694544,
-          191123
+          1771057619064749016,
+          195650
         ],
         [
           "server.json",
           1,
-          1771049130918833757,
-          289770
+          1771057619116749123,
+          292809
         ],
         [
           "spells.json",
           1,
-          1771025793642426432,
+          1771057589540682051,
           80352
         ],
         [
           "startup.json",
           1,
-          1765963450754514495,
-          1639
+          1771057589540682051,
+          1672
         ],
         [
           "talkactions.json",
           1,
-          1770564304684212981,
-          16802
+          1771057619124749140,
+          18100
         ],
         [
           "ui.json",
@@ -10653,29 +10653,29 @@
         "language_name": "Francuski",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 9242,
-        "english_copy_keys": 24201,
-        "missing_keys": 2155,
+        "translated_keys": 28962,
+        "english_copy_keys": 24565,
+        "missing_keys": 174,
         "missing_files": 0,
-        "completion_pct": 17.25,
+        "completion_pct": 54.05,
         "server_keys": 49731,
-        "server_translated": 9240,
-        "server_pct": 18.58,
+        "server_translated": 25737,
+        "server_pct": 51.75,
         "client_keys": 3855,
-        "client_translated": 2,
-        "client_pct": 0.05
+        "client_translated": 3225,
+        "client_pct": 83.66
       },
       "files": {
         "achievements.json": {
           "sig": [
             1,
-            1770936556847194000,
-            120327
+            1771058343490266774,
+            123031
           ],
           "row": {
             "total_reference_keys": 1048,
-            "translated_keys": 529,
-            "english_copy_keys": 1046,
+            "translated_keys": 538,
+            "english_copy_keys": 517,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -10683,13 +10683,13 @@
         "actions.json": {
           "sig": [
             1,
-            1770332671834188271,
-            2669
+            1771057589044680863,
+            2973
           ],
           "row": {
             "total_reference_keys": 35,
-            "translated_keys": 0,
-            "english_copy_keys": 35,
+            "translated_keys": 29,
+            "english_copy_keys": 6,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -10697,13 +10697,13 @@
         "books.json": {
           "sig": [
             1,
-            1770327373399159029,
-            295232
+            1771057618360747563,
+            298662
           ],
           "row": {
             "total_reference_keys": 1403,
             "translated_keys": 92,
-            "english_copy_keys": 1403,
+            "english_copy_keys": 717,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -10711,13 +10711,13 @@
         "chatchannels.json": {
           "sig": [
             1,
-            1770407609804877031,
-            1071
+            1771057589060680901,
+            1211
           ],
           "row": {
             "total_reference_keys": 16,
-            "translated_keys": 0,
-            "english_copy_keys": 16,
+            "translated_keys": 10,
+            "english_copy_keys": 6,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -10725,13 +10725,13 @@
         "client.json": {
           "sig": [
             1,
-            1770409731232324670,
-            14946
+            1771057618364747572,
+            15653
           ],
           "row": {
             "total_reference_keys": 242,
-            "translated_keys": 0,
-            "english_copy_keys": 6,
+            "translated_keys": 179,
+            "english_copy_keys": 66,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -10739,13 +10739,13 @@
         "cpp.json": {
           "sig": [
             1,
-            1770565117520822961,
-            55451
+            1771057618376747597,
+            60277
           ],
           "row": {
             "total_reference_keys": 879,
-            "translated_keys": 18,
-            "english_copy_keys": 877,
+            "translated_keys": 468,
+            "english_copy_keys": 426,
             "missing_keys": 2,
             "missing_files": 0
           }
@@ -10753,13 +10753,13 @@
         "creaturescripts.json": {
           "sig": [
             1,
-            1770332671825826202,
-            363
+            1771057589072680930,
+            392
           ],
           "row": {
             "total_reference_keys": 4,
-            "translated_keys": 0,
-            "english_copy_keys": 4,
+            "translated_keys": 2,
+            "english_copy_keys": 2,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -10767,12 +10767,12 @@
         "dataroot.json": {
           "sig": [
             1,
-            1765963301654212826,
-            319
+            1771057482496465849,
+            323
           ],
           "row": {
             "total_reference_keys": 3,
-            "translated_keys": 0,
+            "translated_keys": 3,
             "english_copy_keys": 0,
             "missing_keys": 0,
             "missing_files": 0
@@ -10795,13 +10795,13 @@
         "events.json": {
           "sig": [
             1,
-            1770409731359754869,
-            1060
+            1771057589072680930,
+            1225
           ],
           "row": {
             "total_reference_keys": 14,
-            "translated_keys": 1,
-            "english_copy_keys": 13,
+            "translated_keys": 10,
+            "english_copy_keys": 4,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -10809,13 +10809,13 @@
         "example_merchant.json": {
           "sig": [
             1,
-            1770409731379667803,
-            1071
+            1771057589072680930,
+            1194
           ],
           "row": {
             "total_reference_keys": 14,
-            "translated_keys": 1,
-            "english_copy_keys": 14,
+            "translated_keys": 10,
+            "english_copy_keys": 4,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -10823,13 +10823,13 @@
         "globalevents.json": {
           "sig": [
             1,
-            1770334276888961494,
-            524
+            1771057589072680930,
+            618
           ],
           "row": {
             "total_reference_keys": 5,
-            "translated_keys": 0,
-            "english_copy_keys": 5,
+            "translated_keys": 5,
+            "english_copy_keys": 0,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -10837,13 +10837,13 @@
         "html.json": {
           "sig": [
             1,
-            1765411496199675013,
-            106771
+            1771057618404747654,
+            104024
           ],
           "row": {
             "total_reference_keys": 1495,
-            "translated_keys": 0,
-            "english_copy_keys": 0,
+            "translated_keys": 1055,
+            "english_copy_keys": 409,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -10851,13 +10851,13 @@
         "items.json": {
           "sig": [
             1,
-            1771043120369081650,
-            885160
+            1771057618580748017,
+            837598
           ],
           "row": {
             "total_reference_keys": 17057,
-            "translated_keys": 3396,
-            "english_copy_keys": 3157,
+            "translated_keys": 15898,
+            "english_copy_keys": 5878,
             "missing_keys": 163,
             "missing_files": 0
           }
@@ -10865,27 +10865,27 @@
         "libs.json": {
           "sig": [
             1,
-            1770560203197112917,
-            6176
+            1771057589232681313,
+            7162
           ],
           "row": {
             "total_reference_keys": 89,
-            "translated_keys": 2,
-            "english_copy_keys": 84,
-            "missing_keys": 5,
+            "translated_keys": 63,
+            "english_copy_keys": 28,
+            "missing_keys": 0,
             "missing_files": 0
           }
         },
         "messages.json": {
           "sig": [
             1,
-            1765390372454661521,
-            719
+            1771057589232681313,
+            811
           ],
           "row": {
             "total_reference_keys": 11,
-            "translated_keys": 0,
-            "english_copy_keys": 11,
+            "translated_keys": 8,
+            "english_copy_keys": 3,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -10893,13 +10893,13 @@
         "modules.json": {
           "sig": [
             1,
-            1770332671830007236,
-            1065
+            1771057589232681313,
+            1116
           ],
           "row": {
             "total_reference_keys": 19,
-            "translated_keys": 0,
-            "english_copy_keys": 19,
+            "translated_keys": 5,
+            "english_copy_keys": 14,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -10907,13 +10907,13 @@
         "monsters.json": {
           "sig": [
             1,
-            1771048757753380691,
-            660106
+            1771057618664748191,
+            625649
           ],
           "row": {
             "total_reference_keys": 5915,
-            "translated_keys": 1933,
-            "english_copy_keys": 2755,
+            "translated_keys": 4867,
+            "english_copy_keys": 5515,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -10935,13 +10935,13 @@
         "movements.json": {
           "sig": [
             1,
-            1770332671830007236,
-            168
+            1771057589304681486,
+            189
           ],
           "row": {
             "total_reference_keys": 2,
-            "translated_keys": 0,
-            "english_copy_keys": 2,
+            "translated_keys": 2,
+            "english_copy_keys": 0,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -10949,13 +10949,13 @@
         "npc.json": {
           "sig": [
             1,
-            1771043797018434470,
-            1083094
+            1771057618928748735,
+            1100165
           ],
           "row": {
             "total_reference_keys": 13769,
-            "translated_keys": 1276,
-            "english_copy_keys": 7551,
+            "translated_keys": 1257,
+            "english_copy_keys": 4144,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -10963,27 +10963,27 @@
         "npclib.json": {
           "sig": [
             1,
-            1770420313276242496,
-            7888
+            1771057589412681745,
+            13773
           ],
           "row": {
             "total_reference_keys": 147,
-            "translated_keys": 0,
-            "english_copy_keys": 80,
-            "missing_keys": 67,
+            "translated_keys": 129,
+            "english_copy_keys": 18,
+            "missing_keys": 0,
             "missing_files": 0
           }
         },
         "otclient_data.json": {
           "sig": [
             1,
-            1765963375782366118,
-            4627
+            1771057482980466914,
+            4589
           ],
           "row": {
             "total_reference_keys": 72,
-            "translated_keys": 0,
-            "english_copy_keys": 0,
+            "translated_keys": 65,
+            "english_copy_keys": 7,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -11005,13 +11005,13 @@
         "otclient_modules.json": {
           "sig": [
             1,
-            1765963386734386890,
-            139128
+            1771057618952748785,
+            136893
           ],
           "row": {
             "total_reference_keys": 1987,
-            "translated_keys": 0,
-            "english_copy_keys": 0,
+            "translated_keys": 1897,
+            "english_copy_keys": 115,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -11047,13 +11047,13 @@
         "php.json": {
           "sig": [
             1,
-            1770409737552738606,
-            4018
+            1771057618960748801,
+            4326
           ],
           "row": {
             "total_reference_keys": 59,
-            "translated_keys": 2,
-            "english_copy_keys": 28,
+            "translated_keys": 29,
+            "english_copy_keys": 30,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -11061,27 +11061,27 @@
         "questlog.json": {
           "sig": [
             1,
-            1770934433329849635,
-            3
+            1771057619008748900,
+            237561
           ],
           "row": {
             "total_reference_keys": 1918,
-            "translated_keys": 0,
-            "english_copy_keys": 0,
-            "missing_keys": 1918,
+            "translated_keys": 7,
+            "english_copy_keys": 1280,
+            "missing_keys": 9,
             "missing_files": 0
           }
         },
         "quests.json": {
           "sig": [
             1,
-            1771041891826624189,
-            64574
+            1771057619024748933,
+            65638
           ],
           "row": {
             "total_reference_keys": 610,
-            "translated_keys": 144,
-            "english_copy_keys": 469,
+            "translated_keys": 136,
+            "english_copy_keys": 269,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -11089,13 +11089,13 @@
         "raids.json": {
           "sig": [
             1,
-            1770406928460001137,
-            17829
+            1771057619028748942,
+            17954
           ],
           "row": {
             "total_reference_keys": 273,
             "translated_keys": 147,
-            "english_copy_keys": 273,
+            "english_copy_keys": 248,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -11103,13 +11103,13 @@
         "scripts.json": {
           "sig": [
             1,
-            1771054737622694544,
-            191123
+            1771057619064749016,
+            195650
           ],
           "row": {
             "total_reference_keys": 2170,
-            "translated_keys": 79,
-            "english_copy_keys": 2105,
+            "translated_keys": 310,
+            "english_copy_keys": 1336,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -11117,13 +11117,13 @@
         "server.json": {
           "sig": [
             1,
-            1771049130918833757,
-            289770
+            1771057619116749123,
+            292809
           ],
           "row": {
             "total_reference_keys": 2574,
-            "translated_keys": 85,
-            "english_copy_keys": 2524,
+            "translated_keys": 55,
+            "english_copy_keys": 1927,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -11131,7 +11131,7 @@
         "spells.json": {
           "sig": [
             1,
-            1771025793642426432,
+            1771057589540682051,
             80352
           ],
           "row": {
@@ -11145,13 +11145,13 @@
         "startup.json": {
           "sig": [
             1,
-            1765963450754514495,
-            1639
+            1771057589540682051,
+            1672
           ],
           "row": {
             "total_reference_keys": 23,
-            "translated_keys": 0,
-            "english_copy_keys": 0,
+            "translated_keys": 10,
+            "english_copy_keys": 12,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -11159,13 +11159,13 @@
         "talkactions.json": {
           "sig": [
             1,
-            1770564304684212981,
-            16802
+            1771057619124749140,
+            18100
           ],
           "row": {
             "total_reference_keys": 199,
-            "translated_keys": 3,
-            "english_copy_keys": 197,
+            "translated_keys": 142,
+            "english_copy_keys": 57,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -11307,8 +11307,8 @@
         [
           "monsters.json",
           1,
-          1770409734242618622,
-          323534
+          1771056233861839118,
+          323483
         ],
         [
           "mounts.json",
@@ -11436,14 +11436,14 @@
         "language_name": "HE",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 11690,
-        "english_copy_keys": 29287,
+        "translated_keys": 11769,
+        "english_copy_keys": 29302,
         "missing_keys": 2155,
         "missing_files": 0,
-        "completion_pct": 21.82,
+        "completion_pct": 21.96,
         "server_keys": 49731,
-        "server_translated": 11677,
-        "server_pct": 23.48,
+        "server_translated": 11756,
+        "server_pct": 23.64,
         "client_keys": 3855,
         "client_translated": 13,
         "client_pct": 0.34
@@ -11690,13 +11690,13 @@
         "monsters.json": {
           "sig": [
             1,
-            1770409734242618622,
-            323534
+            1771056233861839118,
+            323483
           ],
           "row": {
             "total_reference_keys": 5915,
-            "translated_keys": 4721,
-            "english_copy_keys": 5783,
+            "translated_keys": 4800,
+            "english_copy_keys": 5798,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -12090,8 +12090,8 @@
         [
           "monsters.json",
           1,
-          1770935249438468615,
-          323518
+          1771056443258284672,
+          324346
         ],
         [
           "mounts.json",
@@ -12219,14 +12219,14 @@
         "language_name": "HI",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 11772,
-        "english_copy_keys": 29241,
+        "translated_keys": 11851,
+        "english_copy_keys": 29253,
         "missing_keys": 2155,
         "missing_files": 0,
-        "completion_pct": 21.97,
+        "completion_pct": 22.12,
         "server_keys": 49731,
-        "server_translated": 11759,
-        "server_pct": 23.65,
+        "server_translated": 11838,
+        "server_pct": 23.8,
         "client_keys": 3855,
         "client_translated": 13,
         "client_pct": 0.34
@@ -12473,13 +12473,13 @@
         "monsters.json": {
           "sig": [
             1,
-            1770935249438468615,
-            323518
+            1771056443258284672,
+            324346
           ],
           "row": {
             "total_reference_keys": 5915,
-            "translated_keys": 4724,
-            "english_copy_keys": 5786,
+            "translated_keys": 4803,
+            "english_copy_keys": 5798,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -12873,8 +12873,8 @@
         [
           "monsters.json",
           1,
-          1770935273902482233,
-          660867
+          1771056492402388604,
+          660451
         ],
         [
           "mounts.json",
@@ -13002,14 +13002,14 @@
         "language_name": "HR",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 8658,
-        "english_copy_keys": 24359,
+        "translated_keys": 8738,
+        "english_copy_keys": 24430,
         "missing_keys": 2155,
         "missing_files": 0,
-        "completion_pct": 16.16,
+        "completion_pct": 16.31,
         "server_keys": 49731,
-        "server_translated": 8656,
-        "server_pct": 17.41,
+        "server_translated": 8736,
+        "server_pct": 17.57,
         "client_keys": 3855,
         "client_translated": 2,
         "client_pct": 0.05
@@ -13256,13 +13256,13 @@
         "monsters.json": {
           "sig": [
             1,
-            1770935273902482233,
-            660867
+            1771056492402388604,
+            660451
           ],
           "row": {
             "total_reference_keys": 5915,
-            "translated_keys": 1613,
-            "english_copy_keys": 2675,
+            "translated_keys": 1693,
+            "english_copy_keys": 2746,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -14439,8 +14439,8 @@
         [
           "monsters.json",
           1,
-          1770936163270994150,
-          323518
+          1771056696934818214,
+          323680
         ],
         [
           "mounts.json",
@@ -14568,14 +14568,14 @@
         "language_name": "HY",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 11773,
-        "english_copy_keys": 29240,
+        "translated_keys": 11852,
+        "english_copy_keys": 29258,
         "missing_keys": 2155,
         "missing_files": 0,
-        "completion_pct": 21.97,
+        "completion_pct": 22.12,
         "server_keys": 49731,
-        "server_translated": 11760,
-        "server_pct": 23.65,
+        "server_translated": 11839,
+        "server_pct": 23.81,
         "client_keys": 3855,
         "client_translated": 13,
         "client_pct": 0.34
@@ -14822,13 +14822,13 @@
         "monsters.json": {
           "sig": [
             1,
-            1770936163270994150,
-            323518
+            1771056696934818214,
+            323680
           ],
           "row": {
             "total_reference_keys": 5915,
-            "translated_keys": 4724,
-            "english_copy_keys": 5786,
+            "translated_keys": 4803,
+            "english_copy_keys": 5804,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -15222,8 +15222,8 @@
         [
           "monsters.json",
           1,
-          1770936166978995129,
-          323518
+          1771056802603034964,
+          323330
         ],
         [
           "mounts.json",
@@ -15351,14 +15351,14 @@
         "language_name": "ID",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 11779,
-        "english_copy_keys": 29236,
+        "translated_keys": 11859,
+        "english_copy_keys": 29253,
         "missing_keys": 2155,
         "missing_files": 0,
-        "completion_pct": 21.98,
+        "completion_pct": 22.13,
         "server_keys": 49731,
-        "server_translated": 11766,
-        "server_pct": 23.66,
+        "server_translated": 11846,
+        "server_pct": 23.82,
         "client_keys": 3855,
         "client_translated": 13,
         "client_pct": 0.34
@@ -15605,13 +15605,13 @@
         "monsters.json": {
           "sig": [
             1,
-            1770936166978995129,
-            323518
+            1771056802603034964,
+            323330
           ],
           "row": {
             "total_reference_keys": 5915,
-            "translated_keys": 4724,
-            "english_copy_keys": 5786,
+            "translated_keys": 4804,
+            "english_copy_keys": 5803,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -16788,8 +16788,8 @@
         [
           "monsters.json",
           1,
-          1770936170718997314,
-          323518
+          1771056973799389223,
+          323572
         ],
         [
           "mounts.json",
@@ -16917,14 +16917,14 @@
         "language_name": "Japoński",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 11659,
-        "english_copy_keys": 29289,
+        "translated_keys": 11734,
+        "english_copy_keys": 29300,
         "missing_keys": 2155,
         "missing_files": 0,
-        "completion_pct": 21.76,
+        "completion_pct": 21.9,
         "server_keys": 49731,
-        "server_translated": 11646,
-        "server_pct": 23.42,
+        "server_translated": 11721,
+        "server_pct": 23.57,
         "client_keys": 3855,
         "client_translated": 13,
         "client_pct": 0.34
@@ -17171,13 +17171,13 @@
         "monsters.json": {
           "sig": [
             1,
-            1770936170718997314,
-            323518
+            1771056973799389223,
+            323572
           ],
           "row": {
             "total_reference_keys": 5915,
-            "translated_keys": 4724,
-            "english_copy_keys": 5786,
+            "translated_keys": 4799,
+            "english_copy_keys": 5797,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -18354,8 +18354,8 @@
         [
           "monsters.json",
           1,
-          1770409734578077686,
-          660883
+          1771057049403554058,
+          660489
         ],
         [
           "mounts.json",
@@ -18483,14 +18483,14 @@
         "language_name": "KK",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 8647,
-        "english_copy_keys": 24359,
+        "translated_keys": 8727,
+        "english_copy_keys": 24430,
         "missing_keys": 2155,
         "missing_files": 0,
-        "completion_pct": 16.14,
+        "completion_pct": 16.29,
         "server_keys": 49731,
-        "server_translated": 8645,
-        "server_pct": 17.38,
+        "server_translated": 8725,
+        "server_pct": 17.54,
         "client_keys": 3855,
         "client_translated": 2,
         "client_pct": 0.05
@@ -18737,13 +18737,13 @@
         "monsters.json": {
           "sig": [
             1,
-            1770409734578077686,
-            660883
+            1771057049403554058,
+            660489
           ],
           "row": {
             "total_reference_keys": 5915,
-            "translated_keys": 1610,
-            "english_copy_keys": 2672,
+            "translated_keys": 1690,
+            "english_copy_keys": 2743,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -19137,8 +19137,8 @@
         [
           "monsters.json",
           1,
-          1770409734638702818,
-          323534
+          1771057158643775774,
+          323362
         ],
         [
           "mounts.json",
@@ -19266,14 +19266,14 @@
         "language_name": "Koreański",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 11767,
-        "english_copy_keys": 29232,
+        "translated_keys": 11833,
+        "english_copy_keys": 29246,
         "missing_keys": 2155,
         "missing_files": 0,
-        "completion_pct": 21.96,
+        "completion_pct": 22.08,
         "server_keys": 49731,
-        "server_translated": 11754,
-        "server_pct": 23.64,
+        "server_translated": 11820,
+        "server_pct": 23.77,
         "client_keys": 3855,
         "client_translated": 13,
         "client_pct": 0.34
@@ -19520,13 +19520,13 @@
         "monsters.json": {
           "sig": [
             1,
-            1770409734638702818,
-            323534
+            1771057158643775774,
+            323362
           ],
           "row": {
             "total_reference_keys": 5915,
-            "translated_keys": 4721,
-            "english_copy_keys": 5783,
+            "translated_keys": 4787,
+            "english_copy_keys": 5797,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -23733,49 +23733,49 @@
         [
           "achievements.json",
           1,
-          1770936575039204215,
-          120287
+          1771057619968750880,
+          122537
         ],
         [
           "actions.json",
           1,
-          1770332672310826205,
-          2669
+          1771057619972750888,
+          2693
         ],
         [
           "books.json",
           1,
-          1770327373533485709,
-          295232
+          1771057620036751020,
+          298662
         ],
         [
           "chatchannels.json",
           1,
-          1770407609963997453,
-          1071
+          1771057620040751028,
+          1076
         ],
         [
           "client.json",
           1,
-          1770409731260193835,
-          14946
+          1771057620040751028,
+          14927
         ],
         [
           "cpp.json",
           1,
-          1770565117832445198,
-          55451
+          1771057620048751045,
+          55725
         ],
         [
           "creaturescripts.json",
           1,
-          1770332672302464136,
-          363
+          1771057620048751045,
+          373
         ],
         [
           "dataroot.json",
           1,
-          1765963682831595458,
+          1771057565184636249,
           319
         ],
         [
@@ -23787,56 +23787,56 @@
         [
           "events.json",
           1,
-          1770409731367720042,
-          1060
+          1771057620052751053,
+          1084
         ],
         [
           "example_merchant.json",
           1,
-          1770409731387632976,
-          1071
+          1771057620052751053,
+          1080
         ],
         [
           "globalevents.json",
           1,
-          1770334277056793150,
-          524
+          1771057620052751053,
+          529
         ],
         [
           "html.json",
           1,
-          1765411523375437988,
+          1771057565208636301,
           106771
         ],
         [
           "items.json",
           1,
-          1771044212067262818,
-          884760
+          1771057620212751382,
+          889975
         ],
         [
           "libs.json",
           1,
-          1770560203208877134,
-          6176
+          1771057620220751399,
+          6626
         ],
         [
           "messages.json",
           1,
-          1765390372550060408,
-          719
+          1771057620224751407,
+          723
         ],
         [
           "modules.json",
           1,
-          1770332672310826205,
-          1065
+          1771057620224751407,
+          1075
         ],
         [
           "monsters.json",
           1,
-          1771055238359747616,
-          660442
+          1771057620288751539,
+          661132
         ],
         [
           "mounts.json",
@@ -23847,25 +23847,25 @@
         [
           "movements.json",
           1,
-          1770332672306645171,
-          168
+          1771057620288751539,
+          173
         ],
         [
           "npc.json",
           1,
-          1771031331753497051,
-          1079069
+          1771057620864752726,
+          1096204
         ],
         [
           "npclib.json",
           1,
-          1770420313284572089,
-          7888
+          1771057620872752742,
+          13439
         ],
         [
           "otclient_data.json",
           1,
-          1765963757859971183,
+          1771057565644637240,
           4627
         ],
         [
@@ -23877,7 +23877,7 @@
         [
           "otclient_modules.json",
           1,
-          1765963768456023738,
+          1771057565660637274,
           139128
         ],
         [
@@ -23895,56 +23895,56 @@
         [
           "php.json",
           1,
-          1770409737560782133,
-          4018
+          1771057620880752759,
+          4027
         ],
         [
           "questlog.json",
           1,
-          1770934433409849669,
-          3
+          1771057620948752899,
+          237562
         ],
         [
           "quests.json",
           1,
-          1770562466773905932,
-          63184
+          1771057620972752948,
+          64478
         ],
         [
           "raids.json",
           1,
-          1770406928620162574,
-          17829
+          1771057620980752965,
+          17954
         ],
         [
           "scripts.json",
           1,
-          1770564523770912107,
-          190716
+          1771057621028753064,
+          193935
         ],
         [
           "server.json",
           1,
-          1770560205353886127,
-          289526
+          1771057621128753269,
+          292660
         ],
         [
           "spells.json",
           1,
-          1770407609967975464,
+          1771057590112683422,
           80302
         ],
         [
           "startup.json",
           1,
-          1765963831836342753,
+          1771057565816637610,
           1639
         ],
         [
           "talkactions.json",
           1,
-          1770564305162748795,
-          16802
+          1771057621148753311,
+          16886
         ],
         [
           "ui.json",
@@ -23964,14 +23964,14 @@
         "language_name": "Niderlandzki",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 8662,
-        "english_copy_keys": 24491,
-        "missing_keys": 2155,
+        "translated_keys": 7618,
+        "english_copy_keys": 18377,
+        "missing_keys": 174,
         "missing_files": 0,
-        "completion_pct": 16.16,
+        "completion_pct": 14.22,
         "server_keys": 49731,
-        "server_translated": 8660,
-        "server_pct": 17.41,
+        "server_translated": 7616,
+        "server_pct": 15.31,
         "client_keys": 3855,
         "client_translated": 2,
         "client_pct": 0.05
@@ -23980,13 +23980,13 @@
         "achievements.json": {
           "sig": [
             1,
-            1770936575039204215,
-            120287
+            1771057619968750880,
+            122537
           ],
           "row": {
             "total_reference_keys": 1048,
             "translated_keys": 529,
-            "english_copy_keys": 1046,
+            "english_copy_keys": 596,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -23994,13 +23994,13 @@
         "actions.json": {
           "sig": [
             1,
-            1770332672310826205,
-            2669
+            1771057619972750888,
+            2693
           ],
           "row": {
             "total_reference_keys": 35,
             "translated_keys": 0,
-            "english_copy_keys": 35,
+            "english_copy_keys": 30,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -24008,13 +24008,13 @@
         "books.json": {
           "sig": [
             1,
-            1770327373533485709,
-            295232
+            1771057620036751020,
+            298662
           ],
           "row": {
             "total_reference_keys": 1403,
             "translated_keys": 92,
-            "english_copy_keys": 1403,
+            "english_copy_keys": 717,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -24022,13 +24022,13 @@
         "chatchannels.json": {
           "sig": [
             1,
-            1770407609963997453,
-            1071
+            1771057620040751028,
+            1076
           ],
           "row": {
             "total_reference_keys": 16,
             "translated_keys": 0,
-            "english_copy_keys": 16,
+            "english_copy_keys": 15,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -24036,13 +24036,13 @@
         "client.json": {
           "sig": [
             1,
-            1770409731260193835,
-            14946
+            1771057620040751028,
+            14927
           ],
           "row": {
             "total_reference_keys": 242,
             "translated_keys": 0,
-            "english_copy_keys": 6,
+            "english_copy_keys": 4,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -24050,13 +24050,13 @@
         "cpp.json": {
           "sig": [
             1,
-            1770565117832445198,
-            55451
+            1771057620048751045,
+            55725
           ],
           "row": {
             "total_reference_keys": 879,
             "translated_keys": 18,
-            "english_copy_keys": 877,
+            "english_copy_keys": 822,
             "missing_keys": 2,
             "missing_files": 0
           }
@@ -24064,13 +24064,13 @@
         "creaturescripts.json": {
           "sig": [
             1,
-            1770332672302464136,
-            363
+            1771057620048751045,
+            373
           ],
           "row": {
             "total_reference_keys": 4,
             "translated_keys": 0,
-            "english_copy_keys": 4,
+            "english_copy_keys": 2,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -24078,7 +24078,7 @@
         "dataroot.json": {
           "sig": [
             1,
-            1765963682831595458,
+            1771057565184636249,
             319
           ],
           "row": {
@@ -24106,13 +24106,13 @@
         "events.json": {
           "sig": [
             1,
-            1770409731367720042,
-            1060
+            1771057620052751053,
+            1084
           ],
           "row": {
             "total_reference_keys": 14,
             "translated_keys": 1,
-            "english_copy_keys": 13,
+            "english_copy_keys": 8,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -24120,13 +24120,13 @@
         "example_merchant.json": {
           "sig": [
             1,
-            1770409731387632976,
-            1071
+            1771057620052751053,
+            1080
           ],
           "row": {
             "total_reference_keys": 14,
             "translated_keys": 1,
-            "english_copy_keys": 14,
+            "english_copy_keys": 12,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -24134,13 +24134,13 @@
         "globalevents.json": {
           "sig": [
             1,
-            1770334277056793150,
-            524
+            1771057620052751053,
+            529
           ],
           "row": {
             "total_reference_keys": 5,
             "translated_keys": 0,
-            "english_copy_keys": 5,
+            "english_copy_keys": 4,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -24148,7 +24148,7 @@
         "html.json": {
           "sig": [
             1,
-            1765411523375437988,
+            1771057565208636301,
             106771
           ],
           "row": {
@@ -24162,13 +24162,13 @@
         "items.json": {
           "sig": [
             1,
-            1771044212067262818,
-            884760
+            1771057620212751382,
+            889975
           ],
           "row": {
             "total_reference_keys": 17057,
-            "translated_keys": 3397,
-            "english_copy_keys": 3165,
+            "translated_keys": 2354,
+            "english_copy_keys": 2122,
             "missing_keys": 163,
             "missing_files": 0
           }
@@ -24176,27 +24176,27 @@
         "libs.json": {
           "sig": [
             1,
-            1770560203208877134,
-            6176
+            1771057620220751399,
+            6626
           ],
           "row": {
             "total_reference_keys": 89,
             "translated_keys": 2,
-            "english_copy_keys": 84,
-            "missing_keys": 5,
+            "english_copy_keys": 68,
+            "missing_keys": 0,
             "missing_files": 0
           }
         },
         "messages.json": {
           "sig": [
             1,
-            1765390372550060408,
-            719
+            1771057620224751407,
+            723
           ],
           "row": {
             "total_reference_keys": 11,
             "translated_keys": 0,
-            "english_copy_keys": 11,
+            "english_copy_keys": 10,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -24204,13 +24204,13 @@
         "modules.json": {
           "sig": [
             1,
-            1770332672310826205,
-            1065
+            1771057620224751407,
+            1075
           ],
           "row": {
             "total_reference_keys": 19,
             "translated_keys": 0,
-            "english_copy_keys": 19,
+            "english_copy_keys": 17,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -24218,13 +24218,13 @@
         "monsters.json": {
           "sig": [
             1,
-            1771055238359747616,
-            660442
+            1771057620288751539,
+            661132
           ],
           "row": {
             "total_reference_keys": 5915,
             "translated_keys": 1693,
-            "english_copy_keys": 2746,
+            "english_copy_keys": 2608,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -24246,13 +24246,13 @@
         "movements.json": {
           "sig": [
             1,
-            1770332672306645171,
-            168
+            1771057620288751539,
+            173
           ],
           "row": {
             "total_reference_keys": 2,
             "translated_keys": 0,
-            "english_copy_keys": 2,
+            "english_copy_keys": 1,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -24260,13 +24260,13 @@
         "npc.json": {
           "sig": [
             1,
-            1771031331753497051,
-            1079069
+            1771057620864752726,
+            1096204
           ],
           "row": {
             "total_reference_keys": 13769,
-            "translated_keys": 1189,
-            "english_copy_keys": 7588,
+            "translated_keys": 1185,
+            "english_copy_keys": 4164,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -24274,21 +24274,21 @@
         "npclib.json": {
           "sig": [
             1,
-            1770420313284572089,
-            7888
+            1771057620872752742,
+            13439
           ],
           "row": {
             "total_reference_keys": 147,
             "translated_keys": 0,
-            "english_copy_keys": 80,
-            "missing_keys": 67,
+            "english_copy_keys": 93,
+            "missing_keys": 0,
             "missing_files": 0
           }
         },
         "otclient_data.json": {
           "sig": [
             1,
-            1765963757859971183,
+            1771057565644637240,
             4627
           ],
           "row": {
@@ -24316,7 +24316,7 @@
         "otclient_modules.json": {
           "sig": [
             1,
-            1765963768456023738,
+            1771057565660637274,
             139128
           ],
           "row": {
@@ -24358,13 +24358,13 @@
         "php.json": {
           "sig": [
             1,
-            1770409737560782133,
-            4018
+            1771057620880752759,
+            4027
           ],
           "row": {
             "total_reference_keys": 59,
             "translated_keys": 2,
-            "english_copy_keys": 28,
+            "english_copy_keys": 26,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -24372,27 +24372,27 @@
         "questlog.json": {
           "sig": [
             1,
-            1770934433409849669,
-            3
+            1771057620948752899,
+            237562
           ],
           "row": {
             "total_reference_keys": 1918,
-            "translated_keys": 0,
-            "english_copy_keys": 0,
-            "missing_keys": 1918,
+            "translated_keys": 6,
+            "english_copy_keys": 1281,
+            "missing_keys": 9,
             "missing_files": 0
           }
         },
         "quests.json": {
           "sig": [
             1,
-            1770562466773905932,
-            63184
+            1771057620972752948,
+            64478
           ],
           "row": {
             "total_reference_keys": 610,
             "translated_keys": 3,
-            "english_copy_keys": 610,
+            "english_copy_keys": 351,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -24400,13 +24400,13 @@
         "raids.json": {
           "sig": [
             1,
-            1770406928620162574,
-            17829
+            1771057620980752965,
+            17954
           ],
           "row": {
             "total_reference_keys": 273,
             "translated_keys": 147,
-            "english_copy_keys": 273,
+            "english_copy_keys": 248,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -24414,13 +24414,13 @@
         "scripts.json": {
           "sig": [
             1,
-            1770564523770912107,
-            190716
+            1771057621028753064,
+            193935
           ],
           "row": {
             "total_reference_keys": 2170,
             "translated_keys": 20,
-            "english_copy_keys": 2164,
+            "english_copy_keys": 1520,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -24428,13 +24428,13 @@
         "server.json": {
           "sig": [
             1,
-            1770560205353886127,
-            289526
+            1771057621128753269,
+            292660
           ],
           "row": {
             "total_reference_keys": 2574,
-            "translated_keys": 38,
-            "english_copy_keys": 2571,
+            "translated_keys": 35,
+            "english_copy_keys": 1944,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -24442,7 +24442,7 @@
         "spells.json": {
           "sig": [
             1,
-            1770407609967975464,
+            1771057590112683422,
             80302
           ],
           "row": {
@@ -24456,7 +24456,7 @@
         "startup.json": {
           "sig": [
             1,
-            1765963831836342753,
+            1771057565816637610,
             1639
           ],
           "row": {
@@ -24470,13 +24470,13 @@
         "talkactions.json": {
           "sig": [
             1,
-            1770564305162748795,
-            16802
+            1771057621148753311,
+            16886
           ],
           "row": {
             "total_reference_keys": 199,
             "translated_keys": 3,
-            "english_copy_keys": 197,
+            "english_copy_keys": 180,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -25371,8 +25371,8 @@
         [
           "html.json",
           1,
-          1771048045802926955,
-          104614
+          1771058183573933148,
+          104612
         ],
         [
           "items.json",
@@ -25401,8 +25401,8 @@
         [
           "monsters.json",
           1,
-          1771042592872027543,
-          655481
+          1771057474080446519,
+          655209
         ],
         [
           "mounts.json",
@@ -25419,8 +25419,8 @@
         [
           "npc.json",
           1,
-          1771042418427673898,
-          1875036
+          1771057309664106150,
+          1875408
         ],
         [
           "npclib.json",
@@ -25443,8 +25443,8 @@
         [
           "otclient_modules.json",
           1,
-          1771048233315304475,
-          137918
+          1771058290846158147,
+          137924
         ],
         [
           "otclient_src.json",
@@ -25473,7 +25473,7 @@
         [
           "quests.json",
           1,
-          1771042807632458138,
+          1771057957065457655,
           65576
         ],
         [
@@ -25485,7 +25485,7 @@
         [
           "scripts.json",
           1,
-          1771047987398805405,
+          1771058072525697634,
           200629
         ],
         [
@@ -25530,17 +25530,17 @@
         "language_name": "Polski",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 40166,
-        "english_copy_keys": 2857,
+        "translated_keys": 40264,
+        "english_copy_keys": 2837,
         "missing_keys": 2083,
         "missing_files": 0,
-        "completion_pct": 74.96,
+        "completion_pct": 75.14,
         "server_keys": 49731,
-        "server_translated": 37406,
-        "server_pct": 75.22,
+        "server_translated": 37510,
+        "server_pct": 75.43,
         "client_keys": 3855,
-        "client_translated": 2760,
-        "client_pct": 71.6
+        "client_translated": 2754,
+        "client_pct": 71.44
       },
       "files": {
         "achievements.json": {
@@ -25714,12 +25714,12 @@
         "html.json": {
           "sig": [
             1,
-            1771048045802926955,
-            104614
+            1771058183573933148,
+            104612
           ],
           "row": {
             "total_reference_keys": 1495,
-            "translated_keys": 480,
+            "translated_keys": 481,
             "english_copy_keys": 159,
             "missing_keys": 0,
             "missing_files": 0
@@ -25784,13 +25784,13 @@
         "monsters.json": {
           "sig": [
             1,
-            1771042592872027543,
-            655481
+            1771057474080446519,
+            655209
           ],
           "row": {
             "total_reference_keys": 5915,
-            "translated_keys": 4650,
-            "english_copy_keys": 1065,
+            "translated_keys": 4720,
+            "english_copy_keys": 1072,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -25826,13 +25826,13 @@
         "npc.json": {
           "sig": [
             1,
-            1771042418427673898,
-            1875036
+            1771057309664106150,
+            1875408
           ],
           "row": {
             "total_reference_keys": 13769,
-            "translated_keys": 13545,
-            "english_copy_keys": 299,
+            "translated_keys": 13579,
+            "english_copy_keys": 265,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -25882,13 +25882,13 @@
         "otclient_modules.json": {
           "sig": [
             1,
-            1771048233315304475,
-            137918
+            1771058290846158147,
+            137924
           ],
           "row": {
             "total_reference_keys": 1987,
-            "translated_keys": 1934,
-            "english_copy_keys": 88,
+            "translated_keys": 1927,
+            "english_copy_keys": 95,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -25952,7 +25952,7 @@
         "quests.json": {
           "sig": [
             1,
-            1771042807632458138,
+            1771057957065457655,
             65576
           ],
           "row": {
@@ -25980,7 +25980,7 @@
         "scripts.json": {
           "sig": [
             1,
-            1771047987398805405,
+            1771058072525697634,
             200629
           ],
           "row": {
@@ -26865,50 +26865,50 @@
         [
           "achievements.json",
           1,
-          1770936578427205512,
-          120293
+          1771057621228753475,
+          122543
         ],
         [
           "actions.json",
           1,
-          1770332672448800996,
-          2669
+          1771057621232753484,
+          2732
         ],
         [
           "books.json",
           1,
-          1770327373571265088,
-          295232
+          1771057621352753731,
+          298662
         ],
         [
           "chatchannels.json",
           1,
-          1770407610011733235,
-          1071
+          1771057621356753739,
+          1076
         ],
         [
           "client.json",
           1,
-          1770409731272137960,
-          15459
+          1771057621360753747,
+          15468
         ],
         [
           "cpp.json",
           1,
-          1770565117922036591,
-          55451
+          1771057621380753788,
+          55725
         ],
         [
           "creaturescripts.json",
           1,
-          1770332672436257240,
-          363
+          1771057621380753788,
+          412
         ],
         [
           "dataroot.json",
           1,
-          1765943689078954874,
-          319
+          1771057484588470449,
+          315
         ],
         [
           "errors.json",
@@ -26919,56 +26919,56 @@
         [
           "events.json",
           1,
-          1770409731371702629,
-          1060
+          1771057621384753797,
+          1126
         ],
         [
           "example_merchant.json",
           1,
-          1770409731387632976,
-          1071
+          1771057621388753805,
+          1140
         ],
         [
           "globalevents.json",
           1,
-          1770334277098751065,
-          524
+          1771057621388753805,
+          583
         ],
         [
           "html.json",
           1,
-          1765412710457883258,
+          1771057566024638058,
           106771
         ],
         [
           "items.json",
           1,
-          1771046873156525388,
-          885122
+          1771057621720754488,
+          868825
         ],
         [
           "libs.json",
           1,
-          1770560203189270105,
-          6176
+          1771057621732754513,
+          6626
         ],
         [
           "messages.json",
           1,
-          1765390372569935176,
-          719
+          1771057621732754513,
+          739
         ],
         [
           "modules.json",
           1,
-          1770332672444610836,
-          1065
+          1771057621736754521,
+          1082
         ],
         [
           "monsters.json",
           1,
-          1770409734945870153,
-          660883
+          1771057621860754777,
+          661572
         ],
         [
           "mounts.json",
@@ -26979,25 +26979,25 @@
         [
           "movements.json",
           1,
-          1770332672440438275,
-          168
+          1771057621868754793,
+          173
         ],
         [
           "npc.json",
           1,
-          1771033653338145782,
-          1078990
+          1771057622320755723,
+          1096144
         ],
         [
           "npclib.json",
           1,
-          1770420313288736886,
-          7888
+          1771057622332755748,
+          13439
         ],
         [
           "otclient_data.json",
           1,
-          1765943765455118089,
+          1771057566516639117,
           4627
         ],
         [
@@ -27009,7 +27009,7 @@
         [
           "otclient_modules.json",
           1,
-          1765943777599143753,
+          1771057566532639151,
           139128
         ],
         [
@@ -27027,56 +27027,56 @@
         [
           "php.json",
           1,
-          1770409737564803897,
-          4113
+          1771057622348755781,
+          4122
         ],
         [
           "questlog.json",
           1,
-          1770934433317849630,
-          3
+          1771057622424755937,
+          237562
         ],
         [
           "quests.json",
           1,
-          1770562466933876109,
-          63184
+          1771057622460756011,
+          64478
         ],
         [
           "raids.json",
           1,
-          1770406928672215041,
-          17829
+          1771057622472756036,
+          17954
         ],
         [
           "scripts.json",
           1,
-          1770564523801986263,
-          190716
+          1771057622536756168,
+          193935
         ],
         [
           "server.json",
           1,
-          1770560205020566631,
-          289526
+          1771057622616756332,
+          292660
         ],
         [
           "spells.json",
           1,
-          1770407610015711065,
+          1771057590632684668,
           80302
         ],
         [
           "startup.json",
           1,
-          1765943843655282050,
-          1639
+          1771057590988685520,
+          1695
         ],
         [
           "talkactions.json",
           1,
-          1770564305267793242,
-          16802
+          1771057622636756373,
+          16886
         ],
         [
           "ui.json",
@@ -27096,14 +27096,14 @@
         "language_name": "Rumuński",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 8567,
-        "english_copy_keys": 24416,
-        "missing_keys": 2155,
+        "translated_keys": 13609,
+        "english_copy_keys": 18319,
+        "missing_keys": 174,
         "missing_files": 0,
-        "completion_pct": 15.99,
+        "completion_pct": 25.4,
         "server_keys": 49731,
-        "server_translated": 8565,
-        "server_pct": 17.22,
+        "server_translated": 13607,
+        "server_pct": 27.36,
         "client_keys": 3855,
         "client_translated": 2,
         "client_pct": 0.05
@@ -27112,13 +27112,13 @@
         "achievements.json": {
           "sig": [
             1,
-            1770936578427205512,
-            120293
+            1771057621228753475,
+            122543
           ],
           "row": {
             "total_reference_keys": 1048,
             "translated_keys": 529,
-            "english_copy_keys": 1046,
+            "english_copy_keys": 596,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -27126,13 +27126,13 @@
         "actions.json": {
           "sig": [
             1,
-            1770332672448800996,
-            2669
+            1771057621232753484,
+            2732
           ],
           "row": {
             "total_reference_keys": 35,
-            "translated_keys": 0,
-            "english_copy_keys": 35,
+            "translated_keys": 4,
+            "english_copy_keys": 28,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -27140,13 +27140,13 @@
         "books.json": {
           "sig": [
             1,
-            1770327373571265088,
-            295232
+            1771057621352753731,
+            298662
           ],
           "row": {
             "total_reference_keys": 1403,
             "translated_keys": 92,
-            "english_copy_keys": 1403,
+            "english_copy_keys": 717,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -27154,13 +27154,13 @@
         "chatchannels.json": {
           "sig": [
             1,
-            1770407610011733235,
-            1071
+            1771057621356753739,
+            1076
           ],
           "row": {
             "total_reference_keys": 16,
             "translated_keys": 0,
-            "english_copy_keys": 16,
+            "english_copy_keys": 15,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -27168,13 +27168,13 @@
         "client.json": {
           "sig": [
             1,
-            1770409731272137960,
-            15459
+            1771057621360753747,
+            15468
           ],
           "row": {
             "total_reference_keys": 242,
             "translated_keys": 0,
-            "english_copy_keys": 6,
+            "english_copy_keys": 4,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -27182,13 +27182,13 @@
         "cpp.json": {
           "sig": [
             1,
-            1770565117922036591,
-            55451
+            1771057621380753788,
+            55725
           ],
           "row": {
             "total_reference_keys": 879,
             "translated_keys": 18,
-            "english_copy_keys": 877,
+            "english_copy_keys": 822,
             "missing_keys": 2,
             "missing_files": 0
           }
@@ -27196,13 +27196,13 @@
         "creaturescripts.json": {
           "sig": [
             1,
-            1770332672436257240,
-            363
+            1771057621380753788,
+            412
           ],
           "row": {
             "total_reference_keys": 4,
-            "translated_keys": 0,
-            "english_copy_keys": 4,
+            "translated_keys": 2,
+            "english_copy_keys": 0,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -27210,12 +27210,12 @@
         "dataroot.json": {
           "sig": [
             1,
-            1765943689078954874,
-            319
+            1771057484588470449,
+            315
           ],
           "row": {
             "total_reference_keys": 3,
-            "translated_keys": 0,
+            "translated_keys": 3,
             "english_copy_keys": 0,
             "missing_keys": 0,
             "missing_files": 0
@@ -27238,13 +27238,13 @@
         "events.json": {
           "sig": [
             1,
-            1770409731371702629,
-            1060
+            1771057621384753797,
+            1126
           ],
           "row": {
             "total_reference_keys": 14,
-            "translated_keys": 1,
-            "english_copy_keys": 13,
+            "translated_keys": 4,
+            "english_copy_keys": 6,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -27252,13 +27252,13 @@
         "example_merchant.json": {
           "sig": [
             1,
-            1770409731387632976,
-            1071
+            1771057621388753805,
+            1140
           ],
           "row": {
             "total_reference_keys": 14,
-            "translated_keys": 1,
-            "english_copy_keys": 14,
+            "translated_keys": 4,
+            "english_copy_keys": 8,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -27266,13 +27266,13 @@
         "globalevents.json": {
           "sig": [
             1,
-            1770334277098751065,
-            524
+            1771057621388753805,
+            583
           ],
           "row": {
             "total_reference_keys": 5,
-            "translated_keys": 0,
-            "english_copy_keys": 5,
+            "translated_keys": 2,
+            "english_copy_keys": 2,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -27280,7 +27280,7 @@
         "html.json": {
           "sig": [
             1,
-            1765412710457883258,
+            1771057566024638058,
             106771
           ],
           "row": {
@@ -27294,13 +27294,13 @@
         "items.json": {
           "sig": [
             1,
-            1771046873156525388,
-            885122
+            1771057621720754488,
+            868825
           ],
           "row": {
             "total_reference_keys": 17057,
-            "translated_keys": 3385,
-            "english_copy_keys": 3164,
+            "translated_keys": 8400,
+            "english_copy_keys": 2139,
             "missing_keys": 163,
             "missing_files": 0
           }
@@ -27308,27 +27308,27 @@
         "libs.json": {
           "sig": [
             1,
-            1770560203189270105,
-            6176
+            1771057621732754513,
+            6626
           ],
           "row": {
             "total_reference_keys": 89,
             "translated_keys": 2,
-            "english_copy_keys": 84,
-            "missing_keys": 5,
+            "english_copy_keys": 68,
+            "missing_keys": 0,
             "missing_files": 0
           }
         },
         "messages.json": {
           "sig": [
             1,
-            1765390372569935176,
-            719
+            1771057621732754513,
+            739
           ],
           "row": {
             "total_reference_keys": 11,
-            "translated_keys": 0,
-            "english_copy_keys": 11,
+            "translated_keys": 2,
+            "english_copy_keys": 8,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -27336,13 +27336,13 @@
         "modules.json": {
           "sig": [
             1,
-            1770332672444610836,
-            1065
+            1771057621736754521,
+            1082
           ],
           "row": {
             "total_reference_keys": 19,
-            "translated_keys": 0,
-            "english_copy_keys": 19,
+            "translated_keys": 1,
+            "english_copy_keys": 16,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -27350,13 +27350,13 @@
         "monsters.json": {
           "sig": [
             1,
-            1770409734945870153,
-            660883
+            1771057621860754777,
+            661572
           ],
           "row": {
             "total_reference_keys": 5915,
             "translated_keys": 1610,
-            "english_copy_keys": 2672,
+            "english_copy_keys": 2534,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -27378,13 +27378,13 @@
         "movements.json": {
           "sig": [
             1,
-            1770332672440438275,
-            168
+            1771057621868754793,
+            173
           ],
           "row": {
             "total_reference_keys": 2,
             "translated_keys": 0,
-            "english_copy_keys": 2,
+            "english_copy_keys": 1,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -27392,13 +27392,13 @@
         "npc.json": {
           "sig": [
             1,
-            1771033653338145782,
-            1078990
+            1771057622320755723,
+            1096144
           ],
           "row": {
             "total_reference_keys": 13769,
-            "translated_keys": 1189,
-            "english_copy_keys": 7588,
+            "translated_keys": 1183,
+            "english_copy_keys": 4166,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -27406,21 +27406,21 @@
         "npclib.json": {
           "sig": [
             1,
-            1770420313288736886,
-            7888
+            1771057622332755748,
+            13439
           ],
           "row": {
             "total_reference_keys": 147,
             "translated_keys": 0,
-            "english_copy_keys": 80,
-            "missing_keys": 67,
+            "english_copy_keys": 93,
+            "missing_keys": 0,
             "missing_files": 0
           }
         },
         "otclient_data.json": {
           "sig": [
             1,
-            1765943765455118089,
+            1771057566516639117,
             4627
           ],
           "row": {
@@ -27448,7 +27448,7 @@
         "otclient_modules.json": {
           "sig": [
             1,
-            1765943777599143753,
+            1771057566532639151,
             139128
           ],
           "row": {
@@ -27490,13 +27490,13 @@
         "php.json": {
           "sig": [
             1,
-            1770409737564803897,
-            4113
+            1771057622348755781,
+            4122
           ],
           "row": {
             "total_reference_keys": 59,
             "translated_keys": 2,
-            "english_copy_keys": 28,
+            "english_copy_keys": 26,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -27504,27 +27504,27 @@
         "questlog.json": {
           "sig": [
             1,
-            1770934433317849630,
-            3
+            1771057622424755937,
+            237562
           ],
           "row": {
             "total_reference_keys": 1918,
-            "translated_keys": 0,
-            "english_copy_keys": 0,
-            "missing_keys": 1918,
+            "translated_keys": 6,
+            "english_copy_keys": 1281,
+            "missing_keys": 9,
             "missing_files": 0
           }
         },
         "quests.json": {
           "sig": [
             1,
-            1770562466933876109,
-            63184
+            1771057622460756011,
+            64478
           ],
           "row": {
             "total_reference_keys": 610,
             "translated_keys": 3,
-            "english_copy_keys": 610,
+            "english_copy_keys": 351,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -27532,13 +27532,13 @@
         "raids.json": {
           "sig": [
             1,
-            1770406928672215041,
-            17829
+            1771057622472756036,
+            17954
           ],
           "row": {
             "total_reference_keys": 273,
             "translated_keys": 147,
-            "english_copy_keys": 273,
+            "english_copy_keys": 248,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -27546,13 +27546,13 @@
         "scripts.json": {
           "sig": [
             1,
-            1770564523801986263,
-            190716
+            1771057622536756168,
+            193935
           ],
           "row": {
             "total_reference_keys": 2170,
             "translated_keys": 20,
-            "english_copy_keys": 2164,
+            "english_copy_keys": 1520,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -27560,13 +27560,13 @@
         "server.json": {
           "sig": [
             1,
-            1770560205020566631,
-            289526
+            1771057622616756332,
+            292660
           ],
           "row": {
             "total_reference_keys": 2574,
-            "translated_keys": 38,
-            "english_copy_keys": 2571,
+            "translated_keys": 35,
+            "english_copy_keys": 1944,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -27574,7 +27574,7 @@
         "spells.json": {
           "sig": [
             1,
-            1770407610015711065,
+            1771057590632684668,
             80302
           ],
           "row": {
@@ -27588,13 +27588,13 @@
         "startup.json": {
           "sig": [
             1,
-            1765943843655282050,
-            1639
+            1771057590988685520,
+            1695
           ],
           "row": {
             "total_reference_keys": 23,
-            "translated_keys": 0,
-            "english_copy_keys": 0,
+            "translated_keys": 10,
+            "english_copy_keys": 12,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -27602,13 +27602,13 @@
         "talkactions.json": {
           "sig": [
             1,
-            1770564305267793242,
-            16802
+            1771057622636756373,
+            16886
           ],
           "row": {
             "total_reference_keys": 199,
             "translated_keys": 3,
-            "english_copy_keys": 197,
+            "english_copy_keys": 180,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -27654,8 +27654,8 @@
         [
           "actions.json",
           1,
-          1770332672478132116,
-          2669
+          1771057483788468691,
+          2735
         ],
         [
           "books.json",
@@ -27666,20 +27666,20 @@
         [
           "chatchannels.json",
           1,
-          1770407610019688895,
-          1071
+          1771057483796468708,
+          1137
         ],
         [
           "client.json",
           1,
-          1770409731280103133,
-          15527
+          1771057483804468726,
+          18017
         ],
         [
           "cpp.json",
           1,
-          1770565117937617703,
-          55451
+          1771057483820468761,
+          60206
         ],
         [
           "creaturescripts.json",
@@ -27690,8 +27690,8 @@
         [
           "dataroot.json",
           1,
-          1765877215699505007,
-          319
+          1771057483824468770,
+          434
         ],
         [
           "errors.json",
@@ -27702,56 +27702,56 @@
         [
           "events.json",
           1,
-          1770409731371702629,
-          1060
+          1771057483824468770,
+          1169
         ],
         [
           "example_merchant.json",
           1,
-          1770409731387632976,
-          1071
+          1771057483828468779,
+          1163
         ],
         [
           "globalevents.json",
           1,
-          1770334277111338439,
-          524
+          1771057483828468779,
+          668
         ],
         [
           "html.json",
           1,
-          1765416987578069221,
-          106990
+          1771057483856468840,
+          116843
         ],
         [
           "items.json",
           1,
-          1771043463633768113,
-          887612
+          1771057484132469447,
+          926040
         ],
         [
           "libs.json",
           1,
-          1770560203204955729,
-          6176
+          1771057484140469465,
+          7297
         ],
         [
           "messages.json",
           1,
-          1765390372573910129,
-          719
+          1771057484140469465,
+          791
         ],
         [
           "modules.json",
           1,
-          1770332672473941956,
-          1065
+          1771057484140469465,
+          1104
         ],
         [
           "monsters.json",
           1,
-          1771048930918047848,
-          661665
+          1771057484248469702,
+          628884
         ],
         [
           "mounts.json",
@@ -27762,26 +27762,26 @@
         [
           "movements.json",
           1,
-          1770332672473941956,
-          168
+          1771057484248469702,
+          236
         ],
         [
           "npc.json",
           1,
-          1771044079335001834,
-          1087998
+          1771057484408470053,
+          1087991
         ],
         [
           "npclib.json",
           1,
-          1770420313288736886,
-          7888
+          1771057484412470062,
+          15405
         ],
         [
           "otclient_data.json",
           1,
-          1765877222929109647,
-          4627
+          1771057484416470071,
+          5423
         ],
         [
           "otclient_mods.json",
@@ -27792,8 +27792,8 @@
         [
           "otclient_modules.json",
           1,
-          1765877230040365212,
-          139128
+          1771057484436470115,
+          158638
         ],
         [
           "otclient_src.json",
@@ -27810,20 +27810,20 @@
         [
           "php.json",
           1,
-          1770409737564803897,
-          4156
+          1771057484436470115,
+          4638
         ],
         [
           "questlog.json",
           1,
-          1770934433369849652,
-          3
+          1771057484460470168,
+          234431
         ],
         [
           "quests.json",
           1,
-          1771054272701693544,
-          68774
+          1771057484472470194,
+          68490
         ],
         [
           "raids.json",
@@ -27834,8 +27834,8 @@
         [
           "scripts.json",
           1,
-          1771054886139008065,
-          192705
+          1771057484512470282,
+          194987
         ],
         [
           "server.json",
@@ -27852,14 +27852,14 @@
         [
           "startup.json",
           1,
-          1765417023410095792,
-          1637
+          1771057484548470361,
+          1876
         ],
         [
           "talkactions.json",
           1,
-          1770564305279464847,
-          16802
+          1771057484552470370,
+          17725
         ],
         [
           "ui.json",
@@ -27879,17 +27879,17 @@
         "language_name": "Rosyjski",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 10275,
-        "english_copy_keys": 24251,
-        "missing_keys": 2155,
+        "translated_keys": 29407,
+        "english_copy_keys": 32175,
+        "missing_keys": 174,
         "missing_files": 0,
-        "completion_pct": 19.17,
+        "completion_pct": 54.88,
         "server_keys": 49731,
-        "server_translated": 10081,
-        "server_pct": 20.27,
+        "server_translated": 25951,
+        "server_pct": 52.18,
         "client_keys": 3855,
-        "client_translated": 194,
-        "client_pct": 5.03
+        "client_translated": 3456,
+        "client_pct": 89.65
       },
       "files": {
         "achievements.json": {
@@ -27909,13 +27909,13 @@
         "actions.json": {
           "sig": [
             1,
-            1770332672478132116,
-            2669
+            1771057483788468691,
+            2735
           ],
           "row": {
             "total_reference_keys": 35,
-            "translated_keys": 0,
-            "english_copy_keys": 35,
+            "translated_keys": 1,
+            "english_copy_keys": 34,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -27937,13 +27937,13 @@
         "chatchannels.json": {
           "sig": [
             1,
-            1770407610019688895,
-            1071
+            1771057483796468708,
+            1137
           ],
           "row": {
             "total_reference_keys": 16,
-            "translated_keys": 0,
-            "english_copy_keys": 16,
+            "translated_keys": 1,
+            "english_copy_keys": 15,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -27951,13 +27951,13 @@
         "client.json": {
           "sig": [
             1,
-            1770409731280103133,
-            15527
+            1771057483804468726,
+            18017
           ],
           "row": {
             "total_reference_keys": 242,
-            "translated_keys": 28,
-            "english_copy_keys": 6,
+            "translated_keys": 189,
+            "english_copy_keys": 59,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -27965,13 +27965,13 @@
         "cpp.json": {
           "sig": [
             1,
-            1770565117937617703,
-            55451
+            1771057483820468761,
+            60206
           ],
           "row": {
             "total_reference_keys": 879,
-            "translated_keys": 18,
-            "english_copy_keys": 877,
+            "translated_keys": 177,
+            "english_copy_keys": 718,
             "missing_keys": 2,
             "missing_files": 0
           }
@@ -27993,12 +27993,12 @@
         "dataroot.json": {
           "sig": [
             1,
-            1765877215699505007,
-            319
+            1771057483824468770,
+            434
           ],
           "row": {
             "total_reference_keys": 3,
-            "translated_keys": 0,
+            "translated_keys": 3,
             "english_copy_keys": 0,
             "missing_keys": 0,
             "missing_files": 0
@@ -28021,13 +28021,13 @@
         "events.json": {
           "sig": [
             1,
-            1770409731371702629,
-            1060
+            1771057483824468770,
+            1169
           ],
           "row": {
             "total_reference_keys": 14,
-            "translated_keys": 1,
-            "english_copy_keys": 13,
+            "translated_keys": 2,
+            "english_copy_keys": 12,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -28035,13 +28035,13 @@
         "example_merchant.json": {
           "sig": [
             1,
-            1770409731387632976,
-            1071
+            1771057483828468779,
+            1163
           ],
           "row": {
             "total_reference_keys": 14,
-            "translated_keys": 1,
-            "english_copy_keys": 14,
+            "translated_keys": 2,
+            "english_copy_keys": 13,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -28049,13 +28049,13 @@
         "globalevents.json": {
           "sig": [
             1,
-            1770334277111338439,
-            524
+            1771057483828468779,
+            668
           ],
           "row": {
             "total_reference_keys": 5,
-            "translated_keys": 0,
-            "english_copy_keys": 5,
+            "translated_keys": 2,
+            "english_copy_keys": 3,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -28063,13 +28063,13 @@
         "html.json": {
           "sig": [
             1,
-            1765416987578069221,
-            106990
+            1771057483856468840,
+            116843
           ],
           "row": {
             "total_reference_keys": 1495,
-            "translated_keys": 158,
-            "english_copy_keys": 0,
+            "translated_keys": 1187,
+            "english_copy_keys": 307,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -28077,13 +28077,13 @@
         "items.json": {
           "sig": [
             1,
-            1771043463633768113,
-            887612
+            1771057484132469447,
+            926040
           ],
           "row": {
             "total_reference_keys": 17057,
-            "translated_keys": 4125,
-            "english_copy_keys": 3156,
+            "translated_keys": 16894,
+            "english_copy_keys": 6189,
             "missing_keys": 163,
             "missing_files": 0
           }
@@ -28091,27 +28091,27 @@
         "libs.json": {
           "sig": [
             1,
-            1770560203204955729,
-            6176
+            1771057484140469465,
+            7297
           ],
           "row": {
             "total_reference_keys": 89,
-            "translated_keys": 2,
-            "english_copy_keys": 84,
-            "missing_keys": 5,
+            "translated_keys": 19,
+            "english_copy_keys": 72,
+            "missing_keys": 0,
             "missing_files": 0
           }
         },
         "messages.json": {
           "sig": [
             1,
-            1765390372573910129,
-            719
+            1771057484140469465,
+            791
           ],
           "row": {
             "total_reference_keys": 11,
-            "translated_keys": 0,
-            "english_copy_keys": 11,
+            "translated_keys": 1,
+            "english_copy_keys": 10,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -28119,13 +28119,13 @@
         "modules.json": {
           "sig": [
             1,
-            1770332672473941956,
-            1065
+            1771057484140469465,
+            1104
           ],
           "row": {
             "total_reference_keys": 19,
-            "translated_keys": 0,
-            "english_copy_keys": 19,
+            "translated_keys": 2,
+            "english_copy_keys": 17,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -28133,13 +28133,13 @@
         "monsters.json": {
           "sig": [
             1,
-            1771048930918047848,
-            661665
+            1771057484248469702,
+            628884
           ],
           "row": {
             "total_reference_keys": 5915,
-            "translated_keys": 2081,
-            "english_copy_keys": 2783,
+            "translated_keys": 4872,
+            "english_copy_keys": 5548,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -28161,13 +28161,13 @@
         "movements.json": {
           "sig": [
             1,
-            1770332672473941956,
-            168
+            1771057484248469702,
+            236
           ],
           "row": {
             "total_reference_keys": 2,
-            "translated_keys": 0,
-            "english_copy_keys": 2,
+            "translated_keys": 1,
+            "english_copy_keys": 1,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -28175,13 +28175,13 @@
         "npc.json": {
           "sig": [
             1,
-            1771044079335001834,
-            1087998
+            1771057484408470053,
+            1087991
           ],
           "row": {
             "total_reference_keys": 13769,
-            "translated_keys": 1278,
-            "english_copy_keys": 7543,
+            "translated_keys": 1277,
+            "english_copy_keys": 7544,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -28189,26 +28189,26 @@
         "npclib.json": {
           "sig": [
             1,
-            1770420313288736886,
-            7888
+            1771057484412470062,
+            15405
           ],
           "row": {
             "total_reference_keys": 147,
-            "translated_keys": 0,
-            "english_copy_keys": 80,
-            "missing_keys": 67,
+            "translated_keys": 70,
+            "english_copy_keys": 77,
+            "missing_keys": 0,
             "missing_files": 0
           }
         },
         "otclient_data.json": {
           "sig": [
             1,
-            1765877222929109647,
-            4627
+            1771057484416470071,
+            5423
           ],
           "row": {
             "total_reference_keys": 72,
-            "translated_keys": 0,
+            "translated_keys": 72,
             "english_copy_keys": 0,
             "missing_keys": 0,
             "missing_files": 0
@@ -28231,13 +28231,13 @@
         "otclient_modules.json": {
           "sig": [
             1,
-            1765877230040365212,
-            139128
+            1771057484436470115,
+            158638
           ],
           "row": {
             "total_reference_keys": 1987,
-            "translated_keys": 0,
-            "english_copy_keys": 0,
+            "translated_keys": 1982,
+            "english_copy_keys": 49,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -28273,13 +28273,13 @@
         "php.json": {
           "sig": [
             1,
-            1770409737564803897,
-            4156
+            1771057484436470115,
+            4638
           ],
           "row": {
             "total_reference_keys": 59,
-            "translated_keys": 8,
-            "english_copy_keys": 19,
+            "translated_keys": 26,
+            "english_copy_keys": 36,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -28287,27 +28287,27 @@
         "questlog.json": {
           "sig": [
             1,
-            1770934433369849652,
-            3
+            1771057484460470168,
+            234431
           ],
           "row": {
             "total_reference_keys": 1918,
-            "translated_keys": 0,
-            "english_copy_keys": 0,
-            "missing_keys": 1918,
+            "translated_keys": 7,
+            "english_copy_keys": 1908,
+            "missing_keys": 9,
             "missing_files": 0
           }
         },
         "quests.json": {
           "sig": [
             1,
-            1771054272701693544,
-            68774
+            1771057484472470194,
+            68490
           ],
           "row": {
             "total_reference_keys": 610,
-            "translated_keys": 146,
-            "english_copy_keys": 467,
+            "translated_keys": 118,
+            "english_copy_keys": 495,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -28329,13 +28329,13 @@
         "scripts.json": {
           "sig": [
             1,
-            1771054886139008065,
-            192705
+            1771057484512470282,
+            194987
           ],
           "row": {
             "total_reference_keys": 2170,
-            "translated_keys": 79,
-            "english_copy_keys": 2105,
+            "translated_keys": 121,
+            "english_copy_keys": 2063,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -28371,13 +28371,13 @@
         "startup.json": {
           "sig": [
             1,
-            1765417023410095792,
-            1637
+            1771057484548470361,
+            1876
           ],
           "row": {
             "total_reference_keys": 23,
-            "translated_keys": 2,
-            "english_copy_keys": 0,
+            "translated_keys": 10,
+            "english_copy_keys": 12,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -28385,13 +28385,13 @@
         "talkactions.json": {
           "sig": [
             1,
-            1770564305279464847,
-            16802
+            1771057484552470370,
+            17725
           ],
           "row": {
             "total_reference_keys": 199,
-            "translated_keys": 3,
-            "english_copy_keys": 197,
+            "translated_keys": 26,
+            "english_copy_keys": 174,
             "missing_keys": 0,
             "missing_files": 0
           }

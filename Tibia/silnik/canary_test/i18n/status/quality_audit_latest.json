@@ -1,377 +1,189 @@
 {
-  "timestamp": "2026-02-14T07:56:25.689247Z",
+  "timestamp": "2026-02-14T08:40:40.410879Z",
   "checked_entries": 100,
-  "issues_found": 52,
+  "issues_found": 25,
   "issues_by_type": {
-    "identical_to_en": 52,
-    "suspicious_log_low": 110,
-    "suspicious_log_high": 90,
+    "identical_to_en_exempt": 64,
+    "identical_to_en": 25,
+    "suspicious_log_critical": 107,
+    "suspicious_log_low": 93,
     "suspicious_rejected_critical": 200
   },
   "issues": [
     {
-      "key": "monster.furyosa.name",
-      "lang": "cs",
+      "key": "otclient_modules.charms.tr_64",
+      "lang": "pl",
       "type": "identical_to_en",
-      "en": "Furyosa",
-      "translated": "Furyosa"
+      "en": "Curse",
+      "translated": "Curse"
     },
     {
-      "key": "monster.furyosa.desc",
-      "lang": "cs",
+      "key": "otclient_modules.game_cyclopedia.tr_6",
+      "lang": "pl",
       "type": "identical_to_en",
-      "en": "Furyosa",
-      "translated": "Furyosa"
+      "en": "Cyclopedia",
+      "translated": "Cyclopedia"
     },
     {
-      "key": "monster.fernfang.name",
-      "lang": "cs",
+      "key": "otclient_modules.game_cyclopedia_otui.tr_8",
+      "lang": "pl",
       "type": "identical_to_en",
-      "en": "Fernfang",
-      "translated": "Fernfang"
+      "en": "Cyclopedia",
+      "translated": "Cyclopedia"
     },
     {
-      "key": "monster.fernfang.desc",
-      "lang": "cs",
+      "key": "otclient_modules.player.tr_6",
+      "lang": "pl",
       "type": "identical_to_en",
-      "en": "Fernfang",
-      "translated": "Fernfang"
+      "en": "Druid",
+      "translated": "Druid"
     },
     {
-      "key": "monster.badger.name",
-      "lang": "cs",
+      "key": "otclient_modules.spelllist_otui.tr_12",
+      "lang": "pl",
       "type": "identical_to_en",
-      "en": "Badger",
-      "translated": "Badger"
+      "en": "Druid",
+      "translated": "Druid"
     },
     {
-      "key": "monster.water_buffalo.name",
-      "lang": "cs",
+      "key": "questlog.quest_11.mission_46.name",
+      "lang": "es",
       "type": "identical_to_en",
-      "en": "Water Buffalo",
-      "translated": "Water Buffalo"
+      "en": "Paw and Fur: Destroyers",
+      "translated": "Paw and Fur: Destroyers"
     },
     {
-      "key": "monster.yeti.name",
-      "lang": "cs",
+      "key": "questlog.quest_11.mission_47.name",
+      "lang": "es",
       "type": "identical_to_en",
-      "en": "Yeti",
-      "translated": "Yeti"
+      "en": "Paw and Fur: Undead Dragons",
+      "translated": "Paw and Fur: Undead Dragons"
     },
     {
-      "key": "monster.wild_warrior.name",
-      "lang": "cs",
+      "key": "questlog.quest_11.mission_48.name",
+      "lang": "es",
       "type": "identical_to_en",
-      "en": "Wild Warrior",
-      "translated": "Wild Warrior"
+      "en": "Paw and Fur: Demons",
+      "translated": "Paw and Fur: Demons"
     },
     {
-      "key": "monster.warlock.name",
-      "lang": "cs",
+      "key": "questlog.quest_11.mission_50.name",
+      "lang": "es",
       "type": "identical_to_en",
-      "en": "Warlock",
-      "translated": "Warlock"
+      "en": "Paw and Fur: Hide",
+      "translated": "Paw and Fur: Hide"
     },
     {
-      "key": "monster.nomad.name",
-      "lang": "cs",
+      "key": "questlog.quest_11.mission_51.name",
+      "lang": "es",
       "type": "identical_to_en",
-      "en": "Nomad",
-      "translated": "Nomad"
+      "en": "Paw and Fur: Deathbine",
+      "translated": "Paw and Fur: Deathbine"
     },
     {
-      "key": "monster.nomad_blue.name",
-      "lang": "cs",
+      "key": "questlog.quest_11.mission_52.name",
+      "lang": "es",
       "type": "identical_to_en",
-      "en": "Nomad",
-      "translated": "Nomad"
+      "en": "Paw and Fur: The Bloodtusk",
+      "translated": "Paw and Fur: The Bloodtusk"
     },
     {
-      "key": "monster.feverish_citizen.name",
-      "lang": "cs",
+      "key": "questlog.quest_11.mission_53.name",
+      "lang": "es",
       "type": "identical_to_en",
-      "en": "Feverish Citizen",
-      "translated": "Feverish Citizen"
+      "en": "Paw and Fur: Shardhead",
+      "translated": "Paw and Fur: Shardhead"
     },
     {
-      "key": "monster.nomad_female.name",
-      "lang": "cs",
+      "key": "questlog.quest_11.mission_54.name",
+      "lang": "es",
       "type": "identical_to_en",
-      "en": "Nomad",
-      "translated": "Nomad"
+      "en": "Paw and Fur: Esmerelda",
+      "translated": "Paw and Fur: Esmerelda"
     },
     {
-      "key": "monster.fire_devil.name",
-      "lang": "cs",
+      "key": "questlog.quest_11.mission_55.name",
+      "lang": "es",
       "type": "identical_to_en",
-      "en": "Fire Devil",
-      "translated": "Fire Devil"
+      "en": "Paw and Fur: Fleshcrawler",
+      "translated": "Paw and Fur: Fleshcrawler"
     },
     {
-      "key": "monster.serpent_spawn.name",
-      "lang": "cs",
+      "key": "questlog.quest_11.mission_56.name",
+      "lang": "es",
       "type": "identical_to_en",
-      "en": "Serpent Spawn",
-      "translated": "Serpent Spawn"
+      "en": "Paw and Fur: Ribstride",
+      "translated": "Paw and Fur: Ribstride"
     },
     {
-      "key": "monster.cobra.name",
-      "lang": "cs",
+      "key": "questlog.quest_11.mission_57.name",
+      "lang": "es",
       "type": "identical_to_en",
-      "en": "Cobra",
-      "translated": "Cobra"
+      "en": "Paw and Fur: Bloodweb",
+      "translated": "Paw and Fur: Bloodweb"
     },
     {
-      "key": "monster.scarab.name",
-      "lang": "cs",
+      "key": "questlog.quest_11.mission_58.name",
+      "lang": "es",
       "type": "identical_to_en",
-      "en": "Scarab",
-      "translated": "Scarab"
+      "en": "Paw and Fur: Thul",
+      "translated": "Paw and Fur: Thul"
     },
     {
-      "key": "monster.feverish_citizen.name",
-      "lang": "az",
+      "key": "questlog.quest_11.mission_59.name",
+      "lang": "es",
       "type": "identical_to_en",
-      "en": "Feverish Citizen",
-      "translated": "Feverish Citizen"
+      "en": "Paw and Fur: The Old Widow",
+      "translated": "Paw and Fur: The Old Widow"
     },
     {
-      "key": "monster.nomad_female.name",
-      "lang": "az",
+      "key": "questlog.quest_11.mission_60.name",
+      "lang": "es",
       "type": "identical_to_en",
-      "en": "Nomad",
-      "translated": "Nomad"
+      "en": "Paw and Fur: Hemming",
+      "translated": "Paw and Fur: Hemming"
     },
     {
-      "key": "monster.fire_devil.name",
-      "lang": "az",
+      "key": "questlog.quest_11.mission_61.name",
+      "lang": "es",
       "type": "identical_to_en",
-      "en": "Fire Devil",
-      "translated": "Fire Devil"
+      "en": "Paw and Fur: Tormentor",
+      "translated": "Paw and Fur: Tormentor"
     },
     {
-      "key": "monster.serpent_spawn.name",
-      "lang": "az",
+      "key": "questlog.quest_11.mission_62.name",
+      "lang": "es",
       "type": "identical_to_en",
-      "en": "Serpent Spawn",
-      "translated": "Serpent Spawn"
+      "en": "Paw and Fur: Flameborn",
+      "translated": "Paw and Fur: Flameborn"
     },
     {
-      "key": "monster.cobra.name",
-      "lang": "az",
+      "key": "questlog.quest_11.mission_63.name",
+      "lang": "es",
       "type": "identical_to_en",
-      "en": "Cobra",
-      "translated": "Cobra"
+      "en": "Paw and Fur: Fazzrah",
+      "translated": "Paw and Fur: Fazzrah"
     },
     {
-      "key": "monster.scarab.name",
-      "lang": "az",
+      "key": "questlog.quest_11.mission_64.name",
+      "lang": "es",
       "type": "identical_to_en",
-      "en": "Scarab",
-      "translated": "Scarab"
+      "en": "Paw and Fur: Tromphonyte",
+      "translated": "Paw and Fur: Tromphonyte"
     },
     {
-      "key": "monster.terramite.name",
-      "lang": "az",
+      "key": "cpp.inspect.invisibility",
+      "lang": "pl",
       "type": "identical_to_en",
-      "en": "Terramite",
-      "translated": "Terramite"
+      "en": "Invisibility",
+      "translated": "Invisibility"
     },
     {
-      "key": "monster.gargoyle.name",
-      "lang": "az",
+      "key": "cpp.vocation.id_2",
+      "lang": "pl",
       "type": "identical_to_en",
-      "en": "Gargoyle",
-      "translated": "Gargoyle"
-    },
-    {
-      "key": "monster.zushuka.name",
-      "lang": "az",
-      "type": "identical_to_en",
-      "en": "Zushuka",
-      "translated": "Zushuka"
-    },
-    {
-      "key": "monster.mad_mage.name",
-      "lang": "az",
-      "type": "identical_to_en",
-      "en": "Mad Mage",
-      "translated": "Mad Mage"
-    },
-    {
-      "key": "monster.zevelon_duskbringer.name",
-      "lang": "az",
-      "type": "identical_to_en",
-      "en": "Zevelon Duskbringer",
-      "translated": "Zevelon Duskbringer"
-    },
-    {
-      "key": "monster.zevelon_duskbringer.desc",
-      "lang": "az",
-      "type": "identical_to_en",
-      "en": "Zevelon Duskbringer",
-      "translated": "Zevelon Duskbringer"
-    },
-    {
-      "key": "monster.munster.name",
-      "lang": "az",
-      "type": "identical_to_en",
-      "en": "Munster",
-      "translated": "Munster"
-    },
-    {
-      "key": "monster.munster.desc",
-      "lang": "az",
-      "type": "identical_to_en",
-      "en": "Munster",
-      "translated": "Munster"
-    },
-    {
-      "key": "monster.weakened_shlorg.name",
-      "lang": "az",
-      "type": "identical_to_en",
-      "en": "Weakened Shlorg",
-      "translated": "Weakened Shlorg"
-    },
-    {
-      "key": "monster.weakened_shlorg.desc",
-      "lang": "az",
-      "type": "identical_to_en",
-      "en": "Weakened Shlorg",
-      "translated": "Weakened Shlorg"
-    },
-    {
-      "key": "monster.fernfang.name",
-      "lang": "bg",
-      "type": "identical_to_en",
-      "en": "Fernfang",
-      "translated": "Fernfang"
-    },
-    {
-      "key": "monster.fernfang.desc",
-      "lang": "bg",
-      "type": "identical_to_en",
-      "en": "Fernfang",
-      "translated": "Fernfang"
-    },
-    {
-      "key": "monster.badger.name",
-      "lang": "bg",
-      "type": "identical_to_en",
-      "en": "Badger",
-      "translated": "Badger"
-    },
-    {
-      "key": "monster.water_buffalo.name",
-      "lang": "bg",
-      "type": "identical_to_en",
-      "en": "Water Buffalo",
-      "translated": "Water Buffalo"
-    },
-    {
-      "key": "monster.yeti.name",
-      "lang": "bg",
-      "type": "identical_to_en",
-      "en": "Yeti",
-      "translated": "Yeti"
-    },
-    {
-      "key": "monster.wild_warrior.name",
-      "lang": "bg",
-      "type": "identical_to_en",
-      "en": "Wild Warrior",
-      "translated": "Wild Warrior"
-    },
-    {
-      "key": "monster.warlock.name",
-      "lang": "bg",
-      "type": "identical_to_en",
-      "en": "Warlock",
-      "translated": "Warlock"
-    },
-    {
-      "key": "monster.nomad.name",
-      "lang": "bg",
-      "type": "identical_to_en",
-      "en": "Nomad",
-      "translated": "Nomad"
-    },
-    {
-      "key": "monster.nomad_blue.name",
-      "lang": "bg",
-      "type": "identical_to_en",
-      "en": "Nomad",
-      "translated": "Nomad"
-    },
-    {
-      "key": "monster.feverish_citizen.name",
-      "lang": "bg",
-      "type": "identical_to_en",
-      "en": "Feverish Citizen",
-      "translated": "Feverish Citizen"
-    },
-    {
-      "key": "monster.nomad_female.name",
-      "lang": "bg",
-      "type": "identical_to_en",
-      "en": "Nomad",
-      "translated": "Nomad"
-    },
-    {
-      "key": "monster.fire_devil.name",
-      "lang": "bg",
-      "type": "identical_to_en",
-      "en": "Fire Devil",
-      "translated": "Fire Devil"
-    },
-    {
-      "key": "monster.serpent_spawn.name",
-      "lang": "bg",
-      "type": "identical_to_en",
-      "en": "Serpent Spawn",
-      "translated": "Serpent Spawn"
-    },
-    {
-      "key": "monster.cobra.name",
-      "lang": "bg",
-      "type": "identical_to_en",
-      "en": "Cobra",
-      "translated": "Cobra"
-    },
-    {
-      "key": "monster.scarab.name",
-      "lang": "bg",
-      "type": "identical_to_en",
-      "en": "Scarab",
-      "translated": "Scarab"
-    },
-    {
-      "key": "monster.terramite.name",
-      "lang": "bg",
-      "type": "identical_to_en",
-      "en": "Terramite",
-      "translated": "Terramite"
-    },
-    {
-      "key": "monster.gargoyle.name",
-      "lang": "bg",
-      "type": "identical_to_en",
-      "en": "Gargoyle",
-      "translated": "Gargoyle"
-    },
-    {
-      "key": "monster.juggernaut.desc",
-      "lang": "bn",
-      "type": "identical_to_en",
-      "en": "a juggernaut",
-      "translated": "a juggernaut"
-    },
-    {
-      "key": "monster.hellspawn.name",
-      "lang": "bn",
-      "type": "identical_to_en",
-      "en": "Hellspawn",
-      "translated": "Hellspawn"
+      "en": "Druid",
+      "translated": "Druid"
     }
   ],
   "threshold": 10,

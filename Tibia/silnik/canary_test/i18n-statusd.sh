@@ -15,6 +15,7 @@
 #   bash i18n-statusd.sh --doctor        # tylko diagnostyka spójności
 #   bash i18n-statusd.sh --kpi           # tylko KPI snapshot
 #   bash i18n-statusd.sh --recommend     # rekomendacje profilu
+#   bash i18n-statusd.sh --reconcile-registry  # uzgodnij registry z LIVE
 #   bash i18n-statusd.sh --daily-report  # raport zarządczy 24h (JSON + MD)
 #
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -52,6 +53,12 @@ DEFAULT_METRICS_DRIFT_WARN_KEYS=50000
 DEFAULT_METRICS_DRIFT_CRIT_KEYS=100000
 DEFAULT_METRICS_DRIFT_WARN_PCT=95
 DEFAULT_METRICS_DRIFT_CRIT_PCT=99
+DEFAULT_PRIORITY_GATE_STUCK_MAX_ACTIVE_MINUTES=180
+DEFAULT_PRIORITY_GATE_STUCK_MAX_CYCLES=240
+DEFAULT_PRIORITY_GATE_STUCK_MIN_QUALITY_DROP_PCT=1
+DEFAULT_REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS=1000
+DEFAULT_REGISTRY_RECONCILE_MIN_OUTSIDE_PCT=2
+DEFAULT_REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS=1800
 
 REPAIR_QUEUE_STAGNATION_HOURS="$DEFAULT_REPAIR_QUEUE_STAGNATION_HOURS"
 REPAIR_QUEUE_STAGNATION_MIN_SAMPLES="$DEFAULT_REPAIR_QUEUE_STAGNATION_MIN_SAMPLES"
@@ -65,6 +72,12 @@ METRICS_DRIFT_WARN_KEYS="$DEFAULT_METRICS_DRIFT_WARN_KEYS"
 METRICS_DRIFT_CRIT_KEYS="$DEFAULT_METRICS_DRIFT_CRIT_KEYS"
 METRICS_DRIFT_WARN_PCT="$DEFAULT_METRICS_DRIFT_WARN_PCT"
 METRICS_DRIFT_CRIT_PCT="$DEFAULT_METRICS_DRIFT_CRIT_PCT"
+PRIORITY_GATE_STUCK_MAX_ACTIVE_MINUTES="$DEFAULT_PRIORITY_GATE_STUCK_MAX_ACTIVE_MINUTES"
+PRIORITY_GATE_STUCK_MAX_CYCLES="$DEFAULT_PRIORITY_GATE_STUCK_MAX_CYCLES"
+PRIORITY_GATE_STUCK_MIN_QUALITY_DROP_PCT="$DEFAULT_PRIORITY_GATE_STUCK_MIN_QUALITY_DROP_PCT"
+REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS="$DEFAULT_REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS"
+REGISTRY_RECONCILE_MIN_OUTSIDE_PCT="$DEFAULT_REGISTRY_RECONCILE_MIN_OUTSIDE_PCT"
+REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS="$DEFAULT_REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS"
 DAEMON_INTERVAL_SECONDS=60
 
 export HOME="/home/ptaku"
@@ -103,6 +116,16 @@ ensure_statusd_thresholds_file() {
     "crit_keys": $DEFAULT_METRICS_DRIFT_CRIT_KEYS,
     "warn_pct": $DEFAULT_METRICS_DRIFT_WARN_PCT,
     "crit_pct": $DEFAULT_METRICS_DRIFT_CRIT_PCT
+  },
+  "priority_gate_stuck": {
+    "max_active_minutes": $DEFAULT_PRIORITY_GATE_STUCK_MAX_ACTIVE_MINUTES,
+    "max_cycles": $DEFAULT_PRIORITY_GATE_STUCK_MAX_CYCLES,
+    "min_quality_drop_pct": $DEFAULT_PRIORITY_GATE_STUCK_MIN_QUALITY_DROP_PCT
+  },
+  "registry_reconcile": {
+    "min_outside_keys": $DEFAULT_REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS,
+    "min_outside_pct": $DEFAULT_REGISTRY_RECONCILE_MIN_OUTSIDE_PCT,
+    "min_interval_seconds": $DEFAULT_REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS
   }
 }
 EOF
@@ -128,6 +151,8 @@ def out(k, v):
 rq = cfg.get("repair_queue_stagnation", {}) if isinstance(cfg.get("repair_queue_stagnation", {}), dict) else {}
 sh = cfg.get("suspicious_high", {}) if isinstance(cfg.get("suspicious_high", {}), dict) else {}
 md = cfg.get("metrics_drift", {}) if isinstance(cfg.get("metrics_drift", {}), dict) else {}
+pg = cfg.get("priority_gate_stuck", {}) if isinstance(cfg.get("priority_gate_stuck", {}), dict) else {}
+rr = cfg.get("registry_reconcile", {}) if isinstance(cfg.get("registry_reconcile", {}), dict) else {}
 
 out("REPAIR_QUEUE_STAGNATION_HOURS", rq.get("window_hours"))
 out("REPAIR_QUEUE_STAGNATION_MIN_SAMPLES", rq.get("min_samples"))
@@ -143,6 +168,14 @@ out("METRICS_DRIFT_WARN_KEYS", md.get("warn_keys"))
 out("METRICS_DRIFT_CRIT_KEYS", md.get("crit_keys"))
 out("METRICS_DRIFT_WARN_PCT", md.get("warn_pct"))
 out("METRICS_DRIFT_CRIT_PCT", md.get("crit_pct"))
+
+out("PRIORITY_GATE_STUCK_MAX_ACTIVE_MINUTES", pg.get("max_active_minutes"))
+out("PRIORITY_GATE_STUCK_MAX_CYCLES", pg.get("max_cycles"))
+out("PRIORITY_GATE_STUCK_MIN_QUALITY_DROP_PCT", pg.get("min_quality_drop_pct"))
+
+out("REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS", rr.get("min_outside_keys"))
+out("REGISTRY_RECONCILE_MIN_OUTSIDE_PCT", rr.get("min_outside_pct"))
+out("REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS", rr.get("min_interval_seconds"))
 PY
 )
 
@@ -161,6 +194,12 @@ PY
             METRICS_DRIFT_CRIT_KEYS) METRICS_DRIFT_CRIT_KEYS="$value" ;;
             METRICS_DRIFT_WARN_PCT) METRICS_DRIFT_WARN_PCT="$value" ;;
             METRICS_DRIFT_CRIT_PCT) METRICS_DRIFT_CRIT_PCT="$value" ;;
+            PRIORITY_GATE_STUCK_MAX_ACTIVE_MINUTES) PRIORITY_GATE_STUCK_MAX_ACTIVE_MINUTES="$value" ;;
+            PRIORITY_GATE_STUCK_MAX_CYCLES) PRIORITY_GATE_STUCK_MAX_CYCLES="$value" ;;
+            PRIORITY_GATE_STUCK_MIN_QUALITY_DROP_PCT) PRIORITY_GATE_STUCK_MIN_QUALITY_DROP_PCT="$value" ;;
+            REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS) REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS="$value" ;;
+            REGISTRY_RECONCILE_MIN_OUTSIDE_PCT) REGISTRY_RECONCILE_MIN_OUTSIDE_PCT="$value" ;;
+            REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS) REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS="$value" ;;
         esac
     done <<< "$parsed"
 }
@@ -179,6 +218,12 @@ apply_statusd_env_overrides() {
     METRICS_DRIFT_CRIT_KEYS="${STATUSD_METRICS_DRIFT_CRIT_KEYS:-$METRICS_DRIFT_CRIT_KEYS}"
     METRICS_DRIFT_WARN_PCT="${STATUSD_METRICS_DRIFT_WARN_PCT:-$METRICS_DRIFT_WARN_PCT}"
     METRICS_DRIFT_CRIT_PCT="${STATUSD_METRICS_DRIFT_CRIT_PCT:-$METRICS_DRIFT_CRIT_PCT}"
+    PRIORITY_GATE_STUCK_MAX_ACTIVE_MINUTES="${STATUSD_PRIORITY_GATE_STUCK_MAX_ACTIVE_MINUTES:-$PRIORITY_GATE_STUCK_MAX_ACTIVE_MINUTES}"
+    PRIORITY_GATE_STUCK_MAX_CYCLES="${STATUSD_PRIORITY_GATE_STUCK_MAX_CYCLES:-$PRIORITY_GATE_STUCK_MAX_CYCLES}"
+    PRIORITY_GATE_STUCK_MIN_QUALITY_DROP_PCT="${STATUSD_PRIORITY_GATE_STUCK_MIN_QUALITY_DROP_PCT:-$PRIORITY_GATE_STUCK_MIN_QUALITY_DROP_PCT}"
+    REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS="${STATUSD_REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS:-$REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS}"
+    REGISTRY_RECONCILE_MIN_OUTSIDE_PCT="${STATUSD_REGISTRY_RECONCILE_MIN_OUTSIDE_PCT:-$REGISTRY_RECONCILE_MIN_OUTSIDE_PCT}"
+    REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS="${STATUSD_REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS:-$REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS}"
 }
 
 ensure_statusd_thresholds_file
@@ -190,7 +235,7 @@ apply_statusd_env_overrides
 # ═══════════════════════════════════════════════════════════════════════════════
 
 aggregate_telemetry() {
-    python3 - "$WORK_DIR" "$STATUS_DIR" "$STATUSD_REPORT_FILE" "$REPAIR_QUEUE_STAGNATION_HOURS" "$REPAIR_QUEUE_STAGNATION_MIN_SAMPLES" "$REPAIR_QUEUE_STAGNATION_MIN_DROP" "$SUSPICIOUS_HIGH_WINDOW_HOURS" "$SUSPICIOUS_HIGH_WARN_COUNT" "$SUSPICIOUS_HIGH_CRIT_COUNT" "$METRICS_DRIFT_WARN_KEYS" "$METRICS_DRIFT_CRIT_KEYS" "$METRICS_DRIFT_WARN_PCT" "$METRICS_DRIFT_CRIT_PCT" "$SUSPICIOUS_HIGH_RATE_WARN_PCT" "$SUSPICIOUS_HIGH_RATE_CRIT_PCT" "$STATUSD_THRESHOLDS_FILE" "$STATUSD_USE_ENV_OVERRIDES" <<'PYAGG'
+    python3 - "$WORK_DIR" "$STATUS_DIR" "$STATUSD_REPORT_FILE" "$REPAIR_QUEUE_STAGNATION_HOURS" "$REPAIR_QUEUE_STAGNATION_MIN_SAMPLES" "$REPAIR_QUEUE_STAGNATION_MIN_DROP" "$SUSPICIOUS_HIGH_WINDOW_HOURS" "$SUSPICIOUS_HIGH_WARN_COUNT" "$SUSPICIOUS_HIGH_CRIT_COUNT" "$METRICS_DRIFT_WARN_KEYS" "$METRICS_DRIFT_CRIT_KEYS" "$METRICS_DRIFT_WARN_PCT" "$METRICS_DRIFT_CRIT_PCT" "$SUSPICIOUS_HIGH_RATE_WARN_PCT" "$SUSPICIOUS_HIGH_RATE_CRIT_PCT" "$STATUSD_THRESHOLDS_FILE" "$STATUSD_USE_ENV_OVERRIDES" "$PRIORITY_GATE_STUCK_MAX_ACTIVE_MINUTES" "$PRIORITY_GATE_STUCK_MAX_CYCLES" "$PRIORITY_GATE_STUCK_MIN_QUALITY_DROP_PCT" "$REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS" "$REGISTRY_RECONCILE_MIN_OUTSIDE_PCT" "$REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS" <<'PYAGG'
 import json, sys, os, time
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
@@ -213,6 +258,12 @@ suspicious_rate_warn_pct = float(sys.argv[14] if len(sys.argv) > 14 and sys.argv
 suspicious_rate_crit_pct = float(sys.argv[15] if len(sys.argv) > 15 and sys.argv[15] else "20")
 thresholds_file = str(sys.argv[16]) if len(sys.argv) > 16 else ""
 thresholds_env_override = bool(str(sys.argv[17]).strip() == "1") if len(sys.argv) > 17 else False
+priority_gate_max_active_min = float(sys.argv[18] if len(sys.argv) > 18 and sys.argv[18] else "180")
+priority_gate_max_cycles = int(float(sys.argv[19] if len(sys.argv) > 19 and sys.argv[19] else "240"))
+priority_gate_min_quality_drop_pct = float(sys.argv[20] if len(sys.argv) > 20 and sys.argv[20] else "1")
+registry_reconcile_min_outside_keys = int(float(sys.argv[21] if len(sys.argv) > 21 and sys.argv[21] else "1000"))
+registry_reconcile_min_outside_pct = float(sys.argv[22] if len(sys.argv) > 22 and sys.argv[22] else "2")
+registry_reconcile_min_interval_s = int(float(sys.argv[23] if len(sys.argv) > 23 and sys.argv[23] else "1800"))
 
 now = datetime.now(timezone.utc)
 report = {
@@ -544,6 +595,139 @@ def _analyze_suspicious_high(status_dir, now, window_h, warn_count, crit_count, 
         "latest_timestamp": rows[-1]["timestamp"] if rows else "",
     }
 
+def _analyze_priority_gate_watch(status_dir, dispatch, quality_watch, now, max_active_minutes=180.0, max_cycles=240, min_quality_drop_pct=1.0):
+    watch_state_path = os.path.join(status_dir, "priority_gate_watch_state.json")
+    pg = dispatch.get("priority_gate", {}) if isinstance(dispatch.get("priority_gate", {}), dict) else {}
+    enabled = bool(pg.get("enabled", False))
+    active = bool(pg.get("active", False))
+    pending_langs = sorted({str(x).lower() for x in (pg.get("pending_langs", []) if isinstance(pg.get("pending_langs", []), list) else []) if str(x).strip()})
+    pending_key = ",".join(pending_langs)
+    cycle_counter = _safe_int(dispatch.get("cycle_counter", 0))
+    current_quality_rate = float(quality_watch.get("suspicious_high_rate_pct", 0) or 0.0)
+
+    lang_completion = {}
+    try:
+        for k, v in (pg.get("lang_completion", {}) if isinstance(pg.get("lang_completion", {}), dict) else {}).items():
+            lang_completion[str(k).lower()] = float(v or 0.0)
+    except Exception:
+        lang_completion = {}
+
+    out = {
+        "available": bool(enabled),
+        "enabled": bool(enabled),
+        "active": bool(active),
+        "pending_langs": pending_langs,
+        "pending_key": pending_key,
+        "cycle_counter": int(cycle_counter),
+        "start_cycle": int(cycle_counter),
+        "cycle_delta": 0,
+        "started_at": "",
+        "active_minutes": 0.0,
+        "baseline_quality_rate_pct": round(current_quality_rate, 3),
+        "current_quality_rate_pct": round(current_quality_rate, 3),
+        "best_quality_rate_pct": round(current_quality_rate, 3),
+        "quality_drop_pct": 0.0,
+        "best_quality_drop_pct": 0.0,
+        "lang_completion": lang_completion,
+        "detected": False,
+        "severity": "ok",
+        "reason": "inactive",
+        "thresholds": {
+            "max_active_minutes": float(max_active_minutes),
+            "max_cycles": int(max_cycles),
+            "min_quality_drop_pct": float(min_quality_drop_pct),
+        },
+    }
+
+    state = _read_json_retry(watch_state_path)
+    if not enabled:
+        out["reason"] = "priority_gate_disabled"
+    elif not active or not pending_langs:
+        out["reason"] = "priority_gate_inactive"
+    else:
+        prev_active = bool(state.get("active", False))
+        prev_pending_key = str(state.get("pending_key", "") or "")
+        prev_started_at = _parse_ts(state.get("started_at", ""))
+        prev_start_cycle = _safe_int(state.get("start_cycle", cycle_counter))
+        prev_baseline_rate = float(state.get("baseline_quality_rate_pct", current_quality_rate) or current_quality_rate)
+        prev_best_rate = float(state.get("best_quality_rate_pct", prev_baseline_rate) or prev_baseline_rate)
+
+        continuing = prev_active and prev_pending_key == pending_key and prev_started_at is not None
+        if continuing:
+            started_at = prev_started_at
+            start_cycle = prev_start_cycle
+            baseline_rate = prev_baseline_rate
+            best_rate = min(prev_best_rate, current_quality_rate)
+        else:
+            started_at = now
+            start_cycle = cycle_counter
+            baseline_rate = current_quality_rate
+            best_rate = current_quality_rate
+
+        active_minutes = max(0.0, (now - started_at).total_seconds() / 60.0)
+        cycle_delta = max(0, int(cycle_counter - start_cycle))
+        quality_drop = float(baseline_rate - current_quality_rate)
+        best_quality_drop = float(baseline_rate - best_rate)
+
+        detected = False
+        reason = "tracking"
+        if active_minutes >= float(max_active_minutes) and best_quality_drop < float(min_quality_drop_pct):
+            detected = True
+            reason = "active_time_without_quality_drop"
+        elif cycle_delta >= int(max_cycles) and best_quality_drop < float(min_quality_drop_pct):
+            detected = True
+            reason = "cycle_budget_without_quality_drop"
+
+        severity = "ok"
+        if detected:
+            if active_minutes >= (float(max_active_minutes) * 2.0) or cycle_delta >= (int(max_cycles) * 2):
+                severity = "critical"
+            else:
+                severity = "warning"
+        elif active_minutes >= (float(max_active_minutes) * 0.75) or cycle_delta >= int(int(max_cycles) * 0.75):
+            severity = "info"
+
+        out.update({
+            "start_cycle": int(start_cycle),
+            "cycle_delta": int(cycle_delta),
+            "started_at": started_at.isoformat().replace("+00:00", "Z"),
+            "active_minutes": round(active_minutes, 3),
+            "baseline_quality_rate_pct": round(baseline_rate, 3),
+            "current_quality_rate_pct": round(current_quality_rate, 3),
+            "best_quality_rate_pct": round(best_rate, 3),
+            "quality_drop_pct": round(quality_drop, 3),
+            "best_quality_drop_pct": round(best_quality_drop, 3),
+            "detected": bool(detected),
+            "severity": severity,
+            "reason": reason,
+        })
+
+    try:
+        persisted = {
+            "timestamp": now.isoformat().replace("+00:00", "Z"),
+            "enabled": bool(out.get("enabled", False)),
+            "active": bool(out.get("active", False)),
+            "pending_key": str(out.get("pending_key", "") or ""),
+            "pending_langs": out.get("pending_langs", []),
+            "started_at": str(out.get("started_at", "") or ""),
+            "start_cycle": int(out.get("start_cycle", 0) or 0),
+            "cycle_counter": int(out.get("cycle_counter", 0) or 0),
+            "baseline_quality_rate_pct": float(out.get("baseline_quality_rate_pct", 0.0) or 0.0),
+            "best_quality_rate_pct": float(out.get("best_quality_rate_pct", 0.0) or 0.0),
+            "current_quality_rate_pct": float(out.get("current_quality_rate_pct", 0.0) or 0.0),
+            "active_minutes": float(out.get("active_minutes", 0.0) or 0.0),
+            "detected": bool(out.get("detected", False)),
+            "severity": str(out.get("severity", "ok") or "ok"),
+            "reason": str(out.get("reason", "") or ""),
+            "lang_completion": out.get("lang_completion", {}),
+        }
+        with open(watch_state_path, "w", encoding="utf-8") as wf:
+            json.dump(persisted, wf, indent=2, ensure_ascii=False)
+    except Exception:
+        pass
+
+    return out
+
 # ── Heartbeat / worker state ─────────────────────────────────────────────
 worker_state = {}
 try:
@@ -647,10 +831,12 @@ except Exception:
 
 report["dispatch"] = {
     "last_target": dispatch.get("last_target_key", "?"),
+    "cycle_counter": _safe_int(dispatch.get("cycle_counter", 0)),
     "pending_total": dispatch.get("last_pending_total", 0),
     "candidates": dispatch.get("active_candidates_count", 0),
     "skipped_backoff": dispatch.get("skipped_backoff", 0),
     "skipped_guard_fail": dispatch.get("skipped_guard_fail", 0),
+    "priority_gate": dispatch.get("priority_gate", {}) if isinstance(dispatch.get("priority_gate", {}), dict) else {},
 }
 
 # ── Coverage (z translation_global_overview) ────────────────────────────
@@ -691,17 +877,31 @@ report["coverage"] = {k: coverage[k] for k in sorted(coverage.keys())}
 migration = overview.get("migration", {})
 if not isinstance(migration, dict):
     migration = {}
-if not migration:
-    # Fallback: czytaj z i18n_file_status.json
+
+def _collect_live_migration_snapshot():
     try:
         fs_path = os.path.join(work_dir, "i18n_file_status.json")
         with open(fs_path, encoding="utf-8") as f:
             fs = json.load(f)
         fs_files = fs.get("files", {})
-        fs_completed = sum(1 for info in fs_files.values()
-                          if info.get("stages", {}).get("8_sync", {}).get("status") == "completed")
-        fs_keys_registry = sum(info.get("stages", {}).get("5_extraction_en", {}).get("keys_added", 0)
-                      for info in fs_files.values())
+        if not isinstance(fs_files, dict):
+            fs_files = {}
+        fs_global = fs.get("global_stats", {})
+        if not isinstance(fs_global, dict):
+            fs_global = {}
+
+        fs_completed = 0
+        fs_keys_registry_raw = 0
+        for info in fs_files.values():
+            if not isinstance(info, dict):
+                continue
+            if str(info.get("overall_status", "")) == "completed":
+                fs_completed += 1
+            stages = info.get("stages", {}) if isinstance(info.get("stages", {}), dict) else {}
+            fs_keys_registry_raw += _safe_int(
+                (stages.get("5_extraction_en", {}) if isinstance(stages.get("5_extraction_en", {}), dict) else {}).get("keys_added", 0)
+            )
+
         fs_keys_live = 0
         en_dir = os.path.join(work_dir, "i18n", "en")
         if os.path.isdir(en_dir):
@@ -715,27 +915,79 @@ if not migration:
                         fs_keys_live += len(payload)
                 except Exception:
                     continue
-        migration = {
+
+        reconcile_adjustment = max(0, _safe_int(fs_global.get("reconciled_external_keys", 0)))
+        fs_keys_registry_effective = max(0, int(fs_keys_registry_raw + reconcile_adjustment))
+        if fs_keys_live > 0:
+            fs_keys_registry_effective = min(fs_keys_registry_effective, int(fs_keys_live))
+        outside_raw = max(0, int(fs_keys_live - fs_keys_registry_raw))
+        outside_effective = max(0, int(fs_keys_live - fs_keys_registry_effective))
+
+        snapshot = {
             "files_total": len(fs_files),
-            "files_completed": fs_completed,
+            "files_completed": int(fs_completed),
             "scanned_files_live": len(fs_files),
-            "total_keys_extracted": fs_keys_live,
-            "total_keys_extracted_live": fs_keys_live,
-            "total_keys_extracted_worker_registry": fs_keys_registry,
-            "keys_extracted_outside_worker_registry": max(0, fs_keys_live - fs_keys_registry),
+            "total_keys_extracted": int(fs_keys_live),
+            "total_keys_extracted_live": int(fs_keys_live),
+            "total_keys_extracted_worker_registry": int(fs_keys_registry_effective),
+            "total_keys_extracted_worker_registry_raw": int(fs_keys_registry_raw),
+            "registry_reconcile_adjustment": int(reconcile_adjustment),
+            "keys_extracted_outside_worker_registry": int(outside_effective),
+            "keys_extracted_outside_worker_registry_raw": int(outside_raw),
+            "statusd_live_snapshot_at_utc": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+            "statusd_live_snapshot_source": "i18n_file_status+en_json",
         }
+        return snapshot
     except Exception:
+        return {}
+
+live_snapshot = _collect_live_migration_snapshot()
+if live_snapshot:
+    if not migration:
         migration = {}
+    migration["files_total"] = int(live_snapshot.get("files_total", migration.get("files_total", 0)))
+    migration["files_completed"] = int(live_snapshot.get("files_completed", migration.get("files_completed", 0)))
+    migration["scanned_files_live"] = int(live_snapshot.get("scanned_files_live", migration.get("scanned_files_live", 0)))
+    migration["total_keys_extracted"] = int(live_snapshot.get("total_keys_extracted_live", migration.get("total_keys_extracted", 0)))
+    migration["total_keys_extracted_live"] = int(live_snapshot.get("total_keys_extracted_live", migration.get("total_keys_extracted_live", 0)))
+    migration["total_keys_extracted_worker_registry"] = int(
+        live_snapshot.get("total_keys_extracted_worker_registry", migration.get("total_keys_extracted_worker_registry", 0))
+    )
+    migration["total_keys_extracted_worker_registry_raw"] = int(
+        live_snapshot.get("total_keys_extracted_worker_registry_raw", migration.get("total_keys_extracted_worker_registry_raw", 0))
+    )
+    migration["registry_reconcile_adjustment"] = int(
+        live_snapshot.get("registry_reconcile_adjustment", migration.get("registry_reconcile_adjustment", 0))
+    )
+    migration["keys_extracted_outside_worker_registry"] = int(
+        live_snapshot.get("keys_extracted_outside_worker_registry", migration.get("keys_extracted_outside_worker_registry", 0))
+    )
+    migration["keys_extracted_outside_worker_registry_raw"] = int(
+        live_snapshot.get("keys_extracted_outside_worker_registry_raw", migration.get("keys_extracted_outside_worker_registry_raw", 0))
+    )
+    migration["statusd_live_snapshot_at_utc"] = str(
+        live_snapshot.get("statusd_live_snapshot_at_utc", migration.get("statusd_live_snapshot_at_utc", ""))
+    )
+    migration["statusd_live_snapshot_source"] = str(
+        live_snapshot.get("statusd_live_snapshot_source", migration.get("statusd_live_snapshot_source", ""))
+    )
 report["migration"] = migration
 
 # ── Metrics drift (LIVE vs worker registry) ──────────────────────────────
 live_keys = _safe_int(migration.get("total_keys_extracted_live", migration.get("total_keys_extracted", 0)))
 registry_keys = _safe_int(migration.get("total_keys_extracted_worker_registry", migration.get("keys_extracted", 0)))
+registry_keys_raw = _safe_int(migration.get("total_keys_extracted_worker_registry_raw", registry_keys))
+registry_reconcile_adjustment = _safe_int(migration.get("registry_reconcile_adjustment", max(0, registry_keys - registry_keys_raw)))
 outside_registry = _safe_int(
     migration.get("keys_extracted_outside_worker_registry", max(0, live_keys - registry_keys))
 )
+outside_registry_raw = _safe_int(
+    migration.get("keys_extracted_outside_worker_registry_raw", max(0, live_keys - registry_keys_raw))
+)
 outside_registry = max(0, outside_registry)
+outside_registry_raw = max(0, outside_registry_raw)
 drift_pct = round((outside_registry / live_keys * 100.0), 3) if live_keys > 0 else 0.0
+drift_pct_raw = round((outside_registry_raw / live_keys * 100.0), 3) if live_keys > 0 else 0.0
 if outside_registry >= metrics_drift_crit_keys or drift_pct >= metrics_drift_crit_pct:
     drift_severity = "critical"
     drift_status = "high"
@@ -751,8 +1003,12 @@ report["metrics_drift"] = {
     "severity": drift_severity,
     "live_keys": int(live_keys),
     "worker_registry_keys": int(registry_keys),
+    "worker_registry_keys_raw": int(registry_keys_raw),
+    "registry_reconcile_adjustment": int(max(0, registry_reconcile_adjustment)),
     "outside_worker_registry_keys": int(outside_registry),
     "outside_worker_registry_pct": drift_pct,
+    "outside_worker_registry_keys_raw": int(outside_registry_raw),
+    "outside_worker_registry_pct_raw": drift_pct_raw,
     "warn_threshold_keys": int(metrics_drift_warn_keys),
     "critical_threshold_keys": int(metrics_drift_crit_keys),
     "warn_threshold_pct": float(metrics_drift_warn_pct),
@@ -795,6 +1051,15 @@ report["quality_watch"] = _analyze_suspicious_high(
     crit_count=suspicious_crit_count,
     rate_warn_pct=suspicious_rate_warn_pct,
     rate_crit_pct=suspicious_rate_crit_pct,
+)
+report["priority_gate_watch"] = _analyze_priority_gate_watch(
+    status_dir=status_dir,
+    dispatch=dispatch,
+    quality_watch=report["quality_watch"],
+    now=now,
+    max_active_minutes=priority_gate_max_active_min,
+    max_cycles=priority_gate_max_cycles,
+    min_quality_drop_pct=priority_gate_min_quality_drop_pct,
 )
 
 # ── Transition log (ostatnie 5 przejść) ─────────────────────────────────
@@ -848,6 +1113,16 @@ report["thresholds_snapshot"] = {
         "warn_pct": float(metrics_drift_warn_pct),
         "crit_pct": float(metrics_drift_crit_pct),
     },
+    "priority_gate_stuck": {
+        "max_active_minutes": float(priority_gate_max_active_min),
+        "max_cycles": int(priority_gate_max_cycles),
+        "min_quality_drop_pct": float(priority_gate_min_quality_drop_pct),
+    },
+    "registry_reconcile": {
+        "min_outside_keys": int(registry_reconcile_min_outside_keys),
+        "min_outside_pct": float(registry_reconcile_min_outside_pct),
+        "min_interval_seconds": int(registry_reconcile_min_interval_s),
+    },
 }
 
 # Zapisz snapshot progów jako osobny artefakt audytowy
@@ -876,7 +1151,7 @@ PYAGG
 # ═══════════════════════════════════════════════════════════════════════════════
 
 run_status_doctor() {
-    python3 - "$WORK_DIR" "$STATUS_DIR" "$STATUSD_DOCTOR_FILE" "$REPAIR_QUEUE_STAGNATION_HOURS" "$REPAIR_QUEUE_STAGNATION_MIN_SAMPLES" "$REPAIR_QUEUE_STAGNATION_MIN_DROP" "$SUSPICIOUS_HIGH_WINDOW_HOURS" "$SUSPICIOUS_HIGH_WARN_COUNT" "$SUSPICIOUS_HIGH_CRIT_COUNT" "$METRICS_DRIFT_WARN_KEYS" "$METRICS_DRIFT_CRIT_KEYS" "$METRICS_DRIFT_WARN_PCT" "$METRICS_DRIFT_CRIT_PCT" "$SUSPICIOUS_HIGH_RATE_WARN_PCT" "$SUSPICIOUS_HIGH_RATE_CRIT_PCT" "$STATUSD_THRESHOLDS_FILE" "$STATUSD_USE_ENV_OVERRIDES" <<'PYDOCTOR'
+    python3 - "$WORK_DIR" "$STATUS_DIR" "$STATUSD_DOCTOR_FILE" "$REPAIR_QUEUE_STAGNATION_HOURS" "$REPAIR_QUEUE_STAGNATION_MIN_SAMPLES" "$REPAIR_QUEUE_STAGNATION_MIN_DROP" "$SUSPICIOUS_HIGH_WINDOW_HOURS" "$SUSPICIOUS_HIGH_WARN_COUNT" "$SUSPICIOUS_HIGH_CRIT_COUNT" "$METRICS_DRIFT_WARN_KEYS" "$METRICS_DRIFT_CRIT_KEYS" "$METRICS_DRIFT_WARN_PCT" "$METRICS_DRIFT_CRIT_PCT" "$SUSPICIOUS_HIGH_RATE_WARN_PCT" "$SUSPICIOUS_HIGH_RATE_CRIT_PCT" "$STATUSD_THRESHOLDS_FILE" "$STATUSD_USE_ENV_OVERRIDES" "$PRIORITY_GATE_STUCK_MAX_ACTIVE_MINUTES" "$PRIORITY_GATE_STUCK_MAX_CYCLES" "$PRIORITY_GATE_STUCK_MIN_QUALITY_DROP_PCT" "$REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS" "$REGISTRY_RECONCILE_MIN_OUTSIDE_PCT" "$REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS" <<'PYDOCTOR'
 import json, sys, os
 from datetime import datetime, timezone, timedelta
 from collections import Counter
@@ -898,6 +1173,12 @@ suspicious_rate_warn_pct = float(sys.argv[14] if len(sys.argv) > 14 and sys.argv
 suspicious_rate_crit_pct = float(sys.argv[15] if len(sys.argv) > 15 and sys.argv[15] else "20")
 thresholds_file = str(sys.argv[16]) if len(sys.argv) > 16 else ""
 thresholds_env_override = bool(str(sys.argv[17]).strip() == "1") if len(sys.argv) > 17 else False
+priority_gate_max_active_min = float(sys.argv[18] if len(sys.argv) > 18 and sys.argv[18] else "180")
+priority_gate_max_cycles = int(float(sys.argv[19] if len(sys.argv) > 19 and sys.argv[19] else "240"))
+priority_gate_min_quality_drop_pct = float(sys.argv[20] if len(sys.argv) > 20 and sys.argv[20] else "1")
+registry_reconcile_min_outside_keys = int(float(sys.argv[21] if len(sys.argv) > 21 and sys.argv[21] else "1000"))
+registry_reconcile_min_outside_pct = float(sys.argv[22] if len(sys.argv) > 22 and sys.argv[22] else "2")
+registry_reconcile_min_interval_s = int(float(sys.argv[23] if len(sys.argv) > 23 and sys.argv[23] else "1800"))
 
 now = datetime.now(timezone.utc)
 issues = []
@@ -1171,8 +1452,12 @@ def _read_metrics_drift():
         "severity": "info",
         "live_keys": 0,
         "worker_registry_keys": 0,
+        "worker_registry_keys_raw": 0,
+        "registry_reconcile_adjustment": 0,
         "outside_worker_registry_keys": 0,
         "outside_worker_registry_pct": 0.0,
+        "outside_worker_registry_keys_raw": 0,
+        "outside_worker_registry_pct_raw": 0.0,
         "warn_threshold_keys": int(metrics_drift_warn_keys),
         "critical_threshold_keys": int(metrics_drift_crit_keys),
         "warn_threshold_pct": float(metrics_drift_warn_pct),
@@ -1191,14 +1476,30 @@ def _read_metrics_drift():
         return data
 
     live_keys = _safe_int(migration.get("total_keys_extracted_live", migration.get("total_keys_extracted", 0)))
-    worker_registry_keys = _safe_int(
+    worker_registry_keys_effective = _safe_int(
         migration.get("total_keys_extracted_worker_registry", migration.get("keys_extracted", 0))
     )
-    outside_worker_registry_keys = _safe_int(
-        migration.get("keys_extracted_outside_worker_registry", max(0, live_keys - worker_registry_keys))
+    worker_registry_keys_raw = _safe_int(
+        migration.get("total_keys_extracted_worker_registry_raw", worker_registry_keys_effective)
     )
-    outside_worker_registry_keys = max(0, outside_worker_registry_keys)
+    registry_reconcile_adjustment = _safe_int(
+        migration.get("registry_reconcile_adjustment", max(0, worker_registry_keys_effective - worker_registry_keys_raw))
+    )
+    if registry_reconcile_adjustment <= 0:
+        try:
+            with open(os.path.join(work_dir, "i18n_file_status.json"), encoding="utf-8") as f:
+                fs = json.load(f)
+            gs = fs.get("global_stats", {}) if isinstance(fs.get("global_stats", {}), dict) else {}
+            fs_adjust = max(0, _safe_int(gs.get("reconciled_external_keys", 0)))
+            if fs_adjust > registry_reconcile_adjustment:
+                worker_registry_keys_effective = min(int(live_keys), int(worker_registry_keys_raw + fs_adjust))
+                registry_reconcile_adjustment = int(fs_adjust)
+        except Exception:
+            pass
+    outside_worker_registry_keys = max(0, int(live_keys - worker_registry_keys_effective))
+    outside_worker_registry_keys_raw = max(0, int(live_keys - worker_registry_keys_raw))
     outside_pct = round((outside_worker_registry_keys / float(max(live_keys, 1))) * 100.0, 3) if live_keys > 0 else 0.0
+    outside_pct_raw = round((outside_worker_registry_keys_raw / float(max(live_keys, 1))) * 100.0, 3) if live_keys > 0 else 0.0
 
     severity = "ok"
     status = "stable"
@@ -1214,9 +1515,57 @@ def _read_metrics_drift():
         "status": status,
         "severity": severity,
         "live_keys": int(live_keys),
-        "worker_registry_keys": int(worker_registry_keys),
+        "worker_registry_keys": int(worker_registry_keys_effective),
+        "worker_registry_keys_raw": int(worker_registry_keys_raw),
+        "registry_reconcile_adjustment": int(max(0, registry_reconcile_adjustment)),
         "outside_worker_registry_keys": int(outside_worker_registry_keys),
         "outside_worker_registry_pct": float(outside_pct),
+        "outside_worker_registry_keys_raw": int(outside_worker_registry_keys_raw),
+        "outside_worker_registry_pct_raw": float(outside_pct_raw),
+    })
+    return data
+
+def _read_priority_gate_watch():
+    data = {
+        "available": False,
+        "enabled": False,
+        "active": False,
+        "detected": False,
+        "severity": "ok",
+        "reason": "missing",
+        "pending_langs": [],
+        "active_minutes": 0.0,
+        "cycle_delta": 0,
+        "best_quality_drop_pct": 0.0,
+        "thresholds": {
+            "max_active_minutes": float(priority_gate_max_active_min),
+            "max_cycles": int(priority_gate_max_cycles),
+            "min_quality_drop_pct": float(priority_gate_min_quality_drop_pct),
+        },
+    }
+    report_path = os.path.join(status_dir, "statusd_report.json")
+    if not os.path.exists(report_path):
+        return data
+    try:
+        with open(report_path, encoding="utf-8") as f:
+            report = json.load(f)
+    except Exception:
+        return data
+    pg = report.get("priority_gate_watch", {}) if isinstance(report.get("priority_gate_watch", {}), dict) else {}
+    if not pg:
+        return data
+    data.update({
+        "available": True,
+        "enabled": bool(pg.get("enabled", False)),
+        "active": bool(pg.get("active", False)),
+        "detected": bool(pg.get("detected", False)),
+        "severity": str(pg.get("severity", "ok") or "ok"),
+        "reason": str(pg.get("reason", "unknown") or "unknown"),
+        "pending_langs": [str(x) for x in (pg.get("pending_langs", []) if isinstance(pg.get("pending_langs", []), list) else [])],
+        "active_minutes": float(pg.get("active_minutes", 0.0) or 0.0),
+        "cycle_delta": int(pg.get("cycle_delta", 0) or 0),
+        "best_quality_drop_pct": float(pg.get("best_quality_drop_pct", 0.0) or 0.0),
+        "thresholds": pg.get("thresholds", data["thresholds"]) if isinstance(pg.get("thresholds", {}), dict) else data["thresholds"],
     })
     return data
 
@@ -1418,7 +1767,36 @@ try:
 except Exception as e:
     warnings.append(f"METRICS_DRIFT_CHECK_ERROR: {e}")
 
-# ── 11. Repair tuning samples check ────────────────────────────────────
+# ── 11. Priority gate watchdog (ES/PL stuck detector) ───────────────────
+priority_gate_watch_info = {}
+try:
+    priority_gate_watch_info = _read_priority_gate_watch()
+    if not priority_gate_watch_info.get("available", False):
+        warnings.append("PRIORITY_GATE_WATCH_UNAVAILABLE: brak priority_gate_watch w statusd_report.json")
+    elif not priority_gate_watch_info.get("enabled", False):
+        ok_checks.append("priority_gate_watch_disabled")
+    elif not priority_gate_watch_info.get("active", False):
+        ok_checks.append("priority_gate_inactive")
+    else:
+        pending = ",".join(priority_gate_watch_info.get("pending_langs", [])) or "-"
+        desc = (
+            f"pending=[{pending}] active_minutes={priority_gate_watch_info.get('active_minutes', 0):.1f} "
+            f"cycle_delta={priority_gate_watch_info.get('cycle_delta', 0)} "
+            f"best_quality_drop={priority_gate_watch_info.get('best_quality_drop_pct', 0):.3f}%"
+        )
+        if priority_gate_watch_info.get("detected", False):
+            sev = str(priority_gate_watch_info.get("severity", "warning"))
+            reason = str(priority_gate_watch_info.get("reason", "stuck"))
+            if sev == "critical":
+                issues.append(f"PRIORITY_GATE_STUCK_CRITICAL: {desc} reason={reason}")
+            else:
+                warnings.append(f"PRIORITY_GATE_STUCK: {desc} reason={reason}")
+        else:
+            ok_checks.append(f"priority_gate_tracking ({desc})")
+except Exception as e:
+    warnings.append(f"PRIORITY_GATE_WATCH_CHECK_ERROR: {e}")
+
+# ── 12. Repair tuning samples check ────────────────────────────────────
 try:
     rq_available = False
     rq_entries_total = 0
@@ -1461,6 +1839,75 @@ try:
 except Exception as e:
     warnings.append(f"REPAIR_TUNING_CHECK_ERROR: {e}")
 
+# ── Check: Lang parity alert (T2 backlog / genuine translations) ──────────
+# Jeśli T2 lang ma >5000 [EN]-backlog po 48h → WARN
+# Jeśli T2 lang ma <100 genuine translations po 72h → CRIT
+try:
+    i18n_dir = os.path.join(work_dir, "i18n")
+    en_dir = os.path.join(i18n_dir, "en")
+    tier2_langs_set = {"de","pt","ru","tr","fr","it","nl","cs","sk","hu"}
+    # Sprawdź ile godzin statusd działa (od pierwszego doctor_file timestamp)
+    statusd_first_ts = None
+    try:
+        if os.path.exists(doctor_file):
+            with open(doctor_file, encoding="utf-8") as f:
+                old_doc = json.load(f)
+            statusd_first_ts = _parse_ts(old_doc.get("first_run_ts"))
+    except Exception:
+        pass
+    if not statusd_first_ts:
+        statusd_first_ts = now
+
+    hours_running = (now - statusd_first_ts).total_seconds() / 3600.0
+
+    if hours_running > 24 and os.path.isdir(en_dir):
+        en_files = sorted([f for f in os.listdir(en_dir) if f.endswith(".json")])
+        lang_parity_ok = 0
+        lang_parity_warn = 0
+        lang_parity_crit = 0
+
+        for lang_code in sorted(tier2_langs_set):
+            lang_dir = os.path.join(i18n_dir, lang_code)
+            if not os.path.isdir(lang_dir):
+                continue
+            en_backlog = 0
+            genuine = 0
+            for jf in en_files:
+                en_path = os.path.join(en_dir, jf)
+                lang_path = os.path.join(lang_dir, jf)
+                if not os.path.exists(lang_path):
+                    continue
+                try:
+                    with open(en_path, encoding="utf-8") as f:
+                        en_data = json.load(f)
+                    with open(lang_path, encoding="utf-8") as f:
+                        lang_data = json.load(f)
+                    for k, v in en_data.items():
+                        lv = lang_data.get(k)
+                        if lv is None:
+                            continue
+                        slv = str(lv)
+                        if slv.startswith("[EN]") or slv.startswith("["):
+                            en_backlog += 1
+                        elif slv != str(v) and slv.strip():
+                            genuine += 1
+                except Exception:
+                    continue
+
+            if hours_running > 72 and genuine < 100:
+                issues.append(f"LANG_PARITY_CRIT: {lang_code} has only {genuine} genuine translations after {hours_running:.0f}h (need ≥100)")
+                lang_parity_crit += 1
+            elif hours_running > 48 and en_backlog > 5000:
+                warnings.append(f"LANG_PARITY_WARN: {lang_code} has {en_backlog} [EN]-backlog after {hours_running:.0f}h (should be ≤5000)")
+                lang_parity_warn += 1
+            else:
+                lang_parity_ok += 1
+
+        if lang_parity_ok > 0 and lang_parity_warn == 0 and lang_parity_crit == 0:
+            ok_checks.append(f"lang_parity_t2_ok ({lang_parity_ok} langs within bounds)")
+except Exception as e:
+    warnings.append(f"LANG_PARITY_CHECK_ERROR: {e}")
+
 # ── Ocena ogólna ───────────────────────────────────────────────────────
 if issues:
     overall = "CRITICAL"
@@ -1471,6 +1918,7 @@ else:
 
 doctor_report = {
     "timestamp": now.isoformat().replace("+00:00", "Z"),
+    "first_run_ts": (statusd_first_ts or now).isoformat().replace("+00:00", "Z"),
     "overall": overall,
     "issues_count": len(issues),
     "warnings_count": len(warnings),
@@ -1479,6 +1927,7 @@ doctor_report = {
     "warnings": warnings,
     "ok": ok_checks,
     "metrics_drift": metrics_drift_info if isinstance(metrics_drift_info, dict) else {},
+    "priority_gate_watch": priority_gate_watch_info if isinstance(priority_gate_watch_info, dict) else {},
     "thresholds_snapshot": {
         "source_of_truth": "statusd_thresholds_file",
         "config_file": thresholds_file,
@@ -1500,6 +1949,16 @@ doctor_report = {
             "crit_keys": int(metrics_drift_crit_keys),
             "warn_pct": float(metrics_drift_warn_pct),
             "crit_pct": float(metrics_drift_crit_pct),
+        },
+        "priority_gate_stuck": {
+            "max_active_minutes": float(priority_gate_max_active_min),
+            "max_cycles": int(priority_gate_max_cycles),
+            "min_quality_drop_pct": float(priority_gate_min_quality_drop_pct),
+        },
+        "registry_reconcile": {
+            "min_outside_keys": int(registry_reconcile_min_outside_keys),
+            "min_outside_pct": float(registry_reconcile_min_outside_pct),
+            "min_interval_seconds": int(registry_reconcile_min_interval_s),
         },
     },
 }
@@ -1612,6 +2071,64 @@ try:
         print(f"Coverage {lang}: {ls.get('coverage_pct',0):.1f}% missing={ls.get('missing',0)} en_copy={ls.get('en_copy',0)}")
 except: pass
 
+# Multilang: genuine / en_backlog / diacritics_rate per T2 language
+try:
+    import re
+    i18n_dir = "i18n"
+    en_dir_p = os.path.join(i18n_dir, "en")
+    t2_langs = ["de","pt","ru","tr","fr","it","nl","cs","sk","hu"]
+    EXPECTED_DIACRITICS = {
+        "de": r"[äöüßÄÖÜ]", "fr": r"[àâæçéèêëîïôûùüÿœÀÂÆÇÉÈÊËÎÏÔÛÙÜŸŒ]",
+        "pt": r"[ãáàâçéêíóôõúüÃÁÀÂÇÉÊÍÓÔÕÚÜ]", "it": r"[àèéìíîòóùúÀÈÉÌÍÎÒÓÙÚ]",
+        "nl": r"[ëïéèêüóáàäöËÏÉÈÊÜÓÁÀÄÖ]", "cs": r"[áčďéěíňóřšťúůýžÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ]",
+        "sk": r"[áäčďéíľĺňóôŕšťúýžÁÄČĎÉÍĽĹŇÓÔŔŠŤÚÝŽ]", "hu": r"[áéíóöőúüűÁÉÍÓÖŐÚÜŰ]",
+        "tr": r"[çğıöşüÇĞİÖŞÜ]", "ru": r"[а-яА-ЯёЁ]",
+    }
+    en_files_p = sorted([f for f in os.listdir(en_dir_p) if f.endswith(".json")]) if os.path.isdir(en_dir_p) else []
+    print(f"\n{'─'*60}")
+    print(f"{'Lang':>4} {'Genuine':>8} {'[EN]bkl':>8} {'Diacr%':>7} {'Tier':>4}")
+    print(f"{'─'*60}")
+    for lc in t2_langs:
+        ld = os.path.join(i18n_dir, lc)
+        if not os.path.isdir(ld):
+            continue
+        genuine = 0
+        en_bkl = 0
+        total_genuine_chars = 0
+        diacritics_chars = 0
+        diac_re = EXPECTED_DIACRITICS.get(lc)
+        for jf in en_files_p:
+            ep = os.path.join(en_dir_p, jf)
+            lp = os.path.join(ld, jf)
+            if not os.path.exists(lp):
+                continue
+            try:
+                with open(ep, encoding="utf-8") as f:
+                    ed = json.load(f)
+                with open(lp, encoding="utf-8") as f:
+                    ld_ = json.load(f)
+            except:
+                continue
+            for k, ev in ed.items():
+                lv = ld_.get(k)
+                if lv is None:
+                    continue
+                slv = str(lv)
+                sev = str(ev)
+                if slv.startswith("[EN]") or slv.startswith("["):
+                    en_bkl += 1
+                elif slv != sev and slv.strip():
+                    genuine += 1
+                    if diac_re and len(slv) > 30:
+                        total_genuine_chars += 1
+                        if re.search(diac_re, slv):
+                            diacritics_chars += 1
+        diac_pct = (diacritics_chars / max(total_genuine_chars, 1)) * 100
+        print(f"{lc:>4} {genuine:>8} {en_bkl:>8} {diac_pct:>6.1f}%   T2")
+    print(f"{'─'*60}")
+except Exception as ex:
+    print(f"⚠️ Multilang KPI error: {ex}")
+
 # Gate checks
 print()
 gf_ok = k200["gf_rate_pct"] < 8
@@ -1663,6 +2180,24 @@ elif gf_rate > 8:
         "action": "REDUCE_BATCH",
         "reason": f"guard_fail_rate={gf_rate:.1f}% — rozważ zmniejszenie batcha",
     })
+
+# Rekomendacja 1b: priority gate stuck (ES/PL)
+try:
+    with open(os.path.join(status_dir, "statusd_report.json"), encoding="utf-8") as f:
+        latest_report = json.load(f)
+    pg = latest_report.get("priority_gate_watch", {}) if isinstance(latest_report.get("priority_gate_watch", {}), dict) else {}
+    if pg.get("detected", False):
+        pending = ",".join([str(x) for x in (pg.get("pending_langs", []) if isinstance(pg.get("pending_langs", []), list) else [])]) or "?"
+        recommendations.append({
+            "priority": "HIGH" if str(pg.get("severity", "warning")).lower() == "critical" else "MEDIUM",
+            "action": "SWITCH_PROFILE quality_repair (short)",
+            "reason": (
+                f"priority_gate_stuck pending=[{pending}] active={float(pg.get('active_minutes', 0) or 0):.1f}m "
+                f"cycles={int(pg.get('cycle_delta', 0) or 0)} drop={float(pg.get('best_quality_drop_pct', 0) or 0):.3f}%"
+            ),
+        })
+except Exception:
+    pass
 
 # Rekomendacja 2: coverage pilot
 try:
@@ -2073,6 +2608,14 @@ metrics_drift_outside = int(metrics_drift.get("outside_worker_registry_keys", 0)
 metrics_drift_pct = float(metrics_drift.get("outside_worker_registry_pct", 0) or 0.0)
 metrics_drift_live = int(metrics_drift.get("live_keys", 0) or 0)
 metrics_drift_registry = int(metrics_drift.get("worker_registry_keys", 0) or 0)
+priority_gate_watch = report.get("priority_gate_watch", {}) if isinstance(report.get("priority_gate_watch", {}), dict) else {}
+priority_gate_detected = bool(priority_gate_watch.get("detected", False))
+priority_gate_severity = str(priority_gate_watch.get("severity", "ok") or "ok").lower()
+priority_gate_pending = [str(x) for x in (priority_gate_watch.get("pending_langs", []) if isinstance(priority_gate_watch.get("pending_langs", []), list) else [])]
+priority_gate_active_minutes = float(priority_gate_watch.get("active_minutes", 0) or 0.0)
+priority_gate_cycle_delta = int(priority_gate_watch.get("cycle_delta", 0) or 0)
+priority_gate_best_drop = float(priority_gate_watch.get("best_quality_drop_pct", 0) or 0.0)
+priority_gate_reason = str(priority_gate_watch.get("reason", "") or "")
 quality_watch_top_lang = ""
 try:
     top_langs = quality_watch.get("top_langs", [])
@@ -2094,6 +2637,14 @@ if repair_stagnation_detected:
         "WARNING",
         "repair_queue_stagnation",
         f"repair_queue stagnation {top_label} ({repair_baseline}->{repair_latest}, span={repair_span_h:.1f}h)",
+    ))
+if priority_gate_detected:
+    pending_label = ",".join(priority_gate_pending) if priority_gate_pending else "-"
+    pg_signal_severity = "CRITICAL" if priority_gate_severity == "critical" else "WARNING"
+    signals.append((
+        pg_signal_severity,
+        "priority_gate_stuck",
+        f"priority_gate stuck pending=[{pending_label}] active={priority_gate_active_minutes:.1f}m cycles={priority_gate_cycle_delta} drop={priority_gate_best_drop:.3f}% reason={priority_gate_reason}",
     ))
 if quality_watch_severity == "critical":
     signals.append((
@@ -2157,6 +2708,7 @@ reason_rank = {
     "guardian_stuck": 8,
     "doctor_critical": 7,
     "metrics_drift_high": 6,
+    "priority_gate_stuck": 6,
     "suspicious_high_spike": 5,
     "repair_queue_stagnation": 4,
     "metrics_drift_elevated": 3,
@@ -2229,11 +2781,21 @@ payload = {
         "live_keys": metrics_drift_live,
         "worker_registry_keys": metrics_drift_registry,
     },
+    "priority_gate_watch": {
+        "detected": bool(priority_gate_detected),
+        "severity": priority_gate_severity,
+        "reason": priority_gate_reason,
+        "pending_langs": priority_gate_pending,
+        "active_minutes": round(priority_gate_active_minutes, 3),
+        "cycle_delta": int(priority_gate_cycle_delta),
+        "best_quality_drop_pct": round(priority_gate_best_drop, 3),
+    },
     "content": (
         f"[i18n-statusd][{severity}] {reason_text} | "
         f"doctor={doctor_overall} guardian={guardian_state} hb_age={worker.get('heartbeat_age_s', -1)}s "
         f"repair_stagnation={'yes' if repair_stagnation_detected else 'no'} "
-        f"suspicious_high={quality_watch_total} metrics_drift={metrics_drift_outside}"
+        f"suspicious_high={quality_watch_total} metrics_drift={metrics_drift_outside} "
+        f"priority_gate_stuck={'yes' if priority_gate_detected else 'no'}"
     ),
 }
 
@@ -2297,7 +2859,7 @@ PYALERT
 # ═══════════════════════════════════════════════════════════════════════════════
 
 generate_daily_report() {
-    python3 - "$STATUS_DIR" "$STATUSD_DAILY_REPORT_JSON" "$STATUSD_DAILY_REPORT_MD" "$REPAIR_QUEUE_STAGNATION_HOURS" "$REPAIR_QUEUE_STAGNATION_MIN_SAMPLES" "$REPAIR_QUEUE_STAGNATION_MIN_DROP" "$METRICS_DRIFT_WARN_KEYS" "$METRICS_DRIFT_CRIT_KEYS" "$METRICS_DRIFT_WARN_PCT" "$METRICS_DRIFT_CRIT_PCT" "$STATUSD_THRESHOLDS_FILE" "$STATUSD_USE_ENV_OVERRIDES" <<'PYDAILY'
+    python3 - "$STATUS_DIR" "$STATUSD_DAILY_REPORT_JSON" "$STATUSD_DAILY_REPORT_MD" "$REPAIR_QUEUE_STAGNATION_HOURS" "$REPAIR_QUEUE_STAGNATION_MIN_SAMPLES" "$REPAIR_QUEUE_STAGNATION_MIN_DROP" "$METRICS_DRIFT_WARN_KEYS" "$METRICS_DRIFT_CRIT_KEYS" "$METRICS_DRIFT_WARN_PCT" "$METRICS_DRIFT_CRIT_PCT" "$STATUSD_THRESHOLDS_FILE" "$STATUSD_USE_ENV_OVERRIDES" "$PRIORITY_GATE_STUCK_MAX_ACTIVE_MINUTES" "$PRIORITY_GATE_STUCK_MAX_CYCLES" "$PRIORITY_GATE_STUCK_MIN_QUALITY_DROP_PCT" "$REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS" "$REGISTRY_RECONCILE_MIN_OUTSIDE_PCT" "$REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS" <<'PYDAILY'
 import json, sys, os, re
 from collections import defaultdict, Counter
 from datetime import datetime, timezone, timedelta
@@ -2314,6 +2876,12 @@ metrics_drift_warn_pct = float(sys.argv[9] or "95")
 metrics_drift_crit_pct = float(sys.argv[10] or "99")
 thresholds_file = str(sys.argv[11]) if len(sys.argv) > 11 else ""
 thresholds_env_override = bool(str(sys.argv[12]).strip() == "1") if len(sys.argv) > 12 else False
+priority_gate_max_active_min = float(sys.argv[13] if len(sys.argv) > 13 and sys.argv[13] else "180")
+priority_gate_max_cycles = int(float(sys.argv[14] if len(sys.argv) > 14 and sys.argv[14] else "240"))
+priority_gate_min_quality_drop_pct = float(sys.argv[15] if len(sys.argv) > 15 and sys.argv[15] else "1")
+registry_reconcile_min_outside_keys = int(float(sys.argv[16] if len(sys.argv) > 16 and sys.argv[16] else "1000"))
+registry_reconcile_min_outside_pct = float(sys.argv[17] if len(sys.argv) > 17 and sys.argv[17] else "2")
+registry_reconcile_min_interval_s = int(float(sys.argv[18] if len(sys.argv) > 18 and sys.argv[18] else "1800"))
 
 now = datetime.now(timezone.utc)
 window_start = now - timedelta(hours=24)
@@ -2788,6 +3356,7 @@ if md_cfg:
     metrics_drift_crit_keys = _safe_int(md_cfg.get("critical_threshold_keys", metrics_drift_crit_keys), metrics_drift_crit_keys)
     metrics_drift_warn_pct = _safe_float(md_cfg.get("warn_threshold_pct", metrics_drift_warn_pct), metrics_drift_warn_pct)
     metrics_drift_crit_pct = _safe_float(md_cfg.get("critical_threshold_pct", metrics_drift_crit_pct), metrics_drift_crit_pct)
+priority_gate_watch = statusd_latest_report.get("priority_gate_watch", {}) if isinstance(statusd_latest_report.get("priority_gate_watch", {}), dict) else {}
 strict_hourly = overview.get("strict_hourly_window", {})
 coverage_map = {}
 for row in overview.get("languages", []):
@@ -2918,6 +3487,7 @@ report = {
     },
     "migration": migration_snapshot,
     "metrics_drift": metrics_drift_snapshot,
+    "priority_gate_watch": priority_gate_watch,
     "thresholds_snapshot": {
         "source_of_truth": "statusd_thresholds_file",
         "config_file": thresholds_file,
@@ -2932,6 +3502,16 @@ report = {
             "crit_keys": int(metrics_drift_crit_keys),
             "warn_pct": float(metrics_drift_warn_pct),
             "crit_pct": float(metrics_drift_crit_pct),
+        },
+        "priority_gate_stuck": {
+            "max_active_minutes": float(priority_gate_max_active_min),
+            "max_cycles": int(priority_gate_max_cycles),
+            "min_quality_drop_pct": float(priority_gate_min_quality_drop_pct),
+        },
+        "registry_reconcile": {
+            "min_outside_keys": int(registry_reconcile_min_outside_keys),
+            "min_outside_pct": float(registry_reconcile_min_outside_pct),
+            "min_interval_seconds": int(registry_reconcile_min_interval_s),
         },
     },
     "scope_totals": overview.get("scope_totals", {}),
@@ -2949,6 +3529,8 @@ report = {
         "no_progress_rate bazuje na translation_guard_report (translated<=0).",
         "repair_queue_24h bazuje na identical_to_en_repair_queue_report.jsonl.",
         "repair_tuning_24h bazuje na identical_to_en_repair_tuning.jsonl.",
+        "metrics_drift rozdziela registry raw i registry effective po registry_reconcile.",
+        "priority_gate_watch śledzi aktywność fali ES/PL i wykrywa stuck bez spadku quality rate.",
     ],
 }
 
@@ -3104,8 +3686,12 @@ lines.append(f"| status | {md.get('status', '-')} |")
 lines.append(f"| severity | {md.get('severity', '-')} |")
 lines.append(f"| live_keys | {md.get('live_keys', 0)} |")
 lines.append(f"| worker_registry_keys | {md.get('worker_registry_keys', 0)} |")
+lines.append(f"| worker_registry_keys_raw | {md.get('worker_registry_keys_raw', 0)} |")
+lines.append(f"| registry_reconcile_adjustment | {md.get('registry_reconcile_adjustment', 0)} |")
 lines.append(f"| outside_worker_registry_keys | {md.get('outside_worker_registry_keys', 0)} |")
 lines.append(f"| outside_worker_registry_pct | {_fmt_pct(md.get('outside_worker_registry_pct', 0))} |")
+lines.append(f"| outside_worker_registry_keys_raw | {md.get('outside_worker_registry_keys_raw', 0)} |")
+lines.append(f"| outside_worker_registry_pct_raw | {_fmt_pct(md.get('outside_worker_registry_pct_raw', 0))} |")
 lines.append(f"| warn_threshold_keys | {md.get('warn_threshold_keys', 0)} |")
 lines.append(f"| critical_threshold_keys | {md.get('critical_threshold_keys', 0)} |")
 lines.append(f"| warn_threshold_pct | {_fmt_pct(md.get('warn_threshold_pct', 0))} |")
@@ -3114,6 +3700,21 @@ th = report.get("thresholds_snapshot", {}) if isinstance(report.get("thresholds_
 lines.append(f"| threshold_source | {th.get('source_of_truth', '-') or '-'} |")
 lines.append(f"| threshold_config_file | {th.get('config_file', '-') or '-'} |")
 lines.append(f"| env_overrides_enabled | {'yes' if bool(th.get('env_overrides_enabled', False)) else 'no'} |")
+lines.append("")
+lines.append("## Priority Gate Watch")
+lines.append("")
+lines.append("| Metric | Value |")
+lines.append("|---|---:|")
+pg = report.get("priority_gate_watch", {}) or {}
+lines.append(f"| enabled | {'yes' if bool(pg.get('enabled', False)) else 'no'} |")
+lines.append(f"| active | {'yes' if bool(pg.get('active', False)) else 'no'} |")
+lines.append(f"| detected | {'yes' if bool(pg.get('detected', False)) else 'no'} |")
+lines.append(f"| severity | {pg.get('severity', '-')} |")
+lines.append(f"| reason | {pg.get('reason', '-')} |")
+lines.append(f"| pending_langs | {','.join(pg.get('pending_langs', [])) if isinstance(pg.get('pending_langs', []), list) else '-'} |")
+lines.append(f"| active_minutes | {pg.get('active_minutes', 0)} |")
+lines.append(f"| cycle_delta | {pg.get('cycle_delta', 0)} |")
+lines.append(f"| best_quality_drop_pct | {_fmt_pct(pg.get('best_quality_drop_pct', 0))} |")
 lines.append("")
 lines.append("## Coverage Snapshot")
 lines.append("")
@@ -3461,11 +4062,219 @@ maybe_run_stagnation_check() {
 }
 
 # ═══════════════════════════════════════════════════════════════════════════════
+# MODUŁ 7c: Registry reconcile (LIVE vs worker registry)
+# ═══════════════════════════════════════════════════════════════════════════════
+
+run_registry_reconcile() {
+    python3 - "$WORK_DIR" "$STATUS_DIR" "$REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS" "$REGISTRY_RECONCILE_MIN_OUTSIDE_PCT" "$REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS" <<'PYRECON'
+import json, os, sys
+from datetime import datetime, timezone
+
+work_dir = sys.argv[1]
+status_dir = sys.argv[2]
+min_outside_keys = int(float(sys.argv[3] or "1000"))
+min_outside_pct = float(sys.argv[4] or "2")
+min_interval_s = int(float(sys.argv[5] or "1800"))
+
+now = datetime.now(timezone.utc)
+now_z = now.isoformat().replace("+00:00", "Z")
+state_path = os.path.join(status_dir, "registry_reconcile_state.json")
+latest_path = os.path.join(status_dir, "registry_reconcile_latest.json")
+status_file = os.path.join(work_dir, "i18n_file_status.json")
+en_dir = os.path.join(work_dir, "i18n", "en")
+
+def _safe_int(v, default=0):
+    try:
+        return int(v)
+    except Exception:
+        return int(default)
+
+def _safe_float(v, default=0.0):
+    try:
+        return float(v)
+    except Exception:
+        return float(default)
+
+def _parse_ts(ts):
+    if not ts:
+        return None
+    try:
+        return datetime.fromisoformat(str(ts).replace("Z", "+00:00"))
+    except Exception:
+        return None
+
+def _read_json(path, default):
+    try:
+        with open(path, encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return default
+
+def _write_json_atomic(path, payload):
+    tmp = path + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=2, ensure_ascii=False)
+    os.replace(tmp, path)
+
+out = {
+    "timestamp": now_z,
+    "status": "ok",
+    "action": "skipped",
+    "reason": "",
+    "thresholds": {
+        "min_outside_keys": int(min_outside_keys),
+        "min_outside_pct": float(min_outside_pct),
+        "min_interval_seconds": int(min_interval_s),
+    },
+    "live_keys": 0,
+    "registry_keys_raw": 0,
+    "registry_adjustment_before": 0,
+    "registry_adjustment_after": 0,
+    "registry_keys_effective_before": 0,
+    "registry_keys_effective_after": 0,
+    "outside_keys_raw": 0,
+    "outside_pct_raw": 0.0,
+    "outside_keys_effective_before": 0,
+    "outside_keys_effective_after": 0,
+    "cooldown_ok": True,
+    "last_applied_at": "",
+}
+
+if not os.path.exists(status_file):
+    out["status"] = "error"
+    out["action"] = "error"
+    out["reason"] = "missing_i18n_file_status"
+    _write_json_atomic(latest_path, out)
+    print("ERROR missing_i18n_file_status")
+    raise SystemExit(1)
+
+status_payload = _read_json(status_file, {})
+files = status_payload.get("files", {})
+if not isinstance(files, dict):
+    files = {}
+global_stats = status_payload.get("global_stats", {})
+if not isinstance(global_stats, dict):
+    global_stats = {}
+
+registry_raw = 0
+for info in files.values():
+    if not isinstance(info, dict):
+        continue
+    stages = info.get("stages", {}) if isinstance(info.get("stages", {}), dict) else {}
+    registry_raw += _safe_int((stages.get("5_extraction_en", {}) if isinstance(stages.get("5_extraction_en", {}), dict) else {}).get("keys_added", 0))
+
+live_keys = 0
+if os.path.isdir(en_dir):
+    for name in os.listdir(en_dir):
+        if not name.endswith(".json"):
+            continue
+        try:
+            with open(os.path.join(en_dir, name), encoding="utf-8") as f:
+                payload = json.load(f)
+            if isinstance(payload, dict):
+                live_keys += len(payload)
+        except Exception:
+            continue
+
+adjust_before = max(0, _safe_int(global_stats.get("reconciled_external_keys", 0)))
+effective_before = max(0, registry_raw + adjust_before)
+if live_keys > 0:
+    effective_before = min(effective_before, live_keys)
+outside_raw = max(0, live_keys - registry_raw)
+outside_effective_before = max(0, live_keys - effective_before)
+outside_pct_raw = (outside_raw / float(max(live_keys, 1))) * 100.0 if live_keys > 0 else 0.0
+
+state = _read_json(state_path, {})
+last_applied_dt = _parse_ts(state.get("last_applied_at", ""))
+cooldown_ok = True
+if last_applied_dt is not None:
+    cooldown_ok = (now - last_applied_dt).total_seconds() >= max(min_interval_s, 1)
+
+target_adjust = max(0, live_keys - registry_raw)
+needs_sync = target_adjust != adjust_before
+threshold_trigger = (outside_raw >= min_outside_keys) or (outside_pct_raw >= min_outside_pct)
+force_sync = needs_sync and (target_adjust == 0 or adjust_before > 0)
+should_reconcile = bool((threshold_trigger and needs_sync) or force_sync)
+
+out.update({
+    "live_keys": int(live_keys),
+    "registry_keys_raw": int(registry_raw),
+    "registry_adjustment_before": int(adjust_before),
+    "registry_adjustment_after": int(adjust_before),
+    "registry_keys_effective_before": int(effective_before),
+    "registry_keys_effective_after": int(effective_before),
+    "outside_keys_raw": int(outside_raw),
+    "outside_pct_raw": round(outside_pct_raw, 3),
+    "outside_keys_effective_before": int(outside_effective_before),
+    "outside_keys_effective_after": int(outside_effective_before),
+    "cooldown_ok": bool(cooldown_ok),
+    "should_reconcile": bool(should_reconcile),
+    "target_adjustment": int(target_adjust),
+    "last_applied_at": state.get("last_applied_at", ""),
+})
+
+if not should_reconcile:
+    out["action"] = "skipped_threshold"
+    if not needs_sync:
+        out["reason"] = "no_sync_needed"
+    else:
+        out["reason"] = "outside_raw_below_threshold"
+elif not cooldown_ok:
+    out["action"] = "skipped_cooldown"
+    out["reason"] = "min_interval_not_elapsed"
+else:
+    status_payload.setdefault("global_stats", {})
+    if not isinstance(status_payload["global_stats"], dict):
+        status_payload["global_stats"] = {}
+    status_payload["global_stats"]["reconciled_external_keys"] = int(target_adjust)
+    status_payload["global_stats"]["reconciled_external_keys_updated_at"] = now_z
+    status_payload["global_stats"]["reconciled_external_keys_source"] = "statusd_registry_reconcile"
+    status_payload["global_stats"]["reconciled_external_keys_reason"] = "live_vs_registry_drift"
+    status_payload["global_stats"]["total_keys_effective_registry"] = int(registry_raw + target_adjust)
+    _write_json_atomic(status_file, status_payload)
+
+    out["action"] = "applied" if target_adjust != adjust_before else "already_synced"
+    out["reason"] = "registry_adjustment_updated" if target_adjust != adjust_before else "adjustment_already_current"
+    out["registry_adjustment_after"] = int(target_adjust)
+    effective_after = max(0, registry_raw + target_adjust)
+    if live_keys > 0:
+        effective_after = min(effective_after, live_keys)
+    out["registry_keys_effective_after"] = int(effective_after)
+    out["outside_keys_effective_after"] = int(max(0, live_keys - effective_after))
+
+    state["last_applied_at"] = now_z
+    state["last_action"] = out["action"]
+    state["last_reason"] = out["reason"]
+    state["last_target_adjustment"] = int(target_adjust)
+    state["last_outside_keys_raw"] = int(outside_raw)
+    state["last_outside_pct_raw"] = round(outside_pct_raw, 3)
+    _write_json_atomic(state_path, state)
+
+state.setdefault("last_checked_at", now_z)
+state["last_checked_at"] = now_z
+state["last_action"] = out["action"]
+state["last_reason"] = out["reason"]
+_write_json_atomic(state_path, state)
+_write_json_atomic(latest_path, out)
+
+if out["action"] in ("applied", "already_synced"):
+    print(f"RECONCILE_{out['action'].upper()} target_adjust={target_adjust} outside_raw={outside_raw}")
+else:
+    print(f"RECONCILE_{out['action'].upper()} reason={out['reason']} outside_raw={outside_raw}")
+PYRECON
+}
+
+# ═══════════════════════════════════════════════════════════════════════════════
 # MODUŁ 8: Daemon loop
 # ═══════════════════════════════════════════════════════════════════════════════
 
 run_statusd_cycle() {
-    local result
+    local result reconcile_result
+    reconcile_result=$(run_registry_reconcile 2>/dev/null || true)
+    if [ -n "$reconcile_result" ]; then
+        log_statusd "🧩 Registry reconcile: $reconcile_result"
+    fi
+
     result=$(aggregate_telemetry 2>/dev/null)
     if [ "$result" = "OK" ]; then
         log_statusd "📊 Telemetria zagregowana"
@@ -3522,6 +4331,7 @@ daemon_loop() {
 case "${1:-}" in
     --once)
         echo "═══ i18n-statusd: jednorazowy raport ═══"
+        run_registry_reconcile
         aggregate_telemetry
         echo ""
         run_status_doctor
@@ -3546,6 +4356,9 @@ case "${1:-}" in
         ;;
     --aggregate)
         aggregate_telemetry
+        ;;
+    --reconcile-registry)
+        run_registry_reconcile
         ;;
     --daily-report)
         generate_daily_report
@@ -3581,7 +4394,7 @@ for line in sys.stdin:
 " || echo "  (brak wpisów)"
         ;;
     *)
-        echo "Użycie: $0 {--once|--daemon|--doctor|--kpi|--recommend|--aggregate|--daily-report|--alert-check|--auto-action|--enable-auto|--disable-auto|--audit}"
+        echo "Użycie: $0 {--once|--daemon|--doctor|--kpi|--recommend|--aggregate|--reconcile-registry|--daily-report|--alert-check|--auto-action|--enable-auto|--disable-auto|--audit}"
         echo ""
         echo "  --once       Jednorazowy pełny raport (telemetria + doctor + KPI + rekomendacje + raport 24h)"
         echo "  --daemon     Ciągła pętla co ${DAEMON_INTERVAL_SECONDS}s"
@@ -3589,6 +4402,7 @@ for line in sys.stdin:
         echo "  --kpi        KPI snapshot"
         echo "  --recommend  Rekomendacje profilu/akcji"
         echo "  --aggregate  Agregacja telemetrii do JSON"
+        echo "  --reconcile-registry Uzgodnij registry keys z LIVE (zapis korekty w i18n_file_status.json)"
         echo "  --daily-report Wygeneruj raport zarządczy 24h (JSON + MD)"
         echo "  --alert-check Jednorazowa ewaluacja i ewentualny webhook alert"
         echo "  --auto-action Wykonaj auto-akcje z guardrailami"

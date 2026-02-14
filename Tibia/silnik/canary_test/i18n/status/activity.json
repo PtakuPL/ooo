@@ -1,118 +1,118 @@
 {
-  "category": "el",
+  "category": "es",
   "cycle": 1,
   "eta_seconds": 0,
-  "file": "monsters.json",
-  "generated_at_utc": "2026-02-14T07:56:41Z",
-  "message": "translated=80 guard_fail=0 strict_missing_key=0 strict_skipped_done=1287",
+  "file": "html.json",
+  "generated_at_utc": "2026-02-14T08:40:26Z",
+  "message": "parallel auto translate",
   "phase": "AUTO_TRANSLATE",
   "progress": {
-    "done": 80,
-    "total": 80,
+    "done": 0,
+    "total": 0,
     "unit": "keys"
   },
   "recent": [
     {
       "action": "update",
-      "category": "el",
+      "category": "es",
       "cycle": 1,
-      "file": "monsters.json",
+      "file": "html.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
-      "stage": "auto_done",
-      "t": "2026-02-14T07:56:41Z"
+      "stage": "parallel_start",
+      "t": "2026-02-14T08:40:26Z"
     },
     {
       "action": "update",
-      "category": "el",
+      "category": "pl",
       "cycle": 1,
-      "file": "monsters.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "auto_start",
-      "t": "2026-02-14T07:56:38Z"
-    },
-    {
-      "action": "update",
-      "category": "bs",
-      "cycle": 6,
-      "file": "monsters.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "auto_start",
-      "t": "2026-02-14T07:56:33Z"
-    },
-    {
-      "action": "update",
-      "category": "bn",
-      "cycle": 5,
-      "file": "monsters.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "parallel_start",
-      "t": "2026-02-14T07:55:49Z"
-    },
-    {
-      "action": "update",
-      "category": "bg",
-      "cycle": 5,
-      "file": "monsters.json",
+      "file": "cpp.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "auto_done",
-      "t": "2026-02-14T07:54:36Z"
+      "t": "2026-02-14T08:40:25Z"
     },
     {
       "action": "update",
-      "category": "bg",
-      "cycle": 5,
-      "file": "monsters.json",
+      "category": "pl",
+      "cycle": 1,
+      "file": "cpp.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "auto_start",
-      "t": "2026-02-14T07:54:32Z"
+      "t": "2026-02-14T08:40:10Z"
     },
     {
       "action": "update",
-      "category": "az",
-      "cycle": 4,
-      "file": "monsters.json",
+      "category": "es",
+      "cycle": 1,
+      "file": "questlog.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "parallel_start",
-      "t": "2026-02-14T07:54:19Z"
+      "t": "2026-02-14T08:38:13Z"
     },
     {
       "action": "update",
-      "category": "ar",
-      "cycle": 4,
-      "file": "monsters.json",
+      "category": "pl",
+      "cycle": 1,
+      "file": "otclient_modules.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "auto_done",
-      "t": "2026-02-14T07:52:56Z"
+      "t": "2026-02-14T08:38:12Z"
     },
     {
       "action": "update",
-      "category": "ar",
-      "cycle": 4,
-      "file": "monsters.json",
+      "category": "pl",
+      "cycle": 1,
+      "file": "otclient_modules.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "auto_start",
-      "t": "2026-02-14T07:52:06Z"
+      "t": "2026-02-14T08:37:50Z"
     },
     {
       "action": "update",
-      "category": "cs",
-      "cycle": 3,
-      "file": "monsters.json",
+      "category": "es",
+      "cycle": 1,
+      "file": "scripts.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "parallel_start",
-      "t": "2026-02-14T07:51:47Z"
+      "t": "2026-02-14T08:36:25Z"
+    },
+    {
+      "action": "update",
+      "category": "pl",
+      "cycle": 1,
+      "file": "html.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "auto_done",
+      "t": "2026-02-14T08:36:24Z"
+    },
+    {
+      "action": "update",
+      "category": "pl",
+      "cycle": 1,
+      "file": "html.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "auto_start",
+      "t": "2026-02-14T08:36:12Z"
+    },
+    {
+      "action": "update",
+      "category": "es",
+      "cycle": 1,
+      "file": "quests.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "parallel_start",
+      "t": "2026-02-14T08:34:34Z"
     }
   ],
-  "stage": "auto_done",
+  "stage": "parallel_start",
   "status": "running"
 }

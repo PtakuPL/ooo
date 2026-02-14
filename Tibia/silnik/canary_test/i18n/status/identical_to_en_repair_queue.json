@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-14T07:41:27.451140Z",
+  "timestamp": "2026-02-14T08:19:19.921132Z",
   "priority_langs": [
     "es",
     "pl"
@@ -17,14 +17,14 @@
   ],
   "entries_total": 31,
   "entries_by_lang": {
-    "es": 4477,
+    "es": 4235,
     "pl": 517
   },
   "top_entries": [
     {
       "lang": "es",
       "json_file": "npc.json",
-      "identical_to_en": 1510,
+      "identical_to_en": 1268,
       "domain_priority": 0
     },
     {
@@ -211,7 +211,7 @@
   "selected": {
     "lang": "es",
     "json_file": "npc.json",
-    "identical_to_en": 1510,
+    "identical_to_en": 1268,
     "domain_priority": 0
   }
 }

@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-02-14T08:41:11.905061Z",
+  "enabled": true,
+  "active": true,
+  "pending_key": "es,pl",
+  "pending_langs": [
+    "es",
+    "pl"
+  ],
+  "started_at": "2026-02-14T08:38:59.527675Z",
+  "start_cycle": 473,
+  "cycle_counter": 475,
+  "baseline_quality_rate_pct": 12.678,
+  "best_quality_rate_pct": 12.678,
+  "current_quality_rate_pct": 12.847,
+  "active_minutes": 2.206,
+  "detected": false,
+  "severity": "ok",
+  "reason": "tracking",
+  "lang_completion": {
+    "es": 86.7,
+    "pl": 75.14
+  }
+}

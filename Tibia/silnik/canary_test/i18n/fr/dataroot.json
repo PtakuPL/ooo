@@ -1,5 +1,5 @@
 {
-  "dataroot.global.msg_1": "[FR] {} minute{} of stamina has been refilled.",
-  "dataroot.global.msg_2": "[FR] You are no longer refilling stamina, \\z\n                                                         because your stamina is already full.",
-  "dataroot.global.msg_3": "[FR] {} of stamina has been refilled."
+  "dataroot.global.msg_1": "{} minute{} d’endurance ont été restaurées.",
+  "dataroot.global.msg_2": "Vous ne récupérez plus d’endurance, \\z\n                                                         car votre endurance est déjà au maximum.",
+  "dataroot.global.msg_3": "{} d’endurance a été restaurée."
 }

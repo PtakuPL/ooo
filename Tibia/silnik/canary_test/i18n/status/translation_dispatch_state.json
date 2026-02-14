@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-02-14T07:56:37.187792Z",
-  "cycle_counter": 449,
-  "last_target_key": "el:monsters.json",
-  "last_pending_total": 4281,
-  "last_tier": 3,
-  "last_cat_priority": 2,
-  "candidates_count": 1580,
-  "active_candidates_count": 1576,
+  "timestamp": "2026-02-14T08:40:26.356376Z",
+  "cycle_counter": 475,
+  "last_target_key": "es:html.json",
+  "last_pending_total": 976,
+  "last_tier": 1,
+  "last_cat_priority": 9,
+  "candidates_count": 37,
+  "active_candidates_count": 33,
   "skipped_backoff": 4,
   "skipped_guard_fail": 0,
   "guard_fail_blacklist": {},
@@ -31,7 +31,7 @@
     "w2": 3,
     "w3": 1
   },
-  "cache_hit": true,
+  "cache_hit": false,
   "cache_ttl_cycles": 5,
   "cache_cycle": 1,
   "no_progress_counts": {
@@ -255,7 +255,18 @@
     "cs:monsters.json": 0,
     "ar:monsters.json": 0,
     "bg:monsters.json": 0,
-    "bn:monsters.json": 0
+    "bn:monsters.json": 0,
+    "el:monsters.json": 0,
+    "et:monsters.json": 0,
+    "fa:monsters.json": 0,
+    "he:monsters.json": 0,
+    "hi:monsters.json": 0,
+    "hr:monsters.json": 0,
+    "hy:monsters.json": 0,
+    "id:monsters.json": 0,
+    "ja:monsters.json": 0,
+    "kk:monsters.json": 0,
+    "ko:monsters.json": 0
   },
   "bootstrap_priority": {
     "enabled": true,
@@ -272,5 +283,23 @@
   },
   "bootstrap_forced": false,
   "bootstrap_forced_lang": "",
-  "balance_forced": false
+  "balance_forced": false,
+  "global_quality_mode": true,
+  "priority_gate": {
+    "enabled": true,
+    "active": true,
+    "coverage_target": 100.0,
+    "priority_langs": [
+      "es",
+      "pl"
+    ],
+    "pending_langs": [
+      "es",
+      "pl"
+    ],
+    "lang_completion": {
+      "es": 86.7,
+      "pl": 75.14
+    }
+  }
 }

@@ -2,9 +2,9 @@
   "cycles": 49,
   "date": "2026-02-14",
   "errors": {
-    "count": 270
+    "count": 291
   },
-  "generated_at_utc": "2026-02-14T07:55:52Z",
+  "generated_at_utc": "2026-02-14T08:40:12Z",
   "work": {
     "auto_translate": {
       "langs": {
@@ -26,7 +26,7 @@
         },
         "BN": {
           "skipped": 0,
-          "translated": 400
+          "translated": 480
         },
         "BS": {
           "skipped": 0,
@@ -46,19 +46,19 @@
         },
         "EL": {
           "skipped": 0,
-          "translated": 400
+          "translated": 480
         },
         "ES": {
           "skipped": 0,
-          "translated": 5689
+          "translated": 6210
         },
         "ET": {
           "skipped": 0,
-          "translated": 320
+          "translated": 400
         },
         "FA": {
           "skipped": 0,
-          "translated": 400
+          "translated": 480
         },
         "FI": {
           "skipped": 0,
@@ -70,15 +70,15 @@
         },
         "HE": {
           "skipped": 0,
-          "translated": 320
+          "translated": 399
         },
         "HI": {
           "skipped": 0,
-          "translated": 400
+          "translated": 479
         },
         "HR": {
           "skipped": 0,
-          "translated": 400
+          "translated": 480
         },
         "HU": {
           "skipped": 0,
@@ -86,11 +86,11 @@
         },
         "HY": {
           "skipped": 0,
-          "translated": 320
+          "translated": 399
         },
         "ID": {
           "skipped": 0,
-          "translated": 320
+          "translated": 400
         },
         "IT": {
           "skipped": 0,
@@ -98,7 +98,7 @@
         },
         "JA": {
           "skipped": 0,
-          "translated": 287
+          "translated": 362
         },
         "KA": {
           "skipped": 0,
@@ -106,11 +106,11 @@
         },
         "KK": {
           "skipped": 0,
-          "translated": 400
+          "translated": 480
         },
         "KO": {
           "skipped": 0,
-          "translated": 314
+          "translated": 380
         },
         "LT": {
           "skipped": 0,
@@ -142,7 +142,7 @@
         },
         "PL": {
           "skipped": 0,
-          "translated": 794
+          "translated": 998
         },
         "PT": {
           "skipped": 0,

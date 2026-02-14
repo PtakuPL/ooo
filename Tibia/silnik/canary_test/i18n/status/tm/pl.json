@@ -80486,5 +80486,909 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-14T05:47:25.805995Z"
+  },
+  "npc.iskan.stdmod_24": {
+    "src_hash": "c2821dc3edee99154887809a5c5398ae",
+    "text": "Powiem ci coś. Widziałem kiedyś takie stworzenie, daleko na lodzie na wschodzie. To była najzimniejsza zima, jaką pamiętam, a chakoye wędrowały po lodzie niemal wszędzie. ... \\ z\n\tAby ich uniknąć, ja i chłopcy musieliśmy przejść długą drogę do miejsca, gdzie lód był zdradliwy i cienki. ... \\ z\n\tI tam widziałem takie stworzenie. Chłopcy prawie oszaleli, a ja natychmiast odwróciłem sanki. Nie mam pojęcia, jak dotarliśmy do domu. Prawdziwa historia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:21:20.682720Z"
+  },
+  "npc.iskan.stdmod_6": {
+    "src_hash": "fe97d3d265e5f17255c009c4ac72c999",
+    "text": "Słyszałem coś o rozbiciu się statku w szelfie lodowym pomiędzy Nibelorem a Grimlundem. Gdybym był tobą, nie wybrałbym się na tereny chakoya. To dość niebezpieczne.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:21:20.683447Z"
+  },
+  "npc.ivalisse.multi_11": {
+    "src_hash": "302e03b392f32d60811c3eff1eb2c012",
+    "text": "Odkąd dołączył do tak zwanej 'special research division', bez przerwy opowiadał o Zao i o tym, jak wyprawa tam pomoże mu osiągnąć postęp. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:21:20.684168Z"
+  },
+  "npc.ivalisse.multi_8": {
+    "src_hash": "55a3cca01e6809f86d8239455a7a9cf6",
+    "text": "Cóż, nie tyle jestem zaskoczony, co szczęśliwy, słysząc, że u niego wszystko w porządku. Wiesz, po incydencie z kaczką i parasolką, nie przychodzi mi to już tak łatwo. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:21:20.685133Z"
+  },
+  "npc.ivalisse.say_2": {
+    "src_hash": "09c64cc15f9043913b56778e5e938e85",
+    "text": "Oprócz moich różnych {duties} w świątyni, zajmuję się także gośćmi. Cóż, zrobiłbym to, ale w tej chwili nie mogę się zorientować, jak radzi sobie mój {father}. przykro mi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:21:20.685871Z"
+  },
+  "npc.ivalisse.stdmod_5": {
+    "src_hash": "09c64cc15f9043913b56778e5e938e85",
+    "text": "Oprócz moich różnych {duties} w świątyni, zajmuję się także gośćmi. Cóż, zrobiłbym to, ale w tej chwili nie mogę się zorientować, jak radzi sobie mój {father}. przykro mi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:21:20.686647Z"
+  },
+  "npc.iyad.stdmod_20": {
+    "src_hash": "750ce46325a9aafbd996226cd924fca8",
+    "text": "Nie interesują mnie żadne n...wiadomości, chyba że są to zapowiedzi g...fali upałów.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:21:20.687160Z"
+  },
+  "npc.jack.multi_4": {
+    "src_hash": "563a78924bf9c57ae8a3103acfb6cefa",
+    "text": "Widzę. Cóż, na początek myślę, że zwariowałeś. Gdybym miał 'travelled' w jakimś - urządzeniu? - to coś powinno być gdzieś tutaj, czy nie? ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:21:20.687866Z"
+  },
+  "npc.jack.multi_6": {
+    "src_hash": "2073429950279012ffb5948190269fc5",
+    "text": "Och, hm, mam tu gdzieś chusteczkę - ach, o nie, jest już używana, przepraszam. Więc mówisz, że to prawdziwa osoba? Widmo? To znaczy, co za dziwak w ogóle wymyśla takie imię. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:21:20.688684Z"
+  },
+  "npc.jack.multi_9": {
+    "src_hash": "d2f442fa4a7f7d7a04fb744510d656e9",
+    "text": "Ja... ja... Cóż, przynajmniej powiedziałeś mi prawdę. Nie wiem, czy mogę przyjąć to jako wymówkę, ale to jakiś początek. A teraz pozwólcie mi wrócić do pracy, muszę naprawić ten posąg, a potem resztę... bałaganu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:21:49.593543Z"
+  },
+  "npc.jack.say_1": {
+    "src_hash": "2c36a73a96732425edcd7600cc35eb0f",
+    "text": "Więc to znowu to imię. Jesteś naprawdę zdeterminowany, prawda. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:21:49.594054Z"
+  },
+  "npc.jack.say_2": {
+    "src_hash": "ab1e798a62679539434f8df110ae4aae",
+    "text": "Więc jeśli myśli, że jestem kimś, kogo znał, a teraz jest 'lost' i musi wrócić czy coś takiego, powiedz mu, że się myli. Zawsze tu mieszkałam z mamą i siostrą, jest mi tu dobrze i na pewno nie chcę iść do tej waszej akademii.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:21:49.595045Z"
+  },
+  "npc.jack_springer.multi_2": {
+    "src_hash": "c0759a0a7963c472130513fcedfd7c93",
+    "text": "Przy odrobinie szczęścia dotrzesz na miejsce przed zakończeniem rytuału. Ale ostrzegaj. Obecnych będzie co najmniej czterech wskrzeszonych rycerzy licz, aby wskrzesić 'their king'. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:21:49.595788Z"
+  },
+  "npc.jack_springer.stdmod_24": {
+    "src_hash": "cf70bcab880c43ab2edef0f37cae2f73",
+    "text": "Ma dość złożone znaczenie i, o ile możemy stwierdzić, przekłada się na 'army of those who are many, dedicated to the ultimate time of mayhem and despair'. ... \\ z\n\tInne, bardziej przydatne nazwy to armia ostatniego pola bitwy, armia dni ostatnich, legion chaosu, legion grozy lub po prostu {legion}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:21:49.596883Z"
+  },
+  "npc.jamesfrancis.greet_msg_4": {
+    "src_hash": "42a31f8f75293382022e9bacd6f3c175",
+    "text": "Jestem bardzo wdzięczny. Proszę, idź do Druid Crunora i powiedz mu, co widziałeś. Może go to zainteresuje.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:21:49.597582Z"
+  },
+  "npc.jean_pierre.multi_1": {
+    "src_hash": "b467dddfe0f670f695e0b774bc05ae7e",
+    "text": "Czas na słodki napój! Wlejmy mleko owadów do mojego kociołka i podgrzejmy na ogniu, aż się zagotuje... <starts slicing mangoes in the meantime> tam! ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:21:49.598487Z"
+  },
+  "npc.jean_pierre.multi_102": {
+    "src_hash": "5be8b800083f875b9a3f7e19ff4d407b",
+    "text": "Dla delikatnego i wyrazistego smaku dodamy jeszcze trochę innych warzyw i przypraw. Przynieś mi następujące składniki, a pokażę ci, jak to się robi. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:21:49.599240Z"
+  },
+  "npc.jean_pierre.multi_105": {
+    "src_hash": "55ec6d0970c8da21a2c061ff7fc54acd",
+    "text": "Nazwa pochodzi tylko od wpływu, jaki wywiera na ludzi. <winks> Przynieś mi następujące składniki, a pokażę ci, jak to się robi. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:21:49.599922Z"
+  },
+  "npc.jean_pierre.multi_14": {
+    "src_hash": "9bb08b8ac7a368fa6f968d9fed7f7cc7",
+    "text": "Teraz dodaj całe ziemniaki i gotuj wszystko w wysokiej temperaturze, aż ziemniaki będą tak miękkie, że po prostu się rozpadną. <mashes really fast, creating something of a dark brownish colour that doesn't really look tasty> ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:21:49.600874Z"
+  },
+  "npc.jean_pierre.multi_15": {
+    "src_hash": "d20186d2b5358bb27e5ea0abf39b6de4",
+    "text": "Tak, tak, wiem, nie patrz tak na mnie! Będziesz zaskoczony! Teraz wystarczy dodać posiekaną marchewkę i chili, aby uzyskać zdrową porcję witamin i przypraw, dalej mieszać i rozgniatać, a następnie gotować na wolnym ogniu przez około godzinę. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:21:49.601736Z"
+  },
+  "npc.jean_pierre.multi_16": {
+    "src_hash": "0831c77f05e7f5488e0a1204414e4508",
+    "text": "Zastanawiacie się, dlaczego do swojego słynnego menu wybrałam właśnie taki prosty przepis? Dowiesz się, kiedy spróbujesz! ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:21:49.602386Z"
+  },
+  "npc.jean_pierre.multi_27": {
+    "src_hash": "ae0c849dc5de324f4980b6cc1d667330",
+    "text": "I voila, gotowe! Dziewczyny z Carlin twierdzą, że to wyostrza ich wzrok, przynajmniej na jakiś czas. Jestem pewien, że w jakiś sposób pomoże ci to w twoich bitwach. Cieszyć się! ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:21:49.603125Z"
+  },
+  "npc.jean_pierre.multi_33": {
+    "src_hash": "0eb691127a3df8d680e271fdf61518e8",
+    "text": "Ładnie udekoruj na talerzu i gotowe! Nie mogę zbyt wiele powiedzieć o efektach, ale rybacy z Svargrond wydają się to uwielbiać. Cieszyć się!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:21:49.604017Z"
+  },
+  "npc.jean_pierre.multi_34": {
+    "src_hash": "0eb691127a3df8d680e271fdf61518e8",
+    "text": "Ładnie udekoruj na talerzu i gotowe! Nie mogę zbyt wiele powiedzieć o efektach, ale rybacy z Svargrond wydają się to uwielbiać. Cieszyć się!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:21:49.604892Z"
+  },
+  "npc.jean_pierre.multi_42": {
+    "src_hash": "af78ece642b0f857fdb88244dd73611b",
+    "text": "Nadzienie ładnie się rozpuści, trzeba tylko uważać, żeby nie wyciekło! I voila, gotowe! ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:21:49.605505Z"
+  },
+  "npc.jean_pierre.multi_44": {
+    "src_hash": "7ee5add8da2524151814f10c9ec0b7da",
+    "text": "Więc zaczynajmy! <rubs hands together and chops the vegetables> To danie szczególnie znane w okolicy Ab'Dendriel! Cebulę pokroić w drobną kostkę i poddusić na patelni, aż stanie się szklista. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:21:49.606351Z"
+  },
+  "npc.jean_pierre.multi_48": {
+    "src_hash": "2daf36ca5668e76c563a85194c8d668c",
+    "text": "Świetnie! Zróbmy to! <mixes and shakes faster than any human could> Znowu łatwe, ale od razu wprawisz się w wakacyjny nastrój, jak mieszkańcy plaży Meriana, od których dostałem ten przepis. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:21:49.607181Z"
+  },
+  "npc.jean_pierre.multi_51": {
+    "src_hash": "1641b0378d3f84c28cb7b819e825834a",
+    "text": "Voilà, skończyliśmy! Szczerze mówiąc, nie wiem, co ten napój robi, ale przynajmniej sprawia mi ogromną radość. Pij razem z ukochaną osobą i ciesz się!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:21:49.607948Z"
+  },
+  "npc.jean_pierre.multi_62": {
+    "src_hash": "c6aa7e8c6eb753d1981df2e06e2e8909",
+    "text": "Polej nim sałatkę i gotowe! To jest przepis Venoreański i bardzo smaczny. Polecam jeść go, gdy cierpisz na jakąś niebezpieczną chorobę. Cieszyć się!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:21:49.608870Z"
+  },
+  "npc.jean_pierre.multi_63": {
+    "src_hash": "131f06f3323c7da7e612b2ef96ecbe21",
+    "text": "Ach, więc zobaczmy! <prepares the food quickly while he explains it to you> Mięso podsmażamy w dużym garnku razem z posiekaną cebulą, aż oddzieli się od kości. Teraz mamy też wyborny rosół mięsny! ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:21:49.609704Z"
+  },
+  "npc.jean_pierre.multi_65": {
+    "src_hash": "aa0a52fc57b6b493b8dadf415f7f9253",
+    "text": "I voila, gotowe. Ten przepis opracowałam podczas rozmowy z Maryzą w Wesołym Toporniku. Mówiła, żeby to jeść, kiedy ktoś ma problemy ze zdrowiem. Cieszyć się!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:21:49.610477Z"
+  },
+  "npc.jean_pierre.multi_70": {
+    "src_hash": "471f8cf0e8841a8b3745e87ebf0e6fab",
+    "text": "Nie zaskoczył Cię wspaniały smak naszego dania głównego? Jeśli zostało Ci jeszcze trochę miejsca w brzuszku, mamy dla Ciebie słodki i zabawny deser – ale uważaj na niepożądane skutki uboczne! ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:21:49.611284Z"
+  },
+  "npc.jean_pierre.multi_86": {
+    "src_hash": "3f3ecb33cb973bd771d7c24a4bd0751c",
+    "text": "Przynieś mi następujące składniki, a pokażę Ci, jak to się robi: jeden szczupak północny, jeden pstrąg tęczowy, jeden okoń zielony, pięć krewetek, dwie bułki i jedna paproć.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:21:49.612029Z"
+  },
+  "npc.jean_pierre.multi_87": {
+    "src_hash": "3f3ecb33cb973bd771d7c24a4bd0751c",
+    "text": "Przynieś mi następujące składniki, a pokażę Ci, jak to się robi: jeden szczupak północny, jeden pstrąg tęczowy, jeden okoń zielony, pięć krewetek, dwie bułki i jedna paproć.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:21:49.612803Z"
+  },
+  "monster.falcon_knight.name": {
+    "src_hash": "e7484ecdd30013835b7803633710b8e5",
+    "text": "Sokół Knight",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:19.440847Z"
+  },
+  "monster.falcon_knight.desc": {
+    "src_hash": "a8e757d82ccdc392dd81b999a60ff29c",
+    "text": "rycerz sokół",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:19.441439Z"
+  },
+  "monster.betrayed_wraith.name": {
+    "src_hash": "53b702c8e3c4cdf2e46669c5898d3e9d",
+    "text": "Zdradzony Widm",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:19.441869Z"
+  },
+  "monster.betrayed_wraith.desc": {
+    "src_hash": "8ac527bc55522533f6bd2f36014ad998",
+    "text": "zdradzony upiór",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:19.442564Z"
+  },
+  "monster.undead_mine_worker.name": {
+    "src_hash": "42ac2c15a6a82d07dad6c10bfc42c22a",
+    "text": "Undead Pracownik kopalni",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:19.443200Z"
+  },
+  "monster.undead_mine_worker.desc": {
+    "src_hash": "bf548586dcf4614388ab8d35e042a776",
+    "text": "nieumarły pracownik kopalni",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:19.443874Z"
+  },
+  "monster.tarnished_spirit.name": {
+    "src_hash": "b3701abc554fc2238a90e81cc14431b6",
+    "text": "Zniszczony Duch",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:19.444282Z"
+  },
+  "monster.tarnished_spirit.desc": {
+    "src_hash": "b47f50dac34f6ee5f55769e5d4617248",
+    "text": "zszargany duch",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:19.444717Z"
+  },
+  "monster.ripper_spectre.name": {
+    "src_hash": "b6e566f2721075a2ef714c6153aca486",
+    "text": "Widmo Rozpruwacza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:19.445114Z"
+  },
+  "monster.ripper_spectre.desc": {
+    "src_hash": "8ced4fdbdcda11212c5ba8a115cdae7c",
+    "text": "widmo rozpruwacza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:19.445501Z"
+  },
+  "monster.tomb_servant.name": {
+    "src_hash": "84daae1d9009626b1b02c1de5e97a9c6",
+    "text": "Sługa grobowca",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:19.445937Z"
+  },
+  "monster.tomb_servant.desc": {
+    "src_hash": "4dc23d7b8700e1cf889f86197f38a14a",
+    "text": "sługa grobowca",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:19.446551Z"
+  },
+  "monster.flimsy_lost_soul.name": {
+    "src_hash": "bf4ac5555e6bafbcd2302d6f361a7ab1",
+    "text": "Słaba zagubiona dusza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:19.446996Z"
+  },
+  "monster.flimsy_lost_soul.desc": {
+    "src_hash": "1fc9987ffda17b9135fe31fcbb5b6ddf",
+    "text": "marna zagubiona dusza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:19.447467Z"
+  },
+  "monster.vampire_viscount.name": {
+    "src_hash": "50543aea25e1a0b9b8a98d4d97e73f21",
+    "text": "Wicehrabia wampir",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:19.447891Z"
+  },
+  "monster.vampire_viscount.desc": {
+    "src_hash": "f8adacbbf94a6af1f564717888119030",
+    "text": "wicehrabia wampir",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:19.448652Z"
+  },
+  "monster.freakish_lost_soul.name": {
+    "src_hash": "c5ff04c61fd9268b8a23bb67ac88399d",
+    "text": "Dziwacznie zagubiona dusza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:19.449128Z"
+  },
+  "monster.freakish_lost_soul.desc": {
+    "src_hash": "a3fa59af3a4cd8128ef33d23f51b066f",
+    "text": "dziwacznie zagubiona dusza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:19.449563Z"
+  },
+  "monster.demon_skeleton.desc": {
+    "src_hash": "9f6a0f5557198cc3ea039798a6b6a1a0",
+    "text": "szkielet demona",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:19.449946Z"
+  },
+  "monster.cursed_ape.name": {
+    "src_hash": "89744e5d6dc980ddb4078cb94981994b",
+    "text": "Przeklęta małpa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:19.450739Z"
+  },
+  "monster.cursed_ape.desc": {
+    "src_hash": "28f2f883c5b87ccbb8211803f0c31f55",
+    "text": "przeklęta małpa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:19.451336Z"
+  },
+  "monster.banshee.name": {
+    "src_hash": "5e6ebd9253806afff39f3f2e3c1b4e42",
+    "text": "Banshee",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:19.451660Z"
+  },
+  "monster.banshee.desc": {
+    "src_hash": "79987e642a7c2a665b7e3e65091f0bd5",
+    "text": "banshee",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:19.451963Z"
+  },
+  "monster.vicious_manbat.name": {
+    "src_hash": "65f33d2997a64f82b98b0ae01f2c409f",
+    "text": "Wściekły Manbat",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:19.452374Z"
+  },
+  "monster.vicious_manbat.desc": {
+    "src_hash": "5eee6a9d6a4b5437a939d2d09e92755e",
+    "text": "złośliwy manbat",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:19.452762Z"
+  },
+  "monster.gravedigger.name": {
+    "src_hash": "41c9a4f0a182d00173d25b206c72d367",
+    "text": "Grabarz",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:19.453108Z"
+  },
+  "monster.gravedigger.desc": {
+    "src_hash": "199c002c1b038aa1f13498048c19873b",
+    "text": "grabarz",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:19.453444Z"
+  },
+  "monster.gravedigger.voice_2": {
+    "src_hash": "4ea65b835a88b1c9a483e6b38eaf3615",
+    "text": "bazgrać",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:19.453746Z"
+  },
+  "monster.pirate_skeleton.name": {
+    "src_hash": "2b771d1df84e5d3840ba456f9f48ad34",
+    "text": "Szkielet Pirata",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:19.454137Z"
+  },
+  "monster.pirate_skeleton.desc": {
+    "src_hash": "31ae2c6b86dcd4e8afd8dca838d41495",
+    "text": "szkielet pirata",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:19.454581Z"
+  },
+  "monster.lost_soul.name": {
+    "src_hash": "0433d5f17139fd56fb8520c605914af9",
+    "text": "Zagubiona dusza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:19.454905Z"
+  },
+  "monster.lost_soul.desc": {
+    "src_hash": "3aab7a7311c01a1a7dc50ec28384d83f",
+    "text": "zagubiona dusza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:19.455256Z"
+  },
+  "monster.iks_aucar.name": {
+    "src_hash": "30756a50b889a663f3d08743b1aed1f5",
+    "text": "Iks Aucar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:19.455575Z"
+  },
+  "monster.iks_aucar.desc": {
+    "src_hash": "85694931b03d6b5a73ddfe3c779cd977",
+    "text": "iks aucar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:19.455979Z"
+  },
+  "monster.souleater.name": {
+    "src_hash": "937b0cba57310e07dd89c08a6254a08c",
+    "text": "Pożeracz dusz",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:19.456350Z"
+  },
+  "monster.souleater.desc": {
+    "src_hash": "da9db71e32e0b17a69c676b0a908a09e",
+    "text": "pożeracz dusz",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:19.456683Z"
+  },
+  "monster.rot_elemental.name": {
+    "src_hash": "2db0f6cdceaa3df90d1a8c8788f32181",
+    "text": "Żywiołak Zgnilizny",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:19.457067Z"
+  },
+  "monster.rot_elemental.desc": {
+    "src_hash": "5e13bfb97a4d8fd4c9d539a1dfae13a6",
+    "text": "żywiołak zgnilizny",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:19.457488Z"
+  },
+  "monster.rot_elemental.voice_1": {
+    "src_hash": "14ed875900acb9971aa6142d26320874",
+    "text": "*dzielenie*",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:19.457786Z"
+  },
+  "monster.undead_dragon.desc": {
+    "src_hash": "da12c4b454c0a8afd7628b98f093dd2a",
+    "text": "nieumarły smok",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:19.458980Z"
+  },
+  "monster.blood_beast.desc": {
+    "src_hash": "306726b7bb953f6b184f6cb2cd18dfce",
+    "text": "krwawa bestia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:19.459377Z"
+  },
+  "monster.captain_jones.name": {
+    "src_hash": "1e2e2b71c83591fdc90336925c4948aa",
+    "text": "Kapitan Jones",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:19.459721Z"
+  },
+  "monster.captain_jones.desc": {
+    "src_hash": "1e2e2b71c83591fdc90336925c4948aa",
+    "text": "Kapitan Jones",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:19.460087Z"
+  },
+  "monster.spyrat_facing_west.desc": {
+    "src_hash": "a9dced31dacd6129a040df285f7e18e7",
+    "text": "Widzisz szpiegata",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:19.460487Z"
+  },
+  "monster.brutus_bloodbeard.name": {
+    "src_hash": "0bc2731b0535b196564140b91c66fcfd",
+    "text": "Brutus Krwawobrody",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:19.460867Z"
+  },
+  "monster.brutus_bloodbeard.desc": {
+    "src_hash": "0bc2731b0535b196564140b91c66fcfd",
+    "text": "Brutus Krwawobrody",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:34.047771Z"
+  },
+  "monster.yakchal.name": {
+    "src_hash": "22ff6464f2de9ed78771a3c541689789",
+    "text": "Jakchał",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:34.048105Z"
+  },
+  "monster.yakchal.desc": {
+    "src_hash": "22ff6464f2de9ed78771a3c541689789",
+    "text": "Jakchał",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:34.048403Z"
+  },
+  "monster.mawhawk.name": {
+    "src_hash": "c2465590cd31ba4f386b30c0c8438fde",
+    "text": "Mawhawk",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:34.048733Z"
+  },
+  "monster.mawhawk.desc": {
+    "src_hash": "c2465590cd31ba4f386b30c0c8438fde",
+    "text": "Mawhawk",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:34.049029Z"
+  },
+  "monster.egg_the_welter.name": {
+    "src_hash": "f04ba3c635d301c987d90fc75c71775b",
+    "text": "Jajko",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:34.049298Z"
+  },
+  "monster.egg_the_welter.desc": {
+    "src_hash": "f04ba3c635d301c987d90fc75c71775b",
+    "text": "Jajko",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:34.049566Z"
+  },
+  "monster.rottie_the_rotworm.name": {
+    "src_hash": "d4164f75bcef0bbf8c12a48ea153104e",
+    "text": "Rottie, Rotworm",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:34.050063Z"
+  },
+  "monster.rottie_the_rotworm.desc": {
+    "src_hash": "d4164f75bcef0bbf8c12a48ea153104e",
+    "text": "Rottie, Rotworm",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:34.050591Z"
+  },
+  "monster.grorlam.name": {
+    "src_hash": "1c4ce88705b814c21c6468f135381900",
+    "text": "Grolam",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:34.050947Z"
+  },
+  "monster.grorlam.desc": {
+    "src_hash": "1c4ce88705b814c21c6468f135381900",
+    "text": "Grolam",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:34.051237Z"
+  },
+  "monster.deadeye_devious.name": {
+    "src_hash": "331fffffddef8fbc75f292fcb847db81",
+    "text": "Deadeye Devious",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:34.051593Z"
+  },
+  "monster.deadeye_devious.desc": {
+    "src_hash": "331fffffddef8fbc75f292fcb847db81",
+    "text": "Deadeye Devious",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:34.051982Z"
+  },
+  "monster.tyrn.name": {
+    "src_hash": "37c72b9144ce8b144f574be9a71d6125",
+    "text": "Tyrn",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:34.052273Z"
+  },
+  "monster.tyrn.desc": {
+    "src_hash": "37c72b9144ce8b144f574be9a71d6125",
+    "text": "Tyrn",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:34.052547Z"
+  },
+  "monster.spyrat_facing_east.desc": {
+    "src_hash": "a9dced31dacd6129a040df285f7e18e7",
+    "text": "Widzisz szpiegata",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:34.052951Z"
+  },
+  "monster.spawn_of_the_welter.name": {
+    "src_hash": "ae4d0c478e01ae5cd8ed3672698c7ae7",
+    "text": "Pomiot Weltera",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:34.053355Z"
+  },
+  "monster.spawn_of_the_welter.desc": {
+    "src_hash": "ae4d0c478e01ae5cd8ed3672698c7ae7",
+    "text": "Pomiot Weltera",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:34.053744Z"
+  },
+  "monster.glooth_battery.name": {
+    "src_hash": "cd886b2d88db26ba5298f9c8fa728675",
+    "text": "Bateria Glootha",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:34.054136Z"
+  },
+  "monster.glooth_battery.desc": {
+    "src_hash": "9736a708d1cc28b4beabe2b271d2f79b",
+    "text": "świetlista bateria",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:34.054562Z"
+  },
+  "monster.lethal_lissy.name": {
+    "src_hash": "3d377def1c84929dd9e20471d45b6a87",
+    "text": "Zabójcza Lissy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:34.054940Z"
+  },
+  "monster.lethal_lissy.desc": {
+    "src_hash": "3d377def1c84929dd9e20471d45b6a87",
+    "text": "Zabójcza Lissy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:34.055279Z"
+  },
+  "monster.frost_servant.name": {
+    "src_hash": "f8b6adf204cb0322ebb58de640730bda",
+    "text": "Mroźny Sługa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:34.055622Z"
+  },
+  "monster.frost_servant.desc": {
+    "src_hash": "022ef9b3e439dc12c21109c13f44b096",
+    "text": "sługa mrozu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:34.056017Z"
+  },
+  "monster.barbaria.name": {
+    "src_hash": "4c5d0baf150a119b60ecb81d41d1a02d",
+    "text": "Barbaria",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:24:34.056322Z"
+  },
+  "html.admin.data.html.text2": {
+    "src_hash": "8f08f462bf6add1d2b48010a65975c05",
+    "text": "Może to potrwać do kilku minut.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:36:23.572166Z"
+  },
+  "cpp.augment.damage": {
+    "src_hash": "da14a7168b547f35ea0c6fa9f50de63e",
+    "text": "szkoda",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:40:24.013774Z"
+  },
+  "cpp.game.offline_training_choice_axe": {
+    "src_hash": "cf090b79eb7b3b834d866d07fa271f74",
+    "text": "Walka toporami i tarcza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:40:24.023474Z"
+  },
+  "cpp.game.offline_training_choice_club": {
+    "src_hash": "3b376040cf5d41f07a8522d21e0360a1",
+    "text": "Walka klubowa i tarcza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:40:24.024482Z"
+  },
+  "cpp.game.offline_training_choice_distance": {
+    "src_hash": "5dcaab134101076ad8ea2dc671245580",
+    "text": "Walka na dystans i osłona",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:40:24.025111Z"
+  },
+  "cpp.inspect.body_finger": {
+    "src_hash": "e7efda40b1c94805070cd9bf9638ae27",
+    "text": "palec",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:40:24.025452Z"
+  },
+  "cpp.inspect.effect": {
+    "src_hash": "a62d22910732d5343689f5117999abfa",
+    "text": "Efekt",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:40:24.025759Z"
+  },
+  "cpp.look.damage": {
+    "src_hash": "da14a7168b547f35ea0c6fa9f50de63e",
+    "text": "szkoda",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:40:24.026116Z"
+  },
+  "cpp.weapon.missile": {
+    "src_hash": "286dd6035475fca389af2ad1a207e333",
+    "text": "pocisk",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:40:24.029952Z"
   }
 }

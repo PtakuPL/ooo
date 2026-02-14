@@ -2,10 +2,10 @@
   "lang": "he",
   "script_group": "rtl",
   "total_keys": 53586,
-  "translated": 35696,
-  "identical_to_en": 29278,
-  "placeholder_keys": 15735,
-  "coverage_pct": 66.6,
+  "translated": 35775,
+  "identical_to_en": 29293,
+  "placeholder_keys": 15656,
+  "coverage_pct": 66.8,
   "issues_total": 6245,
   "issues_by_type": {
     "V3_empty": 6143,
@@ -148,7 +148,7 @@
     "consistency": 1,
     "pl_reference": 400,
     "length_ratio": 58,
-    "auto_fix_applied": 0
+    "auto_fix_applied": 79
   },
-  "validated_at": "2026-02-14T07:48:43.323844Z"
+  "validated_at": "2026-02-14T08:40:31.431152Z"
 }

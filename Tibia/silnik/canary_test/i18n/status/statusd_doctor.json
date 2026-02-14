@@ -1,36 +1,63 @@
 {
-  "timestamp": "2026-02-14T07:57:15.801116Z",
+  "timestamp": "2026-02-14T08:41:12.251776Z",
+  "first_run_ts": "2026-02-14T08:41:12.251776Z",
   "overall": "CRITICAL",
   "issues_count": 1,
-  "warnings_count": 0,
+  "warnings_count": 1,
   "ok_count": 9,
   "issues": [
-    "SUSPICIOUS_HIGH_SPIKE: suspicious_high=2499 rate=11.994% window=6.0h top_lang=es:582 per_lang=[es:582(11.694%/warning),pl:374(53.582%/critical),ru:163(25.193%/critical),ar:145(45.455%/critical),bg:112(35.0%/critical)] per_domain=[npc.json:1178(13.742%/warning),server.json:291(51.964%/critical),monsters.json:232(14.312%/warning),scripts.json:162(30.112%/critical),otclient_modules.json:107(93.043%/critical)]"
+    "SUSPICIOUS_HIGH_SPIKE: suspicious_high=2576 rate=12.847% window=6.0h top_lang=es:670 per_lang=[es:670(13.866%/warning),pl:445(71.086%/critical),ru:161(28.75%/critical),ar:145(45.455%/critical),bg:112(35.0%/critical)] per_domain=[npc.json:1067(13.816%/warning),server.json:376(67.143%/critical),monsters.json:268(11.181%/warning),scripts.json:206(36.332%/critical),otclient_modules.json:135(112.5%/critical)]"
   ],
-  "warnings": [],
+  "warnings": [
+    "GUARDIAN_DEGRADED: guardian raportuje degraded"
+  ],
   "ok": [
-    "heartbeat_fresh (87s)",
-    "status_md_fresh (75s)",
-    "guard_report_fresh (35s)",
-    "dispatch_fresh (39s)",
-    "worker_pid_alive (1876374)",
-    "guardian_healthy",
-    "repair_queue_fresh (948s)",
-    "metrics_drift_ok (outside=47338 (88.34%) live=53586 registry=6248)",
-    "repair_tuning_active (samples_2h=4)"
+    "heartbeat_fresh (62s)",
+    "status_md_fresh (50s)",
+    "guard_report_fresh (33s)",
+    "dispatch_fresh (46s)",
+    "worker_pid_alive (1908568)",
+    "repair_queue_fresh (1312s)",
+    "metrics_drift_ok (outside=0 (0.00%) live=53586 registry=53586)",
+    "priority_gate_tracking (pending=[es,pl] active_minutes=2.2 cycle_delta=2 best_quality_drop=0.000%)",
+    "repair_tuning_active (samples_2h=7)"
   ],
   "metrics_drift": {
     "available": true,
     "status": "stable",
     "severity": "ok",
     "live_keys": 53586,
-    "worker_registry_keys": 6248,
-    "outside_worker_registry_keys": 47338,
-    "outside_worker_registry_pct": 88.34,
-    "warn_threshold_keys": 50000,
-    "critical_threshold_keys": 100000,
-    "warn_threshold_pct": 95.0,
-    "critical_threshold_pct": 99.0
+    "worker_registry_keys": 53586,
+    "worker_registry_keys_raw": 6248,
+    "registry_reconcile_adjustment": 47338,
+    "outside_worker_registry_keys": 0,
+    "outside_worker_registry_pct": 0.0,
+    "outside_worker_registry_keys_raw": 47338,
+    "outside_worker_registry_pct_raw": 88.34,
+    "warn_threshold_keys": 5000,
+    "critical_threshold_keys": 20000,
+    "warn_threshold_pct": 20.0,
+    "critical_threshold_pct": 50.0
+  },
+  "priority_gate_watch": {
+    "available": true,
+    "enabled": true,
+    "active": true,
+    "detected": false,
+    "severity": "ok",
+    "reason": "tracking",
+    "pending_langs": [
+      "es",
+      "pl"
+    ],
+    "active_minutes": 2.206,
+    "cycle_delta": 2,
+    "best_quality_drop_pct": 0.0,
+    "thresholds": {
+      "max_active_minutes": 180.0,
+      "max_cycles": 240,
+      "min_quality_drop_pct": 1.0
+    }
   },
   "thresholds_snapshot": {
     "source_of_truth": "statusd_thresholds_file",
@@ -49,10 +76,20 @@
       "rate_crit_pct": 20.0
     },
     "metrics_drift": {
-      "warn_keys": 50000,
-      "crit_keys": 100000,
-      "warn_pct": 95.0,
-      "crit_pct": 99.0
+      "warn_keys": 5000,
+      "crit_keys": 20000,
+      "warn_pct": 20.0,
+      "crit_pct": 50.0
+    },
+    "priority_gate_stuck": {
+      "max_active_minutes": 180.0,
+      "max_cycles": 240,
+      "min_quality_drop_pct": 1.0
+    },
+    "registry_reconcile": {
+      "min_outside_keys": 1000,
+      "min_outside_pct": 2.0,
+      "min_interval_seconds": 1800
     }
   }
 }

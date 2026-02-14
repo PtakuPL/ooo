@@ -3830,5 +3830,533 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-14T06:47:56.025705Z"
+  },
+  "monster.wolf.name": {
+    "src_hash": "279ede0c6bdbd7d26309becd159053d8",
+    "text": "Wolf",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:18:16.176950Z"
+  },
+  "monster.wolf.desc": {
+    "src_hash": "cffc94c08fa39be49cf4626dcf016ba4",
+    "text": "a wolf",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:18:16.177368Z"
+  },
+  "monster.hunter.name": {
+    "src_hash": "5e409e09f43d85c6e61301149e4f803b",
+    "text": "Hunter",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:18:16.177961Z"
+  },
+  "monster.sorcerer_familiar.name": {
+    "src_hash": "fe695fb861f4a78482830bcb8e24bee3",
+    "text": "Sorcerer familiar",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:18:16.178817Z"
+  },
+  "monster.knight_familiar.name": {
+    "src_hash": "59bb8dfecc548a5d097b6f0b0d0149e4",
+    "text": "Knight familiar",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:18:16.179233Z"
+  },
+  "monster.paladin_familiar.name": {
+    "src_hash": "394dc0c96d4265282f9b9e07a32e4dae",
+    "text": "Paladin familiar",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:18:16.179593Z"
+  },
+  "monster.druid_familiar.name": {
+    "src_hash": "99443d0ef921af33631809b8edfb838c",
+    "text": "Druid familiar",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:18:16.179975Z"
+  },
+  "monster.spider.name": {
+    "src_hash": "b4d68660c4a56181cd886fe5ecc08f71",
+    "text": "Spider",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:18:16.180319Z"
+  },
+  "monster.spider.desc": {
+    "src_hash": "e290d18d76cb96332184d7f6628df7d9",
+    "text": "a spider",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:18:16.180564Z"
+  },
+  "monster.wasp.name": {
+    "src_hash": "5a2121f3548dc88faf3db43db327f7c7",
+    "text": "Wasp",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:18:16.180772Z"
+  },
+  "monster.wasp.desc": {
+    "src_hash": "3a2ed3c44c06b17d283195af2999c2e6",
+    "text": "a wasp",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:18:16.180984Z"
+  },
+  "monster.dharalion.name": {
+    "src_hash": "f4b02a0be06c383d37eaf02f4359402b",
+    "text": "Dharalion",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:18:16.181475Z"
+  },
+  "monster.dharalion.desc": {
+    "src_hash": "f4b02a0be06c383d37eaf02f4359402b",
+    "text": "Dharalion",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:18:16.181915Z"
+  },
+  "monster.cyclops.name": {
+    "src_hash": "1a1ea04451ed996376aac96e92f38324",
+    "text": "Cyclops",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T08:18:16.182418Z"
+  },
+  "monster.salamander.name": {
+    "src_hash": "5617d73c694ad8f8004009e0f6b2e3d6",
+    "text": "도롱뇽",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:19:04.994970Z"
+  },
+  "monster.infernal_frog.name": {
+    "src_hash": "ac73dcaa6d477dee2e13e907726e1e89",
+    "text": "지옥불 개구리",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:19:04.995341Z"
+  },
+  "monster.infernal_frog.desc": {
+    "src_hash": "65c26bf28c30f488e6cbb62e337ba835",
+    "text": "지옥의 개구리",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:19:04.995608Z"
+  },
+  "monster.orchid_frog.name": {
+    "src_hash": "ab152f791a1d3a232d015f8bd893ff2b",
+    "text": "난초 개구리",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:19:04.996066Z"
+  },
+  "monster.orchid_frog.desc": {
+    "src_hash": "b4d22881650e417cdd0baffa0cd12910",
+    "text": "난초 개구리",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:19:04.996342Z"
+  },
+  "monster.azure_frog.name": {
+    "src_hash": "23313f7df02a26b437807139f8cf6d4f",
+    "text": "푸른 개구리",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:19:04.996576Z"
+  },
+  "monster.azure_frog.desc": {
+    "src_hash": "59c7ca9b9c073c8a79119373da76f121",
+    "text": "푸른 개구리",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:19:04.996816Z"
+  },
+  "monster.deathspawn.name": {
+    "src_hash": "a5093d8d030e55f6d31522da7b0f1e1b",
+    "text": "죽음의 피조물",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:19:04.997034Z"
+  },
+  "monster.deathspawn.desc": {
+    "src_hash": "3b37cb8ee83d1f764a407bb07147deea",
+    "text": "죽음의 피조물",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:19:04.997304Z"
+  },
+  "monster.bog_frog.name": {
+    "src_hash": "1f841ce43d9c5934a55a06814d04ec0e",
+    "text": "늪개구리",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:19:04.997516Z"
+  },
+  "monster.bog_frog.desc": {
+    "src_hash": "02ad7cd0462e724edd3d32c70c1eb405",
+    "text": "늪개구리",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:19:04.997727Z"
+  },
+  "monster.crimson_frog.name": {
+    "src_hash": "edc908c3340929cbb2675b53727ea188",
+    "text": "진홍개구리",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:19:04.997954Z"
+  },
+  "monster.crimson_frog.desc": {
+    "src_hash": "a1b755cebdaccdd7eb15db6e325c79eb",
+    "text": "진홍색 개구리",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:19:04.998222Z"
+  },
+  "monster.toad.name": {
+    "src_hash": "c7ccfc161889ed90a90ff22c92369226",
+    "text": "두꺼비",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:19:04.998503Z"
+  },
+  "monster.toad.desc": {
+    "src_hash": "7b68fb78bf1d528baf8a3812a21beec6",
+    "text": "두꺼비",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:19:04.998726Z"
+  },
+  "monster.coral_frog.name": {
+    "src_hash": "a69001bef54b57da0deed8c4d5699a02",
+    "text": "산호개구리",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:19:04.998959Z"
+  },
+  "monster.coral_frog.desc": {
+    "src_hash": "76fc47947c1b7b703d3d45874d9477ca",
+    "text": "산호개구리",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:19:04.999241Z"
+  },
+  "monster.filth_toad.name": {
+    "src_hash": "1abf448c003eff773e3609cee7ec2bae",
+    "text": "더러운 두꺼비",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:19:04.999492Z"
+  },
+  "monster.filth_toad.desc": {
+    "src_hash": "7519555a25e45c1da4ef3f91cd4969a9",
+    "text": "더러운 두꺼비",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:19:04.999737Z"
+  },
+  "monster.slime.name": {
+    "src_hash": "a537a3d7d5ede5718f2b597568233925",
+    "text": "더러운 것",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:19:04.999960Z"
+  },
+  "monster.defiler.name": {
+    "src_hash": "06432eefe619b19aa24a54c7b96244d8",
+    "text": "파멸자",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:19:05.000266Z"
+  },
+  "monster.defiler.desc": {
+    "src_hash": "a6afa6db875a5227cc954200b26df79c",
+    "text": "더럽히는 사람",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:19:05.000513Z"
+  },
+  "monster.frost_troll.name": {
+    "src_hash": "c6ab0f735ce887708ab91bfe1d63bf8c",
+    "text": "프로스트 트롤",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:19:05.000758Z"
+  },
+  "monster.frost_troll.desc": {
+    "src_hash": "db1f835d583a0a795b50f91297add7fd",
+    "text": "서리 트롤",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:19:05.001011Z"
+  },
+  "monster.troll.name": {
+    "src_hash": "922a511f02d148e4c9390526d85ca519",
+    "text": "트롤",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:19:05.001344Z"
+  },
+  "monster.island_troll.name": {
+    "src_hash": "b1a2aa325c39c830d83db485ab126a26",
+    "text": "아일랜드 트롤",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:19:05.001661Z"
+  },
+  "monster.goblin.name": {
+    "src_hash": "8e81e2940511f7152ba4462fe53e35b8",
+    "text": "고블린",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:19:05.001941Z"
+  },
+  "monster.goblin.desc": {
+    "src_hash": "a7f3ac990652166f157dcf42a1ee0be5",
+    "text": "고블린",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:19:05.002255Z"
+  },
+  "monster.ghoul.name": {
+    "src_hash": "a8515fffc5e27c8c977bec3adc1d06e6",
+    "text": "악귀",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:19:05.002806Z"
+  },
+  "monster.mummy.name": {
+    "src_hash": "4af8989a64edc6f13a0b59ec047d1db5",
+    "text": "엄마",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:19:05.003467Z"
+  },
+  "monster.winter_wolf.name": {
+    "src_hash": "f75e559b1871eca0fb6acb16a4fbb99c",
+    "text": "겨울늑대",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:19:05.003756Z"
+  },
+  "monster.winter_wolf.desc": {
+    "src_hash": "f1500141149d2e865dc7088814fd17bc",
+    "text": "겨울늑대",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:19:05.003983Z"
+  },
+  "monster.cave_rat.name": {
+    "src_hash": "4c2c32bad4494a18938eccaf6235937e",
+    "text": "동굴쥐",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:19:05.004252Z"
+  },
+  "monster.cave_rat.desc": {
+    "src_hash": "b4b535fbc0886e031208addd8e1c8984",
+    "text": "동굴쥐",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:19:05.004489Z"
+  },
+  "monster.bat.name": {
+    "src_hash": "2d5b3d62e7bd3a1d79494bd85e69b5ba",
+    "text": "박쥐",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:19:05.004682Z"
+  },
+  "monster.bat.desc": {
+    "src_hash": "3195b1e1ca5adc3efa2213047e4ffb7f",
+    "text": "박쥐",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:19:05.004875Z"
+  },
+  "monster.amazon.name": {
+    "src_hash": "b3b3a6ac74ecbd56bcdbefa4799fb9df",
+    "text": "아마존",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:19:05.005101Z"
+  },
+  "monster.amazon.desc": {
+    "src_hash": "9966c9483db020755b9b332ccda0e0c8",
+    "text": "아마존",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:19:05.005316Z"
+  },
+  "monster.monk.name": {
+    "src_hash": "844a2b0ce474227509eb629bc56c1359",
+    "text": "수도사",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:19:05.005759Z"
+  },
+  "monster.monk.desc": {
+    "src_hash": "d56e8d3e6c358414f7afa788ed492be1",
+    "text": "승려",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:19:05.006133Z"
+  },
+  "monster.hunter.desc": {
+    "src_hash": "246604b043bfc8edbea78331c080f2ca",
+    "text": "사냥꾼",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:19:05.006549Z"
+  },
+  "monster.bandit.name": {
+    "src_hash": "7534759ceb94c0e91b13a22fe6e16980",
+    "text": "적기",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:19:05.006790Z"
+  },
+  "monster.valkyrie.name": {
+    "src_hash": "0af3f80a54716414f24a166e5c1b6c26",
+    "text": "발키리",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:19:18.622171Z"
+  },
+  "monster.valkyrie.desc": {
+    "src_hash": "182de564b1fe25142e78b2a977a2b514",
+    "text": "발키리",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:19:18.622567Z"
+  },
+  "monster.assassin.name": {
+    "src_hash": "9b2dd2ace4fae2ba85df02e3ebf3f89e",
+    "text": "암살자",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:19:18.622799Z"
+  },
+  "monster.training_machine.name": {
+    "src_hash": "239f8d0ccb4342a21943b1bcc65edf0f",
+    "text": "훈련 기계",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:19:18.623130Z"
+  },
+  "monster.juggernaut.name": {
+    "src_hash": "024fc70d51074c9f42ee7f917c37b4ed",
+    "text": "절대적인 힘",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:19:18.623405Z"
+  },
+  "monster.juggernaut.desc": {
+    "src_hash": "c92f93987179e5a10d26cae3f0029ad4",
+    "text": "거대괴수",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:19:18.623626Z"
+  },
+  "monster.demon.name": {
+    "src_hash": "300d4af0950c89b847cf6f7500e6060c",
+    "text": "악마",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:19:18.623823Z"
+  },
+  "monster.hellhound.name": {
+    "src_hash": "7f67cc83cb82576db750ab2ba9cbfb17",
+    "text": "헬하운드",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:19:18.624091Z"
+  },
+  "monster.destroyer.name": {
+    "src_hash": "f90034e6810bf57cdb3d99a298221fc9",
+    "text": "파괴자",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:19:18.624365Z"
+  },
+  "monster.hellspawn.name": {
+    "src_hash": "6f4596e4b6567420115ceb0704e9d14d",
+    "text": "지옥의 피조물",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T08:19:18.624637Z"
   }
 }

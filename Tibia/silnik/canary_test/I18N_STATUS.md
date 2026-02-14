@@ -5,23 +5,23 @@
 ## 🧭 META
 
 > **[META]** 🟢 ACTIVE  
-> Świeżość: teraz | Źródło: `update_github_status()` | Ostatnia aktualizacja: 2026-02-14 05:25:08
+> Świeżość: teraz | Źródło: `update_github_status()` | Ostatnia aktualizacja: 2026-02-14 05:27:16
 
-> **Aktualizacja:** 2026-02-14 05:25:08 UTC  
+> **Aktualizacja:** 2026-02-14 05:27:16 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 53586  
-> **LIVE:** Cykl #28 | Status: ✅ IDLE | Faza: IDLE | Etap: cycle_start | Kategoria: - | Plik: - | ETA: 0 | Heartbeat: 2026-02-14T05:25:05Z  
-> **Strict hourly (JSONL-only):** okno=1.0h | cycles=75 | pending_skip=0.0% | guard_fail=0.9% | throughput=1525.6/h  
-> **Net effective translated:** 58,994
+> **LIVE:** Cykl #28 | Status: 🟢 RUNNING | Faza: AUTO_TRANSLATE | Etap: parallel_start | Kategoria: ro | Plik: items.json | ETA: 0 | Heartbeat: 2026-02-14T05:26:50Z  
+> **Strict hourly (JSONL-only):** okno=1.0h | cycles=76 | pending_skip=0.0% | guard_fail=0.9% | throughput=1476.2/h  
+> **Net effective translated:** 59,074
 
 ### 🧩 Status sekcji (P0.1)
 | Sekcja | Stan | Świeżość | Powód | Źródło | Ostatnia aktualizacja |
 |--------|------|----------|-------|--------|-----------------------|
-| META | 🟢 ACTIVE | teraz | - | `update_github_status()` | 2026-02-14 05:25:08 |
-| LIVE | 🟢 ACTIVE | 4s temu | - | `activity.json / worker_state.json` | 2026-02-14T05:25:05Z |
-| MIGRATION | 🔒 INACTIVE | 10h temu | worker w trybie IDLE | `i18n_file_status.json` | 2026-02-14 05:25:08 |
-| TRANSLATION | 🔒 INACTIVE | 1min temu | worker w trybie IDLE | `translation_guard_latest.json / translation_recent_latest.json` | 2026-02-14T05:23:37.584846Z |
-| QUALITY | 🔒 INACTIVE | 13s temu | worker w trybie IDLE | `quality_audit_latest.json` | 2026-02-14T05:24:56.376877Z |
-| HISTORY | 🟢 ACTIVE | teraz | - | `daily/*.json / ops.jsonl` | 2026-02-14 05:25:08 |
+| META | 🟢 ACTIVE | teraz | - | `update_github_status()` | 2026-02-14 05:27:16 |
+| LIVE | 🟢 ACTIVE | 26s temu | - | `activity.json / worker_state.json` | 2026-02-14T05:26:50Z |
+| MIGRATION | 🔒 INACTIVE | 10h temu | worker w trybie AUTO_TRANSLATE | `i18n_file_status.json` | 2026-02-14 05:27:16 |
+| TRANSLATION | 🟢 ACTIVE | 1min temu | - | `translation_guard_latest.json / translation_recent_latest.json` | 2026-02-14T05:26:08.252336Z |
+| QUALITY | 🔒 INACTIVE | 2min temu | worker w trybie AUTO_TRANSLATE | `quality_audit_latest.json` | 2026-02-14T05:24:56.376877Z |
+| HISTORY | 🟢 ACTIVE | teraz | - | `daily/*.json / ops.jsonl` | 2026-02-14 05:27:16 |
 
 > Artefakt machine-readable: `i18n/status/status_sections_latest.json`
 
@@ -30,14 +30,14 @@
 ## 🔴 LIVE
 
 > **[LIVE]** 🟢 ACTIVE  
-> Świeżość: 4s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T05:25:05Z
+> Świeżość: 26s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T05:26:50Z
 
-- **Faza:** `IDLE`
-- **Etap:** `cycle_start`
-- **Kategoria:** `-`
-- **Plik:** `-`
-- **Status:** ✅ IDLE
-- **Heartbeat:** `2026-02-14T05:25:05Z`
+- **Faza:** `AUTO_TRANSLATE`
+- **Etap:** `parallel_start`
+- **Kategoria:** `ro`
+- **Plik:** `items.json`
+- **Status:** 🟢 RUNNING
+- **Heartbeat:** `2026-02-14T05:26:50Z`
 
 ---
 
@@ -91,8 +91,8 @@
 
 ## 🛠️ MIGRATION
 
-> **[MIGRATION]** 🔒 INACTIVE (worker w trybie IDLE)  
-> Świeżość: 10h temu | Źródło: `i18n_file_status.json` | Ostatnia aktualizacja: 2026-02-14 05:25:08
+> **[MIGRATION]** 🔒 INACTIVE (worker w trybie AUTO_TRANSLATE)  
+> Świeżość: 10h temu | Źródło: `i18n_file_status.json` | Ostatnia aktualizacja: 2026-02-14 05:27:16
 
 ### 📁 Pliki Projektu (pełny skan)
 | Metryka | Wartość | Procent | Info |
@@ -133,8 +133,8 @@
 
 ## 🌍 TRANSLATION
 
-> **[TRANSLATION]** 🔒 INACTIVE (worker w trybie IDLE)  
-> Świeżość: 1min temu | Źródło: `translation_guard_latest.json / translation_recent_latest.json` | Ostatnia aktualizacja: 2026-02-14T05:23:37.584846Z
+> **[TRANSLATION]** 🟢 ACTIVE  
+> Świeżość: 1min temu | Źródło: `translation_guard_latest.json / translation_recent_latest.json` | Ostatnia aktualizacja: 2026-02-14T05:26:08.252336Z
 
 | Metryka | Wartość | Procent | Info |
 |---------|---------|---------|------|
@@ -159,13 +159,13 @@
 | KO (Koreański) | 11,687/53,586 | 21.81% | 29,281 | 2,155 |
 | ML (ML) | 11,689/53,586 | 21.81% | 29,286 | 2,155 |
 | JA (Japoński) | 11,629/53,586 | 21.70% | 29,314 | 2,155 |
+| MS (MS) | 11,612/53,586 | 21.67% | 29,270 | 2,155 |
 | SW (SW) | 11,612/53,586 | 21.67% | 29,283 | 2,155 |
 | TA (TA) | 11,612/53,586 | 21.67% | 29,282 | 2,155 |
 | TE (TE) | 11,612/53,586 | 21.67% | 29,282 | 2,155 |
 | TH (TH) | 11,612/53,586 | 21.67% | 29,282 | 2,155 |
 | TL (TL) | 11,612/53,586 | 21.67% | 29,291 | 2,155 |
 | VI (VI) | 11,614/53,586 | 21.67% | 29,280 | 2,155 |
-| ZH_TW (ZH_TW) | 11,541/53,586 | 21.54% | 29,311 | 2,155 |
 
 ### 🧭 Aktywny folder tłumaczeń
 - **Folder:** MK - MK - Serwer
@@ -173,60 +173,60 @@
 - **Ostatnie klucze (10-20):** 20
 
 ### 📝 Ostatnie 10-20 przetłumaczonych kluczy
-- Excellent! Another job well done! Would you accept another mission? → ¡Excelente! ¡Otro trabajo bien hecho! ¿Aceptarías otra misión? (npc.kevin.say_19)
-- So you have finally made it! I did not think that you would have it in you ... H → ¡Así que finalmente lo lograste! No pensé que lo tendrías dentro... Sin embargo: (npc.kevin.say_2)
-- Excellent! Another job well done! Would you accept another mission? → ¡Excelente! ¡Otro trabajo bien hecho! ¿Aceptarías otra misión? (npc.kevin.say_20)
-- You have made it! We have enough bones for the fund! You remind me of myself whe → ¡Lo has logrado! ¡Tenemos suficientes huesos para el fondo! ¡Me recuerdas a mí m (npc.kevin.say_21)
-- You have made it! We have enough bones for the fund! You remind me of myself whe → ¡Lo has logrado! ¡Tenemos suficientes huesos para el fondo! ¡Me recuerdas a mí m (npc.kevin.say_22)
-- You truly got him? Quite impressive. You are a very promising candidate! I think → ¿Realmente lo atrapaste? Bastante impresionante. ¡Eres un candidato muy prometed (npc.kevin.say_23)
-- So are you ready for another mission? → ¿Estás listo para otra misión? (npc.kevin.say_24)
-- So are you ready for another mission? → ¿Estás listo para otra misión? (npc.kevin.say_25)
-- Oh yes, where did we get that from ...? Let's see, first ask the great technoman → Oh si, ¿de dónde sacamos eso...? Veamos, primero pregúntale al gran tecnomante e (npc.kevin.say_26)
-- The mail with Talphion's instructions just arived. I remember we asked Queen Elo → Acaba de llegar el correo con las instrucciones de Talphion. Recuerdo que le ped (npc.kevin.say_27)
-- The queen has sent me the samples we needed. The next part is tricky. We need th → La reina me ha enviado las muestras que necesitábamos. La siguiente parte es com (npc.kevin.say_28)
-- Fine, fine. I think that should do it. Tell Hugo that we order those uniforms. T → Bien, bien. Creo que eso debería bastar. Dile a Hugo que encargamos esos uniform (npc.kevin.say_29)
-- Excellent, you got it fixed! This will teach this mailbox a lesson indeed! Are y → Excelente, lo arreglaste! ¡Esto le dará una lección a este buzón! ¿Estás interes (npc.kevin.say_3)
-- You are worthy indeed. Do you want to advance in our guild? → Eres realmente digno. ¿Quieres avanzar en nuestro gremio? (npc.kevin.say_30)
-- You are worthy indeed. Do you want to advance in our guild? → Eres realmente digno. ¿Quieres avanzar en nuestro gremio? (npc.kevin.say_31)
-- You are worthy indeed. Do you want to advance in our guild? → Eres realmente digno. ¿Quieres avanzar en nuestro gremio? (npc.kevin.say_32)
-- You are worthy indeed. Do you want to advance in our guild? → Eres realmente digno. ¿Quieres avanzar en nuestro gremio? (npc.kevin.say_33)
-- Hm, I might consider your proposal, but first you will have to prove your worth  → Hm, podría considerar tu propuesta, pero primero tendrás que demostrar tu valía  (npc.kevin.say_34)
-- Excellent! Your first task will be quite simple. But you should better write my  → ¡Excelente! Tu primera tarea será bastante sencilla. Pero será mejor que escriba (npc.kevin.say_35)
-- So listen, you will check certain tours our members have to take to see if there → Así que escuche, comprobará ciertos recorridos que nuestros miembros deben reali (npc.kevin.say_36)
+- high grass → rumput tinggi (item.9998.name)
+- high grass → rumput tinggi (item.9999.name)
+- Tome of Knowledge → Buku Knowledge (item.10217.name)
+- corned fish → ikan kornet (item.10218.name)
+- crocodile steak → stik buaya (item.10219.name)
+- dead killer caiman → pembunuh mati caiman (item.10221.name)
+- dead killer caiman → pembunuh mati caiman (item.10222.name)
+- dead killer caiman → pembunuh mati caiman (item.10223.name)
+- dead killer caiman → pembunuh mati caiman (item.10224.name)
+- nightmare doll → anak patung mimpi ngeri (item.10227.name)
+- bonebeast trophy → trofi bonebeast (item.10244.name)
+- weapons crate → peti senjata (item.10247.name)
+- crab pincers → penyepit ketam (item.10272.name)
+- terrorbird beak → paruh burung terror (item.10273.name)
+- skunk tail → ekor sigung (item.10274.name)
+- carrion worm fang → taring cacing bangkai (item.10275.name)
+- elder bonelord tentacle → sesungut bonelord yang lebih tua (item.10276.name)
+- bony tail → ekor tulang (item.10277.name)
+- stone wing → sayap batu (item.10278.name)
+- piece of crocodile leather → sekeping kulit buaya (item.10279.name)
 
 ### 🚫 Raporty "nie mogę przetłumaczyć"
-- Guard reports: **1913**  
+- Guard reports: **1914**  
 - Blocker reports: **0**  
-- Widoczne raporty 'nie mogę tłumaczyć': **1863**
+- Widoczne raporty 'nie mogę tłumaczyć': **1864**
 
 ### 🌐 Globalne info wszystkich języków
-- **Global completion:** **20.81%** (579,777/2,786,472)
+- **Global completion:** **20.81%** (579,857/2,786,472)
 - **EN-copy łącznie:** **1,335,959**
 - **Braki kluczy łącznie:** **110,060**
 - **Brakujące pliki językowe:** **0**
-- **Cache STATUSPY (per-lang):** **warm-cache** | hit **52**, miss **0**, hit-rate **100.0%**
-- **Cache STATUSPY (per-file):** hit **1976**, miss **0**, hit-rate **100.0%**
-- **Profiler cyklu (ostatni):** cykl #27 (AUTO_TRANSLATE): dispatch 530ms, mode 169786ms, status 4452ms, total 175766ms
+- **Cache STATUSPY (per-lang):** **mixed** | hit **51**, miss **1**, hit-rate **98.1%**
+- **Cache STATUSPY (per-file):** hit **1975**, miss **1**, hit-rate **99.9%**
+- **Profiler cyklu (ostatni):** -
 - **Osobny raport:** `i18n/status/translation_global_overview.json`
 
 ### ⏱️ Strict Hourly Window (JSONL-only)
 | Metryka | Wartość |
 |---------|---------|
-| Okno | **1.0h** (2026-02-14T04:25:08.931563Z → 2026-02-14T05:25:08.931563Z) |
-| Cykle | **75** (AUTO=75, MIGRATION=0) |
+| Okno | **1.0h** (2026-02-14T04:27:16.295377Z → 2026-02-14T05:27:16.295377Z) |
+| Cykle | **76** (AUTO=76, MIGRATION=0) |
 | Pending skip | **0** (all=0.0%, migration=0.0%) |
 | Guard fail rate | **0.9%** |
 | No progress rate | **0.0%** |
-| Throughput | **1525.6 kluczy/h** |
+| Throughput | **1476.2 kluczy/h** |
 | Suspicious | **250** |
-| Top guard_fail targets | ja/items.json (gf=18), tr/npc.json (gf=6), ko/items.json (gf=3), fr/items.json (gf=0), it/items.json (gf=0) |
+| Top guard_fail targets | ja/items.json (gf=18), tr/npc.json (gf=6), ko/items.json (gf=3), ru/items.json (gf=0), tr/items.json (gf=0) |
 | Źródła | `i18n/status/worker_cycle_perf.jsonl`, `i18n/status/translation_guard_report.jsonl`, `i18n/status/suspicious_log.jsonl` |
 | Plik | `i18n/status/strict_hourly_window_latest.json` |
 
 ## 🔬 QUALITY
 
-> **[QUALITY]** 🔒 INACTIVE (worker w trybie IDLE)  
-> Świeżość: 13s temu | Źródło: `quality_audit_latest.json` | Ostatnia aktualizacja: 2026-02-14T05:24:56.376877Z
+> **[QUALITY]** 🔒 INACTIVE (worker w trybie AUTO_TRANSLATE)  
+> Świeżość: 2min temu | Źródło: `quality_audit_latest.json` | Ostatnia aktualizacja: 2026-02-14T05:24:56.376877Z
 
 - **Ostatni audyt:** OK | 0 issue(s) / 100 entries | 2026-02-14T05:24:56.376877Z
 - **Top 5 typów problemów:** suspicious_rejected_critical=200, suspicious_log_high=117, suspicious_log_low=76, suspicious_log_critical=6, suspicious_log_medium=1
@@ -268,8 +268,8 @@
 
 ## ✅ CHECKLIST - Plan Pracy
 
-> **Aktualna faza:** IDLE  
-> **Aktualna kategoria:** -
+> **Aktualna faza:** AUTO_TRANSLATE  
+> **Aktualna kategoria:** ro
 
 
 ### 🔄 Faza 1: 🎮 Canary Server
@@ -337,33 +337,33 @@
 ## 🔴 LIVE: Szczegóły wykonania
 
 > **[LIVE]** 🟢 ACTIVE  
-> Świeżość: 4s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T05:25:05Z
+> Świeżość: 26s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T05:26:50Z
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │ 🔴 LIVE: Worker v2.0                          Cykl #    28 │
 ├─────────────────────────────────────────────────────────────────┤
-│ Status:    ✅ IDLE                                   │
-│ Tryb:      ✅ IDLE (cycle_start)                     │
-│ Kategoria: -                                        │
+│ Status:    🟢 RUNNING                                │
+│ Tryb:      🤖 AUTO_TRANSLATE (parallel_start)        │
+│ Kategoria: 📁 RO                                     │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status: running                                               │
-│ Plik: -                                                       │
-│ Postęp: 0/0 units                                             │
-│ Info: cycle start                                             │
+│ Plik: items.json                                              │
+│ Postęp: 0/0 keys                                              │
+│ Info: parallel auto translate                                 │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2026-02-14T05:25:05Z           │
+│ ❤️ Heartbeat: 2026-02-14T05:26:50Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 🧾 Ostatnie akcje (dla czytelności)
 
+- 2026-02-14 05:26:50 | AUTO_TRANSLATE:parallel_start | ro | ok | items.json
+- 2026-02-14 05:26:08 | AUTO_TRANSLATE:auto_done | ms | ok | items.json
+- 2026-02-14 05:25:49 | AUTO_TRANSLATE:auto_start | ms | ok | items.json
 - 2026-02-14 05:23:27 | AUTO_TRANSLATE:parallel_start | ml | ok | items.json
 - 2026-02-14 05:22:43 | AUTO_TRANSLATE:auto_done | mk | ok | items.json
 - 2026-02-14 05:22:06 | AUTO_TRANSLATE:auto_start | mk | ok | items.json
-- 2026-02-14 05:20:45 | AUTO_TRANSLATE:parallel_start | lv | ok | items.json
-- 2026-02-14 05:20:03 | AUTO_TRANSLATE:auto_done | lt | ok | items.json
-- 2026-02-14 05:18:55 | AUTO_TRANSLATE:auto_start | lt | ok | items.json
 
 ---
 
@@ -371,22 +371,23 @@
 
 | Język | Coverage | Brakujące | EN-copy | Translated(200) | Guard fail | Entries |
 |-------|----------|-----------|---------|-----------------|------------|---------|
-| 🟡 PL | 75.0% | 2,083 | 2,856 | 686 | 254 (27.0%) | 21 |
+| 🟡 PL | 75.0% | 2,083 | 2,856 | 670 | 242 (26.5%) | 20 |
 | 🟡 ES | 82.3% | 232 | 12,155 | 594 | 250 (29.6%) | 21 |
 
 | KPI | Wartość | Target | Status |
 |-----|---------|--------|--------|
-| Net effective translated | **58,994** | — | 📊 |
+| Net effective translated | **59,074** | — | 📊 |
 | Adaptive batch | batch=50, gf_rate=2.62%, reason=increase_low_fail_rate=2.6% | gf <5% → increase | 📊 |
-| Throughput (last window) | 1,280 keys / 42 entries | >50/h | 📊 |
+| Throughput (last window) | 1,264 keys / 41 entries | >50/h | 📊 |
 
 ---
 
 ## 📜 HISTORY
 
 > **[HISTORY]** 🟢 ACTIVE  
-> Świeżość: teraz | Źródło: `daily/*.json / ops.jsonl` | Ostatnia aktualizacja: 2026-02-14 05:25:08
+> Świeżość: teraz | Źródło: `daily/*.json / ops.jsonl` | Ostatnia aktualizacja: 2026-02-14 05:27:16
 
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [ms] → warn (files+1, translated+80, skipped+0) — lang=ms file=items.json strict_skip missing_file=0 missing_key=163 skipped_done=3305 strict_skipped_done=3305
 - 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [az] → ok (translated+80, skipped+0) — parallel lang=az file=items.json
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [ar] → warn (files+1, translated+80, skipped+0) — lang=ar file=items.json strict_skip missing_file=0 missing_key=163 skipped_done=3225 strict_skipped_done=3225
 - 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [lt] → ok (translated+80, skipped+0) — parallel lang=lt file=items.json
@@ -396,7 +397,6 @@
 - 🔧 MIGRATION: zakończono kategorię [dataroot] → ok (keys+0, files+0) — migration finished
 - 🔧 MIGRATION: mini-batch stop [dataroot] → ok (keys+0) — no new data
 - 🔧 MIGRATION: mini-batch [dataroot] → ok (keys+0) — mini_batch=1 processed=5/5
-- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [de] → ok (translated+8, skipped+0) — parallel lang=de file=scripts.json
 
 
 
@@ -406,7 +406,7 @@
 - Cykle: **49**
 - MIGRATION: **+0** kluczy, **0** plików `.lua`
 - Kategorie dotknięte: -
-- Błędy: **200**
+- Błędy: **202**
 
 
 ---
@@ -717,7 +717,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2026-02-14 05:25:08  
+📅 Auto-updated by Worker v1.1 | Last: 2026-02-14 05:27:16  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

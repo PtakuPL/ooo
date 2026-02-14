@@ -1,69 +1,69 @@
 # I18N Daily Executive Report (24h)
 
-- Generated: `2026-02-14T13:38:58.406528Z`
-- Window: `2026-02-13T13:38:58.406528Z` -> `2026-02-14T13:38:58.406528Z`
+- Generated: `2026-02-14T15:06:19.779476Z`
+- Window: `2026-02-13T15:06:19.779476Z` -> `2026-02-14T15:06:19.779476Z`
 
 ## KPI 24h
 
 | KPI | Value |
 |---|---:|
-| translated | 47506 |
-| guard_fail | 3044 |
-| guard_fail_rate | 6.02% |
-| no_progress_entries | 26 |
-| no_progress_rate | 2.74% |
+| translated | 48172 |
+| guard_fail | 3252 |
+| guard_fail_rate | 6.32% |
+| no_progress_entries | 28 |
+| no_progress_rate | 2.88% |
 | pending_skip_count | 0 |
 | pending_skip_share | 0.00% |
 | pending_skip_source | pending_skip_24h_latest.json |
-| throughput_keys_per_h_window | 1979.4 |
-| throughput_keys_per_h_active | 2650.0 |
+| throughput_keys_per_h_window | 2007.2 |
+| throughput_keys_per_h_active | 2473.7 |
 
 ## Quality 24h
 
 | Metric | Value |
 |---|---:|
-| suspicious_count | 12964 |
-| suspicious_high_count | 9932 |
-| suspicious_high_rate | 16.46% |
-| suspicious_high_top_lang | es:3101 |
-| identical_to_en_count | 17802 |
-| gt_guard_fails_count | 10896 |
-| latest_audit_issues_found | 0 |
+| suspicious_count | 13825 |
+| suspicious_high_count | 10785 |
+| suspicious_high_rate | 17.62% |
+| suspicious_high_top_lang | es:3519 |
+| identical_to_en_count | 17866 |
+| gt_guard_fails_count | 10983 |
+| latest_audit_issues_found | 14 |
 
 ## Repair Queue 24h
 
 | Metric | Value |
 |---|---:|
-| samples_24h | 101 |
-| latest_entries_total | 737 |
+| samples_24h | 108 |
+| latest_entries_total | 706 |
 | top_target_latest | es:npc.json |
-| top_backlog_latest | 22 |
+| top_backlog_latest | 24 |
 | top_target_start_24h | es:npc.json |
-| top_target_drop_24h | 5646 |
+| top_target_drop_24h | 5644 |
 | stagnation_detected | no |
-| stagnation_span_h | 5.922 |
+| stagnation_span_h | 5.147 |
 | stagnation_reason | window_too_short |
 
 ## Repair Tuning 24h
 
 | Metric | Value |
 |---|---:|
-| samples_24h | 15 |
-| avg_limit | 254.67 |
-| avg_suspicious_high_pct | 3.72% |
-| translated_total | 1409 |
+| samples_24h | 19 |
+| avg_limit | 231.37 |
+| avg_suspicious_high_pct | 5.82% |
+| translated_total | 1457 |
 | guard_fail_total | 2232 |
-| guard_fail_rate_pct | 61.30% |
-| gt_mode_true_samples | 15 |
-| latest_timestamp | 2026-02-14T12:00:38.538902Z |
+| guard_fail_rate_pct | 60.50% |
+| gt_mode_true_samples | 19 |
+| latest_timestamp | 2026-02-14T15:04:20.759192Z |
 
 | Risky Target | Suspicious High % | Suspicious High Count | Tier | Limit |
 |---|---:|---:|---|---:|
+| es:npc.json | 19.69% | 413 | low_backlog+suspicious_guard | 108 |
+| es:npc.json | 15.48% | 338 | low_backlog+suspicious_guard | 108 |
+| es:npc.json | 10.18% | 262 | low_backlog | 180 |
+| es:npc.json | 9.43% | 265 | low_backlog | 180 |
 | es:npc.json | 5.95% | 191 | low_backlog | 180 |
-| es:npc.json | 5.89% | 188 | high_backlog+domain_cap | 260 |
-| es:npc.json | 3.85% | 124 | high_backlog+domain_cap | 260 |
-| es:npc.json | 3.80% | 121 | base+domain_cap | 260 |
-| es:npc.json | 3.78% | 121 | base+domain_cap | 260 |
 
 ## Metrics Drift (LIVE vs Registry)
 
@@ -93,53 +93,53 @@
 |---|---:|
 | enabled | yes |
 | active | yes |
-| detected | no |
-| severity | ok |
-| reason | tracking |
+| detected | yes |
+| severity | warning |
+| reason | active_time_without_quality_drop |
 | pending_langs | es,pl |
-| active_minutes | 96.23 |
-| cycle_delta | 25 |
+| active_minutes | 183.446 |
+| cycle_delta | 49 |
 | best_quality_drop_pct | 0.00% |
 
 ## Coverage Snapshot
 
 | Lang | Completion | Missing Keys | EN Copy Keys | Serwer | Instalka |
 |---|---:|---:|---:|---:|---:|
-| PL | 42.02% | 0 | 1801 | 40.0% | 68.6% |
-| ES | 73.14% | 0 | 2709 | 73.8% | 64.2% |
-| DE | 7.83% | 0 | 2738 | 8.2% | 3.0% |
+| PL | 42.36% | 0 | 1861 | 40.3% | 68.8% |
+| ES | 73.32% | 0 | 2679 | 74.0% | 64.3% |
+| DE | 7.83% | 0 | 2739 | 8.2% | 3.0% |
 | PT | 7.58% | 0 | 2652 | 8.0% | 2.9% |
-| FR | 33.05% | 0 | 4229 | 30.5% | 66.1% |
-| RU | 32.79% | 0 | 3902 | 29.9% | 70.7% |
+| FR | 33.07% | 0 | 4167 | 30.5% | 66.1% |
+| RU | 32.82% | 0 | 3747 | 29.9% | 70.7% |
 
 ## Top Languages (by translated)
 
 | Lang | Translated | Guard Fail | GF Rate | No Progress |
 |---|---:|---:|---:|---:|
-| es | 10305 | 922 | 8.21% | 5.57% |
-| pl | 8086 | 1567 | 16.23% | 3.47% |
-| pt | 1447 | 0 | 0.00% | 0.00% |
-| it | 1371 | 0 | 0.00% | 0.00% |
-| de | 1360 | 0 | 0.00% | 0.00% |
-| fr | 1287 | 0 | 0.00% | 0.00% |
+| es | 10654 | 937 | 8.08% | 5.46% |
+| pl | 8341 | 1759 | 17.42% | 3.42% |
+| pt | 1447 | 0 | 0.00% | 5.00% |
+| it | 1371 | 0 | 0.00% | 5.56% |
+| de | 1370 | 0 | 0.00% | 0.00% |
+| fr | 1297 | 0 | 0.00% | 0.00% |
 | tr | 1206 | 24 | 1.95% | 0.00% |
-| ru | 1127 | 0 | 0.00% | 0.00% |
-| cs | 803 | 5 | 0.62% | 0.00% |
+| ru | 1137 | 0 | 0.00% | 0.00% |
+| cs | 816 | 5 | 0.61% | 0.00% |
 | el | 744 | 0 | 0.00% | 0.00% |
 
 ## Top Categories (by translated)
 
 | Category | Translated | Guard Fail | GF Rate | No Progress |
 |---|---:|---:|---:|---:|
-| npc.json | 13449 | 942 | 6.55% | 0.00% |
-| items.json | 12995 | 246 | 1.86% | 1.78% |
-| monsters.json | 6416 | 190 | 2.88% | 0.00% |
-| server.json | 3293 | 43 | 1.29% | 0.00% |
-| html.json | 2709 | 208 | 7.13% | 0.00% |
+| npc.json | 13551 | 943 | 6.51% | 0.00% |
+| items.json | 13075 | 330 | 2.46% | 1.76% |
+| monsters.json | 6496 | 190 | 2.84% | 0.00% |
+| server.json | 3403 | 129 | 3.65% | 0.00% |
+| html.json | 2776 | 228 | 7.59% | 0.00% |
 | otclient_modules.json | 1714 | 527 | 23.52% | 0.00% |
-| scripts.json | 1516 | 202 | 11.76% | 0.00% |
+| scripts.json | 1556 | 202 | 11.49% | 4.00% |
 | questlog.json | 1440 | 0 | 0.00% | 14.29% |
-| quests.json | 1288 | 106 | 7.60% | 0.00% |
+| quests.json | 1296 | 119 | 8.41% | 0.00% |
 | books.json | 644 | 52 | 7.47% | 6.67% |
 | cpp.json | 503 | 258 | 33.90% | 0.00% |
 | talkactions.json | 379 | 50 | 11.66% | 0.00% |
@@ -157,12 +157,12 @@
 
 | Metric | Value |
 |---|---:|
-| files_total | 2299 |
-| files_completed | 2297 |
-| files_migrated | 1897 |
-| scanned_files_live | 2299 |
-| scanned_files_history | 6442 |
-| scanned_files_history_minus_live | 4143 |
+| files_total | 15 |
+| files_completed | 15 |
+| files_migrated | 7 |
+| scanned_files_live | 15 |
+| scanned_files_history | 6443 |
+| scanned_files_history_minus_live | 6428 |
 | total_keys_extracted | 53586 |
 | total_keys_extracted_live | 53586 |
 | total_keys_extracted_worker_registry | 53586 |
@@ -180,58 +180,58 @@
 
 | Metric | Value |
 |---|---:|
-| current_total | 40055 |
-| backlog_es | 222 |
-| backlog_pl | 137 |
-| backlog_cs | 649 |
-| backlog_de | 667 |
-| backlog_fr | 599 |
-| backlog_hu | 671 |
-| backlog_it | 638 |
-| backlog_nl | 699 |
-| backlog_pt | 628 |
-| backlog_ro | 699 |
-| backlog_ru | 497 |
-| backlog_sk | 671 |
-| backlog_tr | 549 |
-| backlog_ar | 920 |
-| backlog_az | 670 |
-| backlog_bg | 699 |
-| backlog_bn | 920 |
-| backlog_bs | 671 |
-| backlog_da | 671 |
-| backlog_el | 655 |
-| backlog_et | 671 |
-| backlog_fa | 920 |
-| backlog_fi | 671 |
-| backlog_he | 920 |
-| backlog_hi | 920 |
-| backlog_hr | 671 |
-| backlog_hy | 921 |
-| backlog_id | 920 |
-| backlog_ja | 920 |
-| backlog_ka | 921 |
-| backlog_kk | 671 |
-| backlog_ko | 921 |
-| backlog_lt | 649 |
-| backlog_lv | 671 |
-| backlog_mk | 670 |
-| backlog_ml | 921 |
-| backlog_ms | 920 |
-| backlog_no | 671 |
-| backlog_sl | 671 |
-| backlog_sq | 671 |
-| backlog_sr | 671 |
-| backlog_sv | 671 |
-| backlog_sw | 921 |
-| backlog_ta | 921 |
-| backlog_te | 921 |
-| backlog_th | 921 |
-| backlog_tl | 921 |
-| backlog_uk | 671 |
-| backlog_uz | 671 |
-| backlog_vi | 921 |
-| backlog_zh | 921 |
-| backlog_zh_TW | 2501 |
+| current_total | 39526 |
+| backlog_es | 265 |
+| backlog_pl | 165 |
+| backlog_cs | 641 |
+| backlog_de | 660 |
+| backlog_fr | 589 |
+| backlog_hu | 663 |
+| backlog_it | 630 |
+| backlog_nl | 691 |
+| backlog_pt | 620 |
+| backlog_ro | 689 |
+| backlog_ru | 480 |
+| backlog_sk | 663 |
+| backlog_tr | 542 |
+| backlog_ar | 904 |
+| backlog_az | 662 |
+| backlog_bg | 691 |
+| backlog_bn | 904 |
+| backlog_bs | 663 |
+| backlog_da | 663 |
+| backlog_el | 647 |
+| backlog_et | 663 |
+| backlog_fa | 904 |
+| backlog_fi | 663 |
+| backlog_he | 904 |
+| backlog_hi | 904 |
+| backlog_hr | 663 |
+| backlog_hy | 905 |
+| backlog_id | 904 |
+| backlog_ja | 904 |
+| backlog_ka | 905 |
+| backlog_kk | 663 |
+| backlog_ko | 905 |
+| backlog_lt | 641 |
+| backlog_lv | 663 |
+| backlog_mk | 662 |
+| backlog_ml | 905 |
+| backlog_ms | 904 |
+| backlog_no | 663 |
+| backlog_sl | 663 |
+| backlog_sq | 663 |
+| backlog_sr | 663 |
+| backlog_sv | 663 |
+| backlog_sw | 905 |
+| backlog_ta | 905 |
+| backlog_te | 905 |
+| backlog_th | 905 |
+| backlog_tl | 905 |
+| backlog_uk | 663 |
+| backlog_uz | 663 |
+| backlog_vi | 905 |
+| backlog_zh | 905 |
+| backlog_zh_TW | 2456 |
 | stagnation_status | 🟢 warming_up |
-| stagnation_decrease | -965.4% over 5.9h |
+| stagnation_decrease | -731.8% over 5.1h |

@@ -6,3 +6,4 @@
 {"t": "2026-02-14T03:01:50.305128Z", "tier1_avg": 73.5, "tier1_pass": false, "tier2_avg": 13.2, "tier2_pass": false, "recommendation": "TIER1_INCOMPLETE: priorytet na PL/ES"}
 {"t": "2026-02-14T04:50:10.539721Z", "tier1_avg": 74.2, "tier1_pass": false, "tier2_avg": 13.6, "tier2_pass": false, "recommendation": "TIER1_INCOMPLETE: priorytet na PL/ES"}
 {"t": "2026-02-14T05:34:14.302300Z", "tier1_avg": 74.3, "tier1_pass": false, "tier2_avg": 13.6, "tier2_pass": false, "recommendation": "TIER1_INCOMPLETE: priorytet na PL/ES"}
+{"t": "2026-02-14T15:24:16.134805Z", "tier1_avg": 54.5, "tier1_pass": false, "tier1_quality_pass": 0, "tier2_avg": 8.1, "tier2_pass": false, "tier2_quality_pass": 1, "global_quality_mode": true, "recommendation": "TIER1_INCOMPLETE: priorytet na PL/ES"}

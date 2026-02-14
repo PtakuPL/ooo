@@ -2,19 +2,19 @@
   "lang": "pl",
   "script_group": "latin",
   "total_keys": 53586,
-  "translated": 22684,
-  "identical_to_en": 1801,
-  "placeholder_keys": 30902,
-  "coverage_pct": 42.3,
-  "issues_total": 40,
+  "translated": 23494,
+  "identical_to_en": 1923,
+  "placeholder_keys": 30092,
+  "coverage_pct": 43.8,
+  "issues_total": 43,
   "issues_by_type": {
     "V6_newline_mismatch": 35,
-    "V4_artifact": 4,
+    "V4_artifact": 7,
     "V1_placeholder_mismatch": 1
   },
   "issues_by_severity": {
     "CRITICAL": 1,
-    "HIGH": 4,
+    "HIGH": 7,
     "MEDIUM": 35,
     "LOW": 0
   },
@@ -25,6 +25,24 @@
       "category": "html",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
+    },
+    {
+      "key": "book.otbm.battletactics_for_mages_ii",
+      "category": "books",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "book.otbm.battletactics_for_mages_iii",
+      "category": "books",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "book.otbm.battletactics_for_mages_iv",
+      "category": "books",
+      "type": "V4_artifact",
+      "severity": "HIGH"
     },
     {
       "key": "monster.grynch_clan_goblin.voice_15",
@@ -121,24 +139,6 @@
       "category": "npc",
       "type": "V6_newline_mismatch",
       "severity": "MEDIUM"
-    },
-    {
-      "key": "npc.ferus.stdmod_25",
-      "category": "npc",
-      "type": "V6_newline_mismatch",
-      "severity": "MEDIUM"
-    },
-    {
-      "key": "npc.iptar-sin.stdmod_2",
-      "category": "npc",
-      "type": "V6_newline_mismatch",
-      "severity": "MEDIUM"
-    },
-    {
-      "key": "npc.isimov.stdmod_32",
-      "category": "npc",
-      "type": "V6_newline_mismatch",
-      "severity": "MEDIUM"
     }
   ],
   "crossref": {
@@ -149,5 +149,5 @@
     "length_ratio": 0,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-14T13:47:34.793416Z"
+  "validated_at": "2026-02-14T15:35:47.093248Z"
 }

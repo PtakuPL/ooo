@@ -1,8 +1,8 @@
 {
-  "total_cycles": 1,
+  "total_cycles": 2,
   "mode": "AUTO_TRANSLATE",
-  "category": "cs",
-  "last_update": "2026-02-14T14:49:19.161886",
+  "category": "es",
+  "last_update": "2026-02-14T16:37:48.497942",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -26,45 +26,14 @@
     "keys_to_sync": 0
   },
   "auto_translate": {
-    "language": "cs",
-    "json_file": "npc.json",
-    "keys_to_translate": 5,
-    "guard_fail": 0,
+    "language": "es",
+    "json_file": "quests.json",
+    "keys_to_translate": 17,
+    "guard_fail": 55,
     "strict_missing_key": 0,
     "strict_blocker": "",
-    "recent_translated": 5,
-    "recent_examples": [
-      {
-        "key": "npc.a_dead_bureaucrat2.voice_2",
-        "en": "Hail Pumin. Yes, hail.",
-        "translated": "Nazdar Pumin. Ano, kroupy.",
-        "source": "simple"
-      },
-      {
-        "key": "npc.a_dead_bureaucrat3.voice_2",
-        "en": "Hail Pumin. Yes, hail.",
-        "translated": "Nazdar Pumin. Ano, kroupy.",
-        "source": "simple"
-      },
-      {
-        "key": "npc.a_dead_bureaucrat4.voice_2",
-        "en": "Hail Pumin. Yes, hail.",
-        "translated": "Nazdar Pumin. Ano, kroupy.",
-        "source": "simple"
-      },
-      {
-        "key": "npc.a_dragon_lord.greet_msg_1",
-        "en": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
-        "translated": "Pssst! Dr\u017e to dole! <poskytne v\u00e1m podrobnou zpr\u00e1vu o aktivit\u011b monster>",
-        "source": "simple"
-      },
-      {
-        "key": "npc.a_dragon_lord.greet_msg_2",
-        "en": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
-        "translated": "Pssst! Dr\u017e to dole! <poskytne v\u00e1m podrobnou zpr\u00e1vu o aktivit\u011b monster>",
-        "source": "simple"
-      }
-    ]
+    "recent_translated": 0,
+    "recent_examples": []
   },
   "idle": {
     "new_files_detected": 152,

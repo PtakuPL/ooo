@@ -2,19 +2,19 @@
   "lang": "es",
   "script_group": "latin",
   "total_keys": 53586,
-  "translated": 39450,
-  "identical_to_en": 2709,
-  "placeholder_keys": 14136,
-  "coverage_pct": 73.6,
-  "issues_total": 40,
+  "translated": 39903,
+  "identical_to_en": 2615,
+  "placeholder_keys": 13683,
+  "coverage_pct": 74.5,
+  "issues_total": 41,
   "issues_by_type": {
-    "V4_artifact": 37,
+    "V4_artifact": 38,
     "V2_length_ratio": 2,
     "V6_newline_mismatch": 1
   },
   "issues_by_severity": {
     "CRITICAL": 0,
-    "HIGH": 37,
+    "HIGH": 38,
     "MEDIUM": 3,
     "LOW": 0
   },
@@ -64,6 +64,12 @@
     },
     {
       "key": "monster.ferumbras_mortal_shell.voice_4",
+      "category": "monsters",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "monster.prince_drazzak.voice_4",
       "category": "monsters",
       "type": "V4_artifact",
       "severity": "HIGH"
@@ -133,21 +139,15 @@
       "category": "npc",
       "type": "V4_artifact",
       "severity": "HIGH"
-    },
-    {
-      "key": "npc.lardoc_bashsmite.multi_3",
-      "category": "npc",
-      "type": "V4_artifact",
-      "severity": "HIGH"
     }
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 488,
-    "consistency": 65,
+    "issues_total": 491,
+    "consistency": 67,
     "pl_reference": 400,
-    "length_ratio": 23,
-    "auto_fix_applied": 25
+    "length_ratio": 24,
+    "auto_fix_applied": 10
   },
-  "validated_at": "2026-02-14T13:47:00.849190Z"
+  "validated_at": "2026-02-14T15:35:11.855724Z"
 }

@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-02-14T13:52:45.116377Z",
-  "cycle_counter": 555,
-  "last_target_key": "es:questlog.json",
-  "last_pending_total": 1644,
+  "timestamp": "2026-02-14T15:39:02.995844Z",
+  "cycle_counter": 614,
+  "last_target_key": "pl:raids.json",
+  "last_pending_total": 103,
   "last_tier": 1,
-  "last_cat_priority": 9,
+  "last_cat_priority": 8,
   "candidates_count": 46,
-  "active_candidates_count": 40,
-  "skipped_backoff": 6,
+  "active_candidates_count": 39,
+  "skipped_backoff": 7,
   "skipped_guard_fail": 0,
   "guard_fail_blacklist": {},
   "tier_config": {
@@ -34,7 +34,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 1,
+  "cache_cycle": 3,
   "no_progress_counts": {
     "pl:items.json": 0,
     "es:items.json": 3,
@@ -138,11 +138,11 @@
     "pl:achievements.json": 3,
     "es:npclib.json": 3,
     "de:scripts.json": 0,
-    "es:client.json": 2,
+    "es:client.json": 0,
     "es:raids.json": 0,
     "es:html.json": 0,
     "es:books.json": 0,
-    "pl:example_merchant.json": 2,
+    "pl:example_merchant.json": 0,
     "es:startup.json": 0,
     "es:creaturescripts.json": 0,
     "pl:scripts.json": 0,
@@ -158,7 +158,7 @@
     "de:otclient_modules.json": 0,
     "de:actions.json": 0,
     "de:raids.json": 0,
-    "es:chatchannels.json": 2,
+    "es:chatchannels.json": 3,
     "es:example_merchant.json": 0,
     "es:otclient_data.json": 3,
     "pl:questlog.json": 3,
@@ -269,7 +269,8 @@
     "kk:monsters.json": 0,
     "ko:monsters.json": 0,
     "pl:server.json": 0,
-    "pl:libs.json": 0
+    "pl:libs.json": 0,
+    "es:achievements.json": 0
   },
   "bootstrap_priority": {
     "enabled": true,
@@ -301,10 +302,8 @@
       "pl"
     ],
     "lang_completion": {
-      "es": 73.14,
-      "pl": 42.02
+      "es": 73.84,
+      "pl": 43.46
     }
-  },
-  "last_phase": "MIGRATION",
-  "last_phase_ts": "2026-02-14T14:55:48"
+  }
 }

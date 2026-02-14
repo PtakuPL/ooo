@@ -1,55 +1,55 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-02-14T13:55:19.369570Z",
-  "current_phase": "MIGRATION",
+  "generated_at_utc": "2026-02-14T15:38:46.481379Z",
+  "current_phase": "AUTO_TRANSLATE",
   "sections": {
     "META": {
       "state": "active",
-      "state_label": "🟢 ACTIVE",
+      "state_label": "🟢 AKTYWNY",
       "reason": "",
       "freshness": "teraz",
       "source": "update_github_status()",
-      "last_update": "2026-02-14 13:55:18"
+      "last_update": "2026-02-14 15:38:45"
     },
     "LIVE": {
       "state": "active",
-      "state_label": "🟢 ACTIVE",
+      "state_label": "🟢 AKTYWNY",
       "reason": "",
-      "freshness": "3s temu",
+      "freshness": "41s temu",
       "source": "activity.json / worker_state.json",
-      "last_update": "2026-02-14T13:55:16Z"
+      "last_update": "2026-02-14T15:38:05Z"
     },
     "MIGRATION": {
-      "state": "active",
-      "state_label": "🟢 ACTIVE",
-      "reason": "",
-      "freshness": "22s temu",
+      "state": "inactive",
+      "state_label": "🔒 NIEAKTYWNY",
+      "reason": "worker w trybie AUTO_TRANSLATE",
+      "freshness": "21s temu",
       "source": "i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt",
-      "last_update": "2026-02-14 13:55:18"
+      "last_update": "2026-02-14 15:38:45"
     },
     "TRANSLATION": {
-      "state": "inactive",
-      "state_label": "🔒 INACTIVE",
-      "reason": "worker w trybie MIGRATION",
-      "freshness": "2min temu",
+      "state": "active",
+      "state_label": "🟢 AKTYWNY",
+      "reason": "",
+      "freshness": "1min temu",
       "source": "translation_guard_latest.json / translation_recent_latest.json",
-      "last_update": "2026-02-14T13:52:43.898591Z"
+      "last_update": "2026-02-14T15:37:18.408642Z"
     },
     "QUALITY": {
       "state": "inactive",
-      "state_label": "🔒 INACTIVE",
-      "reason": "worker w trybie MIGRATION",
-      "freshness": "2min temu",
+      "state_label": "🔒 NIEAKTYWNY",
+      "reason": "worker w trybie AUTO_TRANSLATE",
+      "freshness": "58s temu",
       "source": "quality_audit_latest.json",
-      "last_update": "2026-02-14T13:52:45.474743Z"
+      "last_update": "2026-02-14T15:37:48.192896Z"
     },
     "HISTORY": {
       "state": "active",
-      "state_label": "🟢 ACTIVE",
+      "state_label": "🟢 AKTYWNY",
       "reason": "",
       "freshness": "teraz",
       "source": "daily/*.json / ops.jsonl",
-      "last_update": "2026-02-14 13:55:18"
+      "last_update": "2026-02-14 15:38:45"
     }
   }
 }

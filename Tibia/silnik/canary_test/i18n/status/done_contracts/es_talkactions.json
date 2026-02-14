@@ -13,10 +13,10 @@
       "threshold": 5
     },
     "coverage_above_95pct": {
-      "ok": true,
-      "coverage_pct": 100.0,
+      "ok": false,
+      "coverage_pct": 86.4,
       "total_keys": 199,
-      "real_translations": 199
+      "real_translations": 172
     },
     "quality_entry_present": {
       "ok": true,
@@ -24,5 +24,5 @@
     }
   },
   "is_done": false,
-  "timestamp": "2026-02-13T22:27:44.909127Z"
+  "timestamp": "2026-02-14T15:23:01.504384Z"
 }

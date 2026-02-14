@@ -1,76 +1,75 @@
 {
-  "window_start_utc": "2026-02-14T12:55:19.187231Z",
-  "window_end_utc": "2026-02-14T13:55:19.187231Z",
+  "window_start_utc": "2026-02-14T14:38:46.043243Z",
+  "window_end_utc": "2026-02-14T15:38:46.043243Z",
   "window_hours": 1.0,
   "sources": [
     "i18n/status/worker_cycle_perf.jsonl",
     "i18n/status/translation_guard_report.jsonl",
     "i18n/status/suspicious_log.jsonl"
   ],
-  "total_cycles": 137,
+  "total_cycles": 85,
   "mode_distribution": {
-    "MIGRATION": 87,
-    "AUTO_TRANSLATE": 50
+    "AUTO_TRANSLATE": 85
   },
-  "auto_translate_cycles": 50,
-  "migration_cycles": 87,
-  "pending_skip_count": 11,
-  "pending_skip_share_pct": 8.0,
-  "pending_skip_share_migration_pct": 12.6,
-  "translated": 844,
-  "guard_fail": 17,
-  "guard_fail_rate_pct": 2.0,
-  "no_progress_entries": 0,
-  "no_progress_rate_pct": 0.0,
-  "throughput_keys_per_h": 999.9,
-  "suspicious_total": 209,
+  "auto_translate_cycles": 85,
+  "migration_cycles": 0,
+  "pending_skip_count": 0,
+  "pending_skip_share_pct": 0.0,
+  "pending_skip_share_migration_pct": 0.0,
+  "translated": 1736,
+  "guard_fail": 929,
+  "guard_fail_rate_pct": 34.9,
+  "no_progress_entries": 1,
+  "no_progress_rate_pct": 2.6,
+  "throughput_keys_per_h": 1372.2,
+  "suspicious_total": 3950,
   "top_guard_fail_targets": [
     {
-      "target": "es/quests.json",
+      "target": "pl/server.json",
+      "translated": 41,
+      "guard_fail": 191,
+      "guard_command": 0
+    },
+    {
+      "target": "pl/items.json",
+      "translated": 80,
+      "guard_fail": 131,
+      "guard_command": 0
+    },
+    {
+      "target": "pl/quests.json",
+      "translated": 155,
+      "guard_fail": 79,
+      "guard_command": 0
+    },
+    {
+      "target": "pl/scripts.json",
+      "translated": 160,
+      "guard_fail": 74,
+      "guard_command": 0
+    },
+    {
+      "target": "es/books.json",
       "translated": 8,
-      "guard_fail": 13,
+      "guard_fail": 72,
       "guard_command": 0
     },
     {
-      "target": "pl/startup.json",
-      "translated": 8,
-      "guard_fail": 1,
+      "target": "pl/cpp.json",
+      "translated": 78,
+      "guard_fail": 60,
       "guard_command": 0
     },
     {
-      "target": "pl/example_merchant.json",
-      "translated": 1,
-      "guard_fail": 1,
+      "target": "es/scripts.json",
+      "translated": 39,
+      "guard_fail": 56,
       "guard_command": 0
     },
     {
-      "target": "lt/npc.json",
-      "translated": 139,
-      "guard_fail": 1,
-      "guard_command": 0
-    },
-    {
-      "target": "pl/libs.json",
-      "translated": 3,
-      "guard_fail": 1,
-      "guard_command": 0
-    },
-    {
-      "target": "cs/npc.json",
-      "translated": 174,
-      "guard_fail": 0,
-      "guard_command": 0
-    },
-    {
-      "target": "el/npc.json",
-      "translated": 164,
-      "guard_fail": 0,
-      "guard_command": 0
-    },
-    {
-      "target": "it/npc.json",
-      "translated": 164,
-      "guard_fail": 0,
+      "target": "pl/monsters.json",
+      "translated": 80,
+      "guard_fail": 48,
       "guard_command": 0
     }
   ]

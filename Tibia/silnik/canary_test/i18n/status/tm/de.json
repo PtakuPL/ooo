@@ -13974,5 +13974,21 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-14T07:33:17.057432Z"
+  },
+  "scripts.action_bag.msg_1": {
+    "src_hash": "a0b7b10ccf5607bf6f58907ce8ea7ecb",
+    "text": "Du hast eine Tasche gefunden.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T14:02:14.976633Z"
+  },
+  "scripts.actions_rewards.msg_2": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Die Truhe ist leer.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T14:02:15.016251Z"
   }
 }

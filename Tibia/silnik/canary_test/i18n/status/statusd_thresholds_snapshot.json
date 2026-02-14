@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-14T13:55:57.703461Z",
+  "timestamp": "2026-02-14T15:38:53.939352Z",
   "source_of_truth": "statusd_thresholds_file",
   "config_file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/statusd_thresholds.json",
   "env_overrides_enabled": false,
@@ -26,9 +26,33 @@
     "max_cycles": 240,
     "min_quality_drop_pct": 1.0
   },
+  "forced_command_fast": {
+    "window_hours": 24.0,
+    "sla_target_s": 45.0,
+    "pickup_warn_s": 15.0,
+    "pending_warn_s": 15.0,
+    "exec_warn_s": 30.0,
+    "consecutive_crit": 3,
+    "min_samples": 3,
+    "operational_window_hours": 2.0,
+    "operational_min_samples": 3,
+    "baseline_ts_utc": "2026-02-14T15:31:04.747217Z",
+    "auto_baseline_on_epoch_change": true,
+    "epoch_cooldown_seconds": 600,
+    "runtime_epoch_id": "d8347adf8dae5163",
+    "runtime_epoch_raw": "script_mtime=1771083106|script_size=934767|script_checkpoint=1771083106|restart_ts=1771083071|restart_cause=mtime|worker_pid=2382607",
+    "baseline_source": "manual_config",
+    "auto_baseline_applied": false,
+    "auto_baseline_reason": "manual_baseline_active",
+    "epoch_changed": false
+  },
+  "guardian_daemon_lock": {
+    "stale_owner_threshold_seconds": 60
+  },
   "registry_reconcile": {
     "min_outside_keys": 1000,
     "min_outside_pct": 2.0,
-    "min_interval_seconds": 1800
+    "min_interval_seconds": 1800,
+    "always_sync_any_drift": true
   }
 }

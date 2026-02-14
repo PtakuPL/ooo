@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-14T13:48:04.445039Z",
+  "checked_at": "2026-02-14T15:36:27.969682Z",
   "issues_total": 407,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -217,7 +217,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": " wrote on ",
-      "pl": "wrote na",
+      "pl": "wrote na ",
       "lang": " wrote on "
     },
     {
@@ -226,7 +226,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "You read: ",
-      "pl": "Ty czytać, przeczytać:",
+      "pl": "Ty czytać, przeczytać: ",
       "lang": "You read: "
     },
     {
@@ -446,6 +446,24 @@
       "lang": "{0} cores"
     },
     {
+      "key": "cpp.forge.dust_one",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} dust",
+      "pl": "{0} kurz",
+      "lang": "{0} dust"
+    },
+    {
+      "key": "cpp.forge.dust_other",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} dust",
+      "pl": "{0} kurz",
+      "lang": "{0} dust"
+    },
+    {
       "key": "cpp.forge.successful",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -514,7 +532,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": " and ",
-      "pl": "i",
+      "pl": "i ",
       "lang": " and "
     },
     {
@@ -820,7 +838,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": " and ",
-      "pl": "i",
+      "pl": "i ",
       "lang": " and "
     },
     {
@@ -941,15 +959,6 @@
       "lang": "{0} hour"
     },
     {
-      "key": "cpp.look.key_fmt",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Key:{0}",
-      "pl": "I.:{0}",
-      "lang": "Key:{0}"
-    },
-    {
       "key": "cpp.look.level_n",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -973,7 +982,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": " of ",
-      "pl": "z",
+      "pl": "z ",
       "lang": " of "
     },
     {
@@ -991,7 +1000,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": " on ",
-      "pl": "na",
+      "pl": "na ",
       "lang": " on "
     },
     {
@@ -1018,7 +1027,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "premium ",
-      "pl": "premium",
+      "pl": "premium ",
       "lang": "premium "
     },
     {
@@ -1027,17 +1036,8 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "protection ",
-      "pl": "ochrona, osłona",
+      "pl": "ochrona, osłona ",
       "lang": "protection "
-    },
-    {
-      "key": "cpp.look.range",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Range:",
-      "pl": "I.:",
-      "lang": "Range:"
     },
     {
       "key": "cpp.look.second_one",
@@ -1108,7 +1108,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "You read: ",
-      "pl": "Ty czytać, przeczytać:",
+      "pl": "Ty czytać, przeczytać: ",
       "lang": "You read: "
     },
     {
@@ -1135,7 +1135,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "and ",
-      "pl": "i",
+      "pl": "i ",
       "lang": "and "
     },
     {
@@ -1144,7 +1144,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": ", ",
-      "pl": ",",
+      "pl": ", ",
       "lang": ", "
     },
     {
@@ -1738,7 +1738,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "\tVersion = ",
-      "pl": "Wersja =",
+      "pl": "Wersja = ",
       "lang": "\tVersion = "
     },
     {
@@ -1747,7 +1747,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "\tToDo = ",
-      "pl": "Do zrobienia =",
+      "pl": "Do zrobienia = ",
       "lang": "\tToDo = "
     },
     {
@@ -1756,7 +1756,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "\tVersion = ",
-      "pl": "Wersja =",
+      "pl": "Wersja = ",
       "lang": "\tVersion = "
     },
     {
@@ -2129,6 +2129,15 @@
       "lang": "Ommm!"
     },
     {
+      "key": "monster.enslaved_dwarf.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Blood!",
+      "pl": "Krew!",
+      "lang": "Blood!"
+    },
+    {
       "key": "monster.troll.voice_1",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -2172,6 +2181,15 @@
       "en": "FIRE!",
       "pl": "OGIEŃ!",
       "lang": "FIRE!"
+    },
+    {
+      "key": "monster.firestarter.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "BURN!",
+      "pl": "PŁOŃ!",
+      "lang": "BURN!"
     },
     {
       "key": "monster.swamp_troll.voice_2",
@@ -2219,6 +2237,15 @@
       "lang": "Grrrrrrr"
     },
     {
+      "key": "monster.troll_legionnaire.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Attack!",
+      "pl": "Atak!",
+      "lang": "Attack!"
+    },
+    {
       "key": "monster.minotaur.voice_2",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -2244,6 +2271,15 @@
       "en": "Groar",
       "pl": "ryk",
       "lang": "Groar"
+    },
+    {
+      "key": "monster.animated_rhino.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "SNIFF!",
+      "pl": "WĘSZY!",
+      "lang": "SNIFF!"
     },
     {
       "key": "monster.hemming.voice_1",
@@ -2453,6 +2489,15 @@
       "lang": "Delicious!"
     },
     {
+      "key": "monster.courage_leech.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hiss.",
+      "pl": "Syk.",
+      "lang": "Hiss."
+    },
+    {
       "key": "monster.primitive.voice_6",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -2471,6 +2516,15 @@
       "lang": "Die noob!"
     },
     {
+      "key": "monster.grim_reaper.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Death!",
+      "pl": "Śmierć!",
+      "lang": "Death!"
+    },
+    {
       "key": "monster.undead_gladiator.voice_2",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -2487,6 +2541,15 @@
       "en": "Huh!",
       "pl": "He, co!",
       "lang": "Huh!"
+    },
+    {
+      "key": "monster.vampire.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "BLOOD!",
+      "pl": "KREW!",
+      "lang": "BLOOD!"
     },
     {
       "key": "monster.tarnished_spirit.voice_1",
@@ -3549,69 +3612,6 @@
       "en": "FCHHHHH",
       "pl": "Fchhhh",
       "lang": "FCHHHHH"
-    },
-    {
-      "key": "npc.a_dragon_mother.greet_msg_2",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Grrr.",
-      "pl": "Grrr...",
-      "lang": "Grrr."
-    },
-    {
-      "key": "npc.a_dragon_mother.multi_3",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Grrr.",
-      "pl": "Grrr...",
-      "lang": "Grrr."
-    },
-    {
-      "key": "npc.a_fading_memory.greet_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Oh...",
-      "pl": "O...",
-      "lang": "Oh..."
-    },
-    {
-      "key": "npc.a_fluffy_squirrel.farewell_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Chh...",
-      "pl": "Cii...",
-      "lang": "Chh..."
-    },
-    {
-      "key": "npc.a_fluffy_squirrel.greet_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Chhchh?",
-      "pl": "Chhchh...",
-      "lang": "Chhchh?"
-    },
-    {
-      "key": "npc.a_fluffy_squirrel.walkaway_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Chh...",
-      "pl": "Cii...",
-      "lang": "Chh..."
-    },
-    {
-      "key": "npc.a_ghostly_sage.farewell_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Good bye.",
-      "pl": "Żegnaj.",
-      "lang": "Good bye."
     }
   ],
   "length_ratio_issues": [

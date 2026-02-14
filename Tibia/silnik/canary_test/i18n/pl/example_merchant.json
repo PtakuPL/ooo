@@ -1,6 +1,6 @@
 {
   "_comment": "Example Kupiec NPC - tłumaczenia na język angielski",
-  "_file": "[EN] data-otservbr-global/npc/example_merchant_i18n.lua",
+  "_file": "data-otservbr-global/npc/example_merchant_i18n.lua",
   "npc.example_merchant.farewell": "Żegnaj, %s. Odwiedź mnie ponownie!",
   "npc.example_merchant.greeting": "Witaj %s! Zapraszam do mojego sklepu. Powiedz {trade} aby zobaczyć ofertę.",
   "npc.example_merchant.help": "Mogę sprzedać ci mikstury, bronie i zbroje. Powiedz {trade} żeby przejrzeć towary.",

@@ -2789,7 +2789,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T01:30:32.105662Z"
+    "updated_at": "2026-02-14T15:20:53.714432Z"
   },
   "module.gamestore.text3": {
     "src_hash": "bd4b6c6470d8ed138dc0f541b377d424",
@@ -7173,7 +7173,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T02:20:59.410985Z"
+    "updated_at": "2026-02-14T15:22:37.462782Z"
   },
   "talkaction.god.achievement.msg_remove_invalid": {
     "src_hash": "7879bd592d152bea01623b163613ff3c",
@@ -7797,7 +7797,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T02:25:45.581758Z"
+    "updated_at": "2026-02-14T15:11:39.170177Z"
   },
   "web.tpl.guilds.manager.b_11": {
     "src_hash": "35e8f5fcdb0fe2841ee44fd43cc2b7f3",
@@ -15681,11 +15681,11 @@
   },
   "book.otbm.crudely_written_in_blood": {
     "src_hash": "b13f1b1494d3f2d9325469e1ae26c0b9",
-    "text": "<crudely written in blood>",
+    "text": "<crudamente escrito con sangre>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T03:32:07.256452Z"
+    "updated_at": "2026-02-14T15:14:01.418489Z"
   },
   "book.otbm.crunor_created_the_wolves_in": {
     "src_hash": "3cda23d2d41a6619fdb513223d8477b3",
@@ -28977,11 +28977,11 @@
   },
   "book.otbm.the_art_of_building_a": {
     "src_hash": "a1352e6cf69bf2b90b5561cfc474f511",
-    "text": "'The art of building a tunnel lies in the nature of dwarfes.' Eso es lo que solía decir mi bisabuelo. Antes que nada me gustaría haceros un pequeño repaso histórico de la construcción de túneles. .....<you skip the first 1000 pages containing dwarfen tunnelling history>.",
+    "text": "'El arte de construir un túnel está en la naturaleza de los enanos.' That's lo que solía decir mi bisabuelo. Antes que nada me gustaría haceros un pequeño repaso histórico de la construcción de túneles. .....<te saltas las primeras 1000 páginas que contienen el historial de túneles enanos>.",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T19:43:28.153133Z"
+    "updated_at": "2026-02-14T15:14:23.361503Z"
   },
   "book.otbm.the_cenath_were_the_most": {
     "src_hash": "a39b00419e85b76855fa0a02dbc3e0b7",
@@ -38533,7 +38533,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T20:17:36.920522Z"
+    "updated_at": "2026-02-14T15:11:46.662514Z"
   },
   "web.tpl.buttons.register_account.set_3": {
     "src_hash": "dc6ada6a65c9515e6c296713ceefdded",
@@ -38709,7 +38709,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T20:17:36.943617Z"
+    "updated_at": "2026-02-14T15:11:46.662979Z"
   },
   "web.tpl.buttons.delete_character.set_2": {
     "src_hash": "8f022179d58fac9d6e53059335d84796",
@@ -41097,11 +41097,11 @@
   },
   "scripts.actions_palanca.msg_1": {
     "src_hash": "9aafdd37fb3d7390d6e6e87e76438c93",
-    "text": "<sizzle> <fizz>",
+    "text": "<sizzle> <efervescencia>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T20:27:25.789874Z"
+    "updated_at": "2026-02-14T15:09:04.066802Z"
   },
   "scripts.actions_pickenchanted.msg_1": {
     "src_hash": "fb9d34da72cc5f6f1c95cf1b19ea2f48",
@@ -41113,11 +41113,11 @@
   },
   "scripts.actions_pyramids1.msg_1": {
     "src_hash": "9aafdd37fb3d7390d6e6e87e76438c93",
-    "text": "<sizzle> <fizz>",
+    "text": "<sizzle> <efervescencia>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T20:27:25.791131Z"
+    "updated_at": "2026-02-14T15:09:06.691863Z"
   },
   "scripts.actions_pyramids2.msg_1": {
     "src_hash": "76052c7bfb195c26264ca6133a637a47",
@@ -138353,75 +138353,75 @@
   },
   "spell.annihilon_paralyze.name": {
     "src_hash": "57aef9c16f157f4d94e74cbdb2bf0099",
-    "text": "Annihilon Paralyze",
+    "text": "Aniquilón paralizado",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:46:12.891170Z"
+    "updated_at": "2026-02-14T15:04:44.629333Z"
   },
   "spell.pirate_corsair_skill_reducer.name": {
     "src_hash": "804f0f58e3748cbf75ba47ecf7ba8ebb",
-    "text": "Pirate Corsair Skill Reducer",
+    "text": "Reductor de habilidades del corsario pirata",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:46:12.891577Z"
+    "updated_at": "2026-02-14T15:04:44.629727Z"
   },
   "spell.large_black_ring.name": {
     "src_hash": "0ae1e3c6c779ce9e932762aedae5416f",
-    "text": "Large Black Ring",
+    "text": "Anillo negro grande",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:46:12.892008Z"
+    "updated_at": "2026-02-14T15:04:44.629995Z"
   },
   "spell.dragonling_wave.name": {
     "src_hash": "a1e2f3f2c296466fd3ba15cc1af08e92",
-    "text": "Dragonling Wave",
+    "text": "Ola de dragón",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:46:12.892503Z"
+    "updated_at": "2026-02-14T15:04:44.630235Z"
   },
   "spell.rupture_wave.name": {
     "src_hash": "55cc52c9e14e2340dd8f4be093f3561e",
-    "text": "Rupture Wave",
+    "text": "Onda de ruptura",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:46:12.892841Z"
+    "updated_at": "2026-02-14T15:04:44.630575Z"
   },
   "spell.rotthingholy_ulus.name": {
     "src_hash": "6f9565ba840690d6cf32df1835403486",
-    "text": "Rotthingholy Ulus",
+    "text": "Ulus Santísimo",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:46:15.632034Z"
+    "updated_at": "2026-02-14T15:04:49.173997Z"
   },
   "spell.plagirath_heal.name": {
     "src_hash": "81f092b37ad9667038c72b62eb3b9de4",
-    "text": "Plagirath Heal",
+    "text": "Sanación de Plagirath",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:46:15.632696Z"
+    "updated_at": "2026-02-14T15:04:49.174330Z"
   },
   "spell.hideous_fungus_summon.name": {
     "src_hash": "e3f3433c829dc31d1172766e6bd0b82b",
-    "text": "Hideous Fungus Summon",
+    "text": "Invocación de hongo horrible",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:46:15.633058Z"
+    "updated_at": "2026-02-14T15:04:49.174671Z"
   },
   "spell.death_priest_shargon_curse.name": {
     "src_hash": "6ede43d3eed7e2f13efd2ad663beba6f",
-    "text": "Death Priest Shargon Curse",
+    "text": "Maldición del Sacerdote de la Muerte Shargon",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:46:15.633462Z"
+    "updated_at": "2026-02-14T15:04:49.174995Z"
   },
   "spell.defiler_paralyze_3.name": {
     "src_hash": "9bcbe6e08c771d6bd9277df5a1e88212",
@@ -138433,67 +138433,67 @@
   },
   "spell.enslaved_dwarf_skill_reducer_2.name": {
     "src_hash": "7729bd82caacec5faf5e4babfec7b5b6",
-    "text": "Enslaved Dwarf Skill Reducer 2",
+    "text": "Reductor de habilidades enano esclavizado 2",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:46:18.415337Z"
+    "updated_at": "2026-02-14T15:04:49.175289Z"
   },
   "spell.magma_crawler_soulfire.name": {
     "src_hash": "5af58207044b3d5e194180367a723039",
-    "text": "Magma Crawler Soulfire",
+    "text": "Fuego de alma reptador de magma",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:46:18.416354Z"
+    "updated_at": "2026-02-14T15:04:55.846148Z"
   },
   "spell.devovorga_curse.name": {
     "src_hash": "5fed81378f355f8d43c87e10c5259174",
-    "text": "Devovorga Curse",
+    "text": "Maldición Devovorga",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:46:18.417199Z"
+    "updated_at": "2026-02-14T15:04:55.846483Z"
   },
   "spell.cults_of_tibia_armor_buff.name": {
     "src_hash": "b670299f4fea508033e349381261574b",
-    "text": "Cults Of Tibia Armor Buff",
+    "text": "Cultos de Tibia Mejora de armadura",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:46:18.418507Z"
+    "updated_at": "2026-02-14T15:04:55.846980Z"
   },
   "spell.white_shade_paralyze.name": {
     "src_hash": "e6da7492a2ad403c4b626e2ecff6b82f",
-    "text": "White Shade Paralyze",
+    "text": "Sombra blanca paralizar",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:46:18.419688Z"
+    "updated_at": "2026-02-14T15:04:55.847274Z"
   },
   "spell.plant_abomination_wave.name": {
     "src_hash": "b4b265d796db5c445199764c97950e61",
-    "text": "Plant Abomination Wave",
+    "text": "Ola de abominación vegetal",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:46:21.197220Z"
+    "updated_at": "2026-02-14T15:04:55.847554Z"
   },
   "spell.large_ice_ring.name": {
     "src_hash": "0bb80fa4099b68b690c6d1f7ff9e832e",
-    "text": "Large Ice Ring",
+    "text": "Anillo de hielo grande",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:46:21.197675Z"
+    "updated_at": "2026-02-14T15:05:00.534234Z"
   },
   "spell.teleport_strike.name": {
     "src_hash": "0ba4d3fae3fac911ea039810395e5d74",
-    "text": "Teleport Strike",
+    "text": "Golpe de teletransporte",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:46:21.198103Z"
+    "updated_at": "2026-02-14T15:05:00.534645Z"
   },
   "spell.quara_constrictor_freeze.name": {
     "src_hash": "12b6e90f7c167ea881781f7f0d10220f",
@@ -138505,59 +138505,59 @@
   },
   "spell.lersatio_summon.name": {
     "src_hash": "9f6b742ed3af674623ba4cbc33432484",
-    "text": "Lersatio Summon",
+    "text": "Invocación de Lersatio",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:46:21.199001Z"
+    "updated_at": "2026-02-14T15:05:00.535057Z"
   },
   "spell.elder_bonelord_paralyze.name": {
     "src_hash": "5a03e2e536dbb6a5a8a305af73b4484e",
-    "text": "elder bonelord paralyze",
+    "text": "El anciano señor de los huesos paraliza",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:46:23.939772Z"
+    "updated_at": "2026-02-14T15:05:00.535360Z"
   },
   "spell.physical_barrage.name": {
     "src_hash": "f016f2d1ee6271217f8a124d87c4e3c9",
-    "text": "Physical Barrage",
+    "text": "Aluvión físico",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:46:23.940387Z"
+    "updated_at": "2026-02-14T15:05:05.949445Z"
   },
   "spell.explosion_wave.name": {
     "src_hash": "3d3903c328ce1ee7b08be60ab40b3f46",
-    "text": "Explosion Wave",
+    "text": "Ola de explosión",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:46:23.940769Z"
+    "updated_at": "2026-02-14T15:05:05.949684Z"
   },
   "spell.incineron_soulfire.name": {
     "src_hash": "fc865f1ad9d8eaa7c819e2dc3e89be1a",
-    "text": "Incineron Soulfire",
+    "text": "Fuego de alma incineron",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:46:23.941190Z"
+    "updated_at": "2026-02-14T15:05:05.949938Z"
   },
   "spell.plaguesmith_wave.name": {
     "src_hash": "d9649bfbbd30a852247fef5979d725d9",
-    "text": "Plaguesmith Wave",
+    "text": "Ola de Plaguesmith",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:46:23.941567Z"
+    "updated_at": "2026-02-14T15:05:05.950160Z"
   },
   "spell.lich_paralyze.name": {
     "src_hash": "a7f3a0bd382bc36fdde5100f95e560fa",
-    "text": "Lich Paralyze",
+    "text": "Paralizar al Lich",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:46:25.928797Z"
+    "updated_at": "2026-02-14T15:05:05.950392Z"
   },
   "spell.lizard_wave_2.name": {
     "src_hash": "40359f42d6c401e32e7f4524cb402999",
@@ -139806,5 +139806,3965 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-14T13:52:42.186999Z"
+  },
+  "html.forum.new_thread.html.text4": {
+    "src_hash": "cfb5db318ef2660d2824ce2ac7f643a2",
+    "text": ";) , :) , :D , :( , :rolleSí:",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T13:57:07.636977Z"
+  },
+  "html.forum.new_post.html.text4": {
+    "src_hash": "cfb5db318ef2660d2824ce2ac7f643a2",
+    "text": ";) , :) , :D , :( , :rolleSí:",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T13:57:07.651425Z"
+  },
+  "html.forum.edit_post.html.text4": {
+    "src_hash": "cfb5db318ef2660d2824ce2ac7f643a2",
+    "text": ";) , :) , :D , :( , :rolleSí:",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T13:57:07.673847Z"
+  },
+  "npc.a_majestic_warwolf.farewell_msg_1": {
+    "src_hash": "abacc700c1b2adc83a8a15b2a66caf22",
+    "text": "YOOOOUHHOOOUU!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:12:35.459393Z"
+  },
+  "npc.a_majestic_warwolf.walkaway_msg_1": {
+    "src_hash": "abacc700c1b2adc83a8a15b2a66caf22",
+    "text": "YOOOOUHHOOOUU!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:12:35.462833Z"
+  },
+  "npc.a_sleeping_dragon.greet_msg_1": {
+    "src_hash": "ad1b522fb407c0fba2321f3dbe4192c0",
+    "text": "ZzzzZzzZz...chrrr...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:12:35.474457Z"
+  },
+  "npc.harlow.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T14:12:38.577713Z"
+  },
+  "npc.harlow.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Bueno, adiós entonces.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T14:12:38.583822Z"
+  },
+  "npc.harlow_vengoth.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T14:12:38.584877Z"
+  },
+  "npc.harlow_vengoth.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Bueno, adiós entonces.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T14:12:38.587111Z"
+  },
+  "npc.hawkhurst.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T14:12:38.597922Z"
+  },
+  "npc.hawkhurst.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T14:12:38.600845Z"
+  },
+  "npc.hawkhurst_ingol.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T14:12:38.601795Z"
+  },
+  "npc.hawkhurst_ingol.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T14:12:38.604656Z"
+  },
+  "npc.hoggle.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T14:12:38.703370Z"
+  },
+  "npc.hoggle.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T14:12:38.705028Z"
+  },
+  "npc.irea.farewell_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "¡Adiós!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T14:12:38.896508Z"
+  },
+  "npc.iyad.walkaway_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "¡Adiós!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T14:12:39.033105Z"
+  },
+  "npc.jack_drone.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Bueno, adiós entonces.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T14:12:39.058677Z"
+  },
+  "npc.jack_fate.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Bueno, adiós entonces.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T14:12:39.065992Z"
+  },
+  "npc.jack_fate_goroma.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T14:12:39.067003Z"
+  },
+  "npc.jack_fate_goroma.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Bueno, adiós entonces.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T14:12:39.075654Z"
+  },
+  "npc.jerom.farewell_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Chao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T14:12:39.268982Z"
+  },
+  "npc.jerom.walkaway_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Chao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T14:12:39.287491Z"
+  },
+  "npc.karith.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T14:12:39.359221Z"
+  },
+  "npc.karith.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T14:12:39.381700Z"
+  },
+  "npc.kendra.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Bueno, adiós entonces.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T14:12:39.433370Z"
+  },
+  "npc.kendra_thais.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Bueno, adiós entonces.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T14:12:39.439195Z"
+  },
+  "npc.lavirias.farewell_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "¡Adiós!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T14:12:39.604079Z"
+  },
+  "npc.llathriel.farewell_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "¡Adiós!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T14:12:39.718084Z"
+  },
+  "npc.lubo.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T14:12:39.804106Z"
+  },
+  "npc.lugri.farewell_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Chao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T14:12:39.805129Z"
+  },
+  "npc.lugri.walkaway_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Chao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T14:12:39.824232Z"
+  },
+  "npc.maris.walkaway_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Chao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T14:12:39.959208Z"
+  },
+  "npc.maris_fenrock.walkaway_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Chao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T14:12:39.963114Z"
+  },
+  "npc.maris_mistrock.walkaway_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Chao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T14:12:39.968037Z"
+  },
+  "npc.maryza.farewell_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "¡Adiós!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T14:12:39.992991Z"
+  },
+  "npc.mazarius.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T14:12:39.996592Z"
+  },
+  "npc.melian.farewell_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "¡Adiós!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T14:12:40.048864Z"
+  },
+  "npc.melian.walkaway_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "¡Adiós!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T14:12:40.060461Z"
+  },
+  "npc.morgan.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T14:12:40.103609Z"
+  },
+  "monster.juggernaut.name": {
+    "src_hash": "024fc70d51074c9f42ee7f917c37b4ed",
+    "text": "Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:47.667538Z"
+  },
+  "monster.frazzlemaw.name": {
+    "src_hash": "1a87e30943cbe3f2e8d894a44f5ce353",
+    "text": "Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:47.675605Z"
+  },
+  "monster.wyrm.name": {
+    "src_hash": "6ca9ed7b25e26786c48ed48b538b14c3",
+    "text": "Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:47.688224Z"
+  },
+  "monster.war_golem.voice_2": {
+    "src_hash": "7b06d4c681157c793486deb734643a2f",
+    "text": "Klonk klonk klonk",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:47.703720Z"
+  },
+  "monster.damaged_worker_golem.voice_1": {
+    "src_hash": "7b06d4c681157c793486deb734643a2f",
+    "text": "Klonk klonk klonk",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:47.718076Z"
+  },
+  "monster.makara.name": {
+    "src_hash": "3c71ac3f76f14f19af29c607e4884b32",
+    "text": "Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:47.748946Z"
+  },
+  "monster.furious_orc_berserker.name": {
+    "src_hash": "772b66c763a11e082dc1489706711fc3",
+    "text": "Furious orco berserker",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:47.865327Z"
+  },
+  "monster.soul_broken_harbinger.name": {
+    "src_hash": "d98b725dc666ed1e7b5d4ba04d5c915a",
+    "text": "Soul-broken presagio",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:47.898660Z"
+  },
+  "monster.the_unarmored_voidborn.name": {
+    "src_hash": "07cb930827503b3e5b74dd25f068f7c5",
+    "text": "Unarmored voidborn",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:47.946366Z"
+  },
+  "monster.the_unarmored_voidborn.desc": {
+    "src_hash": "07cb930827503b3e5b74dd25f068f7c5",
+    "text": "Unarmored voidborn",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:47.948389Z"
+  },
+  "monster.eliz_the_unyielding_stop.name": {
+    "src_hash": "8574cb962fbf6e38b727df06e2976751",
+    "text": "Eliz unyielding stop",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:47.949893Z"
+  },
+  "monster.eliz_the_unyielding_stop.desc": {
+    "src_hash": "8574cb962fbf6e38b727df06e2976751",
+    "text": "Eliz unyielding stop",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:47.951847Z"
+  },
+  "monster.the_remorseless_corruptor.name": {
+    "src_hash": "3016a3b81bf64b22e5230e29ac00f8d0",
+    "text": "Remorseless corruptor",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:47.955181Z"
+  },
+  "monster.the_remorseless_corruptor.desc": {
+    "src_hash": "3016a3b81bf64b22e5230e29ac00f8d0",
+    "text": "Remorseless corruptor",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:47.958987Z"
+  },
+  "monster.the_armored_voidborn.name": {
+    "src_hash": "49e6d0915cce60def3f6164f1372dcce",
+    "text": "Armored voidborn",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:47.980640Z"
+  },
+  "monster.the_armored_voidborn.desc": {
+    "src_hash": "49e6d0915cce60def3f6164f1372dcce",
+    "text": "Armored voidborn",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:47.983485Z"
+  },
+  "monster.mezlon_the_defiler.name": {
+    "src_hash": "9d9b4227c6e97b944f700f930a785140",
+    "text": "Mezlon defiler",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:47.987745Z"
+  },
+  "monster.mezlon_the_defiler.desc": {
+    "src_hash": "742f33411a51fb4eaaffb03349684f1e",
+    "text": "Mezlon defiler",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:47.990466Z"
+  },
+  "monster.the_false_god.name": {
+    "src_hash": "d95ccc936c003306a1cd48f2332145de",
+    "text": "False god",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:47.992643Z"
+  },
+  "monster.the_false_god.desc": {
+    "src_hash": "d95ccc936c003306a1cd48f2332145de",
+    "text": "False god",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:47.994968Z"
+  },
+  "monster.mezlon_the_defiler_stop.name": {
+    "src_hash": "742f33411a51fb4eaaffb03349684f1e",
+    "text": "Mezlon defiler",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:48.000489Z"
+  },
+  "monster.mezlon_the_defiler_stop.desc": {
+    "src_hash": "742f33411a51fb4eaaffb03349684f1e",
+    "text": "Mezlon defiler",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:48.003724Z"
+  },
+  "monster.eliz_the_unyielding.name": {
+    "src_hash": "0a805a410bfc4dbce53e58ce3ef4b719",
+    "text": "Eliz unyielding",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:48.012322Z"
+  },
+  "monster.eliz_the_unyielding.desc": {
+    "src_hash": "0a805a410bfc4dbce53e58ce3ef4b719",
+    "text": "Eliz unyielding",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:48.016165Z"
+  },
+  "monster.paiz_the_pauperizer.name": {
+    "src_hash": "b5c4bcce70b016b9c05a18b604af224e",
+    "text": "Paiz pauperizer",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:48.111661Z"
+  },
+  "monster.paiz_the_pauperizer.desc": {
+    "src_hash": "b5c4bcce70b016b9c05a18b604af224e",
+    "text": "Paiz pauperizer",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:48.114006Z"
+  },
+  "monster.the_pit_lord.voice_2": {
+    "src_hash": "18bbb2a999bba52e72ad7adb03fca18e",
+    "text": "¡LOS CONSEGUIRÉ A TODOS!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:48.124008Z"
+  },
+  "monster.deathbringer.voice_2": {
+    "src_hash": "087eaaebc953e803fa0e7ce961902c20",
+    "text": "¡TODOS MORIRÉIS!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:48.140998Z"
+  },
+  "monster.darakan_the_executioner.name": {
+    "src_hash": "dc8c85dd910e3089ad0defe64aac65a3",
+    "text": "Darakan executioner",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:48.143468Z"
+  },
+  "monster.darakan_the_executioner.desc": {
+    "src_hash": "dc8c85dd910e3089ad0defe64aac65a3",
+    "text": "Darakan executioner",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:48.146492Z"
+  },
+  "monster.orcus_the_cruel.name": {
+    "src_hash": "0e4d87e1268a4a411fb29ed1437ef3dc",
+    "text": "Orcus cruel",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:48.158081Z"
+  },
+  "monster.orcus_the_cruel.desc": {
+    "src_hash": "0e4d87e1268a4a411fb29ed1437ef3dc",
+    "text": "Orcus cruel",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:48.159971Z"
+  },
+  "monster.colerian_the_barbarian.name": {
+    "src_hash": "c80e973f0edce6768ab62ce2e43cd55c",
+    "text": "Colerian barbarian",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:48.164887Z"
+  },
+  "monster.colerian_the_barbarian.desc": {
+    "src_hash": "c80e973f0edce6768ab62ce2e43cd55c",
+    "text": "Colerian barbarian",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:48.166977Z"
+  },
+  "monster.the_hairy_one.name": {
+    "src_hash": "3219fc93ffca2b50e118402a406a6ca3",
+    "text": "Hairy one",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:48.177570Z"
+  },
+  "monster.the_hairy_one.desc": {
+    "src_hash": "3219fc93ffca2b50e118402a406a6ca3",
+    "text": "Hairy one",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:48.179831Z"
+  },
+  "monster.kreebosh_the_exile.name": {
+    "src_hash": "722f26c29d1acf90796125f35b8f7677",
+    "text": "Kreebosh exile",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:48.196429Z"
+  },
+  "monster.kreebosh_the_exile.desc": {
+    "src_hash": "722f26c29d1acf90796125f35b8f7677",
+    "text": "Kreebosh exile",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:48.199157Z"
+  },
+  "monster.snake_god_essence.name": {
+    "src_hash": "88f582e90e7bbd6cc82f9e47a445e537",
+    "text": "Essence de serpiente god",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:48.214064Z"
+  },
+  "monster.snake_god_essence.desc": {
+    "src_hash": "88f582e90e7bbd6cc82f9e47a445e537",
+    "text": "Essence de serpiente god",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:48.217544Z"
+  },
+  "monster.dracola.voice_2": {
+    "src_hash": "34ca3c0b42bbe1738a309c000505b2a7",
+    "text": "¡ESTÁIS TODOS CONDENADOS!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:48.234677Z"
+  },
+  "monster.azerus.name": {
+    "src_hash": "b4e4bfc24fbda1ea27b6d8c5a2f0ed0e",
+    "text": "Azerus2",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:48.260321Z"
+  },
+  "monster.yalahari.name": {
+    "src_hash": "ab2d85f835d1d03374567616a8558491",
+    "text": "Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:48.275649Z"
+  },
+  "monster.schiach.name": {
+    "src_hash": "6be5962b96fb7ba9bf225254e7d3382c",
+    "text": "Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:48.299730Z"
+  },
+  "monster.percht.name": {
+    "src_hash": "af3f18a4248f79e532b15532ec7da8ab",
+    "text": "Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:48.306556Z"
+  },
+  "monster.lucifuga_aranea.name": {
+    "src_hash": "e8d9873523325a612dab9291ec50c1f4",
+    "text": "Aranea Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:48.335459Z"
+  },
+  "monster.maxxenius.name": {
+    "src_hash": "f5b4b7b4e11274b4de639e62e86dad93",
+    "text": "Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:48.343151Z"
+  },
+  "monster.maxxenius.desc": {
+    "src_hash": "f5b4b7b4e11274b4de639e62e86dad93",
+    "text": "Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:48.345368Z"
+  },
+  "monster.malofur_mangrinder.name": {
+    "src_hash": "b89e7416e323b11d8e00d950726488ee",
+    "text": "Mangrinder Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:48.347697Z"
+  },
+  "monster.malofur_mangrinder.desc": {
+    "src_hash": "b89e7416e323b11d8e00d950726488ee",
+    "text": "Mangrinder Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:48.349230Z"
+  },
+  "monster.alptramun.name": {
+    "src_hash": "fa5e6674f15617726271f1d5570554bd",
+    "text": "Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:48.352534Z"
+  },
+  "monster.alptramun.desc": {
+    "src_hash": "fa5e6674f15617726271f1d5570554bd",
+    "text": "Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:48.353668Z"
+  },
+  "monster.izcandar_the_banished.name": {
+    "src_hash": "a49c6c6cacf94c65644ddd6f3cc4a37c",
+    "text": "Izcandar banished",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:48.356494Z"
+  },
+  "monster.izcandar_the_banished.desc": {
+    "src_hash": "a49c6c6cacf94c65644ddd6f3cc4a37c",
+    "text": "Izcandar banished",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:48.358441Z"
+  },
+  "monster.lava_lurker_attendant.name": {
+    "src_hash": "fcb294287f145f783234aad89ad82b66",
+    "text": "Lava acechador attendant",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:48.416458Z"
+  },
+  "monster.urmahlullu_the_weakened.name": {
+    "src_hash": "2e93a7cbb0f7cf99840221781bf5357e",
+    "text": "Urmahlullu weakened",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:48.444052Z"
+  },
+  "monster.urmahlullu_the_weakened.desc": {
+    "src_hash": "2e93a7cbb0f7cf99840221781bf5357e",
+    "text": "Urmahlullu weakened",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:48.445886Z"
+  },
+  "monster.urmahlullu_the_tamed.name": {
+    "src_hash": "98b90dfefe77592932ca521a5fe08278",
+    "text": "Urmahlullu tamed",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:48.454837Z"
+  },
+  "monster.urmahlullu_the_tamed.desc": {
+    "src_hash": "98b90dfefe77592932ca521a5fe08278",
+    "text": "Urmahlullu tamed",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:48.456510Z"
+  },
+  "monster.urmahlullu_the_immaculate.name": {
+    "src_hash": "0c069949a0398db2120389fb240f3495",
+    "text": "Urmahlullu immaculate",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:48.459669Z"
+  },
+  "monster.urmahlullu_the_immaculate.desc": {
+    "src_hash": "0c069949a0398db2120389fb240f3495",
+    "text": "Urmahlullu immaculate",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:48.462783Z"
+  },
+  "monster.zamulosh.name": {
+    "src_hash": "316c376b76b26f2f91c5ca5b4c29919c",
+    "text": "Zamulosh3",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:48.493048Z"
+  },
+  "monster.zamulosh.desc": {
+    "src_hash": "316c376b76b26f2f91c5ca5b4c29919c",
+    "text": "Zamulosh3",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:48.495601Z"
+  },
+  "monster.zamulosh3.desc": {
+    "src_hash": "316c376b76b26f2f91c5ca5b4c29919c",
+    "text": "Zamulosh3",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:48.535421Z"
+  },
+  "monster.zamulosh2.desc": {
+    "src_hash": "57e10ef40ee701cb3a668ecc4c10f78c",
+    "text": "Zamulosh3",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:48.539061Z"
+  },
+  "monster.darklight_matter.name": {
+    "src_hash": "741eec4c13495cb3082bf50895b3ec06",
+    "text": "Materia de luz oscura",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:48.579508Z"
+  },
+  "monster.rotten_man_maggot.name": {
+    "src_hash": "18c69d3cf6277b36847452ea189be5f3",
+    "text": "Man-maggot podrido",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:48.589975Z"
+  },
+  "monster.zorvorax.name": {
+    "src_hash": "80c04b42271d9f49b38453faaac73c56",
+    "text": "Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:48.624356Z"
+  },
+  "monster.zorvorax.desc": {
+    "src_hash": "2b7b5417e3b2f92a9059fe240282876d",
+    "text": "muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:48.625359Z"
+  },
+  "monster.kalyassa.desc": {
+    "src_hash": "8eb76610bc95eb3ae228605ad80bc631",
+    "text": "Kaliassa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:48.627004Z"
+  },
+  "monster.tazhadur.name": {
+    "src_hash": "1a0072e1de28b151253476ef3153af89",
+    "text": "Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:48.628811Z"
+  },
+  "monster.tazhadur.desc": {
+    "src_hash": "1a0072e1de28b151253476ef3153af89",
+    "text": "Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T14:58:48.630006Z"
+  },
+  "data.otservbr.global.npc.iskan.L55.1279": {
+    "src_hash": "8c2be15f64087050fb51f57fae545b95",
+    "text": "No eres uno de nosotros. No quiero hablar contigo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.583074Z"
+  },
+  "data.otservbr.global.npc.jakahr.L53.433": {
+    "src_hash": "7d211c0df3ce83c165b4b0eb373feeff",
+    "text": "Hola, peregrino de luto. ¿Cómo puedo ayudarte |PLAYERNAME|?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.597997Z"
+  },
+  "data.otservbr.global.npc.jakahr.L54.434": {
+    "src_hash": "109b98326fce7e48a110e639774441f3",
+    "text": "Fue un honor servirle, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.599247Z"
+  },
+  "data.otservbr.global.npc.jakahr.L55.435": {
+    "src_hash": "6439f0565c4ec9567c817eb82519891f",
+    "text": "Fue un honor servirle.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.600332Z"
+  },
+  "data.otservbr.global.npc.jakahr.L56.436": {
+    "src_hash": "231110808aaf83a7bbb0a5a0b60b0b78",
+    "text": "Aquí. No olvides que también debes comprar una etiqueta si quieres enviar un paquete. Escriba siempre el nombre del {receiver} en la primera línea.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.601732Z"
+  },
+  "data.otservbr.global.npc.jamesfrancis.L64.648": {
+    "src_hash": "cd3304fb7a7199bf44faaf72bcbf139e",
+    "text": "Gerimor tiene razón. Como experto en minotauros, llevo años investigando estas criaturas. Pensé que ya sabía mucho pero los monstruos en esta cueva son {different}. Es un gran {mystery}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.603744Z"
+  },
+  "data.otservbr.global.npc.jamesfrancis.L67.649": {
+    "src_hash": "a8d18e5d69db7a2d10b7bff9e9442b49",
+    "text": "¿Cómo va tu {mission}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.604901Z"
+  },
+  "data.otservbr.global.npc.jean.pierre.L116.691": {
+    "src_hash": "03496ec1e1892bafe0f165da12354986",
+    "text": "Saludos, |PLAYERNAME|. ¿Qué estás haciendo aquí afuera?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.606036Z"
+  },
+  "data.otservbr.global.npc.jerom.L134.948": {
+    "src_hash": "0dd06bc90e410c8c32c7d8878bdce14a",
+    "text": "Hola. Lo siento, pero hoy no estoy en el mejor {mood}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.608975Z"
+  },
+  "data.otservbr.global.npc.jezzara.L59.1141": {
+    "src_hash": "811aca8149aacb1493c2c99c72293f4d",
+    "text": "Sea llorado peregrino en carne. Hablando de carne, ¿tal vez te gustaría un poco de {food}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.611575Z"
+  },
+  "data.otservbr.global.npc.jezzara.L60.1142": {
+    "src_hash": "58aaadd7d4edadde7c609e944ce2f906",
+    "text": "Que la iluminación sea tu camino.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.612585Z"
+  },
+  "data.otservbr.global.npc.jezzara.L61.1143": {
+    "src_hash": "58aaadd7d4edadde7c609e944ce2f906",
+    "text": "Que la iluminación sea tu camino.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.613565Z"
+  },
+  "data.otservbr.global.npc.jezzara.L62.1144": {
+    "src_hash": "13c3d970ee6f7254a72d4b3c79841c8e",
+    "text": "Claro, echa un vistazo a mis ofertas.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.614614Z"
+  },
+  "data.otservbr.global.npc.julius.L255.639": {
+    "src_hash": "ffe8aa6deb533fac27719e137420847d",
+    "text": "Adiós, |PLAYERNAME|. Nunca confíes en nadie.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.615835Z"
+  },
+  "data.otservbr.global.npc.julius.L256.640": {
+    "src_hash": "b87d90cdb5feb0d6f087b3fa0c43367f",
+    "text": "Te recompensaré por cada par de dientes de vampiro que me traigas.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.617473Z"
+  },
+  "data.otservbr.global.npc.julius.L58.637": {
+    "src_hash": "7681c95c5304928cb451460a53142e2d",
+    "text": "Sea saludado, aventurero |PLAYERNAME|. Supongo que has leído el {note} sobre la amenaza {vampire} en esta ciudad.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.619876Z"
+  },
+  "data.otservbr.global.npc.julius.L60.638": {
+    "src_hash": "1f13d1d9698ab7c453748ae3daa2dbeb",
+    "text": "Sea saludado, aventurero |PLAYERNAME|. ¡Disculpe si aparezco {distracted}!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.621167Z"
+  },
+  "data.otservbr.global.npc.junkar.mines.L68.1372": {
+    "src_hash": "fb2e7252e1bc9a5095b3b4aa8de29f32",
+    "text": "¡Bienvenido, |PLAYERNAME|! Tienes suerte de que el servicio esté funcionando ahora mismo. ¡Guarda tu carbón para los próximos días!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.624135Z"
+  },
+  "data.otservbr.global.npc.junkar.mines.L70.1374": {
+    "src_hash": "4b508d9118a7a2ee1cf157e9d26496d4",
+    "text": "<Sigh> ¡Sin paciencia!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.627112Z"
+  },
+  "data.otservbr.global.npc.junkar.robsons.L68.898": {
+    "src_hash": "fb2e7252e1bc9a5095b3b4aa8de29f32",
+    "text": "¡Bienvenido, |PLAYERNAME|! Tienes suerte de que el servicio esté funcionando ahora mismo. ¡Guarda tu carbón para los próximos días!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.629156Z"
+  },
+  "data.otservbr.global.npc.junkar.robsons.L70.900": {
+    "src_hash": "4b508d9118a7a2ee1cf157e9d26496d4",
+    "text": "<Sigh> ¡Sin paciencia!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.631759Z"
+  },
+  "data.otservbr.global.npc.junkar.thais.L68.1410": {
+    "src_hash": "fb2e7252e1bc9a5095b3b4aa8de29f32",
+    "text": "¡Bienvenido, |PLAYERNAME|! Tienes suerte de que el servicio esté funcionando ahora mismo. ¡Guarda tu carbón para los próximos días!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.633359Z"
+  },
+  "data.otservbr.global.npc.junkar.thais.L70.1412": {
+    "src_hash": "4b508d9118a7a2ee1cf157e9d26496d4",
+    "text": "<Sigh> ¡Sin paciencia!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.634782Z"
+  },
+  "data.otservbr.global.npc.kais.L104.736": {
+    "src_hash": "3b86f64fb67b5c1834d89da8e17d3262",
+    "text": "Hmm... seguramente necesitas {help}, ¿me dejarás? ¡Soy {Kais} el Atado y puedo echarte una mano en {healing} tu cuerpo y alma o incluso otorgarte una bendición {enhanced}!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.636295Z"
+  },
+  "data.otservbr.global.npc.kallimae.L58.294": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "¿Cómo podría ayudarte?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.640892Z"
+  },
+  "data.otservbr.global.npc.kallimae.L61.295": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "¿Cómo podría ayudarte?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.642140Z"
+  },
+  "data.otservbr.global.npc.kallimae.L64.296": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "¿Cómo podría ayudarte?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.643600Z"
+  },
+  "data.otservbr.global.npc.karith.L64.599": {
+    "src_hash": "5b7b0861f756c38e7680922d5c9546bd",
+    "text": "¡Hola! Dime qué tienes en mente. El tiempo es dinero.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.645129Z"
+  },
+  "data.otservbr.global.npc.karith.L67.600": {
+    "src_hash": "5b7b0861f756c38e7680922d5c9546bd",
+    "text": "¡Hola! Dime qué tienes en mente. El tiempo es dinero.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.646353Z"
+  },
+  "data.otservbr.global.npc.karl.L96.1575": {
+    "src_hash": "612c4b8e3ab4ee16596f3c54e6b74fbc",
+    "text": "Por favor regresa, pero no se lo digas a los demás.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.647669Z"
+  },
+  "data.otservbr.global.npc.karl.L97.1576": {
+    "src_hash": "612c4b8e3ab4ee16596f3c54e6b74fbc",
+    "text": "Por favor regresa, pero no se lo digas a los demás.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.648811Z"
+  },
+  "data.otservbr.global.npc.karl.L98.1577": {
+    "src_hash": "bf9e79d102569a312ea94c4c585bb77a",
+    "text": "¡Pshhhht! No tan ruidoso... pero bienvenido.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.649893Z"
+  },
+  "data.otservbr.global.npc.kawill.L88.276": {
+    "src_hash": "375da4c35e8737bfec27241f35bb623c",
+    "text": "¡Bienvenido |PLAYERNAME|! ¡Que la tierra os proteja!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.652448Z"
+  },
+  "data.otservbr.global.npc.kawill.L89.277": {
+    "src_hash": "8473fa332d7c87ddbb8eca4e3970bde6",
+    "text": "¡Tierra bajo tus pies, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.653532Z"
+  },
+  "data.otservbr.global.npc.kawill.L90.278": {
+    "src_hash": "0e7c9ac6d5d333fc3f7d39ef117dc3ee",
+    "text": "Tierra bajo tus pies, peregrino. ¿Qué te trae por aquí?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.654667Z"
+  },
+  "data.otservbr.global.npc.kendra.L83.1057": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "Adiós. Recomiéndenos si quedó satisfecho con nuestro servicio.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.657481Z"
+  },
+  "data.otservbr.global.npc.kendra.thais.L84.1068": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "Adiós. Recomiéndenos si quedó satisfecho con nuestro servicio.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.659399Z"
+  },
+  "data.otservbr.global.npc.klaus.L86.425": {
+    "src_hash": "49a8ec2cd2ac4e80af62824803c36fcf",
+    "text": "Siempre que tengas la garganta seca, ya sabes dónde encontrar mi taberna.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.665037Z"
+  },
+  "data.otservbr.global.npc.lailene.L55.309": {
+    "src_hash": "a21aa717d510ec030be90be63a987599",
+    "text": "¿Qué quieres en mi tienda de batas mágicas? Dudo que tenga algo que sea de su interés.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.670077Z"
+  },
+  "data.otservbr.global.npc.lardoc.bashsmite.L259.1202": {
+    "src_hash": "b211bcadeb014b868626eda4e6f51196",
+    "text": "Como obviamente usted no es uno de mis parientes que me hace una visita muy retrasada, deberíamos conseguir {work} de inmediato. Veremos si puedes demostrar tu {worth} ante nuestra alianza.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.674436Z"
+  },
+  "data.otservbr.global.npc.lazaran.L176.388": {
+    "src_hash": "96372361df95655d9e060b93114a4d35",
+    "text": "Yo saludo. No eres enemigo de la tribu.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.676677Z"
+  },
+  "data.otservbr.global.npc.lea.L62.1369": {
+    "src_hash": "18a02a3cb18889047bcaf57aa5d58265",
+    "text": "Cuídate en tus viajes.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.679764Z"
+  },
+  "data.otservbr.global.npc.lector.L56.1219": {
+    "src_hash": "e7e8376c8ebc0e34eb5dce943e3eb35e",
+    "text": "Por favor ven y compra de nuevo, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.683117Z"
+  },
+  "data.otservbr.global.npc.lector.L57.1220": {
+    "src_hash": "9d91a8c725ee133251c60e4a29425753",
+    "text": "Por supuesto, mira bien mi carne.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.685617Z"
+  },
+  "data.otservbr.global.npc.lee.delle.L152.410": {
+    "src_hash": "2b98a21dd3ecc8b73f39abd3b404c6ba",
+    "text": "Claro, echa un vistazo, cariño.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.689166Z"
+  },
+  "data.otservbr.global.npc.lee.delle.L153.411": {
+    "src_hash": "3fce01a91a23475db857bb6058700e97",
+    "text": "¡Qué bueno verte, |PLAYERNAME|! Pídeme un {trade} si quieres ver mis ofertas exclusivas.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.692064Z"
+  },
+  "data.otservbr.global.npc.liane.L95.484": {
+    "src_hash": "32df9254b9776388eb1c634b940522f1",
+    "text": "Hola. ¿Cómo puedo ayudarte |PLAYERNAME|? Pídeme un intercambio si quieres comprar algo. También puedo explicar el sistema {mail}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.694960Z"
+  },
+  "data.otservbr.global.npc.liane.L96.485": {
+    "src_hash": "ff286ad0325b0dfb6ab6df93be4c1201",
+    "text": "Fue un placer ayudarte, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.697236Z"
+  },
+  "data.otservbr.global.npc.liane.L97.486": {
+    "src_hash": "ff286ad0325b0dfb6ab6df93be4c1201",
+    "text": "Fue un placer ayudarte, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.699547Z"
+  },
+  "data.otservbr.global.npc.liane.L98.487": {
+    "src_hash": "231110808aaf83a7bbb0a5a0b60b0b78",
+    "text": "Aquí. No olvides que también debes comprar una etiqueta si quieres enviar un paquete. Escriba siempre el nombre del {receiver} en la primera línea.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.702600Z"
+  },
+  "data.otservbr.global.npc.lily.L285.123": {
+    "src_hash": "797120acf39e816b4666bc8649e89356",
+    "text": "Por supuesto, simplemente navega por mis ofertas. Si compras una poción, no olvides que hay un {deposit} de 5 de oro en el frasco vacío.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.707636Z"
+  },
+  "data.otservbr.global.npc.lily.L69.118": {
+    "src_hash": "c85bd82113d310a30767258fcba1ef2a",
+    "text": "¡Oye, |PLAYERNAME|! Vascalir debe haberte enviado para que me ayudes con un poco de {mission}, ¿verdad?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.710943Z"
+  },
+  "data.otservbr.global.npc.lily.L72.119": {
+    "src_hash": "9f97d334b171026b4ef7757112fb8bdb",
+    "text": "Hola, |PLAYERNAME|! ¿Volviste tan pronto? ¿Le has entregado las hierbas a Hyacinth?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.713897Z"
+  },
+  "data.otservbr.global.npc.lily.L74.120": {
+    "src_hash": "c81ecf943aa00abd9e5f2a3b2639f5cc",
+    "text": "¡Bienvenido, |PLAYERNAME|! Te ves un poco estresado hoy. Si quieres ver mis ofertas de pociones, sólo pídeme un {trade}. En caso de que estés buscando el mercado y las mazmorras, ¡simplemente sigue el camino hacia el este!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.717708Z"
+  },
+  "data.otservbr.global.npc.lisander.L77.251": {
+    "src_hash": "7c9a44fbee81a7f2ea36e355b65372b7",
+    "text": "Preferiría que me dejaran en {peace}. Sea breve.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.720091Z"
+  },
+  "data.otservbr.global.npc.lorbas.L93.1556": {
+    "src_hash": "ad7a902e164149be3a4a215f7f0cfea2",
+    "text": "Un saludo, querido viajero.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.725216Z"
+  },
+  "data.otservbr.global.npc.lothar.L129.304": {
+    "src_hash": "959262dbf2c11b1b0a94e84d13606e40",
+    "text": "Bienvenido a mi humilde cabaña, |PLAYERNAME|. ¿Qué te trae {here}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.728531Z"
+  },
+  "data.otservbr.global.npc.loui.L105.1165": {
+    "src_hash": "2cdc3811af0d4d8665946cb6669780f3",
+    "text": "¡MANTÉNGASE ALEJADO DE ESE AGUJERO!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.730005Z"
+  },
+  "data.otservbr.global.npc.loui.L106.1166": {
+    "src_hash": "ae6d100c5b4674e4f49badaaa2c62903",
+    "text": "¡Que los dioses te protejan! ¡Y mantente alejado de ese agujero!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.731226Z"
+  },
+  "data.otservbr.global.npc.lubo.L156.1432": {
+    "src_hash": "a50751bb10a3b51d4395f76efe466880",
+    "text": "¡Bienvenido a mi tienda de aventureros, |PLAYERNAME|! ¿Qué necesitas? Pídeme un {trade} para ver mis productos.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.733098Z"
+  },
+  "data.otservbr.global.npc.lukosch.L87.215": {
+    "src_hash": "74af8429056cd1b6c12ccb10e67902c1",
+    "text": "¡Bienvenido, |PLAYERNAME|! ¿Te sientes aventurero? ¿Quiere un {ticket} semanal para el sistema de vagones de mineral aquí? ¡Puedes usarlo aquí mismo para llegar al centro de Kazordoon!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:02:30.736200Z"
+  },
+  "spell.mud_attack.name": {
+    "src_hash": "f6f1198ace1aebb65327bf8c03fed32b",
+    "text": "Barro Ataque",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:04:39.340860Z"
+  },
+  "spell.blank_rune.name": {
+    "src_hash": "5b08c139df49fad08b5b67dd53f5ca45",
+    "text": "Runa en blanco",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:04:39.429081Z"
+  },
+  "spell.generator.name": {
+    "src_hash": "dac9630aec642a428cd73f4be0a03569",
+    "text": "Generador",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:04:39.443983Z"
+  },
+  "spell.find_fiend.name": {
+    "src_hash": "39a1af8722e356c0b578c515abf5967c",
+    "text": "Encuentra Sombrío",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:04:39.449052Z"
+  },
+  "spell.noxious_ripptor_wave.name": {
+    "src_hash": "e4592f5085749cc23f784f76e51cbd8e",
+    "text": "Ola nociva del Ripptor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:05:11.339125Z"
+  },
+  "spell.djinn_electrify.name": {
+    "src_hash": "2d7d1504b58dddc11ff934bb57fef215",
+    "text": "Djinn electrificar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:05:11.339399Z"
+  },
+  "spell.gnomevil_skill_reducer_2.name": {
+    "src_hash": "c2542458a3272a3f5e413c77958fad0b",
+    "text": "Reductor de habilidades de Gnomevil 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:05:11.339772Z"
+  },
+  "spell.alptramun_summon.name": {
+    "src_hash": "0343adfc07caa85bf0344dd565816cbf",
+    "text": "Invocación de Alptramun",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:05:11.340017Z"
+  },
+  "spell.root.name": {
+    "src_hash": "63a9f0ea7bb98050796b649e85481845",
+    "text": "raíz",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:05:15.364035Z"
+  },
+  "spell.obujos_skill_reducer_1.name": {
+    "src_hash": "761e07a1d8338f36e05a468f8df8cdd6",
+    "text": "obujos reductor de habilidad 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:05:15.364460Z"
+  },
+  "spell.omrafir_wave.name": {
+    "src_hash": "015bae860e8ace59a5a8f04fffb002a6",
+    "text": "ola omrafir",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:05:15.364697Z"
+  },
+  "spell.mawhawk_summon.name": {
+    "src_hash": "ddbc1897ccd2bb591871ed967bb5dd1b",
+    "text": "Invocación de Mawhawk",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:05:15.364938Z"
+  },
+  "spell.undead_jester_paralyze.name": {
+    "src_hash": "43efda14ce886856b62a26209b09eca4",
+    "text": "bufón no-muerto paraliza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:05:15.365207Z"
+  },
+  "spell.priestess_firering.name": {
+    "src_hash": "da52df4d604b0c3800ce05fda77f5031",
+    "text": "tiro al blanco",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:05:20.076145Z"
+  },
+  "spell.big_boss_trolliver_summon.name": {
+    "src_hash": "b2c625654cc5c384790ae76b686883f9",
+    "text": "invocación del gran jefe trolliver",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:05:20.076972Z"
+  },
+  "spell.aftershock_wave.name": {
+    "src_hash": "abcd30772d636537648ee0b8070d1c37",
+    "text": "onda de réplica",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:05:20.077423Z"
+  },
+  "spell.raging_mage_skill_reducer_2.name": {
+    "src_hash": "1b4d065ee80f1dbdd553b7cc433f56a1",
+    "text": "reductor de habilidades de mago furioso 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:05:20.077997Z"
+  },
+  "spell.dreadwing_curse.name": {
+    "src_hash": "6f04ff2059a60aa01e208e0cebc1bd2d",
+    "text": "maldición aterradora",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:05:20.078512Z"
+  },
+  "spell.betrayed_wraith_skill_reducer.name": {
+    "src_hash": "333a2e1af1ddefe52520f8f2978a203f",
+    "text": "Reductor de habilidades de espectro traicionado",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:05:25.803298Z"
+  },
+  "spell.gnomevil_soulfire.name": {
+    "src_hash": "f12a4dd8c3059b8abe022de1f312fb31",
+    "text": "fuego del alma gnomevil",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:05:25.803564Z"
+  },
+  "spell.minotaur_amazon_paralyze.name": {
+    "src_hash": "c88f3b8928239a36ce90d56a34ff900d",
+    "text": "minotauro amazona paraliza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:05:25.803815Z"
+  },
+  "spell.twins_skill_reducer.name": {
+    "src_hash": "a20dfa07e9723568a769dec77f7d0ba9",
+    "text": "reductor de habilidades de gemelos",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:05:25.804073Z"
+  },
+  "spell.zushuka_freeze.name": {
+    "src_hash": "0b3f7c6071b0c23cbf33729be65920ca",
+    "text": "congelación de zushuka",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:05:25.804300Z"
+  },
+  "spell.blood_hand_paralyze.name": {
+    "src_hash": "d43d4107cf3c8ca13e2be5930ceb3c29",
+    "text": "mano de sangre paralizar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:05:31.080074Z"
+  },
+  "spell.ravennouslavalurkertarget.name": {
+    "src_hash": "497e978a910324bd53a6e584b83ff9a1",
+    "text": "vorazLavaLurkerObjetivo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:05:31.080355Z"
+  },
+  "spell.thorn_summon.name": {
+    "src_hash": "ec458d283e18e30ee3b8efe406f99559",
+    "text": "invocar espina",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:05:31.080568Z"
+  },
+  "spell.big_energy_wave.name": {
+    "src_hash": "7d20925ed4e9434e30ad5f22892439a2",
+    "text": "gran ola de energía",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:05:31.080897Z"
+  },
+  "spell.furyosa_deathball.name": {
+    "src_hash": "daf7bc73713b5f8d891c98d697d4bdf1",
+    "text": "Furyosa Bola de la muerte",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:05:31.081441Z"
+  },
+  "spell.summonchallenge.name": {
+    "src_hash": "7f863ba4a43ed7de3e35f58e2d2fb773",
+    "text": "invocar desafío",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:05:36.596478Z"
+  },
+  "spell.large_fire_ring.name": {
+    "src_hash": "5394e9c93b2017a67c7621e8a265436e",
+    "text": "fuego grande",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:05:36.596702Z"
+  },
+  "spell.dipthrah_skill_reducer.name": {
+    "src_hash": "2f1fcdbc32e97fcd940c1ea28020aa45",
+    "text": "reductor de habilidades dipthrah",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:05:36.596984Z"
+  },
+  "spell.vulcongra_soulfire.name": {
+    "src_hash": "9b179ffa7a83901c618f09c111fb54d3",
+    "text": "fuego del alma vulcongra",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:05:36.597238Z"
+  },
+  "spell.malofur_explosion.name": {
+    "src_hash": "9b242cec8044a6a20f5add13d22fcd11",
+    "text": "Explosión de Malofur",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:05:36.597626Z"
+  },
+  "spell.lizard_magistratus_curse.name": {
+    "src_hash": "84b35dc62577dc99d6c038c476121a34",
+    "text": "maldición del lagarto magistratus",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:05:42.390738Z"
+  },
+  "spell.heal_brain_head.name": {
+    "src_hash": "16798f54286e3470100eb9fa2eed3fe7",
+    "text": "sanar la cabeza del cerebro",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:05:42.390995Z"
+  },
+  "spell.earth_barrage.name": {
+    "src_hash": "5d6ae1b9885ff1aeebc09563b3e1712e",
+    "text": "bombardeo de tierra",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:05:42.391200Z"
+  },
+  "spell.glooth_battery_heal.name": {
+    "src_hash": "b616ae108a81f934e3a49de7ff7f8870",
+    "text": "curación de batería gloriosa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:05:42.391495Z"
+  },
+  "spell.ghastly_dragon_wave.name": {
+    "src_hash": "736938e9e7c9c4ab8e28acfd7fa73cdc",
+    "text": "Ola de dragón espantosa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:05:42.391758Z"
+  },
+  "spell.draken_elite_soulfire.name": {
+    "src_hash": "6ca1fde63ac1e032c99e0627f6e7fa4c",
+    "text": "fuego de alma de élite draken",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:05:48.453805Z"
+  },
+  "spell.devourer_summon.name": {
+    "src_hash": "9755d669726bf618c72329d71dcc7a47",
+    "text": "invocación devoradora",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:05:48.454439Z"
+  },
+  "spell.tenebris_summon.name": {
+    "src_hash": "9d9f516aa5d5c62ef39377c97a6691f5",
+    "text": "Invocación de Tenebris",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:05:48.454904Z"
+  },
+  "spell.pythius_the_rotten_summon.name": {
+    "src_hash": "81accc32310a4b6f61930206e170c39b",
+    "text": "Pythius la invocación podrida",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:05:48.455843Z"
+  },
+  "spell.man_in_the_cave_summon.name": {
+    "src_hash": "d18be646d4a8cd3c9769c49067bdb531",
+    "text": "hombre en la cueva convocar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:05:48.456467Z"
+  },
+  "spell.morgaroth_skill_reducer_2.name": {
+    "src_hash": "863723246630037a2d7b72736b8178f9",
+    "text": "reductor de habilidades morgaroth 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:05:54.037481Z"
+  },
+  "spell.firestarter_soulfire.name": {
+    "src_hash": "20683709310db09463fb32c59f557034",
+    "text": "fuego del alma",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:05:54.037725Z"
+  },
+  "spell.tyrn_skill_reducer.name": {
+    "src_hash": "32e7ea8698ec3e7bdf775f85c6aa7c6a",
+    "text": "reductor de habilidades tyrn",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:05:54.037975Z"
+  },
+  "spell.cold_of_winter.name": {
+    "src_hash": "f65e5256fcceac4e54b3de77fe6a56a1",
+    "text": "frio de invierno",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:05:54.038184Z"
+  },
+  "spell.dworc_paralyze.name": {
+    "src_hash": "f0d751cb81f00e18196c6ff12fdb5f55",
+    "text": "dworc paralizar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:05:54.038458Z"
+  },
+  "spell.time_guardian_lost_time.name": {
+    "src_hash": "fc7bacb2db9f90b22285920577ea9e60",
+    "text": "guardián del tiempo tiempo perdido",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:05:57.127744Z"
+  },
+  "spell.magma_crawler_wave.name": {
+    "src_hash": "3a110c92403b80d53debdca32741f054",
+    "text": "onda rastreadora de magma",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:05:57.128051Z"
+  },
+  "spell.drillworm_paralyze.name": {
+    "src_hash": "d1a55dc23ab4afc71794ac1d8b3d2f82",
+    "text": "gusano perforador paraliza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:05:57.128289Z"
+  },
+  "scripts.auto_loot.msg_2": {
+    "src_hash": "a5e8b81952865a784dfa4b1130397515",
+    "text": "Modo de autoloot establecido a TODO.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:08:56.344508Z"
+  },
+  "scripts.demon_oak.voice_7": {
+    "src_hash": "f4a11c0915086be4d30e919fecb2f2d8",
+    "text": "¡Puedes tener mi set demoníaco, si me ayudas a salir de aquí!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:08:56.411051Z"
+  },
+  "scripts.dolls.6511_1": {
+    "src_hash": "e267002bc50d6c66c0e2fcf14625ee5b",
+    "text": "Jo jo jo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:08:56.428882Z"
+  },
+  "scripts.prince_drazzak_summon.say_1": {
+    "src_hash": "dfaa579f53bc94c724932f2a88f3dc3d",
+    "text": "¡¡APLASTADLES A TODOS!!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:08:56.732662Z"
+  },
+  "gamestore.disabled.no_outfit_for_addon": {
+    "src_hash": "eac725194fbbbd872c8c5fc5e0130e34",
+    "text": "No tienes el conjunto, no puedes comprar el complemento.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:08:58.463388Z"
+  },
+  "scripts.action_all_hymn_piano_teleport.msg_1": {
+    "src_hash": "c502fd98b5db9f7f4676d78ef8311d96",
+    "text": "No te has aprendido todos los versos del himno",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:09:01.397534Z"
+  },
+  "scripts.action_horn.say_5": {
+    "src_hash": "6b35ad266884e6774eeed5bc937d9189",
+    "text": "No tienes ganas de abrazar a un oso inconsciente.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:09:01.397985Z"
+  },
+  "scripts.actions_climbing_vine.msg_1": {
+    "src_hash": "b80258e64c995bdd22f7504047329a5e",
+    "text": "No puedes entrar en una zona de protección después de atacar a otro jugador.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:09:01.398515Z"
+  },
+  "scripts.actions_plant.msg_4": {
+    "src_hash": "dbae0926d3ed10c91f6f663ba886cd12",
+    "text": "Parece que no haces crecer suficientes árboles o no liberas a los loros.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:09:04.067253Z"
+  },
+  "scripts.dawnport.second_step.druid": {
+    "src_hash": "7e2b9047ad8e0ff84f8e6d05044ecb74",
+    "text": "Como esta es tu primera vez como druida, recibiste algunos elementos adicionales. Como druida, puedes usar estos hechizos: Ataque de barro, Relájate, Parche mágico.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:09:14.037550Z"
+  },
+  "scripts.dawnport.second_step.paladin": {
+    "src_hash": "f80217282a079b6c262a0c2dccd9a192",
+    "text": "Como es tu primera vez como paladín, recibiste algunos elementos adicionales. Como paladín, puedes usar los siguientes hechizos: Magic Patch, Arrow Call.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:09:14.038221Z"
+  },
+  "scripts.dawnport.second_step.sorcerer": {
+    "src_hash": "44a4c1015836aea1cf7e61ca9fa1c41b",
+    "text": "Como es tu primera vez como hechicero, recibiste algunos elementos adicionales. Como hechicero, puedes utilizar los siguientes hechizos: Magic Patch, Buzz, Scorch.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:09:14.039026Z"
+  },
+  "scripts.dawnport.third_step.druid": {
+    "src_hash": "af87703200f863924322ca8280bb1dd5",
+    "text": "Has recibido las armas de un druida. Como druida, puedes usar estos hechizos: Ataque de barro, Relájate, Parche mágico.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:09:16.637431Z"
+  },
+  "scripts.doctor_marrow_explosion.say_1": {
+    "src_hash": "2136dd834edf7f4267352bbd971418c9",
+    "text": "¡Estás siendo el objetivo de la explosión del Doctor Marrow!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:09:19.386624Z"
+  },
+  "scripts.exalted_core.msg_1": {
+    "src_hash": "74a4fd646bb88a58662897bc7d1359d4",
+    "text": "Has recibido un núcleo de alma {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:09:19.387287Z"
+  },
+  "scripts.exercise_training_weapons.msg_14": {
+    "src_hash": "e888c67f58156c6cff657e6317bb6c90",
+    "text": "Ha comenzado a entrenar con un muñeco de ejercicios.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:09:23.335855Z"
+  },
+  "scripts.manage_kv.msg_3": {
+    "src_hash": "aac985f9b05cd8b0e17abb0db1e672fa",
+    "text": "No se encontraron entradas KV no negativas para {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:09:27.568206Z"
+  },
+  "scripts.manage_kv.msg_4": {
+    "src_hash": "a03095d7756d3fbffc8e31e7338f1a1d",
+    "text": "Uso: /setkv clave,valor[,nombredeljugador]",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:09:27.568625Z"
+  },
+  "scripts.manage_vip.msg_7": {
+    "src_hash": "fcbea0599558a7ea582ce6e19419542e",
+    "text": "¡El jugador \"{}\" no está en línea o no existe!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:09:33.491408Z"
+  },
+  "scripts.mounts.fail_39": {
+    "src_hash": "59fecabeafbbd7f144b57e26dbc93ee4",
+    "text": "¡Argh! ¡El rastreador de magma te empujó y derramaste el vino resplandeciente!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:09:33.491840Z"
+  },
+  "scripts.mounts.fail_52": {
+    "src_hash": "78b069ea5749e10c09cfd16472c82037",
+    "text": "La cabeza de choque se escapó.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:09:33.492175Z"
+  },
+  "scripts.mounts.fail_53": {
+    "src_hash": "2497426539fa7cdd9618d7d2ee5d5b87",
+    "text": "La cabeza de choque te está gruñendo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:09:33.492498Z"
+  },
+  "scripts.mounts.success_28": {
+    "src_hash": "546ec0a7f62a6542662a297c0c5e957a",
+    "text": "Domaste la cabeza de choque.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:09:38.442838Z"
+  },
+  "raid.feroxa.name": {
+    "src_hash": "6c59b09bfce69d20bb2b2e9eccf12b41",
+    "text": "Feroxa2",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:10:36.097338Z"
+  },
+  "raid.warlock.name": {
+    "src_hash": "21305b754e03843876abc27387a0e57e",
+    "text": "Brujo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:10:36.099414Z"
+  },
+  "raid.mad_mage.name": {
+    "src_hash": "7cb4e60cd0927f995c74a12fe8154ebc",
+    "text": "Mago loco",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:10:36.100631Z"
+  },
+  "raid.draptor.name": {
+    "src_hash": "0298e34bc88fa8299cacd8f457233da3",
+    "text": "Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:10:36.102410Z"
+  },
+  "raid.pirates.name": {
+    "src_hash": "281a66b1f4a1ded6214bdbd1a35f8e1f",
+    "text": "Pirates",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:10:37.599657Z"
+  },
+  "raid.lions.name": {
+    "src_hash": "c1820fe7ba2586a76c19e56cd5e8d84b",
+    "text": "Lions",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:10:37.600086Z"
+  },
+  "raid.minotaurs.name": {
+    "src_hash": "6fce9dc510d2ecb3f7bea0d5a50b0df2",
+    "text": "Minotaurs",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:10:37.600436Z"
+  },
+  "raid.example.name": {
+    "src_hash": "0a52730597fb4ffa01fc117d9e71e3a9",
+    "text": "Example",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:10:37.600754Z"
+  },
+  "raid.raids.name": {
+    "src_hash": "650d0052540bb7fa10d8ec5e7c7d8542",
+    "text": "Raids",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:10:37.601109Z"
+  },
+  "web.tpl.guilds.manager.h2_1": {
+    "src_hash": "c832c0ef0315430a558b56bb96923880",
+    "text": "¡Bienvenido al administrador del gremio!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:11:39.169473Z"
+  },
+  "web.tpl.monsters.td_9": {
+    "src_hash": "3f7037784223e6bdcf2f2a3534cea3b9",
+    "text": "No hay monstruos en el servidor.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:11:43.171092Z"
+  },
+  "web.tpl.forum.move_thread.b_1": {
+    "src_hash": "f89e73354656130dbb4f50fe616737d9",
+    "text": "Mover hilo a otro tablero",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:11:43.171389Z"
+  },
+  "web.tpl.admin.notepad.label_1": {
+    "src_hash": "b364b1c0197ec5b5da68b226bca230ae",
+    "text": "Este es tu bloc de notas personal. Asegúrese de guardarlo cada vez que modifique algo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:11:43.171991Z"
+  },
+  "html.index.nginx_debian.text1": {
+    "src_hash": "33e8b6d12ed3c1ef948b59b9b17ccc83",
+    "text": "Gracias por usar nginx.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:11:46.663277Z"
+  },
+  "client.utils.text4": {
+    "src_hash": "a5d30c2fa7f7351769ddb417c4ee83e1",
+    "text": "Lalalala... ya te sabes de memoria el himno del culto que se canta en Liberty Bay. No es tan difícil, considerando que se compone principalmente de dos notas y letras repetitivas.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:16:54.166893Z"
+  },
+  "client.npctrade.text1": {
+    "src_hash": "090951e6353119d15cea658bfd978777",
+    "text": "Lista de artículos que puedes comprar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:16:58.270976Z"
+  },
+  "client.npctrade.text2": {
+    "src_hash": "7d277e244c9a49fba327e245d6e2d4f1",
+    "text": "Lista de artículos que puedes vender",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:16:58.271320Z"
+  },
+  "client.charms1410.text1": {
+    "src_hash": "31597b577bc92187dd76bf8b78ad89ce",
+    "text": "El encanto menor hace eco\nSe obtiene desbloqueando o mejorando un amuleto importante y promocionando a tu personaje.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:16:58.271962Z"
+  },
+  "client.game_shop.text3": {
+    "src_hash": "70e9fac741af644fd3e5360831053f82",
+    "text": "Restaura los puntos de vida de tu personaje.\n\n- sólo se puede utilizar comprando personaje\n- será enviado a tu mochila\n- No lo pueden comprar personajes con bloqueo de zona de protección o signo de batalla.\n- no puede",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:16:58.272742Z"
+  },
+  "client.game_shop.text4": {
+    "src_hash": "4dc445c9e8f5c9bd83e9a32bf662e51c",
+    "text": "Recarga el maná de tu personaje.\n\n- sólo se puede utilizar comprando personaje\n- será enviado a tu mochila\n- No lo pueden comprar personajes con bloqueo de zona de protección o signo de batalla.\n- no puede ser pur",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:17:05.007690Z"
+  },
+  "client.http.text2": {
+    "src_hash": "01fa7f139e0a66fd80ea634c1aab2b56",
+    "text": "HTTP.get no es compatible",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:17:05.007989Z"
+  },
+  "client.neededtranslations.text3": {
+    "src_hash": "090951e6353119d15cea658bfd978777",
+    "text": "Lista de artículos que puedes comprar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:17:08.053731Z"
+  },
+  "client.neededtranslations.text4": {
+    "src_hash": "7d277e244c9a49fba327e245d6e2d4f1",
+    "text": "Lista de artículos que puedes vender",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:17:08.054098Z"
+  },
+  "client.imbuing.text4": {
+    "src_hash": "fd9c5ad613abbde3df710701444e0f75",
+    "text": "Haga clic aquí para realizar la imbución seleccionada. Esto consumirá las fuentes astrales y el oro necesarios.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:17:08.054637Z"
+  },
+  "client.game_questlog.text1": {
+    "src_hash": "910d89aefb3a5449196b4604a900bd5f",
+    "text": "Eliminar misiones completadas // Realizar un seguimiento automático de las nuevas misiones // Desaparecer automáticamente el seguimiento de las misiones completadas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:17:08.055222Z"
+  },
+  "client.game_rewardwall.text3": {
+    "src_hash": "508256e0c0905378d1ac497e92e29878",
+    "text": "¡Recordar! ¡Siempre puedes cobrar tu recompensa diaria de forma gratuita visitando un santuario de recompensas!\n\nActualmente posees el triple de acceso a recompensas instantáneas. ¿Realmente quieres usar uno para reclamar tu recompensa diaria ahora?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:17:11.474691Z"
+  },
+  "client.game_highscore.text4": {
+    "src_hash": "2a44f87fa0c74e0b58a5748460f0249d",
+    "text": "Retro Duro Pvp",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:17:11.474953Z"
+  },
+  "client.keybins.text4": {
+    "src_hash": "5969789bc00f068ce14d9bd7a558996d",
+    "text": "Modo de chat desconocido",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:17:11.475203Z"
+  },
+  "achievement.9.name": {
+    "src_hash": "189d4baff9dd822bda8f3c39e883c348",
+    "text": "Señor protector",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:17:55.646828Z"
+  },
+  "achievement.50.name": {
+    "src_hash": "707e66ee97ec84531029a7a52a96326a",
+    "text": "¡Arrasando!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:17:55.648238Z"
+  },
+  "achievement.57.name": {
+    "src_hash": "1f7f1b477642e497c88d0d00f1fb98a5",
+    "text": "Aniquilador",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:17:55.648433Z"
+  },
+  "achievement.65.name": {
+    "src_hash": "9b997d21495dbcdcb3a00095e4b6e1f5",
+    "text": "Estrella de rock",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:17:55.648626Z"
+  },
+  "achievement.85.name": {
+    "src_hash": "07eda7b7fdc1b08c5b810584725d6803",
+    "text": "Steampunk",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:17:59.833140Z"
+  },
+  "achievement.237.description": {
+    "src_hash": "1d531c44017581a2636cbf8107debd99",
+    "text": "Has vencido al Engendro Nocivo y su corazón serpentino.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:18:02.573668Z"
+  },
+  "achievement.277.name": {
+    "src_hash": "1a00e8cb7d17ef5b5ff504038ded033f",
+    "text": "¡Sí, Ariki!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:18:02.574462Z"
+  },
+  "cpp.returnvalue.player_is_pz_locked": {
+    "src_hash": "b80258e64c995bdd22f7504047329a5e",
+    "text": "No puedes entrar en una zona de protección después de atacar a otro jugador.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:18:47.206805Z"
+  },
+  "cpp.inspect.physical_plus": {
+    "src_hash": "9f0c54c466d97e93b32794c483030c7b",
+    "text": "{0} físico + {1}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:18:50.547989Z"
+  },
+  "cpp.player.exp_animus_bonus": {
+    "src_hash": "33509188c709f7fb3af22f0e6f094fb5",
+    "text": "(bonificación de maestría del animus {0}%)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:18:50.548718Z"
+  },
+  "cpp.protocol.active_prey_desc": {
+    "src_hash": "8d45051899aa9b191a41ac17d746c91e",
+    "text": "{0} ({1} +{2}%, restante {3})",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:18:50.549578Z"
+  },
+  "cpp.returnvalue.player_is_pz_locked_enter_pvp_zone": {
+    "src_hash": "d2aecf8ad0d3683be703f96024d3d815",
+    "text": "No puedes ingresar a una zona pvp después de atacar a otro jugador.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:18:55.251611Z"
+  },
+  "cpp.title.desc_46": {
+    "src_hash": "1dfaa12a030aa2f9d0bb8e921fd68b00",
+    "text": "Desbloqueaste todas las entradas extradimensionales Bestiary.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:18:55.252292Z"
+  },
+  "cpp.zone.str1": {
+    "src_hash": "51e4134431f514103591fbfec46d0fd1",
+    "text": "Área (de: {}, a: {})",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:18:55.252599Z"
+  },
+  "cpp.account.str1": {
+    "src_hash": "fe7bd5cdc41b08e789243801f0ee8cb8",
+    "text": "QUITAR Monedas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:18:57.863504Z"
+  },
+  "talkaction.gm.spy.msg_specify_name": {
+    "src_hash": "95c7b984f7921ff2f8b24d92e5e0060f",
+    "text": "Escribe el nombre del personaje a espiar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:22:34.018234Z"
+  },
+  "npc.naji.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T15:26:43.277600Z"
+  },
+  "npc.naji.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T15:26:43.279273Z"
+  },
+  "npc.pemaret.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T15:26:43.819221Z"
+  },
+  "npc.petros.farewell_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Chao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T15:26:43.857071Z"
+  },
+  "npc.pig.farewell_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Chao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T15:26:43.875436Z"
+  },
+  "npc.pino.farewell_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "¡Adiós!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T15:26:43.877799Z"
+  },
+  "npc.pino.walkaway_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "¡Adiós!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T15:26:43.881460Z"
+  },
+  "npc.rabaz.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T15:26:44.022148Z"
+  },
+  "npc.rabaz.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T15:26:44.034331Z"
+  },
+  "npc.rapanaio_boat.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Bueno, adiós entonces.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T15:26:44.072258Z"
+  },
+  "npc.rapanaio_isle_of_evil.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Bueno, adiós entonces.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T15:26:44.076092Z"
+  },
+  "npc.rata_mari.farewell_msg_1": {
+    "src_hash": "5e90b9ed398b15d1cb02ae8d056199f9",
+    "text": "¡Miep!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:26:44.164139Z"
+  },
+  "npc.rata_mari.walkaway_msg_1": {
+    "src_hash": "5e90b9ed398b15d1cb02ae8d056199f9",
+    "text": "¡Miep!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:26:44.172187Z"
+  },
+  "npc.raymond_striker.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T15:26:44.173502Z"
+  },
+  "npc.romir.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T15:26:44.299334Z"
+  },
+  "npc.romir.walkaway_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T15:26:44.301563Z"
+  },
+  "npc.sebastian.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T15:26:44.451880Z"
+  },
+  "npc.sebastian_nargor.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T15:26:44.459755Z"
+  },
+  "npc.seymour.stdmod_7": {
+    "src_hash": "d9b6dfa3f0c959d6f8601e4fc1cf4837",
+    "text": "¡Brillante! ¡Necesitamos buenos aventureros como tú! Si estás listo para aprender, pídeme una lección. Siempre puedes pedir palabras de diferentes colores, como ésta, para continuar la lección.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:26:44.547718Z"
+  },
+  "npc.seymour.stdmod_84": {
+    "src_hash": "3c4ab51b4829ad7853f2928a2c8dabb6",
+    "text": "Bueno, podría darte un valioso {lessons} o algo de {hints} general sobre el juego, o un pequeño {quest} si estás interesado.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:26:44.556538Z"
+  },
+  "npc.seymour.stdmod_9": {
+    "src_hash": "8906dabad09202739fba87ff4e9a7e82",
+    "text": "¡Adiós, |PLAYERNAME|! Y recuerda: ¡No correr de un lado a otro en la academia!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:26:44.560601Z"
+  },
+  "npc.seymour.voice_1": {
+    "src_hash": "def2d3948cc0b6d4b82fd564d3127e1d",
+    "text": "Recién llegados: ¡visítenme! ¡Responderé tus preguntas!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:26:44.566194Z"
+  },
+  "npc.seymour.voice_2": {
+    "src_hash": "6961b19694f25d7a5c605157698e7193",
+    "text": "¡Entrénate en la academia!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:26:44.567380Z"
+  },
+  "npc.seymour.voice_3": {
+    "src_hash": "0f4486b1993797b05e78dd499c74c5d0",
+    "text": "¿Te sientes perdido? ¡Pídeme ayuda!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:26:44.568524Z"
+  },
+  "npc.seymour.voice_4": {
+    "src_hash": "8265020d8ab41dc268153237ded89725",
+    "text": "¡Obtén algunos conocimientos en la academia!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:26:44.569877Z"
+  },
+  "npc.shanar.farewell_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "¡Adiós!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T15:26:44.571951Z"
+  },
+  "npc.shirith.farewell_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "¡Adiós!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T15:26:44.609288Z"
+  },
+  "npc.shirith.walkaway_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "¡Adiós!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T15:26:44.612466Z"
+  },
+  "npc.tanyt.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Bueno, adiós entonces.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T15:26:44.952388Z"
+  },
+  "npc.the_beggar_king.farewell_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "¡Adiós!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T15:26:45.047353Z"
+  },
+  "npc.thorgrin.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Adiós.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T15:26:45.228313Z"
+  },
+  "npc.thorgrin.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Bueno, adiós entonces.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T15:26:45.234496Z"
+  },
+  "npc.thorwulf.walkaway_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Chao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T15:26:45.242891Z"
+  },
+  "npc.torkada.walkaway_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Chao.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-14T15:26:45.391580Z"
+  },
+  "monster.the_last_lore_keeper.name": {
+    "src_hash": "f622b8cee9f195789d69db6e7306ec53",
+    "text": "Last lore guardián",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:27:26.237845Z"
+  },
+  "monster.dragonking_zyrtarch.name": {
+    "src_hash": "f8693071c6e156fb65915e8b3267e39e",
+    "text": "Zyrtarch Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:27:26.240672Z"
+  },
+  "monster.dragonking_zyrtarch.desc": {
+    "src_hash": "f8693071c6e156fb65915e8b3267e39e",
+    "text": "Zyrtarch Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:27:26.241697Z"
+  },
+  "monster.melting_frozen_horror.name": {
+    "src_hash": "a5e0b7ec3efd3c4b3cc3959be66979f6",
+    "text": "Melting congelado horror",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:27:26.245030Z"
+  },
+  "monster.the_freezing_time_guardian.name": {
+    "src_hash": "c6850ae1d1d5f791b423956e3625dd87",
+    "text": "Freezing time guardián",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:27:26.247541Z"
+  },
+  "monster.the_freezing_time_guardian.desc": {
+    "src_hash": "c6850ae1d1d5f791b423956e3625dd87",
+    "text": "Freezing time guardián",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:27:26.249017Z"
+  },
+  "monster.lloyd.name": {
+    "src_hash": "5cb8d6b6c6d88582c1dd77bf6b6f6163",
+    "text": "Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:27:26.254538Z"
+  },
+  "monster.lloyd.desc": {
+    "src_hash": "5cb8d6b6c6d88582c1dd77bf6b6f6163",
+    "text": "Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:27:26.255515Z"
+  },
+  "monster.gaz'haragoth.name": {
+    "src_hash": "62ad3edd6f61c6fad46755eb7cdc163a",
+    "text": "Haragoth'Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:27:26.305438Z"
+  },
+  "monster.gaz'haragoth.desc": {
+    "src_hash": "62ad3edd6f61c6fad46755eb7cdc163a",
+    "text": "Haragoth'Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:27:26.306499Z"
+  },
+  "monster.prince_drazzak.voice_3": {
+    "src_hash": "23f59b92cf05664159a37caf710cb192",
+    "text": "¡¡VEN AQUÍ!!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:27:26.311861Z"
+  },
+  "monster.prince_drazzak.voice_4": {
+    "src_hash": "dfaa579f53bc94c724932f2a88f3dc3d",
+    "text": "¡¡APLASTADLES A TODOS!!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:27:26.313217Z"
+  },
+  "monster.omrafir.voice_4": {
+    "src_hash": "35fbee7bd7790d362d667f90a8d536f1",
+    "text": "¡OMRAFIR INHALA PROFUNDAMENTE!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:27:26.324043Z"
+  },
+  "monster.deathstrike.name": {
+    "src_hash": "389f5276deb98ba03f770fca80cb4029",
+    "text": "Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:27:26.332100Z"
+  },
+  "monster.deathstrike.desc": {
+    "src_hash": "389f5276deb98ba03f770fca80cb4029",
+    "text": "Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:27:26.333369Z"
+  },
+  "monster.grand_master_oberon.name": {
+    "src_hash": "02b7dcc052da172e7b6c989ffa6036f0",
+    "text": "Grand maestro oberon",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:27:26.369915Z"
+  },
+  "monster.grand_master_oberon.desc": {
+    "src_hash": "02b7dcc052da172e7b6c989ffa6036f0",
+    "text": "Grand maestro oberon",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:27:26.371334Z"
+  },
+  "monster.grand_commander_soeren.name": {
+    "src_hash": "5e4a8be2eaecd81e52bf8f4e06260892",
+    "text": "Grand comandante soeren",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:27:26.375060Z"
+  },
+  "monster.grand_commander_soeren.desc": {
+    "src_hash": "5e4a8be2eaecd81e52bf8f4e06260892",
+    "text": "Grand comandante soeren",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:27:26.376505Z"
+  },
+  "monster.preceptor_lazare.name": {
+    "src_hash": "ca5f618b177330ed81ac07cfdf239a50",
+    "text": "Lazare Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:27:26.383690Z"
+  },
+  "monster.preceptor_lazare.desc": {
+    "src_hash": "ca5f618b177330ed81ac07cfdf239a50",
+    "text": "Lazare Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:27:26.384708Z"
+  },
+  "monster.brokul.name": {
+    "src_hash": "1f5377726860758b7b203cc9f028cbee",
+    "text": "Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:27:26.387828Z"
+  },
+  "monster.brokul.desc": {
+    "src_hash": "1f5377726860758b7b203cc9f028cbee",
+    "text": "Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:27:26.389001Z"
+  },
+  "monster.feroxa.name": {
+    "src_hash": "6c59b09bfce69d20bb2b2e9eccf12b41",
+    "text": "Feroxa2",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:27:26.394249Z"
+  },
+  "monster.feroxa.desc": {
+    "src_hash": "6c59b09bfce69d20bb2b2e9eccf12b41",
+    "text": "Feroxa2",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:27:26.395362Z"
+  },
+  "monster.feroxa2.desc": {
+    "src_hash": "6c59b09bfce69d20bb2b2e9eccf12b41",
+    "text": "Feroxa2",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:27:26.396641Z"
+  },
+  "monster.feroxa4.desc": {
+    "src_hash": "6c59b09bfce69d20bb2b2e9eccf12b41",
+    "text": "Feroxa2",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:27:26.399459Z"
+  },
+  "monster.feroxa3.desc": {
+    "src_hash": "6c59b09bfce69d20bb2b2e9eccf12b41",
+    "text": "Feroxa2",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:27:26.400760Z"
+  },
+  "monster.feroxa5.desc": {
+    "src_hash": "6c59b09bfce69d20bb2b2e9eccf12b41",
+    "text": "Feroxa2",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:27:26.401956Z"
+  },
+  "monster.utua_stone_sting.name": {
+    "src_hash": "61a701bf0001a08cc44881d29d75fefe",
+    "text": "Utua piedra sting",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:27:26.407937Z"
+  },
+  "monster.utua_stone_sting.desc": {
+    "src_hash": "61a701bf0001a08cc44881d29d75fefe",
+    "text": "Utua piedra sting",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:27:26.409493Z"
+  },
+  "monster.madareth.voice_2": {
+    "src_hash": "cd791b0090ec8211e917d997ea4538cd",
+    "text": "¡Siente mi ira!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:27:26.429900Z"
+  },
+  "monster.obujos.name": {
+    "src_hash": "086ff89bac87d47f970e6904abf16758",
+    "text": "Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:27:26.433420Z"
+  },
+  "monster.obujos.desc": {
+    "src_hash": "086ff89bac87d47f970e6904abf16758",
+    "text": "Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:27:26.434418Z"
+  },
+  "monster.tanjis.name": {
+    "src_hash": "84ecf941b71fe0ab245e3ceb02959073",
+    "text": "Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:27:26.436287Z"
+  },
+  "monster.tanjis.desc": {
+    "src_hash": "84ecf941b71fe0ab245e3ceb02959073",
+    "text": "Muerto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:27:26.437296Z"
+  },
+  "data.otservbr.global.npc.lukosch.L88.216": {
+    "src_hash": "4c63e8ef9d6c6b447464c244c3d4b195",
+    "text": "Espero verte de nuevo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.897514Z"
+  },
+  "data.otservbr.global.npc.luna.L61.1332": {
+    "src_hash": "17fe9a8867d6771bd75b2ddc7d49f7d7",
+    "text": "Saludos, viajero. Tal vez quieras echarle un vistazo a mi {offers}...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.898699Z"
+  },
+  "data.otservbr.global.npc.lynda.L307.1507": {
+    "src_hash": "41a97395a5729feeab77ee7495736313",
+    "text": "¡Bienvenido en nombre de los dioses, peregrino |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.901337Z"
+  },
+  "data.otservbr.global.npc.lynda.L308.1508": {
+    "src_hash": "b0f298573834cdb44ab5b19d8acdcb41",
+    "text": "Tenga cuidado en sus viajes.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.902391Z"
+  },
+  "data.otservbr.global.npc.lynda.L309.1509": {
+    "src_hash": "b0f298573834cdb44ab5b19d8acdcb41",
+    "text": "Tenga cuidado en sus viajes.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.903578Z"
+  },
+  "data.otservbr.global.npc.maelyrra.L176.895": {
+    "src_hash": "c70e4d8c31291a7d72dde8f84d33f733",
+    "text": "¡Las bendiciones de la naturaleza! Bienvenidos a la tierra de los sueños.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.905933Z"
+  },
+  "data.otservbr.global.npc.maeryn.L178.1255": {
+    "src_hash": "dca678c81c221d0b4c21e91f9b478943",
+    "text": "Saludos, visitante. Me pregunto qué puede llevarte a este {dangerous} lugar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.907934Z"
+  },
+  "data.otservbr.global.npc.malor.L193.131": {
+    "src_hash": "1b0806bb328b6b43658826b221d451fa",
+    "text": "Adiós, humano. Cuando haya ocupado el lugar que me corresponde, recordaré a quienes me sirvieron bien. Incluso si son sólo humanos.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.909305Z"
+  },
+  "data.otservbr.global.npc.malunga.L58.1370": {
+    "src_hash": "dbfea65667c74ee69fd021dfe4454c77",
+    "text": "Saludos. Tengo poco tiempo para {spare}, por lo que la conversación será breve. Enseño al hechicero {spells} y compro algunos {ingredients} mágicos.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.911217Z"
+  },
+  "data.otservbr.global.npc.marina.L128.1472": {
+    "src_hash": "2ae27253663b438cae541caa6ff17b8d",
+    "text": "Hola |PLAYERNAME|. Un visitante, ¡qué lindo!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.912316Z"
+  },
+  "data.otservbr.global.npc.maris.L91.978": {
+    "src_hash": "7f884ad7135562fc9dfd9b3551c3855f",
+    "text": "Espero que tengas una buena razón para acercarte a mi {ship}, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.913614Z"
+  },
+  "data.otservbr.global.npc.maris.fenrock.L72.111": {
+    "src_hash": "fa216d3f5c3c988c883ce3bd11d6d314",
+    "text": "Oh, todavía estás vivo. Hola, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.915672Z"
+  },
+  "data.otservbr.global.npc.maris.mistrock.L89.667": {
+    "src_hash": "fa216d3f5c3c988c883ce3bd11d6d314",
+    "text": "Oh, todavía estás vivo. Hola, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.917418Z"
+  },
+  "data.otservbr.global.npc.markwin.L59.904": {
+    "src_hash": "bf2421b7f13057a4d06b921861e9b066",
+    "text": "¡Intruso! ¡Guardias, derribenlo!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.919112Z"
+  },
+  "data.otservbr.global.npc.markwin.L72.905": {
+    "src_hash": "5c97494d5f921771f27b9e512cd75d54",
+    "text": "Bueno... ¡derrotaste a mis guardias! ¡Ahora todo ha terminado! Supongo que tendré que responder a tus preguntas ahora.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.920349Z"
+  },
+  "data.otservbr.global.npc.marlene.L101.423": {
+    "src_hash": "a2b4481e8d9b0cdfe72918bb2a79f120",
+    "text": "¡Adiós y vuelve para otra pequeña charla! *ondas*",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.922323Z"
+  },
+  "data.otservbr.global.npc.marvin.L92.130": {
+    "src_hash": "d34ba366d4cab92352173ff6cb7f085a",
+    "text": "Ah, llegas justo a tiempo para la votación especial sobre el proyecto {funding} más reciente. Supongo que quieres participar en ello.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.923652Z"
+  },
+  "data.otservbr.global.npc.mazarius.L189.562": {
+    "src_hash": "8fa02972b5987e56c5691893a73d91e2",
+    "text": "Saludos, querido visitante. Por favor dime qué {brings} estás aquí, a mi humilde adobe.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.925025Z"
+  },
+  "data.otservbr.global.npc.mehkesh.L59.619": {
+    "src_hash": "653a40db026dd0eea8fd4db0d5fba508",
+    "text": "Sé de luto, |PLAYERNAME|, peregrino en carne. Si buscas pociones, no busques más.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.926943Z"
+  },
+  "data.otservbr.global.npc.mehkesh.L60.620": {
+    "src_hash": "11191b6ef2e64cc058057d3c70275bb1",
+    "text": "Que la iluminación sea tu camino, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.928068Z"
+  },
+  "data.otservbr.global.npc.mehkesh.L61.621": {
+    "src_hash": "11191b6ef2e64cc058057d3c70275bb1",
+    "text": "Que la iluminación sea tu camino, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.929217Z"
+  },
+  "data.otservbr.global.npc.melchior.L86.1116": {
+    "src_hash": "c5d02636f95130d977bd5d183a75f872",
+    "text": "Adiós, extraño. Que Uman el Sabio guíe tus pasos en esta tierra traicionera.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.930907Z"
+  },
+  "data.otservbr.global.npc.melchior.L87.1117": {
+    "src_hash": "c5d02636f95130d977bd5d183a75f872",
+    "text": "Adiós, extraño. Que Uman el Sabio guíe tus pasos en esta tierra traicionera.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.932115Z"
+  },
+  "data.otservbr.global.npc.melfar.L135.692": {
+    "src_hash": "49f8d351b6b7daffa365eac4d0e9f2f1",
+    "text": "Simplemente genial, otra perturbación. Justo lo que necesito.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.933223Z"
+  },
+  "data.otservbr.global.npc.melian.L94.776": {
+    "src_hash": "ae65c5fcbefcac067caa83048920ebf2",
+    "text": "Saludos viajero |PLAYERNAME|. ¿Dónde quieres que te {fly}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.934358Z"
+  },
+  "data.otservbr.global.npc.memech.L59.1193": {
+    "src_hash": "65d996f074a8494c83d5bfd9a8f8a9bf",
+    "text": "Sé de luto, |PLAYERNAME|, peregrino en carne. Echa un vistazo a mis finos {weapons} y {armors}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.936149Z"
+  },
+  "data.otservbr.global.npc.memech.L60.1194": {
+    "src_hash": "11191b6ef2e64cc058057d3c70275bb1",
+    "text": "Que la iluminación sea tu camino, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.937214Z"
+  },
+  "data.otservbr.global.npc.memech.L61.1195": {
+    "src_hash": "58aaadd7d4edadde7c609e944ce2f906",
+    "text": "Que la iluminación sea tu camino.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.938258Z"
+  },
+  "data.otservbr.global.npc.milos.L59.298": {
+    "src_hash": "313a0c76d8cc04115f7e8b6b17a08f55",
+    "text": "Ah hola. Casi no te noté. Me temo que en este momento estoy un poco distraído.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.940706Z"
+  },
+  "data.otservbr.global.npc.mirabell.L123.158": {
+    "src_hash": "c9ad0693ff3d091e447e8b61e14edfdd",
+    "text": "Por supuesto, echa un vistazo a mis sabrosas ofertas.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.942983Z"
+  },
+  "data.otservbr.global.npc.miraia.L187.1359": {
+    "src_hash": "a36a156c93c52f19433932691de5899e",
+    "text": "Las bendiciones de Daraman. Vuelve pronto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.944438Z"
+  },
+  "data.otservbr.global.npc.moe.L115.326": {
+    "src_hash": "0b1e35729e4385f6252e25c1e9b9dedf",
+    "text": "Saludos, viajero. Parece que aquí eres un {guest}, como yo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.945586Z"
+  },
+  "data.otservbr.global.npc.mordecai.L157.588": {
+    "src_hash": "41bcc6bd6ff8f880bff86df964724f87",
+    "text": "Bienvenido al emporio mágico, niña. Pídeme un intercambio si necesitas {runes}, {wands} o libros de hechizos.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.947364Z"
+  },
+  "data.otservbr.global.npc.mordecai.L159.590": {
+    "src_hash": "231b98b1b896385cb640a9064d1a6282",
+    "text": "Ah, la impetuosidad de la juventud.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.948915Z"
+  },
+  "data.otservbr.global.npc.mother.of.jack.L100.94": {
+    "src_hash": "193e46468b279a667e5e68a2b96bbdc4",
+    "text": "Exijo una explicación por qué entraste a nuestra casa sin ninguna invitación.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.951159Z"
+  },
+  "data.otservbr.global.npc.muhad.L108.928": {
+    "src_hash": "dbaf5256055463832bf47c118d265593",
+    "text": "Sea saludado, extranjero bajo el sol de Darama. ¿Qué te trae {here}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.952322Z"
+  },
+  "data.otservbr.global.npc.muhad.L109.929": {
+    "src_hash": "a19ac558c11da87d37a9b0d87d273dba",
+    "text": "Que Daraman te acompañe en tus viajes.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.953391Z"
+  },
+  "data.otservbr.global.npc.muhad.L110.930": {
+    "src_hash": "a19ac558c11da87d37a9b0d87d273dba",
+    "text": "Que Daraman te acompañe en tus viajes.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.954583Z"
+  },
+  "data.otservbr.global.npc.muriel.L159.1305": {
+    "src_hash": "8fab312632ded5d25d11afcd8c22dbd5",
+    "text": "¡Saludos, |PLAYERNAME|! Buscando sabiduría y poder, ¿eh?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.955707Z"
+  },
+  "data.otservbr.global.npc.myra.L319.1418": {
+    "src_hash": "4c435efd925ac7ae7769db4166aac9d3",
+    "text": "Saludos, |PLAYERNAME|. Si buscas al hechicero {spells} no dudes en preguntar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.959958Z"
+  },
+  "data.otservbr.global.npc.myzzi.L100.65": {
+    "src_hash": "f9128628542131a1c457295f5d0434df",
+    "text": "Hola aventurero. Son {good} para verte.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.961666Z"
+  },
+  "data.otservbr.global.npc.nah.bob.L137.839": {
+    "src_hash": "6208e49a68b520f5b6eb6ddeefd9e28a",
+    "text": "Adiós, Neutrala |PLAYERNAME|. ¡Visita al viejo Bob de nuevo algún día!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.963717Z"
+  },
+  "data.otservbr.global.npc.naji.L76.1424": {
+    "src_hash": "9a8b5f31874c06521653b46ff9062147",
+    "text": "Bienvenido al banco Tibiano, |PLAYERNAME| ¿Qué puedo hacer por ti?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.965720Z"
+  },
+  "data.otservbr.global.npc.narsai.L58.889": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "¿Cómo podría ayudarte?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.967600Z"
+  },
+  "data.otservbr.global.npc.narsai.L61.890": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "¿Cómo podría ayudarte?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.968629Z"
+  },
+  "data.otservbr.global.npc.narsai.L64.891": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "¿Cómo podría ayudarte?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.969739Z"
+  },
+  "data.otservbr.global.npc.nelly.L166.415": {
+    "src_hash": "d08a1d7035ea004c66c027b2e8fcf5bb",
+    "text": "Hola |PLAYERNAME|, ¿Qué puedo hacer por ti? Trabajo para la oficina de correos, pero también comercio con importantes {potions}, {runes} y otros equipos mágicos.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.971168Z"
+  },
+  "data.otservbr.global.npc.nelly.L168.417": {
+    "src_hash": "231b98b1b896385cb640a9064d1a6282",
+    "text": "Ah, la impetuosidad de la juventud.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.972565Z"
+  },
+  "data.otservbr.global.npc.nielson.L101.561": {
+    "src_hash": "73054ed73ab01017d508f1de2c11b12c",
+    "text": "Adiós. De nada.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.974502Z"
+  },
+  "data.otservbr.global.npc.nilsor.L227.1011": {
+    "src_hash": "d79527a1e75d691b1539406f88bd69c0",
+    "text": "Saludos viajero |PLAYERNAME|. ¿Hay algo que pueda {do for you}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.976114Z"
+  },
+  "data.otservbr.global.npc.nina.L61.878": {
+    "src_hash": "76986f7777164e08c3af4cde9bbc3784",
+    "text": "Cuidado, si avanzas más tendrás que luchar contra un gran grupo de Elegidos. Este lugar se llama Fire Dragon Dojo. Vaya con cuidado ya que estos son campos de entrenamiento de lagartos.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.977707Z"
+  },
+  "data.otservbr.global.npc.ninos.L84.1480": {
+    "src_hash": "ee41db087bb4c7b83df37be1bc472aa3",
+    "text": "Hola. ¿Cómo puedo ayudarte |PLAYERNAME|? Pídeme un {trade} si quieres comprar algo. También puedo explicar el sistema {mail}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.981181Z"
+  },
+  "data.otservbr.global.npc.ninos.L85.1481": {
+    "src_hash": "ff286ad0325b0dfb6ab6df93be4c1201",
+    "text": "Fue un placer ayudarte, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.982363Z"
+  },
+  "data.otservbr.global.npc.nokmir.L100.97": {
+    "src_hash": "7511a3053985d1285f219889716a7b01",
+    "text": "Eres...un poco alto! Hola.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.983732Z"
+  },
+  "data.otservbr.global.npc.nomad.L108.168": {
+    "src_hash": "02a071b07a24df1ab5d650896f1ef654",
+    "text": "Ah, otro discípulo del extremo... ¿sobrevivir al aire libre helado? ¡Déjame {help}! Si necesita primeros auxilios aquí, puedo brindarle {healing} o otorgarle una bendición {enhanced}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.986009Z"
+  },
+  "data.otservbr.global.npc.nomad.L109.169": {
+    "src_hash": "8c89051be17409506fca67d38fa19a60",
+    "text": "¡Mantén el labio superior rígido!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.987008Z"
+  },
+  "data.otservbr.global.npc.nomad.L110.170": {
+    "src_hash": "8c89051be17409506fca67d38fa19a60",
+    "text": "¡Mantén el labio superior rígido!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:29:08.988028Z"
+  },
+  "spell.restoration.words": {
+    "src_hash": "40a2cd84931f4f23fc412feba6b5ece6",
+    "text": "exura max vita",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:31:14.654399Z"
+  },
+  "spell.chivalrous_challenge.words": {
+    "src_hash": "fa7b503fd5e42aa8ed809fd9e22c833f",
+    "text": "exeta amp res",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:31:14.684607Z"
+  },
+  "spell.zavarash2_paralyze.name": {
+    "src_hash": "0acbc6a83d4c0d759d98242007f1904a",
+    "text": "zavarash2 paraliza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:31:17.214383Z"
+  },
+  "spell.ashfalor_summon.name": {
+    "src_hash": "fd5de32dcca8065ba359061be0d0dc7b",
+    "text": "Invocación de Ceniza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:31:17.216017Z"
+  },
+  "spell.breach_brood_reducer.name": {
+    "src_hash": "93a57b0b3783457c725f7493681f9f15",
+    "text": "reductor de cría de brecha",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:31:22.259274Z"
+  },
+  "spell.emberbeastarea.name": {
+    "src_hash": "fae22fdada9c14ba633d0c3532415ff9",
+    "text": "ascuaBestiaArea",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:31:22.259492Z"
+  },
+  "spell.soulcatcher_summon.name": {
+    "src_hash": "0662b568c576c6f23392f96f22a8fb7f",
+    "text": "invocación de cazador de almas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:31:22.259756Z"
+  },
+  "spell.wilting_leaf_golem_paralyze.name": {
+    "src_hash": "3cf7df15b6ee67ce2b540279ce9ee46b",
+    "text": "El golem de hoja marchita paraliza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:31:22.260035Z"
+  },
+  "spell.cliff_strider_skill_reducer.name": {
+    "src_hash": "8ab592f846dee790c668c25672632c89",
+    "text": "Reductor de habilidad del zancudo del acantilado",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:31:22.260316Z"
+  },
+  "spell.chizzoron_the_distorter_paralyze.name": {
+    "src_hash": "af49bf252534550907d97766fd468b44",
+    "text": "chizzoron el distorsionador paraliza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:31:27.446668Z"
+  },
+  "spell.aggresive_lava_wave.name": {
+    "src_hash": "fc5f2e17f06f08c4f8c85e3f66efc4f5",
+    "text": "agresivolavaola",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:31:27.446914Z"
+  },
+  "spell.terofar_curse.name": {
+    "src_hash": "6389db55d88c913fc49a959a272edbeb",
+    "text": "Maldición de Terofar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:31:27.447231Z"
+  },
+  "spell.raging_mage_skill_reducer_1.name": {
+    "src_hash": "56401bb1ab93018848c0de7d252cca02",
+    "text": "reductor de habilidades de mago furioso 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:31:27.447520Z"
+  },
+  "spell.boulder_ring.name": {
+    "src_hash": "aadc298ce9732b12ee763c722cf75f9c",
+    "text": "anillo de roca",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:31:33.729841Z"
+  },
+  "spell.the_dark_dancer_summon.name": {
+    "src_hash": "c1d90021e67f6dfddbc092cb463c0704",
+    "text": "la invocación del bailarín oscuro",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:31:33.730209Z"
+  },
+  "spell.zushuka_heal.name": {
+    "src_hash": "d4eb5c8db3451ba2c986bb54cf9acd52",
+    "text": "sanar zushuka",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:31:33.730641Z"
+  },
+  "spell.ice_barrage.name": {
+    "src_hash": "1d60f3b1dde1dc296ac9c47328e769c9",
+    "text": "bombardeo de hielo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:31:33.730850Z"
+  },
+  "spell.the_blightfather_summon.name": {
+    "src_hash": "f257522b9446429fb94c7f149eb96d0b",
+    "text": "la convocatoria del padre arruinado",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:31:40.024648Z"
+  },
+  "spell.extended_energy_chain.name": {
+    "src_hash": "9d70431ae04da017cdfc32ade0c9487f",
+    "text": "cadena energética extendida",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:31:40.025245Z"
+  },
+  "spell.time_guardiann.name": {
+    "src_hash": "82b056bca2cceacbc0a9c4231c285f6c",
+    "text": "guardián del tiempo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:31:40.025682Z"
+  },
+  "spell.energy_barrage.name": {
+    "src_hash": "230a96efebea040b8627053d9bfd4bd8",
+    "text": "bombardeo de energía",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:31:40.026098Z"
+  },
+  "spell.brimstone_bug_wave.name": {
+    "src_hash": "c193de5508c5c027cae14d4e7987facb",
+    "text": "ola de insectos de azufre",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:31:40.026626Z"
+  },
+  "spell.prince_drazzak_summon.name": {
+    "src_hash": "8058f39ac3b0e816304e9185d34f0dd1",
+    "text": "Invocación del Príncipe Drazzak",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:31:45.609722Z"
+  },
+  "spell.frozen_minion_wave.name": {
+    "src_hash": "c60224fd4f7a1e3b44ecae75d73d5095",
+    "text": "ola de minion congelado",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:31:45.610646Z"
+  },
+  "spell.terofar_skill_reducer_2.name": {
+    "src_hash": "2e4b4ad63a6d051ec670c89a32b9cb48",
+    "text": "reductor de habilidad terofar 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:31:45.611246Z"
+  },
+  "spell.the_welter_heal2.name": {
+    "src_hash": "e0c4485048ce4ee7d45151b5defdb5b5",
+    "text": "la curación welter2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:31:45.611742Z"
+  },
+  "spell.blast_ring.name": {
+    "src_hash": "b546bbdf986ac2d964dccedfe2ef804c",
+    "text": "anillo de explosión",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:31:45.612197Z"
+  },
+  "spell.the_welter_summon2.name": {
+    "src_hash": "b575b682ca12598061ae498f55604ff5",
+    "text": "la convocatoria welter2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:31:50.737633Z"
+  },
+  "spell.worm_priestess_paralyze.name": {
+    "src_hash": "15fa765c69e9aec356a6ccb56d8ae7ef",
+    "text": "gusano sacerdotisa paralizar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:31:50.737898Z"
+  },
+  "spell.coldheart_paralyze.name": {
+    "src_hash": "318a3ce82b944a7094fc41c729aa0311",
+    "text": "corazón frío paralizar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:31:50.738137Z"
+  },
+  "spell.doctor_marrow_explosion.name": {
+    "src_hash": "5c8fc7ad4b748509ef534520c8067b48",
+    "text": "Doctor explosión de médula",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:31:50.738482Z"
+  },
+  "spell.hunger_summon.name": {
+    "src_hash": "c21e3faa61efc7c1b0ce8d02e47002bf",
+    "text": "invocación del hambre",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:31:50.738707Z"
+  },
+  "spell.chizzoron_the_distorter_summon.name": {
+    "src_hash": "0f88d69c500c86b95a5f75a6cb96e291",
+    "text": "chizzoron el distorsionador convocar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:31:55.605625Z"
+  },
+  "spell.hive_pore_summon.name": {
+    "src_hash": "32868349ad85025642cc1b7934868fa2",
+    "text": "invocación de poros de colmena",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:31:55.606002Z"
+  },
+  "spell.spawn_of_the_welter_heal.name": {
+    "src_hash": "b29b0635e3f3f822c55ad4425f028345",
+    "text": "engendro de la curación welter",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:31:55.606414Z"
+  },
+  "spell.arkhothep_summon.name": {
+    "src_hash": "95a6a0ff99c0f39dd5f2cc88a0a88898",
+    "text": "convocar arkhotep",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:31:55.606681Z"
+  },
+  "spell.dread_intruder_wave.name": {
+    "src_hash": "128174aa54c06e2fcd2a1058fa315a40",
+    "text": "temible ola intrusa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:32:01.083546Z"
+  },
+  "spell.glooth_bomb_walkthrough.name": {
+    "src_hash": "0294ca41460340fd1c4c9acc2e07df94",
+    "text": "tutorial de bomba gloriosa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:32:01.083877Z"
+  },
+  "spell.deathstrike_paralyze.name": {
+    "src_hash": "73e6c65b950c8f94bffbe7edb4f2e43a",
+    "text": "golpe mortal paralizar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:32:01.084129Z"
+  },
+  "spell.anomaly_wave.name": {
+    "src_hash": "8255680566fd850dc8b934f81f7fdeb5",
+    "text": "onda de anomalía",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:32:01.084347Z"
+  },
+  "spell.werecrocodile_fire_ring.name": {
+    "src_hash": "f25043479e8b3749a6ba70f30422d299",
+    "text": "anillo de fuego hombre cocodrilo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:32:01.084617Z"
+  },
+  "spell.orshabaal_skill_reducer.name": {
+    "src_hash": "b9f12ca14fb77c18211037d3a0e27dbf",
+    "text": "reductor de habilidades orshabaal",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:32:06.812035Z"
+  },
+  "spell.sir_valorcrest_summon.name": {
+    "src_hash": "957e35ed048ddd87721f97047a0b325f",
+    "text": "invocación de señor valorcrest",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:32:06.812359Z"
+  },
+  "spell.holy_barrage.name": {
+    "src_hash": "c371c369e448d986a545c45319be4a7d",
+    "text": "bombardeo santo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:32:06.812570Z"
+  },
+  "spell.lancer_beetle_skill_reducer.name": {
+    "src_hash": "42360850f1494b149a0f12e97ef0ef75",
+    "text": "Reductor de habilidades del escarabajo lancero",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:32:06.812853Z"
+  },
+  "spell.prince_drazzak_druid.name": {
+    "src_hash": "a6b52c25bcc62f3809e1fb744557fb21",
+    "text": "Príncipe Drazzak Druid",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:32:06.813367Z"
+  },
+  "spell.ironblight_freeze.name": {
+    "src_hash": "5aabd86f8100db71557b45a228d2a54a",
+    "text": "congelación de la plaga del hierro",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:32:11.607825Z"
+  },
+  "spell.srezz_lleecht.name": {
+    "src_hash": "c6735b9cf39cc4d574972e6d13e79577",
+    "text": "onda de sanguijuela",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:32:11.608084Z"
+  },
+  "spell.lost_berserker_skill_reducer.name": {
+    "src_hash": "56487db3c865ce7f48a648e4297128d5",
+    "text": "reductor de habilidades berserker perdido",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:32:11.608369Z"
+  },
+  "spell.abyssador_poison_wave.name": {
+    "src_hash": "ee4f1338ce79ebe520f864cc3bdce8e6",
+    "text": "onda venenosa abisador",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:32:11.608606Z"
+  },
+  "spell.haunter_electrify.name": {
+    "src_hash": "fb2552ad23c3c18710da7a27aac169ec",
+    "text": "perseguidor electrificar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:32:11.608828Z"
+  },
+  "spell.massive_energy_elemental_electrify.name": {
+    "src_hash": "01577348ac2989fd49d8486bbaa87616",
+    "text": "elemental de energía masiva electrificar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:32:16.276213Z"
+  },
+  "spell.greater_jar_summon.name": {
+    "src_hash": "a46f9cd4a0193eac343be793e6004073",
+    "text": "invocación de jarra mayor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:32:16.276606Z"
+  },
+  "spell.tyrn_electrify.name": {
+    "src_hash": "dfbb775c781dd837e15bd94ba9041e4f",
+    "text": "tyrn electrificar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:32:16.276835Z"
+  },
+  "spell.mutated_rat_paralyze.name": {
+    "src_hash": "eb31149e8372974ea0aa8aad1a461e83",
+    "text": "rata mutada paraliza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:32:16.277105Z"
+  },
+  "spell.mutated_human_paralyze.name": {
+    "src_hash": "d3c88ba85b2115e4c98e34dccfd5899d",
+    "text": "humano mutado paraliza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:32:16.277353Z"
+  },
+  "spell.quara_constrictor_electrify.name": {
+    "src_hash": "4086fc55ef1046f29d5b01e2199f798c",
+    "text": "quara constrictor electrificar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:32:21.289338Z"
+  },
+  "spell.koshei_the_deathless_curse.name": {
+    "src_hash": "03a1c28d392da32d21f8695c80cfba99",
+    "text": "koshei la maldición inmortal",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:32:21.289951Z"
+  },
+  "spell.the_voice_of_ruin_paralyze.name": {
+    "src_hash": "e29336df79654ba1fe4de78c02fe3317",
+    "text": "la voz de la ruina paraliza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:32:21.290562Z"
+  },
+  "spell.choking_fear_drown.name": {
+    "src_hash": "39160ee8d7bca7b101f3aeca4829f6a2",
+    "text": "asfixia miedo ahogarse",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:32:21.291035Z"
+  },
+  "spell.woodling_paralyze.name": {
+    "src_hash": "97553a2f2fa52064daf5182d66aaddac",
+    "text": "paralizar el bosque",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:32:21.291517Z"
+  },
+  "spell.kraknaknork_poison_wave.name": {
+    "src_hash": "1fd267a3aead63a2997612b7b5401a35",
+    "text": "ola venenosa de kraknaknork",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:32:27.127313Z"
+  },
+  "spell.kraknaknork_ice_wave.name": {
+    "src_hash": "32d29ecc9efa37a24ae26adb5bae9368",
+    "text": "ola de hielo kraknaknork",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:32:27.127594Z"
+  },
+  "spell.girtablilu_poison_wave.name": {
+    "src_hash": "a4e1224c426e4275b7f4952b67d5845c",
+    "text": "onda venenosa de girtablilu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:32:27.127854Z"
+  },
+  "spell.nightstalker_paralyze.name": {
+    "src_hash": "2c84fb8e3597186cf01caef6d50eaf14",
+    "text": "acosador nocturno paralizar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:32:27.128095Z"
+  },
+  "spell.ushuriel_electrify.name": {
+    "src_hash": "c5acaade7cf4f44c445dffd0c8216cb2",
+    "text": "ushuriel electrificar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:32:27.128317Z"
+  },
+  "spell.large_poison_ring.name": {
+    "src_hash": "133974dafcdccb55f7f557779cc2a53e",
+    "text": "gran envenenamiento",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:32:32.368824Z"
+  },
+  "spell.annihilon_skill_reducer.name": {
+    "src_hash": "1e1e826d84adab2cbc69606f0b7b4edf",
+    "text": "reductor de habilidades de aniquilación",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:32:32.380207Z"
+  },
+  "spell.orewalker_wave.name": {
+    "src_hash": "b283edf33f20d365e9f2f7b1edeae7ae",
+    "text": "ola caminante de minerales",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:32:32.380676Z"
+  },
+  "spell.shulgrax_summon.name": {
+    "src_hash": "f5a03d22464772d6102203f0fe68bb2c",
+    "text": "invocar shulgrax",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:32:32.381084Z"
+  },
+  "spell.prince_drazzak_wave.name": {
+    "src_hash": "d57ae73626ec23c37e78b9c69ab23a58",
+    "text": "ola del príncipe drazzak",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:32:34.781264Z"
+  },
+  "scripts.soul_prism.msg_1": {
+    "src_hash": "74a4fd646bb88a58662897bc7d1359d4",
+    "text": "Has recibido un núcleo de alma {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T15:38:12.782471Z"
+  },
+  "scripts.movements_teleport_main.say_1": {
+    "src_hash": "f12fff6248ee72c23ce145c33faa4103",
+    "text": "No tienes suficiente energía para entrar a este portal.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:38:42.939096Z"
+  },
+  "scripts.soul_prism.msg_6": {
+    "src_hash": "d3e43ca0e418e28d3c0bb76185d9f702",
+    "text": "Has recibido un núcleo de alma siniestro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:38:56.733953Z"
+  },
+  "scripts.store_coins.msg_1": {
+    "src_hash": "ca3d1177fa2a7774d6d8a7b27bb2a81b",
+    "text": "Ha agregado {} monedas tibia a su saldo. Su total ahora es {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:38:56.735154Z"
+  },
+  "scripts.test.msg_invalid_log_level": {
+    "src_hash": "30cc2b8934cc30c57c9de1e558eef013",
+    "text": "Nivel de registro no válido. Uso: información, advertencia, error o depuración.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T15:38:59.401551Z"
   }
 }

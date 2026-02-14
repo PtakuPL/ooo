@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-02-14T13:55:48.836532Z",
-  "cycle": 6,
-  "mode": "MIGRATION",
-  "category": "pending_skip",
+  "timestamp": "2026-02-14T15:38:04.626778Z",
+  "cycle": 3,
+  "mode": "AUTO_TRANSLATE",
+  "category": "es",
   "events": {
-    "dispatch": 1511
+    "dispatch": 2018
   }
 }

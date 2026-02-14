@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-14T13:52:42.842467Z",
-  "language": "es",
+  "timestamp": "2026-02-14T15:39:23.052544Z",
+  "language": "pl",
   "json_file": "raids.json",
-  "translated": 23,
+  "translated": 69,
   "entries": [
     {
-      "key": "raid.barba_bittermor.name",
-      "en": "Barba Bittermor",
-      "translated": "Barba Bittermor",
+      "key": "raid.elves.name",
+      "en": "Elves",
+      "translated": "Elves",
       "source": "tm"
     },
     {
-      "key": "raid.ice_golems.name",
-      "en": "Ice Golems",
-      "translated": "Hielo Exitosamente",
-      "source": "simple"
-    },
-    {
-      "key": "raid.badger.name",
-      "en": "Badger",
-      "translated": "Tejón",
-      "source": "simple"
-    },
-    {
-      "key": "raid.the_welter.name",
-      "en": "The Welter",
-      "translated": "Welter",
-      "source": "simple"
-    },
-    {
-      "key": "raid.midnight_panther_3.name",
-      "en": "Midnight Panther 3",
-      "translated": "Midnight Panther 3",
-      "source": "tm"
-    },
-    {
-      "key": "raid.midnight_panther_1.name",
-      "en": "Midnight Panther 1",
-      "translated": "Midnight Panther 1",
-      "source": "tm"
-    },
-    {
-      "key": "raid.terrorbirds.name",
-      "en": "Terrorbirds",
-      "translated": "Terrorbirds",
-      "source": "tm"
-    },
-    {
-      "key": "raid.midnight_panther_2.name",
-      "en": "Midnight Panther 2",
-      "translated": "Midnight Panther 2",
-      "source": "tm"
-    },
-    {
-      "key": "raid.cyclops.name",
-      "en": "Cyclops",
-      "translated": "Cíclope",
-      "source": "simple"
-    },
-    {
-      "key": "raid.wild_horses.name",
-      "en": "Wild Horses",
-      "translated": "Wild Horses",
-      "source": "tm"
-    },
-    {
-      "key": "raid.yeti.name",
-      "en": "Yeti",
-      "translated": "Muerto",
-      "source": "simple"
-    },
-    {
-      "key": "raid.gargoyle.name",
-      "en": "Gargoyle",
-      "translated": "Gárgola",
-      "source": "simple"
-    },
-    {
-      "key": "raid.nomad.name",
-      "en": "Nomad",
-      "translated": "Female de nómada",
-      "source": "simple"
-    },
-    {
-      "key": "raid.cobra.name",
-      "en": "Cobra",
-      "translated": "Muerto",
-      "source": "simple"
-    },
-    {
-      "key": "raid.terramite.name",
-      "en": "Terramite",
-      "translated": "Muerto",
-      "source": "simple"
-    },
-    {
-      "key": "raid.scarab.name",
-      "en": "Scarab",
-      "translated": "Escarabajo",
-      "source": "simple"
-    },
-    {
-      "key": "raid.diblis_the_fair.name",
-      "en": "Diblis The Fair",
-      "translated": "Diblis fair",
+      "key": "raid.the_old_widow.name",
+      "en": "The Old Widow",
+      "translated": "The Old Widow",
       "source": "tm"
     },
     {
       "key": "raid.fernfang.name",
       "en": "Fernfang",
-      "translated": "Muerto",
-      "source": "simple"
-    },
-    {
-      "key": "raid.orc_backpack.name",
-      "en": "Orc Backpack",
-      "translated": "Orc Backpack",
+      "translated": "Fernfang",
       "source": "tm"
     },
     {
-      "key": "raid.hunter.name",
-      "en": "Hunter",
-      "translated": "Cazador",
-      "source": "simple"
+      "key": "raid.feverish_citizen.name",
+      "en": "Feverish Citizen",
+      "translated": "Feverish Citizen",
+      "source": "tm"
+    },
+    {
+      "key": "raid.water_buffalo.name",
+      "en": "Water Buffalo",
+      "translated": "Water Buffalo",
+      "source": "tm"
+    },
+    {
+      "key": "raid.feroxa.name",
+      "en": "Feroxa",
+      "translated": "Feroxa",
+      "source": "tm"
+    },
+    {
+      "key": "raid.orshabaal.name",
+      "en": "Orshabaal",
+      "translated": "Orshabaal",
+      "source": "tm"
+    },
+    {
+      "key": "raid.sir_valorcrest.name",
+      "en": "Sir Valorcrest",
+      "translated": "Sir Valorcrest",
+      "source": "tm"
+    },
+    {
+      "key": "raid.warlock.name",
+      "en": "Warlock",
+      "translated": "Warlock",
+      "source": "tm"
+    },
+    {
+      "key": "raid.mad_mage.name",
+      "en": "Mad Mage",
+      "translated": "Mad Mage",
+      "source": "tm"
+    },
+    {
+      "key": "raid.weakened_shlorg.name",
+      "en": "Weakened Shlorg",
+      "translated": "Weakened Shlorg",
+      "source": "tm"
+    },
+    {
+      "key": "raid.gnarlhounds.name",
+      "en": "Gnarlhounds",
+      "translated": "Gnarlhounds",
+      "source": "tm"
+    },
+    {
+      "key": "raid.draptor.name",
+      "en": "Draptor",
+      "translated": "Draptor",
+      "source": "tm"
+    },
+    {
+      "key": "raid.zevelon_duskbringer.name",
+      "en": "Zevelon Duskbringer",
+      "translated": "Zevelon Duskbringer",
+      "source": "tm"
+    },
+    {
+      "key": "raid.zulazza_the_corruptor.name",
+      "en": "Zulazza The Corruptor",
+      "translated": "Zulazza The Corruptor",
+      "source": "tm"
+    },
+    {
+      "key": "raids.chayenne.chayenne.msg_2",
+      "en": "Get prepare mortals, the visit of Chayenne is near.",
+      "translated": "Przygotujcie się, śmiertelnicy, wizyta Chayenne jest blisko.",
+      "source": "google_translate"
+    },
+    {
+      "key": "raids.chayenne.chayenne.msg_3",
+      "en": "Chayenne has returned to his citadel once more. Be careful there.",
+      "translated": "Chayenne powrócił do swojej cytadeli jeszcze raz. Bądź tam ostrożny.",
+      "source": "google_translate"
+    },
+    {
+      "key": "raids.darashia.arachir_the_ancient_one.msg_1",
+      "en": "Beware of Arachir the Ancient One!",
+      "translated": "Strzeż się Arachira Przedwiecznego!",
+      "source": "google_translate"
+    },
+    {
+      "key": "raids.darashia.lions.msg_1",
+      "en": "There are more lions than usual west of Darashia.",
+      "translated": "Na zachód od Darashia jest więcej lwów niż zwykle.",
+      "source": "google_translate"
+    },
+    {
+      "key": "raids.darashia.lions.msg_2",
+      "en": "Even more lions west of Darashia!",
+      "translated": "Jeszcze więcej lwów na zachód od Darashia!",
+      "source": "google_translate"
     }
   ]
 }

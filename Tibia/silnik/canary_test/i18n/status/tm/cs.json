@@ -3353,27 +3353,27 @@
   },
   "npc.a_dragon_lord.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Drž to dole! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Drž to dole! <poskytne vám podrobnou zprávu o aktivitě monster>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T06:17:27.676377Z"
+    "updated_at": "2026-02-14T14:02:58.742783Z"
   },
   "npc.a_drillworm.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Drž to dole! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Drž to dole! <poskytne vám podrobnou zprávu o aktivitě monster>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T06:17:27.677709Z"
+    "updated_at": "2026-02-14T14:04:38.807887Z"
   },
   "npc.a_drillworm.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Drž to dole! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Drž to dole! <poskytne vám podrobnou zprávu o aktivitě monster>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T06:17:27.678901Z"
+    "updated_at": "2026-02-14T14:06:43.731568Z"
   },
   "npc.a_drillworm.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",

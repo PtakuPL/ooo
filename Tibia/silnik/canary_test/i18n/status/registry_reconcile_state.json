@@ -1,9 +1,9 @@
 {
-  "last_applied_at": "2026-02-14T13:41:43.484205Z",
-  "last_action": "skipped_cooldown",
-  "last_reason": "min_interval_not_elapsed",
-  "last_target_adjustment": 53586,
-  "last_outside_keys_raw": 53586,
-  "last_outside_pct_raw": 100.0,
-  "last_checked_at": "2026-02-14T13:55:57.459906Z"
+  "last_applied_at": "2026-02-14T13:57:12.914825Z",
+  "last_action": "skipped_threshold",
+  "last_reason": "no_sync_needed",
+  "last_target_adjustment": 53579,
+  "last_outside_keys_raw": 53579,
+  "last_outside_pct_raw": 99.987,
+  "last_checked_at": "2026-02-14T15:38:53.545410Z"
 }

@@ -5,23 +5,23 @@
 ## 🧭 META
 
 > **[META]** 🟢 ACTIVE  
-> Świeżość: teraz | Źródło: `update_github_status()` | Ostatnia aktualizacja: 2026-02-14 10:23:37
+> Świeżość: teraz | Źródło: `update_github_status()` | Ostatnia aktualizacja: 2026-02-14 10:25:44
 
-> **Aktualizacja:** 2026-02-14 10:23:37 UTC  
+> **Aktualizacja:** 2026-02-14 10:25:44 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 53586  
-> **LIVE:** Cykl #1 | Status: 🟢 RUNNING | Faza: AUTO_TRANSLATE | Etap: heartbeat_tick | Kategoria: es | Plik: npc.json | ETA: 0 | Heartbeat: 2026-02-14T10:22:25Z  
+> **LIVE:** Cykl #1 | Status: 🟢 RUNNING | Faza: AUTO_TRANSLATE | Etap: heartbeat_tick | Kategoria: es | Plik: npc.json | ETA: 0 | Heartbeat: 2026-02-14T10:23:55Z  
 > **Strict hourly (JSONL-only):** okno=1.0h | cycles=15 | pending_skip=0.0% | guard_fail=55.5% | throughput=10126.7/h  
 > **Net effective translated:** 66,152
 
 ### 🧩 Status sekcji (P0.1)
 | Sekcja | Stan | Świeżość | Powód | Źródło | Ostatnia aktualizacja |
 |--------|------|----------|-------|--------|-----------------------|
-| META | 🟢 ACTIVE | teraz | - | `update_github_status()` | 2026-02-14 10:23:37 |
-| LIVE | 🟢 ACTIVE | 1min temu | - | `activity.json / worker_state.json` | 2026-02-14T10:22:25Z |
-| MIGRATION | 🔒 INACTIVE | 15h temu | worker w trybie AUTO_TRANSLATE | `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | 2026-02-14 10:23:37 |
-| TRANSLATION | 🟢 ACTIVE | 1min temu | - | `translation_guard_latest.json / translation_recent_latest.json` | 2026-02-14T10:21:45.527451Z |
-| QUALITY | 🔒 INACTIVE | 16min temu | worker w trybie AUTO_TRANSLATE | `quality_audit_latest.json` | 2026-02-14T10:07:28.921924Z |
-| HISTORY | 🟢 ACTIVE | teraz | - | `daily/*.json / ops.jsonl` | 2026-02-14 10:23:37 |
+| META | 🟢 ACTIVE | teraz | - | `update_github_status()` | 2026-02-14 10:25:44 |
+| LIVE | 🟢 ACTIVE | 1min temu | - | `activity.json / worker_state.json` | 2026-02-14T10:23:55Z |
+| MIGRATION | 🔒 INACTIVE | 15h temu | worker w trybie AUTO_TRANSLATE | `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | 2026-02-14 10:25:44 |
+| TRANSLATION | 🟢 ACTIVE | 3min temu | - | `translation_guard_latest.json / translation_recent_latest.json` | 2026-02-14T10:21:45.527451Z |
+| QUALITY | 🔒 INACTIVE | 19s temu | worker w trybie AUTO_TRANSLATE | `quality_audit_latest.json` | 2026-02-14T10:25:25.870897Z |
+| HISTORY | 🟢 ACTIVE | teraz | - | `daily/*.json / ops.jsonl` | 2026-02-14 10:25:44 |
 
 > Artefakt machine-readable: `i18n/status/status_sections_latest.json`
 
@@ -30,14 +30,14 @@
 ## 🔴 LIVE
 
 > **[LIVE]** 🟢 ACTIVE  
-> Świeżość: 1min temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T10:22:25Z
+> Świeżość: 1min temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T10:23:55Z
 
 - **Faza:** `AUTO_TRANSLATE`
 - **Etap:** `heartbeat_tick`
 - **Kategoria:** `es`
 - **Plik:** `npc.json`
 - **Status:** 🟢 RUNNING
-- **Heartbeat:** `2026-02-14T10:22:25Z`
+- **Heartbeat:** `2026-02-14T10:23:55Z`
 
 ---
 
@@ -92,7 +92,7 @@
 ## 🛠️ MIGRATION
 
 > **[MIGRATION]** 🔒 INACTIVE (worker w trybie AUTO_TRANSLATE)  
-> Świeżość: 15h temu | Źródło: `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | Ostatnia aktualizacja: 2026-02-14 10:23:37
+> Świeżość: 15h temu | Źródło: `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | Ostatnia aktualizacja: 2026-02-14 10:25:44
 
 ### 📁 Pliki Projektu (pełny skan)
 | Metryka | Wartość | Procent | Info |
@@ -141,7 +141,7 @@
 ## 🌍 TRANSLATION
 
 > **[TRANSLATION]** 🟢 ACTIVE  
-> Świeżość: 1min temu | Źródło: `translation_guard_latest.json / translation_recent_latest.json` | Ostatnia aktualizacja: 2026-02-14T10:21:45.527451Z
+> Świeżość: 3min temu | Źródło: `translation_guard_latest.json / translation_recent_latest.json` | Ostatnia aktualizacja: 2026-02-14T10:21:45.527451Z
 
 | Metryka | Wartość | Procent | Info |
 |---------|---------|---------|------|
@@ -153,7 +153,7 @@
 ### 🎯 Pokrycie tłumaczeń per język (EN → LANG)
 | Język | Przetłumaczone | % poprawnie przetłumaczonych | EN-copy | Braki kluczy |
 |-------|----------------|-------------------------------|---------|--------------|
-| ES (Hiszpański) | 46,584/53,586 | 86.93% | 10,377 | 232 |
+| ES (Hiszpański) | 46,666/53,586 | 87.09% | 10,351 | 232 |
 | PL (Polski) | 40,354/53,586 | 75.31% | 2,839 | 2,083 |
 | RU (Rosyjski) | 29,673/53,586 | 55.37% | 31,695 | 174 |
 | FR (Francuski) | 29,181/53,586 | 54.46% | 23,962 | 174 |
@@ -177,14 +177,29 @@
 ### 🧭 Aktywny folder tłumaczeń
 - **Folder:** HI - HI - Serwer
 - **Plik JSON:** monsters.json
-- **Ostatnie klucze (10-20):** 5
+- **Ostatnie klucze (10-20):** 20
 
 ### 📝 Ostatnie 10-20 przetłumaczonych kluczy
-- <crudely written in blood> → <crudely written in blood> (book.otbm.crudely_written_in_blood)
-- <strange text in unknown language> → <strange text in unknown language> (book.otbm.strange_text_in_unknown_language)
-- <strange text in unknown language> → <strange text in unknown language> (book.otbm.strange_text_in_unknown_language_1471aa22)
-- <the rest is blurred and unreadable> → <the rest is blurred and unreadable> (book.otbm.the_rest_is_blurred_and)
-- <the text seems to be a mostly ruined diary of some sort, found on the body of a → <the text seems to be a mostly ruined diary of some sort, found on the body of a (book.otbm.the_text_seems_to_be)
+- You will probably have to deceive him somehow, so that he thinks you are one of  → Probablemente tendrás que engañarlo de alguna manera para que piense que eres un (npc.raymond_striker.multi_20)
+- In the tavern, the pirates feel safe and plan their next strikes. Study ALL of t → En la taberna, los piratas se sienten seguros y planean sus próximos ataques. Es (npc.raymond_striker.multi_21)
+- Afterwards, return here and report to me about your mission. → Luego, regresa aquí e infórmame sobre tu misión. (npc.raymond_striker.multi_22)
+- The mission on which I will send you is vital to our cause. It is a sabotage mis → La misión a la que os enviaré es vital para nuestra causa. Es una misión de sabo (npc.raymond_striker.multi_23)
+- I need you to sabotage the most dangerous of those catapults which can be found  → Necesito que sabotees la más peligrosa de esas catapultas que se pueden encontra (npc.raymond_striker.multi_24)
+- Get a fire bug - you can buy them in Liberty Bay - and set this catapult on fire → Consigue un insecto de fuego (puedes comprarlo en Liberty Bay) y prende fuego a  (npc.raymond_striker.multi_25)
+- Make sure to use the bug on the left part of the catapult where its lever is. Th → Asegúrate de usar el error en la parte izquierda de la catapulta donde está su p (npc.raymond_striker.multi_26)
+- If you see a short explosion, you will know that it worked. I will tell Sebastia → Si ve una breve explosión, sabrá que funcionó. Le diré a Sebastian que te lleve  (npc.raymond_striker.multi_27)
+- Of course, he can't drop you off directly in the pirate's base. However, we have → Por supuesto, no puede dejarte directamente en la base pirata. Sin embargo, hemo (npc.raymond_striker.multi_28)
+- Try to make your way through the caves of Nargor to reach their harbour. This is → Intenta atravesar las cuevas de Nargor para llegar a su puerto. Aquí es donde en (npc.raymond_striker.multi_29)
+- This was probably the last time you will be able to enter that hideout. Well don → Esta fue probablemente la última vez que podrás ingresar a ese escondite. Bien h (npc.raymond_striker.multi_3)
+- Indeed, I could use some help. The evil pirates of Nargor have convinced an alch → De hecho, me vendría bien un poco de ayuda. Los malvados piratas de Nargor han c (npc.raymond_striker.multi_30)
+- It can burn even on water and is a threat to us all. I need you to travel to Edr → Puede arder incluso en el agua y es una amenaza para todos nosotros. Necesito qu (npc.raymond_striker.multi_31)
+- When she asks for a payment, tell her 'Your continued existence is payment enoug → Cuando solicite un pago, dígale 'Your continued existence is payment enough'. Es (npc.raymond_striker.multi_32)
+- You are most welcome to keep on killing pirates for us though for some bucks and → Eres bienvenido a seguir matando piratas para nosotros por algo de dinero y expe (npc.raymond_striker.multi_4)
+- Hey, great. You've done well! As a small reward I give you some coins from our t → Oye, genial. ¡Lo has hecho bien! Como pequeña recompensa te doy algunas monedas  (npc.raymond_striker.multi_5)
+- One of our spies told us about a secret hideout somewhere on Nargor. Supposedly, → Uno de nuestros espías nos habló de un escondite secreto en algún lugar de Nargo (npc.raymond_striker.multi_6)
+- Beware though - prepare yourself well and only flee if you must. This might be y → Pero ten cuidado: prepárate bien y huye sólo si es necesario. Esta podría ser tu (npc.raymond_striker.multi_7)
+- The pirates on Nargor are becoming more and more of a threat to us each day. I w → Los piratas de Nargor son cada día más una amenaza para nosotros. Desearía que a (npc.raymond_striker.multi_8)
+- Only a dead pirate is a good pirate. I think killing a large number of them woul → Sólo un pirata muerto es un buen pirata. Creo que matar a un gran número de ello (npc.raymond_striker.multi_9)
 
 ### 🚫 Raporty "nie mogę przetłumaczyć"
 - Guard reports: **2042**  
@@ -192,12 +207,12 @@
 - Widoczne raporty 'nie mogę tłumaczyć': **1992**
 
 ### 🌐 Globalne info wszystkich języków
-- **Global completion:** **23.08%** (643,222/2,786,472)
-- **EN-copy łącznie:** **1,296,000**
+- **Global completion:** **23.09%** (643,304/2,786,472)
+- **EN-copy łącznie:** **1,295,974**
 - **Braki kluczy łącznie:** **101,318**
 - **Brakujące pliki językowe:** **3**
-- **Cache STATUSPY (per-lang):** **warm-cache** | hit **52**, miss **0**, hit-rate **100.0%**
-- **Cache STATUSPY (per-file):** hit **1976**, miss **0**, hit-rate **100.0%**
+- **Cache STATUSPY (per-lang):** **mixed** | hit **51**, miss **1**, hit-rate **98.1%**
+- **Cache STATUSPY (per-file):** hit **1975**, miss **1**, hit-rate **99.9%**
 - **Profiler cyklu (ostatni):** -
 - **Osobny raport:** `i18n/status/translation_global_overview.json`
 
@@ -209,7 +224,7 @@
 
 | Język | Serwer | Serwer % | Instalka | Instalka % |
 |-------|--------|----------|----------|------------|
-| ES | 43,969/49,731 | 88.4% | 2,615/3,855 | 67.8% |
+| ES | 44,051/49,731 | 88.6% | 2,615/3,855 | 67.8% |
 | PL | 37,604/49,731 | 75.6% | 2,750/3,855 | 71.3% |
 | RU | 26,217/49,731 | 52.7% | 3,456/3,855 | 89.7% |
 | FR | 25,956/49,731 | 52.2% | 3,225/3,855 | 83.7% |
@@ -225,13 +240,13 @@
 ### ⏱️ Strict Hourly Window (JSONL-only)
 | Metryka | Wartość |
 |---------|---------|
-| Okno | **1.0h** (2026-02-14T09:23:37.627336Z → 2026-02-14T10:23:37.627336Z) |
+| Okno | **1.0h** (2026-02-14T09:25:44.641939Z → 2026-02-14T10:25:44.641939Z) |
 | Cykle | **15** (AUTO=15, MIGRATION=0) |
 | Pending skip | **0** (all=0.0%, migration=0.0%) |
 | Guard fail rate | **55.5%** |
 | No progress rate | **0.0%** |
 | Throughput | **10126.7 kluczy/h** |
-| Suspicious | **250** |
+| Suspicious | **259** |
 | Top guard_fail targets | es/npc.json (gf=66), pl/npc.json (gf=50), pl/otclient_modules.json (gf=36), pl/cpp.json (gf=17), pl/client.json (gf=10) |
 | Źródła | `i18n/status/worker_cycle_perf.jsonl`, `i18n/status/translation_guard_report.jsonl`, `i18n/status/suspicious_log.jsonl` |
 | Plik | `i18n/status/strict_hourly_window_latest.json` |
@@ -239,11 +254,11 @@
 ## 🔬 QUALITY
 
 > **[QUALITY]** 🔒 INACTIVE (worker w trybie AUTO_TRANSLATE)  
-> Świeżość: 16min temu | Źródło: `quality_audit_latest.json` | Ostatnia aktualizacja: 2026-02-14T10:07:28.921924Z
+> Świeżość: 19s temu | Źródło: `quality_audit_latest.json` | Ostatnia aktualizacja: 2026-02-14T10:25:25.870897Z
 
-- **Ostatni audyt:** SLOW_MODE | 27 issue(s) / 100 entries | 2026-02-14T10:07:28.921924Z
-- **Top 5 typów problemów:** suspicious_rejected_critical=200, suspicious_log_low=113, suspicious_log_critical=87, identical_to_en_exempt=52, identical_to_en=27
-- **Języki o najsłabszej jakości:** es(60.1, issues=141270), pl(60.2, issues=110369), tl(64.2, issues=466), zh_TW(64.8, issues=337), fr(65.2, issues=2470)
+- **Ostatni audyt:** SLOW_MODE | 25 issue(s) / 100 entries | 2026-02-14T10:25:25.870897Z
+- **Top 5 typów problemów:** suspicious_rejected_critical=200, suspicious_log_low=133, suspicious_log_critical=66, identical_to_en_exempt=36, identical_to_en=24
+- **Języki o najsłabszej jakości:** es(60.1, issues=141518), pl(60.1, issues=110546), tl(64.2, issues=466), zh_TW(64.8, issues=337), fr(65.2, issues=2470)
 - **Pliki:** `i18n/status/quality_audit_latest.json`, `i18n/status/quality_dashboard.json`, `i18n/status/quality_report.jsonl`
 
 ### 📈 Statystyki Pracy
@@ -352,7 +367,7 @@
 ## 🔴 LIVE: Szczegóły wykonania
 
 > **[LIVE]** 🟢 ACTIVE  
-> Świeżość: 1min temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T10:22:25Z
+> Świeżość: 1min temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T10:23:55Z
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
@@ -367,18 +382,18 @@
 │ Postęp: 0/0 keys                                              │
 │ Info: auto translate in progress                              │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2026-02-14T10:22:25Z           │
+│ ❤️ Heartbeat: 2026-02-14T10:23:55Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 🧾 Ostatnie akcje (dla czytelności)
 
+- 2026-02-14 10:23:55 | AUTO_TRANSLATE:heartbeat_tick | es | ok | npc.json
 - 2026-02-14 10:22:25 | AUTO_TRANSLATE:heartbeat_tick | es | ok | npc.json
 - 2026-02-14 10:20:15 | AUTO_TRANSLATE:heartbeat_tick | es | ok | books.json
 - 2026-02-14 10:20:15 | AUTO_TRANSLATE:parallel_start | es | ok | books.json
 - 2026-02-14 10:20:14 | AUTO_TRANSLATE:auto_done | pl | ok | php.json
 - 2026-02-14 10:18:44 | AUTO_TRANSLATE:heartbeat_tick | pl | ok | php.json
-- 2026-02-14 10:18:44 | AUTO_TRANSLATE:auto_start | pl | ok | php.json
 
 ---
 
@@ -387,7 +402,7 @@
 | Język | Coverage | Brakujące | EN-copy | Translated(200) | Guard fail | Entries |
 |-------|----------|-----------|---------|-----------------|------------|---------|
 | 🟡 PL | 75.3% | 2,083 | 2,839 | 777 | 467 (37.5%) | 33 |
-| 🟡 ES | 86.9% | 232 | 10,377 | 925 | 355 (27.7%) | 30 |
+| 🟡 ES | 87.1% | 232 | 10,351 | 925 | 355 (27.7%) | 30 |
 
 | KPI | Wartość | Target | Status |
 |-----|---------|--------|--------|
@@ -400,8 +415,9 @@
 ## 📜 HISTORY
 
 > **[HISTORY]** 🟢 ACTIVE  
-> Świeżość: teraz | Źródło: `daily/*.json / ops.jsonl` | Ostatnia aktualizacja: 2026-02-14 10:23:37
+> Świeżość: teraz | Źródło: `daily/*.json / ops.jsonl` | Ostatnia aktualizacja: 2026-02-14 10:25:44
 
+- 🤖 AUTO_TRANSLATE: REPAIR_IDENTICAL_DONE [es] → ok (translated+96) — repair_identical lang=es file=npc.json target_identical=1244 limit=260 tier=base+domain_cap domain_cap=260 gt=true suspicious_pct=3.62
 - 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [es] → ok (translated+5, skipped+0) — parallel lang=es file=books.json
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+2, skipped+0) — lang=pl file=php.json strict_skipped_done=57
 - 🤖 AUTO_TRANSLATE: REPAIR_IDENTICAL_DONE [es] → ok (translated+97) — repair_identical lang=es file=npc.json target_identical=1266 limit=260 tier=base+domain_cap domain_cap=260 gt=true suspicious_pct=3.55
@@ -411,7 +427,6 @@
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+5, skipped+0) — lang=pl file=otclient_modules.json strict_skipped_done=1982 guard_fail=36 placeholder=0 command=0 pipe=0
 - 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [es] → ok (translated+14, skipped+0) — parallel lang=es file=npc.json
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+39, skipped+0) — lang=pl file=npc.json strict_skipped_done=13605 guard_fail=50 placeholder=3 command=0 pipe=0
-- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [pl] → ok (translated+80, skipped+0) — parallel lang=pl file=items.json
 
 
 
@@ -738,7 +753,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2026-02-14 10:23:37  
+📅 Auto-updated by Worker v1.1 | Last: 2026-02-14 10:25:44  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

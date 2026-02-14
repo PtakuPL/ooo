@@ -5,23 +5,23 @@
 ## 🧭 META
 
 > **[META]** 🟢 ACTIVE  
-> Świeżość: teraz | Źródło: `update_github_status()` | Ostatnia aktualizacja: 2026-02-14 08:55:37
+> Świeżość: teraz | Źródło: `update_github_status()` | Ostatnia aktualizacja: 2026-02-14 08:57:50
 
-> **Aktualizacja:** 2026-02-14 08:55:37 UTC  
+> **Aktualizacja:** 2026-02-14 08:57:50 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 53586  
-> **LIVE:** Cykl #1 | Status: 🟠 STALE (heartbeat 444s temu) | Faza: AUTO_TRANSLATE | Etap: parallel_start | Kategoria: es | Plik: otclient_modules.json | ETA: 0 | Heartbeat: 2026-02-14T08:48:14Z  
-> **Strict hourly (JSONL-only):** okno=1.0h | cycles=28 | pending_skip=0.0% | guard_fail=15.1% | throughput=2806.2/h  
-> **Net effective translated:** 65,992
+> **LIVE:** Cykl #1 | Status: 🟢 RUNNING | Faza: AUTO_TRANSLATE | Etap: parallel_start | Kategoria: pl | Plik: php.json | ETA: 0 | Heartbeat: 2026-02-14T08:56:19Z  
+> **Strict hourly (JSONL-only):** okno=1.0h | cycles=24 | pending_skip=0.0% | guard_fail=16.9% | throughput=2855.5/h  
+> **Net effective translated:** 65,994
 
 ### 🧩 Status sekcji (P0.1)
 | Sekcja | Stan | Świeżość | Powód | Źródło | Ostatnia aktualizacja |
 |--------|------|----------|-------|--------|-----------------------|
-| META | 🟢 ACTIVE | teraz | - | `update_github_status()` | 2026-02-14 08:55:37 |
-| LIVE | 🟢 ACTIVE | 7min temu | - | `activity.json / worker_state.json` | 2026-02-14T08:48:14Z |
-| MIGRATION | 🔒 INACTIVE | 13h temu | worker w trybie AUTO_TRANSLATE | `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | 2026-02-14 08:55:37 |
-| TRANSLATION | 🟢 ACTIVE | 6min temu | - | `translation_guard_latest.json / translation_recent_latest.json` | 2026-02-14T08:49:03.299654Z |
-| QUALITY | 🔒 INACTIVE | 6min temu | worker w trybie AUTO_TRANSLATE | `quality_audit_latest.json` | 2026-02-14T08:49:03.897049Z |
-| HISTORY | 🟢 ACTIVE | teraz | - | `daily/*.json / ops.jsonl` | 2026-02-14 08:55:37 |
+| META | 🟢 ACTIVE | teraz | - | `update_github_status()` | 2026-02-14 08:57:50 |
+| LIVE | 🟢 ACTIVE | 1min temu | - | `activity.json / worker_state.json` | 2026-02-14T08:56:19Z |
+| MIGRATION | 🔒 INACTIVE | 14h temu | worker w trybie AUTO_TRANSLATE | `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | 2026-02-14 08:57:50 |
+| TRANSLATION | 🟢 ACTIVE | 1min temu | - | `translation_guard_latest.json / translation_recent_latest.json` | 2026-02-14T08:56:23.178845Z |
+| QUALITY | 🔒 INACTIVE | 1min temu | worker w trybie AUTO_TRANSLATE | `quality_audit_latest.json` | 2026-02-14T08:56:23.613261Z |
+| HISTORY | 🟢 ACTIVE | teraz | - | `daily/*.json / ops.jsonl` | 2026-02-14 08:57:50 |
 
 > Artefakt machine-readable: `i18n/status/status_sections_latest.json`
 
@@ -30,14 +30,14 @@
 ## 🔴 LIVE
 
 > **[LIVE]** 🟢 ACTIVE  
-> Świeżość: 7min temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T08:48:14Z
+> Świeżość: 1min temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T08:56:19Z
 
 - **Faza:** `AUTO_TRANSLATE`
 - **Etap:** `parallel_start`
-- **Kategoria:** `es`
-- **Plik:** `otclient_modules.json`
-- **Status:** 🟠 STALE (heartbeat 444s temu)
-- **Heartbeat:** `2026-02-14T08:48:14Z`
+- **Kategoria:** `pl`
+- **Plik:** `php.json`
+- **Status:** 🟢 RUNNING
+- **Heartbeat:** `2026-02-14T08:56:19Z`
 
 ---
 
@@ -92,7 +92,7 @@
 ## 🛠️ MIGRATION
 
 > **[MIGRATION]** 🔒 INACTIVE (worker w trybie AUTO_TRANSLATE)  
-> Świeżość: 13h temu | Źródło: `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | Ostatnia aktualizacja: 2026-02-14 08:55:37
+> Świeżość: 14h temu | Źródło: `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | Ostatnia aktualizacja: 2026-02-14 08:57:50
 
 ### 📁 Pliki Projektu (pełny skan)
 | Metryka | Wartość | Procent | Info |
@@ -141,7 +141,7 @@
 ## 🌍 TRANSLATION
 
 > **[TRANSLATION]** 🟢 ACTIVE  
-> Świeżość: 6min temu | Źródło: `translation_guard_latest.json / translation_recent_latest.json` | Ostatnia aktualizacja: 2026-02-14T08:49:03.299654Z
+> Świeżość: 1min temu | Źródło: `translation_guard_latest.json / translation_recent_latest.json` | Ostatnia aktualizacja: 2026-02-14T08:56:23.178845Z
 
 | Metryka | Wartość | Procent | Info |
 |---------|---------|---------|------|
@@ -153,71 +153,48 @@
 ### 🎯 Pokrycie tłumaczeń per język (EN → LANG)
 | Język | Przetłumaczone | % poprawnie przetłumaczonych | EN-copy | Braki kluczy |
 |-------|----------------|-------------------------------|---------|--------------|
-| ES (Hiszpański) | 46,500/53,586 | 86.78% | 10,627 | 232 |
+| ES (Hiszpański) | 46,500/53,586 | 86.78% | 10,574 | 232 |
 | PL (Polski) | 40,263/53,586 | 75.14% | 2,838 | 2,083 |
 | RU (Rosyjski) | 29,407/53,586 | 54.88% | 32,175 | 174 |
 | FR (Francuski) | 28,983/53,586 | 54.09% | 24,337 | 174 |
 | RO (Rumuński) | 13,609/53,586 | 25.40% | 18,319 | 174 |
-| AR (Arabski) | 12,355/53,586 | 23.06% | 30,590 | 2,150 |
+| AR (Arabski) | 12,399/53,586 | 23.14% | 30,511 | 2,150 |
 | BN (BN) | 12,205/53,586 | 22.78% | 28,614 | 2,155 |
-| HI (HI) | 11,985/53,586 | 22.37% | 29,013 | 2,155 |
+| HI (HI) | 12,030/53,586 | 22.45% | 28,933 | 2,155 |
+| HY (HY) | 11,977/53,586 | 22.35% | 29,047 | 2,155 |
 | ID (ID) | 11,950/53,586 | 22.30% | 29,093 | 2,155 |
-| HY (HY) | 11,940/53,586 | 22.28% | 29,114 | 2,155 |
-| HE (HE) | 11,902/53,586 | 22.21% | 29,065 | 2,155 |
+| HE (HE) | 11,946/53,586 | 22.29% | 28,986 | 2,155 |
 | KO (Koreański) | 11,877/53,586 | 22.16% | 29,166 | 2,155 |
+| JA (Japoński) | 11,825/53,586 | 22.07% | 29,140 | 2,155 |
 | KA (KA) | 11,817/53,586 | 22.05% | 29,165 | 2,155 |
-| JA (Japoński) | 11,778/53,586 | 21.98% | 29,220 | 2,155 |
+| ML (ML) | 11,813/53,586 | 22.04% | 29,157 | 2,155 |
 | SW (SW) | 11,771/53,586 | 21.97% | 29,235 | 2,155 |
 | TE (TE) | 11,772/53,586 | 21.97% | 29,233 | 2,155 |
 | TH (TH) | 11,772/53,586 | 21.97% | 29,233 | 2,155 |
-| ML (ML) | 11,769/53,586 | 21.96% | 29,237 | 2,155 |
 | TL (TL) | 11,727/53,586 | 21.88% | 29,298 | 2,155 |
 | MS (MS) | 11,692/53,586 | 21.82% | 29,285 | 2,155 |
 
 ### 🧭 Aktywny folder tłumaczeń
 - **Folder:** HI - HI - Serwer
 - **Plik JSON:** monsters.json
-- **Ostatnie klucze (10-20):** 20
+- **Ostatnie klucze (10-20):** 2
 
 ### 📝 Ostatnie 10-20 przetłumaczonych kluczy
-- Select monster to proceed. → Selecciona el monstruo para continuar. (otclient_modules.prey.tr_6)
-- Select monster → Seleccionar monstruo (otclient_modules.prey.tr_8)
-- Inactive Prey. 
-
-Click in this window to open the prey dialog. → Presa inactiva.
-
-Haga clic en esta ventana para abrir el cuadro de diálogo de pr (otclient_modules.prey.tr_9)
-- Prey Creatures → Criaturas de presa (otclient_modules.prey_otui.tr_1)
-- Automatic Bonus Rer... → Retiro de bonificación automático... (otclient_modules.prey_otui.tr_10)
-- Preys → Presas (otclient_modules.prey_otui.tr_2)
-- Go to the Store to get more Prey Wildcards! → ¡Ve a la Tienda para conseguir más comodines de Prey! (otclient_modules.prey_otui.tr_4)
-- Preys → Presas (otclient_modules.prey_otui.tr_6)
-- Gold Coins → Monedas de oro (otclient_modules.prey_otui.tr_7)
-- Prey Wildcards → Comodines de presa (otclient_modules.prey_otui.tr_8)
-- Lock Prey → Bloquear presa (otclient_modules.prey_otui.tr_9)
-- Invalid authentification token. → Token de autenticación no válido. (otclient_modules.protocollogin.tr_1)
-- Client needs update. → El cliente necesita actualización. (otclient_modules.protocollogin.tr_2)
-- You must enter a valid server address and port. → Debe ingresar una dirección de servidor y un puerto válidos. (otclient_modules.protocollogin.tr_3)
-- You can only select containers you carry in your inventory. → Solo puedes seleccionar contenedores que lleves en tu inventario. (otclient_modules.quickloot.tr_2)
-- Invalid Loot Container → Contenedor de botín no válido (otclient_modules.quickloot.tr_3)
-- You can only select containers you carry in your inventory. → Solo puedes seleccionar contenedores que lleves en tu inventario. (otclient_modules.quickloot.tr_5)
-- Invalid Loot Container → Contenedor de botín no válido (otclient_modules.quickloot.tr_6)
-- Tick this check box to loot into your main container if you cannot 
-loot into th → Marca esta casilla de verificación para saquear tu contenedor principal si no pu (otclient_modules.quickloot_otui.tr_11)
-- Use main container as fallback → Utilice el contenedor principal como respaldo (otclient_modules.quickloot_otui.tr_12)
+- upload_max_filesize → upload_max_filesize (php.plugins.text2)
+- qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM0123456789- → qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM0123456789- (php.validator.text5)
 
 ### 🚫 Raporty "nie mogę przetłumaczyć"
-- Guard reports: **2026**  
+- Guard reports: **2028**  
 - Blocker reports: **0**  
-- Widoczne raporty 'nie mogę tłumaczyć': **1976**
+- Widoczne raporty 'nie mogę tłumaczyć': **1978**
 
 ### 🌐 Globalne info wszystkich języków
-- **Global completion:** **22.75%** (633,944/2,786,472)
-- **EN-copy łącznie:** **1,315,991**
+- **Global completion:** **22.77%** (634,459/2,786,472)
+- **EN-copy łącznie:** **1,314,991**
 - **Braki kluczy łącznie:** **99,222**
 - **Brakujące pliki językowe:** **1**
-- **Cache STATUSPY (per-lang):** **mixed** | hit **43**, miss **9**, hit-rate **82.7%**
-- **Cache STATUSPY (per-file):** hit **1967**, miss **9**, hit-rate **99.5%**
+- **Cache STATUSPY (per-lang):** **mixed** | hit **37**, miss **15**, hit-rate **71.2%**
+- **Cache STATUSPY (per-file):** hit **1959**, miss **17**, hit-rate **99.1%**
 - **Profiler cyklu (ostatni):** -
 - **Osobny raport:** `i18n/status/translation_global_overview.json`
 
@@ -234,24 +211,24 @@ loot into th → Marca esta casilla de verificación para saquear tu contenedor 
 | RU | 25,951/49,731 | 52.2% | 3,456/3,855 | 89.7% |
 | FR | 25,758/49,731 | 51.8% | 3,225/3,855 | 83.7% |
 | RO | 13,607/49,731 | 27.4% | 2/3,855 | 0.1% |
-| AR | 12,342/49,731 | 24.8% | 13/3,855 | 0.3% |
+| AR | 12,386/49,731 | 24.9% | 13/3,855 | 0.3% |
 | BN | 12,192/49,731 | 24.5% | 13/3,855 | 0.3% |
-| HI | 11,972/49,731 | 24.1% | 13/3,855 | 0.3% |
+| HI | 12,017/49,731 | 24.2% | 13/3,855 | 0.3% |
+| HY | 11,964/49,731 | 24.1% | 13/3,855 | 0.3% |
 | ID | 11,937/49,731 | 24.0% | 13/3,855 | 0.3% |
-| HY | 11,927/49,731 | 24.0% | 13/3,855 | 0.3% |
-| HE | 11,889/49,731 | 23.9% | 13/3,855 | 0.3% |
+| HE | 11,933/49,731 | 24.0% | 13/3,855 | 0.3% |
 | KO | 11,864/49,731 | 23.9% | 13/3,855 | 0.3% |
 
 ### ⏱️ Strict Hourly Window (JSONL-only)
 | Metryka | Wartość |
 |---------|---------|
-| Okno | **1.0h** (2026-02-14T07:55:37.910100Z → 2026-02-14T08:55:37.910100Z) |
-| Cykle | **28** (AUTO=28, MIGRATION=0) |
+| Okno | **1.0h** (2026-02-14T07:57:51.184578Z → 2026-02-14T08:57:51.184578Z) |
+| Cykle | **24** (AUTO=24, MIGRATION=0) |
 | Pending skip | **0** (all=0.0%, migration=0.0%) |
-| Guard fail rate | **15.1%** |
-| No progress rate | **0.0%** |
-| Throughput | **2806.2 kluczy/h** |
-| Suspicious | **935** |
+| Guard fail rate | **16.9%** |
+| No progress rate | **3.6%** |
+| Throughput | **2855.5 kluczy/h** |
+| Suspicious | **787** |
 | Top guard_fail targets | es/npc.json (gf=51), pl/npc.json (gf=41), pl/otclient_modules.json (gf=36), es/otclient_modules.json (gf=23), pl/cpp.json (gf=17) |
 | Źródła | `i18n/status/worker_cycle_perf.jsonl`, `i18n/status/translation_guard_report.jsonl`, `i18n/status/suspicious_log.jsonl` |
 | Plik | `i18n/status/strict_hourly_window_latest.json` |
@@ -259,11 +236,11 @@ loot into th → Marca esta casilla de verificación para saquear tu contenedor 
 ## 🔬 QUALITY
 
 > **[QUALITY]** 🔒 INACTIVE (worker w trybie AUTO_TRANSLATE)  
-> Świeżość: 6min temu | Źródło: `quality_audit_latest.json` | Ostatnia aktualizacja: 2026-02-14T08:49:03.897049Z
+> Świeżość: 1min temu | Źródło: `quality_audit_latest.json` | Ostatnia aktualizacja: 2026-02-14T08:56:23.613261Z
 
-- **Ostatni audyt:** SLOW_MODE | 27 issue(s) / 100 entries | 2026-02-14T08:49:03.897049Z
-- **Top 5 typów problemów:** suspicious_rejected_critical=200, suspicious_log_low=111, suspicious_log_critical=89, identical_to_en_exempt=42, identical_to_en=27
-- **Języki o najsłabszej jakości:** es(60.1, issues=139872), pl(60.1, issues=109252), tl(64.2, issues=466), zh_TW(64.8, issues=337), fr(65.2, issues=2470)
+- **Ostatni audyt:** SLOW_MODE | 27 issue(s) / 100 entries | 2026-02-14T08:56:23.613261Z
+- **Top 5 typów problemów:** suspicious_rejected_critical=200, suspicious_log_low=109, suspicious_log_critical=91, identical_to_en_exempt=42, identical_to_en=27
+- **Języki o najsłabszej jakości:** es(60.1, issues=140132), pl(60.1, issues=109419), tl(64.2, issues=466), zh_TW(64.8, issues=337), fr(65.2, issues=2470)
 - **Pliki:** `i18n/status/quality_audit_latest.json`, `i18n/status/quality_dashboard.json`, `i18n/status/quality_report.jsonl`
 
 ### 📈 Statystyki Pracy
@@ -304,7 +281,7 @@ loot into th → Marca esta casilla de verificación para saquear tu contenedor 
 ## ✅ CHECKLIST - Plan Pracy
 
 > **Aktualna faza:** AUTO_TRANSLATE  
-> **Aktualna kategoria:** es
+> **Aktualna kategoria:** pl
 
 
 ### 🔄 Faza 1: 🎮 Canary Server
@@ -372,33 +349,33 @@ loot into th → Marca esta casilla de verificación para saquear tu contenedor 
 ## 🔴 LIVE: Szczegóły wykonania
 
 > **[LIVE]** 🟢 ACTIVE  
-> Świeżość: 7min temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T08:48:14Z
+> Świeżość: 1min temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T08:56:19Z
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │ 🔴 LIVE: Worker v2.0                          Cykl #     1 │
 ├─────────────────────────────────────────────────────────────────┤
-│ Status:    🟠 STALE (heartbeat 444s temu)            │
+│ Status:    🟢 RUNNING                                │
 │ Tryb:      🤖 AUTO_TRANSLATE (parallel_start)        │
-│ Kategoria: 📁 ES                                     │
+│ Kategoria: 📁 PL                                     │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status: running                                               │
-│ Plik: otclient_modules.json                                   │
+│ Plik: php.json                                                │
 │ Postęp: 0/0 keys                                              │
 │ Info: parallel auto translate                                 │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2026-02-14T08:48:14Z           │
+│ ❤️ Heartbeat: 2026-02-14T08:56:19Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 🧾 Ostatnie akcje (dla czytelności)
 
+- 2026-02-14 08:56:19 | AUTO_TRANSLATE:parallel_start | pl | ok | php.json
+- 2026-02-14 08:56:19 | AUTO_TRANSLATE:auto_done | es | ok | client.json
+- 2026-02-14 08:56:13 | AUTO_TRANSLATE:auto_start | es | ok | client.json
 - 2026-02-14 08:48:14 | AUTO_TRANSLATE:parallel_start | es | ok | otclient_modules.json
 - 2026-02-14 08:48:13 | AUTO_TRANSLATE:auto_done | pl | ok | client.json
 - 2026-02-14 08:48:05 | AUTO_TRANSLATE:auto_start | pl | ok | client.json
-- 2026-02-14 08:40:26 | AUTO_TRANSLATE:parallel_start | es | ok | html.json
-- 2026-02-14 08:40:25 | AUTO_TRANSLATE:auto_done | pl | ok | cpp.json
-- 2026-02-14 08:40:10 | AUTO_TRANSLATE:auto_start | pl | ok | cpp.json
 
 ---
 
@@ -406,22 +383,24 @@ loot into th → Marca esta casilla de verificación para saquear tu contenedor 
 
 | Język | Coverage | Brakujące | EN-copy | Translated(200) | Guard fail | Entries |
 |-------|----------|-----------|---------|-----------------|------------|---------|
-| 🟡 PL | 75.1% | 2,083 | 2,838 | 628 | 346 (35.5%) | 24 |
-| 🟡 ES | 86.8% | 232 | 10,627 | 825 | 266 (24.4%) | 23 |
+| 🟡 PL | 75.1% | 2,083 | 2,838 | 630 | 346 (35.5%) | 25 |
+| 🟡 ES | 86.8% | 232 | 10,574 | 825 | 272 (24.8%) | 24 |
 
 | KPI | Wartość | Target | Status |
 |-----|---------|--------|--------|
-| Net effective translated | **65,992** | — | 📊 |
-| Adaptive batch | batch=15, gf_rate=21.83%, reason=decrease_high_fail_rate=21.8% | gf <5% → increase | 📊 |
-| Throughput (last window) | 1,453 keys / 47 entries | >50/h | 📊 |
+| Net effective translated | **65,994** | — | 📊 |
+| Adaptive batch | batch=11, gf_rate=28.51%, reason=decrease_high_fail_rate=28.5% | gf <5% → increase | 📊 |
+| Throughput (last window) | 1,455 keys / 49 entries | >50/h | 📊 |
 
 ---
 
 ## 📜 HISTORY
 
 > **[HISTORY]** 🟢 ACTIVE  
-> Świeżość: teraz | Źródło: `daily/*.json / ops.jsonl` | Ostatnia aktualizacja: 2026-02-14 08:55:37
+> Świeżość: teraz | Źródło: `daily/*.json / ops.jsonl` | Ostatnia aktualizacja: 2026-02-14 08:57:50
 
+- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [pl] → ok (translated+2, skipped+0) — parallel lang=pl file=php.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [es] → warn (files+0, translated+0, skipped+0) — lang=es file=client.json strict_skipped_done=242 guard_fail=6 placeholder=0 command=0 pipe=0
 - 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [es] → ok (translated+50, skipped+0) — parallel lang=es file=otclient_modules.json
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+2, skipped+0) — lang=pl file=client.json strict_skipped_done=240 guard_fail=10 placeholder=0 command=0 pipe=0
 - 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [es] → ok (translated+75, skipped+0) — parallel lang=es file=html.json
@@ -430,8 +409,6 @@ loot into th → Marca esta casilla de verificación para saquear tu contenedor 
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+5, skipped+0) — lang=pl file=otclient_modules.json strict_skipped_done=1982 guard_fail=36 placeholder=0 command=0 pipe=0
 - 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [es] → ok (translated+13, skipped+0) — parallel lang=es file=scripts.json
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+66, skipped+0) — lang=pl file=html.json strict_skipped_done=516 guard_fail=16 placeholder=0 command=0 pipe=0
-- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [es] → ok (translated+2, skipped+0) — parallel lang=es file=quests.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+16, skipped+0) — lang=pl file=scripts.json strict_skipped_done=2154 guard_fail=12 placeholder=0 command=1 pipe=0
 
 
 
@@ -441,7 +418,7 @@ loot into th → Marca esta casilla de verificación para saquear tu contenedor 
 - Cykle: **49**
 - MIGRATION: **+0** kluczy, **0** plików `.lua`
 - Kategorie dotknięte: -
-- Błędy: **296**
+- Błędy: **298**
 
 
 ---
@@ -758,7 +735,7 @@ loot into th → Marca esta casilla de verificación para saquear tu contenedor 
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2026-02-14 08:55:37  
+📅 Auto-updated by Worker v1.1 | Last: 2026-02-14 08:57:50  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

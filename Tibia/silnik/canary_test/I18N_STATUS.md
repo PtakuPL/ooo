@@ -5,23 +5,23 @@
 ## 🧭 META
 
 > **[META]** 🟢 ACTIVE  
-> Świeżość: teraz | Źródło: `update_github_status()` | Ostatnia aktualizacja: 2026-02-14 10:05:10
+> Świeżość: teraz | Źródło: `update_github_status()` | Ostatnia aktualizacja: 2026-02-14 10:07:19
 
-> **Aktualizacja:** 2026-02-14 10:05:10 UTC  
+> **Aktualizacja:** 2026-02-14 10:07:19 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 53586  
-> **LIVE:** Cykl #1 | Status: 🟢 RUNNING | Faza: AUTO_TRANSLATE | Etap: heartbeat_tick | Kategoria: es | Plik: npc.json | ETA: 0 | Heartbeat: 2026-02-14T10:04:28Z  
+> **LIVE:** Cykl #1 | Status: 🟢 RUNNING | Faza: AUTO_TRANSLATE | Etap: heartbeat_tick | Kategoria: es | Plik: npc.json | ETA: 0 | Heartbeat: 2026-02-14T10:05:58Z  
 > **Strict hourly (JSONL-only):** okno=1.0h | cycles=14 | pending_skip=0.0% | guard_fail=46.2% | throughput=15351.7/h  
 > **Net effective translated:** 66,149
 
 ### 🧩 Status sekcji (P0.1)
 | Sekcja | Stan | Świeżość | Powód | Źródło | Ostatnia aktualizacja |
 |--------|------|----------|-------|--------|-----------------------|
-| META | 🟢 ACTIVE | teraz | - | `update_github_status()` | 2026-02-14 10:05:10 |
-| LIVE | 🟢 ACTIVE | 42s temu | - | `activity.json / worker_state.json` | 2026-02-14T10:04:28Z |
-| MIGRATION | 🔒 INACTIVE | 15h temu | worker w trybie AUTO_TRANSLATE | `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | 2026-02-14 10:05:10 |
-| TRANSLATION | 🟢 ACTIVE | 1min temu | - | `translation_guard_latest.json / translation_recent_latest.json` | 2026-02-14T10:03:48.575250Z |
-| QUALITY | 🔒 INACTIVE | 35min temu | worker w trybie AUTO_TRANSLATE | `quality_audit_latest.json` | 2026-02-14T09:29:42.881259Z |
-| HISTORY | 🟢 ACTIVE | teraz | - | `daily/*.json / ops.jsonl` | 2026-02-14 10:05:10 |
+| META | 🟢 ACTIVE | teraz | - | `update_github_status()` | 2026-02-14 10:07:19 |
+| LIVE | 🟢 ACTIVE | 1min temu | - | `activity.json / worker_state.json` | 2026-02-14T10:05:58Z |
+| MIGRATION | 🔒 INACTIVE | 15h temu | worker w trybie AUTO_TRANSLATE | `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | 2026-02-14 10:07:19 |
+| TRANSLATION | 🟢 ACTIVE | 3min temu | - | `translation_guard_latest.json / translation_recent_latest.json` | 2026-02-14T10:03:48.575250Z |
+| QUALITY | 🔒 INACTIVE | 37min temu | worker w trybie AUTO_TRANSLATE | `quality_audit_latest.json` | 2026-02-14T09:29:42.881259Z |
+| HISTORY | 🟢 ACTIVE | teraz | - | `daily/*.json / ops.jsonl` | 2026-02-14 10:07:19 |
 
 > Artefakt machine-readable: `i18n/status/status_sections_latest.json`
 
@@ -30,14 +30,14 @@
 ## 🔴 LIVE
 
 > **[LIVE]** 🟢 ACTIVE  
-> Świeżość: 42s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T10:04:28Z
+> Świeżość: 1min temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T10:05:58Z
 
 - **Faza:** `AUTO_TRANSLATE`
 - **Etap:** `heartbeat_tick`
 - **Kategoria:** `es`
 - **Plik:** `npc.json`
 - **Status:** 🟢 RUNNING
-- **Heartbeat:** `2026-02-14T10:04:28Z`
+- **Heartbeat:** `2026-02-14T10:05:58Z`
 
 ---
 
@@ -92,7 +92,7 @@
 ## 🛠️ MIGRATION
 
 > **[MIGRATION]** 🔒 INACTIVE (worker w trybie AUTO_TRANSLATE)  
-> Świeżość: 15h temu | Źródło: `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | Ostatnia aktualizacja: 2026-02-14 10:05:10
+> Świeżość: 15h temu | Źródło: `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | Ostatnia aktualizacja: 2026-02-14 10:07:19
 
 ### 📁 Pliki Projektu (pełny skan)
 | Metryka | Wartość | Procent | Info |
@@ -141,7 +141,7 @@
 ## 🌍 TRANSLATION
 
 > **[TRANSLATION]** 🟢 ACTIVE  
-> Świeżość: 1min temu | Źródło: `translation_guard_latest.json / translation_recent_latest.json` | Ostatnia aktualizacja: 2026-02-14T10:03:48.575250Z
+> Świeżość: 3min temu | Źródło: `translation_guard_latest.json / translation_recent_latest.json` | Ostatnia aktualizacja: 2026-02-14T10:03:48.575250Z
 
 | Metryka | Wartość | Procent | Info |
 |---------|---------|---------|------|
@@ -153,7 +153,7 @@
 ### 🎯 Pokrycie tłumaczeń per język (EN → LANG)
 | Język | Przetłumaczone | % poprawnie przetłumaczonych | EN-copy | Braki kluczy |
 |-------|----------------|-------------------------------|---------|--------------|
-| ES (Hiszpański) | 46,501/53,586 | 86.78% | 10,399 | 232 |
+| ES (Hiszpański) | 46,584/53,586 | 86.93% | 10,377 | 232 |
 | PL (Polski) | 40,354/53,586 | 75.31% | 2,839 | 2,083 |
 | RU (Rosyjski) | 29,673/53,586 | 55.37% | 31,695 | 174 |
 | FR (Francuski) | 29,181/53,586 | 54.46% | 23,962 | 174 |
@@ -177,11 +177,29 @@
 ### 🧭 Aktywny folder tłumaczeń
 - **Folder:** HI - HI - Serwer
 - **Plik JSON:** monsters.json
-- **Ostatnie klucze (10-20):** 2
+- **Ostatnie klucze (10-20):** 20
 
 ### 📝 Ostatnie 10-20 przetłumaczonych kluczy
-- Apprentice's Strike → Apprentice's Strike (client.spells.text1)
-- Nature's Embrace → Nature's Embrace (client.spells.text4)
+- Okay, all I want from you is one of these rare deer trophies. I have a customer  → Bien, todo lo que quiero de ti es uno de estos raros trofeos de ciervos. Tengo u (npc.rashid_custom.multi_25)
+- Everything clear and understood? → ¿Todo claro y entendido? (npc.rashid_custom.multi_26)
+- I have always dreamed to have a small pet, one that I could take with me and whi → Siempre he soñado con tener una mascota pequeña, que pudiera llevar conmigo y qu (npc.rashid_custom.multi_3)
+- Could you - just maybe - bring me a small goldfish in a bowl? I know that you wo → ¿Podrías (tal vez) traerme un pequeño pez dorado en un recipiente? Sé que podría (npc.rashid_custom.multi_4)
+- Fine! There's one more skill that I need to test and which is cruicial for a suc → ¡Bien! Hay una habilidad más que necesito probar y que es crucial para un operad (npc.rashid_custom.multi_5)
+- Of course you must be able to haggle, else you won't survive long in this busine → Por supuesto, debes poder regatear, de lo contrario no sobrevivirás mucho en est (npc.rashid_custom.multi_6)
+- Of course, it has to be cheap. Don't come back with anything more expensive than → Por supuesto, tiene que ser barato. No vuelvas con nada más caro que 400 de oro. (npc.rashid_custom.multi_7)
+- And the quality must not suffer, of course! Everything clear and understood? → ¡Y la calidad no debe verse afectada, por supuesto! ¿Todo claro y entendido? (npc.rashid_custom.multi_8)
+- Dwarves are said to be the most stubborn of all traders. Travel to Kazordoon and → Se dice que los enanos son los más tercos de todos los comerciantes. Viaja a Kaz (npc.rashid_custom.multi_9)
+- Well, you could attempt the mission to become a recognised trader, but it requir → Bueno, podrías intentar la misión de convertirte en un comerciante reconocido, p (npc.rashid_custom.say_1)
+- Have you brought a cheap but good crimson sword? → ¿Has traído una espada carmesí barata pero buena? (npc.rashid_custom.say_10)
+- So, my friend, are you willing to proceed to the next mission to become a recogn → Entonces, amigo mío, ¿estás dispuesto a pasar a la siguiente misión para convert (npc.rashid_custom.say_11)
+- Have you brought me a gold fish?? → ¿Me has traído un pez dorado? (npc.rashid_custom.say_12)
+- Ah, right. <ahem> I hereby declare you - one of my recognised traders! Feel free → Ah, claro. <ahem> ¡Por la presente lo declaro uno de mis comerciantes reconocido (npc.rashid_custom.say_13)
+- Fine. Then get a hold of that deer trophy and bring it to me while I'm in Svargr → Bien. Luego toma ese trofeo de venado y tráemelo mientras estoy en Svargrond. Pr (npc.rashid_custom.say_14)
+- Well done! I'll take that from you. <snags it> Come see me another day, I'll be  → ¡Bien hecho! Te lo quitaré. <snags it> Ven a verme otro día, ya estaré ocupada u (npc.rashid_custom.say_15)
+- Fine. Then off you go, just ask Willard about the 'package for Rashid'. → Bien. Entonces listo, pregúntale a Willard sobre el 'package for __PH0__'. (npc.rashid_custom.say_16)
+- Great. Just place it over there - yes, thanks, that's it. Come see me another da → Excelente. Simplemente colóquelo allí. Sí, gracias, eso es todo. Ven a verme otr (npc.rashid_custom.say_17)
+- Okay, then please find Miraia in Darashia and ask her about the {'scarab cheese' → Bien, entonces busca a Miraia en Darashia y pregúntale sobre el {'scarab cheese' (npc.rashid_custom.say_18)
+- Mmmhh, the lovely odeur of scarab cheese! I really can't understand why most peo → ¡Mmmhh, qué delicioso olor a queso de escarabajo! Realmente no puedo entender po (npc.rashid_custom.say_19)
 
 ### 🚫 Raporty "nie mogę przetłumaczyć"
 - Guard reports: **2040**  
@@ -189,12 +207,12 @@
 - Widoczne raporty 'nie mogę tłumaczyć': **1990**
 
 ### 🌐 Globalne info wszystkich języków
-- **Global completion:** **23.08%** (643,025/2,786,472)
-- **EN-copy łącznie:** **1,296,166**
+- **Global completion:** **23.08%** (643,108/2,786,472)
+- **EN-copy łącznie:** **1,296,144**
 - **Braki kluczy łącznie:** **101,318**
 - **Brakujące pliki językowe:** **3**
-- **Cache STATUSPY (per-lang):** **warm-cache** | hit **52**, miss **0**, hit-rate **100.0%**
-- **Cache STATUSPY (per-file):** hit **1976**, miss **0**, hit-rate **100.0%**
+- **Cache STATUSPY (per-lang):** **mixed** | hit **51**, miss **1**, hit-rate **98.1%**
+- **Cache STATUSPY (per-file):** hit **1975**, miss **1**, hit-rate **99.9%**
 - **Profiler cyklu (ostatni):** -
 - **Osobny raport:** `i18n/status/translation_global_overview.json`
 
@@ -206,7 +224,7 @@
 
 | Język | Serwer | Serwer % | Instalka | Instalka % |
 |-------|--------|----------|----------|------------|
-| ES | 43,886/49,731 | 88.2% | 2,615/3,855 | 67.8% |
+| ES | 43,969/49,731 | 88.4% | 2,615/3,855 | 67.8% |
 | PL | 37,604/49,731 | 75.6% | 2,750/3,855 | 71.3% |
 | RU | 26,217/49,731 | 52.7% | 3,456/3,855 | 89.7% |
 | FR | 25,956/49,731 | 52.2% | 3,225/3,855 | 83.7% |
@@ -222,13 +240,13 @@
 ### ⏱️ Strict Hourly Window (JSONL-only)
 | Metryka | Wartość |
 |---------|---------|
-| Okno | **1.0h** (2026-02-14T09:05:10.355496Z → 2026-02-14T10:05:10.355496Z) |
+| Okno | **1.0h** (2026-02-14T09:07:19.913504Z → 2026-02-14T10:07:19.913504Z) |
 | Cykle | **14** (AUTO=14, MIGRATION=0) |
 | Pending skip | **0** (all=0.0%, migration=0.0%) |
 | Guard fail rate | **46.2%** |
 | No progress rate | **10.0%** |
 | Throughput | **15351.7 kluczy/h** |
-| Suspicious | **200** |
+| Suspicious | **220** |
 | Top guard_fail targets | es/npc.json (gf=66), pl/npc.json (gf=50), pl/otclient_modules.json (gf=36), pl/cpp.json (gf=17), pl/client.json (gf=10) |
 | Źródła | `i18n/status/worker_cycle_perf.jsonl`, `i18n/status/translation_guard_report.jsonl`, `i18n/status/suspicious_log.jsonl` |
 | Plik | `i18n/status/strict_hourly_window_latest.json` |
@@ -236,7 +254,7 @@
 ## 🔬 QUALITY
 
 > **[QUALITY]** 🔒 INACTIVE (worker w trybie AUTO_TRANSLATE)  
-> Świeżość: 35min temu | Źródło: `quality_audit_latest.json` | Ostatnia aktualizacja: 2026-02-14T09:29:42.881259Z
+> Świeżość: 37min temu | Źródło: `quality_audit_latest.json` | Ostatnia aktualizacja: 2026-02-14T09:29:42.881259Z
 
 - **Ostatni audyt:** OK | 2 issue(s) / 100 entries | 2026-02-14T09:29:42.881259Z
 - **Top 5 typów problemów:** suspicious_rejected_critical=200, suspicious_log_low=107, suspicious_log_critical=93, identical_to_en_exempt=36, identical_to_en=2
@@ -349,7 +367,7 @@
 ## 🔴 LIVE: Szczegóły wykonania
 
 > **[LIVE]** 🟢 ACTIVE  
-> Świeżość: 42s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T10:04:28Z
+> Świeżość: 1min temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T10:05:58Z
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
@@ -364,18 +382,18 @@
 │ Postęp: 0/0 keys                                              │
 │ Info: auto translate in progress                              │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2026-02-14T10:04:28Z           │
+│ ❤️ Heartbeat: 2026-02-14T10:05:58Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 🧾 Ostatnie akcje (dla czytelności)
 
+- 2026-02-14 10:05:58 | AUTO_TRANSLATE:heartbeat_tick | es | ok | npc.json
 - 2026-02-14 10:04:28 | AUTO_TRANSLATE:heartbeat_tick | es | ok | npc.json
 - 2026-02-14 10:02:18 | AUTO_TRANSLATE:heartbeat_tick | pl | ok | client.json
 - 2026-02-14 10:02:18 | AUTO_TRANSLATE:parallel_start | pl | ok | client.json
 - 2026-02-14 10:02:17 | AUTO_TRANSLATE:auto_done | es | ok | html.json
 - 2026-02-14 10:00:47 | AUTO_TRANSLATE:heartbeat_tick | es | ok | html.json
-- 2026-02-14 10:00:47 | AUTO_TRANSLATE:auto_start | es | ok | html.json
 
 ---
 
@@ -384,7 +402,7 @@
 | Język | Coverage | Brakujące | EN-copy | Translated(200) | Guard fail | Entries |
 |-------|----------|-----------|---------|-----------------|------------|---------|
 | 🟡 PL | 75.3% | 2,083 | 2,839 | 775 | 467 (37.6%) | 32 |
-| 🟡 ES | 86.8% | 232 | 10,399 | 920 | 351 (27.6%) | 29 |
+| 🟡 ES | 86.9% | 232 | 10,377 | 920 | 351 (27.6%) | 29 |
 
 | KPI | Wartość | Target | Status |
 |-----|---------|--------|--------|
@@ -397,7 +415,7 @@
 ## 📜 HISTORY
 
 > **[HISTORY]** 🟢 ACTIVE  
-> Świeżość: teraz | Źródło: `daily/*.json / ops.jsonl` | Ostatnia aktualizacja: 2026-02-14 10:05:10
+> Świeżość: teraz | Źródło: `daily/*.json / ops.jsonl` | Ostatnia aktualizacja: 2026-02-14 10:07:19
 
 - 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [pl] → ok (translated+2, skipped+0) — parallel lang=pl file=client.json
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [es] → warn (files+1, translated+75, skipped+0) — lang=es file=html.json strict_skipped_done=525 guard_fail=5 placeholder=0 command=0 pipe=0
@@ -735,7 +753,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2026-02-14 10:05:10  
+📅 Auto-updated by Worker v1.1 | Last: 2026-02-14 10:07:19  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

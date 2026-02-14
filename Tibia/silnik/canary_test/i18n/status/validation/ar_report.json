@@ -3,19 +3,20 @@
   "script_group": "rtl",
   "total_keys": 53586,
   "translated": 35776,
-  "identical_to_en": 30130,
+  "identical_to_en": 29974,
   "placeholder_keys": 15660,
   "coverage_pct": 66.8,
-  "issues_total": 4407,
+  "issues_total": 4410,
   "issues_by_type": {
     "V3_empty": 4301,
-    "script_rtl_insufficient": 98,
+    "script_rtl_insufficient": 99,
     "V1_placeholder_mismatch": 7,
+    "V4_artifact": 2,
     "V5_pipe_mismatch": 1
   },
   "issues_by_severity": {
     "CRITICAL": 8,
-    "HIGH": 98,
+    "HIGH": 101,
     "MEDIUM": 0,
     "LOW": 4301
   },
@@ -70,6 +71,24 @@
       "severity": "CRITICAL"
     },
     {
+      "key": "book.otbm.battletactics_for_mages_ii",
+      "category": "books",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "book.otbm.battletactics_for_mages_iii",
+      "category": "books",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "book.otbm.cast_by_rootos_sprout",
+      "category": "books",
+      "type": "script_rtl_insufficient",
+      "severity": "HIGH"
+    },
+    {
       "key": "event.player.msg1",
       "category": "events",
       "type": "script_rtl_insufficient",
@@ -122,24 +141,6 @@
       "category": "items",
       "type": "script_rtl_insufficient",
       "severity": "HIGH"
-    },
-    {
-      "key": "item.15700.name",
-      "category": "items",
-      "type": "script_rtl_insufficient",
-      "severity": "HIGH"
-    },
-    {
-      "key": "item.20052.name",
-      "category": "items",
-      "type": "script_rtl_insufficient",
-      "severity": "HIGH"
-    },
-    {
-      "key": "item.21351.name",
-      "category": "items",
-      "type": "script_rtl_insufficient",
-      "severity": "HIGH"
     }
   ],
   "crossref": {
@@ -150,5 +151,5 @@
     "length_ratio": 43,
     "auto_fix_applied": 78
   },
-  "validated_at": "2026-02-14T10:26:26.307194Z"
+  "validated_at": "2026-02-14T10:53:17.893140Z"
 }

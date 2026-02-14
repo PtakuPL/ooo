@@ -1,13 +1,49 @@
 {
-  "timestamp": "2026-02-14T10:33:49.251613Z",
+  "timestamp": "2026-02-14T10:56:26.593791Z",
   "language": "es",
-  "json_file": "modules.json",
-  "translated": 1,
+  "json_file": "cpp.json",
+  "translated": 7,
   "entries": [
     {
-      "key": "module.gamestore.text1",
-      "en": "/modules/scripts/gamestore/init.lua",
-      "translated": "/modules/scripts/gamestore/init.lua",
+      "key": "cpp.augment.augments_inspect",
+      "en": "{0}.",
+      "translated": "{0}.",
+      "source": "tm"
+    },
+    {
+      "key": "cpp.augment.format_base",
+      "en": "{0} -> {1:+}% {2} {3}",
+      "translated": "{0} -> {1:+}% {2} {3}",
+      "source": "tm"
+    },
+    {
+      "key": "cpp.augment.format_no_value",
+      "en": "{0} -> {1}",
+      "translated": "{0} -> {1}",
+      "source": "tm"
+    },
+    {
+      "key": "cpp.augment.format_with_value",
+      "en": "{0} -> {1:+}% {2}",
+      "translated": "{0} -> {1:+}% {2}",
+      "source": "tm"
+    },
+    {
+      "key": "cpp.player.look.guild_nick",
+      "en": "({0})",
+      "translated": "({0})",
+      "source": "tm"
+    },
+    {
+      "key": "cpp.player.look.verb_loyalty",
+      "en": "{0} {1} {2}.",
+      "translated": "{0} {1} {2}.",
+      "source": "tm"
+    },
+    {
+      "key": "cpp.player.look.verb_role",
+      "en": "{0} {1}.",
+      "translated": "{0} {1}.",
       "source": "tm"
     }
   ]

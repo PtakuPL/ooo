@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-14T10:33:06.594861Z",
+  "timestamp": "2026-02-14T10:56:21.916009Z",
   "built_cycle": 1,
   "cache_ttl_cycles": 5,
   "targets": [
@@ -261,9 +261,9 @@
     {
       "lang": "es",
       "json_file": "npc.json",
-      "pending_total": 2584,
-      "todo": 2584,
-      "simple_todo": 174,
+      "pending_total": 2422,
+      "todo": 2422,
+      "simple_todo": 167,
       "missing_in_lang": 0
     },
     {

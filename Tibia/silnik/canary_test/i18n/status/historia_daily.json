@@ -1,32 +1,32 @@
 [
   {
     "date": "2026-02-14",
-    "hours_covered": 5,
+    "hours_covered": 6,
     "threshold": 5,
     "is_final": false,
     "ts_first": "2026-02-14T08:00:00Z",
-    "ts_last": "2026-02-14T09:54:45Z",
-    "translated": 904,
-    "guard_fail": 716,
-    "suspicious_high": 589,
-    "identical_to_en": 278,
+    "ts_last": "2026-02-14T10:55:35Z",
+    "translated": 1008,
+    "guard_fail": 759,
+    "suspicious_high": 662,
+    "identical_to_en": 280,
     "repair_start": 4800,
-    "repair_end": 4752,
-    "cycles": 9,
+    "repair_end": 799578,
+    "cycles": 10,
     "coverage_start": 22.5,
-    "coverage_end": 23.08,
-    "guard_fail_pct": 44.2,
-    "throughput_per_h": 180.8,
+    "coverage_end": 23.16,
+    "guard_fail_pct": 42.95,
+    "throughput_per_h": 168.0,
     "per_lang": {
       "pl": {
-        "t": 664,
-        "gf": 386,
+        "t": 687,
+        "gf": 418,
         "cov": 75.31
       },
       "es": {
-        "t": 160,
-        "gf": 330,
-        "cov": 86.78
+        "t": 241,
+        "gf": 341,
+        "cov": 87.39
       }
     },
     "per_cat": {
@@ -38,41 +38,41 @@
         "t": 312,
         "gf": 469
       },
+      "html.json": {
+        "t": 75,
+        "gf": 5
+      },
       "startup.json": {
-        "t": 32,
-        "gf": 4
+        "t": 40,
+        "gf": 5
       },
       "books.json": {
-        "t": 20,
-        "gf": 16
+        "t": 25,
+        "gf": 20
       },
       "otclient_modules.json": {
         "t": 20,
         "gf": 144
       },
       "php.json": {
-        "t": 8,
+        "t": 10,
         "gf": 0
       },
       "talkactions.json": {
-        "t": 8,
-        "gf": 16
+        "t": 10,
+        "gf": 20
+      },
+      "cpp.json": {
+        "t": 9,
+        "gf": 17
       },
       "modules.json": {
-        "t": 4,
-        "gf": 8
-      },
-      "client.json": {
-        "t": 0,
-        "gf": 24
-      },
-      "otclient_data.json": {
-        "t": 0,
-        "gf": 8
+        "t": 5,
+        "gf": 10
       }
     },
     "mode_distribution": {
-      "AUTO_TRANSLATE": 67
+      "AUTO_TRANSLATE": 73
     },
     "migration_completed": 2297,
     "migration_total": 2299

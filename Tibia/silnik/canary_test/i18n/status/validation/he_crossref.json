@@ -4,12 +4,12 @@
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-14T10:37:25.047311Z",
-  "issues_total": 474,
+  "checked_at": "2026-02-14T10:50:52.154766Z",
+  "issues_total": 475,
   "issues_by_type": {
     "consistency_in_language": 1,
     "pl_reference_missing_translation": 400,
-    "length_ratio_crosscheck": 73
+    "length_ratio_crosscheck": 74
   },
   "consistency_issues": [
     {
@@ -120,186 +120,6 @@
       "lang": "Rathleton Squire"
     },
     {
-      "key": "achievement.388.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Pig-Headed",
-      "pl": "Świnia-I.",
-      "lang": "Pig-Headed"
-    },
-    {
-      "key": "achievement.388.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Whoa, sow long! This boar is like a force of nature, breaking through the undergrowth of all the Tibian forests and all records of speed. Hang on!",
-      "pl": "Whoa, sow long! I. knur jest like jeden I. z natura, I. through the poszycie z wszystkie the Tibian las i wszystkie records z I.. Hang na!",
-      "lang": "Whoa, sow long! This boar is like a force of nature, breaking through the undergrowth of all the Tibian forests and all records of speed. Hang on!"
-    },
-    {
-      "key": "achievement.389.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Personal Nightmare",
-      "pl": "Osobisty Zły sen",
-      "lang": "Personal Nightmare"
-    },
-    {
-      "key": "achievement.389.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "It might come as a shock to you, but this is the mount of your dreams. Not exactly the white steed of Prince Charming, but maybe the ladies will still scream and faint at the sight of you.",
-      "pl": "To might come as jeden I. do ty, I. I. jest the I. z twój I.. Niet dokładnie the white steed z Książę Czarujący, I. być może, może the pani will I. I. i I. w the I. z ty.",
-      "lang": "It might come as a shock to you, but this is the mount of your dreams. Not exactly the white steed of Prince Charming, but maybe the ladies will still scream and faint at the sight of you."
-    },
-    {
-      "key": "achievement.390.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Thick-Skinned",
-      "pl": "Gruby-Skinned",
-      "lang": "Thick-Skinned"
-    },
-    {
-      "key": "achievement.390.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "It's unstoppable! Walls? Fortresses? Obstacles? Objections? Pah! Nothing will stand before the stampor. Arrows and spears bounce off its hide, enemies are trampled by the dozen. Just don't go for the subtle approach or a date on this thing.",
-      "pl": "To unstoppable! Ściana, mur? Forteca? Przeszkoda? Wątpliwość, zarzut? Pah! Niething will I. I. the stampor. Strzała, strzałka i I. I. off jego, jej, ich, swój I., wróg są trampled by the tuzin. Just don't go dla the subtelny I. lub jeden I. na I. rzecz.",
-      "lang": "It's unstoppable! Walls? Fortresses? Obstacles? Objections? Pah! Nothing will stand before the stampor. Arrows and spears bounce off its hide, enemies are trampled by the dozen. Just don't go for the subtle approach or a date on this thing."
-    },
-    {
-      "key": "achievement.391.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Chequered Teddy",
-      "pl": "Chequered Miś pluszowy",
-      "lang": "Chequered Teddy"
-    },
-    {
-      "key": "achievement.391.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Don't let its fluffy appearance deceive you. The panda is a creature of the wild. It will take you to the most distant regions of Tibia, always in hopes of a little bamboo to nibble on or to check on a possible mate.",
-      "pl": "Don't let jego, jej, ich, swój puchaty pojawienie się oszukiwać ty. The panda jest jeden stwór z the I.. To will take ty do the most odległy region z Tibia, zawsze w I. z jeden little bambus do skubać na lub do check na jeden możliwy I..",
-      "lang": "Don't let its fluffy appearance deceive you. The panda is a creature of the wild. It will take you to the most distant regions of Tibia, always in hopes of a little bamboo to nibble on or to check on a possible mate."
-    },
-    {
-      "key": "achievement.392.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Well, you can rest your nailcase now. This gravedigger's fingernails are nice and clean. Though after the next hellride, you might not want to let it hand any food to you.",
-      "pl": "Well, Lekarz rejonowyżesz rest twój nailcase Niew. I. gravedigger's paznokieć są delikatny, subtelny i I.. I. after the next hellride, ty might Niet I. do let to hand dowolny jedzenie, pożywienie do ty.",
-      "lang": "Well, you can rest your nailcase now. This gravedigger's fingernails are nice and clean. Though after the next hellride, you might not want to let it hand any food to you."
-    },
-    {
-      "key": "achievement.393.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Drugging a snail can have some beneficial side effects. You're now the proud owner of a snarling, speed-crazy slug. Maybe it'll purr if you stroke it. Anyway, life should be one slick ride from now on.",
-      "pl": "Drugging jeden ślimak może masz I. dobroczynny I. I.. You're Niew the dumny właściciel z jeden I., I.-crazy I.. Być może, może it'll I. if ty I. to. W każdym razie, I. a. powinien, powinna być I. zbyt gładki, gładki I. z Niew na.",
-      "lang": "Drugging a snail can have some beneficial side effects. You're now the proud owner of a snarling, speed-crazy slug. Maybe it'll purr if you stroke it. Anyway, life should be one slick ride from now on."
-    },
-    {
-      "key": "achievement.394.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Knock on Wood",
-      "pl": "KNieck na Drewno",
-      "lang": "Knock on Wood"
-    },
-    {
-      "key": "achievement.394.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "It's a wound-up wooden lizard! Well, stranger things have happened, or so you're told. Just hop on and let this wood-and-tin contraption take you anywhere you want to wind down a bit. And hope you don't get hit by lightning underway.",
-      "pl": "To jeden I.-up drewniany jaszczurka! Well, obcy rzecz masz zdarzać się, wydarzać się, lub I. you're told. Just I. na i let I. drewno-i-I. urządzenie, dings take ty gdziekolwiek ty I. do wind I. jeden bit. I I. ty don't get hit by I. be underway.",
-      "lang": "It's a wound-up wooden lizard! Well, stranger things have happened, or so you're told. Just hop on and let this wood-and-tin contraption take you anywhere you want to wind down a bit. And hope you don't get hit by lightning underway."
-    },
-    {
-      "key": "achievement.395.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Fried Shrimp",
-      "pl": "Fried Krewetka",
-      "lang": "Fried Shrimp"
-    },
-    {
-      "key": "achievement.395.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "This must be underwater love - this enormous crustacean now does thy bidding. Or maybe it's just in it for a little more of that shrimp barbecue, as that's a little hard to come by in the sea.",
-      "pl": "I. musi być podwodny love - I. eNiermous crustacean Niew robi thy bidding. Lub być może, może to just w to dla jeden little more z that krewetka grill, as that's jeden little hard do come by w the morze.",
-      "lang": "This must be underwater love - this enormous crustacean now does thy bidding. Or maybe it's just in it for a little more of that shrimp barbecue, as that's a little hard to come by in the sea."
-    },
-    {
-      "key": "achievement.396.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Out of the Stone Age",
-      "pl": "Out z the Stone I.",
-      "lang": "Out of the Stone Age"
-    },
-    {
-      "key": "achievement.396.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "What a blast from the past! This thankful patient thinks you missed your dentist vocation. It's now ready to take a bite of the future and to carry you to your next adventure, or your next patient.",
-      "pl": "I. jeden I. z the I.! I. szczęśliwy, uszczęśliwiony I. I. ty I. twój dentysta profesja. To Niew I. do take jeden I. z the I. i do I. ty do twój next przygoda, lub twój next I..",
-      "lang": "What a blast from the past! This thankful patient thinks you missed your dentist vocation. It's now ready to take a bite of the future and to carry you to your next adventure, or your next patient."
-    },
-    {
-      "key": "achievement.397.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "A drop of oil and you're good to go. This unique mount will roll merrily in and out of any strange place you want to visit. If you see no exit, you probably ended up in a circus ring. Ah well, the show must go on!",
-      "pl": "JEDEN I. z I. i you're I. do go. I. unikalny, unikatowy I. will I. merrily w i out z dowolny dziwny I. ty I. do I.. If ty I. Nie I., ty prawdopodobnie I. up w jeden cyrk ring. Och, ach, no, o well, the I. musi go na!",
-      "lang": "A drop of oil and you're good to go. This unique mount will roll merrily in and out of any strange place you want to visit. If you see no exit, you probably ended up in a circus ring. Ah well, the show must go on!"
-    },
-    {
-      "key": "achievement.398.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Gear Up",
-      "pl": "I. Up",
-      "lang": "Gear Up"
-    },
-    {
-      "key": "achievement.398.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Installing that control unit was a no-brainer. Now you're in control to make it walk this way or that, or to change tack at any moment if required. Your faithful walker mount obeys your every command.",
-      "pl": "Instalować that control jednostka był jeden Nie-mózg. Niew you're w control do make to I. I. way lub that, lub do change I. w dowolny chwila, moment if wymagany. Twój wierny spacerowicz I. być posłusznym, stosować się twój I. I..",
-      "lang": "Installing that control unit was a no-brainer. Now you're in control to make it walk this way or that, or to change tack at any moment if required. Your faithful walker mount obeys your every command."
-    },
-    {
-      "key": "achievement.399.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hunter's greeting! Your skillful use of the slingshot actually stunned a large bear. The creature is slightly dazed, but seems susceptible to your commands. Let's declare open season on all our foes!",
-      "pl": "Myśliwy powitanie! Twój skillful use z the slingshot naprawdę stunned jeden large bear. The stwór jest I. dazed, I. a. wydawać się być, wydawać się, zdawać się podatny do twój I.. Let's oznajmiać otwórz I. na wszystkie nasz MSZ, Ministerstwo Spraw Zagranicznych!",
-      "lang": "Hunter's greeting! Your skillful use of the slingshot actually stunned a large bear. The creature is slightly dazed, but seems susceptible to your commands. Let's declare open season on all our foes!"
-    },
-    {
       "key": "achievement.400.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -309,105 +129,6 @@
       "lang": "Lucky Horseshoe"
     },
     {
-      "key": "achievement.400.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "'Sweets for my steed' could be your motto. An impressive horse is eating out of your hand. Saddle up and be ready to find adventure, new friends, and maybe someone to shoe your horse now and then.",
-      "pl": "'I. dla mój steed' mógł być twój motto. Jeden robiący wrażenie I. jest I. out z twój hand. I. up i być I. do I. przygoda, new przyjaciel, dobry kolega, kolega, i być może, może ktoś do I. twój I. Niew i wtedy.",
-      "lang": "'Sweets for my steed' could be your motto. An impressive horse is eating out of your hand. Saddle up and be ready to find adventure, new friends, and maybe someone to shoe your horse now and then."
-    },
-    {
-      "key": "achievement.401.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Swamp Beast",
-      "pl": "I. Zwierzę",
-      "lang": "Swamp Beast"
-    },
-    {
-      "key": "achievement.401.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "By cleverly using a leech to cool that raging bull's blood, you managed not to get swamped or trampled in a water buffalo stampede. The creature is now docile and follows your every command.",
-      "pl": "By inteligentny, zdolny using jeden pijawka do I. that wściekły, oszalały byk I., ty managed Niet do get I. lub trampled w jeden I. bawół I.. The stwór jest Niew potulny, uległy i I. twój I. I..",
-      "lang": "By cleverly using a leech to cool that raging bull's blood, you managed not to get swamped or trampled in a water buffalo stampede. The creature is now docile and follows your every command."
-    },
-    {
-      "key": "achievement.402.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Spin-Off",
-      "pl": "I.-Off",
-      "lang": "Spin-Off"
-    },
-    {
-      "key": "achievement.402.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Seems like this spider has got a sweet tooth. As a result, eight hairy legs are now at your disposal to crawl and weave at your whim, and strike fear into the hearts of men.",
-      "pl": "A. wydawać się być, wydawać się, zdawać się like I. pająk ma got jeden I. ząb. As jeden I., osiem włochaty, owłosiony noga są Niew w twój pozbywanie się, usuwanie do crawl i weave w twój kaprys, i strike I. a. do the serce z men.",
-      "lang": "Seems like this spider has got a sweet tooth. As a result, eight hairy legs are now at your disposal to crawl and weave at your whim, and strike fear into the hearts of men."
-    },
-    {
-      "key": "achievement.403.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Icy Glare",
-      "pl": "Lodowaty I.",
-      "lang": "Icy Glare"
-    },
-    {
-      "key": "achievement.403.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Here's looking at you, kid. This ancient creature seems to size you up with its brilliant eyes and barely tolerates you riding it. Maybe it thinks you're the defrosted snack, after all?",
-      "pl": "Tutaj, tu looking w ty, I.. I. starożytny stwór a. wydawać się być, wydawać się, zdawać się do I. ty up z jego, jej, ich, swój błyskotliwy eTak i ledwo tolerować, znosić ty I. to. Być może, może to I. you're the odmrażać się, odmrażać I., after wszystkie?",
-      "lang": "Here's looking at you, kid. This ancient creature seems to size you up with its brilliant eyes and barely tolerates you riding it. Maybe it thinks you're the defrosted snack, after all?"
-    },
-    {
-      "key": "achievement.404.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You succeeded in finding and charting several previously unexplored landmarks and locations for the Adventurer's Guild, you probably never need to ask anyone for the way - do you?",
-      "pl": "Ty zdołać w rezultat, stwierdzenie i I. I. poprzednio unexplored punkt orientacyjny i umiejscowienie dla the Awanturnik Gildia, ty prawdopodobnie nigdy potrzebować do I. nikt dla the way - robić ty?",
-      "lang": "You succeeded in finding and charting several previously unexplored landmarks and locations for the Adventurer's Guild, you probably never need to ask anyone for the way - do you?"
-    },
-    {
-      "key": "achievement.405.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Lost Palace Raider",
-      "pl": "I. Pałac I.",
-      "lang": "Lost Palace Raider"
-    },
-    {
-      "key": "achievement.405.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Lifting the secrets of a fabulous palace and defeating a beautiful demon princess was a thrilling experience indeed. This site's marvels nearly matched its terrors. Nearly.",
-      "pl": "I. the I. z jeden fantastyczny pałac i I. jeden piękny demon księżna, księżniczka był jeden I. I. faktycznie, naprawdę. I. I. I. prawie I. jego, jej, ich, swój przerażenie. Prawie.",
-      "lang": "Lifting the secrets of a fabulous palace and defeating a beautiful demon princess was a thrilling experience indeed. This site's marvels nearly matched its terrors. Nearly."
-    },
-    {
-      "key": "achievement.406.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "It's dangerous to go alone... Take ten friends.",
-      "pl": "To groźny, niebezpieczny do go I.... Take I. przyjaciel, dobry kolega, kolega.",
-      "lang": "It's dangerous to go alone... Take ten friends."
-    },
-    {
       "key": "achievement.408.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -415,339 +136,6 @@
       "en": "Rift Warrior",
       "pl": "Szczelina Wojownik",
       "lang": "Rift Warrior"
-    },
-    {
-      "key": "achievement.408.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You went through hell. Seven times. You defeated the demons. Countless times. You put an end to Ferumbras claims to ascendancy. Once and for all.",
-      "pl": "Ty went through piekło. Siedem czas. Ty I. the demon. Countless czas. Ty put jeden I. do Ferumbras I. do przewaga. Raz i dla wszystkie.",
-      "lang": "You went through hell. Seven times. You defeated the demons. Countless times. You put an end to Ferumbras claims to ascendancy. Once and for all."
-    },
-    {
-      "key": "achievement.410.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hat Hunter",
-      "pl": "Kapelusz Myśliwy",
-      "lang": "Hat Hunter"
-    },
-    {
-      "key": "achievement.410.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You sucessfully fought against all odds to protect your world from an ascending god! – You weren't there for the hat only after all?",
-      "pl": "Ty sucessfully fought o wszystkie I. do chronić twój I. z jeden wznosić się god! – Ty weren't there dla the kapelusz tylko after wszystkie?",
-      "lang": "You sucessfully fought against all odds to protect your world from an ascending god! – You weren't there for the hat only after all?"
-    },
-    {
-      "key": "achievement.411.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ogre Chef",
-      "pl": "Ogr, potwór Szef kuchni, kucharz",
-      "lang": "Ogre Chef"
-    },
-    {
-      "key": "achievement.411.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You didn't manage to become an ogre chief. But at least you are, beyond doubt, a worthy ogre chef.",
-      "pl": "Ty didn't zdołać, podołać do stawać się jeden ogr, potwór I.. I. w najmniej Jesteś, beyond I., jeden godny, znakomity ogr, potwór szef kuchni, kucharz.",
-      "lang": "You didn't manage to become an ogre chief. But at least you are, beyond doubt, a worthy ogre chef."
-    },
-    {
-      "key": "achievement.412.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Call of the Wild",
-      "pl": "The Call z the I.",
-      "lang": "The Call of the Wild"
-    },
-    {
-      "key": "achievement.412.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You opposed man-eating ogres and clumsy clomps. You grappled with hungry chieftains, desperate goblins and angry spirits. So you truly overcame the wild vastness of Krailos.",
-      "pl": "Ty przeciwny man-I. ogr, potwór i niezręczny, niezgrabny clomps. Ty grappled z głodny wódz, I. chochlik i zły I.. I. ty naprawdę overcame the I. vastness z Krailos.",
-      "lang": "You opposed man-eating ogres and clumsy clomps. You grappled with hungry chieftains, desperate goblins and angry spirits. So you truly overcame the wild vastness of Krailos."
-    },
-    {
-      "key": "achievement.413.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ender of the End",
-      "pl": "I. z the I.",
-      "lang": "Ender of the End"
-    },
-    {
-      "key": "achievement.413.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You have entered the heart of destruction and valiantly defeated the world devourer. By your actions you have postponed the end of the world — at least for a while.",
-      "pl": "Masz I. the serce z zniszczenie i bohaterski, dzielny I. the I. pożerać. By twój działanie Masz postponed the I. z the I. — w najmniej dla jeden I..",
-      "lang": "You have entered the heart of destruction and valiantly defeated the world devourer. By your actions you have postponed the end of the world — at least for a while."
-    },
-    {
-      "key": "achievement.414.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Vortex Tamer",
-      "pl": "Wir Tamer",
-      "lang": "Vortex Tamer"
-    },
-    {
-      "key": "achievement.414.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "After a long journey and dedication you were favoured by fortune and have tamed all three elusive beasts of the vortex. Unless the Vortexion decides you're a tasty morsel you can enjoy your small stable of ravaging beasts from beyond.",
-      "pl": "After jeden long I. i ofiarność, poświęcenie się, poświęcenie ty były favoured by I. i masz tamed wszystkie trzy nieuchwytny, trudny do uchwycenia zwierzę z the wir. Jeżeli nie, o ile nie the Vortexion decydować się, decydować you're jeden smakowity kąsek, kawałek Lekarz rejonowyżesz lubić twój I. I. z ravaging zwierzę z beyond.",
-      "lang": "After a long journey and dedication you were favoured by fortune and have tamed all three elusive beasts of the vortex. Unless the Vortexion decides you're a tasty morsel you can enjoy your small stable of ravaging beasts from beyond."
-    },
-    {
-      "key": "achievement.415.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Rhino Rider",
-      "pl": "RhiNie Jeździec",
-      "lang": "Rhino Rider"
-    },
-    {
-      "key": "achievement.415.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Don't forget, even your rhino sometimes needs a hug. A careful one in this case.",
-      "pl": "Don't forget, I. twój rhiNie kiedyś, pewnego razu potrzebować jeden I.. JEDEN ostrożny I. w I. przypadek.",
-      "lang": "Don't forget, even your rhino sometimes needs a hug. A careful one in this case."
-    },
-    {
-      "key": "achievement.416.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Forbidden Fruit",
-      "pl": "Zakazany I.",
-      "lang": "Forbidden Fruit"
-    },
-    {
-      "key": "achievement.416.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You could not resist the taste of the forbidden fruit. Since you don't feel changed at all, it couldn't have been that bad after all. Or could it?",
-      "pl": "Ty mógł Niet stawiać opór, opierać się, opierać the I. z the zakazany I.. I. ty don't I. changed w wszystkie, to couldn't masz był that zły, niedobry after wszystkie. Lub mógł to?",
-      "lang": "You could not resist the taste of the forbidden fruit. Since you don't feel changed at all, it couldn't have been that bad after all. Or could it?"
-    },
-    {
-      "key": "achievement.417.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Forbidden Knowledge",
-      "pl": "Zakazany KNiewledge",
-      "lang": "Forbidden Knowledge"
-    },
-    {
-      "key": "achievement.417.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Perhaps with so much acquired knowledge, never meant for you, you know even when to stop! Time will tell whether this knowledge will do more harm or good.",
-      "pl": "Być może, może z I. dużo, bardzo acquired kNiewledge, nigdy meant dla ty, ty kNiew I. when do stop! Czas will I. a. czy I. kNiewledge will robić more I. lub I..",
-      "lang": "Perhaps with so much acquired knowledge, never meant for you, you know even when to stop! Time will tell whether this knowledge will do more harm or good."
-    },
-    {
-      "key": "achievement.418.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Treasure Hunter",
-      "pl": "I. Myśliwy",
-      "lang": "Treasure Hunter"
-    },
-    {
-      "key": "achievement.418.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You wandered the world of Tibia in search of the ancient dragons' hoards. You are sure, you found them all.",
-      "pl": "Ty wędrować the I. z Tibia w I. z the starożytny smok' I.. Jesteś sure, ty znaleziono ich wszystkie.",
-      "lang": "You wandered the world of Tibia in search of the ancient dragons' hoards. You are sure, you found them all."
-    },
-    {
-      "key": "achievement.419.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Reason to Celebrate",
-      "pl": "I. do Świętować",
-      "lang": "Reason to Celebrate"
-    },
-    {
-      "key": "achievement.419.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You met the legendary First Dragon and survived. That's a reason to celebrate for sure.",
-      "pl": "Ty met the legendarny I. Smok i survived. That's jeden I. do świętować dla sure.",
-      "lang": "You met the legendary First Dragon and survived. That's a reason to celebrate for sure."
-    },
-    {
-      "key": "achievement.420.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Toothfairy Assistant",
-      "pl": "Toothfairy A. wice-",
-      "lang": "Toothfairy Assistant"
-    },
-    {
-      "key": "achievement.420.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You assisted a very prominent fae and you fought tooth and nail to earn this title.",
-      "pl": "Ty pomagać jeden I. ważny fae i ty fought ząb i I. do zarabiać na, zarabiać I. tytuł.",
-      "lang": "You assisted a very prominent fae and you fought tooth and nail to earn this title."
-    },
-    {
-      "key": "achievement.421.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Fairy Teasing",
-      "pl": "I. Teasing",
-      "lang": "Fairy Teasing"
-    },
-    {
-      "key": "achievement.421.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Teasing fairies is fun. They leave behind such pretty clouds of glittering dust when chased. Just hope they don't get you back for it.",
-      "pl": "Teasing I. jest I.. Oni I. za, z tyłu taki I. I. z wspaniały I. when chased. Just I. oni don't get ty I. dla to.",
-      "lang": "Teasing fairies is fun. They leave behind such pretty clouds of glittering dust when chased. Just hope they don't get you back for it."
-    },
-    {
-      "key": "achievement.422.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Corruption Contained",
-      "pl": "Corruption Zawierać",
-      "lang": "Corruption Contained"
-    },
-    {
-      "key": "achievement.422.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You have managed to stall the worst incursion of corruption. Still this is just one battle won in an all out war for your world.",
-      "pl": "Masz managed do I. the I. wypad, wtargnięcie z corruption. I. I. jest just I. I. won w jeden wszystkie out I. dla twój I..",
-      "lang": "You have managed to stall the worst incursion of corruption. Still this is just one battle won in an all out war for your world."
-    },
-    {
-      "key": "achievement.430.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Little Adventure",
-      "pl": "Little Przygoda",
-      "lang": "Little Adventure"
-    },
-    {
-      "key": "achievement.430.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You have fully unlocked 10 easy monsters in the cyclopedia.",
-      "pl": "Masz w pełni otwierać 10 I. potwory w the cyclopedia.",
-      "lang": "You have fully unlocked 10 easy monsters in the cyclopedia."
-    },
-    {
-      "key": "achievement.431.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Little Big Adventure",
-      "pl": "Little Duży, wielki Przygoda",
-      "lang": "Little Big Adventure"
-    },
-    {
-      "key": "achievement.431.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You have fully unlocked 100 easy monsters in the cyclopedia.",
-      "pl": "Masz w pełni otwierać 100 I. potwory w the cyclopedia.",
-      "lang": "You have fully unlocked 100 easy monsters in the cyclopedia."
-    },
-    {
-      "key": "achievement.432.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Contender",
-      "pl": "Pretendent",
-      "lang": "Contender"
-    },
-    {
-      "key": "achievement.432.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You have fully unlocked 10 medium monsters in the cyclopedia.",
-      "pl": "Masz w pełni otwierać 10 I. potwory w the cyclopedia.",
-      "lang": "You have fully unlocked 10 medium monsters in the cyclopedia."
-    },
-    {
-      "key": "achievement.433.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Serious Contender",
-      "pl": "Poważny Pretendent",
-      "lang": "Serious Contender"
-    },
-    {
-      "key": "achievement.433.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You have fully unlocked 100 medium monsters in the cyclopedia.",
-      "pl": "Masz w pełni otwierać 100 I. potwory w the cyclopedia.",
-      "lang": "You have fully unlocked 100 medium monsters in the cyclopedia."
-    },
-    {
-      "key": "achievement.434.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Skilled Hunter",
-      "pl": "Wykwalifikowany, wyszkolony Myśliwy",
-      "lang": "Skilled Hunter"
-    },
-    {
-      "key": "achievement.434.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You have fully unlocked 10 hard monsters in the cyclopedia.",
-      "pl": "Masz w pełni otwierać 10 hard potwory w the cyclopedia.",
-      "lang": "You have fully unlocked 10 hard monsters in the cyclopedia."
     },
     {
       "key": "achievement.435.name",
@@ -3628,6 +3016,618 @@
       "en": "All seem to work well. But after some years new problems appeared.",
       "pl": "Wszystkie a. wydawać się być, wydawać się, zdawać się do work well. I. after I. a. rok new I. pojawiać się.",
       "lang": "All seem to work well. But after some years new problems appeared."
+    },
+    {
+      "key": "book.otbm.all_the_strength_that_he",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "all the strength that he could muster into the heart of Tibiasula, whose existence he did not want to endure any more. And as the",
+      "pl": "wszystkie the siła that on mógł zbierać a. do the serce z Tibiasula, którego, której, których istnienie on zrobił Niet I. do wytrzymywać dowolny more. I as the",
+      "lang": "all the strength that he could muster into the heart of Tibiasula, whose existence he did not want to endure any more. And as the"
+    },
+    {
+      "key": "book.otbm.all_their_magic_which_was",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "All their magic, which was probably given to the old peoples in excess, could not make them victorious, and they and their",
+      "pl": "Wszystkie ich I., I. był prawdopodobnie I. do the I. I. w excess, mógł Niet make ich zwycięski, i oni i ich",
+      "lang": "All their magic, which was probably given to the old peoples in excess, could not make them victorious, and they and their"
+    },
+    {
+      "key": "book.otbm.all_this_however_could_not",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "All this however could not turn the war luck against the dark hordes. Whereever Banor appeared personally to lead the",
+      "pl": "Wszystkie I. jednak mógł Niet turn the I. good luck o the I. zgraja, horda. Whereever BaNier pojawiać się osobiście do lead the",
+      "lang": "All this however could not turn the war luck against the dark hordes. Whereever Banor appeared personally to lead the"
+    },
+    {
+      "key": "book.otbm.allen_richardsons_warehouse",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Allen Richardson's Warehouse",
+      "pl": "Allen Richardson's Waredom",
+      "lang": "Allen Richardson's Warehouse"
+    },
+    {
+      "key": "book.otbm.already_the_daemons_hammered_on",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Already the daemons hammered on the walls of their breakable prison.",
+      "pl": "Już the daemons I. na the ściana, mur z ich kruchy więzienie.",
+      "lang": "Already the daemons hammered on the walls of their breakable prison."
+    },
+    {
+      "key": "book.otbm.also_react_to_but_those",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "also react to, but those are not highlighted. In this case, you need to TYPE in a word to see if an NPC will react to it, like their",
+      "pl": "także reagować do, I. those są Niet I.. W I. przypadek, Musisz I. w jeden I. do I. if jeden NPC will reagować do to, like ich",
+      "lang": "also react to, but those are not highlighted. In this case, you need to TYPE in a word to see if an NPC will react to it, like their"
+    },
+    {
+      "key": "book.otbm.also_via_the_portal_of",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Also via the portal of souls old and new heroes found their way to Tibia. Gradually larger sections of the old world emerged",
+      "pl": "Także przez the portal z dusza I. i new bohater znaleziono ich way do Tibia. Stopniowy larger część, sekcja z the I. I. emerged",
+      "lang": "Also via the portal of souls old and new heroes found their way to Tibia. Gradually larger sections of the old world emerged"
+    },
+    {
+      "key": "book.otbm.although_most_problems_have_to",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Although most problems have to be solved by intellect, the demons they  summoned frighten me to death. Maybe we had to add something like this to ensure that no one passes the tests just by being told how it works. Still, adding a bunch of powerful monsters seems like madness to me. As if Hugo wasn't dangerous enough already!!",
+      "pl": "Chociaż most I. masz do być solved by intelekt, inteligencja, the demon oni I. I. mnie, mi do I.. Być może, może my miał do dodaj coś like I. do ensure that Nie I. I. the I. just by istota told jak to works. I., dodaj jeden bunch z potężny potwory a. wydawać się być, wydawać się, zdawać się like szaleństwo do mnie, mi. As if Hugo wasn't groźny, niebezpieczny eNieugh już!!",
+      "lang": "Although most problems have to be solved by intellect, the demons they  summoned frighten me to death. Maybe we had to add something like this to ensure that no one passes the tests just by being told how it works. Still, adding a bunch of powerful monsters seems like madness to me. As if Hugo wasn't dangerous enough already!!"
+    },
+    {
+      "key": "book.otbm.ancient_mummies_are_fiends_of",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ancient mummies are fiends of horrendous powers. Only the bravest warriors dare to challenge them, and most of these fools join the ranks of the mummie's undead legions all too soon. In life, each of these ancient horrors was a champion in his own right, but now that they have entered the dreadful state of undeath they have become truly formidable, for there is no way to kill them for good. No matter how hard they are hit the ancient powers bound to their mummified bodies will always make them rise again in all their horrifying glory to take revenge on the living.",
+      "pl": "Starożytny mamusia, mamuśka są potwór, szatan z horrendalny, straszliwy I.. Tylko the bravest wojownik dare do I. ich, i most z these fools I. the I. z the mummie's undead legion wszystkie też, także wkrótce, szybko. W I., I. z these starożytny przerażenie, zgroza był jeden I. w jego I. I., I. Niew that oni masz I. the okropny I. z undeath oni masz stawać się naprawdę groźny, trudny, dla Nie magister nauk humanistycznych, magister way do I. ich dla I.. Nie I. jak hard oni są hit the starożytny I. bound do ich mummified ciało will zawsze make ich rise ponownie w wszystkie ich przerażać I. do take zemsta na the I..",
+      "lang": "Ancient mummies are fiends of horrendous powers. Only the bravest warriors dare to challenge them, and most of these fools join the ranks of the mummie's undead legions all too soon. In life, each of these ancient horrors was a champion in his own right, but now that they have entered the dreadful state of undeath they have become truly formidable, for there is no way to kill them for good. No matter how hard they are hit the ancient powers bound to their mummified bodies will always make them rise again in all their horrifying glory to take revenge on the living."
+    },
+    {
+      "key": "book.otbm.and_all_life_threatened_to",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "and all life threatened to be suffocated thereby.",
+      "pl": "i wszystkie I. grozić do być suffocated skutkiem tego, przez to.",
+      "lang": "and all life threatened to be suffocated thereby."
+    },
+    {
+      "key": "book.otbm.and_as_all_gnomes_he",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "And as all gnomes he was a treacherous, greedy coward (and that's pretty treacherous, greedy and cowardish). One day in the middle of a deep forest the little gnome met a little girl wearing a pretty red cap. As the greedy gnome saw that she was carrying a bag full of finest bread and a flask of wine, he pretended to be starving and begged the little girl for food and water in a way anoying as only gnomes can be (and that's pretty anoying). But the girl was warned of treacherous gnomes by a valiant huntsman she met before and she quickly ran away from the greedy little gnome. The gnome became angry but was afraid to steal from her, because she might have been stronger than him. So he wandered into the woods cursing as only gnomes can curse (and that's pretty ugly). By chance he almost stumbled over a sleeping bard. Quickly figuring out the magical nature of the flute lying near the sleeping bard, he stole it as quickly as only a gnome can do (and that's pretty quick). Using the magic flute he lured a pack of wolves to the little girls grandmas house and let the beasts chase both into the wilderness and laughed wickedly as only gnomes can laugh (and that's pretty wicked). Laughing the gnome gulped the wine and swallowed the bread as fast as only gnomes can (and that's pretty fast). So he lived in the woods and molested squirrels happily ever after.",
+      "pl": "I as wszystkie gNiemes on był jeden zdradliwy, chciwy, łapczywy coward (i that's I. zdradliwy, chciwy, łapczywy i cowardish). I. dzień w the I. z jeden I. las the little gNieme met jeden little dziewczynka wyczerpujący jeden I. I. I.. As the chciwy, łapczywy gNieme saw that ona był I. jeden torba, worek I. z finest chleb i jeden piersiówka z wino, on udawać do być starving i begged the little dziewczynka dla jedzenie, pożywienie i I. w jeden way aNieying as tylko gNiemes może być (i that's I. aNieying). I. the dziewczynka był ostrzegać, uprzedzać z zdradliwy gNiemes by jeden bohaterski, dzielny huntsman ona met I. i ona szybki, prędki ran I. z the chciwy, łapczywy little gNieme. The gNieme became zły I. był wystraszony do kraść z her, ponieważ, bo ona might masz był silny, mocny z niż him. I. on wędrować a. do the drewno cursing as tylko gNiemes może curse (i that's I. brzydki). By szansa on prawie stumbled I. jeden I. bard. Szybki, prędki figuring out the czarodziejski, magiczny natura z the flet lying I. the I. bard, on stole to as szybki, prędki as tylko jeden gNieme może robić (i that's I. szybki, prędki). Using the I. flet on lured jeden I. z wolves do the little dziewczynka babcia dom i let the zwierzę I. obaj a. do the pustkowie, pustynia i I. zły, niegodziwy as tylko gNiemes może I. (i that's I. zły, niegodziwy). I. the gNieme I. the wino i I. the chleb as I. as tylko gNiemes może (i that's I. I.). I. on lived w the drewno i napastować wiewiórka happily kiedykolwiek after.",
+      "lang": "And as all gnomes he was a treacherous, greedy coward (and that's pretty treacherous, greedy and cowardish). One day in the middle of a deep forest the little gnome met a little girl wearing a pretty red cap. As the greedy gnome saw that she was carrying a bag full of finest bread and a flask of wine, he pretended to be starving and begged the little girl for food and water in a way anoying as only gnomes can be (and that's pretty anoying). But the girl was warned of treacherous gnomes by a valiant huntsman she met before and she quickly ran away from the greedy little gnome. The gnome became angry but was afraid to steal from her, because she might have been stronger than him. So he wandered into the woods cursing as only gnomes can curse (and that's pretty ugly). By chance he almost stumbled over a sleeping bard. Quickly figuring out the magical nature of the flute lying near the sleeping bard, he stole it as quickly as only a gnome can do (and that's pretty quick). Using the magic flute he lured a pack of wolves to the little girls grandmas house and let the beasts chase both into the wilderness and laughed wickedly as only gnomes can laugh (and that's pretty wicked). Laughing the gnome gulped the wine and swallowed the bread as fast as only gnomes can (and that's pretty fast). So he lived in the woods and molested squirrels happily ever after."
+    },
+    {
+      "key": "book.otbm.and_finally_he_spoke_to",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "And finally he spoke to Gabel: \"Alas! Truly thy race hath suffered! But there is hope, mylord, hope even for your race that has been deserted by its reckless creator!\" And he went on to teach him the ways of abjuration and of enlightenment. And Gabel listened and learned, and when he saw the wisdom in Daraman's words he decided to renounce the old ways. And soon many others of his race embraced the holy words and became proselytes of Daraman's creed.",
+      "pl": "I w końcu, ostatecznie on szprycha do Gabel: \"Alas! Naprawdę thy I. hath cierpieć! I. Dowcip I., mylord, I. I. dla twój I. that ma był deserted by jego, jej, ich, swój lekkomyślny creator!\" I on went na do uczyć him the ways z abjuration i z oświecenie. I Gabel I. i uczony, i when on saw the I. w Daraman's I. on decided do reNieunce the I. ways. I wkrótce, szybko wiele, dużo drugi, pozostały z jego I. embraced the święty I. i became proselytes z Daraman's creed.",
+      "lang": "And finally he spoke to Gabel: \"Alas! Truly thy race hath suffered! But there is hope, mylord, hope even for your race that has been deserted by its reckless creator!\" And he went on to teach him the ways of abjuration and of enlightenment. And Gabel listened and learned, and when he saw the wisdom in Daraman's words he decided to renounce the old ways. And soon many others of his race embraced the holy words and became proselytes of Daraman's creed."
+    },
+    {
+      "key": "book.otbm.and_immediately_the_dead_ones",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "And immediately the dead ones began to raise themselves on his calling, and they all were his creatures. Like the orcs before",
+      "pl": "I natychmiast the dead na began do I. się, siebie, sobie na jego powołanie, i oni wszystkie były jego stwory. Like the orcs I.",
+      "lang": "And immediately the dead ones began to raise themselves on his calling, and they all were his creatures. Like the orcs before"
+    },
+    {
+      "key": "book.otbm.and_maically_erected_a_hedge",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "and maically erected a hedge which they empowered with magic. The queen was not happy but did not intervene to stop them. Since then the area is known as the ghostlands (and several other nicknames suggesting the same).",
+      "pl": "i maically I. jeden I. I. oni upoważniać, przyznawać prawo z I.. The królowa był Niet a. szczęśliwy I. zrobił Niet interweniować, ingerować do stop ich. I. wtedy the obszar, region jest kNiewn as the ghostlands (i I. drugi, pozostały I. sugerować the I.).",
+      "lang": "and maically erected a hedge which they empowered with magic. The queen was not happy but did not intervene to stop them. Since then the area is known as the ghostlands (and several other nicknames suggesting the same)."
+    },
+    {
+      "key": "book.otbm.and_omruc_the_dreaded_hunter",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "And Omruc, the dreaded hunter and assassin. None of his victims ever saw it coming, and none of them ever escaped.",
+      "pl": "I Omruc, the I. myśliwy i morderca. Niene z jego ofiara kiedykolwiek saw to nadchodzący, i Niene z ich kiedykolwiek escaped.",
+      "lang": "And Omruc, the dreaded hunter and assassin. None of his victims ever saw it coming, and none of them ever escaped."
+    },
+    {
+      "key": "book.otbm.and_once_again_all_were",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "And once again, all were there. Once again, the seven were united.",
+      "pl": "I raz ponownie, wszystkie były there. Raz ponownie, the siedem były jednostka.",
+      "lang": "And once again, all were there. Once again, the seven were united."
+    },
+    {
+      "key": "book.otbm.and_scribbled_below_fluids_wands",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "(and scribbled below: fluids, wands, rods and runes!)",
+      "pl": "(i scribbled poniżej, niżej: I., czarodziejska różdżka, różdżka, pręt i runes!)",
+      "lang": "(and scribbled below: fluids, wands, rods and runes!)"
+    },
+    {
+      "key": "book.otbm.and_so_it_came_to",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "And so it came to pass that Gabel, the mighty king of the djinns, took interest in Daraman. Here was something that he, who had seen so many things, could simply not understand, and he was determined to find out more about it. In the beginning he was still convinced that the prophet, like all other humans, was driven by a secret weakness, and he tried to use many other temptations to test the prophet. He clad the old man in silk and offered him a thousand gifts. But Daraman was as unimpressed by the djinns' fabulous wealth as he had been unimpressed by their tortures, and he politely rejected all gifts. And when Gabel finally asked him if he did not appreciate his gifts Daraman answered \"Mylord, I am an old man who has little use for pretty baubles. And truly I have never valued a thing that could be bought for gold.\" It was then that Gabel realised that Daraman was indeed a holy man.",
+      "pl": "I I. to came do I. that Gabel, the I. król z the djinns, took I. w Daraman. Tutaj, tu był coś that on, kto miał seen I. wiele, dużo rzecz, mógł po prostu Niet rozumieć, pojmować, i on był zdecydowany do I. out more o to. W the początek on był I. convinced that the prorok, like wszystkie drugi, pozostały I., był driven by jeden I. słabość, i on tried do use wiele, dużo drugi, pozostały pokusa do I. the prorok. On przyodziany the I. man w I. i offered him jeden tysiąc dar, podarunek. I. Daraman był as unimpressed by the djinns' fantastyczny bogactwo as on miał był unimpressed by ich I., i on uprzejmy rejected wszystkie dar, podarunek. I when Gabel w końcu, ostatecznie I. him if on zrobił Niet doceniać jego dar, podarunek Daraman I. \"Mylord, I am jeden I. man kto ma little use dla I. błyskotka. I naprawdę I masz nigdy ceniony jeden rzecz that mógł być bought dla złota.\" To był wtedy that Gabel realised that Daraman był faktycznie, naprawdę jeden święty man.",
+      "lang": "And so it came to pass that Gabel, the mighty king of the djinns, took interest in Daraman. Here was something that he, who had seen so many things, could simply not understand, and he was determined to find out more about it. In the beginning he was still convinced that the prophet, like all other humans, was driven by a secret weakness, and he tried to use many other temptations to test the prophet. He clad the old man in silk and offered him a thousand gifts. But Daraman was as unimpressed by the djinns' fabulous wealth as he had been unimpressed by their tortures, and he politely rejected all gifts. And when Gabel finally asked him if he did not appreciate his gifts Daraman answered \"Mylord, I am an old man who has little use for pretty baubles. And truly I have never valued a thing that could be bought for gold.\" It was then that Gabel realised that Daraman was indeed a holy man."
+    },
+    {
+      "key": "book.otbm.and_so_the_conspirators_met",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "And so the conspirators met again in secrecy to plot the pharaoh's fall.",
+      "pl": "I I. the conspirators met ponownie w sekret, dyskrecja do I. the pharaoh's I..",
+      "lang": "And so the conspirators met again in secrecy to plot the pharaoh's fall."
+    },
+    {
+      "key": "book.otbm.and_the_lord_spake_saying",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "And the Lord spake, saying:",
+      "pl": "I the Lord spake, powiedzenie:",
+      "lang": "And the Lord spake, saying:"
+    },
+    {
+      "key": "book.otbm.and_then_suddenly_the_wand",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "And then suddenly the wand of might began to glow....",
+      "pl": "I wtedy nagle the czarodziejska różdżka, różdżka z might began do I.....",
+      "lang": "And then suddenly the wand of might began to glow...."
+    },
+    {
+      "key": "book.otbm.and_to_remedy_that_he",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "And to remedy that he invented TIME!",
+      "pl": "I do I. that on wynajdować, wymyślać CZAS!",
+      "lang": "And to remedy that he invented TIME!"
+    },
+    {
+      "key": "book.otbm.another_factor_is_the_shipping",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Another factor is the shipping dock and the woodcutting in the Venore area. Before the Edron colony was established, the Venore area was the major source for wood needed for constrution and tools. What seems odd at the first glance, given the swamp area Venore was built in becomes more understandable when considering the next factor: Until the Druids and mages drove away all those poisonous insects and creatures the area was known for its diseases and a criminal colony in the beginning. So the merchants had a steady supply of cheap workers that had to do every job appointed to.",
+      "pl": "ANiether czynnik jest the transport morski I. i the woodcutting w the VeNiere obszar, region. I. the Edron kolonia był zakładać, the VeNiere obszar, region był the I. źródło dla drewno potrzebować dla constrution i narzędzie. I. a. wydawać się być, wydawać się, zdawać się I. w the I. I., I. the I. obszar, region VeNiere był zbudowany w stawać się more zrozumiały when biorąc pod uwagę the next czynnik: I. the Druids i mages droves I. wszystkie those poisoNieus owad i stwory the obszar, region był kNiewn dla jego, jej, ich, swój choroba, schorzenie i jeden criminal kolonia w the początek. I. the I. miał jeden I. I. z tani pracownik that miał do robić I. job mianować do.",
+      "lang": "Another factor is the shipping dock and the woodcutting in the Venore area. Before the Edron colony was established, the Venore area was the major source for wood needed for constrution and tools. What seems odd at the first glance, given the swamp area Venore was built in becomes more understandable when considering the next factor: Until the Druids and mages drove away all those poisonous insects and creatures the area was known for its diseases and a criminal colony in the beginning. So the merchants had a steady supply of cheap workers that had to do every job appointed to."
+    },
+    {
+      "key": "book.otbm.apothecary_and_holy_grounds_of",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Apothecary and Holy Grounds of the Dark Priestesses.",
+      "pl": "Apothecary i Święty Ziemia z the I. Kapłanka.",
+      "lang": "Apothecary and Holy Grounds of the Dark Priestesses."
+    },
+    {
+      "key": "book.otbm.apparently_winning_uman_gave_humans",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "apparently winning. Uman gave humans the art of magic and instructed them in the magic crafts. But even the sorcerers could",
+      "pl": "pozorny I.. Uman gave I. the I. z I. i instruować ich w the I. crafts. I. I. the sorcerers mógł",
+      "lang": "apparently winning. Uman gave humans the art of magic and instructed them in the magic crafts. But even the sorcerers could"
+    },
+    {
+      "key": "book.otbm.aquatic_life_observation_tank",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Aquatic Life Observation Tank",
+      "pl": "Wodny I. Obserwacja I.",
+      "lang": "Aquatic Life Observation Tank"
+    },
+    {
+      "key": "book.otbm.armaments_chapter_two_verses_nine",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Armaments, Chapter Two, Verses Nine to Twenty-One.",
+      "pl": "Uzbrojenie, Rozdział Dwa, Wiersz Dziewięć do Dwadzieścia-I..",
+      "lang": "Armaments, Chapter Two, Verses Nine to Twenty-One."
+    },
+    {
+      "key": "book.otbm.armies_of_humans_they_triumphed",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "armies of humans, they triumphed, but on the other battlegrounds they were too often crushed by the dark crowds.",
+      "pl": "wojsko, armia z I., oni I., I. na the drugi, pozostały teren walki oni były też, także często crushed by the I. crowds.",
+      "lang": "armies of humans, they triumphed, but on the other battlegrounds they were too often crushed by the dark crowds."
+    },
+    {
+      "key": "book.otbm.armour_and_weapon_storage",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Armour and Weapon Storage",
+      "pl": "Armour i Broń Magazynowanie, przechowywanie",
+      "lang": "Armour and Weapon Storage"
+    },
+    {
+      "key": "book.otbm.as_expected_nothing_useful_could",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "As expected nothing useful could be learnt, even though the vampiric regeneration could once again be observed.",
+      "pl": "As spodziewać się Niething użyteczny mógł być learnt, I. I. the vampiric regeneration mógł raz ponownie być observed.",
+      "lang": "As expected nothing useful could be learnt, even though the vampiric regeneration could once again be observed."
+    },
+    {
+      "key": "book.otbm.as_expected_sunlight_had_an",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "As expected sunlight had an effect on the creatures though not as severe and effective as one might wish.",
+      "pl": "As spodziewać się słońce, światło słońca miał jeden I. na the stwory I. Niet as poważny, niebezpieczny i efektywny as I. might I..",
+      "lang": "As expected sunlight had an effect on the creatures though not as severe and effective as one might wish."
+    },
+    {
+      "key": "book.otbm.as_intensely_as_the_orcs",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "As intensely as the orcs hate all other races, they share a feeling of community. The orcs can sense, to some extent, the feelings of other orcs. The shamans develop this ability to such an extent, that they can sense the innermost potential of newborn orc whelps. All newborn are tested and the shamans decide a future function in orcish society. The whelps are fed differently, raised differently, and educated differently. Wise men of other races say that such behavior is similar to some insects, such as bees, and through their empathetic bond might share a kind of 'hive-mind', so they refer to orc communities as hives. The chief of a hive owns a big harem of women who have no other function than to pleasure him and give birth to new orcs. These orcish matrons are usually incredibly big and fat, almost not able to walk on their own. Where 'normal' orcwomen function as laborer and craftwomen and give birth to two to three orcs in their lives, these female orcs are only reproductive machinery, giving birth to about six whelps each half year. Orcs are usually contend with their place in orcish society and only the leaders fight each other on purpose. Rarely will an orc raise a weapon against another orc, even if they are not of the same hive. Rivalry between hives is usually dissolved through a fight of their leaders and the victorious hive absorbs the other one. Now and then, when a new strong warrior reaches maturity he challenges the old leader for a fight of supremacy. Sometimes though, when the hive becomes too big for the area it occupies, such a warrior senses somehow that its time to move on. Then he and a few other orcs leave the hive in peace to settle somewhere else. This unique culture, together with its fertility, makes the orcs the most formidable threat to all other tibian communities.",
+      "pl": "As gwałtowny, silny as the orcs I. wszystkie drugi, pozostały Królewski Automobilklub, oni I. jeden uczucie z I.. The orcs może sense, do I. rozmiar, the uczucie z drugi, pozostały orcs. The shamans rozwijać się, rozwijać I. zdolność, możliwość do taki jeden rozmiar, that oni może sense the innermost I. z nowonarodzony orc whelps. Wszystkie nowonarodzony są I. i the shamans decydować się, decydować jeden I. I. w orcish społeczeństwo. The whelps są fed różny, wyniesiony, wypukły różny, i educated różny. I. men z drugi, pozostały Królewski Automobilklub I. that taki behavior jest podobny do I. owad, taki as być, i through ich empathetic I. might I. jeden I. z 'ul-mind', I. oni wspominać do orc I. as ul. The I. z jeden ul I. jeden duży, wielki harem z women kto masz Nie drugi, pozostały I. z niż do radość, przyjemność him i give I. do new orcs. These orcish siostra przełożona są zazwyczaj incredibly duży, wielki i I., prawie Niet zdolny do I. na ich I.. Where 'Niermal' orcwomen I. as laborer i craftwomen i give I. do dwa do trzy orcs w ich lives, these I. orcs są tylko rozrodczy urządzenia mechaniczne, maszyny, giving I. do o sześć whelps I. I. a. rok. Orcs są zazwyczaj współzawodniczyć z ich I. w orcish społeczeństwo i tylko the lider, przywódca I. I. drugi, pozostały na cel. Rzadko will jeden orc I. jeden broń o aNiether orc, I. if oni są Niet z the I. ul. Rywalizacja pomiędzy, między ul jest zazwyczaj dissolved through jeden I. z ich lider, przywódca i the zwycięski ul wchłaniać the drugi, pozostały I.. Niew i wtedy, when jeden new silny, mocny wojownik reaches dojrzałość, dorosłość on I. the I. lider, przywódca dla jeden I. z przewaga, supremacja. Kiedyś, pewnego razu I., when the ul stawać się też, także duży, wielki dla the obszar, region to zajmować, taki jeden wojownik senses w jakiś sposób, jakoś that jego, jej, ich, swój czas do I. na. Wtedy on i jeden few drugi, pozostały orcs I. the ul w peace do I. gdzieś a. inny, jeszcze. I. unikalny, unikatowy culture, razem z jego, jej, ich, swój fertility, makes the orcs the most groźny, trudny groźba do wszystkie drugi, pozostały tibian I..",
+      "lang": "As intensely as the orcs hate all other races, they share a feeling of community. The orcs can sense, to some extent, the feelings of other orcs. The shamans develop this ability to such an extent, that they can sense the innermost potential of newborn orc whelps. All newborn are tested and the shamans decide a future function in orcish society. The whelps are fed differently, raised differently, and educated differently. Wise men of other races say that such behavior is similar to some insects, such as bees, and through their empathetic bond might share a kind of 'hive-mind', so they refer to orc communities as hives. The chief of a hive owns a big harem of women who have no other function than to pleasure him and give birth to new orcs. These orcish matrons are usually incredibly big and fat, almost not able to walk on their own. Where 'normal' orcwomen function as laborer and craftwomen and give birth to two to three orcs in their lives, these female orcs are only reproductive machinery, giving birth to about six whelps each half year. Orcs are usually contend with their place in orcish society and only the leaders fight each other on purpose. Rarely will an orc raise a weapon against another orc, even if they are not of the same hive. Rivalry between hives is usually dissolved through a fight of their leaders and the victorious hive absorbs the other one. Now and then, when a new strong warrior reaches maturity he challenges the old leader for a fight of supremacy. Sometimes though, when the hive becomes too big for the area it occupies, such a warrior senses somehow that its time to move on. Then he and a few other orcs leave the hive in peace to settle somewhere else. This unique culture, together with its fertility, makes the orcs the most formidable threat to all other tibian communities."
+    },
+    {
+      "key": "book.otbm.as_intensely_as_the_orcs_6bef4fc7",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "As intensely as the orcs hate all other races, they share a feeling of community. The orcs can sense, to some extent, the feelings of other orcs. The shamans develop this ability to such an extent, that they can sense the innermost potential of newborn orc whelps. All newborn are tested and the shamans decide a future function in orcish society. The whelps are fed differently, raised differently, and educated differently. Wise men of other races say that such behavior is similar to some insects, such as bees, and through their empathetic bond might share a kind of 'hive-mind', so they refer to orc communities as hives. The chief of a hive owns a big harem of women who have no other function than to pleasure him and give birth to new orcs. These orcish matrons are usually incredibly big and fat, almost not able to walk on their own. Where 'normal' orcwomen function as laborer and craftwomen and give birth to two to three orcs in their lives, these female orcs are only reproductive machinery, giving birth to about six whelps each half year. Orcs are usually contend with their place in orcish society and only the leaders fight each other on purpose. Rarely will an orc raise a weapon against another orc, even if they are not of the same hive. Rivalry between hives is usually dissolved through a fight of their leaders and the victorious hive absorbs the other one. Now and then, when a new strong warrior reaches maturity he challenges the old leader for a fight of supremacy. Sometimes though, when the hive becomes too big for the area it occupies, such a warrior senses somehow that its time to move on. Then he and a few other orcs leave the hive in peace to settle somewhere else. This unique culture, together with its fertility, makes the orcs the most formidable threat to all other tibian communities.",
+      "pl": "As gwałtowny, silny as the orcs I. wszystkie drugi, pozostały Królewski Automobilklub, oni I. jeden uczucie z I.. The orcs może sense, do I. rozmiar, the uczucie z drugi, pozostały orcs. The shamans rozwijać się, rozwijać I. zdolność, możliwość do taki jeden rozmiar, that oni może sense the innermost I. z nowonarodzony orc whelps. Wszystkie nowonarodzony są I. i the shamans decydować się, decydować jeden I. I. w orcish społeczeństwo. The whelps są fed różny, wyniesiony, wypukły różny, i educated różny. I. men z drugi, pozostały Królewski Automobilklub I. that taki behavior jest podobny do I. owad, taki as być, i through ich empathetic I. might I. jeden I. z 'ul-mind', I. oni wspominać do orc I. as ul. The I. z jeden ul I. jeden duży, wielki harem z women kto masz Nie drugi, pozostały I. z niż do radość, przyjemność him i give I. do new orcs. These orcish siostra przełożona są zazwyczaj incredibly duży, wielki i I., prawie Niet zdolny do I. na ich I.. Where 'Niermal' orcwomen I. as laborer i craftwomen i give I. do dwa do trzy orcs w ich lives, these I. orcs są tylko rozrodczy urządzenia mechaniczne, maszyny, giving I. do o sześć whelps I. I. a. rok. Orcs są zazwyczaj współzawodniczyć z ich I. w orcish społeczeństwo i tylko the lider, przywódca I. I. drugi, pozostały na cel. Rzadko will jeden orc I. jeden broń o aNiether orc, I. if oni są Niet z the I. ul. Rywalizacja pomiędzy, między ul jest zazwyczaj dissolved through jeden I. z ich lider, przywódca i the zwycięski ul wchłaniać the drugi, pozostały I.. Niew i wtedy, when jeden new silny, mocny wojownik reaches dojrzałość, dorosłość on I. the I. lider, przywódca dla jeden I. z przewaga, supremacja. Kiedyś, pewnego razu I., when the ul stawać się też, także duży, wielki dla the obszar, region to zajmować, taki jeden wojownik senses w jakiś sposób, jakoś that jego, jej, ich, swój czas do I. na. Wtedy on i jeden few drugi, pozostały orcs I. the ul w peace do I. gdzieś a. inny, jeszcze. I. unikalny, unikatowy culture, razem z jego, jej, ich, swój fertility, makes the orcs the most groźny, trudny groźba do wszystkie drugi, pozostały tibian I..",
+      "lang": "As intensely as the orcs hate all other races, they share a feeling of community. The orcs can sense, to some extent, the feelings of other orcs. The shamans develop this ability to such an extent, that they can sense the innermost potential of newborn orc whelps. All newborn are tested and the shamans decide a future function in orcish society. The whelps are fed differently, raised differently, and educated differently. Wise men of other races say that such behavior is similar to some insects, such as bees, and through their empathetic bond might share a kind of 'hive-mind', so they refer to orc communities as hives. The chief of a hive owns a big harem of women who have no other function than to pleasure him and give birth to new orcs. These orcish matrons are usually incredibly big and fat, almost not able to walk on their own. Where 'normal' orcwomen function as laborer and craftwomen and give birth to two to three orcs in their lives, these female orcs are only reproductive machinery, giving birth to about six whelps each half year. Orcs are usually contend with their place in orcish society and only the leaders fight each other on purpose. Rarely will an orc raise a weapon against another orc, even if they are not of the same hive. Rivalry between hives is usually dissolved through a fight of their leaders and the victorious hive absorbs the other one. Now and then, when a new strong warrior reaches maturity he challenges the old leader for a fight of supremacy. Sometimes though, when the hive becomes too big for the area it occupies, such a warrior senses somehow that its time to move on. Then he and a few other orcs leave the hive in peace to settle somewhere else. This unique culture, together with its fertility, makes the orcs the most formidable threat to all other tibian communities."
+    },
+    {
+      "key": "book.otbm.as_long_as_the_pits",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "As long as the pits were defended by the Nightmare Knights, who must have known previously when an eruption would occur, the demons could be fought back while they were still materialising and thus, most vulnerable. Now that the pits are lost and overrun by demonic hordes, an attack becomes more and more likely.",
+      "pl": "As long as the dół, jama były bronić by the Zły sen I., kto musi masz kNiewn poprzednio when jeden wybuch would zdarzać się, następować, the demon mógł być fought I. I. oni były I. materialising i toteż, dlatego, most wrażliwy, podatny na zranienie, podatny. Niew that the dół, jama są I. i przechwytywać by demoniczny, złowrogi zgraja, horda, jeden I. stawać się more i more możliwy.",
+      "lang": "As long as the pits were defended by the Nightmare Knights, who must have known previously when an eruption would occur, the demons could be fought back while they were still materialising and thus, most vulnerable. Now that the pits are lost and overrun by demonic hordes, an attack becomes more and more likely."
+    },
+    {
+      "key": "book.otbm.as_long_as_there_are",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "As long as there are enough minions to boost the negative energy of a place, demons can exist for a very long time in our realm. So in theory, it would also be possible that the gate between the two realms is kept open, allowing more and more demons to enter our world that can easily form a demonic army causing mayhem and havoc.",
+      "pl": "As long as Są eNieugh minions do I. the I. energia z jeden I., demon może istnieć dla jeden I. long czas w nasz dziedzina, sfera. I. w teoria, to would także być możliwy that the brama pomiędzy, między the dwa dziedzina, sfera jest kept otwórz, I. more i more demon do I. nasz I. that może łatwo I. jeden demoniczny, złowrogi wojsko, armia causing mayhem i chaos, zamieszanie.",
+      "lang": "As long as there are enough minions to boost the negative energy of a place, demons can exist for a very long time in our realm. So in theory, it would also be possible that the gate between the two realms is kept open, allowing more and more demons to enter our world that can easily form a demonic army causing mayhem and havoc."
+    },
+    {
+      "key": "book.otbm.as_the_king_became_sick",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "As the king became sick and no one was able to heal him, the traitor stepped forward with a strange medicine. Trusting in his beloved servant, the king drank the medicine which actually was the blood of some servant that had been murdered recently. The medicine seemed to restore the king's strength, so the traitor had no trouble to feed him with more blood. Soon the king's appearance started to change. His aversion to sunlight and his paleness were attributed to his illness, but also the king's temper and behaviour turned more and more violent and aggressive. Nonetheless, the people loved their king and put up with his moods.",
+      "pl": "As the król became I. i Nie I. był zdolny do I. him, the zdrajca stepped I. z jeden dziwny medycyna. Ufny w jego ukochany I., the król drank the medycyna I. naprawdę był the I. z I. I. that miał był I. niedawno. The medycyna a. wydawać się być, wydawać się, zdawać się do przywracać the król siła, I. the zdrajca miał Nie I. do I. him z more I.. Wkrótce, szybko the król pojawienie się uruchomioNie do change. Jego wstręt do słońce, światło słońca i jego bladość były attributed do jego choroba, I. także the król I. i zachowanie się, zachowanie turned more i more gwałtowny i zaczepny, agresywny. Nienetheless, the I. loved ich król i put up z jego nastrój, humor.",
+      "lang": "As the king became sick and no one was able to heal him, the traitor stepped forward with a strange medicine. Trusting in his beloved servant, the king drank the medicine which actually was the blood of some servant that had been murdered recently. The medicine seemed to restore the king's strength, so the traitor had no trouble to feed him with more blood. Soon the king's appearance started to change. His aversion to sunlight and his paleness were attributed to his illness, but also the king's temper and behaviour turned more and more violent and aggressive. Nonetheless, the people loved their king and put up with his moods."
+    },
+    {
+      "key": "book.otbm.as_the_orcs_approached_ive",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "As the orcs approached I've hidden myself in the bushes near the lake. I did hardly dare to breath as they met only some inches from my nose. I thought my wild beating heart might betray me to this murderous beasts.",
+      "pl": "As the orcs I. I've hidden się, siebie, sobie w the krzak I. the jezioro. I zrobił prawie nie dare do a. oddech as oni met tylko I. I. z mój Niese. I myśl mój I. I. serce might zdradzać mnie, mi do I. morderczy zwierzę.",
+      "lang": "As the orcs approached I've hidden myself in the bushes near the lake. I did hardly dare to breath as they met only some inches from my nose. I thought my wild beating heart might betray me to this murderous beasts."
+    },
+    {
+      "key": "book.otbm.as_we_travelled_through_the",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "As we travelled through the dungeon tunnels we came to a big cave. In the light of our torches we saw several eyes glowing in the darkness, then the trolls attacked, silently as usual. We immediately dropped our torches and raised our shields to block the first attack, then we counterattacked. Soon the floor was wet with blood, ours and theirs. They were very skilled in blocking our blows and I am sure with inferior weapons we would have hacked on these beasts for an eternity.",
+      "pl": "As my podróżled through the loch, więzienie I. my came do jeden duży, wielki I.. W the I. z nasz latarka my saw I. eTak entuzjastyczny w the ciemność, wtedy the trolls I., cichy as zwyczajny. My natychmiast dropped nasz latarka i wyniesiony, wypukły nasz I. do block the I. I., wtedy my counterattacked. Wkrótce, szybko the I. był I. z I., nasz i ich. Oni były I. wykwalifikowany, wyszkolony w blocking nasz blows i I am sure z I. broń my would masz I. na these zwierzę dla jeden wieczność.",
+      "lang": "As we travelled through the dungeon tunnels we came to a big cave. In the light of our torches we saw several eyes glowing in the darkness, then the trolls attacked, silently as usual. We immediately dropped our torches and raised our shields to block the first attack, then we counterattacked. Soon the floor was wet with blood, ours and theirs. They were very skilled in blocking our blows and I am sure with inferior weapons we would have hacked on these beasts for an eternity."
+    },
+    {
+      "key": "book.otbm.as_with_other_tests_it",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "As with other tests it could be observed that the vampires have the ability of regeneration but not of regrowth.",
+      "pl": "As z drugi, pozostały I. to mógł być observed that the wampir masz the zdolność, możliwość z regeneration I. Niet z regrowth.",
+      "lang": "As with other tests it could be observed that the vampires have the ability of regeneration but not of regrowth."
+    },
+    {
+      "key": "book.otbm.ask_for_the_different_goods",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ask for the different goods you need.",
+      "pl": "I. dla the różny I. Potrzebujesz.",
+      "lang": "Ask for the different goods you need."
+    },
+    {
+      "key": "book.otbm.ask_muriel_to_learn_spells",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ask Muriel to learn spells or to",
+      "pl": "I. Muriel do uczyć się, nauczyć się zaklęCentalna Agencja Wywiadowcza lub do",
+      "lang": "Ask Muriel to learn spells or to"
+    },
+    {
+      "key": "book.otbm.at_a_store_sell_spare",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "at a store. Sell spare food at the farm.",
+      "pl": "w jeden I.. Sprzedaj I. jedzenie, pożywienie w the I..",
+      "lang": "at a store. Sell spare food at the farm."
+    },
+    {
+      "key": "book.otbm.at_last_even_baaleal_who",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "At last even Baa'leal, who led the Efreet in battle, had to admit that the Marid and their despised human allies fought valiantly. However, despite the heavy losses he was determined to decide the war there and now. He summoned the most powerful Efreet wizards and ordered them to unleash a huge column of magic fire onto Ankrahmun in order to render the city and all those in it to cinders. The Efreet wizards' followed his orders and soon a wall of devastating fire rose up to the sky. However, when they tried to move it onto Ankrahmun they soon realised that it did not move into the desired direction. The Marid had soon seen through Baa'leals plan, and Fa'hradin and his fellow Marid mages used their own magic to turn the devastating flames against their creators. A fierce battle of wills ensued between the mages from both sides, and the whole battle came to a halt when the two armies watched in horrified fascination as the terrible pile of flames wandered seemingly undecided to and fro. But then, all of a sudden, the pile made a sudden leap to the north, and within seconds those who had summoned it from the sky were reduced to smouldering ashes. That was the turning point of the great battle.",
+      "pl": "W last I. Baa'leal, kto led the Efreet w I., miał do przyznać się that the Marid i ich despised I. allies fought bohaterski, dzielny. Jednak, pomimo, mimo the ciężki strata, utrata on był zdecydowany do decydować się, decydować the I. there i Niew. On I. the most potężny Efreet czarnoksiężnik i ordered ich do uwalniać jeden ogromny kolumna z I. fire onto Ankrahmun w order do a. czynić, sprawiać the miasto i wszystkie those w to do cinders. The Efreet czarnoksiężnik' I. jego orders i wkrótce, szybko jeden ściana, mur z devastating fire I. up do the niebo. Jednak, when oni tried do I. to onto Ankrahmun oni wkrótce, szybko realised that to zrobił Niet I. a. do the desired kierunek. The Marid miał wkrótce, szybko seen through Baa'leals I., i Fa'hradin i jego facet, gość Marid mages used ich I. I. do turn the devastating płomień o ich creators. JEDEN zajadły I. z wills ensued pomiędzy, między the mages z obaj I., i the I. I. came do jeden zatrzymywać się, zatrzymywać when the dwa wojsko, armia watched w horrified fascynacja as the straszny, okropny pile z płomień wędrować pozorny niezdecydowany do i to and fro. I. wtedy, wszystkie z jeden nagły, the pile zrobiony jeden nagły I. do the Nierth, i wewnątrz sekundy those kto miał I. to z the niebo były reduced do smouldering popiół. That był the I. point z the I. I..",
+      "lang": "At last even Baa'leal, who led the Efreet in battle, had to admit that the Marid and their despised human allies fought valiantly. However, despite the heavy losses he was determined to decide the war there and now. He summoned the most powerful Efreet wizards and ordered them to unleash a huge column of magic fire onto Ankrahmun in order to render the city and all those in it to cinders. The Efreet wizards' followed his orders and soon a wall of devastating fire rose up to the sky. However, when they tried to move it onto Ankrahmun they soon realised that it did not move into the desired direction. The Marid had soon seen through Baa'leals plan, and Fa'hradin and his fellow Marid mages used their own magic to turn the devastating flames against their creators. A fierce battle of wills ensued between the mages from both sides, and the whole battle came to a halt when the two armies watched in horrified fascination as the terrible pile of flames wandered seemingly undecided to and fro. But then, all of a sudden, the pile made a sudden leap to the north, and within seconds those who had summoned it from the sky were reduced to smouldering ashes. That was the turning point of the great battle."
+    },
+    {
+      "key": "book.otbm.at_last_malor_prepared_for",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "At last, Malor prepared for a decisive strike. He sent a messenger to Gabel and challenged him to a personal duel. Gabel, who was prepared to do anything to stop the fratricidal war, accepted the challenge. The enemies agreed to meet in the fertile plains of Kha'labal. There they stood, face to face, the old king and the usurper, and so did their armies, because neither of two was gullible or foolish enough to come on his own. It was the greatest gathering of djinns in recorded history.",
+      "pl": "W last, Malor przygotowany dla jeden decydujący strike. On sent jeden posłaniec do Gabel i challenged him do jeden osobisty pojedynek. Gabel, kto był przygotowany do robić cokolwiek do stop the fratricidal I., przyjmować, uznawać the I.. The wróg agreed do spotykać się, spotykać w the żyzny I. z Kha'labal. There oni stood, I. do I., the I. król i the uzurpować, i I. zrobił ich wojsko, armia, ponieważ, bo I. z dwa był łatwowierny lub głupi, niemądry eNieugh do come na jego I.. To był the greatest I. z djinns w recorded historia.",
+      "lang": "At last, Malor prepared for a decisive strike. He sent a messenger to Gabel and challenged him to a personal duel. Gabel, who was prepared to do anything to stop the fratricidal war, accepted the challenge. The enemies agreed to meet in the fertile plains of Kha'labal. There they stood, face to face, the old king and the usurper, and so did their armies, because neither of two was gullible or foolish enough to come on his own. It was the greatest gathering of djinns in recorded history."
+    },
+    {
+      "key": "book.otbm.at_last_we_trapped_hugo",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "At last we trapped Hugo in the dungeon cellars!",
+      "pl": "W last my trapped Hugo w the loch, więzienie piwnica!",
+      "lang": "At last we trapped Hugo in the dungeon cellars!"
+    },
+    {
+      "key": "book.otbm.at_last_we_will_face",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "At last we will face Goshnar the evil one!",
+      "pl": "W last my will I. Goshnar the I. I.!",
+      "lang": "At last we will face Goshnar the evil one!"
+    },
+    {
+      "key": "book.otbm.at_least_a_leather_armor",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "at least a leather armor and a helmet, a wooden shield, and a short sword.",
+      "pl": "w najmniej jeden skóra armor i jeden kask, jeden drewniany I., i jeden short miecz.",
+      "lang": "at least a leather armor and a helmet, a wooden shield, and a short sword."
+    },
+    {
+      "key": "book.otbm.at_one_faraway_point_in",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "At one far-away point in history, the Yalahari seemingly vanished. Certain clues that our ancestors gathered, hint that they locked themselves in the city's centre and cut off all contact to their helpers. When the Augur sometime later dared to enter the inner city, the Yalahari were all gone - vanished without a trace. After getting over the initial shock, the Augur assumed the role of the Yalahari themselves. For a while they tried to get familiar with some of the secrets of their lost masters, but they were only able to understand the most basic concepts of the Yalahari's knowledge. They stuck to their usual tasks to keep the city running. Still, they were too few to keep the enormous city, of which they understood so little, in shape.",
+      "pl": "W I. far-I. point w historia, the Yalahari pozorny znikać. Pewny wskazówka, ślad that nasz przodek gromadzić się, gromadzić, I. that oni I. się, siebie, sobie w the miasto centre i cut off wszystkie I. do ich pomocnik. When the Wróżyć kiedyś, pewnego razu later dared do I. the wewnętrzny miasto, the Yalahari były wszystkie sb is gone - znikać bez jeden I.. After getting I. the I. I., the Wróżyć assumed the rola z the Yalahari się, siebie, sobie. Dla jeden I. oni tried do get znajomy z I. z the I. z ich I. I., I. oni były tylko zdolny do rozumieć, pojmować the most podstawowy pojęcie z the Yalahari's kNiewledge. Oni be stuck do ich zwyczajny zadanie, zajęcie do keep the miasto I.. I., oni były też, także few do keep the eNiermous miasto, z I. oni understood I. little, w I..",
+      "lang": "At one far-away point in history, the Yalahari seemingly vanished. Certain clues that our ancestors gathered, hint that they locked themselves in the city's centre and cut off all contact to their helpers. When the Augur sometime later dared to enter the inner city, the Yalahari were all gone - vanished without a trace. After getting over the initial shock, the Augur assumed the role of the Yalahari themselves. For a while they tried to get familiar with some of the secrets of their lost masters, but they were only able to understand the most basic concepts of the Yalahari's knowledge. They stuck to their usual tasks to keep the city running. Still, they were too few to keep the enormous city, of which they understood so little, in shape."
+    },
+    {
+      "key": "book.otbm.at_the_bottom_of_those",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "at the bottom of those pages*",
+      "pl": "w the I. z those I.*",
+      "lang": "at the bottom of those pages*"
+    },
+    {
+      "key": "book.otbm.at_the_great_bay_east",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "At the great bay, east of Thais lies a rotten town of criminals. Little is known about it and only the most ruthles people even think about travelling there.",
+      "pl": "W the I. I., I. z Thais lies jeden zepsuty, zgniły miasto z criminals. Little jest kNiewn o to i tylko the most ruthles I. I. I. o podróżling there.",
+      "lang": "At the great bay, east of Thais lies a rotten town of criminals. Little is known about it and only the most ruthles people even think about travelling there."
+    },
+    {
+      "key": "book.otbm.attempts_uman_consented_only_too",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "attempts. Uman consented only too readily, but Zathroth, the dark one of the twins, refused himself. Thus Fardos and Uman",
+      "pl": "I.. Uman I. tylko też, także ochoczo, skwapliwie, I. Zathroth, the I. I. z the I., refused się, siebie, sobie. Toteż, dlatego Fardos i Uman",
+      "lang": "attempts. Uman consented only too readily, but Zathroth, the dark one of the twins, refused himself. Thus Fardos and Uman"
+    },
+    {
+      "key": "book.otbm.attention_this_area_is_considered",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "ATTENTION: This area is considered evil and deemed restricted by direct decree of the inquisition. We cannot spare any men to guard this passage to keep outsiders from venturing deeper into the island but, know this: next to none of our own",
+      "pl": "UWAGA: I. obszar, region jest uważać I. i sądzić, domniemywać ograniczony by I. I. z the inquisition. My canNiet I. dowolny men do I. I. przejście do keep człowiek niezależny, człowiek nie związany z grupą z venturing I. a. do the wyspa I., kNiew I.: next do Niene z nasz I.",
+      "lang": "ATTENTION: This area is considered evil and deemed restricted by direct decree of the inquisition. We cannot spare any men to guard this passage to keep outsiders from venturing deeper into the island but, know this: next to none of our own"
+    },
+    {
+      "key": "book.otbm.attention_toad_is_spitting",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "ATTENTION: TOAD IS SPITTING",
+      "pl": "UWAGA: ROPUCHA JEST SPITTING",
+      "lang": "ATTENTION: TOAD IS SPITTING"
+    },
+    {
+      "key": "book.otbm.authorised_personnel_only",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Authorised Personnel only!",
+      "pl": "Authorised Personel, obsługa tylko!",
+      "lang": "Authorised Personnel only!"
+    },
+    {
+      "key": "book.otbm.awakened_the_old_races_and",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "awakened the old races and old frights back to life. It is said that the city of Tibia was the first to rise again, barren of almost all",
+      "pl": "rozbudzać the I. Królewski Automobilklub i I. strach, przestrach I. do I.. To jest said that the miasto z Tibia był the I. do rise ponownie, jałowy, bezpłodny z prawie wszystkie",
+      "lang": "awakened the old races and old frights back to life. It is said that the city of Tibia was the first to rise again, barren of almost all"
+    },
+    {
+      "key": "book.otbm.bad_side_for_a_long",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "bad side. For a long time they manipulated and pulled on the essence of Uman-Zathroth, but only to detect that this unitity was",
+      "pl": "zły, niedobry I.. Dla jeden long czas oni manipulated i I. na the istota, podstawa z Uman-Zathroth, I. tylko do wyczuwać that I. unitity był",
+      "lang": "bad side. For a long time they manipulated and pulled on the essence of Uman-Zathroth, but only to detect that this unitity was"
+    },
+    {
+      "key": "book.otbm.banana_cherry_grapes_melon_carrot",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "banana, cherry, grapes, melon, carrot, cookie, roll, brown bread, egg, cheese",
+      "pl": "banan, I., winogrono, melon, arbuz, marchewka, herbatnik, ciastko, I., I. chleb, I., ser",
+      "lang": "banana, cherry, grapes, melon, carrot, cookie, roll, brown bread, egg, cheese"
+    },
+    {
+      "key": "book.otbm.banor_however_chose_the_noblest",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Banor however chose the noblest of the mortal ones, Kirana, as its wife, and she bore him Elane, which possessed as much",
+      "pl": "BaNier jednak chose the Nieblest z the I. na, Kirana, as jego, jej, ich, swój żona, i ona I. him Elane, I. posiadać as dużo, bardzo",
+      "lang": "Banor however chose the noblest of the mortal ones, Kirana, as its wife, and she bore him Elane, which possessed as much"
+    },
+    {
+      "key": "book.otbm.banor_i_praise_your_name",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Banor I praise your name.",
+      "pl": "BaNier I I. twój nazwa.",
+      "lang": "Banor I praise your name."
+    },
+    {
+      "key": "book.otbm.basement_souterrain_training_statues",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Basement (souterrain): Training Statues",
+      "pl": "Suterena (souterrain): Trening Posąg",
+      "lang": "Basement (souterrain): Training Statues"
+    },
+    {
+      "key": "book.otbm.basement_the_trading_room_training",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Basement - The Trading Room, Training Center and Bank",
+      "pl": "Suterena - The Trading miejsce, Trening Cent i Bank",
+      "lang": "Basement - The Trading Room, Training Center and Bank"
+    },
+    {
+      "key": "book.otbm.basic_spells_for_apprentices",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Basic spells for apprentices.",
+      "pl": "Podstawowy zaklęCentalna Agencja Wywiadowcza dla terminator, praktykant.",
+      "lang": "Basic spells for apprentices."
+    },
+    {
+      "key": "book.otbm.bastesh_allowed_him_to_enter",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bastesh allowed him to enter her realm in his early years",
+      "pl": "Bastesh I. him do I. her dziedzina, sfera w jego ucho a. rok",
+      "lang": "Bastesh allowed him to enter her realm in his early years"
+    },
+    {
+      "key": "book.otbm.basteth_wanted_to_come_to",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Basteth wanted to come to aid her cousin, but her creatures, large and dreadful as they were simply could not walk ashore.",
+      "pl": "Basteth I. do come do I. her cousin, I. her stwory, large i okropny as oni były po prostu mógł Niet I. na brzeg, do brzegu.",
+      "lang": "Basteth wanted to come to aid her cousin, but her creatures, large and dreadful as they were simply could not walk ashore."
+    },
+    {
+      "key": "book.otbm.battle_tactics_for_demona",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Battle tactics for Demona",
+      "pl": "I. taktyka dla Demona",
+      "lang": "Battle tactics for Demona"
+    },
+    {
+      "key": "book.otbm.battle_tactics_for_demona_mazeforces",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Battle tactics for Demona - Mazeforces",
+      "pl": "I. taktyka dla Demona - Mazeforces",
+      "lang": "Battle tactics for Demona - Mazeforces"
+    },
+    {
+      "key": "book.otbm.battletactics_for_mages_i",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Battletactics for Mages [I]",
+      "pl": "Battletactics dla Mages [I]",
+      "lang": "Battletactics for Mages [I]"
+    },
+    {
+      "key": "book.otbm.battletactics_for_mages_ii",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Battletactics for Mages [II]",
+      "pl": "Battletactics dla Mages [II]",
+      "lang": "Battletactics for Mages [II]"
     }
   ],
   "length_ratio_issues": [
@@ -3765,6 +3765,15 @@
       "en_len": 12,
       "lang_ratio": 0.917,
       "pl_ratio": 3.0
+    },
+    {
+      "key": "achievement.411.name",
+      "category": "achievements",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 9,
+      "lang_ratio": 0.778,
+      "pl_ratio": 3.556
     },
     {
       "key": "npc.a_ghostly_sage.stdmod_4",
@@ -4291,8 +4300,8 @@
   ],
   "auto_fix": {
     "attempted": 80,
-    "applied": 68,
-    "skipped": 12,
+    "applied": 66,
+    "skipped": 14,
     "errors": 0
   }
 }

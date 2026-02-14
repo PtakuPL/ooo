@@ -4,7 +4,7 @@
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-14T10:32:08.135149Z",
+  "checked_at": "2026-02-14T10:45:50.242784Z",
   "issues_total": 493,
   "issues_by_type": {
     "consistency_in_language": 52,
@@ -464,6 +464,22 @@
     {
       "type": "crossref_inconsistent_translation",
       "severity": "MEDIUM",
+      "en": "Malkhar Deathbringer",
+      "variants": [
+        "Malkhar Deathbringer Stop",
+        "Malkhar Portador de la Muerte"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "monsters:monster.malkhar_deathbringer.name",
+        "monsters:monster.malkhar_deathbringer.desc",
+        "monsters:monster.malkhar_deathbringer_stop.name",
+        "monsters:monster.malkhar_deathbringer_stop.desc"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
       "en": "Dorokoll The Mystic",
       "variants": [
         "dorokoll místico",
@@ -630,20 +646,6 @@
       "examples": [
         "monsters:monster.spidris_elite.name",
         "monsters:monster.spidris_elitesumom.name"
-      ]
-    },
-    {
-      "type": "crossref_inconsistent_translation",
-      "severity": "MEDIUM",
-      "en": "Do you, by chance, would like to kill pirates again for us?",
-      "variants": [
-        "",
-        "¿Por casualidad te gustaría volver a matar piratas por nosotros?"
-      ],
-      "variants_count": 2,
-      "examples": [
-        "npc:npc.raymond_striker.multi_2",
-        "npc:npc.raymond_striker.say_12"
       ]
     },
     {
@@ -1152,33 +1154,6 @@
       "lang": "Prek tars, dekklep zurk."
     },
     {
-      "key": "monster.little_corym_charlatan.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a little corym charlatan",
-      "pl": "mały szarlatan",
-      "lang": "a little corym charlatan"
-    },
-    {
-      "key": "monster.orc_warrior.voice_3",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Grow truk grrrr.",
-      "pl": "I. truk grrrr.",
-      "lang": "Grow truk grrrr."
-    },
-    {
-      "key": "monster.orc.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Grow truk grrrrr.",
-      "pl": "I. truk grrrrr.",
-      "lang": "Grow truk grrrrr."
-    },
-    {
       "key": "monster.orc.voice_2",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -1186,276 +1161,6 @@
       "en": "Prek tars, dekklep zurk.",
       "pl": "Prek I., dekklep zurk.",
       "lang": "Prek tars, dekklep zurk."
-    },
-    {
-      "key": "monster.young_troll.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hmmm, dogs",
-      "pl": "Hmmm, I.",
-      "lang": "Hmmm, dogs"
-    },
-    {
-      "key": "monster.dwarf.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hail Durin!",
-      "pl": "I. Durin!",
-      "lang": "Hail Durin!"
-    },
-    {
-      "key": "monster.dwarf_soldier.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hail Durin!",
-      "pl": "I. Durin!",
-      "lang": "Hail Durin!"
-    },
-    {
-      "key": "monster.goblin_scavenger.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Shiny, shiny!",
-      "pl": "Błyszczący, błyszczący!",
-      "lang": "Shiny, shiny!"
-    },
-    {
-      "key": "monster.goblin_scavenger.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You mean!",
-      "pl": "Ty I.!",
-      "lang": "You mean!"
-    },
-    {
-      "key": "monster.goblin_scavenger.voice_3",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "All mine!",
-      "pl": "Wszystkie I.!",
-      "lang": "All mine!"
-    },
-    {
-      "key": "monster.crazed_summer_rearguard.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Is this real life?",
-      "pl": "Jest I. I. I.?",
-      "lang": "Is this real life?"
-    },
-    {
-      "key": "monster.elf_arcanist.voice_5",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Feel my wrath!",
-      "pl": "I. mój gniew!",
-      "lang": "Feel my wrath!"
-    },
-    {
-      "key": "monster.cult_believer.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Cult Believer",
-      "pl": "Wierzący w sektę",
-      "lang": "Cult Believer"
-    },
-    {
-      "key": "monster.cult_believer.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a cult believer",
-      "pl": "wyznawca sekty",
-      "lang": "a cult believer"
-    },
-    {
-      "key": "monster.cult_believer.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Death to the unbelievers!",
-      "pl": "I. do the unbelievers!",
-      "lang": "Death to the unbelievers!"
-    },
-    {
-      "key": "monster.cult_enforcer.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Cult Enforcer",
-      "pl": "Strażnik Kultu",
-      "lang": "Cult Enforcer"
-    },
-    {
-      "key": "monster.cult_enforcer.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a cult enforcer",
-      "pl": "stróż kultu",
-      "lang": "a cult enforcer"
-    },
-    {
-      "key": "monster.goldhanded_cultist.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Money, money, money!",
-      "pl": "Pieniądze, pieniądze, pieniądze!",
-      "lang": "Money, money, money!"
-    },
-    {
-      "key": "monster.barkless_devotee.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Barkless Devotee",
-      "pl": "Barkless Wielbiciel",
-      "lang": "Barkless Devotee"
-    },
-    {
-      "key": "monster.barkless_devotee.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a barkless devotee",
-      "pl": "pozbawiony szczekania wielbiciel",
-      "lang": "a barkless devotee"
-    },
-    {
-      "key": "monster.barkless_devotee.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Prepare yourself!",
-      "pl": "Przygotowywać siebie!",
-      "lang": "Prepare yourself!"
-    },
-    {
-      "key": "monster.barkless_devotee.voice_3",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Pain and suffering!",
-      "pl": "I. i cierpienie!",
-      "lang": "Pain and suffering!"
-    },
-    {
-      "key": "monster.misguided_bully.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Misguided Bully",
-      "pl": "Misguided Znęcanie się",
-      "lang": "Misguided Bully"
-    },
-    {
-      "key": "monster.misguided_bully.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a misguided bully",
-      "pl": "wprowadzony w błąd tyran",
-      "lang": "a misguided bully"
-    },
-    {
-      "key": "monster.misguided_bully.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Found one!",
-      "pl": "Znaleziono I.!",
-      "lang": "Found one!"
-    },
-    {
-      "key": "monster.misguided_bully.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You shall be guided.",
-      "pl": "Ty a. będzie być guided.",
-      "lang": "You shall be guided."
-    },
-    {
-      "key": "monster.animated_rhino.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Snarl!",
-      "pl": "I.!",
-      "lang": "Snarl!"
-    },
-    {
-      "key": "monster.animated_rhino.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "SNIFF!",
-      "pl": "I.!",
-      "lang": "SNIFF!"
-    },
-    {
-      "key": "monster.essence_of_malice.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You will suffer!",
-      "pl": "Ty will cierpieć!",
-      "lang": "You will suffer!"
-    },
-    {
-      "key": "monster.malkhar_deathbringer.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Malkhar Deathbringer",
-      "pl": "Malkhar Niszczyciel Śmierci",
-      "lang": "Malkhar Deathbringer"
-    },
-    {
-      "key": "monster.last_planegazer.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Last Planegazer",
-      "pl": "Ostatni Planegazer",
-      "lang": "Last Planegazer"
-    },
-    {
-      "key": "monster.last_planegazer.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Last Planegazer",
-      "pl": "Ostatni Planegazer",
-      "lang": "Last Planegazer"
-    },
-    {
-      "key": "monster.ravenous_hunger.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "SU-*burp* SUFFEEER!",
-      "pl": "SU-*I.* SUFFEEER!",
-      "lang": "SU-*burp* SUFFEEER!"
-    },
-    {
-      "key": "monster.the_souldespoiler.voice_3",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " You will be mine!",
-      "pl": "Ty will być I.!",
-      "lang": " You will be mine!"
     },
     {
       "key": "monster.leiden.name",
@@ -1474,51 +1179,6 @@
       "en": "Leiden",
       "pl": "Lejda",
       "lang": "Leiden"
-    },
-    {
-      "key": "monster.vermin_swarm.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Vermin Swarm",
-      "pl": "Rój szkodników",
-      "lang": "Vermin Swarm"
-    },
-    {
-      "key": "monster.vermin_swarm.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a vermin swarm",
-      "pl": "rój szkodników",
-      "lang": "a vermin swarm"
-    },
-    {
-      "key": "monster.voidshard.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Voidshard",
-      "pl": "Odłamek Pustki",
-      "lang": "Voidshard"
-    },
-    {
-      "key": "monster.voidshard.desc",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a voidshard",
-      "pl": "pusty odłamek",
-      "lang": "a voidshard"
-    },
-    {
-      "key": "monster.barkless_fanatic.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Barkless Fanatic",
-      "pl": "Barkless Fanatyk",
-      "lang": "Barkless Fanatic"
     },
     {
       "key": "monster.barkless_fanatic.desc",
@@ -4399,6 +4059,348 @@
       "en": "Oberon's Bile",
       "pl": "Żółć Oberona",
       "lang": "Oberon's Bile"
+    },
+    {
+      "key": "monster.brother_freeze.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Brother Freeze",
+      "pl": "Brat Freeze",
+      "lang": "Brother Freeze"
+    },
+    {
+      "key": "monster.brother_freeze.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Brother Freeze",
+      "pl": "Brat Freeze",
+      "lang": "Brother Freeze"
+    },
+    {
+      "key": "monster.oberons_ire.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Oberon's Ire",
+      "pl": "Gniew Oberona",
+      "lang": "Oberon's Ire"
+    },
+    {
+      "key": "monster.oberons_ire.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Oberon's Ire",
+      "pl": "Gniew Oberona",
+      "lang": "Oberon's Ire"
+    },
+    {
+      "key": "monster.yalahari_despoiler.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a yalahari despoiler",
+      "pl": "łupieżca Yalahari",
+      "lang": "a yalahari despoiler"
+    },
+    {
+      "key": "monster.librarian.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Librarian",
+      "pl": "Bibliotekarz",
+      "lang": "Librarian"
+    },
+    {
+      "key": "monster.librarian.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a librarian",
+      "pl": "bibliotekarz",
+      "lang": "a librarian"
+    },
+    {
+      "key": "monster.oberons_spite.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Oberon's Spite",
+      "pl": "Złość Oberona",
+      "lang": "Oberon's Spite"
+    },
+    {
+      "key": "monster.oberons_spite.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Oberon's Spite",
+      "pl": "Złość Oberona",
+      "lang": "Oberon's Spite"
+    },
+    {
+      "key": "monster.oberons_hate.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Oberon's Hate",
+      "pl": "Nienawiść Oberona",
+      "lang": "Oberon's Hate"
+    },
+    {
+      "key": "monster.oberons_hate.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Oberon's Hate",
+      "pl": "Nienawiść Oberona",
+      "lang": "Oberon's Hate"
+    },
+    {
+      "key": "monster.grand_commander_soeren.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "The Falcon reigns supreme!",
+      "pl": "The Sokół I. najwyższy, główny!",
+      "lang": "The Falcon reigns supreme!"
+    },
+    {
+      "key": "monster.grand_chaplain_gaunder.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Grand Chaplain Gaunder",
+      "pl": "Wielki Kapelan Gaunder",
+      "lang": "Grand Chaplain Gaunder"
+    },
+    {
+      "key": "monster.grand_chaplain_gaunder.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Grand Chaplain Gaunder",
+      "pl": "Wielki Kapelan Gaunder",
+      "lang": "Grand Chaplain Gaunder"
+    },
+    {
+      "key": "monster.preceptor_lazare.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Preceptor Lazare",
+      "pl": "Nauczyciel Lazare",
+      "lang": "Preceptor Lazare"
+    },
+    {
+      "key": "monster.preceptor_lazare.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Preceptor Lazare",
+      "pl": "Nauczyciel Lazare",
+      "lang": "Preceptor Lazare"
+    },
+    {
+      "key": "monster.jailer.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Jailer",
+      "pl": "Strażnik więzienny",
+      "lang": "Jailer"
+    },
+    {
+      "key": "monster.jailer.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Jailer",
+      "pl": "Strażnik więzienny",
+      "lang": "Jailer"
+    },
+    {
+      "key": "monster.lokathmor_stuck.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Lokathmor Stuck",
+      "pl": "Lokathmor utknął",
+      "lang": "Lokathmor Stuck"
+    },
+    {
+      "key": "monster.brother_chill.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Brother Chill",
+      "pl": "Brat Chill",
+      "lang": "Brother Chill"
+    },
+    {
+      "key": "monster.brother_chill.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Brother Chill",
+      "pl": "Brat Chill",
+      "lang": "Brother Chill"
+    },
+    {
+      "key": "monster.bloodback.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bloodback",
+      "pl": "Krew",
+      "lang": "Bloodback"
+    },
+    {
+      "key": "monster.bloodback.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bloodback",
+      "pl": "Krew",
+      "lang": "Bloodback"
+    },
+    {
+      "key": "monster.bloodback.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You will DIE!",
+      "pl": "Ty will DIE!",
+      "lang": "You will DIE!"
+    },
+    {
+      "key": "monster.darkfang.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Darkfang",
+      "pl": "Mroczny Kieł",
+      "lang": "Darkfang"
+    },
+    {
+      "key": "monster.darkfang.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Darkfang",
+      "pl": "Mroczny Kieł",
+      "lang": "Darkfang"
+    },
+    {
+      "key": "monster.sharpclaw.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Sharpclaw",
+      "pl": "Ostry Pazur",
+      "lang": "Sharpclaw"
+    },
+    {
+      "key": "monster.sharpclaw.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Sharpclaw",
+      "pl": "Ostry Pazur",
+      "lang": "Sharpclaw"
+    },
+    {
+      "key": "monster.sharpclaw.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Never underestimate a badger!",
+      "pl": "Nigdy niedoceniać jeden I.!",
+      "lang": "Never underestimate a badger!"
+    },
+    {
+      "key": "monster.hellgorak.voice_5",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I smell your fear.",
+      "pl": "I I. twój I..",
+      "lang": "I smell your fear."
+    },
+    {
+      "key": "monster.hellgorak.voice_6",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Delicious!",
+      "pl": "Wyborny!",
+      "lang": "Delicious!"
+    },
+    {
+      "key": "monster.dreadbeast.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Dreadbeast",
+      "pl": "Straszna Bestia",
+      "lang": "Dreadbeast"
+    },
+    {
+      "key": "monster.dreadbeast.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a dreadbeast",
+      "pl": "przerażająca bestia",
+      "lang": "a dreadbeast"
+    },
+    {
+      "key": "monster.zugurosh.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Zugurosh",
+      "pl": "Zugurosz",
+      "lang": "Zugurosh"
+    },
+    {
+      "key": "monster.zugurosh.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Zugurosh",
+      "pl": "Zugurosz",
+      "lang": "Zugurosh"
+    },
+    {
+      "key": "monster.golgordan.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Latrivan, you fool!",
+      "pl": "Latrivan, ty fool!",
+      "lang": "Latrivan, you fool!"
+    },
+    {
+      "key": "monster.latrivan.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Golgordan you fool!",
+      "pl": "Golgordan ty fool!",
+      "lang": "Golgordan you fool!"
+    },
+    {
+      "key": "monster.madareth.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Madareth",
+      "pl": "Madaretha",
+      "lang": "Madareth"
     }
   ],
   "length_ratio_issues": [
@@ -4774,8 +4776,8 @@
   ],
   "auto_fix": {
     "attempted": 80,
-    "applied": 38,
-    "skipped": 42,
+    "applied": 37,
+    "skipped": 43,
     "errors": 0
   }
 }

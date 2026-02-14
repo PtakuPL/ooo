@@ -3,19 +3,19 @@
   "script_group": "latin",
   "total_keys": 53586,
   "translated": 31152,
-  "identical_to_en": 23696,
+  "identical_to_en": 23619,
   "placeholder_keys": 20279,
   "coverage_pct": 58.1,
-  "issues_total": 6109,
+  "issues_total": 6110,
   "issues_by_type": {
     "V3_empty": 6100,
     "V1_placeholder_mismatch": 7,
-    "V4_artifact": 1,
+    "V4_artifact": 2,
     "V5_pipe_mismatch": 1
   },
   "issues_by_severity": {
     "CRITICAL": 8,
-    "HIGH": 1,
+    "HIGH": 2,
     "MEDIUM": 0,
     "LOW": 6100
   },
@@ -68,6 +68,12 @@
       "category": "talkactions",
       "type": "V5_pipe_mismatch",
       "severity": "CRITICAL"
+    },
+    {
+      "key": "achievement.317.description",
+      "category": "achievements",
+      "type": "V4_artifact",
+      "severity": "HIGH"
     },
     {
       "key": "quests.bigfoot_burden.gnomedix_msg4",
@@ -134,21 +140,15 @@
       "category": "npc",
       "type": "V3_empty",
       "severity": "LOW"
-    },
-    {
-      "key": "npc.a_prisoner.say_4",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
     }
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 466,
+    "issues_total": 449,
     "consistency": 1,
     "pl_reference": 400,
-    "length_ratio": 65,
+    "length_ratio": 48,
     "auto_fix_applied": 77
   },
-  "validated_at": "2026-02-14T09:32:05.791711Z"
+  "validated_at": "2026-02-14T10:43:38.407329Z"
 }

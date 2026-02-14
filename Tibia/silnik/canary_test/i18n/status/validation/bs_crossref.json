@@ -4,7 +4,7 @@
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-14T10:28:56.544018Z",
+  "checked_at": "2026-02-14T10:55:48.713897Z",
   "issues_total": 459,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -698,51 +698,6 @@
       "lang": "Deer Hunt"
     },
     {
-      "key": "achievement.215.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You are now the public archenemy of the Shaburak, prince slayer.",
-      "pl": "Jesteś Niew the I. archenemy z the Shaburak, książę mordować.",
-      "lang": "You are now the public archenemy of the Shaburak, prince slayer."
-    },
-    {
-      "key": "achievement.216.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Fearless",
-      "pl": "Nieustraszony",
-      "lang": "Fearless"
-    },
-    {
-      "key": "achievement.216.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You broke the jar of Horestis - fifty times. Either you know no fear or simply ignore it. Whatever the case, you are \"fearless\" indeed.",
-      "pl": "Ty goły the I. z Horestis - pięćdziesiąt czas. I. ty kNiew Nie I. lub po prostu igNiere to. Cokolwiek the przypadek, Jesteś \"nieustraszony\" faktycznie, naprawdę.",
-      "lang": "You broke the jar of Horestis - fifty times. Either you know no fear or simply ignore it. Whatever the case, you are \"fearless\" indeed."
-    },
-    {
-      "key": "achievement.217.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Doctor! Doctor!",
-      "pl": "I.! I.!",
-      "lang": "Doctor! Doctor!"
-    },
-    {
-      "key": "achievement.217.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Did someone call a doctor? You delivered 100 medicine bags to Ottokar of the Venore poor house in times of dire need, well done!",
-      "pl": "Zrobił ktoś call jeden I.? Ty dostarczać 100 medycyna torba, worek do Ottokar z the VeNiere biedny dom w czas z skrajny, straszny potrzebować, well over and done with!",
-      "lang": "Did someone call a doctor? You delivered 100 medicine bags to Ottokar of the Venore poor house in times of dire need, well done!"
-    },
-    {
       "key": "achievement.218.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -750,15 +705,6 @@
       "en": "Beak Doctor",
       "pl": "Dziób I.",
       "lang": "Beak Doctor"
-    },
-    {
-      "key": "achievement.218.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You significantly helped the afflicted citizens of Venore in times of dire need. Somehow you still feel close to the victims of the fever outbreak. Your clothes make you one of them, one poor soul amongst the countless afflicted.",
-      "pl": "Ty znaczący helped the a. udręczyć obywatel z VeNiere w czas z skrajny, straszny potrzebować. W jakiś sposób, jakoś ty I. I. Zamknij do the ofiara z the gorączka, febra wybuch. Twój ubranie make ty I. z ich, I. biedny dusza amongst the countless a. udręczyć.",
-      "lang": "You significantly helped the afflicted citizens of Venore in times of dire need. Somehow you still feel close to the victims of the fever outbreak. Your clothes make you one of them, one poor soul amongst the countless afflicted."
     },
     {
       "key": "achievement.219.name",
@@ -3612,6 +3558,60 @@
       "en": "Lucky Horseshoe",
       "pl": "Szczęśliwy Podkowa",
       "lang": "Lucky Horseshoe"
+    },
+    {
+      "key": "achievement.400.description",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "'Sweets for my steed' could be your motto. An impressive horse is eating out of your hand. Saddle up and be ready to find adventure, new friends, and maybe someone to shoe your horse now and then.",
+      "pl": "'I. dla mój steed' mógł być twój motto. Jeden robiący wrażenie I. jest I. out z twój hand. I. up i być I. do I. przygoda, new przyjaciel, dobry kolega, kolega, i być może, może ktoś do I. twój I. Niew i wtedy.",
+      "lang": "'Sweets for my steed' could be your motto. An impressive horse is eating out of your hand. Saddle up and be ready to find adventure, new friends, and maybe someone to shoe your horse now and then."
+    },
+    {
+      "key": "achievement.401.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Swamp Beast",
+      "pl": "I. Zwierzę",
+      "lang": "Swamp Beast"
+    },
+    {
+      "key": "achievement.401.description",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "By cleverly using a leech to cool that raging bull's blood, you managed not to get swamped or trampled in a water buffalo stampede. The creature is now docile and follows your every command.",
+      "pl": "By inteligentny, zdolny using jeden pijawka do I. that wściekły, oszalały byk I., ty managed Niet do get I. lub trampled w jeden I. bawół I.. The stwór jest Niew potulny, uległy i I. twój I. I..",
+      "lang": "By cleverly using a leech to cool that raging bull's blood, you managed not to get swamped or trampled in a water buffalo stampede. The creature is now docile and follows your every command."
+    },
+    {
+      "key": "achievement.402.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Spin-Off",
+      "pl": "I.-Off",
+      "lang": "Spin-Off"
+    },
+    {
+      "key": "achievement.402.description",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Seems like this spider has got a sweet tooth. As a result, eight hairy legs are now at your disposal to crawl and weave at your whim, and strike fear into the hearts of men.",
+      "pl": "A. wydawać się być, wydawać się, zdawać się like I. pająk ma got jeden I. ząb. As jeden I., osiem włochaty, owłosiony noga są Niew w twój pozbywanie się, usuwanie do crawl i weave w twój kaprys, i strike I. a. do the serce z men.",
+      "lang": "Seems like this spider has got a sweet tooth. As a result, eight hairy legs are now at your disposal to crawl and weave at your whim, and strike fear into the hearts of men."
+    },
+    {
+      "key": "achievement.403.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Icy Glare",
+      "pl": "Lodowaty I.",
+      "lang": "Icy Glare"
     }
   ],
   "length_ratio_issues": [
@@ -4149,8 +4149,8 @@
   ],
   "auto_fix": {
     "attempted": 80,
-    "applied": 4,
-    "skipped": 76,
+    "applied": 1,
+    "skipped": 79,
     "errors": 0
   }
 }

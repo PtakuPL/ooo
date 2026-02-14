@@ -4,7 +4,7 @@
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-14T09:27:54.685376Z",
+  "checked_at": "2026-02-14T10:54:17.359025Z",
   "issues_total": 473,
   "issues_by_type": {
     "consistency_in_language": 1,
@@ -102,627 +102,6 @@
       "lang": "Vortex Tamer"
     },
     {
-      "key": "achievement.445.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Master Debater",
-      "pl": "I. Debater",
-      "lang": "Master Debater"
-    },
-    {
-      "key": "achievement.446.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "High and Dry",
-      "pl": "I. i I.",
-      "lang": "High and Dry"
-    },
-    {
-      "key": "achievement.446.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You asked Captain Charles to take a shortcut quite a few times. Now you are all too familiar with desert islands all over Tibia.",
-      "pl": "Ty I. I. Charles do take jeden shortcut całkiem, dość jeden few czas. Niew Jesteś wszystkie też, także znajomy z desert wyspa wszystkie I. Tibia.",
-      "lang": "You asked Captain Charles to take a shortcut quite a few times. Now you are all too familiar with desert islands all over Tibia."
-    },
-    {
-      "key": "achievement.447.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Elven Woods",
-      "pl": "Elven Drewno",
-      "lang": "Elven Woods"
-    },
-    {
-      "key": "achievement.448.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Long Live the Queen",
-      "pl": "Long Live the Królowa",
-      "lang": "Long Live the Queen"
-    },
-    {
-      "key": "achievement.448.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ancient battlefields, amazons and the glory of Carlin - you really know every corner of Queen Eloise's realm now.",
-      "pl": "Starożytny pole bitwy, Amazonka i the I. z Carlin - ty I. kNiew I. corner z Królowa Eloise's dziedzina, sfera Niew.",
-      "lang": "Ancient battlefields, amazons and the glory of Carlin - you really know every corner of Queen Eloise's realm now."
-    },
-    {
-      "key": "achievement.449.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Stronghold of Edron",
-      "pl": "Forteca z Edron",
-      "lang": "Stronghold of Edron"
-    },
-    {
-      "key": "achievement.450.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Dwarven Mines",
-      "pl": "Dwarven I.",
-      "lang": "Dwarven Mines"
-    },
-    {
-      "key": "achievement.450.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Vast mines, an orc fortress and the magnificence of Kazordoon - you really know every corner of North-Eastern Mainland now.",
-      "pl": "Ogromny I., jeden orc forteca i the magnificence z Kazordoon - ty I. kNiew I. corner z Nierth-Wschodni I. Niew.",
-      "lang": "Vast mines, an orc fortress and the magnificence of Kazordoon - you really know every corner of North-Eastern Mainland now."
-    },
-    {
-      "key": "achievement.451.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "All Hail the King",
-      "pl": "Wszystkie I. the Król",
-      "lang": "All Hail the King"
-    },
-    {
-      "key": "achievement.451.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Old temples, a meadowy countryside and the splendour of Thais - you really know every corner of King Tibianus' realm now.",
-      "pl": "I. świątynia, jeden meadowy countryside i the splendour z Thais - ty I. kNiew I. corner z Król Tibianus' dziedzina, sfera Niew.",
-      "lang": "Old temples, a meadowy countryside and the splendour of Thais - you really know every corner of King Tibianus' realm now."
-    },
-    {
-      "key": "achievement.452.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Jewel in the Swamp",
-      "pl": "Klejnot w the I.",
-      "lang": "Jewel in the Swamp"
-    },
-    {
-      "key": "achievement.452.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Damp swamps, a dry desert and the opulence of Venore - you really know every corner of Eastern Mainland now.",
-      "pl": "I. I., jeden I. desert i the opulence z VeNiere - ty I. kNiew I. corner z Wschodni I. Niew.",
-      "lang": "Damp swamps, a dry desert and the opulence of Venore - you really know every corner of Eastern Mainland now."
-    },
-    {
-      "key": "achievement.453.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Ogre Steppe",
-      "pl": "The Ogr, potwór Step",
-      "lang": "The Ogre Steppe"
-    },
-    {
-      "key": "achievement.454.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Realms of Dreams",
-      "pl": "Dziedzina, sfera z I.",
-      "lang": "Realms of Dreams"
-    },
-    {
-      "key": "achievement.455.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Mummy's Dearest",
-      "pl": "Mamusia, mamuśka Dearest",
-      "lang": "Mummy's Dearest"
-    },
-    {
-      "key": "achievement.456.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Daraman's Footsteps",
-      "pl": "Daraman's Krok",
-      "lang": "Daraman's Footsteps"
-    },
-    {
-      "key": "achievement.457.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "King of the Jungle",
-      "pl": "Król z the Dżungla",
-      "lang": "King of the Jungle"
-    },
-    {
-      "key": "achievement.458.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ancient Splendor",
-      "pl": "Starożytny Splendor",
-      "lang": "Ancient Splendor"
-    },
-    {
-      "key": "achievement.459.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Liberty Bay Watch",
-      "pl": "Liberty I. Watch",
-      "lang": "Liberty Bay Watch"
-    },
-    {
-      "key": "achievement.460.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Race to the Pole",
-      "pl": "I. do the I.",
-      "lang": "Race to the Pole"
-    },
-    {
-      "key": "achievement.461.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Lizard Kingdom",
-      "pl": "Jaszczurka Królestwo",
-      "lang": "Lizard Kingdom"
-    },
-    {
-      "key": "achievement.461.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "From the southern steppe through the Dragonblaze Mountains and the Muggy Plains to the forbidden city of Razachai - you really know every corner of Zao now.",
-      "pl": "Z the południowy step through the Dragonblaze Góra i the Duszny, wilgotny I. do the zakazany miasto z Razachai - ty I. kNiew I. corner z Zao Niew.",
-      "lang": "From the southern steppe through the Dragonblaze Mountains and the Muggy Plains to the forbidden city of Razachai - you really know every corner of Zao now."
-    },
-    {
-      "key": "achievement.462.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Trip to the Beach",
-      "pl": "I. do the Plaża",
-      "lang": "Trip to the Beach"
-    },
-    {
-      "key": "achievement.463.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Glooth Punk",
-      "pl": "Glooth I.",
-      "lang": "Glooth Punk"
-    },
-    {
-      "key": "achievement.464.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Twisted Dreams",
-      "pl": "I. I.",
-      "lang": "Twisted Dreams"
-    },
-    {
-      "key": "achievement.465.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Library Liberator",
-      "pl": "Biblioteka Liberator",
-      "lang": "Library Liberator"
-    },
-    {
-      "key": "achievement.467.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Millennial Falcon",
-      "pl": "Millennial Sokół",
-      "lang": "Millennial Falcon"
-    },
-    {
-      "key": "achievement.467.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You defeated Grand Master Oberon and the remnants of the Order of the Falcon, no matter the odds.",
-      "pl": "Ty I. I. I. Oberon i the pozostałość, resztka z the Order z the Sokół, Nie I. the I..",
-      "lang": "You defeated Grand Master Oberon and the remnants of the Order of the Falcon, no matter the odds."
-    },
-    {
-      "key": "achievement.469.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Battle Mage",
-      "pl": "I. Mage",
-      "lang": "Battle Mage"
-    },
-    {
-      "key": "achievement.470.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Widely Travelled",
-      "pl": "I. podróżled",
-      "lang": "Widely Travelled"
-    },
-    {
-      "key": "achievement.471.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Running the Rift",
-      "pl": "I. the Szczelina",
-      "lang": "Running the Rift"
-    },
-    {
-      "key": "achievement.473.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Exalted Battle Mage",
-      "pl": "Wysoki I. Mage",
-      "lang": "Exalted Battle Mage"
-    },
-    {
-      "key": "achievement.474.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Areas of Effect",
-      "pl": "Obszar, region z I.",
-      "lang": "Areas of Effect"
-    },
-    {
-      "key": "achievement.475.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Tied the Knot",
-      "pl": "Tied the KNiet",
-      "lang": "Tied the Knot"
-    },
-    {
-      "key": "achievement.476.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Keeper of the 7 Keys",
-      "pl": "Dozorca z the 7 I.",
-      "lang": "Keeper of the 7 Keys"
-    },
-    {
-      "key": "achievement.477.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Dream Warrior",
-      "pl": "I. Wojownik",
-      "lang": "Dream Warrior"
-    },
-    {
-      "key": "achievement.478.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Moth Whisperer",
-      "pl": "Ćma I.",
-      "lang": "Moth Whisperer"
-    },
-    {
-      "key": "achievement.479.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Lacewing Catcher",
-      "pl": "Lacewing I.",
-      "lang": "Lacewing Catcher"
-    },
-    {
-      "key": "achievement.480.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "No Horse Open Sleigh",
-      "pl": "Nie I. Otwórz Sanie",
-      "lang": "No Horse Open Sleigh"
-    },
-    {
-      "key": "achievement.481.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Raider in the Dark",
-      "pl": "I. w the I.",
-      "lang": "Raider in the Dark"
-    },
-    {
-      "key": "achievement.481.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "But can you truly be one of them?",
-      "pl": "I. może ty naprawdę być I. z ich?",
-      "lang": "But can you truly be one of them?"
-    },
-    {
-      "key": "achievement.482.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Dream Catcher",
-      "pl": "I. I.",
-      "lang": "Dream Catcher"
-    },
-    {
-      "key": "achievement.483.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Champion of Summer",
-      "pl": "I. z I.",
-      "lang": "Champion of Summer"
-    },
-    {
-      "key": "achievement.483.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You have vanquished numerous arena champions in the name of the Summer Court.",
-      "pl": "Masz pokonywać doszczętnie, pokonywać liczny arena I. w the nazwa z the I. Court.",
-      "lang": "You have vanquished numerous arena champions in the name of the Summer Court."
-    },
-    {
-      "key": "achievement.484.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Champion of Winter",
-      "pl": "I. z I.",
-      "lang": "Champion of Winter"
-    },
-    {
-      "key": "achievement.484.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You have vanquished numerous arena champions in the name of the Winter Court.",
-      "pl": "Masz pokonywać doszczętnie, pokonywać liczny arena I. w the nazwa z the I. Court.",
-      "lang": "You have vanquished numerous arena champions in the name of the Winter Court."
-    },
-    {
-      "key": "achievement.486.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Bewitcher",
-      "pl": "Oczarowywać",
-      "lang": "Bewitcher"
-    },
-    {
-      "key": "achievement.487.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Gryphon Rider",
-      "pl": "Gryphon Jeździec",
-      "lang": "Gryphon Rider"
-    },
-    {
-      "key": "achievement.488.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Sculptor Apprentice",
-      "pl": "Rzeźbiarz Terminator, praktykant",
-      "lang": "Sculptor Apprentice"
-    },
-    {
-      "key": "achievement.489.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Sun and Sea",
-      "pl": "I. i Morze",
-      "lang": "Sun and Sea"
-    },
-    {
-      "key": "achievement.489.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You made sure that the balance of sun and sea is preserved in Kilmaresh. The Golden City of Issavi won't forget your favour.",
-      "pl": "Ty zrobiony sure that the saldo z I. i morze jest preserved w Kilmaresh. The złotaen Miasto z Issavi won't forget twój favour.",
-      "lang": "You made sure that the balance of sun and sea is preserved in Kilmaresh. The Golden City of Issavi won't forget your favour."
-    },
-    {
-      "key": "achievement.490.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "A Study in Scarlett",
-      "pl": "JEDEN I. w Scarlett",
-      "lang": "A Study in Scarlett"
-    },
-    {
-      "key": "achievement.491.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Avid Spectral Reader",
-      "pl": "Zapalony Spectral Czytelnik",
-      "lang": "Avid Spectral Reader"
-    },
-    {
-      "key": "achievement.493.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You defeated the Lich Knights and became the hand of the Inquisition, allowed to wear their special garb.",
-      "pl": "Ty I. the Lich I. i became the hand z the Inquisition, I. do I. ich I. garb.",
-      "lang": "You defeated the Lich Knights and became the hand of the Inquisition, allowed to wear their special garb."
-    },
-    {
-      "key": "achievement.494.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Empire's Glory",
-      "pl": "The Imperium, cesarstwo I.",
-      "lang": "The Empire's Glory"
-    },
-    {
-      "key": "achievement.494.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Mythical creatures, forgotten catacombs and the Golden City - you really know every corner of Kilmaresh now.",
-      "pl": "Mythical stwory, forgotten catacombs i the złotaen Miasto - ty I. kNiew I. corner z Kilmaresh Niew.",
-      "lang": "Mythical creatures, forgotten catacombs and the Golden City - you really know every corner of Kilmaresh now."
-    },
-    {
-      "key": "achievement.495.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Inquisition's Arm",
-      "pl": "Inquisition's Ramię, ręka",
-      "lang": "Inquisition's Arm"
-    },
-    {
-      "key": "achievement.495.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Your special garb, solely awarded to a dedicated Hand of the Inquisition, is now complete.",
-      "pl": "Twój I. garb, jedynie, całkowicie I. do jeden oddany, ofiarny Hand z the Inquisition, jest Niew I..",
-      "lang": "Your special garb, solely awarded to a dedicated Hand of the Inquisition, is now complete."
-    },
-    {
-      "key": "achievement.497.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Do a Barrel Roll!",
-      "pl": "Robić jeden I. I.!",
-      "lang": "Do a Barrel Roll!"
-    },
-    {
-      "key": "achievement.497.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Riding a traditional beer barrel from the Orcsoberfest is a once-in-a-lifetime experience. Beer sold separately.",
-      "pl": "I. jeden tradycyjny piwo I. z the Orcsoberfest jest jeden raz-w-jeden-całe życie, życie I.. Piwo sold separately.",
-      "lang": "Riding a traditional beer barrel from the Orcsoberfest is a once-in-a-lifetime experience. Beer sold separately."
-    },
-    {
-      "key": "achievement.499.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Orcsoberfest Welcome",
-      "pl": "Orcsoberfest I.",
-      "lang": "Orcsoberfest Welcome"
-    },
-    {
-      "key": "achievement.501.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Nothing but Hot Air",
-      "pl": "Niething I. Gorący I.",
-      "lang": "Nothing but Hot Air"
-    },
-    {
-      "key": "achievement.502.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "And so it begins!",
-      "pl": "I I. to begins!",
-      "lang": "And so it begins!"
-    },
-    {
-      "key": "achievement.503.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Monsterhunter",
-      "pl": "potwórhunter",
-      "lang": "Monsterhunter"
-    },
-    {
-      "key": "achievement.503.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Fear me, monsters! There is some more slaying to come!",
-      "pl": "I. mnie, mi, potwory! Dowcip I. more mordować do come!",
-      "lang": "Fear me, monsters! There is some more slaying to come!"
-    },
-    {
-      "key": "achievement.505.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Mainstreet Nightmare",
-      "pl": "Mainstreet Zły sen",
-      "lang": "Mainstreet Nightmare"
-    },
-    {
-      "key": "achievement.506.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Falconer",
-      "pl": "Sokół",
-      "lang": "Falconer"
-    },
-    {
-      "key": "achievement.507.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Steppe Elegance",
-      "pl": "Step Elegance",
-      "lang": "Steppe Elegance"
-    },
-    {
       "key": "achievement.510.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -730,24 +109,6 @@
       "en": "Drama in Darama",
       "pl": "Dramat w Darama",
       "lang": "Drama in Darama"
-    },
-    {
-      "key": "achievement.511.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Made acquaintance with three brothers Fitz.",
-      "pl": "Zrobiony znajomy z trzy brat Fitz.",
-      "lang": "Made acquaintance with three brothers Fitz."
-    },
-    {
-      "key": "achievement.512.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You bested the maleficent duo Drume and Fugue and restored order to the besieged town of Bounac. You conquered the exotic stronghold of the Order of the Cobra and bested the undead knights of the Order of the Falcon. A true knight in heart and mind.",
-      "pl": "Ty I. the maleficent duo Drume i Fugue i restored order do the besieged miasto z Bounac. Ty podbijać the egzotyczny forteca z the Order z the Kobra i I. the undead I. z the Order z the Sokół. JEDEN prawdziwy I. w serce i mind.",
-      "lang": "You bested the maleficent duo Drume and Fugue and restored order to the besieged town of Bounac. You conquered the exotic stronghold of the Order of the Cobra and bested the undead knights of the Order of the Falcon. A true knight in heart and mind."
     },
     {
       "key": "achievement.513.name",
@@ -3628,6 +2989,645 @@
       "en": "I am also sure that the 'thing' called",
       "pl": "I am także sure that the 'rzecz' called",
       "lang": "I am also sure that the 'thing' called"
+    },
+    {
+      "key": "book.otbm.i_am_sure_the_secret",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I am sure the secret was hidden by",
+      "pl": "I am sure the I. był hidden by",
+      "lang": "I am sure the secret was hidden by"
+    },
+    {
+      "key": "book.otbm.i_cant_figure_out_how",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I can't figure out how to reanimate",
+      "pl": "I can't I. out jak do reanimate",
+      "lang": "I can't figure out how to reanimate"
+    },
+    {
+      "key": "book.otbm.i_discovered_in_the_ancient",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I discovered in the ancient scrolls of my",
+      "pl": "I odkrywać w the starożytny zwój z mój",
+      "lang": "I discovered in the ancient scrolls of my"
+    },
+    {
+      "key": "book.otbm.i_dont_think_the_dream",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I don't think the Dream Challenge is too difficult.",
+      "pl": "I don't I. the I. I. jest też, także trudny.",
+      "lang": "I don't think the Dream Challenge is too difficult."
+    },
+    {
+      "key": "book.otbm.i_have_not_the_heart",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I have not the heart to tell it our remaining",
+      "pl": "I masz Niet the serce do I. to nasz I.",
+      "lang": "I have not the heart to tell it our remaining"
+    },
+    {
+      "key": "book.otbm.i_sell_bread_cheese_ham",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I sell bread, cheese, ham, and meat.",
+      "pl": "I sprzedaj chleb, ser, szynka, i mięso.",
+      "lang": "I sell bread, cheese, ham, and meat."
+    },
+    {
+      "key": "book.otbm.i_tarberi_of_house_of",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I, Tarberi of House of Winter, hereby pledge my services to the Lord of... (the rest of the document is stained and burnt)",
+      "pl": "I, Tarberi z dom z I., niniejszym I. mój I. do the Lord z... (the rest z the I. jest I. i burnt)",
+      "lang": "I, Tarberi of House of Winter, hereby pledge my services to the Lord of... (the rest of the document is stained and burnt)"
+    },
+    {
+      "key": "book.otbm.i_think_i_found_out",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I think I found out some coordinates for the Island Dianscher.",
+      "pl": "I I. I znaleziono out I. coordinates dla the Wyspa Dianscher.",
+      "lang": "I think I found out some coordinates for the Island Dianscher."
+    },
+    {
+      "key": "book.otbm.i_trade_with_gems_pearls",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I trade with gems, pearls and jewels.",
+      "pl": "I handel z kamień szlachetny, perła i klejnot.",
+      "lang": "I trade with gems, pearls and jewels."
+    },
+    {
+      "key": "book.otbm.i_was_one_of_the",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I was one of the first who was allowed to teleport through the magic web.",
+      "pl": "I był I. z the I. kto był I. do teleportować through the I. pajęczyna.",
+      "lang": "I was one of the first who was allowed to teleport through the magic web."
+    },
+    {
+      "key": "book.otbm.i_will_investigate_this",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I will investigate this....",
+      "pl": "I will przeprowadzać dochodzenie I.....",
+      "lang": "I will investigate this...."
+    },
+    {
+      "key": "book.otbm.if_you_want_to_learn",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "If you want to learn something about the",
+      "pl": "If ty I. do uczyć się, nauczyć się coś o the",
+      "lang": "If you want to learn something about the"
+    },
+    {
+      "key": "book.otbm.in_memory_of_maus_the",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "In Memory of Maus, the famous rat hunter.",
+      "pl": "W Pamięć z Maus, the słynny, znany szczur myśliwy.",
+      "lang": "In Memory of Maus, the famous rat hunter."
+    },
+    {
+      "key": "book.otbm.in_order_to_create_the",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "In order to create the time, the Gods united their powers. Even Zathroth was fascinated by the idea of his other half and",
+      "pl": "W order do create the czas, the Gods jednostka ich I.. I. Zathroth był fascinated by the pomysł z jego drugi, pozostały I. i",
+      "lang": "In order to create the time, the Gods united their powers. Even Zathroth was fascinated by the idea of his other half and"
+    },
+    {
+      "key": "book.otbm.incantation_to_summon_asdphodelic_the",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Incantation to summon Asdphodelic, the lesser two-headed Hound of the Night",
+      "pl": "Incantation do I. Asdphodelic, the mniejszy dwa-I. I. z the Night",
+      "lang": "Incantation to summon Asdphodelic, the lesser two-headed Hound of the Night"
+    },
+    {
+      "key": "book.otbm.infested_by_bugs_and_spiders",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Infested by Bugs and Spiders!",
+      "pl": "Opanowany by Bugs i Pająk!",
+      "lang": "Infested by Bugs and Spiders!"
+    },
+    {
+      "key": "book.otbm.information_about_the_might_rings",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Information about the might rings",
+      "pl": "Informacja, wiadomości o the might rings",
+      "lang": "Information about the might rings"
+    },
+    {
+      "key": "book.otbm.instructions_for_the_distilling_machine",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Instructions for the distilling machine",
+      "pl": "Nauka, nauczanie dla the distilling I.",
+      "lang": "Instructions for the distilling machine"
+    },
+    {
+      "key": "book.otbm.into_this_desert_entered_fardos",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Into this desert entered Fardos, the creator, and Uman Zathroth, incorporating magic. Nobody knows where they came",
+      "pl": "A. do I. desert I. Fardos, the creator, i Uman Zathroth, incorporating I.. Niebody kNiews where oni came",
+      "lang": "Into this desert entered Fardos, the creator, and Uman Zathroth, incorporating magic. Nobody knows where they came"
+    },
+    {
+      "key": "book.otbm.is_in_honors_to_her",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "is in honors to her a woman and assumes the honorary name Elane.",
+      "pl": "jest w hoNiers do her jeden kobieta i zakładać, przypuszczać the hoNierary nazwa Elane.",
+      "lang": "is in honors to her a woman and assumes the honorary name Elane."
+    },
+    {
+      "key": "book.otbm.is_your_torch_running_out",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Is your torch running out?",
+      "pl": "Jest twój latarka I. out?",
+      "lang": "Is your torch running out?"
+    },
+    {
+      "key": "book.otbm.it_contains_all_the_knowledge",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "It contains all the knowledge of the Tibian lands gathered arduously by Tibia-Stats.com.",
+      "pl": "To zawierać wszystkie the kNiewledge z the Tibian lands gromadzić się, gromadzić nużący by Tibia-Stats.com.",
+      "lang": "It contains all the knowledge of the Tibian lands gathered arduously by Tibia-Stats.com."
+    },
+    {
+      "key": "book.otbm.it_does_not_wish_to",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "It does not wish to be disturbed. Awarded by TibiaLibrary.org.",
+      "pl": "To robi Niet I. do być niezrównoważony. I. by TibiaLibrary.org.",
+      "lang": "It does not wish to be disturbed. Awarded by TibiaLibrary.org."
+    },
+    {
+      "key": "book.otbm.it_is_assumed_they_lie",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "It is assumed they lie on the ocean floor.",
+      "pl": "To jest assumed oni lie na the ocean I..",
+      "lang": "It is assumed they lie on the ocean floor."
+    },
+    {
+      "key": "book.otbm.it_is_certain_now_we",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "It is certain now! We are doomed.",
+      "pl": "To jest pewny Niew! My są skazany na zgubę, zgubiony.",
+      "lang": "It is certain now! We are doomed."
+    },
+    {
+      "key": "book.otbm.it_is_given_to_the",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "It is given to the winners of TibiaNordic competitions.",
+      "pl": "To jest I. do the zwycięzca z TibiaNierdic rywalizacja.",
+      "lang": "It is given to the winners of TibiaNordic competitions."
+    },
+    {
+      "key": "book.otbm.it_is_rumoured_to_bring",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "It is rumoured to bring you good luck! Luck sponsored by TibiaLottery.",
+      "pl": "To jest rumoured do bring ty I. good luck! Good luck I. by TibiaLottery.",
+      "lang": "It is rumoured to bring you good luck! Luck sponsored by TibiaLottery."
+    },
+    {
+      "key": "book.otbm.it_knows_all_secrets_of",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "It knows all secrets of all numbers. It was rewarded by the Exhiti.com.",
+      "pl": "To kNiews wszystkie I. z wszystkie numer. To był nagrodaed by the Exhiti.com.",
+      "lang": "It knows all secrets of all numbers. It was rewarded by the Exhiti.com."
+    },
+    {
+      "key": "book.otbm.it_shines_as_beautifully_as",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "It shines as beautifully as a good friendship.",
+      "pl": "To goleń as piękny as jeden I. przyjaźń, bliskie koleżeństwo, koleżeństwo.",
+      "lang": "It shines as beautifully as a good friendship."
+    },
+    {
+      "key": "book.otbm.it_was_awarded_by_tibiopediapl",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "It was awarded by Tibiopedia.pl.",
+      "pl": "To był I. by Tibiopedia.pl.",
+      "lang": "It was awarded by Tibiopedia.pl."
+    },
+    {
+      "key": "book.otbm.it_was_omnipresent_and_nowhere",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "It was omnipresent and nowhere.",
+      "pl": "To był omnipresent i Niewhere.",
+      "lang": "It was omnipresent and nowhere."
+    },
+    {
+      "key": "book.otbm.its_forbidden_to_turn_the",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "It's forbidden to turn the lights off!",
+      "pl": "To zakazany do turn the I. off!",
+      "lang": "It's forbidden to turn the lights off!"
+    },
+    {
+      "key": "book.otbm.jail_no_admittance_save_guards",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Jail - No admittance, save guards!",
+      "pl": "Jail - Nie zezwolenie na wejście, wejście, I. I.!",
+      "lang": "Jail - No admittance, save guards!"
+    },
+    {
+      "key": "book.otbm.jaul_friday_4_am_1",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Jaul: Friday (4 AM - 1 PM)",
+      "pl": "Jaul: Piątek (4 AM - 1 PREMIER)",
+      "lang": "Jaul: Friday (4 AM - 1 PM)"
+    },
+    {
+      "key": "book.otbm.jaul_friday_4_am_1_1b3ad4fd",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Jaul: Friday (4 AM - 1 PM)",
+      "pl": "Jaul: Piątek (4 AM - 1 PREMIER)",
+      "lang": "Jaul: Friday (4 AM - 1 PM)"
+    },
+    {
+      "key": "book.otbm.kazordoon_thais_and_venore",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Kazordoon, Thais and Venore",
+      "pl": "Kazordoon, Thais i VeNiere",
+      "lang": "Kazordoon, Thais and Venore"
+    },
+    {
+      "key": "book.otbm.kingdoms_main_depot_house",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Kingdom's Main Depot House",
+      "pl": "Królestwo Main Skład dom",
+      "lang": "Kingdom's Main Depot House"
+    },
+    {
+      "key": "book.otbm.kingdoms_main_depot_house_57bef3f5",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Kingdom's Main Depot House",
+      "pl": "Królestwo Main Skład dom",
+      "lang": "Kingdom's Main Depot House"
+    },
+    {
+      "key": "book.otbm.knight_and_paladin_trainer",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Knight and Paladin Trainer",
+      "pl": "I. i Paladin Trener",
+      "lang": "Knight and Paladin Trainer"
+    },
+    {
+      "key": "book.otbm.knight_and_paladin_trainer_4f80eefa",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Knight and Paladin Trainer",
+      "pl": "I. i Paladin Trener",
+      "lang": "Knight and Paladin Trainer"
+    },
+    {
+      "key": "book.otbm.known_parts_of_the_magic",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "\"known parts of the magic web in red and known gates in gold\"",
+      "pl": "\"kNiewn parts z the I. pajęczyna w I. i kNiewn brama w złota\"",
+      "lang": "\"known parts of the magic web in red and known gates in gold\""
+    },
+    {
+      "key": "book.otbm.kongra_the_king_of_the",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Kongra - The king of the jungle",
+      "pl": "Kongra - The król z the dżungla",
+      "lang": "Kongra - The king of the jungle"
+    },
+    {
+      "key": "book.otbm.leave_dont_look_for_us",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "LEAVE! DONT LOOK FOR US OR YOU WILL DIE!",
+      "pl": "I.! DONT LOOK DLA NAS LUB TY WILL DIE!",
+      "lang": "LEAVE! DONT LOOK FOR US OR YOU WILL DIE!"
+    },
+    {
+      "key": "book.otbm.legends_about_the_wand_of",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Legends about the wand of might.",
+      "pl": "Legenda o the czarodziejska różdżka, różdżka z might.",
+      "lang": "Legends about the wand of might."
+    },
+    {
+      "key": "book.otbm.legends_of_the_khalabal_i",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Legends of the Kha'labal I - The Hyena King",
+      "pl": "Legenda z the Kha'labal I - The Hyena Król",
+      "lang": "Legends of the Kha'labal I - The Hyena King"
+    },
+    {
+      "key": "book.otbm.legends_of_the_khalabal_ii",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Legends of the Kha'labal II - The Wailing Bride, Pt. 1",
+      "pl": "Legenda z the Kha'labal II - The I. Panna młoda, WF, wychowanie fizyczne. 1",
+      "lang": "Legends of the Kha'labal II - The Wailing Bride, Pt. 1"
+    },
+    {
+      "key": "book.otbm.legends_of_the_khalabal_ii_bb56f962",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Legends of the Kha'labal II - The Wailing Bride, Pt. 2",
+      "pl": "Legenda z the Kha'labal II - The I. Panna młoda, WF, wychowanie fizyczne. 2",
+      "lang": "Legends of the Kha'labal II - The Wailing Bride, Pt. 2"
+    },
+    {
+      "key": "book.otbm.legends_of_the_khalabal_iii",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Legends of the Kha'labal III - Gha'Zuul the Necromancer",
+      "pl": "Legenda z the Kha'labal III - Gha'Zuul the Necromancer",
+      "lang": "Legends of the Kha'labal III - Gha'Zuul the Necromancer"
+    },
+    {
+      "key": "book.otbm.legends_of_the_khalabal_iv",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Legends of the Kha'labal IV - Drefia's Downfall",
+      "pl": "Legenda z the Kha'labal IV - Drefia's Upadek",
+      "lang": "Legends of the Kha'labal IV - Drefia's Downfall"
+    },
+    {
+      "key": "book.otbm.letter_to_darruk_the_practical",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Letter to Darruk, the practical joker.",
+      "pl": "I. do Darruk, the I. dowcipniś, żartowniś.",
+      "lang": "Letter to Darruk, the practical joker."
+    },
+    {
+      "key": "book.otbm.library_and_upper_armoury",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Library and Upper Armoury",
+      "pl": "Biblioteka i I. Armoury",
+      "lang": "Library and Upper Armoury"
+    },
+    {
+      "key": "book.otbm.lilys_shop_potions_for_everyone",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Lily's shop - Potions for everyone!",
+      "pl": "Lilia I. - Napój dla każdy!",
+      "lang": "Lily's shop - Potions for everyone!"
+    },
+    {
+      "key": "book.otbm.living_quarters_and_mushroom_gardens",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Living Quarters And Mushroom Gardens",
+      "pl": "I. Quarters I Mushmiejsce I.",
+      "lang": "Living Quarters And Mushroom Gardens"
+    },
+    {
+      "key": "book.otbm.logs_and_leaks_the_daily",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Logs and Leaks, the Daily Life of a Captain",
+      "pl": "Logs i I., the I. I. z jeden I.",
+      "lang": "Logs and Leaks, the Daily Life of a Captain"
+    },
+    {
+      "key": "book.otbm.look_at_the_4_and",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "look at the 4 and ignore the 2",
+      "pl": "look w the 4 i igNiere the 2",
+      "lang": "look at the 4 and ignore the 2"
+    },
+    {
+      "key": "book.otbm.lower_areas_access_denied",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Lower Areas - Access Denied!",
+      "pl": "I. Obszar, region - I. Denied!",
+      "lang": "Lower Areas - Access Denied!"
+    },
+    {
+      "key": "book.otbm.magic_and_potion_research_lab",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Magic and Potion Research Lab",
+      "pl": "I. i Napój I. Laboratorium",
+      "lang": "Magic and Potion Research Lab"
+    },
+    {
+      "key": "book.otbm.mail_room_depot_stores_bank",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Mail Room, Depot, Stores, Bank",
+      "pl": "I. miejsce, Skład, I., Bank",
+      "lang": "Mail Room, Depot, Stores, Bank"
+    },
+    {
+      "key": "book.otbm.man_is_a_rope_funambulating",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "\"Man is a rope, funambulating between the animals and the gods.\" -  Tarrakosther Nimbos.",
+      "pl": "\"Man jest jeden I., funambulating pomiędzy, między the I. i the gods.\" - Tarrakosther Nimbos.",
+      "lang": "\"Man is a rope, funambulating between the animals and the gods.\" -  Tarrakosther Nimbos."
+    },
+    {
+      "key": "book.otbm.manifest_of_the_yalahari_part",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Manifest of the Yalahari, Part I",
+      "pl": "I. z the Yalahari, Part I",
+      "lang": "Manifest of the Yalahari, Part I"
+    },
+    {
+      "key": "book.otbm.manifest_of_the_yalahari_part_41b75d31",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Manifest of the Yalahari, Part II",
+      "pl": "I. z the Yalahari, Part II",
+      "lang": "Manifest of the Yalahari, Part II"
+    },
+    {
+      "key": "book.otbm.many_are_the_legends_concerning",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Many are the legends concerning Gha'Zuul",
+      "pl": "Wiele, dużo są the legenda odnoszący się, tyczący się, co się tyczy Gha'Zuul",
+      "lang": "Many are the legends concerning Gha'Zuul"
+    },
+    {
+      "key": "book.otbm.may_banor_bless_our_souls",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "May Banor bless our souls.",
+      "pl": "A. móc BaNier błogosławić nasz dusza.",
+      "lang": "May Banor bless our souls."
+    },
+    {
+      "key": "book.otbm.may_crunor_protect_our_health",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "May Crunor protect our health and essence.",
+      "pl": "A. móc CruNier chronić nasz zdrowie i istota, podstawa.",
+      "lang": "May Crunor protect our health and essence."
+    },
+    {
+      "key": "book.otbm.may_it_flourish_and_grow",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "May it flourish and grow.",
+      "pl": "A. móc to I. i I..",
+      "lang": "May it flourish and grow."
+    },
+    {
+      "key": "book.otbm.may_the_archangels_guide_and",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "May the archangels guide and guard us.",
+      "pl": "A. móc the archangels I. i I. nas.",
+      "lang": "May the archangels guide and guard us."
+    },
+    {
+      "key": "book.otbm.may_the_kiss_of_kirok",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "May the kiss of Kirok bring us inspiration.",
+      "pl": "A. móc the całować z Kirok bring nas inspiracja, natchnienie.",
+      "lang": "May the kiss of Kirok bring us inspiration."
+    },
+    {
+      "key": "book.otbm.may_uman_teach_us_to",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "May Uman teach us to use his gifts and to use them wisely.",
+      "pl": "A. móc Uman uczyć nas do use jego dar, podarunek i do use ich I..",
+      "lang": "May Uman teach us to use his gifts and to use them wisely."
+    },
+    {
+      "key": "book.otbm.meeting_every_day_at_5",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Meeting every day at 5 pm.",
+      "pl": "Spotkanie I. dzień w 5 premier.",
+      "lang": "Meeting every day at 5 pm."
+    },
+    {
+      "key": "book.otbm.mehrah_asram_cha_mehe_than",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Mehrah asram cha mehe than. Uth a'thul at cha there. Orum tha cha elik jahara. Udhun zah fahr mal. Chamek at uthul hatradek asram. Mehrem alir iktha at uthun. Kasin tha Ur ch helim doh. Mah dah direm. Athul as hathu, athul as dofah, athul as mereth. Cha ukhtu muhn dahra. Sethor mah amin dah. At meruhm cha me dah. Chamek persim kaharah bah tufi. Moh dah rah. Moh Udhin cha uthul. Meheth Zuhl tha berah.",
+      "pl": "Mehrah asram cha mehe z niż. Uth a'thul w cha there. Orum tha cha elik jahara. Udhun zah fahr mal. Chamek w uthul hatradek asram. Mehrem alir iktha w uthun. Kasin tha Ur ch helim doh. Mah dah direm. Athul as hathu, athul as dofah, athul as mereth. Cha ukhtu muhn dahra. Sethor mah amin dah. W meruhm cha mnie, mi dah. Chamek persim kaharah bah tufi. Moh dah rah. Moh Udhin cha uthul. Meheth Zuhl tha berah.",
+      "lang": "Mehrah asram cha mehe than. Uth a'thul at cha there. Orum tha cha elik jahara. Udhun zah fahr mal. Chamek at uthul hatradek asram. Mehrem alir iktha at uthun. Kasin tha Ur ch helim doh. Mah dah direm. Athul as hathu, athul as dofah, athul as mereth. Cha ukhtu muhn dahra. Sethor mah amin dah. At meruhm cha me dah. Chamek persim kaharah bah tufi. Moh dah rah. Moh Udhin cha uthul. Meheth Zuhl tha berah."
+    },
+    {
+      "key": "book.otbm.memorial_of_the_sunken_quarter",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Memorial of the Sunken Quarter",
+      "pl": "I. z the Zatopiony Kwarta",
+      "lang": "Memorial of the Sunken Quarter"
     }
   ],
   "length_ratio_issues": [
@@ -3773,7 +3773,7 @@
       "severity": "MEDIUM",
       "en_len": 6,
       "lang_ratio": 0.0,
-      "pl_ratio": 4.0
+      "pl_ratio": 2.0
     },
     {
       "key": "npc.alyxo.say_15",
@@ -3782,7 +3782,7 @@
       "severity": "MEDIUM",
       "en_len": 6,
       "lang_ratio": 0.0,
-      "pl_ratio": 4.0
+      "pl_ratio": 2.0
     },
     {
       "key": "npc.alyxo.say_18",
@@ -3791,7 +3791,7 @@
       "severity": "MEDIUM",
       "en_len": 6,
       "lang_ratio": 0.0,
-      "pl_ratio": 4.0
+      "pl_ratio": 2.0
     },
     {
       "key": "npc.alyxo.say_21",
@@ -3800,7 +3800,7 @@
       "severity": "MEDIUM",
       "en_len": 6,
       "lang_ratio": 0.0,
-      "pl_ratio": 4.0
+      "pl_ratio": 2.0
     },
     {
       "key": "npc.alyxo.say_24",
@@ -3809,7 +3809,7 @@
       "severity": "MEDIUM",
       "en_len": 6,
       "lang_ratio": 0.0,
-      "pl_ratio": 4.0
+      "pl_ratio": 2.0
     },
     {
       "key": "npc.alyxo.say_6",
@@ -3818,7 +3818,7 @@
       "severity": "MEDIUM",
       "en_len": 6,
       "lang_ratio": 0.0,
-      "pl_ratio": 4.0
+      "pl_ratio": 2.0
     },
     {
       "key": "npc.alyxo.say_9",
@@ -3827,7 +3827,7 @@
       "severity": "MEDIUM",
       "en_len": 6,
       "lang_ratio": 0.0,
-      "pl_ratio": 4.0
+      "pl_ratio": 2.0
     },
     {
       "key": "npc.bo_ques.say_6",
@@ -4052,7 +4052,7 @@
       "severity": "MEDIUM",
       "en_len": 6,
       "lang_ratio": 0.0,
-      "pl_ratio": 4.0
+      "pl_ratio": 2.0
     },
     {
       "key": "npc.kallimae.say_6",
@@ -4061,7 +4061,7 @@
       "severity": "MEDIUM",
       "en_len": 6,
       "lang_ratio": 0.0,
-      "pl_ratio": 4.0
+      "pl_ratio": 2.0
     },
     {
       "key": "npc.kallimae.say_9",
@@ -4070,7 +4070,7 @@
       "severity": "MEDIUM",
       "en_len": 6,
       "lang_ratio": 0.0,
-      "pl_ratio": 4.0
+      "pl_ratio": 2.0
     },
     {
       "key": "npc.karith.say_6",
@@ -4106,7 +4106,7 @@
       "severity": "MEDIUM",
       "en_len": 6,
       "lang_ratio": 0.0,
-      "pl_ratio": 4.0
+      "pl_ratio": 2.0
     },
     {
       "key": "npc.narsai.say_6",
@@ -4115,7 +4115,7 @@
       "severity": "MEDIUM",
       "en_len": 6,
       "lang_ratio": 0.0,
-      "pl_ratio": 4.0
+      "pl_ratio": 2.0
     },
     {
       "key": "npc.pig.say_2",
@@ -4133,7 +4133,7 @@
       "severity": "MEDIUM",
       "en_len": 6,
       "lang_ratio": 0.0,
-      "pl_ratio": 4.0
+      "pl_ratio": 2.0
     },
     {
       "key": "npc.sandomo.greet_msg_1",
@@ -4160,7 +4160,7 @@
       "severity": "MEDIUM",
       "en_len": 6,
       "lang_ratio": 0.0,
-      "pl_ratio": 4.0
+      "pl_ratio": 2.0
     },
     {
       "key": "npc.shimun.say_6",
@@ -4169,7 +4169,7 @@
       "severity": "MEDIUM",
       "en_len": 6,
       "lang_ratio": 0.0,
-      "pl_ratio": 4.0
+      "pl_ratio": 2.0
     },
     {
       "key": "npc.simon_the_beggar.say_27",
@@ -4205,7 +4205,7 @@
       "severity": "MEDIUM",
       "en_len": 6,
       "lang_ratio": 0.0,
-      "pl_ratio": 4.0
+      "pl_ratio": 2.0
     },
     {
       "key": "npc.tefrit.say_6",
@@ -4214,7 +4214,7 @@
       "severity": "MEDIUM",
       "en_len": 6,
       "lang_ratio": 0.0,
-      "pl_ratio": 4.0
+      "pl_ratio": 2.0
     },
     {
       "key": "npc.tomruk_the_ruddy.say_3",
@@ -4259,7 +4259,7 @@
       "severity": "MEDIUM",
       "en_len": 6,
       "lang_ratio": 0.0,
-      "pl_ratio": 4.0
+      "pl_ratio": 2.0
     },
     {
       "key": "npc.yonan.say_6",
@@ -4268,7 +4268,7 @@
       "severity": "MEDIUM",
       "en_len": 6,
       "lang_ratio": 0.0,
-      "pl_ratio": 4.0
+      "pl_ratio": 2.0
     },
     {
       "key": "npc.yonan.say_9",

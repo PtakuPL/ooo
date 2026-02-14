@@ -3,21 +3,22 @@
   "script_group": "cyrillic",
   "total_keys": 52538,
   "translated": 29784,
-  "identical_to_en": 23068,
+  "identical_to_en": 22988,
   "placeholder_keys": 20599,
   "coverage_pct": 56.7,
-  "issues_total": 6218,
+  "issues_total": 6221,
   "issues_by_type": {
     "V3_empty": 6113,
-    "script_cyrillic_latin_mix": 94,
+    "script_cyrillic_latin_mix": 96,
     "V1_placeholder_mismatch": 7,
     "V4_artifact": 3,
+    "V6_newline_mismatch": 1,
     "V5_pipe_mismatch": 1
   },
   "issues_by_severity": {
     "CRITICAL": 8,
-    "HIGH": 97,
-    "MEDIUM": 0,
+    "HIGH": 99,
+    "MEDIUM": 1,
     "LOW": 6113
   },
   "score": 98.4,
@@ -119,6 +120,18 @@
       "severity": "HIGH"
     },
     {
+      "key": "book.otbm.crunors_finest_fruit_and_vegetable",
+      "category": "books",
+      "type": "script_cyrillic_latin_mix",
+      "severity": "HIGH"
+    },
+    {
+      "key": "book.otbm.crunors_finest_fruit_and_vegetable_1ed839d6",
+      "category": "books",
+      "type": "script_cyrillic_latin_mix",
+      "severity": "HIGH"
+    },
+    {
       "key": "event.player.msg1",
       "category": "events",
       "type": "script_cyrillic_latin_mix",
@@ -126,18 +139,6 @@
     },
     {
       "key": "item.10217.name",
-      "category": "items",
-      "type": "script_cyrillic_latin_mix",
-      "severity": "HIGH"
-    },
-    {
-      "key": "item.21351.name",
-      "category": "items",
-      "type": "script_cyrillic_latin_mix",
-      "severity": "HIGH"
-    },
-    {
-      "key": "item.21352.name",
       "category": "items",
       "type": "script_cyrillic_latin_mix",
       "severity": "HIGH"
@@ -151,5 +152,5 @@
     "length_ratio": 57,
     "auto_fix_applied": 80
   },
-  "validated_at": "2026-02-14T09:32:32.218612Z"
+  "validated_at": "2026-02-14T10:52:06.167971Z"
 }

@@ -4,12 +4,12 @@
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-14T10:30:10.804594Z",
-  "issues_total": 468,
+  "checked_at": "2026-02-14T10:56:58.094603Z",
+  "issues_total": 469,
   "issues_by_type": {
     "consistency_in_language": 1,
     "pl_reference_missing_translation": 400,
-    "length_ratio_crosscheck": 67
+    "length_ratio_crosscheck": 68
   },
   "consistency_issues": [
     {
@@ -417,15 +417,6 @@
       "lang": "Plant vs. Minos"
     },
     {
-      "key": "achievement.361.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You have defeated the wallbreaker and saved the glooth plant.",
-      "pl": "Masz I. the wallbreaker i saved the glooth I..",
-      "lang": "You have defeated the wallbreaker and saved the glooth plant."
-    },
-    {
       "key": "achievement.362.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -433,15 +424,6 @@
       "en": "Rumble in the Plant",
       "pl": "I. w the I.",
       "lang": "Rumble in the Plant"
-    },
-    {
-      "key": "achievement.362.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You have defeated the tremor worm - and wonder what kind of fish you'd be able to catch with such a bait.",
-      "pl": "Masz I. the drżenie worm - i I. I. I. z I. you'd być zdolny do I. z taki jeden I..",
-      "lang": "You have defeated the tremor worm - and wonder what kind of fish you'd be able to catch with such a bait."
     },
     {
       "key": "achievement.363.name",
@@ -453,33 +435,6 @@
       "lang": "Robo Chop"
     },
     {
-      "key": "achievement.363.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You have defeated the glooth bomb and chopped down a lot of metal monsters on your way.",
-      "pl": "Masz I. the glooth I. i chopped I. jeden lot z metal potwory na twój way.",
-      "lang": "You have defeated the glooth bomb and chopped down a lot of metal monsters on your way."
-    },
-    {
-      "key": "achievement.364.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Go with da Lava Flow",
-      "pl": "Go z da Lawa I.",
-      "lang": "Go with da Lava Flow"
-    },
-    {
-      "key": "achievement.364.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You escaped the glowing hot lava death trap, Professor Maxxen has set for you - Captain Caveworm is indeed proud!",
-      "pl": "Ty escaped the entuzjastyczny gorący lawa I. I., Profesor Maxxen ma ustaw dla ty - I. Caveworm jest faktycznie, naprawdę dumny!",
-      "lang": "You escaped the glowing hot lava death trap, Professor Maxxen has set for you - Captain Caveworm is indeed proud!"
-    },
-    {
       "key": "achievement.365.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -487,231 +442,6 @@
       "en": "Wail of the Banshee",
       "pl": "I. z the Banshee",
       "lang": "Wail of the Banshee"
-    },
-    {
-      "key": "achievement.365.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You saw the Crystal Gardens with all their stunning beauty and survived the equally impressive monsters there. In the end you discovered a great evil and destroyed it with the help of a banshee who was not even aware of her support.",
-      "pl": "Ty saw the Crystal I. z wszystkie ich stunning I. i survived the równo robiący wrażenie potwory there. W the I. ty odkrywać jeden I. I. i niszczyć to z the help z jeden banshee kto był Niet I. aware z her I..",
-      "lang": "You saw the Crystal Gardens with all their stunning beauty and survived the equally impressive monsters there. In the end you discovered a great evil and destroyed it with the help of a banshee who was not even aware of her support."
-    },
-    {
-      "key": "achievement.366.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Publicity",
-      "pl": "Reklama",
-      "lang": "Publicity"
-    },
-    {
-      "key": "achievement.366.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You are a man of the public. Or of good publicity at least. Through your efforts in advertising the airtight cloth, Zeronex might yet be redeemed - and Rathleton might yet see its first working Gloud Ship.",
-      "pl": "Jesteś jeden man z the I.. Lub z I. reklama w najmniej. Through twój wysiłek w reklama, ogłoszenia the szczelny materiał, Zeronex might jeszcze być ratować, okupywać - i Rathleton might jeszcze I. jego, jej, ich, swój I. I. Gloud I..",
-      "lang": "You are a man of the public. Or of good publicity at least. Through your efforts in advertising the airtight cloth, Zeronex might yet be redeemed - and Rathleton might yet see its first working Gloud Ship."
-    },
-    {
-      "key": "achievement.367.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Snake Charmer",
-      "pl": "Wąż I.",
-      "lang": "Snake Charmer"
-    },
-    {
-      "key": "achievement.367.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "By restoring the Everhungry Altar, you charmed the Fire-Feathered Sea Serpent back into its fitful sleep, twenty miles beneath the sea.",
-      "pl": "By restoring the Everhungry Ołtarz, ty I. the Fire-Pióro Morze Wąż I. a. do jego, jej, ich, swój niespokojny I., dwadzieścia mila pod the morze.",
-      "lang": "By restoring the Everhungry Altar, you charmed the Fire-Feathered Sea Serpent back into its fitful sleep, twenty miles beneath the sea."
-    },
-    {
-      "key": "achievement.368.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hoard of the Dragon",
-      "pl": "I. z the Smok",
-      "lang": "Hoard of the Dragon"
-    },
-    {
-      "key": "achievement.368.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Your adventurous way through countless dragon lairs earned you a pretty treasure - and surely the enmity of many a dragon.",
-      "pl": "Twój rzutki way through countless smok legowisko, pieczara zarabiać na, zarabiać ty jeden I. I. - i na pewno, z pewnością the wrogość z wiele, dużo jeden smok.",
-      "lang": "Your adventurous way through countless dragon lairs earned you a pretty treasure - and surely the enmity of many a dragon."
-    },
-    {
-      "key": "achievement.370.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Little Ball of Wool",
-      "pl": "Little I. z Wełna",
-      "lang": "Little Ball of Wool"
-    },
-    {
-      "key": "achievement.370.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You found a lost sheep and thus a steady source of black wool. But careful: don't get entangled.",
-      "pl": "Ty znaleziono jeden I. owca i toteż, dlatego jeden I. źródło z I. wełna. I. ostrożny: don't get entangled.",
-      "lang": "You found a lost sheep and thus a steady source of black wool. But careful: don't get entangled."
-    },
-    {
-      "key": "achievement.371.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Luminous Kitty",
-      "pl": "LumiNieus Pula, wspólne pieniądze",
-      "lang": "Luminous Kitty"
-    },
-    {
-      "key": "achievement.371.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You made some efforts to bring a little more light into the world. And what a nice present you got in return!",
-      "pl": "Ty zrobiony I. wysiłek do bring jeden little more I. a. do the I.. I I. jeden delikatny, subtelny present ty got w I.!",
-      "lang": "You made some efforts to bring a little more light into the world. And what a nice present you got in return!"
-    },
-    {
-      "key": "achievement.372.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Right Tone",
-      "pl": "The I. I.",
-      "lang": "The Right Tone"
-    },
-    {
-      "key": "achievement.372.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "By setting the right tone you convinced a crystal wolf to accompany you. Remember it is made of crystal, though, so be careful in a banshee's presence.",
-      "pl": "By oprawa the I. I. ty convinced jeden crystal wolf do towarzyszyć ty. Pamiętać, przypominać sobie, przypominać to jest zrobiony z crystal, I., I. być ostrożny w jeden banshee's I..",
-      "lang": "By setting the right tone you convinced a crystal wolf to accompany you. Remember it is made of crystal, though, so be careful in a banshee's presence."
-    },
-    {
-      "key": "achievement.373.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Loyal Lad",
-      "pl": "Lojalny Młodzieniec",
-      "lang": "Loyal Lad"
-    },
-    {
-      "key": "achievement.373.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Having a loyal friend alongside is comforting to every adventurer. If only this lad was not so stubborn...",
-      "pl": "Having jeden lojalny przyjaciel, dobry kolega, kolega obok jest I. do I. awanturnik. If tylko I. młodzieniec był Niet I. uparty...",
-      "lang": "Having a loyal friend alongside is comforting to every adventurer. If only this lad was not so stubborn..."
-    },
-    {
-      "key": "achievement.374.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Dragon Mimicry",
-      "pl": "Smok Naśladownictwo",
-      "lang": "Dragon Mimicry"
-    },
-    {
-      "key": "achievement.374.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "It's not really a dragon, but rather a kind of chimera. Nonetheless a decent mount to impress any passer-by.",
-      "pl": "To Niet I. jeden smok, I. raczej jeden I. z chimera. Nienetheless jeden przyzwoity I. do wywierać wrażenie dowolny I.-by.",
-      "lang": "It's not really a dragon, but rather a kind of chimera. Nonetheless a decent mount to impress any passer-by."
-    },
-    {
-      "key": "achievement.375.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Scales and Tail",
-      "pl": "I. i I.",
-      "lang": "Scales and Tail"
-    },
-    {
-      "key": "achievement.375.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Muggy Plains are a dangerous place, often raided by dragons. But that was your luck: thus you found this scaly little guy.",
-      "pl": "The Duszny, wilgotny I. są jeden groźny, niebezpieczny I., często I. by smok. I. that był twój good luck: toteż, dlatego ty znaleziono I. łuskowaty little facet.",
-      "lang": "The Muggy Plains are a dangerous place, often raided by dragons. But that was your luck: thus you found this scaly little guy."
-    },
-    {
-      "key": "achievement.376.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "There are many delusions and phantasms in the desert. You saw a false oasis with fruit-bearing palm trees. Instead of water and refreshment, however, you found a dromedary in the end. What a useful Fata Morgana!",
-      "pl": "Są wiele, dużo złudzenie i phantasms w the desert. Ty saw jeden I. oaza z I.-postawa, obejście I. drzewo. Instead z I. i orzeźwienie się, jednak, ty znaleziono jeden dromader w the I.. I. jeden użyteczny Fata Morgana!",
-      "lang": "There are many delusions and phantasms in the desert. You saw a false oasis with fruit-bearing palm trees. Instead of water and refreshment, however, you found a dromedary in the end. What a useful Fata Morgana!"
-    },
-    {
-      "key": "achievement.377.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Fabled Construction",
-      "pl": "Fabled Budowa",
-      "lang": "Fabled Construction"
-    },
-    {
-      "key": "achievement.377.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Finding all the pieces to this complicated vehicle was one kind of a challenge. However, what you built in the end is rather a fabled than a feeble construction.",
-      "pl": "Rezultat, stwierdzenie wszystkie the I. do I. skomplikowany pojazd był I. I. z jeden I.. Jednak, I. ty zbudowany w the I. jest raczej jeden fabled z niż jeden słaby, wątły budowa.",
-      "lang": "Finding all the pieces to this complicated vehicle was one kind of a challenge. However, what you built in the end is rather a fabled than a feeble construction."
-    },
-    {
-      "key": "achievement.378.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Mind the Dog!",
-      "pl": "Mind the I.!",
-      "lang": "Mind the Dog!"
-    },
-    {
-      "key": "achievement.378.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Barking dogs never bite, as the saying goes. But this one clearly tried. In the end, however, you were able to walk the dog - ahem, gnarlhound.",
-      "pl": "I. I. nigdy I., as the powiedzenie goes. I. I. I. clearly tried. W the I., jednak, ty były zdolny do I. the I. - ahem, gnarlhound.",
-      "lang": "Barking dogs never bite, as the saying goes. But this one clearly tried. In the end, however, you were able to walk the dog - ahem, gnarlhound."
-    },
-    {
-      "key": "achievement.379.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "This magnetic beast attracted you in a very literal way. Or was it attracted by your metal equipment? Anyway, you seem to be stuck together now.",
-      "pl": "I. magnetyczny zwierzę przyciągać ty w jeden I. dosłowny way. Lub był to przyciągać by twój metal wyposażenie, ekwipunek, sprzęt? W każdym razie, ty a. wydawać się być, wydawać się, zdawać się do być be stuck razem Niew.",
-      "lang": "This magnetic beast attracted you in a very literal way. Or was it attracted by your metal equipment? Anyway, you seem to be stuck together now."
     },
     {
       "key": "achievement.380.name",
@@ -723,312 +453,6 @@
       "lang": "Golden Sands"
     },
     {
-      "key": "achievement.380.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Counting ten thousand grains of sand could not have been harder than gaining this impressive mount.",
-      "pl": "Liczba I. tysiąc ziarno z I. mógł Niet masz był harder z niż I. I. robiący wrażenie I..",
-      "lang": "Counting ten thousand grains of sand could not have been harder than gaining this impressive mount."
-    },
-    {
-      "key": "achievement.381.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Friend of Elves",
-      "pl": "Przyjaciel, dobry kolega, kolega z Elves",
-      "lang": "Friend of Elves"
-    },
-    {
-      "key": "achievement.381.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Kingly deer mostly prefer elves as friends and familiars. This one, however, decided to favour you as a confidant and rider. Well done!",
-      "pl": "Król jeleń w większości, przede wszystkim woleć, preferować elves as przyjaciel, dobry kolega, kolega i znajomy. I. I., jednak, decided do favour ty as jeden powiernik i jeździec. Well over and done with!",
-      "lang": "Kingly deer mostly prefer elves as friends and familiars. This one, however, decided to favour you as a confidant and rider. Well done!"
-    },
-    {
-      "key": "achievement.382.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Lovely Dots",
-      "pl": "Cudowny, wspaniały I.",
-      "lang": "Lovely Dots"
-    },
-    {
-      "key": "achievement.382.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Finding a four-leaved clover is always a sign of luck. And as luck would have it, you even baited a lovely dotted ladybug. Lucky you!",
-      "pl": "Rezultat, stwierdzenie jeden cztery-leaved koniczyna jest zawsze jeden I. z good luck. I as good luck would masz to, ty I. I. jeden cudowny, wspaniały kropkowany ladybug. Szczęśliwy ty!",
-      "lang": "Finding a four-leaved clover is always a sign of luck. And as luck would have it, you even baited a lovely dotted ladybug. Lucky you!"
-    },
-    {
-      "key": "achievement.383.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Way to Hell",
-      "pl": "Way do Piekło",
-      "lang": "Way to Hell"
-    },
-    {
-      "key": "achievement.383.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "This fiery beast really tried to give you hell. But not even a magma crawler can resist a mug of spicy, hot glow wine. Skol!",
-      "pl": "I. rozogniony zwierzę I. tried do give ty piekło. I. Niet I. jeden magma crawler może stawiać opór, opierać się, opierać jeden I. z dobrze przyprawiony, gorący I. wino. Skol!",
-      "lang": "This fiery beast really tried to give you hell. But not even a magma crawler can resist a mug of spicy, hot glow wine. Skol!"
-    },
-    {
-      "key": "achievement.384.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Beneath the Sea",
-      "pl": "Pod the Morze",
-      "lang": "Beneath the Sea"
-    },
-    {
-      "key": "achievement.384.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Not really twenty thousand miles, but you had to dive a fair way beneath the sea to find your personal Manta Ray.",
-      "pl": "Niet I. dwadzieścia tysiąc mila, I. ty miał do I. jeden I. way pod the morze do I. twój osobisty Manta Promień.",
-      "lang": "Not really twenty thousand miles, but you had to dive a fair way beneath the sea to find your personal Manta Ray."
-    },
-    {
-      "key": "achievement.385.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "By many it is considered a myth like the Yeti. But you came, saw and tamed it. Now you're the proud rider of a midnight panther, black as a starless night.",
-      "pl": "By wiele, dużo to jest uważać jeden mit like the Yeti. I. ty came, saw i tamed to. Niew you're the dumny jeździec z jeden I. pantera, I. as jeden starless night.",
-      "lang": "By many it is considered a myth like the Yeti. But you came, saw and tamed it. Now you're the proud rider of a midnight panther, black as a starless night."
-    },
-    {
-      "key": "achievement.386.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Lion King",
-      "pl": "Lew Król",
-      "lang": "Lion King"
-    },
-    {
-      "key": "achievement.386.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "By mastering the secrets of Lion's Rock, you proved yourself worthy to face the mighty lions there. One of them even chose to accompany you.",
-      "pl": "By I. the I. z Lew Rock, ty proved siebie godny, znakomity do I. the I. lew there. I. z ich I. chose do towarzyszyć ty.",
-      "lang": "By mastering the secrets of Lion's Rock, you proved yourself worthy to face the mighty lions there. One of them even chose to accompany you."
-    },
-    {
-      "key": "achievement.387.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Pecking Order",
-      "pl": "I. Order",
-      "lang": "Pecking Order"
-    },
-    {
-      "key": "achievement.387.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ah, the old carrot-on-a-stick trick. Well done! You've made the racing bird accept you as a rider and provider. Just don't feed it your fingers.",
-      "pl": "Och, ach, no, o, the I. marchewka-na-jeden-I. I.. Well over and done with! You've zrobiony the wyścigi I. przyjmować, uznawać ty as jeden jeździec i provider. Just don't I. to twój I..",
-      "lang": "Ah, the old carrot-on-a-stick trick. Well done! You've made the racing bird accept you as a rider and provider. Just don't feed it your fingers."
-    },
-    {
-      "key": "achievement.388.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Pig-Headed",
-      "pl": "Świnia-I.",
-      "lang": "Pig-Headed"
-    },
-    {
-      "key": "achievement.388.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Whoa, sow long! This boar is like a force of nature, breaking through the undergrowth of all the Tibian forests and all records of speed. Hang on!",
-      "pl": "Whoa, sow long! I. knur jest like jeden I. z natura, I. through the poszycie z wszystkie the Tibian las i wszystkie records z I.. Hang na!",
-      "lang": "Whoa, sow long! This boar is like a force of nature, breaking through the undergrowth of all the Tibian forests and all records of speed. Hang on!"
-    },
-    {
-      "key": "achievement.389.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Personal Nightmare",
-      "pl": "Osobisty Zły sen",
-      "lang": "Personal Nightmare"
-    },
-    {
-      "key": "achievement.389.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "It might come as a shock to you, but this is the mount of your dreams. Not exactly the white steed of Prince Charming, but maybe the ladies will still scream and faint at the sight of you.",
-      "pl": "To might come as jeden I. do ty, I. I. jest the I. z twój I.. Niet dokładnie the white steed z Książę Czarujący, I. być może, może the pani will I. I. i I. w the I. z ty.",
-      "lang": "It might come as a shock to you, but this is the mount of your dreams. Not exactly the white steed of Prince Charming, but maybe the ladies will still scream and faint at the sight of you."
-    },
-    {
-      "key": "achievement.390.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Thick-Skinned",
-      "pl": "Gruby-Skinned",
-      "lang": "Thick-Skinned"
-    },
-    {
-      "key": "achievement.390.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "It's unstoppable! Walls? Fortresses? Obstacles? Objections? Pah! Nothing will stand before the stampor. Arrows and spears bounce off its hide, enemies are trampled by the dozen. Just don't go for the subtle approach or a date on this thing.",
-      "pl": "To unstoppable! Ściana, mur? Forteca? Przeszkoda? Wątpliwość, zarzut? Pah! Niething will I. I. the stampor. Strzała, strzałka i I. I. off jego, jej, ich, swój I., wróg są trampled by the tuzin. Just don't go dla the subtelny I. lub jeden I. na I. rzecz.",
-      "lang": "It's unstoppable! Walls? Fortresses? Obstacles? Objections? Pah! Nothing will stand before the stampor. Arrows and spears bounce off its hide, enemies are trampled by the dozen. Just don't go for the subtle approach or a date on this thing."
-    },
-    {
-      "key": "achievement.391.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Chequered Teddy",
-      "pl": "Chequered Miś pluszowy",
-      "lang": "Chequered Teddy"
-    },
-    {
-      "key": "achievement.391.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Don't let its fluffy appearance deceive you. The panda is a creature of the wild. It will take you to the most distant regions of Tibia, always in hopes of a little bamboo to nibble on or to check on a possible mate.",
-      "pl": "Don't let jego, jej, ich, swój puchaty pojawienie się oszukiwać ty. The panda jest jeden stwór z the I.. To will take ty do the most odległy region z Tibia, zawsze w I. z jeden little bambus do skubać na lub do check na jeden możliwy I..",
-      "lang": "Don't let its fluffy appearance deceive you. The panda is a creature of the wild. It will take you to the most distant regions of Tibia, always in hopes of a little bamboo to nibble on or to check on a possible mate."
-    },
-    {
-      "key": "achievement.392.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Well, you can rest your nailcase now. This gravedigger's fingernails are nice and clean. Though after the next hellride, you might not want to let it hand any food to you.",
-      "pl": "Well, Lekarz rejonowyżesz rest twój nailcase Niew. I. gravedigger's paznokieć są delikatny, subtelny i I.. I. after the next hellride, ty might Niet I. do let to hand dowolny jedzenie, pożywienie do ty.",
-      "lang": "Well, you can rest your nailcase now. This gravedigger's fingernails are nice and clean. Though after the next hellride, you might not want to let it hand any food to you."
-    },
-    {
-      "key": "achievement.393.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Drugging a snail can have some beneficial side effects. You're now the proud owner of a snarling, speed-crazy slug. Maybe it'll purr if you stroke it. Anyway, life should be one slick ride from now on.",
-      "pl": "Drugging jeden ślimak może masz I. dobroczynny I. I.. You're Niew the dumny właściciel z jeden I., I.-crazy I.. Być może, może it'll I. if ty I. to. W każdym razie, I. a. powinien, powinna być I. zbyt gładki, gładki I. z Niew na.",
-      "lang": "Drugging a snail can have some beneficial side effects. You're now the proud owner of a snarling, speed-crazy slug. Maybe it'll purr if you stroke it. Anyway, life should be one slick ride from now on."
-    },
-    {
-      "key": "achievement.394.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Knock on Wood",
-      "pl": "KNieck na Drewno",
-      "lang": "Knock on Wood"
-    },
-    {
-      "key": "achievement.394.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "It's a wound-up wooden lizard! Well, stranger things have happened, or so you're told. Just hop on and let this wood-and-tin contraption take you anywhere you want to wind down a bit. And hope you don't get hit by lightning underway.",
-      "pl": "To jeden I.-up drewniany jaszczurka! Well, obcy rzecz masz zdarzać się, wydarzać się, lub I. you're told. Just I. na i let I. drewno-i-I. urządzenie, dings take ty gdziekolwiek ty I. do wind I. jeden bit. I I. ty don't get hit by I. be underway.",
-      "lang": "It's a wound-up wooden lizard! Well, stranger things have happened, or so you're told. Just hop on and let this wood-and-tin contraption take you anywhere you want to wind down a bit. And hope you don't get hit by lightning underway."
-    },
-    {
-      "key": "achievement.395.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Fried Shrimp",
-      "pl": "Fried Krewetka",
-      "lang": "Fried Shrimp"
-    },
-    {
-      "key": "achievement.395.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "This must be underwater love - this enormous crustacean now does thy bidding. Or maybe it's just in it for a little more of that shrimp barbecue, as that's a little hard to come by in the sea.",
-      "pl": "I. musi być podwodny love - I. eNiermous crustacean Niew robi thy bidding. Lub być może, może to just w to dla jeden little more z that krewetka grill, as that's jeden little hard do come by w the morze.",
-      "lang": "This must be underwater love - this enormous crustacean now does thy bidding. Or maybe it's just in it for a little more of that shrimp barbecue, as that's a little hard to come by in the sea."
-    },
-    {
-      "key": "achievement.396.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Out of the Stone Age",
-      "pl": "Out z the Stone I.",
-      "lang": "Out of the Stone Age"
-    },
-    {
-      "key": "achievement.396.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "What a blast from the past! This thankful patient thinks you missed your dentist vocation. It's now ready to take a bite of the future and to carry you to your next adventure, or your next patient.",
-      "pl": "I. jeden I. z the I.! I. szczęśliwy, uszczęśliwiony I. I. ty I. twój dentysta profesja. To Niew I. do take jeden I. z the I. i do I. ty do twój next przygoda, lub twój next I..",
-      "lang": "What a blast from the past! This thankful patient thinks you missed your dentist vocation. It's now ready to take a bite of the future and to carry you to your next adventure, or your next patient."
-    },
-    {
-      "key": "achievement.397.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "A drop of oil and you're good to go. This unique mount will roll merrily in and out of any strange place you want to visit. If you see no exit, you probably ended up in a circus ring. Ah well, the show must go on!",
-      "pl": "JEDEN I. z I. i you're I. do go. I. unikalny, unikatowy I. will I. merrily w i out z dowolny dziwny I. ty I. do I.. If ty I. Nie I., ty prawdopodobnie I. up w jeden cyrk ring. Och, ach, no, o well, the I. musi go na!",
-      "lang": "A drop of oil and you're good to go. This unique mount will roll merrily in and out of any strange place you want to visit. If you see no exit, you probably ended up in a circus ring. Ah well, the show must go on!"
-    },
-    {
-      "key": "achievement.398.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Gear Up",
-      "pl": "I. Up",
-      "lang": "Gear Up"
-    },
-    {
-      "key": "achievement.398.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Installing that control unit was a no-brainer. Now you're in control to make it walk this way or that, or to change tack at any moment if required. Your faithful walker mount obeys your every command.",
-      "pl": "Instalować that control jednostka był jeden Nie-mózg. Niew you're w control do make to I. I. way lub that, lub do change I. w dowolny chwila, moment if wymagany. Twój wierny spacerowicz I. być posłusznym, stosować się twój I. I..",
-      "lang": "Installing that control unit was a no-brainer. Now you're in control to make it walk this way or that, or to change tack at any moment if required. Your faithful walker mount obeys your every command."
-    },
-    {
-      "key": "achievement.399.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hunter's greeting! Your skillful use of the slingshot actually stunned a large bear. The creature is slightly dazed, but seems susceptible to your commands. Let's declare open season on all our foes!",
-      "pl": "Myśliwy powitanie! Twój skillful use z the slingshot naprawdę stunned jeden large bear. The stwór jest I. dazed, I. a. wydawać się być, wydawać się, zdawać się podatny do twój I.. Let's oznajmiać otwórz I. na wszystkie nasz MSZ, Ministerstwo Spraw Zagranicznych!",
-      "lang": "Hunter's greeting! Your skillful use of the slingshot actually stunned a large bear. The creature is slightly dazed, but seems susceptible to your commands. Let's declare open season on all our foes!"
-    },
-    {
       "key": "achievement.400.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -1036,15 +460,6 @@
       "en": "Lucky Horseshoe",
       "pl": "Szczęśliwy Podkowa",
       "lang": "Lucky Horseshoe"
-    },
-    {
-      "key": "achievement.400.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "'Sweets for my steed' could be your motto. An impressive horse is eating out of your hand. Saddle up and be ready to find adventure, new friends, and maybe someone to shoe your horse now and then.",
-      "pl": "'I. dla mój steed' mógł być twój motto. Jeden robiący wrażenie I. jest I. out z twój hand. I. up i być I. do I. przygoda, new przyjaciel, dobry kolega, kolega, i być może, może ktoś do I. twój I. Niew i wtedy.",
-      "lang": "'Sweets for my steed' could be your motto. An impressive horse is eating out of your hand. Saddle up and be ready to find adventure, new friends, and maybe someone to shoe your horse now and then."
     },
     {
       "key": "achievement.401.name",
@@ -3628,6 +3043,591 @@
       "en": "I did it! I reached the crystal gardens! What beauty and splendor I have seen down there. Even more: I discovered a small subterranean lake - but Harry was there before me. And he did something strange: He ringed a small, transparent looking bell and immediately a big whirl appeared in the water. I suppose this is the mysterious way deeper into the caves we sought after for so long. But Harry, the coward, didn't dare to dive into the water. Instead he left the caverns and headed back to the surface. I must have this bell!",
       "pl": "I zrobił to! I reached the crystal I.! I. I. i splendor I masz seen I. there. I. more: I odkrywać jeden I. podziemny jezioro - I. Harry był there I. mnie, mi. I on zrobił coś dziwny: On ringed jeden I., przezroczysty looking dzwonek, dzwon i natychmiast jeden duży, wielki I. pojawiać się w the I.. I przypuszczać I. jest the tajemniczy way I. a. do the I. my sought after dla I. long. I. Harry, the coward, didn't dare do I. a. do the I.. Instead on I. the pieczara i I. I. do the I.. I musi masz I. dzwonek, dzwon!",
       "lang": "I did it! I reached the crystal gardens! What beauty and splendor I have seen down there. Even more: I discovered a small subterranean lake - but Harry was there before me. And he did something strange: He ringed a small, transparent looking bell and immediately a big whirl appeared in the water. I suppose this is the mysterious way deeper into the caves we sought after for so long. But Harry, the coward, didn't dare to dive into the water. Instead he left the caverns and headed back to the surface. I must have this bell!"
+    },
+    {
+      "key": "book.dawnport.adventurers_guild_letter",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Brave adventurer,\n\nthe Adventurers' Guild bids you welcome as a new hero of the land.\n\nTake this adventurer's stone and use it in any city temple to instantly travel to our guild hall. If you should ever lose your adventurer's stone, you can replace it by talking to a priest in the temple.\nI hope you will be visiting us soon.\n\nKind regards,\nRotem, Head of the Adventurers' Guild",
+      "pl": "I. awanturnik, the Awanturnik' Gildia bids ty I. as jeden new bohater z the land. Take I. awanturnik stone i use to w dowolny miasto świątynia do instantly podróż do nasz gildia korytarz, przedpokój, hall. If ty a. powinien, powinna kiedykolwiek lose twój awanturnik stone, Lekarz rejonowyżesz zastępować to by I. do jeden ksiądz w the świątynia.\nI I. ty will być I. nas wkrótce, szybko. I. regards,\nRotem, I. z the Awanturnik' Gildia",
+      "lang": "Brave adventurer,\n\nthe Adventurers' Guild bids you welcome as a new hero of the land.\n\nTake this adventurer's stone and use it in any city temple to instantly travel to our guild hall. If you should ever lose your adventurer's stone, you can replace it by talking to a priest in the temple.\nI hope you will be visiting us soon.\n\nKind regards,\nRotem, Head of the Adventurers' Guild"
+    },
+    {
+      "key": "book.koshei.famous_inhabitants_page_2",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "PAGE 2\nLord Koshei the Curious\n-_-_-_-_-_-_-_-_-_-_-_-\nDate of birth: unknown\nAge: unknown\nHometown: unknown\nDate of death: unknown\nThere are not many things known about this man. He appeared out of nowhere and lived here for nearly ten years. Even though he was communicative, he never told anything about his profession or what he did for a living. First he lived in Darashia 2, Flat 11 for about two years. During that time he was roaming around, travelling the lands of Darama and often visiting the Bath of Dreams and the minotaur pyramid in the North.\nThen it was discovered that he had built a tower south of the mountains. It is unexplained how he managed to do that because no one has been seen to help him. Anyway, the remains of his tower are still there. ...",
+      "pl": "I. 2\nLord Koshei the Curious\n-_-_-_-_-_-_-_-_-_-_-_-\nI. z I.: nieznany\nI.: nieznany\nHometown: nieznany\nI. z I.: nieznany\nNie mata, podkładka wiele, dużo rzecz kNiewn o I. man. On pojawiać się out z Niewhere i lived tutaj, tu dla prawie I. a. rok. I. I. on był komunikatywny, rozmowny, on nigdy told cokolwiek o jego profesja, zawód lub I. on zrobił dla jeden I.. I. on lived w Darashia 2, I. 11 dla o dwa a. rok. Podczas, w czasie that czas on był włóczyć się, wędrować around, podróżling the lands z Darama i często I. the I. z I. i the miNietaur piramida w the Nierth.\nWtedy to był odkrywać that on miał zbudowany jeden I. I. z the góra. To jest unexplained jak on managed do robić that ponieważ, bo Nie I. ma był seen do help him. W każdym razie, the I. z jego I. są I. there....",
+      "lang": "PAGE 2\nLord Koshei the Curious\n-_-_-_-_-_-_-_-_-_-_-_-\nDate of birth: unknown\nAge: unknown\nHometown: unknown\nDate of death: unknown\nThere are not many things known about this man. He appeared out of nowhere and lived here for nearly ten years. Even though he was communicative, he never told anything about his profession or what he did for a living. First he lived in Darashia 2, Flat 11 for about two years. During that time he was roaming around, travelling the lands of Darama and often visiting the Bath of Dreams and the minotaur pyramid in the North.\nThen it was discovered that he had built a tower south of the mountains. It is unexplained how he managed to do that because no one has been seen to help him. Anyway, the remains of his tower are still there. ..."
+    },
+    {
+      "key": "book.new_frontier.hidden_note",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Go to the secret door to the north",
+      "pl": "Go do the I. drzwi do the Nierth",
+      "lang": "Go to the secret door to the north"
+    },
+    {
+      "key": "book.otbm.1000_alchemical_uses_of_urine",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "1000 Alchemical Uses of Urine",
+      "pl": "1000 Alchemical Nas z Mocz",
+      "lang": "1000 Alchemical Uses of Urine"
+    },
+    {
+      "key": "book.otbm.1000_gold_10_fire_bugs",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "1000 gold 10 fire bugs for Dream Challenge",
+      "pl": "1000 złota 10 fire bugs dla I. I.",
+      "lang": "1000 gold 10 fire bugs for Dream Challenge"
+    },
+    {
+      "key": "book.otbm.1001_recipes_against_sweaty_hands",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "1001 Recipes Against Sweaty Hands",
+      "pl": "1001 Przepis kulinarny, przepis O Wywołujący poty Hands",
+      "lang": "1001 Recipes Against Sweaty Hands"
+    },
+    {
+      "key": "book.otbm.1001_ways_to_use_energy",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "1001 ways to use energy beams.",
+      "pl": "1001 ways do use energia I..",
+      "lang": "1001 ways to use energy beams."
+    },
+    {
+      "key": "book.otbm.100_gold_coins_equal_1",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "100 gold coins equal 1 platinum coin",
+      "pl": "100 złotych monet I. 1 I. moneta",
+      "lang": "100 gold coins equal 1 platinum coin"
+    },
+    {
+      "key": "book.otbm.100_gold_coins_equal_1_39c18279",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "100 gold coins equal 1 platinum coin",
+      "pl": "100 złotych monet I. 1 I. moneta",
+      "lang": "100 gold coins equal 1 platinum coin"
+    },
+    {
+      "key": "book.otbm.100_platinum_coins_equal_1",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "100 platinum coins equal 1 crystal coin",
+      "pl": "100 I. monety I. 1 crystal moneta",
+      "lang": "100 platinum coins equal 1 crystal coin"
+    },
+    {
+      "key": "book.otbm.100_platinum_coins_equal_1_648a8349",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "100 platinum coins equal 1 crystal coin",
+      "pl": "100 I. monety I. 1 crystal moneta",
+      "lang": "100 platinum coins equal 1 crystal coin"
+    },
+    {
+      "key": "book.otbm.1_be_respectful_and_considerate",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "1. Be respectful and considerate towards your comrades.",
+      "pl": "1. Być pełen szacunku i pełen względów, troskliwy towards twój towarzysz.",
+      "lang": "1. Be respectful and considerate towards your comrades."
+    },
+    {
+      "key": "book.otbm.1_discover_secret_of_necromants",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "1. Discover secret of necromants nectar",
+      "pl": "1. Odkrywać I. z necromants nektar",
+      "lang": "1. Discover secret of necromants nectar"
+    },
+    {
+      "key": "book.otbm.1_put_a_bunch_of",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "1. Put a bunch of sugar cane into the machine",
+      "pl": "1. Put jeden bunch z I. I. a. do the I.",
+      "lang": "1. Put a bunch of sugar cane into the machine"
+    },
+    {
+      "key": "book.otbm.1st_floor_bel_etage_grand",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "1st floor (bel etage): Grand Opera Caf",
+      "pl": "1st I. (bel etage): I. Opera Caf",
+      "lang": "1st floor (bel etage): Grand Opera Caf"
+    },
+    {
+      "key": "book.otbm.1st_floor_interior_design_take",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "1st floor: Interior Design (take elevator)",
+      "pl": "1st I.: I. Design (take winda)",
+      "lang": "1st floor: Interior Design (take elevator)"
+    },
+    {
+      "key": "book.otbm.1st_floor_magic_emporium",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "1st floor: Magic Emporium",
+      "pl": "1st I.: I. Emporium",
+      "lang": "1st floor: Magic Emporium"
+    },
+    {
+      "key": "book.otbm.1st_floor_the_archers_grounds",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "1st floor: The Archer's Grounds - Distance Weapons and Paladin Spells",
+      "pl": "1st I.: The Łucznik Ziemia - I. Broń i Paladin zaklęCentalna Agencja Wywiadowcza",
+      "lang": "1st floor: The Archer's Grounds - Distance Weapons and Paladin Spells"
+    },
+    {
+      "key": "book.otbm.20_tricks_to_get_peoples",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "20 Tricks to Get People's Money",
+      "pl": "20 I. do Get I. Pieniądze",
+      "lang": "20 Tricks to Get People's Money"
+    },
+    {
+      "key": "book.otbm.2_dont_be_late_for",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "2. Don't be late for lessons and training sessions.",
+      "pl": "2. Don't być I. dla lekcja i Trening sesja.",
+      "lang": "2. Don't be late for lessons and training sessions."
+    },
+    {
+      "key": "book.otbm.2_floor_the_room_of",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "2. Floor - The Room of the Oracle",
+      "pl": "2. I. - The miejsce z the Wyrocznia",
+      "lang": "2. Floor - The Room of the Oracle"
+    },
+    {
+      "key": "book.otbm.2_molasses_will_be_automatically",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "2. Molasses will be automatically extracted and distilled into rum",
+      "pl": "2. Molasses will być automatically extracted i distilled a. do I.",
+      "lang": "2. Molasses will be automatically extracted and distilled into rum"
+    },
+    {
+      "key": "book.otbm.2nd_floor_barnabas_dee_astronomer",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "2nd floor: Barnabas Dee, Astronomer and Sorcerer Spells Teacher.",
+      "pl": "2nd I.: Barnabas Dee, AstroNiemer i Sorcerer zaklęCentalna Agencja Wywiadowcza Nauczyciel.",
+      "lang": "2nd floor: Barnabas Dee, Astronomer and Sorcerer Spells Teacher."
+    },
+    {
+      "key": "book.otbm.2nd_floor_exquisite_jewellery",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "2nd floor: Exquisite Jewellery",
+      "pl": "2nd I.: Przepiękny Biżuteria",
+      "lang": "2nd floor: Exquisite Jewellery"
+    },
+    {
+      "key": "book.otbm.2nd_floor_madame_faylas_music",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "2nd floor: Madame Fayla's Music Chamber",
+      "pl": "2nd I.: Madame Fayla's Muzyka I.",
+      "lang": "2nd floor: Madame Fayla's Music Chamber"
+    },
+    {
+      "key": "book.otbm.3789_gold_weapons_and_repairs",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "3789 gold weapons and repairs",
+      "pl": "3789 złota broń i I.",
+      "lang": "3789 gold weapons and repairs"
+    },
+    {
+      "key": "book.otbm.3_discover_secret_entrance_to",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "3. Discover secret entrance to Nightmare Pits",
+      "pl": "3. Odkrywać I. entrance do Zły sen Dół, jama",
+      "lang": "3. Discover secret entrance to Nightmare Pits"
+    },
+    {
+      "key": "book.otbm.3_maintain_your_training_gear",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "3. Maintain your training gear in good shape.",
+      "pl": "3. Utrzymywać twój Trening I. w I. I..",
+      "lang": "3. Maintain your training gear in good shape."
+    },
+    {
+      "key": "book.otbm.3_when_the_distilling_process",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "3. When the distilling process is finished, rum will start pouring out of the machine",
+      "pl": "3. When the distilling process jest gotowy, skończony, I. will start I. out z the I.",
+      "lang": "3. When the distilling process is finished, rum will start pouring out of the machine"
+    },
+    {
+      "key": "book.otbm.4000_gold_books_and_paper",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "4000 gold books and paper",
+      "pl": "4000 złota I. i I.",
+      "lang": "4000 gold books and paper"
+    },
+    {
+      "key": "book.otbm.4_exterminiate_the_ghouls_in",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "4. Exterminiate the ghouls in the garden",
+      "pl": "4. Exterminiate the ghouls w the I.",
+      "lang": "4. Exterminiate the ghouls in the garden"
+    },
+    {
+      "key": "book.otbm.4_no_running_in_the",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "4. No running in the corridor",
+      "pl": "4. Nie I. w the corridor",
+      "lang": "4. No running in the corridor"
+    },
+    {
+      "key": "book.otbm.4_quickly_use_any_bottle",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "4. Quickly use any bottle or cup to collect the rum",
+      "pl": "4. Szybki, prędki use dowolny I. lub cup do I. the I.",
+      "lang": "4. Quickly use any bottle or cup to collect the rum"
+    },
+    {
+      "key": "book.otbm.5000_gold_runes_and_fluids",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "5000 gold runes and fluids",
+      "pl": "5000 złota runes i I.",
+      "lang": "5000 gold runes and fluids"
+    },
+    {
+      "key": "book.otbm.5_no_eating_and_drinking",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "5. No eating and drinking.",
+      "pl": "5. Nie I. i I..",
+      "lang": "5. No eating and drinking."
+    },
+    {
+      "key": "book.otbm.5_no_sigildrawing_on_the",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "5. No sigil-drawing on the floor",
+      "pl": "5. Nie sigil-I. na the I.",
+      "lang": "5. No sigil-drawing on the floor"
+    },
+    {
+      "key": "book.otbm.6_no_food_in_the",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "6. No food in the library",
+      "pl": "6. Nie jedzenie, pożywienie w the biblioteka",
+      "lang": "6. No food in the library"
+    },
+    {
+      "key": "book.otbm.6_return_borrowed_equipment_to",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "6. Return borrowed equipment to the storage room.",
+      "pl": "6. I. pożyczać wyposażenie, ekwipunek, sprzęt do the magazynowanie, przechowywanie miejsce.",
+      "lang": "6. Return borrowed equipment to the storage room."
+    },
+    {
+      "key": "book.otbm.7_no_scribbling_in_libraryowned",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "7. No scribbling in library-owned documents",
+      "pl": "7. Nie scribbling w biblioteka-I. I.",
+      "lang": "7. No scribbling in library-owned documents"
+    },
+    {
+      "key": "book.otbm.800_razoredge_matt_vs_bambam",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "8.00   Razoredge Matt vs. Bambam Brutus",
+      "pl": "8.00 Razoredge Matowy vs. Bambam Brutus",
+      "lang": "8.00   Razoredge Matt vs. Bambam Brutus"
+    },
+    {
+      "key": "book.otbm.8_books_and_scrolls_must",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "8. Books and scrolls must be returned to the exact place they were taken from",
+      "pl": "8. I. i zwój musi być I. do the I. I. oni były taken z",
+      "lang": "8. Books and scrolls must be returned to the exact place they were taken from"
+    },
+    {
+      "key": "book.otbm.900_mad_doc_vs_harpoon",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "9.00   Mad Doc. vs. Harpoon Angus",
+      "pl": "9.00 Zwariowany, niespełna rozumu Doc. vs. Harpun Angus",
+      "lang": "9.00   Mad Doc. vs. Harpoon Angus"
+    },
+    {
+      "key": "book.otbm.9_no_library_document_to",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "9. No library document to be taken outside of the library grounds",
+      "pl": "9. Nie biblioteka I. do być taken I. z the biblioteka ziemia",
+      "lang": "9. No library document to be taken outside of the library grounds"
+    },
+    {
+      "key": "book.otbm.a_city_only_for_serving",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "A city only for serving one goal: The investigation of the magic in our world Tibia!",
+      "pl": "JEDEN miasto tylko dla serving I. bramka: The dochodzenie z the I. w nasz I. Tibia!",
+      "lang": "A city only for serving one goal: The investigation of the magic in our world Tibia!"
+    },
+    {
+      "key": "book.otbm.a_crudely_scribbled_note",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "(A crudely scribbled note)",
+      "pl": "(JEDEN crudely scribbled Niete)",
+      "lang": "(A crudely scribbled note)"
+    },
+    {
+      "key": "book.otbm.a_goblet_forged_by_the",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "A goblet forged by the dragon Khax that represents all the knowledge and wisdom of TibiaVenezuela.",
+      "pl": "JEDEN kielich forged by the smok Khax that reprezentować wszystkie the kNiewledge i I. z TibiaVenezuela.",
+      "lang": "A goblet forged by the dragon Khax that represents all the knowledge and wisdom of TibiaVenezuela."
+    },
+    {
+      "key": "book.otbm.a_low_nearly_always_fourleaved",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "A low, nearly always four-leaved plant with yellow blossoms that grows in warm climate. It used to be the main source of food for the goats of the continent. However, later it was discovered to have a previously totally unknown poisenous long-term effect on the animals, and all goats died within two months.",
+      "pl": "JEDEN low, prawie zawsze cztery-leaved I. z I. I. that I. w warm klimat. To used do być the main źródło z jedzenie, pożywienie dla the koza, kozioł z the kontynent. Jednak, later to był odkrywać do masz jeden poprzednio I. nieznany poiseNieus long-I. I. na the I., i wszystkie koza, kozioł died wewnątrz dwa miesiąc.",
+      "lang": "A low, nearly always four-leaved plant with yellow blossoms that grows in warm climate. It used to be the main source of food for the goats of the continent. However, later it was discovered to have a previously totally unknown poisenous long-term effect on the animals, and all goats died within two months."
+    },
+    {
+      "key": "book.otbm.a_map_of_several_known",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "A map of several known as well as completely exotic locations.",
+      "pl": "JEDEN mapa z I. kNiewn as well as I. egzotyczny umiejscowienie.",
+      "lang": "A map of several known as well as completely exotic locations."
+    },
+    {
+      "key": "book.otbm.a_number_of_marid_was",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "A number of Marid was caught and slaughtered on the spot, but much to Malor's disappointment the majority of Gabel's troops managed to escape southwards in what appeared to be a well-planned strategic withdrawal. And how much greater was his surprise to find that the Marid fled to the city of Ankrahmun where they appeared were expected! It was then that he realised that Gabel had suspected a ruse all along, and that he had prepared a counterstrategy. Malor immediately ordered his troops to abandon pursuit, but it was too late. The undead marched against Ankrahmun with all the determination of a mindless killing machine, and the Efreet, blinded by rage, did not lag behind, only to be met by ceaseless barrages of arrows and catapult stones. A cataclysmic battle ensued.",
+      "pl": "JEDEN numer z Marid był caught i I. na the spot, I. dużo, bardzo do Malor's rozczarowanie the większość z Gabel's I. managed do I. southwards w I. pojawiać się do być jeden well-planned strategiczny wypłjedenćal. I jak dużo, bardzo I. był jego I. do I. that the Marid fled do the miasto z Ankrahmun where oni pojawiać się były spodziewać się! To był wtedy that on realised that Gabel miał suspected jeden podstęp wszystkie wzdłuż, i that on miał przygotowany jeden counterstrategy. Malor natychmiast ordered jego I. do zostawiać, opuszczać pogoń, I. to był też, także I.. The undead I. o Ankrahmun z wszystkie the determinacja, zdecydowanie z jeden bezsensowny I. I., i the Efreet, I. by I., zrobił Niet lag za, z tyłu, tylko do być met by bezustanny zapora z strzała, strzałka i catapult stones. JEDEN cataclysmic I. ensued.",
+      "lang": "A number of Marid was caught and slaughtered on the spot, but much to Malor's disappointment the majority of Gabel's troops managed to escape southwards in what appeared to be a well-planned strategic withdrawal. And how much greater was his surprise to find that the Marid fled to the city of Ankrahmun where they appeared were expected! It was then that he realised that Gabel had suspected a ruse all along, and that he had prepared a counterstrategy. Malor immediately ordered his troops to abandon pursuit, but it was too late. The undead marched against Ankrahmun with all the determination of a mindless killing machine, and the Efreet, blinded by rage, did not lag behind, only to be met by ceaseless barrages of arrows and catapult stones. A cataclysmic battle ensued."
+    },
+    {
+      "key": "book.otbm.a_plant_with_large_dark",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "A plant with large, dark red-colored blossoms.",
+      "pl": "JEDEN I. z large, I. I.-colored I..",
+      "lang": "A plant with large, dark red-colored blossoms."
+    },
+    {
+      "key": "book.otbm.a_rarely_found_starshaped_orangecolored",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "A rarely found star-shaped orange-colored flower of amazing beauty. Commonly seen as a symbol of love.",
+      "pl": "JEDEN rzadko znaleziono I.-ukształtowany I.-colored I. z zdumiewający I.. Commonly seen as jeden symbol z love.",
+      "lang": "A rarely found star-shaped orange-colored flower of amazing beauty. Commonly seen as a symbol of love."
+    },
+    {
+      "key": "book.otbm.a_spreadsheet_densely_covered_with",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "(A  spreadsheet densely covered with strange symbols, numbers and signs that do not make any sense to you)",
+      "pl": "(JEDEN arkusz elektroniczny, arkusz kalkulacyjny gęsty covered z dziwny symbol, numer i I. that robić Niet make dowolny sense do ty)",
+      "lang": "(A  spreadsheet densely covered with strange symbols, numbers and signs that do not make any sense to you)"
+    },
+    {
+      "key": "book.otbm.a_teleportation_through_the_magic",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "A teleportation through the magic web",
+      "pl": "JEDEN teleportowaćation through the I. pajęczyna",
+      "lang": "A teleportation through the magic web"
+    },
+    {
+      "key": "book.otbm.a_true_knight_always_trusts",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "A true Knight always trusts his sword, even if it's simple.",
+      "pl": "JEDEN prawdziwy I. zawsze I. jego miecz, I. if to prosty.",
+      "lang": "A true Knight always trusts his sword, even if it's simple."
+    },
+    {
+      "key": "book.otbm.abandoned_production_sites_caution_swamp",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Abandoned production sites. Caution: Swamp troll infestation. Enter at your own risk.",
+      "pl": "Zostawiać, opuszczać produkcja I.. I.: I. troll infestation. I. w twój I. I..",
+      "lang": "Abandoned production sites. Caution: Swamp troll infestation. Enter at your own risk."
+    },
+    {
+      "key": "book.otbm.abbot_still_clueless_abour_my",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "... abbot still clueless abour my ...",
+      "pl": "... opat I. clueless abour mój...",
+      "lang": "... abbot still clueless abour my ..."
+    },
+    {
+      "key": "book.otbm.abdendriel_furniture_store",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ab'Dendriel Furniture Store",
+      "pl": "Ab'Dendriel Meble I.",
+      "lang": "Ab'Dendriel Furniture Store"
+    },
+    {
+      "key": "book.otbm.about_the_orcs_because_of",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "about the orcs because of these losses.",
+      "pl": "o the orcs ponieważ, bo z these strata, utrata.",
+      "lang": "about the orcs because of these losses."
+    },
+    {
+      "key": "book.otbm.about_your_destiny_you_can",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "about your destiny. You can then travel to the Isle of Destiny and choose a vocation.",
+      "pl": "o twój przeznaczenie. Lekarz rejonowyżesz wtedy podróż do the Wyspa, ostrów z Przeznaczenie i wybierać jeden profesja.",
+      "lang": "about your destiny. You can then travel to the Isle of Destiny and choose a vocation."
+    },
+    {
+      "key": "book.otbm.academy_and_training_centre",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Academy and Training Centre",
+      "pl": "Akademia i Trening Centre",
+      "lang": "Academy and Training Centre"
+    },
+    {
+      "key": "book.otbm.accidentally_stabbed_by_al_dee",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Accidentally stabbed by Al Dee.",
+      "pl": "Przypadkowy stabbed by Al Dee.",
+      "lang": "Accidentally stabbed by Al Dee."
+    },
+    {
+      "key": "book.otbm.according_to_our_knowledge_only",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "According to our knowledge, only the delicate elves in their cities deep in the forests and the dwarves in their fortresses deep",
+      "pl": "Dawać do nasz kNiewledge, tylko the delikatny elves w ich miasto I. w the las i the dwarves w ich forteca I.",
+      "lang": "According to our knowledge, only the delicate elves in their cities deep in the forests and the dwarves in their fortresses deep"
+    },
+    {
+      "key": "book.otbm.advanced_spells_for_less_gold",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Advanced spells for less gold.",
+      "pl": "Zaawansowany zaklęCentalna Agencja Wywiadowcza dla I. złota.",
+      "lang": "Advanced spells for less gold."
+    },
+    {
+      "key": "book.otbm.adventurers_administration_quests_and_tasks",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Adventurer's Administration - Quests and Tasks open; contact Mr Morris.",
+      "pl": "Awanturnik Administracja, zarządzanie - zadania i Zadanie, zajęcie otwórz; I. Mr Morris.",
+      "lang": "Adventurer's Administration - Quests and Tasks open; contact Mr Morris."
+    },
+    {
+      "key": "book.otbm.adventurers_dormitory_door_key_lost",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Adventurer's Dormitory (door key lost, please report to Mr Morris if you found it.)",
+      "pl": "Awanturnik Sypialnia (drzwi I. I., Proszę I. do Mr Morris if ty znaleziono to.)",
+      "lang": "Adventurer's Dormitory (door key lost, please report to Mr Morris if you found it.)"
     }
   ],
   "length_ratio_issues": [
@@ -3711,6 +3711,15 @@
       "en_len": 15,
       "lang_ratio": 1.0,
       "pl_ratio": 3.267
+    },
+    {
+      "key": "achievement.381.name",
+      "category": "achievements",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 15,
+      "lang_ratio": 0.8,
+      "pl_ratio": 2.667
     },
     {
       "key": "npc.a_ghostly_sage.stdmod_4",
@@ -4237,8 +4246,8 @@
   ],
   "auto_fix": {
     "attempted": 80,
-    "applied": 33,
-    "skipped": 47,
+    "applied": 28,
+    "skipped": 52,
     "errors": 0
   }
 }

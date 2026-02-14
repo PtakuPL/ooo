@@ -3,20 +3,21 @@
   "script_group": "cjk",
   "total_keys": 53586,
   "translated": 35756,
-  "identical_to_en": 28757,
+  "identical_to_en": 28677,
   "placeholder_keys": 15675,
   "coverage_pct": 66.7,
-  "issues_total": 6125,
+  "issues_total": 6126,
   "issues_by_type": {
     "V3_empty": 6113,
     "V1_placeholder_mismatch": 7,
     "V2_length_ratio": 3,
     "script_cjk_ratio": 1,
+    "V4_artifact": 1,
     "V5_pipe_mismatch": 1
   },
   "issues_by_severity": {
     "CRITICAL": 8,
-    "HIGH": 0,
+    "HIGH": 1,
     "MEDIUM": 4,
     "LOW": 6113
   },
@@ -69,6 +70,12 @@
       "category": "talkactions",
       "type": "V5_pipe_mismatch",
       "severity": "CRITICAL"
+    },
+    {
+      "key": "achievement.317.description",
+      "category": "achievements",
+      "type": "V4_artifact",
+      "severity": "HIGH"
     },
     {
       "key": "achievement.87.name",
@@ -135,21 +142,15 @@
       "category": "npc",
       "type": "V3_empty",
       "severity": "LOW"
-    },
-    {
-      "key": "npc.a_prisoner.say_7",
-      "category": "npc",
-      "type": "V3_empty",
-      "severity": "LOW"
     }
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 471,
+    "issues_total": 475,
     "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 71,
+    "length_ratio": 75,
     "auto_fix_applied": 80
   },
-  "validated_at": "2026-02-14T09:29:19.367882Z"
+  "validated_at": "2026-02-14T10:48:41.011136Z"
 }

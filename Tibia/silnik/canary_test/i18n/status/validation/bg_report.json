@@ -3,20 +3,20 @@
   "script_group": "cyrillic",
   "total_keys": 53586,
   "translated": 32896,
-  "identical_to_en": 25561,
+  "identical_to_en": 25473,
   "placeholder_keys": 20516,
   "coverage_pct": 61.4,
-  "issues_total": 6246,
+  "issues_total": 6248,
   "issues_by_type": {
     "V3_empty": 6113,
-    "script_cyrillic_latin_mix": 124,
+    "script_cyrillic_latin_mix": 126,
     "V1_placeholder_mismatch": 7,
     "V4_artifact": 1,
     "V5_pipe_mismatch": 1
   },
   "issues_by_severity": {
     "CRITICAL": 8,
-    "HIGH": 125,
+    "HIGH": 127,
     "MEDIUM": 0,
     "LOW": 6113
   },
@@ -151,5 +151,5 @@
     "length_ratio": 71,
     "auto_fix_applied": 44
   },
-  "validated_at": "2026-02-14T10:28:08.400068Z"
+  "validated_at": "2026-02-14T10:54:47.147696Z"
 }

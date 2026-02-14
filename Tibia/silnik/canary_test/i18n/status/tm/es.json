@@ -134038,5 +134038,1309 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-14T10:24:48.856346Z"
+  },
+  "npc.raymond_striker.say_12": {
+    "src_hash": "e624b09d0a888ce51856313b7e772fb5",
+    "text": "¿Por casualidad te gustaría volver a matar piratas por nosotros?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-14T10:35:58.433370Z"
+  },
+  "npc.raymond_striker.say_1": {
+    "src_hash": "06d72f8e722c52ec3d10a6c7899c5207",
+    "text": "Eleonore... Sí, la recuerdo... vagamente. Ella es una chica bonita... pero aún es sólo una chica y ahora estoy enamorado de una mujer hermosa y apasionada. Un verdadero {mermaid} incluso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:37:27.586925Z"
+  },
+  "npc.raymond_striker.say_10": {
+    "src_hash": "7748f9a9636901b4a588681a11a2ce6d",
+    "text": "¡Ah, gracias amigo! ¿Qué haríamos sin ti? Toma, toma esta recompensa por tus esfuerzos. Si quieres seguir ayudándonos a matar piratas, pregúntame sobre ese {task}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:37:33.204453Z"
+  },
+  "npc.raymond_striker.say_11": {
+    "src_hash": "fb38cec0a589ff77edbcd38275a66185",
+    "text": "Ve a matar más piratas.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:37:33.204798Z"
+  },
+  "npc.raymond_striker.say_13": {
+    "src_hash": "80abe3f4ca54e74d4283fe7dff48a06f",
+    "text": "Perfecto. Sé que parece mucho, pero tómate tu tiempo. No lo harás en vano, lo prometo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:37:33.205345Z"
+  },
+  "npc.raymond_striker.say_2": {
+    "src_hash": "c34c36d6706020be39a8101c2e8c06ad",
+    "text": "No preguntes sobre misiones tontas. Lo único en lo que puedo pensar es en este encantador {mermaid}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:37:33.205978Z"
+  },
+  "npc.raymond_striker.say_3": {
+    "src_hash": "e327ba20dee90f71b97ecc600abcb7ee",
+    "text": "Pregunte en el asentamiento dónde puede ayudar. Si has demostrado tu valía, es posible que tenga algunas misiones para ti.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:37:33.206733Z"
+  },
+  "npc.raymond_striker.say_4": {
+    "src_hash": "7743657c26e42c737de7005b9404c841",
+    "text": "Creo que eso significa 'mission accomplished'. Jeje. Supongo que eso pondrá fin a sus esfuerzos por comprar cualquier sustancia alquímica de Edron.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:37:38.313163Z"
+  },
+  "npc.raymond_striker.say_5": {
+    "src_hash": "1f460c0ce226d31f4c9fdaf4aabeb3bf",
+    "text": "¡Lo hiciste! ¡Excelente!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:37:38.313515Z"
+  },
+  "npc.raymond_striker.say_6": {
+    "src_hash": "ead4cbf9654ba1e3fe1bf6b5054be837",
+    "text": "¿Mi almohada? Me conocen muy bien... <sigh> Lo tengo desde mi infancia. Sin embargo. Toma, tómalo y convéncelo de que estoy muerto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:37:38.314138Z"
+  },
+  "npc.raymond_striker.say_7": {
+    "src_hash": "1cb0fe18507e22470170afa58fb9656c",
+    "text": "La sirena es la criatura más hermosa que he conocido. Ella es tan maravillosa. Fue una especie de magia cuando nos conocimos. Una mirada en sus ojos y de repente supe que nunca más habría otra mujer en mi vida que ella.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:37:38.315046Z"
+  },
+  "npc.raymond_striker.say_8": {
+    "src_hash": "8ca2f174d59fb003429f2987d42acc98",
+    "text": "Estoy profundamente avergonzado por haber carecido de fuerza de voluntad para resistir su hechizo. Gracias por su ayuda en ese asunto. Ahora mi cabeza vuelve a estar libre para pensar en nuestro {mission}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:37:38.316043Z"
+  },
+  "npc.raymond_striker.say_9": {
+    "src_hash": "0880ca6cfc20332cee38788d435ec45a",
+    "text": "¡Ah, claro! ¡El traje de pirata! Aquí tienes, ahora eres verdaderamente uno de nosotros.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:37:43.325258Z"
+  },
+  "npc.razan.blue_cloth_done": {
+    "src_hash": "6bd3e2a1e88c1ac59d617c19d19d22dd",
+    "text": "¡Ah! Felicitaciones, incluso si no eres un verdadero maestro de armas, seguramente mereces usar este turbante. Toma, te lo ataré.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:37:43.325902Z"
+  },
+  "npc.razan.greet_msg_1": {
+    "src_hash": "188d7275719f706c91b86db85d8f7469",
+    "text": "Saludos |PLAYERNAME|. ¿Qué te lleva a mí?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:37:43.326361Z"
+  },
+  "npc.razan.say_1": {
+    "src_hash": "34797ff9acd365bdd13069ae913d3fd7",
+    "text": "¿Mi turbante? Eh no, no puedes tenerlo. Sólo los maestros de armas orientales pueden usarlo después de haber completado una tarea difícil.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:37:43.327019Z"
+  },
+  "npc.razan.say_2": {
+    "src_hash": "508ff191ef2b60bd22c296b0e6800903",
+    "text": "¿Quieres decir que te gustaría demostrar que mereces usar ese turbante?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:37:43.327496Z"
+  },
+  "npc.red_lilly.greet_msg_1": {
+    "src_hash": "1f8a30ca0e809002cdd913f195d4d41c",
+    "text": "Hola cariño. Si necesitas equipo general o cosas así, dímelo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:37:48.061128Z"
+  },
+  "npc.red_lilly.sendtrade_msg_1": {
+    "src_hash": "773e32e4141d8bfcee1e686f4ec2c8bd",
+    "text": "Por supuesto, simplemente navega por mis productos. Recuerda que si compras viales de aceite, hay un depósito de 5 de oro por el vacío.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:37:48.061770Z"
+  },
+  "npc.red_lilly.stdmod_1": {
+    "src_hash": "6ac11a252db045379ecc159c7b70e7f3",
+    "text": "¡Ven a visitar mi pequeña casa de empeño! Equipos generales y demás. ¡No te lo pierdas!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:37:48.062348Z"
+  },
+  "npc.red_lilly.stdmod_10": {
+    "src_hash": "94cf1dce5384e21556c376d9db5efa12",
+    "text": "¿Qué interés podría tener un rey en este pequeño asentamiento? Si un rey se preocupa por nosotros, debe haber algo importante detrás de todo esto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:37:48.063014Z"
+  },
+  "npc.red_lilly.stdmod_11": {
+    "src_hash": "ac3ea23d70287e9d9124aa6809de74a4",
+    "text": "La libertad viene, la libertad se va, sólo la bahía permanece. Jeje.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:37:48.063447Z"
+  },
+  "npc.red_lilly.stdmod_12": {
+    "src_hash": "f34a6779bbf42b6bc968e7e4e40b84c4",
+    "text": "Vendo antorchas, candelabros y aceite.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:37:53.258741Z"
+  },
+  "npc.red_lilly.stdmod_13": {
+    "src_hash": "625dc540cc96aadbe12485148e730f50",
+    "text": "Ese tipo es un comerciante astuto, cariño. Apuesto a que incluso yo podría aprender un par de cosas de él.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:37:53.259290Z"
+  },
+  "npc.red_lilly.stdmod_14": {
+    "src_hash": "d0ce1bd2417c6a2168d29e97c2dab071",
+    "text": "Tengo palas, picos, guadañas, bolsas, cuerdas, mochilas, platos, pergaminos, relojes, algunas fuentes de luz y otras cosas. Sólo pídeme un {trade}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:37:53.259959Z"
+  },
+  "npc.red_lilly.stdmod_15": {
+    "src_hash": "6782134b4ca4aa8628b45a9aebf8111a",
+    "text": "En general, los piratas son malos para los negocios. Pero a veces son buenos para los negocios.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:37:53.260675Z"
+  },
+  "npc.red_lilly.stdmod_16": {
+    "src_hash": "89dcfddf7bc3c0dd68950035378cd19c",
+    "text": "Lamentablemente, los trabajadores apenas tienen dinero suficiente para comprar algo de comer y beber. Eso también es malo para mi negocio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:37:53.261291Z"
+  },
+  "npc.red_lilly.stdmod_17": {
+    "src_hash": "9ba8e915f8aa084201ec59c5c8d01989",
+    "text": "Ah, hay pocas cosas en el mundo que se acerquen al sabor del ron.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:37:58.596219Z"
+  },
+  "npc.red_lilly.stdmod_18": {
+    "src_hash": "b8836cc4532709975b51786d5a0ee522",
+    "text": "He oído que hay una buena recompensa por su cabeza. Sin embargo, sería una pena perder a un hombre tan guapo ante el verdugo <winks>.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:37:58.596871Z"
+  },
+  "npc.red_lilly.stdmod_19": {
+    "src_hash": "7f7d4bb38cd749b5a8e69b4ffae399ed",
+    "text": "El azúcar deja fluir el dinero. Dependemos mucho de ello.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:37:58.597294Z"
+  },
+  "npc.red_lilly.stdmod_2": {
+    "src_hash": "b82dd1a514fde103942f2a3f0f9bebc7",
+    "text": "Sólo entre tú y yo cariño, esa mujer es una bruja. Pociones de amor, venenos, muñecos vudú para torturar al prójimo. Lo que sea, ella lo entendió.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:37:58.598028Z"
+  },
+  "npc.red_lilly.stdmod_20": {
+    "src_hash": "5579dd076f6710bfebc095f58ca3dd3a",
+    "text": "Thais puede ser una ciudad espléndida, pero aquí no nos sirve de nada. La situación en nuestro pueblo empeora con cada barco lleno de extranjeros que llega aquí.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:37:58.598874Z"
+  },
+  "npc.red_lilly.stdmod_21": {
+    "src_hash": "ca70447c8f23ebe4f4920aaaf043b63a",
+    "text": "Escuché que Venore pronto adquirirá varios monopolios comerciales que les otorgarán riqueza durante siglos.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:38:03.978240Z"
+  },
+  "npc.red_lilly.stdmod_22": {
+    "src_hash": "91dee67167758f2b85e521e6cf09d0e8",
+    "text": "Bueno, <lowers the voice to a whisper> hay varias personas por ahí que saben esto o aquello sobre el vudú y no todos están tramando algo bueno. Simplemente compre algunos amuletos de la suerte de esa vieja bruja Charlotta para estar seguro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:38:03.979351Z"
+  },
+  "npc.red_lilly.stdmod_23": {
+    "src_hash": "ddb008ffbad5f1318e1d03c32bf09a8a",
+    "text": "Un hombre guapo pero un poco rígido. Creo que nadie ha tenido nunca la oportunidad de verlo sonreír.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:38:03.979914Z"
+  },
+  "npc.red_lilly.stdmod_24": {
+    "src_hash": "899022e5d649c57be7329a8072c91cec",
+    "text": "Te pagaré 5 de oro por cada vial vacío. ¿De acuerdo?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:38:03.980403Z"
+  },
+  "npc.red_lilly.stdmod_25": {
+    "src_hash": "289a0e3f45cea4f5b36e9e9502010fc4",
+    "text": "Hmm, pero mantén Tibia libre de basura.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:38:03.980933Z"
+  },
+  "npc.red_lilly.stdmod_27": {
+    "src_hash": "1324cf9739353a8ddbf041b700080f0a",
+    "text": "Las quara son la maldición del mar. Todo aquel que se atreva a enfurecer a los espíritus del mar debe temer su venganza. Vienen de noche a secuestrar a personas que olvidaron sus amuletos de la suerte en casa... \\z\n\tA veces esos seres malvados toman a los niños más traviesos para criarlos como si fueran suyos bajo el agua.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:38:09.341625Z"
+  },
+  "npc.red_lilly.stdmod_3": {
+    "src_hash": "c3367dabdb58f90281df333458e64db7",
+    "text": "¡Oh! <whispers> Hay... rumores, ¿sabes? Sobre rituales sangrientos y maldiciones espantosas... mejor no hables en voz alta sobre esos temas.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:38:09.342486Z"
+  },
+  "npc.red_lilly.stdmod_4": {
+    "src_hash": "c342b764fa018e96b7f56a7f5ff2f18e",
+    "text": "¡¡Kshh!! No se habla de... la gente mágica aquí... Esto podría llamar su atención.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:38:09.343010Z"
+  },
+  "npc.red_lilly.stdmod_5": {
+    "src_hash": "2ca3052a790f30b227b693edfc90d7f5",
+    "text": "Es difícil imaginar que este gordo tenga una hija tan bonita.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:38:09.343479Z"
+  },
+  "npc.red_lilly.stdmod_6": {
+    "src_hash": "d5f388b2673ae29e8c05c653a72db808",
+    "text": "No lo menciones en mi casa, tonto. Invocas el mal y el caos sobre nosotros.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:38:09.343949Z"
+  },
+  "npc.red_lilly.stdmod_7": {
+    "src_hash": "d24920ce5cd47e066ff95e3703190561",
+    "text": "No me refiero a la comida.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:38:13.978656Z"
+  },
+  "npc.red_lilly.stdmod_8": {
+    "src_hash": "1903274eb2f988f619c22e7c73c6c37f",
+    "text": "No diré nada malo de una persona de tan alta cuna. Por eso me quedo en silencio cariño.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:38:13.979331Z"
+  },
+  "npc.red_lilly.stdmod_9": {
+    "src_hash": "e3aaebdc5c9a0460ee4cafd44adbab39",
+    "text": "Dirijo esta pequeña casa de empeño, cariño, pero creo que eso ya lo sabías.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:38:13.979837Z"
+  },
+  "npc.red_lilly.voice_1": {
+    "src_hash": "6ac11a252db045379ecc159c7b70e7f3",
+    "text": "¡Ven a visitar mi pequeña casa de empeño! Equipos generales y demás. ¡No te lo pierdas!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:38:13.980376Z"
+  },
+  "npc.reed.say_1": {
+    "src_hash": "29428479d87005a98f4a3c0c9bfc417e",
+    "text": "NO tienes idea de lo que tenemos que soportar cada día.. <gives a shocking and disturbing report>.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:38:13.980928Z"
+  },
+  "npc.reed.say_2": {
+    "src_hash": "61b89ccb1b11b797d5f7ba1d9db907dc",
+    "text": "Puede {pass} al {Cemetery Quarter} o al {Magician Quarter}. ¿Cuál será?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:38:20.165141Z"
+  },
+  "npc.rehon.say_1": {
+    "src_hash": "a69ab45a9a67241f7c546e7963ff0fd9",
+    "text": "¡Por los dioses! ¡Tienes la llave del celular! Muchas gracias compañero. Y ahora vete. Esperaré aquí hasta que el aire esté limpio y luego me iré de aquí.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:38:20.165974Z"
+  },
+  "npc.richard.greet_msg_1": {
+    "src_hash": "88654057e120b74698ee5b390118024b",
+    "text": "Hola, amigo. ¿Estás aquí por un {trade}? Acaban de recargar mis existencias.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:38:20.166602Z"
+  },
+  "npc.richard.say_1": {
+    "src_hash": "64ea8486559ad38b51749f9f59269a32",
+    "text": "Yo era carpintero en Main. Quería mi propia pequeña tienda. No me senté con el viejo. Entonces envié a otro lugar. Terrible tormenta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:38:20.167284Z"
+  },
+  "npc.richard.say_2": {
+    "src_hash": "6212e2f161d18e1314c2a004a54fc468",
+    "text": "Desperté en esta isla. Tuve que comer ardillas antes de que los aventureros me encontraran y me acogieran. Fin de la historia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:38:20.167884Z"
+  },
+  "npc.richard.say_3": {
+    "src_hash": "3b455bb09ab2bb6be5a352ee107f9794",
+    "text": "Sólo la mejor calidad, te lo aseguro. ¡Una cuerda necesitada es realmente un amigo! Imagina que te topas con una madriguera de ratas sin una cuerda. Je, ¡te roerán los huesos antes de que alguien te encuentre!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:38:25.746542Z"
+  },
+  "npc.richard.say_4": {
+    "src_hash": "5ef288d8c17473c81043ee45a29f42e4",
+    "text": "Ahora, sobre esa cuerda, pídeme {equipment} para ver mis productos. <winks>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:38:25.747039Z"
+  },
+  "npc.richard.stdmod_1": {
+    "src_hash": "81f969f2674129b494b539ab5a73ad50",
+    "text": "¡No olvides llevar siempre una cuerda contigo! Compra uno aquí, ¡solo la mejor calidad!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:38:25.747567Z"
+  },
+  "npc.richard.stdmod_10": {
+    "src_hash": "9faa968a78699e3d52c2580b0531f98d",
+    "text": "Sabes, realmente no quiero inmiscuirme en la vida privada de otra persona. \\z\n\t\t\tBaste decir que todo el mundo tiene capítulos de su vida que no quiere mencionar. \\z\n\t\t\tA juzgar por la apariencia de Coltrayne, aquí estamos ante una trilogía.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:38:25.748493Z"
+  },
+  "npc.richard.stdmod_11": {
+    "src_hash": "a5a944d60a44403c6ed709f59e6580c2",
+    "text": "De hecho, el viejo Iñigo fue quien me encontró y me llevó al puesto de avanzada. \\z\n\t\t\tPara entonces ya estaba medio muerto de hambre. Me enseñó a hacer mejores trampas y a pescar... Le debo mucho a Iñigo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:38:25.749326Z"
+  },
+  "npc.richard.stdmod_2": {
+    "src_hash": "93a8c4166c9b7b48e8135d75b7d976a3",
+    "text": "¡No te quejes conmigo cuando te caigas en un agujero sin una cuerda para salir! ¡Puedes comprar uno aquí ahora!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:38:31.000336Z"
+  },
+  "npc.richard.stdmod_4": {
+    "src_hash": "405a3e1c7d59c506bea17f029953d64a",
+    "text": "¡Una cuerda es la mejor amiga del aventurero!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:38:31.000780Z"
+  },
+  "npc.richard.stdmod_5": {
+    "src_hash": "7620de134fda5829940a26706e649e88",
+    "text": "¡Carne fresca! ¡Disposiciones duraderas! ¡Cuerdas y palas!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:38:31.001246Z"
+  },
+  "npc.richard.stdmod_6": {
+    "src_hash": "056b04f7627b3641e868b1fe49840d2b",
+    "text": "¿Te apetece un poco buscar tesoros? \\z\n\t\t¡Compre una pala o un pico e investigue grietas y montones de piedras de aspecto probable!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:38:31.002167Z"
+  },
+  "npc.richard.stdmod_7": {
+    "src_hash": "a8ade160670517efcce955bf720fe2ec",
+    "text": "Ricardo. Sólo Ricardo. Perdí mi apellido con mi pasado en esa tormenta. <winks>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:38:31.002721Z"
+  },
+  "npc.richard.stdmod_8": {
+    "src_hash": "94cdbce032667197bf02f7c5c7762d6d",
+    "text": "Esta hermosa isla aquí. Una vez que no tuve que vivir de las ardillas, se volvió bastante divertido. \\z\n\t\t\tAunque hay cosas desagradables que viven bajo tierra, ¡así que ten cuidado por dónde pisas y SIEMPRE lleva una cuerda contigo!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:38:35.206253Z"
+  },
+  "npc.richard.stdmod_9": {
+    "src_hash": "3ae8b4bac107acdb60432ed3290774ce",
+    "text": "<shrugs> Nunca he estado, amigo. Aunque escuché que es un poco lindo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:38:35.207011Z"
+  },
+  "npc.richard.voice_1": {
+    "src_hash": "81f969f2674129b494b539ab5a73ad50",
+    "text": "¡No olvides llevar siempre una cuerda contigo! Compra uno aquí, ¡solo la mejor calidad!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:38:35.207525Z"
+  },
+  "npc.richard.voice_2": {
+    "src_hash": "93a8c4166c9b7b48e8135d75b7d976a3",
+    "text": "¡No te quejes conmigo cuando te caigas en un agujero sin una cuerda para salir! ¡Puedes comprar uno aquí ahora!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:38:35.208157Z"
+  },
+  "npc.richard.voice_4": {
+    "src_hash": "405a3e1c7d59c506bea17f029953d64a",
+    "text": "¡Una cuerda es la mejor amiga del aventurero!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:38:35.208554Z"
+  },
+  "npc.richard.voice_5": {
+    "src_hash": "7620de134fda5829940a26706e649e88",
+    "text": "¡Carne fresca! ¡Disposiciones duraderas! ¡Cuerdas y palas!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:38:39.716883Z"
+  },
+  "npc.richard.voice_6": {
+    "src_hash": "056b04f7627b3641e868b1fe49840d2b",
+    "text": "¿Te apetece un poco buscar tesoros? \\z\n\t\t¡Compre una pala o un pico e investigue grietas y montones de piedras de aspecto probable!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:38:39.717791Z"
+  },
+  "npc.riddler.farewell_msg_1": {
+    "src_hash": "69bb4e08c66f76e542c66f4a8dd80710",
+    "text": "¡JEJEJE! Sabía que no tienes estómago.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:38:39.718386Z"
+  },
+  "npc.riddler.greet_msg_1": {
+    "src_hash": "806634769a083e47b18172f4f5aa465c",
+    "text": "|PLAYERNAME| ¡JEJEJE! ¡Otro tonto visita el {tower}! ¡Excelente!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:38:39.718876Z"
+  },
+  "npc.riddler.say_1": {
+    "src_hash": "d4ebd8af494257c7b94c482415b10f78",
+    "text": "¡TONTO! ¡Ahora estás condenado! Pero bueno... \\z ¡Que así sea! Comencemos con el Sello de Knowledge y la primera pregunta: \\z ¿Qué nombre eligió el rey nigromante?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:38:39.719629Z"
+  },
+  "npc.riddler.say_10": {
+    "src_hash": "171cae2e9645834cae1a691777ff35e4",
+    "text": "¡HOHO! Has aprendido bien la lección. Pregunta número dos entonces: ¿Quién o qué es el temido Hugo?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:38:45.696329Z"
+  },
+  "npc.riddler.say_11": {
+    "src_hash": "2e36b604f1e109089289a596da004144",
+    "text": "Mmm. Apuesto a que piensas que eres inteligente. Está bien. ¿Qué tal esto: ¿Qué es lo que todos quieren ser pero nadie quiere ser?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:38:45.696975Z"
+  },
+  "npc.riddler.say_12": {
+    "src_hash": "03d406c84d389fec56fbe0e719903e53",
+    "text": "UHM UH OH... ¿Cómo pudiste adivinar eso? ¿¿¿Estás loco??? Está bien. Penúltima pregunta: ¿Qué es lo contrario?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:38:45.697682Z"
+  },
+  "npc.riddler.say_13": {
+    "src_hash": "4a5bd0ac5013d3a6e7db9271f03733b0",
+    "text": "¡NO! ¡NO! ¡NO! Eso no puede ser verdad. ¡No sólo estás enojado, eres un completo idiota! Ah bueno. Aquí está la última pregunta: ¿Cuánto es 1 más 1?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:38:45.698395Z"
+  },
+  "npc.riddler.say_2": {
+    "src_hash": "d70aee5bbed7819938b4a462217e55b9",
+    "text": "¡HOHO! Has aprendido bien la lección. \\z Pregunta número dos entonces: ¿Quién o qué es el temido Hugo?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:38:45.699038Z"
+  },
+  "npc.riddler.say_3": {
+    "src_hash": "254215c82d9c826a724c485ded297d0e",
+    "text": "Mmm. Apuesto a que piensas que eres inteligente. Está bien. \\z ¿Qué tal esto: ¿Qué es lo que todos quieren ser pero nadie quiere ser?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:38:51.441282Z"
+  },
+  "npc.riddler.say_4": {
+    "src_hash": "3d5f290225714e256d31de87e27da374",
+    "text": "UHM UH OH... ¿Cómo pudiste adivinar eso? ¿¿¿Estás loco??? Está bien. \\z Penúltima pregunta: ¿Qué es lo contrario?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:38:51.442068Z"
+  },
+  "npc.riddler.say_5": {
+    "src_hash": "47b50939f476840077a301e2cd4ae39c",
+    "text": "¡NO! ¡NO! ¡NO! Eso no puede ser verdad. ¡No sólo estás enojado, eres un completo idiota! \\z Ah, bueno. Aquí está la última pregunta: ¿Cuánto es 1 más 1?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:38:51.442811Z"
+  },
+  "npc.riddler.say_6": {
+    "src_hash": "f1f6af14d06d83bc89a148d77d54c07e",
+    "text": "Esa fue fácil. Probemos el segundo: si lo nombras, lo rompes.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:38:51.443304Z"
+  },
+  "npc.riddler.say_7": {
+    "src_hash": "6fdbd4fcc3c9bb72fd28948cfed9cd43",
+    "text": "¡ARGH! ¡Lo hiciste de nuevo! Bueno, está bien. ¿Quieres romper el Sello de la Locura?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:38:51.443815Z"
+  },
+  "npc.riddler.say_8": {
+    "src_hash": "7e61058c787e5884c263a8cde9398320",
+    "text": "¡BIEN! Así que por fin te atraparé. Responde a esto: ¿Cuál es tu color favorito?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:49:20.037319Z"
+  },
+  "npc.riddler.say_9": {
+    "src_hash": "f92cbc0d400132231a5d0e2d3ba61617",
+    "text": "¡TONTO! ¡Ahora estás condenado! Pero bueno… ¡Que así sea! Comencemos con el Sello de Knowledge y la primera pregunta: ¿Qué nombre eligió el rey nigromante para sí?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:49:26.406937Z"
+  },
+  "npc.riddler.stdmod_1": {
+    "src_hash": "1ff600051ff51e3d7851f41208956a19",
+    "text": "Esta torre, por supuesto, es una tonta. Contiene mis {master'}s {treasure}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:49:26.407544Z"
+  },
+  "npc.riddler.stdmod_2": {
+    "src_hash": "73c8182f33e6f9b8e66eeb750b7c5dd5",
+    "text": "Su nombre no es asunto tuyo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:49:26.407946Z"
+  },
+  "npc.riddler.stdmod_3": {
+    "src_hash": "f8c1b25ace61decf6adbd6a7af73fff9",
+    "text": "Estoy guardando los tesoros de la torre. Sólo podrán pasar aquellos que pasen el {test} de los tres sigilos.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:49:26.408553Z"
+  },
+  "npc.riddler.stdmod_4": {
+    "src_hash": "f14a00aef985820e02b44203f3697227",
+    "text": "Me conocen como el acertijo. Eso es todo lo que necesitas saber.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:49:26.409001Z"
+  },
+  "npc.riddler.stdmod_5": {
+    "src_hash": "fb372bb041619b584e6aa6d7dfb556a6",
+    "text": "Soy el guardián de la torre de la paradoja.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:49:31.411045Z"
+  },
+  "npc.riddler.stdmod_6": {
+    "src_hash": "8006422e6f2f4c7de09a8428c107f83f",
+    "text": "¡La llave de esta torre! ¡Nunca lo encontrarás! ¡Un espíritu vegetal malicioso lo está protegiendo!.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:49:31.411764Z"
+  },
+  "npc.robson.greet_msg_1": {
+    "src_hash": "f15ca28635c84f3a71a98405285f0efe",
+    "text": "Hrmpf, diría bienvenido si tuviera ganas de mentir.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:49:31.412179Z"
+  },
+  "npc.robson.say_1": {
+    "src_hash": "1e772f1e1734879d218e9ff149a83bd4",
+    "text": "¿Quieres comprar un paquete por 15 de oro?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:49:31.412636Z"
+  },
+  "npc.robson.say_2": {
+    "src_hash": "279230e124b20228651c18395be82ad2",
+    "text": "¿Quieres comprar una etiqueta por 1 oro?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:49:31.413018Z"
+  },
+  "npc.robson.say_3": {
+    "src_hash": "94e8041cc38babaf86bdf7c6048c4798",
+    "text": "Lo siento, eso es sólo polvo en tu bolso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:49:35.828846Z"
+  },
+  "npc.robson.say_5": {
+    "src_hash": "94e8041cc38babaf86bdf7c6048c4798",
+    "text": "Lo siento, eso es sólo polvo en tu bolso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:49:35.829439Z"
+  },
+  "npc.robson.say_7": {
+    "src_hash": "70315d66dbc729770215673aab1d3110",
+    "text": "Sabía que me quedaría atrapado con esas cosas.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:49:35.829902Z"
+  },
+  "npc.robson.voice_1": {
+    "src_hash": "0956ea7b6f3efbdd2358779cf3a7afd7",
+    "text": "<mumbles>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:49:35.830209Z"
+  },
+  "npc.robson.voice_2": {
+    "src_hash": "b999ffe268f0ea98d3de2baf393f64e0",
+    "text": "Simplemente genial. Quedarse varado en una remota isla subterránea no fue tan malo, ¡pero ahora me estoy convirtiendo en una atracción turística!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:49:35.830902Z"
+  },
+  "npc.rock_in_a_hard_place.farewell_msg_1": {
+    "src_hash": "75b0bc0fd1f30783cb9ee5bc1e075d9e",
+    "text": "Prometo volver alguna vez, ¿quieres?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:49:41.927451Z"
+  },
+  "npc.rock_in_a_hard_place.greet_msg_1": {
+    "src_hash": "3a2b14cf086d149e9e0dc2ab45cc9abe",
+    "text": "¡Todos en esta isla se han vuelto locos! Excepto tú y yo, al parecer. Hagamos {trade} como lo haría la gente normal.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:49:41.928131Z"
+  },
+  "npc.rock_in_a_hard_place.say_2": {
+    "src_hash": "28ea5754003b429a15b2d5cd2fa1ba47",
+    "text": "Te sorprendería saber cuántas cosas llegan a la costa aquí. Cambio {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:49:41.928669Z"
+  },
+  "npc.rock_in_a_hard_place.stdmod_1": {
+    "src_hash": "9780aedf7d60ed6eaff179e9cfab7990",
+    "text": "¿Has notado que en realidad soy la única roca en esta isla con un trabajo adecuado? ¡Esos cabezas de guijarros perezosos! Estoy orgulloso de anunciar: soy un comerciante",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:49:41.929380Z"
+  },
+  "npc.rock_in_a_hard_place.stdmod_2": {
+    "src_hash": "2329a776acb152ae7b5dab0fba86f57a",
+    "text": "¡No, lo entendiste todo mal! ¡Dije que estoy atrapado entre la espada y la pared!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:49:41.930164Z"
+  },
+  "npc.rock_in_a_hard_place.stdmod_3": {
+    "src_hash": "422f8a55146b7ed5a5629bfbe932d194",
+    "text": "Puedo ayudarte a comprar cosas comerciales contigo. Bien por mí, bien por ti. ¡Es beneficioso para todos!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:49:47.880841Z"
+  },
+  "npc.rock_in_a_hard_place.stdmod_4": {
+    "src_hash": "9780aedf7d60ed6eaff179e9cfab7990",
+    "text": "¿Has notado que en realidad soy la única roca en esta isla con un trabajo adecuado? ¡Esos cabezas de guijarros perezosos! Estoy orgulloso de anunciar: soy un comerciante",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:49:47.883071Z"
+  },
+  "npc.rock_in_a_hard_place.walkaway_msg_1": {
+    "src_hash": "fc37d6cc8c1e3c8a75b846b7ac9789e3",
+    "text": "¡Ey! ¡No me dejes solo con todos estos locos!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:49:47.884583Z"
+  },
+  "npc.rock_steady.multi_1": {
+    "src_hash": "1cf5329d9c30d3320af816f4593ada0b",
+    "text": "¿Tienes algo... qué? ¿Quieres qué? ¿Una recompensa? ¡¡JAJAJAJAAAA!! ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:49:47.886486Z"
+  },
+  "npc.rock_steady.multi_2": {
+    "src_hash": "82d4ee1fb145c4ab5f29ee47d1996a80",
+    "text": "No, sólo te estoy tomando el pelo. Estoy muy feliz con mi colección ahora. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:49:47.887535Z"
+  },
+  "npc.rock_steady.multi_3": {
+    "src_hash": "ae753fa192e736d76972297cca237761",
+    "text": "Bueno, encontré algún tipo de arma hace mucho tiempo. Creo que puede ser especialmente útil bajo el agua, ya que proviene de las profundidades. En cualquier caso te será más útil que a mí.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:49:53.455573Z"
+  },
+  "npc.rock_steady.multi_4": {
+    "src_hash": "c9f8b98fa9de101105fc66873a0e957b",
+    "text": "Colecciono todo lo que refleja la luz de formas extrañas. Sin embargo, estoy aburrido de mi colección. Y durante años no hubo nada nuevo que añadir. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:49:53.456240Z"
+  },
+  "npc.rock_steady.multi_5": {
+    "src_hash": "c3f5973f6f8c80d016b1a4f78df2e4cf",
+    "text": "A mí me gustan las perlas, por ejemplo, pero ya tengo suficientes. También me gustan las conchas, pero ni siquiera puedo contar cuántas tengo ya. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:49:53.456855Z"
+  },
+  "npc.rock_steady.multi_6": {
+    "src_hash": "5508c3bfea3b86fd27fc38a339bb42be",
+    "text": "Si encuentras algo de VALOR REAL, tráemelo. Te recompensaré bien. ¿No tienes ya algo para mí por casualidad?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:49:53.457432Z"
+  },
+  "npc.rock_steady.say_1": {
+    "src_hash": "277c370c97a2923aa187732dedefe560",
+    "text": "Si quieres algo, deberías hablar con Old Rock Boy que está allí. Aunque hago cosas de {collect}. Así que pregúntame si estás interesado en ayudarme.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:49:53.458153Z"
+  },
+  "npc.rock_steady.say_2": {
+    "src_hash": "df853f3b4ea9e7aa6257b3cfb0174a14",
+    "text": "¿Tienes algo para mí hoy?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:49:57.664623Z"
+  },
+  "npc.rock_steady.say_3": {
+    "src_hash": "df853f3b4ea9e7aa6257b3cfb0174a14",
+    "text": "¿Tienes algo para mí hoy?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:49:57.665003Z"
+  },
+  "npc.rock_steady.say_4": {
+    "src_hash": "f821d4435e2b68fe8459857fa3340569",
+    "text": "¡Excelente! Déjeme ver. ¡Asombroso! Tomaré esto, ¡gracias!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:49:57.665440Z"
+  },
+  "npc.rock_steady.say_5": {
+    "src_hash": "f821d4435e2b68fe8459857fa3340569",
+    "text": "¡Excelente! Déjeme ver. ¡Asombroso! Tomaré esto, ¡gracias!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:49:57.665878Z"
+  },
+  "npc.rock_steady.say_6": {
+    "src_hash": "f821d4435e2b68fe8459857fa3340569",
+    "text": "¡Excelente! Déjeme ver. ¡Asombroso! Tomaré esto, ¡gracias!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:49:57.666353Z"
+  },
+  "npc.rock_steady.say_7": {
+    "src_hash": "57782d8e981a8f33c60c88a3048a4045",
+    "text": "¡No tienes los artículos necesarios!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:50:03.383268Z"
+  },
+  "npc.rock_with_a_soft_spot.walkaway_msg_1": {
+    "src_hash": "3a5f60f61842d9158e75ad7493c15786",
+    "text": "Sólo lo mejor para ti.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:50:03.383748Z"
+  },
+  "npc.romella.farewell_msg_1": {
+    "src_hash": "0d19e6031c51c4ebdc29986d3b10654f",
+    "text": "Adiós y trae más oro la próxima vez <chuckles>. Quiero decir, sería bueno verte de nuevo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:50:03.384292Z"
+  },
+  "npc.romella.greet_msg_1": {
+    "src_hash": "6bff94aca433e666d674818c008d7ec7",
+    "text": "¡Te doy la bienvenida, |PLAYERNAME|! ¡Supongo que estás buscando un negocio de armas finas!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:50:03.384878Z"
+  },
+  "npc.romella.stdmod_1": {
+    "src_hash": "14b7e3e727bdbf02dd1f88d8a3943eec",
+    "text": "¡Mira mis buenas y resistentes armas!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:50:07.762190Z"
+  },
+  "npc.romella.stdmod_2": {
+    "src_hash": "eca70c99a4eae291e075e6cd30dada14",
+    "text": "Soy Romella y hoy estaré sirviéndoles.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:50:07.762758Z"
+  },
+  "npc.romella.stdmod_3": {
+    "src_hash": "c06d84c78002ecf6181e3005a840e259",
+    "text": "Tengo muchas armas para ofrecer. Si quieres ver mis ofertas pídeme un {trade}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:50:07.763377Z"
+  },
+  "npc.romella.stdmod_4": {
+    "src_hash": "d7afc73cf74748f6e6261eda3a3e258a",
+    "text": "Vendo y compro armas. Si quieres ver mis ofertas pídeme un {trade}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:50:07.763924Z"
+  },
+  "npc.romella.stdmod_5": {
+    "src_hash": "b16dd634906e6691431ec8b3ddae722e",
+    "text": "Nuestro almacén es el principal proveedor de la guarnición local.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:50:07.764393Z"
+  },
+  "npc.romella.stdmod_6": {
+    "src_hash": "43d2df4520eb45de459d7337657e534d",
+    "text": "Dice que las amazonas están buscando cierta arma mágica en esta zona.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:50:12.426537Z"
+  },
+  "npc.romella.stdmod_7": {
+    "src_hash": "8047f129878e74745dc99283a0e78cc6",
+    "text": "Me pregunto cómo se financian. Apuesto a que están comerciando en secreto con algunas cosas extrañas.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:50:12.427293Z"
+  },
+  "npc.romella.stdmod_8": {
+    "src_hash": "1d7448e10291ac67b0170d42303ef7d6",
+    "text": "Asegúrate de comprar algunas armas adicionales antes de enfrentarte a esa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:50:12.427926Z"
+  },
+  "npc.romella.stdmod_9": {
+    "src_hash": "81cd358bdca56c3acad72f74ea365e09",
+    "text": "Escuché que las amazonas lo buscan.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:50:12.428428Z"
+  },
+  "npc.romella.voice_1": {
+    "src_hash": "14b7e3e727bdbf02dd1f88d8a3943eec",
+    "text": "¡Mira mis buenas y resistentes armas!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:50:12.428932Z"
+  },
+  "npc.romir.greet_msg_1": {
+    "src_hash": "1c44869b12decc57ba28e52c1bfb8423",
+    "text": "Saludos, viajero. Soy un comerciante mágico y entrenador de hechizos de hechicero. ¿Cómo puedo ayudarte?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:50:16.686945Z"
+  },
+  "npc.rose.say_1": {
+    "src_hash": "97fe865a55b512aaf9781b404b8e0a43",
+    "text": "¿Quieres comprar una Hydra Tongue por 100 de oro?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:50:16.687549Z"
+  },
+  "npc.rose.say_2": {
+    "src_hash": "2506ad0c0dda5b5292204079a96729da",
+    "text": "Aquí tiene. ¡Una lengua de hidra!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:50:16.688036Z"
+  },
+  "npc.roswitha.greet_msg_1": {
+    "src_hash": "1da53848ea59287f61cad05389a6dc01",
+    "text": "Hola, muchacho. Siéntate, toma una copa, ¿por qué no?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:50:16.688463Z"
+  },
+  "npc.roswitha.say_1": {
+    "src_hash": "84cc161facad259fab5cb63ee16db462",
+    "text": "Lo siento, pero Harsin ya no vive aquí. Le ordenó a un lugareño llamado Quandon que transportara todas sus cosas a alguna parte. No sé adónde se mudó, pero Quandon debería poder ayudarte con esta información.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:50:16.689314Z"
+  },
+  "npc.rotem_valos.voice_1": {
+    "src_hash": "717adebaeee340543614aba6b109e0e6",
+    "text": "<sigh> El mundo se ha vuelto complicado desde mi juventud.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:50:22.438843Z"
+  },
+  "npc.rottin_wood.greet_msg_1": {
+    "src_hash": "8036bbce0f710e54c9a73d0a4ca30fc6",
+    "text": "¡El saludo de Hunter! Supongo que quieres algo de mí ya que viniste hasta aquí por tu cuenta. Este es un lugar peligroso, dudo que todos mis hombres acepten extraños como yo. Aunque no pareces tener ningún problema con eso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:50:22.439660Z"
+  },
+  "npc.rottin_wood.multi_1": {
+    "src_hash": "7d94b6f1e9b57bf425c2058f0e1c6576",
+    "text": "Muy bien. Ahora lo único que debes hacer es tomar estas trampas y moverte al área que he marcado en tu mapa donde debes colocarlas. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:50:22.440724Z"
+  },
+  "npc.rottin_wood.multi_10": {
+    "src_hash": "700372eca8d17d44d81ecfc22d55fa4b",
+    "text": "Sólo hay un pequeño inconveniente: no podemos ayudarle a colocar estas trampas. Ya sabes, algunos de los chicos se enfermaron recientemente, hablamos de varias piernas rotas aquí, uno casi pierde el brazo...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:50:22.441921Z"
+  },
+  "npc.rottin_wood.multi_11": {
+    "src_hash": "50248c47d132277c7941366a3a79c2ac",
+    "text": "Entonces... depende totalmente de ti, ¿harás esto o no?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:50:22.442590Z"
+  },
+  "npc.rottin_wood.multi_12": {
+    "src_hash": "277c50a6e61ea2e47ff9dcb191027eb5",
+    "text": "Mmmmh, tengo que decirlo: buena mano de obra. No hay duda. Sí, la persona que creó esa herramienta que usaste para arreglar todo esto fue un puro profesional. Aunque hay algo que no puedo decir sobre tu trabajo. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:50:28.136008Z"
+  },
+  "npc.rottin_wood.multi_13": {
+    "src_hash": "4e50c321a43bf0513363304b4dab1653",
+    "text": "Parece que las paredes se van a desprender en cuestión de horas. Bueno, siempre puedes volver y reparar este desastre, pídeme una tarea si quieres. Sí, sí, y aquí tienes tu recompensa de hoy.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:50:28.136821Z"
+  },
+  "npc.rottin_wood.multi_14": {
+    "src_hash": "0571a108a8d6336a931ab83feaa8ca52",
+    "text": "Bien, ahora date prisa al bosque y busca algunos conejos. Encuéntralos y mátalos. Utilice un cuchillo fino y afilado para coger la pata de conejo y tenga cuidado de no destruirla; después de todo, nadie la compraría en malas condiciones. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:50:28.137717Z"
+  },
+  "npc.rottin_wood.multi_15": {
+    "src_hash": "cbb6c0b639bba63393728f70f9c449a6",
+    "text": "Una vez que hayas reunido algunas patas de conejo, pon una de nuestras cintas, hechas a mano por los chicos, en cada una de ellas. Eso hará dos amuletos de la suerte por conejo. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:50:28.138508Z"
+  },
+  "npc.rottin_wood.multi_16": {
+    "src_hash": "a57e94ee35b5f67601f2edb4ac1debd7",
+    "text": "Necesitaremos al menos siete. Y el siete es un número de suerte, ¿no crees? Je. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:50:28.139043Z"
+  },
+  "npc.rottin_wood.multi_17": {
+    "src_hash": "12c4c370fc545fad375cd4b1e60bf0b5",
+    "text": "Si necesitas más cintas, vuelve conmigo y pregúntame.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:50:34.255919Z"
+  },
+  "npc.rottin_wood.multi_18": {
+    "src_hash": "965a881870cb4bfd889ab0adf9a0f837",
+    "text": "Oh |PLAYERNAME| mi buen amigo, ¡qué bueno verte! Hoy nos ayudarás con una tarea muy importante. Muy importante por cierto. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:50:34.256627Z"
+  },
+  "npc.rottin_wood.multi_19": {
+    "src_hash": "e8f6191a1e0d10af9b185112571fac58",
+    "text": "Ya sabes, un grupo grande de comerciantes viaja de Thais a Venore y están cruzando el bosque para acortar su camino, ¿puedes creerlo? ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:50:34.257710Z"
+  },
+  "npc.rottin_wood.multi_2": {
+    "src_hash": "3db08ab0e44230ef0285a46317178186",
+    "text": "Una vez que hayas hecho eso, ve al gran asiento alto cerca del campamento y observa a los comerciantes ambulantes. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:50:34.258455Z"
+  },
+  "npc.rottin_wood.multi_20": {
+    "src_hash": "79134cf0225ab2f063567e9a95daf82e",
+    "text": "Entrarán al bosque cerca de nuestro campamento, que es donde entras tú. Uhm, quiero decir que quieres ayudarnos con esto, ¿verdad?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:50:34.259081Z"
+  },
+  "npc.rottin_wood.multi_21": {
+    "src_hash": "8c54514fad4e8db8498c7f9cc45bb039",
+    "text": "Por supuesto, por supuesto, hay algo en lo que puedes ayudarnos. Recuerda que también tenemos algunas tareas para ti. Entonces, ¿estás listo para otra misión para ayudar a los hombres del bosque?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:50:39.183597Z"
+  },
+  "npc.rottin_wood.multi_22": {
+    "src_hash": "1b3973115bd424e337d571b506982ac2",
+    "text": "Hay un problema con uno de nuestros puestos de ciervos. Bien. Bueno, hay dos problemas: nuestros ciervos están en pie y algunas de las paredes de los edificios del campamento están rotas. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:50:39.184357Z"
+  },
+  "npc.rottin_wood.multi_23": {
+    "src_hash": "3b3824448f2afe26e116e6347c3cecad",
+    "text": "Ya sabes, los chicos construyeron todo eso ellos mismos. Claro, al principio no salió como habíamos planeado y al final tuvimos que talar la mitad del bosque, pero valió la pena. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:50:39.185142Z"
+  },
+  "npc.rottin_wood.multi_24": {
+    "src_hash": "011f352b9ea721a51f58e14e015dddce",
+    "text": "Aún así, la mayor parte del campamento está como... roto ahora. Y alguien con un buen martillo y mano firme necesita arreglar eso. O me temo que tendremos que congelarnos... durante las noches frías... bueno ya sabes, tiempos difíciles. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:50:39.186026Z"
+  },
+  "npc.rottin_wood.multi_25": {
+    "src_hash": "ab69090f65ad2fc9749aa70b7cab209f",
+    "text": "Entonces, ¿qué dices, por este?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:50:39.186509Z"
+  },
+  "npc.rottin_wood.multi_3": {
+    "src_hash": "36c055ac2c4101e944fab40b0abe7b56",
+    "text": "Una vez que todos estén atrapados en las redes, puedes bajar y recolectar cualquier cosa de valor que puedas encontrar. Pero sólo toma lo que nosotros... realmente necesitas: alrededor de 100 de oro deberían ser suficientes para que cualquier hombre se lo lleve. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:50:45.932456Z"
+  },
+  "npc.rottin_wood.multi_4": {
+    "src_hash": "71fea7a915d2ac7cfe9579165e6f20f7",
+    "text": "Después de todo, tenemos modales, ¿no? ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:50:45.932864Z"
+  },
+  "npc.rottin_wood.multi_5": {
+    "src_hash": "58449befe7ff52e8ab8ef91f726a27da",
+    "text": "Por supuesto, mis hombres tomarán su parte y... te ayudarán a liberar a los comerciantes de cualquier objeto de valor. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:50:45.933425Z"
+  },
+  "npc.rottin_wood.multi_6": {
+    "src_hash": "4fa2766da649f458878102a64477a649",
+    "text": "Estás acabado si consigues al menos... digamos 5 de estos tontos. Vuelve a mí y serás recompensado. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:50:45.933974Z"
+  },
+  "npc.rottin_wood.multi_7": {
+    "src_hash": "261cf0df6c84c3b9bb997988ed1eb0e5",
+    "text": "Vete y... buena caza, je.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:50:45.934335Z"
+  },
+  "npc.rottin_wood.multi_8": {
+    "src_hash": "346324eb95cdae32f17ff79536a487de",
+    "text": "Bien, ahora, antes de que los comerciantes entren al bosque, instalarás varias trampas, nada demasiado peligroso, sólo redes y cuerdas. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:50:48.440831Z"
   }
 }

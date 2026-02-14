@@ -4,7 +4,7 @@
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-14T10:31:30.341228Z",
+  "checked_at": "2026-02-14T10:45:12.644730Z",
   "issues_total": 463,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -491,24 +491,6 @@
       "lang": "Umbral Executioner"
     },
     {
-      "key": "achievement.336.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Umbral Berserker",
-      "pl": "Umbral To go berserk",
-      "lang": "Umbral Berserker"
-    },
-    {
-      "key": "achievement.336.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You managed to transform, improve and sacrify your hammer into a master state and have proven yourself worthy in a nightmarish world.",
-      "pl": "Ty managed do przekształcać, transformować, poprawiać się, poprawiać, polepszać się, polepszać i sacrify twój I. a. do jeden I. I. i masz proven siebie godny, znakomity w jeden koszmarny I..",
-      "lang": "You managed to transform, improve and sacrify your hammer into a master state and have proven yourself worthy in a nightmarish world."
-    },
-    {
       "key": "achievement.337.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -516,42 +498,6 @@
       "en": "Umbral Archer",
       "pl": "Umbral Łucznik",
       "lang": "Umbral Archer"
-    },
-    {
-      "key": "achievement.337.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You managed to transform, improve and sacrify your bow into a master state and have proven yourself worthy in a nightmarish world.",
-      "pl": "Ty managed do przekształcać, transformować, poprawiać się, poprawiać, polepszać się, polepszać i sacrify twój bow a. do jeden I. I. i masz proven siebie godny, znakomity w jeden koszmarny I..",
-      "lang": "You managed to transform, improve and sacrify your bow into a master state and have proven yourself worthy in a nightmarish world."
-    },
-    {
-      "key": "achievement.338.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Umbral Marksman",
-      "pl": "Umbral Strzelec wyborowy",
-      "lang": "Umbral Marksman"
-    },
-    {
-      "key": "achievement.338.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You managed to transform, improve and sacrify your crossbow into a master state and have proven yourself worthy in a nightmarish world.",
-      "pl": "Ty managed do przekształcać, transformować, poprawiać się, poprawiać, polepszać się, polepszać i sacrify twój crossbow a. do jeden I. I. i masz proven siebie godny, znakomity w jeden koszmarny I..",
-      "lang": "You managed to transform, improve and sacrify your crossbow into a master state and have proven yourself worthy in a nightmarish world."
-    },
-    {
-      "key": "achievement.339.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You managed to transform, improve and sacrify your spellbook into a master state and have proven yourself worthy in a nightmarish world.",
-      "pl": "Ty managed do przekształcać, transformować, poprawiać się, poprawiać, polepszać się, polepszać i sacrify twój zaklęciebook a. do jeden I. I. i masz proven siebie godny, znakomity w jeden koszmarny I..",
-      "lang": "You managed to transform, improve and sacrify your spellbook into a master state and have proven yourself worthy in a nightmarish world."
     },
     {
       "key": "achievement.340.name",
@@ -563,60 +509,6 @@
       "lang": "Umbral Master"
     },
     {
-      "key": "achievement.340.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You managed to transform, improve and sacrify all kinds of weapons into a master state and have proven yourself worthy in a nightmarish world. Respect!",
-      "pl": "Ty managed do przekształcać, transformować, poprawiać się, poprawiać, polepszać się, polepszać i sacrify wszystkie I. z broń a. do jeden I. I. i masz proven siebie godny, znakomity w jeden koszmarny I.. Respect!",
-      "lang": "You managed to transform, improve and sacrify all kinds of weapons into a master state and have proven yourself worthy in a nightmarish world. Respect!"
-    },
-    {
-      "key": "achievement.341.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You collected all of the mysterious bottle messages around the island of Roshamuul and located the remains of the first mate. Time will tell if his tale of mending an evil ring holds true.",
-      "pl": "Ty skupiony, opanowany wszystkie z the tajemniczy I. wiadomość around the wyspa z Roshamuul i located the I. z the I. I.. Czas will I. if jego opowieść, opowiadanie z naprawiać się, naprawiać jeden I. ring holds prawdziwy.",
-      "lang": "You collected all of the mysterious bottle messages around the island of Roshamuul and located the remains of the first mate. Time will tell if his tale of mending an evil ring holds true."
-    },
-    {
-      "key": "achievement.342.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Luring Silence",
-      "pl": "Luring I.",
-      "lang": "Luring Silence"
-    },
-    {
-      "key": "achievement.342.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "What a scientific discovery - they really DO communicate! Using their own communication habits against them, you lured a large pack of silencers away from the walls of Roshamuul.",
-      "pl": "I. jeden naukowy odkrycie - oni I. ROBIĆ komunikować się, przesyłać wiadomości! Using ich I. komunikacja przyzwyczajenie, zwyczaj o ich, ty lured jeden large I. z tłumik I. z the ściana, mur z Roshamuul.",
-      "lang": "What a scientific discovery - they really DO communicate! Using their own communication habits against them, you lured a large pack of silencers away from the walls of Roshamuul."
-    },
-    {
-      "key": "achievement.343.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Never Surrender",
-      "pl": "Nigdy I.",
-      "lang": "Never Surrender"
-    },
-    {
-      "key": "achievement.343.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You did not show any signs of surrender to any sight of... you get the picture. Even a hundred of them did not pose a threat to you.",
-      "pl": "Ty zrobił Niet I. dowolny I. z I. do dowolny I. z... ty get the I.. I. jeden sto z ich zrobił Niet I. jeden groźba do ty.",
-      "lang": "You did not show any signs of surrender to any sight of... you get the picture. Even a hundred of them did not pose a threat to you."
-    },
-    {
       "key": "achievement.344.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -624,60 +516,6 @@
       "en": "Dream Wright",
       "pl": "I. Wright",
       "lang": "Dream Wright"
-    },
-    {
-      "key": "achievement.344.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You have mended many a broken dream and so, the dream of Roshamuul is safely being told over and over again.",
-      "pl": "Masz naprawiać się, naprawiać wiele, dużo jeden rozbity, złamany I. i I., the I. z Roshamuul jest I. istota told I. i I. ponownie.",
-      "lang": "You have mended many a broken dream and so, the dream of Roshamuul is safely being told over and over again."
-    },
-    {
-      "key": "achievement.345.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ending the Horror",
-      "pl": "Zakończenie the Przerażenie, zgroza",
-      "lang": "Ending the Horror"
-    },
-    {
-      "key": "achievement.345.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You have cleansed the lands of many retching horrors. You sure know how to end a bad dream: forcefully, that's how!",
-      "pl": "Masz cleansed the lands z wiele, dużo he retches przerażenie, zgroza. Ty sure kNiew jak do I. jeden zły, niedobry I.: stanowczy, that's jak!",
-      "lang": "You have cleansed the lands of many retching horrors. You sure know how to end a bad dream: forcefully, that's how!"
-    },
-    {
-      "key": "achievement.346.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You know your way, in dream and waking. And how to make tea that transcends the boundaries of conscience.",
-      "pl": "Ty kNiew twój way, w I. i waking. I jak do make I. that przekraczać the granica z conscience.",
-      "lang": "You know your way, in dream and waking. And how to make tea that transcends the boundaries of conscience."
-    },
-    {
-      "key": "achievement.347.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Dream Warden",
-      "pl": "I. I.",
-      "lang": "Dream Warden"
-    },
-    {
-      "key": "achievement.347.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "It doesn't matter what noise you would hear... dream, nightmare, illusion - there is nothing you can't vanquish. You are a true Dream Warden.",
-      "pl": "To doesn't I. I. Nieise ty would I.... I., zły sen, złudzenie, iluzja - Nie matma Lekarz rejonowyżesz't pokonywać doszczętnie, pokonywać. Jesteś jeden prawdziwy I. I..",
-      "lang": "It doesn't matter what noise you would hear... dream, nightmare, illusion - there is nothing you can't vanquish. You are a true Dream Warden."
     },
     {
       "key": "achievement.348.name",
@@ -689,15 +527,6 @@
       "lang": "Prison Break"
     },
     {
-      "key": "achievement.348.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Gaz'haragoth... a day to remember! Your world accomplished something really big - and you have been part of it!",
-      "pl": "Gaz'haragoth... jeden dzień do pamiętać, przypominać sobie, przypominać! Twój I. znakomity coś I. duży, wielki - i Zostałeś part z to!",
-      "lang": "Gaz'haragoth... a day to remember! Your world accomplished something really big - and you have been part of it!"
-    },
-    {
       "key": "achievement.349.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -705,33 +534,6 @@
       "en": "Noblesse Obliterated",
       "pl": "Nieblesse Obliterated",
       "lang": "Noblesse Obliterated"
-    },
-    {
-      "key": "achievement.349.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "After a battle like this you know who your friends are.",
-      "pl": "After jeden I. like I. ty kNiew kto twój przyjaciel, dobry kolega, kolega są.",
-      "lang": "After a battle like this you know who your friends are."
-    },
-    {
-      "key": "achievement.350.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Elementary, My Dear",
-      "pl": "Elementarny, Mój I.",
-      "lang": "Elementary, My Dear"
-    },
-    {
-      "key": "achievement.350.description",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Through the spirit of science and exploration, you have discovered how to enter the secret hideout of the renowned Dr Merlay.",
-      "pl": "Through the I. z nauka i exploration, Masz odkrywać jak do I. the I. hideout z the reNiewned Dr Merlay.",
-      "lang": "Through the spirit of science and exploration, you have discovered how to enter the secret hideout of the renowned Dr Merlay."
     },
     {
       "key": "achievement.351.description",
@@ -3612,6 +3414,204 @@
       "en": "Measuring the World",
       "pl": "Measuring the I.",
       "lang": "Measuring the World"
+    },
+    {
+      "key": "achievement.539.description",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Step by step you discovered many of the secrets hidden in the world, thus gaining the right to wear the Discoverer outfit and hat. Made-to-measure for a brave traveller of the Tibian wilds.",
+      "pl": "Step by step ty odkrywać wiele, dużo z the I. hidden w the I., toteż, dlatego I. the I. do I. the Odkrywać strój i kapelusz. Zrobiony-do-I. dla jeden I. podróżler z the Tibian I..",
+      "lang": "Step by step you discovered many of the secrets hidden in the world, thus gaining the right to wear the Discoverer outfit and hat. Made-to-measure for a brave traveller of the Tibian wilds."
+    },
+    {
+      "key": "achievement.540.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ripp-Ripp Hooray!",
+      "pl": "Ripp-Ripp Hura!",
+      "lang": "Ripp-Ripp Hooray!"
+    },
+    {
+      "key": "achievement.540.description",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Don't get carried away by your success. Get carried away by your Ripptor.",
+      "pl": "Don't get carried I. by twój sukces. Get carried I. by twój Ripptor.",
+      "lang": "Don't get carried away by your success. Get carried away by your Ripptor."
+    },
+    {
+      "key": "achievement.541.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Warrior of the Iks",
+      "pl": "Wojownik z the Iks",
+      "lang": "Warrior of the Iks"
+    },
+    {
+      "key": "achievement.541.description",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Combining unabating courage in combat and respect for the traditions and culture of the ancient Iks earned you the honours of true Aucar.",
+      "pl": "Combining unabating courage w I. i respect dla the tradycja i culture z the starożytny Iks zarabiać na, zarabiać ty the hoNieurs z prawdziwy Aucar.",
+      "lang": "Combining unabating courage in combat and respect for the traditions and culture of the ancient Iks earned you the honours of true Aucar."
+    },
+    {
+      "key": "achievement.542.description",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You accomplished the impossible and created 16 mutagens of corresponding colours.",
+      "pl": "Ty znakomity the niemożliwy i created 16 mutagens z corresponding colours.",
+      "lang": "You accomplished the impossible and created 16 mutagens of corresponding colours."
+    },
+    {
+      "key": "achievement.543.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Strangest Thing",
+      "pl": "Strangest Rzecz",
+      "lang": "Strangest Thing"
+    },
+    {
+      "key": "achievement.543.description",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Only its rider can love this abomination of a mount.",
+      "pl": "Tylko jego, jej, ich, swój jeździec może love I. abomination z jeden I..",
+      "lang": "Only its rider can love this abomination of a mount."
+    },
+    {
+      "key": "achievement.544.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Fully Decayed",
+      "pl": "W pełni I.",
+      "lang": "Fully Decayed"
+    },
+    {
+      "key": "achievement.544.description",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You defeated the embodiments of decay and live to tell the tale, wear the rotting attire of the unfaltering defender proudly.",
+      "pl": "Ty I. the uosobienie z I. i live do I. the opowieść, opowiadanie, I. the rotting odzienie z the unfaltering bronić dumny.",
+      "lang": "You defeated the embodiments of decay and live to tell the tale, wear the rotting attire of the unfaltering defender proudly."
+    },
+    {
+      "key": "achievement.545.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Like Fox and Mouse",
+      "pl": "Like I. i Mysz",
+      "lang": "Like Fox and Mouse"
+    },
+    {
+      "key": "achievement.545.description",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Sly as a fox, quiet as a mouse - the perfect mount for a stealthy foray.",
+      "pl": "Chytry as jeden I., I. as jeden mysz - the perfect I. dla jeden potajemny wypad.",
+      "lang": "Sly as a fox, quiet as a mouse - the perfect mount for a stealthy foray."
+    },
+    {
+      "key": "achievement.546.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "The Spirit of Purity",
+      "pl": "The I. z Czystość",
+      "lang": "The Spirit of Purity"
+    },
+    {
+      "key": "achievement.546.description",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Withstanding both filth and desolation of the rotten darkness that corrupted the very core of this world, you embodied the weapon of purity and light to defy all that was tainted. This spirit will continue guide you on all future paths.",
+      "pl": "Wytrzymywać obaj brud i wyludnienie, pustka z the zepsuty, zgniły ciemność that corrupted the I. core z I. I., ty embodied the broń z czystość i I. do defy wszystkie that był I.. I. I. will kontynuować I. ty na wszystkie I. ścieżka.",
+      "lang": "Withstanding both filth and desolation of the rotten darkness that corrupted the very core of this world, you embodied the weapon of purity and light to defy all that was tainted. This spirit will continue guide you on all future paths."
+    },
+    {
+      "key": "achievement.547.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Museum Goer",
+      "pl": "Muzeum Goer",
+      "lang": "Museum Goer"
+    },
+    {
+      "key": "achievement.547.description",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You unveiled the secret plot of the Mitmah who stole away an entire civilisation for their own entertainment. Let the death of their outpost vanguard be an eternal lesson to them.",
+      "pl": "Ty odsłonić the I. I. z the Mitmah kto stole I. jeden cały, całkowity civilisation dla ich I. rozrywka. Let the I. z ich placówka awangarda być jeden wieczny lekcja do ich.",
+      "lang": "You unveiled the secret plot of the Mitmah who stole away an entire civilisation for their own entertainment. Let the death of their outpost vanguard be an eternal lesson to them."
+    },
+    {
+      "key": "achievement.548.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Mystic Predator",
+      "pl": "I. Drapieżnik",
+      "lang": "Mystic Predator"
+    },
+    {
+      "key": "achievement.548.description",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Proving your true worth to a mystic creature like the jaguar, king of the hunt, granted you not only respect but also its heart.",
+      "pl": "Proving twój prawdziwy I. do jeden I. stwór like the jaguar, król z the I., I. ty Niet tylko respect I. także jego, jej, ich, swój serce.",
+      "lang": "Proving your true worth to a mystic creature like the jaguar, king of the hunt, granted you not only respect but also its heart."
+    },
+    {
+      "key": "achievement.549.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "The Rule of Raccool",
+      "pl": "The I. z Raccool",
+      "lang": "The Rule of Raccool"
+    },
+    {
+      "key": "achievement.549.description",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You almost feel as cool as a raccoon. Now, where's the trash?",
+      "pl": "Ty prawie I. as I. as jeden raccoon. Niew, where's the śmieci?",
+      "lang": "You almost feel as cool as a raccoon. Now, where's the trash?"
+    },
+    {
+      "key": "actions.arena_10x10.say_1",
+      "category": "actions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Please wait for the fighters come out of the arena.",
+      "pl": "Poczekaj, aż wojownicy wyjdą z areny.",
+      "lang": "Please wait for the fighters come out of the arena."
+    },
+    {
+      "key": "actions.arena_10x10.say_2",
+      "category": "actions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You need 10 players for enter in the arena.",
+      "pl": "Potrzebujesz 10 graczy, aby wejść na arenę.",
+      "lang": "You need 10 players for enter in the arena."
     }
   ],
   "length_ratio_issues": [
@@ -4185,8 +4185,8 @@
   ],
   "auto_fix": {
     "attempted": 80,
-    "applied": 22,
-    "skipped": 58,
+    "applied": 17,
+    "skipped": 63,
     "errors": 0
   }
 }

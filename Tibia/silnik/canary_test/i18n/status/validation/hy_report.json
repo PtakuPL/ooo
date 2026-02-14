@@ -3,19 +3,20 @@
   "script_group": "exotic",
   "total_keys": 53586,
   "translated": 35778,
-  "identical_to_en": 28798,
+  "identical_to_en": 28705,
   "placeholder_keys": 15653,
   "coverage_pct": 66.8,
-  "issues_total": 6250,
+  "issues_total": 6253,
   "issues_by_type": {
     "V3_empty": 6113,
-    "script_wrong_script": 129,
+    "script_wrong_script": 131,
     "V1_placeholder_mismatch": 7,
+    "V4_artifact": 1,
     "V5_pipe_mismatch": 1
   },
   "issues_by_severity": {
     "CRITICAL": 8,
-    "HIGH": 129,
+    "HIGH": 132,
     "MEDIUM": 0,
     "LOW": 6113
   },
@@ -88,6 +89,24 @@
       "severity": "HIGH"
     },
     {
+      "key": "achievement.307.name",
+      "category": "achievements",
+      "type": "script_wrong_script",
+      "severity": "HIGH"
+    },
+    {
+      "key": "achievement.317.name",
+      "category": "achievements",
+      "type": "script_wrong_script",
+      "severity": "HIGH"
+    },
+    {
+      "key": "achievement.317.description",
+      "category": "achievements",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
       "key": "event.player.msg1",
       "category": "events",
       "type": "script_wrong_script",
@@ -122,33 +141,15 @@
       "category": "items",
       "type": "script_wrong_script",
       "severity": "HIGH"
-    },
-    {
-      "key": "item.10273.name",
-      "category": "items",
-      "type": "script_wrong_script",
-      "severity": "HIGH"
-    },
-    {
-      "key": "item.10311.name",
-      "category": "items",
-      "type": "script_wrong_script",
-      "severity": "HIGH"
-    },
-    {
-      "key": "item.10954.name",
-      "category": "items",
-      "type": "script_wrong_script",
-      "severity": "HIGH"
     }
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 463,
+    "issues_total": 467,
     "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 63,
-    "auto_fix_applied": 49
+    "length_ratio": 67,
+    "auto_fix_applied": 37
   },
-  "validated_at": "2026-02-14T09:29:25.139054Z"
+  "validated_at": "2026-02-14T10:54:17.439123Z"
 }

@@ -5,6 +5,98 @@
 
 ---
 
+## 0c. Audyt jakości RU/PT/FR/RO per domena (2026-02-14 11:45 UTC)
+
+### Podsumowanie audytu
+
+| Język | Domena | Klucze | Genuine | Identical | [EN]-prefix | [XX]-prefix | Trimmed | Główny problem |
+|-------|--------|--------|---------|-----------|-------------|-------------|---------|----------------|
+| **RU** | items | 17 057 | 10 512 | 6 189 (37%) | 0 | 0 | 193 | trimmed_copy: "bunch ripe rice" zamiast poprawnego tłumaczenia |
+| **RU** | npc | 13 766 | 125 | 7 542 (98%) | 0 | 0 | 0 | 🔴 98% identyczne z EN — prawie nieprzetłumaczone |
+| **RU** | questlog | 1 909 | 1 | 1 908 (99.9%) | 0 | 0 | 0 | 🔴 99.9% identyczne — nieprzetłumaczone |
+| **RU** | monsters | 5 912 | 367 | 5 545 (94%) | 0 | 0 | 0 | 🔴 94% identyczne — prawie nieprzetłumaczone |
+| **RU** | books | 1 403 | 0 | 1 403 (100%) | 0 | 0 | 0 | 🔴 100% identyczne — w ogóle nieprzetłumaczone |
+| **RU** | quests | 610 | 115 | 495 (81%) | 0 | 0 | 0 | duży backlog identycznych |
+| **PT** | items | 17 057 | 973 | 3 156 (19%) | 0 | 12 765 | 0 | 🔴 12 765 z prefiksem [PT] — placeholder, nie tłumaczenie |
+| **PT** | npc | 13 766 | 125 | 7 548 (98%) | 0 | 0 | 0 | 🔴 98% identyczne z EN |
+| **PT** | questlog | 1 909 | 0 | 0 | 0 | 0 | 0 | 🔴 0% pokrycia — puste |
+| **PT** | monsters | 5 912 | 372 | 2 747 (46%) | 0 | 2 793 | 0 | [PT]-prefix: 2 793 placeholderów |
+| **PT** | books | 1 403 | 0 | 1 403 (100%) | 0 | 0 | 0 | 🔴 100% identyczne |
+| **FR** | items | 17 057 | 10 020 | 5 878 (35%) | 996 | 0 | 0 | [EN]-prefix: 996 nieprzetłumaczonych opisów |
+| **FR** | npc | 13 766 | 106 | 4 142 (54%) | 3 425 | 0 | 0 | 🔴 3 425 [EN]-prefix — nieprzetłumaczone NPC dialogi |
+| **FR** | questlog | 1 909 | 1 | 1 280 (67%) | 628 | 0 | 0 | 🔴 628 [EN]-prefix + 1 280 identycznych |
+| **FR** | quests | 610 | 133 | 269 (44%) | 208 | 0 | 0 | 208 [EN]-prefix |
+| **FR** | monsters | 5 912 | 262 | 5 512 (93%) | 138 | 0 | 0 | 93% identyczne |
+| **FR** | books | 1 403 | 256 | 461 (33%) | 686 | 0 | 0 | 🔴 686 [EN]-prefix — książki nieprzetłumaczone |
+| **RO** | items | 17 057 | 6 261 | 2 139 (13%) | 1 502 | 6 992 | 0 | 🔴 6 992 [RO]-prefix + 1 502 [EN]-prefix |
+| **RO** | npc | 13 766 | 32 | 4 164 (55%) | 3 427 | 0 | 0 | 🔴 3 427 [EN]-prefix — prawie brak tłumaczeń NPC |
+| **RO** | questlog | 1 909 | 0 | 1 281 (67%) | 628 | 0 | 0 | 🔴 628 [EN]-prefix |
+| **RO** | quests | 610 | 0 | 351 (58%) | 259 | 0 | 0 | 🔴 259 [EN]-prefix + 0 genuine |
+| **RO** | monsters | 5 912 | 0 | 2 531 (43%) | 3 249 | 132 | 0 | 🔴 3 249 [EN]-prefix + 0 genuine |
+| **RO** | books | 1 403 | 0 | 717 (51%) | 686 | 0 | 0 | 🔴 686 [EN]-prefix + 0 genuine |
+
+### Zidentyfikowane problemy
+
+#### P1-CRIT: RU — trimmed_copy (EN ze skróconymi słowami zamiast tłumaczenia)
+- **Domena**: items (193 przypadki)
+- **Przykład**: EN `bunch of ripe rice` → RU `bunch ripe rice` (brak cyrylicy, usunięto "of")
+- **Przyczyna**: Worker/GT wykasował słowo zamiast przetłumaczyć
+- **Akcja**: ✅ Dodano S18 `trimmed_en_copy` w `detect_suspicious()` — wykrywa 346 przypadków w RU items
+
+#### P2-CRIT: RU — masowy backlog identycznych (NPC 98%, questlog 99.9%, books 100%, monsters 94%)
+- **Przyczyna**: Te domeny nie zostały jeszcze przetłumaczone na RU — worker ich nie dotknął
+- **Akcja**: ⬜ Worker powinien priorytetyzować RU w tych domenach; guardian profile musi obejmować RU
+
+#### P3-CRIT: PT — ogromna ilość [PT]-prefix placeholderów w items (12 765)
+- **Co to znaczy**: Worker wstawił `[PT] dragon backpack` zamiast przetłumaczyć — to marker "do przetłumaczenia"
+- **Przyczyna**: `SIMPLE_TRANSLATIONS` lub `validate_candidate` odrzucił tłumaczenie, wstawił placeholder
+- **Akcja**: ✅ Znormalizowano 197 094 prefiksów `[XX]` → `[EN]` + usunięto 127 038 orphan keys
+
+#### P4-CRIT: FR/RO — masowe [EN]-prefix (FR: 6 083 łącznie, RO: 9 751 łącznie)
+- **Co to znaczy**: Worker nie umiał przetłumaczyć i wstawił `[EN] original text`
+- **Domeny**: NPC (FR: 3 425, RO: 3 427), questlog (628 oba), books (686 oba), items desc (FR: 996, RO: 1 502)
+- **Akcja**: ⬜ Sprawdzić czy [EN]-prefix jest wynikiem GT failure czy walidacji; rozważyć ponowne tłumaczenie
+
+#### P5-HIGH: RO — 0 genuine tłumaczeń w 4/6 domen (quests, questlog, monsters, books)
+- **Przyczyna**: RO ma wyłącznie identyczne + [EN]-prefix — brak jakiejkolwiek realnej pracy
+- **Akcja**: ⬜ Podnieść priorytet RO w workerze (dodać do TIER2 lub podnieść batch)
+
+#### P6-MED: FR — brak diakrytyków w tłumaczeniach
+- **items**: 1 000 bez diakrytyków FR
+- **npc**: 3 434 bez diakrytyków
+- **questlog**: 628 bez diakrytyków
+- **Przyczyna**: Większość to [EN]-prefixed tekst angielski (oczywiście nie ma diakrytyków FR)
+- **Akcja**: Po rozwiązaniu P4 (usunięciu [EN]-prefix) problem diakrytyków zniknie
+
+#### P7-LOW: RU items — brak cyrylicy w 357 tłumaczeniach (=nie przetłumaczone na cyrylicę)
+- **Akcja**: Pokrywa się z trimmed_copy + identical — samo się naprawi po S18 + priorytetyzacji
+
+### ✅ Pozytywne obserwacje
+- **RU items nazwy**: 10 512 genuine, dobre jakościowo (вода, дерево солнцестояния, манажидкость)
+- **PT items nazwy**: Dobre gdy genuine (água, frasco de polidor de coroa, árvore do solstício)
+- **FR items nazwy**: 10 020 genuine — najlepiej przetłumaczone (eau, fluide de mana, arbre du solstice)
+- **FR NPC**: Genuine tłumaczenia poprawne idiomatycznie (SORTEZ-MOI D'ICI ! MAINTENANT!)
+- **RO items nazwy**: 6 261 genuine — przyzwoite (apă, fluid de mană, arbore de solstițiu)
+- **FR books**: 256 genuine — poprawne tłumaczenia
+
+### Priorytet naprawy
+
+1. ✅ **S18**: Nowa reguła `detect_suspicious` — `trimmed_en_copy` (RU items, ~346 szt.) — WDROŻONA
+2. ✅ **[XX]-prefix cleanup**: Znormalizowano 197 094 legacy prefiksów `[PT]/[RO]/[TR]/...` → `[EN]` across 13 języków
+3. ✅ **Orphan keys cleanup**: Usunięto 127 038 sierocych kluczy (format `monster.CATEGORY.name.voice_*`) z `monsters.json` w 31 językach — klucze z dodatkową warstwą kategorii (z importu ChatGPT ZIP), które nie istniały w EN
+4. ✅ **Broken JSON fix**: Naprawiono 3 uszkodzone JSON-y (fa/mk/ms `achievements.json` — extra data na końcu pliku)
+5. ⬜ **RU priorytetyzacja**: Dodać RU do batch priorytetowy na domeny: npc, questlog, books, monsters
+6. ⬜ **RO priorytetyzacja**: RO ma 0 genuine w 4/6 domen — pilne
+
+### Statystyki napraw (2026-02-14)
+
+| Naprawa | Zakres | Ilość |
+|---------|--------|-------|
+| `[XX]` → `[EN]` normalizacja | 13 języków × wiele plików | 197 094 |
+| Orphan keys removal | 31 języków × `monsters.json` | 127 038 |
+| Broken JSON fix | fa/mk/ms `achievements.json` | 3 pliki |
+| S18 `trimmed_en_copy` rule | `detect_suspicious()` | nowa reguła |
+
 ## 0b. Update wykonania (2026-02-14 11:20 UTC) — per-lang spelling S15-S17 + per-file reconcile
 
 Wykonane:

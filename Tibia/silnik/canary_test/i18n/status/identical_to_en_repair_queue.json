@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-14T10:35:53.808790Z",
+  "timestamp": "2026-02-14T10:47:46.113815Z",
   "priority_langs": [
     "es",
     "pl",
@@ -65,38 +65,38 @@
     "items.json",
     "monsters.json"
   ],
-  "entries_total": 1245,
+  "entries_total": 1244,
   "entries_by_lang": {
-    "es": 4129,
+    "es": 4067,
     "pl": 479,
-    "cs": 15455,
-    "de": 10409,
-    "fr": 10136,
-    "hu": 15558,
-    "it": 15283,
+    "cs": 15443,
+    "de": 10364,
+    "fr": 10072,
+    "hu": 15530,
+    "it": 15241,
     "nl": 10817,
     "pt": 15256,
     "ru": 17358,
     "sk": 15627,
     "tr": 15069,
-    "ar": 18447,
-    "az": 15400,
-    "bg": 17316,
-    "bn": 16832,
-    "bs": 15643,
-    "da": 15538,
-    "el": 15519,
-    "et": 15478,
+    "ar": 18379,
+    "az": 15382,
+    "bg": 17279,
+    "bn": 16771,
+    "bs": 15641,
+    "da": 15520,
+    "el": 15507,
+    "et": 15449,
     "fa": 16487,
     "fi": 15518,
-    "he": 17184,
-    "hi": 17155,
-    "hr": 15533,
-    "hy": 17214,
-    "id": 17150,
-    "ja": 17204,
-    "ka": 17187,
-    "kk": 15577,
+    "he": 17147,
+    "hi": 17112,
+    "hr": 15500,
+    "hy": 17187,
+    "id": 17107,
+    "ja": 17161,
+    "ka": 17155,
+    "kk": 15542,
     "ko": 17196,
     "lt": 15570,
     "lv": 15577,
@@ -124,7 +124,7 @@
     {
       "lang": "es",
       "json_file": "npc.json",
-      "identical_to_en": 1218,
+      "identical_to_en": 1156,
       "domain_priority": 0
     },
     {
@@ -382,7 +382,7 @@
     {
       "lang": "cs",
       "json_file": "achievements.json",
-      "identical_to_en": 116,
+      "identical_to_en": 104,
       "domain_priority": 9
     },
     {
@@ -514,7 +514,7 @@
     {
       "lang": "de",
       "json_file": "books.json",
-      "identical_to_en": 332,
+      "identical_to_en": 287,
       "domain_priority": 9
     },
     {
@@ -651,14 +651,14 @@
     },
     {
       "lang": "fr",
-      "json_file": "books.json",
-      "identical_to_en": 451,
+      "json_file": "cpp.json",
+      "identical_to_en": 401,
       "domain_priority": 9
     },
     {
       "lang": "fr",
-      "json_file": "cpp.json",
-      "identical_to_en": 401,
+      "json_file": "books.json",
+      "identical_to_en": 387,
       "domain_priority": 9
     },
     {
@@ -802,7 +802,7 @@
     {
       "lang": "hu",
       "json_file": "achievements.json",
-      "identical_to_en": 220,
+      "identical_to_en": 192,
       "domain_priority": 9
     },
     {
@@ -946,7 +946,7 @@
     {
       "lang": "it",
       "json_file": "achievements.json",
-      "identical_to_en": 193,
+      "identical_to_en": 151,
       "domain_priority": 9
     },
     {
@@ -1325,7 +1325,7 @@
   "selected": {
     "lang": "es",
     "json_file": "npc.json",
-    "identical_to_en": 1218,
+    "identical_to_en": 1156,
     "domain_priority": 0
   }
 }

@@ -13310,6 +13310,26 @@ def detect_suspicious(en_text: str, translated_text: str, lang: str, key: str = 
                 "examples": hu_harmony_issues[:3],
             })
 
+    # S18: trimmed_en_copy — tłumaczenie to angielski tekst z usuniętymi przyimkami
+    # Wykrywa: "bunch of ripe rice" → "bunch ripe rice" (brak tł., usunięto "of")
+    if tr != en and tr_len > 8 and not tr.startswith("["):
+        en_words = en.lower().split()
+        tr_words = tr.lower().split()
+        if len(tr_words) >= 2 and len(en_words) >= 3:
+            tr_set = set(tr_words)
+            en_set = set(en_words)
+            # Wszystkie słowa tłumaczenia są z EN, ale tłumaczenie jest krótsze
+            if tr_set.issubset(en_set) and len(tr_words) < len(en_words):
+                # Wyjątek: jeśli lang używa łacińskiego pisma a tekst to nazwy własne (Caps)
+                # Proporcja pominięcia > 10% słów → podejrzane
+                removed_ratio = (len(en_words) - len(tr_words)) / len(en_words)
+                if removed_ratio >= 0.1:
+                    issues.append({
+                        "type": "trimmed_en_copy",
+                        "severity": "HIGH",
+                        "message": f"Tłumaczenie to EN z usuniętymi słowami: '{tr[:50]}' (EN: '{en[:50]}')",
+                    })
+
     return issues
 
 # ==========================================================================

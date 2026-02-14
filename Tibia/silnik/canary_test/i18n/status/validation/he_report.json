@@ -3,20 +3,20 @@
   "script_group": "rtl",
   "total_keys": 53586,
   "translated": 35775,
-  "identical_to_en": 28626,
+  "identical_to_en": 28558,
   "placeholder_keys": 15656,
   "coverage_pct": 66.8,
-  "issues_total": 6251,
+  "issues_total": 6252,
   "issues_by_type": {
     "V3_empty": 6143,
-    "script_rtl_insufficient": 99,
+    "script_rtl_insufficient": 100,
     "V1_placeholder_mismatch": 7,
     "V4_artifact": 1,
     "V5_pipe_mismatch": 1
   },
   "issues_by_severity": {
     "CRITICAL": 8,
-    "HIGH": 100,
+    "HIGH": 101,
     "MEDIUM": 0,
     "LOW": 6143
   },
@@ -107,6 +107,12 @@
       "severity": "HIGH"
     },
     {
+      "key": "achievement.394.description",
+      "category": "achievements",
+      "type": "script_rtl_insufficient",
+      "severity": "HIGH"
+    },
+    {
       "key": "event.player.msg1",
       "category": "events",
       "type": "script_rtl_insufficient",
@@ -135,21 +141,15 @@
       "category": "items",
       "type": "script_rtl_insufficient",
       "severity": "HIGH"
-    },
-    {
-      "key": "item.11057.name",
-      "category": "items",
-      "type": "script_rtl_insufficient",
-      "severity": "HIGH"
     }
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 474,
+    "issues_total": 475,
     "consistency": 1,
     "pl_reference": 400,
-    "length_ratio": 73,
-    "auto_fix_applied": 68
+    "length_ratio": 74,
+    "auto_fix_applied": 66
   },
-  "validated_at": "2026-02-14T10:37:25.059201Z"
+  "validated_at": "2026-02-14T10:50:52.165673Z"
 }

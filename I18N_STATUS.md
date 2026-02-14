@@ -5,23 +5,23 @@
 ## 🧭 META
 
 > **[META]** 🟢 ACTIVE  
-> Świeżość: teraz | Źródło: `update_github_status()` | Ostatnia aktualizacja: 2026-02-14 00:52:43
+> Świeżość: teraz | Źródło: `update_github_status()` | Ostatnia aktualizacja: 2026-02-14 00:54:49
 
-> **Aktualizacja:** 2026-02-14 00:52:43 UTC  
+> **Aktualizacja:** 2026-02-14 00:54:49 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 53586  
-> **LIVE:** Cykl #42 | Status: 🟢 RUNNING | Faza: AUTO_TRANSLATE | Etap: auto_done | Kategoria: es | Plik: otclient_modules.json | ETA: 0 | Heartbeat: 2026-02-14T00:52:27Z  
-> **Strict hourly (JSONL-only):** okno=1.0h | cycles=120 | pending_skip=0.0% | guard_fail=2.3% | throughput=2196.5/h  
-> **Net effective translated:** 46,153
+> **LIVE:** Cykl #42 | Status: 🟢 RUNNING | Faza: AUTO_TRANSLATE | Etap: parallel_start | Kategoria: de | Plik: monsters.json | ETA: 0 | Heartbeat: 2026-02-14T00:53:11Z  
+> **Strict hourly (JSONL-only):** okno=1.0h | cycles=116 | pending_skip=0.0% | guard_fail=2.3% | throughput=2339.9/h  
+> **Net effective translated:** 46,233
 
 ### 🧩 Status sekcji (P0.1)
 | Sekcja | Stan | Świeżość | Powód | Źródło | Ostatnia aktualizacja |
 |--------|------|----------|-------|--------|-----------------------|
-| META | 🟢 ACTIVE | teraz | - | `update_github_status()` | 2026-02-14 00:52:43 |
-| LIVE | 🟢 ACTIVE | 16s temu | - | `activity.json / worker_state.json` | 2026-02-14T00:52:27Z |
-| MIGRATION | 🔒 INACTIVE | 5h temu | worker w trybie AUTO_TRANSLATE | `i18n_file_status.json` | 2026-02-14 00:52:43 |
-| TRANSLATION | 🟢 ACTIVE | 16s temu | - | `translation_guard_latest.json / translation_recent_latest.json` | 2026-02-14T00:52:27.541345Z |
-| QUALITY | 🔒 INACTIVE | 1min temu | worker w trybie AUTO_TRANSLATE | `quality_audit_latest.json` | 2026-02-14T00:51:43.151728Z |
-| HISTORY | 🟢 ACTIVE | teraz | - | `daily/*.json / ops.jsonl` | 2026-02-14 00:52:43 |
+| META | 🟢 ACTIVE | teraz | - | `update_github_status()` | 2026-02-14 00:54:49 |
+| LIVE | 🟢 ACTIVE | 1min temu | - | `activity.json / worker_state.json` | 2026-02-14T00:53:11Z |
+| MIGRATION | 🔒 INACTIVE | 5h temu | worker w trybie AUTO_TRANSLATE | `i18n_file_status.json` | 2026-02-14 00:54:49 |
+| TRANSLATION | 🟢 ACTIVE | 37s temu | - | `translation_guard_latest.json / translation_recent_latest.json` | 2026-02-14T00:54:12.736241Z |
+| QUALITY | 🔒 INACTIVE | 3min temu | worker w trybie AUTO_TRANSLATE | `quality_audit_latest.json` | 2026-02-14T00:51:43.151728Z |
+| HISTORY | 🟢 ACTIVE | teraz | - | `daily/*.json / ops.jsonl` | 2026-02-14 00:54:49 |
 
 > Artefakt machine-readable: `i18n/status/status_sections_latest.json`
 
@@ -30,14 +30,14 @@
 ## 🔴 LIVE
 
 > **[LIVE]** 🟢 ACTIVE  
-> Świeżość: 16s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T00:52:27Z
+> Świeżość: 1min temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T00:53:11Z
 
 - **Faza:** `AUTO_TRANSLATE`
-- **Etap:** `auto_done`
-- **Kategoria:** `es`
-- **Plik:** `otclient_modules.json`
+- **Etap:** `parallel_start`
+- **Kategoria:** `de`
+- **Plik:** `monsters.json`
 - **Status:** 🟢 RUNNING
-- **Heartbeat:** `2026-02-14T00:52:27Z`
+- **Heartbeat:** `2026-02-14T00:53:11Z`
 
 ---
 
@@ -92,7 +92,7 @@
 ## 🛠️ MIGRATION
 
 > **[MIGRATION]** 🔒 INACTIVE (worker w trybie AUTO_TRANSLATE)  
-> Świeżość: 5h temu | Źródło: `i18n_file_status.json` | Ostatnia aktualizacja: 2026-02-14 00:52:43
+> Świeżość: 5h temu | Źródło: `i18n_file_status.json` | Ostatnia aktualizacja: 2026-02-14 00:54:49
 
 ### 📁 Pliki Projektu (pełny skan)
 | Metryka | Wartość | Procent | Info |
@@ -134,7 +134,7 @@
 ## 🌍 TRANSLATION
 
 > **[TRANSLATION]** 🟢 ACTIVE  
-> Świeżość: 16s temu | Źródło: `translation_guard_latest.json / translation_recent_latest.json` | Ostatnia aktualizacja: 2026-02-14T00:52:27.541345Z
+> Świeżość: 37s temu | Źródło: `translation_guard_latest.json / translation_recent_latest.json` | Ostatnia aktualizacja: 2026-02-14T00:54:12.736241Z
 
 | Metryka | Wartość | Procent | Info |
 |---------|---------|---------|------|
@@ -173,58 +173,52 @@
 - **Ostatnie klucze (10-20):** 20
 
 ### 📝 Ostatnie 10-20 przetłumaczonych kluczy
-- Enter a name for the new preset: → Ingrese un nombre para el nuevo ajuste preestablecido: (otclient_modules.keybins.tr_13)
-- Add hotkey preset → Agregar preajuste de teclas de acceso rápido (otclient_modules.keybins.tr_14)
-- Edit Primary Key for '%s' → Editar clave principal para '%s' (otclient_modules.keybins.tr_2)
-- Click 'Ok' to assign the keybind. Click 'Clear' to remove the keybind from '%s'. → Haga clic en 'Ok' para asignar la combinación de teclas. Haga clic en 'Clear' pa (otclient_modules.keybins.tr_3)
-- Edit Secondary Key for '%s' → Editar clave secundaria para '%s' (otclient_modules.keybins.tr_4)
-- Edit Primary Key for '%s' → Editar clave principal para '%s' (otclient_modules.keybins.tr_5)
-- Click 'Ok' to assign the keybind. Click 'Clear' to remove the keybind from '%s:  → Haga clic en 'Ok' para asignar la combinación de teclas. Haga clic en 'Clear' pa (otclient_modules.keybins.tr_6)
-- Do you really want to delete the hotkey preset %s? → ¿Realmente desea eliminar la tecla de acceso rápido preestablecida %s? (otclient_modules.keybins.tr_7)
-- Warning → Advertencia (otclient_modules.keybins.tr_8)
-- Enter a name for the preset: → Introduzca un nombre para el ajuste preestablecido: (otclient_modules.keybins.tr_9)
-- Select your language → Selecciona tu idioma (otclient_modules.locales_otui.tr_1)
-- 
-is this in the protobuf ?
- in http post ? 
-or modify gamelib/spells.lua? → 
-¿Está esto en el protobuf?
- en la publicación http?
-¿O modificar gamelib/spells (otclient_modules.magicalarchives_otui.tr_1)
-- select a spell to view detailed information. → seleccione un hechizo para ver información detallada. (otclient_modules.magicalarchives_otui.tr_2)
-- Spell / Rune Information → Información de hechizos/runas (otclient_modules.magicalarchives_otui.tr_3)
-- Select Spell → Seleccionar hechizo (otclient_modules.magicalarchives_otui.tr_4)
-- Manage control buttons → Administrar botones de control (otclient_modules.mainpanel.tr_3)
-- Store shop → Tienda tienda (otclient_modules.mainpanel.tr_8)
-- Navigation → Navegación (otclient_modules.map_otui.tr_1)
-- Filter Marks → Marcas de filtro (otclient_modules.map_otui.tr_2)
-- Level separator → Separador de nivel (otclient_modules.map_otui.tr_3)
+- *gulp* → *Schluck* (monster.devourer.voice_1)
+- *Bruaarrr!* → *Bruaarrr!* (monster.devourer.voice_2)
+- *omnnommm nomm* → *omnnommm nomm* (monster.devourer.voice_3)
+- Mercury Blob → Merkurklecks (monster.mercury_blob.name)
+- a mercury blob → ein Quecksilberklecks (monster.mercury_blob.desc)
+- Glooth Blob → Glooth Blob (monster.glooth_blob.name)
+- a glooth blob → ein freudiger Klecks (monster.glooth_blob.desc)
+- Death Blob → Todesfleck (monster.death_blob.name)
+- a death blob → ein Todesfleck (monster.death_blob.desc)
+- Son of Verminor → Sohn von Verminor (monster.son_of_verminor.name)
+- a son of verminor → ein Sohn des Ungeziefers (monster.son_of_verminor.desc)
+- Chocolate Blob → Schokoladenklecks (monster.chocolate_blob.name)
+- a chocolate blob → ein Schokoklecks (monster.chocolate_blob.desc)
+- *Splotch* → *Fleck* (monster.chocolate_blob.voice_1)
+- Ink Blob → Tintenklecks (monster.ink_blob.name)
+- an ink blob → ein Tintenklecks (monster.ink_blob.desc)
+- Shaper Matriarch → Gestalter-Matriarchin (monster.shaper_matriarch.name)
+- a shaper matriarch → eine Shaper-Matriarchin (monster.shaper_matriarch.desc)
+- Lost Thrower → Verlorener Werfer (monster.lost_thrower.name)
+- a lost thrower → ein verlorener Werfer (monster.lost_thrower.desc)
 
 ### 🚫 Raporty "nie mogę przetłumaczyć"
-- Guard reports: **1721**  
+- Guard reports: **1722**  
 - Blocker reports: **0**  
-- Widoczne raporty 'nie mogę tłumaczyć': **1671**
+- Widoczne raporty 'nie mogę tłumaczyć': **1672**
 
 ### 🌐 Globalne info wszystkich języków
-- **Global completion:** **20.26%** (564,420/2,786,472)
-- **EN-copy łącznie:** **1,337,247**
+- **Global completion:** **20.26%** (564,493/2,786,472)
+- **EN-copy łącznie:** **1,337,241**
 - **Braki kluczy łącznie:** **110,060**
 - **Brakujące pliki językowe:** **0**
-- **Cache STATUSPY (per-lang):** **mixed** | hit **50**, miss **2**, hit-rate **96.2%**
-- **Cache STATUSPY (per-file):** hit **1972**, miss **4**, hit-rate **99.8%**
+- **Cache STATUSPY (per-lang):** **mixed** | hit **51**, miss **1**, hit-rate **98.1%**
+- **Cache STATUSPY (per-file):** hit **1975**, miss **1**, hit-rate **99.9%**
 - **Profiler cyklu (ostatni):** -
 - **Osobny raport:** `i18n/status/translation_global_overview.json`
 
 ### ⏱️ Strict Hourly Window (JSONL-only)
 | Metryka | Wartość |
 |---------|---------|
-| Okno | **1.0h** (2026-02-13T23:52:43.239859Z → 2026-02-14T00:52:43.239859Z) |
-| Cykle | **120** (AUTO=120, MIGRATION=0) |
+| Okno | **1.0h** (2026-02-13T23:54:50.160728Z → 2026-02-14T00:54:50.160728Z) |
+| Cykle | **116** (AUTO=116, MIGRATION=0) |
 | Pending skip | **0** (all=0.0%, migration=0.0%) |
 | Guard fail rate | **2.3%** |
 | No progress rate | **0.0%** |
-| Throughput | **2196.5 kluczy/h** |
-| Suspicious | **1401** |
+| Throughput | **2339.9 kluczy/h** |
+| Suspicious | **1395** |
 | Top guard_fail targets | pl/otclient_modules.json (gf=29), pl/html.json (gf=16), pl/cpp.json (gf=16), es/otclient_modules.json (gf=15), pl/scripts.json (gf=12) |
 | Źródła | `i18n/status/worker_cycle_perf.jsonl`, `i18n/status/translation_guard_report.jsonl`, `i18n/status/suspicious_log.jsonl` |
 | Plik | `i18n/status/strict_hourly_window_latest.json` |
@@ -232,7 +226,7 @@ or modify gamelib/spells.lua? →
 ## 🔬 QUALITY
 
 > **[QUALITY]** 🔒 INACTIVE (worker w trybie AUTO_TRANSLATE)  
-> Świeżość: 1min temu | Źródło: `quality_audit_latest.json` | Ostatnia aktualizacja: 2026-02-14T00:51:43.151728Z
+> Świeżość: 3min temu | Źródło: `quality_audit_latest.json` | Ostatnia aktualizacja: 2026-02-14T00:51:43.151728Z
 
 - **Ostatni audyt:** SLOW_MODE | 25 issue(s) / 100 entries | 2026-02-14T00:51:43.151728Z
 - **Top 5 typów problemów:** suspicious_rejected_critical=200, suspicious_log_low=121, suspicious_log_critical=59, identical_to_en_exempt=54, identical_to_en=25
@@ -275,7 +269,7 @@ or modify gamelib/spells.lua? →
 ## ✅ CHECKLIST - Plan Pracy
 
 > **Aktualna faza:** AUTO_TRANSLATE  
-> **Aktualna kategoria:** es
+> **Aktualna kategoria:** de
 
 
 ### 🔄 Faza 1: 🎮 Canary Server
@@ -343,33 +337,33 @@ or modify gamelib/spells.lua? →
 ## 🔴 LIVE: Szczegóły wykonania
 
 > **[LIVE]** 🟢 ACTIVE  
-> Świeżość: 16s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T00:52:27Z
+> Świeżość: 1min temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T00:53:11Z
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │ 🔴 LIVE: Worker v2.0                          Cykl #    42 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
-│ Tryb:      🤖 AUTO_TRANSLATE (auto_done)             │
-│ Kategoria: 📁 ES                                     │
+│ Tryb:      🤖 AUTO_TRANSLATE (parallel_start)        │
+│ Kategoria: 📁 DE                                     │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status: running                                               │
-│ Plik: otclient_modules.json                                   │
-│ Postęp: 56/56 keys                                            │
-│ … guard_fail=15 strict_missing_key=0 strict_skipped_done=1611 │
+│ Plik: monsters.json                                           │
+│ Postęp: 0/0 keys                                              │
+│ Info: parallel auto translate                                 │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2026-02-14T00:52:27Z           │
+│ ❤️ Heartbeat: 2026-02-14T00:53:11Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 🧾 Ostatnie akcje (dla czytelności)
 
+- 2026-02-14 00:53:11 | AUTO_TRANSLATE:parallel_start | de | ok | monsters.json
 - 2026-02-14 00:52:27 | AUTO_TRANSLATE:auto_done | es | ok | otclient_modules.json
 - 2026-02-14 00:51:48 | AUTO_TRANSLATE:auto_start | es | ok | otclient_modules.json
 - 2026-02-14 00:51:38 | AUTO_TRANSLATE:parallel_start | pl | ok | cpp.json
 - 2026-02-14 00:50:55 | AUTO_TRANSLATE:auto_done | es | ok | questlog.json
 - 2026-02-14 00:50:52 | AUTO_TRANSLATE:auto_start | es | ok | questlog.json
-- 2026-02-14 00:50:36 | AUTO_TRANSLATE:parallel_start | pl | ok | otclient_modules.json
 
 ---
 
@@ -378,21 +372,22 @@ or modify gamelib/spells.lua? →
 | Język | Coverage | Brakujące | EN-copy | Translated(200) | Guard fail | Entries |
 |-------|----------|-----------|---------|-----------------|------------|---------|
 | 🟡 PL | 74.1% | 2,083 | 2,917 | 1,085 | 410 (27.4%) | 42 |
-| 🟡 ES | 76.6% | 232 | 13,867 | 1,466 | 275 (15.8%) | 45 |
+| 🟡 ES | 76.6% | 232 | 13,867 | 1,466 | 273 (15.7%) | 44 |
 
 | KPI | Wartość | Target | Status |
 |-----|---------|--------|--------|
-| Net effective translated | **46,153** | — | 📊 |
+| Net effective translated | **46,233** | — | 📊 |
 | Adaptive batch | batch=50, gf_rate=16.31%, reason=stable_fail_rate=16.3% | gf <5% → increase | 📊 |
-| Throughput (last window) | 2,551 keys / 87 entries | >50/h | 📊 |
+| Throughput (last window) | 2,551 keys / 86 entries | >50/h | 📊 |
 
 ---
 
 ## 📜 HISTORY
 
 > **[HISTORY]** 🟢 ACTIVE  
-> Świeżość: teraz | Źródło: `daily/*.json / ops.jsonl` | Ostatnia aktualizacja: 2026-02-14 00:52:43
+> Świeżość: teraz | Źródło: `daily/*.json / ops.jsonl` | Ostatnia aktualizacja: 2026-02-14 00:54:49
 
+- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [de] → ok (translated+80, skipped+0) — parallel lang=de file=monsters.json
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [es] → warn (files+1, translated+56, skipped+0) — lang=es file=otclient_modules.json strict_skipped_done=1611 guard_fail=15 placeholder=0 command=0 pipe=0
 - 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [pl] → ok (translated+5, skipped+0) — parallel lang=pl file=talkactions.json
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [es] → warn (files+1, translated+5, skipped+0) — lang=es file=php.json strict_skipped_done=54
@@ -402,7 +397,6 @@ or modify gamelib/spells.lua? →
 - 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [es] → ok (translated+5, skipped+0) — parallel lang=es file=questlog.json
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+5, skipped+0) — lang=pl file=cpp.json strict_skipped_done=2
 - 🔧 MIGRATION: zakończono kategorię [monsters] → ok (keys+162, files+26) — migration finished
-- 🔧 MIGRATION: mini-batch [monsters] → ok (keys+20) — mini_batch=5 processed=50/50
 
 
 
@@ -723,7 +717,7 @@ or modify gamelib/spells.lua? →
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2026-02-14 00:52:43  
+📅 Auto-updated by Worker v1.1 | Last: 2026-02-14 00:54:49  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

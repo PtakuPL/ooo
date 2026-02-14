@@ -2,10 +2,10 @@
   "lang": "el",
   "script_group": "exotic",
   "total_keys": 53586,
-  "translated": 3739,
-  "identical_to_en": 2576,
-  "placeholder_keys": 49847,
-  "coverage_pct": 7.0,
+  "translated": 3863,
+  "identical_to_en": 2700,
+  "placeholder_keys": 49723,
+  "coverage_pct": 7.2,
   "issues_total": 54,
   "issues_by_type": {
     "script_wrong_script": 54
@@ -16,7 +16,7 @@
     "MEDIUM": 0,
     "LOW": 0
   },
-  "score": 97.8,
+  "score": 97.9,
   "worst_keys": [
     {
       "key": "achievement.72.name",
@@ -147,5 +147,5 @@
     "length_ratio": 5,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-14T15:34:45.289900Z"
+  "validated_at": "2026-02-14T17:59:18.615707Z"
 }

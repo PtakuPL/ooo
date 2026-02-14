@@ -2,10 +2,10 @@
   "lang": "ms",
   "script_group": "latin",
   "total_keys": 53586,
-  "translated": 4759,
-  "identical_to_en": 3738,
-  "placeholder_keys": 48827,
-  "coverage_pct": 8.9,
+  "translated": 4883,
+  "identical_to_en": 3862,
+  "placeholder_keys": 48703,
+  "coverage_pct": 9.1,
   "issues_total": 4,
   "issues_by_type": {
     "V4_artifact": 2,
@@ -53,5 +53,5 @@
     "length_ratio": 4,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-14T15:35:46.355037Z"
+  "validated_at": "2026-02-14T18:00:06.684882Z"
 }

@@ -1,113 +1,248 @@
 {
-  "timestamp": "2026-02-14T15:37:48.192896Z",
+  "timestamp": "2026-02-14T18:01:30.418787Z",
   "checked_entries": 100,
-  "issues_found": 14,
+  "issues_found": 33,
   "issues_by_type": {
-    "identical_to_en_exempt": 24,
-    "artifact_token": 14,
-    "suspicious_log_high": 113,
-    "suspicious_log_critical": 85,
-    "suspicious_log_low": 2,
-    "suspicious_rejected_critical": 73
+    "identical_to_en": 26,
+    "identical_to_en_exempt": 11,
+    "artifact_token": 7,
+    "suspicious_log_low": 19,
+    "suspicious_log_medium": 1,
+    "suspicious_log_high": 64,
+    "suspicious_log_critical": 116,
+    "suspicious_rejected_critical": 200
   },
   "issues": [
     {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!"
+      "key": "spell.curse.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Curse",
+      "translated": "Curse"
     },
     {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!"
+      "key": "spell.lightning.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Lightning",
+      "translated": "Lightning"
     },
     {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!"
+      "key": "spell.charge.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Charge",
+      "translated": "Charge"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!"
+      "key": "spell.invisible.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Invisibility",
+      "translated": "Invisibility"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!"
+      "key": "spell.challenge.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Challenge",
+      "translated": "Challenge"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_3",
+      "key": "npc.navigator.multi_2",
       "lang": "es",
       "type": "artifact_token",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
+      "en": "The stones on the beach? The trader up there? That was ME ALL THE TIME! I lured YOU into creating all this chaos up there and down here! ...",
+      "translated": "¿Las piedras en la playa? ¿El comerciante de ahí arriba? ¡Ese era YO TODO EL TIEMPO! ¡Te atraje a TI para que crearas todo este caos allá arriba y aquí abajo! ..."
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_9",
+      "key": "npc.omrabas.multi_35",
       "lang": "es",
       "type": "artifact_token",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
+      "en": "In the Dragonbone Cemetery, OBVIOUSLY! Must I explain EVERYTHING to you? Now go!",
+      "translated": "En el Cementerio Dragonbone, ¡OBVIAMENTE! ¿Tengo que explicarte TODO? ¡Ahora vete!"
     },
     {
-      "key": "npc.captain_haba_open_sea.larboard_1",
+      "key": "npc.omrabas.multi_82",
       "lang": "es",
       "type": "artifact_token",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!"
+      "en": "Now... get out! And never, ever, dare come back! You ruined EVERYTHING!",
+      "translated": "Ahora... ¡fuera! ¡Y nunca jamás te atrevas a volver! ¡Arruinaste TODO!"
     },
     {
-      "key": "npc.captain_haba_open_sea.say_3",
+      "key": "npc.omrabas.voice_2",
       "lang": "es",
       "type": "artifact_token",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!"
+      "en": "He will PAY for this... They will ALL pay!",
+      "translated": "Él PAGARÁ por esto... ¡TODOS pagarán!"
     },
     {
-      "key": "npc.captain_haba_open_sea.starboard_1",
+      "key": "npc.pythius_the_rotten.stdmod_12",
       "lang": "es",
       "type": "artifact_token",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!"
+      "en": "EVERYTHING YOU CARRY WITH YOU CAN ALSO BE FOUND IN MY {TREASURE}. BRING ME SOMETHING I DON'T OWN!!!",
+      "translated": "TODO LO QUE LLEVAS CONTIGO TAMBIÉN LO PUEDES ENCONTRAR EN MI {TREASURE}. ¡¡¡TRAEME ALGO QUE NO TENGO!!!"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_3",
+      "key": "npc.raymond_striker.multi_21",
       "lang": "es",
       "type": "artifact_token",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!"
+      "en": "In the tavern, the pirates feel safe and plan their next strikes. Study ALL of their maps and plans lying around ...",
+      "translated": "En la taberna, los piratas se sienten seguros y planean sus próximos ataques. Estudia TODOS sus mapas y planos que hay por ahí..."
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_5",
+      "key": "npc.sane_mage.multi_5",
       "lang": "es",
       "type": "artifact_token",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!"
+      "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
+      "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_3",
+      "key": "npc.the_orc_king.say_8",
       "lang": "es",
-      "type": "artifact_token",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
+      "type": "identical_to_en",
+      "en": "I see.",
+      "translated": "I see."
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_9",
+      "key": "npc.wyda.say_8",
       "lang": "es",
-      "type": "artifact_token",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
+      "type": "identical_to_en",
+      "en": "I see.",
+      "translated": "I see."
+    },
+    {
+      "key": "npc.yaman.say_14",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "I see.",
+      "translated": "I see."
+    },
+    {
+      "key": "monster.bovinus.desc",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Bovinus",
+      "translated": "Bovinus"
+    },
+    {
+      "key": "monster.bloodpaw.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Bloodpaw",
+      "translated": "Bloodpaw"
+    },
+    {
+      "key": "monster.bloodpaw.desc",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Bloodpaw",
+      "translated": "Bloodpaw"
+    },
+    {
+      "key": "monster.slim.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Slim",
+      "translated": "Slim"
+    },
+    {
+      "key": "monster.slim.desc",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Slim",
+      "translated": "Slim"
+    },
+    {
+      "key": "monster.drasilla.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Drasilla",
+      "translated": "Drasilla"
+    },
+    {
+      "key": "monster.drasilla.desc",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Drasilla",
+      "translated": "Drasilla"
+    },
+    {
+      "key": "monster.dracola.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Dracola",
+      "translated": "Dracola"
+    },
+    {
+      "key": "monster.dracola.desc",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Dracola",
+      "translated": "Dracola"
+    },
+    {
+      "key": "monster.flamethrower.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Flamethrower",
+      "translated": "Flamethrower"
+    },
+    {
+      "key": "monster.flamethrower.desc",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "a flamethrower",
+      "translated": "a flamethrower"
+    },
+    {
+      "key": "monster.azerus2.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Azerus",
+      "translated": "Azerus"
+    },
+    {
+      "key": "monster.azerus2.desc",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Azerus",
+      "translated": "Azerus"
+    },
+    {
+      "key": "monster.azerus.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Azerus",
+      "translated": "Azerus"
+    },
+    {
+      "key": "monster.azerus.desc",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Azerus",
+      "translated": "Azerus"
+    },
+    {
+      "key": "monster.yalahari.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Yalahari",
+      "translated": "Yalahari"
+    },
+    {
+      "key": "monster.schiach.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Schiach",
+      "translated": "Schiach"
+    },
+    {
+      "key": "monster.percht.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Percht",
+      "translated": "Percht"
     }
   ],
   "threshold": 10,

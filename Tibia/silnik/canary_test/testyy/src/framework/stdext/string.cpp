@@ -21,6 +21,7 @@
  */
 
 #include <algorithm>
+#include <cctype>
 #include <ranges>
 #include <vector>
 #include <charconv>
@@ -280,7 +281,10 @@ namespace stdext
         }
     }
 
-    void eraseWhiteSpace(std::string& str) { std::erase_if(str, isspace); }
+    void eraseWhiteSpace(std::string& str)
+    {
+        std::erase_if(str, [](const unsigned char ch) { return std::isspace(ch) != 0; });
+    }
 
     [[nodiscard]] std::vector<std::string> split(std::string_view str, std::string_view separators) {
         std::vector<std::string> result;

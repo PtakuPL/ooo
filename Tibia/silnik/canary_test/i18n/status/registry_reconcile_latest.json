@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-14T15:38:53.545410Z",
+  "timestamp": "2026-02-14T18:01:01.987708Z",
   "status": "ok",
   "action": "skipped_threshold",
   "reason": "no_sync_needed",
@@ -28,5 +28,116 @@
     "added": 38,
     "changed": 0,
     "total": 38
+  },
+  "per_file_drift_summary": {
+    "files_with_drift": 31,
+    "total_drift_keys": 53586,
+    "top_drifters": [
+      {
+        "file": "items.json",
+        "live": 17057,
+        "registry": 0,
+        "drift": 17057,
+        "drift_pct": 100.0
+      },
+      {
+        "file": "npc.json",
+        "live": 13769,
+        "registry": 0,
+        "drift": 13769,
+        "drift_pct": 100.0
+      },
+      {
+        "file": "monsters.json",
+        "live": 5915,
+        "registry": 0,
+        "drift": 5915,
+        "drift_pct": 100.0
+      },
+      {
+        "file": "server.json",
+        "live": 2574,
+        "registry": 0,
+        "drift": 2574,
+        "drift_pct": 100.0
+      },
+      {
+        "file": "scripts.json",
+        "live": 2170,
+        "registry": 0,
+        "drift": 2170,
+        "drift_pct": 100.0
+      },
+      {
+        "file": "otclient_modules.json",
+        "live": 1987,
+        "registry": 0,
+        "drift": 1987,
+        "drift_pct": 100.0
+      },
+      {
+        "file": "questlog.json",
+        "live": 1918,
+        "registry": 0,
+        "drift": 1918,
+        "drift_pct": 100.0
+      },
+      {
+        "file": "spells.json",
+        "live": 1534,
+        "registry": 0,
+        "drift": 1534,
+        "drift_pct": 100.0
+      },
+      {
+        "file": "html.json",
+        "live": 1495,
+        "registry": 0,
+        "drift": 1495,
+        "drift_pct": 100.0
+      },
+      {
+        "file": "books.json",
+        "live": 1403,
+        "registry": 0,
+        "drift": 1403,
+        "drift_pct": 100.0
+      },
+      {
+        "file": "achievements.json",
+        "live": 1048,
+        "registry": 0,
+        "drift": 1048,
+        "drift_pct": 100.0
+      },
+      {
+        "file": "cpp.json",
+        "live": 879,
+        "registry": 0,
+        "drift": 879,
+        "drift_pct": 100.0
+      },
+      {
+        "file": "quests.json",
+        "live": 610,
+        "registry": 0,
+        "drift": 610,
+        "drift_pct": 100.0
+      },
+      {
+        "file": "raids.json",
+        "live": 273,
+        "registry": 0,
+        "drift": 273,
+        "drift_pct": 100.0
+      },
+      {
+        "file": "client.json",
+        "live": 242,
+        "registry": 0,
+        "drift": 242,
+        "drift_pct": 100.0
+      }
+    ]
   }
 }

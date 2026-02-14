@@ -2,10 +2,10 @@
   "lang": "te",
   "script_group": "exotic",
   "total_keys": 53586,
-  "translated": 4669,
-  "identical_to_en": 3718,
-  "placeholder_keys": 48917,
-  "coverage_pct": 8.7,
+  "translated": 4793,
+  "identical_to_en": 3842,
+  "placeholder_keys": 48793,
+  "coverage_pct": 8.9,
   "issues_total": 81,
   "issues_by_type": {
     "script_wrong_script": 80,
@@ -17,7 +17,7 @@
     "MEDIUM": 0,
     "LOW": 0
   },
-  "score": 97.4,
+  "score": 97.5,
   "worst_keys": [
     {
       "key": "achievement.26.name",
@@ -148,5 +148,5 @@
     "length_ratio": 9,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-14T15:36:30.376155Z"
+  "validated_at": "2026-02-14T18:00:18.000484Z"
 }

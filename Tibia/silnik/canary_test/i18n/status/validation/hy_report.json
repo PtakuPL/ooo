@@ -2,10 +2,10 @@
   "lang": "hy",
   "script_group": "exotic",
   "total_keys": 53586,
-  "translated": 4773,
-  "identical_to_en": 3733,
-  "placeholder_keys": 48813,
-  "coverage_pct": 8.9,
+  "translated": 4897,
+  "identical_to_en": 3857,
+  "placeholder_keys": 48689,
+  "coverage_pct": 9.1,
   "issues_total": 87,
   "issues_by_type": {
     "script_wrong_script": 86,
@@ -148,5 +148,5 @@
     "length_ratio": 7,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-14T15:35:43.717972Z"
+  "validated_at": "2026-02-14T18:00:04.939982Z"
 }

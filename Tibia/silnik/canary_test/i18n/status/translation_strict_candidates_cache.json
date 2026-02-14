@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-14T15:39:02.983435Z",
-  "built_cycle": 3,
+  "timestamp": "2026-02-14T18:01:51.976987Z",
+  "built_cycle": 1,
   "cache_ttl_cycles": 5,
   "targets": [
     "pl",
@@ -61,9 +61,9 @@
     {
       "lang": "pl",
       "json_file": "books.json",
-      "pending_total": 1150,
-      "todo": 1150,
-      "simple_todo": 270,
+      "pending_total": 890,
+      "todo": 890,
+      "simple_todo": 218,
       "missing_in_lang": 0
     },
     {
@@ -77,9 +77,9 @@
     {
       "lang": "pl",
       "json_file": "cpp.json",
-      "pending_total": 358,
-      "todo": 358,
-      "simple_todo": 178,
+      "pending_total": 281,
+      "todo": 281,
+      "simple_todo": 142,
       "missing_in_lang": 0
     },
     {
@@ -101,9 +101,9 @@
     {
       "lang": "pl",
       "json_file": "items.json",
-      "pending_total": 11626,
-      "todo": 11626,
-      "simple_todo": 9213,
+      "pending_total": 11419,
+      "todo": 11419,
+      "simple_todo": 9126,
       "missing_in_lang": 0
     },
     {
@@ -125,25 +125,17 @@
     {
       "lang": "pl",
       "json_file": "monsters.json",
-      "pending_total": 2861,
-      "todo": 2861,
-      "simple_todo": 2369,
+      "pending_total": 2857,
+      "todo": 2857,
+      "simple_todo": 2365,
       "missing_in_lang": 0
     },
     {
       "lang": "pl",
       "json_file": "npc.json",
-      "pending_total": 7909,
-      "todo": 7909,
-      "simple_todo": 666,
-      "missing_in_lang": 0
-    },
-    {
-      "lang": "pl",
-      "json_file": "npclib.json",
-      "pending_total": 1,
-      "todo": 1,
-      "simple_todo": 0,
+      "pending_total": 7653,
+      "todo": 7653,
+      "simple_todo": 609,
       "missing_in_lang": 0
     },
     {
@@ -157,9 +149,9 @@
     {
       "lang": "pl",
       "json_file": "otclient_modules.json",
-      "pending_total": 98,
-      "todo": 98,
-      "simple_todo": 60,
+      "pending_total": 63,
+      "todo": 63,
+      "simple_todo": 37,
       "missing_in_lang": 0
     },
     {
@@ -181,41 +173,41 @@
     {
       "lang": "pl",
       "json_file": "quests.json",
-      "pending_total": 302,
-      "todo": 302,
-      "simple_todo": 74,
+      "pending_total": 47,
+      "todo": 47,
+      "simple_todo": 29,
       "missing_in_lang": 0
     },
     {
       "lang": "pl",
       "json_file": "raids.json",
-      "pending_total": 103,
-      "todo": 103,
-      "simple_todo": 20,
-      "missing_in_lang": 0
-    },
-    {
-      "lang": "pl",
-      "json_file": "scripts.json",
-      "pending_total": 1411,
-      "todo": 1411,
-      "simple_todo": 458,
-      "missing_in_lang": 0
-    },
-    {
-      "lang": "pl",
-      "json_file": "server.json",
-      "pending_total": 130,
-      "todo": 130,
+      "pending_total": 84,
+      "todo": 84,
       "simple_todo": 17,
       "missing_in_lang": 0
     },
     {
       "lang": "pl",
+      "json_file": "scripts.json",
+      "pending_total": 1262,
+      "todo": 1262,
+      "simple_todo": 423,
+      "missing_in_lang": 0
+    },
+    {
+      "lang": "pl",
+      "json_file": "server.json",
+      "pending_total": 109,
+      "todo": 109,
+      "simple_todo": 16,
+      "missing_in_lang": 0
+    },
+    {
+      "lang": "pl",
       "json_file": "spells.json",
-      "pending_total": 481,
-      "todo": 481,
-      "simple_todo": 478,
+      "pending_total": 80,
+      "todo": 80,
+      "simple_todo": 77,
       "missing_in_lang": 0
     },
     {
@@ -237,17 +229,17 @@
     {
       "lang": "es",
       "json_file": "achievements.json",
-      "pending_total": 8,
-      "todo": 8,
-      "simple_todo": 6,
+      "pending_total": 4,
+      "todo": 4,
+      "simple_todo": 2,
       "missing_in_lang": 0
     },
     {
       "lang": "es",
       "json_file": "books.json",
-      "pending_total": 99,
-      "todo": 99,
-      "simple_todo": 54,
+      "pending_total": 96,
+      "todo": 96,
+      "simple_todo": 52,
       "missing_in_lang": 0
     },
     {
@@ -277,9 +269,9 @@
     {
       "lang": "es",
       "json_file": "html.json",
-      "pending_total": 1062,
-      "todo": 1062,
-      "simple_todo": 272,
+      "pending_total": 1058,
+      "todo": 1058,
+      "simple_todo": 270,
       "missing_in_lang": 0
     },
     {
@@ -293,8 +285,8 @@
     {
       "lang": "es",
       "json_file": "libs.json",
-      "pending_total": 3,
-      "todo": 3,
+      "pending_total": 2,
+      "todo": 2,
       "simple_todo": 0,
       "missing_in_lang": 0
     },
@@ -309,17 +301,17 @@
     {
       "lang": "es",
       "json_file": "monsters.json",
-      "pending_total": 1393,
-      "todo": 1393,
-      "simple_todo": 1346,
+      "pending_total": 1372,
+      "todo": 1372,
+      "simple_todo": 1326,
       "missing_in_lang": 0
     },
     {
       "lang": "es",
       "json_file": "npc.json",
-      "pending_total": 3493,
-      "todo": 3493,
-      "simple_todo": 800,
+      "pending_total": 3386,
+      "todo": 3386,
+      "simple_todo": 743,
       "missing_in_lang": 0
     },
     {
@@ -341,25 +333,25 @@
     {
       "lang": "es",
       "json_file": "otclient_modules.json",
-      "pending_total": 236,
-      "todo": 236,
-      "simple_todo": 189,
+      "pending_total": 161,
+      "todo": 161,
+      "simple_todo": 138,
       "missing_in_lang": 0
     },
     {
       "lang": "es",
       "json_file": "php.json",
-      "pending_total": 14,
-      "todo": 14,
-      "simple_todo": 7,
+      "pending_total": 6,
+      "todo": 6,
+      "simple_todo": 1,
       "missing_in_lang": 0
     },
     {
       "lang": "es",
       "json_file": "questlog.json",
-      "pending_total": 1644,
-      "todo": 1644,
-      "simple_todo": 562,
+      "pending_total": 1617,
+      "todo": 1617,
+      "simple_todo": 553,
       "missing_in_lang": 0
     },
     {
@@ -381,25 +373,25 @@
     {
       "lang": "es",
       "json_file": "scripts.json",
-      "pending_total": 98,
-      "todo": 98,
-      "simple_todo": 38,
+      "pending_total": 88,
+      "todo": 88,
+      "simple_todo": 37,
       "missing_in_lang": 0
     },
     {
       "lang": "es",
       "json_file": "server.json",
-      "pending_total": 1833,
-      "todo": 1833,
-      "simple_todo": 734,
+      "pending_total": 1596,
+      "todo": 1596,
+      "simple_todo": 664,
       "missing_in_lang": 0
     },
     {
       "lang": "es",
       "json_file": "spells.json",
-      "pending_total": 636,
-      "todo": 636,
-      "simple_todo": 636,
+      "pending_total": 213,
+      "todo": 213,
+      "simple_todo": 213,
       "missing_in_lang": 0
     },
     {

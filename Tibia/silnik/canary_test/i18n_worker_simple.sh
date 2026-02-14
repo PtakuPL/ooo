@@ -11232,6 +11232,29 @@ def _is_code_or_technical(key, en_value):
     # Keyboard shortcuts: Ctrl+Key, Alt+Key, Shift+Key
     if re.match(r'^(Ctrl|Alt|Shift)\+', t):
         return True
+    # File/resource paths: contain / and end with a file extension
+    if '/' in t and re.search(r'\.[a-zA-Z]{2,4}(?:[?#]|$)', t.split('/')[-1]):
+        return True
+    # Printf-style format strings (%d, %s, %f, %x)
+    if re.search(r'%[dsfxXo]', t):
+        return True
+    # Template code: kv[{key}] = {value}, {key}:{value} etc.
+    if re.search(r'\[\{|\{[a-z_]+\}', t, re.IGNORECASE) and not re.search(r'[A-Za-z]{6,}', re.sub(r'\{[^}]*\}|\[[^\]]*\]', '', t)):
+        return True
+    # Date/time strings: 2023-11-23, 11:23 CET
+    if re.fullmatch(r'\d{4}-\d{2}-\d{2}[,\s]+\d{1,2}:\d{2}\s*[A-Z]{2,4}', t):
+        return True
+    # High symbol ratio: >55% non-alphanumeric chars (cipher/glyph text)
+    if len(t) >= 5:
+        alpha_count = sum(1 for c in t if c.isalnum())
+        if alpha_count / len(t) < 0.45:
+            return True
+    # Single word ending with colon only (label headers like "Total:", "Balance:")
+    if re.fullmatch(r'[A-Za-zÀ-ÿ]+:\s*', t):
+        return True
+    # Attribution/credits: "Name (handle)'," patterns
+    if re.match(r'^[A-Z][a-z]+\s*\([a-zA-Z0-9_]+\)', t):
+        return True
     # Known game engine terms that must stay untranslated
     if t.lower() in _GAME_NONTRANSLATABLE_TERMS:
         return True
@@ -11291,8 +11314,15 @@ def _is_game_nontranslatable(key, en_value):
         en_count = sum(1 for w in words if w.lower() in _common_en)
         if en_count == 0 and all(len(w) <= 6 for w in words):
             return True
+    # Gibberish: single lowercase word 20+ chars (e.g. rkawdmawfjawkjnfjkawnkjnawkdjawkfmalkwmflkmawkfnzxc)
+    words_alpha = re.findall(r'[A-Za-z]+', t)
+    if len(words_alpha) == 1 and len(words_alpha[0]) >= 20 and words_alpha[0].islower():
+        return True
     # Czysta onomatopeja: powtórzenie tego samego wzorca liter 3+ razy (Hum hum hum, Clink clank clink)
     if re.match(r'^([A-Za-z]{2,8})[,.\s]+\1(?:[,.\s]+\1)*[.!?]*$', t, re.IGNORECASE):
+        return True
+    # Onomatopeja: pojedyncze słowo z 3+ powtórzonymi literami (Waaaaaah, Plinngggg, Srrrt, Purrrrrrr)
+    if re.fullmatch(r'[A-Za-z]*([a-zA-Z])\1{2,}[a-zA-Z]*[!.?]*', t):
         return True
     return False
 
@@ -11314,7 +11344,7 @@ def _is_proper_noun_key(key, en_value):
         return True
     if key.startswith("book.otbm.") and key.endswith((".title", ".name")):
         return True
-    if key.startswith(("quest.", "raid.", "achievement.")) and key.endswith(".title"):
+    if key.startswith(("quest.", "raid.", "achievement.")) and key.endswith((".title", ".name")):
         return True
     en_stripped = en_value.strip()
     if len(en_stripped) <= 3:
@@ -11325,6 +11355,39 @@ def _is_proper_noun_key(key, en_value):
     # Game-specific nontranslatable content (fictional languages, animal sounds)
     if _is_game_nontranslatable(key, en_stripped):
         return True
+    # Spell compound names: boss/monster spell names with fictional words
+    # (zamulosh invisible, Rotthingholy Ulus, tarbaz tp, furyosa manadrain)
+    # Regular spells (Ultimate Healing, Magic Shield) use common EN words — tłumaczymy.
+    if key.startswith('spell.') and key.endswith('.name'):
+        _basic_en = {
+            'a','an','the','and','or','of','in','on','at','to','for','is','it','by','as','up',
+            'all','any','big','can','cut','did','end','far','few','get','got','had','has','her',
+            'him','his','hot','how','its','let','may','new','not','now','old','one','our','out',
+            'own','put','ran','run','saw','say','set','she','sit','the','too','try','two','use',
+            'was','way','who','why','yes','yet','you','man','men',
+            'back','been','best','body','both','call','came','case','come','each','even','fact',
+            'feel','find','fire','from','gave','give','good','gone','hand','have','head','help',
+            'here','high','hold','home','hope','into','just','keep','kind','knew','know','last',
+            'left','life','like','line','long','look','lost','made','make','many','mind','more',
+            'most','much','must','name','need','next','only','open','over','part','plan','play',
+            'real','rest','said','same','show','side','some','soon','stop','such','sure','take',
+            'talk','tell','than','that','them','then','they','this','time','told','took','turn',
+            'very','walk','want','well','went','were','what','when','will','with','word','work',
+            'year','about','after','again','being','bring','chain','close','could','death',
+            'doing','earth','every','first','force','found','going','great','group','haste',
+            'heavy','human','large','later','leave','light','magic','might','never','night',
+            'other','place','point','power','right','shall','sharp','since','small','spell',
+            'start','still','stone','storm','strike','strong','thing','think','those','three',
+            'under','until','water','where','which','while','world','would','young',
+            'attack','before','breath','create','damage','divine','energy','freeze','gentle',
+            'ground','heal','healing','holy','ice','intense','mass','mana','shield','ring',
+            'sudden','summon','swift','thunder','ultimate','wave','wild','wind',
+        }
+        spell_words = [w for w in re.findall(r'[A-Za-z]+', en_stripped)]
+        if spell_words:
+            non_en = [w for w in spell_words if w.lower() not in _basic_en]
+            if non_en:
+                return True
     # Krótka fraza TitleCase pod kluczem nazwy NPC/book (ale NIE monster/mount/spell — te tłumaczymy).
     name_like_prefixes = ("npc.", "book.otbm.")
     if any(key.startswith(p) for p in name_like_prefixes) and key.endswith((".name", ".title", ".desc")):
@@ -12107,6 +12170,10 @@ def _is_probably_nontranslatable_text(text: str) -> bool:
         'server', 'client', 'hotkey', 'quest', 'clan', 'guild', 'raid',
         'tutorial', 'pvp', 'pve', 'vip', 'hp', 'mp', 'exp', 'gp', 'npc',
         'email', 'chat', 'trade', 'depot', 'stamina', 'tibia',
+        # Dodane — słowa identyczne w wielu językach (FP fix)
+        'balance', 'total', 'audio', 'wiki', 'port', 'amulet', 'regular',
+        'configurable', 'trivial', 'territorial', 'biodegradable',
+        'color', 'bosstiary',
     }
     if t.lower().strip(':!.?') in _INTL_WORDS:
         return True
@@ -12485,15 +12552,16 @@ def detect_suspicious(en_text: str, translated_text: str, lang: str, key: str = 
     # S23: word_salad — tłumaczenie to mix EN function words + częściowe tłumaczenie
     # UWAGA: pomijamy 1-2 literowe słowa ("a","to","is","it","in","on","at","by","we")
     # bo pokrywają się z przyimkami/słówkami w językach romańskich (es/pt/fr/it).
+    # Pomijamy też "has" — to poprawne słowo ES/PT ("tú has derrotado" = "you have defeated").
     if tr != en and not tr.startswith("[") and tr_len > 15:
         _ws_func = {'the','an','its','she','his','her',
-            'has','had','was','were','for','with','from','that',
+            'had','was','were','for','with','from','that',
             'this','which','some','they','their','them','you','your','our'}
         _ws_words = [w for w in tr.lower().split() if len(w.rstrip('.,!?;:')) >= 3]
         if len(_ws_words) >= 4:
             _ws_func_count = sum(1 for w in _ws_words if w.rstrip('.,!?;:') in _ws_func)
             _ws_ratio = _ws_func_count / len(_ws_words)
-            if _ws_func_count >= 2 and _ws_ratio > 0.25:
+            if _ws_func_count >= 3 and _ws_ratio > 0.25:
                 issues.append({
                     "type": "word_salad",
                     "severity": "CRITICAL",

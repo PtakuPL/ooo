@@ -2,10 +2,10 @@
   "lang": "bn",
   "script_group": "exotic",
   "total_keys": 53586,
-  "translated": 5595,
-  "identical_to_en": 3713,
-  "placeholder_keys": 47991,
-  "coverage_pct": 10.4,
+  "translated": 5719,
+  "identical_to_en": 3837,
+  "placeholder_keys": 47867,
+  "coverage_pct": 10.7,
   "issues_total": 100,
   "issues_by_type": {
     "script_wrong_script": 95,
@@ -18,7 +18,7 @@
     "MEDIUM": 1,
     "LOW": 0
   },
-  "score": 97.3,
+  "score": 97.4,
   "worst_keys": [
     {
       "key": "achievement.235.name",
@@ -149,5 +149,5 @@
     "length_ratio": 11,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-14T15:34:43.475637Z"
+  "validated_at": "2026-02-14T17:59:17.870170Z"
 }

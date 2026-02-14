@@ -378,19 +378,19 @@
       "status": "idle"
     }
   },
-  "generated_at_utc": "2026-02-14T15:38:37Z",
+  "generated_at_utc": "2026-02-14T18:01:48Z",
   "global": {
     "en_keys_total": 53586,
-    "errors_total": 1621,
+    "errors_total": 1775,
     "files_processed_total": 6443,
     "languages_total": 54
   },
   "legacy": {
     "i18n_global_stats": {
       "auto_translate": {
-        "guard_fail": 55,
-        "json_file": "quests.json",
-        "keys_to_translate": 17,
+        "guard_fail": 22,
+        "json_file": "npc.json",
+        "keys_to_translate": 3382,
         "language": "es",
         "recent_examples": [],
         "recent_translated": 0,
@@ -403,7 +403,7 @@
         "new_files_detected": 152,
         "quality_issues": 2875
       },
-      "last_update": "2026-02-14T16:37:48.497942",
+      "last_update": "2026-02-14T19:01:30.596952",
       "migration": {
         "batch_size": 110,
         "current_category": "errors",
@@ -422,7 +422,19 @@
         "registry_reconcile_adjustment": 53586
       },
       "mode": "AUTO_TRANSLATE",
-      "total_cycles": 2,
+      "pre_migration": {
+        "categories_scanned": [
+          "npc"
+        ],
+        "categories_scanned_count": 1,
+        "files_with_hits": 1,
+        "generated_at_utc": "2026-02-14T17:03:18.106259Z",
+        "hits": 1,
+        "latest_file": "i18n/status/pre_migration_todo/pre_migration_todo_latest.json",
+        "requested_category": "npc",
+        "total_files_scanned": 1028
+      },
+      "total_cycles": 3,
       "translation_sync": {
         "json_file": "scripts.json",
         "keys_to_sync": 0,
@@ -443,7 +455,7 @@
       "category": "es",
       "detail": "auto translate in progress",
       "eta_seconds": 0,
-      "file": "scripts.json",
+      "file": "server.json",
       "phase": "AUTO_TRANSLATE",
       "progress": {
         "done": 0,
@@ -452,12 +464,12 @@
       },
       "stage": "heartbeat_tick"
     },
-    "cycle": 3,
-    "heartbeat_at_utc": "2026-02-14T15:38:05Z",
+    "cycle": 1,
+    "heartbeat_at_utc": "2026-02-14T18:01:45Z",
     "host": "DESKTOP-338A5OQ",
     "mode": "continuous",
     "name": "i18n_worker_simple.sh",
-    "pid": 2382607,
+    "pid": 2587378,
     "status": "running",
     "version": "unknown"
   }

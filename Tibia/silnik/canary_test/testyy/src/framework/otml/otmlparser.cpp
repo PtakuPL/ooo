@@ -24,6 +24,18 @@
 #include "otmldocument.h"
 #include "otmlexception.h"
 
+namespace {
+bool hasPrefix(const std::string& text, const char* prefix)
+{
+    return text.rfind(prefix, 0) == 0;
+}
+
+bool isBracketList(const std::string& text)
+{
+    return text.size() >= 2 && text.front() == '[' && text.back() == ']';
+}
+}
+
 OTMLParser::OTMLParser(const OTMLDocumentPtr& doc, std::istream& in) :
     currentDepth(0), currentLine(0),
     doc(doc), currentParent(doc), previousNode(nullptr),
@@ -94,7 +106,7 @@ void OTMLParser::parseLine(std::string line)
         return;
 
     // skip comments
-    if (line.starts_with("//") || line.starts_with("#"))
+    if (hasPrefix(line, "//") || hasPrefix(line, "#"))
         return;
 
     // a depth above, change current parent to the previous added node
@@ -173,9 +185,8 @@ void OTMLParser::parseNode(const std::string_view data)
          */
         if (value == "|" || value == "|-") {
             // remove all new lines at the end
-            int lastPos = multiLineData.length();
-            while (multiLineData[--lastPos] == '\n')
-                multiLineData.erase(lastPos, 1);
+            while (!multiLineData.empty() && multiLineData.back() == '\n')
+                multiLineData.pop_back();
 
             if (value == "|")
                 multiLineData.append("\n");
@@ -195,9 +206,9 @@ void OTMLParser::parseNode(const std::string_view data)
     if (value == "~")
         node->setNull(true);
     else {
-        if (value.starts_with("[") && value.ends_with("]")) {
+        if (isBracketList(value)) {
             const auto& tmp = value.substr(1, value.length() - 2);
-            const std::vector tokens = stdext::split(tmp, ",");
+            const std::vector<std::string> tokens = stdext::split(tmp, ",");
             for (std::string v : tokens) {
                 stdext::trim(v);
                 node->writeIn(v);

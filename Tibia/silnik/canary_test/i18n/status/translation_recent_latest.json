@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-14T15:39:23.052544Z",
-  "language": "pl",
-  "json_file": "raids.json",
-  "translated": 69,
+  "timestamp": "2026-02-14T18:01:50.101708Z",
+  "language": "es",
+  "json_file": "server.json",
+  "translated": 80,
   "entries": [
     {
-      "key": "raid.elves.name",
-      "en": "Elves",
-      "translated": "Elves",
+      "key": "data.otservbr.global.npc.tarun.L117.1564",
+      "en": "Farewell.",
+      "translated": "Farewell.",
       "source": "tm"
     },
     {
-      "key": "raid.the_old_widow.name",
-      "en": "The Old Widow",
-      "translated": "The Old Widow",
+      "key": "data.otservbr.global.npc.tarun.L121.1566",
+      "en": "Farewell.",
+      "translated": "Farewell.",
       "source": "tm"
     },
     {
-      "key": "raid.fernfang.name",
-      "en": "Fernfang",
-      "translated": "Fernfang",
+      "key": "data.otservbr.global.npc.tefrit.L119.537",
+      "en": "Well, bye then.",
+      "translated": "Bueno, adiós entonces.",
+      "source": "simple"
+    },
+    {
+      "key": "data.otservbr.global.npc.the.empress.L78.443",
+      "en": "Greetings.",
+      "translated": "Greetings.",
       "source": "tm"
     },
     {
-      "key": "raid.feverish_citizen.name",
-      "en": "Feverish Citizen",
-      "translated": "Feverish Citizen",
+      "key": "data.otservbr.global.npc.the.empress.L84.444",
+      "en": "Well, bye then.",
+      "translated": "Bueno, adiós entonces.",
+      "source": "simple"
+    },
+    {
+      "key": "data.otservbr.global.npc.the.librarian.L87.395",
+      "en": "Well, bye then.",
+      "translated": "Bueno, adiós entonces.",
+      "source": "simple"
+    },
+    {
+      "key": "data.otservbr.global.npc.tigo.L96.858",
+      "en": "Well, bye then.",
+      "translated": "Bueno, adiós entonces.",
+      "source": "simple"
+    },
+    {
+      "key": "data.otservbr.global.npc.undal.L168.1467",
+      "en": "Well, bye then.",
+      "translated": "Bueno, adiós entonces.",
+      "source": "simple"
+    },
+    {
+      "key": "data.otservbr.global.npc.undal.L169.1468",
+      "en": "Well, bye then.",
+      "translated": "Bueno, adiós entonces.",
+      "source": "simple"
+    },
+    {
+      "key": "data.otservbr.global.npc.vanys.L168.532",
+      "en": "Well, bye then.",
+      "translated": "Bueno, adiós entonces.",
+      "source": "simple"
+    },
+    {
+      "key": "data.otservbr.global.npc.vanys.L169.533",
+      "en": "Well, bye then.",
+      "translated": "Bueno, adiós entonces.",
+      "source": "simple"
+    },
+    {
+      "key": "data.otservbr.global.npc.vascalir.L938.1546",
+      "en": "Farewell.",
+      "translated": "Farewell.",
       "source": "tm"
     },
     {
-      "key": "raid.water_buffalo.name",
-      "en": "Water Buffalo",
-      "translated": "Water Buffalo",
+      "key": "data.otservbr.global.npc.vascalir.L939.1547",
+      "en": "Farewell.",
+      "translated": "Farewell.",
       "source": "tm"
     },
     {
-      "key": "raid.feroxa.name",
-      "en": "Feroxa",
-      "translated": "Feroxa",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.yonan.L216.687",
+      "en": "Well, bye then.",
+      "translated": "Bueno, adiós entonces.",
+      "source": "simple"
     },
     {
-      "key": "raid.orshabaal.name",
-      "en": "Orshabaal",
-      "translated": "Orshabaal",
-      "source": "tm"
+      "key": "data.otservbr.global.scripts.lib.register.actions.L430.1631",
+      "en": "You dug a hole! Walk onto it as long as it is open to jump down into the forest cave.",
+      "translated": "¡Cavaste un agujero! Camina sobre él mientras esté abierto para saltar hacia abajo a la cueva del bosque.",
+      "source": "simple"
     },
     {
-      "key": "raid.sir_valorcrest.name",
-      "en": "Sir Valorcrest",
-      "translated": "Sir Valorcrest",
-      "source": "tm"
+      "key": "data.otservbr.global.scripts.lib.register.actions.L438.1632",
+      "en": "You found a piece of the scroll. You pocket it quickly.",
+      "translated": "Encontraste un trozo del pergamino. Lo guardas rápidamente.",
+      "source": "simple"
     },
     {
-      "key": "raid.warlock.name",
-      "en": "Warlock",
-      "translated": "Warlock",
-      "source": "tm"
+      "key": "data.otservbr.global.scripts.lib.register.actions.L443.1633",
+      "en": "A torn scroll piece emerges. Probably gnawed off by rats.",
+      "translated": "Aparece un trozo de pergamino roto. Probablemente roído por ratas.",
+      "source": "simple"
     },
     {
-      "key": "raid.mad_mage.name",
-      "en": "Mad Mage",
-      "translated": "Mad Mage",
-      "source": "tm"
+      "key": "data.otservbr.global.scripts.lib.register.actions.L539.1635",
+      "en": "This table is made of several old doors. One of them has a noticeable ornate lock. Perhaps you could lever it out with a tool.",
+      "translated": "Esta mesa está hecha de varias puertas viejas. Una de ellas tiene una cerradura ornamentada notable. Quizás podrías sacarla con una herramienta.",
+      "source": "simple"
     },
     {
-      "key": "raid.weakened_shlorg.name",
-      "en": "Weakened Shlorg",
-      "translated": "Weakened Shlorg",
-      "source": "tm"
+      "key": "data.otservbr.global.scripts.lib.register.actions.L542.1636",
+      "en": "You already removed the old lock.",
+      "translated": "Ya retiraste la cerradura vieja.",
+      "source": "simple"
     },
     {
-      "key": "raid.gnarlhounds.name",
-      "en": "Gnarlhounds",
-      "translated": "Gnarlhounds",
-      "source": "tm"
-    },
-    {
-      "key": "raid.draptor.name",
-      "en": "Draptor",
-      "translated": "Draptor",
-      "source": "tm"
-    },
-    {
-      "key": "raid.zevelon_duskbringer.name",
-      "en": "Zevelon Duskbringer",
-      "translated": "Zevelon Duskbringer",
-      "source": "tm"
-    },
-    {
-      "key": "raid.zulazza_the_corruptor.name",
-      "en": "Zulazza The Corruptor",
-      "translated": "Zulazza The Corruptor",
-      "source": "tm"
-    },
-    {
-      "key": "raids.chayenne.chayenne.msg_2",
-      "en": "Get prepare mortals, the visit of Chayenne is near.",
-      "translated": "Przygotujcie się, śmiertelnicy, wizyta Chayenne jest blisko.",
-      "source": "google_translate"
-    },
-    {
-      "key": "raids.chayenne.chayenne.msg_3",
-      "en": "Chayenne has returned to his citadel once more. Be careful there.",
-      "translated": "Chayenne powrócił do swojej cytadeli jeszcze raz. Bądź tam ostrożny.",
-      "source": "google_translate"
-    },
-    {
-      "key": "raids.darashia.arachir_the_ancient_one.msg_1",
-      "en": "Beware of Arachir the Ancient One!",
-      "translated": "Strzeż się Arachira Przedwiecznego!",
-      "source": "google_translate"
-    },
-    {
-      "key": "raids.darashia.lions.msg_1",
-      "en": "There are more lions than usual west of Darashia.",
-      "translated": "Na zachód od Darashia jest więcej lwów niż zwykle.",
-      "source": "google_translate"
-    },
-    {
-      "key": "raids.darashia.lions.msg_2",
-      "en": "Even more lions west of Darashia!",
-      "translated": "Jeszcze więcej lwów na zachód od Darashia!",
-      "source": "google_translate"
+      "key": "data.otservbr.global.scripts.lib.register.actions.L769.1637",
+      "en": "You can't remove this pile since it's currently holding up the tunnel.",
+      "translated": "No puedes retirar esta pila ya que actualmente sostiene el túnel.",
+      "source": "simple"
     }
   ]
 }

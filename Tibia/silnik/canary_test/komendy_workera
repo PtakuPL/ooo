@@ -93,6 +93,7 @@ Przykład wpisania komendy lokalnie:
 
 ### A) Sterowanie trybem/kategorią
 - `FORCE:<kategoria>`
+- `PREMIG:<kategoria|all>`
 - `RANDOM`
 - `COMPACT_KEYS`
 - `IDLE`

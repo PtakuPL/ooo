@@ -1,0 +1,31 @@
+{
+  "generated_at_utc": "2026-02-14T17:03:18.106259Z",
+  "scope": "full",
+  "requested_category": "npc",
+  "categories_scanned": [
+    "npc"
+  ],
+  "total_files_scanned": 1028,
+  "files_with_hits": 1,
+  "hits": 1,
+  "categories": {
+    "npc": {
+      "category": "npc",
+      "total_files_scanned": 1028,
+      "files_with_hits": 1,
+      "hits": 1,
+      "json_file": "i18n/status/pre_migration_todo/npc.json",
+      "md_file": "i18n/status/pre_migration_todo/npc.md",
+      "csv_file": "i18n/status/pre_migration_todo/npc.csv"
+    }
+  },
+  "entries_preview": [
+    {
+      "file": "data-canary/npc/canary.lua",
+      "line": 136,
+      "text": "Congratulations! You are now promoted.",
+      "pattern": "voices.text",
+      "category": "npc"
+    }
+  ]
+}

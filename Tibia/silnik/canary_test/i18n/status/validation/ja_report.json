@@ -2,10 +2,10 @@
   "lang": "ja",
   "script_group": "cjk",
   "total_keys": 53586,
-  "translated": 5014,
-  "identical_to_en": 3712,
-  "placeholder_keys": 48572,
-  "coverage_pct": 9.4,
+  "translated": 5138,
+  "identical_to_en": 3836,
+  "placeholder_keys": 48448,
+  "coverage_pct": 9.6,
   "issues_total": 8,
   "issues_by_type": {
     "V2_length_ratio": 7,
@@ -76,5 +76,5 @@
     "length_ratio": 19,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-14T15:35:44.458918Z"
+  "validated_at": "2026-02-14T18:00:05.380988Z"
 }

@@ -2,10 +2,10 @@
   "lang": "uk",
   "script_group": "cyrillic",
   "total_keys": 53586,
-  "translated": 3409,
-  "identical_to_en": 2667,
-  "placeholder_keys": 50177,
-  "coverage_pct": 6.4,
+  "translated": 3533,
+  "identical_to_en": 2791,
+  "placeholder_keys": 50053,
+  "coverage_pct": 6.6,
   "issues_total": 16,
   "issues_by_type": {
     "script_cyrillic_latin_mix": 16
@@ -123,5 +123,5 @@
     "length_ratio": 5,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-14T15:36:31.441405Z"
+  "validated_at": "2026-02-14T18:00:18.688959Z"
 }

@@ -1,15 +1,20 @@
 {
-  "timestamp": "2026-02-14T15:39:02.995844Z",
-  "cycle_counter": 614,
-  "last_target_key": "pl:raids.json",
-  "last_pending_total": 103,
+  "timestamp": "2026-02-14T18:01:51.981878Z",
+  "cycle_counter": 802,
+  "last_target_key": "pl:spells.json",
+  "last_pending_total": 80,
   "last_tier": 1,
-  "last_cat_priority": 8,
-  "candidates_count": 46,
-  "active_candidates_count": 39,
-  "skipped_backoff": 7,
-  "skipped_guard_fail": 0,
-  "guard_fail_blacklist": {},
+  "last_cat_priority": 4,
+  "candidates_count": 45,
+  "active_candidates_count": 33,
+  "skipped_backoff": 8,
+  "skipped_guard_fail": 4,
+  "guard_fail_blacklist": {
+    "pl:items.json": 810,
+    "pl:server.json": 811,
+    "es:books.json": 808,
+    "es:quests.json": 807
+  },
   "tier_config": {
     "tier1": [
       "es",
@@ -34,7 +39,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 3,
+  "cache_cycle": 1,
   "no_progress_counts": {
     "pl:items.json": 0,
     "es:items.json": 3,
@@ -142,7 +147,7 @@
     "es:raids.json": 0,
     "es:html.json": 0,
     "es:books.json": 0,
-    "pl:example_merchant.json": 0,
+    "pl:example_merchant.json": 3,
     "es:startup.json": 0,
     "es:creaturescripts.json": 0,
     "pl:scripts.json": 0,
@@ -150,7 +155,7 @@
     "pl:client.json": 0,
     "pl:php.json": 0,
     "pl:modules.json": 0,
-    "es:php.json": 0,
+    "es:php.json": 1,
     "es:events.json": 0,
     "de:html.json": 0,
     "de:spells.json": 0,
@@ -269,8 +274,10 @@
     "kk:monsters.json": 0,
     "ko:monsters.json": 0,
     "pl:server.json": 0,
-    "pl:libs.json": 0,
-    "es:achievements.json": 0
+    "pl:libs.json": 1,
+    "es:achievements.json": 0,
+    "es:libs.json": 2,
+    "pl:npclib.json": 0
   },
   "bootstrap_priority": {
     "enabled": true,
@@ -289,6 +296,27 @@
   "bootstrap_forced_lang": "",
   "balance_forced": false,
   "global_quality_mode": true,
+  "multilang_wave": {
+    "enabled": true,
+    "active": false,
+    "langs": [
+      "cs",
+      "el",
+      "it",
+      "lt",
+      "ro",
+      "ru"
+    ],
+    "domain_order": [
+      "items.json",
+      "npc.json",
+      "quests.json"
+    ],
+    "floor_pct": 25.0,
+    "weight": 2,
+    "gated_langs": {},
+    "wave_candidates_count": 0
+  },
   "priority_gate": {
     "enabled": true,
     "active": true,
@@ -302,8 +330,8 @@
       "pl"
     ],
     "lang_completion": {
-      "es": 73.84,
-      "pl": 43.46
+      "es": 75.48,
+      "pl": 46.59
     }
   }
 }

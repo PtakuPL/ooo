@@ -138,9 +138,10 @@ if (MSVC)
     )
     set_source_files_properties(
       framework/luaengine/luavaluecasts.cpp
+      framework/otml/otmlnode.cpp
       framework/otml/otmlparser.cpp
       framework/ui/uiwidgetbasestyle.cpp
-      PROPERTIES COMPILE_FLAGS "/Od /d2SSAOptimizer-" SKIP_PRECOMPILE_HEADERS ON
+      PROPERTIES COMPILE_FLAGS "/Od /Ob0 /Oy- /d2SSAOptimizer-" SKIP_PRECOMPILE_HEADERS ON
     )
     set_target_properties(${PROJECT_NAME} PROPERTIES
       INTERPROCEDURAL_OPTIMIZATION FALSE
@@ -632,7 +633,6 @@ set(SOURCE_FILES
         framework/core/resourcemanager.cpp
         framework/core/scheduledevent.cpp
         framework/core/unzipper.cpp
-        framework/core/unzipper.h
         framework/core/timer.cpp
         framework/discord/discord.cpp
         framework/luaengine/luaexception.cpp
@@ -654,9 +654,7 @@ set(SOURCE_FILES
         framework/otml/otmlparser.cpp
         framework/platform/androidgameactivity.cpp
         framework/platform/androidmanager.cpp
-        framework/platform/androidmanager.h
         framework/platform/androidwindow.cpp
-        framework/platform/androidwindow.h
         framework/platform/platform.cpp
         framework/platform/platformwindow.cpp
         framework/platform/unixcrashhandler.cpp

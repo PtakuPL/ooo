@@ -1,0 +1,28 @@
+{
+  "file": "libs.json",
+  "lang": "es",
+  "conditions": {
+    "no_critical_token_errors": {
+      "ok": true,
+      "guard_placeholder": 0,
+      "guard_pipe": 0
+    },
+    "guard_command_below_threshold": {
+      "ok": true,
+      "guard_command": 0,
+      "threshold": 5
+    },
+    "coverage_above_95pct": {
+      "ok": true,
+      "coverage_pct": 97.8,
+      "total_keys": 89,
+      "real_translations": 87
+    },
+    "quality_entry_present": {
+      "ok": false,
+      "has_quality_data": false
+    }
+  },
+  "is_done": false,
+  "timestamp": "2026-02-14T17:40:08.498143Z"
+}

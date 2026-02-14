@@ -102,7 +102,7 @@
   "npclib.bank_system.say_9": "[EN] Would you really like to deposit {} gold to your {guild account}?",
   "npclib.handler.already_focused": "[EN] {0}, I am already talking to you.",
   "npclib.handler.buy": "[EN] Do you want to buy {0} {1} for {2} gold coins?",
-  "npclib.handler.decline": "Then not.",
+  "npclib.handler.decline": "Тогда нет.",
   "npclib.handler.farewell": "До свидания, {0}.",
   "npclib.handler.greet": "[EN] Greetings, {0}.",
   "npclib.handler.missing_item": "[EN] You don't have so many.",

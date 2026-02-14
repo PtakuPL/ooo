@@ -1,10 +1,10 @@
 {
   "lang": "pt",
-  "coverage_pct": 8.8,
+  "coverage_pct": 9.0,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-14T15:35:47.339499Z",
+  "checked_at": "2026-02-14T18:00:07.444824Z",
   "issues_total": 409,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -365,6 +365,15 @@
       "lang": " (Hazard)"
     },
     {
+      "key": "cpp.game.no_loot",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "No loot",
+      "pl": "Żadnych łupów",
+      "lang": "No loot"
+    },
+    {
       "key": "cpp.game.offline_training_button_cancel",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -392,6 +401,15 @@
       "lang": "Tentugly"
     },
     {
+      "key": "cpp.game.you_looted",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You looted ",
+      "pl": "Zrabowałeś ",
+      "lang": "You looted "
+    },
+    {
       "key": "cpp.inspect.and_connector",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -408,6 +426,15 @@
       "en": "Armor",
       "pl": "Zbroja",
       "lang": "Armor"
+    },
+    {
+      "key": "cpp.inspect.at_range",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": " at range ",
+      "pl": "w zasięgu ",
+      "lang": " at range "
     },
     {
       "key": "cpp.inspect.attack",
@@ -453,6 +480,15 @@
       "en": "container",
       "pl": "pojemnik",
       "lang": "container"
+    },
+    {
+      "key": "cpp.inspect.body_extra_slot",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "extra slot",
+      "pl": "dodatkowe gniazdo",
+      "lang": "extra slot"
     },
     {
       "key": "cpp.inspect.body_feet",
@@ -599,6 +635,15 @@
       "lang": "Key"
     },
     {
+      "key": "cpp.inspect.n_fields",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} fields",
+      "pl": "Pola {0}",
+      "lang": "{0} fields"
+    },
+    {
       "key": "cpp.inspect.nothing",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -651,6 +696,15 @@
       "en": "Speed",
       "pl": "Szybkość",
       "lang": "Speed"
+    },
+    {
+      "key": "cpp.inspect.speed_value",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "speed {0}",
+      "pl": "prędkość {0}",
+      "lang": "speed {0}"
     },
     {
       "key": "cpp.inspect.tier",
@@ -725,6 +779,15 @@
       "lang": "Arm:"
     },
     {
+      "key": "cpp.look.at_range",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "at range",
+      "pl": "w zasięgu",
+      "lang": "at range"
+    },
+    {
       "key": "cpp.look.atk",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -788,6 +851,15 @@
       "lang": "Def:"
     },
     {
+      "key": "cpp.look.empty_slot",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Empty Slot",
+      "pl": "Puste miejsce",
+      "lang": "Empty Slot"
+    },
+    {
       "key": "cpp.look.field",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -822,6 +894,15 @@
       "en": "{0} hour",
       "pl": "{0} godzina",
       "lang": "{0} hour"
+    },
+    {
+      "key": "cpp.look.key_fmt",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Key:{0}",
+      "pl": "Klucz:{0}",
+      "lang": "Key:{0}"
     },
     {
       "key": "cpp.look.level_n",
@@ -869,6 +950,15 @@
       "lang": " on "
     },
     {
+      "key": "cpp.look.or_higher",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": " or higher",
+      "pl": "lub wyższy",
+      "lang": " or higher"
+    },
+    {
       "key": "cpp.look.physical_plus",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -892,7 +982,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "premium ",
-      "pl": "premium ",
+      "pl": "premia ",
       "lang": "premium "
     },
     {
@@ -1155,6 +1245,15 @@
       "en": "level",
       "pl": "poziom",
       "lang": "level"
+    },
+    {
+      "key": "cpp.skill.life_leech",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "life leech",
+      "pl": "Życie Lecha",
+      "lang": "life leech"
     },
     {
       "key": "cpp.skill.mana_leech",
@@ -3513,105 +3612,6 @@
       "en": "SLEEP. ...",
       "pl": "SEN....",
       "lang": "SLEEP. ..."
-    },
-    {
-      "key": "npc.a_sleeping_dragon.multi_3",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "GAIN. ...",
-      "pl": "NABIERZ SIŁ....",
-      "lang": "GAIN. ..."
-    },
-    {
-      "key": "npc.a_sleeping_dragon.multi_4",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "RISE. ...",
-      "pl": "POWSTAŃ....",
-      "lang": "RISE. ..."
-    },
-    {
-      "key": "npc.a_starving_dog.greet_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "<sniff>",
-      "pl": "<węszy>",
-      "lang": "<sniff>"
-    },
-    {
-      "key": "npc.a_starving_dog.say_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "<munch>",
-      "pl": "<przeżuwać>",
-      "lang": "<munch>"
-    },
-    {
-      "key": "npc.al_dee.walkaway_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Bye, bye.",
-      "pl": "Pa, cześć, pa, cześć.",
-      "lang": "Bye, bye."
-    },
-    {
-      "key": "npc.aldo.say_5",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ok then.",
-      "pl": "Ok wtedy.",
-      "lang": "Ok then."
-    },
-    {
-      "key": "npc.alesar.farewell_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Finally.",
-      "pl": "W końcu, ostatecznie.",
-      "lang": "Finally."
-    },
-    {
-      "key": "npc.alesar.say_5",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Then not.",
-      "pl": "W takim razie nie.",
-      "lang": "Then not."
-    },
-    {
-      "key": "npc.alesar.walkaway_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Finally.",
-      "pl": "W końcu, ostatecznie.",
-      "lang": "Finally."
-    },
-    {
-      "key": "npc.alesar_functions.say_3",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Then not.",
-      "pl": "W takim razie nie.",
-      "lang": "Then not."
-    },
-    {
-      "key": "npc.alkestios.say_4",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Then not.",
-      "pl": "W takim razie nie.",
-      "lang": "Then not."
     }
   ],
   "length_ratio_issues": [

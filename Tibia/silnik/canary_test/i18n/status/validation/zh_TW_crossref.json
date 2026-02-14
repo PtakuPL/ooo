@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-14T15:36:32.591082Z",
+  "checked_at": "2026-02-14T18:00:19.188197Z",
   "issues_total": 422,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -563,6 +563,24 @@
       "lang": "Authorised Personnel only!"
     },
     {
+      "key": "book.otbm.citizen_depot_downstairs",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Citizen Depot downstairs.",
+      "pl": "Obywatel Depot na dole.",
+      "lang": "Citizen Depot downstairs."
+    },
+    {
+      "key": "book.otbm.fort_o_th_nare_igh",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Fort... o. th. N.....are ..igh..",
+      "pl": "Fort... o. t. N...są...wysokie..",
+      "lang": "Fort... o. th. N.....are ..igh.."
+    },
+    {
       "key": "book.otbm.galunas_fletcher_workshop",
       "category": "books",
       "type": "pl_reference_missing_translation",
@@ -588,6 +606,15 @@
       "en": "Hellgate! Restricted Area!",
       "pl": "Hellgate! Ograniczony Obszar, region!",
       "lang": "Hellgate! Restricted Area!"
+    },
+    {
+      "key": "book.otbm.highranking_necromancers_only",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "High-ranking necromancers only.",
+      "pl": "Tylko wysokiej rangi nekromanci.",
+      "lang": "High-ranking necromancers only."
     },
     {
       "key": "ui.house.rent_period_monthly",
@@ -2597,6 +2624,15 @@
       "lang": "Sold on Market"
     },
     {
+      "key": "cpp.game.no_loot",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "No loot",
+      "pl": "Żadnych łupów",
+      "lang": "No loot"
+    },
+    {
       "key": "cpp.game.offline_training_button_cancel",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -2633,6 +2669,33 @@
       "lang": "Tentugly"
     },
     {
+      "key": "cpp.game.you_looted",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You looted ",
+      "pl": "Zrabowałeś ",
+      "lang": "You looted "
+    },
+    {
+      "key": "cpp.hotkey.using_count",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Using one of {0} {1}...",
+      "pl": "Używając jednego z {0} {1}...",
+      "lang": "Using one of {0} {1}..."
+    },
+    {
+      "key": "cpp.hotkey.using_one",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Using one of {0}...",
+      "pl": "Używając jednego z {0}...",
+      "lang": "Using one of {0}..."
+    },
+    {
       "key": "cpp.inspect.and_connector",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -2651,6 +2714,15 @@
       "lang": "Armor"
     },
     {
+      "key": "cpp.inspect.at_range",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": " at range ",
+      "pl": "w zasięgu ",
+      "lang": " at range "
+    },
+    {
       "key": "cpp.inspect.attack",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -2658,6 +2730,15 @@
       "en": "Attack",
       "pl": "Atak",
       "lang": "Attack"
+    },
+    {
+      "key": "cpp.inspect.attack_plus",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "attack +{0}",
+      "pl": "atak +{0}",
+      "lang": "attack +{0}"
     },
     {
       "key": "cpp.inspect.augments",
@@ -2694,6 +2775,15 @@
       "en": "container",
       "pl": "pojemnik",
       "lang": "container"
+    },
+    {
+      "key": "cpp.inspect.body_extra_slot",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "extra slot",
+      "pl": "dodatkowe gniazdo",
+      "lang": "extra slot"
     },
     {
       "key": "cpp.inspect.body_feet",
@@ -2748,6 +2838,15 @@
       "en": "Body Position",
       "pl": "Ciało Pozycja",
       "lang": "Body Position"
+    },
+    {
+      "key": "cpp.inspect.body_shield_hand",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "shield hand",
+      "pl": "dłoń tarczy",
+      "lang": "shield hand"
     },
     {
       "key": "cpp.inspect.body_weapon_hand",
@@ -2822,6 +2921,15 @@
       "lang": "Contain"
     },
     {
+      "key": "cpp.inspect.damage_reflection",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Damage Reflection",
+      "pl": "Odbicie obrażeń",
+      "lang": "Damage Reflection"
+    },
+    {
       "key": "cpp.inspect.defence",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -2858,6 +2966,42 @@
       "lang": "Expires"
     },
     {
+      "key": "cpp.inspect.faster_regeneration",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "faster regeneration",
+      "pl": "szybsza regeneracja",
+      "lang": "faster regeneration"
+    },
+    {
+      "key": "cpp.inspect.faster_regeneration_effect",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Faster Regeneration",
+      "pl": "Szybsza regeneracja",
+      "lang": "Faster Regeneration"
+    },
+    {
+      "key": "cpp.inspect.field_protection",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Field Protection",
+      "pl": "Ochrona pola",
+      "lang": "Field Protection"
+    },
+    {
+      "key": "cpp.inspect.hard_drinking",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hard Drinking",
+      "pl": "Ostre picie",
+      "lang": "Hard Drinking"
+    },
+    {
       "key": "cpp.inspect.hitchance",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -2865,6 +3009,33 @@
       "en": "HitChance",
       "pl": "Szansa na trafienie",
       "lang": "HitChance"
+    },
+    {
+      "key": "cpp.inspect.imbuement_slot",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Imbuement Slot {0}",
+      "pl": "Szczelina nasycająca {0}",
+      "lang": "Imbuement Slot {0}"
+    },
+    {
+      "key": "cpp.inspect.imbuement_slots",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Imbuement Slots",
+      "pl": "Gniazda nasycające",
+      "lang": "Imbuement Slots"
+    },
+    {
+      "key": "cpp.inspect.invisibility",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Invisibility",
+      "pl": "Niewidzialność",
+      "lang": "Invisibility"
     },
     {
       "key": "cpp.inspect.key",
@@ -2885,6 +3056,24 @@
       "lang": "Magic Level"
     },
     {
+      "key": "cpp.inspect.magic_level_label",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} Magic Level",
+      "pl": "{0} Poziom magii",
+      "lang": "{0} Magic Level"
+    },
+    {
+      "key": "cpp.inspect.magic_level_value",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "magic level {0}",
+      "pl": "poziom magiczny {0}",
+      "lang": "magic level {0}"
+    },
+    {
       "key": "cpp.inspect.magic_shield_capacity",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -2901,6 +3090,15 @@
       "en": "Mana Shield",
       "pl": "Mana Tarcza",
       "lang": "Mana Shield"
+    },
+    {
+      "key": "cpp.inspect.n_fields",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0} fields",
+      "pl": "Pola {0}",
+      "lang": "{0} fields"
     },
     {
       "key": "cpp.inspect.n_seconds",
@@ -3011,6 +3209,15 @@
       "lang": "Rune Spell Name"
     },
     {
+      "key": "cpp.inspect.skill_boost",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Skill Boost",
+      "pl": "Zwiększenie umiejętności",
+      "lang": "Skill Boost"
+    },
+    {
       "key": "cpp.inspect.speed",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -3020,6 +3227,15 @@
       "lang": "Speed"
     },
     {
+      "key": "cpp.inspect.speed_value",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "speed {0}",
+      "pl": "prędkość {0}",
+      "lang": "speed {0}"
+    },
+    {
       "key": "cpp.inspect.tier",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -3027,6 +3243,15 @@
       "en": "Tier",
       "pl": "Rząd",
       "lang": "Tier"
+    },
+    {
+      "key": "cpp.inspect.total_expire_time",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Total Expire Time",
+      "pl": "Całkowity czas wygaśnięcia",
+      "lang": "Total Expire Time"
     },
     {
       "key": "cpp.inspect.total_weight",
@@ -3047,6 +3272,15 @@
       "lang": "Tradeable"
     },
     {
+      "key": "cpp.inspect.tradeable_in_market",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Tradeable In Market",
+      "pl": "Możliwość handlu w Market",
+      "lang": "Tradeable In Market"
+    },
+    {
       "key": "cpp.inspect.two_handed",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -3054,6 +3288,15 @@
       "en": "two-handed",
       "pl": "dwa-handed",
       "lang": "two-handed"
+    },
+    {
+      "key": "cpp.inspect.weapon_type",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Weapon Type",
+      "pl": "Rodzaj broni",
+      "lang": "Weapon Type"
     },
     {
       "key": "cpp.inspect.weight",
@@ -3072,6 +3315,15 @@
       "en": "yes",
       "pl": "Tak",
       "lang": "yes"
+    },
+    {
+      "key": "cpp.item.invalid_slot",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Invalid slot selection.",
+      "pl": "Nieprawidłowy wybór gniazda.",
+      "lang": "Invalid slot selection."
     },
     {
       "key": "cpp.look.and_connector",
@@ -3101,6 +3353,15 @@
       "lang": "Arm:"
     },
     {
+      "key": "cpp.look.at_range",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "at range",
+      "pl": "w zasięgu",
+      "lang": "at range"
+    },
+    {
       "key": "cpp.look.atk",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -3124,7 +3385,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": " that is brand-new",
-      "pl": "that jest I.-new",
+      "pl": "to jest nowość",
       "lang": " that is brand-new"
     },
     {
@@ -3155,6 +3416,15 @@
       "lang": "damage"
     },
     {
+      "key": "cpp.look.damage_reflection",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "damage reflection",
+      "pl": "odbicie uszkodzeń",
+      "lang": "damage reflection"
+    },
+    {
       "key": "cpp.look.day_many",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -3182,6 +3452,24 @@
       "lang": "Def:"
     },
     {
+      "key": "cpp.look.empty_slot",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Empty Slot",
+      "pl": "Puste miejsce",
+      "lang": "Empty Slot"
+    },
+    {
+      "key": "cpp.look.faster_regeneration",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "faster regeneration",
+      "pl": "szybsza regeneracja",
+      "lang": "faster regeneration"
+    },
+    {
       "key": "cpp.look.field",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -3198,6 +3486,15 @@
       "en": " for level {0}",
       "pl": "dla poziom {0}",
       "lang": " for level {0}"
+    },
+    {
+      "key": "cpp.look.hard_drinking",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "hard drinking",
+      "pl": "ostre picie",
+      "lang": "hard drinking"
     },
     {
       "key": "cpp.look.hit_pct",
@@ -3245,6 +3542,24 @@
       "lang": "invisibility"
     },
     {
+      "key": "cpp.look.it_weighs",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "It weighs {0} oz.",
+      "pl": "Waży {0} uncji.",
+      "lang": "It weighs {0} oz."
+    },
+    {
+      "key": "cpp.look.key_fmt",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Key:{0}",
+      "pl": "Klucz:{0}",
+      "lang": "Key:{0}"
+    },
+    {
       "key": "cpp.look.level_n",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -3261,6 +3576,15 @@
       "en": "magic level",
       "pl": "Poziom Magii",
       "lang": "magic level"
+    },
+    {
+      "key": "cpp.look.magic_level_n",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": " magic level {0}",
+      "pl": "poziom magiczny {0}",
+      "lang": " magic level {0}"
     },
     {
       "key": "cpp.look.magic_shield_capacity",
@@ -3288,330 +3612,6 @@
       "en": "mana shield",
       "pl": "mana tarcza",
       "lang": "mana shield"
-    },
-    {
-      "key": "cpp.look.minute_many",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "{0} minutes",
-      "pl": "{0} minuty",
-      "lang": "{0} minutes"
-    },
-    {
-      "key": "cpp.look.minute_one",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "{0} minute",
-      "pl": "{0} minuta",
-      "lang": "{0} minute"
-    },
-    {
-      "key": "cpp.look.of",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " of ",
-      "pl": "z ",
-      "lang": " of "
-    },
-    {
-      "key": "cpp.look.of_connector",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " of",
-      "pl": "z",
-      "lang": " of"
-    },
-    {
-      "key": "cpp.look.on_date",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " on ",
-      "pl": "na ",
-      "lang": " on "
-    },
-    {
-      "key": "cpp.look.perfect_shot",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "perfect shot",
-      "pl": "doskonały strzał",
-      "lang": "perfect shot"
-    },
-    {
-      "key": "cpp.look.physical_plus",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " physical + ",
-      "pl": " fizyczny + ",
-      "lang": " physical + "
-    },
-    {
-      "key": "cpp.look.players",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "players",
-      "pl": "gracze",
-      "lang": "players"
-    },
-    {
-      "key": "cpp.look.premium",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "premium ",
-      "pl": "premium ",
-      "lang": "premium "
-    },
-    {
-      "key": "cpp.look.protection",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "protection ",
-      "pl": "ochrona, osłona ",
-      "lang": "protection "
-    },
-    {
-      "key": "cpp.look.protection_all_fmt",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "protection all {0}%",
-      "pl": "ochrona, osłona wszystkie {0}%",
-      "lang": "protection all {0}%"
-    },
-    {
-      "key": "cpp.look.second_many",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "{0} seconds",
-      "pl": "{0} sekundy",
-      "lang": "{0} seconds"
-    },
-    {
-      "key": "cpp.look.second_one",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "{0} second",
-      "pl": "{0} sekunda",
-      "lang": "{0} second"
-    },
-    {
-      "key": "cpp.look.speed_label",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "speed",
-      "pl": "szybkość",
-      "lang": "speed"
-    },
-    {
-      "key": "cpp.look.tier_amplification",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "{0}% Amplification",
-      "pl": "{0}% Wzmocnienie",
-      "lang": "{0}% Amplification"
-    },
-    {
-      "key": "cpp.look.tier_momentum",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "{0}% Momentum",
-      "pl": "{0}% Rozpęd",
-      "lang": "{0}% Momentum"
-    },
-    {
-      "key": "cpp.look.tier_onslaught",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "{0}% Onslaught",
-      "pl": "{0}% Atak",
-      "lang": "{0}% Onslaught"
-    },
-    {
-      "key": "cpp.look.tier_ruse",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "{0}% Ruse",
-      "pl": "{0}% Podstęp",
-      "lang": "{0}% Ruse"
-    },
-    {
-      "key": "cpp.look.tier_transcendence",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "{0}% Transcendence",
-      "pl": "{0}% Transcendencja",
-      "lang": "{0}% Transcendence"
-    },
-    {
-      "key": "cpp.look.unknown",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "unknown",
-      "pl": "unkNiewn",
-      "lang": "unknown"
-    },
-    {
-      "key": "cpp.look.vol",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Vol:",
-      "pl": "Tom:",
-      "lang": "Vol:"
-    },
-    {
-      "key": "cpp.look.with",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " with",
-      "pl": "z",
-      "lang": " with"
-    },
-    {
-      "key": "cpp.look.wrote",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " wrote",
-      "pl": "wrote",
-      "lang": " wrote"
-    },
-    {
-      "key": "cpp.look.you_read",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You read: ",
-      "pl": "Ty czytać, przeczytać: ",
-      "lang": "You read: "
-    },
-    {
-      "key": "cpp.player.corpse_and",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " and {0}",
-      "pl": "i {0}",
-      "lang": " and {0}"
-    },
-    {
-      "key": "cpp.player.corpse_and_others",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " and others",
-      "pl": "i drugi, pozostały",
-      "lang": " and others"
-    },
-    {
-      "key": "cpp.player.corpse_recognize",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You recognize {0}. ",
-      "pl": "Ty recognize {0}. ",
-      "lang": "You recognize {0}. "
-    },
-    {
-      "key": "cpp.player.exp_vip_bonus",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " (VIP bonus {0}%)",
-      "pl": "(BARDZO WAŻNA OSOBA premia {0}%)",
-      "lang": " (VIP bonus {0}%)"
-    },
-    {
-      "key": "cpp.player.list_and",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "and ",
-      "pl": "i ",
-      "lang": "and "
-    },
-    {
-      "key": "cpp.player.list_delimiter",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": ", ",
-      "pl": ", ",
-      "lang": ", "
-    },
-    {
-      "key": "cpp.player.look.article_a",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a",
-      "pl": "jeden",
-      "lang": "a"
-    },
-    {
-      "key": "cpp.player.look.article_an",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "an",
-      "pl": "jeden",
-      "lang": "an"
-    },
-    {
-      "key": "cpp.player.look.guild_prefix_self",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You are",
-      "pl": "Jesteś",
-      "lang": "You are"
-    },
-    {
-      "key": "cpp.player.look.has_no_vocation",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "has no vocation.",
-      "pl": "ma Nie profesja.",
-      "lang": "has no vocation."
-    },
-    {
-      "key": "cpp.player.look.level_fmt",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Level {0}",
-      "pl": "poziom {0}",
-      "lang": "Level {0}"
-    },
-    {
-      "key": "cpp.player.look.party_prefix_self",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Your party has",
-      "pl": "Twój drużyna ma",
-      "lang": "Your party has"
     }
   ],
   "length_ratio_issues": [

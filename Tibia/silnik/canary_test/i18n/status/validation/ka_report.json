@@ -2,10 +2,10 @@
   "lang": "ka",
   "script_group": "exotic",
   "total_keys": 53586,
-  "translated": 4812,
-  "identical_to_en": 3713,
-  "placeholder_keys": 48774,
-  "coverage_pct": 9.0,
+  "translated": 4936,
+  "identical_to_en": 3837,
+  "placeholder_keys": 48650,
+  "coverage_pct": 9.2,
   "issues_total": 78,
   "issues_by_type": {
     "script_wrong_script": 77,
@@ -148,5 +148,5 @@
     "length_ratio": 8,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-14T15:35:44.779167Z"
+  "validated_at": "2026-02-14T18:00:05.578200Z"
 }

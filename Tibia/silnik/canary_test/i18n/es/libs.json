@@ -34,7 +34,7 @@
   "lib.hireling.msg3": "No tienes suficiente capacidad.",
   "lib.hireling.msg4": "No tienes suficiente espacio en tu buzón.",
   "lib.monster.msg_already_fiendish": "Este monstruo ya es demoníaco.",
-  "lib.monster.msg_not_forgeable": "[EN] This monster is not forgeable, fiendish not added.",
+  "lib.monster.msg_not_forgeable": "Este monstruo no es falsificable, ni diabólico añadido.",
   "lib.monster.msg_only_fiendish": "Solo los monstruos permitidos pueden ser demoníacos.",
   "lib.player.loyalty_bonus": "Debido a tu lealtad a largo plazo a {2}, actualmente te beneficias de un bono del {0}% en todas tus habilidades. (Tienes {1} puntos de lealtad)",
   "lib.player.loyalty_title_1": "Explorador de Tibia",

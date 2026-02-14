@@ -3,8 +3,8 @@
   "lang": "pl",
   "conditions": {
     "no_critical_token_errors": {
-      "ok": false,
-      "guard_placeholder": 3,
+      "ok": true,
+      "guard_placeholder": 0,
       "guard_pipe": 0
     },
     "guard_command_below_threshold": {
@@ -13,10 +13,10 @@
       "threshold": 5
     },
     "coverage_above_95pct": {
-      "ok": true,
-      "coverage_pct": 100.0,
+      "ok": false,
+      "coverage_pct": 93.7,
       "total_keys": 13769,
-      "real_translations": 13767
+      "real_translations": 12907
     },
     "quality_entry_present": {
       "ok": true,
@@ -24,5 +24,5 @@
     }
   },
   "is_done": false,
-  "timestamp": "2026-02-14T09:28:57.585024Z"
+  "timestamp": "2026-02-14T18:00:46.001998Z"
 }

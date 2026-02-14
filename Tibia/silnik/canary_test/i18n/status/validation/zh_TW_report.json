@@ -2,9 +2,9 @@
   "lang": "zh_TW",
   "script_group": "cjk",
   "total_keys": 53586,
-  "translated": 10424,
-  "identical_to_en": 9740,
-  "placeholder_keys": 41007,
+  "translated": 10445,
+  "identical_to_en": 9761,
+  "placeholder_keys": 40986,
   "coverage_pct": 19.5,
   "issues_total": 14,
   "issues_by_type": {
@@ -113,5 +113,5 @@
     "length_ratio": 22,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-14T15:36:32.610358Z"
+  "validated_at": "2026-02-14T18:00:19.194407Z"
 }

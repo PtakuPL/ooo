@@ -30,6 +30,7 @@
 #include "protocolgame.h"
 #include <framework/core/application.h>
 #include <framework/core/eventdispatcher.h>
+#include <framework/stdext/string.h>
 
 #include "framework/core/graphicalapplication.h"
 #include "tile.h"
@@ -1674,18 +1675,8 @@ void Game::setFollowingCreature(const CreaturePtr& creature)
 std::string Game::formatCreatureName(const std::string_view name)
 {
     std::string formatedName{ name };
-    if (getFeature(Otc::GameFormatCreatureName) && name.length() > 0) {
-        bool upnext = true;
-        for (char& i : formatedName) {
-            const char ch = i;
-            if (upnext) {
-                i = std::toupper(ch);
-                upnext = false;
-            }
-            if (ch == ' ')
-                upnext = true;
-        }
-    }
+    if (getFeature(Otc::GameFormatCreatureName) && !name.empty())
+        stdext::ucwords(formatedName);
 
     return formatedName;
 }
@@ -2009,4 +2000,3 @@ void Game::processCyclopediaCharacterMiscStats(const CyclopediaCharacterMiscStat
 {
     g_lua.callGlobalField("g_game", "onCyclopediaCharacterMiscStats", data);
 }
-

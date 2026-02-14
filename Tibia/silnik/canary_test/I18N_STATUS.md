@@ -5,23 +5,23 @@
 ## 🧭 META
 
 > **[META]** 🟢 ACTIVE  
-> Świeżość: teraz | Źródło: `update_github_status()` | Ostatnia aktualizacja: 2026-02-14 11:37:19
+> Świeżość: teraz | Źródło: `update_github_status()` | Ostatnia aktualizacja: 2026-02-14 11:39:32
 
-> **Aktualizacja:** 2026-02-14 11:37:19 UTC  
+> **Aktualizacja:** 2026-02-14 11:39:32 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 53586  
-> **LIVE:** Cykl #1 | Status: 🟢 RUNNING | Faza: AUTO_TRANSLATE | Etap: heartbeat_tick | Kategoria: lt | Plik: items.json | ETA: 0 | Heartbeat: 2026-02-14T11:37:10Z  
-> **Strict hourly (JSONL-only):** okno=1.0h | cycles=7 | pending_skip=0.0% | guard_fail=21.3% | throughput=223981.9/h  
+> **LIVE:** Cykl #1 | Status: 🟢 RUNNING | Faza: AUTO_TRANSLATE | Etap: heartbeat_tick | Kategoria: lt | Plik: items.json | ETA: 0 | Heartbeat: 2026-02-14T11:38:55Z  
+> **Strict hourly (JSONL-only):** okno=1.0h | cycles=8 | pending_skip=0.0% | guard_fail=21.3% | throughput=219373.2/h  
 > **Net effective translated:** 66,495
 
 ### 🧩 Status sekcji (P0.1)
 | Sekcja | Stan | Świeżość | Powód | Źródło | Ostatnia aktualizacja |
 |--------|------|----------|-------|--------|-----------------------|
-| META | 🟢 ACTIVE | teraz | - | `update_github_status()` | 2026-02-14 11:37:19 |
-| LIVE | 🟢 ACTIVE | 10s temu | - | `activity.json / worker_state.json` | 2026-02-14T11:37:10Z |
-| MIGRATION | 🔒 INACTIVE | 16h temu | worker w trybie AUTO_TRANSLATE | `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | 2026-02-14 11:37:19 |
-| TRANSLATION | 🟢 ACTIVE | 5min temu | - | `translation_guard_latest.json / translation_recent_latest.json` | 2026-02-14T11:32:10.811288Z |
-| QUALITY | 🔒 INACTIVE | 1min temu | worker w trybie AUTO_TRANSLATE | `quality_audit_latest.json` | 2026-02-14T11:36:08.017265Z |
-| HISTORY | 🟢 ACTIVE | teraz | - | `daily/*.json / ops.jsonl` | 2026-02-14 11:37:19 |
+| META | 🟢 ACTIVE | teraz | - | `update_github_status()` | 2026-02-14 11:39:32 |
+| LIVE | 🟢 ACTIVE | 38s temu | - | `activity.json / worker_state.json` | 2026-02-14T11:38:55Z |
+| MIGRATION | 🔒 INACTIVE | 16h temu | worker w trybie AUTO_TRANSLATE | `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | 2026-02-14 11:39:32 |
+| TRANSLATION | 🟢 ACTIVE | 7min temu | - | `translation_guard_latest.json / translation_recent_latest.json` | 2026-02-14T11:32:10.811288Z |
+| QUALITY | 🔒 INACTIVE | 3min temu | worker w trybie AUTO_TRANSLATE | `quality_audit_latest.json` | 2026-02-14T11:36:08.017265Z |
+| HISTORY | 🟢 ACTIVE | teraz | - | `daily/*.json / ops.jsonl` | 2026-02-14 11:39:32 |
 
 > Artefakt machine-readable: `i18n/status/status_sections_latest.json`
 
@@ -30,14 +30,14 @@
 ## 🔴 LIVE
 
 > **[LIVE]** 🟢 ACTIVE  
-> Świeżość: 10s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T11:37:10Z
+> Świeżość: 38s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T11:38:55Z
 
 - **Faza:** `AUTO_TRANSLATE`
 - **Etap:** `heartbeat_tick`
 - **Kategoria:** `lt`
 - **Plik:** `items.json`
 - **Status:** 🟢 RUNNING
-- **Heartbeat:** `2026-02-14T11:37:10Z`
+- **Heartbeat:** `2026-02-14T11:38:55Z`
 
 ---
 
@@ -92,7 +92,7 @@
 ## 🛠️ MIGRATION
 
 > **[MIGRATION]** 🔒 INACTIVE (worker w trybie AUTO_TRANSLATE)  
-> Świeżość: 16h temu | Źródło: `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | Ostatnia aktualizacja: 2026-02-14 11:37:19
+> Świeżość: 16h temu | Źródło: `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | Ostatnia aktualizacja: 2026-02-14 11:39:32
 
 ### 📁 Pliki Projektu (pełny skan)
 | Metryka | Wartość | Procent | Info |
@@ -141,7 +141,7 @@
 ## 🌍 TRANSLATION
 
 > **[TRANSLATION]** 🟢 ACTIVE  
-> Świeżość: 5min temu | Źródło: `translation_guard_latest.json / translation_recent_latest.json` | Ostatnia aktualizacja: 2026-02-14T11:32:10.811288Z
+> Świeżość: 7min temu | Źródło: `translation_guard_latest.json / translation_recent_latest.json` | Ostatnia aktualizacja: 2026-02-14T11:32:10.811288Z
 
 | Metryka | Wartość | Procent | Info |
 |---------|---------|---------|------|
@@ -167,9 +167,9 @@
 | JA (Japoński) | 12,648/53,586 | 23.60% | 34,403 | 2,155 |
 | HE (HE) | 12,633/53,586 | 23.58% | 34,475 | 2,155 |
 | ML (ML) | 12,597/53,586 | 23.51% | 34,396 | 2,155 |
+| MS (MS) | 12,564/53,586 | 23.45% | 34,612 | 2,155 |
 | HY (HY) | 12,557/53,586 | 23.43% | 34,699 | 2,155 |
 | KA (KA) | 12,533/53,586 | 23.39% | 34,560 | 2,155 |
-| MS (MS) | 12,530/53,586 | 23.38% | 34,676 | 2,155 |
 | TE (TE) | 12,384/53,586 | 23.11% | 34,787 | 2,155 |
 | TH (TH) | 12,374/53,586 | 23.09% | 34,806 | 2,155 |
 | SW (SW) | 12,330/53,586 | 23.01% | 34,786 | 2,155 |
@@ -180,26 +180,26 @@
 - **Ostatnie klucze (10-20):** 20
 
 ### 📝 Ostatnie 10-20 przetłumaczonych kluczy
-- Your current health is shown by the red bar on the right side. {Death} awaits yo → Su salud actual se muestra en la barra roja en el lado derecho. {Death} te esper (npc.seymour.stdmod_45)
-- Dying in Tibia is painful, so try to avoid it. You will lose part of your {exper → Morir en Tibia es doloroso, así que trata de evitarlo. Perderás parte de tus {ex (npc.seymour.stdmod_46)
-- You gain experience when fighting {monsters}. You can take a look at your skill  → Obtienes experiencia al luchar contra {monsters}. Puedes echar un vistazo a la v (npc.seymour.stdmod_47)
-- Good monsters to start hunting are {rats}. They live in the {sewers} below the v → Buenos monstruos para empezar a cazar son {rats}. Viven en el {sewers} debajo de (npc.seymour.stdmod_48)
-- One entrance to the sewers is south of this {academy}. Look for a sewer grate, t → Una entrada a las alcantarillas está al sur de este {academy}. Busque una rejill (npc.seymour.stdmod_49)
-- Hello, |PLAYERNAME|. Welcome to the Academy of Rookgaard. May I sign you up as a → Hola, |PLAYERNAME|. Bienvenido a la Academia de Rookgaard. ¿Puedo registrarte co (npc.seymour.stdmod_5)
-- The academy is the building you are standing in. We have a {library}, a {bank} a → La academia es el edificio en el que estás parado. Tenemos un {library}, un {ban (npc.seymour.stdmod_50)
-- There are many books in the bookcases around you, unless some naughty kids stole → Hay muchos libros en las estanterías que te rodean, a menos que algunos niños tr (npc.seymour.stdmod_51)
-- Don't go hunting without proper equipment. You need at least a suitable {weapon} → No salgas a cazar sin el equipo adecuado. Necesita al menos un {weapon}, {armor} (npc.seymour.stdmod_52)
-- Make money by killing {monsters} and picking up their {loot}. You can sell many  → Gana dinero matando a {monsters} y recogiendo su {loot}. Puedes vender muchas de (npc.seymour.stdmod_53)
-- Once a monster is dead, you can select 'Open' on the {corpse} to check what's in → Una vez que un monstruo está muerto, puedes seleccionar 'Open' en el {corpse} pa (npc.seymour.stdmod_54)
-- You can even sell some corpses! For example, you can sell fresh dead rats to {To → ¡Incluso puedes vender algunos cadáveres! Por ejemplo, puedes vender ratas muert (npc.seymour.stdmod_55)
-- You definitely need a rope to progress in dungeons, else you might end up stuck. → Definitivamente necesitas una cuerda para progresar en las mazmorras, de lo cont (npc.seymour.stdmod_56)
-- A shovel is needed to dig some {dungeon} entrances open. 'Use' it on a loose sto → Se necesita una pala para abrir algunas entradas {dungeon}. 'Use' sobre una pila (npc.seymour.stdmod_57)
-- You should not descend into dungeons without proper {equipment}. Once you are al → No debes descender a mazmorras sin el {equipment} adecuado. Una vez que esté tod (npc.seymour.stdmod_58)
-- A torch will provide you with light in dark {dungeons}. 'Use' it to light it. Yo → Una antorcha te proporcionará luz en la oscuridad {dungeons}. 'Use' para encende (npc.seymour.stdmod_59)
-- Brilliant! We need fine adventurers like you! If you are ready to learn, just as → ¡Brillante! ¡Necesitamos buenos aventureros como tú! Si estás listo para aprende (npc.seymour.stdmod_6)
-- Well, I could give you valuable {lessons} or some general {hints} about the game → Bueno, podría darte un valioso {lessons} o algo de {hints} general sobre el jueg (npc.seymour.stdmod_60)
-- The starter armor, a coat, does not protect you well. First of all, earn some mo → La armadura inicial, un abrigo, no te protege bien. En primer lugar, gana algo d (npc.seymour.stdmod_61)
-- The starter weapon, a club, won't get you far. You should earn some {money} and  → El arma inicial, un garrote, no te llevará muy lejos. Deberías ganar algo de {mo (npc.seymour.stdmod_62)
+- unity charm → vienybės žavesio (item.10342.name)
+- spiritual charm → dvasinis žavesys (item.10343.name)
+- twin sun charm → dvynių saulės žavesys (item.10344.name)
+- solitude charm → vienatvės žavesio (item.10345.name)
+- santa backpack → Kalėdų senelio kuprinė (item.10346.name)
+- dragon tapestry → drakono gobelenas (item.10347.name)
+- dead lizard high guard → miręs driežas aukštasis sargybinis (item.10352.name)
+- dead lizard high guard → miręs driežas aukštasis sargybinis (item.10353.name)
+- dead lizard high guard → miręs driežas aukštasis sargybinis (item.10354.name)
+- dead lizard high guard → miręs driežas aukštasis sargybinis (item.10355.name)
+- dead lizard legionnaire → miręs driežas legionierius (item.10356.name)
+- dead lizard legionnaire → miręs driežas legionierius (item.10357.name)
+- dead lizard legionnaire → miręs driežas legionierius (item.10358.name)
+- dead lizard legionnaire → miręs driežas legionierius (item.10359.name)
+- dead lizard dragon priest → miręs driežas drakonas kunigas (item.10360.name)
+- dead lizard dragon priest → miręs driežas drakonas kunigas (item.10361.name)
+- dead lizard dragon priest → miręs driežas drakonas kunigas (item.10362.name)
+- dead lizard dragon priest → miręs driežas drakonas kunigas (item.10363.name)
+- dead lizard zaogun → negyvas driežas zaogun (item.10364.name)
+- dead lizard zaogun → negyvas driežas zaogun (item.10365.name)
 
 ### 🚫 Raporty "nie mogę przetłumaczyć"
 - Guard reports: **2054**  
@@ -207,12 +207,12 @@
 - Widoczne raporty 'nie mogę tłumaczyć': **2004**
 
 ### 🌐 Globalne info wszystkich języków
-- **Global completion:** **23.74%** (661,476/2,786,472)
-- **EN-copy łącznie:** **1,589,650**
+- **Global completion:** **23.75%** (661,881/2,786,472)
+- **EN-copy łącznie:** **1,589,166**
 - **Braki kluczy łącznie:** **98,174**
 - **Brakujące pliki językowe:** **0**
-- **Cache STATUSPY (per-lang):** **mixed** | hit **43**, miss **9**, hit-rate **82.7%**
-- **Cache STATUSPY (per-file):** hit **1966**, miss **10**, hit-rate **99.5%**
+- **Cache STATUSPY (per-lang):** **mixed** | hit **49**, miss **3**, hit-rate **94.2%**
+- **Cache STATUSPY (per-file):** hit **1973**, miss **3**, hit-rate **99.8%**
 - **Profiler cyklu (ostatni):** -
 - **Osobny raport:** `i18n/status/translation_global_overview.json`
 
@@ -240,13 +240,13 @@
 ### ⏱️ Strict Hourly Window (JSONL-only)
 | Metryka | Wartość |
 |---------|---------|
-| Okno | **1.0h** (2026-02-14T10:37:19.833374Z → 2026-02-14T11:37:19.833374Z) |
-| Cykle | **7** (AUTO=7, MIGRATION=0) |
+| Okno | **1.0h** (2026-02-14T10:39:33.062694Z → 2026-02-14T11:39:33.062694Z) |
+| Cykle | **8** (AUTO=8, MIGRATION=0) |
 | Pending skip | **0** (all=0.0%, migration=0.0%) |
 | Guard fail rate | **21.3%** |
 | No progress rate | **10.0%** |
-| Throughput | **223981.9 kluczy/h** |
-| Suspicious | **473** |
+| Throughput | **219373.2 kluczy/h** |
+| Suspicious | **464** |
 | Top guard_fail targets | es/npc.json (gf=65), pl/server.json (gf=15), pl/monsters.json (gf=8), es/monsters.json (gf=6), pl/talkactions.json (gf=4) |
 | Źródła | `i18n/status/worker_cycle_perf.jsonl`, `i18n/status/translation_guard_report.jsonl`, `i18n/status/suspicious_log.jsonl` |
 | Plik | `i18n/status/strict_hourly_window_latest.json` |
@@ -254,7 +254,7 @@
 ## 🔬 QUALITY
 
 > **[QUALITY]** 🔒 INACTIVE (worker w trybie AUTO_TRANSLATE)  
-> Świeżość: 1min temu | Źródło: `quality_audit_latest.json` | Ostatnia aktualizacja: 2026-02-14T11:36:08.017265Z
+> Świeżość: 3min temu | Źródło: `quality_audit_latest.json` | Ostatnia aktualizacja: 2026-02-14T11:36:08.017265Z
 
 - **Ostatni audyt:** SLOW_MODE | 18 issue(s) / 100 entries | 2026-02-14T11:36:08.017265Z
 - **Top 5 typów problemów:** suspicious_rejected_critical=200, suspicious_log_critical=132, suspicious_log_low=68, identical_to_en=18, identical_to_en_exempt=3
@@ -367,7 +367,7 @@
 ## 🔴 LIVE: Szczegóły wykonania
 
 > **[LIVE]** 🟢 ACTIVE  
-> Świeżość: 10s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T11:37:10Z
+> Świeżość: 38s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T11:38:55Z
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
@@ -382,18 +382,18 @@
 │ Postęp: 0/0 keys                                              │
 │ Info: auto translate in progress                              │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2026-02-14T11:37:10Z           │
+│ ❤️ Heartbeat: 2026-02-14T11:38:55Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 🧾 Ostatnie akcje (dla czytelności)
 
+- 2026-02-14 11:38:55 | AUTO_TRANSLATE:heartbeat_tick | lt | ok | items.json
+- 2026-02-14 11:38:54 | AUTO_TRANSLATE:auto_start | lt | ok | items.json
 - 2026-02-14 11:37:10 | AUTO_TRANSLATE:heartbeat_tick | lt | ok | items.json
 - 2026-02-14 11:37:10 | AUTO_TRANSLATE:auto_start | lt | ok | items.json
 - 2026-02-14 11:34:37 | AUTO_TRANSLATE:heartbeat_tick | es | ok | npc.json
 - 2026-02-14 11:33:07 | AUTO_TRANSLATE:heartbeat_tick | es | ok | npc.json
-- 2026-02-14 11:30:40 | AUTO_TRANSLATE:heartbeat_tick | pl | ok | spells.json
-- 2026-02-14 11:30:40 | AUTO_TRANSLATE:parallel_start | pl | ok | spells.json
 
 ---
 
@@ -415,7 +415,7 @@
 ## 📜 HISTORY
 
 > **[HISTORY]** 🟢 ACTIVE  
-> Świeżość: teraz | Źródło: `daily/*.json / ops.jsonl` | Ostatnia aktualizacja: 2026-02-14 11:37:19
+> Świeżość: teraz | Źródło: `daily/*.json / ops.jsonl` | Ostatnia aktualizacja: 2026-02-14 11:39:32
 
 - 🤖 AUTO_TRANSLATE: REPAIR_IDENTICAL_DONE [es] → ok (translated+92) — repair_identical lang=es file=npc.json target_identical=2205 limit=260 tier=high_backlog+domain_cap domain_cap=260 gt=true suspicious_pct=5.89
 - 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [pl] → ok (translated+36, skipped+0) — parallel lang=pl file=spells.json
@@ -753,7 +753,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2026-02-14 11:37:19  
+📅 Auto-updated by Worker v1.1 | Last: 2026-02-14 11:39:32  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

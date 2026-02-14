@@ -11969,9 +11969,24 @@ def _is_probably_nontranslatable_text(text: str) -> bool:
     cleaned = re.sub(r'__PH\d+__|[{}\[\]|%$0-9\s_\-:;.,!?/\\()<>\"\'`~+=*&^#@]', '', t)
     if not cleaned:
         return True
-    # Jednowyrazowe onomatopeje i krzyki typu BOOOM!
+    # Jednowyrazowe onomatopeje i krzyki typu BOOOM!, Woooosh!, Tsssss...!
     words = [w for w in re.findall(r"[A-Za-zÀ-ÖØ-öø-ÿ]{2,}", t)]
-    if len(words) <= 1 and t.upper() == t and len(t) <= 20:
+    if len(words) <= 1 and len(t) <= 25:
+        return True
+    # Slash-separated technical terms (np. "HTML/Javascript/CSS:")
+    if "/" in t and re.fullmatch(r"[A-Za-z0-9/.:,\-_ ]+", t):
+        parts = [p.strip() for p in t.replace(":", "").split("/") if p.strip()]
+        if all(re.fullmatch(r"[A-Za-z0-9]+", p) for p in parts):
+            return True
+    # Znane słowa międzynarodowe — poprawnie identyczne w wielu językach.
+    _INTL_WORDS = {
+        'mana', 'status', 'logo', 'login', 'forum', 'error', 'info', 'bonus',
+        'ok', 'online', 'offline', 'item', 'level', 'boss', 'combo', 'premium',
+        'server', 'client', 'hotkey', 'quest', 'clan', 'guild', 'raid',
+        'tutorial', 'pvp', 'pve', 'vip', 'hp', 'mp', 'exp', 'gp', 'npc',
+        'email', 'chat', 'trade', 'depot', 'stamina', 'tibia',
+    }
+    if t.lower().strip(':!.?') in _INTL_WORDS:
         return True
     return False
 
@@ -12118,8 +12133,14 @@ def detect_suspicious(en_text: str, translated_text: str, lang: str, key: str = 
     # S11: Mixed-language detection for Latin-script (np. "Handel mógł Niet być completed.")
     # Sprawdź czy tłumaczenie zawiera zbyt wiele nienaruszonych angielskich słów
     if str(lang or "").lower() in latin_langs and en_len > 15 and tr != en:
-        en_words_set = set(w.lower() for w in re.findall(r"[a-zA-Z]{3,}", en))
-        tr_words_list = re.findall(r"[a-zA-Z]{3,}", tr)
+        # Usuń HTML entities (&nbsp; &lt; itp.) i NPC key references (npc.xxx.yyy) przed porównaniem
+        _s11_en_clean = re.sub(r'&[a-z]+;', '', en)
+        _s11_tr_clean = re.sub(r'&[a-z]+;', '', tr)
+        # Usuń NPC/script key references (np. npc.bozo.mission_20)
+        _s11_en_clean = re.sub(r'\b\w+\.\w+\.\w+[\w.]*', '', _s11_en_clean)
+        _s11_tr_clean = re.sub(r'\b\w+\.\w+\.\w+[\w.]*', '', _s11_tr_clean)
+        en_words_set = set(w.lower() for w in re.findall(r"[a-zA-Z]{3,}", _s11_en_clean))
+        tr_words_list = re.findall(r"[a-zA-Z]{3,}", _s11_tr_clean)
         if len(tr_words_list) >= 3 and en_words_set:
             # Ile słów z tłumaczenia jest identycznych z EN (poza nazwami własnymi)
             en_kept = sum(1 for w in tr_words_list if w.lower() in en_words_set and not w[0:1].isupper())
@@ -12340,15 +12361,17 @@ def detect_suspicious(en_text: str, translated_text: str, lang: str, key: str = 
             })
 
     # S23: word_salad — tłumaczenie to mix EN function words + częściowe tłumaczenie
+    # UWAGA: pomijamy 1-2 literowe słowa ("a","to","is","it","in","on","at","by","we")
+    # bo pokrywają się z przyimkami/słówkami w językach romańskich (es/pt/fr/it).
     if tr != en and not tr.startswith("[") and tr_len > 15:
-        _ws_func = {'the','a','an','of','in','is','it','its','he','she','his','her',
-            'has','had','was','were','to','by','on','at','for','with','from','that',
-            'this','which','some','they','their','them','you','your','we','our'}
-        _ws_words = tr.lower().split()
+        _ws_func = {'the','an','its','she','his','her',
+            'has','had','was','were','for','with','from','that',
+            'this','which','some','they','their','them','you','your','our'}
+        _ws_words = [w for w in tr.lower().split() if len(w.rstrip('.,!?;:')) >= 3]
         if len(_ws_words) >= 4:
             _ws_func_count = sum(1 for w in _ws_words if w.rstrip('.,!?;:') in _ws_func)
             _ws_ratio = _ws_func_count / len(_ws_words)
-            if _ws_func_count >= 2 and _ws_ratio > 0.2:
+            if _ws_func_count >= 2 and _ws_ratio > 0.25:
                 issues.append({
                     "type": "word_salad",
                     "severity": "CRITICAL",

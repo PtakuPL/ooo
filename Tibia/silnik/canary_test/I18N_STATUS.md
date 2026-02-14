@@ -5,23 +5,23 @@
 ## 🧭 META
 
 > **[META]** 🟢 ACTIVE  
-> Świeżość: teraz | Źródło: `update_github_status()` | Ostatnia aktualizacja: 2026-02-14 07:27:16
+> Świeżość: teraz | Źródło: `update_github_status()` | Ostatnia aktualizacja: 2026-02-14 07:29:28
 
-> **Aktualizacja:** 2026-02-14 07:27:16 UTC  
+> **Aktualizacja:** 2026-02-14 07:29:28 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 53586  
-> **LIVE:** Cykl #1 | Status: ✅ IDLE | Faza: IDLE | Etap: cycle_start | Kategoria: - | Plik: - | ETA: 0 | Heartbeat: 2026-02-14T07:26:35Z  
-> **Strict hourly (JSONL-only):** okno=1.0h | cycles=38 | pending_skip=0.0% | guard_fail=8.4% | throughput=2550.2/h  
-> **Net effective translated:** 63,344
+> **LIVE:** Cykl #1 | Status: 🟢 RUNNING | Faza: AUTO_TRANSLATE | Etap: auto_done | Kategoria: it | Plik: quests.json | ETA: 0 | Heartbeat: 2026-02-14T07:29:05Z  
+> **Strict hourly (JSONL-only):** okno=1.0h | cycles=39 | pending_skip=0.0% | guard_fail=8.0% | throughput=2584.6/h  
+> **Net effective translated:** 63,424
 
 ### 🧩 Status sekcji (P0.1)
 | Sekcja | Stan | Świeżość | Powód | Źródło | Ostatnia aktualizacja |
 |--------|------|----------|-------|--------|-----------------------|
-| META | 🟢 ACTIVE | teraz | - | `update_github_status()` | 2026-02-14 07:27:16 |
-| LIVE | 🟢 ACTIVE | 42s temu | - | `activity.json / worker_state.json` | 2026-02-14T07:26:35Z |
-| MIGRATION | 🔒 INACTIVE | 12h temu | worker w trybie IDLE | `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | 2026-02-14 07:27:16 |
-| TRANSLATION | 🔒 INACTIVE | 1min temu | worker w trybie IDLE | `translation_guard_latest.json / translation_recent_latest.json` | 2026-02-14T07:25:28.449731Z |
-| QUALITY | 🔒 INACTIVE | 6min temu | worker w trybie IDLE | `quality_audit_latest.json` | 2026-02-14T07:20:29.263958Z |
-| HISTORY | 🟢 ACTIVE | teraz | - | `daily/*.json / ops.jsonl` | 2026-02-14 07:27:16 |
+| META | 🟢 ACTIVE | teraz | - | `update_github_status()` | 2026-02-14 07:29:28 |
+| LIVE | 🟢 ACTIVE | 25s temu | - | `activity.json / worker_state.json` | 2026-02-14T07:29:05Z |
+| MIGRATION | 🔒 INACTIVE | 12h temu | worker w trybie AUTO_TRANSLATE | `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | 2026-02-14 07:29:28 |
+| TRANSLATION | 🟢 ACTIVE | 25s temu | - | `translation_guard_latest.json / translation_recent_latest.json` | 2026-02-14T07:29:05.432902Z |
+| QUALITY | 🔒 INACTIVE | 9min temu | worker w trybie AUTO_TRANSLATE | `quality_audit_latest.json` | 2026-02-14T07:20:29.263958Z |
+| HISTORY | 🟢 ACTIVE | teraz | - | `daily/*.json / ops.jsonl` | 2026-02-14 07:29:28 |
 
 > Artefakt machine-readable: `i18n/status/status_sections_latest.json`
 
@@ -30,14 +30,14 @@
 ## 🔴 LIVE
 
 > **[LIVE]** 🟢 ACTIVE  
-> Świeżość: 42s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T07:26:35Z
+> Świeżość: 25s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T07:29:05Z
 
-- **Faza:** `IDLE`
-- **Etap:** `cycle_start`
-- **Kategoria:** `-`
-- **Plik:** `-`
-- **Status:** ✅ IDLE
-- **Heartbeat:** `2026-02-14T07:26:35Z`
+- **Faza:** `AUTO_TRANSLATE`
+- **Etap:** `auto_done`
+- **Kategoria:** `it`
+- **Plik:** `quests.json`
+- **Status:** 🟢 RUNNING
+- **Heartbeat:** `2026-02-14T07:29:05Z`
 
 ---
 
@@ -91,18 +91,18 @@
 
 ## 🛠️ MIGRATION
 
-> **[MIGRATION]** 🔒 INACTIVE (worker w trybie IDLE)  
-> Świeżość: 12h temu | Źródło: `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | Ostatnia aktualizacja: 2026-02-14 07:27:16
+> **[MIGRATION]** 🔒 INACTIVE (worker w trybie AUTO_TRANSLATE)  
+> Świeżość: 12h temu | Źródło: `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | Ostatnia aktualizacja: 2026-02-14 07:29:28
 
 ### 📁 Pliki Projektu (pełny skan)
 | Metryka | Wartość | Procent | Info |
 |---------|---------|---------|------|
-| 📂 **Wszystkie pliki** | **20,268** | 100% | cały projekt |
-| 📜 Do skanowania (kod) | **9,397** | 46.4% | pliki z kodem/tekstami |
+| 📂 **Wszystkie pliki** | **20,267** | 100% | cały projekt |
+| 📜 Do skanowania (kod) | **9,396** | 46.4% | pliki z kodem/tekstami |
 | 🔍 **Przeskanowane (historia)** | **6,443** | **68.6%** | `i18n_processed_files.txt` |
 | 🧭 Przeskanowane (LIVE) | **2,299** | **24.5%** | `i18n_file_status.json` |
-| ⏳ Nie przeskanowane (historia) | **2,954** | 31.4% | wg historii workera |
-| ⏳ Nie przeskanowane (LIVE) | **7,098** | 75.5% | wg rejestru LIVE |
+| ⏳ Nie przeskanowane (historia) | **2,953** | 31.4% | wg historii workera |
+| ⏳ Nie przeskanowane (LIVE) | **7,097** | 75.5% | wg rejestru LIVE |
 
 ### 📊 Podział plików do skanowania
 | Typ | Ilość | Info |
@@ -113,7 +113,7 @@
 | 🌐 HTML (.html) | 6 | widoki |
 | 📦 JavaScript (.js) | 0 | frontend |
 | ⚙️ C++ (.cpp/.hpp/.h) | 840 | silnik serwera |
-| 📋 JSON (.json) | 2,501 | konfiguracje |
+| 📋 JSON (.json) | 2,500 | konfiguracje |
 
 ### ✅ Status Migracji
 | Status | Ilość | Procent | Opis |
@@ -138,8 +138,8 @@
 
 ## 🌍 TRANSLATION
 
-> **[TRANSLATION]** 🔒 INACTIVE (worker w trybie IDLE)  
-> Świeżość: 1min temu | Źródło: `translation_guard_latest.json / translation_recent_latest.json` | Ostatnia aktualizacja: 2026-02-14T07:25:28.449731Z
+> **[TRANSLATION]** 🟢 ACTIVE  
+> Świeżość: 25s temu | Źródło: `translation_guard_latest.json / translation_recent_latest.json` | Ostatnia aktualizacja: 2026-02-14T07:29:05.432902Z
 
 | Metryka | Wartość | Procent | Info |
 |---------|---------|---------|------|
@@ -178,35 +178,35 @@
 - **Ostatnie klucze (10-20):** 20
 
 ### 📝 Ostatnie 10-20 przetłumaczonych kluczy
-- You can't go there yet. → Você não pode ir lá ainda. (quests.cults_of_tibia.you_cant_go_there_yet)
-- You need exactly 10 players to start this challenge. → Você precisa de exatamente 10 jogadores para iniciar este desafio. (quests.cults_of_tibia.you_need_exactly_10_players_to)
-- You need exactly 5 players to start this challenge. → Você precisa de exatamente 5 jogadores para iniciar este desafio. (quests.cults_of_tibia.you_need_exactly_5_players_to)
-- You need to wait for 10 hours to face this boss again. → Você precisa esperar 10 horas para enfrentar esse chefe novamente. (quests.cults_of_tibia.you_need_to_wait_for_10)
-- You need to wait for 20 hours to face this boss again. → Você precisa esperar 20 horas para enfrentar esse chefe novamente. (quests.cults_of_tibia.you_need_to_wait_for_20)
-- Couldn't find any position for you right now. → Não foi possível encontrar nenhuma vaga para você no momento. (quests.custom.couldnt_find_any_position_for_you)
-- You need 4 players to fight with The Ravager. → Você precisa de 4 jogadores para lutar com The Ravager. (quests.dark_trails.you_need_4_players_to_fight)
-- You need 5 players to fight with Death Priest Shargon. → Você precisa de 5 jogadores para lutar com Death Priest Shargon. (quests.dark_trails.you_need_5_players_to_fight)
-- You need exactly 5 players to fight with Death Priest Shargon. → Você precisa de exatamente 5 jogadores para lutar com Death Priest Shargon. (quests.dark_trails.you_need_exactly_5_players_to)
-- As this is your first time as a %s %s → Como esta é sua primeira vez como %s %s (quests.dawnport.first_time_vocation)
-- You have received the weapons of a %s. %s → Você recebeu as armas de um %s. %s (quests.dawnport.received_weapons)
-- {0} defends his belongings and will not let you open his chest. → {0} defende seus pertences e não deixa você abrir seu baú. (quests.deeplings.boss_defends)
-- HOW IS THAT POSSIBLE?!? MY MASTER WILL CRUSH YOU!! AHRRGGG! → COMO ISSO É POSSÍVEL?!? MEU MESTRE VAI ESMAGAR VOCÊ!! AHRRGGG! (quests.demon_oak.master_crush)
-- MY ROOTS ARE SHARP AS A SCYTHE! FEEL IT?!? → MINHAS RAÍZES SÃO AFIADAS COMO UMA FOICE! SENTE?!? (quests.demon_oak.sound_1)
-- CURSE YOU! → MALDIÇOTE VOCÊ! (quests.demon_oak.sound_2)
-- RISE, MINIONS, RISE FROM THE DEAD!!!! → LEVANTEM-SE, MINIONS, LEVANTAM-SE DOS MORTOS!!!! (quests.demon_oak.sound_3)
-- AHHHH! YOUR BLOOD MAKES ME STRONG! → AHHHH! SEU SANGUE ME FAZ FORTE! (quests.demon_oak.sound_4)
-- GET THE BONES, HELLHOUND! GET THEM!! → PEGUE OS OSSOS, HELLHOUND! PEGUE-OS!! (quests.demon_oak.sound_5)
-- GET THERE WHERE I CAN REACH YOU!!! → CHEGA ONDE EU POSSO TE ENCONTRAR!!! (quests.demon_oak.sound_6)
-- ETERNAL PAIN AWAITS YOU! NICE REWARD, HUH?!?! → A DOR ETERNA ESPERA POR VOCÊ! BELA RECOMPENSA, HEIN?!?! (quests.demon_oak.sound_7)
+- You have gathered the correct spores. → Hai raccolto le spore corrette. (quests.bigfoot_burden.spores_correct)
+- You have gathered the wrong spores. You ruined your collection. → Hai raccolto le spore sbagliate. Hai rovinato la tua collezione. (quests.bigfoot_burden.spores_wrong)
+- You had no luck this time. → Non hai avuto fortuna questa volta. (quests.bigfoot_burden.stone_no_luck)
+- Your skill allowed you to grab a whetstone before the stone sinks into lava. → La tua abilità ti ha permesso di afferrare una pietra per affilare prima che spr (quests.bigfoot_burden.stone_success)
+- You have been teleported out. → Sei stato teletrasportato fuori. (quests.bigfoot_burden.teleported_out)
+- Wait 30 minutes to start again. → Attendi 30 minuti per ricominciare. (quests.bigfoot_burden.wait_cooldown)
+- You have already cleared this warzone in the last 20 hours. You have to wait {0} → Hai già ripulito questa zona di guerra nelle ultime 20 ore. Devi attendere altre (quests.bigfoot_burden.warzone_cleared)
+- You need a mission crystal or a job done with Gnomission to enter. → Per entrare hai bisogno di un cristallo di missione o di un lavoro svolto con Gn (quests.bigfoot_burden.warzone_crystal_required)
+- You are not permitted to enter. → Non ti è consentito entrare. (quests.bigfoot_burden.warzone_entry_denied)
+- You finally have enough renown among the gnomes, ask Gnomission for a mission to → Finalmente hai abbastanza fama tra gli gnomi, chiedi a Gnomission una missione p (quests.bigfoot_burden.warzone_mission_required)
+- This is not the crystal you're looking for! → Questo non è il cristallo che stai cercando! (quests.bigfoot_burden.wrong_crystal)
+- An impressive ammount of fish is stored here. → Qui viene conservata una quantità impressionante di pesce. (quests.children_revolution.spy_say_1)
+- A seemingly endless array of weapon stretches before you into the darkness. → Una serie apparentemente infinita di armi si estende davanti a te nell'oscurità. (quests.children_revolution.spy_say_2)
+- These barracks seem to be home for quite a lot of soldiers. → Sembra che queste baracche siano la casa di molti soldati. (quests.children_revolution.spy_say_3)
+- All the players need to be level {0} or higher. → Tutti i giocatori devono essere di livello {0} o superiore. (quests.common.all_players_level)
+- Congratulations! You completed %s arena, you should take your reward now. → Congratulazioni! Hai completato l'arena %s, dovresti ritirare la tua ricompensa  (quests.common.arena_complete)
+- %s is currently in the next arena pit. Please wait until %s is done fighting. → %s è attualmente nella prossima arena. Attendi finché %s non ha finito di combat (quests.common.arena_wait)
+- You have found {0}. → Hai trovato {0}. (quests.common.found_container)
+- You have found {0}. → Hai trovato {0}. (quests.common.found_item)
+- You have found {0}, but you have no room to take it. → Hai trovato {0}, ma non hai spazio per prenderlo. (quests.common.found_item_no_room)
 
 ### 🚫 Raporty "nie mogę przetłumaczyć"
-- Guard reports: **1981**  
+- Guard reports: **1982**  
 - Blocker reports: **0**  
-- Widoczne raporty 'nie mogę tłumaczyć': **1931**
+- Widoczne raporty 'nie mogę tłumaczyć': **1932**
 
 ### 🌐 Globalne info wszystkich języków
-- **Global completion:** **21.03%** (585,893/2,786,472)
-- **EN-copy łącznie:** **1,333,494**
+- **Global completion:** **21.03%** (585,962/2,786,472)
+- **EN-copy łącznie:** **1,333,425**
 - **Braki kluczy łącznie:** **110,060**
 - **Brakujące pliki językowe:** **0**
 - **Cache STATUSPY (per-lang):** **mixed** | hit **51**, miss **1**, hit-rate **98.1%**
@@ -238,25 +238,25 @@
 ### ⏱️ Strict Hourly Window (JSONL-only)
 | Metryka | Wartość |
 |---------|---------|
-| Okno | **1.0h** (2026-02-14T06:27:16.985240Z → 2026-02-14T07:27:16.985240Z) |
-| Cykle | **38** (AUTO=38, MIGRATION=0) |
+| Okno | **1.0h** (2026-02-14T06:29:28.879489Z → 2026-02-14T07:29:28.879489Z) |
+| Cykle | **39** (AUTO=39, MIGRATION=0) |
 | Pending skip | **0** (all=0.0%, migration=0.0%) |
-| Guard fail rate | **8.4%** |
+| Guard fail rate | **8.0%** |
 | No progress rate | **0.0%** |
-| Throughput | **2550.2 kluczy/h** |
-| Suspicious | **724** |
+| Throughput | **2584.6 kluczy/h** |
+| Suspicious | **710** |
 | Top guard_fail targets | zh_tw/npc.json (gf=53), ja/npc.json (gf=50), zh/npc.json (gf=29), es/otclient_modules.json (gf=19), pl/client.json (gf=10) |
 | Źródła | `i18n/status/worker_cycle_perf.jsonl`, `i18n/status/translation_guard_report.jsonl`, `i18n/status/suspicious_log.jsonl` |
 | Plik | `i18n/status/strict_hourly_window_latest.json` |
 
 ## 🔬 QUALITY
 
-> **[QUALITY]** 🔒 INACTIVE (worker w trybie IDLE)  
-> Świeżość: 6min temu | Źródło: `quality_audit_latest.json` | Ostatnia aktualizacja: 2026-02-14T07:20:29.263958Z
+> **[QUALITY]** 🔒 INACTIVE (worker w trybie AUTO_TRANSLATE)  
+> Świeżość: 9min temu | Źródło: `quality_audit_latest.json` | Ostatnia aktualizacja: 2026-02-14T07:20:29.263958Z
 
 - **Ostatni audyt:** SLOW_MODE | 13 issue(s) / 100 entries | 2026-02-14T07:20:29.263958Z
 - **Top 5 typów problemów:** suspicious_rejected_critical=200, suspicious_log_high=102, suspicious_log_medium=46, suspicious_log_low=29, suspicious_log_critical=23
-- **Języki o najsłabszej jakości:** es(60.1, issues=136529), pl(60.2, issues=107287), ar(62.5, issues=2666), it(66.0, issues=2695), tl(67.0, issues=441)
+- **Języki o najsłabszej jakości:** es(60.1, issues=136529), pl(60.2, issues=107287), ar(62.5, issues=2666), tl(67.0, issues=441), fr(67.3, issues=2437)
 - **Pliki:** `i18n/status/quality_audit_latest.json`, `i18n/status/quality_dashboard.json`, `i18n/status/quality_report.jsonl`
 
 ### 📈 Statystyki Pracy
@@ -295,8 +295,8 @@
 
 ## ✅ CHECKLIST - Plan Pracy
 
-> **Aktualna faza:** IDLE  
-> **Aktualna kategoria:** -
+> **Aktualna faza:** AUTO_TRANSLATE  
+> **Aktualna kategoria:** it
 
 
 ### 🔄 Faza 1: 🎮 Canary Server
@@ -364,33 +364,33 @@
 ## 🔴 LIVE: Szczegóły wykonania
 
 > **[LIVE]** 🟢 ACTIVE  
-> Świeżość: 42s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T07:26:35Z
+> Świeżość: 25s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-14T07:29:05Z
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │ 🔴 LIVE: Worker v2.0                          Cykl #     1 │
 ├─────────────────────────────────────────────────────────────────┤
-│ Status:    ✅ IDLE                                   │
-│ Tryb:      ✅ IDLE (cycle_start)                     │
-│ Kategoria: -                                        │
+│ Status:    🟢 RUNNING                                │
+│ Tryb:      🤖 AUTO_TRANSLATE (auto_done)             │
+│ Kategoria: 📁 IT                                     │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status: running                                               │
-│ Plik: -                                                       │
-│ Postęp: 0/0 units                                             │
-│ Info: cycle start                                             │
+│ Plik: quests.json                                             │
+│ Postęp: 80/80 keys                                            │
+│ …=80 guard_fail=0 strict_missing_key=0 strict_skipped_done=78 │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2026-02-14T07:26:35Z           │
+│ ❤️ Heartbeat: 2026-02-14T07:29:05Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 🧾 Ostatnie akcje (dla czytelności)
 
+- 2026-02-14 07:29:05 | AUTO_TRANSLATE:auto_done | it | ok | quests.json
+- 2026-02-14 07:27:54 | AUTO_TRANSLATE:auto_start | it | ok | quests.json
 - 2026-02-14 07:25:28 | AUTO_TRANSLATE:auto_done | pt | ok | quests.json
 - 2026-02-14 07:24:18 | AUTO_TRANSLATE:auto_start | pt | ok | quests.json
 - 2026-02-14 07:23:25 | AUTO_TRANSLATE:parallel_start | de | ok | quests.json
 - 2026-02-14 07:22:38 | AUTO_TRANSLATE:auto_done | pl | ok | startup.json
-- 2026-02-14 07:22:34 | AUTO_TRANSLATE:auto_start | pl | ok | startup.json
-- 2026-02-14 07:21:25 | AUTO_TRANSLATE:auto_done | pl | ok | php.json
 
 ---
 
@@ -403,7 +403,7 @@
 
 | KPI | Wartość | Target | Status |
 |-----|---------|--------|--------|
-| Net effective translated | **63,344** | — | 📊 |
+| Net effective translated | **63,424** | — | 📊 |
 | Adaptive batch | batch=50, gf_rate=19.51%, reason=stable_fail_rate=19.5% | gf <5% → increase | 📊 |
 | Throughput (last window) | 1,271 keys / 40 entries | >50/h | 📊 |
 
@@ -412,8 +412,9 @@
 ## 📜 HISTORY
 
 > **[HISTORY]** 🟢 ACTIVE  
-> Świeżość: teraz | Źródło: `daily/*.json / ops.jsonl` | Ostatnia aktualizacja: 2026-02-14 07:27:16
+> Świeżość: teraz | Źródło: `daily/*.json / ops.jsonl` | Ostatnia aktualizacja: 2026-02-14 07:29:28
 
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [it] → warn (files+1, translated+80, skipped+0) — lang=it file=quests.json strict_skipped_done=78
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pt] → warn (files+1, translated+80, skipped+0) — lang=pt file=quests.json strict_skipped_done=149
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+8, skipped+0) — lang=pl file=startup.json strict_skipped_done=15 guard_fail=1 placeholder=0 command=0 pipe=0
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → warn (files+1, translated+2, skipped+0) — lang=pl file=php.json strict_skipped_done=57
@@ -423,7 +424,6 @@
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [uz] → warn (files+1, translated+80, skipped+0) — lang=uz file=npc.json strict_skipped_done=1220
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [tl] → warn (files+1, translated+80, skipped+0) — lang=tl file=npc.json strict_skipped_done=1220
 - 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [th] → ok (translated+80, skipped+0) — parallel lang=th file=npc.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [te] → warn (files+1, translated+80, skipped+0) — lang=te file=npc.json strict_skipped_done=1220
 
 
 
@@ -433,7 +433,7 @@
 - Cykle: **49**
 - MIGRATION: **+0** kluczy, **0** plików `.lua`
 - Kategorie dotknięte: -
-- Błędy: **257**
+- Błędy: **258**
 
 
 ---
@@ -748,7 +748,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2026-02-14 07:27:16  
+📅 Auto-updated by Worker v1.1 | Last: 2026-02-14 07:29:28  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

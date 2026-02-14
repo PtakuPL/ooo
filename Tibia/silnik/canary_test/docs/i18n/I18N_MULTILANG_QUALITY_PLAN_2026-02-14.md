@@ -5,6 +5,23 @@
 
 ---
 
+## 0. Update wykonania (2026-02-14 09:56 UTC) — runtime quality loop stability
+
+Zrealizowane pełne zadania wspierające jakość tłumaczeń:
+- ✅ Worker ma `heartbeat_tick` podczas AUTO_TRANSLATE (mid-cycle), co poprawia obserwowalność długich tłumaczeń.
+- ✅ Snapshot `identical_to_en_repair_queue.json` odświeża się także ścieżką `queue_only` (przed/po auto-translate + okresowo), więc quality backlog jest śledzony na bieżąco.
+- ✅ Guardian lock owner PID jest walidowany po `cmdline`, co ogranicza błędne blokowanie startu przez reuse PID.
+- ✅ `i18n_start_all.sh` ma twardszą walidację startu (`wait_for_stable_process`) dla guardian/statusd.
+
+Walidacja foreground (2026-02-14 09:56 UTC):
+- ✅ `activity.json.recent[]` zawiera `heartbeat_tick`.
+- ✅ `identical_to_en_repair_queue.json` po teście: age ~`49s` (zamiast wielotysięcznych sekund).
+
+Nowe TODO jakościowe:
+- ⬜ Dodać 20+ min obserwację 3 daemonów po stabilnym starcie, aby potwierdzić trwały brak `REPAIR_QUEUE_STALE` w `statusd_doctor`.
+- ✅ Dodać quality KPI „queue freshness SLA” — wdrożone w doctor (MODUŁ 2) + KPI (MODUŁ 3). Config: `QUEUE_FRESHNESS_WARN_S`, `QUEUE_FRESHNESS_CRIT_S`.
+- ✅ Ustalić i ograniczyć zewnętrzne źródło częstych uruchomień `i18n_guardian.sh --daemon` (`source=manual`), — rate limiter: max 3/h. Config: `GUARDIAN_MANUAL_START_MAX_PER_HOUR`, `GUARDIAN_MANUAL_START_WINDOW_SEC`.
+
 ## 1. Audyt stanu obecnego
 
 ### 1.1 Pokrycie tłumaczeń (genuine translations vs `[EN]` placeholder)
@@ -244,7 +261,7 @@ Nowy check w `run_status_doctor()`:
 - T2 lang >5000 [EN]-backlog po 48h → WARN
 - Śledzi `first_run_ts` dla precyzyjnego timer
 
-#### 4c. Tygodniowy raport wielojęzyczny ⬜
+#### 4c. Tygodniowy raport wielojęzyczny ✅ DONE
 
 Automatyczny raport co 7 dni:
 ```
@@ -418,7 +435,7 @@ Te NIE powinny być flagowane jako "brakujące" — potrzebna jest lista `UNTRAN
 | **W2** | Faza 4 | ✅ Statusd genuine/backlog/diacritics KPI, lang parity doctor alert |
 | **W3+** | Faza 5 | ✅ Historia postępu: MODUŁ 9 w statusd, i18n_status_historia.md (hourly/daily/weekly) |
 | **W3+** | Grammar | ✅ S13: DE noun capitalization (artykuł + rzeczownik małą literą). S14: FR punctuation spacing (brak spacji przed ;:!?) |
-| **W3+** | Ciągłe | ⬜ Tygodniowy raport wielojęzyczny |
+| **W3+** | Ciągłe | ✅ Tygodniowy raport wielojęzyczny (MODUŁ 10 w statusd, `--weekly-multilang`) |
 
 ---
 
@@ -1396,6 +1413,94 @@ HISTORIA_MIGRATION_BIG_PICTURE=true        # Tabela "Big Picture" w weekly
 
 ---
 
+## Faza 6: Guardian — Multi-Worker Orchestration ⬜ PRZYSZŁY KONCEPT
+
+> Status: **⬜ FUTURE PLAN** — wymaga zatwierdzenia przez PtakuPL przed implementacją  
+> Cel: Guardian zarządza wieloma workerami o różnych zadaniach, orkiestruje ich pracę w optymalnej kolejności.
+
+### 6.0 Wizja
+
+Obecnie guardian nadzoruje **jednego workera** (`i18n_worker_simple.sh`), który wykonuje sekwencyjnie
+6 faz: MIGRATION → COMPACT_KEYS → TRANSLATION_SYNC → AUTO_TRANSLATE → VALIDATION → IDLE.
+
+Docelowa architektura zakłada, że guardian może zarządzać **wieloma wyspecjalizowanymi workerami**,
+z których każdy odpowiada za odrębny zakres zadań wspierających proces i18n:
+
+```
+                    ┌─────────────┐
+                    │  GUARDIAN    │
+                    │ (orchestrator)│
+                    └──────┬──────┘
+                           │
+            ┌──────────────┼──────────────┐
+            │              │              │
+     ┌──────▼──────┐ ┌────▼─────┐ ┌──────▼──────┐
+     │  Worker A   │ │ Worker B │ │  Worker C   │
+     │ (translate) │ │ (quality)│ │ (migration) │
+     └─────────────┘ └──────────┘ └─────────────┘
+```
+
+### 6.1 Kluczowe założenia
+
+1. **Wzajemne wsparcie** — workerzy mają różne zadania, ale ich wyniki wspierają się nawzajem
+   (np. Worker A tłumaczy → Worker B waliduje jakość → Worker A naprawia flagowane wpisy).
+2. **Wykluczanie czasowe** — nie wszystkie workery mogą działać jednocześnie (np. dwa workery
+   zapisujące ten sam plik JSON). Guardian planuje kolejność i na przemian uruchamia/wstrzymuje
+   workerów w odpowiednich momentach.
+3. **Inteligentny scheduler** — guardian ma plan orkiestracji:
+   - Który worker uruchomić w danym momencie
+   - Na jak długo (time slots / limity cykli)
+   - Kiedy przerwać jednego workera i uruchomić drugiego
+   - Warunki wznowienia (np. „uruchom Worker B po zakończeniu 100 tłumaczeń przez Worker A")
+4. **Graceful pause/resume** — worker dostaje sygnał do zakończenia bieżącego cyklu,
+   zapisuje stan, a po wznowieniu kontynuuje od miejsca przerwania.
+5. **Shared state** — workerzy dzielą wspólne artefakty w `i18n/status/`:
+   - `worker_commands.txt` — komendy od guardiana
+   - `activity.json` — heartbeat i status każdego workera
+   - `orchestration_plan.json` — aktualny plan orkiestracji (czytelny dla człowieka i kodu)
+
+### 6.2 Potencjalne specjalizacje workerów
+
+| Worker | Rola | Przykładowe zadania |
+|--------|------|---------------------|
+| **Worker A** (translate) | Tłumaczenie | AUTO_TRANSLATE, TRANSLATION_SYNC, turbo batch |
+| **Worker B** (quality) | Jakość i walidacja | detect_suspicious (S1-S14), repair queue, ratio checks |
+| **Worker C** (migration) | Migracja i struktura | MIGRATION, COMPACT_KEYS, brakujące klucze, porównanie C++ |
+| **Worker D** (import) | Import zewnętrzny | Import ZIP, ChatGPT batch, crowdsource merge |
+
+### 6.3 Scenariusz orkiestracji (przykład)
+
+```
+Godzina 0:00  Guardian uruchamia Worker A (translate) — slot 2h
+Godzina 2:00  Guardian pauzuje A, uruchamia Worker B (quality) — slot 30min
+Godzina 2:30  Worker B kończy walidację, raportuje 150 flagowanych wpisów
+Godzina 2:30  Guardian uruchamia Worker A (translate, tryb repair) — slot 1h
+Godzina 3:30  Guardian uruchamia Worker C (migration) — slot 30min
+              ...itd. cyklicznie wg planu
+```
+
+### 6.4 Wymagania przed implementacją
+
+- ⬜ **Plan podziału** — ustalić, które funkcje obecnego workera rozdzielić na osobne procesy
+- ⬜ **Protokół pause/resume** — rozszerzyć `worker_commands.txt` o komendy PAUSE/RESUME z zapisem stanu
+- ⬜ **orchestration_plan.json** — format planu orkiestracji (time slots, warunki, priorytety)
+- ⬜ **Guardian scheduler** — logika w guardianie do obsługi wielu procesów jednocześnie
+- ⬜ **Shared lock manager** — mechanizm blokad na plikach JSON (zapobieganie race conditions)
+- ⬜ **Testy integracyjne** — scenariusze E2E z 2+ workerami
+
+### 6.5 Uwagi
+
+> ⚠️ **TO JEST KONCEPT** — żaden kod nie powstał. Przed implementacją wymagany jest:
+> 1. Zatwierdzenie koncepcji przez PtakuPL
+> 2. Szczegółowy plan techniczny z podziałem na etapy
+> 3. Prototyp z 2 workerami (translate + quality) jako proof-of-concept
+>
+> Obecna architektura (1 worker + 1 guardian + 1 statusd) jest w pełni funkcjonalna
+> i wystarczająca do osiągnięcia celu 100% pokrycia. Multi-worker jest optymalizacją
+> na przyszłość, gdy pojawi się potrzeba równoległej pracy różnych specjalizacji.
+
+---
+
 ## Changelog
 
 | Data | Zmiana |
@@ -1410,3 +1515,7 @@ HISTORIA_MIGRATION_BIG_PICTURE=true        # Tabela "Big Picture" w weekly
 | 2026-02-14 | Faza 5 PLAN: pełny plan historii postępu (5.0–5.13.14), ~1400 linii dokumentacji |
 | 2026-02-14 | Faza 5 IMPL: MODUŁ 9 w statusd ✅ — run_historia_snapshot(), aggregate_daily_progressive(), aggregate_weekly(), render_historia_md(). Pliki: historia_snapshots.jsonl, historia_daily.json, historia_weekly.json, i18n_status_historia.md. CLI: --historia. Integracja z daemon loop (co 1h). Przetestowane ✅ |
 | 2026-02-14 | Grammar checks ✅: S13 (DE noun capitalization after articles), S14 (FR punctuation spacing before ;:!?). Dodane do detect_suspicious() w workerze. |
+| 2026-02-15 | Faza 6 CONCEPT: Dokumentacja wizji guardian multi-worker orchestration (⬜ FUTURE — wymaga zatwierdzenia). Schemat: guardian zarządza wieloma workerami o różnych specjalizacjach, inteligentny scheduler, pause/resume, shared state. |
+| 2026-02-15 | 4c DONE: MODUŁ 10 w statusd — tygodniowy raport wielojęzyczny. Per-tier coverage, fastest/slowest growing, ETA, 52-entry history. CLI: `--weekly-multilang`. Artefakty: `weekly_multilang_report.json`, `weekly_multilang_history.json`, `i18n_weekly_multilang_report.md`. |
+| 2026-02-15 | Queue freshness SLA ✅: WARN >900s, CRIT >1800s w doctor (MODUŁ 2) + KPI (MODUŁ 3). Config: `QUEUE_FRESHNESS_WARN_S`, `QUEUE_FRESHNESS_CRIT_S`. |
+| 2026-02-15 | Guardian manual rate limiter ✅: max 3 manual starts/h. `check_manual_start_limit()` w guardian. Config: `GUARDIAN_MANUAL_START_MAX_PER_HOUR`, `GUARDIAN_MANUAL_START_WINDOW_SEC`. |

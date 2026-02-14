@@ -34,6 +34,9 @@ DAEMON_LOCK_DIR="$WORK_DIR/.guardian_daemon.lock"
 DAEMON_LOCK_STALE_SEC="${GUARDIAN_DAEMON_LOCK_STALE_SEC:-600}"
 DAEMON_LOCK_PREEMPT_MIN_SEC="${GUARDIAN_DAEMON_LOCK_PREEMPT_MIN_SEC:-30}"
 DAEMON_STATE_FILE="$WORK_DIR/i18n/status/guardian_daemon_state.json"
+MANUAL_START_LIMIT_FILE="$WORK_DIR/.guardian_manual_starts"
+MANUAL_START_MAX_PER_HOUR="${GUARDIAN_MANUAL_START_MAX_PER_HOUR:-3}"
+MANUAL_START_WINDOW_SEC="${GUARDIAN_MANUAL_START_WINDOW_SEC:-3600}"
 
 export HOME="/home/ptaku"
 export PATH="/usr/local/bin:/usr/bin:/bin:$PATH"
@@ -166,6 +169,42 @@ os.makedirs(os.path.dirname(path), exist_ok=True)
 with open(path, "w", encoding="utf-8") as f:
     json.dump(payload, f, indent=2, ensure_ascii=False)
 PYDSTATE
+}
+
+# ── Manual start rate limiter ──
+# Tracks timestamps of source=manual daemon starts.
+# Rejects if more than MANUAL_START_MAX_PER_HOUR manual starts in MANUAL_START_WINDOW_SEC.
+check_manual_start_limit() {
+    local source="${1:-manual}"
+    # Only limit source=manual; start_all/service/cron are trusted
+    if [ "$source" != "manual" ]; then
+        return 0  # allowed
+    fi
+
+    local now_ts cutoff_ts count=0 new_entries="" line_ts
+    now_ts=$(date +%s)
+    cutoff_ts=$((now_ts - MANUAL_START_WINDOW_SEC))
+
+    # Read existing entries, filter to window
+    if [ -f "$MANUAL_START_LIMIT_FILE" ]; then
+        while IFS= read -r line_ts; do
+            if [ -n "$line_ts" ] && [ "$line_ts" -ge "$cutoff_ts" ] 2>/dev/null; then
+                new_entries="${new_entries}${line_ts}\n"
+                count=$((count + 1))
+            fi
+        done < "$MANUAL_START_LIMIT_FILE"
+    fi
+
+    if [ "$count" -ge "$MANUAL_START_MAX_PER_HOUR" ]; then
+        log_guardian "⛔ Manual start rate limit: $count starts in last $((MANUAL_START_WINDOW_SEC/60))min (max=$MANUAL_START_MAX_PER_HOUR). Odmowa startu."
+        write_daemon_state "blocked" "$source" "$$" "manual_rate_limit" "" "" "0"
+        return 1  # denied
+    fi
+
+    # Record this start
+    new_entries="${new_entries}${now_ts}\n"
+    printf "%b" "$new_entries" > "$MANUAL_START_LIMIT_FILE"
+    return 0  # allowed
 }
 
 acquire_daemon_lock() {
@@ -1269,6 +1308,9 @@ fi
 case "${1:-}" in
     --daemon)
         daemon_source="${GUARDIAN_START_SOURCE:-manual}"
+        if ! check_manual_start_limit "$daemon_source"; then
+            exit 0
+        fi
         if ! acquire_daemon_lock "$daemon_source"; then
             exit 0
         fi

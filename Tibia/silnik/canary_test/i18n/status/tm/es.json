@@ -132710,5 +132710,677 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-14T08:49:02.459058Z"
+  },
+  "html.team.html.text2": {
+    "src_hash": "f819511a2e975a57557887646945ed5b",
+    "text": "{{ member.world_name }}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:00:54.092375Z"
+  },
+  "npc.rashid.multi_21": {
+    "src_hash": "550b7a99efd90755032f21a2a11211a8",
+    "text": "¡Muy bien! Necesito gente con talento que sea capaz de manejar mis productos con cuidado, encontrar buenas ofertas y cosas por el estilo, así que voy a poneros a prueba. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:02.044093Z"
+  },
+  "npc.rashid.multi_22": {
+    "src_hash": "4a31d0a4eefd5c1f1da05d813593b969",
+    "text": "Primero, me gustaría ver si puedes desenterrar artículos raros. Algo así como un... ¡escudo intelectual! ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:02.044729Z"
+  },
+  "npc.rashid.multi_23": {
+    "src_hash": "848c06c3abc5f34c31c378cd7d7dcca4",
+    "text": "Jaja, es broma, te engañé allí, ¿no? Controle siempre sus nervios, eso es muy importante durante la negociación. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:02.045539Z"
+  },
+  "npc.rashid.multi_24": {
+    "src_hash": "3ef1808170dafa46158516e8ce436884",
+    "text": "Bien, todo lo que quiero de ti es uno de estos raros trofeos de ciervos. Tengo un cliente aquí en Svargrond que ordenó uno, así que me gustaría que me lo entregues mientras estoy en Svargrond. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:04.735337Z"
+  },
+  "npc.rashid.multi_25": {
+    "src_hash": "079cd49d1d266b256f2006b58e69d028",
+    "text": "¿Todo claro y entendido?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:04.735797Z"
+  },
+  "npc.rashid.multi_3": {
+    "src_hash": "d829a662bb9baf0d5a709463f2735e43",
+    "text": "Siempre he soñado con tener una mascota pequeña, que pudiera llevar conmigo y que no me diera problemas. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:04.736387Z"
+  },
+  "npc.rashid.multi_4": {
+    "src_hash": "29e5ad70b4319d48f4a4679c8759d807",
+    "text": "¿Podrías (tal vez) traerme un pequeño pez dorado en un recipiente? Sé que podrías conseguir uno, ¿no?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:04.736997Z"
+  },
+  "npc.rashid.multi_5": {
+    "src_hash": "a8373436897e8f070602d5316ec069da",
+    "text": "¡Bien! Hay una habilidad más que necesito probar y que es crucial para un operador exitoso. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:04.737577Z"
+  },
+  "npc.rashid.multi_6": {
+    "src_hash": "ac2566a526cf8edb3167175440f2fcb5",
+    "text": "Por supuesto, debes poder regatear, de lo contrario no sobrevivirás mucho en este negocio. Para hacerle las cosas lo más difíciles posible, tengo el socio comercial perfecto para usted. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:08.391384Z"
+  },
+  "npc.rashid.multi_7": {
+    "src_hash": "b892d5ff07937f0fd41174882d8c9abb",
+    "text": "Por supuesto, tiene que ser barato. No vuelvas con nada más caro que 400 de oro. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:08.391984Z"
+  },
+  "npc.rashid.multi_8": {
+    "src_hash": "39916b5ef861c785d4992588680edbd8",
+    "text": "¡Y la calidad no debe verse afectada, por supuesto! ¿Todo claro y entendido?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:08.392861Z"
+  },
+  "npc.rashid.multi_9": {
+    "src_hash": "39916b5ef861c785d4992588680edbd8",
+    "text": "¡Y la calidad no debe verse afectada, por supuesto! ¿Todo claro y entendido?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:08.393509Z"
+  },
+  "npc.rashid.say_1": {
+    "src_hash": "6773349a57019af81617c990fb69764c",
+    "text": "Bueno, podrías intentar la misión de convertirte en un comerciante reconocido, pero requiere viajar mucho. ¿Estás dispuesto a intentarlo?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:08.394231Z"
+  },
+  "npc.rashid.say_10": {
+    "src_hash": "660966ef1c4a1ad7486cb0a647854105",
+    "text": "¿Has traído una espada carmesí barata pero buena?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:11.070136Z"
+  },
+  "npc.rashid.say_11": {
+    "src_hash": "6c7db6e1a2c8d79f663824d05c1054a7",
+    "text": "Entonces, amigo mío, ¿estás dispuesto a pasar a la siguiente misión para convertirte en un comerciante reconocido?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:11.075367Z"
+  },
+  "npc.rashid.say_12": {
+    "src_hash": "e23eb8f98e1285e2ab7abcbe07fe337c",
+    "text": "¿Me has traído un pez dorado?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:11.076043Z"
+  },
+  "npc.rashid.say_13": {
+    "src_hash": "03800e37e11696035b1b395db4932458",
+    "text": "Ah, claro. <ahem> ¡Por la presente lo declaro uno de mis comerciantes reconocidos! ¡No dudes en ofrecerme tus productos, solo pídeme un {trade}!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:11.077194Z"
+  },
+  "npc.rashid.say_14": {
+    "src_hash": "edcc43fda5f2e1775159430abb5f3fa2",
+    "text": "Bien. Luego toma ese trofeo de venado y tráemelo mientras estoy en Svargrond. Pregúntame sobre tu misión.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:11.078255Z"
+  },
+  "npc.rashid.say_15": {
+    "src_hash": "470267cec501c09e69d1441a02083b00",
+    "text": "¡Bien hecho! Te lo quitaré. <snags it> Ven a verme otro día, ya estaré ocupada un rato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:13.744727Z"
+  },
+  "npc.rashid.say_16": {
+    "src_hash": "a2f72e51565fbf44d5a0597ef61a0608",
+    "text": "Bien. Entonces listo, pregúntale a Willard sobre el 'package for __PH0__'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:13.745346Z"
+  },
+  "npc.rashid.say_17": {
+    "src_hash": "cff2404de4bf7c12a4ab390a51e61b1a",
+    "text": "Excelente. Simplemente colóquelo allí. Sí, gracias, eso es todo. Ven a verme otro día, estaré ocupada por un tiempo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:13.745976Z"
+  },
+  "npc.rashid.say_18": {
+    "src_hash": "89c02af48492380092694d2a89cb305a",
+    "text": "Bien, entonces busca a Miraia en Darashia y pregúntale sobre el {'scarab cheese'}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:13.746658Z"
+  },
+  "npc.rashid.say_19": {
+    "src_hash": "deb8e391c2367a9eb5c1623084a7bb43",
+    "text": "¡Mmmhh, qué delicioso olor a queso de escarabajo! Realmente no puedo entender por qué la mayoría de la gente no puede soportarlo. ¡Gracias, bien hecho!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:13.747292Z"
+  },
+  "npc.rashid.say_2": {
+    "src_hash": "6c1c8e0fa86bdf295b34cdad346915da",
+    "text": "¿Habéis conseguido obtener un raro trofeo de ciervo para mi cliente?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:16.391645Z"
+  },
+  "npc.rashid.say_21": {
+    "src_hash": "9e95a87d18a9e753fa7a02805c32c4d5",
+    "text": "Me sorprende que hayas logrado traer este jarrón sin una sola grieta. Eso era lo que necesitaba saber, gracias.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:16.392296Z"
+  },
+  "npc.rashid.say_22": {
+    "src_hash": "ea4ea1bc3a95600b7827f204bb941252",
+    "text": "Bien, tengo curiosidad por saber cómo te irá con {Uzgod}. ¡Buena suerte!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:16.392779Z"
+  },
+  "npc.rashid.say_23": {
+    "src_hash": "3e9e38d9270f573f762fde3c42b2a61d",
+    "text": "¡Ja! Eres realmente inteligente, ¡bien hecho! Te quitaré esto. Ven a verme mañana, creo que, después de todo, los dos podríamos hacer negocios.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:16.393449Z"
+  },
+  "npc.rashid.say_24": {
+    "src_hash": "9bd4da96a33bfa57fc00e9dbada8fe4c",
+    "text": "¡Muchas gracias! Entonces estaré esperando ansiosamente tu regreso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:19.082611Z"
+  },
+  "npc.rashid.say_25": {
+    "src_hash": "4eec20db92294620ca1c310e59c8efc9",
+    "text": "¡¡Gracias!! ¡Ah, esto me alegra el día! Me tomaré el resto del día libre para conocer a este pequeño. Ven a verme mañana, si quieres.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:19.083253Z"
+  },
+  "npc.rashid.say_3": {
+    "src_hash": "6c7db6e1a2c8d79f663824d05c1054a7",
+    "text": "Entonces, amigo mío, ¿estás dispuesto a pasar a la siguiente misión para convertirte en un comerciante reconocido?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:19.083794Z"
+  },
+  "npc.rashid.say_4": {
+    "src_hash": "6922f524d6b57614086658bcfbf70160",
+    "text": "¿Me trajiste el paquete?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:19.084133Z"
+  },
+  "npc.rashid.say_48": {
+    "src_hash": "700caa2a5913b719e19ae748febc6af1",
+    "text": "Lo siento, pero no perteneces a mis clientes exclusivos. Debo asegurarme de poder confiar en la calidad de sus productos.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:19.084953Z"
+  },
+  "npc.rashid.say_5": {
+    "src_hash": "6c7db6e1a2c8d79f663824d05c1054a7",
+    "text": "Entonces, amigo mío, ¿estás dispuesto a pasar a la siguiente misión para convertirte en un comerciante reconocido?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:21.713693Z"
+  },
+  "npc.rashid.say_6": {
+    "src_hash": "90fe7c9f5e89ccec36eabc3d919bcb8d",
+    "text": "¿Has traído el queso?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:21.714051Z"
+  },
+  "npc.rashid.say_7": {
+    "src_hash": "6c7db6e1a2c8d79f663824d05c1054a7",
+    "text": "Entonces, amigo mío, ¿estás dispuesto a pasar a la siguiente misión para convertirte en un comerciante reconocido?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:21.714681Z"
+  },
+  "npc.rashid.say_8": {
+    "src_hash": "ba7a7b62efc19d9110feb452b8e072f3",
+    "text": "¿Has traído el jarrón?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:21.715020Z"
+  },
+  "npc.rashid.say_9": {
+    "src_hash": "6c7db6e1a2c8d79f663824d05c1054a7",
+    "text": "Entonces, amigo mío, ¿estás dispuesto a pasar a la siguiente misión para convertirte en un comerciante reconocido?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:21.715555Z"
+  },
+  "npc.rashid.stdmod_1": {
+    "src_hash": "ad14a77ec47c54157afabb3c3806f829",
+    "text": "Soy un comerciante ambulante. Aunque no compro todo. Y no de todos, por cierto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:26.859944Z"
+  },
+  "npc.rashid.stdmod_10": {
+    "src_hash": "5b8e802e97e7004542a9d17f38ab44c3",
+    "text": "Hay muy pocos clientes allí, no vale la pena el viaje.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:26.860382Z"
+  },
+  "npc.rashid.stdmod_11": {
+    "src_hash": "7eea6eb3af53e06b4fe4dcaaa1219787",
+    "text": "Mmm... no lo creo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:26.860689Z"
+  },
+  "npc.rashid.stdmod_12": {
+    "src_hash": "41e56d7111309f1859fb90eef6c77705",
+    "text": "No me gusta mucho estar bajo tierra. También tiendo a perderme en estos laberínticos túneles enanos, así que prefiero evitarlos.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:26.861285Z"
+  },
+  "npc.rashid.stdmod_13": {
+    "src_hash": "2145828384cc55e704365eb1d27d1d7d",
+    "text": "Cuando evitas los barrios marginales, es una ciudad realmente bonita. Casi tan bonita como la hija del gobernador.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:26.862075Z"
+  },
+  "npc.rashid.stdmod_14": {
+    "src_hash": "7eea6eb3af53e06b4fe4dcaaa1219787",
+    "text": "Mmm... no lo creo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:31.778015Z"
+  },
+  "npc.rashid.stdmod_15": {
+    "src_hash": "e79e92188361da28ef5b1aa4700ea08a",
+    "text": "Me gusta el asentamiento en sí, pero no pongo un pie en la jungla. ¿Has visto el tamaño de estos ciempiés?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:31.778825Z"
+  },
+  "npc.rashid.stdmod_16": {
+    "src_hash": "7eea6eb3af53e06b4fe4dcaaa1219787",
+    "text": "Mmm... no lo creo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:31.779194Z"
+  },
+  "npc.rashid.stdmod_17": {
+    "src_hash": "bd38e73450cb982e030b0d7fe76b8ecc",
+    "text": "Ojalá hiciera un poco más de calor allí, pero con una buena taza de hidromiel bárbaro en el estómago todo se vuelve mucho más acogedor.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:31.779803Z"
+  },
+  "npc.rashid.stdmod_18": {
+    "src_hash": "e9e7f9316a8f44189233966bac721a81",
+    "text": "Me siento incómodo y bastante inseguro en Thais, por eso no viajo allí.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:31.780329Z"
+  },
+  "npc.rashid.stdmod_19": {
+    "src_hash": "7eea6eb3af53e06b4fe4dcaaa1219787",
+    "text": "Mmm... no lo creo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:36.048131Z"
+  },
+  "npc.rashid.stdmod_2": {
+    "src_hash": "54cff4bf661df13995eded75ca906b4b",
+    "text": "Soy Rashid, hijo del desierto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:36.048689Z"
+  },
+  "npc.rashid.stdmod_20": {
+    "src_hash": "d0db6fa6b2228db2caad57c77e45b7ca",
+    "text": "Aunque es el floreciente centro comercial de Tibia, no me gusta ir allí. Demasiada competencia para mi gusto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:36.049608Z"
+  },
+  "npc.rashid.stdmod_21": {
+    "src_hash": "e5a1d5760303a794eeffa786c2e74e6c",
+    "text": "Ya casi es hora de continuar el viaje.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:36.050682Z"
+  },
+  "npc.rashid.stdmod_22": {
+    "src_hash": "d0a8108937002e1dcd32b3253d3ce8ed",
+    "text": "Reyes, reinas, emperadores y califas... todos dicen ser diferentes y únicos, pero en realidad es lo mismo en todas partes.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:36.051652Z"
+  },
+  "npc.rashid.stdmod_3": {
+    "src_hash": "f4074f95f4e3f0c17a091be5f8ab5ac6",
+    "text": "Por supuesto, viejo amigo. También puedes buscar solo armaduras, piernas, escudos, cascos, botas, armas, armas encantadas, joyas o artículos varios.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:41.915128Z"
+  },
+  "npc.rashid.stdmod_4": {
+    "src_hash": "62a16cefd394cf439204446a0ac35657",
+    "text": "Elves... Realmente no confío en ellos. Toda esta charla sobre la naturaleza, las flores y abrazar los árboles... Estoy seguro de que hay algún plan perverso detrás de todo esto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:41.915895Z"
+  },
+  "npc.rashid.stdmod_5": {
+    "src_hash": "48081319e51e454fd111310ce91cef8e",
+    "text": "¡Mi amada ciudad natal! Ah, el dulce aroma de las arenas del desierto, la forma perfecta de las pirámides... increíblemente hermosa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:41.916597Z"
+  },
+  "npc.rashid.stdmod_6": {
+    "src_hash": "78b3718b44ab81447327eb9e1e4a3eb0",
+    "text": "Tengo que ir a Carlin de vez en cuando, ya que la reina desea ver mis productos exclusivos en intervalos regulares.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:41.917330Z"
+  },
+  "npc.rashid.stdmod_7": {
+    "src_hash": "833a499d145e3ad030b4f90993b9ca4c",
+    "text": "Cormaya? No es un buen lugar para hacer negocios, está demasiado lejos y es pequeño.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:41.917908Z"
+  },
+  "npc.rashid.stdmod_8": {
+    "src_hash": "e117238fb15934af30a6358f8c4381a6",
+    "text": "No es real, pero es casi igual de bueno. Los comerciantes de allí reclaman precios ridículos, lo cual está bien para mi propio negocio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:46.106041Z"
+  },
+  "npc.rashid.stdmod_9": {
+    "src_hash": "d499d958d7a2bfbb8e75efc4aa486a7a",
+    "text": "¡Ah sí, Edron! ¡Qué isla tan encantadora y tranquila! Normalmente hago buenos negocios allí.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:46.106877Z"
+  },
+  "npc.rashid_custom.multi_10": {
+    "src_hash": "f78ad1c3dbe66aab615076fad4fbc541",
+    "text": "Se dice que los enanos son los más tercos de todos los comerciantes. Viaja a Kazordoon e intenta que el herrero Uzgod te venda una espada carmesí. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:46.107592Z"
+  },
+  "npc.rashid_custom.multi_22": {
+    "src_hash": "550b7a99efd90755032f21a2a11211a8",
+    "text": "¡Muy bien! Necesito gente con talento que sea capaz de manejar mis productos con cuidado, encontrar buenas ofertas y cosas por el estilo, así que voy a poneros a prueba. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:46.108338Z"
+  },
+  "npc.rashid_custom.multi_23": {
+    "src_hash": "4a31d0a4eefd5c1f1da05d813593b969",
+    "text": "Primero, me gustaría ver si puedes desenterrar artículos raros. Algo así como un... ¡escudo intelectual! ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:46.108900Z"
+  },
+  "npc.rashid_custom.multi_24": {
+    "src_hash": "848c06c3abc5f34c31c378cd7d7dcca4",
+    "text": "Jaja, es broma, te engañé allí, ¿no? Controle siempre sus nervios, eso es muy importante durante la negociación. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:48.760125Z"
+  },
+  "npc.rashid_custom.multi_25": {
+    "src_hash": "3ef1808170dafa46158516e8ce436884",
+    "text": "Bien, todo lo que quiero de ti es uno de estos raros trofeos de ciervos. Tengo un cliente aquí en Svargrond que ordenó uno, así que me gustaría que me lo entregues mientras estoy en Svargrond. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:48.760836Z"
+  },
+  "npc.rashid_custom.multi_26": {
+    "src_hash": "079cd49d1d266b256f2006b58e69d028",
+    "text": "¿Todo claro y entendido?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:48.761207Z"
+  },
+  "npc.rashid_custom.multi_3": {
+    "src_hash": "d829a662bb9baf0d5a709463f2735e43",
+    "text": "Siempre he soñado con tener una mascota pequeña, que pudiera llevar conmigo y que no me diera problemas. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:48.761793Z"
+  },
+  "npc.rashid_custom.multi_4": {
+    "src_hash": "29e5ad70b4319d48f4a4679c8759d807",
+    "text": "¿Podrías (tal vez) traerme un pequeño pez dorado en un recipiente? Sé que podrías conseguir uno, ¿no?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:48.762377Z"
+  },
+  "npc.rashid_custom.multi_5": {
+    "src_hash": "a8373436897e8f070602d5316ec069da",
+    "text": "¡Bien! Hay una habilidad más que necesito probar y que es crucial para un operador exitoso. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:51.394849Z"
+  },
+  "npc.rashid_custom.multi_6": {
+    "src_hash": "ac2566a526cf8edb3167175440f2fcb5",
+    "text": "Por supuesto, debes poder regatear, de lo contrario no sobrevivirás mucho en este negocio. Para hacerle las cosas lo más difíciles posible, tengo el socio comercial perfecto para usted. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:51.395614Z"
+  },
+  "npc.rashid_custom.multi_7": {
+    "src_hash": "b892d5ff07937f0fd41174882d8c9abb",
+    "text": "Por supuesto, tiene que ser barato. No vuelvas con nada más caro que 400 de oro. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:51.396139Z"
+  },
+  "npc.rashid_custom.multi_8": {
+    "src_hash": "39916b5ef861c785d4992588680edbd8",
+    "text": "¡Y la calidad no debe verse afectada, por supuesto! ¿Todo claro y entendido?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:51.396716Z"
+  },
+  "npc.rashid_custom.multi_9": {
+    "src_hash": "f78ad1c3dbe66aab615076fad4fbc541",
+    "text": "Se dice que los enanos son los más tercos de todos los comerciantes. Viaja a Kazordoon e intenta que el herrero Uzgod te venda una espada carmesí. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:51.397492Z"
+  },
+  "npc.rashid_custom.say_1": {
+    "src_hash": "6773349a57019af81617c990fb69764c",
+    "text": "Bueno, podrías intentar la misión de convertirte en un comerciante reconocido, pero requiere viajar mucho. ¿Estás dispuesto a intentarlo?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:54.740126Z"
+  },
+  "npc.rashid_custom.say_10": {
+    "src_hash": "660966ef1c4a1ad7486cb0a647854105",
+    "text": "¿Has traído una espada carmesí barata pero buena?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:54.740561Z"
+  },
+  "npc.rashid_custom.say_11": {
+    "src_hash": "6c7db6e1a2c8d79f663824d05c1054a7",
+    "text": "Entonces, amigo mío, ¿estás dispuesto a pasar a la siguiente misión para convertirte en un comerciante reconocido?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:54.741140Z"
+  },
+  "npc.rashid_custom.say_12": {
+    "src_hash": "e23eb8f98e1285e2ab7abcbe07fe337c",
+    "text": "¿Me has traído un pez dorado?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:54.741502Z"
+  },
+  "npc.rashid_custom.say_13": {
+    "src_hash": "eab86433a31f7cd53ab118cfbcd7712d",
+    "text": "Ah, claro. <ahem> ¡Por la presente lo declaro uno de mis comerciantes reconocidos! ¡No dudes en ofrecerme tus productos!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:54.742426Z"
+  },
+  "npc.rashid_custom.say_14": {
+    "src_hash": "edcc43fda5f2e1775159430abb5f3fa2",
+    "text": "Bien. Luego toma ese trofeo de venado y tráemelo mientras estoy en Svargrond. Pregúntame sobre tu misión.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:57.373275Z"
+  },
+  "npc.rashid_custom.say_15": {
+    "src_hash": "470267cec501c09e69d1441a02083b00",
+    "text": "¡Bien hecho! Te lo quitaré. <snags it> Ven a verme otro día, ya estaré ocupada un rato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:57.373986Z"
+  },
+  "npc.rashid_custom.say_16": {
+    "src_hash": "a2f72e51565fbf44d5a0597ef61a0608",
+    "text": "Bien. Entonces listo, pregúntale a Willard sobre el 'package for __PH0__'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:57.374692Z"
+  },
+  "npc.rashid_custom.say_17": {
+    "src_hash": "cff2404de4bf7c12a4ab390a51e61b1a",
+    "text": "Excelente. Simplemente colóquelo allí. Sí, gracias, eso es todo. Ven a verme otro día, estaré ocupada por un tiempo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:57.375345Z"
+  },
+  "npc.rashid_custom.say_18": {
+    "src_hash": "89c02af48492380092694d2a89cb305a",
+    "text": "Bien, entonces busca a Miraia en Darashia y pregúntale sobre el {'scarab cheese'}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:57.376055Z"
+  },
+  "npc.rashid_custom.say_19": {
+    "src_hash": "deb8e391c2367a9eb5c1623084a7bb43",
+    "text": "¡Mmmhh, qué delicioso olor a queso de escarabajo! Realmente no puedo entender por qué la mayoría de la gente no puede soportarlo. ¡Gracias, bien hecho!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-14T10:06:59.111584Z"
   }
 }

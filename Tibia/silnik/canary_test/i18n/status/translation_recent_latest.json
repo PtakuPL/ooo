@@ -1,62 +1,128 @@
 {
-  "timestamp": "2026-02-14T09:55:28.157325Z",
-  "language": "pl",
-  "json_file": "cpp.json",
-  "translated": 9,
+  "timestamp": "2026-02-14T10:06:59.404404Z",
+  "language": "es",
+  "json_file": "npc.json",
+  "translated": 97,
   "entries": [
     {
-      "key": "cpp.augment.augments_inspect",
-      "en": "{0}.",
-      "translated": "{0}.",
-      "source": "tm"
+      "key": "npc.rashid_custom.multi_25",
+      "en": "Okay, all I want from you is one of these rare deer trophies. I have a customer here in Svargrond who ordered one, so I'd like you to deliver it tome while I'm in Svargrond. ...",
+      "translated": "Bien, todo lo que quiero de ti es uno de estos raros trofeos de ciervos. Tengo un cliente aquí en Svargrond que ordenó uno, así que me gustaría que me lo entregues mientras estoy en Svargrond. ...",
+      "source": "google_translate"
     },
     {
-      "key": "cpp.augment.format_base",
-      "en": "{0} -> {1:+}% {2} {3}",
-      "translated": "{0} -> {1:+}% {2} {3}",
-      "source": "tm"
+      "key": "npc.rashid_custom.multi_26",
+      "en": "Everything clear and understood?",
+      "translated": "¿Todo claro y entendido?",
+      "source": "google_translate"
     },
     {
-      "key": "cpp.augment.format_no_value",
-      "en": "{0} -> {1}",
-      "translated": "{0} -> {1}",
-      "source": "tm"
+      "key": "npc.rashid_custom.multi_3",
+      "en": "I have always dreamed to have a small pet, one that I could take with me and which wouldn't cause problems. ...",
+      "translated": "Siempre he soñado con tener una mascota pequeña, que pudiera llevar conmigo y que no me diera problemas. ...",
+      "source": "google_translate"
     },
     {
-      "key": "cpp.augment.format_with_value",
-      "en": "{0} -> {1:+}% {2}",
-      "translated": "{0} -> {1:+}% {2}",
-      "source": "tm"
+      "key": "npc.rashid_custom.multi_4",
+      "en": "Could you - just maybe - bring me a small goldfish in a bowl? I know that you would be able to get one, wouldn't you?",
+      "translated": "¿Podrías (tal vez) traerme un pequeño pez dorado en un recipiente? Sé que podrías conseguir uno, ¿no?",
+      "source": "google_translate"
     },
     {
-      "key": "cpp.inspect.invisibility",
-      "en": "Invisibility",
-      "translated": "Invisibility",
-      "source": "tm"
+      "key": "npc.rashid_custom.multi_5",
+      "en": "Fine! There's one more skill that I need to test and which is cruicial for a successful trader. ...",
+      "translated": "¡Bien! Hay una habilidad más que necesito probar y que es crucial para un operador exitoso. ...",
+      "source": "google_translate"
     },
     {
-      "key": "cpp.player.look.guild_nick",
-      "en": "({0})",
-      "translated": "({0})",
-      "source": "tm"
+      "key": "npc.rashid_custom.multi_6",
+      "en": "Of course you must be able to haggle, else you won't survive long in this business. To make things as hard as possible for you, I have the perfect trade partner for you. ...",
+      "translated": "Por supuesto, debes poder regatear, de lo contrario no sobrevivirás mucho en este negocio. Para hacerle las cosas lo más difíciles posible, tengo el socio comercial perfecto para usted. ...",
+      "source": "google_translate"
     },
     {
-      "key": "cpp.player.look.verb_loyalty",
-      "en": "{0} {1} {2}.",
-      "translated": "{0} {1} {2}.",
-      "source": "tm"
+      "key": "npc.rashid_custom.multi_7",
+      "en": "Of course, it has to be cheap. Don't come back with anything more expensive than 400 gold. ...",
+      "translated": "Por supuesto, tiene que ser barato. No vuelvas con nada más caro que 400 de oro. ...",
+      "source": "google_translate"
     },
     {
-      "key": "cpp.player.look.verb_role",
-      "en": "{0} {1}.",
-      "translated": "{0} {1}.",
-      "source": "tm"
+      "key": "npc.rashid_custom.multi_8",
+      "en": "And the quality must not suffer, of course! Everything clear and understood?",
+      "translated": "¡Y la calidad no debe verse afectada, por supuesto! ¿Todo claro y entendido?",
+      "source": "google_translate"
     },
     {
-      "key": "cpp.vocation.id_2",
-      "en": "Druid",
-      "translated": "Druid",
-      "source": "tm"
+      "key": "npc.rashid_custom.multi_9",
+      "en": "Dwarves are said to be the most stubborn of all traders. Travel to Kazordoon and try to get the smith Uzgod to sell a crimson sword to you. ...",
+      "translated": "Se dice que los enanos son los más tercos de todos los comerciantes. Viaja a Kazordoon e intenta que el herrero Uzgod te venda una espada carmesí. ...",
+      "source": "google_translate"
+    },
+    {
+      "key": "npc.rashid_custom.say_1",
+      "en": "Well, you could attempt the mission to become a recognised trader, but it requires a lot of travelling. Are you willing to try?",
+      "translated": "Bueno, podrías intentar la misión de convertirte en un comerciante reconocido, pero requiere viajar mucho. ¿Estás dispuesto a intentarlo?",
+      "source": "google_translate"
+    },
+    {
+      "key": "npc.rashid_custom.say_10",
+      "en": "Have you brought a cheap but good crimson sword?",
+      "translated": "¿Has traído una espada carmesí barata pero buena?",
+      "source": "google_translate"
+    },
+    {
+      "key": "npc.rashid_custom.say_11",
+      "en": "So, my friend, are you willing to proceed to the next mission to become a recognised trader?",
+      "translated": "Entonces, amigo mío, ¿estás dispuesto a pasar a la siguiente misión para convertirte en un comerciante reconocido?",
+      "source": "google_translate"
+    },
+    {
+      "key": "npc.rashid_custom.say_12",
+      "en": "Have you brought me a gold fish??",
+      "translated": "¿Me has traído un pez dorado?",
+      "source": "google_translate"
+    },
+    {
+      "key": "npc.rashid_custom.say_13",
+      "en": "Ah, right. <ahem> I hereby declare you - one of my recognised traders! Feel free to offer me your wares!",
+      "translated": "Ah, claro. <ahem> ¡Por la presente lo declaro uno de mis comerciantes reconocidos! ¡No dudes en ofrecerme tus productos!",
+      "source": "google_translate"
+    },
+    {
+      "key": "npc.rashid_custom.say_14",
+      "en": "Fine. Then get a hold of that deer trophy and bring it to me while I'm in Svargrond. Just ask me about your mission.",
+      "translated": "Bien. Luego toma ese trofeo de venado y tráemelo mientras estoy en Svargrond. Pregúntame sobre tu misión.",
+      "source": "google_translate"
+    },
+    {
+      "key": "npc.rashid_custom.say_15",
+      "en": "Well done! I'll take that from you. <snags it> Come see me another day, I'll be busy for a while now. ",
+      "translated": "¡Bien hecho! Te lo quitaré. <snags it> Ven a verme otro día, ya estaré ocupada un rato.",
+      "source": "google_translate"
+    },
+    {
+      "key": "npc.rashid_custom.say_16",
+      "en": "Fine. Then off you go, just ask Willard about the 'package for Rashid'.",
+      "translated": "Bien. Entonces listo, pregúntale a Willard sobre el 'package for __PH0__'.",
+      "source": "google_translate"
+    },
+    {
+      "key": "npc.rashid_custom.say_17",
+      "en": "Great. Just place it over there - yes, thanks, that's it. Come see me another day, I'll be busy for a while now. ",
+      "translated": "Excelente. Simplemente colóquelo allí. Sí, gracias, eso es todo. Ven a verme otro día, estaré ocupada por un tiempo.",
+      "source": "google_translate"
+    },
+    {
+      "key": "npc.rashid_custom.say_18",
+      "en": "Okay, then please find Miraia in Darashia and ask her about the {'scarab cheese'}.",
+      "translated": "Bien, entonces busca a Miraia en Darashia y pregúntale sobre el {'scarab cheese'}.",
+      "source": "google_translate"
+    },
+    {
+      "key": "npc.rashid_custom.say_19",
+      "en": "Mmmhh, the lovely odeur of scarab cheese! I really can't understand why most people can't stand it. Thanks, well done! ",
+      "translated": "¡Mmmhh, qué delicioso olor a queso de escarabajo! Realmente no puedo entender por qué la mayoría de la gente no puede soportarlo. ¡Gracias, bien hecho!",
+      "source": "google_translate"
     }
   ]
 }

@@ -992,7 +992,7 @@
   "html.tbl_chart.text4": "[ES] {% trans %}Column{% context %}Chart type{% endtrans %}",
   "html.tbl_chart.text5": "[ES] {% trans %}Line{% context %}Chart type{% endtrans %}",
   "html.team.html.text1": "{{ group.group_name|capitalize }}",
-  "html.team.html.text2": "[ES] {{ member.world_name }}",
+  "html.team.html.text2": "{{ member.world_name }}",
   "html.team.html.text3": "[ES] {{ member.last_login }}",
   "html.team.html.text4": "[ES] {{ group.group_name|capitalize }}",
   "html.team.html.text5": "[ES] {{ member.world_name }}",

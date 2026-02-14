@@ -59,6 +59,8 @@ DEFAULT_PRIORITY_GATE_STUCK_MIN_QUALITY_DROP_PCT=1
 DEFAULT_REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS=1000
 DEFAULT_REGISTRY_RECONCILE_MIN_OUTSIDE_PCT=2
 DEFAULT_REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS=1800
+DEFAULT_QUEUE_FRESHNESS_WARN_S=900
+DEFAULT_QUEUE_FRESHNESS_CRIT_S=1800
 
 REPAIR_QUEUE_STAGNATION_HOURS="$DEFAULT_REPAIR_QUEUE_STAGNATION_HOURS"
 REPAIR_QUEUE_STAGNATION_MIN_SAMPLES="$DEFAULT_REPAIR_QUEUE_STAGNATION_MIN_SAMPLES"
@@ -78,6 +80,8 @@ PRIORITY_GATE_STUCK_MIN_QUALITY_DROP_PCT="$DEFAULT_PRIORITY_GATE_STUCK_MIN_QUALI
 REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS="$DEFAULT_REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS"
 REGISTRY_RECONCILE_MIN_OUTSIDE_PCT="$DEFAULT_REGISTRY_RECONCILE_MIN_OUTSIDE_PCT"
 REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS="$DEFAULT_REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS"
+QUEUE_FRESHNESS_WARN_S="$DEFAULT_QUEUE_FRESHNESS_WARN_S"
+QUEUE_FRESHNESS_CRIT_S="$DEFAULT_QUEUE_FRESHNESS_CRIT_S"
 DAEMON_INTERVAL_SECONDS=60
 
 export HOME="/home/ptaku"
@@ -1166,6 +1170,7 @@ PYAGG
 # ═══════════════════════════════════════════════════════════════════════════════
 
 run_status_doctor() {
+    QUEUE_FRESHNESS_WARN_S="$QUEUE_FRESHNESS_WARN_S" QUEUE_FRESHNESS_CRIT_S="$QUEUE_FRESHNESS_CRIT_S" \
     python3 - "$WORK_DIR" "$STATUS_DIR" "$STATUSD_DOCTOR_FILE" "$REPAIR_QUEUE_STAGNATION_HOURS" "$REPAIR_QUEUE_STAGNATION_MIN_SAMPLES" "$REPAIR_QUEUE_STAGNATION_MIN_DROP" "$SUSPICIOUS_HIGH_WINDOW_HOURS" "$SUSPICIOUS_HIGH_WARN_COUNT" "$SUSPICIOUS_HIGH_CRIT_COUNT" "$METRICS_DRIFT_WARN_KEYS" "$METRICS_DRIFT_CRIT_KEYS" "$METRICS_DRIFT_WARN_PCT" "$METRICS_DRIFT_CRIT_PCT" "$SUSPICIOUS_HIGH_RATE_WARN_PCT" "$SUSPICIOUS_HIGH_RATE_CRIT_PCT" "$STATUSD_THRESHOLDS_FILE" "$STATUSD_USE_ENV_OVERRIDES" "$PRIORITY_GATE_STUCK_MAX_ACTIVE_MINUTES" "$PRIORITY_GATE_STUCK_MAX_CYCLES" "$PRIORITY_GATE_STUCK_MIN_QUALITY_DROP_PCT" "$REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS" "$REGISTRY_RECONCILE_MIN_OUTSIDE_PCT" "$REGISTRY_RECONCILE_MIN_INTERVAL_SECONDS" <<'PYDOCTOR'
 import json, sys, os, subprocess
 from datetime import datetime, timezone, timedelta
@@ -1981,10 +1986,14 @@ try:
         rq_ts = _parse_ts(rq.get("latest_timestamp", ""))
         if rq_ts is not None:
             rq_age = (now - rq_ts).total_seconds()
-            if rq_age > 1800:
-                warnings.append(f"REPAIR_QUEUE_STALE: queue snapshot sprzed {rq_age:.0f}s (>1800s)")
+            qf_warn = float(os.environ.get("QUEUE_FRESHNESS_WARN_S", "900"))
+            qf_crit = float(os.environ.get("QUEUE_FRESHNESS_CRIT_S", "1800"))
+            if rq_age > qf_crit:
+                issues.append(f"QUEUE_FRESHNESS_CRIT: queue snapshot sprzed {rq_age:.0f}s (>{qf_crit:.0f}s)")
+            elif rq_age > qf_warn:
+                warnings.append(f"QUEUE_FRESHNESS_WARN: queue snapshot sprzed {rq_age:.0f}s (>{qf_warn:.0f}s)")
             else:
-                ok_checks.append(f"repair_queue_fresh ({rq_age:.0f}s)")
+                ok_checks.append(f"queue_freshness_ok ({rq_age:.0f}s, WARN>{qf_warn:.0f}s CRIT>{qf_crit:.0f}s)")
         st = rq.get("stagnation", {}) if isinstance(rq.get("stagnation", {}), dict) else {}
         if st.get("detected", False):
             warnings.append(
@@ -2420,6 +2429,26 @@ try:
     print(f"{'─'*60}")
 except Exception as ex:
     print(f"⚠️ Multilang KPI error: {ex}")
+
+# Queue freshness SLA
+try:
+    rq_path = os.path.join(status_dir, "identical_to_en_repair_queue.json")
+    if os.path.exists(rq_path):
+        rq_mtime = os.path.getmtime(rq_path)
+        rq_age_s = (now - datetime.fromtimestamp(rq_mtime, tz=timezone.utc)).total_seconds()
+        qf_warn = 900
+        qf_crit = 1800
+        if rq_age_s > qf_crit:
+            status_label = "🔴 CRIT"
+        elif rq_age_s > qf_warn:
+            status_label = "🟡 WARN"
+        else:
+            status_label = "🟢 OK"
+        print(f"\nQueue freshness SLA: {status_label} (age={rq_age_s:.0f}s, WARN>{qf_warn}s, CRIT>{qf_crit}s)")
+    else:
+        print(f"\nQueue freshness SLA: ⚫ N/A (brak pliku)")
+except Exception as ex:
+    print(f"\nQueue freshness SLA: ⚠️ error: {ex}")
 
 # Gate checks
 print()
@@ -5325,6 +5354,317 @@ PYHISTORIA
 }
 
 # ═══════════════════════════════════════════════════════════════════════════════
+# MODUŁ 10: Tygodniowy raport wielojęzyczny (4c)
+# ═══════════════════════════════════════════════════════════════════════════════
+#
+# Generuje czytelny raport .md + .json z pokryciem per-tier, per-lang,
+# najszybciej/najwolniej rosnącymi językami, ETA do 100%.
+# Uruchamiany co 7 dni (konfigurowalny interwał) lub ręcznie --weekly-multilang.
+#
+
+WEEKLY_MULTILANG_ENABLED="${WEEKLY_MULTILANG_ENABLED:-true}"
+WEEKLY_MULTILANG_INTERVAL="${WEEKLY_MULTILANG_INTERVAL:-604800}"  # 7 dni w sekundach
+WEEKLY_MULTILANG_JSON="${WEEKLY_MULTILANG_JSON:-i18n/status/weekly_multilang_report.json}"
+WEEKLY_MULTILANG_MD="${WEEKLY_MULTILANG_MD:-docs/i18n/i18n_weekly_multilang_report.md}"
+WEEKLY_MULTILANG_HISTORY="${WEEKLY_MULTILANG_HISTORY:-i18n/status/weekly_multilang_history.json}"
+WEEKLY_MULTILANG_MAX_HISTORY="${WEEKLY_MULTILANG_MAX_HISTORY:-52}"
+WEEKLY_MULTILANG_LAST_RUN_FILE="${WEEKLY_MULTILANG_LAST_RUN_FILE:-.weekly_multilang_last_run}"
+
+TIER1_LANGS_LIST="${TIER1_LANGS_LIST:-pl es}"
+TIER2_LANGS_LIST="${TIER2_LANGS_LIST:-de pt ru tr fr it nl cs sk hu}"
+# TIER3 = all remaining languages
+
+maybe_run_weekly_multilang() {
+    if [ "$WEEKLY_MULTILANG_ENABLED" != "true" ]; then
+        return 0
+    fi
+    local now_ts last_ts age_s
+    now_ts=$(date +%s)
+    last_ts=0
+    if [ -f "$WEEKLY_MULTILANG_LAST_RUN_FILE" ]; then
+        last_ts=$(cat "$WEEKLY_MULTILANG_LAST_RUN_FILE" 2>/dev/null || echo 0)
+    fi
+    age_s=$((now_ts - last_ts))
+    if [ "$age_s" -ge "$WEEKLY_MULTILANG_INTERVAL" ]; then
+        run_weekly_multilang
+    fi
+}
+
+run_weekly_multilang() {
+    if [ "$WEEKLY_MULTILANG_ENABLED" != "true" ]; then
+        echo "WEEKLY_MULTILANG_DISABLED"
+        return 0
+    fi
+    local result
+    result=$(python3 - "$STATUS_DIR" "$WEEKLY_MULTILANG_JSON" "$WEEKLY_MULTILANG_MD" \
+        "$WEEKLY_MULTILANG_HISTORY" "$WEEKLY_MULTILANG_MAX_HISTORY" \
+        "$TIER1_LANGS_LIST" "$TIER2_LANGS_LIST" <<'PYWEEKLYMULTILANG'
+import json, sys, os, re
+from datetime import datetime, timezone, timedelta
+from collections import defaultdict
+
+STATUS   = sys.argv[1]
+OUT_JSON = sys.argv[2]
+OUT_MD   = sys.argv[3]
+HIST_FILE = sys.argv[4]
+MAX_HIST = int(sys.argv[5])
+TIER1    = set(sys.argv[6].split())
+TIER2    = set(sys.argv[7].split())
+
+WORK = os.environ.get("WORK_DIR", os.getcwd())
+NOW  = datetime.now(timezone.utc)
+NOW_Z = NOW.isoformat().replace("+00:00", "Z")
+WEEK_NUM = NOW.isocalendar()[1]
+
+def _read_json(path, default=None):
+    try:
+        with open(os.path.join(WORK, path) if not os.path.isabs(path) else path, encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return default if default is not None else {}
+
+def _write_json(path, data):
+    full = os.path.join(WORK, path) if not os.path.isabs(path) else path
+    os.makedirs(os.path.dirname(full), exist_ok=True)
+    tmp = full + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+    os.replace(tmp, full)
+
+# ── 1) Collect current per-language coverage ──
+overview = _read_json(os.path.join(STATUS, "translation_global_overview.json"))
+glo = overview.get("global", {})
+total_ref = glo.get("total_reference_keys", 0)
+total_translated = glo.get("translated_keys", 0)
+global_pct = round(100.0 * total_translated / max(1, total_ref), 2)
+
+langs_list = overview.get("languages", [])
+lang_data = {}
+for entry in langs_list:
+    lang = str(entry.get("lang", "")).lower()
+    if not lang or lang == "en":
+        continue
+    lang_data[lang] = {
+        "lang": lang,
+        "name": entry.get("language_name", lang),
+        "translated": entry.get("translated_keys", 0),
+        "total": entry.get("total_reference_keys", total_ref),
+        "en_copy": entry.get("english_copy_keys", 0),
+        "missing": entry.get("missing_keys", 0),
+        "pct": entry.get("completion_pct", 0),
+    }
+
+# ── 2) Load previous report for delta calculation ──
+history = _read_json(HIST_FILE, [])
+prev = history[-1] if history else None
+prev_by_lang = {}
+if prev:
+    for ld in prev.get("languages", []):
+        prev_by_lang[ld.get("lang", "")] = ld
+
+# ── 3) Calculate deltas and tier grouping ──
+def tier_of(lang):
+    if lang in TIER1:
+        return "T1"
+    if lang in TIER2:
+        return "T2"
+    return "T3"
+
+tier_groups = {"T1": [], "T2": [], "T3": []}
+all_langs_report = []
+
+for lang, ld in sorted(lang_data.items(), key=lambda x: -x[1]["pct"]):
+    prev_ld = prev_by_lang.get(lang, {})
+    prev_pct = prev_ld.get("pct", ld["pct"])
+    prev_translated = prev_ld.get("translated", ld["translated"])
+    delta_pct = round(ld["pct"] - prev_pct, 2)
+    delta_keys = ld["translated"] - prev_translated
+
+    entry = {
+        "lang": lang,
+        "name": ld["name"],
+        "pct": ld["pct"],
+        "translated": ld["translated"],
+        "total": ld["total"],
+        "en_copy": ld["en_copy"],
+        "missing": ld["missing"],
+        "delta_pct": delta_pct,
+        "delta_keys": delta_keys,
+        "tier": tier_of(lang),
+    }
+    all_langs_report.append(entry)
+    tier_groups[tier_of(lang)].append(entry)
+
+# Sort within tiers by coverage desc
+for t in tier_groups:
+    tier_groups[t].sort(key=lambda x: -x["pct"])
+
+# ── 4) Find fastest/slowest growing ──
+with_delta = [e for e in all_langs_report if e["delta_pct"] != 0]
+if not with_delta:
+    with_delta = all_langs_report
+fastest = max(with_delta, key=lambda x: x["delta_pct"]) if with_delta else None
+slowest = min(with_delta, key=lambda x: x["delta_pct"]) if with_delta else None
+
+# ── 5) ETA calculation ──
+eta_global = None
+if prev:
+    prev_global_pct = prev.get("global_pct", 0)
+    delta_global = global_pct - prev_global_pct
+    if delta_global > 0:
+        remaining = 100.0 - global_pct
+        weeks_to_done = remaining / delta_global
+        eta_global = f"{weeks_to_done:.1f} tygodni"
+
+# ── 6) Quality summary ──
+quality = overview.get("quality", {})
+
+# ── 7) Build report JSON ──
+report = {
+    "timestamp": NOW_Z,
+    "week_number": WEEK_NUM,
+    "global_pct": global_pct,
+    "total_ref": total_ref,
+    "total_translated": total_translated,
+    "languages": all_langs_report,
+    "tier_summary": {},
+    "fastest": fastest,
+    "slowest": slowest,
+    "eta_global": eta_global,
+}
+
+for tier_name, langs in tier_groups.items():
+    if langs:
+        avg_pct = round(sum(l["pct"] for l in langs) / len(langs), 2)
+        total_t = sum(l["translated"] for l in langs)
+        total_d = sum(l["delta_keys"] for l in langs)
+        report["tier_summary"][tier_name] = {
+            "count": len(langs),
+            "avg_pct": avg_pct,
+            "total_translated": total_t,
+            "total_delta_keys": total_d,
+        }
+
+_write_json(OUT_JSON, report)
+
+# ── 8) Append to history ──
+history.append(report)
+history = history[-MAX_HIST:]
+_write_json(HIST_FILE, history)
+
+# ── 9) Render Markdown ──
+lines = []
+lines.append(f"# 🌍 Raport wielojęzyczny (tydzień {WEEK_NUM})")
+lines.append("")
+lines.append(f"> Wygenerowano: {NOW_Z}  ")
+lines.append(f"> Globalny coverage: **{global_pct}%** ({total_translated:,} / {total_ref:,} kluczy)  ")
+if eta_global:
+    lines.append(f"> ETA do 100%: **{eta_global}**  ")
+if prev:
+    lines.append(f"> Porównanie z: tydzień {prev.get('week_number', '?')} ({prev.get('timestamp', '?')[:10]})")
+lines.append("")
+lines.append("---")
+lines.append("")
+
+# Tier overview (compact format matching plan spec)
+lines.append("## Przegląd per Tier")
+lines.append("")
+
+for tier_name, tier_label, target in [("T1", "Tier 1 (priorytet)", "90%"), ("T2", "Tier 2 (rozszerzony)", "50%"), ("T3", "Tier 3 (reszta)", "30%")]:
+    langs = tier_groups.get(tier_name, [])
+    if not langs:
+        continue
+    ts = report["tier_summary"].get(tier_name, {})
+    lines.append(f"### {tier_label} — cel: {target} | avg: {ts.get('avg_pct', 0)}%")
+    lines.append("")
+    parts = []
+    for l in langs:
+        sign = "+" if l["delta_pct"] >= 0 else ""
+        parts.append(f"**{l['lang'].upper()}** {l['pct']}% ({sign}{l['delta_pct']}%)")
+    # Wrap to multiple lines if many
+    line = " | ".join(parts)
+    lines.append(line)
+    lines.append("")
+
+lines.append("---")
+lines.append("")
+
+# Fastest / slowest
+lines.append("## Dynamika wzrostu")
+lines.append("")
+if fastest:
+    lines.append(f"⚡ **Najszybciej rosnący:** {fastest['lang'].upper()} ({fastest['name']}) — +{fastest['delta_pct']}% (+{fastest['delta_keys']:,} kluczy)")
+if slowest:
+    sign = "+" if slowest["delta_pct"] >= 0 else ""
+    lines.append(f"🐌 **Najwolniejszy:** {slowest['lang'].upper()} ({slowest['name']}) — {sign}{slowest['delta_pct']}% ({sign}{slowest['delta_keys']:,} kluczy)")
+lines.append("")
+lines.append("---")
+lines.append("")
+
+# Detailed table
+lines.append("## Szczegółowa tabela")
+lines.append("")
+lines.append("| # | Tier | Język | Nazwa | Coverage | Δ% | Przetłum. | Δ kluczy | EN-copy | Brakujące |")
+lines.append("|---|------|-------|-------|----------|-------|-----------|----------|---------|-----------|")
+for i, l in enumerate(sorted(all_langs_report, key=lambda x: ({"T1":0,"T2":1,"T3":2}[x["tier"]], -x["pct"])), 1):
+    sign = "+" if l["delta_pct"] >= 0 else ""
+    dsign = "+" if l["delta_keys"] >= 0 else ""
+    lines.append(
+        f"| {i} | {l['tier']} | {l['lang'].upper()} | {l['name']} "
+        f"| {l['pct']}% | {sign}{l['delta_pct']}% "
+        f"| {l['translated']:,} | {dsign}{l['delta_keys']:,} "
+        f"| {l['en_copy']:,} | {l['missing']:,} |"
+    )
+lines.append("")
+
+# Tier statistics
+lines.append("---")
+lines.append("")
+lines.append("## Statystyki per Tier")
+lines.append("")
+lines.append("| Tier | Języków | Avg coverage | Przetłum. łącznie | Δ kluczy (tydzień) |")
+lines.append("|------|---------|-------------|-------------------|-------------------|")
+for tn in ["T1", "T2", "T3"]:
+    ts = report["tier_summary"].get(tn, {})
+    if ts:
+        lines.append(f"| {tn} | {ts['count']} | {ts['avg_pct']}% | {ts['total_translated']:,} | +{ts['total_delta_keys']:,} |")
+lines.append("")
+
+# History trend (if >=2 entries)
+if len(history) >= 2:
+    lines.append("---")
+    lines.append("")
+    lines.append("## Trend historyczny")
+    lines.append("")
+    lines.append("| Tydzień | Data | Global % | Δ% |")
+    lines.append("|---------|------|----------|-----|")
+    for h in history[-12:]:
+        hprev_idx = history.index(h) - 1
+        hprev_pct = history[hprev_idx].get("global_pct", 0) if hprev_idx >= 0 else h.get("global_pct", 0)
+        hd = round(h.get("global_pct", 0) - hprev_pct, 2)
+        sign = "+" if hd >= 0 else ""
+        lines.append(f"| W{h.get('week_number','?')} | {h.get('timestamp','')[:10]} | {h.get('global_pct', 0)}% | {sign}{hd}% |")
+    lines.append("")
+
+lines.append("---")
+lines.append(f"*Raport wygenerowany automatycznie przez i18n-statusd MODUŁ 10*")
+
+# Write MD
+md_full = os.path.join(WORK, OUT_MD) if not os.path.isabs(OUT_MD) else OUT_MD
+os.makedirs(os.path.dirname(md_full), exist_ok=True)
+with open(md_full, "w", encoding="utf-8") as f:
+    f.write("\n".join(lines) + "\n")
+
+print(f"WEEKLY_MULTILANG week={WEEK_NUM} global={global_pct}% langs={len(all_langs_report)} md_lines={len(lines)}")
+
+PYWEEKLYMULTILANG
+    )
+    echo "$result"
+    date +%s > "$WEEKLY_MULTILANG_LAST_RUN_FILE"
+    log_statusd "📊 Weekly multilang: $result"
+}
+
+# ═══════════════════════════════════════════════════════════════════════════════
 # MODUŁ 8: Daemon loop
 # ═══════════════════════════════════════════════════════════════════════════════
 
@@ -5363,6 +5703,13 @@ run_statusd_cycle() {
     historia_result=$(maybe_run_historia 2>/dev/null || true)
     if [ -n "$historia_result" ]; then
         log_statusd "📜 Historia: $historia_result"
+    fi
+
+    # Tygodniowy raport wielojęzyczny (MODUŁ 10 — co 7 dni)
+    local weekly_ml_result
+    weekly_ml_result=$(maybe_run_weekly_multilang 2>/dev/null || true)
+    if [ -n "$weekly_ml_result" ]; then
+        log_statusd "📊 Weekly multilang: $weekly_ml_result"
     fi
 
     # Zapisz stan daemona
@@ -5411,6 +5758,9 @@ case "${1:-}" in
         echo ""
         echo "═══ Historia snapshot ═══"
         run_historia_snapshot
+        echo ""
+        echo "═══ Weekly multilang raport ═══"
+        run_weekly_multilang
         ;;
     --daemon)
         daemon_loop
@@ -5434,6 +5784,11 @@ case "${1:-}" in
         HISTORIA_ENABLED=true
         echo "═══ Historia snapshot (ręczne uruchomienie) ═══"
         run_historia_snapshot
+        ;;
+    --weekly-multilang)
+        WEEKLY_MULTILANG_ENABLED=true
+        echo "═══ Weekly multilang raport (ręczne uruchomienie) ═══"
+        run_weekly_multilang
         ;;
     --daily-report)
         generate_daily_report
@@ -5469,7 +5824,7 @@ for line in sys.stdin:
 " || echo "  (brak wpisów)"
         ;;
     *)
-        echo "Użycie: $0 {--once|--daemon|--doctor|--kpi|--recommend|--aggregate|--reconcile-registry|--daily-report|--alert-check|--auto-action|--enable-auto|--disable-auto|--audit}"
+        echo "Użycie: $0 {--once|--daemon|--doctor|--kpi|--recommend|--aggregate|--reconcile-registry|--daily-report|--alert-check|--auto-action|--enable-auto|--disable-auto|--audit|--weekly-multilang}"
         echo ""
         echo "  --once       Jednorazowy pełny raport (telemetria + doctor + KPI + rekomendacje + raport 24h)"
         echo "  --daemon     Ciągła pętla co ${DAEMON_INTERVAL_SECONDS}s"
@@ -5479,6 +5834,7 @@ for line in sys.stdin:
         echo "  --aggregate  Agregacja telemetrii do JSON"
         echo "  --reconcile-registry Uzgodnij registry keys z LIVE (zapis korekty w i18n_file_status.json)"
         echo "  --historia   Ręczny snapshot historii postępu → i18n_status_historia.md"
+        echo "  --weekly-multilang  Ręczny raport tygodniowy wielojęzyczny → i18n_weekly_multilang_report.md"
         echo "  --daily-report Wygeneruj raport zarządczy 24h (JSON + MD)"
         echo "  --alert-check Jednorazowa ewaluacja i ewentualny webhook alert"
         echo "  --auto-action Wykonaj auto-akcje z guardrailami"

@@ -719,14 +719,6 @@
     "verified": false,
     "updated_at": "2026-02-13T22:51:37.644798Z"
   },
-  "data.otservbr.global.npc.a.fading.memory.L53.1295": {
-    "src_hash": "22567aba8d64ab99fe9115b6f7cb9c48",
-    "text": "Oh...",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T22:51:37.646665Z"
-  },
   "item.18386.name": {
     "src_hash": "adafff23fe27d62fa9d5220cc0b3a8ea",
     "text": "Убийца",

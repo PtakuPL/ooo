@@ -1,32 +1,32 @@
 [
   {
     "date": "2026-02-14",
-    "hours_covered": 11,
+    "hours_covered": 14,
     "threshold": 10,
     "is_final": false,
     "ts_first": "2026-02-14T08:00:00Z",
-    "ts_last": "2026-02-14T17:05:48Z",
-    "translated": 7216,
-    "guard_fail": 6274,
-    "suspicious_high": 9392,
-    "identical_to_en": 1141,
+    "ts_last": "2026-02-14T20:07:23Z",
+    "translated": 15758,
+    "guard_fail": 17653,
+    "suspicious_high": 21165,
+    "identical_to_en": 1485,
     "repair_start": 4800,
-    "repair_end": 39531,
-    "cycles": 49,
+    "repair_end": 39255,
+    "cycles": 195,
     "coverage_start": 22.5,
-    "coverage_end": 10.15,
-    "guard_fail_pct": 46.51,
-    "throughput_per_h": 656.0,
+    "coverage_end": 10.21,
+    "guard_fail_pct": 52.84,
+    "throughput_per_h": 1125.6,
     "per_lang": {
       "pl": {
-        "t": 4236,
-        "gf": 4834,
-        "cov": 45.88
+        "t": 8205,
+        "gf": 15461,
+        "cov": 47.59
       },
       "es": {
-        "t": 2740,
-        "gf": 1388,
-        "cov": 75.18
+        "t": 7313,
+        "gf": 2140,
+        "cov": 76.36
       },
       "cs": {
         "t": 80,
@@ -51,53 +51,53 @@
       "ru": {
         "t": 10,
         "gf": 0,
-        "cov": 33.67
+        "cov": 33.75
       }
     },
     "per_cat": {
-      "items.json": {
-        "t": 887,
-        "gf": 2655
-      },
       "monsters.json": {
-        "t": 867,
-        "gf": 180
-      },
-      "spells.json": {
-        "t": 834,
-        "gf": 82
+        "t": 3827,
+        "gf": 598
       },
       "npc.json": {
-        "t": 712,
-        "gf": 637
+        "t": 2293,
+        "gf": 3766
       },
       "html.json": {
-        "t": 676,
-        "gf": 239
-      },
-      "quests.json": {
-        "t": 622,
-        "gf": 348
+        "t": 2112,
+        "gf": 407
       },
       "server.json": {
-        "t": 563,
-        "gf": 530
+        "t": 1205,
+        "gf": 813
       },
-      "raids.json": {
-        "t": 540,
-        "gf": 55
+      "spells.json": {
+        "t": 1169,
+        "gf": 111
+      },
+      "items.json": {
+        "t": 984,
+        "gf": 7958
       },
       "scripts.json": {
-        "t": 437,
-        "gf": 523
+        "t": 783,
+        "gf": 1528
+      },
+      "raids.json": {
+        "t": 717,
+        "gf": 69
+      },
+      "quests.json": {
+        "t": 638,
+        "gf": 510
       },
       "books.json": {
-        "t": 305,
-        "gf": 220
+        "t": 331,
+        "gf": 229
       }
     },
     "mode_distribution": {
-      "AUTO_TRANSLATE": 390,
+      "AUTO_TRANSLATE": 1056,
       "MIGRATION": 2
     },
     "migration_completed": 15,

@@ -1,75 +1,75 @@
 {
-  "window_start_utc": "2026-02-14T17:01:52.870590Z",
-  "window_end_utc": "2026-02-14T18:01:52.870590Z",
+  "window_start_utc": "2026-02-14T19:22:59.550746Z",
+  "window_end_utc": "2026-02-14T20:22:59.550746Z",
   "window_hours": 1.0,
   "sources": [
     "i18n/status/worker_cycle_perf.jsonl",
     "i18n/status/translation_guard_report.jsonl",
     "i18n/status/suspicious_log.jsonl"
   ],
-  "total_cycles": 163,
+  "total_cycles": 264,
   "mode_distribution": {
-    "AUTO_TRANSLATE": 163
+    "AUTO_TRANSLATE": 264
   },
-  "auto_translate_cycles": 163,
+  "auto_translate_cycles": 264,
   "migration_cycles": 0,
   "pending_skip_count": 0,
   "pending_skip_share_pct": 0.0,
   "pending_skip_share_migration_pct": 0.0,
-  "translated": 2548,
-  "guard_fail": 1836,
-  "guard_fail_rate_pct": 41.9,
-  "no_progress_entries": 4,
-  "no_progress_rate_pct": 5.2,
-  "throughput_keys_per_h": 1532.8,
-  "suspicious_total": 3781,
+  "translated": 2898,
+  "guard_fail": 3203,
+  "guard_fail_rate_pct": 52.5,
+  "no_progress_entries": 8,
+  "no_progress_rate_pct": 7.5,
+  "throughput_keys_per_h": 1573.2,
+  "suspicious_total": 6577,
   "top_guard_fail_targets": [
     {
       "target": "pl/npc.json",
-      "translated": 320,
-      "guard_fail": 993,
+      "translated": 160,
+      "guard_fail": 1320,
       "guard_command": 0
     },
     {
-      "target": "pl/quests.json",
-      "translated": 11,
-      "guard_fail": 119,
+      "target": "pl/items.json",
+      "translated": 19,
+      "guard_fail": 1061,
+      "guard_command": 0
+    },
+    {
+      "target": "pl/scripts.json",
+      "translated": 15,
+      "guard_fail": 167,
       "guard_command": 0
     },
     {
       "target": "pl/monsters.json",
-      "translated": 400,
-      "guard_fail": 110,
-      "guard_command": 0
-    },
-    {
-      "target": "pl/server.json",
-      "translated": 2,
-      "guard_fail": 109,
-      "guard_command": 0
-    },
-    {
-      "target": "es/scripts.json",
-      "translated": 50,
-      "guard_fail": 86,
+      "translated": 560,
+      "guard_fail": 154,
       "guard_command": 0
     },
     {
       "target": "es/questlog.json",
-      "translated": 50,
-      "guard_fail": 52,
+      "translated": 123,
+      "guard_fail": 78,
       "guard_command": 0
     },
     {
       "target": "pl/html.json",
-      "translated": 195,
-      "guard_fail": 46,
+      "translated": 300,
+      "guard_fail": 60,
       "guard_command": 0
     },
     {
       "target": "pl/otclient_modules.json",
-      "translated": 40,
-      "guard_fail": 45,
+      "translated": 60,
+      "guard_fail": 57,
+      "guard_command": 0
+    },
+    {
+      "target": "es/scripts.json",
+      "translated": 39,
+      "guard_fail": 48,
       "guard_command": 0
     }
   ]

@@ -47,22 +47,6 @@
     "verified": false,
     "updated_at": "2026-02-13T23:13:14.816414Z"
   },
-  "npc.a_weakened_forest_fury.say_4": {
-    "src_hash": "055d4f5ac2a5439f55bddb2343c0a757",
-    "text": "Take care, guardian.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T23:13:14.821027Z"
-  },
-  "npc.albinius.say_10": {
-    "src_hash": "8ebe07d7adacdd880130a981ebf53704",
-    "text": "As you wish.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T23:13:14.826263Z"
-  },
   "npc.alesar.say_5": {
     "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
     "text": "Tuomet ne.",
@@ -95,22 +79,6 @@
     "verified": false,
     "updated_at": "2026-02-14T13:20:22.717175Z"
   },
-  "npc.andrew_lyze.say_14": {
-    "src_hash": "69ce05199222d304e8f82cb747eed8ab",
-    "text": "Don't waste my time.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T23:13:14.837664Z"
-  },
-  "npc.appaloosa.say_5": {
-    "src_hash": "cc67edbe5929572b201f9b2aa0f478f9",
-    "text": "Have a nice trip!",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T23:13:14.840713Z"
-  },
   "npc.appaloosa.say_9": {
     "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
     "text": "Tuomet ne.",
@@ -118,14 +86,6 @@
     "confidence": 0.996,
     "verified": false,
     "updated_at": "2026-02-14T13:20:22.720842Z"
-  },
-  "npc.ariella.say_15": {
-    "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
-    "text": "I see.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T23:13:14.841674Z"
   },
   "npc.arnold.say_1": {
     "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
@@ -135,14 +95,6 @@
     "verified": false,
     "updated_at": "2026-02-14T13:20:22.721710Z"
   },
-  "npc.atrad.say_3": {
-    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
-    "text": "You don't have it...",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T23:13:14.844492Z"
-  },
   "npc.aurita.say_1": {
     "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
     "text": "Tuomet ne.",
@@ -150,14 +102,6 @@
     "confidence": 0.996,
     "verified": false,
     "updated_at": "2026-02-14T13:20:22.722237Z"
-  },
-  "npc.avar_tar.say_5": {
-    "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
-    "text": "I see.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T23:13:14.845443Z"
   },
   "npc.awarness_of_the_emperor.say_1": {
     "src_hash": "706b1a009354e93f05beff4ba2e0a628",
@@ -199,14 +143,6 @@
     "verified": false,
     "updated_at": "2026-02-14T13:20:22.725917Z"
   },
-  "npc.brodrosch.say_5": {
-    "src_hash": "12d673409d71f1fc127ebad108378378",
-    "text": "No then.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T23:13:14.864523Z"
-  },
   "npc.brodrosch.walkaway_msg_1": {
     "src_hash": "5c29fcf0005b56ffead61fcf00537096",
     "text": "Na, sudie.",
@@ -230,22 +166,6 @@
     "confidence": 0.996,
     "verified": false,
     "updated_at": "2026-02-14T13:20:22.730571Z"
-  },
-  "npc.chester_kahs.say_23": {
-    "src_hash": "8ebe07d7adacdd880130a981ebf53704",
-    "text": "As you wish.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T23:13:14.891411Z"
-  },
-  "npc.chondur.say_18": {
-    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
-    "text": "You don't have it...",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T23:13:14.893217Z"
   },
   "npc.christoph.say_1": {
     "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
@@ -279,14 +199,6 @@
     "verified": false,
     "updated_at": "2026-02-14T13:20:22.736952Z"
   },
-  "npc.dedoras.walkaway_msg_1": {
-    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
-    "text": "Well, bye then.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T23:13:14.909852Z"
-  },
   "npc.demonguard.say_1": {
     "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
     "text": "Imk tai!",
@@ -294,94 +206,6 @@
     "confidence": 0.996,
     "verified": false,
     "updated_at": "2026-02-14T13:20:22.737972Z"
-  },
-  "npc.dukosch.say_5": {
-    "src_hash": "12d673409d71f1fc127ebad108378378",
-    "text": "No then.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T23:13:14.914602Z"
-  },
-  "npc.duncan.say_12": {
-    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
-    "text": "You don't have it...",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T23:13:14.915090Z"
-  },
-  "npc.duncan.say_14": {
-    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
-    "text": "You don't have it...",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T23:13:14.915441Z"
-  },
-  "npc.duncan.say_15": {
-    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
-    "text": "You don't have it...",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T23:13:14.915837Z"
-  },
-  "npc.duncan.say_17": {
-    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
-    "text": "You don't have it...",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T23:13:14.916191Z"
-  },
-  "npc.duncan.say_19": {
-    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
-    "text": "You don't have it...",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T23:13:14.916542Z"
-  },
-  "npc.elane.say_11": {
-    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
-    "text": "You don't have it...",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T23:13:14.921883Z"
-  },
-  "npc.elane.say_13": {
-    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
-    "text": "You don't have it...",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T23:13:14.922241Z"
-  },
-  "npc.elane.say_15": {
-    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
-    "text": "You don't have it...",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T23:13:14.922647Z"
-  },
-  "npc.elane.say_9": {
-    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
-    "text": "You don't have it...",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T23:13:14.923050Z"
-  },
-  "npc.emma.say_14": {
-    "src_hash": "8ebe07d7adacdd880130a981ebf53704",
-    "text": "As you wish.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T23:13:14.929265Z"
   },
   "npc.example_merchant.name": {
     "src_hash": "16373b8c3c6c497895786de3804c2e0c",
@@ -391,14 +215,6 @@
     "verified": false,
     "updated_at": "2026-02-13T23:13:14.936169Z"
   },
-  "npc.farhilorn_of_the_winter_court.say_3": {
-    "src_hash": "8ebe07d7adacdd880130a981ebf53704",
-    "text": "As you wish.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T23:13:14.938371Z"
-  },
   "npc.fenbala.say_3": {
     "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
     "text": "Imk tai!",
@@ -406,38 +222,6 @@
     "confidence": 0.996,
     "verified": false,
     "updated_at": "2026-02-14T13:20:22.744428Z"
-  },
-  "npc.ferks.farewell_msg_1": {
-    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
-    "text": "Have a nice day.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T23:13:14.939646Z"
-  },
-  "npc.ferks.walkaway_msg_1": {
-    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
-    "text": "Have a nice day.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T23:13:14.940081Z"
-  },
-  "npc.gabel.say_6": {
-    "src_hash": "8ebe07d7adacdd880130a981ebf53704",
-    "text": "As you wish.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T23:13:14.948991Z"
-  },
-  "npc.gewen.say_5": {
-    "src_hash": "12d673409d71f1fc127ebad108378378",
-    "text": "No then.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T23:13:14.957451Z"
   },
   "npc.ghostly_wolf.say_4": {
     "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
@@ -447,150 +231,6 @@
     "verified": false,
     "updated_at": "2026-02-14T13:20:22.748743Z"
   },
-  "npc.gnomus.say_10": {
-    "src_hash": "69ce05199222d304e8f82cb747eed8ab",
-    "text": "Don't waste my time.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T23:13:14.966860Z"
-  },
-  "npc.gnomus.say_11": {
-    "src_hash": "f5940523060652e3a7d9c269ce48de50",
-    "text": "Done.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T23:13:14.967117Z"
-  },
-  "npc.gnomus.say_13": {
-    "src_hash": "f5940523060652e3a7d9c269ce48de50",
-    "text": "Done.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T23:13:14.967368Z"
-  },
-  "npc.gnomus.say_15": {
-    "src_hash": "f5940523060652e3a7d9c269ce48de50",
-    "text": "Done.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T23:13:14.967595Z"
-  },
-  "npc.guide_alexena.say_2": {
-    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
-    "text": "Here you go.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T23:13:14.982596Z"
-  },
-  "npc.guide_behil.say_2": {
-    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
-    "text": "Here you go.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T23:13:14.983590Z"
-  },
-  "npc.guide_davina.say_2": {
-    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
-    "text": "Here you go.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T23:13:14.984604Z"
-  },
-  "npc.guide_edna.say_2": {
-    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
-    "text": "Here you go.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T23:13:14.985578Z"
-  },
-  "npc.guide_elena.say_2": {
-    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
-    "text": "Here you go.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T23:13:14.986555Z"
-  },
-  "npc.guide_jonathan.say_2": {
-    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
-    "text": "Here you go.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T23:13:14.987584Z"
-  },
-  "npc.guide_kunibert.say_2": {
-    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
-    "text": "Here you go.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T23:13:14.988537Z"
-  },
-  "npc.guide_luke.say_2": {
-    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
-    "text": "Here you go.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T23:13:14.989509Z"
-  },
-  "npc.guide_rahlkora.say_2": {
-    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
-    "text": "Here you go.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T23:13:14.990530Z"
-  },
-  "npc.guide_thelandil.say_2": {
-    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
-    "text": "Here you go.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T23:13:14.991560Z"
-  },
-  "npc.guide_tiko.say_2": {
-    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
-    "text": "Here you go.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T23:13:14.992438Z"
-  },
-  "npc.gurbasch.walkaway_msg_1": {
-    "src_hash": "8c767380dfcf1e12c4c84eef6324bdca",
-    "text": "Until next time.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T23:13:14.993867Z"
-  },
-  "npc.hairycles.say_66": {
-    "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
-    "text": "I see.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T23:13:14.994953Z"
-  },
-  "npc.hanna.say_10": {
-    "src_hash": "ebaeda37e982b71a905f5f1995285a85",
-    "text": "Maybe another time.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T23:13:14.998204Z"
-  },
   "npc.harsky.say_3": {
     "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
     "text": "Imk tai!",
@@ -598,14 +238,6 @@
     "confidence": 0.996,
     "verified": false,
     "updated_at": "2026-02-14T13:20:22.758767Z"
-  },
-  "npc.hjaern.say_15": {
-    "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
-    "text": "I see.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T23:13:15.004683Z"
   },
   "npc.ikassis.say_3": {
     "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
@@ -615,14 +247,6 @@
     "verified": false,
     "updated_at": "2026-02-14T13:20:22.761892Z"
   },
-  "npc.jack_fate_goroma.say_7": {
-    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
-    "text": "Set the sails!",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T23:13:15.031430Z"
-  },
   "npc.jean_claude.say_1": {
     "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
     "text": "Imk tai!",
@@ -630,54 +254,6 @@
     "confidence": 0.996,
     "verified": false,
     "updated_at": "2026-02-14T13:20:22.767478Z"
-  },
-  "npc.kallimae.walkaway_msg_1": {
-    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
-    "text": "Well, bye then.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T23:13:15.040665Z"
-  },
-  "npc.karith.say_10": {
-    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
-    "text": "Set the sails!",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T23:13:15.041259Z"
-  },
-  "npc.karith.say_12": {
-    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
-    "text": "Set the sails!",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T23:13:15.041571Z"
-  },
-  "npc.karith.say_14": {
-    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
-    "text": "Set the sails!",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T23:13:15.041876Z"
-  },
-  "npc.karith.say_16": {
-    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
-    "text": "Set the sails!",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T23:13:15.042175Z"
-  },
-  "npc.karith.say_18": {
-    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
-    "text": "Set the sails!",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T23:13:15.042571Z"
   },
   "item.21351.name": {
     "src_hash": "03944c28dd1d99648eda34c26d3de4ac",
@@ -694,14 +270,6 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-14T00:26:35.349122Z"
-  },
-  "item.21393.name": {
-    "src_hash": "4c50203dd80176e84e2da2675073da00",
-    "text": "krailos",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-14T00:26:35.349731Z"
   },
   "item.21432.name": {
     "src_hash": "31cd2c4b8700d3fba06777b6f804dbdd",
@@ -758,22 +326,6 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-14T00:26:35.370647Z"
-  },
-  "item.3051.name": {
-    "src_hash": "c193d863e3cfa9eb7c10c24bc406c615",
-    "text": "energy ring",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-14T00:26:35.372777Z"
-  },
-  "item.3088.name": {
-    "src_hash": "c193d863e3cfa9eb7c10c24bc406c615",
-    "text": "energy ring",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-14T00:26:35.374092Z"
   },
   "item.3147.name": {
     "src_hash": "967513bc0728d5d1211f01974ab4dee5",
@@ -1047,14 +599,6 @@
     "verified": false,
     "updated_at": "2026-02-14T00:26:35.402393Z"
   },
-  "item.36786.name": {
-    "src_hash": "8bac228393c7fc0a4f3ac1a0c4622505",
-    "text": "lavafungus ring",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-14T00:26:35.414988Z"
-  },
   "item.7107.name": {
     "src_hash": "7bdff76536f12a7c5ffde207e72cfe3a",
     "text": "ice",
@@ -1279,14 +823,6 @@
     "verified": false,
     "updated_at": "2026-02-14T00:27:04.444168Z"
   },
-  "item.10180.name": {
-    "src_hash": "418acd2dc26b4e76fa2db55ab2f3e659",
-    "text": "groud",
-    "source": "google_translate",
-    "confidence": 0.9,
-    "verified": false,
-    "updated_at": "2026-02-14T00:27:04.444365Z"
-  },
   "item.10181.name": {
     "src_hash": "b191656e3ce1b7048b8d4510eb17cf22",
     "text": "stebuklinga siena",
@@ -1319,134 +855,6 @@
     "verified": false,
     "updated_at": "2026-02-14T00:27:04.445297Z"
   },
-  "npc.karith.say_20": {
-    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
-    "text": "Set the sails!",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-14T01:40:17.057648Z"
-  },
-  "npc.karith.say_22": {
-    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
-    "text": "Set the sails!",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-14T01:40:17.058061Z"
-  },
-  "npc.karith.say_24": {
-    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
-    "text": "Set the sails!",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-14T01:40:17.058424Z"
-  },
-  "npc.karith.say_26": {
-    "src_hash": "69ce05199222d304e8f82cb747eed8ab",
-    "text": "Don't waste my time.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-14T01:40:17.058796Z"
-  },
-  "npc.kevin.say_46": {
-    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
-    "text": "You don't have it...",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-14T01:40:17.064516Z"
-  },
-  "npc.lardoc_bashsmite.say_10": {
-    "src_hash": "f5940523060652e3a7d9c269ce48de50",
-    "text": "Done.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-14T01:40:17.071722Z"
-  },
-  "npc.lardoc_bashsmite.say_12": {
-    "src_hash": "f5940523060652e3a7d9c269ce48de50",
-    "text": "Done.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-14T01:40:17.071963Z"
-  },
-  "npc.lardoc_bashsmite.say_14": {
-    "src_hash": "f5940523060652e3a7d9c269ce48de50",
-    "text": "Done.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-14T01:40:17.072186Z"
-  },
-  "npc.lardoc_bashsmite.say_9": {
-    "src_hash": "69ce05199222d304e8f82cb747eed8ab",
-    "text": "Don't waste my time.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-14T01:40:17.072753Z"
-  },
-  "npc.lokur.say_5": {
-    "src_hash": "12d673409d71f1fc127ebad108378378",
-    "text": "No then.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-14T01:40:17.082361Z"
-  },
-  "npc.lorbas.say_4": {
-    "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
-    "text": "I see.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-14T01:40:17.082739Z"
-  },
-  "npc.lugri.say_13": {
-    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
-    "text": "You don't have it...",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-14T01:40:17.089438Z"
-  },
-  "npc.lugri.say_15": {
-    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
-    "text": "You don't have it...",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-14T01:40:17.089809Z"
-  },
-  "npc.lugri.say_17": {
-    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
-    "text": "You don't have it...",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-14T01:40:17.090167Z"
-  },
-  "npc.lugri.say_19": {
-    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
-    "text": "You don't have it...",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-14T01:40:17.090616Z"
-  },
-  "npc.lukosch.say_5": {
-    "src_hash": "12d673409d71f1fc127ebad108378378",
-    "text": "No then.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-14T01:40:17.091072Z"
-  },
   "npc.maelyrra.say_18": {
     "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
     "text": "Tuomet ne.",
@@ -1454,30 +862,6 @@
     "confidence": 0.996,
     "verified": false,
     "updated_at": "2026-02-14T13:20:22.778484Z"
-  },
-  "npc.melfar.say_3": {
-    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
-    "text": "Here you go.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-14T01:40:17.099118Z"
-  },
-  "npc.nah_bob.say_6": {
-    "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
-    "text": "I see.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-14T01:40:17.109838Z"
-  },
-  "npc.norma.say_9": {
-    "src_hash": "ebaeda37e982b71a905f5f1995285a85",
-    "text": "Maybe another time.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-14T01:40:17.120554Z"
   },
   "npc.ocelus.farewell_msg_1": {
     "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
@@ -1487,22 +871,6 @@
     "verified": false,
     "updated_at": "2026-02-14T13:20:22.787237Z"
   },
-  "npc.ocelus.walkaway_msg_1": {
-    "src_hash": "cbca1e780ae7e44aa43debe068beb490",
-    "text": "Oh well.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-14T01:40:17.127658Z"
-  },
-  "npc.palomino.say_5": {
-    "src_hash": "cc67edbe5929572b201f9b2aa0f478f9",
-    "text": "Have a nice trip!",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-14T01:40:17.143274Z"
-  },
   "npc.palomino.say_9": {
     "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
     "text": "Tuomet ne.",
@@ -1510,30 +878,6 @@
     "confidence": 0.996,
     "verified": false,
     "updated_at": "2026-02-14T13:20:22.792047Z"
-  },
-  "npc.pukosch.say_5": {
-    "src_hash": "12d673409d71f1fc127ebad108378378",
-    "text": "No then.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-14T01:40:17.154524Z"
-  },
-  "npc.robson.say_4": {
-    "src_hash": "b5010567e209726a125c9ed59162eca5",
-    "text": "Fine.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-14T01:40:17.177276Z"
-  },
-  "npc.robson.say_6": {
-    "src_hash": "b5010567e209726a125c9ed59162eca5",
-    "text": "Fine.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-14T01:40:17.177753Z"
   },
   "npc.rose.say_4": {
     "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
@@ -1543,38 +887,6 @@
     "verified": false,
     "updated_at": "2026-02-14T13:20:22.799280Z"
   },
-  "npc.sam.say_10": {
-    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
-    "text": "You don't have it...",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-14T01:40:17.184287Z"
-  },
-  "npc.sebastian.say_2": {
-    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
-    "text": "Set the sails!",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-14T01:40:17.187599Z"
-  },
-  "npc.shirtalis_of_the_summer_court.say_3": {
-    "src_hash": "8ebe07d7adacdd880130a981ebf53704",
-    "text": "As you wish.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-14T01:40:17.199357Z"
-  },
-  "npc.siflind.say_31": {
-    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
-    "text": "Here you go.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-14T01:40:17.200851Z"
-  },
   "npc.stutch.say_3": {
     "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
     "text": "Imk tai!",
@@ -1582,22 +894,6 @@
     "confidence": 0.996,
     "verified": false,
     "updated_at": "2026-02-14T13:20:22.807751Z"
-  },
-  "npc.suzy.farewell_msg_1": {
-    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
-    "text": "Have a nice day.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-14T01:40:17.207680Z"
-  },
-  "npc.suzy.walkaway_msg_1": {
-    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
-    "text": "Have a nice day.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-14T01:40:17.208365Z"
   },
   "npc.taegen.say_1": {
     "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
@@ -1623,46 +919,6 @@
     "verified": false,
     "updated_at": "2026-02-14T01:40:17.211999Z"
   },
-  "npc.tarun.say_3": {
-    "src_hash": "8ebe07d7adacdd880130a981ebf53704",
-    "text": "As you wish.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-14T01:40:17.213436Z"
-  },
-  "npc.the_blind_prophet.say_14": {
-    "src_hash": "80daa793e7bea0f5da969ee940135c1a",
-    "text": "Take care!",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-14T01:40:17.217515Z"
-  },
-  "npc.the_orc_king.say_8": {
-    "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
-    "text": "I see.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-14T01:40:17.220864Z"
-  },
-  "npc.tom.stdmod_31": {
-    "src_hash": "aafa4696d9102bda2dc5250066f65b13",
-    "text": "He's an apple polisher.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-14T01:40:17.228263Z"
-  },
-  "npc.uncle.say_11": {
-    "src_hash": "8ebe07d7adacdd880130a981ebf53704",
-    "text": "As you wish.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-14T01:40:17.235370Z"
-  },
   "npc.warbert.say_1": {
     "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
     "text": "Imk tai!",
@@ -1670,22 +926,6 @@
     "confidence": 0.996,
     "verified": false,
     "updated_at": "2026-02-14T13:20:22.818015Z"
-  },
-  "npc.wyda.say_8": {
-    "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
-    "text": "I see.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-14T01:40:17.256091Z"
-  },
-  "npc.yaman.say_14": {
-    "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
-    "text": "I see.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-14T01:40:17.257627Z"
   },
   "npc.a_bearded_woman.greet_msg_1": {
     "src_hash": "dec88b2ad57c0b13cc1cf44b9711944a",
@@ -3687,22 +2927,6 @@
     "verified": false,
     "updated_at": "2026-02-14T06:48:39.319281Z"
   },
-  "npc.a_fluffy_squirrel.sendtrade_msg_1": {
-    "src_hash": "03c8f51bfe7975b94ce3c76ec9647116",
-    "text": "Chchch. Chh! <you're not sure, but it seems that squirrel wants to trade your valuable acorns for useless stones that it found and considered uneatable>",
-    "source": "google_translate",
-    "confidence": 0.9,
-    "verified": false,
-    "updated_at": "2026-02-14T06:48:39.320323Z"
-  },
-  "npc.a_fluffy_squirrel.stdmod_1": {
-    "src_hash": "ac2f68634467394485198b5db1d3f7a3",
-    "text": "Chh? Chhh?? <though you don't understand squirrelish, that one seems really excited>",
-    "source": "google_translate",
-    "confidence": 0.9,
-    "verified": false,
-    "updated_at": "2026-02-14T06:48:39.321070Z"
-  },
   "npc.a_frog.farewell_msg_1": {
     "src_hash": "588e73837fba9553ffca81df889548ec",
     "text": "Taip, atsisveikink ir daugiau nebegrįžk!",
@@ -4407,14 +3631,6 @@
     "verified": false,
     "updated_at": "2026-02-14T11:39:05.546583Z"
   },
-  "item.10388.name": {
-    "src_hash": "373afc213a9bc8b34a14a6cb3d1cadba",
-    "text": "drakinata",
-    "source": "google_translate",
-    "confidence": 0.9,
-    "verified": false,
-    "updated_at": "2026-02-14T11:39:12.986067Z"
-  },
   "item.10389.name": {
     "src_hash": "a29bac723ca2d59ed78a2d715e17e92f",
     "text": "sai",
@@ -4430,14 +3646,6 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-14T11:39:12.986964Z"
-  },
-  "item.10391.name": {
-    "src_hash": "14d0ab7dd6dbb7192ef42e58e739a6e5",
-    "text": "drachaku",
-    "source": "google_translate",
-    "confidence": 0.9,
-    "verified": false,
-    "updated_at": "2026-02-14T11:39:12.987238Z"
   },
   "item.10392.name": {
     "src_hash": "72736292655d59d37b2a8280704ebe84",
@@ -5471,22 +4679,6 @@
     "verified": false,
     "updated_at": "2026-02-14T11:51:36.845817Z"
   },
-  "quests.actions_coral.msg_1": {
-    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
-    "text": "Sorry.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-14T11:51:36.846140Z"
-  },
-  "quests.actions_crystal.msg_1": {
-    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
-    "text": "Sorry.",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-14T11:51:36.846535Z"
-  },
   "quests.bigfoot_burden.chest_empty": {
     "src_hash": "a96509dffb06f1f5933de18be57bb03e",
     "text": "You found.",
@@ -5510,14 +4702,6 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-14T11:51:36.852229Z"
-  },
-  "quests.movements_arena_pit.say_1": {
-    "src_hash": "477fb3950c49773dfcb06d6a48db93db",
-    "text": "Fight!",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-14T11:51:36.852659Z"
   },
   "quests.threatened_dreams.it_is_empty": {
     "src_hash": "947b915abfadca7bdc405c1541974c61",
@@ -5886,14 +5070,6 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-14T12:07:28.178848Z"
-  },
-  "quests.actions_boxramp.msg_1": {
-    "src_hash": "5bca0ac5063448c84fdbf68693d08cc8",
-    "text": "Clonk.",
-    "source": "google_translate",
-    "confidence": 0.9,
-    "verified": false,
-    "updated_at": "2026-02-14T12:07:28.179120Z"
   },
   "quests.actions_brain.msg_1": {
     "src_hash": "76b9ee74c4dea36035865e57903f9629",

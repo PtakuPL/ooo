@@ -126,7 +126,7 @@
   "talkaction.god.icons.msg_playericon_usage": "[EN] Usage: /playericon {icon_id}, {quantity}, {direction (optional: up/down)}",
   "talkaction.god.ip_ban.msg_already_banned": "{name} ya tiene IP prohibida.",
   "talkaction.god.ip_ban.msg_banned": "{name} ha sido prohibida por propiedad intelectual.",
-  "talkaction.god.kv.msg_allkv_value": "[EN] kv[{key}] = {value}",
+  "talkaction.god.kv.msg_allkv_value": "kv[{key}] = {value}",
   "talkaction.god.kv.msg_cooldown_cleared": "Se ha eliminado el tiempo de reutilización del jefe para {boss}.",
   "talkaction.god.kv.msg_key_not_found": "Clave {key} no encontrada para {name}.",
   "talkaction.god.kv.msg_player_invalid": "El jugador '{name}' no encontrado o no es un jugador válido.",

@@ -11346,6 +11346,14 @@ def _is_proper_noun_key(key, en_value):
         return True
     if key.startswith(("quest.", "raid.", "achievement.")) and key.endswith((".title", ".name")):
         return True
+    # Monster names with TitleCase are proper nouns (The Sandking, Countess Sorrow)
+    if key.startswith("monster.") and key.endswith((".name", ".desc")):
+        en_stripped_tmp = en_value.strip()
+        _words = [w for w in re.findall(r"[A-Za-z\u00c0-\u00ff]+", en_stripped_tmp)]
+        # TitleCase words or starts with 'a/an' article + TitleCase = proper noun
+        _content_words = [w for w in _words if w.lower() not in ('a', 'an', 'the')]
+        if _content_words and all(w[:1].isupper() or not w[0].isalpha() for w in _content_words):
+            return True
     en_stripped = en_value.strip()
     if len(en_stripped) <= 3:
         return True
@@ -13061,6 +13069,11 @@ for key, en_text in iter_items:
                         placeholders += 1
                     continue
                 if max_sev == "CRITICAL":
+                    # Jeśli TM dał identical_to_en → TM entry jest zły (EN copy), usuń go
+                    if any(_has_issue_type(issues, "identical_to_en") for _ in [1]):
+                        if key in tm_data:
+                            del tm_data[key]
+                            tm_updates += 1
                     if use_google_translate:
                         # TM CRITICAL (identical_to_en, semantic_mismatch, etc.) — try GT.
                         gt_pending.append((key, en_text, h, suspicious_existing_current))
@@ -13343,19 +13356,29 @@ free_gt_translated = 0
 if mid_batch_preempt and gt_pending:
     print(f"⚡ MID-BATCH PREEMPT: pomijam GT fallback (pozostało {len(gt_pending)} kluczy) aby przyjąć pending command")
 
+# Klucze z gt_pending które nie zostaną przetworzone → deferred queue
+_gt_overflow_to_deferred = []
+
 if use_google_translate and gt_pending and not mid_batch_preempt:
     import time
     gt_lang = _gt_lang_code(target_lang)
 
-    # Limit GT do translate_limit (jeśli ustawiony)
+    # GT ma gwarantowany minimalny budżet — TM nie może go zablokować.
+    # GT dostaje min(len(gt_pending), max(gt_min_budget, remaining)).
+    # gt_min_budget = 50% translate_limit lub 40 kluczy (cokolwiek jest większe).
     gt_todo = gt_pending
     if translate_limit > 0:
         remaining = translate_limit - translated
-        if remaining <= 0:
-            gt_todo = []
-            print(f"⚠️ GT: limit tłumaczeń osiągnięty ({translate_limit}), pomijam GT")
+        gt_min_budget = max(int(translate_limit * 0.5), 40)
+        gt_effective_limit = max(remaining, gt_min_budget)
+        if gt_effective_limit <= 0:
+            gt_effective_limit = gt_min_budget
+        if len(gt_pending) > gt_effective_limit:
+            gt_todo = gt_pending[:gt_effective_limit]
+            _gt_overflow_to_deferred = gt_pending[gt_effective_limit:]
+            print(f"🔄 GT: {len(gt_pending)} kluczy w kolejce, limit={gt_effective_limit} (min_budget={gt_min_budget}), overflow={len(_gt_overflow_to_deferred)} → deferred queue")
         else:
-            gt_todo = gt_pending[:remaining]
+            gt_todo = gt_pending
 
     # ── FAZA 1: Google Cloud Translation API (jeśli dostępne) ────────────
     cloud_failed_keys = []  # klucze które Cloud API nie przetłumaczył → fallback do free GT
@@ -13645,6 +13668,12 @@ if use_google_translate and gt_pending and not mid_batch_preempt:
     # Podsumowanie GT (Cloud + Free łącznie)
     if cloud_translated > 0 or free_gt_translated > 0:
         print(f"📊 GT łącznie: cloud={cloud_translated} + free={free_gt_translated} = {gt_translated} przetłumaczonych")
+
+# ── Overflow GT → deferred queue (klucze które nie zmieściły się w limicie) ──
+if _gt_overflow_to_deferred:
+    for key, en_text, h, suspicious in _gt_overflow_to_deferred:
+        _enqueue_deferred_translation(status_dir, target_lang, json_file, key, en_text, "gt_overflow_limit")
+    print(f"📋 Overflow: {len(_gt_overflow_to_deferred)} kluczy zapisanych do deferred queue")
 
 # ── Guard: zapobiegaj pustym wartościom (defense-in-depth) ─────────────────
 _empty_guard_fixed = 0

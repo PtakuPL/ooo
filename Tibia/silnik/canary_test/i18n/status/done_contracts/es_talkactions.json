@@ -3,9 +3,9 @@
   "lang": "es",
   "conditions": {
     "no_critical_token_errors": {
-      "ok": false,
+      "ok": true,
       "guard_placeholder": 0,
-      "guard_pipe": 1
+      "guard_pipe": 0
     },
     "guard_command_below_threshold": {
       "ok": true,
@@ -19,10 +19,10 @@
       "real_translations": 172
     },
     "quality_entry_present": {
-      "ok": true,
-      "has_quality_data": true
+      "ok": false,
+      "has_quality_data": false
     }
   },
   "is_done": false,
-  "timestamp": "2026-02-14T17:38:17.627747Z"
+  "timestamp": "2026-02-14T19:57:41.923262Z"
 }

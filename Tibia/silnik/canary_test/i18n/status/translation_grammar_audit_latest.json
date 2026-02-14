@@ -1,19 +1,19 @@
 {
-  "timestamp": "2026-02-14T17:20:31.480812Z",
+  "timestamp": "2026-02-14T20:22:10.308428Z",
   "schema_version": "1.0",
   "total_langs": 52,
   "total_domains": 38,
-  "total_genuine_checked": 150896,
+  "total_genuine_checked": 152309,
   "total_issues": 857,
   "severity_totals": {
     "critical": 42,
-    "warning": 288,
-    "info": 527
+    "warning": 289,
+    "info": 526
   },
   "issue_type_breakdown": {
-    "punctuation_missing": 439,
+    "punctuation_missing": 438,
     "html_tag_mismatch": 121,
-    "number_drift": 82,
+    "number_drift": 84,
     "double_spaces": 58,
     "bracket_mismatch": 52,
     "artifact_token": 37,
@@ -22,7 +22,7 @@
     "mixed_language": 14,
     "truncated": 11,
     "placeholder_mismatch": 5,
-    "repeated_words": 3
+    "repeated_words": 2
   },
   "lang_summary": [
     {
@@ -30,11 +30,11 @@
       "total_issues": 50,
       "domains_affected": 6,
       "critical": 3,
-      "warning": 35,
-      "info": 12,
+      "warning": 36,
+      "info": 11,
       "top_domains": {
-        "npc.json": 43,
-        "books.json": 2,
+        "npc.json": 41,
+        "books.json": 4,
         "monsters.json": 2,
         "client.json": 1,
         "dataroot.json": 1
@@ -655,9 +655,9 @@
   ],
   "domain_breakdown": {
     "achievements.json": 459,
-    "npc.json": 137,
+    "npc.json": 135,
+    "books.json": 55,
     "scripts.json": 54,
-    "books.json": 53,
     "items.json": 51,
     "cpp.json": 23,
     "server.json": 20,
@@ -6355,6 +6355,26 @@
       "tr_sample": "Radzę nie próbować tego, dopóki nie będziesz mieć co najmniej 20-letniego doświadczenia w budowie kolei...<Cóż, wygląda "
     },
     {
+      "type": "number_drift",
+      "severity": "warning",
+      "detail": "missing=['1']",
+      "lang": "pl",
+      "domain": "books.json",
+      "key": "book.otbm.jaul_friday_4_am_1",
+      "en_sample": "Jaul: Friday (4 AM - 1 PM)",
+      "tr_sample": "Jaul: piątek (4:00–13:00)"
+    },
+    {
+      "type": "number_drift",
+      "severity": "warning",
+      "detail": "missing=['1']",
+      "lang": "pl",
+      "domain": "books.json",
+      "key": "book.otbm.jaul_friday_4_am_1_1b3ad4fd",
+      "en_sample": "Jaul: Friday (4 AM - 1 PM)",
+      "tr_sample": "Jaul: piątek (4:00–13:00)"
+    },
+    {
       "type": "double_spaces",
       "severity": "info",
       "detail": "double or multiple spaces detected",
@@ -6813,26 +6833,6 @@
       "key": "npc.alkestios.stdmod_7",
       "en_sample": "Some call us nature spirits or peri but we prefer the term fae. Most of us are rather reclusive and live peaceful lives ",
       "tr_sample": "Niektórzy nazywają nas duchami natury albo peri, ale my wolimy określenie fae. Większość z nas prowadzi raczej odosobnio"
-    },
-    {
-      "type": "repeated_words",
-      "severity": "warning",
-      "detail": "3+ consecutive identical words detected",
-      "lang": "pl",
-      "domain": "npc.json",
-      "key": "npc.barnabas_dee.say_5",
-      "en_sample": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure ",
-      "tr_sample": "Nie, nie, nie. Potrzebuję 15 dawek świeżo zebranego pyłku! Proszę, zbierz te 15 dawek sam, żebym miał absolutną pewność,"
-    },
-    {
-      "type": "punctuation_missing",
-      "severity": "info",
-      "detail": "en_ends='.' tr_ends='…'",
-      "lang": "pl",
-      "domain": "npc.json",
-      "key": "npc.bozo.mission_30_t3_4",
-      "en_sample": "The orc king in the orc fortress Uldrek's Rock and the last one to EITHER Yaman, the green djinn, OR, Nah'Bob, the blue ",
-      "tr_sample": "Król orków w orczej fortecy Skała Uldreka i ostatni do ALBO Yamana, zielonego dżina, LUB, Nah'Bob, niebieskiego dżina…"
     },
     {
       "type": "repeated_words",

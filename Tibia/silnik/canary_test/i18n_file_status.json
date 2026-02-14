@@ -254,266 +254,266 @@
       "registry_keys": 0,
       "drift": 1048,
       "drift_pct": 100.0,
-      "updated_at": "2026-02-14T18:02:09.765941Z"
+      "updated_at": "2026-02-14T20:24:18.304176Z"
     },
     "actions.json": {
       "keys": 35,
       "registry_keys": 0,
       "drift": 35,
       "drift_pct": 100.0,
-      "updated_at": "2026-02-14T18:02:09.765941Z"
+      "updated_at": "2026-02-14T20:24:18.304176Z"
     },
     "books.json": {
       "keys": 1403,
       "registry_keys": 0,
       "drift": 1403,
       "drift_pct": 100.0,
-      "updated_at": "2026-02-14T18:02:09.765941Z"
+      "updated_at": "2026-02-14T20:24:18.304176Z"
     },
     "chatchannels.json": {
       "keys": 16,
       "registry_keys": 0,
       "drift": 16,
       "drift_pct": 100.0,
-      "updated_at": "2026-02-14T18:02:09.765941Z"
+      "updated_at": "2026-02-14T20:24:18.304176Z"
     },
     "client.json": {
       "keys": 242,
       "registry_keys": 0,
       "drift": 242,
       "drift_pct": 100.0,
-      "updated_at": "2026-02-14T18:02:09.765941Z"
+      "updated_at": "2026-02-14T20:24:18.304176Z"
     },
     "cpp.json": {
       "keys": 879,
       "registry_keys": 0,
       "drift": 879,
       "drift_pct": 100.0,
-      "updated_at": "2026-02-14T18:02:09.765941Z"
+      "updated_at": "2026-02-14T20:24:18.304176Z"
     },
     "creaturescripts.json": {
       "keys": 4,
       "registry_keys": 0,
       "drift": 4,
       "drift_pct": 100.0,
-      "updated_at": "2026-02-14T18:02:09.765941Z"
+      "updated_at": "2026-02-14T20:24:18.304176Z"
     },
     "dataroot.json": {
       "keys": 3,
       "registry_keys": 0,
       "drift": 3,
       "drift_pct": 100.0,
-      "updated_at": "2026-02-14T18:02:09.765941Z"
+      "updated_at": "2026-02-14T20:24:18.304176Z"
     },
     "errors.json": {
       "keys": 0,
       "registry_keys": 0,
       "drift": 0,
       "drift_pct": 0.0,
-      "updated_at": "2026-02-14T18:02:09.765941Z"
+      "updated_at": "2026-02-14T20:24:18.304176Z"
     },
     "events.json": {
       "keys": 14,
       "registry_keys": 0,
       "drift": 14,
       "drift_pct": 100.0,
-      "updated_at": "2026-02-14T18:02:09.765941Z"
+      "updated_at": "2026-02-14T20:24:18.304176Z"
     },
     "example_merchant.json": {
       "keys": 14,
       "registry_keys": 0,
       "drift": 14,
       "drift_pct": 100.0,
-      "updated_at": "2026-02-14T18:02:09.765941Z"
+      "updated_at": "2026-02-14T20:24:18.304176Z"
     },
     "globalevents.json": {
       "keys": 5,
       "registry_keys": 0,
       "drift": 5,
       "drift_pct": 100.0,
-      "updated_at": "2026-02-14T18:02:09.765941Z"
+      "updated_at": "2026-02-14T20:24:18.304176Z"
     },
     "html.json": {
       "keys": 1495,
       "registry_keys": 0,
       "drift": 1495,
       "drift_pct": 100.0,
-      "updated_at": "2026-02-14T18:02:09.765941Z"
+      "updated_at": "2026-02-14T20:24:18.304176Z"
     },
     "items.json": {
       "keys": 17057,
       "registry_keys": 0,
       "drift": 17057,
       "drift_pct": 100.0,
-      "updated_at": "2026-02-14T18:02:09.765941Z"
+      "updated_at": "2026-02-14T20:24:18.304176Z"
     },
     "libs.json": {
       "keys": 89,
       "registry_keys": 0,
       "drift": 89,
       "drift_pct": 100.0,
-      "updated_at": "2026-02-14T18:02:09.765941Z"
+      "updated_at": "2026-02-14T20:24:18.304176Z"
     },
     "messages.json": {
       "keys": 11,
       "registry_keys": 0,
       "drift": 11,
       "drift_pct": 100.0,
-      "updated_at": "2026-02-14T18:02:09.765941Z"
+      "updated_at": "2026-02-14T20:24:18.304176Z"
     },
     "modules.json": {
       "keys": 19,
       "registry_keys": 0,
       "drift": 19,
       "drift_pct": 100.0,
-      "updated_at": "2026-02-14T18:02:09.765941Z"
+      "updated_at": "2026-02-14T20:24:18.304176Z"
     },
     "monsters.json": {
       "keys": 5915,
       "registry_keys": 0,
       "drift": 5915,
       "drift_pct": 100.0,
-      "updated_at": "2026-02-14T18:02:09.765941Z"
+      "updated_at": "2026-02-14T20:24:18.304176Z"
     },
     "mounts.json": {
       "keys": 0,
       "registry_keys": 0,
       "drift": 0,
       "drift_pct": 0.0,
-      "updated_at": "2026-02-14T18:02:09.765941Z"
+      "updated_at": "2026-02-14T20:24:18.304176Z"
     },
     "movements.json": {
       "keys": 2,
       "registry_keys": 0,
       "drift": 2,
       "drift_pct": 100.0,
-      "updated_at": "2026-02-14T18:02:09.765941Z"
+      "updated_at": "2026-02-14T20:24:18.304176Z"
     },
     "npc.json": {
       "keys": 13769,
       "registry_keys": 0,
       "drift": 13769,
       "drift_pct": 100.0,
-      "updated_at": "2026-02-14T18:02:09.765941Z"
+      "updated_at": "2026-02-14T20:24:18.304176Z"
     },
     "npclib.json": {
       "keys": 147,
       "registry_keys": 0,
       "drift": 147,
       "drift_pct": 100.0,
-      "updated_at": "2026-02-14T18:02:09.765941Z"
+      "updated_at": "2026-02-14T20:24:18.304176Z"
     },
     "otclient_data.json": {
       "keys": 72,
       "registry_keys": 0,
       "drift": 72,
       "drift_pct": 100.0,
-      "updated_at": "2026-02-14T18:02:09.765941Z"
+      "updated_at": "2026-02-14T20:24:18.304176Z"
     },
     "otclient_mods.json": {
       "keys": 0,
       "registry_keys": 0,
       "drift": 0,
       "drift_pct": 0.0,
-      "updated_at": "2026-02-14T18:02:09.765941Z"
+      "updated_at": "2026-02-14T20:24:18.304176Z"
     },
     "otclient_modules.json": {
       "keys": 1987,
       "registry_keys": 0,
       "drift": 1987,
       "drift_pct": 100.0,
-      "updated_at": "2026-02-14T18:02:09.765941Z"
+      "updated_at": "2026-02-14T20:24:18.304176Z"
     },
     "otclient_src.json": {
       "keys": 0,
       "registry_keys": 0,
       "drift": 0,
       "drift_pct": 0.0,
-      "updated_at": "2026-02-14T18:02:09.765941Z"
+      "updated_at": "2026-02-14T20:24:18.304176Z"
     },
     "otclient_tools.json": {
       "keys": 0,
       "registry_keys": 0,
       "drift": 0,
       "drift_pct": 0.0,
-      "updated_at": "2026-02-14T18:02:09.765941Z"
+      "updated_at": "2026-02-14T20:24:18.304176Z"
     },
     "php.json": {
       "keys": 59,
       "registry_keys": 0,
       "drift": 59,
       "drift_pct": 100.0,
-      "updated_at": "2026-02-14T18:02:09.765941Z"
+      "updated_at": "2026-02-14T20:24:18.304176Z"
     },
     "questlog.json": {
       "keys": 1918,
       "registry_keys": 0,
       "drift": 1918,
       "drift_pct": 100.0,
-      "updated_at": "2026-02-14T18:02:09.765941Z"
+      "updated_at": "2026-02-14T20:24:18.304176Z"
     },
     "quests.json": {
       "keys": 610,
       "registry_keys": 0,
       "drift": 610,
       "drift_pct": 100.0,
-      "updated_at": "2026-02-14T18:02:09.765941Z"
+      "updated_at": "2026-02-14T20:24:18.304176Z"
     },
     "raids.json": {
       "keys": 273,
       "registry_keys": 0,
       "drift": 273,
       "drift_pct": 100.0,
-      "updated_at": "2026-02-14T18:02:09.765941Z"
+      "updated_at": "2026-02-14T20:24:18.304176Z"
     },
     "scripts.json": {
       "keys": 2170,
       "registry_keys": 0,
       "drift": 2170,
       "drift_pct": 100.0,
-      "updated_at": "2026-02-14T18:02:09.765941Z"
+      "updated_at": "2026-02-14T20:24:18.304176Z"
     },
     "server.json": {
       "keys": 2574,
       "registry_keys": 0,
       "drift": 2574,
       "drift_pct": 100.0,
-      "updated_at": "2026-02-14T18:02:09.765941Z"
+      "updated_at": "2026-02-14T20:24:18.304176Z"
     },
     "spells.json": {
       "keys": 1534,
       "registry_keys": 0,
       "drift": 1534,
       "drift_pct": 100.0,
-      "updated_at": "2026-02-14T18:02:09.765941Z"
+      "updated_at": "2026-02-14T20:24:18.304176Z"
     },
     "startup.json": {
       "keys": 23,
       "registry_keys": 0,
       "drift": 23,
       "drift_pct": 100.0,
-      "updated_at": "2026-02-14T18:02:09.765941Z"
+      "updated_at": "2026-02-14T20:24:18.304176Z"
     },
     "talkactions.json": {
       "keys": 199,
       "registry_keys": 0,
       "drift": 199,
       "drift_pct": 100.0,
-      "updated_at": "2026-02-14T18:02:09.765941Z"
+      "updated_at": "2026-02-14T20:24:18.304176Z"
     },
     "ui.json": {
       "keys": 0,
       "registry_keys": 0,
       "drift": 0,
       "drift_pct": 0.0,
-      "updated_at": "2026-02-14T18:02:09.765941Z"
+      "updated_at": "2026-02-14T20:24:18.304176Z"
     },
     "world.json": {
       "keys": 0,
       "registry_keys": 0,
       "drift": 0,
       "drift_pct": 0.0,
-      "updated_at": "2026-02-14T18:02:09.765941Z"
+      "updated_at": "2026-02-14T20:24:18.304176Z"
     }
   }
 }

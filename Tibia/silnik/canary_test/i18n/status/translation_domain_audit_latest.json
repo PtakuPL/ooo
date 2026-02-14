@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-14T18:01:09.254794Z",
+  "timestamp": "2026-02-14T20:24:26.946869Z",
   "total_langs": 52,
   "total_domains": 38,
   "entries": [
@@ -3769,10 +3769,10 @@
       "lang": "es",
       "domain": "achievements.json",
       "total_keys": 1048,
-      "genuine": 1038,
-      "genuine_pct": 99.05,
-      "en_copy": 6,
-      "en_prefix": 4,
+      "genuine": 1039,
+      "genuine_pct": 99.14,
+      "en_copy": 7,
+      "en_prefix": 2,
       "missing": 0,
       "placeholder_mismatch": 0
     },
@@ -3989,10 +3989,10 @@
       "lang": "es",
       "domain": "npc.json",
       "total_keys": 13769,
-      "genuine": 10199,
-      "genuine_pct": 74.07,
-      "en_copy": 203,
-      "en_prefix": 3367,
+      "genuine": 10248,
+      "genuine_pct": 74.43,
+      "en_copy": 211,
+      "en_prefix": 3310,
       "missing": 0,
       "placeholder_mismatch": 0
     },
@@ -4033,10 +4033,10 @@
       "lang": "es",
       "domain": "otclient_modules.json",
       "total_keys": 1987,
-      "genuine": 1773,
-      "genuine_pct": 89.23,
-      "en_copy": 70,
-      "en_prefix": 144,
+      "genuine": 1786,
+      "genuine_pct": 89.88,
+      "en_copy": 72,
+      "en_prefix": 129,
       "missing": 0,
       "placeholder_mismatch": 0
     },
@@ -4077,10 +4077,10 @@
       "lang": "es",
       "domain": "questlog.json",
       "total_keys": 1918,
-      "genuine": 286,
-      "genuine_pct": 14.91,
+      "genuine": 290,
+      "genuine_pct": 15.12,
       "en_copy": 82,
-      "en_prefix": 1550,
+      "en_prefix": 1546,
       "missing": 0,
       "placeholder_mismatch": 0
     },
@@ -4112,8 +4112,8 @@
       "total_keys": 2170,
       "genuine": 2070,
       "genuine_pct": 95.39,
-      "en_copy": 31,
-      "en_prefix": 69,
+      "en_copy": 33,
+      "en_prefix": 67,
       "missing": 0,
       "placeholder_mismatch": 0
     },
@@ -4121,10 +4121,10 @@
       "lang": "es",
       "domain": "server.json",
       "total_keys": 2574,
-      "genuine": 891,
-      "genuine_pct": 34.62,
-      "en_copy": 136,
-      "en_prefix": 1547,
+      "genuine": 1251,
+      "genuine_pct": 48.6,
+      "en_copy": 119,
+      "en_prefix": 1204,
       "missing": 0,
       "placeholder_mismatch": 0
     },
@@ -4132,10 +4132,10 @@
       "lang": "es",
       "domain": "spells.json",
       "total_keys": 1534,
-      "genuine": 513,
-      "genuine_pct": 33.44,
-      "en_copy": 808,
-      "en_prefix": 213,
+      "genuine": 563,
+      "genuine_pct": 36.7,
+      "en_copy": 805,
+      "en_prefix": 166,
       "missing": 0,
       "placeholder_mismatch": 0
     },
@@ -4156,8 +4156,8 @@
       "total_keys": 199,
       "genuine": 155,
       "genuine_pct": 77.89,
-      "en_copy": 3,
-      "en_prefix": 41,
+      "en_copy": 4,
+      "en_prefix": 40,
       "missing": 0,
       "placeholder_mismatch": 0
     },
@@ -13405,10 +13405,10 @@
       "lang": "pl",
       "domain": "books.json",
       "total_keys": 1403,
-      "genuine": 512,
-      "genuine_pct": 36.49,
+      "genuine": 548,
+      "genuine_pct": 39.06,
       "en_copy": 1,
-      "en_prefix": 890,
+      "en_prefix": 854,
       "missing": 0,
       "placeholder_mismatch": 0
     },
@@ -13438,10 +13438,10 @@
       "lang": "pl",
       "domain": "cpp.json",
       "total_keys": 879,
-      "genuine": 594,
-      "genuine_pct": 67.58,
-      "en_copy": 63,
-      "en_prefix": 222,
+      "genuine": 618,
+      "genuine_pct": 70.31,
+      "en_copy": 58,
+      "en_prefix": 203,
       "missing": 0,
       "placeholder_mismatch": 0
     },
@@ -13526,10 +13526,10 @@
       "lang": "pl",
       "domain": "items.json",
       "total_keys": 17057,
-      "genuine": 5622,
-      "genuine_pct": 32.96,
+      "genuine": 5653,
+      "genuine_pct": 33.14,
       "en_copy": 16,
-      "en_prefix": 11419,
+      "en_prefix": 11388,
       "missing": 0,
       "placeholder_mismatch": 0
     },
@@ -13561,8 +13561,8 @@
       "total_keys": 19,
       "genuine": 16,
       "genuine_pct": 84.21,
-      "en_copy": 1,
-      "en_prefix": 2,
+      "en_copy": 2,
+      "en_prefix": 1,
       "missing": 0,
       "placeholder_mismatch": 0
     },
@@ -13603,10 +13603,10 @@
       "lang": "pl",
       "domain": "npc.json",
       "total_keys": 13769,
-      "genuine": 6065,
-      "genuine_pct": 44.05,
-      "en_copy": 57,
-      "en_prefix": 7647,
+      "genuine": 6335,
+      "genuine_pct": 46.01,
+      "en_copy": 58,
+      "en_prefix": 7376,
       "missing": 0,
       "placeholder_mismatch": 0
     },
@@ -13713,10 +13713,10 @@
       "lang": "pl",
       "domain": "raids.json",
       "total_keys": 273,
-      "genuine": 64,
-      "genuine_pct": 23.44,
+      "genuine": 101,
+      "genuine_pct": 37.0,
       "en_copy": 125,
-      "en_prefix": 84,
+      "en_prefix": 47,
       "missing": 0,
       "placeholder_mismatch": 0
     },
@@ -13724,10 +13724,10 @@
       "lang": "pl",
       "domain": "scripts.json",
       "total_keys": 2170,
-      "genuine": 898,
-      "genuine_pct": 41.38,
-      "en_copy": 29,
-      "en_prefix": 1243,
+      "genuine": 1034,
+      "genuine_pct": 47.65,
+      "en_copy": 31,
+      "en_prefix": 1105,
       "missing": 0,
       "placeholder_mismatch": 0
     },
@@ -13746,10 +13746,10 @@
       "lang": "pl",
       "domain": "spells.json",
       "total_keys": 1534,
-      "genuine": 663,
-      "genuine_pct": 43.22,
-      "en_copy": 791,
-      "en_prefix": 80,
+      "genuine": 731,
+      "genuine_pct": 47.65,
+      "en_copy": 790,
+      "en_prefix": 13,
       "missing": 0,
       "placeholder_mismatch": 0
     },
@@ -14857,9 +14857,9 @@
       "lang": "ru",
       "domain": "npc.json",
       "total_keys": 13769,
-      "genuine": 403,
-      "genuine_pct": 2.93,
-      "en_copy": 63,
+      "genuine": 405,
+      "genuine_pct": 2.94,
+      "en_copy": 61,
       "en_prefix": 13303,
       "missing": 0,
       "placeholder_mismatch": 0
@@ -15000,9 +15000,9 @@
       "lang": "ru",
       "domain": "spells.json",
       "total_keys": 1534,
-      "genuine": 49,
-      "genuine_pct": 3.19,
-      "en_copy": 777,
+      "genuine": 55,
+      "genuine_pct": 3.59,
+      "en_copy": 771,
       "en_prefix": 708,
       "missing": 0,
       "placeholder_mismatch": 0
@@ -21744,7 +21744,7 @@
     "achievements.json": {
       "total_keys": 1048,
       "langs": 52,
-      "avg_genuine_pct": 64.81,
+      "avg_genuine_pct": 64.82,
       "total_placeholder_mismatch": 0
     },
     "actions.json": {
@@ -21756,7 +21756,7 @@
     "books.json": {
       "total_keys": 1403,
       "langs": 52,
-      "avg_genuine_pct": 8.13,
+      "avg_genuine_pct": 8.18,
       "total_placeholder_mismatch": 0
     },
     "chatchannels.json": {
@@ -21774,7 +21774,7 @@
     "cpp.json": {
       "total_keys": 879,
       "langs": 52,
-      "avg_genuine_pct": 5.09,
+      "avg_genuine_pct": 5.15,
       "total_placeholder_mismatch": 0
     },
     "creaturescripts.json": {
@@ -21822,7 +21822,7 @@
     "items.json": {
       "total_keys": 17057,
       "langs": 52,
-      "avg_genuine_pct": 6.03,
+      "avg_genuine_pct": 6.04,
       "total_placeholder_mismatch": 0
     },
     "libs.json": {
@@ -21864,7 +21864,7 @@
     "npc.json": {
       "total_keys": 13769,
       "langs": 52,
-      "avg_genuine_pct": 2.93,
+      "avg_genuine_pct": 2.97,
       "total_placeholder_mismatch": 0
     },
     "npclib.json": {
@@ -21888,7 +21888,7 @@
     "otclient_modules.json": {
       "total_keys": 1987,
       "langs": 52,
-      "avg_genuine_pct": 6.94,
+      "avg_genuine_pct": 6.95,
       "total_placeholder_mismatch": 0
     },
     "otclient_src.json": {
@@ -21924,25 +21924,25 @@
     "raids.json": {
       "total_keys": 273,
       "langs": 52,
-      "avg_genuine_pct": 1.55,
+      "avg_genuine_pct": 1.81,
       "total_placeholder_mismatch": 0
     },
     "scripts.json": {
       "total_keys": 2170,
       "langs": 52,
-      "avg_genuine_pct": 3.37,
+      "avg_genuine_pct": 3.49,
       "total_placeholder_mismatch": 16
     },
     "server.json": {
       "total_keys": 2574,
       "langs": 52,
-      "avg_genuine_pct": 2.85,
+      "avg_genuine_pct": 3.12,
       "total_placeholder_mismatch": 0
     },
     "spells.json": {
       "total_keys": 1534,
       "langs": 52,
-      "avg_genuine_pct": 1.72,
+      "avg_genuine_pct": 1.88,
       "total_placeholder_mismatch": 0
     },
     "startup.json": {

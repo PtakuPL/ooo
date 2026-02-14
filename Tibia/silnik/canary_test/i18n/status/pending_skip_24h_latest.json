@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-02-14T17:54:59.878199Z",
+  "timestamp": "2026-02-14T20:18:53.437796Z",
   "window_hours": 24,
   "pending_skip_count": 15,
-  "total_cycles_24h": 571,
-  "pending_skip_share_pct": 2.6,
+  "total_cycles_24h": 664,
+  "pending_skip_share_pct": 2.3,
   "reasons": {
     "backoff": 15
   },

@@ -2,20 +2,20 @@
   "lang": "pl",
   "script_group": "latin",
   "total_keys": 53586,
-  "translated": 25189,
-  "identical_to_en": 2061,
-  "placeholder_keys": 28397,
-  "coverage_pct": 47.0,
-  "issues_total": 36,
+  "translated": 25850,
+  "identical_to_en": 2059,
+  "placeholder_keys": 27736,
+  "coverage_pct": 48.2,
+  "issues_total": 37,
   "issues_by_type": {
-    "V6_newline_mismatch": 28,
+    "V6_newline_mismatch": 29,
     "V4_artifact": 7,
     "V1_placeholder_mismatch": 1
   },
   "issues_by_severity": {
     "CRITICAL": 1,
     "HIGH": 7,
-    "MEDIUM": 28,
+    "MEDIUM": 29,
     "LOW": 0
   },
   "score": 99.9,
@@ -149,5 +149,5 @@
     "length_ratio": 0,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-14T18:00:07.315406Z"
+  "validated_at": "2026-02-14T20:21:00.233700Z"
 }

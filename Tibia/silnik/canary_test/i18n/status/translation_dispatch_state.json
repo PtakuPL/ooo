@@ -1,19 +1,16 @@
 {
-  "timestamp": "2026-02-14T18:01:51.981878Z",
-  "cycle_counter": 802,
-  "last_target_key": "pl:spells.json",
-  "last_pending_total": 80,
+  "timestamp": "2026-02-14T20:23:56.996263Z",
+  "cycle_counter": 1092,
+  "last_target_key": "pl:otclient_modules.json",
+  "last_pending_total": 63,
   "last_tier": 1,
-  "last_cat_priority": 4,
+  "last_cat_priority": 9,
   "candidates_count": 45,
-  "active_candidates_count": 33,
-  "skipped_backoff": 8,
-  "skipped_guard_fail": 4,
+  "active_candidates_count": 31,
+  "skipped_backoff": 13,
+  "skipped_guard_fail": 1,
   "guard_fail_blacklist": {
-    "pl:items.json": 810,
-    "pl:server.json": 811,
-    "es:books.json": 808,
-    "es:quests.json": 807
+    "es:client.json": 1096
   },
   "tier_config": {
     "tier1": [
@@ -126,7 +123,7 @@
     "sv:items.json": 0,
     "pl:quests.json": 0,
     "es:spells.json": 0,
-    "pl:raids.json": 0,
+    "pl:raids.json": 3,
     "pl:spells.json": 0,
     "es:quests.json": 0,
     "es:actions.json": 0,
@@ -135,7 +132,7 @@
     "pl:cpp.json": 0,
     "es:questlog.json": 0,
     "pl:otclient_data.json": 3,
-    "es:talkactions.json": 0,
+    "es:talkactions.json": 1,
     "pl:startup.json": 0,
     "es:modules.json": 0,
     "es:cpp.json": 0,
@@ -155,7 +152,7 @@
     "pl:client.json": 0,
     "pl:php.json": 0,
     "pl:modules.json": 0,
-    "es:php.json": 1,
+    "es:php.json": 3,
     "es:events.json": 0,
     "de:html.json": 0,
     "de:spells.json": 0,
@@ -273,10 +270,10 @@
     "ja:monsters.json": 0,
     "kk:monsters.json": 0,
     "ko:monsters.json": 0,
-    "pl:server.json": 0,
-    "pl:libs.json": 1,
-    "es:achievements.json": 0,
-    "es:libs.json": 2,
+    "pl:server.json": 3,
+    "pl:libs.json": 3,
+    "es:achievements.json": 1,
+    "es:libs.json": 3,
     "pl:npclib.json": 0
   },
   "bootstrap_priority": {
@@ -330,8 +327,8 @@
       "pl"
     ],
     "lang_completion": {
-      "es": 75.48,
-      "pl": 46.59
+      "es": 76.37,
+      "pl": 47.71
     }
   }
 }

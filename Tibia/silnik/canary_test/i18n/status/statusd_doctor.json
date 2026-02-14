@@ -1,34 +1,31 @@
 {
-  "timestamp": "2026-02-14T18:01:02.437298Z",
+  "timestamp": "2026-02-14T20:24:18.688707Z",
   "first_run_ts": "2026-02-14T08:41:12.251776Z",
   "overall": "CRITICAL",
-  "issues_count": 1,
-  "warnings_count": 7,
+  "issues_count": 2,
+  "warnings_count": 3,
   "ok_count": 11,
   "issues": [
-    "SUSPICIOUS_HIGH_SPIKE: suspicious_high=10710 rate=87.251% window=6.0h top_lang=es:7631 per_lang=[es:7631(125.201%/critical),pl:2930(57.037%/critical),lt:119(35.103%/critical),de:7(70.0%/critical),fr:5(50.0%/critical)] per_domain=[npc.json:6141(152.156%/critical),monsters.json:2307(151.776%/critical),items.json:660(141.328%/critical),spells.json:396(34.737%/critical),server.json:359(51.14%/critical)]"
+    "SUSPICIOUS_HIGH_SPIKE: suspicious_high=20553 rate=99.232% window=6.0h top_lang=es:15713 per_lang=[es:15713(119.209%/critical),pl:4840(64.268%/critical)] per_domain=[npc.json:12185(159.135%/critical),monsters.json:4916(115.943%/critical),items.json:1183(292.822%/critical),server.json:663(55.855%/critical),spells.json:517(41.559%/critical)]",
+    "PRIORITY_GATE_STUCK_CRITICAL: pending=[es,pl] active_minutes=501.9 cycle_delta=566 best_quality_drop=0.000% reason=active_time_without_quality_drop"
   ],
   "warnings": [
-    "BLACKLISTED_TARGET: pl:items.json ma 800 guard_fail w blackliście",
-    "BLACKLISTED_TARGET: pl:server.json ma 811 guard_fail w blackliście",
-    "BLACKLISTED_TARGET: es:books.json ma 808 guard_fail w blackliście",
-    "BLACKLISTED_TARGET: es:quests.json ma 807 guard_fail w blackliście",
+    "BLACKLISTED_TARGET: es:client.json ma 1096 guard_fail w blackliście",
     "GUARDIAN_DEGRADED: guardian raportuje degraded",
-    "PRIORITY_GATE_STUCK: pending=[es,pl] active_minutes=358.7 cycle_delta=272 best_quality_drop=0.000% reason=active_time_without_quality_drop",
-    "FORCED_CMD_SLA_WARNING: view=full_window samples=14 (op=0/3) baseline=2026-02-14T15:51:45.006196Z baseline_src=manual_config epoch=e23ef942 sla_target=45s p95_roundtrip=159.7s p95_pickup=90.8s p95_pending=90.8s p95_exec=94.8s miss=10/14 consecutive_miss=0 action=collect_samples status=sla_elevated"
+    "FORCED_CMD_SLA_WARNING: view=full_window samples=14 (op=0/3) baseline=2026-02-14T15:51:45.006196Z baseline_src=manual_config epoch=3725c9b4 sla_target=45s p95_roundtrip=159.7s p95_pickup=90.8s p95_pending=90.8s p95_exec=94.8s miss=10/14 consecutive_miss=0 action=collect_samples status=sla_elevated"
   ],
   "ok": [
-    "heartbeat_fresh (15s, aging/stale/stuck=150/240/420s)",
-    "status_md_fresh (10s)",
-    "guard_report_fresh (16s)",
-    "dispatch_fresh (5s)",
-    "worker_pid_alive (2582614)",
-    "worker_subprocess_observed (main=2582614 matching=4 extras=3 desc=3 foreign=0 oldest_desc=4s oldest_foreign=0s status=extra_descendants_detected)",
-    "worker_translation_contract_ok (pid=2582614 translations_only=1 use_gt=1 no_git=1 priority_gate=1 priority_langs=[es,pl] pending=[es,pl])",
-    "guardian_daemon_lock_ok (owner_pid=2330149 owner_alive=1 lock_age=0s stale_threshold=60s daemon_state=running daemon_reason=lock_acquired status=owner_alive)",
-    "queue_freshness_ok (371s, WARN>900s CRIT>1800s)",
+    "heartbeat_fresh (89s, aging/stale/stuck=150/240/420s)",
+    "status_md_fresh (79s)",
+    "guard_report_fresh (23s)",
+    "dispatch_fresh (22s)",
+    "worker_pid_alive (2811753)",
+    "worker_subprocess_observed (main=2811753 matching=4 extras=3 desc=3 foreign=0 oldest_desc=13s oldest_foreign=0s status=extra_descendants_detected)",
+    "worker_translation_contract_ok (pid=2811753 translations_only=1 use_gt=1 no_git=1 priority_gate=1 priority_langs=[es,pl] pending=[es,pl])",
+    "guardian_daemon_lock_ok (owner_pid=2330149 owner_alive=1 lock_age=1s stale_threshold=60s daemon_state=running daemon_reason=lock_acquired status=owner_alive)",
+    "queue_freshness_ok (14s, WARN>900s CRIT>1800s)",
     "metrics_drift_ok (outside=0 (0.00%) live=53586 registry=53586)",
-    "repair_tuning_active (samples_2h=72)"
+    "repair_tuning_active (samples_2h=122)"
   ],
   "metrics_drift": {
     "available": true,
@@ -52,14 +49,14 @@
     "enabled": true,
     "active": true,
     "detected": true,
-    "severity": "warning",
+    "severity": "critical",
     "reason": "active_time_without_quality_drop",
     "pending_langs": [
       "es",
       "pl"
     ],
-    "active_minutes": 358.667,
-    "cycle_delta": 272,
+    "active_minutes": 501.938,
+    "cycle_delta": 566,
     "best_quality_drop_pct": 0.0,
     "thresholds": {
       "max_active_minutes": 180.0,
@@ -97,19 +94,19 @@
     "latest_mid_cycle_command_pickup_s": 13.0,
     "latest_pending_age_s": 13.0,
     "latest_exec_time_s": 2.0,
-    "active_window_start_utc": "2026-02-13T18:01:02.437298Z",
-    "active_window_end_utc": "2026-02-14T18:01:02.437298Z",
+    "active_window_start_utc": "2026-02-13T20:24:18.688707Z",
+    "active_window_end_utc": "2026-02-14T20:24:18.688707Z",
     "baseline_ts_utc": "2026-02-14T15:51:45.006196Z",
     "baseline_ts_valid": true,
-    "baseline_effective_start_utc": "2026-02-14T16:01:02.437298Z",
+    "baseline_effective_start_utc": "2026-02-14T18:24:18.688707Z",
     "baseline_source": "manual_config",
     "auto_baseline_on_epoch_change": true,
     "auto_baseline_applied": false,
     "auto_baseline_reason": "manual_baseline_active",
     "epoch_cooldown_seconds": 600,
-    "runtime_epoch_id": "e23ef9429e92a0e7",
-    "runtime_epoch_raw": "script_mtime=1771091952|script_size=889672|script_checkpoint=1771091952|restart_ts=1771091911|restart_cause=worker_missing|worker_pid=2582614",
-    "runtime_epoch_changed": false,
+    "runtime_epoch_id": "3725c9b4cfe8fb0b",
+    "runtime_epoch_raw": "script_mtime=1771100618|script_size=891727|script_checkpoint=1771100618|restart_ts=1771100618|restart_cause=mtime|worker_pid=2805411",
+    "runtime_epoch_changed": true,
     "baseline_runtime_epoch_linked": false,
     "recommended_action": {
       "action": "collect_samples",
@@ -134,8 +131,8 @@
       "latest_exec_time_s": 2.0,
       "severity": "warning",
       "status": "sla_elevated",
-      "window_start_utc": "2026-02-13T18:01:02.437298Z",
-      "window_end_utc": "2026-02-14T18:01:02.437298Z"
+      "window_start_utc": "2026-02-13T20:24:18.688707Z",
+      "window_end_utc": "2026-02-14T20:24:18.688707Z"
     },
     "operational_window": {
       "samples": 0,
@@ -155,8 +152,8 @@
       "latest_exec_time_s": 0.0,
       "severity": "info",
       "status": "no_completed_samples",
-      "window_start_utc": "2026-02-14T16:01:02.437298Z",
-      "window_end_utc": "2026-02-14T18:01:02.437298Z",
+      "window_start_utc": "2026-02-14T18:24:18.688707Z",
+      "window_end_utc": "2026-02-14T20:24:18.688707Z",
       "baseline_applied": false,
       "baseline_ts_utc": "2026-02-14T15:51:45.006196Z",
       "baseline_ts_valid": true
@@ -167,29 +164,29 @@
     "severity": "info",
     "status": "extra_descendants_detected",
     "reason": "multiple_descendant_worker_processes",
-    "main_pid": 2582614,
+    "main_pid": 2811753,
     "matched_pids": [
-      2582614,
-      2586165,
-      2586184,
-      2586186
+      2811753,
+      2812506,
+      2812519,
+      2812521
     ],
     "extra_pids": [
-      2586165,
-      2586184,
-      2586186
+      2812506,
+      2812519,
+      2812521
     ],
     "descendant_extra_pids": [
-      2586165,
-      2586184,
-      2586186
+      2812506,
+      2812519,
+      2812521
     ],
     "foreign_extra_pids": [],
     "total_matching": 4,
     "extra_count": 3,
     "descendant_extra_count": 3,
     "foreign_extra_count": 0,
-    "oldest_descendant_age_s": 4,
+    "oldest_descendant_age_s": 13,
     "oldest_foreign_age_s": 0,
     "warn_persist_seconds": 900,
     "critical_persist_seconds": 1800
@@ -199,7 +196,7 @@
     "severity": "ok",
     "status": "contract_ok",
     "reason": "translations_general_runtime_contract_ok",
-    "worker_pid": 2582614,
+    "worker_pid": 2811753,
     "worker_cmdline": "bash /home/ptaku/serweryt/Tibia/silnik/canary_test/i18n_worker_simple.sh --continuous --batch 20 --delay 4 --translations-only --use-gt --no-git --translate-limit 80 --parallel-langs 2",
     "has_translations_only": true,
     "has_use_gt": true,
@@ -228,7 +225,7 @@
     "daemon_reason": "lock_acquired",
     "owner_pid": 2330149,
     "owner_source": "manual",
-    "lock_age_s": 0,
+    "lock_age_s": 1,
     "owner_pid_alive": true,
     "stale_owner_dead": false,
     "lock_dir_present": true,
@@ -275,12 +272,12 @@
       "baseline_ts_utc": "2026-02-14T15:51:45.006196Z",
       "auto_baseline_on_epoch_change": true,
       "epoch_cooldown_seconds": 600,
-      "runtime_epoch_id": "e23ef9429e92a0e7",
-      "runtime_epoch_raw": "script_mtime=1771091952|script_size=889672|script_checkpoint=1771091952|restart_ts=1771091911|restart_cause=worker_missing|worker_pid=2582614",
+      "runtime_epoch_id": "3725c9b4cfe8fb0b",
+      "runtime_epoch_raw": "script_mtime=1771100618|script_size=891727|script_checkpoint=1771100618|restart_ts=1771100618|restart_cause=mtime|worker_pid=2805411",
       "baseline_source": "manual_config",
       "auto_baseline_applied": false,
       "auto_baseline_reason": "manual_baseline_active",
-      "epoch_changed": false
+      "epoch_changed": true
     },
     "guardian_daemon_lock": {
       "stale_owner_threshold_seconds": 60

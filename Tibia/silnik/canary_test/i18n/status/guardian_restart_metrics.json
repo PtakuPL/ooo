@@ -1,24 +1,24 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-02-14T18:01:48Z",
+  "generated_at_utc": "2026-02-14T20:23:38Z",
   "config": {
     "mtime_restart_min_interval_sec": 90,
     "restart_failure_backoff_base_sec": 20,
     "restart_failure_backoff_max_sec": 300
   },
   "last_restart": {
-    "timestamp": "2026-02-14T18:01:48Z",
+    "timestamp": "2026-02-14T20:23:38Z",
     "cause": "mtime",
     "success": true,
-    "pid": "2587378"
+    "pid": "2811753"
   },
   "failure_streak": 0,
   "cooldown_active": false,
   "cooldown_remaining_sec": 0,
   "next_allowed_utc": "",
   "totals": {
-    "attempts": 149,
-    "successes": 148,
+    "attempts": 151,
+    "successes": 150,
     "failures": 1,
     "blocked": 62
   },
@@ -30,8 +30,8 @@
       "blocked": 1
     },
     "mtime": {
-      "attempts": 84,
-      "successes": 83,
+      "attempts": 86,
+      "successes": 85,
       "failures": 1,
       "blocked": 61
     },
@@ -43,22 +43,6 @@
     }
   },
   "recent_events": [
-    {
-      "timestamp": "2026-02-14T16:36:14Z",
-      "type": "blocked",
-      "cause": "mtime",
-      "reason": "mtime_debounce",
-      "wait_sec": 20
-    },
-    {
-      "timestamp": "2026-02-14T16:49:21Z",
-      "type": "result",
-      "cause": "mtime",
-      "success": true,
-      "pid": "2491642",
-      "reason": "pid_file",
-      "backoff_sec": 0
-    },
     {
       "timestamp": "2026-02-14T16:56:38Z",
       "type": "result",
@@ -202,6 +186,24 @@
       "cause": "mtime",
       "success": true,
       "pid": "2587378",
+      "reason": "pid_file",
+      "backoff_sec": 0
+    },
+    {
+      "timestamp": "2026-02-14T20:19:41Z",
+      "type": "result",
+      "cause": "mtime",
+      "success": true,
+      "pid": "2805411",
+      "reason": "pid_file",
+      "backoff_sec": 0
+    },
+    {
+      "timestamp": "2026-02-14T20:23:38Z",
+      "type": "result",
+      "cause": "mtime",
+      "success": true,
+      "pid": "2811753",
       "reason": "pid_file",
       "backoff_sec": 0
     }

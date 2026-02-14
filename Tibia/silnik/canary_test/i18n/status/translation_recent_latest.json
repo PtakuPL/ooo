@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-14T18:01:50.101708Z",
+  "timestamp": "2026-02-14T20:24:24.773184Z",
   "language": "es",
-  "json_file": "server.json",
-  "translated": 80,
+  "json_file": "npc.json",
+  "translated": 24,
   "entries": [
     {
-      "key": "data.otservbr.global.npc.tarun.L117.1564",
-      "en": "Farewell.",
-      "translated": "Farewell.",
+      "key": "npc.ariella.say_15",
+      "en": "I see.",
+      "translated": "I see.",
       "source": "tm"
     },
     {
-      "key": "data.otservbr.global.npc.tarun.L121.1566",
-      "en": "Farewell.",
-      "translated": "Farewell.",
+      "key": "npc.arkulius.stdmod_3",
+      "en": "<mumbles>",
+      "translated": "<mumbles>",
       "source": "tm"
     },
     {
-      "key": "data.otservbr.global.npc.tefrit.L119.537",
-      "en": "Well, bye then.",
-      "translated": "Bueno, adiós entonces.",
-      "source": "simple"
-    },
-    {
-      "key": "data.otservbr.global.npc.the.empress.L78.443",
-      "en": "Greetings.",
-      "translated": "Greetings.",
+      "key": "npc.arkulius.voice_3",
+      "en": "<mumbles>",
+      "translated": "<mumbles>",
       "source": "tm"
     },
     {
-      "key": "data.otservbr.global.npc.the.empress.L84.444",
-      "en": "Well, bye then.",
-      "translated": "Bueno, adiós entonces.",
-      "source": "simple"
-    },
-    {
-      "key": "data.otservbr.global.npc.the.librarian.L87.395",
-      "en": "Well, bye then.",
-      "translated": "Bueno, adiós entonces.",
-      "source": "simple"
-    },
-    {
-      "key": "data.otservbr.global.npc.tigo.L96.858",
-      "en": "Well, bye then.",
-      "translated": "Bueno, adiós entonces.",
-      "source": "simple"
-    },
-    {
-      "key": "data.otservbr.global.npc.undal.L168.1467",
-      "en": "Well, bye then.",
-      "translated": "Bueno, adiós entonces.",
-      "source": "simple"
-    },
-    {
-      "key": "data.otservbr.global.npc.undal.L169.1468",
-      "en": "Well, bye then.",
-      "translated": "Bueno, adiós entonces.",
-      "source": "simple"
-    },
-    {
-      "key": "data.otservbr.global.npc.vanys.L168.532",
-      "en": "Well, bye then.",
-      "translated": "Bueno, adiós entonces.",
-      "source": "simple"
-    },
-    {
-      "key": "data.otservbr.global.npc.vanys.L169.533",
-      "en": "Well, bye then.",
-      "translated": "Bueno, adiós entonces.",
-      "source": "simple"
-    },
-    {
-      "key": "data.otservbr.global.npc.vascalir.L938.1546",
-      "en": "Farewell.",
-      "translated": "Farewell.",
+      "key": "npc.avar_tar.say_5",
+      "en": "I see.",
+      "translated": "I see.",
       "source": "tm"
     },
     {
-      "key": "data.otservbr.global.npc.vascalir.L939.1547",
-      "en": "Farewell.",
-      "translated": "Farewell.",
+      "key": "npc.barnabas_dee.say_5",
+      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
+      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
       "source": "tm"
     },
     {
-      "key": "data.otservbr.global.npc.yonan.L216.687",
-      "en": "Well, bye then.",
-      "translated": "Bueno, adiós entonces.",
-      "source": "simple"
+      "key": "npc.bozo.stdmod_116",
+      "en": "npc.bozo.mission_36_t1",
+      "translated": "npc.bozo.mission_36_t1",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.scripts.lib.register.actions.L430.1631",
-      "en": "You dug a hole! Walk onto it as long as it is open to jump down into the forest cave.",
-      "translated": "¡Cavaste un agujero! Camina sobre él mientras esté abierto para saltar hacia abajo a la cueva del bosque.",
-      "source": "simple"
+      "key": "npc.bozo.stdmod_92",
+      "en": "npc.bozo.mission_12_t1",
+      "translated": "npc.bozo.mission_12_t1",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.scripts.lib.register.actions.L438.1632",
-      "en": "You found a piece of the scroll. You pocket it quickly.",
-      "translated": "Encontraste un trozo del pergamino. Lo guardas rápidamente.",
-      "source": "simple"
+      "key": "npc.budrik.say_9",
+      "en": "Zzz...",
+      "translated": "Zzz...",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.scripts.lib.register.actions.L443.1633",
-      "en": "A torn scroll piece emerges. Probably gnawed off by rats.",
-      "translated": "Aparece un trozo de pergamino roto. Probablemente roído por ratas.",
-      "source": "simple"
+      "key": "npc.captain_haba_open_sea.larboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.scripts.lib.register.actions.L539.1635",
-      "en": "This table is made of several old doors. One of them has a noticeable ornate lock. Perhaps you could lever it out with a tool.",
-      "translated": "Esta mesa está hecha de varias puertas viejas. Una de ellas tiene una cerradura ornamentada notable. Quizás podrías sacarla con una herramienta.",
-      "source": "simple"
+      "key": "npc.captain_haba_open_sea.say_3",
+      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
+      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.scripts.lib.register.actions.L542.1636",
-      "en": "You already removed the old lock.",
-      "translated": "Ya retiraste la cerradura vieja.",
-      "source": "simple"
+      "key": "npc.captain_haba_open_sea.starboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
+      "source": "tm"
     },
     {
-      "key": "data.otservbr.global.scripts.lib.register.actions.L769.1637",
-      "en": "You can't remove this pile since it's currently holding up the tunnel.",
-      "translated": "No puedes retirar esta pila ya que actualmente sostiene el túnel.",
-      "source": "simple"
+      "key": "npc.captain_haba_open_sea.straight_3",
+      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
+      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
+      "source": "tm"
+    },
+    {
+      "key": "npc.captain_haba_open_sea.straight_5",
+      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
+      "source": "tm"
+    },
+    {
+      "key": "npc.cruleo.voice_1",
+      "en": "<gulp gulp>",
+      "translated": "<gulp gulp>",
+      "source": "tm"
+    },
+    {
+      "key": "npc.elliott.greet_msg_1",
+      "en": "<nods>",
+      "translated": "<nods>",
+      "source": "tm"
+    },
+    {
+      "key": "npc.gnomus.say_11",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
+    },
+    {
+      "key": "npc.gnomus.say_13",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
+    },
+    {
+      "key": "npc.gnomus.say_15",
+      "en": "Done.",
+      "translated": "Done.",
+      "source": "tm"
+    },
+    {
+      "key": "npc.hairycles.say_66",
+      "en": "I see.",
+      "translated": "I see.",
+      "source": "tm"
+    },
+    {
+      "key": "npc.amber.stdmod_41",
+      "en": "Never seen him around.",
+      "translated": "Nunca lo he visto por ahí.",
+      "source": "google_translate"
     }
   ]
 }

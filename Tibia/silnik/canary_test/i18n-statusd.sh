@@ -4228,6 +4228,22 @@ if tuning_warnings:
         f"{tuning_warnings[0]}",
     ))
 
+# ── Signal: worker translation contract broken ──────────────────────
+contract_issues = [i for i in doctor_issues if "WORKER_TRANSLATION_CONTRACT_BROKEN" in i]
+contract_warnings = [w for w in doctor_warnings if "WORKER_TRANSLATION_CONTRACT_WARNING" in w or "WORKER_TRANSLATION_CONTRACT_UNAVAILABLE" in w]
+if contract_issues:
+    signals.append((
+        "CRITICAL",
+        "worker_translation_contract_broken",
+        contract_issues[0],
+    ))
+elif contract_warnings:
+    signals.append((
+        "WARNING",
+        "worker_translation_contract_warning",
+        contract_warnings[0],
+    ))
+
 if not signals:
     print("NO_ALERT_CONDITION")
     raise SystemExit(0)
@@ -4237,12 +4253,14 @@ reason_rank = {
     "guardian_stuck": 8,
     "doctor_critical": 7,
     "guardian_daemon_lock_stale": 7,
+    "worker_translation_contract_broken": 6,
     "metrics_drift_high": 6,
     "priority_gate_stuck": 6,
     "forced_command_sla_critical": 6,
     "suspicious_high_spike": 5,
     "repair_queue_stagnation": 4,
     "guardian_daemon_lock_warning": 4,
+    "worker_translation_contract_warning": 3,
     "metrics_drift_elevated": 3,
     "forced_command_sla_warning": 3,
     "suspicious_high_elevated": 3,

@@ -90,12 +90,12 @@ TIER3_WEIGHT="${TIER3_WEIGHT:-1}"                  # Tier 3 = baseline
 # items (16894), npc (13769), monsters (5915), server (2574), spells, quests...
 CATEGORY_TRANSLATE_PRIORITY="items.json npc.json monsters.json server.json spells.json quests.json scripts.json actions.json raids.json"
 
-# ==== MULTILANG WAVE: LT/CS/EL/IT domain boost ====
+# ==== MULTILANG WAVE: domain boost for langs with very low coverage ====
 # Dedykowany dispatch wave dla języków z bardzo niskim coverage w kluczowych domenach.
 # Wymuszony priorytet domen: items.json (desc) → npc.json → quests.json
 # Domain floor: minimum 25% genuine coverage w items.json przed przejściem do npc/quests
 MULTILANG_WAVE_ENABLED="${MULTILANG_WAVE_ENABLED:-true}"
-MULTILANG_WAVE_LANGS="${MULTILANG_WAVE_LANGS:-lt cs el it}"
+MULTILANG_WAVE_LANGS="${MULTILANG_WAVE_LANGS:-lt cs el it ru ro}"
 MULTILANG_WAVE_DOMAIN_ORDER="${MULTILANG_WAVE_DOMAIN_ORDER:-items.json npc.json quests.json}"
 MULTILANG_WAVE_DOMAIN_FLOOR_PCT="${MULTILANG_WAVE_DOMAIN_FLOOR_PCT:-25}"   # min % genuine coverage w domenie zanim przejdzie do następnej
 MULTILANG_WAVE_WEIGHT="${MULTILANG_WAVE_WEIGHT:-2}"                        # boost weight dla tych języków w wave

@@ -6,6 +6,51 @@
 
 ---
 
+## Update wykonania (2026-02-14 16:50 UTC) — C3/C4/C5/C6/C7 + SLA verification + PYEPOCH fix
+
+Zrealizowane pełne zadania:
+
+- ✅ **Fix PYEPOCH Python syntax error w statusd (blocker)**
+  - Linia `state["bootstrap_first_observation"]` była rozdzielona na dwie linie w heredoc.
+  - Naprawiono: cała instrukcja w jednej linii, statusd restart OK (PID 2393788).
+
+- ✅ **C3: Webhook reason code `worker_translation_contract_broken`**
+  - Dodano dedykowany sygnał w `run_webhook_alerting()` dla `WORKER_TRANSLATION_CONTRACT_BROKEN` i `_WARNING`.
+  - Dodano reason_code do `reason_rank`: `worker_translation_contract_broken=6`, `_warning=3`.
+  - Doctor już wykrywa kontrakt (istniejący check), teraz alert jest propagowany do webhooka.
+
+- ✅ **C4+C5: RU/RO priorytetyzacja via multilang wave**
+  - Dodano `ru ro` do `MULTILANG_WAVE_LANGS` (było: `lt cs el it`, teraz: `lt cs el it ru ro`).
+  - RU/RO są już w TIER2 — wave daje ekstra boost z domain-floor gating.
+  - Stan: RU items=57%, achievements=84%, ale npc=0.67%. RO items=35%, npc=0.21%.
+  - Wave wymusi dispatch do npc.json (lowest coverage < 25% floor).
+
+- ✅ **C6: Diagnostyka [EN]-prefix FR/RO**
+  - FR: 34,327 [EN]-prefix (64%), RO: 44,197 (82%).
+  - Wniosek: to normalne pending tłumaczeń, nie bug. FR jest w TIER2 (50 cykli dispatched).
+  - RO dodane do wave — powinno przyspieszyć tłumaczenie.
+  - Brak dowodów na GT failure czy validation reject.
+
+- ✅ **C7: Diagnostyka PL coverage (44% genuine)**
+  - PL: 23,610 genuine (44%), 28,053 [EN]-prefix, 1,914 identical_to_en.
+  - PL w TIER1 z wagą 4x (najwyższy priorytet), 2432 cykli dispatched.
+  - Brak blokady — dispatch działa poprawnie, potrzeba czasu na przerobienie 28K backlogu.
+  - ES dla porównania: 39,323 genuine (73.4%).
+
+- ⏳ **WQ-FAST-7: SLA 24h — nie do potwierdzenia jeszcze**
+  - Operational window (2h od baseline) nie ma jeszcze próbek.
+  - Ostatnia próbka (sprzed baseline): `pending_age=13s`, `roundtrip=15s` — SLA met.
+  - Full window 24h: p95 pending_age=81s, p95 roundtrip=172s — FAIL (includes pre-fix samples).
+  - Wymaga: min 20 próbek w oknie post-baseline do formalnego audytu.
+
+Nowe problemy/TODO:
+- ⬜ Czekać na 20+ próbek forced command w operational window, potem potwierdzić SLA formalnie (WQ-FAST-7).
+- ⬜ C9: Quality gate proper nouns `identical_to_en_exempt`.
+- ⬜ H12: External SIMPLE_TRANSLATIONS do JSON.
+- ⬜ WQ-QUALITY-55-1: Automatyczny audyt gramatyczno-stylistyczny.
+- ⬜ H5: Reconcile backfill per-file.
+- ⬜ Skonfigurować `STATUSD_WEBHOOK_URL`.
+
 ## Update wykonania (2026-02-14 15:40 UTC) — orkiestracja systemd + multilang wave + domain audit + bootstrap epoch
 
 Zrealizowane pełne zadania:

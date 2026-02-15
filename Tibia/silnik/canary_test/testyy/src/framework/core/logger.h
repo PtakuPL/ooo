@@ -57,6 +57,7 @@ public:
     void fatal(const std::string_view what) { log(Fw::LogFatal, what); }
 
     // fmt-compatible overloads (for C++ only)
+#ifndef OTML_NO_FMT
     template<typename... Args>
     inline void debug(fmt::format_string<Args...> fmtStr, Args&&... args) {
         debug(fmt::format(fmtStr, std::forward<Args>(args)...));
@@ -86,42 +87,51 @@ public:
     inline void fine(fmt::format_string<Args...> fmtStr, Args&&... args) {
         fine(fmt::format(fmtStr, std::forward<Args>(args)...));
     }
+#endif // OTML_NO_FMT
 
     inline void trace() {
         logFunc(Fw::LogDebug, "", __PRETTY_FUNCTION__);
     }
 
+#ifndef OTML_NO_FMT
     template<typename... Args>
     inline void traceDebug(fmt::format_string<Args...> fmtStr, Args&&... args) {
         logFunc(Fw::LogDebug, fmt::format(fmtStr, std::forward<Args>(args)...), __PRETTY_FUNCTION__);
     }
+#endif
 
     inline void traceDebug(std::string_view what) {
         logFunc(Fw::LogDebug, what, __PRETTY_FUNCTION__);
     }
 
+#ifndef OTML_NO_FMT
     template<typename... Args>
     inline void traceInfo(fmt::format_string<Args...> fmtStr, Args&&... args) {
         logFunc(Fw::LogInfo, fmt::format(fmtStr, std::forward<Args>(args)...), __PRETTY_FUNCTION__);
     }
+#endif
 
     inline void traceInfo(std::string_view what) {
         logFunc(Fw::LogInfo, what, __PRETTY_FUNCTION__);
     }
 
+#ifndef OTML_NO_FMT
     template<typename... Args>
     inline void traceWarning(fmt::format_string<Args...> fmtStr, Args&&... args) {
         logFunc(Fw::LogWarning, fmt::format(fmtStr, std::forward<Args>(args)...), __PRETTY_FUNCTION__);
     }
+#endif
 
     inline void traceWarning(std::string_view what) {
         logFunc(Fw::LogWarning, what, __PRETTY_FUNCTION__);
     }
 
+#ifndef OTML_NO_FMT
     template<typename... Args>
     inline void traceError(fmt::format_string<Args...> fmtStr, Args&&... args) {
         logFunc(Fw::LogError, fmt::format(fmtStr, std::forward<Args>(args)...), __PRETTY_FUNCTION__);
     }
+#endif
 
     inline void traceError(std::string_view what) {
         logFunc(Fw::LogError, what, __PRETTY_FUNCTION__);

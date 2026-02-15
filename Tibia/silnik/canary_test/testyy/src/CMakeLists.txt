@@ -158,6 +158,7 @@ if (MSVC)
       PROPERTIES
         COMPILE_FLAGS "/Od /Ob0 /d2SSAOptimizer-"
         SKIP_PRECOMPILE_HEADERS ON
+        COMPILE_DEFINITIONS "OTML_NO_FMT"
     )
 
     # Disable LTCG/GL — they amplify ICE surface across TUs

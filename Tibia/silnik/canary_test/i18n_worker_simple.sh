@@ -3957,6 +3957,17 @@ md = f'''# 🌍 System Tłumaczeń I18N — Dashboard na żywo
 {auto_table}
 
 **Języki bez TM (AUTO → placeholdery):** {', '.join(no_tm_langs[:8]) + ('...' if len(no_tm_langs) > 8 else '') if no_tm_langs else 'brak (TM dostępny)'}
+
+### 🧩 Kontynuacja sesji (PL/ES) — start od quality i `[EN]`/pustych wpisów
+
+| Etap | Priorytet | Zakres | Komenda do `worker_commands.txt` | Warunek zakończenia |
+|------|-----------|--------|-----------------------------------|---------------------|
+| 1. Triage quality | 🔴 Krytyczny | PL + ES, błędy zgłaszane przez worker quality | `LANGVAL:pl`, `LANGVAL:es`, `TEST:pl`, `TEST:es` | Brak nowych błędów krytycznych w ostatnim cyklu |
+| 2. Naprawa jakości | 🔴 Krytyczny | Najpierw `npc`, potem `items`, `questlog`, `books` | `GRAMMARFIX:pl`, `GRAMMARFIX:es` | Spadek `suspicious_*` i `identical_to_en` w `quality_audit_latest.json` |
+| 3. Backlog `[EN]` / puste EN | 🟠 Wysoki | Klucze fallbackowe i historycznie puste wpisy | `AUTO:pl:npc.json:200`, `AUTO:es:npc.json:200` (potem `items.json`) | Maleje liczba `[EN]` w raportach quality/guard |
+| 4. Utrwalenie postępu | 🟡 Średni | Snapshot + kolejny etap do kontynuacji po timeout sesji | `STATUS` + notatka `NOTE:next PL/ES batch` | W `I18N_STATUS.md` jest jasny następny krok |
+
+Źródła kontroli: `i18n/status/quality_audit_latest.json`, `i18n/status/translation_guard_report.jsonl`, `i18n/status/suspicious_log.jsonl`.
 ---
 
 ## 🔴 LIVE: Szczegóły wykonania

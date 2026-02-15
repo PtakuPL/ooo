@@ -32,6 +32,8 @@
 
 #include <algorithm>
 
+#include <ranges>
+
 #include "framework/graphics/drawpoolmanager.h"
 #include "framework/graphics/shadermanager.h"
 
@@ -274,7 +276,7 @@ void UIWidget::removeChild(const UIWidgetPtr& child)
         if (isChildLocked(child))
             unlockChild(child);
 
-        const auto it = std::find(m_children.begin(), m_children.end(), child);
+        const auto it = std::ranges::find(m_children, child);
         m_children.erase(it);
         m_childrenById.erase(child->getId());
 
@@ -357,9 +359,9 @@ void UIWidget::focusNextChild(const Fw::FocusReason reason, const bool rotate)
         UIWidgetList rotatedChildren(m_children);
 
         if (m_focusedChild) {
-            const auto focusedIt = std::find(rotatedChildren.begin(), rotatedChildren.end(), m_focusedChild);
+            const auto focusedIt = std::ranges::find(rotatedChildren, m_focusedChild);
             if (focusedIt != rotatedChildren.end()) {
-                std::rotate(rotatedChildren.begin(), focusedIt, rotatedChildren.end());
+                std::ranges::rotate(rotatedChildren, focusedIt);
                 rotatedChildren.pop_front();
             }
         }
@@ -374,7 +376,7 @@ void UIWidget::focusNextChild(const Fw::FocusReason reason, const bool rotate)
     } else {
         auto it = m_children.begin();
         if (m_focusedChild)
-            it = std::find(m_children.begin(), m_children.end(), m_focusedChild);
+            it = std::ranges::find(m_children, m_focusedChild);
 
         for (; it != m_children.end(); ++it) {
             const auto& child = *it;
@@ -397,12 +399,12 @@ void UIWidget::focusPreviousChild(const Fw::FocusReason reason, const bool rotat
     UIWidgetPtr toFocus;
     if (rotate) {
         UIWidgetList rotatedChildren(m_children);
-        std::reverse(rotatedChildren.begin(), rotatedChildren.end());
+        std::ranges::reverse(rotatedChildren);
 
         if (m_focusedChild) {
-            const auto focusedIt = std::find(rotatedChildren.begin(), rotatedChildren.end(), m_focusedChild);
+            const auto focusedIt = std::ranges::find(rotatedChildren, m_focusedChild);
             if (focusedIt != rotatedChildren.end()) {
-                std::rotate(rotatedChildren.begin(), focusedIt, rotatedChildren.end());
+                std::ranges::rotate(rotatedChildren, focusedIt);
                 rotatedChildren.pop_front();
             }
         }
@@ -417,7 +419,7 @@ void UIWidget::focusPreviousChild(const Fw::FocusReason reason, const bool rotat
     } else {
         auto it = m_children.rbegin();
         if (m_focusedChild)
-            it = std::find(m_children.rbegin(), m_children.rend(), m_focusedChild);
+            it = std::ranges::find(std::ranges::reverse_view(m_children), m_focusedChild);
 
         for (; it != m_children.rend(); ++it) {
             const auto& child = *it;
@@ -444,7 +446,7 @@ void UIWidget::lowerChild(const UIWidgetPtr& child)
         return;
 
     // remove and push child again
-    const auto it = std::find(m_children.begin(), m_children.end(), child);
+    const auto it = std::ranges::find(m_children, child);
     if (it == m_children.end()) {
         g_logger.traceError("cannot find child");
         return;
@@ -470,7 +472,7 @@ void UIWidget::raiseChild(const UIWidgetPtr& child)
         return;
 
     // remove and push child again
-    const auto it = std::find(m_children.begin(), m_children.end(), child);
+    const auto it = std::ranges::find(m_children, child);
     if (it == m_children.end()) {
         g_logger.traceError("cannot find child");
         return;
@@ -507,7 +509,7 @@ void UIWidget::moveChildToIndex(const UIWidgetPtr& child, const int index)
     }
 
     // remove and push child again
-    const auto it = std::find(m_children.begin(), m_children.end(), child);
+    const auto it = std::ranges::find(m_children, child);
     if (it == m_children.end()) {
         g_logger.traceError("cannot find child");
         return;
@@ -591,7 +593,7 @@ void UIWidget::unlockChild(const UIWidgetPtr& child)
         return;
     }
 
-    const auto it = std::find(m_lockedChildren.begin(), m_lockedChildren.end(), child);
+    const auto it = std::ranges::find(m_lockedChildren, child);
     if (it == m_lockedChildren.end())
         return;
 
@@ -1223,13 +1225,13 @@ bool UIWidget::isAnchored()
 
 bool UIWidget::isChildLocked(const UIWidgetPtr& child)
 {
-    const auto it = std::find(m_lockedChildren.begin(), m_lockedChildren.end(), child);
+    const auto it = std::ranges::find(m_lockedChildren, child);
     return it != m_lockedChildren.end();
 }
 
 bool UIWidget::hasChild(const UIWidgetPtr& child)
 {
-    const auto it = std::find(m_children.begin(), m_children.end(), child);
+    const auto it = std::ranges::find(m_children, child);
     if (it != m_children.end())
         return true;
 
@@ -1355,8 +1357,7 @@ UIWidgetPtr UIWidget::getChildByPos(const Point& childPos)
     if (!containsPaddingPoint(childPos))
         return nullptr;
 
-    for (auto it = m_children.rbegin(); it != m_children.rend(); ++it) {
-        const auto& child = *it;
+    for (auto& child : std::ranges::reverse_view(m_children)) {
         if (child->isExplicitlyVisible() && child->containsPoint(childPos))
             return child;
     }
@@ -1375,8 +1376,7 @@ UIWidgetPtr UIWidget::getChildByIndex(int index)
 
 UIWidgetPtr UIWidget::getChildByState(const Fw::WidgetState state)
 {
-    for (auto it = m_children.rbegin(); it != m_children.rend(); ++it) {
-        const auto& child = *it;
+    for (auto& child : std::ranges::reverse_view(m_children)) {
         if (child->hasState(state))
             return child;
     }
@@ -1403,8 +1403,7 @@ UIWidgetPtr UIWidget::recursiveGetChildByPos(const Point& childPos, const bool w
     if (!containsPaddingPoint(childPos))
         return nullptr;
 
-    for (auto it = m_children.rbegin(); it != m_children.rend(); ++it) {
-        const auto& child = *it;
+    for (auto& child : std::ranges::reverse_view(m_children)) {
         if (child->isExplicitlyVisible() && child->containsPoint(childPos)) {
             if (const auto& subChild = child->recursiveGetChildByPos(childPos, wantsPhantom))
                 return subChild;
@@ -1418,8 +1417,7 @@ UIWidgetPtr UIWidget::recursiveGetChildByPos(const Point& childPos, const bool w
 
 UIWidgetPtr UIWidget::recursiveGetChildByState(const Fw::WidgetState state, const bool wantsPhantom)
 {
-    for (auto it = m_children.rbegin(); it != m_children.rend(); ++it) {
-        const auto& child = *it;
+    for (auto& child : std::ranges::reverse_view(m_children)) {
         if (child->hasState(state)) {
             if (const auto& subChild = child->recursiveGetChildByState(state, wantsPhantom))
                 return subChild;
@@ -1450,8 +1448,7 @@ UIWidgetList UIWidget::recursiveGetChildrenByPos(const Point& childPos)
         return {};
 
     UIWidgetList children;
-    for (auto it = m_children.rbegin(); it != m_children.rend(); ++it) {
-        const auto& child = *it;
+    for (auto& child : std::ranges::reverse_view(m_children)) {
         if (child->isExplicitlyVisible() && child->containsPoint(childPos)) {
             if (const UIWidgetList& subChildren = child->recursiveGetChildrenByPos(childPos); !subChildren.empty())
                 children.insert(children.end(), subChildren.begin(), subChildren.end());
@@ -1469,8 +1466,7 @@ UIWidgetList UIWidget::recursiveGetChildrenByMarginPos(const Point& childPos)
     if (!containsPaddingPoint(childPos))
         return children;
 
-    for (auto it = m_children.rbegin(); it != m_children.rend(); ++it) {
-        const auto& child = *it;
+    for (auto& child : std::ranges::reverse_view(m_children)) {
         if (child->isExplicitlyVisible() && child->containsMarginPoint(childPos)) {
             UIWidgetList subChildren = child->recursiveGetChildrenByMarginPos(childPos);
             if (!subChildren.empty())
@@ -1482,8 +1478,7 @@ UIWidgetList UIWidget::recursiveGetChildrenByMarginPos(const Point& childPos)
 }
 
 UIWidgetPtr UIWidget::getChildByStyleName(const std::string_view styleName) {
-    for (auto it = m_children.rbegin(); it != m_children.rend(); ++it) {
-        const auto& child = *it;
+    for (auto& child : std::ranges::reverse_view(m_children)) {
         if (child->getStyleName() == styleName)
             return child;
     }
@@ -1493,8 +1488,7 @@ UIWidgetPtr UIWidget::getChildByStyleName(const std::string_view styleName) {
 UIWidgetList UIWidget::recursiveGetChildrenByState(const Fw::WidgetState state)
 {
     UIWidgetList children;
-    for (auto it = m_children.rbegin(); it != m_children.rend(); ++it) {
-        const auto& child = *it;
+    for (auto& child : std::ranges::reverse_view(m_children)) {
         if (child->hasState(state)) {
             UIWidgetList subChildren = child->recursiveGetChildrenByState(state);
             if (!subChildren.empty())
@@ -1990,8 +1984,7 @@ bool UIWidget::propagateOnMouseEvent(const Point& mousePos, UIWidgetList& widget
 {
     bool ret = false;
     if (containsPaddingPoint(mousePos)) {
-        for (auto it = m_children.rbegin(); it != m_children.rend(); ++it) {
-            const auto& child = *it;
+        for (auto& child : std::ranges::reverse_view(m_children)) {
             if (child->isExplicitlyEnabled() && child->isExplicitlyVisible() && child->containsPoint(mousePos)) {
                 if (child->propagateOnMouseEvent(mousePos, widgetList)) {
                     ret = true;

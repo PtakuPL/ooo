@@ -23,7 +23,6 @@
 #include "shaderprogram.h"
 #include "graphics.h"
 
-#include <algorithm>
 #include <framework/core/application.h>
 #include <framework/core/eventdispatcher.h>
 #include <framework/stdext/hash.h>
@@ -82,7 +81,7 @@ bool ShaderProgram::addShaderFromSourceFile(ShaderType shaderType, const std::st
 
 void ShaderProgram::removeShader(const ShaderPtr& shader)
 {
-    const auto it = std::find(m_shaders.begin(), m_shaders.end(), shader);
+    const auto it = std::ranges::find(m_shaders, shader);
     if (it == m_shaders.end())
         return;
 

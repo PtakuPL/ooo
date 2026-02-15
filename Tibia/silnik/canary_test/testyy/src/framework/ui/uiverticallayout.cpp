@@ -24,6 +24,7 @@
 #include <framework/core/eventdispatcher.h>
 
 #include "uiwidget.h"
+#include <ranges>
 
 void UIVerticalLayout::applyStyle(const OTMLNodePtr& styleNode)
 {
@@ -84,8 +85,8 @@ bool UIVerticalLayout::internalUpdate()
     };
 
     if (m_alignBottom) {
-        for (auto it = parentWidget->m_children.rbegin(); it != parentWidget->m_children.rend(); ++it)
-            action(*it);
+        for (auto& it : std::ranges::reverse_view(parentWidget->m_children))
+            action(it);
     } else for (const auto& widget : parentWidget->m_children)
         action(widget);
 

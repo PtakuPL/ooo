@@ -26,6 +26,8 @@
 #include <framework/graphics/drawpoolmanager.h>
 #include <framework/ui/uiwidget.h>
 
+#include <ranges>
+
 #include "client.h"
 #include "effect.h"
 #include "game.h"
@@ -87,8 +89,7 @@ void Tile::draw(const Point& dest, const int flags, const LightViewPtr& lightVie
     drawAttachedEffect(dest, lightView, false);
 
     if (hasCommonItem()) {
-        for (auto it = m_things.rbegin(); it != m_things.rend(); ++it) {
-            const auto& item = *it;
+        for (auto& item : std::ranges::reverse_view(m_things)) {
             if (!item->isCommon()) continue;
             drawThing(item, dest, flags, drawElevation);
         }
@@ -223,7 +224,7 @@ void Tile::addWalkingCreature(const CreaturePtr& creature)
 
 void Tile::removeWalkingCreature(const CreaturePtr& creature)
 {
-    const auto it = std::find(m_walkingCreatures.begin(), m_walkingCreatures.end(), creature);
+    const auto it = std::ranges::find(m_walkingCreatures, creature);
     if (it == m_walkingCreatures.end())
         return;
 
@@ -345,7 +346,7 @@ bool Tile::removeThing(const ThingPtr thing)
         return true;
     }
 
-    const auto it = std::find(m_things.begin(), m_things.end(), thing);
+    const auto it = std::ranges::find(m_things, thing);
     if (it == m_things.end())
         return false;
 
@@ -456,8 +457,7 @@ uint8_t Tile::getMinimapColorByte()
     if (m_minimapColor != 0)
         return m_minimapColor;
 
-    for (auto it = m_things.rbegin(); it != m_things.rend(); ++it) {
-        const auto& thing = *it;
+    for (auto& thing : std::ranges::reverse_view(m_things)) {
         if (thing->isCreature() || thing->isCommon())
             continue;
 
@@ -761,8 +761,7 @@ bool Tile::checkForDetachableThing(const TileSelectType selectType)
     }
 
     if (hasBottomItem()) {
-        for (auto it = m_things.rbegin(); it != m_things.rend(); ++it) {
-            const auto& item = *it;
+        for (auto& item : std::ranges::reverse_view(m_things)) {
             if (!item->isOnBottom() || !item->canDraw()) continue;
 
             if (isFiltered && (item->isIgnoreLook() || item->isFluidContainer()))
@@ -775,8 +774,7 @@ bool Tile::checkForDetachableThing(const TileSelectType selectType)
     }
 
     if (hasTopItem()) {
-        for (auto it = m_things.rbegin(); it != m_things.rend(); ++it) {
-            const auto& item = *it;
+        for (auto& item : std::ranges::reverse_view(m_things)) {
             if (!item->isOnTop()) break;
             if (!item->canDraw()) continue;
 

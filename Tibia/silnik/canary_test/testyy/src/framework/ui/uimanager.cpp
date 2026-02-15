@@ -23,7 +23,6 @@
 #include "uimanager.h"
 #include "ui.h"
 
-#include <algorithm>
 #include <framework/core/eventdispatcher.h>
 #include <framework/core/modulemanager.h>
 #include <framework/core/resourcemanager.h>
@@ -116,7 +115,7 @@ void UIManager::inputEvent(const InputEvent& event)
 
                 // mouse release is always fired first on the pressed widget
                 if (m_pressedWidget) {
-                    const auto it = std::find(widgetList.begin(), widgetList.end(), m_pressedWidget);
+                    const auto it = std::ranges::find(widgetList, m_pressedWidget);
                     if (it != widgetList.end())
                         widgetList.erase(it);
                     widgetList.emplace_front(m_pressedWidget);

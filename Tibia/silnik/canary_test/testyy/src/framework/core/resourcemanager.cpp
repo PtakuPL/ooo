@@ -22,6 +22,7 @@
 
 #include <algorithm>
 #include <filesystem>
+#include <ranges>
 #include <string_view>
 
 #include "filestream.h"
@@ -180,7 +181,7 @@ bool ResourceManager::removeSearchPath(const std::string& path)
 {
     if (!PHYSFS_unmount(path.c_str()))
         return false;
-    const auto it = std::find(m_searchPaths.begin(), m_searchPaths.end(), path);
+    const auto it = std::ranges::find(m_searchPaths, path);
     assert(it != m_searchPaths.end());
     m_searchPaths.erase(it);
     return true;
@@ -189,8 +190,7 @@ bool ResourceManager::removeSearchPath(const std::string& path)
 void ResourceManager::searchAndAddPackages(const std::string& packagesDir, const std::string& packageExt)
 {
     auto files = listDirectoryFiles(packagesDir);
-    for (auto it = files.rbegin(); it != files.rend(); ++it) {
-        const auto& file = *it;
+    for (auto& file : std::ranges::reverse_view(files)) {
         if (!endsWith(file, packageExt))
             continue;
         std::string package = getRealDir(packagesDir) + "/" + file;
@@ -589,7 +589,7 @@ void ResourceManager::runEncryption(const std::string& password)
     std::vector<std::string> excludedExtensions = { ".rar",".ogg",".xml",".dll",".exe", ".log",".otb" };
     for (const auto& entry : std::filesystem::recursive_directory_iterator("./")) {
         if (std::string ext = entry.path().extension().string();
-            std::find(excludedExtensions.begin(), excludedExtensions.end(), ext) != excludedExtensions.end())
+            std::ranges::find(excludedExtensions, ext) != excludedExtensions.end())
             continue;
 
         std::ifstream ifs(entry.path().string(), std::ios_base::binary);
@@ -635,8 +635,7 @@ std::unordered_map<std::string, std::string> ResourceManager::filesChecksums()
 {
     std::unordered_map<std::string, std::string> ret;
     auto files = listDirectoryFiles("/", true, false, true);
-    for (auto it = files.rbegin(); it != files.rend(); ++it) {
-        const auto& filePath = *it;
+    for (auto& filePath : std::ranges::reverse_view(files)) {
         PHYSFS_File* file = PHYSFS_openRead(filePath.c_str());
         if (!file)
             continue;

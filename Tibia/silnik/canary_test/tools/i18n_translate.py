@@ -91,6 +91,83 @@ def get_untranslated_keys(category: str, target_lang: str, limit: int = 50) -> l
     return untranslated
 
 
+def _collect_rejected_keys(target_lang: str, validation_dir: Path) -> list:
+    """Zbierz klucze odrzucone przez automatyczny worker z raportów walidacji."""
+    keys = []
+    report_path = validation_dir / f"{target_lang}_report.json"
+    if report_path.exists():
+        try:
+            report_data = json.loads(report_path.read_text(encoding="utf-8"))
+            for item in report_data.get("worst_keys", []):
+                key = item.get("key")
+                if key:
+                    keys.append({"key": key, "issue_type": item.get("type", "report_issue")})
+        except Exception:
+            pass
+
+    for gf_path in validation_dir.glob(f"{target_lang}_*_grammarfix.json"):
+        try:
+            gf_data = json.loads(gf_path.read_text(encoding="utf-8"))
+            for item in gf_data.get("details", []):
+                if item.get("status") in {"skipped_guard", "translate_error", "skipped_no_translator"} and item.get("key"):
+                    keys.append({"key": item["key"], "issue_type": item.get("status", "grammarfix_issue")})
+        except Exception:
+            continue
+    return keys
+
+
+def generate_rejected_batch(targets: list, batch_size: int, validation_dir: Path) -> dict:
+    """Generuj batch z wpisów odrzuconych przez worker (do ręcznego tłumaczenia)."""
+    BATCH_DIR.mkdir(parents=True, exist_ok=True)
+    batch = {
+        "generated": datetime.now().isoformat(),
+        "category": "rejected_by_worker",
+        "target_languages": targets,
+        "batch_size": batch_size,
+        "keys": [],
+        "instructions": f"Przetłumacz wpisy odrzucone przez worker na: {', '.join(targets)}. Zachowaj placeholdery i tokeny bez zmian.",
+    }
+
+    en_cache = {}
+    keys_map = {}
+    for lang in targets:
+        for item in _collect_rejected_keys(lang, validation_dir):
+            key = item["key"]
+            category = key.split(".")[0]
+            if category not in en_cache:
+                en_file = I18N_DIR / "en" / f"{category}.json"
+                if en_file.exists():
+                    try:
+                        en_cache[category] = json.loads(en_file.read_text(encoding="utf-8"))
+                    except Exception:
+                        en_cache[category] = {}
+                else:
+                    en_cache[category] = {}
+            en_text = str(en_cache[category].get(key, "") or "")
+            if not en_text:
+                continue
+            entry = keys_map.setdefault(
+                key,
+                {"key": key, "en": en_text, "missing_in": [], "source": "worker_rejected", "issues": []},
+            )
+            if lang not in entry["missing_in"]:
+                entry["missing_in"].append(lang)
+            issue = item.get("issue_type", "worker_rejected")
+            if issue not in entry["issues"]:
+                entry["issues"].append(issue)
+
+    batch["keys"] = list(keys_map.values())[:batch_size]
+    batch["total_keys"] = len(batch["keys"])
+
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    batch_file = BATCH_DIR / f"batch_rejected_{timestamp}.json"
+    with open(batch_file, "w", encoding="utf-8") as f:
+        json.dump(batch, f, indent=2, ensure_ascii=False)
+    print(f"✅ Batch odrzuconych wygenerowany: {batch_file}")
+    print(f"📊 Kluczy do ręcznego tłumaczenia: {batch['total_keys']}")
+    return batch
+
+
 def generate_batch(category: str, targets: list, batch_size: int) -> dict:
     """Generuj batch do tłumaczenia."""
     
@@ -218,6 +295,8 @@ def main():
     parser.add_argument("--apply", help="Plik JSON z tłumaczeniami do zastosowania")
     parser.add_argument("--sample", action="store_true", help="Pokaż przykładowe klucze")
     parser.add_argument("--count", type=int, default=10, help="Ile przykładów pokazać")
+    parser.add_argument("--rejected-only", action="store_true", help="Generuj batch tylko z wpisów odrzuconych przez worker")
+    parser.add_argument("--validation-dir", default="i18n/status/validation", help="Katalog z raportami walidacji")
     
     args = parser.parse_args()
     
@@ -225,6 +304,9 @@ def main():
         apply_translations(args.apply)
     elif args.sample:
         show_sample(args.category, args.count)
+    elif args.rejected_only:
+        targets = [t.strip() for t in args.target.split(",") if t.strip()]
+        generate_rejected_batch(targets, args.batch, Path(args.validation_dir))
     else:
         targets = [t.strip() for t in args.target.split(",")]
         generate_batch(args.category, targets, args.batch)

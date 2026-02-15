@@ -531,7 +531,7 @@ bool SoundManager::loadClientFiles(const std::string& directory)
 
 std::string SoundManager::getAudioFileNameById(int32_t audioFileId)
 {
-    if (m_clientSoundFiles.find(audioFileId) != m_clientSoundFiles.end()) {
+    if (m_clientSoundFiles.contains(audioFileId)) {
         return m_clientSoundFiles[audioFileId];
     }
 

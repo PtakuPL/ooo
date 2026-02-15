@@ -549,7 +549,7 @@ void BitmapFont::fillTextColorCoords(std::vector<std::pair<Color, CoordsBufferPt
                 nextColorIndex = textLength;
             }
 
-            if (colorCoordsMap.find(curColorRgba) == colorCoordsMap.end()) {
+            if (!colorCoordsMap.contains(curColorRgba)) {
                 colorCoordsMap.insert(std::make_pair(curColorRgba, std::make_shared<CoordsBuffer>()));
             }
 

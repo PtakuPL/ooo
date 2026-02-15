@@ -64,7 +64,7 @@ namespace stdext
             }
         }
 
-        bool has(const Key& k) const { return m_data.find(k) != m_data.end(); }
+        bool has(const Key& k) const { return m_data.contains(k); }
 
         size_t size() const { return m_data.count(); }
 

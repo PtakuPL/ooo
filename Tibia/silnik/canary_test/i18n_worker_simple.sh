@@ -131,6 +131,9 @@ GT_BATCH_TIMEOUT=18         # timeout (s) na pojedynczy request translate_batch
 GT_SINGLE_TIMEOUT=7         # timeout (s) na pojedynczy request translate
 GT_RATE_LIMITED_COOLDOWN_UNTIL=0  # timestamp unix: do kiedy trwa cooldown GT (0 = brak)
 GT_COOLDOWN_WORK_DURATION=300     # ile sekund robimy inne prace po GT rate-limit (5 min)
+GT_COOLDOWN_FALLBACK_MODES=("PRE_MIGRATION" "DOCUMENTATION")  # rotacja trybów fallback
+GT_COOLDOWN_ROTATION_FILE=".gt_cooldown_rotation"              # plik stanu rotacji (indeks)
+GT_COOLDOWN_MAX_RETRIES=12        # max prób retranslate (12 × 5 min = 60 min)
 FORCED_AUTO_FAST_LANE_MAX_LIMIT="${FORCED_AUTO_FAST_LANE_MAX_LIMIT:-30}"  # AUTO N<=X używa operator fast-lane
 CROSSREF_AUTO_FIX=false     # --auto-fix-crossref: faza 4.5 (Tryb 2), domyślnie OFF
 CROSSREF_AUTO_FIX_LIMIT=30  # maksymalna liczba auto-fix na język / przebieg walidacji
@@ -2663,6 +2666,7 @@ if activity_present:
         "TRANSLATION_SYNC": "🌍",
         "AUTO_TRANSLATE": "🤖",
         "COMPACT_KEYS": "🔑",
+        "DOCUMENTATION": "📄",
         "VALIDATION": "🧪",
         "IDLE": "✅",
     }.get(phase, "🔴")
@@ -2797,6 +2801,48 @@ elif last_mode == "COMPACT_KEYS":
     summary_file = "-"
     summary_eta = "-"
 
+elif last_mode == "DOCUMENTATION":
+    mode_display = "📄 DOCUMENTATION (dokumentacja projektu)"
+    category_display = "📄 docs/i18n/project"
+
+    _doc_state = {}
+    _doc_latest = {}
+    try:
+        _dsp = os.path.join("i18n", "status", "documentation_state.json")
+        if os.path.exists(_dsp):
+            with open(_dsp) as f:
+                _doc_state = json.load(f) or {}
+    except:
+        pass
+    try:
+        _dlp = os.path.join("i18n", "status", "documentation_latest.json")
+        if os.path.exists(_dlp):
+            with open(_dlp) as f:
+                _doc_latest = json.load(f) or {}
+    except:
+        pass
+
+    _doc_cursor = int(_doc_state.get("cursor", 0) or 0)
+    _doc_total = int(_doc_state.get("inventory_size", 0) or 0)
+    _doc_documented = int(_doc_state.get("total_documented", 0) or 0)
+    _doc_errors = int(_doc_latest.get("errors", 0) or 0)
+    _doc_remaining = max(0, _doc_total - _doc_documented)
+    _doc_pct = f"{(_doc_documented * 100 / _doc_total):.1f}" if _doc_total > 0 else "0.0"
+    _doc_last_file = str(_doc_latest.get("last_file", "-"))[:40]
+
+    live_details = f"""│ 📄 DOCUMENTATION — generowanie dokumentacji projektu               │
+│    ├─ Postęp:          {_doc_documented:>6}/{_doc_total:<6} ({_doc_pct}%)                │
+│    ├─ Cursor:          {_doc_cursor:>6}                                 │
+│    ├─ Remaining:       {_doc_remaining:>6}                                 │
+│    ├─ Errors:          {_doc_errors:>6}                                 │
+│    └─ Ostatni plik:    {_doc_last_file:<40} │"""
+
+    summary_phase = "DOCUMENTATION"
+    summary_stage = "-"
+    summary_category = "docs"
+    summary_file = _doc_last_file
+    summary_eta = "-"
+
 elif last_mode == "VALIDATION":
     mode_display = "🧪 VALIDATION (quality/validator)"
     category_display = "🧪 quality"
@@ -2905,6 +2951,50 @@ if premig_per_cat:
 else:
     premig_cat_table = "> Brak danych — uruchom `PREMIG:all` aby wykonać skan."
 
+# === DOCUMENTATION section table ===
+_doc_state = {}
+_doc_latest = {}
+try:
+    _dsp2 = os.path.join("i18n", "status", "documentation_state.json")
+    if os.path.exists(_dsp2):
+        with open(_dsp2) as f:
+            _doc_state = json.load(f) or {}
+except:
+    pass
+try:
+    _dlp2 = os.path.join("i18n", "status", "documentation_latest.json")
+    if os.path.exists(_dlp2):
+        with open(_dlp2) as f:
+            _doc_latest = json.load(f) or {}
+except:
+    pass
+
+_doc_cursor = int(_doc_state.get("cursor", 0) or 0)
+_doc_total_inv = int(_doc_state.get("inventory_size", 0) or 0)
+_doc_documented = int(_doc_state.get("total_documented", 0) or 0)
+_doc_errors = int(_doc_latest.get("errors", 0) or 0)
+_doc_remaining = max(0, _doc_total_inv - _doc_documented)
+_doc_pct = f"{(_doc_documented * 100 / _doc_total_inv):.1f}" if _doc_total_inv > 0 else "0.0"
+_doc_last_run = str(_doc_latest.get("run_at", "-"))[:19]
+_doc_quality_ok = int(_doc_latest.get("quality", {}).get("ok", 0) or 0) if isinstance(_doc_latest.get("quality"), dict) else 0
+_doc_quality_warn = int(_doc_latest.get("quality", {}).get("warnings", 0) or 0) if isinstance(_doc_latest.get("quality"), dict) else 0
+
+if _doc_total_inv > 0:
+    doc_section_table = f"""| Metryka | Wartość | Info |
+|---------|---------|------|
+| 📂 **Inventory (pliki)** | **{_doc_total_inv:,}** | pliki do dokumentowania |
+| 📄 **Udokumentowane** | **{_doc_documented:,}** ({_doc_pct}%) | pliki z wygenerowanym docs |
+| ⏳ Remaining | {_doc_remaining:,} | do przetworzenia |
+| 🔢 Cursor | {_doc_cursor:,} | pozycja w inventory |
+| ❌ Errors | {_doc_errors:,} | błędy parsera/generatora |
+| ✅ Quality OK | {_doc_quality_ok:,} | pliki spełniające quality gate |
+| ⚠️ Quality warnings | {_doc_quality_warn:,} | pliki z ostrzeżeniami |
+| 🕐 Ostatni run | {_doc_last_run} | |
+
+> Użyj `DOCUMENTATION` lub `DOCUMENTATION:<N>` aby wymusić nowy batch. `DOCINDEX` przebuduje sam indeks."""
+else:
+    doc_section_table = "> Brak danych — uruchom `DOCUMENTATION` aby wygenerować dokumentację projektu."
+
 # TM coverage (do notki o placeholderach)
 try:
     with open(f"{I18N_DIR}/translation_memory.json") as f:
@@ -2962,6 +3052,7 @@ try:
                 "PRE_MIGRATION": "🔍",
                 "MIGRATION": "🔧",
                 "COMPACT_KEYS": "🔑",
+                "DOCUMENTATION": "📄",
                 "TRANSLATION_SYNC": "🌍",
                 "AUTO_TRANSLATE": "🤖",
                 "VALIDATION": "🧪",
@@ -3304,6 +3395,7 @@ _work_description_map = {
     "AUTO_TRANSLATE": "Tłumaczenie automatyczne (Google Translate + TM)",
     "TRANSLATION_SYNC": "Synchronizacja kluczy EN → języki",
     "PRE_MIGRATION": "Skan plików źródłowych (bez modyfikacji)",
+    "DOCUMENTATION": "Generowanie dokumentacji projektu",
     "MIGRATION": "Migracja kodu (ZABLOKOWANA)",
     "COMPACT_KEYS": "Kompaktowanie kluczy i18n",
     "VALIDATION": "Walidacja jakości tłumaczeń",
@@ -3928,6 +4020,8 @@ md = f'''# 🌍 System Tłumaczeń I18N — Dashboard na żywo
 | `CONFIG` | Wyświetl aktualną konfigurację |
 | `REPORT` / `LANGS` | Raport coverage / lista języków |
 | `PREMIG:<cat lub all>` | Wymuś szczegółowy skan PRE_MIGRATION (plik/linia/treść) |
+| `DOCUMENTATION` / `DOCUMENTATION:<N>` | Wymuś generowanie dokumentacji projektu (batch=20 lub N) |
+| `DOCINDEX` | Przebuduj indeks dokumentacji (bez pełnego przelotu) |
 | `SKIP` / `PAUSE:<N>` / `IDLE` | Kontrola cyklu |
 
 ---
@@ -3965,10 +4059,13 @@ md = f'''# 🌍 System Tłumaczeń I18N — Dashboard na żywo
 | ⚪ Czyste | **{files_clean}** | - | bez tekstów |
 | 🔧 W trakcie | **{files_in_progress}** | - | obecnie przetwarzane |
 
-### � PRE_MIGRATION — Wyniki skanów per kategoria
+### 📊 PRE_MIGRATION — Wyniki skanów per kategoria
 {premig_cat_table}
 
-### �🔑 Klucze i18n
+### 📄 DOCUMENTATION — Dokumentacja projektu
+{doc_section_table}
+
+### 🔑 Klucze i18n
 | Metryka | Wartość | Info |
 |---------|---------|------|
 | 🔑 **Klucze EN (źródłowe)** | **{total_keys:,}** | wszystkie kategorie |
@@ -11022,11 +11119,9 @@ AUTO_TRANSLATE_MID_CYCLE_HEARTBEAT_INTERVAL_SEC="${AUTO_TRANSLATE_MID_CYCLE_HEAR
 AUTO_TRANSLATE_MID_BATCH_CMD_CHECK_EVERY="${AUTO_TRANSLATE_MID_BATCH_CMD_CHECK_EVERY:-4}"
 
 # ============ GT Rate-Limit Cooldown: Fallback Work ============
-# Gdy GT jest rate-limited, worker przechodzi na inne prace na 5 min:
-# 1) repair_identical_bonus_round (naprawy kopii EN bez GT)
-# 2) run_quality_audit (audyt jakości)
-# 3) update_github_status (aktualizacja I18N_STATUS.md)
-# Po 5 min wraca do tłumaczeń.
+# Gdy GT jest rate-limited, worker przechodzi na prace fallback z rotacją:
+# PRE_MIGRATION ↔ DOCUMENTATION (cyklicznie) + repair + audit
+# Po GT_COOLDOWN_WORK_DURATION wraca do tłumaczeń.
 gt_cooldown_do_fallback_work() {
     local cycle="${1:-0}"
     local cooldown_until="${GT_RATE_LIMITED_COOLDOWN_UNTIL:-0}"
@@ -11038,10 +11133,58 @@ gt_cooldown_do_fallback_work() {
     fi
 
     local remaining=$(( cooldown_until - now_ts ))
-    echo "⏳ GT COOLDOWN: ${remaining}s do końca. Przechodzę na inne prace..."
-    status_update_activity "running" "$cycle" "AUTO_TRANSLATE" "gt_cooldown_work" "-" "-" "GT rate-limited, fallback work (${remaining}s left)" 0 0 "keys" 0
+    echo "⏳ GT COOLDOWN: ${remaining}s do końca. Przechodzę na prace fallback..."
 
-    # 1) Naprawy kopii EN (bez GT — tylko TM/dict)
+    # Odczytaj rotację — który tryb jest następny
+    local rotation_idx=0
+    if [ -f "${GT_COOLDOWN_ROTATION_FILE:-.gt_cooldown_rotation}" ]; then
+        rotation_idx=$(cat "${GT_COOLDOWN_ROTATION_FILE}" 2>/dev/null || echo 0)
+        if ! [[ "$rotation_idx" =~ ^[0-9]+$ ]]; then rotation_idx=0; fi
+    fi
+    local modes_count=${#GT_COOLDOWN_FALLBACK_MODES[@]}
+    if [ "$modes_count" -eq 0 ]; then modes_count=1; GT_COOLDOWN_FALLBACK_MODES=("PRE_MIGRATION"); fi
+    local current_mode="${GT_COOLDOWN_FALLBACK_MODES[$((rotation_idx % modes_count))]}"
+
+    # Inkrementuj rotację na następny raz
+    local next_idx=$(( (rotation_idx + 1) % modes_count ))
+    echo "$next_idx" > "${GT_COOLDOWN_ROTATION_FILE:-.gt_cooldown_rotation}"
+
+    echo "   🔄 [GT Cooldown] Fallback mode: $current_mode (rotation=$rotation_idx/$modes_count)"
+    status_update_activity "running" "$cycle" "AUTO_TRANSLATE" "gt_cooldown_work" "-" "-" "GT rate-limited, fallback=$current_mode (${remaining}s left)" 0 0 "keys" 0
+
+    # Wykonaj wybrany tryb fallback
+    case "$current_mode" in
+        PRE_MIGRATION)
+            echo "   🔍 [GT Cooldown] PRE_MIGRATION scan..."
+            local _premig_out
+            _premig_out=$(run_pre_migration_scan "all" "$I18N_SCOPE" 2>&1) || true
+            echo "$_premig_out" | tail -3
+            status_log_op "$cycle" "GT_COOLDOWN" "PREMIG_FALLBACK" "-" "-" "ok" "gt_cooldown rotation=$rotation_idx"
+            ;;
+        DOCUMENTATION)
+            echo "   📄 [GT Cooldown] DOCUMENTATION batch..."
+            local _doc_tool="tools/i18n_generate_project_docs.py"
+            if [ -f "$_doc_tool" ]; then
+                python3 "$_doc_tool" --batch 10 2>&1 | tail -5 || true
+                status_log_op "$cycle" "GT_COOLDOWN" "DOC_FALLBACK" "-" "-" "ok" "gt_cooldown rotation=$rotation_idx batch=10"
+            else
+                echo "   ⚠️ Brak narzędzia $_doc_tool — skip"
+            fi
+            ;;
+        *)
+            echo "   ⚠️ [GT Cooldown] Nieznany tryb fallback: $current_mode"
+            ;;
+    esac
+
+    now_ts=$(date +%s)
+    remaining=$(( cooldown_until - now_ts ))
+    if [ "$remaining" -le 0 ] 2>/dev/null; then
+        echo "   ✅ [GT Cooldown] Cooldown zakończony — powrót do tłumaczeń."
+        GT_RATE_LIMITED_COOLDOWN_UNTIL=0
+        return 0
+    fi
+
+    # Dodatkowe prace: repair + audit (jak przed)
     echo "   🔧 [GT Cooldown] Repair identical_to_en (bez GT)..."
     local _saved_gt="$USE_GOOGLE_TRANSLATE"
     USE_GOOGLE_TRANSLATE="false"
@@ -11056,7 +11199,6 @@ gt_cooldown_do_fallback_work() {
         return 0
     fi
 
-    # 2) Audyt jakości
     echo "   🔬 [GT Cooldown] Quality audit (${remaining}s left)..."
     run_quality_audit "$cycle" 2>&1 | tail -5 || true
 
@@ -11068,7 +11210,6 @@ gt_cooldown_do_fallback_work() {
         return 0
     fi
 
-    # 3) Aktualizacja I18N_STATUS.md
     echo "   📊 [GT Cooldown] Aktualizacja I18N_STATUS.md (${remaining}s left)..."
     update_github_status "$cycle" 2>&1 | tail -3 || true
 
@@ -11080,7 +11221,6 @@ gt_cooldown_do_fallback_work() {
         return 0
     fi
 
-    # 4) Czekaj resztę cooldownu (max — prace powyżej mogą nie zająć 5 min)
     echo "   💤 [GT Cooldown] Czekam ${remaining}s do końca cooldownu..."
     sleep "$remaining"
     echo "   ✅ [GT Cooldown] Cooldown zakończony — powrót do tłumaczeń."
@@ -20668,7 +20808,7 @@ PYFORCEDMETRIC
             if [ -n "$REPO_ROOT" ]; then
                 REMOTE_CMDS=$(git -C "$REPO_ROOT" show "origin/$GIT_TRACK_BRANCH:Tibia/silnik/canary_test/.github/worker_commands.txt" 2>/dev/null || true)
                 if [ -n "$REMOTE_CMDS" ]; then
-                    CMD=$(echo "$REMOTE_CMDS" | grep -v '^#' | grep -v '^$' | grep -E '^(FORCE:|PREMIG:|AUTO:|SYNC:|SWITCH:|UNSWITCH|LANGVAL:|SPOTCHECK:|GRAMMARFIX:|RESTART|COMPACT_KEYS|IDLE|RANDOM|STATUS|SELFTEST|SELF_CHECK|SKIP|PAUSE:|NOTE:|SET:|TEST:|TEST_ALL|GT:|BATCH:|REPORT|LANGS|CONFIG|FOCUS:|UNFOCUS|LANG:)' | head -1)
+                    CMD=$(echo "$REMOTE_CMDS" | grep -v '^#' | grep -v '^$' | grep -E '^(FORCE:|PREMIG:|AUTO:|SYNC:|SWITCH:|UNSWITCH|LANGVAL:|SPOTCHECK:|GRAMMARFIX:|RESTART|COMPACT_KEYS|IDLE|RANDOM|STATUS|SELFTEST|SELF_CHECK|SKIP|PAUSE:|NOTE:|SET:|TEST:|TEST_ALL|GT:|BATCH:|REPORT|LANGS|CONFIG|FOCUS:|UNFOCUS|LANG:|DOCUMENTATION|DOCINDEX)' | head -1)
                     if [ -n "$CMD" ]; then
                         CMD_SOURCE="github"
                         echo "📨 Odebrano z GitHub (.github/worker_commands.txt): $CMD"
@@ -20704,7 +20844,7 @@ BEGIN { done=0 }
                 for COMMANDS_TXT in "$COMMANDS_TXT_PRIMARY" "$COMMANDS_TXT_FALLBACK"; do
                     [ -n "$CMD" ] && break
                     if [ -f "$COMMANDS_TXT" ]; then
-                        CMD=$(grep -v '^#' "$COMMANDS_TXT" | grep -v '^$' | grep -E '^(FORCE:|PREMIG:|AUTO:|SYNC:|SWITCH:|UNSWITCH|LANGVAL:|SPOTCHECK:|GRAMMARFIX:|RESTART|COMPACT_KEYS|IDLE|RANDOM|STATUS|SELFTEST|SELF_CHECK|SKIP|PAUSE:|NOTE:|SET:|TEST:|TEST_ALL|GT:|BATCH:|REPORT|LANGS|CONFIG|FOCUS:|UNFOCUS|LANG:)' | head -1)
+                        CMD=$(grep -v '^#' "$COMMANDS_TXT" | grep -v '^$' | grep -E '^(FORCE:|PREMIG:|AUTO:|SYNC:|SWITCH:|UNSWITCH|LANGVAL:|SPOTCHECK:|GRAMMARFIX:|RESTART|COMPACT_KEYS|IDLE|RANDOM|STATUS|SELFTEST|SELF_CHECK|SKIP|PAUSE:|NOTE:|SET:|TEST:|TEST_ALL|GT:|BATCH:|REPORT|LANGS|CONFIG|FOCUS:|UNFOCUS|LANG:|DOCUMENTATION|DOCINDEX)' | head -1)
                         if [ -n "$CMD" ]; then
                             echo "📨 Odebrano z $COMMANDS_TXT: $CMD"
                             TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
@@ -20763,6 +20903,30 @@ BEGIN { done=0 }
                         MODE_TYPE="PRE_MIGRATION"
                         MODE_CAT="$PREMIG_CAT"
                         MODE_COUNT="forced"
+                        MODE_EXTRA="FORCED"
+                        ;;
+                    DOCUMENTATION:*)
+                        DOC_BATCH=$(echo "$CMD" | cut -d: -f2)
+                        DOC_BATCH=${DOC_BATCH:-20}
+                        if ! [[ "$DOC_BATCH" =~ ^[0-9]+$ ]]; then DOC_BATCH=20; fi
+                        echo "📄 Wymuszam DOCUMENTATION (batch=$DOC_BATCH)"
+                        MODE_TYPE="DOCUMENTATION"
+                        MODE_CAT="-"
+                        MODE_COUNT="$DOC_BATCH"
+                        MODE_EXTRA="FORCED"
+                        ;;
+                    DOCUMENTATION)
+                        echo "📄 Wymuszam DOCUMENTATION (batch=20)"
+                        MODE_TYPE="DOCUMENTATION"
+                        MODE_CAT="-"
+                        MODE_COUNT="20"
+                        MODE_EXTRA="FORCED"
+                        ;;
+                    DOCINDEX)
+                        echo "📑 Wymuszam DOCINDEX (przebudowa indeksu)"
+                        MODE_TYPE="DOCUMENTATION"
+                        MODE_CAT="index_only"
+                        MODE_COUNT="0"
                         MODE_EXTRA="FORCED"
                         ;;
                     COMPACT_KEYS)
@@ -21753,6 +21917,75 @@ PREMIG_SKIP_PY
                         fi
                     fi
                     ;;
+                DOCUMENTATION)
+                    # === DOCUMENTATION: generowanie dokumentacji per-file projektu ===
+                    DOC_BATCH_SIZE="${MODE_COUNT:-20}"
+                    if ! [[ "$DOC_BATCH_SIZE" =~ ^[0-9]+$ ]]; then DOC_BATCH_SIZE=20; fi
+                    DOC_INDEX_ONLY="false"
+                    if [ "$MODE_CAT" = "index_only" ]; then
+                        DOC_INDEX_ONLY="true"
+                        echo "📑 TRYB: DOCUMENTATION — przebudowa indeksu (DOCINDEX)"
+                    else
+                        echo "📄 TRYB: DOCUMENTATION — generowanie dokumentacji (batch=$DOC_BATCH_SIZE)"
+                    fi
+
+                    status_update_activity "running" "$CYCLE" "DOCUMENTATION" "doc_start" "-" "-" "starting documentation batch=$DOC_BATCH_SIZE" 0 0 "files" 0
+
+                    DOC_TOOL="tools/i18n_generate_project_docs.py"
+                    if [ ! -f "$DOC_TOOL" ]; then
+                        echo "   ❌ Brak narzędzia: $DOC_TOOL"
+                        status_log_error "$CYCLE" "DOCUMENTATION" "doc_error" "-" "-" "missing tool" "$DOC_TOOL"
+                        break
+                    fi
+
+                    DOC_ARGS="--batch $DOC_BATCH_SIZE"
+                    if [ "$DOC_INDEX_ONLY" = "true" ]; then
+                        DOC_ARGS="--index-only"
+                    fi
+
+                    echo "   🔧 Uruchamiam: python3 $DOC_TOOL $DOC_ARGS"
+                    DOC_OUTPUT=$(python3 "$DOC_TOOL" $DOC_ARGS 2>&1) || true
+                    DOC_RC=$?
+
+                    # Wyciągnij metryki z outputu
+                    DOC_PROCESSED=$(echo "$DOC_OUTPUT" | grep -oE 'documented=[0-9]+' | grep -oE '[0-9]+' | tail -1)
+                    DOC_PROCESSED=${DOC_PROCESSED:-0}
+                    DOC_TOTAL=$(echo "$DOC_OUTPUT" | grep -oE 'total=[0-9]+' | grep -oE '[0-9]+' | tail -1)
+                    DOC_TOTAL=${DOC_TOTAL:-0}
+                    DOC_ERRORS=$(echo "$DOC_OUTPUT" | grep -oE 'errors=[0-9]+' | grep -oE '[0-9]+' | tail -1)
+                    DOC_ERRORS=${DOC_ERRORS:-0}
+                    DOC_CURSOR=$(echo "$DOC_OUTPUT" | grep -oE 'cursor=[0-9]+' | grep -oE '[0-9]+' | tail -1)
+                    DOC_CURSOR=${DOC_CURSOR:-0}
+
+                    echo "   ✅ DOCUMENTATION: processed=$DOC_PROCESSED total=$DOC_TOTAL errors=$DOC_ERRORS cursor=$DOC_CURSOR"
+                    echo "$DOC_OUTPUT" | tail -5
+
+                    # Zapisz metryki do global_stats
+                    python3 - "$DOC_PROCESSED" "$DOC_TOTAL" "$DOC_ERRORS" "$DOC_CURSOR" << 'DOC_STATS_PY'
+import json, os, sys, time
+STATS_FILE = "i18n/status/i18n_global_stats.json"
+try:
+    with open(STATS_FILE, 'r') as f:
+        stats = json.load(f)
+except:
+    stats = {}
+docs = stats.get("documentation", {})
+docs["last_run_utc"] = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
+docs["last_batch_processed"] = int(sys.argv[1])
+docs["total_documented"] = int(sys.argv[2]) if int(sys.argv[2]) > 0 else docs.get("total_documented", 0)
+docs["errors"] = int(sys.argv[3])
+docs["cursor"] = int(sys.argv[4])
+stats["documentation"] = docs
+os.makedirs(os.path.dirname(STATS_FILE), exist_ok=True)
+with open(STATS_FILE + ".tmp", 'w') as f:
+    json.dump(stats, f, indent=2, ensure_ascii=False)
+os.replace(STATS_FILE + ".tmp", STATS_FILE)
+print(f"📊 documentation stats updated: processed={docs['last_batch_processed']} total={docs.get('total_documented',0)} cursor={docs['cursor']}")
+DOC_STATS_PY
+
+                    status_log_op "$CYCLE" "DOCUMENTATION" "doc_done" "-" "-" "ok" "batch=$DOC_BATCH_SIZE processed=$DOC_PROCESSED total=$DOC_TOTAL errors=$DOC_ERRORS cursor=$DOC_CURSOR"
+                    status_update_activity "running" "$CYCLE" "DOCUMENTATION" "doc_done" "-" "-" "batch complete processed=$DOC_PROCESSED" "$DOC_PROCESSED" "$DOC_TOTAL" "files" "$DOC_ERRORS"
+                    ;;
                 IDLE)
                     echo "✅ TRYB: IDLE - Wszystko zrobione!"
                     echo "   Migracja: ✅ | Tłumaczenia: ✅"
@@ -22379,6 +22612,9 @@ print(total)
         echo "  REPORT                    Raport coverage wszystkich języków"
         echo "  LANGS                     Lista dostępnych języków"
         echo "  PREMIG:<cat|all>          Wymuś szczegółowy skan PRE_MIGRATION (plik/linia/tresc)"
+        echo "  DOCUMENTATION             Wymuś generowanie dokumentacji projektu (batch=20)"
+        echo "  DOCUMENTATION:<N>         Wymuś dokumentację z batch=N"
+        echo "  DOCINDEX                  Przebuduj sam indeks dokumentacji (bez pełnego przelotu)"
         echo "  SKIP / PAUSE:<N> / IDLE   Kontrola cyklu"
         echo ""
         echo "  === Plik worker_config.json (edytuj ręcznie, worker wczyta co cykl) ==="

@@ -137,6 +137,13 @@ HTML_PATTERNS: Tuple[PatternDef, ...] = (
     PatternDef("html.alt", compile_rx(r"alt\s*=\s*\"([^\"]{8,})\"")),
 )
 
+DOCUMENTATION_PATTERNS: Tuple[PatternDef, ...] = (
+    PatternDef("docs.heading", compile_rx(r"^#{1,6}\s+(.{10,})")),
+    PatternDef("docs.bullet", compile_rx(r"^[\s]*[-*]\s+(.{10,})")),
+    PatternDef("docs.table_cell", compile_rx(r"\|\s*([^|]{10,}?)\s*\|")),
+    PatternDef("docs.paragraph", compile_rx(r"^([A-Z][^#|*\-\n]{20,})")),
+)
+
 
 CATEGORY_DEFS: Dict[str, CategoryDef] = {
     "npc": CategoryDef(
@@ -352,6 +359,13 @@ CATEGORY_DEFS: Dict[str, CategoryDef] = {
             PatternDef("error.literal", compile_rx(r"(?:Error|error)[^\"]*\"([^\"]{3,})\"")),
         ),
         skip_tokens=("i18n::",),
+    ),
+    "documentation": CategoryDef(
+        name="documentation",
+        roots=("docs", "Dokumentacja", "data-otservbr-global", "data-canary", "data"),
+        extensions=(".md", ".txt", ".rst"),
+        patterns=DOCUMENTATION_PATTERNS,
+        skip_tokens=("```", "<!--", "http://", "https://", "![", "]("),
     ),
 }
 

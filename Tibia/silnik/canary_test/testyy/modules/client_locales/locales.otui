@@ -1,17 +1,33 @@
 LocalesMainLabel < Label
   font: noto-12
+  color: #cccccc
 
 LocalesButton < UIWidget
-  size: 96 96
-  image-size: 96 96
+  height: 36
+  image-size: 32 24
   image-smooth: true
-  text-offset: 0 96
+  image-offset: 8 6
+  image-border: 0
+  image-clip: 0 0 256 256
+  text-offset: 48 0
+  text-align: left
   font: noto-12
+  color: #dddddd
+  background-color: #00000000
+  border-width: 1
+  border-color: alpha
+  phantom: false
+  $hover:
+    background-color: #ffffff22
+    color: #ffffff
+    border-color: #ffffff33
+  $pressed:
+    background-color: #ffffff44
 
 UIWindow
   id: localesWindow
-  background-color: #000000
-  opacity: 0.90
+  background-color: #111111
+  opacity: 0.95
   clipping: true
   anchors.fill: parent
 
@@ -20,16 +36,15 @@ UIWindow
     text-auto-resize: true
     anchors.horizontalCenter: parent.horizontalCenter
     anchors.verticalCenter: parent.verticalCenter
-    margin-top: -100
+    margin-top: -160
 
   Panel
     id: localesPanel
-    margin-top: 50
+    width: 220
+    margin-top: 20
     anchors.horizontalCenter: parent.horizontalCenter
     anchors.top: prev.bottom
     anchors.bottom: parent.bottom
     layout:
-      type: grid
-      cell-size: 96 128
-      cell-spacing: 32
-      flow: true
+      type: verticalBox
+      spacing: 4

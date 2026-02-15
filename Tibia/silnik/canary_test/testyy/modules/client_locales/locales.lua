@@ -20,23 +20,22 @@ end
 local function createWindow()
   localesWindow = g_ui.displayUI('locales')
   local localesPanel = localesWindow:getChildById('localesPanel')
-  local layout = localesPanel:getLayout()
-  local spacing = layout:getCellSpacing()
-  local size = layout:getCellSize()
 
-  local count = 0
+  -- Sort locales alphabetically by language name for clean display
+  local sortedLocales = {}
   for name, locale in pairs(installedLocales) do
-    local widget = g_ui.createWidget('LocalesButton', localesPanel)
-    widget:setImageSource('/images/flags/' .. name)
-    widget:setText(locale.languageName)
-    widget.onClick = function()
-      selectFirstLocale(name)
-    end
-    count = count + 1
+    sortedLocales[#sortedLocales + 1] = { code = name, locale = locale }
   end
+  table.sort(sortedLocales, function(a, b) return a.locale.languageName < b.locale.languageName end)
 
-  count = math.max(1, math.min(count, 3))
-  localesPanel:setWidth(size.width * count + spacing * (count - 1))
+  for _, entry in ipairs(sortedLocales) do
+    local widget = g_ui.createWidget('LocalesButton', localesPanel)
+    widget:setImageSource('/images/flags/' .. entry.code)
+    widget:setText(entry.locale.languageName)
+    widget.onClick = function()
+      selectFirstLocale(entry.code)
+    end
+  end
 
   addEvent(function()
     addEvent(function()

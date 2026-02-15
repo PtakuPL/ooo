@@ -92,7 +92,7 @@ def get_untranslated_keys(category: str, target_lang: str, limit: int = 50) -> l
 
 
 def _collect_rejected_keys(target_lang: str, validation_dir: Path) -> list:
-    """Zbierz klucze odrzucone przez automatyczny worker z raportów walidacji."""
+    """Collect keys rejected by the automatic worker from validation reports."""
     keys = []
     report_path = validation_dir / f"{target_lang}_report.json"
     if report_path.exists():
@@ -117,7 +117,7 @@ def _collect_rejected_keys(target_lang: str, validation_dir: Path) -> list:
 
 
 def generate_rejected_batch(targets: list, batch_size: int, validation_dir: Path) -> dict:
-    """Generuj batch z wpisów odrzuconych przez worker (do ręcznego tłumaczenia)."""
+    """Generate a batch from worker-rejected entries for manual translation."""
     BATCH_DIR.mkdir(parents=True, exist_ok=True)
     batch = {
         "generated": datetime.now().isoformat(),
@@ -125,7 +125,7 @@ def generate_rejected_batch(targets: list, batch_size: int, validation_dir: Path
         "target_languages": targets,
         "batch_size": batch_size,
         "keys": [],
-        "instructions": f"Przetłumacz wpisy odrzucone przez worker na: {', '.join(targets)}. Zachowaj placeholdery i tokeny bez zmian.",
+        "instructions": f"Translate worker-rejected entries into: {', '.join(targets)}. Keep placeholders and tokens unchanged.",
     }
 
     en_cache = {}
@@ -163,8 +163,8 @@ def generate_rejected_batch(targets: list, batch_size: int, validation_dir: Path
     batch_file = BATCH_DIR / f"batch_rejected_{timestamp}.json"
     with open(batch_file, "w", encoding="utf-8") as f:
         json.dump(batch, f, indent=2, ensure_ascii=False)
-    print(f"✅ Batch odrzuconych wygenerowany: {batch_file}")
-    print(f"📊 Kluczy do ręcznego tłumaczenia: {batch['total_keys']}")
+    print(f"✅ Rejected batch generated: {batch_file}")
+    print(f"📊 Keys for manual translation: {batch['total_keys']}")
     return batch
 
 

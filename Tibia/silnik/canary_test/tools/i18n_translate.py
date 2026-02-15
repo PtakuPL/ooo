@@ -17,11 +17,31 @@ import json
 import os
 import sys
 import argparse
+import re
 from pathlib import Path
 from datetime import datetime
 
 I18N_DIR = Path("i18n")
 BATCH_DIR = Path("i18n/translation_batches")
+SOUND_TEXT_RE = re.compile(
+    r'^(?:grr+|hiss+|rawr+|roar+|growl+|snarl+|howl+|woof+|arf+|meow+|miau+|moo+|baa+|oink+|snort+|chirp+|tweet+|croak+|ribbit+)+$',
+    re.IGNORECASE,
+)
+
+
+def is_non_translatable_sound(text: str) -> bool:
+    """Heurystyka: odgłosy potworów/zwierząt pomijamy w normalnym tłumaczeniu."""
+    normalized = re.sub(r"[^a-zA-Z]", "", str(text or "")).lower()
+    if not normalized:
+        return True
+    if SOUND_TEXT_RE.fullmatch(normalized):
+        return True
+    if len(normalized) >= 5 and len(set(normalized)) <= 3 and re.search(r'(.)\1{2,}', normalized):
+        return True
+    vowels = sum(1 for ch in normalized if ch in "aeiouy")
+    if vowels == 0 and len(normalized) >= 3:
+        return True
+    return False
 
 def get_untranslated_keys(category: str, target_lang: str, limit: int = 50) -> list:
     """Znajdź klucze które nie mają tłumaczenia w danym języku."""
@@ -51,8 +71,11 @@ def get_untranslated_keys(category: str, target_lang: str, limit: int = 50) -> l
             if target_text and target_text.strip() and target_text != en_text:
                 continue
         
+        # Pomiń odgłosy potworów/zwierząt - nie są normalnie tłumaczone
+        if is_non_translatable_sound(en_text):
+            continue
         # Pomiń bardzo krótkie teksty (prawdopodobnie kody/komendy)
-        if len(en_text) < 5:
+        if len(en_text) < 3:
             continue
             
         untranslated.append({
@@ -99,8 +122,15 @@ FORMAT ODPOWIEDZI (JSON):
 """
     }
     
-    # Zbierz klucze dla pierwszego języka docelowego
-    keys = get_untranslated_keys(category, targets[0], batch_size)
+    # Zbierz klucze brakujące w dowolnym języku docelowym (np. PL i ES)
+    keys_map = {}
+    scan_limit = max(batch_size * max(1, len(targets)), batch_size)
+    for lang in targets:
+        for item in get_untranslated_keys(category, lang, scan_limit):
+            entry = keys_map.setdefault(item["key"], {"key": item["key"], "en": item["en"], "missing_in": []})
+            if lang not in entry["missing_in"]:
+                entry["missing_in"].append(lang)
+    keys = list(keys_map.values())[:batch_size]
     batch["keys"] = keys
     batch["total_keys"] = len(keys)
     

@@ -97,7 +97,7 @@ class StringExtractor:
         r'\{\w+\}',  # {name}, {player}
         r'%[sdif]',  # %s, %d, %i, %f
         r'\|[A-Z]+\|',  # |PLAYERNAME|
-        r'\[[A-Za-z_][A-Za-z0-9_ ]*\]',  # [player name]
+        r'\[[A-Za-z_][A-Za-z0-9_]*(?:\s+[A-Za-z_][A-Za-z0-9_]*)*\]',  # [player name]
     ]
     
     # Category keywords for auto-detection

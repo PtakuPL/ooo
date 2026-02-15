@@ -248,10 +248,19 @@ function EnterGame.init()
             local hostInit, valuesInit = next(Servers_init)
             EnterGame.setUniqueServer(hostInit, valuesInit.port, valuesInit.protocol)
             EnterGame.setHttpLogin(valuesInit.httpLogin)
+            -- Set category for single server
+            if _G.setServerCategoryFromHost then
+                _G.setServerCategoryFromHost(hostInit)
+            end
         elseif not host or host == "" then
             local hostInit, valuesInit = next(Servers_init)
             EnterGame.setDefaultServer(hostInit, valuesInit.port, valuesInit.protocol)
             EnterGame.setHttpLogin(valuesInit.httpLogin)
+        end
+        -- Restore category from saved host
+        local savedHost = g_settings.get('host')
+        if savedHost and savedHost ~= '' and _G.setServerCategoryFromHost then
+            _G.setServerCategoryFromHost(savedHost)
         end
     else
         EnterGame.toggleAuthenticatorToken(clientVersion, true)
@@ -831,6 +840,15 @@ function EnterGame.doLogin()
     g_settings.set('port', G.port)
     g_settings.set('client-version', clientVersion)
 
+    -- Set the active server category based on the host
+    if _G.setServerCategoryFromHost then
+        _G.setServerCategoryFromHost(G.host)
+    end
+    -- Apply C++ item hotkey block flag
+    if g_game.setBlockItemHotkeys then
+        g_game.setBlockItemHotkeys(_G.isRestricted and _G.isRestricted('blockItemHotkeys') or false)
+    end
+
     if clientVersion >= 1281 and G.port ~= 7171 then
         EnterGame.tryHttpLogin(clientVersion, httpLogin)
     else
@@ -889,6 +907,11 @@ function EnterGame.setDefaultServer(host, port, protocol)
 
     if not hostTextEdit then
         return
+    end
+
+    -- Set the active server category
+    if _G.setServerCategoryFromHost then
+        _G.setServerCategoryFromHost(host)
     end
 
     if hostTextEdit:getText() ~= host then

@@ -906,6 +906,10 @@ public:
     bool canReportBugs() { return m_canReportBugs; }
     void setExpertPvpMode(const bool enable) { m_expertPvpMode = enable; }
     bool getExpertPvpMode() { return m_expertPvpMode; }
+
+    // Server category restrictions (retro 7.4 mode)
+    void setBlockItemHotkeys(const bool enable) { m_blockItemHotkeys = enable; }
+    bool isBlockItemHotkeys() { return m_blockItemHotkeys; }
     LocalPlayerPtr getLocalPlayer() { return m_localPlayer; }
     ProtocolGamePtr getProtocolGame() { return m_protocolGame; }
     std::string getCharacterName() { return m_characterName; }
@@ -1016,6 +1020,7 @@ private:
     bool m_scheduleLastWalk{ false };
     bool m_safeFight{ true };
     bool m_canReportBugs{ false };
+    bool m_blockItemHotkeys{ false };  // retro 7.4: block item use via hotkeys
 
     uint16_t m_mapUpdatedAt{ 0 };
     std::pair<uint16_t, Timer> m_mapUpdateTimer = { true, Timer{} };

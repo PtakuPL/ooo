@@ -48,10 +48,23 @@ function ServerList.select()
     if selected then
         local server = servers[selected:getId()]
         if server then
+            -- Set the active server category for restriction checks
+            _G.activeServerCategory = server.category or "current"
+
             EnterGame.setDefaultServer(selected:getId(), server.port, server.protocol)
             EnterGame.setAccountName(server.account)
             EnterGame.setPassword(server.password)
             EnterGame.setHttpLogin(server.httpLogin)
+
+            -- Show category info
+            local catLabel = _G.getActiveCategoryLabel and _G.getActiveCategoryLabel() or nil
+            local displayName = server.displayName or selected:getId()
+            if catLabel then
+                EnterGame.setServerInfo(displayName .. "  [" .. catLabel .. "]")
+            else
+                EnterGame.setServerInfo(displayName)
+            end
+
             ServerList.hide()
         end
     end
@@ -81,10 +94,27 @@ function ServerList.add(host, port, protocol, httpLogin, load)
     end
 
     local details = widget:getChildById('details')
-    details:setText(host .. ':' .. port)
+    -- Show displayName if available, otherwise fall back to host:port
+    local server = servers[host]
+    local displayName = server and server.displayName or nil
+    if displayName and displayName ~= '' then
+        details:setText(displayName)
+    else
+        details:setText(host .. ':' .. port)
+    end
 
     local proto = widget:getChildById('protocol')
-    proto:setText(protocol)
+    -- Show category label if available, otherwise protocol number
+    local category = server and server.category or nil
+    local catLabel = nil
+    if category and ServerCategories and ServerCategories[category] then
+        catLabel = ServerCategories[category].label
+    end
+    if catLabel then
+        proto:setText(catLabel)
+    else
+        proto:setText(protocol)
+    end
 
     connect(widget, {
         onDoubleClick = function()

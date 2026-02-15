@@ -360,6 +360,20 @@ function onChooseItemMouseRelease(self, mousePosition, mouseButton)
     end
 
     if item and currentHotkeyLabel then
+        -- Safety net: block item assignment if restricted
+        local blocked = false
+        if g_game.isBlockItemHotkeys and g_game.isBlockItemHotkeys() then
+            blocked = true
+        elseif _G.isRestricted and _G.isRestricted('blockItemHotkeys') then
+            blocked = true
+        end
+        if blocked then
+            show()
+            g_mouse.popCursor('target')
+            self:ungrabMouse()
+            return true
+        end
+
         currentHotkeyLabel.itemId = item:getId()
         if item:isFluidContainer() then
             currentHotkeyLabel.subType = item:getSubType()
@@ -383,6 +397,20 @@ function onChooseItemMouseRelease(self, mousePosition, mouseButton)
 end
 
 function startChooseItem()
+    -- Block item assignment when server category restricts it
+    if g_game.isBlockItemHotkeys and g_game.isBlockItemHotkeys() then
+        modules.game_textmessage.displayFailureMessage(
+            tr("Hotkey na przedmioty jest niedostępny na tym serwerze.")
+        )
+        return
+    end
+    if _G.isRestricted and _G.isRestricted('blockItemHotkeys') then
+        modules.game_textmessage.displayFailureMessage(
+            tr("Hotkey na przedmioty jest niedostępny na tym serwerze.")
+        )
+        return
+    end
+
     if g_ui.isMouseGrabbed() then
         return
     end
@@ -525,6 +553,22 @@ function doKeyCombo(keyCombo)
 end
 
 function executeHotkeyItem(action, itemId, subType)
+    -- Block ALL item hotkey execution when restricted (C++ flag or Lua category)
+    local blocked = false
+    if g_game.isBlockItemHotkeys and g_game.isBlockItemHotkeys() then
+        blocked = true
+    elseif _G.isRestricted and _G.isRestricted('blockItemHotkeys') then
+        blocked = true
+    end
+    if blocked then
+        if modules.game_textmessage then
+            modules.game_textmessage.displayFailureMessage(
+                tr("Użycie przedmiotów przez hotkey jest zablokowane na tym serwerze.")
+            )
+        end
+        return
+    end
+
     if action == HOTKEY_MANAGER_USE then
         if g_game.getClientVersion() < 780 or subType then
             local item = g_game.findPlayerItem(itemId, subType or -1)
@@ -692,7 +736,19 @@ function updateHotkeyForm(reset, dontUpdateCombo)
             hotkeyText:setText(currentHotkeyLabel.value)
             sendAutomatically:setChecked(currentHotkeyLabel.autoSend)
             sendAutomatically:setEnabled(currentHotkeyLabel.value and #currentHotkeyLabel.value > 0)
-            selectObjectButton:enable()
+            -- Disable "Select Object" button if item hotkeys are blocked
+            local itemBlocked = false
+            if g_game.isBlockItemHotkeys and g_game.isBlockItemHotkeys() then
+                itemBlocked = true
+            elseif _G.isRestricted and _G.isRestricted('blockItemHotkeys') then
+                itemBlocked = true
+            end
+            if itemBlocked then
+                selectObjectButton:disable()
+                selectObjectButton:setTooltip(tr("Hotkey na przedmioty jest niedostępny na tym serwerze."))
+            else
+                selectObjectButton:enable()
+            end
             clearObjectButton:disable()
             currentItemPreview:clearItem()
         end

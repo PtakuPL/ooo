@@ -24,6 +24,49 @@ Servers_init = {
 }
 ]]
 
+-- ── Server categories & restrictions ──────────────────────────────────
+-- Each server in Servers_init can have a 'category' field.
+-- ServerCategories defines per-category restrictions enforced by the client.
+ServerCategories = {
+    ["current"] = {
+        label = "Aktualny",
+        restrictions = {},
+    },
+    ["retro74"] = {
+        label = "Retro 7.4",
+        restrictions = {
+            blockItemHotkeys = true,  -- block ALL item hotkeys (spells via text OK)
+        },
+    },
+}
+
+-- Active server category (set when a server is selected from the list)
+_G.activeServerCategory = nil
+
+-- Check if a restriction is active for the current server category
+function _G.isRestricted(restrictionName)
+    if not _G.activeServerCategory then return false end
+    local cat = ServerCategories and ServerCategories[_G.activeServerCategory]
+    if not cat or not cat.restrictions then return false end
+    return cat.restrictions[restrictionName] == true
+end
+
+-- Get the label of the current server category
+function _G.getActiveCategoryLabel()
+    if not _G.activeServerCategory then return nil end
+    local cat = ServerCategories and ServerCategories[_G.activeServerCategory]
+    return cat and cat.label or _G.activeServerCategory
+end
+
+-- Set category from a server host key (lookup in Servers_init)
+function _G.setServerCategoryFromHost(host)
+    if Servers_init and Servers_init[host] then
+        _G.activeServerCategory = Servers_init[host].category or "current"
+    else
+        _G.activeServerCategory = "current"
+    end
+end
+
 g_app.setName("OTClient - Redemption");
 g_app.setCompactName("otclient");
 g_app.setOrganizationName("otcr");

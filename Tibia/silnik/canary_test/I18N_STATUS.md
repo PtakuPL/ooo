@@ -9,23 +9,23 @@
 ## 🧭 META
 
 > **[META]** 🟢 AKTYWNY  
-> Świeżość: teraz | Źródło: `update_github_status()` | Ostatnia aktualizacja: 2026-02-15 10:52:20
+> Świeżość: teraz | Źródło: `update_github_status()` | Ostatnia aktualizacja: 2026-02-15 10:54:32
 
-> **Aktualizacja:** 2026-02-15 10:52:20 UTC  
+> **Aktualizacja:** 2026-02-15 10:54:32 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 53586  
 > **LIVE:** Cykl #8,035 | Status: ✅ BEZCZYNNY | Faza: IDLE | Etap: sleeping | Kategoria: - | Plik: - | Heartbeat: 2026-02-15T10:51:06Z  
-> **Okno godzinowe:** okno=1.0h | cykli=599 | pominięte=0.0% | odrzucone=0.0% | przepustowość=0.0/h  
+> **Okno godzinowe:** okno=1.0h | cykli=560 | pominięte=0.0% | odrzucone=0.0% | przepustowość=0.0/h  
 > **Tłumaczeń netto:** 80,049
 
 ### 🧩 Status sekcji
 | Sekcja | Stan | Świeżość | Powód | Źródło | Ostatnia aktualizacja |
 |--------|------|----------|-------|--------|-----------------------|
-| META | 🟢 AKTYWNY | teraz | - | `update_github_status()` | 2026-02-15 10:52:20 |
-| LIVE | 🟢 AKTYWNY | 1min temu | - | `activity.json / worker_state.json` | 2026-02-15T10:51:06Z |
-| MIGRATION | 🔒 NIEAKTYWNY | 37s temu | worker w trybie IDLE | `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | 2026-02-15 10:52:20 |
+| META | 🟢 AKTYWNY | teraz | - | `update_github_status()` | 2026-02-15 10:54:32 |
+| LIVE | 🟢 AKTYWNY | 3min temu | - | `activity.json / worker_state.json` | 2026-02-15T10:51:06Z |
+| MIGRATION | 🔒 NIEAKTYWNY | 33s temu | worker w trybie IDLE | `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | 2026-02-15 10:54:32 |
 | TRANSLATION | 🔒 NIEAKTYWNY | 1h temu | worker w trybie IDLE | `translation_guard_latest.json / translation_recent_latest.json` | 2026-02-15T09:49:55.021039Z |
-| QUALITY | 🔒 NIEAKTYWNY | 38min temu | worker w trybie IDLE | `quality_audit_latest.json` | 2026-02-15T10:13:53.206821Z |
-| HISTORY | 🟢 AKTYWNY | teraz | - | `daily/*.json / ops.jsonl` | 2026-02-15 10:52:20 |
+| QUALITY | 🔒 NIEAKTYWNY | 40min temu | worker w trybie IDLE | `quality_audit_latest.json` | 2026-02-15T10:13:53.206821Z |
+| HISTORY | 🟢 AKTYWNY | teraz | - | `daily/*.json / ops.jsonl` | 2026-02-15 10:54:32 |
 
 > Artefakt machine-readable: `i18n/status/status_sections_latest.json`
 
@@ -34,7 +34,7 @@
 ## 🔴 LIVE — Bieżąca praca
 
 > **[LIVE]** 🟢 AKTYWNY  
-> Świeżość: 1min temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-15T10:51:06Z
+> Świeżość: 3min temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-15T10:51:06Z
 
 | Metryka | Wartość |
 |---------|---------|
@@ -65,7 +65,7 @@
 |---------|---------|
 | 📊 Przetłumaczono | **0** kluczy |
 | ❌ Odrzucone (guard) | 0 |
-| 🔁 Cykli | 599 |
+| 🔁 Cykli | 560 |
 | 🌍 Języków | 0 |
 | 🏆 Najaktywniejszy | - (0 kluczy) |
 | 📄 Najczęstszy plik | - |
@@ -197,7 +197,7 @@
 ## 🔍 PRE_MIGRATION — Skan plików źródłowych
 
 > **[PRE_MIGRATION]** 🔒 NIEAKTYWNY (worker w trybie IDLE)  
-> Świeżość: 37s temu | Źródło: `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | Ostatnia aktualizacja: 2026-02-15 10:52:20
+> Świeżość: 33s temu | Źródło: `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | Ostatnia aktualizacja: 2026-02-15 10:54:32
 
 ### 📁 Pliki Projektu (pełny skan)
 | Metryka | Wartość | Procent | Info |
@@ -362,8 +362,8 @@
 ### ⏱️ Ścisłe okno godzinowe (JSONL-only)
 | Metryka | Wartość |
 |---------|---------|
-| Okno | **1.0h** (2026-02-15T09:52:20.524714Z → 2026-02-15T10:52:20.524714Z) |
-| Cykle | **599** (TŁUMACZENIE=0, PRE_MIGRATION=0) |
+| Okno | **1.0h** (2026-02-15T09:54:32.967259Z → 2026-02-15T10:54:32.967259Z) |
+| Cykle | **560** (TŁUMACZENIE=0, PRE_MIGRATION=0) |
 | Pominięte (kat. nieaktywna) | **0** (ogółem=0.0%, migracja=0.0%) |
 | Odrzucone (strażnik jakości) % | **0.0%** |
 | Cykle bez postępu % | **0.0%** |
@@ -376,7 +376,7 @@
 ## 🔬 JAKOŚĆ TŁUMACZEŃ
 
 > **[QUALITY]** 🔒 NIEAKTYWNY (worker w trybie IDLE)  
-> Świeżość: 38min temu | Źródło: `quality_audit_latest.json` | Ostatnia aktualizacja: 2026-02-15T10:13:53.206821Z
+> Świeżość: 40min temu | Źródło: `quality_audit_latest.json` | Ostatnia aktualizacja: 2026-02-15T10:13:53.206821Z
 
 - **Ostatni audyt:** SLOW_MODE | 23 issue(s) / 100 entries | 2026-02-15T10:13:53.206821Z
 - **Top 5 typów problemów:** suspicious_rejected_critical=200, suspicious_log_high=152, identical_to_en_exempt=37, suspicious_log_medium=30, identical_to_en=21
@@ -420,7 +420,7 @@
 | Komponent | Status | Szczegóły |
 |-----------|--------|-----------|
 | Worker | ✅ BEZCZYNNY | Cykl #8,035 |
-| Heartbeat | 74s temu | 2026-02-15T10:51:06Z |
+| Heartbeat | 207s temu | 2026-02-15T10:51:06Z |
 | Uptime | - | od startu workera |
 
 ---
@@ -505,7 +505,7 @@
 ## 🔴 LIVE: Szczegóły wykonania
 
 > **[LIVE]** 🟢 AKTYWNY  
-> Świeżość: 1min temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-15T10:51:06Z
+> Świeżość: 3min temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-15T10:51:06Z
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
@@ -553,7 +553,7 @@
 ## 📜 HISTORIA
 
 > **[HISTORY]** 🟢 AKTYWNY  
-> Świeżość: teraz | Źródło: `daily/*.json / ops.jsonl` | Ostatnia aktualizacja: 2026-02-15 10:52:20
+> Świeżość: teraz | Źródło: `daily/*.json / ops.jsonl` | Ostatnia aktualizacja: 2026-02-15 10:54:32
 
 - ✅ IDLE: IDLE_SLEEP [-] → ok — sleep_seconds=300
 - ✅ IDLE: IDLE_CYCLE_DONE [-] → ok — idle cycle complete
@@ -907,7 +907,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2026-02-15 10:52:20  
+📅 Auto-updated by Worker v1.1 | Last: 2026-02-15 10:54:32  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

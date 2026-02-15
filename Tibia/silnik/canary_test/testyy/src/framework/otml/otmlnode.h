@@ -101,6 +101,12 @@ protected:
 
 #include "otmlexception.h"
 
+// Workaround: MSVC ICE C1001 — throw inside a template header
+// crashes P2 codegen when fmt headers are loaded via PCH in 22+ TUs.
+// Extract the throw into a non-template [[noreturn]] function defined
+// in otmlnode.cpp (which has OTML_NO_FMT + #pragma optimize off).
+[[noreturn]] void throwOTMLNodeCastError(const OTMLNodePtr& node, const std::string& value);
+
 template<>
 inline std::string OTMLNode::value<std::string>()
 {
@@ -121,9 +127,10 @@ T OTMLNode::value()
 {
     T ret;
     if (!stdext::cast(m_value, ret)) {
-        // Plain string concatenation — fmt::format + demangle_type<T>() in a
-        // template header crashes MSVC P2 codegen (ICE C1001) even inside #else.
-        throw OTMLException(asOTMLNode(), std::string("failed to cast node value '") + m_value + "'");
+        // Call non-template [[noreturn]] function instead of throwing inline.
+        // Inline throw of OTMLException in a template header crashes MSVC P2
+        // codegen (ICE C1001) when fmt headers are loaded via PCH.
+        throwOTMLNodeCastError(asOTMLNode(), m_value);
     }
     return ret;
 }

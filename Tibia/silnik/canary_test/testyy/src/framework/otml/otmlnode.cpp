@@ -31,6 +31,14 @@
 #pragma optimize("", off)
 #endif
 
+// Workaround: MSVC ICE C1001 — throwing OTMLException inside a template
+// header crashes P2 codegen when fmt is loaded via PCH.  This non-template
+// [[noreturn]] function is called from OTMLNode::value<T>() instead.
+void throwOTMLNodeCastError(const OTMLNodePtr& node, const std::string& value)
+{
+    throw OTMLException(node, std::string("failed to cast node value '") + value + "'");
+}
+
 OTMLNodePtr OTMLNode::create(const std::string_view tag, const bool unique)
 {
     const auto& node = std::make_shared<OTMLNode>();

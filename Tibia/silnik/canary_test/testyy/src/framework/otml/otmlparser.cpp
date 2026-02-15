@@ -23,6 +23,13 @@
 #include "otmldocument.h"
 #include "otmlparser.h"
 
+namespace {
+bool startsWith(const std::string_view text, const std::string_view prefix)
+{
+    return text.size() >= prefix.size() && text.compare(0, prefix.size(), prefix) == 0;
+}
+}
+
 OTMLParser::OTMLParser(const OTMLDocumentPtr& doc, std::istream& in) :
     currentDepth(0), currentLine(0),
     doc(doc), currentParent(doc), previousNode(nullptr),
@@ -93,7 +100,7 @@ void OTMLParser::parseLine(std::string line)
         return;
 
     // skip comments
-    if (line.starts_with("//") || line.starts_with("#"))
+    if (startsWith(line, "//") || startsWith(line, "#"))
         return;
 
     // a depth above, change current parent to the previous added node
@@ -127,8 +134,8 @@ void OTMLParser::parseNode(const std::string_view data)
     while (!line.empty() && (line.back() == ' ' || line.back() == '\t' || line.back() == '\r'))
         line.pop_back();
 
-    const bool isUrlWithColon = (line.starts_with("http://") || line.starts_with("https://")) && line.back() == ':';
-    const bool isUrlKey = line.starts_with("http://") || line.starts_with("https://");
+    const bool isUrlWithColon = (startsWith(line, "http://") || startsWith(line, "https://")) && line.back() == ':';
+    const bool isUrlKey = startsWith(line, "http://") || startsWith(line, "https://");
 
     if (isUrlWithColon) {
         // URL ending in ':' → treat as a key without ':' and no value on the same line
@@ -225,7 +232,7 @@ void OTMLParser::parseNode(const std::string_view data)
     if (value == "~")
         node->setNull(true);
     else {
-        if (value.starts_with("[") && value.ends_with("]")) {
+        if (value.size() >= 2 && value.front() == '[' && value.back() == ']') {
             const auto& tmp = value.substr(1, value.length() - 2);
             const std::vector tokens = stdext::split(tmp, ",");
             for (std::string v : tokens) {

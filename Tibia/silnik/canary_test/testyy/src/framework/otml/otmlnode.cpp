@@ -23,6 +23,7 @@
 #include "otmlnode.h"
 
 #include "otmlemitter.h"
+#include <algorithm>
 
 OTMLNodePtr OTMLNode::create(const std::string_view tag, const bool unique)
 {
@@ -118,7 +119,7 @@ void OTMLNode::addChild(const OTMLNodePtr& newChild)
 
 bool OTMLNode::removeChild(const OTMLNodePtr& oldChild)
 {
-    const auto it = std::ranges::find(m_children, oldChild);
+    const auto it = std::find(m_children.begin(), m_children.end(), oldChild);
     if (it == m_children.end())
         return false;
 
@@ -128,7 +129,7 @@ bool OTMLNode::removeChild(const OTMLNodePtr& oldChild)
 
 bool OTMLNode::replaceChild(const OTMLNodePtr& oldChild, const OTMLNodePtr& newChild)
 {
-    auto it = std::ranges::find(m_children, oldChild);
+    auto it = std::find(m_children.begin(), m_children.end(), oldChild);
     if (it != m_children.end()) {
         it = m_children.erase(it);
         m_children.insert(it, newChild);

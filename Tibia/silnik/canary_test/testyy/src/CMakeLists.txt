@@ -150,10 +150,13 @@ if (MSVC)
     )
     set_source_files_properties(
       framework/luaengine/luavaluecasts.cpp
+      framework/ui/uiwidgetbasestyle.cpp
+      PROPERTIES COMPILE_FLAGS "/Od /Ob0 /Oy-" SKIP_PRECOMPILE_HEADERS ON
+    )
+    set_source_files_properties(
       framework/otml/otmlnode.cpp
       framework/otml/otmlparser.cpp
-      framework/ui/uiwidgetbasestyle.cpp
-      PROPERTIES COMPILE_FLAGS "/Od /Ob0 /Oy- /d2SSAOptimizer-" SKIP_PRECOMPILE_HEADERS ON
+      PROPERTIES COMPILE_FLAGS "/Od /Ob0 /Oy- /std:c++17" SKIP_PRECOMPILE_HEADERS ON
     )
     set_target_properties(${PROJECT_NAME} PROPERTIES
       INTERPROCEDURAL_OPTIMIZATION FALSE

@@ -130,10 +130,11 @@ GT_CLOUD_DELAY=0.3          # delay dla Cloud API (mniejszy — oficjalne API)
 GT_BATCH_TIMEOUT=18         # timeout (s) na pojedynczy request translate_batch
 GT_SINGLE_TIMEOUT=7         # timeout (s) na pojedynczy request translate
 GT_RATE_LIMITED_COOLDOWN_UNTIL=0  # timestamp unix: do kiedy trwa cooldown GT (0 = brak)
-GT_COOLDOWN_WORK_DURATION=300     # ile sekund robimy inne prace po GT rate-limit (5 min)
+GT_COOLDOWN_WORK_DURATION="${GT_COOLDOWN_WORK_DURATION:-120}"     # ile sekund robimy inne prace po GT rate-limit (domyślnie 2 min)
+export GT_COOLDOWN_WORK_DURATION
 GT_COOLDOWN_FALLBACK_MODES=("PRE_MIGRATION" "DOCUMENTATION")  # rotacja trybów fallback
 GT_COOLDOWN_ROTATION_FILE=".gt_cooldown_rotation"              # plik stanu rotacji (indeks)
-GT_COOLDOWN_MAX_RETRIES=12        # max prób retranslate (12 × 5 min = 60 min)
+GT_COOLDOWN_MAX_RETRIES=12        # max prób retranslate (12 × 2 min = 24 min) [legacy/unused]
 FORCED_AUTO_FAST_LANE_MAX_LIMIT="${FORCED_AUTO_FAST_LANE_MAX_LIMIT:-30}"  # AUTO N<=X używa operator fast-lane
 CROSSREF_AUTO_FIX=false     # --auto-fix-crossref: faza 4.5 (Tryb 2), domyślnie OFF
 CROSSREF_AUTO_FIX_LIMIT=30  # maksymalna liczba auto-fix na język / przebieg walidacji
@@ -13773,10 +13774,11 @@ if use_google_translate and gt_pending and not mid_batch_preempt:
     gt_lang = _gt_lang_code(target_lang)
 
     # GT przetwarza WSZYSTKO z gt_pending — brak sztucznego limitu.
-    # Jeśli GT sam narzuci rate-limit (429), worker czeka 5-10 min i retryuje.
+    # Jeśli GT sam narzuci rate-limit (429), worker czeka ok. 2 min i retryuje.
     gt_todo = gt_pending
-    _GT_RATE_LIMIT_COOLDOWN = 300  # 5 minut cooldown przy 429
-    _GT_RATE_LIMIT_MAX_RETRIES = 3  # max 3 retry (5+7+10 = 22 min total)
+    _GT_RATE_LIMIT_COOLDOWN = int(os.environ.get("GT_COOLDOWN_WORK_DURATION", "120") or "120")  # domyślnie 2 min
+    _GT_RATE_LIMIT_STEP = 0  # stałe 2 min; bez narastania
+    _GT_RATE_LIMIT_MAX_RETRIES = 3  # max 3 retry (2+2+2 = 6 min total)
     _gt_rate_limit_retry = 0
 
     # ── FAZA 1: Google Cloud Translation API (jeśli dostępne) ────────────
@@ -13904,7 +13906,7 @@ if use_google_translate and gt_pending and not mid_batch_preempt:
                     if '429' in _err_str or 'too many' in _err_str or 'rate' in _err_str or 'quota' in _err_str:
                         _gt_rate_limit_retry += 1
                         if _gt_rate_limit_retry <= _GT_RATE_LIMIT_MAX_RETRIES:
-                            _cooldown = _GT_RATE_LIMIT_COOLDOWN + (_gt_rate_limit_retry - 1) * 120  # 5min, 7min, 9min
+                            _cooldown = _GT_RATE_LIMIT_COOLDOWN + (_gt_rate_limit_retry - 1) * _GT_RATE_LIMIT_STEP
                             _remaining_keys = len(gt_todo) - batch_start
                             print(f"⏳ GT RATE LIMIT (429): retry {_gt_rate_limit_retry}/{_GT_RATE_LIMIT_MAX_RETRIES}, czekam {_cooldown}s ({_cooldown//60} min), zostało {_remaining_keys} kluczy")
                             sys.stdout.flush()
@@ -14080,7 +14082,7 @@ if use_google_translate and gt_pending and not mid_batch_preempt:
                 if _gt_rate_hit_this_batch:
                     _gt_rate_limit_retry += 1
                     if _gt_rate_limit_retry <= _GT_RATE_LIMIT_MAX_RETRIES:
-                        _cooldown = _GT_RATE_LIMIT_COOLDOWN + (_gt_rate_limit_retry - 1) * 120
+                        _cooldown = _GT_RATE_LIMIT_COOLDOWN + (_gt_rate_limit_retry - 1) * _GT_RATE_LIMIT_STEP
                         _remaining_keys = len(gt_todo) - (batch_start + gt_batch_size)
                         print(f"⏳ GT RATE LIMIT (single fallback): retry {_gt_rate_limit_retry}/{_GT_RATE_LIMIT_MAX_RETRIES}, czekam {_cooldown}s ({_cooldown//60} min), zostało {max(0, _remaining_keys)} kluczy")
                         sys.stdout.flush()
@@ -14462,9 +14464,13 @@ AUTOTRANSPY
     local _gt_rl_flag
     _gt_rl_flag=$(extract_auto_result_metric "$_auto_result_line" "gt_rate_limited")
     if [ "${_gt_rl_flag:-0}" = "1" ]; then
-        # GT rate-limited: ustaw 5-minutowy cooldown
-        GT_RATE_LIMITED_COOLDOWN_UNTIL=$(( $(date +%s) + 300 ))
-        log "${YELLOW}⏳ GT RATE LIMIT: aktywuję cooldown 5 min (do $(date -d @$GT_RATE_LIMITED_COOLDOWN_UNTIL '+%H:%M:%S')). Worker przejdzie na inne prace.${NC}"
+        # GT rate-limited: ustaw cooldown i przejdź na inne prace (PRE_MIGRATION/DOCUMENTATION)
+        local _gt_cd_sec="${GT_COOLDOWN_WORK_DURATION:-120}"
+        if ! [[ "$_gt_cd_sec" =~ ^[0-9]+$ ]]; then
+            _gt_cd_sec=120
+        fi
+        GT_RATE_LIMITED_COOLDOWN_UNTIL=$(( $(date +%s) + _gt_cd_sec ))
+        log "${YELLOW}⏳ GT RATE LIMIT: aktywuję cooldown ${_gt_cd_sec}s (~$(( (_gt_cd_sec + 30) / 60 )) min) (do $(date -d @$GT_RATE_LIMITED_COOLDOWN_UNTIL '+%H:%M:%S')). Worker przejdzie na inne prace.${NC}"
     fi
 
     # stdout: "translated placeholders guard_fail guard_placeholder guard_command guard_pipe skipped_missing_file skipped_missing_key skipped_not_placeholder"
@@ -20847,7 +20853,7 @@ PYFORCEDMETRIC
             if [ -n "$REPO_ROOT" ]; then
                 REMOTE_CMDS=$(git -C "$REPO_ROOT" show "origin/$GIT_TRACK_BRANCH:Tibia/silnik/canary_test/.github/worker_commands.txt" 2>/dev/null || true)
                 if [ -n "$REMOTE_CMDS" ]; then
-                    CMD=$(echo "$REMOTE_CMDS" | grep -v '^#' | grep -v '^$' | grep -E '^(FORCE:|PREMIG:|AUTO:|SYNC:|SWITCH:|UNSWITCH|LANGVAL:|SPOTCHECK:|GRAMMARFIX:|RESTART|COMPACT_KEYS|IDLE|RANDOM|STATUS|SELFTEST|SELF_CHECK|SKIP|PAUSE:|NOTE:|SET:|TEST:|TEST_ALL|GT:|BATCH:|REPORT|LANGS|CONFIG|FOCUS:|UNFOCUS|LANG:|DOCUMENTATION|DOCINDEX)' | head -1)
+                    CMD=$(echo "$REMOTE_CMDS" | grep -v '^#' | grep -v '^$' | grep -E '^(FORCE:|PREMIG:|AUTO:|SYNC:|SWITCH:|UNSWITCH|LANGVAL:|SPOTCHECK:|GRAMMARFIX:|RESTART|COMPACT_KEYS|IDLE|RANDOM|STATUS|SELFTEST|SELF_CHECK|SKIP|PAUSE:|NOTE:|SET:|TEST:|TEST_ALL|GT:|BATCH:|REPORT|LANGS|CONFIG|FOCUS:|UNFOCUS|LANG:|DOCUMENTATION|DOCINDEX|MIGRATION:|MIGRATION_DRYRUN:)' | head -1)
                     if [ -n "$CMD" ]; then
                         CMD_SOURCE="github"
                         echo "📨 Odebrano z GitHub (.github/worker_commands.txt): $CMD"
@@ -20862,7 +20868,7 @@ BEGIN { done=0 }
         print line
         next
     }
-    if (!done && line ~ /^(FORCE:|PREMIG:|AUTO:|SYNC:|SWITCH:|UNSWITCH|LANGVAL:|SPOTCHECK:|GRAMMARFIX:|RESTART|COMPACT_KEYS|IDLE|RANDOM|STATUS|SKIP|PAUSE:|NOTE:|SET:|TEST:|TEST_ALL|GT:|BATCH:|REPORT|LANGS|CONFIG|FOCUS:|UNFOCUS|LANG:)/) {
+    if (!done && line ~ /^(FORCE:|PREMIG:|AUTO:|SYNC:|SWITCH:|UNSWITCH|LANGVAL:|SPOTCHECK:|GRAMMARFIX:|RESTART|COMPACT_KEYS|IDLE|RANDOM|STATUS|SKIP|PAUSE:|NOTE:|SET:|TEST:|TEST_ALL|GT:|BATCH:|REPORT|LANGS|CONFIG|FOCUS:|UNFOCUS|LANG:|MIGRATION:|MIGRATION_DRYRUN:)/) {
         print "#" line "  # Wykonano " ts
         done=1
         next
@@ -20883,7 +20889,7 @@ BEGIN { done=0 }
                 for COMMANDS_TXT in "$COMMANDS_TXT_PRIMARY" "$COMMANDS_TXT_FALLBACK"; do
                     [ -n "$CMD" ] && break
                     if [ -f "$COMMANDS_TXT" ]; then
-                        CMD=$(grep -v '^#' "$COMMANDS_TXT" | grep -v '^$' | grep -E '^(FORCE:|PREMIG:|AUTO:|SYNC:|SWITCH:|UNSWITCH|LANGVAL:|SPOTCHECK:|GRAMMARFIX:|RESTART|COMPACT_KEYS|IDLE|RANDOM|STATUS|SELFTEST|SELF_CHECK|SKIP|PAUSE:|NOTE:|SET:|TEST:|TEST_ALL|GT:|BATCH:|REPORT|LANGS|CONFIG|FOCUS:|UNFOCUS|LANG:|DOCUMENTATION|DOCINDEX)' | head -1)
+                        CMD=$(grep -v '^#' "$COMMANDS_TXT" | grep -v '^$' | grep -E '^(FORCE:|PREMIG:|AUTO:|SYNC:|SWITCH:|UNSWITCH|LANGVAL:|SPOTCHECK:|GRAMMARFIX:|RESTART|COMPACT_KEYS|IDLE|RANDOM|STATUS|SELFTEST|SELF_CHECK|SKIP|PAUSE:|NOTE:|SET:|TEST:|TEST_ALL|GT:|BATCH:|REPORT|LANGS|CONFIG|FOCUS:|UNFOCUS|LANG:|DOCUMENTATION|DOCINDEX|MIGRATION:|MIGRATION_DRYRUN:)' | head -1)
                         if [ -n "$CMD" ]; then
                             echo "📨 Odebrano z $COMMANDS_TXT: $CMD"
                             TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
@@ -21149,6 +21155,34 @@ BEGIN { done=0 }
                         MODE_CAT="-"
                         MODE_COUNT="0"
                         MODE_EXTRA="FORCED"
+                        ;;
+                    MIGRATION:*)
+                        # Format: MIGRATION:<category>[:<batch>[:<scope>]]
+                        MIG_CAT=$(echo "$CMD" | cut -d: -f2)
+                        MIG_BATCH=$(echo "$CMD" | cut -d: -f3)
+                        MIG_SCOPE=$(echo "$CMD" | cut -d: -f4)
+                        MIG_CAT=${MIG_CAT:-errors}
+                        MIG_BATCH=${MIG_BATCH:-5}
+                        MIG_SCOPE=${MIG_SCOPE:-otservbr}
+                        echo "🔄 MIGRATION: category=$MIG_CAT batch=$MIG_BATCH scope=$MIG_SCOPE"
+                        MODE_TYPE="MIGRATION"
+                        MODE_CAT="$MIG_CAT"
+                        MODE_COUNT="$MIG_BATCH"
+                        MODE_EXTRA="$MIG_SCOPE"
+                        ;;
+                    MIGRATION_DRYRUN:*)
+                        # Format: MIGRATION_DRYRUN:<category>[:<batch>[:<scope>]]
+                        MIG_CAT=$(echo "$CMD" | cut -d: -f2)
+                        MIG_BATCH=$(echo "$CMD" | cut -d: -f3)
+                        MIG_SCOPE=$(echo "$CMD" | cut -d: -f4)
+                        MIG_CAT=${MIG_CAT:-errors}
+                        MIG_BATCH=${MIG_BATCH:-5}
+                        MIG_SCOPE=${MIG_SCOPE:-otservbr}
+                        echo "🔍 MIGRATION_DRYRUN: category=$MIG_CAT batch=$MIG_BATCH scope=$MIG_SCOPE"
+                        MODE_TYPE="MIGRATION"
+                        MODE_CAT="$MIG_CAT"
+                        MODE_COUNT="$MIG_BATCH"
+                        MODE_EXTRA="$MIG_SCOPE:DRY_RUN"
                         ;;
                     RESTART)
                         echo "🔄 RESTART: worker zakończy bieżący cykl i zrestartuje się"
@@ -21600,12 +21634,51 @@ REPORTPY
             
             case "$MODE_TYPE" in
                 MIGRATION)
-                    # === MIGRATION ZABLOKOWANA NA STAŁE ===
-                    echo "🚫 MIGRATION zablokowana (MIGRATION_ENABLED=false)"
-                    echo "   Kategoria: $MODE_CAT | Plików do migracji: ${MODE_COUNT:-0}"
-                    echo "   Migracja kodu źródłowego jest wyłączona. Używaj PRE_MIGRATION do skanowania."
-                    status_log_op "$CYCLE" "MIGRATION" "blocked" "$MODE_CAT" "-" "skip" "migration disabled" "0" "0"
-                    update_category_state "$MODE_CAT" "0"
+                    # === MIGRATION: i18n_migrate.py engine (BLOCKED when MIGRATION_ENABLED=false) ===
+                    if [ "$MIGRATION_ENABLED" != "true" ]; then
+                        echo "🚫 MIGRATION zablokowana (MIGRATION_ENABLED=false)"
+                        echo "   Kategoria: $MODE_CAT | Batch: ${MODE_COUNT:-5} | Scope: ${MODE_EXTRA:-otservbr}"
+                        echo "   Migracja kodu źródłowego jest wyłączona. Używaj PRE_MIGRATION do skanowania."
+                        echo "   Infrastruktura gotowa: tools/i18n_migrate.py (ustaw MIGRATION_ENABLED=true aby uruchomić)"
+                        status_log_op "$CYCLE" "MIGRATION" "blocked" "$MODE_CAT" "-" "skip" "migration disabled" "0" "0"
+                        update_category_state "$MODE_CAT" "0"
+                    else
+                        # MIGRATION_ENABLED=true — uruchom engine
+                        MIG_DRY_RUN_FLAG=""
+                        MIG_SCOPE_ARG="${MODE_EXTRA:-otservbr}"
+                        if [[ "$MIG_SCOPE_ARG" == *":DRY_RUN"* ]]; then
+                            MIG_DRY_RUN_FLAG="--dry-run"
+                            MIG_SCOPE_ARG="${MIG_SCOPE_ARG%%:DRY_RUN}"
+                        fi
+                        MIG_BATCH_ARG="${MODE_COUNT:-5}"
+                        if ! [[ "$MIG_BATCH_ARG" =~ ^[0-9]+$ ]]; then MIG_BATCH_ARG=5; fi
+
+                        echo "🔄 MIGRATION ENGINE: category=$MODE_CAT batch=$MIG_BATCH_ARG scope=$MIG_SCOPE_ARG $MIG_DRY_RUN_FLAG"
+                        MIG_CMD="python3 tools/i18n_migrate.py --category $MODE_CAT --batch $MIG_BATCH_ARG --scope $MIG_SCOPE_ARG --verbose"
+                        [ -n "$MIG_DRY_RUN_FLAG" ] && MIG_CMD="$MIG_CMD $MIG_DRY_RUN_FLAG"
+                        MIG_CMD="$MIG_CMD --project-root . --i18n-dir i18n --status-dir i18n/status"
+
+                        MIG_OUT=$(eval "$MIG_CMD" 2>&1)
+                        MIG_RC=$?
+                        echo "$MIG_OUT" | tail -20
+
+                        # Parse __MIGRATION__ output line
+                        MIG_MIGRATED=$(echo "$MIG_OUT" | grep -oP 'migrated=\K[0-9]+' | head -1 || echo 0)
+                        MIG_SKIPPED=$(echo "$MIG_OUT" | grep -oP 'skipped=\K[0-9]+' | head -1 || echo 0)
+                        MIG_ERRORS=$(echo "$MIG_OUT" | grep -oP 'errors=\K[0-9]+' | head -1 || echo 0)
+                        MIG_MIGRATED=${MIG_MIGRATED:-0}
+                        MIG_SKIPPED=${MIG_SKIPPED:-0}
+                        MIG_ERRORS=${MIG_ERRORS:-0}
+
+                        if [ "$MIG_RC" -eq 0 ]; then
+                            echo "   ✅ MIGRATION OK: migrated=$MIG_MIGRATED skipped=$MIG_SKIPPED"
+                            status_log_op "$CYCLE" "MIGRATION" "ok" "$MODE_CAT" "-" "migrate" "migrated=$MIG_MIGRATED skipped=$MIG_SKIPPED" "$MIG_MIGRATED" "0"
+                        else
+                            echo "   ❌ MIGRATION FAILED: rc=$MIG_RC errors=$MIG_ERRORS"
+                            status_log_op "$CYCLE" "MIGRATION" "error" "$MODE_CAT" "-" "migrate" "rc=$MIG_RC errors=$MIG_ERRORS" "0" "$MIG_ERRORS"
+                        fi
+                        update_category_state "$MODE_CAT" "$MIG_MIGRATED"
+                    fi
                     ;;
 
                 PRE_MIGRATION)

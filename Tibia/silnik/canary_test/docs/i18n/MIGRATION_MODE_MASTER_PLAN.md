@@ -831,12 +831,12 @@ Worker trzyma kopie zapasowe przez 7 dni. Po tym: git history.
 
 ## 10. KOLEJNE KROKI (ACTION ITEMS)
 
-- [ ] **AI-1**: Napisać `tools/i18n_migrate.py` z klasami: MigrationEngine, HitClassifier, KeyGenerator, CodeTransformer
-- [ ] **AI-2**: Dodać HitClassifier reguły filtrowania (SQL, CSS, debug, paths)
-- [ ] **AI-3**: Implementacja CodeTransformer per język (Lua, C++, PHP, XML)
-- [ ] **AI-4**: Dodać MIGRATION case do i18n_worker_simple.sh dispatcher
-- [ ] **AI-5**: Dodać komendy MIGRATION/MIGRATION:{cat}/MIGRATION_DRYRUN
-- [ ] **AI-6**: Przygotować 10 plików testowych i uruchomić dry-run
+- [x] **AI-1**: Napisać `tools/i18n_migrate.py` z klasami: MigrationEngine, HitClassifier, KeyGenerator, CodeTransformer ✅ (2026-02-15)
+- [x] **AI-2**: Dodać HitClassifier reguły filtrowania (SQL, CSS, debug, paths) ✅ (2026-02-15, 22 SKIP patterns)
+- [x] **AI-3**: Implementacja CodeTransformer per język (Lua, C++, PHP, XML) ✅ (2026-02-15, 6 transformerów: lua_literal, lua_concat, cpp_literal, php_literal, twig_text, xml_attribute)
+- [x] **AI-4**: Dodać MIGRATION case do i18n_worker_simple.sh dispatcher ✅ (2026-02-15, if MIGRATION_ENABLED gate + python3 tools/i18n_migrate.py)
+- [x] **AI-5**: Dodać komendy MIGRATION/MIGRATION:{cat}/MIGRATION_DRYRUN ✅ (2026-02-15, regex + case handlers)
+- [x] **AI-6**: Przygotować 10 plików testowych i uruchomić dry-run ✅ (2026-02-15, tested: errors=1547 hits/3 files, cpp=9 hits/2 files)
 - [ ] **AI-7**: Test na kategorii `errors` (141 plików, proste wzorce)
 - [ ] **AI-8**: Test na kategorii `libs` (35 plików, tablice quests.lua)
 - [ ] **AI-9**: Test na `mounts/XML` (8 plików, xml name extraction)

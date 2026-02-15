@@ -1,0 +1,17 @@
+# i18n-proposal: ./src/account/account.hpp
+# Generated: 2026-02-15T19:17:41.807703Z
+# Category: cpp
+# Transforms: 2
+
+--- ./src/account/account.hpp:43
+-	AccountErrors_t addCoins(CoinType type, const uint32_t &amount, const std::string &detail = "ADD Coins");
++	AccountErrors_t addCoins(CoinType type, const uint32_t &amount, const std::string &detail = i18n::g_translator().get("cpp.account.add_coins", player->getLocale()));
+# key: cpp.account.add_coins
+# en: ADD Coins
+
+--- ./src/account/account.hpp:52
+-	AccountErrors_t removeCoins(CoinType type, const uint32_t &amount, const std::string &detail = "REMOVE Coins");
++	AccountErrors_t removeCoins(CoinType type, const uint32_t &amount, const std::string &detail = i18n::g_translator().get("cpp.account.remove_coins", player->getLocale()));
+# key: cpp.account.remove_coins
+# en: REMOVE Coins
+

@@ -1,0 +1,41 @@
+{
+  "timestamp": "2026-02-15T19:17:41.783243Z",
+  "category": "cpp",
+  "scope": "otservbr",
+  "dry_run": false,
+  "proposals_only": false,
+  "total_files": 2,
+  "total_hits": 9,
+  "total_migrated": 9,
+  "total_skipped": 0,
+  "total_errors": 0,
+  "files": [
+    {
+      "path": "./src/account/account.cpp",
+      "hits": 7,
+      "migrated": 7,
+      "skipped": 0,
+      "errors": 0,
+      "keys_added": [
+        "cpp.account.account_doesn_t_have_enough",
+        "cpp.account.failed_to_register",
+        "cpp.account.type_coins_coin_type_d",
+        "cpp.account.failed_to_get_password_for",
+        "cpp.account.failed_to_update_account",
+        "cpp.account.session_expired_for_account",
+        "cpp.account.password_doesn_t_match_any"
+      ]
+    },
+    {
+      "path": "./src/account/account.hpp",
+      "hits": 2,
+      "migrated": 2,
+      "skipped": 0,
+      "errors": 0,
+      "keys_added": [
+        "cpp.account.add_coins",
+        "cpp.account.remove_coins"
+      ]
+    }
+  ]
+}

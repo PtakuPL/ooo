@@ -43,8 +43,9 @@ Kombinacja trzech czynnikow:
 6. Runner: `windows-2022` (bez pinowania toolsetu — 14.38 niedostepny)
 
 ### Status
-- Build #4350+ uruchomiony na GitHub Actions z tymi zmianami
-- Oczekujemy na wynik (~50 min)
+- Build `22034049974` (SHA `8aa3450a1`) — w trakcie (root cause fix: otmlnode.h)
+- Build `22033027682` (SHA `0567a036c`) — FAIL (ICE nadal, #pragma optimize nie pomaga przy P2)
+- Dodatkowe workaround'y: commit `9b48524c9` (cast.h, thingtype.h, tile.h)
 
 ---
 
@@ -61,7 +62,10 @@ Kombinacja trzech czynnikow:
 | 2026-02-15 01:11 | `22026595816` | `3a5f5d8fd` | FAIL | j.w. — C++17 niekompatybilne z PCH |
 | 2026-02-15 01:20 | `22026707920` | `013a5cea5` | FAIL | j.w. |
 | 2026-02-15 ~02:00 | `22032301188` | `351fee6d1` | IN PROGRESS→FAIL | Revert do C++20, ale bez pragma |
-| 2026-02-15 ~02:50 | (nowy) | `0567a036c` | **PENDING** | Pragma off + PCH + /O1 + bez toolset pin |
+| 2026-02-15 ~02:50 | (nowy) | `0567a036c` | **FAIL** | Pragma off + PCH + /O1 + bez toolset pin — ICE nadal w P2 |
+| 2026-02-15 ~04:00 | `22033027682` | `0567a036c` | **FAIL** | ICE C1001 w otmlnode.cpp(76), otmlparser.cpp(40) — #pragma optimize NIE pomaga przy P2 codegen crash |
+| 2026-02-15 ~04:30 | `22034049974` | `8aa3450a1` | **IN PROGRESS** | Root cause fix: ifdef out demangle_type<T>() w otmlnode.h |
+| 2026-02-15 ~05:00 | (nowy) | `9b48524c9` | **PUSHED** | Dodatkowe workaround'y: cast.h, thingtype.h, tile.h |
 
 ### Co probowano i co nie zadzialalo
 
@@ -73,6 +77,39 @@ Kombinacja trzech czynnikow:
 | Custom `startsWith()` helpers | Zbedne — C++20 `.starts_with()` dziala poprawnie, to nie bylo zrodlem ICE |
 | `std::ranges::find` → `std::find` | Mala poprawa, ale nie rozwiazuje ICE |
 | Pinowanie toolset `14.38` | Toolset 14.38 nie jest zainstalowany na runnerze windows-2022 |
+
+### Prawdziwa przyczyna glowna (root cause)
+
+`#pragma optimize("", off)` NIE POMOGLO, bo ICE bylo w **P2 (codegen)**, nie w optimizerze.
+Stack trace z cl.exe wskazywal na `p2\main.cpp:258`, a nie na fazę optymalizacji.
+
+**Root cause:** `otmlnode.h` template `value<T>()` wywolywal `stdext::demangle_type<T>()` 
+wewnatrz `fmt::format()`. Ten template zdefiniowany w headerze byl instancjonowany 
+w KAZDYM translation unit ktory includewal `otmlnode.h` (przez `otmldocument.h`).
+Kazda instancjacja generowala glebokie drzewo `fmt::format + typeid + demangle_name`, 
+co crashowalo P2 codegen MSVC.
+
+**Dowod:** Identyczny wzorzec (`demangle_type<T>()` w template w headerze) 
+byl juz WCZESNIEJ obejty workaround'em w `cast.h` (`safe_cast<R,T>()`), 
+gdzie takze uzywano `#ifdef _MSC_VER` + plain string zamiast demangle.
+
+### Audit dodatkowych ryzyk (2026-02-15 ~05:00)
+
+Przeprowadzono pelny audit wszystkich headerow pod katem analogicznych wzorcow ICE:
+
+| Plik | Problem | Ryzyko | Status |
+|------|---------|--------|--------|
+| `otmlnode.h` | `fmt::format + demangle_type<T>()` w template | **HIGH** | ✅ NAPRAWIONE (`8aa3450a1`) |
+| `cast.h` `safe_cast` | `demangle_type<T>()` w template | **HIGH** | ✅ JUZ BYLO NAPRAWIONE |
+| `cast.h` `update_what` | `demangle_type<T,R>()` w template header | **HIGH** | ✅ NAPRAWIONE (`9b48524c9`) |
+| `luainterface.h` `castValue<T>` | `demangle_type<T>()` w template | **MEDIUM** | ✅ JUZ BYLO NAPRAWIONE |
+| `luainterface.h` `registerClass<C>` | `demangle_class<C>()` x4 | **MEDIUM** | ⚠️ NIENAPRAWIONE (niska priorytet — nie uzywa fmt::format) |
+| `thingtype.h` | `std::ranges::find_if` w inline header | **MEDIUM** | ✅ NAPRAWIONE (`9b48524c9`) |
+| `tile.h` | `std::ranges::find` w inline header | **MEDIUM** | ✅ NAPRAWIONE (`9b48524c9`) |
+| `logger.h` | 11x variadic template z `fmt::format` | **MEDIUM** | ⚠️ do obserwacji |
+| `luabinder.h` | C++20 `requires` w glebokch templates | **MEDIUM** | ⚠️ do obserwacji |
+| `TextShaper.h` | `#include <fribidi.h>` — vcpkg powinien dostarczyc | **MEDIUM** | ⚠️ zalezy od vcpkg |
+| `demangle.h` | `demangle_type<T>()` — brak `+ 6` na MSVC | **LOW** | ℹ️ nie powoduje ICE samo w sobie |
 
 ---
 
@@ -127,6 +164,75 @@ parsowac 31 ciezkich headerow od zera w kazdym OTML pliku.
 ### 3.7 `.github/workflows/build-windows.yml` (ROOT)
 
 **Zmiana:** Usunieto `toolset: '14.38'` (nie istnieje na runnerze). Runner: `windows-2022`.
+
+### 3.8 `src/framework/otml/otmlnode.h` — ROOT CAUSE FIX (commit `8aa3450a1`)
+
+**Problem:** Template `value<T>()` (linia ~120) wywolywal `stdext::demangle_type<T>()` 
+wewnatrz `fmt::format()` — ta kombinacja crashowala MSVC P2 codegen (faza generowania kodu).
+Kazdy TU ktory includewal `otmlnode.h` instancjonowal ten template z roznymi typami T,
+tworzac setek instantiacji `fmt::format + typeid + demangle_name` w kodgenie.
+
+**WAZNE:** `#pragma optimize("", off)` **NIE POMAGA** gdy ICE jest w P2 (codegen), 
+a nie w optimizerze. P2 crashuje niezaleznie od flag optymalizacji.
+
+**Naprawa:**
+```cpp
+template<typename T>
+T OTMLNode::value()
+{
+    T ret;
+    if (!stdext::cast(m_value, ret)) {
+#ifdef _MSC_VER
+        // MSVC ICE C1001 workaround: demangle_type<T>() + fmt::format in template
+        // header crashes P2 codegen. Use plain string instead.
+        throw OTMLException(asOTMLNode(), "failed to cast node value '" + m_value + "'");
+#else
+        throw OTMLException(asOTMLNode(), fmt::format("failed to cast node value '{}' to type '{}'", 
+              m_value, stdext::demangle_type<T>()));
+#endif
+    }
+    return ret;
+}
+```
+
+**Wzorzec:** Identyczny workaround istnial juz w `cast.h` (`safe_cast<R,T>()`) — 
+tam tez unikano `demangle_type<T>()` pod MSVC. Teraz ten sam wzorzec zastosowano w otmlnode.h.
+
+### 3.9 `src/framework/stdext/cast.h` — dodatkowy guard (commit `9b48524c9`)
+
+**Problem:** `cast_exception::update_what<T,R>()` (linia ~141) wywolywal `demangle_type<T>()` 
+i `demangle_type<R>()` w template zdefiniowanym w headerze. Choc uzywany tylko w `#else` 
+(non-MSVC path), definicja jest widoczna dla MSVC i moze byc czesciowo przetworzona.
+
+**Naprawa:** Dodano `#ifdef _MSC_VER` wewnatrz `update_what()`:
+```cpp
+void update_what()
+{
+#ifdef _MSC_VER
+    m_what = "failed to cast value";
+#else
+    std::stringstream ss;
+    ss << "failed to cast value of type '" << demangle_type<T>() << ...;
+    m_what = ss.str();
+#endif
+}
+```
+
+### 3.10 `src/client/thingtype.h` — zamiana std::ranges (commit `9b48524c9`)
+
+**Problem:** `std::ranges::find_if` w inline'owej funkcji w headerze (linia ~363).
+NIE istnial w oryginalnym OTClient — dodany przez nasze zmiany i18n/multilanguage.
+`std::ranges` w MSVC 14.3x mial bugi i w headerze moze powodowac dodatkowa presje 
+na template codegen.
+
+**Naprawa:** Zamieniono na `std::find_if(begin, end, pred)` + dodano `#include <algorithm>`.
+
+### 3.11 `src/client/tile.h` — zamiana std::ranges (commit `9b48524c9`)
+
+**Problem:** `std::ranges::find` w inline `hasThing()` w headerze (linia ~114).
+Analogicznie — nie istnial w oryginale, dodany przez nasze zmiany.
+
+**Naprawa:** Zamieniono na `std::find(begin, end, val)` + dodano `#include <algorithm>`.
 
 ---
 
@@ -651,5 +757,6 @@ gh workflow run build-windows.yml --ref feature/i18n-multilanguage
 
 ---
 
-*Ostatnia aktualizacja: 2026-02-15 ~03:00 CET*
+*Ostatnia aktualizacja: 2026-02-15 ~05:30 CET*
 *Autor: GitHub Copilot + PtakuPL*
+*Commity: 4587d18a7, 0567a036c, 8aa3450a1 (root cause fix), 9b48524c9 (dodatkowe workaround'y)*

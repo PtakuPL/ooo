@@ -120,8 +120,15 @@ template<typename T>
 T OTMLNode::value()
 {
     T ret;
-    if (!stdext::cast(m_value, ret))
+    if (!stdext::cast(m_value, ret)) {
+#ifdef _MSC_VER
+        // MSVC ICE C1001 workaround: demangle_type<T>() + fmt::format in template
+        // header crashes P2 codegen. Use plain string instead.
+        throw OTMLException(asOTMLNode(), "failed to cast node value '" + m_value + "'");
+#else
         throw OTMLException(asOTMLNode(), fmt::format("failed to cast node value '{}' to type '{}'", m_value, stdext::demangle_type<T>()));
+#endif
+    }
     return ret;
 }
 

@@ -80,3 +80,33 @@ Porównanie plików różniących się od ostatniego stabilnego punktu prac (bat
 3. Dopiero po zamknięciu kolejnych batchy kodowych
 - pojedyncze odpalenie workflow Windows (bez aktywnego monitorowania co kilka minut)
 - analiza dopiero finalnego logu
+
+## Batch 3 - rozpoczęte i wykonane (kolejne pliki)
+Wykonano kolejną serię korekt w plikach różniących się od upstream, bez dotykania logiki domenowej, tylko zamiana `starts_with/ends_with` na porównania kompatybilne z C++17:
+
+1. `src/framework/graphics/bitmapfont.cpp`
+- `src.starts_with("/")` -> kontrola `empty/front`
+- `fbVal.starts_with("/")` -> kontrola `empty/front`
+
+2. `src/framework/platform/win32platform.cpp`
+- `process.ends_with(".exe")` -> `size/compare` suffix check
+
+3. `src/framework/ui/uitextedit.cpp`
+- `m_text.ends_with(" ")` -> `!empty && back() == ' '`
+
+4. `src/framework/core/module.cpp`
+- `path.ends_with('*')` i `path.ends_with('/')` -> `!empty && back()==...`
+
+5. `src/framework/ui/uimanager.cpp`
+- `sn.starts_with("UI")` -> `size/compare`
+
+6. `src/framework/ui/uiwidget.cpp`
+- `style->tag().starts_with("$")` -> `!empty && front() == '$'`
+
+7. `src/framework/core/resourcemanager.cpp`
+- dodane lokalne helpery `startsWith(...)` i `endsWith(...)`
+- zamienione 4 użycia `starts_with/ends_with` (pakiety, resolvePath, isFileType)
+
+### Efekt Batch 3
+- W tej grupie plików usunięte wszystkie użycia `starts_with/ends_with`.
+- Zachowana dotychczasowa logika funkcjonalna (zmiany tylko składniowo-kompatybilnościowe).

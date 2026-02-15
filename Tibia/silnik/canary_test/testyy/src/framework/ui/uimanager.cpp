@@ -420,7 +420,7 @@ OTMLNodePtr UIManager::getStyle(const std::string_view sn)
         return m_styles[styleName];
 
     // styles starting with UI are automatically defined
-    if (sn.starts_with("UI")) {
+    if (sn.size() >= 2 && sn.compare(0, 2, "UI") == 0) {
         const auto& node = OTMLNode::create(styleName);
         node->writeAt("__class", styleName);
         m_styles[styleName] = node;

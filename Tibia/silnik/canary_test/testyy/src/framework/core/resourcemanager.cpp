@@ -23,6 +23,7 @@
 #include <algorithm>
 #include <filesystem>
 #include <ranges>
+#include <string_view>
 
 #include "filestream.h"
 #include "resourcemanager.h"
@@ -36,6 +37,18 @@
 #include <framework/util/crypt.h>
 
 #include <physfs.h>
+
+namespace {
+bool startsWith(const std::string_view text, const std::string_view prefix)
+{
+    return text.size() >= prefix.size() && text.compare(0, prefix.size(), prefix) == 0;
+}
+
+bool endsWith(const std::string_view text, const std::string_view suffix)
+{
+    return text.size() >= suffix.size() && text.compare(text.size() - suffix.size(), suffix.size(), suffix) == 0;
+}
+}
 
 ResourceManager g_resources;
 
@@ -178,7 +191,7 @@ void ResourceManager::searchAndAddPackages(const std::string& packagesDir, const
 {
     auto files = listDirectoryFiles(packagesDir);
     for (auto& file : std::ranges::reverse_view(files)) {
-        if (!file.ends_with(packageExt))
+        if (!endsWith(file, packageExt))
             continue;
         std::string package = getRealDir(packagesDir) + "/" + file;
         if (!addSearchPath(package, true))
@@ -420,7 +433,7 @@ std::vector<std::string> ResourceManager::discoverPath(const std::filesystem::pa
 std::string ResourceManager::resolvePath(const std::string& path)
 {
     std::string fullPath;
-    if (path.starts_with("/"))
+    if (startsWith(path, "/"))
         fullPath = path;
     else if (g_drawPool.isPreDrawing())
         fullPath = "/" + path;
@@ -430,7 +443,7 @@ std::string ResourceManager::resolvePath(const std::string& path)
         fullPath += path;
     }
 
-    if (!(fullPath.starts_with("/")))
+    if (!startsWith(fullPath, "/"))
         g_logger.traceWarning(fmt::format("the following file path is not fully resolved: {}", path));
 
     stdext::replace_all(fullPath, "//", "/");
@@ -482,7 +495,7 @@ std::string ResourceManager::guessFilePath(const std::string& filename, const st
 
 bool ResourceManager::isFileType(const std::string& filename, const std::string& type)
 {
-    if (filename.ends_with(std::string(".") + type))
+    if (endsWith(filename, std::string(".") + type))
         return true;
     return false;
 }

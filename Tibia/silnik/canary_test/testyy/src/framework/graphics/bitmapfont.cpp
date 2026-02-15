@@ -66,7 +66,7 @@ if(type == "ttf") {
         
         // Use the path directly - it should be an absolute virtual path starting with /
         std::string mainPath = src;
-        if (!src.starts_with("/")) {
+        if (src.empty() || src.front() != '/') {
             // Relative path - resolve from source file location
             const std::string srcSource = srcNode->source();
             mainPath = stdext::resolve_path(src, srcSource);
@@ -82,7 +82,7 @@ if(type == "ttf") {
             for (const auto& child : fb->children()) {
                 const std::string fbVal = child->value<std::string>();
                 if (!fbVal.empty()) {
-                    if (fbVal.starts_with("/")) {
+                    if (!fbVal.empty() && fbVal.front() == '/') {
                         fbPaths.emplace_back(fbVal);
                     } else {
                         fbPaths.emplace_back(stdext::resolve_path(fbVal, child->source()));

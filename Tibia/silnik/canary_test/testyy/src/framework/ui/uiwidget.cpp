@@ -1713,7 +1713,7 @@ void UIWidget::updateStyle()
 
     // checks for states combination
     for (const auto& style : m_style->children()) {
-        if (style->tag().starts_with("$")) {
+        if (!style->tag().empty() && style->tag().front() == '$') {
             std::string statesStr = style->tag().substr(1);
             std::vector<std::string> statesSplit = stdext::split(statesStr, " ");
 

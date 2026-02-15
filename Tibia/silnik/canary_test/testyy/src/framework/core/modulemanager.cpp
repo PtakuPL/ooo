@@ -135,7 +135,7 @@ ModulePtr ModuleManager::getModule(const std::string_view moduleName)
 
 void ModuleManager::updateModuleLoadOrder(const ModulePtr& module)
 {
-    if (const auto it = std::ranges::find(m_modules, module);
+    if (const auto it = std::find(m_modules.begin(), m_modules.end(), module);
         it != m_modules.end())
         m_modules.erase(it);
     if (module->isLoaded())

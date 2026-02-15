@@ -256,7 +256,7 @@ void UIGraph::cacheGraphs()
 
                 graph.points.clear();
 
-                auto [minValueIter, maxValueIter] = std::ranges::minmax_element(graph.values);
+                auto [minValueIter, maxValueIter] = std::minmax_element(graph.values.begin(), graph.values.end());
                 minValue = *minValueIter;
                 maxValue = *maxValueIter;
                 float range = maxValue - minValue;
@@ -308,7 +308,7 @@ void UIGraph::updateGraph(Graph& graph, bool& updated)
 
         graph.infoValue = fmt::format("{} {}", graph.infoText, value);
 
-        auto [minValueIter, maxValueIter] = std::ranges::minmax_element(graph.values);
+        auto [minValueIter, maxValueIter] = std::minmax_element(graph.values.begin(), graph.values.end());
         const auto minValue = static_cast<float>(*minValueIter);
         const auto maxValue = static_cast<float>(*maxValueIter);
         float range = maxValue - minValue;

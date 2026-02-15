@@ -22,6 +22,7 @@
 
 #pragma once
 
+#include <algorithm>
 #include <framework/luaengine/luaobject.h>
 
 #include "attachableobject.h"
@@ -111,7 +112,7 @@ public:
     bool removeThing(ThingPtr thing);
     ThingPtr getThing(int stackPos);
     EffectPtr getEffect(uint16_t id) const;
-    bool hasThing(const ThingPtr& thing) { return std::ranges::find(m_things, thing) != m_things.end(); }
+    bool hasThing(const ThingPtr& thing) { return std::find(m_things.begin(), m_things.end(), thing) != m_things.end(); }
     int getThingStackPos(const ThingPtr& thing);
     ThingPtr getTopThing();
 

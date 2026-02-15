@@ -290,7 +290,7 @@ void Protocol::generateXteaKey()
 {
     std::random_device rd;
     std::uniform_int_distribution<uint32_t > unif;
-    std::ranges::generate(m_xteaKey, [&unif, &rd] { return unif(rd); });
+    std::generate(m_xteaKey.begin(), m_xteaKey.end(), [&unif, &rd] { return unif(rd); });
 }
 
 namespace

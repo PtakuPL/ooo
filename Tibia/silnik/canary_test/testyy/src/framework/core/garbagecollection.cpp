@@ -21,6 +21,7 @@
  */
 
 #include "garbagecollection.h"
+#include <algorithm>
 #include <client/thingtypemanager.h>
 #include <framework/core/asyncdispatcher.h>
 #include <framework/core/eventdispatcher.h>
@@ -53,14 +54,17 @@ void GarbageCollection::lua() {
 void GarbageCollection::texture() {
     static constexpr uint32_t IDLE_TIME = 25 * 60 * 1000; // 25min
 
-    std::erase_if(g_textures.m_textures, [](const auto& item) {
-        const auto& [key, tex] = item;
-        return tex.use_count() == 1 && tex->m_lastTimeUsage.ticksElapsed() > IDLE_TIME;
-    });
+    for (auto it = g_textures.m_textures.begin(); it != g_textures.m_textures.end();) {
+        const auto& tex = it->second;
+        if (tex.use_count() == 1 && tex->m_lastTimeUsage.ticksElapsed() > IDLE_TIME)
+            it = g_textures.m_textures.erase(it);
+        else
+            ++it;
+    }
 
-    std::erase_if(g_textures.m_animatedTextures, [](const TexturePtr& tex) {
+    g_textures.m_animatedTextures.erase(std::remove_if(g_textures.m_animatedTextures.begin(), g_textures.m_animatedTextures.end(), [](const TexturePtr& tex) {
         return tex.use_count() == 1 && tex->m_lastTimeUsage.ticksElapsed() > IDLE_TIME;
-    });
+    }), g_textures.m_animatedTextures.end());
 }
 
 void GarbageCollection::thingType() {

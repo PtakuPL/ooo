@@ -70,7 +70,7 @@ void Map::addMapView(const MapViewPtr& mapView) { m_mapViews.push_back(mapView);
 
 void Map::removeMapView(const MapViewPtr& mapView)
 {
-    const auto it = std::ranges::find(m_mapViews, mapView);
+    const auto it = std::find(m_mapViews.begin(), m_mapViews.end(), mapView);
     if (it != m_mapViews.end())
         m_mapViews.erase(it);
 }
@@ -250,7 +250,7 @@ bool Map::removeThing(const ThingPtr& thing)
 
     if (thing->isMissile()) {
         auto& missiles = m_floors[thing->getServerPosition().z].missiles;
-        const auto it = std::ranges::find(missiles, thing->static_self_cast<Missile>());
+        const auto it = std::find(missiles.begin(), missiles.end(), thing->static_self_cast<Missile>());
         if (it == missiles.end())
             return false;
 
@@ -277,7 +277,7 @@ bool Map::removeThingByPos(const Position& pos, const int16_t stackPos)
 }
 
 bool Map::removeStaticText(const StaticTextPtr& txt) {
-    const auto it = std::ranges::find(m_staticTexts, txt);
+    const auto it = std::find(m_staticTexts.begin(), m_staticTexts.end(), txt);
     if (it == m_staticTexts.end())
         return false;
 
@@ -286,7 +286,7 @@ bool Map::removeStaticText(const StaticTextPtr& txt) {
 }
 
 bool Map::removeAnimatedText(const AnimatedTextPtr& txt) {
-    const auto it = std::ranges::find(m_animatedTexts, txt);
+    const auto it = std::find(m_animatedTexts.begin(), m_animatedTexts.end(), txt);
     if (it == m_animatedTexts.end())
         return false;
 
@@ -946,7 +946,7 @@ std::tuple<std::vector<Otc::Direction>, Otc::PathFindResult> Map::findPath(const
             currentNode = currentNode->prev;
         }
         dirs.pop_back();
-        std::ranges::reverse(dirs);
+        std::reverse(dirs.begin(), dirs.end());
         result = Otc::PathFindResultOk;
     }
 

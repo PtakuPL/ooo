@@ -22,6 +22,7 @@
 
 #pragma once
 
+#include <algorithm>
 #include "animator.h"
 #include "declarations.h"
 
@@ -360,7 +361,7 @@ public:
 
         const uint32_t itemId = getId();
 
-        const auto it = std::ranges::find_if(forcedPrices, [itemId](const auto& pair) { return pair.first == itemId; });
+        const auto it = std::find_if(forcedPrices.begin(), forcedPrices.end(), [itemId](const auto& pair) { return pair.first == itemId; });
 
         if (it != forcedPrices.end()) {
             return it->second;

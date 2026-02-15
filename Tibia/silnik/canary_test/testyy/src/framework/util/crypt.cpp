@@ -35,6 +35,7 @@
 #include <zlib.h>
 
 #include <algorithm>
+#include <cctype>
 
 #include "framework/core/graphicalapplication.h"
 #include <openssl/sha.h>
@@ -316,9 +317,9 @@ std::string Crypt::crc32(const std::string& decoded_string, const bool upperCase
     crc = ::crc32(crc, (const Bytef*)decoded_string.c_str(), decoded_string.size());
     std::string result = stdext::dec_to_hex(crc);
     if (upperCase)
-        std::ranges::transform(result, result.begin(), toupper);
+        std::transform(result.begin(), result.end(), result.begin(), [](const unsigned char ch) { return static_cast<char>(std::toupper(ch)); });
     else
-        std::ranges::transform(result, result.begin(), tolower);
+        std::transform(result.begin(), result.end(), result.begin(), [](const unsigned char ch) { return static_cast<char>(std::tolower(ch)); });
     return result;
 }
 

@@ -117,27 +117,27 @@ void AttachableObject::clearAttachedEffects(const bool ignoreLuaEvent)
 void AttachableObject::clearTemporaryAttachedEffects()
 {
     if (!hasAttachedEffects()) return;
-    std::erase_if(m_data->attachedEffects,
+    m_data->attachedEffects.erase(std::remove_if(m_data->attachedEffects.begin(), m_data->attachedEffects.end(),
                   [this](const AttachedEffectPtr& obj) {
         if (!obj->isPermanent()) {
             onDetachEffect(obj);
             return true;
         }
         return false;
-    });
+    }), m_data->attachedEffects.end());
 }
 
 void AttachableObject::clearPermanentAttachedEffects()
 {
     if (!hasAttachedEffects()) return;
-    std::erase_if(m_data->attachedEffects,
+    m_data->attachedEffects.erase(std::remove_if(m_data->attachedEffects.begin(), m_data->attachedEffects.end(),
                   [this](const AttachedEffectPtr& obj) {
         if (obj->isPermanent()) {
             onDetachEffect(obj);
             return true;
         }
         return false;
-    });
+    }), m_data->attachedEffects.end());
 }
 
 AttachedEffectPtr AttachableObject::getAttachedEffectById(uint16_t id)
@@ -228,7 +228,7 @@ void AttachableObject::updateAndAttachParticlesEffects(std::vector<std::string>&
     toRemove.reserve(m_data->attachedParticles.size());
 
     for (const auto& effect : m_data->attachedParticles) {
-        auto findPos = std::ranges::find(newElements, effect->getEffectType()->getName());
+        auto findPos = std::find(newElements.begin(), newElements.end(), effect->getEffectType()->getName());
         if (findPos == newElements.end())
             toRemove.emplace_back(effect->getEffectType()->getName());
         else

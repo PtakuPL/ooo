@@ -128,3 +128,80 @@ Dokończono usuwanie `starts_with/ends_with` w pozostałych plikach różniącyc
 ### Status po Batch 4
 - W plikach różniących się od oryginału `opentibiabr/otclient` nie ma już użyć `starts_with/ends_with`.
 - Kolejny etap audytu: przegląd różnic pod `std::ranges` (tam gdzie różnimy się od upstream) i ocena, które miejsca warto podobnie odchudzić.
+
+## Batch 5 - redukcja `std::ranges` w plikach różniących się od upstream
+Wykonane zmiany (semantycznie równoważne):
+
+1. `src/framework/util/crypt.cpp`
+- `std::ranges::transform` -> `std::transform` + jawne `std::toupper/std::tolower` (bezpieczny cast)
+
+2. `src/framework/core/module.cpp`
+- `std::ranges::find` -> `std::find`
+
+3. `src/framework/core/garbagecollection.cpp`
+- `std::erase_if` (mapa) -> pętla z `erase(it)`
+- `std::erase_if` (wektor) -> `erase(remove_if(...))`
+
+4. `src/client/uigraph.cpp`
+- `std::ranges::minmax_element` -> `std::minmax_element(begin, end)`
+
+5. `src/client/mapview.cpp`
+- `std::ranges::find` -> `std::find`
+
+6. `src/framework/ui/uiverticallayout.cpp`
+- `std::ranges::reverse_view` -> iteracja po `rbegin()/rend()`
+
+7. `src/framework/ui/uihorizontallayout.cpp`
+- `std::ranges::reverse_view` -> iteracja po `rbegin()/rend()`
+
+8. `src/framework/ui/uimanager.cpp`
+- `std::ranges::find` -> `std::find`
+
+9. `src/framework/net/protocol.cpp`
+- `std::ranges::generate` -> `std::generate(begin, end, ...)`
+
+10. `src/framework/graphics/shaderprogram.cpp`
+- `std::ranges::find` -> `std::find`
+
+11. `src/framework/core/modulemanager.cpp`
+- `std::ranges::find` -> `std::find`
+
+12. `src/client/tile.h`
+- inline `std::ranges::find` -> `std::find`
+
+13. `src/client/thingtype.h`
+- `std::ranges::find_if` -> `std::find_if(begin, end, ...)`
+
+14. `src/client/spriteappearances.cpp`
+- `std::ranges::find_if` -> `std::find_if(begin, end, ...)`
+
+15. `src/client/protocolcodes.cpp`
+- `std::ranges::find_if` -> `std::find_if(begin, end, ...)`
+
+## Batch 6 - domknięcie największego pliku
+1. `src/client/attachableobject.cpp`
+- `std::erase_if` -> `erase(remove_if(...))`
+- `std::ranges::find` -> `std::find`
+
+2. `src/client/map.cpp`
+- `std::ranges::find` -> `std::find`
+- `std::ranges::reverse` -> `std::reverse`
+
+3. `src/client/tile.cpp`
+- `std::ranges::find` -> `std::find`
+- `std::ranges::reverse_view` -> pętle po `rbegin()/rend()`
+
+4. `src/framework/core/resourcemanager.cpp`
+- `std::ranges::find` -> `std::find`
+- `std::ranges::reverse_view` -> pętle po `rbegin()/rend()`
+
+5. `src/framework/ui/uiwidget.cpp`
+- wszystkie użycia `std::ranges::find/rotate/reverse/reverse_view` zastąpione odpowiednikami `std::find/std::rotate/std::reverse` i iteracją po reverse iteratorach
+
+### Stan po Batch 6
+- W plikach różniących się od upstream (`testyy/src` vs `opentibiabr/otclient`) nie ma już użyć:
+  - `starts_with`
+  - `ends_with`
+  - `std::ranges::...`
+  - `std::views::...`
+  - `std::erase_if`

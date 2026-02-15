@@ -189,7 +189,7 @@ SpriteSheetPtr SpriteAppearances::getSheetBySpriteId(const int id, bool& isLoadi
     }
 
     // find sheet
-    const auto sheetIt = std::ranges::find_if(m_sheets, [=](const SpriteSheetPtr& sheet) {
+    const auto sheetIt = std::find_if(m_sheets.begin(), m_sheets.end(), [=](const SpriteSheetPtr& sheet) {
         return id >= sheet->firstId && id <= sheet->lastId;
     });
 

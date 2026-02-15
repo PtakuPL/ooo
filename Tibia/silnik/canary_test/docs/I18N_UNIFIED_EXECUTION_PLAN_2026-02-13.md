@@ -8,6 +8,27 @@
 
 ## Update wykonania (2026-02-14 18:30 UTC) — grammar audit + per-file drift + inline dict removal + GT heuristics S25-S26
 
+## Update wykonania (2026-02-15 14:45 UTC) — WQ-FAST-7 probe + webhook scope decision
+
+### Zakres (decyzja właściciela)
+- `STATUSD_WEBHOOK_URL` → **DE-SCOPED** (nie wdrażamy webhooka w tym etapie).
+- Wszystkie historyczne wpisy TODO o konfiguracji webhooka traktować jako archiwalne.
+
+### WQ-FAST-7 (status bieżący)
+- Wykonano serię wymuszeń `AUTO:<lang>:<json>:1:ONCE` i zebrano próbki runtime.
+- Aktualny wynik formalny: **OPEN / NOT MET**.
+  - `forced_command_fast`: `status=sla_elevated`
+  - `p95_roundtrip` i `p95_pending` nadal powyżej celu SLA w oknie analizowanym przez doctor.
+- Dodatkowo usunięto runtime crash path w workerze (`NameError: _gt_rate_limited`) przez inicjalizację flagi poza warunkowym blokiem GT.
+
+### Następny krok
+- Kontynuować zbieranie próbek w stabilnej epoce runtime i domknąć `WQ-FAST-7` dopiero po spełnieniu:
+  - `p95 pending_age<=15s`
+  - `p95 roundtrip<=45s`
+  - min. 20 próbek w docelowym oknie.
+
+## Update wykonania (2026-02-14 18:30 UTC) — grammar audit + per-file drift + inline dict removal + GT heuristics S25-S26
+
 ### WQ-QUALITY-55-1: Grammar/style audit (DONE)
 - Zaimplementowano `run_grammar_audit()` w statusd — 12 heurystyk agnostycznych językowo (G1-G12):
   - G1: placeholder_mismatch (critical), G2: format_token_mismatch (warning), G3: html_tag_mismatch (warning),

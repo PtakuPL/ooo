@@ -225,7 +225,7 @@ void OTMLParser::parseNode(const std::string_view data)
 
     node->setUnique(isUrlWithColon || dotsPos != std::string::npos);
     node->setTag(tag);
-    node->setSource(doc->source() + \":\" + std::to_string(nodeLine));
+    node->setSource(doc->source() + ":" + std::to_string(nodeLine));
 
     // ~ is considered the null value
     if (value == "~")

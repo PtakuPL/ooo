@@ -1,0 +1,2 @@
+category,file,line,pattern,text
+dataroot,data/global.lua,11,lua.long_literal,data-otservbr-global

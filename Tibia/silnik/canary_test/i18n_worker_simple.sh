@@ -129,6 +129,8 @@ GT_DELAY=1.5                # sekundy przerwy między batchami GT (anty rate-lim
 GT_CLOUD_DELAY=0.3          # delay dla Cloud API (mniejszy — oficjalne API)
 GT_BATCH_TIMEOUT=18         # timeout (s) na pojedynczy request translate_batch
 GT_SINGLE_TIMEOUT=7         # timeout (s) na pojedynczy request translate
+GT_RATE_LIMITED_COOLDOWN_UNTIL=0  # timestamp unix: do kiedy trwa cooldown GT (0 = brak)
+GT_COOLDOWN_WORK_DURATION=300     # ile sekund robimy inne prace po GT rate-limit (5 min)
 FORCED_AUTO_FAST_LANE_MAX_LIMIT="${FORCED_AUTO_FAST_LANE_MAX_LIMIT:-30}"  # AUTO N<=X używa operator fast-lane
 CROSSREF_AUTO_FIX=false     # --auto-fix-crossref: faza 4.5 (Tryb 2), domyślnie OFF
 CROSSREF_AUTO_FIX_LIMIT=30  # maksymalna liczba auto-fix na język / przebieg walidacji
@@ -165,7 +167,7 @@ PARALLEL_GT_MAX_RPM=100        # max GT requests/min (8.4.3)
 # - server: tylko serwer (bez website + OTClient/testyy)
 # - full (domyślnie): serwer + instalka (OTClient/testyy), bez website
 # - all: wszystkie zdefiniowane kategorie (w tym website)
-I18N_SCOPE="${I18N_SCOPE:-full}"
+I18N_SCOPE="${I18N_SCOPE:-all}"
 export I18N_SCOPE
 
 # Statusy (LIVE + zdarzenia + daily) - docelowo źródło prawdy dla I18N_STATUS.md
@@ -1465,6 +1467,35 @@ except:
     except:
         pass
 
+# F5: Prawdziwa liczba cykli z perf.jsonl
+_real_cycles = cycle_count
+try:
+    _perf_path = os.path.join(os.path.dirname(os.path.abspath(__file__)) if '__file__' in dir() else ".", "i18n", "status", "worker_cycle_perf.jsonl")
+    if not os.path.exists(_perf_path):
+        _perf_path = os.path.join("i18n", "status", "worker_cycle_perf.jsonl")
+    if os.path.exists(_perf_path):
+        with open(_perf_path, "rb") as _pf:
+            _real_cycles = sum(1 for _ in _pf)
+        if _real_cycles < 1:
+            _real_cycles = cycle_count
+except Exception:
+    pass
+
+# E4: Ładuj coverage snapshot z statusd_daily_report dla delta 24h
+_prev_coverage = {}
+try:
+    _sdr_path = os.path.join("i18n", "status", "statusd_daily_report.json")
+    if os.path.exists(_sdr_path):
+        with open(_sdr_path, encoding="utf-8") as _sf:
+            _sdr = json.load(_sf)
+        _cs = _sdr.get("coverage_snapshot", {})
+        if isinstance(_cs, dict):
+            for _cl, _cv in _cs.items():
+                if isinstance(_cv, dict) and "completion_pct" in _cv:
+                    _prev_coverage[_cl.lower()] = float(_cv["completion_pct"])
+except Exception:
+    pass
+
 # ============ NOWE STATYSTYKI DLA ROZBUDOWANEGO GLOBALNY POSTĘP ============
 
 # 1. WSZYSTKIE PLIKI W PROJEKCIE - PEŁNY SKAN
@@ -2639,11 +2670,13 @@ if activity_present:
     mode_display = f"{icon} {phase} ({stage})"
     category_display = f"📁 {category.upper()}" if category and category != "-" else "-"
 
+    _live_progress = f"{done}/{total} {unit}" if done > 0 else (f"batch: {total} {unit}/cykl" if total > 0 else "-")
+
     live_details = "\n".join(
         [
             line(f"Status: {status_txt}"),
             line(f"Plik: {file_path}"),
-            line(f"Postęp: {done}/{total} {unit}"),
+            line(f"Postęp: {_live_progress}"),
             line(f"Info: {msg}"),
         ]
     )
@@ -2658,32 +2691,35 @@ elif last_mode in ("MIGRATION", "PRE_MIGRATION"):
     mode_display = "🔍 PRE_MIGRATION (skan plików, bez modyfikacji)"
     category_display = f"📁 {last_category.upper()}"
     
-    # Statystyki migracji - RZECZYWISTE DANE z plików JSON
-    # Klucze z i18n/en/*.json (faktyczne klucze), pliki z file_status
-    files_scanned = len([f for f, info in json.load(open(STATUS_FILE)).get("files", {}).items() 
-                        if info.get("overall_status") == "completed"]) if os.path.exists(STATUS_FILE) else 0
+    # Statystyki migracji - RZECZYWISTE DANE z plików JSON per-kategoria
+    _pm_per_cat = global_stats.get("pre_migration_per_cat", {})
+    _pm_totals = global_stats.get("pre_migration_totals", {})
+    _pm_total_hits = int(_pm_totals.get("hits", 0) or 0)
+    _pm_total_files = int(_pm_totals.get("files_with_hits", 0) or 0)
+    _pm_total_scanned = int(_pm_totals.get("files_scanned", 0) or 0)
+    _pm_cats_done = len([c for c in _pm_per_cat])
+    _pm_cats_with_hits = len([c for c,d in _pm_per_cat.items() if d.get("hits", 0) > 0])
     
-    # Klucze per kategoria - z tego co pokazujemy w tabelach
-    category_keys = {
-        "npc": npc_keys,
-        "scripts": scripts_keys,
-        "monsters": monsters_keys,
-        "items": items_keys,
-        "spells": spells_keys
-    }
-    current_cat_keys = category_keys.get(last_category.lower(), 0)
+    # Dane bieżącej kategorii
+    _pm_cur_cat_data = _pm_per_cat.get(last_category, {})
+    _pm_cur_hits = int(_pm_cur_cat_data.get("hits", 0))
+    _pm_cur_files = int(_pm_cur_cat_data.get("files_with_hits", 0))
+    _pm_cur_scanned = int(_pm_cur_cat_data.get("files_scanned", 0))
+    _pm_cur_generated = str(_pm_cur_cat_data.get("generated", ""))[:19]
 
-    pm_hits = int(pre_migration_data.get("hits", 0) or 0)
-    pm_files_with_hits = int(pre_migration_data.get("files_with_hits", 0) or 0)
-    pm_total_scanned = int(pre_migration_data.get("total_files_scanned", 0) or 0)
-    pm_req_cat = str(pre_migration_data.get("requested_category", last_category) or last_category)
-    if pm_total_scanned <= 0:
-        pm_total_scanned = files_scanned
+    # Top 3 kategorii z hitami
+    _pm_top_cats = sorted(
+        [(c, d.get("hits", 0)) for c, d in _pm_per_cat.items() if d.get("hits", 0) > 0],
+        key=lambda x: -x[1]
+    )[:3]
+    _pm_top_cats_str = ", ".join(f"{c}({h:,})" for c, h in _pm_top_cats) if _pm_top_cats else "brak"
 
-    live_details = f"""│ 📊 Pliki przeskanowane: {files_scanned:>6} (wszystkie kategorie)          │
-│    ├─ PRE_MIGRATION backlog: hits={pm_hits:>5} files={pm_files_with_hits:>5}/{pm_total_scanned:<5} │
-│    ├─ Ostatni skan kategorii: {pm_req_cat[:20]:>20}                      │
-│    ├─ Kategoria {last_category.upper():>6}: {current_cat_keys:>6} kluczy EN                    │
+    live_details = f"""│ 📊 PRE_MIGRATION — skan plików źródłowych                          │
+│    ├─ Bieżąca kategoria: {last_category.upper():>18} ({_pm_cur_hits:,} hits, {_pm_cur_scanned:,} plików) │
+│    ├─ Ostatni skan:     {_pm_cur_generated:>20}                     │
+│    ├─ Kategorii z hitami: {_pm_cats_with_hits:>3}/{_pm_cats_done:<3} (top: {_pm_top_cats_str[:35]}) │
+│    ├─ Total hits:  {_pm_total_hits:>8,} stringów w {_pm_total_files:>6,} plikach    │
+│    ├─ Total plików przeskanowanych: {_pm_total_scanned:>8,}               │
 │    └─ Total kluczy EN: {total_keys:>6}                                 │"""
 
     summary_phase = "PRE_MIGRATION"
@@ -2819,6 +2855,55 @@ else:
 
 if translations_only_mode:
     mode_display = f"{mode_display} | STRICT"
+
+# PRE_MIGRATION per-category table for I18N_STATUS.md
+premig_per_cat = global_stats.get("pre_migration_per_cat", {})
+premig_totals = global_stats.get("pre_migration_totals", {})
+if premig_per_cat:
+    _plines = ["| Kategoria | Hits (stringów) | Plików z hitami | Plików przeskanowanych | Status |",
+               "|-----------|-----------------|-----------------|------------------------|--------|"]
+    for _cn in sorted(premig_per_cat, key=lambda c: premig_per_cat[c].get('hits', 0), reverse=True):
+        _cd = premig_per_cat[_cn]
+        _ch = _cd.get('hits', 0)
+        _cf = _cd.get('files_with_hits', 0)
+        _cs = _cd.get('files_scanned', 0)
+        _status = "✅ Czysta" if _ch == 0 else f"🔍 {_ch} do migracji"
+        _plines.append(f"| {_cn} | **{_ch:,}** | {_cf:,} | {_cs:,} | {_status} |")
+    _pt = premig_totals
+    _plines.append(f"| **SUMA** | **{_pt.get('hits', 0):,}** | **{_pt.get('files_with_hits', 0):,}** | **{_pt.get('files_scanned', 0):,}** | {'🔍 Wymaga pracy' if _pt.get('hits', 0) > 0 else '✅ Wszystko czyste'} |")
+
+    # Przykłady znalezionych tekstów (top 3 per kategoria, max 15 total)
+    _examples = []
+    _premig_dir = os.path.join('i18n', 'status', 'pre_migration_todo')
+    if os.path.isdir(_premig_dir):
+        for _cn in sorted(premig_per_cat, key=lambda c: premig_per_cat[c].get('hits', 0), reverse=True):
+            if premig_per_cat[_cn].get('hits', 0) == 0:
+                continue
+            try:
+                with open(os.path.join(_premig_dir, f"{_cn}.json"), encoding='utf-8') as _ef:
+                    _ed = json.load(_ef)
+                for _entry in _ed.get('entries', [])[:3]:
+                    _efile = str(_entry.get('file', '?'))
+                    _eline = str(_entry.get('line', '?'))
+                    _etext = str(_entry.get('text', '?'))[:80].replace('|', '\\|')
+                    _epat = str(_entry.get('pattern', '?'))
+                    _examples.append(f"| {_cn} | {_efile} | {_eline} | {_etext} | {_epat} |")
+                    if len(_examples) >= 15:
+                        break
+            except Exception:
+                pass
+            if len(_examples) >= 15:
+                break
+    if _examples:
+        _plines.append("")
+        _plines.append("### 📋 Przykłady znalezionych tekstów (do migracji)")
+        _plines.append("| Kategoria | Plik | Linia | Tekst (EN) | Wzorzec |")
+        _plines.append("|-----------|------|-------|------------|---------|")
+        _plines.extend(_examples)
+
+    premig_cat_table = "\n".join(_plines)
+else:
+    premig_cat_table = "> Brak danych — uruchom `PREMIG:all` aby wykonać skan."
 
 # TM coverage (do notki o placeholderach)
 try:
@@ -3051,7 +3136,7 @@ meta_section_hdr = _section_hdr("META", sec_meta_state, sec_meta_reason, meta_fr
     meta_source, meta_last_update)
 live_section_hdr = _section_hdr("LIVE", sec_live_state, sec_live_reason, live_freshness,
     live_source, live_last_update)
-migration_section_hdr = _section_hdr("MIGRATION", sec_migration_state, sec_migration_reason,
+migration_section_hdr = _section_hdr("PRE_MIGRATION", sec_migration_state, sec_migration_reason,
     migration_freshness, migration_source, migration_last_update)
 translation_section_hdr = _section_hdr("TRANSLATION", sec_translation_state, sec_translation_reason,
     translation_freshness, translation_source, translation_last_update)
@@ -3082,7 +3167,7 @@ def _section_record(name, state, reason, freshness, source, last_update):
 section_records = [
     _section_record("META", sec_meta_state, sec_meta_reason, meta_freshness, meta_source, meta_last_update),
     _section_record("LIVE", sec_live_state, sec_live_reason, live_freshness, live_source, live_last_update),
-    _section_record("MIGRATION", sec_migration_state, sec_migration_reason, migration_freshness, migration_source, migration_last_update),
+    _section_record("PRE_MIGRATION", sec_migration_state, sec_migration_reason, migration_freshness, migration_source, migration_last_update),
     _section_record("TRANSLATION", sec_translation_state, sec_translation_reason, translation_freshness, translation_source, translation_last_update),
     _section_record("QUALITY", sec_quality_state, sec_quality_reason, quality_freshness, quality_source, quality_last_update),
     _section_record("HISTORY", sec_history_state, sec_history_reason, history_freshness, history_source, history_last_update),
@@ -3227,6 +3312,10 @@ _work_description_map = {
 _current_phase_upper = str(summary_phase if 'summary_phase' in dir() else last_mode or "").upper()
 _work_description = _work_description_map.get(_current_phase_upper, f"Tryb: {_current_phase_upper}")
 
+# PRE_MIGRATION: dopisz aktualną kategorię do opisu
+if _current_phase_upper == "PRE_MIGRATION" and 'summary_category' in dir() and summary_category and summary_category != "-":
+    _work_description = f"Skan plików źródłowych → {str(summary_category).upper()}"
+
 # Dopisz sub-etap jeśli jest znany
 _current_stage = str(summary_stage if 'summary_stage' in dir() else "").lower()
 _stage_detail_map = {
@@ -3255,7 +3344,22 @@ if activity_present and isinstance(activity.get("recent", []), list):
             _active_langs_set.add(_rcat.upper())
 if summary_category and len(str(summary_category)) <= 5 and str(summary_category).isalpha():
     _active_langs_set.add(str(summary_category).upper())
-_active_langs_display = ", ".join(sorted(_active_langs_set)) if _active_langs_set else "-"
+
+# W PRE_MIGRATION pokaż skanowane kategorie zamiast języków
+if _current_phase_upper == "PRE_MIGRATION":
+    _premig_cat_names = set()
+    if activity_present and isinstance(activity.get("recent", []), list):
+        for _r in activity.get("recent", []):
+            _rt = str(_r.get("t", ""))
+            _rphase = str(_r.get("phase", "")).upper()
+            _rcat = str(_r.get("category", ""))
+            if _rt >= _ten_min_ago and _rphase == "PRE_MIGRATION" and _rcat:
+                _premig_cat_names.add(_rcat.upper())
+    if summary_category:
+        _premig_cat_names.add(str(summary_category).upper())
+    _active_langs_display = ", ".join(sorted(_premig_cat_names)) if _premig_cat_names else str(summary_category or "-").upper()
+else:
+    _active_langs_display = ", ".join(sorted(_active_langs_set)) if _active_langs_set else "-"
 
 # A9: Polska nazwa etapu w podsumowaniu
 _nice_stage_map = {
@@ -3272,7 +3376,10 @@ _nice_stage_map = {
     "sync_start": "synchronizacja",
     "sync_done": "synchronizacja zakończona",
     "sync_file_done": "synchronizacja pliku",
-    "scan_start": "skan",
+    "scan_start": "PRE_MIGRATION skan kategorii",
+    "scan_done": "PRE_MIGRATION skan zakończony",
+    "pending_skip": "PRE_MIGRATION oczekiwanie na skip",
+    "cycle_end": "koniec cyklu",
     "quality_audit": "audyt jakości",
     "translate_batch": "tłumaczenie paczki",
     "blocked": "zablokowane",
@@ -3285,12 +3392,14 @@ _nice_summary_stage = _nice_stage_map.get(str(summary_stage if 'summary_stage' i
 _prog_done = int(prog.get("done", 0) or 0) if activity_present else 0
 _prog_total = int(prog.get("total", 0) or 0) if activity_present else 0
 _prog_unit = str(prog.get("unit", "keys") or "keys") if activity_present else "keys"
-if _prog_total > 0:
+if _prog_total > 0 and _prog_done > 0:
     _prog_pct = round(_prog_done / _prog_total * 100, 1)
     _bar_len = 20
     _bar_filled = int(_prog_pct / 100 * _bar_len)
     _bar = "█" * _bar_filled + "░" * (_bar_len - _bar_filled)
     _progress_display = f"{_bar} {_prog_done}/{_prog_total} {_prog_unit} ({_prog_pct}%)"
+elif _prog_total > 0:
+    _progress_display = f"Batch: {_prog_total} {_prog_unit}/cykl"
 elif _prog_done > 0:
     _progress_display = f"{_prog_done} {_prog_unit} (limit: brak)"
 else:
@@ -3311,6 +3420,12 @@ _hourly_lang_sorted = sorted(
     key=lambda x: x[1]["translated"],
     reverse=True,
 )[:15]
+
+# Label dynamiczny dla LIVE - "Aktywne języki" vs "Skanowane kategorie"
+if _current_phase_upper == "PRE_MIGRATION":
+    _active_label = "🔍 **Skanowane kategorie (10 min)**"
+else:
+    _active_label = "🌍 **Aktywne języki (10 min)**"
 
 if _hourly_lang_sorted:
     _hourly_lang_rows = []
@@ -3335,8 +3450,19 @@ if isinstance(translation_lang_overview, list) and translation_lang_overview:
         _dl_trans = int(_dl_row.get("translated_keys", 0))
         _dl_total = int(_dl_row.get("total_reference_keys", total_keys))
         _dl_encopy = int(_dl_row.get("english_copy_keys", 0))
+        # E4: Coverage delta vs previous snapshot
+        _dl_delta_str = ""
+        _dl_prev = _prev_coverage.get(_dl_lang.lower(), None)
+        if _dl_prev is not None:
+            _dl_diff = _dl_cov - _dl_prev
+            if _dl_diff > 0.01:
+                _dl_delta_str = f" ↑+{_dl_diff:.2f}%"
+            elif _dl_diff < -0.01:
+                _dl_delta_str = f" ↓{_dl_diff:.2f}%"
+            else:
+                _dl_delta_str = " →0%"
         _daily_lang_rows.append(
-            f"| {_dl_lang.upper()} | {_dl_trans:,} | {_dl_total:,} | {_dl_cov}% | {_dl_encopy:,} |"
+            f"| {_dl_lang.upper()} | {_dl_trans:,} | {_dl_total:,} | {_dl_cov}%{_dl_delta_str} | {_dl_encopy:,} |"
         )
 
 if _daily_lang_rows:
@@ -3351,6 +3477,17 @@ _hourly_cycles = strict_total_cycles
 _hourly_langs_count = len(_hourly_lang_stats)
 _hourly_best_lang = _hourly_lang_sorted[0][0].upper() if _hourly_lang_sorted else "-"
 _hourly_best_lang_trans = _hourly_lang_sorted[0][1]["translated"] if _hourly_lang_sorted else 0
+# PRE_MIGRATION stats for hourly section
+_hourly_premig_cycles = int(strict_mode_counts.get("PRE_MIGRATION", 0))
+_hourly_premig_cats = set()
+for _row in strict_perf_entries:
+    if str(_row.get("mode", "")) == "PRE_MIGRATION":
+        _pc = str(_row.get("category", ""))
+        if _pc and _pc not in ("pending_skip", "gate_blocked", "pending", "?"):
+            _hourly_premig_cats.add(_pc)
+_hourly_premig_cats_count = len(_hourly_premig_cats)
+_hourly_premig_total_hits = premig_totals.get('hits', 0) if premig_totals else 0
+_hourly_premig_total_scanned = premig_totals.get('files_scanned', 0) if premig_totals else 0
 # Dominujący etap pracy (z ops)
 _hourly_stages = {}
 for _row in strict_guard_entries:
@@ -3368,7 +3505,7 @@ _target_coverage = 0.95  # 95%
 _keys_per_hour = strict_throughput if strict_throughput > 0 else 1.0
 
 if isinstance(translation_lang_overview, list) and translation_lang_overview:
-    for _el_row in translation_lang_overview[:25]:
+    for _el_row in translation_lang_overview[:20]:
         if not isinstance(_el_row, dict):
             continue
         _el_lang = str(_el_row.get("lang", "-"))
@@ -3448,6 +3585,30 @@ if _problems_list:
 else:
     _problems_md = "✅ Brak problemów."
 
+# ============ A12: Kolejka napraw (EN-copy) ============
+_repair_queue_md = "Brak danych o kolejce napraw."
+try:
+    _rq_path = os.path.join(status_dir, "identical_to_en_repair_queue.json")
+    if os.path.exists(_rq_path):
+        with open(_rq_path, "r") as _rqf:
+            _rq_data = json.load(_rqf)
+        _rq_total = int(_rq_data.get("entries_total", 0) or 0)
+        _rq_by_lang = _rq_data.get("entries_by_lang", {}) or {}
+        _rq_top5 = sorted(_rq_by_lang.items(), key=lambda x: -x[1])[:5]
+        _rq_selected = _rq_data.get("selected", {}) or {}
+        _rq_sel_lang = _rq_selected.get("lang", "-")
+        _rq_sel_file = _rq_selected.get("file", "-")
+        _rq_ts = _rq_data.get("timestamp", "-")
+        _rq_lines = [f"- **Łącznie kopii EN do naprawy:** {_rq_total:,}"]
+        if _rq_top5:
+            _rq_lines.append("- **TOP 5 języków:** " + ", ".join([f"{l.upper()} ({c:,})" for l, c in _rq_top5]))
+        if _rq_sel_lang and _rq_sel_lang != "-":
+            _rq_lines.append(f"- **Aktualnie naprawia:** {_rq_sel_lang.upper()} / {_rq_sel_file or '-'}")
+        _rq_lines.append(f"- **Ostatnia aktualizacja:** {_rq_ts}")
+        _repair_queue_md = chr(10).join(_rq_lines)
+except Exception:
+    pass
+
 # ============ G3: Ostatnie komendy ============
 _commands_md = "- Brak dostępnych komend."
 try:
@@ -3465,7 +3626,7 @@ except Exception:
 # ============ G4: Zdrowie systemu ============
 _health_rows = []
 # Worker status
-_health_rows.append(f"| Worker | {status_display} | Cykl #{cycle_count} |")
+_health_rows.append(f"| Worker | {status_display} | Cykl #{_real_cycles:,} |")
 # Heartbeat
 _hb_age = "-"
 if heartbeat_iso and heartbeat_iso != "-":
@@ -3636,7 +3797,7 @@ md = f'''# 🌍 System Tłumaczeń I18N — Dashboard na żywo
 
 > **Aktualizacja:** {timestamp} UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** {langs_count} | **Klucze EN:** {total_keys}  
-> **LIVE:** Cykl #{cycle_count} | Status: {status_display} | Faza: {summary_phase} | Etap: {summary_stage} | Kategoria: {summary_category} | Plik: {summary_file} | Heartbeat: {str(heartbeat_iso or '-')}  
+> **LIVE:** Cykl #{_real_cycles:,} | Status: {status_display} | Faza: {summary_phase} | Etap: {summary_stage} | Kategoria: {summary_category} | Plik: {summary_file} | Heartbeat: {str(heartbeat_iso or '-')}  
 > **Okno godzinowe:** {strict_summary_md}  
 > **Tłumaczeń netto:** {net_effective_translated:,}
 
@@ -3656,7 +3817,7 @@ md = f'''# 🌍 System Tłumaczeń I18N — Dashboard na żywo
 | Metryka | Wartość |
 |---------|---------|
 | 🛠️ **Co robi** | {_work_description} |
-| 🌍 **Aktywne języki (10 min)** | {_active_langs_display} |
+| {_active_label} | {_active_langs_display} |
 | 📝 **Faza** | {summary_phase} |
 | 📋 **Etap** | {_nice_summary_stage} |
 | 📂 **Kategoria / Język** | {summary_category} |
@@ -3676,14 +3837,16 @@ md = f'''# 🌍 System Tłumaczeń I18N — Dashboard na żywo
 
 | Metryka | Wartość |
 |---------|---------|
-| 📊 Przetłumaczono | **{_hourly_total_trans:,}** kluczy |
+| � PRE_MIGRATION cykli | **{_hourly_premig_cycles}** (kategorii przeskanowanych: {_hourly_premig_cats_count}) |
+| 🔍 Hits (stringów do migracji) | **{_hourly_premig_total_hits:,}** w {_hourly_premig_total_scanned:,} plikach |
+| �📊 Przetłumaczono | **{_hourly_total_trans:,}** kluczy |
 | ❌ Odrzucone (guard) | {_hourly_total_gf} |
 | 🔁 Cykli | {_hourly_cycles} |
 | 🌍 Języków | {_hourly_langs_count} |
 | 🏆 Najaktywniejszy | {_hourly_best_lang} ({_hourly_best_lang_trans:,} kluczy) |
 | 📄 Najczęstszy plik | {_hourly_top_file} |
 | ⚡ Przepustowość | ~{_hourly_throughput} kluczy/h |
-| 🛡️ Guard fail rate | {_hourly_gf_rate}% |
+| 🛡️ Odrzucone (strażnik) | {_hourly_gf_rate}% |
 | ⚠️ Podejrzane | {_hourly_suspicious} |
 
 ---
@@ -3764,7 +3927,7 @@ md = f'''# 🌍 System Tłumaczeń I18N — Dashboard na żywo
 | `RESTART` | Restart workera (git pull + exec) |
 | `CONFIG` | Wyświetl aktualną konfigurację |
 | `REPORT` / `LANGS` | Raport coverage / lista języków |
-| `PREMIG:<cat\|all>` | Wymuś szczegółowy skan PRE_MIGRATION (plik/linia/treść) |
+| `PREMIG:<cat lub all>` | Wymuś szczegółowy skan PRE_MIGRATION (plik/linia/treść) |
 | `SKIP` / `PAUSE:<N>` / `IDLE` | Kontrola cyklu |
 
 ---
@@ -3802,7 +3965,10 @@ md = f'''# 🌍 System Tłumaczeń I18N — Dashboard na żywo
 | ⚪ Czyste | **{files_clean}** | - | bez tekstów |
 | 🔧 W trakcie | **{files_in_progress}** | - | obecnie przetwarzane |
 
-### 🔑 Klucze i18n
+### � PRE_MIGRATION — Wyniki skanów per kategoria
+{premig_cat_table}
+
+### �🔑 Klucze i18n
 | Metryka | Wartość | Info |
 |---------|---------|------|
 | 🔑 **Klucze EN (źródłowe)** | **{total_keys:,}** | wszystkie kategorie |
@@ -3817,7 +3983,7 @@ md = f'''# 🌍 System Tłumaczeń I18N — Dashboard na żywo
 | 📊 HTML | {html_keys:,} | widoki web |
 | 📊 Pozostałe | {total_keys - npc_keys - items_keys - monsters_keys - html_keys:,} | scripts, spells, etc. |
 
-## 🌍 TRANSLATION
+## 🌍 TŁUMACZENIA
 
 {translation_section_hdr}
 
@@ -3878,7 +4044,7 @@ md = f'''# 🌍 System Tłumaczeń I18N — Dashboard na żywo
 | Źródła | {strict_sources_md} |
 | Plik | `i18n/status/strict_hourly_window_latest.json` |
 
-## 🔬 QUALITY
+## 🔬 JAKOŚĆ TŁUMACZEŃ
 
 {quality_section_hdr}
 
@@ -3918,18 +4084,9 @@ md = f'''# 🌍 System Tłumaczeń I18N — Dashboard na żywo
 
 ---
 
-## 🔀 Etap 1 vs Etap 2
+## � Kolejka napraw (kopie EN)
 
-### 📦 Etap 1: Przygotowanie (SYNC kluczy EN → pliki językowe)
-- Języki z plikami przygotowanymi: {len(sync_stats)}/{langs_count}  
-- Ostatni sync: {(sync_current_lang.upper() + '/' + sync_current_cat) if sync_current_lang else '-'}
-
-### 🌍 Etap 2: Tłumaczenia (AUTO + TM)
-| Język | TM wpisy | Status |
-|-------|----------|--------|
-{auto_table}
-
-**Języki bez TM (AUTO → placeholdery):** {', '.join(no_tm_langs[:8]) + ('...' if len(no_tm_langs) > 8 else '') if no_tm_langs else 'brak (TM dostępny)'}
+{_repair_queue_md}
 
 ---
 
@@ -3998,7 +4155,7 @@ md = f'''# 🌍 System Tłumaczeń I18N — Dashboard na żywo
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #{cycle_count:>6} │
+│ 🔴 LIVE: Worker v2.0                          Cykl #{_real_cycles:>6,} │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    {status_display:40} │
 │ Tryb:      {mode_display:40} │
@@ -4030,7 +4187,7 @@ md = f'''# 🌍 System Tłumaczeń I18N — Dashboard na żywo
 
 ---
 
-## 📜 HISTORY
+## 📜 HISTORIA
 
 {history_section_hdr}
 
@@ -4074,7 +4231,7 @@ md = f'''# 🌍 System Tłumaczeń I18N — Dashboard na żywo
 | 🧩 Reconcile korekta rejestru | **{registry_reconcile_adjustment:,}** | zmiany EN poza workerem |
 | ➕ Kluczy poza rejestrem workera | **{keys_extracted_outside_worker:,}** | ręczne/Codex/Claude/starsze |
 | 🌍 Języków | **{langs_count}** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#{cycle_count}** | continuous mode |
+| 🔄 Cykli wykonanych | **#{_real_cycles:,}** | continuous mode |
 
 ---
 
@@ -4256,7 +4413,7 @@ for cat_name, keys in sorted(all_json_categories.items(), key=lambda x: -x[1]):
 md += '''
 ---
 
-## 🤖 Worker Category State
+## 🤖 Stan kategorii workera
 
 '''
 
@@ -4280,11 +4437,11 @@ md += f'''
 
 ---
 
-## 🔧 Worker & Guardian Status
+## 🔧 Worker i Guardian
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #{cycle_count} |
+| Worker v1.1 | 🟢 DZIAŁA | Cykl #{_real_cycles:,} |
 | Guardian v2.0 | 🟢 AKTYWNY | Push co 2 min |
 
 ---
@@ -9979,6 +10136,12 @@ CYRILLIC_LANGS_SET = {"ru", "uk", "bg", "sr", "mk"}
 CYRILLIC_RE = re.compile(r'[\u0400-\u04FF]')
 EN_WORD_RE = re.compile(r'[a-zA-Z]{3,}')
 
+def _is_immutable_key(key: str) -> bool:
+    """Klucz który NIGDY nie może być tłumaczony — musi pozostać identyczny z EN."""
+    if key.startswith("spell.") and key.endswith(".words"):
+        return True
+    return False
+
 repaired_empty = 0
 repaired_identical = 0
 repaired_partial_mix = 0
@@ -10857,6 +11020,72 @@ PYREPAIRTUNING
 AUTO_TRANSLATE_MID_CYCLE_HEARTBEAT_ENABLED="${AUTO_TRANSLATE_MID_CYCLE_HEARTBEAT_ENABLED:-true}"
 AUTO_TRANSLATE_MID_CYCLE_HEARTBEAT_INTERVAL_SEC="${AUTO_TRANSLATE_MID_CYCLE_HEARTBEAT_INTERVAL_SEC:-90}"
 AUTO_TRANSLATE_MID_BATCH_CMD_CHECK_EVERY="${AUTO_TRANSLATE_MID_BATCH_CMD_CHECK_EVERY:-4}"
+
+# ============ GT Rate-Limit Cooldown: Fallback Work ============
+# Gdy GT jest rate-limited, worker przechodzi na inne prace na 5 min:
+# 1) repair_identical_bonus_round (naprawy kopii EN bez GT)
+# 2) run_quality_audit (audyt jakości)
+# 3) update_github_status (aktualizacja I18N_STATUS.md)
+# Po 5 min wraca do tłumaczeń.
+gt_cooldown_do_fallback_work() {
+    local cycle="${1:-0}"
+    local cooldown_until="${GT_RATE_LIMITED_COOLDOWN_UNTIL:-0}"
+    local now_ts
+    now_ts=$(date +%s)
+
+    if [ "$cooldown_until" -le "$now_ts" ] 2>/dev/null; then
+        return 0  # Cooldown wygasł
+    fi
+
+    local remaining=$(( cooldown_until - now_ts ))
+    echo "⏳ GT COOLDOWN: ${remaining}s do końca. Przechodzę na inne prace..."
+    status_update_activity "running" "$cycle" "AUTO_TRANSLATE" "gt_cooldown_work" "-" "-" "GT rate-limited, fallback work (${remaining}s left)" 0 0 "keys" 0
+
+    # 1) Naprawy kopii EN (bez GT — tylko TM/dict)
+    echo "   🔧 [GT Cooldown] Repair identical_to_en (bez GT)..."
+    local _saved_gt="$USE_GOOGLE_TRANSLATE"
+    USE_GOOGLE_TRANSLATE="false"
+    repair_identical_bonus_round "$cycle" 2>&1 | tail -5 || true
+    USE_GOOGLE_TRANSLATE="$_saved_gt"
+
+    now_ts=$(date +%s)
+    remaining=$(( cooldown_until - now_ts ))
+    if [ "$remaining" -le 0 ] 2>/dev/null; then
+        echo "   ✅ [GT Cooldown] Cooldown zakończony — powrót do tłumaczeń."
+        GT_RATE_LIMITED_COOLDOWN_UNTIL=0
+        return 0
+    fi
+
+    # 2) Audyt jakości
+    echo "   🔬 [GT Cooldown] Quality audit (${remaining}s left)..."
+    run_quality_audit "$cycle" 2>&1 | tail -5 || true
+
+    now_ts=$(date +%s)
+    remaining=$(( cooldown_until - now_ts ))
+    if [ "$remaining" -le 0 ] 2>/dev/null; then
+        echo "   ✅ [GT Cooldown] Cooldown zakończony — powrót do tłumaczeń."
+        GT_RATE_LIMITED_COOLDOWN_UNTIL=0
+        return 0
+    fi
+
+    # 3) Aktualizacja I18N_STATUS.md
+    echo "   📊 [GT Cooldown] Aktualizacja I18N_STATUS.md (${remaining}s left)..."
+    update_github_status "$cycle" 2>&1 | tail -3 || true
+
+    now_ts=$(date +%s)
+    remaining=$(( cooldown_until - now_ts ))
+    if [ "$remaining" -le 0 ] 2>/dev/null; then
+        echo "   ✅ [GT Cooldown] Cooldown zakończony — powrót do tłumaczeń."
+        GT_RATE_LIMITED_COOLDOWN_UNTIL=0
+        return 0
+    fi
+
+    # 4) Czekaj resztę cooldownu (max — prace powyżej mogą nie zająć 5 min)
+    echo "   💤 [GT Cooldown] Czekam ${remaining}s do końca cooldownu..."
+    sleep "$remaining"
+    echo "   ✅ [GT Cooldown] Cooldown zakończony — powrót do tłumaczeń."
+    GT_RATE_LIMITED_COOLDOWN_UNTIL=0
+}
 
 auto_translate_keys() {
     local target_lang="$1"
@@ -13352,6 +13581,7 @@ gt_translated = 0
 gt_guard_fail = 0
 cloud_translated = 0
 free_gt_translated = 0
+_gt_rate_limited = False
 
 if mid_batch_preempt and gt_pending:
     print(f"⚡ MID-BATCH PREEMPT: pomijam GT fallback (pozostało {len(gt_pending)} kluczy) aby przyjąć pending command")
@@ -13368,7 +13598,6 @@ if use_google_translate and gt_pending and not mid_batch_preempt:
     gt_todo = gt_pending
     _GT_RATE_LIMIT_COOLDOWN = 300  # 5 minut cooldown przy 429
     _GT_RATE_LIMIT_MAX_RETRIES = 3  # max 3 retry (5+7+10 = 22 min total)
-    _gt_rate_limited = False
     _gt_rate_limit_retry = 0
 
     # ── FAZA 1: Google Cloud Translation API (jeśli dostępne) ────────────
@@ -13542,91 +13771,62 @@ if use_google_translate and gt_pending and not mid_batch_preempt:
                     if _single_rate_hit:
                         _gt_rate_hit_this_batch = True
 
-            # Zastosuj wyniki
-            for i, (key, en_text, h, suspicious, replacements) in enumerate(meta):
-                if i >= len(gt_results) or gt_results[i] is None:
-                    # GT nie dał wyniku — zapisz do kolejki odroczonych
-                    _enqueue_deferred_translation(status_dir, target_lang, json_file, key, en_text, "gt_no_result")
-                    if not strict_mode:
-                        lang_data[key] = f"[{target_lang.upper()}] {en_text}"
-                        placeholders += 1
-                    else:
-                        skipped_not_placeholder += 1
-                    continue
+                # Zastosuj wyniki
+                for i, (key, en_text, h, suspicious, replacements) in enumerate(meta):
+                    if i >= len(gt_results) or gt_results[i] is None:
+                        # GT nie dał wyniku — zapisz do kolejki odroczonych
+                        _enqueue_deferred_translation(status_dir, target_lang, json_file, key, en_text, "gt_no_result")
+                        if not strict_mode:
+                            lang_data[key] = f"[{target_lang.upper()}] {en_text}"
+                            placeholders += 1
+                        else:
+                            skipped_not_placeholder += 1
+                        continue
 
-                candidate = _restore_placeholders(gt_results[i], replacements)
+                    candidate = _restore_placeholders(gt_results[i], replacements)
 
-                # ── Faza 4: Auto-fix + post-translation validation ────────────
-                candidate, _af_fixes = _auto_fix_translation(en_text, candidate, target_lang)
+                    # ── Faza 4: Auto-fix + post-translation validation ────────────
+                    candidate, _af_fixes = _auto_fix_translation(en_text, candidate, target_lang)
 
-                # Walidacja tłumaczenia GT
-                ok, reason = validate_candidate(en_text, candidate)
-                if ok:
-                    issues = detect_suspicious(en_text, candidate, target_lang, key)
-                    issues.extend(validate_per_lang(en_text, candidate, target_lang, key))
-                    max_sev = _max_severity(issues)
-                    if issues:
-                        # Only count MEDIUM+ issues as truly suspicious (LOW = informational)
-                        if max_sev != "LOW":
-                            suspicious_detected += 1
-                        if max_sev in ("HIGH", "CRITICAL"):
-                            suspicious_high += 1
-                        log_entry = {
-                            "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
-                            "lang": target_lang,
-                            "category": json_file,
-                            "key": key,
-                            "source": "google_translate",
-                            "severity": max_sev,
-                            "issues": issues,
-                            "en": str(en_text),
-                            "translated": str(candidate),
-                        }
-                        if len(issues) > 3:
-                            suspicious_rejected += 1
-                            _append_jsonl(suspicious_rejected_path, log_entry)
-                            _enqueue_manual_review(status_dir, {
+                    # Walidacja tłumaczenia GT
+                    ok, reason = validate_candidate(en_text, candidate)
+                    if ok:
+                        issues = detect_suspicious(en_text, candidate, target_lang, key)
+                        issues.extend(validate_per_lang(en_text, candidate, target_lang, key))
+                        max_sev = _max_severity(issues)
+                        if issues:
+                            # Only count MEDIUM+ issues as truly suspicious (LOW = informational)
+                            if max_sev != "LOW":
+                                suspicious_detected += 1
+                            if max_sev in ("HIGH", "CRITICAL"):
+                                suspicious_high += 1
+                            log_entry = {
                                 "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
-                                "status": "pending",
                                 "lang": target_lang,
-                                "json_file": json_file,
+                                "category": json_file,
                                 "key": key,
-                                "reason": "more_than_3_suspicious_flags",
-                                "en_text": str(en_text),
-                                "attempted_translation": str(candidate),
-                                "issues": issues,
                                 "source": "google_translate",
-                            })
-                            _enqueue_deferred_translation(status_dir, target_lang, json_file, key, en_text, "gt_rejected_multi_issues")
-                            gt_guard_fail += 1
-                            guard_fail += 1
-                            guard_quality += 1
-                            if not strict_mode:
-                                lang_data[key] = f"[{target_lang.upper()}] {en_text}"
-                                placeholders += 1
-                            else:
-                                skipped_not_placeholder += 1
-                            continue
-                        if max_sev == "CRITICAL":
-                            suspicious_rejected += 1
-                            _append_jsonl(suspicious_rejected_path, log_entry)
-                            _enqueue_deferred_translation(status_dir, target_lang, json_file, key, en_text, "gt_rejected_critical")
-                            gt_guard_fail += 1
-                            guard_fail += 1
-                            guard_quality += 1
-                            if not strict_mode:
-                                lang_data[key] = f"[{target_lang.upper()}] {en_text}"
-                                placeholders += 1
-                            else:
-                                skipped_not_placeholder += 1
-                            continue
-                        # HIGH severity from GT — reject script/quality issues (last resort)
-                        if max_sev == "HIGH":
-                            _gt_reject_types = {"wrong_script", "cyrillic_latin_mix", "rtl_insufficient", "i_dot_artifact", "word_salad"}
-                            if any(_has_issue_type(issues, t) for t in _gt_reject_types):
+                                "severity": max_sev,
+                                "issues": issues,
+                                "en": str(en_text),
+                                "translated": str(candidate),
+                            }
+                            if len(issues) > 3:
                                 suspicious_rejected += 1
                                 _append_jsonl(suspicious_rejected_path, log_entry)
-                                _enqueue_deferred_translation(status_dir, target_lang, json_file, key, en_text, f"gt_rejected_high_{[t for t in _gt_reject_types if _has_issue_type(issues, t)][0]}")
+                                _enqueue_manual_review(status_dir, {
+                                    "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+                                    "status": "pending",
+                                    "lang": target_lang,
+                                    "json_file": json_file,
+                                    "key": key,
+                                    "reason": "more_than_3_suspicious_flags",
+                                    "en_text": str(en_text),
+                                    "attempted_translation": str(candidate),
+                                    "issues": issues,
+                                    "source": "google_translate",
+                                })
+                                _enqueue_deferred_translation(status_dir, target_lang, json_file, key, en_text, "gt_rejected_multi_issues")
                                 gt_guard_fail += 1
                                 guard_fail += 1
                                 guard_quality += 1
@@ -13636,38 +13836,68 @@ if use_google_translate and gt_pending and not mid_batch_preempt:
                                 else:
                                     skipped_not_placeholder += 1
                                 continue
-                        _append_jsonl(suspicious_log_path, log_entry)
-                    lang_data[key] = candidate
-                    gt_translated += 1
-                    free_gt_translated += 1
-                    translated += 1
-                    tm_upsert(key, h, candidate, "google_translate", 0.90)
-                    tm_updates += 1
-                    recent_translations.append({
-                        "key": key,
-                        "en": en_text,
-                        "translated": candidate,
-                        "source": "google_translate",
-                    })
-                else:
-                    _enqueue_deferred_translation(status_dir, target_lang, json_file, key, en_text, f"gt_validate_fail_{reason}")
-                    gt_guard_fail += 1
-                    guard_fail += 1
-                    if reason == "placeholder":
-                        guard_placeholder += 1
-                    elif reason == "command":
-                        guard_command += 1
-                    elif reason == "pipe":
-                        guard_pipe += 1
+                            if max_sev == "CRITICAL":
+                                suspicious_rejected += 1
+                                _append_jsonl(suspicious_rejected_path, log_entry)
+                                _enqueue_deferred_translation(status_dir, target_lang, json_file, key, en_text, "gt_rejected_critical")
+                                gt_guard_fail += 1
+                                guard_fail += 1
+                                guard_quality += 1
+                                if not strict_mode:
+                                    lang_data[key] = f"[{target_lang.upper()}] {en_text}"
+                                    placeholders += 1
+                                else:
+                                    skipped_not_placeholder += 1
+                                continue
+                            # HIGH severity from GT — reject script/quality issues (last resort)
+                            if max_sev == "HIGH":
+                                _gt_reject_types = {"wrong_script", "cyrillic_latin_mix", "rtl_insufficient", "i_dot_artifact", "word_salad"}
+                                if any(_has_issue_type(issues, t) for t in _gt_reject_types):
+                                    suspicious_rejected += 1
+                                    _append_jsonl(suspicious_rejected_path, log_entry)
+                                    _enqueue_deferred_translation(status_dir, target_lang, json_file, key, en_text, f"gt_rejected_high_{[t for t in _gt_reject_types if _has_issue_type(issues, t)][0]}")
+                                    gt_guard_fail += 1
+                                    guard_fail += 1
+                                    guard_quality += 1
+                                    if not strict_mode:
+                                        lang_data[key] = f"[{target_lang.upper()}] {en_text}"
+                                        placeholders += 1
+                                    else:
+                                        skipped_not_placeholder += 1
+                                    continue
+                            _append_jsonl(suspicious_log_path, log_entry)
+                        lang_data[key] = candidate
+                        gt_translated += 1
+                        free_gt_translated += 1
+                        translated += 1
+                        tm_upsert(key, h, candidate, "google_translate", 0.90)
+                        tm_updates += 1
+                        recent_translations.append({
+                            "key": key,
+                            "en": en_text,
+                            "translated": candidate,
+                            "source": "google_translate",
+                        })
                     else:
-                        guard_quality += 1
-                    if not strict_mode:
-                        lang_data[key] = f"[{target_lang.upper()}] {en_text}"
-                        placeholders += 1
-                    else:
-                        skipped_not_placeholder += 1
+                        _enqueue_deferred_translation(status_dir, target_lang, json_file, key, en_text, f"gt_validate_fail_{reason}")
+                        gt_guard_fail += 1
+                        guard_fail += 1
+                        if reason == "placeholder":
+                            guard_placeholder += 1
+                        elif reason == "command":
+                            guard_command += 1
+                        elif reason == "pipe":
+                            guard_pipe += 1
+                        else:
+                            guard_quality += 1
+                        if not strict_mode:
+                            lang_data[key] = f"[{target_lang.upper()}] {en_text}"
+                            placeholders += 1
+                        else:
+                            skipped_not_placeholder += 1
 
                 # Rate limit delay między batchami + rate-limit retry
+                # (POZA pętlą for-per-key, WEWNĄTRZ while-batch)
                 if _gt_rate_hit_this_batch:
                     _gt_rate_limit_retry += 1
                     if _gt_rate_limit_retry <= _GT_RATE_LIMIT_MAX_RETRIES:
@@ -13680,14 +13910,14 @@ if use_google_translate and gt_pending and not mid_batch_preempt:
                             translator = GoogleTranslator(source='en', target=gt_lang)
                         except Exception:
                             pass
+                        continue  # retry same batch (nie inkrementuj _gt_batch_idx)
                     else:
                         print(f"⛔ GT RATE LIMIT: wyczerpano retries, zapisuję resztę do deferred")
                         for remaining_item in gt_todo[batch_start + gt_batch_size:]:
                             _enqueue_deferred_translation(status_dir, target_lang, json_file,
                                 remaining_item[0], remaining_item[1], "gt_rate_limit_exhausted")
                         _gt_rate_limited = True
-                        _gt_batch_idx = len(gt_todo)  # break loop
-                        break
+                        break  # exit while loop
 
                 _gt_batch_idx += gt_batch_size
                 if _gt_batch_idx < len(gt_todo):
@@ -13971,7 +14201,7 @@ print(f"__DONE_CONTRACT__ is_done={'1' if done_contract['is_done'] else '0'} cov
 
 print(f"__AUTO_PREEMPT__ active={'1' if mid_batch_preempt else '0'} processed_keys={processed_keys} check_every={mid_batch_cmd_check_every}")
 _write_progress()  # B1: Ostateczny zapis postępu
-print(f"__AUTO_RESULT__ translated={translated} placeholders={placeholders} guard_fail={guard_fail} guard_placeholder={guard_placeholder} guard_command={guard_command} guard_pipe={guard_pipe} guard_quality={guard_quality} skipped_missing_file={skipped_missing_file} skipped_missing_key={skipped_missing_key} skipped_not_placeholder={skipped_not_placeholder} suspicious_existing={suspicious_existing} suspicious_detected={suspicious_detected} suspicious_high={suspicious_high} suspicious_rejected={suspicious_rejected} sanitized_existing={sanitized_existing} gt_translated={gt_translated} gt_guard_fail={gt_guard_fail}")
+print(f"__AUTO_RESULT__ translated={translated} placeholders={placeholders} guard_fail={guard_fail} guard_placeholder={guard_placeholder} guard_command={guard_command} guard_pipe={guard_pipe} guard_quality={guard_quality} skipped_missing_file={skipped_missing_file} skipped_missing_key={skipped_missing_key} skipped_not_placeholder={skipped_not_placeholder} suspicious_existing={suspicious_existing} suspicious_detected={suspicious_detected} suspicious_high={suspicious_high} suspicious_rejected={suspicious_rejected} sanitized_existing={sanitized_existing} gt_translated={gt_translated} gt_guard_fail={gt_guard_fail} gt_rate_limited={'1' if _gt_rate_limited else '0'}")
 print(f"__QUALITY__ {json.dumps(quality_data, ensure_ascii=False)}")
 AUTOTRANSPY
     2>&1)
@@ -14047,6 +14277,15 @@ AUTOTRANSPY
             PREEMPT_PENDING_FORCED_CMD="true"
             log "${YELLOW}⚡ Auto-translate preempt mid-batch po ${_preempt_keys:-0} kluczach (pending command)${NC}"
         fi
+    fi
+
+    # Parsuj gt_rate_limited
+    local _gt_rl_flag
+    _gt_rl_flag=$(extract_auto_result_metric "$_auto_result_line" "gt_rate_limited")
+    if [ "${_gt_rl_flag:-0}" = "1" ]; then
+        # GT rate-limited: ustaw 5-minutowy cooldown
+        GT_RATE_LIMITED_COOLDOWN_UNTIL=$(( $(date +%s) + 300 ))
+        log "${YELLOW}⏳ GT RATE LIMIT: aktywuję cooldown 5 min (do $(date -d @$GT_RATE_LIMITED_COOLDOWN_UNTIL '+%H:%M:%S')). Worker przejdzie na inne prace.${NC}"
     fi
 
     # stdout: "translated placeholders guard_fail guard_placeholder guard_command guard_pipe skipped_missing_file skipped_missing_key skipped_not_placeholder"
@@ -14169,6 +14408,7 @@ defaults = {
     "paused": False,
     "test_lang": "",
     "test_all_langs_queue": [],
+    "translations_only": None,  # None = nie nadpisuj CLI; True/False = nadpisz
 }
 
 try:
@@ -14201,6 +14441,13 @@ out.append(f"CFG_CROSSREF_AUTO_FIX={bval(cfg['crossref_auto_fix'])}")
 out.append(f"CFG_CROSSREF_AUTO_FIX_LIMIT={cfg['crossref_auto_fix_limit']}")
 out.append(f"CFG_PAUSED={bval(cfg['paused'])}")
 out.append(f"CFG_TEST_LANG={cfg['test_lang']}")
+
+# translations_only: None = nie emituj, True/False = nadpisz runtime
+_to = cfg.get("translations_only", None)
+if _to is not None:
+    out.append(f"CFG_TRANSLATIONS_ONLY={bval(_to)}")
+else:
+    out.append("CFG_TRANSLATIONS_ONLY=")
 
 # test_all_langs_queue as space-separated
 queue = cfg.get("test_all_langs_queue", [])
@@ -14295,6 +14542,15 @@ LOADCFGPY
         changed="${changed} PAUSED"
     fi
     RUNTIME_PAUSED="$CFG_PAUSED"
+
+    # translations_only (nadpisz runtime — SET:translations_only=false wyłącza flagę)
+    if [ -n "${CFG_TRANSLATIONS_ONLY:-}" ]; then
+        if [ "$CFG_TRANSLATIONS_ONLY" != "$TRANSLATIONS_ONLY" ]; then
+            TRANSLATIONS_ONLY="$CFG_TRANSLATIONS_ONLY"
+            export TRANSLATIONS_ONLY
+            changed="${changed} translations_only=$CFG_TRANSLATIONS_ONLY"
+        fi
+    fi
 
     if [ -n "$changed" ]; then
         log "${CYAN}⚙️ Config reload:${changed}${NC}"
@@ -14591,7 +14847,7 @@ run_pre_migration_scan() {
         echo "$out" >&2
         return 4
     fi
-    hits=$(echo "$premig_line" | grep -oE 'hits=[0-9]+' | cut -d= -f2)
+    hits=$(echo "$premig_line" | grep -oE '\bhits=[0-9]+' | cut -d= -f2)
     files_with_hits=$(echo "$premig_line" | grep -oE 'files_with_hits=[0-9]+' | cut -d= -f2)
     files_scanned=$(echo "$premig_line" | grep -oE 'files_scanned=[0-9]+' | cut -d= -f2)
     hits=${hits:-0}
@@ -17459,20 +17715,60 @@ for cat_name, config in sorted_cats:
         print(f"PRE_MIGRATION:{cat_name}:{needs_work}")
         exit(0)
 
-# Jeśli są kategorie na skip/backoff, nie przechodź do TRANSLATION_SYNC
-if pending_skip:
-    cat_state["migrations_done"] = False
-    write_category_state(cat_state)
-    if skip_has_work or total_needs > 0:
+# Kategorie które nigdy nie były skanowane w tym sesji (brak skip_until)
+# Dispatch PRE_MIGRATION nawet jeśli count_files_needing_work == 0,
+# bo scanner PRE_MIGRATION sprawdza inne wzorce i buduje raport.
+_skip_until_keys = set(cat_state.get("skip_until", {}).keys())
+for cat_name, config in sorted_cats:
+    if cat_name not in _skip_until_keys and not should_skip_category(cat_name, cat_state):
+        # Nigdy nie skanowana — wymuś skan
+        cat_state["migrations_done"] = False
+        write_category_state(cat_state)
         _commit_phase("PRE_MIGRATION")
-        print(f"PRE_MIGRATION:pending_skip:{total_needs}:WAIT")
+        _log_transition("DISPATCH", "PRE_MIGRATION", "never_scanned", f"category '{cat_name}' has no skip_until entry — forcing scan")
+        print(f"PRE_MIGRATION:{cat_name}:0")
         exit(0)
-    # jeśli nie ma realnej pracy, pozwól przejść dalej
 
-# Jeśli tu doszliśmy: brak pracy migracyjnej → uznaj migracje za zakończone
-cat_state["migrations_done"] = True
-write_category_state(cat_state)
-_log_transition("MIGRATION", "post-migration", "pass", "all categories done")
+# Jeśli są kategorie na skip/backoff, sprawdź czy warto czekać
+if pending_skip:
+    import time as _time
+    _now = _time.time()
+    _skip_until = cat_state.get("skip_until", {})
+    # Oblicz ile zostało do najbliższego AKTYWNEGO skipa (tylko przyszłe wartości)
+    _active_skips = [v for v in _skip_until.values() if v > _now]
+    if _active_skips:
+        _next_expire = min(_active_skips)
+        _secs_to_next = max(0, int(_next_expire - _now))
+    else:
+        # Wszystkie skipy wygasły — nie ma sensu czekać
+        _secs_to_next = 999
+
+    if _secs_to_next <= 10:
+        # Skip wygaśnie za chwilę — czekaj
+        cat_state["migrations_done"] = False
+        write_category_state(cat_state)
+        if skip_has_work or total_needs > 0:
+            _commit_phase("PRE_MIGRATION")
+            print(f"PRE_MIGRATION:pending_skip:{total_needs}:WAIT")
+            exit(0)
+        else:
+            # Brak pracy, nie czekaj — fallthrough
+            cat_state["migrations_done"] = True
+            write_category_state(cat_state)
+            _log_transition("PRE_MIGRATION", "FALLTHROUGH", "pass", f"pending_skip but no work (total_needs=0, skip_has_work=False)")
+    else:
+        # Skipy mają jeszcze dużo czasu — tymczasowo uznaj migracje za done
+        # i pozwól workerowi robić tłumaczenia/inne prace zamiast busy-loopować
+        cat_state["migrations_done"] = True
+        write_category_state(cat_state)
+        _log_transition("PRE_MIGRATION", "AUTO_TRANSLATE", "pass", f"all categories on skip ({_secs_to_next}s to next), fallback to translations")
+        # FALL THROUGH → dalej do COMPACT_KEYS / TRANSLATION_SYNC / AUTO_TRANSLATE
+
+# Jeśli tu doszliśmy: brak pracy migracyjnej (lub skip fallthrough) → przejdź dalej
+if not pending_skip or cat_state.get("migrations_done", False):
+    cat_state["migrations_done"] = True
+    write_category_state(cat_state)
+    _log_transition("MIGRATION", "post-migration", "pass", "all categories done or skipped")
 
 # 1.5) COMPACT_KEYS (po zakończeniu migracji): sync keymap + export compact locales
 def count_en_keys_total():
@@ -21020,7 +21316,7 @@ REPORTPY
                 fi
             fi
 
-            if [ "$TRANSLATIONS_ONLY" = "true" ] && [ "$MODE_TYPE" != "AUTO_TRANSLATE" ] && [ "$MODE_EXTRA2" != "SYNC" ]; then
+            if [ "$TRANSLATIONS_ONLY" = "true" ] && [ "$MODE_TYPE" != "AUTO_TRANSLATE" ] && [ "$MODE_EXTRA2" != "SYNC" ] && [ "$MODE_EXTRA" != "FORCED" ]; then
                 echo "🌐 --translations-only: pomijam MIGRATION/SYNC, wybieram AUTO_TRANSLATE STRICT"
                 STRICT_TARGET=$(select_auto_translate_target_strict)
                 MODE_TYPE=$(echo "$STRICT_TARGET" | cut -d: -f1)
@@ -21045,7 +21341,45 @@ REPORTPY
                     fi
                 fi
             fi
-            
+
+            # Fallback: jeśli dispatcher wybrał IDLE, ale są jeszcze tłumaczenia do zrobienia,
+            # spróbuj AUTO_TRANSLATE (niezależnie od translations_only flag)
+            if [ "$MODE_TYPE" = "IDLE" ] && [ "$MODE_EXTRA2" != "AUTO" ] && [ "$MODE_EXTRA" != "FORCED" ]; then
+                echo "🔄 IDLE fallback: sprawdzam czy są tłumaczenia do zrobienia..."
+                STRICT_TARGET=$(select_auto_translate_target_strict)
+                _FB_TYPE=$(echo "$STRICT_TARGET" | cut -d: -f1)
+                _FB_LANG=$(echo "$STRICT_TARGET" | cut -d: -f2)
+                _FB_JSON=$(echo "$STRICT_TARGET" | cut -d: -f3)
+                _FB_EXTRA=$(echo "$STRICT_TARGET" | cut -d: -f4)
+                if [ "$_FB_TYPE" = "AUTO_TRANSLATE" ]; then
+                    echo "   ✅ Znaleziono tłumaczenie: $_FB_LANG/$_FB_JSON (pending=$_FB_EXTRA)"
+                    MODE_TYPE="$_FB_TYPE"
+                    MODE_CAT="$_FB_LANG"
+                    MODE_COUNT="$_FB_JSON"
+                    MODE_EXTRA="$_FB_EXTRA"
+                    MODE_EXTRA2="AUTO"
+                elif [ "$_FB_TYPE" = "IDLE" ] && [ "$_FB_LANG" = "translation_only_blocked" ]; then
+                    # Brak plików/kluczy — spróbuj SYNC  
+                    SYNC_TARGET=$(select_translation_sync_target)
+                    SYNC_LANG=$(echo "$SYNC_TARGET" | cut -d: -f1)
+                    SYNC_JSON=$(echo "$SYNC_TARGET" | cut -d: -f2)
+                    SYNC_MISSING=$(echo "$SYNC_TARGET" | cut -d: -f3)
+                    SYNC_MISSING=${SYNC_MISSING:-0}
+                    if [ "$SYNC_MISSING" -gt 0 ] 2>/dev/null; then
+                        echo "   🔧 Auto-backfill SYNC: $SYNC_LANG/$SYNC_JSON (missing=$SYNC_MISSING)"
+                        MODE_TYPE="TRANSLATION_SYNC"
+                        MODE_CAT="$SYNC_LANG"
+                        MODE_COUNT="$SYNC_JSON"
+                        MODE_EXTRA="$SYNC_MISSING"
+                        MODE_EXTRA2="SYNC"
+                    else
+                        echo "   ❌ Brak tłumaczeń do zrobienia — zostaje IDLE"
+                    fi
+                else
+                    echo "   ❌ Brak tłumaczeń: $_FB_TYPE/$_FB_LANG"
+                fi
+            fi
+
             if [ "$MODE_TYPE" = "AUTO_TRANSLATE" ]; then
                 echo "📋 Dispatcher: $MODE_TYPE | Język: $MODE_CAT | Plik: ${MODE_COUNT:--} | Pending: ${MODE_EXTRA:-0}"
             else
@@ -21132,8 +21466,41 @@ with open(state_path, 'w') as f:
     json.dump(state, f, indent=2, ensure_ascii=False)
 " 2>/dev/null || true
 
-                    # Zachowaj dotychczasowy backoff behavior dla dispatcher fallback
-                    update_category_state "$MODE_CAT" "0"
+                    # PRE_MIGRATION skan: po zakończeniu daj skip 30 min
+                    # PRE_MIGRATION nie modyfikuje plików, więc ponowne skanowanie
+                    # daje ten sam wynik. Skip pozwala przejść do innych kategorii.
+                    # Zapisz hits jako total_processed (do statystyk) ale wymuś skip.
+                    python3 - "$MODE_CAT" "$PREMIG_HITS" << 'PREMIG_SKIP_PY'
+import json, os, sys, time
+CATEGORY_STATE_FILE = ".i18n_category_state.json"
+cat = sys.argv[1]
+hits = int(sys.argv[2]) if len(sys.argv) > 2 and sys.argv[2].isdigit() else 0
+PREMIG_SKIP_SECONDS = 1800  # 30 min skip po skanie
+
+try:
+    with open(CATEGORY_STATE_FILE, 'r') as f:
+        state = json.load(f)
+except:
+    state = {}
+for k in ["skip_until", "last_processed", "consecutive_zeros", "total_processed"]:
+    if k not in state:
+        state[k] = {}
+
+state["last_processed"][cat] = {"count": hits, "timestamp": time.time()}
+state["skip_until"][cat] = time.time() + PREMIG_SKIP_SECONDS
+state["total_processed"][cat] = state["total_processed"].get(cat, 0) + hits
+# Reset consecutive zeros bo skan się powiódł
+state["consecutive_zeros"][cat] = 0
+
+with open(CATEGORY_STATE_FILE + ".tmp", 'w') as f:
+    json.dump(state, f, indent=2)
+os.replace(CATEGORY_STATE_FILE + ".tmp", CATEGORY_STATE_FILE)
+skip_min = PREMIG_SKIP_SECONDS // 60
+if hits > 0:
+    print(f"✅ PRE_MIGRATION '{cat}': {hits} hitów znalezionych, skip {skip_min} min (total: {state['total_processed'].get(cat, 0)})")
+else:
+    print(f"✅ PRE_MIGRATION '{cat}': czysta, skip {skip_min} min")
+PREMIG_SKIP_PY
 
                     status_log_op "$CYCLE" "PRE_MIGRATION" "scan_done" "$MODE_CAT" "-" "ok" "scan backlog files_scanned=$PREMIG_FILES_SCANNED files_with_hits=$PREMIG_FILES_WITH_HITS hits=$PREMIG_HITS"
                     status_update_activity "running" "$CYCLE" "PRE_MIGRATION" "scan_done" "$MODE_CAT" "-" "scan backlog hits=$PREMIG_HITS files_with_hits=$PREMIG_FILES_WITH_HITS" "$PREMIG_HITS" "$PREMIG_FILES_SCANNED" "hits" 0
@@ -21200,6 +21567,23 @@ with open(state_path, 'w') as f:
                     status_update_activity "running" "$CYCLE" "TRANSLATION_SYNC" "sync_done" "$MODE_CAT" "$MODE_COUNT" "synced" "$SYNCED_KEYS" "$SYNCED_KEYS" "keys" 0
                     ;;
                 AUTO_TRANSLATE)
+                    # === GT Rate-Limit Cooldown Check ===
+                    # Jeśli GT jest rate-limited, przejdź na inne prace zamiast tłumaczyć
+                    if [ "${GT_RATE_LIMITED_COOLDOWN_UNTIL:-0}" -gt 0 ] 2>/dev/null; then
+                        local _now_ts
+                        _now_ts=$(date +%s)
+                        if [ "$GT_RATE_LIMITED_COOLDOWN_UNTIL" -gt "$_now_ts" ] 2>/dev/null; then
+                            local _cd_remaining=$(( GT_RATE_LIMITED_COOLDOWN_UNTIL - _now_ts ))
+                            echo "⏳ GT RATE LIMIT COOLDOWN: jeszcze ${_cd_remaining}s — przechodzę na inne prace..."
+                            gt_cooldown_do_fallback_work "$CYCLE"
+                            # Po fallback — skip do następnego cyklu (GT powinien być już dostępny)
+                            echo "   ✅ Cooldown zakończony. Następny cykl = normalne tłumaczenie."
+                            break
+                        else
+                            GT_RATE_LIMITED_COOLDOWN_UNTIL=0
+                        fi
+                    fi
+
                     echo "🌍 TRYB: AUTO TRANSLATE (język: $MODE_CAT, plik: $MODE_COUNT, kluczy: $MODE_EXTRA)"
 
                     # === 8.3: Adaptive batch tuning ===
@@ -21261,6 +21645,21 @@ with open(state_path, 'w') as f:
                     # by nie tracić roundtrip przy restartach guardiana w post-processingu.
                     emit_forced_command_completed_metric
 
+                    # === GT Rate-Limit Cooldown: po zakończeniu tłumaczenia ===
+                    # Jeśli auto_translate_keys ustawiło GT_RATE_LIMITED_COOLDOWN_UNTIL,
+                    # wykonaj fallback work zanim przejdziemy do parallel/dalszych kroków.
+                    if [ "${GT_RATE_LIMITED_COOLDOWN_UNTIL:-0}" -gt 0 ] 2>/dev/null; then
+                        local _now_ts2
+                        _now_ts2=$(date +%s)
+                        if [ "$GT_RATE_LIMITED_COOLDOWN_UNTIL" -gt "$_now_ts2" ] 2>/dev/null; then
+                            echo "⏳ GT RATE LIMIT po tłumaczeniu — uruchamiam fallback work..."
+                            gt_cooldown_do_fallback_work "$CYCLE"
+                            GT_RATE_LIMITED_COOLDOWN_UNTIL=0
+                            # Skip parallel langs w tym cyklu, GT i tak nie zadziała
+                            break
+                        fi
+                    fi
+
                     # Jeśli w trakcie długiego cyklu pojawiła się nowa komenda wymuszona,
                     # skracamy ten cykl, aby szybciej przejść do następnego dispatchu.
                     if [ -f "$COMMAND_FILE" ] && [ "$AUTO_COMMAND_FAST_MODE" != "true" ]; then
@@ -21313,6 +21712,12 @@ with open(state_path, 'w') as f:
                             status_log_op "$CYCLE" "AUTO_TRANSLATE" "PARALLEL_TRANSLATE_DONE" "$P_LANG" "$P_FILE" "ok" "parallel lang=${P_LANG} file=${P_FILE}" "" "" "" "$P_TRANSLATED" "$P_PLACEHOLDERS"
 
                             PARALLEL_DONE=$((PARALLEL_DONE + 1))
+
+                            # GT rate-limit w parallel — przerywamy dalsze języki
+                            if [ "${GT_RATE_LIMITED_COOLDOWN_UNTIL:-0}" -gt "$(date +%s)" ] 2>/dev/null; then
+                                echo "   ⏳ GT RATE LIMIT w parallel — przerywam dalsze języki"
+                                break
+                            fi
                         done
                         echo "   📊 Parallel: przetworzono $PARALLEL_DONE język(ów) w cyklu $CYCLE"
                     elif [ "$PREEMPT_PENDING_FORCED_CMD" = "true" ]; then
@@ -21664,6 +22069,41 @@ try:
             'generated_at_utc': str(pm.get('generated_at_utc', '') or ''),
             'latest_file': premig_latest,
         }
+
+    # Zbierz wyniki per-kategoria z indywidualnych plików JSON
+    premig_dir = os.path.join('i18n', 'status', 'pre_migration_todo')
+    premig_per_cat = {}
+    premig_total_hits = 0
+    premig_total_files = 0
+    premig_total_scanned = 0
+    if os.path.isdir(premig_dir):
+        for fn in sorted(os.listdir(premig_dir)):
+            if fn == 'pre_migration_todo_latest.json' or not fn.endswith('.json'):
+                continue
+            cat_name = fn[:-5]
+            try:
+                with open(os.path.join(premig_dir, fn), encoding='utf-8') as cf:
+                    cd = json.load(cf)
+                cat_hits = to_int(cd.get('total_hits', cd.get('hits', 0)))
+                cat_files = to_int(cd.get('files_with_hits', 0))
+                cat_scanned = to_int(cd.get('files_scanned', cd.get('total_files_scanned', 0)))
+                premig_per_cat[cat_name] = {
+                    'hits': cat_hits,
+                    'files_with_hits': cat_files,
+                    'files_scanned': cat_scanned,
+                    'generated': str(cd.get('generated_at_utc', cd.get('generated', '')) or ''),
+                }
+                premig_total_hits += cat_hits
+                premig_total_files += cat_files
+                premig_total_scanned += cat_scanned
+            except Exception:
+                pass
+    data['pre_migration_per_cat'] = premig_per_cat
+    data['pre_migration_totals'] = {
+        'hits': premig_total_hits,
+        'files_with_hits': premig_total_files,
+        'files_scanned': premig_total_scanned,
+    }
 except Exception:
     pass
 

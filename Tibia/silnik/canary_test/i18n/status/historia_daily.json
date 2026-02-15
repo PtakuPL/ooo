@@ -1,32 +1,32 @@
 [
   {
     "date": "2026-02-14",
-    "hours_covered": 14,
-    "threshold": 10,
+    "hours_covered": 17,
+    "threshold": 15,
     "is_final": false,
     "ts_first": "2026-02-14T08:00:00Z",
-    "ts_last": "2026-02-14T20:07:23Z",
-    "translated": 15758,
-    "guard_fail": 17653,
-    "suspicious_high": 21165,
-    "identical_to_en": 1485,
+    "ts_last": "2026-02-14T23:09:48Z",
+    "translated": 17024,
+    "guard_fail": 18817,
+    "suspicious_high": 23052,
+    "identical_to_en": 2044,
     "repair_start": 4800,
-    "repair_end": 39255,
-    "cycles": 195,
+    "repair_end": 39694,
+    "cycles": 219,
     "coverage_start": 22.5,
-    "coverage_end": 10.21,
-    "guard_fail_pct": 52.84,
-    "throughput_per_h": 1125.6,
+    "coverage_end": 10.49,
+    "guard_fail_pct": 52.5,
+    "throughput_per_h": 1001.4,
     "per_lang": {
       "pl": {
-        "t": 8205,
-        "gf": 15461,
-        "cov": 47.59
+        "t": 8612,
+        "gf": 15842,
+        "cov": 56.74
       },
       "es": {
-        "t": 7313,
-        "gf": 2140,
-        "cov": 76.36
+        "t": 8172,
+        "gf": 2923,
+        "cov": 81.47
       },
       "cs": {
         "t": 80,
@@ -51,54 +51,135 @@
       "ru": {
         "t": 10,
         "gf": 0,
-        "cov": 33.75
+        "cov": 33.76
       }
     },
     "per_cat": {
       "monsters.json": {
-        "t": 3827,
-        "gf": 598
+        "t": 4307,
+        "gf": 664
       },
       "npc.json": {
-        "t": 2293,
-        "gf": 3766
+        "t": 2661,
+        "gf": 4237
       },
       "html.json": {
-        "t": 2112,
-        "gf": 407
+        "t": 2230,
+        "gf": 421
       },
       "server.json": {
-        "t": 1205,
-        "gf": 813
+        "t": 1292,
+        "gf": 844
       },
       "spells.json": {
-        "t": 1169,
-        "gf": 111
+        "t": 1218,
+        "gf": 117
       },
       "items.json": {
         "t": 984,
         "gf": 7958
       },
       "scripts.json": {
-        "t": 783,
-        "gf": 1528
+        "t": 824,
+        "gf": 1777
       },
       "raids.json": {
         "t": 717,
         "gf": 69
       },
       "quests.json": {
-        "t": 638,
-        "gf": 510
+        "t": 652,
+        "gf": 621
       },
-      "books.json": {
-        "t": 331,
-        "gf": 229
+      "cpp.json": {
+        "t": 361,
+        "gf": 123
       }
     },
     "mode_distribution": {
-      "AUTO_TRANSLATE": 1056,
+      "AUTO_TRANSLATE": 1187,
       "MIGRATION": 2
+    },
+    "migration_completed": 15,
+    "migration_total": 15
+  },
+  {
+    "date": "2026-02-15",
+    "hours_covered": 14,
+    "threshold": 10,
+    "is_final": false,
+    "ts_first": "2026-02-15T00:10:25Z",
+    "ts_last": "2026-02-15T13:16:31Z",
+    "translated": 6363,
+    "guard_fail": 8073,
+    "suspicious_high": 4718,
+    "identical_to_en": 391,
+    "repair_start": 39656,
+    "repair_end": 39106,
+    "cycles": 368,
+    "coverage_start": 10.67,
+    "coverage_end": 11.11,
+    "guard_fail_pct": 55.92,
+    "throughput_per_h": 454.5,
+    "per_lang": {
+      "pl": {
+        "t": 3410,
+        "gf": 2810,
+        "cov": 87.42
+      },
+      "es": {
+        "t": 2953,
+        "gf": 5263,
+        "cov": 83.73
+      }
+    },
+    "per_cat": {
+      "monsters.json": {
+        "t": 1839,
+        "gf": 1332
+      },
+      "html.json": {
+        "t": 1141,
+        "gf": 1072
+      },
+      "items.json": {
+        "t": 1093,
+        "gf": 378
+      },
+      "server.json": {
+        "t": 827,
+        "gf": 716
+      },
+      "scripts.json": {
+        "t": 391,
+        "gf": 532
+      },
+      "questlog.json": {
+        "t": 327,
+        "gf": 483
+      },
+      "npc.json": {
+        "t": 324,
+        "gf": 2535
+      },
+      "otclient_modules.json": {
+        "t": 227,
+        "gf": 83
+      },
+      "spells.json": {
+        "t": 95,
+        "gf": 142
+      },
+      "cpp.json": {
+        "t": 48,
+        "gf": 22
+      }
+    },
+    "mode_distribution": {
+      "AUTO_TRANSLATE": 418,
+      "PRE_MIGRATION": 1051,
+      "TRANSLATION_SYNC": 40,
+      "IDLE": 21
     },
     "migration_completed": 15,
     "migration_total": 15

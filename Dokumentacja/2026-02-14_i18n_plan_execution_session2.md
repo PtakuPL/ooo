@@ -47,8 +47,17 @@
 2. **`bash -n` nie sprawdza Python w heredoc** — trzeba testować runtime.
 
 ## Pozostałe otwarte TODO
-- ⬜ STATUSD_WEBHOOK_URL
-- ⬜ WQ-QUALITY-55-1: audyt gramatyczny 55 langs
-- ⬜ H5: reconcile backfill per-file
-- ⬜ WQ-FAST-7: formalne potwierdzenie SLA (20+ próbek)
+- ⬜ STATUSD_WEBHOOK_URL — `BLOCKED` (brak endpointu od użytkownika)
+- ✅ WQ-QUALITY-55-1: audyt gramatyczny — **DONE** (52 języki, audyt per-lang działa)
+- ✅ H5: reconcile backfill per-file — **DONE** (statusd moduł `6587–6642`)
+- ⬜ WQ-FAST-7: formalne potwierdzenie SLA (14/20 próbek, auto-collecting)
 - ⬜ Usunąć inline SIMPLE_TRANSLATIONS (po weryfikacji stabilności JSON)
+
+## Post-plan fixes (2026-02-15)
+- ✅ Threshold tuning: Doctor CRITICAL→WARNING (0 issues, 6 warnings, 10 OK)
+- ✅ Per-domain severity cap + min_crit_count=2000
+- ✅ Guardian GUARD_FAIL_RATE_ALERT: 15%→50%
+- ✅ Worker NameError `sec_pm_state` — dodano blok PRE_MIGRATION vars
+- ✅ Worker NameError `pm_total_scanned` — dodano domyślne wartości pm_*
+- ✅ Worker SyntaxWarning `\|` — zamieniono na `<cat or all>`
+- ✅ I18N_STATUS.md — odblokowane, aktualizuje się normalnie

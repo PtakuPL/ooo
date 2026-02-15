@@ -3793,27 +3793,27 @@
   },
   "npc.a_behemoth.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Tienilo giù! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Tienilo giù! <ti fornisce un rapporto elaborato sull'attività dei mostri>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T02:42:58.697164Z"
+    "updated_at": "2026-02-15T13:23:36.294788Z"
   },
   "npc.a_behemoth.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Tienilo giù! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Tienilo giù! <ti fornisce un rapporto elaborato sull'attività dei mostri>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T02:42:58.697867Z"
+    "updated_at": "2026-02-15T13:23:36.295302Z"
   },
   "npc.a_behemoth.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Tienilo giù! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Tienilo giù! <ti fornisce un rapporto elaborato sull'attività dei mostri>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T02:42:58.698584Z"
+    "updated_at": "2026-02-15T13:23:36.295767Z"
   },
   "npc.a_dead_bureaucrat.greet_msg_1": {
     "src_hash": "1fb51950fc35d0b9f7979cbb0fff81b2",
@@ -5177,51 +5177,51 @@
   },
   "npc.a_dragon_lord.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Tienilo giù! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Pssst! Tienilo giù! <ti fornisce un rapporto elaborato sull'attività dei mostri>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T04:37:19.632234Z"
+    "updated_at": "2026-02-15T13:23:39.274097Z"
   },
   "npc.a_dragon_lord.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Tienilo giù! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Pssst! Tienilo giù! <ti fornisce un rapporto elaborato sull'attività dei mostri>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T04:37:19.632972Z"
+    "updated_at": "2026-02-15T13:23:39.274605Z"
   },
   "npc.a_dragon_lord.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Tienilo giù! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Pssst! Tienilo giù! <ti fornisce un rapporto elaborato sull'attività dei mostri>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T04:37:19.633677Z"
+    "updated_at": "2026-02-15T13:23:39.275108Z"
   },
   "npc.a_drillworm.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Tienilo giù! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Pssst! Tienilo giù! <ti fornisce un rapporto elaborato sull'attività dei mostri>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T04:37:19.634660Z"
+    "updated_at": "2026-02-15T13:23:43.166017Z"
   },
   "npc.a_drillworm.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Tienilo giù! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Pssst! Tienilo giù! <ti fornisce un rapporto elaborato sull'attività dei mostri>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T04:37:19.635334Z"
+    "updated_at": "2026-02-15T13:23:43.166827Z"
   },
   "npc.a_drillworm.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Tienilo giù! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Pssst! Tienilo giù! <ti fornisce un rapporto elaborato sull'attività dei mostri>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T04:37:19.636026Z"
+    "updated_at": "2026-02-15T13:23:43.167309Z"
   },
   "npc.a_lost_basher.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
@@ -9222,5 +9222,285 @@
     "confidence": 0.996,
     "verified": false,
     "updated_at": "2026-02-14T13:26:55.435852Z"
+  },
+  "npc.a_dead_bureaucrat1.voice_2": {
+    "src_hash": "e77105e8c04ed0b00ebdea90f9e4463c",
+    "text": "Saluti Pumin. Sì, salve.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:23:36.296065Z"
+  },
+  "npc.a_dead_bureaucrat2.voice_2": {
+    "src_hash": "e77105e8c04ed0b00ebdea90f9e4463c",
+    "text": "Saluti Pumin. Sì, salve.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:23:36.296359Z"
+  },
+  "npc.a_dead_bureaucrat3.voice_2": {
+    "src_hash": "e77105e8c04ed0b00ebdea90f9e4463c",
+    "text": "Saluti Pumin. Sì, salve.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:23:39.273248Z"
+  },
+  "npc.a_dead_bureaucrat4.voice_2": {
+    "src_hash": "e77105e8c04ed0b00ebdea90f9e4463c",
+    "text": "Saluti Pumin. Sì, salve.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:23:39.273584Z"
+  },
+  "npc.a_fluffy_squirrel.farewell_msg_1": {
+    "src_hash": "0d0fa573b6610b79f1936f9a9fc407ac",
+    "text": "Chh...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:23:43.168024Z"
+  },
+  "npc.a_fluffy_squirrel.greet_msg_1": {
+    "src_hash": "e7c179e419e210af295f41ecac05aa1b",
+    "text": "Chhchh?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:23:43.168485Z"
+  },
+  "npc.a_fluffy_squirrel.sendtrade_msg_1": {
+    "src_hash": "03c8f51bfe7975b94ce3c76ec9647116",
+    "text": "Chchch. Chh! <non ne sei sicuro, ma sembra che lo scoiattolo voglia scambiare le tue preziose ghiande con pietre inutili che ha trovato e considerate immangiabili>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:23:47.293781Z"
+  },
+  "npc.a_fluffy_squirrel.voice_1": {
+    "src_hash": "9280e35fe8a04c63939438a4aded92fa",
+    "text": "Chchch",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:23:47.294539Z"
+  },
+  "npc.a_fluffy_squirrel.walkaway_msg_1": {
+    "src_hash": "0d0fa573b6610b79f1936f9a9fc407ac",
+    "text": "Chh...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:23:47.294773Z"
+  },
+  "npc.a_ghostly_sage.greet_msg_1": {
+    "src_hash": "487a95714b8152233a000a8ee2c338f3",
+    "text": "Ah, sento che un mortale cammina di nuovo per queste antiche sale. Perdonami, ti noto a malapena. Sono così perso nei miei pensieri.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:23:47.295382Z"
+  },
+  "npc.a_ghostly_sage.stdmod_1": {
+    "src_hash": "341df3ac9ed72719a92e5ae18e2970e3",
+    "text": "Ora sarai portato fuori di qui. Sei sicuro di voler affrontare quel teletrasporto?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:23:49.332835Z"
+  },
+  "item.10.name": {
+    "src_hash": "90fbbee0c198b3f16d17271f8ca29d70",
+    "text": "manafluid",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:27:20.616983Z"
+  },
+  "item.10009.desc": {
+    "src_hash": "d6e8d0836a63a26392d689c7e7f1cd35",
+    "text": "Ideale per lucidare corone",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:27:20.617813Z"
+  },
+  "item.10011.desc": {
+    "src_hash": "0c89d4a7562be561508dcd41a4be52fb",
+    "text": "Apprezzato da avventurieri ed esploratori",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:27:20.618342Z"
+  },
+  "item.10025.desc": {
+    "src_hash": "3c12c5e5ba3c1bb82f1566b16ee17538",
+    "text": "Inestimabile per tutte le ricerche magiche",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:27:20.618700Z"
+  },
+  "item.10026.desc": {
+    "src_hash": "c903c382d7d46dd93bae60aad16479a9",
+    "text": "Sembra affamato",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:27:20.618934Z"
+  },
+  "item.10027.desc": {
+    "src_hash": "2c09165c1d4ae2e6a5e1f2135c83b723",
+    "text": "Lo strumento preferito da ogni gadgetista",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:27:27.195614Z"
+  },
+  "item.10028.desc": {
+    "src_hash": "0020afc44d9d284397e941e6386940db",
+    "text": "Un contratto in cui qualche disperato ha venduto la sua anima",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:27:27.196077Z"
+  },
+  "item.10096.name": {
+    "src_hash": "cd2878e9d8d9bd39b4e50c83b5990cc8",
+    "text": "stacke",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:27:27.196402Z"
+  },
+  "item.10159.desc": {
+    "src_hash": "b7366edafc0bd113da5467c420cc0e40",
+    "text": "Una volta apparteneva ad un antenato di Lazaran. Ovviamente aveva dei denti davvero brutti",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:27:27.196877Z"
+  },
+  "item.10183.desc": {
+    "src_hash": "ce781ba138e3fa2c9204d1340ba90409",
+    "text": "Questo veleno ha lo scopo di indebolire il nemico e dovrebbe essere usato nelle risaie vicino a Chaochai",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:27:27.197374Z"
+  },
+  "item.10184.desc": {
+    "src_hash": "2828b3fef703beeeedd8f585b3d35387",
+    "text": "Una mappa che mostra i recenti movimenti delle truppe e le istruzioni tattiche di parti dell'esercito dell'Imperatore",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:27:33.995727Z"
+  },
+  "item.10187.desc": {
+    "src_hash": "c2596ec962af99a689fcd635d8a32325",
+    "text": "Un cristallo estremamente raro che hai recuperato dalle Miniere Perdute.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:27:33.996184Z"
+  },
+  "item.10198.desc": {
+    "src_hash": "53bce793b3d2a7c30981d12fb5420c6b",
+    "text": "Questo stemma sembra importante. Non dovresti perderlo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:27:33.996925Z"
+  },
+  "item.10199.desc": {
+    "src_hash": "53bce793b3d2a7c30981d12fb5420c6b",
+    "text": "Questo stemma sembra importante. Non dovresti perderlo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:27:33.997332Z"
+  },
+  "item.10207.desc": {
+    "src_hash": "7f2103a12e6c4c48b7f9b7c02d92934f",
+    "text": "Usalo a casa tua per rivelare un pupazzo di neve",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:27:41.173171Z"
+  },
+  "item.10208.desc": {
+    "src_hash": "4f5cd6643195047c2a1a94b1306baa22",
+    "text": "Sembra che qualcuno si sia divertito molto a decorarlo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:27:41.173575Z"
+  },
+  "item.10209.desc": {
+    "src_hash": "efcad34d251c0a3866a9744ef41df9b0",
+    "text": "Usalo a casa tua per costruire un porta-armi per lucertole",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:27:41.173957Z"
+  },
+  "item.10216.desc": {
+    "src_hash": "f5983fdd8fd2e2fc1c22faaa80439f68",
+    "text": "Usalo a casa tua per costruire una statua del drago",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:27:41.174350Z"
+  },
+  "item.10217.desc": {
+    "src_hash": "95fc558d85dc30bac93a98ad1a8bd42f",
+    "text": "Porta questo libro criptato a un saggio in Farmine per acquisire saggezza o sbloccare altri aspetti della cultura di Zao",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:27:41.175025Z"
+  },
+  "item.10218.desc": {
+    "src_hash": "4277fbe6c944de4097a47b4cc39005bc",
+    "text": "Questo pesce è stato salato e già preparato come provvista per i soldati",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:27:47.748322Z"
+  },
+  "item.10247.desc": {
+    "src_hash": "79a4b5069fcbc4556ba7782cd0240de7",
+    "text": "Questa cassa contiene un set di armi",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:27:47.748678Z"
+  },
+  "item.10281.desc": {
+    "src_hash": "9c4b74be7487196c0154c7fa2fd4c87e",
+    "text": "Sembra piuttosto velenoso, quindi non è una buona scelta per un pasto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:27:47.749109Z"
+  },
+  "item.10288.desc": {
+    "src_hash": "353e14b2a3f813f1fb537fbaeec1166f",
+    "text": "Usalo a casa tua per costruire un trono di drago",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:27:47.749476Z"
+  },
+  "item.10310.desc": {
+    "src_hash": "54c0829bb824b2efd5badf352c95c231",
+    "text": "Potrebbe esserci qualcosa di prezioso sigillato",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:27:47.749821Z"
   }
 }

@@ -4,12 +4,12 @@
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-14T20:21:07.976591Z",
-  "issues_total": 108,
+  "checked_at": "2026-02-15T13:50:55.175069Z",
+  "issues_total": 118,
   "issues_by_type": {
-    "consistency_in_language": 56,
+    "consistency_in_language": 57,
     "pl_reference_missing_translation": 29,
-    "length_ratio_crosscheck": 23
+    "length_ratio_crosscheck": 32
   },
   "consistency_issues": [
     {
@@ -438,6 +438,22 @@
         "items:item.14031.name",
         "items:item.14033.name",
         "items:item.14034.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "coal basin",
+      "variants": [
+        "угольный бассейн",
+        "чаша с углём"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "items:item.171.name",
+        "items:item.22875.name",
+        "items:item.22876.name",
+        "items:item.31315.name"
       ]
     },
     {
@@ -1263,6 +1279,51 @@
       "pl_ratio": 0.857
     },
     {
+      "key": "item.2422.name",
+      "category": "items",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 11,
+      "lang_ratio": 0.909,
+      "pl_ratio": 3.0
+    },
+    {
+      "key": "item.2423.name",
+      "category": "items",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 11,
+      "lang_ratio": 0.909,
+      "pl_ratio": 3.0
+    },
+    {
+      "key": "item.2424.name",
+      "category": "items",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 11,
+      "lang_ratio": 0.909,
+      "pl_ratio": 3.0
+    },
+    {
+      "key": "item.2425.name",
+      "category": "items",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 11,
+      "lang_ratio": 0.909,
+      "pl_ratio": 3.0
+    },
+    {
+      "key": "item.28649.name",
+      "category": "items",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 4,
+      "lang_ratio": 1.5,
+      "pl_ratio": 3.5
+    },
+    {
       "key": "item.32588.name",
       "category": "items",
       "type": "crossref_length_ratio_diff",
@@ -1279,6 +1340,15 @@
       "en_len": 7,
       "lang_ratio": 2.714,
       "pl_ratio": 0.714
+    },
+    {
+      "key": "monster.undertaker.name",
+      "category": "monsters",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 10,
+      "lang_ratio": 0.9,
+      "pl_ratio": 3.1
     },
     {
       "key": "npc.billy.walkaway_msg_1",
@@ -1333,6 +1403,33 @@
       "en_len": 5,
       "lang_ratio": 3.2,
       "pl_ratio": 1.2
+    },
+    {
+      "key": "otclient_modules.cooldown_otui.tr_8",
+      "category": "otclient_modules",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 7,
+      "lang_ratio": 1.0,
+      "pl_ratio": 2.857
+    },
+    {
+      "key": "otclient_modules.skills_otui.tr_12",
+      "category": "otclient_modules",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 7,
+      "lang_ratio": 1.0,
+      "pl_ratio": 2.857
+    },
+    {
+      "key": "otclient_modules.spelllist_otui.tr_6",
+      "category": "otclient_modules",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 7,
+      "lang_ratio": 1.0,
+      "pl_ratio": 2.857
     },
     {
       "key": "spell.ignite.name",

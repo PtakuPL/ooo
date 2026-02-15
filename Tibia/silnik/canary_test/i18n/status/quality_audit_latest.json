@@ -1,18 +1,36 @@
 {
-  "timestamp": "2026-02-14T20:24:26.939567Z",
+  "timestamp": "2026-02-15T13:49:59.329269Z",
   "checked_entries": 100,
-  "issues_found": 27,
+  "issues_found": 8,
   "issues_by_type": {
-    "identical_to_en": 14,
-    "identical_to_en_exempt": 43,
-    "artifact_token": 13,
-    "suspicious_log_low": 30,
-    "suspicious_log_high": 78,
-    "suspicious_log_critical": 68,
-    "suspicious_log_medium": 24,
-    "suspicious_rejected_critical": 10
+    "identical_to_en": 8,
+    "identical_to_en_exempt": 5,
+    "suspicious_log_high": 186,
+    "suspicious_log_low": 14,
+    "suspicious_rejected_critical": 200
   },
   "issues": [
+    {
+      "key": "item.10096.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "stacke",
+      "translated": "stacke"
+    },
+    {
+      "key": "npc.a_fluffy_squirrel.greet_msg_1",
+      "lang": "cs",
+      "type": "identical_to_en",
+      "en": "Chhchh?",
+      "translated": "Chhchh?"
+    },
+    {
+      "key": "npc.a_fluffy_squirrel.voice_1",
+      "lang": "cs",
+      "type": "identical_to_en",
+      "en": "Chchch",
+      "translated": "Chchch"
+    },
     {
       "key": "npc.a_fluffy_squirrel.voice_1",
       "lang": "es",
@@ -21,188 +39,34 @@
       "translated": "Chchch"
     },
     {
-      "key": "npc.ariella.say_15",
+      "key": "item.10.name",
+      "lang": "cs",
+      "type": "identical_to_en",
+      "en": "manafluid",
+      "translated": "manafluid"
+    },
+    {
+      "key": "item.10.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "manafluid",
+      "translated": "manafluid"
+    },
+    {
+      "key": "item.10180.name",
+      "lang": "lt",
+      "type": "identical_to_en",
+      "en": "groud",
+      "translated": "groud"
+    },
+    {
+      "key": "npc.a_fluffy_squirrel.voice_1",
       "lang": "es",
       "type": "identical_to_en",
-      "en": "I see.",
-      "translated": "I see."
-    },
-    {
-      "key": "npc.avar_tar.say_5",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "I see.",
-      "translated": "I see."
-    },
-    {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!"
-    },
-    {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!"
-    },
-    {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!"
-    },
-    {
-      "key": "npc.ariella.say_15",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "I see.",
-      "translated": "I see."
-    },
-    {
-      "key": "npc.avar_tar.say_5",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "I see.",
-      "translated": "I see."
-    },
-    {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!"
-    },
-    {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!"
-    },
-    {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!"
-    },
-    {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!"
-    },
-    {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!"
-    },
-    {
-      "key": "npc.hairycles.say_66",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "I see.",
-      "translated": "I see."
-    },
-    {
-      "key": "cpp.title.name_14",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Trolltrasher",
-      "translated": "Trolltrasher"
-    },
-    {
-      "key": "cpp.title.name_38",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Demonator",
-      "translated": "Demonator"
-    },
-    {
-      "key": "cpp.title.name_83",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Chompmeister",
-      "translated": "Chompmeister"
-    },
-    {
-      "key": "cpp.title.name_87",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Ratinator",
-      "translated": "Ratinator"
-    },
-    {
-      "key": "cpp.vocation.id_2",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Druid",
-      "translated": "Druid"
-    },
-    {
-      "key": "npc.ariella.say_15",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "I see.",
-      "translated": "I see."
-    },
-    {
-      "key": "npc.avar_tar.say_5",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "I see.",
-      "translated": "I see."
-    },
-    {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!"
-    },
-    {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!"
-    },
-    {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!"
-    },
-    {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!"
-    },
-    {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!"
-    },
-    {
-      "key": "npc.hairycles.say_66",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "I see.",
-      "translated": "I see."
+      "en": "Chchch",
+      "translated": "Chchch"
     }
   ],
   "threshold": 10,
-  "slow_mode": true
+  "slow_mode": false
 }

@@ -65,80 +65,80 @@
 
 | # | Zadanie | Gdzie | Status |
 |---|---------|-------|--------|
-| A1 | Zamienić `Guard fail rate` → `Odrzucone (strażnik jakości) %` | LIVE, Strict Hourly, KPI | ⬜ |
-| A2 | Zamienić `Throughput` → `Przepustowość (kluczy/h)` | Strict Hourly | ⬜ |
-| A3 | Zamienić `Pending skip` → `Pominięte (kat. nieaktywna)` | Strict Hourly | ⬜ |
-| A4 | Zamienić `No progress rate` → `Cykle bez postępu %` | Strict Hourly | ⬜ |
-| A5 | Zamienić `Suspicious` → `Podejrzane tłumaczenia` | Strict Hourly, Quality | ⬜ |
-| A6 | Zamienić `EN-copy` → `Kopie EN (bez tłumaczenia)` | Translation tabele | ⬜ |
-| A7 | Zamienić `Coverage` → `Pokrycie` | Translation | ⬜ |
-| A8 | Zamienić `Net effective translated` → `Tłumaczeń netto` | META | ⬜ |
-| A9 | Przetłumaczyć nazwy etapów (`heartbeat_tick` → `sygnał życia`, `auto_start` → `start tłumaczenia`, `auto_done` → `tłumaczenie zakończone`, `dispatch` → `wybór zadania`) | LIVE, History | ⬜ |
-| A10 | Zamienić statusy (`RUNNING` → `DZIAŁA`, `IDLE` → `BEZCZYNNY`, `INACTIVE` → `NIEAKTYWNY`) | META, LIVE, nagłówki sekcji | ⬜ |
-| A11 | Zamienić nagłówki tabel z angielskiego | Daily report, Strict Window | ⬜ |
-| A12 | Zamienić `Repair Queue` → `Kolejka napraw` | Daily report | ⬜ |
+| A1 | Zamienić `Guard fail rate` → `Odrzucone (strażnik jakości) %` | LIVE, Strict Hourly, KPI | ✅ |
+| A2 | Zamienić `Throughput` → `Przepustowość (kluczy/h)` | Strict Hourly | ✅ |
+| A3 | Zamienić `Pending skip` → `Pominięte (kat. nieaktywna)` | Strict Hourly | ✅ |
+| A4 | Zamienić `No progress rate` → `Cykle bez postępu %` | Strict Hourly | ✅ |
+| A5 | Zamienić `Suspicious` → `Podejrzane tłumaczenia` | Strict Hourly, Quality | ✅ |
+| A6 | Zamienić `EN-copy` → `Kopie EN (bez tłumaczenia)` | Translation tabele | ✅ |
+| A7 | Zamienić `Coverage` → `Pokrycie` | Translation | ✅ |
+| A8 | Zamienić `Net effective translated` → `Tłumaczeń netto` | META | ✅ |
+| A9 | Przetłumaczyć nazwy etapów (`heartbeat_tick` → `sygnał życia`, `auto_start` → `start tłumaczenia`, `auto_done` → `tłumaczenie zakończone`, `dispatch` → `wybór zadania`) | LIVE, History | ✅ |
+| A10 | Zamienić statusy (`RUNNING` → `DZIAŁA`, `IDLE` → `BEZCZYNNY`, `INACTIVE` → `NIEAKTYWNY`) | META, LIVE, nagłówki sekcji | ✅ |
+| A11 | Zamienić nagłówki tabel z angielskiego | Daily report, Strict Window | ✅ |
+| A12 | Zamienić `Repair Queue` → `Kolejka napraw` | Daily report | ✅ |
 
 ### 🔹 Grupa B: Rozbudowa sekcji LIVE (łącznie ~2-3h)
 
 | # | Zadanie | Opis | Status |
 |---|---------|------|--------|
-| B1 | **Naprawić progress 0/0** | Przekazywać prawdziwe wartości `done/total` z translate_batch do activity.json. Źródło: `translate_limit`, `translated_count`, `guard_fail_count` — te zmienne istnieją w auto_translate ale nie są zapisywane do activity progress | ⬜ |
-| B2 | **Dodać "Co teraz robi worker"** | Nowa linia w LIVE: `Praca: Tłumaczenie automatyczne (Google Translate)` / `Naprawa kopii EN` / `Walidacja jakości` / `Synchronizacja kluczy` — mapowanie stage → opis po polsku | ⬜ |
-| B3 | **Dodać "Aktywne języki"** | Parsowanie ostatnich N wpisów z `activity.json.recent[]` — wyciągnąć unikalne `category` (=język) z ostatnich 10 min. Wyświetlić: `Aktywne języki (10 min): ES, PL, CS` | ⬜ |
-| B4 | **Dodać "Metoda tłumaczenia"** | Z `translation_guard_latest.json` lub `translation_recent_latest.json` — widać `method: gt / tm / dict / simple`. Wyświetlić: `Metoda: Google Translate + TM fallback` | ⬜ |
-| B5 | **Dodać "Statystyki bieżącego cyklu"** | Z `worker_cycle_perf_latest.json`: ile kluczy przetłumaczono, ile guard_fail, ile czasu na cykl | ⬜ |
+| B1 | **Naprawić progress 0/0** | Przekazywać prawdziwe wartości `done/total` z translate_batch do activity.json. Źródło: `translate_limit`, `translated_count`, `guard_fail_count` — te zmienne istnieją w auto_translate ale nie są zapisywane do activity progress | ✅ |
+| B2 | **Dodać "Co teraz robi worker"** | Nowa linia w LIVE: `Praca: Tłumaczenie automatyczne (Google Translate)` / `Naprawa kopii EN` / `Walidacja jakości` / `Synchronizacja kluczy` — mapowanie stage → opis po polsku | ✅ |
+| B3 | **Dodać "Aktywne języki"** | Parsowanie ostatnich N wpisów z `activity.json.recent[]` — wyciągnąć unikalne `category` (=język) z ostatnich 10 min. Wyświetlić: `Aktywne języki (10 min): ES, PL, CS` | ✅ |
+| B4 | **Dodać "Metoda tłumaczenia"** | Z `translation_guard_latest.json` lub `translation_recent_latest.json` — widać `method: gt / tm / dict / simple`. Wyświetlić: `Metoda: Google Translate + TM fallback` | ✅ |
+| B5 | **Dodać "Statystyki bieżącego cyklu"** | Z `worker_cycle_perf_latest.json`: ile kluczy przetłumaczono, ile guard_fail, ile czasu na cykl | ✅ |
 | B6 | **LIVE per faza** | Osobne live info dla: TŁUMACZENIE, WALIDACJA, SYNC. Jeśli worker jest w tłumaczeniu → pokaż tłumaczenie live. Jeśli w walidacji → pokaż walidacja live | ⬜ |
-| B7 | **Funkcje/etapy bieżącej pracy** | Lista aktualnie wykonywanych sub-tasków (np. `→ repair_identical_to_en`, `→ parallel_translate`, `→ translate_batch`, `→ quality_audit`). Już istnieją jako `stage` w `ops.jsonl` | ⬜ |
+| B7 | **Funkcje/etapy bieżącej pracy** | Lista aktualnie wykonywanych sub-tasków (np. `→ repair_identical_to_en`, `→ parallel_translate`, `→ translate_batch`, `→ quality_audit`). Już istnieją jako `stage` w `ops.jsonl` | ✅ |
 
 ### 🔹 Grupa C: Informacje o językach — co robi teraz, co robił (łącznie ~2h)
 
 | # | Zadanie | Opis | Status |
 |---|---------|------|--------|
-| C1 | **Tabela "Języki ostatnia godzina"** | Z `strict_hourly_window_latest.json` + `ops.jsonl`: per język ile kluczy przetłumaczono, ile guard_fail, ile repair. Wyświetlić TOP 10 aktywnych | ⬜ |
-| C2 | **Tabela "Historia pracy per język (24h)"** | Z `statusd_daily_report.json` → `coverage_snapshot`: zmiana pokrycia PL 42.02% → teraz 42.14%, ES 73.15% → 73.15%. Wyświetlić delta: `+0.12%` | ⬜ |
-| C3 | **"Aktualny język focus"** | Z `worker_config.json` → `focus_lang`. Wyświetlić: `Focus: brak (tryb tier-round-robin)` lub `Focus: ES (priorytetowy)` | ⬜ |
-| C4 | **"Kolejka języków"** | Z tier systemu: wyświetlić obecną kolejkę → `Następne: PL → ES → DE → FR → ...` | ⬜ |
+| C1 | **Tabela "Języki ostatnia godzina"** | Z `strict_hourly_window_latest.json` + `ops.jsonl`: per język ile kluczy przetłumaczono, ile guard_fail, ile repair. Wyświetlić TOP 10 aktywnych | ✅ |
+| C2 | **Tabela "Historia pracy per język (24h)"** | Z `statusd_daily_report.json` → `coverage_snapshot`: zmiana pokrycia PL 42.02% → teraz 42.14%, ES 73.15% → 73.15%. Wyświetlić delta: `+0.12%` | ✅ |
+| C3 | **"Aktualny język focus"** | Z `worker_config.json` → `focus_lang`. Wyświetlić: `Focus: brak (tryb tier-round-robin)` lub `Focus: ES (priorytetowy)` | ✅ |
+| C4 | **"Kolejka języków"** | Z tier systemu: wyświetlić obecną kolejkę → `Następne: PL → ES → DE → FR → ...` | ✅ |
 | C5 | **Mini-sekcja per aktywny język** | Dla TOP 5 aktywnych języków: osobna mała tabela z kluczami, pokryciem, ostatnim plikiem, przyrostem /h | ⬜ |
 
 ### 🔹 Grupa D: Informacje godzinowe / dzienne / tygodniowe (łącznie ~3h)
 
 | # | Zadanie | Opis | Status |
 |---|---------|------|--------|
-| D1 | **Sekcja "Ta godzina"** | Nowa sekcja z: ile kluczy, ile języków, ile cykli, ile błędów, najaktywniejszy język, najaktywniejszy plik, dominujący etap pracy, trend vs poprzednia godzina | ⬜ |
-| D2 | **Sekcja "Dziś (24h)" — rozszerzyć** | Aktualna sekcja "Dziś" ma za mało danych. Dodać: sumę tłumaczeń per język, TOP 5 plików, porównanie z wczoraj, trend tempo, lista wykonanych etapów/funkcji | ⬜ |
-| D3 | **Sekcja "Ten tydzień"** | Nowa sekcja: suma 7 dni, wykres ASCII tłumaczeń per dzień, zmiana pokrycia globalnego per dzień, ile nowych kluczy dodano | ⬜ |
-| D4 | **Trend / porównanie** | W każdej sekcji (godzinowa/dzienna/tygodniowa) dodać strzałki: `↑ +15%` / `↓ -3%` / `→ bez zmian` vs poprzedni okres | ⬜ |
-| D5 | **Historia etapów pracy** | Tabela: ile razy w danym okresie worker wykonał `repair_identical`, `parallel_translate`, `translate_batch`, `quality_audit`, `sync_file_done`. Źródło: `ops.jsonl` | ⬜ |
+| D1 | **Sekcja "Ta godzina"** | Nowa sekcja z: ile kluczy, ile języków, ile cykli, ile błędów, najaktywniejszy język, najaktywniejszy plik, dominujący etap pracy, trend vs poprzednia godzina | ✅ |
+| D2 | **Sekcja "Dziś (24h)" — rozszerzyć** | Aktualna sekcja "Dziś" ma za mało danych. Dodać: sumę tłumaczeń per język, TOP 5 plików, porównanie z wczoraj, trend tempo, lista wykonanych etapów/funkcji | ✅ |
+| D3 | **Sekcja "Ten tydzień"** | Nowa sekcja: suma 7 dni, wykres ASCII tłumaczeń per dzień, zmiana pokrycia globalnego per dzień, ile nowych kluczy dodano | ✅ |
+| D4 | **Trend / porównanie** | W każdej sekcji (godzinowa/dzienna/tygodniowa) dodać strzałki: `↑ +15%` / `↓ -3%` / `→ bez zmian` vs poprzedni okres | ✅ |
+| D5 | **Historia etapów pracy** | Tabela: ile razy w danym okresie worker wykonał `repair_identical`, `parallel_translate`, `translate_batch`, `quality_audit`, `sync_file_done`. Źródło: `ops.jsonl` | ✅ |
 
 ### 🔹 Grupa E: Postęp i ETA (łącznie ~1.5h)
 
 | # | Zadanie | Opis | Status |
 |---|---------|------|--------|
-| E1 | **ETA per język** | Na podstawie obecnego tempa (kluczy/h) wyliczyć ile godzin do 95% pokrycia per język. Wyświetlić: `PL: ~120h do 95%` | ⬜ |
-| E2 | **ETA globalne** | Ile godzin/dni do ukończenia WSZYSTKICH języków (95% coverage) | ⬜ |
-| E3 | **Paski postępu per język (TOP 20)** | Bardziej wizualne paski ASCII: `ES ████████████████░░░░ 73%` — już istnieją w Roadmap, ale trzeba dodać do głównej tabeli języków | ⬜ |
-| E4 | **Zmiana pokrycia (trend 24h)** | `PL: 42.02% → 42.14% (+0.12%)` per język — porównanie z 24h temu | ⬜ |
+| E1 | **ETA per język** | Na podstawie obecnego tempa (kluczy/h) wyliczyć ile godzin do 95% pokrycia per język. Wyświetlić: `PL: ~120h do 95%` | ✅ |
+| E2 | **ETA globalne** | Ile godzin/dni do ukończenia WSZYSTKICH języków (95% coverage) | ✅ |
+| E3 | **Paski postępu per język (TOP 20)** | Bardziej wizualne paski ASCII: `ES ████████████████░░░░ 73%` — już istnieją w Roadmap, ale trzeba dodać do głównej tabeli języków | ✅ |
+| E4 | **Zmiana pokrycia (trend 24h)** | `PL: 42.02% → 42.14% (+0.12%)` per język — porównanie z 24h temu | ✅ |
 
 ### 🔹 Grupa F: Refaktor i czytelność (łącznie ~1h)
 
 | # | Zadanie | Opis | Status |
 |---|---------|------|--------|
 | F1 | **Ukryć mało ważne języki** | TOP 20 widoczne, reszta w `<details>Pokaż wszystkie (53)</details>` | ⬜ |
-| F2 | **Skompresować duplikaty sekcji** | Tabela TM/Etap2 jest zduplikowana. Usunąć duplikaty | ⬜ |
-| F3 | **Uporządkować kolejność sekcji** | Najważniejsze na górze: META → LIVE → Ta godzina → Języki → Postęp → Dziś → Tydzień → Jakość → Historia | ⬜ |
-| F4 | **Sekcja MIGRATION → PRE_MIGRATION** | Zmienić nagłówek, opis — skan plików bez modyfikacji | ⬜ |
-| F5 | **Usunąć martwe metryki** | `Cykl #1` (od uruchomienia — bezwartościowe), `Reconcile korekta rejestru` (techniczne) | ⬜ |
-| F6 | **Dodać legendę** | Na dole: co oznaczają emoji, co oznaczają statusy, co to tier | ⬜ |
+| F2 | **Skompresować duplikaty sekcji** | Tabela TM/Etap2 jest zduplikowana. Usunąć duplikaty | ✅ |
+| F3 | **Uporządkować kolejność sekcji** | Najważniejsze na górze: META → LIVE → Ta godzina → Języki → Postęp → Dziś → Tydzień → Jakość → Historia | ✅ |
+| F4 | **Sekcja MIGRATION → PRE_MIGRATION** | Zmienić nagłówek, opis — skan plików bez modyfikacji | ✅ |
+| F5 | **Usunąć martwe metryki** | `Cykl #1` (od uruchomienia — bezwartościowe), `Reconcile korekta rejestru` (techniczne) | ✅ |
+| F6 | **Dodać legendę** | Na dole: co oznaczają emoji, co oznaczają statusy, co to tier | ✅ |
 
 ### 🔹 Grupa G: Nowe sekcje / informacje dodatkowe (łącznie ~2h)
 
 | # | Zadanie | Opis | Status |
 |---|---------|------|--------|
-| G1 | **"Podsumowanie dla właściciela"** | Nowa sekcja na samej górze: 3-4 zdania po polsku: „Worker tłumaczy 53 języków. Najlepszy: ES 73%. Tempo: ~2000 kluczy/h. ETA do ukończenia ES: 48h." | ⬜ |
-| G2 | **"Problemy i uwagi"** | Lista: co nie działa, co jest wolne, jakie języki mają problemy z jakością. Źródło: `quality_dashboard.json` + `suspicious_log.jsonl` | ⬜ |
-| G3 | **"Ostatnie komendy"** | Lista ostatnich 5 komend wykonanych przez właściciela (z `worker_commands.txt`). Np.: `FORCE:scripts:ONCE` — wykonana 14:05 | ⬜ |
-| G4 | **"Zdrowie systemu"** | Sekcja: czy worker działa, czy statusd działa, dysk, ostatni git push, ile czasu od restartu. Źródło: `guardian_health.json` + heartbeat | ⬜ |
-| G5 | **"Wykres ASCII dzienny"** | W sekcji "Dziś": wykres godzina po godzinie ile przetłumaczono. Np.: `12:00 ██████ 340`, `13:00 ████████████ 680` | ⬜ |
+| G1 | **"Podsumowanie dla właściciela"** | Nowa sekcja na samej górze: 3-4 zdania po polsku: „Worker tłumaczy 53 języków. Najlepszy: ES 73%. Tempo: ~2000 kluczy/h. ETA do ukończenia ES: 48h." | ✅ |
+| G2 | **"Problemy i uwagi"** | Lista: co nie działa, co jest wolne, jakie języki mają problemy z jakością. Źródło: `quality_dashboard.json` + `suspicious_log.jsonl` | ✅ |
+| G3 | **"Ostatnie komendy"** | Lista ostatnich 5 komend wykonanych przez właściciela (z `worker_commands.txt`). Np.: `FORCE:scripts:ONCE` — wykonana 14:05 | ✅ |
+| G4 | **"Zdrowie systemu"** | Sekcja: czy worker działa, czy statusd działa, dysk, ostatni git push, ile czasu od restartu. Źródło: `guardian_health.json` + heartbeat | ✅ |
+| G5 | **"Wykres ASCII dzienny"** | W sekcji "Dziś": wykres godzina po godzinie ile przetłumaczono. Np.: `12:00 ██████ 340`, `13:00 ████████████ 680` | ✅ |
 
 ---
 

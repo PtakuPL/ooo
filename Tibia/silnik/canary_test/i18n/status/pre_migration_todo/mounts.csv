@@ -1,0 +1,698 @@
+category,file,line,pattern,text
+mounts,data/XML/attachedeffects.xml,3,xml.name,8 aura
+mounts,data/XML/attachedeffects.xml,5,xml.name,Outfit - Rainbow
+mounts,data/XML/attachedeffects.xml,6,xml.name,Outfit - Ghost
+mounts,data/XML/attachedeffects.xml,7,xml.name,Outfit - Jelly
+mounts,data/XML/attachedeffects.xml,8,xml.name,Outfit - Fragmented
+mounts,data/XML/attachedeffects.xml,9,xml.name,Outfit - Outline
+mounts,data/XML/attachedeffects.xml,11,xml.name,7 effect
+mounts,data/XML/attachedeffects.xml,13,xml.name,2 wings
+mounts,data/XML/attachedeffects.xml,14,xml.name,11 wings
+mounts,data/XML/events.xml,3,xml.name,Otservbr example 1
+mounts,data/XML/events.xml,5,xml.description,"Otserver br example 1 description double exp and a half, double loot !chance!, regular spawn and double skill"
+mounts,data/XML/events.xml,9,xml.name,Otservbr example 2
+mounts,data/XML/events.xml,11,xml.description,"Otserver br example 2 description 50% less exp, triple loot !chance!, 50% faster spawn and regular skill"
+mounts,data/XML/familiars.xml,4,xml.name,Thundergiant
+mounts,data/XML/familiars.xml,5,xml.name,Thundergiant
+mounts,data/XML/familiars.xml,6,xml.name,Bladespark
+mounts,data/XML/familiars.xml,7,xml.name,Bladespark
+mounts,data/XML/familiars.xml,10,xml.name,Grovebeast
+mounts,data/XML/familiars.xml,11,xml.name,Grovebeast
+mounts,data/XML/familiars.xml,12,xml.name,Mossmasher
+mounts,data/XML/familiars.xml,13,xml.name,Mossmasher
+mounts,data/XML/familiars.xml,16,xml.name,Emberwing
+mounts,data/XML/familiars.xml,17,xml.name,Emberwing
+mounts,data/XML/familiars.xml,18,xml.name,Sandscourge
+mounts,data/XML/familiars.xml,19,xml.name,Sandscourge
+mounts,data/XML/familiars.xml,22,xml.name,Skullfrost
+mounts,data/XML/familiars.xml,23,xml.name,Skullfrost
+mounts,data/XML/familiars.xml,24,xml.name,Snowbash
+mounts,data/XML/familiars.xml,25,xml.name,Snowbash
+mounts,data/XML/groups.xml,3,xml.name,player
+mounts,data/XML/groups.xml,4,xml.name,tutor
+mounts,data/XML/groups.xml,10,xml.name,senior tutor
+mounts,data/XML/groups.xml,18,xml.name,gamemaster
+mounts,data/XML/groups.xml,62,xml.name,community manager
+mounts,data/XML/groups.xml,106,xml.name,god
+mounts,data/XML/imbuements.xml,2,xml.name,Basic
+mounts,data/XML/imbuements.xml,3,xml.name,Intricate
+mounts,data/XML/imbuements.xml,4,xml.name,Powerful
+mounts,data/XML/imbuements.xml,7,xml.name,Elemental Damage
+mounts,data/XML/imbuements.xml,8,xml.name,Life Leech
+mounts,data/XML/imbuements.xml,9,xml.name,Mana Leech
+mounts,data/XML/imbuements.xml,10,xml.name,Critical Hit
+mounts,data/XML/imbuements.xml,11,xml.name,Elemental Protection (Death)
+mounts,data/XML/imbuements.xml,12,xml.name,Elemental Protection (Earth)
+mounts,data/XML/imbuements.xml,13,xml.name,Elemental Protection (Fire)
+mounts,data/XML/imbuements.xml,14,xml.name,Elemental Protection (Ice)
+mounts,data/XML/imbuements.xml,15,xml.name,Elemental Protection (Energy)
+mounts,data/XML/imbuements.xml,16,xml.name,Elemental Protection (Holy)
+mounts,data/XML/imbuements.xml,17,xml.name,Increase Speed
+mounts,data/XML/imbuements.xml,18,xml.name,Skillboost (Axe Fighting)
+mounts,data/XML/imbuements.xml,19,xml.name,Skillboost (Sword Fighting)
+mounts,data/XML/imbuements.xml,20,xml.name,Skillboost (Club Fighting)
+mounts,data/XML/imbuements.xml,21,xml.name,Skillboost (Shielding)
+mounts,data/XML/imbuements.xml,22,xml.name,Skillboost (Distance Fighting)
+mounts,data/XML/imbuements.xml,23,xml.name,Skillboost (Magic Level)
+mounts,data/XML/imbuements.xml,24,xml.name,Increase Capacity
+mounts,data/XML/imbuements.xml,27,xml.name,Scorch
+mounts,data/XML/imbuements.xml,28,xml.attribute.description,Converts 10% of the physical damage to fire damage.
+mounts,data/XML/imbuements.xml,32,xml.name,Scorch
+mounts,data/XML/imbuements.xml,33,xml.attribute.description,Converts 25% of the physical damage to fire damage.
+mounts,data/XML/imbuements.xml,38,xml.name,Scorch
+mounts,data/XML/imbuements.xml,39,xml.attribute.description,Converts 50% of the physical damage to fire damage.
+mounts,data/XML/imbuements.xml,45,xml.name,Venom
+mounts,data/XML/imbuements.xml,46,xml.attribute.description,Converts 10% of the physical damage to earth damage.
+mounts,data/XML/imbuements.xml,50,xml.name,Venom
+mounts,data/XML/imbuements.xml,51,xml.attribute.description,Converts 25% of the physical damage to earth damage.
+mounts,data/XML/imbuements.xml,56,xml.name,Venom
+mounts,data/XML/imbuements.xml,57,xml.attribute.description,Converts 50% of the physical damage to earth damage.
+mounts,data/XML/imbuements.xml,63,xml.name,Frost
+mounts,data/XML/imbuements.xml,64,xml.attribute.description,Converts 10% of the physical damage to ice damage.
+mounts,data/XML/imbuements.xml,68,xml.name,Frost
+mounts,data/XML/imbuements.xml,69,xml.attribute.description,Converts 25% of the physical damage to ice damage.
+mounts,data/XML/imbuements.xml,74,xml.name,Frost
+mounts,data/XML/imbuements.xml,75,xml.attribute.description,Converts 50% of the physical damage to ice damage.
+mounts,data/XML/imbuements.xml,81,xml.name,Electrify
+mounts,data/XML/imbuements.xml,82,xml.attribute.description,Converts 10% of the physical damage to energy damage.
+mounts,data/XML/imbuements.xml,86,xml.name,Electrify
+mounts,data/XML/imbuements.xml,87,xml.attribute.description,Converts 25% of the physical damage to energy damage.
+mounts,data/XML/imbuements.xml,92,xml.name,Electrify
+mounts,data/XML/imbuements.xml,93,xml.attribute.description,Converts 50% of the physical damage to energy damage.
+mounts,data/XML/imbuements.xml,99,xml.name,Reap
+mounts,data/XML/imbuements.xml,100,xml.attribute.description,Converts 10% of the physical damage to death damage.
+mounts,data/XML/imbuements.xml,104,xml.name,Reap
+mounts,data/XML/imbuements.xml,105,xml.attribute.description,Converts 25% of the physical damage to death damage.
+mounts,data/XML/imbuements.xml,110,xml.name,Reap
+mounts,data/XML/imbuements.xml,111,xml.attribute.description,Converts 50% of the physical damage to death damage.
+mounts,data/XML/imbuements.xml,118,xml.name,Vampirism
+mounts,data/XML/imbuements.xml,119,xml.attribute.description,Converts 5% of damage to HP with a chance of 100%.
+mounts,data/XML/imbuements.xml,123,xml.name,Vampirism
+mounts,data/XML/imbuements.xml,124,xml.attribute.description,Converts 10% of damage to HP with a chance of 100%.
+mounts,data/XML/imbuements.xml,129,xml.name,Vampirism
+mounts,data/XML/imbuements.xml,130,xml.attribute.description,Converts 25% of damage to HP with a chance of 100%.
+mounts,data/XML/imbuements.xml,137,xml.name,Void
+mounts,data/XML/imbuements.xml,138,xml.attribute.description,Converts 3% of damage to MP with a chance of 100%.
+mounts,data/XML/imbuements.xml,142,xml.name,Void
+mounts,data/XML/imbuements.xml,143,xml.attribute.description,Converts 5% of damage to MP with a chance of 100%.
+mounts,data/XML/imbuements.xml,148,xml.name,Void
+mounts,data/XML/imbuements.xml,149,xml.attribute.description,Converts 8% of damage to MP with a chance of 100%.
+mounts,data/XML/imbuements.xml,156,xml.name,Strike
+mounts,data/XML/imbuements.xml,157,xml.attribute.description,Raises crit hit damage by 15% and crit hit chance by 10%.
+mounts,data/XML/imbuements.xml,161,xml.name,Strike
+mounts,data/XML/imbuements.xml,162,xml.attribute.description,Raises crit hit damage by 25% and crit hit chance by 10%.
+mounts,data/XML/imbuements.xml,167,xml.name,Strike
+mounts,data/XML/imbuements.xml,168,xml.attribute.description,Raises crit hit damage by 50% and crit hit chance by 10%.
+mounts,data/XML/imbuements.xml,175,xml.name,Lich Shroud
+mounts,data/XML/imbuements.xml,176,xml.attribute.description,Reduces death damage by 2%.
+mounts,data/XML/imbuements.xml,180,xml.name,Lich Shroud
+mounts,data/XML/imbuements.xml,181,xml.attribute.description,Reduces death damage by 5%.
+mounts,data/XML/imbuements.xml,186,xml.name,Lich Shroud
+mounts,data/XML/imbuements.xml,187,xml.attribute.description,Reduces death damage by 10%.
+mounts,data/XML/imbuements.xml,193,xml.name,Snake Skin
+mounts,data/XML/imbuements.xml,194,xml.attribute.description,Reduces earth damage by 3%.
+mounts,data/XML/imbuements.xml,198,xml.name,Snake Skin
+mounts,data/XML/imbuements.xml,199,xml.attribute.description,Reduces earth damage by 8%.
+mounts,data/XML/imbuements.xml,204,xml.name,Snake Skin
+mounts,data/XML/imbuements.xml,205,xml.attribute.description,Reduces earth damage by 15%.
+mounts,data/XML/imbuements.xml,211,xml.name,Dragon Hide
+mounts,data/XML/imbuements.xml,212,xml.attribute.description,Reduces fire damage by 3%.
+mounts,data/XML/imbuements.xml,216,xml.name,Dragon Hide
+mounts,data/XML/imbuements.xml,217,xml.attribute.description,Reduces fire damage by 8%.
+mounts,data/XML/imbuements.xml,222,xml.name,Dragon Hide
+mounts,data/XML/imbuements.xml,223,xml.attribute.description,Reduces fire damage by 15%.
+mounts,data/XML/imbuements.xml,229,xml.name,Quara Scale
+mounts,data/XML/imbuements.xml,230,xml.attribute.description,Reduces ice damage by 3%.
+mounts,data/XML/imbuements.xml,234,xml.name,Quara Scale
+mounts,data/XML/imbuements.xml,235,xml.attribute.description,Reduces ice damage by 8%.
+mounts,data/XML/imbuements.xml,240,xml.name,Quara Scale
+mounts,data/XML/imbuements.xml,241,xml.attribute.description,Reduces ice damage by 15%.
+mounts,data/XML/imbuements.xml,247,xml.name,Cloud Fabric
+mounts,data/XML/imbuements.xml,248,xml.attribute.description,Reduces energy damage by 3%.
+mounts,data/XML/imbuements.xml,252,xml.name,Cloud Fabric
+mounts,data/XML/imbuements.xml,253,xml.attribute.description,Reduces energy damage by 8%.
+mounts,data/XML/imbuements.xml,258,xml.name,Cloud Fabric
+mounts,data/XML/imbuements.xml,259,xml.attribute.description,Reduces energy damage by 15%.
+mounts,data/XML/imbuements.xml,265,xml.name,Demon Presence
+mounts,data/XML/imbuements.xml,266,xml.attribute.description,Reduces holy damage by 3%.
+mounts,data/XML/imbuements.xml,270,xml.name,Demon Presence
+mounts,data/XML/imbuements.xml,271,xml.attribute.description,Reduces holy damage by 8%.
+mounts,data/XML/imbuements.xml,276,xml.name,Demon Presence
+mounts,data/XML/imbuements.xml,277,xml.attribute.description,Reduces holy damage by 15%.
+mounts,data/XML/imbuements.xml,284,xml.name,Swiftness
+mounts,data/XML/imbuements.xml,285,xml.attribute.description,Raises walking speed by 10.
+mounts,data/XML/imbuements.xml,289,xml.name,Swiftness
+mounts,data/XML/imbuements.xml,290,xml.attribute.description,Raises walking speed by 15.
+mounts,data/XML/imbuements.xml,295,xml.name,Swiftness
+mounts,data/XML/imbuements.xml,296,xml.attribute.description,Raises walking speed by 30.
+mounts,data/XML/imbuements.xml,303,xml.name,Chop
+mounts,data/XML/imbuements.xml,304,xml.attribute.description,Raises axe fighting skill by 1.
+mounts,data/XML/imbuements.xml,308,xml.name,Chop
+mounts,data/XML/imbuements.xml,309,xml.attribute.description,Raises axe fighting skill by 2.
+mounts,data/XML/imbuements.xml,314,xml.name,Chop
+mounts,data/XML/imbuements.xml,315,xml.attribute.description,Raises axe fighting skill by 4.
+mounts,data/XML/imbuements.xml,321,xml.name,Slash
+mounts,data/XML/imbuements.xml,322,xml.attribute.description,Raises sword fighting skill by 1.
+mounts,data/XML/imbuements.xml,326,xml.name,Slash
+mounts,data/XML/imbuements.xml,327,xml.attribute.description,Raises sword fighting skill by 2.
+mounts,data/XML/imbuements.xml,332,xml.name,Slash
+mounts,data/XML/imbuements.xml,333,xml.attribute.description,Raises sword fighting skill by 4.
+mounts,data/XML/imbuements.xml,339,xml.name,Bash
+mounts,data/XML/imbuements.xml,340,xml.attribute.description,Raises club fighting skill by 1.
+mounts,data/XML/imbuements.xml,344,xml.name,Bash
+mounts,data/XML/imbuements.xml,345,xml.attribute.description,Raises club fighting skill by 2.
+mounts,data/XML/imbuements.xml,350,xml.name,Bash
+mounts,data/XML/imbuements.xml,351,xml.attribute.description,Raises club fighting skill by 4.
+mounts,data/XML/imbuements.xml,357,xml.name,Precision
+mounts,data/XML/imbuements.xml,358,xml.attribute.description,Raises distance fighting skill by 1.
+mounts,data/XML/imbuements.xml,362,xml.name,Precision
+mounts,data/XML/imbuements.xml,363,xml.attribute.description,Raises distance fighting skill by 2.
+mounts,data/XML/imbuements.xml,368,xml.name,Precision
+mounts,data/XML/imbuements.xml,369,xml.attribute.description,Raises distance fighting skill by 4.
+mounts,data/XML/imbuements.xml,375,xml.name,Blockade
+mounts,data/XML/imbuements.xml,376,xml.attribute.description,Raises shielding skill by 1.
+mounts,data/XML/imbuements.xml,380,xml.name,Blockade
+mounts,data/XML/imbuements.xml,381,xml.attribute.description,Raises shielding skill by 2.
+mounts,data/XML/imbuements.xml,386,xml.name,Blockade
+mounts,data/XML/imbuements.xml,387,xml.attribute.description,Raises shielding skill by 4.
+mounts,data/XML/imbuements.xml,393,xml.name,Epiphany
+mounts,data/XML/imbuements.xml,394,xml.attribute.description,Raises magic level by 1.
+mounts,data/XML/imbuements.xml,398,xml.name,Epiphany
+mounts,data/XML/imbuements.xml,399,xml.attribute.description,Raises magic level by 2.
+mounts,data/XML/imbuements.xml,404,xml.name,Epiphany
+mounts,data/XML/imbuements.xml,405,xml.attribute.description,Raises magic level by 4.
+mounts,data/XML/imbuements.xml,412,xml.name,Featherweight
+mounts,data/XML/imbuements.xml,413,xml.attribute.description,Raises capacity by 3.
+mounts,data/XML/imbuements.xml,417,xml.name,Featherweight
+mounts,data/XML/imbuements.xml,418,xml.attribute.description,Raises capacity by 8.
+mounts,data/XML/imbuements.xml,423,xml.name,Featherweight
+mounts,data/XML/imbuements.xml,424,xml.attribute.description,Raises capacity by 15.
+mounts,data/XML/mounts.xml,3,xml.name,Widow Queen
+mounts,data/XML/mounts.xml,4,xml.name,Racing Bird
+mounts,data/XML/mounts.xml,5,xml.name,War Bear
+mounts,data/XML/mounts.xml,6,xml.name,Black Sheep
+mounts,data/XML/mounts.xml,7,xml.name,Midnight Panther
+mounts,data/XML/mounts.xml,8,xml.name,Draptor
+mounts,data/XML/mounts.xml,9,xml.name,Titanica
+mounts,data/XML/mounts.xml,10,xml.name,Tin Lizzard
+mounts,data/XML/mounts.xml,11,xml.name,Blazebringer
+mounts,data/XML/mounts.xml,12,xml.name,Rapid Boar
+mounts,data/XML/mounts.xml,13,xml.name,Stampor
+mounts,data/XML/mounts.xml,14,xml.name,Undead Cavebear
+mounts,data/XML/mounts.xml,15,xml.name,Donkey
+mounts,data/XML/mounts.xml,16,xml.name,Tiger Slug
+mounts,data/XML/mounts.xml,17,xml.name,Uniwheel
+mounts,data/XML/mounts.xml,18,xml.name,Crystal Wolf
+mounts,data/XML/mounts.xml,19,xml.name,War Horse
+mounts,data/XML/mounts.xml,20,xml.name,Kingly Deer
+mounts,data/XML/mounts.xml,21,xml.name,Tamed Panda
+mounts,data/XML/mounts.xml,22,xml.name,Dromedary
+mounts,data/XML/mounts.xml,23,xml.name,Scorpion King
+mounts,data/XML/mounts.xml,24,xml.name,Rented Horse
+mounts,data/XML/mounts.xml,25,xml.name,Armoured War Horse
+mounts,data/XML/mounts.xml,26,xml.name,Shadow Draptor
+mounts,data/XML/mounts.xml,27,xml.name,Rented Horse (Gray)
+mounts,data/XML/mounts.xml,28,xml.name,Rented Horse (Brown)
+mounts,data/XML/mounts.xml,29,xml.name,Lady Bug
+mounts,data/XML/mounts.xml,30,xml.name,Manta Ray
+mounts,data/XML/mounts.xml,31,xml.name,Ironblight
+mounts,data/XML/mounts.xml,32,xml.name,Magma Crawler
+mounts,data/XML/mounts.xml,33,xml.name,Dragonling
+mounts,data/XML/mounts.xml,34,xml.name,Gnarlhound
+mounts,data/XML/mounts.xml,35,xml.name,Crimson Ray
+mounts,data/XML/mounts.xml,36,xml.name,Steelbeak
+mounts,data/XML/mounts.xml,37,xml.name,Water Buffalo
+mounts,data/XML/mounts.xml,38,xml.name,Tombstinger
+mounts,data/XML/mounts.xml,39,xml.name,Platesaurian
+mounts,data/XML/mounts.xml,40,xml.name,Ursagrodon
+mounts,data/XML/mounts.xml,41,xml.name,The Hellgrip
+mounts,data/XML/mounts.xml,42,xml.name,Noble Lion
+mounts,data/XML/mounts.xml,43,xml.name,Desert King
+mounts,data/XML/mounts.xml,44,xml.name,Shock Head
+mounts,data/XML/mounts.xml,45,xml.name,Walker
+mounts,data/XML/mounts.xml,46,xml.name,Azudocus
+mounts,data/XML/mounts.xml,47,xml.name,Carpacosaurus
+mounts,data/XML/mounts.xml,48,xml.name,Death Crawler
+mounts,data/XML/mounts.xml,49,xml.name,Flamesteed
+mounts,data/XML/mounts.xml,50,xml.name,Jade Lion
+mounts,data/XML/mounts.xml,51,xml.name,Jade Pincer
+mounts,data/XML/mounts.xml,52,xml.name,Nethersteed
+mounts,data/XML/mounts.xml,53,xml.name,Tempest
+mounts,data/XML/mounts.xml,54,xml.name,Winter King
+mounts,data/XML/mounts.xml,55,xml.name,Doombringer
+mounts,data/XML/mounts.xml,56,xml.name,Woodland Prince
+mounts,data/XML/mounts.xml,57,xml.name,Hailstorm Fury
+mounts,data/XML/mounts.xml,58,xml.name,Siegebreaker
+mounts,data/XML/mounts.xml,59,xml.name,Poisonbane
+mounts,data/XML/mounts.xml,60,xml.name,Blackpelt
+mounts,data/XML/mounts.xml,61,xml.name,Golden Dragonfly
+mounts,data/XML/mounts.xml,62,xml.name,Steel Bee
+mounts,data/XML/mounts.xml,63,xml.name,Copper Fly
+mounts,data/XML/mounts.xml,64,xml.name,Tundra Rambler
+mounts,data/XML/mounts.xml,65,xml.name,Highland Yak
+mounts,data/XML/mounts.xml,66,xml.name,Glacier Vagabond
+mounts,data/XML/mounts.xml,67,xml.name,Flying Divan
+mounts,data/XML/mounts.xml,68,xml.name,Magic Carpet
+mounts,data/XML/mounts.xml,69,xml.name,Floating Kashmir
+mounts,data/XML/mounts.xml,70,xml.name,Ringtail Waccoon
+mounts,data/XML/mounts.xml,71,xml.name,Night Waccoon
+mounts,data/XML/mounts.xml,72,xml.name,Emerald Waccoon
+mounts,data/XML/mounts.xml,73,xml.name,Glooth Glider
+mounts,data/XML/mounts.xml,74,xml.name,Shadow Hart
+mounts,data/XML/mounts.xml,75,xml.name,Black Stag
+mounts,data/XML/mounts.xml,76,xml.name,Emperor Deer
+mounts,data/XML/mounts.xml,77,xml.name,Flitterkatzen
+mounts,data/XML/mounts.xml,78,xml.name,Venompaw
+mounts,data/XML/mounts.xml,79,xml.name,Batcat
+mounts,data/XML/mounts.xml,80,xml.name,Sea Devil
+mounts,data/XML/mounts.xml,81,xml.name,Coralripper
+mounts,data/XML/mounts.xml,82,xml.name,Plumfish
+mounts,data/XML/mounts.xml,83,xml.name,Gorongra
+mounts,data/XML/mounts.xml,84,xml.name,Noctungra
+mounts,data/XML/mounts.xml,85,xml.name,Silverneck
+mounts,data/XML/mounts.xml,86,xml.name,Slagsnare
+mounts,data/XML/mounts.xml,87,xml.name,Nightstinger
+mounts,data/XML/mounts.xml,88,xml.name,Razorcreep
+mounts,data/XML/mounts.xml,89,xml.name,Rift Runner
+mounts,data/XML/mounts.xml,90,xml.name,Nightdweller
+mounts,data/XML/mounts.xml,91,xml.name,Frostflare
+mounts,data/XML/mounts.xml,92,xml.name,Cinderhoof
+mounts,data/XML/mounts.xml,93,xml.name,Mouldpincer
+mounts,data/XML/mounts.xml,94,xml.name,Bloodcurl
+mounts,data/XML/mounts.xml,95,xml.name,Leafscuttler
+mounts,data/XML/mounts.xml,96,xml.name,Sparkion
+mounts,data/XML/mounts.xml,97,xml.name,Swamp Snapper
+mounts,data/XML/mounts.xml,98,xml.name,Mould Shell
+mounts,data/XML/mounts.xml,99,xml.name,Reed Lurker
+mounts,data/XML/mounts.xml,100,xml.name,Neon Sparkid
+mounts,data/XML/mounts.xml,101,xml.name,Vortexion
+mounts,data/XML/mounts.xml,102,xml.name,Ivory Fang
+mounts,data/XML/mounts.xml,103,xml.name,Shadow Claw
+mounts,data/XML/mounts.xml,104,xml.name,Snow Pelt
+mounts,data/XML/mounts.xml,105,xml.name,Jackalope
+mounts,data/XML/mounts.xml,106,xml.name,Dreadhare
+mounts,data/XML/mounts.xml,107,xml.name,Wolpertinger
+mounts,data/XML/mounts.xml,108,xml.name,Stone Rhino
+mounts,data/XML/mounts.xml,109,xml.name,Gold Sphinx
+mounts,data/XML/mounts.xml,110,xml.name,Emerald Sphinx
+mounts,data/XML/mounts.xml,111,xml.name,Shadow Sphinx
+mounts,data/XML/mounts.xml,112,xml.name,Jungle Saurian
+mounts,data/XML/mounts.xml,113,xml.name,Ember Saurian
+mounts,data/XML/mounts.xml,114,xml.name,Lagoon Saurian
+mounts,data/XML/mounts.xml,115,xml.name,Blazing Unicorn
+mounts,data/XML/mounts.xml,116,xml.name,Arctic Unicorn
+mounts,data/XML/mounts.xml,117,xml.name,Prismatic unicorn
+mounts,data/XML/mounts.xml,118,xml.name,Cranium Spider
+mounts,data/XML/mounts.xml,119,xml.name,Cave Tarantula
+mounts,data/XML/mounts.xml,120,xml.name,Gloom Widow
+mounts,data/XML/mounts.xml,121,xml.name,Mole
+mounts,data/XML/mounts.xml,122,xml.name,Marsh Toad
+mounts,data/XML/mounts.xml,123,xml.name,Sanguine Frog
+mounts,data/XML/mounts.xml,124,xml.name,Toxic Toad
+mounts,data/XML/mounts.xml,125,xml.name,Ebony Tiger
+mounts,data/XML/mounts.xml,126,xml.name,Feral Tiger
+mounts,data/XML/mounts.xml,127,xml.name,Jungle Tiger
+mounts,data/XML/mounts.xml,128,xml.name,Fleeting Knowledge
+mounts,data/XML/mounts.xml,129,xml.name,Tawny Owl
+mounts,data/XML/mounts.xml,130,xml.name,Snowy Owl
+mounts,data/XML/mounts.xml,131,xml.name,Boreal Owl
+mounts,data/XML/mounts.xml,132,xml.name,Lacewing Moth
+mounts,data/XML/mounts.xml,133,xml.name,Hibernal Moth
+mounts,data/XML/mounts.xml,134,xml.name,Cold Percht Sleigh
+mounts,data/XML/mounts.xml,135,xml.name,Bright Percht Sleigh
+mounts,data/XML/mounts.xml,136,xml.name,Dark Percht Sleigh
+mounts,data/XML/mounts.xml,137,xml.name,Festive Snowman
+mounts,data/XML/mounts.xml,138,xml.name,Muffled Snowman
+mounts,data/XML/mounts.xml,139,xml.name,Caped Snowman
+mounts,data/XML/mounts.xml,140,xml.name,Rabbit Rickshaw
+mounts,data/XML/mounts.xml,141,xml.name,Bunny Dray
+mounts,data/XML/mounts.xml,142,xml.name,Cony Cart
+mounts,data/XML/mounts.xml,143,xml.name,River Crocovile
+mounts,data/XML/mounts.xml,144,xml.name,Swamp Crocovile
+mounts,data/XML/mounts.xml,145,xml.name,Nightmarish Crocovile
+mounts,data/XML/mounts.xml,146,xml.name,Gryphon
+mounts,data/XML/mounts.xml,147,xml.name,Jousting Eagle
+mounts,data/XML/mounts.xml,148,xml.name,Cerberus Champion
+mounts,data/XML/mounts.xml,149,xml.name,Cold Percht Sleigh Variant
+mounts,data/XML/mounts.xml,150,xml.name,Bright Percht Sleigh Variant
+mounts,data/XML/mounts.xml,151,xml.name,Dark Percht Sleigh Variant
+mounts,data/XML/mounts.xml,152,xml.name,Cold Percht Sleigh Final
+mounts,data/XML/mounts.xml,153,xml.name,Bright Percht Sleigh Final
+mounts,data/XML/mounts.xml,154,xml.name,Dark Percht Sleigh Final
+mounts,data/XML/mounts.xml,155,xml.name,Battle Badger
+mounts,data/XML/mounts.xml,156,xml.name,Ether Badger
+mounts,data/XML/mounts.xml,157,xml.name,Zaoan Badger
+mounts,data/XML/mounts.xml,158,xml.name,Blue Rolling Barrel
+mounts,data/XML/mounts.xml,159,xml.name,Red Rolling Barrel
+mounts,data/XML/mounts.xml,160,xml.name,Green Rolling Barrel
+mounts,data/XML/mounts.xml,161,xml.name,Floating Sage
+mounts,data/XML/mounts.xml,162,xml.name,Floating Scholar
+mounts,data/XML/mounts.xml,163,xml.name,Floating Augur
+mounts,data/XML/mounts.xml,164,xml.name,Haze
+mounts,data/XML/mounts.xml,165,xml.name,Antelope
+mounts,data/XML/mounts.xml,166,xml.name,Snow Strider
+mounts,data/XML/mounts.xml,167,xml.name,Dusk Pryer
+mounts,data/XML/mounts.xml,168,xml.name,Dawn Strayer
+mounts,data/XML/mounts.xml,169,xml.name,Phantasmal Jade
+mounts,data/XML/mounts.xml,170,xml.name,Savanna Ostrich
+mounts,data/XML/mounts.xml,171,xml.name,Coral Rhea
+mounts,data/XML/mounts.xml,172,xml.name,Eventide Nandu
+mounts,data/XML/mounts.xml,173,xml.name,Voracious Hyaena
+mounts,data/XML/mounts.xml,174,xml.name,Cunning Hyaena
+mounts,data/XML/mounts.xml,175,xml.name,Scruffy Hyaena
+mounts,data/XML/mounts.xml,176,xml.name,White Lion
+mounts,data/XML/mounts.xml,177,xml.name,Krakoloss
+mounts,data/XML/mounts.xml,178,xml.name,Merry Mammoth
+mounts,data/XML/mounts.xml,179,xml.name,Holiday Mammoth
+mounts,data/XML/mounts.xml,180,xml.name,Festive Mammoth
+mounts,data/XML/mounts.xml,181,xml.name,Void Watcher
+mounts,data/XML/mounts.xml,182,xml.name,Rune Watcher
+mounts,data/XML/mounts.xml,183,xml.name,Rift Watcher
+mounts,data/XML/mounts.xml,184,xml.name,Phant
+mounts,data/XML/mounts.xml,185,xml.name,Shellodon
+mounts,data/XML/mounts.xml,186,xml.name,Singeing Steed
+mounts,data/XML/mounts.xml,187,xml.name,Hyacinth
+mounts,data/XML/mounts.xml,188,xml.name,Peony
+mounts,data/XML/mounts.xml,189,xml.name,Dandelion
+mounts,data/XML/mounts.xml,190,xml.name,Rustwurm
+mounts,data/XML/mounts.xml,191,xml.name,Bogwurm
+mounts,data/XML/mounts.xml,192,xml.name,Gloomwurm
+mounts,data/XML/mounts.xml,193,xml.name,Emerald Raven
+mounts,data/XML/mounts.xml,194,xml.name,Mystic Raven
+mounts,data/XML/mounts.xml,195,xml.name,Radiant Raven
+mounts,data/XML/mounts.xml,196,xml.name,Gloothomotive
+mounts,data/XML/mounts.xml,197,xml.name,Topaz Shrine
+mounts,data/XML/mounts.xml,198,xml.name,Jade Shrine
+mounts,data/XML/mounts.xml,199,xml.name,Obsidian Shrine
+mounts,data/XML/mounts.xml,200,xml.name,Poppy ibex
+mounts,data/XML/mounts.xml,201,xml.name,Mint ibex
+mounts,data/XML/mounts.xml,202,xml.name,Cinnamon ibex
+mounts,data/XML/mounts.xml,203,xml.name,Giant Beaver
+mounts,data/XML/mounts.xml,204,xml.name,Noxious Ripptor
+mounts,data/XML/mounts.xml,205,xml.name,Parade Horse
+mounts,data/XML/mounts.xml,206,xml.name,Jousting Horse
+mounts,data/XML/mounts.xml,207,xml.name,Tourney Horse
+mounts,data/XML/mounts.xml,208,xml.name,Mutated Abomination
+mounts,data/XML/mounts.xml,209,xml.name,Tangerine Flecked Koi
+mounts,data/XML/mounts.xml,210,xml.name,Brass Speckled Koi
+mounts,data/XML/mounts.xml,211,xml.name,Ink Spotted Koi
+mounts,data/XML/mounts.xml,212,xml.name,Frostbringer
+mounts,data/XML/mounts.xml,213,xml.name,Winterstride
+mounts,data/XML/mounts.xml,214,xml.name,Icebreacher
+mounts,data/XML/mounts.xml,215,xml.name,Boisterous Bull
+mounts,data/XML/mounts.xml,216,xml.name,Surly Steer
+mounts,data/XML/mounts.xml,217,xml.name,Obstinate Ox
+mounts,data/XML/mounts.xml,218,xml.name,Darkfire Devourer
+mounts,data/XML/mounts.xml,219,xml.name,Spirit of Purity
+mounts,data/XML/mounts.xml,220,xml.name,Foxmouse
+mounts,data/XML/mounts.xml,221,xml.name,Doom Skull
+mounts,data/XML/mounts.xml,222,xml.name,Magma Skull
+mounts,data/XML/mounts.xml,223,xml.name,Corpsefire Skull
+mounts,data/XML/mounts.xml,224,xml.name,Mystic Jaguar
+mounts,data/XML/mounts.xml,225,xml.name,Gorgon Hydra
+mounts,data/XML/mounts.xml,226,xml.name,Dawnbringer Pegasus
+mounts,data/XML/mounts.xml,227,xml.name,Wrathfire Pegasus
+mounts,data/XML/mounts.xml,228,xml.name,Skybreaker Pegasus
+mounts,data/XML/mounts.xml,229,xml.name,Pegasus
+mounts,data/XML/mounts.xml,230,xml.name,Glacier Wyrm
+mounts,data/XML/mounts.xml,231,xml.name,Bog Tyrant
+mounts,data/XML/mounts.xml,232,xml.name,Crimson Fang
+mounts,data/XML/mounts.xml,233,xml.name,Bumblebee
+mounts,data/XML/mounts.xml,234,xml.name,Primal Demonosaur
+mounts,data/XML/mounts.xml,235,xml.name,Night Locust
+mounts,data/XML/mounts.xml,236,xml.name,Leaf Locust
+mounts,data/XML/mounts.xml,237,xml.name,Pearl Locust
+mounts,data/XML/outfits.xml,4,xml.name,Citizen
+mounts,data/XML/outfits.xml,5,xml.name,Hunter
+mounts,data/XML/outfits.xml,6,xml.name,Mage
+mounts,data/XML/outfits.xml,7,xml.name,Knight
+mounts,data/XML/outfits.xml,8,xml.name,Noblewoman
+mounts,data/XML/outfits.xml,9,xml.name,Summoner
+mounts,data/XML/outfits.xml,10,xml.name,Warrior
+mounts,data/XML/outfits.xml,11,xml.name,Barbarian
+mounts,data/XML/outfits.xml,12,xml.name,Druid
+mounts,data/XML/outfits.xml,13,xml.name,Wizard
+mounts,data/XML/outfits.xml,14,xml.name,Oriental
+mounts,data/XML/outfits.xml,15,xml.name,Pirate
+mounts,data/XML/outfits.xml,16,xml.name,Assassin
+mounts,data/XML/outfits.xml,17,xml.name,Beggar
+mounts,data/XML/outfits.xml,18,xml.name,Shaman
+mounts,data/XML/outfits.xml,19,xml.name,Norsewoman
+mounts,data/XML/outfits.xml,20,xml.name,Nightmare
+mounts,data/XML/outfits.xml,21,xml.name,Jester
+mounts,data/XML/outfits.xml,22,xml.name,Brotherhood
+mounts,data/XML/outfits.xml,23,xml.name,Demon Hunter
+mounts,data/XML/outfits.xml,24,xml.name,Yalaharian
+mounts,data/XML/outfits.xml,25,xml.name,Newly Wed
+mounts,data/XML/outfits.xml,26,xml.name,Warmaster
+mounts,data/XML/outfits.xml,27,xml.name,Wayfarer
+mounts,data/XML/outfits.xml,28,xml.name,Afflicted
+mounts,data/XML/outfits.xml,29,xml.name,Elementalist
+mounts,data/XML/outfits.xml,30,xml.name,Deepling
+mounts,data/XML/outfits.xml,31,xml.name,Insectoid
+mounts,data/XML/outfits.xml,32,xml.name,Entrepreneur
+mounts,data/XML/outfits.xml,33,xml.name,Crystal Warlord
+mounts,data/XML/outfits.xml,34,xml.name,Soil Guardian
+mounts,data/XML/outfits.xml,35,xml.name,Demon
+mounts,data/XML/outfits.xml,36,xml.name,Cave Explorer
+mounts,data/XML/outfits.xml,37,xml.name,Dream Warden
+mounts,data/XML/outfits.xml,38,xml.name,Glooth Engineer
+mounts,data/XML/outfits.xml,39,xml.name,Jersey
+mounts,data/XML/outfits.xml,40,xml.name,Champion
+mounts,data/XML/outfits.xml,41,xml.name,Conjurer
+mounts,data/XML/outfits.xml,42,xml.name,Beastmaster
+mounts,data/XML/outfits.xml,43,xml.name,Chaos Acolyte
+mounts,data/XML/outfits.xml,44,xml.name,Death Herald
+mounts,data/XML/outfits.xml,45,xml.name,Ranger
+mounts,data/XML/outfits.xml,46,xml.name,Ceremonial Garb
+mounts,data/XML/outfits.xml,47,xml.name,Puppeteer
+mounts,data/XML/outfits.xml,48,xml.name,Spirit Caller
+mounts,data/XML/outfits.xml,49,xml.name,Evoker
+mounts,data/XML/outfits.xml,50,xml.name,Seaweaver
+mounts,data/XML/outfits.xml,51,xml.name,Recruiter
+mounts,data/XML/outfits.xml,52,xml.name,Sea Dog
+mounts,data/XML/outfits.xml,53,xml.name,Royal Pumpkin
+mounts,data/XML/outfits.xml,54,xml.name,Rift Warrior
+mounts,data/XML/outfits.xml,55,xml.name,Winter Warden
+mounts,data/XML/outfits.xml,56,xml.name,Philosopher
+mounts,data/XML/outfits.xml,57,xml.name,Arena Champion
+mounts,data/XML/outfits.xml,58,xml.name,Lupine Warden
+mounts,data/XML/outfits.xml,59,xml.name,Grove Keeper
+mounts,data/XML/outfits.xml,60,xml.name,Festive
+mounts,data/XML/outfits.xml,61,xml.name,Pharaoh
+mounts,data/XML/outfits.xml,62,xml.name,Trophy Hunter
+mounts,data/XML/outfits.xml,63,xml.name,Retro Warrior
+mounts,data/XML/outfits.xml,64,xml.name,Retro Summoner
+mounts,data/XML/outfits.xml,65,xml.name,Retro Noblewoman
+mounts,data/XML/outfits.xml,66,xml.name,Retro Mage
+mounts,data/XML/outfits.xml,67,xml.name,Retro Knight
+mounts,data/XML/outfits.xml,68,xml.name,Retro Hunter
+mounts,data/XML/outfits.xml,69,xml.name,Retro Citizen
+mounts,data/XML/outfits.xml,70,xml.name,Herbalist
+mounts,data/XML/outfits.xml,71,xml.name,Sun Priest
+mounts,data/XML/outfits.xml,72,xml.name,Makeshift Warrior
+mounts,data/XML/outfits.xml,73,xml.name,Siege Master
+mounts,data/XML/outfits.xml,74,xml.name,Mercenary
+mounts,data/XML/outfits.xml,75,xml.name,Battle Mage
+mounts,data/XML/outfits.xml,76,xml.name,Discoverer
+mounts,data/XML/outfits.xml,77,xml.name,Sinister Archer
+mounts,data/XML/outfits.xml,78,xml.name,Pumpkin Mummy
+mounts,data/XML/outfits.xml,79,xml.name,Dream Warrior
+mounts,data/XML/outfits.xml,80,xml.name,Percht Raider
+mounts,data/XML/outfits.xml,81,xml.name,Owl Keeper
+mounts,data/XML/outfits.xml,82,xml.name,Guidon Bearer
+mounts,data/XML/outfits.xml,83,xml.name,Void Master
+mounts,data/XML/outfits.xml,84,xml.name,Veteran Paladin
+mounts,data/XML/outfits.xml,85,xml.name,Lion of War
+mounts,data/XML/outfits.xml,86,xml.name,Golden
+mounts,data/XML/outfits.xml,87,xml.name,Hand of the Inquisition
+mounts,data/XML/outfits.xml,88,xml.name,Breezy Garb
+mounts,data/XML/outfits.xml,89,xml.name,Orcsoberfest Garb
+mounts,data/XML/outfits.xml,90,xml.name,Poltergeist
+mounts,data/XML/outfits.xml,91,xml.name,Herder
+mounts,data/XML/outfits.xml,92,xml.name,Falconer
+mounts,data/XML/outfits.xml,93,xml.name,Dragon Slayer
+mounts,data/XML/outfits.xml,94,xml.name,Trailblazer
+mounts,data/XML/outfits.xml,95,xml.name,Revenant
+mounts,data/XML/outfits.xml,96,xml.name,Jouster
+mounts,data/XML/outfits.xml,97,xml.name,Moth Cape
+mounts,data/XML/outfits.xml,98,xml.name,Rascoohan
+mounts,data/XML/outfits.xml,99,xml.name,Merry Garb
+mounts,data/XML/outfits.xml,100,xml.name,Rune Master
+mounts,data/XML/outfits.xml,101,xml.name,Citizen of Issavi
+mounts,data/XML/outfits.xml,102,xml.name,Forest Warden
+mounts,data/XML/outfits.xml,103,xml.name,Royal Bounacean Advisor
+mounts,data/XML/outfits.xml,104,xml.name,Dragon Knight
+mounts,data/XML/outfits.xml,105,xml.name,Arbalester
+mounts,data/XML/outfits.xml,106,xml.name,Royal Costume
+mounts,data/XML/outfits.xml,107,xml.name,Formal Dress
+mounts,data/XML/outfits.xml,108,xml.name,Ghost Blade
+mounts,data/XML/outfits.xml,109,xml.name,Nordic Chieftain
+mounts,data/XML/outfits.xml,110,xml.name,Fire-Fighter
+mounts,data/XML/outfits.xml,111,xml.name,Fencer
+mounts,data/XML/outfits.xml,112,xml.name,Shadowlotus Disciple
+mounts,data/XML/outfits.xml,113,xml.name,Ancient Aucar
+mounts,data/XML/outfits.xml,114,xml.name,Frost Tracer
+mounts,data/XML/outfits.xml,115,xml.name,Armoured Archer
+mounts,data/XML/outfits.xml,116,xml.name,Decaying Defender
+mounts,data/XML/outfits.xml,117,xml.name,Darklight Evoker
+mounts,data/XML/outfits.xml,118,xml.name,Flamefury Mage
+mounts,data/XML/outfits.xml,119,xml.name,Doom Knight
+mounts,data/XML/outfits.xml,120,xml.name,Draccoon Herald
+mounts,data/XML/outfits.xml,121,xml.name,Celestial Avenger
+mounts,data/XML/outfits.xml,122,xml.name,Blade Dancer
+mounts,data/XML/outfits.xml,123,xml.name,Rootwalker
+mounts,data/XML/outfits.xml,124,xml.name,Beekeeper
+mounts,data/XML/outfits.xml,125,xml.name,Fiend Slayer
+mounts,data/XML/outfits.xml,126,xml.name,Winged Druid
+mounts,data/XML/outfits.xml,129,xml.name,Citizen
+mounts,data/XML/outfits.xml,130,xml.name,Hunter
+mounts,data/XML/outfits.xml,131,xml.name,Mage
+mounts,data/XML/outfits.xml,132,xml.name,Knight
+mounts,data/XML/outfits.xml,133,xml.name,Nobleman
+mounts,data/XML/outfits.xml,134,xml.name,Summoner
+mounts,data/XML/outfits.xml,135,xml.name,Warrior
+mounts,data/XML/outfits.xml,136,xml.name,Barbarian
+mounts,data/XML/outfits.xml,137,xml.name,Druid
+mounts,data/XML/outfits.xml,138,xml.name,Wizard
+mounts,data/XML/outfits.xml,139,xml.name,Oriental
+mounts,data/XML/outfits.xml,140,xml.name,Pirate
+mounts,data/XML/outfits.xml,141,xml.name,Assassin
+mounts,data/XML/outfits.xml,142,xml.name,Beggar
+mounts,data/XML/outfits.xml,143,xml.name,Shaman
+mounts,data/XML/outfits.xml,144,xml.name,Norseman
+mounts,data/XML/outfits.xml,145,xml.name,Nightmare
+mounts,data/XML/outfits.xml,146,xml.name,Jester
+mounts,data/XML/outfits.xml,147,xml.name,Brotherhood
+mounts,data/XML/outfits.xml,148,xml.name,Demon Hunter
+mounts,data/XML/outfits.xml,149,xml.name,Yalaharian
+mounts,data/XML/outfits.xml,150,xml.name,Newly Wed
+mounts,data/XML/outfits.xml,151,xml.name,Warmaster
+mounts,data/XML/outfits.xml,152,xml.name,Wayfarer
+mounts,data/XML/outfits.xml,153,xml.name,Afflicted
+mounts,data/XML/outfits.xml,154,xml.name,Elementalist
+mounts,data/XML/outfits.xml,155,xml.name,Deepling
+mounts,data/XML/outfits.xml,156,xml.name,Insectoid
+mounts,data/XML/outfits.xml,157,xml.name,Entrepreneur
+mounts,data/XML/outfits.xml,158,xml.name,Crystal Warlord
+mounts,data/XML/outfits.xml,159,xml.name,Soil Guardian
+mounts,data/XML/outfits.xml,160,xml.name,Demon
+mounts,data/XML/outfits.xml,161,xml.name,Cave Explorer
+mounts,data/XML/outfits.xml,162,xml.name,Dream Warden
+mounts,data/XML/outfits.xml,163,xml.name,Glooth Engineer
+mounts,data/XML/outfits.xml,164,xml.name,Jersey
+mounts,data/XML/outfits.xml,165,xml.name,Champion
+mounts,data/XML/outfits.xml,166,xml.name,Conjurer
+mounts,data/XML/outfits.xml,167,xml.name,Beastmaster
+mounts,data/XML/outfits.xml,168,xml.name,Chaos Acolyte
+mounts,data/XML/outfits.xml,169,xml.name,Death Herald
+mounts,data/XML/outfits.xml,170,xml.name,Ranger
+mounts,data/XML/outfits.xml,171,xml.name,Ceremonial Garb
+mounts,data/XML/outfits.xml,172,xml.name,Puppeteer
+mounts,data/XML/outfits.xml,173,xml.name,Spirit Caller
+mounts,data/XML/outfits.xml,174,xml.name,Evoker
+mounts,data/XML/outfits.xml,175,xml.name,Seaweaver
+mounts,data/XML/outfits.xml,176,xml.name,Recruiter
+mounts,data/XML/outfits.xml,177,xml.name,Sea Dog
+mounts,data/XML/outfits.xml,178,xml.name,Royal Pumpkin
+mounts,data/XML/outfits.xml,179,xml.name,Rift Warrior
+mounts,data/XML/outfits.xml,180,xml.name,Winter Warden
+mounts,data/XML/outfits.xml,181,xml.name,Philosopher
+mounts,data/XML/outfits.xml,182,xml.name,Arena Champion
+mounts,data/XML/outfits.xml,183,xml.name,Lupine Warden
+mounts,data/XML/outfits.xml,184,xml.name,Grove Keeper
+mounts,data/XML/outfits.xml,185,xml.name,Festive
+mounts,data/XML/outfits.xml,186,xml.name,Pharaoh
+mounts,data/XML/outfits.xml,187,xml.name,Trophy Hunter
+mounts,data/XML/outfits.xml,188,xml.name,Retro Warrior
+mounts,data/XML/outfits.xml,189,xml.name,Retro Summoner
+mounts,data/XML/outfits.xml,190,xml.name,Retro Nobleman
+mounts,data/XML/outfits.xml,191,xml.name,Retro Mage
+mounts,data/XML/outfits.xml,192,xml.name,Retro Knight
+mounts,data/XML/outfits.xml,193,xml.name,Retro Hunter
+mounts,data/XML/outfits.xml,194,xml.name,Retro Citizen
+mounts,data/XML/outfits.xml,195,xml.name,Herbalist
+mounts,data/XML/outfits.xml,196,xml.name,Sun Priest
+mounts,data/XML/outfits.xml,197,xml.name,Makeshift Warrior
+mounts,data/XML/outfits.xml,198,xml.name,Siege Master
+mounts,data/XML/outfits.xml,199,xml.name,Mercenary
+mounts,data/XML/outfits.xml,200,xml.name,Battle Mage
+mounts,data/XML/outfits.xml,201,xml.name,Discoverer
+mounts,data/XML/outfits.xml,202,xml.name,Sinister Archer
+mounts,data/XML/outfits.xml,203,xml.name,Pumpkin Mummy
+mounts,data/XML/outfits.xml,204,xml.name,Dream Warrior
+mounts,data/XML/outfits.xml,205,xml.name,Percht Raider
+mounts,data/XML/outfits.xml,206,xml.name,Owl Keeper
+mounts,data/XML/outfits.xml,207,xml.name,Guidon Bearer
+mounts,data/XML/outfits.xml,208,xml.name,Void Master
+mounts,data/XML/outfits.xml,209,xml.name,Veteran Paladin
+mounts,data/XML/outfits.xml,210,xml.name,Lion of War
+mounts,data/XML/outfits.xml,211,xml.name,Golden
+mounts,data/XML/outfits.xml,212,xml.name,Hand of the Inquisition
+mounts,data/XML/outfits.xml,213,xml.name,Breezy Garb
+mounts,data/XML/outfits.xml,214,xml.name,Orcsoberfest Garb
+mounts,data/XML/outfits.xml,215,xml.name,Poltergeist
+mounts,data/XML/outfits.xml,216,xml.name,Herder
+mounts,data/XML/outfits.xml,217,xml.name,Falconer
+mounts,data/XML/outfits.xml,218,xml.name,Dragon Slayer
+mounts,data/XML/outfits.xml,219,xml.name,Trailblazer
+mounts,data/XML/outfits.xml,220,xml.name,Revenant
+mounts,data/XML/outfits.xml,221,xml.name,Jouster
+mounts,data/XML/outfits.xml,222,xml.name,Moth Cape
+mounts,data/XML/outfits.xml,223,xml.name,Rascoohan
+mounts,data/XML/outfits.xml,224,xml.name,Merry Garb
+mounts,data/XML/outfits.xml,225,xml.name,Rune Master
+mounts,data/XML/outfits.xml,226,xml.name,Citizen of Issavi
+mounts,data/XML/outfits.xml,227,xml.name,Forest Warden
+mounts,data/XML/outfits.xml,228,xml.name,Royal Bounacean Advisor
+mounts,data/XML/outfits.xml,229,xml.name,Dragon Knight
+mounts,data/XML/outfits.xml,230,xml.name,Arbalester
+mounts,data/XML/outfits.xml,231,xml.name,Royal Costume
+mounts,data/XML/outfits.xml,232,xml.name,Formal Dress
+mounts,data/XML/outfits.xml,233,xml.name,Ghost Blade
+mounts,data/XML/outfits.xml,234,xml.name,Nordic Chieftain
+mounts,data/XML/outfits.xml,235,xml.name,Fire-Fighter
+mounts,data/XML/outfits.xml,236,xml.name,Fencer
+mounts,data/XML/outfits.xml,237,xml.name,Shadowlotus Disciple
+mounts,data/XML/outfits.xml,238,xml.name,Ancient Aucar
+mounts,data/XML/outfits.xml,239,xml.name,Frost Tracer
+mounts,data/XML/outfits.xml,240,xml.name,Armoured Archer
+mounts,data/XML/outfits.xml,241,xml.name,Decaying Defender
+mounts,data/XML/outfits.xml,242,xml.name,Darklight Evoker
+mounts,data/XML/outfits.xml,243,xml.name,Flamefury Mage
+mounts,data/XML/outfits.xml,244,xml.name,Doom Knight
+mounts,data/XML/outfits.xml,245,xml.name,Draccoon Herald
+mounts,data/XML/outfits.xml,246,xml.name,Celestial Avenger
+mounts,data/XML/outfits.xml,247,xml.name,Blade Dancer
+mounts,data/XML/outfits.xml,248,xml.name,Rootwalker
+mounts,data/XML/outfits.xml,249,xml.name,Beekeeper
+mounts,data/XML/outfits.xml,250,xml.name,Fiend Slayer
+mounts,data/XML/outfits.xml,251,xml.name,Winged Druid
+mounts,data/XML/vocations.xml,15,xml.description,a sorcerer
+mounts,data/XML/vocations.xml,15,xml.name,Sorcerer
+mounts,data/XML/vocations.xml,27,xml.description,a druid
+mounts,data/XML/vocations.xml,27,xml.name,Druid
+mounts,data/XML/vocations.xml,39,xml.description,a paladin
+mounts,data/XML/vocations.xml,39,xml.name,Paladin
+mounts,data/XML/vocations.xml,51,xml.description,a knight
+mounts,data/XML/vocations.xml,51,xml.name,Knight
+mounts,data/XML/vocations.xml,63,xml.description,a master sorcerer
+mounts,data/XML/vocations.xml,63,xml.name,Master Sorcerer
+mounts,data/XML/vocations.xml,74,xml.name,lesser sage gem
+mounts,data/XML/vocations.xml,75,xml.name,sage gem
+mounts,data/XML/vocations.xml,76,xml.name,greater sage gem
+mounts,data/XML/vocations.xml,78,xml.description,an elder druid
+mounts,data/XML/vocations.xml,78,xml.name,Elder Druid
+mounts,data/XML/vocations.xml,89,xml.name,lesser mystic gem
+mounts,data/XML/vocations.xml,90,xml.name,mystic gem
+mounts,data/XML/vocations.xml,91,xml.name,greater mystic gem
+mounts,data/XML/vocations.xml,93,xml.description,a royal paladin
+mounts,data/XML/vocations.xml,93,xml.name,Royal Paladin
+mounts,data/XML/vocations.xml,104,xml.name,lesser marksman gem
+mounts,data/XML/vocations.xml,105,xml.name,marksman gem
+mounts,data/XML/vocations.xml,106,xml.name,greater marksman gem
+mounts,data/XML/vocations.xml,108,xml.description,an elite knight
+mounts,data/XML/vocations.xml,108,xml.name,Elite Knight
+mounts,data/XML/vocations.xml,119,xml.name,lesser guardian gem
+mounts,data/XML/vocations.xml,120,xml.name,guardian gem
+mounts,data/XML/vocations.xml,121,xml.name,greater guardian gem

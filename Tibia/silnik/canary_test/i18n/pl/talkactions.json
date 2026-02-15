@@ -126,7 +126,7 @@
   "talkaction.god.icons.msg_playericon_usage": "[EN] Usage: /playericon {icon_id}, {quantity}, {direction (optional: up/down)}",
   "talkaction.god.ip_ban.msg_already_banned": "{name} ma już bana IP.",
   "talkaction.god.ip_ban.msg_banned": "{name} otrzymał bana IP.",
-  "talkaction.god.kv.msg_allkv_value": "[EN] kv[{key}] = {value}",
+  "talkaction.god.kv.msg_allkv_value": "kv[{key}] = {value}",
   "talkaction.god.kv.msg_cooldown_cleared": "Czas odnowienia bossa dla {boss} został usunięty.",
   "talkaction.god.kv.msg_key_not_found": "Nie znaleziono klucza {key} dla {name}.",
   "talkaction.god.kv.msg_player_invalid": "Nie znaleziono gracza '{name}' lub nie jest prawidłowym graczem.",

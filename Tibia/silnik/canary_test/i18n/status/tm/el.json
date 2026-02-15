@@ -457,27 +457,27 @@
   },
   "npc.a_behemoth.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Κράτα το κάτω! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Κράτα το κάτω! <σας δίνει μια περίπλοκη αναφορά για τη δραστηριότητα των τεράτων>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T01:22:39.253474Z"
+    "updated_at": "2026-02-15T13:22:55.233647Z"
   },
   "npc.a_behemoth.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Κράτα το κάτω! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Κράτα το κάτω! <σας δίνει μια περίπλοκη αναφορά για τη δραστηριότητα των τεράτων>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T01:22:39.254308Z"
+    "updated_at": "2026-02-15T13:22:55.234224Z"
   },
   "npc.a_behemoth.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Κράτα το κάτω! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Κράτα το κάτω! <σας δίνει μια περίπλοκη αναφορά για τη δραστηριότητα των τεράτων>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T01:22:39.255086Z"
+    "updated_at": "2026-02-15T13:22:55.234819Z"
   },
   "npc.a_dead_bureaucrat.greet_msg_1": {
     "src_hash": "1fb51950fc35d0b9f7979cbb0fff81b2",
@@ -1905,67 +1905,67 @@
   },
   "npc.a_dragon_lord.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Κράτα το κάτω! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Pssst! Κράτα το κάτω! <σας δίνει μια περίπλοκη αναφορά για τη δραστηριότητα των τεράτων>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:26:08.151677Z"
+    "updated_at": "2026-02-15T13:22:58.393358Z"
   },
   "npc.a_dragon_lord.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Κράτα το κάτω! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Pssst! Κράτα το κάτω! <σας δίνει μια περίπλοκη αναφορά για τη δραστηριότητα των τεράτων>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:26:08.152470Z"
+    "updated_at": "2026-02-15T13:22:58.393878Z"
   },
   "npc.a_dragon_lord.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Κράτα το κάτω! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Pssst! Κράτα το κάτω! <σας δίνει μια περίπλοκη αναφορά για τη δραστηριότητα των τεράτων>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:26:08.153237Z"
+    "updated_at": "2026-02-15T13:23:01.833687Z"
   },
   "npc.a_drillworm.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Κράτα το κάτω! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Pssst! Κράτα το κάτω! <σας δίνει μια περίπλοκη αναφορά για τη δραστηριότητα των τεράτων>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:26:08.154151Z"
+    "updated_at": "2026-02-15T13:23:01.834226Z"
   },
   "npc.a_drillworm.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Κράτα το κάτω! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Pssst! Κράτα το κάτω! <σας δίνει μια περίπλοκη αναφορά για τη δραστηριότητα των τεράτων>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:26:08.154953Z"
+    "updated_at": "2026-02-15T13:23:01.834824Z"
   },
   "npc.a_drillworm.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Κράτα το κάτω! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Pssst! Κράτα το κάτω! <σας δίνει μια περίπλοκη αναφορά για τη δραστηριότητα των τεράτων>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:26:08.155665Z"
+    "updated_at": "2026-02-15T13:23:01.835347Z"
   },
   "npc.a_lost_basher.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Κράτα το κάτω! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Κράτα το κάτω! <σας δίνει μια περίπλοκη αναφορά για τη δραστηριότητα των τεράτων>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T06:26:08.157001Z"
+    "updated_at": "2026-02-15T13:30:10.663575Z"
   },
   "npc.a_lost_basher.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Κράτα το κάτω! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Κράτα το κάτω! <σας δίνει μια περίπλοκη αναφορά για τη δραστηριότητα των τεράτων>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T06:26:08.157704Z"
+    "updated_at": "2026-02-15T13:39:14.535671Z"
   },
   "npc.a_lost_basher.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
@@ -2273,11 +2273,11 @@
   },
   "npc.a_fluffy_squirrel.sendtrade_msg_1": {
     "src_hash": "03c8f51bfe7975b94ce3c76ec9647116",
-    "text": "Chchch. Τσχ! <you're not sure, but it seems that squirrel wants to trade your valuable acorns for useless stones that it found and considered uneatable>",
+    "text": "Chchch. Τσχ! <δεν είστε σίγουροι, αλλά φαίνεται ότι ο σκίουρος θέλει να ανταλλάξει τα πολύτιμα βελανίδια σας με άχρηστες πέτρες που βρήκε και θεωρούσε άφαγες>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:26:35.565719Z"
+    "updated_at": "2026-02-15T13:23:06.917460Z"
   },
   "npc.a_fluffy_squirrel.stdmod_1": {
     "src_hash": "ac2f68634467394485198b5db1d3f7a3",
@@ -4198,5 +4198,453 @@
     "confidence": 0.996,
     "verified": false,
     "updated_at": "2026-02-14T13:24:43.363915Z"
+  },
+  "npc.a_dead_bureaucrat1.voice_2": {
+    "src_hash": "e77105e8c04ed0b00ebdea90f9e4463c",
+    "text": "Χαίρε Πούμιν. Ναι, χαλάζι.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:22:55.235567Z"
+  },
+  "npc.a_dead_bureaucrat2.voice_2": {
+    "src_hash": "e77105e8c04ed0b00ebdea90f9e4463c",
+    "text": "Χαίρε Πούμιν. Ναι, χαλάζι.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:22:58.392141Z"
+  },
+  "npc.a_dead_bureaucrat3.voice_2": {
+    "src_hash": "e77105e8c04ed0b00ebdea90f9e4463c",
+    "text": "Χαίρε Πούμιν. Ναι, χαλάζι.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:22:58.392479Z"
+  },
+  "npc.a_dead_bureaucrat4.voice_2": {
+    "src_hash": "e77105e8c04ed0b00ebdea90f9e4463c",
+    "text": "Χαίρε Πούμιν. Ναι, χαλάζι.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:22:58.392831Z"
+  },
+  "npc.a_fluffy_squirrel.farewell_msg_1": {
+    "src_hash": "0d0fa573b6610b79f1936f9a9fc407ac",
+    "text": "Τσχ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:23:01.835550Z"
+  },
+  "npc.a_fluffy_squirrel.walkaway_msg_1": {
+    "src_hash": "0d0fa573b6610b79f1936f9a9fc407ac",
+    "text": "Τσχ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:23:06.918422Z"
+  },
+  "npc.a_ghostly_sage.walkaway_msg_1": {
+    "src_hash": "dd4dd73f3c2fe38f2d02c9b2a246f3ce",
+    "text": "Αντίο τότε.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:23:08.936949Z"
+  },
+  "item.10009.desc": {
+    "src_hash": "d6e8d0836a63a26392d689c7e7f1cd35",
+    "text": "Ιδανικό για γυάλισμα στεφάνων",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:26:42.142531Z"
+  },
+  "item.10011.desc": {
+    "src_hash": "0c89d4a7562be561508dcd41a4be52fb",
+    "text": "Εκτιμάται τόσο από τυχοδιώκτες όσο και από εξερευνητές",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:26:42.143353Z"
+  },
+  "item.10025.desc": {
+    "src_hash": "3c12c5e5ba3c1bb82f1566b16ee17538",
+    "text": "Ανεκτίμητη για όλες τις μαγικές έρευνες",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:26:42.143797Z"
+  },
+  "item.10026.desc": {
+    "src_hash": "c903c382d7d46dd93bae60aad16479a9",
+    "text": "Φαίνεται πεινασμένο",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:26:42.144079Z"
+  },
+  "item.10027.desc": {
+    "src_hash": "2c09165c1d4ae2e6a5e1f2135c83b723",
+    "text": "Το εργαλείο επιλογής για κάθε gadgeteer",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:26:42.144463Z"
+  },
+  "item.10028.desc": {
+    "src_hash": "0020afc44d9d284397e941e6386940db",
+    "text": "Ένα συμβόλαιο στο οποίο κάποιος απελπισμένος έχει πουλήσει την ψυχή του",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:26:46.998538Z"
+  },
+  "item.10159.desc": {
+    "src_hash": "b7366edafc0bd113da5467c420cc0e40",
+    "text": "Κάποτε ανήκε σε έναν πρόγονο του Λαζαρά. Προφανώς είχε πολύ άσχημα δόντια",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:26:46.999060Z"
+  },
+  "item.10183.desc": {
+    "src_hash": "ce781ba138e3fa2c9204d1340ba90409",
+    "text": "Αυτό το δηλητήριο έχει σκοπό να αποδυναμώσει τον εχθρό και πρέπει να χρησιμοποιηθεί στους ορυζώνες κοντά στο Chaochai",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:26:46.999755Z"
+  },
+  "item.10184.desc": {
+    "src_hash": "2828b3fef703beeeedd8f585b3d35387",
+    "text": "Ένας χάρτης που δείχνει πρόσφατες κινήσεις στρατευμάτων και τακτικές οδηγίες τμημάτων του στρατού του Αυτοκράτορα",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:26:47.000371Z"
+  },
+  "item.10187.desc": {
+    "src_hash": "c2596ec962af99a689fcd635d8a32325",
+    "text": "Ένα εξαιρετικά σπάνιο κρύσταλλο που ανακτήσατε από τα Χαμένα Ορυχεία.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:26:47.000843Z"
+  },
+  "item.10189.desc": {
+    "src_hash": "c46a6c5117ed081cf2455efc7bee019a",
+    "text": "Έξτρα λιπαρό λάδι από την αποθήκευση Zalamon",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:26:51.459611Z"
+  },
+  "item.10198.desc": {
+    "src_hash": "53bce793b3d2a7c30981d12fb5420c6b",
+    "text": "Αυτό το έμβλημα φαίνεται σημαντικό. Δεν πρέπει να το χάσεις",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:26:51.460100Z"
+  },
+  "item.10199.desc": {
+    "src_hash": "53bce793b3d2a7c30981d12fb5420c6b",
+    "text": "Αυτό το έμβλημα φαίνεται σημαντικό. Δεν πρέπει να το χάσεις",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:26:51.460556Z"
+  },
+  "item.10207.desc": {
+    "src_hash": "7f2103a12e6c4c48b7f9b7c02d92934f",
+    "text": "Χρησιμοποιήστε το στο σπίτι σας για να αποκαλύψετε έναν χιονάνθρωπο",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:26:51.461013Z"
+  },
+  "item.10208.desc": {
+    "src_hash": "4f5cd6643195047c2a1a94b1306baa22",
+    "text": "Κάποιος φαίνεται ότι διασκέδασε πολύ να το διακοσμήσει.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:26:51.461461Z"
+  },
+  "item.10209.desc": {
+    "src_hash": "efcad34d251c0a3866a9744ef41df9b0",
+    "text": "Χρησιμοποιήστε το στο σπίτι σας για να κατασκευάσετε ράφι όπλων σαύρας",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:26:55.886513Z"
+  },
+  "item.10216.desc": {
+    "src_hash": "f5983fdd8fd2e2fc1c22faaa80439f68",
+    "text": "Χρησιμοποιήστε το στο σπίτι σας για να φτιάξετε ένα άγαλμα δράκου",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:26:55.886994Z"
+  },
+  "item.10217.desc": {
+    "src_hash": "95fc558d85dc30bac93a98ad1a8bd42f",
+    "text": "Φέρτε αυτό το κρυπτογραφημένο βιβλίο σε έναν σοφό στο Farmine για να αποκτήσει σοφία ή να ξεκλειδώσει περισσότερο τον πολιτισμό του Ζάο",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:26:55.887816Z"
+  },
+  "item.10218.desc": {
+    "src_hash": "4277fbe6c944de4097a47b4cc39005bc",
+    "text": "Αυτό το ψάρι έχει αλατιστεί και έχει ήδη προετοιμαστεί ως προμήθεια για τους στρατιώτες",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:26:55.888370Z"
+  },
+  "item.10247.desc": {
+    "src_hash": "79a4b5069fcbc4556ba7782cd0240de7",
+    "text": "Αυτό το κλουβί περιέχει ένα σετ όπλων",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:26:55.888781Z"
+  },
+  "item.10281.desc": {
+    "src_hash": "9c4b74be7487196c0154c7fa2fd4c87e",
+    "text": "Φαίνεται αρκετά δηλητηριώδες, οπότε δεν είναι καλή επιλογή για ένα γεύμα",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:27:00.387161Z"
+  },
+  "item.10288.desc": {
+    "src_hash": "353e14b2a3f813f1fb537fbaeec1166f",
+    "text": "Χρησιμοποιήστε το στο σπίτι σας για να φτιάξετε έναν θρόνο δράκου",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:27:00.387662Z"
+  },
+  "item.10310.desc": {
+    "src_hash": "54c0829bb824b2efd5badf352c95c231",
+    "text": "Κάτι πολύτιμο μπορεί να σφραγιστεί σε αυτό",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:27:00.388058Z"
+  },
+  "item.10327.name": {
+    "src_hash": "48eaac8ad0968067e11a82a3b5be2c77",
+    "text": "σακίδιο μινώταυρου",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:27:00.388333Z"
+  },
+  "item.10328.name": {
+    "src_hash": "aeb243f8b7ef666cea312e9a74a0263d",
+    "text": "μάτσο ώριμο ρύζι",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:27:00.388603Z"
+  },
+  "item.10329.name": {
+    "src_hash": "22f46e83d061e0b5a2f3c98e18cbdf1f",
+    "text": "μπάλα ρυζιού",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:34:32.182189Z"
+  },
+  "item.10330.name": {
+    "src_hash": "e21da8d48c54f87221c2a8a7bce7fb07",
+    "text": "νεκρό κυνηγόσκυλο",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:34:32.182893Z"
+  },
+  "item.10331.name": {
+    "src_hash": "e21da8d48c54f87221c2a8a7bce7fb07",
+    "text": "νεκρό κυνηγόσκυλο",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:34:32.183450Z"
+  },
+  "item.10332.name": {
+    "src_hash": "e21da8d48c54f87221c2a8a7bce7fb07",
+    "text": "νεκρό κυνηγόσκυλο",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:34:32.183950Z"
+  },
+  "item.10333.name": {
+    "src_hash": "e21da8d48c54f87221c2a8a7bce7fb07",
+    "text": "νεκρό κυνηγόσκυλο",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:34:32.184422Z"
+  },
+  "item.10334.name": {
+    "src_hash": "959ce8c7e2a761366662cf50e48fffc8",
+    "text": "νεκρός επιδρομέας ορκ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:34:36.275042Z"
+  },
+  "item.10335.name": {
+    "src_hash": "959ce8c7e2a761366662cf50e48fffc8",
+    "text": "νεκρός επιδρομέας ορκ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:34:36.275408Z"
+  },
+  "item.10336.name": {
+    "src_hash": "00574753828ebd4a8328210d1a29c015",
+    "text": "μεγάλος σωρός οστών",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:34:36.275698Z"
+  },
+  "item.10337.name": {
+    "src_hash": "959ce8c7e2a761366662cf50e48fffc8",
+    "text": "νεκρός επιδρομέας ορκ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:34:36.275978Z"
+  },
+  "item.10338.name": {
+    "src_hash": "5eb2ca52dc59da581fca5b25e579ac8b",
+    "text": "Άγιος Βασίλης",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:34:36.276215Z"
+  },
+  "item.10339.name": {
+    "src_hash": "566623d8747d4935f19d3c8362cd3a58",
+    "text": "κούκλα χιονάνθρωπος",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:34:40.638537Z"
+  },
+  "item.10340.name": {
+    "src_hash": "64917692a7bedf176cceae410ee11da9",
+    "text": "βαριά μπάλα",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:34:40.638791Z"
+  },
+  "item.10341.desc": {
+    "src_hash": "e408525d9e7f310b0d2eac9e0d8251f0",
+    "text": "Η Σπίθα του Φοίνικα περιέχεται σε αυτήν",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:34:40.639339Z"
+  },
+  "item.10341.name": {
+    "src_hash": "fd84dd09008911525e1746d9bec49f1c",
+    "text": "γούρι του φοίνικα",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:34:40.639607Z"
+  },
+  "item.10342.desc": {
+    "src_hash": "ee84f406d5c15014e49371ad87c9d2de",
+    "text": "Η αγκαλιά του Tibia περιέχεται σε αυτό",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:34:40.640171Z"
+  },
+  "item.10342.name": {
+    "src_hash": "04a9ca5419cb100469a57513e556202c",
+    "text": "γοητεία ενότητας",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:34:44.563584Z"
+  },
+  "item.10343.desc": {
+    "src_hash": "2b1e8854868003f233139b0d72613a37",
+    "text": "Η Πνευματική Θωράκιση περιέχεται σε αυτήν",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:34:44.564556Z"
+  },
+  "item.10343.name": {
+    "src_hash": "171b741cf342af4a9f9d241e4286ccf6",
+    "text": "πνευματική γοητεία",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:34:44.564857Z"
+  },
+  "item.10344.name": {
+    "src_hash": "60eb3ca3c3f46a5099b3491c38ef0c1c",
+    "text": "γούρι με δίδυμο ήλιο",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:34:44.565583Z"
+  },
+  "item.10345.desc": {
+    "src_hash": "796d1564ac7ae48945d726ab90782b3e",
+    "text": "Η Σοφία της Μοναξιάς περιέχεται σε αυτό",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:34:49.211690Z"
+  },
+  "item.10345.name": {
+    "src_hash": "742808b0c9bfa77bd5afb7854bd9941a",
+    "text": "γοητεία μοναξιάς",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:34:49.211970Z"
+  },
+  "item.10346.name": {
+    "src_hash": "eaea1d7900d2ab6609b09851d135b4fc",
+    "text": "σακίδιο πλάτης Άγιος Βασίλης",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:34:49.212261Z"
+  },
+  "item.10347.name": {
+    "src_hash": "924bf7dd060accc008c33cd6cbe3ea15",
+    "text": "ταπετσαρία δράκου",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:34:49.212523Z"
+  },
+  "item.10352.name": {
+    "src_hash": "dc444778e263446b46a238da2a40cf90",
+    "text": "νεκρή σαύρα υψηλή φρουρά",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:34:49.212830Z"
   }
 }

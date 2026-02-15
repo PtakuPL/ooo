@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-14T20:14:10.240859Z",
+  "timestamp": "2026-02-15T09:45:22.928210Z",
   "en_total_keys": 53586,
   "global_quality_mode": true,
   "quality_score_target": 100.0,
@@ -10,7 +10,7 @@
         "es",
         "pl"
       ],
-      "avg_coverage": 60.1,
+      "avg_coverage": 83.8,
       "target": 100,
       "gate_pass": false,
       "langs_passing": 0,
@@ -22,13 +22,13 @@
       "critical_target_max": 0,
       "lang_details": {
         "es": {
-          "coverage": 73.9,
-          "coverage_genuine": 71.9,
-          "identical_to_en_exempt": 1068,
+          "coverage": 81.7,
+          "coverage_genuine": 79.5,
+          "identical_to_en_exempt": 1188,
           "target": 100,
           "gate_pass": false,
           "coverage_pass": false,
-          "guard_fail_rate": 12.7,
+          "guard_fail_rate": 59.0,
           "quality_available": true,
           "quality_score": 99.9,
           "quality_score_target": 100.0,
@@ -37,17 +37,17 @@
           "quality_gate_pass": false
         },
         "pl": {
-          "coverage": 46.2,
-          "coverage_genuine": 44.4,
-          "identical_to_en_exempt": 947,
+          "coverage": 85.9,
+          "coverage_genuine": 83.8,
+          "identical_to_en_exempt": 1124,
           "target": 100,
           "gate_pass": false,
           "coverage_pass": false,
-          "guard_fail_rate": 77.7,
+          "guard_fail_rate": 52.8,
           "quality_available": true,
           "quality_score": 99.9,
           "quality_score_target": 100.0,
-          "critical_issues": 1,
+          "critical_issues": 0,
           "critical_target_max": 0,
           "quality_gate_pass": false
         }
@@ -67,7 +67,7 @@
         "sk",
         "tr"
       ],
-      "avg_coverage": 10.3,
+      "avg_coverage": 10.5,
       "target": 100,
       "gate_pass": false,
       "langs_passing": 0,
@@ -109,8 +109,8 @@
           "quality_gate_pass": false
         },
         "fr": {
-          "coverage": 28.8,
-          "coverage_genuine": 26.7,
+          "coverage": 29.2,
+          "coverage_genuine": 27.1,
           "identical_to_en_exempt": 1128,
           "target": 100,
           "gate_pass": false,
@@ -199,9 +199,9 @@
           "quality_gate_pass": false
         },
         "ru": {
-          "coverage": 30.5,
-          "coverage_genuine": 28.8,
-          "identical_to_en_exempt": 903,
+          "coverage": 32.3,
+          "coverage_genuine": 30.7,
+          "identical_to_en_exempt": 855,
           "target": 100,
           "gate_pass": false,
           "coverage_pass": false,

@@ -1,45 +1,30 @@
 {
-  "timestamp": "2026-02-14T20:22:10.308428Z",
+  "timestamp": "2026-02-15T13:30:47.542824Z",
   "schema_version": "1.0",
   "total_langs": 52,
   "total_domains": 38,
-  "total_genuine_checked": 152309,
-  "total_issues": 857,
+  "total_genuine_checked": 178991,
+  "total_issues": 882,
   "severity_totals": {
-    "critical": 42,
-    "warning": 289,
-    "info": 526
+    "critical": 40,
+    "warning": 318,
+    "info": 524
   },
   "issue_type_breakdown": {
-    "punctuation_missing": 438,
-    "html_tag_mismatch": 121,
-    "number_drift": 84,
-    "double_spaces": 58,
-    "bracket_mismatch": 52,
+    "punctuation_missing": 439,
+    "html_tag_mismatch": 133,
+    "number_drift": 98,
+    "bracket_mismatch": 54,
+    "double_spaces": 53,
     "artifact_token": 37,
     "format_token_mismatch": 19,
+    "mixed_language": 16,
     "length_anomaly": 16,
-    "mixed_language": 14,
     "truncated": 11,
-    "placeholder_mismatch": 5,
-    "repeated_words": 2
+    "placeholder_mismatch": 3,
+    "repeated_words": 3
   },
   "lang_summary": [
-    {
-      "lang": "pl",
-      "total_issues": 50,
-      "domains_affected": 6,
-      "critical": 3,
-      "warning": 36,
-      "info": 11,
-      "top_domains": {
-        "npc.json": 41,
-        "books.json": 4,
-        "monsters.json": 2,
-        "client.json": 1,
-        "dataroot.json": 1
-      }
-    },
     {
       "lang": "ru",
       "total_issues": 41,
@@ -71,27 +56,13 @@
     },
     {
       "lang": "cs",
-      "total_issues": 13,
+      "total_issues": 16,
       "domains_affected": 4,
       "critical": 2,
-      "warning": 8,
+      "warning": 11,
       "info": 3,
       "top_domains": {
-        "npc.json": 9,
-        "scripts.json": 2,
-        "achievements.json": 1,
-        "quests.json": 1
-      }
-    },
-    {
-      "lang": "lt",
-      "total_issues": 11,
-      "domains_affected": 4,
-      "critical": 2,
-      "warning": 5,
-      "info": 4,
-      "top_domains": {
-        "npc.json": 7,
+        "npc.json": 12,
         "scripts.json": 2,
         "achievements.json": 1,
         "quests.json": 1
@@ -99,14 +70,29 @@
     },
     {
       "lang": "it",
-      "total_issues": 5,
-      "domains_affected": 3,
+      "total_issues": 15,
+      "domains_affected": 4,
       "critical": 2,
-      "warning": 0,
+      "warning": 10,
       "info": 3,
       "top_domains": {
+        "npc.json": 10,
         "achievements.json": 2,
         "scripts.json": 2,
+        "quests.json": 1
+      }
+    },
+    {
+      "lang": "lt",
+      "total_issues": 12,
+      "domains_affected": 4,
+      "critical": 2,
+      "warning": 6,
+      "info": 4,
+      "top_domains": {
+        "npc.json": 8,
+        "scripts.json": 2,
+        "achievements.json": 1,
         "quests.json": 1
       }
     },
@@ -154,6 +140,21 @@
       }
     },
     {
+      "lang": "pl",
+      "total_issues": 50,
+      "domains_affected": 7,
+      "critical": 1,
+      "warning": 37,
+      "info": 12,
+      "top_domains": {
+        "books.json": 20,
+        "npc.json": 19,
+        "monsters.json": 5,
+        "html.json": 3,
+        "client.json": 1
+      }
+    },
+    {
       "lang": "az",
       "total_issues": 30,
       "domains_affected": 3,
@@ -167,6 +168,21 @@
       }
     },
     {
+      "lang": "es",
+      "total_issues": 50,
+      "domains_affected": 7,
+      "critical": 1,
+      "warning": 12,
+      "info": 37,
+      "top_domains": {
+        "items.json": 26,
+        "books.json": 14,
+        "html.json": 5,
+        "achievements.json": 2,
+        "client.json": 1
+      }
+    },
+    {
       "lang": "de",
       "total_issues": 12,
       "domains_affected": 3,
@@ -177,21 +193,6 @@
         "books.json": 10,
         "quests.json": 1,
         "scripts.json": 1
-      }
-    },
-    {
-      "lang": "es",
-      "total_issues": 50,
-      "domains_affected": 7,
-      "critical": 1,
-      "warning": 9,
-      "info": 40,
-      "top_domains": {
-        "items.json": 30,
-        "books.json": 14,
-        "achievements.json": 2,
-        "client.json": 1,
-        "cpp.json": 1
       }
     },
     {
@@ -455,6 +456,17 @@
       }
     },
     {
+      "lang": "el",
+      "total_issues": 11,
+      "domains_affected": 1,
+      "critical": 0,
+      "warning": 11,
+      "info": 0,
+      "top_domains": {
+        "npc.json": 11
+      }
+    },
+    {
       "lang": "ar",
       "total_issues": 50,
       "domains_affected": 3,
@@ -617,15 +629,6 @@
       }
     },
     {
-      "lang": "el",
-      "total_issues": 0,
-      "domains_affected": 0,
-      "critical": 0,
-      "warning": 0,
-      "info": 0,
-      "top_domains": {}
-    },
-    {
       "lang": "mk",
       "total_issues": 0,
       "domains_affected": 0,
@@ -655,20 +658,20 @@
   ],
   "domain_breakdown": {
     "achievements.json": 459,
-    "npc.json": 135,
-    "books.json": 55,
+    "npc.json": 138,
+    "books.json": 71,
     "scripts.json": 54,
-    "items.json": 51,
-    "cpp.json": 23,
+    "items.json": 47,
+    "cpp.json": 24,
     "server.json": 20,
+    "html.json": 19,
     "actions.json": 14,
-    "html.json": 13,
     "otclient_modules.json": 8,
     "quests.json": 6,
     "dataroot.json": 5,
     "npclib.json": 5,
+    "monsters.json": 5,
     "client.json": 4,
-    "monsters.json": 2,
     "modules.json": 1,
     "talkactions.json": 1,
     "globalevents.json": 1
@@ -2105,6 +2108,36 @@
       "tr_sample": "Pssst! Drž to dole! <poskytne vám podrobnou zprávu o aktivitě monster>"
     },
     {
+      "type": "html_tag_mismatch",
+      "severity": "warning",
+      "detail": "en_tags=['<gives you an elaborate report on monster activity>'] tr_tags=['<poskytne vám podrobnou zprávu o aktivitě monster>']",
+      "lang": "cs",
+      "domain": "npc.json",
+      "key": "npc.a_drillworm.greet_msg_3",
+      "en_sample": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "tr_sample": "Pssst! Drž to dole! <poskytne vám podrobnou zprávu o aktivitě monster>"
+    },
+    {
+      "type": "html_tag_mismatch",
+      "severity": "warning",
+      "detail": "en_tags=[\"<you're not sure, but it seems that squirrel wants to trade your valuable acorns for useless stones that it found and considered uneatable>\"] tr_tags=['<nejste si jisti, ale zdá se, že veverka chce vyměnit vaše cenné žaludy za neužitečné kameny, které našla a považovala za nestravitelné>']",
+      "lang": "cs",
+      "domain": "npc.json",
+      "key": "npc.a_fluffy_squirrel.sendtrade_msg_1",
+      "en_sample": "Chchch. Chh! <you're not sure, but it seems that squirrel wants to trade your valuable acorns for useless stones that it",
+      "tr_sample": "Chchch. Chh! <nejste si jisti, ale zdá se, že veverka chce vyměnit vaše cenné žaludy za neužitečné kameny, které našla a"
+    },
+    {
+      "type": "html_tag_mismatch",
+      "severity": "warning",
+      "detail": "en_tags=['<gives you an elaborate report on monster activity>'] tr_tags=['<poskytne vám podrobnou zprávu o aktivitě monster>']",
+      "lang": "cs",
+      "domain": "npc.json",
+      "key": "npc.a_lost_basher.greet_msg_1",
+      "en_sample": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "tr_sample": "Pssst! Drž to dole! <poskytne vám podrobnou zprávu o aktivitě monster>"
+    },
+    {
       "type": "double_spaces",
       "severity": "info",
       "detail": "double or multiple spaces detected",
@@ -2293,6 +2326,116 @@
       "key": "scripts.actions_rewards.msg_1",
       "en_sample": "You have found {}.",
       "tr_sample": "You found "
+    },
+    {
+      "type": "html_tag_mismatch",
+      "severity": "warning",
+      "detail": "en_tags=['<gives you an elaborate report on monster activity>'] tr_tags=[]",
+      "lang": "el",
+      "domain": "npc.json",
+      "key": "npc.a_behemoth.greet_msg_1",
+      "en_sample": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "tr_sample": "Pssst! Κράτα το κάτω! <σας δίνει μια περίπλοκη αναφορά για τη δραστηριότητα των τεράτων>"
+    },
+    {
+      "type": "html_tag_mismatch",
+      "severity": "warning",
+      "detail": "en_tags=['<gives you an elaborate report on monster activity>'] tr_tags=[]",
+      "lang": "el",
+      "domain": "npc.json",
+      "key": "npc.a_behemoth.greet_msg_2",
+      "en_sample": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "tr_sample": "Pssst! Κράτα το κάτω! <σας δίνει μια περίπλοκη αναφορά για τη δραστηριότητα των τεράτων>"
+    },
+    {
+      "type": "html_tag_mismatch",
+      "severity": "warning",
+      "detail": "en_tags=['<gives you an elaborate report on monster activity>'] tr_tags=[]",
+      "lang": "el",
+      "domain": "npc.json",
+      "key": "npc.a_behemoth.greet_msg_3",
+      "en_sample": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "tr_sample": "Pssst! Κράτα το κάτω! <σας δίνει μια περίπλοκη αναφορά για τη δραστηριότητα των τεράτων>"
+    },
+    {
+      "type": "html_tag_mismatch",
+      "severity": "warning",
+      "detail": "en_tags=['<gives you an elaborate report on monster activity>'] tr_tags=[]",
+      "lang": "el",
+      "domain": "npc.json",
+      "key": "npc.a_dragon_lord.greet_msg_1",
+      "en_sample": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "tr_sample": "Pssst! Κράτα το κάτω! <σας δίνει μια περίπλοκη αναφορά για τη δραστηριότητα των τεράτων>"
+    },
+    {
+      "type": "html_tag_mismatch",
+      "severity": "warning",
+      "detail": "en_tags=['<gives you an elaborate report on monster activity>'] tr_tags=[]",
+      "lang": "el",
+      "domain": "npc.json",
+      "key": "npc.a_dragon_lord.greet_msg_2",
+      "en_sample": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "tr_sample": "Pssst! Κράτα το κάτω! <σας δίνει μια περίπλοκη αναφορά για τη δραστηριότητα των τεράτων>"
+    },
+    {
+      "type": "html_tag_mismatch",
+      "severity": "warning",
+      "detail": "en_tags=['<gives you an elaborate report on monster activity>'] tr_tags=[]",
+      "lang": "el",
+      "domain": "npc.json",
+      "key": "npc.a_dragon_lord.greet_msg_3",
+      "en_sample": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "tr_sample": "Pssst! Κράτα το κάτω! <σας δίνει μια περίπλοκη αναφορά για τη δραστηριότητα των τεράτων>"
+    },
+    {
+      "type": "html_tag_mismatch",
+      "severity": "warning",
+      "detail": "en_tags=['<gives you an elaborate report on monster activity>'] tr_tags=[]",
+      "lang": "el",
+      "domain": "npc.json",
+      "key": "npc.a_drillworm.greet_msg_1",
+      "en_sample": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "tr_sample": "Pssst! Κράτα το κάτω! <σας δίνει μια περίπλοκη αναφορά για τη δραστηριότητα των τεράτων>"
+    },
+    {
+      "type": "html_tag_mismatch",
+      "severity": "warning",
+      "detail": "en_tags=['<gives you an elaborate report on monster activity>'] tr_tags=[]",
+      "lang": "el",
+      "domain": "npc.json",
+      "key": "npc.a_drillworm.greet_msg_2",
+      "en_sample": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "tr_sample": "Pssst! Κράτα το κάτω! <σας δίνει μια περίπλοκη αναφορά για τη δραστηριότητα των τεράτων>"
+    },
+    {
+      "type": "html_tag_mismatch",
+      "severity": "warning",
+      "detail": "en_tags=['<gives you an elaborate report on monster activity>'] tr_tags=[]",
+      "lang": "el",
+      "domain": "npc.json",
+      "key": "npc.a_drillworm.greet_msg_3",
+      "en_sample": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "tr_sample": "Pssst! Κράτα το κάτω! <σας δίνει μια περίπλοκη αναφορά για τη δραστηριότητα των τεράτων>"
+    },
+    {
+      "type": "html_tag_mismatch",
+      "severity": "warning",
+      "detail": "en_tags=[\"<you're not sure, but it seems that squirrel wants to trade your valuable acorns for useless stones that it found and considered uneatable>\"] tr_tags=[]",
+      "lang": "el",
+      "domain": "npc.json",
+      "key": "npc.a_fluffy_squirrel.sendtrade_msg_1",
+      "en_sample": "Chchch. Chh! <you're not sure, but it seems that squirrel wants to trade your valuable acorns for useless stones that it",
+      "tr_sample": "Chchch. Τσχ! <δεν είστε σίγουροι, αλλά φαίνεται ότι ο σκίουρος θέλει να ανταλλάξει τα πολύτιμα βελανίδια σας με άχρηστες"
+    },
+    {
+      "type": "html_tag_mismatch",
+      "severity": "warning",
+      "detail": "en_tags=['<gives you an elaborate report on monster activity>'] tr_tags=[]",
+      "lang": "el",
+      "domain": "npc.json",
+      "key": "npc.a_lost_basher.greet_msg_1",
+      "en_sample": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "tr_sample": "Pssst! Κράτα το κάτω! <σας δίνει μια περίπλοκη αναφορά για τη δραστηριότητα των τεράτων>"
     },
     {
       "type": "bracket_mismatch",
@@ -2493,6 +2636,46 @@
       "key": "web.tpl.guilds.manager.b_10",
       "en_sample": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name",
       "tr_sample": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nombre"
+    },
+    {
+      "type": "mixed_language",
+      "severity": "info",
+      "detail": ">=4 consecutive EN words found in translation",
+      "lang": "es",
+      "domain": "html.json",
+      "key": "html.networks.html.text2",
+      "en_sample": "!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementByI",
+      "tr_sample": "!función(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById"
+    },
+    {
+      "type": "number_drift",
+      "severity": "warning",
+      "detail": "missing=['1']",
+      "lang": "es",
+      "domain": "html.json",
+      "key": "html.achievements.html.text3",
+      "en_sample": "Grade 1 Achievements",
+      "tr_sample": "Logros del primer grado"
+    },
+    {
+      "type": "number_drift",
+      "severity": "warning",
+      "detail": "missing=['1.5']",
+      "lang": "es",
+      "domain": "html.json",
+      "key": "html.downloads.html.text2",
+      "en_sample": "Processor: 1.5 GHz Pentium 4 or equivalent with SSE2 instruction set support",
+      "tr_sample": "Procesador: Pentium 4 de 1,5 GHz o equivalente con soporte para conjunto de instrucciones SSE2"
+    },
+    {
+      "type": "bracket_mismatch",
+      "severity": "warning",
+      "detail": "')': en=0 tr=1",
+      "lang": "es",
+      "domain": "html.json",
+      "key": "html.charts.text5",
+      "en_sample": "Chart type: Allows you to choose the type of chart. Supported types are bar charts, column charts, line charts, spline c",
+      "tr_sample": "Tipo de gráfico: Le permite elegir el tipo de gráfico. Los tipos admitidos son gráficos de barras, gráficos de columnas,"
     },
     {
       "type": "double_spaces",
@@ -2753,46 +2936,6 @@
       "key": "item.30275.name",
       "en_sample": "crown of the percht queen",
       "tr_sample": "corona de reina de  percht"
-    },
-    {
-      "type": "double_spaces",
-      "severity": "info",
-      "detail": "double or multiple spaces detected",
-      "lang": "es",
-      "domain": "items.json",
-      "key": "item.30276.name",
-      "en_sample": "crown of the percht queen",
-      "tr_sample": "corona de reina de  percht"
-    },
-    {
-      "type": "double_spaces",
-      "severity": "info",
-      "detail": "double or multiple spaces detected",
-      "lang": "es",
-      "domain": "items.json",
-      "key": "item.3252.name",
-      "en_sample": "the horn of sundering",
-      "tr_sample": "cuerno de  de sundering"
-    },
-    {
-      "type": "double_spaces",
-      "severity": "info",
-      "detail": "double or multiple spaces detected",
-      "lang": "es",
-      "domain": "items.json",
-      "key": "item.33313.name",
-      "en_sample": "the supreme cube",
-      "tr_sample": "cubo de  supremo"
-    },
-    {
-      "type": "double_spaces",
-      "severity": "info",
-      "detail": "double or multiple spaces detected",
-      "lang": "es",
-      "domain": "items.json",
-      "key": "item.34075.name",
-      "en_sample": "the skull of a beast",
-      "tr_sample": "cráneo de  de beast"
     },
     {
       "type": "artifact_token",
@@ -4995,6 +5138,106 @@
       "tr_sample": "Lo gnomo caduto è morto e la giustizia è stata fatta. Ma cosa sussurrò lo gnomo con il suo ultimo respiro? E' tuo padre?"
     },
     {
+      "type": "html_tag_mismatch",
+      "severity": "warning",
+      "detail": "en_tags=['<gives you an elaborate report on monster activity>'] tr_tags=[\"<ti fornisce un rapporto elaborato sull'attività dei mostri>\"]",
+      "lang": "it",
+      "domain": "npc.json",
+      "key": "npc.a_behemoth.greet_msg_1",
+      "en_sample": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "tr_sample": "Pssst! Tienilo giù! <ti fornisce un rapporto elaborato sull'attività dei mostri>"
+    },
+    {
+      "type": "html_tag_mismatch",
+      "severity": "warning",
+      "detail": "en_tags=['<gives you an elaborate report on monster activity>'] tr_tags=[\"<ti fornisce un rapporto elaborato sull'attività dei mostri>\"]",
+      "lang": "it",
+      "domain": "npc.json",
+      "key": "npc.a_behemoth.greet_msg_2",
+      "en_sample": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "tr_sample": "Pssst! Tienilo giù! <ti fornisce un rapporto elaborato sull'attività dei mostri>"
+    },
+    {
+      "type": "html_tag_mismatch",
+      "severity": "warning",
+      "detail": "en_tags=['<gives you an elaborate report on monster activity>'] tr_tags=[\"<ti fornisce un rapporto elaborato sull'attività dei mostri>\"]",
+      "lang": "it",
+      "domain": "npc.json",
+      "key": "npc.a_behemoth.greet_msg_3",
+      "en_sample": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "tr_sample": "Pssst! Tienilo giù! <ti fornisce un rapporto elaborato sull'attività dei mostri>"
+    },
+    {
+      "type": "html_tag_mismatch",
+      "severity": "warning",
+      "detail": "en_tags=['<gives you an elaborate report on monster activity>'] tr_tags=[\"<ti fornisce un rapporto elaborato sull'attività dei mostri>\"]",
+      "lang": "it",
+      "domain": "npc.json",
+      "key": "npc.a_dragon_lord.greet_msg_1",
+      "en_sample": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "tr_sample": "Pssst! Tienilo giù! <ti fornisce un rapporto elaborato sull'attività dei mostri>"
+    },
+    {
+      "type": "html_tag_mismatch",
+      "severity": "warning",
+      "detail": "en_tags=['<gives you an elaborate report on monster activity>'] tr_tags=[\"<ti fornisce un rapporto elaborato sull'attività dei mostri>\"]",
+      "lang": "it",
+      "domain": "npc.json",
+      "key": "npc.a_dragon_lord.greet_msg_2",
+      "en_sample": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "tr_sample": "Pssst! Tienilo giù! <ti fornisce un rapporto elaborato sull'attività dei mostri>"
+    },
+    {
+      "type": "html_tag_mismatch",
+      "severity": "warning",
+      "detail": "en_tags=['<gives you an elaborate report on monster activity>'] tr_tags=[\"<ti fornisce un rapporto elaborato sull'attività dei mostri>\"]",
+      "lang": "it",
+      "domain": "npc.json",
+      "key": "npc.a_dragon_lord.greet_msg_3",
+      "en_sample": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "tr_sample": "Pssst! Tienilo giù! <ti fornisce un rapporto elaborato sull'attività dei mostri>"
+    },
+    {
+      "type": "html_tag_mismatch",
+      "severity": "warning",
+      "detail": "en_tags=['<gives you an elaborate report on monster activity>'] tr_tags=[\"<ti fornisce un rapporto elaborato sull'attività dei mostri>\"]",
+      "lang": "it",
+      "domain": "npc.json",
+      "key": "npc.a_drillworm.greet_msg_1",
+      "en_sample": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "tr_sample": "Pssst! Tienilo giù! <ti fornisce un rapporto elaborato sull'attività dei mostri>"
+    },
+    {
+      "type": "html_tag_mismatch",
+      "severity": "warning",
+      "detail": "en_tags=['<gives you an elaborate report on monster activity>'] tr_tags=[\"<ti fornisce un rapporto elaborato sull'attività dei mostri>\"]",
+      "lang": "it",
+      "domain": "npc.json",
+      "key": "npc.a_drillworm.greet_msg_2",
+      "en_sample": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "tr_sample": "Pssst! Tienilo giù! <ti fornisce un rapporto elaborato sull'attività dei mostri>"
+    },
+    {
+      "type": "html_tag_mismatch",
+      "severity": "warning",
+      "detail": "en_tags=['<gives you an elaborate report on monster activity>'] tr_tags=[\"<ti fornisce un rapporto elaborato sull'attività dei mostri>\"]",
+      "lang": "it",
+      "domain": "npc.json",
+      "key": "npc.a_drillworm.greet_msg_3",
+      "en_sample": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "tr_sample": "Pssst! Tienilo giù! <ti fornisce un rapporto elaborato sull'attività dei mostri>"
+    },
+    {
+      "type": "html_tag_mismatch",
+      "severity": "warning",
+      "detail": "en_tags=[\"<you're not sure, but it seems that squirrel wants to trade your valuable acorns for useless stones that it found and considered uneatable>\"] tr_tags=['<non ne sei sicuro, ma sembra che lo scoiattolo voglia scambiare le tue preziose ghiande con pietre inutili che ha trovato e considerate immangiabili>']",
+      "lang": "it",
+      "domain": "npc.json",
+      "key": "npc.a_fluffy_squirrel.sendtrade_msg_1",
+      "en_sample": "Chchch. Chh! <you're not sure, but it seems that squirrel wants to trade your valuable acorns for useless stones that it",
+      "tr_sample": "Chchch. Chh! <non ne sei sicuro, ma sembra che lo scoiattolo voglia scambiare le tue preziose ghiande con pietre inutili"
+    },
+    {
       "type": "artifact_token",
       "severity": "critical",
       "detail": "artifact token found in translation",
@@ -6135,6 +6378,16 @@
       "tr_sample": "Pssst! Laikykitės! <pateikia jums išsamų pranešimą apie pabaisų veiklą>"
     },
     {
+      "type": "html_tag_mismatch",
+      "severity": "warning",
+      "detail": "en_tags=['<gives you an elaborate report on monster activity>'] tr_tags=['<pateikia jums išsamų pranešimą apie pabaisų veiklą>']",
+      "lang": "lt",
+      "domain": "npc.json",
+      "key": "npc.a_dragon_lord.greet_msg_3",
+      "en_sample": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "tr_sample": "Pssst! Laikykitės! <pateikia jums išsamų pranešimą apie pabaisų veiklą>"
+    },
+    {
       "type": "double_spaces",
       "severity": "info",
       "detail": "double or multiple spaces detected",
@@ -6355,6 +6608,16 @@
       "tr_sample": "Radzę nie próbować tego, dopóki nie będziesz mieć co najmniej 20-letniego doświadczenia w budowie kolei...<Cóż, wygląda "
     },
     {
+      "type": "punctuation_missing",
+      "severity": "info",
+      "detail": "en_ends='.' tr_ends='…'",
+      "lang": "pl",
+      "domain": "books.json",
+      "key": "book.otbm.i_wonder_where_this_all",
+      "en_sample": "I wonder where this all might lead us ...",
+      "tr_sample": "Zastanawiam się, dokąd nas to wszystko może zaprowadzić…"
+    },
+    {
       "type": "number_drift",
       "severity": "warning",
       "detail": "missing=['1']",
@@ -6375,6 +6638,156 @@
       "tr_sample": "Jaul: piątek (4:00–13:00)"
     },
     {
+      "type": "number_drift",
+      "severity": "warning",
+      "detail": "missing=['5']",
+      "lang": "pl",
+      "domain": "books.json",
+      "key": "book.otbm.meeting_every_day_at_5",
+      "en_sample": "Meeting every day at 5 pm.",
+      "tr_sample": "Spotkania codziennie o godzinie 17:00."
+    },
+    {
+      "type": "number_drift",
+      "severity": "warning",
+      "detail": "missing=['10', '3']",
+      "lang": "pl",
+      "domain": "books.json",
+      "key": "book.otbm.obujos_sunday_3_pm_10",
+      "en_sample": "Obujos: Sunday (3 PM - 10 PM)",
+      "tr_sample": "Obujos: niedziela (15:00–22:00)"
+    },
+    {
+      "type": "number_drift",
+      "severity": "warning",
+      "detail": "missing=['10', '3']",
+      "lang": "pl",
+      "domain": "books.json",
+      "key": "book.otbm.obujos_sunday_3_pm_10_8b659036",
+      "en_sample": "Obujos: Sunday (3 PM - 10 PM)",
+      "tr_sample": "Obujos: niedziela (15:00–22:00)"
+    },
+    {
+      "type": "number_drift",
+      "severity": "warning",
+      "detail": "missing=['6']",
+      "lang": "pl",
+      "domain": "books.json",
+      "key": "book.otbm.princess_theripat_was_the_beautiful",
+      "en_sample": "Princess Theripat was the beautiful daughter of pharaoh Karkhaneses II. She grew up in the pharaoh's palace, living a se",
+      "tr_sample": "Księżniczka Theripat była piękną córką faraona Karkhanesesa II. Dorastała w pałacu faraona, prowadząc pozornie beztroski"
+    },
+    {
+      "type": "number_drift",
+      "severity": "warning",
+      "detail": "missing=['6']",
+      "lang": "pl",
+      "domain": "books.json",
+      "key": "book.otbm.tanjis_saturday_12_am_6",
+      "en_sample": "Tanjis: Saturday (12 AM - 6 PM)",
+      "tr_sample": "Tanji: sobota (12:00–18:00)"
+    },
+    {
+      "type": "number_drift",
+      "severity": "warning",
+      "detail": "missing=['6']",
+      "lang": "pl",
+      "domain": "books.json",
+      "key": "book.otbm.tanjis_saturday_12_am_6_9b944c8c",
+      "en_sample": "Tanjis: Saturday (12 AM - 6 PM)",
+      "tr_sample": "Tanji: sobota (12:00–18:00)"
+    },
+    {
+      "type": "html_tag_mismatch",
+      "severity": "warning",
+      "detail": "en_tags=['<you skip the first 1000 pages containing dwarfen tunnelling history>'] tr_tags=['<pomijasz pierwsze 1000 stron zawierających historię tunelowania krasnoludów>']",
+      "lang": "pl",
+      "domain": "books.json",
+      "key": "book.otbm.the_art_of_building_a",
+      "en_sample": "'The art of building a tunnel lies in the nature of dwarfes.' That's what my grand grand grandfather used to say. First ",
+      "tr_sample": "„Sztuka budowania tuneli leży w naturze krasnoludków.' That', jak mawiał mój dziadek. Przede wszystkim chciałbym przedst"
+    },
+    {
+      "type": "double_spaces",
+      "severity": "info",
+      "detail": "double or multiple spaces detected",
+      "lang": "pl",
+      "domain": "books.json",
+      "key": "book.otbm.the_teshial_were_never_fighters_53bed114",
+      "en_sample": "The Teshial were never fighters. They retreated in the early days of war to hidden refuges, not as a whole caste but onl",
+      "tr_sample": "Teshialowie nigdy nie byli wojownikami. W pierwszych dniach wojny wycofywali się do ukrytych schronień, nie jako cała ka"
+    },
+    {
+      "type": "number_drift",
+      "severity": "warning",
+      "detail": "missing=['10.00']",
+      "lang": "pl",
+      "domain": "books.json",
+      "key": "book.otbm.this_is_a_cm_token",
+      "en_sample": "This is a CM token. It weighs 10.00 oz. It was a gift from a community manager.",
+      "tr_sample": "To jest token CM. Waży 10,00 uncji. To był prezent od menadżera społeczności."
+    },
+    {
+      "type": "number_drift",
+      "severity": "warning",
+      "detail": "missing=['10.00']",
+      "lang": "pl",
+      "domain": "books.json",
+      "key": "book.otbm.this_is_a_medal_of",
+      "en_sample": "This is a medal of honour. It weighs 10.00 oz.",
+      "tr_sample": "To jest medal honoru. Waży 10,00 uncji."
+    },
+    {
+      "type": "number_drift",
+      "severity": "warning",
+      "detail": "missing=['12.50']",
+      "lang": "pl",
+      "domain": "books.json",
+      "key": "book.otbm.this_is_the_famous_golden",
+      "en_sample": "This is the famous golden bug.  It weighs 12.50 oz. It's given to skilled discoverers of extra nasty bugs and to great s",
+      "tr_sample": "To słynny złoty błąd.  Waży 12,50 uncji. Jest przyznawany utalentowanym odkrywcom wyjątkowo paskudnych błędów i wielkim "
+    },
+    {
+      "type": "double_spaces",
+      "severity": "info",
+      "detail": "double or multiple spaces detected",
+      "lang": "pl",
+      "domain": "books.json",
+      "key": "book.otbm.this_is_the_famous_golden",
+      "en_sample": "This is the famous golden bug.  It weighs 12.50 oz. It's given to skilled discoverers of extra nasty bugs and to great s",
+      "tr_sample": "To słynny złoty błąd.  Waży 12,50 uncji. Jest przyznawany utalentowanym odkrywcom wyjątkowo paskudnych błędów i wielkim "
+    },
+    {
+      "type": "number_drift",
+      "severity": "warning",
+      "detail": "missing=['2']",
+      "lang": "pl",
+      "domain": "books.json",
+      "key": "book.otbm.uhgly_beholda_stollen_ki_we",
+      "en_sample": "Uhgly beholda stollen ki we gut from slain humi nigt. Tohk it 2 stinky place, noone will go thare fur guud king of cyclo",
+      "tr_sample": "Brzydko, oto stollen ki, które wypatroszyliśmy zabitego humi nigt. To śmierdzące miejsce, nikt nie pójdzie do tego futrz"
+    },
+    {
+      "type": "bracket_mismatch",
+      "severity": "warning",
+      "detail": "'[': en=1 tr=0",
+      "lang": "pl",
+      "domain": "books.json",
+      "key": "book.quest_system2.history_of_the_augur_part_i",
+      "en_sample": "History of the Augur, Part I\n\nWe, the families of the Augur, have been living here for many generations. In the course o",
+      "tr_sample": "Historia augura, część I\n\nMy, rodziny Augurów, żyjemy tu od wielu pokoleń. Z biegiem czasu zdobyliśmy pewien wgląd w zwy"
+    },
+    {
+      "type": "html_tag_mismatch",
+      "severity": "warning",
+      "detail": "en_tags=[\"<Well, seems like you don't match the premises.>\", '<you skip the first 1000 pages containing dwarfen tunnelling history>'] tr_tags=['<Cóż, wygląda na to, że nie pasujesz do założeń.>', '<pomijasz pierwsze 1000 stron zawierających historię tunelowania krasnoludów>']",
+      "lang": "pl",
+      "domain": "books.json",
+      "key": "book.quest_system2.tunnelling_guide",
+      "en_sample": "Tunnelling guide\n----------------\nby Gromward Hammerfist\n\n'The art of building a tunnel lies in the nature of dwarfes.' ",
+      "tr_sample": "Przewodnik po tunelowaniu\n----------------\nautorstwa Gromwarda Hammerfista\n\n„Sztuka budowania tuneli leży w naturze kras"
+    },
+    {
       "type": "double_spaces",
       "severity": "info",
       "detail": "double or multiple spaces detected",
@@ -6383,6 +6796,16 @@
       "key": "client.htmlparser.text4",
       "en_sample": "..                  -- Match",
       "tr_sample": "..                  -- Mecz"
+    },
+    {
+      "type": "number_drift",
+      "severity": "warning",
+      "detail": "missing=['5']",
+      "lang": "pl",
+      "domain": "cpp.json",
+      "key": "cpp.title.desc_33",
+      "en_sample": "Finished most recent Tibiadrome rota ranked in the top 5.",
+      "tr_sample": "Ukończono najnowszą rotację Tibiadrome w pierwszej piątce."
     },
     {
       "type": "double_spaces",
@@ -6405,6 +6828,26 @@
       "tr_sample": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nazwa"
     },
     {
+      "type": "mixed_language",
+      "severity": "info",
+      "detail": ">=4 consecutive EN words found in translation",
+      "lang": "pl",
+      "domain": "html.json",
+      "key": "html.networks.html.text2",
+      "en_sample": "!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementByI",
+      "tr_sample": "!funkcja(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById"
+    },
+    {
+      "type": "number_drift",
+      "severity": "warning",
+      "detail": "missing=['1.5']",
+      "lang": "pl",
+      "domain": "html.json",
+      "key": "html.downloads.html.text2",
+      "en_sample": "Processor: 1.5 GHz Pentium 4 or equivalent with SSE2 instruction set support",
+      "tr_sample": "Procesor: Pentium 4 1,5 GHz lub odpowiednik z obsługą zestawu instrukcji SSE2"
+    },
+    {
       "type": "html_tag_mismatch",
       "severity": "warning",
       "detail": "en_tags=['<sniff>', '<sniff>', '<sniff>'] tr_tags=['<węszy>', '<węszy>', '<węszy>']",
@@ -6415,6 +6858,16 @@
       "tr_sample": "<węszy> <węszy> <węszy>"
     },
     {
+      "type": "html_tag_mismatch",
+      "severity": "warning",
+      "detail": "en_tags=['<chuckle>'] tr_tags=['<chichot>']",
+      "lang": "pl",
+      "domain": "monsters.json",
+      "key": "monster.the_imperor.voice_1",
+      "en_sample": "Poke! Poke! <chuckle>",
+      "tr_sample": "Grzebać! Grzebać! <chichot>"
+    },
+    {
       "type": "artifact_token",
       "severity": "critical",
       "detail": "artifact token found in translation",
@@ -6423,6 +6876,26 @@
       "key": "monster.grynch_clan_goblin.voice_15",
       "en_sample": "Guys, help me here! Guys? Guys???",
       "tr_sample": "Facet, help mnie, mi tutaj, tu! Facet? Facet???"
+    },
+    {
+      "type": "repeated_words",
+      "severity": "warning",
+      "detail": "3+ consecutive identical words detected",
+      "lang": "pl",
+      "domain": "monsters.json",
+      "key": "monster.arachnophobica.voice_1",
+      "en_sample": "Tip tap tip tap!",
+      "tr_sample": "Wskazówka, dotknij, dotknij, dotknij!"
+    },
+    {
+      "type": "html_tag_mismatch",
+      "severity": "warning",
+      "detail": "en_tags=['<chuckle>'] tr_tags=['<chichocze>']",
+      "lang": "pl",
+      "domain": "monsters.json",
+      "key": "monster.medusa.voice_3",
+      "en_sample": "Are you tired or why are you moving thhat ssslow <chuckle>",
+      "tr_sample": "Jesteś zmęczony albo dlaczego tak wolno się ruszasz <chichocze>"
     },
     {
       "type": "double_spaces",
@@ -6613,226 +7086,6 @@
       "key": "npc.a_lost_basher.greet_msg_1",
       "en_sample": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
       "tr_sample": "Pssst! Ciszej! <przekazuje ci szczegółowy raport o aktywności potworów>"
-    },
-    {
-      "type": "html_tag_mismatch",
-      "severity": "warning",
-      "detail": "en_tags=['<gives you an elaborate report on monster activity>'] tr_tags=['<przekazuje ci szczegółowy raport o aktywności potworów>']",
-      "lang": "pl",
-      "domain": "npc.json",
-      "key": "npc.a_lost_basher.greet_msg_2",
-      "en_sample": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
-      "tr_sample": "Pssst! Ciszej! <przekazuje ci szczegółowy raport o aktywności potworów>"
-    },
-    {
-      "type": "html_tag_mismatch",
-      "severity": "warning",
-      "detail": "en_tags=['<gives you an elaborate report on monster activity>'] tr_tags=['<przekazuje ci szczegółowy raport o aktywności potworów>']",
-      "lang": "pl",
-      "domain": "npc.json",
-      "key": "npc.a_lost_basher.greet_msg_3",
-      "en_sample": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
-      "tr_sample": "Pssst! Ciszej! <przekazuje ci szczegółowy raport o aktywności potworów>"
-    },
-    {
-      "type": "html_tag_mismatch",
-      "severity": "warning",
-      "detail": "en_tags=['<gives you an elaborate report on monster activity>'] tr_tags=['<przekazuje ci szczegółowy raport o aktywności potworów>']",
-      "lang": "pl",
-      "domain": "npc.json",
-      "key": "npc.a_lost_husher.greet_msg_1",
-      "en_sample": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
-      "tr_sample": "Pssst! Ciszej! <przekazuje ci szczegółowy raport o aktywności potworów>"
-    },
-    {
-      "type": "html_tag_mismatch",
-      "severity": "warning",
-      "detail": "en_tags=['<gives you an elaborate report on monster activity>'] tr_tags=['<przekazuje ci szczegółowy raport o aktywności potworów>']",
-      "lang": "pl",
-      "domain": "npc.json",
-      "key": "npc.a_lost_husher.greet_msg_2",
-      "en_sample": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
-      "tr_sample": "Pssst! Ciszej! <przekazuje ci szczegółowy raport o aktywności potworów>"
-    },
-    {
-      "type": "html_tag_mismatch",
-      "severity": "warning",
-      "detail": "en_tags=['<gives you an elaborate report on monster activity>'] tr_tags=['<przekazuje ci szczegółowy raport o aktywności potworów>']",
-      "lang": "pl",
-      "domain": "npc.json",
-      "key": "npc.a_lost_husher.greet_msg_3",
-      "en_sample": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
-      "tr_sample": "Pssst! Ciszej! <przekazuje ci szczegółowy raport o aktywności potworów>"
-    },
-    {
-      "type": "html_tag_mismatch",
-      "severity": "warning",
-      "detail": "en_tags=['<gives you an elaborate report on monster activity>'] tr_tags=['<przekazuje ci szczegółowy raport o aktywności potworów>']",
-      "lang": "pl",
-      "domain": "npc.json",
-      "key": "npc.a_lost_thrower.greet_msg_1",
-      "en_sample": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
-      "tr_sample": "Pssst! Ciszej! <przekazuje ci szczegółowy raport o aktywności potworów>"
-    },
-    {
-      "type": "html_tag_mismatch",
-      "severity": "warning",
-      "detail": "en_tags=['<gives you an elaborate report on monster activity>'] tr_tags=['<przekazuje ci szczegółowy raport o aktywności potworów>']",
-      "lang": "pl",
-      "domain": "npc.json",
-      "key": "npc.a_lost_thrower.greet_msg_2",
-      "en_sample": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
-      "tr_sample": "Pssst! Ciszej! <przekazuje ci szczegółowy raport o aktywności potworów>"
-    },
-    {
-      "type": "html_tag_mismatch",
-      "severity": "warning",
-      "detail": "en_tags=['<gives you an elaborate report on monster activity>'] tr_tags=['<przekazuje ci szczegółowy raport o aktywności potworów>']",
-      "lang": "pl",
-      "domain": "npc.json",
-      "key": "npc.a_lost_thrower.greet_msg_3",
-      "en_sample": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
-      "tr_sample": "Pssst! Ciszej! <przekazuje ci szczegółowy raport o aktywności potworów>"
-    },
-    {
-      "type": "html_tag_mismatch",
-      "severity": "warning",
-      "detail": "en_tags=['<gives you an elaborate report on monster activity>'] tr_tags=['<przekazuje ci szczegółowy raport o aktywności potworów>']",
-      "lang": "pl",
-      "domain": "npc.json",
-      "key": "npc.a_nightmare_scion.greet_msg_1",
-      "en_sample": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
-      "tr_sample": "Pssst! Ciszej! <przekazuje ci szczegółowy raport o aktywności potworów>"
-    },
-    {
-      "type": "html_tag_mismatch",
-      "severity": "warning",
-      "detail": "en_tags=['<gives you an elaborate report on monster activity>'] tr_tags=['<przekazuje ci szczegółowy raport o aktywności potworów>']",
-      "lang": "pl",
-      "domain": "npc.json",
-      "key": "npc.a_nightmare_scion.greet_msg_2",
-      "en_sample": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
-      "tr_sample": "Pssst! Ciszej! <przekazuje ci szczegółowy raport o aktywności potworów>"
-    },
-    {
-      "type": "html_tag_mismatch",
-      "severity": "warning",
-      "detail": "en_tags=['<gives you an elaborate report on monster activity>'] tr_tags=['<przekazuje ci szczegółowy raport o aktywności potworów>']",
-      "lang": "pl",
-      "domain": "npc.json",
-      "key": "npc.a_nightmare_scion.greet_msg_3",
-      "en_sample": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
-      "tr_sample": "Pssst! Ciszej! <przekazuje ci szczegółowy raport o aktywności potworów>"
-    },
-    {
-      "type": "double_spaces",
-      "severity": "info",
-      "detail": "double or multiple spaces detected",
-      "lang": "pl",
-      "domain": "npc.json",
-      "key": "npc.a_prisoner.say_1",
-      "en_sample": "Great riddle, isn't it? If you can tell me the correct answer, \\z I will give you something. Hehehe!",
-      "tr_sample": "Świetna zagadka, prawda? Jeśli podasz mi poprawną odpowiedź, \\z dam ci coś. Hehehe!"
-    },
-    {
-      "type": "double_spaces",
-      "severity": "info",
-      "detail": "double or multiple spaces detected",
-      "lang": "pl",
-      "domain": "npc.json",
-      "key": "npc.a_prisoner.say_2",
-      "en_sample": "My surreal numbers are based on astonishing facts. \\z Are you interested in learning the secret of mathemagics?",
-      "tr_sample": "Moje surrealne liczby opierają się na zdumiewających faktach. \\z Chcesz poznać sekret mathemagics?"
-    },
-    {
-      "type": "placeholder_mismatch",
-      "severity": "critical",
-      "detail": "missing=[] extra=['__PH0__']",
-      "lang": "pl",
-      "domain": "npc.json",
-      "key": "npc.a_strange_chalice.multi_15",
-      "en_sample": "The academy instated the 'Edron-Zaoan Exploration Division' shortly after. I was a founding member and head of the 'Drak",
-      "tr_sample": "Wkrótce potem Akademia wprowadziła '__PH0__-Zaoan Exploration Division'. Byłem członkiem-założycielem i szefem oddziału "
-    },
-    {
-      "type": "placeholder_mismatch",
-      "severity": "critical",
-      "detail": "missing=[] extra=['__PH0__']",
-      "lang": "pl",
-      "domain": "npc.json",
-      "key": "npc.a_strange_chalice.multi_20",
-      "en_sample": "Tell her I love her and that I will take care. I have to press on! My research is most valuable to the 'Edron-Zaoan Expl",
-      "tr_sample": "Powiedz jej, że ją kocham i że się zatroszczę. Muszę naciskać! Moje badania są najcenniejsze dla '__PH0__-Zaoan Explorat"
-    },
-    {
-      "type": "html_tag_mismatch",
-      "severity": "warning",
-      "detail": "en_tags=['<gives you an elaborate report on monster activity>'] tr_tags=['<przekazuje ci szczegółowy raport o aktywności potworów>']",
-      "lang": "pl",
-      "domain": "npc.json",
-      "key": "npc.a_vulcongra.greet_msg_1",
-      "en_sample": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
-      "tr_sample": "Pssst! Ciszej! <przekazuje ci szczegółowy raport o aktywności potworów>"
-    },
-    {
-      "type": "html_tag_mismatch",
-      "severity": "warning",
-      "detail": "en_tags=['<gives you an elaborate report on monster activity>'] tr_tags=['<przekazuje ci szczegółowy raport o aktywności potworów>']",
-      "lang": "pl",
-      "domain": "npc.json",
-      "key": "npc.a_vulcongra.greet_msg_2",
-      "en_sample": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
-      "tr_sample": "Pssst! Ciszej! <przekazuje ci szczegółowy raport o aktywności potworów>"
-    },
-    {
-      "type": "html_tag_mismatch",
-      "severity": "warning",
-      "detail": "en_tags=['<gives you an elaborate report on monster activity>'] tr_tags=['<przekazuje ci szczegółowy raport o aktywności potworów>']",
-      "lang": "pl",
-      "domain": "npc.json",
-      "key": "npc.a_vulcongra.greet_msg_3",
-      "en_sample": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
-      "tr_sample": "Pssst! Ciszej! <przekazuje ci szczegółowy raport o aktywności potworów>"
-    },
-    {
-      "type": "html_tag_mismatch",
-      "severity": "warning",
-      "detail": "en_tags=['<gives you an elaborate report on monster activity>'] tr_tags=['<przekazuje ci szczegółowy raport o aktywności potworów>']",
-      "lang": "pl",
-      "domain": "npc.json",
-      "key": "npc.a_wyrm.greet_msg_1",
-      "en_sample": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
-      "tr_sample": "Pssst! Ciszej! <przekazuje ci szczegółowy raport o aktywności potworów>"
-    },
-    {
-      "type": "html_tag_mismatch",
-      "severity": "warning",
-      "detail": "en_tags=['<gives you an elaborate report on monster activity>'] tr_tags=['<przekazuje ci szczegółowy raport o aktywności potworów>']",
-      "lang": "pl",
-      "domain": "npc.json",
-      "key": "npc.a_wyrm.greet_msg_2",
-      "en_sample": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
-      "tr_sample": "Pssst! Ciszej! <przekazuje ci szczegółowy raport o aktywności potworów>"
-    },
-    {
-      "type": "html_tag_mismatch",
-      "severity": "warning",
-      "detail": "en_tags=['<gives you an elaborate report on monster activity>'] tr_tags=['<przekazuje ci szczegółowy raport o aktywności potworów>']",
-      "lang": "pl",
-      "domain": "npc.json",
-      "key": "npc.a_wyrm.greet_msg_3",
-      "en_sample": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
-      "tr_sample": "Pssst! Ciszej! <przekazuje ci szczegółowy raport o aktywności potworów>"
-    },
-    {
-      "type": "double_spaces",
-      "severity": "info",
-      "detail": "double or multiple spaces detected",
-      "lang": "pl",
-      "domain": "npc.json",
-      "key": "npc.alkestios.stdmod_7",
-      "en_sample": "Some call us nature spirits or peri but we prefer the term fae. Most of us are rather reclusive and live peaceful lives ",
-      "tr_sample": "Niektórzy nazywają nas duchami natury albo peri, ale my wolimy określenie fae. Większość z nas prowadzi raczej odosobnio"
     },
     {
       "type": "repeated_words",

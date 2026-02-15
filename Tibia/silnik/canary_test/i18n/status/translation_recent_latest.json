@@ -1,85 +1,31 @@
 {
-  "timestamp": "2026-02-14T20:27:08.352642Z",
-  "language": "es",
-  "json_file": "cpp.json",
-  "translated": 13,
+  "timestamp": "2026-02-15T13:51:25.698338Z",
+  "language": "pl",
+  "json_file": "spells.json",
+  "translated": 4,
   "entries": [
     {
-      "key": "cpp.combat.mana_attacker",
-      "en": "{0} loses {1} mana due to your attack.",
-      "translated": "{0} pierde {1} maná debido a tu ataque.",
+      "key": "spell.azerus_soulfire_1.name",
+      "en": "azerus soulfire 1",
+      "translated": "Azerus Soulfire 1",
       "source": "tm"
     },
     {
-      "key": "cpp.combat.mana_attacker_crit",
-      "en": "{0} loses {1} mana due to your critical attack.",
-      "translated": "{0} pierde {1} maná debido a tu ataque crítico.",
+      "key": "spell.mana_drain_chain.name",
+      "en": "mana drain chain",
+      "translated": "łańcuch wysysania many",
       "source": "tm"
     },
     {
-      "key": "cpp.combat.mana_spectator_by",
-      "en": "{0} loses {1} mana due to an attack by {2}.",
-      "translated": "{0} pierde {1} maná debido a un ataque de {2}.",
-      "source": "tm"
+      "key": "spell.quara_constrictor_electrify.name",
+      "en": "quara constrictor electrify",
+      "translated": "quara constrictor elektryzuje",
+      "source": "google_translate"
     },
     {
-      "key": "cpp.combat.mana_spectator_by_crit",
-      "en": "{0} loses {1} mana due to a critical attack by {2}.",
-      "translated": "{0} pierde {1} maná debido a un ataque crítico de {2}.",
-      "source": "tm"
-    },
-    {
-      "key": "cpp.combat.mana_spectator_self",
-      "en": "{0} loses {1} mana due to {2} own attack.",
-      "translated": "{0} pierde {1} maná debido al propio ataque de {2}.",
-      "source": "tm"
-    },
-    {
-      "key": "cpp.combat.mana_target_by",
-      "en": "You lose {0} mana due to an attack by {1}.",
-      "translated": "Pierdes {0} maná debido a un ataque de {1}.",
-      "source": "tm"
-    },
-    {
-      "key": "cpp.combat.mana_target_by_crit",
-      "en": "You lose {0} mana due to a critical attack by {1}.",
-      "translated": "Pierdes {0} maná debido a un ataque crítico de {1}.",
-      "source": "tm"
-    },
-    {
-      "key": "cpp.combat.mana_target_self",
-      "en": "You lose {0} mana due to your own attack.",
-      "translated": "Pierdes {0} maná debido a tu propio ataque.",
-      "source": "tm"
-    },
-    {
-      "key": "cpp.combat.mana_target_self_crit",
-      "en": "You lose {0} mana due to your own critical attack.",
-      "translated": "Pierdes {0} maná debido a tu propio ataque crítico.",
-      "source": "tm"
-    },
-    {
-      "key": "cpp.inspect.mana_shield",
-      "en": "Mana Shield",
-      "translated": "Escudo de Maná",
-      "source": "tm"
-    },
-    {
-      "key": "cpp.inspect.physical_plus",
-      "en": "{0} physical + {1}",
-      "translated": "{0} físico + {1}",
-      "source": "tm"
-    },
-    {
-      "key": "cpp.look.mana_shield",
-      "en": "mana shield",
-      "translated": "escudo de maná",
-      "source": "simple"
-    },
-    {
-      "key": "cpp.combat.neutral",
-      "en": "neutral",
-      "translated": "neutral",
+      "key": "spell.lava_golem_soulfire2.name",
+      "en": "lava golem soulfire2",
+      "translated": "lawowy golem soulfire2",
       "source": "google_translate"
     }
   ]

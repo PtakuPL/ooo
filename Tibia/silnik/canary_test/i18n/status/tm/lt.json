@@ -2569,27 +2569,27 @@
   },
   "npc.a_dragon_lord.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Laikykitės! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Pssst! Laikykitės! <pateikia jums išsamų pranešimą apie pabaisų veiklą>",
+    "source": "simple_dict",
+    "confidence": 0.98,
     "verified": false,
-    "updated_at": "2026-02-14T06:47:46.500458Z"
+    "updated_at": "2026-02-15T13:24:09.556355Z"
   },
   "npc.a_drillworm.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Laikykitės! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Pssst! Laikykitės! <pateikia jums išsamų pranešimą apie pabaisų veiklą>",
+    "source": "simple_dict",
+    "confidence": 0.98,
     "verified": false,
-    "updated_at": "2026-02-14T06:47:46.501344Z"
+    "updated_at": "2026-02-15T13:32:08.199092Z"
   },
   "npc.a_drillworm.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Laikykitės! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Pssst! Laikykitės! <pateikia jums išsamų pranešimą apie pabaisų veiklą>",
+    "source": "simple_dict",
+    "confidence": 0.98,
     "verified": false,
-    "updated_at": "2026-02-14T06:47:46.502097Z"
+    "updated_at": "2026-02-15T13:40:34.230567Z"
   },
   "npc.a_drillworm.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
@@ -7070,5 +7070,205 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-14T13:48:35.536553Z"
+  },
+  "item.10026.desc": {
+    "src_hash": "c903c382d7d46dd93bae60aad16479a9",
+    "text": "Atrodo alkanas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:28:32.885535Z"
+  },
+  "item.10027.desc": {
+    "src_hash": "2c09165c1d4ae2e6a5e1f2135c83b723",
+    "text": "Pasirinktas įrankis bet kuriam programėlių kūrėjui",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:28:32.886348Z"
+  },
+  "item.10028.desc": {
+    "src_hash": "0020afc44d9d284397e941e6386940db",
+    "text": "Sutartis, pagal kurią koks nors beviltiškas žmogus pardavė savo sielą",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:28:32.886857Z"
+  },
+  "item.10159.desc": {
+    "src_hash": "b7366edafc0bd113da5467c420cc0e40",
+    "text": "Kadaise jis priklausė Lazarano protėviui. Akivaizdu, kad jis turėjo labai blogus dantis",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:28:32.887626Z"
+  },
+  "item.10180.name": {
+    "src_hash": "418acd2dc26b4e76fa2db55ab2f3e659",
+    "text": "groud",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:28:32.888652Z"
+  },
+  "item.10183.desc": {
+    "src_hash": "ce781ba138e3fa2c9204d1340ba90409",
+    "text": "Šis nuodas skirtas susilpninti priešą ir turėtų būti naudojamas ryžių laukuose netoli Chaochai",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:28:40.165566Z"
+  },
+  "item.10184.desc": {
+    "src_hash": "2828b3fef703beeeedd8f585b3d35387",
+    "text": "Žemėlapis, kuriame parodytas paskutinis kariuomenės judėjimas ir imperatoriaus armijos dalių taktinės instrukcijos",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:28:40.166620Z"
+  },
+  "item.10187.desc": {
+    "src_hash": "c2596ec962af99a689fcd635d8a32325",
+    "text": "Itin retas kristalas, kurį atgavai iš prarastų kasyklų.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:28:40.167381Z"
+  },
+  "item.10189.desc": {
+    "src_hash": "c46a6c5117ed081cf2455efc7bee019a",
+    "text": "Itin riebus aliejus iš „Zalamon“ saugyklos",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:28:40.168116Z"
+  },
+  "item.10198.desc": {
+    "src_hash": "53bce793b3d2a7c30981d12fb5420c6b",
+    "text": "Šis herbas atrodo svarbus. Jūs neturėtumėte jo prarasti",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:28:40.168825Z"
+  },
+  "item.10199.desc": {
+    "src_hash": "53bce793b3d2a7c30981d12fb5420c6b",
+    "text": "Šis herbas atrodo svarbus. Jūs neturėtumėte jo prarasti",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:28:45.213610Z"
+  },
+  "item.10207.desc": {
+    "src_hash": "7f2103a12e6c4c48b7f9b7c02d92934f",
+    "text": "Naudokite jį savo namuose, kad atskleistumėte sniego senį",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:28:45.214046Z"
+  },
+  "item.10208.desc": {
+    "src_hash": "4f5cd6643195047c2a1a94b1306baa22",
+    "text": "Atrodo, kad kažkam buvo labai smagu jį papuošti.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:28:45.214618Z"
+  },
+  "item.10209.desc": {
+    "src_hash": "efcad34d251c0a3866a9744ef41df9b0",
+    "text": "Naudokite jį savo namuose driežo ginklų stovui statyti",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:28:45.215050Z"
+  },
+  "item.10216.desc": {
+    "src_hash": "f5983fdd8fd2e2fc1c22faaa80439f68",
+    "text": "Naudokite jį savo namuose, kad sukurtumėte drakono statulą",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:28:45.215497Z"
+  },
+  "item.10217.desc": {
+    "src_hash": "95fc558d85dc30bac93a98ad1a8bd42f",
+    "text": "Atneškite šią užšifruotą knygą Farmine išminčiam, kad įgytumėte išminties arba atskleistumėte daugiau Zao kultūros",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:28:52.184357Z"
+  },
+  "item.10218.desc": {
+    "src_hash": "4277fbe6c944de4097a47b4cc39005bc",
+    "text": "Ši žuvis buvo sūdyta ir jau paruošta kaip atsarga kariams",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:28:52.185001Z"
+  },
+  "item.10247.desc": {
+    "src_hash": "79a4b5069fcbc4556ba7782cd0240de7",
+    "text": "Šioje dėžėje yra ginklų rinkinys",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:28:52.185409Z"
+  },
+  "item.10281.desc": {
+    "src_hash": "9c4b74be7487196c0154c7fa2fd4c87e",
+    "text": "Atrodo gana nuodingai, todėl nėra geras pasirinkimas maistui",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:28:52.185862Z"
+  },
+  "item.10288.desc": {
+    "src_hash": "353e14b2a3f813f1fb537fbaeec1166f",
+    "text": "Naudokite jį savo namuose, kad sukurtumėte drakono sostą",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:28:52.186336Z"
+  },
+  "item.10310.desc": {
+    "src_hash": "54c0829bb824b2efd5badf352c95c231",
+    "text": "Jame gali būti užklijuota kažkas brangaus",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:29:00.466661Z"
+  },
+  "item.10341.desc": {
+    "src_hash": "e408525d9e7f310b0d2eac9e0d8251f0",
+    "text": "Jame yra Fenikso kibirkštis",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:29:00.467046Z"
+  },
+  "item.10342.desc": {
+    "src_hash": "ee84f406d5c15014e49371ad87c9d2de",
+    "text": "Jame yra Tibia apkabinimas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:29:00.467536Z"
+  },
+  "item.10343.desc": {
+    "src_hash": "2b1e8854868003f233139b0d72613a37",
+    "text": "Jame yra dvasinis skydas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:29:00.467882Z"
+  },
+  "item.10344.desc": {
+    "src_hash": "a3edec8c157a4898748edb27135adb5a",
+    "text": "Jame yra Saulės Ugnis",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-15T13:29:00.468262Z"
   }
 }

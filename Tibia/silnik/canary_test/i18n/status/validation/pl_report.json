@@ -2,30 +2,23 @@
   "lang": "pl",
   "script_group": "latin",
   "total_keys": 53586,
-  "translated": 25850,
-  "identical_to_en": 2059,
-  "placeholder_keys": 27736,
-  "coverage_pct": 48.2,
-  "issues_total": 37,
+  "translated": 47269,
+  "identical_to_en": 2329,
+  "placeholder_keys": 6317,
+  "coverage_pct": 88.2,
+  "issues_total": 55,
   "issues_by_type": {
-    "V6_newline_mismatch": 29,
-    "V4_artifact": 7,
-    "V1_placeholder_mismatch": 1
+    "V6_newline_mismatch": 42,
+    "V4_artifact": 13
   },
   "issues_by_severity": {
-    "CRITICAL": 1,
-    "HIGH": 7,
-    "MEDIUM": 29,
+    "CRITICAL": 0,
+    "HIGH": 13,
+    "MEDIUM": 42,
     "LOW": 0
   },
   "score": 99.9,
   "worst_keys": [
-    {
-      "key": "html.online.html.text1",
-      "category": "html",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
     {
       "key": "book.otbm.battletactics_for_mages_ii",
       "category": "books",
@@ -51,13 +44,49 @@
       "severity": "HIGH"
     },
     {
+      "key": "npc.carina.say_2",
+      "category": "npc",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
       "key": "npc.markwin.say_3",
       "category": "npc",
       "type": "V4_artifact",
       "severity": "HIGH"
     },
     {
+      "key": "npc.oswald.stdmod_32",
+      "category": "npc",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "npc.riddler.say_12",
+      "category": "npc",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "npc.riddler.say_4",
+      "category": "npc",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
       "key": "npc.the_orc_king.say_3",
+      "category": "npc",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "npc.theodore_loveless.multi_2",
+      "category": "npc",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
+      "key": "npc.wyda.say_4",
       "category": "npc",
       "type": "V4_artifact",
       "severity": "HIGH"
@@ -109,36 +138,6 @@
       "category": "npc",
       "type": "V6_newline_mismatch",
       "severity": "MEDIUM"
-    },
-    {
-      "key": "npc.azalea.stdmod_25",
-      "category": "npc",
-      "type": "V6_newline_mismatch",
-      "severity": "MEDIUM"
-    },
-    {
-      "key": "npc.brewster.stdmod_32",
-      "category": "npc",
-      "type": "V6_newline_mismatch",
-      "severity": "MEDIUM"
-    },
-    {
-      "key": "npc.brodrosch.stdmod_3",
-      "category": "npc",
-      "type": "V6_newline_mismatch",
-      "severity": "MEDIUM"
-    },
-    {
-      "key": "npc.captain_dreadnought.stdmod_21",
-      "category": "npc",
-      "type": "V6_newline_mismatch",
-      "severity": "MEDIUM"
-    },
-    {
-      "key": "npc.cedrik.stdmod_25",
-      "category": "npc",
-      "type": "V6_newline_mismatch",
-      "severity": "MEDIUM"
     }
   ],
   "crossref": {
@@ -149,5 +148,5 @@
     "length_ratio": 0,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-14T20:21:00.233700Z"
+  "validated_at": "2026-02-15T13:50:46.841299Z"
 }

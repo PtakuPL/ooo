@@ -11,6 +11,13 @@
 
 ---
 
+## Aktualizacja zakresu (2026-02-15)
+
+- `STATUSD_WEBHOOK_URL` jest **poza zakresem (DE-SCOPED)** zgodnie z decyzją właściciela projektu.
+- Historyczne checkboxy/TODO dotyczące webhooka w tym archiwum należy traktować jako nieaktywne operacyjnie.
+
+---
+
 ## 🛠️ Aktualizacja wykonania (2026-02-14 11:22 UTC — full task: audyt LT/CS/EL/IT + status refresh + translation contract)
 
 Wybrane do realizacji pełne zadania:

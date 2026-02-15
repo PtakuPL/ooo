@@ -255,3 +255,165 @@
 ---
 
 *Dokument wygenerowany 2026-02-14. Odhaczaj zadania jako ✅ po wykonaniu.*
+
+---
+
+## 🆕 Aktualizacja 2026-02-14 (Plan 2 sesji: PRE_MIGRATION + DOCUMENTATION w I18N_STATUS.md)
+
+**Powód aktualizacji:** obecny plan statusu mocno skupia się na tłumaczeniach, a brak pełnego, równorzędnego podglądu dla `PRE_MIGRATION` i `DOCUMENTATION` powoduje, że operator nie widzi jasno co worker zrobił i co robi teraz poza AUTO_TRANSLATE.
+
+**Cel nadrzędny:**
+1. `I18N_STATUS.md` ma pokazywać PRE_MIGRATION i DOCUMENTATION tak samo czytelnie jak tłumaczenie.
+2. Każda z tych faz ma mieć LIVE + metryki cyklu + metryki godzinowe + metryki 24h + historię etapów.
+3. Dashboard ma raportować nie tylko „ile”, ale też „co konkretnie zostało wykonane” (pliki, wzorce, artefakty, błędy, pominięcia).
+
+## 🎯 Podział pracy na 2 sesje
+
+### Sesja 1 (Status i prezentacja): `I18N_STATUS.md` + kontrakt telemetryczny
+
+**Szacowany czas:** 8-10h  
+**Efekt sesji:** pełna widoczność PRE_MIGRATION i DOCUMENTATION w dashboardzie.
+
+| ID | Priorytet | Zadanie | Źródło danych | Wynik w `I18N_STATUS.md` |
+|---|---|---|---|---|
+| S1-01 | P0 | Dodać LIVE-card `PRE_MIGRATION` | `pre_migration_todo_latest.json`, `activity.json`, `ops.jsonl` | „Skanuje: <kategoria>, plik X/Y, trafienia, top pattern, ETA skanu” |
+| S1-02 | P0 | Dodać LIVE-card `DOCUMENTATION` | `documentation_latest.json`, `documentation_state.json`, `activity.json` | „Dokumentuje: plik X/Y, cursor, files_done, errors, ETA” |
+| S1-03 | P0 | Dodać sekcję „Co zrobił w bieżącym cyklu” dla PM/DOC | `ops.jsonl`, `worker_cycle_perf_latest.json` | lista operacji z ostatniego cyklu |
+| S1-04 | P0 | Dodać sekcję „Ta godzina — PRE_MIGRATION/DOC” | `strict_hourly_window_latest.json` + agregacja z `ops.jsonl` | hits/h, files_scanned/h, docs_generated/h, errors/h |
+| S1-05 | P0 | Dodać sekcję „Dziś (24h) — PRE_MIGRATION/DOC” | `statusd_daily_report.json`, `historia_daily.json` | wolumen i trendy 24h |
+| S1-06 | P0 | Dodać mapowanie stage -> ludzki opis PL dla PM/DOC | `activity.json.stage`, `ops.jsonl.stage` | „Co robi worker teraz” po polsku |
+| S1-07 | P1 | Dodać „ostatnie artefakty” PM/DOC | `pre_migration_todo_latest.json`, `documentation_latest.json` | timestamp + ścieżki wygenerowanych plików |
+| S1-08 | P1 | Dodać „Top źródła pracy” | `ops.jsonl` | top kategorie i top pliki dla PM/DOC |
+| S1-09 | P1 | Dodać „jakość wykonania PM/DOC” | `documentation_latest.json.errors`, `pre_migration_todo_latest.json.hits` | error rate, skip rate, parse_fail rate |
+| S1-10 | P1 | Dodać sekcję „Historia etapów PM/DOC” | `ops.jsonl` | ile razy wykonano etapy scan/extract/render/index |
+| S1-11 | P1 | Ujednolicić layout z sekcjami tłumaczeń | `I18N_STATUS.md` renderer | jedna struktura kart: Translation, PM, DOC |
+| S1-12 | P2 | Dodać mini-ASCII trend 6h dla PM/DOC | `ops.jsonl` + agregacja godzinowa | szybki trend aktywności |
+
+### Sesja 2 (Wykonanie i narzędzia): poprawność PRE_MIGRATION/DOCUMENTATION + lepsza ekstrakcja tekstów gracza
+
+**Szacowany czas:** 12-16h  
+**Efekt sesji:** worker lepiej wykrywa teksty widoczne dla gracza w serwerze, kliencie, html i innych źródłach, a dokumentacja staje się bardziej semantyczna i użyteczna.
+
+| ID | Priorytet | Zadanie | Obszar |
+|---|---|---|---|
+| S2-01 | P0 | Wprowadzić zunifikowany „Extraction Catalog” (jedno źródło prawdy o kandydatach) | pre-migration tooling |
+| S2-02 | P0 | Rozszerzyć skaner Lua o kontekst runtime-calls (`npcHandler:say`, `sendTextMessage`, `broadcastMessage`, `voices.text`) | server Lua |
+| S2-03 | P0 | Dodać parser C++ pod literały UI/komunikatów gracza (nie tylko regex line-by-line) | server/client C++ |
+| S2-04 | P0 | Dodać parser OTUI/OTML dla `text`, `tooltip`, `title`, `description` | client UI |
+| S2-05 | P0 | Dodać parser HTML/PHP/Twig dla widocznych stringów (z filtrami template) | web/install panel |
+| S2-06 | P0 | Dodać klasyfikację „player-visible vs technical” z confidence score | wszystkie źródła |
+| S2-07 | P1 | Dodać blacklist/whitelist wzorców i tokens (false positive control) | quality |
+| S2-08 | P1 | Dodać queue manual review dla niskiego confidence | status + review flow |
+| S2-09 | P1 | Dodać cross-link candidate -> istniejący i18n key | deduplikacja |
+| S2-10 | P1 | Dodać metrykę „coverage ekstrakcji” per źródło (lua/cpp/otui/html/php/twig) | KPI |
+| S2-11 | P1 | Dodać semantyczne sekcje docs: events, callbacks, i18n touchpoints, unresolved symbols | documentation |
+| S2-12 | P1 | Dodać raport „czego worker nie zrozumiał” (parse failures / unsupported syntax) | documentation + PM |
+| S2-13 | P2 | Dodać incremental checksum cache dla parserów | performance |
+| S2-14 | P2 | Dodać benchmark i limity czasu per parser | stability |
+
+## 📦 Kontrakt danych dla statusu (nowe/rozszerzone pola)
+
+### 1) Blok `pre_migration_live`
+
+```json
+{
+  "mode": "PRE_MIGRATION",
+  "category": "npc",
+  "scope": "all",
+  "files_scanned": 312,
+  "files_total": 1450,
+  "hits": 284,
+  "top_patterns": ["npcHandler:say", "sendTextMessage"],
+  "current_file": "data-otservbr-global/npc/ashop.lua",
+  "eta_seconds": 420,
+  "last_artifact": "i18n/status/pre_migration_todo/npc.json",
+  "updated_at": "2026-02-14T22:10:00Z"
+}
+```
+
+### 2) Blok `documentation_live`
+
+```json
+{
+  "mode": "DOCUMENTATION",
+  "batch": 50,
+  "cursor": 900,
+  "files_done": 900,
+  "files_total": 7935,
+  "errors": 2,
+  "current_file": "src/game/creature.cpp",
+  "last_doc_file": "docs/i18n/project/files/src__game__creature.cpp.md",
+  "index_updated": true,
+  "eta_seconds": 3600,
+  "updated_at": "2026-02-14T22:11:00Z"
+}
+```
+
+### 3) Blok `pm_doc_cycle_stats` (wspólny per cykl)
+
+```json
+{
+  "cycle": 1284,
+  "phase": "PRE_MIGRATION",
+  "files_processed": 72,
+  "entries_added": 49,
+  "errors": 0,
+  "duration_ms": 12432,
+  "ops": ["SCAN_START", "PATTERN_MATCH", "ARTIFACT_WRITE", "SCAN_DONE"]
+}
+```
+
+## 🧱 Render `I18N_STATUS.md` (docelowy układ PM/DOC)
+
+1. `🔴 LIVE`  
+Linia 1: aktywna faza + stage + czas od ostatniego heartbeat.  
+Linia 2: karta Translation (jak dziś).  
+Linia 3: karta PRE_MIGRATION (S1-01).  
+Linia 4: karta DOCUMENTATION (S1-02).
+
+2. `⏱️ TA GODZINA`  
+- osobne kolumny: Translation, PRE_MIGRATION, DOCUMENTATION,
+- metryki per faza: processed, added, error_rate, avg_cycle_ms.
+
+3. `📅 DZIŚ (24h)`  
+- suma i trend dla PM/DOC,
+- top 5 kategorii PM,
+- top 5 katalogów dokumentowanych.
+
+4. `📜 HISTORIA ETAPÓW`  
+- stage histogram oddzielnie dla Translation/PM/DOC,
+- ostatnie 20 operacji PM/DOC z `ops.jsonl`.
+
+## 🧪 Testy akceptacyjne (dla planu 2 sesji)
+
+| Test | Kryterium |
+|---|---|
+| T1 | Po wymuszeniu `PREMIG:all` LIVE pokazuje postęp plików i hits != 0 |
+| T2 | Po wymuszeniu `DOCUMENTATION:50` LIVE pokazuje cursor/files_done/current_file |
+| T3 | Sekcja „Ta godzina” raportuje niezerowe metryki PM/DOC gdy fazy działały |
+| T4 | Sekcja „Dziś (24h)” pokazuje trend PM/DOC vs poprzednie 24h |
+| T5 | `ops.jsonl` i `activity.json` mają spójne nazwy stage dla PM/DOC |
+| T6 | W razie błędu parsera status pokazuje error_count i ostatni błąd |
+
+## ✅ Definition of Done — Sesja 1
+
+1. `I18N_STATUS.md` ma pełne LIVE + Hourly + Daily dla PRE_MIGRATION i DOCUMENTATION.
+2. Operator widzi „co worker zrobił” w obu fazach na poziomie pliku i etapu.
+3. Dane są aktualizowane bez regresji dla AUTO_TRANSLATE.
+4. Testy T1-T6 przechodzą.
+
+## ✅ Definition of Done — Sesja 2
+
+1. Ekstrakcja tekstów gracza obejmuje server + client + html/php/twig + otui/otml.
+2. Mamy confidence score i manual review queue dla trudnych przypadków.
+3. Dokumentacja raportuje także „niewyjaśnione/niezrozumiane” fragmenty.
+4. Dashboard pokazuje coverage ekstrakcji per źródło i poziom jakości parserów.
+
+## 🚀 Kolejność wdrożenia (rekomendowana)
+
+1. Sesja 1: S1-01..S1-06 (krytyczne dla widoczności operacyjnej).
+2. Sesja 1: S1-07..S1-12 (uzupełnienie i ergonomia).
+3. Sesja 2: S2-01..S2-06 (fundament jakości ekstrakcji).
+4. Sesja 2: S2-07..S2-12 (jakość, review, raportowanie braków).
+5. Sesja 2: S2-13..S2-14 (wydajność i stabilizacja).
+

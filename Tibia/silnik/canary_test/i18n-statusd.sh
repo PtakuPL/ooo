@@ -46,16 +46,16 @@ DEFAULT_REPAIR_QUEUE_STAGNATION_HOURS=6
 DEFAULT_REPAIR_QUEUE_STAGNATION_MIN_SAMPLES=6
 DEFAULT_REPAIR_QUEUE_STAGNATION_MIN_DROP=1
 DEFAULT_SUSPICIOUS_HIGH_WINDOW_HOURS=6
-DEFAULT_SUSPICIOUS_HIGH_WARN_COUNT=120
-DEFAULT_SUSPICIOUS_HIGH_CRIT_COUNT=240
-DEFAULT_SUSPICIOUS_HIGH_RATE_WARN_PCT=8
-DEFAULT_SUSPICIOUS_HIGH_RATE_CRIT_PCT=20
+DEFAULT_SUSPICIOUS_HIGH_WARN_COUNT=5000
+DEFAULT_SUSPICIOUS_HIGH_CRIT_COUNT=15000
+DEFAULT_SUSPICIOUS_HIGH_RATE_WARN_PCT=40
+DEFAULT_SUSPICIOUS_HIGH_RATE_CRIT_PCT=85
 DEFAULT_METRICS_DRIFT_WARN_KEYS=50000
 DEFAULT_METRICS_DRIFT_CRIT_KEYS=100000
 DEFAULT_METRICS_DRIFT_WARN_PCT=95
 DEFAULT_METRICS_DRIFT_CRIT_PCT=99
-DEFAULT_PRIORITY_GATE_STUCK_MAX_ACTIVE_MINUTES=180
-DEFAULT_PRIORITY_GATE_STUCK_MAX_CYCLES=240
+DEFAULT_PRIORITY_GATE_STUCK_MAX_ACTIVE_MINUTES=1440
+DEFAULT_PRIORITY_GATE_STUCK_MAX_CYCLES=960
 DEFAULT_PRIORITY_GATE_STUCK_MIN_QUALITY_DROP_PCT=1
 DEFAULT_REGISTRY_RECONCILE_MIN_OUTSIDE_KEYS=1000
 DEFAULT_REGISTRY_RECONCILE_MIN_OUTSIDE_PCT=2
@@ -906,11 +906,11 @@ def _analyze_suspicious_high(status_dir, now, window_h, warn_count, crit_count, 
         if cat:
             translated_by_cat[cat] += tr
 
-    def _per_item_severity(sh_count, tr_count, rw=rate_warn_pct, rc=rate_crit_pct):
+    def _per_item_severity(sh_count, tr_count, rw=rate_warn_pct, rc=rate_crit_pct, min_crit_count=2000):
         r = (float(sh_count) / float(max(tr_count, 1))) * 100.0
-        if r >= rc:
+        if r >= rc and sh_count >= min_crit_count:
             return "critical", round(r, 3)
-        elif r >= rw:
+        elif r >= rw or (r >= rc and sh_count < min_crit_count):
             return "warning", round(r, 3)
         elif sh_count > 0:
             return "info", round(r, 3)
@@ -926,10 +926,12 @@ def _analyze_suspicious_high(status_dir, now, window_h, warn_count, crit_count, 
         per_domain.append({"domain": cat, "suspicious_high": int(sh_cnt), "translated": int(translated_by_cat.get(cat, 0)), "rate_pct": r, "severity": sev})
 
     # Najgorszy severity z per-lang/per-domain
+    # Per-domain caps at "warning" — only global + per-lang can escalate to critical
+    sev_rank = {"critical": 3, "warning": 2, "info": 1, "ok": 0}
+    capped_domain_sevs = ["warning" if sev_rank.get(x["severity"], 0) > sev_rank["warning"] else x["severity"] for x in per_domain]
     all_sevs = [severity]  # global
     all_sevs += [x["severity"] for x in per_lang]
-    all_sevs += [x["severity"] for x in per_domain]
-    sev_rank = {"critical": 3, "warning": 2, "info": 1, "ok": 0}
+    all_sevs += capped_domain_sevs
     worst_sev = max(all_sevs, key=lambda s: sev_rank.get(s, 0))
 
     return {
@@ -2245,11 +2247,11 @@ def _read_suspicious_high_health():
     rw = data["rate_warn_pct"]
     rc = data["rate_crit_pct"]
 
-    def _item_sev(sh_count, tr_count):
+    def _item_sev(sh_count, tr_count, min_crit_count=2000):
         r = (float(sh_count) / float(max(tr_count, 1))) * 100.0
-        if r >= rc:
+        if r >= rc and sh_count >= min_crit_count:
             return "critical", round(r, 3)
-        elif r >= rw:
+        elif r >= rw or (r >= rc and sh_count < min_crit_count):
             return "warning", round(r, 3)
         elif sh_count > 0:
             return "info", round(r, 3)
@@ -2265,7 +2267,9 @@ def _read_suspicious_high_health():
         per_domain.append({"domain": dom, "suspicious_high": int(cnt), "translated": int(translated_by_domain.get(dom, 0)), "rate_pct": r, "severity": sev})
 
     sev_rank = {"critical": 3, "warning": 2, "info": 1, "ok": 0}
-    all_sevs = [severity] + [x["severity"] for x in per_lang] + [x["severity"] for x in per_domain]
+    # Per-domain caps at "warning" — only global + per-lang can escalate to critical
+    capped_domain_sevs = [min(x["severity"], "warning", key=lambda s: sev_rank.get(s, 0)) for x in per_domain]
+    all_sevs = [severity] + [x["severity"] for x in per_lang] + capped_domain_sevs
     worst_sev = max(all_sevs, key=lambda s: sev_rank.get(s, 0))
 
     data.update({

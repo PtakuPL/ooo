@@ -144,10 +144,20 @@ if (MSVC)
     # NOTE: COMPILE_OPTIONS on set_source_files_properties does NOT work with
     # Ninja generator. Use COMPILE_FLAGS (space-separated, older CMake property
     # that works reliably with all generators) instead.
+    #
+    # CRITICAL: SKIP_PRECOMPILE_HEADERS must be ON for these files!
+    # Without it, MSVC warns C4653 (optimization inconsistent with PCH)
+    # and IGNORES our /Od flag, so the ICE still occurs.
+    # With SKIP_PRECOMPILE_HEADERS ON, the files compile without the .pch
+    # and our /Od /Ob0 /d2SSAOptimizer- flags actually take effect.
+    # The files still get all headers via their own #include chain:
+    #   declarations.h -> global.h -> pch.h
     set_source_files_properties(
       framework/otml/otmlnode.cpp
       framework/otml/otmlparser.cpp
-      PROPERTIES COMPILE_FLAGS "/Od /Ob0 /d2SSAOptimizer-"
+      PROPERTIES
+        COMPILE_FLAGS "/Od /Ob0 /d2SSAOptimizer-"
+        SKIP_PRECOMPILE_HEADERS ON
     )
 
     # Disable LTCG/GL — they amplify ICE surface across TUs
